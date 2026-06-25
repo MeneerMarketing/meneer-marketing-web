@@ -35,10 +35,10 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-7 max-w-xl text-lg leading-relaxed tracking-tight text-slate-600">
-            Je bent waarschijnlijk uren kwijt aan knippen, plakken en
-            handmatig werk. Wij bouwen maatwerk websites en Shopify-thema&apos;s,
-            gekoppeld aan automatiseringen die dat voor je oplossen. Zodat
-            jij weer tijd hebt voor je eigen bedrijf.
+            Maatwerk websites, Shopify-thema&apos;s en slimme koppelingen — from
+            scratch, passend bij jouw merk. SEO, ads, e-mail en automatisering
+            hangen we eraan vast. Zo groeit je bedrijf online zonder losse
+            eindjes.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
