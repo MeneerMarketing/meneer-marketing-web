@@ -45,7 +45,7 @@ export function HeroCtaCard() {
               <span className="relative size-2 rounded-full bg-white" />
             </span>
             <span className="text-[11px] font-bold uppercase tracking-[0.18em]">
-              3 plekken vrij in Q2
+              3 plekken vrij in Q3
             </span>
           </div>
 
