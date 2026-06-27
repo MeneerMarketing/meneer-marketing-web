@@ -32,7 +32,7 @@ export function HeroCtaCard() {
         <CornerArc />
         <FloatingTechRibbon reduce={reduce ?? false} />
 
-        <div className="relative z-10">
+        <div className="relative z-10 pb-12">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 backdrop-blur-md">
             <span className="relative flex size-2">
               {!reduce ? (
@@ -185,28 +185,30 @@ function CornerArc() {
 }
 
 function FloatingTechRibbon({ reduce }: { reduce: boolean }) {
+  const tags = [...TECH_TAGS, ...TECH_TAGS, ...TECH_TAGS];
+
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute inset-x-0 bottom-3 z-0 overflow-hidden"
+      className="pointer-events-none absolute inset-x-0 bottom-4 z-0 overflow-hidden"
     >
       <motion.div
-        className="flex w-max gap-3 whitespace-nowrap pl-7 text-[10px] font-bold uppercase tracking-[0.22em] text-white/40"
+        className="flex w-max items-center gap-6 whitespace-nowrap pl-8 text-[10px] font-bold uppercase tracking-[0.18em] text-white/40"
         animate={reduce ? undefined : { x: ["0%", "-50%"] }}
         transition={
           reduce
             ? undefined
             : {
-                duration: 28,
+                duration: 32,
                 repeat: Infinity,
                 ease: "linear",
               }
         }
       >
-        {[...TECH_TAGS, ...TECH_TAGS, ...TECH_TAGS].map((t, i) => (
+        {tags.map((t, i) => (
           <span
             key={`${t}-${i}`}
-            className="inline-flex items-center gap-2 rounded-full border border-white/25 px-3 py-1"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 py-1.5"
           >
             <span className="size-1 rounded-full bg-white/60" />
             {t}
