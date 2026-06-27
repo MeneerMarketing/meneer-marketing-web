@@ -62,20 +62,12 @@ export function ConversionAside({
           {processTitle}
         </p>
         <ol className="mt-4 space-y-4">
-          {steps.map((s, i) => (
-            <li key={s.title} className="flex gap-3">
-              <span
-                aria-hidden
-                className="flex size-7 shrink-0 items-center justify-center rounded-xl bg-mm-sky-subtle text-[11px] font-black text-mm-sky-deep"
-              >
-                {i + 1}
-              </span>
-              <div>
-                <p className="text-sm font-bold text-mm-text">{s.title}</p>
+          {steps.map((s) => (
+            <li key={s.title} className="border-l-2 border-mm-sky/30 pl-4">
+              <p className="text-sm font-bold text-mm-text">{s.title}</p>
                 <p className="mt-1 text-[13px] leading-relaxed text-mm-muted">
-                  {s.body}
-                </p>
-              </div>
+                {s.body}
+              </p>
             </li>
           ))}
         </ol>

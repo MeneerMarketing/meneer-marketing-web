@@ -35,17 +35,14 @@ export const metadata: Metadata = {
 
 const STEPS = [
   {
-    n: "01",
     title: "Kies je hoofddoel",
     body: "Eén richting voor de komende 12 maanden. Scherp zit fijner dan breed.",
   },
   {
-    n: "02",
     title: "Zet de schuivers",
     body: "Ambitie, digitale volwassenheid, tijdverspilling, kanalen. Alles leeft live.",
   },
   {
-    n: "03",
     title: "Lees het inzicht",
     body: "Geen rapport in PDF-taal: één paragraaf waar je wat aan hebt.",
   },
@@ -104,13 +101,10 @@ export default function GroeiscanPage() {
               <ol className="grid gap-4 sm:grid-cols-3">
                 {STEPS.map((s) => (
                   <li
-                    key={s.n}
+                    key={s.title}
                     className="group relative overflow-hidden rounded-2xl border border-mm-border bg-white p-5 shadow-mm-card"
                   >
-                    <p className="text-[11px] font-black tracking-widest text-mm-sky-deep">
-                      {s.n}
-                    </p>
-                    <h3 className="mt-2 text-base font-extrabold text-mm-text">
+                    <h3 className="text-base font-extrabold text-mm-text">
                       {s.title}
                     </h3>
                     <p className="mt-2 text-[13.5px] leading-relaxed text-mm-muted">

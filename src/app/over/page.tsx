@@ -91,29 +91,17 @@ export default function OverPage() {
                     Werkwijze
                   </p>
                   <ol className="mt-6 space-y-4 text-mm-text">
-                    <li className="flex gap-3">
-                      <span className="font-black text-mm-sky-deep">1</span>
-                      <span>
-                        <strong className="text-mm-text">Begrijpen</strong>. Intake, data, doelen, stack.
-                      </span>
+                    <li>
+                      <strong className="text-mm-text">Begrijpen</strong>. Intake, data, doelen, stack.
                     </li>
-                    <li className="flex gap-3">
-                      <span className="font-black text-mm-sky-deep">2</span>
-                      <span>
-                        <strong className="text-mm-text">Ontwerpen</strong>. Architectuur, roadmap, quick wins vs. fundament.
-                      </span>
+                    <li>
+                      <strong className="text-mm-text">Ontwerpen</strong>. Architectuur, roadmap, quick wins vs. fundament.
                     </li>
-                    <li className="flex gap-3">
-                      <span className="font-black text-mm-sky-deep">3</span>
-                      <span>
-                        <strong className="text-mm-text">Bouwen & sturen</strong>. Iteraties, meten, bijschaven.
-                      </span>
+                    <li>
+                      <strong className="text-mm-text">Bouwen & sturen</strong>. Iteraties, meten, bijschaven.
                     </li>
-                    <li className="flex gap-3">
-                      <span className="font-black text-mm-sky-deep">4</span>
-                      <span>
-                        <strong className="text-mm-text">Overdragen</strong>. Documentatie, training, doorontwikkeling.
-                      </span>
+                    <li>
+                      <strong className="text-mm-text">Overdragen</strong>. Documentatie, training, doorontwikkeling.
                     </li>
                   </ol>
                 </div>

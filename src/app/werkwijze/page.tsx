@@ -31,25 +31,21 @@ export const metadata: Metadata = {
 
 const phases = [
   {
-    step: "01",
     title: "Verkennen",
     body: "We brengen jouw markt, aanbod, concurrentie en huidige stack in kaart. Geen pitch-deck. Wel scherpe vragen: waar zit marge, waar lekt tijd, wat wil je over 6–12 maanden anders zien?",
     icon: Search,
   },
   {
-    step: "02",
     title: "Route kiezen",
     body: "Op basis van die context stel ik een voorstel op: niet ‘alles tegelijk’, maar de volgorde die het meeste oplevert. Soms is dat techniek eerst; andere keren traffic of conversie. Jouw niche bepaalt de mix.",
     icon: GitBranch,
   },
   {
-    step: "03",
     title: "Bouwen & meten",
     body: "We werken in duidelijke stukken met meetpunten: events, dashboards of gewoon heldere KPI’s in je ads-account. Zo weet je wat werkt voordat we opschalen.",
     icon: Rocket,
   },
   {
-    step: "04",
     title: "Optimaliseren",
     body: "Live betekent leren. We sturen bij op data én op wat je team merkt in de praktijk. Geen black box: je ziet waarom we iets aanpassen.",
     icon: LineChart,
@@ -103,15 +99,10 @@ export default function WerkwijzePage() {
               {phases.map((p, i) => {
                 const Icon = p.icon;
                 return (
-                  <Reveal key={p.step} delay={0.05 * i}>
+                  <Reveal key={p.title} delay={0.05 * i}>
                     <li className="flex h-full flex-col rounded-3xl border border-mm-border bg-white p-6 shadow-sm sm:p-8">
-                      <div className="flex items-start gap-4">
-                        <span className="text-xs font-black tabular-nums text-mm-accent">
-                          {p.step}
-                        </span>
-                        <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-mm-sky-subtle text-mm-sky-deep">
-                          <Icon className="size-5" aria-hidden />
-                        </div>
+                      <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-mm-sky-subtle text-mm-sky-deep">
+                        <Icon className="size-5" aria-hidden />
                       </div>
                       <h3 className="mt-4 text-lg font-bold text-mm-text">
                         {p.title}

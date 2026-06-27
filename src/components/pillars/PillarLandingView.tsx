@@ -153,12 +153,6 @@ export function PillarLandingView({ data }: { data: PillarPageData }) {
               {data.processSteps.map((step, index) => (
                 <Reveal key={step.title} delay={0.06 * index}>
                   <li className="relative flex gap-4 rounded-2xl border border-mm-border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-mm-float">
-                    <span
-                      className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-mm-text text-sm font-black text-white"
-                      aria-hidden
-                    >
-                      {index + 1}
-                    </span>
                     <div>
                       <h3 className="text-lg font-bold text-mm-text">
                         {step.title}

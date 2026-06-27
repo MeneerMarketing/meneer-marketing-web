@@ -44,10 +44,7 @@ export function PillarsSection() {
           {megaMenuColumns.map((col, index) => (
             <Reveal key={col.category} delay={0.05 * index}>
               <li className="group relative rounded-2xl border border-mm-border bg-mm-surface-elevated p-6 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md lg:p-8">
-                <span className="inline-flex size-8 items-center justify-center rounded-full bg-mm-text text-xs font-black text-white transition group-hover:scale-110">
-                  {index + 1}
-                </span>
-                <h3 className="mt-4 text-xl font-bold text-mm-text">
+                <h3 className="text-xl font-bold text-mm-text">
                   {col.category}
                 </h3>
                 <p className="text-sm font-medium text-mm-sky-deep">
