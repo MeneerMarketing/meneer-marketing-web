@@ -3,15 +3,22 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useState } from "react";
+import {
+  useCallback,
+  useRef,
+  useState,
+  type MouseEvent as ReactMouseEvent,
+} from "react";
 import {
   ArrowUpRight,
   LayoutTemplate,
   Mail,
   Megaphone,
+  Palette,
   Search,
   Share2,
   ShoppingBag,
+  Sparkles,
   TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
@@ -24,85 +31,252 @@ interface ServiceTile {
   href: string;
   Icon: typeof TrendingUp;
   accent: string;
-  featured?: boolean;
+  cta?: false;
 }
 
-const SERVICES: ServiceTile[] = [
+interface CtaTile {
+  title: string;
+  text: string;
+  href: string;
+  cta: true;
+}
+
+type GridTile = ServiceTile | CtaTile;
+
+const SERVICES: GridTile[] = [
   {
     title: "Maatwerk websites",
-    text: "High-end sites from scratch: snel, veilig en perfect ingericht volgens Google's richtlijnen — Core Web Vitals, SEO-structuur en conversie.",
+    text: "High-end sites from scratch. Snel, veilig en ingericht volgens Google.",
     href: "/diensten/webdevelopment",
     Icon: LayoutTemplate,
     accent: "#0F172A",
-    featured: true,
   },
   {
     title: "Shopify webshops",
-    text: "Shopify-expert: schaalbare webshops en thema's die verkopen, snel laden en klaar zijn voor marketing en groei.",
+    text: "Shopify-expert. Webshops die verkopen, snel laden en meegroeien.",
     href: "/diensten/shopify-enterprise",
     Icon: ShoppingBag,
     accent: "#FF5722",
-    featured: true,
   },
   {
-    title: "Groeistrategie & marketing",
-    text: "Strategieën die het maximale halen: welke kanalen, welke boodschap en wat je eerst aanpakt voor meer klanten en omzet.",
+    title: "Groeistrategie",
+    text: "Welke kanalen, welke boodschap en wat je eerst aanpakt voor meer omzet.",
     href: "/groeien",
     Icon: TrendingUp,
     accent: "#FF5722",
   },
   {
-    title: "SEO & vindbaarheid",
-    text: "Gevonden worden in Google — door content, structuur en techniek die écht helpen.",
+    title: "SEO",
+    text: "Gevonden worden in Google via content, structuur en techniek.",
     href: "/diensten/seo",
     Icon: Search,
     accent: "#00BCD4",
   },
   {
     title: "Google Ads & SEA",
-    text: "Betaalde campagnes in Google en social. Meten, bijsturen en opschalen wat werkt.",
+    text: "Campagnes meten, bijsturen en opschalen wat echt werkt.",
     href: "/diensten/adverteren",
     Icon: Megaphone,
     accent: "#0F172A",
   },
   {
-    title: "Social media marketing",
-    text: "Content, campagnes en advertenties op social — afgestemd op je merk en doelgroep.",
+    title: "Social media",
+    text: "Content en campagnes op social, afgestemd op je merk.",
     href: "/diensten/adverteren",
     Icon: Share2,
     accent: "#00BCD4",
   },
   {
     title: "E-mailmarketing",
-    text: "Nieuwsbrieven en automatische mails die klanten binden en verkopen ondersteunen.",
+    text: "Nieuwsbrieven en flows die klanten binden en verkopen helpen.",
     href: "/diensten/email",
     Icon: Mail,
     accent: "#FF5722",
   },
+  {
+    title: "Branding & design",
+    text: "Een merkidentiteit die direct laat zien dat jij de expert bent.",
+    href: "/diensten/branding",
+    Icon: Palette,
+    accent: "#0F172A",
+  },
+  {
+    title: "Bekijk alle diensten",
+    text: "Automatisering, tracking, CRO, AI en meer. Alles op één plek.",
+    href: "/diensten",
+    cta: true,
+  },
 ];
 
-const EXTRA_SERVICES = [
-  { label: "Automatisering", href: "/diensten/automatisering" },
-  { label: "Branding & design", href: "/diensten/branding" },
-  { label: "Tracking & analytics", href: "/diensten/tracking" },
-  { label: "CRO & conversie", href: "/diensten/cro" },
-  { label: "AI & chatbots", href: "/diensten/chatbots" },
+const FOLD_PRESETS = [
+  { rx: -88, ry: 12, ox: "center bottom" },
+  { rx: 18, ry: 88, ox: "right center" },
+  { rx: -18, ry: -88, ox: "left center" },
+  { rx: 88, ry: -12, ox: "center top" },
+  { rx: -55, ry: 55, ox: "center bottom" },
+  { rx: 55, ry: -55, ox: "right center" },
+  { rx: -12, ry: 72, ox: "left center" },
+  { rx: 72, ry: 12, ox: "center top" },
+  { rx: -40, ry: -40, ox: "center center" },
 ] as const;
 
-const FOLD_PRESETS = [
-  { rx: -95, ry: 10, ox: "center bottom" },
-  { rx: 20, ry: 95, ox: "right center" },
-  { rx: -20, ry: -95, ox: "left center" },
-  { rx: 95, ry: -10, ox: "center top" },
-  { rx: -70, ry: 45, ox: "center bottom" },
-  { rx: 35, ry: -80, ox: "right center" },
-  { rx: -15, ry: 70, ox: "left center" },
-] as const;
+function isCtaTile(tile: GridTile): tile is CtaTile {
+  return "cta" in tile && tile.cta === true;
+}
+
+function ServiceCard({
+  tile,
+  isDim,
+  isActive,
+  onEnter,
+  onLeave,
+  onMove,
+  cardRef,
+}: {
+  tile: GridTile;
+  isDim: boolean;
+  isActive: boolean;
+  onEnter: () => void;
+  onLeave: () => void;
+  onMove: (e: ReactMouseEvent<HTMLDivElement>) => void;
+  cardRef: (el: HTMLDivElement | null) => void;
+}) {
+  const cta = isCtaTile(tile);
+
+  return (
+    <div
+      ref={cardRef}
+      className="will-change-transform"
+      style={{ transformStyle: "preserve-3d" }}
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
+      onMouseMove={onMove}
+    >
+      <Link
+        href={tile.href}
+        className={`group relative flex h-full min-h-[220px] flex-col justify-between gap-5 overflow-hidden rounded-3xl border p-6 transition-[transform,border-color,box-shadow,opacity,filter] duration-300 sm:min-h-[240px] sm:p-7 ${
+          cta
+            ? "border-[#FF5722]/30 bg-gradient-to-br from-[#FF5722] via-[#FF5722] to-[#E64A19] text-white"
+            : "border-slate-200 bg-white"
+        } ${
+          isDim
+            ? "opacity-45 blur-[0.4px] saturate-50"
+            : "opacity-100 hover:border-slate-300"
+        } ${isActive && !cta ? "-translate-y-1" : ""}`}
+        style={
+          !cta && isActive
+            ? {
+                boxShadow: `0 28px 60px -20px ${(tile as ServiceTile).accent}66, 0 4px 12px -4px rgba(15,23,42,0.08)`,
+              }
+            : cta
+              ? {
+                  boxShadow: isActive
+                    ? "0 28px 60px -20px rgba(255,87,34,0.55)"
+                    : "0 12px 32px -12px rgba(255,87,34,0.35)",
+                }
+              : {
+                  boxShadow:
+                    "0 1px 2px rgba(15,23,42,0.04), 0 8px 22px -8px rgba(15,23,42,0.08)",
+                }
+        }
+      >
+        {cta ? (
+          <>
+            <Sparkles
+              className="pointer-events-none absolute -right-4 -top-4 size-28 text-white/10"
+              strokeWidth={1}
+              aria-hidden
+            />
+            <div className="relative z-10 flex items-start justify-between">
+              <span className="flex size-14 items-center justify-center rounded-2xl bg-white/15 text-white backdrop-blur-sm">
+                <ArrowUpRight className="size-7" strokeWidth={2.2} />
+              </span>
+            </div>
+            <div className="relative z-10">
+              <h3 className="text-2xl font-extrabold tracking-tighter">
+                {tile.title}
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-white/85">
+                {tile.text}
+              </p>
+              <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-white">
+                Naar overzicht
+                <ArrowUpRight className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </span>
+            </div>
+          </>
+        ) : (
+          <>
+            <div
+              className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              style={{
+                background: `radial-gradient(circle at 50% 0%, ${(tile as ServiceTile).accent}18, transparent 65%)`,
+              }}
+              aria-hidden
+            />
+            <div className="relative z-10 flex items-start justify-between">
+              <span
+                className="flex size-14 items-center justify-center rounded-2xl text-white transition-transform duration-300 group-hover:scale-105"
+                style={{ backgroundColor: (tile as ServiceTile).accent }}
+                aria-hidden
+              >
+                <tile.Icon className="size-7" strokeWidth={2} />
+              </span>
+              <ArrowUpRight
+                className="size-5 text-slate-400 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-slate-900"
+                aria-hidden
+              />
+            </div>
+            <div className="relative z-10">
+              <h3 className="text-xl font-extrabold tracking-tighter text-slate-900 sm:text-2xl">
+                {tile.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:text-base">
+                {tile.text}
+              </p>
+            </div>
+          </>
+        )}
+      </Link>
+    </div>
+  );
+}
 
 export function ServicesOrigamiBento() {
+  const sectionRef = useRef<HTMLElement>(null);
   const rootRef = useRef<HTMLDivElement>(null);
+  const spotlightRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
   const [hovered, setHovered] = useState<number | null>(null);
+
+  const handleSectionMove = useCallback((e: ReactMouseEvent<HTMLElement>) => {
+    const el = spotlightRef.current;
+    const section = sectionRef.current;
+    if (!el || !section) return;
+    const rect = section.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    el.style.transform = `translate(${x - 200}px, ${y - 200}px)`;
+  }, []);
+
+  const handleCardMove = useCallback(
+    (index: number, e: ReactMouseEvent<HTMLDivElement>) => {
+      const card = cardsRef.current[index];
+      if (!card) return;
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      card.style.transform = `perspective(900px) rotateX(${-y * 10}deg) rotateY(${x * 10}deg) scale3d(1.02, 1.02, 1.02)`;
+    },
+    [],
+  );
+
+  const handleCardLeave = useCallback((index: number) => {
+    const card = cardsRef.current[index];
+    if (!card) return;
+    card.style.transform =
+      "perspective(900px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+  }, []);
 
   useGSAP(
     () => {
@@ -118,7 +292,7 @@ export function ServicesOrigamiBento() {
           rotateY: preset.ry,
           transformOrigin: preset.ox,
           opacity: 0,
-          y: 40,
+          y: 36,
         });
       });
 
@@ -127,12 +301,12 @@ export function ServicesOrigamiBento() {
         rotateY: 0,
         opacity: 1,
         y: 0,
-        duration: 0.9,
-        stagger: 0.08,
+        duration: 0.85,
+        stagger: 0.06,
         ease: "power3.out",
         scrollTrigger: {
           trigger: rootRef.current,
-          start: "top 82%",
+          start: "top 80%",
           once: true,
         },
       });
@@ -142,123 +316,67 @@ export function ServicesOrigamiBento() {
 
   return (
     <section
+      ref={sectionRef}
       id="services"
       aria-labelledby="services-heading"
-      className="relative border-y border-slate-200 bg-white py-20 sm:py-28"
+      className="relative overflow-hidden border-y border-slate-200 bg-slate-50 py-20 sm:py-28"
+      onMouseMove={handleSectionMove}
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-              Waar wij in uitblinken
-            </p>
-            <h2
-              id="services-heading"
-              className="mt-3 text-4xl font-extrabold tracking-tighter text-slate-900 sm:text-5xl"
-            >
-              Marketing, websites &amp; Shopify.
-            </h2>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600">
-              Groeistrategieën, SEO, ads, social en e-mail — plus high-end
-              websites en Shopify-webshops die technisch en visueel op topniveau
-              zijn. Wij bedenken het plan én voeren het uit.
-            </p>
-          </div>
-          <Link
-            href="/diensten"
-            className="group inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-bold tracking-tight text-slate-900 transition hover:border-slate-900"
+      <div
+        ref={spotlightRef}
+        aria-hidden
+        className="pointer-events-none absolute left-0 top-0 size-[400px] rounded-full bg-gradient-to-br from-[#FF5722]/12 via-[#00BCD4]/10 to-transparent blur-3xl transition-transform duration-300 ease-out will-change-transform"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(15,23,42,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(15,23,42,0.04) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
+
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+            Diensten
+          </p>
+          <h2
+            id="services-heading"
+            className="mt-3 text-4xl font-extrabold tracking-tighter text-slate-900 sm:text-5xl"
           >
-            Alle diensten
-            <ArrowUpRight className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </Link>
+            Wat we voor je uit handen nemen.
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            Marketing, websites en Shopify. Hover over een kaart en klik door
+            naar wat bij je past.
+          </p>
         </div>
 
         <div
           ref={rootRef}
-          className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3"
           style={{ perspective: "1400px" }}
-          onMouseLeave={() => setHovered(null)}
+          onMouseLeave={() => {
+            setHovered(null);
+            cardsRef.current.forEach((_, i) => handleCardLeave(i));
+          }}
         >
-          {SERVICES.map((svc, i) => {
-            const isDim = hovered !== null && hovered !== i;
-            return (
-              <div
-                key={svc.title}
-                ref={(el) => {
-                  cardsRef.current[i] = el;
-                }}
-                className={`will-change-transform ${
-                  svc.featured ? "sm:col-span-1 lg:col-span-1" : ""
-                }`}
-                style={{ transformStyle: "preserve-3d" }}
-                onMouseEnter={() => setHovered(i)}
-              >
-                <Link
-                  href={svc.href}
-                  className={`group relative flex h-full flex-col gap-5 rounded-3xl border bg-white p-7 transition-[transform,border-color,box-shadow,opacity,filter] duration-300 sm:p-8 ${
-                    svc.featured
-                      ? "border-slate-300 ring-1 ring-slate-200/80"
-                      : "border-slate-200"
-                  } ${
-                    isDim
-                      ? "opacity-55 blur-[0.3px]"
-                      : "opacity-100 hover:-translate-y-1 hover:border-slate-300"
-                  }`}
-                  style={{
-                    boxShadow:
-                      hovered === i
-                        ? `0 24px 56px -18px ${svc.accent}55, 0 4px 12px -4px rgba(15,23,42,0.08)`
-                        : "0 1px 2px rgba(15,23,42,0.04), 0 8px 22px -8px rgba(15,23,42,0.08)",
-                  }}
-                >
-                  {svc.featured ? (
-                    <span className="absolute right-6 top-6 rounded-full bg-slate-900 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
-                      Expert
-                    </span>
-                  ) : null}
-                  <div className="flex items-start justify-between">
-                    <span
-                      className="flex size-14 items-center justify-center rounded-2xl text-white"
-                      style={{ backgroundColor: svc.accent }}
-                      aria-hidden
-                    >
-                      <svc.Icon className="size-7" strokeWidth={2} />
-                    </span>
-                    <ArrowUpRight
-                      className="size-5 text-slate-400 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-slate-900"
-                      aria-hidden
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-extrabold tracking-tighter text-slate-900">
-                      {svc.title}
-                    </h3>
-                    <p className="mt-2 text-base leading-relaxed text-slate-600">
-                      {svc.text}
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="mt-10 rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 px-5 py-5 sm:px-6">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
-            Ook beschikbaar
-          </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {EXTRA_SERVICES.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
-              >
-                {item.label}
-                <ArrowUpRight className="size-3.5 opacity-60" aria-hidden />
-              </Link>
-            ))}
-          </div>
+          {SERVICES.map((tile, i) => (
+            <ServiceCard
+              key={tile.title}
+              tile={tile}
+              isDim={hovered !== null && hovered !== i}
+              isActive={hovered === i}
+              onEnter={() => setHovered(i)}
+              onLeave={() => handleCardLeave(i)}
+              onMove={(e) => handleCardMove(i, e)}
+              cardRef={(el) => {
+                cardsRef.current[i] = el;
+              }}
+            />
+          ))}
         </div>
       </div>
     </section>
