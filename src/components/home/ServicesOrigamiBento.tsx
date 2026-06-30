@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useState } from "react";
-import { ArrowUpRight, Bot, Palette, ShoppingBag, Workflow } from "lucide-react";
+import { ArrowUpRight, Mail, Megaphone, Search, TrendingUp } from "lucide-react";
 import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -13,37 +13,37 @@ interface ServiceTile {
   title: string;
   text: string;
   href: string;
-  Icon: typeof ShoppingBag;
+  Icon: typeof TrendingUp;
   accent: string;
 }
 
 const SERVICES: ServiceTile[] = [
   {
-    title: "Webshops & Sites",
-    text: "Snel, mooi en gebouwd om bezoekers in klanten te veranderen.",
-    href: "/bouwen",
-    Icon: ShoppingBag,
+    title: "Marketing & online groei",
+    text: "Een helder plan: welke kanalen, welke boodschap, en wat je eerst aanpakt om meer klanten te krijgen.",
+    href: "/groeien",
+    Icon: TrendingUp,
     accent: "#FF5722",
   },
   {
-    title: "Automatisering",
-    text: "We knopen je systemen aan elkaar zodat jij geen dubbel werk meer doet.",
-    href: "/automatiseren",
-    Icon: Workflow,
+    title: "SEO & vindbaarheid",
+    text: "Gevonden worden in Google — door content, structuur en techniek die écht helpen.",
+    href: "/diensten/seo",
+    Icon: Search,
     accent: "#00BCD4",
   },
   {
-    title: "AI & Chatbots",
-    text: "Slimme assistenten die je klantenservice overnemen, dag en nacht.",
-    href: "/diensten/chatbots",
-    Icon: Bot,
+    title: "Google & social ads",
+    text: "Campagnes die passen bij je aanbod. Meten, bijsturen en opschalen wat werkt.",
+    href: "/diensten/adverteren",
+    Icon: ShoppingBag,
     accent: "#0F172A",
   },
   {
-    title: "Vormgeving",
-    text: "Een merkidentiteit die direct laat zien dat jij de expert bent in jouw markt.",
-    href: "/vormgeven",
-    Icon: Palette,
+    title: "E-mailmarketing",
+    text: "Nieuwsbrieven en automatische mails die klanten binden en verkopen ondersteunen.",
+    href: "/diensten/email",
+    Icon: Mail,
     accent: "#FF5722",
   },
 ];
@@ -106,14 +106,18 @@ export function ServicesOrigamiBento() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-              Diensten
+              Marketing & groei
             </p>
             <h2
               id="services-heading"
               className="mt-3 text-4xl font-extrabold tracking-tighter text-slate-900 sm:text-5xl"
             >
-              Wat we voor je uit handen nemen.
+              Jouw bedrijf laten groeien. Online.
             </h2>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600">
+              Meer klanten, meer omzet, meer zichtbaarheid — met marketing die
+              past bij jouw bedrijf. Wij bouwen het plan én voeren het uit.
+            </p>
           </div>
           <Link
             href="/diensten"
