@@ -3,6 +3,10 @@ export const businessEmail = "info@meneermarketing.nl";
 
 export const businessEmailDisplay = "info@meneermarketing.nl";
 
+/** Kamer van Koophandel */
+export const businessKvk = "42095913";
+export const businessKvkDisplay = `KVK ${businessKvk}`;
+
 export function mailtoHref(params?: {
   subject?: string;
   body?: string;

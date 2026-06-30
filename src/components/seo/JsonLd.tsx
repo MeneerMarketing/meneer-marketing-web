@@ -1,4 +1,4 @@
-import { businessEmail } from "@/lib/contact";
+import { businessEmail, businessKvk } from "@/lib/contact";
 import { absoluteUrl, siteUrl } from "@/lib/site";
 
 const organization = {
@@ -7,6 +7,11 @@ const organization = {
   name: "MeneerMarketing",
   url: siteUrl,
   email: businessEmail,
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "KVK",
+    value: businessKvk,
+  },
   description:
     "Marketingbureau voor groei: maatwerk websites, Shopify-thema's, SEO, ads, e-mailmarketing en automatisering.",
   areaServed: "NL",

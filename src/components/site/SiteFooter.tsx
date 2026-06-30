@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CookiePreferencesButton } from "@/components/consent/CookiePreferencesButton";
 import { Logo } from "@/components/site/Logo";
-import { businessEmailDisplay, mailtoHref } from "@/lib/contact";
+import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/contact";
 import { siteCtaList } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 
@@ -161,7 +161,7 @@ export function SiteFooter() {
             <span className="mx-2 text-slate-600" aria-hidden>
               ·
             </span>
-            KVK-nummer vul je hier wanneer bekend.
+            {businessKvkDisplay}
           </p>
         </div>
       </div>
