@@ -16,7 +16,6 @@ import {
   Clock,
   Code2,
   Coffee,
-  Copy,
   Cpu,
   Gauge,
   Globe,
@@ -25,7 +24,6 @@ import {
   Layers,
   Link2,
   Mail,
-  MailCheck,
   MessageCircle,
   Palette,
   Phone,
@@ -41,7 +39,9 @@ import {
   Zap,
 } from "lucide-react";
 import { useMemo, useState, type FormEvent, type ReactNode } from "react";
-import { businessEmail, mailtoHref } from "@/lib/contact";
+import { businessEmail } from "@/lib/contact";
+import { submitContactForm } from "@/lib/contact-submission";
+import { readPlaygroundSummary } from "@/lib/groeiscan-playground";
 
 // ─── TYPES ────────────────────────────────────────────────────────────────
 
@@ -360,6 +360,20 @@ function findLabel(
   return options.find((o) => o.value === value)?.label ?? null;
 }
 
+function buildSubmissionBody(
+  state: FormState,
+  variant: ConversionFormVariant,
+): string {
+  let body = buildBody(state, variant);
+  if (variant === "groeiscan") {
+    const playground = readPlaygroundSummary();
+    if (playground) {
+      body += `\n\n${playground}`;
+    }
+  }
+  return body;
+}
+
 function buildBody(state: FormState, variant: ConversionFormVariant): string {
   const cfg = VARIANTS[variant];
   const out: string[] = [cfg.bodyTag, "", `Naam: ${state.naam.trim()}`];
@@ -532,25 +546,11 @@ function StepIndicator({ step, total, labels }: StepIndicatorProps) {
 
 interface SuccessStateProps {
   readonly onReset: () => void;
-  readonly mailHref: string;
-  readonly body: string;
-  readonly subject: string;
+  readonly replyToEmail: string;
 }
 
-function SuccessState({ onReset, mailHref, body, subject }: SuccessStateProps) {
+function SuccessState({ onReset, replyToEmail }: SuccessStateProps) {
   const reduce = useReducedMotion();
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = async () => {
-    const text = `Aan: ${businessEmail}\nOnderwerp: ${subject}\n\n${body}`;
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2200);
-    } catch {
-      /* no-op */
-    }
-  };
 
   return (
     <motion.div
@@ -605,37 +605,26 @@ function SuccessState({ onReset, mailHref, body, subject }: SuccessStateProps) {
       </motion.div>
 
       <h3 className="relative mt-6 text-2xl font-extrabold text-mm-text sm:text-3xl">
-        Je mailapp is geopend.
+        Bedankt — we hebben je aanvraag ontvangen.
       </h3>
       <p className="relative mx-auto mt-3 max-w-md text-sm leading-relaxed text-mm-muted">
-        Verstuur de mail en we reageren binnen één à twee werkdagen. Geen
-        mailapp? Kopieer hieronder het volledige bericht.
+        We reageren binnen één à twee werkdagen op{" "}
+        <strong className="text-mm-text">{replyToEmail}</strong>. Komt er niets
+        binnen? Check je spam of mail ons op{" "}
+        <a
+          href={`mailto:${businessEmail}`}
+          className="font-semibold text-mm-sky-deep underline-offset-4 hover:underline"
+        >
+          {businessEmail}
+        </a>
+        .
       </p>
 
       <div className="relative mt-8 flex flex-wrap justify-center gap-3">
-        <a
-          href={mailHref}
-          className="inline-flex items-center gap-2 rounded-full bg-mm-accent px-5 py-3 text-sm font-bold text-white shadow-md hover:bg-mm-accent-hover"
-        >
-          <MailCheck className="size-4" aria-hidden />
-          Mail opnieuw openen
-        </a>
-        <button
-          type="button"
-          onClick={handleCopy}
-          className="inline-flex items-center gap-2 rounded-full border-2 border-mm-border bg-white px-5 py-3 text-sm font-bold text-mm-text hover:border-mm-sky-deep/40"
-        >
-          {copied ? (
-            <Check className="size-4 text-mm-sky-deep" aria-hidden />
-          ) : (
-            <Copy className="size-4" aria-hidden />
-          )}
-          {copied ? "Gekopieerd" : "Kopieer mail"}
-        </button>
         <button
           type="button"
           onClick={onReset}
-          className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-mm-muted underline-offset-4 hover:text-mm-text hover:underline"
+          className="inline-flex items-center gap-2 rounded-full bg-mm-accent px-5 py-3 text-sm font-bold text-white shadow-md hover:bg-mm-accent-hover"
         >
           Nieuwe aanvraag starten
         </button>
@@ -664,20 +653,20 @@ export function ConversionForm({
   const [error, setError] = useState<string | null>(null);
   const [shake, setShake] = useState(0);
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const STEP_LABELS = ["Context", "Contact", "Bericht"] as const;
 
-  const mailBody = useMemo(() => buildBody(state, variant), [state, variant]);
+  const mailBody = useMemo(
+    () => buildSubmissionBody(state, variant),
+    [state, variant],
+  );
   const mailSubject = useMemo(
     () =>
       `${cfg.subject} ${state.naam.trim() || "…"}${
         state.bedrijf.trim() ? " · " + state.bedrijf.trim() : ""
       }`,
     [cfg.subject, state.naam, state.bedrijf],
-  );
-  const mailHref = useMemo(
-    () => mailtoHref({ subject: mailSubject, body: mailBody }),
-    [mailSubject, mailBody],
   );
 
   const patch = (partial: Partial<FormState>) => {
@@ -726,7 +715,7 @@ export function ConversionForm({
     setStep((s) => Math.max(s - 1, 0));
   };
 
-  const submit = (e: FormEvent) => {
+  const submit = async (e: FormEvent) => {
     e.preventDefault();
     const err = validateStep(2);
     if (err) {
@@ -734,7 +723,27 @@ export function ConversionForm({
       setShake((s) => s + 1);
       return;
     }
-    window.location.href = mailHref;
+
+    setSubmitting(true);
+    setError(null);
+
+    const result = await submitContactForm({
+      source: variant,
+      subject: mailSubject,
+      replyToEmail: state.email.trim(),
+      replyToName: state.naam.trim(),
+      body: mailBody,
+      companyWebsite: "",
+    });
+
+    setSubmitting(false);
+
+    if (!result.ok) {
+      setError(result.error);
+      setShake((s) => s + 1);
+      return;
+    }
+
     setSent(true);
   };
 
@@ -748,9 +757,7 @@ export function ConversionForm({
   if (sent) {
     return (
       <SuccessState
-        mailHref={mailHref}
-        body={mailBody}
-        subject={mailSubject}
+        replyToEmail={state.email.trim()}
         onReset={reset}
       />
     );
@@ -763,6 +770,16 @@ export function ConversionForm({
       noValidate
       className="relative overflow-hidden rounded-3xl border border-mm-border bg-white/90 p-5 shadow-[0_30px_80px_-30px_rgba(15,23,42,0.25)] backdrop-blur-md sm:p-8"
     >
+      <input
+        type="text"
+        name="companyWebsite"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden
+        className="pointer-events-none absolute left-[-9999px] h-0 w-0 opacity-0"
+        value=""
+        readOnly
+      />
       {/* subtle decorative glow */}
       <div
         aria-hidden
@@ -1042,7 +1059,8 @@ export function ConversionForm({
           ) : (
             <button
               type="submit"
-              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-7 py-4 text-sm font-extrabold text-white shadow-[0_18px_48px_-10px_rgba(234,88,12,0.55)] transition"
+              disabled={submitting}
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-7 py-4 text-sm font-extrabold text-white shadow-[0_18px_48px_-10px_rgba(234,88,12,0.55)] transition disabled:cursor-not-allowed disabled:opacity-70"
               style={{
                 background:
                   "linear-gradient(120deg, var(--mm-accent) 0%, #f97316 45%, var(--mm-sky-deep) 100%)",
@@ -1051,7 +1069,7 @@ export function ConversionForm({
             >
               <span className="relative z-[1] inline-flex items-center gap-2">
                 <Send className="size-4" aria-hidden />
-                {cfg.submitLabel}
+                {submitting ? "Versturen…" : cfg.submitLabel}
               </span>
               <span
                 aria-hidden
@@ -1063,7 +1081,7 @@ export function ConversionForm({
 
         <p className="mt-5 flex items-center justify-center gap-2 text-center text-[11px] text-mm-muted">
           <Handshake className="size-3.5" aria-hidden />
-          Versturen opent je mailapp. Wij slaan niets server-side op.
+          Je aanvraag gaat direct naar {businessEmail}. Geen mailapp nodig.
         </p>
       </div>
     </form>

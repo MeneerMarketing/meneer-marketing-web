@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { Send } from "lucide-react";
-import { mailtoHref } from "@/lib/contact";
+import { submitContactForm } from "@/lib/contact-submission";
 
 interface FormState {
   naam: string;
@@ -36,6 +36,8 @@ const initial: FormState = {
 export function ContactForm() {
   const [form, setForm] = useState<FormState>(initial);
   const [error, setError] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [sent, setSent] = useState(false);
 
   const set =
     (field: keyof FormState) =>
@@ -48,8 +50,9 @@ export function ContactForm() {
       setError(null);
     };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (submitting) return;
     if (!form.naam.trim() || !form.email.trim() || !form.bericht.trim()) {
       setError("Vul minimaal naam, e-mail en bericht in.");
       return;
@@ -73,18 +76,65 @@ export function ContactForm() {
       form.bericht.trim(),
     ].join("\n");
 
-    const href = mailtoHref({
+    setSubmitting(true);
+    setError(null);
+
+    const result = await submitContactForm({
+      source: "contact",
       subject: `[Contact] ${label}. ${form.naam.trim()}`,
+      replyToEmail: form.email.trim(),
+      replyToName: form.naam.trim(),
       body,
+      companyWebsite: "",
     });
-    window.location.href = href;
+
+    setSubmitting(false);
+
+    if (!result.ok) {
+      setError(result.error);
+      return;
+    }
+
+    setSent(true);
   };
+
+  if (sent) {
+    return (
+      <div className="rounded-3xl border border-mm-border bg-mm-sky-subtle/40 p-8 text-center shadow-sm">
+        <h3 className="text-xl font-extrabold text-mm-text">Bedankt voor je bericht</h3>
+        <p className="mt-3 text-sm leading-relaxed text-mm-muted">
+          We hebben je aanvraag ontvangen en reageren binnen één à twee werkdagen op{" "}
+          <strong className="text-mm-text">{form.email.trim()}</strong>.
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            setSent(false);
+            setForm(initial);
+          }}
+          className="mt-6 text-sm font-semibold text-mm-sky-deep underline-offset-4 hover:underline"
+        >
+          Nog een bericht sturen
+        </button>
+      </div>
+    );
+  }
 
   const inputCls =
     "w-full rounded-2xl border border-mm-border bg-mm-surface-elevated px-4 py-3.5 text-sm text-mm-text placeholder:text-mm-muted/70 focus:border-mm-sky focus:outline-none focus:ring-2 focus:ring-mm-sky/25";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+      <input
+        type="text"
+        name="companyWebsite"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden
+        className="pointer-events-none absolute left-[-9999px] h-0 w-0 opacity-0"
+        value=""
+        readOnly
+      />
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="contact-naam" className="mb-2 block text-xs font-bold uppercase tracking-wider text-mm-muted">
@@ -190,15 +240,16 @@ export function ContactForm() {
         </p>
       ) : null}
       <p className="text-xs text-mm-muted">
-        Door te versturen opent je e-mailprogramma met een concept naar ons
-        team. Geen data wordt op onze servers opgeslagen via dit formulier.
+        Je gegevens gaan direct naar ons team op info@meneermarketing.nl. We
+        reageren binnen één à twee werkdagen.
       </p>
       <button
         type="submit"
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-mm-accent px-6 py-4 text-sm font-bold text-white shadow-md hover:bg-mm-accent-hover sm:w-auto"
+        disabled={submitting}
+        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-mm-accent px-6 py-4 text-sm font-bold text-white shadow-md hover:bg-mm-accent-hover disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
       >
         <Send className="size-4" aria-hidden />
-        Open e-mail en verstuur
+        {submitting ? "Versturen…" : "Verstuur bericht"}
       </button>
     </form>
   );

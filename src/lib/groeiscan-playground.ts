@@ -110,3 +110,46 @@ export function computePlaygroundInsight(
     sub: `Met focus op “${g.label.toLowerCase()}” en jouw huidige ambitie kunnen we scherp prioriteren.`,
   };
 }
+
+const GROEISCAN_SESSION_KEY = "mm-groeiscan-playground";
+
+export function formatPlaygroundSummary(
+  input: PlaygroundScoreInput,
+  score: number,
+  insight: PlaygroundInsight,
+): string {
+  const goal = GROEISCAN_GOALS.find((x) => x.id === input.goal)?.label ?? input.goal;
+  const channels = GROEISCAN_CHANNELS.filter((c) => input.channelIds.has(c.id))
+    .map((c) => c.label)
+    .join(", ");
+
+  return [
+    "--- Groeiscan playground (website) ---",
+    `Score: ${score}/100`,
+    `Hoofddoel: ${goal}`,
+    `Ambitie: ${formatBudgetTier(input.budgetTier)}`,
+    `Digitale volwassenheid: ${input.maturity}/10`,
+    `Tijdverspilling per week: ${input.frictionHours} uur`,
+    `Kanalen: ${channels || "geen geselecteerd"}`,
+    `Inzicht: ${insight.headline}`,
+    insight.sub,
+  ].join("\n");
+}
+
+export function savePlaygroundSummary(summary: string): void {
+  if (typeof window === "undefined") return;
+  try {
+    sessionStorage.setItem(GROEISCAN_SESSION_KEY, summary);
+  } catch {
+    /* ignore quota / private mode */
+  }
+}
+
+export function readPlaygroundSummary(): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return sessionStorage.getItem(GROEISCAN_SESSION_KEY);
+  } catch {
+    return null;
+  }
+}

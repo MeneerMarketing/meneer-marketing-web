@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Sparkles, Timer } from "lucide-react";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { siteCtas } from "@/lib/cta";
 import {
   GROEISCAN_CHANNELS,
@@ -12,6 +12,8 @@ import {
   computePlaygroundInsight,
   computePlaygroundScore,
   formatBudgetTier,
+  formatPlaygroundSummary,
+  savePlaygroundSummary,
 } from "@/lib/groeiscan-playground";
 
 export function GroeiscanInteractive() {
@@ -48,6 +50,10 @@ export function GroeiscanInteractive() {
     () => computePlaygroundInsight(input),
     [input],
   );
+
+  useEffect(() => {
+    savePlaygroundSummary(formatPlaygroundSummary(input, score, { headline, sub }));
+  }, [input, score, headline, sub]);
 
   const selectedGoal = GROEISCAN_GOALS.find((x) => x.id === goal)!;
 
