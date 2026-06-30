@@ -6,7 +6,14 @@ import { ArrowUpRight, Calendar, Sparkles } from "lucide-react";
 import { Magnetic } from "@/components/effects/Magnetic";
 import { siteCtas } from "@/lib/cta";
 
-const TECH_TAGS = ["Shopify", "Maatwerk", "Next.js", "n8n", "Klaviyo"];
+const TECH_TAGS = [
+  "SEO",
+  "Google Ads",
+  "Shopify",
+  "Social",
+  "Klaviyo",
+  "Core Web Vitals",
+];
 
 export function HeroCtaCard() {
   const reduce = useReducedMotion();
@@ -51,12 +58,12 @@ export function HeroCtaCard() {
 
           <h2 className="mt-7 text-[2.5rem] font-extrabold leading-[1.02] tracking-tighter sm:text-[2.85rem]">
             Klaar om te
-            <span className="block">bouwen?</span>
+            <span className="block">groeien?</span>
           </h2>
 
           <p className="mt-5 max-w-[360px] text-[15px] leading-relaxed tracking-tight text-white/90">
             Plan een gratis kennismaking van 30 minuten. We kijken samen waar
-            de winst zit en wat we voor je kunnen bouwen.
+            de groei zit — marketing, website of webshop.
           </p>
 
           <div className="mt-8 space-y-3">

@@ -22,7 +22,7 @@ export function HeroSection() {
         <div>
           <Magnetic strength={6} radius={180} wobble={false}>
             <p className="text-xs font-bold uppercase tracking-[0.26em] text-[#FF5722]">
-              Bouwen. Groeien. Automatiseren.
+              Marketing · Websites · Shopify
             </p>
           </Magnetic>
 
@@ -30,15 +30,17 @@ export function HeroSection() {
             id="hero-heading"
             className="mt-5 text-5xl font-extrabold leading-[1.02] tracking-tighter text-slate-900 sm:text-6xl lg:text-[4.25rem]"
           >
-            Wij bouwen systemen die winst maken.
-            <span className="mt-2 block text-[#FF5722]">Terwijl jij slaapt.</span>
+            Marketing die je bedrijf laat groeien.
+            <span className="mt-2 block text-[#FF5722]">
+              Met websites en shops die Google en klanten overtuigen.
+            </span>
           </h1>
 
           <p className="mt-7 max-w-xl text-lg leading-relaxed tracking-tight text-slate-600">
-            Maatwerk websites, Shopify-thema&apos;s en slimme koppelingen — from
-            scratch, passend bij jouw merk. SEO, ads, e-mail en automatisering
-            hangen we eraan vast. Zo groeit je bedrijf online zonder losse
-            eindjes.
+            Wij bedenken groeistrategieën en voeren ze uit: SEO, Google Ads,
+            social media en e-mailmarketing. Daarbovenop bouwen we high-end
+            websites en Shopify-webshops — snel, perfect ingericht en volgens
+            de richtlijnen van Google.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
@@ -70,15 +72,15 @@ export function HeroSection() {
           <dl className="mt-14 grid max-w-xl grid-cols-3 gap-6 border-t border-slate-200 pt-8 text-sm tracking-tight">
             <div>
               <dt className="text-slate-500">Focus</dt>
-              <dd className="mt-1 font-bold text-slate-900">Snelheid &amp; schaal</dd>
+              <dd className="mt-1 font-bold text-slate-900">Marketing &amp; groei</dd>
             </div>
             <div>
-              <dt className="text-slate-500">Stack</dt>
-              <dd className="mt-1 font-bold text-slate-900">Shopify · Maatwerk · Next</dd>
+              <dt className="text-slate-500">Expertise</dt>
+              <dd className="mt-1 font-bold text-slate-900">SEO · Ads · Shopify</dd>
             </div>
             <div>
               <dt className="text-slate-500">Aanpak</dt>
-              <dd className="mt-1 font-bold text-slate-900">Nuchter &amp; direct</dd>
+              <dd className="mt-1 font-bold text-slate-900">Strategie + uitvoering</dd>
             </div>
           </dl>
         </div>

@@ -15,21 +15,22 @@ export function AutomationSection() {
           <Reveal>
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-mm-sky-deep">
-                Automatisering
+                Strategie
               </p>
               <h2
                 id="automation-heading"
                 className="mt-3 text-3xl font-extrabold tracking-tighter text-mm-text sm:text-4xl"
               >
-                Eén rustig systeem.{" "}
+                Het maximale halen.{" "}
                 <span className="text-mm-sky-deep">
-                  Zonder dubbel werk.
+                  Met een plan dat klopt.
                 </span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
-                Andere bureaus stoppen bij mooie campagnes. Wij koppelen je
-                shop, ads, CRM en boekhouding aan elkaar. Zodat schalen geen
-                chaos wordt en jij niet elke avond data hoeft over te typen.
+                Geen losse campagnes of mooie sites zonder resultaat. Wij
+                bedenken groeistrategieën op maat: welke kanalen, welke
+                boodschap en welke prioriteiten — en voeren het uit met SEO,
+                ads, social, e-mail en een website of shop die meegroeit.
               </p>
 
               <Link
@@ -43,24 +44,25 @@ export function AutomationSection() {
               <ul className="mt-8 space-y-3 text-sm tracking-tight text-mm-text">
                 <li className="flex gap-2">
                   <span className="font-bold text-mm-sky-deep">→</span>
-                  Workflows voor orders, voorraad en facturatie die zichzelf
-                  draaien.
+                  Marketingmix op maat: SEO, SEA, social en e-mail die op elkaar
+                  aansluiten.
                 </li>
                 <li className="flex gap-2">
                   <span className="font-bold text-mm-sky-deep">→</span>
-                  Chatbots en mailflows op jouw data. Geen generieke praat.
+                  High-end websites en Shopify-shops die Google en klanten
+                  overtuigen.
                 </li>
                 <li className="flex gap-2">
                   <span className="font-bold text-mm-sky-deep">→</span>
-                  Tracking die klopt, zodat je ziet wat écht werkt.
+                  Meten wat werkt — en opschalen waar de winst zit.
                 </li>
               </ul>
 
               <Link
-                href="/diensten/automatisering"
+                href="/groeien"
                 className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-mm-sky-deep hover:text-mm-sky"
               >
-                Meer over automatisering
+                Meer over groeistrategie
                 <ArrowRight className="size-4" />
               </Link>
             </div>

@@ -6,24 +6,24 @@ import { siteCtas } from "@/lib/cta";
 
 const pillars = [
   {
-    title: "Meetbaar",
-    body: "Geen rapportages zonder betekenis. KPI's, events en dashboards waar je écht beslissingen op neemt.",
-    tag: "Data",
+    title: "Groeistrategie",
+    body: "Geen losse acties. Een helder plan: welke kanalen, welke boodschap en wat je eerst aanpakt om maximaal te groeien.",
+    tag: "Marketing",
   },
   {
-    title: "Snel",
-    body: "Snelle laadtijden (Core Web Vitals). Sites en shops die snel openen — want trage sites kosten klanten.",
-    tag: "Snelheid",
+    title: "High-end websites",
+    body: "Maatwerk sites from scratch — snel, veilig en ingericht volgens Google's richtlijnen. Core Web Vitals en SEO-structuur inbegrepen.",
+    tag: "Websites",
   },
   {
-    title: "Schaalbaar",
-    body: "Wat vandaag een landingspagina is, groeit morgen door naar koppelingen met CRM, ads en automatisering.",
-    tag: "Stack",
+    title: "Shopify-expert",
+    body: "Webshops die verkopen en meegroeien. Thema's, flows en koppelingen met je marketing — gebouwd door iemand die Shopify echt kent.",
+    tag: "E-commerce",
   },
   {
-    title: "Mens + machine",
-    body: "AI en automatisering op de juiste plek. Jij houdt de regie. Je klant merkt alleen rust en tempo.",
-    tag: "Proces",
+    title: "Meetbaar groeien",
+    body: "SEO, ads, social en e-mail met duidelijke KPI's. Je ziet wat werkt — en we schalen op waar de omzet zit.",
+    tag: "Resultaat",
   },
 ] as const;
 
@@ -41,12 +41,12 @@ export function DifferenceSection() {
               className="text-3xl font-extrabold tracking-tight text-mm-text sm:text-4xl"
             >
               Niet nóg een bureau.{" "}
-              <span className="text-mm-sky-deep">Een bouwer van groei.</span>
+              <span className="text-mm-sky-deep">Een partner in groei.</span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
-              Geen menu vol losse diensten zonder context. Wel vier principes
-              die je terugziet in snelheid, omzet en een hoofd dat rustig
-              blijft.
+              Marketing die resultaat oplevert. Websites en shops op topniveau.
+              Vier principes die je terugziet in meer klanten, meer omzet en
+              meer zichtbaarheid.
             </p>
             <Link
               href={siteCtas.samenwerken.href}
