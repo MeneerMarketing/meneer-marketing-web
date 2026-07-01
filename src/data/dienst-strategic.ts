@@ -20,7 +20,7 @@ export interface DienstStrategicContent {
 
 const PILLAR_LENS: Record<string, string> = {
   Bouwen:
-    "Binnen Bouwen kijk ik niet alleen naar ‘een site’ of ‘een shop’, maar naar hoe jouw bedrijf over vijf jaar nog steeds snel kan groeien. Dat bepaalt welk platform we kiezen, hoe we koppelingen ontwerpen en waar we problemen voorkomen. Zo sluit alles aan op hoe jij echt werkt — niet op een standaard template.",
+    "Binnen Bouwen kijk ik niet alleen naar ‘een site’ of ‘een shop’, maar naar hoe jouw bedrijf over vijf jaar nog steeds snel kan groeien. Dat bepaalt welk platform we kiezen, hoe we koppelingen ontwerpen en waar we problemen voorkomen. Zo sluit alles aan op hoe jij echt werkt, niet op een standaard template.",
   Groeien:
     "Binnen Groeien vertaal ik groei naar kanalen én naar wat je site aankan. Soms is de grootste winst een scherpere landingspagina; andere keren een betere Google-vindbaarheid, e-mailflows of advertenties die eindelijk hetzelfde beloven als je product. Ik kies wat past bij jouw marge, verkoopcycli en team.",
   Automatiseren:
@@ -306,11 +306,11 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "E-mail werkt als je de juiste mail op het juiste moment stuurt. Ik help met strategie, opzet en design: van je eerste nieuwsbrief tot automatische welkomstmails, herinnermails en opvolging na aankoop.",
     deepExtended:
-      "Of je nu Klaviyo, Shopify Mail of een andere tool gebruikt: ik zorg dat je mails er professioneel uitzien, logisch doorlopen en aansluiten op je merk. Geen spam — wel mails die klanten waarderen en die verkopen ondersteunen.",
+      "Of je nu Klaviyo, Shopify Mail of een andere tool gebruikt: ik zorg dat je mails er professioneel uitzien, logisch doorlopen en aansluiten op je merk. Geen spam, wel mails die klanten waarderen en die verkopen ondersteunen.",
     signals: [
       "Welke mails stuur je nu al (welkom, nieuwsbrief, herinnering)?",
       "Welke e-mailtool gebruik je (Klaviyo, Shopify, Mailchimp)?",
-      "Hoe segmenteer je klanten — en welke data heb je betrouwbaar?",
+      "Hoe segmenteer je klanten, en welke data heb je betrouwbaar?",
       "Welke toon past bij je merk: zakelijk, persoonlijk, luxe?",
     ],
   },
@@ -353,7 +353,7 @@ export const STRATEGY_MANIFESTO = {
   paragraphs: [
     "Ik geloof niet dat hetzelfde plan voor elke onderneming werkt. Wat een webshop nodig heeft, verschilt van een B2B-dienstverlener of een lokale retailer. Zelfs als ze allemaal ‘een site’ willen.",
     "Daarom start elk traject met luisteren: wie is je klant, waar zit je winst, welke systemen gebruik je, en waar verlies je nu tijd of omzet? Pas daarna kies ik welke diensten, tools en volgorde het beste passen.",
-    "Als allrounder verbind ik web, marketing en dagelijkse operatie. Jij krijgt geen eindeloze keten van losse specialisten, maar één duidelijke lijn — met taal die je begrijpt, niet jargon om indruk te maken.",
+    "Als allrounder verbind ik web, marketing en dagelijkse operatie. Jij krijgt geen eindeloze keten van losse specialisten, maar één duidelijke lijn, met taal die je begrijpt, niet jargon om indruk te maken.",
   ],
 } as const;
 
@@ -369,6 +369,6 @@ export const STRATEGY_SIGNATURE_INSIGHTS = [
   },
   {
     title: "Eén lijn, geen eindeloze keten",
-    body: "Web, marketing en operatie hangen samen. Jij krijgt één duidelijke lijn — minder gedoe tussen losse partijen.",
+    body: "Web, marketing en operatie hangen samen. Jij krijgt één duidelijke lijn, minder gedoe tussen losse partijen.",
   },
 ] as const;

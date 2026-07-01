@@ -14,11 +14,11 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "MeneerMarketing: marketing, SEO, Google Ads, social media en e-mailmarketing — plus high-end websites en Shopify-webshops. Groeistrategieën die resultaat opleveren.",
+    "MeneerMarketing: marketing, SEO, Google Ads, social media en e-mailmarketing, plus high-end websites en Shopify-webshops. Groeistrategieën die resultaat opleveren.",
   openGraph: {
     title: "MeneerMarketing. Marketing, websites & Shopify",
     description:
-      "Groeistrategieën en uitvoering: SEO, ads, social, e-mail — en websites en shops op topniveau.",
+      "Groeistrategieën en uitvoering: SEO, ads, social, e-mail en websites en shops op topniveau.",
     url: "/",
   },
 };

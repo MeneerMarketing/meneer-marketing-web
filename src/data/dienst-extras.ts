@@ -42,7 +42,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
     outcomes: [
       "Maatwerk websites die snel laden en makkelijk te beheren zijn",
       "Heldere structuur en design passend bij je merk",
-      "Overdracht en documentatie — je zit niet vast aan één persoon",
+      "Overdracht en documentatie, zodat je niet vastzit aan één persoon",
     ],
     faq: [
       Q.start,

@@ -102,14 +102,14 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     headline: "Groeien zonder ruis.",
     subheadline:
-      "Meer bezoekers is geen doel — meer klanten en omzet wel. Wij zetten SEO, advertenties, e-mail en je website op één lijn.",
+      "Meer bezoekers is geen doel. Meer klanten en omzet wel. Wij zetten SEO, advertenties, e-mail en je website op één lijn.",
     stats: [
       { label: "SEO", value: "Content · structuur · techniek" },
       { label: "Ads", value: "Google · Meta · testen" },
       { label: "E-mail", value: "Nieuwsbrief · flows · Klaviyo" },
     ],
     introParagraphs: [
-      "In 2026 wint wie duidelijk is: een site met goede antwoorden, campagnes die hetzelfde beloven als je landingspagina, en e-mails die op het juiste moment aankomen. Wij bouwen die lijn — van structuur tot advertentie.",
+      "In 2026 wint wie duidelijk is: een site met goede antwoorden, campagnes die hetzelfde beloven als je landingspagina, en e-mails die op het juiste moment aankomen. Wij bouwen die lijn, van structuur tot advertentie.",
       "Of je nu meer wilt verkopen in je webshop, B2B-leads wilt genereren of een nieuwe markt wilt testen: we starten met meten. Zonder goede data is optimaliseren gokken.",
     ],
     angleTitle: "Marketing die techniek respecteert",

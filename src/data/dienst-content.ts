@@ -29,7 +29,7 @@ const CONTENT = {
     ],
   ),
   webdevelopment: body(
-    "Ik bouw websites from scratch — geen kant-en-klare templates. Alles is maatwerk: snel, veilig en precies passend bij jouw bedrijf. Of het nu een bedrijfswebsite, landingspagina of portal is.",
+    "Ik bouw websites from scratch, geen kant-en-klare templates. Alles is maatwerk: snel, veilig en precies passend bij jouw bedrijf. Of het nu een bedrijfswebsite, landingspagina of portal is.",
     [
       "Volledig op maat: design, structuur en code passend bij jouw merk",
       "Snelle laadtijden en goede vindbaarheid in Google (SEO)",
@@ -56,7 +56,7 @@ const CONTENT = {
     ],
   ),
   seo: body(
-    "SEO betekent: gevonden worden in Google door de juiste content, een logische site-structuur en techniek die goed werkt. Geen trucjes — wel een site die antwoord geeft op wat je klanten zoeken.",
+    "SEO betekent: gevonden worden in Google door de juiste content, een logische site-structuur en techniek die goed werkt. Geen trucjes, wel een site die antwoord geeft op wat je klanten zoeken.",
     [
       "Site-structuur die logisch is voor bezoekers én Google",
       "Content die écht helpt, niet gekopieerd van concurrenten",
@@ -167,7 +167,7 @@ const CONTENT = {
     "E-mailmarketing is nog steeds een van de sterkste manieren om klanten te binden en te verkopen. Ik help met strategie, opzet en design: van je eerste nieuwsbrief tot automatische welkomstmails en herinnermails bij verlaten winkelwagen.",
     [
       "Nieuwsbrieven en campagnes die passen bij je merk en doelgroep",
-      "Automatische flows: welkom, verlaten winkelwagen, na aankoop — op maat",
+      "Automatische flows: welkom, verlaten winkelwagen, na aankoop, op maat",
       "Koppeling met Klaviyo, Shopify Mail of jouw e-mailtool",
       "Templates die er professioneel uitzien op telefoon én desktop",
     ],

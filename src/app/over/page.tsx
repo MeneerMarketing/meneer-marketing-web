@@ -81,7 +81,7 @@ export default function OverPage() {
                 <p className="mt-4 text-lg leading-relaxed text-mm-muted">
                   Of het nu gaat om een internationale Shopify, een maatwerk website
                   from scratch, een web-app of n8n-workflows die je team rust
-                  geven — we denken in pijlers: bouwen, groeien, automatiseren,
+                  geven. We denken in pijlers: bouwen, groeien, automatiseren,
                   vormgeven.
                 </p>
               </Reveal>

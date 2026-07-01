@@ -35,7 +35,7 @@ const FAQ_ITEMS = [
   {
     question: "Met welke platforms werken jullie?",
     answer:
-      "We bouwen maatwerk websites from scratch, Shopify-thema's op maat, web-apps met Next.js, en automatisering met o.a. n8n en Make. Het platform kiezen we op basis van jouw situatie — niet op basis van wat we ‘altijd’ doen.",
+      "We bouwen maatwerk websites from scratch, Shopify-thema's op maat, web-apps met Next.js, en automatisering met o.a. n8n en Make. Het platform kiezen we op basis van jouw situatie, niet op basis van wat we ‘altijd’ doen.",
   },
   {
     question: "Hoe snel kan ik live?",

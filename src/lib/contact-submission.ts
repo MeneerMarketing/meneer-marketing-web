@@ -17,7 +17,7 @@ export const ContactSubmissionSchema = z.object({
   replyToEmail: z.string().email().max(254),
   replyToName: z.string().min(1).max(120),
   body: z.string().min(10).max(20_000),
-  /** Honeypot — moet leeg blijven */
+  /** Honeypot: moet leeg blijven */
   companyWebsite: z.string().max(0).optional(),
 });
 

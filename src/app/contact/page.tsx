@@ -66,8 +66,7 @@ export default function ContactPage() {
                   Stuur een bericht
                 </h2>
                 <p className="mt-2 text-sm text-mm-muted">
-                  Het formulier opent je e-mailapp met een vooringevulde mail
-                  naar{" "}
+                  Vul het formulier in. Je bericht komt direct bij ons team op{" "}
                   <span className="font-semibold text-mm-text">
                     {businessEmailDisplay}
                   </span>

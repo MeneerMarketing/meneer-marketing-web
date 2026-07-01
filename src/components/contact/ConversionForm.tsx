@@ -508,10 +508,7 @@ function StepIndicator({ step, total, labels }: StepIndicatorProps) {
     <div className="mb-6 sm:mb-8">
       <div className="flex items-center justify-between">
         <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-mm-muted">
-          Stap {step + 1} · {labels[step]}
-        </p>
-        <p className="text-[11px] font-bold text-mm-sky-deep">
-          {step + 1}/{total}
+          {labels[step]}
         </p>
       </div>
       <div className="relative mt-3 h-1.5 overflow-hidden rounded-full bg-mm-border/60">
@@ -605,7 +602,7 @@ function SuccessState({ onReset, replyToEmail }: SuccessStateProps) {
       </motion.div>
 
       <h3 className="relative mt-6 text-2xl font-extrabold text-mm-text sm:text-3xl">
-        Bedankt — we hebben je aanvraag ontvangen.
+        Bedankt. We hebben je aanvraag ontvangen.
       </h3>
       <p className="relative mx-auto mt-3 max-w-md text-sm leading-relaxed text-mm-muted">
         We reageren binnen één à twee werkdagen op{" "}
@@ -1081,7 +1078,7 @@ export function ConversionForm({
 
         <p className="mt-5 flex items-center justify-center gap-2 text-center text-[11px] text-mm-muted">
           <Handshake className="size-3.5" aria-hidden />
-          Je aanvraag gaat direct naar {businessEmail}. Geen mailapp nodig.
+          Je aanvraag gaat direct naar {businessEmail}.
         </p>
       </div>
     </form>

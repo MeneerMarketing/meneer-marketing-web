@@ -12,17 +12,17 @@ const pillars = [
   },
   {
     title: "High-end websites",
-    body: "Maatwerk sites from scratch — snel, veilig en ingericht volgens Google's richtlijnen. Core Web Vitals en SEO-structuur inbegrepen.",
+    body: "Maatwerk sites from scratch: snel, veilig en ingericht volgens Google's richtlijnen. Core Web Vitals en SEO-structuur inbegrepen.",
     tag: "Websites",
   },
   {
     title: "Shopify-expert",
-    body: "Webshops die verkopen en meegroeien. Thema's, flows en koppelingen met je marketing — gebouwd door iemand die Shopify echt kent.",
+    body: "Webshops die verkopen en meegroeien. Thema's, flows en koppelingen met je marketing, gebouwd door iemand die Shopify echt kent.",
     tag: "E-commerce",
   },
   {
     title: "Meetbaar groeien",
-    body: "SEO, ads, social en e-mail met duidelijke KPI's. Je ziet wat werkt — en we schalen op waar de omzet zit.",
+    body: "SEO, ads, social en e-mail met duidelijke KPI's. Je ziet wat werkt. Dan schalen we op waar de omzet zit.",
     tag: "Resultaat",
   },
 ] as const;

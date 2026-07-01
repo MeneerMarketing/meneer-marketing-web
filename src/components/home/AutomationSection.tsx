@@ -29,7 +29,7 @@ export function AutomationSection() {
               <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
                 Geen losse campagnes of mooie sites zonder resultaat. Wij
                 bedenken groeistrategieën op maat: welke kanalen, welke
-                boodschap en welke prioriteiten — en voeren het uit met SEO,
+                boodschap en welke prioriteiten. Daarna voeren we het uit met SEO,
                 ads, social, e-mail en een website of shop die meegroeit.
               </p>
 
@@ -54,7 +54,7 @@ export function AutomationSection() {
                 </li>
                 <li className="flex gap-2">
                   <span className="font-bold text-mm-sky-deep">→</span>
-                  Meten wat werkt — en opschalen waar de winst zit.
+                  Meten wat werkt en opschalen waar de winst zit.
                 </li>
               </ul>
 

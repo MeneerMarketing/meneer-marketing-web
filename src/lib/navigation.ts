@@ -50,7 +50,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       },
       {
         name: "Maatwerk websites",
-        description: "From scratch — geen templates, volledig op maat",
+        description: "From scratch, geen templates, volledig op maat",
         menuLabel: "Websites from scratch",
         menuDescription:
           "Websites die we zelf bouwen: snel, veilig en precies passend bij jouw bedrijf.",
@@ -69,7 +69,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         description: "Snellere site, betere scores in Google",
         menuLabel: "Snelheid & technische SEO",
         menuDescription:
-          "Je site sneller maken en technisch klaarzetten voor Google — meetbaar en duurzaam.",
+          "Je site sneller maken en technisch klaarzetten voor Google, meetbaar en duurzaam.",
         href: "/diensten/optimalisatie",
       },
     ],
@@ -108,7 +108,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         description: "Meer aanvragen en verkopen zonder extra bezoekers",
         menuLabel: "Conversie-optimalisatie (CRO)",
         menuDescription:
-          "CRO: meer klanten uit hetzelfde aantal bezoekers — door je site slimmer in te richten.",
+          "CRO: meer klanten uit hetzelfde aantal bezoekers door je site slimmer in te richten.",
         href: "/diensten/cro",
       },
       {
