@@ -1,0 +1,23 @@
+---
+description: Master copy & UI regels voor alle MeneerMarketing websites (geen em-dash, geen 01/02/03)
+alwaysApply: true
+---
+
+# Master copy & UI (alle websites)
+
+Bij **alle user-facing teksten** (sites, landings, Shopify, e-mail, formulieren):
+
+- **Geen em-dash:** geen `—`, `&mdash;` of `--` in lopende tekst. Gebruik punten, komma's of korte zinnen.
+- **Geen AI-nummering:** geen `01`, `02`, `03`, `Stap 1`, `1/3` in UI tenzij de gebruiker dit expliciet vraagt.
+- **Menselijk Nederlands:** direct, geen corporate fluff. Vaktermen kort uitleggen.
+- **Minimalistisch:** geen drukke stats-blokken of over-engineered UX tenzij gevraagd.
+
+Voorbeelden:
+
+- Fout: `Marketing — websites — Shopify`
+- Goed: `Marketing, websites en Shopify`
+
+- Fout: `Stap 1 · Context` / `01 Ontdekken`
+- Goed: `Context` / `Ontdekken`
+
+Project-specifieke regels (Skin Complete, stack) staan in `AGENTS.md`.
