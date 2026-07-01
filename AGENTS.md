@@ -33,17 +33,18 @@ Geldt voor **elke site in deze workspace**: MeneerMarketing (`src/`), Skin Compl
 Bij alle consumenten- en SEO-teksten voor Skin Complete (naast de algemene regels hierboven):
 
 1. **Het Premium LED-Mask:** altijd *het* (niet *de*). Productnaam: Premium LED-Mask.
-2. **Clinical, niet Medical:** gebruik `clinical-grade` / `klinisch`; nooit `medical-grade` of `medisch` als productclaim.
-3. **Geen harde claims:** vermijd diagnoses en absolute beloftes. Gebruik helpende taal: *kunnen helpen*, *mogelijk*, *ondersteunen*, *kan*.
-4. **Geen vaste behandeltijd:** geen "10 minuten per sessie"; verwijs naar het **LED Passport** (persoonlijk protocol).
-5. **Golflengtes:** Premium LED-Mask: **7 golflengtes** (410, 460, 610, 630, 660, 830, 850, 880 nm). Precision Photonic System: **4 golflengtes**.
-6. **Nabij-infrarood:** niet *infrarood* alleen; schrijf *nabij-infrarood (nir)*.
-7. **FDA 510(k):** alleen op **Premium LED-Mask** (SR-M4), niet op Neck & Décolleté of Precision Photonic System.
-8. **Geen 30-dagen retour/geld-terug** in marketingcopy. Trust bar: *Gratis verzending · Professionele ondersteuning · Veilig betalen*.
-9. **Hero badge:** *Clinical-grade ontwerp* + *Alleen verkrijgbaar via professionals* (niet "Klinisch-gericht" / "Gebruikt in klinieken").
-10. **Golflengte-bolletjes:** kleur moet matchen met lichttype (geel = geel #F3C65B, rood = rood, nabij-infrarood = wit #FFFFFF).
-11. **Nabij-infrarood-label:** schrijf *nabij-infrarood (nir)*, niet *INFRAROOD* of *(NIR)* alleen.
-12. **FAQ vermijden:** "Kun je huidproblemen thuis behandelen met LED?" en vergelijkbare absolute thuisbehandel-claims.
+2. **Jij, niet u:** nooit `u`, `uw`, `U` of andere formele aanspreekvorm. Schrijf informeel: `jij`, `je`, `jou`, `jouw`. Ook in CTAs, FAQ, e-mail en productcopy.
+3. **Clinical, niet Medical:** gebruik `clinical-grade` / `klinisch`; nooit `medical-grade` of `medisch` als productclaim.
+4. **Geen harde claims:** vermijd diagnoses en absolute beloftes. Gebruik helpende taal: *kunnen helpen*, *mogelijk*, *ondersteunen*, *kan*.
+5. **Geen vaste behandeltijd:** geen "10 minuten per sessie"; verwijs naar het **LED Passport** (persoonlijk protocol).
+6. **Golflengtes:** Premium LED-Mask: **7 golflengtes** (410, 460, 610, 630, 660, 830, 850, 880 nm). Precision Photonic System: **4 golflengtes**.
+7. **Nabij-infrarood:** niet *infrarood* alleen; schrijf *nabij-infrarood (nir)*.
+8. **FDA 510(k):** alleen op **Premium LED-Mask** (SR-M4), niet op Neck & Décolleté of Precision Photonic System.
+9. **Geen 30-dagen retour/geld-terug** in marketingcopy. Trust bar: *Gratis verzending · Professionele ondersteuning · Veilig betalen*.
+10. **Hero badge:** *Clinical-grade ontwerp* + *Alleen verkrijgbaar via professionals* (niet "Klinisch-gericht" / "Gebruikt in klinieken").
+11. **Golflengte-bolletjes:** kleur moet matchen met lichttype (geel = geel #F3C65B, rood = rood, nabij-infrarood = wit #FFFFFF).
+12. **Nabij-infrarood-label:** schrijf *nabij-infrarood (nir)*, niet *INFRAROOD* of *(NIR)* alleen.
+13. **FAQ vermijden:** "Kun je huidproblemen thuis behandelen met LED?" en vergelijkbare absolute thuisbehandel-claims.
 
 ## Skin Complete — design & typografie (Shopify)
 
