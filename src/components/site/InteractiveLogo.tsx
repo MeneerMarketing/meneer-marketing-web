@@ -9,14 +9,24 @@ import {
 } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const LEFT_EYE = { cx: 25, cy: 37.5 } as const;
-const RIGHT_EYE = { cx: 39, cy: 37.5 } as const;
-const EYE_R = 7;
-const PUPIL_R = 3.1;
-/** Maximale pupil-uitwijking in SVG-units, blijft binnen het oog */
-const MAX_OFFSET = 3.2;
+/**
+ * Family Guy-achtige bouw: twee grote ovale ogen die elkaar in het midden
+ * raken, kleine pupillen, neus die over de onderkant van de ogen valt en
+ * dunne, consistente lijnen.
+ */
+const LEFT_EYE = { cx: 26.4, cy: 36.4 } as const;
+const RIGHT_EYE = { cx: 37.6, cy: 36.4 } as const;
+const EYE_RX = 5.8;
+const EYE_RY = 7.4;
+const PUPIL_R = 2.2;
+/** Maximale pupil-uitwijking per as, volgt de ovale oogvorm */
+const MAX_OFFSET_X = 2.6;
+const MAX_OFFSET_Y = 4.2;
 /** Afstand (px) waarop de ogen maximaal uitwijken */
 const FULL_LOOK_DISTANCE = 220;
+
+const INK = "#1F2430";
+const LINE = 1.3;
 
 interface InteractiveLogoProps {
   className?: string;
@@ -56,9 +66,9 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
       const dy = clientY - cy;
       const dist = Math.hypot(dx, dy);
       if (dist < 1) return;
-      const strength = Math.min(dist / FULL_LOOK_DISTANCE, 1) * MAX_OFFSET;
-      targetX.set((dx / dist) * strength);
-      targetY.set((dy / dist) * strength);
+      const strength = Math.min(dist / FULL_LOOK_DISTANCE, 1);
+      targetX.set((dx / dist) * strength * MAX_OFFSET_X);
+      targetY.set((dy / dist) * strength * MAX_OFFSET_Y);
     }
 
     function onPointerMove(e: PointerEvent) {
@@ -72,8 +82,8 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
       const delta = window.scrollY - lastScrollY.current;
       lastScrollY.current = window.scrollY;
       const clamped = Math.max(
-        -MAX_OFFSET,
-        Math.min(MAX_OFFSET, delta * 0.12),
+        -MAX_OFFSET_Y,
+        Math.min(MAX_OFFSET_Y, delta * 0.12),
       );
       targetX.set(0);
       targetY.set(clamped);
@@ -113,64 +123,62 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
       focusable="false"
     >
       {/* Oren */}
-      <circle cx="14.5" cy="42" r="3.4" fill="#F6C09A" stroke="#0F172A" strokeWidth="1.8" />
-      <circle cx="49.5" cy="42" r="3.4" fill="#F6C09A" stroke="#0F172A" strokeWidth="1.8" />
+      <ellipse
+        cx="14.7"
+        cy="42"
+        rx="2.9"
+        ry="3.4"
+        fill="#F6C09A"
+        stroke={INK}
+        strokeWidth={LINE}
+      />
+      <ellipse
+        cx="49.3"
+        cy="42"
+        rx="2.9"
+        ry="3.4"
+        fill="#F6C09A"
+        stroke={INK}
+        strokeWidth={LINE}
+      />
 
       {/* Gezicht */}
-      <circle
+      <ellipse
         cx="32"
         cy="41"
-        r="17"
+        rx="17"
+        ry="16.6"
         fill="#F8CBA3"
-        stroke="#0F172A"
-        strokeWidth="2"
+        stroke={INK}
+        strokeWidth={LINE + 0.2}
       />
 
       {/* Blosjes */}
-      <ellipse cx="20" cy="46.5" rx="2.8" ry="1.7" fill="#F2A075" opacity="0.65" />
-      <ellipse cx="44" cy="46.5" rx="2.8" ry="1.7" fill="#F2A075" opacity="0.65" />
+      <ellipse cx="20.6" cy="47" rx="2.5" ry="1.5" fill="#F2A075" opacity="0.5" />
+      <ellipse cx="43.4" cy="47" rx="2.5" ry="1.5" fill="#F2A075" opacity="0.5" />
 
-      {/* Snor */}
-      <path
-        d="M22.6 49.8c3-3.4 7-2.1 9.4.4 2.4-2.5 6.4-3.8 9.4-.4-1.6 3.3-6 4-9.4 1.9-3.4 2.1-7.8 1.4-9.4-1.9z"
-        fill="#0F172A"
-      />
-
-      {/* Glimlach onder de snor */}
-      <path
-        d="M28 54.6c2.5 1.8 5.5 1.8 8 0"
-        fill="none"
-        stroke="#0F172A"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-
-      {/* Bolhoed */}
-      <path d="M18.5 24.5a13.5 12.5 0 0 1 27 0v1h-27z" fill="#0F172A" />
-      <rect x="19.5" y="20.4" width="25" height="4.2" fill="#FF5722" />
-      <rect x="11" y="23.6" width="42" height="4.8" rx="2.4" fill="#0F172A" />
-
-      {/* Linkeroog */}
-      <circle
+      {/* Linkeroog: ovaal, raakt het rechteroog in het midden */}
+      <ellipse
         cx={LEFT_EYE.cx}
         cy={LEFT_EYE.cy}
-        r={EYE_R}
+        rx={EYE_RX}
+        ry={EYE_RY}
         fill="#fff"
-        stroke="#0F172A"
-        strokeWidth="2"
+        stroke={INK}
+        strokeWidth={LINE}
       />
       <motion.circle
         cx={leftPupilX}
         cy={leftPupilY}
         r={PUPIL_R}
-        fill="#0F172A"
+        fill={INK}
       />
       {blink ? (
         <motion.ellipse
           cx={LEFT_EYE.cx}
           cy={LEFT_EYE.cy}
-          rx={EYE_R - 0.9}
-          ry={EYE_R - 0.9}
+          rx={EYE_RX - 0.7}
+          ry={EYE_RY - 0.7}
           fill="#fff"
           initial={{ scaleY: 0 }}
           animate={blink}
@@ -179,26 +187,27 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
       ) : null}
 
       {/* Rechteroog */}
-      <circle
+      <ellipse
         cx={RIGHT_EYE.cx}
         cy={RIGHT_EYE.cy}
-        r={EYE_R}
+        rx={EYE_RX}
+        ry={EYE_RY}
         fill="#fff"
-        stroke="#0F172A"
-        strokeWidth="2"
+        stroke={INK}
+        strokeWidth={LINE}
       />
       <motion.circle
         cx={rightPupilX}
         cy={rightPupilY}
         r={PUPIL_R}
-        fill="#0F172A"
+        fill={INK}
       />
       {blink ? (
         <motion.ellipse
           cx={RIGHT_EYE.cx}
           cy={RIGHT_EYE.cy}
-          rx={EYE_R - 0.9}
-          ry={EYE_R - 0.9}
+          rx={EYE_RX - 0.7}
+          ry={EYE_RY - 0.7}
           fill="#fff"
           initial={{ scaleY: 0 }}
           animate={blink}
@@ -206,8 +215,43 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
         />
       ) : null}
 
-      {/* Neus (vóór de ogen, cartoon-stijl) */}
-      <circle cx="32" cy="44.6" r="2.6" fill="#F0A878" stroke="#0F172A" strokeWidth="1.6" />
+      {/* Neus: valt over de binnenste onderkant van de ogen */}
+      <ellipse
+        cx="32"
+        cy="43.6"
+        rx="3.3"
+        ry="2.3"
+        fill="#F2B285"
+        stroke={INK}
+        strokeWidth={LINE - 0.1}
+      />
+
+      {/* Snor: volle walrus-snor met vloeiende curves */}
+      <path
+        d="M23.2 48.6
+           C25.4 45.6 29.6 45.9 32 47.9
+           C34.4 45.9 38.6 45.6 40.8 48.6
+           C40 51.3 36.1 52.2 32 50.3
+           C27.9 52.2 24 51.3 23.2 48.6 Z"
+        fill={INK}
+      />
+
+      {/* Glimlach onder de snor */}
+      <path
+        d="M28.4 54.2c2.3 1.5 4.9 1.5 7.2 0"
+        fill="none"
+        stroke={INK}
+        strokeWidth={LINE}
+        strokeLinecap="round"
+      />
+
+      {/* Bolhoed */}
+      <path
+        d="M19 24.6a13 12.2 0 0 1 26 0v0.9h-26z"
+        fill={INK}
+      />
+      <rect x="19.8" y="20.7" width="24.4" height="4" fill="#FF5722" />
+      <rect x="11.5" y="23.8" width="41" height="4.4" rx="2.2" fill={INK} />
     </svg>
   );
 }
