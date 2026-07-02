@@ -65,10 +65,10 @@ export function DienstStickyBar({ dienstName }: DienstStickyBarProps) {
           animate={reduce ? { opacity: 1 } : { y: 0, opacity: 1 }}
           exit={reduce ? { opacity: 0 } : { y: 96, opacity: 0 }}
           transition={{ type: "spring", stiffness: 320, damping: 30 }}
-          className="fixed inset-x-0 bottom-3 z-40 flex justify-center px-3 sm:bottom-5 sm:px-6"
+          className="fixed inset-x-0 bottom-3 z-40 px-4 sm:bottom-5 sm:px-6 lg:px-8"
           style={{ willChange: "transform" }}
         >
-          <div className="pointer-events-auto flex w-full max-w-xl items-center gap-2.5 rounded-full border border-mm-border bg-white/92 py-2 pl-2.5 pr-2 shadow-[0_10px_40px_rgba(15,23,42,0.16)] backdrop-blur-lg sm:gap-4 sm:py-2.5 sm:pl-4 sm:pr-2.5 lg:max-w-4xl">
+          <div className="pointer-events-auto mx-auto flex w-full max-w-6xl items-center gap-2.5 rounded-full border border-mm-border bg-white/92 py-2 pl-2.5 pr-2 shadow-[0_10px_40px_rgba(15,23,42,0.16)] backdrop-blur-lg sm:gap-4 sm:py-2.5 sm:pl-4 sm:pr-2.5">
             <div className="relative shrink-0">
               <InteractiveLogo className="h-9 w-9 sm:h-10 sm:w-10" />
               <span className="absolute -right-0.5 top-0 flex h-2.5 w-2.5">
@@ -79,7 +79,7 @@ export function DienstStickyBar({ dienstName }: DienstStickyBarProps) {
 
             <p className="min-w-0 flex-1 truncate text-[13px] font-bold leading-snug text-mm-text sm:text-sm">
               <span className="whitespace-nowrap">Zin om te groeien?</span>
-              <span className="hidden font-medium text-mm-muted xl:inline">
+              <span className="hidden font-medium text-mm-muted lg:inline">
                 {" "}
                 {dienstName
                   ? `Meneer denkt mee over ${dienstName.toLowerCase()}.`
