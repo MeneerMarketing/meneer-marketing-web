@@ -15,12 +15,47 @@ Geldt voor **elke site in deze workspace**: MeneerMarketing (`src/`), Skin Compl
 3. **Menselijk Nederlands:** geen AI-jargon, geen lange streepjes, geen corporate fluff.
 4. **Plain language:** vaktermen (SEO, CRO, etc.) in gewone taal uitleggen waar nodig.
 
+### Documentatie & communicatie
+
+5. **Klikbare bestandsnamen:** verwijs in chat, `.md`-bestanden en checklists altijd naar repo-bestanden als **markdown-links**, niet als platte backticks of losse paden.
+   - Goed: `[shopify/snippets/sc-footer.liquid](shopify/snippets/sc-footer.liquid)`
+   - Goed (vanuit `shopify/`): `[sc-footer.liquid](snippets/sc-footer.liquid)`
+   - Fout: `` `sc-footer.liquid` `` of `shopify/snippets/sc-footer.liquid` zonder link
+   - Zelfde voor mappen, templates, tasks en docs: elk pad dat de gebruiker moet openen of uploaden = klikbare link.
+6. **Upload-checklists:** in `SEO-UPLOAD-CHECKLIST.md` en vergelijkbare docs elke bestandsregel als link naar het lokale bestand.
+
 ### Secties & layout
 
-5. **Nieuwe secties moeten uitblinken.** Als de gebruiker een nieuwe sectie vraagt: geen saaie tekstblok. Maak er een bewuste eyecatcher van. Denk aan mooie vlakken/kaarten, subtiele interactie (hover, scroll-reveal, tilt), typografie met punch, en één uniek detail dat de sectie onthoudbaar maakt. Wees creatief binnen het merk.
-6. **Twee kolommen = visueel in balans.** Bij layouts met foto/beeld links en tekst rechts (of omgekeerd): vul de tekstkolom rijk en satisfying. Gebruik kop, intro, bullets of mini-kaartjes, trust-elementen, CTA, pill-labels of metrics. Geen dunne kolom met drie regels naast een grote afbeelding.
-7. **Kolommen even hoog.** Beide kolommen moeten verticaal netjes uitlijnen (`items-stretch`, `h-full`, flex/grid met gelijke hoogte). De kortste kolom vult visueel de ruimte (spacing, sub-elementen, padding), zodat het geheel afgewerkt oogt.
-8. **Minimalistisch als basis, premium als sectie.** De site blijft clean en high-end. Een nieuwe sectie mag wél rijker en expressiever zijn, zolang het bij het merk past en niet rommelig wordt.
+7. **Nieuwe secties moeten uitblinken.** Als de gebruiker een nieuwe sectie vraagt: geen saaie tekstblok. Maak er een bewuste eyecatcher van. Denk aan mooie vlakken/kaarten, subtiele interactie (hover, scroll-reveal, tilt), typografie met punch, en één uniek detail dat de sectie onthoudbaar maakt. Wees creatief binnen het merk.
+8. **Twee kolommen = visueel in balans.** Bij layouts met foto/beeld links en tekst rechts (of omgekeerd): vul de tekstkolom rijk en satisfying. Gebruik kop, intro, bullets of mini-kaartjes, trust-elementen, CTA, pill-labels of metrics. Geen dunne kolom met drie regels naast een grote afbeelding.
+9. **Kolommen even hoog.** Beide kolommen moeten verticaal netjes uitlijnen (`items-stretch`, `h-full`, flex/grid met gelijke hoogte). De kortste kolom vult visueel de ruimte (spacing, sub-elementen, padding), zodat het geheel afgewerkt oogt.
+10. **Minimalistisch als basis, premium als sectie.** De site blijft clean en high-end. Een nieuwe sectie mag wél rijker en expressiever zijn, zolang het bij het merk past en niet rommelig wordt.
+
+## MeneerMarketing — tone of voice & copy (Next.js, `src/`)
+
+Bij alle teksten voor meneermarketing.nl (naast de hoofdregels hierboven):
+
+1. **Schrijf als Meneer Marketing zelf.** Alsof hij bij de klant aan tafel zit: conversational, scherp, af en toe grappig, direct, expert-level. Hij is de onmisbare online marketing manager van de klant.
+2. **Jij/je, nooit u/uw.**
+3. **Onverwachte weetjes en harde feiten** af en toe gebruiken om aandacht vast te houden.
+4. **Verboden:** AI-lijstjes (01/02/03), em-dashes, openers als "Laten we kijken naar...", corporate fluff.
+5. **Cases natuurlijk verweven in copy:** SkinComplete (Shopify B2B-portaal gebouwd, e-mailmarketing opgezet, eerst met SEO organisch verkeer gedomineerd en daarna pas ads aangezet) en BestRest (matrassen en toppers, compleet eigen strategische aanpak, want elke klant krijgt een eigen plan).
+
+## MeneerMarketing — diensten & naming
+
+1. **Nooit "maatwerk websites":** schrijf **websites from scratch** of **custom build**. Geen templates, geen page builders, eigen code.
+2. **Google Ads en Meta Ads expliciet benoemen.** Niet verstoppen achter "datagedreven adverteren". Dit is expertise, dus zichtbaar in titels.
+3. **Automatisering in klanttaal:** "processen automatiseren", "systemen aan elkaar knopen", "e-commerce op autopilot". Tools als n8n/Make alleen als detail op de dienstpagina, nooit in de titel.
+4. **WordPress niet promoten.** Alleen als migratie: van WordPress naar custom of Shopify.
+5. **AI-zoek is een volwaardige dienst:** vindbaarheid in ChatGPT, Perplexity en andere AI-zoekmachines. Geen "later", dit staat live in het aanbod.
+6. **Vijf dienstenblokken:** Strategie & groei · Bouwen from scratch · Vindbaarheid, content & autoriteit · Acquisitie & creators · Behoud & slimme koppelingen.
+
+## MeneerMarketing — design & techniek
+
+1. **Base aesthetic:** minimalistische grid-achtergrond, grote bold typografie, oranje accent `#FF5722`, ultra-clean en snel.
+2. **Premium micro-interacties:** Framer Motion en GSAP, hardware-versneld (`transform`/`opacity`, `will-change`). Knoppen, hovers en transities voelen op maat, nooit als template.
+3. **InteractiveLogo:** hoofd van Meneer Marketing naast het logo linksboven; pupillen volgen de cursor vloeiend over het hele scherm. Op mobiel reageert het op scroll/touch. `prefers-reduced-motion` respecteren.
+4. **SEO-techniek feilloos:** Core Web Vitals, semantische HTML, JSON-LD schema markup, a11y. Ads worden opgeschaald, dus landingspagina's moeten technisch perfect zijn.
 
 ## Shopify theme scheiding
 
