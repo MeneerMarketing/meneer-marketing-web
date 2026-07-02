@@ -6,24 +6,24 @@ import { siteCtas } from "@/lib/cta";
 
 const teasers = [
   {
-    eyebrow: "E-commerce",
-    title: "Van trage template naar shop die meegroeit",
-    metric: "–2.1s LCP",
-    body: "Shopify + maatwerkfront: sneller laden, rustiger beheer, hogere conversie per sessie.",
+    eyebrow: "Shopify · B2B",
+    title: "Een B2B-portal waar salons zelf bestellen",
+    metric: "24/7 open",
+    body: "Voor SkinComplete bouwden we een compleet B2B-portal binnen Shopify: eigen prijzen, eigen accounts, nul mailtjes heen en weer.",
     href: "/cases",
   },
   {
-    eyebrow: "Marketing",
-    title: "SEO + ads die elkaar niet saboteren",
-    metric: "Één story",
-    body: "Semantische structuur, meetplan en creatives die dezelfde belofte dragen.",
+    eyebrow: "SEO · E-mail",
+    title: "Eerst organisch scoren, dan pas adverteren",
+    metric: "€0 advertentie-start",
+    body: "SkinComplete haalde eerst verkeer en omzet uit SEO en e-mailflows. Advertentiebudget kwam pas toen het fundament al verkocht.",
     href: "/cases",
   },
   {
-    eyebrow: "Automatisering",
-    title: "Order → factuur → voorraad zonder spreadsheet-stress",
-    metric: "Minder handwerk",
-    body: "n8n/Make-koppelingen tussen shop, boekhouding en mail. Fouten omlaag, tempo omhoog.",
+    eyebrow: "Strategie · E-commerce",
+    title: "Matrassen verkopen in een moordende markt",
+    metric: "Eigen koers",
+    body: "Voor BestRest kozen we bewust een andere strategie dan de grote jongens: scherp positioneren op toppers en matrassen, in plaats van schreeuwen tegen miljoenenbudgetten.",
     href: "/cases",
   },
 ] as const;
@@ -46,8 +46,8 @@ export function CasesPreviewSection() {
                 <span className="text-mm-sky-deep">Cases die kloppen.</span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-mm-muted">
-                Straks vul je hier echte cijfers en merknamen. Nu al tonen we het
-                type trajecten waar MeneerMarketing voor staat.
+                Geen stockfoto&apos;s van handenschuddende mensen. Wel echte
+                trajecten, echte keuzes en de logica erachter.
               </p>
             </div>
             <div className="flex flex-col gap-2 self-start sm:flex-row sm:items-center lg:self-auto">

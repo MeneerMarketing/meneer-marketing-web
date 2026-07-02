@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
-import { AutomationFlowPlay } from "@/components/home/AutomationFlowPlay";
+import { StrategyChartBoard } from "@/components/home/StrategyChartBoard";
 import { siteCtas } from "@/lib/cta";
 
 export function AutomationSection() {
@@ -21,16 +21,17 @@ export function AutomationSection() {
                 id="automation-heading"
                 className="mt-3 text-3xl font-extrabold tracking-tighter text-mm-text sm:text-4xl"
               >
-                Het maximale halen.{" "}
+                Eerst het plan.{" "}
                 <span className="text-mm-sky-deep">
-                  Met een plan dat klopt.
+                  Dan pas het vuurwerk.
                 </span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
-                Geen losse campagnes of mooie sites zonder resultaat. Wij
-                bedenken groeistrategieën op maat: welke kanalen, welke
-                boodschap en welke prioriteiten. Daarna voeren we het uit met SEO,
-                ads, social, e-mail en een website of shop die meegroeit.
+                De meeste marketing mislukt niet door slechte uitvoering, maar
+                door geen plan. Losse campagnes, een site die niet meewerkt en
+                kanalen die elkaar tegenspreken. Wij draaien het om: eerst
+                bepalen waar jouw omzet zit, dan pas bouwen en adverteren. In de
+                juiste volgorde.
               </p>
 
               <Link
@@ -44,17 +45,18 @@ export function AutomationSection() {
               <ul className="mt-8 space-y-3 text-sm tracking-tight text-mm-text">
                 <li className="flex gap-2">
                   <span className="font-bold text-mm-sky-deep">→</span>
-                  Marketingmix op maat: SEO, SEA, social en e-mail die op elkaar
-                  aansluiten.
+                  Kanalen die elkaar versterken: SEO, ads, social en e-mail met
+                  één verhaal.
                 </li>
                 <li className="flex gap-2">
                   <span className="font-bold text-mm-sky-deep">→</span>
-                  High-end websites en Shopify-shops die Google en klanten
-                  overtuigen.
+                  Een website of shop die dat verhaal waarmaakt zodra de klik
+                  binnen is.
                 </li>
                 <li className="flex gap-2">
                   <span className="font-bold text-mm-sky-deep">→</span>
-                  Meten wat werkt en opschalen waar de winst zit.
+                  Meten, bijsturen en opschalen waar de winst zit. Stoppen waar
+                  die niet zit.
                 </li>
               </ul>
 
@@ -68,7 +70,7 @@ export function AutomationSection() {
             </div>
           </Reveal>
           <Reveal className="min-w-0" delay={0.08}>
-            <AutomationFlowPlay />
+            <StrategyChartBoard />
           </Reveal>
         </div>
       </div>

@@ -346,11 +346,12 @@ export function ServicesOrigamiBento() {
             id="services-heading"
             className="mt-3 text-4xl font-extrabold tracking-tighter text-slate-900 sm:text-5xl"
           >
-            Wat we voor je uit handen nemen.
+            Eén Meneer. Een compleet marketingteam.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600">
-            Marketing, websites en Shopify. Hover over een kaart en klik door
-            naar wat bij je past.
+            Strategie, websites, Shopify en alle marketing eromheen. Geen
+            doorschuifwerk naar stagiairs, gewoon iemand die het zelf bouwt.
+            Hover, kies, klik.
           </p>
         </div>
 

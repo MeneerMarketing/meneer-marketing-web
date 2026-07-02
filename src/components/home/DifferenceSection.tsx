@@ -44,9 +44,9 @@ export function DifferenceSection() {
               <span className="text-mm-sky-deep">Een partner in groei.</span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
-              Marketing die resultaat oplevert. Websites en shops op topniveau.
-              Vier principes die je terugziet in meer klanten, meer omzet en
-              meer zichtbaarheid.
+              Bureaus sturen rapporten, partners sturen resultaat. Vier
+              principes die je niet terugleest in een pdf, maar terugziet in je
+              omzet, je vindbaarheid en je nachtrust.
             </p>
             <Link
               href={siteCtas.samenwerken.href}

@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { AutomationSection } from "@/components/home/AutomationSection";
 import { CasesPreviewSection } from "@/components/home/CasesPreviewSection";
 import { DifferenceSection } from "@/components/home/DifferenceSection";
+import { FunFactsSection } from "@/components/home/FunFactsSection";
 import { GroeiscanSection } from "@/components/home/GroeiscanSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
+import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { ServicesOrigamiBento } from "@/components/home/ServicesOrigamiBento";
 import { StrategicSignatureSection } from "@/components/home/StrategicSignatureSection";
 import { ScrollCodeStream } from "@/components/effects/ScrollCodeStream";
@@ -31,8 +33,10 @@ export default function HomePage() {
         <HeroSection />
         <ScrollCodeStream height={180} className="py-4" />
         <ServicesOrigamiBento />
+        <FunFactsSection />
         <StrategicSignatureSection />
         <DifferenceSection />
+        <MeneerPeek />
         <GroeiscanSection />
         <CasesPreviewSection />
         <AutomationSection />
