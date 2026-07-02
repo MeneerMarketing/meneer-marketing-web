@@ -124,7 +124,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "B2B-bundles, internationale prijzen of headless: geen enkele enterprise-shop is hetzelfde. Ik begin bij jouw catalogus, orderflow en marketingstack. Pas daarna kies ik architectuur.",
       },
       {
-        title: "Eén regisseur, geen app-drama",
+        title: "Geen app-estafette",
         body: "Veel Shopify-projecten ontsporen door twintig apps die elkaar bijten. Ik vervang waar nodig door maatwerk, houd wat werkt en geef je één aanspreekpunt voor theme, koppelingen en performance.",
       },
       {

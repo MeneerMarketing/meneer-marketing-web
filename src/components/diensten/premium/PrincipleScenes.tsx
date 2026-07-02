@@ -146,50 +146,27 @@ function OnePointScene({ active }: { active: boolean }) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.5, opacity: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 18 }}
-            className="flex w-full max-w-[220px] flex-col items-center gap-1.5 px-1"
+            className="flex w-full flex-col items-center gap-1.5"
           >
-            <div className="flex w-full items-center justify-between gap-1.5">
-              <motion.span
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 340,
-                  damping: 16,
-                  delay: CHIPS[0].delay,
-                }}
-                className="inline-block shrink-0 whitespace-nowrap rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-bold text-slate-700 shadow-sm"
-              >
-                {CHIPS[0].label}
-              </motion.span>
-              <InteractiveLogo className="h-14 w-14 shrink-0" />
-              <motion.span
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 340,
-                  damping: 16,
-                  delay: CHIPS[1].delay,
-                }}
-                className="inline-block shrink-0 whitespace-nowrap rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-bold text-slate-700 shadow-sm"
-              >
-                {CHIPS[1].label}
-              </motion.span>
+            <InteractiveLogo className="h-11 w-11 shrink-0" />
+            <div className="flex flex-wrap items-center justify-center gap-1">
+              {CHIPS.map((chip) => (
+                <motion.span
+                  key={chip.label}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 340,
+                    damping: 16,
+                    delay: chip.delay,
+                  }}
+                  className="inline-block whitespace-nowrap rounded-full border border-slate-200 bg-white px-1.5 py-0.5 text-[9px] font-bold text-slate-700 shadow-sm"
+                >
+                  {chip.label}
+                </motion.span>
+              ))}
             </div>
-            <motion.span
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 340,
-                damping: 16,
-                delay: CHIPS[2].delay,
-              }}
-              className="inline-block whitespace-nowrap rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-bold text-slate-700 shadow-sm"
-            >
-              {CHIPS[2].label}
-            </motion.span>
           </motion.div>
         )}
       </AnimatePresence>
@@ -296,7 +273,7 @@ function PrincipleCard({
 
       {/* De tekst */}
       <div className="flex flex-1 flex-col p-6 pt-5">
-        <h3 className="text-base font-extrabold tracking-tight text-slate-900">
+        <h3 className="whitespace-nowrap text-[15px] font-extrabold tracking-tight text-slate-900 sm:text-base">
           {principle.title}
         </h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
