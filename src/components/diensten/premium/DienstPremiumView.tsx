@@ -1,18 +1,12 @@
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  Ear,
-  MessageCircleQuestion,
-  Route,
-  Sparkles,
-  Waypoints,
-} from "lucide-react";
+import { ArrowUpRight, Route, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
 import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
 import { OutcomePanels } from "@/components/diensten/premium/OutcomePanels";
 import { PremiumSidebar } from "@/components/diensten/premium/PremiumSidebar";
+import { PrincipleScenes } from "@/components/diensten/premium/PrincipleScenes";
 import { SignalsChat } from "@/components/diensten/premium/SignalsChat";
 import { StickerStrip } from "@/components/diensten/premium/StickerStrip";
 import type { TocItem } from "@/components/diensten/premium/PageTOC";
@@ -23,8 +17,6 @@ import type { DienstStrategicContent } from "@/data/dienst-strategic";
 import type { DienstDetail } from "@/lib/diensten";
 import { ctaNav } from "@/lib/navigation";
 import { siteCtas } from "@/lib/cta";
-
-const PRINCIPLE_ICONS = [Ear, Waypoints, MessageCircleQuestion] as const;
 
 interface DienstPremiumViewProps {
   dienst: DienstDetail;
@@ -192,29 +184,7 @@ export function DienstPremiumView({
                   Drie dingen die je bij mij altijd krijgt. Wat we ook bouwen.
                 </p>
               </Reveal>
-              <ul className="mt-8 grid gap-4 sm:grid-cols-3 sm:items-stretch">
-                {premium.principles.map((principle, index) => {
-                  const Icon = PRINCIPLE_ICONS[index % PRINCIPLE_ICONS.length];
-                  return (
-                    <Reveal key={principle.title} delay={0.07 * index} className="h-full">
-                      <li className="group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#FF5722]/35 hover:shadow-[0_20px_40px_-28px_rgba(255,87,34,0.55)]">
-                        <span
-                          className="flex size-11 items-center justify-center rounded-2xl bg-slate-900 text-white transition-colors duration-300 group-hover:bg-[#FF5722]"
-                          aria-hidden
-                        >
-                          <Icon className="size-5" strokeWidth={1.8} />
-                        </span>
-                        <h3 className="mt-4 text-base font-extrabold tracking-tight text-slate-900">
-                          {principle.title}
-                        </h3>
-                        <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
-                          {principle.body}
-                        </p>
-                      </li>
-                    </Reveal>
-                  );
-                })}
-              </ul>
+              <PrincipleScenes principles={[...premium.principles]} />
               <Reveal delay={0.1}>
                 <div className="mt-4 flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-7">
                   <p className="max-w-2xl text-[15px] leading-relaxed text-slate-700">
