@@ -51,3 +51,7 @@ yarn-error.log*
 /scripts/patch-homepage*.js
 /scripts/strip-checker-bg.mjs
 /scripts/em-dash-cleanup.mjs
+/scripts/merge-klaviyo-customers.mjs
+
+# Lokale taakbestanden, niet voor GitHub
+/tasks/
