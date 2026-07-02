@@ -235,9 +235,9 @@ function LanguageScene({ active }: { active: boolean }) {
 const SCENES = [ListenScene, OnePointScene, LanguageScene] as const;
 
 const SCENE_HINTS = [
-  "Beweeg hierover en luisteren wordt bouwen",
-  "Beweeg hierover en de keten verdwijnt",
-  "Beweeg hierover en het jargon vertaalt zichzelf",
+  "Beweeg: luisteren wordt bouwen",
+  "Beweeg: de keten verdwijnt",
+  "Beweeg: jargon vertaalt zichzelf",
 ] as const;
 
 function PrincipleCard({
@@ -263,10 +263,10 @@ function PrincipleCard({
       className="group flex h-full cursor-pointer flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-[border-color,box-shadow] duration-300 hover:border-[#FF5722]/35 hover:shadow-[0_24px_48px_-28px_rgba(255,87,34,0.5)]"
     >
       {/* De scène */}
-      <div className="relative border-b border-slate-100 bg-gradient-to-b from-slate-50/80 to-white px-5 pb-3 pt-5">
+      <div className="border-b border-slate-100 bg-gradient-to-b from-slate-50/80 to-white px-5 pb-2.5 pt-5">
         <Scene active={active} />
         <p
-          className="pointer-events-none absolute bottom-1.5 left-0 right-0 text-center text-[9px] font-bold uppercase tracking-[0.14em] text-slate-300 transition-opacity duration-300 group-hover:opacity-0"
+          className="mt-3 truncate text-center text-[9px] font-bold uppercase tracking-[0.14em] text-slate-300 transition-opacity duration-300 group-hover:opacity-0"
           aria-hidden
         >
           {SCENE_HINTS[index % SCENE_HINTS.length]}

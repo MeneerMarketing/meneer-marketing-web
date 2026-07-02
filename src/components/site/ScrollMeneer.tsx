@@ -18,8 +18,8 @@ const HEAD_SIZE_DESKTOP = 38;
 /**
  * De speelse scrollbar van Meneer Marketing: het hoofd rijdt langs de
  * rechterrand mee met je scrollpositie en laat een oranje spoor achter.
- * Kantelt licht mee met de scrollsnelheid. Puur decoratief (pointer-events
- * uit), de echte scrollbar blijft gewoon werken.
+ * Kantelt licht mee met de scrollsnelheid. De native scrollbar is
+ * verborgen (globals.css), dus dit is dé scroll-indicator van de site.
  */
 export function ScrollMeneer() {
   const reduce = useReducedMotion();
@@ -35,8 +35,10 @@ export function ScrollMeneer() {
     mass: 0.6,
   });
 
-  const headY = useTransform(smooth, (v) => v * Math.max(trackHeight, 0));
-  const trailScale = useTransform(smooth, (v) => Math.max(v, 0.001));
+  // Bij reduced motion volgt het hoofd de scroll direct, zonder veer of kanteling
+  const progress = reduce ? scrollYProgress : smooth;
+  const headY = useTransform(progress, (v) => v * Math.max(trackHeight, 0));
+  const trailScale = useTransform(progress, (v) => Math.max(v, 0.001));
 
   const velocity = useVelocity(smooth);
   const tiltTarget = useTransform(velocity, [-1.6, 0, 1.6], [-16, 0, 16]);
@@ -45,7 +47,7 @@ export function ScrollMeneer() {
   useEffect(() => {
     function measure() {
       const doc = document.documentElement;
-      setScrollable(doc.scrollHeight > window.innerHeight + 160);
+      setScrollable(doc.scrollHeight > window.innerHeight + 48);
       const size =
         window.innerWidth < 640 ? HEAD_SIZE_MOBILE : HEAD_SIZE_DESKTOP;
       setHeadSize(size);
@@ -79,7 +81,7 @@ export function ScrollMeneer() {
         className="absolute left-1/2 top-0 w-[3px] origin-top -translate-x-1/2 rounded-full bg-gradient-to-b from-orange-300 to-mm-accent"
         style={{
           height: trackHeight + headSize / 2,
-          scaleY: reduce ? undefined : trailScale,
+          scaleY: trailScale,
         }}
       />
 
@@ -90,7 +92,7 @@ export function ScrollMeneer() {
       <motion.div
         className="absolute left-1/2 top-0 -translate-x-1/2 drop-shadow-[0_2px_6px_rgba(15,23,42,0.18)]"
         style={{
-          y: reduce ? undefined : headY,
+          y: headY,
           rotate: reduce ? undefined : tilt,
           width: headSize,
           height: headSize,

@@ -12,12 +12,19 @@ export interface SidebarRelatedItem {
   name: string;
 }
 
+export interface SidebarArtikel {
+  slug: string;
+  title: string;
+  readMinutes: number;
+}
+
 interface PremiumSidebarProps {
   ctaHref: string;
   ctaLabel: string;
   pillarName: string;
   related: SidebarRelatedItem[];
   tocItems: TocItem[];
+  artikelen?: SidebarArtikel[];
 }
 
 /** Lichte sticky sidebar: inhoudsopgave met scroll-spy, CTA en een meekijkende Meneer. */
@@ -27,6 +34,7 @@ export function PremiumSidebar({
   pillarName,
   related,
   tocItems,
+  artikelen = [],
 }: PremiumSidebarProps) {
   const reduce = useReducedMotion();
 
@@ -131,6 +139,44 @@ export function PremiumSidebar({
                 </motion.li>
               );
             })}
+          </ul>
+        </div>
+      ) : null}
+
+      {/* Uit de kennisbank: compact, max twee artikelen zodat de sidebar rustig blijft */}
+      {artikelen.length > 0 ? (
+        <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+          <p className="flex items-center justify-between px-2.5 text-xs font-bold uppercase tracking-wider text-slate-400">
+            Uit de kennisbank
+            <Link
+              href="/kennisbank"
+              className="font-bold normal-case tracking-normal text-[#FF5722] transition-colors hover:text-slate-900"
+            >
+              Alles
+            </Link>
+          </p>
+          <ul className="mt-3 space-y-1">
+            {artikelen.slice(0, 2).map((artikel, index) => (
+              <motion.li
+                key={artikel.slug}
+                initial={reduce ? false : { opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: 0.06 * index }}
+              >
+                <Link
+                  href={`/kennisbank/${artikel.slug}`}
+                  className="group block rounded-xl px-2.5 py-2.5 transition-colors hover:bg-slate-50"
+                >
+                  <span className="block text-sm font-semibold leading-snug text-slate-800 transition-colors group-hover:text-[#FF5722]">
+                    {artikel.title}
+                  </span>
+                  <span className="mt-1 block text-xs text-slate-400">
+                    {artikel.readMinutes} min lezen
+                  </span>
+                </Link>
+              </motion.li>
+            ))}
           </ul>
         </div>
       ) : null}

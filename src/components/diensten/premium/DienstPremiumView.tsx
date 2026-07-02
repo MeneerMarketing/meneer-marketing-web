@@ -5,7 +5,10 @@ import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
 import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
 import { OutcomeSwitchboard } from "@/components/diensten/premium/OutcomeSwitchboard";
-import { PremiumSidebar } from "@/components/diensten/premium/PremiumSidebar";
+import {
+  PremiumSidebar,
+  type SidebarArtikel,
+} from "@/components/diensten/premium/PremiumSidebar";
 import { PrincipleScenes } from "@/components/diensten/premium/PrincipleScenes";
 import { SignalsChat } from "@/components/diensten/premium/SignalsChat";
 import { StickerStrip } from "@/components/diensten/premium/StickerStrip";
@@ -27,6 +30,7 @@ interface DienstPremiumViewProps {
   strategic: DienstStrategicContent & { pillarLens: string };
   related: DienstDetail[];
   premium: DienstPremiumContent;
+  artikelen?: SidebarArtikel[];
 }
 
 export function DienstPremiumView({
@@ -37,6 +41,7 @@ export function DienstPremiumView({
   strategic,
   related,
   premium,
+  artikelen = [],
 }: DienstPremiumViewProps) {
   const tocItems: TocItem[] = [
     { id: "hoe-ik-werk", label: "Hoe ik werk" },
@@ -150,7 +155,7 @@ export function DienstPremiumView({
             <Reveal delay={0.05}>
               <figure className="relative mt-12 overflow-hidden rounded-3xl border border-[#FF5722]/25 bg-gradient-to-br from-[#FF5722]/[0.06] via-white to-white p-7 sm:p-9">
                 <span
-                  className="pointer-events-none absolute -right-3 -top-7 select-none text-[6rem] font-extrabold leading-none tracking-tighter text-transparent [-webkit-text-stroke:2px_rgba(255,87,34,0.18)] sm:text-[8.5rem]"
+                  className="pointer-events-none absolute -right-3 -top-7 select-none text-[6rem] font-extrabold leading-none tracking-tighter text-[#FF5722]/[0.09] sm:text-[8.5rem]"
                   aria-hidden
                 >
                   {premium.funFactStat}
@@ -376,6 +381,7 @@ export function DienstPremiumView({
             pillarName={dienst.pillar}
             related={related.map((r) => ({ slug: r.slug, name: r.name }))}
             tocItems={tocItems}
+            artikelen={artikelen}
           />
         </div>
       </div>

@@ -109,6 +109,11 @@ export default async function DienstPage({
             strategic={strategic}
             related={related}
             premium={premium}
+            artikelen={artikelen.map((a) => ({
+              slug: a.slug,
+              title: a.title,
+              readMinutes: a.readMinutes,
+            }))}
           />
         </main>
         <DienstStickyBar dienstName={d.name} />

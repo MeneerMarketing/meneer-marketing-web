@@ -93,32 +93,31 @@ body {
   color: var(--mm-text);
 }
 
-/* Scrollbar in merkstijl: slank, oranje, afgerond */
-::-webkit-scrollbar {
-  width: 11px;
-  height: 11px;
+/* Native scrollbar van de pagina verbergen: Meneer op de rail is de scroll-indicator.
+   Scrollbars binnen elementen (dropdowns, code, overflows) blijven gewoon zichtbaar. */
+html {
+  scrollbar-width: none;
 }
 
-::-webkit-scrollbar-track {
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Interne scroll-gebieden krijgen wel een slanke scrollbar in merkstijl */
+*:not(html)::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*:not(html)::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #fb923c, var(--mm-accent));
+*:not(html)::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
   border-radius: 999px;
-  border: 3px solid var(--mm-bg);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--mm-accent-hover);
-  border-width: 2px;
-}
-
-@supports not selector(::-webkit-scrollbar) {
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--mm-accent) transparent;
-  }
 }
 
 :focus-visible {
