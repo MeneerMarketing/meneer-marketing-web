@@ -4,7 +4,7 @@ import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
 import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
-import { OutcomePanels } from "@/components/diensten/premium/OutcomePanels";
+import { OutcomeSwitchboard } from "@/components/diensten/premium/OutcomeSwitchboard";
 import { PremiumSidebar } from "@/components/diensten/premium/PremiumSidebar";
 import { PrincipleScenes } from "@/components/diensten/premium/PrincipleScenes";
 import { SignalsChat } from "@/components/diensten/premium/SignalsChat";
@@ -290,11 +290,11 @@ export function DienstPremiumView({
                   Concrete resultaten waar je op stuurt
                 </h2>
                 <p className="mt-2 max-w-xl text-slate-600">
-                  Beweeg over de panelen. Dit is waar je het straks elke dag
-                  aan merkt.
+                  Het verschil tussen zonder en met, in één schakelbord. Dit
+                  is waar je het straks elke dag aan merkt.
                 </p>
               </Reveal>
-              <OutcomePanels outcomes={premium.outcomes} />
+              <OutcomeSwitchboard outcomes={premium.outcomes} />
             </section>
 
             {/* Scenario's */}
