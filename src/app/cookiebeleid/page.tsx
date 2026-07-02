@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { LegalPageShell } from "@/components/legal/LegalPageShell";
 import { JsonLdScript, breadcrumbJsonLd } from "@/components/seo/JsonLd";
-import { businessEmailDisplay } from "@/lib/contact";
+import { businessEmail } from "@/lib/contact";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cookiebeleid",
   description:
-    "Welke cookies MeneerMarketing gebruikt, waarvoor, en hoe je voorkeuren kunt aanpassen.",
+    "Welke cookies meneermarketing.nl gebruikt, waarvoor ze dienen en hoe je je voorkeuren op elk moment aanpast.",
   alternates: { canonical: absoluteUrl("/cookiebeleid") },
   robots: { index: true, follow: true },
 };
@@ -23,57 +23,66 @@ export default function CookiePage() {
       />
       <LegalPageShell
         title="Cookiebeleid"
-        intro="Laatst bijgewerkt: 6 april 2026. Cookies en vergelijkbare technieken helpen onze site veilig en bruikbaar te houden. En ons te laten leren wat werkt."
+        updatedAt="2 juli 2026"
+        intro="Kort samengevat: deze site gebruikt zo min mogelijk cookies. Statistieken laden we alleen als jij daar via de banner toestemming voor geeft, en je kunt die keuze altijd terugdraaien."
       >
         <h2>Wat zijn cookies?</h2>
         <p>
-          Cookies zijn kleine tekstbestanden die op je apparaat worden geplaatst.
-          Ze kunnen first-party (door ons) of third-party (door een ingebedde
-          dienst) zijn.
+          Cookies zijn kleine tekstbestanden die een website op je apparaat
+          plaatst, bijvoorbeeld om een voorkeur te onthouden of bezoek te meten.
+          Daarnaast bestaan er vergelijkbare technieken zoals local storage; in
+          dit beleid vallen die onder dezelfde noemer.
         </p>
 
-        <h2>Soorten cookies die wij kunnen gebruiken</h2>
+        <h2>Wat gebruikt deze site?</h2>
         <ul>
           <li>
-            <strong>Strikt noodzakelijk:</strong> voor beveiliging, sessies en
-            basisfunctionaliteit van de site.
+            <strong>Noodzakelijk:</strong> je cookievoorkeur zelf. Als je een
+            keuze maakt in de banner, onthouden we die op je apparaat zodat we
+            het niet bij elk bezoek opnieuw hoeven te vragen.
           </li>
           <li>
-            <strong>Functioneel:</strong> om voorkeuren te onthouden (bijv.
-            taal of formulierstatus).
+            <strong>Statistieken (alleen met jouw toestemming):</strong> Google
+            Analytics met IP-anonimisering, om te zien welke pagina&apos;s goed
+            werken en waar bezoekers afhaken. Zeg je nee, dan wordt deze tool
+            simpelweg niet geladen.
           </li>
           <li>
-            <strong>Analytisch:</strong> om bezoek en gebruik inzichtelijk te
-            maken (bijv. paginaweergaves, fouten). Idealiter met
-            privacy-vriendelijke instellingen en waar nodig toestemming.
-          </li>
-          <li>
-            <strong>Marketing:</strong> alleen als jij daar expliciet mee instemt
-            en wij campagne- of remarketingtags inzetten.
+            <strong>Marketing:</strong> op dit moment plaatsen we geen
+            marketing- of advertentiecookies. Verandert dat, dan vragen we daar
+            eerst expliciet toestemming voor via de banner en werken we dit
+            beleid bij.
           </li>
         </ul>
 
-        <h2>Consent</h2>
+        <h2>Je voorkeuren aanpassen</h2>
         <p>
-          Waar de wet toestemming vereist, tonen wij een cookiebanner of
-          vergelijkbare keuze. Je kunt je voorkeuren later aanpassen via de link
-          in de footer of door je browsercookies te wissen. Met de beperking dat
-          sommige onderdelen van de site dan minder goed werken.
+          Onderaan elke pagina staat in de footer een knop om je
+          cookievoorkeuren aan te passen. Daarmee kun je toestemming intrekken
+          of alsnog geven, wanneer je maar wilt. Cookies verwijderen kan
+          daarnaast altijd via de instellingen van je browser.
         </p>
 
-        <h2>Derde partijen</h2>
+        <h2>Cookies van derden</h2>
         <p>
-          Als wij tools zoals Google Analytics, Clarity of ingebedde video’s
-          gebruiken, kunnen die eigen cookies plaatsen. Raadpleeg ook hun
-          privacyverklaringen voor details.
+          Als je toestemming geeft voor statistieken, plaatst Google cookies
+          voor Google Analytics. Hoe Google met die gegevens omgaat lees je in{" "}
+          <a
+            href="https://policies.google.com/privacy"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            het privacybeleid van Google
+          </a>
+          . Zonder toestemming worden er geen cookies van derden geplaatst.
         </p>
 
-        <h2>Contact</h2>
+        <h2>Vragen?</h2>
         <p>
-          Vragen over dit cookiebeleid? Mail{" "}
-          <a href={`mailto:${businessEmailDisplay}`}>{businessEmailDisplay}</a>{" "}
-          of gebruik het{" "}
-          <a href="/contact">contactformulier</a>.
+          Vragen over dit cookiebeleid of over je gegevens? Mail naar{" "}
+          <a href={`mailto:${businessEmail}`}>{businessEmail}</a> of kijk in{" "}
+          <a href="/privacybeleid">het privacybeleid</a> voor het volledige
+          verhaal over hoe we met persoonsgegevens omgaan.
         </p>
       </LegalPageShell>
     </>

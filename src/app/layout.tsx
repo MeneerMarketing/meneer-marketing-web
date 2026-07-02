@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { SiteConsent } from "@/components/consent/SiteConsent";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { ScrollMeneer } from "@/components/site/ScrollMeneer";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -69,6 +70,7 @@ export default function RootLayout({
           Ga naar inhoud
         </a>
         {children}
+        <ScrollMeneer />
         <SiteConsent />
       </body>
     </html>

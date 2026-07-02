@@ -4,6 +4,7 @@ import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
+import { DienstStickyBar } from "@/components/diensten/DienstStickyBar";
 import { DienstStrategyBlocks } from "@/components/diensten/DienstStrategyBlocks";
 import {
   JsonLdScript,
@@ -108,6 +109,7 @@ export default async function DienstPage({
             premium={premium}
           />
         </main>
+        <DienstStickyBar dienstName={d.name} />
         <SiteFooter />
       </>
     );
@@ -296,6 +298,7 @@ export default async function DienstPage({
           </div>
         </article>
       </main>
+      <DienstStickyBar dienstName={d.name} />
       <SiteFooter />
     </>
   );

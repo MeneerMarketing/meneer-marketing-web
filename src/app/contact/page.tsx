@@ -1,12 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowUpRight, Mail, MessageSquare } from "lucide-react";
+import { ArrowUpRight, Building2, Mail, MessageSquare } from "lucide-react";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Reveal } from "@/components/effects/Reveal";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import {
   businessEmailDisplay,
+  businessKvk,
   mailtoHref,
 } from "@/lib/contact";
 import { siteCtas } from "@/lib/cta";
@@ -123,6 +124,41 @@ export default function ContactPage() {
               </Reveal>
 
               <Reveal delay={0.12}>
+                <div className="rounded-3xl border border-mm-border bg-white p-6 shadow-sm">
+                  <div className="flex items-center gap-2 text-mm-muted">
+                    <Building2 className="size-5" aria-hidden />
+                    <p className="text-xs font-bold uppercase tracking-wider">
+                      Zakelijke gegevens
+                    </p>
+                  </div>
+                  <dl className="mt-4 space-y-3 text-sm">
+                    <div className="flex items-baseline justify-between gap-4">
+                      <dt className="text-mm-muted">Bedrijfsnaam</dt>
+                      <dd className="font-semibold text-mm-text">
+                        MeneerMarketing
+                      </dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-4">
+                      <dt className="text-mm-muted">KvK-nummer</dt>
+                      <dd className="font-semibold text-mm-text">
+                        {businessKvk}
+                      </dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-4">
+                      <dt className="text-mm-muted">E-mail</dt>
+                      <dd className="break-all font-semibold text-mm-text">
+                        {businessEmailDisplay}
+                      </dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-4">
+                      <dt className="text-mm-muted">Gevestigd in</dt>
+                      <dd className="font-semibold text-mm-text">Nederland</dd>
+                    </div>
+                  </dl>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.14}>
                 <div className="rounded-3xl border border-dashed border-mm-border/80 bg-mm-bg p-6 text-sm text-mm-muted">
                   <p className="font-semibold text-mm-text">Reactietijd</p>
                   <p className="mt-2 leading-relaxed">
