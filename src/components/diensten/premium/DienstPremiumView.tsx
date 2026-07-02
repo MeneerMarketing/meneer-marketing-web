@@ -1,27 +1,30 @@
 import Link from "next/link";
-import { ArrowUpRight, Quote, Sparkles, Target } from "lucide-react";
+import {
+  ArrowUpRight,
+  Ear,
+  MessageCircleQuestion,
+  Route,
+  Sparkles,
+  Waypoints,
+} from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
 import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
-import { OutcomeCards } from "@/components/diensten/premium/OutcomeCards";
+import { OutcomePanels } from "@/components/diensten/premium/OutcomePanels";
 import { PremiumSidebar } from "@/components/diensten/premium/PremiumSidebar";
-import { SignalsScan } from "@/components/diensten/premium/SignalsScan";
-import { TickerBand } from "@/components/diensten/premium/TickerBand";
+import { SignalsChat } from "@/components/diensten/premium/SignalsChat";
+import { StickerStrip } from "@/components/diensten/premium/StickerStrip";
+import type { TocItem } from "@/components/diensten/premium/PageTOC";
 import type { DienstBody } from "@/data/dienst-content";
 import type { DienstExtra } from "@/data/dienst-extras";
-import {
-  STRATEGY_MANIFESTO,
-  type DienstStrategicContent,
-} from "@/data/dienst-strategic";
+import type { DienstPremiumContent } from "@/data/dienst-premium";
+import type { DienstStrategicContent } from "@/data/dienst-strategic";
 import type { DienstDetail } from "@/lib/diensten";
 import { ctaNav } from "@/lib/navigation";
 import { siteCtas } from "@/lib/cta";
 
-interface ApproachStepData {
-  title: string;
-  body: string;
-}
+const PRINCIPLE_ICONS = [Ear, Waypoints, MessageCircleQuestion] as const;
 
 interface DienstPremiumViewProps {
   dienst: DienstDetail;
@@ -31,14 +34,7 @@ interface DienstPremiumViewProps {
   extra: DienstExtra | null;
   strategic: DienstStrategicContent & { pillarLens: string };
   related: DienstDetail[];
-  /** Hero-onderregel met punch, korter dan de meta-description */
-  heroKicker: string;
-  /** Onverwacht feitje of harde waarheid als pull-quote */
-  funFact: string;
-  funFactSource: string;
-  approachSteps: ApproachStepData[];
-  tickerItems: string[];
-  heroStats: { label: string; value: string }[];
+  premium: DienstPremiumContent;
 }
 
 export function DienstPremiumView({
@@ -48,13 +44,18 @@ export function DienstPremiumView({
   extra,
   strategic,
   related,
-  heroKicker,
-  funFact,
-  funFactSource,
-  approachSteps,
-  tickerItems,
-  heroStats,
+  premium,
 }: DienstPremiumViewProps) {
+  const tocItems: TocItem[] = [
+    { id: "hoe-ik-werk", label: "Hoe ik werk" },
+    { id: "verhaal", label: "Het verhaal" },
+    { id: "aanpak", label: "Zo pakken we het aan" },
+    { id: "intake", label: "Waar ik naar kijk" },
+    { id: "resultaten", label: "Resultaten" },
+    { id: "situaties", label: "Herken je dit?" },
+    ...(extra?.faq.length ? [{ id: "faq", label: "Veelgestelde vragen" }] : []),
+  ];
+
   return (
     <article>
       {/* Hero */}
@@ -102,7 +103,7 @@ export function DienstPremiumView({
               {dienst.name}
             </h1>
             <p className="mt-5 max-w-xl text-balance text-xl font-medium leading-relaxed text-slate-600">
-              {heroKicker}
+              {premium.heroKicker}
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -126,7 +127,7 @@ export function DienstPremiumView({
             </div>
 
             <dl className="mt-11 grid max-w-lg grid-cols-3 gap-5 border-t border-slate-200 pt-7 text-sm tracking-tight">
-              {heroStats.map((stat) => (
+              {premium.heroStats.map((stat) => (
                 <div key={stat.label}>
                   <dt className="text-slate-500">{stat.label}</dt>
                   <dd className="mt-1 font-bold text-slate-900">{stat.value}</dd>
@@ -141,11 +142,11 @@ export function DienstPremiumView({
         </div>
       </header>
 
-      <TickerBand items={tickerItems} />
+      <StickerStrip items={premium.capabilities} />
 
       {/* Body */}
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start lg:gap-14">
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-14">
           <div className="min-w-0">
             <Reveal>
               <p className="max-w-2xl text-balance text-xl leading-relaxed text-slate-800 sm:text-2xl sm:leading-relaxed">
@@ -153,69 +154,93 @@ export function DienstPremiumView({
               </p>
             </Reveal>
 
-            {/* Fun fact pull-quote */}
+            {/* Feitje met watermerk-cijfer */}
             <Reveal delay={0.05}>
-              <figure className="relative mt-12 overflow-hidden rounded-3xl bg-slate-900 p-7 text-white sm:p-9">
-                <div
-                  className="pointer-events-none absolute -right-12 -top-12 size-44 rounded-full bg-[#FF5722]/20 blur-3xl"
+              <figure className="relative mt-12 overflow-hidden rounded-3xl border border-[#FF5722]/25 bg-gradient-to-br from-[#FF5722]/[0.06] via-white to-white p-7 sm:p-9">
+                <span
+                  className="pointer-events-none absolute -right-3 -top-7 select-none text-[6rem] font-extrabold leading-none tracking-tighter text-transparent [-webkit-text-stroke:2px_rgba(255,87,34,0.18)] sm:text-[8.5rem]"
                   aria-hidden
-                />
-                <Quote
-                  className="size-8 text-[#FF5722]"
-                  aria-hidden
-                  strokeWidth={1.5}
-                />
-                <blockquote className="mt-4 text-balance text-xl font-extrabold leading-snug tracking-tight sm:text-2xl">
-                  {funFact}
+                >
+                  {premium.funFactStat}
+                </span>
+                <p className="relative inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.15em] text-white">
+                  Wist je dit?
+                </p>
+                <blockquote className="relative mt-4 max-w-lg text-balance text-xl font-extrabold leading-snug tracking-tight text-slate-900 sm:text-2xl">
+                  {premium.funFact}
                 </blockquote>
-                <figcaption className="mt-4 text-xs font-semibold uppercase tracking-[0.15em] text-slate-400">
-                  {funFactSource}
+                <figcaption className="relative mt-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#FF5722]">
+                  {premium.funFactSource}
                 </figcaption>
               </figure>
             </Reveal>
 
-            {/* Manifesto + lens naast elkaar in plaats van gestapeld */}
-            <div className="mt-14 grid gap-5 md:grid-cols-[1.25fr_1fr] md:items-stretch">
-              <Reveal className="h-full">
-                <div className="flex h-full flex-col rounded-3xl border border-[#FF5722]/20 bg-gradient-to-br from-[#FF5722]/[0.07] to-transparent p-6 sm:p-8">
-                  <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-[#FF5722]">
-                    <Sparkles className="size-4" aria-hidden />
-                    Hoe ik werk
-                  </p>
-                  <h2 className="mt-3 text-balance text-2xl font-extrabold tracking-tight text-slate-900">
-                    {STRATEGY_MANIFESTO.title}
-                  </h2>
-                  <div className="mt-4 space-y-3.5 text-[15px] leading-relaxed text-slate-600">
-                    {STRATEGY_MANIFESTO.paragraphs.map((p, i) => (
-                      <p key={i}>{p}</p>
-                    ))}
-                  </div>
-                </div>
+            {/* Hoe ik werk: drie gelijke principes + lens */}
+            <section
+              id="hoe-ik-werk"
+              className="mt-16 scroll-mt-28"
+              aria-labelledby="principles-heading"
+            >
+              <Reveal>
+                <h2
+                  id="principles-heading"
+                  className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
+                >
+                  Hoe ik werk
+                </h2>
+                <p className="mt-2 max-w-xl text-slate-600">
+                  Drie dingen die je bij mij altijd krijgt. Wat we ook bouwen.
+                </p>
               </Reveal>
-              <Reveal delay={0.07} className="h-full">
-                <div className="flex h-full flex-col justify-between rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.15em] text-slate-500">
-                      Lens op dit blok
-                    </p>
-                    <p className="mt-4 text-[15px] leading-relaxed text-slate-700">
-                      {strategic.pillarLens}
-                    </p>
-                  </div>
+              <ul className="mt-8 grid gap-4 sm:grid-cols-3 sm:items-stretch">
+                {premium.principles.map((principle, index) => {
+                  const Icon = PRINCIPLE_ICONS[index % PRINCIPLE_ICONS.length];
+                  return (
+                    <Reveal key={principle.title} delay={0.07 * index} className="h-full">
+                      <li className="group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#FF5722]/35 hover:shadow-[0_20px_40px_-28px_rgba(255,87,34,0.55)]">
+                        <span
+                          className="flex size-11 items-center justify-center rounded-2xl bg-slate-900 text-white transition-colors duration-300 group-hover:bg-[#FF5722]"
+                          aria-hidden
+                        >
+                          <Icon className="size-5" strokeWidth={1.8} />
+                        </span>
+                        <h3 className="mt-4 text-base font-extrabold tracking-tight text-slate-900">
+                          {principle.title}
+                        </h3>
+                        <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                          {principle.body}
+                        </p>
+                      </li>
+                    </Reveal>
+                  );
+                })}
+              </ul>
+              <Reveal delay={0.1}>
+                <div className="mt-4 flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-7">
+                  <p className="max-w-2xl text-[15px] leading-relaxed text-slate-700">
+                    <span className="font-extrabold text-slate-900">
+                      De lens op {dienst.pillar.toLowerCase()}:{" "}
+                    </span>
+                    {premium.lens}
+                  </p>
                   <Link
                     href={pillarHref}
-                    className="group mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-slate-900 transition-colors hover:text-[#FF5722]"
+                    className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-bold text-slate-900 transition-colors hover:text-[#FF5722]"
                   >
                     Alles over {dienst.pillar}
                     <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Link>
                 </div>
               </Reveal>
-            </div>
+            </section>
 
             {/* Deep dive */}
-            <Reveal delay={0.05}>
-              <section className="mt-16" aria-labelledby="deep-dive-heading">
+            <section
+              id="verhaal"
+              className="mt-16 scroll-mt-28"
+              aria-labelledby="deep-dive-heading"
+            >
+              <Reveal>
                 <h2
                   id="deep-dive-heading"
                   className="text-balance text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
@@ -228,62 +253,87 @@ export function DienstPremiumView({
                 <p className="mt-4 text-base leading-relaxed text-slate-600">
                   {strategic.deepExtended}
                 </p>
-              </section>
-            </Reveal>
+              </Reveal>
+            </section>
 
             {/* Aanpak als route */}
-            <Reveal delay={0.05}>
-              <section className="mt-16" aria-labelledby="approach-heading">
+            <section
+              id="aanpak"
+              className="mt-16 scroll-mt-28"
+              aria-labelledby="approach-heading"
+            >
+              <Reveal>
                 <h2
                   id="approach-heading"
-                  className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
+                  className="flex items-center gap-2.5 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
                 >
+                  <Route className="size-7 text-[#FF5722]" aria-hidden />
                   Zo pakken we het aan
                 </h2>
                 <p className="mt-2 max-w-xl text-slate-600">
                   Geen black box van maanden. Je ziet elke fase wat er gebeurt
                   en waarom.
                 </p>
-              </section>
-            </Reveal>
-            <ApproachPath steps={approachSteps} />
+              </Reveal>
+              <ApproachPath steps={premium.approachSteps} />
+            </section>
 
-            {/* Signalen */}
-            <Reveal delay={0.05}>
-              <section className="mt-16" aria-labelledby="signals-heading">
+            {/* Intake als chatgesprek */}
+            <section
+              id="intake"
+              className="mt-16 scroll-mt-28"
+              aria-labelledby="signals-heading"
+            >
+              <Reveal>
                 <h2
                   id="signals-heading"
-                  className="flex items-center gap-2.5 text-2xl font-extrabold tracking-tight text-slate-900"
+                  className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
                 >
-                  <Target className="size-7 text-[#FF5722]" aria-hidden />
                   Waar ik bij jou naar kijk
                 </h2>
-                <p className="mt-2 max-w-xl text-sm text-slate-600">
-                  Geen trucvragen. Wel de dingen die bepalen welke route voor{" "}
-                  <span className="font-semibold text-slate-900">
-                    {dienst.name.toLowerCase()}
-                  </span>{" "}
-                  het slimst is.
+                <p className="mt-2 max-w-xl text-slate-600">
+                  Geen trucvragen. Dit is letterlijk hoe ons eerste gesprek
+                  eruitziet, en elk antwoord stuurt de route bij.
                 </p>
-              </section>
-            </Reveal>
-            <SignalsScan signals={strategic.signals} />
+              </Reveal>
+              <Reveal delay={0.06}>
+                <div className="mt-8">
+                  <SignalsChat
+                    signals={strategic.signals}
+                    ctaHref={ctaNav.href}
+                  />
+                </div>
+              </Reveal>
+            </section>
 
-            {/* Resultaten */}
-            {extra?.outcomes.length ? (
-              <>
-                <Reveal delay={0.05}>
-                  <h2 className="mt-16 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                    Concrete resultaten waar je op stuurt
-                  </h2>
-                </Reveal>
-                <OutcomeCards outcomes={extra.outcomes} />
-              </>
-            ) : null}
+            {/* Resultaten als uitklappanelen */}
+            <section
+              id="resultaten"
+              className="mt-16 scroll-mt-28"
+              aria-labelledby="outcomes-heading"
+            >
+              <Reveal>
+                <h2
+                  id="outcomes-heading"
+                  className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
+                >
+                  Concrete resultaten waar je op stuurt
+                </h2>
+                <p className="mt-2 max-w-xl text-slate-600">
+                  Beweeg over de panelen. Dit is waar je het straks elke dag
+                  aan merkt.
+                </p>
+              </Reveal>
+              <OutcomePanels outcomes={premium.outcomes} />
+            </section>
 
-            {/* Scenario's met accentbalk, geen stapel */}
-            <Reveal delay={0.05}>
-              <section className="mt-16" aria-labelledby="scenarios-heading">
+            {/* Scenario's */}
+            <section
+              id="situaties"
+              className="mt-16 scroll-mt-28"
+              aria-labelledby="scenarios-heading"
+            >
+              <Reveal>
                 <h2
                   id="scenarios-heading"
                   className="text-balance text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
@@ -302,7 +352,7 @@ export function DienstPremiumView({
                     >
                       <span
                         className={`absolute inset-y-0 left-0 w-1.5 transition-all duration-300 group-hover:w-2.5 ${
-                          index % 2 === 0 ? "bg-[#FF5722]" : "bg-slate-900"
+                          index % 2 === 0 ? "bg-[#FF5722]" : "bg-sky-400"
                         }`}
                         aria-hidden
                       />
@@ -315,8 +365,8 @@ export function DienstPremiumView({
                     </li>
                   ))}
                 </ul>
-              </section>
-            </Reveal>
+              </Reveal>
+            </section>
 
             <Reveal delay={0.05}>
               <p className="mt-14 max-w-2xl text-lg leading-relaxed text-slate-600">
@@ -326,7 +376,11 @@ export function DienstPremiumView({
 
             {/* FAQ */}
             {extra?.faq.length ? (
-              <section className="mt-16" aria-labelledby={`faq-${dienst.slug}`}>
+              <section
+                id="faq"
+                className="mt-16 scroll-mt-28"
+                aria-labelledby={`faq-${dienst.slug}`}
+              >
                 <Reveal>
                   <h2
                     id={`faq-${dienst.slug}`}
@@ -351,6 +405,7 @@ export function DienstPremiumView({
             ctaLabel={ctaNav.label}
             pillarName={dienst.pillar}
             related={related.map((r) => ({ slug: r.slug, name: r.name }))}
+            tocItems={tocItems}
           />
         </div>
       </div>

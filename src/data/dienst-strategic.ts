@@ -119,7 +119,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     ],
   },
   webdevelopment: {
-    deepTitle: "Maatwerk websites: from scratch, gebouwd voor jouw bedrijf",
+    deepTitle: "Websites from scratch: gebouwd voor jouw bedrijf",
     deepLead:
       "Ik bouw geen kant-en-klare templates. Elke site start op een leeg canvas: design, structuur en code passend bij jouw merk, doelen en team. Of het nu een bedrijfswebsite, landingspagina of portal is.",
     deepExtended:

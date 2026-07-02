@@ -4,14 +4,33 @@
  * de rest valt terug op de standaard dienstpagina.
  */
 
+export interface DienstPremiumOutcome {
+  title: string;
+  detail: string;
+}
+
+export interface DienstPremiumPrinciple {
+  title: string;
+  body: string;
+}
+
 export interface DienstPremiumContent {
   /** Korte onderregel met punch in de hero */
   heroKicker: string;
-  /** Onverwacht feitje of harde waarheid als pull-quote */
+  /** Onverwacht feitje of harde waarheid */
   funFact: string;
   funFactSource: string;
+  /** Groot getal of kernwoord als watermerk achter het feitje */
+  funFactStat: string;
+  /** "Hoe ik werk" als drie gelijkwaardige principes */
+  principles: DienstPremiumPrinciple[];
+  /** Herschreven blok-lens in de tone of voice van de pagina */
+  lens: string;
   approachSteps: { title: string; body: string }[];
-  tickerItems: string[];
+  /** Sticker-strip onder de hero */
+  capabilities: string[];
+  /** Resultaten met gelijkwaardige titels en details */
+  outcomes: DienstPremiumOutcome[];
   heroStats: { label: string; value: string }[];
 }
 
@@ -22,6 +41,22 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     funFact:
       "Een bezoeker oordeelt in ongeveer een halve seconde over je website. Nog voor er één woord is gelezen.",
     funFactSource: "Daarom bouwen we niks half",
+    funFactStat: "0,5 sec",
+    principles: [
+      {
+        title: "Eerst luisteren, dan bouwen",
+        body: "Wat een webshop nodig heeft, verschilt nogal van een B2B-dienstverlener. Zelfs als ze allebei 'gewoon een site' vragen. Dus ik begin met vragen stellen, niet met bouwen.",
+      },
+      {
+        title: "Eén aanspreekpunt, geen estafette",
+        body: "Geen keten van vijf specialisten die naar elkaar wijzen als iets misgaat. Web, marketing en techniek komen bij mij uit één brein. Scheelt vergaderingen, scheelt misverstanden.",
+      },
+      {
+        title: "Taal die je gewoon snapt",
+        body: "Je krijgt uitleg in normaal Nederlands, met keuzes die je zelf kunt maken. Het jargon bewaar ik voor de code. Daar hoort het thuis en daar leest niemand mee.",
+      },
+    ],
+    lens: "Een site is bij mij geen los project maar het fundament onder alles wat erna komt: SEO, ads, e-mail. Daarom bouw ik alsof jouw bedrijf over vijf jaar drie keer zo groot is. Dat is namelijk wel de bedoeling.",
     approachSteps: [
       {
         title: "Eerst begrijpen, dan bouwen",
@@ -40,14 +75,31 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Na de lancering krijg je documentatie, een korte uitleg en een site die je zelf kunt beheren. Wij blijven beschikbaar, maar je zit nergens aan vast.",
       },
     ],
-    tickerItems: [
+    capabilities: [
       "From scratch",
-      "Geen templates",
-      "Core Web Vitals",
-      "Next.js",
+      "Nul templates",
+      "Laadt onder de seconde",
       "SEO-klaar",
       "Zelf te beheren",
       "Veilig gebouwd",
+      "Groeit met je mee",
+    ],
+    outcomes: [
+      {
+        title: "Snelheid die je voelt",
+        detail:
+          "Core Web Vitals in het groen en laadtijden onder de seconde. Bezoekers merken het meteen en Google beloont het elke dag opnieuw.",
+      },
+      {
+        title: "Beheer zonder gedoe",
+        detail:
+          "Teksten, foto's en pagina's pas je zelf aan zonder technische kennis. Geen belletje naar een bouwer voor elke komma die anders moet.",
+      },
+      {
+        title: "Eigenaarschap bij jou",
+        detail:
+          "Code, documentatie en alle toegangen zijn van jou. Je zit nergens aan vast, ook niet aan mij. Al blijven de meeste klanten gewoon.",
+      },
     ],
     heroStats: [
       { label: "Aanpak", value: "From scratch · custom" },

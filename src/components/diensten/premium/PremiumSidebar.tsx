@@ -3,7 +3,8 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { Magnetic } from "@/components/effects/Magnetic";
+import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { PageTOC, type TocItem } from "@/components/diensten/premium/PageTOC";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
 
 export interface SidebarRelatedItem {
@@ -16,66 +17,94 @@ interface PremiumSidebarProps {
   ctaLabel: string;
   pillarName: string;
   related: SidebarRelatedItem[];
+  tocItems: TocItem[];
 }
 
-/** Sticky sidebar met levend beschikbaarheids-signaal en magnetische CTA. */
+/** Lichte sticky sidebar: inhoudsopgave met scroll-spy, CTA en een meekijkende Meneer. */
 export function PremiumSidebar({
   ctaHref,
   ctaLabel,
   pillarName,
   related,
+  tocItems,
 }: PremiumSidebarProps) {
   const reduce = useReducedMotion();
 
   return (
-    <aside className="mt-12 min-w-0 space-y-5 lg:mt-0 lg:sticky lg:top-28">
-      <div className="relative overflow-hidden rounded-3xl bg-slate-900 p-6 text-white shadow-[0_28px_56px_-24px_rgba(15,23,42,0.55)]">
+    <aside className="mt-12 min-w-0 space-y-5 lg:mt-0 lg:sticky lg:top-24">
+      {/* Inhoudsopgave met live scroll-indicator */}
+      <div className="hidden rounded-3xl border border-slate-200 bg-white p-5 shadow-sm lg:block">
+        <p className="px-3 text-xs font-bold uppercase tracking-wider text-slate-400">
+          Op deze pagina
+        </p>
+        <div className="mt-3">
+          <PageTOC items={tocItems} />
+        </div>
+      </div>
+
+      {/* CTA */}
+      <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
         <div
-          className="pointer-events-none absolute -right-10 -top-10 size-36 rounded-full bg-[#FF5722]/25 blur-2xl"
+          className="pointer-events-none absolute -right-8 -top-8 size-28 rounded-full bg-[#FF5722]/10 blur-2xl"
           aria-hidden
         />
-        <p className="relative flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-slate-300">
-          <span className="relative flex size-2.5" aria-hidden>
+        <p className="relative inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-emerald-700">
+          <span className="relative flex size-2" aria-hidden>
             {reduce ? null : (
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
             )}
-            <span className="relative inline-flex size-2.5 rounded-full bg-emerald-400" />
+            <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
           </span>
           Ruimte voor nieuwe projecten
         </p>
-        <p className="relative mt-4 text-xl font-extrabold leading-snug tracking-tight">
+        <p className="relative mt-4 text-lg font-extrabold leading-snug tracking-tight text-slate-900">
           Zullen we eerst even kijken of het klikt?
         </p>
-        <p className="relative mt-2 text-sm leading-relaxed text-slate-300">
+        <p className="relative mt-2 text-sm leading-relaxed text-slate-600">
           Eén gesprek, geen verplichtingen. Je krijgt sowieso een eerlijk
           antwoord op de vraag of dit nu de slimste stap is.
         </p>
-        <div className="relative mt-6">
-          <Magnetic strength={14} radius={130}>
-            <Link
-              href={ctaHref}
-              className="group inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-[#FF5722] px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:shadow-[#FF5722]/50"
-            >
-              <span
-                aria-hidden
-                className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-white/15 transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
-              />
-              <span className="relative z-10">{ctaLabel}</span>
-              <ArrowUpRight className="relative z-10 size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
-          </Magnetic>
-        </div>
-        <p className="relative mt-3 text-center text-[11px] text-slate-400">
-          Reactie binnen één werkdag
+        <Link
+          href={ctaHref}
+          className="group relative mt-5 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-[#FF5722] px-5 py-3.5 text-sm font-bold text-white shadow-md shadow-[#FF5722]/25 transition hover:shadow-[#FF5722]/40"
+        >
+          <span
+            aria-hidden
+            className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-slate-900 transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
+          />
+          <span className="relative z-10">{ctaLabel}</span>
+          <ArrowUpRight className="relative z-10 size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </Link>
+        <p className="relative mt-3 text-center text-xs text-slate-400">
+          Je hoort binnen één werkdag van me.
         </p>
       </div>
 
+      {/* Meneer kijkt mee */}
+      <motion.div
+        initial={reduce ? false : { opacity: 0, y: 14 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center gap-4 rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-5 shadow-sm"
+      >
+        <span className="shrink-0" aria-hidden>
+          <InteractiveLogo className="h-14 w-14" />
+        </span>
+        <p className="text-sm leading-snug text-slate-600">
+          <span className="font-bold text-slate-900">Meneer kijkt met je mee.</span>{" "}
+          Zijn ogen volgen je cursor. Straks volgt hij net zo scherp jouw
+          cijfers.
+        </p>
+      </motion.div>
+
+      {/* Gerelateerde diensten */}
       {related.length > 0 ? (
-        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
+        <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+          <p className="px-2.5 text-xs font-bold uppercase tracking-wider text-slate-400">
             Meer binnen {pillarName}
           </p>
-          <ul className="mt-4 space-y-1.5">
+          <ul className="mt-3 space-y-1">
             {related.map((item, index) => {
               const Icon = megaMenuIconForHref(`/diensten/${item.slug}`);
               return (

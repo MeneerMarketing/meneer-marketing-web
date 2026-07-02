@@ -105,12 +105,7 @@ export default async function DienstPage({
             extra={extra}
             strategic={strategic}
             related={related}
-            heroKicker={premium.heroKicker}
-            funFact={premium.funFact}
-            funFactSource={premium.funFactSource}
-            approachSteps={premium.approachSteps}
-            tickerItems={premium.tickerItems}
-            heroStats={premium.heroStats}
+            premium={premium}
           />
         </main>
         <SiteFooter />
