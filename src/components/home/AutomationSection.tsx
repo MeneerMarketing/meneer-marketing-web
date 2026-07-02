@@ -59,7 +59,7 @@ export function AutomationSection() {
               </ul>
 
               <Link
-                href="/groeien"
+                href="/strategie"
                 className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-mm-sky-deep hover:text-mm-sky"
               >
                 Meer over groeistrategie

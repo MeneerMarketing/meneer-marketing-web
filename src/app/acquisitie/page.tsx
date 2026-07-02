@@ -3,22 +3,22 @@ import { PillarLandingView } from "@/components/pillars/PillarLandingView";
 import { pillarPages } from "@/data/pillar-pages";
 import { absoluteUrl } from "@/lib/site";
 
-const data = pillarPages.groeien;
+const data = pillarPages.acquisitie;
 
 export const metadata: Metadata = {
   title: data.metaTitle,
   description: data.metaDescription,
   keywords: data.keywords,
-  alternates: { canonical: absoluteUrl("/groeien") },
+  alternates: { canonical: absoluteUrl("/acquisitie") },
   openGraph: {
     title: data.metaTitle,
     description: data.metaDescription,
-    url: absoluteUrl("/groeien"),
+    url: absoluteUrl("/acquisitie"),
     locale: "nl_NL",
     type: "website",
   },
 };
 
-export default function GroeienPage() {
+export default function AcquisitiePage() {
   return <PillarLandingView data={data} />;
 }

@@ -79,10 +79,10 @@ export default function OverPage() {
                   risico’s en trade-offs.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-mm-muted">
-                  Of het nu gaat om een internationale Shopify, een maatwerk website
-                  from scratch, een web-app of n8n-workflows die je team rust
-                  geven. We denken in pijlers: bouwen, groeien, automatiseren,
-                  vormgeven.
+                  Of het nu gaat om een internationale Shopify, een website
+                  from scratch, een web-app of slimme automatisering die je team
+                  rust geeft. We denken in blokken: strategie, bouwen,
+                  vindbaarheid, acquisitie, behoud.
                 </p>
               </Reveal>
               <Reveal className="mt-10 lg:mt-0" delay={0.08}>

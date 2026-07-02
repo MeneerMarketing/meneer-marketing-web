@@ -107,9 +107,9 @@ export default function SamenwerkenPage() {
                   icon: <Compass className="size-4" />,
                 },
                 {
-                  label: "Onze pijlers",
+                  label: "Onze blokken",
                   href: "/diensten",
-                  description: "Bouwen, groeien, automatiseren, vormgeven.",
+                  description: "Strategie, bouwen, vindbaarheid, acquisitie, behoud.",
                   icon: <Layers className="size-4" />,
                 },
                 {

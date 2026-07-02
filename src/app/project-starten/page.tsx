@@ -105,7 +105,7 @@ export default function ProjectStartenPage() {
                 {
                   label: "Bekijk alle diensten",
                   href: "/diensten",
-                  description: "Per pijler wat we uitvoeren en wanneer.",
+                  description: "Per blok wat we uitvoeren en wanneer.",
                   icon: <Layers className="size-4" />,
                 },
                 {

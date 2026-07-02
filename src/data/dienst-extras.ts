@@ -40,7 +40,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   webdevelopment: {
     outcomes: [
-      "Maatwerk websites die snel laden en makkelijk te beheren zijn",
+      "Websites from scratch die snel laden en makkelijk te beheren zijn",
       "Heldere structuur en design passend bij je merk",
       "Overdracht en documentatie, zodat je niet vastzit aan één persoon",
     ],
@@ -297,6 +297,202 @@ export const dienstExtras: Record<string, DienstExtra> = {
           "Ja. We werken met de tools die jij al gebruikt, of adviseren wat het beste past bij je webshop of site.",
       },
       Q.remote,
+    ],
+  },
+  strategie: {
+    outcomes: [
+      "Eén plan met kanalen, budget en volgorde. Geen losse acties meer",
+      "Onderbouwing met jouw cijfers, niet met onderbuikgevoel",
+      "Maandelijkse bijsturing: meer naar wat werkt, weg met wat niet werkt",
+    ],
+    faq: [
+      {
+        question: "Krijg ik alleen een plan of ook de uitvoering?",
+        answer:
+          "Beide kan. Het plan staat op zichzelf, maar de meeste klanten laten ons ook uitvoeren. Dan blijft de strategie geen papier en zie je elke maand wat het oplevert.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  "ai-zoek": {
+    outcomes: [
+      "Jouw bedrijf als antwoord in ChatGPT, Perplexity en Google AI",
+      "Content en techniek die AI-modellen kunnen lezen en citeren",
+      "Voorsprong op concurrenten die dit kanaal nog niet kennen",
+    ],
+    faq: [
+      {
+        question: "Is vindbaarheid in AI-zoek nu al belangrijk?",
+        answer:
+          "Ja. Een groeiend deel van de zoektochten begint bij ChatGPT of Perplexity, en Google toont AI-antwoorden boven de gewone resultaten. Wie er nu in investeert, bouwt een voorsprong op die later duur is om in te halen.",
+      },
+      {
+        question: "Hoe verschilt dit van gewone SEO?",
+        answer:
+          "De basis overlapt: goede content en een technisch kloppende site. AI-zoek vraagt daarnaast om content die als antwoord te citeren is, duidelijke bedrijfsinformatie en autoriteitssignalen die modellen herkennen.",
+      },
+      Q.meet,
+    ],
+  },
+  "local-seo": {
+    outcomes: [
+      "Bovenaan in Google en Maps als iemand in jouw regio zoekt",
+      "Een Google Business-profiel dat klanten overtuigt",
+      "Meer telefoontjes, routes en aanvragen uit je eigen omgeving",
+    ],
+    faq: [
+      {
+        question: "Werkt lokale SEO ook zonder fysieke winkel?",
+        answer:
+          "Ja, ook als je aan huis werkt of een servicegebied hebt. We richten je profiel en pagina's dan in op de regio's waar je klanten zitten.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  "content-marketing": {
+    outcomes: [
+      "Content die verkeer oplevert én de juiste klanten aantrekt",
+      "Autoriteit per onderwerp, opgebouwd met structuur",
+      "Eén verhaal over site, social en e-mail heen",
+    ],
+    faq: [
+      {
+        question: "Schrijven jullie de content zelf?",
+        answer:
+          "Ja, in jouw tone of voice en afgestemd op wat je klant zoekt. Jij controleert op vakinhoud, wij zorgen dat het scoort en prettig leest.",
+      },
+      Q.start,
+      Q.remote,
+    ],
+  },
+  reviews: {
+    outcomes: [
+      "Structurele stroom nieuwe reviews op de platforms die tellen",
+      "Sterren zichtbaar in Google bij je bedrijfsnaam en pagina's",
+      "Minder twijfel in de funnel, dus meer conversie",
+    ],
+    faq: [
+      {
+        question: "Wat doen jullie met negatieve reviews?",
+        answer:
+          "Netjes en snel reageren, en ervan leren. Een goed afgehandelde kritische review wekt vaak meer vertrouwen dan tien juichende. Verwijderen kan alleen als een review echt tegen de regels ingaat.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  "google-ads": {
+    outcomes: [
+      "Campagnes die budget naar klanten sturen, niet naar loze klikken",
+      "Structuur en meting die je zelf kunt volgen",
+      "Duidelijk schaalpad: wanneer meer budget zinvol is en wanneer niet",
+    ],
+    faq: [
+      {
+        question: "Wat is een realistisch startbudget?",
+        answer:
+          "Dat hangt af van je markt en marge. We rekenen vooraf uit wat een klant mag kosten en starten met een budget waarmee we snel kunnen leren. Meestal kun je binnen enkele weken zien of het kanaal voor jou werkt.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  "meta-ads": {
+    outcomes: [
+      "Campagnes op Facebook en Instagram die meetbaar verkopen",
+      "Creatives en hooks die getest zijn, niet gegokt",
+      "Retargeting die klanten terughaalt zonder irritant te worden",
+    ],
+    faq: [
+      {
+        question: "Hebben jullie ook de content voor de advertenties?",
+        answer:
+          "Ja. We maken creatives zelf of zetten UGC en creators in. Vaak is de content het verschil tussen een campagne die rendeert en één die geld kost.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  "social-media": {
+    outcomes: [
+      "Consistente zichtbaarheid op de kanalen waar jouw klant zit",
+      "Formats en ritme die vol te houden zijn",
+      "Social die aansluit op je site en campagnes, één verhaal",
+    ],
+    faq: [
+      {
+        question: "Moeten we op elk platform zitten?",
+        answer:
+          "Nee. Beter twee kanalen goed dan vijf halfslachtig. We kiezen de plekken waar jouw klant echt zit en waar je het ritme kunt volhouden.",
+      },
+      Q.start,
+      Q.remote,
+    ],
+  },
+  ugc: {
+    outcomes: [
+      "Video's van echte mensen die je product laten zien zoals klanten het gebruiken",
+      "Varianten en hooks klaar om te testen in je campagnes",
+      "Rechten geregeld, zodat je content overal mag inzetten",
+    ],
+    faq: [
+      {
+        question: "Wat is het verschil tussen UGC en influencer marketing?",
+        answer:
+          "Bij UGC koop je de content: een creator maakt video's die jij inzet in je eigen advertenties. Bij influencer marketing koop je ook het bereik van de creator zelf. Vaak combineren we beide.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  "influencer-marketing": {
+    outcomes: [
+      "Creators die passen bij je merk, product en marge",
+      "Afspraken over content, rechten en vergoeding zwart op wit",
+      "Per samenwerking meetbaar wat het heeft opgeleverd",
+    ],
+    faq: [
+      {
+        question: "Hoe voorkomen jullie nep-volgers en tegenvallend bereik?",
+        answer:
+          "We beoordelen accounts op echt engagement en eerdere samenwerkingen, niet op volgersaantallen. En we meten elke samenwerking met eigen codes of links, zodat het resultaat zichtbaar is.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  marketplaces: {
+    outcomes: [
+      "Producten die gevonden en gekozen worden op Bol en Amazon",
+      "Listings, reviews en ads die samen je positie opbouwen",
+      "Marketplace als extra kanaal naast je eigen shop, niet ten koste van",
+    ],
+    faq: [
+      {
+        question: "Kannibaliseert Bol of Amazon mijn eigen webshop niet?",
+        answer:
+          "Dat risico bestaat en daarom stemmen we assortiment en prijsstrategie af. Vaak bereik je op marketplaces klanten die je eigen shop nooit gevonden hadden.",
+      },
+      Q.start,
+      Q.meet,
+    ],
+  },
+  retentie: {
+    outcomes: [
+      "Meer herhaalaankopen uit klanten die je al hebt",
+      "Loyaliteit en win-back flows die bij je marge passen",
+      "Hogere klantwaarde, dus meer ruimte om te groeien in acquisitie",
+    ],
+    faq: [
+      {
+        question: "Is retentie ook interessant voor dienstverleners?",
+        answer:
+          "Zeker. Voor diensten gaat het om verlengingen, vervolgopdrachten en doorverwijzingen. Dezelfde principes, andere flows.",
+      },
+      Q.start,
+      Q.meet,
     ],
   },
 };

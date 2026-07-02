@@ -18,12 +18,12 @@ export function PillarsSection() {
                 id="pillars-heading"
                 className="text-3xl font-extrabold tracking-tight text-mm-text sm:text-4xl"
               >
-                Vier pijlers.{" "}
+                Vijf blokken.{" "}
                 <span className="text-mm-sky-deep">Één groeipad.</span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-mm-muted">
-                Bouwen, groeien, automatiseren, vormgeven. Dezelfde structuur
-                als je navigatie, hier als verhaal verteld.
+                Strategie, bouwen, vindbaarheid, acquisitie, behoud. Dezelfde
+                structuur als je navigatie, hier als verhaal verteld.
               </p>
             </div>
             <Link
@@ -37,13 +37,15 @@ export function PillarsSection() {
         </Reveal>
 
         <ol className="relative mt-14 grid gap-6 lg:grid-cols-2">
-          <li
-            className="pointer-events-none absolute left-4 top-0 hidden h-full w-px bg-mm-border lg:left-[calc(50%-0.5px)] lg:block"
-            aria-hidden
-          />
           {megaMenuColumns.map((col, index) => (
-            <Reveal key={col.category} delay={0.05 * index}>
-              <li className="group relative rounded-2xl border border-mm-border bg-mm-surface-elevated p-6 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md lg:p-8">
+            <Reveal
+              key={col.category}
+              delay={0.05 * index}
+              className={
+                index === megaMenuColumns.length - 1 ? "lg:col-span-2" : undefined
+              }
+            >
+              <li className="group relative h-full rounded-2xl border border-mm-border bg-mm-surface-elevated p-6 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md lg:p-8">
                 <h3 className="text-xl font-bold text-mm-text">
                   {col.category}
                 </h3>
@@ -66,7 +68,7 @@ export function PillarsSection() {
                     href={`/${col.pillarSlug}`}
                     className="inline-flex items-center gap-1 text-sm font-bold text-mm-accent transition hover:gap-2"
                   >
-                    Pijler bekijken
+                    Blok bekijken
                     <ArrowRight className="size-4" />
                   </Link>
                   <Link

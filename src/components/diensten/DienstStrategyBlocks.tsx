@@ -37,7 +37,7 @@ export function DienstStrategyBlocks({
         <div className="mt-12 rounded-3xl border border-mm-sky/30 bg-mm-sky-subtle/40 p-6 sm:p-8">
           <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-mm-sky-deep">
             <Layers className="size-4" aria-hidden />
-            Lens op deze pijler
+            Lens op dit blok
           </p>
           <p className="mt-4 text-lg leading-relaxed text-mm-text">
             {strategic.pillarLens}

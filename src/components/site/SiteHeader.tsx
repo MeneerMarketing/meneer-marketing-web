@@ -222,7 +222,7 @@ export function SiteHeader() {
                         {activeColumn.subtitle}
                       </p>
                       <p className="mt-1.5 text-xs font-medium text-mm-muted">
-                        Diensten onder deze pijler. Kies een traject of ga naar
+                        Diensten onder dit blok. Kies een traject of ga naar
                         het overzicht.
                       </p>
                     </div>

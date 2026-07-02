@@ -31,25 +31,81 @@ export interface PillarPageData {
 }
 
 export const pillarPages: Record<PillarSlug, PillarPageData> = {
+  strategie: {
+    slug: "strategie",
+    metaTitle: "Strategie. Eén groeiplan voor je hele online marketing",
+    metaDescription:
+      "Geen losse acties maar één plan: welke kanalen, welk budget en wat eerst. MeneerMarketing bedenkt de strategie en voert hem ook uit.",
+    keywords: [
+      "marketingstrategie",
+      "groeiplan bedrijf",
+      "online marketing plan",
+      "marketing bureau strategie",
+      "conversie optimalisatie",
+      "leadgeneratie",
+    ],
+    headline: "Eerst het plan. Dan pas de euro's.",
+    subheadline:
+      "De meeste marketing mislukt niet door slechte uitvoering maar door een ontbrekend plan. Wij bepalen eerst waar jouw groei zit. Daarna gaan we bouwen.",
+    stats: [
+      { label: "Start", value: "Doelen · data · marge" },
+      { label: "Output", value: "Plan · prioriteit · budget" },
+      { label: "Ritme", value: "Meten · bijsturen · schalen" },
+    ],
+    introParagraphs: [
+      "Iedereen kan een advertentie aanzetten. De vraag is of dat op dit moment de slimste euro is. Soms verdient je site eerst aandacht, soms je e-mail, soms je vindbaarheid. Wij rekenen dat door voordat je budget uitgeeft.",
+      "Voor BestRest bedachten we een eigen aanpak per product in plaats van één generieke funnel. Dat is precies het punt van strategie: jouw markt, jouw marge en jouw klant bepalen de route. Niet het trucje dat bij een ander werkte.",
+    ],
+    angleTitle: "Strategie die ook uitgevoerd wordt",
+    angleBody:
+      "Een plan zonder uitvoering is een duur PDF-bestand. Omdat wij ook bouwen, adverteren en optimaliseren, blijft de strategie geen papier. Je ziet per kwartaal wat er gebeurt, wat het kost en wat het oplevert.",
+    serviceIntro:
+      "Van groeiplan tot conversie-optimalisatie en meetbaarheid: dit zijn de trajecten binnen strategie.",
+    processTitle: "Zo komt jouw groeiplan tot stand",
+    processSteps: [
+      {
+        title: "Cijfers boven meningen",
+        body: "We duiken in je data: waar komt omzet vandaan, waar lekt het weg en wat kost een klant je nu echt?",
+      },
+      {
+        title: "Kanalen kiezen",
+        body: "Niet alles tegelijk. We kiezen de twee of drie kanalen waar jouw groei het snelst zit en leggen uit waarom.",
+      },
+      {
+        title: "Plan met prijskaartje",
+        body: "Je krijgt een concreet plan: wat we doen, in welke volgorde, wat het kost en wat je mag verwachten.",
+      },
+      {
+        title: "Uitvoeren en bijsturen",
+        body: "Elke maand kijken we wat werkt. Wat werkt krijgt meer budget, wat niet werkt gaat eruit. Zonder sentiment.",
+      },
+    ],
+    proofTitle: "Waarom volgorde alles is",
+    proofBody:
+      "SkinComplete stond eerst bovenaan in Google en had e-mailflows draaien vóór de advertenties aangingen. Daardoor kwam elke advertentie-euro binnen op een site die al converteerde. Dat is het verschil tussen budget verbranden en budget investeren.",
+    ctaTitle: "Benieuwd waar jouw groei zit?",
+    ctaBody:
+      "Doe de Groeiscan. Dan zie je binnen een paar minuten waar wij als eerste zouden beginnen.",
+  },
   bouwen: {
     slug: "bouwen",
-    metaTitle: "Bouwen. Webshops, sites en web-apps die schaalbaar zijn",
+    metaTitle: "Bouwen. Websites, Shopify-shops en web-apps from scratch",
     metaDescription:
-      "Maatwerk websites, Shopify-thema's en web-apps: snel, veilig en gebouwd om mee te groeien. MeneerMarketing bouwt het fundament achter je groei.",
+      "Websites from scratch, Shopify-webshops en web-apps: snel, veilig en gebouwd om mee te groeien. MeneerMarketing bouwt het fundament achter je groei.",
     keywords: [
+      "website laten bouwen",
       "Shopify development",
-      "maatwerk website",
       "webdevelopment Nederland",
-      "Shopify thema op maat",
+      "custom website from scratch",
       "web app ontwikkeling",
       "website snelheid optimalisatie",
     ],
     headline: "Bouwen zonder plafond.",
     subheadline:
-      "Van Shopify-thema's tot websites from scratch en web-apps: alles op maat, snel en klaar voor marketing, automatisering en groei.",
+      "Van Shopify-webshops tot websites from scratch en web-apps: alles custom build, snel en klaar voor marketing, koppelingen en groei.",
     stats: [
       { label: "Focus", value: "Snelheid · SEO · veiligheid" },
-      { label: "Platforms", value: "Shopify · Next.js · maatwerk" },
+      { label: "Platforms", value: "Shopify · Next.js · custom" },
       { label: "Werkwijze", value: "Stap voor stap · transparant" },
     ],
     introParagraphs: [
@@ -58,9 +114,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     angleTitle: "Waarom MeneerMarketing anders bouwt",
     angleBody:
-      "We denken vanuit groei: wat gebeurt er als verkeer verdubbelt, als je nieuwe markten opent, als je marketing strakkere landingspagina’s nodig heeft? Daarom combineren we strakke frontends met robuuste koppelingen, logging en documentatie. Geen black box.",
+      "We denken vanuit groei: wat gebeurt er als verkeer verdubbelt, als je nieuwe markten opent, als je marketing strakkere landingspagina's nodig heeft? Daarom combineren we strakke frontends met robuuste koppelingen, logging en documentatie. Geen black box.",
     serviceIntro:
-      "Kies een concreet traject of start met een korte technische scan. Dan weten we exact waar de winst zit.",
+      "Van websites en webshops tot design, merk en motion: dit zijn de bouwtrajecten.",
     processTitle: "Zo loopt een bouwtraject",
     processSteps: [
       {
@@ -73,7 +129,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       },
       {
         title: "Build, test, launch",
-        body: "Iteratieve oplevering, harde checks op CWV en regressies, en een launch die marketing niet lamlegt.",
+        body: "Iteratieve oplevering, harde checks op Core Web Vitals en regressies, en een launch die marketing niet lamlegt.",
       },
       {
         title: "Overdracht & doorontwikkeling",
@@ -82,176 +138,178 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     proofTitle: "Waar je direct winst pakt",
     proofBody:
-      "Snelheid en stabiliteit converteren. En maken SEO en ads goedkoper. Wij meten voor/na, koppelen dat aan je analytics en vertalen het naar concrete volgende stappen.",
+      "Snelheid en stabiliteit converteren. En maken SEO en ads goedkoper. Voor SkinComplete bouwden we naast de shop ook een compleet B2B-portaal in Shopify. Wij meten voor en na, koppelen dat aan je analytics en vertalen het naar concrete volgende stappen.",
     ctaTitle: "Klaar om het fundament te versterken?",
     ctaBody:
       "Plan een Groeiscan of start-intake. We koppelen bouw aan je groeidoelen en maken prioriteit helder.",
   },
-  groeien: {
-    slug: "groeien",
-    metaTitle: "Groeien. SEO, ads, e-mail, CRO en leadgeneratie",
+  vindbaarheid: {
+    slug: "vindbaarheid",
+    metaTitle: "Vindbaarheid. SEO, AI-zoek, content en reviews",
     metaDescription:
-      "SEO, Google Ads & Meta, e-mailmarketing, conversie-optimalisatie en leadgeneratie. Alles op één lijn met je site en webshop.",
+      "Gevonden worden in Google, ChatGPT en Maps: SEO, AI-zoek, lokale vindbaarheid, content en reviews. MeneerMarketing maakt je vindbaar waar je klant zoekt.",
     keywords: [
       "SEO bureau Nederland",
-      "Google Ads specialist",
-      "Meta ads e-commerce",
-      "e-mailmarketing",
-      "conversie optimalisatie",
-      "B2B leadgeneratie",
+      "vindbaar in ChatGPT",
+      "AI zoekmachine optimalisatie",
+      "lokale SEO",
+      "contentmarketing",
+      "Google reviews verbeteren",
     ],
-    headline: "Groeien zonder ruis.",
+    headline: "Gevonden worden. Overal waar je klant zoekt.",
     subheadline:
-      "Meer bezoekers is geen doel. Meer klanten en omzet wel. Wij zetten SEO, advertenties, e-mail en je website op één lijn.",
+      "Google is niet meer de enige plek waar klanten zoeken. Wij maken je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
     stats: [
       { label: "SEO", value: "Content · structuur · techniek" },
-      { label: "Ads", value: "Google · Meta · testen" },
-      { label: "E-mail", value: "Nieuwsbrief · flows · Klaviyo" },
+      { label: "AI-zoek", value: "ChatGPT · Perplexity · AI Overviews" },
+      { label: "Lokaal", value: "Google Business · Maps · reviews" },
     ],
     introParagraphs: [
-      "In 2026 wint wie duidelijk is: een site met goede antwoorden, campagnes die hetzelfde beloven als je landingspagina, en e-mails die op het juiste moment aankomen. Wij bouwen die lijn, van structuur tot advertentie.",
-      "Of je nu meer wilt verkopen in je webshop, B2B-leads wilt genereren of een nieuwe markt wilt testen: we starten met meten. Zonder goede data is optimaliseren gokken.",
+      "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT of Perplexity welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, besta je voor die klant simpelweg niet.",
+      "Vindbaarheid is daarom breder geworden dan SEO alleen. Het is de combinatie van goede content, een technisch kloppende site, lokale aanwezigheid en reviews die vertrouwen geven. Wij pakken die keten als geheel op, want de onderdelen versterken elkaar.",
     ],
-    angleTitle: "Marketing die techniek respecteert",
+    angleTitle: "Organisch eerst, betaald daarna",
     angleBody:
-      "Geen losse ads-copy los van je site. We werken samen met je bouw- en trackinglaag zodat budget naar zoektermen en audiences gaat die écht converteren. En SEO niet wordt gesaboteerd door trage templates.",
+      "SkinComplete stond bovenaan in Google vóór er één euro aan advertenties werd uitgegeven. Die volgorde is bewust: organische vindbaarheid maakt elke advertentie-euro daarna goedkoper, omdat je merk al vertrouwen heeft opgebouwd waar klanten zoeken.",
     serviceIntro:
-      "Per discipline hebben we scherpe trajecten; samen vormen ze een groeisysteem.",
-    processTitle: "Ons groeiframe",
+      "Van klassieke SEO tot AI-zoek en reviews: dit zijn de trajecten binnen vindbaarheid.",
+    processTitle: "Zo bouwen we je vindbaarheid op",
     processSteps: [
       {
-        title: "Baseline & KPI’s",
-        body: "Wat telt: omzet, leads, CPA, MER of iets anders? We zetten dashboards en events goed.",
+        title: "Zoekgedrag in kaart",
+        body: "Wat typt en vraagt jouw klant, in Google én aan AI? Daar richten we structuur en content op in.",
       },
       {
-        title: "Strategie per kanaal",
-        body: "SEO-roadmap, accountstructuur voor ads, CRO-backlog. Afgestemd op marge en salescyclus.",
+        title: "Techniek op orde",
+        body: "Snelheid, structuur en schema-markup. De onzichtbare laag die bepaalt of zoekmachines je begrijpen.",
       },
       {
-        title: "Uitvoering & experimenten",
-        body: "Content, campagnes, landingspagina’s en tests in vaste cadans. Met heldere hypotheses.",
+        title: "Content die antwoordt",
+        body: "Pagina's en artikelen die de vragen van je klant echt beantwoorden. Geen opgeblazen blogkalender.",
       },
       {
-        title: "Schaal of scherpstellen",
-        body: "We schalen wat werkt, snijden wat niet werkt af, en herinvesteren in SEO/CRO voor compound growth.",
+        title: "Autoriteit uitbouwen",
+        body: "Reviews, vermeldingen en interne structuur die je positie vasthouden als concurrenten wakker worden.",
       },
     ],
-    proofTitle: "Compound effect",
+    proofTitle: "Vindbaarheid is een bezit, geen kostenpost",
     proofBody:
-      "SEO + CRO + ads versterken elkaar als dezelfde propositie overal terugkomt. Dat is geen theorie. Dat is minder CPA en meer organisch volume op dezelfde site.",
-    ctaTitle: "Zet groei op de rit",
+      "Advertenties stoppen zodra je budget stopt. Een sterke organische positie blijft klanten opleveren, maand na maand. Daarom behandelen we vindbaarheid als investering: meetbaar in posities, verkeer en omzet per pagina.",
+    ctaTitle: "Weten waar jij nu vindbaar bent?",
     ctaBody:
-      "Start met de Groeiscan. We prioriteren kanalen op basis van impact en haalbaarheid.",
+      "Start met de Groeiscan. We laten zien waar je staat in Google én in AI-zoek, en waar de snelste winst zit.",
   },
-  automatiseren: {
-    slug: "automatiseren",
-    metaTitle: "Automatiseren. Workflows met n8n, Make en slimme datastromen",
+  acquisitie: {
+    slug: "acquisitie",
+    metaTitle: "Acquisitie. Google Ads, Meta Ads, social en creators",
     metaDescription:
-      "Orders, klanten, voorraad en marketing gekoppeld: minder handwerk, minder fouten. MeneerMarketing ontwerpt robuuste automatisering met logging en security in gedachten.",
+      "Google Ads, Meta Ads, social media, UGC en influencer marketing die meetbaar verkopen. MeneerMarketing zet campagnes op die je kunt sturen.",
     keywords: [
-      "n8n automatisering",
-      "Make.com workflows",
-      "e-commerce integratie",
-      "order fulfilment koppeling",
+      "Google Ads specialist",
+      "Meta Ads bureau",
+      "social media marketing",
+      "UGC content",
+      "influencer marketing",
+      "Bol Amazon verkopen",
+    ],
+    headline: "Klanten halen. Zonder budget te verbranden.",
+    subheadline:
+      "Google Ads, Meta Ads, social, creators en marketplaces: wij zetten de kanalen in die bij jouw marge passen en meten elke euro terug.",
+    stats: [
+      { label: "Ads", value: "Google · Meta · shopping" },
+      { label: "Creators", value: "UGC · influencers · social" },
+      { label: "Sturing", value: "ROAS · CPA · schaalpad" },
+    ],
+    introParagraphs: [
+      "Adverteren is simpel te starten en makkelijk te verpesten. Het verschil zit in de voorbereiding: klopt je meting, klopt je landingspagina en klopt de belofte in je advertentie met wat de klant daarna ziet?",
+      "Daarnaast verandert het speelveld: koude advertenties worden duurder, terwijl content van echte mensen (UGC en creators) juist beter presteert. Wij combineren beide werelden en verschuiven budget naar waar het rendeert.",
+    ],
+    angleTitle: "Ads en content uit één hand",
+    angleBody:
+      "De beste campagne faalt op een trage landingspagina, en de beste creator-video verzuipt zonder goede targeting. Omdat wij zowel de techniek als de campagnes doen, lossen we het probleem op waar het echt zit. Niet waar de dienstverlener toevallig verstand van heeft.",
+    serviceIntro:
+      "Van Google en Meta tot creators en marketplaces: dit zijn de acquisitietrajecten.",
+    processTitle: "Zo bouwen we je acquisitie op",
+    processSteps: [
+      {
+        title: "Meting eerst",
+        body: "Conversies die kloppen, anders stuur je op ruis. We zetten tracking goed vóór er budget aangaat.",
+      },
+      {
+        title: "Kanaal en boodschap",
+        body: "Waar zit jouw klant en wat overtuigt hem? Per kanaal een eigen invalshoek, met dezelfde belofte.",
+      },
+      {
+        title: "Testen met klein budget",
+        body: "Eerst leren, dan schalen. We testen doelgroepen en creatives voordat er serieus geld op gaat.",
+      },
+      {
+        title: "Schalen wat werkt",
+        body: "Winnaars krijgen meer budget, verliezers gaan uit. Elke maand zie je wat elke euro heeft opgeleverd.",
+      },
+    ],
+    proofTitle: "Waarom volgorde ook hier telt",
+    proofBody:
+      "Bij SkinComplete gingen de advertenties pas aan toen de site al organisch scoorde en converteerde. Resultaat: lagere kosten per verkoop vanaf dag één, omdat het fundament er al stond. Adverteren op een lekke site is dweilen met de kraan open.",
+    ctaTitle: "Klaar om campagnes te draaien die renderen?",
+    ctaBody:
+      "Doe de Groeiscan of plan een intake. We rekenen eerst uit of ads nu de slimste stap zijn.",
+  },
+  behoud: {
+    slug: "behoud",
+    metaTitle: "Behoud. E-mail, retentie en slimme koppelingen",
+    metaDescription:
+      "E-mailmarketing, retentie, loyaliteit en automatisering: klanten die terugkomen en processen die zichzelf draaien. MeneerMarketing regelt het.",
+    keywords: [
+      "e-mailmarketing bureau",
+      "Klaviyo specialist",
+      "klantretentie verhogen",
       "marketing automation",
+      "processen automatiseren",
+      "e-commerce workflows",
     ],
-    headline: "Automatiseren zonder spaghetti.",
+    headline: "Verdienen aan klanten die je al hebt.",
     subheadline:
-      "Van eerste workflow tot mission-critical ketens: we ontwerpen flows die je team snapt, die fouten loggen en die niet breken bij de eerste API-hick-up.",
+      "Een nieuwe klant werven kost al snel vijf keer meer dan een bestaande behouden. Wij bouwen e-mail, retentie en slimme systemen die daar munt uit slaan.",
     stats: [
-      { label: "Tools", value: "n8n · Make · custom APIs" },
-      { label: "Focus", value: "E-com · CRM · finance" },
-      { label: "Security", value: "Secrets · scopes · fallbacks" },
+      { label: "E-mail", value: "Nieuwsbrief · flows · Klaviyo" },
+      { label: "Retentie", value: "Loyalty · SMS · opvolging" },
+      { label: "Systemen", value: "Koppelingen · chatbots · rust" },
     ],
     introParagraphs: [
-      "Ondernemers verdrinken in copy-paste tussen shop, boekhouding, spreadsheets en mail. Automatisering is geen luxe. Het is schaalbaarheid. Maar alleen als flows onderhoudbaar blijven.",
-      "Wij tekenen eerst je systeemlandschap: triggers, edge cases, owners. Daarna bouwen we met herstartbare flows, alerts en documentatie. Zo blijf je controle houden als je stack groeit.",
+      "De meeste bedrijven pompen al hun budget in nieuwe klanten en vergeten de klanten die al kochten. Zonde, want daar zit de marge: die klant kent je al, vertrouwt je al en hoeft alleen een goede reden te krijgen om terug te komen.",
+      "Behoud gaat verder dan e-mail. Het zijn ook de systemen erachter: orders die automatisch worden opgevolgd, voorraad en facturen die kloppen, en een klantenservice die snel antwoordt. Alles wat ervoor zorgt dat de tweede aankoop makkelijker is dan de eerste.",
     ],
-    angleTitle: "Robuust eerst, fancy later",
+    angleTitle: "Techniek in dienst van de klantrelatie",
     angleBody:
-      "Geen black-box Zapier-ketens zonder uitleg. We kiezen patronen die je team kan aanpassen, met versiebeheer en testdata waar het kan.",
+      "Voor SkinComplete richtten we de volledige e-mailmarketing in: van welkomstflows tot opvolging na aankoop. Geen spam, wel mails die op het juiste moment aankomen. De automatisering erachter regelt het handwerk, zodat het team tijd houdt voor klanten.",
     serviceIntro:
-      "Van standaard shop-koppelingen tot maatwerk-webhooks. Per traject maken we scope en ROI expliciet.",
-    processTitle: "Van chaos naar playbook",
+      "Van e-mailflows tot automatisering en AI-klantenservice: dit zijn de behoudtrajecten.",
+    processTitle: "Zo bouwen we aan behoud",
     processSteps: [
       {
-        title: "Procesinterviews",
-        body: "Wie doet wat vandaag, waar gaat het mis, wat kost tijd? We meten pijn en volume.",
+        title: "Klantreis na de koop",
+        body: "Wat gebeurt er nu na een aankoop of aanvraag? We brengen de gaten in kaart waar klanten stilletjes verdwijnen.",
       },
       {
-        title: "Ontwerp & POC",
-        body: "Een kleine workflow live om risico’s te valideren voordat we de hele keten migreren.",
+        title: "Flows die aankomen",
+        body: "Welkom, opvolging, herinnering, win-back. Elke mail op het moment dat hij logisch is, niet wanneer de kalender het zegt.",
       },
       {
-        title: "Productie & monitoring",
-        body: "Logging, retries, alerts. Plus runbooks voor je team bij incidenten.",
+        title: "Handwerk eruit",
+        body: "Systemen die met elkaar praten: orders, voorraad, facturen en mails in sync zonder gekopieer.",
       },
       {
-        title: "Optimalisatie",
-        body: "We trimmen stappen, voegen AI waar het zinvol is, en koppelen nieuwe kanalen als je groeit.",
+        title: "Meten en verfijnen",
+        body: "Herhaalaankopen, opens en omzet per flow. We zien wat werkt en schroeven daar verder aan.",
       },
     ],
-    proofTitle: "Tijd terug, fouten omlaag",
+    proofTitle: "Stille omzet, elke maand weer",
     proofBody:
-      "De beste automatisering zie je niet. Die voelt als ‘het gewoon werkt’. Wij meten voor/na in uren en incidenten, niet alleen in ‘aantal zaps’.",
-    ctaTitle: "Wat wil je als eerste laten lopen?",
+      "Goede e-mailflows zijn de best renderende vierkante meters van je marketing: je bouwt ze één keer en ze blijven verkopen. Wij meten het effect in omzet per flow, niet in vage open rates.",
+    ctaTitle: "Meer halen uit bestaande klanten?",
     ctaBody:
-      "Neem contact op met je grootste tijdvreter. We schetsen binnen één gesprek een eerste flow.",
-  },
-  vormgeven: {
-    slug: "vormgeven",
-    metaTitle: "Vormgeven. Merk, UI/UX, motion en creatives die converteren",
-    metaDescription:
-      "Branding, conversiegedreven webdesign, micro-interacties en ad-creatives. Visueel strak, psychologisch scherp, technisch uitvoerbaar.",
-    keywords: [
-      "branding bureau",
-      "UI UX design webshop",
-      "webdesign conversie",
-      "motion design website",
-      "advertentie creaties",
-    ],
-    headline: "Vormgeven met pit.",
-    subheadline:
-      "Je merk moet werken in Shopify-thema’s, in ads, in mail. Overal dezelfde taal. Wij ontwerpen systemen, niet losse plaatjes.",
-    stats: [
-      { label: "Merk", value: "Positionering · huisstijl" },
-      { label: "Product", value: "UI · design tokens" },
-      { label: "Campagnes", value: "Ads · motion · e-mail" },
-    ],
-    introParagraphs: [
-      "Mooi is niet genoeg. Je ontwerp moet vertrouwen, hiërarchie en actie dragen. Daarom starten we met flows en psychologie, en pas daarna met esthetiek.",
-      "Motion en micro-interacties zijn de kers. Als ze prestaties niet schaden en reduced-motion respecteren. Wij bouwen motion die conversie ondersteunt, niet afleidt.",
-    ],
-    angleTitle: "Design dat development voedt",
-    angleBody:
-      "Figma die niet te bouwen is, is dure frustratie. We werken met herhaalbare componenten, states en documentatie zodat development snel kan schipperen.",
-    serviceIntro:
-      "Kies branding, product-UI, motion of campagne-creatives. Of een traject waarin alles op elkaar wordt afgestemd.",
-    processTitle: "Van merk tot scherm",
-    processSteps: [
-      {
-        title: "Merk & propositie",
-        body: "Waarom jij, waarom nu? We vertalen dat naar visuele taal en richtlijnen.",
-      },
-      {
-        title: "Structuur & wireframes",
-        body: "Eerst de flow klopt. Daarna maken we het onweerstaanbaar.",
-      },
-      {
-        title: "Visual design & system",
-        body: "Kleuren, type, componenten. Klaar voor site, mail en ads.",
-      },
-      {
-        title: "Implementatie-support",
-        body: "We schouders mee in development en campagnes tot pixels en metrics kloppen.",
-      },
-    ],
-    proofTitle: "Consistentie = vertrouwen",
-    proofBody:
-      "Klanten herkennen je direct als je huisstijl overal hetzelfde voelt. Dat verlaagt twijfel in checkout, in B2B-aanvragen en in retentie-mail.",
-    ctaTitle: "Tijd voor een merk dat schaalbaar is?",
-    ctaBody:
-      "Laten we je huidige touchpoints naast elkaar leggen. En één richting kiezen.",
+      "Plan een intake. We kijken eerst wat er al ligt en waar de snelste winst zit.",
   },
 };
 

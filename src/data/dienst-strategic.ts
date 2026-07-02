@@ -19,17 +19,33 @@ export interface DienstStrategicContent {
 }
 
 const PILLAR_LENS: Record<string, string> = {
+  Strategie:
+    "Binnen Strategie start ik bij jouw cijfers, niet bij een standaardaanpak. Waar komt je omzet vandaan, waar lekt hij weg, en welke kanalen passen bij jouw marge en klant? Pas als dat helder is, gaan we bouwen en budget uitgeven. Zo weet je zeker dat elke volgende stap de slimste is.",
   Bouwen:
     "Binnen Bouwen kijk ik niet alleen naar ‘een site’ of ‘een shop’, maar naar hoe jouw bedrijf over vijf jaar nog steeds snel kan groeien. Dat bepaalt welk platform we kiezen, hoe we koppelingen ontwerpen en waar we problemen voorkomen. Zo sluit alles aan op hoe jij echt werkt, niet op een standaard template.",
-  Groeien:
-    "Binnen Groeien vertaal ik groei naar kanalen én naar wat je site aankan. Soms is de grootste winst een scherpere landingspagina; andere keren een betere Google-vindbaarheid, e-mailflows of advertenties die eindelijk hetzelfde beloven als je product. Ik kies wat past bij jouw marge, verkoopcycli en team.",
-  Automatiseren:
-    "Binnen Automatiseren zoek ik eerst naar rust in je operatie: welke handmatige stappen kosten tijd, fouten en frustratie? Pas daarna kiezen we tooling (n8n, Make, custom). Het doel is altijd eigenaarschap bij jouw team: flows die je begrijpt en die niet instorten bij de eerste API-storing.",
-  Vormgeven:
-    "Binnen Vormgeven is het doel niet ‘mooi voor mooi’, maar herkenning en conversie. Ik vertaal je propositie naar kleur, type, beeld en motion. Consistent over site, mail en ads. Zo voelt elk touchpoint alsof het uit één merk komt, wat vertrouwen en conversie direct voedt.",
+  Vindbaarheid:
+    "Binnen Vindbaarheid denk ik verder dan Google alleen: je klant zoekt ook via ChatGPT, Maps en reviews. Ik bouw de keten als geheel: content die antwoord geeft, techniek die klopt en autoriteit die groeit. Organisch eerst, want elke positie die je organisch wint, maakt je advertenties daarna goedkoper.",
+  Acquisitie:
+    "Binnen Acquisitie gaat geen euro budget aan voordat de meting klopt en de landingspagina zijn werk doet. Daarna kiezen we de kanalen die bij jouw marge passen: Google, Meta, creators of marketplaces. We testen klein, schalen wat werkt en snijden wat ruis geeft. Zonder sentiment.",
+  Behoud:
+    "Binnen Behoud zoek ik de omzet die je al betaald hebt: klanten die eerder kochten en alleen een goede reden nodig hebben om terug te komen. E-mail, retentie en de systemen erachter werken samen, zodat de tweede aankoop makkelijker wordt dan de eerste. En jouw team minder handwerk heeft.",
 };
 
 const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
+  Strategie: [
+    {
+      title: "Alles tegelijk, niks af",
+      body: "Je doet van alles een beetje: wat ads, wat social, soms een mail. Dan bepalen we eerst welke twee kanalen echt renderen en maken die af.",
+    },
+    {
+      title: "Groei stagneert",
+      body: "Wat eerst werkte, werkt niet meer. Dan kijken we naar de cijfers: zit het probleem in verkeer, conversie of herhaalaankopen?",
+    },
+    {
+      title: "Nieuwe markt of product",
+      body: "Je wilt iets nieuws lanceren. Dan ontwerp ik een compacte test met duidelijke criteria: wanneer stoppen, wanneer opschalen.",
+    },
+  ],
   Bouwen: [
     {
       title: "Schaal-up e-commerce",
@@ -44,50 +60,46 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
       body: "Je klanten of medewerkers loggen in voor data, orders of documenten. Dan is UX, security en onderhoudbaarheid leidend.",
     },
   ],
-  Groeien: [
+  Vindbaarheid: [
     {
-      title: "Nieuwe markt testen",
-      body: "Je wilt een nieuw segment of land proberen. Dan ontwerp ik een compacte test met duidelijke criteria: wanneer stoppen, wanneer opschalen.",
+      title: "Onzichtbaar in je markt",
+      body: "Concurrenten staan overal bovenaan, jij niet. Dan bouwen we structuur en content op waar jouw klant echt op zoekt.",
     },
     {
-      title: "SEO herstel of groei",
-      body: "Je site heeft historie of technische problemen. Dan combineren we technische fixes met content die écht nieuw en nuttig is.",
+      title: "AI-zoek voor zijn",
+      body: "Klanten vragen ChatGPT om advies in jouw branche. Dan zorgen we dat jouw bedrijf het antwoord is, vóór je concurrent het doorheeft.",
     },
     {
-      title: "Ads + conversie samen",
+      title: "Lokaal winnen",
+      body: "Je klanten komen uit de regio maar vinden je niet. Dan pakken we Google Business, Maps en lokale pagina's als eerste.",
+    },
+  ],
+  Acquisitie: [
+    {
+      title: "Ads renderen niet",
       body: "Je advertenties wisselen in resultaat. Dan ligt de oplossing vaak half in de advertentie, half in de landingspagina. Ik behandel beide als één geheel.",
     },
     {
-      title: "E-mailmarketing opzetten",
-      body: "Je verliest klanten na aankoop of stuurt geen nieuwsbrieven. Dan bouwen we flows en campagnes die op het juiste moment aankomen.",
+      title: "Creatives verslijten",
+      body: "Je campagnes draaien, maar de content raakt op. Dan zetten we UGC en creators in voor een stroom verse varianten.",
+    },
+    {
+      title: "Nieuw kanaal erbij",
+      body: "Je wilt van één kanaal naar meer: Meta erbij, of Bol en Amazon. Dan testen we klein en schalen op basis van cijfers.",
     },
   ],
-  Automatiseren: [
+  Behoud: [
+    {
+      title: "Eenmalige kopers",
+      body: "Klanten kopen één keer en verdwijnen. Dan bouwen we flows en acties die de tweede aankoop vanzelfsprekend maken.",
+    },
     {
       title: "Orderstress",
       body: "Orders hopen op en spreadsheets raken vol. Dan automatiseren we eerst de pijnlijkste stap. Met zichtbare tijdwinst binnen weken.",
     },
     {
-      title: "Dubbele invoer",
-      body: "Zelfde klantgegevens in drie systemen. Dan ontwerp ik één bron van waarheid met duidelijke sync-regels.",
-    },
-    {
       title: "Support & FAQ",
       body: "Team herhaalt dezelfde antwoorden. Dan combineren we kennisbank, bot en escalatie zodat mensen alleen waardevolle cases zien.",
-    },
-  ],
-  Vormgeven: [
-    {
-      title: "Rebranding of vernieuwing",
-      body: "Je propositie is verschoven. Dan herschrijf ik visuele taal en componenten zodat site en campagnes weer één verhaal vertellen.",
-    },
-    {
-      title: "Conversie op mobiel",
-      body: "Desktop ziet er goed uit, mobiel niet. Dan herschik ik hiërarchie en microcopy. Zonder je merk te verliezen.",
-    },
-    {
-      title: "Campagne-eenheid",
-      body: "Ads voelen los van de site. Dan lever ik creatives en landingspatronen die dezelfde hook en belofte dragen.",
     },
   ],
 };
@@ -312,6 +324,162 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
       "Welke e-mailtool gebruik je (Klaviyo, Shopify, Mailchimp)?",
       "Hoe segmenteer je klanten, en welke data heb je betrouwbaar?",
       "Welke toon past bij je merk: zakelijk, persoonlijk, luxe?",
+    ],
+  },
+  strategie: {
+    deepTitle: "Strategie: het plan dat bepaalt of de rest werkt",
+    deepLead:
+      "Voor BestRest bedachten we een eigen aanpak per product in plaats van één generieke funnel. Dat is de kern: jouw markt, marge en klant bepalen de route. Niet het trucje dat bij een ander werkte.",
+    deepExtended:
+      "Het plan is pas af als het uitvoerbaar is: wie doet wat, wat kost het en wanneer zie je resultaat. Omdat ik zelf bouw en uitvoer, weet ik wat realistisch is. Geen plan van twintig kanalen waarvan er achttien blijven liggen.",
+    signals: [
+      "Waar komt je omzet nu vandaan. En weet je dat zeker uit data?",
+      "Wat mag een nieuwe klant je kosten, gezien je marge?",
+      "Welke kanalen heb je al geprobeerd. En waarom stopten ze?",
+      "Hoeveel tijd en budget kun je maandelijks vrijmaken?",
+    ],
+  },
+  "ai-zoek": {
+    deepTitle: "AI-zoek: het kanaal waar je concurrent nog niet is",
+    deepLead:
+      "ChatGPT, Perplexity en Google AI Overviews beantwoorden steeds vaker de vraag ‘welk bedrijf moet ik kiezen’. Wie daar als antwoord uitkomt, wint de klant voordat er ooit gezocht is in de klassieke resultaten.",
+    deepExtended:
+      "AI-modellen citeren bronnen die duidelijk, feitelijk en gestructureerd zijn. Ik richt je content, schema-markup en bedrijfsinformatie daarop in en meet waar je genoemd wordt. De basis overlapt met SEO, dus elke stap versterkt ook je gewone Google-posities.",
+    signals: [
+      "Wat antwoordt ChatGPT nu als iemand naar jouw soort bedrijf vraagt?",
+      "Heeft je site duidelijke, citeerbare antwoorden op klantvragen?",
+      "Klopt je bedrijfsinformatie overal (site, Google, registers)?",
+      "Hoe sterk is je klassieke SEO-basis als fundament?",
+    ],
+  },
+  "local-seo": {
+    deepTitle: "Lokale SEO: de klant om de hoek wint van de hele wereld",
+    deepLead:
+      "Wie lokaal zoekt, wil snel kiezen: de kaart, drie bedrijven, sterren erbij. Klaar. Jouw plek in dat lijstje bepaalt of de telefoon gaat. Ik richt profiel, pagina's en reviews in op precies dat moment.",
+    deepExtended:
+      "Lokale vindbaarheid is een samenspel: een compleet Google Business-profiel, pagina's per dienst en regio, verse reviews en consistente gegevens overal. Elk onderdeel apart is klein werk; samen bepalen ze wie er wint.",
+    signals: [
+      "In welke regio's zitten je klanten echt?",
+      "Hoe compleet en actueel is je Google Business-profiel?",
+      "Hoeveel reviews krijg je per maand. En vraag je er actief om?",
+      "Kloppen je naam, adres en telefoonnummer overal exact?",
+    ],
+  },
+  "content-marketing": {
+    deepTitle: "Content: autoriteit die verkeer én vertrouwen oplevert",
+    deepLead:
+      "Content zonder zoekintentie is bezigheidstherapie. Ik start bij wat jouw klant echt vraagt, in Google én aan AI, en bouw daar clusters omheen die autoriteit opbouwen per onderwerp.",
+    deepExtended:
+      "Elke pagina heeft een taak: verkeer binnenhalen, twijfel wegnemen of doorverwijzen naar je aanbod. Zo wordt content geen kostenpost maar een verkoopkanaal dat elke maand een beetje sterker wordt.",
+    signals: [
+      "Welke vragen stellen klanten vóór ze bij je kopen?",
+      "Welke content heb je al. En wat doet die nu echt?",
+      "Wie levert de vakkennis: jij, je team of wij samen?",
+      "Waar moet content naartoe leiden: aanvraag, verkoop, vertrouwen?",
+    ],
+  },
+  reviews: {
+    deepTitle: "Reviews: het verkoopteam dat je niet hoeft te betalen",
+    deepLead:
+      "Vrijwel iedereen leest reviews vóór een aankoop, maar bijna geen bedrijf vraagt er structureel om. Dat gat is jouw kans: een vast systeem dat tevreden klanten op het juiste moment om een beoordeling vraagt.",
+    deepExtended:
+      "Meer reviews betekent hogere posities in Maps, sterren in Google en minder twijfel op je site. Kritische reviews horen erbij: netjes afgehandeld wekken ze vaak meer vertrouwen dan tien juichende.",
+    signals: [
+      "Op welke platforms kijkt jouw klant vóór de aankoop?",
+      "Hoeveel reviews krijg je nu per maand, en hoe?",
+      "Wat is je gemiddelde score. En die van je grootste concurrent?",
+      "Wie reageert er nu op reviews, en hoe snel?",
+    ],
+  },
+  "google-ads": {
+    deepTitle: "Google Ads: betalen voor klanten, niet voor klikken",
+    deepLead:
+      "Het moment dat iemand zoekt naar wat jij verkoopt is het beste marketingmoment dat bestaat. Maar Google verdient aan je klikken, niet aan je omzet. Ik bouw campagnes die dat verschil bewaken.",
+    deepExtended:
+      "Dat betekent: een structuur die je snapt, zoektermen uitsluiten die nooit converteren en meting die klopt tot aan de verkoop. Pas als de cijfers kloppen, gaan we schalen. Niet andersom.",
+    signals: [
+      "Wat mag een klant je kosten, gezien je marge?",
+      "Welke zoektermen leveren nu omzet. En welke alleen kosten?",
+      "Hoe campaign-ready zijn je landingspagina's?",
+      "Klopt je conversiemeting tot en met de verkoop?",
+    ],
+  },
+  "meta-ads": {
+    deepTitle: "Meta Ads: verkopen aan mensen die nog niet zochten",
+    deepLead:
+      "Op Facebook en Instagram onderbreek je iemand die iets anders aan het doen was. Dat lukt alleen met content die niet als advertentie voelt en een aanbod dat direct duidelijk is.",
+    deepExtended:
+      "Daarom draait Meta bij mij om creatives: varianten testen, winnaars schalen, verliezers eruit. De doelgroep-machine van Meta doet de rest, mits je meting klopt en je funnel logisch doorloopt van eerste kennismaking tot aankoop.",
+    signals: [
+      "Welke content heb je al die bewezen aandacht pakt?",
+      "Hoe snel kun je nieuwe creatives leveren of laten maken?",
+      "Wat is je marge per verkoop. En je herhaalaankoop-potentieel?",
+      "Hoe warm is je publiek al (volgers, mail-lijst, eerdere kopers)?",
+    ],
+  },
+  "social-media": {
+    deepTitle: "Social: het uithangbord waar klanten je checken",
+    deepLead:
+      "Voordat iemand koopt, kijkt hij vaak even op je Instagram of LinkedIn: leeft dit bedrijf, is het echt? Een verzorgd kanaal met ritme doet daar meer dan virale uitschieters.",
+    deepExtended:
+      "Ik kies formats die jouw team kan volhouden en die aansluiten op je site en campagnes. Eén verhaal overal, dat is het doel. Twee kanalen goed verslaan vijf kanalen halfslachtig.",
+    signals: [
+      "Waar zit jouw klant echt: Instagram, TikTok, LinkedIn?",
+      "Wie maakt content, en hoeveel tijd is er per week?",
+      "Wat moet social opleveren: vertrouwen, bereik of direct verkeer?",
+      "Welke content werkte eerder al goed?",
+    ],
+  },
+  ugc: {
+    deepTitle: "UGC: echte mensen verkopen beter dan studio's",
+    deepLead:
+      "Advertenties die eruitzien als content van een echte gebruiker presteren in veel markten beter dan gelikte producties. Niet omdat ze mooier zijn, maar omdat ze geloofwaardiger zijn.",
+    deepExtended:
+      "Ik regel de hele keten: creators selecteren, brieven, scripts, rechten en de varianten die je nodig hebt om te testen. Jij krijgt een stroom verse content voor je campagnes, zonder zelf te hoeven regisseren.",
+    signals: [
+      "Welk product of aanbod leent zich het best voor video?",
+      "Welke bezwaren van klanten moet de content wegnemen?",
+      "Hoeveel varianten heb je nodig per maand voor je campagnes?",
+      "Zijn er klanten die nu al enthousiast content over je maken?",
+    ],
+  },
+  "influencer-marketing": {
+    deepTitle: "Influencers: bereik kopen dat ook echt bestaat",
+    deepLead:
+      "Influencer marketing heeft een slechte naam door gekochte volgers en vage deals. Zonde, want een goede match levert bereik, vertrouwen en content in één keer op.",
+    deepExtended:
+      "Ik selecteer op echt engagement, maak afspraken zwart op wit en meet elke samenwerking met eigen codes of links. Zo weet je per creator wat het heeft opgeleverd. En bouw je verder met wie levert.",
+    signals: [
+      "Welke creators volgen jouw klanten echt?",
+      "Past je marge bij vergoedingen in jouw branche?",
+      "Wil je bereik, content, of allebei uit de samenwerking?",
+      "Zijn er eerdere samenwerkingen geweest. En wat leverden die op?",
+    ],
+  },
+  marketplaces: {
+    deepTitle: "Bol & Amazon: het schap waar je klant al staat",
+    deepLead:
+      "Voor veel producten begint de zoektocht niet in Google maar direct op Bol of Amazon. Wie daar niet goed vindbaar is, laat omzet liggen bij klanten die al willen kopen.",
+    deepExtended:
+      "Ik optimaliseer listings op zoekgedrag binnen de marketplace, bouw reviews op en zet advertenties in waar de marge het toelaat. Altijd afgestemd op je eigen shop, zodat kanalen elkaar versterken in plaats van kannibaliseren.",
+    signals: [
+      "Welke producten passen qua marge bij marketplace-kosten?",
+      "Hoe zien je huidige listings en reviews eruit?",
+      "Wie doet fulfilment: zelf, via Bol of via Amazon?",
+      "Hoe voorkom je prijsconflicten met je eigen webshop?",
+    ],
+  },
+  retentie: {
+    deepTitle: "Retentie: de goedkoopste omzet die er bestaat",
+    deepLead:
+      "Een bestaande klant heeft geen advertentie meer nodig: hij kent je al en vertrouwt je al. Toch krijgt hij bij de meeste bedrijven na de aankoop nooit meer een goede reden om terug te komen.",
+    deepExtended:
+      "Ik bouw dat wel: opvolging na aankoop, loyaliteitsacties, win-back campagnes en SMS waar het past. Gemeten op herhaalaankopen en klantwaarde. Elke procent retentie erbij maakt je acquisitie ruimer.",
+    signals: [
+      "Hoeveel klanten kopen nu een tweede keer?",
+      "Wat is de logische termijn voor een herhaalaankoop bij jouw product?",
+      "Welke data heb je over klanten (aankopen, voorkeuren, e-mail)?",
+      "Welke tools gebruik je nu voor mail en SMS?",
     ],
   },
 };

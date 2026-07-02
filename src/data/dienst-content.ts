@@ -172,6 +172,114 @@ const CONTENT = {
       "Templates die er professioneel uitzien op telefoon én desktop",
     ],
   ),
+  strategie: body(
+    "De meeste marketing mislukt niet door slechte uitvoering maar door een ontbrekend plan. Ik maak één groeiplan voor jouw bedrijf: welke kanalen, welk budget, in welke volgorde. En omdat ik het zelf uitvoer, blijft het geen papier.",
+    [
+      "Analyse van je cijfers: waar komt omzet vandaan, waar lekt het weg",
+      "Keuze voor de kanalen waar jouw groei het snelst zit, met onderbouwing",
+      "Concreet plan met volgorde, budget en verwachting per stap",
+      "Maandelijkse bijsturing: wat werkt krijgt meer, wat niet werkt gaat eruit",
+    ],
+  ),
+  "ai-zoek": body(
+    "Steeds meer klanten vragen niet aan Google maar aan ChatGPT of Perplexity welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, besta je voor die klant niet. Ik zorg dat AI-zoekmachines jouw bedrijf kennen, begrijpen en aanraden.",
+    [
+      "Content en structuur die AI-modellen kunnen lezen en citeren",
+      "Schema-markup en technische signalen die je autoriteit onderbouwen",
+      "Meting: waar word je nu genoemd in ChatGPT, Perplexity en AI Overviews",
+      "Combinatie met klassieke SEO, want beide voeden elkaar",
+    ],
+  ),
+  "local-seo": body(
+    "Als iemand in jouw regio zoekt naar wat jij doet, wil je bovenaan staan. In Google, in Maps en in de lokale resultaten. Ik richt je Google Business-profiel, lokale pagina's en reviews zo in dat je die klant wint.",
+    [
+      "Google Business-profiel volledig en scherp ingericht",
+      "Lokale landingspagina's die scoren op 'dienst + plaats'",
+      "Reviewstrategie: meer en betere beoordelingen op de juiste plekken",
+      "Consistente bedrijfsgegevens overal waar je vindbaar bent",
+    ],
+  ),
+  "content-marketing": body(
+    "Goede content is de motor achter vindbaarheid, autoriteit en vertrouwen. Ik schrijf en structureer content die de vragen van jouw klant echt beantwoordt. Geen opgeblazen blogkalender, wel pagina's die verkeer én klanten opleveren.",
+    [
+      "Contentplan op basis van wat jouw klant echt zoekt en vraagt",
+      "Artikelen en pagina's die scoren in Google én in AI-zoek",
+      "Interne linkstructuur die autoriteit opbouwt per onderwerp",
+      "Meting per pagina: verkeer, posities en wat het oplevert",
+    ],
+  ),
+  reviews: body(
+    "Negen van de tien klanten lezen reviews voordat ze kopen. Toch laten de meeste bedrijven dit kanaal op zijn beloop. Ik bouw een systeem dat tevreden klanten op het juiste moment om een beoordeling vraagt. Op de plekken waar je doelgroep kijkt.",
+    [
+      "Automatische reviewverzoeken na aankoop of afronding",
+      "Focus op de platforms die tellen: Google, Trustpilot of branche-specifiek",
+      "Reviews zichtbaar op je site, mét schema-markup voor sterren in Google",
+      "Nette afhandeling van kritische reviews, want die horen erbij",
+    ],
+  ),
+  "google-ads": body(
+    "Google Ads werkt op het beste moment dat er is: wanneer iemand actief zoekt naar wat jij verkoopt. Ik zet campagnes op met een structuur die je snapt, meting die klopt en budget dat naar klanten gaat in plaats van naar loze klikken.",
+    [
+      "Zoekwoorden en campagnestructuur passend bij jouw marge en aanbod",
+      "Shopping en Performance Max waar dat zinvol is, niet standaard",
+      "Uitsluiten wat niet converteert, zodat budget niet weglekt",
+      "Maandelijkse rapportage in gewone taal: wat kostte het, wat leverde het op",
+    ],
+  ),
+  "meta-ads": body(
+    "Meta Ads (Facebook en Instagram) zijn de plek waar je klanten bereikt die nog niet naar je zoeken. Dat vraagt om sterke creatives en scherpe doelgroepen. Ik zet campagnes op die verkopen, met content die niet als advertentie voelt.",
+    [
+      "Campagnestructuur van koud publiek tot terugkerende kopers",
+      "Creatives en hooks die stoppen met scrollen, getest in varianten",
+      "Doelgroepen en retargeting afgestemd op jouw funnel",
+      "Meting die klopt, ook na alle privacy-veranderingen",
+    ],
+  ),
+  "social-media": body(
+    "Organische social media is het uithangbord van je merk: de plek waar klanten checken of je echt bent. Ik help met een ritme en format dat vol te houden is en dat past bij jouw bedrijf. Geen dagelijkse dansjes, wel consistente zichtbaarheid.",
+    [
+      "Kanaalkeuze: waar zit jouw klant echt (Instagram, TikTok, LinkedIn)",
+      "Formats en ritme die je team kan volhouden",
+      "Content die aansluit op je campagnes en site, één verhaal overal",
+      "Meting op wat telt: bereik dat leidt tot bezoek en aanvragen",
+    ],
+  ),
+  ugc: body(
+    "Content van echte mensen verkoopt beter dan gelikte studioproducties. Zeker in advertenties. Ik regel UGC (user generated content): video's door creators die jouw product laten zien zoals klanten het gebruiken.",
+    [
+      "Briefings en scripts zodat creators jouw verhaal goed vertellen",
+      "Selectie van creators die passen bij je product en doelgroep",
+      "Varianten en hooks om te testen in Meta- en Google-campagnes",
+      "Rechten en hergebruik netjes geregeld, zodat je content overal mag inzetten",
+    ],
+  ),
+  "influencer-marketing": body(
+    "Influencer marketing werkt als de match klopt: het juiste account, de juiste afspraken en een meetbare uitkomst. Ik vind creators die passen bij je merk en marge, en regel de samenwerking van eerste bericht tot rapportage.",
+    [
+      "Selectie op echt bereik en engagement, niet op gekochte volgers",
+      "Heldere afspraken: content, timing, rechten en vergoeding",
+      "Kortingscodes en tracking zodat je ziet wat elke samenwerking oplevert",
+      "Langdurige samenwerkingen waar dat loont, losse posts waar dat past",
+    ],
+  ),
+  marketplaces: body(
+    "Bol en Amazon zijn voor veel producten het eerste zoekkanaal, nog vóór Google. Ik zorg dat je producten daar gevonden en gekozen worden: listings die scoren, reviews die overtuigen en advertenties die renderen.",
+    [
+      "Listings geoptimaliseerd op zoekgedrag binnen Bol en Amazon",
+      "Reviewopbouw en Buy Box-strategie",
+      "Advertenties binnen de marketplace, gestuurd op marge",
+      "Afstemming met je eigen webshop, zodat kanalen elkaar niet kannibaliseren",
+    ],
+  ),
+  retentie: body(
+    "Een nieuwe klant werven kost al snel vijf keer meer dan een bestaande behouden. Ik bouw retentie op: loyaliteitsacties, SMS en opvolging die van eenmalige kopers vaste klanten maken.",
+    [
+      "Klantreis na de eerste aankoop in kaart: waar verdwijnen klanten stilletjes",
+      "Loyaliteitsprogramma's en win-back campagnes die passen bij je marge",
+      "SMS en e-mail gecombineerd op de momenten dat het logisch is",
+      "Meting op herhaalaankopen en klantwaarde, niet op losse opens",
+    ],
+  ),
 } as const satisfies Record<string, DienstBody>;
 
 export function getDienstContent(slug: string): DienstBody {

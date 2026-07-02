@@ -9,14 +9,14 @@ import { ctaNav, megaMenuColumns } from "@/lib/navigation";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Diensten. Bouwen, groeien, automatiseren & vormgeven",
+  title: "Diensten. Strategie, bouwen, vindbaarheid, acquisitie & behoud",
   description:
-    "Het volledige aanbod van MeneerMarketing: web & e-commerce, marketing & acquisitie, automatisering en design. Als één groeisysteem.",
+    "Het volledige aanbod van MeneerMarketing: strategie, websites & webshops, SEO & AI-zoek, ads & creators en e-mail & retentie. Als één groeisysteem.",
   alternates: { canonical: absoluteUrl("/diensten") },
   openGraph: {
     title: "MeneerMarketing Diensten",
     description:
-      "Vier pijlers, tientallen concrete trajecten. Van Shopify tot n8n en branding.",
+      "Vijf blokken, tientallen concrete trajecten. Van Shopify tot Google Ads, AI-zoek en e-mailflows.",
     url: absoluteUrl("/diensten"),
     locale: "nl_NL",
     type: "website",
@@ -40,7 +40,7 @@ export default function DienstenIndexPage() {
               <span className="text-mm-sky-deep">bouwen en groeien</span>
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-mm-muted">
-              Vier pijlers met eigen verhaal. En hieronder elke dienst direct
+              Vijf blokken met eigen verhaal. En hieronder elke dienst direct
               bereikbaar. Zo blijft overzicht en detail hand in hand.
             </p>
             <Link
@@ -57,14 +57,14 @@ export default function DienstenIndexPage() {
           <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
             <Reveal>
               <h2 className="text-xl font-extrabold text-mm-text sm:text-2xl">
-                Kies je pijler. Lees het volledige verhaal
+                Kies je blok. Lees het volledige verhaal
               </h2>
               <p className="mt-2 max-w-2xl text-sm text-mm-muted">
-                Elke pijler heeft een eigen pagina met proces, bewijs en alle
+                Elk blok heeft een eigen pagina met proces, bewijs en alle
                 gekoppelde diensten.
               </p>
             </Reveal>
-            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {megaMenuColumns.map((col, i) => (
                 <Reveal key={col.pillarSlug} delay={0.05 * i}>
                   <li>
@@ -82,7 +82,7 @@ export default function DienstenIndexPage() {
                         {col.featured.description}
                       </span>
                       <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-mm-accent">
-                        Pijler openen
+                        Blok openen
                         <ArrowUpRight className="size-4" aria-hidden />
                       </span>
                     </Link>

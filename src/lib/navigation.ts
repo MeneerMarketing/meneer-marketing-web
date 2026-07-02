@@ -17,15 +17,20 @@ export interface MegaMenuFeatured {
   href: string;
 }
 
-export type PillarSlug = "bouwen" | "groeien" | "automatiseren" | "vormgeven";
+export type PillarSlug =
+  | "strategie"
+  | "bouwen"
+  | "vindbaarheid"
+  | "acquisitie"
+  | "behoud";
 
 export interface MegaMenuColumn {
-  /** Landingspagina voor de hele pijler */
+  /** Landingspagina voor het hele blok */
   pillarSlug: PillarSlug;
   category: string;
   subtitle: string;
   /**
-   * CTA-tekst naar de pijler-LP, zonder de categorienaam te herhalen
+   * CTA-tekst naar de blok-LP, zonder de categorienaam te herhalen
    * (die staat al in de topnav).
    */
   pillarOverviewCta: string;
@@ -35,73 +40,18 @@ export interface MegaMenuColumn {
 
 export const megaMenuColumns: MegaMenuColumn[] = [
   {
-    pillarSlug: "bouwen",
-    category: "Bouwen",
-    subtitle: "Web- & e-commerce",
-    pillarOverviewCta: "Alle trajecten web & shops",
+    pillarSlug: "strategie",
+    category: "Strategie",
+    subtitle: "Groeiplan & regie",
+    pillarOverviewCta: "Alle trajecten strategie & groei",
     items: [
       {
-        name: "Shopify Enterprise Development",
-        description: "Schaalbare ecosystemen voor hoge volumes",
-        menuLabel: "Shopify enterprise & schaal",
+        name: "Marketingstrategie & groeiplan",
+        description: "Eén plan: welke kanalen, welk budget en wat eerst",
+        menuLabel: "Groeiplan op maat",
         menuDescription:
-          "Robuust Shopify platform: veilig, schaalbaar en klaar voor volume vandaag.",
-        href: "/diensten/shopify-enterprise",
-      },
-      {
-        name: "Maatwerk websites",
-        description: "From scratch, geen templates, volledig op maat",
-        menuLabel: "Websites from scratch",
-        menuDescription:
-          "Websites die we zelf bouwen: snel, veilig en precies passend bij jouw bedrijf.",
-        href: "/diensten/webdevelopment",
-      },
-      {
-        name: "Custom Web-Applicaties",
-        description: "Portalen en SaaS-interfaces",
-        menuLabel: "Webapps & maatwerk-portalen",
-        menuDescription:
-          "Webapps en portalen: UX strak, koppelingen strak en onderhoudbaar gebouwd.",
-        href: "/diensten/web-apps",
-      },
-      {
-        name: "Snelheid & vindbaarheid",
-        description: "Snellere site, betere scores in Google",
-        menuLabel: "Snelheid & technische SEO",
-        menuDescription:
-          "Je site sneller maken en technisch klaarzetten voor Google, meetbaar en duurzaam.",
-        href: "/diensten/optimalisatie",
-      },
-    ],
-    featured: {
-      title: "Het fundament voor groei",
-      description:
-        "Geen standaardtemplates: platformen die snel, veilig en klaar zijn om te schalen.",
-      href: "/cases",
-    },
-  },
-  {
-    pillarSlug: "groeien",
-    category: "Groeien",
-    subtitle: "Marketing & acquisitie",
-    pillarOverviewCta: "Alle trajecten groei & acquisitie",
-    items: [
-      {
-        name: "Gevonden worden in Google (SEO)",
-        description:
-          "Betere vindbaarheid via goede content, structuur en techniek",
-        menuLabel: "SEO & vindbaarheid",
-        menuDescription:
-          "SEO (zoekmachine-optimalisatie): hoger in Google door inhoud en techniek die kloppen.",
-        href: "/diensten/seo",
-      },
-      {
-        name: "Datagedreven adverteren",
-        description: "Google Ads &amp; Meta. Meten, bijsturen, schalen.",
-        menuLabel: "Google Ads & Meta advertising",
-        menuDescription:
-          "Google & Meta ads: meten, bijsturen en schalen op heldere KPI's en ROAS nu.",
-        href: "/diensten/adverteren",
+          "Eén helder plan voor jouw bedrijf: kanalen, budget en volgorde. Meetbaar en concreet.",
+        href: "/diensten/strategie",
       },
       {
         name: "Meer omzet uit je website (CRO)",
@@ -120,6 +70,231 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         href: "/diensten/leadgeneratie",
       },
       {
+        name: "Data tracking & analytics",
+        description: "GTM, Clarity, heldere dashboards",
+        menuLabel: "Meten & dashboards",
+        menuDescription:
+          "Tracking & analytics: events, dashboards en inzicht in wat campagnes echt opleveren.",
+        href: "/diensten/tracking",
+      },
+    ],
+    featured: {
+      title: "Eerst het plan, dan de euro's",
+      description:
+        "Bij BestRest begon alles met een eigen strategie per product. Geen standaard funnel, wel resultaat.",
+      href: "/cases",
+    },
+  },
+  {
+    pillarSlug: "bouwen",
+    category: "Bouwen",
+    subtitle: "Websites, shops & apps",
+    pillarOverviewCta: "Alle trajecten web & shops",
+    items: [
+      {
+        name: "Websites from scratch",
+        description: "Geen templates, volledig custom build",
+        menuLabel: "Websites from scratch",
+        menuDescription:
+          "Websites die we zelf bouwen: snel, veilig en precies passend bij jouw bedrijf.",
+        href: "/diensten/webdevelopment",
+      },
+      {
+        name: "Shopify Enterprise Development",
+        description: "Schaalbare ecosystemen voor hoge volumes",
+        menuLabel: "Shopify enterprise & schaal",
+        menuDescription:
+          "Robuust Shopify platform: veilig, schaalbaar en klaar voor volume vandaag.",
+        href: "/diensten/shopify-enterprise",
+      },
+      {
+        name: "Custom Web-Applicaties",
+        description: "Portalen en SaaS-interfaces",
+        menuLabel: "Webapps & portalen",
+        menuDescription:
+          "Webapps en portalen: UX strak, koppelingen strak en onderhoudbaar gebouwd.",
+        href: "/diensten/web-apps",
+      },
+      {
+        name: "Snelheid & vindbaarheid",
+        description: "Snellere site, betere scores in Google",
+        menuLabel: "Snelheid & technische SEO",
+        menuDescription:
+          "Je site sneller maken en technisch klaarzetten voor Google, meetbaar en duurzaam.",
+        href: "/diensten/optimalisatie",
+      },
+      {
+        name: "Conversiegedreven UI/UX",
+        description: "Ontwerp dat verkopen en vertrouwen combineert",
+        menuLabel: "UI/UX design",
+        menuDescription:
+          "UI/UX: schermen en flows die verkopen én merk strak en consistent houden.",
+        href: "/diensten/webdesign",
+      },
+      {
+        name: "Merkidentiteit & visuele positionering",
+        description: "Huisstijl die vertrouwen en onderscheid geeft",
+        menuLabel: "Merkidentiteit & huisstijl",
+        menuDescription:
+          "Merk & huisstijl: kleur, typo en beeld dat herkenning en vertrouwen draagt.",
+        href: "/diensten/branding",
+      },
+      {
+        name: "Motion & micro-interacties",
+        description: "Die ene laag die je site onvergetelijk maakt",
+        menuLabel: "Motion & micro-interacties",
+        menuDescription:
+          "Motion: micro-interacties premium. Levend zonder ruis en zonder gimmicks.",
+        href: "/diensten/animaties",
+      },
+    ],
+    featured: {
+      title: "Het fundament voor groei",
+      description:
+        "Geen standaardtemplates: platformen die snel, veilig en klaar zijn om te schalen.",
+      href: "/cases",
+    },
+  },
+  {
+    pillarSlug: "vindbaarheid",
+    category: "Vindbaarheid",
+    subtitle: "SEO, AI-zoek & content",
+    pillarOverviewCta: "Alle trajecten vindbaarheid & content",
+    items: [
+      {
+        name: "Gevonden worden in Google (SEO)",
+        description:
+          "Betere vindbaarheid via goede content, structuur en techniek",
+        menuLabel: "SEO & vindbaarheid",
+        menuDescription:
+          "SEO (zoekmachine-optimalisatie): hoger in Google door inhoud en techniek die kloppen.",
+        href: "/diensten/seo",
+      },
+      {
+        name: "Vindbaar in AI-zoekmachines",
+        description: "Genoemd worden in ChatGPT, Perplexity en Google AI",
+        menuLabel: "AI-zoek & vindbaarheid",
+        menuDescription:
+          "Steeds meer klanten vragen het aan AI. Wij zorgen dat jouw bedrijf het antwoord is.",
+        href: "/diensten/ai-zoek",
+      },
+      {
+        name: "Lokale vindbaarheid",
+        description: "Google Business, Maps en klanten uit je regio",
+        menuLabel: "Lokale SEO & Google Maps",
+        menuDescription:
+          "Bovenaan als iemand in jouw regio zoekt: Google Business, Maps en lokale pagina's.",
+        href: "/diensten/local-seo",
+      },
+      {
+        name: "Contentmarketing",
+        description: "Content die autoriteit opbouwt en verkoopt",
+        menuLabel: "Content & autoriteit",
+        menuDescription:
+          "Artikelen en pagina's die vragen van klanten beantwoorden en je expert-status laden.",
+        href: "/diensten/content-marketing",
+      },
+      {
+        name: "Reviews & reputatie",
+        description: "Social proof die twijfel wegneemt",
+        menuLabel: "Reviews & social proof",
+        menuDescription:
+          "Meer en betere reviews op de plekken waar klanten kijken vóór ze kopen.",
+        href: "/diensten/reviews",
+      },
+    ],
+    featured: {
+      title: "Gevonden vóór de advertentie",
+      description:
+        "SkinComplete stond eerst bovenaan in Google. Daarna pas gingen de ads aan. Die volgorde loont.",
+      href: "/cases",
+    },
+  },
+  {
+    pillarSlug: "acquisitie",
+    category: "Acquisitie",
+    subtitle: "Ads, social & creators",
+    pillarOverviewCta: "Alle trajecten ads & creators",
+    items: [
+      {
+        name: "Google Ads",
+        description: "Bovenaan staan op het moment dat iemand zoekt",
+        menuLabel: "Google Ads (zoeken & shopping)",
+        menuDescription:
+          "Zoekwoorden, shopping en budget dat naar klanten gaat. Niet naar klikken zonder waarde.",
+        href: "/diensten/google-ads",
+      },
+      {
+        name: "Meta Ads",
+        description: "Facebook en Instagram campagnes die verkopen",
+        menuLabel: "Meta Ads (Facebook & Instagram)",
+        menuDescription:
+          "Campagnes op Facebook en Instagram: creatives, doelgroepen en meetbaar resultaat.",
+        href: "/diensten/meta-ads",
+      },
+      {
+        name: "Advertentiestrategie",
+        description: "Google en Meta samen: budget, funnel en schaalpad",
+        menuLabel: "Ads-strategie & schaal",
+        menuDescription:
+          "Alle advertentiekanalen op één lijn: waar je budget heen moet en wanneer je schaalt.",
+        href: "/diensten/adverteren",
+      },
+      {
+        name: "Social media marketing",
+        description: "Organisch groeien op de kanalen waar je klant zit",
+        menuLabel: "Social media (organisch)",
+        menuDescription:
+          "Content en ritme voor Instagram, TikTok en LinkedIn. Zichtbaar zonder advertentiebudget.",
+        href: "/diensten/social-media",
+      },
+      {
+        name: "UGC & creatorcontent",
+        description: "Echte mensen, echte content, betere ads",
+        menuLabel: "UGC & creatorcontent",
+        menuDescription:
+          "Video's door creators die jouw product laten zien zoals klanten het gebruiken.",
+        href: "/diensten/ugc",
+      },
+      {
+        name: "Influencer marketing",
+        description: "Samenwerkingen die passen bij je merk en marge",
+        menuLabel: "Influencer marketing",
+        menuDescription:
+          "De juiste creators vinden, afspraken maken en meten wat elke samenwerking oplevert.",
+        href: "/diensten/influencer-marketing",
+      },
+      {
+        name: "Verkopen via Bol & Amazon",
+        description: "Marketplaces als extra verkoopkanaal",
+        menuLabel: "Marketplaces (Bol & Amazon)",
+        menuDescription:
+          "Producten goed vindbaar op Bol en Amazon: listings, reviews en advertenties.",
+        href: "/diensten/marketplaces",
+      },
+      {
+        name: "Foto & video-ads",
+        description: "Creatives die passen bij je campagnes",
+        menuLabel: "Beeld voor campagnes & social",
+        menuDescription:
+          "Beeld & ads: foto, video en social formats passend bij jouw hooks en groep.",
+        href: "/diensten/media",
+      },
+    ],
+    featured: {
+      title: "Budget dat terugkomt",
+      description:
+        "Adverteren zonder metingen is gokken. Wij koppelen elke euro aan wat hij oplevert.",
+      href: "/cases",
+    },
+  },
+  {
+    pillarSlug: "behoud",
+    category: "Behoud",
+    subtitle: "E-mail, retentie & koppelingen",
+    pillarOverviewCta: "Alle trajecten behoud & retentie",
+    items: [
+      {
         name: "E-mailmarketing",
         description: "Nieuwsbrieven, welkomstmails en automatische opvolging",
         menuLabel: "E-mailmarketing & flows",
@@ -127,26 +302,20 @@ export const megaMenuColumns: MegaMenuColumn[] = [
           "E-mail op het juiste moment: nieuwsbrieven, herinnermails en klantflows via Klaviyo of Shopify.",
         href: "/diensten/email",
       },
-    ],
-    featured: {
-      title: "De groeiformule",
-      description:
-        "De juiste boodschap op het juiste kanaal. Gekoppeld aan wat je site en shop aankunnen.",
-      href: "/cases",
-    },
-  },
-  {
-    pillarSlug: "automatiseren",
-    category: "Automatiseren",
-    subtitle: "Systemen & data",
-    pillarOverviewCta: "Alle trajecten automatisering",
-    items: [
       {
-        name: "Bedrijfsprocessen automatiseren",
-        description: "n8n/Make: minder handwerk, minder fouten",
-        menuLabel: "Bedrijfsprocessen automatiseren",
+        name: "Retentie & loyaliteit",
+        description: "Herhaalaankopen via SMS, loyalty en slimme timing",
+        menuLabel: "Retentie & herhaalaankopen",
         menuDescription:
-          "n8n/Make: minder handwerk en fouten. Meer rust in je dagelijkse operatie.",
+          "Klanten die terugkomen: loyaliteitsacties, SMS en opvolging na de eerste aankoop.",
+        href: "/diensten/retentie",
+      },
+      {
+        name: "Processen automatiseren",
+        description: "Minder handwerk, minder fouten, meer rust",
+        menuLabel: "Processen automatiseren",
+        menuDescription:
+          "Terugkerend handwerk uit handen: systemen die met elkaar praten zodat jij dat niet hoeft.",
         href: "/diensten/automatisering",
       },
       {
@@ -165,71 +334,17 @@ export const megaMenuColumns: MegaMenuColumn[] = [
           "AI-chat: antwoorden op jouw data, FAQ en tone. Slim en 24/7 waar het past.",
         href: "/diensten/chatbots",
       },
-      {
-        name: "Data tracking & analytics",
-        description: "GTM, Clarity, heldere dashboards",
-        menuLabel: "GTM, events & analytics stack",
-        menuDescription:
-          "Tracking & analytics: events, dashboards en inzicht in campagneresultaten.",
-        href: "/diensten/tracking",
-      },
     ],
     featured: {
-      title: "Stop met handmatig werk",
+      title: "Klanten die terugkomen",
       description:
-        "Koppel je stack: één waarheid voor order, klant en marketingdata.",
-      href: "/diensten/automatisering",
-    },
-  },
-  {
-    pillarSlug: "vormgeven",
-    category: "Vormgeven",
-    subtitle: "Branding & design",
-    pillarOverviewCta: "Alle trajecten merk & design",
-    items: [
-      {
-        name: "Merkidentiteit & visuele positionering",
-        description: "Huisstijl die vertrouwen en onderscheid geeft",
-        menuLabel: "Merkidentiteit & huisstijl",
-        menuDescription:
-          "Merk & huisstijl: kleur, typo en beeld dat herkenning en vertrouwen draagt.",
-        href: "/diensten/branding",
-      },
-      {
-        name: "Conversiegedreven UI/UX",
-        description: "Ontwerp dat verkopen en vertrouwen combineert",
-        menuLabel: "UI/UX: conversie én merk strak",
-        menuDescription:
-          "UI/UX: schermen en flows die verkopen én merk strak en consistent houden.",
-        href: "/diensten/webdesign",
-      },
-      {
-        name: "Motion & micro-interacties",
-        description: "Die ene laag die je site onvergetelijk maakt",
-        menuLabel: "Motion & micro-interacties",
-        menuDescription:
-          "Motion: micro-interacties premium. Levend zonder ruis en zonder gimmicks.",
-        href: "/diensten/animaties",
-      },
-      {
-        name: "Foto & video-ads",
-        description: "Creatives die passen bij je campagnes",
-        menuLabel: "Beeld voor campagnes & social",
-        menuDescription:
-          "Beeld & ads: foto, video en social formats passend bij jouw hooks en groep.",
-        href: "/diensten/media",
-      },
-    ],
-    featured: {
-      title: "Design dat werkt",
-      description:
-        "Minimalistisch, modern, met psychologische scherpte waar het telt.",
-      href: "/cases",
+        "Een nieuwe klant werven kost al snel vijf keer meer dan een bestaande behouden. Hier zit je marge.",
+      href: "/diensten/email",
     },
   },
 ];
 
-/** Topnav naast pijlers. /diensten bereikbaar via footer en mega-menu. */
+/** Topnav naast blokken. /diensten bereikbaar via footer en mega-menu. */
 export const mainNavLinks: { name: string; href: string }[] = [
   { name: "Cases", href: "/cases" },
   { name: "Over ons", href: "/over" },

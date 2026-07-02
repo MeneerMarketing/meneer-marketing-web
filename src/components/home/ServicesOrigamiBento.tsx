@@ -45,8 +45,8 @@ type GridTile = ServiceTile | CtaTile;
 
 const SERVICES: GridTile[] = [
   {
-    title: "Maatwerk websites",
-    text: "High-end sites from scratch. Snel, veilig en ingericht volgens Google.",
+    title: "Websites from scratch",
+    text: "High-end sites, custom gebouwd. Snel, veilig en ingericht volgens Google.",
     href: "/diensten/webdevelopment",
     Icon: LayoutTemplate,
     accent: "#0F172A",
@@ -61,7 +61,7 @@ const SERVICES: GridTile[] = [
   {
     title: "Groeistrategie",
     text: "Welke kanalen, welke boodschap en wat je eerst aanpakt voor meer omzet.",
-    href: "/groeien",
+    href: "/strategie",
     Icon: TrendingUp,
     accent: "#FF5722",
   },
@@ -73,16 +73,16 @@ const SERVICES: GridTile[] = [
     accent: "#00BCD4",
   },
   {
-    title: "Google Ads & SEA",
+    title: "Google Ads & Meta Ads",
     text: "Campagnes meten, bijsturen en opschalen wat echt werkt.",
-    href: "/diensten/adverteren",
+    href: "/diensten/google-ads",
     Icon: Megaphone,
     accent: "#0F172A",
   },
   {
     title: "Social media",
     text: "Content en campagnes op social, afgestemd op je merk.",
-    href: "/diensten/adverteren",
+    href: "/diensten/social-media",
     Icon: Share2,
     accent: "#00BCD4",
   },
@@ -102,7 +102,7 @@ const SERVICES: GridTile[] = [
   },
   {
     title: "Bekijk alle diensten",
-    text: "Automatisering, tracking, CRO, AI en meer. Alles op één plek.",
+    text: "AI-zoek, UGC, influencers, automatisering en meer. Alles op één plek.",
     href: "/diensten",
     cta: true,
   },

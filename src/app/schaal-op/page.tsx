@@ -109,15 +109,15 @@ export default function SchaalOpPage() {
                   icon: <Sparkles className="size-4" />,
                 },
                 {
-                  label: "Automatisering",
-                  href: "/automatiseren",
-                  description: "n8n, Make, AI-workflows. Rust voor je team.",
+                  label: "Behoud & automatisering",
+                  href: "/behoud",
+                  description: "E-mail, retentie en workflows. Rust voor je team.",
                   icon: <Rocket className="size-4" />,
                 },
                 {
-                  label: "Marketing-pijler",
-                  href: "/groeien",
-                  description: "SEO, content, paid. Als systeem, niet losse flits.",
+                  label: "Acquisitie",
+                  href: "/acquisitie",
+                  description: "Ads, social en creators. Als systeem, niet losse flits.",
                   icon: <BarChart3 className="size-4" />,
                 },
               ]}

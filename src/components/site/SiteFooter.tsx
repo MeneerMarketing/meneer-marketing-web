@@ -39,7 +39,7 @@ export function SiteFooter() {
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
-              Pijlers
+              Blokken
             </p>
             <ul className="mt-4 space-y-2 text-sm font-medium text-slate-200">
               {megaMenuColumns.map((col) => (

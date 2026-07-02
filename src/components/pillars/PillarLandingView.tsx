@@ -12,10 +12,11 @@ import type { PillarPageData } from "@/data/pillar-pages";
 import { siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 const PILLAR_LABEL: Record<PillarPageData["slug"], string> = {
+  strategie: "Strategie",
   bouwen: "Bouwen",
-  groeien: "Groeien",
-  automatiseren: "Automatiseren",
-  vormgeven: "Vormgeven",
+  vindbaarheid: "Vindbaarheid",
+  acquisitie: "Acquisitie",
+  behoud: "Behoud",
 };
 
 export function PillarLandingView({ data }: { data: PillarPageData }) {
@@ -56,7 +57,7 @@ export function PillarLandingView({ data }: { data: PillarPageData }) {
             </nav>
             <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-mm-sky/25 bg-white/70 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-mm-sky-deep shadow-sm backdrop-blur-sm">
               <Sparkles className="size-3.5" aria-hidden />
-              Pijler
+              Blok
             </p>
             <h1 className="mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-mm-text sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
               {data.headline}
@@ -114,7 +115,7 @@ export function PillarLandingView({ data }: { data: PillarPageData }) {
             <Reveal delay={0.08} className="mt-10 lg:mt-0">
               <div className="rounded-3xl border border-mm-border bg-mm-sky-subtle/40 p-8 shadow-mm-card">
                 <p className="text-xs font-bold uppercase tracking-wider text-mm-accent">
-                  Diensten in deze pijler
+                  Diensten in dit blok
                 </p>
                 <p className="mt-2 text-sm text-mm-muted">{data.serviceIntro}</p>
                 <ul className="mt-6 space-y-3">
