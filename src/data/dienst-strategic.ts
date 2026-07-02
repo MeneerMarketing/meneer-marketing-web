@@ -25,8 +25,8 @@ const PILLAR_LENS: Record<string, string> = {
     "Binnen Bouwen kijk ik niet alleen naar ‘een site’ of ‘een shop’, maar naar hoe jouw bedrijf over vijf jaar nog steeds snel kan groeien. Dat bepaalt welk platform we kiezen, hoe we koppelingen ontwerpen en waar we problemen voorkomen. Zo sluit alles aan op hoe jij echt werkt, niet op een standaard template.",
   Vindbaarheid:
     "Binnen Vindbaarheid denk ik verder dan Google alleen: je klant zoekt ook via ChatGPT, Maps en reviews. Ik bouw de keten als geheel: content die antwoord geeft, techniek die klopt en autoriteit die groeit. Organisch eerst, want elke positie die je organisch wint, maakt je advertenties daarna goedkoper.",
-  Acquisitie:
-    "Binnen Acquisitie gaat geen euro budget aan voordat de meting klopt en de landingspagina zijn werk doet. Daarna kiezen we de kanalen die bij jouw marge passen: Google, Meta, creators of marketplaces. We testen klein, schalen wat werkt en snijden wat ruis geeft. Zonder sentiment.",
+  Campagnes:
+    "Binnen Campagnes gaat geen euro budget aan voordat de meting klopt en de landingspagina zijn werk doet. Daarna kiezen we de kanalen die bij jouw marge passen: Google, Meta, creators of marketplaces. We testen klein, schalen wat werkt en snijden wat ruis geeft. Zonder sentiment.",
   Behoud:
     "Binnen Behoud zoek ik de omzet die je al betaald hebt: klanten die eerder kochten en alleen een goede reden nodig hebben om terug te komen. E-mail, retentie en de systemen erachter werken samen, zodat de tweede aankoop makkelijker wordt dan de eerste. En jouw team minder handwerk heeft.",
 };
@@ -74,7 +74,7 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
       body: "Je klanten komen uit de regio maar vinden je niet. Dan pakken we Google Business, Maps en lokale pagina's als eerste.",
     },
   ],
-  Acquisitie: [
+  Campagnes: [
     {
       title: "Ads renderen niet",
       body: "Je advertenties wisselen in resultaat. Dan ligt de oplossing vaak half in de advertentie, half in de landingspagina. Ik behandel beide als één geheel.",
@@ -474,7 +474,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "Een bestaande klant heeft geen advertentie meer nodig: hij kent je al en vertrouwt je al. Toch krijgt hij bij de meeste bedrijven na de aankoop nooit meer een goede reden om terug te komen.",
     deepExtended:
-      "Ik bouw dat wel: opvolging na aankoop, loyaliteitsacties, win-back campagnes en SMS waar het past. Gemeten op herhaalaankopen en klantwaarde. Elke procent retentie erbij maakt je acquisitie ruimer.",
+      "Ik bouw dat wel: opvolging na aankoop, loyaliteitsacties, win-back campagnes en SMS waar het past. Gemeten op herhaalaankopen en klantwaarde. Elke procent retentie erbij geeft je meer ruimte om nieuwe klanten te werven.",
     signals: [
       "Hoeveel klanten kopen nu een tweede keer?",
       "Wat is de logische termijn voor een herhaalaankoop bij jouw product?",

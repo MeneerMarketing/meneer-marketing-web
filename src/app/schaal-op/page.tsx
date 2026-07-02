@@ -115,8 +115,8 @@ export default function SchaalOpPage() {
                   icon: <Rocket className="size-4" />,
                 },
                 {
-                  label: "Acquisitie",
-                  href: "/acquisitie",
+                  label: "Campagnes",
+                  href: "/campagnes",
                   description: "Ads, social en creators. Als systeem, niet losse flits.",
                   icon: <BarChart3 className="size-4" />,
                 },

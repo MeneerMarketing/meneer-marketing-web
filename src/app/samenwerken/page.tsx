@@ -109,7 +109,7 @@ export default function SamenwerkenPage() {
                 {
                   label: "Onze blokken",
                   href: "/diensten",
-                  description: "Strategie, bouwen, vindbaarheid, acquisitie, behoud.",
+                  description: "Strategie, bouwen, vindbaarheid, campagnes, behoud.",
                   icon: <Layers className="size-4" />,
                 },
                 {

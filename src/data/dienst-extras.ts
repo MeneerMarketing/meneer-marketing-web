@@ -483,7 +483,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
     outcomes: [
       "Meer herhaalaankopen uit klanten die je al hebt",
       "Loyaliteit en win-back flows die bij je marge passen",
-      "Hogere klantwaarde, dus meer ruimte om te groeien in acquisitie",
+      "Hogere klantwaarde, dus meer ruimte om nieuwe klanten te werven",
     ],
     faq: [
       {

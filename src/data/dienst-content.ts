@@ -29,7 +29,7 @@ const CONTENT = {
     ],
   ),
   webdevelopment: body(
-    "Ik bouw websites from scratch, geen kant-en-klare templates. Alles is maatwerk: snel, veilig en precies passend bij jouw bedrijf. Of het nu een bedrijfswebsite, landingspagina of portal is.",
+    "Ik bouw websites from scratch, geen kant-en-klare templates. Alles custom: snel, veilig en precies passend bij jouw bedrijf. Of het nu een bedrijfswebsite, landingspagina of portal is.",
     [
       "Volledig op maat: design, structuur en code passend bij jouw merk",
       "Snelle laadtijden en goede vindbaarheid in Google (SEO)",

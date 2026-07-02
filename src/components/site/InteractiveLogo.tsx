@@ -9,12 +9,12 @@ import {
 } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const LEFT_EYE = { cx: 25.5, cy: 38.5 } as const;
-const RIGHT_EYE = { cx: 38.5, cy: 38.5 } as const;
-const EYE_R = 5.6;
-const PUPIL_R = 2.5;
-/** Maximale pupil-uitwijking in SVG-units, blijft binnen de lens */
-const MAX_OFFSET = 2.4;
+const LEFT_EYE = { cx: 25, cy: 37.5 } as const;
+const RIGHT_EYE = { cx: 39, cy: 37.5 } as const;
+const EYE_R = 7;
+const PUPIL_R = 3.1;
+/** Maximale pupil-uitwijking in SVG-units, blijft binnen het oog */
+const MAX_OFFSET = 3.2;
 /** Afstand (px) waarop de ogen maximaal uitwijken */
 const FULL_LOOK_DISTANCE = 220;
 
@@ -112,55 +112,43 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
       aria-hidden
       focusable="false"
     >
+      {/* Oren */}
+      <circle cx="14.5" cy="42" r="3.4" fill="#F6C09A" stroke="#0F172A" strokeWidth="1.8" />
+      <circle cx="49.5" cy="42" r="3.4" fill="#F6C09A" stroke="#0F172A" strokeWidth="1.8" />
+
       {/* Gezicht */}
       <circle
         cx="32"
-        cy="40"
-        r="16"
-        fill="#fff"
+        cy="41"
+        r="17"
+        fill="#F8CBA3"
         stroke="#0F172A"
         strokeWidth="2"
       />
+
+      {/* Blosjes */}
+      <ellipse cx="20" cy="46.5" rx="2.8" ry="1.7" fill="#F2A075" opacity="0.65" />
+      <ellipse cx="44" cy="46.5" rx="2.8" ry="1.7" fill="#F2A075" opacity="0.65" />
 
       {/* Snor */}
       <path
-        d="M24.8 47.4c2.4-2.7 5.5-1.7 7.2.3 1.7-2 4.8-3 7.2-.3-1.3 2.6-4.7 3.2-7.2 1.5-2.5 1.7-5.9 1.1-7.2-1.5z"
+        d="M22.6 49.8c3-3.4 7-2.1 9.4.4 2.4-2.5 6.4-3.8 9.4-.4-1.6 3.3-6 4-9.4 1.9-3.4 2.1-7.8 1.4-9.4-1.9z"
         fill="#0F172A"
       />
 
-      {/* Bolhoed */}
-      <path d="M19 25a13 12 0 0 1 26 0v.8H19z" fill="#0F172A" />
-      <rect x="20" y="20.6" width="24" height="4" fill="#FF5722" />
-      <rect x="12" y="24" width="40" height="4.6" rx="2.3" fill="#0F172A" />
+      {/* Glimlach onder de snor */}
+      <path
+        d="M28 54.6c2.5 1.8 5.5 1.8 8 0"
+        fill="none"
+        stroke="#0F172A"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
 
-      {/* Brilpoten en brug */}
-      <line
-        x1="19.9"
-        y1="38.5"
-        x2="16.6"
-        y2="37.4"
-        stroke="#0F172A"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <line
-        x1="44.1"
-        y1="38.5"
-        x2="47.4"
-        y2="37.4"
-        stroke="#0F172A"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <line
-        x1="31.1"
-        y1="38.5"
-        x2="32.9"
-        y2="38.5"
-        stroke="#0F172A"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
+      {/* Bolhoed */}
+      <path d="M18.5 24.5a13.5 12.5 0 0 1 27 0v1h-27z" fill="#0F172A" />
+      <rect x="19.5" y="20.4" width="25" height="4.2" fill="#FF5722" />
+      <rect x="11" y="23.6" width="42" height="4.8" rx="2.4" fill="#0F172A" />
 
       {/* Linkeroog */}
       <circle
@@ -217,6 +205,9 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
           style={{ transformBox: "fill-box", transformOrigin: "50% 0%" }}
         />
       ) : null}
+
+      {/* Neus (vóór de ogen, cartoon-stijl) */}
+      <circle cx="32" cy="44.6" r="2.6" fill="#F0A878" stroke="#0F172A" strokeWidth="1.6" />
     </svg>
   );
 }

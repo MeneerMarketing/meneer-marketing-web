@@ -53,7 +53,7 @@ export function SiteHeader() {
       onMouseLeave={handleLeaveDelayed}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Logo icon={<InteractiveLogo className="h-9 w-9 shrink-0 sm:h-10 sm:w-10" />} />
+        <Logo icon={<InteractiveLogo className="h-11 w-11 shrink-0 sm:h-12 sm:w-12" />} />
 
         <nav
           className="hidden items-center gap-1 lg:flex"
@@ -93,7 +93,7 @@ export function SiteHeader() {
           <Magnetic strength={12} radius={140}>
             <Link
               href={siteCtas.groeiscan.href}
-              className="group relative inline-flex items-center gap-1.5 overflow-hidden rounded-full bg-[#FF5722] px-5 py-2.5 text-sm font-bold tracking-tight text-white shadow-sm shadow-[#FF5722]/25 transition hover:shadow-[#FF5722]/40"
+              className="group relative inline-flex items-center gap-1.5 overflow-hidden whitespace-nowrap rounded-full bg-[#FF5722] px-5 py-2.5 text-sm font-bold tracking-tight text-white shadow-sm shadow-[#FF5722]/25 transition hover:shadow-[#FF5722]/40"
             >
               <span
                 aria-hidden

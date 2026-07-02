@@ -199,9 +199,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ctaBody:
       "Start met de Groeiscan. We laten zien waar je staat in Google én in AI-zoek, en waar de snelste winst zit.",
   },
-  acquisitie: {
-    slug: "acquisitie",
-    metaTitle: "Acquisitie. Google Ads, Meta Ads, social en creators",
+  campagnes: {
+    slug: "campagnes",
+    metaTitle: "Campagnes. Google Ads, Meta Ads, social en creators",
     metaDescription:
       "Google Ads, Meta Ads, social media, UGC en influencer marketing die meetbaar verkopen. MeneerMarketing zet campagnes op die je kunt sturen.",
     keywords: [
@@ -228,8 +228,8 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     angleBody:
       "De beste campagne faalt op een trage landingspagina, en de beste creator-video verzuipt zonder goede targeting. Omdat wij zowel de techniek als de campagnes doen, lossen we het probleem op waar het echt zit. Niet waar de dienstverlener toevallig verstand van heeft.",
     serviceIntro:
-      "Van Google en Meta tot creators en marketplaces: dit zijn de acquisitietrajecten.",
-    processTitle: "Zo bouwen we je acquisitie op",
+      "Van Google en Meta tot creators en marketplaces: dit zijn de campagnetrajecten.",
+    processTitle: "Zo bouwen we je campagnes op",
     processSteps: [
       {
         title: "Meting eerst",

@@ -82,7 +82,7 @@ export default function OverPage() {
                   Of het nu gaat om een internationale Shopify, een website
                   from scratch, een web-app of slimme automatisering die je team
                   rust geeft. We denken in blokken: strategie, bouwen,
-                  vindbaarheid, acquisitie, behoud.
+                  vindbaarheid, campagnes, behoud.
                 </p>
               </Reveal>
               <Reveal className="mt-10 lg:mt-0" delay={0.08}>

@@ -12,11 +12,13 @@ import {
 } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { DienstPremiumView } from "@/components/diensten/premium/DienstPremiumView";
 import { getDienstContent } from "@/data/dienst-content";
+import { getDienstPremium } from "@/data/dienst-premium";
 import { getDienstStrategic } from "@/data/dienst-strategic";
 import { getDienstExtra } from "@/data/dienst-extras";
 import { getAllDienstSlugs, getDienstBySlug, getRelatedDiensten } from "@/lib/diensten";
-import { ctaNav } from "@/lib/navigation";
+import { ctaNav, megaMenuColumns } from "@/lib/navigation";
 import { absoluteUrl } from "@/lib/site";
 
 export function generateStaticParams(): { slug: string }[] {
@@ -84,6 +86,38 @@ export default async function DienstPage({
   const faqLd =
     extra?.faq.length ? faqPageJsonLd(extra.faq) : null;
 
+  const premium = getDienstPremium(slug);
+  if (premium) {
+    const pillarSlug = megaMenuColumns.find(
+      (col) => col.category === d.pillar,
+    )?.pillarSlug;
+    return (
+      <>
+        <JsonLdScript data={serviceLd} />
+        <JsonLdScript data={breadcrumbLd} />
+        {faqLd ? <JsonLdScript data={faqLd} /> : null}
+        <SiteHeader />
+        <main id="main" className="flex-1">
+          <DienstPremiumView
+            dienst={d}
+            pillarHref={pillarSlug ? `/${pillarSlug}` : "/diensten"}
+            body={body}
+            extra={extra}
+            strategic={strategic}
+            related={related}
+            heroKicker={premium.heroKicker}
+            funFact={premium.funFact}
+            funFactSource={premium.funFactSource}
+            approachSteps={premium.approachSteps}
+            tickerItems={premium.tickerItems}
+            heroStats={premium.heroStats}
+          />
+        </main>
+        <SiteFooter />
+      </>
+    );
+  }
+
   return (
     <>
       <JsonLdScript data={serviceLd} />
@@ -121,7 +155,7 @@ export default async function DienstPage({
               <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-mm-sky-deep">
                 {d.pillar} · {d.pillarSubtitle}
               </p>
-              <h1 className="mt-3 max-w-4xl text-4xl font-extrabold tracking-tight text-mm-text sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
+              <h1 className="mt-3 max-w-4xl text-balance text-4xl font-extrabold tracking-tight text-mm-text sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
                 {d.name}
               </h1>
               <p className="mt-5 max-w-2xl text-xl font-medium leading-relaxed text-mm-muted">

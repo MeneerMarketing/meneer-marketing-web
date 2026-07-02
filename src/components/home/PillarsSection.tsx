@@ -22,7 +22,7 @@ export function PillarsSection() {
                 <span className="text-mm-sky-deep">Één groeipad.</span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-mm-muted">
-                Strategie, bouwen, vindbaarheid, acquisitie, behoud. Dezelfde
+                Strategie, bouwen, vindbaarheid, campagnes, behoud. Dezelfde
                 structuur als je navigatie, hier als verhaal verteld.
               </p>
             </div>

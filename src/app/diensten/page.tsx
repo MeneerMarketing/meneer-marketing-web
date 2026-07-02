@@ -9,7 +9,7 @@ import { ctaNav, megaMenuColumns } from "@/lib/navigation";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Diensten. Strategie, bouwen, vindbaarheid, acquisitie & behoud",
+  title: "Diensten. Strategie, bouwen, vindbaarheid, campagnes & behoud",
   description:
     "Het volledige aanbod van MeneerMarketing: strategie, websites & webshops, SEO & AI-zoek, ads & creators en e-mail & retentie. Als één groeisysteem.",
   alternates: { canonical: absoluteUrl("/diensten") },

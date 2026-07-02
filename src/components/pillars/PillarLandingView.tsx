@@ -15,7 +15,7 @@ const PILLAR_LABEL: Record<PillarPageData["slug"], string> = {
   strategie: "Strategie",
   bouwen: "Bouwen",
   vindbaarheid: "Vindbaarheid",
-  acquisitie: "Acquisitie",
+  campagnes: "Campagnes",
   behoud: "Behoud",
 };
 

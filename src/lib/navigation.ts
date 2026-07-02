@@ -21,7 +21,7 @@ export type PillarSlug =
   | "strategie"
   | "bouwen"
   | "vindbaarheid"
-  | "acquisitie"
+  | "campagnes"
   | "behoud";
 
 export interface MegaMenuColumn {
@@ -211,8 +211,8 @@ export const megaMenuColumns: MegaMenuColumn[] = [
     },
   },
   {
-    pillarSlug: "acquisitie",
-    category: "Acquisitie",
+    pillarSlug: "campagnes",
+    category: "Campagnes",
     subtitle: "Ads, social & creators",
     pillarOverviewCta: "Alle trajecten ads & creators",
     items: [
@@ -347,7 +347,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
 /** Topnav naast blokken. /diensten bereikbaar via footer en mega-menu. */
 export const mainNavLinks: { name: string; href: string }[] = [
   { name: "Cases", href: "/cases" },
-  { name: "Over ons", href: "/over" },
+  { name: "Over", href: "/over" },
   { name: "Contact", href: "/contact" },
 ];
 

@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       { source: "/groeien", destination: "/vindbaarheid", permanent: true },
       { source: "/automatiseren", destination: "/behoud", permanent: true },
       { source: "/vormgeven", destination: "/bouwen", permanent: true },
+      { source: "/acquisitie", destination: "/campagnes", permanent: true },
     ];
   },
 };
