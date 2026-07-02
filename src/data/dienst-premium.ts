@@ -15,6 +15,8 @@ export interface DienstPremiumPrinciple {
 }
 
 export interface DienstPremiumContent {
+  /** Welke hero-illustratie rechts in de hero */
+  heroVisual?: "build" | "shopify";
   /** Korte onderregel met punch in de hero */
   heroKicker: string;
   /** Onverwacht feitje of harde waarheid */
@@ -36,6 +38,7 @@ export interface DienstPremiumContent {
 
 const PREMIUM: Record<string, DienstPremiumContent> = {
   webdevelopment: {
+    heroVisual: "build",
     heroKicker:
       "Geen template dat op duizend andere sites lijkt. Een website die vanaf regel één voor jouw bedrijf is gebouwd. Snel, veilig en klaar om te groeien.",
     funFact:
@@ -105,6 +108,79 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       { label: "Aanpak", value: "From scratch · custom" },
       { label: "Snelheid", value: "Core Web Vitals groen" },
       { label: "Beheer", value: "Zelf content aanpassen" },
+    ],
+  },
+  "shopify-enterprise": {
+    heroVisual: "shopify",
+    heroKicker:
+      "Shopify schaalt pas echt als thema, apps, data en campagnes één team spelen. Ik bouw enterprise-shops die snel blijven, overzicht houden en je team begrijpt. Geen black box.",
+    funFact:
+      "Shopify verwerkt in piekmomenten meer dan een miljoen checkouts per minuut. Jouw shop hoeft niet stuk te gaan omdat het theme het op drukke dagen niet aankan.",
+    funFactSource: "Daarom architectuur vóór apps",
+    funFactStat: "1M+",
+    principles: [
+      {
+        title: "Eerst je stack begrijpen",
+        body: "B2B-bundles, internationale prijzen of headless: geen enkele enterprise-shop is hetzelfde. Ik begin bij jouw catalogus, orderflow en marketingstack. Pas daarna kies ik architectuur.",
+      },
+      {
+        title: "Eén regisseur, geen app-drama",
+        body: "Veel Shopify-projecten ontsporen door twintig apps die elkaar bijten. Ik vervang waar nodig door maatwerk, houd wat werkt en geef je één aanspreekpunt voor theme, koppelingen en performance.",
+      },
+      {
+        title: "Uitleg in jouw taal",
+        body: "OS 2.0, Storefront API, checkout extensibility: ik vertaal het naar keuzes die jij kunt maken. Geen enterprise-jargon om indruk te maken, wel een plan dat je team kan uitvoeren.",
+      },
+    ],
+    lens: "Bij Shopify enterprise kijk ik verder dan het theme. Ik ontwerp voor de volgende fase: meer SKU's, B2B naast B2C, internationale storefronts. Zo koop je geen label, maar een shop die meegroeit zonder elke release te breken.",
+    approachSteps: [
+      {
+        title: "Stack & catalogus audit",
+        body: "We brengen je variant-logica, apps, koppelingen en bottlenecks in kaart. Wat is kritisch, wat is ballast, en waar lekt omzet weg?",
+      },
+      {
+        title: "Architectuur kiezen",
+        body: "OS 2.0-theme, headless of hybride: ik laat je zien waarom, wat het betekent voor onderhoud, SEO en snelheid. Jij kiest met open ogen.",
+      },
+      {
+        title: "Bouwen & migreren",
+        body: "Thema, checkout, B2B en koppelingen in sprints met staging en QA. Migraties plannen we met redirects en campagne-impact, zodat SEO en ads niet schokken.",
+      },
+      {
+        title: "Live, meten, doorontwikkelen",
+        body: "Na launch meten we Core Web Vitals, conversie en operationele tijdwinst. Je team krijgt documentatie en een roadmap voor wat later kan.",
+      },
+    ],
+    capabilities: [
+      "OS 2.0",
+      "B2B checkout",
+      "Storefront API",
+      "CWV groen",
+      "Minimale apps",
+      "Staging & QA",
+      "Headless-ready",
+    ],
+    outcomes: [
+      {
+        title: "Thema dat meegroeit",
+        detail:
+          "Secties en data-laag die nieuwe SKU's, merken en storefronts aankunnen zonder fragiele workarounds. Je team past content aan zonder bang te zijn iets te breken.",
+      },
+      {
+        title: "Checkout zonder gedoe",
+        detail:
+          "B2B, bundles en internationale prijzen werken stabiel. Geen ketting van apps die elkaar tegenwerken zodra je één regel aanpast.",
+      },
+      {
+        title: "Snelheid als harde eis",
+        detail:
+          "Core Web Vitals in het groen bij elke release, niet als bijlage na launch. Snellere storefront betekent betere SEO én hogere conversie op ads.",
+      },
+    ],
+    heroStats: [
+      { label: "Aanpak", value: "OS 2.0 · maatwerk" },
+      { label: "Schaal", value: "B2B · international" },
+      { label: "Performance", value: "CWV per release" },
     ],
   },
 };

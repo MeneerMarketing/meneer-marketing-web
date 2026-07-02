@@ -3,7 +3,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { PageTOC, type TocItem } from "@/components/diensten/premium/PageTOC";
 
 export interface SidebarRelatedItem {
@@ -26,7 +25,7 @@ interface PremiumSidebarProps {
   artikelen?: SidebarArtikel[];
 }
 
-/** Lichte sticky sidebar: inhoudsopgave met scroll-spy, CTA en een meekijkende Meneer. */
+/** Lichte sticky sidebar: inhoudsopgave met scroll-spy, CTA en gerelateerde links. */
 export function PremiumSidebar({
   ctaHref,
   ctaLabel,
@@ -86,24 +85,6 @@ export function PremiumSidebar({
           Je hoort binnen één werkdag van me.
         </p>
       </div>
-
-      {/* Meneer kijkt mee */}
-      <motion.div
-        initial={reduce ? false : { opacity: 0, y: 14 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="flex items-center gap-4 rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-5 shadow-sm"
-      >
-        <span className="shrink-0" aria-hidden>
-          <InteractiveLogo className="h-14 w-14" />
-        </span>
-        <p className="text-sm leading-snug text-slate-600">
-          <span className="font-bold text-slate-900">Meneer kijkt met je mee.</span>{" "}
-          Zijn ogen volgen je cursor. Straks volgt hij net zo scherp jouw
-          cijfers.
-        </p>
-      </motion.div>
 
       {/* Gerelateerde diensten: compacte pills zodat de sidebar kort blijft */}
       {related.length > 0 ? (
