@@ -89,9 +89,9 @@ function ListenScene({ active }: { active: boolean }) {
 /* ------------------------------------------------------------------ */
 
 const CHIPS = [
-  { label: "Web", className: "right-full top-2 mr-1.5" },
-  { label: "Marketing", className: "left-full top-7 ml-1.5" },
-  { label: "Techniek", className: "-bottom-1 left-1/2 -translate-x-1/2" },
+  { label: "Web", delay: 0.16 },
+  { label: "Marketing", delay: 0.25 },
+  { label: "Techniek", delay: 0.34 },
 ] as const;
 
 function OnePointScene({ active }: { active: boolean }) {
@@ -99,7 +99,7 @@ function OnePointScene({ active }: { active: boolean }) {
   const resolved = active || !!reduce;
 
   return (
-    <div className="relative flex h-24 items-center justify-center overflow-hidden">
+    <div className="relative flex h-24 items-center justify-center">
       <AnimatePresence mode="wait">
         {!resolved ? (
           <motion.div
@@ -146,29 +146,50 @@ function OnePointScene({ active }: { active: boolean }) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.5, opacity: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 18 }}
-            className="relative"
+            className="flex w-full max-w-[220px] flex-col items-center gap-1.5 px-1"
           >
-            <InteractiveLogo className="h-[72px] w-[72px]" />
-            {CHIPS.map((chip, i) => (
-              <span
-                key={chip.label}
-                className={`absolute ${chip.className}`}
+            <div className="flex w-full items-center justify-between gap-1.5">
+              <motion.span
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 340,
+                  damping: 16,
+                  delay: CHIPS[0].delay,
+                }}
+                className="inline-block shrink-0 whitespace-nowrap rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-bold text-slate-700 shadow-sm"
               >
-                <motion.span
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 340,
-                    damping: 16,
-                    delay: 0.16 + i * 0.09,
-                  }}
-                  className="inline-block whitespace-nowrap rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-bold text-slate-700 shadow-sm"
-                >
-                  {chip.label}
-                </motion.span>
-              </span>
-            ))}
+                {CHIPS[0].label}
+              </motion.span>
+              <InteractiveLogo className="h-14 w-14 shrink-0" />
+              <motion.span
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 340,
+                  damping: 16,
+                  delay: CHIPS[1].delay,
+                }}
+                className="inline-block shrink-0 whitespace-nowrap rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-bold text-slate-700 shadow-sm"
+              >
+                {CHIPS[1].label}
+              </motion.span>
+            </div>
+            <motion.span
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 340,
+                damping: 16,
+                delay: CHIPS[2].delay,
+              }}
+              className="inline-block whitespace-nowrap rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-bold text-slate-700 shadow-sm"
+            >
+              {CHIPS[2].label}
+            </motion.span>
           </motion.div>
         )}
       </AnimatePresence>
