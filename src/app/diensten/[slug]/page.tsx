@@ -19,6 +19,7 @@ import { getDienstPremium } from "@/data/dienst-premium";
 import { getDienstStrategic } from "@/data/dienst-strategic";
 import { getDienstExtra } from "@/data/dienst-extras";
 import { getAllDienstSlugs, getDienstBySlug, getRelatedDiensten } from "@/lib/diensten";
+import { getArticlesByDienst } from "@/lib/kennisbank";
 import { ctaNav, megaMenuColumns } from "@/lib/navigation";
 import { absoluteUrl } from "@/lib/site";
 
@@ -61,6 +62,7 @@ export default async function DienstPage({
   const body = getDienstContent(slug);
   const extra = getDienstExtra(slug);
   const related = getRelatedDiensten(slug, 4);
+  const artikelen = getArticlesByDienst(slug).slice(0, 3);
   const pageUrl = absoluteUrl(`/diensten/${slug}`);
   const strategic = getDienstStrategic(slug, d.pillar);
 
@@ -271,6 +273,30 @@ export default async function DienstPage({
                           >
                             <span>{r.name}</span>
                             <ArrowUpRight className="size-4 shrink-0 text-mm-muted opacity-0 transition group-hover:opacity-100" />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+                {artikelen.length > 0 ? (
+                  <div className="rounded-3xl border border-mm-border bg-mm-sky-subtle/50 p-6">
+                    <p className="text-xs font-bold uppercase tracking-wider text-mm-sky-deep">
+                      Uit de kennisbank
+                    </p>
+                    <ul className="mt-4 space-y-4">
+                      {artikelen.map((a) => (
+                        <li key={a.slug}>
+                          <Link
+                            href={`/kennisbank/${a.slug}`}
+                            className="group block"
+                          >
+                            <span className="text-sm font-bold leading-snug text-mm-text group-hover:text-mm-sky-deep">
+                              {a.title}
+                            </span>
+                            <span className="mt-1 block text-xs font-semibold text-mm-muted">
+                              {a.readMinutes} min lezen
+                            </span>
                           </Link>
                         </li>
                       ))}

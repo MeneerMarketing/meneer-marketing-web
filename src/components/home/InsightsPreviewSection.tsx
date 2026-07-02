@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
-import { getAllBlogArticles } from "@/lib/blog";
 import { siteCtas } from "@/lib/cta";
+import {
+  getAllKennisbankArticles,
+  getKennisbankCategory,
+} from "@/lib/kennisbank";
 
 function formatDate(iso: string) {
   return new Intl.DateTimeFormat("nl-NL", {
@@ -13,7 +16,7 @@ function formatDate(iso: string) {
 }
 
 export function InsightsPreviewSection() {
-  const posts = getAllBlogArticles().slice(0, 3);
+  const articles = getAllKennisbankArticles().slice(0, 3);
 
   return (
     <section
@@ -28,13 +31,14 @@ export function InsightsPreviewSection() {
                 id="insights-heading"
                 className="text-3xl font-extrabold tracking-tighter text-mm-text sm:text-4xl"
               >
-                Insights.{" "}
-                <span className="text-mm-sky-deep">Geen vulling, wel inzicht.</span>
+                De kennisbank.{" "}
+                <span className="text-mm-sky-deep">
+                  Alles wat wij weten, gratis.
+                </span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
-                Praktische artikelen over performance, SEO, conversie en
-                automatisering. Geschreven om je stack en marketing scherper
-                te zetten.
+                Van vindbaarheid in ChatGPT tot B2B verkopen via Shopify.
+                Geschreven in gewone taal, zodat je er morgen iets mee kunt.
               </p>
             </div>
             <div className="flex flex-col gap-2 self-start sm:flex-row md:self-auto">
@@ -46,49 +50,53 @@ export function InsightsPreviewSection() {
                 <ArrowUpRight className="size-4" />
               </Link>
               <Link
-                href="/blog"
+                href="/kennisbank"
                 className="inline-flex items-center gap-1 rounded-full border border-mm-border bg-white px-5 py-2.5 text-sm font-bold text-mm-sky-deep transition hover:border-mm-sky/40"
                 prefetch={false}
               >
-                Naar blog
+                Naar de kennisbank
                 <ArrowUpRight className="size-4" />
               </Link>
             </div>
           </div>
         </Reveal>
         <ul className="mt-12 grid gap-6 md:grid-cols-3">
-          {posts.map((post, i) => (
-            <Reveal key={post.slug} delay={0.06 * i}>
-              <li>
-                <article className="flex h-full flex-col rounded-2xl border border-mm-border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                  <span className="inline-flex w-fit rounded-full bg-mm-sky-subtle/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-mm-sky-deep">
-                    {post.category}
-                  </span>
-                  <h3 className="mt-4 text-lg font-bold leading-snug text-mm-text">
+          {articles.map((article, i) => {
+            const category = getKennisbankCategory(article.category);
+            return (
+              <Reveal key={article.slug} delay={0.06 * i}>
+                <li>
+                  <article className="flex h-full flex-col rounded-2xl border border-mm-border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <span className="inline-flex w-fit rounded-full bg-mm-sky-subtle/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-mm-sky-deep">
+                      {category?.name ?? "Kennisbank"}
+                    </span>
+                    <h3 className="mt-4 text-lg font-bold leading-snug text-mm-text">
+                      <Link
+                        href={`/kennisbank/${article.slug}`}
+                        className="hover:text-mm-sky-deep"
+                      >
+                        {article.title}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-mm-muted">
+                      {article.description}
+                    </p>
+                    <span className="mt-4 text-xs font-semibold text-mm-muted">
+                      {formatDate(article.publishedAt)} · {article.readMinutes}{" "}
+                      min
+                    </span>
                     <Link
-                      href={`/blog/${post.slug}`}
-                      className="hover:text-mm-sky-deep"
+                      href={`/kennisbank/${article.slug}`}
+                      className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-mm-accent"
                     >
-                      {post.title}
+                      Lees artikel
+                      <ArrowUpRight className="size-4" aria-hidden />
                     </Link>
-                  </h3>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-mm-muted">
-                    {post.description}
-                  </p>
-                  <span className="mt-4 text-xs font-semibold text-mm-muted">
-                    {formatDate(post.publishedAt)} · {post.readMinutes} min
-                  </span>
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-mm-accent"
-                  >
-                    Lees artikel
-                    <ArrowUpRight className="size-4" aria-hidden />
-                  </Link>
-                </article>
-              </li>
-            </Reveal>
-          ))}
+                  </article>
+                </li>
+              </Reveal>
+            );
+          })}
         </ul>
       </div>
     </section>

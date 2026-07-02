@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
       { source: "/automatiseren", destination: "/behoud", permanent: true },
       { source: "/vormgeven", destination: "/bouwen", permanent: true },
       { source: "/acquisitie", destination: "/campagnes", permanent: true },
+      { source: "/blog", destination: "/kennisbank", permanent: true },
+      {
+        source: "/blog/:slug",
+        destination: "/kennisbank/:slug",
+        permanent: true,
+      },
     ];
   },
 };

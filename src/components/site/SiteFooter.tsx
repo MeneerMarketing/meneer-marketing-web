@@ -84,11 +84,11 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/kennisbank"
                   className="hover:text-sky-300"
                   prefetch={false}
                 >
-                  Blog
+                  Kennisbank
                 </Link>
               </li>
               <li>

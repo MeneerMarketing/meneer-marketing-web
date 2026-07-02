@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPillarSlugs } from "@/data/pillar-pages";
-import { getBlogSlugs } from "@/lib/blog";
 import { getAllDienstSlugs } from "@/lib/diensten";
+import { getKennisbankSlugs } from "@/lib/kennisbank";
 import { siteOrigin } from "@/lib/site";
 
 const origin = siteOrigin;
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/project-starten",
     "/intake",
     "/schaal-op",
-    "/blog",
+    "/kennisbank",
     "/privacybeleid",
     "/cookiebeleid",
     "/algemene-voorwaarden",
@@ -51,17 +51,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  const blogPosts: MetadataRoute.Sitemap = getBlogSlugs().map((slug) => ({
-    url: `${origin}/blog/${slug}`,
-    lastModified: lastMod,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  const kennisbank: MetadataRoute.Sitemap = getKennisbankSlugs().map(
+    (slug) => ({
+      url: `${origin}/kennisbank/${slug}`,
+      lastModified: lastMod,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }),
+  );
 
   return [
     ...staticEntries,
     ...pillarEntries,
     ...diensten,
-    ...blogPosts,
+    ...kennisbank,
   ];
 }
