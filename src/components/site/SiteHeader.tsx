@@ -8,6 +8,7 @@ import { siteCtas } from "@/lib/cta";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
 import { mainNavLinks, megaMenuColumns } from "@/lib/navigation";
 import { Logo } from "@/components/site/Logo";
+import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { Magnetic } from "@/components/effects/Magnetic";
 
 export function SiteHeader() {
@@ -52,7 +53,7 @@ export function SiteHeader() {
       onMouseLeave={handleLeaveDelayed}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Logo />
+        <Logo icon={<InteractiveLogo className="h-9 w-9 shrink-0 sm:h-10 sm:w-10" />} />
 
         <nav
           className="hidden items-center gap-1 lg:flex"

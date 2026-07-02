@@ -35,9 +35,9 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-7 max-w-xl text-lg leading-relaxed tracking-tight text-slate-600">
-            Maatwerk websites, Shopify-thema&apos;s en marketing from scratch,
-            passend bij jouw merk. SEO, ads, social en e-mail hangen we eraan
-            vast. Zo groeit je bedrijf online zonder losse eindjes.
+            Websites en Shopify-shops from scratch, gebouwd om te scoren.
+            SEO, Google Ads, social en e-mail hangen we eraan vast. Zo groeit
+            je bedrijf online zonder losse eindjes.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
@@ -73,7 +73,7 @@ export function HeroSection() {
             </div>
             <div>
               <dt className="text-slate-500">Stack</dt>
-              <dd className="mt-1 font-bold text-slate-900">Shopify · Maatwerk · Next</dd>
+              <dd className="mt-1 font-bold text-slate-900">Shopify · Custom build · Next</dd>
             </div>
             <div>
               <dt className="text-slate-500">Aanpak</dt>
