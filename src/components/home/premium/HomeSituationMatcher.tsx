@@ -49,7 +49,7 @@ const SITUATIONS: Situation[] = [
     pillar: "vindbaarheid",
     pillarHref: "/vindbaarheid",
     pillarLabel: "Vindbaarheid & content",
-    steps: ["SEO", "Content", "AI-zoek"],
+    steps: ["SEO", "Content", "Vindbaar in AI"],
     outcome: "Bovenaan in Google én zichtbaar in ChatGPT, Gemini en Claude.",
   },
   {
