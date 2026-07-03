@@ -22,6 +22,7 @@ const DESKTOP_BUBBLE_MQ = "(min-width: 1024px)";
 /**
  * Speelse scrollbar: het hoofd rijdt mee met scroll, is sleepbaar en
  * klikbaar op de rail. Op desktop verschijnt een wolkje met de actieve sectie.
+ * Op mobiel en tablet verborgen: native scroll, geen overlay aan de rand.
  */
 export function ScrollMeneer() {
   const reduce = useReducedMotion();
@@ -181,7 +182,7 @@ export function ScrollMeneer() {
   return (
     <div
       ref={railRef}
-      className={`fixed bottom-6 right-0 top-24 z-40 w-11 overflow-visible transition-opacity duration-500 sm:right-0.5 ${
+      className={`fixed bottom-6 right-0 top-24 z-40 hidden w-9 overflow-visible transition-opacity duration-500 lg:block lg:w-11 ${
         scrollable ? "opacity-100" : "opacity-0"
       }`}
       role="scrollbar"
@@ -200,7 +201,7 @@ export function ScrollMeneer() {
         type="button"
         tabIndex={-1}
         aria-hidden
-        className="absolute inset-y-0 left-1/2 w-10 -translate-x-1/2 cursor-pointer touch-none bg-transparent"
+        className="absolute inset-y-0 left-1/2 w-8 -translate-x-1/2 cursor-pointer touch-none bg-transparent lg:w-10"
         onPointerDown={handleTrackPointerDown}
       />
 
