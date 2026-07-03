@@ -74,9 +74,9 @@ export const OFFICE_PILLARS: OfficePillar[] = [
       { name: "Lokale SEO & Google Maps", href: "/diensten/local-seo" },
     ],
     pillarHref: "/vindbaarheid",
-    x: 0.51,
-    y: 0.6,
-    hitBox: { x: 688, y: 498, w: 148, h: 98 },
+    x: 0.615,
+    y: 0.59,
+    hitBox: { x: 912, y: 478, w: 152, h: 112 },
     panelSide: "left",
   },
   {

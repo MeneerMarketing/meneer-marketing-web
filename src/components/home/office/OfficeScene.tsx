@@ -52,18 +52,24 @@ interface ClickablePillarProps {
   hovered: PillarSlug | null;
   interactive: boolean;
   reduce: boolean;
+  /** Vertraging van de ademende glow-hint, zodat objecten om de beurt oplichten */
+  hintDelay?: number;
   onSelect: (id: PillarSlug) => void;
   onHover: (id: PillarSlug | null) => void;
   children: ReactNode;
 }
 
-/** Klikbaar object met subtiele glow-hint en hover-schaal */
+/**
+ * Klikbaar object: zachte ademende glow als hint (geen kaders), sterkere
+ * glow plus lift en zwevend naamlabel bij hover.
+ */
 function ClickablePillar({
   id,
   active,
   hovered,
   interactive,
   reduce,
+  hintDelay = 0,
   onSelect,
   onHover,
   children,
@@ -75,6 +81,9 @@ function ClickablePillar({
   const isHot = hovered === id;
   const dimmed = active !== null && active !== id;
   const showHint = interactive && active === null && hovered === null;
+
+  const labelWidth = pillar.label.length * 8.2 + 34;
+  const labelY = hitBox.y - 44;
 
   return (
     <g
@@ -99,40 +108,39 @@ function ClickablePillar({
         }
       }}
     >
-      {(showHint || isHot) && !reduce ? (
-        <motion.rect
-          x={hitBox.x - 10}
-          y={hitBox.y - 10}
-          width={hitBox.w + 20}
-          height={hitBox.h + 20}
-          rx={18}
-          fill="none"
-          stroke="#FF5722"
-          strokeWidth={isHot ? 3.5 : 2}
-          initial={{ strokeOpacity: isHot ? 0.75 : 0.22 }}
-          animate={
-            showHint
-              ? { strokeOpacity: [0.18, 0.48, 0.18] }
-              : { strokeOpacity: 0.85 }
-          }
-          transition={
-            showHint
-              ? { duration: 2.6, repeat: Infinity, ease: "easeInOut" }
-              : { duration: 0.2 }
-          }
-          pointerEvents="none"
-        />
-      ) : null}
-      {isHot && !reduce ? (
-        <ellipse
-          cx={cx}
-          cy={cy}
-          rx={hitBox.w * 0.58}
-          ry={hitBox.h * 0.58}
-          fill="#FF5722"
-          fillOpacity={0.12}
-          pointerEvents="none"
-        />
+      {interactive && active === null ? (
+        reduce ? (
+          <ellipse
+            cx={cx}
+            cy={cy}
+            rx={hitBox.w * 0.62}
+            ry={hitBox.h * 0.62}
+            fill="url(#office-hint)"
+            opacity={0.35}
+            pointerEvents="none"
+          />
+        ) : (
+          <motion.ellipse
+            cx={cx}
+            cy={cy}
+            rx={hitBox.w * 0.62}
+            ry={hitBox.h * 0.62}
+            fill="url(#office-hint)"
+            initial={{ opacity: 0 }}
+            animate={isHot ? { opacity: 0.95 } : { opacity: [0.16, 0.42, 0.16] }}
+            transition={
+              isHot
+                ? { duration: 0.25 }
+                : {
+                    duration: 3.4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: hintDelay,
+                  }
+            }
+            pointerEvents="none"
+          />
+        )
       ) : null}
       <rect
         x={hitBox.x}
@@ -142,12 +150,47 @@ function ClickablePillar({
         fill="transparent"
       />
       <motion.g
-        animate={isHot && interactive ? { scale: 1.035 } : { scale: 1 }}
-        transition={{ type: "spring", stiffness: 420, damping: 24 }}
+        animate={
+          isHot && interactive && !reduce
+            ? { scale: 1.03, y: -4 }
+            : { scale: 1, y: 0 }
+        }
+        transition={{ type: "spring", stiffness: 380, damping: 24 }}
         style={{ transformOrigin: `${cx}px ${cy}px`, transformBox: "fill-box" as const }}
       >
         {children}
       </motion.g>
+      {isHot && interactive ? (
+        <motion.g
+          initial={reduce ? false : { opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.22, ease: "easeOut" }}
+          pointerEvents="none"
+        >
+          <rect
+            x={cx - labelWidth / 2}
+            y={labelY}
+            width={labelWidth}
+            height={30}
+            rx={15}
+            fill="#0B1220"
+            fillOpacity={0.94}
+            stroke="#FFFFFF"
+            strokeOpacity={0.16}
+            strokeWidth={1.5}
+          />
+          <text
+            x={cx}
+            y={labelY + 20}
+            textAnchor="middle"
+            fontSize="14"
+            fontWeight="700"
+            fill="#FEFCFC"
+          >
+            {pillar.label}
+          </text>
+        </motion.g>
+      ) : null}
     </g>
   );
 }
@@ -299,6 +342,11 @@ export function OfficeScene({
           <stop offset="0%" stopColor="#4FC3F7" stopOpacity="0.14" />
           <stop offset="100%" stopColor="#4FC3F7" stopOpacity="0" />
         </linearGradient>
+        <radialGradient id="office-hint">
+          <stop offset="0%" stopColor="#FF5722" stopOpacity="0.4" />
+          <stop offset="55%" stopColor="#FF5722" stopOpacity="0.14" />
+          <stop offset="100%" stopColor="#FF5722" stopOpacity="0" />
+        </radialGradient>
       </defs>
 
       {/* ============ ACHTERGROND: muur, raam, nacht ============ */}
@@ -377,45 +425,66 @@ export function OfficeScene({
         {/* Klok met draaiende wijzers */}
         <g>
           <circle cx="585" cy="185" r="27" fill="#FEFCFC" stroke={INK} strokeWidth="4" />
+          <line x1="585" y1="163" x2="585" y2="168" stroke={INK} strokeWidth="2.5" strokeLinecap="round" />
+          <line x1="607" y1="185" x2="602" y2="185" stroke={INK} strokeWidth="2.5" strokeLinecap="round" />
+          <line x1="585" y1="207" x2="585" y2="202" stroke={INK} strokeWidth="2.5" strokeLinecap="round" />
+          <line x1="563" y1="185" x2="568" y2="185" stroke={INK} strokeWidth="2.5" strokeLinecap="round" />
+          <motion.g
+            style={{ transformOrigin: "585px 185px", transformBox: "view-box" }}
+            initial={{ rotate: 120 }}
+            animate={idle ? { rotate: 480 } : undefined}
+            transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
+          >
+            <line x1="585" y1="185" x2="585" y2="166" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+          </motion.g>
+          <motion.g
+            style={{ transformOrigin: "585px 185px", transformBox: "view-box" }}
+            initial={{ rotate: 45 }}
+            animate={idle ? { rotate: 405 } : undefined}
+            transition={{ duration: 288, repeat: Infinity, ease: "linear" }}
+          >
+            <line x1="585" y1="185" x2="585" y2="172" stroke={INK} strokeWidth="3.5" strokeLinecap="round" />
+          </motion.g>
           <circle cx="585" cy="185" r="2.6" fill={INK} />
-          <motion.g
-            style={{ transformOrigin: "585px 185px", transformBox: "fill-box" }}
-            animate={idle ? { rotate: 360 } : undefined}
-            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-          >
-            <line x1="585" y1="185" x2="585" y2="162" stroke={INK} strokeWidth="3.5" strokeLinecap="round" />
-          </motion.g>
-          <motion.g
-            style={{ transformOrigin: "585px 185px", transformBox: "fill-box" }}
-            animate={idle ? { rotate: 360 } : undefined}
-            transition={{ duration: 96, repeat: Infinity, ease: "linear" }}
-          >
-            <line x1="585" y1="185" x2="599" y2="191" stroke={INK} strokeWidth="3" strokeLinecap="round" />
-          </motion.g>
         </g>
 
-        {/* Ingelijst portret: de kantoorkat */}
+        {/* Ingelijst portret: de kantoorkat, medewerker van de maand */}
         <g>
           <rect x="868" y="162" width="118" height="146" rx="6" fill="#C9A227" stroke={INK} strokeWidth="4" />
           <rect x="878" y="172" width="98" height="124" rx="4" fill="#F5EDE0" stroke={INK} strokeWidth="2.5" />
-          <ellipse cx="927" cy="228" rx="34" ry="30" fill="#E8A04A" stroke={INK} strokeWidth="3" />
-          <path d="M900 206 L908 192 L916 206 Z" fill="#E8A04A" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
-          <path d="M938 206 L946 192 L954 206 Z" fill="#E8A04A" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
-          <ellipse cx="914" cy="224" rx="5" ry="6.5" fill="#fff" stroke={INK} strokeWidth="2" />
-          <ellipse cx="940" cy="224" rx="5" ry="6.5" fill="#fff" stroke={INK} strokeWidth="2" />
-          <circle cx="915" cy="225" r="2.2" fill={INK} />
-          <circle cx="941" cy="225" r="2.2" fill={INK} />
-          <ellipse cx="927" cy="236" rx="4" ry="3" fill="#F2B285" stroke={INK} strokeWidth="1.5" />
+
+          {/* Oren boven het gezicht */}
+          <path d="M902 210 L909 194 L918 208 Z" fill="#E8A04A" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+          <path d="M936 208 L945 194 L952 210 Z" fill="#E8A04A" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+          <ellipse cx="927" cy="232" rx="33" ry="29" fill="#E8A04A" stroke={INK} strokeWidth="3" />
+
+          {/* Ogen, neus */}
+          <ellipse cx="915" cy="226" rx="5" ry="6.5" fill="#fff" stroke={INK} strokeWidth="2" />
+          <ellipse cx="939" cy="226" rx="5" ry="6.5" fill="#fff" stroke={INK} strokeWidth="2" />
+          <circle cx="916" cy="227" r="2.2" fill={INK} />
+          <circle cx="940" cy="227" r="2.2" fill={INK} />
+          <path d="M923 238 L931 238 L927 243 Z" fill="#F2B285" stroke={INK} strokeWidth="1.8" strokeLinejoin="round" />
+
+          {/* Whiskers, symmetrisch */}
+          <path d="M896 232 L910 234 M896 242 L910 240" stroke={INK} strokeWidth="1.6" strokeLinecap="round" />
+          <path d="M958 232 L944 234 M958 242 L944 240" stroke={INK} strokeWidth="1.6" strokeLinecap="round" />
+
+          {/* Snorretje net als de baas, gecentreerd op 927 */}
           <path
-            d="M914 244 C916 241 920 241 922 243 C924 241 928 241 930 244 C929 246 926 247 922 246 C918 247 915 246 914 244 Z"
+            d="M916 250 C919 246.5 924 246.8 927 249.2 C930 246.8 935 246.5 938 250 C937 252.8 933 253.8 927 252.2 C921 253.8 917 252.8 916 250 Z"
             fill={INK}
           />
-          <path d="M903 248 C910 252 934 252 941 248" fill="none" stroke={INK} strokeWidth="2" strokeLinecap="round" />
-          <path d="M910 178 L944 178 L938 168 L916 168 Z" fill={INK} stroke={INK} strokeWidth="2" strokeLinejoin="round" />
-          <rect x="916" y="172" width="24" height="5" rx="2" fill="#FF5722" />
-          <rect x="886" y="282" width="82" height="10" rx="3" fill="#EDE7DE" stroke={INK} strokeWidth="1.5" />
-          <text x="927" y="290" textAnchor="middle" fontSize="7" fontWeight="700" fill={INK} letterSpacing="0.08em">
-            MEDEWERKER VD MAAND
+          <path d="M921 256.5 C924 258.5 930 258.5 933 256.5" fill="none" stroke={INK} strokeWidth="2" strokeLinecap="round" />
+
+          {/* Mini-bolhoed */}
+          <path d="M913 194 a14 12 0 0 1 28 0 v1 h-28 z" fill={INK} />
+          <rect x="914" y="190" width="26" height="4" fill="#FF5722" />
+          <rect x="906" y="193.4" width="42" height="4.6" rx="2.3" fill={INK} />
+
+          {/* Naamplaatje */}
+          <rect x="884" y="280" width="86" height="12" rx="3" fill="#EDE7DE" stroke={INK} strokeWidth="1.5" />
+          <text x="927" y="289" textAnchor="middle" fontSize="7.5" fontWeight="700" fill={INK} letterSpacing="0.06em">
+            KAT VAN DE MAAND
           </text>
         </g>
       </motion.g>
@@ -423,7 +492,7 @@ export function OfficeScene({
       {/* ============ MIDDENLAAG: whiteboard en lamp ============ */}
       <motion.g style={reduce ? undefined : { x: midX, y: midY }}>
         {/* Strategiebord */}
-        <ClickablePillar id="strategie" {...clickProps}>
+        <ClickablePillar id="strategie" hintDelay={0} {...clickProps}>
           <g>
             <rect x="130" y="140" width="322" height="252" rx="14" fill="#F7F8FA" stroke={INK} strokeWidth="5" />
             <rect x="200" y="392" width="182" height="12" rx="5" fill="#C9CFDA" stroke={INK} strokeWidth="2.5" />
@@ -560,8 +629,16 @@ export function OfficeScene({
         <rect x="270" y="619" width="22" height="146" fill="#5F3E27" stroke={INK} strokeWidth="2.5" />
         <rect x="1328" y="619" width="22" height="146" fill="#5F3E27" stroke={INK} strokeWidth="2.5" />
 
+        {/* Contactschaduwen zodat objecten op het blad staan */}
+        <g fill="#0B0F17" opacity="0.32" aria-hidden>
+          <ellipse cx="541" cy="586" rx="96" ry="5.5" />
+          <ellipse cx="666" cy="586" rx="24" ry="4.5" />
+          <ellipse cx="985" cy="586" rx="66" ry="5.5" />
+          <ellipse cx="1200" cy="588" rx="66" ry="5.5" />
+        </g>
+
         {/* Bouwlaptop */}
-        <ClickablePillar id="bouwen" {...clickProps}>
+        <ClickablePillar id="bouwen" hintDelay={0.7} {...clickProps}>
           <g>
             <rect x="455" y="443" width="172" height="120" rx="9" fill="#10151F" stroke={INK} strokeWidth="4" />
             <rect x="455" y="443" width="172" height="120" rx="9" fill="url(#office-screen-glow)" />
@@ -618,59 +695,102 @@ export function OfficeScene({
           <path d="M684 556 q16 8 0 22" fill="none" stroke={INK} strokeWidth="3" />
         </g>
 
-        {/* Vergrootglas op tafel (vindbaarheid) */}
-        <ClickablePillar id="vindbaarheid" {...clickProps}>
-          <g transform="rotate(-22 762 548)">
-            <rect x="698" y="538" width="128" height="16" rx="8" fill="#8B5E3C" stroke={INK} strokeWidth="3" />
-            <rect x="706" y="541" width="112" height="10" rx="5" fill="#A0714A" />
-            <circle cx="762" cy="518" r="40" fill="none" stroke="#B8C4D4" strokeWidth="9" />
-            <circle cx="762" cy="518" r="33" fill="#D4ECFF" fillOpacity="0.55" stroke={INK} strokeWidth="3.5" />
+        {/* Vergrootglas op het bureau (vindbaarheid) */}
+        <ClickablePillar id="vindbaarheid" hintDelay={1.4} {...clickProps}>
+          <g>
+            {/* Handvat rust op het blad */}
+            <line x1="1000" y1="560" x2="1046" y2="581" stroke={INK} strokeWidth="17" strokeLinecap="round" />
+            <line x1="1000" y1="560" x2="1043" y2="579" stroke="#8B5E3C" strokeWidth="11" strokeLinecap="round" />
+            <line x1="1001" y1="558" x2="1030" y2="571" stroke="#A0714A" strokeWidth="4" strokeLinecap="round" />
+
+            {/* Lens leunt schuin tegen het bureau */}
+            <circle cx="968" cy="532" r="46" fill="none" stroke={INK} strokeWidth="4" />
+            <circle cx="968" cy="532" r="41" fill="#D4ECFF" fillOpacity="0.5" stroke="#C9D4E2" strokeWidth="8" />
+            <circle cx="968" cy="532" r="36.5" fill="none" stroke={INK} strokeWidth="2.5" />
             <path
-              d="M742 498 a22 22 0 0 1 14 -8"
+              d="M944 515 a29 29 0 0 1 15 -11"
               fill="none"
               stroke="#FEFCFC"
               strokeWidth="5"
               strokeLinecap="round"
-              opacity="0.75"
+              opacity="0.8"
             />
-            <circle cx="778" cy="510" r="9" fill="#F3C65B" stroke={INK} strokeWidth="2" />
-            <text x="778" y="514" textAnchor="middle" fontSize="8" fontWeight="800" fill={INK}>
+
+            {/* Gouden #1 in het glas */}
+            <circle cx="982" cy="520" r="11" fill="#F3C65B" stroke={INK} strokeWidth="2.5" />
+            <text x="982" y="525" textAnchor="middle" fontSize="12" fontWeight="800" fill={INK}>
               1
             </text>
           </g>
         </ClickablePillar>
 
         {/* Megafoon met geluidsgolven */}
-        <ClickablePillar id="campagnes" {...clickProps}>
+        <ClickablePillar id="campagnes" hintDelay={2.1} {...clickProps}>
           <g>
-            <g transform="rotate(-6 1200 552)">
-              <rect x="1140" y="536" width="18" height="34" rx="8" fill="#E64A19" stroke={INK} strokeWidth="3.5" />
-              <path d="M1154 540 L1246 512 L1246 592 L1154 566 Z" fill="#FF5722" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
-              <rect x="1244" y="506" width="15" height="92" rx="7.5" fill="#E64A19" stroke={INK} strokeWidth="3.5" />
-              <path d="M1182 568 q4 20 22 18" fill="none" stroke={INK} strokeWidth="6" strokeLinecap="round" />
+            <g transform="rotate(-8 1200 552)">
+              {/* Handvat onder de romp */}
+              <path
+                d="M1178 566 L1172 592 Q1170 600 1178 600 L1196 600 Q1203 600 1201 592 L1196 570"
+                fill="#C43E14"
+                stroke={INK}
+                strokeWidth="3.5"
+                strokeLinejoin="round"
+              />
+              {/* Mondstuk */}
+              <rect x="1132" y="537" width="22" height="30" rx="10" fill="#C43E14" stroke={INK} strokeWidth="3.5" />
+              <circle cx="1143" cy="552" r="4" fill="#8F2D0E" />
+              {/* Romp: vloeiende conus */}
+              <path
+                d="M1150 541 Q1148 552 1148 552 Q1148 552 1150 563 L1238 590 Q1250 594 1250 581 L1250 523 Q1250 510 1238 514 Z"
+                fill="#FF5722"
+                stroke={INK}
+                strokeWidth="4"
+                strokeLinejoin="round"
+              />
+              {/* Crème band en glans op de romp */}
+              <path d="M1174 534 L1190 529 L1190 573 L1174 568 Z" fill="#FFE8D6" opacity="0.9" />
+              <path d="M1158 545 Q1200 534 1240 524" fill="none" stroke="#FFB74D" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
+              {/* Bell-rand */}
+              <ellipse cx="1250" cy="552" rx="11" ry="42" fill="#FFD180" stroke={INK} strokeWidth="3.5" />
+              <ellipse cx="1250" cy="552" rx="5" ry="33" fill="#B33A10" />
             </g>
             {[
-              { d: "M1276 520 q16 30 0 60", w: 4, delay: 0 },
-              { d: "M1292 506 q24 44 0 88", w: 4, delay: 0.25 },
-              { d: "M1308 492 q32 58 0 116", w: 4, delay: 0.5 },
+              { d: "M1280 520 q16 30 0 60", delay: 0 },
+              { d: "M1296 506 q24 44 0 88", delay: 0.25 },
+              { d: "M1312 492 q32 58 0 116", delay: 0.5 },
             ].map((arc) => (
               <motion.path
                 key={arc.d}
                 d={arc.d}
                 fill="none"
                 stroke="#F3C65B"
-                strokeWidth={arc.w}
+                strokeWidth="4"
                 strokeLinecap="round"
                 initial={{ opacity: 0 }}
                 animate={idle ? { opacity: [0, 0.9, 0] } : undefined}
                 transition={{ duration: 2, repeat: Infinity, delay: arc.delay, repeatDelay: 1.6, ease: "easeInOut" }}
               />
             ))}
+            {/* Kleine sterretjes tussen de golven */}
+            {[
+              { x: 1330, y: 512, delay: 0.9 },
+              { x: 1346, y: 560, delay: 1.5 },
+            ].map((star) => (
+              <motion.path
+                key={`${star.x}-${star.y}`}
+                d={`M${star.x} ${star.y - 6} L${star.x + 1.8} ${star.y - 1.8} L${star.x + 6} ${star.y} L${star.x + 1.8} ${star.y + 1.8} L${star.x} ${star.y + 6} L${star.x - 1.8} ${star.y + 1.8} L${star.x - 6} ${star.y} L${star.x - 1.8} ${star.y - 1.8} Z`}
+                fill="#F3C65B"
+                initial={{ opacity: 0 }}
+                animate={idle ? { opacity: [0, 1, 0], scale: [0.6, 1, 0.6] } : undefined}
+                transition={{ duration: 2, repeat: Infinity, delay: star.delay, repeatDelay: 1.6, ease: "easeInOut" }}
+                style={{ transformBox: "fill-box", transformOrigin: "50% 50%" }}
+              />
+            ))}
           </g>
         </ClickablePillar>
 
         {/* Bijzettafel met mailmachine */}
-        <ClickablePillar id="behoud" {...clickProps}>
+        <ClickablePillar id="behoud" hintDelay={2.8} {...clickProps}>
           <g>
             <motion.g
               initial={{ y: 44, opacity: 0 }}
