@@ -7,7 +7,7 @@ import { GroeiscanSection } from "@/components/home/GroeiscanSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
 import { MeneerPeek } from "@/components/home/MeneerPeek";
-import { ServicesOrigamiBento } from "@/components/home/ServicesOrigamiBento";
+import { ServicesOfficeSection } from "@/components/home/office/ServicesOfficeSection";
 import { StrategicSignatureSection } from "@/components/home/StrategicSignatureSection";
 import { ScrollCodeStream } from "@/components/effects/ScrollCodeStream";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -32,7 +32,7 @@ export default function HomePage() {
       <main id="main" className="flex-1">
         <HeroSection />
         <ScrollCodeStream height={180} className="py-4" />
-        <ServicesOrigamiBento />
+        <ServicesOfficeSection />
         <FunFactsSection />
         <StrategicSignatureSection />
         <DifferenceSection />
