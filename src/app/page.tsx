@@ -9,7 +9,7 @@ import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection
 import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { ServicesOfficeSection } from "@/components/home/office/ServicesOfficeSection";
 import { StrategicSignatureSection } from "@/components/home/StrategicSignatureSection";
-import { ScrollCodeStream } from "@/components/effects/ScrollCodeStream";
+import { HomeUspBar } from "@/components/home/HomeUspBar";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 
@@ -31,7 +31,7 @@ export default function HomePage() {
       <SiteHeader />
       <main id="main" className="flex-1">
         <HeroSection />
-        <ScrollCodeStream height={180} className="py-4" />
+        <HomeUspBar />
         <ServicesOfficeSection />
         <FunFactsSection />
         <StrategicSignatureSection />
