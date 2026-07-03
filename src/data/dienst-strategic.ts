@@ -501,7 +501,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   },
 };
 
-function fallbackSlugContent(slug: string): Omit<DienstStrategicContent, "scenarios"> {
+function fallbackSlugContent(): Omit<DienstStrategicContent, "scenarios"> {
   return {
     deepTitle: "Op maat voor jouw situatie",
     deepLead:
@@ -521,7 +521,7 @@ export function getDienstStrategic(
   slug: string,
   pillar: string,
 ): DienstStrategicContent & { pillarLens: string } {
-  const core = BY_SLUG[slug] ?? fallbackSlugContent(slug);
+  const core = BY_SLUG[slug] ?? fallbackSlugContent();
   const scenarios =
     SCENARIOS_BY_SLUG[slug] ??
     SCENARIOS_BY_PILLAR[pillar] ??

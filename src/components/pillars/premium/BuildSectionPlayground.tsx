@@ -141,9 +141,11 @@ export function BuildSectionPlayground({
   useEffect(() => {
     if (!inView) return;
     if (reduce) {
-      setSlots(sections.map((s) => s.id));
-      setPalette([]);
-      return;
+      const t = window.setTimeout(() => {
+        setSlots(sections.map((s) => s.id));
+        setPalette([]);
+      }, 0);
+      return () => window.clearTimeout(t);
     }
     if (userTouchedRef.current) return;
 
