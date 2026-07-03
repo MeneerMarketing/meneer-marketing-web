@@ -3,7 +3,8 @@ import { ArrowUpRight, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { StickerStrip } from "@/components/diensten/premium/StickerStrip";
 import { BouwenHero } from "@/components/pillars/premium/BouwenHero";
-import { BuildSectionPlayground } from "@/components/pillars/premium/BuildSectionPlayground";
+import { BuildContextSection } from "@/components/pillars/premium/BuildContextSection";
+import { BuildStackMatcher } from "@/components/pillars/premium/BuildStackMatcher";
 import { BuildStagesScroll } from "@/components/pillars/premium/BuildStagesScroll";
 import { PillarProofPanel } from "@/components/pillars/premium/PillarProofPanel";
 import { ServiceBlueprintMap } from "@/components/pillars/premium/ServiceBlueprintMap";
@@ -34,8 +35,7 @@ interface PillarPremiumViewProps {
 
 /**
  * Premium hub-pagina voor het blok Bouwen: isometrische lagen-hero,
- * interactieve bouwtekening, sleepbare sectie-assembler en een bouwtraject
- * dat meebouwt terwijl je scrolt.
+ * interactieve context, bouwtekening, stack-matcher en bouwtraject.
  */
 export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
   const column = megaMenuColumns.find((c) => c.pillarSlug === data.slug)!;
@@ -143,55 +143,14 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
 
         <StickerStrip items={premium.stickers} />
 
-        {/* Intro + fun fact */}
-        <section className="border-b border-slate-200 bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-            <div className="lg:grid lg:grid-cols-[1fr_minmax(0,380px)] lg:items-start lg:gap-14">
-              <div>
-                <Reveal>
-                  <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                    Context die telt
-                  </h2>
-                </Reveal>
-                {data.introParagraphs.map((p, i) => (
-                  <Reveal key={i} delay={0.05 * (i + 1)}>
-                    <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-700">
-                      {p}
-                    </p>
-                  </Reveal>
-                ))}
-                <Reveal delay={0.15}>
-                  <h3 className="mt-10 text-xl font-extrabold tracking-tight text-slate-900">
-                    {data.angleTitle}
-                  </h3>
-                  <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-600">
-                    {data.angleBody}
-                  </p>
-                </Reveal>
-              </div>
-
-              <Reveal delay={0.1} className="mt-10 lg:mt-0">
-                <figure className="relative overflow-hidden rounded-3xl border border-[#FF5722]/25 bg-gradient-to-br from-[#FF5722]/[0.06] via-white to-white p-7 sm:p-8">
-                  <span
-                    className="pointer-events-none absolute -right-2 -top-6 select-none text-[5.5rem] font-extrabold leading-none tracking-tighter text-[#FF5722]/[0.09]"
-                    aria-hidden
-                  >
-                    {premium.funFactStat}
-                  </span>
-                  <p className="relative inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.15em] text-white">
-                    Wist je dit?
-                  </p>
-                  <blockquote className="relative mt-4 text-balance text-lg font-extrabold leading-snug tracking-tight text-slate-900 sm:text-xl">
-                    {premium.funFact}
-                  </blockquote>
-                  <figcaption className="relative mt-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#FF5722]">
-                    {premium.funFactSource}
-                  </figcaption>
-                </figure>
-              </Reveal>
-            </div>
-          </div>
-        </section>
+        <BuildContextSection
+          introParagraphs={data.introParagraphs}
+          angleTitle={data.angleTitle}
+          angleBody={data.angleBody}
+          funFact={premium.funFact}
+          funFactSource={premium.funFactSource}
+          funFactStat={premium.funFactStat}
+        />
 
         {/* De bouwtekening: interactieve diensten-hub */}
         <ServiceBlueprintMap
@@ -200,12 +159,7 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
           services={serviceItems}
         />
 
-        {/* Interactieve sectie-assembler */}
-        <BuildSectionPlayground
-          title={premium.assemblerTitle}
-          subtitle={premium.assemblerSubtitle}
-          sections={premium.assemblerSections}
-        />
+        <BuildStackMatcher />
 
         {/* Bouwtraject als scroll-ervaring */}
         <BuildStagesScroll title={data.processTitle} stages={data.processSteps} />
@@ -226,44 +180,42 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
         </section>
 
         {/* CTA */}
-        <section className="border-t border-slate-200 bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <section className="relative overflow-hidden border-t border-slate-800 bg-slate-950">
+          <div
+            className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(56,189,248,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(56,189,248,0.06)_1px,transparent_1px)] bg-[size:32px_32px]"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute left-1/2 top-0 h-48 w-96 -translate-x-1/2 rounded-full bg-[#FF5722]/15 blur-3xl"
+            aria-hidden
+          />
+          <div className="relative mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8 lg:py-24">
             <Reveal>
-              <div className="relative overflow-hidden rounded-[28px] border border-slate-200 bg-slate-950 px-6 py-12 text-center sm:px-10 sm:py-16">
-                <div
-                  className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(56,189,248,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(56,189,248,0.06)_1px,transparent_1px)] bg-[size:32px_32px]"
+              <span className="mx-auto inline-block" aria-hidden>
+                <InteractiveLogo className="h-16 w-16" />
+              </span>
+              <h2 className="mt-5 text-balance text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
+                {data.ctaTitle}
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
+                {data.ctaBody}
+              </p>
+              <Link
+                href={siteCtas.groeiscan.href}
+                className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full bg-[#FF5722] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:shadow-[#FF5722]/50"
+              >
+                <span
                   aria-hidden
+                  className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-white transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
                 />
-                <div
-                  className="pointer-events-none absolute left-1/2 top-0 h-40 w-80 -translate-x-1/2 rounded-full bg-[#FF5722]/20 blur-3xl"
-                  aria-hidden
-                />
-                <span className="relative mx-auto inline-block" aria-hidden>
-                  <InteractiveLogo className="h-16 w-16" />
+                <span className="relative z-10 transition-colors duration-300 group-hover:text-slate-900">
+                  Start met Groeiscan
                 </span>
-                <h2 className="relative mt-5 text-balance text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
-                  {data.ctaTitle}
-                </h2>
-                <p className="relative mx-auto mt-4 max-w-2xl text-lg text-slate-300">
-                  {data.ctaBody}
-                </p>
-                <Link
-                  href={siteCtas.groeiscan.href}
-                  className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full bg-[#FF5722] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:shadow-[#FF5722]/50"
-                >
-                  <span
-                    aria-hidden
-                    className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-white transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
-                  />
-                  <span className="relative z-10 transition-colors duration-300 group-hover:text-slate-900">
-                    Start met Groeiscan
-                  </span>
-                  <ArrowUpRight className="relative z-10 size-5 transition-colors duration-300 group-hover:text-slate-900" aria-hidden />
-                </Link>
-                <p className="relative mt-4 text-xs text-slate-500">
-                  Liever direct mailen? Vul je contactgegevens in op de Groeiscan-pagina.
-                </p>
-              </div>
+                <ArrowUpRight className="relative z-10 size-5 transition-colors duration-300 group-hover:text-slate-900" aria-hidden />
+              </Link>
+              <p className="mt-4 text-xs text-slate-500">
+                Liever direct mailen? Vul je contactgegevens in op de Groeiscan-pagina.
+              </p>
             </Reveal>
           </div>
         </section>

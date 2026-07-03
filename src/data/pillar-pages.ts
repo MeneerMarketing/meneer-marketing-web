@@ -139,9 +139,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     proofTitle: "Waar je direct winst pakt",
     proofBody:
       "Snelheid en stabiliteit converteren. En maken SEO en ads goedkoper. Voor SkinComplete bouwden we naast de shop ook een compleet B2B-portaal in Shopify. Wij meten voor en na, koppelen dat aan je analytics en vertalen het naar concrete volgende stappen.",
-    ctaTitle: "Klaar om het fundament te versterken?",
+    ctaTitle: "Klaar om te bouwen zonder plafond?",
     ctaBody:
-      "Plan een Groeiscan of start-intake. We koppelen bouw aan je groeidoelen en maken prioriteit helder.",
+      "Van Shopify-shop tot webapp: we tekenen het fundament, kiezen de stack en leggen vast wat wanneer live gaat. Start met een Groeiscan en we maken het concreet.",
   },
   vindbaarheid: {
     slug: "vindbaarheid",
