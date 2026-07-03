@@ -34,6 +34,29 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       { label: "Bijsturen", value: "Maandelijks" },
     ],
   },
+  vindbaarheid: {
+    stickers: [
+      "SEO",
+      "AI-zoek",
+      "ChatGPT",
+      "Maps",
+      "Content",
+      "Reviews",
+      "Organisch",
+    ],
+    funFact:
+      "40% van jongvolwassenen gebruikt AI als eerste stap vóór Google. Als je daar niet in het antwoord staat, ben je voor hen onzichtbaar.",
+    funFactSource: "Daarom optimaliseren we voor Google én AI",
+    funFactStat: "40%",
+    hubTitle: "Elk zoekvlak is een kans om gevonden te worden.",
+    hubSubtitle:
+      "Beweeg over het zoeklandschap en zie welke dienst welk vlak dekt. Of pak de lijst en spring direct naar het juiste traject.",
+    proofMetrics: [
+      { label: "Organisch verkeer", value: "Groeiend" },
+      { label: "AI-vermelding", value: "Meetbaar" },
+      { label: "Posities", value: "Vasthouden" },
+    ],
+  },
   bouwen: {
     stickers: [
       "From scratch",

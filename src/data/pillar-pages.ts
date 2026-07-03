@@ -160,9 +160,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     subheadline:
       "Google is niet meer de enige plek waar klanten zoeken. Wij maken je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
     stats: [
-      { label: "SEO", value: "Content · structuur · techniek" },
-      { label: "AI-zoek", value: "ChatGPT · Perplexity · AI Overviews" },
-      { label: "Lokaal", value: "Google Business · Maps · reviews" },
+      { label: "SEO", value: "Content · techniek · structuur" },
+      { label: "AI-zoek", value: "ChatGPT · Perplexity · AI" },
+      { label: "Lokaal", value: "Maps · Google Business · reviews" },
     ],
     introParagraphs: [
       "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT of Perplexity welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, besta je voor die klant simpelweg niet.",
@@ -195,9 +195,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     proofTitle: "Vindbaarheid is een bezit, geen kostenpost",
     proofBody:
       "Advertenties stoppen zodra je budget stopt. Een sterke organische positie blijft klanten opleveren, maand na maand. Daarom behandelen we vindbaarheid als investering: meetbaar in posities, verkeer en omzet per pagina.",
-    ctaTitle: "Weten waar jij nu vindbaar bent?",
+    ctaTitle: "Klaar om overal gevonden te worden?",
     ctaBody:
-      "Start met de Groeiscan. We laten zien waar je staat in Google én in AI-zoek, en waar de snelste winst zit.",
+      "We checken waar je nu staat in Google én in AI-zoek, en welke stappen het snelst traffic en vertrouwen opleveren. Start met de Groeiscan.",
   },
   campagnes: {
     slug: "campagnes",

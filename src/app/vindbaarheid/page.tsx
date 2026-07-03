@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PillarLandingView } from "@/components/pillars/PillarLandingView";
+import { PillarPageView } from "@/components/pillars/PillarPageView";
 import { pillarPages } from "@/data/pillar-pages";
 import { absoluteUrl } from "@/lib/site";
 
@@ -20,5 +20,5 @@ export const metadata: Metadata = {
 };
 
 export default function VindbaarheidPage() {
-  return <PillarLandingView data={data} />;
+  return <PillarPageView data={data} />;
 }

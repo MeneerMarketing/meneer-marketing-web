@@ -10,9 +10,14 @@ import { GrowthChannelMap } from "@/components/pillars/premium/GrowthChannelMap"
 import { GrowthSituationMatcher } from "@/components/pillars/premium/GrowthSituationMatcher";
 import { PillarProofPanel } from "@/components/pillars/premium/PillarProofPanel";
 import { ServiceBlueprintMap } from "@/components/pillars/premium/ServiceBlueprintMap";
+import { SearchIntentMatcher } from "@/components/pillars/premium/SearchIntentMatcher";
 import { StrategieContextSection } from "@/components/pillars/premium/StrategieContextSection";
 import { StrategieHero } from "@/components/pillars/premium/StrategieHero";
 import { StrategieStagesScroll } from "@/components/pillars/premium/StrategieStagesScroll";
+import { VindbaarheidContextSection } from "@/components/pillars/premium/VindbaarheidContextSection";
+import { VindbaarheidHero } from "@/components/pillars/premium/VindbaarheidHero";
+import { VindbaarheidStagesScroll } from "@/components/pillars/premium/VindbaarheidStagesScroll";
+import { VisibilitySurfaceMap } from "@/components/pillars/premium/VisibilitySurfaceMap";
 import {
   JsonLdScript,
   breadcrumbJsonLd,
@@ -45,6 +50,8 @@ function PillarHeroVisual({ slug }: { slug: PillarSlug }) {
       return <BouwenHero />;
     case "strategie":
       return <StrategieHero />;
+    case "vindbaarheid":
+      return <VindbaarheidHero />;
     default:
       return null;
   }
@@ -197,6 +204,26 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
             />
             <GrowthSituationMatcher />
             <StrategieStagesScroll title={data.processTitle} stages={data.processSteps} />
+          </>
+        ) : null}
+
+        {data.slug === "vindbaarheid" ? (
+          <>
+            <VindbaarheidContextSection
+              introParagraphs={data.introParagraphs}
+              angleTitle={data.angleTitle}
+              angleBody={data.angleBody}
+              funFact={premium.funFact}
+              funFactSource={premium.funFactSource}
+              funFactStat={premium.funFactStat}
+            />
+            <VisibilitySurfaceMap
+              title={premium.hubTitle}
+              subtitle={premium.hubSubtitle}
+              services={serviceItems}
+            />
+            <SearchIntentMatcher />
+            <VindbaarheidStagesScroll title={data.processTitle} stages={data.processSteps} />
           </>
         ) : null}
 
