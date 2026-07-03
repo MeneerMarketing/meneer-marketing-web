@@ -181,7 +181,7 @@ export function ScrollMeneer() {
   return (
     <div
       ref={railRef}
-      className={`fixed bottom-6 right-0 top-24 z-40 w-11 transition-opacity duration-500 sm:right-0.5 ${
+      className={`fixed bottom-6 right-0 top-24 z-40 w-11 overflow-visible transition-opacity duration-500 sm:right-0.5 ${
         scrollable ? "opacity-100" : "opacity-0"
       }`}
       role="scrollbar"
@@ -229,14 +229,12 @@ export function ScrollMeneer() {
       {/* Sleepbaar hoofd + desktop-wolkje */}
       <motion.div
         data-scroll-head
-        className={`absolute left-1/2 top-0 z-10 -translate-x-1/2 touch-none select-none ${
+        className={`absolute left-1/2 top-0 z-10 w-0 overflow-visible touch-none select-none ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
         style={{
           y: headY,
           rotate: reduce || isDragging ? undefined : tilt,
-          width: headSize,
-          height: headSize,
         }}
         onPointerDown={handleHeadPointerDown}
         onPointerUp={handleHeadPointerUp}
@@ -249,9 +247,10 @@ export function ScrollMeneer() {
         aria-label="Sleep om te scrollen"
       >
         <div
-          className={`drop-shadow-[0_2px_6px_rgba(15,23,42,0.18)] transition-transform ${
+          className={`absolute left-1/2 top-0 -translate-x-1/2 drop-shadow-[0_2px_6px_rgba(15,23,42,0.18)] transition-transform ${
             isDragging ? "scale-110" : "hover:scale-105"
           }`}
+          style={{ width: headSize, height: headSize }}
         >
           <InteractiveLogo className="h-full w-full pointer-events-none" />
         </div>
@@ -264,13 +263,13 @@ export function ScrollMeneer() {
               animate={{ opacity: 1, x: 0, scale: 1 }}
               exit={{ opacity: 0, x: 8, scale: 0.96 }}
               transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-              className="pointer-events-none absolute right-[calc(100%+10px)] top-1/2 z-20 hidden max-w-[min(240px,calc(100vw-4rem))] -translate-y-1/2 lg:block"
+              className="pointer-events-none absolute right-3 top-1/2 z-20 hidden w-max min-w-[13.5rem] max-w-[min(20rem,calc(100vw-5.5rem))] -translate-y-1/2 translate-x-[-100%] lg:block"
             >
-              <div className="relative rounded-2xl border border-slate-200/90 bg-white px-3.5 py-2 shadow-[0_12px_32px_-12px_rgba(15,23,42,0.22)]">
-                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
+              <div className="relative rounded-2xl border border-slate-200/90 bg-white px-4 py-2.5 shadow-[0_12px_32px_-12px_rgba(15,23,42,0.22)]">
+                <p className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
                   Je bent hier
                 </p>
-                <p className="mt-0.5 text-xs font-extrabold leading-snug text-slate-900">
+                <p className="mt-1 text-sm font-extrabold leading-snug text-slate-900">
                   {sectionLabel}
                 </p>
                 <span
