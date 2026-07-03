@@ -19,8 +19,8 @@ export function OverCasesSection() {
             Geen stockfoto's. Wel echte trajecten.
           </h2>
           <p className="mt-3 max-w-xl text-slate-600">
-            SkinComplete en BestRest laten zien hoe strategie, bouw en marketing in
-            de juiste volgorde samenkomen.
+            SkinComplete, BestRest en Hills Pilates laten zien hoe strategie, bouw
+            en marketing in de juiste volgorde samenkomen.
           </p>
         </Reveal>
         <CaseSpotlight />

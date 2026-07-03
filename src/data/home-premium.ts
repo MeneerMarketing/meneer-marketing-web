@@ -12,9 +12,9 @@ export const HOME_PROOF = {
   title: "Bewijs dat het werkt",
   body: "Geen stockfoto's van handen schudden. Wel echte trajecten waar strategie, bouw en marketing in de juiste volgorde kwamen.",
   metrics: [
-    { label: "SkinComplete", value: "SEO eerst, ads later" },
-    { label: "BestRest", value: "Eigen koers per product" },
-    { label: "Aanpak", value: "Plan én uitvoering" },
+    { label: "SkinComplete", value: "B2B, SEO, ads & UGC" },
+    { label: "BestRest", value: "Shopify full stack" },
+    { label: "Hills Pilates", value: "Site, app & e-mail" },
   ],
   featuredHref: "/cases",
   featuredLabel: "Bekijk cases",

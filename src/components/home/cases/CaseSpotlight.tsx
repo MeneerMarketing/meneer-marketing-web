@@ -258,8 +258,8 @@ export function CasesPreviewHeader() {
           <span className="text-[#FF5722]">Echte trajecten.</span>
         </h2>
         <p className="mt-4 text-lg leading-relaxed text-slate-600">
-          Geen stockfoto&apos;s van handen schudden. Wel SkinComplete en BestRest:
-          echte keuzes, echte volgorde en resultaat dat je kunt uitleggen.
+          Geen stockfoto&apos;s van handen schudden. Wel SkinComplete, BestRest en
+          Hills Pilates: echte keuzes, echte volgorde en resultaat dat je kunt uitleggen.
         </p>
       </div>
       <div className="flex flex-col gap-2 self-start sm:flex-row sm:items-center lg:self-auto">
