@@ -20,22 +20,57 @@ export const HOME_PROOF = {
   featuredLabel: "Bekijk cases",
 } as const;
 
-export const HOME_WORK_STAGES = [
+export interface HomeTrajectoryStage {
+  id: string;
+  tag: string;
+  title: string;
+  headline: string;
+  body: string;
+  deliverables: readonly string[];
+  punchline: string;
+  scene: "discover" | "route" | "build" | "scale";
+}
+
+export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
   {
+    id: "discover",
+    tag: "Begrijpen",
     title: "Begrijpen",
-    body: "Intake, data, doelen en je huidige stack. Geen offerte vóór er helderheid is.",
+    headline: "We starten met jouw werkelijkheid, niet met een pitch.",
+    body: "Intake, data, doelen en je huidige stack. Geen offerte vóór er helderheid is over waar groei zit en wat eerst moet.",
+    deliverables: ["Groeiscan & prioriteiten", "Stack in kaart", "Eerste quick wins"],
+    punchline: "Jij praat. Ik luister en stel de scherpe vragen.",
+    scene: "discover",
   },
   {
+    id: "route",
+    tag: "Route",
     title: "Route kiezen",
-    body: "Welke kanalen, welke volgorde en wat het kost. Maximaal drie focuspunten tegelijk.",
+    headline: "Maximaal drie focuspunten. De rest wacht zijn beurt.",
+    body: "Welke kanalen, welke volgorde en wat het kost. Geen alles-tegelijk-plan dat niemand uitvoert.",
+    deliverables: ["Volgorde per kanaal", "Realistisch budget", "Meetplan & KPI's"],
+    punchline: "SEO eerst of ads eerst? Dat beslissen we op data, niet op gevoel.",
+    scene: "route",
   },
   {
+    id: "build",
+    tag: "Bouwen",
     title: "Bouwen & meten",
-    body: "Site, shop, campagnes of flows. Alles met meetpunten zodat je ziet wat werkt.",
+    headline: "Van plan naar live. Met meetpunten vanaf dag één.",
+    body: "Site, shop, campagnes of flows. Alles custom, alles meetbaar. Je ziet wat live gaat en wat het doet.",
+    deliverables: ["Custom build live", "Tracking & events", "Eerste resultaten"],
+    punchline: "Geen templates. Geen page builders. Wel code die je kunt opschalen.",
+    scene: "build",
   },
   {
+    id: "scale",
+    tag: "Opschalen",
     title: "Opschalen",
-    body: "Wat werkt krijgt meer budget. Wat niet werkt gaat eruit. Zonder sentiment.",
+    headline: "Wat werkt krijgt gas. Wat niet werkt gaat eruit.",
+    body: "Klein testen was het begin. Nu schalen we wat geld oplevert en snijden we wat alleen ruis was weg.",
+    deliverables: ["Budget verschuiven", "Nieuwe tests", "Maandelijkse stuur"],
+    punchline: "Geen sentiment. Wel resultaat waar je op kunt bouwen.",
+    scene: "scale",
   },
 ] as const;
 
