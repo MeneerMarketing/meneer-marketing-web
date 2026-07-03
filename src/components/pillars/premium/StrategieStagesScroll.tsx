@@ -33,7 +33,7 @@ function StageData() {
         {[35, 55, 42, 70, 58, 82].map((h, i) => (
           <span
             key={i}
-            className="flex-1 rounded-t bg-violet-400/40"
+            className="flex-1 rounded-t bg-[#FF5722]/40"
             style={{ height: `${h}px` }}
             aria-hidden
           />
@@ -82,7 +82,7 @@ function StagePlan() {
   return (
     <div className="p-5">
       <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
-        <p className="text-[10px] font-black uppercase tracking-wider text-violet-600">
+        <p className="text-[10px] font-black uppercase tracking-wider text-[#FF5722]">
           Groeiplan Q2
         </p>
         {[
@@ -180,14 +180,14 @@ export function StrategieStagesScroll({ title, stages }: StrategieStagesScrollPr
                   aria-pressed={isActive}
                   className={`flex flex-1 items-start gap-4 rounded-2xl border px-4 py-4 text-left transition-all sm:px-5 ${
                     isActive
-                      ? "border-violet-400/40 bg-violet-50/80 shadow-[0_12px_32px_-20px_rgba(109,40,217,0.35)]"
+                      ? "border-[#FF5722]/40 bg-[#FF5722]/5 shadow-[0_12px_32px_-20px_rgba(255,87,34,0.35)]"
                       : "border-slate-200 bg-white hover:border-slate-300"
                   }`}
                 >
                   <span
                     className={`flex size-10 shrink-0 items-center justify-center rounded-xl border ${
                       isActive
-                        ? "border-violet-600 bg-violet-600 text-white"
+                        ? "border-[#FF5722] bg-[#FF5722] text-white"
                         : "border-slate-200 bg-slate-50 text-slate-500"
                     }`}
                     aria-hidden
@@ -197,7 +197,7 @@ export function StrategieStagesScroll({ title, stages }: StrategieStagesScrollPr
                   <span className="min-w-0">
                     <p
                       className={`text-[10px] font-black uppercase tracking-[0.16em] ${
-                        isActive ? "text-violet-600" : "text-slate-400"
+                        isActive ? "text-[#FF5722]" : "text-slate-400"
                       }`}
                     >
                       {STAGE_TAGS[index % STAGE_TAGS.length]}
@@ -227,7 +227,7 @@ export function StrategieStagesScroll({ title, stages }: StrategieStagesScrollPr
                 <span className="ml-3 flex-1 rounded-full bg-slate-100 px-3 py-1 text-[10px] font-semibold text-slate-400">
                   groeiplan.meneer
                 </span>
-                <span className="rounded-full bg-violet-600 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider text-white">
+                <span className="rounded-full bg-[#FF5722] px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider text-white">
                   {STAGE_TAGS[active % STAGE_TAGS.length]}
                 </span>
               </div>
@@ -253,7 +253,7 @@ export function StrategieStagesScroll({ title, stages }: StrategieStagesScrollPr
                   onClick={() => selectStage(i)}
                   aria-label={stage.title}
                   className={`h-1.5 rounded-full transition-all ${
-                    i === active ? "w-8 bg-violet-600" : "w-3 bg-slate-200"
+                    i === active ? "w-8 bg-[#FF5722]" : "w-3 bg-slate-200"
                   }`}
                 />
               ))}

@@ -144,7 +144,9 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
                 {data.stats.map((stat) => (
                   <div key={stat.label}>
                     <dt className="text-slate-500">{stat.label}</dt>
-                    <dd className="mt-1 font-bold text-slate-900">{stat.value}</dd>
+                    <dd className="mt-1 whitespace-nowrap text-xs font-bold text-slate-900 sm:text-sm">
+                      {stat.value}
+                    </dd>
                   </div>
                 ))}
               </dl>

@@ -76,13 +76,13 @@ function ZoneContent({ href }: { href: string }) {
             {["Q1", "Q2", "Q3", "Q4"].map((q) => (
               <span
                 key={q}
-                className="flex-1 rounded-md border border-violet-300/40 bg-violet-500/10 py-1 text-center text-[8px] font-bold text-violet-200"
+                className="flex-1 rounded-md border border-sky-400/40 bg-sky-500/10 py-1 text-center text-[8px] font-bold text-sky-200"
               >
                 {q}
               </span>
             ))}
           </div>
-          <span className="block h-1.5 w-2/3 rounded-full bg-violet-300/60" aria-hidden />
+          <span className="block h-1.5 w-2/3 rounded-full bg-sky-300/60" aria-hidden />
         </div>
       );
     case "/diensten/cro":
@@ -156,7 +156,7 @@ export function GrowthChannelMap({
       aria-labelledby="channel-map-heading"
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-        <p className="inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-400/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-violet-300">
+        <p className="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-sky-300">
           Het groeikompas
         </p>
         <h2
@@ -174,13 +174,13 @@ export function GrowthChannelMap({
                 className="pointer-events-none absolute -inset-3 rounded-3xl bg-[linear-gradient(to_right,rgba(139,92,246,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(139,92,246,0.08)_1px,transparent_1px)] bg-[size:24px_24px]"
                 aria-hidden
               />
-              <div className="relative flex flex-1 flex-col overflow-hidden rounded-2xl border border-violet-500/25 bg-slate-900/80 shadow-[0_32px_64px_-28px_rgba(2,6,23,0.9)]">
-                <div className="flex items-center gap-2 border-b border-violet-500/15 px-4 py-2.5">
-                  <span className="size-2 rounded-full bg-violet-400/50" aria-hidden />
-                  <span className="font-mono text-[10px] tracking-wider text-violet-300/70">
+              <div className="relative flex flex-1 flex-col overflow-hidden rounded-2xl border border-sky-500/25 bg-slate-900/80 shadow-[0_32px_64px_-28px_rgba(2,6,23,0.9)]">
+                <div className="flex items-center gap-2 border-b border-sky-500/15 px-4 py-2.5">
+                  <span className="size-2 rounded-full bg-sky-400/50" aria-hidden />
+                  <span className="font-mono text-[10px] tracking-wider text-sky-300/70">
                     groeikompas-v1.map
                   </span>
-                  <span className="ml-auto font-mono text-[10px] text-violet-400/50">
+                  <span className="ml-auto font-mono text-[10px] text-sky-400/50">
                     funnel view
                   </span>
                 </div>
@@ -202,7 +202,7 @@ export function GrowthChannelMap({
                         className={`absolute rounded-xl border transition-all duration-300 ${
                           isActive
                             ? "z-10 border-[#FF5722] bg-white shadow-[0_0_0_4px_rgba(255,87,34,0.25)]"
-                            : "border-dashed border-violet-400/35 bg-slate-800/60"
+                            : "border-dashed border-sky-400/35 bg-slate-800/60"
                         } ${isDimmed ? "opacity-30" : "opacity-100"}`}
                         style={{
                           left: `${zone.x}%`,
@@ -243,7 +243,7 @@ export function GrowthChannelMap({
                   key={stat.label}
                   className="rounded-xl border border-white/10 bg-white/[0.04] px-3 py-2.5 text-center"
                 >
-                  <p className="text-[9px] font-bold uppercase tracking-wider text-violet-300/70">
+                  <p className="text-[9px] font-bold uppercase tracking-wider text-sky-300/70">
                     {stat.label}
                   </p>
                   <p className="mt-0.5 text-sm font-extrabold text-white">{stat.value}</p>
@@ -258,13 +258,13 @@ export function GrowthChannelMap({
                   initial={reduce ? false : { opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="mt-3 text-center text-xs text-violet-200/80"
+                  className="mt-3 text-center text-xs text-sky-200/80"
                 >
                   Laag:{" "}
                   <span className="font-bold text-white">{activeZone.zoneLabel}</span>
                 </motion.p>
               ) : (
-                <p className="mt-3 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-violet-400/60">
+                <p className="mt-3 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-sky-400/60">
                   Beweeg over de kaart of de lijst
                 </p>
               )}
@@ -300,7 +300,7 @@ export function GrowthChannelMap({
                         className={`flex size-10 shrink-0 items-center justify-center rounded-xl ${
                           isActive
                             ? "bg-[#FF5722] text-white"
-                            : "bg-white/10 text-violet-300"
+                            : "bg-white/10 text-sky-300"
                         }`}
                         aria-hidden
                       >
@@ -320,7 +320,7 @@ export function GrowthChannelMap({
                       </span>
                     </span>
                     {zone ? (
-                      <span className="hidden rounded-full border border-white/10 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-violet-300/80 sm:inline">
+                      <span className="hidden rounded-full border border-white/10 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-sky-300/80 sm:inline">
                         {zone.short}
                       </span>
                     ) : null}

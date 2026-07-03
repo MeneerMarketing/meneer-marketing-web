@@ -91,7 +91,7 @@ export function GrowthSituationMatcher() {
       aria-labelledby="situation-heading"
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-        <p className="inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-400/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-violet-700">
+        <p className="inline-flex items-center gap-2 rounded-full border border-[#FF5722]/25 bg-[#FF5722]/5 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-[#FF5722]">
           Waar zit je nu?
         </p>
         <h2
@@ -116,7 +116,7 @@ export function GrowthSituationMatcher() {
                 onClick={() => setActive(g.id)}
                 className={`inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-bold transition-all ${
                   isActive
-                    ? "border-violet-600 bg-violet-600 text-white shadow-lg shadow-violet-600/25"
+                    ? "border-[#FF5722] bg-[#FF5722] text-white shadow-lg shadow-[#FF5722]/25"
                     : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
                 }`}
               >
@@ -137,7 +137,7 @@ export function GrowthSituationMatcher() {
           >
             <div className="flex flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
               <div className="flex items-center gap-3">
-                <span className="flex size-11 items-center justify-center rounded-2xl bg-violet-600 text-white">
+                <span className="flex size-11 items-center justify-center rounded-2xl bg-[#FF5722] text-white">
                   <Icon className="size-5" strokeWidth={1.8} aria-hidden />
                 </span>
                 <div>
@@ -153,14 +153,14 @@ export function GrowthSituationMatcher() {
                 {goal.outcome}
               </p>
               <div className="mt-5">
-                <p className="text-[10px] font-black uppercase tracking-[0.16em] text-violet-600">
+                <p className="text-[10px] font-black uppercase tracking-[0.16em] text-[#FF5722]">
                   Aanbevolen volgorde
                 </p>
                 <div className="mt-2 flex flex-wrap gap-2">
                   {goal.priority.map((step) => (
                     <span
                       key={step}
-                      className="rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-[11px] font-bold text-violet-800"
+                      className="rounded-full border border-[#FF5722]/20 bg-[#FF5722]/5 px-3 py-1 text-[11px] font-bold text-[#FF5722]"
                     >
                       {step}
                     </span>
@@ -182,19 +182,19 @@ export function GrowthSituationMatcher() {
                   >
                     <Link
                       href={service.href}
-                      className="group flex items-center justify-between gap-3 rounded-2xl border border-slate-100 bg-slate-50/60 px-4 py-3.5 transition-all hover:border-violet-300 hover:bg-violet-50/50"
+                      className="group flex items-center justify-between gap-3 rounded-2xl border border-slate-100 bg-slate-50/60 px-4 py-3.5 transition-all hover:border-[#FF5722]/30 hover:bg-[#FF5722]/5"
                     >
                       <span className="text-sm font-extrabold text-slate-900">
                         {service.name}
                       </span>
-                      <ArrowUpRight className="size-4 text-slate-400 group-hover:text-violet-600" aria-hidden />
+                      <ArrowUpRight className="size-4 text-slate-400 group-hover:text-[#FF5722]" aria-hidden />
                     </Link>
                   </motion.li>
                 ))}
               </ul>
               <Link
                 href="/groeiscan"
-                className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-violet-600"
+                className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-[#FF5722]"
               >
                 Bespreek je situatie
                 <ArrowUpRight className="size-4" aria-hidden />
