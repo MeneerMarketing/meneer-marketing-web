@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Search } from "lucide-react";
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { MouseEvent as ReactMouseEvent } from "react";
 
@@ -31,7 +32,7 @@ const SERP_SETS: SerpResult[][] = [
     { url: "concurrent-c.nl", title: "Webshop laten bouwen", snippet: "Snel online met ons pakket..." },
   ],
   [
-    { url: "meneermarketing.nl", title: "Vindbaar in AI-zoek · MeneerMarketing", snippet: "Genoemd worden in ChatGPT en Perplexity. Wij regelen het.", isYou: true },
+    { url: "meneermarketing.nl", title: "Vindbaar in AI-zoek · MeneerMarketing", snippet: "Genoemd worden in ChatGPT, Gemini en Claude. Wij regelen het.", isYou: true },
     { url: "seo-blog.nl", title: "AI SEO tips 2026", snippet: "10 tricks die je concurrent al kent..." },
     { url: "concurrent-d.nl", title: "ChatGPT optimalisatie", snippet: "Wij schrijven AI-content..." },
   ],
@@ -155,13 +156,17 @@ export function VindbaarheidHero() {
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_28px_56px_-24px_rgba(15,23,42,0.28)]">
         {/* Google-achtige header */}
         <div className="border-b border-slate-100 px-5 pt-5 pb-4">
-          <p className="text-center font-serif text-2xl font-bold tracking-tight text-slate-800">
-            Go<span className="text-[#4285F4]">o</span>
-            <span className="text-[#EA4335]">g</span>
-            <span className="text-[#FBBC05]">l</span>
-            <span className="text-[#4285F4]">e</span>
-            <span className="text-[13px] font-normal text-slate-400">.nl</span>
-          </p>
+          <div className="flex items-center justify-center gap-0.5">
+            <Image
+              src="/images/google-logo.png"
+              alt="Google"
+              width={110}
+              height={36}
+              className="h-8 w-auto"
+              priority
+            />
+            <span className="text-sm font-normal text-slate-400">.nl</span>
+          </div>
 
           <button
             type="button"

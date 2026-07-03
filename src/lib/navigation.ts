@@ -172,7 +172,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       },
       {
         name: "Vindbaar in AI-zoekmachines",
-        description: "Genoemd worden in ChatGPT, Perplexity en Google AI",
+        description: "Genoemd worden in ChatGPT, Gemini, Claude en Google AI",
         menuLabel: "AI-zoek & vindbaarheid",
         menuDescription:
           "Steeds meer klanten vragen het aan AI. Wij zorgen dat jouw bedrijf het antwoord is.",

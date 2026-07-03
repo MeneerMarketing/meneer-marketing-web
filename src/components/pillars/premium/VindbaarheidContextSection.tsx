@@ -19,8 +19,8 @@ const INSIGHTS = [
     icon: Bot,
     label: "AI-zoek",
     title: "ChatGPT is ook een zoekmachine",
-    preview: "Niet genoemd = besta je niet.",
-    body: "Een groeiend deel van je klanten vraagt eerst aan ChatGPT of Perplexity welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, besta je voor die klant simpelweg niet.",
+    preview: "Geen antwoord? Dan kijkt je klant verder.",
+    body: "Steeds meer klanten vragen eerst aan ChatGPT, Gemini of Claude welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen simpelweg geen optie meer.",
   },
   {
     id: "keten",
@@ -207,7 +207,7 @@ export function VindbaarheidContextSection({
               </div>
               <div className="mt-4 flex flex-wrap gap-2">
                 {(mode === "full"
-                  ? ["Google", "ChatGPT", "Maps", "Content", "Reviews"]
+                  ? ["Google", "ChatGPT", "Gemini", "Claude", "Maps"]
                   : ["Google"]
                 ).map((ch) => (
                   <span

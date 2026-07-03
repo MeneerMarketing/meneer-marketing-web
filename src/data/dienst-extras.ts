@@ -317,7 +317,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   "ai-zoek": {
     outcomes: [
-      "Jouw bedrijf als antwoord in ChatGPT, Perplexity en Google AI",
+      "Jouw bedrijf als antwoord in ChatGPT, Gemini, Claude en Google AI",
       "Content en techniek die AI-modellen kunnen lezen en citeren",
       "Voorsprong op concurrenten die dit kanaal nog niet kennen",
     ],
@@ -325,7 +325,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Is vindbaarheid in AI-zoek nu al belangrijk?",
         answer:
-          "Ja. Een groeiend deel van de zoektochten begint bij ChatGPT of Perplexity, en Google toont AI-antwoorden boven de gewone resultaten. Wie er nu in investeert, bouwt een voorsprong op die later duur is om in te halen.",
+          "Ja. Een groeiend deel van de zoektochten begint bij ChatGPT, Gemini of Claude, en Google toont AI-antwoorden boven de gewone resultaten. Wie er nu in investeert, bouwt een voorsprong op die later duur is om in te halen.",
       },
       {
         question: "Hoe verschilt dit van gewone SEO?",

@@ -17,19 +17,23 @@ Geldt voor **elke site in deze workspace**: MeneerMarketing (`src/`), Skin Compl
 
 ### Documentatie & communicatie
 
-5. **Klikbare bestandsnamen:** verwijs in chat, `.md`-bestanden en checklists altijd naar repo-bestanden als **markdown-links**, niet als platte backticks of losse paden.
-   - Goed: `[shopify/snippets/sc-footer.liquid](shopify/snippets/sc-footer.liquid)`
-   - Goed (vanuit `shopify/`): `[sc-footer.liquid](snippets/sc-footer.liquid)`
-   - Fout: `` `sc-footer.liquid` `` of `shopify/snippets/sc-footer.liquid` zonder link
-   - Zelfde voor mappen, templates, tasks en docs: elk pad dat de gebruiker moet openen of uploaden = klikbare link.
-6. **Upload-checklists:** in `SEO-UPLOAD-CHECKLIST.md` en vergelijkbare docs elke bestandsregel als link naar het lokale bestand.
+5. **Klikbare theme-bestanden (verplicht):** bij upload-checklists, nieuwe versies of gewijzigde Shopify-bestanden: **elk bestand als markdown-link**, relatief vanaf repo-root. Geen platte paden, geen absolute Windows-paden (`c:\Users\...`), geen backticks-only.
+   - Goed: `[symptom-landing-donkere-kringen.liquid](shopify/sections/symptom-landing-donkere-kringen.liquid)`
+   - Goed: `[page.donkere-kringen.liquid](shopify/templates/page.donkere-kringen.liquid)`
+   - Fout: `` `symptom-landing-donkere-kringen.liquid` ``, `shopify/sections/...` zonder link, of `[file](c:/Users/...)`
+   - Groepeer per upload-batch (sections / templates / snippets / layout). Admin-URLs alleen als extra, nooit in plaats van bestandslinks.
+6. **Upload-checklists:** in `SEO-UPLOAD-CHECKLIST.md` en vergelijkbare docs elke bestandsregel als klikbare link (`shopify/...`).
+
+### Shopify theme (Skin Complete)
+
+7. **Section schema `name` max 25 tekens:** in `{% schema %}` mag `"name"` en preset-`"name"` niet langer dan 25 karakters (Shopify `FileSaveError: name is te lang`). Voorbeeld: `Symptoom Donkere Kringen` (24), niet `Symptoom Landing Donkere Kringen` (30). Volg bestaand patroon: `Symptoom LP Striae`, `Symptoom Donkere Kringen`.
 
 ### Secties & layout
 
-7. **Nieuwe secties moeten uitblinken.** Als de gebruiker een nieuwe sectie vraagt: geen saaie tekstblok. Maak er een bewuste eyecatcher van. Denk aan mooie vlakken/kaarten, subtiele interactie (hover, scroll-reveal, tilt), typografie met punch, en één uniek detail dat de sectie onthoudbaar maakt. Wees creatief binnen het merk.
-8. **Twee kolommen = visueel in balans.** Bij layouts met foto/beeld links en tekst rechts (of omgekeerd): vul de tekstkolom rijk en satisfying. Gebruik kop, intro, bullets of mini-kaartjes, trust-elementen, CTA, pill-labels of metrics. Geen dunne kolom met drie regels naast een grote afbeelding.
-9. **Kolommen even hoog.** Beide kolommen moeten verticaal netjes uitlijnen (`items-stretch`, `h-full`, flex/grid met gelijke hoogte). De kortste kolom vult visueel de ruimte (spacing, sub-elementen, padding), zodat het geheel afgewerkt oogt.
-10. **Minimalistisch als basis, premium als sectie.** De site blijft clean en high-end. Een nieuwe sectie mag wél rijker en expressiever zijn, zolang het bij het merk past en niet rommelig wordt.
+8. **Nieuwe secties moeten uitblinken.** Als de gebruiker een nieuwe sectie vraagt: geen saaie tekstblok. Maak er een bewuste eyecatcher van. Denk aan mooie vlakken/kaarten, subtiele interactie (hover, scroll-reveal, tilt), typografie met punch, en één uniek detail dat de sectie onthoudbaar maakt. Wees creatief binnen het merk.
+9. **Twee kolommen = visueel in balans.** Bij layouts met foto/beeld links en tekst rechts (of omgekeerd): vul de tekstkolom rijk en satisfying. Gebruik kop, intro, bullets of mini-kaartjes, trust-elementen, CTA, pill-labels of metrics. Geen dunne kolom met drie regels naast een grote afbeelding.
+10. **Kolommen even hoog.** Beide kolommen moeten verticaal netjes uitlijnen (`items-stretch`, `h-full`, flex/grid met gelijke hoogte). De kortste kolom vult visueel de ruimte (spacing, sub-elementen, padding), zodat het geheel afgewerkt oogt.
+11. **Minimalistisch als basis, premium als sectie.** De site blijft clean en high-end. Een nieuwe sectie mag wél rijker en expressiever zijn, zolang het bij het merk past en niet rommelig wordt.
 
 ## MeneerMarketing — tone of voice & copy (Next.js, `src/`)
 
@@ -47,7 +51,7 @@ Bij alle teksten voor meneermarketing.nl (naast de hoofdregels hierboven):
 2. **Google Ads en Meta Ads expliciet benoemen.** Niet verstoppen achter "datagedreven adverteren". Dit is expertise, dus zichtbaar in titels.
 3. **Automatisering in klanttaal:** "processen automatiseren", "systemen aan elkaar knopen", "e-commerce op autopilot". Tools als n8n/Make alleen als detail op de dienstpagina, nooit in de titel.
 4. **WordPress niet promoten.** Alleen als migratie: van WordPress naar custom of Shopify.
-5. **AI-zoek is een volwaardige dienst:** vindbaarheid in ChatGPT, Perplexity en andere AI-zoekmachines. Geen "later", dit staat live in het aanbod.
+5. **AI-zoek is een volwaardige dienst:** vindbaarheid in ChatGPT, Gemini, Claude en andere AI-zoekmachines. Geen "later", dit staat live in het aanbod.
 6. **Vijf dienstenblokken:** Strategie & groei · Bouwen from scratch · Vindbaarheid, content & autoriteit · Acquisitie & creators · Behoud & slimme koppelingen.
 
 ## MeneerMarketing — design & techniek
@@ -88,3 +92,4 @@ Bij UI en secties voor Skin Complete (naast de algemene regels hierboven):
 1. **Pill-labels:** uppercase (`PROFESSIONELE ONDERSTEUNING`), `font-weight: 300` (licht, niet bold), `letter-spacing: 0.15em`, inline naast lopende tekst, `border-radius: 50px`, subtiele border (`rgba(254,252,252,0.3)`), `transform: translateY(-3px)`.
 2. **Cacao-palet:** `#2C2217`, `#45382C`, `#F5F0EA`, `#FEFCFC`; geen zwart-wit contrast of neon-accenten.
 3. **Geen over-engineered UX:** geen auto-rotate carousels, progress bars of tab-rails als standaard. Subtiele hover en scroll-reveal zijn voldoende. **Uitzondering:** expliciet gevraagde nieuwe secties volgen de hoofdregels voor uitblinkers (kaarten, interactie, rijke kolommen).
+4. **Sectietitels op één regel:** H2/H3 sectiekoppen niet kunstmatig laten stapelen. Geen `max-width: 16ch` of smalle kolombreedtes op sectietitels. Subtekst links uitgelijnd onder de titel (`margin-left: 0`), nooit ingesprongen ten opzichte van de kop.

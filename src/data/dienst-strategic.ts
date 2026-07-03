@@ -359,7 +359,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   "ai-zoek": {
     deepTitle: "AI-zoek: het kanaal waar je concurrent nog niet is",
     deepLead:
-      "ChatGPT, Perplexity en Google AI Overviews beantwoorden steeds vaker de vraag ‘welk bedrijf moet ik kiezen’. Wie daar als antwoord uitkomt, wint de klant voordat er ooit gezocht is in de klassieke resultaten.",
+      "ChatGPT, Gemini, Claude en Google AI Overviews beantwoorden steeds vaker de vraag ‘welk bedrijf moet ik kiezen’. Wie daar als antwoord uitkomt, wint de klant voordat er ooit gezocht is in de klassieke resultaten.",
     deepExtended:
       "AI-modellen citeren bronnen die duidelijk, feitelijk en gestructureerd zijn. Ik richt je content, schema-markup en bedrijfsinformatie daarop in en meet waar je genoemd wordt. De basis overlapt met SEO, dus elke stap versterkt ook je gewone Google-posities.",
     signals: [

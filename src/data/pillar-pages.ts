@@ -161,11 +161,11 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "Google is niet meer de enige plek waar klanten zoeken. Wij maken je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
     stats: [
       { label: "SEO", value: "Content · techniek" },
-      { label: "AI-zoek", value: "ChatGPT · Perplexity" },
+      { label: "AI-zoek", value: "ChatGPT · Gemini · Claude" },
       { label: "Lokaal", value: "Maps · reviews" },
     ],
     introParagraphs: [
-      "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT of Perplexity welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, besta je voor die klant simpelweg niet.",
+      "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT, Gemini of Claude welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen geen optie meer.",
       "Vindbaarheid is daarom breder geworden dan SEO alleen. Het is de combinatie van goede content, een technisch kloppende site, lokale aanwezigheid en reviews die vertrouwen geven. Wij pakken die keten als geheel op, want de onderdelen versterken elkaar.",
     ],
     angleTitle: "Organisch eerst, betaald daarna",

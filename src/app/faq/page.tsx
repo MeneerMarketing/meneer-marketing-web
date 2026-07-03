@@ -110,7 +110,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Wat is vindbaarheid in AI-zoek?",
         answer:
-          "Steeds meer mensen vragen ChatGPT of Perplexity om advies in plaats van Google. Wij zorgen dat jouw bedrijf in die antwoorden opduikt, technisch én inhoudelijk. Nieuw speelveld, nog weinig concurrentie. Wie nu instapt, heeft straks de voorsprong.",
+          "Steeds meer mensen vragen ChatGPT, Gemini of Claude om advies in plaats van Google. Wij zorgen dat jouw bedrijf in die antwoorden opduikt, technisch én inhoudelijk. Nieuw speelveld, nog weinig concurrentie. Wie nu instapt, heeft straks de voorsprong.",
       },
       {
         question: "Garanderen jullie resultaat?",

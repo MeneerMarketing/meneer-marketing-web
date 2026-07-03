@@ -182,11 +182,11 @@ const CONTENT = {
     ],
   ),
   "ai-zoek": body(
-    "Steeds meer klanten vragen niet aan Google maar aan ChatGPT of Perplexity welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, besta je voor die klant niet. Ik zorg dat AI-zoekmachines jouw bedrijf kennen, begrijpen en aanraden.",
+    "Steeds meer klanten vragen niet aan Google maar aan ChatGPT, Gemini of Claude welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, ben je voor die klant geen optie. Ik zorg dat AI-zoekmachines jouw bedrijf kennen, begrijpen en aanraden.",
     [
       "Content en structuur die AI-modellen kunnen lezen en citeren",
       "Schema-markup en technische signalen die je autoriteit onderbouwen",
-      "Meting: waar word je nu genoemd in ChatGPT, Perplexity en AI Overviews",
+      "Meting: waar word je nu genoemd in ChatGPT, Gemini, Claude en AI Overviews",
       "Combinatie met klassieke SEO, want beide voeden elkaar",
     ],
   ),

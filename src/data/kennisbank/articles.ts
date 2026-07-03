@@ -27,21 +27,21 @@ export const kennisbankArticles: KennisbankArticle[] = [
     slug: "ai-zoek-vindbaarheid-chatgpt",
     title: "Gevonden worden in ChatGPT: zo werkt vindbaarheid in AI-zoek",
     description:
-      "Steeds meer klanten vragen ChatGPT of Perplexity om advies in plaats van Google. Zo zorg je dat jouw bedrijf in die antwoorden staat.",
+      "Steeds meer klanten vragen ChatGPT, Gemini of Claude om advies in plaats van Google. Zo zorg je dat jouw bedrijf in die antwoorden staat.",
     publishedAt: "2026-06-18",
     readMinutes: 7,
     category: "vindbaarheid",
     keywords: [
       "AI-zoek",
       "ChatGPT vindbaarheid",
-      "Perplexity SEO",
+      "Gemini vindbaarheid",
       "generative engine optimization",
     ],
     dienstSlugs: ["ai-zoek", "seo", "content-marketing"],
     sections: [
       {
         type: "p",
-        text: "Even een ongemakkelijke waarheid: een deel van jouw potentiële klanten googelt niet meer. Ze typen hun vraag in ChatGPT of Perplexity en krijgen één antwoord, met een paar bronnen. Sta jij daar niet tussen, dan besta je voor die klant simpelweg niet. Geen tweede pagina om nog op gevonden te worden, geen advertentiepositie om te kopen.",
+        text: "Even een ongemakkelijke waarheid: een deel van jouw potentiële klanten googelt niet meer. Ze typen hun vraag in ChatGPT, Gemini of Claude en krijgen één antwoord, met een paar bronnen. Sta jij daar niet tussen, dan ben je voor die klant geen optie meer. Geen tweede pagina om nog op gevonden te worden, geen advertentiepositie om te kopen.",
       },
       {
         type: "h2",
@@ -69,7 +69,7 @@ export const kennisbankArticles: KennisbankArticle[] = [
       },
       {
         type: "p",
-        text: "Begin met de vragen die klanten je aan de telefoon stellen. Zet elk antwoord op een eigen, goed gestructureerde pagina met nette koppen en schema markup. Check daarna zelf in ChatGPT en Perplexity wat er gebeurt als je naar jouw dienst in jouw regio vraagt. Word je niet genoemd, kijk dan wie wel en wat die pagina's anders doen.",
+        text: "Begin met de vragen die klanten je aan de telefoon stellen. Zet elk antwoord op een eigen, goed gestructureerde pagina met nette koppen en schema markup. Check daarna zelf in ChatGPT, Gemini en Claude wat er gebeurt als je naar jouw dienst in jouw regio vraagt. Word je niet genoemd, kijk dan wie wel en wat die pagina's anders doen.",
       },
       {
         type: "h2",
