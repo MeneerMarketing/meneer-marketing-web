@@ -93,6 +93,7 @@ export function ServicesOfficeSection() {
   const inView = useInView(frameRef, { once: true, margin: "-15% 0px -15% 0px" });
 
   const [active, setActive] = useState<PillarSlug | null>(null);
+  const [hovered, setHovered] = useState<PillarSlug | null>(null);
   const [camera, setCamera] = useState<CameraState>(CAMERA_HOME);
 
   const activePillar = active
@@ -135,6 +136,7 @@ export function ServicesOfficeSection() {
 
   const close = useCallback(() => {
     setActive(null);
+    setHovered(null);
     setCamera((prev) => ({ ...prev, x: 0, y: 0, scale: 1 }));
   }, []);
 
@@ -172,7 +174,7 @@ export function ServicesOfficeSection() {
           </p>
           <p className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-slate-300">
             <MousePointerClick className="size-4 text-[#FF5722]" aria-hidden />
-            Klik op de spullen op en rond het bureau
+            Klik op de laptop, het bord, het vergrootglas en de rest
           </p>
         </div>
 
@@ -193,53 +195,14 @@ export function ServicesOfficeSection() {
                 animate={introDone ? { opacity: 1, scale: 1 } : undefined}
                 transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
               >
-                <OfficeScene active={active} />
+                <OfficeScene
+                  active={active}
+                  hovered={hovered}
+                  interactive={!active}
+                  onSelect={select}
+                  onHover={setHovered}
+                />
               </motion.div>
-
-              {/* Hotspots op de objecten */}
-              {OFFICE_PILLARS.map((pillar, index) => (
-                <div
-                  key={pillar.id}
-                  className={`absolute z-10 ${active ? "pointer-events-none" : ""}`}
-                  style={{
-                    left: `${pillar.x * 100}%`,
-                    top: `${(pillar.y - 0.09) * 100}%`,
-                    transform: "translate(-50%, -50%)",
-                  }}
-                >
-                  <motion.button
-                    type="button"
-                    onClick={() => select(pillar.id)}
-                    aria-label={`${pillar.objectLabel}: ${pillar.label}`}
-                    aria-expanded={active === pillar.id}
-                    initial={reduce ? false : { opacity: 0, scale: 0.5 }}
-                    animate={
-                      active
-                        ? { opacity: 0, scale: 0.5 }
-                        : introDone
-                          ? { opacity: 1, scale: 1 }
-                          : undefined
-                    }
-                    transition={{ duration: 0.35, delay: active ? 0 : 1 + index * 0.1 }}
-                    className="group relative block"
-                  >
-                    <span className="relative flex items-center justify-center">
-                      {reduce ? null : (
-                        <motion.span
-                          className="absolute size-4 rounded-full bg-[#FF5722]"
-                          animate={{ scale: [1, 2.1], opacity: [0.5, 0] }}
-                          transition={{ duration: 1.8, repeat: Infinity, ease: "easeOut" }}
-                          aria-hidden
-                        />
-                      )}
-                      <span className="relative block size-4 rounded-full border-2 border-white bg-[#FF5722] shadow-[0_0_12px_rgba(255,87,34,0.8)] transition-transform duration-200 group-hover:scale-125" />
-                    </span>
-                    <span className="pointer-events-none absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/15 bg-slate-950/90 px-3 py-1 text-xs font-bold text-white opacity-0 shadow-lg backdrop-blur transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
-                      {pillar.label}
-                    </span>
-                  </motion.button>
-                </div>
-              ))}
             </motion.div>
 
             {/* Vignet als er een dienst open staat */}

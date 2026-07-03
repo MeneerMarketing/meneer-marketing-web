@@ -7,7 +7,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { getOfficePillar } from "@/data/services-office";
 import type { PillarSlug } from "@/lib/navigation";
 
@@ -46,9 +46,118 @@ const CODE_LINES = [
   { w: 58, c: "#4FC3F7" },
 ] as const;
 
-interface OfficeSceneProps {
-  /** Actieve hoofddienst: het hoofd kijkt dan naar dat object */
+interface ClickablePillarProps {
+  id: PillarSlug;
   active: PillarSlug | null;
+  hovered: PillarSlug | null;
+  interactive: boolean;
+  reduce: boolean;
+  onSelect: (id: PillarSlug) => void;
+  onHover: (id: PillarSlug | null) => void;
+  children: ReactNode;
+}
+
+/** Klikbaar object met subtiele glow-hint en hover-schaal */
+function ClickablePillar({
+  id,
+  active,
+  hovered,
+  interactive,
+  reduce,
+  onSelect,
+  onHover,
+  children,
+}: ClickablePillarProps) {
+  const pillar = getOfficePillar(id);
+  const { hitBox } = pillar;
+  const cx = hitBox.x + hitBox.w / 2;
+  const cy = hitBox.y + hitBox.h / 2;
+  const isHot = hovered === id;
+  const dimmed = active !== null && active !== id;
+  const showHint = interactive && active === null && hovered === null;
+
+  return (
+    <g
+      opacity={dimmed ? 0.38 : 1}
+      style={{ transition: "opacity 0.35s ease" }}
+      onClick={(e) => {
+        e.stopPropagation();
+        if (interactive) onSelect(id);
+      }}
+      onMouseEnter={() => interactive && onHover(id)}
+      onMouseLeave={() => interactive && onHover(null)}
+      className={interactive ? "cursor-pointer" : undefined}
+      role="button"
+      tabIndex={interactive ? 0 : -1}
+      aria-label={`${pillar.objectLabel}: ${pillar.label}`}
+      aria-expanded={active === id}
+      onKeyDown={(e) => {
+        if (!interactive) return;
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onSelect(id);
+        }
+      }}
+    >
+      {(showHint || isHot) && !reduce ? (
+        <motion.rect
+          x={hitBox.x - 10}
+          y={hitBox.y - 10}
+          width={hitBox.w + 20}
+          height={hitBox.h + 20}
+          rx={18}
+          fill="none"
+          stroke="#FF5722"
+          strokeWidth={isHot ? 3.5 : 2}
+          initial={{ strokeOpacity: isHot ? 0.75 : 0.22 }}
+          animate={
+            showHint
+              ? { strokeOpacity: [0.18, 0.48, 0.18] }
+              : { strokeOpacity: 0.85 }
+          }
+          transition={
+            showHint
+              ? { duration: 2.6, repeat: Infinity, ease: "easeInOut" }
+              : { duration: 0.2 }
+          }
+          pointerEvents="none"
+        />
+      ) : null}
+      {isHot && !reduce ? (
+        <ellipse
+          cx={cx}
+          cy={cy}
+          rx={hitBox.w * 0.58}
+          ry={hitBox.h * 0.58}
+          fill="#FF5722"
+          fillOpacity={0.12}
+          pointerEvents="none"
+        />
+      ) : null}
+      <rect
+        x={hitBox.x}
+        y={hitBox.y}
+        width={hitBox.w}
+        height={hitBox.h}
+        fill="transparent"
+      />
+      <motion.g
+        animate={isHot && interactive ? { scale: 1.035 } : { scale: 1 }}
+        transition={{ type: "spring", stiffness: 420, damping: 24 }}
+        style={{ transformOrigin: `${cx}px ${cy}px`, transformBox: "fill-box" as const }}
+      >
+        {children}
+      </motion.g>
+    </g>
+  );
+}
+
+interface OfficeSceneProps {
+  active: PillarSlug | null;
+  hovered: PillarSlug | null;
+  interactive: boolean;
+  onSelect: (id: PillarSlug) => void;
+  onHover: (id: PillarSlug | null) => void;
   className?: string;
 }
 
@@ -57,7 +166,14 @@ interface OfficeSceneProps {
  * achter zijn bureau. Zijn pupillen volgen de cursor, of het object van
  * de actieve hoofddienst. Vier parallax-lagen bewegen mee met de muis.
  */
-export function OfficeScene({ active, className }: OfficeSceneProps) {
+export function OfficeScene({
+  active,
+  hovered,
+  interactive,
+  onSelect,
+  onHover,
+  className,
+}: OfficeSceneProps) {
   const reduce = useReducedMotion();
   const svgRef = useRef<SVGSVGElement>(null);
   const activeRef = useRef<PillarSlug | null>(active);
@@ -144,6 +260,15 @@ export function OfficeScene({ active, className }: OfficeSceneProps) {
       };
 
   const idle = !reduce;
+
+  const clickProps = {
+    active,
+    hovered,
+    interactive,
+    reduce: !!reduce,
+    onSelect,
+    onHover,
+  };
 
   return (
     <svg
@@ -249,27 +374,48 @@ export function OfficeScene({ active, className }: OfficeSceneProps) {
           <path d="M1371 505 q3 2 6 0" fill="none" stroke="#F3C65B" strokeWidth="1.4" strokeLinecap="round" opacity="0.9" />
         </g>
 
-        {/* Klok */}
+        {/* Klok met draaiende wijzers */}
         <g>
           <circle cx="585" cy="185" r="27" fill="#FEFCFC" stroke={INK} strokeWidth="4" />
-          <line x1="585" y1="185" x2="585" y2="168" stroke={INK} strokeWidth="3.5" strokeLinecap="round" />
-          <line x1="585" y1="185" x2="597" y2="191" stroke={INK} strokeWidth="3" strokeLinecap="round" />
           <circle cx="585" cy="185" r="2.6" fill={INK} />
+          <motion.g
+            style={{ transformOrigin: "585px 185px", transformBox: "fill-box" }}
+            animate={idle ? { rotate: 360 } : undefined}
+            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+          >
+            <line x1="585" y1="185" x2="585" y2="162" stroke={INK} strokeWidth="3.5" strokeLinecap="round" />
+          </motion.g>
+          <motion.g
+            style={{ transformOrigin: "585px 185px", transformBox: "fill-box" }}
+            animate={idle ? { rotate: 360 } : undefined}
+            transition={{ duration: 96, repeat: Infinity, ease: "linear" }}
+          >
+            <line x1="585" y1="185" x2="599" y2="191" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+          </motion.g>
         </g>
 
-        {/* Ingelijste merkposter */}
+        {/* Ingelijst portret: de kantoorkat */}
         <g>
-          <rect x="878" y="172" width="98" height="124" rx="8" fill="#10141D" stroke={INK} strokeWidth="3" />
-          <rect x="889" y="183" width="76" height="102" rx="4" fill="#FF5722" />
-          <text
-            x="927"
-            y="252"
-            textAnchor="middle"
-            fontSize="44"
-            fontWeight="800"
-            fill="#FEFCFC"
-          >
-            M.
+          <rect x="868" y="162" width="118" height="146" rx="6" fill="#C9A227" stroke={INK} strokeWidth="4" />
+          <rect x="878" y="172" width="98" height="124" rx="4" fill="#F5EDE0" stroke={INK} strokeWidth="2.5" />
+          <ellipse cx="927" cy="228" rx="34" ry="30" fill="#E8A04A" stroke={INK} strokeWidth="3" />
+          <path d="M900 206 L908 192 L916 206 Z" fill="#E8A04A" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+          <path d="M938 206 L946 192 L954 206 Z" fill="#E8A04A" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+          <ellipse cx="914" cy="224" rx="5" ry="6.5" fill="#fff" stroke={INK} strokeWidth="2" />
+          <ellipse cx="940" cy="224" rx="5" ry="6.5" fill="#fff" stroke={INK} strokeWidth="2" />
+          <circle cx="915" cy="225" r="2.2" fill={INK} />
+          <circle cx="941" cy="225" r="2.2" fill={INK} />
+          <ellipse cx="927" cy="236" rx="4" ry="3" fill="#F2B285" stroke={INK} strokeWidth="1.5" />
+          <path
+            d="M914 244 C916 241 920 241 922 243 C924 241 928 241 930 244 C929 246 926 247 922 246 C918 247 915 246 914 244 Z"
+            fill={INK}
+          />
+          <path d="M903 248 C910 252 934 252 941 248" fill="none" stroke={INK} strokeWidth="2" strokeLinecap="round" />
+          <path d="M910 178 L944 178 L938 168 L916 168 Z" fill={INK} stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+          <rect x="916" y="172" width="24" height="5" rx="2" fill="#FF5722" />
+          <rect x="886" y="282" width="82" height="10" rx="3" fill="#EDE7DE" stroke={INK} strokeWidth="1.5" />
+          <text x="927" y="290" textAnchor="middle" fontSize="7" fontWeight="700" fill={INK} letterSpacing="0.08em">
+            MEDEWERKER VD MAAND
           </text>
         </g>
       </motion.g>
@@ -277,37 +423,39 @@ export function OfficeScene({ active, className }: OfficeSceneProps) {
       {/* ============ MIDDENLAAG: whiteboard en lamp ============ */}
       <motion.g style={reduce ? undefined : { x: midX, y: midY }}>
         {/* Strategiebord */}
-        <g>
-          <rect x="130" y="140" width="322" height="252" rx="14" fill="#F7F8FA" stroke={INK} strokeWidth="5" />
-          <rect x="200" y="392" width="182" height="12" rx="5" fill="#C9CFDA" stroke={INK} strokeWidth="2.5" />
-          <rect x="222" y="386" width="34" height="8" rx="4" fill="#FF5722" stroke={INK} strokeWidth="2" />
+        <ClickablePillar id="strategie" {...clickProps}>
+          <g>
+            <rect x="130" y="140" width="322" height="252" rx="14" fill="#F7F8FA" stroke={INK} strokeWidth="5" />
+            <rect x="200" y="392" width="182" height="12" rx="5" fill="#C9CFDA" stroke={INK} strokeWidth="2.5" />
+            <rect x="222" y="386" width="34" height="8" rx="4" fill="#FF5722" stroke={INK} strokeWidth="2" />
 
-          <rect x="162" y="162" width="82" height="8" rx="4" fill="#C7CEDA" />
-          <rect x="162" y="177" width="52" height="7" rx="3.5" fill="#DDE2EA" />
+            <rect x="162" y="162" width="82" height="8" rx="4" fill="#C7CEDA" />
+            <rect x="162" y="177" width="52" height="7" rx="3.5" fill="#DDE2EA" />
 
-          <g transform="rotate(6 385 182)">
-            <rect x="365" y="162" width="40" height="40" rx="3" fill="#FFD54F" stroke={INK} strokeWidth="2" />
-            <path d="M373 176 h24 M373 185 h18" stroke={INK} strokeWidth="1.8" strokeLinecap="round" opacity="0.55" />
+            <g transform="rotate(6 385 182)">
+              <rect x="365" y="162" width="40" height="40" rx="3" fill="#FFD54F" stroke={INK} strokeWidth="2" />
+              <path d="M373 176 h24 M373 185 h18" stroke={INK} strokeWidth="1.8" strokeLinecap="round" opacity="0.55" />
+            </g>
+            <g transform="rotate(-8 336 176)">
+              <rect x="318" y="158" width="36" height="36" rx="3" fill="#7EDCE2" stroke={INK} strokeWidth="2" />
+              <path d="M325 170 h22 M325 178 h15" stroke={INK} strokeWidth="1.8" strokeLinecap="round" opacity="0.55" />
+            </g>
+
+            <path d="M172 358 V196 M172 358 H420" stroke="#94A3B8" strokeWidth="3.5" strokeLinecap="round" />
+            <motion.path
+              d="M182 344 L236 318 L276 332 L330 272 L360 284 L408 218"
+              fill="none"
+              stroke="#FF5722"
+              strokeWidth="6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              initial={{ pathLength: 1 }}
+              animate={idle ? { pathLength: [0, 1, 1] } : undefined}
+              transition={{ duration: 3.2, times: [0, 0.7, 1], repeat: Infinity, repeatDelay: 2.6, ease: "easeInOut" }}
+            />
+            <path d="M408 218 L390 220 M408 218 L404 235" stroke="#FF5722" strokeWidth="6" strokeLinecap="round" />
           </g>
-          <g transform="rotate(-8 336 176)">
-            <rect x="318" y="158" width="36" height="36" rx="3" fill="#7EDCE2" stroke={INK} strokeWidth="2" />
-            <path d="M325 170 h22 M325 178 h15" stroke={INK} strokeWidth="1.8" strokeLinecap="round" opacity="0.55" />
-          </g>
-
-          <path d="M172 358 V196 M172 358 H420" stroke="#94A3B8" strokeWidth="3.5" strokeLinecap="round" />
-          <motion.path
-            d="M182 344 L236 318 L276 332 L330 272 L360 284 L408 218"
-            fill="none"
-            stroke="#FF5722"
-            strokeWidth="6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            initial={{ pathLength: 1 }}
-            animate={idle ? { pathLength: [0, 1, 1] } : undefined}
-            transition={{ duration: 3.2, times: [0, 0.7, 1], repeat: Infinity, repeatDelay: 2.6, ease: "easeInOut" }}
-          />
-          <path d="M408 218 L390 220 M408 218 L404 235" stroke="#FF5722" strokeWidth="6" strokeLinecap="round" />
-        </g>
+        </ClickablePillar>
 
         {/* Hanglamp met lichtkegel */}
         <g>
@@ -413,34 +561,36 @@ export function OfficeScene({ active, className }: OfficeSceneProps) {
         <rect x="1328" y="619" width="22" height="146" fill="#5F3E27" stroke={INK} strokeWidth="2.5" />
 
         {/* Bouwlaptop */}
-        <g>
-          <rect x="455" y="443" width="172" height="120" rx="9" fill="#10151F" stroke={INK} strokeWidth="4" />
-          <rect x="455" y="443" width="172" height="120" rx="9" fill="url(#office-screen-glow)" />
-          {CODE_LINES.map((line, i) => (
-            <rect
-              key={i}
-              x={i % 2 === 0 ? 470 : 484}
-              y={458 + i * 16}
-              width={line.w}
+        <ClickablePillar id="bouwen" {...clickProps}>
+          <g>
+            <rect x="455" y="443" width="172" height="120" rx="9" fill="#10151F" stroke={INK} strokeWidth="4" />
+            <rect x="455" y="443" width="172" height="120" rx="9" fill="url(#office-screen-glow)" />
+            {CODE_LINES.map((line, i) => (
+              <rect
+                key={i}
+                x={i % 2 === 0 ? 470 : 484}
+                y={458 + i * 16}
+                width={line.w}
+                height="7"
+                rx="3.5"
+                fill={line.c}
+                opacity="0.9"
+              />
+            ))}
+            <motion.rect
+              x="548"
+              y="458"
+              width="8"
               height="7"
-              rx="3.5"
-              fill={line.c}
-              opacity="0.9"
+              rx="2"
+              fill="#FF5722"
+              initial={{ opacity: 1 }}
+              animate={idle ? { opacity: [1, 0, 1] } : undefined}
+              transition={{ duration: 1.1, repeat: Infinity, ease: "linear" }}
             />
-          ))}
-          <motion.rect
-            x="548"
-            y="538"
-            width="8"
-            height="7"
-            rx="2"
-            fill="#FF5722"
-            initial={{ opacity: 1 }}
-            animate={idle ? { opacity: [1, 0, 1] } : undefined}
-            transition={{ duration: 1.1, repeat: Infinity, ease: "linear" }}
-          />
-          <path d="M440 585 L642 585 L626 565 L456 565 Z" fill="#2B3242" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
-        </g>
+            <path d="M440 585 L642 585 L626 565 L456 565 Z" fill="#2B3242" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
+          </g>
+        </ClickablePillar>
 
         {/* Koffie met stoom */}
         <g>
@@ -468,93 +618,94 @@ export function OfficeScene({ active, className }: OfficeSceneProps) {
           <path d="M684 556 q16 8 0 22" fill="none" stroke={INK} strokeWidth="3" />
         </g>
 
-        {/* Nummer 1 positie: zoekresultaat-bordje met loep */}
-        <g>
-          <g transform="rotate(-3 995 505)">
-            <rect x="935" y="425" width="124" height="158" rx="10" fill="#FEFCFC" stroke={INK} strokeWidth="4" />
-            <rect x="947" y="443" width="100" height="22" rx="11" fill="#EFF2F6" stroke="#C7CEDA" strokeWidth="2" />
-            <circle cx="959" cy="454" r="5" fill="none" stroke={INK} strokeWidth="2.4" />
-            <line x1="963" y1="458" x2="967" y2="462" stroke={INK} strokeWidth="2.4" strokeLinecap="round" />
-            <rect x="947" y="478" width="100" height="17" rx="5" fill="#FF5722" opacity="0.14" />
-            <rect x="947" y="478" width="100" height="17" rx="5" fill="none" stroke="#FF5722" strokeWidth="1.6" />
-            <rect x="953" y="483" width="52" height="6" rx="3" fill="#FF5722" />
-            <rect x="953" y="506" width="72" height="6" rx="3" fill="#C7CEDA" />
-            <rect x="953" y="522" width="84" height="6" rx="3" fill="#C7CEDA" />
-            <rect x="953" y="538" width="60" height="6" rx="3" fill="#DDE2EA" />
+        {/* Vergrootglas op tafel (vindbaarheid) */}
+        <ClickablePillar id="vindbaarheid" {...clickProps}>
+          <g transform="rotate(-22 762 548)">
+            <rect x="698" y="538" width="128" height="16" rx="8" fill="#8B5E3C" stroke={INK} strokeWidth="3" />
+            <rect x="706" y="541" width="112" height="10" rx="5" fill="#A0714A" />
+            <circle cx="762" cy="518" r="40" fill="none" stroke="#B8C4D4" strokeWidth="9" />
+            <circle cx="762" cy="518" r="33" fill="#D4ECFF" fillOpacity="0.55" stroke={INK} strokeWidth="3.5" />
+            <path
+              d="M742 498 a22 22 0 0 1 14 -8"
+              fill="none"
+              stroke="#FEFCFC"
+              strokeWidth="5"
+              strokeLinecap="round"
+              opacity="0.75"
+            />
+            <circle cx="778" cy="510" r="9" fill="#F3C65B" stroke={INK} strokeWidth="2" />
+            <text x="778" y="514" textAnchor="middle" fontSize="8" fontWeight="800" fill={INK}>
+              1
+            </text>
           </g>
-          <circle cx="1052" cy="430" r="17" fill="#F3C65B" stroke={INK} strokeWidth="3.5" />
-          <text x="1052" y="436" textAnchor="middle" fontSize="15" fontWeight="800" fill={INK}>
-            #1
-          </text>
-          <circle cx="1098" cy="528" r="26" fill="#A8D8EF" fillOpacity="0.45" stroke={INK} strokeWidth="6" />
-          <path d="M1084 516 a18 18 0 0 1 12 -6" fill="none" stroke="#FEFCFC" strokeWidth="4" strokeLinecap="round" opacity="0.8" />
-          <line x1="1116" y1="548" x2="1140" y2="580" stroke={INK} strokeWidth="10" strokeLinecap="round" />
-        </g>
+        </ClickablePillar>
 
         {/* Megafoon met geluidsgolven */}
-        <g>
-          <g transform="rotate(-6 1200 552)">
-            <rect x="1140" y="536" width="18" height="34" rx="8" fill="#E64A19" stroke={INK} strokeWidth="3.5" />
-            <path d="M1154 540 L1246 512 L1246 592 L1154 566 Z" fill="#FF5722" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
-            <rect x="1244" y="506" width="15" height="92" rx="7.5" fill="#E64A19" stroke={INK} strokeWidth="3.5" />
-            <path d="M1182 568 q4 20 22 18" fill="none" stroke={INK} strokeWidth="6" strokeLinecap="round" />
+        <ClickablePillar id="campagnes" {...clickProps}>
+          <g>
+            <g transform="rotate(-6 1200 552)">
+              <rect x="1140" y="536" width="18" height="34" rx="8" fill="#E64A19" stroke={INK} strokeWidth="3.5" />
+              <path d="M1154 540 L1246 512 L1246 592 L1154 566 Z" fill="#FF5722" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+              <rect x="1244" y="506" width="15" height="92" rx="7.5" fill="#E64A19" stroke={INK} strokeWidth="3.5" />
+              <path d="M1182 568 q4 20 22 18" fill="none" stroke={INK} strokeWidth="6" strokeLinecap="round" />
+            </g>
+            {[
+              { d: "M1276 520 q16 30 0 60", w: 4, delay: 0 },
+              { d: "M1292 506 q24 44 0 88", w: 4, delay: 0.25 },
+              { d: "M1308 492 q32 58 0 116", w: 4, delay: 0.5 },
+            ].map((arc) => (
+              <motion.path
+                key={arc.d}
+                d={arc.d}
+                fill="none"
+                stroke="#F3C65B"
+                strokeWidth={arc.w}
+                strokeLinecap="round"
+                initial={{ opacity: 0 }}
+                animate={idle ? { opacity: [0, 0.9, 0] } : undefined}
+                transition={{ duration: 2, repeat: Infinity, delay: arc.delay, repeatDelay: 1.6, ease: "easeInOut" }}
+              />
+            ))}
           </g>
-          {[
-            { d: "M1276 520 q16 30 0 60", w: 4, delay: 0 },
-            { d: "M1292 506 q24 44 0 88", w: 4, delay: 0.25 },
-            { d: "M1308 492 q32 58 0 116", w: 4, delay: 0.5 },
-          ].map((arc) => (
-            <motion.path
-              key={arc.d}
-              d={arc.d}
-              fill="none"
-              stroke="#F3C65B"
-              strokeWidth={arc.w}
-              strokeLinecap="round"
-              initial={{ opacity: 0 }}
-              animate={idle ? { opacity: [0, 0.9, 0] } : undefined}
-              transition={{ duration: 2, repeat: Infinity, delay: arc.delay, repeatDelay: 1.6, ease: "easeInOut" }}
-            />
-          ))}
-        </g>
+        </ClickablePillar>
 
         {/* Bijzettafel met mailmachine */}
-        <g>
-          {/* Envelop die uit de machine floept (achter de machine getekend) */}
-          <motion.g
-            initial={{ y: 44, opacity: 0 }}
-            animate={idle ? { y: [44, -26, -44], opacity: [0, 1, 0], rotate: [0, -7, -11] } : undefined}
-            transition={{ duration: 2.6, times: [0, 0.55, 1], repeat: Infinity, repeatDelay: 3.4, ease: "easeOut" }}
-          >
-            <rect x="1421" y="432" width="48" height="32" rx="4" fill="#FEFCFC" stroke={INK} strokeWidth="2.5" />
-            <path d="M1421 436 L1445 452 L1469 436" fill="none" stroke={INK} strokeWidth="2.2" strokeLinejoin="round" />
-          </motion.g>
+        <ClickablePillar id="behoud" {...clickProps}>
+          <g>
+            <motion.g
+              initial={{ y: 44, opacity: 0 }}
+              animate={idle ? { y: [44, -26, -44], opacity: [0, 1, 0], rotate: [0, -7, -11] } : undefined}
+              transition={{ duration: 2.6, times: [0, 0.55, 1], repeat: Infinity, repeatDelay: 3.4, ease: "easeOut" }}
+            >
+              <rect x="1421" y="432" width="48" height="32" rx="4" fill="#FEFCFC" stroke={INK} strokeWidth="2.5" />
+              <path d="M1421 436 L1445 452 L1469 436" fill="none" stroke={INK} strokeWidth="2.2" strokeLinejoin="round" />
+            </motion.g>
 
-          <rect x="1385" y="470" width="122" height="116" rx="14" fill="#EDE7DE" stroke={INK} strokeWidth="4" />
-          <rect x="1412" y="462" width="68" height="11" rx="5" fill={INK} />
-          <rect x="1400" y="492" width="62" height="27" rx="6" fill="#1F2430" />
-          <motion.circle
-            cx="1412"
-            cy="505"
-            r="4"
-            fill="#FF5722"
-            animate={idle ? { opacity: [1, 0.25, 1] } : undefined}
-            transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <rect x="1422" y="501" width="30" height="7" rx="3.5" fill="#4B5568" />
-          <circle cx="1483" cy="505" r="9" fill="#FF5722" stroke={INK} strokeWidth="3" />
-          <rect x="1398" y="546" width="82" height="9" rx="4" fill={INK} opacity="0.85" />
+            <rect x="1385" y="470" width="122" height="116" rx="14" fill="#EDE7DE" stroke={INK} strokeWidth="4" />
+            <rect x="1412" y="462" width="68" height="11" rx="5" fill={INK} />
+            <rect x="1400" y="492" width="62" height="27" rx="6" fill="#1F2430" />
+            <motion.circle
+              cx="1412"
+              cy="505"
+              r="4"
+              fill="#FF5722"
+              animate={idle ? { opacity: [1, 0.25, 1] } : undefined}
+              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <rect x="1422" y="501" width="30" height="7" rx="3.5" fill="#4B5568" />
+            <circle cx="1483" cy="505" r="9" fill="#FF5722" stroke={INK} strokeWidth="3" />
+            <rect x="1398" y="546" width="82" height="9" rx="4" fill={INK} opacity="0.85" />
 
-          {/* Envelopjes op de tafel */}
-          <g transform="rotate(6 1530 572)">
-            <rect x="1512" y="562" width="38" height="12" rx="2.5" fill="#FEFCFC" stroke={INK} strokeWidth="2" />
-            <rect x="1508" y="572" width="38" height="12" rx="2.5" fill="#F1EDE6" stroke={INK} strokeWidth="2" />
+            <g transform="rotate(6 1530 572)">
+              <rect x="1512" y="562" width="38" height="12" rx="2.5" fill="#FEFCFC" stroke={INK} strokeWidth="2" />
+              <rect x="1508" y="572" width="38" height="12" rx="2.5" fill="#F1EDE6" stroke={INK} strokeWidth="2" />
+            </g>
+
+            <rect x="1352" y="583" width="204" height="18" rx="6" fill="#9A6B45" stroke={INK} strokeWidth="3" />
+            <rect x="1366" y="601" width="15" height="138" fill="#5F3E27" stroke={INK} strokeWidth="2.5" />
+            <rect x="1526" y="601" width="15" height="138" fill="#5F3E27" stroke={INK} strokeWidth="2.5" />
           </g>
-
-          <rect x="1352" y="583" width="204" height="18" rx="6" fill="#9A6B45" stroke={INK} strokeWidth="3" />
-          <rect x="1366" y="601" width="15" height="138" fill="#5F3E27" stroke={INK} strokeWidth="2.5" />
-          <rect x="1526" y="601" width="15" height="138" fill="#5F3E27" stroke={INK} strokeWidth="2.5" />
-        </g>
+        </ClickablePillar>
       </motion.g>
 
       {/* ============ VOORGROND: plant en boeken ============ */}

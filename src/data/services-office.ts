@@ -15,9 +15,11 @@ export interface OfficePillar {
   body: string;
   links: OfficeServiceLink[];
   pillarHref: string;
-  /** Hotspot-positie als fractie van de scène (0..1) */
+  /** Camera-zoom als fractie van de scène (0..1) */
   x: number;
   y: number;
+  /** Klikgebied in viewBox-coördinaten (1600×900) */
+  hitBox: { x: number; y: number; w: number; h: number };
   /** Kant waar het infopaneel opent op desktop */
   panelSide: "left" | "right";
 }
@@ -38,6 +40,7 @@ export const OFFICE_PILLARS: OfficePillar[] = [
     pillarHref: "/strategie",
     x: 0.18,
     y: 0.29,
+    hitBox: { x: 118, y: 128, w: 348, h: 282 },
     panelSide: "right",
   },
   {
@@ -55,12 +58,13 @@ export const OFFICE_PILLARS: OfficePillar[] = [
     pillarHref: "/bouwen",
     x: 0.335,
     y: 0.565,
+    hitBox: { x: 428, y: 432, w: 224, h: 168 },
     panelSide: "right",
   },
   {
     id: "vindbaarheid",
     label: "Vindbaarheid & content",
-    objectLabel: "De nummer 1 positie",
+    objectLabel: "Het vergrootglas",
     title: "Gevonden worden, overal.",
     body: "Bovenaan in Google én het antwoord in ChatGPT, Gemini en Claude. Content en techniek die autoriteit opbouwen.",
     links: [
@@ -70,8 +74,9 @@ export const OFFICE_PILLARS: OfficePillar[] = [
       { name: "Lokale SEO & Google Maps", href: "/diensten/local-seo" },
     ],
     pillarHref: "/vindbaarheid",
-    x: 0.622,
-    y: 0.555,
+    x: 0.51,
+    y: 0.6,
+    hitBox: { x: 688, y: 498, w: 148, h: 98 },
     panelSide: "left",
   },
   {
@@ -89,6 +94,7 @@ export const OFFICE_PILLARS: OfficePillar[] = [
     pillarHref: "/campagnes",
     x: 0.755,
     y: 0.6,
+    hitBox: { x: 1128, y: 498, w: 196, h: 108 },
     panelSide: "left",
   },
   {
@@ -106,6 +112,7 @@ export const OFFICE_PILLARS: OfficePillar[] = [
     pillarHref: "/behoud",
     x: 0.9,
     y: 0.55,
+    hitBox: { x: 1340, y: 418, w: 228, h: 198 },
     panelSide: "left",
   },
 ];
