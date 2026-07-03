@@ -1,213 +1,268 @@
 "use client";
 
-import {
-  motion,
-  useMotionValue,
-  useReducedMotion,
-  useSpring,
-} from "framer-motion";
-import { useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { Search } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { MouseEvent as ReactMouseEvent } from "react";
 
-const SURFACES = [
-  { id: "google", label: "Google", sub: "SEO", angle: -90, color: "#0F172A" },
-  { id: "ai", label: "AI-zoek", sub: "ChatGPT", angle: -18, color: "#38BDF8" },
-  { id: "maps", label: "Maps", sub: "Lokaal", angle: 54, color: "#34D399" },
-  { id: "reviews", label: "Reviews", sub: "Trust", angle: 126, color: "#FBBF24" },
-  { id: "content", label: "Content", sub: "Autoriteit", angle: 198, color: "#FF5722" },
+const QUERIES = [
+  "beste marketing bureau nederland",
+  "shopify expert die ook seo doet",
+  "vindbaar worden in chatgpt",
+  "wie bouwt websites from scratch",
 ] as const;
 
-type SurfaceId = (typeof SURFACES)[number]["id"];
+interface SerpResult {
+  url: string;
+  title: string;
+  snippet: string;
+  isYou?: boolean;
+}
 
-const BASE_X = 6;
-const BASE_Z = -4;
-const RADIUS = 108;
+const SERP_SETS: SerpResult[][] = [
+  [
+    { url: "concurrent-a.nl", title: "Marketing bureau Amsterdam", snippet: "Full-service agency sinds 2012..." },
+    { url: "concurrent-b.nl", title: "Online marketing totaalpakket", snippet: "Ads, social en een beetje SEO..." },
+    { url: "meneermarketing.nl", title: "MeneerMarketing · SEO, bouw & groei", snippet: "Websites from scratch, vindbaar in Google én AI. Eén lijn.", isYou: true },
+  ],
+  [
+    { url: "template-shop.nl", title: "Shopify themes kopen", snippet: "Kies uit 200+ templates..." },
+    { url: "meneermarketing.nl", title: "Shopify from scratch · MeneerMarketing", snippet: "Custom themes, geen templates. Shopify-expert.", isYou: true },
+    { url: "concurrent-c.nl", title: "Webshop laten bouwen", snippet: "Snel online met ons pakket..." },
+  ],
+  [
+    { url: "meneermarketing.nl", title: "Vindbaar in AI-zoek · MeneerMarketing", snippet: "Genoemd worden in ChatGPT en Perplexity. Wij regelen het.", isYou: true },
+    { url: "seo-blog.nl", title: "AI SEO tips 2026", snippet: "10 tricks die je concurrent al kent..." },
+    { url: "concurrent-d.nl", title: "ChatGPT optimalisatie", snippet: "Wij schrijven AI-content..." },
+  ],
+  [
+    { url: "meneermarketing.nl", title: "Websites from scratch · MeneerMarketing", snippet: "Geen page builders. Custom build, CWV groen.", isYou: true },
+    { url: "wordpress-host.nl", title: "Website in 1 dag", snippet: "Template + plugins = klaar!" },
+    { url: "concurrent-e.nl", title: "Goedkope website", snippet: "Vanaf € 299 all-in..." },
+  ],
+];
 
 /**
- * Hero voor Vindbaarheid: vijf zoekvlakken rond een centrale "Gevonden"-badge.
- * Tik of hover om te zien waar je klant je kan vinden.
+ * Hero voor Vindbaarheid: interactieve Google-zoekbalk met typewriter,
+ * vergrootglas dat meebeweegt en SERP waar jouw site naar #1 springt.
  */
 export function VindbaarheidHero() {
   const reduce = useReducedMotion();
-  const [active, setActive] = useState<SurfaceId | null>("google");
+  const [queryIndex, setQueryIndex] = useState(0);
+  const [typed, setTyped] = useState("");
+  const [phase, setPhase] = useState<"typing" | "results" | "climb">("typing");
+  const [lensPos, setLensPos] = useState({ x: 50, y: 30 });
+  const containerRef = useRef<HTMLDivElement>(null);
+  const userTouched = useRef(false);
 
-  const mx = useMotionValue(BASE_X);
-  const my = useMotionValue(BASE_Z);
-  const tiltX = useSpring(mx, { stiffness: 115, damping: 18 });
-  const tiltZ = useSpring(my, { stiffness: 115, damping: 18 });
+  const query = QUERIES[queryIndex];
+  const results = SERP_SETS[queryIndex];
+
+  const runDemo = useCallback(
+    (index: number) => {
+      const q = QUERIES[index];
+      setQueryIndex(index);
+      setPhase("typing");
+      setTyped("");
+
+      if (reduce) {
+        setTyped(q);
+        setPhase("climb");
+        return;
+      }
+
+      let char = 0;
+      const typeTimer = window.setInterval(() => {
+        char += 1;
+        setTyped(q.slice(0, char));
+        if (char >= q.length) {
+          window.clearInterval(typeTimer);
+          window.setTimeout(() => setPhase("results"), 400);
+          window.setTimeout(() => setPhase("climb"), 1100);
+        }
+      }, 38);
+
+      return () => window.clearInterval(typeTimer);
+    },
+    [reduce],
+  );
+
+  useEffect(() => {
+    if (userTouched.current) return;
+    const cleanup = runDemo(0);
+    return cleanup;
+  }, [runDemo]);
+
+  useEffect(() => {
+    if (userTouched.current || phase !== "climb") return;
+    const t = window.setTimeout(() => {
+      if (userTouched.current) return;
+      const next = (queryIndex + 1) % QUERIES.length;
+      runDemo(next);
+    }, 3200);
+    return () => window.clearTimeout(t);
+  }, [phase, queryIndex, runDemo]);
+
+  function handleSearchClick() {
+    userTouched.current = true;
+    const next = (queryIndex + 1) % QUERIES.length;
+    runDemo(next);
+  }
 
   function onMove(e: ReactMouseEvent<HTMLDivElement>) {
-    if (reduce) return;
-    const rect = e.currentTarget.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
-    mx.set(BASE_X + py * -5);
-    my.set(BASE_Z + px * 7);
+    if (!containerRef.current || reduce) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    setLensPos({
+      x: Math.min(88, Math.max(12, x)),
+      y: Math.min(78, Math.max(18, y)),
+    });
   }
 
-  function onLeave() {
-    mx.set(BASE_X);
-    my.set(BASE_Z);
-  }
+  const sortedResults =
+    phase === "climb"
+      ? [...results].sort((a, b) => (a.isYou ? -1 : b.isYou ? 1 : 0))
+      : results;
 
   return (
     <div
-      className="relative mx-auto w-full max-w-[440px] select-none"
+      ref={containerRef}
+      className="relative mx-auto w-full max-w-[420px] select-none"
       onMouseMove={onMove}
-      onMouseLeave={onLeave}
     >
       <div
-        className="pointer-events-none absolute -right-4 top-0 size-40 rounded-full bg-sky-300/20 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -bottom-4 -left-4 size-36 rounded-full bg-[#FF5722]/12 blur-3xl"
+        className="pointer-events-none absolute -right-6 top-0 size-36 rounded-full bg-sky-200/25 blur-3xl"
         aria-hidden
       />
 
-      <div className="relative h-[370px] [perspective:1200px]">
-        <motion.div
-          style={{
-            rotateX: reduce ? BASE_X : tiltX,
-            rotateZ: reduce ? BASE_Z : tiltZ,
-          }}
-          className="absolute left-1/2 top-1/2 size-[300px] -translate-x-1/2 -translate-y-1/2"
-        >
-          <svg viewBox="0 0 300 300" className="absolute inset-0 size-full" aria-hidden>
-            <circle
-              cx="150"
-              cy="150"
-              r={RADIUS + 8}
-              fill="none"
-              stroke="rgba(148,163,184,0.25)"
-              strokeWidth="1"
-              strokeDasharray="4 6"
-            />
-            {SURFACES.map((s) => {
-              const rad = (s.angle * Math.PI) / 180;
-              const cx = 150 + Math.cos(rad) * RADIUS;
-              const cy = 150 + Math.sin(rad) * RADIUS;
-              const isActive = active === s.id;
-              return (
-                <motion.line
-                  key={s.id}
-                  x1="150"
-                  y1="150"
-                  x2={cx}
-                  y2={cy}
-                  stroke={isActive ? s.color : "#E2E8F0"}
-                  strokeWidth={isActive ? 2.5 : 1}
-                  animate={{ opacity: isActive ? 1 : 0.4 }}
-                />
-              );
-            })}
-          </svg>
+      {/* Vergrootglas dat meebeweegt */}
+      <motion.div
+        className="pointer-events-none absolute z-20"
+        animate={{ left: `${lensPos.x}%`, top: `${lensPos.y}%` }}
+        transition={{ type: "spring", stiffness: 120, damping: 18 }}
+        style={{ x: "-50%", y: "-50%" }}
+        aria-hidden
+      >
+        <div className="relative">
+          <div className="flex size-14 items-center justify-center rounded-full border-2 border-white/80 bg-white/30 shadow-[0_8px_32px_rgba(15,23,42,0.15)] backdrop-blur-sm">
+            <Search className="size-6 text-[#FF5722]" strokeWidth={2.5} />
+          </div>
+          <div className="absolute -bottom-1 -right-1 size-4 rounded-full border-2 border-white bg-[#FF5722]" />
+        </div>
+      </motion.div>
 
-          <motion.div
-            animate={
-              reduce
-                ? undefined
-                : {
-                    boxShadow: [
-                      "0 0 0 0 rgba(52,211,153,0)",
-                      "0 0 0 14px rgba(52,211,153,0.08)",
-                      "0 0 0 0 rgba(52,211,153,0)",
-                    ],
-                  }
-            }
-            transition={{ duration: 2.6, repeat: Infinity }}
-            className="absolute left-1/2 top-1/2 flex size-[88px] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border-2 border-emerald-400/40 bg-white shadow-lg"
+      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_28px_56px_-24px_rgba(15,23,42,0.28)]">
+        {/* Google-achtige header */}
+        <div className="border-b border-slate-100 px-5 pt-5 pb-4">
+          <p className="text-center font-serif text-2xl font-bold tracking-tight text-slate-800">
+            Go<span className="text-[#4285F4]">o</span>
+            <span className="text-[#EA4335]">g</span>
+            <span className="text-[#FBBC05]">l</span>
+            <span className="text-[#4285F4]">e</span>
+            <span className="text-[13px] font-normal text-slate-400">.nl</span>
+          </p>
+
+          <button
+            type="button"
+            onClick={handleSearchClick}
+            className="group mt-4 flex w-full items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-3 shadow-sm transition hover:border-slate-300 hover:shadow-md"
+            aria-label="Volgende zoekopdracht tonen"
           >
-            <span className="text-[9px] font-black uppercase tracking-[0.16em] text-emerald-500">
-              Status
-            </span>
-            <span className="text-sm font-extrabold text-slate-900">Gevonden</span>
-          </motion.div>
-
-          {SURFACES.map((surface, i) => {
-            const rad = (surface.angle * Math.PI) / 180;
-            const x = Math.cos(rad) * RADIUS;
-            const y = Math.sin(rad) * RADIUS;
-            const isActive = active === surface.id;
-            return (
-              <motion.button
-                key={surface.id}
-                type="button"
-                initial={reduce ? false : { opacity: 0, scale: 0.85 }}
-                animate={{ opacity: 1, scale: isActive ? 1.06 : 1 }}
-                transition={{ delay: 0.08 * i, type: "spring", stiffness: 260, damping: 18 }}
-                onMouseEnter={() => setActive(surface.id)}
-                onFocus={() => setActive(surface.id)}
-                onClick={() =>
-                  setActive((prev) => (prev === surface.id ? null : surface.id))
-                }
-                className={`absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center rounded-2xl border px-2.5 py-2 transition-shadow ${
-                  isActive
-                    ? "border-transparent bg-white shadow-[0_14px_28px_-10px_rgba(15,23,42,0.35)] ring-2 ring-[#FF5722]/30"
-                    : "border-slate-200 bg-white/95 hover:border-slate-300"
-                }`}
-                style={{
-                  left: `calc(50% + ${x}px)`,
-                  top: `calc(50% + ${y}px)`,
-                }}
-              >
-                <span
-                  className="size-2 rounded-full"
-                  style={{ backgroundColor: surface.color }}
+            <Search className="size-4 shrink-0 text-slate-400" aria-hidden />
+            <span className="min-w-0 flex-1 truncate text-left text-sm text-slate-700">
+              {typed}
+              {phase === "typing" && !reduce ? (
+                <motion.span
+                  animate={{ opacity: [1, 0] }}
+                  transition={{ duration: 0.6, repeat: Infinity }}
+                  className="ml-px inline-block h-4 w-px bg-slate-800 align-middle"
                   aria-hidden
                 />
-                <span className="mt-1 text-[11px] font-extrabold text-slate-800">
-                  {surface.label}
-                </span>
-                <span className="text-[9px] font-semibold text-slate-400">
-                  {surface.sub}
-                </span>
-              </motion.button>
-            );
-          })}
-        </motion.div>
-      </div>
-
-      <div className="relative -mt-1 flex flex-wrap justify-center gap-1.5">
-        {SURFACES.map((s) => (
-          <button
-            key={s.id}
-            type="button"
-            onMouseEnter={() => setActive(s.id)}
-            onMouseLeave={() => setActive(null)}
-            onClick={() => setActive((prev) => (prev === s.id ? null : s.id))}
-            className={`rounded-full border px-2.5 py-1 text-[10px] font-bold transition-colors ${
-              active === s.id
-                ? "border-[#FF5722]/40 bg-[#FF5722]/5 text-[#FF5722]"
-                : "border-slate-200 text-slate-500"
-            }`}
-          >
-            {s.label}
+              ) : null}
+            </span>
+            <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-bold text-slate-500 transition group-hover:bg-[#FF5722]/10 group-hover:text-[#FF5722]">
+              Zoek
+            </span>
           </button>
-        ))}
+
+          <p className="mt-2 text-center text-[10px] text-slate-400">
+            Klik de zoekbalk voor de volgende query
+          </p>
+        </div>
+
+        {/* SERP */}
+        <div className="min-h-[220px] space-y-3 p-4">
+          <AnimatePresence mode="wait">
+            {phase === "typing" ? (
+              <motion.p
+                key="wait"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="flex h-[180px] items-center justify-center text-sm text-slate-400"
+              >
+                Even typen...
+              </motion.p>
+            ) : (
+              <motion.div
+                key={query}
+                initial={reduce ? false : { opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="space-y-3"
+              >
+                <p className="text-[10px] text-slate-400">
+                  Ongeveer 2.400.000 resultaten ({(0.42).toLocaleString("nl-NL")} sec)
+                </p>
+                {sortedResults.map((result, i) => (
+                  <motion.div
+                    key={result.url}
+                    layout
+                    initial={reduce ? false : { opacity: 0, y: 10 }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                      scale: result.isYou && phase === "climb" ? 1.02 : 1,
+                    }}
+                    transition={{
+                      layout: { type: "spring", stiffness: 280, damping: 22 },
+                      delay: result.isYou && phase === "climb" ? 0.15 : 0.05 * i,
+                    }}
+                    className={`rounded-xl px-3 py-2.5 transition-colors ${
+                      result.isYou && phase === "climb"
+                        ? "border border-[#FF5722]/30 bg-[#FF5722]/5"
+                        : "border border-transparent"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <p className="text-[10px] text-emerald-700">{result.url}</p>
+                      {result.isYou && phase === "climb" ? (
+                        <motion.span
+                          initial={{ scale: 0 }}
+                          animate={{ scale: 1 }}
+                          className="rounded-full bg-[#FF5722] px-1.5 py-0.5 text-[8px] font-bold text-white"
+                        >
+                          Jij · #{i + 1}
+                        </motion.span>
+                      ) : null}
+                    </div>
+                    <p
+                      className={`mt-0.5 text-sm font-medium ${
+                        result.isYou ? "text-[#1a0dab]" : "text-[#1a0dab]/80"
+                      }`}
+                    >
+                      {result.title}
+                    </p>
+                    <p className="mt-0.5 line-clamp-1 text-xs text-slate-600">
+                      {result.snippet}
+                    </p>
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
-
-      <motion.div
-        animate={reduce ? undefined : { y: [-4, 4] }}
-        transition={{ duration: 2.8, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute right-0 top-8 rounded-xl border border-slate-200 bg-white px-3 py-2 shadow-lg"
-      >
-        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-          Positie
-        </p>
-        <p className="text-sm font-extrabold text-emerald-500">Top 3</p>
-      </motion.div>
-
-      <motion.div
-        animate={reduce ? undefined : { y: [4, -4] }}
-        transition={{ duration: 3.1, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute left-0 top-24 rounded-xl border border-slate-900 bg-slate-900 px-3 py-2 shadow-lg"
-      >
-        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-          AI-vermelding
-        </p>
-        <p className="text-sm font-extrabold text-white">Ja</p>
-      </motion.div>
     </div>
   );
 }

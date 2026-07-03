@@ -160,9 +160,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     subheadline:
       "Google is niet meer de enige plek waar klanten zoeken. Wij maken je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
     stats: [
-      { label: "SEO", value: "Content · techniek · structuur" },
-      { label: "AI-zoek", value: "ChatGPT · Perplexity · AI" },
-      { label: "Lokaal", value: "Maps · Google Business · reviews" },
+      { label: "SEO", value: "Content · techniek" },
+      { label: "AI-zoek", value: "ChatGPT · Perplexity" },
+      { label: "Lokaal", value: "Maps · reviews" },
     ],
     introParagraphs: [
       "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT of Perplexity welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, besta je voor die klant simpelweg niet.",

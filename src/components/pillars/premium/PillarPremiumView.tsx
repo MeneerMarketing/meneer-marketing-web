@@ -147,11 +147,11 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
                 </Link>
               </div>
 
-              <dl className="mt-11 grid max-w-lg grid-cols-3 gap-5 border-t border-slate-200 pt-7 text-sm tracking-tight">
+              <dl className="mt-11 grid max-w-xl grid-cols-3 gap-3 border-t border-slate-200 pt-7 text-sm tracking-tight sm:gap-5">
                 {data.stats.map((stat) => (
-                  <div key={stat.label}>
+                  <div key={stat.label} className="min-w-0">
                     <dt className="text-slate-500">{stat.label}</dt>
-                    <dd className="mt-1 whitespace-nowrap text-xs font-bold text-slate-900 sm:text-sm">
+                    <dd className="mt-1 text-[11px] font-bold leading-snug text-slate-900 sm:text-xs">
                       {stat.value}
                     </dd>
                   </div>
