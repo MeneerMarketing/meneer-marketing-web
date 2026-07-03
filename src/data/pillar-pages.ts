@@ -272,9 +272,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     subheadline:
       "Een nieuwe klant werven kost al snel vijf keer meer dan een bestaande behouden. Wij bouwen e-mail, retentie en slimme systemen die daar munt uit slaan.",
     stats: [
-      { label: "E-mail", value: "Nieuwsbrief · flows · Klaviyo" },
-      { label: "Retentie", value: "Loyalty · SMS · opvolging" },
-      { label: "Systemen", value: "Koppelingen · chatbots · rust" },
+      { label: "E-mail", value: "Flows · Klaviyo" },
+      { label: "Retentie", value: "Loyalty · SMS" },
+      { label: "Systemen", value: "Sync · rust" },
     ],
     introParagraphs: [
       "De meeste bedrijven pompen al hun budget in nieuwe klanten en vergeten de klanten die al kochten. Zonde, want daar zit de marge: die klant kent je al, vertrouwt je al en hoeft alleen een goede reden te krijgen om terug te komen.",

@@ -104,6 +104,29 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       { label: "Core Web Vitals", value: "Groen" },
     ],
   },
+  behoud: {
+    stickers: [
+      "E-mail",
+      "Flows",
+      "Retentie",
+      "Klaviyo",
+      "Automatisering",
+      "Herhaal",
+      "LTV",
+    ],
+    funFact:
+      "Een nieuwe klant werven kost gemiddeld vijf keer meer dan een bestaande behouden. Toch gaat het meeste budget nog steeds naar acquisitie.",
+    funFactSource: "Daarom meten we in herhaalaankopen en LTV",
+    funFactStat: "5×",
+    hubTitle: "Elke module in je stack versterkt de klantrelatie.",
+    hubSubtitle:
+      "Beweeg over het ecosysteem en zie welke dienst waar in je behoud zit. Of pak de lijst en spring direct naar het juiste traject.",
+    proofMetrics: [
+      { label: "Omzet per flow", value: "Meetbaar" },
+      { label: "Handwerk", value: "Eruit" },
+      { label: "Herhaal", value: "Groeiend" },
+    ],
+  },
 };
 
 export function getPillarPremium(slug: string): PillarPremiumContent | null {

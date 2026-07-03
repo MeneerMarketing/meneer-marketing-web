@@ -3,6 +3,9 @@ import { ArrowUpRight, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { StickerStrip } from "@/components/diensten/premium/StickerStrip";
 import { BouwenHero } from "@/components/pillars/premium/BouwenHero";
+import { BehoudContextSection } from "@/components/pillars/premium/BehoudContextSection";
+import { BehoudHero } from "@/components/pillars/premium/BehoudHero";
+import { BehoudStagesScroll } from "@/components/pillars/premium/BehoudStagesScroll";
 import { BuildContextSection } from "@/components/pillars/premium/BuildContextSection";
 import { BuildStackMatcher } from "@/components/pillars/premium/BuildStackMatcher";
 import { BuildStagesScroll } from "@/components/pillars/premium/BuildStagesScroll";
@@ -15,6 +18,8 @@ import { GrowthChannelMap } from "@/components/pillars/premium/GrowthChannelMap"
 import { GrowthSituationMatcher } from "@/components/pillars/premium/GrowthSituationMatcher";
 import { PillarProofPanel } from "@/components/pillars/premium/PillarProofPanel";
 import { ServiceBlueprintMap } from "@/components/pillars/premium/ServiceBlueprintMap";
+import { RetentionSituationMatcher } from "@/components/pillars/premium/RetentionSituationMatcher";
+import { RetentionSystemMap } from "@/components/pillars/premium/RetentionSystemMap";
 import { SearchIntentMatcher } from "@/components/pillars/premium/SearchIntentMatcher";
 import { StrategieContextSection } from "@/components/pillars/premium/StrategieContextSection";
 import { StrategieHero } from "@/components/pillars/premium/StrategieHero";
@@ -59,6 +64,8 @@ function PillarHeroVisual({ slug }: { slug: PillarSlug }) {
       return <VindbaarheidHero />;
     case "campagnes":
       return <CampagnesHero />;
+    case "behoud":
+      return <BehoudHero />;
     default:
       return null;
   }
@@ -251,6 +258,26 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
             />
             <CampaignBudgetMatcher />
             <CampagnesStagesScroll title={data.processTitle} stages={data.processSteps} />
+          </>
+        ) : null}
+
+        {data.slug === "behoud" ? (
+          <>
+            <BehoudContextSection
+              introParagraphs={data.introParagraphs}
+              angleTitle={data.angleTitle}
+              angleBody={data.angleBody}
+              funFact={premium.funFact}
+              funFactSource={premium.funFactSource}
+              funFactStat={premium.funFactStat}
+            />
+            <RetentionSystemMap
+              title={premium.hubTitle}
+              subtitle={premium.hubSubtitle}
+              services={serviceItems}
+            />
+            <RetentionSituationMatcher />
+            <BehoudStagesScroll title={data.processTitle} stages={data.processSteps} />
           </>
         ) : null}
 
