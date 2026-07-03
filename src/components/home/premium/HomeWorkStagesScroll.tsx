@@ -101,17 +101,8 @@ export function HomeWorkStagesScroll() {
           </button>
         </div>
 
-        {/* Tijdlijn */}
+        {/* Faseknoppen */}
         <div className="relative mt-10">
-          <div className="absolute left-0 right-0 top-5 hidden h-0.5 bg-white/10 sm:block" aria-hidden />
-          <motion.div
-            className="absolute left-0 top-5 hidden h-0.5 origin-left bg-gradient-to-r from-[#FF5722] to-orange-300 sm:block"
-            initial={false}
-            animate={{ width: `${Math.max(0, progress - 12)}%` }}
-            transition={{ type: "spring", stiffness: 90, damping: 18 }}
-            aria-hidden
-          />
-
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
             {HOME_TRAJECTORY_STAGES.map((s, index) => {
               const Icon = STAGE_ICONS[index];
@@ -161,6 +152,15 @@ export function HomeWorkStagesScroll() {
                 </button>
               );
             })}
+          </div>
+
+          <div className="mt-4 h-1 overflow-hidden rounded-full bg-white/10" aria-hidden>
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-[#FF5722] to-orange-300"
+              initial={false}
+              animate={{ width: `${progress}%` }}
+              transition={{ type: "spring", stiffness: 90, damping: 18 }}
+            />
           </div>
         </div>
 
