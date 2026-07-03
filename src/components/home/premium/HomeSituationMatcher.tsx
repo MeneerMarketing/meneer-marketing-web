@@ -66,7 +66,7 @@ const SITUATIONS: Situation[] = [
   {
     id: "retain",
     icon: Heart,
-    label: "Geen herhaal",
+    label: "Komt niet terug",
     title: "Klanten komen niet terug",
     pillar: "behoud",
     pillarHref: "/behoud",
