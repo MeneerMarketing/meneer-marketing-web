@@ -24,8 +24,8 @@ const Q = {
 export const dienstExtras: Record<string, DienstExtra> = {
   "shopify-enterprise": {
     outcomes: [
-      "Thema en secties die meegroeien met assortiment en merk",
-      "Checkout- en B2B-scenario’s zonder fragiele workarounds",
+      "Custom theme from scratch dat meegroeit met assortiment en merk",
+      "Checkout en complexe shop-logica zonder fragiele app-workarounds",
       "Performance en CWV als harde eis in elke release",
     ],
     faq: [

@@ -53,7 +53,7 @@ const SERVICES: GridTile[] = [
   },
   {
     title: "Shopify webshops",
-    text: "Shopify-expert. Webshops die verkopen, snel laden en meegroeien.",
+    text: "Shopify-expert. Custom themes from scratch, geen templates uit de store.",
     href: "/diensten/shopify-enterprise",
     Icon: ShoppingBag,
     accent: "#FF5722",

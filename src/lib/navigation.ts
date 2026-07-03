@@ -101,10 +101,10 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       },
       {
         name: "Shopify Enterprise Development",
-        description: "Schaalbare ecosystemen voor hoge volumes",
-        menuLabel: "Shopify enterprise & schaal",
+        description: "Shopify-webshops from scratch, custom themes",
+        menuLabel: "Shopify from scratch",
         menuDescription:
-          "Robuust Shopify platform: veilig, schaalbaar en klaar voor volume vandaag.",
+          "Shopify-expert: maatwerk themes from scratch. Geen templates, alles wat het platform kan.",
         href: "/diensten/shopify-enterprise",
       },
       {

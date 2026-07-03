@@ -104,16 +104,33 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
   ],
 };
 
+const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
+  "shopify-enterprise": [
+    {
+      title: "Van template naar maatwerk",
+      body: "Je zit vast in een theme uit de store dat nergens op lijkt wat je wilt. Dan bouwen we from scratch: eigen secties, eigen flow, jouw merk.",
+    },
+    {
+      title: "Schaal-up e-commerce",
+      body: "Je groeit hard: meer SKU's, landen, kanalen. Dan moet je custom theme en data-laag niet breken bij elke feature.",
+    },
+    {
+      title: "Shopify als platform",
+      body: "Je wilt portals, koppelingen of checkout op maat. In Shopify kan het, als je iemand hebt die het platform écht kent.",
+    },
+  ],
+};
+
 const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   "shopify-enterprise": {
-    deepTitle: "Shopify enterprise: maatwerk zonder chaos",
+    deepTitle: "Shopify from scratch: maatwerk zonder chaos",
     deepLead:
-      "Geen twee enterprise-Shops zijn hetzelfde: het ene bedrijf zit in B2B-bundles, het andere in internationale prijzen, weer een ander in headless + app-ecosysteem. Ik start met jouw order-ticket-flow, catalogus-complexiteit en marketingstack. En kies architectuur die daar eerlijk op inspeelt.",
+      "Ik koop geen theme in de Shopify Store en plak je logo erop. Elke shop start op een leeg canvas: eigen secties, eigen Liquid, jouw merk. Of je nu D2C verkoopt, internationaal schaalt of een portal nodig hebt. In Shopify kan het, als je iemand hebt die het platform écht kent.",
     deepExtended:
-      "Soms is de beste move een strak OS2.0-theme met minimale apps; andere keren is API-first of een hybride met maatwerk front. Ik laat je zien waarom, wat het betekent voor onderhoud en wat het doet met snelheid en SEO. Zo koop je geen ‘enterprise-label’, maar een oplossing die past bij jouw volgende fase.",
+      "Soms is een strak OS 2.0-theme from scratch de slimste route. Soms headless of een hybride met maatwerk front. Ik laat je zien waarom, wat het betekent voor onderhoud, SEO en snelheid. Zo koop je geen template, maar een shop die past bij jouw volgende fase.",
     signals: [
-      "Hoe complex is je variant- en prijslogica (B2B, regio’s, kortingen)?",
-      "Welke apps zijn echt kritisch. En welke vervangen we door maatwerk?",
+      "Hoe complex is je catalogus (varianten, prijzen, regio's)?",
+      "Welke apps zijn echt kritisch. En welke vervangen we door maatwerk in het theme?",
       "Waar zit je omzet: SEO, ads, e-mail. En wat verwacht je storefront daarvoor?",
       "Hoe ziet je release-proces eruit (staging, QA, rollback)?",
     ],
@@ -506,7 +523,9 @@ export function getDienstStrategic(
 ): DienstStrategicContent & { pillarLens: string } {
   const core = BY_SLUG[slug] ?? fallbackSlugContent(slug);
   const scenarios =
-    SCENARIOS_BY_PILLAR[pillar] ?? SCENARIOS_BY_PILLAR.Bouwen;
+    SCENARIOS_BY_SLUG[slug] ??
+    SCENARIOS_BY_PILLAR[pillar] ??
+    SCENARIOS_BY_PILLAR.Bouwen;
   return {
     ...core,
     scenarios,

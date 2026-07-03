@@ -20,11 +20,11 @@ function body(
 
 const CONTENT = {
   "shopify-enterprise": body(
-    "Shopify schaalt pas echt als thema, apps, data en campagnes niet tegen elkaar werken. Ik richt enterprise-trajecten in op snelheid, overzicht en een codebase die je team begrijpt. Geen black box.",
+    "Ik ben Shopify-expert en bouw webshops from scratch. Geen theme uit de store, geen template dat op honderd andere shops lijkt. Custom theme, custom secties, precies passend bij jouw merk. In Shopify is vrijwel alles mogelijk. Ik weet hoe.",
     [
-      "Thema-architectuur en secties die meegroeien met je assortiment en merk",
-      "Checkout, B2B, bundles en internationale storefronts waar nodig",
-      "Koppelingen via Storefront API, webhooks en automatisering buiten de admin om",
+      "Custom Shopify-themes from scratch, geen kant-en-klare templates",
+      "Checkout, bundles, portals en koppelingen waar jij ze nodig hebt",
+      "Storefront API, webhooks en automatisering netjes ingebouwd",
       "Performance en Core Web Vitals als harde eis, niet als bijlage",
     ],
   ),

@@ -23,7 +23,7 @@ function buildIn(delay: number, reduce: boolean) {
 
 /**
  * Decoratief Shopify-storefront venster: productgrid bouwt zich op, met
- * zwevende enterprise-badges (B2B, SKU's, snelheid). Zelfde tilt als build-hero.
+ * zwevende badges (custom theme, SKU's, snelheid). Zelfde tilt als build-hero.
  */
 export function HeroShopifyWindow() {
   const reduce = useReducedMotion();
@@ -87,7 +87,7 @@ export function HeroShopifyWindow() {
             <span className="h-2 w-14 rounded-full bg-slate-200" aria-hidden />
             <span className="h-2 w-10 rounded-full bg-slate-200" aria-hidden />
             <span className="ml-auto flex items-center gap-1 rounded-full border border-slate-200 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-slate-500">
-              B2B
+              Maatwerk
             </span>
             <span className="relative flex size-7 items-center justify-center rounded-full bg-[#FF5722]/10">
               <ShoppingBag className="size-3.5 text-[#FF5722]" aria-hidden />

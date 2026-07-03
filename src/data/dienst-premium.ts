@@ -113,38 +113,38 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   "shopify-enterprise": {
     heroVisual: "shopify",
     heroKicker:
-      "Shopify schaalt pas echt als thema, apps, data en campagnes één team spelen. Ik bouw enterprise-shops die snel blijven, overzicht houden en je team begrijpt. Geen black box.",
+      "Ik ben Shopify-expert en bouw webshops from scratch. Geen theme uit de store, geen template dat op honderd andere shops lijkt. Custom theme, custom secties. In Shopify is vrijwel alles mogelijk. Ik weet hoe.",
     funFact:
       "Shopify verwerkt in piekmomenten meer dan een miljoen checkouts per minuut. Jouw shop hoeft niet stuk te gaan omdat het theme het op drukke dagen niet aankan.",
-    funFactSource: "Daarom architectuur vóór apps",
+    funFactSource: "Daarom themes from scratch",
     funFactStat: "1M+",
     principles: [
       {
-        title: "Eerst je stack begrijpen",
-        body: "B2B-bundles, internationale prijzen of headless: geen enkele enterprise-shop is hetzelfde. Ik begin bij jouw catalogus, orderflow en marketingstack. Pas daarna kies ik architectuur.",
+        title: "Themes from scratch",
+        body: "Ik koop geen theme in de Shopify Store en plak je logo erop. Elke shop start op een leeg canvas: eigen secties, eigen Liquid, jouw merk. Daarmee kan alles wat Shopify aankan.",
       },
       {
         title: "Geen app-estafette",
-        body: "Veel Shopify-projecten ontsporen door twintig apps die elkaar bijten. Ik vervang waar nodig door maatwerk, houd wat werkt en geef je één aanspreekpunt voor theme, koppelingen en performance.",
+        body: "Veel Shopify-projecten ontsporen door twintig apps die elkaar bijten. Ik bouw liever in het theme wat kan, houd wat werkt en geef je één aanspreekpunt voor code, koppelingen en performance.",
       },
       {
-        title: "Uitleg in jouw taal",
-        body: "OS 2.0, Storefront API, checkout extensibility: ik vertaal het naar keuzes die jij kunt maken. Geen enterprise-jargon om indruk te maken, wel een plan dat je team kan uitvoeren.",
+        title: "Shopify-expert, punt",
+        body: "Checkout, Storefront API, koppelingen, portals: ik spreek Shopify vloeiend en leg keuzes uit in normaal Nederlands. Jij hoeft geen extra developer in te huren naast mij.",
       },
     ],
-    lens: "Bij Shopify enterprise kijk ik verder dan het theme. Ik ontwerp voor de volgende fase: meer SKU's, B2B naast B2C, internationale storefronts. Zo koop je geen label, maar een shop die meegroeit zonder elke release te breken.",
+    lens: "Bij Shopify bouw ik alsof je over een jaar drie keer zo groot bent: meer producten, meer kanalen, meer automatisering. Alles in één maatwerk theme dat je team snapt. Geen template, geen black box.",
     approachSteps: [
       {
         title: "Stack & catalogus audit",
-        body: "We brengen je variant-logica, apps, koppelingen en bottlenecks in kaart. Wat is kritisch, wat is ballast, en waar lekt omzet weg?",
+        body: "We brengen je huidige theme, apps, koppelingen en bottlenecks in kaart. Wat is kritisch, wat is ballast, en waar lekt omzet weg?",
       },
       {
-        title: "Architectuur kiezen",
-        body: "OS 2.0-theme, headless of hybride: ik laat je zien waarom, wat het betekent voor onderhoud, SEO en snelheid. Jij kiest met open ogen.",
+        title: "Theme from scratch",
+        body: "Design, secties en Liquid op maat. OS 2.0, headless of hybride: ik laat je zien waarom, wat het betekent voor onderhoud, SEO en snelheid.",
       },
       {
         title: "Bouwen & migreren",
-        body: "Thema, checkout, B2B en koppelingen in sprints met staging en QA. Migraties plannen we met redirects en campagne-impact, zodat SEO en ads niet schokken.",
+        body: "Custom theme, checkout en koppelingen in sprints met staging en QA. Migraties plannen we met redirects en campagne-impact, zodat SEO en ads niet schokken.",
       },
       {
         title: "Live, meten, doorontwikkelen",
@@ -152,24 +152,24 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
     ],
     capabilities: [
-      "OS 2.0",
-      "B2B checkout",
+      "From scratch",
+      "Custom theme",
+      "Shopify-expert",
       "Storefront API",
       "CWV groen",
       "Minimale apps",
-      "Staging & QA",
-      "Headless-ready",
+      "Alles mogelijk",
     ],
     outcomes: [
       {
-        title: "Thema dat meegroeit",
+        title: "Theme from scratch",
         detail:
-          "Secties en data-laag die nieuwe SKU's, merken en storefronts aankunnen zonder fragiele workarounds. Je team past content aan zonder bang te zijn iets te breken.",
+          "Geen template uit de store. Eigen secties en code die meegroeien met je assortiment en merk. Je team past content aan zonder bang te zijn iets te breken.",
       },
       {
         title: "Checkout zonder gedoe",
         detail:
-          "B2B, bundles en internationale prijzen werken stabiel. Geen ketting van apps die elkaar tegenwerken zodra je één regel aanpast.",
+          "Complexe prijzen, bundles en internationale storefronts werken stabiel. Geen ketting van apps die elkaar tegenwerken zodra je één regel aanpast.",
       },
       {
         title: "Snelheid als harde eis",
@@ -178,8 +178,8 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
     ],
     heroStats: [
-      { label: "Aanpak", value: "OS 2.0 · maatwerk" },
-      { label: "Schaal", value: "B2B · international" },
+      { label: "Aanpak", value: "Theme · from scratch" },
+      { label: "Expertise", value: "Shopify · alles kan" },
       { label: "Performance", value: "CWV per release" },
     ],
   },
