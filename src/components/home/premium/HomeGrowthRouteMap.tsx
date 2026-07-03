@@ -26,6 +26,9 @@ interface RouteNode {
   y: number;
 }
 
+const VIEW_W = 1440;
+const VIEW_H = 560;
+
 const NODES: RouteNode[] = [
   { id: "strategie", label: "Strategie & groei", short: "Plan", href: "/strategie", x: 10, y: 72 },
   { id: "bouwen", label: "Bouwen from scratch", short: "Bouw", href: "/bouwen", x: 28, y: 38 },
@@ -34,6 +37,38 @@ const NODES: RouteNode[] = [
   { id: "behoud", label: "Behoud", short: "Mail", href: "/behoud", x: 90, y: 62 },
 ];
 
+function nodeToSvg(node: RouteNode) {
+  return { x: (node.x / 100) * VIEW_W, y: (node.y / 100) * VIEW_H };
+}
+
+/** Vloeiende spline die exact door elk knooppunt loopt */
+function buildRoutePath(points: { x: number; y: number }[]): string {
+  if (points.length < 2) return "";
+  if (points.length === 2) {
+    return `M ${points[0].x} ${points[0].y} L ${points[1].x} ${points[1].y}`;
+  }
+
+  let d = `M ${points[0].x} ${points[0].y}`;
+
+  for (let i = 0; i < points.length - 1; i++) {
+    const p0 = points[Math.max(0, i - 1)];
+    const p1 = points[i];
+    const p2 = points[i + 1];
+    const p3 = points[Math.min(points.length - 1, i + 2)];
+
+    const cp1x = p1.x + (p2.x - p0.x) / 6;
+    const cp1y = p1.y + (p2.y - p0.y) / 6;
+    const cp2x = p2.x - (p3.x - p1.x) / 6;
+    const cp2y = p2.y - (p3.y - p1.y) / 6;
+
+    d += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${p2.x} ${p2.y}`;
+  }
+
+  return d;
+}
+
+const ROUTE_PATH = buildRoutePath(NODES.map(nodeToSvg));
+
 const NODE_ICONS: Record<PillarSlug, typeof Target> = {
   strategie: Target,
   bouwen: Hammer,
@@ -41,9 +76,6 @@ const NODE_ICONS: Record<PillarSlug, typeof Target> = {
   campagnes: Megaphone,
   behoud: Heart,
 };
-
-const ROUTE_PATH =
-  "M 80 520 C 200 480, 280 280, 400 360 S 640 200, 720 280 S 960 380, 1080 340 S 1240 420, 1360 400";
 
 /**
  * Interactieve groeiroute: vijf hoofdblokken als pad dat je kunt aanklikken.
@@ -72,7 +104,7 @@ export function HomeGrowthRouteMap() {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
           <PillarHubCanvas barTitle="groeiroute.map" barStatus="live" aspectClass="aspect-[16/10]">
-            <svg viewBox="0 0 1440 560" className="absolute inset-0 size-full" aria-hidden>
+            <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className="absolute inset-0 size-full" aria-hidden>
               <motion.path
                 d={ROUTE_PATH}
                 fill="none"
