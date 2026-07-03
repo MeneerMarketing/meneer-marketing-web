@@ -1,43 +1,47 @@
-import type { LucideIcon } from "lucide-react";
-import {
-  Code2,
-  Megaphone,
-  Search,
-  Target,
-  UserRound,
-} from "lucide-react";
+export type UspSceneId =
+  | "contact"
+  | "plan"
+  | "build"
+  | "ads"
+  | "discover";
 
 export interface HomeUsp {
-  icon: LucideIcon;
+  scene: UspSceneId;
   title: string;
   body: string;
+  accent: string;
 }
 
 export const HOME_USPS: HomeUsp[] = [
   {
-    icon: UserRound,
+    scene: "contact",
     title: "Eén aanspreekpunt",
-    body: "Strategie, bouw, SEO, ads en e-mail. Je praat met mij, niet met een wisselend team.",
+    body: "Strategie, bouw, SEO, ads en e-mail. Altijd dezelfde stem, geen wisselend team dat opnieuw moet uitleggen.",
+    accent: "#FF5722",
   },
   {
-    icon: Target,
+    scene: "plan",
     title: "Plan én uitvoering",
-    body: "Geen strategie-PDF in een la. Ik bedenk het plan en voer het ook echt uit.",
+    body: "Geen strategie-PDF in een la. Ik schrijf het plan, bouw het systeem en stuur campagnes ook echt zelf.",
+    accent: "#0F172A",
   },
   {
-    icon: Code2,
+    scene: "build",
     title: "From scratch",
-    body: "Websites en Shopify zonder templates. Alles custom build, snel en klaar om te groeien.",
+    body: "Geen templates, geen page builders. Websites en Shopify custom gebouwd, snel en klaar om op te schalen.",
+    accent: "#0284c7",
   },
   {
-    icon: Megaphone,
+    scene: "ads",
     title: "Google Ads & Meta Ads",
-    body: "Echte campagne-expertise. Klein testen, meten en opschalen wat werkt.",
+    body: "Campagne-expertise die telt. Klein testen, scherp meten en alleen opschalen wat echt geld oplevert nu.",
+    accent: "#FF5722",
   },
   {
-    icon: Search,
+    scene: "discover",
     title: "Vindbaar overal",
-    body: "Google én AI-zoek. ChatGPT, Gemini en Claude. Content die autoriteit opbouwt.",
+    body: "Google én AI-zoek: ChatGPT, Gemini en Claude. Content en techniek die elke dag autoriteit voor je opbouwen.",
+    accent: "#00BCD4",
   },
 ];
 

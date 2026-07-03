@@ -66,14 +66,18 @@ export function HeroSection() {
             </Magnetic>
           </div>
 
-          <dl className="mt-14 grid max-w-xl grid-cols-3 gap-6 border-t border-slate-200 pt-8 text-sm tracking-tight">
+          <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-x-4 gap-y-6 border-t border-slate-200 pt-8 text-sm tracking-tight sm:gap-x-8">
             <div>
               <dt className="text-slate-500">Focus</dt>
               <dd className="mt-1 font-bold text-slate-900">Snelheid &amp; schaal</dd>
             </div>
-            <div>
+            <div className="min-w-0">
               <dt className="text-slate-500">Stack</dt>
-              <dd className="mt-1 font-bold text-slate-900">Shopify · Custom build · Next</dd>
+              <dd className="mt-1 font-bold text-slate-900">
+                <span className="whitespace-nowrap text-[0.8125rem] sm:text-sm">
+                  Shopify · Custom build · Next.js
+                </span>
+              </dd>
             </div>
             <div>
               <dt className="text-slate-500">Aanpak</dt>

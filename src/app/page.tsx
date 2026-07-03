@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { AutomationSection } from "@/components/home/AutomationSection";
 import { CasesPreviewSection } from "@/components/home/CasesPreviewSection";
-import { DifferenceSection } from "@/components/home/DifferenceSection";
-import { FunFactsSection } from "@/components/home/FunFactsSection";
 import { GroeiscanSection } from "@/components/home/GroeiscanSection";
 import { HeroSection } from "@/components/home/HeroSection";
+import { HomeUspBar } from "@/components/home/HomeUspBar";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
 import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { ServicesOfficeSection } from "@/components/home/office/ServicesOfficeSection";
-import { StrategicSignatureSection } from "@/components/home/StrategicSignatureSection";
-import { HomeUspBar } from "@/components/home/HomeUspBar";
+import { HomeContextSection } from "@/components/home/premium/HomeContextSection";
+import { HomeCtaSection } from "@/components/home/premium/HomeCtaSection";
+import { HomeGrowthRouteMap } from "@/components/home/premium/HomeGrowthRouteMap";
+import { HomeProofSection } from "@/components/home/premium/HomeProofSection";
+import { HomeSituationMatcher } from "@/components/home/premium/HomeSituationMatcher";
+import { HomeWorkStagesScroll } from "@/components/home/premium/HomeWorkStagesScroll";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 
@@ -33,14 +35,16 @@ export default function HomePage() {
         <HeroSection />
         <HomeUspBar />
         <ServicesOfficeSection />
-        <FunFactsSection />
-        <StrategicSignatureSection />
-        <DifferenceSection />
-        <MeneerPeek />
+        <HomeContextSection />
+        <HomeGrowthRouteMap />
+        <HomeSituationMatcher />
         <GroeiscanSection />
+        <HomeWorkStagesScroll />
         <CasesPreviewSection />
-        <AutomationSection />
+        <HomeProofSection />
         <InsightsPreviewSection />
+        <MeneerPeek />
+        <HomeCtaSection />
       </main>
       <SiteFooter />
     </>

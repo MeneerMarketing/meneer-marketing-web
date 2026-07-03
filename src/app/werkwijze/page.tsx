@@ -9,8 +9,10 @@ import {
   Search,
 } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
+import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { MARKETING_FUN_FACTS } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
 
@@ -117,6 +119,11 @@ export default function WerkwijzePage() {
             </ol>
           </div>
         </section>
+
+        <MarketingFunFactsRow
+          facts={MARKETING_FUN_FACTS.slice(0, 2)}
+          title="Tussendoor: twee feitjes die je route scherper maken"
+        />
 
         <section className="py-16" aria-labelledby="allrounder-heading">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">

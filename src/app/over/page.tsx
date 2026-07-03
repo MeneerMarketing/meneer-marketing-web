@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import { ArrowUpRight, Cpu, Heart, Target } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { SpotlightCard } from "@/components/home/SpotlightCard";
+import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { MARKETING_FUN_FACTS } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
 
@@ -141,6 +143,8 @@ export default function OverPage() {
             </ul>
           </div>
         </section>
+
+        <MarketingFunFactsRow facts={[MARKETING_FUN_FACTS[2]!]} />
 
         <section className="border-t border-mm-border bg-mm-accent-subtle">
           <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8 lg:py-20">

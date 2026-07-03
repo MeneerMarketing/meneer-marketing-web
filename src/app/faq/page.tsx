@@ -3,10 +3,12 @@ import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { Reveal } from "@/components/effects/Reveal";
+import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { JsonLdScript, breadcrumbJsonLd, faqPageJsonLd } from "@/components/seo/JsonLd";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { MARKETING_FUN_FACTS } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
 
@@ -216,6 +218,10 @@ export default function FaqPage() {
                 </div>
               </section>
             ))}
+          </div>
+
+          <div className="mt-16">
+            <MarketingFunFactsRow facts={[MARKETING_FUN_FACTS[3]!]} />
           </div>
 
           <Reveal delay={0.06}>
