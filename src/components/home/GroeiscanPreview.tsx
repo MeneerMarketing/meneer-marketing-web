@@ -1,67 +1,25 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, Gauge, Layers, Sparkles, TrendingUp, Zap } from "lucide-react";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { GroeiscanMeneerCoach } from "@/components/groeiscan/GroeiscanMeneerCoach";
+import { GroeiscanTowerVisual } from "@/components/groeiscan/GroeiscanTowerVisual";
 import { siteCtas } from "@/lib/cta";
 import {
   GROEISCAN_GOALS,
   type GroeiscanGoalId,
+  computeActiveFloors,
+  computeGrowthTier,
   computePlaygroundInsight,
   computePlaygroundScore,
   formatBudgetTier,
+  getMeneerCoachLine,
 } from "@/lib/groeiscan-playground";
 
-const GOAL_ICONS = {
-  leads: TrendingUp,
-  revenue: Zap,
-  speed: Gauge,
-  automate: Layers,
-} as const;
-
-function ScoreGauge({ score }: { score: number }) {
-  const radius = 52;
-  const circumference = 2 * Math.PI * radius;
-  const offset = circumference - (score / 100) * circumference;
-
-  return (
-    <div className="relative mx-auto size-[9.5rem]">
-      <svg viewBox="0 0 120 120" className="size-full -rotate-90" aria-hidden>
-        <circle cx="60" cy="60" r={radius} fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="10" />
-        <motion.circle
-          cx="60"
-          cy="60"
-          r={radius}
-          fill="none"
-          stroke="#FF5722"
-          strokeWidth="10"
-          strokeLinecap="round"
-          strokeDasharray={circumference}
-          initial={false}
-          animate={{ strokeDashoffset: offset }}
-          transition={{ type: "spring", stiffness: 70, damping: 16 }}
-        />
-      </svg>
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <motion.span
-          key={score}
-          initial={{ opacity: 0.5, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="text-4xl font-black tabular-nums leading-none text-white"
-        >
-          {score}
-        </motion.span>
-        <span className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-          groei-index
-        </span>
-      </div>
-    </div>
-  );
-}
-
 /**
- * Interactieve Groeiscan-teaser voor de homepage: gauge, doelen en live inzicht.
+ * Compacte Groeiscan-teaser voor de homepage.
  */
 export function GroeiscanPreview() {
   const reduce = useReducedMotion();
@@ -73,14 +31,17 @@ export function GroeiscanPreview() {
       goal,
       budgetTier,
       maturity: 5,
-      frictionHours: 12,
-      channelIds: new Set<string>(["seo", "ads"]),
+      frictionHours: 6,
+      channelIds: new Set<string>(["seo"]),
     }),
     [goal, budgetTier],
   );
 
   const score = useMemo(() => computePlaygroundScore(input), [input]);
-  const { headline, sub } = useMemo(() => computePlaygroundInsight(input), [input]);
+  const growthTier = useMemo(() => computeGrowthTier(score), [score]);
+  const insight = useMemo(() => computePlaygroundInsight(input), [input]);
+  const activeFloors = useMemo(() => computeActiveFloors(input), [input]);
+  const coachLine = getMeneerCoachLine("goal", { goal });
 
   return (
     <div className="relative overflow-hidden rounded-[1.35rem] border border-slate-800 bg-slate-950 shadow-[0_28px_56px_-28px_rgba(0,0,0,0.55)]">
@@ -100,8 +61,13 @@ export function GroeiscanPreview() {
         </span>
       </div>
 
-      <div className="relative space-y-5 p-5 sm:p-6">
-        <ScoreGauge score={score} />
+      <div className="relative space-y-4 p-5 sm:p-6">
+        <GroeiscanTowerVisual
+          activeFloors={activeFloors}
+          score={score}
+          growthLabel={growthTier.label}
+          compact
+        />
 
         <fieldset>
           <legend className="text-center text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
@@ -109,7 +75,7 @@ export function GroeiscanPreview() {
           </legend>
           <div className="mt-3 grid grid-cols-2 gap-2">
             {GROEISCAN_GOALS.map((g) => {
-              const Icon = GOAL_ICONS[g.id];
+              const Icon = g.icon;
               const active = goal === g.id;
               return (
                 <button
@@ -119,7 +85,7 @@ export function GroeiscanPreview() {
                   aria-pressed={active}
                   className={`flex items-center gap-2 rounded-xl border px-2.5 py-2.5 text-left transition-all ${
                     active
-                      ? "border-[#FF5722]/50 bg-[#FF5722]/10 shadow-[0_0_0_1px_rgba(255,87,34,0.2)]"
+                      ? "border-[#FF5722]/50 bg-[#FF5722]/10"
                       : "border-white/[0.08] bg-white/[0.03] hover:border-white/15"
                   }`}
                 >
@@ -142,7 +108,7 @@ export function GroeiscanPreview() {
         <div>
           <div className="flex items-center justify-between gap-2 text-xs">
             <label htmlFor="groeiscan-preview-budget" className="font-bold text-slate-300">
-              Groei-ambitie
+              Investering per maand
             </label>
             <output htmlFor="groeiscan-preview-budget" className="font-bold text-[#FF5722]">
               {formatBudgetTier(budgetTier)}
@@ -158,23 +124,21 @@ export function GroeiscanPreview() {
             onChange={(e) => setBudgetTier(Number(e.target.value))}
             className="mt-3 h-1.5 w-full cursor-pointer appearance-none rounded-full bg-white/10 accent-[#FF5722]"
           />
-          <div className="mt-1 flex justify-between text-[9px] font-bold uppercase tracking-wider text-slate-500">
-            <span>Start</span>
-            <span>Opschalen</span>
-          </div>
         </div>
+
+        <GroeiscanMeneerCoach message={coachLine} compact />
 
         <AnimatePresence mode="wait">
           <motion.div
-            key={`${goal}-${budgetTier}-${headline}`}
+            key={`${goal}-${budgetTier}-${insight.headline}`}
             initial={reduce ? false : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.22 }}
             className="rounded-xl border border-white/[0.08] bg-white/[0.04] p-3.5"
           >
-            <p className="text-sm font-extrabold text-white">{headline}</p>
-            <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{sub}</p>
+            <p className="text-sm font-extrabold text-white">{insight.headline}</p>
+            <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{insight.sub}</p>
           </motion.div>
         </AnimatePresence>
 

@@ -133,6 +133,59 @@ export function serviceJsonLd(input: {
   };
 }
 
+export function aboutPageJsonLd(input: {
+  name: string;
+  description: string;
+  path: string;
+}): JsonLdObject {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: input.name,
+    description: input.description,
+    url: absoluteUrl(input.path),
+    inLanguage: "nl-NL",
+    isPartOf: {
+      "@type": "WebSite",
+      name: "MeneerMarketing",
+      url: siteUrl,
+    },
+    about: {
+      "@type": "Organization",
+      name: "MeneerMarketing",
+      url: siteUrl,
+      description: organizationJsonLd.description as string,
+    },
+  };
+}
+
+export function contactPageJsonLd(input: {
+  name: string;
+  description: string;
+  path: string;
+}): JsonLdObject {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: input.name,
+    description: input.description,
+    url: absoluteUrl(input.path),
+    inLanguage: "nl-NL",
+    mainEntity: {
+      "@type": "Organization",
+      name: "MeneerMarketing",
+      url: siteUrl,
+      email: businessEmail,
+      identifier: {
+        "@type": "PropertyValue",
+        propertyID: "KVK",
+        value: businessKvk,
+      },
+      areaServed: "NL",
+    },
+  };
+}
+
 export function collectionPageJsonLd(input: {
   name: string;
   description: string;

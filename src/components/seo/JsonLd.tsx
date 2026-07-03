@@ -1,7 +1,9 @@
 import {
+  aboutPageJsonLd,
   articleJsonLd,
   breadcrumbJsonLd,
   collectionPageJsonLd,
+  contactPageJsonLd,
   faqPageJsonLd,
   organizationJsonLd,
   serviceJsonLd,
@@ -34,9 +36,11 @@ export function JsonLdScript({
 }
 
 export {
+  aboutPageJsonLd,
   articleJsonLd,
   breadcrumbJsonLd,
   collectionPageJsonLd,
+  contactPageJsonLd,
   faqPageJsonLd,
   serviceJsonLd,
 };

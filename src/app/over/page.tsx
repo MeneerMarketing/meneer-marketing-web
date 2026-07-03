@@ -1,181 +1,89 @@
-import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowUpRight, Cpu, Heart, Target } from "lucide-react";
-import { Reveal } from "@/components/effects/Reveal";
-import { SpotlightCard } from "@/components/home/SpotlightCard";
+import { MeneerPeek } from "@/components/home/MeneerPeek";
+import { OverAntiBureauSection } from "@/components/over/index/OverAntiBureauSection";
+import { OverCasesSection } from "@/components/over/index/OverCasesSection";
+import { OverDayTimeline } from "@/components/over/index/OverDayTimeline";
+import { OverIndexCta } from "@/components/over/index/OverIndexCta";
+import { OverIndexFaq } from "@/components/over/index/OverIndexFaq";
+import { OverIndexHero } from "@/components/over/index/OverIndexHero";
+import { OverPrinciplesSection } from "@/components/over/index/OverPrinciplesSection";
+import { OverStackExplorer } from "@/components/over/index/OverStackExplorer";
+import { OverStorySection } from "@/components/over/index/OverStorySection";
+import {
+  JsonLdScript,
+  aboutPageJsonLd,
+  breadcrumbJsonLd,
+  faqPageJsonLd,
+} from "@/components/seo/JsonLd";
 import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { MARKETING_FUN_FACTS } from "@/data/marketing-fun-facts";
-import { siteCtas } from "@/lib/cta";
+import { OVER_FAQ } from "@/data/over-index";
 import { absoluteUrl } from "@/lib/site";
 
+const PAGE_PATH = "/over";
+const PAGE_TITLE = "Over Meneer Marketing. Strategie, bouw en campagnes onder één dak";
+const PAGE_DESCRIPTION =
+  "Wie Meneer Marketing is, hoe we werken en waarom groei een systeem is van strategie, websites from scratch, SEO, Google Ads, Meta Ads en automatisering. Eén partner, geen losse eindjes.";
+
 export const metadata: Metadata = {
-  title: "Over MeneerMarketing. Systeem achter groei",
-  description:
-    "Wie we zijn, hoe we werken en waarom we geloven dat groei een combinatie is van techniek, marketing en menselijke helderheid.",
-  alternates: { canonical: absoluteUrl("/over") },
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: absoluteUrl(PAGE_PATH) },
   openGraph: {
-    title: "Over MeneerMarketing",
+    title: "Over Meneer Marketing",
     description:
-      "Strategisch partner voor web, marketing en automatisering. Met oog voor schaal en sanity.",
-    url: absoluteUrl("/over"),
+      "Geen groot bureau met lagen. Wel strategie, code en campagnes vanuit één brein.",
+    url: absoluteUrl(PAGE_PATH),
     locale: "nl_NL",
     type: "website",
   },
 };
 
-const principles = [
-  {
-    title: "Meetbaar",
-    body: "Als het niet meetbaar is, optimaliseren we op meningen. KPI’s, events en heldere dashboards horen bij elk traject.",
-    icon: Target,
-  },
-  {
-    title: "Technisch sterk",
-    body: "Shopify, maatwerk websites, Next.js, n8n. We bouwen en koppelen alsof het productie is. Want dat ís het.",
-    icon: Cpu,
-  },
-  {
-    title: "Menselijk",
-    body: "Geen gatekeeping: documentatie, overdracht en taal die je team begrijpt. Succes delen we, complexiteit niet.",
-    icon: Heart,
-  },
-] as const;
-
 export default function OverPage() {
   return (
     <>
+      <JsonLdScript
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Over", path: PAGE_PATH },
+          ]),
+          aboutPageJsonLd({
+            name: PAGE_TITLE,
+            description: PAGE_DESCRIPTION,
+            path: PAGE_PATH,
+          }),
+          faqPageJsonLd([...OVER_FAQ]),
+        ]}
+      />
       <SiteHeader />
       <main id="main" className="flex-1">
-        <header className="border-b border-mm-border bg-mm-bg">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-            <Reveal>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-mm-sky-deep">
-                Over ons
-              </p>
-              <h1 className="mt-3 max-w-3xl text-4xl font-extrabold tracking-tight text-mm-text sm:text-5xl">
-                Groei is geen toeval. {" "}
-                <span className="text-mm-sky-deep">het is een systeem.</span>
-              </h1>
-              <p className="mt-6 max-w-2xl text-xl leading-relaxed text-mm-muted">
-                MeneerMarketing is de technische en strategische partner voor
-                ondernemers die niet alleen een “site” willen, maar een stack die
-                marketing, sales en operations met elkaar verbindt.
-              </p>
-            </Reveal>
-          </div>
-        </header>
+        <OverIndexHero />
 
-        <section className="border-b border-mm-border bg-mm-surface-elevated">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
-              <Reveal>
-                <h2 className="text-2xl font-extrabold text-mm-text sm:text-3xl">
-                  Wat je van ons mag verwachten
-                </h2>
-                <p className="mt-4 text-lg leading-relaxed text-mm-muted">
-                  We combineren strategie met uitvoering: geen eindeloze
-                  powerpoints zonder build, en geen code zonder context. Jij
-                  krijgt heldere keuzes, realistische planning en transparantie over
-                  risico’s en trade-offs.
-                </p>
-                <p className="mt-4 text-lg leading-relaxed text-mm-muted">
-                  Of het nu gaat om een internationale Shopify, een website
-                  from scratch, een web-app of slimme automatisering die je team
-                  rust geeft. We denken in blokken: strategie, bouwen,
-                  vindbaarheid, campagnes, behoud.
-                </p>
-              </Reveal>
-              <Reveal className="mt-10 lg:mt-0" delay={0.08}>
-                <div className="rounded-3xl border border-mm-border bg-mm-sky-subtle/50 p-8 shadow-mm-card">
-                  <p className="text-sm font-bold uppercase tracking-wider text-mm-accent">
-                    Werkwijze
-                  </p>
-                  <ol className="mt-6 space-y-4 text-mm-text">
-                    <li>
-                      <strong className="text-mm-text">Begrijpen</strong>. Intake, data, doelen, stack.
-                    </li>
-                    <li>
-                      <strong className="text-mm-text">Ontwerpen</strong>. Architectuur, roadmap, quick wins vs. fundament.
-                    </li>
-                    <li>
-                      <strong className="text-mm-text">Bouwen & sturen</strong>. Iteraties, meten, bijschaven.
-                    </li>
-                    <li>
-                      <strong className="text-mm-text">Overdragen</strong>. Documentatie, training, doorontwikkeling.
-                    </li>
-                  </ol>
-                </div>
-              </Reveal>
-            </div>
-          </div>
-        </section>
+        <OverStorySection />
 
-        <section className="bg-mm-bg">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-            <Reveal>
-              <h2 className="text-center text-2xl font-extrabold text-mm-text sm:text-3xl">
-                Drie principes waar we niet over onderhandelen
-              </h2>
-            </Reveal>
-            <ul className="mt-12 grid list-none gap-6 p-0 md:grid-cols-3">
-              {principles.map((p, i) => {
-                const Icon = p.icon;
-                return (
-                  <SpotlightCard key={p.title} revealDelay={0.06 * i}>
-                    <div className="flex gap-4">
-                      <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-mm-sky-subtle text-mm-sky-deep">
-                        <Icon className="size-5" aria-hidden />
-                      </span>
-                      <div>
-                        <h3 className="text-lg font-bold text-mm-text">
-                          {p.title}
-                        </h3>
-                        <p className="mt-2 text-sm leading-relaxed text-mm-muted">
-                          {p.body}
-                        </p>
-                      </div>
-                    </div>
-                  </SpotlightCard>
-                );
-              })}
-            </ul>
-          </div>
-        </section>
+        <OverPrinciplesSection />
 
-        <MarketingFunFactsRow facts={[MARKETING_FUN_FACTS[2]!]} />
+        <OverAntiBureauSection />
 
-        <section className="border-t border-mm-border bg-mm-accent-subtle">
-          <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8 lg:py-20">
-            <Reveal>
-              <h2 className="text-2xl font-extrabold text-mm-text sm:text-3xl">
-                Laten we kennismaken
-              </h2>
-              <p className="mt-4 text-lg text-mm-muted">
-                Geen verplichtingen. Wel een scherpe eerste sessie. Kies Groeiscan
-                voor context en prioriteit, of intake als je al weet wat er moet
-                gebeuren.
-              </p>
-              <div className="mt-8 flex flex-wrap justify-center gap-3">
-                <Link
-                  href={siteCtas.groeiscan.href}
-                  className="inline-flex items-center gap-2 rounded-full bg-mm-accent px-6 py-3.5 text-sm font-bold text-white shadow-lg hover:bg-mm-accent-hover"
-                >
-                  {siteCtas.groeiscan.label}
-                  <ArrowUpRight className="size-4" aria-hidden />
-                </Link>
-                <Link
-                  href="/diensten"
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-mm-border bg-white px-6 py-3.5 text-sm font-bold text-mm-text hover:border-mm-sky/40"
-                >
-                  Bekijk diensten
-                  <ArrowUpRight className="size-4" aria-hidden />
-                </Link>
-              </div>
-            </Reveal>
-          </div>
-        </section>
+        <OverStackExplorer />
+
+        <MarketingFunFactsRow
+          title="Tussendoor een feitje"
+          facts={[MARKETING_FUN_FACTS[2]!, MARKETING_FUN_FACTS[0]!]}
+        />
+
+        <OverDayTimeline />
+
+        <OverCasesSection />
+
+        <MeneerPeek />
+
+        <OverIndexFaq />
+
+        <OverIndexCta />
       </main>
       <SiteFooter />
     </>
