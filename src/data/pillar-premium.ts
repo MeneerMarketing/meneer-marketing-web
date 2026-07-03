@@ -87,21 +87,21 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       "Geen templates",
       "Shopify",
       "Next.js",
-      "CWV groen",
+      "Supersnel",
       "Custom build",
       "OS 2.0",
     ],
     funFact:
-      "Core Web Vitals in het groen is geen trofee op de muur. Het is gratis SEO-ruimte én hogere conversie op je ads.",
-    funFactSource: "Daarom meten we per release",
-    funFactStat: "CWV",
+      "Duurt je site langer dan 3 seconden om te laden? Dan is de helft van je bezoekers al weg voordat ze iets zien. Snel bouwen is dus geen luxe.",
+    funFactSource: "Daarom testen we elke release op snelheid",
+    funFactStat: "3 sec",
     hubTitle: "Elk onderdeel van je site is een vak apart.",
     hubSubtitle:
       "Beweeg over de bouwtekening en zie welke dienst waar aan het werk is. Of pak de lijst en spring direct naar het juiste traject.",
     proofMetrics: [
       { label: "Laadtijd na build", value: "0,8 sec" },
       { label: "Templates gebruikt", value: "Nul" },
-      { label: "Core Web Vitals", value: "Groen" },
+      { label: "Google snelheidsscore", value: "Groen" },
     ],
   },
   behoud: {
