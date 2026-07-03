@@ -46,18 +46,43 @@ function ContactScene() {
 function PlanScene() {
   return (
     <>
-      <rect x="14" y="18" width="52" height="44" rx="6" fill="white" stroke="#CBD5E1" strokeWidth="1.5" />
-      <path d="M14 28h52" stroke="#E2E8F0" strokeWidth="1.5" />
-      <circle cx="22" cy="23" r="2" fill="#FF5722" />
-      <circle cx="28" cy="23" r="2" fill="#FBBF24" />
-      <rect x="20" y="34" width="24" height="3" rx="1.5" fill="#FF5722" opacity="0.7" />
-      <rect x="20" y="40" width="32" height="3" rx="1.5" fill="#CBD5E1" />
-      <rect x="20" y="46" width="28" height="3" rx="1.5" fill="#CBD5E1" />
-      <path d="M78 48l14-22 14 22Z" fill="#FF5722" opacity="0.15" stroke="#FF5722" strokeWidth="1.5" strokeLinejoin="round" />
-      <path d="M85 44h14" stroke="#FF5722" strokeWidth="2" strokeLinecap="round" />
-      <path d="M92 37v14" stroke="#FF5722" strokeWidth="2" strokeLinecap="round" />
-      <circle cx="92" cy="22" r="6" fill="#FF5722" opacity="0.2" />
-      <path d="M89 22h6M92 19v6" stroke="#FF5722" strokeWidth="1.5" strokeLinecap="round" />
+      {/* Plan: clipboard met checklist */}
+      <rect x="8" y="18" width="40" height="44" rx="5" fill="white" stroke="#CBD5E1" strokeWidth="1.5" />
+      <rect x="22" y="13" width="12" height="9" rx="2.5" fill="#94A3B8" />
+      <path d="M8 28h40" stroke="#E2E8F0" strokeWidth="1.2" />
+      <text x="14" y="26" fill="#64748B" fontSize="5.5" fontWeight="700">
+        PLAN
+      </text>
+      {[34, 42, 50].map((y, i) => (
+        <g key={y}>
+          <circle cx="16" cy={y} r="3.5" fill={i < 2 ? "#DCFCE7" : "#F1F5F9"} stroke={i < 2 ? "#22C55E" : "#CBD5E1"} strokeWidth="1" />
+          {i < 2 ? (
+            <path d={`M14.2 ${y}l1.1 1.1 2.6-2.8`} stroke="#16A34A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+          ) : null}
+          <rect x="22" y={y - 1.5} width={i === 0 ? 20 : i === 1 ? 16 : 18} height="3" rx="1.5" fill="#E2E8F0" />
+        </g>
+      ))}
+
+      {/* Pijl: plan → uitvoering */}
+      <path d="M52 40h16" stroke="#FF5722" strokeWidth="2.5" strokeLinecap="round" />
+      <path d="M66 40l-6-5M66 40l-6 5" stroke="#FF5722" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+
+      {/* Uitvoering: live dashboard */}
+      <rect x="72" y="16" width="40" height="48" rx="6" fill="#0F172A" stroke="#1E293B" strokeWidth="1.5" />
+      <circle cx="78" cy="24" r="2.5" fill="#22C55E" />
+      <text x="83" y="26" fill="#4ADE80" fontSize="5.5" fontWeight="700">
+        LIVE
+      </text>
+      <path
+        d="M78 54 L86 46 L94 50 L102 38 L108 42"
+        stroke="#FF5722"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      <circle cx="108" cy="42" r="2.5" fill="#FF5722" />
+      <rect x="78" y="56" width="28" height="2" rx="1" fill="#334155" />
     </>
   );
 }
@@ -86,20 +111,46 @@ function BuildScene() {
 function AdsScene() {
   return (
     <>
+      {/* Google Ads preview */}
+      <rect x="6" y="14" width="50" height="46" rx="6" fill="white" stroke="#E2E8F0" strokeWidth="1.5" />
+      <rect x="6" y="14" width="50" height="8" rx="6" fill="#F8FAFC" />
+      <circle cx="12" cy="18" r="2" fill="#EA4335" />
+      <circle cx="17" cy="18" r="2" fill="#FBBC04" />
+      <circle cx="22" cy="18" r="2" fill="#34A853" />
+      <circle cx="27" cy="18" r="2" fill="#4285F4" />
+      <text x="14" y="36" fill="#4285F4" fontSize="11" fontWeight="800" fontFamily="system-ui, sans-serif">
+        G
+      </text>
+      <rect x="28" y="28" width="22" height="3" rx="1.5" fill="#1E293B" />
+      <rect x="28" y="34" width="18" height="2" rx="1" fill="#94A3B8" />
+      <rect x="28" y="39" width="14" height="2" rx="1" fill="#CBD5E1" />
+      <rect x="10" y="46" width="16" height="6" rx="3" fill="#4285F4" opacity="0.15" />
+      <text x="13" y="51" fill="#4285F4" fontSize="4.5" fontWeight="700">
+        Ad
+      </text>
+
+      {/* Meta Ads preview */}
+      <rect x="62" y="14" width="50" height="46" rx="6" fill="white" stroke="#E2E8F0" strokeWidth="1.5" />
+      <rect x="62" y="14" width="50" height="8" rx="6" fill="#0081FB" opacity="0.12" />
       <path
-        d="M28 52V28l18-8 18 8v24l-18 8-18-8Z"
-        fill="#FFF7ED"
-        stroke="#FF5722"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
+        d="M72 32c4-6 8-6 12 0s8 6 12 0"
+        stroke="#0081FB"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        fill="none"
       />
-      <path d="M46 20v48" stroke="#FFCCBC" strokeWidth="1.5" />
-      <rect x="72" y="38" width="8" height="18" rx="2" fill="#FF5722" opacity="0.35" />
-      <rect x="84" y="30" width="8" height="26" rx="2" fill="#FF5722" opacity="0.6" />
-      <rect x="96" y="22" width="8" height="34" rx="2" fill="#FF5722" />
-      <path d="M70 58h34" stroke="#CBD5E1" strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="34" cy="40" r="5" fill="#FF5722" opacity="0.2" />
-      <path d="M31 40h6M34 37v6" stroke="#FF5722" strokeWidth="1.5" strokeLinecap="round" />
+      <rect x="70" y="38" width="22" height="3" rx="1.5" fill="#1E293B" />
+      <rect x="70" y="44" width="16" height="2" rx="1" fill="#94A3B8" />
+      <rect x="66" y="50" width="18" height="6" rx="3" fill="#0081FB" opacity="0.15" />
+      <text x="69" y="55" fill="#0081FB" fontSize="4.5" fontWeight="700">
+        Ad
+      </text>
+
+      {/* Stijgende resultaten */}
+      <rect x="38" y="54" width="6" height="8" rx="1.5" fill="#FF5722" opacity="0.35" />
+      <rect x="46" y="50" width="6" height="12" rx="1.5" fill="#FF5722" opacity="0.55" />
+      <rect x="54" y="44" width="6" height="18" rx="1.5" fill="#FF5722" />
+      <path d="M40 58l20-14" stroke="#FF5722" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="2 2" opacity="0.5" />
     </>
   );
 }
