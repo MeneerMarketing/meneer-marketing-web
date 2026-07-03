@@ -21,17 +21,24 @@ export function PillarHubSection({
       className="relative overflow-hidden border-b border-slate-800 bg-slate-950"
       aria-labelledby={labelledBy}
     >
+      {/* Mascotte: peek rechtsonder, ogen en hoed zichtbaar */}
       <div
-        className="pointer-events-none absolute -right-[10%] -bottom-[22%] select-none opacity-[0.085]"
+        className="pointer-events-none absolute -right-[2%] bottom-0 z-0 translate-x-[8%] translate-y-[18%] select-none sm:translate-x-[6%] sm:translate-y-[14%] lg:translate-y-[12%]"
         aria-hidden
       >
-        <InteractiveLogo className="h-[min(70vw,480px)] w-[min(70vw,480px)]" />
+        <div className="relative">
+          <div
+            className="absolute left-[42%] top-[38%] h-[42%] w-[42%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FF5722]/18 blur-3xl"
+            aria-hidden
+          />
+          <InteractiveLogo className="relative h-[min(82vw,560px)] w-[min(82vw,560px)] opacity-[0.19] saturate-[0.9] sm:opacity-[0.22] lg:h-[600px] lg:w-[600px] lg:opacity-[0.24]" />
+        </div>
       </div>
       <div
         className="pointer-events-none absolute left-1/2 top-0 h-36 w-72 -translate-x-1/2 rounded-full bg-[#FF5722]/8 blur-3xl"
         aria-hidden
       />
-      <div className="relative">{children}</div>
+      <div className="relative z-10">{children}</div>
     </section>
   );
 }
