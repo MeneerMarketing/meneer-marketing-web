@@ -253,33 +253,33 @@ export function ScrollMeneer() {
           style={{ width: headSize, height: headSize }}
         >
           <InteractiveLogo className="h-full w-full pointer-events-none" />
-        </div>
 
-        <AnimatePresence mode="wait">
-          {showBubbles && sectionLabel && !isDragging ? (
-            <motion.div
-              key={sectionLabel}
-              initial={{ opacity: 0, x: 10, scale: 0.94 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: 8, scale: 0.96 }}
-              transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-              className="pointer-events-none absolute right-3 top-1/2 z-20 hidden w-max min-w-[13.5rem] max-w-[min(20rem,calc(100vw-5.5rem))] -translate-y-1/2 translate-x-[-100%] lg:block"
-            >
-              <div className="relative rounded-2xl border border-slate-200/90 bg-white px-4 py-2.5 shadow-[0_12px_32px_-12px_rgba(15,23,42,0.22)]">
-                <p className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
-                  Je bent hier
-                </p>
-                <p className="mt-1 text-sm font-extrabold leading-snug text-slate-900">
-                  {sectionLabel}
-                </p>
-                <span
-                  className="absolute -right-1.5 top-1/2 size-2.5 -translate-y-1/2 rotate-45 border-r border-t border-slate-200/90 bg-white"
-                  aria-hidden
-                />
-              </div>
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
+          <AnimatePresence mode="wait">
+            {showBubbles && sectionLabel && !isDragging ? (
+              <motion.div
+                key={sectionLabel}
+                initial={{ opacity: 0, x: 6, scale: 0.94 }}
+                animate={{ opacity: 1, x: 0, scale: 1 }}
+                exit={{ opacity: 0, x: 4, scale: 0.96 }}
+                transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+                className="pointer-events-none absolute right-full top-1/2 z-20 mr-1.5 hidden w-max min-w-[10rem] max-w-[min(18rem,calc(100vw-4rem))] -translate-y-1/2 lg:block"
+              >
+                <div className="relative rounded-2xl border border-slate-200/90 bg-white px-3.5 py-2 shadow-[0_12px_32px_-12px_rgba(15,23,42,0.22)]">
+                  <p className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
+                    Je bent hier
+                  </p>
+                  <p className="mt-0.5 text-sm font-extrabold leading-snug text-slate-900">
+                    {sectionLabel}
+                  </p>
+                  <span
+                    className="absolute -right-1 top-1/2 size-2 -translate-y-1/2 rotate-45 border-r border-t border-slate-200/90 bg-white"
+                    aria-hidden
+                  />
+                </div>
+              </motion.div>
+            ) : null}
+          </AnimatePresence>
+        </div>
       </motion.div>
     </div>
   );
