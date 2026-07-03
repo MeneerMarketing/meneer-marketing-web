@@ -6,8 +6,13 @@ import { BouwenHero } from "@/components/pillars/premium/BouwenHero";
 import { BuildContextSection } from "@/components/pillars/premium/BuildContextSection";
 import { BuildStackMatcher } from "@/components/pillars/premium/BuildStackMatcher";
 import { BuildStagesScroll } from "@/components/pillars/premium/BuildStagesScroll";
+import { GrowthChannelMap } from "@/components/pillars/premium/GrowthChannelMap";
+import { GrowthSituationMatcher } from "@/components/pillars/premium/GrowthSituationMatcher";
 import { PillarProofPanel } from "@/components/pillars/premium/PillarProofPanel";
 import { ServiceBlueprintMap } from "@/components/pillars/premium/ServiceBlueprintMap";
+import { StrategieContextSection } from "@/components/pillars/premium/StrategieContextSection";
+import { StrategieHero } from "@/components/pillars/premium/StrategieHero";
+import { StrategieStagesScroll } from "@/components/pillars/premium/StrategieStagesScroll";
 import {
   JsonLdScript,
   breadcrumbJsonLd,
@@ -17,10 +22,11 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import type { PillarPageData } from "@/data/pillar-pages";
 import type { PillarPremiumContent } from "@/data/pillar-premium";
+import type { PillarSlug } from "@/lib/navigation";
 import { siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 
-const PILLAR_LABEL: Record<PillarPageData["slug"], string> = {
+const PILLAR_LABEL: Record<PillarSlug, string> = {
   strategie: "Strategie",
   bouwen: "Bouwen",
   vindbaarheid: "Vindbaarheid",
@@ -33,9 +39,19 @@ interface PillarPremiumViewProps {
   premium: PillarPremiumContent;
 }
 
+function PillarHeroVisual({ slug }: { slug: PillarSlug }) {
+  switch (slug) {
+    case "bouwen":
+      return <BouwenHero />;
+    case "strategie":
+      return <StrategieHero />;
+    default:
+      return null;
+  }
+}
+
 /**
- * Premium hub-pagina voor het blok Bouwen: isometrische lagen-hero,
- * interactieve context, bouwtekening, stack-matcher en bouwtraject.
+ * Premium hub-pagina per pillar: gedeelde shell, slug-specifieke secties.
  */
 export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
   const column = megaMenuColumns.find((c) => c.pillarSlug === data.slug)!;
@@ -57,7 +73,6 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
       <JsonLdScript data={breadcrumbLd} />
       <SiteHeader />
       <main id="main" className="flex-1">
-        {/* Hero */}
         <header className="relative overflow-hidden border-b border-slate-200 bg-white">
           <div
             className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.035)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.035)_1px,transparent_1px)] bg-[size:44px_44px]"
@@ -136,35 +151,53 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
             </div>
 
             <div className="relative hidden lg:block">
-              <BouwenHero />
+              <PillarHeroVisual slug={data.slug} />
             </div>
           </div>
         </header>
 
         <StickerStrip items={premium.stickers} />
 
-        <BuildContextSection
-          introParagraphs={data.introParagraphs}
-          angleTitle={data.angleTitle}
-          angleBody={data.angleBody}
-          funFact={premium.funFact}
-          funFactSource={premium.funFactSource}
-          funFactStat={premium.funFactStat}
-        />
+        {data.slug === "bouwen" ? (
+          <>
+            <BuildContextSection
+              introParagraphs={data.introParagraphs}
+              angleTitle={data.angleTitle}
+              angleBody={data.angleBody}
+              funFact={premium.funFact}
+              funFactSource={premium.funFactSource}
+              funFactStat={premium.funFactStat}
+            />
+            <ServiceBlueprintMap
+              title={premium.hubTitle}
+              subtitle={premium.hubSubtitle}
+              services={serviceItems}
+            />
+            <BuildStackMatcher />
+            <BuildStagesScroll title={data.processTitle} stages={data.processSteps} />
+          </>
+        ) : null}
 
-        {/* De bouwtekening: interactieve diensten-hub */}
-        <ServiceBlueprintMap
-          title="Elk onderdeel van je site is een vak apart."
-          subtitle="Beweeg over de bouwtekening en zie welke dienst waar aan het werk is. Of pak de lijst en spring direct naar het juiste traject."
-          services={serviceItems}
-        />
+        {data.slug === "strategie" ? (
+          <>
+            <StrategieContextSection
+              introParagraphs={data.introParagraphs}
+              angleTitle={data.angleTitle}
+              angleBody={data.angleBody}
+              funFact={premium.funFact}
+              funFactSource={premium.funFactSource}
+              funFactStat={premium.funFactStat}
+            />
+            <GrowthChannelMap
+              title={premium.hubTitle}
+              subtitle={premium.hubSubtitle}
+              services={serviceItems}
+            />
+            <GrowthSituationMatcher />
+            <StrategieStagesScroll title={data.processTitle} stages={data.processSteps} />
+          </>
+        ) : null}
 
-        <BuildStackMatcher />
-
-        {/* Bouwtraject als scroll-ervaring */}
-        <BuildStagesScroll title={data.processTitle} stages={data.processSteps} />
-
-        {/* Proof */}
         <section className="bg-gradient-to-b from-white to-slate-50/80">
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
             <Reveal>
@@ -179,7 +212,6 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="relative overflow-hidden border-t border-slate-800 bg-slate-950">
           <div
             className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(56,189,248,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(56,189,248,0.06)_1px,transparent_1px)] bg-[size:32px_32px]"

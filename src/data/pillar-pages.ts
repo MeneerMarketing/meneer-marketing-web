@@ -83,9 +83,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     proofTitle: "Waarom volgorde alles is",
     proofBody:
       "SkinComplete stond eerst bovenaan in Google en had e-mailflows draaien vóór de advertenties aangingen. Daardoor kwam elke advertentie-euro binnen op een site die al converteerde. Dat is het verschil tussen budget verbranden en budget investeren.",
-    ctaTitle: "Benieuwd waar jouw groei zit?",
+    ctaTitle: "Klaar om te weten waar je groei zit?",
     ctaBody:
-      "Doe de Groeiscan. Dan zie je binnen een paar minuten waar wij als eerste zouden beginnen.",
+      "Geen losse acties meer. We brengen je doelen, data en kanalen in kaart en maken er een plan van dat we ook echt uitvoeren. Start met de Groeiscan.",
   },
   bouwen: {
     slug: "bouwen",
