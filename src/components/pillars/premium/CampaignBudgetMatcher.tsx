@@ -61,7 +61,7 @@ const GOALS: CampaignGoal[] = [
       { name: "Meta Ads", href: "/diensten/meta-ads" },
     ],
     outcome:
-      "SkinComplete-model: eerst organisch en conversie, dan ads met lagere CPA vanaf dag één.",
+      "Eerst organisch en conversie op orde, dan ads opschalen met lagere CPA vanaf dag één.",
   },
   {
     id: "marketplace",

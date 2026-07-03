@@ -5,6 +5,12 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
+import {
+  hubServiceLinkClass,
+  hubZoneClass,
+  PillarHubCanvas,
+  PillarHubSection,
+} from "@/components/pillars/premium/PillarHubSection";
 
 export interface BlueprintService {
   name: string;
@@ -231,10 +237,7 @@ export function ServiceBlueprintMap({
   const activeZone = active ? zoneByHref.get(active) : null;
 
   return (
-    <section
-      className="border-b border-slate-200 bg-slate-950"
-      aria-labelledby="blueprint-heading"
-    >
+    <PillarHubSection aria-labelledby="blueprint-heading">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <p className="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-sky-300">
           De bouwtekening
@@ -250,90 +253,69 @@ export function ServiceBlueprintMap({
         <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
           {/* Canvas-kolom */}
           <div className="flex flex-col">
-            <div className="relative flex flex-1 flex-col">
-              <div
-                className="pointer-events-none absolute -inset-3 rounded-3xl bg-[linear-gradient(to_right,rgba(56,189,248,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(56,189,248,0.07)_1px,transparent_1px)] bg-[size:26px_26px]"
-                aria-hidden
-              />
+            <PillarHubCanvas
+              barTitle="bouwtekening.plan"
+              barStatus="schaal 1:1"
+              aspectClass="aspect-[16/11]"
+            >
+              {ZONES.map((zone) => {
+                const service = services.find((s) => s.href === zone.href);
+                if (!service) return null;
+                const isActive = active === zone.href;
+                const isDimmed = active !== null && !isActive;
+                return (
+                  <button
+                    key={zone.href}
+                    type="button"
+                    onMouseEnter={() => setActive(zone.href)}
+                    onMouseLeave={() => setActive(null)}
+                    onFocus={() => setActive(zone.href)}
+                    onBlur={() => setActive(null)}
+                    onClick={() =>
+                      setActive((prev) =>
+                        prev === zone.href ? null : zone.href,
+                      )
+                    }
+                    aria-label={`${service.name}: ${zone.zoneLabel}`}
+                    className={hubZoneClass(isActive, isDimmed)}
+                    style={{
+                      left: `${zone.x}%`,
+                      top: `${zone.y}%`,
+                      width: `${zone.w}%`,
+                      height: `${zone.h}%`,
+                    }}
+                  >
+                    <span
+                      className={`pointer-events-none block size-full transition-opacity duration-300 ${
+                        isActive ? "opacity-100" : "opacity-55"
+                      }`}
+                    >
+                      <ZoneContent href={zone.href} />
+                    </span>
 
-              <div className="relative flex flex-1 flex-col overflow-hidden rounded-2xl border border-sky-500/25 bg-slate-900/80 shadow-[0_32px_64px_-28px_rgba(2,6,23,0.9)] backdrop-blur">
-                <div className="flex items-center gap-2 border-b border-sky-500/15 px-4 py-2.5">
-                  <span className="size-2 rounded-full bg-sky-400/40" aria-hidden />
-                  <span className="size-2 rounded-full bg-sky-400/40" aria-hidden />
-                  <span className="size-2 rounded-full bg-sky-400/40" aria-hidden />
-                  <span className="ml-2 font-mono text-[10px] tracking-wider text-sky-400/70">
-                    bouwtekening-v2.plan
-                  </span>
-                  <span className="ml-auto font-mono text-[10px] text-sky-400/50">
-                    schaal 1:1
-                  </span>
-                </div>
-
-                <div className="relative aspect-[16/11] w-full flex-1">
-                  {ZONES.map((zone) => {
-                    const service = services.find((s) => s.href === zone.href);
-                    if (!service) return null;
-                    const isActive = active === zone.href;
-                    const isDimmed = active !== null && !isActive;
-                    return (
-                      <button
-                        key={zone.href}
-                        type="button"
-                        onMouseEnter={() => setActive(zone.href)}
-                        onMouseLeave={() => setActive(null)}
-                        onFocus={() => setActive(zone.href)}
-                        onBlur={() => setActive(null)}
-                        onClick={() =>
-                          setActive((prev) =>
-                            prev === zone.href ? null : zone.href,
-                          )
-                        }
-                        aria-label={`${service.name}: ${zone.zoneLabel}`}
-                        className={`absolute rounded-lg border transition-all duration-300 ${
-                          isActive
-                            ? "z-10 border-[#FF5722] bg-white shadow-[0_0_0_4px_rgba(255,87,34,0.25),0_16px_40px_-12px_rgba(255,87,34,0.4)]"
-                            : "border-dashed border-sky-400/40 bg-slate-800/60"
-                        } ${isDimmed ? "opacity-30" : "opacity-100"}`}
-                        style={{
-                          left: `${zone.x}%`,
-                          top: `${zone.y}%`,
-                          width: `${zone.w}%`,
-                          height: `${zone.h}%`,
-                        }}
-                      >
-                        <span
-                          className={`pointer-events-none block size-full transition-opacity duration-300 ${
-                            isActive ? "opacity-100" : "opacity-45"
-                          }`}
+                    <AnimatePresence>
+                      {isActive ? (
+                        <motion.span
+                          initial={
+                            reduce ? false : { opacity: 0, y: 6, scale: 0.9 }
+                          }
+                          animate={{ opacity: 1, y: 0, scale: 1 }}
+                          exit={{ opacity: 0, scale: 0.9 }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 400,
+                            damping: 22,
+                          }}
+                          className="pointer-events-none absolute -top-3 left-2 z-20 whitespace-nowrap rounded-full bg-[#FF5722] px-2.5 py-0.5 text-[10px] font-bold text-white shadow-md"
                         >
-                          <ZoneContent href={zone.href} />
-                        </span>
-
-                        <AnimatePresence>
-                          {isActive ? (
-                            <motion.span
-                              initial={
-                                reduce ? false : { opacity: 0, y: 6, scale: 0.9 }
-                              }
-                              animate={{ opacity: 1, y: 0, scale: 1 }}
-                              exit={{ opacity: 0, scale: 0.9 }}
-                              transition={{
-                                type: "spring",
-                                stiffness: 400,
-                                damping: 22,
-                              }}
-                              className="pointer-events-none absolute -top-3 left-2 z-20 whitespace-nowrap rounded-full bg-[#FF5722] px-2.5 py-0.5 text-[10px] font-bold text-white shadow-md"
-                            >
-                              {zone.short}
-                            </motion.span>
-                          ) : null}
-                        </AnimatePresence>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+                          {zone.short}
+                        </motion.span>
+                      ) : null}
+                    </AnimatePresence>
+                  </button>
+                );
+              })}
+            </PillarHubCanvas>
 
             {/* Footer onder canvas: stats + actieve zone */}
             <div className="mt-4 grid grid-cols-3 gap-2">
@@ -395,11 +377,7 @@ export function ServiceBlueprintMap({
                     onMouseLeave={() => setActive(null)}
                     onFocus={() => setActive(service.href)}
                     onBlur={() => setActive(null)}
-                    className={`group flex w-full flex-col justify-center gap-1 rounded-2xl border px-4 py-3 transition-all duration-300 sm:flex-row sm:items-center sm:gap-3.5 sm:py-3.5 ${
-                      isActive
-                        ? "border-[#FF5722]/60 bg-white/[0.07] shadow-[inset_0_0_0_1px_rgba(255,87,34,0.2)]"
-                        : "border-white/10 bg-white/[0.03] hover:border-white/25"
-                    }`}
+                    className={hubServiceLinkClass(isActive)}
                   >
                     <span className="flex items-center gap-3 sm:contents">
                       <span
@@ -447,6 +425,6 @@ export function ServiceBlueprintMap({
           </ul>
         </div>
       </div>
-    </section>
+    </PillarHubSection>
   );
 }

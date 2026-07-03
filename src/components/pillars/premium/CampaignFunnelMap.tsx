@@ -5,6 +5,12 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
+import {
+  hubServiceLinkClass,
+  hubZoneClass,
+  PillarHubCanvas,
+  PillarHubSection,
+} from "@/components/pillars/premium/PillarHubSection";
 
 export interface FunnelService {
   name: string;
@@ -98,11 +104,6 @@ const ZONES: Zone[] = [
 ];
 
 const CHANNEL_PILLS = ["Google", "Meta", "UGC", "Creators", "Bol"] as const;
-
-const FLOATING_BLOCKS = [
-  { top: "6%", left: "-3%", w: 24, h: 16, rotate: -10, delay: 0 },
-  { top: "70%", left: "90%", w: 20, h: 12, rotate: 8, delay: 0.5 },
-] as const;
 
 const MAP_STATS = [
   { label: "Campagnevlakken", value: "8" },
@@ -223,51 +224,8 @@ export function CampaignFunnelMap({
   const activeZone = active ? zoneByHref.get(active) : null;
 
   return (
-    <section
-      className="relative overflow-hidden border-b border-slate-800 bg-[#070b14]"
-      aria-labelledby="funnel-map-heading"
-    >
-      <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_15%_0%,rgba(255,87,34,0.14),transparent_55%),radial-gradient(ellipse_70%_50%_at_95%_100%,rgba(66,133,244,0.1),transparent_50%)]"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(56,189,248,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(56,189,248,0.07)_1px,transparent_1px)] bg-[size:32px_32px]"
-        aria-hidden
-      />
-      {!reduce
-        ? FLOATING_BLOCKS.map((block, i) => (
-            <motion.div
-              key={i}
-              className="pointer-events-none absolute rounded-2xl border border-white/[0.08] bg-gradient-to-br from-white/[0.06] to-transparent"
-              style={{
-                top: block.top,
-                left: block.left,
-                width: `${block.w}%`,
-                height: `${block.h}%`,
-                rotate: `${block.rotate}deg`,
-              }}
-              animate={{ y: [0, -8, 0] }}
-              transition={{
-                duration: 5 + i,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: block.delay,
-              }}
-              aria-hidden
-            />
-          ))
-        : null}
-      <div
-        className="pointer-events-none absolute -left-16 top-1/3 size-64 rounded-full bg-[#FF5722]/20 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -right-12 bottom-0 size-56 rounded-full bg-[#4285F4]/15 blur-3xl"
-        aria-hidden
-      />
-
-      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+    <PillarHubSection aria-labelledby="funnel-map-heading">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <p className="inline-flex items-center gap-2 rounded-full border border-[#FF5722]/30 bg-[#FF5722]/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-[#FF5722]">
           De campagne-funnel
         </p>
@@ -296,85 +254,46 @@ export function CampaignFunnelMap({
 
         <div className="mt-8 grid gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
           <div className="flex flex-col">
-            <div className="relative flex flex-1 flex-col overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-1 shadow-[0_32px_64px_-28px_rgba(0,0,0,0.6)] backdrop-blur-sm">
-              <div className="overflow-hidden rounded-[20px] border border-white/10 bg-gradient-to-br from-white/[0.1] via-white/[0.04] to-transparent">
-                <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
-                  <span className="size-2 rounded-full bg-[#FF5722]/80" aria-hidden />
-                  <span className="size-2 rounded-full bg-[#4285F4]/80" aria-hidden />
-                  <span className="size-2 rounded-full bg-[#E1306C]/80" aria-hidden />
-                  <span className="ml-2 font-mono text-[10px] tracking-wider text-slate-400">
-                    funnel.live
-                  </span>
-                  <span className="ml-auto font-mono text-[10px] text-emerald-400">ROAS 4,2×</span>
-                </div>
-
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[linear-gradient(180deg,rgba(66,133,244,0.05)_0%,transparent_40%,rgba(255,87,34,0.06)_100%)]">
-                  <svg
-                    className="pointer-events-none absolute inset-0 size-full"
-                    viewBox="0 0 100 100"
-                    preserveAspectRatio="none"
-                    aria-hidden
+            <PillarHubCanvas barTitle="funnel.live" barStatus="ROAS 4,2×">
+              {ZONES.map((zone) => {
+                const service = services.find((s) => s.href === zone.href);
+                if (!service) return null;
+                const isActive = active === zone.href;
+                const isDimmed = active !== null && !isActive;
+                return (
+                  <button
+                    key={zone.href}
+                    type="button"
+                    onMouseEnter={() => setActive(zone.href)}
+                    onMouseLeave={() => setActive(null)}
+                    onFocus={() => setActive(zone.href)}
+                    onBlur={() => setActive(null)}
+                    aria-label={service.name}
+                    className={hubZoneClass(isActive, isDimmed)}
+                    style={{
+                      left: `${zone.x}%`,
+                      top: `${zone.y}%`,
+                      width: `${zone.w}%`,
+                      height: `${zone.h}%`,
+                    }}
                   >
-                    <path
-                      d="M 50 8 L 25 24 L 50 32 L 75 24 Z"
-                      fill="none"
-                      stroke="rgba(255,255,255,0.06)"
-                      strokeWidth="0.3"
-                    />
-                    <path
-                      d="M 25 56 L 50 78 L 75 56"
-                      fill="none"
-                      stroke="rgba(255,87,34,0.15)"
-                      strokeWidth="0.3"
-                      strokeDasharray="2 2"
-                    />
-                  </svg>
-
-                  {ZONES.map((zone) => {
-                    const service = services.find((s) => s.href === zone.href);
-                    if (!service) return null;
-                    const isActive = active === zone.href;
-                    const isDimmed = active !== null && !isActive;
-                    return (
-                      <button
-                        key={zone.href}
-                        type="button"
-                        onMouseEnter={() => setActive(zone.href)}
-                        onMouseLeave={() => setActive(null)}
-                        onFocus={() => setActive(zone.href)}
-                        onBlur={() => setActive(null)}
-                        aria-label={service.name}
-                        className={`absolute rounded-xl border transition-all duration-300 ${
-                          isActive
-                            ? "z-10 scale-[1.02] border-[#FF5722] bg-white shadow-[0_0_0_4px_rgba(255,87,34,0.3),0_20px_40px_-12px_rgba(255,87,34,0.35)]"
-                            : "border-white/20 bg-white/[0.07] backdrop-blur-sm hover:scale-[1.01] hover:border-white/35 hover:bg-white/10"
-                        } ${isDimmed ? "scale-[0.96] opacity-20" : "opacity-100"}`}
-                        style={{
-                          left: `${zone.x}%`,
-                          top: `${zone.y}%`,
-                          width: `${zone.w}%`,
-                          height: `${zone.h}%`,
-                        }}
-                      >
-                        <ZoneContent href={zone.href} isActive={isActive} />
-                        <AnimatePresence>
-                          {isActive ? (
-                            <motion.span
-                              initial={reduce ? false : { opacity: 0, y: 4 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              exit={{ opacity: 0 }}
-                              className="pointer-events-none absolute -top-2.5 left-2 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold text-white shadow-md"
-                            >
-                              {zone.short}
-                            </motion.span>
-                          ) : null}
-                        </AnimatePresence>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+                    <ZoneContent href={zone.href} isActive={isActive} />
+                    <AnimatePresence>
+                      {isActive ? (
+                        <motion.span
+                          initial={reduce ? false : { opacity: 0, y: 4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0 }}
+                          className="pointer-events-none absolute -top-2.5 left-2 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold text-white shadow-md"
+                        >
+                          {zone.short}
+                        </motion.span>
+                      ) : null}
+                    </AnimatePresence>
+                  </button>
+                );
+              })}
+            </PillarHubCanvas>
 
             <div className="mt-4 grid grid-cols-3 gap-2">
               {MAP_STATS.map((stat) => (
@@ -428,11 +347,7 @@ export function CampaignFunnelMap({
                     href={service.href}
                     onMouseEnter={() => setActive(service.href)}
                     onMouseLeave={() => setActive(null)}
-                    className={`group flex w-full flex-col justify-center gap-1 rounded-2xl border px-4 py-3 backdrop-blur-sm transition-all duration-300 sm:flex-row sm:items-center sm:gap-3.5 ${
-                      isActive
-                        ? "border-[#FF5722]/50 bg-white/[0.1] shadow-[inset_0_0_0_1px_rgba(255,87,34,0.2),0_16px_40px_-20px_rgba(255,87,34,0.35)]"
-                        : "border-white/10 bg-white/[0.04] hover:border-white/25 hover:bg-white/[0.07]"
-                    }`}
+                    className={`${hubServiceLinkClass(isActive)} group`}
                   >
                     <span className="flex items-center gap-3 sm:contents">
                       <span
@@ -478,6 +393,6 @@ export function CampaignFunnelMap({
           </ul>
         </div>
       </div>
-    </section>
+    </PillarHubSection>
   );
 }

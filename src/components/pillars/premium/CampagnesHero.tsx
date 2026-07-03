@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Play, TrendingUp } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type ChannelId = "google" | "meta" | "creators";
 
@@ -49,8 +49,8 @@ const CHANNELS: ChannelData[] = [
     spend: "€ 900",
     ctr: "4,1%",
     accent: "#FF5722",
-    adTitle: "Creator collab · SkinComplete",
-    adHook: "Zo gebruik ik het Premium LED-Mask thuis.",
+    adTitle: "Creator review · 15 sec",
+    adHook: "Echt mens, echt product. Geen stockbeelden.",
   },
 ];
 
@@ -60,14 +60,15 @@ const BUDGET_SPLIT: Record<ChannelId, [number, number, number]> = {
   creators: [28, 22, 50],
 };
 
+const AUTO_CYCLE_MS = 9000;
+
 /**
- * Hero voor Campagnes: live ads-dashboard met kanaalwissel,
- * ROAS-meter en budgetverdeling die meebeweegt.
+ * Hero voor Campagnes: live ads-dashboard met kanaalwissel en ROAS-metrics.
  */
 export function CampagnesHero() {
   const reduce = useReducedMotion();
   const [active, setActive] = useState<ChannelId>("google");
-  const [pulse, setPulse] = useState(0);
+  const userTouched = useRef(false);
 
   const channel = CHANNELS.find((c) => c.id === active) ?? CHANNELS[0];
   const split = BUDGET_SPLIT[active];
@@ -80,28 +81,18 @@ export function CampagnesHero() {
   }, []);
 
   useEffect(() => {
-    if (reduce) return;
-    const t = window.setInterval(cycle, 3800);
+    if (reduce || userTouched.current) return;
+    const t = window.setInterval(cycle, AUTO_CYCLE_MS);
     return () => window.clearInterval(t);
   }, [cycle, reduce]);
 
-  useEffect(() => {
-    if (reduce) return;
-    const t = window.setInterval(() => setPulse((p) => p + 1), 1200);
-    return () => window.clearInterval(t);
-  }, [reduce]);
+  function selectChannel(id: ChannelId) {
+    userTouched.current = true;
+    setActive(id);
+  }
 
   return (
     <div className="relative mx-auto w-full max-w-[420px] select-none">
-      <div
-        className="pointer-events-none absolute -left-8 top-0 size-40 rounded-full bg-[#FF5722]/12 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -right-6 bottom-8 size-32 rounded-full bg-sky-300/20 blur-3xl"
-        aria-hidden
-      />
-
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_28px_56px_-24px_rgba(15,23,42,0.28)]">
         <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
           <div>
@@ -111,12 +102,7 @@ export function CampagnesHero() {
             <p className="text-xs font-extrabold text-slate-800">Live dashboard</p>
           </div>
           <span className="flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1">
-            <span className="relative flex size-1.5">
-              {!reduce ? (
-                <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-              ) : null}
-              <span className="relative size-1.5 rounded-full bg-emerald-500" />
-            </span>
+            <span className="size-1.5 rounded-full bg-emerald-500" aria-hidden />
             <span className="text-[10px] font-bold text-emerald-700">Actief</span>
           </span>
         </div>
@@ -126,8 +112,8 @@ export function CampagnesHero() {
             <button
               key={ch.id}
               type="button"
-              onClick={() => setActive(ch.id)}
-              className={`flex-1 rounded-xl px-2 py-2 text-center text-[10px] font-bold transition-all ${
+              onClick={() => selectChannel(ch.id)}
+              className={`flex-1 rounded-xl px-2 py-2 text-center text-[10px] font-bold transition-all duration-300 ${
                 active === ch.id
                   ? "bg-slate-900 text-white shadow-md"
                   : "text-slate-500 hover:bg-slate-50"
@@ -142,10 +128,10 @@ export function CampagnesHero() {
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
-              initial={reduce ? false : { opacity: 0, y: 8 }}
+              initial={reduce ? false : { opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={reduce ? undefined : { opacity: 0, y: -6 }}
-              transition={{ duration: 0.25 }}
+              exit={reduce ? undefined : { opacity: 0, y: -4 }}
+              transition={{ duration: 0.35, ease: "easeOut" }}
             >
               <div className="grid grid-cols-3 gap-2">
                 {[
@@ -209,18 +195,16 @@ export function CampagnesHero() {
                 </div>
                 <div className="mt-2 flex h-2.5 overflow-hidden rounded-full bg-slate-100">
                   {split.map((pct, i) => (
-                    <motion.span
-                      key={`${active}-${i}-${pulse}`}
-                      initial={reduce ? false : { width: 0 }}
-                      animate={{ width: `${pct}%` }}
-                      transition={{ duration: 0.5, delay: i * 0.06 }}
-                      className={`h-full ${
+                    <span
+                      key={i}
+                      className={`h-full transition-[width] duration-500 ease-out ${
                         i === 0
                           ? "bg-[#4285F4]"
                           : i === 1
                             ? "bg-[#E1306C]"
                             : "bg-[#FF5722]"
                       }`}
+                      style={{ width: `${pct}%` }}
                       aria-hidden
                     />
                   ))}
@@ -239,24 +223,6 @@ export function CampagnesHero() {
           Tik een kanaal · dashboard wisselt mee
         </p>
       </div>
-
-      <motion.div
-        animate={reduce ? undefined : { y: [-3, 3] }}
-        transition={{ duration: 2.8, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute -right-2 top-8 rounded-xl border border-[#FF5722]/30 bg-white px-3 py-2 shadow-lg"
-      >
-        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">ROAS</p>
-        <p className="text-sm font-extrabold text-[#FF5722]">{channel.roas}</p>
-      </motion.div>
-
-      <motion.div
-        animate={reduce ? undefined : { y: [4, -4] }}
-        transition={{ duration: 3.2, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute -left-2 bottom-16 rounded-xl border border-slate-200 bg-slate-900 px-3 py-2 shadow-lg"
-      >
-        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Winnaar</p>
-        <p className="text-sm font-extrabold text-white">+{split[2]}% UGC</p>
-      </motion.div>
     </div>
   );
 }

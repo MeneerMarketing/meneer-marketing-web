@@ -5,6 +5,12 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
+import {
+  hubServiceLinkClass,
+  hubZoneClass,
+  PillarHubCanvas,
+  PillarHubSection,
+} from "@/components/pillars/premium/PillarHubSection";
 
 export interface SurfaceService {
   name: string;
@@ -69,16 +75,6 @@ const ZONES: Zone[] = [
     h: 26,
   },
 ];
-
-const GHOST_QUERIES = [
-  { text: "beste seo bureau", top: "10%", left: "4%", delay: 0 },
-  { text: "vindbaar in chatgpt", top: "38%", left: "72%", delay: 1.2 },
-  { text: "google maps pack", top: "68%", left: "8%", delay: 2.4 },
-  { text: "wie bouwt shopify", top: "22%", left: "58%", delay: 0.8 },
-  { text: "reviews verzamelen", top: "82%", left: "55%", delay: 1.8 },
-] as const;
-
-const RADAR_RINGS = [320, 480, 640] as const;
 
 const CHANNEL_PILLS = ["Google", "ChatGPT", "Gemini", "Claude", "Maps"] as const;
 
@@ -179,81 +175,8 @@ export function VisibilitySurfaceMap({
   const activeZone = active ? zoneByHref.get(active) : null;
 
   return (
-    <section
-      className="relative overflow-hidden border-b border-slate-800 bg-[#070b14]"
-      aria-labelledby="surface-map-heading"
-    >
-      {/* Diepte: mesh + zoek-radar + ghost queries */}
-      <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_20%_0%,rgba(255,87,34,0.14),transparent_55%),radial-gradient(ellipse_70%_50%_at_90%_100%,rgba(56,189,248,0.12),transparent_50%)]"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(56,189,248,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(56,189,248,0.07)_1px,transparent_1px)] bg-[size:32px_32px]"
-        aria-hidden
-      />
-      {!reduce ? (
-        <div
-          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          aria-hidden
-        >
-          {RADAR_RINGS.map((size, i) => (
-            <motion.div
-              key={size}
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-sky-400/[0.07]"
-              style={{ width: size, height: size }}
-              animate={{
-                scale: [1, 1.06, 1],
-                opacity: [0.35, 0.12, 0.35],
-              }}
-              transition={{
-                duration: 6 + i * 1.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: i * 0.9,
-              }}
-            />
-          ))}
-          <motion.div
-            className="absolute left-1/2 top-1/2 h-px w-[min(90vw,720px)] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-transparent via-sky-400/10 to-transparent"
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-          />
-        </div>
-      ) : null}
-      {!reduce
-        ? GHOST_QUERIES.map((q, i) => (
-            <motion.span
-              key={q.text}
-              className="pointer-events-none absolute font-mono text-[11px] font-medium tracking-tight text-sky-300/20"
-              style={{ top: q.top, left: q.left }}
-              animate={{ opacity: [0.12, 0.28, 0.12] }}
-              transition={{
-                duration: 5 + i * 0.6,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: q.delay,
-              }}
-              aria-hidden
-            >
-              {q.text}
-            </motion.span>
-          ))
-        : null}
-      <div
-        className="pointer-events-none absolute -left-20 top-1/4 size-72 rounded-full bg-[#FF5722]/25 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -right-16 bottom-0 size-64 rounded-full bg-sky-500/20 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute left-1/2 top-1/2 size-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FF5722]/5 blur-[100px]"
-        aria-hidden
-      />
-
-      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+    <PillarHubSection aria-labelledby="surface-map-heading">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <p className="inline-flex items-center gap-2 rounded-full border border-[#FF5722]/30 bg-[#FF5722]/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-[#FF5722]">
           Het zoeklandschap
         </p>
@@ -284,81 +207,46 @@ export function VisibilitySurfaceMap({
         <div className="mt-8 grid gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
           {/* Canvas-kolom */}
           <div className="flex flex-col">
-            <div
-              className="relative flex flex-1 flex-col overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-1 shadow-[0_32px_64px_-28px_rgba(0,0,0,0.6)] backdrop-blur-sm [perspective:1200px]"
-            >
-              <div className="overflow-hidden rounded-[20px] border border-white/10 bg-gradient-to-br from-white/[0.1] via-white/[0.04] to-transparent">
-                <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
-                  <span className="size-2 rounded-full bg-[#FF5722]/80" aria-hidden />
-                  <span className="size-2 rounded-full bg-amber-400/80" aria-hidden />
-                  <span className="size-2 rounded-full bg-emerald-400/80" aria-hidden />
-                  <span className="ml-2 font-mono text-[10px] tracking-wider text-slate-400">
-                    zoeklandschap.live
-                  </span>
-                  <span className="ml-auto flex items-center gap-1.5">
-                    <span className="relative flex size-1.5">
-                      <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-                      <span className="relative size-1.5 rounded-full bg-emerald-400" />
-                    </span>
-                    <span className="font-mono text-[10px] text-emerald-400">live</span>
-                  </span>
-                </div>
-
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[linear-gradient(135deg,rgba(255,87,34,0.06)_0%,transparent_45%,rgba(56,189,248,0.08)_100%)]">
-                  {/* Scan-lijn */}
-                  {!reduce ? (
-                    <motion.div
-                      className="pointer-events-none absolute inset-x-0 z-20 h-px bg-gradient-to-r from-transparent via-sky-400/50 to-transparent"
-                      animate={{ top: ["0%", "100%"] }}
-                      transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                      aria-hidden
-                    />
-                  ) : null}
-                  {ZONES.map((zone) => {
-                    const service = services.find((s) => s.href === zone.href);
-                    if (!service) return null;
-                    const isActive = active === zone.href;
-                    const isDimmed = active !== null && !isActive;
-                    return (
-                      <button
-                        key={zone.href}
-                        type="button"
-                        onMouseEnter={() => setActive(zone.href)}
-                        onMouseLeave={() => setActive(null)}
-                        onFocus={() => setActive(zone.href)}
-                        onBlur={() => setActive(null)}
-                        aria-label={service.name}
-                        className={`absolute rounded-xl border transition-all duration-300 ${
-                          isActive
-                            ? "z-10 scale-[1.02] border-[#FF5722] bg-white shadow-[0_0_0_4px_rgba(255,87,34,0.3),0_20px_40px_-12px_rgba(255,87,34,0.35)]"
-                            : "border-white/20 bg-white/[0.07] backdrop-blur-sm hover:scale-[1.01] hover:border-white/35 hover:bg-white/10"
-                        } ${isDimmed ? "scale-[0.96] opacity-20" : "opacity-100"}`}
-                        style={{
-                          left: `${zone.x}%`,
-                          top: `${zone.y}%`,
-                          width: `${zone.w}%`,
-                          height: `${zone.h}%`,
-                        }}
-                      >
-                        <ZoneContent href={zone.href} isActive={isActive} />
-                        <AnimatePresence>
-                          {isActive ? (
-                            <motion.span
-                              initial={reduce ? false : { opacity: 0, y: 4 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              exit={{ opacity: 0 }}
-                              className="pointer-events-none absolute -top-2.5 left-2 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold text-white shadow-md"
-                            >
-                              {zone.short}
-                            </motion.span>
-                          ) : null}
-                        </AnimatePresence>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+            <PillarHubCanvas barTitle="zoeklandschap.live" barStatus="live">
+              {ZONES.map((zone) => {
+                const service = services.find((s) => s.href === zone.href);
+                if (!service) return null;
+                const isActive = active === zone.href;
+                const isDimmed = active !== null && !isActive;
+                return (
+                  <button
+                    key={zone.href}
+                    type="button"
+                    onMouseEnter={() => setActive(zone.href)}
+                    onMouseLeave={() => setActive(null)}
+                    onFocus={() => setActive(zone.href)}
+                    onBlur={() => setActive(null)}
+                    aria-label={service.name}
+                    className={hubZoneClass(isActive, isDimmed)}
+                    style={{
+                      left: `${zone.x}%`,
+                      top: `${zone.y}%`,
+                      width: `${zone.w}%`,
+                      height: `${zone.h}%`,
+                    }}
+                  >
+                    <ZoneContent href={zone.href} isActive={isActive} />
+                    <AnimatePresence>
+                      {isActive ? (
+                        <motion.span
+                          initial={reduce ? false : { opacity: 0, y: 4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0 }}
+                          className="pointer-events-none absolute -top-2.5 left-2 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold text-white shadow-md"
+                        >
+                          {zone.short}
+                        </motion.span>
+                      ) : null}
+                    </AnimatePresence>
+                  </button>
+                );
+              })}
+            </PillarHubCanvas>
 
             <div className="mt-4 grid grid-cols-3 gap-2">
               {MAP_STATS.map((stat) => (
@@ -413,11 +301,7 @@ export function VisibilitySurfaceMap({
                     href={service.href}
                     onMouseEnter={() => setActive(service.href)}
                     onMouseLeave={() => setActive(null)}
-                    className={`group flex w-full flex-col justify-center gap-1 rounded-2xl border px-4 py-3.5 backdrop-blur-sm transition-all duration-300 sm:flex-row sm:items-center sm:gap-3.5 ${
-                      isActive
-                        ? "border-[#FF5722]/50 bg-white/[0.1] shadow-[inset_0_0_0_1px_rgba(255,87,34,0.2),0_16px_40px_-20px_rgba(255,87,34,0.35)]"
-                        : "border-white/10 bg-white/[0.04] hover:border-white/25 hover:bg-white/[0.07]"
-                    }`}
+                    className={hubServiceLinkClass(isActive)}
                   >
                     <span className="flex items-center gap-3 sm:contents">
                       <span
@@ -463,6 +347,6 @@ export function VisibilitySurfaceMap({
           </ul>
         </div>
       </div>
-    </section>
+    </PillarHubSection>
   );
 }

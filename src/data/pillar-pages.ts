@@ -250,7 +250,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     proofTitle: "Waarom volgorde ook hier telt",
     proofBody:
-      "Bij SkinComplete gingen de advertenties pas aan toen de site al organisch scoorde en converteerde. Resultaat: lagere kosten per verkoop vanaf dag één, omdat het fundament er al stond. Adverteren op een lekke site is dweilen met de kraan open.",
+      "Advertenties pas aanzetten als je site al converteert en je meting klopt. Resultaat: lagere kosten per verkoop vanaf dag één, omdat het fundament er al stond. Adverteren op een lekke site is dweilen met de kraan open.",
     ctaTitle: "Klaar om campagnes te draaien die renderen?",
     ctaBody:
       "Doe de Groeiscan of plan een intake. We rekenen eerst uit of ads nu de slimste stap zijn.",

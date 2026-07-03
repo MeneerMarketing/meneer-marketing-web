@@ -5,6 +5,12 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
+import {
+  hubServiceLinkClass,
+  hubZoneClass,
+  PillarHubCanvas,
+  PillarHubSection,
+} from "@/components/pillars/premium/PillarHubSection";
 
 export interface ChannelService {
   name: string;
@@ -151,10 +157,7 @@ export function GrowthChannelMap({
   const activeZone = active ? zoneByHref.get(active) : null;
 
   return (
-    <section
-      className="border-b border-slate-200 bg-slate-950"
-      aria-labelledby="channel-map-heading"
-    >
+    <PillarHubSection aria-labelledby="channel-map-heading">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <p className="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-sky-300">
           Het groeikompas
@@ -169,73 +172,52 @@ export function GrowthChannelMap({
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
           <div className="flex flex-col">
-            <div className="relative flex flex-1 flex-col">
-              <div
-                className="pointer-events-none absolute -inset-3 rounded-3xl bg-[linear-gradient(to_right,rgba(139,92,246,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(139,92,246,0.08)_1px,transparent_1px)] bg-[size:24px_24px]"
-                aria-hidden
-              />
-              <div className="relative flex flex-1 flex-col overflow-hidden rounded-2xl border border-sky-500/25 bg-slate-900/80 shadow-[0_32px_64px_-28px_rgba(2,6,23,0.9)]">
-                <div className="flex items-center gap-2 border-b border-sky-500/15 px-4 py-2.5">
-                  <span className="size-2 rounded-full bg-sky-400/50" aria-hidden />
-                  <span className="font-mono text-[10px] tracking-wider text-sky-300/70">
-                    groeikompas-v1.map
-                  </span>
-                  <span className="ml-auto font-mono text-[10px] text-sky-400/50">
-                    funnel view
-                  </span>
-                </div>
-                <div className="relative aspect-[4/3] w-full flex-1">
-                  {ZONES.map((zone) => {
-                    const service = services.find((s) => s.href === zone.href);
-                    if (!service) return null;
-                    const isActive = active === zone.href;
-                    const isDimmed = active !== null && !isActive;
-                    return (
-                      <button
-                        key={zone.href}
-                        type="button"
-                        onMouseEnter={() => setActive(zone.href)}
-                        onMouseLeave={() => setActive(null)}
-                        onFocus={() => setActive(zone.href)}
-                        onBlur={() => setActive(null)}
-                        aria-label={service.name}
-                        className={`absolute rounded-xl border transition-all duration-300 ${
-                          isActive
-                            ? "z-10 border-[#FF5722] bg-white shadow-[0_0_0_4px_rgba(255,87,34,0.25)]"
-                            : "border-dashed border-sky-400/35 bg-slate-800/60"
-                        } ${isDimmed ? "opacity-30" : "opacity-100"}`}
-                        style={{
-                          left: `${zone.x}%`,
-                          top: `${zone.y}%`,
-                          width: `${zone.w}%`,
-                          height: `${zone.h}%`,
-                        }}
-                      >
-                        <span
-                          className={`block size-full transition-opacity ${
-                            isActive ? "opacity-100" : "opacity-50"
-                          }`}
+            <PillarHubCanvas barTitle="groeikompas.map" barStatus="funnel">
+              {ZONES.map((zone) => {
+                const service = services.find((s) => s.href === zone.href);
+                if (!service) return null;
+                const isActive = active === zone.href;
+                const isDimmed = active !== null && !isActive;
+                return (
+                  <button
+                    key={zone.href}
+                    type="button"
+                    onMouseEnter={() => setActive(zone.href)}
+                    onMouseLeave={() => setActive(null)}
+                    onFocus={() => setActive(zone.href)}
+                    onBlur={() => setActive(null)}
+                    aria-label={service.name}
+                    className={hubZoneClass(isActive, isDimmed)}
+                    style={{
+                      left: `${zone.x}%`,
+                      top: `${zone.y}%`,
+                      width: `${zone.w}%`,
+                      height: `${zone.h}%`,
+                    }}
+                  >
+                    <span
+                      className={`block size-full transition-opacity ${
+                        isActive ? "opacity-100" : "opacity-60"
+                      }`}
+                    >
+                      <ZoneContent href={zone.href} />
+                    </span>
+                    <AnimatePresence>
+                      {isActive ? (
+                        <motion.span
+                          initial={reduce ? false : { opacity: 0, scale: 0.9 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="pointer-events-none absolute -top-2.5 left-2 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold text-white"
                         >
-                          <ZoneContent href={zone.href} />
-                        </span>
-                        <AnimatePresence>
-                          {isActive ? (
-                            <motion.span
-                              initial={reduce ? false : { opacity: 0, scale: 0.9 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              exit={{ opacity: 0 }}
-                              className="pointer-events-none absolute -top-2.5 left-2 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold text-white"
-                            >
-                              {zone.short}
-                            </motion.span>
-                          ) : null}
-                        </AnimatePresence>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+                          {zone.short}
+                        </motion.span>
+                      ) : null}
+                    </AnimatePresence>
+                  </button>
+                );
+              })}
+            </PillarHubCanvas>
 
             <div className="mt-4 grid grid-cols-3 gap-2">
               {MAP_STATS.map((stat) => (
@@ -289,11 +271,7 @@ export function GrowthChannelMap({
                     href={service.href}
                     onMouseEnter={() => setActive(service.href)}
                     onMouseLeave={() => setActive(null)}
-                    className={`group flex w-full flex-col justify-center gap-1 rounded-2xl border px-4 py-4 transition-all duration-300 sm:flex-row sm:items-center sm:gap-3.5 ${
-                      isActive
-                        ? "border-[#FF5722]/60 bg-white/[0.07]"
-                        : "border-white/10 bg-white/[0.03] hover:border-white/25"
-                    }`}
+                    className={hubServiceLinkClass(isActive)}
                   >
                     <span className="flex items-center gap-3 sm:contents">
                       <span
@@ -337,6 +315,6 @@ export function GrowthChannelMap({
           </ul>
         </div>
       </div>
-    </section>
+    </PillarHubSection>
   );
 }

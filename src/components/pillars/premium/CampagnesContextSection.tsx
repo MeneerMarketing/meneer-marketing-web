@@ -231,11 +231,11 @@ export function CampagnesContextSection({
 
             <div className="rounded-3xl border border-slate-200 bg-slate-900 p-5 text-white sm:p-6">
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-                SkinComplete-case
+                In de praktijk
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-300">
-                Advertenties gingen pas aan toen de site al organisch scoorde en
-                converteerde. Lagere kosten per verkoop vanaf dag één.
+                Advertenties pas aanzetten als meting en landingspagina kloppen.
+                Dan schaal je op wat rendeert, niet op gokwerk.
               </p>
               <p className="mt-4 flex items-center gap-1.5 text-xs text-slate-400">
                 <ArrowRight className="size-3.5 text-[#FF5722]" aria-hidden />
