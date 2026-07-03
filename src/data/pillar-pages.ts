@@ -216,9 +216,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     subheadline:
       "Google Ads, Meta Ads, social, creators en marketplaces: wij zetten de kanalen in die bij jouw marge passen en meten elke euro terug.",
     stats: [
-      { label: "Ads", value: "Google · Meta · shopping" },
-      { label: "Creators", value: "UGC · influencers · social" },
-      { label: "Sturing", value: "ROAS · CPA · schaalpad" },
+      { label: "Ads", value: "Google · Meta" },
+      { label: "Creators", value: "UGC · social" },
+      { label: "Sturing", value: "ROAS · CPA" },
     ],
     introParagraphs: [
       "Adverteren is simpel te starten en makkelijk te verpesten. Het verschil zit in de voorbereiding: klopt je meting, klopt je landingspagina en klopt de belofte in je advertentie met wat de klant daarna ziet?",

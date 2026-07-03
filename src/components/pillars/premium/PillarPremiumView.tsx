@@ -6,6 +6,11 @@ import { BouwenHero } from "@/components/pillars/premium/BouwenHero";
 import { BuildContextSection } from "@/components/pillars/premium/BuildContextSection";
 import { BuildStackMatcher } from "@/components/pillars/premium/BuildStackMatcher";
 import { BuildStagesScroll } from "@/components/pillars/premium/BuildStagesScroll";
+import { CampaignBudgetMatcher } from "@/components/pillars/premium/CampaignBudgetMatcher";
+import { CampaignFunnelMap } from "@/components/pillars/premium/CampaignFunnelMap";
+import { CampagnesContextSection } from "@/components/pillars/premium/CampagnesContextSection";
+import { CampagnesHero } from "@/components/pillars/premium/CampagnesHero";
+import { CampagnesStagesScroll } from "@/components/pillars/premium/CampagnesStagesScroll";
 import { GrowthChannelMap } from "@/components/pillars/premium/GrowthChannelMap";
 import { GrowthSituationMatcher } from "@/components/pillars/premium/GrowthSituationMatcher";
 import { PillarProofPanel } from "@/components/pillars/premium/PillarProofPanel";
@@ -52,6 +57,8 @@ function PillarHeroVisual({ slug }: { slug: PillarSlug }) {
       return <StrategieHero />;
     case "vindbaarheid":
       return <VindbaarheidHero />;
+    case "campagnes":
+      return <CampagnesHero />;
     default:
       return null;
   }
@@ -224,6 +231,26 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
             />
             <SearchIntentMatcher />
             <VindbaarheidStagesScroll title={data.processTitle} stages={data.processSteps} />
+          </>
+        ) : null}
+
+        {data.slug === "campagnes" ? (
+          <>
+            <CampagnesContextSection
+              introParagraphs={data.introParagraphs}
+              angleTitle={data.angleTitle}
+              angleBody={data.angleBody}
+              funFact={premium.funFact}
+              funFactSource={premium.funFactSource}
+              funFactStat={premium.funFactStat}
+            />
+            <CampaignFunnelMap
+              title={premium.hubTitle}
+              subtitle={premium.hubSubtitle}
+              services={serviceItems}
+            />
+            <CampaignBudgetMatcher />
+            <CampagnesStagesScroll title={data.processTitle} stages={data.processSteps} />
           </>
         ) : null}
 

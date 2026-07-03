@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
 
-export interface SurfaceService {
+export interface FunnelService {
   name: string;
   description: string;
   href: string;
@@ -24,116 +24,152 @@ interface Zone {
 
 const ZONES: Zone[] = [
   {
-    href: "/diensten/seo",
-    short: "SEO",
-    zoneLabel: "Organische rankings",
-    x: 4,
-    y: 4,
-    w: 92,
+    href: "/diensten/google-ads",
+    short: "Google",
+    zoneLabel: "Zoek & shopping",
+    x: 2,
+    y: 2,
+    w: 46,
+    h: 16,
+  },
+  {
+    href: "/diensten/meta-ads",
+    short: "Meta",
+    zoneLabel: "Facebook & Instagram",
+    x: 52,
+    y: 2,
+    w: 46,
+    h: 16,
+  },
+  {
+    href: "/diensten/adverteren",
+    short: "Strategie",
+    zoneLabel: "Budget & schaalpad",
+    x: 8,
+    y: 20,
+    w: 84,
+    h: 12,
+  },
+  {
+    href: "/diensten/social-media",
+    short: "Social",
+    zoneLabel: "Organisch bereik",
+    x: 2,
+    y: 34,
+    w: 23,
+    h: 22,
+  },
+  {
+    href: "/diensten/ugc",
+    short: "UGC",
+    zoneLabel: "Creator content",
+    x: 27,
+    y: 34,
+    w: 23,
+    h: 22,
+  },
+  {
+    href: "/diensten/influencer-marketing",
+    short: "Influencer",
+    zoneLabel: "Samenwerkingen",
+    x: 52,
+    y: 34,
+    w: 23,
+    h: 22,
+  },
+  {
+    href: "/diensten/media",
+    short: "Beeld",
+    zoneLabel: "Foto & video-ads",
+    x: 77,
+    y: 34,
+    w: 21,
+    h: 22,
+  },
+  {
+    href: "/diensten/marketplaces",
+    short: "Bol",
+    zoneLabel: "Bol & Amazon",
+    x: 22,
+    y: 60,
+    w: 56,
     h: 18,
-  },
-  {
-    href: "/diensten/ai-zoek",
-    short: "AI",
-    zoneLabel: "ChatGPT · Gemini · Claude",
-    x: 4,
-    y: 26,
-    w: 44,
-    h: 28,
-  },
-  {
-    href: "/diensten/local-seo",
-    short: "Lokaal",
-    zoneLabel: "Maps & Google Business",
-    x: 52,
-    y: 26,
-    w: 44,
-    h: 28,
-  },
-  {
-    href: "/diensten/content-marketing",
-    short: "Content",
-    zoneLabel: "Autoriteit & kennisbank",
-    x: 4,
-    y: 58,
-    w: 44,
-    h: 26,
-  },
-  {
-    href: "/diensten/reviews",
-    short: "Reviews",
-    zoneLabel: "Social proof & trust",
-    x: 52,
-    y: 58,
-    w: 44,
-    h: 26,
   },
 ];
 
-const GHOST_QUERIES = [
-  { text: "beste seo bureau", top: "10%", left: "4%", delay: 0 },
-  { text: "vindbaar in chatgpt", top: "38%", left: "72%", delay: 1.2 },
-  { text: "google maps pack", top: "68%", left: "8%", delay: 2.4 },
-  { text: "wie bouwt shopify", top: "22%", left: "58%", delay: 0.8 },
-  { text: "reviews verzamelen", top: "82%", left: "55%", delay: 1.8 },
+const CHANNEL_PILLS = ["Google", "Meta", "UGC", "Creators", "Bol"] as const;
+
+const FLOATING_BLOCKS = [
+  { top: "6%", left: "-3%", w: 24, h: 16, rotate: -10, delay: 0 },
+  { top: "70%", left: "90%", w: 20, h: 12, rotate: 8, delay: 0.5 },
 ] as const;
 
-const RADAR_RINGS = [320, 480, 640] as const;
-
-const CHANNEL_PILLS = ["Google", "ChatGPT", "Gemini", "Claude", "Maps"] as const;
-
 const MAP_STATS = [
-  { label: "Zoekvlakken", value: "5" },
-  { label: "AI-kanalen", value: "3+" },
-  { label: "Meetbaar", value: "Ja" },
+  { label: "Campagnevlakken", value: "8" },
+  { label: "Paid + creators", value: "Ja" },
+  { label: "Meetbaar", value: "ROAS" },
 ] as const;
 
 function ZoneContent({ href, isActive }: { href: string; isActive: boolean }) {
   const dim = isActive ? "opacity-100" : "opacity-70";
   switch (href) {
-    case "/diensten/seo":
+    case "/diensten/google-ads":
       return (
-        <div className={`flex h-full flex-col justify-center gap-1 px-3 py-1 ${dim}`}>
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="flex items-center gap-2">
-              <span
-                className={`size-1.5 rounded-full ${i === 1 ? "bg-[#FF5722]" : "bg-slate-300"}`}
-                aria-hidden
-              />
-              <span
-                className={`h-1.5 rounded-full ${i === 1 ? "w-2/3 bg-emerald-400" : "w-1/2 bg-slate-200"}`}
-                aria-hidden
-              />
-            </div>
+        <div className={`flex h-full items-center gap-2 px-3 ${dim}`}>
+          <span className="text-[10px] font-bold text-[#4285F4]">G</span>
+          {[0.9, 0.7, 0.5].map((w, i) => (
+            <span
+              key={i}
+              className={`h-1.5 rounded-full ${i === 0 ? "bg-[#4285F4]" : "bg-slate-200"}`}
+              style={{ width: `${w * 40}px` }}
+              aria-hidden
+            />
           ))}
         </div>
       );
-    case "/diensten/ai-zoek":
+    case "/diensten/meta-ads":
       return (
-        <div className={`flex h-full flex-col justify-end p-2.5 ${dim}`}>
-          <div className="rounded-lg border border-sky-200 bg-gradient-to-br from-sky-50 to-white p-2 shadow-sm">
-            <p className="text-[8px] font-bold text-sky-600">AI-antwoord</p>
-            <p className="mt-1 text-[9px] font-semibold text-slate-700">
-              MeneerMarketing bouwt...
-            </p>
-          </div>
+        <div className={`flex h-full items-center justify-center gap-1 p-2 ${dim}`}>
+          <span className="size-6 rounded-lg bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#F77737]" aria-hidden />
+          <span className="text-[9px] font-bold text-slate-600">Reels ad</span>
         </div>
       );
-    case "/diensten/local-seo":
+    case "/diensten/adverteren":
       return (
-        <div className={`flex h-full items-center justify-center p-2 ${dim}`}>
-          <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-center">
-            <span className="text-base" aria-hidden>
-              📍
+        <div className={`flex h-full items-center justify-center gap-2 px-3 ${dim}`}>
+          {["Google", "Meta", "Budget"].map((l, i) => (
+            <span
+              key={l}
+              className={`rounded-full px-2 py-0.5 text-[8px] font-bold ${
+                i === 2 ? "bg-[#FF5722] text-white" : "bg-white/80 text-slate-600"
+              }`}
+            >
+              {l}
             </span>
-            <p className="mt-0.5 text-[8px] font-bold text-emerald-700">Maps pack</p>
+          ))}
+        </div>
+      );
+    case "/diensten/ugc":
+      return (
+        <div className={`flex h-full flex-col justify-end p-2 ${dim}`}>
+          <div className="rounded-lg border border-[#FF5722]/30 bg-[#FF5722]/10 p-1.5">
+            <span className="text-[8px] font-bold text-[#FF5722]">UGC · 15s</span>
           </div>
         </div>
       );
-    case "/diensten/content-marketing":
+    case "/diensten/influencer-marketing":
       return (
-        <div className={`space-y-1.5 p-2.5 ${dim}`}>
-          {[0.9, 0.75, 0.85].map((w, i) => (
+        <div className={`flex h-full items-center justify-center ${dim}`}>
+          <span className="text-lg" aria-hidden>
+            ★
+          </span>
+          <span className="ml-1 text-[9px] font-bold text-amber-500">Creator</span>
+        </div>
+      );
+    case "/diensten/social-media":
+      return (
+        <div className={`space-y-1 p-2 ${dim}`}>
+          {[0.85, 0.65].map((w, i) => (
             <span
               key={i}
               className="block h-1.5 rounded-full bg-slate-200"
@@ -143,15 +179,23 @@ function ZoneContent({ href, isActive }: { href: string; isActive: boolean }) {
           ))}
         </div>
       );
-    case "/diensten/reviews":
+    case "/diensten/media":
       return (
-        <div className={`flex h-full items-center justify-center gap-0.5 ${dim}`}>
-          {[0, 1, 2, 3, 4].map((i) => (
-            <span key={i} className="text-[10px] text-amber-400" aria-hidden>
-              ★
-            </span>
-          ))}
-          <span className="ml-1 text-[9px] font-bold text-slate-700">4,9</span>
+        <div className={`flex h-full items-center justify-center ${dim}`}>
+          <span className="rounded border border-slate-200 bg-white px-2 py-1 text-[8px] font-bold text-slate-600">
+            9:16
+          </span>
+        </div>
+      );
+    case "/diensten/marketplaces":
+      return (
+        <div className={`flex h-full items-center justify-center gap-2 ${dim}`}>
+          <span className="rounded bg-amber-400 px-2 py-0.5 text-[8px] font-bold text-white">
+            Bol
+          </span>
+          <span className="rounded bg-slate-700 px-2 py-0.5 text-[8px] font-bold text-white">
+            Amazon
+          </span>
         </div>
       );
     default:
@@ -159,20 +203,20 @@ function ZoneContent({ href, isActive }: { href: string; isActive: boolean }) {
   }
 }
 
-interface VisibilitySurfaceMapProps {
+interface CampaignFunnelMapProps {
   title: string;
   subtitle: string;
-  services: SurfaceService[];
+  services: FunnelService[];
 }
 
 /**
- * Het zoeklandschap: premium interactieve kaart met grid-gloed en glas-panelen.
+ * Campagne-funnel: interactieve kaart van paid tot creators en marketplaces.
  */
-export function VisibilitySurfaceMap({
+export function CampaignFunnelMap({
   title,
   subtitle,
   services,
-}: VisibilitySurfaceMapProps) {
+}: CampaignFunnelMapProps) {
   const reduce = useReducedMotion();
   const [active, setActive] = useState<string | null>(null);
   const zoneByHref = new Map(ZONES.map((z) => [z.href, z]));
@@ -181,91 +225,60 @@ export function VisibilitySurfaceMap({
   return (
     <section
       className="relative overflow-hidden border-b border-slate-800 bg-[#070b14]"
-      aria-labelledby="surface-map-heading"
+      aria-labelledby="funnel-map-heading"
     >
-      {/* Diepte: mesh + zoek-radar + ghost queries */}
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_20%_0%,rgba(255,87,34,0.14),transparent_55%),radial-gradient(ellipse_70%_50%_at_90%_100%,rgba(56,189,248,0.12),transparent_50%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_15%_0%,rgba(255,87,34,0.14),transparent_55%),radial-gradient(ellipse_70%_50%_at_95%_100%,rgba(66,133,244,0.1),transparent_50%)]"
         aria-hidden
       />
       <div
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(56,189,248,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(56,189,248,0.07)_1px,transparent_1px)] bg-[size:32px_32px]"
         aria-hidden
       />
-      {!reduce ? (
-        <div
-          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          aria-hidden
-        >
-          {RADAR_RINGS.map((size, i) => (
-            <motion.div
-              key={size}
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-sky-400/[0.07]"
-              style={{ width: size, height: size }}
-              animate={{
-                scale: [1, 1.06, 1],
-                opacity: [0.35, 0.12, 0.35],
-              }}
-              transition={{
-                duration: 6 + i * 1.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: i * 0.9,
-              }}
-            />
-          ))}
-          <motion.div
-            className="absolute left-1/2 top-1/2 h-px w-[min(90vw,720px)] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-transparent via-sky-400/10 to-transparent"
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-          />
-        </div>
-      ) : null}
       {!reduce
-        ? GHOST_QUERIES.map((q, i) => (
-            <motion.span
-              key={q.text}
-              className="pointer-events-none absolute font-mono text-[11px] font-medium tracking-tight text-sky-300/20"
-              style={{ top: q.top, left: q.left }}
-              animate={{ opacity: [0.12, 0.28, 0.12] }}
+        ? FLOATING_BLOCKS.map((block, i) => (
+            <motion.div
+              key={i}
+              className="pointer-events-none absolute rounded-2xl border border-white/[0.08] bg-gradient-to-br from-white/[0.06] to-transparent"
+              style={{
+                top: block.top,
+                left: block.left,
+                width: `${block.w}%`,
+                height: `${block.h}%`,
+                rotate: `${block.rotate}deg`,
+              }}
+              animate={{ y: [0, -8, 0] }}
               transition={{
-                duration: 5 + i * 0.6,
+                duration: 5 + i,
                 repeat: Infinity,
                 ease: "easeInOut",
-                delay: q.delay,
+                delay: block.delay,
               }}
               aria-hidden
-            >
-              {q.text}
-            </motion.span>
+            />
           ))
         : null}
       <div
-        className="pointer-events-none absolute -left-20 top-1/4 size-72 rounded-full bg-[#FF5722]/25 blur-3xl"
+        className="pointer-events-none absolute -left-16 top-1/3 size-64 rounded-full bg-[#FF5722]/20 blur-3xl"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -right-16 bottom-0 size-64 rounded-full bg-sky-500/20 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute left-1/2 top-1/2 size-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FF5722]/5 blur-[100px]"
+        className="pointer-events-none absolute -right-12 bottom-0 size-56 rounded-full bg-[#4285F4]/15 blur-3xl"
         aria-hidden
       />
 
       <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <p className="inline-flex items-center gap-2 rounded-full border border-[#FF5722]/30 bg-[#FF5722]/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-[#FF5722]">
-          Het zoeklandschap
+          De campagne-funnel
         </p>
         <h2
-          id="surface-map-heading"
+          id="funnel-map-heading"
           className="mt-4 text-2xl font-extrabold tracking-tight text-white sm:text-3xl"
         >
           {title}
         </h2>
         <p className="mt-2 max-w-xl text-slate-300">{subtitle}</p>
 
-        {/* Zwevende kanaal-pills */}
         <div className="mt-6 flex flex-wrap gap-2">
           {CHANNEL_PILLS.map((pill, i) => (
             <motion.span
@@ -282,38 +295,41 @@ export function VisibilitySurfaceMap({
         </div>
 
         <div className="mt-8 grid gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
-          {/* Canvas-kolom */}
           <div className="flex flex-col">
-            <div
-              className="relative flex flex-1 flex-col overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-1 shadow-[0_32px_64px_-28px_rgba(0,0,0,0.6)] backdrop-blur-sm [perspective:1200px]"
-            >
+            <div className="relative flex flex-1 flex-col overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-1 shadow-[0_32px_64px_-28px_rgba(0,0,0,0.6)] backdrop-blur-sm">
               <div className="overflow-hidden rounded-[20px] border border-white/10 bg-gradient-to-br from-white/[0.1] via-white/[0.04] to-transparent">
                 <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
                   <span className="size-2 rounded-full bg-[#FF5722]/80" aria-hidden />
-                  <span className="size-2 rounded-full bg-amber-400/80" aria-hidden />
-                  <span className="size-2 rounded-full bg-emerald-400/80" aria-hidden />
+                  <span className="size-2 rounded-full bg-[#4285F4]/80" aria-hidden />
+                  <span className="size-2 rounded-full bg-[#E1306C]/80" aria-hidden />
                   <span className="ml-2 font-mono text-[10px] tracking-wider text-slate-400">
-                    zoeklandschap.live
+                    funnel.live
                   </span>
-                  <span className="ml-auto flex items-center gap-1.5">
-                    <span className="relative flex size-1.5">
-                      <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-                      <span className="relative size-1.5 rounded-full bg-emerald-400" />
-                    </span>
-                    <span className="font-mono text-[10px] text-emerald-400">live</span>
-                  </span>
+                  <span className="ml-auto font-mono text-[10px] text-emerald-400">ROAS 4,2×</span>
                 </div>
 
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[linear-gradient(135deg,rgba(255,87,34,0.06)_0%,transparent_45%,rgba(56,189,248,0.08)_100%)]">
-                  {/* Scan-lijn */}
-                  {!reduce ? (
-                    <motion.div
-                      className="pointer-events-none absolute inset-x-0 z-20 h-px bg-gradient-to-r from-transparent via-sky-400/50 to-transparent"
-                      animate={{ top: ["0%", "100%"] }}
-                      transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                      aria-hidden
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[linear-gradient(180deg,rgba(66,133,244,0.05)_0%,transparent_40%,rgba(255,87,34,0.06)_100%)]">
+                  <svg
+                    className="pointer-events-none absolute inset-0 size-full"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    aria-hidden
+                  >
+                    <path
+                      d="M 50 8 L 25 24 L 50 32 L 75 24 Z"
+                      fill="none"
+                      stroke="rgba(255,255,255,0.06)"
+                      strokeWidth="0.3"
                     />
-                  ) : null}
+                    <path
+                      d="M 25 56 L 50 78 L 75 56"
+                      fill="none"
+                      stroke="rgba(255,87,34,0.15)"
+                      strokeWidth="0.3"
+                      strokeDasharray="2 2"
+                    />
+                  </svg>
+
                   {ZONES.map((zone) => {
                     const service = services.find((s) => s.href === zone.href);
                     if (!service) return null;
@@ -388,13 +404,12 @@ export function VisibilitySurfaceMap({
                 </motion.p>
               ) : (
                 <p className="mt-3 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
-                  Beweeg over de kaart of de lijst
+                  Beweeg over de funnel of de lijst
                 </p>
               )}
             </AnimatePresence>
           </div>
 
-          {/* Diensten-kolom */}
           <ul className="flex flex-col gap-2">
             {services.map((service, index) => {
               const Icon = megaMenuIconForHref(service.href);
@@ -406,14 +421,14 @@ export function VisibilitySurfaceMap({
                   initial={reduce ? false : { opacity: 0, x: 16 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.04 * index }}
+                  transition={{ delay: 0.03 * index }}
                   className="flex flex-1"
                 >
                   <Link
                     href={service.href}
                     onMouseEnter={() => setActive(service.href)}
                     onMouseLeave={() => setActive(null)}
-                    className={`group flex w-full flex-col justify-center gap-1 rounded-2xl border px-4 py-3.5 backdrop-blur-sm transition-all duration-300 sm:flex-row sm:items-center sm:gap-3.5 ${
+                    className={`group flex w-full flex-col justify-center gap-1 rounded-2xl border px-4 py-3 backdrop-blur-sm transition-all duration-300 sm:flex-row sm:items-center sm:gap-3.5 ${
                       isActive
                         ? "border-[#FF5722]/50 bg-white/[0.1] shadow-[inset_0_0_0_1px_rgba(255,87,34,0.2),0_16px_40px_-20px_rgba(255,87,34,0.35)]"
                         : "border-white/10 bg-white/[0.04] hover:border-white/25 hover:bg-white/[0.07]"

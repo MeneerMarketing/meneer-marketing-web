@@ -57,6 +57,30 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       { label: "Posities", value: "Vasthouden" },
     ],
   },
+  campagnes: {
+    stickers: [
+      "Google Ads",
+      "Meta Ads",
+      "UGC",
+      "Creators",
+      "ROAS",
+      "Shopping",
+      "Bol",
+      "Schaal",
+    ],
+    funFact:
+      "Gemiddeld gaat 26% van advertentiebudget naar zoektermen die al organisch scoren. Wie SEO en ads combineert, betaalt dubbel voor dezelfde klik.",
+    funFactSource: "Daarom kijken we eerst naar je fundament",
+    funFactStat: "26%",
+    hubTitle: "Elk campagnevlak heeft zijn eigen rol in de funnel.",
+    hubSubtitle:
+      "Beweeg over de funnel en zie welke dienst waar in je campagnes zit. Of pak de lijst en spring direct naar het juiste traject.",
+    proofMetrics: [
+      { label: "ROAS-sturing", value: "Maandelijks" },
+      { label: "Creatives", value: "UGC-first" },
+      { label: "Budget", value: "Meetbaar" },
+    ],
+  },
   bouwen: {
     stickers: [
       "From scratch",
