@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Route, Sparkles } from "lucide-react";
+import { ArrowUpRight, Route, Sparkles, TrendingUp } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
@@ -235,6 +235,36 @@ export function DienstPremiumView({
                 </p>
               </Reveal>
             </section>
+
+            {premium.scaleCallout ? (
+              <Reveal delay={0.06}>
+                <aside className="mt-10 flex flex-col gap-4 rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-7">
+                  <div className="flex gap-4">
+                    <span
+                      className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF5722]/10 text-[#FF5722]"
+                      aria-hidden
+                    >
+                      <TrendingUp className="size-6" strokeWidth={1.8} />
+                    </span>
+                    <div>
+                      <h3 className="text-lg font-extrabold tracking-tight text-slate-900">
+                        {premium.scaleCallout.title}
+                      </h3>
+                      <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-slate-600">
+                        {premium.scaleCallout.body}
+                      </p>
+                    </div>
+                  </div>
+                  <Link
+                    href={siteCtas.schaalOp.href}
+                    className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full border-2 border-slate-900 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:border-[#FF5722] hover:bg-[#FF5722] hover:text-white"
+                  >
+                    {siteCtas.schaalOp.label}
+                    <ArrowUpRight className="size-4" aria-hidden />
+                  </Link>
+                </aside>
+              </Reveal>
+            ) : null}
 
             {/* Aanpak als route */}
             <section

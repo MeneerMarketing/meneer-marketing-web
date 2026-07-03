@@ -14,6 +14,11 @@ export interface DienstPremiumPrinciple {
   body: string;
 }
 
+export interface DienstPremiumScaleCallout {
+  title: string;
+  body: string;
+}
+
 export interface DienstPremiumContent {
   /** Welke hero-illustratie rechts in de hero */
   heroVisual?: "build" | "shopify";
@@ -34,6 +39,8 @@ export interface DienstPremiumContent {
   /** Resultaten met gelijkwaardige titels en details */
   outcomes: DienstPremiumOutcome[];
   heroStats: { label: string; value: string }[];
+  /** Optioneel: doorverwijzing naar /schaal-op voor bestaande Shopify-klanten */
+  scaleCallout?: DienstPremiumScaleCallout;
 }
 
 const PREMIUM: Record<string, DienstPremiumContent> = {
@@ -182,6 +189,10 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       { label: "Expertise", value: "Shopify · alles kan" },
       { label: "Performance", value: "CWV per release" },
     ],
+    scaleCallout: {
+      title: "Al Shopify? Tijd om op te schalen.",
+      body: "Je shop draait al, maar groeit niet meer mee. Theme, snelheid of campagnes remmen. Via Schaal op kijken we waar jouw grootste hefboom zit en bouwen we daaromheen.",
+    },
   },
 };
 
