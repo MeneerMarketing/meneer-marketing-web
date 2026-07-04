@@ -22,8 +22,7 @@ export interface LedPassportUploadResult {
 }
 
 function getResendClient(): Resend {
-  const key =
-    process.env.SKINCOMPLETE_RESEND_API_KEY ?? process.env.RESEND_API_KEY;
+  const key = process.env.SKINCOMPLETE_RESEND_API_KEY?.trim();
   if (!key) {
     throw new Error(
       "E-mail is nog niet geconfigureerd (SKINCOMPLETE_RESEND_API_KEY ontbreekt).",
