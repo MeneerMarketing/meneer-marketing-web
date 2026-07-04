@@ -1,181 +1,165 @@
 "use client";
 
-import {
-  motion,
-  useMotionValue,
-  useReducedMotion,
-  useSpring,
-} from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import type { MouseEvent as ReactMouseEvent } from "react";
-import { MousePointerClick, PenTool, Smartphone } from "lucide-react";
+import { useHeroTilt } from "@/components/diensten/premium/useHeroTilt";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-function buildIn(delay: number, reduce: boolean) {
-  if (reduce) return {};
-  return {
-    initial: { opacity: 0, y: 14, scale: 0.96 },
-    whileInView: { opacity: 1, y: 0, scale: 1 },
-    viewport: { once: true, margin: "-60px" },
-    transition: { duration: 0.55, delay, ease: EASE },
-  };
-}
-
 /**
- * Decoratief designvenster: wireframe wordt visueel UI, met CTA-focus
- * en mobiel frame. Zelfde tilt als andere premium dienst-hero's.
+ * Zwevende UI-lagen die op muisbeweging verschuiven: nav, hero, CTA, kaarten.
+ * Geen browsermockup.
  */
 export function HeroUxWindow() {
-  const reduce = useReducedMotion();
-  const rx = useMotionValue(0);
-  const ry = useMotionValue(0);
-  const rotateX = useSpring(rx, { stiffness: 120, damping: 16 });
-  const rotateY = useSpring(ry, { stiffness: 120, damping: 16 });
+  const { reduce, rotateX, rotateY, onMove, onLeave } = useHeroTilt(0.6);
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
 
-  function onMove(e: ReactMouseEvent<HTMLDivElement>) {
+  const navX = useTransform(mx, [-0.5, 0.5], [-8, 8]);
+  const heroX = useTransform(mx, [-0.5, 0.5], [-14, 14]);
+  const heroY = useTransform(my, [-0.5, 0.5], [-6, 6]);
+  const ctaX = useTransform(mx, [-0.5, 0.5], [-20, 20]);
+  const ctaY = useTransform(my, [-0.5, 0.5], [-10, 10]);
+  const cardX = useTransform(mx, [-0.5, 0.5], [-24, 24]);
+  const cardY = useTransform(my, [-0.5, 0.5], [8, -8]);
+
+  function handleMove(e: ReactMouseEvent<HTMLDivElement>) {
+    onMove(e);
     if (reduce) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
-    rx.set(py * -7);
-    ry.set(px * 9);
+    mx.set((e.clientX - rect.left) / rect.width - 0.5);
+    my.set((e.clientY - rect.top) / rect.height - 0.5);
   }
 
-  function onLeave() {
-    rx.set(0);
-    ry.set(0);
+  function handleLeave() {
+    onLeave();
+    mx.set(0);
+    my.set(0);
   }
 
   return (
     <div
-      className="relative mx-auto w-full max-w-[440px] [perspective:1200px]"
-      onMouseMove={onMove}
-      onMouseLeave={onLeave}
+      className="relative mx-auto h-[400px] w-full max-w-[440px] [perspective:1600px]"
+      onMouseMove={handleMove}
+      onMouseLeave={handleLeave}
     >
       <div
-        className="pointer-events-none absolute -left-10 -top-10 size-48 rounded-full bg-sky-300/25 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -bottom-8 -right-8 size-40 rounded-full bg-[#FF5722]/15 blur-3xl"
+        className="pointer-events-none absolute inset-0 bg-sky-200/20 blur-3xl"
         aria-hidden
       />
 
       <motion.div
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_32px_64px_-24px_rgba(15,23,42,0.25)]"
+        className="relative h-full w-full"
       >
-        <div className="flex items-center gap-2 border-b border-slate-100 px-4 py-3">
-          <span className="size-2.5 rounded-full bg-[#FF5722]/80" aria-hidden />
-          <span className="size-2.5 rounded-full bg-amber-300" aria-hidden />
-          <span className="size-2.5 rounded-full bg-emerald-400" aria-hidden />
-          <span className="ml-2 flex items-center gap-1.5 rounded-full bg-sky-100 px-2.5 py-1 text-[10px] font-bold text-sky-800">
-            <PenTool className="size-3" aria-hidden />
-            UI/UX
-          </span>
-          <span className="ml-auto rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-semibold text-slate-500">
-            Figma
-          </span>
-        </div>
+        {/* Achtergrond grid */}
+        <div
+          className="absolute inset-4 rounded-[2rem] border border-dashed border-slate-200/80 bg-slate-50/50"
+          aria-hidden
+        />
 
-        <div className="grid grid-cols-[1fr_0.85fr] gap-3 p-4">
-          {/* Wireframe kolom */}
-          <motion.div
-            {...buildIn(0.12, !!reduce)}
-            className="space-y-3 rounded-xl border border-dashed border-slate-200 bg-slate-50/80 p-3"
-          >
-            <p className="text-[9px] font-bold uppercase tracking-wider text-slate-400">
-              Wireframe
-            </p>
-            <span className="block h-2 w-3/4 rounded-full bg-slate-300" aria-hidden />
-            <span className="block h-2 w-1/2 rounded-full bg-slate-200" aria-hidden />
-            <span className="mt-2 block h-16 rounded-lg border border-slate-200 bg-white" aria-hidden />
-            <span className="block h-7 w-20 rounded-full border-2 border-dashed border-slate-300 bg-white" aria-hidden />
-          </motion.div>
+        {/* Nav-laag */}
+        <motion.div
+          style={{ x: reduce ? 0 : navX, transform: "translateZ(20px)" }}
+          initial={reduce ? undefined : { opacity: 0, y: -16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: EASE }}
+          className="absolute left-10 right-10 top-10 flex items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/90 px-4 py-3 shadow-sm backdrop-blur"
+        >
+          <span className="size-7 rounded-xl bg-slate-900" aria-hidden />
+          <span className="h-2 w-14 rounded-full bg-slate-200" aria-hidden />
+          <span className="h-2 w-10 rounded-full bg-slate-100" aria-hidden />
+          <span className="ml-auto h-7 w-16 rounded-full bg-slate-100" aria-hidden />
+        </motion.div>
 
-          {/* Visueel design kolom */}
-          <motion.div
-            {...buildIn(0.28, !!reduce)}
-            className="relative space-y-2.5 rounded-xl border border-slate-100 bg-white p-3 shadow-sm"
-          >
-            <p className="text-[9px] font-bold uppercase tracking-wider text-slate-400">
-              Design
-            </p>
-            <span className="block h-2.5 w-4/5 rounded-full bg-slate-900" aria-hidden />
-            <span className="block h-2 w-3/5 rounded-full bg-slate-400" aria-hidden />
-            <span className="mt-1 block h-14 rounded-lg bg-gradient-to-br from-slate-100 to-slate-50" aria-hidden />
-            <motion.span
-              {...buildIn(0.45, !!reduce)}
-              className="relative block h-8 w-full rounded-full bg-[#FF5722] shadow-[0_8px_20px_-6px_rgba(255,87,34,0.55)]"
-              aria-hidden
-            />
-            <motion.span
-              animate={reduce ? undefined : { scale: [1, 1.06, 1] }}
-              transition={
-                reduce
-                  ? undefined
-                  : { duration: 2.2, repeat: Infinity, ease: "easeInOut" }
-              }
-              className="pointer-events-none absolute bottom-5 right-3 flex size-6 items-center justify-center rounded-full border-2 border-[#FF5722] bg-white"
-              aria-hidden
+        {/* Hero-tekstlaag */}
+        <motion.div
+          style={{
+            x: reduce ? 0 : heroX,
+            y: reduce ? 0 : heroY,
+            transform: "translateZ(45px)",
+          }}
+          initial={reduce ? undefined : { opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1, duration: 0.55, ease: EASE }}
+          className="absolute left-10 top-28 w-[55%] space-y-2.5 rounded-2xl border border-slate-100 bg-white p-4 shadow-md"
+        >
+          <span className="block h-3.5 w-full rounded-full bg-slate-900" aria-hidden />
+          <span className="block h-3 w-4/5 rounded-full bg-slate-900" aria-hidden />
+          <span className="block h-2 w-3/5 rounded-full bg-slate-300" aria-hidden />
+        </motion.div>
+
+        {/* Beeldlaag */}
+        <motion.div
+          style={{
+            x: reduce ? 0 : heroX,
+            y: reduce ? 0 : heroY,
+            transform: "translateZ(35px) rotate(3deg)",
+          }}
+          initial={reduce ? undefined : { opacity: 0, x: 24 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.55, ease: EASE }}
+          className="absolute right-8 top-24 h-28 w-[38%] rounded-2xl bg-gradient-to-br from-slate-200 to-slate-100 shadow-inner"
+          aria-hidden
+        />
+
+        {/* CTA-laag (verschuift het meest) */}
+        <motion.div
+          style={{
+            x: reduce ? 0 : ctaX,
+            y: reduce ? 0 : ctaY,
+            transform: "translateZ(70px)",
+          }}
+          initial={reduce ? undefined : { opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.35, duration: 0.5, ease: EASE }}
+          className="absolute left-10 top-[11.5rem] h-10 w-36 rounded-full bg-[#FF5722] shadow-[0_12px_28px_-8px_rgba(255,87,34,0.55)]"
+          aria-hidden
+        />
+
+        {/* Feature-kaarten */}
+        <div className="absolute bottom-10 left-8 right-8 flex gap-3">
+          {[0, 1, 2].map((i) => (
+            <motion.div
+              key={i}
+              style={{
+                x: reduce ? 0 : cardX,
+                y: reduce ? 0 : cardY,
+                transform: `translateZ(${50 + i * 12}px) rotate(${i === 0 ? -4 : i === 2 ? 4 : 0}deg)`,
+              }}
+              initial={reduce ? undefined : { opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 + i * 0.08, ease: EASE }}
+              className="flex-1 space-y-2 rounded-2xl border border-slate-200 bg-white p-3 shadow-lg"
             >
-              <MousePointerClick className="size-3 text-[#FF5722]" />
-            </motion.span>
-          </motion.div>
+              <span className="block h-8 rounded-xl bg-slate-100" aria-hidden />
+              <span className="block h-1.5 w-4/5 rounded-full bg-slate-200" aria-hidden />
+            </motion.div>
+          ))}
         </div>
 
-        {/* Mobiel preview */}
-        <motion.div
-          {...buildIn(0.55, !!reduce)}
-          className="mx-4 mb-4 flex items-center gap-3 rounded-xl border border-slate-100 bg-slate-50/60 px-3 py-2.5"
+        <motion.span
+          animate={reduce ? undefined : { y: [-4, 4] }}
+          transition={{ duration: 2.6, repeat: Infinity, repeatType: "mirror" }}
+          className="absolute -right-1 top-20 rounded-xl border border-[#FF5722]/30 bg-white px-3 py-1.5 text-[10px] font-bold text-[#FF5722] shadow-lg"
+          style={{ transform: "translateZ(80px)" }}
         >
-          <span className="flex size-9 shrink-0 items-center justify-center rounded-lg border border-slate-200 bg-white">
-            <Smartphone className="size-4 text-slate-600" aria-hidden />
-          </span>
-          <div className="min-w-0 flex-1">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-              Mobiel-first
-            </p>
-            <p className="truncate text-xs font-semibold text-slate-700">
-              Zelfde flow, andere hiërarchie
-            </p>
-          </div>
-          <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-bold text-emerald-700">
-            A11y
-          </span>
-        </motion.div>
+          Primaire actie
+        </motion.span>
 
-        <motion.div
-          animate={reduce ? undefined : { y: [-5, 5] }}
-          transition={
-            reduce
-              ? undefined
-              : { duration: 2.6, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }
-          }
-          className="absolute -right-5 top-16 rounded-xl border border-[#FF5722]/25 bg-white px-3 py-2 shadow-lg"
-          style={{ transform: "translateZ(40px)" }}
+        <motion.span
+          animate={reduce ? undefined : { y: [4, -4] }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
+          className="absolute -left-2 bottom-24 rounded-xl border border-slate-200 bg-slate-900 px-3 py-1.5 text-[10px] font-bold text-white shadow-lg"
+          style={{ transform: "translateZ(75px)" }}
         >
-          <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-            Primaire actie
-          </p>
-          <p className="text-sm font-extrabold text-[#FF5722]">Duidelijk</p>
-        </motion.div>
-
-        <motion.div
-          animate={reduce ? undefined : { y: [6, -6] }}
-          transition={
-            reduce
-              ? undefined
-              : { duration: 3.1, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }
-          }
-          className="absolute -left-6 bottom-20 rounded-xl border border-slate-200 bg-slate-900 px-3 py-2 shadow-lg"
-          style={{ transform: "translateZ(50px)" }}
-        >
-          <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-            Handoff
-          </p>
-          <p className="text-sm font-extrabold text-white">Build-ready</p>
-        </motion.div>
+          Verschuift per laag
+        </motion.span>
       </motion.div>
     </div>
   );

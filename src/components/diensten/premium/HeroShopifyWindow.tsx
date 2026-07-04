@@ -1,171 +1,123 @@
 "use client";
 
-import {
-  motion,
-  useMotionValue,
-  useReducedMotion,
-  useSpring,
-} from "framer-motion";
-import type { MouseEvent as ReactMouseEvent } from "react";
+import { motion } from "framer-motion";
 import { ShoppingBag } from "lucide-react";
+import { useHeroTilt } from "@/components/diensten/premium/useHeroTilt";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-function buildIn(delay: number, reduce: boolean) {
-  if (reduce) return {};
-  return {
-    initial: { opacity: 0, y: 14, scale: 0.96 },
-    whileInView: { opacity: 1, y: 0, scale: 1 },
-    viewport: { once: true, margin: "-60px" },
-    transition: { duration: 0.55, delay, ease: EASE },
-  };
-}
+const ORBIT_PRODUCTS = [
+  { angle: -30, price: "€149", tag: null, delay: 0.15 },
+  { angle: 35, price: "€89", tag: "Bundle", delay: 0.28 },
+  { angle: 145, price: "€249", tag: null, delay: 0.4 },
+  { angle: 210, price: "€59", tag: "Nieuw", delay: 0.52 },
+] as const;
 
 /**
- * Decoratief Shopify-storefront venster: productgrid bouwt zich op, met
- * zwevende badges (custom theme, SKU's, snelheid). Zelfde tilt als build-hero.
+ * Productkaarten in een orbit rond het Shopify-icoon. Geen storefront-venster.
  */
 export function HeroShopifyWindow() {
-  const reduce = useReducedMotion();
-  const rx = useMotionValue(0);
-  const ry = useMotionValue(0);
-  const rotateX = useSpring(rx, { stiffness: 120, damping: 16 });
-  const rotateY = useSpring(ry, { stiffness: 120, damping: 16 });
-
-  function onMove(e: ReactMouseEvent<HTMLDivElement>) {
-    if (reduce) return;
-    const rect = e.currentTarget.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
-    rx.set(py * -7);
-    ry.set(px * 9);
-  }
-
-  function onLeave() {
-    rx.set(0);
-    ry.set(0);
-  }
+  const { reduce, rotateX, rotateY, onMove, onLeave } = useHeroTilt(0.85);
 
   return (
     <div
-      className="relative mx-auto w-full max-w-[440px] [perspective:1200px]"
+      className="relative mx-auto h-[400px] w-full max-w-[440px] [perspective:1400px]"
       onMouseMove={onMove}
       onMouseLeave={onLeave}
     >
       <div
-        className="pointer-events-none absolute -left-10 -top-10 size-48 rounded-full bg-[#96bf48]/20 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -bottom-8 -right-8 size-40 rounded-full bg-[#FF5722]/15 blur-3xl"
+        className="pointer-events-none absolute inset-0 rounded-full bg-[#96bf48]/12 blur-3xl"
         aria-hidden
       />
 
       <motion.div
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        className="relative rounded-2xl border border-slate-200 bg-white shadow-[0_32px_64px_-24px_rgba(15,23,42,0.25)]"
+        className="relative flex h-full items-center justify-center"
       >
-        {/* Storefront-balk */}
-        <div className="flex items-center gap-2 border-b border-slate-100 px-4 py-3">
-          <span className="size-2.5 rounded-full bg-[#FF5722]/80" aria-hidden />
-          <span className="size-2.5 rounded-full bg-amber-300" aria-hidden />
-          <span className="size-2.5 rounded-full bg-emerald-400" aria-hidden />
-          <span className="ml-2 flex items-center gap-1.5 rounded-full bg-[#96bf48]/15 px-2.5 py-1 text-[10px] font-bold text-[#5a7a2e]">
-            <ShoppingBag className="size-3" aria-hidden />
-            Shopify
+        {/* Orbit ring */}
+        <motion.span
+          animate={reduce ? undefined : { rotate: 360 }}
+          transition={{ duration: 48, repeat: Infinity, ease: "linear" }}
+          className="absolute size-56 rounded-full border border-dashed border-[#96bf48]/30"
+          aria-hidden
+        />
+        <motion.span
+          animate={reduce ? undefined : { rotate: -360 }}
+          transition={{ duration: 36, repeat: Infinity, ease: "linear" }}
+          className="absolute size-72 rounded-full border border-slate-200/60"
+          aria-hidden
+        />
+
+        {/* Centrum */}
+        <motion.div
+          initial={reduce ? undefined : { scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: EASE }}
+          className="relative z-10 flex size-20 items-center justify-center rounded-full bg-gradient-to-br from-[#96bf48] to-[#5a7a2e] shadow-[0_20px_40px_-12px_rgba(90,122,46,0.5)]"
+          style={{ transform: "translateZ(50px)" }}
+        >
+          <ShoppingBag className="size-9 text-white" aria-hidden />
+          <span className="absolute -bottom-1 -right-1 flex size-6 items-center justify-center rounded-full bg-[#FF5722] text-[10px] font-bold text-white">
+            3
           </span>
-          <span className="ml-auto flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-semibold text-slate-500">
-            <span className="size-1.5 rounded-full bg-emerald-500" aria-hidden />
-            Live
-          </span>
-        </div>
+        </motion.div>
 
-        <div className="space-y-4 p-5">
-          {/* Nav + cart */}
-          <motion.div {...buildIn(0.1, !!reduce)} className="flex items-center gap-3">
-            <span className="size-7 rounded-lg bg-slate-900" aria-hidden />
-            <span className="h-2 w-14 rounded-full bg-slate-200" aria-hidden />
-            <span className="h-2 w-10 rounded-full bg-slate-200" aria-hidden />
-            <span className="ml-auto flex items-center gap-1 rounded-full border border-slate-200 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-slate-500">
-              Maatwerk
-            </span>
-            <span className="relative flex size-7 items-center justify-center rounded-full bg-[#FF5722]/10">
-              <ShoppingBag className="size-3.5 text-[#FF5722]" aria-hidden />
-              <span className="absolute -right-0.5 -top-0.5 flex size-3.5 items-center justify-center rounded-full bg-[#FF5722] text-[8px] font-bold text-white">
-                3
-              </span>
-            </span>
-          </motion.div>
+        {/* Productkaarten op orbit */}
+        {ORBIT_PRODUCTS.map((product) => {
+          const rad = (product.angle * Math.PI) / 180;
+          const x = Math.cos(rad) * 118;
+          const y = Math.sin(rad) * 118;
 
-          {/* Hero product */}
-          <motion.div
-            {...buildIn(0.28, !!reduce)}
-            className="grid grid-cols-[1fr_1.1fr] gap-3 rounded-xl border border-slate-100 bg-slate-50/70 p-3"
-          >
-            <span className="aspect-square rounded-lg bg-gradient-to-br from-slate-200 to-slate-100" aria-hidden />
-            <div className="flex flex-col justify-center space-y-2">
-              <span className="block h-3 w-4/5 rounded-full bg-slate-900" aria-hidden />
-              <span className="block h-2 w-2/3 rounded-full bg-slate-300" aria-hidden />
-              <span className="mt-1 block h-4 w-16 rounded-full bg-[#FF5722]" aria-hidden />
-              <span className="flex gap-1.5 pt-1">
-                <span className="h-5 w-5 rounded-md border border-slate-200 bg-white" aria-hidden />
-                <span className="h-5 w-5 rounded-md border border-slate-200 bg-white" aria-hidden />
-                <span className="h-5 w-5 rounded-md border-2 border-[#FF5722] bg-[#FF5722]/10" aria-hidden />
-              </span>
-            </div>
-          </motion.div>
+          return (
+            <motion.div
+              key={product.angle}
+              initial={reduce ? undefined : { opacity: 0, scale: 0.7 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: product.delay, duration: 0.5, ease: EASE }}
+              animate={
+                reduce
+                  ? undefined
+                  : { y: [0, product.angle % 2 === 0 ? -6 : 6, 0] }
+              }
+              style={{
+                x,
+                y,
+                rotate: product.angle * 0.12,
+                transform: "translateZ(35px)",
+              }}
+              className="absolute w-24 rounded-2xl border border-slate-200 bg-white p-2 shadow-lg"
+            >
+              <span className="block aspect-square rounded-xl bg-gradient-to-br from-slate-100 to-slate-50" aria-hidden />
+              <span className="mt-1.5 block h-1.5 w-3/4 rounded-full bg-slate-200" aria-hidden />
+              <p className="mt-1 text-[10px] font-extrabold text-slate-900">{product.price}</p>
+              {product.tag ? (
+                <span className="mt-0.5 inline-block rounded-full bg-[#96bf48]/20 px-1.5 py-0.5 text-[7px] font-bold text-[#5a7a2e]">
+                  {product.tag}
+                </span>
+              ) : null}
+            </motion.div>
+          );
+        })}
 
-          {/* Productgrid */}
-          <div className="grid grid-cols-3 gap-2.5">
-            {[0.48, 0.62, 0.76].map((delay, i) => (
-              <motion.div
-                key={delay}
-                {...buildIn(delay, !!reduce)}
-                className="space-y-2 rounded-xl border border-slate-100 bg-white p-2.5 shadow-sm"
-              >
-                <span className="block aspect-[4/3] rounded-lg bg-slate-100" aria-hidden />
-                <span className="block h-1.5 w-4/5 rounded-full bg-slate-200" aria-hidden />
-                <span className="block h-2 w-10 rounded-full bg-slate-900" aria-hidden />
-                {i === 1 ? (
-                  <span className="inline-block rounded-full bg-[#96bf48]/20 px-1.5 py-0.5 text-[8px] font-bold text-[#5a7a2e]">
-                    Bundle
-                  </span>
-                ) : null}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        {/* Zwevende badges */}
         <motion.div
           animate={reduce ? undefined : { y: [-5, 5] }}
-          transition={
-            reduce
-              ? undefined
-              : { duration: 2.6, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }
-          }
-          className="absolute -right-5 top-16 rounded-xl border border-emerald-200 bg-white px-3 py-2 shadow-lg"
-          style={{ transform: "translateZ(40px)" }}
+          transition={{ duration: 2.5, repeat: Infinity, repeatType: "mirror" }}
+          className="absolute right-0 top-4 rounded-2xl border border-emerald-200 bg-white px-3 py-2 shadow-lg"
+          style={{ transform: "translateZ(45px)" }}
         >
-          <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-            LCP
-          </p>
-          <p className="text-sm font-extrabold text-emerald-500">0,9 sec</p>
+          <p className="text-[9px] font-bold uppercase tracking-wider text-slate-400">Theme</p>
+          <p className="text-sm font-extrabold text-[#5a7a2e]">From scratch</p>
         </motion.div>
 
         <motion.div
-          animate={reduce ? undefined : { y: [6, -6] }}
-          transition={
-            reduce
-              ? undefined
-              : { duration: 3.1, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }
-          }
-          className="absolute -left-6 bottom-14 rounded-xl border border-slate-200 bg-slate-900 px-3 py-2 shadow-lg"
-          style={{ transform: "translateZ(50px)" }}
+          animate={reduce ? undefined : { y: [4, -4] }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
+          className="absolute bottom-6 left-0 rounded-2xl border border-slate-800 bg-slate-900 px-3 py-2 shadow-xl"
+          style={{ transform: "translateZ(40px) rotate(3deg)" }}
         >
-          <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-            SKU&apos;s
-          </p>
+          <p className="text-[9px] font-bold uppercase tracking-wider text-slate-500">SKU&apos;s</p>
           <p className="text-sm font-extrabold text-white">2.400+</p>
         </motion.div>
       </motion.div>

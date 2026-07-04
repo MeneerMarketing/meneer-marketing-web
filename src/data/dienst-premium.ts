@@ -21,7 +21,7 @@ export interface DienstPremiumScaleCallout {
 
 export interface DienstPremiumContent {
   /** Welke hero-illustratie rechts in de hero */
-  heroVisual?: "build" | "shopify" | "portal" | "speed" | "ux";
+  heroVisual?: "build" | "shopify" | "portal" | "speed" | "ux" | "brand";
   /** Korte onderregel met punch in de hero */
   heroKicker: string;
   /** Onverwacht feitje of harde waarheid */
@@ -49,9 +49,9 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroKicker:
       "Geen template dat op duizend andere sites lijkt. Een website die vanaf regel één voor jouw bedrijf is gebouwd. Snel, veilig en klaar om te groeien.",
     funFact:
-      "Een bezoeker oordeelt in ongeveer een halve seconde over je website. Nog voor er één woord is gelezen.",
-    funFactSource: "Daarom bouwen we niks half",
-    funFactStat: "0,5 sec",
+      "Je concurrent kan hetzelfde theme kopen als jij. Dan betaal jij harder adverteren voor hetzelfde vertrouwen.",
+    funFactSource: "Daarom uniek gebouwd",
+    funFactStat: "Copy",
     principles: [
       {
         title: "Eerst luisteren, dan bouwen",
@@ -122,9 +122,9 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroKicker:
       "Ik ben Shopify-expert en bouw webshops from scratch. Geen theme uit de store, geen template dat op honderd andere shops lijkt. Custom theme, custom secties. In Shopify is vrijwel alles mogelijk. Ik weet hoe.",
     funFact:
-      "Shopify verwerkt in piekmomenten meer dan een miljoen checkouts per minuut. Jouw shop hoeft niet stuk te gaan omdat het theme het op drukke dagen niet aankan.",
-    funFactSource: "Daarom themes from scratch",
-    funFactStat: "1M+",
+      "Geen theme uit de Shopify Store met jouw logo erop. Dat is geen maatwerk, dat is vermomde template.",
+    funFactSource: "Daarom from scratch",
+    funFactStat: "0",
     principles: [
       {
         title: "Themes from scratch",
@@ -199,9 +199,9 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroKicker:
       "Portals, boekingsapps en interne tools from scratch. Geen losse spreadsheet-flow, geen duct-tape tussen vijf systemen. Wel één product dat klanten en team begrijpen.",
     funFact:
-      "De gemiddelde medewerker wisselt 9 keer per uur van app. Elke extra login is een kans om af te haken.",
-    funFactSource: "Daarom één portaal dat klopt",
-    funFactStat: "9×",
+      "Nog steeds orders via mail en Excel? Dat werkt tot je groeit. Dan wordt het chaos voor jou en je klant.",
+    funFactSource: "Daarom één portaal",
+    funFactStat: "Mail",
     principles: [
       {
         title: "Rollen eerst, pixels daarna",
@@ -272,9 +272,9 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroKicker:
       "Snellere site, betere scores in Google. Geen cosmetische speed plugin maar code, assets en server: meten op pagina's die omzet draaien, prioriteren, fixen, opnieuw meten.",
     funFact:
-      "Meer dan de helft van mobiele bezoekers hakt af als een pagina langer dan drie seconden laadt. Google meet dat mee in Core Web Vitals.",
-    funFactSource: "Daarom meten op geld-pagina's",
-    funFactStat: "53%",
+      "Google beloont snelle, goed gestructureerde pagina's. Trage sites met rommelige HTML verliezen crawlruimte én clicks.",
+    funFactSource: "Daarom bouwen en SEO samen",
+    funFactStat: "SEO",
     principles: [
       {
         title: "Meten waar het telt",
@@ -411,6 +411,79 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       { label: "Aanpak", value: "Flows eerst" },
       { label: "Deliverable", value: "Figma klaar" },
       { label: "Focus", value: "Conversie" },
+    ],
+  },
+  branding: {
+    heroVisual: "brand",
+    heroKicker:
+      "Huisstijl die op je site, in Google Ads, Meta Ads en mail hetzelfde verhaal vertelt. Geen los logo-PDF dat in een la verdwijnt. Wel merk dat klanten herkennen en vertrouwen.",
+    funFact:
+      "Microsoft testte tientallen tinten blauw voor één linkkleur in Bing. De winnaar leverde tientallen miljoenen extra op. Kleur is geen smaak, kleur is omzet.",
+    funFactSource: "Daarom strategie én uitvoering",
+    funFactStat: "40",
+    principles: [
+      {
+        title: "Positionering vóór pixels",
+        body: "Wie ben je voor wie, en waarom jij en niet de concurrent? Dat bepaalt toon, kleur en beeld. Pas daarna logo, typo en templates. Geen mooi plaatje zonder verhaal.",
+      },
+      {
+        title: "Eén merk, alle kanalen",
+        body: "Je site kan strak zijn terwijl je ads nog 'oud' aanvoelen. Of omgekeerd. Ik zet richtlijnen neer die op site, mail, social en campagnes werken. BestRest en SkinComplete hebben elk een eigen wereld, geen copy-paste.",
+      },
+      {
+        title: "Guidelines die je team snapt",
+        body: "Geen 80-pagina PDF die niemand leest. Wel kleur, typo, beeldstijl en componenten die je team en partners direct kunnen toepassen. In Figma, klaar voor web en ads.",
+      },
+    ],
+    lens: "Branding is geen logo-ontwerp in isolatie. Het is hoe klanten je herkennen op de productpagina, in de nieuwsbrief en in de Google Ads die ze terugzien. Ik verbind merkstrategie met wat er écht live gaat, zodat je niet twee keer betaalt voor hetzelfde gevoel.",
+    approachSteps: [
+      {
+        title: "Positionering & onderscheid",
+        body: "Wie is je klant, wat belooft je merk, en waar wijk je af van alternatieven? We maken dat concreet voordat er kleur op papier komt.",
+      },
+      {
+        title: "Visuele identiteit",
+        body: "Logo, kleurpalet, typografie, beeldstijl en tone of voice. Alles getest op leesbaarheid, contrast en hoe het voelt op mobiel.",
+      },
+      {
+        title: "Templates & componenten",
+        body: "Social formats, ad-templates, e-mail headers en web-componenten. Herhaalbaar, zodat je team consistent blijft zonder elke keer opnieuw te bedenken.",
+      },
+      {
+        title: "Live en door",
+        body: "Guidelines overdragen, afstemmen met web en campagnes. Zo blijft je merk één geheel na launch, niet twee parallelle werelden.",
+      },
+    ],
+    capabilities: [
+      "Positionering",
+      "Logo & huisstijl",
+      "Figma templates",
+      "Ad-ready",
+      "Tone of voice",
+      "Guidelines",
+      "Web + campagnes",
+    ],
+    outcomes: [
+      {
+        title: "Positionering die onderscheidt",
+        detail:
+          "Duidelijk verhaal: wie je bent, voor wie, en waarom jij. Geen vage missie, wel keuzes die doorwerken in copy, design en campagnes.",
+      },
+      {
+        title: "Huisstijl op alle kanalen",
+        detail:
+          "Site, Google Ads, Meta Ads, mail en social voelen als één merk. Geen oude banner naast een nieuwe homepage.",
+      },
+      {
+        title: "Guidelines die blijven werken",
+        detail:
+          "Je team en partners weten welke kleur, welke font en welk beeld. Zonder elke keer jou te mailen voor 'even snel het logo'.",
+      },
+    ],
+    heroStats: [
+      { label: "Aanpak", value: "Strategie eerst" },
+      { label: "Deliverable", value: "Figma + guide" },
+      { label: "Focus", value: "Herkenning" },
     ],
   },
 };

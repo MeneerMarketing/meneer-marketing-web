@@ -231,16 +231,21 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   branding: {
     outcomes: [
-      "Positionering die onderscheidt én verkoopt",
-      "Huisstijl die op site, mail en ads werkt",
-      "Guidelines die partners en team kunnen volgen",
+      "Positionering die onderscheidt én verkoopt, niet alleen mooi klinkt",
+      "Huisstijl die op site, Google Ads, Meta Ads en mail consistent is",
+      "Guidelines en templates die je team zelf kan toepassen",
     ],
     faq: [
       Q.start,
       {
         question: "Leveren jullie alleen strategy of ook uitvoering?",
         answer:
-          "Beide: van merkstory tot visuele templates. Afgestemd op je development- en campagneproces.",
+          "Beide: van merkstory tot visuele templates in Figma. Afgestemd op je web-build en campagneproces, zodat alles één geheel wordt.",
+      },
+      {
+        question: "Moet ik al een logo hebben?",
+        answer:
+          "Nee. Soms hergebruiken we wat werkt, soms breken we bewust met het oude. We beginnen bij positionering, niet bij 'even een icoon'.",
       },
       Q.remote,
     ],

@@ -6,6 +6,7 @@ import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
 import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
 import { HeroPortalWindow } from "@/components/diensten/premium/HeroPortalWindow";
 import { HeroShopifyWindow } from "@/components/diensten/premium/HeroShopifyWindow";
+import { HeroBrandWindow } from "@/components/diensten/premium/HeroBrandWindow";
 import { HeroSpeedWindow } from "@/components/diensten/premium/HeroSpeedWindow";
 import { HeroUxWindow } from "@/components/diensten/premium/HeroUxWindow";
 import { OutcomeSwitchboard } from "@/components/diensten/premium/OutcomeSwitchboard";
@@ -135,6 +136,8 @@ export function DienstPremiumView({
               <HeroSpeedWindow />
             ) : premium.heroVisual === "ux" ? (
               <HeroUxWindow />
+            ) : premium.heroVisual === "brand" ? (
+              <HeroBrandWindow />
             ) : (
               <HeroBuildWindow />
             )}

@@ -128,12 +128,12 @@ const CONTENT = {
     ],
   ),
   branding: body(
-    "Je merk is meer dan een logo: het is toon, typografie, kleur en hoe klanten je herkennen in ads, site en mail. Ik zet merkstrategie en huisstijl neer die verkopen én schaal geven.",
+    "Je merk is meer dan een logo: het is toon, typografie, kleur en hoe klanten je herkennen in Google Ads, Meta Ads, site en mail. Ik zet merkstrategie en huisstijl neer die verkopen én schaal geven.",
     [
       "Positionering en onderscheid ten opzichte van concurrenten",
-      "Kleuren, type, beeldstijl en componenten voor alle kanalen",
-      "Brand guidelines die je team en partners kunnen volgen",
-      "Afstemming met web en campagnes. Geen los PDF-boekje",
+      "Kleuren, type, beeldstijl en componenten voor site, ads en mail",
+      "Brand guidelines en Figma-templates die je team en partners volgen",
+      "Afstemming met web en campagnes. Geen los PDF-boekje in een la",
     ],
   ),
   webdesign: body(

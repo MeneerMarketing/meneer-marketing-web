@@ -161,6 +161,20 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
       body: "Nieuwe huisstijl, nieuwe propositie, één consistente UI over web en campagnes. Design system-light zodat elke pagina hetzelfde merk spreekt.",
     },
   ],
+  branding: [
+    {
+      title: "Site en ads voelen anders",
+      body: "Je homepage is strak, je Meta Ads nog uit 2019. Dan trekken we één lijn: kleur, typo en beeld over alle kanalen.",
+    },
+    {
+      title: "B2B zonder saai te worden",
+      body: "Professional hoeft niet grijs en generiek. BestRest en SkinComplete hebben elk een eigen wereld die vertrouwen uitstraalt in hun niche.",
+    },
+    {
+      title: "Rebrand met live site",
+      body: "Nieuwe identiteit terwijl je doorverkoopt. We plannen rollout zodat web, mail en campagnes niet wekenlang uit elkaar lopen.",
+    },
+  ],
 };
 
 const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
@@ -323,9 +337,9 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   branding: {
     deepTitle: "Branding: onderscheid dat ook in Figma en ads werkt",
     deepLead:
-      "Positionering is geen woordenlijst. Het is keuzes in toon, kleur en vorm die overal terugkomen. Ik vertaal strategie naar richtlijnen die je team en partners kunnen volgen.",
+      "Positionering is geen woordenlijst. Het is keuzes in toon, kleur en vorm die overal terugkomen. Ik vertaal strategie naar richtlijnen die je team, partners en campagnes kunnen volgen.",
     deepExtended:
-      "Zo voorkom je dat je site strak is maar je ads nog ‘oud’ aanvoelen. Of omgekeerd. Eenheid bouwt vertrouwen, vooral bij hogere tickets of B2B.",
+      "Zo voorkom je dat je site strak is maar je Google Ads of Meta Ads nog 'oud' aanvoelen. Eenheid bouwt vertrouwen, vooral bij hogere tickets, B2B of premium producten zoals bij BestRest en SkinComplete.",
     signals: [
       "Wie zijn je echte alternatieven in het hoofd van de klant?",
       "Welke emotie of belofte moet je merk dragen (rust, energie, autoriteit)?",
