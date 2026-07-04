@@ -119,6 +119,20 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
       body: "Je wilt portals, koppelingen of checkout op maat. In Shopify kan het, als je iemand hebt die het platform écht kent.",
     },
   ],
+  "web-apps": [
+    {
+      title: "B2B-portaal voor je klanten",
+      body: "Salons, dealers of partners loggen in en bestellen zelf. SkinComplete deed het zo: custom in Shopify, 24/7, zonder mailtjes en Excel.",
+    },
+    {
+      title: "Boekingsapp met agenda",
+      body: "Hills Pilates: klanten boeken lessen in de app, het team ziet alles op één plek. Website, e-mail en app die samenwerken.",
+    },
+    {
+      title: "Interne tool die adoptie haalt",
+      body: "Je team gebruikt het echt, omdat flows kloppen en schermen logisch zijn. Geen project dat na launch in een la verdwijnt.",
+    },
+  ],
 };
 
 const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
@@ -149,16 +163,16 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     ],
   },
   "web-apps": {
-    deepTitle: "Web-apps: productdenken in plaats van eenmalig project",
+    deepTitle: "Webapps & portalen from scratch: productdenken, geen eenmalig project",
     deepLead:
-      "Portals, tools en interne apps falen als ze alleen ‘mooi gebouwd’ zijn maar niet aansluiten op rollen, rechten en datastromen. Ik map jouw gebruikers, edge cases en integraties voordat we UI polish doen.",
+      "Portals en apps falen als ze alleen mooi gebouwd zijn maar niet aansluiten op rollen, rechten en datastromen. Bij SkinComplete zien salons andere prijzen dan jij. Bij Hills Pilates boeken klanten alleen hun eigen lessen. Dat map ik voordat er design is.",
     deepExtended:
-      "Technisch kies ik wat past bij jouw team: Next.js, auth-providers, API-stijl. Business-wise vertaal ik het naar schermen die vertrouwen geven en stappen die logisch zijn. Zodat adoptie niet stokt na launch.",
+      "Technisch bouw ik in Next.js met nette auth en API's. Business-wise vertaal ik het naar schermen die vertrouwen geven en stappen die logisch zijn. Zodat je team en klanten het echt gebruiken na launch, niet alleen bij de demo.",
     signals: [
-      "Welke rollen doen wat. En welke data mogen ze zien?",
-      "Moet de app offline-kunnen, realtime, of batch synchroniseren?",
-      "Welke legacy-systemen blijven even staan. En hoe koppelen we veilig?",
-      "Wat is je definitie van ‘succes’ na 90 dagen?",
+      "Welke rollen doen wat, en welke data mogen ze zien?",
+      "Moet het realtime, batch of offline kunnen werken?",
+      "Welke systemen blijven even staan, en hoe koppelen we veilig?",
+      "Wat is succes na 90 dagen: adoptie, minder handwerk, meer omzet?",
     ],
   },
   optimalisatie: {

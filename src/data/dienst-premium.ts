@@ -21,7 +21,7 @@ export interface DienstPremiumScaleCallout {
 
 export interface DienstPremiumContent {
   /** Welke hero-illustratie rechts in de hero */
-  heroVisual?: "build" | "shopify";
+  heroVisual?: "build" | "shopify" | "portal";
   /** Korte onderregel met punch in de hero */
   heroKicker: string;
   /** Onverwacht feitje of harde waarheid */
@@ -193,6 +193,79 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       title: "Al Shopify? Tijd om op te schalen.",
       body: "Je shop draait al, maar groeit niet meer mee. Theme, snelheid of campagnes remmen. Via Schaal op kijken we waar jouw grootste hefboom zit en bouwen we daaromheen.",
     },
+  },
+  "web-apps": {
+    heroVisual: "portal",
+    heroKicker:
+      "Portals, boekingsapps en interne tools from scratch. Geen losse spreadsheet-flow, geen duct-tape tussen vijf systemen. Wel één product dat klanten en team begrijpen.",
+    funFact:
+      "De gemiddelde medewerker wisselt 9 keer per uur van app. Elke extra login is een kans om af te haken.",
+    funFactSource: "Daarom één portaal dat klopt",
+    funFactStat: "9×",
+    principles: [
+      {
+        title: "Rollen eerst, pixels daarna",
+        body: "Wie mag wat zien en doen? Dat bepaalt elk scherm. SkinComplete salons zien andere prijzen dan jij. Hills Pilates klanten boeken alleen hun eigen lessen. Dat map ik voordat er design is.",
+      },
+      {
+        title: "Koppelingen zonder spaghetti",
+        body: "Shopify, CRM, e-mail, boekhouding: alles praat met elkaar via nette API's. Geen copy-paste tussen tabbladen. Geen 'even exporteer ik het wel'.",
+      },
+      {
+        title: "Product dat blijft leven",
+        body: "Een portaal is geen eenmalig project. Je team moet het snappen, data moet kloppen en nieuwe features mogen erbij zonder alles om te gooien. Daarom bouw ik alsof versie twee al gepland is.",
+      },
+    ],
+    lens: "Een portaal of app is het zenuwstelsel van je bedrijf: orders, agenda, klantdata, interne workflows. Ik bouw het from scratch zodat het meegroeit. Niet vastzit aan een template of een developer die allang weg is.",
+    approachSteps: [
+      {
+        title: "Gebruikers en flows in kaart",
+        body: "Wie logt in, wat moet die persoon kunnen, welke data hoort waar? We tekenen de keten voordat er code is.",
+      },
+      {
+        title: "Architectuur & koppelingen",
+        body: "Next.js, auth, database, API's naar Shopify of je CRM. Alles typed, alles gedocumenteerd. Jij snapt waar data leeft.",
+      },
+      {
+        title: "Bouwen in sprints",
+        body: "Eerst de kernflow live (inloggen, bestellen, boeken). Daarna uitbreiden. Je ziet elke week vooruitgang, geen maanden zwarte doos.",
+      },
+      {
+        title: "Live, meten, doorontwikkelen",
+        body: "Na launch meten we adoptie: gebruikt je team het, boeken klanten, lekt er data? Documentatie en een roadmap voor wat logisch volgt.",
+      },
+    ],
+    capabilities: [
+      "From scratch",
+      "B2B-portalen",
+      "Boekingsapps",
+      "Rollen & auth",
+      "API-koppelingen",
+      "Next.js",
+      "Adoptie-proof",
+    ],
+    outcomes: [
+      {
+        title: "B2B-portaal dat salons zelf laat bestellen",
+        detail:
+          "SkinComplete: salons loggen in, zien hun prijzen en bestellen 24/7. Geen mailtjes meer, geen Excel. Custom gebouwd in Shopify, klaar om te schalen.",
+      },
+      {
+        title: "App met agenda en boekingen",
+        detail:
+          "Hills Pilates: website, e-mailmarketing en een eigen app met agenda. Klanten boeken zelf, het team ziet alles op één plek.",
+      },
+      {
+        title: "Koppelingen die blijven werken",
+        detail:
+          "Orders, klantdata en e-mailflows lopen door dezelfde bron van waarheid. Minder handwerk, minder fouten, meer rust in je team.",
+      },
+    ],
+    heroStats: [
+      { label: "Aanpak", value: "Portaal · from scratch" },
+      { label: "Stack", value: "Next.js · typed" },
+      { label: "Cases", value: "SC · Hills Pilates" },
+    ],
   },
 };
 

@@ -38,12 +38,12 @@ const CONTENT = {
     ],
   ),
   "web-apps": body(
-    "Soms is een site te kort door de bocht: je wilt portals, calculators, ledenomgevingen of interne tools. Met React en Next.js lever ik web-apps die voelen als product: snel, typed en klaar om te koppelen aan je bestaande stack.",
+    "Soms is een website te kort door de bocht. Je wilt een B2B-portaal waar klanten zelf bestellen, een boekingsapp met agenda, of een interne tool die je team echt gebruikt. Ik bouw webapps en portalen from scratch in Next.js: typed, snel en klaar om te koppelen aan Shopify, je CRM of e-mail.",
     [
-      "Auth, rollen en datastromen die passen bij jouw organisatie",
-      "Koppelingen met je andere systemen (CRM, Shopify, automatisering) netjes opgezet",
-      "UI die conversie en vertrouwen combineert. Geen engineer-only schermen",
-      "Deploy en monitoring zoals je van een serieuze stack verwacht",
+      "Rollen en rechten die kloppen: salon, admin, klant. Ieder ziet wat hij mag zien",
+      "Koppelingen met Shopify, CRM en automatisering zonder copy-paste tussen tabbladen",
+      "UI die vertrouwen geeft. Geen engineer-only schermen waar niemand mee wil werken",
+      "Documentatie en overdracht: je zit niet vast aan obscure code of een developer die weg is",
     ],
   ),
   optimalisatie: body(

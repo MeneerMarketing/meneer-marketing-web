@@ -4,6 +4,7 @@ import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
 import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
+import { HeroPortalWindow } from "@/components/diensten/premium/HeroPortalWindow";
 import { HeroShopifyWindow } from "@/components/diensten/premium/HeroShopifyWindow";
 import { OutcomeSwitchboard } from "@/components/diensten/premium/OutcomeSwitchboard";
 import {
@@ -137,6 +138,8 @@ export function DienstPremiumView({
           <div className="relative hidden lg:block">
             {premium.heroVisual === "shopify" ? (
               <HeroShopifyWindow />
+            ) : premium.heroVisual === "portal" ? (
+              <HeroPortalWindow />
             ) : (
               <HeroBuildWindow />
             )}

@@ -56,16 +56,26 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   "web-apps": {
     outcomes: [
-      "React/Next-apps met duidelijke auth, rollen en datastromen",
-      "API’s en integraties zonder onnodige complexiteit",
-      "UI die vertrouwen en conversie combineert",
+      "B2B-portaal of boekingsapp from scratch, gebouwd voor jouw rollen en flows",
+      "Koppelingen met Shopify, CRM en e-mail zonder spaghetti tussen systemen",
+      "Adoptie-proof: je team en klanten snappen het zonder handleiding van tien pagina's",
     ],
     faq: [
       Q.start,
       {
+        question: "Wat is het verschil met een gewone website?",
+        answer:
+          "Een website informeert. Een portaal of app laat mensen inloggen, data zien en acties uitvoeren: bestellen, boeken, status volgen. Dat vraagt auth, rollen en vaak koppelingen met je andere systemen.",
+      },
+      {
         question: "Kunnen jullie koppelen met onze bestaande CRM of ERP?",
         answer:
-          "Ja, via REST/GraphQL, webhooks of integratieplatformen. Altijd met aandacht voor idempotentie en foutafhandeling.",
+          "Ja. Via API's, webhooks of integratieplatformen. Altijd met aandacht voor foutafhandeling en één bron van waarheid voor je data.",
+      },
+      {
+        question: "Hebben jullie voorbeelden van portalen die jullie bouwden?",
+        answer:
+          "SkinComplete: B2B-portaal in Shopify waar salons zelf bestellen. Hills Pilates: website plus app met agenda en boekingen. Beide from scratch, beide gebouwd om mee te groeien.",
       },
       Q.meet,
     ],

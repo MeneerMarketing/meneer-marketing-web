@@ -108,11 +108,11 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         href: "/diensten/shopify-enterprise",
       },
       {
-        name: "Custom Web-Applicaties",
-        description: "Portalen en SaaS-interfaces",
+        name: "Webapps & portalen from scratch",
+        description: "B2B-portalen, boekingsapps en interne tools",
         menuLabel: "Webapps & portalen",
         menuDescription:
-          "Webapps en portalen: UX strak, koppelingen strak en onderhoudbaar gebouwd.",
+          "Portals en apps from scratch: rollen, koppelingen en UX die je team echt gebruikt.",
         href: "/diensten/web-apps",
       },
       {
