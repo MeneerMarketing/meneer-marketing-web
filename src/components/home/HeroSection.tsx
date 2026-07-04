@@ -41,7 +41,7 @@ export function HeroSection() {
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <LiquidCTA href={siteCtas.groeiscan.href} label="Doe de Groeiscan" />
+            <LiquidCTA href={siteCtas.startIntake.href} label="Plan een gesprek" />
             <Magnetic strength={10} radius={160}>
               <Link
                 href={HERO_SECONDARY.href}
@@ -66,21 +66,21 @@ export function HeroSection() {
             </Magnetic>
           </div>
 
-          <dl className="mt-14 flex flex-wrap gap-x-10 gap-y-5 border-t border-slate-200 pt-8 text-sm tracking-tight sm:gap-x-14 lg:gap-x-16">
-            <div className="shrink-0">
+          <dl className="mt-14 grid grid-cols-3 gap-2 border-t border-slate-200 pt-8 text-xs tracking-tight sm:gap-6 sm:text-sm">
+            <div className="min-w-0">
               <dt className="text-slate-500">Focus</dt>
-              <dd className="mt-1 font-bold text-slate-900">Snelheid &amp; schaal</dd>
+              <dd className="mt-1 font-bold leading-snug text-slate-900">Snel · schaal</dd>
             </div>
-            <div className="shrink-0">
+            <div className="min-w-0">
               <dt className="text-slate-500">Stack</dt>
-              <dd className="mt-1 font-bold text-slate-900">
-                <span className="whitespace-nowrap">Shopify · Custom build · Next.js</span>
+              <dd className="mt-1 font-bold leading-snug text-slate-900">
+                Shopify · Next.js
               </dd>
             </div>
-            <div className="shrink-0">
+            <div className="min-w-0">
               <dt className="text-slate-500">Aanpak</dt>
-              <dd className="mt-1 whitespace-nowrap font-bold text-slate-900">
-                Nuchter &amp; direct
+              <dd className="mt-1 font-bold leading-snug text-slate-900">
+                Nuchter · direct
               </dd>
             </div>
           </dl>

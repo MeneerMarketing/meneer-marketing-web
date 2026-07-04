@@ -21,17 +21,17 @@ export function ContactIndexCta() {
           <p className="mx-auto mt-4 max-w-xl text-slate-400">{CONTACT_CTA.body}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:bg-orange-600"
             >
-              {siteCtas.groeiscan.label}
+              Plan een gesprek
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
             <Link
-              href={siteCtas.startIntake.href}
+              href={siteCtas.projectStarten.href}
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-4 text-sm font-bold text-white transition hover:border-white/30"
             >
-              {siteCtas.startIntake.label}
+              {siteCtas.projectStarten.label}
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
           </div>

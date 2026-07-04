@@ -1,7 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { CaseSceneIllustration } from "@/components/home/cases/CaseSceneIllustration";
+import { CaseServiceGrid } from "@/components/home/cases/CaseServiceGrid";
+import { CaseStoryRail } from "@/components/home/cases/CaseStoryRail";
 import { Reveal } from "@/components/effects/Reveal";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -64,18 +66,45 @@ export default function CasesPage() {
                   <li id={c.id}>
                     <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_24px_56px_-32px_rgba(15,23,42,0.12)]">
                       <div className="grid lg:grid-cols-2 lg:items-stretch">
-                        <div className="border-b border-slate-100 bg-slate-50/50 p-6 sm:p-8 lg:border-b-0 lg:border-r">
-                          <CaseSceneIllustration
-                            scene={c.scene}
-                            accent={c.accent}
-                            className="mx-auto w-full max-w-md"
-                          />
+                        <div className="flex min-h-[420px] flex-col border-b border-slate-100 lg:min-h-[520px] lg:border-b-0 lg:border-r">
+                          <div
+                            className="flex flex-1 items-center justify-center p-6 sm:p-8"
+                            style={{ backgroundColor: c.palette.surface }}
+                          >
+                            <CaseSceneIllustration
+                              scene={c.scene}
+                              accent={c.palette.accent}
+                              deep={c.palette.deep}
+                              className="mx-auto w-full max-w-md"
+                            />
+                          </div>
+                          <CaseServiceGrid services={c.services} palette={c.palette} />
+                          {c.website ? (
+                            <a
+                              href={c.website.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center justify-between gap-3 border-t border-slate-200/80 px-5 py-4 text-sm font-bold transition hover:bg-slate-50"
+                              style={{ color: c.palette.deep }}
+                            >
+                              <span>
+                                Bekijk live:{" "}
+                                <span style={{ color: c.palette.accent }}>
+                                  {c.website.hostname}
+                                </span>
+                              </span>
+                              <ExternalLink className="size-4 shrink-0 opacity-60" aria-hidden />
+                            </a>
+                          ) : null}
                         </div>
 
                         <div className="flex flex-col p-6 sm:p-8 lg:p-10">
                           <span
-                            className="inline-flex w-fit rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white"
-                            style={{ backgroundColor: c.accent }}
+                            className="inline-flex w-fit rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider"
+                            style={{
+                              backgroundColor: c.palette.accent,
+                              color: c.palette.onAccent,
+                            }}
                           >
                             {c.eyebrow}
                           </span>
@@ -86,28 +115,7 @@ export default function CasesPage() {
                             {c.body}
                           </p>
 
-                          <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                            {[
-                              { label: "Uitdaging", text: c.challenge },
-                              { label: "Onze aanpak", text: c.move },
-                              { label: "Resultaat", text: c.result },
-                            ].map((block) => (
-                              <div
-                                key={block.label}
-                                className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4"
-                              >
-                                <p
-                                  className="text-[10px] font-bold uppercase tracking-[0.14em]"
-                                  style={{ color: c.accent }}
-                                >
-                                  {block.label}
-                                </p>
-                                <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                                  {block.text}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
+                          <CaseStoryRail caseItem={c} palette={c.palette} />
 
                           <ul className="mt-6 flex flex-wrap gap-2">
                             {c.tags.map((tag) => (
@@ -122,7 +130,10 @@ export default function CasesPage() {
 
                           <div className="mt-auto flex items-end justify-between gap-4 border-t border-slate-100 pt-6">
                             <div>
-                              <p className="text-3xl font-black tracking-tight text-slate-900">
+                              <p
+                                className="text-3xl font-black tracking-tight"
+                                style={{ color: c.palette.accent }}
+                              >
                                 {c.metric}
                               </p>
                               <p className="mt-1 text-sm text-slate-500">{c.metricHint}</p>
@@ -149,10 +160,10 @@ export default function CasesPage() {
                 commercieel sterk.
               </p>
               <Link
-                href={siteCtas.groeiscan.href}
+                href={siteCtas.startIntake.href}
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/25 transition hover:bg-orange-600"
               >
-                Start met Groeiscan
+                Plan een gesprek
                 <ArrowUpRight className="size-4" aria-hidden />
               </Link>
             </Reveal>

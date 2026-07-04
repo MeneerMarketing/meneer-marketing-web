@@ -92,7 +92,9 @@ export function OverStorySection() {
 
             <div className="border-t border-slate-100 px-5 py-4">
               <p className="text-sm font-extrabold text-slate-900">{chapter.title}</p>
-              <p className="mt-1 text-sm italic text-[#FF5722]">{chapter.punchline}</p>
+              <p className="mt-2 inline-flex rounded-full border border-[#FF5722]/20 bg-[#FF5722]/5 px-3 py-1 text-xs font-bold text-[#FF5722]">
+                {chapter.punchline}
+              </p>
             </div>
           </div>
         </div>

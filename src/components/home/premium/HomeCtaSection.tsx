@@ -26,7 +26,7 @@ export function HomeCtaSection() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">{HOME_CTA.body}</p>
           <Link
-            href={siteCtas.groeiscan.href}
+            href={siteCtas.startIntake.href}
             className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full bg-[#FF5722] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:shadow-[#FF5722]/50"
           >
             <span
@@ -34,7 +34,7 @@ export function HomeCtaSection() {
               className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-white transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
             />
             <span className="relative z-10 transition-colors duration-300 group-hover:text-slate-900">
-              {siteCtas.groeiscan.label}
+              Plan een gesprek
             </span>
             <ArrowUpRight
               className="relative z-10 size-5 transition-colors duration-300 group-hover:text-slate-900"
@@ -42,7 +42,11 @@ export function HomeCtaSection() {
             />
           </Link>
           <p className="mt-4 text-xs text-slate-500">
-            Liever direct mailen? Vul je contactgegevens in op de Groeiscan-pagina.
+            Liever direct mailen?{" "}
+            <Link href="/contact" className="font-semibold text-slate-400 transition hover:text-white">
+              Ga naar contact
+            </Link>
+            .
           </p>
         </Reveal>
       </div>

@@ -167,5 +167,5 @@ export const CONTACT_FAQ = [
 
 export const CONTACT_CTA = {
   title: "Liever meteen scherpte?",
-  body: "De Groeiscan geeft context op prioriteit en route. Gratis, geen verplichting. Of start direct met intake als je al weet wat er moet.",
+  body: "Plan een gesprek of start een project. Geen standaardpakket, wel een eerlijk plan dat past bij jouw fase.",
 } as const;

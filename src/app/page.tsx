@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { CasesPreviewSection } from "@/components/home/CasesPreviewSection";
-import { GroeiscanSection } from "@/components/home/GroeiscanSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { HomeUspBar } from "@/components/home/HomeUspBar";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
@@ -38,7 +37,6 @@ export default function HomePage() {
         <HomeContextSection />
         <HomeGrowthRouteMap />
         <HomeSituationMatcher />
-        <GroeiscanSection />
         <HomeWorkStagesScroll />
         <CasesPreviewSection />
         <HomeProofSection />

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { OverAntiBureauSection } from "@/components/over/index/OverAntiBureauSection";
 import { OverCasesSection } from "@/components/over/index/OverCasesSection";
 import { OverDayTimeline } from "@/components/over/index/OverDayTimeline";
@@ -78,8 +77,6 @@ export default function OverPage() {
         <OverDayTimeline />
 
         <OverCasesSection />
-
-        <MeneerPeek />
 
         <OverIndexFaq />
 

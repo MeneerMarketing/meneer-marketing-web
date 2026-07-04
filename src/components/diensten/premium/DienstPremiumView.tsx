@@ -14,7 +14,6 @@ import {
 import { PrincipleScenes } from "@/components/diensten/premium/PrincipleScenes";
 import { SignalsChat } from "@/components/diensten/premium/SignalsChat";
 import { StickerStrip } from "@/components/diensten/premium/StickerStrip";
-import type { TocItem } from "@/components/diensten/premium/PageTOC";
 import type { DienstBody } from "@/data/dienst-content";
 import type { DienstExtra } from "@/data/dienst-extras";
 import type { DienstPremiumContent } from "@/data/dienst-premium";
@@ -45,16 +44,6 @@ export function DienstPremiumView({
   premium,
   artikelen = [],
 }: DienstPremiumViewProps) {
-  const tocItems: TocItem[] = [
-    { id: "hoe-ik-werk", label: "Hoe ik werk" },
-    { id: "verhaal", label: "Het verhaal" },
-    { id: "aanpak", label: "Zo pakken we het aan" },
-    { id: "intake", label: "Waar ik naar kijk" },
-    { id: "resultaten", label: "Resultaten" },
-    { id: "situaties", label: "Herken je dit?" },
-    ...(extra?.faq.length ? [{ id: "faq", label: "Veelgestelde vragen" }] : []),
-  ];
-
   return (
     <article>
       {/* Hero */}
@@ -125,11 +114,11 @@ export function DienstPremiumView({
               </Link>
             </div>
 
-            <dl className="mt-11 grid max-w-lg grid-cols-3 gap-5 border-t border-slate-200 pt-7 text-sm tracking-tight">
+            <dl className="mt-11 grid grid-cols-3 gap-3 border-t border-slate-200 pt-7 text-sm tracking-tight sm:gap-5">
               {premium.heroStats.map((stat) => (
-                <div key={stat.label}>
+                <div key={stat.label} className="min-w-0">
                   <dt className="text-slate-500">{stat.label}</dt>
-                  <dd className="mt-1 font-bold text-slate-900">{stat.value}</dd>
+                  <dd className="mt-1 font-bold leading-snug text-slate-900">{stat.value}</dd>
                 </div>
               ))}
             </dl>
@@ -154,7 +143,7 @@ export function DienstPremiumView({
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-14">
           <div className="min-w-0">
             <Reveal>
-              <p className="max-w-2xl text-balance text-xl leading-relaxed text-slate-800 sm:text-2xl sm:leading-relaxed">
+              <p className="text-balance text-xl leading-relaxed text-slate-800 sm:text-2xl sm:leading-relaxed">
                 {body.intro}
               </p>
             </Reveal>
@@ -382,7 +371,7 @@ export function DienstPremiumView({
             </section>
 
             <Reveal delay={0.05}>
-              <p className="mt-14 max-w-2xl text-lg leading-relaxed text-slate-600">
+              <p className="mt-14 text-lg leading-relaxed text-slate-600">
                 {body.closing}
               </p>
             </Reveal>
@@ -418,7 +407,6 @@ export function DienstPremiumView({
             ctaLabel={ctaNav.label}
             pillarName={dienst.pillar}
             related={related.map((r) => ({ slug: r.slug, name: r.name }))}
-            tocItems={tocItems}
             artikelen={artikelen}
           />
         </div>

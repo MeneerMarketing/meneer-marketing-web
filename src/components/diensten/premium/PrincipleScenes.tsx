@@ -273,7 +273,7 @@ function PrincipleCard({
 
       {/* De tekst */}
       <div className="flex flex-1 flex-col p-6 pt-5">
-        <h3 className="whitespace-nowrap text-[15px] font-extrabold tracking-tight text-slate-900 sm:text-base">
+        <h3 className="text-balance text-[15px] font-extrabold leading-snug tracking-tight text-slate-900 sm:text-base">
           {principle.title}
         </h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">

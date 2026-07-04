@@ -112,9 +112,9 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
     ],
     heroStats: [
-      { label: "Aanpak", value: "From scratch · custom" },
-      { label: "Snelheid", value: "Core Web Vitals groen" },
-      { label: "Beheer", value: "Zelf content aanpassen" },
+      { label: "Aanpak", value: "From scratch" },
+      { label: "Snelheid", value: "CWV groen" },
+      { label: "Beheer", value: "Zelf beheren" },
     ],
   },
   "shopify-enterprise": {
@@ -185,8 +185,8 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
     ],
     heroStats: [
-      { label: "Aanpak", value: "Theme · from scratch" },
-      { label: "Expertise", value: "Shopify · alles kan" },
+      { label: "Aanpak", value: "Theme from scratch" },
+      { label: "Expertise", value: "Shopify-expert" },
       { label: "Performance", value: "CWV per release" },
     ],
     scaleCallout: {
@@ -262,9 +262,9 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
     ],
     heroStats: [
-      { label: "Aanpak", value: "Portaal · from scratch" },
+      { label: "Aanpak", value: "From scratch" },
       { label: "Stack", value: "Next.js · typed" },
-      { label: "Cases", value: "SC · Hills Pilates" },
+      { label: "Cases", value: "SC · Hills" },
     ],
   },
 };

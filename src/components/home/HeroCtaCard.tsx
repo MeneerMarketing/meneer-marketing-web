@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, Calendar, Sparkles } from "lucide-react";
+import { ArrowUpRight, Calendar } from "lucide-react";
 import { Magnetic } from "@/components/effects/Magnetic";
 import { siteCtas } from "@/lib/cta";
 
@@ -93,18 +93,6 @@ export function HeroCtaCard() {
                 />
               </Link>
             </Magnetic>
-
-            <Link
-              href={siteCtas.groeiscan.href}
-              className="group inline-flex items-center gap-2 rounded-xl px-2 py-1 text-sm font-bold tracking-tight text-white/85 transition-colors hover:text-white"
-            >
-              <Sparkles className="size-4" strokeWidth={2.4} aria-hidden />
-              Of doe eerst de Groeiscan
-              <ArrowUpRight
-                className="size-4 opacity-70 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100"
-                aria-hidden
-              />
-            </Link>
           </div>
 
           <div className="mt-8 flex items-center gap-3 border-t border-white/20 pt-5 text-[12px] font-semibold tracking-tight text-white/85">

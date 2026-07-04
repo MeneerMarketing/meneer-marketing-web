@@ -6,8 +6,8 @@ export const OVER_HERO = {
   aside:
     "Fun fact: de gemiddelde ondernemer werkt met drie tot vijf partijen voor website, ads en SEO. Dan praat niemand met elkaar en betaal je dubbel.",
   stats: [
-    { label: "Aanpak", value: "Plan én uitvoering" },
-    { label: "Hoofdblokken", value: "5" },
+    { label: "Aanpak", value: "Plan + uitvoer" },
+    { label: "Blokken", value: "5" },
     { label: "Humor", value: "Inbegrepen" },
   ],
 } as const;

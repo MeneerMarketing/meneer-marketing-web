@@ -151,7 +151,7 @@ export function OverStackExplorer() {
             >
               <p className="text-lg font-extrabold text-white">{item.label}</p>
               <p className="mt-3 text-base leading-relaxed text-slate-300">{item.body}</p>
-              <p className="mt-4 inline-flex items-center gap-2 text-sm font-bold italic text-[#FF5722]">
+              <p className="mt-4 inline-flex rounded-full border border-[#FF5722]/25 bg-[#FF5722]/10 px-3 py-1 text-xs font-bold text-[#FF5722]">
                 {item.quip}
               </p>
             </motion.div>

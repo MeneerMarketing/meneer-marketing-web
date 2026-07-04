@@ -3,7 +3,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { PageTOC, type TocItem } from "@/components/diensten/premium/PageTOC";
 
 export interface SidebarRelatedItem {
   slug: string;
@@ -21,33 +20,21 @@ interface PremiumSidebarProps {
   ctaLabel: string;
   pillarName: string;
   related: SidebarRelatedItem[];
-  tocItems: TocItem[];
   artikelen?: SidebarArtikel[];
 }
 
-/** Lichte sticky sidebar: inhoudsopgave met scroll-spy, CTA en gerelateerde links. */
+/** Lichte sticky sidebar: CTA, gerelateerde links en kennisbank. */
 export function PremiumSidebar({
   ctaHref,
   ctaLabel,
   pillarName,
   related,
-  tocItems,
   artikelen = [],
 }: PremiumSidebarProps) {
   const reduce = useReducedMotion();
 
   return (
     <aside className="mt-12 min-w-0 space-y-5 lg:mt-0 lg:sticky lg:top-24">
-      {/* Inhoudsopgave met live scroll-indicator */}
-      <div className="hidden rounded-3xl border border-slate-200 bg-white p-5 shadow-sm lg:block">
-        <p className="px-3 text-xs font-bold uppercase tracking-wider text-slate-400">
-          Op deze pagina
-        </p>
-        <div className="mt-3">
-          <PageTOC items={tocItems} />
-        </div>
-      </div>
-
       {/* CTA */}
       <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
         <div

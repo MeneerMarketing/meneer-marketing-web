@@ -226,15 +226,15 @@ export function HomeWorkStagesScroll() {
               Klaar om dit traject voor jouw bedrijf te starten?
             </p>
             <p className="mt-1 text-sm text-slate-400">
-              Begin met de Groeiscan of plan direct een intake. Geen verplichtingen.
+              Plan direct een intake. Geen verplichtingen.
             </p>
           </div>
           <div className="flex w-full shrink-0 flex-col gap-2 sm:w-auto sm:flex-row">
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FF5722] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/25 transition hover:bg-orange-600"
             >
-              {siteCtas.groeiscan.label}
+              {siteCtas.startIntake.label}
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
             <Link

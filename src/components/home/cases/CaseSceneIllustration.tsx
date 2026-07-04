@@ -6,32 +6,34 @@ import type { CaseSceneId } from "@/data/home-cases";
 interface CaseSceneIllustrationProps {
   scene: CaseSceneId;
   accent: string;
+  deep?: string;
   className?: string;
 }
 
 export function CaseSceneIllustration({
   scene,
   accent,
+  deep = "#0F172A",
   className,
 }: CaseSceneIllustrationProps) {
   const reduce = useReducedMotion();
 
   return (
     <svg
-      viewBox="0 0 400 260"
+      viewBox="0 0 400 280"
       className={className}
       aria-hidden
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       {scene === "skincomplete" && (
-        <SkinCompleteScene accent={accent} reduce={!!reduce} />
+        <SkinCompleteScene accent={accent} deep={deep} reduce={!!reduce} />
       )}
       {scene === "bestrest" && (
-        <BestRestScene accent={accent} reduce={!!reduce} />
+        <BestRestScene accent={accent} deep={deep} reduce={!!reduce} />
       )}
       {scene === "hills-pilates" && (
-        <HillsPilatesScene accent={accent} reduce={!!reduce} />
+        <HillsPilatesScene accent={accent} deep={deep} reduce={!!reduce} />
       )}
     </svg>
   );
@@ -39,122 +41,149 @@ export function CaseSceneIllustration({
 
 function SkinCompleteScene({
   accent,
+  deep,
   reduce,
 }: {
   accent: string;
+  deep: string;
   reduce: boolean;
 }) {
   return (
     <>
-      <rect x="20" y="24" width="360" height="212" rx="12" fill="#0F172A" />
-      <rect x="20" y="24" width="360" height="28" rx="12" fill="#1E293B" />
-      <circle cx="36" cy="38" r="4" fill="#EF4444" opacity="0.8" />
-      <circle cx="48" cy="38" r="4" fill="#FBBF24" opacity="0.8" />
-      <circle cx="60" cy="38" r="4" fill="#22C55E" opacity="0.8" />
-      <text x="200" y="42" textAnchor="middle" fill="#64748B" fontSize="10" fontFamily="monospace">
-        B2B-portaal · SEO · Ads
+      <rect x="16" y="16" width="368" height="248" rx="14" fill={deep} />
+      <rect x="16" y="16" width="368" height="32" rx="14" fill={accent} opacity="0.85" />
+      <circle cx="32" cy="32" r="4" fill="#FEFCFC" opacity="0.5" />
+      <circle cx="44" cy="32" r="4" fill="#FEFCFC" opacity="0.35" />
+      <circle cx="56" cy="32" r="4" fill="#FEFCFC" opacity="0.35" />
+      <text x="200" y="36" textAnchor="middle" fill="#FEFCFC" fontSize="10" fontWeight="700" fontFamily="system-ui">
+        skincomplete.eu · B2B-portaal
       </text>
 
-      <rect x="36" y="64" width="150" height="156" rx="8" fill="#1E293B" />
-      <text x="48" y="84" fill="#94A3B8" fontSize="9" fontWeight="700">
+      <rect x="32" y="60" width="160" height="188" rx="10" fill={`${accent}33`} stroke={accent} strokeWidth="1" />
+      <text x="48" y="82" fill="#F5F0EA" fontSize="9" fontWeight="800" fontFamily="system-ui">
         SALON PORTAAL
       </text>
-      <rect x="48" y="94" width="126" height="10" rx="4" fill="#334155" />
-      <rect x="48" y="112" width="126" height="10" rx="4" fill="#334155" />
-      <rect x="48" y="136" width="126" height="22" rx="6" fill={accent} />
-      <text x="111" y="151" textAnchor="middle" fill="white" fontSize="9" fontWeight="700">
+      <rect x="48" y="92" width="128" height="10" rx="3" fill="#F5F0EA" opacity="0.2" />
+      <rect x="48" y="108" width="128" height="10" rx="3" fill="#F5F0EA" opacity="0.15" />
+      <rect x="48" y="132" width="128" height="28" rx="8" fill={accent} />
+      <text x="112" y="150" textAnchor="middle" fill="#FEFCFC" fontSize="10" fontWeight="800" fontFamily="system-ui">
         Bestellen
       </text>
-      {["SEO", "E-mail", "UGC"].map((label, i) => (
-        <g key={label}>
-          <rect x={48 + i * 42} y={172} width="36" height="36" rx="6" fill="#334155" />
-          <text x={66 + i * 42} y="194" textAnchor="middle" fill={accent} fontSize="7" fontWeight="700">
-            {label}
-          </text>
-        </g>
-      ))}
 
-      <rect x="200" y="64" width="164" height="156" rx="8" fill="white" opacity="0.95" />
-      <text x="216" y="84" fill="#0F172A" fontSize="9" fontWeight="800">
-        KANALEN
+      <rect x="208" y="60" width="160" height="88" rx="10" fill="#F5F0EA" opacity="0.95" />
+      <text x="224" y="82" fill={deep} fontSize="9" fontWeight="800" fontFamily="system-ui">
+        SEO · stijgende lijn
       </text>
-      {[
-        { label: "Google Ads", y: 96 },
-        { label: "Meta Ads", y: 128 },
-        { label: "Influencers", y: 160 },
-      ].map((row, i) => (
+      <motion.polyline
+        points="224,130 248,118 272,122 296,98 320,88 352,72"
+        stroke={accent}
+        strokeWidth="2.5"
+        fill="none"
+        strokeLinecap="round"
+        initial={reduce ? false : { pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      />
+
+      <rect x="208" y="156" width="76" height="92" rx="10" fill="#F5F0EA" opacity="0.95" />
+      <text x="220" y="176" fill={deep} fontSize="8" fontWeight="800" fontFamily="system-ui">
+        E-mail
+      </text>
+      <rect x="220" y="184" width="52" height="8" rx="2" fill={accent} opacity="0.3" />
+      <rect x="220" y="198" width="40" height="8" rx="2" fill={accent} opacity="0.2" />
+      <motion.circle
+        cx="252"
+        cy="228"
+        r="6"
+        fill={accent}
+        animate={reduce ? undefined : { opacity: [0.4, 1, 0.4] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      />
+
+      <rect x="292" y="156" width="76" height="92" rx="10" fill="#F5F0EA" opacity="0.95" />
+      <text x="304" y="176" fill={deep} fontSize="8" fontWeight="800" fontFamily="system-ui">
+        UGC
+      </text>
+      <rect x="304" y="186" width="52" height="36" rx="6" fill={deep} opacity="0.15" />
+      <circle cx="330" cy="204" r="8" stroke={accent} strokeWidth="1.5" fill="none" />
+
+      {["G", "M"].map((label, i) => (
         <motion.g
-          key={row.label}
-          initial={reduce ? false : { opacity: 0, x: 8 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2 + i * 0.12 }}
+          key={label}
+          initial={reduce ? false : { opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 + i * 0.1 }}
         >
-          <rect x="216" y={row.y} width="132" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0" />
-          <circle cx="228" cy={row.y + 12} r="4" fill={accent} />
-          <text x="240" y={row.y + 16} fill="#334155" fontSize="9" fontWeight="700">
-            {row.label}
+          <rect x={32 + i * 84} y="228" width="72" height="28" rx="8" fill={accent} opacity={0.85} />
+          <text x={68 + i * 84} y="246" textAnchor="middle" fill="#FEFCFC" fontSize="9" fontWeight="800" fontFamily="system-ui">
+            {label === "G" ? "Google Ads" : "Meta Ads"}
           </text>
         </motion.g>
       ))}
-
-      <motion.path
-        d="M 186 140 L 200 140"
-        stroke={accent}
-        strokeWidth="2"
-        strokeDasharray="4 3"
-        initial={reduce ? false : { pathLength: 0 }}
-        animate={{ pathLength: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-      />
     </>
   );
 }
 
 function BestRestScene({
   accent,
+  deep,
   reduce,
 }: {
   accent: string;
+  deep: string;
   reduce: boolean;
 }) {
   return (
     <>
-      <rect x="20" y="30" width="360" height="200" rx="12" fill="#F5F0EA" stroke="#D6C9BC" strokeWidth="1.5" />
-      <rect x="36" y="48" width="328" height="24" rx="6" fill="white" stroke="#D6C9BC" />
-      <text x="200" y="64" textAnchor="middle" fill={accent} fontSize="10" fontWeight="800">
+      <rect x="16" y="20" width="368" height="240" rx="14" fill="#FFF7ED" stroke={accent} strokeWidth="1.5" opacity="0.5" />
+      <rect x="32" y="36" width="336" height="28" rx="8" fill="white" stroke={accent} strokeWidth="1" />
+      <text x="200" y="54" textAnchor="middle" fill={accent} fontSize="11" fontWeight="800" fontFamily="system-ui">
         bestrest.nl · custom Shopify
       </text>
 
       <motion.g
-        initial={reduce ? false : { opacity: 0, y: 12 }}
+        initial={reduce ? false : { opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 180, damping: 16 }}
+        transition={{ delay: 0.15, type: "spring", stiffness: 180, damping: 16 }}
       >
-        <rect x="48" y="88" width="140" height="120" rx="8" fill="white" stroke={accent} strokeWidth="2" />
-        <text x="118" y="112" textAnchor="middle" fill={accent} fontSize="12" fontWeight="900">
+        <rect x="40" y="80" width="150" height="160" rx="10" fill="white" stroke={accent} strokeWidth="2" />
+        <text x="115" y="108" textAnchor="middle" fill={deep} fontSize="13" fontWeight="900" fontFamily="system-ui">
           Topper
         </text>
-        <rect x="68" y="124" width="100" height="8" rx="2" fill="#E8DFD4" />
-        <rect x="68" y="138" width="72" height="8" rx="2" fill="#E8DFD4" />
-        <rect x="78" y="158" width="80" height="20" rx="6" fill={accent} opacity="0.2" />
-        <text x="118" y="172" textAnchor="middle" fill={accent} fontSize="8" fontWeight="700">
+        <rect x="60" y="120" width="110" height="8" rx="2" fill="#FFEDD5" />
+        <rect x="60" y="136" width="80" height="8" rx="2" fill="#FFEDD5" />
+        <rect x="70" y="158" width="90" height="24" rx="8" fill={accent} />
+        <text x="115" y="174" textAnchor="middle" fill="white" fontSize="9" fontWeight="700" fontFamily="system-ui">
           In winkelwagen
         </text>
       </motion.g>
 
-      <rect x="204" y="88" width="144" height="120" rx="8" fill="white" stroke="#D6C9BC" />
-      {["SEO", "E-mail", "Ads"].map((label, i) => (
+      <rect x="204" y="80" width="164" height="76" rx="10" fill="white" stroke="#FFEDD5" />
+      <text x="220" y="100" fill={deep} fontSize="9" fontWeight="800" fontFamily="system-ui">
+        SEO per productlijn
+      </text>
+      <motion.polyline
+        points="220,140 250,128 280,132 310,108 350,96"
+        stroke={accent}
+        strokeWidth="2"
+        fill="none"
+        initial={reduce ? false : { pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{ delay: 0.3 }}
+      />
+
+      <rect x="204" y="164" width="164" height="76" rx="10" fill="white" stroke="#FFEDD5" />
+      {["E-mail flow", "Google Ads", "Meta Ads"].map((label, i) => (
         <motion.g
           key={label}
-          initial={reduce ? false : { opacity: 0, x: 10 }}
+          initial={reduce ? false : { opacity: 0, x: 8 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.35 + i * 0.1 }}
+          transition={{ delay: 0.35 + i * 0.08 }}
         >
-          <rect x="216" y={98 + i * 34} width="120" height="26" rx="6" fill="#F5F0EA" />
-          <text x="228" y={115 + i * 34} fill={accent} fontSize="9" fontWeight="700">
+          <rect x="216" y={176 + i * 18} width="140" height="14" rx="4" fill="#FFF7ED" />
+          <text x="224" y={186 + i * 18} fill={accent} fontSize="8" fontWeight="700" fontFamily="system-ui">
             {label}
           </text>
-          <rect x="300" y={106 + i * 34} width="28" height="10" rx="3" fill={accent} opacity="0.25" />
         </motion.g>
       ))}
     </>
@@ -163,79 +192,73 @@ function BestRestScene({
 
 function HillsPilatesScene({
   accent,
+  deep,
   reduce,
 }: {
   accent: string;
+  deep: string;
   reduce: boolean;
 }) {
   return (
     <>
-      <rect x="20" y="30" width="200" height="200" rx="12" fill="#FAFAFE" stroke="#E4E0F7" strokeWidth="1.5" />
-      <text x="36" y="54" fill={accent} fontSize="10" fontWeight="800">
+      <rect x="16" y="20" width="188" height="240" rx="14" fill="#F5F0EA" stroke={accent} strokeWidth="1.5" />
+      <text x="32" y="48" fill={deep} fontSize="10" fontWeight="800" fontFamily="system-ui">
         Website
       </text>
-      <rect x="36" y="64" width="168" height="10" rx="3" fill="#E4E0F7" />
-      <rect x="36" y="82" width="120" height="8" rx="2" fill="#EDE9FE" />
-      <rect x="36" y="100" width="80" height="24" rx="6" fill={accent} opacity="0.2" />
-      <text x="76" y="116" textAnchor="middle" fill={accent} fontSize="8" fontWeight="700">
+      <rect x="32" y="58" width="156" height="10" rx="3" fill={accent} opacity="0.25" />
+      <rect x="32" y="76" width="100" height="8" rx="2" fill={accent} opacity="0.15" />
+      <rect x="32" y="96" width="88" height="26" rx="8" fill={accent} />
+      <text x="76" y="113" textAnchor="middle" fill="#FEFCFC" fontSize="9" fontWeight="700" fontFamily="system-ui">
         Boek les
       </text>
+      <text x="32" y="200" fill={accent} fontSize="9" fontWeight="700" fontFamily="system-ui">
+        E-mail flows
+      </text>
+      {[0, 1, 2].map((i) => (
+        <rect key={i} x={32 + i * 52} y={210} width="44" height="32" rx="6" fill="white" stroke={accent} strokeWidth="1" opacity={0.9} />
+      ))}
 
       <motion.g
-        initial={reduce ? false : { opacity: 0, scale: 0.92 }}
+        initial={reduce ? false : { opacity: 0, scale: 0.94 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.3, type: "spring", stiffness: 200, damping: 18 }}
+        transition={{ delay: 0.25, type: "spring", stiffness: 200, damping: 18 }}
       >
-        <rect x="236" y="30" width="144" height="200" rx="16" fill="#1E1B2E" stroke={accent} strokeWidth="2" />
-        <rect x="252" y="48" width="112" height="8" rx="4" fill="#2D2A40" />
-        <text x="308" y="72" textAnchor="middle" fill="white" fontSize="9" fontWeight="800">
+        <rect x="220" y="20" width="164" height="240" rx="18" fill={deep} stroke={accent} strokeWidth="2" />
+        <text x="302" y="48" textAnchor="middle" fill="#F5F0EA" fontSize="10" fontWeight="800" fontFamily="system-ui">
           Hills Pilates App
         </text>
-
         {["Ma", "Di", "Wo", "Do"].map((day, i) => (
           <rect
             key={day}
-            x={252 + i * 28}
-            y="84"
-            width="22"
-            height="18"
-            rx="4"
-            fill={i === 1 ? accent : "#2D2A40"}
+            x={232 + i * 34}
+            y="58"
+            width="28"
+            height="20"
+            rx="5"
+            fill={i === 1 ? accent : `${accent}44`}
           />
         ))}
-
-        {[0, 1, 2].map((i) => (
+        {[0, 1, 2, 3].map((i) => (
           <g key={i}>
-            <rect x="252" y={112 + i * 36} width="112" height="28" rx="6" fill="#2D2A40" />
-            <circle cx="264" cy={126 + i * 36} r="4" fill={accent} />
-            <rect x="274" y={120 + i * 36} width="64" height="6" rx="2" fill="#4C4868" />
+            <rect x="232" y={88 + i * 34} width="140" height="26" rx="6" fill={`${accent}33`} />
+            <circle cx="244" cy={101 + i * 34} r="4" fill={accent} />
+            <rect x="254" y={96 + i * 34} width="80" height="5" rx="2" fill="#F5F0EA" opacity="0.3" />
           </g>
         ))}
-
-        <rect x="252" y="196" width="112" height="22" rx="6" fill={accent} />
-        <text x="308" y="210" textAnchor="middle" fill="white" fontSize="8" fontWeight="700">
+        <rect x="232" y="228" width="140" height="24" rx="8" fill={accent} />
+        <text x="302" y="244" textAnchor="middle" fill="#FEFCFC" fontSize="9" fontWeight="700" fontFamily="system-ui">
           Agenda
         </text>
       </motion.g>
 
       <motion.path
-        d="M 220 120 L 236 120"
+        d="M 204 140 L 220 140"
         stroke={accent}
         strokeWidth="2"
+        strokeDasharray="4 3"
         initial={reduce ? false : { pathLength: 0 }}
         animate={{ pathLength: 1 }}
-        transition={{ delay: 0.5 }}
-      />
-      <text x="200" y="200" fill="#94A3B8" fontSize="8" fontWeight="700">
-        E-mail flows
-      </text>
-      <motion.circle
-        cx="60"
-        cy="200"
-        r="5"
-        fill={accent}
-        animate={reduce ? undefined : { opacity: [0.4, 1, 0.4] }}
-        transition={{ duration: 2, repeat: Infinity }}
+        transition={{ delay: 0.45 }}
       />
     </>
   );
