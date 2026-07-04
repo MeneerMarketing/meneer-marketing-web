@@ -3,10 +3,33 @@ import { ArrowUpRight, Route, Sparkles, TrendingUp } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { ApproachPath } from "@/components/diensten/premium/ApproachPath";
+import { HeroAdsStrategyWindow } from "@/components/diensten/premium/HeroAdsStrategyWindow";
+import { HeroAiSearchWindow } from "@/components/diensten/premium/HeroAiSearchWindow";
 import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
+import { HeroContentWindow } from "@/components/diensten/premium/HeroContentWindow";
+import { HeroCroWindow } from "@/components/diensten/premium/HeroCroWindow";
+import { HeroGoogleAdsWindow } from "@/components/diensten/premium/HeroGoogleAdsWindow";
+import { HeroGrowthPlanWindow } from "@/components/diensten/premium/HeroGrowthPlanWindow";
+import { HeroInfluencerWindow } from "@/components/diensten/premium/HeroInfluencerWindow";
+import { HeroLeadsWindow } from "@/components/diensten/premium/HeroLeadsWindow";
+import { HeroLocalWindow } from "@/components/diensten/premium/HeroLocalWindow";
+import { HeroMarketplaceWindow } from "@/components/diensten/premium/HeroMarketplaceWindow";
+import { HeroMediaAdsWindow } from "@/components/diensten/premium/HeroMediaAdsWindow";
+import { HeroMetaAdsFeedWindow } from "@/components/diensten/premium/HeroMetaAdsFeedWindow";
+import { HeroOrderChainWindow } from "@/components/diensten/premium/HeroOrderChainWindow";
 import { HeroPortalWindow } from "@/components/diensten/premium/HeroPortalWindow";
+import { HeroRetentionLtvWindow } from "@/components/diensten/premium/HeroRetentionLtvWindow";
+import { HeroReviewsWindow } from "@/components/diensten/premium/HeroReviewsWindow";
+import { HeroSeoWindow } from "@/components/diensten/premium/HeroSeoWindow";
 import { HeroShopifyWindow } from "@/components/diensten/premium/HeroShopifyWindow";
+import { HeroSocialOrganicWindow } from "@/components/diensten/premium/HeroSocialOrganicWindow";
+import { HeroTrackingWindow } from "@/components/diensten/premium/HeroTrackingWindow";
+import { HeroUgcWindow } from "@/components/diensten/premium/HeroUgcWindow";
+import { HeroAutomationNodesWindow } from "@/components/diensten/premium/HeroAutomationNodesWindow";
 import { HeroBrandWindow } from "@/components/diensten/premium/HeroBrandWindow";
+import { HeroChatRagWindow } from "@/components/diensten/premium/HeroChatRagWindow";
+import { HeroEmailFlowWindow } from "@/components/diensten/premium/HeroEmailFlowWindow";
+import { HeroMotionWindow } from "@/components/diensten/premium/HeroMotionWindow";
 import { HeroSpeedWindow } from "@/components/diensten/premium/HeroSpeedWindow";
 import { HeroUxWindow } from "@/components/diensten/premium/HeroUxWindow";
 import { OutcomeSwitchboard } from "@/components/diensten/premium/OutcomeSwitchboard";
@@ -35,6 +58,70 @@ interface DienstPremiumViewProps {
   related: DienstDetail[];
   premium: DienstPremiumContent;
   artikelen?: SidebarArtikel[];
+}
+
+function DienstHeroVisual({ visual }: { visual: NonNullable<DienstPremiumContent["heroVisual"]> }) {
+  switch (visual) {
+    case "shopify":
+      return <HeroShopifyWindow />;
+    case "portal":
+      return <HeroPortalWindow />;
+    case "speed":
+      return <HeroSpeedWindow />;
+    case "ux":
+      return <HeroUxWindow />;
+    case "brand":
+      return <HeroBrandWindow />;
+    case "motion":
+      return <HeroMotionWindow />;
+    case "seo":
+      return <HeroSeoWindow />;
+    case "ai-search":
+      return <HeroAiSearchWindow />;
+    case "local":
+      return <HeroLocalWindow />;
+    case "content":
+      return <HeroContentWindow />;
+    case "reviews":
+      return <HeroReviewsWindow />;
+    case "growth-plan":
+      return <HeroGrowthPlanWindow />;
+    case "ads-strategy":
+      return <HeroAdsStrategyWindow />;
+    case "cro":
+      return <HeroCroWindow />;
+    case "leads":
+      return <HeroLeadsWindow />;
+    case "tracking":
+      return <HeroTrackingWindow />;
+    case "google-ads":
+      return <HeroGoogleAdsWindow />;
+    case "meta-ads-feed":
+      return <HeroMetaAdsFeedWindow />;
+    case "social-organic":
+      return <HeroSocialOrganicWindow />;
+    case "ugc":
+      return <HeroUgcWindow />;
+    case "influencer":
+      return <HeroInfluencerWindow />;
+    case "marketplace":
+      return <HeroMarketplaceWindow />;
+    case "media-ads":
+      return <HeroMediaAdsWindow />;
+    case "email-flow":
+      return <HeroEmailFlowWindow />;
+    case "retention-ltv":
+      return <HeroRetentionLtvWindow />;
+    case "automation-nodes":
+      return <HeroAutomationNodesWindow />;
+    case "order-chain":
+      return <HeroOrderChainWindow />;
+    case "chat-rag":
+      return <HeroChatRagWindow />;
+    case "build":
+    default:
+      return <HeroBuildWindow />;
+  }
 }
 
 export function DienstPremiumView({
@@ -128,19 +215,7 @@ export function DienstPremiumView({
           </div>
 
           <div className="relative hidden lg:block">
-            {premium.heroVisual === "shopify" ? (
-              <HeroShopifyWindow />
-            ) : premium.heroVisual === "portal" ? (
-              <HeroPortalWindow />
-            ) : premium.heroVisual === "speed" ? (
-              <HeroSpeedWindow />
-            ) : premium.heroVisual === "ux" ? (
-              <HeroUxWindow />
-            ) : premium.heroVisual === "brand" ? (
-              <HeroBrandWindow />
-            ) : (
-              <HeroBuildWindow />
-            )}
+            <DienstHeroVisual visual={premium.heroVisual ?? "build"} />
           </div>
         </div>
       </header>
@@ -152,7 +227,7 @@ export function DienstPremiumView({
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-14">
           <div className="min-w-0">
             <Reveal>
-              <p className="text-balance text-xl leading-relaxed text-slate-800 sm:text-2xl sm:leading-relaxed">
+              <p className="text-xl leading-relaxed text-slate-800">
                 {body.intro}
               </p>
             </Reveal>

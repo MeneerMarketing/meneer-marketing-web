@@ -256,8 +256,8 @@ export function SiteHeader() {
                               <ItemIcon className="size-5" strokeWidth={1.65} />
                             </span>
                             <span className="flex min-w-0 flex-1 flex-col gap-0.5">
-                              <span className="flex items-start justify-between gap-2">
-                                <span className="line-clamp-2 text-sm font-bold leading-tight text-mm-text group-hover:text-mm-sky-deep">
+                              <span className="flex min-w-0 items-center justify-between gap-2">
+                                <span className="min-w-0 flex-1 truncate whitespace-nowrap text-sm font-bold leading-tight text-mm-text group-hover:text-mm-sky-deep">
                                   {item.menuLabel ?? item.name}
                                 </span>
                                 <ArrowUpRight

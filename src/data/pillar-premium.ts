@@ -107,7 +107,7 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
   behoud: {
     stickers: [
       "E-mail",
-      "Flows",
+      "Mailreeksen",
       "Retentie",
       "Klaviyo",
       "Automatisering",

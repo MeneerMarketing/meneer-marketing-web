@@ -11,7 +11,11 @@ const PAIN_POINTS = [
     icon: Users,
     label: "Wisselend team",
     title: "Iedere maand iemand anders aan de lijn",
-    body: "Je website bij bureau A, ads bij bureau B, SEO bij freelancer C. Niemand kent het geheel en jij bent de projectmanager.",
+    paragraphs: [
+      "Je website bij bureau A, ads bij bureau B, SEO bij freelancer C. Niemand kent het geheel en jij bent de projectmanager. In WhatsApp-groepen, niet achter je eigen werk.",
+      "Iedere partij optimaliseert z'n eigen stukje. Ads wijzen naar landingspagina's die traag zijn. SEO schrijft teksten die sales niet herkent. Content past niet bij wat Meta Ads belooft. Jij regelt wie wat doet, terwijl je bedrijf doorloopt.",
+      "Dat patroon zie ik steeds opnieuw: pas als één iemand strategie, bouw en campagnes bewaakt, gaat het echt vooruit. Geen losse eilanden. Wel één plan waar alles aan hangt.",
+    ],
     visual: "team" as const,
   },
   {
@@ -19,7 +23,11 @@ const PAIN_POINTS = [
     icon: LayoutTemplate,
     label: "Templates",
     title: "Mooi demo, straks vastgelopen",
-    body: "Templates lijken goedkoop tot je groeit. Dan botsen plugins, wordt alles traag en moet je alsnog opnieuw beginnen.",
+    paragraphs: [
+      "Templates en page builders lijken goedkoop. Tot je groeit. Dan botsen plugins, wordt alles traag en moet je alsnog opnieuw beginnen. Met de rekening van alles wat je al betaald had.",
+      "Custom checkout? B2B-prijzen? Koppeling met je CRM of voorraad? Half gebeurt het met workarounds, half niet. Je zit vast in code die drie freelancers voor je hebben gestapeld. Niemand durft meer te raken.",
+      "Ik bouw websites en shops from scratch. Geen plafond, geen template-dialect. Wel een fundament dat meegroeit als je ads opschaalt, je assortiment verdubbelt of je een B2B-portaal nodig hebt.",
+    ],
     visual: "template" as const,
   },
   {
@@ -27,7 +35,11 @@ const PAIN_POINTS = [
     icon: Megaphone,
     label: "Ads zonder plan",
     title: "Budget erin, omzet er niet uit",
-    body: "Ads aanzetten op een site die niet converteert is geld verbranden. Zonder meetplan en volgorde betaal je voor klikken zonder waarde.",
+    paragraphs: [
+      "Ads aanzetten op een site die niet converteert is geld verbranden. Zonder meetplan en volgorde betaal je voor klikken zonder waarde. Duur leretje, elke maand opnieuw.",
+      "Google Ads en Meta Ads werken pas als landingspagina, tracking en aanbod op één lijn zitten. Veel bureaus schalen budget op terwijl je checkout traag is, je pixel verkeerd staat of je PDP niemand overtuigt. Dan kocht je verkeer, geen klanten.",
+      "De slimme volgorde is simpel: eerst SEO, site en mail. Daarna pas ads. Elke euro komt binnen op iets dat al verkocht. Dat is geen geluk. Dat is volgorde. En die bewaak ik voor jou ook.",
+    ],
     visual: "ads" as const,
   },
 ] as const;
@@ -151,7 +163,16 @@ export function HomeContextSection() {
                 className="flex flex-1 flex-col rounded-2xl border border-slate-200 bg-slate-50/50 p-5 sm:p-6"
               >
                 <h3 className="text-lg font-extrabold text-slate-900">{pain.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{pain.body}</p>
+                <div className="mt-3 flex flex-1 flex-col gap-3">
+                  {pain.paragraphs.map((paragraph) => (
+                    <p
+                      key={paragraph.slice(0, 32)}
+                      className="text-sm leading-relaxed text-slate-600"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
               </motion.div>
             </AnimatePresence>
 

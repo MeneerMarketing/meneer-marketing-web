@@ -8,11 +8,11 @@ import {
 } from "lucide-react";
 
 export const WIZARD_STEPS = [
-  { id: "goal", label: "Doel", hint: "Waar wil je naartoe?" },
-  { id: "situation", label: "Nu", hint: "Waar sta je vandaag?" },
-  { id: "friction", label: "Tijd", hint: "Wat kost je nu tijd?" },
-  { id: "channels", label: "Kanalen", hint: "Waar zit je marketing?" },
-  { id: "route", label: "Route", hint: "Jouw groeipad" },
+  { id: "goal", label: "Zaad", hint: "Wat wil je oogsten?" },
+  { id: "situation", label: "Grond", hint: "Hoe staat je basis?" },
+  { id: "friction", label: "Onkruid", hint: "Wat kost je tijd?" },
+  { id: "channels", label: "Zonlicht", hint: "Welke kanalen al?" },
+  { id: "route", label: "Oogst", hint: "Jouw groeipad" },
 ] as const;
 
 export type WizardStepId = (typeof WIZARD_STEPS)[number]["id"];
@@ -163,7 +163,7 @@ export const GROEISCAN_CHANNELS = [
   {
     id: "email",
     label: "E-mail",
-    hint: "Nieuwsbrieven en flows",
+    hint: "Nieuwsbrieven en mailreeksen",
     icon: Zap,
     floor: "behoud",
   },
@@ -411,7 +411,7 @@ export function computePlaygroundRoute(input: PlaygroundScoreInput): RouteStep[]
     },
     {
       title: "Behoud en slimme koppelingen",
-      body: "E-mailflows en automatisering die omzet vasthouden.",
+      body: "Automatische mails en automatisering die omzet vasthouden.",
       href: "/behoud",
       pillar: "Behoud",
       accent: "#22C55E",
@@ -460,18 +460,21 @@ export function getMeneerCoachLine(
     return GROEISCAN_GOALS.find((g) => g.id === context.goal)?.meneerTip ?? "Kies één hoofddoel. Scherp is fijner dan breed.";
   }
   if (step === "situation") {
-    return "Wees eerlijk. Niemand begon met een perfecte stack. Behalve Netflix misschien.";
+    return "Wees eerlijk over je grond. Niemand begon met perfecte SEO. Behalve Wikipedia. Die cheat.";
   }
   if (step === "friction" && context?.friction === "crisis") {
-    return "Als handwerk je week eet, is automatisering geen project voor 'later'.";
+    return "Als handwerk je week eet, is automatisering geen project voor later. Het is nu wieden of verdrinken.";
+  }
+  if (step === "friction") {
+    return "Elk uur copy-paste is een uur geen groei. Reken maar na. Ik doe het voor je.";
   }
   if (step === "channels") {
-    return "Geen enkel kanaal aangevinkt? Dan weet ik al waar we beginnen.";
+    return "Geen enkel kanaal? Dan beginnen we bij zonlicht. Organisch. Gratis. Boring? Werkt wel.";
   }
   if (step === "route") {
-    return "Dit is je speel-route. De echte Groeiscan maakt het concreet met jouw cijfers.";
+    return "Dit is je oogst-route. De echte Groeiscan maakt het concreet met jouw cijfers. Geen gokken.";
   }
-  return "Tik je antwoord aan. De toren groeit mee. Ja, echt.";
+  return "Tik je antwoord aan. Je plant groeit mee. Nee, echt. Kijk rechts.";
 }
 
 const GROEISCAN_SESSION_KEY = "mm-groeiscan-playground";

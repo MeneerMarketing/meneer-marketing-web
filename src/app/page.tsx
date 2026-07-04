@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { CasesPreviewSection } from "@/components/home/CasesPreviewSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { HomeUspBar } from "@/components/home/HomeUspBar";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
-import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { ServicesOfficeSection } from "@/components/home/office/ServicesOfficeSection";
 import { HomeContextSection } from "@/components/home/premium/HomeContextSection";
 import { HomeCtaSection } from "@/components/home/premium/HomeCtaSection";
-import { HomeGrowthRouteMap } from "@/components/home/premium/HomeGrowthRouteMap";
 import { HomeProofSection } from "@/components/home/premium/HomeProofSection";
 import { HomeSituationMatcher } from "@/components/home/premium/HomeSituationMatcher";
 import { HomeWorkStagesScroll } from "@/components/home/premium/HomeWorkStagesScroll";
@@ -35,13 +32,10 @@ export default function HomePage() {
         <HomeUspBar />
         <ServicesOfficeSection />
         <HomeContextSection />
-        <HomeGrowthRouteMap />
         <HomeSituationMatcher />
         <HomeWorkStagesScroll />
-        <CasesPreviewSection />
         <HomeProofSection />
         <InsightsPreviewSection />
-        <MeneerPeek />
         <HomeCtaSection />
       </main>
       <SiteFooter />

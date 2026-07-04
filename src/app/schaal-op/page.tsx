@@ -98,7 +98,7 @@ export default function SchaalOpPage() {
                 },
                 {
                   title: "Bouwen & sturen",
-                  body: "Campagnes, flows en content die meetbaar bijdragen.",
+                  body: "Campagnes, mail en content die meetbaar bijdragen.",
                 },
               ]}
               links={[
@@ -111,7 +111,7 @@ export default function SchaalOpPage() {
                 {
                   label: "Behoud & automatisering",
                   href: "/behoud",
-                  description: "E-mail, retentie en workflows. Rust voor je team.",
+                  description: "E-mail, retentie en shop-automatisering. Rust voor je team.",
                   icon: <Rocket className="size-4" />,
                 },
                 {

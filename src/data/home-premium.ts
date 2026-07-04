@@ -9,67 +9,58 @@ export const HOME_CONTEXT = {
 } as const;
 
 export const HOME_PROOF = {
+  tag: "Resultaat",
   title: "Bewijs dat het werkt",
-  body: "Geen stockfoto's van handen schudden. Wel echte trajecten waar strategie, bouw en marketing in de juiste volgorde kwamen.",
-  metrics: [
-    { label: "SkinComplete", value: "B2B, SEO, ads & UGC" },
-    { label: "BestRest", value: "Shopify full stack" },
-    { label: "Hills Pilates", value: "Site, app & e-mail" },
-  ],
+  body: "Twee trajecten. Geen praatjes. Tik door voor het volledige verhaal.",
   featuredHref: "/cases",
-  featuredLabel: "Bekijk cases",
+  featuredLabel: "Alle cases bekijken",
 } as const;
 
 export interface HomeTrajectoryStage {
   id: string;
-  tag: string;
+  short: string;
   title: string;
   headline: string;
   body: string;
-  deliverables: readonly string[];
-  punchline: string;
+  tags: readonly string[];
   scene: "discover" | "route" | "build" | "scale";
 }
 
 export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
   {
     id: "discover",
-    tag: "Begrijpen",
-    title: "Begrijpen",
+    short: "Snappen",
+    title: "Waar zit je?",
     headline: "We starten met jouw werkelijkheid, niet met een pitch.",
     body: "Intake, data, doelen en je huidige stack. Geen offerte vóór er helderheid is over waar groei zit en wat eerst moet.",
-    deliverables: ["Groeiscan & prioriteiten", "Stack in kaart", "Eerste quick wins"],
-    punchline: "Jij praat. Ik luister en stel de scherpe vragen.",
+    tags: ["Groeiscan", "Stack in kaart", "Quick wins"],
     scene: "discover",
   },
   {
     id: "route",
-    tag: "Route",
-    title: "Route kiezen",
+    short: "Volgorde",
+    title: "Wat eerst?",
     headline: "Maximaal drie focuspunten. De rest wacht zijn beurt.",
     body: "Welke kanalen, welke volgorde en wat het kost. Geen alles-tegelijk-plan dat niemand uitvoert.",
-    deliverables: ["Volgorde per kanaal", "Realistisch budget", "Meetplan & KPI's"],
-    punchline: "SEO eerst of ads eerst? Dat beslissen we op data, niet op gevoel.",
+    tags: ["Volgorde per kanaal", "Budget", "Meetplan"],
     scene: "route",
   },
   {
     id: "build",
-    tag: "Bouwen",
+    short: "Live zetten",
     title: "Bouwen & meten",
     headline: "Van plan naar live. Met meetpunten vanaf dag één.",
-    body: "Site, shop, campagnes of flows. Alles custom, alles meetbaar. Je ziet wat live gaat en wat het doet.",
-    deliverables: ["Custom build live", "Tracking & events", "Eerste resultaten"],
-    punchline: "Geen templates. Geen page builders. Wel code die je kunt opschalen.",
+    body: "Site, shop, campagnes of mail. Alles custom, alles meetbaar. Je ziet wat live gaat en wat het doet.",
+    tags: ["Custom build", "Tracking", "Eerste cijfers"],
     scene: "build",
   },
   {
     id: "scale",
-    tag: "Opschalen",
+    short: "Gas geven",
     title: "Opschalen",
     headline: "Wat werkt krijgt gas. Wat niet werkt gaat eruit.",
     body: "Klein testen was het begin. Nu schalen we wat geld oplevert en snijden we wat alleen ruis was weg.",
-    deliverables: ["Budget verschuiven", "Nieuwe tests", "Maandelijkse stuur"],
-    punchline: "Geen sentiment. Wel resultaat waar je op kunt bouwen.",
+    tags: ["Budget verschuiven", "Nieuwe tests", "Maandelijks sturen"],
     scene: "scale",
   },
 ] as const;

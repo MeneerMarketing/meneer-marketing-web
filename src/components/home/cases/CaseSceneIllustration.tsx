@@ -173,7 +173,7 @@ function BestRestScene({
       />
 
       <rect x="204" y="164" width="164" height="76" rx="10" fill="white" stroke="#FFEDD5" />
-      {["E-mail flow", "Google Ads", "Meta Ads"].map((label, i) => (
+      {["E-mail auto", "Google Ads", "Meta Ads"].map((label, i) => (
         <motion.g
           key={label}
           initial={reduce ? false : { opacity: 0, x: 8 }}
@@ -212,7 +212,7 @@ function HillsPilatesScene({
         Boek les
       </text>
       <text x="32" y="200" fill={accent} fontSize="9" fontWeight="700" fontFamily="system-ui">
-        E-mail flows
+        E-mail automatisering
       </text>
       {[0, 1, 2].map((i) => (
         <rect key={i} x={32 + i * 52} y={210} width="44" height="32" rx="6" fill="white" stroke={accent} strokeWidth="1" opacity={0.9} />

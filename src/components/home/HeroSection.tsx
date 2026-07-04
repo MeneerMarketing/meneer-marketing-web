@@ -6,6 +6,7 @@ import { LiquidCTA } from "@/components/effects/LiquidCTA";
 import { LivingCloudGrid } from "@/components/effects/LivingCloudGrid";
 import { Magnetic } from "@/components/effects/Magnetic";
 import { HeroCtaCard } from "@/components/home/HeroCtaCard";
+import { GoogleWordmark } from "@/components/icons/GoogleWordmark";
 import { siteCtas } from "@/lib/cta";
 
 const HERO_SECONDARY = { label: "Bekijk de blauwdrukken", href: "/cases" };
@@ -28,10 +29,10 @@ export function HeroSection() {
 
           <h1
             id="hero-heading"
-            className="mt-5 text-5xl font-extrabold leading-[1.02] tracking-tighter text-slate-900 sm:text-6xl lg:text-[4.25rem]"
+            className="mt-5 text-5xl font-extrabold leading-[1.06] tracking-tighter text-balance text-slate-900 sm:text-6xl sm:leading-[1.02] lg:text-[4.25rem]"
           >
-            Wij bouwen systemen die winst maken.
-            <span className="mt-2 block text-[#FF5722]">Terwijl jij slaapt.</span>
+            Van site tot <GoogleWordmark /> Ads.
+            <span className="mt-2 block text-[#FF5722]">Ik regel het hele online plaatje.</span>
           </h1>
 
           <p className="mt-7 max-w-xl text-lg leading-relaxed tracking-tight text-slate-600">

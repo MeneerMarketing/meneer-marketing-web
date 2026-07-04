@@ -26,9 +26,9 @@ const INSIGHTS = [
     id: "email",
     icon: Mail,
     label: "E-mail",
-    title: "Flows die op het juiste moment landen",
+    title: "Mails die op het juiste moment landen",
     preview: "Geen spam, wel timing.",
-    body: "Voor SkinComplete richtten we de volledige e-mailmarketing in: van welkomstflows tot opvolging na aankoop. Geen spam, wel mails die op het juiste moment aankomen. De automatisering erachter regelt het handwerk.",
+    body: "Voor SkinComplete richtten we de volledige e-mailmarketing in: van welkomstmails tot opvolging na aankoop. Geen spam, wel mails die op het juiste moment aankomen. De automatisering erachter regelt het handwerk.",
   },
   {
     id: "systemen",
@@ -172,7 +172,7 @@ export function BehoudContextSection({
                       : "text-slate-500"
                   }`}
                 >
-                  Behoud + flows
+                  Behoud + mail
                 </button>
               </div>
               <div className="mt-5 grid grid-cols-2 gap-3">
@@ -234,14 +234,14 @@ export function BehoudContextSection({
                 SkinComplete-case
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-300">
-                Welkomstflows, opvolging na aankoop en herinnermails. Geen spam,
+                Welkomstmails, opvolging na aankoop en herinnermails. Geen spam,
                 wel omzet die elke maand terugkomt.
               </p>
               <p className="mt-4 flex items-center gap-1.5 text-xs text-slate-400">
                 <ArrowRight className="size-3.5 text-[#FF5722]" aria-hidden />
                 {mode === "retain"
                   ? "Zo bouwen wij aan behoud."
-                  : "Werven zonder flows laat geld liggen."}
+                  : "Werven zonder opvolgmail laat geld liggen."}
               </p>
             </div>
           </div>

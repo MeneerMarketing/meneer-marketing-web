@@ -82,7 +82,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     proofTitle: "Waarom volgorde alles is",
     proofBody:
-      "SkinComplete stond eerst bovenaan in Google en had e-mailflows draaien vóór de advertenties aangingen. Daardoor kwam elke advertentie-euro binnen op een site die al converteerde. Dat is het verschil tussen budget verbranden en budget investeren.",
+      "SkinComplete stond eerst bovenaan in Google en had mailautomatisering draaien vóór de advertenties aangingen. Daardoor kwam elke advertentie-euro binnen op een site die al converteerde. Dat is het verschil tussen budget verbranden en budget investeren.",
     ctaTitle: "Klaar om te weten waar je groei zit?",
     ctaBody:
       "Geen losse acties meer. We brengen je doelen, data en kanalen in kaart en maken er een plan van dat we ook echt uitvoeren. Start met de Groeiscan.",
@@ -161,11 +161,11 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "Google is niet meer de enige plek waar klanten zoeken. Wij maken je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
     stats: [
       { label: "SEO", value: "Content · techniek" },
-      { label: "AI-zoek", value: "ChatGPT · Gemini · Claude" },
+      { label: "AI-zoek", value: "ChatGPT · Gemini" },
       { label: "Lokaal", value: "Maps · reviews" },
     ],
     introParagraphs: [
-      "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT, Gemini of Claude welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen geen optie meer.",
+      "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen geen optie meer.",
       "Vindbaarheid is daarom breder geworden dan SEO alleen. Het is de combinatie van goede content, een technisch kloppende site, lokale aanwezigheid en reviews die vertrouwen geven. Wij pakken die keten als geheel op, want de onderdelen versterken elkaar.",
     ],
     angleTitle: "Organisch eerst, betaald daarna",
@@ -272,7 +272,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     subheadline:
       "Een nieuwe klant werven kost al snel vijf keer meer dan een bestaande behouden. Wij bouwen e-mail, retentie en slimme systemen die daar munt uit slaan.",
     stats: [
-      { label: "E-mail", value: "Flows · Klaviyo" },
+      { label: "E-mail", value: "Automatisering · Klaviyo" },
       { label: "Retentie", value: "Loyalty · SMS" },
       { label: "Systemen", value: "Sync · rust" },
     ],
@@ -282,9 +282,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     angleTitle: "Techniek in dienst van de klantrelatie",
     angleBody:
-      "Voor SkinComplete richtten we de volledige e-mailmarketing in: van welkomstflows tot opvolging na aankoop. Geen spam, wel mails die op het juiste moment aankomen. De automatisering erachter regelt het handwerk, zodat het team tijd houdt voor klanten.",
+      "Voor SkinComplete richtten we de volledige e-mailmarketing in: van welkomstmails tot opvolging na aankoop. Geen spam, wel mails die op het juiste moment aankomen. De automatisering erachter regelt het handwerk, zodat het team tijd houdt voor klanten.",
     serviceIntro:
-      "Van e-mailflows tot automatisering en AI-klantenservice: dit zijn de behoudtrajecten.",
+      "Van automatische mails tot automatisering en AI-klantenservice: dit zijn de behoudtrajecten.",
     processTitle: "Zo bouwen we aan behoud",
     processSteps: [
       {
@@ -292,7 +292,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
         body: "Wat gebeurt er nu na een aankoop of aanvraag? We brengen de gaten in kaart waar klanten stilletjes verdwijnen.",
       },
       {
-        title: "Flows die aankomen",
+        title: "Mails die aankomen",
         body: "Welkom, opvolging, herinnering, win-back. Elke mail op het moment dat hij logisch is, niet wanneer de kalender het zegt.",
       },
       {
@@ -301,12 +301,12 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       },
       {
         title: "Meten en verfijnen",
-        body: "Herhaalaankopen, opens en omzet per flow. We zien wat werkt en schroeven daar verder aan.",
+        body: "Herhaalaankopen, opens en omzet per mailreeks. We zien wat werkt en schroeven daar verder aan.",
       },
     ],
     proofTitle: "Stille omzet, elke maand weer",
     proofBody:
-      "Goede e-mailflows zijn de best renderende vierkante meters van je marketing: je bouwt ze één keer en ze blijven verkopen. Wij meten het effect in omzet per flow, niet in vage open rates.",
+      "Goede mailautomatisering is de best renderende vierkante meters van je marketing: je bouwt het één keer en het blijft verkopen. Wij meten het effect in omzet per mailreeks, niet in vage open rates.",
     ctaTitle: "Meer halen uit bestaande klanten?",
     ctaBody:
       "Plan een intake. We kijken eerst wat er al ligt en waar de snelste winst zit.",

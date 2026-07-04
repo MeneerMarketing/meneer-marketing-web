@@ -17,7 +17,7 @@ const pillars = [
   },
   {
     title: "Shopify-expert",
-    body: "Webshops die verkopen en meegroeien. Thema's, flows en koppelingen met je marketing, gebouwd door iemand die Shopify echt kent.",
+    body: "Webshops die verkopen en meegroeien. Thema's, checkout en koppelingen met je marketing, gebouwd door iemand die Shopify echt kent.",
     tag: "E-commerce",
   },
   {

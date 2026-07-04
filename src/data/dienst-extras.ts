@@ -56,7 +56,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   "web-apps": {
     outcomes: [
-      "B2B-portaal of boekingsapp from scratch, gebouwd voor jouw rollen en flows",
+      "B2B-portaal of boekingsapp from scratch, gebouwd voor jouw rollen en rechten",
       "Koppelingen met Shopify, CRM en e-mail zonder spaghetti tussen systemen",
       "Adoptie-proof: je team en klanten snappen het zonder handleiding van tien pagina's",
     ],
@@ -160,14 +160,14 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Doen jullie ook outbound of alleen inbound?",
         answer:
-          "Primair inbound en paid/organic flows. Outbound koppelen we aan partners waar nodig. Met dezelfde meetlat.",
+          "Primair inbound en paid/organic kanalen. Outbound koppelen we aan partners waar nodig. Met dezelfde meetlat.",
       },
       Q.meet,
     ],
   },
   automatisering: {
     outcomes: [
-      "Flows met logging, retries en duidelijke owners",
+      "Automatisering met logging, retries en duidelijke owners",
       "Minder handwerk en minder menselijke fouten in de keten",
       "Documentatie zodat je niet locked-in zit op één persoon",
     ],
@@ -240,7 +240,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Leveren jullie alleen strategy of ook uitvoering?",
         answer:
-          "Beide: van merkstory tot visuele templates in Figma. Afgestemd op je web-build en campagneproces, zodat alles één geheel wordt.",
+          "Beide: van merkstory tot visuele templates. Afgestemd op je web-build en campagneproces, zodat alles één geheel wordt.",
       },
       {
         question: "Moet ik al een logo hebben?",
@@ -252,21 +252,21 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   webdesign: {
     outcomes: [
-      "Flows en wireframes vóór pixels, goedgekeurd voordat er polish komt",
-      "Figma met componenten, states en specs voor voorspelbare build",
+      "Wireframes vóór pixels, goedgekeurd voordat er polish komt",
+      "Ontwerp met componenten, states en specs voor voorspelbare build",
       "Toegankelijkheid en mobiel-first waar jouw omzet dat vraagt",
     ],
     faq: [
       Q.start,
       {
-        question: "Leveren jullie Figma voor onze developers?",
+        question: "Leveren jullie ontwerp-specs voor developers?",
         answer:
-          "Ja. Met componenten, states, spacing en specificaties zodat build voorspelbaar blijft. Of ik bouw het zelf from scratch, dan is design en code al op één lijn.",
+          "Ja. Met componenten, states, spacing en specificaties zodat build voorspelbaar blijft. Of ik bouw het zelf from scratch, dan zit design en code al op één lijn.",
       },
       {
         question: "Ontwerpen jullie alleen, of bouwen jullie ook?",
         answer:
-          "Beide. Vaak ontwerp én bouw ik in één lijn: wireframes, Figma, Next.js of Shopify. Geen estafette tussen designer en developer die elkaar niet snappen.",
+          "Beide. Vaak ontwerp én bouw ik in één lijn: wireframes, specs, Next.js of Shopify. Geen estafette tussen designer en developer die elkaar niet snappen.",
       },
       Q.meet,
     ],
@@ -306,7 +306,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
   email: {
     outcomes: [
       "Nieuwsbrieven en campagnes die passen bij je merk",
-      "Automatische flows: welkom, herinnering, na aankoop",
+      "Automatische mails: welkom, herinnering, na aankoop",
       "Koppeling met Klaviyo, Shopify Mail of jouw e-mailtool",
     ],
     faq: [
@@ -342,7 +342,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   "ai-zoek": {
     outcomes: [
-      "Jouw bedrijf als antwoord in ChatGPT, Gemini, Claude en Google AI",
+      "Jouw bedrijf als antwoord in ChatGPT, Gemini en Google AI",
       "Content en techniek die AI-modellen kunnen lezen en citeren",
       "Voorsprong op concurrenten die dit kanaal nog niet kennen",
     ],
@@ -350,7 +350,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Is vindbaarheid in AI-zoek nu al belangrijk?",
         answer:
-          "Ja. Een groeiend deel van de zoektochten begint bij ChatGPT, Gemini of Claude, en Google toont AI-antwoorden boven de gewone resultaten. Wie er nu in investeert, bouwt een voorsprong op die later duur is om in te halen.",
+          "Ja. Een groeiend deel van de zoektochten begint bij ChatGPT of Gemini, en Google toont AI-antwoorden boven de gewone resultaten. Wie er nu in investeert, bouwt een voorsprong op die later duur is om in te halen.",
       },
       {
         question: "Hoe verschilt dit van gewone SEO?",
@@ -507,14 +507,14 @@ export const dienstExtras: Record<string, DienstExtra> = {
   retentie: {
     outcomes: [
       "Meer herhaalaankopen uit klanten die je al hebt",
-      "Loyaliteit en win-back flows die bij je marge passen",
+      "Loyaliteit en win-back mailreeksen die bij je marge passen",
       "Hogere klantwaarde, dus meer ruimte om nieuwe klanten te werven",
     ],
     faq: [
       {
         question: "Is retentie ook interessant voor dienstverleners?",
         answer:
-          "Zeker. Voor diensten gaat het om verlengingen, vervolgopdrachten en doorverwijzingen. Dezelfde principes, andere flows.",
+          "Zeker. Voor diensten gaat het om verlengingen, vervolgopdrachten en doorverwijzingen. Dezelfde principes, andere mailreeksen.",
       },
       Q.start,
       Q.meet,

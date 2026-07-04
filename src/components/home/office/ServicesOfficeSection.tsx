@@ -106,6 +106,7 @@ export function ServicesOfficeSection() {
       const frame = frameRef.current;
       if (!pillar || !frame) return;
       setActive(id);
+      (document.activeElement as HTMLElement | null)?.blur?.();
       if (reduce) return;
 
       const rect = frame.getBoundingClientRect();
@@ -157,24 +158,36 @@ export function ServicesOfficeSection() {
       aria-labelledby="services-heading"
       className="relative overflow-hidden border-y border-slate-800 bg-slate-950 py-20 sm:py-28"
     >
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(255,87,34,0.14),transparent)]"
+        aria-hidden
+      />
+
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
             Diensten
           </p>
+          <div
+            className="mx-auto mt-4 h-px w-14 bg-gradient-to-r from-transparent via-[#FF5722]/50 to-transparent"
+            aria-hidden
+          />
           <h2
             id="services-heading"
-            className="mt-3 text-4xl font-extrabold tracking-tighter text-white sm:text-5xl"
+            className="mt-5 text-4xl font-extrabold tracking-tighter text-white sm:text-5xl lg:text-[3.25rem]"
           >
-            Stap het kantoor binnen.
+            Stap het kantoor{" "}
+            <span className="text-[#FF5722]">binnen.</span>
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-400">
-            Eén Meneer, een compleet marketingteam. Alles wat we voor je doen
-            staat hier gewoon in het kantoor.
+          <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+            Strategie, bouwen, vindbaarheid, campagnes en behoud. Vijf dingen die
+            elk bedrijf nodig heeft. Vijf objecten in mijn kantoor die jouw
+            bedrijf een boost geven.
           </p>
-          <p className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-slate-300">
-            <MousePointerClick className="size-4 text-[#FF5722]" aria-hidden />
-            Klik op de laptop, het bord, het vergrootglas en de rest
+          <p className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm font-semibold text-slate-300 backdrop-blur-sm">
+            <MousePointerClick className="size-4 shrink-0 text-[#FF5722]" aria-hidden />
+            Klik op het bord, de laptop, het vergrootglas, de megafoon of de
+            mailmachine
           </p>
         </div>
 

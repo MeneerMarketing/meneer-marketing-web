@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CookiePreferencesButton } from "@/components/consent/CookiePreferencesButton";
+import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { Logo } from "@/components/site/Logo";
 import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/contact";
 import { siteCtaList } from "@/lib/cta";
@@ -36,6 +37,7 @@ export function SiteFooter() {
               automatisering op één lijn. Technisch scherp, menselijk in de
               uitvoering.
             </p>
+            <MeneerPeek />
           </div>
           <div>
             <p className="text-xs font-bold uppercase tracking-wider text-slate-500">

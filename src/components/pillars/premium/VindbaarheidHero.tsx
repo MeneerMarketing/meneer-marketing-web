@@ -30,7 +30,7 @@ const SERP_SETS: SerpResult[][] = [
     { url: "concurrent-c.nl", title: "Webshop laten bouwen", snippet: "Snel online met ons pakket..." },
   ],
   [
-    { url: "meneermarketing.nl", title: "Vindbaar in AI-zoek · MeneerMarketing", snippet: "Genoemd worden in ChatGPT, Gemini en Claude. Wij regelen het.", isYou: true },
+    { url: "meneermarketing.nl", title: "Vindbaar in AI-zoek · MeneerMarketing", snippet: "Genoemd worden in ChatGPT en Gemini. Wij regelen het.", isYou: true },
     { url: "seo-blog.nl", title: "AI SEO tips 2026", snippet: "10 tricks die je concurrent al kent..." },
     { url: "concurrent-d.nl", title: "ChatGPT optimalisatie", snippet: "Wij schrijven AI-content..." },
   ],
@@ -120,7 +120,7 @@ export function VindbaarheidHero() {
 
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_28px_56px_-24px_rgba(15,23,42,0.28)]">
         <div className="border-b border-slate-100 px-5 pt-5 pb-4">
-          <div className="flex items-center justify-center gap-0.5">
+          <div className="flex items-center justify-center">
             {/* Native img: Next/Image kan PNG-transparantie verstoren bij optimalisatie */}
             <img
               src="/images/google-logo.png"
@@ -130,7 +130,6 @@ export function VindbaarheidHero() {
               className="h-8 w-auto bg-transparent"
               draggable={false}
             />
-            <span className="text-sm font-normal text-slate-400">.nl</span>
           </div>
 
           <button

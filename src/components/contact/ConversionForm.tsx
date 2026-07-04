@@ -224,7 +224,7 @@ const SCHAAL_OPTIONS: readonly TileOption[] = [
   { value: "conversie", label: "Betere conversie", description: "Van verkeer naar klant. CRO scherp.", Icon: Gauge },
   { value: "verkeer", label: "Meer verkeer", description: "Organisch: SEO & content compounding.", Icon: TrendingUp },
   { value: "ads", label: "Paid scherp", description: "Ads efficiënt & meetbaar. ROAS/CAC.", Icon: Rocket },
-  { value: "automatisering", label: "Automatisering", description: "Sales & marketing flows op autopilot.", Icon: Cpu },
+  { value: "automatisering", label: "Automatisering", description: "Sales & marketing automatisering op autopilot.", Icon: Cpu },
   { value: "alles", label: "Eerst in kaart", description: "Prioriteit bepalen via Groeiscan.", Icon: Sparkles },
 ];
 

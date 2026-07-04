@@ -6,13 +6,27 @@ import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 interface GroeiscanMeneerCoachProps {
   message: string;
   compact?: boolean;
+  theme?: "light" | "dark";
 }
 
-export function GroeiscanMeneerCoach({ message, compact = false }: GroeiscanMeneerCoachProps) {
+export function GroeiscanMeneerCoach({
+  message,
+  compact = false,
+  theme = "dark",
+}: GroeiscanMeneerCoachProps) {
   const reduce = useReducedMotion();
+  const isLight = theme === "light";
 
   return (
-    <div className={`flex items-start gap-3 ${compact ? "" : "rounded-2xl border border-white/10 bg-white/[0.04] p-4"}`}>
+    <div
+      className={`flex items-start gap-3 ${
+        compact
+          ? ""
+          : isLight
+            ? "rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+            : "rounded-2xl border border-white/10 bg-white/[0.04] p-4"
+      }`}
+    >
       <InteractiveLogo className={`shrink-0 ${compact ? "h-10 w-10" : "h-12 w-12"}`} />
       <AnimatePresence mode="wait">
         <motion.div
@@ -27,7 +41,9 @@ export function GroeiscanMeneerCoach({ message, compact = false }: GroeiscanMene
             Meneer zegt
           </p>
           <p
-            className={`mt-1 font-bold leading-snug text-slate-200 ${compact ? "text-xs" : "text-sm"}`}
+            className={`mt-1 font-bold leading-snug ${
+              isLight ? "text-slate-800" : "text-slate-200"
+            } ${compact ? "text-xs" : "text-sm"}`}
           >
             {message}
           </p>

@@ -20,7 +20,7 @@ function body(
 
 const CONTENT = {
   "shopify-enterprise": body(
-    "Ik ben Shopify-expert en bouw webshops from scratch. Geen theme uit de store, geen template dat op honderd andere shops lijkt. Custom theme, custom secties, precies passend bij jouw merk. In Shopify is vrijwel alles mogelijk. Ik weet hoe.",
+    "Ik ben Shopify-expert en bouw webshops from scratch. Portals, bundles, international storefronts: in Shopify kan het, als je theme en koppelingen kloppen. Geen template met twintig apps eroverheen. Geen theme uit de store met jouw logo erop.",
     [
       "Custom Shopify-themes from scratch, geen kant-en-klare templates",
       "Checkout, bundles, portals en koppelingen waar jij ze nodig hebt",
@@ -95,7 +95,7 @@ const CONTENT = {
     "Handwerk schaalt niet. En kost fouten. Met n8n en Make koppel ik orders, klanten, voorraad en marketing tot rustige workflows die je team tijd teruggeven.",
     [
       "Inventarisatie: welke systemen, welke triggers, welke edge cases",
-      "Robuuste flows met logging, alerts en fallbacks",
+      "Robuuste automatisering met logging, alerts en fallbacks",
       "Geen vendor-lock-in: documentatie en eigenaarschap bij jou",
       "Security: secrets, scopes en minimale rechten per integratie",
     ],
@@ -110,7 +110,7 @@ const CONTENT = {
     ],
   ),
   chatbots: body(
-    "Een goede bot is geen gimmick maar een verlengstuk van je team. Getraind op jouw producten, policies en tone of voice. Ik zet RAG-chatflows op die pre-sales en support ontlasten zonder menselijkheid te verliezen.",
+    "Een goede bot is geen gimmick maar een verlengstuk van je team. Getraind op jouw producten, policies en tone of voice. Ik zet RAG-chatbots op die pre-sales en support ontlasten zonder menselijkheid te verliezen.",
     [
       "Kennisbron: site, FAQ, PDF’s, productfeed. Gestructureerd ingelezen",
       "Escalatie naar mens waar het moet, met context mee",
@@ -132,14 +132,14 @@ const CONTENT = {
     [
       "Positionering en onderscheid ten opzichte van concurrenten",
       "Kleuren, type, beeldstijl en componenten voor site, ads en mail",
-      "Brand guidelines en Figma-templates die je team en partners volgen",
+      "Brand guidelines en templates die je team en partners volgen",
       "Afstemming met web en campagnes. Geen los PDF-boekje in een la",
     ],
   ),
   webdesign: body(
-    "UI/UX gaat over vertrouwen, hiërarchie en conversie. Ik ontwerp schermen die rust uitstralen en duidelijk maken wat de volgende stap is. Op desktop én mobiel, development-klaar in Figma.",
+    "UI/UX gaat over vertrouwen, hiërarchie en conversie. Ik ontwerp schermen die rust uitstralen en duidelijk maken wat de volgende stap is. Op desktop én mobiel, klaar om te bouwen.",
     [
-      "Wireframes en flows vóór pixels, zodat structuur en primaire acties kloppen",
+      "Wireframes vóór pixels, zodat structuur en primaire acties kloppen",
       "Design system-light: herhaalbare patronen zodat je merk consistent blijft bij groei",
       "Afstemming met development: componenten, states en specs die echt te bouwen zijn",
       "Toegankelijkheid: contrast, focus states en semantiek vanaf het eerste scherm",
@@ -167,7 +167,7 @@ const CONTENT = {
     "E-mailmarketing is nog steeds een van de sterkste manieren om klanten te binden en te verkopen. Ik help met strategie, opzet en design: van je eerste nieuwsbrief tot automatische welkomstmails en herinnermails bij verlaten winkelwagen.",
     [
       "Nieuwsbrieven en campagnes die passen bij je merk en doelgroep",
-      "Automatische flows: welkom, verlaten winkelwagen, na aankoop, op maat",
+      "Automatische mails: welkom, verlaten winkelwagen, na aankoop, op maat",
       "Koppeling met Klaviyo, Shopify Mail of jouw e-mailtool",
       "Templates die er professioneel uitzien op telefoon én desktop",
     ],
@@ -182,11 +182,11 @@ const CONTENT = {
     ],
   ),
   "ai-zoek": body(
-    "Steeds meer klanten vragen niet aan Google maar aan ChatGPT, Gemini of Claude welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, ben je voor die klant geen optie. Ik zorg dat AI-zoekmachines jouw bedrijf kennen, begrijpen en aanraden.",
+    "Steeds meer klanten vragen niet aan Google maar aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, ben je voor die klant geen optie. Ik zorg dat AI-zoekmachines jouw bedrijf kennen, begrijpen en aanraden.",
     [
       "Content en structuur die AI-modellen kunnen lezen en citeren",
       "Schema-markup en technische signalen die je autoriteit onderbouwen",
-      "Meting: waar word je nu genoemd in ChatGPT, Gemini, Claude en AI Overviews",
+      "Meting: waar word je nu genoemd in ChatGPT, Gemini en AI Overviews",
       "Combinatie met klassieke SEO, want beide voeden elkaar",
     ],
   ),

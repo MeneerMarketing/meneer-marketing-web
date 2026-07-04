@@ -7,8 +7,8 @@ import { siteCtas } from "@/lib/cta";
 const HIGHLIGHTS = [
   {
     icon: Radar,
-    title: "Groeitoren live",
-    body: "Elk antwoord licht een verdieping op. Je voelt groei, niet alleen een score.",
+    title: "Plant live",
+    body: "Elk antwoord laat je plant groeien. Onkruid, wortels en zonlicht reageren direct.",
   },
   {
     icon: Route,
@@ -49,12 +49,11 @@ export function GroeiscanSection() {
                 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"
               >
                 Waar zit jouw groei?{" "}
-                <span className="text-[#FF5722]">Zet het op de scanner.</span>
+                <span className="text-[#FF5722]">Plant het in de groeituin.</span>
               </h2>
               <p className="mt-4 max-w-lg text-lg leading-relaxed text-slate-600">
-                Geen intake-formulier met twintig velden. In vijf korte stappen zie je je
-                groeikracht, een toren die oplicht en welke route logisch is. Gratis en
-                zonder kleine lettertjes.
+                Geen intake-formulier met twintig velden. Vijf stations, een plant die
+                meegroeit en welke route logisch is. Gratis en zonder kleine lettertjes.
               </p>
             </Reveal>
 

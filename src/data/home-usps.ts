@@ -22,7 +22,7 @@ export const HOME_USPS: HomeUsp[] = [
   {
     scene: "plan",
     title: "Plan én uitvoering",
-    body: "Geen strategie-PDF in een la. Ik schrijf het plan, bouw het systeem en stuur campagnes ook echt zelf.",
+    body: "Het plan belandt niet in een la. Ik schrijf het, bouw het systeem en stuur campagnes ook echt zelf.",
     accent: "#0F172A",
   },
   {
@@ -40,7 +40,7 @@ export const HOME_USPS: HomeUsp[] = [
   {
     scene: "discover",
     title: "Vindbaar overal",
-    body: "Google én AI-zoek: ChatGPT, Gemini en Claude. Content en techniek die elke dag autoriteit voor je opbouwen.",
+    body: "Google én AI-zoek: ChatGPT en Gemini. Content en techniek die elke dag autoriteit voor je opbouwen.",
     accent: "#00BCD4",
   },
 ];
@@ -51,7 +51,7 @@ export const HOME_USP_STICKERS = [
   "SEO",
   "AI-zoek",
   "CRO",
-  "E-mailflows",
+  "Mailautomatisering",
   "Automatisering",
   "Meetbaar",
 ] as const;

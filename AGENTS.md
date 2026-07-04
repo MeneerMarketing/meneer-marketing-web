@@ -51,7 +51,7 @@ Bij alle teksten voor meneermarketing.nl (naast de hoofdregels hierboven):
 2. **Google Ads en Meta Ads expliciet benoemen.** Niet verstoppen achter "datagedreven adverteren". Dit is expertise, dus zichtbaar in titels.
 3. **Automatisering in klanttaal:** "processen automatiseren", "systemen aan elkaar knopen", "e-commerce op autopilot". Tools als n8n/Make alleen als detail op de dienstpagina, nooit in de titel.
 4. **WordPress niet promoten.** Alleen als migratie: van WordPress naar custom of Shopify.
-5. **AI-zoek is een volwaardige dienst:** vindbaarheid in ChatGPT, Gemini, Claude en andere AI-zoekmachines. Geen "later", dit staat live in het aanbod.
+5. **AI-zoek is een volwaardige dienst:** vindbaarheid in ChatGPT en Gemini. Geen "later", dit staat live in het aanbod.
 6. **Vijf dienstenblokken:** Strategie & groei · Bouwen from scratch · Vindbaarheid, content & autoriteit · Acquisitie & creators · Behoud & slimme koppelingen.
 
 ## MeneerMarketing — design & techniek

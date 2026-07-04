@@ -66,7 +66,7 @@ export const OFFICE_PILLARS: OfficePillar[] = [
     label: "Vindbaarheid & content",
     objectLabel: "Het vergrootglas",
     title: "Gevonden worden, overal.",
-    body: "Bovenaan in Google én het antwoord in ChatGPT, Gemini en Claude. Content en techniek die autoriteit opbouwen.",
+    body: "Bovenaan in Google én het antwoord in ChatGPT en Gemini. Content en techniek die autoriteit opbouwen.",
     links: [
       { name: "SEO", href: "/diensten/seo" },
       { name: "AI-zoek & vindbaarheid", href: "/diensten/ai-zoek" },
@@ -102,7 +102,7 @@ export const OFFICE_PILLARS: OfficePillar[] = [
     label: "Behoud & koppelingen",
     objectLabel: "De mailmachine",
     title: "Klanten die terugkomen.",
-    body: "E-mailflows, retentie en systemen die met elkaar praten. Deze machine draait door terwijl jij slaapt.",
+    body: "Mailautomatisering, retentie en systemen die met elkaar praten. Deze machine draait door terwijl jij slaapt.",
     links: [
       { name: "E-mailmarketing", href: "/diensten/email" },
       { name: "Retentie & loyaliteit", href: "/diensten/retentie" },

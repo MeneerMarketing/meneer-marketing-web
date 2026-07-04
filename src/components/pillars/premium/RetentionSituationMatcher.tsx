@@ -26,14 +26,14 @@ const GOALS: RetentionGoal[] = [
     icon: Repeat,
     label: "Geen herhaal",
     title: "Klanten kopen één keer en verdwijnen",
-    priority: ["E-mail", "Retentie", "Flows"],
+    priority: ["E-mail", "Retentie", "Mailreeksen"],
     services: [
       { name: "E-mailmarketing", href: "/diensten/email" },
       { name: "Retentie & loyaliteit", href: "/diensten/retentie" },
       { name: "E-commerce workflows", href: "/diensten/workflows" },
     ],
     outcome:
-      "Welkom, opvolging en win-back flows op het juiste moment. Herhaalaankopen meetbaar maken.",
+      "Welkom, opvolging en win-back mails op het juiste moment. Herhaalaankopen meetbaar maken.",
   },
   {
     id: "handwerk",
@@ -61,7 +61,7 @@ const GOALS: RetentionGoal[] = [
       { name: "Processen automatiseren", href: "/diensten/automatisering" },
     ],
     outcome:
-      "Flows die logisch zijn voor de klantreis. Nieuwsbrief met ritme, geen sporadische blast.",
+      "Mail die logisch is voor de klantreis. Nieuwsbrief met ritme, geen sporadische blast.",
   },
   {
     id: "support",

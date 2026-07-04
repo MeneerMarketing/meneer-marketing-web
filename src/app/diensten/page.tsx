@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Diensten | Meneer Marketing",
     description:
-      "Vijf hoofdblokken, tientallen trajecten. Van Shopify en custom build tot Google Ads, SEO en e-mailflows.",
+      "Vijf hoofdblokken, tientallen trajecten. Van Shopify en custom build tot Google Ads, SEO en mailautomatisering.",
     url: absoluteUrl(PAGE_PATH),
     locale: "nl_NL",
     type: "website",

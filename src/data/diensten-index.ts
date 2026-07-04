@@ -24,7 +24,7 @@ export const DIENSTEN_APPROACH = [
   {
     tag: "Bouwen",
     title: "Uitvoeren & meten",
-    body: "Sites, shops, campagnes en flows. Alles met meetpunten vanaf dag één.",
+    body: "Sites, shops, campagnes en mail. Alles met meetpunten vanaf dag één.",
   },
   {
     tag: "Opschalen",
@@ -47,7 +47,7 @@ export const DIENSTEN_WHY = {
     },
     {
       title: "Vindbaar in Google én in AI",
-      body: "SEO, content en techniek voor Google. Plus zichtbaarheid in ChatGPT, Gemini en Claude waar je klant steeds vaker begint.",
+      body: "SEO, content en techniek voor Google. Plus zichtbaarheid in ChatGPT en Gemini waar je klant steeds vaker begint.",
     },
   ],
 } as const;
@@ -71,7 +71,7 @@ export const DIENSTEN_FAQ = [
   {
     question: "Wat is het verschil tussen een blokpagina en een dienstpagina?",
     answer:
-      "Elk hoofdblok (strategie, bouwen, vindbaarheid, campagnes, behoud) heeft een eigen verhaal met proces en bewijs. Onder elk blok vallen concrete diensten zoals Google Ads, Shopify of e-mailflows met meer detail.",
+      "Elk hoofdblok (strategie, bouwen, vindbaarheid, campagnes, behoud) heeft een eigen verhaal met proces en bewijs. Onder elk blok vallen concrete diensten zoals Google Ads, Shopify of mailautomatisering met meer detail.",
   },
   {
     question: "Hoe start ik een traject?",

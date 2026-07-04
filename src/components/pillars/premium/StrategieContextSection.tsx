@@ -234,7 +234,7 @@ export function StrategieContextSection({
                 SkinComplete-case
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-300">
-                Eerst SEO en e-mailflows. Daarna pas ads. Elke euro kwam binnen op
+                Eerst SEO en mailautomatisering. Daarna pas ads. Elke euro kwam binnen op
                 een site die al converteerde.
               </p>
               <p className="mt-4 flex items-center gap-1.5 text-xs text-slate-400">

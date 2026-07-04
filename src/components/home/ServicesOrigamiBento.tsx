@@ -88,7 +88,7 @@ const SERVICES: GridTile[] = [
   },
   {
     title: "E-mailmarketing",
-    text: "Nieuwsbrieven en flows die klanten binden en verkopen helpen.",
+    text: "Nieuwsbrieven en mailreeksen die klanten binden en verkopen helpen.",
     href: "/diensten/email",
     Icon: Mail,
     accent: "#FF5722",

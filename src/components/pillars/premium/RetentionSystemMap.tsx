@@ -32,7 +32,7 @@ const ZONES: Zone[] = [
   {
     href: "/diensten/email",
     short: "E-mail",
-    zoneLabel: "Flows & nieuwsbrief",
+    zoneLabel: "Mails & nieuwsbrief",
     x: 8,
     y: 4,
     w: 84,
@@ -58,7 +58,7 @@ const ZONES: Zone[] = [
   },
   {
     href: "/diensten/workflows",
-    short: "Flows",
+    short: "Automatisering",
     zoneLabel: "Order & shop sync",
     x: 4,
     y: 58,
@@ -76,12 +76,12 @@ const ZONES: Zone[] = [
   },
 ];
 
-const CHANNEL_PILLS = ["E-mail", "SMS", "Flows", "Klaviyo", "AI"] as const;
+const CHANNEL_PILLS = ["E-mail", "SMS", "Mailreeksen", "Klaviyo", "AI"] as const;
 
 const MAP_STATS = [
   { label: "Trajecten", value: "5" },
   { label: "Handwerk", value: "Eruit" },
-  { label: "Omzet", value: "Per flow" },
+  { label: "Omzet", value: "Per mailreeks" },
 ] as const;
 
 function ZoneContent({ href, isActive }: { href: string; isActive: boolean }) {

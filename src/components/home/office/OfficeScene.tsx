@@ -91,11 +91,16 @@ function ClickablePillar({
       style={{ transition: "opacity 0.35s ease" }}
       onClick={(e) => {
         e.stopPropagation();
-        if (interactive) onSelect(id);
+      if (interactive) {
+        onSelect(id);
+        (e.currentTarget as unknown as HTMLElement).blur?.();
+      }
       }}
       onMouseEnter={() => interactive && onHover(id)}
       onMouseLeave={() => interactive && onHover(null)}
-      className={interactive ? "cursor-pointer" : undefined}
+      onFocus={() => interactive && onHover(id)}
+      onBlur={() => interactive && onHover(null)}
+      className={interactive ? "office-hotspot cursor-pointer" : undefined}
       role="button"
       tabIndex={interactive ? 0 : -1}
       aria-label={`${pillar.objectLabel}: ${pillar.label}`}

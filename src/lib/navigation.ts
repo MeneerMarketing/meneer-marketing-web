@@ -54,9 +54,17 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         href: "/diensten/strategie",
       },
       {
+        name: "Advertentiestrategie",
+        description: "Google en Meta samen: budget, funnel en schaalpad",
+        menuLabel: "Ads-strategie & schaal",
+        menuDescription:
+          "Alle advertentiekanalen op één lijn: waar je budget heen moet en wanneer je schaalt.",
+        href: "/diensten/adverteren",
+      },
+      {
         name: "Meer omzet uit je website (CRO)",
         description: "Meer aanvragen en verkopen zonder extra bezoekers",
-        menuLabel: "Conversie-optimalisatie (CRO)",
+        menuLabel: "CRO & conversie",
         menuDescription:
           "CRO: meer klanten uit hetzelfde aantal bezoekers door je site slimmer in te richten.",
         href: "/diensten/cro",
@@ -64,7 +72,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "B2B & e-commerce leadgeneratie",
         description: "Funnels en campagnes die de pipeline vullen",
-        menuLabel: "B2B- en e-commerce leadflows",
+        menuLabel: "B2B & shop leads",
         menuDescription:
           "B2B- en e-commerce leads: funnels die pipeline en checkout voor je vullen.",
         href: "/diensten/leadgeneratie",
@@ -118,7 +126,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Snelheid & vindbaarheid",
         description: "Snellere site, betere scores in Google",
-        menuLabel: "Snelheid & technische SEO",
+        menuLabel: "Snelheid & SEO",
         menuDescription:
           "Je site sneller maken en technisch klaarzetten voor Google, meetbaar en duurzaam.",
         href: "/diensten/optimalisatie",
@@ -128,13 +136,13 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         description: "Ontwerp dat verkopen en vertrouwen combineert",
         menuLabel: "UI/UX design",
         menuDescription:
-          "UI/UX: schermen en flows die verkopen én merk strak en consistent houden.",
+          "UI/UX: schermen die verkopen én merk strak en consistent houden.",
         href: "/diensten/webdesign",
       },
       {
         name: "Merkidentiteit & visuele positionering",
         description: "Huisstijl die vertrouwen en onderscheid geeft",
-        menuLabel: "Merkidentiteit & huisstijl",
+        menuLabel: "Merk & huisstijl",
         menuDescription:
           "Merk & huisstijl: kleur, typo en beeld dat herkenning en vertrouwen draagt.",
         href: "/diensten/branding",
@@ -142,7 +150,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Motion & micro-interacties",
         description: "Die ene laag die je site onvergetelijk maakt",
-        menuLabel: "Motion & micro-interacties",
+        menuLabel: "Motion & interactie",
         menuDescription:
           "Motion: micro-interacties premium. Levend zonder ruis en zonder gimmicks.",
         href: "/diensten/animaties",
@@ -172,8 +180,8 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       },
       {
         name: "Vindbaar in AI-zoekmachines",
-        description: "Genoemd worden in ChatGPT, Gemini, Claude en Google AI",
-        menuLabel: "AI-zoek & vindbaarheid",
+        description: "Genoemd worden in ChatGPT, Gemini en Google AI",
+        menuLabel: "AI-zoek",
         menuDescription:
           "Steeds meer klanten vragen het aan AI. Wij zorgen dat jouw bedrijf het antwoord is.",
         href: "/diensten/ai-zoek",
@@ -181,7 +189,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Lokale vindbaarheid",
         description: "Google Business, Maps en klanten uit je regio",
-        menuLabel: "Lokale SEO & Google Maps",
+        menuLabel: "Lokale SEO & Maps",
         menuDescription:
           "Bovenaan als iemand in jouw regio zoekt: Google Business, Maps en lokale pagina's.",
         href: "/diensten/local-seo",
@@ -197,7 +205,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Reviews & reputatie",
         description: "Social proof die twijfel wegneemt",
-        menuLabel: "Reviews & social proof",
+        menuLabel: "Reviews & reputatie",
         menuDescription:
           "Meer en betere reviews op de plekken waar klanten kijken vóór ze kopen.",
         href: "/diensten/reviews",
@@ -219,7 +227,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Google Ads",
         description: "Bovenaan staan op het moment dat iemand zoekt",
-        menuLabel: "Google Ads (zoeken & shopping)",
+        menuLabel: "Google Ads",
         menuDescription:
           "Zoekwoorden, shopping en budget dat naar klanten gaat. Niet naar klikken zonder waarde.",
         href: "/diensten/google-ads",
@@ -227,23 +235,15 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Meta Ads",
         description: "Facebook en Instagram campagnes die verkopen",
-        menuLabel: "Meta Ads (Facebook & Instagram)",
+        menuLabel: "Meta Ads",
         menuDescription:
           "Campagnes op Facebook en Instagram: creatives, doelgroepen en meetbaar resultaat.",
         href: "/diensten/meta-ads",
       },
       {
-        name: "Advertentiestrategie",
-        description: "Google en Meta samen: budget, funnel en schaalpad",
-        menuLabel: "Ads-strategie & schaal",
-        menuDescription:
-          "Alle advertentiekanalen op één lijn: waar je budget heen moet en wanneer je schaalt.",
-        href: "/diensten/adverteren",
-      },
-      {
         name: "Social media marketing",
         description: "Organisch groeien op de kanalen waar je klant zit",
-        menuLabel: "Social media (organisch)",
+        menuLabel: "Social (organisch)",
         menuDescription:
           "Content en ritme voor Instagram, TikTok en LinkedIn. Zichtbaar zonder advertentiebudget.",
         href: "/diensten/social-media",
@@ -267,7 +267,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Verkopen via Bol & Amazon",
         description: "Marketplaces als extra verkoopkanaal",
-        menuLabel: "Marketplaces (Bol & Amazon)",
+        menuLabel: "Bol & Amazon",
         menuDescription:
           "Producten goed vindbaar op Bol en Amazon: listings, reviews en advertenties.",
         href: "/diensten/marketplaces",
@@ -275,7 +275,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "Foto & video-ads",
         description: "Creatives die passen bij je campagnes",
-        menuLabel: "Beeld voor campagnes & social",
+        menuLabel: "Beeld & video-ads",
         menuDescription:
           "Beeld & ads: foto, video en social formats passend bij jouw hooks en groep.",
         href: "/diensten/media",
@@ -299,13 +299,13 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         description: "Nieuwsbrieven, welkomstmails en automatische opvolging",
         menuLabel: "E-mailmarketing & flows",
         menuDescription:
-          "E-mail op het juiste moment: nieuwsbrieven, herinnermails en klantflows via Klaviyo of Shopify.",
+          "E-mail op het juiste moment: nieuwsbrieven, herinnermails en automatische klantmails via Klaviyo of Shopify.",
         href: "/diensten/email",
       },
       {
         name: "Retentie & loyaliteit",
         description: "Herhaalaankopen via SMS, loyalty en slimme timing",
-        menuLabel: "Retentie & herhaalaankopen",
+        menuLabel: "Retentie & loyaliteit",
         menuDescription:
           "Klanten die terugkomen: loyaliteitsacties, SMS en opvolging na de eerste aankoop.",
         href: "/diensten/retentie",
@@ -321,15 +321,15 @@ export const megaMenuColumns: MegaMenuColumn[] = [
       {
         name: "E-commerce workflows",
         description: "Orders, voorraad, facturatie en mails in sync",
-        menuLabel: "E-commerce order- & shopflows",
+        menuLabel: "Shop workflows",
         menuDescription:
-          "E-commerce flows: orders, voorraad, factuur en mail strak in één keten nu.",
+          "Orderautomatisering: orders, voorraad, factuur en mail strak in één keten nu.",
         href: "/diensten/workflows",
       },
       {
         name: "AI-chatbots & klantenservice",
         description: "24/7 op basis van jouw data en tone of voice",
-        menuLabel: "AI-chatbots & klantenservice",
+        menuLabel: "AI-chatbots",
         menuDescription:
           "AI-chat: antwoorden op jouw data, FAQ en tone. Slim en 24/7 waar het past.",
         href: "/diensten/chatbots",

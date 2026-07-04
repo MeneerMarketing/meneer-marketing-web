@@ -6,7 +6,7 @@ import { useCallback, useState } from "react";
 import type { BuildStage } from "@/components/pillars/premium/BuildStagesScroll";
 
 const STAGE_ICONS = [Route, Mail, GitBranch, BarChart3] as const;
-const STAGE_TAGS = ["Kaart", "Flows", "Koppelen", "Meten"] as const;
+const STAGE_TAGS = ["Kaart", "Automatisering", "Koppelen", "Meten"] as const;
 
 function StageJourney() {
   return (

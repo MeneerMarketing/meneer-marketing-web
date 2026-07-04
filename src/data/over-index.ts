@@ -42,7 +42,7 @@ export const OVER_STORY: OverStoryChapter[] = [
     id: "stack",
     tag: "Wel",
     title: "Techniek die productie is",
-    body: "Shopify, Next.js, SEO, e-mailflows, Google Ads en Meta Ads. Alles custom waar het moet, alles gekoppeld waar het kan. SkinComplete kreeg een B2B-portaal. BestRest een eigen koers per product.",
+    body: "Shopify, Next.js, SEO, mailautomatisering, Google Ads en Meta Ads. Alles custom waar het moet, alles gekoppeld waar het kan. SkinComplete kreeg een B2B-portaal. BestRest een eigen koers per product.",
     punchline: "Jouw stack hoeft niet perfect te zijn. Wel eerlijk in kaart.",
     scene: "stack",
   },

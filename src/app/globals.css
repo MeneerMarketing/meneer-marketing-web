@@ -124,3 +124,9 @@ html::-webkit-scrollbar {
   outline: 2px solid var(--mm-sky-deep);
   outline-offset: 2px;
 }
+
+/* Kantoor-hotspots: geen rechthoekig focus-kader op SVG-hitboxes */
+.office-hotspot:focus,
+.office-hotspot:focus-visible {
+  outline: none;
+}

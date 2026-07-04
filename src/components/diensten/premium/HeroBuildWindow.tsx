@@ -10,6 +10,7 @@ const CODE_LINES = [
   { text: "<main>", color: "text-sky-400" },
   { text: "  <Hero />", color: "text-emerald-400" },
   { text: "  <Sections />", color: "text-amber-300" },
+  { text: "  <Footer />", color: "text-violet-400" },
   { text: "</main>", color: "text-sky-400" },
 ] as const;
 
@@ -19,6 +20,13 @@ const BLOCKS = [
   { label: "Grid", rotate: -3, x: 12, y: 148, delay: 0.5 },
 ] as const;
 
+const BUILD_LOG = [
+  { text: "✓ Compiled in 847ms", color: "text-emerald-400" },
+  { text: "✓ 12 routes · SSG", color: "text-slate-400" },
+] as const;
+
+const STACK_CHIPS = ["Next.js", "React", "TypeScript", "Tailwind"] as const;
+
 /**
  * Code-editor + losse layout-blokken die in elkaar klikken. Geen browsermockup.
  */
@@ -27,7 +35,7 @@ export function HeroBuildWindow() {
 
   return (
     <div
-      className="relative mx-auto h-[380px] w-full max-w-[440px] [perspective:1400px]"
+      className="relative mx-auto h-[420px] w-full max-w-[440px] [perspective:1400px]"
       onMouseMove={onMove}
       onMouseLeave={onLeave}
     >
@@ -75,6 +83,34 @@ export function HeroBuildWindow() {
           />
         </motion.div>
 
+        {/* Build output onder terminal */}
+        <motion.div
+          initial={reduce ? undefined : { opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ delay: 0.55, duration: 0.5, ease: EASE }}
+          className="absolute left-0 top-[11.5rem] w-[48%] rounded-xl border border-slate-700/80 bg-slate-800/95 px-3 py-2.5 shadow-xl"
+          style={{ transform: "translateZ(25px) rotate(-5deg)" }}
+        >
+          <p className="font-mono text-[9px] font-bold uppercase tracking-wider text-slate-500">
+            Build
+          </p>
+          <div className="mt-1.5 space-y-1 font-mono text-[10px]">
+            {BUILD_LOG.map((line, i) => (
+              <motion.p
+                key={line.text}
+                initial={reduce ? undefined : { opacity: 0, x: -6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.65 + i * 0.1, ease: EASE }}
+                className={line.color}
+              >
+                {line.text}
+              </motion.p>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Layout-blokken */}
         {BLOCKS.map((block) => (
           <motion.div
@@ -118,6 +154,59 @@ export function HeroBuildWindow() {
           </motion.div>
         ))}
 
+        {/* Footer-blok onder grid */}
+        <motion.div
+          initial={reduce ? undefined : { opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ delay: 0.62, duration: 0.5, ease: EASE }}
+          className="absolute right-2 top-[15.5rem] w-[52%] rounded-2xl border border-slate-200 bg-white p-3 shadow-md"
+          style={{ transform: "translateZ(35px) rotate(2deg)" }}
+        >
+          <p className="text-[9px] font-bold uppercase tracking-wider text-slate-400">
+            Footer
+          </p>
+          <div className="mt-2 flex items-center justify-between gap-2 border-t border-slate-100 pt-2">
+            <span className="h-2 w-8 rounded-full bg-slate-200" aria-hidden />
+            <div className="flex gap-1.5">
+              {[0, 1, 2].map((i) => (
+                <span
+                  key={i}
+                  className="size-2 rounded-full bg-slate-200"
+                  aria-hidden
+                />
+              ))}
+            </div>
+            <span className="h-2 w-10 rounded-full bg-slate-100" aria-hidden />
+          </div>
+        </motion.div>
+
+        {/* Stack-chips onderaan, gecentreerd */}
+        <motion.div
+          initial={reduce ? undefined : { opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.72, duration: 0.45, ease: EASE }}
+          className="absolute inset-x-3 bottom-14 flex flex-wrap justify-center gap-2"
+          style={{ transform: "translateZ(45px)" }}
+        >
+          {STACK_CHIPS.map((chip, i) => (
+            <motion.span
+              key={chip}
+              animate={reduce ? undefined : { y: [0, i % 2 === 0 ? -2 : 2, 0] }}
+              transition={{
+                duration: 2.6 + i * 0.25,
+                repeat: Infinity,
+                repeatType: "mirror",
+                ease: "easeInOut",
+              }}
+              className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 text-[10px] font-semibold tracking-tight text-slate-600 shadow-sm backdrop-blur"
+            >
+              {chip}
+            </motion.span>
+          ))}
+        </motion.div>
+
         <motion.div
           animate={reduce ? undefined : { y: [-4, 4] }}
           transition={{ duration: 2.8, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
@@ -131,7 +220,7 @@ export function HeroBuildWindow() {
         <motion.div
           animate={reduce ? undefined : { y: [5, -5] }}
           transition={{ duration: 3.2, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
-          className="absolute -left-3 bottom-8 rounded-2xl border border-slate-200 bg-slate-900 px-3 py-2 shadow-xl"
+          className="absolute -left-3 bottom-4 rounded-2xl border border-slate-200 bg-slate-900 px-3 py-2 shadow-xl"
           style={{ transform: "translateZ(55px) rotate(-4deg)" }}
         >
           <p className="text-[9px] font-bold uppercase tracking-wider text-slate-500">Laadtijd</p>

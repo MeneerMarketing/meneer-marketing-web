@@ -19,7 +19,7 @@ import { absoluteUrl } from "@/lib/site";
 const PAGE_PATH = "/groeiscan";
 const PAGE_TITLE = "Groeiscan. Ontdek jouw groeiroute in 2 minuten";
 const PAGE_DESCRIPTION =
-  "Interactieve Groeiscan: kies je doel, situatie en kanalen. Zie live je groeikracht, een lichtende groeitoren en een logische route. Gratis en zonder verplichting.";
+  "Interactieve groeituin: kies je zaad, grond en zonlicht. Zie live je groeikracht, een plant die groeit en een logische route. Gratis en zonder verplichting.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Groeiscan | Meneer Marketing",
     description:
-      "Speelse playground: voel hoe groei werkt en zie welke stap nu logisch is.",
+      "Speelse groeituin: voel hoe groei werkt en zie welke stap nu logisch is.",
     url: absoluteUrl(PAGE_PATH),
     locale: "nl_NL",
     type: "website",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
 const HIGHLIGHTS = [
   {
     icon: TreePine,
-    title: "Groeitoren die meebeweegt",
-    body: "Elk antwoord licht een verdieping op. Je ziet groei, niet alleen een cijfer.",
+    title: "Plant die meegroeit",
+    body: "Elk antwoord laat je plant groeien. Onkruid, wortels en zonlicht reageren live.",
   },
   {
     icon: Compass,
@@ -66,22 +66,22 @@ export default function GroeiscanPage() {
           <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
             <Reveal>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-                Groeiscan playground
+                Groeituin playground
               </p>
               <h1 className="mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-                Voel waar jouw groei zit.{" "}
-                <span className="text-[#FF5722]">Letterlijk.</span>
+                Plant je groei.{" "}
+                <span className="text-[#FF5722]">Zie hem groeien.</span>
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
-                Geen formulier met twintig velden. Vijf korte stappen, een toren die
-                oplicht en een route die klopt. Gratis, logisch en zonder kleine lettertjes.
+                Geen saaie stappenformulier. Vijf stations in je groeituin, een plant die
+                reageert op elk antwoord en een route die klopt. Gratis, leuk en zonder kleine lettertjes.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#groeiscan-playground"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FF5722] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/25 transition hover:bg-orange-600"
                 >
-                  Start de playground
+                  Start de groeituin
                   <ArrowUpRight className="size-4" aria-hidden />
                 </a>
                 <a

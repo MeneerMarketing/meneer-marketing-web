@@ -91,7 +91,7 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
   Behoud: [
     {
       title: "Eenmalige kopers",
-      body: "Klanten kopen één keer en verdwijnen. Dan bouwen we flows en acties die de tweede aankoop vanzelfsprekend maken.",
+      body: "Klanten kopen één keer en verdwijnen. Dan bouwen we opvolging en mailreeksen die de tweede aankoop vanzelfsprekend maken.",
     },
     {
       title: "Orderstress",
@@ -130,7 +130,7 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
     },
     {
       title: "Interne tool die adoptie haalt",
-      body: "Je team gebruikt het echt, omdat flows kloppen en schermen logisch zijn. Geen project dat na launch in een la verdwijnt.",
+      body: "Je team gebruikt het echt, omdat stappen logisch zijn en schermen helder. Geen project dat na launch in een la verdwijnt.",
     },
   ],
   optimalisatie: [
@@ -154,11 +154,25 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
     },
     {
       title: "Portaal waar niemand mee wil werken",
-      body: "Je team of klanten loggen in en raken kwijt. Dan herontwerpen we flows en rollen zodat de volgende stap vanzelfsprekend is. SkinComplete en Hills Pilates begonnen zo.",
+      body: "Je team of klanten loggen in en raken kwijt. Dan herontwerpen we schermen en rollen zodat de volgende stap vanzelfsprekend is. SkinComplete en Hills Pilates begonnen zo.",
     },
     {
       title: "Rebrand plus nieuwe site",
       body: "Nieuwe huisstijl, nieuwe propositie, één consistente UI over web en campagnes. Design system-light zodat elke pagina hetzelfde merk spreekt.",
+    },
+  ],
+  animaties: [
+    {
+      title: "Site voelt statisch na rebrand",
+      body: "Je nieuwe huisstijl staat, maar scrollen voelt als een PDF. Dan geven we key secties gerichte motion: reveals, hover-states en overgangen die bij je merk passen.",
+    },
+    {
+      title: "Te veel gimmicks",
+      body: "Parallax overal, alles beweegt, niemand koopt. Dan trimmen we terug naar motion met functie en een performance-budget op je omzetpagina's.",
+    },
+    {
+      title: "Premium product, saaie PDP",
+      body: "SkinComplete en BestRest verkopen op vertrouwen en detail. Dan vertelt motion het productverhaal zonder je laadtijd of Core Web Vitals te slopen.",
     },
   ],
   branding: [
@@ -285,14 +299,14 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   automatisering: {
     deepTitle: "Automatisering: robuust waar het pijn doet",
     deepLead:
-      "Ik automatiseer niet alles tegelijk. We beginnen waar handwerk het meest zeer doet of fouten maakt. En bouwen flows met logging en fallbacks zodat operations niet op zwart zaad zit.",
+      "Ik automatiseer niet alles tegelijk. We beginnen waar handwerk het meest zeer doet of fouten maakt. En bouwen automatisering met logging en fallbacks zodat operations niet op zwart zaad zit.",
     deepExtended:
       "Tooling kies ik op basis van jouw hosting, budget en team-skill: soms is n8n self-hosted logisch, andere keren Make sneller. Transparantie over trade-offs hoort daarbij.",
     signals: [
       "Welke systemen zijn bron van waarheid voor klant, order, voorraad?",
       "Hoe vaak falen API’s vandaag. En wie lost dat op?",
       "Welke compliance (AVG, financieel) speelt mee?",
-      "Wie beheert flows na live-gang?",
+      "Wie beheert automatisering na live-gang?",
     ],
   },
   workflows: {
@@ -335,7 +349,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     ],
   },
   branding: {
-    deepTitle: "Branding: onderscheid dat ook in Figma en ads werkt",
+    deepTitle: "Branding: onderscheid dat ook op site en ads werkt",
     deepLead:
       "Positionering is geen woordenlijst. Het is keuzes in toon, kleur en vorm die overal terugkomen. Ik vertaal strategie naar richtlijnen die je team, partners en campagnes kunnen volgen.",
     deepExtended:
@@ -350,9 +364,9 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   webdesign: {
     deepTitle: "UI/UX: conversie is context. Geen one-size template",
     deepLead:
-      "Een checkout voor luxe goederen vraagt andere hiërarchie dan een snelle SaaS-trial of een B2B-formulier. Ik ontwerp flows en schermen vanuit jouw klantreis, niet vanuit een Dribbble-shot.",
+      "Een checkout voor luxe goederen vraagt andere hiërarchie dan een snelle SaaS-trial of een B2B-formulier. Ik ontwerp schermen vanuit jouw klantreis, niet vanuit een Dribbble-shot.",
     deepExtended:
-      "Design lever ik development-klaar: componenten, states, spacing en toegankelijkheid in Figma. Zo wordt bouwen voorspelbaar, blijft je merk consistent bij iteraties en sluit UI aan op Google Ads-landingspagina's en SEO-content.",
+      "Design lever ik development-klaar: componenten, states, spacing en toegankelijkheid. Zo wordt bouwen voorspelbaar, blijft je merk consistent bij iteraties en sluit UI aan op Google Ads-landingspagina's en SEO-content.",
     signals: [
       "Wat is de primaire actie per scherm. En wat is bewust secundair?",
       "Hoe kritisch is mobiel voor jouw omzet?",
@@ -415,7 +429,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   "ai-zoek": {
     deepTitle: "AI-zoek: het kanaal waar je concurrent nog niet is",
     deepLead:
-      "ChatGPT, Gemini, Claude en Google AI Overviews beantwoorden steeds vaker de vraag ‘welk bedrijf moet ik kiezen’. Wie daar als antwoord uitkomt, wint de klant voordat er ooit gezocht is in de klassieke resultaten.",
+      "ChatGPT, Gemini en Google AI Overviews beantwoorden steeds vaker de vraag ‘welk bedrijf moet ik kiezen’. Wie daar als antwoord uitkomt, wint de klant voordat er ooit gezocht is in de klassieke resultaten.",
     deepExtended:
       "AI-modellen citeren bronnen die duidelijk, feitelijk en gestructureerd zijn. Ik richt je content, schema-markup en bedrijfsinformatie daarop in en meet waar je genoemd wordt. De basis overlapt met SEO, dus elke stap versterkt ook je gewone Google-posities.",
     signals: [

@@ -50,7 +50,7 @@ const SITUATIONS: Situation[] = [
     pillarHref: "/vindbaarheid",
     pillarLabel: "Vindbaarheid & content",
     steps: ["SEO", "Content", "Vindbaar in AI"],
-    outcome: "Bovenaan in Google én zichtbaar in ChatGPT, Gemini en Claude.",
+    outcome: "Bovenaan in Google én zichtbaar in ChatGPT en Gemini.",
   },
   {
     id: "ads",
@@ -71,7 +71,7 @@ const SITUATIONS: Situation[] = [
     pillar: "behoud",
     pillarHref: "/behoud",
     pillarLabel: "Behoud & koppelingen",
-    steps: ["E-mailflows", "Retentie", "Automatisering"],
+    steps: ["Mailautomatisering", "Retentie", "Automatisering"],
     outcome: "Klanten die terugkomen kosten vijf keer minder dan nieuwe werven.",
   },
 ];

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
+import { ArticleCardIllustration } from "@/components/kennisbank/ArticleCardIllustration";
 import { siteCtas } from "@/lib/cta";
 import {
   getAllKennisbankArticles,
@@ -29,11 +30,11 @@ export function InsightsPreviewSection() {
             <div className="max-w-2xl">
               <h2
                 id="insights-heading"
-                className="text-3xl font-extrabold tracking-tighter text-mm-text sm:text-4xl"
+                className="text-3xl font-extrabold leading-[1.06] tracking-tighter text-balance text-mm-text sm:text-4xl"
               >
-                De kennisbank.{" "}
-                <span className="text-mm-sky-deep">
-                  Alles wat wij weten, gratis.
+                De kennisbank.
+                <span className="mt-2 block text-mm-sky-deep">
+                  Alles wat wij weten,&nbsp;gratis.
                 </span>
               </h2>
               <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
@@ -60,38 +61,51 @@ export function InsightsPreviewSection() {
             </div>
           </div>
         </Reveal>
+
         <ul className="mt-12 grid gap-6 md:grid-cols-3">
           {articles.map((article, i) => {
             const category = getKennisbankCategory(article.category);
             return (
               <Reveal key={article.slug} delay={0.06 * i}>
                 <li>
-                  <article className="flex h-full flex-col rounded-2xl border border-mm-border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                    <span className="inline-flex w-fit rounded-full bg-mm-sky-subtle/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-mm-sky-deep">
-                      {category?.name ?? "Kennisbank"}
-                    </span>
-                    <h3 className="mt-4 text-lg font-bold leading-snug text-mm-text">
-                      <Link
-                        href={`/kennisbank/${article.slug}`}
-                        className="hover:text-mm-sky-deep"
-                      >
-                        {article.title}
-                      </Link>
-                    </h3>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-mm-muted">
-                      {article.description}
-                    </p>
-                    <span className="mt-4 text-xs font-semibold text-mm-muted">
-                      {formatDate(article.publishedAt)} · {article.readMinutes}{" "}
-                      min
-                    </span>
+                  <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-mm-border bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <Link
                       href={`/kennisbank/${article.slug}`}
-                      className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-mm-accent"
+                      className="relative block overflow-hidden border-b border-mm-border/80"
                     >
-                      Lees artikel
-                      <ArrowUpRight className="size-4" aria-hidden />
+                      <ArticleCardIllustration
+                        slug={article.slug}
+                        category={article.category}
+                        className="h-auto w-full transition duration-500 group-hover:scale-[1.02]"
+                      />
                     </Link>
+
+                    <div className="flex flex-1 flex-col p-6">
+                      <span className="inline-flex w-fit rounded-full bg-mm-sky-subtle/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-mm-sky-deep">
+                        {category?.name ?? "Kennisbank"}
+                      </span>
+                      <h3 className="mt-4 text-lg font-bold leading-snug text-mm-text">
+                        <Link
+                          href={`/kennisbank/${article.slug}`}
+                          className="hover:text-mm-sky-deep"
+                        >
+                          {article.title}
+                        </Link>
+                      </h3>
+                      <p className="mt-2 flex-1 text-sm leading-relaxed text-mm-muted">
+                        {article.description}
+                      </p>
+                      <span className="mt-4 text-xs font-semibold text-mm-muted">
+                        {formatDate(article.publishedAt)} · {article.readMinutes} min
+                      </span>
+                      <Link
+                        href={`/kennisbank/${article.slug}`}
+                        className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-mm-accent"
+                      >
+                        Lees artikel
+                        <ArrowUpRight className="size-4" aria-hidden />
+                      </Link>
+                    </div>
                   </article>
                 </li>
               </Reveal>

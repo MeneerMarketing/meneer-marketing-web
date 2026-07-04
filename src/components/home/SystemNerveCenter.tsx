@@ -21,7 +21,7 @@ interface NodeDefinition {
 
 const NODES: NodeDefinition[] = [
   { id: "shop", label: "Shopify", Icon: ShoppingBag, angle: -90, color: "#95BF47" },
-  { id: "auto", label: "n8n flows", Icon: Workflow, angle: -18, color: "#EA4B71" },
+  { id: "auto", label: "n8n automatisering", Icon: Workflow, angle: -18, color: "#EA4B71" },
   { id: "ads", label: "Ads", Icon: Target, angle: 54, color: "#FF5722" },
   { id: "chat", label: "AI chat", Icon: Bot, angle: 126, color: "#00BCD4" },
   { id: "mail", label: "Mail", Icon: MessageSquare, angle: 198, color: "#0F172A" },

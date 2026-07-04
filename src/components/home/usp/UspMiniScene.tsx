@@ -1,4 +1,5 @@
 import type { UspSceneId } from "@/data/home-usps";
+import { GOOGLE_WORDMARK_LETTERS } from "@/components/icons/GoogleWordmark";
 
 interface UspMiniSceneProps {
   scene: UspSceneId;
@@ -118,14 +119,18 @@ function AdsScene() {
       <circle cx="17" cy="18" r="2" fill="#FBBC04" />
       <circle cx="22" cy="18" r="2" fill="#34A853" />
       <circle cx="27" cy="18" r="2" fill="#4285F4" />
-      <text x="14" y="36" fill="#4285F4" fontSize="11" fontWeight="800" fontFamily="system-ui, sans-serif">
-        G
+      <text x="10" y="36" fontSize="11" fontWeight="800" fontFamily="system-ui, sans-serif">
+        {GOOGLE_WORDMARK_LETTERS.map((letter, i) => (
+          <tspan key={i} fill={letter.color}>
+            {letter.char}
+          </tspan>
+        ))}
       </text>
       <rect x="28" y="28" width="22" height="3" rx="1.5" fill="#1E293B" />
       <rect x="28" y="34" width="18" height="2" rx="1" fill="#94A3B8" />
       <rect x="28" y="39" width="14" height="2" rx="1" fill="#CBD5E1" />
       <rect x="10" y="46" width="16" height="6" rx="3" fill="#4285F4" opacity="0.15" />
-      <text x="13" y="51" fill="#4285F4" fontSize="4.5" fontWeight="700">
+      <text x="13" y="51" fill="#64748B" fontSize="4.5" fontWeight="700">
         Ad
       </text>
 

@@ -41,7 +41,7 @@ const ZONES: Zone[] = [
   {
     href: "/diensten/ai-zoek",
     short: "AI",
-    zoneLabel: "ChatGPT · Gemini · Claude",
+    zoneLabel: "ChatGPT · Gemini",
     x: 4,
     y: 26,
     w: 44,
@@ -76,7 +76,7 @@ const ZONES: Zone[] = [
   },
 ];
 
-const CHANNEL_PILLS = ["Google", "ChatGPT", "Gemini", "Claude", "Maps"] as const;
+const CHANNEL_PILLS = ["Google", "ChatGPT", "Gemini", "Maps"] as const;
 
 const MAP_STATS = [
   { label: "Zoekvlakken", value: "5" },
