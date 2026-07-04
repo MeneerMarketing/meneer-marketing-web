@@ -2,9 +2,9 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Search } from "lucide-react";
-import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { MouseEvent as ReactMouseEvent } from "react";
+import { GoogleWordmark } from "@/components/pillars/premium/GoogleWordmark";
 
 const QUERIES = [
   "beste marketing bureau nederland",
@@ -157,14 +157,7 @@ export function VindbaarheidHero() {
         {/* Google-achtige header */}
         <div className="border-b border-slate-100 px-5 pt-5 pb-4">
           <div className="flex items-center justify-center gap-0.5">
-            <Image
-              src="/images/google-logo.png"
-              alt="Google"
-              width={110}
-              height={36}
-              className="h-8 w-auto"
-              priority
-            />
+            <GoogleWordmark />
             <span className="text-sm font-normal text-slate-400">.nl</span>
           </div>
 
