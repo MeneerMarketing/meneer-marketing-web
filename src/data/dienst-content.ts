@@ -137,12 +137,12 @@ const CONTENT = {
     ],
   ),
   webdesign: body(
-    "UI/UX gaat over vertrouwen, hiërarchie en conversie. Ik ontwerp schermen die rust uitstralen en duidelijk maken wat de volgende stap is. Op desktop en mobiel.",
+    "UI/UX gaat over vertrouwen, hiërarchie en conversie. Ik ontwerp schermen die rust uitstralen en duidelijk maken wat de volgende stap is. Op desktop én mobiel, development-klaar in Figma.",
     [
-      "Wireframes en flows vóór pixels, zodat structuur klopt",
-      "Design system-light: herhaalbare patronen voor snelheid",
-      "Afstemming met development: Figma die daadwerkelijk te bouwen is",
-      "Toegankelijkheid: contrast, focus states en semantiek meegenomen",
+      "Wireframes en flows vóór pixels, zodat structuur en primaire acties kloppen",
+      "Design system-light: herhaalbare patronen zodat je merk consistent blijft bij groei",
+      "Afstemming met development: componenten, states en specs die echt te bouwen zijn",
+      "Toegankelijkheid: contrast, focus states en semantiek vanaf het eerste scherm",
     ],
   ),
   animaties: body(

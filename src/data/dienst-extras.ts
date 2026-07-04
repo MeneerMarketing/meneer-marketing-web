@@ -247,16 +247,21 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   webdesign: {
     outcomes: [
-      "Flows en wireframes vóór pixels",
-      "Design system-light: herhaalbare patronen",
-      "Toegankelijkheid: contrast, focus en semantiek meegenomen",
+      "Flows en wireframes vóór pixels, goedgekeurd voordat er polish komt",
+      "Figma met componenten, states en specs voor voorspelbare build",
+      "Toegankelijkheid en mobiel-first waar jouw omzet dat vraagt",
     ],
     faq: [
       Q.start,
       {
         question: "Leveren jullie Figma voor onze developers?",
         answer:
-          "Ja. Met componenten, states en specificaties zodat build voorspelbaar blijft.",
+          "Ja. Met componenten, states, spacing en specificaties zodat build voorspelbaar blijft. Of ik bouw het zelf from scratch, dan is design en code al op één lijn.",
+      },
+      {
+        question: "Ontwerpen jullie alleen, of bouwen jullie ook?",
+        answer:
+          "Beide. Vaak ontwerp én bouw ik in één lijn: wireframes, Figma, Next.js of Shopify. Geen estafette tussen designer en developer die elkaar niet snappen.",
       },
       Q.meet,
     ],

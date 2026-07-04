@@ -21,7 +21,7 @@ export interface DienstPremiumScaleCallout {
 
 export interface DienstPremiumContent {
   /** Welke hero-illustratie rechts in de hero */
-  heroVisual?: "build" | "shopify" | "portal" | "speed";
+  heroVisual?: "build" | "shopify" | "portal" | "speed" | "ux";
   /** Korte onderregel met punch in de hero */
   heroKicker: string;
   /** Onverwacht feitje of harde waarheid */
@@ -338,6 +338,79 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       { label: "Meting", value: "Geld-pagina's" },
       { label: "Metrics", value: "LCP · INP · CLS" },
       { label: "Resultaat", value: "CWV groen" },
+    ],
+  },
+  webdesign: {
+    heroVisual: "ux",
+    heroKicker:
+      "Ontwerp dat verkopen en vertrouwen combineert. Geen mooie plaatjes zonder doel: flows, hiërarchie en schermen die duidelijk maken wat de volgende stap is. Op desktop én mobiel.",
+    funFact:
+      "Bezoekers vormen in minder dan een halve seconde een eerste indruk van je site. Nog voordat ze je aanbod hebben gelezen.",
+    funFactSource: "Daarom hiërarchie vóór decoratie",
+    funFactStat: "0,5 sec",
+    principles: [
+      {
+        title: "Flows vóór pixels",
+        body: "Ik teken eerst de klantreis: wat moet iemand doen, waar twijfelt hij, wat is de enige primaire actie per scherm? Pas daarna kleur, typo en beeld. Zo ontwerp je geen mooie doodlopende straat.",
+      },
+      {
+        title: "Context boven templates",
+        body: "Een checkout voor luxe goederen vraagt andere hiërarchie dan een B2B-formulier of een Shopify PDP. SkinComplete en BestRest kregen elk een eigen UI-logica. Geen one-size Figma-template.",
+      },
+      {
+        title: "Design dat gebouwd wordt",
+        body: "Componenten, states, spacing en toegankelijkheid in Figma. Development-klaar, zodat bouwen voorspelbaar blijft en je merk consistent meegroeit bij elke iteratie.",
+      },
+    ],
+    lens: "UI/UX is de laag tussen je aanbod en de klik. Slecht ontwerp kost omzet zonder dat je het in je ads-statistieken ziet. Ik ontwerp alsof elke pagina een landingspagina is: één duidelijke actie, vertrouwen op de plekken waar twijfel zit, en mobiel als echte omzet-driver als dat bij jou klopt.",
+    approachSteps: [
+      {
+        title: "Klantreis en acties",
+        body: "We brengen in kaart wie er landt, waar ze vandaan komen (SEO, Google Ads, Meta Ads) en welke stap je per scherm wilt. Objections van sales en support nemen we mee.",
+      },
+      {
+        title: "Wireframes en flows",
+        body: "Structuur eerst: pagina's, secties, formulieren, checkout. Jij keurt de logica goed voordat er visuele polish komt.",
+      },
+      {
+        title: "Visueel design",
+        body: "Merk, typo, kleur en componenten die herhaalbaar zijn. Design system-light: snel itereren zonder dat elke pagina een eigen dialect spreekt.",
+      },
+      {
+        title: "Handoff en iteratie",
+        body: "Figma met specs, states en a11y-notities. Afstemming met development zodat wat ontworpen is ook zo live gaat. Daarna meten we gedrag en scherpen bij.",
+      },
+    ],
+    capabilities: [
+      "Flows eerst",
+      "Figma klaar",
+      "Mobiel-first",
+      "Conversie-led",
+      "Design system",
+      "A11y meegenomen",
+      "Build-ready",
+    ],
+    outcomes: [
+      {
+        title: "Flows die twijfel wegnemen",
+        detail:
+          "Wireframes en schermen waar de primaire actie direct duidelijk is. Minder afhakers op mobiel, minder 'waar moet ik klikken?' in je inbox.",
+      },
+      {
+        title: "Figma met componenten en states",
+        detail:
+          "Hover, focus, error, loading: alles wat development nodig heeft om zonder giswerk te bouwen. Geen losse JPG's of vage 'maak het zoals Apple'.",
+      },
+      {
+        title: "Consistent en toegankelijk",
+        detail:
+          "Contrast, focus states en semantiek vanaf dag één. Premium voelt premium, ook voor mensen die reduced motion of screenreaders gebruiken.",
+      },
+    ],
+    heroStats: [
+      { label: "Aanpak", value: "Flows eerst" },
+      { label: "Deliverable", value: "Figma klaar" },
+      { label: "Focus", value: "Conversie" },
     ],
   },
 };

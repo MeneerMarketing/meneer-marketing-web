@@ -7,6 +7,7 @@ import { HeroBuildWindow } from "@/components/diensten/premium/HeroBuildWindow";
 import { HeroPortalWindow } from "@/components/diensten/premium/HeroPortalWindow";
 import { HeroShopifyWindow } from "@/components/diensten/premium/HeroShopifyWindow";
 import { HeroSpeedWindow } from "@/components/diensten/premium/HeroSpeedWindow";
+import { HeroUxWindow } from "@/components/diensten/premium/HeroUxWindow";
 import { OutcomeSwitchboard } from "@/components/diensten/premium/OutcomeSwitchboard";
 import {
   PremiumSidebar,
@@ -132,6 +133,8 @@ export function DienstPremiumView({
               <HeroPortalWindow />
             ) : premium.heroVisual === "speed" ? (
               <HeroSpeedWindow />
+            ) : premium.heroVisual === "ux" ? (
+              <HeroUxWindow />
             ) : (
               <HeroBuildWindow />
             )}

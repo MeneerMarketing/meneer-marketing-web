@@ -147,6 +147,20 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
       body: "Twintig apps, zware scripts, een theme dat elke release trager wordt. Ik trim wat kan, vervang wat moet, en documenteer wat je team moet onthouden.",
     },
   ],
+  webdesign: [
+    {
+      title: "Checkout of PDP die niet converteert",
+      body: "Bezoekers komen binnen via Google Ads of SEO, maar kopen niet. Dan kijken we naar hiërarchie, trust en mobiele frictie op de schermen die omzet moeten dragen.",
+    },
+    {
+      title: "Portaal waar niemand mee wil werken",
+      body: "Je team of klanten loggen in en raken kwijt. Dan herontwerpen we flows en rollen zodat de volgende stap vanzelfsprekend is. SkinComplete en Hills Pilates begonnen zo.",
+    },
+    {
+      title: "Rebrand plus nieuwe site",
+      body: "Nieuwe huisstijl, nieuwe propositie, één consistente UI over web en campagnes. Design system-light zodat elke pagina hetzelfde merk spreekt.",
+    },
+  ],
 };
 
 const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
@@ -322,9 +336,9 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   webdesign: {
     deepTitle: "UI/UX: conversie is context. Geen one-size template",
     deepLead:
-      "Een checkout voor luxe goederen vraagt andere hiërarchie dan een snelle SaaS-trial of een formulier voor zorg. Ik ontwerp flows en schermen vanuit jouw klantreis.",
+      "Een checkout voor luxe goederen vraagt andere hiërarchie dan een snelle SaaS-trial of een B2B-formulier. Ik ontwerp flows en schermen vanuit jouw klantreis, niet vanuit een Dribbble-shot.",
     deepExtended:
-      "Design lever ik development-klaar: componenten, states en toegankelijkheid. Zo wordt bouwen voorspelbaar en blijft je merk consistent bij iteraties.",
+      "Design lever ik development-klaar: componenten, states, spacing en toegankelijkheid in Figma. Zo wordt bouwen voorspelbaar, blijft je merk consistent bij iteraties en sluit UI aan op Google Ads-landingspagina's en SEO-content.",
     signals: [
       "Wat is de primaire actie per scherm. En wat is bewust secundair?",
       "Hoe kritisch is mobiel voor jouw omzet?",
