@@ -21,7 +21,7 @@ export interface DienstPremiumScaleCallout {
 
 export interface DienstPremiumContent {
   /** Welke hero-illustratie rechts in de hero */
-  heroVisual?: "build" | "shopify" | "portal";
+  heroVisual?: "build" | "shopify" | "portal" | "speed";
   /** Korte onderregel met punch in de hero */
   heroKicker: string;
   /** Onverwacht feitje of harde waarheid */
@@ -265,6 +265,79 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       { label: "Aanpak", value: "From scratch" },
       { label: "Stack", value: "Next.js · typed" },
       { label: "Cases", value: "SC · Hills" },
+    ],
+  },
+  optimalisatie: {
+    heroVisual: "speed",
+    heroKicker:
+      "Snellere site, betere scores in Google. Geen cosmetische speed plugin maar code, assets en server: meten op pagina's die omzet draaien, prioriteren, fixen, opnieuw meten.",
+    funFact:
+      "Meer dan de helft van mobiele bezoekers hakt af als een pagina langer dan drie seconden laadt. Google meet dat mee in Core Web Vitals.",
+    funFactSource: "Daarom meten op geld-pagina's",
+    funFactStat: "53%",
+    principles: [
+      {
+        title: "Meten waar het telt",
+        body: "Niet je homepage-score als trofee. Ik kijk naar productpagina's, landingspagina's en templates die ads, SEO of checkout dragen. LCP en INP per device, gekoppeld aan echte traffic.",
+      },
+      {
+        title: "Prioriteit boven polish",
+        body: "Soms levert één zware app of een trage font-stack meer winst dan micro-optimalisatie overal. Ik maak die afweging expliciet, inclusief wat het betekent voor je roadmap en je Google Ads-budget.",
+      },
+      {
+        title: "Snel blijven na launch",
+        body: "Elke nieuwe feature is een kans om snelheid terug te verliezen. Daarom documenteer ik wat we aanpassen en waar je op moet letten. Jij of je team hoeft geen performance-engineer te worden.",
+      },
+    ],
+    lens: "Optimaliseren is geen eenmalige sprint. Het is voorkomen dat je site langzamer wordt terwijl je groeit: meer SKU's, meer scripts, meer campagnes. Bij BestRest en SkinComplete bouwden we al snel from scratch. Deze dienst houdt dat vast, of herstelt wat een template of app-estafette heeft gesloopt.",
+    approachSteps: [
+      {
+        title: "Audit op echte templates",
+        body: "We brengen in kaart welke URL's omzet, leads of autoriteit dragen. Core Web Vitals, third-parties, theme-bloat en crawl-problemen per template, niet alleen op de homepage.",
+      },
+      {
+        title: "Prioriteren met impact",
+        body: "Wat levert de grootste winst voor LCP, INP en CLS zonder functionaliteit te breken? Ik leg uit wat nu moet, wat later kan, en wat je zelf kunt beheren.",
+      },
+      {
+        title: "Fixen in code en assets",
+        body: "Afbeeldingen, fonts, lazy loading, script-loading, Liquid-bloat, caching. Geen plugin die alles maskeert. Wel concrete fixes die je kunt terugvinden in de codebase.",
+      },
+      {
+        title: "Meten, documenteren, door",
+        body: "Voor/na metingen op dezelfde pagina's. Documentatie voor je team. En een korte lijst: wat mag je nooit meer ongemerkt toevoegen aan productpagina's.",
+      },
+    ],
+    capabilities: [
+      "CWV groen",
+      "LCP · INP · CLS",
+      "Geen speed plugins",
+      "Third-party trim",
+      "Technische SEO",
+      "Voor/na meting",
+      "Blijft snel",
+    ],
+    outcomes: [
+      {
+        title: "Concrete winst op LCP, INP en CLS",
+        detail:
+          "Gemeten voor en na op de templates die ertoe doen. Geen vage 'sneller gevoel', wel cijfers die je kunt koppelen aan conversie en crawlruimte in Google.",
+      },
+      {
+        title: "Minder ballast, zelfde functionaliteit",
+        detail:
+          "Apps, scripts en theme-code die elkaar tegenwerken. Ik trim wat kan, vervang wat moet, en laat zien wat echt nodig is voor ads, consent en chat.",
+      },
+      {
+        title: "Documentatie die blijft werken",
+        detail:
+          "Je team weet wat een nieuwe sectie of app doet met snelheid. Geen black box die over drie maanden weer rood wordt zodra iemand een slider toevoegt.",
+      },
+    ],
+    heroStats: [
+      { label: "Meting", value: "Geld-pagina's" },
+      { label: "Metrics", value: "LCP · INP · CLS" },
+      { label: "Resultaat", value: "CWV groen" },
     ],
   },
 };

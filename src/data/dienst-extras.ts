@@ -82,7 +82,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
   },
   optimalisatie: {
     outcomes: [
-      "Concrete winst op LCP, CLS en INP. Gemeten voor/na",
+      "Concrete winst op LCP, CLS en INP. Gemeten voor/na op omzet-pagina's",
       "Minder third-party en theme-bloat zonder functionaliteit te breken",
       "Documentatie zodat nieuwe features snelheid niet terugverliezen",
     ],
@@ -90,7 +90,12 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Hoe diep gaan jullie. Ook server en DNS?",
         answer:
-          "We beginnen bij de grootste bottlenecks (meestal frontend en assets). Wa nodig kijken we mee naar hosting, caching en CDN. In samenwerking met je provider.",
+          "We beginnen bij de grootste bottlenecks, meestal frontend, assets en third-parties. Wa nodig kijken we mee naar hosting, caching en CDN, in samenwerking met je provider.",
+      },
+      {
+        question: "Optimaliseren jullie alleen Shopify, of ook custom sites?",
+        answer:
+          "Beide. Shopify-themes, Next.js, WordPress-migraties: de aanpak is hetzelfde. Meten op templates die ertoe doen, fixen in code, niet maskeren met plugins.",
       },
       Q.start,
       Q.meet,

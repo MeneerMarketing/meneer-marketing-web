@@ -133,6 +133,20 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
       body: "Je team gebruikt het echt, omdat flows kloppen en schermen logisch zijn. Geen project dat na launch in een la verdwijnt.",
     },
   ],
+  optimalisatie: [
+    {
+      title: "Trage productpagina's",
+      body: "Je ads draaien, maar landingspagina's of PDP's laden traag. Dan pakken we LCP en INP op de templates die omzet dragen, niet alleen de homepage.",
+    },
+    {
+      title: "Content & SEO-machine",
+      body: "Je redactie publiceert dagelijks. Dan is editor-ervaring, interne linking en performance geen luxe. Het is je businessmodel.",
+    },
+    {
+      title: "Theme of app-estafette",
+      body: "Twintig apps, zware scripts, een theme dat elke release trager wordt. Ik trim wat kan, vervang wat moet, en documenteer wat je team moet onthouden.",
+    },
+  ],
 };
 
 const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
@@ -178,12 +192,12 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   optimalisatie: {
     deepTitle: "Snelheid: geen score-jacht, maar conversie en crawlruimte",
     deepLead:
-      "Een goede optimalisatie start met meten op de pagina’s die geld of autoriteit dragen. Niet met een willekeurige homepage-score. Ik koppel LCP/INP aan templates, landingsverkeer en SEO-prioriteiten.",
+      "Een goede optimalisatie start met meten op de pagina's die geld of autoriteit dragen. Niet met een willekeurige homepage-score. Ik koppel LCP en INP aan templates, landingsverkeer, Google Ads en SEO-prioriteiten.",
     deepExtended:
-      "Soms win je meer met het trimmen van één zware app op productpagina’s dan met micro-optimalisatie overal. Ik maak die afweging expliciet, inclusief wat het betekent voor je roadmap en je marketing.",
+      "Soms win je meer met het trimmen van één zware app op productpagina's dan met micro-optimalisatie overal. Ik maak die afweging expliciet, inclusief wat het betekent voor je roadmap, je campagnes en je crawl-budget in Google.",
     signals: [
       "Welke URL-templates dragen de meeste omzet of leads?",
-      "Welke third-parties zijn strikt nodig voor ads, consent of chat?",
+      "Welke third-parties zijn strikt nodig voor Google Ads, Meta Ads, consent of chat?",
       "Hoe snel schip je nu features. En waar botst dat met performance?",
       "Wat zijn je huidige CWV-knelpunten per device?",
     ],

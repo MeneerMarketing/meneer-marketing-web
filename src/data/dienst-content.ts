@@ -47,12 +47,12 @@ const CONTENT = {
     ],
   ),
   optimalisatie: body(
-    "Trage sites kosten omzet. En SEO-ruimte. Ik doe geen cosmetische ‘speed plugin’ maar code-, asset- en serverlaag: meten, prioriteren, oplossen, opnieuw meten.",
+    "Trage sites kosten omzet. En SEO-ruimte. Ik doe geen cosmetische speed plugin maar code, assets en server: meten op pagina's die geld of autoriteit dragen, prioriteren, fixen, opnieuw meten.",
     [
-      "LCP, CLS en INP: concrete fixes, geen vage scores",
-      "Afbeeldingen, fonts, third-party scripts en theme-bloat aangepakt",
-      "Technische SEO en crawlbaarheid die meelift op snelheid",
-      "Documentatie zodat het snel blijft na nieuwe features",
+      "LCP, CLS en INP: concrete fixes op templates die ads, checkout of SEO dragen",
+      "Afbeeldingen, fonts, third-party scripts en theme-bloat aangepakt zonder functionaliteit te breken",
+      "Technische SEO en crawlbaarheid die meelift op snelheid, geen trucjes",
+      "Documentatie zodat nieuwe features je Core Web Vitals niet terug naar rood trekken",
     ],
   ),
   seo: body(
