@@ -55,8 +55,8 @@ function FactCard({ fact, index }: { fact: MarketingFunFact; index: number }) {
           style={{ willChange: "transform" }}
         >
           {/* Voorkant */}
-          <div className="absolute inset-0 flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_36px_-14px_rgba(15,23,42,0.16)] [backface-visibility:hidden]">
-            <div className="flex items-start justify-between">
+          <div className="absolute inset-0 flex flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_36px_-14px_rgba(15,23,42,0.16)] [backface-visibility:hidden]">
+            <div className="flex min-h-[2.75rem] shrink-0 items-start justify-between">
               <span
                 className="inline-flex max-w-[85%] rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-white"
                 style={{ backgroundColor: fact.accent }}
@@ -64,19 +64,20 @@ function FactCard({ fact, index }: { fact: MarketingFunFact; index: number }) {
                 {fact.badge}
               </span>
               <Repeat2
-                className="size-4 text-slate-300 transition group-hover:rotate-180 group-hover:text-slate-500"
+                className="size-4 shrink-0 text-slate-300 transition group-hover:rotate-180 group-hover:text-slate-500"
                 aria-hidden
               />
             </div>
-            <div className="min-w-0">
-              <p className={FUN_FACT_STAT_CLASS} style={{ color: fact.accent }}>
-                {fact.stat}
-              </p>
-              <p className="mt-3 text-base font-bold leading-snug text-slate-900">
-                {fact.teaser}
-              </p>
-            </div>
-            <p className="text-xs font-semibold text-slate-400">
+            <p
+              className={`${FUN_FACT_STAT_CLASS} shrink-0`}
+              style={{ color: fact.accent }}
+            >
+              {fact.stat}
+            </p>
+            <p className="mt-3 min-h-[2.75rem] shrink-0 text-base font-bold leading-snug text-slate-900">
+              {fact.teaser}
+            </p>
+            <p className="mt-auto shrink-0 pt-4 text-xs font-semibold text-slate-400">
               Draai me om voor het hele verhaal
             </p>
           </div>

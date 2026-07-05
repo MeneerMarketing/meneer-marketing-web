@@ -41,23 +41,28 @@ export function MarketingFunFactCard({ fact, className }: MarketingFunFactCardPr
         transition={reduce ? { duration: 0 } : { type: "spring", stiffness: 260, damping: 26 }}
         className="relative size-full [transform-style:preserve-3d]"
       >
-        <div className="absolute inset-0 flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_10px_32px_-14px_rgba(15,23,42,0.14)] [backface-visibility:hidden]">
-          <div className="flex items-start justify-between">
+        <div className="absolute inset-0 flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_10px_32px_-14px_rgba(15,23,42,0.14)] [backface-visibility:hidden]">
+          <div className="flex min-h-[2.5rem] shrink-0 items-start justify-between">
             <span
               className="inline-flex max-w-[90%] rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-white"
               style={{ backgroundColor: fact.accent }}
             >
               {fact.badge}
             </span>
-            <Repeat2 className="size-4 text-slate-300" aria-hidden />
+            <Repeat2 className="size-4 shrink-0 text-slate-300" aria-hidden />
           </div>
-          <div className="min-w-0">
-            <p className={FUN_FACT_STAT_CLASS} style={{ color: fact.accent }}>
-              {fact.stat}
-            </p>
-            <p className="mt-2 text-sm font-bold leading-snug text-slate-900">{fact.teaser}</p>
-          </div>
-          <p className="text-[11px] font-semibold text-slate-400">Draai om voor het verhaal</p>
+          <p
+            className={`${FUN_FACT_STAT_CLASS} shrink-0`}
+            style={{ color: fact.accent }}
+          >
+            {fact.stat}
+          </p>
+          <p className="mt-2 min-h-[2.5rem] shrink-0 text-sm font-bold leading-snug text-slate-900">
+            {fact.teaser}
+          </p>
+          <p className="mt-auto shrink-0 pt-3 text-[11px] font-semibold text-slate-400">
+            Draai om voor het verhaal
+          </p>
         </div>
         <div
           className="absolute inset-0 flex flex-col rounded-2xl border border-slate-800 bg-slate-900 p-5 [backface-visibility:hidden] [transform:rotateY(180deg)]"
