@@ -228,7 +228,7 @@ export function HomeWorkStagesScroll() {
   return (
     <section
       ref={ref}
-      className="relative border-b border-slate-200 bg-gradient-to-b from-slate-100 via-white to-white"
+      className="relative overflow-x-clip border-b border-slate-200 bg-gradient-to-b from-slate-100 via-white to-white"
       aria-labelledby="home-ideal-route-heading"
     >
       <div
@@ -505,9 +505,8 @@ function JourneyRouteTrack({
   });
 
   return (
-    <nav aria-label="Ideale groeiroute" className="relative mt-10 overflow-visible pb-4 lg:mt-12">
-      <div className="overflow-x-auto overflow-y-visible pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <div className="min-w-[720px] overflow-visible sm:min-w-0">
+    <nav aria-label="Ideale groeiroute" className="relative mt-10 overflow-x-clip pb-4 lg:mt-12">
+      <div className="relative w-full min-w-0">
           <div ref={trackRef} className="relative h-[128px] sm:h-[112px]">
             <svg
               viewBox={`${-VIEW_PAD} 0 ${VIEW_BOX_W} ${VIEW_H}`}
@@ -637,7 +636,7 @@ function JourneyRouteTrack({
             ) : null}
           </div>
 
-          <div className="relative mt-2 min-h-[5.75rem] overflow-visible pb-4 sm:min-h-[5.25rem]">
+          <div className="relative mt-2 min-h-[5.75rem] overflow-x-clip pb-4 sm:min-h-[5.25rem]">
             {stopPoints.map((point, index) => {
               const item = IDEAL_ROUTE[index]!;
               const isOn = active === index && !atSuccess;
@@ -676,7 +675,6 @@ function JourneyRouteTrack({
             />
           </div>
         </div>
-      </div>
     </nav>
   );
 }

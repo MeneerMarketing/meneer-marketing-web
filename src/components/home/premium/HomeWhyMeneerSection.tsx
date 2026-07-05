@@ -24,7 +24,7 @@ function MeneerPillarVisual({ reduce }: { reduce: boolean }) {
 
   return (
     <div className="relative mx-auto w-full max-w-[380px]">
-      <div className="relative aspect-square overflow-visible rounded-3xl bg-white/10">
+      <div className="relative aspect-square overflow-hidden rounded-3xl bg-white/10">
         <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
           <motion.div
             initial={reduce ? false : { opacity: 0, scale: 0.92 }}
@@ -82,7 +82,7 @@ export function HomeWhyMeneerSection() {
   return (
     <section
       aria-labelledby="home-why-meneer-heading"
-      className="relative overflow-hidden bg-[#FF5722]"
+      className="relative overflow-x-clip overflow-hidden bg-[#FF5722]"
     >
       <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">

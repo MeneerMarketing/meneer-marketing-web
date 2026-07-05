@@ -48,7 +48,7 @@ export default function HomePage() {
         })}
       />
       <SiteHeader />
-      <main id="main" className="flex-1">
+      <main id="main" className="flex-1 overflow-x-clip">
         <HeroSection />
         <HomeUspBar />
         <ServicesOfficeSection />

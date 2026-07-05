@@ -65,7 +65,7 @@ export function InsightsPreviewSection() {
 
   return (
     <section
-      className="border-b border-slate-200 bg-gradient-to-b from-slate-50/80 to-white"
+      className="border-b border-slate-200 bg-gradient-to-b from-slate-50/80 to-white overflow-x-clip"
       aria-labelledby="insights-heading"
     >
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
@@ -106,8 +106,8 @@ export function InsightsPreviewSection() {
           </div>
         </Reveal>
 
-        <div className="-mx-4 mt-8 sm:mx-0 sm:mt-12">
-          <ul className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
+        <div className="mt-8 overflow-x-clip sm:mt-12">
+          <ul className="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain px-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
             {articles.map((article, i) => (
               <li
                 key={article.slug}

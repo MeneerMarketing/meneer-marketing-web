@@ -15,7 +15,7 @@ export function HomeUspBar() {
   return (
     <section
       aria-label="Specialismes"
-      className="relative border-b border-slate-200/80 bg-slate-50/90"
+      className="relative overflow-x-clip border-b border-slate-200/80 bg-slate-50/90"
     >
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-6 sm:flex-row sm:items-center sm:gap-5 sm:px-6 sm:py-7 lg:px-8">
         <p className="shrink-0 text-center text-xs font-bold tracking-tight text-slate-600 sm:text-left sm:text-sm">
@@ -23,7 +23,7 @@ export function HomeUspBar() {
         </p>
 
         {/* py-3 = ruimte voor rotatie/schaduw; horizontale scroll alleen als het echt niet past */}
-        <div className="min-w-0 w-full py-2 sm:flex-1 sm:overflow-x-auto sm:overscroll-x-contain [-ms-overflow-style:none] [scrollbar-width:none] sm:[&::-webkit-scrollbar]:hidden">
+        <div className="min-w-0 w-full overflow-x-auto overscroll-x-contain py-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-1">
           <ul className="mx-auto flex w-max flex-nowrap items-center justify-center gap-1.5 sm:ml-auto sm:justify-end sm:gap-2">
             {HOME_USP_STICKERS.map((item, index) => {
               const rotate = STICKER_ROTATIONS[index % STICKER_ROTATIONS.length];
