@@ -1,15 +1,211 @@
 export const CONTACT_HERO = {
   eyebrow: "Contact",
-  title: "Laten we kijken wat jouw situatie nodig heeft.",
+  title: "Gewoon even praten.",
   subtitle:
-    "Geen standaard offerte uit een automaat. Vertel kort waar je tegenaan loopt en we bepalen samen of strategie, bouwen from scratch, SEO, Google Ads, Meta Ads of automatisering de slimste eerste stap is.",
-  aside:
-    "Geen chatbot die 'ik begrijp het' zegt en niks doet. Je bericht komt bij mij. Ik lees alles zelf.",
+    "Geen standaard contactformulier met dropdowns en corporate tone. Dit voelt als een gesprek. Typ wat je wilt: marketing, je site, een idee, of gewoon 'hoi, kunnen we bellen?'",
   stats: [
     { label: "Reactietijd", value: "1–2 dagen" },
-    { label: "Aanpak", value: "Persoonlijk" },
-    { label: "CRM-automaat", value: "Nee" },
+    { label: "Tussenlaag", value: "Nul" },
+    { label: "CRM-stalker", value: "Nee" },
   ],
+} as const;
+
+export const CONTACT_CHAT_OPENERS = [
+  "Hoi. Je hebt me te pakken. Geen chatbot die 'ik begrijp het' zegt en niks doet.",
+  "Marketing, je site, Shopify, ads, automatisering... of gewoon even je situatie uiten. Allemaal goed.",
+  "Je hoeft me niet te vertellen welke pizza je gisteren at. Tenzij het je conversie-ratio raakt. Grapje. Praat gewoon.",
+] as const;
+
+export interface ContactFocusOption {
+  id: string;
+  label: string;
+  meneerReply: string;
+}
+
+export interface ContactQuickReply {
+  id: string;
+  label: string;
+  onderwerp: string;
+  meneerReply: string;
+  focusOptions: readonly ContactFocusOption[];
+}
+
+export const CONTACT_QUICK_REPLIES: ContactQuickReply[] = [
+  {
+    id: "sparren",
+    label: "Even sparren",
+    onderwerp: "anders",
+    meneerReply:
+      "Lekker. Geen salespitch nodig. Eerst even scherp krijgen waar je zit.",
+    focusOptions: [
+      {
+        id: "begin",
+        label: "Weet niet waar te beginnen",
+        meneerReply:
+          "Logisch. Veel mensen starten daar. Vertel kort waar je bedrijf nu staat.",
+      },
+      {
+        id: "match",
+        label: "Twijfel of we matchen",
+        meneerReply:
+          "Snap ik. Vertel waar je mee zit. Dan merken we snel of het klikt.",
+      },
+      {
+        id: "second",
+        label: "Second opinion",
+        meneerReply:
+          "Prima. Wat doe je nu al en waar twijfel je over?",
+      },
+      {
+        id: "ideas",
+        label: "Gewoon ideeën uitwisselen",
+        meneerReply:
+          "Mooi. Geen verplicht plan. Vertel waar je over nadenkt.",
+      },
+    ],
+  },
+  {
+    id: "bouwen",
+    label: "Iets bouwen",
+    onderwerp: "web-shop",
+    meneerReply:
+      "From scratch? Mooi. Even scherp welk stuk je bedoelt.",
+    focusOptions: [
+      {
+        id: "site",
+        label: "Nieuwe website",
+        meneerReply:
+          "Vertel wat de site moet doen en voor wie. URL meesturen mag.",
+      },
+      {
+        id: "shopify",
+        label: "Shopify webshop",
+        meneerReply:
+          "Shopify kan veel. Wat verkoop je en wat mist er nu?",
+      },
+      {
+        id: "slow",
+        label: "Site is traag of gedateerd",
+        meneerReply:
+          "Klassieker. Wat irriteert je het meest aan je huidige site?",
+      },
+      {
+        id: "b2b",
+        label: "B2B portaal",
+        meneerReply:
+          "Mooi. Hoe bestellen klanten nu en wat moet beter?",
+      },
+    ],
+  },
+  {
+    id: "marketing",
+    label: "Marketing hulp",
+    onderwerp: "marketing",
+    meneerReply:
+      "SEO, Google Ads, Meta Ads? Even kijken wat het meest urgent is.",
+    focusOptions: [
+      {
+        id: "seo",
+        label: "SEO / vindbaarheid",
+        meneerReply:
+          "Organisch eerst is vaak slim. Waar wil je gevonden worden?",
+      },
+      {
+        id: "google",
+        label: "Google Ads",
+        meneerReply:
+          "Ads meten is key. Draai je al campagnes of start je fresh?",
+      },
+      {
+        id: "meta",
+        label: "Meta Ads",
+        meneerReply:
+          "Social ads vragen goede creative. Wat heb je al geprobeerd?",
+      },
+      {
+        id: "mix",
+        label: "Alles door elkaar",
+        meneerReply:
+          "Snap ik. Vertel wat je nu doet en wat het meeste pijn doet.",
+      },
+    ],
+  },
+  {
+    id: "strategie",
+    label: "Eerst de route",
+    onderwerp: "strategie",
+    meneerReply:
+      "Slim. Voordat je budget verbrandt. Waar wil je scherpte?",
+    focusOptions: [
+      {
+        id: "order",
+        label: "Volgorde kiezen",
+        meneerReply:
+          "Wat moet er over zes maanden anders zijn? Vertel je doel.",
+      },
+      {
+        id: "budget",
+        label: "Budget inschatten",
+        meneerReply:
+          "Eerlijk gesprek. Vertel je fase en wat je denkt te kunnen investeren.",
+      },
+      {
+        id: "priority",
+        label: "Prioriteit scherp",
+        meneerReply:
+          "Max drie dingen tegelijk. Wat voelt nu het meest urgent?",
+      },
+      {
+        id: "plan",
+        label: "Plan laten checken",
+        meneerReply:
+          "Prima. Wat staat er nu op papier en waar twijfel je over?",
+      },
+    ],
+  },
+  {
+    id: "geen-idee",
+    label: "Geen idee nog",
+    onderwerp: "anders",
+    meneerReply:
+      "Ook prima. Geen stress. Kies wat het dichtst in de buurt komt.",
+    focusOptions: [
+      {
+        id: "stuck",
+        label: "Website staat stil",
+        meneerReply:
+          "Gebeurt vaker dan je denkt. Wat moet de site voor je opleveren?",
+      },
+      {
+        id: "ads",
+        label: "Ads kosten te veel",
+        meneerReply:
+          "Lastig. Vertel wat je uitgeeft en wat je terugkrijgt.",
+      },
+      {
+        id: "growth",
+        label: "Groei stokt",
+        meneerReply:
+          "Frustrerend. Waar zat je een jaar geleden en waar zit je nu?",
+      },
+      {
+        id: "blank",
+        label: "Echt blank canvas",
+        meneerReply:
+          "Ook goed. Beschrijf je bedrijf in twee zinnen, dan zoeken we de ingang.",
+      },
+    ],
+  },
+];
+
+export const CONTACT_CHAT_PROMPTS = {
+  askFocus: "Waar zit je hoofd nu? Kies wat het dichtst in de buurt komt.",
+  askMessage: "Nu jij. Typ wat je wilt delen. Kort mag, lang mag ook.",
+  askName: "Top. En wie ben jij? Naam en e-mail, dan kan ik terugkoppelen.",
+  askSend: "Klaar om te versturen? Ik lees alles zelf. Geen automaat.",
+  sent: "Bedankt. Staat in mijn inbox. Reactie binnen één à twee werkdagen.",
+  teaserContinue:
+    "Mooi. Vertel het verder op contact. Dan zit je meteen in mijn inbox.",
 } as const;
 
 export interface ContactRoute {
@@ -44,19 +240,10 @@ export const CONTACT_ROUTES: ContactRoute[] = [
     scene: "mail",
   },
   {
-    id: "groeiscan",
-    title: "Doe de Groeiscan",
-    body: "Nog geen helder beeld? De Groeiscan geeft context op prioriteit en route vóór we groot bouwen.",
-    quip: "Gratis scherpte. Geen verplichting.",
-    href: "/groeiscan",
-    accent: "#00BCD4",
-    scene: "scan",
-  },
-  {
     id: "intake",
     title: "Start intake",
-    body: "Weet je al wat er moet gebeuren? Plan een intake met onderwerp en prioriteit vooraf ingevuld.",
-    quip: "Voor als je geen tijd hebt voor kleine talk.",
+    body: "Twee minuten invullen. Dan weet ik genoeg om het eerste gesprek scherp te starten.",
+    quip: "Sneller dan drie mails heen en weer.",
     href: "/intake",
     accent: "#22C55E",
     scene: "intake",
@@ -76,8 +263,8 @@ export const CONTACT_PROCESS = [
   },
   {
     tag: "Gesprek",
-    title: "Kennismaking of Groeiscan",
-    body: "Kort gesprek of verdiepende sessie. Geen verplicht traject, wel helderheid.",
+    title: "Kennismaking of intake",
+    body: "Kort gesprek na je aanvraag. Geen verplicht traject, wel helderheid.",
   },
   {
     tag: "Voorstel",
@@ -124,8 +311,8 @@ export const CONTACT_TOPICS: ContactTopic[] = [
     id: "strategy",
     label: "Strategie",
     title: "Eerst de route",
-    body: "Groeiscan, intake of sparren over prioriteit. Voordat je budget verbrandt.",
-    formValue: "groeiscan",
+    body: "Intake of sparren over prioriteit. Voordat je budget verbrandt.",
+    formValue: "strategie",
     accent: "#22C55E",
   },
 ];
@@ -144,9 +331,9 @@ export const CONTACT_FAQ = [
       "Reken op één à twee werkdagen. Sneller kan als het urgent is. Vermeld dat in je onderwerp, dan prioriteer ik.",
   },
   {
-    question: "Is de Groeiscan verplicht voordat we praten?",
+    question: "Moet ik eerst de intake invullen?",
     answer:
-      "Nee. Handig als je nog zoekt naar prioriteit. Weet je al wat er moet? Start direct met intake of het formulier.",
+      "Nee. Handig als je snel context wilt delen. Hierboven kun je ook gewoon typen alsof je me app't.",
   },
   {
     question: "Werk je met vaste pakketten?",
@@ -166,6 +353,6 @@ export const CONTACT_FAQ = [
 ] as const;
 
 export const CONTACT_CTA = {
-  title: "Liever meteen scherpte?",
-  body: "Plan een gesprek of start een project. Geen standaardpakket, wel een eerlijk plan dat past bij jouw fase.",
+  title: "Liever meteen een gestructureerd gesprek?",
+  body: "De intake duurt twee minuten. Handig als je al weet dat je wilt starten. Hierboven kun je ook gewoon praten.",
 } as const;

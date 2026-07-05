@@ -4,31 +4,37 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Check, ChevronRight, Rocket } from "lucide-react";
 import { useCallback, useState } from "react";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { TrajectoryBrowserFrame } from "@/components/home/premium/TrajectoryBrowserFrame";
 import type { HomeTrajectoryStage } from "@/data/home-premium";
 
 interface HomeTrajectoryScenesProps {
   stage: HomeTrajectoryStage;
+  /** Browser-tag rechtsboven, bijv. Snappen of Bouwen */
+  tag?: string;
 }
 
-export function HomeTrajectoryScenes({ stage }: HomeTrajectoryScenesProps) {
+export function HomeTrajectoryScenes({ stage, tag }: HomeTrajectoryScenesProps) {
   const reduce = useReducedMotion();
+  const label = tag ?? stage.short;
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={stage.id}
-        initial={reduce ? false : { opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={reduce ? undefined : { opacity: 0, y: -6 }}
-        transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-        className="flex min-h-[260px] flex-1 flex-col justify-center p-5 sm:p-6"
-      >
-        {stage.scene === "discover" && <DiscoverChat reduce={!!reduce} />}
-        {stage.scene === "route" && <RoutePicker reduce={!!reduce} />}
-        {stage.scene === "build" && <BuildDeploy reduce={!!reduce} />}
-        {stage.scene === "scale" && <ScaleDial reduce={!!reduce} />}
-      </motion.div>
-    </AnimatePresence>
+    <TrajectoryBrowserFrame tag={label}>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={stage.id}
+          initial={reduce ? false : { opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={reduce ? undefined : { opacity: 0, y: -6 }}
+          transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+          className="flex min-h-[260px] flex-1 flex-col justify-center p-5 sm:p-6"
+        >
+          {stage.scene === "discover" && <DiscoverChat reduce={!!reduce} />}
+          {stage.scene === "route" && <RoutePicker reduce={!!reduce} />}
+          {stage.scene === "build" && <BuildDeploy reduce={!!reduce} />}
+          {stage.scene === "scale" && <ScaleDial reduce={!!reduce} />}
+        </motion.div>
+      </AnimatePresence>
+    </TrajectoryBrowserFrame>
   );
 }
 

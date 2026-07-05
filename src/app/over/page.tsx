@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { OverAntiBureauSection } from "@/components/over/index/OverAntiBureauSection";
-import { OverCasesSection } from "@/components/over/index/OverCasesSection";
 import { OverDayTimeline } from "@/components/over/index/OverDayTimeline";
 import { OverIndexCta } from "@/components/over/index/OverIndexCta";
 import { OverIndexFaq } from "@/components/over/index/OverIndexFaq";
@@ -17,14 +16,14 @@ import {
 import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import { MARKETING_FUN_FACTS } from "@/data/marketing-fun-facts";
+import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { OVER_FAQ } from "@/data/over-index";
 import { absoluteUrl } from "@/lib/site";
 
 const PAGE_PATH = "/over";
 const PAGE_TITLE = "Over Meneer Marketing. Strategie, bouw en campagnes onder één dak";
 const PAGE_DESCRIPTION =
-  "Wie Meneer Marketing is, hoe we werken en waarom groei een systeem is van strategie, websites from scratch, SEO, Google Ads, Meta Ads en automatisering. Eén partner, geen losse eindjes.";
+  "Afgestudeerd als applicatieontwikkelaar, meer dan tien jaar webdesign en marketing. Meneer Marketing helpt bedrijven groeien en meer omzet halen. Van strategie en websites from scratch tot SEO, Google Ads en Meta Ads.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Over Meneer Marketing",
     description:
-      "Geen groot bureau met lagen. Wel strategie, code en campagnes vanuit één brein.",
+      "Van applicatieontwikkelaar naar online groeipartner. Meer dan tien jaar ervaring, focus op omzet en resultaat.",
     url: absoluteUrl(PAGE_PATH),
     locale: "nl_NL",
     type: "website",
@@ -71,12 +70,10 @@ export default function OverPage() {
 
         <MarketingFunFactsRow
           title="Tussendoor een feitje"
-          facts={[MARKETING_FUN_FACTS[2]!, MARKETING_FUN_FACTS[0]!]}
+          facts={getFunFactsForPage("/over")}
         />
 
         <OverDayTimeline />
-
-        <OverCasesSection />
 
         <OverIndexFaq />
 

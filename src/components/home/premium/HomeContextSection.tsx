@@ -125,8 +125,17 @@ export function HomeContextSection() {
         <p className="mt-2 max-w-2xl text-lg text-slate-600">{HOME_CONTEXT.angleBody}</p>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-[1.05fr_minmax(0,380px)] lg:items-stretch lg:gap-12">
-          <div className="flex flex-col gap-6">
-            <div className="grid gap-2 sm:grid-cols-3">
+          <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#FF5722] via-[#FF5722] to-[#E65100] p-4 shadow-[0_32px_64px_-28px_rgba(255,87,34,0.45)] ring-1 ring-[#FF5722]/40 sm:p-5">
+            <div
+              className="pointer-events-none absolute -left-8 -bottom-8 size-40 rounded-full bg-white/15 blur-3xl"
+              aria-hidden
+            />
+            <div
+              className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:32px_32px]"
+              aria-hidden
+            />
+
+            <div className="relative grid gap-2 sm:grid-cols-3">
               {PAIN_POINTS.map((p) => {
                 const Icon = p.icon;
                 const isActive = active === p.id;
@@ -137,15 +146,19 @@ export function HomeContextSection() {
                     onClick={() => setActive(p.id)}
                     className={`rounded-2xl border px-4 py-4 text-left transition-all duration-300 ${
                       isActive
-                        ? "border-[#FF5722]/50 bg-[#FF5722]/[0.05] shadow-[0_8px_24px_-12px_rgba(255,87,34,0.35)]"
-                        : "border-slate-200 bg-white hover:border-slate-300"
+                        ? "border-white bg-white text-[#FF5722] shadow-[0_12px_32px_-10px_rgba(0,0,0,0.18)]"
+                        : "border-white/30 bg-white/15 text-white hover:border-white/50 hover:bg-white/25"
                     }`}
                   >
                     <Icon
-                      className={`size-5 ${isActive ? "text-[#FF5722]" : "text-slate-400"}`}
+                      className={`size-5 ${isActive ? "text-[#FF5722]" : "text-white"}`}
                       strokeWidth={1.8}
                     />
-                    <p className="mt-2 text-xs font-bold uppercase tracking-wider text-slate-500">
+                    <p
+                      className={`mt-2 text-xs font-bold uppercase tracking-wider ${
+                        isActive ? "text-[#FF5722]" : "text-white"
+                      }`}
+                    >
                       {p.label}
                     </p>
                   </button>
@@ -160,14 +173,19 @@ export function HomeContextSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -6 }}
                 transition={{ duration: 0.25 }}
-                className="flex flex-1 flex-col rounded-2xl border border-slate-200 bg-slate-50/50 p-5 sm:p-6"
+                className="relative mt-4 flex flex-1 flex-col rounded-2xl border border-white/25 bg-white/10 p-5 backdrop-blur-sm sm:p-6"
               >
-                <h3 className="text-lg font-extrabold text-slate-900">{pain.title}</h3>
-                <div className="mt-3 flex flex-1 flex-col gap-3">
-                  {pain.paragraphs.map((paragraph) => (
+                <span className="inline-flex w-fit rounded-full border border-white/40 bg-white/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
+                  {pain.label}
+                </span>
+                <h3 className="mt-3 text-lg font-extrabold text-white sm:text-xl">{pain.title}</h3>
+                <div className="mt-4 flex flex-1 flex-col gap-3">
+                  {pain.paragraphs.map((paragraph, index) => (
                     <p
                       key={paragraph.slice(0, 32)}
-                      className="text-sm leading-relaxed text-slate-600"
+                      className={`text-sm leading-relaxed ${
+                        index === 0 ? "font-semibold text-white" : "text-white/85"
+                      }`}
                     >
                       {paragraph}
                     </p>
@@ -176,7 +194,7 @@ export function HomeContextSection() {
               </motion.div>
             </AnimatePresence>
 
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm lg:hidden">
+            <div className="relative mt-4 overflow-hidden rounded-2xl border border-white/25 bg-white lg:hidden">
               <PainVisual type={pain.visual} />
             </div>
           </div>

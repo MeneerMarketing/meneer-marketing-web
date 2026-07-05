@@ -18,7 +18,7 @@ interface FormState {
 const ONDERWERPEN = [
   { value: "", label: "Kies een onderwerp" },
   { value: "intake", label: "Intake / kennismaking" },
-  { value: "groeiscan", label: "Groeiscan" },
+  { value: "strategie", label: "Strategie & prioriteit" },
   { value: "web-shop", label: "Website of webshop" },
   { value: "marketing", label: "SEO, ads of groei" },
   { value: "automatisering", label: "Automatisering & koppelingen" },
@@ -29,7 +29,7 @@ const ONDERWERPEN = [
 const COACH_BY_ONDERWERP: Record<string, string> = {
   "": "Vertel het gewoon. Geen salespitch nodig. Ik lees alles zelf.",
   intake: "Kennismaken? Top. Hoe concreter je bent, hoe sneller we schakelen.",
-  groeiscan: "Groeiscan kan. Maar dit formulier werkt ook. Jij kiest.",
+  strategie: "Prioriteit scherp? Top. Vertel waar je tegenaan loopt.",
   "web-shop": "Website, Shopify of portaal? Stuur je URL mee als je die hebt.",
   marketing: "SEO, Google Ads, Meta Ads? Vertel waar je nu zit en wat je mist.",
   automatisering: "Welke systemen moeten met elkaar praten? Scheelt mij een detective-ronde.",

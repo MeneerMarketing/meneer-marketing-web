@@ -68,10 +68,10 @@ export function PillarLandingView({ data }: { data: PillarPageData }) {
             <PillarMotionStats stats={data.stats} />
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
-                href={siteCtas.groeiscan.href}
+                href={siteCtas.startIntake.href}
                 className="inline-flex items-center gap-2 rounded-full bg-mm-accent px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-mm-accent/25 transition hover:bg-mm-accent-hover"
               >
-                {siteCtas.groeiscan.label}
+                {siteCtas.startIntake.label}
                 <ArrowUpRight className="size-4" aria-hidden />
               </Link>
               <Link
@@ -211,14 +211,14 @@ export function PillarLandingView({ data }: { data: PillarPageData }) {
                 {data.ctaBody}
               </p>
               <Link
-                href={siteCtas.groeiscan.href}
+                href={siteCtas.startIntake.href}
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-mm-accent px-8 py-4 text-base font-bold text-white shadow-lg shadow-mm-accent/25 transition hover:bg-mm-accent-hover"
               >
-                Start met Groeiscan
+                Start intake
                 <ArrowUpRight className="size-5" aria-hidden />
               </Link>
               <p className="mt-4 text-xs text-mm-muted">
-                Liever direct mailen? Vul je contactgegevens in op de Groeiscan-pagina.
+                Liever direct mailen? Dat kan via het contactformulier.
               </p>
             </Reveal>
           </div>

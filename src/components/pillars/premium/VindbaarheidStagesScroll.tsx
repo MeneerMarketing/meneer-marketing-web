@@ -61,7 +61,7 @@ function StageContent() {
       <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
         <p className="text-[10px] font-bold text-[#FF5722]">meneermarketing.nl</p>
         <p className="mt-1 text-xs font-extrabold text-slate-900">
-          SEO & vindbaarheid in AI-zoek
+          SEO & vindbaarheid in AI-antwoorden
         </p>
         <p className="mt-1 line-clamp-2 text-[10px] text-slate-500">
           Gevonden worden in Google, ChatGPT en Maps. Content die antwoord geeft...

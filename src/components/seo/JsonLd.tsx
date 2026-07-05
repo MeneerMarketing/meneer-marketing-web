@@ -8,6 +8,7 @@ import {
   organizationJsonLd,
   serviceJsonLd,
   websiteJsonLd,
+  webPageJsonLd,
   type JsonLdObject,
 } from "@/lib/seo/schema";
 
@@ -43,4 +44,5 @@ export {
   contactPageJsonLd,
   faqPageJsonLd,
   serviceJsonLd,
+  webPageJsonLd,
 };

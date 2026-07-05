@@ -20,8 +20,8 @@ export function OverPrinciplesSection() {
             Drie dingen waar ik niet over onderhandel
           </h2>
           <p className="mt-3 max-w-xl text-slate-600">
-            Hover of tik op een kaart. De animatie vertelt het verhaal sneller dan
-            een PowerPoint.
+            Hover of tik op een kaart. De animatie doet het werk, de tekst blijft
+            eerlijk.
           </p>
         </Reveal>
         <PrincipleScenes principles={[...OVER_PRINCIPLES]} />

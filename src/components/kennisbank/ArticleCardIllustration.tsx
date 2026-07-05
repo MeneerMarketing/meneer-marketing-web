@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { PillarSlug } from "@/lib/navigation";
 
 interface ArticleCardIllustrationProps {
@@ -14,168 +15,467 @@ const CATEGORY_ACCENTS: Record<PillarSlug, string> = {
   behoud: "#00BCD4",
 };
 
+const SLUG_SCENES: Record<string, (accent: string) => ReactNode> = {
+  "ai-zoek-vindbaarheid-chatgpt": AiZoekScene,
+  "seo-eerst-dan-ads": SeoFirstScene,
+  "b2b-verkopen-via-shopify": B2bPortalScene,
+  "shopify-performance-roas": PerformanceScene,
+  "semantische-seo-2026": SemanticSeoScene,
+  "n8n-eerste-workflow": WorkflowScene,
+  "cro-checkout-vertrouwen": CheckoutScene,
+  "wordpress-blokken-team": WordPressScene,
+  "branding-die-verkoopt-b2b": BrandingScene,
+};
+
 export function ArticleCardIllustration({
   slug,
   category,
-  className,
+  className = "",
 }: ArticleCardIllustrationProps) {
   const accent = CATEGORY_ACCENTS[category];
+  const Scene = SLUG_SCENES[slug];
 
   return (
-    <svg
-      viewBox="0 0 400 220"
-      className={className}
+    <div
+      className={`relative aspect-[5/2] min-h-[168px] overflow-hidden bg-[#F8FAFC] ${className}`}
       aria-hidden
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="400" height="220" fill="#F8FAFC" />
-      <rect
-        width="400"
-        height="220"
-        fill={`url(#kb-grid-${slug})`}
-        opacity="0.5"
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.035)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.035)_1px,transparent_1px)] bg-[size:22px_22px]" />
+      <div
+        className="pointer-events-none absolute -right-8 -top-8 size-32 rounded-full opacity-20 blur-2xl"
+        style={{ backgroundColor: accent }}
       />
-      <defs>
-        <pattern
-          id={`kb-grid-${slug}`}
-          width="20"
-          height="20"
-          patternUnits="userSpaceOnUse"
-        >
-          <path
-            d="M 20 0 L 0 0 0 20"
-            fill="none"
-            stroke="rgba(15,23,42,0.04)"
-            strokeWidth="1"
-          />
-        </pattern>
-      </defs>
+      <div className="relative flex h-full items-center justify-center p-4 sm:p-5">
+        {Scene ? (
+          <Scene accent={accent} />
+        ) : (
+          <CategoryFallbackScene accent={accent} category={category} />
+        )}
+      </div>
+    </div>
+  );
+}
 
-      {slug === "ai-zoek-vindbaarheid-chatgpt" && (
-        <AiZoekScene accent={accent} />
-      )}
-      {slug === "seo-eerst-dan-ads" && <SeoFirstScene accent={accent} />}
-      {slug === "b2b-verkopen-via-shopify" && <B2bPortalScene accent={accent} />}
-      {!["ai-zoek-vindbaarheid-chatgpt", "seo-eerst-dan-ads", "b2b-verkopen-via-shopify"].includes(
-        slug,
-      ) && <CategoryFallbackScene accent={accent} category={category} />}
-    </svg>
+function SceneLabel({ children }: { children: ReactNode }) {
+  return (
+    <p className="h-4 shrink-0 text-center font-mono text-[9px] font-semibold uppercase leading-4 tracking-[0.16em] text-slate-400">
+      {children}
+    </p>
+  );
+}
+
+/** Vast frame: label bovenaan, wit venster altijd op dezelfde plek en hoogte. */
+function IllustrationFrame({
+  label,
+  children,
+}: {
+  label: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="w-full max-w-[280px]">
+      <SceneLabel>{label}</SceneLabel>
+      <div className="mt-2">
+        <MiniWindow>{children}</MiniWindow>
+      </div>
+    </div>
+  );
+}
+
+function MiniWindow({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`flex h-[100px] w-full flex-col justify-center overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-[0_16px_40px_-24px_rgba(15,23,42,0.28)] ${className}`}
+    >
+      {children}
+    </div>
+  );
+}
+
+function WindowChrome({
+  label,
+  dot = "#22C55E",
+}: {
+  label: string;
+  dot?: string;
+}) {
+  return (
+    <div className="flex items-center gap-2 border-b border-slate-100 px-3 py-2">
+      <span
+        className="size-1.5 shrink-0 rounded-full"
+        style={{ backgroundColor: dot }}
+      />
+      <span className="font-mono text-[9px] font-semibold text-slate-400">
+        {label}
+      </span>
+    </div>
   );
 }
 
 function AiZoekScene({ accent }: { accent: string }) {
   return (
-    <>
-      <rect x="28" y="36" width="148" height="52" rx="14" fill="white" stroke="#E2E8F0" strokeWidth="2" />
-      <text x="44" y="58" fill="#64748B" fontSize="11" fontWeight="600">
-        Waar koop ik…
-      </text>
-      <rect x="44" y="66" width="72" height="6" rx="3" fill="#E2E8F0" />
-
-      <rect x="224" y="48" width="148" height="72" rx="14" fill="white" stroke={accent} strokeWidth="2" />
-      <circle cx="248" cy="72" r="10" fill={accent} opacity="0.15" />
-      <text x="264" y="76" fill="#0F172A" fontSize="11" fontWeight="800">
-        Jouw merk
-      </text>
-      <rect x="240" y="86" width="96" height="5" rx="2.5" fill="#CBD5E1" />
-      <rect x="240" y="96" width="72" height="5" rx="2.5" fill="#E2E8F0" />
-
-      <circle cx="196" cy="110" r="18" fill={accent} opacity="0.12" />
-      <path
-        d="M 188 110 h 16 M 196 102 v 16"
-        stroke={accent}
-        strokeWidth="2.5"
-        strokeLinecap="round"
-      />
-
-      {["ChatGPT", "Gemini"].map((label, i) => (
-        <g key={label} transform={`translate(${300 + i * 42} 148)`}>
-          <rect x="0" y="0" width="38" height="22" rx="11" fill="white" stroke="#E2E8F0" strokeWidth="1.5" />
-          <text x="19" y="14" fill="#64748B" fontSize="7" fontWeight="700" textAnchor="middle">
-            {label}
-          </text>
-        </g>
-      ))}
-    </>
+    <IllustrationFrame label="ai-antwoord.live">
+      <WindowChrome label="chat · live" dot="#8B5CF6" />
+      <div className="space-y-1.5 p-2.5">
+        <div className="flex gap-2">
+          <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-sky-500 text-[7px] font-black text-white">
+            AI
+          </span>
+          <div className="min-w-0 flex-1 rounded-xl rounded-bl-sm border border-slate-100 bg-slate-50 px-2 py-1.5">
+            <p className="text-[9px] font-medium leading-snug text-slate-600">
+              …valt{" "}
+              <span className="font-extrabold" style={{ color: accent }}>
+                jouw merk
+              </span>{" "}
+              op als betrouwbare keuze.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center gap-1.5">
+          {["ChatGPT", "Gemini"].map((model) => (
+            <span
+              key={model}
+              className="rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[7px] font-bold text-slate-500"
+            >
+              {model}
+            </span>
+          ))}
+        </div>
+      </div>
+    </IllustrationFrame>
   );
 }
 
 function SeoFirstScene({ accent }: { accent: string }) {
+  const steps = [
+    { label: "SEO", on: true, color: "#22C55E" },
+    { label: "Mail", on: true, color: accent },
+    { label: "Ads", on: false, color: "#CBD5E1" },
+  ];
+
   return (
-    <>
-      <rect x="32" y="40" width="336" height="140" rx="16" fill="white" stroke="#E2E8F0" strokeWidth="2" />
-      <text x="52" y="64" fill="#64748B" fontSize="10" fontWeight="700">
-        VOLGORDE DIE WERKT
-      </text>
-
-      {[0, 1, 2].map((i) => (
-        <g key={i}>
-          <rect
-            x={52 + i * 100}
-            y={140 - (i + 1) * 28}
-            width="72"
-            height={(i + 1) * 28}
-            rx="6"
-            fill={i === 0 ? "#22C55E" : i === 1 ? accent : "#CBD5E1"}
-            opacity={i === 2 ? 0.45 : 1}
+    <IllustrationFrame label="volgorde.die.werkt">
+      <div className="flex h-full flex-col justify-center px-3 py-2">
+        <div className="relative flex items-start justify-between gap-1">
+          <div className="absolute left-[10%] right-[10%] top-[14px] h-px bg-slate-100" />
+          <div
+            className="absolute left-[10%] top-[14px] h-px bg-[#22C55E]"
+            style={{ width: "42%" }}
           />
-          <text
-            x={88 + i * 100}
-            y="168"
-            fill="#475569"
-            fontSize="9"
-            fontWeight="700"
-            textAnchor="middle"
-          >
-            {i === 0 ? "SEO" : i === 1 ? "Mail" : "Ads"}
-          </text>
-        </g>
-      ))}
-
-      <path
-        d="M 72 118 L 120 92 L 168 78"
-        stroke="#22C55E"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        fill="none"
-      />
-      <circle cx="168" cy="78" r="5" fill="#22C55E" />
-
-      <rect x="248" y="78" width="96" height="34" rx="10" fill={`${accent}18`} stroke={accent} strokeWidth="1.5" />
-      <text x="296" y="99" fill={accent} fontSize="10" fontWeight="800" textAnchor="middle">
-        Pas daarna ads
-      </text>
-    </>
+          {steps.map((step) => (
+            <div
+              key={step.label}
+              className="relative z-10 flex flex-1 flex-col items-center gap-1.5"
+            >
+              <span
+                className={`flex size-7 items-center justify-center rounded-full border-2 text-[8px] font-black ${
+                  step.on
+                    ? "border-transparent text-white"
+                    : "border-slate-200 bg-white text-slate-400"
+                }`}
+                style={
+                  step.on
+                    ? { backgroundColor: step.color, borderColor: step.color }
+                    : undefined
+                }
+              >
+                {step.on ? "✓" : "○"}
+              </span>
+              <span
+                className={`text-[9px] font-bold ${
+                  step.on ? "text-slate-800" : "text-slate-400"
+                }`}
+              >
+                {step.label}
+              </span>
+            </div>
+          ))}
+        </div>
+        <p className="mt-2 rounded-lg bg-[#FF5722]/5 px-2 py-1 text-center text-[8px] font-bold uppercase tracking-wider text-[#FF5722]">
+          Pas daarna ads
+        </p>
+      </div>
+    </IllustrationFrame>
   );
 }
 
 function B2bPortalScene({ accent }: { accent: string }) {
   return (
-    <>
-      <rect x="24" y="32" width="160" height="156" rx="12" fill="#FEF2F2" stroke="#FECACA" strokeWidth="1.5" strokeDasharray="6 4" />
-      <text x="44" y="58" fill="#B91C1C" fontSize="10" fontWeight="700">
-        Excel + mail
-      </text>
-      {[0, 1, 2, 3].map((i) => (
-        <rect key={i} x={40} y={68 + i * 22} width={100 - i * 12} height="8" rx="4" fill="#FECACA" />
-      ))}
+    <IllustrationFrame label="shopify · b2b">
+      <div className="flex h-full flex-col justify-center overflow-hidden">
+        <div className="flex items-center justify-between border-b border-slate-100 bg-[#FAFAF9] px-3 py-1.5">
+          <span className="text-[8px] font-extrabold uppercase tracking-wider text-violet-700">
+            Portaal
+          </span>
+          <span className="rounded-md bg-violet-500/10 px-1.5 py-0.5 text-[7px] font-bold text-violet-700">
+            Salon login
+          </span>
+        </div>
+        <div className="grid grid-cols-2 gap-1.5 p-2">
+          <div className="rounded-lg border border-dashed border-slate-200 bg-slate-50 p-1.5">
+            <p className="text-[7px] font-bold uppercase tracking-wide text-slate-400">
+              Consument
+            </p>
+            <div className="mt-2 space-y-1">
+              <div className="h-1.5 w-full rounded-full bg-slate-200" />
+              <div className="h-1.5 w-2/3 rounded-full bg-slate-200" />
+            </div>
+          </div>
+          <div
+            className="rounded-lg border p-1.5"
+            style={{ borderColor: `${accent}55`, backgroundColor: `${accent}0A` }}
+          >
+            <p
+              className="text-[7px] font-bold uppercase tracking-wide"
+              style={{ color: accent }}
+            >
+              B2B
+            </p>
+            <div className="mt-2 space-y-1">
+              <div className="h-1.5 w-full rounded-full bg-slate-200" />
+              <div
+                className="mt-1.5 rounded-md px-1.5 py-1 text-center text-[7px] font-bold text-white"
+                style={{ backgroundColor: accent }}
+              >
+                Bestellen
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </IllustrationFrame>
+  );
+}
 
-      <path d="M 196 110 h 32" stroke={accent} strokeWidth="3" strokeLinecap="round" />
-      <path d="M 220 110 l-10 -8 M 220 110 l-10 8" stroke={accent} strokeWidth="2.5" strokeLinecap="round" />
+function PerformanceScene({ accent }: { accent: string }) {
+  return (
+    <IllustrationFrame label="core.web.vitals">
+      <div className="px-4 py-3">
+        <div className="flex items-end justify-center gap-4">
+          <div className="relative size-[72px]">
+            <svg viewBox="0 0 72 44" className="size-full">
+              <path
+                d="M 8 40 A 28 28 0 0 1 64 40"
+                stroke="#E2E8F0"
+                strokeWidth="4"
+                fill="none"
+                strokeLinecap="round"
+              />
+              <path
+                d="M 8 40 A 28 28 0 0 1 58 18"
+                stroke={accent}
+                strokeWidth="4"
+                fill="none"
+                strokeLinecap="round"
+              />
+            </svg>
+            <p className="absolute inset-x-0 bottom-0 text-center text-xl font-black text-slate-900">
+              94
+            </p>
+          </div>
+          <div className="space-y-1.5 pb-1">
+            {[
+              { k: "LCP", v: "0,9s" },
+              { k: "INP", v: "98ms" },
+            ].map((m) => (
+              <div
+                key={m.k}
+                className="flex items-center justify-between gap-3 rounded-md bg-slate-50 px-2 py-1"
+              >
+                <span className="font-mono text-[8px] font-bold text-slate-400">
+                  {m.k}
+                </span>
+                <span className="text-[9px] font-extrabold text-slate-800">
+                  {m.v}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </IllustrationFrame>
+  );
+}
 
-      <rect x="236" y="32" width="140" height="156" rx="12" fill="white" stroke={accent} strokeWidth="2" />
-      <rect x="236" y="32" width="140" height="28" rx="12" fill={accent} opacity="0.12" />
-      <text x="256" y="52" fill={accent} fontSize="10" fontWeight="800">
-        B2B-portaal
-      </text>
-      <rect x="252" y="78" width="88" height="8" rx="4" fill="#E2E8F0" />
-      <rect x="252" y="94" width="64" height="8" rx="4" fill="#E2E8F0" />
-      <rect x="252" y="126" width="72" height="28" rx="14" fill={accent} />
-      <text x="288" y="144" fill="white" fontSize="10" fontWeight="800" textAnchor="middle">
-        Bestellen
-      </text>
-    </>
+function SemanticSeoScene() {
+  const rows = [
+    { rank: "3", title: "Forum · oud advies", dim: true },
+    { rank: "1", title: "Jouw pagina · antwoord", dim: false },
+  ];
+
+  return (
+    <IllustrationFrame label="serp.stack">
+      <div className="p-3">
+        <div className="mb-2 flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2.5 py-1.5">
+          <span className="size-2 rounded-full bg-slate-200" />
+          <span className="truncate text-[9px] font-medium text-slate-600">
+            beste [jouw dienst] nederland
+          </span>
+        </div>
+        <div className="space-y-1.5">
+          {rows.map((row) => (
+            <div
+              key={row.rank}
+              className={`flex items-center gap-2 rounded-xl border px-2.5 py-1.5 ${
+                row.dim
+                  ? "border-slate-100 bg-slate-50/80 opacity-60"
+                  : "border-[#FF5722]/30 bg-white ring-1 ring-[#FF5722]/15"
+              }`}
+            >
+              <span
+                className={`flex size-5 shrink-0 items-center justify-center rounded-md text-[8px] font-black ${
+                  row.dim
+                    ? "bg-slate-100 text-slate-400"
+                    : "bg-[#FF5722] text-white"
+                }`}
+              >
+                {row.rank}
+              </span>
+              <span
+                className={`truncate text-[9px] font-bold ${
+                  row.dim ? "text-slate-500" : "text-slate-900"
+                }`}
+              >
+                {row.title}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </IllustrationFrame>
+  );
+}
+
+function WorkflowScene({ accent }: { accent: string }) {
+  const nodes = ["Trigger", "n8n", "Actie"];
+
+  return (
+    <IllustrationFrame label="workflow.sync">
+      <div className="px-3 py-3">
+        <div className="flex items-center justify-between gap-1">
+          {nodes.map((node, i) => (
+            <div key={node} className="flex flex-1 items-center gap-1">
+              <span
+                className={`flex flex-1 flex-col items-center rounded-lg border px-1 py-1.5 ${
+                  i === 1
+                    ? "border-transparent text-white"
+                    : "border-slate-200 bg-slate-50 text-slate-600"
+                }`}
+                style={
+                  i === 1
+                    ? { backgroundColor: accent, borderColor: accent }
+                    : undefined
+                }
+              >
+                <span className="text-[8px] font-extrabold">{node}</span>
+              </span>
+              {i < nodes.length - 1 ? (
+                <span className="text-[8px] font-bold text-slate-300">→</span>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      </div>
+    </IllustrationFrame>
+  );
+}
+
+function CheckoutScene({ accent }: { accent: string }) {
+  return (
+    <IllustrationFrame label="checkout.trust">
+      <div className="p-3">
+        <div className="rounded-lg border border-slate-100 bg-slate-50 p-2">
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-[9px] font-bold text-slate-700">Totaal</span>
+            <span className="text-[9px] font-extrabold text-slate-900">
+              € 149
+            </span>
+          </div>
+          <div className="mt-2 h-6 rounded-md bg-slate-200/80" />
+        </div>
+        <div
+          className="mt-2 flex items-center gap-2 rounded-lg border px-2 py-1.5"
+          style={{ borderColor: `${accent}40`, backgroundColor: `${accent}0A` }}
+        >
+          <span
+            className="flex size-5 items-center justify-center rounded-full text-[8px] font-black text-white"
+            style={{ backgroundColor: accent }}
+          >
+            ✓
+          </span>
+          <span className="text-[8px] font-bold text-slate-700">
+            Veilig betalen · reviews zichtbaar
+          </span>
+        </div>
+      </div>
+    </IllustrationFrame>
+  );
+}
+
+function WordPressScene({ accent }: { accent: string }) {
+  return (
+    <IllustrationFrame label="from.scratch">
+      <div className="p-3">
+        <div className="flex items-center justify-between gap-3">
+          <div className="relative rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">
+            <span className="text-lg font-black text-slate-300">WP</span>
+            <span
+              className="absolute inset-x-1 top-1/2 h-0.5 -rotate-12"
+              style={{ backgroundColor: accent }}
+            />
+          </div>
+          <span className="text-lg font-bold text-slate-300">→</span>
+          <div
+            className="rounded-lg border px-3 py-2"
+            style={{ borderColor: `${accent}50`, backgroundColor: `${accent}0C` }}
+          >
+            <p
+              className="text-[8px] font-bold uppercase tracking-wider"
+              style={{ color: accent }}
+            >
+              Custom
+            </p>
+            <p className="text-[9px] font-extrabold text-slate-900">
+              Jouw stack
+            </p>
+          </div>
+        </div>
+      </div>
+    </IllustrationFrame>
+  );
+}
+
+function BrandingScene({ accent }: { accent: string }) {
+  return (
+    <IllustrationFrame label="merk.die.verkoopt">
+      <div className="flex items-center justify-center p-4">
+        <div className="relative h-16 w-28">
+          <div className="absolute left-0 top-2 size-14 rounded-2xl border-2 border-slate-200 bg-white shadow-sm" />
+          <div
+            className="absolute right-0 top-0 size-14 rounded-2xl border-2 bg-white shadow-md"
+            style={{ borderColor: accent }}
+          >
+            <div
+              className="mx-auto mt-3 h-1.5 w-8 rounded-full"
+              style={{ backgroundColor: accent }}
+            />
+            <div className="mx-auto mt-2 h-1 w-6 rounded-full bg-slate-200" />
+          </div>
+          <span
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-full px-2 py-0.5 text-[7px] font-bold text-white"
+            style={{ backgroundColor: accent }}
+          >
+            B2B
+          </span>
+        </div>
+      </div>
+    </IllustrationFrame>
   );
 }
 
@@ -184,18 +484,26 @@ function CategoryFallbackScene({
   category,
 }: {
   accent: string;
-  category: PillarSlug;
+  category?: PillarSlug;
 }) {
+  const label = category ?? "kennis";
+
   return (
-    <>
-      <rect x="48" y="48" width="304" height="124" rx="16" fill="white" stroke="#E2E8F0" strokeWidth="2" />
-      <rect x="68" y="72" width="120" height="10" rx="5" fill={accent} opacity="0.85" />
-      <rect x="68" y="92" width="200" height="8" rx="4" fill="#E2E8F0" />
-      <rect x="68" y="108" width="168" height="8" rx="4" fill="#E2E8F0" />
-      <rect x="68" y="132" width="88" height="24" rx="12" fill={`${accent}22`} stroke={accent} strokeWidth="1.5" />
-      <text x="112" y="148" fill={accent} fontSize="10" fontWeight="800" textAnchor="middle">
-        {category}
-      </text>
-    </>
+    <IllustrationFrame label="meneer.notes">
+      <div className="p-3">
+        <div
+          className="mb-2 h-1 w-10 rounded-full"
+          style={{ backgroundColor: accent }}
+        />
+        <div className="space-y-1.5">
+          <div className="h-1.5 w-full rounded-full bg-slate-100" />
+          <div className="h-1.5 w-4/5 rounded-full bg-slate-100" />
+          <div className="h-1.5 w-3/5 rounded-full bg-slate-100" />
+        </div>
+        <p className="mt-2 text-[8px] font-bold uppercase tracking-wider text-slate-400">
+          {label}
+        </p>
+      </div>
+    </IllustrationFrame>
   );
 }

@@ -17,7 +17,7 @@ export function OverIndexFaq() {
             Vragen over samenwerken
           </h2>
           <p className="mt-2 text-slate-600">
-            Kort en eerlijk. Staat je vraag er niet tussen? Plan de Groeiscan of
+            Kort en eerlijk. Staat je vraag er niet tussen? Start de intake of
             neem contact op.
           </p>
         </Reveal>

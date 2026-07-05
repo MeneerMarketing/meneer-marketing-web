@@ -24,16 +24,16 @@ export function ContactIndexCta() {
               href={siteCtas.startIntake.href}
               className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:bg-orange-600"
             >
-              Plan een gesprek
+              {siteCtas.startIntake.label}
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
-            <Link
-              href={siteCtas.projectStarten.href}
+            <a
+              href="#gesprek"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-4 text-sm font-bold text-white transition hover:border-white/30"
             >
-              {siteCtas.projectStarten.label}
+              Terug naar het gesprek
               <ArrowUpRight className="size-4" aria-hidden />
-            </Link>
+            </a>
           </div>
         </Reveal>
       </div>

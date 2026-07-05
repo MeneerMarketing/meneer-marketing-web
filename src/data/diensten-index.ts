@@ -76,7 +76,7 @@ export const DIENSTEN_FAQ = [
   {
     question: "Hoe start ik een traject?",
     answer:
-      "Met de Groeiscan of een intake. Je krijgt scherpte op prioriteit en route. Daarna een voorstel dat past bij je fase, niet bij een standaardpakket.",
+      "Met een intake. Twee minuten invullen, daarna een gesprek. Je krijgt scherpte op prioriteit en route. Daarna een voorstel dat past bij je fase, niet bij een standaardpakket.",
   },
 ] as const;
 

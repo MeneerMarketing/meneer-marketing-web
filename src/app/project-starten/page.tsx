@@ -60,10 +60,10 @@ export default function ProjectStartenPage() {
           primaryCtaLabel="Start projectaanvraag"
           secondary={
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="inline-flex items-center gap-1.5 rounded-full border-2 border-mm-text/10 bg-white px-6 py-3.5 text-sm font-bold text-mm-text transition hover:border-mm-accent/40"
             >
-              Eerst de Groeiscan
+              Eerst de intake
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
           }
@@ -109,9 +109,9 @@ export default function ProjectStartenPage() {
                   icon: <Layers className="size-4" />,
                 },
                 {
-                  label: "Groeiscan playground",
-                  href: siteCtas.groeiscan.href,
-                  description: "Prioriteit bepalen vóór scope.",
+                  label: "Start intake",
+                  href: siteCtas.startIntake.href,
+                  description: "Twee minuten context, daarna plannen we het gesprek.",
                   icon: <Gauge className="size-4" />,
                 },
                 {

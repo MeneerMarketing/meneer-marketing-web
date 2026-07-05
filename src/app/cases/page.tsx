@@ -5,8 +5,10 @@ import { CaseSceneIllustration } from "@/components/home/cases/CaseSceneIllustra
 import { CaseServiceGrid } from "@/components/home/cases/CaseServiceGrid";
 import { CaseStoryRail } from "@/components/home/cases/CaseStoryRail";
 import { Reveal } from "@/components/effects/Reveal";
+import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { CASE_STUDIES } from "@/data/home-cases";
 import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
@@ -148,6 +150,8 @@ export default function CasesPage() {
             </ul>
           </div>
         </section>
+
+        <MarketingFunFactsRow facts={getFunFactsForPage("/cases")} />
 
         <section className="border-t border-slate-200 bg-slate-950">
           <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8 lg:py-20">

@@ -18,7 +18,7 @@ export function DienstenIndexFaq() {
           </h2>
           <p className="mt-2 text-slate-600">
             Kort en eerlijk. Staat je vraag er niet tussen? Stel hem via de
-            Groeiscan of contact.
+            Intake of contact.
           </p>
         </Reveal>
         <div className="mt-8">

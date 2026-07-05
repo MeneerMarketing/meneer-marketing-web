@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { siteCtas } from "@/lib/cta";
 import { megaMenuIconForHref } from "@/lib/mega-menu-icons";
 import { mainNavLinks, megaMenuColumns } from "@/lib/navigation";
+import { getMegaMenuExtraLinks } from "@/lib/mega-menu-extra-links";
 import { Logo } from "@/components/site/Logo";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { Magnetic } from "@/components/effects/Magnetic";
@@ -92,14 +93,14 @@ export function SiteHeader() {
         <div className="hidden lg:flex lg:items-center">
           <Magnetic strength={12} radius={140}>
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="group relative inline-flex items-center gap-1.5 overflow-hidden whitespace-nowrap rounded-full bg-[#FF5722] px-5 py-2.5 text-sm font-bold tracking-tight text-white shadow-sm shadow-[#FF5722]/25 transition hover:shadow-[#FF5722]/40"
             >
               <span
                 aria-hidden
                 className="pointer-events-none absolute inset-0 origin-bottom bg-slate-900 transition-transform duration-[550ms] ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0 translate-y-full"
               />
-              <span className="relative z-10">{siteCtas.groeiscan.label}</span>
+              <span className="relative z-10">{siteCtas.startIntake.label}</span>
               <ArrowUpRight className="relative z-10 size-4" aria-hidden />
             </Link>
           </Magnetic>
@@ -180,11 +181,11 @@ export function SiteHeader() {
                 ))}
                 <div className="mt-4 border-t border-mm-border pt-4">
                   <Link
-                    href={siteCtas.groeiscan.href}
+                    href={siteCtas.startIntake.href}
                     className="inline-flex w-full items-center justify-center gap-1 rounded-full bg-mm-accent px-4 py-3.5 text-sm font-bold text-white"
                     onClick={() => setMobileOpen(false)}
                   >
-                    {siteCtas.groeiscan.label}
+                    {siteCtas.startIntake.label}
                     <ArrowUpRight className="size-4" aria-hidden />
                   </Link>
                   <p className="mt-3 px-2 text-center text-xs text-mm-muted">
@@ -291,13 +292,27 @@ export function SiteHeader() {
                       {activeColumn.featured.description}
                     </p>
                   </div>
-                  <Link
-                    href={activeColumn.featured.href}
-                    className="relative mt-6 inline-flex items-center gap-2 text-sm font-bold text-mm-sky-deep hover:text-mm-sky"
-                  >
-                    Cases &amp; resultaten
-                    <ArrowUpRight className="size-4" aria-hidden />
-                  </Link>
+                  <div className="relative mt-6 space-y-3">
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                      {getMegaMenuExtraLinks(activeColumn.pillarSlug).map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className="inline-flex items-center gap-1 text-sm font-bold text-mm-sky-deep hover:text-mm-sky"
+                        >
+                          {link.label}
+                          <ArrowUpRight className="size-3.5 shrink-0" aria-hidden />
+                        </Link>
+                      ))}
+                    </div>
+                    <Link
+                      href={activeColumn.featured.href}
+                      className="inline-flex items-center gap-2 text-sm font-bold text-mm-sky-deep hover:text-mm-sky"
+                    >
+                      Cases &amp; resultaten
+                      <ArrowUpRight className="size-4" aria-hidden />
+                    </Link>
+                  </div>
                 </aside>
               </div>
             </div>

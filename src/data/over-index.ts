@@ -2,15 +2,53 @@ export const OVER_HERO = {
   eyebrow: "Over Meneer Marketing",
   title: "Groei is geen toeval. Het is een systeem met een gezicht.",
   subtitle:
-    "Ik ben je online marketingmanager: strategie, bouwen from scratch, vindbaarheid, Google Ads, Meta Ads en alles wat daarna moet blijven draaien. Geen 47 accountmanagers. Wel iemand die je stack snapt.",
-  aside:
-    "Fun fact: de gemiddelde ondernemer werkt met drie tot vijf partijen voor website, ads en SEO. Dan praat niemand met elkaar en betaal je dubbel.",
+    "Afgestudeerd als applicatieontwikkelaar, jarenlang webdesign en marketing op mijn naam. Twaalf jaar later focus ik op wat echt telt: bedrijven laten groeien en maximaal uit online halen. Niet alleen mooie sites of systemen bouwen, maar alles wat moet scoren.",
   stats: [
-    { label: "Aanpak", value: "Plan + uitvoer" },
-    { label: "Blokken", value: "5" },
-    { label: "Humor", value: "Inbegrepen" },
+    { label: "Ervaring", value: "12+ jaar" },
+    { label: "Start", value: "Dev & design" },
+    { label: "Nu", value: "Groei & omzet" },
   ],
 } as const;
+
+export interface OverHeroFact {
+  id: string;
+  badge: string;
+  text: string;
+  accent: string;
+  tilt: number;
+}
+
+/** Persoonlijke weetjes voor de hero-rechterkolom op /over. */
+export const OVER_HERO_FACTS: OverHeroFact[] = [
+  {
+    id: "mail",
+    badge: "Inbox-proof",
+    text: "Ik typ liever 'hoi, dit staat live' dan drie alinea's met ' naar aanleiding van uw e-mail'. Werkt beter. Voor ons allebei.",
+    accent: "#FF5722",
+    tilt: -1.5,
+  },
+  {
+    id: "dev",
+    badge: "Dev-hart",
+    text: "Applicatieontwikkelaar in mijn hoofd. 200 ms trager? Voel ik bijna fysiek.",
+    accent: "#0284C7",
+    tilt: -1,
+  },
+  {
+    id: "scratch",
+    badge: "Anti-template",
+    text: "Templates vastlopen na een half jaar. Daarom from scratch, geen page builder.",
+    accent: "#0F172A",
+    tilt: 1.5,
+  },
+  {
+    id: "contact",
+    badge: "Gewoon praten",
+    text: "Mail, bellen, WhatsApp. Geen protocolboek, wel afspraken die kloppen.",
+    accent: "#0D9488",
+    tilt: -0.75,
+  },
+] as const;
 
 export interface OverStoryChapter {
   id: string;
@@ -19,55 +57,70 @@ export interface OverStoryChapter {
   body: string;
   punchline: string;
   scene: "solo" | "contrast" | "stack" | "partner";
+  highlights: readonly string[];
+  metric: { label: string; value: string };
+  footnote: string;
 }
 
 export const OVER_STORY: OverStoryChapter[] = [
   {
     id: "solo",
     tag: "Wie",
-    title: "Eén brein, het hele plaatje",
-    body: "Meneer Marketing is geen groot bureau met lagen. Het is strategie, code en campagnes onder één dak. Jij praat met degene die het ook bouwt en bijstuurt.",
-    punchline: "Geen doorverwijzing naar 'de technische afdeling'. Die afdeling ben ik.",
+    title: "Twaalf jaar leren wat werkt",
+    body: "In twaalf jaar heb ik gezien wat online écht werkt en wat vooral geld kost zonder resultaat. Van app developer naar marketeer: ik weet wat bedrijven nodig hebben om maximaal te scoren. Geen theorie uit een boek, maar lessen uit echte projecten. Daarom focus ik op groei en omzet, niet alleen op mooie plaatjes.",
+    punchline: "Twaalf jaar les: groei is het doel, pixels zijn het middel.",
     scene: "solo",
+    highlights: ["12 jaar", "Wat werkt", "Maximaal halen"],
+    metric: { label: "Ervaring", value: "12+ jr" },
+    footnote: "Dev · design · wat écht werkt",
   },
   {
     id: "contrast",
-    tag: "Niet",
-    title: "Geen templates, geen vaagheid",
-    body: "Websites from scratch. Geen page builders die je over een jaar tegen de plinten laten lopen. Geen rapporten vol jargon waar je niks mee kunt. Geen ads zonder meetplan.",
-    punchline: "Als iets niet meetbaar is, optimaliseren we op meningen. En dat doen we niet.",
+    tag: "Daarom",
+    title: "From scratch, met meetplan",
+    body: "Templates en page builders heb ik genoeg zien vastlopen. Rapporten vol moeilijke woorden leverden niks op. Ads zonder meetplan verbrandden budget. Na twaalf jaar weet ik: from scratch bouwen en meten is wat blijft werken als je echt wilt groeien.",
+    punchline: "Geen shortcuts meer. Alleen wat bewezen werkt.",
     scene: "contrast",
+    highlights: ["From scratch", "Meetplan", "Geen shortcuts"],
+    metric: { label: "Templates", value: "Nul" },
+    footnote: "Bouwen · meten · geen page builder",
   },
   {
     id: "stack",
     tag: "Wel",
-    title: "Techniek die productie is",
-    body: "Shopify, Next.js, SEO, mailautomatisering, Google Ads en Meta Ads. Alles custom waar het moet, alles gekoppeld waar het kan. SkinComplete kreeg een B2B-portaal. BestRest een eigen koers per product.",
-    punchline: "Jouw stack hoeft niet perfect te zijn. Wel eerlijk in kaart.",
+    title: "Techniek die omzet oplevert",
+    body: "In twaalf jaar zag ik welke techniek omzet oplevert en welke vooral duur oogt. Shopify, Next.js, SEO, ads en koppelingen. Alles alleen als het commercieel zinnig is. Daarom kies ik tools die winst geven, niet tools die cool klinken op papier.",
+    punchline: "Techniek is middel. Omzet is het punt.",
     scene: "stack",
+    highlights: ["Shopify", "Next.js", "Omzet first"],
+    metric: { label: "Stack", value: "1 lijn" },
+    footnote: "Bouwen · vindbaar · campagnes · koppelingen",
   },
   {
     id: "partner",
     tag: "Samen",
-    title: "Jij blijft de baas",
-    body: "Ik denk mee, bouw mee en stuur bij op data. Documentatie en overdracht horen erbij. Geen gatekeeping: je team begrijpt wat er live staat en waarom.",
-    punchline: "Succes delen we. Complexiteit niet.",
+    title: "Gewoon praten, als een team",
+    body: "De beste resultaten kwamen nooit uit formele mailketens. Wel uit open gesprekken waarin iedereen snapt wat er speelt. Mail, WhatsApp of bellen: wat voor jou het fijnst is. Twaalf jaar heeft me geleerd: menselijk praten levert betere beslissingen dan een corporate masker.",
+    punchline: "Geen 'Geachte heer/mevrouw' als we al koffie hebben gedronken.",
     scene: "partner",
+    highlights: ["Mail · WhatsApp", "Team modus", "Geen masker"],
+    metric: { label: "Contact", value: "Menselijk" },
+    footnote: "Zakelijk waar het telt · menselijk hoe we praten",
   },
 ];
 
 export const OVER_PRINCIPLES = [
   {
     title: "Meetbaar",
-    body: "KPI's, events en dashboards horen bij elk traject. Als het niet meetbaar is, optimaliseren we op meningen. En dat doen we niet.",
+    body: "Elk project krijgt duidelijke cijfers en overzichten die je snapt. Geen 'het voelt wel goed' als enig bewijs. Keuzes op basis van data, niet op onderbuikgevoel. Liever één getal dat klopt dan tien slides mooie praat.",
   },
   {
     title: "Technisch sterk",
-    body: "Shopify, websites from scratch, Next.js, n8n. We bouwen en koppelen alsof het productie is. Want dat is het.",
+    body: "Shopify, websites from scratch, Next.js en slimme koppelingen. Ik bouw alles alsof het vandaag live moet, want dat moet het. Geen losse tools die elkaar negeren. Eén lijn van site tot campagne, zonder verrassingen als je groeit.",
   },
   {
     title: "Menselijk",
-    body: "Geen gatekeeping: documentatie, overdracht en taal die je team begrijpt. Jargon vertaal ik naar gewoon Nederlands.",
+    body: "Geen moeilijke bureautaal in je inbox. Mail, WhatsApp of bellen, wat voor jou het fijnst is. Duidelijk en soms droog grappig, en strak professioneel waar het moet. Lastige woorden leg ik uit in taal die je team direct snapt.",
   },
 ] as const;
 
@@ -97,7 +150,7 @@ export const OVER_STACK: OverStackItem[] = [
   {
     id: "seo",
     label: "SEO & content",
-    body: "Vindbaar in Google én in AI-zoekmachines. Structuur, content en autoriteit in de juiste volgorde.",
+    body: "Vindbaar in Google én in AI-antwoorden. Structuur, content en autoriteit in de juiste volgorde.",
     quip: "15% van alle zoekopdrachten is gloednieuw. Altijd ruimte.",
     accent: "#00BCD4",
   },
@@ -157,8 +210,8 @@ export const OVER_DAY: OverDayMoment[] = [
   {
     id: "call",
     time: "15:00",
-    title: "Gewoon Nederlands",
-    body: "Update met jou: wat live staat, wat het doet en wat de volgende move is. Geen 40 slides.",
+    title: "Gewoon menselijk",
+    body: "Update in normale taal: wat live staat, wat het doet, wat de volgende stap is. Geen 40 slides. Geen ' naar aanleiding van uw e-mail van gisteren'. Gewoon praten, als collega's.",
     mood: "call",
   },
   {
@@ -172,15 +225,15 @@ export const OVER_DAY: OverDayMoment[] = [
 
 export const OVER_ANTI = {
   title: "Dit zijn we niet",
-  subtitle: "Geen pingpongtafel. Wel resultaat.",
+  subtitle: "Geen pingpongtafel. Geen zakelijke maskers. Wel resultaat.",
   items: [
     {
       label: "Template-bureau",
       body: "Mooie demo, straks vastgelopen. Wij bouwen from scratch.",
     },
     {
-      label: "Rapportenmachine",
-      body: "30 pagina's PDF waar niemand iets mee doet. Wij leveren wat live kan.",
+      label: "Corporate speak",
+      body: "Mailtjes vol formeel gedoe waar niemand energie van krijgt. Wij praten gewoon. Zakelijk waar het moet.",
     },
     {
       label: "Ads zonder plan",
@@ -197,7 +250,7 @@ export const OVER_FAQ = [
   {
     question: "Ben je een eenmanszaak of een bureau?",
     answer:
-      "Eén aanspreekpunt met het brein van een heel team. Strategie, bouw en campagnes komen uit hetzelfde hoofd. Geen wisselende accountmanagers.",
+      "Eén aanspreekpunt met twaalf jaar ervaring in development, design en marketing. Strategie, bouw en campagnes komen uit hetzelfde hoofd. Geen wisselende accountmanagers.",
   },
   {
     question: "Werk je alleen in Nederland?",
@@ -215,13 +268,18 @@ export const OVER_FAQ = [
       "Sneller schakelen, minder lagen, meer eigenaarschap. Geen junior die jouw account leert kennen terwijl de deadline nadert.",
   },
   {
+    question: "Hoe communiceer je met klanten?",
+    answer:
+      "Als een mens, niet als een mailrobot. Afspraken, deadlines en cijfers zijn keihard professioneel. In je inbox gewoon duidelijk Nederlands. Geen corporate masker, wel honderd procent begrip zodat we als team kunnen schakelen.",
+  },
+  {
     question: "Hoe starten we?",
     answer:
-      "Met de Groeiscan of een intake. Je krijgt helderheid op prioriteit en route. Daarna een voorstel dat past bij je fase, niet bij een standaardpakket.",
+      "Met een intake. Twee minuten invullen, daarna een gesprek. Je krijgt helderheid op prioriteit en route. Daarna een voorstel dat past bij je fase, niet bij een standaardpakket.",
   },
 ] as const;
 
 export const OVER_CTA = {
   title: "Klaar om kennis te maken?",
-  body: "Geen verplichtingen. Wel een scherpe eerste sessie. Kies de Groeiscan voor context, of intake als je al weet wat er moet gebeuren.",
+  body: "Geen verplichtingen. Wel een eerste gesprek in gewoon Nederlands. Vul de intake in (twee minuten) of neem contact op als je liever mailt.",
 } as const;

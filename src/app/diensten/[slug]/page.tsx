@@ -253,7 +253,7 @@ export default async function DienstPage({
                     Klaar om te sparren?
                   </p>
                   <p className="mt-2 text-sm text-mm-muted">
-                    Start met intake of Groeiscan. We koppelen deze dienst aan
+                    Start met intake. We koppelen deze dienst aan
                     je groeidoelen.
                   </p>
                   <Link

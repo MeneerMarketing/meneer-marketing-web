@@ -16,6 +16,30 @@ export const HOME_PROOF = {
   featuredLabel: "Alle cases bekijken",
 } as const;
 
+/** Homepage-sectie tussen resultaat en weetjes: waarom Meneer. */
+export const HOME_WHY_MENEER = {
+  tag: "Waarom Meneer",
+  title: "Van strategie tot Google Ads, alles in één lijn.",
+  body: "Websites from scratch, SEO, Google Ads, Meta en e-mail. Ik schrijf de code, zet de campagnes en lees de cijfers. Jij hoeft niemand achterna te bellen.",
+  quote: "Templates heb ik genoeg gezien. Ik bouw iets dat je kunt meten en opschalen.",
+  strengths: [
+    {
+      label: "Custom build",
+      detail: "Shopify en Next.js from scratch. Geen page builder die je remt als je groeit.",
+    },
+    {
+      label: "Google Ads & Meta",
+      detail: "Campagnes op pagina's die converteren. Niet op gok.",
+    },
+    {
+      label: "Meten is sturen",
+      detail: "Conversies, ROAS, Core Web Vitals. Cijfers bepalen de volgende zet.",
+    },
+  ],
+  pillars: ["Strategie", "Bouwen", "Vindbaarheid", "Campagnes", "Behoud"],
+  pillarsCaption: "Vijf specialismen. Eén aanspreekpunt.",
+} as const;
+
 export interface HomeTrajectoryStage {
   id: string;
   short: string;
@@ -33,7 +57,7 @@ export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
     title: "Waar zit je?",
     headline: "We starten met jouw werkelijkheid, niet met een pitch.",
     body: "Intake, data, doelen en je huidige stack. Geen offerte vóór er helderheid is over waar groei zit en wat eerst moet.",
-    tags: ["Groeiscan", "Stack in kaart", "Quick wins"],
+    tags: ["Intake", "Stack in kaart", "Quick wins"],
     scene: "discover",
   },
   {
@@ -68,4 +92,13 @@ export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
 export const HOME_CTA = {
   title: "Klaar om te weten waar jouw groei zit?",
   body: "Geen losse acties meer. We brengen je doelen, data en kanalen in kaart en maken er een plan van dat we ook echt uitvoeren.",
+} as const;
+
+export const HOME_CONTACT_CHAT = {
+  eyebrow: "Contact",
+  title: "Typ alsof je me app't",
+  subtitle:
+    "Geen formulier-gevoel. Kies twee keer een richting, typ daarna je bericht. Op contact kun je meteen versturen.",
+  ctaLabel: "Ga verder op contact",
+  ctaHref: "/contact#gesprek",
 } as const;

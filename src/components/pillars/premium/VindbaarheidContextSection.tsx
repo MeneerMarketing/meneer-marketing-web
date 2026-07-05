@@ -17,7 +17,7 @@ const INSIGHTS = [
   {
     id: "ai",
     icon: Bot,
-    label: "AI-zoek",
+    label: "AI-antwoorden",
     title: "ChatGPT is ook een zoekmachine",
     preview: "Geen antwoord? Dan kijkt je klant verder.",
     body: "Steeds meer klanten vragen eerst aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen simpelweg geen optie meer.",

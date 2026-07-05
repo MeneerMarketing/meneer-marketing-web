@@ -7,8 +7,10 @@ import {
   breadcrumbJsonLd,
   collectionPageJsonLd,
 } from "@/components/seo/JsonLd";
+import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import {
   getAllKennisbankArticles,
   getArticlesByCategory,
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kennisbank | MeneerMarketing",
     description:
-      "Alles wat wij weten over online groeien, gratis na te lezen. Van AI-zoek tot Shopify B2B.",
+      "Alles wat ik weet over online groeien, gratis na te lezen. Van AI-antwoorden tot Shopify B2B.",
     url: absoluteUrl("/kennisbank"),
     locale: "nl_NL",
     type: "website",
@@ -178,22 +180,29 @@ export default function KennisbankPage() {
             ))}
           </div>
 
+          <div className="mt-16">
+            <MarketingFunFactsRow
+              facts={getFunFactsForPage("/kennisbank")}
+              variant="inline"
+            />
+          </div>
+
           <Reveal delay={0.06}>
             <div className="mt-16 flex flex-col items-start gap-5 rounded-3xl border border-mm-border bg-mm-accent-subtle/60 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
                 <p className="text-lg font-extrabold text-mm-text">
-                  Liever dat wij dit gewoon voor je regelen?
+                  Liever dat ik dit voor je regel?
                 </p>
                 <p className="mt-1 text-sm text-mm-muted">
-                  Lezen is gratis, uitvoeren is ons vak. Start met de Groeiscan
-                  en zie waar voor jou de winst zit.
+                  Lezen is gratis, uitvoeren doe ik dagelijks. Vul de intake in
+                  en we bespreken waar voor jou de winst zit.
                 </p>
               </div>
               <Link
-                href={siteCtas.groeiscan.href}
+                href={siteCtas.startIntake.href}
                 className="inline-flex shrink-0 items-center gap-2 rounded-full bg-mm-accent px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-mm-accent/25 transition hover:bg-mm-accent-hover"
               >
-                {siteCtas.groeiscan.label}
+                {siteCtas.startIntake.label}
                 <ArrowUpRight className="size-4" aria-hidden />
               </Link>
             </div>

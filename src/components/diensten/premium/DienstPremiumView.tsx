@@ -47,6 +47,7 @@ import type { DienstStrategicContent } from "@/data/dienst-strategic";
 import type { DienstDetail } from "@/lib/diensten";
 import { ctaNav } from "@/lib/navigation";
 import { siteCtas } from "@/lib/cta";
+import { getFunFactForDienst } from "@/data/marketing-fun-facts";
 
 interface DienstPremiumViewProps {
   dienst: DienstDetail;
@@ -134,6 +135,7 @@ export function DienstPremiumView({
   premium,
   artikelen = [],
 }: DienstPremiumViewProps) {
+  const sidebarFact = getFunFactForDienst(dienst.slug);
   return (
     <article>
       {/* Hero */}
@@ -197,10 +199,10 @@ export function DienstPremiumView({
                 <ArrowUpRight className="relative z-10 size-4" aria-hidden />
               </Link>
               <Link
-                href={siteCtas.groeiscan.href}
+                href={siteCtas.startIntake.href}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300/80 bg-white/70 px-7 py-4 text-base font-bold tracking-tight text-slate-900 backdrop-blur transition hover:border-slate-900"
               >
-                {siteCtas.groeiscan.label}
+                {siteCtas.startIntake.label}
               </Link>
             </div>
 
@@ -492,6 +494,7 @@ export function DienstPremiumView({
             pillarName={dienst.pillar}
             related={related.map((r) => ({ slug: r.slug, name: r.name }))}
             artikelen={artikelen}
+            funFact={sidebarFact}
           />
         </div>
       </div>

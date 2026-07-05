@@ -1,3 +1,4 @@
+import { AI_ANSWERS } from "@/lib/ai-visibility-copy";
 import { siteCtas } from "@/lib/cta";
 
 export interface MegaMenuItem {
@@ -166,7 +167,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
   {
     pillarSlug: "vindbaarheid",
     category: "Vindbaarheid",
-    subtitle: "SEO, AI-zoek & content",
+    subtitle: "SEO, AI-antwoorden & content",
     pillarOverviewCta: "Alle trajecten vindbaarheid & content",
     items: [
       {
@@ -179,11 +180,10 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         href: "/diensten/seo",
       },
       {
-        name: "Vindbaar in AI-zoekmachines",
-        description: "Genoemd worden in ChatGPT, Gemini en Google AI",
-        menuLabel: "AI-zoek",
-        menuDescription:
-          "Steeds meer klanten vragen het aan AI. Wij zorgen dat jouw bedrijf het antwoord is.",
+        name: AI_ANSWERS.serviceName,
+        description: `Genoemd worden in ${AI_ANSWERS.tools} en Google AI`,
+        menuLabel: AI_ANSWERS.short,
+        menuDescription: AI_ANSWERS.menuDescription,
         href: "/diensten/ai-zoek",
       },
       {

@@ -18,15 +18,15 @@ export function DienstenIndexCta() {
             Weten welk blok nu het meest logisch is?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-400">
-            Start met de Groeiscan. Je ziet prioriteit, route en welke diensten
-            passen bij jouw fase. Geen verplichting, wel helderheid.
+            Vul de intake in (twee minuten). Dan weten we genoeg om prioriteit,
+            route en passende diensten te bespreken. Geen verplichting, wel helderheid.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:bg-orange-600"
             >
-              {siteCtas.groeiscan.label}
+              {siteCtas.startIntake.label}
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
             <Link

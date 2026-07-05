@@ -4,6 +4,8 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Hammer, Heart, Megaphone, Rocket, Search } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { HomeSituationChatScene } from "@/components/home/premium/HomeSituationChatScene";
+import { TrajectoryBrowserFrame } from "@/components/home/premium/TrajectoryBrowserFrame";
 import type { PillarSlug } from "@/lib/navigation";
 
 interface Situation {
@@ -16,6 +18,7 @@ interface Situation {
   pillarLabel: string;
   steps: string[];
   outcome: string;
+  chatTag: string;
 }
 
 const SITUATIONS: Situation[] = [
@@ -29,6 +32,7 @@ const SITUATIONS: Situation[] = [
     pillarLabel: "Strategie & groei",
     steps: ["Groeiplan", "Prioriteit", "Eerste quick wins"],
     outcome: "Eerst weten waar je groei zit. Dan pas bouwen of adverteren.",
+    chatTag: "Strategie",
   },
   {
     id: "site",
@@ -40,6 +44,7 @@ const SITUATIONS: Situation[] = [
     pillarLabel: "Bouwen from scratch",
     steps: ["Custom build", "Snelheid", "Conversie"],
     outcome: "From scratch, geen templates. Klaar voor marketing en groei.",
+    chatTag: "Bouwen",
   },
   {
     id: "find",
@@ -51,6 +56,7 @@ const SITUATIONS: Situation[] = [
     pillarLabel: "Vindbaarheid & content",
     steps: ["SEO", "Content", "Vindbaar in AI"],
     outcome: "Bovenaan in Google én zichtbaar in ChatGPT en Gemini.",
+    chatTag: "Vindbaar",
   },
   {
     id: "ads",
@@ -62,6 +68,7 @@ const SITUATIONS: Situation[] = [
     pillarLabel: "Acquisitie & creators",
     steps: ["Google Ads", "Meta Ads", "Creators"],
     outcome: "Klein testen, meten en opschalen wat echt terugverdient.",
+    chatTag: "Campagnes",
   },
   {
     id: "retain",
@@ -73,6 +80,7 @@ const SITUATIONS: Situation[] = [
     pillarLabel: "Behoud & koppelingen",
     steps: ["Mailautomatisering", "Retentie", "Automatisering"],
     outcome: "Klanten die terugkomen kosten vijf keer minder dan nieuwe werven.",
+    chatTag: "Behoud",
   },
 ];
 
@@ -95,11 +103,10 @@ export function HomeSituationMatcher() {
           id="home-situation-heading"
           className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
         >
-          Herken je dit? Zie je meteen de route.
+          Herken je dit? Speel het gesprek mee.
         </h2>
         <p className="mt-2 max-w-xl text-slate-600">
-          Tik op je situatie. Je ziet welk hoofdblok het meest logisch is en
-          waar we mee beginnen.
+          Tik op je situatie. Links zie je de route, rechts hoe zo&apos;n intake voelt.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-2">
@@ -144,7 +151,7 @@ export function HomeSituationMatcher() {
                 </div>
               </div>
               <div className="mt-6 flex flex-wrap gap-2">
-                {situation.steps.map((step, i) => (
+                {situation.steps.map((step) => (
                   <span
                     key={step}
                     className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-bold text-slate-700"
@@ -162,26 +169,12 @@ export function HomeSituationMatcher() {
               </Link>
             </div>
 
-            <div className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-900 shadow-[0_24px_48px_-24px_rgba(0,0,0,0.5)]">
-              <div className="flex items-center gap-2 border-b border-white/[0.06] px-4 py-3">
-                <span className="size-2 rounded-full bg-[#FF5722]/80" />
-                <span className="font-mono text-[10px] text-slate-500">route-preview</span>
-              </div>
-              <div className="flex flex-1 flex-col justify-center p-6 sm:p-8">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#FF5722]">
-                  Start hier
-                </p>
-                <p className="mt-2 text-2xl font-extrabold text-white">{situation.pillarLabel}</p>
-                <div className="mt-6 space-y-3">
-                  {situation.steps.map((step) => (
-                    <div key={step} className="flex items-center gap-3">
-                      <span className="size-2 shrink-0 rounded-full bg-[#FF5722]" aria-hidden />
-                      <span className="text-sm font-medium text-slate-300">{step}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <TrajectoryBrowserFrame tag={situation.chatTag} className="h-full">
+              <HomeSituationChatScene
+                situationId={situation.id}
+                situationLabel={situation.label}
+              />
+            </TrajectoryBrowserFrame>
           </motion.div>
         </AnimatePresence>
       </div>

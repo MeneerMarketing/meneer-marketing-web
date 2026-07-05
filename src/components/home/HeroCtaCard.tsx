@@ -1,371 +1,362 @@
 "use client";
 
 import Link from "next/link";
-import {
-  AnimatePresence,
-  motion,
-  useReducedMotion,
-} from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   ArrowUpRight,
+  Check,
+  Compass,
   Hammer,
-  Heart,
   Megaphone,
-  Rocket,
+  RefreshCw,
   Search,
   type LucideIcon,
 } from "lucide-react";
 import { useState } from "react";
 import { Magnetic } from "@/components/effects/Magnetic";
 import { useHeroTilt } from "@/components/diensten/premium/useHeroTilt";
-import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { siteCtas } from "@/lib/cta";
+import type { PillarSlug } from "@/lib/navigation";
 
-interface PainOption {
-  id: string;
+/* ------------------------------------------------------------------ */
+/* Content — De Marketing-APK                                          */
+/* ------------------------------------------------------------------ */
+
+interface CheckItem {
+  id: PillarSlug;
   label: string;
+  micro: string;
   icon: LucideIcon;
-  response: string;
-  route: readonly [string, string, string];
 }
 
-const PAINS: PainOption[] = [
+const CHECKS: CheckItem[] = [
   {
-    id: "start",
-    label: "Waar begin ik?",
-    icon: Rocket,
-    response: "Eerst routekaart. Daarna pas bouwen. Geen twintig kanalen tegelijk.",
-    route: ["Plan", "Prioriteit", "Winst"],
+    id: "strategie",
+    label: "Strategie",
+    micro: "Weten waar het geld zit",
+    icon: Compass,
   },
   {
-    id: "site",
-    label: "Site houdt tegen",
+    id: "bouwen",
+    label: "Website",
+    micro: "Verkoopt, ook om 3 uur 's nachts",
     icon: Hammer,
-    response: "Traffic zonder conversie is dure scenery. Fix de basis, dan pas harder adverteren.",
-    route: ["Site", "Snelheid", "Conv."],
   },
   {
-    id: "find",
-    label: "Niet gevonden",
+    id: "vindbaarheid",
+    label: "Vindbaarheid",
+    micro: "Google én ChatGPT kennen je",
     icon: Search,
-    response: "Als Google je niet kent, blijven ads ook duur. Vindbaarheid eerst.",
-    route: ["SEO", "Content", "AI-zoek"],
   },
   {
-    id: "ads",
-    label: "Ads zonder winst",
+    id: "campagnes",
+    label: "Campagnes",
+    micro: "Ads zonder zweethanden",
     icon: Megaphone,
-    response: "Budget naar klikken is leuk. Naar klanten is beter. Structuur en meting.",
-    route: ["Google", "Meta", "ROAS"],
   },
   {
-    id: "retain",
-    label: "Geen herhaling",
-    icon: Heart,
-    response: "Nieuwe klant werven is duur sport. Retentie is waar je marge zit.",
-    route: ["Mail", "LTV", "Terug"],
+    id: "behoud",
+    label: "Klantbehoud",
+    micro: "Klanten die blijven plakken",
+    icon: RefreshCw,
   },
 ];
 
-const CHAOS_LINES: readonly [number, number][] = [
-  [0, 2],
-  [0, 3],
-  [1, 3],
-  [1, 4],
-  [2, 4],
-  [0, 4],
-];
+const VERDICTS = [
+  {
+    min: 0,
+    kicker: "Rijverbod",
+    line: "Niks geregeld is ook een keuze. Een dure.",
+  },
+  {
+    min: 1,
+    kicker: "Rammelt een beetje",
+    line: "Je rijdt, maar de wielen wiebelen. Daar valt wat te halen.",
+  },
+  {
+    min: 3,
+    kicker: "Bijna erdoor",
+    line: "Solide basis. Die laatste puntjes zijn precies waar de winst zit.",
+  },
+  {
+    min: 5,
+    kicker: "Goedgekeurd",
+    line: "Alles staat aan. Nu kijken hoeveel harder deze motor kan.",
+  },
+] as const;
 
-/**
- * Interactief bureau: kies je knelpunt, zie de chaos sorteeren, plan het gesprek.
- */
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+/* ------------------------------------------------------------------ */
+/* Component                                                           */
+/* ------------------------------------------------------------------ */
+
 export function HeroCtaCard() {
   const reduce = useReducedMotion() ?? false;
-  const { rotateX, rotateY, onMove, onLeave } = useHeroTilt(0.55);
-  const [active, setActive] = useState(PAINS[0].id);
-  const pain = PAINS.find((p) => p.id === active) ?? PAINS[0];
+  const { rotateX, rotateY, onMove, onLeave } = useHeroTilt(0.35);
+  const [checked, setChecked] = useState<Set<PillarSlug>>(() => new Set());
+
+  const score = checked.size;
+  const isApproved = score === CHECKS.length;
+  const verdict = [...VERDICTS].reverse().find((v) => score >= v.min)!;
+
+  function toggle(id: PillarSlug) {
+    setChecked((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
 
   return (
     <div
-      className="relative w-full max-w-[480px] [perspective:1200px]"
+      className="relative w-full max-w-[440px] [perspective:1200px]"
       onMouseMove={onMove}
       onMouseLeave={onLeave}
     >
       <motion.div
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        className="relative isolate overflow-hidden rounded-[28px] border border-slate-200/90 bg-white shadow-[0_32px_80px_-28px_rgba(15,23,42,0.22)]"
+        className="relative isolate overflow-hidden rounded-[28px] bg-[#FF5722] shadow-[0_48px_90px_-28px_rgba(255,87,34,0.6)] ring-1 ring-inset ring-white/15"
       >
-        <DeskGrid />
+        <CardAtmosphere />
 
-        <div className="relative z-10 p-6 sm:p-8" style={{ transform: "translateZ(24px)" }}>
-          <div className="flex items-center justify-between gap-3">
-            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
-              meneer.desk
+        <div
+          className="relative z-10 p-5 sm:p-6"
+          style={{ transform: "translateZ(24px)" }}
+        >
+          {/* Header */}
+          <div className="flex items-center justify-between gap-2">
+            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.22em] text-white/55">
+              De marketing-APK
             </p>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-emerald-700">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider text-white/90 backdrop-blur-sm">
               <span className="relative flex size-1.5">
                 {!reduce ? (
                   <motion.span
-                    className="absolute inset-0 rounded-full bg-emerald-500"
-                    animate={{ scale: [1, 2.2, 1], opacity: [0.8, 0, 0.8] }}
-                    transition={{ duration: 1.8, repeat: Infinity, ease: "easeOut" }}
+                    className="absolute inset-0 rounded-full bg-white"
+                    animate={{ scale: [1, 2.2, 1], opacity: [0.7, 0, 0.7] }}
+                    transition={{ duration: 2.4, repeat: Infinity }}
                   />
                 ) : null}
-                <span className="relative size-1.5 rounded-full bg-emerald-500" />
+                <span className="relative size-1.5 rounded-full bg-white" />
               </span>
-              3 plekken Q3
+              3 plekken vrij in Q3
             </span>
           </div>
 
-          <div className="mt-6 flex items-start gap-3">
-            <InteractiveLogo className="size-11 shrink-0 sm:size-12" />
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={pain.id}
-                initial={reduce ? undefined : { opacity: 0, y: 8, scale: 0.98 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={reduce ? undefined : { opacity: 0, y: -6, scale: 0.98 }}
-                transition={{ type: "spring", stiffness: 380, damping: 28 }}
-                className="relative min-w-0 flex-1 rounded-2xl rounded-tl-sm border border-slate-200 bg-slate-50 px-4 py-3"
-              >
-                <p className="text-[10px] font-bold uppercase tracking-wider text-[#FF5722]">
-                  Meneer zegt
-                </p>
-                <p className="mt-1 text-sm font-bold leading-snug text-slate-800">
-                  {pain.response}
-                </p>
-                <span
-                  aria-hidden
-                  className="absolute -left-[6px] top-4 size-3 rotate-45 border-b border-l border-slate-200 bg-slate-50"
-                />
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-          <p className="mt-6 text-[11px] font-bold uppercase tracking-[0.16em] text-slate-400">
-            Waar knelt het nu?
+          {/* Title */}
+          <h3 className="mt-4 text-xl font-extrabold leading-snug tracking-tight text-white sm:text-[22px]">
+            Komt jouw marketing door de keuring?
+          </h3>
+          <p className="mt-1 text-sm leading-relaxed text-white/70">
+            Vijf checks. Eerlijk aanvinken wat al geregeld is.
           </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {PAINS.map((p) => {
-              const Icon = p.icon;
-              const isOn = p.id === active;
+
+          {/* Checklist */}
+          <div className="mt-4 space-y-2">
+            {CHECKS.map((item, i) => {
+              const Icon = item.icon;
+              const on = checked.has(item.id);
               return (
-                <button
-                  key={p.id}
+                <motion.button
+                  key={item.id}
                   type="button"
-                  onClick={() => setActive(p.id)}
-                  className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-2 text-left text-xs font-bold transition-all ${
-                    isOn
-                      ? "border-[#FF5722] bg-[#FF5722] text-white shadow-md shadow-[#FF5722]/25"
-                      : "border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50"
+                  onClick={() => toggle(item.id)}
+                  aria-pressed={on}
+                  initial={reduce ? undefined : { opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  whileTap={reduce ? undefined : { scale: 0.985 }}
+                  transition={{ delay: i * 0.05, duration: 0.4, ease: EASE }}
+                  className={`group/row flex w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-left transition-colors duration-300 ${
+                    on
+                      ? "border-white bg-white shadow-lg shadow-black/10"
+                      : "border-white/20 bg-white/[0.08] hover:border-white/45 hover:bg-white/[0.14]"
                   }`}
                 >
-                  <Icon className="size-3.5" strokeWidth={2} aria-hidden />
-                  {p.label}
-                </button>
+                  <span
+                    className={`flex size-8 shrink-0 items-center justify-center rounded-lg transition-colors duration-300 ${
+                      on ? "bg-[#FF5722]/10 text-[#FF5722]" : "bg-white/10 text-white/80"
+                    }`}
+                  >
+                    <Icon className="size-3.5" strokeWidth={2.2} aria-hidden />
+                  </span>
+
+                  <span className="min-w-0 flex-1">
+                    <span
+                      className={`block text-[13px] font-extrabold leading-tight transition-colors duration-300 ${
+                        on ? "text-slate-900" : "text-white"
+                      }`}
+                    >
+                      {item.label}
+                    </span>
+                    <span
+                      className={`block truncate text-[11px] font-medium leading-tight transition-colors duration-300 ${
+                        on ? "text-slate-500" : "text-white/55"
+                      }`}
+                    >
+                      {item.micro}
+                    </span>
+                  </span>
+
+                  {/* Check control */}
+                  <span
+                    className={`relative flex size-6 shrink-0 items-center justify-center rounded-full border-2 transition-colors duration-300 ${
+                      on
+                        ? "border-[#FF5722] bg-[#FF5722]"
+                        : "border-white/40 bg-transparent group-hover/row:border-white/70"
+                    }`}
+                    aria-hidden
+                  >
+                    <AnimatePresence>
+                      {on ? (
+                        <motion.span
+                          initial={
+                            reduce ? { opacity: 1 } : { scale: 1.7, rotate: -18, opacity: 0 }
+                          }
+                          animate={{ scale: 1, rotate: 0, opacity: 1 }}
+                          exit={{ scale: 0.4, opacity: 0 }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 420,
+                            damping: 16,
+                          }}
+                          className="flex"
+                        >
+                          <Check className="size-3.5 text-white" strokeWidth={3.5} />
+                        </motion.span>
+                      ) : null}
+                    </AnimatePresence>
+                  </span>
+                </motion.button>
               );
             })}
           </div>
 
-          <ChaosToRouteMap activeId={pain.id} route={pain.route} reduce={reduce} />
+          {/* Keuringsrapport */}
+          <div className="relative mt-4 rounded-xl border border-white/15 bg-black/[0.08] px-3.5 py-3">
+            <div className="flex items-center gap-3">
+              {/* Segmented score bar */}
+              <div className="flex flex-1 gap-1" aria-hidden>
+                {CHECKS.map((_, i) => (
+                  <div
+                    key={i}
+                    className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/20"
+                  >
+                    <motion.div
+                      className={`h-full w-full origin-left rounded-full ${
+                        isApproved ? "bg-[#FFE9C7]" : "bg-white"
+                      }`}
+                      initial={false}
+                      animate={{ scaleX: i < score ? 1 : 0 }}
+                      transition={{ duration: reduce ? 0 : 0.4, ease: EASE }}
+                    />
+                  </div>
+                ))}
+              </div>
+              <p className="shrink-0 font-mono text-[11px] font-bold tabular-nums text-white/80">
+                {score}
+                <span className="text-white/40">/{CHECKS.length}</span>
+              </p>
+            </div>
 
-          <div className="mt-6">
-            <Magnetic strength={12} radius={180} wobble={false}>
-              <Link
-                href={siteCtas.startIntake.href}
-                className="group relative flex w-full items-center justify-between gap-3 overflow-hidden rounded-2xl bg-slate-900 px-5 py-4 text-left shadow-[0_16px_40px_-16px_rgba(15,23,42,0.55)] transition-shadow hover:shadow-[0_22px_48px_-14px_rgba(255,87,34,0.35)]"
-              >
-                <span
+            <div className="mt-2.5 min-h-[38px]" role="status" aria-live="polite">
+              <AnimatePresence mode="wait">
+                <motion.p
+                  key={verdict.kicker}
+                  initial={reduce ? undefined : { opacity: 0, y: 5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={reduce ? undefined : { opacity: 0, y: -5 }}
+                  transition={{ duration: 0.3, ease: EASE }}
+                >
+                  <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-white/50">
+                    Keuringsrapport · {verdict.kicker}
+                  </span>
+                  <span className="mt-0.5 block pr-24 text-[13px] font-bold leading-snug text-white">
+                    {verdict.line}
+                  </span>
+                </motion.p>
+              </AnimatePresence>
+            </div>
+
+            {/* Rubber stamp on full score */}
+            <AnimatePresence>
+              {isApproved ? (
+                <motion.div
+                  initial={
+                    reduce
+                      ? { opacity: 1, rotate: -8 }
+                      : { opacity: 0, scale: 1.8, rotate: -20 }
+                  }
+                  animate={{ opacity: 1, scale: 1, rotate: -8 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 14 }}
+                  className="pointer-events-none absolute bottom-3 right-3 select-none rounded-md border-[2.5px] border-[#FFE9C7] px-2 py-1 text-[10px] font-black uppercase tracking-[0.16em] text-[#FFE9C7] [box-shadow:0_0_20px_rgba(255,233,199,0.35)]"
                   aria-hidden
-                  className="absolute inset-y-0 left-0 w-1.5 bg-[#FF5722] transition-all duration-500 group-hover:w-2"
-                />
-                {!reduce ? (
-                  <motion.span
-                    aria-hidden
-                    className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#FF5722]/0 via-[#FF5722]/10 to-[#FF5722]/0"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.7, ease: "easeInOut" }}
-                  />
-                ) : null}
-                <span className="relative z-10 flex flex-col pl-2">
-                  <span className="text-base font-extrabold tracking-tight text-white">
-                    Leg het op tafel
-                  </span>
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400 group-hover:text-slate-300">
-                    30 min · gratis · jij praat, ik luister
-                  </span>
-                </span>
-                <span className="relative z-10 flex size-10 items-center justify-center rounded-xl bg-white/10 text-white transition-colors group-hover:bg-[#FF5722]">
-                  <ArrowUpRight
-                    className="size-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                    aria-hidden
-                  />
-                </span>
-              </Link>
-            </Magnetic>
+                >
+                  Goedgekeurd
+                </motion.div>
+              ) : null}
+            </AnimatePresence>
           </div>
 
-          <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] font-semibold text-slate-500">
-            <span className="inline-flex items-center gap-1.5">
-              <span className="size-1.5 rounded-full bg-[#FF5722]" aria-hidden />
-              Reactie binnen 24 uur
-            </span>
-            <span className="hidden size-1 rounded-full bg-slate-300 sm:inline" aria-hidden />
-            <span>Geen verkooppraat</span>
-          </div>
+          {/* CTA */}
+          <Magnetic strength={10} radius={160} wobble={false}>
+            <Link
+              href={siteCtas.startIntake.href}
+              className="group relative mt-4 flex w-full items-center justify-between gap-3 overflow-hidden rounded-2xl bg-white px-4 py-3.5 shadow-[0_18px_44px_-14px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-[1.015] active:scale-[0.99]"
+            >
+              {!reduce ? (
+                <motion.span
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5722]/[0.07] to-transparent"
+                  initial={{ x: "-100%" }}
+                  whileHover={{ x: "100%" }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                />
+              ) : null}
+              <span className="relative z-10 min-w-0">
+                <span className="block truncate text-sm font-extrabold tracking-tight text-slate-900">
+                  Plan de gratis keuring
+                </span>
+                <span className="mt-0.5 block truncate text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-500">
+                  30 min · jij praat, ik sleutel mee
+                </span>
+              </span>
+              <span className="relative z-10 flex size-9 shrink-0 items-center justify-center rounded-xl bg-[#FF5722] text-white transition-transform duration-300 group-hover:rotate-45">
+                <ArrowUpRight className="size-4" aria-hidden />
+              </span>
+            </Link>
+          </Magnetic>
+
+          <p className="mt-3 text-center text-[10px] font-semibold text-white/50">
+            Reactie binnen 24 uur · nul verkooppraat
+          </p>
         </div>
       </motion.div>
+    </div>
+  );
+}
 
+/* ------------------------------------------------------------------ */
+/* Background layers                                                   */
+/* ------------------------------------------------------------------ */
+
+function CardAtmosphere() {
+  return (
+    <>
       <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_18%_-5%,rgba(255,255,255,0.18),transparent_55%)]"
         aria-hidden
-        className="pointer-events-none absolute -bottom-8 -right-6 -z-10 size-36 rounded-full bg-[#FF5722]/15 blur-3xl"
       />
-    </div>
-  );
-}
-
-function DeskGrid() {
-  return (
-    <svg
-      aria-hidden
-      className="pointer-events-none absolute inset-0 size-full opacity-[0.35]"
-      width="100%"
-      height="100%"
-    >
-      <defs>
-        <pattern id="desk-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-          <path
-            d="M 28 0 L 0 0 0 28"
-            fill="none"
-            stroke="#CBD5E1"
-            strokeWidth="0.6"
-          />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#desk-grid)" />
-    </svg>
-  );
-}
-
-interface ChaosToRouteMapProps {
-  activeId: string;
-  route: readonly [string, string, string];
-  reduce: boolean;
-}
-
-function ChaosToRouteMap({ activeId, route, reduce }: ChaosToRouteMapProps) {
-  const nodePositions = [
-    { x: 18, y: 28 },
-    { x: 50, y: 12 },
-    { x: 82, y: 30 },
-    { x: 28, y: 58 },
-    { x: 72, y: 62 },
-  ];
-
-  const pipelineX = [14, 50, 86];
-
-  return (
-    <div className="relative mt-5 overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 px-3 py-4">
-      <p className="mb-3 text-center font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-slate-500">
-        Van knoop · naar route
-      </p>
-
-      <svg viewBox="0 0 100 72" className="mx-auto h-[88px] w-full max-w-[320px]" aria-hidden>
-        <AnimatePresence mode="wait">
-          <motion.g
-            key={`chaos-${activeId}`}
-            initial={reduce ? undefined : { opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={reduce ? undefined : { opacity: 0 }}
-            transition={{ duration: 0.25 }}
-          >
-            {CHAOS_LINES.map(([a, b], i) => (
-              <motion.line
-                key={`${a}-${b}`}
-                x1={nodePositions[a].x}
-                y1={nodePositions[a].y}
-                x2={nodePositions[b].x}
-                y2={nodePositions[b].y}
-                stroke="#475569"
-                strokeWidth="0.8"
-                strokeDasharray="2 3"
-                initial={reduce ? undefined : { pathLength: 0, opacity: 0 }}
-                animate={{ pathLength: 1, opacity: 0.45 }}
-                transition={{ delay: i * 0.04, duration: 0.35 }}
-              />
-            ))}
-            {nodePositions.map((pos, i) => (
-              <motion.circle
-                key={`chaos-node-${i}`}
-                cx={pos.x}
-                cy={pos.y}
-                r="3.2"
-                fill="#1E293B"
-                stroke="#64748B"
-                strokeWidth="1"
-                initial={reduce ? undefined : { scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.1 + i * 0.05, type: "spring", stiffness: 400, damping: 22 }}
-              />
-            ))}
-          </motion.g>
-        </AnimatePresence>
-
-        <motion.g
-          initial={reduce ? undefined : { opacity: 0, y: 6 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15, type: "spring", stiffness: 300, damping: 26 }}
-        >
-          <line x1="8" y1="68" x2="92" y2="68" stroke="#334155" strokeWidth="0.6" />
-          {pipelineX.slice(0, 2).map((x, i) => (
-            <motion.line
-              key={`pipe-${i}`}
-              x1={pipelineX[i]}
-              y1="68"
-              x2={pipelineX[i + 1]}
-              y2="68"
-              stroke="#FF5722"
-              strokeWidth="2"
-              strokeLinecap="round"
-              initial={reduce ? undefined : { pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ delay: 0.25 + i * 0.12, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            />
-          ))}
-          {pipelineX.map((x, i) => (
-            <g key={`step-${route[i]}`}>
-              <motion.circle
-                cx={x}
-                cy="68"
-                r="4.5"
-                fill="#FF5722"
-                initial={reduce ? undefined : { scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.3 + i * 0.1, type: "spring", stiffness: 420, damping: 20 }}
-              />
-              <text
-                x={x}
-                y="62"
-                textAnchor="middle"
-                className="fill-slate-400 text-[6px] font-bold uppercase"
-                style={{ fontSize: 6 }}
-              >
-                {route[i]}
-              </text>
-            </g>
-          ))}
-        </motion.g>
-      </svg>
-
-      <motion.p
-        key={activeId}
-        initial={reduce ? undefined : { opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="mt-1 text-center text-[10px] font-bold text-slate-400"
-      >
-        Tik een chip · route past mee
-      </motion.p>
-    </div>
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(130%_90%_at_50%_115%,rgba(154,52,18,0.5),transparent_60%)]"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px]"
+        aria-hidden
+      />
+    </>
   );
 }

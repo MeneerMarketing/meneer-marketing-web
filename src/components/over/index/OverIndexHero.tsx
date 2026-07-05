@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
-import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { OverHeroFactsStack } from "@/components/over/index/OverHeroFactsStack";
 import { OVER_HERO } from "@/data/over-index";
 import { siteCtas } from "@/lib/cta";
 
@@ -18,7 +18,7 @@ export function OverIndexHero() {
       />
 
       <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(280px,340px)] lg:items-start lg:gap-12">
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(300px,360px)] lg:items-stretch lg:gap-12">
           <div className="min-w-0">
             <Reveal>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
@@ -63,14 +63,8 @@ export function OverIndexHero() {
             </Reveal>
           </div>
 
-          <Reveal className="mt-10 lg:mt-0" delay={0.1}>
-            <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 via-white to-orange-50/40 p-6 shadow-[0_24px_56px_-32px_rgba(15,23,42,0.2)]">
-              <InteractiveLogo className="mx-auto h-24 w-24" />
-              <p className="mt-4 flex items-start gap-2 text-sm font-bold leading-snug text-slate-700">
-                <Sparkles className="mt-0.5 size-4 shrink-0 text-[#FF5722]" aria-hidden />
-                {OVER_HERO.aside}
-              </p>
-            </div>
+          <Reveal className="mt-10 lg:mt-0 lg:flex lg:h-full lg:flex-col" delay={0.1}>
+            <OverHeroFactsStack />
           </Reveal>
         </div>
       </div>

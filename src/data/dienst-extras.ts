@@ -7,7 +7,7 @@ const Q = {
   start: {
     question: "Hoe starten we. En hoe snel zie ik iets live?",
     answer:
-      "We beginnen met een korte intake of Groeiscan: doelen, stack, prioriteit. Daarna een sprintplan met duidelijke oplevermomenten. Geen zwarte doos van maanden zonder zichtbare voortgang.",
+      "We beginnen met een korte intake: doelen, stack, prioriteit. Daarna een sprintplan met duidelijke oplevermomenten. Geen zwarte doos van maanden zonder zichtbare voortgang.",
   },
   remote: {
     question: "Werken jullie remote met ons team?",
@@ -348,14 +348,14 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Is vindbaarheid in AI-zoek nu al belangrijk?",
+        question: "Is vindbaarheid in AI-antwoorden nu al belangrijk?",
         answer:
           "Ja. Een groeiend deel van de zoektochten begint bij ChatGPT of Gemini, en Google toont AI-antwoorden boven de gewone resultaten. Wie er nu in investeert, bouwt een voorsprong op die later duur is om in te halen.",
       },
       {
         question: "Hoe verschilt dit van gewone SEO?",
         answer:
-          "De basis overlapt: goede content en een technisch kloppende site. AI-zoek vraagt daarnaast om content die als antwoord te citeren is, duidelijke bedrijfsinformatie en autoriteitssignalen die modellen herkennen.",
+          "De basis overlapt: goede content en een technisch kloppende site. AI-antwoorden vragen daarnaast om content die als antwoord te citeren is, duidelijke bedrijfsinformatie en autoriteitssignalen die modellen herkennen.",
       },
       Q.meet,
     ],

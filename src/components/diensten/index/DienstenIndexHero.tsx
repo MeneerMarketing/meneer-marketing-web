@@ -30,10 +30,10 @@ export function DienstenIndexHero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FF5722] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/25 transition hover:bg-orange-600"
             >
-              {siteCtas.groeiscan.label}
+              {siteCtas.startIntake.label}
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
             <a

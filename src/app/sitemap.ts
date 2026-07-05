@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/intake",
     "/schaal-op",
     "/kennisbank",
+    "/weetjes",
     "/privacybeleid",
     "/cookiebeleid",
     "/algemene-voorwaarden",

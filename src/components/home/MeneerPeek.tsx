@@ -1,7 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
+import { siteCtas } from "@/lib/cta";
 
 const QUOTES = [
   "Ik zag je scrollen. Strakke scrolltechniek trouwens.",
@@ -54,6 +57,14 @@ export function MeneerPeek() {
           </motion.span>
         </AnimatePresence>
       </button>
+
+      <Link
+        href={siteCtas.startIntake.href}
+        className="group mt-4 inline-flex items-center gap-2 rounded-2xl rounded-bl-sm border border-[#FF5722]/40 bg-[#FF5722] px-4 py-2.5 text-sm font-bold text-white shadow-[0_10px_28px_-12px_rgba(255,87,34,0.55)] transition hover:border-[#FF5722] hover:bg-orange-600"
+      >
+        Plan een gesprek
+        <ArrowUpRight className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden />
+      </Link>
     </motion.div>
   );
 }

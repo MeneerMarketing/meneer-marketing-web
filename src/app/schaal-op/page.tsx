@@ -103,9 +103,9 @@ export default function SchaalOpPage() {
               ]}
               links={[
                 {
-                  label: "Groeiscan",
-                  href: siteCtas.groeiscan.href,
-                  description: "Speels model om prioriteit te testen.",
+                  label: "Start intake",
+                  href: siteCtas.startIntake.href,
+                  description: "Twee minuten context, daarna plannen we het gesprek.",
                   icon: <Sparkles className="size-4" />,
                 },
                 {

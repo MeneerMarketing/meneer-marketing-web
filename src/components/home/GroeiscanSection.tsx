@@ -7,18 +7,18 @@ import { siteCtas } from "@/lib/cta";
 const HIGHLIGHTS = [
   {
     icon: Radar,
-    title: "Plant live",
-    body: "Elk antwoord laat je plant groeien. Onkruid, wortels en zonlicht reageren direct.",
+    title: "Groeikracht live",
+    body: "Doel, stand, budget, ritme en stack. Elk antwoord telt mee in je score.",
   },
   {
     icon: Route,
     title: "Route zichtbaar",
-    body: "Zie welk blok eerst logisch is: strategie, bouw, vindbaarheid, ads of behoud.",
+    body: "Zie welk blok eerst logisch is: strategie, bouwen, vindbaarheid, campagnes of behoud.",
   },
   {
     icon: Compass,
     title: "Geen verplichting",
-    body: "Speels beginnen, serieus eindigen. Wil je dieper? Plan daarna een echte sessie.",
+    body: "Snel beginnen, serieus eindigen. Wil je dieper? Plan daarna een echte sessie.",
   },
 ] as const;
 
@@ -49,11 +49,11 @@ export function GroeiscanSection() {
                 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"
               >
                 Waar zit jouw groei?{" "}
-                <span className="text-[#FF5722]">Plant het in de groeituin.</span>
+                <span className="text-[#FF5722]">Meet je groeikracht.</span>
               </h2>
               <p className="mt-4 max-w-lg text-lg leading-relaxed text-slate-600">
-                Geen intake-formulier met twintig velden. Vijf stations, een plant die
-                meegroeit en welke route logisch is. Gratis en zonder kleine lettertjes.
+                Geen intake-formulier met twintig velden. Zes stappen, een score die oploopt
+                en welke route logisch is. Gratis scan, daarna plan je een sessie.
               </p>
             </Reveal>
 

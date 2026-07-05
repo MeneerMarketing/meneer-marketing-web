@@ -66,7 +66,7 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
       body: "Concurrenten staan overal bovenaan, jij niet. Dan bouwen we structuur en content op waar jouw klant echt op zoekt.",
     },
     {
-      title: "AI-zoek voor zijn",
+      title: "Niet in AI-antwoorden",
       body: "Klanten vragen ChatGPT om advies in jouw branche. Dan zorgen we dat jouw bedrijf het antwoord is, vóór je concurrent het doorheeft.",
     },
     {
@@ -427,7 +427,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     ],
   },
   "ai-zoek": {
-    deepTitle: "AI-zoek: het kanaal waar je concurrent nog niet is",
+    deepTitle: "AI-antwoorden: het kanaal waar je concurrent nog niet is",
     deepLead:
       "ChatGPT, Gemini en Google AI Overviews beantwoorden steeds vaker de vraag ‘welk bedrijf moet ik kiezen’. Wie daar als antwoord uitkomt, wint de klant voordat er ooit gezocht is in de klassieke resultaten.",
     deepExtended:

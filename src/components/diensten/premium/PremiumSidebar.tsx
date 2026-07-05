@@ -3,6 +3,8 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { SidebarFunFact } from "@/components/shared/SidebarFunFact";
+import type { MarketingFunFact } from "@/data/marketing-fun-facts";
 
 export interface SidebarRelatedItem {
   slug: string;
@@ -21,6 +23,7 @@ interface PremiumSidebarProps {
   pillarName: string;
   related: SidebarRelatedItem[];
   artikelen?: SidebarArtikel[];
+  funFact?: MarketingFunFact;
 }
 
 /** Lichte sticky sidebar: CTA, gerelateerde links en kennisbank. */
@@ -30,6 +33,7 @@ export function PremiumSidebar({
   pillarName,
   related,
   artikelen = [],
+  funFact,
 }: PremiumSidebarProps) {
   const reduce = useReducedMotion();
 
@@ -130,6 +134,8 @@ export function PremiumSidebar({
           </ul>
         </div>
       ) : null}
+
+      {funFact ? <SidebarFunFact fact={funFact} /> : null}
     </aside>
   );
 }

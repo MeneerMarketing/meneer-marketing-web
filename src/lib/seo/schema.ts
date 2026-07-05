@@ -14,6 +14,8 @@ export const organizationJsonLd: JsonLdObject = {
   "@type": "Organization",
   name: "MeneerMarketing",
   url: siteUrl,
+  logo: absoluteUrl("/icon.svg"),
+  image: absoluteUrl("/og/og-default.svg"),
   email: businessEmail,
   identifier: {
     "@type": "PropertyValue",
@@ -44,6 +46,7 @@ export const websiteJsonLd: JsonLdObject = {
     "@type": "Organization",
     name: "MeneerMarketing",
     url: siteUrl,
+    logo: absoluteUrl("/icon.svg"),
   },
   inLanguage: "nl-NL",
 };
@@ -207,6 +210,26 @@ export function collectionPageJsonLd(input: {
         name: item.name,
         url: absoluteUrl(item.path),
       })),
+    },
+  };
+}
+
+export function webPageJsonLd(input: {
+  name: string;
+  description: string;
+  path: string;
+}): JsonLdObject {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: input.name,
+    description: input.description,
+    url: absoluteUrl(input.path),
+    inLanguage: "nl-NL",
+    isPartOf: {
+      "@type": "WebSite",
+      name: "MeneerMarketing",
+      url: siteUrl,
     },
   };
 }

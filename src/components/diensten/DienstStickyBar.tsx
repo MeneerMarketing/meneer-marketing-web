@@ -88,10 +88,10 @@ export function DienstStickyBar({ dienstName }: DienstStickyBarProps) {
             </p>
 
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="hidden shrink-0 items-center gap-1 rounded-full border border-mm-border px-4 py-2.5 text-sm font-bold text-mm-text transition hover:border-mm-sky-deep/40 hover:text-mm-sky-deep md:inline-flex"
             >
-              {siteCtas.groeiscan.label}
+              {siteCtas.startIntake.label}
             </Link>
             <Link
               href={siteCtas.projectStarten.href}

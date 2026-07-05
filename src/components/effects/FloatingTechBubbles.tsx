@@ -4,7 +4,9 @@ import { useMemo, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { GoogleLogoMark } from "@/components/icons/GoogleLogoMark";
 
-type TechKey = "shopify" | "n8n" | "google" | "nextjs";
+type TechKey = "google" | "instagram" | "shopify" | "facebook";
+
+const TECHS: TechKey[] = ["google", "shopify", "instagram", "facebook"];
 
 interface Bubble {
   key: string;
@@ -16,7 +18,41 @@ interface Bubble {
   drift: number;
 }
 
-const TECHS: TechKey[] = ["shopify", "n8n", "google", "nextjs"];
+function bubbleSize(tech: TechKey, rand: () => number): number {
+  const base = 44 + Math.round(rand() * 16);
+  return tech === "shopify" ? base + 10 : base;
+}
+
+/** Gelijk aantal per merk, round-robin zodat hetzelfde logo niet achter elkaar komt. */
+function buildBalancedTechSequence(count: number): TechKey[] {
+  const remaining = new Map<TechKey, number>();
+  const base = Math.floor(count / TECHS.length);
+  const extra = count % TECHS.length;
+
+  TECHS.forEach((tech, index) => {
+    remaining.set(tech, base + (index < extra ? 1 : 0));
+  });
+
+  const sequence: TechKey[] = [];
+  while (sequence.length < count) {
+    for (const tech of TECHS) {
+      const left = remaining.get(tech) ?? 0;
+      if (left > 0) {
+        sequence.push(tech);
+        remaining.set(tech, left - 1);
+      }
+    }
+  }
+
+  return sequence;
+}
+
+/** Horizontale slots gelijk verdeeld; zelfde tech krijgt ver uit elkaar liggende slots. */
+function slotLeft(index: number, count: number, jitter: number): number {
+  if (count <= 1) return 50 + jitter;
+  const spread = 6 + (index / (count - 1)) * 88;
+  return Math.min(94, Math.max(6, spread + jitter));
+}
 
 function generateBubbles(count: number, seed = 1): Bubble[] {
   let s = seed;
@@ -24,15 +60,35 @@ function generateBubbles(count: number, seed = 1): Bubble[] {
     s = (s * 9301 + 49297) % 233280;
     return s / 233280;
   };
-  return Array.from({ length: count }, (_, i) => ({
-    key: `b-${i}`,
-    tech: TECHS[i % TECHS.length],
-    left: 6 + rand() * 88,
-    size: 40 + Math.round(rand() * 22),
-    delay: rand() * 8,
-    duration: 14 + rand() * 10,
-    drift: -12 + rand() * 24,
-  }));
+
+  const techSequence = buildBalancedTechSequence(count);
+  const techPhase: Record<TechKey, number> = {
+    google: 0,
+    shopify: 0,
+    instagram: 0,
+    facebook: 0,
+  };
+
+  return techSequence.map((tech, i) => {
+    const duration = 10 + rand() * 6;
+    const phaseIndex = techPhase[tech];
+    techPhase[tech] += 1;
+
+    const jitter = (rand() - 0.5) * 3;
+    const stagger = (i / count) * 4.2;
+    const techOffset = phaseIndex * (duration / Math.max(1, count / TECHS.length));
+    const preseed = -(rand() * duration * 0.65);
+
+    return {
+      key: `b-${i}-${tech}`,
+      tech,
+      left: slotLeft(i, count, jitter),
+      size: bubbleSize(tech, rand),
+      delay: stagger + techOffset * 0.35 + preseed,
+      duration,
+      drift: -14 + rand() * 28,
+    };
+  });
 }
 
 export function FloatingTechBubbles({
@@ -64,7 +120,7 @@ function FloatingBubble({ bubble }: { bubble: Bubble }) {
 
   return (
     <div
-      className="pointer-events-auto absolute bottom-[-15%]"
+      className="pointer-events-auto absolute bottom-[-6%]"
       style={{
         left: `${bubble.left}%`,
         width: bubble.size,
@@ -79,7 +135,7 @@ function FloatingBubble({ bubble }: { bubble: Bubble }) {
       <div
         className={`flex size-full items-center justify-center rounded-full border backdrop-blur-sm transition-[border-color,background-color,box-shadow,transform] duration-200 ${
           hover
-            ? "scale-[1.08] border-white bg-white/90 text-slate-900 shadow-[0_0_32px_rgba(0,188,212,0.35)]"
+            ? "scale-[1.08] border-white bg-white/95 text-slate-900 shadow-[0_0_28px_rgba(255,87,34,0.22)]"
             : "border-white/40 bg-white/35 text-slate-700"
         }`}
       >
@@ -91,9 +147,11 @@ function FloatingBubble({ bubble }: { bubble: Bubble }) {
 
 function TechGlyph({ tech }: { tech: TechKey }) {
   switch (tech) {
+    case "google":
+      return <GoogleLogoMark className="size-[55%]" />;
     case "shopify":
       return (
-        <svg viewBox="0 0 24 24" className="size-[55%]" aria-label="Shopify">
+        <svg viewBox="0 0 24 24" className="size-[62%]" aria-label="Shopify">
           <path
             fill="#95BF47"
             d="M15.6 3.1c.1 0 .2.1.2.2l-1 3.1-2.2-.7c.1-.6.3-1.2.7-1.6.7-.8 1.8-1 2.3-1Zm3.4 2.5-1.5-.5c-.2-2.2-1.5-3-2.8-3-.6 0-2 .4-3 2.3l-3.4.8c-1 .3-1.1.3-1.2 1.3L6 20.5l12 1.5 1.8-14.8a.8.8 0 0 0-.8-.8Z"
@@ -108,37 +166,42 @@ function TechGlyph({ tech }: { tech: TechKey }) {
           />
         </svg>
       );
-    case "n8n":
+    case "facebook":
       return (
-        <svg viewBox="0 0 24 24" className="size-[55%]" aria-label="n8n">
-          <circle cx="5" cy="12" r="2.4" fill="#EA4B71" />
-          <circle cx="19" cy="12" r="2.4" fill="#EA4B71" />
-          <circle cx="12" cy="6.5" r="2.4" fill="#EA4B71" />
-          <circle cx="12" cy="17.5" r="2.4" fill="#EA4B71" />
-          <circle cx="12" cy="12" r="1.6" fill="#EA4B71" />
-          <path
-            d="M7 12h4M13 12h4M12 8.5v3M12 12.5v3"
-            stroke="#EA4B71"
-            strokeWidth="1.4"
-            strokeLinecap="round"
-          />
-        </svg>
-      );
-    case "google":
-      return <GoogleLogoMark className="size-[55%]" />;
-    case "nextjs":
-    default:
-      return (
-        <svg viewBox="0 0 24 24" className="size-[58%]" aria-label="Next.js">
-          <circle cx="12" cy="12" r="10" fill="#000" />
+        <svg viewBox="0 0 24 24" className="size-[58%]" aria-label="Facebook">
+          <circle cx="12" cy="12" r="11" fill="#1877F2" />
           <path
             fill="#fff"
-            d="M12 4.5v15M7.5 8.25 16.5 15.75"
-            stroke="#fff"
-            strokeWidth="1.5"
-            strokeLinecap="round"
+            transform="translate(12 12.2) scale(0.82) translate(-12 -12)"
+            d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.585 0-4.356 1.58-4.356 4.749v2.693H7.332v3.209h2.513v8.195h3.552z"
           />
         </svg>
       );
+    case "instagram":
+      return (
+        <svg viewBox="0 0 24 24" className="size-[55%]" aria-label="Instagram">
+          <rect
+            x="3.5"
+            y="3.5"
+            width="17"
+            height="17"
+            rx="5"
+            fill="none"
+            stroke="#E1306C"
+            strokeWidth="1.6"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="4.2"
+            fill="none"
+            stroke="#E1306C"
+            strokeWidth="1.6"
+          />
+          <circle cx="17.2" cy="6.8" r="1.1" fill="#E1306C" />
+        </svg>
+      );
+    default:
+      return null;
   }
 }

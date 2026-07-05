@@ -82,8 +82,8 @@ export function ContactTopicGuide() {
               <p className="text-xs text-slate-500">
                 Kies in het formulier:{" "}
                 <span className="font-bold text-slate-800">
-                  {topic.formValue === "groeiscan"
-                    ? "Groeiscan"
+                  {topic.formValue === "strategie"
+                    ? "Strategie & prioriteit"
                     : topic.formValue === "web-shop"
                       ? "Website of webshop"
                       : topic.formValue === "marketing"
@@ -98,12 +98,12 @@ export function ContactTopicGuide() {
                 Naar het formulier
                 <ArrowUpRight className="size-4" aria-hidden />
               </a>
-              {topic.formValue === "groeiscan" ? (
+              {topic.formValue === "strategie" ? (
                 <Link
-                  href="/groeiscan"
+                  href="/intake"
                   className="text-sm font-bold text-[#FF5722] hover:underline"
                 >
-                  Of start direct de Groeiscan
+                  Of start direct de intake
                 </Link>
               ) : null}
             </div>

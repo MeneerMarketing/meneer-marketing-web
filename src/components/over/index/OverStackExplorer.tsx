@@ -1,94 +1,9 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Smartphone, Target, TrendingUp } from "lucide-react";
 import { useState } from "react";
+import { OverStackVisual } from "@/components/over/index/OverStackVisuals";
 import { OVER_STACK } from "@/data/over-index";
-
-function StackVisual({ itemId }: { itemId: string }) {
-  if (itemId === "shopify") {
-    return (
-      <div className="flex items-center justify-center gap-2 p-6">
-        <div className="rounded-xl border border-[#96BF48]/40 bg-[#96BF48]/10 px-4 py-6 text-center">
-          <p className="text-[10px] font-bold uppercase text-[#5E8E3E]">B2B-portaal</p>
-          <p className="mt-2 text-2xl font-black text-slate-800">24/7</p>
-          <p className="text-[9px] text-slate-500">salons bestellen zelf</p>
-        </div>
-      </div>
-    );
-  }
-  if (itemId === "nextjs") {
-    return (
-      <div className="p-6">
-        <div className="rounded-xl border border-slate-200 bg-slate-900 p-4 font-mono text-[10px]">
-          <p className="text-emerald-400">LCP 0.8s ✓</p>
-          <p className="mt-1 text-slate-400">CLS 0.02 ✓</p>
-          <p className="mt-1 text-slate-400">INP 45ms ✓</p>
-        </div>
-      </div>
-    );
-  }
-  if (itemId === "seo") {
-    return (
-      <div className="flex items-end justify-center gap-2 p-6">
-        {["Google", "ChatGPT", "Gemini"].map((l, i) => (
-          <div
-            key={l}
-            className="flex flex-col items-center gap-1"
-          >
-            <div
-              className="w-10 rounded-t-lg bg-gradient-to-t from-[#00BCD4] to-cyan-200"
-              style={{ height: 40 + i * 18 }}
-            />
-            <span className="text-[8px] font-bold text-slate-500">{l}</span>
-          </div>
-        ))}
-      </div>
-    );
-  }
-  if (itemId === "google-ads") {
-    return (
-      <div className="flex items-end justify-center gap-3 p-6">
-        {["Klikken", "Conversies"].map((l, i) => (
-          <div key={l} className="text-center">
-            <div
-              className={`w-12 rounded-t-lg ${i === 1 ? "bg-[#FF5722]" : "bg-slate-200"}`}
-              style={{ height: i === 0 ? 48 : 72 }}
-            />
-            <p className="mt-1 text-[9px] font-bold text-slate-500">{l}</p>
-          </div>
-        ))}
-      </div>
-    );
-  }
-  if (itemId === "meta-ads") {
-    const icons = [Smartphone, Target, TrendingUp] as const;
-    return (
-      <div className="flex justify-center gap-2 p-6">
-        {icons.map((Icon, index) => (
-          <span
-            key={index}
-            className="flex size-12 items-center justify-center rounded-2xl border border-pink-200 bg-pink-50 text-pink-500"
-          >
-            <Icon className="size-5" strokeWidth={1.8} aria-hidden />
-          </span>
-        ))}
-      </div>
-    );
-  }
-  return (
-    <div className="flex items-center justify-center gap-2 p-6">
-      {["Order", "E-mail", "CRM"].map((n, i) => (
-        <div key={n} className="flex flex-col items-center gap-1">
-          <span className="rounded-full border border-[#FF5722]/30 bg-[#FF5722]/10 px-2 py-1 text-[9px] font-bold text-[#FF5722]">
-            {n}
-          </span>
-          {i < 2 ? <span className="text-[#FF5722]">→</span> : null}
-        </div>
-      ))}
-    </div>
-  );
-}
 
 export function OverStackExplorer() {
   const reduce = useReducedMotion();
@@ -101,9 +16,7 @@ export function OverStackExplorer() {
       aria-labelledby="over-stack-heading"
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF5722]">
-          Stack
-        </p>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF5722]">Stack</p>
         <h2
           id="over-stack-heading"
           className="mt-3 max-w-2xl text-2xl font-extrabold tracking-tight text-white sm:text-3xl"
@@ -130,7 +43,10 @@ export function OverStackExplorer() {
                 }`}
                 style={
                   isActive
-                    ? { backgroundColor: stack.accent, boxShadow: `0 8px 24px -8px ${stack.accent}66` }
+                    ? {
+                        backgroundColor: stack.accent,
+                        boxShadow: `0 8px 24px -8px ${stack.accent}66`,
+                      }
                     : undefined
                 }
               >
@@ -147,25 +63,27 @@ export function OverStackExplorer() {
               initial={reduce ? false : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.28 }}
               className="flex flex-col justify-center"
             >
               <p className="text-lg font-extrabold text-white">{item.label}</p>
               <p className="mt-3 text-base leading-relaxed text-slate-300">{item.body}</p>
-              <p className="mt-4 inline-flex rounded-full border border-[#FF5722]/25 bg-[#FF5722]/10 px-3 py-1 text-xs font-bold text-[#FF5722]">
+              <p className="mt-4 inline-flex w-fit rounded-full border border-[#FF5722]/25 bg-[#FF5722]/10 px-3 py-1 text-xs font-bold text-[#FF5722]">
                 {item.quip}
               </p>
             </motion.div>
           </AnimatePresence>
 
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-transparent">
             <AnimatePresence mode="wait">
               <motion.div
                 key={item.id}
-                initial={reduce ? false : { opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                initial={reduce ? false : { opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.3 }}
               >
-                <StackVisual itemId={item.id} />
+                <OverStackVisual itemId={item.id} accent={item.accent} />
               </motion.div>
             </AnimatePresence>
           </div>

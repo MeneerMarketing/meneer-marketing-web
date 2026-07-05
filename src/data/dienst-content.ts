@@ -182,7 +182,7 @@ const CONTENT = {
     ],
   ),
   "ai-zoek": body(
-    "Steeds meer klanten vragen niet aan Google maar aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, ben je voor die klant geen optie. Ik zorg dat AI-zoekmachines jouw bedrijf kennen, begrijpen en aanraden.",
+    "Steeds meer klanten vragen niet aan Google maar aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Als jouw site daar niet als antwoord uitkomt, ben je voor die klant geen optie. Ik zorg dat AI-tools jouw bedrijf kennen, begrijpen en aanraden.",
     [
       "Content en structuur die AI-modellen kunnen lezen en citeren",
       "Schema-markup en technische signalen die je autoriteit onderbouwen",
@@ -203,7 +203,7 @@ const CONTENT = {
     "Goede content is de motor achter vindbaarheid, autoriteit en vertrouwen. Ik schrijf en structureer content die de vragen van jouw klant echt beantwoordt. Geen opgeblazen blogkalender, wel pagina's die verkeer én klanten opleveren.",
     [
       "Contentplan op basis van wat jouw klant echt zoekt en vraagt",
-      "Artikelen en pagina's die scoren in Google én in AI-zoek",
+      "Artikelen en pagina's die scoren in Google én in AI-antwoorden",
       "Interne linkstructuur die autoriteit opbouwt per onderwerp",
       "Meting per pagina: verkeer, posities en wat het oplevert",
     ],

@@ -15,6 +15,9 @@ export function SiteFooter() {
           <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-sky-300/90">
             Klaar voor de volgende stap?
           </p>
+          <p className="mx-auto mt-2 max-w-md text-center text-sm text-slate-300">
+            Vragen, plannen of gewoon sparren? Start met intake of neem contact op.
+          </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {siteCtaList.map((cta) => (
               <Link
@@ -85,21 +88,13 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/kennisbank"
-                  className="hover:text-sky-300"
-                  prefetch={false}
-                >
+                <Link href="/kennisbank" className="hover:text-sky-300" prefetch={false}>
                   Kennisbank
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/groeiscan"
-                  className="hover:text-sky-300"
-                  prefetch={false}
-                >
-                  Groeiscan
+                <Link href="/weetjes" className="hover:text-sky-300">
+                  Marketing weetjes
                 </Link>
               </li>
               <li>

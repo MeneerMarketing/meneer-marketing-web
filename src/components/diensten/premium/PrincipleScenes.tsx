@@ -235,7 +235,7 @@ const SCENES = [ListenScene, OnePointScene, LanguageScene] as const;
 const SCENE_HINTS = [
   "Beweeg: luisteren wordt bouwen",
   "Beweeg: de keten verdwijnt",
-  "Beweeg: jargon vertaalt zichzelf",
+  "Beweeg: vaktaal klapt om",
 ] as const;
 
 function PrincipleCard({
@@ -276,7 +276,7 @@ function PrincipleCard({
         <h3 className="text-balance text-[15px] font-extrabold leading-snug tracking-tight text-slate-900 sm:text-base">
           {principle.title}
         </h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+        <p className="mt-2 min-h-[5.25rem] flex-1 text-sm leading-relaxed text-slate-600">
           {principle.body}
         </p>
       </div>

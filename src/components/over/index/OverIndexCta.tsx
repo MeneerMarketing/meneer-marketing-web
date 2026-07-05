@@ -21,10 +21,10 @@ export function OverIndexCta() {
           <p className="mx-auto mt-4 max-w-xl text-slate-400">{OVER_CTA.body}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
-              href={siteCtas.groeiscan.href}
+              href={siteCtas.startIntake.href}
               className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:bg-orange-600"
             >
-              {siteCtas.groeiscan.label}
+              {siteCtas.startIntake.label}
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
             <Link

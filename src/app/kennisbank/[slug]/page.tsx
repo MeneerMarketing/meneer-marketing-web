@@ -185,14 +185,14 @@ export default async function KennisbankArticlePage({
                 Dit artikel toepassen op jouw situatie?
               </p>
               <p className="mt-2 text-mm-muted">
-                In een Groeiscan vertalen we dit soort inzichten naar concrete
+                In een intake vertaal ik dit soort inzichten naar concrete
                 prioriteiten voor jouw kanalen en je site.
               </p>
               <Link
-                href={siteCtas.groeiscan.href}
+                href={siteCtas.startIntake.href}
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-mm-accent px-6 py-3.5 text-sm font-bold text-white shadow-md hover:bg-mm-accent-hover"
               >
-                {siteCtas.groeiscan.label}
+                {siteCtas.startIntake.label}
                 <ArrowUpRight className="size-4" aria-hidden />
               </Link>
             </footer>

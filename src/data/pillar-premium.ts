@@ -37,7 +37,7 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
   vindbaarheid: {
     stickers: [
       "SEO",
-      "AI-zoek",
+      "AI-antwoorden",
       "ChatGPT",
       "Maps",
       "Content",

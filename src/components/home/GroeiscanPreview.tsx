@@ -1,47 +1,64 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, Play } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { GroeiscanGardenVisual } from "@/components/groeiscan/GroeiscanGardenVisual";
+import { GroeiscanKrachtBar } from "@/components/groeiscan/GroeiscanKrachtBar";
 import { GroeiscanMeneerCoach } from "@/components/groeiscan/GroeiscanMeneerCoach";
 import { siteCtas } from "@/lib/cta";
 import {
   GROEISCAN_GOALS,
+  GROEISCAN_SUBDIENSTEN,
   type GroeiscanGoalId,
-  computeActiveFloors,
+  computeGroeikrachtBreakdown,
   computeGrowthTier,
+  computePillarProgress,
   computePlaygroundInsight,
-  computePlaygroundScore,
-  formatBudgetTier,
   getMeneerCoachLine,
 } from "@/lib/groeiscan-playground";
 
-/**
- * Compacte Groeiscan-teaser voor de homepage.
- */
+/** Compacte Groeiscan-teaser voor de homepage. */
 export function GroeiscanPreview() {
   const reduce = useReducedMotion();
   const [goal, setGoal] = useState<GroeiscanGoalId>("revenue");
-  const [budgetTier, setBudgetTier] = useState(2);
+  const [dienstIds, setDienstIds] = useState<Set<string>>(
+    () => new Set(["seo", "strategie", "webdevelopment"]),
+  );
 
   const input = useMemo(
     () => ({
       goal,
-      budgetTier,
+      budgetTier: 2,
       maturity: 5,
+      friction: "some" as const,
       frictionHours: 6,
-      channelIds: new Set<string>(["seo"]),
+      dienstIds,
     }),
-    [goal, budgetTier],
+    [goal, dienstIds],
   );
 
-  const score = useMemo(() => computePlaygroundScore(input), [input]);
+  const breakdown = useMemo(() => computeGroeikrachtBreakdown(input), [input]);
+  const score = breakdown.total;
   const growthTier = useMemo(() => computeGrowthTier(score), [score]);
   const insight = useMemo(() => computePlaygroundInsight(input), [input]);
-  const activeFloors = useMemo(() => computeActiveFloors(input), [input]);
+  const pillarProgress = useMemo(() => computePillarProgress(dienstIds), [dienstIds]);
   const coachLine = getMeneerCoachLine("goal", { goal });
+
+  const toggleDienst = (id: string) => {
+    setDienstIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const quickPicks = GROEISCAN_SUBDIENSTEN.filter((d) =>
+    ["seo", "google-ads", "webdevelopment", "email", "strategie", "automatisering"].includes(
+      d.id,
+    ),
+  );
 
   return (
     <div className="relative overflow-hidden rounded-[1.35rem] border border-slate-200 bg-white shadow-[0_28px_56px_-28px_rgba(15,23,42,0.15)]">
@@ -63,30 +80,29 @@ export function GroeiscanPreview() {
         <span className="size-2 rounded-full bg-[#FF5722]" aria-hidden />
         <span className="size-2 rounded-full bg-emerald-400" aria-hidden />
         <span className="size-2 rounded-full bg-sky-400" aria-hidden />
-        <span className="ml-2 font-mono text-[10px] text-slate-400">groeituin.scan</span>
-        <span className="ml-auto inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-emerald-700">
-          <Sparkles className="size-3" aria-hidden />
+        <span className="ml-2 font-mono text-[10px] text-slate-400">groeiscan.live</span>
+        <span className="ml-auto inline-flex items-center gap-1 rounded-full border border-orange-200 bg-orange-50 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-[#FF5722]">
+          <Play className="size-3" aria-hidden />
           Live
         </span>
       </div>
 
       <div className="relative space-y-4 p-5 sm:p-6">
-        <GroeiscanGardenVisual
-          activeFloors={activeFloors}
+        <GroeiscanKrachtBar
           score={score}
           growthLabel={growthTier.label}
-          frictionHours={input.frictionHours}
-          channelIds={input.channelIds}
+          breakdown={breakdown}
+          pillarProgress={pillarProgress}
           compact
+          showPillarDetail={false}
         />
 
         <fieldset>
           <legend className="text-center text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-            Kies je zaad
+            Hoofddoel
           </legend>
           <div className="mt-3 grid grid-cols-2 gap-2">
             {GROEISCAN_GOALS.map((g) => {
-              const Icon = g.icon;
               const active = goal === g.id;
               return (
                 <button
@@ -101,11 +117,11 @@ export function GroeiscanPreview() {
                   }`}
                 >
                   <span
-                    className={`flex size-8 shrink-0 items-center justify-center rounded-lg ${
-                      active ? "bg-[#FF5722] text-white" : "bg-slate-100 text-slate-500"
+                    className={`flex size-8 shrink-0 items-center justify-center rounded-lg text-sm ${
+                      active ? "bg-[#FF5722] text-white" : "bg-slate-100"
                     }`}
                   >
-                    <Icon className="size-4" strokeWidth={1.8} aria-hidden />
+                    {g.emoji}
                   </span>
                   <span className="min-w-0 text-[11px] font-bold leading-tight text-slate-900">
                     {g.label}
@@ -116,32 +132,37 @@ export function GroeiscanPreview() {
           </div>
         </fieldset>
 
-        <div className="rounded-xl border border-sky-100 bg-sky-50/50 p-3">
-          <div className="flex items-center justify-between gap-2 text-xs">
-            <label htmlFor="groeiscan-preview-budget" className="font-bold text-slate-700">
-              Groeivoeding
-            </label>
-            <output htmlFor="groeiscan-preview-budget" className="font-bold text-[#FF5722]">
-              {formatBudgetTier(budgetTier)}
-            </output>
+        <div>
+          <p className="text-center text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
+            Stack togglen
+          </p>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {quickPicks.map((d) => {
+              const on = dienstIds.has(d.id);
+              return (
+                <button
+                  key={d.id}
+                  type="button"
+                  onClick={() => toggleDienst(d.id)}
+                  aria-pressed={on}
+                  className={`rounded-lg border px-2 py-1 text-[10px] font-bold transition ${
+                    on
+                      ? "border-[#FF5722] bg-[#FF5722] text-white"
+                      : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
+                  }`}
+                >
+                  {d.label}
+                </button>
+              );
+            })}
           </div>
-          <input
-            id="groeiscan-preview-budget"
-            type="range"
-            min={0}
-            max={4}
-            step={1}
-            value={budgetTier}
-            onChange={(e) => setBudgetTier(Number(e.target.value))}
-            className="mt-3 h-1.5 w-full cursor-pointer appearance-none rounded-full bg-sky-100 accent-[#FF5722]"
-          />
         </div>
 
         <GroeiscanMeneerCoach message={coachLine} compact theme="light" />
 
         <AnimatePresence mode="wait">
           <motion.div
-            key={`${goal}-${budgetTier}-${insight.headline}`}
+            key={`${goal}-${score}-${insight.headline}`}
             initial={reduce ? false : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
@@ -157,7 +178,7 @@ export function GroeiscanPreview() {
           href={siteCtas.groeiscan.href}
           className="flex w-full items-center justify-center gap-2 rounded-full border-2 border-slate-200 bg-white py-2.5 text-xs font-bold text-slate-900 transition hover:border-[#FF5722] hover:text-[#FF5722]"
         >
-          Open volledige groeituin
+          Open volledige Groeiscan
           <ArrowUpRight className="size-4" aria-hidden />
         </Link>
       </div>

@@ -30,13 +30,18 @@ const LINE = 1.3;
 
 interface InteractiveLogoProps {
   className?: string;
+  /** Pupillen volgen cursor. Uit in compacte UI zoals hero-chat. */
+  interactive?: boolean;
 }
 
 /**
  * Het hoofd van Meneer Marketing. De pupillen volgen de cursor over het
  * hele scherm; op touch-apparaten kijken de ogen mee met scrollen.
  */
-export function InteractiveLogo({ className }: InteractiveLogoProps) {
+export function InteractiveLogo({
+  className,
+  interactive = true,
+}: InteractiveLogoProps) {
   const reduce = useReducedMotion();
   const svgRef = useRef<SVGSVGElement>(null);
   const lastPointerAt = useRef(0);
@@ -54,7 +59,7 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
   const rightPupilY = useTransform(y, (v) => RIGHT_EYE.cy + v);
 
   useEffect(() => {
-    if (reduce) return;
+    if (reduce || !interactive) return;
 
     function lookAt(clientX: number, clientY: number) {
       const svg = svgRef.current;
@@ -99,11 +104,12 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
       window.removeEventListener("scroll", onScroll);
       if (scrollResetTimer.current) clearTimeout(scrollResetTimer.current);
     };
-  }, [reduce, targetX, targetY]);
+  }, [reduce, interactive, targetX, targetY]);
 
-  const blink = reduce
-    ? undefined
-    : {
+  const blink =
+    reduce || !interactive
+      ? undefined
+      : {
         scaleY: [0, 1, 0],
         transition: {
           duration: 0.3,
@@ -168,8 +174,8 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
         strokeWidth={LINE}
       />
       <motion.circle
-        cx={leftPupilX}
-        cy={leftPupilY}
+        cx={interactive ? leftPupilX : LEFT_EYE.cx}
+        cy={interactive ? leftPupilY : LEFT_EYE.cy}
         r={PUPIL_R}
         fill={INK}
       />
@@ -197,8 +203,8 @@ export function InteractiveLogo({ className }: InteractiveLogoProps) {
         strokeWidth={LINE}
       />
       <motion.circle
-        cx={rightPupilX}
-        cy={rightPupilY}
+        cx={interactive ? rightPupilX : RIGHT_EYE.cx}
+        cy={interactive ? rightPupilY : RIGHT_EYE.cy}
         r={PUPIL_R}
         fill={INK}
       />

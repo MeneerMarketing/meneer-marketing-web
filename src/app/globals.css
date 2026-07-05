@@ -53,21 +53,21 @@ html {
 
 @keyframes mm-float-up {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 8vh, 0);
     opacity: 0;
   }
-  8% {
-    opacity: 0.9;
+  4% {
+    opacity: 0.92;
   }
   50% {
-    transform: translate3d(var(--mm-drift, 0px), -55vh, 0);
-    opacity: 0.9;
+    transform: translate3d(var(--mm-drift, 0px), -52vh, 0);
+    opacity: 0.92;
   }
   92% {
-    opacity: 0.6;
+    opacity: 0.55;
   }
   100% {
-    transform: translate3d(calc(var(--mm-drift, 0px) * -0.6), -120vh, 0);
+    transform: translate3d(calc(var(--mm-drift, 0px) * -0.6), -115vh, 0);
     opacity: 0;
   }
 }

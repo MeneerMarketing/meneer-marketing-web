@@ -6,7 +6,6 @@ import {
   Compass,
   MessageSquare,
   ShieldCheck,
-  Sparkles,
   Timer,
 } from "lucide-react";
 import { ConversionAside } from "@/components/contact/ConversionAside";
@@ -14,18 +13,17 @@ import { ConversionForm } from "@/components/contact/ConversionForm";
 import { ConversionHero } from "@/components/contact/ConversionHero";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Start intake",
   description:
-    "Plan een intake bij MeneerMarketing. Kies onderwerp en prioriteit, wij bereiden een scherp eerste gesprek voor.",
+    "Vul in twee minuten de intake in. Dan weet ik genoeg om het eerste gesprek scherp te starten.",
   alternates: { canonical: absoluteUrl("/intake") },
   openGraph: {
     title: "Start intake | MeneerMarketing",
     description:
-      "Web, marketing, automatisering of design: start met een heldere eerste sessie.",
+      "Kort formulier, helder gesprek. Web, marketing, automatisering of design.",
     url: absoluteUrl("/intake"),
     locale: "nl_NL",
     type: "website",
@@ -42,21 +40,22 @@ export default function IntakePage() {
           eyebrow="Intake"
           title={
             <>
-              Start met een{" "}
+              Twee minuten invullen.{" "}
               <span className="bg-gradient-to-r from-mm-sky-deep via-mm-sky to-mm-accent bg-clip-text text-transparent">
-                heldere eerste sessie
+                Eén scherp gesprek
               </span>
               .
             </>
           }
           intro={
             <>
-              Geen verkoopcall, geen funnel. Een gesprek waarin we samen
-              scherp krijgen wat slim is om{" "}
-              <span className="font-semibold text-mm-text">eerst</span> aan te pakken.
+              Geen verkoopcall, geen funnel. Eerst weten waar je staat en wat je
+              wilt. Daarna plannen we een gesprek van{" "}
+              <span className="font-semibold text-mm-text">30 minuten</span>{" "}
+              waarin we samen bepalen wat slim is om eerst aan te pakken.
             </>
           }
-          primaryCtaLabel="Plan mijn intake"
+          primaryCtaLabel="Naar het formulier"
           secondary={
             <Link
               href="/werkwijze"
@@ -67,13 +66,13 @@ export default function IntakePage() {
             </Link>
           }
           badges={[
-            { icon: <Brain className="size-3.5" />, label: "Senior strateeg aan tafel" },
-            { icon: <Timer className="size-3.5" />, label: "30 minuten • online" },
+            { icon: <Timer className="size-3.5" />, label: "Formulier ± 2 min" },
+            { icon: <Brain className="size-3.5" />, label: "Gesprek 30 min • online" },
             { icon: <ShieldCheck className="size-3.5" />, label: "Vrijblijvend" },
           ]}
           stats={[
-            { value: "30 min", label: "Intake-duur" },
-            { value: "0 €", label: "Kosten" },
+            { value: "2 min", label: "Formulier" },
+            { value: "30 min", label: "Gesprek" },
             { value: "≤ 2d", label: "Plancheck" },
           ]}
         />
@@ -89,16 +88,16 @@ export default function IntakePage() {
               quickMailSubject="Intake inplannen"
               steps={[
                 {
-                  title: "Aanvraag binnen",
-                  body: "We bevestigen persoonlijk en stellen één voorbereidende vraag indien nodig.",
+                  title: "Formulier (± 2 min)",
+                  body: "Waar je staat, wat je doel is, contactgegevens. Geen roman nodig.",
                 },
                 {
                   title: "30 minuten online",
-                  body: "Jij: doelen, situatie, vragen. Wij: duiden, prioriteit, scenario’s.",
+                  body: "Jij: situatie en vragen. Ik: prioriteit, route en eerlijke next steps.",
                 },
                 {
                   title: "Vervolgadvies",
-                  body: "Vrijblijvend memo: wat we zouden doen, en in welke volgorde.",
+                  body: "Vrijblijvend memo: wat ik zou doen, en in welke volgorde.",
                 },
               ]}
               links={[
@@ -107,12 +106,6 @@ export default function IntakePage() {
                   href: "/werkwijze",
                   description: "Begrijpen → ontwerpen → bouwen → overdragen.",
                   icon: <Compass className="size-4" />,
-                },
-                {
-                  label: "Groeiscan playground",
-                  href: siteCtas.groeiscan.href,
-                  description: "Eerst zelf spelen met context.",
-                  icon: <Sparkles className="size-4" />,
                 },
                 {
                   label: "Liever mailen?",

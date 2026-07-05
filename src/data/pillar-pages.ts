@@ -85,7 +85,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "SkinComplete stond eerst bovenaan in Google en had mailautomatisering draaien vóór de advertenties aangingen. Daardoor kwam elke advertentie-euro binnen op een site die al converteerde. Dat is het verschil tussen budget verbranden en budget investeren.",
     ctaTitle: "Klaar om te weten waar je groei zit?",
     ctaBody:
-      "Geen losse acties meer. We brengen je doelen, data en kanalen in kaart en maken er een plan van dat we ook echt uitvoeren. Start met de Groeiscan.",
+      "Geen losse acties meer. We brengen je doelen, data en kanalen in kaart en maken er een plan van dat we ook echt uitvoeren. Start met de intake.",
   },
   bouwen: {
     slug: "bouwen",
@@ -141,17 +141,17 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "Snelheid en stabiliteit converteren. En maken SEO en ads goedkoper. Voor SkinComplete bouwden we naast de shop ook een compleet B2B-portaal in Shopify. Wij meten voor en na, koppelen dat aan je analytics en vertalen het naar concrete volgende stappen.",
     ctaTitle: "Klaar om te bouwen zonder plafond?",
     ctaBody:
-      "Van Shopify-shop tot webapp: we tekenen het fundament, kiezen de stack en leggen vast wat wanneer live gaat. Start met een Groeiscan en we maken het concreet.",
+      "Van Shopify-shop tot webapp: we tekenen het fundament, kiezen de stack en leggen vast wat wanneer live gaat. Start met een intake en we maken het concreet.",
   },
   vindbaarheid: {
     slug: "vindbaarheid",
-    metaTitle: "Vindbaarheid. SEO, AI-zoek, content en reviews",
+    metaTitle: "Vindbaarheid. SEO, AI-antwoorden, content en reviews",
     metaDescription:
-      "Gevonden worden in Google, ChatGPT en Maps: SEO, AI-zoek, lokale vindbaarheid, content en reviews. MeneerMarketing maakt je vindbaar waar je klant zoekt.",
+      "Gevonden worden in Google, ChatGPT en Maps: SEO, AI-antwoorden, lokale vindbaarheid, content en reviews. MeneerMarketing maakt je vindbaar waar je klant zoekt.",
     keywords: [
       "SEO bureau Nederland",
       "vindbaar in ChatGPT",
-      "AI zoekmachine optimalisatie",
+      "Vindbaarheid in AI-antwoorden",
       "lokale SEO",
       "contentmarketing",
       "Google reviews verbeteren",
@@ -161,7 +161,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "Google is niet meer de enige plek waar klanten zoeken. Wij maken je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
     stats: [
       { label: "SEO", value: "Content · techniek" },
-      { label: "AI-zoek", value: "ChatGPT · Gemini" },
+      { label: "AI-antwoorden", value: "ChatGPT · Gemini" },
       { label: "Lokaal", value: "Maps · reviews" },
     ],
     introParagraphs: [
@@ -172,7 +172,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     angleBody:
       "SkinComplete stond bovenaan in Google vóór er één euro aan advertenties werd uitgegeven. Die volgorde is bewust: organische vindbaarheid maakt elke advertentie-euro daarna goedkoper, omdat je merk al vertrouwen heeft opgebouwd waar klanten zoeken.",
     serviceIntro:
-      "Van klassieke SEO tot AI-zoek en reviews: dit zijn de trajecten binnen vindbaarheid.",
+      "Van klassieke SEO tot AI-antwoorden en reviews: dit zijn de trajecten binnen vindbaarheid.",
     processTitle: "Zo bouwen we je vindbaarheid op",
     processSteps: [
       {
@@ -197,7 +197,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "Advertenties stoppen zodra je budget stopt. Een sterke organische positie blijft klanten opleveren, maand na maand. Daarom behandelen we vindbaarheid als investering: meetbaar in posities, verkeer en omzet per pagina.",
     ctaTitle: "Klaar om overal gevonden te worden?",
     ctaBody:
-      "We checken waar je nu staat in Google én in AI-zoek, en welke stappen het snelst traffic en vertrouwen opleveren. Start met de Groeiscan.",
+      "We checken waar je nu staat in Google én in AI-antwoorden, en welke stappen het snelst traffic en vertrouwen opleveren. Start met de intake.",
   },
   campagnes: {
     slug: "campagnes",
@@ -253,7 +253,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "Advertenties pas aanzetten als je site al converteert en je meting klopt. Resultaat: lagere kosten per verkoop vanaf dag één, omdat het fundament er al stond. Adverteren op een lekke site is dweilen met de kraan open.",
     ctaTitle: "Klaar om campagnes te draaien die renderen?",
     ctaBody:
-      "Doe de Groeiscan of plan een intake. We rekenen eerst uit of ads nu de slimste stap zijn.",
+      "Plan een intake. We rekenen eerst uit of ads nu de slimste stap zijn.",
   },
   behoud: {
     slug: "behoud",

@@ -64,7 +64,6 @@ export function CaseBrowserFrame({ caseItem, className }: CaseBrowserFrameProps)
               alt={`Preview ${caseItem.client}`}
               fill
               unoptimized
-              quality={100}
               className="object-cover"
               style={{ objectPosition: previewObjectPosition }}
               sizes="(max-width: 768px) 100vw, 640px"

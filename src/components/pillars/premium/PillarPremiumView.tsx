@@ -35,9 +35,8 @@ import {
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
-import type { PillarPageData } from "@/data/pillar-pages";
-import type { PillarPremiumContent } from "@/data/pillar-premium";
-import type { PillarSlug } from "@/lib/navigation";
+import { PillarFunFactStrip } from "@/components/shared/PillarFunFactStrip";
+import { getFunFactForPillar } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 
@@ -88,6 +87,8 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
     description: item.description,
     href: item.href,
   }));
+
+  const pillarFact = getFunFactForPillar(data.slug);
 
   return (
     <>
@@ -143,14 +144,14 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link
-                  href={siteCtas.groeiscan.href}
+                  href={siteCtas.startIntake.href}
                   className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-slate-900 px-7 py-4 text-base font-bold tracking-tight text-white transition hover:shadow-lg"
                 >
                   <span
                     aria-hidden
                     className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-[#FF5722] transition-transform duration-[550ms] ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
                   />
-                  <span className="relative z-10">{siteCtas.groeiscan.label}</span>
+                  <span className="relative z-10">{siteCtas.startIntake.label}</span>
                   <ArrowUpRight className="relative z-10 size-4" aria-hidden />
                 </Link>
                 <Link
@@ -281,6 +282,8 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
           </>
         ) : null}
 
+        {pillarFact ? <PillarFunFactStrip fact={pillarFact} /> : null}
+
         <section className="bg-gradient-to-b from-white to-slate-50/80">
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
             <Reveal>
@@ -316,7 +319,7 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
                 {data.ctaBody}
               </p>
               <Link
-                href={siteCtas.groeiscan.href}
+                href={siteCtas.startIntake.href}
                 className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full bg-[#FF5722] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:shadow-[#FF5722]/50"
               >
                 <span
@@ -324,12 +327,12 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
                   className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-white transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
                 />
                 <span className="relative z-10 transition-colors duration-300 group-hover:text-slate-900">
-                  Start met Groeiscan
+                  Start intake
                 </span>
                 <ArrowUpRight className="relative z-10 size-5 transition-colors duration-300 group-hover:text-slate-900" aria-hidden />
               </Link>
               <p className="mt-4 text-xs text-slate-500">
-                Liever direct mailen? Vul je contactgegevens in op de Groeiscan-pagina.
+                Liever direct mailen? Dat kan via het contactformulier.
               </p>
             </Reveal>
           </div>

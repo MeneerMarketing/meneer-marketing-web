@@ -15,6 +15,7 @@ import {
   Check,
   Clock,
   Code2,
+  Compass,
   Coffee,
   Cpu,
   Gauge,
@@ -78,7 +79,9 @@ type TileFieldKey =
   | "budgetIndicatie"
   | "gewensteStart"
   | "urgentie"
-  | "schaalFocus";
+  | "schaalFocus"
+  | "intakeFase"
+  | "intakeDoel";
 
 interface VariantConfig {
   readonly subject: string;
@@ -106,6 +109,8 @@ interface FormState {
   gewensteStart: string;
   urgentie: string;
   schaalFocus: string;
+  intakeFase: string;
+  intakeDoel: string;
 }
 
 const INITIAL_STATE: FormState = {
@@ -122,6 +127,8 @@ const INITIAL_STATE: FormState = {
   gewensteStart: "",
   urgentie: "",
   schaalFocus: "",
+  intakeFase: "",
+  intakeDoel: "",
 };
 
 // ─── OPTION LIBRARIES ─────────────────────────────────────────────────────
@@ -225,7 +232,73 @@ const SCHAAL_OPTIONS: readonly TileOption[] = [
   { value: "verkeer", label: "Meer verkeer", description: "Organisch: SEO & content compounding.", Icon: TrendingUp },
   { value: "ads", label: "Paid scherp", description: "Ads efficiënt & meetbaar. ROAS/CAC.", Icon: Rocket },
   { value: "automatisering", label: "Automatisering", description: "Sales & marketing automatisering op autopilot.", Icon: Cpu },
-  { value: "alles", label: "Eerst in kaart", description: "Prioriteit bepalen via Groeiscan.", Icon: Sparkles },
+  { value: "alles", label: "Eerst in kaart", description: "Prioriteit bepalen in een intake.", Icon: Sparkles },
+];
+
+const INTAKE_FASE_OPTIONS: readonly TileOption[] = [
+  {
+    value: "net-begonnen",
+    label: "Net begonnen",
+    description: "Idee, eerste stappen of net live. Nog veel te ontdekken.",
+    Icon: Sparkles,
+  },
+  {
+    value: "bezig",
+    label: "Al bezig",
+    description: "Site, shop of campagnes lopen. Het moet gewoon beter.",
+    Icon: Rocket,
+  },
+  {
+    value: "schalen",
+    label: "Klaar om te schalen",
+    description: "Basis staat. Nu volume, conversie of opschalen.",
+    Icon: TrendingUp,
+  },
+  {
+    value: "vast",
+    label: "Vastgelopen",
+    description: "Veel geprobeerd, weinig vooruit. Frisse blik nodig.",
+    Icon: AlertCircle,
+  },
+];
+
+const INTAKE_DOEL_OPTIONS: readonly TileOption[] = [
+  {
+    value: "klanten",
+    label: "Meer klanten",
+    description: "Leads, orders of afspraken. Gewoon groeien.",
+    Icon: Target,
+  },
+  {
+    value: "site-shop",
+    label: "Betere site of shop",
+    description: "Sneller, mooier, meer conversie. From scratch of verbeteren.",
+    Icon: Globe,
+  },
+  {
+    value: "vindbaar",
+    label: "Vindbaar worden",
+    description: "Google, content, SEO of zichtbaar in AI-antwoorden.",
+    Icon: TrendingUp,
+  },
+  {
+    value: "ads",
+    label: "Ads die renderen",
+    description: "Google Ads, Meta Ads. Meetbaar en winstgevend.",
+    Icon: Rocket,
+  },
+  {
+    value: "automatiseren",
+    label: "Minder handwerk",
+    description: "Processen koppelen. E-commerce op autopilot.",
+    Icon: Zap,
+  },
+  {
+    value: "strategie",
+    label: "Eerst de route",
+    description: "Weten wat prioriteit heeft. Voordat budget verbrandt.",
+    Icon: Compass,
+  },
 ];
 
 // ─── VARIANT CONFIG ───────────────────────────────────────────────────────
@@ -283,19 +356,34 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
   },
   intake: {
     subject: "[Start intake]",
-    bodyTag: "Aanvraag via meneermarketing.nl/intake",
-    intro: "Je antwoorden voeden het gesprek voor. Technisch én commercieel, zonder jargon.",
+    bodyTag: "Intake via meneermarketing.nl/intake",
+    intro:
+      "Twee minuten invullen. Dan weet ik genoeg om het gesprek scherp te starten. Geen jargon, wel eerlijk.",
     tiles: [
       {
+        key: "intakeFase",
+        title: "Waar sta je nu?",
+        subtitle: "Geen goed of fout. Het helpt me inschatten waar we beginnen.",
+        columns: 2,
+        options: INTAKE_FASE_OPTIONS,
+      },
+      {
+        key: "intakeDoel",
+        title: "Wat is je hoofddoel?",
+        subtitle: "Eén richting is genoeg. De rest verfijnen we samen.",
+        columns: 3,
+        options: INTAKE_DOEL_OPTIONS,
+      },
+      {
         key: "projectType",
-        title: "Waar moet de intake over gaan?",
-        subtitle: "Eén hoofdonderwerp helpt ons de juiste expert meebrengen.",
+        title: "Waar gaat het vooral over?",
+        subtitle: "Zo weet ik welke expert ik meeneem naar het gesprek.",
         columns: 3,
         options: PROJECT_TYPE_OPTIONS,
       },
       {
         key: "urgentie",
-        title: "Prioriteit",
+        title: "Hoe snel wil je schakelen?",
         subtitle: "Eerlijk is beter. Dan plannen we realistisch.",
         columns: 3,
         options: URGENTIE_OPTIONS,
@@ -303,26 +391,27 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
     ],
     extras: ["websiteUrl"],
     messagePlaceholder:
-      "Schrijf kort: situatie, doel, wat je al geprobeerd hebt, en wat er nu moet gebeuren.",
-    submitLabel: "Plan mijn intake",
+      "Kort en concreet: wat loopt al goed, waar wringt het, en wat zou succes voor jou zijn? Links helpen. Lange verhalen ook welkom.",
+    submitLabel: "Verstuur intake",
   },
   groeiscan: {
-    subject: "[Groeiscan. Follow-up]",
-    bodyTag: "Aanvraag via meneermarketing.nl/groeiscan",
-    intro: "De playground is een model. Wij maken er een strategie van. Kies wanneer en we nemen het over.",
+    subject: "[Groeiscan. Afspraak]",
+    bodyTag: "Groeiscan-sessie via meneermarketing.nl/groeiscan",
+    intro:
+      "Je scan stuur ik automatisch mee. Kies wanneer je de sessie wilt en ik bevestig per mail.",
     tiles: [
       {
         key: "gewensteStart",
-        title: "Wanneer wil je vervolgen?",
-        subtitle: "Call, echte Groeiscan of rapport. We bepalen samen.",
+        title: "Wanneer past de sessie?",
+        subtitle: "45 minuten online. Jouw cijfers, mijn route.",
         columns: 2,
         options: START_OPTIONS,
       },
     ],
     extras: [],
     messagePlaceholder:
-      "Wat viel je op in de playground? Welke knoppen wil je in het echt omzetten?",
-    submitLabel: "Plan Groeiscan-vervolg",
+      "Iets specifieks bespreken? Context over je bedrijf of cijfers helpt enorm.",
+    submitLabel: "Plan mijn Groeiscan-sessie",
   },
   "schaal-op": {
     subject: "[Schaal op]",
@@ -394,6 +483,70 @@ function buildBody(state: FormState, variant: ConversionFormVariant): string {
 
   out.push("", state.bericht.trim() || "(geen extra bericht)");
   return out.join("\n");
+}
+
+function intakeTilesForStep(step: number): readonly TileGroup[] {
+  const cfg = VARIANTS.intake;
+  if (step === 0) return cfg.tiles.filter((g) => g.key === "intakeFase");
+  if (step === 1) return cfg.tiles.filter((g) => g.key === "intakeDoel");
+  if (step === 2) return cfg.tiles.filter((g) => g.key === "projectType");
+  if (step === 3) return cfg.tiles.filter((g) => g.key === "urgentie");
+  return [];
+}
+
+function intakeStepHeading(step: number): { title: string; subtitle: string } {
+  switch (step) {
+    case 0:
+      return {
+        title: "Waar sta je?",
+        subtitle: VARIANTS.intake.intro,
+      };
+    case 1:
+      return {
+        title: "Wat wil je bereiken?",
+        subtitle: "Kies je richting. Combinaties kan altijd later.",
+      };
+    case 2:
+      return {
+        title: "Waar gaat het vooral over?",
+        subtitle: "Zo weet ik welke expert ik meeneem naar het gesprek.",
+      };
+    case 3:
+      return {
+        title: "Hoe snel wil je schakelen?",
+        subtitle: "Eerlijk is beter. Dan plannen we realistisch.",
+      };
+    default:
+      return { title: "", subtitle: "" };
+  }
+}
+
+function isIntakeTileStep(variant: ConversionFormVariant, step: number): boolean {
+  return variant === "intake" && step >= 0 && step <= 3;
+}
+
+function tilesForStep(
+  variant: ConversionFormVariant,
+  step: number,
+): readonly TileGroup[] {
+  if (variant === "intake") return intakeTilesForStep(step);
+  if (step === 0) return VARIANTS[variant].tiles;
+  return [];
+}
+
+function stepLabelsForVariant(variant: ConversionFormVariant): readonly string[] {
+  if (variant === "intake") {
+    return ["Stand", "Doel", "Onderwerp", "Tempo", "Contact", "Verhaal"];
+  }
+  return ["Context", "Contact", "Bericht"];
+}
+
+function contactStepIndex(variant: ConversionFormVariant): number {
+  return variant === "intake" ? 4 : 1;
+}
+
+function messageStepIndex(variant: ConversionFormVariant): number {
+  return variant === "intake" ? 5 : 2;
 }
 
 // ─── UI PRIMITIVES ────────────────────────────────────────────────────────
@@ -652,7 +805,11 @@ export function ConversionForm({
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const STEP_LABELS = ["Context", "Contact", "Bericht"] as const;
+  const isIntake = variant === "intake";
+  const STEP_LABELS = stepLabelsForVariant(variant);
+  const contactStep = contactStepIndex(variant);
+  const messageStep = messageStepIndex(variant);
+  const lastStep = STEP_LABELS.length - 1;
 
   const mailBody = useMemo(
     () => buildSubmissionBody(state, variant),
@@ -672,15 +829,16 @@ export function ConversionForm({
   };
 
   const validateStep = (s: number): string | null => {
-    if (s === 0) {
-      for (const group of cfg.tiles) {
+    const tileStep = isIntake ? isIntakeTileStep(variant, s) : s === 0;
+    if (tileStep) {
+      for (const group of tilesForStep(variant, s)) {
         if (!state[group.key]) {
           return `Kies: ${group.title.replace(/\?$/, "")}.`;
         }
       }
       return null;
     }
-    if (s === 1) {
+    if (s === contactStep) {
       if (!state.naam.trim()) return "Je naam mag niet ontbreken.";
       if (!state.email.trim()) return "E-mail is nodig. Zo kunnen we terugkoppelen.";
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(state.email.trim())) {
@@ -688,7 +846,7 @@ export function ConversionForm({
       }
       return null;
     }
-    if (s === 2) {
+    if (s === messageStep) {
       if (state.bericht.trim().length < 10) {
         return "Een paar zinnen context helpt enorm. Minimaal 10 tekens.";
       }
@@ -704,7 +862,7 @@ export function ConversionForm({
       setShake((s) => s + 1);
       return;
     }
-    setStep((s) => Math.min(s + 1, STEP_LABELS.length - 1));
+    setStep((s) => Math.min(s + 1, lastStep));
   };
 
   const prev = () => {
@@ -714,7 +872,7 @@ export function ConversionForm({
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
-    const err = validateStep(2);
+    const err = validateStep(messageStep);
     if (err) {
       setError(err);
       setShake((s) => s + 1);
@@ -798,9 +956,9 @@ export function ConversionForm({
           transition={{ duration: 0.45 }}
         >
           <AnimatePresence mode="wait" initial={false}>
-            {step === 0 ? (
+            {(step === 0 || (isIntake && step >= 1 && step <= 3)) ? (
               <motion.div
-                key="step-0"
+                key={`step-tiles-${step}`}
                 variants={stepVariants}
                 initial="enter"
                 animate="center"
@@ -810,12 +968,26 @@ export function ConversionForm({
               >
                 <div>
                   <h3 className="text-lg font-extrabold tracking-tight text-mm-text sm:text-xl">
-                    Beetje context.
+                    {isIntake
+                      ? intakeStepHeading(step).title
+                      : step === 0
+                        ? "Beetje context."
+                        : ""}
                   </h3>
-                  <p className="mt-1 text-sm text-mm-muted">{cfg.intro}</p>
+                  <p className="mt-1 text-sm text-mm-muted">
+                    {isIntake
+                      ? intakeStepHeading(step).subtitle
+                      : cfg.intro}
+                  </p>
+                  {isIntake && step === 0 ? (
+                    <p className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-mm-sky/25 bg-mm-sky-subtle/50 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-mm-sky-deep">
+                      <Clock className="size-3.5" aria-hidden />
+                      ± 2 minuten invullen
+                    </p>
+                  ) : null}
                 </div>
 
-                {cfg.tiles.map((group) => {
+                {tilesForStep(variant, step).map((group) => {
                   const selected = state[group.key];
                   const cols =
                     group.columns === 2
@@ -823,14 +995,17 @@ export function ConversionForm({
                       : group.columns === 3
                         ? "sm:grid-cols-2 lg:grid-cols-3"
                         : "sm:grid-cols-2";
+                  const hideGroupHeader = isIntake && tilesForStep(variant, step).length === 1;
                   return (
                     <div key={group.key}>
-                      <div className="mb-3">
-                        <p className="text-sm font-bold text-mm-text">
-                          {group.title}
-                        </p>
-                        <p className="text-xs text-mm-muted">{group.subtitle}</p>
-                      </div>
+                      {!hideGroupHeader ? (
+                        <div className="mb-3">
+                          <p className="text-sm font-bold text-mm-text">
+                            {group.title}
+                          </p>
+                          <p className="text-xs text-mm-muted">{group.subtitle}</p>
+                        </div>
+                      ) : null}
                       <div className={`grid grid-cols-1 gap-3 ${cols}`}>
                         {group.options.map((opt) => (
                           <Tile
@@ -867,9 +1042,9 @@ export function ConversionForm({
               </motion.div>
             ) : null}
 
-            {step === 1 ? (
+            {step === contactStep ? (
               <motion.div
-                key="step-1"
+                key="step-contact"
                 variants={stepVariants}
                 initial="enter"
                 animate="center"
@@ -966,9 +1141,9 @@ export function ConversionForm({
               </motion.div>
             ) : null}
 
-            {step === 2 ? (
+            {step === messageStep ? (
               <motion.div
-                key="step-2"
+                key="step-message"
                 variants={stepVariants}
                 initial="enter"
                 animate="center"
@@ -1040,7 +1215,7 @@ export function ConversionForm({
             Terug
           </button>
 
-          {step < 2 ? (
+          {step < lastStep ? (
             <button
               type="button"
               onClick={next}

@@ -610,7 +610,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Posities zijn leuk. Conversie per pagina is waar je op stuurt. Search Console, rankings en wat er in je CRM binnenkomt: één verhaal, geen losse SEO-rapportage.",
       },
     ],
-    lens: "SEO is geen los kanaal. Het is het fundament onder ads, content en AI-zoek. Elke pagina die je organisch wint, maakt elke euro advertentie daarna goedkoper.",
+    lens: "SEO is geen los kanaal. Het is het fundament onder ads, content en AI-antwoorden. Elke pagina die je organisch wint, maakt elke euro advertentie daarna goedkoper.",
     approachSteps: [
       {
         title: "Audit & zoekintentie",
@@ -683,7 +683,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "We testen wat ChatGPT, Gemini en AI Overviews nu antwoorden op jouw categorie. Niet gokken, wel bijsturen op basis van wat er echt verschijnt.",
       },
     ],
-    lens: "AI-zoek is een volwaardig kanaal naast Google. Wie daar niet in het antwoord staat, verliest klanten voordat die ooit een zoekresultaat zien. Ik bouw dat mee in je content en techniek.",
+    lens: "Vindbaarheid in AI-antwoorden is een volwaardig kanaal naast Google. Wie daar niet in het antwoord staat, verliest klanten voordat die ooit een zoekresultaat zien. Ik bouw dat mee in je content en techniek.",
     approachSteps: [
       {
         title: "Baseline in AI-antwoorden",
@@ -829,7 +829,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Traffic zonder vervolgstap is hobby. Elke pagina weet waar naartoe: aanvraag, product, shop. Content is verkoopkanaal, geen kostenpost.",
       },
     ],
-    lens: "Content zonder zoekintentie is drukte. Ik schrijf en structureer wat jouw klant echt nodig heeft, in Google én in AI-zoek. Elke pagina groeit mee en versterkt de rest van je site.",
+    lens: "Content zonder zoekintentie is drukte. Ik schrijf en structureer wat jouw klant echt nodig heeft, in Google én in AI-antwoorden. Elke pagina groeit mee en versterkt de rest van je site.",
     approachSteps: [
       {
         title: "Zoekvragen & gaps",

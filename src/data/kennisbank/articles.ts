@@ -25,14 +25,14 @@ export interface KennisbankArticle {
 export const kennisbankArticles: KennisbankArticle[] = [
   {
     slug: "ai-zoek-vindbaarheid-chatgpt",
-    title: "Gevonden worden in ChatGPT: zo werkt vindbaarheid in AI-zoek",
+    title: "Gevonden worden in ChatGPT: zo werkt vindbaarheid in AI-antwoorden",
     description:
       "Steeds meer klanten vragen ChatGPT of Gemini om advies in plaats van Google. Zo zorg je dat jouw bedrijf in die antwoorden staat.",
     publishedAt: "2026-06-18",
     readMinutes: 7,
     category: "vindbaarheid",
     keywords: [
-      "AI-zoek",
+      "AI-antwoorden",
       "ChatGPT vindbaarheid",
       "Gemini vindbaarheid",
       "generative engine optimization",
@@ -45,11 +45,11 @@ export const kennisbankArticles: KennisbankArticle[] = [
       },
       {
         type: "h2",
-        text: "Hoe een AI-zoekmachine kiest wie hij noemt",
+        text: "Hoe ChatGPT en Gemini kiezen wie ze noemen",
       },
       {
         type: "p",
-        text: "AI-zoekmachines verzinnen hun antwoorden niet uit het niets. Ze leunen op wat ze kunnen crawlen en begrijpen: heldere pagina's, duidelijke structuur en tekst die een vraag echt beantwoordt. Vaag geformuleerde marketingpraat wordt vrijwel nooit geciteerd. Concreet en feitelijk wint van wollig en wervend.",
+        text: "ChatGPT, Gemini en vergelijkbare AI-tools verzinnen hun antwoorden niet uit het niets. Ze leunen op wat ze kunnen crawlen en begrijpen: heldere pagina's, duidelijke structuur en tekst die een vraag echt beantwoordt. Vaag geformuleerde marketingpraat wordt vrijwel nooit geciteerd. Concreet en feitelijk wint van wollig en wervend.",
       },
       {
         type: "ul",
@@ -61,7 +61,7 @@ export const kennisbankArticles: KennisbankArticle[] = [
       },
       {
         type: "callout",
-        text: "Leuk detail: van alles wat mensen dagelijks in Google typen is zo'n 15 procent nog nooit eerder gezocht. In AI-zoek is dat effect nog sterker, want mensen stellen er vollere, persoonlijkere vragen. Wie die vragen beantwoordt, pakt verkeer waar nog geen concurrentie op zit.",
+        text: "Leuk detail: van alles wat mensen dagelijks in Google typen is zo'n 15 procent nog nooit eerder gezocht. In AI-antwoorden is dat effect nog sterker, want mensen stellen er vollere, persoonlijkere vragen. Wie die vragen beantwoordt, pakt verkeer waar nog geen concurrentie op zit.",
       },
       {
         type: "h2",
@@ -77,7 +77,7 @@ export const kennisbankArticles: KennisbankArticle[] = [
       },
       {
         type: "p",
-        text: "SEO in 2010 was makkelijk scoren omdat bijna niemand het serieus nam. AI-zoek zit nu in diezelfde fase. De technische basis overlapt flink met goede SEO, dus werk dat je nu doet betaalt dubbel uit: beter vindbaar in Google én in de AI-antwoorden waar je klanten steeds vaker zitten.",
+        text: "SEO in 2010 was makkelijk scoren omdat bijna niemand het serieus nam. Vindbaarheid in AI-antwoorden zit nu in diezelfde fase. De technische basis overlapt flink met goede SEO, dus werk dat je nu doet betaalt dubbel uit: beter vindbaar in Google én in de AI-antwoorden waar je klanten steeds vaker zitten.",
       },
     ],
   },
@@ -107,7 +107,7 @@ export const kennisbankArticles: KennisbankArticle[] = [
       },
       {
         type: "p",
-        text: "Bij SkinComplete, een webshop in professionele LED-huidverzorging, kozen we bewust de omgekeerde route. Eerst de basis: snelle shop, heldere productpagina's, e-mailflows die klanten vasthouden. Daarna SEO: landingspagina's op de vragen die de doelgroep echt stelt. Pas toen daar verkeer en omzet uit kwam, ging er budget naar advertenties.",
+        text: "Bij SkinComplete, een webshop in professionele LED-huidverzorging, koos ik bewust de omgekeerde route. Eerst de basis: snelle shop, heldere productpagina's, e-mailflows die klanten vasthouden. Daarna SEO: landingspagina's op de vragen die de doelgroep echt stelt. Pas toen daar verkeer en omzet uit kwam, ging er budget naar advertenties.",
       },
       {
         type: "ul",
@@ -161,11 +161,11 @@ export const kennisbankArticles: KennisbankArticle[] = [
       },
       {
         type: "h2",
-        text: "Wat we voor SkinComplete bouwden",
+        text: "Wat ik voor SkinComplete bouwde",
       },
       {
         type: "p",
-        text: "Voor SkinComplete bouwden we een volledig B2B-portal binnen de bestaande Shopify-shop. Salons loggen in op een eigen omgeving, zien hun eigen prijzen en bestellen wanneer het hen uitkomt. Geen aparte software, geen tweede systeem om te onderhouden. Eén shop, twee gezichten.",
+        text: "Voor SkinComplete bouwde ik een volledig B2B-portal binnen de bestaande Shopify-shop. Salons loggen in op een eigen omgeving, zien hun eigen prijzen en bestellen wanneer het hen uitkomt. Geen aparte software, geen tweede systeem om te onderhouden. Eén shop, twee gezichten.",
       },
       {
         type: "ul",
@@ -244,7 +244,7 @@ export const kennisbankArticles: KennisbankArticle[] = [
       },
       {
         type: "p",
-        text: "Wij starten met meten: welke templates zijn het zwaarst, waar komt verkeer vandaan, en waar zit de omzet? Daarna herschikken we assets, isoleren we app-logica per template en maken we kritieke content server-side of statisch waar het kan.",
+        text: "Ik start met meten: welke templates zijn het zwaarst, waar komt verkeer vandaan, en waar zit de omzet? Daarna herschik ik assets, isoleer ik app-logica per template en maak ik kritieke content server-side of statisch waar het kan.",
       },
       {
         type: "h3",

@@ -8,7 +8,7 @@ import { JsonLdScript, breadcrumbJsonLd, faqPageJsonLd } from "@/components/seo/
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
-import { MARKETING_FUN_FACTS } from "@/data/marketing-fun-facts";
+import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
 
@@ -110,7 +110,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
           "Hangt af van waar jouw klant zit. Google Ads vangt mensen die al zoeken naar wat jij verkoopt. Meta Ads creëert vraag bij mensen die jou nog niet kennen. Vaak is het antwoord een slimme combinatie, met budget op wat meetbaar rendeert.",
       },
       {
-        question: "Wat is vindbaarheid in AI-zoek?",
+        question: "Wat is vindbaarheid in AI-antwoorden?",
         answer:
           "Steeds meer mensen vragen ChatGPT of Gemini om advies in plaats van Google. Wij zorgen dat jouw bedrijf in die antwoorden opduikt, technisch én inhoudelijk. Nieuw speelveld, nog weinig concurrentie. Wie nu instapt, heeft straks de voorsprong.",
       },
@@ -129,7 +129,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Wat kost het?",
         answer:
-          "Het eerlijke antwoord: dat hangt af van wat er moet gebeuren. Een landingspagina is geen webshop en een campagne is geen merkstrategie. Na een korte intake krijg je een voorstel met vaste afspraken, geen verrassingen achteraf. Wil je eerst richting? Start met de Groeiscan.",
+          "Het eerlijke antwoord: dat hangt af van wat er moet gebeuren. Een landingspagina is geen webshop en een campagne is geen merkstrategie. Na een korte intake krijg je een voorstel met vaste afspraken, geen verrassingen achteraf. Wil je eerst richting? Vul de intake in (twee minuten).",
       },
       {
         question: "Hoe snel kan ik live?",
@@ -221,11 +221,14 @@ export default function FaqPage() {
           </div>
 
           <div className="mt-16">
-            <MarketingFunFactsRow facts={[MARKETING_FUN_FACTS[3]!]} />
+            <MarketingFunFactsRow
+              facts={getFunFactsForPage("/faq")}
+              variant="inline"
+            />
           </div>
 
           <Reveal delay={0.06}>
-            <div className="mt-16 flex flex-col items-start gap-5 rounded-3xl border border-mm-border bg-mm-accent-subtle/60 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <div className="mt-10 flex flex-col items-start gap-5 rounded-3xl border border-mm-border bg-mm-accent-subtle/60 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div className="flex items-center gap-4">
                 <InteractiveLogo className="h-12 w-12 shrink-0" />
                 <div>
@@ -233,15 +236,15 @@ export default function FaqPage() {
                     Nog steeds een vraag over?
                   </p>
                   <p className="mt-1 text-sm text-mm-muted">
-                    Stel hem in een korte intake. Kost niks, levert richting op.
+                    Typ alsof je me app't. Geen chatbot, geen tussenlaag.
                   </p>
                 </div>
               </div>
               <Link
-                href={siteCtas.startIntake.href}
+                href={siteCtas.contact.href}
                 className="inline-flex shrink-0 items-center gap-2 rounded-full bg-mm-accent px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-mm-accent/25 transition hover:bg-mm-accent-hover"
               >
-                {siteCtas.startIntake.label}
+                {siteCtas.contact.label}
                 <ArrowUpRight className="size-4" aria-hidden />
               </Link>
             </div>

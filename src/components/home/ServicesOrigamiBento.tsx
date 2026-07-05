@@ -102,7 +102,7 @@ const SERVICES: GridTile[] = [
   },
   {
     title: "Bekijk alle diensten",
-    text: "AI-zoek, UGC, influencers, automatisering en meer. Alles op één plek.",
+    text: "AI-antwoorden, UGC, influencers, automatisering en meer. Alles op één plek.",
     href: "/diensten",
     cta: true,
   },

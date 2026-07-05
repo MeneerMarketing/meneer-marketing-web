@@ -69,7 +69,7 @@ export const OFFICE_PILLARS: OfficePillar[] = [
     body: "Bovenaan in Google én het antwoord in ChatGPT en Gemini. Content en techniek die autoriteit opbouwen.",
     links: [
       { name: "SEO", href: "/diensten/seo" },
-      { name: "AI-zoek & vindbaarheid", href: "/diensten/ai-zoek" },
+      { name: "Vindbaar in AI-antwoorden", href: "/diensten/ai-zoek" },
       { name: "Contentmarketing", href: "/diensten/content-marketing" },
       { name: "Lokale SEO & Google Maps", href: "/diensten/local-seo" },
     ],

@@ -3,6 +3,12 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { SiteConsent } from "@/components/consent/SiteConsent";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ScrollMeneer } from "@/components/site/ScrollMeneer";
+import {
+  buildOpenGraph,
+  buildTwitter,
+  SITE_NAME,
+} from "@/lib/seo/site-metadata";
+import { siteOrigin } from "@/lib/site";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -12,45 +18,52 @@ const plusJakarta = Plus_Jakarta_Sans({
   preload: true,
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://meneermarketing.nl";
+const defaultTitle = "MeneerMarketing. Marketing, websites & Shopify";
+const defaultDescription =
+  "Websites from scratch, Shopify-shops, SEO, Google Ads, Meta Ads en e-mail. Eén strategisch partner voor online groei in Nederland.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteOrigin),
   title: {
-    default: "MeneerMarketing. Groei, web & automatisering",
-    template: "%s | MeneerMarketing",
+    default: defaultTitle,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "Marketingbureau voor groei: maatwerk websites, Shopify-thema's, SEO, ads, e-mailmarketing en automatisering. Strategisch partner. Technisch sterk, menselijk in de aanpak.",
-  metadataBase: new URL(siteUrl),
-  alternates: {
-    canonical: siteUrl.replace(/\/$/, ""),
+  description: defaultDescription,
+  applicationName: SITE_NAME,
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-icon.svg", type: "image/svg+xml" }],
+    shortcut: ["/icon.svg"],
   },
-  openGraph: {
-    type: "website",
-    locale: "nl_NL",
-    url: siteUrl.replace(/\/$/, ""),
-    siteName: "MeneerMarketing",
-    title: "MeneerMarketing. Groei, web & automatisering",
-    description:
-      "Maatwerk websites, Shopify-thema's, SEO, ads, e-mailmarketing en automatisering. Strategisch partner voor ondernemers die willen schalen.",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "MeneerMarketing. Groei, web & automatisering",
-    description:
-      "Maatwerk websites, Shopify, SEO, ads, e-mailmarketing en automatisering voor schaalbare groei.",
-  },
+  openGraph: buildOpenGraph({
+    title: defaultTitle,
+    description: defaultDescription,
+    path: "/",
+  }),
+  twitter: buildTwitter({
+    title: defaultTitle,
+    description: defaultDescription,
+  }),
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  formatDetection: {
+    telephone: false,
   },
 };
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#e0f2fe" },
-    { media: "(prefers-color-scheme: dark)", color: "#0c1222" },
+    { media: "(prefers-color-scheme: light)", color: "#0F172A" },
+    { media: "(prefers-color-scheme: dark)", color: "#0F172A" },
   ],
 };
 

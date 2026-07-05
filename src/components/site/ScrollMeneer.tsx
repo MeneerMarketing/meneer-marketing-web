@@ -262,7 +262,7 @@ export function ScrollMeneer() {
                 initial={{ opacity: 0, x: 6, scale: 0.94 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 exit={{ opacity: 0, x: 4, scale: 0.96 }}
-                transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.12, ease: [0.22, 1, 0.36, 1] }}
                 className="pointer-events-none absolute right-full top-1/2 z-20 mr-1.5 hidden w-max min-w-[10rem] max-w-[min(18rem,calc(100vw-4rem))] -translate-y-1/2 lg:block"
               >
                 <div className="relative rounded-2xl border border-slate-200/90 bg-white px-3.5 py-2 shadow-[0_12px_32px_-12px_rgba(15,23,42,0.22)]">

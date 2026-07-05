@@ -1,3 +1,5 @@
+import { AI_ANSWERS } from "@/lib/ai-visibility-copy";
+
 export type UspSceneId =
   | "contact"
   | "plan"
@@ -40,7 +42,7 @@ export const HOME_USPS: HomeUsp[] = [
   {
     scene: "discover",
     title: "Vindbaar overal",
-    body: "Google én AI-zoek: ChatGPT en Gemini. Content en techniek die elke dag autoriteit voor je opbouwen.",
+    body: "Google én AI-antwoorden: ChatGPT en Gemini. Content en techniek die elke dag autoriteit voor je opbouwen.",
     accent: "#00BCD4",
   },
 ];
@@ -49,9 +51,8 @@ export const HOME_USP_STICKERS = [
   "Geen templates",
   "Shopify-expert",
   "SEO",
-  "AI-zoek",
-  "CRO",
+  AI_ANSWERS.sticker,
+  "Ads",
   "Mailautomatisering",
-  "Automatisering",
   "Meetbaar",
 ] as const;
