@@ -3,6 +3,13 @@ import { FunFactsSection } from "@/components/home/FunFactsSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { HomeUspBar } from "@/components/home/HomeUspBar";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
+import { HomeMobileCta } from "@/components/home/mobile/HomeMobileCta";
+import { HomeMobileFunFacts } from "@/components/home/mobile/HomeMobileFunFacts";
+import { HomeMobileProof } from "@/components/home/mobile/HomeMobileProof";
+import { HomeMobileRoute } from "@/components/home/mobile/HomeMobileRoute";
+import { HomeMobileServices } from "@/components/home/mobile/HomeMobileServices";
+import { HomeMobileStickyCta } from "@/components/home/mobile/HomeMobileStickyCta";
+import { HomeMobileWhy } from "@/components/home/mobile/HomeMobileWhy";
 import { ServicesOfficeSection } from "@/components/home/office/ServicesOfficeSection";
 import { HomeCtaSection } from "@/components/home/premium/HomeCtaSection";
 import { HomeProofSection } from "@/components/home/premium/HomeProofSection";
@@ -48,16 +55,31 @@ export default function HomePage() {
         })}
       />
       <SiteHeader />
-      <main id="main" className="flex-1 overflow-x-clip">
+      <main id="main" className="flex-1 overflow-x-clip lg:pb-0 pb-2">
         <HeroSection />
-        <HomeUspBar />
-        <ServicesOfficeSection />
-        <HomeWorkStagesScroll />
-        <HomeProofSection />
-        <HomeWhyMeneerSection />
-        <FunFactsSection />
-        <InsightsPreviewSection />
-        <HomeCtaSection />
+        <HomeMobileStickyCta />
+
+        {/* Mobiel: korte CRO-flow (< lg) */}
+        <div className="lg:hidden">
+          <HomeMobileServices />
+          <HomeMobileProof />
+          <HomeMobileRoute />
+          <HomeMobileWhy />
+          <HomeMobileFunFacts />
+          <HomeMobileCta />
+        </div>
+
+        {/* Desktop: volledige homepage (>= lg) */}
+        <div className="hidden lg:block">
+          <HomeUspBar />
+          <ServicesOfficeSection />
+          <HomeWorkStagesScroll />
+          <HomeProofSection />
+          <HomeWhyMeneerSection />
+          <FunFactsSection />
+          <InsightsPreviewSection />
+          <HomeCtaSection />
+        </div>
       </main>
       <SiteFooter />
     </>
