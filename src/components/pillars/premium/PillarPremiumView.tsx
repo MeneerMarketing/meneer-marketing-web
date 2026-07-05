@@ -37,8 +37,10 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { PillarFunFactStrip } from "@/components/shared/PillarFunFactStrip";
 import { getFunFactForPillar } from "@/data/marketing-fun-facts";
+import type { PillarPageData } from "@/data/pillar-pages";
+import type { PillarPremiumContent } from "@/data/pillar-premium";
 import { siteCtas } from "@/lib/cta";
-import { megaMenuColumns } from "@/lib/navigation";
+import { megaMenuColumns, type PillarSlug } from "@/lib/navigation";
 
 const PILLAR_LABEL: Record<PillarSlug, string> = {
   strategie: "Strategie",

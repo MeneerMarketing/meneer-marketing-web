@@ -632,7 +632,7 @@ export function ContactChatExperience({
               ) : null}
             </div>
 
-            {showComposer && phase !== "sent" ? (
+            {showComposer ? (
               <div className="border-t border-slate-100 bg-white p-4">
                 <div className="flex gap-2">
                   <textarea
@@ -661,7 +661,7 @@ export function ContactChatExperience({
                     <Send className="size-4" aria-hidden />
                   </button>
                 </div>
-                {error && phase !== "contact" ? (
+                {error ? (
                   <p className="mt-2 text-xs font-medium text-red-600" role="alert">
                     {error}
                   </p>

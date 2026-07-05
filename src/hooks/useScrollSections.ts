@@ -106,7 +106,7 @@ export function useScrollSections(enabled: boolean) {
       return;
     }
 
-    let debounceId: ReturnType<typeof setTimeout> | undefined;
+    let debounceId: number | undefined;
 
     function refresh() {
       const next = scanSections();

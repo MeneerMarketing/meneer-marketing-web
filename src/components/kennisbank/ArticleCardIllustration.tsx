@@ -15,7 +15,7 @@ const CATEGORY_ACCENTS: Record<PillarSlug, string> = {
   behoud: "#00BCD4",
 };
 
-const SLUG_SCENES: Record<string, (accent: string) => ReactNode> = {
+const SLUG_SCENES: Record<string, (props: { accent: string }) => ReactNode> = {
   "ai-zoek-vindbaarheid-chatgpt": AiZoekScene,
   "seo-eerst-dan-ads": SeoFirstScene,
   "b2b-verkopen-via-shopify": B2bPortalScene,
