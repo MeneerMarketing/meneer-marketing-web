@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
+import { useCallback, useState } from "react";
+import { AboutMeneerCollabCta } from "@/components/home/AboutMeneerCollabCta";
 import { AboutMeneerStrategyChat } from "@/components/home/AboutMeneerStrategyChat";
 import { AboutMeneerStrategyOutcome } from "@/components/home/AboutMeneerStrategyOutcome";
 import {
@@ -15,6 +17,8 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 /** Desktop: persoonlijk Meneer-verhaal op de homepage. */
 export function HomeAboutMeneerSection() {
   const reduce = useReducedMotion() ?? false;
+  const [chatComplete, setChatComplete] = useState(reduce);
+  const handleChatComplete = useCallback(() => setChatComplete(true), []);
 
   return (
     <section
@@ -32,8 +36,8 @@ export function HomeAboutMeneerSection() {
       />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-stretch lg:gap-14">
-          <div className="flex flex-col lg:min-h-full">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
+          <div>
             <motion.div
               initial={reduce ? false : { opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -64,25 +68,10 @@ export function HomeAboutMeneerSection() {
               <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
                 Zo klinkt zo&apos;n gesprek
               </p>
-              <AboutMeneerStrategyChat messages={HOME_ABOUT_MENEER_STRATEGY_CHAT} />
-            </motion.div>
-
-            <motion.div
-              initial={reduce ? false : { opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-8%" }}
-              transition={{ delay: 0.1, duration: 0.45, ease: EASE }}
-              className="mt-8 rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm lg:mt-auto lg:pt-10"
-            >
-              <p className="text-lg font-extrabold tracking-tight text-slate-900">
-                {HOME_ABOUT_MENEER.collabTitle}
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                {HOME_ABOUT_MENEER.collabBody}
-              </p>
-              <p className="mt-4 text-sm font-bold leading-snug text-slate-800">
-                Geen kanaal omdat het hip is. Wel omdat het bij jouw fase past.
-              </p>
+              <AboutMeneerStrategyChat
+                messages={HOME_ABOUT_MENEER_STRATEGY_CHAT}
+                onComplete={handleChatComplete}
+              />
             </motion.div>
           </div>
 
@@ -121,6 +110,8 @@ export function HomeAboutMeneerSection() {
             </motion.div>
           </div>
         </div>
+
+        <AboutMeneerCollabCta visible={chatComplete} />
       </div>
     </section>
   );

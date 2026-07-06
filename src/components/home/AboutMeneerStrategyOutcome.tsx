@@ -576,8 +576,8 @@ export function AboutMeneerStrategyOutcome({
           <div className="mt-3 grid grid-cols-2 gap-1 rounded-xl border border-slate-200/80 bg-white p-1">
             {(
               [
-                { id: "influencer" as const, label: "Influencer" },
                 { id: "ugc" as const, label: "UGC" },
+                { id: "influencer" as const, label: "Influencer" },
               ] as const
             ).map((item) => (
               <button

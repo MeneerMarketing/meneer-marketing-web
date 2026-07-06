@@ -95,6 +95,12 @@ export function AboutMeneerStrategyChat({
   const [visibleCount, setVisibleCount] = useState(reduce ? messages.length : 0);
   const [typingFrom, setTypingFrom] = useState<"meneer" | "klant" | null>(null);
   const completedRef = useRef(false);
+  const animStartedRef = useRef(false);
+  const onCompleteRef = useRef(onComplete);
+
+  useEffect(() => {
+    onCompleteRef.current = onComplete;
+  }, [onComplete]);
 
   useEffect(() => {
     if (reduce) {
@@ -102,12 +108,15 @@ export function AboutMeneerStrategyChat({
       setTypingFrom(null);
       if (!completedRef.current) {
         completedRef.current = true;
-        onComplete?.();
+        onCompleteRef.current?.();
       }
       return;
     }
 
     if (!isInView) return;
+    if (completedRef.current || animStartedRef.current) return;
+
+    animStartedRef.current = true;
 
     let cancelled = false;
     const timeouts: ReturnType<typeof setTimeout>[] = [];
@@ -118,7 +127,6 @@ export function AboutMeneerStrategyChat({
 
     setVisibleCount(0);
     setTypingFrom(null);
-    completedRef.current = false;
 
     schedule(() => {
       if (cancelled) return;
@@ -141,7 +149,7 @@ export function AboutMeneerStrategyChat({
         setVisibleCount(i + 1);
         if (i === messages.length - 1 && !completedRef.current) {
           completedRef.current = true;
-          onComplete?.();
+          onCompleteRef.current?.();
         }
       }, showAt);
     }
@@ -149,8 +157,11 @@ export function AboutMeneerStrategyChat({
     return () => {
       cancelled = true;
       timeouts.forEach(clearTimeout);
+      if (!completedRef.current) {
+        animStartedRef.current = false;
+      }
     };
-  }, [isInView, messages, onComplete, reduce]);
+  }, [isInView, messages, reduce]);
 
   const visibleMessages = messages.slice(0, visibleCount);
 

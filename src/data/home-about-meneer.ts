@@ -87,9 +87,9 @@ export const HOME_ABOUT_MENEER = {
       detail: "Nu zit ik aan tafel met jou. Welk kanaal, welk platform, welke volgorde?",
     },
   ] as const satisfies readonly AboutMeneerJourneyStep[],
-  collabTitle: "Samen beslissen wat past",
+  collabTitle: "Jij kent je klant. Ik ken de knoppen.",
   collabBody:
-    "Ik kies niet in mijn eentje of Shopify, Google Ads of SEO eerst komt. Jij kent je klant. Ik ken de kanalen. Samen bepalen we wat slim is voor jouw fase.",
+    "Shopify eerst? SEO? Ads pas als je site converteert? Dat kies ik niet in mijn eentje. Jij ook niet. We zetten het naast elkaar en pakken wat bij jouw fase past.",
   channelHint: "Tik een kanaal. SEO? Landingspagina's op topniveau.",
   channelChoices: [
     {
@@ -123,4 +123,13 @@ export const HOME_ABOUT_MENEER = {
     "Mijn dopamine? Jij met meer klanten en een volle inbox. App je me 'hé, het loopt'? Dan sla ik die harder aan dan mijn ochtendkoffie.",
   ctaLabel: "Meer over Meneer",
   ctaHref: "/over",
+} as const;
+
+export const HOME_ABOUT_MENEER_COLLAB_CTA = {
+  eyebrow: "Zo kies ik kanalen",
+  title: "Jij kent je klant. Ik ken de knoppen.",
+  body: "Shopify eerst? SEO? Ads pas als je site converteert? Dat beslis ik niet alleen, en jij ook niet. We zetten het naast elkaar en kiezen wat bij jouw fase past. Daarna bouw ik het en zet ik het live.",
+  punch: "TikTok-trend? Alleen als jouw klant daar hangt. Anders laat ik die even links liggen.",
+  ctaLabel: "Zo wil ik het ook",
+  ctaHref: "/intake",
 } as const;

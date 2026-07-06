@@ -171,8 +171,8 @@ export const HOME_CASES: HomeCase[] = [
     eyebrow: "From scratch · App",
     title: "Website, e-mail en boekingsapp met agenda",
     homeHook: "Website from scratch, mail en boekingsapp. Geen losse tools meer.",
-    metric: "Alles",
-    metricHint: "site, mail en app in één lijn",
+    metric: "Boekingsapp",
+    metricHint: "website en mail in dezelfde lijn",
     body: "Website from scratch, e-mailmarketing en een eigen app met agenda en boekingen. Geen losse tools die niet met elkaar praten.",
     challenge:
       "Lessen plannen, aanmeldingen en communicatie liepen versnipperd. Geen centrale plek waar klanten boeken en Hills Pilates haar planning beheert.",
