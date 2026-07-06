@@ -91,11 +91,24 @@ export function HomeDesktopBouwenSection() {
             ))}
           </ul>
 
-          <div className="mt-10">
+          <Link
+            href="/bouwen"
+            className="group mt-10 inline-flex items-center gap-2 text-sm font-extrabold tracking-tight text-[#FF5722] transition hover:text-orange-400"
+          >
+            Meer over bouwen
+            <ArrowUpRight
+              className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              aria-hidden
+            />
+          </Link>
+        </div>
+
+        <div>
+          <div className="mb-4">
             <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.16em] text-white/40">
               Voorbeeld live
             </p>
-            <div className="grid max-w-md grid-cols-2 gap-2 rounded-2xl border border-white/10 bg-white/[0.04] p-1">
+            <div className="grid grid-cols-2 gap-2 rounded-2xl border border-white/10 bg-white/[0.04] p-1">
               {HOME_MOBILE_BOUWEN_TOOLS.map((t) => {
                 const activeTab = tool === t.id;
                 return (
@@ -123,19 +136,6 @@ export function HomeDesktopBouwenSection() {
             </div>
           </div>
 
-          <Link
-            href="/bouwen"
-            className="group mt-10 inline-flex items-center gap-2 text-sm font-extrabold tracking-tight text-[#FF5722] transition hover:text-orange-400"
-          >
-            Meer over bouwen
-            <ArrowUpRight
-              className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              aria-hidden
-            />
-          </Link>
-        </div>
-
-        <div>
           <div className="mb-4 flex items-center justify-between gap-3">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-white/80">
               <span
