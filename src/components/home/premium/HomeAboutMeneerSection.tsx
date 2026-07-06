@@ -15,7 +15,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 /** Desktop: persoonlijk Meneer-verhaal op de homepage. */
 export function HomeAboutMeneerSection() {
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotion() ?? false;
   const [strategyReady, setStrategyReady] = useState(reduce);
 
   return (
