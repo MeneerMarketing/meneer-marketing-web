@@ -1,7 +1,7 @@
 import { z } from "zod";
+import { CONTACT_MAIL_NOT_CONFIGURED_CODE } from "@/lib/contact-mail";
 
-export const FORM_SOURCES = [
-  "contact",
+export const FORM_SOURCES = [  "contact",
   "samenwerken",
   "project-starten",
   "intake",
@@ -32,6 +32,21 @@ export interface SubmitContactResult {
 export interface SubmitContactError {
   ok: false;
   error: string;
+  code?: typeof CONTACT_MAIL_NOT_CONFIGURED_CODE;
+  mailtoHref?: string;
+}
+
+function parseApiError(data: unknown): { message: string; code?: string } {
+  if (!data || typeof data !== "object") {
+    return { message: "Versturen lukte niet. Probeer het opnieuw of mail direct naar info@meneermarketing.nl." };
+  }
+  const record = data as Record<string, unknown>;
+  const message =
+    typeof record.error === "string"
+      ? record.error
+      : "Versturen lukte niet. Probeer het opnieuw of mail direct naar info@meneermarketing.nl.";
+  const code = typeof record.code === "string" ? record.code : undefined;
+  return { message, code };
 }
 
 export async function submitContactForm(
@@ -46,15 +61,27 @@ export async function submitContactForm(
   const data: unknown = await res.json().catch(() => null);
 
   if (!res.ok) {
-    const message =
-      data &&
-      typeof data === "object" &&
-      "error" in data &&
-      typeof (data as { error: unknown }).error === "string"
-        ? (data as { error: string }).error
-        : "Versturen lukte niet. Probeer het opnieuw of mail direct naar info@meneermarketing.nl.";
-    return { ok: false, error: message };
+    const { message, code } = parseApiError(data);
+    const mailtoHref =
+      code === CONTACT_MAIL_NOT_CONFIGURED_CODE
+        ? buildMailtoFallback(payload)
+        : undefined;
+
+    return {
+      ok: false,
+      error: message,
+      ...(code === CONTACT_MAIL_NOT_CONFIGURED_CODE
+        ? { code: CONTACT_MAIL_NOT_CONFIGURED_CODE, mailtoHref }
+        : {}),
+    };
   }
 
   return { ok: true };
+}
+
+function buildMailtoFallback(payload: SubmitContactPayload): string {
+  const params = new URLSearchParams();
+  params.set("subject", payload.subject);
+  params.set("body", payload.body);
+  return `mailto:info@meneermarketing.nl?${params.toString()}`;
 }

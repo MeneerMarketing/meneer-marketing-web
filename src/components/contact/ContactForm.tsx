@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useMemo, useState, type FormEvent } from "react";
 import { Send } from "lucide-react";
+import { FormSubmitError } from "@/components/contact/FormSubmitError";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { submitContactForm } from "@/lib/contact-submission";
 
@@ -56,6 +57,7 @@ export function ContactForm() {
   const reduce = useReducedMotion();
   const [form, setForm] = useState<FormState>(initial);
   const [error, setError] = useState<string | null>(null);
+  const [mailtoFallback, setMailtoFallback] = useState<string | undefined>();
   const [submitting, setSubmitting] = useState(false);
   const [sent, setSent] = useState(false);
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
@@ -78,6 +80,7 @@ export function ContactForm() {
     ) => {
       setForm((prev) => ({ ...prev, [field]: e.target.value }));
       setError(null);
+      setMailtoFallback(undefined);
     };
 
   const handleSubmit = async (e: FormEvent) => {
@@ -122,6 +125,7 @@ export function ContactForm() {
 
     if (!result.ok) {
       setError(result.error);
+      setMailtoFallback(result.mailtoHref);
       return;
     }
 
@@ -300,9 +304,7 @@ export function ContactForm() {
       </div>
 
       {error ? (
-        <p className="text-sm font-medium text-red-600" role="alert">
-          {error}
-        </p>
+        <FormSubmitError message={error} mailtoHref={mailtoFallback} />
       ) : null}
 
       <div className="mt-auto flex flex-col gap-3 border-t border-slate-100 pt-4 sm:flex-row sm:items-center sm:justify-between">

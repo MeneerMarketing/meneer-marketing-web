@@ -2,16 +2,20 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { businessEmail } from "@/lib/contact";
 import {
+  CONTACT_MAIL_NOT_CONFIGURED_CODE,
+  CONTACT_MAIL_NOT_CONFIGURED_MESSAGE,
+  isContactMailConfigured,
+} from "@/lib/contact-mail";
+import {
   ContactSubmissionSchema,
   type ContactSubmission,
 } from "@/lib/contact-submission";
 
 function getResendClient(): Resend | null {
-  const key = process.env.RESEND_API_KEY;
+  const key = process.env.RESEND_API_KEY?.trim();
   if (!key) return null;
   return new Resend(key);
 }
-
 function resolveFromAddress(): string {
   return (
     process.env.CONTACT_FROM_EMAIL ??
@@ -26,11 +30,8 @@ function resolveToAddress(): string {
 async function sendContactMail(data: ContactSubmission): Promise<void> {
   const resend = getResendClient();
   if (!resend) {
-    throw new Error(
-      "E-mail is nog niet geconfigureerd op de server (RESEND_API_KEY ontbreekt).",
-    );
+    throw new Error(CONTACT_MAIL_NOT_CONFIGURED_MESSAGE);
   }
-
   const sourceLabel = data.source.replace(/-/g, " ");
   const htmlBody = data.body
     .split("\n")
@@ -96,6 +97,25 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const message =
       err instanceof Error ? err.message : "Interne serverfout bij versturen.";
     console.error("[API Contact Error]", message, err);
+
+    if (!isContactMailConfigured()) {
+      return NextResponse.json(
+        {
+          error: CONTACT_MAIL_NOT_CONFIGURED_MESSAGE,
+          code: CONTACT_MAIL_NOT_CONFIGURED_CODE,
+        },
+        { status: 503 },
+      );
+    }
+
     return NextResponse.json({ error: message }, { status: 500 });
   }
+}
+
+/** Publieke statuscheck (geen secrets). Handig na deploy. */
+export async function GET(): Promise<NextResponse> {
+  return NextResponse.json({
+    configured: isContactMailConfigured(),
+    to: process.env.CONTACT_TO_EMAIL ?? businessEmail,
+  });
 }

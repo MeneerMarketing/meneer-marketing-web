@@ -40,6 +40,7 @@ import {
   Zap,
 } from "lucide-react";
 import { useMemo, useState, type FormEvent, type ReactNode } from "react";
+import { FormSubmitError } from "@/components/contact/FormSubmitError";
 import { businessEmail } from "@/lib/contact";
 import { submitContactForm } from "@/lib/contact-submission";
 import { readPlaygroundSummary } from "@/lib/groeiscan-playground";
@@ -848,6 +849,7 @@ export function ConversionForm({
   const [state, setState] = useState<FormState>(INITIAL_STATE);
   const [step, setStep] = useState(0);
   const [error, setError] = useState<string | null>(null);
+  const [mailtoFallback, setMailtoFallback] = useState<string | undefined>();
   const [shake, setShake] = useState(0);
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -874,6 +876,7 @@ export function ConversionForm({
   const patch = (partial: Partial<FormState>) => {
     setState((prev) => ({ ...prev, ...partial }));
     setError(null);
+    setMailtoFallback(undefined);
   };
 
   const validateStep = (s: number): string | null => {
@@ -915,6 +918,7 @@ export function ConversionForm({
 
   const prev = () => {
     setError(null);
+    setMailtoFallback(undefined);
     setStep((s) => Math.max(s - 1, 0));
   };
 
@@ -929,6 +933,7 @@ export function ConversionForm({
 
     setSubmitting(true);
     setError(null);
+    setMailtoFallback(undefined);
 
     const result = await submitContactForm({
       source: variant,
@@ -943,6 +948,7 @@ export function ConversionForm({
 
     if (!result.ok) {
       setError(result.error);
+      setMailtoFallback(result.mailtoHref);
       setShake((s) => s + 1);
       return;
     }
@@ -955,6 +961,7 @@ export function ConversionForm({
     setStep(0);
     setState(INITIAL_STATE);
     setError(null);
+    setMailtoFallback(undefined);
   };
 
   if (sent) {
@@ -1251,11 +1258,9 @@ export function ConversionForm({
               initial={{ opacity: 0, y: -6 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
-              className="mt-5 flex items-start gap-2 rounded-xl border border-red-200 bg-red-50/80 px-3 py-2.5 text-sm font-medium text-red-700"
-              role="alert"
+              className="mt-5"
             >
-              <AlertCircle className="mt-0.5 size-4 shrink-0" aria-hidden />
-              <span>{error}</span>
+              <FormSubmitError message={error} mailtoHref={mailtoFallback} />
             </motion.div>
           ) : null}
         </AnimatePresence>

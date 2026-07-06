@@ -27,6 +27,7 @@ import {
   businessKvk,
   mailtoHref,
 } from "@/lib/contact";
+import { FormSubmitError } from "@/components/contact/FormSubmitError";
 import { submitContactForm } from "@/lib/contact-submission";
 import {
   CONTACT_CHAT_OPENERS,
@@ -233,6 +234,7 @@ export function ContactChatExperience({
   const [selectedTopic, setSelectedTopic] = useState<ContactQuickReply | null>(null);
   const [form, setForm] = useState<FormState>(initialForm);
   const [error, setError] = useState<string | null>(null);
+  const [mailtoFallback, setMailtoFallback] = useState<string | undefined>();
   const [submitting, setSubmitting] = useState(false);
   const [draftMessage, setDraftMessage] = useState("");
   const isTeaser = variant === "teaser";
@@ -407,6 +409,7 @@ export function ContactChatExperience({
 
     if (!result.ok) {
       setError(result.error);
+      setMailtoFallback(result.mailtoHref);
       return;
     }
 
@@ -604,9 +607,7 @@ export function ContactChatExperience({
                     />
                   </div>
                   {error ? (
-                    <p className="text-sm font-medium text-red-600" role="alert">
-                      {error}
-                    </p>
+                    <FormSubmitError message={error} mailtoHref={mailtoFallback} />
                   ) : null}
                   <button
                     type="submit"
@@ -662,9 +663,9 @@ export function ContactChatExperience({
                   </button>
                 </div>
                 {error ? (
-                  <p className="mt-2 text-xs font-medium text-red-600" role="alert">
-                    {error}
-                  </p>
+                  <div className="mt-2">
+                    <FormSubmitError message={error} mailtoHref={mailtoFallback} />
+                  </div>
                 ) : null}
                 <p className="mt-2 text-[10px] text-slate-400">
                   Enter om te versturen. Shift+Enter voor een nieuwe regel.
