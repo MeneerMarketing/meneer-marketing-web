@@ -25,8 +25,10 @@ export function HomeMobileProof() {
           id="mobile-proof-heading"
           className="mt-3 text-2xl font-extrabold tracking-tight text-slate-900"
         >
-          Bewijs, geen praatjes.
+          {HOME_PROOF.title}{" "}
+          <span className="text-[#FF5722]">{HOME_PROOF.titleAccent}</span>
         </h2>
+        <p className="mt-2 max-w-md text-sm leading-relaxed text-slate-600">{HOME_PROOF.body}</p>
 
         <motion.article
           initial={reduce ? false : { opacity: 0, y: 16 }}

@@ -30,7 +30,8 @@ export function HomeProofSection() {
               id="home-proof-heading"
               className="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
             >
-              {HOME_PROOF.title}
+              {HOME_PROOF.title}{" "}
+              <span className="text-[#FF5722]">{HOME_PROOF.titleAccent}</span>
             </h2>
             <p className="mt-2 max-w-lg text-sm text-slate-600 sm:text-base">{HOME_PROOF.body}</p>
           </div>

@@ -9,9 +9,10 @@ export const HOME_CONTEXT = {
 } as const;
 
 export const HOME_PROOF = {
-  tag: "Resultaat",
-  title: "Bewijs dat het werkt",
-  body: "Twee trajecten. Geen praatjes. Tik door voor het volledige verhaal.",
+  tag: "Echt werk",
+  title: "Ik kan wel mooi praten.",
+  titleAccent: "Dit liever laten zien.",
+  body: "Twee trajecten die nu live draaien. Geen mockup, geen stockfoto met jouw logo erop geplakt. Open de site, kijk mee en oordeel zelf.",
   featuredHref: "/cases",
   featuredLabel: "Alle cases bekijken",
 } as const;
