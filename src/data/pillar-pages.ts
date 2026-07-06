@@ -168,9 +168,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen geen optie meer.",
       "Vindbaarheid is daarom breder geworden dan SEO alleen. Het is de combinatie van goede content, een technisch kloppende site, lokale aanwezigheid en reviews die vertrouwen geven. Wij pakken die keten als geheel op, want de onderdelen versterken elkaar.",
     ],
-    angleTitle: "Organisch eerst, betaald daarna",
+    angleTitle: "SEO die bovenaan scoort. Organisch verkeer is gratis.",
     angleBody:
-      "SkinComplete stond bovenaan in Google vóór er één euro aan advertenties werd uitgegeven. Die volgorde is bewust: organische vindbaarheid maakt elke advertentie-euro daarna goedkoper, omdat je merk al vertrouwen heeft opgebouwd waar klanten zoeken.",
+      "Ik ben SEO-expert op hoog niveau: landingspagina's op wat klanten echt zoeken, techniek die Google vertrouwt, content die blijft ranken. Dat levert gratis verkeer op, maand na maand. Sterke SEO staat op zich al. Ads kunnen later en worden dan goedkoper. SkinComplete bewees het: bovenaan in Google vóór er één euro aan ads ging.",
     serviceIntro:
       "Van klassieke SEO tot AI-antwoorden en reviews: dit zijn de trajecten binnen vindbaarheid.",
     processTitle: "Zo bouwen we je vindbaarheid op",
@@ -185,7 +185,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       },
       {
         title: "Content die antwoordt",
-        body: "Pagina's en artikelen die de vragen van je klant echt beantwoorden. Geen opgeblazen blogkalender.",
+        body: "Landingspagina's op wat klanten echt typen. Geen opgeblazen blogkalender. Wel pagina's die bovenaan scoren.",
       },
       {
         title: "Autoriteit uitbouwen",

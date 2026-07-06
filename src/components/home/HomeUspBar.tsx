@@ -17,14 +17,14 @@ export function HomeUspBar() {
       aria-label="Specialismes"
       className="relative overflow-x-clip border-b border-slate-200/80 bg-slate-50/90"
     >
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-6 sm:flex-row sm:items-center sm:gap-5 sm:px-6 sm:py-7 lg:px-8">
-        <p className="shrink-0 text-center text-xs font-bold tracking-tight text-slate-600 sm:text-left sm:text-sm">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-3 px-4 py-5 sm:flex-row sm:items-center sm:gap-5 sm:py-7 sm:px-6 lg:px-8">
+        <p className="shrink-0 text-left text-xs font-bold tracking-tight text-slate-600 sm:text-sm">
           <span className="text-[#FF5722]">Vijf specialismen.</span> Eén aanspreekpunt.
         </p>
 
         {/* py-3 = ruimte voor rotatie/schaduw; horizontale scroll alleen als het echt niet past */}
         <div className="min-w-0 w-full overflow-x-auto overscroll-x-contain py-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-1">
-          <ul className="mx-auto flex w-max flex-nowrap items-center justify-center gap-1.5 sm:ml-auto sm:justify-end sm:gap-2">
+          <ul className="flex w-max max-w-full flex-nowrap items-center justify-start gap-1.5 sm:ml-auto sm:justify-end sm:gap-2">
             {HOME_USP_STICKERS.map((item, index) => {
               const rotate = STICKER_ROTATIONS[index % STICKER_ROTATIONS.length];
               return (

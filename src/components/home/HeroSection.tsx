@@ -77,6 +77,10 @@ export function HeroSection() {
             </Magnetic>
           </div>
 
+          <div className="mt-8 lg:hidden">
+            <HeroChatCard compact />
+          </div>
+
           <dl className="mt-10 hidden grid-cols-3 gap-2 border-t border-slate-200 pt-8 text-xs tracking-tight sm:grid sm:gap-6 sm:text-sm lg:mt-14">
             <div className="min-w-0">
               <dt className="text-slate-500">Focus</dt>
@@ -102,6 +106,7 @@ export function HeroSection() {
         </div>
       </div>
 
+      <FloatingTechBubbles count={8} className="opacity-80 lg:hidden" />
       <FloatingTechBubbles count={16} className="hidden lg:block" />
     </section>
   );

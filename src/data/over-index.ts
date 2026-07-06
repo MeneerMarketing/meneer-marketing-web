@@ -2,7 +2,7 @@ export const OVER_HERO = {
   eyebrow: "Over Meneer Marketing",
   title: "Groei is geen toeval. Het is een systeem met een gezicht.",
   subtitle:
-    "Afgestudeerd als applicatieontwikkelaar, jarenlang webdesign en marketing op mijn naam. Twaalf jaar later focus ik op wat echt telt: bedrijven laten groeien en maximaal uit online halen. Niet alleen mooie sites of systemen bouwen, maar alles wat moet scoren.",
+    "Afgestudeerd als applicatieontwikkelaar, twaalf jaar webdesign en marketing op mijn naam. Ik help bedrijven groeien door samen te kiezen welke kanalen en platforms passen. Shopify, SEO, ads: niet omdat het hip is, wel omdat het bij jouw fase hoort.",
   stats: [
     { label: "Ervaring", value: "12+ jaar" },
     { label: "Start", value: "Dev & design" },
@@ -47,6 +47,13 @@ export const OVER_HERO_FACTS: OverHeroFact[] = [
     text: "Mail, bellen, WhatsApp. Geen protocolboek, wel afspraken die kloppen.",
     accent: "#0D9488",
     tilt: -0.75,
+  },
+  {
+    id: "dopamine",
+    badge: "Eerlijk",
+    text: "Mijn dopamine? Jouw grafiek omhoog. Omzet, leads, ROAS. Koffie is fijn. Een mailtje 'het werkt echt' is beter.",
+    accent: "#FF5722",
+    tilt: 2,
   },
 ] as const;
 
@@ -99,13 +106,13 @@ export const OVER_STORY: OverStoryChapter[] = [
   {
     id: "partner",
     tag: "Samen",
-    title: "Gewoon praten, als een team",
-    body: "De beste resultaten kwamen nooit uit formele mailketens. Wel uit open gesprekken waarin iedereen snapt wat er speelt. Mail, WhatsApp of bellen: wat voor jou het fijnst is. Twaalf jaar heeft me geleerd: menselijk praten levert betere beslissingen dan een corporate masker.",
-    punchline: "Geen 'Geachte heer/mevrouw' als we al koffie hebben gedronken.",
+    title: "Jij kent je klant, ik ken de kanalen",
+    body: "De beste keuzes komen uit gesprekken, niet uit een standaard pakket. Wel Shopify of Next.js? Google Ads nu of SEO eerst? Meta of e-mail? Jij kent je markt, ik ken wat technisch en commercieel werkt. Samen kiezen we de volgorde die bij jouw fase past.",
+    punchline: "Geen dictatuur. Wel richting. En eerlijk advies als iets (nog) geen zin heeft.",
     scene: "partner",
-    highlights: ["Mail · WhatsApp", "Team modus", "Geen masker"],
-    metric: { label: "Contact", value: "Menselijk" },
-    footnote: "Zakelijk waar het telt · menselijk hoe we praten",
+    highlights: ["Kanalen kiezen", "Platform match", "Team modus"],
+    metric: { label: "Aanpak", value: "Samen" },
+    footnote: "Shopify · SEO · ads · e-mail · wat past",
   },
 ];
 
@@ -120,7 +127,7 @@ export const OVER_PRINCIPLES = [
   },
   {
     title: "Menselijk",
-    body: "Geen moeilijke bureautaal in je inbox. Mail, WhatsApp of bellen, wat voor jou het fijnst is. Duidelijk en soms droog grappig, en strak professioneel waar het moet. Lastige woorden leg ik uit in taal die je team direct snapt.",
+    body: "Geen moeilijke bureautaal in je inbox. Mail, WhatsApp of bellen, wat voor jou het fijnst is. We beslissen samen welke kanalen en platforms passen. Duidelijk en soms droog grappig, strak professioneel waar het moet.",
   },
 ] as const;
 
@@ -150,8 +157,8 @@ export const OVER_STACK: OverStackItem[] = [
   {
     id: "seo",
     label: "SEO & content",
-    body: "Vindbaar in Google én in AI-antwoorden. Structuur, content en autoriteit in de juiste volgorde.",
-    quip: "15% van alle zoekopdrachten is gloednieuw. Altijd ruimte.",
+    body: "Landingspagina's en techniek die bovenaan scoren. Organisch verkeer is gratis en blijft doorlopen.",
+    quip: "Positie 1 kost geen cent per klik. Alleen slim vooraf bouwen.",
     accent: "#00BCD4",
   },
   {

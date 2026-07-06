@@ -5,6 +5,7 @@ import { ArrowUpRight, ExternalLink, Pause, Play } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CaseSceneIllustration } from "@/components/home/cases/CaseSceneIllustration";
+import { CaseSwitcherThumb } from "@/components/cases/CaseSwitcherThumb";
 import { CaseServiceGrid } from "@/components/home/cases/CaseServiceGrid";
 import { CaseStoryRail } from "@/components/home/cases/CaseStoryRail";
 import { HOME_CASES } from "@/data/home-cases";
@@ -58,14 +59,7 @@ export function CaseSpotlight() {
                   : "border-slate-200 bg-white hover:border-slate-300"
               }`}
             >
-              <span
-                className={`flex size-10 shrink-0 items-center justify-center rounded-xl text-sm font-black ${
-                  isActive ? "text-white" : "bg-slate-100 text-slate-600"
-                }`}
-                style={isActive ? { backgroundColor: c.palette.accent } : undefined}
-              >
-                {c.client.charAt(0)}
-              </span>
+              <CaseSwitcherThumb caseItem={c} isActive={isActive} />
               <span className="min-w-0">
                 <span
                   className={`block text-[10px] font-bold uppercase tracking-wider ${

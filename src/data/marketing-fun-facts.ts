@@ -262,7 +262,7 @@ export const PAGE_FUN_FACT_IDS: Record<string, string[]> = {
   "/over": ["phones-toothbrushes", "google-revenue-min"],
   "/faq": ["reviews-influence"],
   "/kennisbank": ["blog-traffic"],
-  "/cases": ["reviews-influence"],
+  "/cases": ["reviews-influence", "google-page-two", "first-impression-50ms"],
 };
 
 export function getFunFactById(id: string): MarketingFunFact | undefined {

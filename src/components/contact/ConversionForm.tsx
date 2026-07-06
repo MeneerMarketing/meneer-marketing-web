@@ -494,6 +494,13 @@ function intakeTilesForStep(step: number): readonly TileGroup[] {
   return [];
 }
 
+function schaalOpTilesForStep(step: number): readonly TileGroup[] {
+  const cfg = VARIANTS["schaal-op"];
+  if (step === 0) return cfg.tiles.filter((g) => g.key === "schaalFocus");
+  if (step === 1) return cfg.tiles.filter((g) => g.key === "budgetIndicatie");
+  return [];
+}
+
 function intakeStepHeading(step: number): { title: string; subtitle: string } {
   switch (step) {
     case 0:
@@ -521,8 +528,40 @@ function intakeStepHeading(step: number): { title: string; subtitle: string } {
   }
 }
 
-function isIntakeTileStep(variant: ConversionFormVariant, step: number): boolean {
-  return variant === "intake" && step >= 0 && step <= 3;
+function schaalOpStepHeading(step: number): { title: string; subtitle: string } {
+  switch (step) {
+    case 0:
+      return {
+        title: "Waar wil je op schalen?",
+        subtitle: VARIANTS["schaal-op"].intro,
+      };
+    case 1:
+      return {
+        title: "Budgetindicatie",
+        subtitle: "Geen offerte-trigger. Wel een realistisch voorstel op basis van scope.",
+      };
+    default:
+      return { title: "", subtitle: "" };
+  }
+}
+
+function isMultiStepTileVariant(variant: ConversionFormVariant): boolean {
+  return variant === "intake" || variant === "schaal-op";
+}
+
+function isTileStep(variant: ConversionFormVariant, step: number): boolean {
+  if (variant === "intake") return step >= 0 && step <= 3;
+  if (variant === "schaal-op") return step >= 0 && step <= 1;
+  return step === 0;
+}
+
+function tileStepHeading(
+  variant: ConversionFormVariant,
+  step: number,
+): { title: string; subtitle: string } | null {
+  if (variant === "intake") return intakeStepHeading(step);
+  if (variant === "schaal-op") return schaalOpStepHeading(step);
+  return null;
 }
 
 function tilesForStep(
@@ -530,6 +569,7 @@ function tilesForStep(
   step: number,
 ): readonly TileGroup[] {
   if (variant === "intake") return intakeTilesForStep(step);
+  if (variant === "schaal-op") return schaalOpTilesForStep(step);
   if (step === 0) return VARIANTS[variant].tiles;
   return [];
 }
@@ -538,15 +578,22 @@ function stepLabelsForVariant(variant: ConversionFormVariant): readonly string[]
   if (variant === "intake") {
     return ["Stand", "Doel", "Onderwerp", "Tempo", "Contact", "Verhaal"];
   }
+  if (variant === "schaal-op") {
+    return ["Focus", "Budget", "Contact", "Verhaal"];
+  }
   return ["Context", "Contact", "Bericht"];
 }
 
 function contactStepIndex(variant: ConversionFormVariant): number {
-  return variant === "intake" ? 4 : 1;
+  if (variant === "intake") return 4;
+  if (variant === "schaal-op") return 2;
+  return 1;
 }
 
 function messageStepIndex(variant: ConversionFormVariant): number {
-  return variant === "intake" ? 5 : 2;
+  if (variant === "intake") return 5;
+  if (variant === "schaal-op") return 3;
+  return 2;
 }
 
 // ─── UI PRIMITIVES ────────────────────────────────────────────────────────
@@ -806,6 +853,7 @@ export function ConversionForm({
   const [submitting, setSubmitting] = useState(false);
 
   const isIntake = variant === "intake";
+  const isSchaalOp = variant === "schaal-op";
   const STEP_LABELS = stepLabelsForVariant(variant);
   const contactStep = contactStepIndex(variant);
   const messageStep = messageStepIndex(variant);
@@ -829,7 +877,7 @@ export function ConversionForm({
   };
 
   const validateStep = (s: number): string | null => {
-    const tileStep = isIntake ? isIntakeTileStep(variant, s) : s === 0;
+    const tileStep = isTileStep(variant, s);
     if (tileStep) {
       for (const group of tilesForStep(variant, s)) {
         if (!state[group.key]) {
@@ -956,7 +1004,7 @@ export function ConversionForm({
           transition={{ duration: 0.45 }}
         >
           <AnimatePresence mode="wait" initial={false}>
-            {(step === 0 || (isIntake && step >= 1 && step <= 3)) ? (
+            {isTileStep(variant, step) ? (
               <motion.div
                 key={`step-tiles-${step}`}
                 variants={stepVariants}
@@ -968,15 +1016,15 @@ export function ConversionForm({
               >
                 <div>
                   <h3 className="text-lg font-extrabold tracking-tight text-mm-text sm:text-xl">
-                    {isIntake
-                      ? intakeStepHeading(step).title
+                    {isMultiStepTileVariant(variant)
+                      ? tileStepHeading(variant, step)?.title
                       : step === 0
                         ? "Beetje context."
                         : ""}
                   </h3>
                   <p className="mt-1 text-sm text-mm-muted">
-                    {isIntake
-                      ? intakeStepHeading(step).subtitle
+                    {isMultiStepTileVariant(variant)
+                      ? tileStepHeading(variant, step)?.subtitle
                       : cfg.intro}
                   </p>
                   {isIntake && step === 0 ? (
@@ -985,17 +1033,25 @@ export function ConversionForm({
                       ± 2 minuten invullen
                     </p>
                   ) : null}
+                  {isSchaalOp && step === 0 ? (
+                    <p className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-violet-200/80 bg-violet-50 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-violet-700">
+                      <TrendingUp className="size-3.5" aria-hidden />
+                      Eén focus, dan verder
+                    </p>
+                  ) : null}
                 </div>
 
                 {tilesForStep(variant, step).map((group) => {
                   const selected = state[group.key];
                   const cols =
                     group.columns === 2
-                      ? "sm:grid-cols-2"
+                      ? "grid-cols-2 sm:grid-cols-2"
                       : group.columns === 3
-                        ? "sm:grid-cols-2 lg:grid-cols-3"
-                        : "sm:grid-cols-2";
-                  const hideGroupHeader = isIntake && tilesForStep(variant, step).length === 1;
+                        ? "grid-cols-2 sm:grid-cols-2 lg:grid-cols-3"
+                        : "grid-cols-2 sm:grid-cols-2";
+                  const hideGroupHeader =
+                    isMultiStepTileVariant(variant) &&
+                    tilesForStep(variant, step).length === 1;
                   return (
                     <div key={group.key}>
                       {!hideGroupHeader ? (
@@ -1006,7 +1062,7 @@ export function ConversionForm({
                           <p className="text-xs text-mm-muted">{group.subtitle}</p>
                         </div>
                       ) : null}
-                      <div className={`grid grid-cols-1 gap-3 ${cols}`}>
+                      <div className={`grid gap-3 ${cols}`}>
                         {group.options.map((opt) => (
                           <Tile
                             key={opt.value}

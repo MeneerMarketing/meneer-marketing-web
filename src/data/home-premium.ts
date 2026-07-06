@@ -28,12 +28,13 @@ export const HOME_WHY_MENEER = {
       detail: "Shopify en Next.js from scratch. Geen page builder die je remt als je groeit.",
     },
     {
-      label: "Google Ads & Meta",
-      detail: "Campagnes op pagina's die converteren. Niet op gok.",
+      label: "SEO-expert",
+      detail:
+        "Landingspagina's, techniek en content die bovenaan scoren. Gratis organisch verkeer, maand na maand.",
     },
     {
-      label: "Meten is sturen",
-      detail: "Conversies, ROAS, Core Web Vitals. Cijfers bepalen de volgende zet.",
+      label: "Google Ads & Meta",
+      detail: "Campagnes op pagina's die converteren. Niet op gok.",
     },
   ],
   pillars: ["Strategie", "Bouwen", "Vindbaarheid", "Campagnes", "Behoud"],

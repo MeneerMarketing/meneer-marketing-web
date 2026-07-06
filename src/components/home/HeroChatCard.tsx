@@ -7,12 +7,17 @@ import { useEffect, useState } from "react";
 import { useHeroTilt } from "@/components/diensten/premium/useHeroTilt";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import {
-  HERO_CHAT_INTRO,
   HERO_CHAT_OPTIONS,
   type HeroChatFocusOption,
   type HeroChatOption,
 } from "@/data/home-hero-chat";
 import type { SiteCta } from "@/lib/cta";
+import {
+  getHeroChatIntroLines,
+  getHeroChatTimeSlot,
+  HERO_CHAT_TIME_BADGE,
+  type HeroChatTimeSlot,
+} from "@/lib/hero-chat-time";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -112,7 +117,7 @@ function HeroCtaButton({ cta, onReset }: { cta: SiteCta; onReset: () => void }) 
         <span className="min-w-0">
           <span className="block truncate text-sm font-extrabold">{cta.label}</span>
           <span className="mt-0.5 block truncate text-[10px] font-semibold text-white/75">
-            Past bij wat je net koos
+            Laten we regelen
           </span>
         </span>
         <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-white/15 transition group-hover:rotate-45">
@@ -131,9 +136,9 @@ function HeroCtaButton({ cta, onReset }: { cta: SiteCta; onReset: () => void }) 
   );
 }
 
-export function HeroChatCard() {
+export function HeroChatCard({ compact = false }: { compact?: boolean }) {
   const reduce = useReducedMotion() ?? false;
-  const { rotateX, rotateY, onMove, onLeave } = useHeroTilt(0.28);
+  const { rotateX, rotateY, onMove, onLeave } = useHeroTilt(compact ? 0 : 0.28);
   const [phase, setPhase] = useState<HeroChatPhase>("intro");
   const [typing, setTyping] = useState(true);
   const [messages, setMessages] = useState<
@@ -141,12 +146,16 @@ export function HeroChatCard() {
   >([]);
   const [topic, setTopic] = useState<HeroChatOption | null>(null);
   const [focus, setFocus] = useState<HeroChatFocusOption | null>(null);
+  const [timeSlot, setTimeSlot] = useState<HeroChatTimeSlot>(() =>
+    getHeroChatTimeSlot(new Date().getHours()),
+  );
+  const timeBadge = HERO_CHAT_TIME_BADGE[timeSlot];
 
   useEffect(() => {
     if (phase !== "intro") return;
 
     let cancelled = false;
-    const lines = [...HERO_CHAT_INTRO];
+    const lines = [...getHeroChatIntroLines(new Date().getHours())];
 
     const wait = (ms: number) =>
       new Promise<void>((resolve) => {
@@ -158,7 +167,7 @@ export function HeroChatCard() {
         if (cancelled) return;
 
         setTyping(true);
-        await wait(reduce ? 0 : i === 0 ? 680 : 780);
+        await wait(reduce ? 0 : i === 0 ? 520 : 580);
         if (cancelled) return;
 
         setTyping(false);
@@ -168,7 +177,7 @@ export function HeroChatCard() {
         ]);
 
         if (i < lines.length - 1) {
-          await wait(reduce ? 0 : 420);
+          await wait(reduce ? 0 : 320);
         }
       }
 
@@ -182,7 +191,7 @@ export function HeroChatCard() {
     return () => {
       cancelled = true;
     };
-  }, [phase, reduce]);
+  }, [phase, reduce, timeSlot]);
 
   const addUser = (text: string) => {
     setMessages((prev) => [...prev, { id: `u-${Date.now()}`, from: "jij", text }]);
@@ -219,6 +228,7 @@ export function HeroChatCard() {
   };
 
   const reset = () => {
+    setTimeSlot(getHeroChatTimeSlot(new Date().getHours()));
     setPhase("intro");
     setTyping(true);
     setMessages([]);
@@ -230,13 +240,25 @@ export function HeroChatCard() {
 
   return (
     <div
-      className="relative w-full max-w-[440px] [perspective:1200px]"
-      onMouseMove={onMove}
-      onMouseLeave={onLeave}
+      className={
+        compact
+          ? "relative w-full"
+          : "relative w-full max-w-[440px] [perspective:1200px]"
+      }
+      onMouseMove={compact ? undefined : onMove}
+      onMouseLeave={compact ? undefined : onLeave}
     >
       <motion.div
-        style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        className="relative isolate overflow-hidden rounded-[28px] border border-slate-200/90 bg-white shadow-[0_40px_80px_-32px_rgba(15,23,42,0.28)] ring-1 ring-slate-900/[0.05]"
+        style={
+          compact
+            ? undefined
+            : { rotateX, rotateY, transformStyle: "preserve-3d" }
+        }
+        className={
+          compact
+            ? "relative isolate overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-[0_20px_48px_-24px_rgba(15,23,42,0.22)] ring-1 ring-slate-900/[0.04]"
+            : "relative isolate overflow-hidden rounded-[28px] border border-slate-200/90 bg-white shadow-[0_40px_80px_-32px_rgba(15,23,42,0.28)] ring-1 ring-slate-900/[0.05]"
+        }
       >
         <div
           className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.028)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.028)_1px,transparent_1px)] bg-[size:28px_28px]"
@@ -253,13 +275,22 @@ export function HeroChatCard() {
             <span className="size-2.5 rounded-full bg-amber-300" aria-hidden />
             <span className="size-2.5 rounded-full bg-emerald-400" aria-hidden />
             <span className="ml-1 text-xs font-bold text-slate-700">Meneer Marketing</span>
-            <span className="ml-auto inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
-              <span className="size-1.5 rounded-full bg-emerald-500" aria-hidden />
-              Online
+            <span className="ml-auto flex items-center gap-1.5">
+              <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold text-slate-500">
+                {timeBadge}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                <span className="size-1.5 rounded-full bg-emerald-500" aria-hidden />
+                Online
+              </span>
             </span>
           </div>
 
-          <div className="flex min-h-[360px] flex-col p-5 sm:min-h-[380px] sm:p-6">
+          <div
+            className={`flex flex-col p-4 sm:p-5 ${
+              compact ? "min-h-[248px]" : "min-h-[360px] sm:min-h-[380px] sm:p-6"
+            }`}
+          >
             <div className="flex flex-1 flex-col gap-2.5">
               {messages.map((msg) => (
                 <HeroBubble key={msg.id} from={msg.from} text={msg.text} />

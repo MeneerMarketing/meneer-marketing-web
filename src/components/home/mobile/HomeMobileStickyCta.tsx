@@ -5,20 +5,40 @@ import { ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { siteCtas } from "@/lib/cta";
 
-/** Vaste conversiebalk onderaan op mobiel, na scroll voorbij hero. */
+/** Vaste conversiebalk onderaan op mobiel. Verdwijnt bij de footer. */
 export function HomeMobileStickyCta() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    let nearFooter = false;
+    let scrolledEnough = false;
     const threshold = Math.min(420, window.innerHeight * 0.55);
 
+    const sync = () => setVisible(scrolledEnough && !nearFooter);
+
     function onScroll() {
-      setVisible(window.scrollY > threshold);
+      scrolledEnough = window.scrollY > threshold;
+      sync();
     }
+
+    const footer = document.querySelector("footer");
+    const observer = footer
+      ? new IntersectionObserver(
+          ([entry]) => {
+            nearFooter = entry.isIntersecting;
+            sync();
+          },
+          { rootMargin: "80px" },
+        )
+      : null;
+    if (footer && observer) observer.observe(footer);
 
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      observer?.disconnect();
+    };
   }, []);
 
   return (

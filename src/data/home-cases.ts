@@ -184,7 +184,7 @@ export const HOME_CASES: HomeCase[] = [
     href: "/cases#hills-pilates",
     website: { url: "https://hillsstudio.nl", hostname: "hillsstudio.nl" },
     previewImage: "/cases/hills-pilates-hero.png",
-    previewObjectPosition: "top",
+    previewObjectPosition: "center center",
     services: [
       { id: "website", label: "Website", blurb: "From scratch, geen template" },
       { id: "email", label: "E-mail", blurb: "Welkom, herinnering, retentie" },

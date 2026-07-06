@@ -18,10 +18,10 @@ export interface HeroChatOption {
   cta: SiteCta;
 }
 
+/** @deprecated Gebruik getHeroChatIntroLines() uit @/lib/hero-chat-time */
 export const HERO_CHAT_INTRO = [
-  "Hoi. Je hebt me te pakken.",
-  "Je hoeft me niet te vertellen wat je gisteren at. Tenzij het je conversie-ratio raakt. Grapje.",
-  "Waar zit je hoofd? Site, shop, ads, SEO... of gewoon even sparren. Klik iets.",
+  "Hoi. Je hebt me live. Zeldzaam genoeg in marketing.",
+  "Waar ben je voor? Klik iets. Twijfel telt ook mee.",
 ] as const;
 
 export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
@@ -29,29 +29,32 @@ export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
     id: "build",
     label: "Site of shop",
     userReply: "Iets bouwen",
-    meneerReply: "Mooi. Even scherp welk stuk je bedoelt.",
-    focusPrompt: "Wat moet er gebeuren?",
+    meneerReply: "Lekker. From scratch of iets fixen? Beide kan, jij kiest.",
+    focusPrompt: "Wat gaan we neerzetten?",
     cta: siteCtas.projectStarten,
     focusOptions: [
       {
         id: "new-site",
         label: "Nieuwe website",
         userReply: "Nieuwe website",
-        meneerReply: "From scratch? Dan pakken we dat strak aan.",
+        meneerReply:
+          "Mooi. From scratch, geen template dat omvalt zodra je gaat adverteren. Wel iets dat blijft verkopen.",
         cta: siteCtas.projectStarten,
       },
       {
         id: "shop",
         label: "Shopify shop",
         userReply: "Shopify shop",
-        meneerReply: "Custom Shopify. Geen template die vastloopt.",
+        meneerReply:
+          "Custom Shopify. SkinComplete deed ik zo: B2B-portaal, salons bestelden zelf. Jouw shop op dat niveau.",
         cta: siteCtas.projectStarten,
       },
       {
         id: "fix",
         label: "Site verbeteren",
         userReply: "Bestaande site fixen",
-        meneerReply: "Eerst meten wat pijn doet. Dan bouwen we door.",
+        meneerReply:
+          "Site lekt ergens? Eerst meten waar, dan fixen. Geen plugin-roulette en hopen op het beste.",
         cta: siteCtas.startIntake,
       },
     ],
@@ -60,29 +63,32 @@ export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
     id: "grow",
     label: "Meer klanten",
     userReply: "Groei & marketing",
-    meneerReply: "Snap ik. Waar wil je eerst scherpte?",
-    focusPrompt: "Wat voelt het meest urgent?",
+    meneerReply: "Respect. Meer klanten zonder je budget te verbranden? Daar doe ik dit voor.",
+    focusPrompt: "Waar zit de grootste kans nu?",
     cta: siteCtas.schaalOp,
     focusOptions: [
       {
         id: "seo",
         label: "SEO / vindbaar",
         userReply: "SEO & vindbaarheid",
-        meneerReply: "Organisch eerst is vaak slim. Dan pas gas op ads.",
+        meneerReply:
+          "SEO én AI-vindbaarheid. Bovenaan in Google én genoemd in ChatGPT. Gratis verkeer dat blijft komen.",
         cta: siteCtas.schaalOp,
       },
       {
         id: "ads",
         label: "Google of Meta ads",
         userReply: "Ads opschalen",
-        meneerReply: "Meten, sturen, opschalen. Geen gokken met budget.",
+        meneerReply:
+          "Klein testen, hard meten, alleen opschalen wat ROAS oplevert. Jouw budget is geen speelgeld.",
         cta: siteCtas.schaalOp,
       },
       {
         id: "mix",
         label: "Alles door elkaar",
         userReply: "Geen idee waar te beginnen",
-        meneerReply: "Prima startpunt. Intake duurt twee minuten.",
+        meneerReply:
+          "Chaos is mijn favoriete startpunt. We ordenen het en pakken eerst de winst die het snelst binnenkomt.",
         cta: siteCtas.startIntake,
       },
     ],
@@ -91,29 +97,32 @@ export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
     id: "spar",
     label: "Even sparren",
     userReply: "Even sparren",
-    meneerReply: "Lekker. Geen salespitch. Waar zit je mee?",
-    focusPrompt: "Wat komt het dichtst?",
+    meneerReply: "Geen pitch-deck. Wel eerlijk advies van iemand die het zelf gebouwd heeft.",
+    focusPrompt: "Wat zit je het meest dwars?",
     cta: siteCtas.startIntake,
     focusOptions: [
       {
         id: "begin",
         label: "Weet niet waar beginnen",
         userReply: "Weet niet waar te beginnen",
-        meneerReply: "Logisch. Dan ordenen we het eerst.",
+        meneerReply:
+          "Helemaal logisch. 90% van mijn klanten wist dat ook niet. Daar ben ik precies voor.",
         cta: siteCtas.startIntake,
       },
       {
         id: "match",
         label: "Twijfel of het klikt",
         userReply: "Twijfel of we matchen",
-        meneerReply: "Eerlijk gesprek. Geen verplicht traject.",
+        meneerReply:
+          "Twijfel mag. Eén gesprek, nul verplicht traject. Klikt het niet, zeg ik het zelf.",
         cta: siteCtas.startIntake,
       },
       {
         id: "ideas",
         label: "Gewoon ideeën",
         userReply: "Gewoon ideeën uitwisselen",
-        meneerReply: "Prima. Geen plan nodig om te starten.",
+        meneerReply:
+          "Prima. Je hoeft geen plan B te hebben. Stuur je ideeën, ik help ze ordenen.",
         cta: siteCtas.contact,
       },
     ],
@@ -122,29 +131,33 @@ export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
     id: "partner",
     label: "Vaste partner",
     userReply: "Langdurig samen",
-    meneerReply: "Eén lijn in plaats van losse partijen. Snap ik.",
-    focusPrompt: "Waar wil je hulp bij?",
+    meneerReply:
+      "Eén partner i.p.v. vijf bureaus die elkaar negeren. Slimme zet, eerlijk gezegd.",
+    focusPrompt: "Waar wil je het meest hulp bij?",
     cta: siteCtas.samenwerken,
     focusOptions: [
       {
         id: "ecom",
         label: "Webshop / e-commerce",
         userReply: "Webshop laten groeien",
-        meneerReply: "Shop, ads, retentie. Eén partner, één plan.",
+        meneerReply:
+          "Shop, ads, e-mail, retentie. Eén lijn. Geen 'dat is niet mijn afdeling' meer.",
         cta: siteCtas.samenwerken,
       },
       {
         id: "b2b",
         label: "B2B / lang traject",
         userReply: "B2B en lang traject",
-        meneerReply: "Portaal, SEO, acquisitie. Alles onder één dak.",
+        meneerReply:
+          "Portaal, SEO, acquisitie. Alles onder één dak. SkinComplete-style, maar dan voor jou.",
         cta: siteCtas.samenwerken,
       },
       {
         id: "explore",
         label: "Nog verkennen",
         userReply: "Nog aan het verkennen",
-        meneerReply: "Prima. Intake geeft al snel richting.",
+        meneerReply:
+          "Prima tempo. Intake duurt twee minuten. Geen verkooppraat, geen kleine lettertjes.",
         cta: siteCtas.startIntake,
       },
     ],
@@ -153,29 +166,32 @@ export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
     id: "talk",
     label: "Gewoon praten",
     userReply: "Even een vraag",
-    meneerReply: "Top. Hoe wil je het aanpakken?",
-    focusPrompt: "Wat past bij jou?",
+    meneerReply: "Top. Snel antwoord of uitgebreid gesprek? Jij beslist.",
+    focusPrompt: "Hoe pakken we het aan?",
     cta: siteCtas.contact,
     focusOptions: [
       {
         id: "chat",
         label: "Typen via contact",
         userReply: "Liever typen",
-        meneerReply: "Prima. Geen formulier-gevoel nodig.",
+        meneerReply:
+          "Typ maar. Geen formulier dat voelt als belastingaangifte. Ik lees alles zelf.",
         cta: siteCtas.contact,
       },
       {
         id: "call",
         label: "Even bellen",
         userReply: "Liever bellen",
-        meneerReply: "Kan. Contactpagina, dan plannen we het.",
+        meneerReply:
+          "Bel je liever? Plan het in via contact. Geen wachtmenu met drie keuzes die nergens op slaan.",
         cta: siteCtas.contact,
       },
       {
         id: "quick",
         label: "Snelle vraag",
         userReply: "Snelle vraag",
-        meneerReply: "Stuur maar. Ik lees alles zelf.",
+        meneerReply:
+          "Korte vraag? Stuur hem. Geen stagiair, geen chatbot. Ik antwoord zelf.",
         cta: siteCtas.contact,
       },
     ],

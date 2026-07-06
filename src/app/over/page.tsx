@@ -23,7 +23,7 @@ import { absoluteUrl } from "@/lib/site";
 const PAGE_PATH = "/over";
 const PAGE_TITLE = "Over Meneer Marketing. Strategie, bouw en campagnes onder één dak";
 const PAGE_DESCRIPTION =
-  "Afgestudeerd als applicatieontwikkelaar, meer dan tien jaar webdesign en marketing. Meneer Marketing helpt bedrijven groeien en meer omzet halen. Van strategie en websites from scratch tot SEO, Google Ads en Meta Ads.";
+  "Afgestudeerd als applicatieontwikkelaar, twaalf jaar webdesign en marketing. Meneer Marketing helpt bedrijven groeien door samen kanalen en platforms te kiezen. Van strategie en websites from scratch tot SEO, Google Ads en Meta Ads.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Over Meneer Marketing",
     description:
-      "Van applicatieontwikkelaar naar online groeipartner. Meer dan tien jaar ervaring, focus op omzet en resultaat.",
+      "Van applicatieontwikkelaar naar online groeipartner. Twaalf jaar ervaring, focus op omzet en resultaat.",
     url: absoluteUrl(PAGE_PATH),
     locale: "nl_NL",
     type: "website",

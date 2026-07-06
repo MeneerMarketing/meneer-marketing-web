@@ -1,0 +1,142 @@
+"use client";
+
+import Link from "next/link";
+import { ArrowUpRight, TrendingUp } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
+import { AboutMeneerJourneyList } from "@/components/home/AboutMeneerJourneyList";
+import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { HOME_ABOUT_MENEER } from "@/data/home-about-meneer";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+/** Desktop: persoonlijk Meneer-verhaal op de homepage. */
+export function HomeAboutMeneerSection() {
+  const reduce = useReducedMotion();
+
+  return (
+    <section
+      aria-labelledby="home-about-meneer-title"
+      className="relative overflow-x-clip border-b border-slate-200 bg-gradient-to-b from-white via-orange-50/30 to-white py-16 lg:py-20"
+    >
+      <div
+        className="pointer-events-none absolute inset-0 opacity-30"
+        aria-hidden
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,87,34,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,87,34,0.05) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start lg:gap-14">
+          <div>
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ duration: 0.45, ease: EASE }}
+            >
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+                {HOME_ABOUT_MENEER.eyebrow}
+              </p>
+              <h2
+                id="home-about-meneer-title"
+                className="mt-4 max-w-xl text-pretty text-3xl font-extrabold tracking-tight text-slate-900 lg:text-4xl lg:leading-[1.08]"
+              >
+                {HOME_ABOUT_MENEER.title}
+              </h2>
+              <p className="mt-4 max-w-lg text-pretty text-base leading-relaxed text-slate-600">
+                {HOME_ABOUT_MENEER.intro}
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-8%" }}
+              transition={{ delay: 0.06, duration: 0.45, ease: EASE }}
+              className="mt-8"
+            >
+              <AboutMeneerJourneyList steps={HOME_ABOUT_MENEER.journey} />
+            </motion.div>
+          </div>
+
+          <div className="space-y-5">
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-8%" }}
+              transition={{ delay: 0.08, duration: 0.45, ease: EASE }}
+              className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm"
+            >
+              <p className="text-lg font-extrabold tracking-tight text-slate-900">
+                {HOME_ABOUT_MENEER.collabTitle}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                {HOME_ABOUT_MENEER.collabBody}
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {HOME_ABOUT_MENEER.channelChoices.map((c) => (
+                  <li
+                    key={c.id}
+                    className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-bold text-slate-700"
+                  >
+                    {c.label}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm font-bold leading-snug text-slate-800">
+                Geen kanaal omdat het hip is. Wel omdat het bij jouw fase past.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={reduce ? false : { opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-8%" }}
+              transition={{ delay: 0.1, duration: 0.45, ease: EASE }}
+              className="relative overflow-hidden rounded-2xl bg-slate-950 p-5 text-white"
+            >
+              <div className="flex items-start gap-4">
+                <InteractiveLogo className="size-12 shrink-0" interactive={false} />
+                <div>
+                  <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#FF5722]">
+                    <TrendingUp className="size-4" aria-hidden />
+                    {HOME_ABOUT_MENEER.dopamine.label}
+                  </p>
+                  <p className="mt-2 text-pretty font-extrabold leading-snug">
+                    {HOME_ABOUT_MENEER.dopamine.body}
+                  </p>
+                  <p className="mt-2 text-sm text-white/55">{HOME_ABOUT_MENEER.dopamine.punchline}</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={reduce ? false : { opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.12, duration: 0.4 }}
+              className="flex flex-wrap items-center justify-between gap-4"
+            >
+              <p className="max-w-sm text-pretty text-sm font-bold leading-snug text-slate-800">
+                &ldquo;{HOME_ABOUT_MENEER.quote}&rdquo;
+              </p>
+              <Link
+                href={HOME_ABOUT_MENEER.ctaHref}
+                className="group inline-flex shrink-0 items-center gap-2 rounded-full border-2 border-slate-900 px-5 py-2.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+              >
+                {HOME_ABOUT_MENEER.ctaLabel}
+                <ArrowUpRight
+                  className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  aria-hidden
+                />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

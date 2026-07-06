@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
+import { CaseBrowserFrame } from "@/components/home/cases/CaseBrowserFrame";
 import { HOME_PROOF_CASES } from "@/data/home-cases";
 import { HOME_PROOF } from "@/data/home-premium";
 
-/** Eén sterke case op mobiel. Sneller vertrouwen, minder scroll. */
+/** Case met browser-frame illustratie op mobiel. */
 export function HomeMobileProof() {
   const reduce = useReducedMotion();
   const featured = HOME_PROOF_CASES[0]!;
@@ -14,7 +15,7 @@ export function HomeMobileProof() {
   return (
     <section
       aria-labelledby="mobile-proof-heading"
-      className="border-b border-slate-200 bg-slate-50 py-12"
+      className="overflow-x-clip border-b border-slate-200 bg-slate-50 py-12"
     >
       <div className="mx-auto max-w-6xl px-4">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#FF5722]">
@@ -28,34 +29,32 @@ export function HomeMobileProof() {
         </h2>
 
         <motion.article
-          initial={reduce ? false : { opacity: 0, y: 12 }}
+          initial={reduce ? false : { opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.35 }}
-          className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+          transition={{ duration: 0.4 }}
+          className="mt-6"
         >
-          <div
-            className="px-5 py-4"
-            style={{ backgroundColor: featured.palette.surface }}
-          >
-            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
-              {featured.eyebrow}
-            </p>
-            <p
-              className="mt-2 text-3xl font-black tabular-nums tracking-tighter"
-              style={{ color: featured.palette.accent }}
-            >
-              {featured.metric}
-            </p>
-            <p className="mt-1 text-xs font-semibold text-slate-500">
-              {featured.metricHint}
-            </p>
-          </div>
-          <div className="p-5">
-            <h3 className="text-lg font-extrabold text-slate-900">{featured.client}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600">
-              {featured.homeHook}
-            </p>
+          <Link href={featured.href} className="group block">
+            <CaseBrowserFrame caseItem={featured} />
+          </Link>
+
+          <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
+                  {featured.eyebrow}
+                </p>
+                <h3 className="mt-1 text-lg font-extrabold text-slate-900">{featured.client}</h3>
+              </div>
+              <p
+                className="shrink-0 text-2xl font-black tabular-nums tracking-tighter"
+                style={{ color: featured.palette.accent }}
+              >
+                {featured.metric}
+              </p>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">{featured.homeHook}</p>
             <div className="mt-3 flex flex-wrap gap-1.5">
               {featured.tags.slice(0, 3).map((tag) => (
                 <span
@@ -68,7 +67,7 @@ export function HomeMobileProof() {
             </div>
             <Link
               href={featured.href}
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-slate-900"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-slate-900 group-hover:text-[#FF5722]"
             >
               Case bekijken
               <ArrowUpRight className="size-3.5" aria-hidden />
