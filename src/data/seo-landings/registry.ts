@@ -1,4 +1,6 @@
 import type { SeoLandingPage } from "@/data/seo-landings/types";
+import type { EnrichedSeoLandingPage } from "@/data/seo-landings/enriched-types";
+import { enrichSeoLandingPage } from "@/lib/seo-landings-enrich";
 import { GOOGLE_ADS_BUREAU } from "@/data/seo-landings/pages/google-ads-bureau";
 import { GOOGLE_ADS_BEHEER } from "@/data/seo-landings/pages/google-ads-beheer";
 import { HOGER_IN_GOOGLE } from "@/data/seo-landings/pages/hoger-in-google";
@@ -155,8 +157,10 @@ export function getAllSeoLandingPages(): readonly SeoLandingPage[] {
   return SEO_LANDING_PAGES;
 }
 
-export function getSeoLandingBySlug(slug: string): SeoLandingPage | undefined {
-  return SEO_LANDING_PAGES.find((page) => page.slug === slug);
+export function getSeoLandingBySlug(slug: string): EnrichedSeoLandingPage | undefined {
+  const page = SEO_LANDING_PAGES.find((p) => p.slug === slug);
+  if (!page) return undefined;
+  return enrichSeoLandingPage(page);
 }
 
 export function getAllSeoLandingSlugs(): string[] {
