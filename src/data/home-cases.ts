@@ -134,8 +134,8 @@ export const HOME_CASES: HomeCase[] = [
     eyebrow: "Shopify · Full stack",
     title: "Custom Shopify-webshop met SEO, e-mail en ads",
     homeHook: "Custom Shopify from scratch in een markt met miljoenenbudgetten.",
-    metric: "Eigen",
-    metricHint: "koers per product, geen me-too",
+    metric: "Custom shop",
+    metricHint: "Shopify from scratch, SEO en ads",
     body: "In een markt met miljoenenbudgetten geen schreeuwen, wel een eigen webshop from scratch met vindbaarheid, e-mail en campagnes die bij elkaar passen.",
     challenge:
       "Grote spelers domineren met budget. Een standaard thema en losse marketing hielden BestRest niet scherp genoeg in de ruis.",
