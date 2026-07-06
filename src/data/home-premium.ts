@@ -91,10 +91,15 @@ export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
 ] as const;
 
 export const HOME_CTA = {
-  title: "Waar zit jouw groei? (Hint: niet in nog een losse campagne.)",
-  body: "We brengen je doelen, data en kanalen in kaart. Geen praatclub, geen deck van veertig slides. Wel een plan dat ik ook uitvoer, van site tot Google Ads en Meta.",
-  secondaryLead: "Liever typen dan bellen?",
-  secondaryLink: "Stuur een bericht",
+  eyebrow: "Afsluiter",
+  title: "Jouw bureau heeft een receptionist.",
+  titleAccent: "Ik heb de code.",
+  body: "Vertel waar het nu wringt. Geen warme-overdracht naar een stagiair die je verhaal half snapt. Ik bouw je site of shop, fix je vindbaarheid en zet je Google Ads en Meta aan. Eén aanspreekpunt dat ook echt de knoppen indrukt.",
+  buttonLabel: "Vertel me je verhaal",
+  secondaryLead: "Liever geen call?",
+  secondaryLink: "Mail me even",
+  secondarySuffix: "Ik antwoord zelf. Geen chatbot.",
+  scrollHint: "Afsluiter. Vertel je verhaal. Ik reageer zelf, snor en al.",
 } as const;
 
 export const HOME_CONTACT_CHAT = {
