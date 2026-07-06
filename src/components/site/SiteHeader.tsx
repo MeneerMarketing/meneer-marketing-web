@@ -46,7 +46,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`relative sticky top-0 z-50 border-b transition-[background-color,border-color] duration-200 ${
+      className={`relative sticky top-0 z-[60] border-b transition-[background-color,border-color] duration-200 ${
         scrolled || openMenu !== null || mobileOpen
           ? "border-mm-border/90 bg-white/90 backdrop-blur-md"
           : "border-transparent bg-mm-bg/70 backdrop-blur-sm"

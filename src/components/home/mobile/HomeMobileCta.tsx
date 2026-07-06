@@ -11,7 +11,11 @@ export function HomeMobileCta() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="border-t border-slate-800 bg-slate-950 py-14 pb-24">
+    <section
+      id="mobile-cta"
+      data-scroll-hint="Laatste stop. Plan een gesprek of mail. Ik bijt niet."
+      className="border-t border-slate-800 bg-slate-950 py-14 pb-24"
+    >
       <div className="mx-auto max-w-6xl px-4 text-center">
         <motion.div
           animate={reduce ? undefined : { y: [0, -5, 0] }}

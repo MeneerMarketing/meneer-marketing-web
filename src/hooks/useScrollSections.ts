@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { resolveScrollSectionHint } from "@/data/scroll-section-hints";
 
 export interface ScrollSection {
   id: string;
@@ -11,23 +12,13 @@ export interface ScrollSection {
 
 /** Waar in het viewport we de actieve sectie bepalen (iets onder de top). */
 const VIEWPORT_ANCHOR_RATIO = 0.22;
+/** Onderkant van de pagina: footer actief houden. */
+const NEAR_PAGE_END_PX = 64;
+/** Footer telt als actief zodra hij dit deel van het scherm vult. */
+const FOOTER_DOMINANCE_RATIO = 0.35;
 
 function getSectionLabel(el: HTMLElement): string {
-  const ariaLabel = el.getAttribute("aria-label");
-  if (ariaLabel?.trim()) return ariaLabel.trim();
-
-  const labelledBy = el.getAttribute("aria-labelledby");
-  if (labelledBy) {
-    const labelEl = document.getElementById(labelledBy);
-    const text = labelEl?.textContent?.trim();
-    if (text) return text.replace(/\s+/g, " ").slice(0, 72);
-  }
-
-  const heading = el.querySelector("h1, h2");
-  const headingText = heading?.textContent?.trim();
-  if (headingText) return headingText.replace(/\s+/g, " ").slice(0, 72);
-
-  return "";
+  return resolveScrollSectionHint(el);
 }
 
 function elementTop(el: HTMLElement): number {
@@ -65,6 +56,15 @@ function scanSections(): ScrollSection[] {
     if (!landmarks.includes(section)) landmarks.push(section);
   }
 
+  const footer = document.querySelector("footer");
+  if (
+    footer instanceof HTMLElement &&
+    footer.offsetHeight > 24 &&
+    !landmarks.includes(footer)
+  ) {
+    landmarks.push(footer);
+  }
+
   return landmarks
     .map((el, index) => ({
       id: el.id || `scroll-section-${index}`,
@@ -74,8 +74,31 @@ function scanSections(): ScrollSection[] {
     .filter((section) => section.label.length > 0);
 }
 
+function isNearPageEnd(): boolean {
+  const doc = document.documentElement;
+  return window.scrollY + window.innerHeight >= doc.scrollHeight - NEAR_PAGE_END_PX;
+}
+
+function isFooterDominant(footer: HTMLElement): boolean {
+  const rect = footer.getBoundingClientRect();
+  const vh = window.innerHeight;
+  if (rect.bottom <= 0 || rect.top >= vh) return false;
+  const visible = Math.min(rect.bottom, vh) - Math.max(rect.top, 0);
+  return visible >= vh * FOOTER_DOMINANCE_RATIO;
+}
+
 function resolveActiveIndex(sections: ScrollSection[]): number {
   if (sections.length === 0) return 0;
+
+  const footerIndex = sections.findIndex(
+    (section) => section.element.tagName === "FOOTER",
+  );
+  if (footerIndex >= 0) {
+    const footer = sections[footerIndex]!.element;
+    if (isNearPageEnd() || isFooterDominant(footer)) {
+      return footerIndex;
+    }
+  }
 
   const anchor = window.scrollY + window.innerHeight * VIEWPORT_ANCHOR_RATIO;
   let active = 0;

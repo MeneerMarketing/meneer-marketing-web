@@ -71,6 +71,7 @@ export const HOME_MOBILE_MYTH_SECTION: MobileMythSectionCopy = {
   meneerLabel: "Meneer zegt",
 };
 
+/** @deprecated Vervangen door HOME_MOBILE_CHAPTER_CAMPAGNES in editorial flow */
 export const HOME_MOBILE_BILLBOARD_SEO: MobileBillboard = {
   id: "seo-organic",
   lines: [
@@ -83,8 +84,29 @@ export const HOME_MOBILE_BILLBOARD_SEO: MobileBillboard = {
   stampIcon: "magnifier",
 };
 
-export const HOME_MOBILE_BILLBOARD_AI: MobileBillboard = {
+/** Copy voor interactief AI-billboard (mobiel). */
+export const HOME_MOBILE_AI_BILLBOARD = {
   id: "ai-search",
+  title: "ChatGPT kent je merk",
+  titleAccent: "nog niet.",
+  subtitle:
+    "Steeds meer klanten vragen ChatGPT, Gemini en andere AI om advies. Zo zou het klinken als jij wél vindbaar bent.",
+  swipeHint: "Swipe voor Gemini",
+  geminiModelLabel: "2.0 Flash",
+  liveStatus: "Iemand vraagt het nu al",
+  userQuestion:
+    "Welk marketingbureau raad je aan voor een groeiende webshop in Nederland?",
+  aiReplyLead:
+    "Op basis van reviews, cases en wat online te vinden is, val ik voor ",
+  aiReplyHighlight: "Meneer Marketing",
+  aiReplyTail:
+    ". Ze bouwen webshops from scratch, pakken SEO en AI-vindbaarheid aan en zetten ads pas aan als het converteert.",
+  footer: "Wil jij ook zo genoemd worden in ChatGPT, Gemini en andere AI? Dat regelen wij.",
+} as const;
+
+/** @deprecated Vervangen door HOME_MOBILE_AI_BILLBOARD + HomeMobileAiBillboard */
+export const HOME_MOBILE_BILLBOARD_AI: MobileBillboard = {
+  id: "ai-search-legacy",
   lines: [
     { segments: [{ text: "CHATGPT KENT JE MERK" }] },
     { segments: [{ text: "NOG NIET. " }, { text: "FIX DAT.", accent: true }] },
@@ -99,7 +121,7 @@ export const HOME_MOBILE_CHAPTER_BOUWEN: MobileChapter = {
   title: "Je site is je verkoper, geen digitaal visitekaartje.",
   body: "Custom Next.js of Shopify. Geen page builder die vastloopt zodra je gaat adverteren. Snel, technisch strak en gebouwd om te converteren.",
   hotTake:
-    "Templates zijn als een pak van de Hema. Past, maar niemand onthoudt je naam.",
+    "Gekochte templates en page builders zijn als een pak van de Hema. Past, maar niemand onthoudt je naam.",
   inlineProof:
     "SkinComplete: custom Shopify, B2B-portaal en e-mailmarketing from scratch.",
   href: "/bouwen",
@@ -110,15 +132,15 @@ export const HOME_MOBILE_CHAPTER_BOUWEN: MobileChapter = {
 
 export const HOME_MOBILE_CHAPTER_VINDBAARHEID: MobileChapter = {
   id: "vindbaarheid",
-  eyebrow: "SEO & AI-vindbaarheid",
-  title: "Google én AI. Jij hoort in het antwoord.",
-  body: "Landingspagina's die ranken. Autoriteit die ook in ChatGPT en Gemini verschijnt. Twee kanalen, één strategie. Organisch verkeer kost niks per klik.",
+  eyebrow: "Google SEO",
+  title: "12 jaar Google. Ik ken het spel.",
+  body: "AI-zoek hebben we net gehad. Hier draait het om Google: ranken, landingspagina's en autoriteit die blijft staan. Geen trucjes uit 2014. Wel vakmanschap dat ik al meer dan een decennium oefen.",
   hotTake:
-    "Ads stoppen als je budget stopt. Een pagina op positie 1 levert gewoon door. Gratis.",
+    "Google verandert constant. Ik ook. Daarom win je van concurrenten die SEO al drie jaar niet hebben bijgewerkt.",
   inlineProof:
     "SkinComplete domineerde organisch met landingspagina's op de vragen die salons echt stellen.",
   href: "/vindbaarheid",
-  linkLabel: "Meer over vindbaarheid",
+  linkLabel: "Meer over Google SEO",
   pillarId: "vindbaarheid",
   theme: "light",
   visual: "vindbaarheid-dual",
@@ -167,5 +189,23 @@ export const HOME_MOBILE_MYTHS: readonly MobileMyth[] = [
       "Sneller live, trager groeien. Custom build kost meer vooraf, maar adverteren wordt goedkoper.",
     href: "/bouwen",
     linkLabel: "Bouwen",
+  },
+  {
+    id: "ai-replaces-seo",
+    eyebrow: "LinkedIn hot take",
+    myth: "SEO is dood. Alleen AI-zoek telt nog",
+    meneer:
+      "AI-zoek is erbij. Geen vervanging. Wie SEO laat liggen en alleen ChatGPT optimaliseert, bouwt op zand.",
+    href: "/vindbaarheid",
+    linkLabel: "Vindbaarheid",
+  },
+  {
+    id: "daily-posts",
+    eyebrow: "Influencer advies",
+    myth: "Post elke dag en het groeit vanzelf",
+    meneer:
+      "Dertig posts zonder plan is drukte. Eén landingspagina die rankt verslaat een maand scroll-content die niemand bewaart.",
+    href: "/vindbaarheid",
+    linkLabel: "SEO & content",
   },
 ];

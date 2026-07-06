@@ -47,7 +47,7 @@ export function HeroSection() {
             </span>
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 lg:mt-10 lg:flex-row lg:flex-wrap lg:items-center lg:gap-4">
+          <div className="mt-8 flex flex-col-reverse gap-3 lg:mt-10 lg:flex-row lg:flex-wrap lg:items-center lg:gap-4">
             <LiquidCTA
               href={siteCtas.startIntake.href}
               label="Plan een gesprek"

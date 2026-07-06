@@ -7,7 +7,11 @@ import { siteCtas } from "@/lib/cta";
 
 export function HomeCtaSection() {
   return (
-    <section className="relative overflow-hidden border-t border-slate-800 bg-slate-950">
+    <section
+      id="home-cta"
+      data-scroll-hint="Afsluiter. Waar zit jouw groei? Vertel het, ik reageer zelf."
+      className="relative overflow-hidden border-t border-slate-800 bg-slate-950"
+    >
       <div
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,87,34,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,87,34,0.04)_1px,transparent_1px)] bg-[size:32px_32px]"
         aria-hidden

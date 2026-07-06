@@ -9,23 +9,22 @@ export interface BouwenTool {
 
 export const HOME_MOBILE_BOUWEN_INTRO = {
   eyebrow: "Bouwen from scratch",
-  title: "Meneer bouwt wat er maar kan.",
-  titleAccent: "Geen grenzen.",
-  lead: "Shopify, Next.js, portals, apps, mails. Ik schrijf het zelf. SEO-proof, ad-ready en gebouwd om te verkopen.",
+  title: "Vertel wat je wilt.",
+  titleAccent: "Ik bouw het.",
+  lead:
+    "Geen templates, geen page builders. Jij beschrijft het idee, ik schrijf de code. Webshop, website from scratch, app, landingspagina of boekingssysteem: als het online moet draaien, regelen we het.",
 } as const;
 
-/** Vertellend: hoe Meneer bouwt voor vindbaarheid, ads en resultaat */
+/** Vertellend: één intro, geen opsomming */
 export const HOME_MOBILE_BOUWEN_STORY = [
-  "Eerst iets dat Google snapt. SEO zit in de code, niet in een plugin die je later erop plakt.",
-  "Dan pagina's waar je ads naartoe kunnen. Snel, strak, geen bouncegolf na de eerste klik.",
-  "Daarna mail, portal of app erachter. Alles praat met elkaar. Jij hoeft niet te puzzelen.",
-  "Bedenk maar wat. Theme, B2B-portaal, boekingsapp, landingspagina. Ik kijk of het kan. Meestal wel.",
+  "Sommige bureaus verkopen een standaardpakket. Ik niet. Jij vertelt waar je naartoe wilt, ik kijk wat past en bouw het from scratch. Concreet of vaag, maakt niet uit.",
+  "Webshop op Shopify? Custom site? B2B-portaal, boekingsflow, landingspagina voor je ads? Allemaal gedaan. Ooit zelfs een game gebouwd. Geen AAA-blockbuster, wel het bewijs dat 'kan niet' zelden een technisch probleem is.",
 ] as const;
 
 export const HOME_MOBILE_BOUWEN_CAN_BUILD = [
   "Shopify theme",
   "B2B-portaal",
-  "Next.js site",
+  "Website from scratch",
   "Web-app",
   "E-mail flows",
   "Landingspagina's",
@@ -41,7 +40,7 @@ export const HOME_MOBILE_BOUWEN_TOOLS: readonly BouwenTool[] = [
   },
   {
     id: "nextjs",
-    label: "Next.js",
+    label: "From scratch",
     hint: "Sites & apps",
     caseId: "hills-pilates",
   },
@@ -57,7 +56,7 @@ export const HOME_MOBILE_BOUWEN_CASE_LABELS: Record<BouwenCaseId, readonly strin
 };
 
 export const HOME_MOBILE_BOUWEN_HOT_TAKE =
-  "Templates zijn als een pak van de Hema. Past, maar niemand onthoudt je naam.";
+  "Gekochte templates en page builders zijn als een pak van de Hema. Past, maar niemand onthoudt je naam.";
 
 /** @deprecated use BouwenToolId */
 export type BouwenStackId = BouwenToolId;

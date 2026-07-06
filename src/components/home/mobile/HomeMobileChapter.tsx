@@ -154,19 +154,6 @@ export function HomeMobileChapter({ chapter }: HomeMobileChapterProps) {
           </div>
         </motion.div>
 
-        {chapter.inlineProof ? (
-          <motion.p
-            initial={reduce ? false : { opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.4 }}
-            className={`mt-4 text-xs leading-relaxed ${t.proof}`}
-          >
-            <span className="font-bold text-inherit opacity-80">In de praktijk: </span>
-            {chapter.inlineProof}
-          </motion.p>
-        ) : null}
-
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}

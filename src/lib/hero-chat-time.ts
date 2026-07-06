@@ -23,27 +23,27 @@ export const HERO_CHAT_INTRO_BY_TIME: Record<
 > = {
   night: [
     "Hoi. Het is midden in de nacht en jij zit op een marketing-site. Ik zeg niks.",
-    "Wat ben je stiekem aan het plannen? Goed teken. Waar ben je voor? Klik iets.",
+    "Stiekem al plannen terwijl iedereen slaapt? Goed teken. Kies hieronder waar je mee bezig bent.",
   ],
   morning: [
     "Hoi. Vroege vogel. Koffie nog niet klaar, maar ik ben wel online.",
-    "Twaalf jaar web & marketing. Jij groeit, ik ben blij. Waar ben je voor? Klik.",
+    "Twaalf jaar web en marketing. Jij groeit, ik ben blij. Tik hieronder wat je zoekt.",
   ],
   midday: [
     "Hoi. Tussen twee meetings door even hier. Productief.",
-    "Applicatie-dev werd marketeer. Nu help ik bedrijven online groeien. Waar ben je voor?",
+    "Applicatie-dev werd marketeer. Nu help ik bedrijven online groeien. Waar kom je voor?",
   ],
   afternoon: [
     "Hoi. Nog één tabblad open voor het weekend. Herkenbaar.",
-    "Geen bureau-praat. Wel iemand die meet wat werkt. Waar ben je voor? Klik.",
+    "Geen bureau-praat. Wel iemand die meet wat werkt. Kies hieronder wat past.",
   ],
   evening: [
     "Hoi. Na werktijd nog aan je bedrijf denken. Dat soort mensen help ik graag.",
-    "Samen kiezen wat past: site, SEO, ads. Waar ben je voor? Klik iets.",
+    "Samen kiezen wat past: site, SEO, ads. Tik hieronder waar je mee bezig bent.",
   ],
   late: [
     "Hoi. Late avond, grote plannen? Herken ik.",
-    "Morgen pakken we het op. Nu alvast kiezen waar je voor bent? Klik iets.",
+    "Morgen pakken we het op. Nu alvast kiezen? Tik hieronder wat het dichtstbij zit.",
   ],
 };
 

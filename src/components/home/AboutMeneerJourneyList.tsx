@@ -1,115 +1,69 @@
 "use client";
 
-import { Code2, Rocket, type LucideIcon } from "lucide-react";
-import { motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion, useInView, useReducedMotion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import type { AboutMeneerJourneyStep } from "@/data/home-about-meneer";
-import { LiveBroadcastMark } from "@/components/icons/LiveBroadcastMark";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
+const BUBBLE_TAIL =
+  "pointer-events-none absolute -bottom-[6px] left-5 size-3 rotate-45 border-b border-r border-slate-800 bg-slate-900";
+const LOGO_OFFSET = "pl-[2.75rem]";
+const MESSAGE_GAP_MS = 720;
+const TYPING_MS = 520;
 
-interface StepVisual {
-  Icon?: LucideIcon;
-  CustomIcon?: React.ComponentType<{ className?: string }>;
-  markerClass: string;
-  iconClass: string;
-  cardClass: string;
-  tilt: number;
-  pulse?: boolean;
+function formatEra(step: AboutMeneerJourneyStep): string {
+  return step.eraSub ? `${step.era} ${step.eraSub}` : step.era;
 }
 
-const STEP_VISUALS: Record<string, StepVisual> = {
-  dev: {
-    Icon: Code2,
-    markerClass:
-      "bg-gradient-to-br from-sky-100 to-sky-50 ring-2 ring-sky-200/90 shadow-[0_8px_20px_-10px_rgba(14,165,233,0.55)]",
-    iconClass: "text-sky-600",
-    cardClass: "border-sky-100/90 bg-gradient-to-r from-sky-50/80 to-white",
-    tilt: -1.5,
-  },
-  years: {
-    Icon: Rocket,
-    markerClass:
-      "bg-gradient-to-br from-[#FF5722] to-orange-500 shadow-[0_10px_24px_-8px_rgba(255,87,34,0.55)] ring-2 ring-orange-300/50",
-    iconClass: "text-white",
-    cardClass: "border-orange-100/90 bg-gradient-to-r from-orange-50/90 to-white",
-    tilt: 1.2,
-  },
-  now: {
-    CustomIcon: LiveBroadcastMark,
-    markerClass:
-      "bg-gradient-to-br from-emerald-100 to-emerald-50 ring-2 ring-emerald-200/90 shadow-[0_8px_20px_-10px_rgba(16,185,129,0.45)]",
-    iconClass: "text-emerald-600",
-    cardClass: "border-emerald-100/90 bg-gradient-to-r from-emerald-50/70 to-white",
-    tilt: -0.8,
-    pulse: true,
-  },
-};
-
-function JourneyMarker({
-  step,
-  visual,
-  isLast,
-}: {
-  step: AboutMeneerJourneyStep;
-  visual: StepVisual;
-  isLast: boolean;
-}) {
-  const { Icon, CustomIcon, markerClass, iconClass, pulse } = visual;
-  const isYears = step.id === "years";
-
+function JourneyTypingIndicator() {
   return (
-    <div className="relative flex flex-col items-center">
-      <motion.span
-        whileHover={{ scale: 1.06, rotate: visual.tilt * 1.4 }}
-        transition={{ type: "spring", stiffness: 420, damping: 18 }}
-        className={`relative flex size-12 shrink-0 items-center justify-center rounded-2xl ${markerClass}`}
-        aria-hidden
-      >
-        {isYears ? (
-          <>
-            <Rocket
-              className="absolute -right-1 -top-1 size-3.5 text-white/90"
-              strokeWidth={2.5}
-              aria-hidden
-            />
-            <span className="flex flex-col items-center text-white">
-            <span className="font-black leading-none tracking-tight [font-size:17px]">
-              {step.era}
-            </span>
-            {step.eraSub ? (
-              <span className="mt-0.5 font-bold uppercase leading-none tracking-[0.16em] opacity-90 [font-size:7px]">
-                {step.eraSub}
-              </span>
-            ) : null}
-          </span>
-          </>
-        ) : (
-          <>
-            {CustomIcon ? (
-              <CustomIcon className={`size-5 ${iconClass}`} />
-            ) : Icon ? (
-              <Icon className={`size-5 ${iconClass}`} strokeWidth={2.4} aria-hidden />
-            ) : null}
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white px-2 py-0.5 font-black uppercase leading-none tracking-[0.12em] text-slate-600 shadow-sm ring-1 ring-slate-200/90 [font-size:8px]">
-              {step.era}
-            </span>
-          </>
-        )}
-        {pulse ? (
-          <span className="absolute -right-0.5 -top-0.5 flex size-3">
-            <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-            <span className="relative inline-flex size-3 rounded-full bg-emerald-500 ring-2 ring-white" />
-          </span>
-        ) : null}
-      </motion.span>
+    <div className={`flex items-end gap-2.5 ${LOGO_OFFSET}`} aria-hidden>
+      <span className="inline-flex gap-1 rounded-2xl rounded-bl-sm bg-slate-900 px-4 py-3 shadow-[0_8px_24px_-12px_rgba(15,23,42,0.35)]">
+        {[0, 1, 2].map((i) => (
+          <motion.span
+            key={i}
+            className="size-1.5 rounded-full bg-[#FF5722]/80"
+            animate={{ opacity: [0.3, 1, 0.3], y: [0, -2, 0] }}
+            transition={{ duration: 0.85, repeat: Infinity, delay: i * 0.14 }}
+          />
+        ))}
+      </span>
+    </div>
+  );
+}
 
-      {!isLast ? (
+interface JourneyChatBubbleProps {
+  step: AboutMeneerJourneyStep;
+  isLast: boolean;
+  showTargetOnLast: boolean;
+}
+
+function JourneyChatBubble({ step, isLast, showTargetOnLast }: JourneyChatBubbleProps) {
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 12, scale: 0.96 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ type: "spring", stiffness: 360, damping: 26 }}
+      className={`relative max-w-[min(100%,20rem)] rounded-2xl rounded-bl-sm bg-slate-900 px-4 py-3 text-white shadow-[0_12px_32px_-14px_rgba(15,23,42,0.45)] ${
+        isLast ? "ring-1 ring-[#FF5722]/25" : ""
+      }`}
+    >
+      <span className={BUBBLE_TAIL} aria-hidden />
+      <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
+        {formatEra(step)}
+      </p>
+      <p className="mt-1.5 text-pretty text-sm font-semibold leading-snug text-white/95">
+        {step.detail}
+      </p>
+      <p className="mt-1.5 text-[11px] font-medium text-white/40">{step.title}</p>
+      {showTargetOnLast && isLast ? (
         <span
-          className="my-1.5 min-h-[1.25rem] w-px flex-1 bg-gradient-to-b from-[#FF5722]/50 via-[#FF5722]/25 to-transparent"
+          className="absolute right-3 top-3 size-2 rounded-full bg-[#FF5722] shadow-[0_0_10px_rgba(255,87,34,0.55)]"
           aria-hidden
         />
       ) : null}
-    </div>
+    </motion.article>
   );
 }
 
@@ -118,58 +72,107 @@ interface AboutMeneerJourneyListProps {
   showTargetOnLast?: boolean;
 }
 
-/** Speelse journey-timeline met iconen, kleur en lichte tilt. */
+/** Meneer vertelt zijn route als chatberichten, één voor één. */
 export function AboutMeneerJourneyList({
   steps,
   showTargetOnLast = false,
 }: AboutMeneerJourneyListProps) {
   const reduce = useReducedMotion();
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef, { once: true, margin: "-12%" });
+  const [visibleCount, setVisibleCount] = useState(reduce ? steps.length : 0);
+  const [isTyping, setIsTyping] = useState(false);
+
+  useEffect(() => {
+    if (reduce) {
+      setVisibleCount(steps.length);
+      setIsTyping(false);
+      return;
+    }
+
+    if (!isInView) return;
+
+    let cancelled = false;
+    const timeouts: ReturnType<typeof setTimeout>[] = [];
+
+    function schedule(fn: () => void, ms: number) {
+      timeouts.push(setTimeout(fn, ms));
+    }
+
+    setVisibleCount(0);
+    setIsTyping(false);
+
+    schedule(() => {
+      if (cancelled) return;
+      setVisibleCount(1);
+    }, 280);
+
+    for (let i = 1; i < steps.length; i++) {
+      const typingAt = 280 + i * MESSAGE_GAP_MS - TYPING_MS;
+      const showAt = 280 + i * MESSAGE_GAP_MS;
+
+      schedule(() => {
+        if (cancelled) return;
+        setIsTyping(true);
+      }, typingAt);
+
+      schedule(() => {
+        if (cancelled) return;
+        setIsTyping(false);
+        setVisibleCount(i + 1);
+      }, showAt);
+    }
+
+    return () => {
+      cancelled = true;
+      timeouts.forEach(clearTimeout);
+    };
+  }, [isInView, reduce, steps.length]);
+
+  const visibleSteps = steps.slice(0, visibleCount);
 
   return (
-    <ul className="space-y-0">
-      {steps.map((step, i) => {
-        const visual = STEP_VISUALS[step.id] ?? STEP_VISUALS.dev!;
+    <div ref={containerRef} className="space-y-3" role="list" aria-live="polite">
+      {visibleSteps.map((step, i) => {
+        const isFirst = i === 0;
         const isLast = i === steps.length - 1;
 
         return (
-          <motion.li
+          <div
             key={step.id}
-            initial={reduce ? false : { opacity: 0, x: -12 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-8%" }}
-            transition={{ delay: i * 0.07, duration: 0.4, ease: EASE }}
-            className="flex gap-3"
+            role="listitem"
+            className={`flex items-end gap-2.5 ${isFirst ? "" : LOGO_OFFSET}`}
           >
-            <JourneyMarker step={step} visual={visual} isLast={isLast} />
-
-            <motion.article
-              whileHover={reduce ? undefined : { y: -2, rotate: 0 }}
-              style={{ rotate: reduce ? 0 : visual.tilt }}
-              className={`mb-3 min-w-0 flex-1 rounded-2xl border px-4 py-3.5 shadow-sm transition-shadow duration-300 hover:shadow-md ${visual.cardClass}`}
-            >
-              <div className="flex items-start justify-between gap-2">
-                <div className="min-w-0">
-                  <p className="text-sm font-extrabold leading-tight tracking-tight text-slate-900">
-                    {step.title}
-                  </p>
-                  <p className="mt-1 text-[13px] leading-snug text-slate-500">{step.detail}</p>
-                </div>
-                {showTargetOnLast && isLast ? (
-                  <span
-                    className="mt-1 size-2.5 shrink-0 rounded-full bg-[#FF5722] shadow-[0_0_12px_rgba(255,87,34,0.6)]"
-                    aria-hidden
-                  />
-                ) : null}
-              </div>
-            </motion.article>
-          </motion.li>
+            {isFirst ? (
+              <InteractiveLogo className="size-9 shrink-0" interactive={false} />
+            ) : null}
+            <JourneyChatBubble
+              step={step}
+              isLast={isLast}
+              showTargetOnLast={showTargetOnLast}
+            />
+          </div>
         );
       })}
-    </ul>
+
+      <AnimatePresence>
+        {isTyping && !reduce ? (
+          <motion.div
+            key="typing"
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.2, ease: EASE }}
+          >
+            <JourneyTypingIndicator />
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
+    </div>
   );
 }
 
-/** @deprecated Gebruik AboutMeneerJourneyList — badge zit nu in de timeline-marker. */
+/** @deprecated Gebruik AboutMeneerJourneyList. */
 export function AboutMeneerJourneyBadge({
   era,
   eraSub,

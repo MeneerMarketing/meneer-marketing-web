@@ -1,12 +1,13 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { HOME_CASES } from "@/data/home-cases";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { CASES_PAGE_IMPACT } from "@/data/cases-page";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-/** Donkere impact-strip met metrics per case. */
+/** Donkere strip: over Meneer + werkwijze (niet per case). */
 export function CasesImpactStrip() {
   const reduce = useReducedMotion();
 
@@ -44,35 +45,39 @@ export function CasesImpactStrip() {
         </p>
 
         <ul className="mt-10 grid gap-4 sm:grid-cols-3">
-          {HOME_CASES.map((c, i) => (
+          {CASES_PAGE_IMPACT.items.map((item, i) => (
             <motion.li
-              key={c.id}
+              key={item.id}
               initial={reduce ? false : { opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-8%" }}
               transition={{ delay: i * 0.08, duration: 0.45, ease: EASE }}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition hover:border-white/20 hover:bg-white/[0.07]"
             >
-              <div
-                className="absolute -right-6 -top-6 size-24 rounded-full opacity-20 blur-2xl transition group-hover:opacity-35"
-                style={{ backgroundColor: c.palette.accent }}
-                aria-hidden
-              />
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
-                {c.client}
-              </p>
-              <p
-                className="mt-2 text-4xl font-black tracking-tight sm:text-[2.75rem]"
-                style={{ color: c.palette.accent }}
+              <Link
+                href={item.href}
+                className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition hover:border-[#FF5722]/35 hover:bg-white/[0.07]"
               >
-                {c.metric}
-              </p>
-              <p className="mt-2 text-pretty text-sm font-bold leading-snug text-slate-300">
-                {c.metricHint}
-              </p>
-              <p className="mt-3 text-pretty text-xs leading-relaxed text-slate-500">
-                {c.homeHook}
-              </p>
+                <div
+                  className="absolute -right-6 -top-6 size-24 rounded-full bg-[#FF5722]/20 opacity-20 blur-2xl transition group-hover:opacity-40"
+                  aria-hidden
+                />
+                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
+                  {item.label}
+                </p>
+                <p className="mt-2 text-4xl font-black tracking-tight text-[#FF5722] sm:text-[2.75rem]">
+                  {item.stat}
+                </p>
+                <p className="mt-2 text-pretty text-sm font-bold leading-snug text-slate-300">
+                  {item.headline}
+                </p>
+                <p className="mt-3 flex-1 text-pretty text-xs leading-relaxed text-slate-500">
+                  {item.body}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-[#FF5722] transition group-hover:gap-1.5">
+                  {item.linkLabel}
+                  <ArrowUpRight className="size-3.5" aria-hidden />
+                </span>
+              </Link>
             </motion.li>
           ))}
         </ul>

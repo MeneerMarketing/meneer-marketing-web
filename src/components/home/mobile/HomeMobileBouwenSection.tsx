@@ -85,29 +85,25 @@ export function HomeMobileBouwenSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-8%" }}
           transition={{ delay: 0.1, duration: 0.45, ease: EASE }}
-          className="mt-8 space-y-2.5"
+          className="mt-8 flex gap-2.5"
         >
-          {HOME_MOBILE_BOUWEN_STORY.map((line, i) => (
-            <motion.div
-              key={line}
-              initial={reduce ? false : { opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-5%" }}
-              transition={{ delay: 0.04 * i, duration: 0.35, ease: EASE }}
-              className={`flex gap-2.5 ${i === 0 ? "" : "pl-6"}`}
-            >
-              {i === 0 ? (
-                <InteractiveLogo className="mt-0.5 size-7 shrink-0" interactive={false} />
-              ) : null}
-              <p
-                className={`text-pretty text-sm font-bold leading-snug tracking-tight ${
-                  i === 0 ? "text-white" : "text-slate-300"
+          <InteractiveLogo className="mt-0.5 size-7 shrink-0" interactive={false} />
+          <div className="min-w-0 space-y-3">
+            {HOME_MOBILE_BOUWEN_STORY.map((line, i) => (
+              <motion.p
+                key={line}
+                initial={reduce ? false : { opacity: 0, y: 8 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-5%" }}
+                transition={{ delay: 0.04 * i, duration: 0.35, ease: EASE }}
+                className={`text-pretty text-sm leading-relaxed tracking-tight ${
+                  i === 0 ? "font-bold text-white" : "text-slate-300"
                 }`}
               >
                 {line}
-              </p>
-            </motion.div>
-          ))}
+              </motion.p>
+            ))}
+          </div>
         </motion.div>
 
         {/* Wat ik kan bouwen */}

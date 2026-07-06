@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Lock } from "lucide-react";
+import { Lock } from "lucide-react";
 import {
-  AnimatePresence,
   motion,
   useInView,
   useReducedMotion,
@@ -33,7 +32,7 @@ interface HomeMobileBouwenCaseVisualProps {
 
 function CaseBrowser({ caseItem }: { caseItem: HomeCase }) {
   const reduce = useReducedMotion();
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLAnchorElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-12%" });
 
   const { previewVideo, previewPoster, previewImage, previewObjectPosition, website, palette } =
@@ -42,14 +41,19 @@ function CaseBrowser({ caseItem }: { caseItem: HomeCase }) {
   const videoAutoplay = Boolean(previewVideo) && !reduce && isInView;
 
   return (
-    <div ref={ref} className="relative w-full min-w-0">
+    <Link
+      ref={ref}
+      href={caseItem.href}
+      aria-label={`Case ${caseItem.client} bekijken`}
+      className="group relative block w-full min-w-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF5722]"
+    >
       <div
-        className="pointer-events-none absolute -inset-6 rounded-[2rem] opacity-50 blur-3xl"
+        className="pointer-events-none absolute -inset-6 rounded-[2rem] opacity-50 blur-3xl transition-opacity duration-300 group-hover:opacity-70"
         style={{ backgroundColor: `${palette.accent}44` }}
         aria-hidden
       />
 
-      <div className="relative overflow-hidden rounded-[1.35rem] border border-white/12 bg-[#14111a] shadow-[0_28px_70px_-32px_rgba(0,0,0,0.75)]">
+      <div className="relative overflow-hidden rounded-[1.35rem] border border-white/12 bg-[#14111a] shadow-[0_28px_70px_-32px_rgba(0,0,0,0.75)] transition-[border-color,transform] duration-300 group-hover:border-[#FF5722]/35 group-active:scale-[0.99]">
         <div className="flex items-center gap-2 border-b border-white/[0.08] bg-white/[0.03] px-3 py-2.5">
           <span className="size-2 shrink-0 rounded-full bg-[#FF5F57]" aria-hidden />
           <span className="size-2 shrink-0 rounded-full bg-[#FEBC2E]" aria-hidden />
@@ -123,7 +127,7 @@ function CaseBrowser({ caseItem }: { caseItem: HomeCase }) {
           </ul>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -135,7 +139,6 @@ export function HomeMobileBouwenCaseVisual({
   const reduce = useReducedMotion();
   const listRef = useRef<HTMLUListElement>(null);
   const [active, setActive] = useState(0);
-  const activeCase = BOUEN_CASES[active] ?? BOUEN_CASES[0]!;
 
   const scrollToIndex = useCallback(
     (index: number) => {
@@ -214,27 +217,6 @@ export function HomeMobileBouwenCaseVisual({
           ))}
         </div>
       </div>
-
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activeCase.id}
-          initial={{ opacity: 0, y: 4 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -4 }}
-          transition={{ duration: 0.22, ease: EASE }}
-        >
-          <Link
-            href={activeCase.href}
-            className="group mt-3 inline-flex items-center gap-1.5 text-[11px] font-extrabold tracking-tight text-[#FF5722]"
-          >
-            Bekijk {activeCase.client}
-            <ArrowUpRight
-              className="size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              aria-hidden
-            />
-          </Link>
-        </motion.div>
-      </AnimatePresence>
     </div>
   );
 }

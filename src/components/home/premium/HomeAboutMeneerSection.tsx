@@ -1,17 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUpRight, TrendingUp } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import { AboutMeneerJourneyList } from "@/components/home/AboutMeneerJourneyList";
-import { InteractiveLogo } from "@/components/site/InteractiveLogo";
-import { HOME_ABOUT_MENEER } from "@/data/home-about-meneer";
+import { useState } from "react";
+import { AboutMeneerStrategyChat } from "@/components/home/AboutMeneerStrategyChat";
+import { AboutMeneerStrategyOutcome } from "@/components/home/AboutMeneerStrategyOutcome";
+import {
+  HOME_ABOUT_MENEER,
+  HOME_ABOUT_MENEER_STRATEGY_CHAT,
+} from "@/data/home-about-meneer";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 /** Desktop: persoonlijk Meneer-verhaal op de homepage. */
 export function HomeAboutMeneerSection() {
   const reduce = useReducedMotion();
+  const [strategyReady, setStrategyReady] = useState(reduce);
 
   return (
     <section
@@ -58,7 +63,13 @@ export function HomeAboutMeneerSection() {
               transition={{ delay: 0.06, duration: 0.45, ease: EASE }}
               className="mt-8"
             >
-              <AboutMeneerJourneyList steps={HOME_ABOUT_MENEER.journey} />
+              <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
+                Zo klinkt zo&apos;n gesprek
+              </p>
+              <AboutMeneerStrategyChat
+                messages={HOME_ABOUT_MENEER_STRATEGY_CHAT}
+                onComplete={() => setStrategyReady(true)}
+              />
             </motion.div>
           </div>
 
@@ -76,41 +87,23 @@ export function HomeAboutMeneerSection() {
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {HOME_ABOUT_MENEER.collabBody}
               </p>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {HOME_ABOUT_MENEER.channelChoices.map((c) => (
-                  <li
-                    key={c.id}
-                    className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-bold text-slate-700"
-                  >
-                    {c.label}
-                  </li>
-                ))}
-              </ul>
               <p className="mt-4 text-sm font-bold leading-snug text-slate-800">
                 Geen kanaal omdat het hip is. Wel omdat het bij jouw fase past.
               </p>
             </motion.div>
 
+            <AboutMeneerStrategyOutcome visible={strategyReady} />
+
             <motion.div
-              initial={reduce ? false : { opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-8%" }}
-              transition={{ delay: 0.1, duration: 0.45, ease: EASE }}
-              className="relative overflow-hidden rounded-2xl bg-slate-950 p-5 text-white"
+              initial={reduce ? false : { opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.4 }}
+              className="rounded-2xl border border-slate-200/90 bg-white px-4 py-3"
             >
-              <div className="flex items-start gap-4">
-                <InteractiveLogo className="size-12 shrink-0" interactive={false} />
-                <div>
-                  <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#FF5722]">
-                    <TrendingUp className="size-4" aria-hidden />
-                    {HOME_ABOUT_MENEER.dopamine.label}
-                  </p>
-                  <p className="mt-2 text-pretty font-extrabold leading-snug">
-                    {HOME_ABOUT_MENEER.dopamine.body}
-                  </p>
-                  <p className="mt-2 text-sm text-white/55">{HOME_ABOUT_MENEER.dopamine.punchline}</p>
-                </div>
-              </div>
+              <p className="text-pretty text-sm font-bold leading-snug text-slate-800">
+                &ldquo;{HOME_ABOUT_MENEER.quote}&rdquo;
+              </p>
             </motion.div>
 
             <motion.div
@@ -118,11 +111,8 @@ export function HomeAboutMeneerSection() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.12, duration: 0.4 }}
-              className="flex flex-wrap items-center justify-between gap-4"
+              className="flex flex-wrap items-center justify-end gap-4"
             >
-              <p className="max-w-sm text-pretty text-sm font-bold leading-snug text-slate-800">
-                &ldquo;{HOME_ABOUT_MENEER.quote}&rdquo;
-              </p>
               <Link
                 href={HOME_ABOUT_MENEER.ctaHref}
                 className="group inline-flex shrink-0 items-center gap-2 rounded-full border-2 border-slate-900 px-5 py-2.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"

@@ -10,9 +10,14 @@ import {
   useTransform,
   useVelocity,
 } from "framer-motion";
+import { MessageSquareText, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { useScrollSections } from "@/hooks/useScrollSections";
+import {
+  readScrollHintsEnabled,
+  writeScrollHintsEnabled,
+} from "@/lib/scroll-hints-preference";
 
 /** Hoogte (px) van het mascotte-hoofd op de rail */
 const HEAD_SIZE_MOBILE = 30;
@@ -35,6 +40,8 @@ export function ScrollMeneer() {
   const [scrollable, setScrollable] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [showBubbles, setShowBubbles] = useState(false);
+  const [hintsEnabled, setHintsEnabled] = useState(true);
+  const [hintsReady, setHintsReady] = useState(false);
   const [progressPercent, setProgressPercent] = useState(0);
 
   const { scrollYProgress } = useScroll();
@@ -52,7 +59,17 @@ export function ScrollMeneer() {
   const tiltTarget = useTransform(velocity, [-1.6, 0, 1.6], [-16, 0, 16]);
   const tilt = useSpring(tiltTarget, { stiffness: 220, damping: 16 });
 
-  const { activeSection } = useScrollSections(showBubbles);
+  const { activeSection } = useScrollSections(showBubbles && hintsEnabled && hintsReady);
+
+  const dismissHints = useCallback(() => {
+    setHintsEnabled(false);
+    writeScrollHintsEnabled(false);
+  }, []);
+
+  const restoreHints = useCallback(() => {
+    setHintsEnabled(true);
+    writeScrollHintsEnabled(true);
+  }, []);
 
   useMotionValueEvent(progress, "change", (v) => {
     setProgressPercent(Math.round(v * 100));
@@ -114,6 +131,11 @@ export function ScrollMeneer() {
     update();
     mq.addEventListener("change", update);
     return () => mq.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    setHintsEnabled(readScrollHintsEnabled());
+    setHintsReady(true);
   }, []);
 
   useEffect(() => {
@@ -256,20 +278,32 @@ export function ScrollMeneer() {
           <InteractiveLogo className="h-full w-full pointer-events-none" />
 
           <AnimatePresence mode="wait">
-            {showBubbles && sectionLabel && !isDragging ? (
+            {showBubbles && hintsEnabled && sectionLabel && !isDragging ? (
               <motion.div
                 key={sectionLabel}
                 initial={{ opacity: 0, x: 6, scale: 0.94 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 exit={{ opacity: 0, x: 4, scale: 0.96 }}
                 transition={{ duration: 0.12, ease: [0.22, 1, 0.36, 1] }}
-                className="pointer-events-none absolute right-full top-1/2 z-20 mr-1.5 hidden w-max min-w-[10rem] max-w-[min(18rem,calc(100vw-4rem))] -translate-y-1/2 lg:block"
+                className="absolute right-full top-1/2 z-20 mr-1.5 hidden w-max min-w-[10rem] max-w-[min(16rem,calc(100vw-5rem))] -translate-y-1/2 lg:block"
               >
-                <div className="relative rounded-2xl border border-slate-200/90 bg-white px-3.5 py-2 shadow-[0_12px_32px_-12px_rgba(15,23,42,0.22)]">
+                <div className="relative rounded-2xl border border-slate-200/90 bg-white px-3.5 py-2 pr-8 shadow-[0_12px_32px_-12px_rgba(15,23,42,0.22)]">
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      dismissHints();
+                    }}
+                    onPointerDown={(e) => e.stopPropagation()}
+                    className="absolute right-1.5 top-1.5 flex size-6 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-100 hover:text-slate-700"
+                    aria-label="Sectie-hints uitzetten"
+                  >
+                    <X className="size-3.5" aria-hidden />
+                  </button>
                   <p className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
                     Je bent hier
                   </p>
-                  <p className="mt-0.5 text-sm font-extrabold leading-snug text-slate-900">
+                  <p className="mt-0.5 text-pretty text-sm font-extrabold leading-snug text-slate-900">
                     {sectionLabel}
                   </p>
                   <span
@@ -280,6 +314,22 @@ export function ScrollMeneer() {
               </motion.div>
             ) : null}
           </AnimatePresence>
+
+          {showBubbles && hintsReady && !hintsEnabled ? (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                restoreHints();
+              }}
+              onPointerDown={(e) => e.stopPropagation()}
+              className="absolute right-full top-1/2 z-20 mr-2 hidden w-max -translate-y-1/2 items-center gap-1.5 whitespace-nowrap rounded-full border border-slate-200/90 bg-white px-3 py-1.5 text-[11px] font-extrabold tracking-tight text-slate-700 shadow-[0_8px_24px_-10px_rgba(15,23,42,0.28)] transition hover:border-[#FF5722]/45 hover:bg-orange-50/90 hover:text-[#FF5722] lg:inline-flex"
+              aria-label="Sectie-hints weer aanzetten"
+            >
+              <MessageSquareText className="size-3.5 shrink-0 text-[#FF5722]" aria-hidden />
+              <span>Hints aan</span>
+            </button>
+          ) : null}
         </div>
       </motion.div>
     </div>

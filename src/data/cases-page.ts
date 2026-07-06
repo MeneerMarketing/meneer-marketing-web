@@ -89,9 +89,38 @@ export const CASES_PAGE_CTA = {
 } as const;
 
 export const CASES_PAGE_IMPACT = {
-  eyebrow: "In cijfers",
-  title: "Geen vanity metrics. Wel wat telt.",
-  lead: "Drie klanten, drie routes. Dit is wat er aan de andere kant staat.",
+  eyebrow: "Wie + hoe",
+  title: "Cases zijn het bewijs. Dit ben ik.",
+  lead: "Geen agency-groep. Wel twaalf jaar webdesign en marketing, en een werkwijze die je kunt vertrouwen.",
+  items: [
+    {
+      id: "experience",
+      label: "Over mij",
+      stat: "12+",
+      headline: "jaar webdesign en marketing",
+      body: "Begonnen als app-developer. Nu groeipartner: Shopify custom, websites from scratch, SEO en ads op één lijn.",
+      href: "/over",
+      linkLabel: "Meer over Meneer",
+    },
+    {
+      id: "intake",
+      label: "Werkwijze",
+      stat: "± 2 min",
+      headline: "intake, dan pas praten",
+      body: "Geen pitch-deck. Wel scherpe vragen over waar je staat, wat je stack is en wat over zes maanden anders moet.",
+      href: "/werkwijze",
+      linkLabel: "Zo werk ik",
+    },
+    {
+      id: "focus",
+      label: "Werkwijze",
+      stat: "Max 3",
+      headline: "focuspunten tegelijk",
+      body: "Niet alles at once. Soms SEO eerst, soms bouwen, soms ads. Jouw fase bepaalt de volgorde. Geen copy-paste traject.",
+      href: "/werkwijze",
+      linkLabel: "Het proces",
+    },
+  ],
 } as const;
 
 export const CASES_PAGE_BUILT = {

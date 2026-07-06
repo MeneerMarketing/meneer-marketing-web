@@ -1,157 +1,128 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
+import {
+  CAMPAGNES_CHANNEL_BUBBLES,
+  HomeCampagnesVisual,
+} from "@/components/home/shared/HomeCampagnesVisual";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
-import { HOME_WHY_MENEER } from "@/data/home-premium";
+import { HOME_MOBILE_CHAPTER_CAMPAGNES } from "@/data/home-mobile-editorial";
 import { siteCtas } from "@/lib/cta";
 
-const PILLAR_ANGLES = [-90, -18, 54, 126, 198] as const;
-const ORBIT_R = 36;
-const ORBIT_C = 50;
+const EASE = [0.22, 1, 0.36, 1] as const;
+const chapter = HOME_MOBILE_CHAPTER_CAMPAGNES;
 
-function pillarPosition(angleDeg: number): { x: number; y: number } {
-  const rad = (angleDeg * Math.PI) / 180;
-  return {
-    x: ORBIT_C + ORBIT_R * Math.cos(rad),
-    y: ORBIT_C + ORBIT_R * Math.sin(rad),
-  };
-}
+type Channel = keyof typeof CAMPAGNES_CHANNEL_BUBBLES;
 
-function MeneerPillarVisual({ reduce }: { reduce: boolean }) {
-  const pillars = HOME_WHY_MENEER.pillars;
-
-  return (
-    <div className="relative mx-auto w-full max-w-[380px]">
-      <div className="relative aspect-square overflow-hidden rounded-3xl bg-white/10">
-        <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
-          <motion.div
-            initial={reduce ? false : { opacity: 0, scale: 0.92 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 280, damping: 24 }}
-          >
-            <InteractiveLogo className="size-[4.25rem] sm:size-[4.75rem]" />
-          </motion.div>
-        </div>
-
-        {pillars.map((label, i) => {
-          const { x, y } = pillarPosition(PILLAR_ANGLES[i]!);
-          const tilt = i % 2 === 0 ? -1.25 : 1.25;
-          return (
-            <motion.div
-              key={label}
-              initial={reduce ? false : { opacity: 0, y: 8, rotate: tilt * 1.5 }}
-              whileInView={{ opacity: 1, y: 0, rotate: tilt }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.08 + i * 0.05, type: "spring", stiffness: 300, damping: 22 }}
-              whileHover={reduce ? undefined : { y: -2, rotate: 0 }}
-              className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
-              style={{ left: `${x}%`, top: `${y}%` }}
-            >
-              <span className="block whitespace-nowrap rounded-2xl rounded-bl-sm bg-white px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-[0.1em] text-slate-900 shadow-md sm:px-3 sm:py-2 sm:text-[10px]">
-                {label}
-              </span>
-            </motion.div>
-          );
-        })}
-
-        <p className="absolute inset-x-0 bottom-3 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-white/75">
-          {HOME_WHY_MENEER.pillarsCaption}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function MeneerQuoteBubble({ text }: { text: string }) {
-  return (
-    <div className="flex items-end gap-2.5">
-      <InteractiveLogo className="size-9 shrink-0" interactive={false} />
-      <p className="rounded-2xl rounded-bl-sm bg-slate-950 px-4 py-3 text-sm font-bold leading-snug text-white">
-        {text}
-      </p>
-    </div>
-  );
-}
-
+/** Desktop: campagnes-sectie met Google/Meta toggle (zelfde stijl als mobiel). */
 export function HomeWhyMeneerSection() {
   const reduce = useReducedMotion();
+  const [channel, setChannel] = useState<Channel>("google");
 
   return (
     <section
       aria-labelledby="home-why-meneer-heading"
-      className="relative overflow-x-clip overflow-hidden bg-[#FF5722]"
+      className="relative overflow-x-clip border-b border-slate-800 bg-[#0B1220]"
     >
-      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.04]"
+        aria-hidden
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute -right-20 top-0 size-72 rounded-full bg-[#FF5722]/10 blur-3xl"
+        aria-hidden
+      />
+
+      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-14">
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.45, ease: EASE }}
+            className="flex flex-col"
           >
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/70">
-              {HOME_WHY_MENEER.tag}
+            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+              {chapter.eyebrow}
             </p>
             <h2
               id="home-why-meneer-heading"
-              className="mt-4 text-3xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-4xl lg:whitespace-nowrap"
+              className="mt-4 text-pretty text-3xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-4xl"
             >
-              {HOME_WHY_MENEER.title}
+              {chapter.title}
             </h2>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/85">
-              {HOME_WHY_MENEER.body}
+            <p className="mt-5 max-w-lg text-pretty text-base leading-relaxed text-slate-400">
+              {chapter.body}
             </p>
 
-            <ul className="mt-8 space-y-2.5">
-              {HOME_WHY_MENEER.strengths.map((item, i) => (
-                <motion.li
-                  key={item.label}
-                  initial={reduce ? false : { opacity: 0, x: -8 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.06 * i, duration: 0.35 }}
-                >
-                  <div className="rounded-2xl rounded-bl-sm bg-white/12 px-4 py-3.5 transition-colors hover:bg-white/18">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-white/90">
-                      {item.label}
-                    </p>
-                    <p className="mt-1 text-sm font-bold leading-snug text-white">
-                      {item.detail}
-                    </p>
-                  </div>
-                </motion.li>
-              ))}
-            </ul>
+            <div className="relative mt-7 overflow-hidden rounded-2xl bg-white/[0.05] px-4 py-4 ring-1 ring-white/[0.08] sm:px-5 sm:py-5">
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
+                Heet take
+              </p>
+              <p className="mt-2 text-pretty text-sm font-bold leading-snug text-white/95 sm:text-base">
+                {chapter.hotTake}
+              </p>
+            </div>
 
-            <motion.div
-              initial={reduce ? false : { opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="mt-7"
-            >
-              <MeneerQuoteBubble text={HOME_WHY_MENEER.quote} />
-            </motion.div>
+            {chapter.inlineProof ? (
+              <p className="mt-5 text-pretty text-sm text-slate-500">{chapter.inlineProof}</p>
+            ) : null}
 
-            <Link
-              href={siteCtas.startIntake.href}
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-slate-900"
-            >
-              Plan een gesprek
-              <ArrowUpRight className="size-4" aria-hidden />
-            </Link>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href={chapter.href}
+                className="inline-flex items-center gap-1.5 text-sm font-bold text-[#FF5722] transition hover:gap-2"
+              >
+                {chapter.linkLabel}
+                <ArrowUpRight className="size-4" aria-hidden />
+              </Link>
+              <Link
+                href={siteCtas.startIntake.href}
+                className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/25 transition hover:bg-orange-600"
+              >
+                Plan een gesprek
+                <ArrowUpRight className="size-4" aria-hidden />
+              </Link>
+            </div>
+
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={channel}
+                initial={reduce ? false : { opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={reduce ? undefined : { opacity: 0, y: -6 }}
+                transition={{ duration: 0.28, ease: EASE }}
+                className="mt-8 flex items-start gap-2.5 lg:mt-auto lg:pt-8"
+              >
+                <InteractiveLogo className="size-9 shrink-0" interactive={false} />
+                <p className="rounded-2xl rounded-bl-sm bg-white/[0.08] px-4 py-3 text-sm font-bold leading-snug text-white/90">
+                  {CAMPAGNES_CHANNEL_BUBBLES[channel]}
+                </p>
+              </motion.div>
+            </AnimatePresence>
           </motion.div>
 
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.45, delay: 0.06 }}
+            viewport={{ once: true, margin: "-8%" }}
+            transition={{ duration: 0.45, delay: 0.06, ease: EASE }}
+            className="self-center rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-transparent p-5 shadow-[0_24px_56px_-26px_rgba(0,0,0,0.55)] sm:p-6 lg:self-start lg:p-6"
           >
-            <MeneerPillarVisual reduce={!!reduce} />
+            <HomeCampagnesVisual
+              size="desktop"
+              bubblePlacement="external"
+              channel={channel}
+              onChannelChange={setChannel}
+            />
           </motion.div>
         </div>
       </div>

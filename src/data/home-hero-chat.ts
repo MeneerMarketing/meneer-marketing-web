@@ -21,7 +21,7 @@ export interface HeroChatOption {
 /** @deprecated Gebruik getHeroChatIntroLines() uit @/lib/hero-chat-time */
 export const HERO_CHAT_INTRO = [
   "Hoi. Je hebt me live. Zeldzaam genoeg in marketing.",
-  "Waar ben je voor? Klik iets. Twijfel telt ook mee.",
+  "Waar kom je voor? Tik een optie. Twijfel mag ook.",
 ] as const;
 
 export const HERO_CHAT_OPTIONS: HeroChatOption[] = [

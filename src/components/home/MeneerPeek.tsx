@@ -13,7 +13,6 @@ const QUOTES = [
   "Ik ga je niks verkopen wat je niet nodig hebt. Slecht voor mijn omzet. Goed voor jou.",
   "Nog klikken? Dan ben je officieel nieuwsgierig. Dat is mijn favoriete type klant.",
   "Geen chatbot. Geen stagiair. Gewoon ik. Met koffie klaar. Virtueel, maar echt.",
-  "Dit was het. Nog één klik en we gaan echt praten.",
 ] as const;
 
 const BUBBLE_TAIL =

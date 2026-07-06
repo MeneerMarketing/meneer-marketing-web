@@ -98,6 +98,7 @@ export const HOME_CASES: HomeCase[] = [
     result:
       "Salons bestellen zelfstandig. Organisch verkeer en e-mail droegen omzet voordat ads opschalen. Influencers leveren content die ook in campagnes terugkomt.",
     tags: [
+      "Shopify theme from scratch",
       "B2B-portaal",
       "SEO",
       "E-mailmarketing",
@@ -114,6 +115,11 @@ export const HOME_CASES: HomeCase[] = [
     previewPoster: "/cases/skincomplete-hero-poster.jpg",
     previewObjectPosition: "center top",
     services: [
+      {
+        id: "shopify",
+        label: "Shopify theme from scratch",
+        blurb: "Custom theme op maat, geen standaard template",
+      },
       { id: "portal", label: "B2B-portaal", blurb: "Salons loggen in en bestellen zelf" },
       { id: "seo", label: "SEO", blurb: "Organisch vóór paid opschalen" },
       { id: "email", label: "E-mail", blurb: "Mail gekoppeld aan het portaal" },
@@ -149,6 +155,8 @@ export const HOME_CASES: HomeCase[] = [
     scene: "bestrest",
     href: "/cases#bestrest",
     website: { url: "https://bestrest.nl", hostname: "bestrest.nl" },
+    previewImage: "/cases/bestrest-hero.png",
+    previewObjectPosition: "center center",
     services: [
       { id: "shopify", label: "Shopify", blurb: "Custom theme from scratch" },
       { id: "seo", label: "SEO", blurb: "Per productlijn, niet generiek" },

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FunFactsSection } from "@/components/home/FunFactsSection";
+import { HomeEvenRechtzettenSection } from "@/components/home/premium/HomeEvenRechtzettenSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { HomeUspBar } from "@/components/home/HomeUspBar";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
@@ -65,11 +65,11 @@ export default function HomePage() {
         <div className="hidden lg:block">
           <ServicesOfficeSection />
           <HomeWorkStagesScroll />
+          <HomeAboutMeneerSection />
           <HomeProofSection />
           <HomeWhyMeneerSection />
-          <FunFactsSection />
+          <HomeEvenRechtzettenSection />
           <InsightsPreviewSection />
-          <HomeAboutMeneerSection />
           <HomeCtaSection />
         </div>
       </main>

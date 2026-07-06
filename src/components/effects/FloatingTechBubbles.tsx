@@ -1,12 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { GoogleLogoMark } from "@/components/icons/GoogleLogoMark";
+import { MetaIcon } from "@/components/icons/MetaIcon";
 
-type TechKey = "google" | "instagram" | "shopify" | "facebook";
+type TechKey = "google" | "shopify" | "chatgpt" | "meta";
 
-const TECHS: TechKey[] = ["google", "shopify", "instagram", "facebook"];
+const TECHS: TechKey[] = ["google", "shopify", "chatgpt", "meta"];
 
 interface Bubble {
   key: string;
@@ -65,8 +67,8 @@ function generateBubbles(count: number, seed = 1): Bubble[] {
   const techPhase: Record<TechKey, number> = {
     google: 0,
     shopify: 0,
-    instagram: 0,
-    facebook: 0,
+    chatgpt: 0,
+    meta: 0,
   };
 
   return techSequence.map((tech, i) => {
@@ -166,41 +168,19 @@ function TechGlyph({ tech }: { tech: TechKey }) {
           />
         </svg>
       );
-    case "facebook":
+    case "chatgpt":
       return (
-        <svg viewBox="0 0 24 24" className="size-[58%]" aria-label="Facebook">
-          <circle cx="12" cy="12" r="11" fill="#1877F2" />
-          <path
-            fill="#fff"
-            transform="translate(12 12.2) scale(0.82) translate(-12 -12)"
-            d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.585 0-4.356 1.58-4.356 4.749v2.693H7.332v3.209h2.513v8.195h3.552z"
-          />
-        </svg>
+        <Image
+          src="/icons/chatgpt-hero-mark.png"
+          alt=""
+          width={24}
+          height={24}
+          className="size-[55%] bg-transparent object-contain"
+          unoptimized
+        />
       );
-    case "instagram":
-      return (
-        <svg viewBox="0 0 24 24" className="size-[55%]" aria-label="Instagram">
-          <rect
-            x="3.5"
-            y="3.5"
-            width="17"
-            height="17"
-            rx="5"
-            fill="none"
-            stroke="#E1306C"
-            strokeWidth="1.6"
-          />
-          <circle
-            cx="12"
-            cy="12"
-            r="4.2"
-            fill="none"
-            stroke="#E1306C"
-            strokeWidth="1.6"
-          />
-          <circle cx="17.2" cy="6.8" r="1.1" fill="#E1306C" />
-        </svg>
-      );
+    case "meta":
+      return <MetaIcon className="size-[58%] object-contain" size={24} />;
     default:
       return null;
   }

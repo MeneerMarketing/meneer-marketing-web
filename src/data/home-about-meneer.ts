@@ -1,3 +1,50 @@
+export interface AboutMeneerStrategyMessage {
+  id: string;
+  from: "meneer" | "klant";
+  text: string;
+}
+
+export const HOME_ABOUT_MENEER_STRATEGY_CHAT: readonly AboutMeneerStrategyMessage[] = [
+  {
+    id: "reach",
+    from: "klant",
+    text: "We willen meer bereik, maar onze ads voelen té veel als reclame.",
+  },
+  {
+    id: "trust",
+    from: "meneer",
+    text: "Snap ik. Wie vertrouwt jouw product al? Klanten, creators, fans?",
+  },
+  {
+    id: "unbox",
+    from: "klant",
+    text: "Onze unboxings op Instagram doen het goed. Mensen taggen ons constant.",
+  },
+  {
+    id: "pitch",
+    from: "meneer",
+    text: "Dan is dit geen 'nog meer budget op Meta'. Influencer deals plus UGC. Eerlijk en herkenbaar.",
+  },
+  {
+    id: "confirm",
+    from: "klant",
+    text: "Dus creators én video's die we in ads kunnen hergebruiken?",
+  },
+  {
+    id: "close",
+    from: "meneer",
+    text: "Precies. Ik match creators, regel deals en zorg dat de content ook in je ads landt. Meetbaar.",
+  },
+] as const;
+
+export const HOME_ABOUT_MENEER_STRATEGY_OUTCOME = {
+  eyebrow: "Voorgestelde strategie",
+  exampleLabel: "Voorbeeld",
+  title: "Influencer + UGC",
+  body: "Zo kan een keuze eruitzien na ons gesprek. Geen standaardpakket: bij jou bepalen we wat past. En ja, dit regel ik ook, niet alleen het plan.",
+  previewCaption: "Illustratie · één mogelijke mix na intake",
+} as const;
+
 export interface AboutMeneerJourneyStep {
   id: string;
   /** Hoofdlabel in badge (bijv. 12, Dag 1, Live) */
@@ -24,20 +71,20 @@ export const HOME_ABOUT_MENEER = {
       id: "dev",
       era: "Dag 1",
       title: "App-developer",
-      detail: "Eerst wilde ik alles perfect in code. Typisch.",
+      detail: "Ik wilde alles perfect in code. Typisch.",
     },
     {
       id: "years",
       era: "12",
       eraSub: "jaar",
       title: "Web + marketing",
-      detail: "Geleerd wat online geld oplevert en wat alleen mooi oogt.",
+      detail: "Geleerd wat echt geld oplevert. En wat alleen mooi oogt.",
     },
     {
       id: "now",
       era: "Live",
       title: "Groeipartner",
-      detail: "Aan tafel: welk kanaal, welk platform, welke volgorde?",
+      detail: "Nu zit ik aan tafel met jou. Welk kanaal, welk platform, welke volgorde?",
     },
   ] as const satisfies readonly AboutMeneerJourneyStep[],
   collabTitle: "Samen beslissen wat past",
@@ -72,13 +119,8 @@ export const HOME_ABOUT_MENEER = {
       meneer: "Als je klanten al koopt en je ze terug wilt laten komen.",
     },
   ] as const satisfies readonly AboutMeneerChannelChoice[],
-  dopamine: {
-    label: "Mijn dopamine hit",
-    body: "Jouw cijfers omhoog zien gaan. Omzet, leads, ROAS.",
-    punchline: "Koffie is fijn. Een mailtje 'het werkt echt' is beter.",
-  },
   quote:
-    "Ik groei als jij groeit. Geen agency-praat. Wel iemand die meedenkt en doorpakt.",
+    "Mijn dopamine? Jij met meer klanten en een volle inbox. App je me 'hé, het loopt'? Dan sla ik die harder aan dan mijn ochtendkoffie.",
   ctaLabel: "Meer over Meneer",
   ctaHref: "/over",
 } as const;
