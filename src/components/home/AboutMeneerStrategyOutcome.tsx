@@ -547,7 +547,7 @@ export function AboutMeneerStrategyOutcome({
   immediate = false,
 }: AboutMeneerStrategyOutcomeProps) {
   const reduce = useReducedMotion();
-  const [tab, setTab] = useState<OutcomeTab>("influencer");
+  const [tab, setTab] = useState<OutcomeTab>("ugc");
 
   if (!visible) return null;
 
