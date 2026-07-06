@@ -2,32 +2,28 @@
 
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { useInView, useReducedMotion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, useInView, useReducedMotion } from "framer-motion";
+import { useRef, useState } from "react";
 import {
   AI_BILLBOARD_COPY,
+  AI_PLATFORMS,
   ChatGptPanel,
   GeminiPanel,
+  type AiPlatform,
 } from "@/components/home/ai/HomeAiBillboardPanels";
+import { ChatGptIcon } from "@/components/icons/ChatGptIcon";
+import { GeminiIcon } from "@/components/icons/GeminiIcon";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 
 const COPY = AI_BILLBOARD_COPY;
+const EASE = [0.22, 1, 0.36, 1] as const;
 
-/** Desktop AI-billboard: ChatGPT en Gemini naast elkaar, zelfde copy als mobiel. */
+/** Desktop AI-billboard: één chat met schakelaar ChatGPT ↔ Gemini. */
 export function HomeDesktopAiBillboard() {
   const reduce = useReducedMotion() ?? false;
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-12%" });
-  const [geminiActive, setGeminiActive] = useState(reduce);
-
-  useEffect(() => {
-    if (!isInView || reduce) {
-      setGeminiActive(true);
-      return;
-    }
-    const t = window.setTimeout(() => setGeminiActive(true), 1200);
-    return () => window.clearTimeout(t);
-  }, [isInView, reduce]);
+  const [platform, setPlatform] = useState<AiPlatform>("chatgpt");
 
   return (
     <section
@@ -85,9 +81,53 @@ export function HomeDesktopAiBillboard() {
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <ChatGptPanel platform="chatgpt" active={isInView} reduce={reduce} />
-            <GeminiPanel platform="gemini" active={isInView && geminiActive} reduce={reduce} />
+          <div className="w-full max-w-md lg:max-w-none lg:justify-self-end">
+            <div
+              className="mb-4 flex gap-1 rounded-xl border border-white/10 bg-white/[0.04] p-1"
+              role="tablist"
+              aria-label="Kies AI-platform"
+            >
+              {AI_PLATFORMS.map((item) => {
+                const active = platform === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={active}
+                    onClick={() => setPlatform(item.id)}
+                    className={`inline-flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-bold transition ${
+                      active
+                        ? "bg-white text-slate-900 shadow-sm"
+                        : "text-white/55 hover:text-white/90"
+                    }`}
+                  >
+                    {item.id === "chatgpt" ? (
+                      <ChatGptIcon size={18} className="size-[18px]" />
+                    ) : (
+                      <GeminiIcon size={18} className="size-[18px]" />
+                    )}
+                    {item.label}
+                  </button>
+                );
+              })}
+            </div>
+
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={platform}
+                initial={reduce ? false : { opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.28, ease: EASE }}
+              >
+                {platform === "chatgpt" ? (
+                  <ChatGptPanel platform="chatgpt" active={isInView} reduce={reduce} />
+                ) : (
+                  <GeminiPanel platform="gemini" active={isInView} reduce={reduce} />
+                )}
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>

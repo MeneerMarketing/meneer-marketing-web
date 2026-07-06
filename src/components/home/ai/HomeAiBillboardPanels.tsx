@@ -111,7 +111,7 @@ function AiReplyText({ aiText }: { aiText: string }) {
   const aiHighlightEnd = aiLeadLen + COPY.aiReplyHighlight.length;
 
   return (
-    <p className="text-[12px] font-medium leading-relaxed text-white/85 lg:text-[13px]">
+    <span className="block text-[12px] font-medium leading-relaxed text-white/85 lg:text-[13px]">
       {aiText.slice(0, aiLeadLen)}
       {aiText.length > aiLeadLen ? (
         <span className="font-bold text-[#FF5722]">
@@ -119,7 +119,7 @@ function AiReplyText({ aiText }: { aiText: string }) {
         </span>
       ) : null}
       {aiText.length > aiHighlightEnd ? aiText.slice(aiHighlightEnd) : null}
-    </p>
+    </span>
   );
 }
 
@@ -128,7 +128,7 @@ function GeminiReplyText({ aiText }: { aiText: string }) {
   const aiHighlightEnd = aiLeadLen + COPY.aiReplyHighlight.length;
 
   return (
-    <p className="text-[12px] font-normal leading-relaxed text-[#e8eaed] lg:text-[13px]">
+    <span className="block text-[12px] font-normal leading-relaxed text-[#e8eaed] lg:text-[13px]">
       {aiText.slice(0, aiLeadLen)}
       {aiText.length > aiLeadLen ? (
         <span className="bg-gradient-to-r from-[#4285F4] via-[#9B72F2] to-[#D96570] bg-clip-text font-semibold text-transparent">
@@ -136,7 +136,7 @@ function GeminiReplyText({ aiText }: { aiText: string }) {
         </span>
       ) : null}
       {aiText.length > aiHighlightEnd ? aiText.slice(aiHighlightEnd) : null}
-    </p>
+    </span>
   );
 }
 
@@ -148,10 +148,16 @@ export interface AiChatPanelProps {
 
 export function ChatGptPanel({ active, reduce }: AiChatPanelProps) {
   const { phase, inputText, aiText } = useAiChatDemo(active, reduce);
+  const fullAiReply = `${COPY.aiReplyLead}${COPY.aiReplyHighlight}${COPY.aiReplyTail}`;
 
-  const showUserBubble = phase !== "idle" && phase !== "input";
+  const showUserBubble =
+    (phase === "input" && inputText.length > 0) ||
+    phase === "sent" ||
+    phase === "ai-typing" ||
+    phase === "ai-reply" ||
+    phase === "done";
   const showAiBubble = phase === "ai-typing" || phase === "ai-reply" || phase === "done";
-  const inputActive = phase === "input";
+  const userBubbleText = phase === "input" ? inputText : COPY.userQuestion;
   const inputSubmitted = phase !== "idle" && phase !== "input";
 
   return (
@@ -167,39 +173,7 @@ export function ChatGptPanel({ active, reduce }: AiChatPanelProps) {
         </span>
       </div>
 
-      <div className="flex min-h-[15.5rem] flex-1 flex-col space-y-3 px-4 py-4 lg:min-h-[17rem]">
-        <div
-          className={`flex items-center gap-2 rounded-xl border px-3 py-2.5 transition-colors duration-300 ${
-            inputActive
-              ? "border-[#FF5722]/40 bg-white/[0.06] ring-1 ring-[#FF5722]/20"
-              : inputSubmitted
-                ? "border-white/8 bg-white/[0.03]"
-                : "border-white/10 bg-white/[0.03]"
-          }`}
-        >
-          <span className="text-[11px] text-white/30" aria-hidden>
-            ›
-          </span>
-          <p className="min-w-0 flex-1 truncate text-[12px] font-medium text-white/85">
-            {inputActive ? (
-              <>
-                {inputText}
-                <motion.span
-                  className="ml-0.5 inline-block h-[0.9em] w-px bg-[#FF5722]"
-                  animate={{ opacity: [1, 0, 1] }}
-                  transition={{ duration: 0.8, repeat: Infinity }}
-                  aria-hidden
-                />
-              </>
-            ) : inputSubmitted ? (
-              <span className="text-white/45">{COPY.userQuestion}</span>
-            ) : (
-              <span className="text-white/35">Stel een vraag…</span>
-            )}
-          </p>
-          <ChatGptIcon size={16} className="size-4 shrink-0 opacity-90" />
-        </div>
-
+      <div className="flex min-h-[18rem] flex-1 flex-col space-y-3 px-4 py-4 lg:min-h-[20rem]">
         <AnimatePresence>
           {showUserBubble ? (
             <motion.div
@@ -209,8 +183,16 @@ export function ChatGptPanel({ active, reduce }: AiChatPanelProps) {
               transition={{ duration: 0.28, ease: EASE }}
               className="flex justify-end"
             >
-              <p className="max-w-[92%] rounded-2xl rounded-br-sm bg-white px-3.5 py-2.5 text-[12px] font-semibold leading-snug text-slate-900">
-                {COPY.userQuestion}
+              <p className="max-w-[92%] rounded-2xl rounded-br-sm bg-white px-3.5 py-2.5 text-left text-[12px] font-semibold leading-snug text-slate-900 lg:text-[13px]">
+                {userBubbleText}
+                {phase === "input" ? (
+                  <motion.span
+                    className="ml-0.5 inline-block h-[0.9em] w-px bg-[#FF5722]"
+                    animate={{ opacity: [1, 0, 1] }}
+                    transition={{ duration: 0.8, repeat: Infinity }}
+                    aria-hidden
+                  />
+                ) : null}
               </p>
             </motion.div>
           ) : null}
@@ -230,12 +212,34 @@ export function ChatGptPanel({ active, reduce }: AiChatPanelProps) {
                 {phase === "ai-typing" ? (
                   <AiTypingDots variant="chatgpt" />
                 ) : (
-                  <AiReplyText aiText={aiText} />
+                  <div className="text-[12px] font-medium leading-relaxed text-white/85 lg:text-[13px]">
+                    <AiReplyText aiText={aiText} />
+                    {phase === "ai-reply" && aiText.length < fullAiReply.length ? (
+                      <motion.span
+                        className="ml-0.5 inline-block h-[0.9em] w-px align-middle bg-[#FF5722]"
+                        animate={{ opacity: [1, 0, 1] }}
+                        transition={{ duration: 0.8, repeat: Infinity }}
+                        aria-hidden
+                      />
+                    ) : null}
+                  </div>
                 )}
               </div>
             </motion.div>
           ) : null}
         </AnimatePresence>
+
+        {phase === "idle" ? (
+          <p className="mt-auto text-center text-[11px] font-medium text-white/35">
+            Stel een vraag…
+          </p>
+        ) : null}
+
+        {inputSubmitted && phase !== "done" ? (
+          <p className="mt-auto text-center text-[10px] font-semibold text-white/30" aria-hidden>
+            ChatGPT typt…
+          </p>
+        ) : null}
       </div>
     </div>
   );
@@ -243,9 +247,16 @@ export function ChatGptPanel({ active, reduce }: AiChatPanelProps) {
 
 export function GeminiPanel({ active, reduce }: AiChatPanelProps) {
   const { phase, inputText, aiText } = useAiChatDemo(active, reduce);
+  const fullAiReply = `${COPY.aiReplyLead}${COPY.aiReplyHighlight}${COPY.aiReplyTail}`;
 
-  const showUserBubble = phase !== "idle" && phase !== "input";
+  const showUserBubble =
+    (phase === "input" && inputText.length > 0) ||
+    phase === "sent" ||
+    phase === "ai-typing" ||
+    phase === "ai-reply" ||
+    phase === "done";
   const showAiBubble = phase === "ai-typing" || phase === "ai-reply" || phase === "done";
+  const userBubbleText = phase === "input" ? inputText : COPY.userQuestion;
   const inputActive = phase === "input";
   const inputSubmitted = phase !== "idle" && phase !== "input";
 
@@ -267,7 +278,7 @@ export function GeminiPanel({ active, reduce }: AiChatPanelProps) {
         </span>
       </div>
 
-      <div className="flex min-h-[15.5rem] flex-1 flex-col justify-between px-4 py-4 lg:min-h-[17rem]">
+      <div className="flex min-h-[18rem] flex-1 flex-col justify-between px-4 py-4 lg:min-h-[20rem]">
         <div className="space-y-3">
           <AnimatePresence>
             {showUserBubble ? (
@@ -278,8 +289,16 @@ export function GeminiPanel({ active, reduce }: AiChatPanelProps) {
                 transition={{ duration: 0.28, ease: EASE }}
                 className="flex justify-end"
               >
-                <p className="max-w-[92%] rounded-[1.25rem] bg-[#282a2c] px-3.5 py-2.5 text-[12px] font-normal leading-snug text-[#e8eaed]">
-                  {COPY.userQuestion}
+                <p className="max-w-[92%] rounded-[1.25rem] bg-[#282a2c] px-3.5 py-2.5 text-left text-[12px] font-normal leading-snug text-[#e8eaed] lg:text-[13px]">
+                  {userBubbleText}
+                  {phase === "input" ? (
+                    <motion.span
+                      className="ml-0.5 inline-block h-[0.9em] w-px bg-[#8ab4f8]"
+                      animate={{ opacity: [1, 0, 1] }}
+                      transition={{ duration: 0.8, repeat: Infinity }}
+                      aria-hidden
+                    />
+                  ) : null}
                 </p>
               </motion.div>
             ) : null}
@@ -299,7 +318,17 @@ export function GeminiPanel({ active, reduce }: AiChatPanelProps) {
                   {phase === "ai-typing" ? (
                     <AiTypingDots variant="gemini" />
                   ) : (
-                    <GeminiReplyText aiText={aiText} />
+                    <div className="text-[12px] font-normal leading-relaxed text-[#e8eaed] lg:text-[13px]">
+                      <GeminiReplyText aiText={aiText} />
+                      {phase === "ai-reply" && aiText.length < fullAiReply.length ? (
+                        <motion.span
+                          className="ml-0.5 inline-block h-[0.9em] w-px align-middle bg-[#8ab4f8]"
+                          animate={{ opacity: [1, 0, 1] }}
+                          transition={{ duration: 0.8, repeat: Infinity }}
+                          aria-hidden
+                        />
+                      ) : null}
+                    </div>
                   )}
                 </div>
               </motion.div>
