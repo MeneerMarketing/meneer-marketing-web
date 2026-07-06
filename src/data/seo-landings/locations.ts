@@ -14,6 +14,9 @@ import {
 import { LOKALE_SEO, CONVERSIE_OPTIMALISATIE } from "@/data/seo-landings/pages/national-batch2";
 import { GOOGLE_ADS_SPECIALIST, SHOPIFY_SEO } from "@/data/seo-landings/pages/national-batch3";
 import { DIGITAL_MARKETING_BUREAU } from "@/data/seo-landings/pages/national-batch4";
+import { SEO_LANDING_GELDERLAND_PAGES } from "@/data/seo-landings/locations-gelderland";
+import { SEO_LANDING_APELDOORN_PAGES } from "@/data/seo-landings/locations-apeldoorn";
+import { SEO_LANDING_NEDERLAND_PAGES } from "@/data/seo-landings/locations-nederland";
 
 const BRABANT = "Noord-Brabant";
 
@@ -144,4 +147,7 @@ export const SEO_LANDING_CITY_PAGES = [
     { city: "Tilburg", region: BRABANT },
     "tilburg",
   ),
+  ...SEO_LANDING_GELDERLAND_PAGES,
+  ...SEO_LANDING_APELDOORN_PAGES,
+  ...SEO_LANDING_NEDERLAND_PAGES,
 ] as const;

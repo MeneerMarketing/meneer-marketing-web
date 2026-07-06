@@ -19,7 +19,7 @@ import { getDienstPremium } from "@/data/dienst-premium";
 import { getDienstStrategic } from "@/data/dienst-strategic";
 import { getDienstExtra } from "@/data/dienst-extras";
 import { getAllDienstSlugs, getDienstBySlug, getRelatedDiensten } from "@/lib/diensten";
-import { getArticlesByDienst } from "@/lib/kennisbank";
+import { getArticlesByDienst, getZoekenLinksForDienst } from "@/lib/kennisbank";
 import { ctaNav, megaMenuColumns } from "@/lib/navigation";
 import { absoluteUrl } from "@/lib/site";
 
@@ -63,6 +63,7 @@ export default async function DienstPage({
   const extra = getDienstExtra(slug);
   const related = getRelatedDiensten(slug, 4);
   const artikelen = getArticlesByDienst(slug).slice(0, 3);
+  const zoekenLinks = getZoekenLinksForDienst(slug, 2);
   const pageUrl = absoluteUrl(`/diensten/${slug}`);
   const strategic = getDienstStrategic(slug, d.pillar);
 
@@ -302,6 +303,26 @@ export default async function DienstPage({
                             <span className="mt-1 block text-xs font-semibold text-mm-muted">
                               {a.readMinutes} min lezen
                             </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+                {zoekenLinks.length > 0 ? (
+                  <div className="rounded-3xl border border-mm-border bg-white p-6 shadow-sm">
+                    <p className="text-xs font-bold uppercase tracking-wider text-mm-muted">
+                      Zoek je dit in jouw regio?
+                    </p>
+                    <ul className="mt-4 space-y-3">
+                      {zoekenLinks.map((z) => (
+                        <li key={z.slug}>
+                          <Link
+                            href={`/zoeken/${z.slug}`}
+                            className="group flex items-center justify-between gap-2 text-sm font-semibold text-mm-text hover:text-mm-accent"
+                          >
+                            <span>{z.label}</span>
+                            <ArrowUpRight className="size-4 shrink-0 text-mm-muted opacity-0 transition group-hover:opacity-100" />
                           </Link>
                         </li>
                       ))}

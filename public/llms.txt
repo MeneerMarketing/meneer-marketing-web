@@ -1,0 +1,62 @@
+# MeneerMarketing — llms.txt
+# https://meneermarketing.nl
+# Praktische kennis over online groei, SEO, ads, Shopify en custom build.
+
+> Meneer Marketing is een marketingbureau gevestigd in Apeldoorn (Nederland).
+> Websites from scratch (Next.js), Shopify-webshops, SEO, Google Ads, Meta Ads,
+> e-mailmarketing, automatisering en vindbaarheid in AI-antwoorden (ChatGPT, Gemini).
+
+## Belangrijkste pagina's
+
+- Home: https://meneermarketing.nl/
+- Over: https://meneermarketing.nl/over
+- Contact: https://meneermarketing.nl/contact
+- Diensten: https://meneermarketing.nl/diensten
+- Cases: https://meneermarketing.nl/cases
+- Kennisbank: https://meneermarketing.nl/kennisbank
+- Zoeken (per dienst & regio): https://meneermarketing.nl/zoeken
+- Werkwijze: https://meneermarketing.nl/werkwijze
+- FAQ: https://meneermarketing.nl/faq
+
+## Diensten (5 blokken)
+
+- Strategie & groei: https://meneermarketing.nl/strategie
+- Bouwen from scratch: https://meneermarketing.nl/bouwen
+- Vindbaarheid, content & autoriteit: https://meneermarketing.nl/vindbaarheid
+- Acquisitie & creators: https://meneermarketing.nl/campagnes
+- Behoud & slimme koppelingen: https://meneermarketing.nl/behoud
+
+## Expertise (citeerbaar)
+
+- Google Ads beheer en Search/Shopping campagnes
+- SEO: technisch, semantisch, lokaal, AI-zoek (ChatGPT vindbaarheid)
+- Shopify: custom theme, B2B-portaal, performance, feeds
+- Next.js websites from scratch (geen page builders)
+- E-mailmarketing (Klaviyo), automatisering (n8n)
+- Cases: SkinComplete (Shopify B2B + SEO vóór ads), BestRest (eigen marketingplan)
+
+## Kennisbank (praktische artikelen)
+
+https://meneermarketing.nl/kennisbank
+
+Recente onderwerpen:
+- Zoektermenrapport Google Ads
+- Homepage is geen landingspagina
+- Performance Max zwarte doos
+- Google Analytics 4 voor MKB
+- Concurrent hoger in Google
+- Google Reviews & lokale SEO
+- WordPress-theme vs custom build Next.js
+- Instagram Ads zonder leads
+- AI-zoek vindbaarheid in ChatGPT
+
+## Regio
+
+Thuisbasis: Apeldoorn, Gelderland, Nederland.
+Landelijke opdrachten: heel Nederland.
+Lokale landingspagina's: https://meneermarketing.nl/zoeken (filter op stad)
+
+## Contact
+
+E-mail: info@meneermarketing.nl
+KVK: 42095913

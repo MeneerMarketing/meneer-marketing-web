@@ -14,12 +14,14 @@ import { ConversionHero } from "@/components/contact/ConversionHero";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { absoluteUrl } from "@/lib/site";
+import { NOINDEX_FOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 
 export const metadata: Metadata = {
   title: "Start intake",
   description:
     "Vul in twee minuten de intake in. Dan weet ik genoeg om het eerste gesprek scherp te starten.",
   alternates: { canonical: absoluteUrl("/intake") },
+  robots: NOINDEX_FOLLOW_ROBOTS,
   openGraph: {
     title: "Start intake | MeneerMarketing",
     description:

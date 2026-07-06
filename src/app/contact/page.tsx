@@ -8,6 +8,7 @@ import {
   breadcrumbJsonLd,
   contactPageJsonLd,
   faqPageJsonLd,
+  localBusinessJsonLd,
 } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -17,7 +18,7 @@ import { absoluteUrl } from "@/lib/site";
 const PAGE_PATH = "/contact";
 const PAGE_TITLE = "Contact. Gewoon praten, geen formulier-gevoel";
 const PAGE_DESCRIPTION =
-  "Neem contact op met Meneer Marketing via een chat-achtig gesprek. Marketing, je site, Shopify, SEO, ads of gewoon sparren. Reactie binnen één à twee werkdagen.";
+  "Neem contact op met Meneer Marketing in Apeldoorn. Chat-achtig gesprek over marketing, je site, Shopify, SEO, ads of gewoon sparren. Reactie binnen één à twee werkdagen.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -48,6 +49,7 @@ export default function ContactPage() {
             path: PAGE_PATH,
           }),
           faqPageJsonLd([...CONTACT_FAQ]),
+          localBusinessJsonLd(),
         ]}
       />
       <SiteHeader />

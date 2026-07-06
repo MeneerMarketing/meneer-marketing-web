@@ -19,6 +19,7 @@ const FOOTER_NAV = [
   { href: "/cases", label: "Cases" },
   { href: "/over", label: "Over ons" },
   { href: "/kennisbank", label: "Kennisbank" },
+  { href: "/zoeken", label: "Zoeken per dienst" },
   { href: "/werkwijze", label: "Werkwijze" },
   { href: "/contact", label: "Contact" },
   { href: "/faq", label: "FAQ" },
@@ -191,6 +192,11 @@ export function SiteFooter() {
               <li>
                 <Link href="/kennisbank" className="hover:text-sky-300" prefetch={false}>
                   Kennisbank
+                </Link>
+              </li>
+              <li>
+                <Link href="/zoeken" className="hover:text-sky-300" prefetch={false}>
+                  Zoeken per dienst
                 </Link>
               </li>
               <li>

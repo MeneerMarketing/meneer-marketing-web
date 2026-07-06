@@ -6,6 +6,11 @@ import { CasesHonestCompare } from "@/components/cases/CasesHonestCompare";
 import { CasesImpactStrip } from "@/components/cases/CasesImpactStrip";
 import { CasesShowcase } from "@/components/cases/CasesShowcase";
 import { CasesWerkwijzeTeaser } from "@/components/cases/CasesWerkwijzeTeaser";
+import {
+  JsonLdScript,
+  breadcrumbJsonLd,
+  casesItemListJsonLd,
+} from "@/components/seo/JsonLd";
 import { Reveal } from "@/components/effects/Reveal";
 import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -14,6 +19,7 @@ import {
   CASES_PAGE_CTA,
   CASES_PAGE_FUN_FACTS_TITLE,
   CASES_PAGE_HERO,
+  CASES_PAGE_STORIES,
 } from "@/data/cases-page";
 import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
@@ -28,6 +34,11 @@ export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   alternates: { canonical: absoluteUrl(PAGE_PATH) },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
   openGraph: {
     title: "Cases | Meneer Marketing",
     description: PAGE_DESCRIPTION,
@@ -38,8 +49,35 @@ export const metadata: Metadata = {
 };
 
 export default function CasesPage() {
+  const casesLd = casesItemListJsonLd([
+    {
+      name: "SkinComplete",
+      description: CASES_PAGE_STORIES.skincomplete.punch,
+      url: absoluteUrl(PAGE_PATH),
+    },
+    {
+      name: "BestRest",
+      description: CASES_PAGE_STORIES.bestrest.punch,
+      url: absoluteUrl(PAGE_PATH),
+    },
+    {
+      name: "Hills Pilates",
+      description: CASES_PAGE_STORIES["hills-pilates"].punch,
+      url: absoluteUrl(PAGE_PATH),
+    },
+  ]);
+
   return (
     <>
+      <JsonLdScript
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Cases", path: PAGE_PATH },
+          ]),
+          casesLd,
+        ]}
+      />
       <SiteHeader />
       <main id="main" className="flex-1">
         <header className="relative overflow-x-clip border-b border-slate-800 bg-slate-950">

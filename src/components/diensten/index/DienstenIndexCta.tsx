@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+
 import { Reveal } from "@/components/effects/Reveal";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { siteCtas } from "@/lib/cta";
@@ -11,6 +12,10 @@ export function DienstenIndexCta() {
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,87,34,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,87,34,0.04)_1px,transparent_1px)] bg-[size:32px_32px]"
         aria-hidden
       />
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 h-48 w-96 -translate-x-1/2 rounded-full bg-[#FF5722]/15 blur-3xl"
+        aria-hidden
+      />
       <div className="relative mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
         <Reveal>
           <InteractiveLogo className="mx-auto h-16 w-16" />
@@ -18,8 +23,9 @@ export function DienstenIndexCta() {
             Weten welk blok nu het meest logisch is?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-400">
-            Vul de intake in (twee minuten). Dan weten we genoeg om prioriteit,
-            route en passende diensten te bespreken. Geen verplichting, wel helderheid.
+            Vul de intake in. Twee minuten. Dan weet ik genoeg om prioriteit,
+            route en passende diensten te bespreken. Geen verplichting. Wel
+            helderheid. En soms een eerlijk &ldquo;begin ergens anders&rdquo;.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
@@ -30,10 +36,10 @@ export function DienstenIndexCta() {
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
             <Link
-              href="/werkwijze"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-4 text-sm font-bold text-white transition hover:border-white/30"
             >
-              Bekijk werkwijze
+              Gewoon praten
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
           </div>

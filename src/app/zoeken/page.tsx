@@ -1,26 +1,54 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { Suspense } from "react";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { ZoekenIndexExplorer } from "@/components/seo-landing/ZoekenIndexExplorer";
+import { JsonLdScript, collectionPageJsonLd } from "@/components/seo/JsonLd";
 import { getAllSeoLandingPages } from "@/data/seo-landings/registry";
-import { absoluteUrl } from "@/lib/site";
-import { seoLandingPath } from "@/lib/seo-landings";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
 
-export const metadata: Metadata = {
-  title: "Zoeken · diensten & regio | Meneer Marketing",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Zoeken · diensten & regio | MeneerMarketing",
+  titleAbsolute: true,
   description:
-    "Landingspagina's per zoekwoord: Google Ads, SEO, websites, webshops en meer. Meneer Marketing, online marketing from scratch.",
-  alternates: { canonical: absoluteUrl("/zoeken") },
-};
+    "Landingspagina's per zoekwoord en regio: Google Ads Arnhem, SEO Nijmegen, webshops Gelderland, Brabant en meer. Meneer Marketing, online groei from scratch.",
+  path: "/zoeken",
+  keywords: [
+    "google ads arnhem",
+    "seo nijmegen",
+    "online marketing gelderland",
+    "marketing bureau brabant",
+    "zoekmachine optimalisatie regio",
+  ],
+});
 
 export default function ZoekenIndexPage() {
   const pages = getAllSeoLandingPages();
-  const national = pages.filter((p) => !p.location);
-  const local = pages.filter((p) => p.location);
+
+  const toListItem = (page: (typeof pages)[number]) => ({
+    slug: page.slug,
+    primaryKeyword: page.primaryKeyword,
+    city: page.location?.city,
+    region: page.location?.region,
+  });
+
+  const national = pages.filter((p) => !p.location).map(toListItem);
+  const local = pages.filter((p) => p.location).map(toListItem);
+
+  const collectionLd = collectionPageJsonLd({
+    name: "Zoeken per dienst en regio",
+    description:
+      "SEO-landingspagina's van Meneer Marketing per zoekwoord, stad en regio in Nederland.",
+    path: "/zoeken",
+    items: pages.slice(0, 50).map((p) => ({
+      name: p.primaryKeyword,
+      path: `/zoeken/${p.slug}`,
+    })),
+  });
 
   return (
     <>
+      <JsonLdScript data={collectionLd} />
       <SiteHeader />
       <main id="main" className="flex-1">
         <section className="border-b border-slate-200 bg-white py-16 lg:py-20">
@@ -32,51 +60,18 @@ export default function ZoekenIndexPage() {
               Waar mensen op zoeken. Waar jij gevonden wilt worden.
             </h1>
             <p className="mt-5 max-w-2xl text-lg text-slate-600">
-              Per zoekwoord een pagina die rankt én converteert. Geen dunne SEO-prutswerk,
-              wel Meneer Marketing: scherp, eerlijk, soms een beetje droog grappig.
+              Per zoekwoord en regio een pagina die rankt én converteert. Thuisbasis Apeldoorn,
+              daarnaast Randstad, Brabant, Limburg, Gelderland en meer. Geen dun SEO-prutswerk, wel
+              Meneer Marketing: scherp, eerlijk, soms een beetje droog grappig.
             </p>
           </div>
         </section>
 
         <section className="py-14">
           <div className="mx-auto max-w-6xl px-4 lg:px-8">
-            <h2 className="text-xl font-extrabold text-slate-900">Diensten</h2>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {national.map((page) => (
-                <li key={page.slug}>
-                  <Link
-                    href={seoLandingPath(page.slug)}
-                    className="group flex h-full items-center justify-between rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm transition hover:border-[#FF5722]/35 hover:shadow-md"
-                  >
-                    <span className="font-bold text-slate-900 capitalize">
-                      {page.primaryKeyword}
-                    </span>
-                    <ArrowUpRight className="size-4 text-slate-400 transition group-hover:text-[#FF5722]" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            {local.length > 0 ? (
-              <>
-                <h2 className="mt-14 text-xl font-extrabold text-slate-900">Regio</h2>
-                <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {local.map((page) => (
-                    <li key={page.slug}>
-                      <Link
-                        href={seoLandingPath(page.slug)}
-                        className="group flex h-full items-center justify-between rounded-2xl border border-slate-200 bg-orange-50/40 px-4 py-4 transition hover:border-[#FF5722]/35"
-                      >
-                        <span className="font-bold text-slate-900 capitalize">
-                          {page.primaryKeyword}
-                        </span>
-                        <ArrowUpRight className="size-4 text-slate-400 transition group-hover:text-[#FF5722]" />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : null}
+            <Suspense fallback={<p className="text-slate-500">Pagina&apos;s laden…</p>}>
+              <ZoekenIndexExplorer national={national} local={local} />
+            </Suspense>
           </div>
         </section>
       </main>

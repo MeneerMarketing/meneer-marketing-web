@@ -12,6 +12,7 @@ import {
   aboutPageJsonLd,
   breadcrumbJsonLd,
   faqPageJsonLd,
+  personJsonLd,
 } from "@/components/seo/JsonLd";
 import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -52,6 +53,12 @@ export default function OverPage() {
             name: PAGE_TITLE,
             description: PAGE_DESCRIPTION,
             path: PAGE_PATH,
+          }),
+          personJsonLd({
+            name: "Meneer Marketing",
+            jobTitle: "Online marketing manager, developer & founder",
+            description: PAGE_DESCRIPTION,
+            url: absoluteUrl(PAGE_PATH),
           }),
           faqPageJsonLd([...OVER_FAQ]),
         ]}

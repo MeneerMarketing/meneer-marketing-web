@@ -15,12 +15,14 @@ import { ConversionHero } from "@/components/contact/ConversionHero";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { absoluteUrl } from "@/lib/site";
+import { NOINDEX_FOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 
 export const metadata: Metadata = {
   title: "Samenwerken",
   description:
     "Vraag een samenwerking aan bij MeneerMarketing. Retainer, project of embedded. Eén team, heldere afspraken, jouw tempo.",
   alternates: { canonical: absoluteUrl("/samenwerken") },
+  robots: NOINDEX_FOLLOW_ROBOTS,
   openGraph: {
     title: "Samenwerken | MeneerMarketing",
     description:

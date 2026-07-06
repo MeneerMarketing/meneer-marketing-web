@@ -5,6 +5,7 @@ import {
   getAllSeoLandingSlugs,
   getSeoLandingBySlug,
 } from "@/data/seo-landings/registry";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
 import { absoluteUrl } from "@/lib/site";
 
 export { getAllSeoLandingPages, getAllSeoLandingSlugs, getSeoLandingBySlug };
@@ -18,41 +19,13 @@ export function seoLandingUrl(slug: string): string {
 }
 
 export function buildSeoLandingMetadata(page: SeoLandingPage): Metadata {
-  const url = seoLandingUrl(page.slug);
-
-  return {
+  return buildPageMetadata({
     title: page.metaTitle,
+    titleAbsolute: true,
     description: page.metaDescription,
+    path: seoLandingPath(page.slug),
     keywords: [...page.keywords],
-    alternates: { canonical: url },
-    openGraph: {
-      title: page.metaTitle,
-      description: page.metaDescription,
-      url,
-      siteName: "MeneerMarketing",
-      locale: "nl_NL",
-      type: "website",
-      images: [
-        {
-          url: absoluteUrl("/og/og-default.svg"),
-          width: 1200,
-          height: 630,
-          alt: page.metaTitle,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: page.metaTitle,
-      description: page.metaDescription,
-      images: [absoluteUrl("/og/og-default.svg")],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: { index: true, follow: true, "max-image-preview": "large" },
-    },
-  };
+  });
 }
 
 /** Basis voor stad-varianten: pas slug, keyword en locatie aan. */
@@ -64,21 +37,42 @@ export function withSeoLandingLocation(
   if (!location) return page;
 
   const city = location.city;
-  const keyword = `${page.primaryKeyword} ${city.toLowerCase()}`;
+  const cityLower = city.toLowerCase();
+  const keyword = `${page.primaryKeyword} ${cityLower}`;
+  const baseTitle = page.metaTitle.split("·")[0]?.trim() ?? page.metaTitle;
+  const isApeldoorn = city === "Apeldoorn";
+
+  const localIntro = isApeldoorn
+    ? `Meneer Marketing is gevestigd in Apeldoorn. Ik werk hier met MKB op de Veluwe en landelijk met dezelfde aanpak. `
+    : location.region === "Gelderland"
+      ? `Ondernemers in ${city} en Gelderland zoeken steeds vaker online voordat ze bellen. `
+      : `Lokaal relevant in ${city}${location.region ? ` (${location.region})` : ""}: `;
+
+  const localSub = isApeldoorn
+    ? `${page.subheadline} Ik zit in Apeldoorn. Geen bureau op afstand dat de Veluwe alleen van de A1 kent. ${page.primaryKeyword} hier pak ik aan met lokale context én dezelfde custom build en campagnes als voor SkinComplete en BestRest.`
+    : `${page.subheadline} Ik help ondernemers in ${city}${location.region ? ` en ${location.region}` : ""} met ${page.primaryKeyword} dat rankt én converteert. Ook landelijk, als je online wilt groeien.`;
 
   return {
     ...page,
     slug: `${page.slug}-${slugSuffix}`,
     primaryKeyword: keyword,
     location,
-    metaTitle: `${page.metaTitle.split("·")[0]?.trim()} ${city} · Meneer Marketing`,
-    metaDescription: page.metaDescription.replace(
-      /\.$/,
-      ` in ${city} en omgeving.`,
-    ),
-    eyebrow: `${page.eyebrow} · ${city}`,
+    metaTitle: isApeldoorn
+      ? `${baseTitle} Apeldoorn · thuisbasis Meneer Marketing`
+      : `${baseTitle} ${city} · Meneer Marketing`,
+    metaDescription: `${localIntro}${page.metaDescription.replace(/\.$/, "")} voor MKB in ${city} en omgeving.`,
+    eyebrow: isApeldoorn ? `${page.eyebrow} · Apeldoorn · thuisbasis` : `${page.eyebrow} · ${city}`,
     headline: page.headline,
-    subheadline: `${page.subheadline} Ook actief rond ${city}${location.region ? ` (${location.region})` : ""}.`,
-    keywords: [...page.keywords, `${page.primaryKeyword} ${city.toLowerCase()}`],
+    headlineAccent: page.headlineAccent,
+    subheadline: localSub,
+    keywords: [
+      ...page.keywords,
+      keyword,
+      `${page.primaryKeyword} ${cityLower}`,
+      `${cityLower} ${page.category === "google-ads" ? "google ads" : page.primaryKeyword}`,
+    ],
+    visualCaption:
+      page.visualCaption ??
+      `Zo pakken we ${page.primaryKeyword} aan voor ondernemers rond ${city}.`,
   };
 }

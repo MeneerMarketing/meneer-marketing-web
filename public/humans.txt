@@ -1,0 +1,15 @@
+/* TEAM */
+Meneer Marketing — founder, developer & online marketing manager
+Site: https://meneermarketing.nl
+Contact: info@meneermarketing.nl
+Location: Apeldoorn, Gelderland, Nederland
+KVK: 42095913
+
+/* THANKS */
+Next.js · Vercel · Tailwind CSS · Shopify · Prisma
+
+/* SITE */
+Last update: 2026-07-06
+Language: Dutch (nl-NL)
+Standards: HTML5, JSON-LD schema.org, WCAG 2.2
+AI: https://meneermarketing.nl/llms.txt

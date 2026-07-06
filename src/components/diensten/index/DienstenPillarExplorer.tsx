@@ -22,17 +22,17 @@ export function DienstenPillarExplorer() {
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF5722]">
-          Volledig aanbod
+          Alle trajecten
         </p>
         <h2
           id="diensten-explorer-heading"
           className="mt-3 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
         >
-          Kies je blok. Zie elk traject.
+          Tik een blok. Zie elk traject.
         </h2>
         <p className="mt-2 max-w-2xl text-slate-600">
-          Vijf hoofdblokken met eigen landingspagina. Tik een blok en scroll door
-          alle concrete diensten eronder.
+          Vijf hoofdblokken met eigen landingspagina. Scroll door alle concrete
+          diensten. Van Google Ads tot Shopify B2B tot vindbaarheid in ChatGPT.
         </p>
 
         {/* Pillar tabs */}

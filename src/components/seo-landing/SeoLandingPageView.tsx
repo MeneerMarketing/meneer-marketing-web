@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ArrowUpRight, BookOpen, Lightbulb, Sparkles, X } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { EnrichedSeoLandingPage } from "@/data/seo-landings/enriched-types";
+import { SeoLandingBreadcrumb } from "@/components/seo-landing/SeoLandingBreadcrumb";
+import { SeoLandingToc } from "@/components/seo-landing/SeoLandingToc";
 import {
   SeoLandingAiVisual,
   SeoLandingBuildVisual,
@@ -17,9 +19,18 @@ import {
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
+import {
+  SeoLandingAnalogyBlock,
+  SeoLandingCoffeeChat,
+  SeoLandingConfessionBlock,
+  SeoLandingInnerVoice,
+  SeoLandingLocalColor,
+  SeoLandingNightmareList,
+  SeoLandingRantBlock,
+} from "@/components/seo-landing/SeoLandingFunSections";
 import { siteCtas } from "@/lib/cta";
 import { seoLandingPath } from "@/lib/seo-landings";
-import { getSeoLandingBySlug } from "@/data/seo-landings/registry";
+import { getSeoLandingBySlug, getAllSeoLandingPages } from "@/data/seo-landings/registry";
 import { getKennisbankArticleBySlug } from "@/lib/kennisbank";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -90,8 +101,23 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
     ? getKennisbankArticleBySlug(page.kennisbankSlug)
     : null;
 
+  const citySiblings = page.location
+    ? getAllSeoLandingPages()
+        .filter(
+          (p) =>
+            p.location?.city === page.location?.city && p.slug !== page.slug,
+        )
+        .slice(0, 8)
+        .map((p) => getSeoLandingBySlug(p.slug))
+        .filter((p): p is EnrichedSeoLandingPage => Boolean(p))
+    : [];
+
   return (
-    <>
+    <article>
+      <SeoLandingBreadcrumb
+        keyword={page.primaryKeyword}
+        city={page.location?.city}
+      />
       <section className="relative overflow-x-clip border-b border-slate-200 bg-white py-16 lg:py-24">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.4]"
@@ -168,7 +194,52 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-white py-16 lg:py-20">
+      <section
+        id="samenvatting"
+        aria-labelledby="seo-summary-heading"
+        className="border-b border-slate-200 bg-gradient-to-b from-orange-50/50 to-white py-10"
+      >
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 lg:grid-cols-[1fr_280px] lg:px-8">
+          <div>
+            <h2 id="seo-summary-heading" className="sr-only">
+              Kort antwoord
+            </h2>
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#FF5722]">
+              Kort antwoord
+            </p>
+            <p
+              id="seo-expert-summary"
+              className="mt-3 text-pretty text-lg font-semibold leading-relaxed text-slate-800"
+            >
+              {page.expertSummary}
+            </p>
+            <ul className="mt-6 grid gap-2 sm:grid-cols-2">
+              {page.keyTakeaways.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-2 rounded-xl border border-slate-200/80 bg-white px-3 py-2.5 text-sm font-medium text-slate-700"
+                >
+                  <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#FF5722]" aria-hidden />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 text-xs text-slate-500">
+              Door Meneer Marketing
+              {page.location?.city === "Apeldoorn"
+                ? " · gevestigd in Apeldoorn"
+                : page.location
+                  ? ` · actief in ${page.location.city}`
+                  : " · marketingbureau Nederland"}
+            </p>
+          </div>
+          <div className="hidden lg:block">
+            <SeoLandingToc items={page.toc} />
+          </div>
+        </div>
+      </section>
+
+      <section id="verhaal" aria-labelledby="verhaal-heading" className="border-b border-slate-200 bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
           <Reveal>
             <ProseSection block={page.story} />
@@ -176,13 +247,15 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-slate-50 py-16">
+      <SeoLandingCoffeeChat chat={page.coffeeChat} />
+
+      <section id="mythes" aria-labelledby="mythes-heading" className="border-b border-slate-200 bg-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
             <div className="flex items-start gap-3">
               <Sparkles className="mt-1 size-5 shrink-0 text-[#FF5722]" aria-hidden />
               <div>
-                <h2 className="text-xl font-extrabold text-slate-900 lg:text-2xl">
+                <h2 id="mythes-heading" className="text-xl font-extrabold text-slate-900 lg:text-2xl">
                   Mythe vs werkelijkheid
                 </h2>
                 <p className="mt-2 max-w-2xl text-slate-600">
@@ -212,10 +285,10 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 py-16">
+      <section id="herkenning" aria-labelledby="herkenning-heading" className="border-b border-slate-200 py-16">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
-            <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 lg:text-3xl">
+            <h2 id="herkenning-heading" className="text-2xl font-extrabold tracking-tight text-slate-900 lg:text-3xl">
               Herkenbaar? Dan ben je niet de enige.
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
@@ -235,6 +308,8 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
           </div>
         </div>
       </section>
+
+      <SeoLandingInnerVoice voice={page.innerVoice} />
 
       <section className="border-b border-slate-200 bg-slate-950 py-16 text-white lg:py-20">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
@@ -258,10 +333,12 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 py-16">
+      {page.localColor ? <SeoLandingLocalColor block={page.localColor} /> : null}
+
+      <section id="aanpak" aria-labelledby="aanpak-heading" className="border-b border-slate-200 py-16">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
-            <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 lg:text-3xl">
+            <h2 id="aanpak-heading" className="text-2xl font-extrabold tracking-tight text-slate-900 lg:text-3xl">
               Wat je van mij krijgt
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
@@ -282,7 +359,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-orange-50/40 py-16 lg:py-20">
+      <section id="deep-dive" aria-labelledby="deep-dive-heading" className="border-b border-slate-200 bg-orange-50/40 py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
           <Reveal>
             <ProseSection block={page.deepDive} />
@@ -290,10 +367,14 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-slate-950 py-16 text-white">
+      <SeoLandingRantBlock rant={page.rant} />
+
+      <SeoLandingAnalogyBlock analogy={page.analogy} />
+
+      <section id="proces" aria-labelledby="proces-heading" className="border-b border-slate-200 bg-slate-950 py-16 text-white">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
-            <h2 className="text-2xl font-extrabold tracking-tight lg:text-3xl">
+            <h2 id="proces-heading" className="text-2xl font-extrabold tracking-tight lg:text-3xl">
               {page.processTitle}
             </h2>
             <p className="mt-3 max-w-2xl text-white/65">
@@ -332,6 +413,8 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
+      <SeoLandingNightmareList title={page.nightmare.title} items={page.nightmare.items} />
+
       <section className="border-b border-slate-200 bg-slate-50 py-14">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
@@ -363,6 +446,8 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
           </Reveal>
         </div>
       </section>
+
+      <SeoLandingConfessionBlock confession={page.confession} />
 
       <section className="border-b border-slate-200 py-16">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
@@ -431,10 +516,10 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </section>
       ) : null}
 
-      <section className="border-b border-slate-200 py-16">
+      <section id="faq" aria-labelledby="faq-heading" className="border-b border-slate-200 py-16">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
           <Reveal>
-            <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
+            <h2 id="faq-heading" className="text-2xl font-extrabold tracking-tight text-slate-900">
               Vragen over {page.primaryKeyword}
             </h2>
             <p className="mt-3 text-slate-600">
@@ -446,6 +531,33 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
           </div>
         </div>
       </section>
+
+      {citySiblings.length > 0 ? (
+        <section className="border-b border-slate-200 bg-orange-50/30 py-14">
+          <div className="mx-auto max-w-6xl px-4 lg:px-8">
+            <Reveal>
+              <h2 className="text-xl font-extrabold text-slate-900">
+                Meer in {page.location?.city}
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Andere diensten in dezelfde stad. Handig als je meer wilt weten wat ik lokaal aanbied.
+              </p>
+            </Reveal>
+            <ul className="mt-5 flex flex-wrap gap-2">
+              {citySiblings.map((sib) => (
+                <li key={sib.slug}>
+                  <Link
+                    href={seoLandingPath(sib.slug)}
+                    className="inline-flex rounded-full border border-[#FF5722]/25 bg-white px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-[#FF5722]/50 hover:text-[#FF5722]"
+                  >
+                    {sib.primaryKeyword}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {related.length > 0 ? (
         <section className="border-b border-slate-200 bg-slate-50 py-14">
@@ -489,6 +601,6 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
           </Reveal>
         </div>
       </section>
-    </>
+    </article>
   );
 }

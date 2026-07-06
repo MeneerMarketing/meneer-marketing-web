@@ -16,12 +16,14 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
+import { NOINDEX_FOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 
 export const metadata: Metadata = {
   title: "Schaal op",
   description:
     "Klaar om op te schalen? MeneerMarketing bepaalt met jou de grootste hefboom. Leads, conversie, SEO, ads of automatisering.",
   alternates: { canonical: absoluteUrl("/schaal-op") },
+  robots: NOINDEX_FOLLOW_ROBOTS,
   openGraph: {
     title: "Schaal op | MeneerMarketing",
     description:

@@ -17,7 +17,9 @@ import {
   getKennisbankCategory,
   getKennisbankSlugs,
   getRelatedArticles,
+  getZoekenLinksForArticle,
 } from "@/lib/kennisbank";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
 import { absoluteUrl } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -32,21 +34,16 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = getKennisbankArticleBySlug(slug);
   if (!article) return { title: "Artikel" };
-  return {
-    title: article.title,
+  return buildPageMetadata({
+    title: `${article.title} | MeneerMarketing`,
+    titleAbsolute: true,
     description: article.description,
+    path: `/kennisbank/${article.slug}`,
     keywords: article.keywords,
-    alternates: { canonical: absoluteUrl(`/kennisbank/${article.slug}`) },
-    openGraph: {
-      title: article.title,
-      description: article.description,
-      url: absoluteUrl(`/kennisbank/${article.slug}`),
-      type: "article",
-      publishedTime: article.publishedAt,
-      modifiedTime: article.modifiedAt ?? article.publishedAt,
-      locale: "nl_NL",
-    },
-  };
+    type: "article",
+    publishedTime: article.publishedAt,
+    modifiedTime: article.modifiedAt ?? article.publishedAt,
+  });
 }
 
 function formatDate(iso: string) {
@@ -68,6 +65,7 @@ export default async function KennisbankArticlePage({
 
   const category = getKennisbankCategory(article.category);
   const related = getRelatedArticles(slug, 3);
+  const zoekenLinks = getZoekenLinksForArticle(slug, 2);
   const diensten = article.dienstSlugs
     .map((s) => getDienstBySlug(s))
     .filter((d): d is NonNullable<typeof d> => d !== null && d !== undefined);
@@ -172,6 +170,27 @@ export default async function KennisbankArticlePage({
                         className="inline-flex items-center gap-1.5 rounded-full border border-mm-border bg-mm-bg px-4 py-2 text-sm font-bold text-mm-text transition hover:border-mm-sky-deep/40 hover:text-mm-sky-deep"
                       >
                         {d.name}
+                        <ArrowUpRight className="size-3.5" aria-hidden />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+            ) : null}
+
+            {zoekenLinks.length > 0 ? (
+              <aside className="mt-6 rounded-3xl border border-mm-border bg-mm-surface-elevated p-7">
+                <p className="text-xs font-bold uppercase tracking-wider text-mm-muted">
+                  Zoek je dit voor jouw regio?
+                </p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {zoekenLinks.map((z) => (
+                    <li key={z.slug}>
+                      <Link
+                        href={`/zoeken/${z.slug}`}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-mm-border bg-white px-4 py-2 text-sm font-bold text-mm-text transition hover:border-mm-accent/40 hover:text-mm-accent"
+                      >
+                        {z.label}
                         <ArrowUpRight className="size-3.5" aria-hidden />
                       </Link>
                     </li>

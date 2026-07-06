@@ -15,20 +15,21 @@ import { JsonLdScript, webPageJsonLd } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import {
+  buildAlternates,
   buildOpenGraph,
   buildTwitter,
   HOME_PAGE_DESCRIPTION,
   HOME_PAGE_TITLE,
 } from "@/lib/seo/site-metadata";
+import { INDEXABLE_ROBOTS } from "@/lib/seo/robots-policy";
 
 export const metadata: Metadata = {
   title: {
     absolute: HOME_PAGE_TITLE,
   },
   description: HOME_PAGE_DESCRIPTION,
-  alternates: {
-    canonical: "/",
-  },
+  alternates: buildAlternates("/"),
+  robots: INDEXABLE_ROBOTS,
   openGraph: buildOpenGraph({
     title: HOME_PAGE_TITLE,
     description: HOME_PAGE_DESCRIPTION,

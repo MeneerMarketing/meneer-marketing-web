@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from "@/lib/site";
 
+import { INDEXABLE_ROBOTS } from "@/lib/seo/robots-policy";
+
 export const SITE_NAME = "MeneerMarketing";
 
 export const DEFAULT_OG_IMAGE = {
@@ -21,6 +23,8 @@ export function buildOpenGraph(input: {
   description: string;
   path: string;
   type?: "website" | "article";
+  publishedTime?: string;
+  modifiedTime?: string;
 }): NonNullable<Metadata["openGraph"]> {
   return {
     type: input.type ?? "website",
@@ -30,6 +34,8 @@ export function buildOpenGraph(input: {
     description: input.description,
     url: absoluteUrl(input.path),
     images: [DEFAULT_OG_IMAGE],
+    ...(input.publishedTime ? { publishedTime: input.publishedTime } : {}),
+    ...(input.modifiedTime ? { modifiedTime: input.modifiedTime } : {}),
   };
 }
 
@@ -42,5 +48,54 @@ export function buildTwitter(input: {
     title: input.title,
     description: input.description,
     images: [DEFAULT_OG_IMAGE.url],
+  };
+}
+
+export function buildAlternates(path: string): NonNullable<Metadata["alternates"]> {
+  const canonical = absoluteUrl(path);
+  return {
+    canonical,
+    languages: {
+      "nl-NL": canonical,
+      "x-default": canonical,
+    },
+  };
+}
+
+/** Centrale metadata-builder: canonical, hreflang, robots, OG en Twitter. */
+export function buildPageMetadata(input: {
+  title: string;
+  description: string;
+  path: string;
+  /** Gebruik absolute title om dubbele suffix van layout-template te vermijden. */
+  titleAbsolute?: boolean;
+  keywords?: string[];
+  type?: "website" | "article";
+  robots?: Metadata["robots"];
+  publishedTime?: string;
+  modifiedTime?: string;
+}): Metadata {
+  const ogTitle = input.titleAbsolute
+    ? input.title
+    : `${input.title} | ${SITE_NAME}`;
+
+  return {
+    title: input.titleAbsolute ? { absolute: input.title } : input.title,
+    description: input.description,
+    ...(input.keywords?.length ? { keywords: input.keywords } : {}),
+    alternates: buildAlternates(input.path),
+    robots: input.robots ?? INDEXABLE_ROBOTS,
+    openGraph: buildOpenGraph({
+      title: ogTitle,
+      description: input.description,
+      path: input.path,
+      type: input.type,
+      publishedTime: input.publishedTime,
+      modifiedTime: input.modifiedTime,
+    }),
+    twitter: buildTwitter({
+      title: ogTitle,
+      description: input.description,
+    }),
   };
 }

@@ -17,22 +17,14 @@ import {
   kennisbankCategories,
 } from "@/lib/kennisbank";
 import { siteCtas } from "@/lib/cta";
-import { absoluteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Kennisbank. Marketing, websites & Shopify uitgelegd",
   description:
     "Praktische artikelen over strategie, websites bouwen, vindbaarheid, campagnes en klantbehoud. Geschreven in gewone taal, zonder marketingjargon.",
-  alternates: { canonical: absoluteUrl("/kennisbank") },
-  openGraph: {
-    title: "Kennisbank | MeneerMarketing",
-    description:
-      "Alles wat ik weet over online groeien, gratis na te lezen. Van AI-antwoorden tot Shopify B2B.",
-    url: absoluteUrl("/kennisbank"),
-    locale: "nl_NL",
-    type: "website",
-  },
-};
+  path: "/kennisbank",
+});
 
 function formatDate(iso: string) {
   return new Intl.DateTimeFormat("nl-NL", {

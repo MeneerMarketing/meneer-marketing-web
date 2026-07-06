@@ -14,11 +14,11 @@ export function DienstenIndexFaq() {
             id="diensten-faq-heading"
             className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
           >
-            Vragen over ons aanbod
+            Vragen over het aanbod
           </h2>
           <p className="mt-2 text-slate-600">
-            Kort en eerlijk. Staat je vraag er niet tussen? Stel hem via de
-            Intake of contact.
+            Kort en eerlijk. Geen salespraat. Staat je vraag er niet tussen?
+            Stel hem via contact of de intake.
           </p>
         </Reveal>
         <div className="mt-8">

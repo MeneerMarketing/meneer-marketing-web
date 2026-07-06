@@ -7,6 +7,35 @@ export const businessEmailDisplay = "info@meneermarketing.nl";
 export const businessKvk = "42095913";
 export const businessKvkDisplay = `KVK ${businessKvk}`;
 
+/** Thuisbasis voor lokale SEO en schema. */
+export const businessLocation = {
+  city: "Apeldoorn",
+  region: "Gelderland",
+  country: "NL",
+  countryName: "Nederland",
+} as const;
+
+/** Optioneel volledig adres via env (voor LocalBusiness schema). */
+export const businessStreetAddress: string | null =
+  process.env.NEXT_PUBLIC_BUSINESS_STREET?.trim() || null;
+
+export const businessPostalCode: string | null =
+  process.env.NEXT_PUBLIC_BUSINESS_POSTCODE?.trim() || null;
+
+export const businessAddress = {
+  line1: businessStreetAddress ?? businessLocation.city,
+  city: businessLocation.city,
+  region: businessLocation.region,
+  postalCode: businessPostalCode,
+  country: businessLocation.country,
+} as const;
+
+/** Optioneel: LinkedIn, Instagram, etc. voor sameAs in Organization schema. */
+export const businessSameAs: string[] = [
+  process.env.NEXT_PUBLIC_LINKEDIN_URL?.trim(),
+  process.env.NEXT_PUBLIC_INSTAGRAM_URL?.trim(),
+].filter((url): url is string => Boolean(url));
+
 export function mailtoHref(params?: {
   subject?: string;
   body?: string;
@@ -92,7 +121,3 @@ export function getContactChannels(): ContactChannel[] {
   ];
 }
 
-export const businessAddress = {
-  line1: "Nederland",
-  country: "NL",
-} as const;

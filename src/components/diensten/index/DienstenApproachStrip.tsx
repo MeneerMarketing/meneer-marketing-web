@@ -89,11 +89,11 @@ export function DienstenApproachStrip() {
           id="diensten-approach-heading"
           className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
         >
-          Hoe een traject bij ons loopt
+          Hoe een traject bij mij loopt
         </h2>
         <p className="mt-2 max-w-xl text-slate-600">
           Altijd dezelfde kwaliteit van beslissingen. De invulling verschilt per
-          klant. Tik een fase en zie wat er gebeurt.
+          klant. Tik een fase en zie wat er gebeurt. Geen verrassingen in week zes.
         </p>
 
         <div className="mt-8 grid gap-6 lg:grid-cols-2 lg:items-stretch">
@@ -125,6 +125,11 @@ export function DienstenApproachStrip() {
                       {s.title}
                     </span>
                     <span className="mt-1 block text-xs text-slate-600">{s.body}</span>
+                    {isActive ? (
+                      <span className="mt-2 block rounded-lg bg-slate-900/5 px-3 py-2 text-xs font-semibold italic text-slate-700">
+                        {s.meneerLine}
+                      </span>
+                    ) : null}
                   </span>
                 </button>
               );

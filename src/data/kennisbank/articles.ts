@@ -14,8 +14,28 @@ import { ROAS_VS_CPA } from "@/data/kennisbank/articles/roas-vs-cpa";
 import { META_BOOST_KNOP } from "@/data/kennisbank/articles/meta-boost-knop";
 import { KLAVIYO_FLOWS } from "@/data/kennisbank/articles/klaviyo-flows";
 import { REMARKETING_GOOGLE_ADS } from "@/data/kennisbank/articles/remarketing-google-ads";
+import { ZOEKTERMENRAPPORT_GOOGLE_ADS } from "@/data/kennisbank/articles/zoektermenrapport-google-ads";
+import { HOMEPAGE_GEEN_LANDINGSPAGINA } from "@/data/kennisbank/articles/homepage-geen-landingspagina";
+import { PERFORMANCE_MAX_ZWARTE_DOOS } from "@/data/kennisbank/articles/performance-max-zwarte-doos";
+import { GOOGLE_ANALYTICS_4_MKB } from "@/data/kennisbank/articles/google-analytics-4-mkb";
+import { CONCURRENT_HOGER_IN_GOOGLE } from "@/data/kennisbank/articles/concurrent-hoger-in-google";
+import { GOOGLE_REVIEWS_LOKALE_SEO } from "@/data/kennisbank/articles/google-reviews-lokale-seo";
+import { LEADS_GMAIL_OPVOLGING } from "@/data/kennisbank/articles/leads-gmail-opvolging";
+import { WORDPRESS_THEME_GROEIEN_NEXTJS } from "@/data/kennisbank/articles/wordpress-theme-groeien-nextjs";
+import { INSTAGRAM_ADS_GEEN_LEADS } from "@/data/kennisbank/articles/instagram-ads-geen-leads";
+import { MARKETING_VERGADERING_VS_UITVOERING } from "@/data/kennisbank/articles/marketing-vergadering-vs-uitvoering";
 
 export const kennisbankArticles: KennisbankArticle[] = [
+  ZOEKTERMENRAPPORT_GOOGLE_ADS,
+  HOMEPAGE_GEEN_LANDINGSPAGINA,
+  PERFORMANCE_MAX_ZWARTE_DOOS,
+  GOOGLE_ANALYTICS_4_MKB,
+  CONCURRENT_HOGER_IN_GOOGLE,
+  GOOGLE_REVIEWS_LOKALE_SEO,
+  LEADS_GMAIL_OPVOLGING,
+  WORDPRESS_THEME_GROEIEN_NEXTJS,
+  INSTAGRAM_ADS_GEEN_LEADS,
+  MARKETING_VERGADERING_VS_UITVOERING,
   ABANDONED_CART_EMAILS,
   MERCHANT_CENTER_FEED,
   ROAS_VS_CPA,
