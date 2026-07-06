@@ -9,7 +9,7 @@ export function HomeCtaSection() {
   return (
     <section
       id="home-cta"
-      data-scroll-hint="Afsluiter. Waar zit jouw groei? Vertel het, ik reageer zelf."
+      data-scroll-hint="Afsluiter. Waar lekt jouw groei? Plan een gesprek of mail. Ik reageer zelf."
       className="relative overflow-hidden border-t border-slate-800 bg-slate-950"
     >
       <div
@@ -46,11 +46,11 @@ export function HomeCtaSection() {
             />
           </Link>
           <p className="mt-4 text-xs text-slate-500">
-            Liever direct mailen?{" "}
+            {HOME_CTA.secondaryLead}{" "}
             <Link href="/contact" className="font-semibold text-slate-400 transition hover:text-white">
-              Ga naar contact
+              {HOME_CTA.secondaryLink}
             </Link>
-            .
+            . Ik lees alles zelf.
           </p>
         </Reveal>
       </div>

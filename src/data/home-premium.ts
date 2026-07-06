@@ -91,8 +91,10 @@ export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
 ] as const;
 
 export const HOME_CTA = {
-  title: "Klaar om te weten waar jouw groei zit?",
-  body: "Geen losse acties meer. We brengen je doelen, data en kanalen in kaart en maken er een plan van dat we ook echt uitvoeren.",
+  title: "Waar zit jouw groei? (Hint: niet in nog een losse campagne.)",
+  body: "We brengen je doelen, data en kanalen in kaart. Geen praatclub, geen deck van veertig slides. Wel een plan dat ik ook uitvoer, van site tot Google Ads en Meta.",
+  secondaryLead: "Liever typen dan bellen?",
+  secondaryLink: "Stuur een bericht",
 } as const;
 
 export const HOME_CONTACT_CHAT = {
