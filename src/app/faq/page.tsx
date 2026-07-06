@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import { Reveal } from "@/components/effects/Reveal";
@@ -10,22 +9,16 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
-import { absoluteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
 
-export const metadata: Metadata = {
-  title: "Veelgestelde vragen",
+export const metadata = buildPageMetadata({
+  title: "Veelgestelde vragen | MeneerMarketing",
+  titleAbsolute: true,
   description:
     "Eerlijke antwoorden over samenwerken, websites from scratch, Shopify, SEO, ads en wat het kost. Zonder wollige bureautaal.",
-  alternates: { canonical: absoluteUrl("/faq") },
-  openGraph: {
-    title: "FAQ | MeneerMarketing",
-    description:
-      "Eerlijke antwoorden op de vragen die iedereen stelt. In een gesprek maken we het concreet voor jouw situatie.",
-    url: absoluteUrl("/faq"),
-    locale: "nl_NL",
-    type: "website",
-  },
-};
+  path: "/faq",
+  ogAccent: "FF5722",
+});
 
 interface FaqItem {
   question: string;

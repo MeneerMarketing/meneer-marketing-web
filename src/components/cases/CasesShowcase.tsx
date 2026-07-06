@@ -173,13 +173,22 @@ function CaseMetricBlock({ caseItem, punch }: { caseItem: HomeCase; punch: strin
           {punch}
         </p>
       </div>
-      <Link
-        href={siteCtas.groeiscan.href}
-        className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-[#FF5722]"
-      >
-        Ik wil dit ook
-        <ArrowUpRight className="size-4" aria-hidden />
-      </Link>
+      <div className="flex flex-wrap gap-2">
+        <Link
+          href={caseItem.href}
+          className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-900 transition hover:border-[#FF5722]/40 hover:text-[#FF5722]"
+        >
+          Volledige case
+          <ArrowUpRight className="size-4" aria-hidden />
+        </Link>
+        <Link
+          href={siteCtas.groeiscan.href}
+          className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-[#FF5722]"
+        >
+          Ik wil dit ook
+          <ArrowUpRight className="size-4" aria-hidden />
+        </Link>
+      </div>
     </div>
   );
 }

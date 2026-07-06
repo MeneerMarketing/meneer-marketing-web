@@ -3,10 +3,12 @@ import { ArrowLeft, ArrowUpRight, Clock } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleBody } from "@/components/kennisbank/ArticleBody";
+import { DienstFAQ } from "@/components/diensten/DienstFAQ";
 import {
   JsonLdScript,
   articleJsonLd,
   breadcrumbJsonLd,
+  faqPageJsonLd,
 } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -20,6 +22,7 @@ import {
   getZoekenLinksForArticle,
 } from "@/lib/kennisbank";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { getArticleFaqs } from "@/lib/kennisbank-faq";
 import { absoluteUrl } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -66,6 +69,7 @@ export default async function KennisbankArticlePage({
   const category = getKennisbankCategory(article.category);
   const related = getRelatedArticles(slug, 3);
   const zoekenLinks = getZoekenLinksForArticle(slug, 2);
+  const articleFaqs = getArticleFaqs(article);
   const diensten = article.dienstSlugs
     .map((s) => getDienstBySlug(s))
     .filter((d): d is NonNullable<typeof d> => d !== null && d !== undefined);
@@ -90,11 +94,13 @@ export default async function KennisbankArticlePage({
       path: `/kennisbank/${article.slug}`,
     },
   ]);
+  const faqLd = faqPageJsonLd(articleFaqs);
 
   return (
     <>
       <JsonLdScript data={articleLd} />
       <JsonLdScript data={breadcrumbLd} />
+      <JsonLdScript data={faqLd} />
       <SiteHeader />
       <main id="main" className="flex-1">
         <article>
@@ -156,6 +162,20 @@ export default async function KennisbankArticlePage({
 
           <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
             <ArticleBody sections={article.sections} />
+
+            {articleFaqs.length > 0 ? (
+              <section className="mt-14" aria-labelledby="article-faq-heading">
+                <h2
+                  id="article-faq-heading"
+                  className="text-xl font-extrabold text-mm-text"
+                >
+                  Veelgestelde vragen bij dit onderwerp
+                </h2>
+                <div className="mt-6">
+                  <DienstFAQ items={articleFaqs} idPrefix={`kb-${article.slug}`} />
+                </div>
+              </section>
+            ) : null}
 
             {diensten.length > 0 ? (
               <aside className="mt-14 rounded-3xl border border-mm-border bg-white p-7 shadow-sm">

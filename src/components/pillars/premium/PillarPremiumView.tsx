@@ -31,7 +31,11 @@ import { VisibilitySurfaceMap } from "@/components/pillars/premium/VisibilitySur
 import {
   JsonLdScript,
   breadcrumbJsonLd,
+  faqPageJsonLd,
+  serviceJsonLd,
 } from "@/components/seo/JsonLd";
+import { PillarFaqSection } from "@/components/pillars/PillarFaqSection";
+import { getPillarFaqs } from "@/data/pillar-faqs";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
@@ -78,11 +82,18 @@ function PillarHeroVisual({ slug }: { slug: PillarSlug }) {
 export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
   const column = megaMenuColumns.find((c) => c.pillarSlug === data.slug)!;
   const path = `/${data.slug}`;
+  const faqs = getPillarFaqs(data.slug);
   const breadcrumbLd = breadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Diensten", path: "/diensten" },
     { name: PILLAR_LABEL[data.slug], path },
   ]);
+  const serviceLd = serviceJsonLd({
+    name: data.metaTitle,
+    description: data.metaDescription,
+    path,
+  });
+  const faqLd = faqPageJsonLd([...faqs]);
 
   const serviceItems = column.items.map((item) => ({
     name: item.name,
@@ -94,7 +105,7 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
 
   return (
     <>
-      <JsonLdScript data={breadcrumbLd} />
+      <JsonLdScript data={[breadcrumbLd, serviceLd, faqLd]} />
       <SiteHeader />
       <main id="main" className="flex-1">
         <header className="relative overflow-hidden border-b border-slate-200 bg-white">
@@ -299,6 +310,8 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
             </Reveal>
           </div>
         </section>
+
+        <PillarFaqSection faqs={faqs} idPrefix={`premium-${data.slug}`} />
 
         <section className="relative overflow-hidden border-t border-slate-800 bg-slate-950">
           <div

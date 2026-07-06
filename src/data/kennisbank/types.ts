@@ -19,5 +19,7 @@ export interface KennisbankArticle {
   keywords: string[];
   /** Dienst-slugs waar dit artikel bij hoort, voor interne links */
   dienstSlugs: string[];
+  /** Optioneel: FAQ voor schema en sectie onder artikel */
+  faqs?: readonly { question: string; answer: string }[];
   sections: ArticleSection[];
 }

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { ArrowUpRight } from "lucide-react";
 import { CasesBuiltBoard } from "@/components/cases/CasesBuiltBoard";
 import { CasesHonestCompare } from "@/components/cases/CasesHonestCompare";
@@ -11,6 +10,7 @@ import {
   breadcrumbJsonLd,
   casesItemListJsonLd,
 } from "@/components/seo/JsonLd";
+import { getAllCaseSlugs, getCaseBySlug } from "@/data/cases-detail";
 import { Reveal } from "@/components/effects/Reveal";
 import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -19,53 +19,36 @@ import {
   CASES_PAGE_CTA,
   CASES_PAGE_FUN_FACTS_TITLE,
   CASES_PAGE_HERO,
-  CASES_PAGE_STORIES,
 } from "@/data/cases-page";
 import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
 import { absoluteUrl } from "@/lib/site";
 
 const PAGE_PATH = "/cases";
-const PAGE_TITLE = "Cases · SkinComplete, BestRest & Hills Pilates";
+const PAGE_TITLE = "Cases · SkinComplete, BestRest & Hills Pilates | MeneerMarketing";
 const PAGE_DESCRIPTION =
   "Echte succesverhalen met video en foto's. Shopify, B2B-portaal, SEO, ads en apps. Gebouwd by Meneer Marketing.";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: PAGE_TITLE,
+  titleAbsolute: true,
   description: PAGE_DESCRIPTION,
-  alternates: { canonical: absoluteUrl(PAGE_PATH) },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large" },
-  },
-  openGraph: {
-    title: "Cases | Meneer Marketing",
-    description: PAGE_DESCRIPTION,
-    url: absoluteUrl(PAGE_PATH),
-    locale: "nl_NL",
-    type: "website",
-  },
-};
+  path: PAGE_PATH,
+  ogAccent: "FF5722",
+});
 
 export default function CasesPage() {
-  const casesLd = casesItemListJsonLd([
-    {
-      name: "SkinComplete",
-      description: CASES_PAGE_STORIES.skincomplete.punch,
-      url: absoluteUrl(PAGE_PATH),
-    },
-    {
-      name: "BestRest",
-      description: CASES_PAGE_STORIES.bestrest.punch,
-      url: absoluteUrl(PAGE_PATH),
-    },
-    {
-      name: "Hills Pilates",
-      description: CASES_PAGE_STORIES["hills-pilates"].punch,
-      url: absoluteUrl(PAGE_PATH),
-    },
-  ]);
+  const casesLd = casesItemListJsonLd(
+    getAllCaseSlugs().map((slug) => {
+      const c = getCaseBySlug(slug)!;
+      return {
+        name: c.client,
+        description: c.story.punch,
+        url: absoluteUrl(`/cases/${slug}`),
+      };
+    }),
+  );
 
   return (
     <>

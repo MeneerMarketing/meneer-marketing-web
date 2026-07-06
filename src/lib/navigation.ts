@@ -344,11 +344,9 @@ export const megaMenuColumns: MegaMenuColumn[] = [
   },
 ];
 
-/** Topnav naast blokken. /diensten bereikbaar via footer en mega-menu. */
+/** Topnav naast blokken. /diensten bereikbaar via footer en mega-menu. Kennisbank en Zoeken alleen in footer. */
 export const mainNavLinks: { name: string; href: string }[] = [
   { name: "Cases", href: "/cases" },
-  { name: "Kennisbank", href: "/kennisbank" },
-  { name: "Zoeken", href: "/zoeken" },
   { name: "Over", href: "/over" },
   { name: "Contact", href: "/contact" },
 ];

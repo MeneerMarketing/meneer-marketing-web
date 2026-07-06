@@ -5,7 +5,11 @@ import { PillarMotionStats } from "@/components/pillars/PillarMotionStats";
 import {
   JsonLdScript,
   breadcrumbJsonLd,
+  faqPageJsonLd,
+  serviceJsonLd,
 } from "@/components/seo/JsonLd";
+import { PillarFaqSection } from "@/components/pillars/PillarFaqSection";
+import { getPillarFaqs } from "@/data/pillar-faqs";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import type { PillarPageData } from "@/data/pillar-pages";
@@ -22,14 +26,21 @@ const PILLAR_LABEL: Record<PillarPageData["slug"], string> = {
 export function PillarLandingView({ data }: { data: PillarPageData }) {
   const column = megaMenuColumns.find((c) => c.pillarSlug === data.slug)!;
   const path = `/${data.slug}`;
+  const faqs = getPillarFaqs(data.slug);
   const breadcrumbLd = breadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: PILLAR_LABEL[data.slug], path },
   ]);
+  const serviceLd = serviceJsonLd({
+    name: data.metaTitle,
+    description: data.metaDescription,
+    path,
+  });
+  const faqLd = faqPageJsonLd([...faqs]);
 
   return (
     <>
-      <JsonLdScript data={breadcrumbLd} />
+      <JsonLdScript data={[breadcrumbLd, serviceLd, faqLd]} />
       <SiteHeader />
       <main id="main" className="flex-1">
         <header className="relative overflow-hidden border-b border-mm-border bg-mm-sky-subtle">
@@ -200,6 +211,8 @@ export function PillarLandingView({ data }: { data: PillarPageData }) {
             </Reveal>
           </div>
         </section>
+
+        <PillarFaqSection faqs={faqs} idPrefix={data.slug} />
 
         <section className="border-t border-mm-border bg-mm-sky-subtle">
           <div className="mx-auto max-w-6xl px-4 py-14 text-center sm:px-6 lg:px-8 lg:py-20">

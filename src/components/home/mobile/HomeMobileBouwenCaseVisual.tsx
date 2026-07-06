@@ -30,7 +30,8 @@ interface HomeMobileBouwenCaseVisualProps {
   onActiveCaseChange?: (caseId: BouwenCaseId) => void;
 }
 
-function CaseBrowser({ caseItem }: { caseItem: HomeCase }) {
+/** Browser-preview voor bouw-cases (mobiel carousel + desktop). */
+export function BouwenCaseBrowser({ caseItem }: { caseItem: HomeCase }) {
   const reduce = useReducedMotion();
   const ref = useRef<HTMLAnchorElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-12%" });
@@ -198,7 +199,7 @@ export function HomeMobileBouwenCaseVisual({
               transition={{ delay: index * 0.05, duration: 0.4, ease: EASE }}
               className="relative w-[min(92vw,22rem)] shrink-0 snap-center"
             >
-              <CaseBrowser caseItem={caseItem} />
+              <BouwenCaseBrowser caseItem={caseItem} />
             </motion.li>
           ))}
         </ul>

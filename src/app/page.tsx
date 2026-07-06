@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { HomeEvenRechtzettenSection } from "@/components/home/premium/HomeEvenRechtzettenSection";
 import { HeroSection } from "@/components/home/HeroSection";
 import { HomeUspBar } from "@/components/home/HomeUspBar";
 import { InsightsPreviewSection } from "@/components/home/InsightsPreviewSection";
 import { HomeMobileEditorialFlow } from "@/components/home/mobile/HomeMobileEditorialFlow";
 import { HomeMobileStickyCta } from "@/components/home/mobile/HomeMobileStickyCta";
-import { ServicesOfficeSection } from "@/components/home/office/ServicesOfficeSection";
 import { HomeAboutMeneerSection } from "@/components/home/premium/HomeAboutMeneerSection";
 import { HomeCtaSection } from "@/components/home/premium/HomeCtaSection";
 import { HomeProofSection } from "@/components/home/premium/HomeProofSection";
 import { HomeWhyMeneerSection } from "@/components/home/premium/HomeWhyMeneerSection";
-import { HomeWorkStagesScroll } from "@/components/home/premium/HomeWorkStagesScroll";
 import { JsonLdScript, webPageJsonLd } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -22,6 +21,22 @@ import {
   HOME_PAGE_TITLE,
 } from "@/lib/seo/site-metadata";
 import { INDEXABLE_ROBOTS } from "@/lib/seo/robots-policy";
+
+const HomeDesktopBouwenSection = dynamic(
+  () =>
+    import("@/components/home/desktop/HomeDesktopBouwenSection").then(
+      (m) => m.HomeDesktopBouwenSection,
+    ),
+  { ssr: true },
+);
+
+const HomeDesktopAiBillboard = dynamic(
+  () =>
+    import("@/components/home/desktop/HomeDesktopAiBillboard").then(
+      (m) => m.HomeDesktopAiBillboard,
+    ),
+  { ssr: true },
+);
 
 export const metadata: Metadata = {
   title: {
@@ -62,11 +77,11 @@ export default function HomePage() {
           <HomeMobileEditorialFlow />
         </div>
 
-        {/* Desktop: volledige homepage (>= lg) */}
+        {/* Desktop: lichtere secties, geen zwaar kantoor of scroll-route */}
         <div className="hidden lg:block">
-          <ServicesOfficeSection />
-          <HomeWorkStagesScroll />
+          <HomeDesktopBouwenSection />
           <HomeAboutMeneerSection />
+          <HomeDesktopAiBillboard />
           <HomeProofSection />
           <HomeWhyMeneerSection />
           <HomeEvenRechtzettenSection />

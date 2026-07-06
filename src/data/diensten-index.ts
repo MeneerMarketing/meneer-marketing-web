@@ -141,7 +141,7 @@ export const DIENSTEN_VOLGORDE = {
     "E-mail vangt bezoekers op die nog niet kopen.",
     "Ads op bewezen landings = elke euro werkt harder.",
   ],
-  cta: { label: "Lees de SkinComplete case", href: "/cases" },
+  cta: { label: "Lees de SkinComplete case", href: "/cases/skincomplete" },
 } as const;
 
 export const DIENSTEN_CASE_PROOF = {
@@ -152,19 +152,19 @@ export const DIENSTEN_CASE_PROOF = {
       name: "SkinComplete",
       hook: "Salons bestelden via mail. Nu 24/7 via B2B-portaal.",
       tags: ["Shopify", "B2B-portaal", "SEO vóór ads"],
-      href: "/cases",
+      href: "/cases/skincomplete",
     },
     {
       name: "BestRest",
       hook: "Eigen koers in matrassenland met miljoenenbudgetten.",
       tags: ["Custom Shopify", "Per-lijn SEO", "Google Ads & Meta"],
-      href: "/cases",
+      href: "/cases/bestrest",
     },
     {
       name: "Hills Pilates",
       hook: "Website, boekingsapp en mails in één lijn.",
       tags: ["Next.js", "Boekingsapp", "Automatisering"],
-      href: "/cases",
+      href: "/cases/hills-pilates",
     },
   ],
 } as const;

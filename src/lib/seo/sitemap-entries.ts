@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { getAllCaseSlugs } from "@/data/cases-detail";
 import { getAllPillarSlugs } from "@/data/pillar-pages";
 import { getAllSeoLandingSlugs } from "@/data/seo-landings/registry";
 import { seoLandingSitemapPriority } from "@/lib/seo-landings-meta";
@@ -113,6 +114,15 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
       lastModified: SITE_LAST_MOD,
       changeFrequency: "monthly",
       priority: 0.78,
+    });
+  }
+
+  for (const slug of getAllCaseSlugs()) {
+    entries.push({
+      url: `${siteOrigin}/cases/${slug}`,
+      lastModified: SITE_LAST_MOD,
+      changeFrequency: "monthly",
+      priority: 0.85,
     });
   }
 
