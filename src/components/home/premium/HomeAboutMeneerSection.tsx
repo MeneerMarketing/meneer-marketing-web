@@ -32,8 +32,8 @@ export function HomeAboutMeneerSection() {
       />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start lg:gap-14">
-          <div>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-stretch lg:gap-14">
+          <div className="flex flex-col lg:min-h-full">
             <motion.div
               initial={reduce ? false : { opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -66,17 +66,13 @@ export function HomeAboutMeneerSection() {
               </p>
               <AboutMeneerStrategyChat messages={HOME_ABOUT_MENEER_STRATEGY_CHAT} />
             </motion.div>
-          </div>
-
-          <div className="space-y-5">
-            <AboutMeneerStrategyOutcome visible={true} immediate />
 
             <motion.div
               initial={reduce ? false : { opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-8%" }}
-              transition={{ delay: 0.08, duration: 0.45, ease: EASE }}
-              className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm"
+              transition={{ delay: 0.1, duration: 0.45, ease: EASE }}
+              className="mt-8 rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm lg:mt-auto lg:pt-10"
             >
               <p className="text-lg font-extrabold tracking-tight text-slate-900">
                 {HOME_ABOUT_MENEER.collabTitle}
@@ -88,6 +84,10 @@ export function HomeAboutMeneerSection() {
                 Geen kanaal omdat het hip is. Wel omdat het bij jouw fase past.
               </p>
             </motion.div>
+          </div>
+
+          <div className="space-y-5">
+            <AboutMeneerStrategyOutcome visible={true} immediate />
 
             <motion.div
               initial={reduce ? false : { opacity: 0 }}
