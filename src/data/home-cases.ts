@@ -201,9 +201,9 @@ export const HOME_CASES: HomeCase[] = [
   },
 ] as const;
 
-/** Alleen cases op de homepage proof-strip */
+/** Alleen cases op de homepage proof-strip (SkinComplete zit al in bouw-sectie) */
 export const HOME_PROOF_CASES = HOME_CASES.filter(
-  (c) => c.id === "skincomplete" || c.id === "hills-pilates",
+  (c) => c.id === "bestrest" || c.id === "hills-pilates",
 );
 
 /** Alias voor cases-pagina en andere imports */
