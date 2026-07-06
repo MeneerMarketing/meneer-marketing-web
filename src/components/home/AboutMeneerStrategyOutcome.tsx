@@ -24,7 +24,8 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const PHONE_WIDTH = "w-[11.5rem]";
 const PHONE_CLASS = `h-[23rem] ${PHONE_WIDTH} shrink-0`;
 
-const PREVIEW_AREA = "relative z-0 flex min-h-[25rem] w-full flex-col items-center";
+const PREVIEW_AREA =
+  "relative z-0 flex min-h-[27rem] w-full flex-col items-center justify-center";
 
 type UgcPlatform = "tiktok" | "reels";
 
@@ -138,7 +139,7 @@ function AnimatedVideoBg({
 
 function CompactInfluencerCard() {
   return (
-    <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-md">
+    <div className="flex min-h-[23rem] w-[11.5rem] flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-md">
       <div className="flex shrink-0 items-center justify-between border-b border-slate-100 px-2.5 py-2">
         <InstagramLogoMark className="size-4 shrink-0" />
         <span className="text-[10px] font-extrabold text-slate-900">{CREATOR_HANDLE}</span>
@@ -537,22 +538,26 @@ function CompactUgcCard() {
 
 interface AboutMeneerStrategyOutcomeProps {
   visible: boolean;
+  /** Geen vertraagde mount: direct zichtbaar, geen slide-in (desktop). */
+  immediate?: boolean;
 }
 
-export function AboutMeneerStrategyOutcome({ visible }: AboutMeneerStrategyOutcomeProps) {
+export function AboutMeneerStrategyOutcome({
+  visible,
+  immediate = false,
+}: AboutMeneerStrategyOutcomeProps) {
   const reduce = useReducedMotion();
   const [tab, setTab] = useState<OutcomeTab>("influencer");
 
+  if (!visible) return null;
+
   return (
-    <AnimatePresence>
-      {visible ? (
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 8 }}
-          transition={{ duration: 0.45, ease: EASE }}
-          className="overflow-hidden rounded-2xl border border-dashed border-[#FF5722]/35 bg-gradient-to-b from-orange-50/60 to-white p-3 shadow-sm sm:p-4"
-        >
+    <motion.div
+      initial={immediate || reduce ? false : { opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: immediate ? 0 : 0.45, ease: EASE }}
+      className="overflow-hidden rounded-2xl border border-dashed border-[#FF5722]/35 bg-gradient-to-b from-orange-50/60 to-white p-3 shadow-sm sm:p-4"
+    >
           <div className="flex flex-wrap items-center gap-2">
             <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF5722]">
               {HOME_ABOUT_MENEER_STRATEGY_OUTCOME.eyebrow}
@@ -590,24 +595,23 @@ export function AboutMeneerStrategyOutcome({ visible }: AboutMeneerStrategyOutco
             ))}
           </div>
 
-          <div className="mt-3">
+          <div className="mt-3 min-h-[27rem]">
             <p className="mb-2 text-center text-[9px] font-bold uppercase tracking-[0.12em] text-slate-400">
               {HOME_ABOUT_MENEER_STRATEGY_OUTCOME.previewCaption}
             </p>
             <AnimatePresence mode="wait">
               <motion.div
                 key={tab}
-                initial={reduce ? false : { opacity: 0, x: tab === "influencer" ? -8 : 8 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: tab === "influencer" ? 8 : -8 }}
-                transition={{ duration: 0.25, ease: EASE }}
+                initial={reduce ? false : { opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2, ease: EASE }}
+                className="flex min-h-[25rem] items-center justify-center"
               >
                 {tab === "influencer" ? <CompactInfluencerCard /> : <CompactUgcCard />}
               </motion.div>
             </AnimatePresence>
           </div>
         </motion.div>
-      ) : null}
-    </AnimatePresence>
   );
 }

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import { useState } from "react";
 import { AboutMeneerStrategyChat } from "@/components/home/AboutMeneerStrategyChat";
 import { AboutMeneerStrategyOutcome } from "@/components/home/AboutMeneerStrategyOutcome";
 import {
@@ -16,7 +15,6 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 /** Desktop: persoonlijk Meneer-verhaal op de homepage. */
 export function HomeAboutMeneerSection() {
   const reduce = useReducedMotion() ?? false;
-  const [strategyReady, setStrategyReady] = useState(reduce);
 
   return (
     <section
@@ -66,14 +64,13 @@ export function HomeAboutMeneerSection() {
               <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
                 Zo klinkt zo&apos;n gesprek
               </p>
-              <AboutMeneerStrategyChat
-                messages={HOME_ABOUT_MENEER_STRATEGY_CHAT}
-                onComplete={() => setStrategyReady(true)}
-              />
+              <AboutMeneerStrategyChat messages={HOME_ABOUT_MENEER_STRATEGY_CHAT} />
             </motion.div>
           </div>
 
           <div className="space-y-5">
+            <AboutMeneerStrategyOutcome visible={true} immediate />
+
             <motion.div
               initial={reduce ? false : { opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,8 +88,6 @@ export function HomeAboutMeneerSection() {
                 Geen kanaal omdat het hip is. Wel omdat het bij jouw fase past.
               </p>
             </motion.div>
-
-            <AboutMeneerStrategyOutcome visible={strategyReady} />
 
             <motion.div
               initial={reduce ? false : { opacity: 0 }}
