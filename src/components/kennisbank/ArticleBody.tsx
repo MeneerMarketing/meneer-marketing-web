@@ -1,4 +1,4 @@
-import type { ArticleSection } from "@/data/kennisbank/articles";
+import type { ArticleSection } from "@/data/kennisbank/types";
 
 export function ArticleBody({ sections }: { sections: ArticleSection[] }) {
   return (

@@ -1,0 +1,109 @@
+import type { KennisbankArticle } from "@/data/kennisbank/types";
+
+export const MERCHANT_CENTER_FEED: KennisbankArticle = {
+  slug: "merchant-center-feed-afgekeurd",
+  title: "Google Shopping feed afgekeurd? Hier gaat het mis",
+  description:
+    "Merchant Center weigert je producten, Shopping staat stil en niemand weet waarom. De meest voorkomende feed-fouten en hoe je ze fixt.",
+  publishedAt: "2026-07-11",
+  readMinutes: 9,
+  category: "campagnes",
+  keywords: [
+    "merchant center fouten",
+    "google shopping feed",
+    "product feed afgekeurd",
+    "google shopping problemen",
+  ],
+  dienstSlugs: ["google-ads", "shopify-enterprise", "marketplaces"],
+  sections: [
+    {
+      type: "p",
+      text: "Je zet Google Shopping aan. Je voelt zich ondernemer. Dan krijg je een mail van Merchant Center alsof je een boete hebt gekregen voor iets dat je niet wist dat illegaal was. Producten afgekeurd. Hele feed gepauzeerd. Dashboard rood. Paniek. Het goede nieuws: negen van de tien keer is het geen mysterie. Het is een handvol fouten die iedereen maakt. Het minder goede nieuws: zonder schone feed betaal je voor niets.",
+    },
+    {
+      type: "h2",
+      text: "Waarom Google zo streng is",
+    },
+    {
+      type: "p",
+      text: "Shopping toont je product direct in de zoekresultaten met prijs en foto. Google wil niet dat mensen klikken op een €49 product dat €89 blijkt te zijn, of op een afbeelding die niet overeenkomt met wat je verkoopt. Strenge regels zijn verveling met een reden: vertrouwen in het platform.",
+    },
+    {
+      type: "h2",
+      text: "De fouten die ik het vaakst zie",
+    },
+    {
+      type: "h3",
+      text: "Prijs en beschikbaarheid kloppen niet",
+    },
+    {
+      type: "p",
+      text: "Je feed zegt op voorraad, je site zegt uitverkocht. Of je feed heeft oude prijzen na een sale. Google crawlt je site en vergelijkt. Mismatch = afkeuring. Sync je feed minstens dagelijks als je veel verandert.",
+    },
+    {
+      type: "h3",
+      text: "GTIN, MPN of merk ontbreken",
+    },
+    {
+      type: "p",
+      text: "Voor veel productcategorieën wil Google identificatoren. Geen barcode? Soms mag het met brand + MPN, soms niet. 'Generic' invullen om het te omzeilen werkt niet. Dan krijg je limited performance in plaats van vrij spelen.",
+    },
+    {
+      type: "h3",
+      text: "Afbeeldingen die niet voldoen",
+    },
+    {
+      type: "p",
+      text: "Te klein, watermark, promo-tekst op de foto, witte achtergrond waar dat verplicht is. Je productfoto is geen Instagram-story met 'SALE!!!' eroverheen. Dat vindt Google leuk op Meta, niet in Shopping.",
+    },
+    {
+      type: "h3",
+      text: "Verkeerde Google product category",
+    },
+    {
+      type: "p",
+      text: "Een matras in 'Home & Garden > Decor' omdat je haast had. Dan concurreer je met kaarsen en rank je slecht. Categorie bepaalt waar je verschijnt en welke regels gelden.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Landing URL gaat naar 404 of redirect-keten.",
+        "Titel is keyword-spam: 'BESTE MATRAS GOEDKOOP MATRAS KOPEN'.",
+        "Beleidsschendingen: medische claims, verboden producten, misleidende shipping.",
+        "Verzendkosten in feed komen niet overeen met checkout.",
+      ],
+    },
+    {
+      type: "callout",
+      text: "Leuk detail: een feed met 2% afgekeurde producten lijkt harmless. Maar vaak zijn dat je bestsellers met de meeste zoekvolume. Fix die eerst, niet de obscure SKU die niemand koopt.",
+    },
+    {
+      type: "h2",
+      text: "Shopping werkt pas als de shop ook klopt",
+    },
+    {
+      type: "p",
+      text: "Bij BestRest en SkinComplete is de les hetzelfde: feed is helft, productpagina is andere helft. Klik op Shopping, land op dunne pagina, afhaker. Google ziet dat. Je quality score lijdt. Je betaalt meer voor minder. Investeer in productpagina's met duidelijke info, reviews en snelheid. Shopping is geen shortcut om een zwakke catalogus te compenseren.",
+    },
+    {
+      type: "h2",
+      text: "Performance Max zonder schone feed",
+    },
+    {
+      type: "p",
+      text: "PMax trekt je Shopping-data mee. Rommel in de feed betekent rommel in PMax. De zwarte doos wordt nog zwarter als de input al kapot is. Eerst Merchant Center groen, dan pas budget omhoog.",
+    },
+    {
+      type: "callout",
+      text: "Heet take: een bureau dat Shopping aanzet zonder je feed te auditen, gokt met je catalogus alsof het een scratchcard is.",
+    },
+    {
+      type: "h2",
+      text: "Wat je vandaag checkt",
+    },
+    {
+      type: "p",
+      text: "Open Merchant Center. Diagnostics tab. Sorteer op impact. Fix de topfouten. Controleer vijf willekeurige producten: prijs op site vs feed, voorraad, afbeelding, landings-URL. Doe dat wekelijks als je ads draaien. Saai? Ja. Goedkoper dan een maand budget naar afgekeurde producten?",
+    },
+  ],
+};

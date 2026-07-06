@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPillarSlugs } from "@/data/pillar-pages";
+import { getAllSeoLandingSlugs } from "@/data/seo-landings/registry";
 import { getAllDienstSlugs } from "@/lib/diensten";
 import { getKennisbankSlugs } from "@/lib/kennisbank";
 import { siteOrigin } from "@/lib/site";
@@ -24,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/schaal-op",
     "/kennisbank",
     "/weetjes",
+    "/zoeken",
     "/privacybeleid",
     "/cookiebeleid",
     "/algemene-voorwaarden",
@@ -61,10 +63,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
+  const zoeken: MetadataRoute.Sitemap = getAllSeoLandingSlugs().map((slug) => ({
+    url: `${origin}/zoeken/${slug}`,
+    lastModified: lastMod,
+    changeFrequency: "monthly" as const,
+    priority: 0.82,
+  }));
+
   return [
     ...staticEntries,
     ...pillarEntries,
     ...diensten,
     ...kennisbank,
+    ...zoeken,
   ];
 }

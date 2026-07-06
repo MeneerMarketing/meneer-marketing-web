@@ -120,6 +120,7 @@ export function serviceJsonLd(input: {
   name: string;
   description: string;
   path: string;
+  areaServed?: string | { "@type": "City"; name: string };
 }): JsonLdObject {
   return {
     "@context": "https://schema.org",
@@ -131,7 +132,7 @@ export function serviceJsonLd(input: {
       name: "MeneerMarketing",
       url: siteUrl,
     },
-    areaServed: "NL",
+    areaServed: input.areaServed ?? "NL",
     url: absoluteUrl(input.path),
   };
 }

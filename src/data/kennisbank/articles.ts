@@ -1,29 +1,33 @@
-import type { PillarSlug } from "@/lib/navigation";
+import type { KennisbankArticle } from "@/data/kennisbank/types";
 
-export type ArticleSection =
-  | { type: "p"; text: string }
-  | { type: "h2"; text: string }
-  | { type: "h3"; text: string }
-  | { type: "ul"; items: string[] }
-  | { type: "callout"; text: string };
+export type { ArticleSection, KennisbankArticle } from "@/data/kennisbank/types";
 
-export interface KennisbankArticle {
-  slug: string;
-  title: string;
-  description: string;
-  publishedAt: string;
-  modifiedAt?: string;
-  readMinutes: number;
-  /** Categorie = een van de vijf blokken */
-  category: PillarSlug;
-  keywords: string[];
-  /** Dienst-slugs waar dit artikel bij hoort, voor interne links */
-  dienstSlugs: string[];
-  sections: ArticleSection[];
-}
+import { BESTREST_MARKETINGPLAN } from "@/data/kennisbank/articles/bestrest-marketingplan";
+import { BROAD_MATCH_GOOGLE_ADS } from "@/data/kennisbank/articles/broad-match-google-ads";
+import { GOOGLE_BUSINESS_PROFILE_LOKAAL } from "@/data/kennisbank/articles/google-business-profile-lokaal";
+import { GOOGLE_ADS_VIJF_FOUTEN } from "@/data/kennisbank/articles/google-ads-vijf-fouten";
+import { AI_CONTENT_BULK_SEO } from "@/data/kennisbank/articles/ai-content-bulk-seo";
+import { MARKETINGBUDGET_VOLGORDE } from "@/data/kennisbank/articles/marketingbudget-volgorde";
+import { ABANDONED_CART_EMAILS } from "@/data/kennisbank/articles/abandoned-cart-emails";
+import { MERCHANT_CENTER_FEED } from "@/data/kennisbank/articles/merchant-center-feed";
+import { ROAS_VS_CPA } from "@/data/kennisbank/articles/roas-vs-cpa";
+import { META_BOOST_KNOP } from "@/data/kennisbank/articles/meta-boost-knop";
+import { KLAVIYO_FLOWS } from "@/data/kennisbank/articles/klaviyo-flows";
+import { REMARKETING_GOOGLE_ADS } from "@/data/kennisbank/articles/remarketing-google-ads";
 
 export const kennisbankArticles: KennisbankArticle[] = [
-  {
+  ABANDONED_CART_EMAILS,
+  MERCHANT_CENTER_FEED,
+  ROAS_VS_CPA,
+  META_BOOST_KNOP,
+  KLAVIYO_FLOWS,
+  REMARKETING_GOOGLE_ADS,
+  BESTREST_MARKETINGPLAN,
+  BROAD_MATCH_GOOGLE_ADS,
+  GOOGLE_BUSINESS_PROFILE_LOKAAL,
+  GOOGLE_ADS_VIJF_FOUTEN,
+  AI_CONTENT_BULK_SEO,
+  MARKETINGBUDGET_VOLGORDE,  {
     slug: "ai-zoek-vindbaarheid-chatgpt",
     title: "Gevonden worden in ChatGPT: zo werkt vindbaarheid in AI-antwoorden",
     description:
