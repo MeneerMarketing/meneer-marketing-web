@@ -1,8 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
+import { LiquidCTA } from "@/components/effects/LiquidCTA";
 import { Reveal } from "@/components/effects/Reveal";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { DIENSTEN_HUB_CTA } from "@/data/diensten-hub";
 import { siteCtas } from "@/lib/cta";
 
 export function DienstenIndexCta() {
@@ -16,30 +20,26 @@ export function DienstenIndexCta() {
         className="pointer-events-none absolute left-1/2 top-0 h-48 w-96 -translate-x-1/2 rounded-full bg-[#FF5722]/15 blur-3xl"
         aria-hidden
       />
-      <div className="relative mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
+      <div className="relative mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <Reveal>
           <InteractiveLogo className="mx-auto h-16 w-16" />
-          <h2 className="mt-5 text-2xl font-extrabold text-white sm:text-3xl">
-            Weten welk blok nu het meest logisch is?
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-slate-400">
-            Vul de intake in. Twee minuten. Dan weet ik genoeg om prioriteit,
-            route en passende diensten te bespreken. Geen verplichting. Wel
-            helderheid. En soms een eerlijk &ldquo;begin ergens anders&rdquo;.
+          <p className="mt-5 text-[11px] font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+            {DIENSTEN_HUB_CTA.eyebrow}
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <h2 className="mt-3 text-balance text-2xl font-extrabold tracking-tight text-white sm:text-3xl lg:text-4xl">
+            {DIENSTEN_HUB_CTA.title}{" "}
+            <span className="text-[#FF5722]">{DIENSTEN_HUB_CTA.titleAccent}</span>
+          </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-slate-300">
+            {DIENSTEN_HUB_CTA.body}
+          </p>
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
+            <LiquidCTA href={siteCtas.startIntake.href} label={siteCtas.startIntake.label} />
             <Link
-              href={siteCtas.startIntake.href}
-              className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:bg-orange-600"
+              href="/werkwijze"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-4 text-sm font-bold text-white transition hover:border-white/30 hover:bg-white/5"
             >
-              {siteCtas.startIntake.label}
-              <ArrowUpRight className="size-4" aria-hidden />
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-4 text-sm font-bold text-white transition hover:border-white/30"
-            >
-              Gewoon praten
+              Zo werk ik
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
           </div>

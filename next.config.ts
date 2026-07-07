@@ -16,6 +16,17 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async rewrites() {
+    const indexNowKey = process.env.INDEXNOW_KEY?.trim();
+    if (!indexNowKey || indexNowKey.length < 8) return [];
+
+    return [
+      {
+        source: `/${indexNowKey}.txt`,
+        destination: "/api/indexnow/keyfile",
+      },
+    ];
+  },
   async redirects() {
     return [
       { source: "/groeiscan", destination: "/intake", permanent: true },

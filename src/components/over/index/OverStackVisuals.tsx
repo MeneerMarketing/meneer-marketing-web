@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 import {
@@ -15,6 +16,8 @@ import {
   Sparkles,
   Zap,
 } from "lucide-react";
+import { StackBrandIcon } from "@/components/over/index/StackBrandIcon";
+import type { StackBrandId } from "@/components/over/index/StackBrandIcon";
 
 interface StackVisualProps {
   itemId: string;
@@ -25,25 +28,60 @@ function VisualShell({
   children,
   accent,
   label,
+  stackId,
 }: {
   children: ReactNode;
   accent: string;
   label: string;
+  stackId: StackBrandId;
 }) {
   return (
-    <div className="relative flex min-h-[280px] flex-col p-4 sm:p-5">
+    <div className="relative flex min-h-[300px] flex-col p-4 sm:p-5 lg:min-h-[340px]">
       <div
         className="pointer-events-none absolute -right-8 -top-8 size-32 rounded-full blur-3xl"
         style={{ backgroundColor: `${accent}22` }}
         aria-hidden
       />
-      <p
-        className="relative mb-3 text-[10px] font-bold uppercase tracking-[0.16em]"
-        style={{ color: accent }}
-      >
-        {label}
-      </p>
+      <div className="relative mb-4 flex items-center gap-2.5">
+        <span
+          className="flex size-8 items-center justify-center rounded-xl border border-white/10 bg-white/[0.06] shadow-inner"
+          style={{ boxShadow: `0 0 24px -8px ${accent}66` }}
+        >
+          <StackBrandIcon id={stackId} size={18} />
+        </span>
+        <p
+          className="text-[10px] font-bold uppercase tracking-[0.16em]"
+          style={{ color: accent }}
+        >
+          {label}
+        </p>
+      </div>
       <div className="relative flex flex-1 items-center justify-center">{children}</div>
+    </div>
+  );
+}
+
+function BrowserChrome({
+  url,
+  brandId,
+  children,
+}: {
+  url: string;
+  brandId?: StackBrandId;
+  children: ReactNode;
+}) {
+  return (
+    <div className="w-full max-w-sm overflow-hidden rounded-xl border border-white/10 bg-slate-900/80 shadow-2xl">
+      <div className="flex items-center gap-2 border-b border-white/10 px-3 py-2">
+        <span className="size-2 rounded-full bg-red-400/90" aria-hidden />
+        <span className="size-2 rounded-full bg-amber-400/90" aria-hidden />
+        <span className="size-2 rounded-full bg-emerald-400/90" aria-hidden />
+        <div className="ml-1 flex flex-1 items-center gap-1.5 truncate rounded-md bg-white/5 px-2 py-0.5">
+          {brandId ? <StackBrandIcon id={brandId} size={12} /> : null}
+          <span className="truncate font-mono text-[9px] text-slate-400">{url}</span>
+        </div>
+      </div>
+      {children}
     </div>
   );
 }
@@ -52,22 +90,21 @@ function ShopifyVisual({ accent }: { accent: string }) {
   const reduce = useReducedMotion();
 
   return (
-    <VisualShell accent={accent} label="B2B-portaal · live voorbeeld">
-      <div className="w-full max-w-sm rounded-xl border border-white/10 bg-slate-900/80 shadow-2xl">
-        <div className="flex items-center gap-2 border-b border-white/10 px-3 py-2">
-          <span className="size-2 rounded-full bg-[#96BF48]" aria-hidden />
-          <span className="size-2 rounded-full bg-amber-400" aria-hidden />
-          <span className="size-2 rounded-full bg-red-400" aria-hidden />
-          <span className="ml-2 flex-1 truncate rounded-md bg-white/5 px-2 py-0.5 font-mono text-[9px] text-slate-400">
-            portal.skincomplete.nl
-          </span>
-        </div>
+    <VisualShell accent={accent} label="B2B-portaal · live voorbeeld" stackId="shopify">
+      <BrowserChrome url="portal.skincomplete.nl" brandId="shopify">
         <div className="p-3">
           <div className="flex items-center justify-between">
-            <p className="text-[10px] font-bold text-white">Salon bestelt zelf</p>
-            <span className="rounded-full bg-[#96BF48]/20 px-2 py-0.5 text-[9px] font-bold text-[#96BF48]">
-              24/7
-            </span>
+            <div className="flex items-center gap-2">
+              <StackBrandIcon id="shopify" size={16} />
+              <p className="text-[10px] font-bold text-white">Salon bestelt zelf</p>
+            </div>
+            <motion.span
+              animate={reduce ? undefined : { scale: [1, 1.06, 1] }}
+              transition={{ repeat: Infinity, duration: 2.4 }}
+              className="rounded-full bg-[#96BF48]/20 px-2 py-0.5 text-[9px] font-bold text-[#96BF48]"
+            >
+              24/7 open
+            </motion.span>
           </div>
           <div className="mt-3 grid grid-cols-3 gap-2">
             {["LED-Mask", "Neck", "Refill"].map((product, i) => (
@@ -76,11 +113,15 @@ function ShopifyVisual({ accent }: { accent: string }) {
                 initial={reduce ? false : { opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.08 * i }}
-                className="rounded-lg border border-white/10 bg-white/5 p-2"
+                whileHover={reduce ? undefined : { y: -2 }}
+                className="rounded-lg border border-white/10 bg-white/5 p-2 transition-shadow hover:shadow-[0_8px_24px_-8px_#96BF4866]"
               >
-                <div className="aspect-square rounded-md bg-gradient-to-br from-[#96BF48]/30 to-slate-800" />
+                <div className="aspect-square rounded-md bg-gradient-to-br from-[#96BF48]/35 to-slate-800" />
                 <p className="mt-1.5 truncate text-[8px] font-bold text-slate-300">{product}</p>
-                <p className="text-[8px] text-slate-500">Op voorraad</p>
+                <p className="flex items-center gap-0.5 text-[8px] text-emerald-400">
+                  <Check className="size-2" aria-hidden />
+                  Op voorraad
+                </p>
               </motion.div>
             ))}
           </div>
@@ -92,14 +133,17 @@ function ShopifyVisual({ accent }: { accent: string }) {
           >
             <div className="flex items-center gap-2">
               <ShoppingBag className="size-3.5 text-[#96BF48]" aria-hidden />
-              <span className="text-[10px] font-bold text-white">3 producten</span>
+              <span className="text-[10px] font-bold text-white">3 producten · €2.840</span>
             </div>
             <span className="rounded-full bg-[#96BF48] px-2.5 py-1 text-[9px] font-bold text-white">
               Bestellen
             </span>
           </motion.div>
+          <p className="mt-2 text-center text-[8px] font-bold text-slate-500">
+            Geen Excel. Geen &ldquo;bel me maandag&rdquo;.
+          </p>
         </div>
-      </div>
+      </BrowserChrome>
     </VisualShell>
   );
 }
@@ -108,23 +152,39 @@ function NextjsVisual({ accent }: { accent: string }) {
   const reduce = useReducedMotion();
 
   return (
-    <VisualShell accent={accent} label="Core Web Vitals · productie">
+    <VisualShell accent={accent} label="Core Web Vitals · productie" stackId="nextjs">
       <div className="grid w-full max-w-md gap-3 sm:grid-cols-2">
-        <div className="rounded-xl border border-white/10 bg-slate-900/90 p-3 font-mono text-[9px]">
-          <p className="text-slate-500">// layout.tsx</p>
-          <p className="mt-1 text-violet-300">export default function Page()</p>
-          <p className="text-white">{"{"}</p>
-          <p className="pl-2 text-emerald-300">return &lt;Hero /&gt;</p>
-          <p className="text-white">{"}"}</p>
-          <motion.div
-            initial={reduce ? false : { width: 0 }}
-            animate={{ width: "100%" }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="mt-3 h-1 overflow-hidden rounded-full bg-white/10"
-          >
-            <span className="block h-full w-3/4 rounded-full bg-emerald-400" />
-          </motion.div>
-          <p className="mt-1 text-emerald-400">build ✓ 4.2s</p>
+        <div className="overflow-hidden rounded-xl border border-white/10 bg-slate-900/90">
+          <div className="flex items-center gap-2 border-b border-white/10 px-3 py-2">
+            <StackBrandIcon id="nextjs" size={14} />
+            <span className="font-mono text-[9px] text-slate-400">layout.tsx</span>
+            <span className="ml-auto rounded bg-emerald-500/20 px-1.5 py-0.5 text-[8px] font-bold text-emerald-400">
+              TS
+            </span>
+          </div>
+          <div className="p-3 font-mono text-[9px]">
+            <p className="text-slate-500">// geen template, wel snel</p>
+            <p className="mt-1 text-violet-300">export default function Page()</p>
+            <p className="text-white">{"{"}</p>
+            <p className="pl-2 text-emerald-300">return &lt;Hero /&gt;</p>
+            <p className="text-white">{"}"}</p>
+            <motion.div
+              initial={reduce ? false : { width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="mt-3 h-1 overflow-hidden rounded-full bg-white/10"
+            >
+              <motion.span
+                animate={reduce ? undefined : { x: ["-100%", "100%"] }}
+                transition={{ repeat: Infinity, duration: 1.8, ease: "linear" }}
+                className="block h-full w-1/3 rounded-full bg-emerald-400/80"
+              />
+            </motion.div>
+            <p className="mt-1 flex items-center gap-1 text-emerald-400">
+              <Check className="size-2.5" aria-hidden />
+              build ✓ 4.2s
+            </p>
+          </div>
         </div>
         <div className="flex flex-col gap-2">
           {[
@@ -165,6 +225,7 @@ function NextjsVisual({ accent }: { accent: string }) {
               />
             </svg>
             <span className="absolute text-lg font-black text-white">98</span>
+            <StackBrandIcon id="nextjs" size={14} className="absolute -bottom-1 -right-1 opacity-60" />
           </div>
         </div>
       </div>
@@ -176,26 +237,30 @@ function SeoVisual({ accent }: { accent: string }) {
   const reduce = useReducedMotion();
 
   return (
-    <VisualShell accent={accent} label="Google + AI-antwoorden">
+    <VisualShell accent={accent} label="Google + AI-antwoorden" stackId="seo">
       <div className="grid w-full max-w-md gap-3 sm:grid-cols-[1.1fr_0.9fr]">
-        <div className="rounded-xl border border-white/10 bg-white p-3">
+        <div className="rounded-xl border border-white/10 bg-white p-3 shadow-lg">
           <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-2 py-1">
+            <StackBrandIcon id="seo" size={14} />
             <Search className="size-3 text-slate-400" aria-hidden />
             <span className="text-[9px] font-medium text-slate-600">led mask salon inkoop</span>
           </div>
           <div className="mt-2 space-y-2">
             <motion.div
-              initial={reduce ? false : { opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="rounded-lg border border-[#00BCD4]/30 bg-cyan-50/80 p-2"
+              initial={reduce ? false : { opacity: 0, y: 4 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="rounded-lg border border-[#00BCD4]/30 bg-cyan-50/80 p-2 ring-2 ring-[#00BCD4]/20"
             >
-              <p className="text-[9px] font-bold text-[#00838F]">jouwmerk.nl</p>
+              <p className="flex items-center gap-1 text-[9px] font-bold text-[#00838F]">
+                <span className="size-1.5 rounded-full bg-emerald-500" aria-hidden />
+                jouwmerk.nl
+              </p>
               <p className="text-[8px] leading-snug text-slate-600">
                 Professioneel LED-mask voor salons. B2B-portaal, training inbegrepen.
               </p>
             </motion.div>
             {[1, 2].map((n) => (
-              <div key={n} className="rounded-lg bg-slate-50 p-2 opacity-50">
+              <div key={n} className="rounded-lg bg-slate-50 p-2 opacity-40">
                 <p className="h-2 w-16 rounded bg-slate-200" />
                 <p className="mt-1.5 h-1.5 w-full rounded bg-slate-100" />
               </div>
@@ -203,7 +268,10 @@ function SeoVisual({ accent }: { accent: string }) {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          {["ChatGPT", "Gemini"].map((ai, i) => (
+          {[
+            { ai: "ChatGPT", icon: "/icons/chatgpt-mark.png" },
+            { ai: "Gemini", icon: "/icons/gemini-mark.png" },
+          ].map(({ ai, icon }, i) => (
             <motion.div
               key={ai}
               initial={reduce ? false : { opacity: 0, y: 8 }}
@@ -211,9 +279,10 @@ function SeoVisual({ accent }: { accent: string }) {
               transition={{ delay: 0.15 * i }}
               className="rounded-xl border border-white/10 bg-slate-900/80 p-2.5"
             >
-              <p className="flex items-center gap-1 text-[8px] font-bold uppercase text-slate-400">
-                <Sparkles className="size-2.5" style={{ color: accent }} aria-hidden />
+              <p className="flex items-center gap-1.5 text-[8px] font-bold uppercase text-slate-400">
+                <Image src={icon} alt="" width={14} height={14} className="rounded-sm" unoptimized />
                 {ai}
+                <Sparkles className="ml-auto size-2.5" style={{ color: accent }} aria-hidden />
               </p>
               <p className="mt-1 text-[8px] leading-snug text-slate-300">
                 Voor salons: <span className="font-bold text-cyan-300">JouwMerk</span> levert
@@ -243,13 +312,20 @@ function GoogleAdsVisual({ accent }: { accent: string }) {
   const reduce = useReducedMotion();
 
   return (
-    <VisualShell accent={accent} label="Campagne · eerst converteren">
+    <VisualShell accent={accent} label="Campagne · eerst converteren" stackId="google-ads">
       <div className="w-full max-w-sm rounded-xl border border-white/10 bg-slate-900/80 p-4">
         <div className="flex items-center justify-between">
-          <p className="text-[10px] font-bold text-white">Search · NL</p>
-          <span className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[9px] font-bold text-emerald-400">
+          <div className="flex items-center gap-2">
+            <StackBrandIcon id="google-ads" size={18} />
+            <p className="text-[10px] font-bold text-white">Search · NL</p>
+          </div>
+          <motion.span
+            animate={reduce ? undefined : { opacity: [0.7, 1, 0.7] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[9px] font-bold text-emerald-400"
+          >
             ROAS 4.2x
-          </span>
+          </motion.span>
         </div>
         <div className="mt-4 grid grid-cols-3 gap-2">
           {[
@@ -275,7 +351,7 @@ function GoogleAdsVisual({ accent }: { accent: string }) {
         <div className="mt-3 flex items-center gap-2 rounded-lg border border-[#FF5722]/25 bg-[#FF5722]/10 px-3 py-2">
           <MousePointerClick className="size-3.5 text-[#FF5722]" aria-hidden />
           <p className="text-[9px] font-bold text-[#FF5722]">
-            Landingspagina scoorde eerst. Ads daarna.
+            Landingspagina scoorde eerst. Ads daarna. Geen gokken.
           </p>
         </div>
       </div>
@@ -287,15 +363,12 @@ function MetaAdsVisual({ accent }: { accent: string }) {
   const reduce = useReducedMotion();
 
   return (
-    <VisualShell accent={accent} label="Feed · Reels · Stories">
+    <VisualShell accent={accent} label="Feed · Reels · Stories" stackId="meta-ads">
       <div className="flex w-full max-w-sm items-center gap-4">
         <div className="w-[120px] shrink-0 overflow-hidden rounded-[1.25rem] border-2 border-slate-700 bg-slate-900 shadow-xl">
           <div className="flex items-center justify-between bg-slate-800 px-2 py-1">
             <span className="text-[8px] font-bold text-white">9:41</span>
-            <div className="flex gap-0.5">
-              <span className="size-1 rounded-full bg-white/60" />
-              <span className="size-1 rounded-full bg-white/60" />
-            </div>
+            <StackBrandIcon id="meta-ads" size={12} />
           </div>
           <div className="relative aspect-[9/14] bg-gradient-to-b from-pink-500/40 via-purple-600/30 to-slate-900 p-2">
             <span className="rounded bg-[#E1306C] px-1.5 py-0.5 text-[7px] font-bold text-white">
@@ -353,14 +426,14 @@ function AutomationVisual({ accent }: { accent: string }) {
   const reduce = useReducedMotion();
 
   const nodes = [
-    { id: "order", label: "Shopify order", icon: Package, className: "left-0 top-2" },
-    { id: "hub", label: "n8n flow", icon: Zap, className: "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" },
+    { id: "order", label: "Shopify order", brandId: "shopify" as const, className: "left-0 top-2" },
+    { id: "hub", label: "n8n flow", brandId: "automation" as const, className: "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" },
     { id: "mail", label: "Klaviyo mail", icon: MessageCircle, className: "right-0 top-0" },
     { id: "crm", label: "CRM update", icon: BarChart3, className: "right-0 bottom-2" },
   ] as const;
 
   return (
-    <VisualShell accent={accent} label="Koppelingen · zero copy-paste">
+    <VisualShell accent={accent} label="Koppelingen · zero copy-paste" stackId="automation">
       <div className="relative h-[220px] w-full max-w-md">
         <svg viewBox="0 0 320 200" className="absolute inset-0 size-full" aria-hidden>
           <motion.path
@@ -393,10 +466,19 @@ function AutomationVisual({ accent }: { accent: string }) {
             animate={{ pathLength: 1 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           />
+          {!reduce ? (
+            <motion.circle
+              r="3"
+              fill={accent}
+              initial={{ offsetDistance: "0%" }}
+              animate={{ offsetDistance: "100%" }}
+              transition={{ repeat: Infinity, duration: 2.2, ease: "linear" }}
+              style={{ offsetPath: "path('M 70 50 C 110 50, 130 95, 155 100')" }}
+            />
+          ) : null}
         </svg>
 
         {nodes.map((node, i) => {
-          const Icon = node.icon;
           const isHub = node.id === "hub";
           return (
             <motion.div
@@ -412,18 +494,27 @@ function AutomationVisual({ accent }: { accent: string }) {
                 className="flex size-9 items-center justify-center rounded-lg"
                 style={{
                   backgroundColor: isHub ? `${accent}33` : "rgba(255,255,255,0.06)",
-                  color: isHub ? accent : "#94A3B8",
                 }}
               >
-                <Icon className="size-4" aria-hidden />
+                {"brandId" in node && node.brandId ? (
+                  <StackBrandIcon id={node.brandId} size={20} />
+                ) : "icon" in node && node.icon ? (
+                  <node.icon className="size-4 text-slate-400" aria-hidden />
+                ) : (
+                  <Package className="size-4 text-slate-400" aria-hidden />
+                )}
               </span>
               <p className="mt-1.5 text-center text-[8px] font-bold leading-tight text-slate-300">
                 {node.label}
               </p>
               {isHub ? (
-                <span className="mt-1 rounded-full bg-[#FF5722] px-2 py-0.5 text-[7px] font-bold text-white">
+                <motion.span
+                  animate={reduce ? undefined : { opacity: [0.6, 1, 0.6] }}
+                  transition={{ repeat: Infinity, duration: 1.5 }}
+                  className="mt-1 rounded-full bg-[#FF5722] px-2 py-0.5 text-[7px] font-bold text-white"
+                >
                   live
-                </span>
+                </motion.span>
               ) : null}
             </motion.div>
           );
@@ -435,7 +526,7 @@ function AutomationVisual({ accent }: { accent: string }) {
           transition={{ delay: 0.55 }}
           className="absolute inset-x-0 bottom-0 text-center text-[9px] font-bold text-slate-400"
         >
-          Order binnen → mail uit → CRM bijgewerkt. Automatisch.
+          Order binnen → mail uit → CRM bijgewerkt. Jij: koffie.
         </motion.p>
       </div>
     </VisualShell>

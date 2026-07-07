@@ -4,6 +4,8 @@ import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { CaseLivePreview } from "@/components/cases/CaseLivePreview";
 import type { CaseDetail } from "@/data/cases-detail";
+import { getCaseSeo } from "@/lib/seo/case-seo";
+import { EeatCaseCredit } from "@/components/seo/EeatCaseCredit";
 import { siteCtas } from "@/lib/cta";
 
 interface CaseDetailViewProps {
@@ -124,6 +126,15 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
               <p className="rounded-2xl border-2 border-[#FF5722]/30 bg-orange-50 px-5 py-4 text-sm font-bold text-slate-900">
                 {story.punch}
               </p>
+            </Reveal>
+            <Reveal delay={0.35}>
+              <EeatCaseCredit
+                client={caseData.client}
+                metric={caseData.metric}
+                metricHint={caseData.metricHint}
+                publishedAt={getCaseSeo(caseData.id)?.publishedAt ?? "2025-01-01"}
+                websiteUrl={caseData.website?.url}
+              />
             </Reveal>
           </div>
         </div>

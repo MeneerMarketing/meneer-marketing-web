@@ -21,6 +21,9 @@ import { getDienstExtra } from "@/data/dienst-extras";
 import { getAllDienstSlugs, getDienstBySlug, getRelatedDiensten } from "@/lib/diensten";
 import { getArticlesByDienst, getZoekenLinksForDienst } from "@/lib/kennisbank";
 import { ctaNav, megaMenuColumns } from "@/lib/navigation";
+import { BRAND_DISPLAY, BRAND_LEGAL } from "@/lib/seo/e-e-a-t";
+import { getDienstOgAccent, getDienstSeo } from "@/lib/seo/dienst-seo";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
 import { absoluteUrl } from "@/lib/site";
 
 export function generateStaticParams(): { slug: string }[] {
@@ -35,19 +38,19 @@ export async function generateMetadata({
   const { slug } = await params;
   const d = getDienstBySlug(slug);
   if (!d) return { title: "Dienst" };
-  const title = `${d.name} | MeneerMarketing`;
-  return {
-    title: d.name,
-    description: d.description,
-    alternates: { canonical: absoluteUrl(`/diensten/${slug}`) },
-    openGraph: {
-      title,
-      description: d.description,
-      url: absoluteUrl(`/diensten/${slug}`),
-      locale: "nl_NL",
-      type: "website",
-    },
-  };
+
+  const seo = getDienstSeo(slug);
+  const title = seo?.title ?? `${d.name} | Meneer Marketing`;
+  const description = seo?.description ?? d.description;
+
+  return buildPageMetadata({
+    title,
+    titleAbsolute: true,
+    description,
+    path: `/diensten/${slug}`,
+    keywords: seo?.keywords,
+    ogAccent: getDienstOgAccent(slug),
+  });
 }
 
 export default async function DienstPage({
@@ -74,7 +77,8 @@ export default async function DienstPage({
     description: d.description,
     provider: {
       "@type": "Organization",
-      name: "MeneerMarketing",
+      name: BRAND_LEGAL,
+      alternateName: BRAND_DISPLAY,
       url: absoluteUrl("/"),
     },
     areaServed: "NL",

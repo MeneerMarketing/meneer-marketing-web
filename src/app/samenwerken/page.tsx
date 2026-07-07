@@ -14,17 +14,18 @@ import { ConversionForm } from "@/components/contact/ConversionForm";
 import { ConversionHero } from "@/components/contact/ConversionHero";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 import { absoluteUrl } from "@/lib/site";
 import { NOINDEX_FOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 
 export const metadata: Metadata = {
   title: "Samenwerken",
   description:
-    "Vraag een samenwerking aan bij MeneerMarketing. Retainer, project of embedded. Eén team, heldere afspraken, jouw tempo.",
+    "Vraag een samenwerking aan bij Meneer Marketing. Retainer, project of embedded. Eén team, heldere afspraken, jouw tempo.",
   alternates: { canonical: absoluteUrl("/samenwerken") },
   robots: NOINDEX_FOLLOW_ROBOTS,
   openGraph: {
-    title: "Samenwerken | MeneerMarketing",
+    title: `Samenwerken | ${BRAND_DISPLAY}`,
     description:
       "Retainer, project, embedded of sparren. Kies de vorm die past bij jouw groeifase.",
     url: absoluteUrl("/samenwerken"),

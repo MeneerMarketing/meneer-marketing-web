@@ -13,26 +13,20 @@ import {
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { CONTACT_FAQ } from "@/data/contact-index";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { HUB_PAGE_SEO } from "@/lib/seo/hub-pages";
 import { absoluteUrl } from "@/lib/site";
 
 const PAGE_PATH = "/contact";
-const PAGE_TITLE = "Contact. Gewoon praten, geen formulier-gevoel";
-const PAGE_DESCRIPTION =
-  "Neem contact op met Meneer Marketing in Apeldoorn. Chat-achtig gesprek over marketing, je site, Shopify, SEO, ads of gewoon sparren. Reactie binnen één à twee werkdagen.";
+const seo = HUB_PAGE_SEO.contact;
 
-export const metadata: Metadata = {
-  title: PAGE_TITLE,
-  description: PAGE_DESCRIPTION,
-  alternates: { canonical: absoluteUrl(PAGE_PATH) },
-  openGraph: {
-    title: "Contact | Meneer Marketing",
-    description:
-      "Typ alsof je me app't. Geen chatbot, geen CRM-automaat. Direct bij mij.",
-    url: absoluteUrl(PAGE_PATH),
-    locale: "nl_NL",
-    type: "website",
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: seo.title,
+  titleAbsolute: true,
+  description: seo.description,
+  path: PAGE_PATH,
+  ogAccent: seo.ogAccent,
+});
 
 export default function ContactPage() {
   return (
@@ -44,8 +38,8 @@ export default function ContactPage() {
             { name: "Contact", path: PAGE_PATH },
           ]),
           contactPageJsonLd({
-            name: PAGE_TITLE,
-            description: PAGE_DESCRIPTION,
+            name: seo.title,
+            description: seo.description,
             path: PAGE_PATH,
           }),
           faqPageJsonLd([...CONTACT_FAQ]),

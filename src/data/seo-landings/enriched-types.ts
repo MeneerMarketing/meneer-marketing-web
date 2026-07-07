@@ -52,6 +52,8 @@ export interface SeoLandingTocItem {
 }
 
 export interface SeoLandingEnrichedSections {
+  uniqueOpener: string;
+  painSectionIntro: string;
   story: SeoLandingProseBlock;
   scenario: { title: string; paragraphs: readonly string[] };
   deepDive: SeoLandingProseBlock;

@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Clock } from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleBody } from "@/components/kennisbank/ArticleBody";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
+import { EeatAuthorByline } from "@/components/seo/EeatAuthorByline";
 import {
   JsonLdScript,
   articleJsonLd,
@@ -18,10 +19,13 @@ import {
   getKennisbankArticleBySlug,
   getKennisbankCategory,
   getKennisbankSlugs,
+  getArticleModifiedAt,
   getRelatedArticles,
   getZoekenLinksForArticle,
 } from "@/lib/kennisbank";
+import { getCaseLinkForArticle } from "@/lib/seo/internal-links";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { getKennisbankMetaDescription } from "@/lib/seo/kennisbank-seo";
 import { getArticleFaqs } from "@/lib/kennisbank-faq";
 import { absoluteUrl } from "@/lib/site";
 
@@ -38,23 +42,15 @@ export async function generateMetadata({
   const article = getKennisbankArticleBySlug(slug);
   if (!article) return { title: "Artikel" };
   return buildPageMetadata({
-    title: `${article.title} | MeneerMarketing`,
+    title: `${article.title} | Meneer Marketing`,
     titleAbsolute: true,
-    description: article.description,
+    description: getKennisbankMetaDescription(article.slug, article.description),
     path: `/kennisbank/${article.slug}`,
     keywords: article.keywords,
     type: "article",
     publishedTime: article.publishedAt,
-    modifiedTime: article.modifiedAt ?? article.publishedAt,
+    modifiedTime: getArticleModifiedAt(article),
   });
-}
-
-function formatDate(iso: string) {
-  return new Intl.DateTimeFormat("nl-NL", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  }).format(new Date(iso));
 }
 
 export default async function KennisbankArticlePage({
@@ -69,6 +65,7 @@ export default async function KennisbankArticlePage({
   const category = getKennisbankCategory(article.category);
   const related = getRelatedArticles(slug, 3);
   const zoekenLinks = getZoekenLinksForArticle(slug, 2);
+  const caseLink = getCaseLinkForArticle(slug);
   const articleFaqs = getArticleFaqs(article);
   const diensten = article.dienstSlugs
     .map((s) => getDienstBySlug(s))
@@ -79,7 +76,7 @@ export default async function KennisbankArticlePage({
     headline: article.title,
     description: article.description,
     datePublished: article.publishedAt,
-    dateModified: article.modifiedAt,
+    dateModified: getArticleModifiedAt(article),
     url,
     keywords: article.keywords,
   });
@@ -148,14 +145,12 @@ export default async function KennisbankArticlePage({
               <p className="mt-4 text-xl font-medium leading-relaxed text-mm-muted">
                 {article.description}
               </p>
-              <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-mm-muted">
-                <time dateTime={article.publishedAt}>
-                  Gepubliceerd {formatDate(article.publishedAt)}
-                </time>
-                <span className="inline-flex items-center gap-1.5">
-                  <Clock className="size-4" aria-hidden />
-                  {article.readMinutes} min lezen
-                </span>
+              <div className="mt-6">
+                <EeatAuthorByline
+                  publishedAt={article.publishedAt}
+                  modifiedAt={article.modifiedAt}
+                  readMinutes={article.readMinutes}
+                />
               </div>
             </div>
           </header>
@@ -195,6 +190,24 @@ export default async function KennisbankArticlePage({
                     </li>
                   ))}
                 </ul>
+              </aside>
+            ) : null}
+
+            {caseLink ? (
+              <aside className="mt-6 rounded-3xl border border-[#FF5722]/20 bg-orange-50/60 p-7">
+                <p className="text-xs font-bold uppercase tracking-wider text-[#FF5722]">
+                  Case in de praktijk
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  {caseLink.hook}
+                </p>
+                <Link
+                  href={caseLink.href}
+                  className="mt-4 inline-flex items-center gap-1.5 rounded-full border-2 border-slate-900 bg-white px-4 py-2 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+                >
+                  Bekijk case {caseLink.label}
+                  <ArrowUpRight className="size-3.5" aria-hidden />
+                </Link>
               </aside>
             ) : null}
 

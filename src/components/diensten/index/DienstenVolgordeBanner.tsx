@@ -1,10 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
 import { DIENSTEN_VOLGORDE } from "@/data/diensten-index";
 
+const STEPS = ["Site & shop", "SEO & mail", "Google Ads & Meta"] as const;
+const EASE = [0.22, 1, 0.36, 1] as const;
+
 export function DienstenVolgordeBanner() {
+  const reduce = useReducedMotion();
+
   return (
     <section
       className="border-b border-slate-200 bg-white"
@@ -52,10 +60,7 @@ export function DienstenVolgordeBanner() {
               </Reveal>
             </div>
 
-            <div
-              className="relative flex min-h-[240px] items-center justify-center bg-slate-900 p-8 lg:min-h-0"
-              aria-hidden
-            >
+            <div className="relative flex min-h-[280px] items-center justify-center bg-slate-900 p-8 lg:min-h-0">
               <div
                 className="pointer-events-none absolute inset-0 opacity-[0.08]"
                 style={{
@@ -63,11 +68,16 @@ export function DienstenVolgordeBanner() {
                     "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
                   backgroundSize: "24px 24px",
                 }}
+                aria-hidden
               />
               <div className="relative w-full max-w-xs space-y-3">
-                {["Site & shop", "SEO & mail", "Google Ads & Meta"].map((step, i) => (
-                  <div
+                {STEPS.map((step, i) => (
+                  <motion.div
                     key={step}
+                    initial={reduce ? false : { opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.15 * i, duration: 0.45, ease: EASE }}
                     className={`rounded-xl border px-4 py-3 text-center text-sm font-bold ${
                       i === 2
                         ? "border-[#FF5722]/50 bg-[#FF5722]/20 text-[#FF5722]"
@@ -80,11 +90,17 @@ export function DienstenVolgordeBanner() {
                         eerst dit
                       </span>
                     ) : (
-                      <span className="mt-2 block text-[10px] font-semibold text-orange-300">
+                      <motion.span
+                        initial={reduce ? false : { opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.55 }}
+                        className="mt-2 block text-[10px] font-semibold text-orange-300"
+                      >
                         pas als het fundament staat
-                      </span>
+                      </motion.span>
                     )}
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>

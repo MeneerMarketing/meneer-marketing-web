@@ -10,26 +10,21 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { WeetjesGrid } from "@/components/weetjes/WeetjesGrid";
 import { ALL_MARKETING_FUN_FACTS } from "@/data/marketing-fun-facts";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { HUB_PAGE_SEO } from "@/lib/seo/hub-pages";
 import { siteCtas } from "@/lib/cta";
 import { absoluteUrl } from "@/lib/site";
 
 const PAGE_PATH = "/weetjes";
-const PAGE_TITLE = "Marketing weetjes. Feitjes die je route scherper maken";
-const PAGE_DESCRIPTION =
-  "Vijftien onderbouwde marketingfeitjes: van Google-omzet per minuut tot Instagrams miljardenexit. Handig voor verjaardagen én voor je groeistrategie.";
+const seo = HUB_PAGE_SEO.weetjes;
 
-export const metadata: Metadata = {
-  title: PAGE_TITLE,
-  description: PAGE_DESCRIPTION,
-  alternates: { canonical: absoluteUrl(PAGE_PATH) },
-  openGraph: {
-    title: "Marketing weetjes | MeneerMarketing",
-    description: PAGE_DESCRIPTION,
-    url: absoluteUrl(PAGE_PATH),
-    locale: "nl_NL",
-    type: "website",
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: seo.title,
+  titleAbsolute: true,
+  description: seo.description,
+  path: PAGE_PATH,
+  ogAccent: seo.ogAccent,
+});
 
 export default function WeetjesPage() {
   return (

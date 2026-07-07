@@ -6,6 +6,8 @@ import { ScrollMeneer } from "@/components/site/ScrollMeneer";
 import {
   buildOpenGraph,
   buildTwitter,
+  HOME_PAGE_DESCRIPTION,
+  HOME_PAGE_TITLE,
   SITE_NAME,
 } from "@/lib/seo/site-metadata";
 import { siteOrigin } from "@/lib/site";
@@ -18,17 +20,13 @@ const plusJakarta = Plus_Jakarta_Sans({
   preload: true,
 });
 
-const defaultTitle = "MeneerMarketing. Marketing, websites & Shopify";
-const defaultDescription =
-  "Websites from scratch, Shopify-shops, SEO, Google Ads, Meta Ads en e-mail. Eén strategisch partner voor online groei in Nederland.";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
   title: {
-    default: defaultTitle,
+    default: HOME_PAGE_TITLE,
     template: `%s | ${SITE_NAME}`,
   },
-  description: defaultDescription,
+  description: HOME_PAGE_DESCRIPTION,
   applicationName: SITE_NAME,
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
@@ -36,13 +34,13 @@ export const metadata: Metadata = {
     shortcut: ["/icon.svg"],
   },
   openGraph: buildOpenGraph({
-    title: defaultTitle,
-    description: defaultDescription,
+    title: HOME_PAGE_TITLE,
+    description: HOME_PAGE_DESCRIPTION,
     path: "/",
   }),
   twitter: buildTwitter({
-    title: defaultTitle,
-    description: defaultDescription,
+    title: HOME_PAGE_TITLE,
+    description: HOME_PAGE_DESCRIPTION,
   }),
   robots: {
     index: true,

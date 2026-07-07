@@ -26,6 +26,8 @@ export const SCROLL_SECTION_HINTS: Readonly<Record<string, string>> = {
     "Mythes. LinkedIn zegt veel. Ik zeg wat klopt.",
   "insights-heading":
     "Kennisbank. Alles wat ik weet, gratis. Geen paywall op common sense.",
+  "home-pillars-strip-heading":
+    "Vijf blokken. Strategie tot behoud. Tik door naar het stuk dat bij jou past.",
   "home-cta": "Afsluiter. Waar zit jouw groei? Vertel het, ik reageer zelf.",
 
   // Mobiel editorial
@@ -48,13 +50,17 @@ export const SCROLL_SECTION_HINTS: Readonly<Record<string, string>> = {
     "Ads. Klein testen, hard meten. Jouw budget is geen roulette.",
   "mobile-myth-heading":
     "Even rechtzetten. Swipe. Influencers liegen soms, ik niet (vaak).",
+  "mobile-pillars-strip-heading":
+    "Vijf blokken. Waar je start bepaalt de volgorde. Geen alles-tegelijk-plan.",
   "mobile-funfacts-heading":
     "Weetjes. Nutteloos? Misschien. Grappig? Zeker weten.",
   "mobile-cta": "Laatste stop. Plan een gesprek of mail. Ik bijt niet.",
 
   // Footer
-  "site-footer": "Footer. Contact, links, en ik wil gewoon even contact, ofzo.",
-  Footer: "Footer. Contact, links, en ik wil gewoon even contact, ofzo.",
+  "site-footer":
+    "Footer. Links, mail, en je laatste kans voordat je weer omhoog scrollt.",
+  Footer:
+    "Footer. Links, mail, en je laatste kans voordat je weer omhoog scrollt.",
 };
 
 export function resolveScrollSectionHint(el: HTMLElement): string {

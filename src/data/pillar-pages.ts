@@ -33,9 +33,9 @@ export interface PillarPageData {
 export const pillarPages: Record<PillarSlug, PillarPageData> = {
   strategie: {
     slug: "strategie",
-    metaTitle: "Strategie. Eén groeiplan voor je hele online marketing",
+    metaTitle: "Strategie | eerst het plan, dan pas budget | Meneer Marketing",
     metaDescription:
-      "Geen losse acties maar één plan: welke kanalen, welk budget en wat eerst. MeneerMarketing bedenkt de strategie en voert hem ook uit.",
+      "Welk kanaal, welke volgorde, welk budget? Ik reken het door vóór je euro's verbrandt. Geen PDF in een la, wel een plan dat ik ook uitvoer.",
     keywords: [
       "marketingstrategie",
       "groeiplan bedrijf",
@@ -89,9 +89,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
   },
   bouwen: {
     slug: "bouwen",
-    metaTitle: "Bouwen. Websites, Shopify-shops en web-apps from scratch",
+    metaTitle: "Bouwen | websites & Shopify from scratch | Meneer Marketing",
     metaDescription:
-      "Websites from scratch, Shopify-webshops en web-apps: snel, veilig en gebouwd om mee te groeien. MeneerMarketing bouwt het fundament achter je groei.",
+      "Geen templates, geen page builders. Custom sites en Shopify-shops, snel genoeg voor SEO, strak genoeg voor ads. Ik bouw het fundament achter je groei.",
     keywords: [
       "website laten bouwen",
       "Shopify development",
@@ -112,7 +112,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       "De meeste traagheid op het web komt niet van één plugin, maar van keuzes die niet passen: een template dat niet klopt, apps die botsen, content zonder structuur. Wij keren dat om: eerst een goed plan, dan pas bouwen.",
       "Of je nu een internationale webshop, een site met honderden pagina's of een klantportaal nodig hebt: het fundament moet hetzelfde doen. Snel laden, makkelijk beheren, en ruimte om te groeien zonder alles opnieuw te moeten doen.",
     ],
-    angleTitle: "Waarom MeneerMarketing anders bouwt",
+    angleTitle: "Waarom Meneer Marketing anders bouwt",
     angleBody:
       "We denken vanuit groei: wat gebeurt er als verkeer verdubbelt, als je nieuwe markten opent, als je marketing strakkere landingspagina's nodig heeft? Daarom combineren we strakke frontends met robuuste koppelingen, logging en documentatie. Geen black box.",
     serviceIntro:
@@ -145,9 +145,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
   },
   vindbaarheid: {
     slug: "vindbaarheid",
-    metaTitle: "Vindbaarheid. SEO, AI-antwoorden, content en reviews",
+    metaTitle: "Vindbaarheid | SEO, Google én ChatGPT | Meneer Marketing",
     metaDescription:
-      "Gevonden worden in Google, ChatGPT en Maps: SEO, AI-antwoorden, lokale vindbaarheid, content en reviews. MeneerMarketing maakt je vindbaar waar je klant zoekt.",
+      "Organisch verkeer is gratis verkeer. SEO, AI-antwoorden, Maps en reviews. Ik zorg dat je klopt waar mensen zoeken, ook buiten Google.",
     keywords: [
       "SEO bureau Nederland",
       "vindbaar in ChatGPT",
@@ -201,9 +201,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
   },
   campagnes: {
     slug: "campagnes",
-    metaTitle: "Campagnes. Google Ads, Meta Ads, social en creators",
+    metaTitle: "Campagnes | Google Ads, Meta & creators | Meneer Marketing",
     metaDescription:
-      "Google Ads, Meta Ads, social media, UGC en influencer marketing die meetbaar verkopen. MeneerMarketing zet campagnes op die je kunt sturen.",
+      "Ads die converteren omdat landingspagina en meting kloppen. Google Ads, Meta Ads, UGC en influencers. Budget naar wat rendeert, weg met wat verbrandt.",
     keywords: [
       "Google Ads specialist",
       "Meta Ads bureau",
@@ -257,9 +257,9 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
   },
   behoud: {
     slug: "behoud",
-    metaTitle: "Behoud. E-mail, retentie en slimme koppelingen",
+    metaTitle: "Behoud | e-mail, retentie & automatisering | Meneer Marketing",
     metaDescription:
-      "E-mailmarketing, retentie, loyaliteit en automatisering: klanten die terugkomen en processen die zichzelf draaien. MeneerMarketing regelt het.",
+      "Nieuwe klant werven is duur. E-mail, Klaviyo, koppelingen en flows die bestaande klanten terugbrengen. E-commerce op autopilot, meetbaar in omzet.",
     keywords: [
       "e-mailmarketing bureau",
       "Klaviyo specialist",

@@ -5,12 +5,14 @@ import { CaseDetailView } from "@/components/cases/CaseDetailView";
 import {
   JsonLdScript,
   breadcrumbJsonLd,
+  caseStudyJsonLd,
 } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getAllCaseSlugs, getCaseBySlug } from "@/data/cases-detail";
-import { absoluteUrl, siteUrl } from "@/lib/site";
+import { absoluteUrl } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { getCaseSeo } from "@/lib/seo/case-seo";
 
 interface CasePageProps {
   params: Promise<{ slug: string }>;
@@ -27,48 +29,47 @@ export async function generateMetadata({
   const c = getCaseBySlug(slug);
   if (!c) return { title: "Case" };
 
-  const title = `Case ${c.client} · ${c.story.punch} | MeneerMarketing`;
+  const seo = getCaseSeo(slug);
+  const title =
+    seo?.title ?? `Case ${c.client} | ${c.story.punch} | Meneer Marketing`;
+  const description =
+    seo?.description ?? `${c.story.hook} ${c.story.meneerLine}`;
+
   return buildPageMetadata({
     title,
     titleAbsolute: true,
-    description: `${c.story.hook} ${c.story.meneerLine}`,
+    description,
     path: `/cases/${slug}`,
     keywords: [...c.tags],
     ogAccent: c.palette.accent.replace("#", ""),
   });
 }
 
-function caseStudyJsonLd(c: NonNullable<ReturnType<typeof getCaseBySlug>>) {
+function caseStudySchema(
+  c: NonNullable<ReturnType<typeof getCaseBySlug>>,
+  seo: ReturnType<typeof getCaseSeo>,
+) {
   const url = absoluteUrl(`/cases/${c.id}`);
-  return {
-    "@context": "https://schema.org",
-    "@type": "Article",
+  const image = c.previewPoster ?? c.previewImage;
+  return caseStudyJsonLd({
+    client: c.client,
     headline: `${c.client}: ${c.title}`,
-    description: c.story.punch,
+    description: seo?.description ?? c.story.punch,
     url,
-    author: {
-      "@type": "Organization",
-      name: "MeneerMarketing",
-      url: siteUrl,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "MeneerMarketing",
-      url: siteUrl,
-    },
-    about: {
-      "@type": "Organization",
-      name: c.client,
-      ...(c.website ? { url: c.website.url } : {}),
-    },
-    inLanguage: "nl-NL",
-  };
+    datePublished: seo?.publishedAt ?? "2025-01-01",
+    dateModified: seo?.dateModified ?? seo?.publishedAt,
+    image,
+    keywords: c.tags,
+    clientWebsite: c.website?.url,
+  });
 }
 
 export default async function CaseDetailPage({ params }: CasePageProps) {
   const { slug } = await params;
   const caseData = getCaseBySlug(slug);
   if (!caseData) notFound();
+
+  const seo = getCaseSeo(slug);
 
   return (
     <>
@@ -79,7 +80,7 @@ export default async function CaseDetailPage({ params }: CasePageProps) {
             { name: "Cases", path: "/cases" },
             { name: caseData.client, path: `/cases/${slug}` },
           ]),
-          caseStudyJsonLd(caseData),
+          caseStudySchema(caseData, seo),
         ]}
       />
       <SiteHeader />

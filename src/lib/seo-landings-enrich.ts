@@ -1,4 +1,4 @@
-import type { SeoLandingCategory, SeoLandingFaq, SeoLandingPage } from "@/data/seo-landings/types";
+import type { SeoLandingCategory, SeoLandingPage } from "@/data/seo-landings/types";
 import {
   buildDisplayHeadline,
   buildExpertSummary,
@@ -7,6 +7,12 @@ import {
   buildUniqueMetaDescription,
   trimMetaTitle,
 } from "@/lib/seo-landings-meta";
+import {
+  buildExpandedExtraFaqs,
+  buildPainSectionIntro,
+  buildUniqueOpener,
+  variateSeoLandingPage,
+} from "@/lib/seo-landings-uniqueness";
 import type { SeoLandingTocItem } from "@/data/seo-landings/enriched-types";
 import {
   ANALOGIES,
@@ -272,63 +278,6 @@ function buildThisWeek(page: SeoLandingPage): { title: string; items: readonly s
   };
 }
 
-function buildExtraFaq(page: SeoLandingPage): readonly SeoLandingFaq[] {
-  const v = pageVars(page);
-  const faqPool: SeoLandingFaq[] = [
-    {
-      question: `Wat maakt jullie {kw} anders dan een standaard bureau?`,
-      answer:
-        "Ik bouw en optimaliseer zelf: site, landings, tracking, campagnes. Geen keten van specialisten die elkaar de schuld geven. Eén aanspreekpunt, één plan.",
-    },
-    {
-      question: "Werken jullie ook voor kleinere budgetten?",
-      answer:
-        "Ja, als de rekensom klopt. Liever een klein budget met strakke focus dan een groot budget zonder plan. In intake rekenen we door wat realistisch is.",
-    },
-    {
-      question: `Hoe snel kunnen we starten met {kw}?`,
-      answer:
-        "Intake en plan vaak binnen een week. Uitvoering hangt af van scope: een audit is sneller dan een volledige shop rebuild.",
-    },
-    {
-      question: `Moet ik al verkeer hebben voor {kw}?`,
-      answer:
-        "Niet per se. Wel helpt data. Geen data? Dan bouwen we eerst meetpunten en een fundament. Gokken op zwart is geen strategie.",
-    },
-    {
-      question: "Wat als het niet werkt?",
-      answer:
-        "Dan zeg ik waarom en wat we anders doen of stoppen. Ik verleng geen retainer omdat de kalender dat zegt. Cijfers bepalen.",
-    },
-  ].map((f) => ({
-    question: fill(f.question, v),
-    answer: f.answer,
-  }));
-
-  const picked = pickMany(page.slug, faqPool, 3, "extra-faq");
-
-  if (page.location?.city) {
-    const cityQ = page.location.city === "Apeldoorn"
-      ? {
-          question: "Zit Meneer Marketing echt in Apeldoorn?",
-          answer: fill(
-            "Ja. Apeldoorn is thuisbasis. Ik werk hier met MKB op de Veluwe en pak ook landelijke opdrachten aan. {kw} bespreek ik met je cijfers open, niet vanuit een postbus in de Randstad.",
-            v,
-          ),
-        }
-      : {
-          question: `Zijn jullie alleen actief in ${page.location.city}?`,
-          answer: fill(
-            `Ik ken {city} en {region} goed, maar pak ook landelijke opdrachten. {kw} werkt overal met dezelfde principes: fundament eerst, dan schalen.`,
-            v,
-          ),
-        };
-    picked.push(cityQ);
-  }
-
-  return picked;
-}
-
 function buildCoffeeChat(page: SeoLandingPage) {
   const v = pageVars(page);
   const chat =
@@ -423,37 +372,43 @@ function buildLocalColor(page: SeoLandingPage) {
 }
 
 export function enrichSeoLandingPage(page: SeoLandingPage): EnrichedSeoLandingPage {
-  const kennisbankPool = KENNISBANK_BY_CATEGORY[page.category];
-  const kennisbankSlug = pick(page.slug, kennisbankPool, "kb");
-  const headline = buildDisplayHeadline(page);
-  const faq = [...page.faq, ...buildExtraFaq(page)];
-  const expertSummary = buildExpertSummary(page);
+  const varied = variateSeoLandingPage(page);
+  const kennisbankPool = KENNISBANK_BY_CATEGORY[varied.category];
+  const kennisbankSlug = pick(varied.slug, kennisbankPool, "kb");
+  const headline = buildDisplayHeadline(varied);
+  const extraFaqs = buildExpandedExtraFaqs(varied);
+  const faq = [...varied.faq, ...extraFaqs].filter(
+    (f, i, arr) => arr.findIndex((x) => x.question === f.question) === i,
+  );
+  const expertSummary = buildExpertSummary(varied);
 
   return {
-    ...page,
-    metaTitle: trimMetaTitle(page.metaTitle),
-    metaDescription: buildUniqueMetaDescription(page),
+    ...varied,
+    uniqueOpener: buildUniqueOpener(varied),
+    painSectionIntro: buildPainSectionIntro(varied),
+    metaTitle: trimMetaTitle(varied.metaTitle),
+    metaDescription: buildUniqueMetaDescription(varied),
     headline: headline.headline,
     headlineAccent: headline.headlineAccent,
     faq,
-    story: buildStory(page),
-    scenario: buildScenario(page),
-    deepDive: buildDeepDive(page),
-    myths: buildMyths(page),
-    weirdFact: buildWeirdFact(page),
-    honestNo: buildHonestNo(page),
-    thisWeek: buildThisWeek(page),
+    story: buildStory(varied),
+    scenario: buildScenario(varied),
+    deepDive: buildDeepDive(varied),
+    myths: buildMyths(varied),
+    weirdFact: buildWeirdFact(varied),
+    honestNo: buildHonestNo(varied),
+    thisWeek: buildThisWeek(varied),
     kennisbankSlug,
-    coffeeChat: buildCoffeeChat(page),
-    innerVoice: buildInnerVoice(page),
-    rant: buildRant(page),
-    analogy: buildAnalogy(page),
-    nightmare: buildNightmare(page),
-    confession: buildConfession(page),
-    localColor: buildLocalColor(page),
+    coffeeChat: buildCoffeeChat(varied),
+    innerVoice: buildInnerVoice(varied),
+    rant: buildRant(varied),
+    analogy: buildAnalogy(varied),
+    nightmare: buildNightmare(varied),
+    confession: buildConfession(varied),
+    localColor: buildLocalColor(varied),
     expertSummary,
-    keyTakeaways: buildKeyTakeaways(page),
-    schemaFaqs: buildSchemaFaqs(page, faq),
+    keyTakeaways: buildKeyTakeaways(varied),
+    schemaFaqs: buildSchemaFaqs(varied, faq),
     toc: PAGE_TOC,
   };
 }

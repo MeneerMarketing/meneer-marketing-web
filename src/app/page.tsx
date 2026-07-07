@@ -8,6 +8,7 @@ import { HomeMobileEditorialFlow } from "@/components/home/mobile/HomeMobileEdit
 import { HomeMobileStickyCta } from "@/components/home/mobile/HomeMobileStickyCta";
 import { HomeAboutMeneerSection } from "@/components/home/premium/HomeAboutMeneerSection";
 import { HomeCtaSection } from "@/components/home/premium/HomeCtaSection";
+import { HomePillarsStrip } from "@/components/home/HomePillarsStrip";
 import { HomeProofSection } from "@/components/home/premium/HomeProofSection";
 import { HomeWhyMeneerSection } from "@/components/home/premium/HomeWhyMeneerSection";
 import { JsonLdScript, webPageJsonLd } from "@/components/seo/JsonLd";
@@ -83,6 +84,7 @@ export default function HomePage() {
           <HomeAboutMeneerSection />
           <HomeDesktopAiBillboard />
           <HomeProofSection />
+          <HomePillarsStrip />
           <HomeWhyMeneerSection />
           <HomeEvenRechtzettenSection />
           <InsightsPreviewSection />

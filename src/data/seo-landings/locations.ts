@@ -1,4 +1,4 @@
-import { withSeoLandingLocation } from "@/lib/seo-landings";
+import { withSeoLandingLocation } from "@/lib/seo-landings-location";
 import { GOOGLE_ADS_BUREAU } from "@/data/seo-landings/pages/google-ads-bureau";
 import { GOOGLE_ADS_BEHEER } from "@/data/seo-landings/pages/google-ads-beheer";
 import { HOGER_IN_GOOGLE } from "@/data/seo-landings/pages/hoger-in-google";
@@ -17,11 +17,11 @@ import { DIGITAL_MARKETING_BUREAU } from "@/data/seo-landings/pages/national-bat
 import { SEO_LANDING_GELDERLAND_PAGES } from "@/data/seo-landings/locations-gelderland";
 import { SEO_LANDING_APELDOORN_PAGES } from "@/data/seo-landings/locations-apeldoorn";
 import { SEO_LANDING_NEDERLAND_PAGES } from "@/data/seo-landings/locations-nederland";
+import { buildCityTrioFillPages } from "@/data/seo-landings/locations-city-trio-fill";
 
 const BRABANT = "Noord-Brabant";
 
-/** Stad-varianten uit Search Console-data en regio-focus. */
-export const SEO_LANDING_CITY_PAGES = [
+const SEO_LANDING_CITY_MANUAL = [
   withSeoLandingLocation(
     GOOGLE_ADS_BUREAU,
     { city: "Eindhoven", region: BRABANT },
@@ -151,3 +151,9 @@ export const SEO_LANDING_CITY_PAGES = [
   ...SEO_LANDING_APELDOORN_PAGES,
   ...SEO_LANDING_NEDERLAND_PAGES,
 ] as const;
+
+/** Stad-pagina's: handmatige mix + automatische aanvulling website/marketing/seo per stad. */
+export const SEO_LANDING_CITY_PAGES = [
+  ...SEO_LANDING_CITY_MANUAL,
+  ...buildCityTrioFillPages(SEO_LANDING_CITY_MANUAL),
+];

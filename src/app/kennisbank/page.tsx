@@ -17,13 +17,18 @@ import {
   kennisbankCategories,
 } from "@/lib/kennisbank";
 import { siteCtas } from "@/lib/cta";
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { HUB_PAGE_SEO } from "@/lib/seo/hub-pages";
+
+const seo = HUB_PAGE_SEO.kennisbank;
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Kennisbank. Marketing, websites & Shopify uitgelegd",
-  description:
-    "Praktische artikelen over strategie, websites bouwen, vindbaarheid, campagnes en klantbehoud. Geschreven in gewone taal, zonder marketingjargon.",
+  title: seo.title,
+  titleAbsolute: true,
+  description: seo.description,
   path: "/kennisbank",
+  ogAccent: seo.ogAccent,
 });
 
 function formatDate(iso: string) {
@@ -44,7 +49,7 @@ export default function KennisbankPage() {
     .filter((entry) => entry.articles.length > 0);
 
   const collectionLd = collectionPageJsonLd({
-    name: "Kennisbank MeneerMarketing",
+    name: `Kennisbank ${BRAND_DISPLAY}`,
     description:
       "Praktische artikelen over strategie, bouwen, vindbaarheid, campagnes en behoud.",
     path: "/kennisbank",

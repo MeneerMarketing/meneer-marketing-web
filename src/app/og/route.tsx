@@ -1,10 +1,12 @@
 import { ImageResponse } from "next/og";
 
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
+
 export const runtime = "edge";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const title = searchParams.get("title")?.slice(0, 90) ?? "MeneerMarketing";
+  const title = searchParams.get("title")?.slice(0, 90) ?? BRAND_DISPLAY;
   const subtitle = searchParams.get("subtitle")?.slice(0, 120) ?? "";
   const accent = searchParams.get("accent") ?? "FF5722";
   const accentColor = `#${accent.replace("#", "")}`;
@@ -39,7 +41,7 @@ export async function GET(request: Request) {
             }}
           />
           <span style={{ color: "#94A3B8", fontSize: 22, fontWeight: 600 }}>
-            MeneerMarketing
+            {BRAND_DISPLAY}
           </span>
         </div>
 

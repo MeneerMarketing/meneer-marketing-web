@@ -1,7 +1,7 @@
 export const DIENSTEN_HERO = {
   eyebrow: "Diensten & trajecten",
-  title: "Vijf blokken.",
-  titleAccent: "Eén bureau dat alles snapt.",
+  title: "Van strategie tot Google Ads.",
+  titleAccent: "Vijf blokken. Eén bureau dat alles snapt.",
   subtitle:
     "Strategie, websites from scratch, vindbaarheid in Google én ChatGPT, Google Ads, Meta Ads en behoud. Geen keten van freelancers die elkaar de bal toeschoppen. Wel één plan dat klopt van code tot campagne.",
   stats: [

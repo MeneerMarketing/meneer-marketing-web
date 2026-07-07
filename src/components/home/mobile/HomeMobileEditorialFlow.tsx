@@ -4,6 +4,7 @@ import { HomeMobileBouwenSection } from "@/components/home/mobile/HomeMobileBouw
 import { HomeMobileChapter } from "@/components/home/mobile/HomeMobileChapter";
 import { HomeMobileCta } from "@/components/home/mobile/HomeMobileCta";
 import { HomeMobileFunFacts } from "@/components/home/mobile/HomeMobileFunFacts";
+import { HomeMobilePillarsStrip } from "@/components/home/mobile/HomeMobilePillarsStrip";
 import { HomeMobileMythSwipe } from "@/components/home/mobile/HomeMobileMythSwipe";
 import {
   HOME_MOBILE_CHAPTER_CAMPAGNES,
@@ -22,6 +23,7 @@ export function HomeMobileEditorialFlow() {
       <HomeMobileAiBillboard />
       <HomeMobileChapter chapter={HOME_MOBILE_CHAPTER_VINDBAARHEID} />
       <HomeMobileChapter chapter={HOME_MOBILE_CHAPTER_CAMPAGNES} />
+      <HomeMobilePillarsStrip />
       <HomeMobileMythSwipe />
       <HomeMobileFunFacts />
       <HomeMobileCta />

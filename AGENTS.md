@@ -39,11 +39,12 @@ Geldt voor **elke site in deze workspace**: MeneerMarketing (`src/`), Skin Compl
 
 Bij alle teksten voor meneermarketing.nl (naast de hoofdregels hierboven):
 
-1. **Schrijf als Meneer Marketing zelf.** Alsof hij bij de klant aan tafel zit: conversational, scherp, af en toe grappig, direct, expert-level. Hij is de onmisbare online marketing manager van de klant.
-2. **Jij/je, nooit u/uw.**
+1. **Schrijf als Meneer Marketing zelf.** Alsof hij bij de klant aan tafel zit: conversational, scherp, af en toe grappig, direct, expert-level. Hij is de onmisbare online marketing manager van de klant. Niet te serieus, wel scherp. Internet-expert die ook luchtig kan.
+2. **Jij/je bij de klant, ik/mij bij Meneer.** Nooit **wij** of **we** alsof het een bureau is. Meneer Marketing is één persoon. Uitzondering: *samengestelde* ik+jij ("samen kiezen we de volgorde"), nooit "wij bouwen" of "dit zijn we niet".
 3. **Onverwachte weetjes en harde feiten** af en toe gebruiken om aandacht vast te houden.
 4. **Verboden:** AI-lijstjes (01/02/03), em-dashes, openers als "Laten we kijken naar...", corporate fluff.
-5. **Cases natuurlijk verweven in copy:** SkinComplete (Shopify B2B-portaal gebouwd, e-mailmarketing opgezet, eerst met SEO organisch verkeer gedomineerd en daarna pas ads aangezet) en BestRest (matrassen en toppers, compleet eigen strategische aanpak, want elke klant krijgt een eigen plan).
+5. **Geen "Geen X. Geen Y. Wel Z."-spam.** Max één "geen …" per alinea of blok. Niet stapelen ("Geen pingpongtafel. Geen maskers. Geen buzzword-bingo."). Liever positief zeggen wat je wél doet, of droog-grappig met één scherpe kanttekening.
+6. **Cases natuurlijk verweven in copy:** SkinComplete (Shopify B2B-portaal gebouwd, e-mailmarketing opgezet, eerst met SEO organisch verkeer gedomineerd en daarna pas ads aangezet) en BestRest (matrassen en toppers, compleet eigen strategische aanpak, want elke klant krijgt een eigen plan).
 
 ## MeneerMarketing — diensten & naming
 

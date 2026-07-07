@@ -13,7 +13,7 @@ const PILLAR_OG_ACCENT: Record<PillarPageData["slug"], string> = {
 
 export function buildPillarMetadata(data: PillarPageData): Metadata {
   return buildPageMetadata({
-    title: `${data.metaTitle} | MeneerMarketing`,
+    title: data.metaTitle,
     titleAbsolute: true,
     description: data.metaDescription,
     path: `/${data.slug}`,

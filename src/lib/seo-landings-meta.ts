@@ -1,5 +1,6 @@
 import type { SeoLandingCategory, SeoLandingPage } from "@/data/seo-landings/types";
 import { fill, hashSlug, pick, pickMany } from "@/lib/seo-landings-voice";
+import { buildSchemaPrimaryQuestion } from "@/lib/seo-landings-uniqueness";
 
 const TITLE_MAX = 60;
 const DESC_MIN = 120;
@@ -10,31 +11,61 @@ const META_DESC_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
     "Eerst site en tracking, dan Search of Shopping op koopintentie.",
     "Geen budget naar 'gratis' zoektermen. Wel landings die converteren.",
     "Wekelijks bijsturen op marge, niet op impressies.",
+    "Broad match zonder plan is een verrassingsbox. Dat fixen we eerst.",
+    "Performance Max werkt alleen met schone feeds en duidelijke doelen.",
+    "SkinComplete-gedachte: SEO en site stonden vóór opschalen.",
+    "Remarketing met grenzen. Herkenning zonder stalken.",
+    "Breakeven vóór budget omhoog. Anders vermenigvuldig je alleen je problemen.",
   ],
   seo: [
     "Techniek, intentie en content die één vraag echt beantwoordt.",
     "Core Web Vitals, schema en interne links ingebakken.",
     "Organisch én vindbaar in ChatGPT, met echte expertise.",
+    "GBP en website in één verhaal. Geen adres in de footer als enige lokaal signaal.",
+    "Eén sterke pagina per zoekintentie. Geen keyword-stuffing.",
+    "Dunne content verliest van dieper antwoord. Wij kiezen dieper.",
+    "Lokaal ranken vraagt vertrouwen, niet alleen citations.",
+    "Updates op oude posts vóór nieuwe blogs stapelen.",
   ],
   website: [
     "Custom build in Next.js: snel, vindbaar, klaar voor campagnes.",
     "Geen page builder die je groei remt. Wel semantische HTML.",
     "Landings en CTA's die op mobiel werken vóór je ads aanzet.",
+    "From scratch, niet from theme. Jouw merk, geen template.",
+    "Tracking live vóór launch. Gokken is duur.",
+    "Mobiel-first QA. Desktop is nice, telefoon is realiteit.",
+    "Schema en CWV in de basis, geen SEO-plugin achteraf.",
+    "Landings per dienst of campagne, niet alles op homepage.",
   ],
   shopify: [
     "Feeds, snelheid en checkout vóór je Shopping opschaalt.",
     "Custom theme waar nodig. Geen app-hel die je CWV sloopt.",
     "Van migratie tot B2B: Shopify als schaalbaar fundament.",
+    "Abandoned cart is gratis geld. Flows horen standaard.",
+    "Product-SEO in titels en structuur, niet in leverancier-copy.",
+    "App-audit: weg met wat traag en nutteloos is.",
+    "B2B op Shopify kan. Excel naast je shop is een keuze.",
+    "Migratie met redirects. Organische dip is geen must.",
   ],
   content: [
     "Antwoord-pagina's die ranken en converteren, geen bulk-ruis.",
     "Owned content op je domein met interne links en echte stem.",
     "Content die mensen en AI kunnen citeren.",
+    "Vragen van klanten worden je contentplan.",
+    "Eén pagina per intentie wint van drie blogs per week.",
+    "AI als hulpmiddel, niet als bulk-vervanger van je stem.",
+    "Interne links vanaf je sterkste pagina's.",
+    "Case-blokken met cijfers waar het kan.",
   ],
   "b2b-portal": [
     "Minder handmatig werk, meer orders zonder team verdubbelen.",
     "Portalen, flows en koppelingen die je stack verbinden.",
     "Automatisering die tijd teruggeeft aan je team.",
+    "Leads horen niet in Gmail te sterven.",
+    "Self-service moet makkelijker zijn dan mailen.",
+    "n8n/Make koppelingen zonder dubbel typen.",
+    "Tel uren op handmatig werk vóór je bouwt.",
+    "Shopify B2B waar het past. Geen Excel als eindstation.",
   ],
 };
 
@@ -204,24 +235,35 @@ export function trimMetaTitle(title: string): string {
   return `${t.slice(0, TITLE_MAX - 1).trimEnd()}…`;
 }
 
+const SLUG_HOOKS = [
+  "Geen template-bureau.",
+  "Eerlijk advies, soms droog.",
+  "Fundament eerst.",
+  "Meneer Marketing stem.",
+  "Custom build, geen hok.",
+  "Marge als kompas.",
+  "Unieke pagina, geen copy-paste.",
+] as const;
+
 export function buildUniqueMetaDescription(page: SeoLandingPage): string {
   const v = pageVars(page);
   const middle = fill(pick(page.slug, META_DESC_MIDDLES[page.category], "meta-mid"), v);
   const closer = pick(page.slug, META_DESC_CLOSERS, "meta-close");
+  const hook = pick(page.slug, SLUG_HOOKS, "meta-hook");
 
   if (page.location?.city === "Apeldoorn") {
     return clampDescription(
-      `Meneer Marketing, gevestigd in Apeldoorn. ${middle} ${closer} Thuisbasis Veluwe, ook landelijk.`,
+      `${hook} Meneer Marketing, gevestigd in Apeldoorn. ${middle} ${closer} Thuisbasis Veluwe, ook landelijk.`,
     );
   }
 
   if (page.location) {
     return clampDescription(
-      `${page.primaryKeyword} in ${page.location.city}${page.location.region ? ` (${page.location.region})` : ""}: ${middle} ${closer}`,
+      `${hook} ${page.primaryKeyword} in ${page.location.city}${page.location.region ? ` (${page.location.region})` : ""}: ${middle} ${closer}`,
     );
   }
 
-  return clampDescription(`${page.primaryKeyword}: ${middle} ${closer}`);
+  return clampDescription(`${hook} ${page.primaryKeyword}: ${middle} ${closer}`);
 }
 
 export function buildDisplayHeadline(page: SeoLandingPage): {
@@ -268,15 +310,16 @@ export function buildSchemaFaqs(
   page: SeoLandingPage,
   enrichedFaqs: readonly { question: string; answer: string }[],
 ): readonly { question: string; answer: string }[] {
-  const v = pageVars(page);
   const primary = {
-    question: fill(`Wat is {kw} bij Meneer Marketing?`, v),
+    question: buildSchemaPrimaryQuestion(page),
     answer: buildExpertSummary(page),
   };
   const unique = enrichedFaqs.filter(
     (f, i, arr) => arr.findIndex((x) => x.question === f.question) === i,
   );
-  return [primary, ...unique.slice(0, 7)];
+  const skipFirst = hashSlug(page.slug, "schema-skip") % 3 === 0;
+  const rest = skipFirst ? unique.slice(1, 8) : unique.slice(0, 7);
+  return [primary, ...rest];
 }
 
 export function seoLandingSitemapPriority(slug: string): number {

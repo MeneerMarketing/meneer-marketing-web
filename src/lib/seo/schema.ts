@@ -1,6 +1,16 @@
 import { businessEmail, businessKvk, businessLocation, businessPhone, businessPostalCode, businessSameAs, businessStreetAddress } from "@/lib/contact";
+import {
+  BRAND_DISPLAY,
+  BRAND_LEGAL,
+  FOUNDER_BIO,
+  FOUNDER_JOB_TITLE,
+  FOUNDER_NAME,
+  founderImageUrl,
+  founderPersonSchema,
+  founderProfileUrl,
+} from "@/lib/seo/e-e-a-t";
+import { HOME_PAGE_DESCRIPTION } from "@/lib/seo/site-metadata";
 import { absoluteUrl, siteUrl } from "@/lib/site";
-
 /**
  * Centrale JSON-LD builders. Elke pagina bouwt hier zijn structured data mee,
  * zodat Organization, Article, Service, FAQ en Breadcrumb overal consistent
@@ -20,11 +30,30 @@ function postalAddressJsonLd(): JsonLdObject {
   };
 }
 
+function orgRef(extra?: JsonLdObject): JsonLdObject {
+  return {
+    "@type": "Organization",
+    name: BRAND_LEGAL,
+    alternateName: BRAND_DISPLAY,
+    url: siteUrl,
+    ...extra,
+  };
+}
+
+function websiteRef(): JsonLdObject {
+  return {
+    "@type": "WebSite",
+    name: BRAND_LEGAL,
+    alternateName: BRAND_DISPLAY,
+    url: siteUrl,
+  };
+}
+
 export const organizationJsonLd: JsonLdObject = {
   "@context": "https://schema.org",
   "@type": ["Organization", "ProfessionalService"],
-  name: "MeneerMarketing",
-  alternateName: "Meneer Marketing",
+  name: BRAND_LEGAL,
+  alternateName: BRAND_DISPLAY,
   url: siteUrl,
   logo: absoluteUrl("/icon.svg"),
   image: absoluteUrl("/og/og-default.svg"),
@@ -36,8 +65,8 @@ export const organizationJsonLd: JsonLdObject = {
     propertyID: "KVK",
     value: businessKvk,
   },
-  description:
-    "Marketingbureau voor groei: websites from scratch, Shopify-webshops, SEO, Google Ads, Meta Ads, e-mailmarketing en slimme koppelingen.",
+  description: HOME_PAGE_DESCRIPTION,
+  founder: founderPersonSchema(),
   areaServed: [
     { "@type": "Country", name: "Nederland" },
     { "@type": "City", name: businessLocation.city },
@@ -68,13 +97,14 @@ export const organizationJsonLd: JsonLdObject = {
 export const websiteJsonLd: JsonLdObject = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "MeneerMarketing",
+  name: BRAND_LEGAL,
+  alternateName: BRAND_DISPLAY,
   url: siteUrl,
-  description:
-    "Groei, web, marketing en automatisering. Strategisch partner voor ondernemers.",
+  description: HOME_PAGE_DESCRIPTION,
   publisher: {
     "@type": "Organization",
-    name: "MeneerMarketing",
+    name: BRAND_LEGAL,
+    alternateName: BRAND_DISPLAY,
     url: siteUrl,
     logo: absoluteUrl("/icon.svg"),
   },
@@ -119,19 +149,11 @@ export function articleJsonLd(input: {
     description: input.description,
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
-    author: {
-      "@type": "Person",
-      name: "Meneer Marketing",
-      jobTitle: "Online marketing manager & developer",
-      worksFor: {
-        "@type": "Organization",
-        name: "MeneerMarketing",
-        url: siteUrl,
-      },
-    },
+    author: founderPersonSchema(),
     publisher: {
       "@type": "Organization",
-      name: "MeneerMarketing",
+      name: BRAND_LEGAL,
+      alternateName: BRAND_DISPLAY,
       url: siteUrl,
       logo: {
         "@type": "ImageObject",
@@ -175,11 +197,7 @@ export function serviceJsonLd(input: {
     "@type": "Service",
     name: input.name,
     description: input.description,
-    provider: {
-      "@type": "Organization",
-      name: "MeneerMarketing",
-      url: siteUrl,
-    },
+    provider: orgRef(),
     areaServed: input.areaServed ?? "NL",
     url: absoluteUrl(input.path),
   };
@@ -197,17 +215,10 @@ export function aboutPageJsonLd(input: {
     description: input.description,
     url: absoluteUrl(input.path),
     inLanguage: "nl-NL",
-    isPartOf: {
-      "@type": "WebSite",
-      name: "MeneerMarketing",
-      url: siteUrl,
-    },
-    about: {
-      "@type": "Organization",
-      name: "MeneerMarketing",
-      url: siteUrl,
+    isPartOf: websiteRef(),
+    about: orgRef({
       description: organizationJsonLd.description as string,
-    },
+    }),
   };
 }
 
@@ -225,7 +236,7 @@ export function contactPageJsonLd(input: {
     inLanguage: "nl-NL",
     mainEntity: {
       "@type": "ProfessionalService",
-      name: "Meneer Marketing",
+      name: BRAND_DISPLAY,
       url: siteUrl,
       email: businessEmail,
       ...(businessPhone ? { telephone: businessPhone } : {}),
@@ -280,42 +291,79 @@ export function casesItemListJsonLd(
         name: item.name,
         description: item.description,
         ...(item.url ? { url: item.url } : {}),
-        creator: {
-          "@type": "Organization",
-          name: "MeneerMarketing",
-          url: siteUrl,
-        },
+        creator: orgRef(),
       },
     })),
   };
 }
 
 export function personJsonLd(input: {
-  name: string;
-  jobTitle: string;
+  name?: string;
+  jobTitle?: string;
+  description?: string;
+  url?: string;
+}): JsonLdObject {
+  const base = founderPersonSchema();
+  return {
+    "@context": "https://schema.org",
+    ...base,
+    name: input.name ?? FOUNDER_NAME,
+    jobTitle: input.jobTitle ?? FOUNDER_JOB_TITLE,
+    description: input.description ?? FOUNDER_BIO,
+    url: input.url ?? founderProfileUrl,
+    image: founderImageUrl,
+  };
+}
+
+export function caseStudyJsonLd(input: {
+  client: string;
+  headline: string;
   description: string;
   url: string;
+  datePublished: string;
+  dateModified?: string;
+  image?: string;
+  keywords?: readonly string[];
+  clientWebsite?: string;
 }): JsonLdObject {
   return {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: input.name,
-    jobTitle: input.jobTitle,
+    "@type": "Article",
+    headline: input.headline,
     description: input.description,
     url: input.url,
-    worksFor: {
+    datePublished: input.datePublished,
+    dateModified: input.dateModified ?? input.datePublished,
+    author: founderPersonSchema(),
+    publisher: {
       "@type": "Organization",
-      name: "MeneerMarketing",
+      name: BRAND_LEGAL,
+      alternateName: BRAND_DISPLAY,
       url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/icon.svg"),
+      },
     },
-    knowsAbout: [
-      "Marketingstrategie",
-      "Shopify",
-      "SEO",
-      "Google Ads",
-      "Webdevelopment",
-      "Next.js",
-    ],
+    ...(input.image
+      ? {
+          image: {
+            "@type": "ImageObject",
+            url: input.image.startsWith("http") ? input.image : absoluteUrl(input.image),
+          },
+        }
+      : {}),
+    about: {
+      "@type": "Organization",
+      name: input.client,
+      ...(input.clientWebsite ? { url: input.clientWebsite } : {}),
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": input.url,
+    },
+    inLanguage: "nl-NL",
+    ...(input.keywords?.length ? { keywords: input.keywords.join(", ") } : {}),
   };
 }
 
@@ -358,16 +406,8 @@ export function webPageJsonLd(input: {
     url: absoluteUrl(input.path),
     inLanguage: "nl-NL",
     dateModified: input.dateModified ?? "2026-07-06",
-    isPartOf: {
-      "@type": "WebSite",
-      name: "MeneerMarketing",
-      url: siteUrl,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "MeneerMarketing",
-      url: siteUrl,
-    },
+    isPartOf: websiteRef(),
+    publisher: orgRef(),
   };
 }
 
@@ -393,8 +433,8 @@ export function seoLandingPageGraph(input: {
       url,
       inLanguage: "nl-NL",
       dateModified: "2026-07-06",
-      isPartOf: { "@type": "WebSite", name: "MeneerMarketing", url: siteUrl },
-      publisher: { "@type": "Organization", name: "MeneerMarketing", url: siteUrl },
+      isPartOf: websiteRef(),
+      publisher: orgRef(),
       speakable: {
         "@type": "SpeakableSpecification",
         cssSelector: ["#seo-expert-summary", "h1"],
@@ -408,12 +448,7 @@ export function seoLandingPageGraph(input: {
       description: input.description,
       url,
       serviceType: input.serviceType ?? "Marketingdienst",
-      provider: {
-        "@type": "Organization",
-        name: "MeneerMarketing",
-        url: siteUrl,
-        email: businessEmail,
-      },
+      provider: orgRef({ email: businessEmail }),
       areaServed: input.areaServed ?? "NL",
     },
     {
@@ -443,7 +478,7 @@ export function seoLandingPageGraph(input: {
     graph.push({
       "@type": "ProfessionalService",
       "@id": `${url}#local`,
-      name: "Meneer Marketing",
+      name: BRAND_DISPLAY,
       description:
         "Marketingbureau gevestigd in Apeldoorn. Websites from scratch, SEO, Google Ads, Meta Ads en automatisering.",
       url: siteUrl,

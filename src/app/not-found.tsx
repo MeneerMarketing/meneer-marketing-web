@@ -7,7 +7,7 @@ import { NOINDEX_NOFOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Pagina niet gevonden | MeneerMarketing",
+  title: "Pagina niet gevonden | Meneer Marketing",
   description: "Deze pagina bestaat niet (meer). Ga terug naar home of neem contact op.",
   path: "/404",
   titleAbsolute: true,

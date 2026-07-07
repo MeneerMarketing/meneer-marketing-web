@@ -13,10 +13,21 @@ export interface CasePageStory {
 }
 
 export const CASES_PAGE_HERO = {
-  eyebrow: "Echte klanten. Echt gebouwd.",
-  title: "Succesverhalen,",
-  titleAccent: "maar dan eerlijk.",
-  lead: "SkinComplete, BestRest, Hills Pilates. Geen stockfoto's. Wel video, foto's en wat ik echt heb gebouwd.",
+  eyebrow: "Cases",
+  title: "Twaalf jaar marketing.",
+  titleAccent: "Dit is wat ik ervan maak.",
+  lead: "Ik bouw, meet en stuur al sinds 2012. Hieronder staan trajecten waar dat in de praktijk is gebeurd. Live links, echte cijfers, verhalen die ik je aan tafel kan uitleggen zonder slides. Scroll. Klik. Oordeel zelf.",
+  console: {
+    host: "meneer@marketing",
+    since: "2012",
+    lines: [
+      { key: "ervaring", label: "status", value: "12+ jaar actief" },
+      { key: "stack", label: "stack", value: "Shopify · Next.js · SEO · Ads" },
+      { key: "modus", label: "modus", value: "bouwen → meten → bijsturen" },
+      { key: "nu", label: "nu", value: "scroll voor de projecten ↓" },
+    ],
+    quip: "Als ik het niet kan meten, zeg ik het je eerlijk.",
+  },
 } as const;
 
 export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
@@ -88,46 +99,15 @@ export const CASES_PAGE_CTA = {
   button: "Start intake",
 } as const;
 
-export const CASES_PAGE_IMPACT = {
-  eyebrow: "Wie + hoe",
-  title: "Cases zijn het bewijs. Dit ben ik.",
-  lead: "Geen agency-groep. Wel twaalf jaar webdesign en marketing, en een werkwijze die je kunt vertrouwen.",
-  items: [
-    {
-      id: "experience",
-      label: "Over mij",
-      stat: "12+",
-      headline: "jaar webdesign en marketing",
-      body: "Begonnen als app-developer. Nu groeipartner: Shopify custom, websites from scratch, SEO en ads op één lijn.",
-      href: "/over",
-      linkLabel: "Meer over Meneer",
-    },
-    {
-      id: "intake",
-      label: "Werkwijze",
-      stat: "± 2 min",
-      headline: "intake, dan pas praten",
-      body: "Geen pitch-deck. Wel scherpe vragen over waar je staat, wat je stack is en wat over zes maanden anders moet.",
-      href: "/werkwijze",
-      linkLabel: "Zo werk ik",
-    },
-    {
-      id: "focus",
-      label: "Werkwijze",
-      stat: "Max 3",
-      headline: "focuspunten tegelijk",
-      body: "Niet alles at once. Soms SEO eerst, soms bouwen, soms ads. Jouw fase bepaalt de volgorde. Geen copy-paste traject.",
-      href: "/werkwijze",
-      linkLabel: "Het proces",
-    },
-  ],
-} as const;
-
-export const CASES_PAGE_BUILT = {
-  eyebrow: "Wat erin zit",
-  title: "Alles wat je ziet, heb ik echt gebouwd.",
-  lead: "Kies een case. Zie wat er live staat. Geen Canva-mockups, geen stock-SaaS screenshots.",
-  allLabel: "Alles",
+export const CASES_PAGE_PROOF = {
+  eyebrow: "Live check",
+  title: "Drie links die je zelf opent.",
+  titleAccent: "Geen mockup-map.",
+  lead: "Alles wat je hierboven zag draait ergens op productie. Ik hoef je geen deck te sturen. Klik, kijk, oordeel.",
+  meneerQuip: "Staat de URL niet live? Dan staat het niet op deze pagina.",
+  receiptLabel: "Trajectbon",
+  liveLabel: "Bekijk live",
+  caseLabel: "Hele case",
 } as const;
 
 export const CASES_PAGE_WERKWIJZE = {

@@ -15,17 +15,18 @@ import { ConversionHero } from "@/components/contact/ConversionHero";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { siteCtas } from "@/lib/cta";
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 import { absoluteUrl } from "@/lib/site";
 import { NOINDEX_FOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 
 export const metadata: Metadata = {
   title: "Project starten",
   description:
-    "Dien een projectaanvraag in bij MeneerMarketing: type, budget, timing. We reageren met een concreet vervolg.",
+    "Dien een projectaanvraag in bij Meneer Marketing: type, budget, timing. We reageren met een concreet vervolg.",
   alternates: { canonical: absoluteUrl("/project-starten") },
   robots: NOINDEX_FOLLOW_ROBOTS,
   openGraph: {
-    title: "Project starten | MeneerMarketing",
+    title: `Project starten | ${BRAND_DISPLAY}`,
     description:
       "Van idee naar een helder plan op maat. Bouw, marketing, automatisering of design.",
     url: absoluteUrl("/project-starten"),

@@ -55,6 +55,8 @@ yarn-error.log*
 
 # Lokale taakbestanden, niet voor GitHub
 /tasks/
-/kliniekos-fase2-start/
+# Lokale KliniekOS-projecten — nooit mee deployen naar meneermarketing.nl
+/kliniekos*/
+/kliniekos-*/
 
 .vercel

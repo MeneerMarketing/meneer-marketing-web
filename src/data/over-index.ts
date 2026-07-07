@@ -1,6 +1,6 @@
 export const OVER_HERO = {
   eyebrow: "Over Meneer Marketing",
-  title: "Groei is geen toeval. Het is een systeem met een gezicht.",
+  title: "Twaalf jaar online groei. Ik doe het nog steeds zelf.",
   subtitle:
     "Afgestudeerd als applicatieontwikkelaar, twaalf jaar webdesign en marketing op mijn naam. Ik help bedrijven groeien door samen te kiezen welke kanalen en platforms passen. Shopify, SEO, ads: niet omdat het hip is, wel omdat het bij jouw fase hoort.",
   stats: [
@@ -40,13 +40,6 @@ export const OVER_HERO_FACTS: OverHeroFact[] = [
     text: "Templates vastlopen na een half jaar. Daarom from scratch, geen page builder.",
     accent: "#0F172A",
     tilt: 1.5,
-  },
-  {
-    id: "contact",
-    badge: "Gewoon praten",
-    text: "Mail, bellen, WhatsApp. Geen protocolboek, wel afspraken die kloppen.",
-    accent: "#0D9488",
-    tilt: -0.75,
   },
   {
     id: "dopamine",
@@ -127,9 +120,14 @@ export const OVER_PRINCIPLES = [
   },
   {
     title: "Menselijk",
-    body: "Geen moeilijke bureautaal in je inbox. Mail, WhatsApp of bellen, wat voor jou het fijnst is. We beslissen samen welke kanalen en platforms passen. Duidelijk en soms droog grappig, strak professioneel waar het moet.",
+    body: "Geen moeilijke bureautaal in je inbox. Mail, WhatsApp of bellen, wat voor jou het fijnst is. Samen kiezen welke kanalen en platforms passen. Duidelijk en soms droog grappig, strak professioneel waar het moet.",
   },
 ] as const;
+
+export const OVER_STACK_SECTION = {
+  intro:
+    "Mijn gereedschapskist. Tik een logo en zie wat ik ermee doe bij echte klanten. Niet wat een pitch-deck ervan maakt.",
+} as const;
 
 export interface OverStackItem {
   id: string;
@@ -137,118 +135,155 @@ export interface OverStackItem {
   body: string;
   quip: string;
   accent: string;
+  chips: readonly string[];
 }
 
 export const OVER_STACK: OverStackItem[] = [
   {
     id: "shopify",
     label: "Shopify",
-    body: "Webshops en B2B-portals from scratch. Geen thema dat na zes maanden vastloopt.",
-    quip: "Salons die zelf bestellen? Been there.",
+    body: "Webshops en B2B-portals from scratch. Geen theme uit de Store met jouw logo erop alsof dat maatwerk is.",
+    quip: "Salons die om 2 uur 's nachts bestellen? Been there. Built that.",
     accent: "#96BF48",
+    chips: ["Liquid", "B2B-portaal", "Checkout", "GraphQL"],
   },
   {
     id: "nextjs",
     label: "Next.js",
-    body: "Sites en web-apps die snel laden en technisch schoon zijn. Core Web Vitals zijn geen bijzaak.",
-    quip: "50 ms en je bezoeker heeft al een oordeel.",
-    accent: "#0F172A",
+    body: "Sites en web-apps die snel laden en technisch schoon zijn. Core Web Vitals zijn geen bijzaak, het is je ranking.",
+    quip: "50 ms en je bezoeker heeft al een oordeel. Ik ook.",
+    accent: "#FFFFFF",
+    chips: ["React", "TypeScript", "App Router", "CWV groen"],
   },
   {
     id: "seo",
     label: "SEO & content",
-    body: "Landingspagina's en techniek die bovenaan scoren. Organisch verkeer is gratis en blijft doorlopen.",
-    quip: "Positie 1 kost geen cent per klik. Alleen slim vooraf bouwen.",
+    body: "Google én ChatGPT. Landingspagina's op echte vragen, techniek die indexeert, autoriteit die blijft staan.",
+    quip: "Positie 1 kost geen cent per klik. Alleen werk vooraf.",
     accent: "#00BCD4",
+    chips: ["Technisch", "Semantisch", "Lokaal", "AI-zoek"],
   },
   {
     id: "google-ads",
     label: "Google Ads",
-    body: "Campagnes die je kunt uitleggen en waar je op kunt sturen. Geen black box met een maandbudget.",
-    quip: "Eerst converteren, dan opschalen.",
+    body: "Search, Shopping, wat past. Campagnes die je kunt uitleggen aan je moeder. Geen black box met een maandbudget.",
+    quip: "Eerst converteren. Dan pas budget erbij. Anders gokken.",
     accent: "#4285F4",
+    chips: ["Search", "Shopping", "ROAS", "Landings"],
   },
   {
     id: "meta-ads",
     label: "Meta Ads",
-    body: "Facebook en Instagram met creatief en data in balans. Niet alleen mooie beelden, ook meetbare omzet.",
-    quip: "Je feed scrollt sneller dan je denkt.",
+    body: "Instagram en Facebook met creatief én data. Niet alleen mooie Reels, ook omzet die je kunt terugvinden in je dashboard.",
+    quip: "Je feed scrollt sneller dan je denkt. Je ad moet sneller overtuigen.",
     accent: "#E1306C",
+    chips: ["Feed", "Reels", "UGC", "Retargeting"],
   },
   {
     id: "automation",
     label: "Automatisering",
-    body: "Systemen aan elkaar knopen: orders, e-mail, CRM. Minder handwerk, meer rust in je team.",
-    quip: "Geen copy-paste tussen tabbladen.",
+    body: "Shopify, Klaviyo, n8n, CRM. Systemen die praten zodat jij niet copy-pastet tussen twaalf tabbladen.",
+    quip: "Handmatig overtypen is geen proces. Dat is lijden met Excel open.",
     accent: "#FF5722",
+    chips: ["n8n", "Klaviyo", "Webhooks", "Flows"],
   },
 ];
 
 export interface OverDayMoment {
   id: string;
   time: string;
+  timeLabel: string;
   title: string;
   body: string;
+  quip: string;
+  ping: string;
   mood: "coffee" | "code" | "chart" | "call" | "deploy";
+  chips: readonly string[];
+  accent: string;
 }
 
 export const OVER_DAY: OverDayMoment[] = [
   {
     id: "morning",
     time: "08:30",
-    title: "Koffie en dashboards",
-    body: "Eerst kijken wat er 's nachts gebeurde. Conversies, ads, errors. Geen verrassingen tijdens je ontbijt.",
+    timeLabel: "Ochtend",
+    title: "Koffie en cijfers checken",
+    body: "Dashboard open voordat mijn ontbijt koud is. Conversies, ads, errors uit de nacht. Brandt er ergens iets? Dan fix ik het voordat jij je eerste mail opent.",
+    quip: "Geen verrassingen tijdens je croissant. Dat is de deal.",
+    ping: "3 conversies · 0 errors · koffie heet",
     mood: "coffee",
+    chips: ["Analytics", "Alerts", "ROAS"],
+    accent: "#FF5722",
   },
   {
     id: "build",
     time: "10:00",
+    timeLabel: "Focus",
     title: "Bouwen of bijsturen",
-    body: "Code, campagnes of content. Afhankelijk van wat die week het meeste oplevert. Niet alles tegelijk.",
+    body: "Code, campagnes of content. Wat die week het meeste oplevert krijgt voorrang. Acht tabbladen tegelijk is geen productiviteit, dat is chaos met extra stappen.",
+    quip: "Multitasken klinkt stoer op LinkedIn. Werkt zelden in echt.",
+    ping: "layout.tsx · campagne NL · landingscopy",
     mood: "code",
+    chips: ["Next.js", "Shopify", "Copy"],
+    accent: "#FFFFFF",
   },
   {
     id: "data",
     time: "13:30",
+    timeLabel: "Middag",
     title: "Cijfers eerlijk houden",
-    body: "Wat werkt krijgt gas. Wat niet werkt gaat eraf. Geen sentiment, wel resultaat. Soms pijnlijk, altijd nuttig.",
+    body: "Wat stijgt krijgt budget. Wat niet converteert gaat eraf. Soms moet ik nee zeggen tegen een mooie campagne die niks oplevert. Pijnlijk? Soms. Nuttig? Altijd.",
+    quip: "Ego heeft geen ROAS. Data wel.",
+    ping: "Ad set gepauzeerd · budget verschoven",
     mood: "chart",
+    chips: ["Google Ads", "Meta", "GA4"],
+    accent: "#4285F4",
   },
   {
     id: "call",
     time: "15:00",
-    title: "Gewoon menselijk",
-    body: "Update in normale taal: wat live staat, wat het doet, wat de volgende stap is. Geen 40 slides. Geen ' naar aanleiding van uw e-mail van gisteren'. Gewoon praten, als collega's.",
+    timeLabel: "Contact",
+    title: "WhatsApp, mail, gewoon praten",
+    body: "Update in normale taal: wat live staat, wat het doet, wat de volgende stap is. Geen veertig slides. Geen drie alinea's voordat je punt duidelijk is. Gewoon menselijk.",
+    quip: "Als ik moet gokken wat je bedoelt, is je briefing te ingewikkeld.",
+    ping: "Hoi! De pagina staat live. ROAS ziet er goed uit 👍",
     mood: "call",
+    chips: ["WhatsApp", "Mail", "Call"],
+    accent: "#25D366",
   },
   {
     id: "ship",
     time: "17:00",
+    timeLabel: "Einde dag",
     title: "Iets live zetten",
-    body: "Liever iets kleins live dan iets groots in een mapje. Momentum wint van perfectie.",
+    body: "Liever iets kleins live dan iets groots in een mapje final_v3_definitief_echt. Momentum wint van perfectie. Elke dag een beetje vooruit is beter dan maanden polieren.",
+    quip: "Perfectie is de favoriete reden om niks te shippen.",
+    ping: "Deploy ✓ · live op productie",
     mood: "deploy",
+    chips: ["Ship it", "Deploy", "Done"],
+    accent: "#34D399",
   },
 ];
 
 export const OVER_ANTI = {
-  title: "Dit zijn we niet",
-  subtitle: "Geen pingpongtafel. Geen zakelijke maskers. Wel resultaat.",
+  title: "Zo werk ik niet",
+  subtitle: "Ik heb geen pingpongtafel. Wel twaalf jaar resultaat.",
   items: [
     {
       label: "Template-bureau",
-      body: "Mooie demo, straks vastgelopen. Wij bouwen from scratch.",
+      body: "Mooie demo, straks vastgelopen. Ik bouw from scratch omdat ik het daarna nog moet onderhouden.",
     },
     {
       label: "Corporate speak",
-      body: "Mailtjes vol formeel gedoe waar niemand energie van krijgt. Wij praten gewoon. Zakelijk waar het moet.",
+      body: "Mailtjes vol formeel gedoe waar niemand energie van krijgt. Ik typ gewoon Nederlands. Zakelijk waar het moet.",
     },
     {
       label: "Ads zonder plan",
-      body: "Budget erin, omzet er niet uit. Eerst basis, dan gas.",
+      body: "Budget erin, omzet er niet uit. Eerst basis, dan gas. Soms zeg ik: nog even wachten met adverteren.",
     },
     {
       label: "Doorverwijzer",
-      body: "Vijf bureaus, nul overzicht. Eén lijn van strategie tot code.",
+      body: "Vijf bureaus, nul overzicht. Bij mij loopt strategie tot code in één lijn.",
     },
   ],
 } as const;
@@ -277,7 +312,7 @@ export const OVER_FAQ = [
   {
     question: "Hoe communiceer je met klanten?",
     answer:
-      "Als een mens, niet als een mailrobot. Afspraken, deadlines en cijfers zijn keihard professioneel. In je inbox gewoon duidelijk Nederlands. Geen corporate masker, wel honderd procent begrip zodat we als team kunnen schakelen.",
+      "Als een mens, niet als een mailrobot. Afspraken, deadlines en cijfers zijn keihard professioneel. In je inbox gewoon duidelijk Nederlands. Soms droog, altijd helder, zodat jij en ik snel kunnen schakelen.",
   },
   {
     question: "Hoe starten we?",

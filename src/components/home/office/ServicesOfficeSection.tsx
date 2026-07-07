@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { OfficeScene } from "@/components/home/office/OfficeScene";
 import { OFFICE_PILLARS, type OfficePillar } from "@/data/services-office";
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 import type { PillarSlug } from "@/lib/navigation";
 
 const ZOOM_SCALE = 2;
@@ -261,7 +262,7 @@ export function ServicesOfficeSection() {
                   transition={{ duration: 0.4, delay: 0.3 }}
                   aria-hidden
                 >
-                  MeneerMarketing presenteert
+                  {BRAND_DISPLAY} presenteert
                 </motion.p>
               </>
             )}

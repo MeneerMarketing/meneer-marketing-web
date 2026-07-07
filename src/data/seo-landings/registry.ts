@@ -77,6 +77,7 @@ import {
   META_ADS_OF_GOOGLE_ADS,
   BUREAU_OF_FREELANCER_MARKETING,
 } from "@/data/seo-landings/pages/national-batch4-vergelijk";
+import { NATIONAL_BATCH5_PAGES } from "@/data/seo-landings/pages/national-batch5";
 import { SEO_LANDING_CITY_PAGES } from "@/data/seo-landings/locations";
 
 const SEO_LANDING_NATIONAL: readonly SeoLandingPage[] = [
@@ -146,6 +147,7 @@ const SEO_LANDING_NATIONAL: readonly SeoLandingPage[] = [
   SHOPIFY_OF_WOOCOMMERCE,
   META_ADS_OF_GOOGLE_ADS,
   BUREAU_OF_FREELANCER_MARKETING,
+  ...NATIONAL_BATCH5_PAGES,
 ] as const;
 
 const SEO_LANDING_PAGES: readonly SeoLandingPage[] = [

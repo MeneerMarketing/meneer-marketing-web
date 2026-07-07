@@ -6,20 +6,17 @@ import { ZoekenIndexExplorer } from "@/components/seo-landing/ZoekenIndexExplore
 import { JsonLdScript, collectionPageJsonLd } from "@/components/seo/JsonLd";
 import { getAllSeoLandingPages } from "@/data/seo-landings/registry";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { HUB_PAGE_SEO } from "@/lib/seo/hub-pages";
+
+const seo = HUB_PAGE_SEO.zoeken;
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Zoeken · diensten & regio | MeneerMarketing",
+  title: seo.title,
   titleAbsolute: true,
-  description:
-    "Landingspagina's per zoekwoord en regio: Google Ads Arnhem, SEO Nijmegen, webshops Gelderland, Brabant en meer. Meneer Marketing, online groei from scratch.",
+  description: seo.description,
   path: "/zoeken",
-  keywords: [
-    "google ads arnhem",
-    "seo nijmegen",
-    "online marketing gelderland",
-    "marketing bureau brabant",
-    "zoekmachine optimalisatie regio",
-  ],
+  keywords: seo.keywords ? [...seo.keywords] : undefined,
+  ogAccent: seo.ogAccent,
 });
 
 export default function ZoekenIndexPage() {
@@ -51,23 +48,22 @@ export default function ZoekenIndexPage() {
       <JsonLdScript data={collectionLd} />
       <SiteHeader />
       <main id="main" className="flex-1">
-        <section className="border-b border-slate-200 bg-white py-16 lg:py-20">
+        <section className="border-b border-slate-200 bg-white py-14 lg:py-16">
           <div className="mx-auto max-w-6xl px-4 lg:px-8">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
               Vindbaarheid
             </p>
-            <h1 className="mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-slate-900 lg:text-5xl">
-              Waar mensen op zoeken. Waar jij gevonden wilt worden.
+            <h1 className="mt-4 max-w-3xl text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+              Zoek per dienst of regio.
             </h1>
-            <p className="mt-5 max-w-2xl text-lg text-slate-600">
-              Per zoekwoord en regio een pagina die rankt én converteert. Thuisbasis Apeldoorn,
-              daarnaast Randstad, Brabant, Limburg, Gelderland en meer. Geen dun SEO-prutswerk, wel
-              Meneer Marketing: scherp, eerlijk, soms een beetje droog grappig.
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+              Elke pagina is een antwoord op een echte zoekvraag. Google Ads, SEO, Shopify,
+              webshops. Landelijk of met stad erbij. Apeldoorn is thuisbasis.
             </p>
           </div>
         </section>
 
-        <section className="py-14">
+        <section className="bg-gradient-to-b from-slate-50/80 to-white py-12 lg:py-14">
           <div className="mx-auto max-w-6xl px-4 lg:px-8">
             <Suspense fallback={<p className="text-slate-500">Pagina&apos;s laden…</p>}>
               <ZoekenIndexExplorer national={national} local={local} />

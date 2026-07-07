@@ -19,26 +19,20 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { WERKWIJZE_FAQ } from "@/data/werkwijze-index";
+import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { HUB_PAGE_SEO } from "@/lib/seo/hub-pages";
 import { absoluteUrl } from "@/lib/site";
 
 const PAGE_PATH = "/werkwijze";
-const PAGE_TITLE = "Werkwijze. Van intake tot opschalen, zonder standaardpakket";
-const PAGE_DESCRIPTION =
-  "Hoe Meneer Marketing werkt: eerst snappen, dan routekaart, bouwen from scratch, meten en sturen. Twaalf jaar ervaring, menselijke communicatie, SkinComplete en BestRest als voorbeeld.";
+const seo = HUB_PAGE_SEO.werkwijze;
 
-export const metadata: Metadata = {
-  title: PAGE_TITLE,
-  description: PAGE_DESCRIPTION,
-  alternates: { canonical: absoluteUrl(PAGE_PATH) },
-  openGraph: {
-    title: "Werkwijze | MeneerMarketing",
-    description:
-      "Geen copy-paste traject. Wel een proces met intake, routekaart, custom build en maandelijks sturen.",
-    url: absoluteUrl(PAGE_PATH),
-    locale: "nl_NL",
-    type: "website",
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: seo.title,
+  titleAbsolute: true,
+  description: seo.description,
+  path: PAGE_PATH,
+  ogAccent: seo.ogAccent,
+});
 
 export default function WerkwijzePage() {
   return (

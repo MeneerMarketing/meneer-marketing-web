@@ -92,6 +92,19 @@ function CityGrid({ items, highlightApeldoorn = false }: { items: ZoekenListItem
   );
 }
 
+const QUICK_FILTERS = [
+  { label: "Apeldoorn", value: "Apeldoorn" },
+  { label: "Google Ads", value: "google ads" },
+  { label: "SEO", value: "seo" },
+  { label: "Shopify", value: "shopify" },
+  { label: "Gelderland", value: "Gelderland" },
+  { label: "Amsterdam", value: "Amsterdam" },
+] as const;
+
+function formatCount(n: number): string {
+  return new Intl.NumberFormat("nl-NL").format(n);
+}
+
 export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProps) {
   const searchParams = useSearchParams();
   const stadParam = searchParams.get("stad") ?? "";
@@ -130,37 +143,82 @@ export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProp
 
   const totalResults = filteredNational.length + filteredLocal.length;
 
+  const totalPages = national.length + local.length;
+
   return (
     <div className="space-y-14">
-      <div className="relative">
+      <div>
         <label htmlFor="zoeken-filter" className="sr-only">
           Zoek op dienst, stad of regio
         </label>
-        <Search
-          className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-slate-400"
-          aria-hidden
-        />
-        <input
-          id="zoeken-filter"
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Zoek op dienst, stad of regio… bijv. Apeldoorn, Amsterdam, Google Ads"
-          className="w-full rounded-2xl border border-slate-200 bg-white py-4 pl-12 pr-4 text-base text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-[#FF5722]/50 focus:ring-2 focus:ring-[#FF5722]/20"
-          autoComplete="off"
-        />
-        {normalized ? (
-          <p className="mt-3 text-sm text-slate-500">
-            {totalResults === 0
-              ? "Geen pagina's gevonden. Probeer een andere stad of dienst."
-              : `${totalResults} pagina${totalResults === 1 ? "" : "'s"} gevonden`}
-          </p>
-        ) : (
-          <p className="mt-3 text-sm text-slate-500">
-            {national.length + local.length} pagina&apos;s. Filter op stad (Apeldoorn, Amsterdam,
-            Rotterdam), regio of dienst.
-          </p>
-        )}
+        <div className="relative">
+          <div
+            className="pointer-events-none absolute inset-y-0 left-0 flex w-12 items-center justify-center text-slate-400"
+            aria-hidden
+          >
+            <Search className="size-5 shrink-0" strokeWidth={2.25} />
+          </div>
+          <input
+            id="zoeken-filter"
+            type="search"
+            enterKeyHint="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Dienst, stad of regio…"
+            className="w-full rounded-2xl border border-slate-200 bg-white py-3.5 pl-12 pr-4 text-base leading-normal text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-[#FF5722]/50 focus:ring-2 focus:ring-[#FF5722]/20 [&::-webkit-search-cancel-button]:hidden"
+            autoComplete="off"
+          />
+        </div>
+
+        <div className="mt-3 flex flex-wrap gap-2">
+          {QUICK_FILTERS.map((chip) => {
+            const active = normalized === chip.value.toLowerCase();
+            return (
+              <button
+                key={chip.value}
+                type="button"
+                onClick={() => setQuery(active ? "" : chip.value)}
+                className={`rounded-full border px-3 py-1.5 text-xs font-bold tracking-tight transition ${
+                  active
+                    ? "border-[#FF5722] bg-[#FF5722] text-white"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:text-slate-900"
+                }`}
+              >
+                {chip.label}
+              </button>
+            );
+          })}
+        </div>
+
+        <p className="mt-4 text-sm leading-relaxed text-slate-500">
+          {normalized ? (
+            totalResults === 0 ? (
+              "Geen pagina's gevonden. Probeer een andere stad of dienst."
+            ) : (
+              <>
+                <span className="font-bold tabular-nums text-slate-700">
+                  {formatCount(totalResults)}
+                </span>{" "}
+                {totalResults === 1 ? "pagina gevonden" : "pagina's gevonden"}
+              </>
+            )
+          ) : (
+            <>
+              <span className="font-bold tabular-nums text-slate-700">
+                {formatCount(totalPages)}
+              </span>{" "}
+              landingspagina&apos;s ·{" "}
+              <span className="font-bold tabular-nums text-slate-700">
+                {formatCount(national.length)}
+              </span>{" "}
+              landelijk,{" "}
+              <span className="font-bold tabular-nums text-slate-700">
+                {formatCount(local.length)}
+              </span>{" "}
+              per stad. Tik een chip of typ zelf.
+            </>
+          )}
+        </p>
       </div>
 
       {filteredNational.length > 0 ? (

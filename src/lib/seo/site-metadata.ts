@@ -3,20 +3,25 @@ import { absoluteUrl } from "@/lib/site";
 
 import { OG_IMAGE_SIZE, ogImageUrl } from "@/lib/seo/og-image";
 import { INDEXABLE_ROBOTS } from "@/lib/seo/robots-policy";
-export const SITE_NAME = "MeneerMarketing";
+import { BRAND_DISPLAY, BRAND_LEGAL } from "@/lib/seo/e-e-a-t";
+
+/** Zichtbare merknaam in titles, OG en UI. */
+export const SITE_NAME = BRAND_DISPLAY;
+
+/** Technische / juridische naam (schema alternateName, e-mail domein). */
+export const SITE_NAME_LEGAL = BRAND_LEGAL;
 
 export const DEFAULT_OG_IMAGE = {
   url: absoluteUrl("/og/og-default.svg"),
   width: 1200,
   height: 630,
-  alt: "MeneerMarketing. Marketing, websites en Shopify",
+  alt: `${BRAND_DISPLAY}. Marketing, websites en Shopify`,
 } as const;
-
 export const HOME_PAGE_TITLE =
-  "MeneerMarketing. Marketing, websites & Shopify";
+  "Meneer Marketing | Ik bouw je vindbare site, zet campagnes live en blijf meten";
 
 export const HOME_PAGE_DESCRIPTION =
-  "Websites from scratch, Shopify-shops, SEO, Google Ads, Meta Ads en e-mail. Eén strategisch partner voor online groei in Nederland.";
+  "Websites from scratch, SEO, Google Ads, Meta Ads, Shopify en e-mailmarketing. In twaalf jaar heb ik gezien wat online echt werkt. Daarmee help ik bedrijven groeien.";
 
 export function buildOpenGraph(input: {
   title: string;

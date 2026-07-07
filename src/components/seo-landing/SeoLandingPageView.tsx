@@ -157,6 +157,14 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
             >
               {page.subheadline}
             </motion.p>
+            <motion.p
+              initial={reduce ? false : { opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.12, duration: 0.4, ease: EASE }}
+              className="mt-4 max-w-xl rounded-2xl border border-orange-100 bg-orange-50/60 px-4 py-3 text-pretty text-sm font-medium leading-relaxed text-slate-700"
+            >
+              {page.uniqueOpener}
+            </motion.p>
             <motion.div
               initial={reduce ? false : { opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -292,8 +300,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
               Herkenbaar? Dan ben je niet de enige.
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Dit hoor ik vaak als iemand zoekt op {page.primaryKeyword}. Geen schaamte. Wel een
-              signaal dat het anders mag.
+              {page.painSectionIntro}
             </p>
           </Reveal>
           <div className="mt-8 grid gap-4 md:grid-cols-3">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 
 interface LogoProps {
   className?: string;
@@ -16,7 +17,7 @@ export function Logo({ className, variant = "dark", icon }: LogoProps) {
     <Link
       href="/"
       className={`inline-flex items-center gap-2.5 rounded-lg outline-offset-4 ${className ?? ""}`}
-      aria-label="MeneerMarketing. Home"
+      aria-label={`${BRAND_DISPLAY}. Home`}
     >
       {icon}
       <span className="flex flex-wrap items-baseline gap-x-1 font-sans text-[1.05rem] leading-none tracking-tight sm:text-lg">

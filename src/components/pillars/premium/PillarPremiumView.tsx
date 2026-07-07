@@ -45,6 +45,8 @@ import type { PillarPageData } from "@/data/pillar-pages";
 import type { PillarPremiumContent } from "@/data/pillar-premium";
 import { siteCtas } from "@/lib/cta";
 import { megaMenuColumns, type PillarSlug } from "@/lib/navigation";
+import { getPillarInternalLinks } from "@/lib/seo/internal-links";
+import { PillarInternalLinksSection } from "@/components/seo/PillarInternalLinksSection";
 
 const PILLAR_LABEL: Record<PillarSlug, string> = {
   strategie: "Strategie",
@@ -102,6 +104,7 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
   }));
 
   const pillarFact = getFunFactForPillar(data.slug);
+  const internalLinks = getPillarInternalLinks(data.slug);
 
   return (
     <>
@@ -296,6 +299,8 @@ export function PillarPremiumView({ data, premium }: PillarPremiumViewProps) {
         ) : null}
 
         {pillarFact ? <PillarFunFactStrip fact={pillarFact} /> : null}
+
+        <PillarInternalLinksSection links={internalLinks} />
 
         <section className="bg-gradient-to-b from-white to-slate-50/80">
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">

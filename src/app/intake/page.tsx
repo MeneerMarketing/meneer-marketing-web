@@ -13,6 +13,7 @@ import { ConversionForm } from "@/components/contact/ConversionForm";
 import { ConversionHero } from "@/components/contact/ConversionHero";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 import { absoluteUrl } from "@/lib/site";
 import { NOINDEX_FOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   alternates: { canonical: absoluteUrl("/intake") },
   robots: NOINDEX_FOLLOW_ROBOTS,
   openGraph: {
-    title: "Start intake | MeneerMarketing",
+    title: `Start intake | ${BRAND_DISPLAY}`,
     description:
       "Kort formulier, helder gesprek. Web, marketing, automatisering of design.",
     url: absoluteUrl("/intake"),

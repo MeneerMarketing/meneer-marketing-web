@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { CasesBuiltBoard } from "@/components/cases/CasesBuiltBoard";
+import { CasesProofReceipts } from "@/components/cases/CasesProofReceipts";
 import { CasesHonestCompare } from "@/components/cases/CasesHonestCompare";
 import { CasesImpactStrip } from "@/components/cases/CasesImpactStrip";
+import { CasesPageHero } from "@/components/cases/CasesPageHero";
 import { CasesShowcase } from "@/components/cases/CasesShowcase";
 import { CasesWerkwijzeTeaser } from "@/components/cases/CasesWerkwijzeTeaser";
 import {
@@ -18,24 +19,22 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import {
   CASES_PAGE_CTA,
   CASES_PAGE_FUN_FACTS_TITLE,
-  CASES_PAGE_HERO,
 } from "@/data/cases-page";
 import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { HUB_PAGE_SEO } from "@/lib/seo/hub-pages";
 import { absoluteUrl } from "@/lib/site";
 
 const PAGE_PATH = "/cases";
-const PAGE_TITLE = "Cases · SkinComplete, BestRest & Hills Pilates | MeneerMarketing";
-const PAGE_DESCRIPTION =
-  "Echte succesverhalen met video en foto's. Shopify, B2B-portaal, SEO, ads en apps. Gebouwd by Meneer Marketing.";
+const seo = HUB_PAGE_SEO.cases;
 
 export const metadata = buildPageMetadata({
-  title: PAGE_TITLE,
+  title: seo.title,
   titleAbsolute: true,
-  description: PAGE_DESCRIPTION,
+  description: seo.description,
   path: PAGE_PATH,
-  ogAccent: "FF5722",
+  ogAccent: seo.ogAccent,
 });
 
 export default function CasesPage() {
@@ -62,50 +61,15 @@ export default function CasesPage() {
         ]}
       />
       <SiteHeader />
-      <main id="main" className="flex-1">
-        <header className="relative overflow-x-clip border-b border-slate-800 bg-slate-950">
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.05]"
-            aria-hidden
-            style={{
-              backgroundImage:
-                "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
-              backgroundSize: "28px 28px",
-            }}
-          />
-          <div
-            className="pointer-events-none absolute -right-20 top-0 size-72 rounded-full bg-[#FF5722]/15 blur-3xl"
-            aria-hidden
-          />
-          <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
-            <Reveal>
-              <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-                {CASES_PAGE_HERO.eyebrow}
-              </p>
-              <h1 className="mt-4 max-w-3xl text-pretty text-[clamp(2rem,8vw,3.25rem)] font-extrabold leading-[1.05] tracking-tight text-white">
-                {CASES_PAGE_HERO.title}{" "}
-                <span className="text-[#FF5722]">{CASES_PAGE_HERO.titleAccent}</span>
-              </h1>
-              <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-slate-400">
-                {CASES_PAGE_HERO.lead}
-              </p>
-              <Link
-                href={siteCtas.groeiscan.href}
-                className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/25 transition hover:bg-orange-600"
-              >
-                {siteCtas.groeiscan.label}
-                <ArrowUpRight className="size-4" aria-hidden />
-              </Link>
-            </Reveal>
-          </div>
-        </header>
+      <main id="main" className="flex-1 overflow-x-clip">
+        <CasesPageHero />
 
         <section className="bg-gradient-to-b from-slate-50 to-white">
           <CasesShowcase />
         </section>
 
         <CasesImpactStrip />
-        <CasesBuiltBoard />
+        <CasesProofReceipts />
         <CasesWerkwijzeTeaser />
         <CasesHonestCompare />
 

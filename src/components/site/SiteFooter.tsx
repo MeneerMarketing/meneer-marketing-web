@@ -5,10 +5,11 @@ import { Logo } from "@/components/site/Logo";
 import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/contact";
 import { siteCtaList, siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
+import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 
 const FOOTER_MAIN_CTAS = siteCtaList.filter((cta) => cta.href !== siteCtas.contact.href);
 
-const FOOTER_CONTACT_LINE = "Ik wil gewoon even contact, ofzo.";
+const FOOTER_CONTACT_LINE = "Zin om te praten? Mail me. Ik reageer zelf, geen ticket-nummer.";
 
 const FOOTER_DIENSTEN = {
   href: "/diensten",
@@ -151,7 +152,7 @@ export function SiteFooter() {
           <div>
             <Logo variant="light" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed tracking-tight text-mm-footer-muted">
-              MeneerMarketing helpt ondernemers groeien. Web, marketing en automatisering op één
+              {BRAND_DISPLAY} helpt ondernemers groeien. Web, marketing en automatisering op één
               lijn. Technisch scherp, menselijk in de uitvoering.
             </p>
             <MeneerPeek />
@@ -256,7 +257,7 @@ export function SiteFooter() {
         {/* Copyright — mobiel */}
         <div className="mt-6 flex flex-col items-center gap-2 text-center text-xs text-mm-footer-muted sm:mt-8 lg:hidden">
           <p className="text-slate-400">
-            © {new Date().getFullYear()} MeneerMarketing. Alle rechten voorbehouden.
+            © {new Date().getFullYear()} {BRAND_DISPLAY}. Alle rechten voorbehouden.
           </p>
           <p>
             <a href={mailtoHref()} className="font-medium text-slate-300 hover:text-sky-300">
@@ -272,7 +273,7 @@ export function SiteFooter() {
         {/* Copyright — desktop (origineel) */}
         <div className="mt-12 hidden flex-col gap-2 border-t border-white/10 pt-8 text-xs text-mm-footer-muted sm:flex-row sm:items-center sm:justify-between lg:flex">
           <p className="text-slate-400">
-            © {new Date().getFullYear()} MeneerMarketing. Alle rechten voorbehouden.
+            © {new Date().getFullYear()} {BRAND_DISPLAY}. Alle rechten voorbehouden.
           </p>
           <p>
             <a href={mailtoHref()} className="font-medium text-slate-300 hover:text-sky-300">

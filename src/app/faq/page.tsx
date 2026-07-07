@@ -10,14 +10,16 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { siteCtas } from "@/lib/cta";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
+import { HUB_PAGE_SEO } from "@/lib/seo/hub-pages";
+
+const seo = HUB_PAGE_SEO.faq;
 
 export const metadata = buildPageMetadata({
-  title: "Veelgestelde vragen | MeneerMarketing",
+  title: seo.title,
   titleAbsolute: true,
-  description:
-    "Eerlijke antwoorden over samenwerken, websites from scratch, Shopify, SEO, ads en wat het kost. Zonder wollige bureautaal.",
+  description: seo.description,
   path: "/faq",
-  ogAccent: "FF5722",
+  ogAccent: seo.ogAccent,
 });
 
 interface FaqItem {

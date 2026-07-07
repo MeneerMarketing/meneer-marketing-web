@@ -1,4 +1,4 @@
-import { withSeoLandingLocation } from "@/lib/seo-landings";
+import { withSeoLandingLocation } from "@/lib/seo-landings-location";
 import { GOOGLE_ADS_BUREAU } from "@/data/seo-landings/pages/google-ads-bureau";
 import { GOOGLE_ADS_BEHEER } from "@/data/seo-landings/pages/google-ads-beheer";
 import { HOGER_IN_GOOGLE } from "@/data/seo-landings/pages/hoger-in-google";
