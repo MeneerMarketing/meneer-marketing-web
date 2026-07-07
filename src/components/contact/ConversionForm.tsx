@@ -913,6 +913,8 @@ export function ConversionForm({
       setShake((s) => s + 1);
       return;
     }
+    setError(null);
+    setMailtoFallback(undefined);
     setStep((s) => Math.min(s + 1, lastStep));
   };
 
@@ -924,6 +926,10 @@ export function ConversionForm({
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
+    if (step < lastStep) {
+      next();
+      return;
+    }
     const err = validateStep(messageStep);
     if (err) {
       setError(err);
