@@ -1,46 +1,27 @@
 import Image from "next/image";
-import Link from "next/link";
-import { GoogleMarketingTrustBadge } from "@/components/site/GoogleMarketingTrustBadge";
 
 type PartnerBadge = {
-  kind: "badge";
   name: string;
   href: string;
-  external?: boolean;
   src: string;
   width: number;
   height: number;
 };
 
-type PartnerGoogleStack = {
-  kind: "google-stack";
-  name: string;
-  href: string;
-};
-
-const PARTNERS: readonly (PartnerBadge | PartnerGoogleStack)[] = [
+const PARTNERS: readonly PartnerBadge[] = [
   {
-    kind: "badge",
     name: "Shopify Partner",
     href: "https://www.shopify.com/partners",
-    external: true,
     src: "/partners/shopify-partner.png",
     width: 196,
     height: 44,
   },
   {
-    kind: "badge",
     name: "Meta Business Partner",
     href: "https://www.facebook.com/business/marketing-partners",
-    external: true,
     src: "/partners/meta-business-partner.png",
     width: 148,
     height: 52,
-  },
-  {
-    kind: "google-stack",
-    name: "Google marketing stack",
-    href: "/diensten/google-ads",
   },
 ] as const;
 
@@ -60,7 +41,7 @@ function partnerCardClass(isDark: boolean): string {
 }
 
 /**
- * Shopify & Meta partner-badges plus Google-stack trust badge (geen Google Partner-logo).
+ * Shopify & Meta partner-badges.
  */
 export function PartnerCredentialsStrip({
   className = "",
@@ -70,44 +51,34 @@ export function PartnerCredentialsStrip({
   const isDark = variant === "on-dark";
 
   return (
-    <div className={className} aria-label="Partnercertificeringen en platformen">
+    <div className={className} aria-label="Partnercertificeringen">
       <p
         className={`text-center text-[10px] font-bold uppercase tracking-[0.2em] sm:text-[11px] ${
           isDark ? "text-slate-500" : "text-slate-400"
         }`}
       >
-        Partners &amp; platformen
+        Partners
       </p>
 
-      <ul className="mt-4 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-stretch sm:gap-4">
+      <ul className="mt-4 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-stretch sm:justify-center sm:gap-4">
         {PARTNERS.map((partner) => (
-          <li key={partner.name} className="flex justify-center sm:flex-1 sm:max-w-[248px]">
-            {partner.kind === "badge" ? (
-              <a
-                href={partner.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={partnerCardClass(isDark)}
-                aria-label={`${partner.name} (opent in nieuw tabblad)`}
-              >
-                <Image
-                  src={partner.src}
-                  alt={partner.name}
-                  width={partner.width}
-                  height={partner.height}
-                  className="h-9 w-auto max-w-full object-contain object-center opacity-95 transition group-hover:opacity-100 sm:h-10"
-                  loading="lazy"
-                />
-              </a>
-            ) : (
-              <Link
-                href={partner.href}
-                className={partnerCardClass(isDark)}
-                aria-label={`${partner.name}: Google Ads, Analytics, GTM en Search Console`}
-              >
-                <GoogleMarketingTrustBadge className="h-9 w-auto max-w-[168px] opacity-95 transition group-hover:opacity-100 sm:h-10" />
-              </Link>
-            )}
+          <li key={partner.name} className="flex justify-center sm:max-w-[248px]">
+            <a
+              href={partner.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={partnerCardClass(isDark)}
+              aria-label={`${partner.name} (opent in nieuw tabblad)`}
+            >
+              <Image
+                src={partner.src}
+                alt={partner.name}
+                width={partner.width}
+                height={partner.height}
+                className="h-9 w-auto max-w-full object-contain object-center opacity-95 transition group-hover:opacity-100 sm:h-10"
+                loading="lazy"
+              />
+            </a>
           </li>
         ))}
       </ul>
@@ -118,7 +89,7 @@ export function PartnerCredentialsStrip({
             isDark ? "text-slate-500" : "text-slate-500"
           }`}
         >
-          Shopify &amp; Meta partner. Google Ads en Analytics in de praktijk.
+          Gecertificeerde Shopify &amp; Meta partner.
         </p>
       ) : null}
     </div>
