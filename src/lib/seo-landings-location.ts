@@ -55,5 +55,12 @@ export function withSeoLandingLocation(
     visualCaption:
       page.visualCaption ??
       `Zo pakken we ${page.primaryKeyword} aan voor ondernemers rond ${city}.`,
+    layoutProfile: "city",
+    skipSections: [
+      ...(page.skipSections ?? []),
+      "confession",
+      "nightmare",
+      "innerVoice",
+    ],
   };
 }

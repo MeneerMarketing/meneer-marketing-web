@@ -72,9 +72,9 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       "Gemiddeld gaat 26% van advertentiebudget naar zoektermen die al organisch scoren. Wie SEO en ads combineert, betaalt dubbel voor dezelfde klik.",
     funFactSource: "Daarom kijken we eerst naar je fundament",
     funFactStat: "26%",
-    hubTitle: "Elk campagnevlak heeft zijn eigen rol in de funnel.",
+    hubTitle: "Zeven kanalen. Eén funnel. Geen budget in de afvoer.",
     hubSubtitle:
-      "Beweeg over de funnel en zie welke dienst waar in je campagnes zit. Of pak de lijst en spring direct naar het juiste traject.",
+      "Google, Meta, creators, marketplaces: elk vlak heeft een rol. Beweeg over de slakkenbuis of klik door naar de dienst die bij jouw fase past.",
     proofMetrics: [
       { label: "ROAS-sturing", value: "Maandelijks" },
       { label: "Creatives", value: "UGC-first" },
@@ -118,9 +118,9 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       "Een nieuwe klant werven kost gemiddeld vijf keer meer dan een bestaande behouden. Toch gaat het meeste budget nog steeds naar acquisitie.",
     funFactSource: "Daarom meten we in herhaalaankopen en LTV",
     funFactStat: "5×",
-    hubTitle: "Elke module in je stack versterkt de klantrelatie.",
+    hubTitle: "Vijf systemen. Eén klantmotor. Geen lek na de eerste koop.",
     hubSubtitle:
-      "Beweeg over het ecosysteem en zie welke dienst waar in je behoud zit. Of pak de lijst en spring direct naar het juiste traject.",
+      "Mail, retentie, workflows, automatisering en AI: elk stuk houdt klanten terug. Beweeg over de motor of klik door naar het traject dat bij je shop past.",
     proofMetrics: [
       { label: "Omzet per flow", value: "Meetbaar" },
       { label: "Handwerk", value: "Eruit" },

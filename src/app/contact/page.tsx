@@ -11,6 +11,7 @@ import {
   localBusinessJsonLd,
 } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { PartnerCredentialsStrip } from "@/components/site/PartnerCredentialsStrip";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { CONTACT_FAQ } from "@/data/contact-index";
 import { buildPageMetadata } from "@/lib/seo/site-metadata";
@@ -50,6 +51,13 @@ export default function ContactPage() {
       <main id="main" className="flex-1">
         <ContactIndexHero />
         <ContactChatExperience />
+
+        <section className="border-b border-slate-200 bg-white py-12 lg:py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <PartnerCredentialsStrip variant="on-light" />
+          </div>
+        </section>
+
         <ContactIndexFaq />
         <ContactIndexCta />
       </main>

@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/data/seo-landings/types";
 const processDefault = [
   { title: "Intake zonder salescircus", body: "Jij vertelt waar je zit. Ik zeg eerlijk wat zin heeft en wat niet." },
   { title: "Plan met volgorde", body: "Niet alles tegelijk. Eerst wat het snelst oplevert of het fundament fixt." },
-  { title: "Uitvoeren", body: "Ik bouw, schrijf en zet live. Geen doorverwijzen naar vijf partijen." },
+  { title: "Uitvoeren", body: "Ik bouw, schrijf en zet live. Alles onder één dak." },
   { title: "Meten en bijsturen", body: "Cijfers beslissen. Sentiment niet." },
 ] as const;
 
@@ -20,7 +20,7 @@ export const DIGITAL_MARKETING_BUREAU: SeoLandingPage = {
   subheadline: "Digital marketing is geen apart universum. Het is online groeien met een site die werkt, vindbaarheid die blijft en ads die niet lekken. Ik doe het allemaal. Zelf.",
   pains: [
     { title: "Bureau zonder developers", body: "Mooie strategie. Niemand die hem bouwt." },
-    { title: "Kanaal-eilandjes", body: "SEO hier, social daar. Geen rode draad." },
+    { title: "Kanaal-eilandjes", body: "SEO hier, social daar. Alles los van elkaar." },
     { title: "Rapporten zonder actie", body: "Data zonder pagina die live gaat." },
   ],
   deliverables: [
@@ -50,7 +50,7 @@ export const ZOEKMACHINE_MARKETING: SeoLandingPage = {
   primaryKeyword: "zoekmachine marketing",
   category: "seo",
   metaTitle: "Zoekmachine marketing · SEO & SEA samen | Meneer Marketing",
-  metaDescription: "Zoekmachine marketing: organisch én betaald onder één strategie. Geen SEO-bureau dat tegen je ads-bureau vecht.",
+  metaDescription: "Zoekmachine marketing: organisch én betaald onder één strategie. SEO en SEA die samenwerken.",
   keywords: ["zoekmachine marketing", "zoekmachine marketing bureau", "sem marketing"],
   eyebrow: "Zoekmachine marketing",
   headline: "Zoekmachine marketing",
@@ -58,7 +58,7 @@ export const ZOEKMACHINE_MARKETING: SeoLandingPage = {
   subheadline: "Zoekmachine marketing is het hele speelveld: Google, rankings, ads, Shopping. Niet twee bureaus die elkaar tegenspreken terwijl jij de rekening betaalt.",
   pains: [
     { title: "SEO vs SEA oorlog", body: "Twee partijen, twee verhalen." },
-    { title: "Geen gedeelde data", body: "Organisch en betaald leren niet van elkaar." },
+    { title: "Data in silo's", body: "Organisch en betaald leren niet van elkaar." },
     { title: "Dubbele kosten", body: "Twee retainers voor één zoekmachine." },
   ],
   deliverables: [
@@ -97,7 +97,7 @@ export const ADVERTENTIEBEHEER: SeoLandingPage = {
   pains: [
     { title: "Account op autopilot", body: "Niemand kijkt ernaar tot het pijn doet." },
     { title: "Zombie-campagnes", body: "Oude tests die nog budget eten." },
-    { title: "Geen eigenaar", body: "Iedereen verantwoordelijk, niemand accountable." },
+    { title: "Account zonder eigenaar", body: "Iedereen verantwoordelijk, niemand accountable." },
   ],
   deliverables: [
     { title: "Wekelijks beheer", body: "Biedingen, zoektermen, budget." },
@@ -126,7 +126,7 @@ export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
   primaryKeyword: "social media advertising",
   category: "google-ads",
   metaTitle: "Social media advertising · betaald social met plan | Meneer Marketing",
-  metaDescription: "Social media advertising op Meta, TikTok en meer. UGC, landings en tracking. Geen boost-knop als strategie.",
+  metaDescription: "Social media advertising op Meta, TikTok en meer. UGC, landings en tracking met plan.",
   keywords: ["social media advertising", "social media ads", "betaald adverteren social media", "social advertising bureau"],
   eyebrow: "Social advertising",
   headline: "Social media advertising",
@@ -164,7 +164,7 @@ export const UGC_MARKETING: SeoLandingPage = {
   primaryKeyword: "ugc marketing",
   category: "content",
   metaTitle: "UGC marketing · creators die converteren | Meneer Marketing",
-  metaDescription: "UGC marketing voor Meta, TikTok en ads. Echte mensen, echte hooks. Geen CEO in een pak die naar camera zwaait.",
+  metaDescription: "UGC marketing voor Meta, TikTok en ads. Echte mensen, echte hooks die converteren.",
   keywords: ["ugc marketing", "user generated content marketing", "ugc ads", "ugc creators nederland"],
   eyebrow: "UGC marketing",
   headline: "UGC marketing die",
@@ -172,7 +172,7 @@ export const UGC_MARKETING: SeoLandingPage = {
   subheadline: "Mensen scrollen door perfecte stockfoto's. Ze stoppen voor echte gezichten die een product laten zien alsof het geen script is. Dat is UGC. En het verkoopt.",
   pains: [
     { title: "Corporate video", body: "Logo eerst. Swipe. Budget weg." },
-    { title: "Geen creator-pipeline", body: "Eén video en dan stilte." },
+    { title: "Creator-pipeline ontbreekt", body: "Eén video en dan stilte." },
     { title: "UGC zonder landings", body: "Mooie view, kapotte checkout." },
   ],
   deliverables: [
@@ -202,16 +202,16 @@ export const INFLUENCER_MARKETING_BUREAU: SeoLandingPage = {
   primaryKeyword: "influencer marketing bureau",
   category: "content",
   metaTitle: "Influencer marketing bureau · creators met rendement | Meneer Marketing",
-  metaDescription: "Influencer marketing bureau dat creators koppelt aan conversie. Geen vanity deals, wel UGC en ads die doorlopen.",
+  metaDescription: "Influencer marketing bureau dat creators koppelt aan conversie. UGC en ads die doorlopen.",
   keywords: ["influencer marketing bureau", "influencer bureau nederland", "creator marketing"],
   eyebrow: "Influencer marketing",
   headline: "Influencer marketing bureau",
   headlineAccent: "zonder alleen views te kopen.",
   subheadline: "Een influencer met 200k volgers en nul conversies is een dure poster. Ik zoek creators die passen bij je product én je ads-strategie.",
   pains: [
-    { title: "Views zonder track", body: "Geen code, geen pixel, geen idee." },
+    { title: "Views zonder track", body: "Pixel en code ontbreken. Onzichtbaar wat werkt." },
     { title: "Verkeerde match", body: "Audience koopt niet wat je verkoopt." },
-    { title: "Eenmalige post", body: "Geen hergebruik in ads. Zonde van budget." },
+    { title: "Eenmalige post", body: "Content verdwijnt na één plaatsing. Zonde van budget." },
   ],
   deliverables: [
     { title: "Creator selectie", body: "Fit met merk en marge." },
@@ -279,7 +279,7 @@ export const ECOMMERCE_SPECIALIST: SeoLandingPage = {
   primaryKeyword: "ecommerce specialist",
   category: "shopify",
   metaTitle: "E-commerce specialist · shop, SEO & ads | Meneer Marketing",
-  metaDescription: "E-commerce specialist voor Shopify groei. Techniek, marketing en automatisering. Geen losse adviseur zonder handen.",
+  metaDescription: "E-commerce specialist voor Shopify groei. Techniek, marketing en automatisering met uitvoering.",
   keywords: ["ecommerce specialist", "e-commerce specialist nederland", "webshop specialist"],
   eyebrow: "E-commerce specialist",
   headline: "E-commerce specialist",
@@ -317,7 +317,7 @@ export const WEBSHOP_MARKETING: SeoLandingPage = {
   primaryKeyword: "webshop marketing",
   category: "shopify",
   metaTitle: "Webshop marketing · groei voor je shop | Meneer Marketing",
-  metaDescription: "Webshop marketing: SEO, Google Shopping, Meta, e-mail. Eén plan voor je hele shop. Geen losse knoppen.",
+  metaDescription: "Webshop marketing: SEO, Google Shopping, Meta, e-mail. Eén plan voor je hele shop.",
   keywords: ["webshop marketing", "webshop marketing bureau", "online winkel marketing"],
   eyebrow: "Webshop marketing",
   headline: "Webshop marketing",
@@ -355,7 +355,7 @@ export const PRODUCTPAGINA_SEO: SeoLandingPage = {
   primaryKeyword: "productpagina seo",
   category: "shopify",
   metaTitle: "Productpagina SEO · ranken én verkopen | Meneer Marketing",
-  metaDescription: "Productpagina SEO voor webshops. Unieke content, schema, snelheid. Geen dunne fabriekspagina's die niemand vindt.",
+  metaDescription: "Productpagina SEO voor webshops. Unieke content, schema, snelheid die rankt.",
   keywords: ["productpagina seo", "seo productpagina's webshop", "product seo shopify"],
   eyebrow: "Productpagina SEO",
   headline: "Productpagina SEO",
@@ -469,7 +469,7 @@ export const WEBDESIGN_BUREAU: SeoLandingPage = {
   primaryKeyword: "webdesign bureau",
   category: "website",
   metaTitle: "Webdesign bureau · design dat converteert | Meneer Marketing",
-  metaDescription: "Webdesign bureau from scratch. Mooi én snel, SEO-klaar, conversiegericht. Geen template dat je over een jaar haat.",
+  metaDescription: "Webdesign bureau from scratch. Mooi én snel, SEO-klaar, conversiegericht.",
   keywords: ["webdesign bureau", "website design bureau", "webdesign bureau nederland"],
   eyebrow: "Webdesign",
   headline: "Webdesign bureau",
@@ -478,7 +478,7 @@ export const WEBDESIGN_BUREAU: SeoLandingPage = {
   pains: [
     { title: "Design zonder dev", body: "Figma-pracht, live ramp." },
     { title: "Template look", body: "Iedereen herkent het theme." },
-    { title: "Geen SEO", body: "Mooi op pagina 4." },
+    { title: "SEO ontbreekt", body: "Mooi op pagina 4." },
   ],
   deliverables: [
     { title: "Custom design", body: "Merk-eigen, geen stock-template." },
@@ -507,7 +507,7 @@ export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
   primaryKeyword: "growth marketing bureau",
   category: "seo",
   metaTitle: "Growth marketing bureau · schaalbaar groeien | Meneer Marketing",
-  metaDescription: "Growth marketing bureau met data, experimenten en uitvoering. Geen hype-deck, wel volgorde die schaalt.",
+  metaDescription: "Growth marketing bureau met data, experimenten en uitvoering. Volgorde die schaalt.",
   keywords: ["growth marketing bureau", "growth hacker nederland", "growth marketing mkb"],
   eyebrow: "Growth marketing",
   headline: "Growth marketing bureau",
@@ -545,7 +545,7 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
   primaryKeyword: "linkedin ads bureau",
   category: "google-ads",
   metaTitle: "LinkedIn Ads bureau · B2B leads die tellen | Meneer Marketing",
-  metaDescription: "LinkedIn Ads bureau voor B2B. Targeting op functie en sector, landings die kwalificeren. Geen dure kliks zonder opvolging.",
+  metaDescription: "LinkedIn Ads bureau voor B2B. Targeting op functie en sector, landings die kwalificeren.",
   keywords: ["linkedin ads bureau", "linkedin advertising nederland", "linkedin ads b2b"],
   eyebrow: "LinkedIn Ads",
   headline: "LinkedIn Ads bureau",
@@ -591,8 +591,8 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
   subheadline: "Klaviyo openen is makkelijk. Klaviyo goed inrichten niet. Ik zet flows, segmenten en koppelingen zodat je shop niet alleen nieuwe klanten jaagt maar ook terugwint.",
   pains: [
     { title: "Flows half af", body: "Welkomstmail bestaat. Rest niet." },
-    { title: "Alles in één lijst", body: "Geen segmentatie. Spam-gevoel." },
-    { title: "E-mail los van ads", body: "Geen consistent verhaal." },
+    { title: "Alles in één lijst", body: "Iedereen dezelfde mail. Spam-gevoel." },
+    { title: "E-mail los van ads", body: "Verhaal wisselt per kanaal." },
   ],
   deliverables: [
     { title: "Flow setup", body: "Welcome, cart, post-purchase, win-back." },
@@ -621,7 +621,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
   primaryKeyword: "core web vitals verbeteren",
   category: "website",
   metaTitle: "Core Web Vitals verbeteren · sneller ranken & converteren | Meneer Marketing",
-  metaDescription: "Core Web Vitals verbeteren in code. LCP, INP, CLS. Geen plugin die de helft fixt. Wel snelheid die SEO en ads helpt.",
+  metaDescription: "Core Web Vitals verbeteren in code. LCP, INP, CLS. Snelheid die SEO en ads helpt.",
   keywords: ["core web vitals verbeteren", "website snelheid verbeteren", "lcp inp cls", "pagespeed optimalisatie"],
   eyebrow: "Core Web Vitals",
   headline: "Core Web Vitals verbeteren",
@@ -659,7 +659,7 @@ export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
   primaryKeyword: "marketing consultant mkb",
   category: "seo",
   metaTitle: "Marketing consultant MKB · strategie én uitvoering | Meneer Marketing",
-  metaDescription: "Marketing consultant voor MKB die ook bouwt en campagnes draait. Geen advies dat in een la verdwijnt.",
+  metaDescription: "Marketing consultant voor MKB die ook bouwt en campagnes draait. Advies dat live gaat.",
   keywords: ["marketing consultant mkb", "marketing adviseur mkb", "externe marketing consultant"],
   eyebrow: "Marketing consultant",
   headline: "Marketing consultant voor MKB",
@@ -668,7 +668,7 @@ export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
   pains: [
     { title: "Advies zonder handen", body: "Rapport klaar. Niets live." },
     { title: "Te duur fulltime", body: "CMO huren is zwaar voor MKB." },
-    { title: "Geen prioriteit", body: "Alles urgent, niets af." },
+    { title: "Alles urgent", body: "Niets krijgt prioriteit, niets wordt af." },
   ],
   deliverables: [
     { title: "Strategie-sessie", body: "Helder wat eerst moet." },
@@ -736,7 +736,7 @@ export const SHOPIFY_THEME_LATEN_MAKEN: SeoLandingPage = {
   primaryKeyword: "shopify theme laten maken",
   category: "shopify",
   metaTitle: "Shopify theme laten maken · custom & snel | Meneer Marketing",
-  metaDescription: "Shopify theme laten maken from scratch. Snel, merk-eigen, SEO-klaar. Geen theme-store plafond.",
+  metaDescription: "Shopify theme laten maken from scratch. Snel, merk-eigen, SEO-klaar.",
   keywords: ["shopify theme laten maken", "custom shopify theme", "shopify theme ontwikkelaar"],
   eyebrow: "Shopify theme",
   headline: "Shopify theme laten maken",

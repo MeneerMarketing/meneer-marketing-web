@@ -13,6 +13,7 @@ import {
   buildUniqueOpener,
   variateSeoLandingPage,
 } from "@/lib/seo-landings-uniqueness";
+import { applyEditorialProfile } from "@/lib/seo-landings-editorial";
 import type { SeoLandingTocItem } from "@/data/seo-landings/enriched-types";
 import {
   ANALOGIES,
@@ -108,7 +109,7 @@ const SCENARIO_TITLES = [
 ] as const;
 
 const SCENARIO_BODY_BANK = [
-  "Je hebt een maand. Geen jaar. Je wilt dat {kw} iets oplevert dat je team voelt in de inbox of in de omzet. Wat ik dan niet doe: alles tegelijk aan, zes kanalen openen en hopen dat er eentje raak is.",
+  "Je hebt een maand. Korte tijdlijn. Je wilt dat {kw} iets oplevert dat je team voelt in de inbox of in de omzet. Wat ik dan niet doe: alles tegelijk aan, zes kanalen openen en hopen dat er eentje raak is.",
   "Wat ik wel doe: eerst meten wat er al gebeurt, dan het grootste lek dichten. Soms is dat je site. Soms je feed. Soms je zoektermenrapport dat niemand ooit opent. Pas daarna budget omhoog.",
   "Het voelt minder sexy dan 'we schalen direct'. Het voelt wel als een plan dat je bankrekening snapt.",
   "Je hebt al iets laten doen. Er is een site, misschien ads, misschien een bureau dat je maandelijks een PDF stuurt. Maar {kw} voelt als geld in een automaat die soms wat uitspuugt en soms slikt.",
@@ -117,7 +118,7 @@ const SCENARIO_BODY_BANK = [
   "In {city} zie ik vaak dat ondernemers denken dat lokaal automatisch betekent: adres op de site. Google is strenger. Je profiel, reviews en landings moeten mee.",
   "Je concurrent adverteert al op '{kw}'. Jij twijfelt nog. Elke week wachten is een week dat hij data verzamelt en jij niet.",
   "Als je marge op je belangrijkste product te laag is voor ads, zeg ik dat hardop. Dan is SEO of je site slimmer dan branden.",
-  "SkinComplete groeide eerst organisch. BestRest kreeg per product een plan. Jij krijgt geen copy-paste. Wel een volgorde die klopt.",
+  "SkinComplete groeide eerst organisch. BestRest kreeg per product een plan. Jij krijgt een volgorde op maat die klopt.",
 ] as const;
 
 const HONEST_NO_TITLES = [
@@ -372,7 +373,8 @@ function buildLocalColor(page: SeoLandingPage) {
 }
 
 export function enrichSeoLandingPage(page: SeoLandingPage): EnrichedSeoLandingPage {
-  const varied = variateSeoLandingPage(page);
+  const editorial = applyEditorialProfile(page);
+  const varied = variateSeoLandingPage(editorial);
   const kennisbankPool = KENNISBANK_BY_CATEGORY[varied.category];
   const kennisbankSlug = pick(varied.slug, kennisbankPool, "kb");
   const headline = buildDisplayHeadline(varied);
@@ -391,9 +393,9 @@ export function enrichSeoLandingPage(page: SeoLandingPage): EnrichedSeoLandingPa
     headline: headline.headline,
     headlineAccent: headline.headlineAccent,
     faq,
-    story: buildStory(varied),
-    scenario: buildScenario(varied),
-    deepDive: buildDeepDive(varied),
+    story: varied.enrichedOverrides?.story ?? buildStory(varied),
+    scenario: varied.enrichedOverrides?.scenario ?? buildScenario(varied),
+    deepDive: varied.enrichedOverrides?.deepDive ?? buildDeepDive(varied),
     myths: buildMyths(varied),
     weirdFact: buildWeirdFact(varied),
     honestNo: buildHonestNo(varied),

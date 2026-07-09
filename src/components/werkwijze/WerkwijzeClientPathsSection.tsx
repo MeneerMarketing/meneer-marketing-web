@@ -33,7 +33,7 @@ export function WerkwijzeClientPathsSection() {
 
       <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/80">
-          Geen copy-paste
+          Echte cases
         </p>
         <h2
           id="werkwijze-paths-heading"

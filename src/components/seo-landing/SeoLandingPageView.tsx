@@ -6,16 +6,10 @@ import { motion, useReducedMotion } from "framer-motion";
 import type { EnrichedSeoLandingPage } from "@/data/seo-landings/enriched-types";
 import { SeoLandingBreadcrumb } from "@/components/seo-landing/SeoLandingBreadcrumb";
 import { SeoLandingToc } from "@/components/seo-landing/SeoLandingToc";
-import {
-  SeoLandingAiVisual,
-  SeoLandingBuildVisual,
-  SeoLandingContentVisual,
-  SeoLandingGoogleAdsVisual,
-  SeoLandingMetaAdsVisual,
-  SeoLandingPortalVisual,
-  SeoLandingSerpVisual,
-  SeoLandingWebshopVisual,
-} from "@/components/seo-landing/visuals/SeoLandingVisuals";
+import { SeoLandingVisualPanel } from "@/components/seo-landing/SeoLandingVisualPanel";
+import { SeoLandingInlineCta } from "@/components/seo-landing/SeoLandingInlineCta";
+import { SeoLandingSceneBreak } from "@/components/seo-landing/SeoLandingSceneBreak";
+import { SeoLandingStickyBar } from "@/components/seo-landing/SeoLandingStickyBar";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { Reveal } from "@/components/effects/Reveal";
 import { DienstFAQ } from "@/components/diensten/DienstFAQ";
@@ -32,42 +26,51 @@ import { siteCtas } from "@/lib/cta";
 import { seoLandingPath } from "@/lib/seo-landings";
 import { getSeoLandingBySlug, getAllSeoLandingPages } from "@/data/seo-landings/registry";
 import { getKennisbankArticleBySlug } from "@/lib/kennisbank";
+import {
+  isEditorialLayout,
+  scenesAtPlacement,
+  shouldShowSeoSection,
+} from "@/lib/seo-landing-sections";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-function SeoLandingVisualPanel({ page }: { page: EnrichedSeoLandingPage }) {
-  switch (page.visual) {
-    case "google-ads":
-      return <SeoLandingGoogleAdsVisual />;
-    case "meta-ads":
-      return <SeoLandingMetaAdsVisual />;
-    case "seo-serp":
-      return <SeoLandingSerpVisual keyword={page.primaryKeyword} />;
-    case "website-build":
-      return <SeoLandingBuildVisual />;
-    case "webshop":
-      return <SeoLandingWebshopVisual />;
-    case "b2b-portal":
-      return <SeoLandingPortalVisual />;
-    case "content-hub":
-      return <SeoLandingContentVisual />;
-    case "ai-search":
-      return <SeoLandingAiVisual keyword={page.primaryKeyword} />;
-    default:
-      return null;
-  }
+function SceneBreaks({
+  page,
+  placement,
+}: {
+  page: EnrichedSeoLandingPage;
+  placement: "after-story" | "after-aanpak" | "after-deep-dive";
+}) {
+  const scenes = scenesAtPlacement(page, placement);
+  if (scenes.length === 0) return null;
+  return (
+    <>
+      {scenes.map((scene, i) => (
+        <SeoLandingSceneBreak
+          key={`${scene.placement}-${scene.visual}-${i}`}
+          scene={scene}
+          page={page}
+          flip={i % 2 === 1}
+        />
+      ))}
+    </>
+  );
 }
 
 function ProseSection({
   block,
   variant = "light",
+  page,
+  showAside = false,
 }: {
   block: { title: string; paragraphs: readonly string[] };
   variant?: "light" | "dark";
+  page?: EnrichedSeoLandingPage;
+  showAside?: boolean;
 }) {
   const isDark = variant === "dark";
-  return (
-    <div>
+  const prose = (
+    <>
       <h2
         className={`text-pretty text-2xl font-extrabold tracking-tight lg:text-3xl ${
           isDark ? "text-white" : "text-slate-900"
@@ -87,8 +90,23 @@ function ProseSection({
           </p>
         ))}
       </div>
-    </div>
+    </>
   );
+
+  if (showAside && page) {
+    return (
+      <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,280px)] lg:gap-12">
+        <div>{prose}</div>
+        <div className="flex justify-center lg:sticky lg:top-24 lg:justify-end">
+          <div className="scale-[0.92] lg:scale-100">
+            <SeoLandingVisualPanel visual={page.visual} keyword={page.primaryKeyword} />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return <div>{prose}</div>;
 }
 
 export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
@@ -192,7 +210,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
             transition={{ delay: 0.12, duration: 0.5, ease: EASE }}
             className="flex flex-col items-center lg:items-end"
           >
-            <SeoLandingVisualPanel page={page} />
+            <SeoLandingVisualPanel visual={page.visual} keyword={page.primaryKeyword} />
             {page.visualCaption ? (
               <p className="mt-4 max-w-md text-center text-sm font-medium text-slate-500 lg:text-right">
                 {page.visualCaption}
@@ -255,7 +273,11 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <SeoLandingCoffeeChat chat={page.coffeeChat} />
+      <SceneBreaks page={page} placement="after-story" />
+
+      {shouldShowSeoSection(page, "coffeeChat") ? (
+        <SeoLandingCoffeeChat chat={page.coffeeChat} />
+      ) : null}
 
       <section id="mythes" aria-labelledby="mythes-heading" className="border-b border-slate-200 bg-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
@@ -316,7 +338,14 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <SeoLandingInnerVoice voice={page.innerVoice} />
+      <SeoLandingInlineCta
+        title="Herken je dit?"
+        body={`Dan hoeft ${page.primaryKeyword} geen eindeloze zoektocht te zijn. Plan een intake en we kijken eerlijk wat slim is voor jouw situatie.`}
+      />
+
+      {shouldShowSeoSection(page, "innerVoice") ? (
+        <SeoLandingInnerVoice voice={page.innerVoice} />
+      ) : null}
 
       <section className="border-b border-slate-200 bg-slate-950 py-16 text-white lg:py-20">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
@@ -349,8 +378,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
               Wat je van mij krijgt
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Geen vage beloftes rond {page.primaryKeyword}. Dit pak ik concreet aan, met je marge en
-              je tijd in gedachten.
+              Concreet rond {page.primaryKeyword}. Dit pak ik aan met je marge en je tijd in gedachten.
             </p>
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -366,6 +394,14 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
+      <SeoLandingInlineCta
+        title="Dit pak ik concreet voor je aan"
+        body={`Geen vaag bureaupraat. Je weet wat je krijgt rond ${page.primaryKeyword} en wat de volgende stap is.`}
+        variant="dark"
+      />
+
+      <SceneBreaks page={page} placement="after-aanpak" />
+
       <section id="deep-dive" aria-labelledby="deep-dive-heading" className="border-b border-slate-200 bg-orange-50/40 py-16 lg:py-20">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
           <Reveal>
@@ -374,9 +410,13 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <SeoLandingRantBlock rant={page.rant} />
+      <SceneBreaks page={page} placement="after-deep-dive" />
 
-      <SeoLandingAnalogyBlock analogy={page.analogy} />
+      {shouldShowSeoSection(page, "rant") ? <SeoLandingRantBlock rant={page.rant} /> : null}
+
+      {shouldShowSeoSection(page, "analogy") ? (
+        <SeoLandingAnalogyBlock analogy={page.analogy} />
+      ) : null}
 
       <section id="proces" aria-labelledby="proces-heading" className="border-b border-slate-200 bg-slate-950 py-16 text-white">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
@@ -385,7 +425,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
               {page.processTitle}
             </h2>
             <p className="mt-3 max-w-2xl text-white/65">
-              Geen mysterieus black box proces. Wel een volgorde die je bankrekening snapt.
+              Een volgorde die je bankrekening snapt. Transparant, stap voor stap.
             </p>
           </Reveal>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -420,8 +460,16 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <SeoLandingNightmareList title={page.nightmare.title} items={page.nightmare.items} />
+      <SeoLandingInlineCta
+        title="Zullen we jouw situatie even doorlichten?"
+        body="Ik lees je huidige setup en zeg eerlijk wat de volgende stap is. Gratis intake, geen verplichtingen."
+      />
 
+      {shouldShowSeoSection(page, "nightmare") ? (
+        <SeoLandingNightmareList title={page.nightmare.title} items={page.nightmare.items} />
+      ) : null}
+
+      {shouldShowSeoSection(page, "weirdFact") ? (
       <section className="border-b border-slate-200 bg-slate-50 py-14">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
@@ -439,6 +487,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
           </Reveal>
         </div>
       </section>
+      ) : null}
 
       <section className="border-b border-slate-200 bg-orange-50/50 py-12">
         <div className="mx-auto flex max-w-6xl items-start gap-4 px-4 lg:px-8">
@@ -454,8 +503,11 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      <SeoLandingConfessionBlock confession={page.confession} />
+      {shouldShowSeoSection(page, "confession") ? (
+        <SeoLandingConfessionBlock confession={page.confession} />
+      ) : null}
 
+      {shouldShowSeoSection(page, "thisWeek") ? (
       <section className="border-b border-slate-200 py-16">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
@@ -463,7 +515,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
               {page.thisWeek.title}
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Gratis winst of inzicht. Geen retainer nodig om hier te beginnen.
+              Gratis winst of inzicht. Je kunt hier starten zonder retainer.
             </p>
           </Reveal>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -481,6 +533,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
           </ul>
         </div>
       </section>
+      ) : null}
 
       <section className="border-b border-slate-200 bg-slate-900 py-14 text-white">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
@@ -530,7 +583,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
               Vragen over {page.primaryKeyword}
             </h2>
             <p className="mt-3 text-slate-600">
-              Eerlijke antwoorden. Geen salesscript. Als het antwoord nee is, zeg ik nee.
+              Eerlijke antwoorden. Als het antwoord nee is, zeg ik nee.
             </p>
           </Reveal>
           <div className="mt-8">
@@ -538,6 +591,12 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
           </div>
         </div>
       </section>
+
+      <SeoLandingInlineCta
+        title="Nog een vraag? Of meteen aan de slag?"
+        body="Mail me of start de intake. Je praat met mij, niet met een salesrobot."
+        variant="dark"
+      />
 
       {citySiblings.length > 0 ? (
         <section className="border-b border-slate-200 bg-orange-50/30 py-14">
@@ -598,16 +657,29 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
               {page.ctaTitle}
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">{page.ctaBody}</p>
-            <Link
-              href={siteCtas.startIntake.href}
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-900 px-8 py-4 text-sm font-bold text-white transition hover:bg-[#FF5722]"
-            >
-              Plan je intake
-              <ArrowUpRight className="size-4" aria-hidden />
-            </Link>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href={siteCtas.startIntake.href}
+                className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition hover:bg-orange-600"
+              >
+                {siteCtas.startIntake.label}
+                <ArrowUpRight className="size-4" aria-hidden />
+              </Link>
+              <Link
+                href={siteCtas.contact.href}
+                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-8 py-4 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+              >
+                {siteCtas.contact.label}
+              </Link>
+            </div>
+            <p className="mt-4 text-sm text-slate-500">
+              Geen verplichtingen · Reactie binnen 1 à 2 werkdagen
+            </p>
           </Reveal>
         </div>
       </section>
+
+      <SeoLandingStickyBar keyword={page.primaryKeyword} />
     </article>
   );
 }

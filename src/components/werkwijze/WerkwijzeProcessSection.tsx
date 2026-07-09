@@ -32,13 +32,13 @@ export function WerkwijzeProcessSection() {
         </p>
         <h2
           id="werkwijze-process-heading"
-          className="mt-3 max-w-2xl text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
+          className="mt-3 max-w-2xl text-2xl font-extrabold tracking-tighter text-slate-900 sm:text-3xl"
         >
-          Vier fases. Jij kiest waar we starten.
+          Vier fases. Tik er één open en speel mee.
         </h2>
         <p className="mt-3 max-w-xl text-slate-600">
-          De inhoud verschilt per klant. Tik een fase links, lees en speel rechts
-          mee.
+          Chat-intake, routekaart, deploy-knop, budget-slider: per fase een mini-demo.
+          De volgorde verschilt per klant. De scherpte niet.
         </p>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)] lg:items-stretch lg:gap-8">

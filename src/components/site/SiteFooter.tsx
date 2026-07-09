@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { Logo } from "@/components/site/Logo";
+import { PartnerCredentialsStrip } from "@/components/site/PartnerCredentialsStrip";
 import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/contact";
 import { siteCtaList, siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
@@ -9,7 +10,7 @@ import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
 
 const FOOTER_MAIN_CTAS = siteCtaList.filter((cta) => cta.href !== siteCtas.contact.href);
 
-const FOOTER_CONTACT_LINE = "Zin om te praten? Mail me. Ik reageer zelf, geen ticket-nummer.";
+const FOOTER_CONTACT_LINE = "Contact? Mail me. Je praat met mij.";
 
 const FOOTER_DIENSTEN = {
   href: "/diensten",
@@ -18,9 +19,9 @@ const FOOTER_DIENSTEN = {
 
 const FOOTER_NAV = [
   { href: "/cases", label: "Cases" },
-  { href: "/over", label: "Over ons" },
+  { href: "/over", label: "Over" },
   { href: "/kennisbank", label: "Kennisbank" },
-  { href: "/zoeken", label: "Zoeken per dienst" },
+  { href: "/zoeken", label: "Zoeken" },
   { href: "/werkwijze", label: "Werkwijze" },
   { href: "/contact", label: "Contact" },
   { href: "/faq", label: "FAQ" },
@@ -136,7 +137,7 @@ export function SiteFooter() {
               Navigatie
             </p>
             <ul className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2.5 text-sm font-medium text-slate-200">
-              {FOOTER_NAV.map((item) => (
+              {FOOTER_NAV.filter((item) => item.href !== "/contact").map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="hover:text-sky-300" prefetch={false}>
                     {item.label}
@@ -187,7 +188,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link href="/over" className="hover:text-sky-300">
-                  Over ons
+                  Over
                 </Link>
               </li>
               <li>
@@ -197,7 +198,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <Link href="/zoeken" className="hover:text-sky-300" prefetch={false}>
-                  Zoeken per dienst
+                  Zoeken
                 </Link>
               </li>
               <li>
@@ -254,6 +255,11 @@ export function SiteFooter() {
           ))}
         </nav>
 
+        <PartnerCredentialsStrip
+          variant="on-dark"
+          className="mt-8 border-t border-white/10 pt-8 sm:mt-10 lg:hidden"
+        />
+
         {/* Copyright — mobiel */}
         <div className="mt-6 flex flex-col items-center gap-2 text-center text-xs text-mm-footer-muted sm:mt-8 lg:hidden">
           <p className="text-slate-400">
@@ -269,6 +275,11 @@ export function SiteFooter() {
             {businessKvkDisplay}
           </p>
         </div>
+
+        <PartnerCredentialsStrip
+          variant="on-dark"
+          className="mt-12 hidden border-t border-white/10 pt-10 lg:block"
+        />
 
         {/* Copyright — desktop (origineel) */}
         <div className="mt-12 hidden flex-col gap-2 border-t border-white/10 pt-8 text-xs text-mm-footer-muted sm:flex-row sm:items-center sm:justify-between lg:flex">

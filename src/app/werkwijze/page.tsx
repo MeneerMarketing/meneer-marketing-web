@@ -6,7 +6,7 @@ import {
 } from "@/components/werkwijze/WerkwijzeFaqCta";
 import { WerkwijzeHero } from "@/components/werkwijze/WerkwijzeHero";
 import { WerkwijzeInboxSection } from "@/components/werkwijze/WerkwijzeInboxSection";
-import { WerkwijzeNotSection } from "@/components/werkwijze/WerkwijzeNotSection";
+import { WerkwijzeWelSection } from "@/components/werkwijze/WerkwijzeWelSection";
 import { WerkwijzeProcessSection } from "@/components/werkwijze/WerkwijzeProcessSection";
 import { WerkwijzeSprintSection } from "@/components/werkwijze/WerkwijzeSprintSection";
 import {
@@ -58,7 +58,7 @@ export default function WerkwijzePage() {
 
         <WerkwijzeInboxSection />
 
-        <WerkwijzeNotSection />
+        <WerkwijzeWelSection />
 
         <MarketingFunFactsRow
           title="Tussendoor: feitjes die je route scherper maken"

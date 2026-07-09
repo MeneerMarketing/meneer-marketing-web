@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { Lock } from "lucide-react";
-import { motion, useInView, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
+import { CasePreviewVideo } from "@/components/home/cases/CasePreviewVideo";
 import { CaseSceneIllustration } from "@/components/home/cases/CaseSceneIllustration";
 import type { HomeCase } from "@/data/home-cases";
 
@@ -13,9 +14,7 @@ interface CaseLivePreviewProps {
 
 /** Live browser-preview met video, foto of fallback. */
 export function CaseLivePreview({ caseItem }: CaseLivePreviewProps) {
-  const reduce = useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-10%" });
 
   const {
     palette,
@@ -23,6 +22,7 @@ export function CaseLivePreview({ caseItem }: CaseLivePreviewProps) {
     scene,
     previewImage,
     previewVideo,
+    previewVideoMobile,
     previewPoster,
     previewObjectPosition = "center top",
   } = caseItem;
@@ -30,7 +30,6 @@ export function CaseLivePreview({ caseItem }: CaseLivePreviewProps) {
   const hasVideo = Boolean(previewVideo);
   const hasImage = Boolean(previewImage);
   const hasPoster = Boolean(previewPoster);
-  const videoAutoplay = hasVideo && !reduce && isInView;
 
   return (
     <motion.div
@@ -64,18 +63,12 @@ export function CaseLivePreview({ caseItem }: CaseLivePreviewProps) {
 
         <div className="relative aspect-[16/10] overflow-hidden bg-[#0f0d14]">
           {hasVideo ? (
-            <video
-              key={previewVideo}
-              src={previewVideo}
+            <CasePreviewVideo
+              src={previewVideo!}
+              mobileSrc={previewVideoMobile}
               poster={previewPoster}
-              autoPlay={videoAutoplay}
-              muted
-              loop={videoAutoplay}
-              playsInline
-              preload={isInView ? "auto" : "none"}
-              className="absolute inset-0 size-full object-cover"
-              style={{ objectPosition: previewObjectPosition }}
-              aria-label={`${caseItem.client} preview`}
+              objectPosition={previewObjectPosition}
+              label={`${caseItem.client} preview`}
             />
           ) : null}
 

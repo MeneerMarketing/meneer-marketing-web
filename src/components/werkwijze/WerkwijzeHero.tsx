@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Check, Radio, Timer } from "lucide-react";
 import { useEffect, useState } from "react";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { LivingCloudGrid } from "@/components/effects/LivingCloudGrid";
 import { WERKWIJZE_HERO } from "@/data/werkwijze-index";
 import { siteCtas } from "@/lib/cta";
 
@@ -26,17 +27,14 @@ export function WerkwijzeHero() {
   }, [reduce]);
 
   return (
-    <header className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-white via-slate-50/80 to-white">
-      <div
-        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"
-        aria-hidden
-      />
+    <header className="relative overflow-hidden border-b border-slate-200 bg-white">
+      <LivingCloudGrid />
       <div
         className="pointer-events-none absolute -right-32 top-0 size-96 rounded-full bg-[#FF5722]/[0.06] blur-3xl"
         aria-hidden
       />
 
-      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:items-center lg:gap-12">
           <div>
             <motion.p

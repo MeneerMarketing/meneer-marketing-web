@@ -2,7 +2,7 @@ import type { SeoLandingPage } from "@/data/seo-landings/types";
 
 const processDefault = [
   { title: "Jouw situatie helder", body: "We kijken naar marge, verkeer, tijdlijn en wat je al hebt." },
-  { title: "Eerlijke keuze", body: "Geen dogma. Wel een aanbeveling met waarom." },
+  { title: "Eerlijke keuze", body: "Data en logica. Een aanbeveling met waarom." },
   { title: "Plan met volgorde", body: "Wat eerst, wat later, wat nooit." },
   { title: "Uitvoeren", body: "Ik help je het ook echt live te krijgen." },
 ] as const;
@@ -27,14 +27,14 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
     { title: "Beslisboom op maat", body: "Jouw marge, markt, site-status." },
     { title: "SEO eerst als site klaar is", body: "SkinComplete-route." },
     { title: "Ads voor testen", body: "Snel leren bij nieuw product." },
-    { title: "Beide onder één dak", body: "Geen tegenstrijdige bureaus." },
+    { title: "Beide onder één dak", body: "Eén strategie over kanalen." },
   ],
   visual: "google-ads",
   visualCaption: "Ads en SEO zijn geen vijanden. Ze zijn tijdlijnen.",
   processTitle: "De juiste volgorde kiezen",
   processSteps: processDefault,
   proofTitle: "SkinComplete deed SEO eerst",
-  proofBody: "Organisch bewezen, daarna ads. BestRest per product bepaald. Geen dogma, wel logica.",
+  proofBody: "Organisch bewezen, daarna ads. BestRest per product bepaald. Logica op marge en tijdlijn.",
   hotTake: { label: "Heet take", body: "Google Ads op een site die niet converteert is SEO-budget verbranden met extra stappen." },
   faq: [
     { question: "Kan ik beide tegelijk?", answer: "Ja, als je weet wat elke euro doet en je site meewerkt." },
@@ -52,7 +52,7 @@ export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
   primaryKeyword: "shopify of woocommerce",
   category: "shopify",
   metaTitle: "Shopify of WooCommerce · eerlijke keuze | Meneer Marketing",
-  metaDescription: "Shopify of WooCommerce? Wanneer welke shop. Migratie, SEO en groei. Geen WordPress-promotie, wel eerlijk advies.",
+  metaDescription: "Shopify of WooCommerce? Wanneer welke shop. Migratie, SEO en groei. Eerlijk advies op maat.",
   keywords: ["shopify of woocommerce", "woocommerce of shopify", "webshop platform kiezen"],
   eyebrow: "Shopify vs WooCommerce",
   headline: "Shopify of WooCommerce?",
@@ -135,15 +135,15 @@ export const BUREAU_OF_FREELANCER_MARKETING: SeoLandingPage = {
   eyebrow: "Bureau vs freelancer",
   headline: "Marketing bureau of freelancer?",
   headlineAccent: "Ik ben eigenlijk het derde antwoord.",
-  subheadline: "Groot bureau: veel mensen, veel overhead. Freelancer: goedkoop tot je vijf freelancers coördineert. Ik ben één senior brein dat bouwt, SEO doet en ads draait. Geen circus, geen gaten.",
+  subheadline: "Groot bureau: veel mensen, veel overhead. Freelancer: goedkoop tot je vijf freelancers coördineert. Ik ben één senior brein dat bouwt, SEO doet en ads draait. Eén lijn, volledige dekking.",
   pains: [
     { title: "Bureau overhead", body: "Jij praat met junior, betaalt voor senior." },
     { title: "Freelancer-gaten", body: "Design hier, SEO daar, ads nergens." },
-    { title: "Geen eigenaar", body: "Iedereen doet een stukje." },
+    { title: "Project zonder eigenaar", body: "Iedereen doet een stukje." },
   ],
   deliverables: [
     { title: "Eén aanspreekpunt", body: "Strategie tot uitvoering." },
-    { title: "Bouwen + marketing", body: "Geen gat tussen dev en ads." },
+    { title: "Bouwen + marketing", body: "Dev en ads in één lijn." },
     { title: "Schaalbaar", body: "Groei mee zonder team van twintig." },
     { title: "Eerlijke scope", body: "Wat ik wel en niet doe." },
   ],

@@ -11,7 +11,7 @@ const processDefault = [
   },
   {
     title: "Uitvoeren",
-    body: "Ik bouw, schrijf en zet live. Geen doorverwijzen naar vijf partijen.",
+    body: "Ik bouw, schrijf en zet live. Alles onder één dak.",
   },
   {
     title: "Meten en bijsturen",
@@ -35,11 +35,11 @@ export const META_ADS_BUREAU: SeoLandingPage = {
   pains: [
     { title: "Boostpost-gokken", body: "De knop 'promoten' is geen strategie. Het is roulette met je merk." },
     { title: "Stock die niemand gelooft", body: "Mensen scrollen door perfecte stockfoto's alsof het reclame uit 2014 is." },
-    { title: "Geen koppeling met Google", body: "Twee bureaus, twee verhalen. Jij betaalt dubbel voor verwarring." },
+    { title: "Kanalen los van elkaar", body: "Twee bureaus, twee verhalen. Jij betaalt dubbel voor verwarring." },
   ],
   deliverables: [
     { title: "Meta + Google onder één dak", body: "Eén strategie, geen tegenstrijdige boodschappen." },
-    { title: "UGC & creators", body: "Echte mensen, echte hooks. Geen corporate voice-over." },
+    { title: "UGC & creators", body: "Echte mensen, echte hooks. Authentieke content." },
     { title: "Landings die matchen", body: "Ad en pagina zeggen hetzelfde. Anders gooi je geld weg." },
     { title: "Wekelijkse bijstuur", body: "Creatives roteren. Budget naar winnaars." },
   ],
@@ -74,11 +74,11 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
   headline: "Online marketing bureau dat",
   headlineAccent: "alles onder één dak heeft.",
   subheadline:
-    "Geen SEO-bureau hier, ads-bureau daar en een freelancer die je site probeert te fixen. Ik ben je online marketing manager: strategie én uitvoering.",
+    "SEO, ads en site onder één dak. Ik ben je online marketing manager: strategie én uitvoering.",
   pains: [
     { title: "Te veel partijen", body: "Iedereen wijst naar de ander als het niet werkt." },
-    { title: "Rapporten zonder actie", body: "Mooie slides. Geen pagina die rankt. Geen ad die converteert." },
-    { title: "Geen volgorde", body: "Ads op een site die nog niet klaar is om te verkopen." },
+    { title: "Rapporten zonder actie", body: "Mooie slides. Pagina's die niet ranken. Ads die niet converteren." },
+    { title: "Verkeerde volgorde", body: "Ads op een site die nog niet klaar is om te verkopen." },
   ],
   deliverables: [
     { title: "Strategie & volgorde", body: "Wat eerst, wat later. Eerlijk en meetbaar." },
@@ -87,7 +87,7 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
     { title: "Campagnes", body: "Google Ads en Meta als het zinvol is." },
   ],
   visual: "content-hub",
-  visualCaption: "Eén bureau. Eén verhaal. Geen spaghetti.",
+  visualCaption: "Eén bureau. Eén verhaal. Eén lijn.",
   processTitle: "Zo werk ik als jouw bureau",
   processSteps: processDefault,
   proofTitle: "SkinComplete & BestRest",
@@ -110,7 +110,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
   category: "shopify",
   metaTitle: "Shopify expert · custom shops & B2B | Meneer Marketing",
   metaDescription:
-    "Shopify expert voor custom themes, B2B-portalen en groei. Geen template-shop. SkinComplete-niveau vakmanschap.",
+    "Shopify expert voor custom themes, B2B-portalen en groei. Custom build. SkinComplete-niveau vakmanschap.",
   keywords: ["shopify expert", "shopify specialist nederland", "shopify ontwikkelaar"],
   eyebrow: "Shopify expert",
   headline: "Shopify expert die je shop",
@@ -152,7 +152,7 @@ export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Google Shopping ads · feeds die verkopen | Meneer Marketing",
   metaDescription:
-    "Google Shopping ads met schone feeds, sterke productpagina's en bijsturing op marge. Geen budget in Shopping zonder conversie.",
+    "Google Shopping ads met schone feeds, sterke productpagina's en bijsturing op marge. Conversie vóór opschalen.",
   keywords: ["google shopping ads", "google shopping bureau", "shopping campagnes", "merchant center"],
   eyebrow: "Google Shopping",
   headline: "Google Shopping ads zonder",
@@ -202,7 +202,7 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
   subheadline:
     "Steeds meer klanten vragen ChatGPT of Gemini om advies. Sta jij niet in het antwoord, dan ben je geen optie. Ik fix dat: techniek + content die AI snapt.",
   pains: [
-    { title: "Onzichtbaar in AI", body: "Je concurrent wél genoemd. Jij niet. Geen tweede kans." },
+    { title: "Onzichtbaar in AI", body: "Je concurrent wél genoemd. Jij niet. Eerste indruk telt." },
     { title: "Alleen klassieke SEO", body: "Google rankt je. AI negeert je. Twee werelden." },
     { title: "AI-prutswerk", body: "Bulk ChatGPT-tekst helpt je niet. Het schaadt je." },
   ],
@@ -236,7 +236,7 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
   category: "website",
   metaTitle: "Landing page laten maken · converteert, geen praatje | Meneer Marketing",
   metaDescription:
-    "Landing page laten maken from scratch. Snel, SEO-klaar en gebouwd voor Google Ads en Meta. Geen template die afhaakt.",
+    "Landing page laten maken from scratch. Snel, SEO-klaar en gebouwd voor Google Ads en Meta. Custom build die converteert.",
   keywords: ["landing page laten maken", "landingspagina laten maken", "conversie pagina bouwen"],
   eyebrow: "Landingspagina's",
   headline: "Landing page laten maken die",
@@ -249,7 +249,7 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
     { title: "Traag op mobiel", body: "70% van je ads is mobiel. Je pagina denkt nog desktop." },
   ],
   deliverables: [
-    { title: "Eén doel per pagina", body: "Lead, aankoop of call. Geen alles-tegelijk." },
+    { title: "Eén doel per pagina", body: "Lead, aankoop of call. Focus op één actie." },
     { title: "Ads-ready", body: "Message match met Google en Meta." },
     { title: "Snel & technisch strak", body: "Core Web Vitals, schema, tracking." },
     { title: "Testen", body: "Varianten als het volume het trekt." },
@@ -286,7 +286,7 @@ export const MARKETING_AUTOMATISERING: SeoLandingPage = {
     "Leads in mail, orders in WhatsApp, rapporten in vijf tools. Ik knoop systemen aan elkaar zodat jij kunt groeien in plaats van copy-pasten.",
   pains: [
     { title: "Handmatig werk", body: "Elke lead dubbel intypen. Foutgevoelig en traag." },
-    { title: "Geen overzicht", body: "Niemand weet welke campagne welke klant bracht." },
+    { title: "Attributie ontbreekt", body: "Niemand weet welke campagne welke klant bracht." },
     { title: "Tool-spaghetti", body: "Tien apps die niet praten. Duur en irritant." },
   ],
   deliverables: [
@@ -318,7 +318,7 @@ export const SEA_SPECIALIST: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "SEA specialist · Google Ads met marge in het hoofd | Meneer Marketing",
   metaDescription:
-    "SEA specialist voor Search, Shopping en Performance Max. Landingspagina's en tracking inbegrepen. Geen account zonder conversieplan.",
+    "SEA specialist voor Search, Shopping en Performance Max. Landingspagina's en tracking inbegrepen. Elk account met conversieplan.",
   keywords: ["sea specialist", "sea bureau", "zoekmachine adverteren specialist", "google ads specialist"],
   eyebrow: "SEA",
   headline: "SEA specialist die ook",
@@ -328,7 +328,7 @@ export const SEA_SPECIALIST: SeoLandingPage = {
   pains: [
     { title: "CPA zonder context", body: "Mooie CPA op een product dat niets verdient." },
     { title: "Zoektermen-lek", body: "Je betaalt voor gratis, jobs en concurrenten." },
-    { title: "Geen landing-match", body: "Ad belooft A, pagina zegt B." },
+    { title: "Message match scheurt", body: "Ad belooft A, pagina zegt B." },
   ],
   deliverables: [
     { title: "Search & Shopping", body: "Intentie-gestuurd, marge-bewust." },

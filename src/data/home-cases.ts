@@ -53,6 +53,8 @@ export interface HomeCase {
   previewImage?: string;
   /** Optioneel: loop-video in public/cases/ of externe CDN-URL */
   previewVideo?: string;
+  /** Lichtere MP4 voor mobiel / traag netwerk (bijv. H.264 ~1–5 MB) */
+  previewVideoMobile?: string;
   /** Poster voor video (eerste frame); fallback als reduced motion aan staat */
   previewPoster?: string;
   /** Media-crop in browserframe (standaard top voor hero) */
@@ -112,6 +114,7 @@ export const HOME_CASES: HomeCase[] = [
     href: "/cases/skincomplete",
     website: { url: "https://skincomplete.eu", hostname: "skincomplete.eu" },
     previewVideo: "/cases/skincomplete-hero.mp4",
+    previewVideoMobile: "/cases/skincomplete-hero-mobile.mp4",
     previewPoster: "/cases/skincomplete-hero-poster.jpg",
     previewObjectPosition: "center top",
     services: [

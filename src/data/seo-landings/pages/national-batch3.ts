@@ -11,7 +11,7 @@ const processDefault = [
   },
   {
     title: "Uitvoeren",
-    body: "Ik bouw, schrijf en zet live. Geen doorverwijzen naar vijf partijen.",
+    body: "Ik bouw, schrijf en zet live. Alles onder één dak.",
   },
   {
     title: "Meten en bijsturen",

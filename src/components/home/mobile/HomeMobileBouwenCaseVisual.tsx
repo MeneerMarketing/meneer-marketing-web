@@ -5,10 +5,10 @@ import Image from "next/image";
 import { Lock } from "lucide-react";
 import {
   motion,
-  useInView,
   useReducedMotion,
 } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { CasePreviewVideo } from "@/components/home/cases/CasePreviewVideo";
 import { HOME_CASES } from "@/data/home-cases";
 import type { HomeCase } from "@/data/home-cases";
 import {
@@ -31,15 +31,18 @@ interface HomeMobileBouwenCaseVisualProps {
 }
 
 /** Browser-preview voor bouw-cases (mobiel carousel + desktop). */
-export function BouwenCaseBrowser({ caseItem }: { caseItem: HomeCase }) {
-  const reduce = useReducedMotion();
+export function BouwenCaseBrowser({
+  caseItem,
+  isActive = true,
+}: {
+  caseItem: HomeCase;
+  isActive?: boolean;
+}) {
   const ref = useRef<HTMLAnchorElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-12%" });
 
-  const { previewVideo, previewPoster, previewImage, previewObjectPosition, website, palette } =
+  const { previewVideo, previewVideoMobile, previewPoster, previewImage, previewObjectPosition, website, palette } =
     caseItem;
   const hostname = website?.hostname ?? caseItem.client.toLowerCase();
-  const videoAutoplay = Boolean(previewVideo) && !reduce && isInView;
 
   return (
     <Link
@@ -72,18 +75,13 @@ export function BouwenCaseBrowser({ caseItem }: { caseItem: HomeCase }) {
 
         <div className="relative aspect-[16/10] overflow-hidden bg-[#0f0d14]">
           {previewVideo ? (
-            <video
-              key={previewVideo}
+            <CasePreviewVideo
               src={previewVideo}
+              mobileSrc={previewVideoMobile}
               poster={previewPoster}
-              autoPlay={videoAutoplay}
-              muted
-              loop={videoAutoplay}
-              playsInline
-              preload={isInView ? "auto" : "none"}
-              className="absolute inset-0 size-full object-cover"
-              style={{ objectPosition: previewObjectPosition ?? "center top" }}
-              aria-label={`${caseItem.client} preview`}
+              objectPosition={previewObjectPosition ?? "center top"}
+              label={`${caseItem.client} preview`}
+              active={isActive}
             />
           ) : null}
 
@@ -199,7 +197,7 @@ export function HomeMobileBouwenCaseVisual({
               transition={{ delay: index * 0.05, duration: 0.4, ease: EASE }}
               className="relative w-[min(92vw,22rem)] shrink-0 snap-center"
             >
-              <BouwenCaseBrowser caseItem={caseItem} />
+              <BouwenCaseBrowser caseItem={caseItem} isActive={index === active} />
             </motion.li>
           ))}
         </ul>

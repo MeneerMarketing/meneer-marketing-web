@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
+import { CasePreviewVideo } from "@/components/home/cases/CasePreviewVideo";
 import { CaseSceneIllustration } from "@/components/home/cases/CaseSceneIllustration";
 import type { HomeCase } from "@/data/home-cases";
 
@@ -18,13 +19,13 @@ export function CaseBrowserFrame({ caseItem, className }: CaseBrowserFrameProps)
     scene,
     previewImage,
     previewVideo,
+    previewVideoMobile,
     previewPoster,
     previewObjectPosition = "top",
   } = caseItem;
   const hostname = website?.hostname ?? caseItem.client.toLowerCase();
   const showVideo = Boolean(previewVideo);
   const showImage = Boolean(previewImage) && !previewVideo;
-  const videoAutoplay = showVideo && !reduce;
 
   return (
     <motion.div
@@ -44,17 +45,12 @@ export function CaseBrowserFrame({ caseItem, className }: CaseBrowserFrameProps)
 
         <div className="relative aspect-video overflow-hidden bg-slate-950">
           {showVideo ? (
-            <video
-              src={previewVideo}
+            <CasePreviewVideo
+              src={previewVideo!}
+              mobileSrc={previewVideoMobile}
               poster={previewPoster ?? previewImage}
-              autoPlay={videoAutoplay}
-              muted
-              loop={videoAutoplay}
-              playsInline
-              preload="auto"
-              className="absolute inset-0 size-full object-cover"
-              style={{ objectPosition: previewObjectPosition }}
-              aria-label={`Preview ${caseItem.client}`}
+              objectPosition={previewObjectPosition}
+              label={`Preview ${caseItem.client}`}
             />
           ) : null}
 

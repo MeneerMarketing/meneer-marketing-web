@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { siteCtas } from "@/lib/cta";
@@ -10,6 +10,8 @@ import { mainNavLinks, megaMenuColumns } from "@/lib/navigation";
 import { getMegaMenuExtraLinks } from "@/lib/mega-menu-extra-links";
 import { Logo } from "@/components/site/Logo";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { MobileNavPanel } from "@/components/site/MobileNavPanel";
+import { MobileNavToggle } from "@/components/site/MobileNavToggle";
 import { Magnetic } from "@/components/effects/Magnetic";
 
 export function SiteHeader() {
@@ -48,13 +50,13 @@ export function SiteHeader() {
     <header
       className={`relative sticky top-0 z-[60] border-b transition-[background-color,border-color] duration-200 ${
         scrolled || openMenu !== null || mobileOpen
-          ? "border-mm-border/90 bg-white/90 backdrop-blur-md"
-          : "border-transparent bg-mm-bg/70 backdrop-blur-sm"
+          ? "border-mm-border/90 bg-white/95 backdrop-blur-md"
+          : "border-transparent bg-mm-bg/80 backdrop-blur-sm"
       }`}
       onMouseLeave={handleLeaveDelayed}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Logo icon={<InteractiveLogo className="h-11 w-11 shrink-0 sm:h-12 sm:w-12" />} />
+      <div className="relative mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:gap-4 lg:px-8 lg:py-3">
+        <Logo icon={<InteractiveLogo className="h-10 w-10 shrink-0 sm:h-12 sm:w-12" />} />
 
         <nav
           className="hidden items-center gap-1 lg:flex"
@@ -106,98 +108,19 @@ export function SiteHeader() {
           </Magnetic>
         </div>
 
-        <button
-          type="button"
-          className="inline-flex items-center justify-center rounded-lg p-2 text-mm-text lg:hidden"
-          aria-expanded={mobileOpen}
-          aria-controls="mobile-nav"
-          onClick={() => setMobileOpen((v) => !v)}
-        >
-          <span className="sr-only">Menu</span>
-          {mobileOpen ? <X className="size-6" /> : <Menu className="size-6" />}
-        </button>
+        <div className="flex items-center gap-1.5 lg:hidden">
+          <Link
+            href={siteCtas.startIntake.href}
+            className="inline-flex size-9 items-center justify-center rounded-xl bg-[#FF5722] text-white shadow-sm shadow-orange-500/20 transition hover:bg-orange-600"
+            aria-label={siteCtas.startIntake.label}
+          >
+            <ArrowUpRight className="size-4" aria-hidden />
+          </Link>
+          <MobileNavToggle open={mobileOpen} onClick={() => setMobileOpen((v) => !v)} />
+        </div>
       </div>
 
-      <AnimatePresence>
-        {mobileOpen ? (
-          <motion.div
-            id="mobile-nav"
-            initial={false}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="border-t border-mm-border bg-white lg:hidden"
-          >
-            <div className="mx-auto max-h-[min(70vh,calc(100dvh-5rem))] overflow-y-auto px-4 py-4">
-              {megaMenuColumns.map((col) => (
-                <details
-                  key={col.category}
-                  className="group border-b border-mm-border py-2"
-                >
-                  <summary className="cursor-pointer list-none py-2 text-base font-bold text-mm-text">
-                    {col.category}
-                    <span className="mt-0.5 block text-xs font-medium text-mm-muted">
-                      {col.subtitle}
-                    </span>
-                  </summary>
-                  <Link
-                    href={`/${col.pillarSlug}`}
-                    className="mb-2 flex items-center justify-between gap-2 rounded-xl border border-mm-border/80 bg-mm-sky-subtle/40 px-3 py-2.5 text-sm font-bold text-mm-sky-deep hover:bg-mm-sky-subtle"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    <span>{col.pillarOverviewCta}</span>
-                    <ArrowUpRight className="size-4 shrink-0 opacity-70" aria-hidden />
-                  </Link>
-                  <ul className="space-y-1 pb-3 pt-1">
-                    {col.items.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          href={item.href}
-                          className="block rounded-lg px-2 py-2 text-sm text-mm-text hover:bg-mm-sky-subtle/50"
-                          onClick={() => setMobileOpen(false)}
-                        >
-                          <span className="font-semibold">
-                            {item.menuLabel ?? item.name}
-                          </span>
-                          <span className="mt-0.5 block text-xs text-mm-muted">
-                            {item.menuDescription ?? item.description}
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              ))}
-              <div className="flex flex-col gap-2 pt-4">
-                {mainNavLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="rounded-lg px-2 py-2 text-sm font-semibold text-mm-text hover:bg-mm-surface"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-                <div className="mt-4 border-t border-mm-border pt-4">
-                  <Link
-                    href={siteCtas.startIntake.href}
-                    className="inline-flex w-full items-center justify-center gap-1 rounded-full bg-mm-accent px-4 py-3.5 text-sm font-bold text-white"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {siteCtas.startIntake.label}
-                    <ArrowUpRight className="size-4" aria-hidden />
-                  </Link>
-                  <p className="mt-3 px-2 text-center text-xs text-mm-muted">
-                    Andere opties vind je op de homepage: intake, schalen,
-                    samenwerken.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+      <MobileNavPanel open={mobileOpen} onClose={() => setMobileOpen(false)} />
 
       <AnimatePresence>
         {activeColumn && !mobileOpen ? (

@@ -139,8 +139,7 @@ export const HUB_PAGE_SEO = {
     title: "Werkwijze | intake, bouwen, meten, opschalen | Meneer Marketing",
 
     description:
-
-      "Geen standaardpakket. Eerst snappen waar je groei zit, dan routekaart, custom build en bijsturen. SkinComplete en BestRest als voorbeeld van de volgorde.",
+      "Intake, routekaart, custom build en bijsturen. Vier fases, interactief uitgelegd. SkinComplete en BestRest als voorbeeld van de volgorde.",
 
     ogAccent: "FF5722",
 

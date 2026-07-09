@@ -17,7 +17,40 @@ export type SeoLandingVisual =
   | "webshop"
   | "b2b-portal"
   | "content-hub"
-  | "ai-search";
+  | "ai-search"
+  | "email-flow"
+  | "strategy-stack"
+  | "metrics-dashboard"
+  | "local-maps"
+  | "tracking-lab"
+  | "compare-split";
+
+/** Bepaalt welke persoonlijkheidssecties zichtbaar zijn. */
+export type SeoLandingLayoutProfile = "full" | "editorial" | "city";
+
+export type SeoLandingSectionId =
+  | "coffeeChat"
+  | "innerVoice"
+  | "rant"
+  | "analogy"
+  | "nightmare"
+  | "confession"
+  | "weirdFact"
+  | "thisWeek";
+
+export type SeoLandingScenePlacement =
+  | "after-story"
+  | "after-aanpak"
+  | "after-deep-dive";
+
+/** Illustratieve pauze midden op de pagina. */
+export interface SeoLandingSceneBreak {
+  placement: SeoLandingScenePlacement;
+  visual: SeoLandingVisual;
+  eyebrow: string;
+  title: string;
+  caption?: string;
+}
 
 export interface SeoLandingLocation {
   city: string;
@@ -37,6 +70,12 @@ export interface SeoLandingCard {
 export interface SeoLandingStep {
   title: string;
   body: string;
+}
+
+/** Handgeschreven vervanging voor hash-pools (story, deep-dive, scenario). */
+export interface SeoLandingProseOverride {
+  title: string;
+  paragraphs: readonly string[];
 }
 
 export interface SeoLandingHotTake {
@@ -86,4 +125,14 @@ export interface SeoLandingPage {
   relatedSlugs: readonly string[];
   pillarSlug: PillarSlug;
   pillarLabel: string;
+
+  /** full = alles · editorial = rijker met scenes · city = korter voor stad-varianten */
+  layoutProfile?: SeoLandingLayoutProfile;
+  sceneBreaks?: readonly SeoLandingSceneBreak[];
+  skipSections?: readonly SeoLandingSectionId[];
+  enrichedOverrides?: {
+    story?: SeoLandingProseOverride;
+    deepDive?: SeoLandingProseOverride;
+    scenario?: SeoLandingProseOverride;
+  };
 }

@@ -17,6 +17,7 @@ import {
 } from "@/components/seo/JsonLd";
 import { MarketingFunFactsRow } from "@/components/shared/MarketingFunFactCard";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { PartnerCredentialsStrip } from "@/components/site/PartnerCredentialsStrip";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { getFunFactsForPage } from "@/data/marketing-fun-facts";
 import { OVER_FAQ } from "@/data/over-index";
@@ -73,6 +74,12 @@ export default function OverPage() {
         <OverAntiBureauSection />
 
         <OverStackExplorer />
+
+        <section className="border-b border-slate-200 bg-slate-50 py-12 lg:py-14">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <PartnerCredentialsStrip variant="on-light" />
+          </div>
+        </section>
 
         <OverImpactSection />
 

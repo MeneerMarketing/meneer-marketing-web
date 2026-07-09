@@ -43,7 +43,7 @@ Bij alle teksten voor meneermarketing.nl (naast de hoofdregels hierboven):
 2. **Jij/je bij de klant, ik/mij bij Meneer.** Nooit **wij** of **we** alsof het een bureau is. Meneer Marketing is één persoon. Uitzondering: *samengestelde* ik+jij ("samen kiezen we de volgorde"), nooit "wij bouwen" of "dit zijn we niet".
 3. **Onverwachte weetjes en harde feiten** af en toe gebruiken om aandacht vast te houden.
 4. **Verboden:** AI-lijstjes (01/02/03), em-dashes, openers als "Laten we kijken naar...", corporate fluff.
-5. **Geen "Geen X. Geen Y. Wel Z."-spam.** Max één "geen …" per alinea of blok. Niet stapelen ("Geen pingpongtafel. Geen maskers. Geen buzzword-bingo."). Liever positief zeggen wat je wél doet, of droog-grappig met één scherpe kanttekening.
+5. **Verboden: "Geen X"-negatie in UI-copy.** Geen zinnen die beginnen met `Geen …` of `geen …`, en geen ketens als "Geen A. Geen B. Wel C." Schrijf wat je wél levert, meetbaar en concreet. Droge humor mag, maar positief formuleren ("Eén plan, één aanspreekpunt" i.p.v. "Geen spaghetti aan partijen").
 6. **Cases natuurlijk verweven in copy:** SkinComplete (Shopify B2B-portaal gebouwd, e-mailmarketing opgezet, eerst met SEO organisch verkeer gedomineerd en daarna pas ads aangezet) en BestRest (matrassen en toppers, compleet eigen strategische aanpak, want elke klant krijgt een eigen plan).
 
 ## MeneerMarketing — diensten & naming
