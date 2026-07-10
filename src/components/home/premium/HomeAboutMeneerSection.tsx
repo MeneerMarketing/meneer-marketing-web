@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import { useCallback, useState } from "react";
 import { AboutMeneerCollabCta } from "@/components/home/AboutMeneerCollabCta";
 import { AboutMeneerStrategyChat } from "@/components/home/AboutMeneerStrategyChat";
 import { AboutMeneerStrategyOutcome } from "@/components/home/AboutMeneerStrategyOutcome";
@@ -17,8 +16,6 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 /** Desktop: persoonlijk Meneer-verhaal op de homepage. */
 export function HomeAboutMeneerSection() {
   const reduce = useReducedMotion() ?? false;
-  const [chatComplete, setChatComplete] = useState(reduce);
-  const handleChatComplete = useCallback(() => setChatComplete(true), []);
 
   return (
     <section
@@ -68,10 +65,7 @@ export function HomeAboutMeneerSection() {
               <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
                 Zo klinkt zo&apos;n gesprek
               </p>
-              <AboutMeneerStrategyChat
-                messages={HOME_ABOUT_MENEER_STRATEGY_CHAT}
-                onComplete={handleChatComplete}
-              />
+              <AboutMeneerStrategyChat messages={HOME_ABOUT_MENEER_STRATEGY_CHAT} />
             </motion.div>
           </div>
 
@@ -111,7 +105,7 @@ export function HomeAboutMeneerSection() {
           </div>
         </div>
 
-        <AboutMeneerCollabCta visible={chatComplete} />
+        <AboutMeneerCollabCta />
       </div>
     </section>
   );

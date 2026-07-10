@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import { useCallback, useState } from "react";
 import { AboutMeneerStrategyChat } from "@/components/home/AboutMeneerStrategyChat";
 import { AboutMeneerStrategyOutcome } from "@/components/home/AboutMeneerStrategyOutcome";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
@@ -17,8 +16,6 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 /** Persoonlijk Meneer-moment: verhaal, samen kiezen, dopamine. */
 export function HomeMobileAboutMeneer() {
   const reduce = useReducedMotion() ?? false;
-  const [strategyReady, setStrategyReady] = useState(reduce);
-  const handleStrategyComplete = useCallback(() => setStrategyReady(true), []);
 
   return (
     <section
@@ -78,30 +75,20 @@ export function HomeMobileAboutMeneer() {
           <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
             Zo klinkt zo&apos;n gesprek
           </p>
-          <AboutMeneerStrategyChat
-            messages={HOME_ABOUT_MENEER_STRATEGY_CHAT}
-            onComplete={handleStrategyComplete}
-          />
+          <AboutMeneerStrategyChat messages={HOME_ABOUT_MENEER_STRATEGY_CHAT} />
         </motion.div>
 
-        {strategyReady ? (
-          <motion.div
-            initial={reduce ? false : { opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: EASE }}
-            className="mt-8 rounded-2xl border border-slate-200/90 bg-slate-900 px-4 py-4 text-white"
-          >
-            <p className="text-sm font-extrabold tracking-tight">
-              {HOME_ABOUT_MENEER.collabTitle}
-            </p>
-            <p className="mt-2 text-pretty text-[13px] leading-relaxed text-slate-300">
-              {HOME_ABOUT_MENEER.collabBody}
-            </p>
-          </motion.div>
-        ) : null}
+        <div className="mt-8 rounded-2xl border border-slate-200/90 bg-slate-900 px-4 py-4 text-white">
+          <p className="text-sm font-extrabold tracking-tight">
+            {HOME_ABOUT_MENEER.collabTitle}
+          </p>
+          <p className="mt-2 text-pretty text-[13px] leading-relaxed text-slate-300">
+            {HOME_ABOUT_MENEER.collabBody}
+          </p>
+        </div>
 
         <div className="mt-6">
-          <AboutMeneerStrategyOutcome visible={strategyReady} />
+          <AboutMeneerStrategyOutcome visible immediate />
         </div>
 
         <motion.p
