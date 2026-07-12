@@ -3,10 +3,16 @@ import { DEEPDIVE_BATCH2_BATCH3 } from "@/lib/seo-landings-deepdives-batch2-3";
 import { DEEPDIVE_BATCH4 } from "@/lib/seo-landings-deepdives-batch4";
 import { DEEPDIVE_BATCH5_EXTRA } from "@/lib/seo-landings-deepdives-batch5-extra";
 import { STORY_BATCH4 } from "@/lib/seo-landings-stories-batch4";
+import { STORY_BATCH2_3 } from "@/lib/seo-landings-stories-batch2-3";
+import { STORY_BATCH5 } from "@/lib/seo-landings-stories-batch5";
 import {
   BATCH4_PROCESS,
   BATCH4_PROCESS_TITLES,
 } from "@/lib/seo-landings-process-batch4";
+import {
+  BATCH2_BATCH3_PROCESS,
+  BATCH2_BATCH3_PROCESS_TITLES,
+} from "@/lib/seo-landings-process-batch2-3";
 
 const ALL_DEEPDIVES = {
   ...DEEPDIVE_BATCH2_BATCH3,
@@ -764,9 +770,13 @@ function mergeConfig(baseSlug: string, category: SeoLandingCategory): EditorialC
   };
   const slugConfig = SLUG_OVERRIDES[baseSlug] ?? {};
   const batch4Process = BATCH4_SLUGS.has(baseSlug) ? BATCH4_PROCESS[baseSlug] : undefined;
+  const batch23Process =
+    BATCH2_SLUGS.has(baseSlug) || BATCH3_SLUGS.has(baseSlug)
+      ? BATCH2_BATCH3_PROCESS[baseSlug]
+      : undefined;
   return {
     processSteps:
-      slugConfig.processSteps ?? batch4Process ?? categoryConfig.processSteps,
+      slugConfig.processSteps ?? batch4Process ?? batch23Process ?? categoryConfig.processSteps,
     sceneBreaks: slugConfig.sceneBreaks ?? categoryConfig.sceneBreaks,
     visual: slugConfig.visual,
     enrichedOverrides: slugConfig.enrichedOverrides,
@@ -778,7 +788,8 @@ function mergeEnrichedOverrides(
   overrides: SeoLandingPage["enrichedOverrides"],
 ): SeoLandingPage["enrichedOverrides"] {
   const deepDive = ALL_DEEPDIVES[baseSlug];
-  const story = STORY_BATCH4[baseSlug];
+  const story =
+    STORY_BATCH4[baseSlug] ?? STORY_BATCH2_3[baseSlug] ?? STORY_BATCH5[baseSlug];
   if (!deepDive && !story && !overrides) return undefined;
 
   return {
@@ -809,7 +820,9 @@ export function applyEditorialProfile(page: SeoLandingPage): SeoLandingPage {
     ...page,
     layoutProfile: page.layoutProfile ?? (isCity ? "city" : "editorial"),
     processTitle:
-      BATCH4_PROCESS_TITLES[baseSlug] ?? page.processTitle,
+      BATCH4_PROCESS_TITLES[baseSlug] ??
+      BATCH2_BATCH3_PROCESS_TITLES[baseSlug] ??
+      page.processTitle,
     processSteps:
       usesDefaultProcess(page) && config.processSteps
         ? config.processSteps

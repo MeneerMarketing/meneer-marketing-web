@@ -13,7 +13,11 @@ import {
   buildUniqueOpener,
   variateSeoLandingPage,
 } from "@/lib/seo-landings-uniqueness";
+import { applyCityTrioLayer } from "@/lib/seo-landings-city-trio";
+import { applyApeldoornCityLayer } from "@/lib/seo-landings-city-apeldoorn";
+import { applyRegionalCityLayer } from "@/lib/seo-landings-city-regional";
 import { applyEditorialProfile } from "@/lib/seo-landings-editorial";
+import { resolveUniqueScenes } from "@/lib/seo-landing-scenes";
 import type { SeoLandingTocItem } from "@/data/seo-landings/enriched-types";
 import {
   ANALOGIES,
@@ -403,42 +407,51 @@ function buildLocalColor(page: SeoLandingPage) {
 export function enrichSeoLandingPage(page: SeoLandingPage): EnrichedSeoLandingPage {
   const editorial = applyEditorialProfile(page);
   const varied = variateSeoLandingPage(editorial);
-  const kennisbankPool = KENNISBANK_BY_CATEGORY[varied.category];
-  const kennisbankSlug = pick(varied.slug, kennisbankPool, "kb");
-  const headline = buildDisplayHeadline(varied);
-  const extraFaqs = buildExpandedExtraFaqs(varied);
-  const faq = [...varied.faq, ...extraFaqs].filter(
+  let ready = applyCityTrioLayer(varied);
+  ready = applyApeldoornCityLayer(ready);
+  ready = applyRegionalCityLayer(ready);
+  if (ready.sceneBreaks?.length) {
+    ready = {
+      ...ready,
+      sceneBreaks: resolveUniqueScenes(ready, ready.sceneBreaks),
+    };
+  }
+  const kennisbankPool = KENNISBANK_BY_CATEGORY[ready.category];
+  const kennisbankSlug = pick(ready.slug, kennisbankPool, "kb");
+  const headline = buildDisplayHeadline(ready);
+  const extraFaqs = buildExpandedExtraFaqs(ready);
+  const faq = [...ready.faq, ...extraFaqs].filter(
     (f, i, arr) => arr.findIndex((x) => x.question === f.question) === i,
   );
-  const expertSummary = buildExpertSummary(varied);
+  const expertSummary = buildExpertSummary(ready);
 
   return {
-    ...varied,
-    uniqueOpener: buildUniqueOpener(varied),
-    painSectionIntro: buildPainSectionIntro(varied),
-    metaTitle: trimMetaTitle(varied.metaTitle),
-    metaDescription: buildUniqueMetaDescription(varied),
+    ...ready,
+    uniqueOpener: buildUniqueOpener(ready),
+    painSectionIntro: buildPainSectionIntro(ready),
+    metaTitle: trimMetaTitle(ready.metaTitle),
+    metaDescription: buildUniqueMetaDescription(ready),
     headline: headline.headline,
     headlineAccent: headline.headlineAccent,
     faq,
-    story: varied.enrichedOverrides?.story ?? buildStory(varied),
-    scenario: varied.enrichedOverrides?.scenario ?? buildScenario(varied),
-    deepDive: varied.enrichedOverrides?.deepDive ?? buildDeepDive(varied),
-    myths: buildMyths(varied),
-    weirdFact: buildWeirdFact(varied),
-    honestNo: buildHonestNo(varied),
-    thisWeek: buildThisWeek(varied),
+    story: ready.enrichedOverrides?.story ?? buildStory(ready),
+    scenario: ready.enrichedOverrides?.scenario ?? buildScenario(ready),
+    deepDive: ready.enrichedOverrides?.deepDive ?? buildDeepDive(ready),
+    myths: buildMyths(ready),
+    weirdFact: buildWeirdFact(ready),
+    honestNo: buildHonestNo(ready),
+    thisWeek: buildThisWeek(ready),
     kennisbankSlug,
-    coffeeChat: buildCoffeeChat(varied),
-    innerVoice: buildInnerVoice(varied),
-    rant: buildRant(varied),
-    analogy: buildAnalogy(varied),
-    nightmare: buildNightmare(varied),
-    confession: buildConfession(varied),
-    localColor: buildLocalColor(varied),
+    coffeeChat: buildCoffeeChat(ready),
+    innerVoice: buildInnerVoice(ready),
+    rant: buildRant(ready),
+    analogy: buildAnalogy(ready),
+    nightmare: buildNightmare(ready),
+    confession: buildConfession(ready),
+    localColor: buildLocalColor(ready),
     expertSummary,
-    keyTakeaways: buildKeyTakeaways(varied),
-    schemaFaqs: buildSchemaFaqs(varied, faq),
+    keyTakeaways: buildKeyTakeaways(ready),
+    schemaFaqs: buildSchemaFaqs(ready, faq),
     toc: PAGE_TOC,
   };
 }
