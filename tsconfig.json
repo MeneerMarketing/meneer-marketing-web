@@ -30,5 +30,12 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "kliniekos-fase2-start", "diba", "bestrest-theme", ".tmp-pull-check"]
+  "exclude": [
+    "node_modules",
+    "kliniekos-fase2-start",
+    "diba",
+    "bestrest-theme",
+    "meneer-marketing-video",
+    ".tmp-pull-check"
+  ]
 }
