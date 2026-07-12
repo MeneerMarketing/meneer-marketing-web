@@ -1,0 +1,148 @@
+import type { SeoLandingStep } from "@/data/seo-landings/types";
+
+/** Unieke proces-stappen per national batch 4 slug (geen gedeelde processDefault). */
+export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> = {
+  "digital-marketing-bureau": [
+    { title: "Kanalen inventariseren", body: "Site, shop, ads, mail, content. Wat draait, wat lekt, wat ontbreekt." },
+    { title: "Volgorde op marge", body: "Eerst fundament, dan vindbaarheid, dan paid. Geen twaalf-kanaal-deck." },
+    { title: "Uitrollen onder één dak", body: "Ik bouw, schrijf en zet campagnes live. Geen losse partijen." },
+    { title: "Dashboard op omzet", body: "Leads, ROAS, rankings. Cijfers die actie geven, geen PDF-theater." },
+  ],
+  "zoekmachine-marketing": [
+    { title: "Keyword-kaart", body: "Organisch vs paid per intentie. Waar SEO wint, waar ads slimmer zijn." },
+    { title: "Gedeelde landings", body: "Pagina's die ranken én converteren voor campagnes." },
+    { title: "Tracking één lijn", body: "GA4, conversies, Search Console. Eén waarheid voor SEO en SEA." },
+    { title: "Maandelijks sturen", body: "Budget verschuiven op data. Geen silo's tussen kanalen." },
+  ],
+  "advertentiebeheer": [
+    { title: "Account-audit", body: "Zoektermen, structuur, conversies, landings. Wat lekt direct?" },
+    { title: "Opschonen", body: "Zombie-campagnes eruit. Negatieven bijwerken. Budget herverdelen." },
+    { title: "Wekelijks ritme", body: "Zoektermenrapport, biedingen, message match. Geen maandelijks hopen." },
+    { title: "Rapport + actie", body: "Wat we deden, wat volgende week. Geen dashboard zonder besluit." },
+  ],
+  "social-media-advertising": [
+    { title: "Doel en funnel", body: "Awareness, leads of sales? Creative en budget volgen het doel." },
+    { title: "Creative-test", body: "Hooks, formats, UGC vs studio. Eén variabele tegelijk." },
+    { title: "Landings op mobiel", body: "Pagina's die matchen met je ad. Snelheid telt." },
+    { title: "ROAS per platform", body: "Meta, TikTok, LinkedIn. Opschalen wat werkt, stoppen wat niet converteert." },
+  ],
+  "ugc-marketing": [
+    { title: "Creator-fit", body: "Wie past bij je doelgroep? Niet alleen volgers, wel engagement." },
+    { title: "Briefing scherp", body: "Hook, CTA, wat wel en niet gezegd mag worden." },
+    { title: "Assets hergebruiken", body: "UGC in ads, site en mail. Eén shoot, meerdere kanalen." },
+    { title: "Meten op omzet", body: "Codes, UTM, checkout. Niet alleen views." },
+  ],
+  "influencer-marketing-bureau": [
+    { title: "Selectie op fit", body: "Micro vs macro. Niche, publiek, eerdere samenwerkingen." },
+    { title: "Deal & briefing", body: "Deliverables, usage rights, deadlines helder." },
+    { title: "Live + landings", body: "Post linkt naar pagina die converteert, niet naar homepage." },
+    { title: "Performance review", body: "Omzet, leads, CPA per creator. Herhalen of stoppen." },
+  ],
+  "b2b-marketing-bureau": [
+    { title: "ICP scherp", body: "Wie koopt, wie beslist, hoe lang duurt de cyclus?" },
+    { title: "Funnel per fase", body: "Awareness, nurture, demo, portal. Geen B2C-tactics op B2B." },
+    { title: "LinkedIn + site + mail", body: "Kanalen die elkaar voeden, niet dupliceren." },
+    { title: "Pipeline meten", body: "MQL, SQL, deal velocity. Marketing gekoppeld aan sales." },
+  ],
+  "ecommerce-specialist": [
+    { title: "Shop-diagnose", body: "Theme, apps, feed, checkout, mail. Waar knelt de marge?" },
+    { title: "Prioriteit op SKU", body: "Hero-producten eerst. Quick wins vóór grote projecten." },
+    { title: "Kanalen koppelen", body: "SEO, Shopping, Meta, mail in één klantreis." },
+    { title: "Unit economics", body: "CAC, AOV, retentie. Opschalen als de rekensom klopt." },
+  ],
+  "webshop-marketing": [
+    { title: "Customer journey", body: "Van eerste klik tot herhaalaankoop. Waar valt iemand af?" },
+    { title: "Kanaal-mix", body: "Organisch, paid, mail, marketplaces. Volgorde op bewijs." },
+    { title: "Landings per intentie", body: "Category, product, campagne. Geen alles-op-homepage." },
+    { title: "Retentie meenemen", body: "Flows, win-back, LTV. Acquisitie is de helft." },
+  ],
+  "productpagina-seo": [
+    { title: "SKU-prioriteit", body: "Welke producten dragen omzet? Die pagina's eerst." },
+    { title: "Unieke copy", body: "Vragen, specs, use cases. Geen fabrikant-duplicaten." },
+    { title: "Techniek & schema", body: "Product markup, snelheid, interne links." },
+    { title: "Rankings + omzet", body: "Posities meten én wat ze opleveren in de shop." },
+  ],
+  "chatgpt-vindbaarheid": [
+    { title: "AI-audit", body: "Wat zegt ChatGPT en Gemini over jouw markt nu?" },
+    { title: "Antwoord-pagina's", body: "Eén vraag, één URL. Structuur die AI citeert." },
+    { title: "Schema & E-E-A-T", body: "Wie schrijft, wanneer update, waar bewijs?" },
+    { title: "Test & bijsturen", body: "Maandelijks opnieuw vragen. Bijwerken waar je mist." },
+  ],
+  "google-maps-marketing": [
+    { title: "GBP-audit", body: "Categorie, foto's, posts, reviews, Q&A." },
+    { title: "NAP & lokale landings", body: "Consistentie over site, profiel en citaties." },
+    { title: "Review-ritme", body: "Vragen op het juiste moment. Reageren op kritiek." },
+    { title: "Maps + site", body: "Lokale SEO en GBP vullen elkaar aan, geen dubbel werk." },
+  ],
+  "webdesign-bureau": [
+    { title: "Doel & wireframe", body: "Wie moet wat doen? Structuur vóór moodboards." },
+    { title: "Visueel systeem", body: "Merk, trust, CTA's. Design dat schaalt." },
+    { title: "Bouwen in code", body: "Geen Figma die maanden blijft liggen. Live URL." },
+    { title: "Launch + meten", body: "Snelheid, conversie, tracking. Mooi én meetbaar." },
+  ],
+  "growth-marketing-bureau": [
+    { title: "Baseline meten", body: "Funnel, CAC, LTV. Weten waar je staat vóór je 'schalen' roept." },
+    { title: "Hypothese kiezen", body: "Eén hefboom tegelijk. Niet tien tests tegelijk." },
+    { title: "Experiment uitvoeren", body: "Landings, ads, mail. Ik bouw wat de test vraagt." },
+    { title: "Leren & herhalen", body: "Winnaar opschalen. Verliezer killen. Documenteren." },
+  ],
+  "linkedin-ads-bureau": [
+    { title: "Targeting scherp", body: "Functie, sector, bedrijfsgrootte. Geen 'iedereen in NL'." },
+    { title: "Lead magnet + landing", body: "Formulier of demo-pagina die kwalificeert." },
+    { title: "Creative B2B", body: "Probleem eerst, pitch later. Geen stock-handdruk-foto." },
+    { title: "Cost per qualified lead", body: "Sturen op pipeline, niet op kliks." },
+  ],
+  "klaviyo-specialist": [
+    { title: "Shop koppelen", body: "Productdata, segmenten, consent. Fundament klopt." },
+    { title: "Flows prioriteren", body: "Welkom, abandon, post-purchase. Wat eerst geld oplevert." },
+    { title: "Copy & test", body: "Subject, timing, offer. Jij keurt, ik bouw." },
+    { title: "Omzet per flow", body: "Euro's per mailreeks. Niet alleen open rate." },
+  ],
+  "core-web-vitals-verbeteren": [
+    { title: "Lab + field meten", body: "LCP, INP, CLS op echte pagina's en devices." },
+    { title: "Bottleneck vinden", body: "Theme, scripts, fonts, images. Root cause, geen pleister." },
+    { title: "Fix in code", body: "Next.js of Shopify. Performance ingebouwd, niet erop geplakt." },
+    { title: "Monitoren na launch", body: "Search Console + CrUX. Blijven groen houden." },
+  ],
+  "marketing-consultant-mkb": [
+    { title: "Situatiegesprek", body: "Omzet, marges, kanalen, team. Geen verkooppraat." },
+    { title: "Plan op papier", body: "Volgorde, budget, verwachting. Eerlijk over timing." },
+    { title: "Uitvoering (optioneel)", body: "Ik kan zelf bouwen en draaien. Geen advies-only die blijft hangen." },
+    { title: "Review per kwartaal", body: "Wat werkte, wat niet. Plan bijsturen op cijfers." },
+  ],
+  "trage-website-dure-ads": [
+    { title: "Snelheid meten", body: "Mobiel eerst. Welke pagina's kosten je conversie?" },
+    { title: "Fix vóór opschalen", body: "Core Web Vitals, scripts, images. Ads wachten." },
+    { title: "Landings optimaliseren", body: "Hero, CTA, trust. Message match met campagnes." },
+    { title: "Ads opnieuw meten", body: "CPA en ROAS vóór en na. Verschil moet zichtbaar zijn." },
+  ],
+  "shopify-theme-laten-maken": [
+    { title: "Scope & sections", body: "Welke blokken je team nodig heeft. Geen over-engineering." },
+    { title: "Design + Liquid", body: "Merk, UX, performance in één theme." },
+    { title: "Staging & test", body: "Checkout, B2B, feed. Alles doorlopen vóór live." },
+    { title: "Launch + doorontwikkeling", body: "SEO, tracking, features als je groeit." },
+  ],
+};
+
+export const BATCH4_PROCESS_TITLES: Partial<Record<string, string>> = {
+  "digital-marketing-bureau": "Digital marketing met één lijn",
+  "zoekmachine-marketing": "SEO en SEA in één plan",
+  "advertentiebeheer": "Beheer dat je account leest",
+  "social-media-advertising": "Social ads met omzetdoel",
+  "ugc-marketing": "UGC van briefing tot ad",
+  "influencer-marketing-bureau": "Influencers met pipeline",
+  "b2b-marketing-bureau": "B2B funnel op maat",
+  "ecommerce-specialist": "Shop end-to-end",
+  "webshop-marketing": "Webshop als systeem",
+  "productpagina-seo": "Product-SEO die verkoopt",
+  "chatgpt-vindbaarheid": "Vindbaar in AI-antwoorden",
+  "google-maps-marketing": "Maps + lokale site",
+  "webdesign-bureau": "Design tot live URL",
+  "growth-marketing-bureau": "Growth met discipline",
+  "linkedin-ads-bureau": "LinkedIn leads kwalificeren",
+  "klaviyo-specialist": "Klaviyo op omzet",
+  "core-web-vitals-verbeteren": "Snelheid fixen in code",
+  "marketing-consultant-mkb": "Advies dat uitgevoerd wordt",
+  "trage-website-dure-ads": "Eerst snel, dan budget",
+  "shopify-theme-laten-maken": "Custom theme traject",
+};

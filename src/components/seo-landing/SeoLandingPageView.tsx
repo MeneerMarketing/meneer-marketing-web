@@ -27,6 +27,14 @@ import { seoLandingPath } from "@/lib/seo-landings";
 import { getSeoLandingBySlug, getAllSeoLandingPages } from "@/data/seo-landings/registry";
 import { getKennisbankArticleBySlug } from "@/lib/kennisbank";
 import {
+  getDeliverablesHeading,
+  getDeliverablesIntro,
+  getMythsSectionHeading,
+  getMythsSectionIntro,
+  getProcessIntro,
+  getRecognitionHeading,
+} from "@/lib/seo-landings-section-copy";
+import {
   isEditorialLayout,
   scenesAtPlacement,
   shouldShowSeoSection,
@@ -111,6 +119,12 @@ function ProseSection({
 
 export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
   const reduce = useReducedMotion() ?? false;
+  const mythsHeading = getMythsSectionHeading(page.slug);
+  const mythsIntro = getMythsSectionIntro(page.slug, page.primaryKeyword);
+  const recognitionHeading = getRecognitionHeading(page.slug, page.primaryKeyword);
+  const deliverablesHeading = getDeliverablesHeading(page.slug, page.primaryKeyword);
+  const deliverablesIntro = getDeliverablesIntro(page.slug, page.primaryKeyword);
+  const processIntro = getProcessIntro(page.slug, page.primaryKeyword);
   const related = page.relatedSlugs
     .map((slug) => getSeoLandingBySlug(slug))
     .filter((p): p is EnrichedSeoLandingPage => Boolean(p));
@@ -286,12 +300,9 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
               <Sparkles className="mt-1 size-5 shrink-0 text-[#FF5722]" aria-hidden />
               <div>
                 <h2 id="mythes-heading" className="text-xl font-extrabold text-slate-900 lg:text-2xl">
-                  Mythe vs werkelijkheid
+                  {mythsHeading}
                 </h2>
-                <p className="mt-2 max-w-2xl text-slate-600">
-                  Wat je op forums leest over {page.primaryKeyword}, en wat ik in accounts en shops
-                  echt zie.
-                </p>
+                <p className="mt-2 max-w-2xl text-slate-600">{mythsIntro}</p>
               </div>
             </div>
           </Reveal>
@@ -319,7 +330,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
             <h2 id="herkenning-heading" className="text-2xl font-extrabold tracking-tight text-slate-900 lg:text-3xl">
-              Herkenbaar? Dan ben je niet de enige.
+              {recognitionHeading}
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
               {page.painSectionIntro}
@@ -375,11 +386,9 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <Reveal>
             <h2 id="aanpak-heading" className="text-2xl font-extrabold tracking-tight text-slate-900 lg:text-3xl">
-              Wat je van mij krijgt
+              {deliverablesHeading}
             </h2>
-            <p className="mt-3 max-w-2xl text-slate-600">
-              Concreet rond {page.primaryKeyword}. Dit pak ik aan met je marge en je tijd in gedachten.
-            </p>
+            <p className="mt-3 max-w-2xl text-slate-600">{deliverablesIntro}</p>
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {page.deliverables.map((item, i) => (
@@ -424,9 +433,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
             <h2 id="proces-heading" className="text-2xl font-extrabold tracking-tight lg:text-3xl">
               {page.processTitle}
             </h2>
-            <p className="mt-3 max-w-2xl text-white/65">
-              Een volgorde die je bankrekening snapt. Transparant, stap voor stap.
-            </p>
+            <p className="mt-3 max-w-2xl text-white/65">{processIntro}</p>
           </Reveal>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {page.processSteps.map((step, i) => (

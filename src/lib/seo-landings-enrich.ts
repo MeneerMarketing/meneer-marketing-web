@@ -119,6 +119,31 @@ const SCENARIO_BODY_BANK = [
   "Je concurrent adverteert al op '{kw}'. Jij twijfelt nog. Elke week wachten is een week dat hij data verzamelt en jij niet.",
   "Als je marge op je belangrijkste product te laag is voor ads, zeg ik dat hardop. Dan is SEO of je site slimmer dan branden.",
   "SkinComplete groeide eerst organisch. BestRest kreeg per product een plan. Jij krijgt een volgorde op maat die klopt.",
+  "In {city} telt niet wie het hardst schreeuwt op LinkedIn. Het telt wie de snelste, duidelijkste pagina heeft als iemand op zoek is naar {kw}.",
+  "Je concurrent in {region} adverteert misschien al op jouw stad. Lokaal winnen betekent: betere landings, niet per se meer budget.",
+  "Mond-tot-mond werkt nog steeds in {city}. Maar de mond begint steeds vaker met een Google-zoekopdracht.",
+  "MKB in {region} wil geen maandrapport met groene pijltjes. Ze willen weten of {kw} iets oplevert deze maand.",
+  "Als je alleen je stadnaam in de footer plakt, denkt Google dat je postbus-SEO doet. Dat zie je klanten ook.",
+  "Reviews, snelheid, duidelijke dienst: in {city} is dat vaak het verschil tussen bellen en doorklikken.",
+] as const;
+
+const LOCAL_COLOR_TITLES = [
+  "{city} is geen generieke footer-regio",
+  "Lokaal in {city}: meer dan een adres",
+  "{kw} in {city} vraagt context",
+  "Waarom {city} anders zoekt dan Randstad-bureaus denken",
+  "{region} en {city}: online is het speelveld groter dan je postcode",
+] as const;
+
+const LOCAL_COLOR_BODY_BANK = [
+  "Online concurreer je in {city} met iedereen die ads op jouw regio zet, ook buiten {region}. Lokaal winnen bij {kw} is relevantie, snelheid en vertrouwen.",
+  "Je klant in {city} vergelijkt op z'n telefoon tussen afspraken door. Eén trage landings en je bent de backup-optie.",
+  "Lokaal vertrouwen in {city} begint online: reviews, duidelijke dienst, pagina's die {kw} echt uitleggen.",
+  "Generieke copy met '{city}' in de titel werkt niet. Mensen in {region} merken binnen vijf seconden of je de regio snapt.",
+  "Je bereik in {city} gaat verder dan je postcode. Concurrenten uit Eindhoven, Utrecht of Amsterdam targeten {region} ook. Jij moet scherper zijn, niet luider.",
+  "MKB in {city} wil resultaat zien, geen bureau uit de Randstad dat de A1 kent als filemelding.",
+  "Als {kw} alleen op je homepage staat en nergens anders, mis je long-tail zoekers uit {city} en omgeving.",
+  "Mond-tot-mond in {city} start steeds vaker met Google. Je offline reputatie en je site moeten hetzelfde verhaal vertellen.",
 ] as const;
 
 const HONEST_NO_TITLES = [
@@ -163,9 +188,13 @@ function buildStory(page: SeoLandingPage): SeoLandingProseBlock {
 
   if (page.location?.city) {
     const profile = cityProfile(page.location.city);
-    paragraphs.push(
-      `${page.location.city} voelt als ${profile.vibe}. ${profile.zoekgedrag}. ${profile.detail} Dat is geen algemene SEO-praat. Dat is waarom jouw pagina op /zoeken/${page.slug} niet hetzelfde mag klinken als een template uit Amsterdam.`,
-    );
+    const cityClosers = [
+      `${page.location.city} voelt als ${profile.vibe}. ${profile.zoekgedrag}. ${profile.detail} Dat is waarom /zoeken/${page.slug} niet klinkt als een template uit Amsterdam.`,
+      `In ${page.location.city} telt ${profile.ondernemerstype}. ${profile.zoekgedrag}. Deze pagina over ${page.primaryKeyword} is daarop geschreven, niet op een Randstad-bureau-template.`,
+      `${profile.detail} Ondernemers in ${page.location.city} zoeken ${page.primaryKeyword} met andere verwachtingen dan in Utrecht of Rotterdam. ${profile.vibe}.`,
+      `${page.location.city}: ${profile.zoekgedrag}. Ik schrijf ${page.primaryKeyword} voor die realiteit, niet voor 'Nederland generiek' met je stadnaam erachter.`,
+    ];
+    paragraphs.push(pick(page.slug, cityClosers, "story-city-close"));
   }
 
   return { title, paragraphs };
@@ -346,29 +375,28 @@ function buildLocalColor(page: SeoLandingPage) {
   const v = pageVars(page);
   const profile = cityProfile(page.location.city);
   const isApeldoorn = page.location.city === "Apeldoorn";
+  const vars = {
+    ...v,
+    ondernemerstype: profile.ondernemerstype,
+  };
+
+  const title = isApeldoorn
+    ? "Apeldoorn: thuisbasis, geen postbus-SEO"
+    : fill(pick(page.slug, LOCAL_COLOR_TITLES, "local-title"), v);
+
+  const pickedBodies = pickMany(page.slug, LOCAL_COLOR_BODY_BANK, 3, "local-body").map((p) =>
+    fill(p, v),
+  );
+
+  const intro = isApeldoorn
+    ? `Ik ben gevestigd in Apeldoorn. ${profile.detail} ${profile.zoekgedrag}.`
+    : `${page.location.city} in ${page.location.region ?? "de regio"}: ${profile.detail} ${profile.zoekgedrag}.`;
+
+  const ondernemerLine = `Je klant in ${page.location.city} is vaak ${profile.ondernemerstype}. Die ruikt template-copy en wil bewijs, geen '{city}' in een H1.`;
 
   return {
-    title: isApeldoorn
-      ? "Apeldoorn: thuisbasis, geen postbus-SEO"
-      : fill(`{city} is geen generieke footer-regio`, v),
-    paragraphs: isApeldoorn
-      ? [
-          `Ik ben gevestigd in Apeldoorn. ${profile.detail} ${profile.zoekgedrag}.`,
-          `MKB op de Veluwe wil ${profile.ondernemerstype}. {kw} van een bureau dat hier zit voelt anders dan een template met 'Apeldoorn' in de footer van een site uit Amsterdam.`,
-          `Je bereik gaat verder dan de stad: Deventer, Amersfoort, Arnhem, Zwolle. Maar je fundament begint waar jij staat. Voor mij is dat Apeldoorn.`,
-          fill(
-            `Online concurreer je met iedereen die ads op '{city}' en '{region}' target. Lokaal winnen is snelheid, vertrouwen en een site die op mobiel niet uit elkaar valt.`,
-            v,
-          ),
-        ].map((p) => fill(p, v))
-      : [
-          `${page.location.city} in ${page.location.region ?? "de regio"}: ${profile.detail} ${profile.zoekgedrag}.`,
-          `Je klant in ${page.location.city} is vaak ${profile.ondernemerstype}. Die ruikt template-copy. Die wil bewijs dat je de regio snapt, niet alleen je postcode kent.`,
-          fill(
-            `Online concurreer je in {city} met iedereen die ads op jouw regio zet, ook buiten {region}. Lokaal winnen bij {kw} is geen adres in de footer. Het is relevantie, snelheid en vertrouwen.`,
-            v,
-          ),
-        ],
+    title,
+    paragraphs: [intro, ondernemerLine, ...pickedBodies].map((p) => fill(p, vars)),
   };
 }
 

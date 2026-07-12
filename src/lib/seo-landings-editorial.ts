@@ -3,6 +3,10 @@ import { DEEPDIVE_BATCH2_BATCH3 } from "@/lib/seo-landings-deepdives-batch2-3";
 import { DEEPDIVE_BATCH4 } from "@/lib/seo-landings-deepdives-batch4";
 import { DEEPDIVE_BATCH5_EXTRA } from "@/lib/seo-landings-deepdives-batch5-extra";
 import { STORY_BATCH4 } from "@/lib/seo-landings-stories-batch4";
+import {
+  BATCH4_PROCESS,
+  BATCH4_PROCESS_TITLES,
+} from "@/lib/seo-landings-process-batch4";
 
 const ALL_DEEPDIVES = {
   ...DEEPDIVE_BATCH2_BATCH3,
@@ -261,6 +265,28 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         caption: "Zoektermen, budget, landings. Wat lekt gaat eruit.",
       },
     ],
+    enrichedOverrides: {
+      scenario: {
+        title: "Stel: je account draait al, maar lekt",
+        paragraphs: [
+          "Je hebt Google Ads beheer ergens neergelegd. Het dashboard groeit. De inbox niet. Meestal zit het probleem in zoektermen die niemand leest of landings die niet matchen.",
+          "Ik begin met een audit van dertig minuten die je zelf ook kunt doen: top 20 zoektermen op kosten, landings op mobiel, conversies vs backend.",
+          "Google Ads beheer bij mij is geen retainer voor sentiment. Het is wekelijks je account lezen alsof het mijn eigen budget is.",
+        ],
+      },
+    },
+  },
+  advertentiebeheer: {
+    enrichedOverrides: {
+      scenario: {
+        title: "Stel: advertentiebeheer voelt als autopilot",
+        paragraphs: [
+          "Je betaalt voor advertentiebeheer, maar weet niet welke campagnes echt verkopen. De maandrapportage is groen. Je omzet niet.",
+          "Advertentiebeheer is hetzelfde werk als Google Ads beheer, alleen zoekt MKB het vaak onder deze term. Ik spreek gewoon Nederlands: zoektermen, budget, landings.",
+          "Eerste winst zit meestal in wat je uitzet, niet in wat je toevoegt. Zombie-campagnes zijn gratis geld terug.",
+        ],
+      },
+    },
   },
   "hoger-in-google": {
     sceneBreaks: [
@@ -737,8 +763,10 @@ function mergeConfig(baseSlug: string, category: SeoLandingCategory): EditorialC
     sceneBreaks: CATEGORY_SCENES[category],
   };
   const slugConfig = SLUG_OVERRIDES[baseSlug] ?? {};
+  const batch4Process = BATCH4_SLUGS.has(baseSlug) ? BATCH4_PROCESS[baseSlug] : undefined;
   return {
-    processSteps: slugConfig.processSteps ?? categoryConfig.processSteps,
+    processSteps:
+      slugConfig.processSteps ?? batch4Process ?? categoryConfig.processSteps,
     sceneBreaks: slugConfig.sceneBreaks ?? categoryConfig.sceneBreaks,
     visual: slugConfig.visual,
     enrichedOverrides: slugConfig.enrichedOverrides,
@@ -780,6 +808,8 @@ export function applyEditorialProfile(page: SeoLandingPage): SeoLandingPage {
   const merged: SeoLandingPage = {
     ...page,
     layoutProfile: page.layoutProfile ?? (isCity ? "city" : "editorial"),
+    processTitle:
+      BATCH4_PROCESS_TITLES[baseSlug] ?? page.processTitle,
     processSteps:
       usesDefaultProcess(page) && config.processSteps
         ? config.processSteps
