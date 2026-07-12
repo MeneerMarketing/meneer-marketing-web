@@ -65,6 +65,12 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
     "Marketing wil snel live, dev is bottleneck. Je leert: WordPress-blokken ontwerpen die je team zelf kan vullen zonder kapotte layouts.",
   "branding-die-verkoopt-b2b":
     "B2B hoeft niet saai te ogen saai te zijn. Je leert: positionering en visuele hiërarchie voor langere salescycli en vertrouwen vóór flair.",
+  "chatgpt-modellen-marketeer-2026":
+    "GPT-5, o-series, Sol, Terra, Luna… Je leert: welk ChatGPT-model copy schrijft, welk model nadenkt en wat je online wél ermee doet.",
+  "google-ai-overviews-clicks-2026":
+    "AI-samenvattingen bovenaan Google, minder clicks. Je leert: hoe je bron wordt, koop-intent pakt en merk omzeilt zero-click.",
+  "consent-mode-google-ads-2026":
+    "Conversies verdwijnen, Smart Bidding raakt blind. Je leert: wat Consent Mode v2 doet en hoe je tracking GDPR-proof fixt.",
 };
 
 export function getKennisbankMetaDescription(

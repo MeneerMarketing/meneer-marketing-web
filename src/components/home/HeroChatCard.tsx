@@ -21,6 +21,9 @@ import {
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
+/** Vaste SSR/hydration-waarde; echte lokale tijd pas na mount (voorkomt React #418). */
+const SSR_TIME_SLOT: HeroChatTimeSlot = "midday";
+
 type HeroChatPhase = "intro" | "topic" | "focus" | "done";
 
 function TypingIndicator() {
@@ -146,13 +149,18 @@ export function HeroChatCard({ compact = false }: { compact?: boolean }) {
   >([]);
   const [topic, setTopic] = useState<HeroChatOption | null>(null);
   const [focus, setFocus] = useState<HeroChatFocusOption | null>(null);
-  const [timeSlot, setTimeSlot] = useState<HeroChatTimeSlot>(() =>
-    getHeroChatTimeSlot(new Date().getHours()),
-  );
+  const [timeSlot, setTimeSlot] = useState<HeroChatTimeSlot>(SSR_TIME_SLOT);
+  const [clientReady, setClientReady] = useState(false);
   const timeBadge = HERO_CHAT_TIME_BADGE[timeSlot];
 
   useEffect(() => {
-    if (phase !== "intro") return;
+    const hour = new Date().getHours();
+    setTimeSlot(getHeroChatTimeSlot(hour));
+    setClientReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!clientReady || phase !== "intro") return;
 
     let cancelled = false;
     const lines = [...getHeroChatIntroLines(new Date().getHours())];
@@ -191,7 +199,7 @@ export function HeroChatCard({ compact = false }: { compact?: boolean }) {
     return () => {
       cancelled = true;
     };
-  }, [phase, reduce, timeSlot]);
+  }, [phase, reduce, clientReady]);
 
   const addUser = (text: string) => {
     setMessages((prev) => [...prev, { id: `u-${Date.now()}`, from: "jij", text }]);

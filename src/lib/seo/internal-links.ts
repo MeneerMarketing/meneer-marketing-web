@@ -196,6 +196,18 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
     { slug: "hoger-in-google", label: "Hoger in Google" },
     { slug: "google-ads-bureau", label: "Google Ads bureau" },
   ],
+  "chatgpt-modellen-marketeer-2026": [
+    { slug: "chatgpt-vindbaarheid", label: "Vindbaar in ChatGPT" },
+    { slug: "vindbaarheid-ai", label: "Vindbaarheid in AI" },
+  ],
+  "google-ai-overviews-clicks-2026": [
+    { slug: "hoger-in-google", label: "Hoger in Google" },
+    { slug: "content-marketing-vindbaarheid", label: "Content marketing vindbaarheid" },
+  ],
+  "consent-mode-google-ads-2026": [
+    { slug: "tracking-google-analytics", label: "Tracking & Google Analytics" },
+    { slug: "google-ads-bureau", label: "Google Ads bureau" },
+  ],
 };
 
 const ARTICLE_CASE_OVERRIDES: Partial<Record<string, string>> = {
@@ -210,6 +222,9 @@ const ARTICLE_CASE_OVERRIDES: Partial<Record<string, string>> = {
   "cro-checkout-vertrouwen": "bestrest",
   "google-ads-vijf-fouten-elke-account": "bestrest",
   "instagram-ads-geen-leads": "bestrest",
+  "chatgpt-modellen-marketeer-2026": "skincomplete",
+  "google-ai-overviews-clicks-2026": "skincomplete",
+  "consent-mode-google-ads-2026": "bestrest",
 };
 
 const PILLAR_CASE_FALLBACK: Record<

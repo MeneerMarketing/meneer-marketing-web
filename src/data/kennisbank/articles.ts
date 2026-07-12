@@ -24,8 +24,14 @@ import { LEADS_GMAIL_OPVOLGING } from "@/data/kennisbank/articles/leads-gmail-op
 import { WORDPRESS_THEME_GROEIEN_NEXTJS } from "@/data/kennisbank/articles/wordpress-theme-groeien-nextjs";
 import { INSTAGRAM_ADS_GEEN_LEADS } from "@/data/kennisbank/articles/instagram-ads-geen-leads";
 import { MARKETING_VERGADERING_VS_UITVOERING } from "@/data/kennisbank/articles/marketing-vergadering-vs-uitvoering";
+import { CHATGPT_MODELLEN_MARKETEER_2026 } from "@/data/kennisbank/articles/chatgpt-modellen-marketeer-2026";
+import { GOOGLE_AI_OVERVIEWS_CLICKS_2026 } from "@/data/kennisbank/articles/google-ai-overviews-clicks-2026";
+import { CONSENT_MODE_GOOGLE_ADS_2026 } from "@/data/kennisbank/articles/consent-mode-google-ads-2026";
 
 export const kennisbankArticles: KennisbankArticle[] = [
+  CHATGPT_MODELLEN_MARKETEER_2026,
+  GOOGLE_AI_OVERVIEWS_CLICKS_2026,
+  CONSENT_MODE_GOOGLE_ADS_2026,
   ZOEKTERMENRAPPORT_GOOGLE_ADS,
   HOMEPAGE_GEEN_LANDINGSPAGINA,
   PERFORMANCE_MAX_ZWARTE_DOOS,
