@@ -10,10 +10,7 @@ import {
 import type { PillarSlug } from "@/lib/navigation";
 
 export const HOME_MOBILE_HERO = {
-  eyebrow: "Bouwen. Groeien. Winnen.",
-  title: "Van site tot Google Ads.",
-  titleAccent: "Ik regel het hele plaatje.",
-  body: "Websites, Shopify, SEO en ads. Eén partner, geen gedoe met tussenpersonen.",
+  body: "Websites, Shopify, SEO en ads. Eén plan, één aanspreekpunt.",
 } as const;
 
 export interface HomeMobileRouteStep {

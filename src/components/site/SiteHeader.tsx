@@ -1,6 +1,5 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -33,9 +32,6 @@ export function SiteHeader() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
-
-  const activeColumn =
-    openMenu !== null ? (megaMenuColumns[openMenu] ?? null) : null;
 
   function handleEnter(index: number) {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -74,6 +70,7 @@ export function SiteHeader() {
                   className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold tracking-tight text-mm-text transition-colors hover:bg-mm-sky-subtle/60 hover:text-mm-sky-deep"
                   aria-expanded={openMenu === index}
                   aria-haspopup="true"
+                  aria-controls={`mega-panel-${index}`}
                 >
                   {col.category}
                 </button>
@@ -122,15 +119,21 @@ export function SiteHeader() {
 
       <MobileNavPanel open={mobileOpen} onClose={() => setMobileOpen(false)} />
 
-      <AnimatePresence>
-        {activeColumn && !mobileOpen ? (
-          <motion.div
+      {/*
+        Alle mega-menu-panelen staan altijd in de DOM (server-gerenderd) zodat
+        crawlers de dienstenlinks zien; alleen de zichtbaarheid is client-side.
+      */}
+      {megaMenuColumns.map((activeColumn, index) => {
+        const isActive = openMenu === index && !mobileOpen;
+        return (
+          <div
             key={activeColumn.category}
-            initial={false}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -4 }}
-            transition={{ duration: 0.15 }}
-            className="absolute left-0 right-0 top-full z-[100] border-b border-mm-border/90 bg-white shadow-[0_24px_48px_-12px_rgba(15,23,42,0.14)]"
+            id={`mega-panel-${index}`}
+            className={`absolute left-0 right-0 top-full z-[100] border-b border-mm-border/90 bg-white shadow-[0_24px_48px_-12px_rgba(15,23,42,0.14)] transition-[opacity,transform,visibility] duration-150 ${
+              isActive
+                ? "visible translate-y-0 opacity-100"
+                : "pointer-events-none invisible -translate-y-1 opacity-0"
+            }`}
             onMouseEnter={() => {
               if (closeTimer.current) clearTimeout(closeTimer.current);
             }}
@@ -239,9 +242,9 @@ export function SiteHeader() {
                 </aside>
               </div>
             </div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+          </div>
+        );
+      })}
     </header>
   );
 }

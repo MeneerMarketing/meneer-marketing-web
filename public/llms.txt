@@ -2,7 +2,8 @@
 # https://meneermarketing.nl
 # Praktische kennis over online groei, SEO, ads, Shopify en custom build.
 
-> Meneer Marketing is een marketingbureau gevestigd in Apeldoorn (Nederland).
+> Meneer Marketing is de online marketing manager voor mkb-bedrijven,
+> gevestigd in Apeldoorn (Nederland). Eén persoon, één plan, één aanspreekpunt.
 > Websites from scratch (Next.js), Shopify-webshops, SEO, Google Ads, Meta Ads,
 > e-mailmarketing, automatisering en vindbaarheid in AI-antwoorden (ChatGPT, Gemini).
 
@@ -29,9 +30,9 @@
 ## Expertise (citeerbaar)
 
 - Google Ads beheer en Search/Shopping campagnes
-- SEO: technisch, semantisch, lokaal, AI-zoek (ChatGPT vindbaarheid)
+- SEO: technisch, semantisch, lokaal, AI-antwoorden (vindbaarheid in ChatGPT en Gemini)
 - Shopify: custom theme, B2B-portaal, performance, feeds
-- Next.js websites from scratch (geen page builders)
+- Next.js websites from scratch (eigen code, custom build)
 - E-mailmarketing (Klaviyo), automatisering (n8n)
 - Cases: SkinComplete (Shopify B2B + SEO vóór ads), BestRest (eigen marketingplan)
 
@@ -48,7 +49,7 @@ Recente onderwerpen:
 - Google Reviews & lokale SEO
 - WordPress-theme vs custom build Next.js
 - Instagram Ads zonder leads
-- AI-zoek vindbaarheid in ChatGPT
+- Vindbaarheid in AI-antwoorden (ChatGPT)
 
 ## Regio
 

@@ -21,8 +21,7 @@ export function HeroSection() {
         <div>
           <Magnetic strength={6} radius={180} wobble={false}>
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722] lg:tracking-[0.26em]">
-              <span className="lg:hidden">{HOME_MOBILE_HERO.eyebrow}</span>
-              <span className="hidden lg:inline">Bouwen. Groeien. Winnen.</span>
+              Bouwen. Groeien. Winnen.
             </p>
           </Magnetic>
 
@@ -30,11 +29,9 @@ export function HeroSection() {
             id="hero-heading"
             className="mt-4 text-[2rem] font-extrabold leading-[1.08] tracking-tighter text-balance text-slate-900 sm:text-5xl sm:leading-[1.06] lg:mt-5 lg:text-6xl lg:leading-[1.02] lg:text-[4.25rem]"
           >
-            <span className="lg:hidden">{HOME_MOBILE_HERO.title}</span>
-            <span className="hidden lg:inline">Van site tot Google Ads.</span>
+            Van site tot Google Ads.
             <span className="mt-1.5 block text-[#FF5722] lg:mt-2">
-              <span className="lg:hidden">{HOME_MOBILE_HERO.titleAccent}</span>
-              <span className="hidden lg:inline">Ik regel het hele online plaatje.</span>
+              Ik regel het hele online plaatje.
             </span>
           </h1>
 
@@ -83,8 +80,10 @@ export function HeroSection() {
 
           <dl className="mt-10 hidden grid-cols-3 gap-2 border-t border-slate-200 pt-8 text-xs tracking-tight sm:grid sm:gap-6 sm:text-sm lg:mt-14">
             <div className="min-w-0">
-              <dt className="text-slate-500">Focus</dt>
-              <dd className="mt-1 font-bold leading-snug text-slate-900">Snel · schaal</dd>
+              <dt className="text-slate-500">Ervaring</dt>
+              <dd className="mt-1 font-bold leading-snug text-slate-900">
+                12 jaar online marketing
+              </dd>
             </div>
             <div className="min-w-0">
               <dt className="text-slate-500">Stack</dt>
@@ -95,7 +94,7 @@ export function HeroSection() {
             <div className="min-w-0">
               <dt className="text-slate-500">Aanpak</dt>
               <dd className="mt-1 font-bold leading-snug text-slate-900">
-                Nuchter · direct
+                Eerst organisch, dan ads
               </dd>
             </div>
           </dl>

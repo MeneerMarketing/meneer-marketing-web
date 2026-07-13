@@ -11,17 +11,11 @@ export const SITE_NAME = BRAND_DISPLAY;
 /** Technische / juridische naam (schema alternateName, e-mail domein). */
 export const SITE_NAME_LEGAL = BRAND_LEGAL;
 
-export const DEFAULT_OG_IMAGE = {
-  url: absoluteUrl("/og/og-default.svg"),
-  width: 1200,
-  height: 630,
-  alt: `${BRAND_DISPLAY}. Marketing, websites en Shopify`,
-} as const;
 export const HOME_PAGE_TITLE =
-  "Meneer Marketing | Ik bouw je vindbare site, zet campagnes live en blijf meten";
+  "Online marketing manager voor je groei | Meneer Marketing";
 
 export const HOME_PAGE_DESCRIPTION =
-  "Websites from scratch, SEO, Google Ads, Meta Ads, Shopify en e-mailmarketing. In twaalf jaar heb ik gezien wat online echt werkt. Daarmee help ik bedrijven groeien.";
+  "Websites from scratch, SEO, Google Ads, Meta Ads, Shopify en e-mail. Twaalf jaar ervaring met wat online echt werkt. Zo help ik je bedrijf groeien.";
 
 export function buildOpenGraph(input: {
   title: string;
@@ -70,14 +64,14 @@ export function buildTwitter(input: {
     images: [imageUrl],
   };
 }
+/**
+ * Alleen canonical, geen hreflang: de site is eentalig (nl). Hreflang-tags
+ * die naar zichzelf wijzen voegen niets toe en zijn alleen signaalruis.
+ * Pas toevoegen zodra er echt een tweede taal- of regioversie bestaat.
+ */
 export function buildAlternates(path: string): NonNullable<Metadata["alternates"]> {
-  const canonical = absoluteUrl(path);
   return {
-    canonical,
-    languages: {
-      "nl-NL": canonical,
-      "x-default": canonical,
-    },
+    canonical: absoluteUrl(path),
   };
 }
 
