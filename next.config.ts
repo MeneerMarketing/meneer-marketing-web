@@ -13,6 +13,13 @@ const nextConfig: NextConfig = {
   compress: true,
   trailingSlash: false,
   poweredByHeader: false,
+  experimental: {
+    /*
+     * Tailwind-CSS is klein en atomair: inline in de HTML scheelt een
+     * render-blocking request (~470 ms op mobiel 4G) voor de LCP.
+     */
+    inlineCss: true,
+  },
   images: {
     formats: ["image/avif", "image/webp"],
   },
