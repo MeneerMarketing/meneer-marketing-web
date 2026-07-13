@@ -13,10 +13,15 @@ import {
 import { siteOrigin } from "@/lib/site";
 import "./globals.css";
 
+/*
+ * display "optional" i.p.v. "swap": geen late font-swap-repaint die als
+ * nieuwe (tragere) LCP telt. Next.js matcht de fallback-metrics automatisch,
+ * dus de wissel is visueel vrijwel onzichtbaar.
+ */
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
-  display: "swap",
+  display: "optional",
   preload: true,
 });
 
