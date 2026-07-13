@@ -29,6 +29,17 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      /*
+       * Productie-alias op vercel.app doorsturen naar het hoofddomein zodat
+       * er geen tweede, indexeerbare kopie van de site bestaat. Preview-
+       * deployments (unieke subdomeinen) blijven bereikbaar voor testen.
+       */
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "meneer-marketing-web.vercel.app" }],
+        destination: "https://meneermarketing.nl/:path*",
+        permanent: true,
+      },
       { source: "/groeiscan", destination: "/intake", permanent: true },
       { source: "/groeien", destination: "/vindbaarheid", permanent: true },
       { source: "/automatiseren", destination: "/behoud", permanent: true },
