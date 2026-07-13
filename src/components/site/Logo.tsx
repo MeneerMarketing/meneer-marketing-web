@@ -17,7 +17,6 @@ export function Logo({ className, variant = "dark", icon }: LogoProps) {
     <Link
       href="/"
       className={`inline-flex items-center gap-2.5 rounded-lg outline-offset-4 ${className ?? ""}`}
-      aria-label={`${BRAND_DISPLAY}. Home`}
     >
       {icon}
       <span className="flex flex-wrap items-baseline gap-x-1 font-sans text-[1.05rem] leading-none tracking-tight sm:text-lg">
@@ -31,6 +30,7 @@ export function Logo({ className, variant = "dark", icon }: LogoProps) {
         >
           Marketing
         </span>
+        <span className="sr-only">home</span>
       </span>
     </Link>
   );

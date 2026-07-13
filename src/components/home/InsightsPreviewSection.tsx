@@ -25,6 +25,7 @@ function InsightArticleCard({ article }: { article: KennisbankArticle }) {
       <Link
         href={`/kennisbank/${article.slug}`}
         className="relative block overflow-hidden border-b border-mm-border/80"
+        aria-label={article.title}
       >
         <ArticleCardIllustration
           slug={article.slug}

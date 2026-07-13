@@ -38,10 +38,11 @@ export function HomePillarsStrip() {
           </div>
         </Reveal>
 
+        {/* Reveal ín de li: een ul mag alleen li's als directe kinderen (a11y list-regel). */}
         <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {HOME_PILLAR_LINKS.map((pillar, i) => (
-            <Reveal key={pillar.slug} delay={0.04 * i}>
-              <li>
+            <li key={pillar.slug}>
+              <Reveal delay={0.04 * i} className="h-full">
                 <Link
                   href={`/${pillar.slug}`}
                   className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50/80 px-4 py-4 transition hover:-translate-y-0.5 hover:border-[#FF5722]/35 hover:bg-orange-50/50 hover:shadow-sm"
@@ -57,8 +58,8 @@ export function HomePillarsStrip() {
                     aria-hidden
                   />
                 </Link>
-              </li>
-            </Reveal>
+              </Reveal>
+            </li>
           ))}
         </ul>
       </div>

@@ -262,7 +262,7 @@ function RailButton({ icon: Icon, count, filled, active, onClick, label }: RailB
         onClick={onClick}
         whileTap={{ scale: 0.9 }}
         className={className}
-        aria-label={label}
+        aria-label={count ? `${label} ${count}` : label}
       >
         {body}
       </motion.button>

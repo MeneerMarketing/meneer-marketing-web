@@ -48,9 +48,9 @@ export function BouwenCaseBrowser({
     <Link
       ref={ref}
       href={caseItem.href}
-      aria-label={`Case ${caseItem.client} bekijken`}
       className="group relative block w-full min-w-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF5722]"
     >
+      <span className="sr-only">Case {caseItem.client} bekijken</span>
       <div
         className="pointer-events-none absolute -inset-6 rounded-[2rem] opacity-50 blur-3xl transition-opacity duration-300 group-hover:opacity-70"
         style={{ backgroundColor: `${palette.accent}44` }}
