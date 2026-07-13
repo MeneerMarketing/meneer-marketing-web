@@ -81,7 +81,7 @@ export function SiteHeader() {
             <Magnetic key={link.href} strength={10} radius={110}>
               <Link
                 href={link.href}
-                className="rounded-lg px-3 py-2 text-sm font-semibold tracking-tight text-mm-muted transition-colors hover:bg-mm-surface hover:text-mm-text"
+                className="rounded-lg px-3 py-2 text-sm font-semibold tracking-tight text-slate-600 transition-colors hover:bg-mm-surface hover:text-mm-text"
               >
                 {link.name}
               </Link>
@@ -93,7 +93,7 @@ export function SiteHeader() {
           <Magnetic strength={12} radius={140}>
             <Link
               href={siteCtas.startIntake.href}
-              className="group relative inline-flex items-center gap-1.5 overflow-hidden whitespace-nowrap rounded-full bg-[#FF5722] px-5 py-2.5 text-sm font-bold tracking-tight text-white shadow-sm shadow-[#FF5722]/25 transition hover:shadow-[#FF5722]/40"
+              className="group relative inline-flex items-center gap-1.5 overflow-hidden whitespace-nowrap rounded-full bg-mm-accent px-5 py-2.5 text-sm font-bold tracking-tight text-white shadow-sm shadow-mm-accent/25 transition hover:shadow-mm-accent/40"
             >
               <span
                 aria-hidden

@@ -300,7 +300,7 @@ export function ScrollMeneer() {
                   >
                     <X className="size-3.5" aria-hidden />
                   </button>
-                  <p className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
+                  <p className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.14em] text-[#C2410C]">
                     Je bent hier
                   </p>
                   <p className="mt-0.5 text-pretty text-sm font-extrabold leading-snug text-slate-900">
