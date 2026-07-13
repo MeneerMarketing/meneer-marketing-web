@@ -10,8 +10,9 @@
   --mm-sky: #0ea5e9;
   --mm-sky-deep: #0284c7;
   --mm-sky-subtle: #e0f2fe;
-  --mm-accent: #ea580c;
-  --mm-accent-hover: #c2410c;
+  /* Toegankelijk oranje: wit op #c2410c haalt 5.2:1 (WCAG AA), #ea580c bleef op 3.6 steken. */
+  --mm-accent: #c2410c;
+  --mm-accent-hover: #9a3412;
   --mm-accent-subtle: #ffedd5;
   --mm-footer-bg: #0c1222;
   --mm-footer-muted: #94a3b8;

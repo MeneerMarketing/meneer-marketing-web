@@ -9,7 +9,7 @@ export function HomeMobilePillarsStrip() {
       aria-labelledby="mobile-pillars-strip-heading"
       className="border-b border-slate-200 bg-white px-4 py-12"
     >
-      <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#FF5722]">
+      <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#C2410C]">
         Vijf blokken
       </p>
       <h2
@@ -46,7 +46,7 @@ export function HomeMobilePillarsStrip() {
 
       <Link
         href="/diensten"
-        className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#FF5722]"
+        className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#C2410C]"
       >
         Alle diensten
         <ArrowUpRight className="size-4" aria-hidden />

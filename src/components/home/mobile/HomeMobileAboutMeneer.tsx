@@ -43,7 +43,7 @@ export function HomeMobileAboutMeneer() {
         >
           <InteractiveLogo className="size-11 shrink-0" interactive={false} />
           <div className="min-w-0">
-            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#C2410C]">
               {HOME_ABOUT_MENEER.eyebrow}
             </p>
             <h2
@@ -110,7 +110,7 @@ export function HomeMobileAboutMeneer() {
         >
           <Link
             href={HOME_ABOUT_MENEER.ctaHref}
-            className="group inline-flex items-center gap-2 text-sm font-extrabold tracking-tight text-[#FF5722]"
+            className="group inline-flex items-center gap-2 text-sm font-extrabold tracking-tight text-[#C2410C]"
           >
             {HOME_ABOUT_MENEER.ctaLabel}
             <ArrowUpRight

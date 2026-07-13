@@ -78,7 +78,7 @@ export function HomeMobileCta() {
 
             href={siteCtas.startIntake.href}
 
-            className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-base font-bold text-white shadow-lg shadow-[#FF5722]/25"
+            className="flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-[1.2rem] font-bold text-white shadow-lg shadow-[#FF5722]/25"
 
           >
 
@@ -90,7 +90,7 @@ export function HomeMobileCta() {
 
         </motion.div>
 
-        <p className="mt-4 text-xs text-slate-500">
+        <p className="mt-4 text-xs text-slate-400">
 
           {HOME_CTA.secondaryLead}{" "}
 

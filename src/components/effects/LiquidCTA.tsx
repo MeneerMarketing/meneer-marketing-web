@@ -14,7 +14,7 @@ export function LiquidCTA({ href, label, className }: LiquidCTAProps) {
     <Magnetic radius={180} strength={12}>
       <Link
         href={href}
-        className={`group relative inline-flex items-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-8 py-4 text-base font-bold tracking-tight text-white shadow-[0_12px_28px_-10px_rgba(255,87,34,0.6)] ring-1 ring-[#FF5722]/30 transition hover:bg-orange-600 hover:shadow-[0_18px_44px_-12px_rgba(255,87,34,0.55)] ${className ?? ""}`}
+        className={`group relative inline-flex items-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-8 py-4 text-[1.2rem] font-bold tracking-tight text-white shadow-[0_12px_28px_-10px_rgba(255,87,34,0.6)] ring-1 ring-[#FF5722]/30 transition hover:bg-orange-600 hover:shadow-[0_18px_44px_-12px_rgba(255,87,34,0.55)] ${className ?? ""}`}
       >
         <span className="relative z-10 transition-transform duration-300 group-hover:-translate-y-px">
           {label}

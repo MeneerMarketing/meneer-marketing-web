@@ -31,7 +31,7 @@ export function HomeMobileFunFacts() {
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 0.45, ease: EASE }}
         >
-          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+          <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#C2410C]">
             Wist je dat?
           </p>
           <h2
@@ -106,7 +106,7 @@ export function HomeMobileFunFacts() {
         >
           <Link
             href="/weetjes"
-            className="inline-flex items-center gap-1.5 text-sm font-extrabold text-[#FF5722]"
+            className="inline-flex items-center gap-1.5 text-sm font-extrabold text-[#C2410C]"
           >
             Bekijk alle {ALL_MARKETING_FUN_FACTS.length} marketing weetjes
             <ArrowUpRight className="size-4" aria-hidden />

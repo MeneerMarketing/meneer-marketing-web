@@ -109,7 +109,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500 sm:text-xs">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">
               Blokken
             </p>
             <ul className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2.5 text-sm font-medium text-slate-200">
@@ -133,7 +133,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500 sm:text-xs">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">
               Navigatie
             </p>
             <ul className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2.5 text-sm font-medium text-slate-200">
@@ -159,7 +159,7 @@ export function SiteFooter() {
             <MeneerPeek />
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Blokken</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Blokken</p>
             <ul className="mt-4 space-y-2 text-sm font-medium text-slate-200">
               {megaMenuColumns.map((col) => (
                 <li key={col.category}>
@@ -172,7 +172,7 @@ export function SiteFooter() {
             </ul>
           </div>
           <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
               Navigatie &amp; juridisch
             </p>
             <ul className="mt-4 space-y-2 text-sm font-medium text-slate-200">
@@ -241,7 +241,7 @@ export function SiteFooter() {
         {/* Juridisch — mobiel */}
         <nav
           aria-label="Juridisch"
-          className="mt-6 flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-1 text-[11px] font-normal text-slate-500 lg:hidden"
+          className="mt-6 flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-1 text-[11px] font-normal text-slate-400 lg:hidden"
         >
           {FOOTER_LEGAL.map((item) => (
             <Link

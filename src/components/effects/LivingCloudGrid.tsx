@@ -62,6 +62,12 @@ export function LivingCloudGrid({ className }: LivingCloudGridProps) {
 
   useEffect(() => {
     if (reduceMotion) return;
+    /*
+     * Alleen op apparaten met een echte muis: het shader-effect reageert op
+     * cursorbeweging. Op touch (mobiel) is dat zinloos en kost three.js
+     * alleen maar downloadtijd en main-thread (TBT/INP).
+     */
+    if (!window.matchMedia("(pointer: fine)").matches) return;
     if (typeof window.requestIdleCallback === "function") {
       const id = window.requestIdleCallback(() => setWebglReady(true), {
         timeout: 2000,

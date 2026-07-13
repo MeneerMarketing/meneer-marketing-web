@@ -30,7 +30,7 @@ export function HomeMobileMythSwipe() {
             animate={{ opacity: 1, y: 0 }}
             exit={reduce ? undefined : { opacity: 0, y: -4 }}
             transition={{ duration: 0.22, ease: EASE }}
-            className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#FF5722]"
+            className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#C2410C]"
           >
             {eyebrow}
           </motion.p>
@@ -88,7 +88,7 @@ export function HomeMobileMythSwipe() {
                     <div className="flex items-start gap-3">
                       <InteractiveLogo className="size-9 shrink-0" interactive={false} />
                       <div className="min-w-0 flex-1">
-                        <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#FF5722]">
+                        <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#C2410C]">
                           {HOME_MOBILE_MYTH_SECTION.meneerLabel}
                         </p>
                         <p className="mt-2 text-sm font-bold leading-[1.55] tracking-tight text-slate-900">
@@ -98,7 +98,7 @@ export function HomeMobileMythSwipe() {
                     </div>
                     <Link
                       href={item.href}
-                      className="mt-auto inline-flex items-center gap-1.5 pt-4 text-xs font-extrabold text-[#FF5722]"
+                      className="mt-auto inline-flex items-center gap-1.5 pt-4 text-xs font-extrabold text-[#C2410C]"
                     >
                       {item.linkLabel}
                       <ArrowUpRight className="size-3.5" aria-hidden />

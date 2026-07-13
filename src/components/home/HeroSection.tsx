@@ -20,7 +20,7 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-16 lg:px-8 lg:py-28">
         <div>
           <Magnetic strength={6} radius={180} wobble={false}>
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722] lg:tracking-[0.26em]">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#C2410C] lg:tracking-[0.26em]">
               Bouwen. Groeien. Winnen.
             </p>
           </Magnetic>

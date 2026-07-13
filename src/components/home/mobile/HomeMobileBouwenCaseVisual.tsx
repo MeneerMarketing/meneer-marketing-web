@@ -90,7 +90,6 @@ export function BouwenCaseBrowser({
               src={previewImage}
               alt={`${caseItem.client} preview`}
               fill
-              unoptimized
               className="object-cover"
               style={{ objectPosition: previewObjectPosition ?? "top" }}
               sizes="(max-width: 768px) 100vw, 640px"

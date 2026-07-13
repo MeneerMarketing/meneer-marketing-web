@@ -19,7 +19,7 @@ export function HomeUspBar() {
     >
       <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-3 px-4 py-5 sm:flex-row sm:items-center sm:gap-5 sm:py-7 sm:px-6 lg:px-8">
         <p className="shrink-0 text-left text-xs font-bold tracking-tight text-slate-600 sm:text-sm">
-          <span className="text-[#FF5722]">Vijf specialismen.</span> Eén aanspreekpunt.
+          <span className="text-[#C2410C]">Vijf specialismen.</span> Eén aanspreekpunt.
         </p>
 
         {/* py-3 = ruimte voor rotatie/schaduw; horizontale scroll alleen als het echt niet past */}

@@ -141,7 +141,6 @@ export function CasePreviewVideo({
           src={poster}
           alt={label}
           fill
-          unoptimized
           className={className}
           style={{ objectPosition }}
           sizes="(max-width: 768px) 100vw, 640px"
@@ -157,14 +156,18 @@ export function CasePreviewVideo({
           src={poster}
           alt=""
           fill
-          unoptimized
           aria-hidden
           className={`${className} -z-10`}
           style={{ objectPosition }}
           sizes="(max-width: 768px) 100vw, 640px"
         />
       ) : null}
-      {resolvedSrc ? (
+      {/*
+        Video pas in de DOM zodra de kaart in beeld is: een <video> met
+        autoPlay downloadt anders direct bij paginalading (1,4 MB op mobiel),
+        ook als de sectie ver onder de fold staat.
+      */}
+      {resolvedSrc && visible ? (
         <video
           key={resolvedSrc}
           ref={videoRef}
@@ -174,7 +177,7 @@ export function CasePreviewVideo({
           loop
           playsInline
           autoPlay
-          preload={shouldPlay ? "auto" : "metadata"}
+          preload="auto"
           disablePictureInPicture
           controls={false}
           onError={() => poster && setUsePosterOnly(true)}

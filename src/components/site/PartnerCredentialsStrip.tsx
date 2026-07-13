@@ -54,7 +54,7 @@ export function PartnerCredentialsStrip({
     <div className={className} aria-label="Partnercertificeringen">
       <p
         className={`text-center text-[10px] font-bold uppercase tracking-[0.2em] sm:text-[11px] ${
-          isDark ? "text-slate-500" : "text-slate-400"
+          isDark ? "text-slate-400" : "text-slate-500"
         }`}
       >
         Partners
@@ -86,7 +86,7 @@ export function PartnerCredentialsStrip({
       {showCaption ? (
         <p
           className={`mx-auto mt-4 max-w-md text-center text-xs leading-relaxed sm:text-sm ${
-            isDark ? "text-slate-500" : "text-slate-500"
+            isDark ? "text-slate-400" : "text-slate-600"
           }`}
         >
           Gecertificeerde Shopify &amp; Meta partner.

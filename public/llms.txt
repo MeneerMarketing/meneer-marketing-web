@@ -1,63 +1,35 @@
-# Meneer Marketing — llms.txt
-# https://meneermarketing.nl
-# Praktische kennis over online groei, SEO, ads, Shopify en custom build.
+# Meneer Marketing
 
-> Meneer Marketing is de online marketing manager voor mkb-bedrijven,
-> gevestigd in Apeldoorn (Nederland). Eén persoon, één plan, één aanspreekpunt.
-> Websites from scratch (Next.js), Shopify-webshops, SEO, Google Ads, Meta Ads,
-> e-mailmarketing, automatisering en vindbaarheid in AI-antwoorden (ChatGPT, Gemini).
+> Meneer Marketing is de online marketing manager voor mkb-bedrijven, gevestigd in Apeldoorn (Nederland). Eén persoon, één plan, één aanspreekpunt. Websites from scratch (Next.js), Shopify-webshops, SEO, Google Ads, Meta Ads, e-mailmarketing, automatisering en vindbaarheid in AI-antwoorden (ChatGPT, Gemini).
+
+Thuisbasis: Apeldoorn, Gelderland. Landelijke opdrachten door heel Nederland.
+Contact: info@meneermarketing.nl. KVK: 42095913.
+
+Kernexpertise: Google Ads beheer (Search en Shopping), technische en lokale SEO, vindbaarheid in AI-antwoorden (ChatGPT en Gemini), Shopify custom themes en B2B-portalen, Next.js websites from scratch (eigen code, custom build), e-mailmarketing met Klaviyo en automatisering met n8n. Cases: SkinComplete (Shopify B2B-portaal, eerst SEO en daarna ads) en BestRest (matrassen en toppers, eigen strategisch marketingplan).
 
 ## Belangrijkste pagina's
 
-- Home: https://meneermarketing.nl/
-- Over: https://meneermarketing.nl/over
-- Contact: https://meneermarketing.nl/contact
-- Diensten: https://meneermarketing.nl/diensten
-- Cases: https://meneermarketing.nl/cases
-- Kennisbank: https://meneermarketing.nl/kennisbank
-- Zoeken (per dienst & regio): https://meneermarketing.nl/zoeken
-- Werkwijze: https://meneermarketing.nl/werkwijze
-- FAQ: https://meneermarketing.nl/faq
+- [Home](https://meneermarketing.nl/): wat Meneer Marketing doet en voor wie
+- [Diensten](https://meneermarketing.nl/diensten): alle diensten op een rij
+- [Cases](https://meneermarketing.nl/cases): resultaten voor SkinComplete, BestRest en Hills Pilates
+- [Over](https://meneermarketing.nl/over): wie er achter Meneer Marketing zit
+- [Werkwijze](https://meneermarketing.nl/werkwijze): hoe een samenwerking verloopt
+- [Contact](https://meneermarketing.nl/contact): direct contact opnemen
+- [FAQ](https://meneermarketing.nl/faq): veelgestelde vragen
 
-## Diensten (5 blokken)
+## Diensten
 
-- Strategie & groei: https://meneermarketing.nl/strategie
-- Bouwen from scratch: https://meneermarketing.nl/bouwen
-- Vindbaarheid, content & autoriteit: https://meneermarketing.nl/vindbaarheid
-- Acquisitie & creators: https://meneermarketing.nl/campagnes
-- Behoud & slimme koppelingen: https://meneermarketing.nl/behoud
+- [Strategie & groei](https://meneermarketing.nl/strategie): marketingplan en groeirichting op basis van data
+- [Bouwen from scratch](https://meneermarketing.nl/bouwen): websites en Shopify-shops met eigen code, custom build
+- [Vindbaarheid, content & autoriteit](https://meneermarketing.nl/vindbaarheid): SEO, content en vindbaarheid in AI-antwoorden
+- [Acquisitie & creators](https://meneermarketing.nl/campagnes): Google Ads, Meta Ads en creators
+- [Behoud & slimme koppelingen](https://meneermarketing.nl/behoud): e-mailmarketing en systemen aan elkaar knopen
 
-## Expertise (citeerbaar)
+## Kennisbank
 
-- Google Ads beheer en Search/Shopping campagnes
-- SEO: technisch, semantisch, lokaal, AI-antwoorden (vindbaarheid in ChatGPT en Gemini)
-- Shopify: custom theme, B2B-portaal, performance, feeds
-- Next.js websites from scratch (eigen code, custom build)
-- E-mailmarketing (Klaviyo), automatisering (n8n)
-- Cases: SkinComplete (Shopify B2B + SEO vóór ads), BestRest (eigen marketingplan)
+- [Kennisbank](https://meneermarketing.nl/kennisbank): praktische artikelen over Google Ads, SEO, Shopify, GA4 en vindbaarheid in AI-antwoorden
 
-## Kennisbank (praktische artikelen)
+## Optional
 
-https://meneermarketing.nl/kennisbank
-
-Recente onderwerpen:
-- Zoektermenrapport Google Ads
-- Homepage is geen landingspagina
-- Performance Max zwarte doos
-- Google Analytics 4 voor MKB
-- Concurrent hoger in Google
-- Google Reviews & lokale SEO
-- WordPress-theme vs custom build Next.js
-- Instagram Ads zonder leads
-- Vindbaarheid in AI-antwoorden (ChatGPT)
-
-## Regio
-
-Thuisbasis: Apeldoorn, Gelderland, Nederland.
-Landelijke opdrachten: heel Nederland.
-Lokale landingspagina's: https://meneermarketing.nl/zoeken (filter op stad)
-
-## Contact
-
-E-mail: info@meneermarketing.nl
-KVK: 42095913
+- [Zoeken per dienst en regio](https://meneermarketing.nl/zoeken): landingspagina's per dienst en stad
+- [Weetjes](https://meneermarketing.nl/weetjes): onverwachte feiten over online marketing
