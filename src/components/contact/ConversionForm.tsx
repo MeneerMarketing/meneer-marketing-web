@@ -39,7 +39,14 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-import { useMemo, useState, type FormEvent, type ReactNode } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type FormEvent,
+  type ReactNode,
+} from "react";
 import { FormSubmitError } from "@/components/contact/FormSubmitError";
 import { businessEmail } from "@/lib/contact";
 import { submitContactForm } from "@/lib/contact-submission";
@@ -853,6 +860,8 @@ export function ConversionForm({
   const [shake, setShake] = useState(0);
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [messageSubmitAttempted, setMessageSubmitAttempted] = useState(false);
+  const stepAdvanceLockRef = useRef(false);
 
   const isIntake = variant === "intake";
   const isSchaalOp = variant === "schaal-op";
@@ -906,6 +915,28 @@ export function ConversionForm({
     return null;
   };
 
+  useEffect(() => {
+    if (step === messageStep) {
+      setMessageSubmitAttempted(false);
+      setError(null);
+      setMailtoFallback(undefined);
+    }
+  }, [step, messageStep]);
+
+  const advanceStep = (target: number) => {
+    if (target === messageStep) {
+      stepAdvanceLockRef.current = true;
+      queueMicrotask(() => {
+        setStep(target);
+        queueMicrotask(() => {
+          stepAdvanceLockRef.current = false;
+        });
+      });
+      return;
+    }
+    setStep(target);
+  };
+
   const next = () => {
     const err = validateStep(step);
     if (err) {
@@ -915,7 +946,7 @@ export function ConversionForm({
     }
     setError(null);
     setMailtoFallback(undefined);
-    setStep((s) => Math.min(s + 1, lastStep));
+    advanceStep(Math.min(step + 1, lastStep));
   };
 
   const prev = () => {
@@ -926,10 +957,14 @@ export function ConversionForm({
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
+    if (stepAdvanceLockRef.current) {
+      return;
+    }
     if (step < lastStep) {
       next();
       return;
     }
+    setMessageSubmitAttempted(true);
     const err = validateStep(messageStep);
     if (err) {
       setError(err);
@@ -968,6 +1003,7 @@ export function ConversionForm({
     setState(INITIAL_STATE);
     setError(null);
     setMailtoFallback(undefined);
+    setMessageSubmitAttempted(false);
   };
 
   if (sent) {
@@ -1239,11 +1275,18 @@ export function ConversionForm({
                     id={pid("bericht")}
                     name="bericht"
                     rows={8}
-                    required
                     value={state.bericht}
                     onChange={(e) => patch({ bericht: e.target.value })}
                     className={inputCls + " resize-none"}
                     placeholder={cfg.messagePlaceholder}
+                    aria-invalid={
+                      messageSubmitAttempted && error ? true : undefined
+                    }
+                    aria-describedby={
+                      messageSubmitAttempted && error
+                        ? pid("bericht-error")
+                        : undefined
+                    }
                   />
                 </Field>
 
@@ -1258,9 +1301,11 @@ export function ConversionForm({
         </motion.div>
 
         <AnimatePresence>
-          {error ? (
+          {error &&
+          (step !== messageStep || messageSubmitAttempted) ? (
             <motion.div
               key="err"
+              id={step === messageStep ? pid("bericht-error") : undefined}
               initial={{ opacity: 0, y: -6 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
