@@ -40,7 +40,7 @@ export function ScrollMeneer() {
   const [scrollable, setScrollable] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [showBubbles, setShowBubbles] = useState(false);
-  const [hintsEnabled, setHintsEnabled] = useState(true);
+  const [hintsEnabled, setHintsEnabled] = useState(false);
   const [hintsReady, setHintsReady] = useState(false);
   const [progressPercent, setProgressPercent] = useState(0);
 

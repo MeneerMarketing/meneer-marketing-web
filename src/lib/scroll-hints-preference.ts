@@ -1,8 +1,8 @@
 const SCROLL_HINTS_STORAGE_KEY = "mm-scroll-hints";
 
 export function readScrollHintsEnabled(): boolean {
-  if (typeof window === "undefined") return true;
-  return localStorage.getItem(SCROLL_HINTS_STORAGE_KEY) !== "off";
+  if (typeof window === "undefined") return false;
+  return localStorage.getItem(SCROLL_HINTS_STORAGE_KEY) === "on";
 }
 
 export function writeScrollHintsEnabled(enabled: boolean): void {
