@@ -62,7 +62,7 @@ export const HUB_PAGE_SEO = {
 
   faq: {
 
-    title: "FAQ | eerlijke antwoorden, geen bureautaal | Meneer Marketing",
+    title: "Veelgestelde vragen | eerlijke antwoorden | Meneer Marketing",
 
     description:
 

@@ -55,7 +55,7 @@ export const organizationJsonLd: JsonLdObject = {
   name: BRAND_LEGAL,
   alternateName: BRAND_DISPLAY,
   url: siteUrl,
-  logo: absoluteUrl("/icon.svg"),
+  logo: absoluteUrl("/icon-512.png"),
   image: absoluteUrl("/og/og-default.svg"),
   email: businessEmail,
   ...(businessPhone ? { telephone: businessPhone } : {}),
@@ -106,7 +106,7 @@ export const websiteJsonLd: JsonLdObject = {
     name: BRAND_LEGAL,
     alternateName: BRAND_DISPLAY,
     url: siteUrl,
-    logo: absoluteUrl("/icon.svg"),
+    logo: absoluteUrl("/icon-512.png"),
   },
   inLanguage: "nl-NL",
   potentialAction: {
@@ -157,7 +157,7 @@ export function articleJsonLd(input: {
       url: siteUrl,
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/icon.svg"),
+        url: absoluteUrl("/icon-512.png"),
       },
     },
     mainEntityOfPage: {
@@ -342,7 +342,7 @@ export function caseStudyJsonLd(input: {
       url: siteUrl,
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/icon.svg"),
+        url: absoluteUrl("/icon-512.png"),
       },
     },
     ...(input.image

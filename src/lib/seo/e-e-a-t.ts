@@ -26,7 +26,7 @@ export const FOUNDER_BIO =
 /** Optioneel: echte foto via env. Fallback: merk-icoon. */
 export const founderImageUrl: string =
   process.env.NEXT_PUBLIC_FOUNDER_IMAGE_URL?.trim() ||
-  absoluteUrl("/icon.svg");
+  absoluteUrl("/icon-512.png");
 
 export const founderProfileUrl = absoluteUrl("/over");
 

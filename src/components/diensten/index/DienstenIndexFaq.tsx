@@ -16,7 +16,7 @@ export function DienstenIndexFaq() {
       <div className="relative mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <Reveal>
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-            FAQ
+            Vragen over diensten
           </p>
           <h2
             id="diensten-faq-heading"
