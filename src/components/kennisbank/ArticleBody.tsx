@@ -42,10 +42,6 @@ export function ArticleBody({ sections }: { sections: ArticleSection[] }) {
                   >
                     <span
                       aria-hidden
-                      className="pointer-events-none absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#FF5722] via-[#FF8A50] to-mm-sky opacity-90"
-                    />
-                    <span
-                      aria-hidden
                       className="mt-1.5 flex size-6 shrink-0 items-center justify-center rounded-lg bg-[#FF5722] text-white shadow-[2px_2px_0_0_rgba(15,23,42,0.12)] transition duration-300 group-hover:rotate-12 group-hover:scale-105"
                     >
                       <svg
