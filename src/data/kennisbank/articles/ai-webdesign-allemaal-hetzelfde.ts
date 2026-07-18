@@ -16,7 +16,7 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
     "website from scratch",
     "ai design herkenbaar",
   ],
-  dienstSlugs: ["websites", "shopify", "strategie"],
+  dienstSlugs: ["webdevelopment", "shopify-enterprise", "strategie"],
   faqs: [
     {
       question: "Is AI slecht voor webdesign?",
