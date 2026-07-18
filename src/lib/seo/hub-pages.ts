@@ -112,7 +112,7 @@ export const HUB_PAGE_SEO = {
 
   over: {
 
-    title: "Over mij | van developer naar jouw marketingguy | Meneer Marketing",
+    title: "Over mij | twaalf jaar code én campagnes | Meneer Marketing",
 
     description:
 
