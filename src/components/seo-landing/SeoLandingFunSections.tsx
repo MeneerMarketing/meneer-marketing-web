@@ -96,19 +96,24 @@ export function SeoLandingInnerVoice({ voice }: { voice: SeoLandingInnerVoice })
 
 export function SeoLandingLocalColor({ block }: { block: SeoLandingLocalColor }) {
   return (
-    <section className="border-b border-slate-200 bg-slate-950 py-16 text-white">
+    <section className="border-b border-slate-200 bg-gradient-to-b from-orange-50/70 via-white to-slate-50 py-16 lg:py-20">
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
         <Reveal>
           <div className="flex items-center gap-2 text-[#FF5722]">
-            <MapPin className="size-5" aria-hidden />
+            <span className="inline-flex size-8 items-center justify-center rounded-xl bg-[#FF5722]/10 shadow-[2px_2px_0_0_rgba(255,87,34,0.2)]">
+              <MapPin className="size-4" aria-hidden />
+            </span>
             <p className="text-xs font-bold uppercase tracking-[0.18em]">Lokaal beeld</p>
           </div>
-          <h2 className="mt-4 text-pretty text-2xl font-extrabold tracking-tight lg:text-3xl">
+          <h2 className="mt-4 text-pretty text-2xl font-extrabold tracking-tight text-slate-900 lg:text-3xl">
             {block.title}
           </h2>
-          <div className="mt-6 space-y-5">
+          <div className="mt-6 space-y-4">
             {block.paragraphs.map((p) => (
-              <p key={p.slice(0, 40)} className="text-pretty text-base leading-relaxed text-white/80">
+              <p
+                key={p.slice(0, 40)}
+                className="rounded-2xl border border-slate-200/90 bg-white px-5 py-4 text-pretty text-base leading-relaxed text-slate-600 shadow-[0_1px_0_rgba(15,23,42,0.03)]"
+              >
                 {p}
               </p>
             ))}
