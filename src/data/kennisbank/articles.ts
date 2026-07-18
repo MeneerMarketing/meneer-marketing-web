@@ -27,8 +27,10 @@ import { MARKETING_VERGADERING_VS_UITVOERING } from "@/data/kennisbank/articles/
 import { CHATGPT_MODELLEN_MARKETEER_2026 } from "@/data/kennisbank/articles/chatgpt-modellen-marketeer-2026";
 import { GOOGLE_AI_OVERVIEWS_CLICKS_2026 } from "@/data/kennisbank/articles/google-ai-overviews-clicks-2026";
 import { CONSENT_MODE_GOOGLE_ADS_2026 } from "@/data/kennisbank/articles/consent-mode-google-ads-2026";
+import { AI_WEBDESIGN_ALLEMAAL_HETZELFDE } from "@/data/kennisbank/articles/ai-webdesign-allemaal-hetzelfde";
 
 export const kennisbankArticles: KennisbankArticle[] = [
+  AI_WEBDESIGN_ALLEMAAL_HETZELFDE,
   CHATGPT_MODELLEN_MARKETEER_2026,
   GOOGLE_AI_OVERVIEWS_CLICKS_2026,
   CONSENT_MODE_GOOGLE_ADS_2026,

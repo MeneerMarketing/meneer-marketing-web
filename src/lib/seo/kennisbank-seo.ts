@@ -71,6 +71,8 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
     "AI-samenvattingen bovenaan Google, minder clicks. Je leert: hoe je bron wordt, koop-intent pakt en merk omzeilt zero-click.",
   "consent-mode-google-ads-2026":
     "Conversies verdwijnen, Smart Bidding raakt blind. Je leert: wat Consent Mode v2 doet en hoe je tracking GDPR-proof fixt.",
+  "ai-webdesign-allemaal-hetzelfde":
+    "Paarse gradients, dezelfde cards, dezelfde UI. Je leert: waarom AI-webdesign zo herkenbaar is en wanneer custom build wél loont.",
 };
 
 export function getKennisbankMetaDescription(
