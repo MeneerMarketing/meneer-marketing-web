@@ -322,18 +322,65 @@ export function buildSchemaFaqs(
   return [primary, ...rest];
 }
 
-export function seoLandingSitemapPriority(slug: string): number {
+/** Nationale money-slugs zonder stad: hogere crawl-prioriteit. */
+const NATIONAL_MONEY_SLUGS = new Set([
+  "google-ads-bureau",
+  "google-ads-beheer",
+  "google-ads-specialist",
+  "google-ads-uitbesteden",
+  "seo-specialist",
+  "seo-uitbesteden",
+  "seo-audit",
+  "website-laten-maken",
+  "website-laten-bouwen",
+  "webshop-laten-maken",
+  "shopify-expert",
+  "shopify-webshop-laten-maken",
+  "shopify-seo",
+  "meta-ads-bureau",
+  "online-marketing-bureau",
+  "online-marketing-manager",
+  "marketing-bureau",
+  "lokale-seo",
+  "hoger-in-google",
+]);
+
+/** City-trio fill: website/marketing/seo × stad (breed, lagere prioriteit). */
+const CITY_TRIO_BASES = [
+  "website-laten-maken",
+  "marketing-bureau",
+  "seo-specialist",
+] as const;
+
+function isCityTrioFillSlug(slug: string): boolean {
+  return CITY_TRIO_BASES.some(
+    (base) => slug.startsWith(`${base}-`) && slug !== base,
+  );
+}
+
+/**
+ * Sitemap-prioriteit: nationale money + Apeldoorn eerst, daarna grote steden,
+ * city-trio-fill lager zodat crawl-budget naar intentie-pagina's gaat.
+ * @param hasLocation true = lokale SEO-landing (stad/regio)
+ */
+export function seoLandingSitemapPriority(
+  slug: string,
+  hasLocation = slugIncludesCityHint(slug),
+): number {
   if (slug.endsWith("-apeldoorn")) return 0.92;
+  if (!hasLocation) {
+    return NATIONAL_MONEY_SLUGS.has(slug) ? 0.9 : 0.87;
+  }
   if (
-    slug.includes("-amsterdam") ||
-    slug.includes("-rotterdam") ||
-    slug.includes("-utrecht") ||
-    slug.includes("-den-haag") ||
-    slug.includes("-eindhoven")
+    slug.endsWith("-amsterdam") ||
+    slug.endsWith("-rotterdam") ||
+    slug.endsWith("-utrecht") ||
+    slug.endsWith("-den-haag") ||
+    slug.endsWith("-eindhoven")
   ) {
     return 0.86;
   }
-  const citySuffixes = [
+  const strongCities = [
     "-arnhem",
     "-nijmegen",
     "-tilburg",
@@ -342,7 +389,16 @@ export function seoLandingSitemapPriority(slug: string): number {
     "-maastricht",
     "-enschede",
   ];
-  if (citySuffixes.some((s) => slug.endsWith(s))) return 0.85;
-  if (slug.includes("-")) return 0.84;
+  if (strongCities.some((s) => slug.endsWith(s))) return 0.84;
+  if (isCityTrioFillSlug(slug)) return 0.72;
   return 0.8;
+}
+
+function slugIncludesCityHint(slug: string): boolean {
+  return (
+    isCityTrioFillSlug(slug) ||
+    /-(amsterdam|rotterdam|utrecht|den-haag|eindhoven|apeldoorn|arnhem|nijmegen|tilburg|breda|groningen|maastricht|enschede|haarlem|amersfoort|zwolle|leiden|delft|almere|zaandam|den-bosch|heerlen|venlo|roermond|wageningen|ede|harderwijk|doetinchem|zutphen|deventer|hengelo|almelo|emmen|leeuwarden|assen|lelystad|middelburg|vlissingen|helmond|oss|veghel|roosendaal|bergen-op-zoom|goes|terneuzen)$/.test(
+      slug,
+    )
+  );
 }

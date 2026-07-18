@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { getAllCaseSlugs } from "@/data/cases-detail";
 import { getAllPillarSlugs } from "@/data/pillar-pages";
-import { getAllSeoLandingSlugs } from "@/data/seo-landings/registry";
+import { getAllSeoLandingPages } from "@/data/seo-landings/registry";
 import { seoLandingSitemapPriority } from "@/lib/seo-landings-meta";
 import { getAllDienstSlugs } from "@/lib/diensten";
 import {
@@ -53,8 +53,9 @@ const STATIC_INDEXABLE_PATHS = [
   },
 ] as const;
 
-const SEO_LANDING_LAST_MOD = new Date("2026-07-06");
-const SITE_LAST_MOD = new Date("2026-07-06");
+/** Uniqueness-laag (city trio, batch stories, Apeldoorn) live sinds juli 2026. */
+const SEO_LANDING_LAST_MOD = new Date("2026-07-18");
+const SITE_LAST_MOD = new Date("2026-07-18");
 
 function toOriginUrl(path: string): string {
   return path === "" ? siteOrigin : `${siteOrigin}${path}`;
@@ -138,12 +139,12 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     });
   }
 
-  for (const slug of getAllSeoLandingSlugs()) {
+  for (const page of getAllSeoLandingPages()) {
     entries.push({
-      url: `${siteOrigin}/zoeken/${slug}`,
+      url: `${siteOrigin}/zoeken/${page.slug}`,
       lastModified: SEO_LANDING_LAST_MOD,
       changeFrequency: "monthly",
-      priority: seoLandingSitemapPriority(slug),
+      priority: seoLandingSitemapPriority(page.slug, Boolean(page.location)),
     });
   }
 

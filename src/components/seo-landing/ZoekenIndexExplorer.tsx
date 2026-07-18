@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useMemo, useState, useEffect, useCallback, useRef } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ArrowUpRight, MapPin, Search } from "lucide-react";
 import { seoLandingPath } from "@/lib/seo-landings";
 
@@ -105,17 +105,58 @@ function formatCount(n: number): string {
   return new Intl.NumberFormat("nl-NL").format(n);
 }
 
-export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProps) {
-  const searchParams = useSearchParams();
-  const stadParam = searchParams.get("stad") ?? "";
+function readSearchQuery(params: URLSearchParams): string {
+  return params.get("q") ?? params.get("stad") ?? "";
+}
 
-  const [query, setQuery] = useState("");
+export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProps) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const urlQuery = readSearchQuery(searchParams);
+
+  const [query, setQuery] = useState(urlQuery);
+  const urlSyncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    if (stadParam && !query) {
-      setQuery(stadParam);
+    setQuery(urlQuery);
+  }, [urlQuery]);
+
+  useEffect(() => {
+    return () => {
+      if (urlSyncTimer.current) clearTimeout(urlSyncTimer.current);
+    };
+  }, []);
+
+  const syncUrl = useCallback(
+    (next: string) => {
+      const trimmed = next.trim();
+      const params = new URLSearchParams(searchParams.toString());
+      params.delete("stad");
+      if (trimmed) {
+        params.set("q", trimmed);
+      } else {
+        params.delete("q");
+      }
+      const qs = params.toString();
+      const nextUrl = qs ? `${pathname}?${qs}` : pathname;
+      const currentQs = searchParams.toString();
+      const currentUrl = currentQs ? `${pathname}?${currentQs}` : pathname;
+      if (nextUrl === currentUrl) return;
+      router.replace(nextUrl, { scroll: false });
+    },
+    [pathname, router, searchParams],
+  );
+
+  const onQueryChange = (value: string, immediate = false) => {
+    setQuery(value);
+    if (urlSyncTimer.current) clearTimeout(urlSyncTimer.current);
+    if (immediate) {
+      syncUrl(value);
+      return;
     }
-  }, [stadParam, query]);
+    urlSyncTimer.current = setTimeout(() => syncUrl(value), 280);
+  };
 
   const normalized = normalizeQuery(query);
 
@@ -163,7 +204,7 @@ export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProp
             type="search"
             enterKeyHint="search"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => onQueryChange(e.target.value)}
             placeholder="Dienst, stad of regio…"
             className="w-full rounded-2xl border border-slate-200 bg-white py-3.5 pl-12 pr-4 text-base leading-normal text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-[#FF5722]/50 focus:ring-2 focus:ring-[#FF5722]/20 [&::-webkit-search-cancel-button]:hidden"
             autoComplete="off"
@@ -177,7 +218,7 @@ export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProp
               <button
                 key={chip.value}
                 type="button"
-                onClick={() => setQuery(active ? "" : chip.value)}
+                onClick={() => onQueryChange(active ? "" : chip.value, true)}
                 className={`rounded-full border px-3 py-1.5 text-xs font-bold tracking-tight transition ${
                   active
                     ? "border-[#FF5722] bg-[#FF5722] text-white"

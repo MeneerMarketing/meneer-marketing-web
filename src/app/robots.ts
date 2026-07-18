@@ -26,6 +26,16 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: [...ROBOTS_DISALLOW_PATHS],
       },
+      {
+        userAgent: "ClaudeBot",
+        allow: ["/", "/llms.txt", "/kennisbank", "/zoeken", "/diensten", "/over"],
+        disallow: [...ROBOTS_DISALLOW_PATHS],
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: ["/", "/llms.txt", "/kennisbank", "/zoeken", "/diensten", "/over"],
+        disallow: [...ROBOTS_DISALLOW_PATHS],
+      },
     ],
     sitemap: `${siteOrigin}/sitemap.xml`,
     host: siteOrigin,
