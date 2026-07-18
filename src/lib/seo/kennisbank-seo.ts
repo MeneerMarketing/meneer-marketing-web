@@ -73,6 +73,8 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
     "Conversies verdwijnen, Smart Bidding raakt blind. Je leert: wat Consent Mode v2 doet en hoe je tracking GDPR-proof fixt.",
   "ai-webdesign-allemaal-hetzelfde":
     "Paarse gradients, dezelfde cards, dezelfde UI. Je leert: waarom AI-webdesign zo herkenbaar is en wanneer custom build wél loont.",
+  "chatgpt-huiskamer-claude-code-2026":
+    "ChatGPT beantwoordt het leven, Claude schrijft de code. Je leert: wat die split in 2026 betekent voor merk, site en marketing.",
 };
 
 export function getKennisbankMetaDescription(
