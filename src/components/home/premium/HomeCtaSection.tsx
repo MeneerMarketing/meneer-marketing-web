@@ -73,35 +73,14 @@ export function HomeCtaSection() {
           </p>
 
           <Link
-
             href={siteCtas.startIntake.href}
-
-            className="group relative mt-8 inline-flex items-center gap-2 overflow-hidden rounded-full bg-[#FF5722] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#FF5722]/30 transition hover:shadow-[#FF5722]/50"
-
+            className="group mt-8 inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#FF5722]/30 transition duration-300 ease-out will-change-transform hover:-translate-y-1 hover:scale-[1.03] hover:shadow-xl hover:shadow-[#FF5722]/40"
           >
-
-            <span
-
-              aria-hidden
-
-              className="pointer-events-none absolute inset-0 origin-bottom translate-y-full bg-white transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] group-hover:translate-y-0"
-
-            />
-
-            <span className="relative z-10 transition-colors duration-300 group-hover:text-slate-900">
-
-              {HOME_CTA.buttonLabel}
-
-            </span>
-
+            <span>{HOME_CTA.buttonLabel}</span>
             <ArrowUpRight
-
-              className="relative z-10 size-5 transition-colors duration-300 group-hover:text-slate-900"
-
+              className="size-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               aria-hidden
-
             />
-
           </Link>
 
           <p className="mt-4 text-xs text-slate-500">
