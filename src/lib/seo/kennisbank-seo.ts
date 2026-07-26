@@ -75,6 +75,8 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
     "Paarse gradients, dezelfde cards, dezelfde UI. Je leert: waarom AI-webdesign zo herkenbaar is en wanneer custom build wél loont.",
   "chatgpt-huiskamer-claude-code-2026":
     "ChatGPT beantwoordt het leven, Claude schrijft de code. Je leert: wat die split in 2026 betekent voor merk, site en marketing.",
+  "ai-max-google-ads-search-2026":
+    "AI Max klinkt als cheatcode. Je leert: Final URL Expansion, wanneer je aanzet, en waarom Google je site als menu gebruikt.",
 };
 
 export function getKennisbankMetaDescription(

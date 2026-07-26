@@ -29,8 +29,10 @@ import { GOOGLE_AI_OVERVIEWS_CLICKS_2026 } from "@/data/kennisbank/articles/goog
 import { CONSENT_MODE_GOOGLE_ADS_2026 } from "@/data/kennisbank/articles/consent-mode-google-ads-2026";
 import { AI_WEBDESIGN_ALLEMAAL_HETZELFDE } from "@/data/kennisbank/articles/ai-webdesign-allemaal-hetzelfde";
 import { CHATGPT_HUISKAMER_CLAUDE_CODE_2026 } from "@/data/kennisbank/articles/chatgpt-huiskamer-claude-code-2026";
+import { AI_MAX_GOOGLE_ADS_SEARCH_2026 } from "@/data/kennisbank/articles/ai-max-google-ads-search-2026";
 
 export const kennisbankArticles: KennisbankArticle[] = [
+  AI_MAX_GOOGLE_ADS_SEARCH_2026,
   CHATGPT_HUISKAMER_CLAUDE_CODE_2026,
   AI_WEBDESIGN_ALLEMAAL_HETZELFDE,
   CHATGPT_MODELLEN_MARKETEER_2026,
