@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import FigmaWhatsAppLink from "@/components/figma/FigmaWhatsAppLink";
 import DibaLogo from "@/components/ui/DibaLogo";
+import { ArrowUpRight } from "@/components/ui/Icon";
 import {
   FIGMA_DESKTOP_NAV,
   FIGMA_MOBILE_NAV,
@@ -71,16 +72,17 @@ export default function FigmaSiteHeaderBlock({
 
   return (
     <header className="relative z-30">
-      <div className="flex w-full items-center justify-between bg-[#d8efc8] px-5 py-2.5 text-[9px] font-medium uppercase tracking-[.12em] text-[#285f3a] sm:px-9 lg:px-[7.5vw]">
+      <div className="diba-label flex w-full items-center justify-between bg-[var(--on-dark-btn)] px-5 py-2.5 text-[var(--g-800)] sm:px-9 lg:px-[7.5vw]">
         <span className="hidden sm:block">Eerlijke huidzorg begint met goed kijken.</span>
         <span className="sm:hidden">Trust the green touch.</span>
         <span className="flex items-center gap-3">
           <span className="hidden md:block">Diba Clinics · Hillegersberg</span>
           <Link
             href="/intake"
-            className="rounded-full bg-[#286943] px-3 py-1.5 text-white transition hover:bg-[#174e31]"
+            className="inline-flex items-center gap-1.5 rounded-[var(--r-pill)] bg-[var(--g-700)] px-3 py-1.5 text-white transition hover:bg-[var(--g-800)]"
           >
-            Start hier ↗
+            Start hier
+            <ArrowUpRight size={12} />
           </Link>
         </span>
       </div>
@@ -89,22 +91,22 @@ export default function FigmaSiteHeaderBlock({
         <nav className="flex items-center justify-between py-3.5 sm:py-4" aria-label="Hoofdnavigatie">
           <DibaLogo href={onHome ? "#top" : "/"} variant="dark" priority />
 
-          <div className="hidden items-center gap-7 text-[10px] font-medium uppercase tracking-[.13em] text-[#4f7059] lg:flex">
+          <div className="hidden items-center gap-7 text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-body)] lg:flex">
             {FIGMA_DESKTOP_NAV.map((item) => (
               <NavLink
                 key={item.label}
                 item={item}
                 onHome={onHome}
-                className="transition hover:text-[#286943]"
+                className="transition hover:text-[var(--g-700)]"
               />
             ))}
             <FigmaWhatsAppLink
               href={whatsappHref}
-              className="grid h-10 w-10 place-items-center rounded-full border border-[#b8d0b9] text-[#286943] transition hover:border-[#286943] hover:bg-[#eff8ea]"
+              className="grid h-10 w-10 place-items-center rounded-full border border-[var(--g-300)] text-[var(--g-700)] transition hover:border-[var(--g-700)] hover:bg-[var(--g-050)]"
             />
             <Link
               href="/intake"
-              className="rounded-full bg-[#286943] px-5 py-3 text-white transition hover:bg-[#174e31]"
+              className="rounded-full bg-[var(--g-700)] px-5 py-3 text-white transition hover:bg-[var(--g-800)]"
             >
               Afspraak maken
             </Link>
@@ -113,21 +115,21 @@ export default function FigmaSiteHeaderBlock({
           <div className="flex items-center gap-2 lg:hidden">
             <FigmaWhatsAppLink
               href={whatsappHref}
-              className="grid h-10 w-10 place-items-center rounded-full border border-[#b8d0b9] text-[#286943]"
+              className="grid h-10 w-10 place-items-center rounded-full border border-[var(--g-300)] text-[var(--g-700)]"
             />
             <button
               type="button"
               onClick={() => setMenuOpen(!menuOpen)}
-              className="grid h-10 w-10 place-items-center rounded-full border border-[#b8d0b9] lg:hidden"
+              className="grid h-10 w-10 place-items-center rounded-full border border-[var(--g-300)] lg:hidden"
               aria-expanded={menuOpen}
               aria-label="Menu openen"
             >
               <span className="flex flex-col gap-1">
                 <span
-                  className={`h-px w-4 bg-[#1e5536] transition ${menuOpen ? "translate-y-1 rotate-45" : ""}`}
+                  className={`h-px w-4 bg-[var(--g-800)] transition ${menuOpen ? "translate-y-1 rotate-45" : ""}`}
                 />
                 <span
-                  className={`h-px w-4 bg-[#1e5536] transition ${menuOpen ? "-rotate-45" : ""}`}
+                  className={`h-px w-4 bg-[var(--g-800)] transition ${menuOpen ? "-rotate-45" : ""}`}
                 />
               </span>
             </button>
@@ -135,13 +137,13 @@ export default function FigmaSiteHeaderBlock({
         </nav>
 
         {menuOpen ? (
-          <div className="absolute left-5 right-5 top-[84px] z-40 border border-[#dce8d9] bg-white p-5 shadow-xl lg:hidden">
+          <div className="absolute left-5 right-5 top-[84px] z-40 border border-[var(--g-100)] bg-white p-5 shadow-xl lg:hidden">
             {FIGMA_MOBILE_NAV.map((item) => (
               <NavLink
                 key={item.label}
                 item={item}
                 onHome={onHome}
-                className="block border-b border-[#edf2eb] py-4 text-xs uppercase tracking-[.13em] last:border-0"
+                className="block border-b border-[var(--g-100)] py-4 text-xs uppercase tracking-[.13em] last:border-0"
                 onNavigate={closeMenu}
               />
             ))}

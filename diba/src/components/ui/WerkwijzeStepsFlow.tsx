@@ -26,28 +26,28 @@ function StepNode({
       type="button"
       aria-pressed={active}
       onClick={onSelect}
-      className="group relative z-10 flex shrink-0 flex-col items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6bad6a]"
+      className="group relative z-10 flex shrink-0 flex-col items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--g-400)]"
     >
       <span className="relative flex h-11 w-11 items-center justify-center">
         {active ? (
           <>
-            <span className="werkwijze-glow absolute inset-0 rounded-full bg-[#8ecf7a]/35" />
-            <span className="werkwijze-glow-ring absolute inset-1 rounded-full border border-[#b8e39d]/60" />
+            <span className="werkwijze-glow absolute inset-0 rounded-full bg-[var(--g-400)]/35" />
+            <span className="werkwijze-glow-ring absolute inset-1 rounded-full border border-[var(--on-dark-accent)]/60" />
           </>
         ) : (
-          <span className="absolute inset-2 rounded-full bg-[#eef7e9] transition group-hover:bg-[#dcebd8]" />
+          <span className="absolute inset-2 rounded-full bg-[var(--g-050)] transition group-hover:bg-[var(--g-100)]" />
         )}
         <span
           className={`relative rounded-full transition-all duration-500 ${
             active
-              ? "h-3.5 w-3.5 bg-[#6bad6a] shadow-[0_0_14px_rgba(107,173,106,.75)]"
-              : "h-2.5 w-2.5 bg-[#b8d4b0] group-hover:h-3 group-hover:w-3 group-hover:bg-[#6bad6a]"
+              ? "h-3.5 w-3.5 bg-[var(--g-400)] shadow-[0_0_14px_rgba(107,173,106,.75)]"
+              : "h-2.5 w-2.5 bg-[var(--g-300)] group-hover:h-3 group-hover:w-3 group-hover:bg-[var(--g-400)]"
           }`}
         />
       </span>
       <span
         className={`mt-2 text-[8px] font-semibold uppercase tracking-[.14em] transition-colors duration-300 ${
-          active ? "text-[#4f9a56]" : "text-[#9bb89a] group-hover:text-[#6bad6a]"
+          active ? "text-[var(--g-500)]" : "text-[var(--g-300)] group-hover:text-[var(--g-400)]"
         }`}
       >
         {STEP_TAGS[index] ?? `Stap ${index + 1}`}
@@ -89,12 +89,12 @@ export default function WerkwijzeStepsFlow({
 
   const cardActive =
     variant === "figma"
-      ? "border-[#b8d4b0] bg-white shadow-[0_12px_40px_rgba(40,105,67,.1)] -translate-y-0.5"
+      ? "border-[var(--g-300)] bg-white shadow-[0_12px_40px_rgba(40,105,67,.1)] -translate-y-0.5"
       : "border-[var(--diba-green-300)] bg-[var(--white)] shadow-[0_12px_40px_rgba(40,105,67,.1)]";
 
   const cardIdle =
     variant === "figma"
-      ? "border-[#e4efe0] bg-[#f3f8f0] hover:border-[#d0e4c8] hover:bg-[#eef6ea]"
+      ? "border-[var(--g-100)] bg-[var(--g-025)] hover:border-[var(--g-200)] hover:bg-[var(--g-050)]"
       : "border-[var(--diba-green-200)]/50 bg-[var(--diba-cream-50)] hover:border-[var(--diba-green-200)] hover:bg-[var(--diba-cream-100)]";
 
   return (
@@ -110,14 +110,14 @@ export default function WerkwijzeStepsFlow({
       {/* Desktop: timeline + kaarten in één grid */}
       <div className="hidden sm:grid sm:grid-cols-3 sm:gap-4">
         <div className="relative col-span-3 h-[4.5rem]">
-          <div className="absolute inset-x-0 top-[22px] h-px bg-[#dce8d9]" aria-hidden />
+          <div className="absolute inset-x-0 top-[22px] h-px bg-[var(--g-100)]" aria-hidden />
           <div
-            className="absolute left-0 top-[22px] h-px origin-left bg-gradient-to-r from-[#6bad6a] via-[#8ecf7a] to-[#b8e39d] transition-[width] duration-700 ease-out"
+            className="absolute left-0 top-[22px] h-px origin-left bg-gradient-to-r from-[var(--g-400)] via-[var(--g-400)] to-[var(--on-dark-accent)] transition-[width] duration-700 ease-out"
             style={{ width: `${progressPct}%` }}
             aria-hidden
           />
           <div
-            className="werkwijze-pulse-travel absolute top-[18px] h-2 w-2 -translate-x-1/2 rounded-full bg-[#d8f0c8] shadow-[0_0_10px_rgba(184,227,157,.9)]"
+            className="werkwijze-pulse-travel absolute top-[18px] h-2 w-2 -translate-x-1/2 rounded-full bg-[var(--on-dark-btn)] shadow-[0_0_10px_rgba(184,227,157,.9)]"
             style={{ left: `${progressPct}%` }}
             aria-hidden
           />
@@ -150,9 +150,9 @@ export default function WerkwijzeStepsFlow({
       {/* Mobiel */}
       <div className="grid gap-3 sm:hidden">
         <div className="relative pl-14">
-          <div className="absolute bottom-6 left-[22px] top-6 w-px bg-[#dce8d9]">
+          <div className="absolute bottom-6 left-[22px] top-6 w-px bg-[var(--g-100)]">
             <div
-              className="w-full origin-top bg-gradient-to-b from-[#6bad6a] to-[#b8e39d] transition-[height] duration-700 ease-out"
+              className="w-full origin-top bg-gradient-to-b from-[var(--g-400)] to-[var(--on-dark-accent)] transition-[height] duration-700 ease-out"
               style={{ height: `${progressPct}%` }}
               aria-hidden
             />
@@ -197,27 +197,27 @@ function StepCard({
 }) {
   const titleClass =
     variant === "figma"
-      ? "text-2xl tracking-[-.05em] text-[#17372a]"
+      ? "text-2xl tracking-[-.05em] text-[var(--t-strong)]"
       : "diba-hp-step-title";
 
   const bodyClass =
     variant === "figma"
-      ? "mt-4 text-sm leading-6 text-[#627a68]"
+      ? "mt-4 text-sm leading-6 text-[var(--t-body)]"
       : "diba-hp-step-body mt-[var(--space-3)]";
 
   return (
     <button
       type="button"
       onClick={onSelect}
-      className={`${className} w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6bad6a] ${
+      className={`${className} w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-400)] ${
         active ? "cursor-default" : "cursor-pointer"
       }`}
       aria-pressed={active}
     >
-      <h3 className={`${titleClass} ${active ? "text-[#286943]" : "text-[#2d4a38]"}`}>
+      <h3 className={`${titleClass} ${active ? "text-[var(--g-700)]" : "text-[var(--t-strong)]"}`}>
         {step.title}
       </h3>
-      <p className={`${bodyClass} ${active ? "text-[#4f7059]" : ""}`}>{step.body}</p>
+      <p className={`${bodyClass} ${active ? "text-[var(--t-body)]" : ""}`}>{step.body}</p>
     </button>
   );
 }
