@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" fill="none" role="img" aria-label="Placeholder beeld traject testimonial">
+  <rect width="480" height="520" fill="#434F3A"/>
+  <ellipse cx="240" cy="200" rx="140" ry="120" fill="#738369" opacity="0.35"/>
+  <ellipse cx="200" cy="280" rx="180" ry="100" fill="#5F8F63" opacity="0.2"/>
+  <rect y="360" width="480" height="160" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="240" y1="360" x2="240" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E3628" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2E3628" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+</svg>

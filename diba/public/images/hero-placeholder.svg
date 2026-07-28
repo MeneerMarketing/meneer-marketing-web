@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Hero placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cdd8c8"/>
+      <stop offset="55%" stop-color="#8faa8f"/>
+      <stop offset="100%" stop-color="#5f8f63"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg)"/>
+  <ellipse cx="360" cy="340" rx="180" ry="220" fill="#e8efe4" opacity="0.35"/>
+  <path d="M120 780 Q360 620 600 780 L600 900 L120 900 Z" fill="#434f3a" opacity="0.25"/>
+</svg>

@@ -1,0 +1,791 @@
+@import "tailwindcss";
+
+/* ══ DIBA HUISSTIJL — de tokens (DIBA-RULES.md §4) ══
+   Eén groenschaal, verankerd op de Figma-homepage. Elke tekstkleur hieronder is
+   gemeten tegen het vlak waar hij op staat en haalt WCAG 2.2 AA. Hardcode nooit
+   een hex buiten dit blok. */
+:root {
+  /* ── Merkgroen: de schaal ── */
+  --g-900: #17372a; /* koppen en bodytekst op licht */
+  --g-800: #174e31; /* hover op primair */
+  --g-700: #286943; /* PRIMAIR — knop, link, donkere sectievlakken */
+  --g-600: #3f8850; /* mid accent, meetwaarden */
+  --g-500: #4c9855; /* icoongroen */
+  --g-400: #6eb46e; /* meterlijn, de punt op De Lijn */
+  --g-300: #95c592; /* sterke rand */
+  --g-200: #cbe5bf; /* beeldvlak achter portretten */
+  --g-100: #dce8d9; /* lijn en rand */
+  --g-050: #eef7e9; /* zacht sectievlak */
+  --g-025: #f2f7ef; /* sectietint */
+  --g-010: #fcfdfb; /* paginavlak */
+
+  /* ── Tekst op lichte vlakken (groengrijs, AA-gevalideerd) ── */
+  --t-strong: #17372a; /* 12.73 — koppen, bodytekst */
+  --t-body: #5d7565; /*  4.55 — lopende tekst, kaartteksten */
+  --t-muted: #5e7662; /*  4.50 — footerlinks, proof-labels */
+  --t-label: #4c7a52; /*  4.54 — eyebrow-labels boven koppen */
+
+  /* ── Tekst op donkergroen (--g-700) ── */
+  --on-dark: #ffffff; /* 6.58 — koppen */
+  --on-dark-body: #d2ead0; /* 5.14 — lopende tekst */
+  --on-dark-label: #bbe0ac; /* 4.50 — eyebrow-labels */
+  --on-dark-accent: #b8e39d; /* 4.55 — het accentwoord ("Wij meten.") */
+  --on-dark-btn: #d8f0c8; /*       — mintknop op donker */
+  --on-dark-btn-text: #245f3b; /* 6.20 — tekst in die mintknop */
+
+  /* ── Vorm ── */
+  --r-sm: 16px; /* metrictegels, kleine kaartjes */
+  --r-md: 24px; /* standaardkaart */
+  --r-lg: 32px; /* grote kaart en beeldvlak */
+  --r-xl: 40px; /* CTA-band */
+  --r-pill: 9999px; /* knoppen en chips */
+
+  /* ── Labelmaat: 11px is de ondergrens (was 9-10px, onleesbaar) ── */
+  --fs-label: 11px;
+  --ls-label: 0.14em;
+
+  /* ── Legacy: in gebruik door nog niet gemigreerde binnenpagina's ── */
+  /* Kleur */
+  --diba-green-900: #2e3628;
+  --diba-green-700: #434f3a;
+  --diba-green-500: #738369;
+  --diba-green-200: #cdd8c8;
+  --diba-cream-100: #e8efe4;
+  --diba-cream-50: #f6f8f4;
+  --diba-mint-bar: #e3efe0;
+  --diba-section-soft: #f1f4ef;
+  --diba-section-mint: #f4f7f2;
+  --diba-section-pale: #fbfdf9;
+  --diba-card-sage: #cde6ca;
+  --diba-card-olive: #5f8f63;
+  --diba-hero-bg: #f0f2ee;
+  --diba-hero-media-bg: #cbe5bf;
+  --diba-accent-green: #5f8f63;
+  --diba-faq-highlight: #7da882;
+  /* Figma homepage 2026 — los van oude inner-page tokens */
+  --figma-green-bright: #5f8f63;
+  --figma-label-warm: #9aa48c;
+  --figma-hero-bg: #ffffff;
+  --figma-mint-bar: #e3efe0;
+  --ink-900: #262622;
+  --ink-600: #5c5c54;
+  --ink-300: #b9b9b0;
+  --white: #ffffff;
+  --success: #4a7c59;
+  --warn: #b0813c;
+  --error: #9c4038;
+
+  /* Type — gevuld door next/font/local in layout.tsx */
+  --font-display: var(--font-archivo), Helvetica, sans-serif;
+  --font-accent: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+
+  /* Ruimte (4px-basis) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-28: 112px;
+  --space-32: 128px;
+
+  /* Vorm & diepte */
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-banner: 40px;
+  --shadow-float: 0 4px 24px rgba(46, 54, 40, 0.1);
+  --border-line: 1px solid var(--diba-green-200);
+
+  /* Beweging */
+  --ease-diba: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --dur-micro: 200ms;
+  --dur-page: 350ms;
+
+  /* Layout */
+  --diba-container-max: 1440px;
+  --diba-read-max: 720px;
+  --diba-section-y: var(--space-16);
+  --diba-grid-columns: 4;
+  --diba-grid-gap: var(--space-4);
+
+  /* Figma homepage — klinische schaal (ruim, niet ingezoomd) */
+  --hp-container-px: 20px;
+  --hp-section-y: 72px;
+  --hp-header-gap: 72px;
+  --hp-card-gap: 16px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --diba-section-y: var(--space-24);
+    --diba-grid-gap: var(--space-6);
+    --hp-container-px: 48px;
+    --hp-section-y: 96px;
+    --hp-header-gap: 80px;
+    --hp-card-gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --diba-section-y: var(--space-32);
+    --diba-grid-columns: 12;
+    --diba-grid-gap: var(--space-8);
+    --hp-container-px: 72px;
+    --hp-section-y: 112px;
+    --hp-header-gap: 88px;
+    --hp-card-gap: 20px;
+  }
+}
+
+@theme inline {
+  /* Huisstijl — gebruik deze. bg-g-700, text-t-label, rounded-lg, ... */
+  --color-g-900: var(--g-900);
+  --color-g-800: var(--g-800);
+  --color-g-700: var(--g-700);
+  --color-g-600: var(--g-600);
+  --color-g-500: var(--g-500);
+  --color-g-400: var(--g-400);
+  --color-g-300: var(--g-300);
+  --color-g-200: var(--g-200);
+  --color-g-100: var(--g-100);
+  --color-g-050: var(--g-050);
+  --color-g-025: var(--g-025);
+  --color-g-010: var(--g-010);
+  --color-t-strong: var(--t-strong);
+  --color-t-body: var(--t-body);
+  --color-t-muted: var(--t-muted);
+  --color-t-label: var(--t-label);
+  --color-on-dark: var(--on-dark);
+  --color-on-dark-body: var(--on-dark-body);
+  --color-on-dark-label: var(--on-dark-label);
+  --color-on-dark-accent: var(--on-dark-accent);
+  --color-on-dark-btn: var(--on-dark-btn);
+  --color-on-dark-btn-text: var(--on-dark-btn-text);
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+  --radius-xl: var(--r-xl);
+
+  /* Legacy — binnenpagina's die nog niet gemigreerd zijn */
+  --color-diba-green-900: var(--diba-green-900);
+  --color-diba-green-700: var(--diba-green-700);
+  --color-diba-green-500: var(--diba-green-500);
+  --color-diba-green-200: var(--diba-green-200);
+  --color-diba-cream-100: var(--diba-cream-100);
+  --color-diba-cream-50: var(--diba-cream-50);
+  --color-ink-900: var(--ink-900);
+  --color-ink-600: var(--ink-600);
+  --color-ink-300: var(--ink-300);
+  --font-sans: var(--font-body);
+}
+
+/* ── Basis reset & body ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  view-transition-name: root;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--diba-cream-50);
+  color: var(--ink-900);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body:has(.figma-home) {
+  background: var(--g-010);
+  color: var(--t-strong);
+}
+
+/* Figma-huisstijl — DM Sans, zelf-gehost via next/font (DIBA-RULES §4: nooit via CDN) */
+.figma-home {
+  font-family: var(--font-figma-home), ui-sans-serif, system-ui, sans-serif;
+  font-optical-sizing: auto;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* ── Layout primitives (DIBA-RULES.md §7) ── */
+
+.diba-container {
+  width: 100%;
+  max-width: var(--diba-container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+@media (min-width: 380px) {
+  .diba-container {
+    padding-inline: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .diba-container {
+    padding-inline: var(--space-8);
+  }
+}
+
+.diba-read {
+  max-width: var(--diba-read-max);
+}
+
+.diba-section {
+  padding-block: var(--diba-section-y);
+}
+
+.diba-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--diba-grid-columns), minmax(0, 1fr));
+  gap: var(--diba-grid-gap);
+}
+
+/* Typografie-schaal (mobiel → desktop, §6) */
+.diba-h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-900);
+}
+
+@media (min-width: 1024px) {
+  .diba-h1 {
+    font-size: 52px;
+  }
+}
+
+.diba-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-900);
+}
+
+@media (min-width: 1024px) {
+  .diba-h2 {
+    font-size: 36px;
+  }
+}
+
+.diba-body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-600);
+  max-width: 68ch;
+}
+
+@media (min-width: 1024px) {
+  .diba-body {
+    font-size: 17px;
+  }
+}
+
+/* Figma homepage — typografie (Archivo bold hero, Inter body, géén Fraunces op hero) */
+.diba-hp-hero-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-hero-title {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diba-hp-hero-title {
+    font-size: 48px;
+  }
+}
+
+.diba-hp-hero-accent {
+  color: var(--figma-green-bright);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.diba-hp-trust {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--diba-green-700);
+}
+
+.diba-hp-label-warm {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--figma-label-warm);
+}
+
+.diba-hp-pill-dark {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9999px;
+  background: var(--diba-green-900);
+  padding-inline: 22px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  transition: background var(--dur-micro) var(--ease-diba);
+}
+
+.diba-hp-pill-dark:hover {
+  background: var(--diba-green-700);
+}
+
+.diba-hp-pill-mint {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 9999px;
+  background: var(--diba-mint-bar);
+  padding-inline: 20px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--diba-green-900);
+  transition: background var(--dur-micro) var(--ease-diba);
+}
+
+.diba-hp-pill-mint:hover {
+  background: var(--diba-cream-100);
+}
+
+.diba-hp-stat-value {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-stat-value {
+    font-size: 34px;
+  }
+}
+
+.diba-hp-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--diba-green-500);
+}
+
+.diba-hp-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diba-hp-title {
+    font-size: 36px;
+  }
+}
+
+.diba-hp-title-lg {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-title-lg {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diba-hp-title-lg {
+    font-size: 30px;
+  }
+}
+
+.diba-hp-title-serif {
+  font-family: var(--font-accent);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-title-serif {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diba-hp-title-serif {
+    font-size: 32px;
+  }
+}
+
+.diba-hp-card-title {
+  font-family: var(--font-accent);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-card-title {
+    font-size: 18px;
+  }
+}
+
+.diba-hp-intent-title {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-intent-title {
+    font-size: 16px;
+  }
+}
+
+.diba-hp-quote {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-quote {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diba-hp-quote {
+    font-size: 22px;
+  }
+}
+
+.diba-hp-faq-q {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--diba-green-900);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-faq-q {
+    font-size: 16px;
+  }
+}
+
+.diba-hp-kliniek-quote {
+  font-family: var(--font-accent);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-kliniek-quote {
+    font-size: 20px;
+  }
+}
+
+.diba-hp-card-body {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-600);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-card-body {
+    font-size: 14px;
+  }
+}
+
+.diba-hp-lead {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink-600);
+}
+
+.diba-hp-body {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink-600);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-body {
+    font-size: 14px;
+  }
+}
+
+.diba-hp-step-title {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--diba-green-900);
+}
+
+.diba-hp-step-body {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink-600);
+}
+
+@media (min-width: 768px) {
+  .diba-hp-step-body {
+    font-size: 14px;
+  }
+}
+
+.diba-hp-dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: var(--diba-accent-green);
+}
+
+.diba-hp-ghost-btn {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  border: 1px solid var(--diba-green-200);
+  padding-inline: 20px;
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--diba-green-900);
+  transition: border-color var(--dur-micro) var(--ease-diba), color var(--dur-micro) var(--ease-diba);
+}
+
+.diba-hp-ghost-btn:hover {
+  border-color: var(--diba-green-500);
+  color: var(--diba-green-700);
+}
+
+/* ── Huisstijl-primitives ──
+   Het eyebrow-label stond 30x los in de code, op 9-11px met wisselende tracking
+   en een groen dat AA niet haalde. Vanaf nu één klasse. */
+.diba-label {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-label);
+  color: var(--t-label);
+}
+
+.diba-label-on-dark {
+  color: var(--on-dark-label);
+}
+
+/* Focus (WCAG §13) */
+:focus-visible {
+  outline: 2px solid var(--diba-green-700);
+  outline-offset: 2px;
+}
+
+/* BeforeAfterSlider: native range thumb verbergen (Safari iOS, BATCH2-README §5) */
+input[type="range"].appearance-none::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+/* Scroll-reveal (sprint 1, CSS/native, geen dependencies)
+   Standaard zichtbaar; animatie alleen met JS (html.js-reveal). */
+[data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+html.js-reveal [data-reveal]:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity var(--dur-page) var(--ease-diba),
+    transform var(--dur-page) var(--ease-diba);
+}
+
+html.js-reveal [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js-reveal [data-reveal]:not(.is-visible) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.eve-scan-head-glow {
+  filter: drop-shadow(0 0 8px rgba(94, 174, 103, 0.95));
+}
+
+@keyframes eve-scan-hub-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.06);
+  }
+}
+
+.eve-scan-hub-ring {
+  animation: eve-scan-hub-pulse 2.8s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eve-scan-hub-ring {
+    animation: none;
+  }
+
+  .eve-scan-head-glow {
+    filter: drop-shadow(0 0 4px rgba(94, 174, 103, 0.6));
+  }
+}
+
+/* Werkwijze stappen-flow */
+@keyframes werkwijze-glow-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.9;
+  }
+}
+
+@keyframes werkwijze-pulse-travel {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translate(-50%, 0) scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1.15);
+  }
+}
+
+.werkwijze-glow {
+  animation: werkwijze-glow-pulse 2.4s ease-in-out infinite;
+}
+
+.werkwijze-glow-ring {
+  animation: werkwijze-glow-pulse 2.4s ease-in-out infinite 0.15s;
+}
+
+.werkwijze-pulse-travel {
+  animation: werkwijze-pulse-travel 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .werkwijze-glow,
+  .werkwijze-glow-ring,
+  .werkwijze-pulse-travel {
+    animation: none;
+  }
+}

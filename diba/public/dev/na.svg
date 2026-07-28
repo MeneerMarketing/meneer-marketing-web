@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" role="img" aria-label="[BEELD-NODIG: na-behandeling]">
+  <rect width="720" height="900" fill="#e8efe4"/>
+  <ellipse cx="360" cy="420" rx="180" ry="220" fill="#cdd8c8" opacity="0.7"/>
+  <text x="360" y="820" text-anchor="middle" fill="#5c5c54" font-family="system-ui,sans-serif" font-size="13">[BEELD-NODIG: na]</text>
+</svg>

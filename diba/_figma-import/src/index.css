@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('https://static.figma.com/font/DMSans_opsz_wght__1') format('woff2'); }
+@font-face { font-family: 'DM Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('https://static.figma.com/font/DMMono-Regular_1') format('woff2'); }
+
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+::-webkit-scrollbar { width: 0; height: 0; }
