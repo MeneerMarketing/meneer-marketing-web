@@ -13,7 +13,12 @@ import { ArrowUpRight } from "@/components/ui/Icon";
  * de aanroeper bepaald: "Start je intake (4 min)", nooit "Verstuur" of "Ontdek".
  */
 
-type Variant = "primair" | "primair-op-donker" | "secundair" | "ghost";
+type Variant =
+  | "primair"
+  | "primair-op-donker"
+  | "secundair"
+  | "secundair-op-donker"
+  | "ghost";
 
 const base =
   "inline-flex h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] px-6 " +
@@ -33,6 +38,12 @@ const variants: Record<Variant, string> = {
   secundair:
     "border border-[var(--g-300)] text-[var(--g-700)] hover:border-[var(--g-700)] " +
     "focus-visible:outline-[var(--g-700)]",
+  // Op een --g-700-vlak zijn 'secundair' en 'ghost' onleesbaar: die rekenen op donkere
+  // tekst. Deze variant vult dat gat, zodat een donkere sectie ook een tweede keuze
+  // kan tonen zonder een tweede primaire knop (§2: één primair per schermdeel).
+  "secundair-op-donker":
+    "border border-white/45 text-white hover:border-white hover:bg-white/10 " +
+    "focus-visible:outline-[var(--on-dark-btn)]",
   ghost:
     "px-2 text-[var(--g-700)] underline decoration-[var(--g-300)] underline-offset-4 " +
     "hover:decoration-[var(--g-700)] focus-visible:outline-[var(--g-700)]",

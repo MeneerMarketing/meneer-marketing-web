@@ -719,6 +719,26 @@ body:has(.figma-home) {
   .diba-label-on-dark {
     color: var(--on-dark-label);
   }
+
+  /* De sweep van de mini-scan: één rondgang per 1,5s, zolang de scan loopt. */
+  .diba-scan-sweep {
+    animation: diba-sweep 1.5s linear infinite;
+  }
+}
+
+@keyframes diba-sweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diba-scan-sweep {
+    animation: none;
+  }
 }
 
 /* Focus (WCAG §13) */

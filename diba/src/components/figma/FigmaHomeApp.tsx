@@ -11,7 +11,7 @@ import DibaIcon from "@/components/ui/DibaIcon";
 import { ArrowUpRight, Close, PlusMinus, Pulse, Sparkle } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
 import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
-import HuidscanVisualShell from "@/components/ui/HuidscanVisualShell";
+import MiniHuidscan from "@/components/ui/MiniHuidscan";
 import WerkwijzeStepsFlow from "@/components/ui/WerkwijzeStepsFlow";
 import { FIGMA_HOME_CLINIC, FIGMA_TRAJECT_TESTIMONIAL } from "@/data/figma-home-images";
 import { HOME_FAQ_ITEMS } from "@/data/home-faq";
@@ -174,7 +174,9 @@ export default function FigmaHomeApp() {
               jouw huid nodig heeft en volgen we jouw voortgang in beeld.
             </p>
             <div className="mt-9 flex w-fit flex-col items-start gap-4">
-              <Button variant="primair-op-donker" onClick={() => setScanOpen(true)}>
+              {/* De mini-scan in de kaart hiernaast is de primaire actie van deze
+                  sectie. Deze knop is de uitleg-route en blijft dus secundair. */}
+              <Button variant="secundair-op-donker" onClick={() => setScanOpen(true)}>
                 Hoe werkt de huidscan?
               </Button>
               <Link
@@ -186,7 +188,7 @@ export default function FigmaHomeApp() {
               </Link>
             </div>
           </div>
-          <HuidscanVisualShell className="mx-auto lg:ml-auto lg:mr-0" />
+          <MiniHuidscan />
         </div>
       </section>
 
