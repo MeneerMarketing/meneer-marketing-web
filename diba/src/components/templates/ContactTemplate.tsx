@@ -51,7 +51,7 @@ export default function ContactTemplate({
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
           {publicCopy(
-            "Diba Clinics in Hillegersberg, Rotterdam. Plan uw route of stel uw vraag via WhatsApp.",
+            "Diba Clinics in Hillegersberg, Rotterdam. Plan je route of stel je vraag via WhatsApp.",
           )}
         </p>
       </section>
@@ -117,7 +117,7 @@ export default function ContactTemplate({
               <FigmaHeading
                 as="h2"
                 size="section"
-                text="Plan uw *startmoment*"
+                text="Plan je *startmoment*"
                 className="text-white [&_span]:text-[#d8f0c8]"
               />
               <p className="mt-5 text-[15px] leading-7 text-[#d8f0c8]">
@@ -125,7 +125,7 @@ export default function ContactTemplate({
               </p>
               <div className="mt-8 flex flex-col gap-3">
                 <Link href="/intake" className={`${figmaBtnPrimary} bg-white text-[#286943] hover:bg-[#f2f7ef]`}>
-                  Start uw intake (4 min) ↗
+                  Start je intake (4 min) ↗
                 </Link>
                 <Link
                   href={whatsappHref}

@@ -2,10 +2,31 @@ import type { MetadataRoute } from "next";
 import { INSURERS } from "@/data/insurers";
 import { PILLARS } from "@/data/pillars";
 import { TREATMENTS } from "@/data/treatments";
+import { isPaginaAf } from "@/lib/pagina-af";
 import { DIBA_SITE_URL } from "@/lib/site";
 
-const STATIC_ROUTES = [
-  "",
+/**
+ * Alleen afgeronde pagina's worden bij Google aangemeld (DIBA-RULES §2 en §15).
+ *
+ * De sitemap meldde eerder alle ~66 routes aan, waarvan het grootste deel nog uit
+ * placeholders bestond. Voor een nieuw domein is dat de slechtst mogelijke start.
+ *
+ * Twee mechanismen, allebei nodig:
+ * - Datagedreven routes (huidproblemen, behandelingen, vergoedingen) worden
+ *   automatisch gefilterd op redactievlaggen. Die controleren zichzelf.
+ * - Statische routes staan hieronder met de hand, want hun inhoud zit verspreid over
+ *   template, data en pagina. Standaard staat een route dus NIET in de sitemap.
+ *   Zet hem er pas bij als de pagina echt af is; dat is een bewuste handeling.
+ */
+const STATISCH_GEREED: readonly string[] = [
+  "", // homepage
+];
+
+/**
+ * Routes die bestaan maar nog niet af zijn. Hier alleen genoteerd zodat zichtbaar is
+ * wat er nog wacht — ze komen niet in de sitemap en dragen `noindex`.
+ */
+const STATISCH_IN_AANBOUW: readonly string[] = [
   "/huidproblemen",
   "/behandelingen",
   "/team",
@@ -36,36 +57,50 @@ const STATIC_ROUTES = [
   "/doelgroep/bruiden",
 ];
 
+/** Voor gebruik in tests en in de dev-overzichten. */
+export const SITEMAP_STATUS = {
+  gereed: STATISCH_GEREED,
+  inAanbouw: STATISCH_IN_AANBOUW,
+} as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((path) => ({
+  const statisch: MetadataRoute.Sitemap = STATISCH_GEREED.map((path) => ({
     url: `${DIBA_SITE_URL}${path}`,
     lastModified: now,
     changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : path === "/huidproblemen" ? 0.9 : 0.7,
+    priority: path === "" ? 1 : 0.7,
   }));
 
-  const pillarEntries: MetadataRoute.Sitemap = PILLARS.map((p) => ({
+  const pillars: MetadataRoute.Sitemap = PILLARS.filter(isPaginaAf).map((p) => ({
     url: `${DIBA_SITE_URL}/huidproblemen/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
-  const treatmentEntries: MetadataRoute.Sitemap = TREATMENTS.map((t) => ({
+  const behandelingen: MetadataRoute.Sitemap = TREATMENTS.filter(isPaginaAf).map((t) => ({
     url: `${DIBA_SITE_URL}/behandelingen/${t.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.75,
   }));
 
-  const insurerEntries: MetadataRoute.Sitemap = INSURERS.map((i) => ({
-    url: `${DIBA_SITE_URL}/vergoedingen/${i.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
+  // Vergoedingen staan bewust op de handrem. De automatische check keek ze door,
+  // want een record `{slug, name}` bevat geen redactievlaggen — maar de pagina's
+  // renderden 37 woorden met lege kopjes ("Wat vergoed wordt" zonder inhoud).
+  // Zet dit op true zodra insurers.ts per verzekeraar echte tekst bevat.
+  const VERGOEDINGEN_GEREED = false;
 
-  return [...staticEntries, ...pillarEntries, ...treatmentEntries, ...insurerEntries];
+  const vergoedingen: MetadataRoute.Sitemap = VERGOEDINGEN_GEREED
+    ? INSURERS.filter(isPaginaAf).map((i) => ({
+        url: `${DIBA_SITE_URL}/vergoedingen/${i.slug}`,
+        lastModified: now,
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      }))
+    : [];
+
+  return [...statisch, ...pillars, ...behandelingen, ...vergoedingen];
 }

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import ContentPageTemplate from "@/components/templates/ContentPageTemplate";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "GentleMax Pro",
-  description: "[COPY-NODIG]",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function GentleMaxProPage() {
@@ -23,11 +24,11 @@ export default function GentleMaxProPage() {
           kop: "Voor *laserontharing*",
           alineas: [
             "[COPY-NODIG]",
-            "Bereken uw prijs via de configurator.",
+            "Bereken je prijs via de configurator.",
           ],
         },
       ]}
-      primaireCta={{ label: "Bereken uw laserprijs", href: "/laserontharing/configurator" }}
+      primaireCta={{ label: "Bereken je laserprijs", href: "/laserontharing/configurator" }}
       {...PAGE_DEFAULTS}
     />
   );

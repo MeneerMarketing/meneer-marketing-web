@@ -79,7 +79,7 @@ export default function ReviewsTemplate({ proofItems }: ReviewsTemplateProps) {
         )}
         <div className="mt-10">
           <Link href="/intake" className={figmaBtnPrimary}>
-            Start uw intake (4 min) ↗
+            Start je intake (4 min) ↗
           </Link>
         </div>
       </section>

@@ -20,7 +20,7 @@ export default function StickyActionBar({
   whatsappHref,
   intakeHref,
   questionLabel = "Vraag stellen",
-  intakeLabel = "Start uw intake",
+  intakeLabel = "Start je intake",
 }: StickyActionBarProps) {
   const [visible, setVisible] = useState(false);
   const lastY = useRef(0);

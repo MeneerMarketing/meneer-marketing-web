@@ -113,7 +113,7 @@ export default function PillarTemplate({
             <p className={`mt-7 max-w-lg ${figmaBody}`}>{publicCopy(c.herkenning)}</p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link href="/intake" className={figmaBtnPrimary}>
-                Start uw intake (4 min) ↗
+                Start je intake (4 min) ↗
               </Link>
               <a
                 href={whatsappHref}
@@ -183,7 +183,7 @@ export default function PillarTemplate({
       </section>
 
       <section className={`${figmaInnerContainer} ${figmaSection}`} data-reveal>
-        <p className={figmaLabel}>Uw traject</p>
+        <p className={figmaLabel}>Je traject</p>
         <FigmaHeading
           as="h2"
           size="section"
@@ -221,7 +221,7 @@ export default function PillarTemplate({
               ) : null}
             </p>
           ) : (
-            <p className={`text-sm ${figmaBody}`}>Prijzen volgen na uw intake</p>
+            <p className={`text-sm ${figmaBody}`}>Prijzen volgen na je intake</p>
           )}
           {c.pad.losVanaf !== undefined ? (
             <p className={`text-sm ${figmaBody}`}>
@@ -239,7 +239,7 @@ export default function PillarTemplate({
           <div className="mx-auto max-w-[1800px]">
             <p className={figmaLabel}>Nazorg</p>
             <div className="mt-4 [&_h2]:text-3xl [&_h2]:font-medium [&_h2]:tracking-[-.06em] [&_h2]:text-[#17372a]">
-              <NazorgTijdlijn kop="Nazorg na uw *behandeling*" momenten={nazorg.momenten} />
+              <NazorgTijdlijn kop="Nazorg na je *behandeling*" momenten={nazorg.momenten} />
             </div>
             <p className={`mt-6 max-w-2xl ${figmaBody}`}>{publicCopy(nazorg.intro)}</p>
           </div>
@@ -288,7 +288,7 @@ export default function PillarTemplate({
           <FigmaHeading
             as="h2"
             size="card"
-            text="Wat *uw* verzekering vergoedt"
+            text="Wat *jouw* verzekering vergoedt"
             className="mt-4 !text-white [&_span]:!text-[#b8e39d]"
           />
           <p className="mt-4 max-w-2xl text-[15px] leading-7 text-[#d2ead0]">
@@ -298,7 +298,7 @@ export default function PillarTemplate({
             href="/vergoedingen"
             className="mt-8 inline-block rounded-full border border-white/40 px-5 py-3 text-[11px] font-medium uppercase tracking-[.13em] text-white transition hover:bg-white/10"
           >
-            Check uw vergoeding ↗
+            Check je vergoeding ↗
           </Link>
         </div>
       </section>

@@ -16,10 +16,12 @@ import {
 } from "@/lib/figma-inner-layout";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
 import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Huidproblemen",
   description: "Alle huidproblemen die Diba Clinics behandelt, eerlijk uitgelegd.",
+  ...NOG_IN_AANBOUW,
 };
 
 function pillarBySlug(slug: string) {
@@ -47,7 +49,7 @@ export default function HuidproblemenPage() {
         <FigmaHeading
           as="h1"
           size="hero"
-          text="Uw huid, *eerlijk* bekeken"
+          text="Jouw huid, *eerlijk* bekeken"
           className="mt-4 max-w-3xl"
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
@@ -57,7 +59,7 @@ export default function HuidproblemenPage() {
         </p>
         <div className="mt-9 flex flex-col items-start gap-4">
           <Link href="/intake" className={figmaBtnPrimary}>
-            Start uw intake (4 min) ↗
+            Start je intake (4 min) ↗
           </Link>
           <Link
             href="/doelgroep"

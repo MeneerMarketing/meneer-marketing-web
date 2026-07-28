@@ -15,10 +15,12 @@ import {
 } from "@/lib/figma-inner-layout";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
 import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Vergoedingen",
-  description: "Wat uw zorgverzekering vergoedt bij Diba Clinics.",
+  description: "Wat je zorgverzekering vergoedt bij Diba Clinics.",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function VergoedingenPage() {
@@ -42,7 +44,7 @@ export default function VergoedingenPage() {
         <FigmaHeading
           as="h1"
           size="hero"
-          text="Wat *uw* verzekering vergoedt"
+          text="Wat *jouw* verzekering vergoedt"
           className="mt-4 max-w-3xl"
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
@@ -70,14 +72,14 @@ export default function VergoedingenPage() {
         </ul>
         <p className={`mt-8 max-w-2xl ${figmaBody}`}>
           {publicCopy(
-            "Controleer uw polis of start de intake. Wij helpen u de juiste route te kiezen.",
+            "Controleer je polis of start de intake. Wij helpen je de juiste route te kiezen.",
           )}
         </p>
       </section>
 
       <section className={`${figmaInnerContainer} pb-24 pt-4`} data-reveal>
         <Link href="/intake" className={figmaBtnPrimary}>
-          Check uw vergoeding via intake ↗
+          Check je vergoeding via intake ↗
         </Link>
       </section>
     </main>

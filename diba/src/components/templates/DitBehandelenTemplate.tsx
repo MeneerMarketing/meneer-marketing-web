@@ -81,7 +81,7 @@ export default function DitBehandelenTemplate({
           </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <Link href="/intake" className={figmaBtnPrimary}>
-              Start uw intake (4 min) ↗
+              Start je intake (4 min) ↗
             </Link>
             <Link
               href={whatsappHref}
@@ -89,7 +89,7 @@ export default function DitBehandelenTemplate({
               rel="noopener noreferrer"
               className={figmaBtnMint}
             >
-              Stel uw vraag via WhatsApp ↗
+              Stel je vraag via WhatsApp ↗
             </Link>
             <Link
               href="/ons-verbond"

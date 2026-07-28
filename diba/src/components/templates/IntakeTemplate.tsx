@@ -82,8 +82,8 @@ export default function IntakeTemplate({ whatsappHref, bookingHref }: IntakeTemp
 
         {step === 1 ? (
           <div data-reveal>
-            <p className={figmaLabel}>Behandeling Nul · uw concern</p>
-            <FigmaHeading as="h2" size="section" text="Wat speelt er bij *uw* huid?" className="mt-4" />
+            <p className={figmaLabel}>Behandeling Nul · je concern</p>
+            <FigmaHeading as="h2" size="section" text="Wat speelt er bij *jouw* huid?" className="mt-4" />
             <p className={`mt-5 ${figmaBody}`}>
               Kies wat het dichtst in de buurt komt. U kunt het later aanpassen.
             </p>
@@ -131,7 +131,7 @@ export default function IntakeTemplate({ whatsappHref, bookingHref }: IntakeTemp
             <p className={figmaLabel}>Behandeling Nul · contact</p>
             <FigmaHeading as="h2" size="section" text="Waar mogen we u *bereiken*?" className="mt-4" />
             {concern ? (
-              <p className={`mt-4 ${figmaBody}`}>Uw keuze: {concern}</p>
+              <p className={`mt-4 ${figmaBody}`}>Je keuze: {concern}</p>
             ) : null}
             <div className="mt-6">
               <DeLijn length="full" dot={progressDot(3)} />
@@ -148,7 +148,7 @@ export default function IntakeTemplate({ whatsappHref, bookingHref }: IntakeTemp
                   if (emailError) setEmailError(undefined);
                 }}
                 placeholder="naam@voorbeeld.nl"
-                hint="Zodat we uw uitkomst kunnen sturen."
+                hint="Zodat we je uitkomst kunnen sturen."
                 error={emailError}
               />
               <div className="flex flex-col gap-3">
@@ -165,10 +165,10 @@ export default function IntakeTemplate({ whatsappHref, bookingHref }: IntakeTemp
 
         {step === 3 ? (
           <div data-reveal>
-            <FigmaHeading as="h2" size="section" text="Uw *uitkomst* komt eraan" />
+            <FigmaHeading as="h2" size="section" text="Je *uitkomst* komt eraan" />
             <p className={`mt-6 ${figmaBody}`}>
               Bedankt. De volledige intake met foto-upload en Salonized-koppeling volgt in fase 2.
-              Tot die tijd: lees meer over uw onderwerp of stel uw vraag via WhatsApp.
+              Tot die tijd: lees meer over je onderwerp of stel je vraag via WhatsApp.
             </p>
             <div className="mt-6">
               <DeLijn length="full" dot={100} />
@@ -181,7 +181,7 @@ export default function IntakeTemplate({ whatsappHref, bookingHref }: IntakeTemp
                   rel="noopener noreferrer"
                   className={figmaBtnPrimary}
                 >
-                  Plan uw startmoment ↗
+                  Plan je startmoment ↗
                 </Link>
               ) : null}
               {concern ? (
@@ -198,7 +198,7 @@ export default function IntakeTemplate({ whatsappHref, bookingHref }: IntakeTemp
                 rel="noopener noreferrer"
                 className="text-[14px] font-medium text-[#286943] underline-offset-4 hover:underline"
               >
-                Stel uw vraag via WhatsApp
+                Stel je vraag via WhatsApp
               </Link>
               <Link
                 href="/"

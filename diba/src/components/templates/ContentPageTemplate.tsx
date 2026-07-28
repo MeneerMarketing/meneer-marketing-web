@@ -100,7 +100,7 @@ export default function ContentPageTemplate({
             className={`mx-auto max-w-[1800px] ${figmaCardSoft} flex flex-col items-center gap-4 px-7 py-12 text-center sm:px-10`}
           >
             <p className="max-w-md text-[15px] leading-7 text-[#5f7765]">
-              Twijfelt u nog? Stel uw vraag via WhatsApp. Wij reageren persoonlijk.
+              Twijfelt u nog? Stel je vraag via WhatsApp. Wij reageren persoonlijk.
             </p>
             <a
               href={whatsappHref}

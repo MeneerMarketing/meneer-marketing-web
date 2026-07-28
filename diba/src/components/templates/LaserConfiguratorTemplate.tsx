@@ -68,11 +68,11 @@ export default function LaserConfiguratorTemplate({
         <FigmaHeading
           as="h1"
           size="hero"
-          text="Bereken uw *laserprijs*"
+          text="Bereken je *laserprijs*"
           className="mt-4 max-w-3xl"
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
-          Kies uw zones, zie direct uw prijsopbouw. GentleMax Pro, veilig voor elk huidtype
+          Kies je zones, zie direct je prijsopbouw. GentleMax Pro, veilig voor elk huidtype
           Fitzpatrick I tot VI.
         </p>
       </section>
@@ -121,7 +121,7 @@ export default function LaserConfiguratorTemplate({
 
             <div className="mt-14" data-reveal>
               <p className={figmaLabel}>Huidtype</p>
-              <FigmaHeading as="h2" size="section" text="Wat is *uw* huidtype?" className="mt-4" />
+              <FigmaHeading as="h2" size="section" text="Wat is *jouw* huidtype?" className="mt-4" />
               <p className={`mt-5 ${figmaBody}`}>
                 Fitzpatrick I tot VI, allemaal gelijkwaardig. Dit bepaalt de instellingen op de
                 GentleMax Pro.
@@ -157,7 +157,7 @@ export default function LaserConfiguratorTemplate({
 
           <aside className="lg:col-span-5 lg:sticky lg:top-8" data-reveal>
             <div className={`${figmaCardWhite} p-6 sm:p-8`}>
-              <p className={figmaLabel}>Uw prijsopbouw</p>
+              <p className={figmaLabel}>Je prijsopbouw</p>
               <p className="mt-2 text-4xl font-medium leading-none tracking-[-.04em] text-[#17372a] tabular-nums md:text-5xl">
                 {summary.formattedSubtotal}
               </p>
@@ -194,14 +194,14 @@ export default function LaserConfiguratorTemplate({
               <div className="mt-8 flex flex-col gap-3">
                 {canProceed ? (
                   <Link href="/intake" className={`${figmaBtnPrimary} text-center`}>
-                    Start uw intake ↗
+                    Start je intake ↗
                   </Link>
                 ) : (
                   <span
                     className={`${figmaBtnPrimary} pointer-events-none text-center opacity-40`}
                     aria-disabled="true"
                   >
-                    Start uw intake ↗
+                    Start je intake ↗
                   </span>
                 )}
                 <Link
@@ -221,7 +221,7 @@ export default function LaserConfiguratorTemplate({
       <StickyActionBar
         whatsappHref={whatsappHref}
         intakeHref="/intake"
-        intakeLabel="Start uw intake"
+        intakeLabel="Start je intake"
       />
     </main>
   );

@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import ContentPageTemplate from "@/components/templates/ContentPageTemplate";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Laserontharing",
-  description: "[COPY-NODIG]",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function LaserontharingPage() {
   return (
     <ContentPageTemplate
-      h1="Laserontharing, *uw* prijs vooraf"
-      intro="Kies uw zones, zie direct uw prijs en het aantal sessies. GentleMax Pro, veilig voor elk huidtype. [MEDISCHE-CHECK-ROJDA]"
+      h1="Laserontharing, *jouw* prijs vooraf"
+      intro="Kies je zones, zie direct je prijs en het aantal sessies. GentleMax Pro, veilig voor elk huidtype. [MEDISCHE-CHECK-ROJDA]"
       breadcrumbLabel="Laserontharing"
       breadcrumbPath="/laserontharing"
       secties={[
@@ -27,7 +28,7 @@ export default function LaserontharingPage() {
           ],
         },
       ]}
-      primaireCta={{ label: "Bereken uw laserprijs", href: "/laserontharing/configurator" }}
+      primaireCta={{ label: "Bereken je laserprijs", href: "/laserontharing/configurator" }}
       {...PAGE_DEFAULTS}
     />
   );

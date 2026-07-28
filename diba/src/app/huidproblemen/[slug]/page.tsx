@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PillarTemplate from "@/components/templates/PillarTemplate";
 import { PILLARS } from "@/data/pillars";
+import { publicCopy } from "@/lib/copy-flags";
+import { isPaginaAf, robotsVoor } from "@/lib/pagina-af";
 import { reviewsForPillar } from "@/lib/review-mining";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -22,9 +24,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const pillar = PILLARS.find((p) => p.slug === slug);
   if (!pillar) return {};
 
+  const af = isPaginaAf(pillar);
+
   return {
     title: pillar.titel.replace(/\*/g, ""),
-    description: "[COPY-NODIG]",
+    // Stond hier hardgecodeerd op "[COPY-NODIG]" — dat verscheen zo in de
+    // zoekresultaten. Liever geen description dan een redactievlag: Google stelt
+    // er dan zelf een samen uit de pagina.
+    ...(af ? { description: publicCopy(pillar.herkenning).slice(0, 155) } : {}),
+    // Zolang de pagina uit placeholders bestaat blijft hij uit de index. De sitemap
+    // laat hem al weg; dit vangt de route af die Google via interne links vindt.
+    ...robotsVoor(af),
   };
 }
 

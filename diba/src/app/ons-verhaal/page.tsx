@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import ContentPageTemplate from "@/components/templates/ContentPageTemplate";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Ons verhaal",
-  description: "[COPY-NODIG]",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function OnsVerhaalPage() {

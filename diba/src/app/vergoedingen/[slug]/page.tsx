@@ -14,6 +14,7 @@ import {
   figmaSectionTight,
 } from "@/lib/figma-inner-layout";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 
@@ -32,6 +33,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Vergoeding ${insurer.name}`,
     description: `Wat ${insurer.name} vergoedt bij Diba Clinics.`,
+    // De pagina bestaat wel maar telt nog geen 40 woorden, met lege kopjes.
+    // Uit de index tot insurers.ts echte tekst per verzekeraar bevat.
+    ...NOG_IN_AANBOUW,
   };
 }
 
@@ -90,7 +94,7 @@ export default async function InsurerPage({ params }: PageProps) {
             </p>
           </article>
           <p className={figmaBody}>
-            {publicCopy("[COPY-NODIG: vergoedingen-disclaimer] Controleer altijd uw eigen polis.")}
+            {publicCopy("[COPY-NODIG: vergoedingen-disclaimer] Controleer altijd je eigen polis.")}
           </p>
         </div>
       </section>
@@ -99,7 +103,7 @@ export default async function InsurerPage({ params }: PageProps) {
         <div className={`${figmaInnerContainer} ${figmaSection} text-center`}>
           <div className="flex flex-col items-center gap-3">
             <Link href="/intake" className={figmaBtnPrimary}>
-              Check uw vergoeding via intake ↗
+              Check je vergoeding via intake ↗
             </Link>
             <Link
               href={PAGE_DEFAULTS.whatsappHref}

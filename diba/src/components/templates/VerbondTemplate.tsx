@@ -91,7 +91,7 @@ export default function VerbondTemplate({ weigeringen, siteUrl }: VerbondTemplat
           </p>
           <div className="mt-8">
             <Link href="/intake" className={figmaBtnPrimary}>
-              Start uw intake (4 min) ↗
+              Start je intake (4 min) ↗
             </Link>
           </div>
         </div>

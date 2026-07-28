@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import BehandelTemplate from "@/components/templates/BehandelTemplate";
 import { TREATMENTS } from "@/data/treatments";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { isPaginaAf, robotsVoor } from "@/lib/pagina-af";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!t) return {};
   return {
     title: t.titel.replace(/\*/g, ""),
-    description: "[COPY-NODIG]",
+    ...robotsVoor(isPaginaAf(t)),
   };
 }
 

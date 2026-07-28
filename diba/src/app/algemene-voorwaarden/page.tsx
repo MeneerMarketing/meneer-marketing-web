@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import ContentPageTemplate from "@/components/templates/ContentPageTemplate";
 import { DIBA_NAP } from "@/lib/site";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Algemene voorwaarden",
-  description: "[COPY-NODIG]",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function VoorwaardenPage() {

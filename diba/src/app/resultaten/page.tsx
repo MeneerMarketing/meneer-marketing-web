@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import FigmaHeading from "@/components/figma/FigmaHeading";
 import { FigmaBreadcrumbs } from "@/components/figma/FigmaTemplateUi";
 import ResultatenGallery from "@/components/ui/ResultatenGallery";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import {
   figmaBody,
   figmaInnerContainer,
@@ -12,6 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Resultaten",
   description: "Voor/na-resultaten bij Diba Clinics, met sessies, tijdlijn en huidtype.",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function ResultatenPage() {

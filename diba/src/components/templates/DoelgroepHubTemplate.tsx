@@ -57,7 +57,7 @@ export default function DoelgroepHubTemplate({ siteUrl }: DoelgroepHubTemplatePr
         <FigmaHeading
           as="h1"
           size="hero"
-          text="Huidzorg voor *uw* situatie"
+          text="Huidzorg voor *jouw* situatie"
           className="mt-4 max-w-3xl"
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
@@ -92,7 +92,7 @@ export default function DoelgroepHubTemplate({ siteUrl }: DoelgroepHubTemplatePr
       <section className="bg-[#f2f7ef]" data-reveal>
         <div className={`${figmaInnerContainer} ${figmaSection} text-center`}>
           <Link href="/intake" className={figmaBtnPrimary}>
-            Start uw intake (4 min) ↗
+            Start je intake (4 min) ↗
           </Link>
         </div>
       </section>

@@ -15,10 +15,12 @@ import {
 } from "@/lib/figma-inner-layout";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
 import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Behandelingen",
   description: "Alle behandelingen van Diba Clinics, openbaar en eerlijk geprijsd.",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function BehandelingenPage() {
@@ -52,7 +54,7 @@ export default function BehandelingenPage() {
         </p>
         <div className="mt-9">
           <Link href="/intake" className={figmaBtnPrimary}>
-            Start uw intake (4 min) ↗
+            Start je intake (4 min) ↗
           </Link>
         </div>
       </section>

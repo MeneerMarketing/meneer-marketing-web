@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import DitBehandelenTemplate from "@/components/templates/DitBehandelenTemplate";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Dit behandelen wij niet",
   description:
     "Eerlijke grenzen bij Diba Clinics. Wat wij niet kunnen staat hier ook, zonder verborgen addertjes.",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function DitBehandelenWijNietPage() {

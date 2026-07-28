@@ -81,7 +81,7 @@ export default function IsHetNodigTemplate({
       </section>
 
       <section className={`${figmaInnerContainer} ${figmaSectionTight}`} data-reveal>
-        <FigmaHeading as="h2" size="section" text="Kies uw *volgende* stap" />
+        <FigmaHeading as="h2" size="section" text="Kies je *volgende* stap" />
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {paden.map((p) => {
             const external = p.href.startsWith("http");
@@ -115,7 +115,7 @@ export default function IsHetNodigTemplate({
           </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <Link href="/intake" className={figmaBtnPrimary}>
-              Start uw intake (4 min) ↗
+              Start je intake (4 min) ↗
             </Link>
             <Link
               href={whatsappHref}

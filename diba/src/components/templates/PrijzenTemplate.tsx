@@ -69,10 +69,10 @@ export default function PrijzenTemplate() {
       <section className={`${figmaInnerContainer} pb-24 pt-8`} data-reveal>
         <div className="flex flex-col items-start gap-4">
           <Link href="/laserontharing/configurator" className={figmaBtnPrimary}>
-            Bereken uw laserprijs ↗
+            Bereken je laserprijs ↗
           </Link>
           <Link href="/intake" className={figmaBtnMint}>
-            Start uw intake (4 min) ↗
+            Start je intake (4 min) ↗
           </Link>
         </div>
       </section>

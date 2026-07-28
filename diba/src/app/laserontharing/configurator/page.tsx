@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import LaserConfiguratorTemplate from "@/components/templates/LaserConfiguratorTemplate";
 import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Laserprijs berekenen",
   description:
     "Kies je zones en zie direct je laserprijs. GentleMax Pro, veilig voor elk huidtype. [COPY-NODIG]",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function LaserConfiguratorPage() {

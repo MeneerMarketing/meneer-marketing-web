@@ -129,11 +129,11 @@ export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTempl
         <div className={`${figmaInnerContainer} ${figmaSection} text-center`}>
           <FigmaHeading as="h2" size="section" text="Nog niet zeker *wie*?" className="mx-auto" />
           <p className={`mx-auto mt-5 max-w-xl ${figmaBody}`}>
-            Start met Behandeling Nul. Wij koppelen u aan de therapeut die bij uw huid en vraag past.
+            Start met Behandeling Nul. Wij koppelen u aan de therapeut die bij je huid en vraag past.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <Link href="/intake" className={figmaBtnPrimary}>
-              Start uw intake (4 min) ↗
+              Start je intake (4 min) ↗
             </Link>
             <Link
               href={whatsappHref}

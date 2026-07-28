@@ -71,17 +71,17 @@ export default function DevComponentsPage() {
         </p>
 
         <div className="mb-12 flex flex-col gap-6">
-          <FigmaHeading as="h1" size="hero" text="Eerlijk advies voor *uw* huid" />
+          <FigmaHeading as="h1" size="hero" text="Eerlijk advies voor *jouw* huid" />
           <FigmaHeading as="h2" size="section" text="Is het *nodig*?" />
           <DeLijn length="lang" dot={62} />
         </div>
 
         <DevSection title="Knoppen">
           <div className="flex max-w-md flex-col items-start gap-3">
-            <span className={figmaBtnPrimary}>Start uw intake (4 min) ↗</span>
+            <span className={figmaBtnPrimary}>Start je intake (4 min) ↗</span>
             <span className={figmaBtnMint}>Bekijk alle prijzen ↗</span>
             <Link href="/contact" className="text-[14px] font-medium text-[#286943] underline-offset-4 hover:underline">
-              Nog niet zeker? Stel uw vraag
+              Nog niet zeker? Stel je vraag
             </Link>
           </div>
         </DevSection>
@@ -119,7 +119,7 @@ export default function DevComponentsPage() {
             />
             <TextareaField
               id="vraag"
-              label="Uw vraag"
+              label="Je vraag"
               hint="Hoe concreter, hoe beter we kunnen helpen."
             />
           </div>

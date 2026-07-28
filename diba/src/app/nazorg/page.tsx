@@ -16,10 +16,12 @@ import {
 } from "@/lib/figma-inner-layout";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
 import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Nazorg",
-  description: "Wat u kunt verwachten na uw behandeling bij Diba Clinics.",
+  description: "Wat je kunt verwachten na je behandeling bij Diba Clinics.",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function NazorgPage() {
@@ -48,7 +50,7 @@ export default function NazorgPage() {
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
           {publicCopy(
-            "Wat u kunt verwachten na uw behandeling. Per traject, zonder vaagheid.",
+            "Wat je kunt verwachten na je behandeling. Per traject, zonder vaagheid.",
           )}
         </p>
       </section>
@@ -78,7 +80,7 @@ export default function NazorgPage() {
       <section className="bg-[#f2f7ef]" data-reveal>
         <div className={`${figmaInnerContainer} ${figmaSection} text-center`}>
           <Link href="/intake" className={figmaBtnPrimary}>
-            Start uw intake (4 min) ↗
+            Start je intake (4 min) ↗
           </Link>
         </div>
       </section>

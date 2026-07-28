@@ -84,7 +84,7 @@ export default function BehandelTemplate({
             <p className={`mt-7 max-w-lg ${figmaBody}`}>{publicCopy(c.intro)}</p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link href="/intake" className={figmaBtnPrimary}>
-                Start uw intake (4 min) ↗
+                Start je intake (4 min) ↗
               </Link>
               <a
                 href={whatsappHref}

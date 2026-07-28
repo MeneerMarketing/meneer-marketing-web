@@ -31,7 +31,7 @@ export default function OverOnsPage() {
           ],
         },
       ]}
-      primaireCta={{ label: "Start uw intake (4 min)", href: "/intake" }}
+      primaireCta={{ label: "Start je intake (4 min)", href: "/intake" }}
       {...PAGE_DEFAULTS}
     />
   );

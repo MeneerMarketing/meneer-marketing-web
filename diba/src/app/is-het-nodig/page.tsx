@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import IsHetNodigTemplate from "@/components/templates/IsHetNodigTemplate";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Is het nodig?",
-  description: "[COPY-NODIG]",
+  ...NOG_IN_AANBOUW,
 };
 
 const PADEN = [
@@ -16,7 +17,7 @@ const PADEN = [
   {
     label: "Bekijk huidproblemen",
     href: "/huidproblemen",
-    toelichting: "Herken u iets? Lees eerst wat er in uw huid gebeurt.",
+    toelichting: "Herken je iets? Lees eerst wat er in je huid gebeurt.",
   },
   {
     label: "Bekijk behandelingen",
@@ -24,7 +25,7 @@ const PADEN = [
     toelichting: "Alle behandelingen met openbare prijzen.",
   },
   {
-    label: "Stel uw vraag",
+    label: "Stel je vraag",
     href: PAGE_DEFAULTS.whatsappHref,
     toelichting: "Via WhatsApp. Geen chatbot, een mens reageert.",
   },

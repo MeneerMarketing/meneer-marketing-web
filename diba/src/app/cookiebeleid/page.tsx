@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import ContentPageTemplate from "@/components/templates/ContentPageTemplate";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Cookiebeleid",
   description:
     "Hoe Diba Clinics cookies gebruikt: functioneel en anonieme statistieken. Geen advertentie-tracking.",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function CookiePage() {

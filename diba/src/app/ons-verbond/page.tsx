@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import VerbondTemplate from "@/components/templates/VerbondTemplate";
 import { VERBOND_WEIGERINGEN } from "@/data/verbond";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
   title: "Ons verbond",
-  description: "[COPY-NODIG]",
+  ...NOG_IN_AANBOUW,
 };
 
 export default function OnsVerbondPage() {

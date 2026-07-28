@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ContentPageTemplate from "@/components/templates/ContentPageTemplate";
 import { doelgroepBySlug } from "@/data/doelgroep";
 import { PAGE_DEFAULTS } from "@/lib/page-defaults";
+import { isPaginaAf, robotsVoor } from "@/lib/pagina-af";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const d = doelgroepBySlug(slug);
   if (!d) return {};
-  return { title: d.meta, description: "[COPY-NODIG]" };
+  return { title: d.meta, ...robotsVoor(isPaginaAf(d)) };
 }
 
 export default async function DoelgroepPage({ params }: PageProps) {
@@ -43,7 +44,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
           alineas: ["[COPY-NODIG: traject en verwachtingen]"],
         },
       ]}
-      primaireCta={{ label: "Start uw intake (4 min)", href: "/intake" }}
+      primaireCta={{ label: "Start je intake (4 min)", href: "/intake" }}
       {...PAGE_DEFAULTS}
     />
   );

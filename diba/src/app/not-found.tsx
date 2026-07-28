@@ -16,7 +16,7 @@ export default function NotFound() {
       <div className={`${figmaInnerContainer} ${figmaSection} mx-auto max-w-xl text-center`}>
         <FigmaHeading as="h1" size="hero" text="Deze pagina *bestaat* niet (meer)" className="mx-auto" />
         <p className={`mx-auto mt-7 max-w-md ${figmaBody}`}>
-          De link klopt niet of de pagina is verplaatst. Begin op de homepage of stel uw vraag via
+          De link klopt niet of de pagina is verplaatst. Begin op de homepage of stel je vraag via
           WhatsApp.
         </p>
         <div className="mt-9 flex flex-col items-center gap-3">
@@ -29,7 +29,7 @@ export default function NotFound() {
             rel="noopener noreferrer"
             className={figmaBtnMint}
           >
-            Nog niet zeker? Stel uw vraag ↗
+            Nog niet zeker? Stel je vraag ↗
           </Link>
         </div>
         <p className={`mx-auto mt-10 max-w-md ${figmaBody}`}>
