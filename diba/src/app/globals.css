@@ -674,25 +674,32 @@ body:has(.figma-home) {
     font-weight: 500;
   }
 
+  /* De twee momenten die ertoe doen: het bewijs en de volgende stap. */
   .diba-display-l {
     font-size: clamp(3rem, 5.4vw, 4.5rem);
     line-height: 0.92;
     letter-spacing: -0.07em;
     font-weight: 500;
+    text-wrap: balance;
   }
 
+  /* Gewone sectiekoppen. Stonden op 4vw (51px bij 1280) en dat is te dicht op
+     display-l (69px): dan schreeuwt elke sectie even hard als het bewijsmoment.
+     Nu een duidelijke trap omlaag, zodat de hiërarchie zichtbaar is. */
   .diba-display-m {
-    font-size: clamp(2.25rem, 4vw, 3.75rem);
-    line-height: 0.98;
-    letter-spacing: -0.06em;
+    font-size: clamp(2rem, 3.3vw, 2.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
     font-weight: 500;
+    text-wrap: balance;
   }
 
   .diba-card-title {
     font-size: clamp(1.5rem, 2vw, 1.875rem);
     line-height: 1.05;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.04em;
     font-weight: 500;
+    text-wrap: balance;
   }
 
   /* Het accentdeel van een kop: altijd de belofte die Diba waarmaakt, nooit

@@ -446,7 +446,9 @@ export default function FigmaHomeApp() {
         id="boeken"
         className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
       >
-        <div className="relative mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.2fr_.8fr]">
+        {/* 1.35 en niet 1.2: bij die verdeling paste "Wij kijken met je mee." net niet
+            in de kolom en brak de kop naar drie regels, ondanks de harde afbreking. */}
+        <div className="relative mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
           <FigmaSoftAccent variant="cta" />
           <div className="relative">
             <Label opDonker>Jouw eerste afspraak</Label>
