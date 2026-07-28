@@ -58,7 +58,7 @@ export const figmaLabel =
 
 
 
-/** Hero + sectie-portretten — Figma Make Unsplash (designfase). */
+/** Hero + sectie-portretten — eigen Diba-fotografie, zie data/figma-home-images.ts. */
 
 export const FIGMA_HERO_PORTRAIT = FIGMA_HOME_PORTRAIT.src;
 

@@ -1,29 +1,29 @@
 /**
  * Het Diba-blad als SVG (DIBA-RULES §8, Addendum A4).
  *
- * Dit pad is niet nagetekend maar **uitgemeten**: het masker van het blad is uit
- * `public/images/diba-icon-dark.png` gehaald, de contour getraceerd en vereenvoudigd tot
- * 24 ankerpunten. Daardoor zit de snede aan de binnenkant er ook echt in — die wig van
- * negatieve ruimte is wat het een blad maakt in plaats van een lensvorm.
+ * Dit is het **officiële pad uit het merkbestand** (`icon01.svg` uit de huisstijl-map),
+ * niet nagetekend en niet getraceerd. De viewBox is de opgemeten inktgrens van dat pad
+ * (x 28.9–72.3, y 40.8–84.0), zodat het blad de volle hoogte en breedte vult.
  *
- * Wijzig dit pad niet met de hand. Verandert het logo, meet dan opnieuw.
+ * Wijzig dit pad niet met de hand. Verandert het logo, neem dan het nieuwe pad over uit
+ * het merkbestand en meet de inktgrens opnieuw.
  *
  * Twee regels bij gebruik:
  * 1. **Eén blad per vlak.** Het is een merkteken, geen patroon.
- * 2. **Nooit achter tekst.** Zelfs op 12% dekking zakt tekst op een groen vlak dan onder
- *    WCAG AA. Zet het in de vrije ruimte; dan mag het juist groter en steviger.
+ * 2. **Nooit een licht blad achter tekst.** Op een groen vlak zakt tekst dan onder WCAG
+ *    AA — al bij 12% dekking. Gebruik daar een blad dat juist dieper is dan het vlak.
  */
 
 const LEAF_PATH =
-  "M99.1 0C100.5 2.8 93.7 13.3 91.7 20.6C89.8 28 89 37.3 87.2 44C85.3 50.8 83.6 55.2 " +
-  "80.7 61C77.8 66.8 73.3 74.2 69.7 78.9C66.1 83.6 63.1 86.4 59.2 89.4C55.3 92.5 51.2 " +
-  "95.6 46.3 97.2C41.4 98.9 35 100 29.8 99.5C24.6 99.1 19.6 97.1 15.1 94.5C10.6 91.9 " +
-  "1.8 86.7 2.8 83.9C3.7 81.2 14.8 80.7 20.6 78C26.5 75.3 32.4 72.2 38.1 67.9C43.7 " +
-  "63.5 49.9 57.3 54.6 51.8C59.3 46.4 67 35.7 66.1 35.3C65.1 34.9 55.1 44.9 48.6 " +
-  "49.5C42.1 54.2 32.6 60.1 27.1 63.3C21.6 66.5 20.1 67.3 15.6 68.8C11.1 70.3 1.9 " +
-  "74.8 0 72.5C-1.9 70.1 2.7 58.9 4.1 54.6C5.6 50.3 6.6 49.5 8.7 46.8C10.9 44 13.1 " +
-  "41.4 17 38.1C20.9 34.8 25.7 31 32.1 27.1C38.5 23.2 46.9 18.5 55.5 14.7C64.1 10.9 " +
-  "76.2 6.6 83.5 4.1C90.7 1.7 97.7 -2.8 99.1 0Z";
+  "M72.411,40.7681q-.164.26883-.32763.53764a23.08388,23.08388,0,0,0-1.22286,2.4479A44.7" +
+  "7158,44.77158,0,0,0,68.09593,53.9154c-2.41529,14.62626-9.90557,22.2925-9.90557,22.29" +
+  "26-2.93939,3.0084-8.0581,8.2477-15.42454,7.8522-7.17456-.38511-11.8036-5.86393-12.87" +
+  "239-7.19777a32.34281,32.34281,0,0,0,3.5729-.73654,39.19359,39.19359,0,0,0,10.24145-4" +
+  ".72564C51.73665,66.11417,57.03853,57.10945,57.99,55.461a74.32692,74.32692,0,0,1-8.31" +
+  "453,7.12342,78.06294,78.06294,0,0,1-8.22924,5.26345,39.215,39.215,0,0,1-4.854,2.4898" +
+  "1A31.41361,31.41361,0,0,1,28.892,72.39635a23.71658,23.71658,0,0,1,2.17224-8.47611c.8" +
+  "1863-1.73348,3.88189-7.64179,18.12272-14.8405A100.41761,100.41761,0,0,1,72.411,40.76" +
+  "81Z";
 
 type DibaLeafMarkProps = {
   className?: string;
@@ -34,7 +34,7 @@ type DibaLeafMarkProps = {
 export default function DibaLeafMark({ className = "", size }: DibaLeafMarkProps) {
   return (
     <svg
-      viewBox="-3 -4 107 107"
+      viewBox="28.9 40.8 43.4 43.2"
       width={size}
       height={size}
       fill="none"

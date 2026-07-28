@@ -659,59 +659,66 @@ body:has(.figma-home) {
 }
 
 /* ── Typografische schaal (DIBA-RULES §6) ──
-   De regel: hoe groter de tekst, hoe negatiever de tracking. */
-.diba-display-xl {
-  font-size: clamp(3.8rem, 8.3vw, 8.8rem);
-  line-height: 0.84;
-  letter-spacing: -0.08em;
-  font-weight: 500;
-}
+   De regel: hoe groter de tekst, hoe negatiever de tracking.
 
-.diba-display-l {
-  font-size: clamp(3rem, 5.4vw, 4.5rem);
-  line-height: 0.92;
-  letter-spacing: -0.07em;
-  font-weight: 500;
-}
+   Deze primitives staan bewust in @layer components. Zonder die laag winnen ze van
+   Tailwind-utilities, en dan overschrijft bijvoorbeeld .diba-label elke text-*-kleur
+   die je erbij zet — dat maakte de witte tekst op het "Eerlijk advies"-schijfje
+   donkergroen op donkergroen. In de components-laag is de klasse de basis en blijft
+   een utility de uitzondering. */
+@layer components {
+  .diba-display-xl {
+    font-size: clamp(3.8rem, 8.3vw, 8.8rem);
+    line-height: 0.84;
+    letter-spacing: -0.08em;
+    font-weight: 500;
+  }
 
-.diba-display-m {
-  font-size: clamp(2.25rem, 4vw, 3.75rem);
-  line-height: 0.98;
-  letter-spacing: -0.06em;
-  font-weight: 500;
-}
+  .diba-display-l {
+    font-size: clamp(3rem, 5.4vw, 4.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.07em;
+    font-weight: 500;
+  }
 
-.diba-card-title {
-  font-size: clamp(1.5rem, 2vw, 1.875rem);
-  line-height: 1.05;
-  letter-spacing: -0.05em;
-  font-weight: 500;
-}
+  .diba-display-m {
+    font-size: clamp(2.25rem, 4vw, 3.75rem);
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+  }
 
-/* Het accentdeel van een kop: altijd de belofte die Diba waarmaakt, nooit
-   het commerciële deel. Op licht groen, op donker mintgroen. */
-.diba-accent {
-  color: var(--g-700);
-}
+  .diba-card-title {
+    font-size: clamp(1.5rem, 2vw, 1.875rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+  }
 
-.diba-accent-on-dark {
-  color: var(--on-dark-accent);
-}
+  /* Het accentdeel van een kop: altijd de belofte die Diba waarmaakt, nooit
+     het commerciële deel. Op licht groen, op donker mintgroen. */
+  .diba-accent {
+    color: var(--g-700);
+  }
 
-/* ── Huisstijl-primitives ──
-   Het eyebrow-label stond 30x los in de code, op 9-11px met wisselende tracking
-   en een groen dat AA niet haalde. Vanaf nu één klasse. */
-.diba-label {
-  font-size: var(--fs-label);
-  font-weight: 600;
-  line-height: 1.3;
-  text-transform: uppercase;
-  letter-spacing: var(--ls-label);
-  color: var(--t-label);
-}
+  .diba-accent-on-dark {
+    color: var(--on-dark-accent);
+  }
 
-.diba-label-on-dark {
-  color: var(--on-dark-label);
+  /* Het eyebrow-label stond 30x los in de code, op 9-11px met wisselende tracking
+     en een groen dat AA niet haalde. Vanaf nu één klasse. */
+  .diba-label {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-label);
+    color: var(--t-label);
+  }
+
+  .diba-label-on-dark {
+    color: var(--on-dark-label);
+  }
 }
 
 /* Focus (WCAG §13) */

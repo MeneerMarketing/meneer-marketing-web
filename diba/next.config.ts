@@ -9,12 +9,9 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-    ],
+    // Geen externe beeldbronnen. Alle fotografie is eigen materiaal onder /public/images
+    // (DIBA-RULES §2: geen stockfoto's, §14: geen externe requests).
+    remotePatterns: [],
   },
   async redirects() {
     return LEGACY_REDIRECTS.map((r) => ({

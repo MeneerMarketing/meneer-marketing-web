@@ -98,10 +98,13 @@ export default function FigmaHomeApp() {
               fill
               priority
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover object-center mix-blend-multiply opacity-75"
+              className="object-cover object-center"
             />
+            {/* Leeslaag, geen versiering (§2): net genoeg om de twee chips leesbaar te
+                houden. Stond op .84 om bleke stockbeelden groen te trekken; op een echte
+                behandelfoto wiste dat het gezicht van de behandelaar weg. */}
             <div
-              className="absolute inset-0 bg-[linear-gradient(145deg,rgba(232,248,220,.84),transparent_55%,rgba(38,104,66,.28))]"
+              className="absolute inset-0 bg-[linear-gradient(145deg,rgba(232,248,220,.28),transparent_45%,rgba(38,104,66,.30))]"
               aria-hidden="true"
             />
             <span className="diba-label absolute left-7 top-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
@@ -249,7 +252,7 @@ export default function FigmaHomeApp() {
               alt={FIGMA_EERLIJK_PORTRAIT_ALT}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover object-center mix-blend-multiply opacity-85"
+              className="object-cover object-center"
             />
           </div>
           <div className="rounded-[var(--r-lg)] bg-white p-8 sm:p-12">
@@ -323,7 +326,7 @@ export default function FigmaHomeApp() {
                 alt={FIGMA_TRAJECT_TESTIMONIAL.alt}
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
-                className="object-cover object-[center_30%] mix-blend-multiply opacity-85"
+                className="object-cover object-[center_30%]"
               />
               <div
                 className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(25,82,46,.82))]"
@@ -364,7 +367,7 @@ export default function FigmaHomeApp() {
                 alt={FIGMA_HOME_CLINIC.alt}
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover object-center mix-blend-multiply opacity-80"
+                className="object-cover object-center"
               />
               <div
                 className="absolute inset-0 bg-[linear-gradient(145deg,rgba(216,239,200,.78),rgba(112,169,109,.42)_48%,rgba(30,85,54,.62))]"

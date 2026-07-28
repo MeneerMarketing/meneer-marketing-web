@@ -9,7 +9,7 @@ type FigmaKennisbankSectionProps = {
   className?: string;
 };
 
-/** Kennisbank — drie kaarten met Unsplash-beeld, groene tint en categorie-tag. */
+/** Kennisbank — drie kaarten met eigen fotografie, groene tint en categorie-tag. */
 export default function FigmaKennisbankSection({
   id = "kennis",
   className = "px-5 py-20 sm:px-9 lg:px-[7.5vw]",
@@ -44,7 +44,7 @@ export default function FigmaKennisbankSection({
                   alt={article.image.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover mix-blend-multiply opacity-90 transition duration-500 group-hover:scale-[1.03]"
+                  className="object-cover transition duration-500 group-hover:scale-[1.03]"
                 />
                 <div
                   className="absolute inset-0 bg-[linear-gradient(180deg,rgba(148,188,138,.35)_0%,rgba(40,105,67,.22)_100%)]"

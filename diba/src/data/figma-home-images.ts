@@ -1,88 +1,105 @@
 /**
- * Figma homepage beelden — Unsplash tijdens designfase.
- * Vervang door Aleks-shotlist zodra echte beelden beschikbaar zijn.
+ * Homepage-beelden — eigen Diba-fotografie.
+ *
+ * Kwamen tot 28-07-2026 van Unsplash. Dat was op drie manieren fout: stockfoto's zijn
+ * verboden (DIBA-RULES §2), het waren externe requests bij elke bezoeker (§14), en het
+ * beeld toonde spa-sfeer in plaats van een kliniek.
+ *
+ * Nu bijgesneden uit de eigen shoots. Ze volgen de beeldsignatuur uit Addendum A10:
+ * handen aan het werk, warm daglicht, echte behandelaars — geen apparaten-glamour.
+ *
+ * OPEN PUNT — toestemming. Op een deel van deze foto's zijn cliënten herkenbaar in
+ * beeld. Voor publicatie is per persoon een vastgelegde toestemming nodig (AVG). Zolang
+ * die er niet is, blijven dit demobeelden voor de testversie. Bij twijfel: kies een
+ * variant waarop niemand herkenbaar is — `HANDEN_DETAIL` is daar de veilige val voor.
  */
 
-const unsplashParams = "crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80";
+type Beeld = { readonly src: string; readonly alt: string };
 
-function unsplash(id: string, w: number, h: number) {
-  return `https://images.unsplash.com/${id}?${unsplashParams}&w=${w}&h=${h}`;
-}
+const shoot = (naam: string) => `/images/shoot/${naam}.jpg`;
 
+/** Hero — laserbehandeling, precisie. Past bij "Geen gokwerk. Wel jouw huid." */
 export const FIGMA_HOME_PORTRAIT = {
-  src: unsplash("photo-1646488324517-b3e298dd82f1", 1200, 1500),
-  alt: "Vrouw met natuurlijke huid in warm groen licht, Diba Clinics sfeerbeeld",
-} as const;
+  src: shoot("hero-behandeling"),
+  alt: "Diba-behandelaar voert een laserbehandeling uit bij een cliënt met beschermbril",
+} as const satisfies Beeld;
 
+/** Behandelkamer, liggend formaat. */
 export const FIGMA_HOME_PORTRAIT_WIDE = {
-  src: unsplash("photo-1646488324517-b3e298dd82f1", 1400, 900),
-  alt: "Natuurlijke huid en vertrouwen, warm groen beeld",
-} as const;
+  src: shoot("behandelkamer"),
+  alt: "Behandelaar aan het werk in een behandelkamer van Diba Clinics",
+} as const satisfies Beeld;
 
+/** In de kliniek — twee behandelaars tussen twee afspraken door. */
 export const FIGMA_HOME_CLINIC = {
-  src: unsplash("photo-1540555700478-4be289fbecef", 1200, 800),
-  alt: "Rustige wellnessruimte met warm licht en groene sfeer",
-} as const;
+  src: shoot("kliniek-team"),
+  alt: "Twee behandelaars van Diba Clinics in gesprek in de kliniek in Hillegersberg",
+} as const satisfies Beeld;
 
-/** Eerlijk advies — consultmoment, Unsplash sfeerbeeld. */
+/** Eerlijk advies — consultmoment met de cliënt. */
 export const FIGMA_EERLIJK_ADVIES = {
-  src: unsplash("photo-1576091160399-112ba8d25d1d", 1200, 900),
-  alt: "Rustig consultmoment over huidzorg in warme, groene sfeer",
-} as const;
+  src: shoot("eerlijk-advies-consult"),
+  alt: "Behandelaar bespreekt een behandelplan met een cliënt in de kliniek",
+} as const satisfies Beeld;
 
-/** Traject / testimonial — portret naast Mijn Diba-kaart. */
+/**
+ * Traject — detail van handen aan het werk, niemand herkenbaar in beeld.
+ * Bewust géén portret: de quote ernaast is nog conceptcopy, en een echt gezicht naast
+ * een niet-uitgesproken citaat wekt een indruk die we niet kunnen waarmaken.
+ */
 export const FIGMA_TRAJECT_TESTIMONIAL = {
-  src: unsplash("photo-1529626455594-4ff0802cfb7e", 1200, 1500),
-  alt: "Natuurlijk portret, vertrouwen en rust in huidzorg",
+  src: shoot("handen-detail"),
+  alt: "Handen met handschoenen voeren een precieze huidbehandeling uit",
   width: 1200,
   height: 1500,
 } as const;
 
-/** Kennisbank + intent-beelden */
+/** Kennisbank */
 export const FIGMA_KENNISBANK_ACNE = {
-  src: unsplash("photo-1556228720-195a672e8a03", 900, 675),
-  alt: "Huidverzorging en rustige routine bij acne en onzuiverheden",
-} as const;
+  src: shoot("kb-acne"),
+  alt: "Huid met acne wordt van dichtbij beoordeeld door een behandelaar",
+} as const satisfies Beeld;
 
 export const FIGMA_KENNISBANK_PIGMENT = {
-  src: unsplash("photo-1576091160399-112ba8d25d1d", 900, 675),
-  alt: "Professionele huidzorg in een rustige klinieksetting",
-} as const;
+  src: shoot("kb-pigment"),
+  alt: "Behandeling gericht op pigment in een klinische setting",
+} as const satisfies Beeld;
 
 export const FIGMA_KENNISBANK_LASER = {
-  src: unsplash("photo-1515377905703-c4788e51af15", 900, 675),
-  alt: "Laserbehandeling in een rustige klinieksetting",
-} as const;
+  src: shoot("kb-laser"),
+  alt: "Laserbehandeling met beschermbril bij Diba Clinics",
+} as const satisfies Beeld;
 
+/** Intent-kaarten */
 export const FIGMA_INTENT_ACNE = {
-  src: unsplash("photo-1556228720-195a672e8a03", 800, 600),
-  alt: "Huidverzorging bij acne en onzuiverheden",
-} as const;
+  src: shoot("intent-acne"),
+  alt: "Behandeling van acne en onzuiverheden",
+} as const satisfies Beeld;
 
 export const FIGMA_INTENT_PIGMENT = {
-  src: unsplash("photo-1576091160399-112ba8d25d1d", 800, 600),
-  alt: "Professionele behandeling voor pigment en melasma",
-} as const;
+  src: shoot("intent-pigment"),
+  alt: "Behandelaar werkt aan pigment en melasma",
+} as const satisfies Beeld;
 
 export const FIGMA_INTENT_LASER = {
-  src: unsplash("photo-1515377905703-c4788e51af15", 800, 600),
-  alt: "Laserontharing in een klinische setting",
-} as const;
+  src: shoot("intent-laser"),
+  alt: "Laserontharing met beschermbril en huidkoeling",
+} as const satisfies Beeld;
 
 export const FIGMA_INTENT_LITTEKENS = {
-  src: unsplash("photo-1522337360788-8b13dee7a37e", 800, 600),
+  src: shoot("intent-littekens"),
   alt: "Behandeling gericht op littekens en huidtextuur",
-} as const;
+} as const satisfies Beeld;
 
 export const FIGMA_INTENT_VEROUDERING = {
-  src: unsplash("photo-1544005313-94ddf0286df2", 800, 600),
-  alt: "Huidverzorging voor een frissere, rustige huid",
-} as const;
+  src: shoot("intent-veroudering"),
+  alt: "Huidverstevigende behandeling in de kliniek",
+} as const satisfies Beeld;
 
 export const FIGMA_INTENT_LICHAAM = {
-  src: unsplash("photo-1544161515-4ab6ce6db874", 800, 600),
-  alt: "Lichaamsbehandeling en huidverzorging",
-} as const;
+  src: shoot("intent-lichaam"),
+  alt: "Lichaamsbehandeling met een huidapparaat",
+} as const satisfies Beeld;
 
 /** @deprecated Gebruik FIGMA_TRAJECT_TESTIMONIAL — alias voor backwards compat. */
 export const DIBA_EVE_M_HUIDSCAN = FIGMA_TRAJECT_TESTIMONIAL;
