@@ -371,7 +371,6 @@ export default function FigmaHomeApp() {
                 aria-hidden="true"
               />
               <FigmaSoftAccent variant="clinic" className="z-10" />
-              <div className="absolute -left-16 bottom-[-152px] z-[1] h-[22rem] w-[22rem] rounded-[var(--r-pill)] border-[26px] border-[var(--g-100)]/55" />
               <p className="diba-label absolute left-7 top-7 z-10 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
                 Diba, Rotterdam
               </p>
