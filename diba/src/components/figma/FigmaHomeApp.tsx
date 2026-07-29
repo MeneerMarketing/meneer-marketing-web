@@ -10,6 +10,7 @@ import Button from "@/components/ui/Button";
 import DibaIcon from "@/components/ui/DibaIcon";
 import { ArrowUpRight, Close, PlusMinus, Pulse, Sparkle } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
+import ProofBar from "@/components/ui/ProofBar";
 import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
 import MiniHuidscan from "@/components/ui/MiniHuidscan";
 import WerkwijzeStepsFlow from "@/components/ui/WerkwijzeStepsFlow";
@@ -22,7 +23,7 @@ import {
   FIGMA_HERO_PORTRAIT,
   FIGMA_HERO_PORTRAIT_ALT,
 } from "@/lib/figma-home-layout";
-import { DIBA_INSTAGRAM_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { DIBA_HOME_PROOF_ITEMS, DIBA_INSTAGRAM_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 
 /**
  * De drie punten onder "Eerlijk advies". Concepttekst, overgenomen uit het ontwerp.
@@ -44,13 +45,6 @@ const EERLIJK_ADVIES_PUNTEN = [
     titel: "Soms is wachten het beste",
     tekst: "We zeggen het als een behandeling nu niet het juiste moment is.",
   },
-] as const;
-
-const PROOF_STATS = [
-  { stat: "4.000+", label: "klantreviews" },
-  { stat: "50.000+", label: "uitgevoerde behandelingen" },
-  { stat: "8.000+", label: "geholpen klanten" },
-  { stat: "2017", label: "vertrouwd sinds" },
 ] as const;
 
 export default function FigmaHomeApp() {
@@ -149,19 +143,7 @@ export default function FigmaHomeApp() {
           </div>
         </div>
       </section>
-
-      <section className="border-y border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto grid max-w-[1800px] divide-y divide-[var(--g-100)] md:grid-cols-4 md:divide-x md:divide-y-0">
-          {PROOF_STATS.map(({ stat, label }) => (
-            <div key={label} className="py-7 text-center">
-              <strong className="block text-3xl tracking-[-.06em] text-[var(--g-700)] tabular-nums">
-                {stat}
-              </strong>
-              <span className="diba-label mt-2 block text-[var(--t-muted)]">{label}</span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <ProofBar items={DIBA_HOME_PROOF_ITEMS} />
 
       <FigmaVoorJouSection />
 
