@@ -674,32 +674,52 @@ body:has(.figma-home) {
     font-weight: 500;
   }
 
-  /* De twee momenten die ertoe doen: het bewijs en de volgende stap. */
+  /* ── Overgenomen uit het Figma-ontwerp, waarde voor waarde ──
+     Bron: _figma-import/src/App.tsx. Het breekpunt is 640px, precies waar Tailwind
+     zijn `sm:` legt, zodat de sprong op dezelfde plek valt als in het ontwerp.
+     Wijk hier niet van af zonder het ontwerp mee te veranderen. */
+
+  /* De twee momenten die ertoe doen: het bewijs en de volgende stap.
+     Figma: text-5xl leading-[.93] tracking-[-.065em] sm:text-7xl */
   .diba-display-l {
-    font-size: clamp(3rem, 5.4vw, 4.5rem);
-    line-height: 0.92;
-    letter-spacing: -0.07em;
+    font-size: 3rem;
+    line-height: 0.93;
+    letter-spacing: -0.065em;
     font-weight: 500;
     text-wrap: balance;
   }
 
-  /* Gewone sectiekoppen. Stonden op 4vw (51px bij 1280) en dat is te dicht op
-     display-l (69px): dan schreeuwt elke sectie even hard als het bewijsmoment.
-     Nu een duidelijke trap omlaag, zodat de hiërarchie zichtbaar is. */
+  /* Gewone sectiekoppen.
+     Figma: text-4xl leading-[.98] tracking-[-.06em] sm:text-6xl */
   .diba-display-m {
-    font-size: clamp(2rem, 3.3vw, 2.75rem);
-    line-height: 1.02;
+    font-size: 2.25rem;
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  /* Figma: text-2xl leading-[1.05] tracking-[-.05em], soms text-3xl */
+  .diba-card-title {
+    font-size: 1.5rem;
+    line-height: 1.05;
     letter-spacing: -0.05em;
     font-weight: 500;
     text-wrap: balance;
   }
 
-  .diba-card-title {
-    font-size: clamp(1.5rem, 2vw, 1.875rem);
-    line-height: 1.05;
-    letter-spacing: -0.04em;
-    font-weight: 500;
-    text-wrap: balance;
+  @media (min-width: 640px) {
+    .diba-display-l {
+      font-size: 4.5rem;
+    }
+
+    .diba-display-m {
+      font-size: 3.75rem;
+    }
+
+    .diba-card-title {
+      font-size: 1.875rem;
+    }
   }
 
   /* Het accentdeel van een kop: altijd de belofte die Diba waarmaakt, nooit
@@ -863,3 +883,4 @@ html.js-reveal [data-reveal].is-visible {
     animation: none;
   }
 }
+

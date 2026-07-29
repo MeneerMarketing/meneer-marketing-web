@@ -17,10 +17,20 @@ import {
 } from "@/lib/site";
 import "./globals.css";
 
-// Huisstijl-font (DIBA-RULES §4). Zelf-gehost door next/font — geen CDN-request.
+/**
+ * Huisstijl-font (DIBA-RULES §4). Zelf-gehost door next/font — geen CDN-request.
+ *
+ * Bewust ZONDER `weight`: dan laadt next/font de variabele versie van DM Sans, met
+ * de assen `opsz` (optical size) en `wght`. Dat is dezelfde bouw als het bestand dat
+ * de Figma-export van static.figma.com haalde ("DMSans_opsz_wght").
+ *
+ * Met vier losse gewichten stond `font-optical-sizing: auto` er wel, maar deed het
+ * niets — er was geen opsz-as om aan te draaien. Grote koppen kregen daardoor de
+ * lettervormen van een tekstgrootte: te open, te breed. Precies het verschil dat je
+ * ziet als je onze koppen naast het Figma-ontwerp legt.
+ */
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   variable: "--font-figma-home",
   display: "swap",
   preload: true,

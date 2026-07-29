@@ -363,16 +363,20 @@ export default function FigmaHomeApp() {
                 Er is ruimte voor je vragen, en voor twijfel.
               </p>
             </div>
-            <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-300)]">
+            {/* Sfeerkaart, geen bewijsbeeld. Hier mag het beeld wél in het merkgroen
+                getrokken worden: mix-blend-multiply over een groen vlak geeft de rijke,
+                egale tint uit het ontwerp. Op behandelfoto's is dat juist verkeerd —
+                daar telt de echte huidskleur — dus staat het alleen hier. */}
+            <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-400)]">
               <Image
                 src={FIGMA_HOME_CLINIC.src}
                 alt={FIGMA_HOME_CLINIC.alt}
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover object-center"
+                className="object-cover object-center mix-blend-multiply opacity-80"
               />
               <div
-                className="absolute inset-0 bg-[linear-gradient(145deg,rgba(216,239,200,.78),rgba(112,169,109,.42)_48%,rgba(30,85,54,.62))]"
+                className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(23,55,42,.42))]"
                 aria-hidden="true"
               />
               <FigmaSoftAccent variant="clinic" className="z-10" />
