@@ -82,7 +82,7 @@ export default function FigmaHomeApp() {
               <span className="diba-accent">Wel jouw huid.</span>
             </h1>
 
-            <p className="mt-7 max-w-[44ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
               Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare prijzen,
               en een nulmeting voordat we behandelen. Soms is het advies om even te wachten.
             </p>
@@ -224,7 +224,7 @@ export default function FigmaHomeApp() {
             <span className="diba-label inline-block rounded-[var(--r-pill)] bg-[var(--g-050)] px-3 py-2">
               Eve-M huidanalyse
             </span>
-            <h3 id="scan-dialog-title" className="diba-display-m mt-6">
+            <h3 id="scan-dialog-title" className="diba-card-title-lg mt-6">
               Jouw huid in kaart.
             </h3>
             <p className="mt-5 max-w-md leading-7 text-[var(--t-body)]">
@@ -305,7 +305,7 @@ export default function FigmaHomeApp() {
                 </span>
                 <DibaIcon variant="dark" size={40} />
               </div>
-              <h3 className="diba-display-m mt-16 max-w-lg">
+              <h3 className="diba-display-s mt-16 max-w-lg">
                 Zie wat je huid
                 <br />
                 je vertelt.
@@ -367,7 +367,7 @@ export default function FigmaHomeApp() {
               <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-500)]">
                 <Pulse size={18} />
               </span>
-              <h3 className="diba-card-title mt-28">Geen haast.</h3>
+              <h3 className="diba-card-title-lg mt-28">Geen haast.</h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
                 Er is ruimte voor je vragen, en voor twijfel.
               </p>
@@ -409,7 +409,7 @@ export default function FigmaHomeApp() {
               <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-500)]">
                 <Sparkle size={18} />
               </span>
-              <h3 className="diba-card-title mt-28">Heldere keuzes.</h3>
+              <h3 className="diba-card-title-lg mt-28">Heldere keuzes.</h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
                 Over behandeling, kosten en wat je kunt verwachten.
               </p>

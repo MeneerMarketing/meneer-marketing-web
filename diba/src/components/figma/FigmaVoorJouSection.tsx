@@ -66,7 +66,9 @@ export default function FigmaVoorJouSection() {
         <div className="grid gap-8 lg:grid-cols-[.7fr_1.3fr]">
           <div>
             <Label>Voor jou</Label>
-            <h2 className="diba-display-m mt-4 max-w-xs">Waar wil je hulp bij?</h2>
+            {/* Geen max-w meer: die dwong de kop op twee regels. De maat schaalt met
+                de kolom, dus hij past altijd op één regel. */}
+            <h2 className="diba-display-s mt-4">Waar wil je hulp bij?</h2>
           </div>
           <p className="max-w-xl self-end text-[15px] leading-7 text-[var(--t-body)]">
             Of je nu last hebt van acne, pigment, ongewenste haargroei of een huid die veranderd
@@ -107,7 +109,9 @@ export default function FigmaVoorJouSection() {
 
           <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
             <Label>Jouw focus</Label>
-            <h3 className="diba-display-m mt-4 text-[var(--t-strong)]">
+            {/* Zelfde maat als de sectiekop hierboven: dit blok hoort bij die sectie
+                en mag daar niet overheen schreeuwen. */}
+            <h3 className="diba-display-s mt-4 text-[var(--t-strong)]">
               {selectedIntent.title}
             </h3>
             <p className="mt-4 max-w-md text-[15px] leading-7 text-[var(--t-body)]">

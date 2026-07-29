@@ -704,10 +704,33 @@ body:has(.figma-home) {
     text-wrap: balance;
   }
 
+  /* Kleine sectiekop. Het ontwerp gebruikt hier `sm:text-5xl` (48px) in plaats van de
+     60px van de andere secties — die staan in een bredere kolom. Bij 1280px is die
+     kolom 364px en wordt "Waar wil je hulp bij?" op 48px precies 369px: net te breed,
+     dus twee regels. Deze maat schaalt mee met de kolom en blijft op één regel. */
+  .diba-display-s {
+    font-size: clamp(2rem, 3.4vw, 2.75rem);
+    line-height: 0.96;
+    letter-spacing: -0.07em;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  /* Kaartkop. Figma: text-2xl, vaste 24px — niet oplopend naar 30. */
   .diba-card-title {
     font-size: 1.5rem;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  /* De grotere kaartkop uit het ontwerp: text-3xl, vaste 30px.
+     Voor "Geen haast." en "Heldere keuzes." */
+  .diba-card-title-lg {
+    font-size: 1.875rem;
     line-height: 1.02;
-    letter-spacing: -0.055em;
+    letter-spacing: -0.05em;
     font-weight: 500;
     text-wrap: balance;
   }
@@ -720,10 +743,8 @@ body:has(.figma-home) {
     .diba-display-m {
       font-size: 3.75rem;
     }
-
-    .diba-card-title {
-      font-size: 1.875rem;
-    }
+    /* Kaartkoppen schalen bewust NIET mee: in het ontwerp staan ze op een vaste
+       24px respectievelijk 30px, zonder sm:-variant. */
   }
 
   /* Het accentdeel van een kop: altijd de belofte die Diba waarmaakt, nooit
