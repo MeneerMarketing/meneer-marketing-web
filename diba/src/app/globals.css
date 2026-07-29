@@ -687,14 +687,21 @@ body:has(.figma-home) {
      De tracking is bewust strakker dan die export: Yasins referentie laat koppen zien
      waarin de letters elkaar bijna raken, en dat is het beeld dat we aanhouden.
      Vuistregel die daaruit volgt: hoe groter de kop, hoe negatiever de tracking,
-     van -0.095em op de hero tot -0.055em op een kaartkop. */
+     van -0.095em op de hero tot -0.055em op een kaartkop.
+
+     GEWICHT — niet aanpassen zonder het ontwerp te checken. Van de elf koppen in de
+     export draagt er precies één een gewichtsklasse: de hero, met `font-medium` (500).
+     De andere tien hebben er geen, en erven via Tailwinds preflight
+     (`h1-h6 { font-weight: inherit }`) het bodygewicht 400. Alles hieronder staat
+     daarom op 400; alleen .diba-display-xl is 500. Op 500 oogt een grote kop merkbaar
+     zwaarder en verliest hij de lichtheid van het ontwerp. */
 
   /* De twee momenten die ertoe doen: het bewijs en de volgende stap. */
   .diba-display-l {
     font-size: 3rem;
     line-height: 0.88;
     letter-spacing: -0.09em;
-    font-weight: 500;
+    font-weight: 400;
     text-wrap: balance;
   }
 
@@ -703,7 +710,7 @@ body:has(.figma-home) {
     font-size: 2.25rem;
     line-height: 0.94;
     letter-spacing: -0.075em;
-    font-weight: 500;
+    font-weight: 400;
     text-wrap: balance;
   }
 
@@ -715,7 +722,7 @@ body:has(.figma-home) {
     font-size: clamp(2rem, 3.4vw, 2.75rem);
     line-height: 0.96;
     letter-spacing: -0.07em;
-    font-weight: 500;
+    font-weight: 400;
     text-wrap: balance;
   }
 
@@ -724,7 +731,7 @@ body:has(.figma-home) {
     font-size: 1.5rem;
     line-height: 1.05;
     letter-spacing: -0.05em;
-    font-weight: 500;
+    font-weight: 400;
     text-wrap: balance;
   }
 
@@ -734,7 +741,7 @@ body:has(.figma-home) {
     font-size: 1.875rem;
     line-height: 1.02;
     letter-spacing: -0.05em;
-    font-weight: 500;
+    font-weight: 400;
     text-wrap: balance;
   }
 
@@ -911,6 +918,7 @@ html.js-reveal [data-reveal].is-visible {
     animation: none;
   }
 }
+
 
 
 
