@@ -45,9 +45,11 @@ function StepNode({
           }`}
         />
       </span>
+      {/* Stond op 8px in --g-300: te klein (ondergrens is 11px) en met 1,9:1 ver onder
+          WCAG AA. Nu op de labelmaat, met kleuren die wel meten. */}
       <span
-        className={`mt-2 text-[8px] font-semibold uppercase tracking-[.14em] transition-colors duration-300 ${
-          active ? "text-[var(--g-500)]" : "text-[var(--g-300)] group-hover:text-[var(--g-400)]"
+        className={`diba-label mt-2 transition-colors duration-300 ${
+          active ? "text-[var(--g-700)]" : "text-[var(--t-muted)] group-hover:text-[var(--g-700)]"
         }`}
       >
         {STEP_TAGS[index] ?? `Stap ${index + 1}`}

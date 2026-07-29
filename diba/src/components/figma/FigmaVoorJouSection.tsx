@@ -91,23 +91,23 @@ export default function FigmaVoorJouSection() {
           ))}
         </div>
 
-        <div className="mt-5 overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-025)] lg:grid lg:grid-cols-2">
-          <div className="relative min-h-[280px] bg-[var(--g-200)] sm:min-h-[320px] lg:min-h-[360px]">
+        {/* Uitgelicht blok. Drie dingen komen uit het ontwerp en niet uit de vorige
+            versie: het paneel is mintgroen (--g-075) in plaats van bijna wit, het beeld
+            wordt in het merkgroen getrokken, en de beeldkolom is smaller dan de helft
+            waardoor het blok breder en strakker leest. */}
+        <div className="mt-5 overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-075)] lg:grid lg:grid-cols-[0.88fr_1.12fr]">
+          <div className="relative min-h-[240px] bg-[var(--g-300)] sm:min-h-[260px] lg:min-h-[300px]">
             <Image
               key={selectedIntent.id}
               src={selectedIntent.image}
               alt={selectedIntent.imageAlt}
               fill
-              className="object-cover transition-opacity duration-500"
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-            <div
-              className="absolute inset-0 bg-[linear-gradient(135deg,rgba(148,188,138,.2),rgba(40,105,67,.15))]"
-              aria-hidden="true"
+              className="object-cover mix-blend-multiply transition-opacity duration-500"
+              sizes="(min-width: 1024px) 44vw, 100vw"
             />
           </div>
 
-          <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+          <div className="flex flex-col justify-center p-7 sm:p-9 lg:p-11">
             <Label>Jouw focus</Label>
             {/* Zelfde maat als de sectiekop hierboven: dit blok hoort bij die sectie
                 en mag daar niet overheen schreeuwen. */}

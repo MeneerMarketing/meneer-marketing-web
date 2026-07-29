@@ -16,14 +16,16 @@
   --g-200: #cbe5bf; /* beeldvlak achter portretten */
   --g-100: #dce8d9; /* lijn en rand */
   --g-050: #eef7e9; /* zacht sectievlak */
+  --g-075: #e5f3df; /* mintvlak uit het ontwerp (panelen, uitgelicht blok) */
   --g-025: #f2f7ef; /* sectietint */
   --g-010: #fcfdfb; /* paginavlak */
 
   /* ── Tekst op lichte vlakken (groengrijs, AA-gevalideerd) ── */
   --t-strong: #17372a; /* 12.73 — koppen, bodytekst */
-  --t-body: #5d7565; /*  4.55 — lopende tekst, kaartteksten */
-  --t-muted: #5e7662; /*  4.50 — footerlinks, proof-labels */
-  --t-label: #4c7a52; /*  4.54 — eyebrow-labels boven koppen */
+  --t-body: #526759; /*  4.50 — lopende tekst; haalt AA op elk licht vlak,
+                        ook op de mintkaart --g-200 */
+  --t-muted: #566b59; /*  4.50 — footerlinks, proof-labels */
+  --t-label: #46704b; /*  4.54 — eyebrow-labels boven koppen */
 
   /* ── Tekst op donkergroen (--g-700) ── */
   --on-dark: #ffffff; /* 6.58 — koppen */
@@ -155,6 +157,7 @@
   --color-g-200: var(--g-200);
   --color-g-100: var(--g-100);
   --color-g-050: var(--g-050);
+  --color-g-075: var(--g-075);
   --color-g-025: var(--g-025);
   --color-g-010: var(--g-010);
   --color-t-strong: var(--t-strong);
@@ -908,4 +911,6 @@ html.js-reveal [data-reveal].is-visible {
     animation: none;
   }
 }
+
+
 
