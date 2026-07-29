@@ -146,7 +146,7 @@ export default function FigmaHomeApp() {
       <section className="relative overflow-hidden px-5 py-10 sm:px-9 lg:px-[7.5vw]">
         <div className="mx-auto flex max-w-[1800px] flex-wrap items-center justify-between gap-5 rounded-[var(--r-lg)] bg-[var(--g-050)] px-7 py-6 sm:px-10">
           <div className="flex items-center gap-5">
-            <DibaIcon variant="dark" size={56} className="rounded-[var(--r-pill)]" />
+            <DibaIcon variant="groen" size={52} />
             <p className="max-w-xl text-sm leading-6 text-[var(--t-body)]">
               <strong className="font-medium text-[var(--g-700)]">
                 Elke huid wordt serieus genomen.
@@ -303,7 +303,7 @@ export default function FigmaHomeApp() {
                 <span className="diba-label rounded-[var(--r-pill)] bg-white px-4 py-2 text-[var(--g-700)]">
                   Mijn Diba
                 </span>
-                <DibaIcon variant="dark" size={40} />
+                <DibaIcon variant="groen" size={38} />
               </div>
               <h3 className="diba-display-s mt-16 max-w-lg">
                 Zie wat je huid

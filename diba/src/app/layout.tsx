@@ -98,10 +98,9 @@ export const metadata: Metadata = {
   },
   description: DIBA_CITAAT,
   metadataBase: new URL(DIBA_SITE.baseUrl),
-  icons: {
-    icon: "/images/diba-icon-dark.png",
-    apple: "/images/diba-icon-dark.png",
-  },
+  // Geen `icons` meer: src/app/icon.svg wordt automatisch als favicon opgepikt.
+  // Dat is de groene variant uit de merkmap (#405038) in plaats van de bijna-zwarte
+  // PNG, en 2 kB in plaats van 70 kB.
 };
 
 export default function RootLayout({
