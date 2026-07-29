@@ -24,6 +24,28 @@ import {
 } from "@/lib/figma-home-layout";
 import { DIBA_INSTAGRAM_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 
+/**
+ * De drie punten onder "Eerlijk advies". Concepttekst, overgenomen uit het ontwerp.
+ *
+ * Eén ding bewust anders dan het ontwerp: daar staat bij kosten "Geen verrassingen
+ * achteraf — tarieven staan openbaar." Gedachtestreepjes zijn verboden in copy (§10),
+ * dus dat is een punt geworden.
+ */
+const EERLIJK_ADVIES_PUNTEN = [
+  {
+    titel: "Geen behandeling zonder doel",
+    tekst: "We starten altijd met een huidmeting en een helder plan.",
+  },
+  {
+    titel: "Transparant over kosten",
+    tekst: "Geen verrassingen achteraf. Tarieven staan openbaar.",
+  },
+  {
+    titel: "Soms is wachten het beste",
+    tekst: "We zeggen het als een behandeling nu niet het juiste moment is.",
+  },
+] as const;
+
 const PROOF_STATS = [
   { stat: "4.000+", label: "klantreviews" },
   { stat: "50.000+", label: "uitgevoerde behandelingen" },
@@ -255,28 +277,63 @@ export default function FigmaHomeApp() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto grid max-w-[1800px] gap-8 lg:grid-cols-[.8fr_1.2fr]">
-          <div className="relative min-h-[360px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-200)]">
+      {/* Eerlijk advies. Kolommen 50/50 zoals in het ontwerp (stond op 40/60), beeld met
+          merkgroene waas plus vestigingslabel, en rechts een witte kaart met drie rijen
+          die de belofte concreet maken. Die rijen zijn het verschil: zonder hen is dit
+          een claim, met hen is het na te rekenen. */}
+      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto grid max-w-[1800px] items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
+          <div className="relative min-h-[320px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-400)] lg:min-h-[440px]">
             <Image
               src={FIGMA_EERLIJK_PORTRAIT}
               alt={FIGMA_EERLIJK_PORTRAIT_ALT}
               fill
-              sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover object-center"
+              sizes="(min-width: 1024px) 46vw, 100vw"
+              className="object-cover object-center mix-blend-multiply opacity-90"
             />
+            {/* Leeslaag onderaan, zodat het vestigingslabel altijd leesbaar is. */}
+            <div
+              className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(23,55,42,.55))]"
+              aria-hidden="true"
+            />
+            <span className="diba-label absolute bottom-6 left-6 text-white">
+              Diba Clinics · Rotterdam
+            </span>
           </div>
-          <div className="rounded-[var(--r-lg)] bg-white p-8 sm:p-12">
+
+          <div className="rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:p-10">
             <Label>Eerlijk advies</Label>
-            <h2 className="diba-display-m mt-5 max-w-xl">
+            <h2 className="diba-card-title-lg mt-4">
               Soms is niet behandelen óók het beste advies.
             </h2>
-            <p className="mt-7 max-w-xl text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
               Wij behandelen niet om te behandelen. We adviseren wat past bij jouw huid,
-              jouw doel en jouw veiligheid. Ook wanneer dat betekent dat je beter eerst
-              iets anders kunt doen.
+              jouw doel en jouw veiligheid.
             </p>
-            <Button href="/intake?topic=second-opinion" variant="secundair" className="mt-9">
+
+            <ul className="mt-6 space-y-2.5">
+              {EERLIJK_ADVIES_PUNTEN.map((punt) => (
+                <li
+                  key={punt.titel}
+                  className="flex gap-3 rounded-[var(--r-sm)] bg-[var(--g-050)] px-4 py-3.5"
+                >
+                  <span
+                    className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-500)]"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="block text-[15px] font-medium leading-6 text-[var(--t-strong)]">
+                      {punt.titel}
+                    </strong>
+                    <span className="mt-0.5 block text-sm leading-6 text-[var(--t-body)]">
+                      {punt.tekst}
+                    </span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <Button href="/intake?topic=second-opinion" variant="secundair" className="mt-7">
               Vraag een second opinion
             </Button>
           </div>
