@@ -56,29 +56,38 @@ export default function FigmaHomeApp() {
 
       <section id="top" className="relative mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid min-h-[730px] lg:grid-cols-[1.18fr_.82fr]">
-          <div className="flex flex-col justify-between py-14 lg:py-20">
-            <div className="diba-label flex items-center gap-3">
+          {/* De linkerkolom is de binnenkomer. Eén blok, verticaal gecentreerd tegenover
+              het beeld — geen `justify-between` meer. Dat duwde de slogan tegen de
+              bovenrand en de knoppen tegen de onderrand, met gaten ertussen die per
+              schermhoogte verschilden; daardoor stond die eerste regel los te zweven.
+
+              Ook nog maar één introregel. Er stonden er twee boven elkaar ("Trust the
+              green touch." én "Huidzorg die klopt"), die om dezelfde plek vochten. De
+              groene punt is meeverhuisd naar de overgebleven regel: dat is de Green
+              Touch als merkteken, niet als losse zin. De slogan zelf staat al in de
+              topbalk en in de footer. */}
+          <div className="flex flex-col justify-center py-16 lg:py-24">
+            <p className="diba-label flex items-center gap-2.5">
               <span
-                className="h-2 w-2 rounded-[var(--r-pill)] bg-[var(--g-400)]"
+                className="h-2 w-2 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-400)]"
                 aria-hidden="true"
               />
-              Trust the green touch.
-            </div>
+              Huidzorg die klopt
+            </p>
 
-            <div className="my-12">
-              <Label className="mb-5">Huidzorg die klopt</Label>
-              <h1 className="diba-display-xl max-w-4xl">
-                Geen gokwerk.
-                <br />
-                <span className="diba-accent">Wel jouw huid.</span>
-              </h1>
-              <p className="mt-8 max-w-md text-[16px] leading-7 text-[var(--t-body)]">
-                Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare prijzen,
-                en een nulmeting voordat we behandelen. Soms is het advies om even te wachten.
-              </p>
-            </div>
+            {/* max-w in ch: de kop breekt op de bedoelde plek en raakt de foto nooit. */}
+            <h1 className="diba-display-xl mt-6 max-w-[11ch]">
+              Geen gokwerk.
+              <br />
+              <span className="diba-accent">Wel jouw huid.</span>
+            </h1>
 
-            <div className="flex flex-wrap items-center gap-4">
+            <p className="mt-7 max-w-[44ch] text-[17px] leading-8 text-[var(--t-body)]">
+              Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare prijzen,
+              en een nulmeting voordat we behandelen. Soms is het advies om even te wachten.
+            </p>
+
+            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Button href="/intake">Start je intake (4 min)</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}

@@ -667,43 +667,47 @@ body:has(.figma-home) {
    donkergroen op donkergroen. In de components-laag is de klasse de basis en blijft
    een utility de uitzondering. */
 @layer components {
+  /* Hero. Stond op 8.3vw: dan is "Geen gokwerk." bij 1280px precies 633px breed in
+     een kolom van 633px, dus rand tot rand tegen de foto aan. Nu 6.9vw, waarmee de
+     langste regel op ongeveer 82% van de kolom uitkomt en er lucht omheen staat. */
   .diba-display-xl {
-    font-size: clamp(3.8rem, 8.3vw, 8.8rem);
-    line-height: 0.84;
-    letter-spacing: -0.08em;
+    font-size: clamp(3.2rem, 6.9vw, 7rem);
+    line-height: 0.86;
+    letter-spacing: -0.095em;
     font-weight: 500;
   }
 
-  /* ── Overgenomen uit het Figma-ontwerp, waarde voor waarde ──
-     Bron: _figma-import/src/App.tsx. Het breekpunt is 640px, precies waar Tailwind
-     zijn `sm:` legt, zodat de sprong op dezelfde plek valt als in het ontwerp.
-     Wijk hier niet van af zonder het ontwerp mee te veranderen. */
+  /* ── Groottes uit het Figma-ontwerp, tracking strakker ──
+     Bron: _figma-import/src/App.tsx, met het breekpunt op 640px waar Tailwind zijn
+     `sm:` legt. De gróótes komen daar één op één vandaan.
 
-  /* De twee momenten die ertoe doen: het bewijs en de volgende stap.
-     Figma: text-5xl leading-[.93] tracking-[-.065em] sm:text-7xl */
+     De tracking is bewust strakker dan die export: Yasins referentie laat koppen zien
+     waarin de letters elkaar bijna raken, en dat is het beeld dat we aanhouden.
+     Vuistregel die daaruit volgt: hoe groter de kop, hoe negatiever de tracking,
+     van -0.095em op de hero tot -0.055em op een kaartkop. */
+
+  /* De twee momenten die ertoe doen: het bewijs en de volgende stap. */
   .diba-display-l {
     font-size: 3rem;
-    line-height: 0.93;
-    letter-spacing: -0.065em;
+    line-height: 0.88;
+    letter-spacing: -0.09em;
     font-weight: 500;
     text-wrap: balance;
   }
 
-  /* Gewone sectiekoppen.
-     Figma: text-4xl leading-[.98] tracking-[-.06em] sm:text-6xl */
+  /* Gewone sectiekoppen. */
   .diba-display-m {
     font-size: 2.25rem;
-    line-height: 0.98;
-    letter-spacing: -0.06em;
+    line-height: 0.94;
+    letter-spacing: -0.075em;
     font-weight: 500;
     text-wrap: balance;
   }
 
-  /* Figma: text-2xl leading-[1.05] tracking-[-.05em], soms text-3xl */
   .diba-card-title {
     font-size: 1.5rem;
-    line-height: 1.05;
-    letter-spacing: -0.05em;
+    line-height: 1.02;
+    letter-spacing: -0.055em;
     font-weight: 500;
     text-wrap: balance;
   }
