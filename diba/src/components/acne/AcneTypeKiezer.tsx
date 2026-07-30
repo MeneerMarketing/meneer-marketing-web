@@ -80,6 +80,15 @@ export default function AcneTypeKiezer() {
           ))}
         </dl>
 
+        {/* Het misverstand dat bij dit type het vaakst voorkomt. Dit is de plek waar de
+            pagina iets wegneemt in plaats van iets uitlegt. */}
+        <div className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-075)] p-5">
+          <Label>Wat mensen hier vaak verkeerd hebben</Label>
+          <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
+            {publicCopy(type.verwarMetNiet)}
+          </p>
+        </div>
+
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
           <Button href={`/intake?topic=acne&beeld=${type.id}`}>
             Laat dit beeld bekijken

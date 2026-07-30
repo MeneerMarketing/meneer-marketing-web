@@ -27,6 +27,11 @@
   --t-muted: #566b59; /*  4.50 — footerlinks, proof-labels */
   --t-label: #46704b; /*  4.54 — eyebrow-labels boven koppen */
 
+  /* Oker heeft twee waarden nodig. --warn (#b0813c) is de grafische tint: punten,
+     lijnvullingen, iconen. Die haalt 3:1 en dat is genoeg voor grafiek, maar als tékst
+     zakt hij naar 3,47 op wit. Gebruik voor letters altijd --warn-text. */
+  --warn-text: #8b662f; /*  4.51 — laagste, op het mintvlak --g-075 */
+
   /* ── Tekst op donkergroen (--g-700) ── */
   --on-dark: #ffffff; /* 6.58 — koppen */
   --on-dark-body: #d2ead0; /* 5.14 — lopende tekst */
