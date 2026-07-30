@@ -28,6 +28,14 @@ const STATISCH_GEREED: readonly string[] = [
  */
 const STATISCH_IN_AANBOUW: readonly string[] = [
   "/huidproblemen",
+  // Huidproblemen met een eigen, uitgebouwde pagina. Ze staan hier los genoteerd
+  // omdat ze niet meer via PILLARS lopen: die filter kijkt naar de data, en deze
+  // pagina's hebben hun eigen inhoud. Ze blijven uit de sitemap tot Rojda de
+  // medische inhoud heeft nagelopen en de prijzen erin staan.
+  "/huidproblemen/acne",
+  "/huidproblemen/pigmentvlekken",
+  "/huidproblemen/rosacea",
+  "/huidproblemen/littekens",
   "/behandelingen",
   "/team",
   "/ons-verbond",

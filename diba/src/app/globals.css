@@ -82,6 +82,18 @@
   --warn: #b0813c;
   --error: #9c4038;
 
+  /* Littekenschaal — rood naar wit, de as van de littekenklok.
+     Geen merkkleuren maar een diagnostische reeks: rood is jong en reageert,
+     wit is uitgerijpt en reageert nauwelijks. Ze staan hier omdat elk hex in dit
+     blok hoort, en omdat de reeks als geheel klopt: gelijke stapjes in verzadiging.
+     Alleen als tekening gebruikt, nooit als tekst- of achtergrondkleur.
+     Gebruik ze via de .fase-*-klassen onderin; rechtstreeks uit TSX werkt niet. */
+  --litteken-vers: #b8524a;
+  --litteken-rijpend: #c4675c;
+  --litteken-verkleurend: #cf9b90;
+  --litteken-rijp: #ddc4bb;
+  --litteken-oud: #eee2dc;
+
   /* Type — gevuld door next/font/local in layout.tsx */
   --font-display: var(--font-archivo), Helvetica, sans-serif;
   --font-accent: var(--font-fraunces), Georgia, serif;
@@ -790,6 +802,139 @@ body:has(.figma-home) {
   /* De sweep van de mini-scan: één rondgang per 1,5s, zolang de scan loopt. */
   .diba-scan-sweep {
     animation: diba-sweep 1.5s linear infinite;
+  }
+
+  /* ── Fasekleur van de littekenklok ──
+     Twee dingen dwingen deze vorm af, allebei uit meting:
+
+     1. Een custom property die nergens ín CSS wordt gelezen haalt de gebouwde
+        stylesheet niet. `stroke="var(--litteken-vers)"` in een component telt niet
+        mee, dus de tokens verdwenen en de tekening werd onzichtbaar.
+     2. Alleen de waarde van een geërfde custom property wisselen laat `stroke` in
+        Chromium op zijn eerste waarde staan, ook mét een transitie erop. Wat wél
+        werkt is een andere régel laten matchen. Vandaar de klasse op de ouder en
+        de stroke hieronder per fase, in plaats van één doorgegeven variabele.
+
+     --fase-kleur blijft bestaan voor de schuifbalk, die geen transitie draait en
+     dus niet last heeft van punt 2. */
+  .fase-vers {
+    --fase-kleur: var(--litteken-vers);
+  }
+  .fase-rijpend {
+    --fase-kleur: var(--litteken-rijpend);
+  }
+  .fase-verkleurend {
+    --fase-kleur: var(--litteken-verkleurend);
+  }
+  .fase-rijp {
+    --fase-kleur: var(--litteken-rijp);
+  }
+  .fase-oud {
+    --fase-kleur: var(--litteken-oud);
+  }
+
+  .litteken-lijn {
+    transition: stroke var(--dur-page) var(--ease-diba);
+  }
+  .fase-vers .litteken-lijn {
+    stroke: var(--litteken-vers);
+  }
+  .fase-rijpend .litteken-lijn {
+    stroke: var(--litteken-rijpend);
+  }
+  .fase-verkleurend .litteken-lijn {
+    stroke: var(--litteken-verkleurend);
+  }
+  .fase-rijp .litteken-lijn {
+    stroke: var(--litteken-rijp);
+  }
+  .fase-oud .litteken-lijn {
+    stroke: var(--litteken-oud);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .litteken-lijn {
+      transition: none;
+    }
+  }
+
+  /* ── Schuifbalk ──
+     `appearance: none` is nodig om de baan zelf te tekenen, maar haalt in dezelfde
+     beweging de duim weg: dan zie je een streep waarvan niets verraadt dat je hem
+     kunt slepen. Vandaar de duim hieronder, expliciet in beide motoren.
+
+     De tint komt uit --fase-kleur (zie hierboven), de stand uit --schuif-voortgang,
+     die het component als percentage meegeeft.
+
+     De duim is 24px en de baan 8px, dus het raakvlak is groter dan de lijn suggereert.
+     Wie liever tikt dan sleept heeft eronder nog de knoppenrij van 48px hoog. */
+  .diba-schuif {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 24px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .diba-schuif::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: var(--r-pill);
+    background: linear-gradient(
+      to right,
+      var(--fase-kleur, var(--g-700)) 0 var(--schuif-voortgang),
+      var(--g-100) var(--schuif-voortgang) 100%
+    );
+  }
+
+  .diba-schuif::-moz-range-track {
+    height: 8px;
+    border-radius: var(--r-pill);
+    background: linear-gradient(
+      to right,
+      var(--fase-kleur, var(--g-700)) 0 var(--schuif-voortgang),
+      var(--g-100) var(--schuif-voortgang) 100%
+    );
+  }
+
+  .diba-schuif::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    margin-top: -8px;
+    border-radius: var(--r-pill);
+    background: white;
+    border: 3px solid var(--fase-kleur, var(--g-700));
+    box-shadow: var(--shadow-float);
+    transition: border-color var(--dur-page) var(--ease-diba);
+  }
+
+  .diba-schuif::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: var(--r-pill);
+    background: white;
+    border: 3px solid var(--fase-kleur, var(--g-700));
+    box-shadow: var(--shadow-float);
+    transition: border-color var(--dur-page) var(--ease-diba);
+  }
+
+  .diba-schuif:focus-visible::-webkit-slider-thumb {
+    outline: 2px solid var(--g-700);
+    outline-offset: 3px;
+  }
+
+  .diba-schuif:focus-visible::-moz-range-thumb {
+    outline: 2px solid var(--g-700);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .diba-schuif::-webkit-slider-thumb,
+    .diba-schuif::-moz-range-thumb {
+      transition: none;
+    }
   }
 }
 

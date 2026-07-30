@@ -13,7 +13,6 @@ import {
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Triggersorteerder from "@/components/rosacea/Triggersorteerder";
 import Button from "@/components/ui/Button";
-import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
 import {

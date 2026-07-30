@@ -8,6 +8,7 @@ import {
   useState,
   type KeyboardEvent,
 } from "react";
+import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 type ScanDimension = {
   id: string;
@@ -130,9 +131,12 @@ export default function EveMHuidscanVisual({
   surface = "dark",
 }: EveMHuidscanVisualProps) {
   const [sweepAngle, setSweepAngle] = useState(0);
-  const [activeIndex, setActiveIndex] = useState(0);
   const [hovered, setHovered] = useState<number | null>(null);
-  const [paused, setPaused] = useState(false);
+  const [stilgezet, setStilgezet] = useState(false);
+  // Wie beweging heeft uitgezet krijgt een stilstaande radar, en kan hem ook niet
+  // per ongeluk starten. Afgeleid, dus geen effect dat state naloopt.
+  const reduced = useReducedMotion();
+  const paused = stilgezet || reduced;
   const rafRef = useRef<number | null>(null);
   const lastTickRef = useRef<number>(0);
   const uid = useId().replace(/:/g, "");
@@ -141,11 +145,6 @@ export default function EveMHuidscanVisual({
   const sweepFillId = `eve-sweep-fill-${uid}`;
   const sweepLineId = `eve-sweep-line-${uid}`;
   const sweepSoftId = `eve-sweep-soft-${uid}`;
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (mq.matches) setPaused(true);
-  }, []);
 
   useEffect(() => {
     if (paused) return undefined;
@@ -170,31 +169,30 @@ export default function EveMHuidscanVisual({
     };
   }, [paused]);
 
-  useEffect(() => {
-    if (hovered !== null || paused) return;
-    setActiveIndex(indexFromSweepAngle(sweepAngle));
-  }, [sweepAngle, hovered, paused]);
-
-  const focusIndex = hovered ?? activeIndex;
+  // De actieve as ís de hoek van de sweep — niets om apart bij te houden. Een klik
+  // parkeert de sweep op die as (zie selectIndex), dus kiezen werkt langs dezelfde weg.
+  const sweepIndex = indexFromSweepAngle(sweepAngle);
+  const focusIndex = hovered ?? sweepIndex;
   const active = DIMENSIONS[focusIndex];
   const scores = DIMENSIONS.map((d, i) =>
     i === focusIndex ? Math.min(100, d.score + 5) : d.score,
   );
 
-  const onKey = useCallback((event: KeyboardEvent<HTMLButtonElement>, index: number) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      setActiveIndex(index);
-      setPaused(true);
-    }
-  }, []);
-
-  const selectIndex = (index: number) => {
-    setActiveIndex(index);
-    setPaused(true);
+  const selectIndex = useCallback((index: number) => {
+    setStilgezet(true);
     const step = 360 / COUNT;
     setSweepAngle(index * step);
-  };
+  }, []);
+
+  const onKey = useCallback(
+    (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        selectIndex(index);
+      }
+    },
+    [selectIndex],
+  );
 
   const onLight = surface === "light" || surface === "hero-block";
 
@@ -203,9 +201,9 @@ export default function EveMHuidscanVisual({
       className={`mx-auto w-full max-w-[520px] ${className}`}
       role="group"
       aria-labelledby={titleId}
-      onMouseEnter={() => setPaused(true)}
+      onMouseEnter={() => setStilgezet(true)}
       onMouseLeave={() => {
-        setPaused(false);
+        setStilgezet(false);
         setHovered(null);
         lastTickRef.current = 0;
       }}
@@ -493,13 +491,13 @@ export default function EveMHuidscanVisual({
             <button
               key={dim.id}
               type="button"
-              aria-pressed={activeIndex === i}
+              aria-pressed={sweepIndex === i}
               aria-describedby={isActive ? detailId : undefined}
               onClick={() => selectIndex(i)}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
               onFocus={() => {
-                setPaused(true);
+                setStilgezet(true);
                 setHovered(i);
               }}
               onBlur={() => setHovered(null)}

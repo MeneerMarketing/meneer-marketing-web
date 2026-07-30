@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Button from "@/components/ui/Button";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icon";
+import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 /**
  * De mini-scan — het interactieve hart van de huidscan-sectie.
@@ -151,25 +152,6 @@ function punt(index: number, straal: number) {
 
 function veelhoek(straal: number) {
   return ASSEN.map((_, i) => punt(i, straal).join(",")).join(" ");
-}
-
-const REDUCED_QUERY = "(prefers-reduced-motion: reduce)";
-
-/**
- * matchMedia is een externe bron, geen afgeleide state — vandaar
- * useSyncExternalStore in plaats van een effect met setState. Op de server is het
- * antwoord altijd false, zodat de opbouw client-side alsnog klopt.
- */
-function useReducedMotion() {
-  return useSyncExternalStore(
-    (herteken) => {
-      const mq = window.matchMedia(REDUCED_QUERY);
-      mq.addEventListener("change", herteken);
-      return () => mq.removeEventListener("change", herteken);
-    },
-    () => window.matchMedia(REDUCED_QUERY).matches,
-    () => false,
-  );
 }
 
 type Fase = "intro" | "vragen" | "scannen" | "resultaat";
