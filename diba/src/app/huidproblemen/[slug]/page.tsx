@@ -15,8 +15,15 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+/**
+ * Slugs met een eigen, uitgebouwde pagina. Een statische route wint van deze dynamische,
+ * dus die pagina's hier ook genereren levert alleen een dubbele build op die niemand ziet.
+ * Haal een slug uit deze lijst zodra zijn eigen pagina er níet meer is.
+ */
+const EIGEN_PAGINA = new Set(["acne", "pigmentvlekken", "rosacea"]);
+
 export function generateStaticParams() {
-  return PILLARS.map((p) => ({ slug: p.slug }));
+  return PILLARS.filter((p) => !EIGEN_PAGINA.has(p.slug)).map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

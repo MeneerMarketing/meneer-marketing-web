@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 /**
- * Meelopende inhoudsnavigatie voor een lange educatieve pagina.
+ * Meelopende inhoudsnavigatie voor de lange huidprobleem-paginas.
  *
  * Deze pagina is bewust lang. Zonder oriëntatie is dat vervelend, dus loopt er een dunne
  * balk mee die laat zien waar je bent. De actieve sectie is de onderste die de bovenkant
@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 
 type Anker = { readonly id: string; readonly label: string };
 
-export default function AcnePaginaNav({ ankers }: { ankers: readonly Anker[] }) {
+export default function PillarNav({ ankers }: { ankers: readonly Anker[] }) {
   const [actief, setActief] = useState(ankers[0]?.id ?? "");
 
   useEffect(() => {

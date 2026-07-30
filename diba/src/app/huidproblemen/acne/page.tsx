@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AcneOnderDeHuid from "@/components/acne/AcneOnderDeHuid";
-import AcnePaginaNav from "@/components/acne/AcnePaginaNav";
+import PillarNav from "@/components/pillar/PillarNav";
 import AcneTijdlijn from "@/components/acne/AcneTijdlijn";
 import AcneTypeKiezer from "@/components/acne/AcneTypeKiezer";
 import AcneZoneKaart from "@/components/acne/AcneZoneKaart";
@@ -134,7 +134,7 @@ export default function AcnePage() {
 
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
-      <AcnePaginaNav ankers={ANKERS} />
+      <PillarNav ankers={ANKERS} />
 
       {/* ── De acnekaart: het onderdeel dat deze pagina onderscheidt ────── */}
       <section
