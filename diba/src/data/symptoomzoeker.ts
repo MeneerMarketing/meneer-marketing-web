@@ -42,10 +42,18 @@ export const KENMERKEN: readonly Kenmerk[] = [
   { id: "ziek", tekst: "Ik voel me er ziek bij", urgent: true },
 ];
 
+/**
+ * Waar een onderwerp thuishoort. Dit is niet zomaar een indeling: het is de indeling.
+ * Geen enkele andere kliniek zet op zijn overzicht welke onderwerpen ze wegsturen, en
+ * precies daarom staat het hier bovenaan in plaats van in de kleine lettertjes.
+ */
+export type Groep = "behandelen" | "doorverwijzen" | "niet" | "wegwijzer";
+
 export type Bestemming = {
   readonly naam: string;
   readonly pad: string;
   readonly zin: string;
+  readonly groep: Groep;
   readonly kenmerken: readonly string[];
 };
 
@@ -54,96 +62,112 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Acne",
     pad: "/huidproblemen/acne",
     zin: "Waar het zit op je gezicht zegt iets over waar het vandaan komt.",
+    groep: "behandelen",
     kenmerken: ["puistjes", "rood", "glans", "bultjes"],
   },
   {
     naam: "Rosacea",
     pad: "/huidproblemen/rosacea",
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",
+    groep: "behandelen",
     kenmerken: ["rood", "bultjes", "prikt"],
   },
   {
     naam: "Pigmentvlekken",
     pad: "/huidproblemen/pigmentvlekken",
     zin: "Bruine plekjes van opgebouwde zon, en het seizoen bepaalt wanneer je begint.",
+    groep: "behandelen",
     kenmerken: ["bruine-vlek"],
   },
   {
     naam: "Melasma",
     pad: "/huidproblemen/melasma",
     zin: "Grotere bruine vlakken met een hormonale kant. De diepte bepaalt alles.",
+    groep: "behandelen",
     kenmerken: ["bruine-vlek"],
   },
   {
     naam: "Littekens en striae",
     pad: "/huidproblemen/littekens",
     zin: "Hoe oud het is bepaalt meer dan welke techniek dan ook.",
+    groep: "behandelen",
     kenmerken: ["strepen", "kuiltjes", "witte-vlek"],
   },
   {
     naam: "Huidveroudering",
     pad: "/huidproblemen/huidveroudering",
     zin: "Wat komt door tijd en wat komt door zon, en alleen op dat tweede zit een knop.",
+    groep: "behandelen",
     kenmerken: ["lijntjes", "ruw", "bruine-vlek"],
   },
   {
     naam: "Poriën",
     pad: "/huidproblemen/porien",
     zin: "Kleiner maken kan niet. Minder zichtbaar wel, en dat scheelt meer dan je denkt.",
+    groep: "behandelen",
     kenmerken: ["glans", "ruw"],
   },
   {
     naam: "Droge huid",
     pad: "/huidproblemen/droge-huid",
     zin: "Droog en uitgedroogd zijn twee losse assen, en daar gaat het meestal mis.",
+    groep: "behandelen",
     kenmerken: ["droog", "ruw", "schilfers"],
   },
   {
     naam: "Gevoelige huid",
     pad: "/huidproblemen/gevoelige-huid",
     zin: "Meestal geen huidtype maar een routine die is volgestapeld.",
+    groep: "behandelen",
     kenmerken: ["prikt", "rood", "droog", "jeuk"],
   },
   {
     naam: "Donkere kringen",
     pad: "/huidproblemen/donkere-kringen",
     zin: "Drie oorzaken die er hetzelfde uitzien, en bij één kunnen wij niets.",
+    groep: "behandelen",
     kenmerken: ["kringen"],
   },
   {
     naam: "Eczeem",
     pad: "/huidproblemen/eczeem",
     zin: "Een cirkel en geen plek. Hoort bij de huisarts, en die heeft er behandeling voor.",
+    groep: "doorverwijzen",
     kenmerken: ["jeuk", "schilfers", "rood", "droog"],
   },
   {
     naam: "Psoriasis",
     pad: "/huidproblemen/psoriasis",
     zin: "Meer dan huid. Let vooral op je nagels en je gewrichten.",
+    groep: "doorverwijzen",
     kenmerken: ["schilfers", "rood"],
   },
   {
     naam: "Huiduitslag",
     pad: "/huidproblemen/huiduitslag",
     zin: "Eerst de vraag of je vandaag belt of morgen. Doe de glastest.",
+    groep: "doorverwijzen",
     kenmerken: ["rood", "jeuk", "ziek"],
   },
   {
     naam: "Cellulitis",
     pad: "/huidproblemen/cellulitis",
     zin: "Geen vet maar bouw. Wij behandelen het niet en leggen uit waarom niemand dat kan.",
+    groep: "niet",
     kenmerken: ["kuiltjes"],
   },
   {
     naam: "Moedervlekken",
     pad: "/huidproblemen/moedervlekken",
     zin: "Hiervoor moet je niet bij ons zijn. Wel staat hier waar je op let.",
+    groep: "doorverwijzen",
     kenmerken: ["verandert"],
   },
   {
     naam: "Huidverkleuring",
     pad: "/huidproblemen/huidverkleuring",
     zin: "Weet je niet hoe je het noemt? Begin dan bij de kleur.",
+    groep: "wegwijzer",
     kenmerken: ["bruine-vlek", "witte-vlek", "rood"],
   },
 ];

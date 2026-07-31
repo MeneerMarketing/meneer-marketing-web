@@ -102,7 +102,7 @@ export function WelNiet({
                   >
                     <path d="M4 10.5 8 14.5 16 5.5" />
                   </svg>
-                  <span className="text-[var(--t-body)]">{r}</span>
+                  <span className="text-[var(--t-body)]">{publicCopy(r)}</span>
                 </li>
               ))}
             </ul>
@@ -124,7 +124,7 @@ export function WelNiet({
                   >
                     <path d="M5.5 5.5l9 9M14.5 5.5l-9 9" />
                   </svg>
-                  <span className="text-[var(--t-body)]">{r}</span>
+                  <span className="text-[var(--t-body)]">{publicCopy(r)}</span>
                 </li>
               ))}
             </ul>

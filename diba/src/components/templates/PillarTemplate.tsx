@@ -175,8 +175,8 @@ export default function PillarTemplate({
           />
           <div className="mt-12">
             <FigmaWelNietGrid
-              wel={c.welNiet.wel.map(publicCopy)}
-              niet={c.welNiet.niet.map(publicCopy)}
+              wel={c.welNiet.wel.map((t) => publicCopy(t))}
+              niet={c.welNiet.niet.map((t) => publicCopy(t))}
             />
           </div>
         </div>
