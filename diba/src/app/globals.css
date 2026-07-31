@@ -94,6 +94,10 @@
   --litteken-rijp: #ddc4bb;
   --litteken-oud: #eee2dc;
 
+  /* Verwijde vaatjes in de schematische huid van de onderarmtest. Alleen grafisch,
+     nooit als tekst. Gebruik via .huid-vaatje, zie de opmerking hierboven. */
+  --vaatje: #c2726a;
+
   /* Type — gevuld door next/font/local in layout.tsx */
   --font-display: var(--font-archivo), Helvetica, sans-serif;
   --font-accent: var(--font-fraunces), Georgia, serif;
@@ -856,6 +860,12 @@ body:has(.figma-home) {
     .litteken-lijn {
       transition: none;
     }
+  }
+
+  /* Zelfde reden als hierboven: een token dat alleen vanuit een component wordt
+     aangeroepen haalt de gebouwde stylesheet niet. Deze klasse leest hem wél. */
+  .huid-vaatje {
+    stroke: var(--vaatje);
   }
 
   /* ── Schuifbalk ──

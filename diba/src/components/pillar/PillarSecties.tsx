@@ -162,7 +162,16 @@ export function WijZeggenNee({
           opDonker
         />
 
-        <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-white/15 md:grid-cols-3">
+        {/* De kolommen volgen het aantal punten. Met vast drie kolommen laat een
+            vierde punt twee lege cellen achter, en die krijgen door de gap-truc de
+            lichtere achtergrond van de lijst: een leeg blok dat er opzettelijk uitziet. */}
+        <ul
+          className={`mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-white/15 ${
+            punten.length % 3 === 0 || punten.length % 2 !== 0
+              ? "md:grid-cols-3"
+              : "md:grid-cols-2"
+          }`}
+        >
           {punten.map((p) => (
             <li key={p.titel} className="bg-[var(--g-700)] p-6 sm:p-8">
               <h3 className="diba-card-title">{p.titel}</h3>
