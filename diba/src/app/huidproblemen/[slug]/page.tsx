@@ -34,6 +34,8 @@ const EIGEN_PAGINA = new Set([
   "melasma",
   "droge-huid",
   "gevoelige-huid",
+  "eczeem",
+  "psoriasis",
 ]);
 
 export function generateStaticParams() {
