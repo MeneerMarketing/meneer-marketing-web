@@ -27,6 +27,7 @@ const EIGEN_PAGINA = new Set([
   "littekens",
   "huidveroudering",
   "porien",
+  "donkere-kringen",
 ]);
 
 export function generateStaticParams() {

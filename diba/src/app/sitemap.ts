@@ -38,6 +38,7 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   "/huidproblemen/littekens",
   "/huidproblemen/huidveroudering",
   "/huidproblemen/porien",
+  "/huidproblemen/donkere-kringen",
   "/behandelingen",
   "/team",
   "/ons-verbond",
