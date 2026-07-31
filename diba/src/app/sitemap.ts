@@ -46,6 +46,8 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   "/huidproblemen/gevoelige-huid",
   "/huidproblemen/eczeem",
   "/huidproblemen/psoriasis",
+  "/huidproblemen/huiduitslag",
+  "/huidproblemen/cellulitis",
   "/behandelingen",
   "/team",
   "/ons-verbond",
