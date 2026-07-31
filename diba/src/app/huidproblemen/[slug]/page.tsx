@@ -31,6 +31,7 @@ const EIGEN_PAGINA = new Set([
   // Doorverwijzingen: eigen statische route die de dynamische afvangt.
   "huidkanker-naevi",
   "striae",
+  "melasma",
 ]);
 
 export function generateStaticParams() {
