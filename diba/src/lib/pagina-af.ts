@@ -46,6 +46,26 @@ export function isPaginaAf(content: unknown): boolean {
 }
 
 /**
+ * ── DE SCHAKELAAR ──
+ *
+ * Zolang de site niet live staat is `noindex` zinloos: er is geen domein waar Google
+ * langskomt, dus er valt niets te beschermen. Besluit Yasin, 31-07-2026: eruit.
+ *
+ * Hij staat hier als één constante en niet verspreid over vijfendertig bestanden, want
+ * op de dag dat het domein live gaat is dit wél weer nodig. Dan bestaan er pagina's met
+ * `[MEDISCHE-CHECK-ROJDA]` erin en prijzen van nul euro, en die horen niet in de index.
+ *
+ * **Vóór livegang: zet dit op `true`.** Dan dragen alle onafgeronde pagina's weer
+ * `noindex, follow` en meldt de sitemap ze niet aan. Verder hoeft er niets te wijzigen.
+ */
+const POORTJE_ACTIEF = false;
+
+/** Voor de sitemap, zodat die dezelfde schakelaar volgt als de metadata. */
+export function poortjeActief() {
+  return POORTJE_ACTIEF;
+}
+
+/**
  * Metadata-fragment voor een pagina die nog niet af is.
  *
  * Spreid over `robots` zodat het samen met de rest van de metadata werkt:
@@ -60,7 +80,8 @@ export function robotsVoor(af: boolean) {
  *
  *   export const metadata = { title: "Prijzen", ...NOG_IN_AANBOUW };
  *
- * `follow: true` is bewust: de pagina mag niet in de index, maar de links erop
+ * Met het poortje uit is dit een leeg object en zetten de pagina's dus niets. Staat het
+ * aan, dan is `follow: true` bewust: de pagina mag niet in de index, maar de links erop
  * mogen wel gevolgd worden zodat de rest van de site vindbaar blijft.
  *
  * Let op wat hier NIET staat: een `description`. Vijftien pagina's hadden
@@ -68,6 +89,6 @@ export function robotsVoor(af: boolean) {
  * Zonder description stelt Google er zelf een samen uit de pagina — altijd beter
  * dan een redactievlag.
  */
-export const NOG_IN_AANBOUW = {
-  robots: { index: false, follow: true },
-} as const;
+export const NOG_IN_AANBOUW = POORTJE_ACTIEF
+  ? ({ robots: { index: false, follow: true } } as const)
+  : ({} as const);

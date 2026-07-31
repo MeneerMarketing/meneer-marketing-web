@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { INSURERS } from "@/data/insurers";
 import { PILLARS } from "@/data/pillars";
 import { TREATMENTS } from "@/data/treatments";
-import { isPaginaAf } from "@/lib/pagina-af";
+import { isPaginaAf, poortjeActief } from "@/lib/pagina-af";
 import { DIBA_SITE_URL } from "@/lib/site";
 
 /**
@@ -24,7 +24,8 @@ const STATISCH_GEREED: readonly string[] = [
 
 /**
  * Routes die bestaan maar nog niet af zijn. Hier alleen genoteerd zodat zichtbaar is
- * wat er nog wacht — ze komen niet in de sitemap en dragen `noindex`.
+ * wat er nog wacht. Zolang het poortje uit staat (zie lib/pagina-af.ts) dragen ze géén
+ * noindex; deze lijst is dan puur de werkvoorraad.
  */
 const STATISCH_IN_AANBOUW: readonly string[] = [
   "/huidproblemen",
@@ -78,6 +79,10 @@ export const SITEMAP_STATUS = {
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
+  // Dezelfde schakelaar als bij de metadata (zie lib/pagina-af.ts). Met het poortje uit
+  // meldt de sitemap alles aan; staat hij aan, dan blijven onafgeronde routes eruit.
+  const gereed = (content: unknown) => !poortjeActief() || isPaginaAf(content);
+
   const statisch: MetadataRoute.Sitemap = STATISCH_GEREED.map((path) => ({
     url: `${DIBA_SITE_URL}${path}`,
     lastModified: now,
@@ -85,14 +90,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "" ? 1 : 0.7,
   }));
 
-  const pillars: MetadataRoute.Sitemap = PILLARS.filter(isPaginaAf).map((p) => ({
+  const pillars: MetadataRoute.Sitemap = PILLARS.filter(gereed).map((p) => ({
     url: `${DIBA_SITE_URL}/huidproblemen/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
-  const behandelingen: MetadataRoute.Sitemap = TREATMENTS.filter(isPaginaAf).map((t) => ({
+  const behandelingen: MetadataRoute.Sitemap = TREATMENTS.filter(gereed).map((t) => ({
     url: `${DIBA_SITE_URL}/behandelingen/${t.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
@@ -106,7 +111,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const VERGOEDINGEN_GEREED = false;
 
   const vergoedingen: MetadataRoute.Sitemap = VERGOEDINGEN_GEREED
-    ? INSURERS.filter(isPaginaAf).map((i) => ({
+    ? INSURERS.filter(gereed).map((i) => ({
         url: `${DIBA_SITE_URL}/vergoedingen/${i.slug}`,
         lastModified: now,
         changeFrequency: "monthly" as const,
