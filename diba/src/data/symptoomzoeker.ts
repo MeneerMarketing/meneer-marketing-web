@@ -53,6 +53,12 @@ export type Bestemming = {
   readonly naam: string;
   readonly pad: string;
   readonly zin: string;
+  /**
+   * De vraag waarmee de pagina begint. Dit is het onderscheidende van de hele reeks:
+   * elk huidprobleem heeft een andere eerste vraag, en wie met de verkeerde begint
+   * behandelt maanden het verkeerde.
+   */
+  readonly eersteVraag: string;
   readonly groep: Groep;
   readonly kenmerken: readonly string[];
 };
@@ -62,6 +68,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Acne",
     pad: "/huidproblemen/acne",
     zin: "Waar het zit op je gezicht zegt iets over waar het vandaan komt.",
+    eersteVraag: "Waar op je gezicht zit het?",
     groep: "behandelen",
     kenmerken: ["puistjes", "rood", "glans", "bultjes"],
   },
@@ -69,6 +76,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Rosacea",
     pad: "/huidproblemen/rosacea",
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",
+    eersteVraag: "Wat zet het aan?",
     groep: "behandelen",
     kenmerken: ["rood", "bultjes", "prikt"],
   },
@@ -76,6 +84,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Pigmentvlekken",
     pad: "/huidproblemen/pigmentvlekken",
     zin: "Bruine plekjes van opgebouwde zon, en het seizoen bepaalt wanneer je begint.",
+    eersteVraag: "Welk seizoen is het?",
     groep: "behandelen",
     kenmerken: ["bruine-vlek"],
   },
@@ -83,6 +92,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Melasma",
     pad: "/huidproblemen/melasma",
     zin: "Grotere bruine vlakken met een hormonale kant. De diepte bepaalt alles.",
+    eersteVraag: "Hoe diep zit het pigment?",
     groep: "behandelen",
     kenmerken: ["bruine-vlek"],
   },
@@ -90,6 +100,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Littekens en striae",
     pad: "/huidproblemen/littekens",
     zin: "Hoe oud het is bepaalt meer dan welke techniek dan ook.",
+    eersteVraag: "Hoe oud is het litteken?",
     groep: "behandelen",
     kenmerken: ["strepen", "kuiltjes", "witte-vlek"],
   },
@@ -97,6 +108,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Huidveroudering",
     pad: "/huidproblemen/huidveroudering",
     zin: "Wat komt door tijd en wat komt door zon, en alleen op dat tweede zit een knop.",
+    eersteVraag: "Is dit tijd of is dit zon?",
     groep: "behandelen",
     kenmerken: ["lijntjes", "ruw", "bruine-vlek"],
   },
@@ -104,6 +116,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Poriën",
     pad: "/huidproblemen/porien",
     zin: "Kleiner maken kan niet. Minder zichtbaar wel, en dat scheelt meer dan je denkt.",
+    eersteVraag: "Wat valt er eigenlijk te veranderen?",
     groep: "behandelen",
     kenmerken: ["glans", "ruw"],
   },
@@ -111,6 +124,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Droge huid",
     pad: "/huidproblemen/droge-huid",
     zin: "Droog en uitgedroogd zijn twee losse assen, en daar gaat het meestal mis.",
+    eersteVraag: "Mist er vet of mist er water?",
     groep: "behandelen",
     kenmerken: ["droog", "ruw", "schilfers"],
   },
@@ -118,6 +132,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Gevoelige huid",
     pad: "/huidproblemen/gevoelige-huid",
     zin: "Meestal geen huidtype maar een routine die is volgestapeld.",
+    eersteVraag: "Wat staat er allemaal aan?",
     groep: "behandelen",
     kenmerken: ["prikt", "rood", "droog", "jeuk"],
   },
@@ -125,6 +140,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Donkere kringen",
     pad: "/huidproblemen/donkere-kringen",
     zin: "Drie oorzaken die er hetzelfde uitzien, en bij één kunnen wij niets.",
+    eersteVraag: "Is het kleur of is het schaduw?",
     groep: "behandelen",
     kenmerken: ["kringen"],
   },
@@ -132,6 +148,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Eczeem",
     pad: "/huidproblemen/eczeem",
     zin: "Een cirkel en geen plek. Hoort bij de huisarts, en die heeft er behandeling voor.",
+    eersteVraag: "Waar valt de cirkel te breken?",
     groep: "doorverwijzen",
     kenmerken: ["jeuk", "schilfers", "rood", "droog"],
   },
@@ -139,6 +156,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Psoriasis",
     pad: "/huidproblemen/psoriasis",
     zin: "Meer dan huid. Let vooral op je nagels en je gewrichten.",
+    eersteVraag: "Zitten je nagels en gewrichten er ook bij?",
     groep: "doorverwijzen",
     kenmerken: ["schilfers", "rood"],
   },
@@ -146,6 +164,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Huiduitslag",
     pad: "/huidproblemen/huiduitslag",
     zin: "Eerst de vraag of je vandaag belt of morgen. Doe de glastest.",
+    eersteVraag: "Bel je vandaag of morgen?",
     groep: "doorverwijzen",
     kenmerken: ["rood", "jeuk", "ziek"],
   },
@@ -153,6 +172,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Cellulitis",
     pad: "/huidproblemen/cellulitis",
     zin: "Geen vet maar bouw. Wij behandelen het niet en leggen uit waarom niemand dat kan.",
+    eersteVraag: "Gaat dit over vet of over bouw?",
     groep: "niet",
     kenmerken: ["kuiltjes"],
   },
@@ -160,6 +180,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Moedervlekken",
     pad: "/huidproblemen/moedervlekken",
     zin: "Hiervoor moet je niet bij ons zijn. Wel staat hier waar je op let.",
+    eersteVraag: "Is er iets veranderd?",
     groep: "doorverwijzen",
     kenmerken: ["verandert"],
   },
@@ -167,6 +188,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Huidverkleuring",
     pad: "/huidproblemen/huidverkleuring",
     zin: "Weet je niet hoe je het noemt? Begin dan bij de kleur.",
+    eersteVraag: "Welke kleur heeft het?",
     groep: "wegwijzer",
     kenmerken: ["bruine-vlek", "witte-vlek", "rood"],
   },

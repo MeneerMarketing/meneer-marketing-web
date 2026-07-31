@@ -14,24 +14,23 @@ import {
 /**
  * Het overzicht van alle huidproblemen.
  *
- * De indeling ís het punt van deze pagina. Elke andere kliniek zet zijn onderwerpen op
- * alfabet of op populariteit, want alles is toch te koop. Hier staan ze gegroepeerd naar
- * wat wíj ermee doen, en dan wordt meteen zichtbaar dat vier van de zestien onderwerpen
- * naar de huisarts gaan en één nergens heen.
+ * De kop gaat over huid en niet over deze website. Een eerdere versie opende met
+ * "zeventien pagina's, vijf gaan niet over ons": waar voor de bouwer, nutteloos voor
+ * iemand die met een probleem binnenkomt.
  *
- * Dat is geen eerlijkheid in de kleine lettertjes onderaan maar de structuur zelf.
+ * Wat er nu staat is het idee achter de hele reeks: elke aandoening heeft een andere
+ * eerste vraag, en met de verkeerde vraag beginnen kost maanden. Dat is klinisch, het is
+ * waar, en het verklaart in één zin waarom deze zeventien pagina's niet op elkaar lijken.
  *
- * Herbouwd in de huisstijl van de zeventien onderliggende pagina's; hij draaide nog op
- * het oude sjabloon met FigmaHeading en de figma-inner-layout-klassen, en week daarmee
- * zichtbaar af van alles waar hij naar linkt.
+ * De groepen zitten nu in het raster, in klinische taal in plaats van als paginatelling.
  *
  * Twee donkergroene vlakken, niet meer (§5): de zoeker bovenaan en de intake onderaan.
  */
 
 export const metadata: Metadata = {
-  title: "Huidproblemen: wat we behandelen en wat niet",
+  title: "Huidproblemen: elk probleem zijn eigen eerste vraag",
   description:
-    "Zestien huidproblemen, ingedeeld naar wat wij ermee doen. Vier gaan naar de huisarts en bij één doen we niets.",
+    "Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.",
 };
 
 export default function HuidproblemenPage() {
@@ -60,22 +59,21 @@ export default function HuidproblemenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Zeventien pagina&apos;s.
+              Elk huidprobleem heeft
               <br />
-              <span className="diba-accent">Vijf gaan niet over ons.</span>
+              <span className="diba-accent">een eigen eerste vraag.</span>
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De meeste kliniekwebsites zetten hun onderwerpen op alfabet, want
-              alles is toch te koop. Hier staan ze op volgorde van wat wij ermee
-              doen, en dan valt meteen op dat een deel bij een arts hoort en één
-              onderwerp nergens.
+              Bij acne telt wáár het zit, want de plek zegt iets over de
+              oorzaak. Bij pigment telt welk seizoen het is. Bij littekens telt
+              hoe oud ze zijn, en bij melasma hoe diep het pigment ligt.
             </p>
 
             <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Elke pagina begint bij de vraag die er bij dat probleem het meest
-              toe doet. Bij littekens is dat hoe oud het is, bij pigment welk
-              seizoen het is, en bij poriën dat kleiner maken niet kan.
+              Dat klinkt als een detail en het bepaalt de uitkomst. Wie met de
+              verkeerde vraag begint, behandelt maanden het verkeerde en denkt
+              daarna dat het niet werkt.
             </p>
           </div>
 
@@ -108,8 +106,10 @@ export default function HuidproblemenPage() {
 
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
-      {/* ── Het filterbare raster ── */}
-      <section className="bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      {/* ── Het filterbare raster ──
+          Wit vlak, mintkaarten. Stond de sectie ook op mint, dan liepen kaart en
+          ondergrond in elkaar over en las het als losse tekst in plaats van als kaarten. */}
+      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <Raster />
         </div>

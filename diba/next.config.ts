@@ -2,6 +2,26 @@ import type { NextConfig } from "next";
 import { LEGACY_REDIRECTS } from "./src/data/redirects";
 
 const nextConfig: NextConfig = {
+  /**
+   * Wie de dev-server op zijn telefoon opent via het lokale IP in plaats van via
+   * localhost, kreeg een site die er goed uitzag en waarin niets werkte: geen enkele
+   * knop, geen enkele interactieve sectie. De oorzaak zit niet in de componenten maar
+   * hier. Next 16 beschouwt een ander origin als niet-vertrouwd, weigert de
+   * HMR-websocket, en dan komt React niet door de hydratie heen. De HTML staat er dus
+   * wel en de JavaScript neemt hem nooit over.
+   *
+   * Deze lijst maakt het lokale netwerk vertrouwd. Alleen voor `next dev`; in productie
+   * doet hij niets. Voeg een reeks toe als je op een ander netwerk zit en dezelfde
+   * dode knoppen ziet.
+   */
+  allowedDevOrigins: [
+    "192.168.0.239",
+    "192.168.0.*",
+    "192.168.1.*",
+    "192.168.2.*",
+    "10.0.0.*",
+    "172.20.10.*",
+  ],
   turbopack: {
     root: __dirname,
   },
