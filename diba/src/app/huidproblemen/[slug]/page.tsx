@@ -28,6 +28,9 @@ const EIGEN_PAGINA = new Set([
   "huidveroudering",
   "porien",
   "donkere-kringen",
+  // Doorverwijzingen: eigen statische route die de dynamische afvangt.
+  "huidkanker-naevi",
+  "striae",
 ]);
 
 export function generateStaticParams() {
