@@ -26,6 +26,7 @@ const EIGEN_PAGINA = new Set([
   "rosacea",
   "littekens",
   "huidveroudering",
+  "porien",
 ]);
 
 export function generateStaticParams() {
