@@ -32,6 +32,8 @@ const EIGEN_PAGINA = new Set([
   "huidkanker-naevi",
   "striae",
   "melasma",
+  "droge-huid",
+  "gevoelige-huid",
 ]);
 
 export function generateStaticParams() {
