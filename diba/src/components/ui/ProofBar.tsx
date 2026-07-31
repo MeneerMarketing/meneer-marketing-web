@@ -10,6 +10,11 @@ import type { ProofStripItem } from "@/lib/site";
  *
  * De vier waarden zijn canoniek en komen altijd uit `site.ts`. Nooit een cijfer hier
  * intypen, nooit afronden naar vaagheid.
+ *
+ * MOBIEL — dit stond op één kolom onder elkaar en werd daarmee 462px hoog: zeventig
+ * procent van een iPhone-scherm voor vier getallen, op elke pagina, direct onder de hero.
+ * Nu twee bij twee met kleinere cijfers, wat neerkomt op ongeveer een kwart daarvan. Vanaf
+ * md staan ze weer op één rij zoals ze bedoeld zijn.
  */
 
 /** Jaartallen krijgen geen duizendscheiding; aantallen wel, plus hun achtervoegsel. */
@@ -30,13 +35,15 @@ export default function ProofBar({
       className={`border-y border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw] ${className}`.trim()}
       aria-label="Diba Clinics in cijfers"
     >
-      <div className="mx-auto grid max-w-[1800px] divide-y divide-[var(--g-100)] md:grid-cols-4 md:divide-x md:divide-y-0">
+      <div className="mx-auto grid max-w-[1800px] grid-cols-2 gap-px bg-[var(--g-100)] md:grid-cols-4">
         {items.map((item) => (
-          <div key={item.label} className="py-7 text-center">
-            <strong className="block text-3xl tracking-[-.06em] text-[var(--g-700)] tabular-nums">
+          <div key={item.label} className="bg-white py-4 text-center md:py-7">
+            <strong className="block text-xl tracking-[-.05em] text-[var(--g-700)] tabular-nums md:text-3xl md:tracking-[-.06em]">
               {formatteer(item)}
             </strong>
-            <span className="diba-label mt-2 block text-[var(--t-muted)]">{item.label}</span>
+            <span className="diba-label mt-1 block text-[var(--t-muted)] md:mt-2">
+              {item.label}
+            </span>
           </div>
         ))}
       </div>

@@ -160,6 +160,8 @@ export default function WerkwijzeStepsFlow({
             />
           </div>
           {steps.map((step, i) => (
+            /* Geen ml-14 op de kaart: de wikkel heeft al pl-14. Samen was dat 112px
+               inspringing, waardoor de kaart op een scherm van 390px rechts wegviel. */
             <div key={step.id} className="relative mb-3 last:mb-0">
               <div className="absolute left-0 top-7">
                 <StepNode
@@ -173,7 +175,7 @@ export default function WerkwijzeStepsFlow({
                 step={step}
                 active={active === i}
                 onSelect={() => setActive(i)}
-                className={`${cardBase} ml-14 ${active === i ? cardActive : cardIdle}`}
+                className={`${cardBase} ${active === i ? cardActive : cardIdle}`}
                 variant={variant}
               />
             </div>

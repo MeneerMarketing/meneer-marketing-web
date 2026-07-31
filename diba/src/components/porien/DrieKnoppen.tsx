@@ -80,10 +80,13 @@ export default function DrieKnoppen() {
   return (
     <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
       {/* ── De tekening ──
-          Blijft staan terwijl je verderop schakelt, ook op mobiel: zonder dat schuift
-          hij uit beeld op het moment dat je een knop omzet, en dan mis je precies waar
-          het om gaat. */}
-      <div className="sticky top-20 z-10 self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7 lg:top-24">
+          Blijft op groot scherm staan terwijl je verderop schakelt, want anders schuift
+          hij uit beeld op het moment dat je een knop omzet.
+
+          Op mobiel juist niet: daar nam hij plakkend 311px van een scherm van 664px in
+          beslag, en samen met de cookiebalk bleef er nog geen derde over om in te werken.
+          Daar scrol je liever even terug. */}
+      <div className="self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7 lg:sticky lg:top-24">
         <div className="overflow-hidden rounded-[var(--r-sm)]">
           <svg
             viewBox="0 0 520 300"

@@ -3,9 +3,13 @@ import Link from "next/link";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { BESTEMMINGEN, type Groep } from "@/data/symptoomzoeker";
+import Raster from "@/components/huidproblemen/Raster";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Het overzicht van alle huidproblemen.
@@ -30,47 +34,6 @@ export const metadata: Metadata = {
     "Zestien huidproblemen, ingedeeld naar wat wij ermee doen. Vier gaan naar de huisarts en bij één doen we niets.",
 };
 
-const GROEPEN: readonly {
-  readonly id: Groep;
-  readonly label: string;
-  readonly kop: string;
-  readonly accent: string;
-  readonly intro: string;
-}[] = [
-  {
-    id: "behandelen",
-    label: "Hier kunnen wij iets",
-    kop: "Tien onderwerpen",
-    accent: "waar wij aan werken.",
-    intro:
-      "Elk met een eigen pagina die begint bij de vraag die er bij dat probleem het meest toe doet. Niet bij wat het kost, en niet bij wat wij toevallig aanbieden.",
-  },
-  {
-    id: "doorverwijzen",
-    label: "Hier sturen wij je door",
-    kop: "Vier onderwerpen",
-    accent: "die bij een arts horen.",
-    intro:
-      "Deze pagina's hebben geen afspraakknop. Ze staan er omdat mensen ons dit vragen terwijl ze bij ons op de stoel liggen, en dan is een goed antwoord beter dan een ontwijkend.",
-  },
-  {
-    id: "niet",
-    label: "Hier doen wij niets",
-    kop: "Eén onderwerp",
-    accent: "waar niemand iets aan kan.",
-    intro:
-      "Dat staat er zo, met de uitleg erbij waarom geen enkele crème of apparaat het weghaalt. Die pagina bestaat om te voorkomen dat je ergens anders betaalt voor een belofte.",
-  },
-  {
-    id: "wegwijzer",
-    label: "Weet je het niet",
-    kop: "En als je niet weet",
-    accent: "hoe het heet?",
-    intro:
-      "Dan hoef je niet te gokken. Twee wegwijzers sorteren op wat je ziet in plaats van op een naam die je niet kent.",
-  },
-];
-
 export default function HuidproblemenPage() {
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
@@ -85,7 +48,10 @@ export default function HuidproblemenPage() {
       <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -94,21 +60,22 @@ export default function HuidproblemenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Zestien onderwerpen.
+              Zeventien pagina&apos;s.
               <br />
               <span className="diba-accent">Vijf gaan niet over ons.</span>
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De meeste kliniekwebsites zetten hun onderwerpen op alfabet, want alles is
-              toch te koop. Hier staan ze op volgorde van wat wij ermee doen, en dan valt
-              meteen op dat een deel bij een arts hoort en één onderwerp nergens.
+              De meeste kliniekwebsites zetten hun onderwerpen op alfabet, want
+              alles is toch te koop. Hier staan ze op volgorde van wat wij ermee
+              doen, en dan valt meteen op dat een deel bij een arts hoort en één
+              onderwerp nergens.
             </p>
 
             <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Elke pagina begint bij de vraag die er bij dat probleem het meest toe doet.
-              Bij littekens is dat hoe oud het is, bij pigment welk seizoen het is, en bij
-              poriën dat kleiner maken niet kan.
+              Elke pagina begint bij de vraag die er bij dat probleem het meest
+              toe doet. Bij littekens is dat hoe oud het is, bij pigment welk
+              seizoen het is, en bij poriën dat kleiner maken niet kan.
             </p>
           </div>
 
@@ -116,11 +83,14 @@ export default function HuidproblemenPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>Geen idee waar je moet zijn</Label>
             <p className="diba-card-title-lg mt-5">
-              Je hoeft niet te weten hoe het heet. Kruis aan wat je ziet, dan zoeken wij de
-              pagina erbij.
+              Je hoeft niet te weten hoe het heet. Kruis aan wat je ziet, dan
+              zoeken wij de pagina erbij.
             </p>
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
-              <Button href="/huidproblemen/symptoomzoeker" variant="primair-op-donker">
+              <Button
+                href="/huidproblemen/symptoomzoeker"
+                variant="primair-op-donker"
+              >
                 Naar de symptoomzoeker
               </Button>
               <Button
@@ -138,71 +108,12 @@ export default function HuidproblemenPage() {
 
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
-      {/* ── De vier groepen ── */}
-      {GROEPEN.map((groep, i) => {
-        const items = BESTEMMINGEN.filter((b) => b.groep === groep.id);
-        const zoeker = groep.id === "wegwijzer";
-
-        return (
-          <section
-            key={groep.id}
-            className={`px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-24 ${
-              i % 2 === 1 ? "bg-[var(--g-050)]" : ""
-            }`}
-          >
-            <div className="mx-auto max-w-[1800px]">
-              <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-12">
-                <div>
-                  <Label>{groep.label}</Label>
-                  <h2 className="diba-display-m mt-5">
-                    {groep.kop}
-                    <br />
-                    <span className="diba-accent">{groep.accent}</span>
-                  </h2>
-                </div>
-                <p className="max-w-[56ch] self-end text-[16px] leading-7 text-[var(--t-body)]">
-                  {groep.intro}
-                </p>
-              </div>
-
-              <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] sm:grid-cols-2 lg:grid-cols-3">
-                {items.map((b) => (
-                  <li key={b.pad} className="bg-white">
-                    <Link
-                      href={b.pad}
-                      className="flex h-full flex-col p-6 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-7"
-                    >
-                      <span className="diba-card-title block">{b.naam}</span>
-                      <span className="mt-3 block grow text-[15px] leading-7 text-[var(--t-body)]">
-                        {b.zin}
-                      </span>
-                      <span className="diba-label mt-5 text-[var(--g-700)]">Lees verder</span>
-                    </Link>
-                  </li>
-                ))}
-
-                {/* De symptoomzoeker hoort in de laatste groep maar staat niet in de
-                    bestemmingenlijst: hij is de zoeker en geen bestemming. */}
-                {zoeker ? (
-                  <li className="bg-white">
-                    <Link
-                      href="/huidproblemen/symptoomzoeker"
-                      className="flex h-full flex-col p-6 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-7"
-                    >
-                      <span className="diba-card-title block">Symptoomzoeker</span>
-                      <span className="mt-3 block grow text-[15px] leading-7 text-[var(--t-body)]">
-                        Kruis aan wat je ziet en voelt, in gewone woorden, en de pagina&apos;s
-                        rangschikken zich.
-                      </span>
-                      <span className="diba-label mt-5 text-[var(--g-700)]">Lees verder</span>
-                    </Link>
-                  </li>
-                ) : null}
-              </ul>
-            </div>
-          </section>
-        );
-      })}
+      {/* ── Het filterbare raster ── */}
+      <section className="bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+        <div className="mx-auto max-w-[1800px]">
+          <Raster />
+        </div>
+      </section>
 
       {/* ── Wat elke pagina gemeen heeft ── */}
       <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw]">
@@ -234,7 +145,9 @@ export default function HuidproblemenPage() {
             ].map(([kop, tekst]) => (
               <li key={kop} className="border-t border-[var(--g-200)] pt-5">
                 <h3 className="diba-card-title">{kop}</h3>
-                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">{tekst}</p>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                  {tekst}
+                </p>
               </li>
             ))}
           </ul>
@@ -254,9 +167,9 @@ export default function HuidproblemenPage() {
           </div>
           <div className="mt-8 flex flex-col justify-end lg:mt-0">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Welke pagina je ook las, het begint hetzelfde: kijken wat er is voordat er
-              iets gebeurt. Soms is de uitkomst dat we je niets verkopen, en dat hoort
-              erbij.
+              Welke pagina je ook las, het begint hetzelfde: kijken wat er is
+              voordat er iets gebeurt. Soms is de uitkomst dat we je niets
+              verkopen, en dat hoort erbij.
             </p>
             <div className="mt-7">
               <Button href="/intake" variant="primair-op-donker">

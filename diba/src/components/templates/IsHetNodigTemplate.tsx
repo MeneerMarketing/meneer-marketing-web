@@ -15,7 +15,7 @@ import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
 
 /** Canoniek openingscitaat Behandeling Nul (Addendum A9 / De Gracht §3) */
 export const INTAKE_OPENING =
-  "Is het nodig? Dat gaan we eerst uitzoeken. Soms is het antwoord nee — dan hoor je dat ook.";
+  "Is het nodig? Dat gaan we eerst uitzoeken. Soms is het antwoord nee, en dan hoor je dat ook.";
 
 export type BeslisboomPad = {
   label: string;
