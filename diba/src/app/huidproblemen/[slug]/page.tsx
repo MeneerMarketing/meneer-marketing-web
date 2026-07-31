@@ -39,6 +39,8 @@ const EIGEN_PAGINA = new Set([
   "huiduitslag",
   "cellulitis",
   "keloiden",
+  "huidverkleuring",
+  "symptoomzoeker",
 ]);
 
 export function generateStaticParams() {

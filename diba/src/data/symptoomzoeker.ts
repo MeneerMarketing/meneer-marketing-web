@@ -1,0 +1,158 @@
+/**
+ * De symptoomzoeker.
+ *
+ * Vijftien pagina's is te veel om doorheen te bladeren als je niet weet hoe je het noemt,
+ * en dat is precies de situatie waarin de meeste mensen hier binnenkomen. Ze weten wat ze
+ * zien en niet hoe het heet.
+ *
+ * Daarom staat er hier geen lijst met aandoeningsnamen maar een lijst met wat je ziet en
+ * voelt, in gewone woorden. Je kruist aan wat er speelt en de pagina's schuiven zich in
+ * volgorde van hoeveel ze dekken. Geen enkel woord in de linkerkolom is een vakterm.
+ *
+ * Twee kenmerken zijn anders dan de rest: "het verandert" en "ik voel me er ziek bij".
+ * Die zetten de huisarts bovenaan, ongeacht wat er verder is aangevinkt.
+ *
+ * COPY-STATUS: concept. De koppeling tussen kenmerken en pagina's langs Rojda.
+ */
+
+export type Kenmerk = {
+  readonly id: string;
+  readonly tekst: string;
+  /** Zet de huisarts bovenaan, wat er verder ook aangevinkt staat. */
+  readonly urgent?: true;
+};
+
+export const KENMERKEN: readonly Kenmerk[] = [
+  { id: "rood", tekst: "Rood of rode plekken" },
+  { id: "puistjes", tekst: "Puistjes of mee-eters" },
+  { id: "bultjes", tekst: "Bultjes zonder puistje" },
+  { id: "jeuk", tekst: "Het jeukt" },
+  { id: "schilfers", tekst: "Schilfers of vellen" },
+  { id: "droog", tekst: "Droog of trekkerig" },
+  { id: "prikt", tekst: "Producten prikken of branden" },
+  { id: "bruine-vlek", tekst: "Bruine vlekken" },
+  { id: "witte-vlek", tekst: "Witte of lichtere plekken" },
+  { id: "kringen", tekst: "Donkere kringen onder mijn ogen" },
+  { id: "kuiltjes", tekst: "Kuiltjes of putjes" },
+  { id: "strepen", tekst: "Strepen of littekens" },
+  { id: "lijntjes", tekst: "Fijne lijntjes" },
+  { id: "ruw", tekst: "Ruw of dof" },
+  { id: "glans", tekst: "Glimt snel of grove poriën" },
+  { id: "verandert", tekst: "Een plekje dat verandert", urgent: true },
+  { id: "ziek", tekst: "Ik voel me er ziek bij", urgent: true },
+];
+
+export type Bestemming = {
+  readonly naam: string;
+  readonly pad: string;
+  readonly zin: string;
+  readonly kenmerken: readonly string[];
+};
+
+export const BESTEMMINGEN: readonly Bestemming[] = [
+  {
+    naam: "Acne",
+    pad: "/huidproblemen/acne",
+    zin: "Waar het zit op je gezicht zegt iets over waar het vandaan komt.",
+    kenmerken: ["puistjes", "rood", "glans", "bultjes"],
+  },
+  {
+    naam: "Rosacea",
+    pad: "/huidproblemen/rosacea",
+    zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",
+    kenmerken: ["rood", "bultjes", "prikt"],
+  },
+  {
+    naam: "Pigmentvlekken",
+    pad: "/huidproblemen/pigmentvlekken",
+    zin: "Bruine plekjes van opgebouwde zon, en het seizoen bepaalt wanneer je begint.",
+    kenmerken: ["bruine-vlek"],
+  },
+  {
+    naam: "Melasma",
+    pad: "/huidproblemen/melasma",
+    zin: "Grotere bruine vlakken met een hormonale kant. De diepte bepaalt alles.",
+    kenmerken: ["bruine-vlek"],
+  },
+  {
+    naam: "Littekens en striae",
+    pad: "/huidproblemen/littekens",
+    zin: "Hoe oud het is bepaalt meer dan welke techniek dan ook.",
+    kenmerken: ["strepen", "kuiltjes", "witte-vlek"],
+  },
+  {
+    naam: "Huidveroudering",
+    pad: "/huidproblemen/huidveroudering",
+    zin: "Wat komt door tijd en wat komt door zon, en alleen op dat tweede zit een knop.",
+    kenmerken: ["lijntjes", "ruw", "bruine-vlek"],
+  },
+  {
+    naam: "Poriën",
+    pad: "/huidproblemen/porien",
+    zin: "Kleiner maken kan niet. Minder zichtbaar wel, en dat scheelt meer dan je denkt.",
+    kenmerken: ["glans", "ruw"],
+  },
+  {
+    naam: "Droge huid",
+    pad: "/huidproblemen/droge-huid",
+    zin: "Droog en uitgedroogd zijn twee losse assen, en daar gaat het meestal mis.",
+    kenmerken: ["droog", "ruw", "schilfers"],
+  },
+  {
+    naam: "Gevoelige huid",
+    pad: "/huidproblemen/gevoelige-huid",
+    zin: "Meestal geen huidtype maar een routine die is volgestapeld.",
+    kenmerken: ["prikt", "rood", "droog", "jeuk"],
+  },
+  {
+    naam: "Donkere kringen",
+    pad: "/huidproblemen/donkere-kringen",
+    zin: "Drie oorzaken die er hetzelfde uitzien, en bij één kunnen wij niets.",
+    kenmerken: ["kringen"],
+  },
+  {
+    naam: "Eczeem",
+    pad: "/huidproblemen/eczeem",
+    zin: "Een cirkel en geen plek. Hoort bij de huisarts, en die heeft er behandeling voor.",
+    kenmerken: ["jeuk", "schilfers", "rood", "droog"],
+  },
+  {
+    naam: "Psoriasis",
+    pad: "/huidproblemen/psoriasis",
+    zin: "Meer dan huid. Let vooral op je nagels en je gewrichten.",
+    kenmerken: ["schilfers", "rood"],
+  },
+  {
+    naam: "Huiduitslag",
+    pad: "/huidproblemen/huiduitslag",
+    zin: "Eerst de vraag of je vandaag belt of morgen. Doe de glastest.",
+    kenmerken: ["rood", "jeuk", "ziek"],
+  },
+  {
+    naam: "Cellulitis",
+    pad: "/huidproblemen/cellulitis",
+    zin: "Geen vet maar bouw. Wij behandelen het niet en leggen uit waarom niemand dat kan.",
+    kenmerken: ["kuiltjes"],
+  },
+  {
+    naam: "Moedervlekken",
+    pad: "/huidproblemen/moedervlekken",
+    zin: "Hiervoor moet je niet bij ons zijn. Wel staat hier waar je op let.",
+    kenmerken: ["verandert"],
+  },
+  {
+    naam: "Huidverkleuring",
+    pad: "/huidproblemen/huidverkleuring",
+    zin: "Weet je niet hoe je het noemt? Begin dan bij de kleur.",
+    kenmerken: ["bruine-vlek", "witte-vlek", "rood"],
+  },
+];
+
+export const SPOED_TEKST = {
+  kop: "Ga hier eerst mee naar je huisarts",
+  tekst:
+    "Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag. [MEDISCHE-CHECK-ROJDA]",
+} as const;
+
+export const ZOEKER_LEEG =
+  "Kruis aan wat er speelt. Je mag er meerdere kiezen, en de lijst rechts schuift mee. Er staat bewust geen enkele vakterm bij: als je wist hoe het heette, was je hier niet.";
