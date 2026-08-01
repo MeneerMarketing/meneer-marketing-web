@@ -11,6 +11,7 @@ export interface LedPassportUploadPayload {
   firstName: string;
   email: string;
   orderNumber: string;
+  skinCondition: string;
   photoFront: File;
   photoLeft: File;
   photoRight: File;
@@ -81,6 +82,7 @@ export function parseLedPassportFormData(
   const firstName = String(formData.get("firstName") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim().toLowerCase();
   const orderNumber = String(formData.get("orderNumber") ?? "").trim();
+  const skinCondition = String(formData.get("skinCondition") ?? "").trim();
 
   if (firstName.length < 1 || firstName.length > 100) {
     return { error: "Vul je voornaam in." };
@@ -92,6 +94,10 @@ export function parseLedPassportFormData(
 
   if (orderNumber.length > 80) {
     return { error: "Ordernummer is te lang." };
+  }
+
+  if (skinCondition.length > 2000) {
+    return { error: "Je tekst over je huidconditie is te lang (max. 2000 tekens)." };
   }
 
   const photoFront = formData.get("photoFront");
@@ -106,6 +112,14 @@ export function parseLedPassportFormData(
     return { error: "Upload alle drie de foto's (voor, links en rechts)." };
   }
 
+  const isAllowedImageType = (file: File): boolean => {
+    const type = (file.type || "").toLowerCase();
+    if (LED_UPLOAD_ALLOWED_TYPES.has(type)) return true;
+    // Mobiele browsers sturen soms een lege MIME; val terug op extensie.
+    if (!type && /\.(jpe?g|png|webp)$/i.test(file.name || "")) return true;
+    return false;
+  };
+
   for (const [file, label] of [
     [photoFront, "voorkant"],
     [photoLeft, "linkerzijde"],
@@ -117,7 +131,7 @@ export function parseLedPassportFormData(
     if (file.size > LED_UPLOAD_MAX_BYTES) {
       return { error: `Foto ${label} is te groot (max. 8 MB).` };
     }
-    if (!LED_UPLOAD_ALLOWED_TYPES.has(file.type)) {
+    if (!isAllowedImageType(file)) {
       return {
         error: `Foto ${label}: alleen JPG, PNG of WebP.`,
       };
@@ -128,6 +142,7 @@ export function parseLedPassportFormData(
     firstName,
     email,
     orderNumber,
+    skinCondition,
     photoFront,
     photoLeft,
     photoRight,
@@ -165,12 +180,21 @@ export async function sendLedPassportUploadEmails(
     ? `Ordernummer: ${payload.orderNumber}`
     : "Ordernummer: niet ingevuld";
 
+  const hasSkinNotes = payload.skinCondition.trim().length > 0;
+  const skinLine = hasSkinNotes
+    ? payload.skinCondition.trim()
+    : "Niet ingevuld door de klant.";
+
   const teamText = [
     "Nieuwe LED Passport foto-inzending via skincomplete.eu",
     "",
     `Naam: ${payload.firstName}`,
     `E-mail: ${payload.email}`,
     orderLine,
+    "",
+    "========== OVER DE HUIDCONDITIE ==========",
+    skinLine,
+    "=========================================",
     "",
     "Bijlagen: voorkant, links, rechts",
     "",
@@ -184,7 +208,13 @@ export async function sendLedPassportUploadEmails(
       </p>
       <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#2C2217;"><strong>Naam:</strong> ${escapeHtml(payload.firstName)}</p>
       <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#2C2217;"><strong>E-mail:</strong> ${escapeHtml(payload.email)}</p>
-      <p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#2C2217;"><strong>${escapeHtml(orderLine)}</strong></p>
+      <p style="margin:0 0 20px;font-size:14px;line-height:1.6;color:#2C2217;"><strong>${escapeHtml(orderLine)}</strong></p>
+      <div style="margin:0 0 20px;padding:16px 18px;background:#F5F0EA;border:1px solid rgba(44,34,23,0.12);border-radius:10px;">
+        <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8E847A;">
+          Over de huidconditie
+        </p>
+        <p style="margin:0;font-size:15px;line-height:1.7;color:#2C2217;white-space:pre-wrap;">${escapeHtml(skinLine)}</p>
+      </div>
       <p style="margin:0;font-size:13px;line-height:1.6;color:#8E847A;">Drie huidfoto's staan als bijlage bij deze e-mail.</p>
     </div>
   `;
@@ -193,7 +223,9 @@ export async function sendLedPassportUploadEmails(
     from: resolveFromEmail(),
     to: resolveTeamEmail(),
     replyTo: payload.email,
-    subject: `LED Passport — foto's ontvangen: ${payload.firstName}`,
+    subject: hasSkinNotes
+      ? `LED Passport foto's + huidnotitie: ${payload.firstName}`
+      : `LED Passport foto's ontvangen: ${payload.firstName}`,
     text: teamText,
     html: teamHtml,
     attachments,
@@ -237,7 +269,7 @@ export async function sendLedPassportUploadEmails(
     from: resolveFromEmail(),
     to: payload.email,
     replyTo: resolveTeamEmail(),
-    subject: "We hebben je foto's ontvangen — je LED Passport volgt",
+    subject: "We hebben je foto's ontvangen. Je LED Passport volgt",
     text: customerText,
     html: customerHtml,
   });
