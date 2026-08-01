@@ -151,17 +151,25 @@ export default function Raster() {
         })}
       </div>
 
-      {/* ── De kaarten ── */}
+      {/* ── De kaarten ──
+          Links, geen knoppen. Ze waren even knoppen die alleen het focusvlak eronder
+          verzetten, met de echte navigatie in dat vlak. Dat is de vorm van de homepage,
+          waar zo'n blok een teaser is. Op een overzichtspagina is het verkeerd: je tikt
+          een huidprobleem aan en verwacht die pagina. Op een telefoon staat dat focusvlak
+          bovendien buiten beeld, dus leek er niets te gebeuren.
+
+          Het focusvlak blijft, maar het volgt nu de muis en het toetsenbord. Klikken doet
+          altijd wat je verwacht. */}
       <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {zichtbaar.map((b) => {
           const aan = b.pad === gekozen.pad;
           return (
             <li key={b.pad}>
-              <button
-                type="button"
-                aria-pressed={aan}
-                onClick={() => setGekozenPad(b.pad)}
-                className={`h-full w-full rounded-[var(--r-lg)] p-6 text-left transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none sm:p-7 ${
+              <Link
+                href={b.pad}
+                onMouseEnter={() => setGekozenPad(b.pad)}
+                onFocus={() => setGekozenPad(b.pad)}
+                className={`block h-full rounded-[var(--r-lg)] p-6 text-left transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none sm:p-7 ${
                   aan
                     ? "bg-[var(--g-700)] shadow-[var(--shadow-float)]"
                     : "bg-[var(--g-050)] hover:bg-[var(--g-100)]"
@@ -200,7 +208,7 @@ export default function Raster() {
                 >
                   {b.eersteVraag}
                 </span>
-              </button>
+              </Link>
             </li>
           );
         })}
