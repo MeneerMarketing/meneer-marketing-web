@@ -24,8 +24,7 @@ import {
 } from "@/components/seo-landing/SeoLandingFunSections";
 import { siteCtas } from "@/lib/cta";
 import { seoLandingPath } from "@/lib/seo-landings";
-import { getSeoLandingBySlug, getAllSeoLandingPages } from "@/data/seo-landings/registry";
-import { getKennisbankArticleBySlug } from "@/lib/kennisbank";
+import type { SeoLandingNavProps } from "@/lib/seo-landing-nav";
 import {
   getDeliverablesHeading,
   getDeliverablesIntro,
@@ -117,7 +116,14 @@ function ProseSection({
   return <div>{prose}</div>;
 }
 
-export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
+export function SeoLandingPageView({
+  page,
+  related,
+  citySiblings,
+  kennisbankTeaser,
+}: {
+  page: EnrichedSeoLandingPage;
+} & SeoLandingNavProps) {
   const reduce = useReducedMotion() ?? false;
   const mythsHeading = getMythsSectionHeading(page.slug);
   const mythsIntro = getMythsSectionIntro(page.slug, page.primaryKeyword);
@@ -125,24 +131,6 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
   const deliverablesHeading = getDeliverablesHeading(page.slug, page.primaryKeyword);
   const deliverablesIntro = getDeliverablesIntro(page.slug, page.primaryKeyword);
   const processIntro = getProcessIntro(page.slug, page.primaryKeyword);
-  const related = page.relatedSlugs
-    .map((slug) => getSeoLandingBySlug(slug))
-    .filter((p): p is EnrichedSeoLandingPage => Boolean(p));
-
-  const kennisbankArticle = page.kennisbankSlug
-    ? getKennisbankArticleBySlug(page.kennisbankSlug)
-    : null;
-
-  const citySiblings = page.location
-    ? getAllSeoLandingPages()
-        .filter(
-          (p) =>
-            p.location?.city === page.location?.city && p.slug !== page.slug,
-        )
-        .slice(0, 8)
-        .map((p) => getSeoLandingBySlug(p.slug))
-        .filter((p): p is EnrichedSeoLandingPage => Boolean(p))
-    : [];
 
   return (
     <article>
@@ -555,7 +543,7 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
         </div>
       </section>
 
-      {kennisbankArticle ? (
+      {kennisbankTeaser ? (
         <section className="border-b border-slate-200 bg-slate-50 py-14">
           <div className="mx-auto max-w-6xl px-4 lg:px-8">
             <Reveal>
@@ -566,12 +554,12 @@ export function SeoLandingPageView({ page }: { page: EnrichedSeoLandingPage }) {
                     <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
                       Verder lezen in de kennisbank
                     </p>
-                    <p className="mt-2 font-bold text-slate-900">{kennisbankArticle.title}</p>
-                    <p className="mt-1 text-sm text-slate-600">{kennisbankArticle.description}</p>
+                    <p className="mt-2 font-bold text-slate-900">{kennisbankTeaser.title}</p>
+                    <p className="mt-1 text-sm text-slate-600">{kennisbankTeaser.description}</p>
                   </div>
                 </div>
                 <Link
-                  href={`/kennisbank/${kennisbankArticle.slug}`}
+                  href={`/kennisbank/${kennisbankTeaser.slug}`}
                   className="inline-flex shrink-0 items-center gap-2 rounded-full border-2 border-slate-900 px-5 py-3 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
                 >
                   Lees artikel

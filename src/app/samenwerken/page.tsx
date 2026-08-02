@@ -40,38 +40,35 @@ export default function SamenwerkenPage() {
       <SiteHeader />
       <main id="main" className="flex-1">
         <ConversionHero
-          tone="sky"
+          tone="accent"
           eyebrow="Samenwerken"
           title={
             <>
-              Eén team. {" "}
-              <span className="bg-gradient-to-r from-mm-sky-deep via-mm-sky to-mm-accent bg-clip-text text-transparent">
-                heldere afspraken
-              </span>
-              , jouw tempo.
+              Eén aanspreekpunt.{" "}
+              <span className="text-[#FF5722]">Heldere afspraken</span>, jouw tempo.
             </>
           }
           intro={
             <>
-              Of je een langdurige partner zoekt of flexibele capaciteit: we
-              stemmen samenwerkingsvorm, ritme en rollen af op waar jij{" "}
-              <span className="font-semibold text-mm-text">nu</span> staat.
+              Of je een langdurige partner zoekt of flexibele capaciteit: ik stem
+              samenwerkingsvorm, ritme en rollen af op waar jij{" "}
+              <span className="font-semibold text-slate-900">nu</span> staat.
             </>
           }
           primaryCtaLabel="Start aanvraag"
           secondary={
             <Link
               href="/over"
-              className="inline-flex items-center gap-1.5 rounded-full border-2 border-mm-text/10 bg-white px-6 py-3.5 text-sm font-bold text-mm-text transition hover:border-mm-sky/40"
+              className="inline-flex items-center gap-1.5 rounded-full border-2 border-slate-900 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
             >
-              Lees over ons
+              Lees over mij
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
           }
           badges={[
-            { icon: <ShieldCheck className="size-3.5" />, label: "AVG-proof • geen CRM-spam" },
+            { icon: <ShieldCheck className="size-3.5" />, label: "AVG-proof" },
             { icon: <Users className="size-3.5" />, label: "Vast aanspreekpunt" },
-            { icon: <Sparkles className="size-3.5" />, label: "Senior-only team" },
+            { icon: <Sparkles className="size-3.5" />, label: "Direct met mij" },
           ]}
           stats={[
             { value: "1-2d", label: "Reactietijd" },

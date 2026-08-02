@@ -3,17 +3,14 @@ import { SEO_CITY_REGISTRY } from "@/data/seo-landings/city-registry";
 import { withSeoLandingLocation } from "@/lib/seo-landings-location";
 import { WEBSITE_LATEN_MAKEN } from "@/data/seo-landings/pages/website-laten-maken";
 import { SEO_SPECIALIST } from "@/data/seo-landings/pages/seo-specialist";
-import { MARKETING_BUREAU } from "@/data/seo-landings/pages/national-batch5";
 
-const CITY_TRIO_BASES = [
-  WEBSITE_LATEN_MAKEN,
-  MARKETING_BUREAU,
-  SEO_SPECIALIST,
-] as const;
+/** P0.4: website + seo only (marketing-bureau nationaal/city → 301). */
+const CITY_TRIO_BASES = [WEBSITE_LATEN_MAKEN, SEO_SPECIALIST] as const;
 
 /**
- * Vult per stad de kern-trio aan (website, marketing bureau, seo specialist)
- * alleen waar die slug nog niet bestaat. Voorkomt duplicaten en cannibalisatie.
+ * Vult per stad website + seo specialist aan waar die slug nog niet bestaat.
+ *
+ * GROWTH FREEZE (2026-08-02): geen nieuwe steden / bases. Zie `growth-freeze.ts`.
  */
 export function buildCityTrioFillPages(
   existingPages: readonly SeoLandingPage[],

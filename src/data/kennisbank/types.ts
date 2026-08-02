@@ -5,7 +5,8 @@ export type ArticleSection =
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: string[] }
-  | { type: "callout"; text: string };
+  | { type: "callout"; text: string }
+  | { type: "interactive"; id: "brochure-ometer" };
 
 export interface KennisbankArticle {
   slug: string;

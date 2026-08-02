@@ -14,6 +14,7 @@ import {
 import { LOKALE_SEO, CONVERSIE_OPTIMALISATIE } from "@/data/seo-landings/pages/national-batch2";
 import { GOOGLE_ADS_SPECIALIST, SHOPIFY_SEO } from "@/data/seo-landings/pages/national-batch3";
 import { DIGITAL_MARKETING_BUREAU } from "@/data/seo-landings/pages/national-batch4";
+import { isKeptSeoLandingCitySlug } from "@/data/seo-landings/city-prune";
 import { SEO_LANDING_GELDERLAND_PAGES } from "@/data/seo-landings/locations-gelderland";
 import { SEO_LANDING_APELDOORN_PAGES } from "@/data/seo-landings/locations-apeldoorn";
 import { SEO_LANDING_NEDERLAND_PAGES } from "@/data/seo-landings/locations-nederland";
@@ -152,8 +153,12 @@ const SEO_LANDING_CITY_MANUAL = [
   ...SEO_LANDING_NEDERLAND_PAGES,
 ] as const;
 
-/** Stad-pagina's: handmatige mix + automatische aanvulling website/marketing/seo per stad. */
-export const SEO_LANDING_CITY_PAGES = [
+/** Stad-pagina's na P0.4 keep-filter (city-prune.ts). */
+const SEO_LANDING_CITY_RAW = [
   ...SEO_LANDING_CITY_MANUAL,
   ...buildCityTrioFillPages(SEO_LANDING_CITY_MANUAL),
 ];
+
+export const SEO_LANDING_CITY_PAGES = SEO_LANDING_CITY_RAW.filter((page) =>
+  isKeptSeoLandingCitySlug(page.slug),
+);

@@ -41,21 +41,18 @@ export default function SchaalOpPage() {
       <SiteHeader />
       <main id="main" className="flex-1">
         <ConversionHero
-          tone="violet"
+          tone="accent"
           eyebrow="Schaal op"
           title={
             <>
               Groei met{" "}
-              <span className="bg-gradient-to-r from-violet-600 via-mm-sky-deep to-mm-accent bg-clip-text text-transparent">
-                richting en meetpunten
-              </span>
-              .
+              <span className="text-[#FF5722]">richting</span> en meetpunten.
             </>
           }
           intro={
             <>
               Meer volume lost niet alles op. Eerst bepalen we waar de{" "}
-              <span className="font-semibold text-mm-text">grootste hefboom</span>{" "}
+              <span className="font-semibold text-slate-900">grootste hefboom</span>{" "}
               zit. Dan bouwen we eromheen.
             </>
           }
@@ -63,7 +60,7 @@ export default function SchaalOpPage() {
           secondary={
             <Link
               href="/cases"
-              className="inline-flex items-center gap-1.5 rounded-full border-2 border-mm-text/10 bg-white px-6 py-3.5 text-sm font-bold text-mm-text transition hover:border-mm-sky/40"
+              className="inline-flex items-center gap-1.5 rounded-full border-2 border-slate-900 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
             >
               Bekijk cases
               <ArrowUpRight className="size-4" aria-hidden />
@@ -72,7 +69,7 @@ export default function SchaalOpPage() {
           badges={[
             { icon: <Gauge className="size-3.5" />, label: "KPI-gedreven" },
             { icon: <Radar className="size-3.5" />, label: "Meetbaar & schaalbaar" },
-            { icon: <ShieldCheck className="size-3.5" />, label: "Geen spray-and-pray" },
+            { icon: <ShieldCheck className="size-3.5" />, label: "Eén hoofdfocus" },
           ]}
           stats={[
             { value: "6", label: "Schaalfocussen" },

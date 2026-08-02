@@ -15,7 +15,6 @@ import {
 export const CITY_TRIO_BASE_SLUGS = new Set([
   "website-laten-maken",
   "seo-specialist",
-  "marketing-bureau",
 ]);
 
 type TrioBaseSlug = "website-laten-maken" | "seo-specialist" | "marketing-bureau";
@@ -938,7 +937,7 @@ const TRIO_PROCESS_TITLES: Record<TrioBaseSlug, readonly string[]> = {
 
 /**
  * Unieke contentlaag voor city-varianten van website-laten-maken,
- * seo-specialist en marketing-bureau (trio-fill + handmatige steden).
+ * seo-specialist (trio-fill + handmatige steden).
  */
 export function applyCityTrioLayer(page: SeoLandingPage): SeoLandingPage {
   const baseSlug = resolveBaseSlug(page.slug);

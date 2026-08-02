@@ -55,7 +55,7 @@ export const GOOGLE_ADS_SPECIALIST: SeoLandingPage = {
   ],
   ctaTitle: "Google Ads specialist nodig?",
   ctaBody: "Vertel je markt en marge. Ik geef eerlijk advies.",
-  relatedSlugs: ["google-ads-bureau", "google-ads-beheer", "sea-specialist", "remarketing-google-ads"],
+  relatedSlugs: ["google-ads-bureau", "remarketing-google-ads"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -96,7 +96,7 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
   ],
   ctaTitle: "Google Ads uitbesteden?",
   ctaBody: "Vertel je huidige situatie. Ik kijk eerlijk mee.",
-  relatedSlugs: ["google-ads-bureau", "google-ads-beheer", "google-ads-specialist"],
+  relatedSlugs: ["google-ads-bureau"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -179,7 +179,7 @@ export const FACEBOOK_ADS_BUREAU: SeoLandingPage = {
   ],
   ctaTitle: "Facebook Ads zonder boost-gokken?",
   ctaBody: "Vertel je product. Ik schets of het nu past.",
-  relatedSlugs: ["meta-ads-bureau", "instagram-ads-bureau", "tiktok-ads-bureau"],
+  relatedSlugs: ["meta-ads-bureau", "tiktok-ads-bureau"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -220,7 +220,7 @@ export const INSTAGRAM_ADS_BUREAU: SeoLandingPage = {
   ],
   ctaTitle: "Instagram Ads proberen?",
   ctaBody: "Vertel je doelgroep. Ik zeg eerlijk of het zinvol is.",
-  relatedSlugs: ["facebook-ads-bureau", "meta-ads-bureau", "tiktok-ads-bureau"],
+  relatedSlugs: ["meta-ads-bureau", "tiktok-ads-bureau"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -345,7 +345,7 @@ export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   ],
   ctaTitle: "Next.js site bespreken?",
   ctaBody: "Vertel je plannen. Ik schets architectuur en scope.",
-  relatedSlugs: ["website-laten-maken", "website-laten-bouwen", "technische-seo"],
+  relatedSlugs: ["website-laten-maken", "technische-seo"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };
@@ -469,7 +469,7 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
   ],
   ctaTitle: "SEO uitbesteden?",
   ctaBody: "Vertel je domein en doelen. Ik schets de aanpak.",
-  relatedSlugs: ["seo-specialist", "zoekmachine-optimalisatie", "seo-audit"],
+  relatedSlugs: ["seo-specialist", "seo-audit"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
 };
@@ -593,7 +593,7 @@ export const PERFORMANCE_MARKETING_BUREAU: SeoLandingPage = {
   ],
   ctaTitle: "Performance marketing starten?",
   ctaBody: "Vertel je doelen en marge. Ik schets het plan.",
-  relatedSlugs: ["google-ads-bureau", "ppc-bureau", "conversie-optimalisatie"],
+  relatedSlugs: ["google-ads-bureau", "conversie-optimalisatie"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -676,7 +676,7 @@ export const TRACKING_GOOGLE_ANALYTICS: SeoLandingPage = {
   ],
   ctaTitle: "Tracking laten checken?",
   ctaBody: "Vertel je stack. Ik scan wat er mis gaat.",
-  relatedSlugs: ["google-ads-bureau", "google-ads-specialist", "performance-marketing-bureau"],
+  relatedSlugs: ["google-ads-bureau", "performance-marketing-bureau"],
   pillarSlug: "behoud",
   pillarLabel: "Behoud",
 };

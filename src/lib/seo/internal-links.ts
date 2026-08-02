@@ -19,72 +19,89 @@ export interface CaseLinkItem {
   hook: string;
 }
 
-/** Commerciële zoek-landings per dienst (max 2). */
+/** Top nationale /zoeken-hubs (P0.5). Primaries na cannibal-consolidatie. */
+export const TOP_ZOEKEN_HUB_LINKS = [
+  { slug: "google-ads-bureau", label: "Google Ads bureau" },
+  { slug: "seo-specialist", label: "SEO specialist" },
+  { slug: "website-laten-maken", label: "Website laten maken" },
+  { slug: "online-marketing-bureau", label: "Online marketing bureau" },
+  { slug: "e-mailmarketing", label: "E-mailmarketing" },
+  { slug: "shopify-expert", label: "Shopify expert" },
+  { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
+  { slug: "hoger-in-google", label: "Hoger in Google" },
+] as const;
+
+export const APELDOORN_HQ_HUB = {
+  slug: "google-ads-bureau-apeldoorn",
+  label: "Google Ads bureau Apeldoorn",
+} as const;
+
+/** Commerciële zoek-landings per dienst (max 2). Alleen live hubs, geen 301-slugs. */
 export const DIENST_ZOEKEN_LINKS: Readonly<
   Record<string, readonly { slug: string; label: string }[]>
 > = {
   strategie: [
-    { slug: "digital-marketing-bureau", label: "Digital marketing bureau" },
     { slug: "online-marketing-bureau", label: "Online marketing bureau" },
+    { slug: "seo-specialist", label: "SEO specialist" },
   ],
   adverteren: [
-    { slug: "google-ads-beheer", label: "Google Ads beheer" },
-    { slug: "ppc-bureau", label: "PPC bureau" },
+    { slug: "google-ads-bureau", label: "Google Ads bureau" },
+    { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
   ],
   cro: [
-    { slug: "cro-bureau", label: "CRO bureau" },
     { slug: "conversie-optimalisatie", label: "Conversie optimalisatie" },
+    { slug: "website-laten-maken", label: "Website laten maken" },
   ],
   leadgeneratie: [
     { slug: "leadgeneratie-website", label: "Leadgeneratie website" },
-    { slug: "digital-marketing-bureau", label: "Digital marketing bureau" },
+    { slug: "online-marketing-bureau", label: "Online marketing bureau" },
   ],
   tracking: [
     { slug: "tracking-google-analytics", label: "Tracking & Google Analytics" },
     { slug: "technische-seo", label: "Technische SEO" },
   ],
   webdevelopment: [
-    { slug: "website-laten-bouwen", label: "Website laten bouwen" },
-    { slug: "webdesign-bureau", label: "Webdesign bureau" },
+    { slug: "website-laten-maken", label: "Website laten maken" },
+    { slug: "nextjs-website-laten-maken", label: "Next.js website laten maken" },
   ],
   "shopify-enterprise": [
-    { slug: "shopify-webshop-laten-maken", label: "Shopify webshop laten maken" },
     { slug: "shopify-expert", label: "Shopify expert" },
+    { slug: "shopify-seo", label: "Shopify SEO" },
   ],
   "web-apps": [
     { slug: "b2b-portaal-bouwen", label: "B2B portaal bouwen" },
-    { slug: "website-laten-bouwen", label: "Website laten bouwen" },
+    { slug: "website-laten-maken", label: "Website laten maken" },
   ],
   optimalisatie: [
     { slug: "technische-seo", label: "Technische SEO" },
-    { slug: "website-laten-bouwen", label: "Website laten bouwen" },
+    { slug: "website-laten-maken", label: "Website laten maken" },
   ],
   webdesign: [
-    { slug: "webdesign-bureau", label: "Webdesign bureau" },
+    { slug: "website-laten-maken", label: "Website laten maken" },
     { slug: "landing-page-laten-maken", label: "Landing page laten maken" },
   ],
   branding: [
-    { slug: "webdesign-bureau", label: "Webdesign bureau" },
-    { slug: "website-laten-bouwen", label: "Website laten bouwen" },
+    { slug: "website-laten-maken", label: "Website laten maken" },
+    { slug: "online-marketing-bureau", label: "Online marketing bureau" },
   ],
   animaties: [
-    { slug: "webdesign-bureau", label: "Webdesign bureau" },
-    { slug: "website-laten-bouwen", label: "Website laten bouwen" },
+    { slug: "website-laten-maken", label: "Website laten maken" },
+    { slug: "landing-page-laten-maken", label: "Landing page laten maken" },
   ],
   seo: [
+    { slug: "seo-specialist", label: "SEO specialist" },
     { slug: "hoger-in-google", label: "Hoger in Google" },
-    { slug: "seo-uitbesteden", label: "SEO uitbesteden" },
   ],
   "ai-zoek": [
-    { slug: "chatgpt-vindbaarheid", label: "Vindbaar in ChatGPT" },
     { slug: "vindbaarheid-ai", label: "Vindbaarheid in AI" },
+    { slug: "seo-specialist", label: "SEO specialist" },
   ],
   "local-seo": [
     { slug: "lokale-seo", label: "Lokale SEO" },
     { slug: "google-maps-marketing", label: "Google Maps marketing" },
   ],
   "content-marketing": [
-    { slug: "zoekmachine-optimalisatie", label: "Zoekmachine optimalisatie" },
+    { slug: "seo-specialist", label: "SEO specialist" },
     { slug: "content-marketing-vindbaarheid", label: "Content marketing vindbaarheid" },
   ],
   reviews: [
@@ -93,15 +110,15 @@ export const DIENST_ZOEKEN_LINKS: Readonly<
   ],
   "google-ads": [
     { slug: "google-ads-bureau", label: "Google Ads bureau" },
-    { slug: "google-ads-specialist", label: "Google Ads specialist" },
+    { slug: "google-shopping-ads", label: "Google Shopping ads" },
   ],
   "meta-ads": [
     { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
-    { slug: "facebook-ads-bureau", label: "Facebook Ads bureau" },
+    { slug: "ugc-marketing", label: "UGC marketing" },
   ],
   "social-media": [
     { slug: "social-media-advertising", label: "Social media advertising" },
-    { slug: "instagram-ads-bureau", label: "Instagram Ads bureau" },
+    { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
   ],
   ugc: [
     { slug: "ugc-marketing", label: "UGC marketing" },
@@ -113,7 +130,7 @@ export const DIENST_ZOEKEN_LINKS: Readonly<
   ],
   marketplaces: [
     { slug: "e-commerce-marketing", label: "E-commerce marketing" },
-    { slug: "shopify-webshop-laten-maken", label: "Shopify webshop laten maken" },
+    { slug: "shopify-expert", label: "Shopify expert" },
   ],
   media: [
     { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
@@ -144,24 +161,29 @@ export const DIENST_ZOEKEN_LINKS: Readonly<
 const PILLAR_ZOEKEN_LINKS: Record<PillarSlug, readonly { slug: string; label: string }[]> =
   {
     strategie: [
-      { slug: "digital-marketing-bureau", label: "Digital marketing bureau" },
       { slug: "online-marketing-bureau", label: "Online marketing bureau" },
+      { slug: "google-ads-bureau", label: "Google Ads bureau" },
+      { slug: "seo-specialist", label: "SEO specialist" },
     ],
     bouwen: [
-      { slug: "website-laten-bouwen", label: "Website laten bouwen" },
-      { slug: "shopify-webshop-laten-maken", label: "Shopify webshop laten maken" },
+      { slug: "website-laten-maken", label: "Website laten maken" },
+      { slug: "shopify-expert", label: "Shopify expert" },
+      { slug: "hoger-in-google", label: "Hoger in Google" },
     ],
     vindbaarheid: [
+      { slug: "seo-specialist", label: "SEO specialist" },
       { slug: "hoger-in-google", label: "Hoger in Google" },
-      { slug: "chatgpt-vindbaarheid", label: "Vindbaar in ChatGPT" },
+      { slug: "online-marketing-bureau", label: "Online marketing bureau" },
     ],
     campagnes: [
       { slug: "google-ads-bureau", label: "Google Ads bureau" },
       { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
+      { slug: "online-marketing-bureau", label: "Online marketing bureau" },
     ],
     behoud: [
       { slug: "e-mailmarketing", label: "E-mailmarketing" },
-      { slug: "marketing-automatisering", label: "Marketing automatisering" },
+      { slug: "shopify-expert", label: "Shopify expert" },
+      { slug: "online-marketing-bureau", label: "Online marketing bureau" },
     ],
   };
 
@@ -170,15 +192,15 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
 > = {
   "concurrent-hoger-in-google": [
     { slug: "hoger-in-google", label: "Hoger in Google" },
-    { slug: "seo-uitbesteden", label: "SEO uitbesteden" },
+    { slug: "seo-specialist", label: "SEO specialist" },
   ],
   "google-reviews-lokale-seo": [
     { slug: "lokale-seo", label: "Lokale SEO" },
     { slug: "google-maps-marketing", label: "Google Maps marketing" },
   ],
   "instagram-ads-geen-leads": [
-    { slug: "instagram-ads-bureau", label: "Instagram Ads bureau" },
-    { slug: "facebook-ads-bureau", label: "Facebook Ads bureau" },
+    { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
+    { slug: "ugc-marketing", label: "UGC marketing" },
   ],
   "google-business-profile-spookhuis": [
     { slug: "lokale-seo", label: "Lokale SEO" },
@@ -189,7 +211,7 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
     { slug: "seo-specialist", label: "SEO specialist" },
   ],
   "b2b-verkopen-via-shopify": [
-    { slug: "shopify-webshop-laten-maken", label: "Shopify webshop laten maken" },
+    { slug: "shopify-expert", label: "Shopify expert" },
     { slug: "b2b-portaal-bouwen", label: "B2B portaal bouwen" },
   ],
   "seo-eerst-dan-ads": [
@@ -197,8 +219,8 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
     { slug: "google-ads-bureau", label: "Google Ads bureau" },
   ],
   "chatgpt-modellen-marketeer-2026": [
-    { slug: "chatgpt-vindbaarheid", label: "Vindbaar in ChatGPT" },
     { slug: "vindbaarheid-ai", label: "Vindbaarheid in AI" },
+    { slug: "seo-specialist", label: "SEO specialist" },
   ],
   "google-ai-overviews-clicks-2026": [
     { slug: "hoger-in-google", label: "Hoger in Google" },
@@ -315,7 +337,7 @@ export function getPillarInternalLinks(pillarSlug: PillarSlug): PillarInternalLi
       hint: `${article.readMinutes} min lezen`,
     }));
 
-  const zoeken = (PILLAR_ZOEKEN_LINKS[pillarSlug] ?? []).slice(0, 2).map((z) => ({
+  const zoeken = (PILLAR_ZOEKEN_LINKS[pillarSlug] ?? []).slice(0, 3).map((z) => ({
     href: `/zoeken/${z.slug}`,
     label: z.label,
   }));

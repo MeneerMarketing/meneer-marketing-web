@@ -13,6 +13,9 @@ export const SEO_SPECIALIST: SeoLandingPage = {
     "seo expert nederland",
     "zoekmachine optimalisatie specialist",
     "seo bureau",
+    "seo uitbesteden",
+    "zoekmachine optimalisatie",
+    "zoekmachine marketing",
   ],
   eyebrow: "SEO specialist",
   headline: "SEO specialist die ook",
@@ -96,12 +99,7 @@ export const SEO_SPECIALIST: SeoLandingPage = {
   ],
   ctaTitle: "SEO zonder tussenlaag?",
   ctaBody: "Vertel je markt. Ik zeg wat ik zou doen en wat het ongeveer kost.",
-  relatedSlugs: [
-    "hoger-in-google",
-    "content-marketing-vindbaarheid",
-    "website-laten-maken",
-    "google-ads-bureau",
-  ],
+  relatedSlugs: ["hoger-in-google", "content-marketing-vindbaarheid", "website-laten-maken", "google-ads-bureau"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
 };

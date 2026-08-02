@@ -46,25 +46,22 @@ export default function ProjectStartenPage() {
           title={
             <>
               Van idee naar{" "}
-              <span className="bg-gradient-to-r from-mm-accent via-orange-500 to-mm-sky-deep bg-clip-text text-transparent">
-                plan op maat
-              </span>
-              .
+              <span className="text-[#FF5722]">plan op maat</span>.
             </>
           }
           intro={
             <>
               Vertel kort wat je wilt bouwen of verbeteren. Type, budget en
-              timing geven ons direct genoeg om{" "}
-              <span className="font-semibold text-mm-text">scherp mee te denken</span>
-              {" "}. Zonder rondjes om de hete brei.
+              timing geven mij direct genoeg om{" "}
+              <span className="font-semibold text-slate-900">scherp mee te denken</span>
+              . Zonder rondjes om de hete brei.
             </>
           }
           primaryCtaLabel="Start projectaanvraag"
           secondary={
             <Link
               href={siteCtas.startIntake.href}
-              className="inline-flex items-center gap-1.5 rounded-full border-2 border-mm-text/10 bg-white px-6 py-3.5 text-sm font-bold text-mm-text transition hover:border-mm-accent/40"
+              className="inline-flex items-center gap-1.5 rounded-full border-2 border-slate-900 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
             >
               Eerst de intake
               <ArrowUpRight className="size-4" aria-hidden />

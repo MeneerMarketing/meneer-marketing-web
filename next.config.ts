@@ -1,4 +1,7 @@
 import type { NextConfig } from "next";
+import { SEO_LANDING_CANNIBAL_REDIRECTS } from "./src/data/seo-landings/cannibal-slice1";
+import { SEO_LANDING_CANNIBAL_REDIRECTS_SLICE2 } from "./src/data/seo-landings/cannibal-slice2";
+import { SEO_LANDING_CITY_PRUNE_REDIRECTS } from "./src/data/seo-landings/city-prune";
 
 /** Sync met src/lib/seo/robots-policy.ts — geen import (next.config draait buiten app-bundel). */
 const NOINDEX_HEADER_PATHS = [
@@ -15,10 +18,10 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   experimental: {
     /*
-     * Tailwind-CSS is klein en atomair: inline in de HTML scheelt een
-     * render-blocking request (~470 ms op mobiel 4G) voor de LCP.
+     * inlineCss: true tripliceerde ~300KB Tailwind in head + Flight
+     * (~1.1MB HTML op /zoeken). Uit = externe CSS (~1 request), HTML ~250KB.
      */
-    inlineCss: true,
+    inlineCss: false,
   },
   images: {
     formats: ["image/avif", "image/webp"],
@@ -58,6 +61,11 @@ const nextConfig: NextConfig = {
         destination: "/kennisbank/:slug",
         permanent: true,
       },
+      /* P0.3 cannibal: synoniem-landings → primary hubs */
+      ...SEO_LANDING_CANNIBAL_REDIRECTS,
+      ...SEO_LANDING_CANNIBAL_REDIRECTS_SLICE2,
+      /* P0.4 city prune: thin/synonym city URLs → hubs */
+      ...SEO_LANDING_CITY_PRUNE_REDIRECTS,
     ];
   },
   async headers() {

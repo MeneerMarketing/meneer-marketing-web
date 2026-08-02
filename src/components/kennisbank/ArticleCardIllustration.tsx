@@ -25,6 +25,7 @@ const SLUG_SCENES: Record<string, (props: { accent: string }) => ReactNode> = {
   "cro-checkout-vertrouwen": CheckoutScene,
   "wordpress-blokken-team": WordPressScene,
   "branding-die-verkoopt-b2b": BrandingScene,
+  "brochure-o-meter-website-teksten": BrochureOmeterScene,
 };
 
 export function ArticleCardIllustration({
@@ -473,6 +474,41 @@ function BrandingScene({ accent }: { accent: string }) {
           >
             B2B
           </span>
+        </div>
+      </div>
+    </IllustrationFrame>
+  );
+}
+
+function BrochureOmeterScene({ accent }: { accent: string }) {
+  return (
+    <IllustrationFrame label="brochure.score">
+      <WindowChrome label="tekst · test" dot={accent} />
+      <div className="flex h-full items-center gap-3 px-3 py-2">
+        <div className="relative flex size-14 shrink-0 items-center justify-center rounded-full border-4 border-slate-100">
+          <div
+            className="absolute inset-0 rounded-full border-4 border-transparent"
+            style={{
+              borderTopColor: accent,
+              borderRightColor: accent,
+              transform: "rotate(40deg)",
+            }}
+          />
+          <span className="text-sm font-black text-slate-800">72</span>
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="text-[9px] font-extrabold text-slate-800">
+            Verzekeringsfolder
+          </p>
+          <p className="mt-0.5 text-[8px] font-medium leading-snug text-slate-500">
+            Mooie woorden. Weinig reden om te klikken.
+          </p>
+          <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-slate-100">
+            <div
+              className="h-full rounded-full"
+              style={{ width: "72%", backgroundColor: accent }}
+            />
+          </div>
         </div>
       </div>
     </IllustrationFrame>

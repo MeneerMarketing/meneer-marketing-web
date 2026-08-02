@@ -95,12 +95,7 @@ export const CONTENT_MARKETING_VINDBAARHEID: SeoLandingPage = {
   ],
   ctaTitle: "Content met een plan?",
   ctaBody: "Vertel je branche. Ik schets welke pagina's het eerst moeten.",
-  relatedSlugs: [
-    "hoger-in-google",
-    "seo-specialist",
-    "website-laten-maken",
-    "google-ads-bureau",
-  ],
+  relatedSlugs: ["hoger-in-google", "seo-specialist", "website-laten-maken", "google-ads-bureau"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
 };

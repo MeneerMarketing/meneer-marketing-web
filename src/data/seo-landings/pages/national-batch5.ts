@@ -474,7 +474,7 @@ export const WEBSITE_SPECIALIST = buildNationalPage({
   ],
   ctaTitle: "Site die een specialist waardig is?",
   ctaBody: "Vertel je doel. Ik zeg eerlijk wat het kost en wat eerst moet.",
-  relatedSlugs: ["website-laten-maken", "webdesign-bureau", "hoger-in-google"],
+  relatedSlugs: ["website-laten-maken", "hoger-in-google"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 });
@@ -604,7 +604,7 @@ export const EMAIL_MARKETING = buildNationalPage({
   ],
   ctaTitle: "Mail die omzet oplevert?",
   ctaBody: "Vertel je shop of leads. Ik schets welke flows eerst.",
-  relatedSlugs: ["e-mailmarketing", "klaviyo-specialist", "email-marketing"],
+  relatedSlugs: ["e-mailmarketing", "klaviyo-specialist"],
   pillarSlug: "behoud",
   pillarLabel: "Behoud",
 });
@@ -669,7 +669,7 @@ export const EMAILMARKETING_BUREAU = buildNationalPage({
   ],
   ctaTitle: "E-mailmarketing die rendeert?",
   ctaBody: "Vertel je situatie. Ik zeg wat eerst moet.",
-  relatedSlugs: ["email-marketing", "e-mailmarketing", "klaviyo-specialist"],
+  relatedSlugs: ["e-mailmarketing", "klaviyo-specialist"],
   pillarSlug: "behoud",
   pillarLabel: "Behoud",
 });
@@ -733,7 +733,7 @@ export const WEBSITE_LATEN_ONTWERPEN = buildNationalPage({
   ],
   ctaTitle: "Ontwerp dat ook live komt?",
   ctaBody: "Vertel je merk en doel. Ik schets de aanpak.",
-  relatedSlugs: ["webdesign-bureau", "website-laten-maken", "website-specialist"],
+  relatedSlugs: ["website-laten-maken"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 });
@@ -792,7 +792,7 @@ export const INTERNETMARKETING_BUREAU = buildNationalPage({
   ],
   ctaTitle: "Internetmarketing die klopt?",
   ctaBody: "Vertel je doel. Ik zeg wat eerst slim is.",
-  relatedSlugs: ["online-marketing-bureau", "marketing-bureau", "digital-marketing-bureau"],
+  relatedSlugs: ["online-marketing-bureau"],
   pillarSlug: "strategie",
   pillarLabel: "Strategie",
 });
@@ -855,7 +855,7 @@ export const ONLINE_MARKETING_SPECIALIST = buildNationalPage({
   ],
   ctaTitle: "Specialist zonder tussenlaag?",
   ctaBody: "Vertel je situatie. Eerlijk antwoord of ik pas.",
-  relatedSlugs: ["online-marketing-manager", "marketing-bureau", "seo-specialist"],
+  relatedSlugs: ["online-marketing-manager", "online-marketing-bureau", "seo-specialist"],
   pillarSlug: "strategie",
   pillarLabel: "Strategie",
 });
@@ -1041,7 +1041,7 @@ export const WEBDESIGN_SPECIALIST = buildNationalPage({
   ],
   ctaTitle: "Webdesign dat live komt?",
   ctaBody: "Vertel je merk. Ik schets design en aanpak.",
-  relatedSlugs: ["webdesign-bureau", "website-laten-ontwerpen", "website-laten-maken"],
+  relatedSlugs: ["website-laten-maken"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 });

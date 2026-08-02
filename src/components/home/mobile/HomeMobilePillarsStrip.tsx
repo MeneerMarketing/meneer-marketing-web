@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { HOME_PILLAR_LINKS } from "@/lib/seo/internal-links";
+import { HOME_PILLAR_LINKS, TOP_ZOEKEN_HUB_LINKS } from "@/lib/seo/internal-links";
 
 /** Mobiele pillar-links voor interne linkflow. */
 export function HomeMobilePillarsStrip() {
@@ -51,6 +51,24 @@ export function HomeMobilePillarsStrip() {
         Alle diensten
         <ArrowUpRight className="size-4" aria-hidden />
       </Link>
+
+      <div className="mt-8 border-t border-slate-100 pt-6">
+        <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-500">
+          Of start bij wat je googelt
+        </p>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          {TOP_ZOEKEN_HUB_LINKS.map((hub) => (
+            <li key={hub.slug}>
+              <Link
+                href={`/zoeken/${hub.slug}`}
+                className="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700"
+              >
+                {hub.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

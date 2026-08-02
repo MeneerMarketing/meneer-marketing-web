@@ -96,12 +96,7 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
   ],
   ctaTitle: "Klaar voor een echt portaal?",
   ctaBody: "Vertel hoe je nu bestelt en wat je wilt automatiseren. Ik schets de aanpak.",
-  relatedSlugs: [
-    "webshop-laten-maken",
-    "website-laten-maken",
-    "google-ads-bureau",
-    "hoger-in-google",
-  ],
+  relatedSlugs: ["webshop-laten-maken", "website-laten-maken", "google-ads-bureau", "hoger-in-google"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };

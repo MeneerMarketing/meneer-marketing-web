@@ -96,12 +96,7 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   ],
   ctaTitle: "Shop die verdient?",
   ctaBody: "Vertel je producten en doel. Ik schets hoe de shop eruitziet en wat eerst moet.",
-  relatedSlugs: [
-    "website-laten-maken",
-    "google-ads-bureau",
-    "hoger-in-google",
-    "b2b-portaal-bouwen",
-  ],
+  relatedSlugs: ["website-laten-maken", "google-ads-bureau", "hoger-in-google", "b2b-portaal-bouwen"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };

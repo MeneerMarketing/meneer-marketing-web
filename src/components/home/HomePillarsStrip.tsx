@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
-import { HOME_PILLAR_LINKS } from "@/lib/seo/internal-links";
+import { HOME_PILLAR_LINKS, TOP_ZOEKEN_HUB_LINKS } from "@/lib/seo/internal-links";
 
 /** Compacte pillar-nav op de homepage voor interne linkflow. */
 export function HomePillarsStrip() {
@@ -62,6 +62,29 @@ export function HomePillarsStrip() {
             </li>
           ))}
         </ul>
+
+        <Reveal delay={0.12}>
+          <div className="mt-10 border-t border-slate-100 pt-8">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
+              Of start bij wat je googelt
+            </p>
+            <p className="mt-2 max-w-xl text-sm text-slate-600">
+              Campagnes, SEO en builds onder één aanspreekpunt. Kies het hub waar jij nu zit.
+            </p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {TOP_ZOEKEN_HUB_LINKS.map((hub) => (
+                <li key={hub.slug}>
+                  <Link
+                    href={`/zoeken/${hub.slug}`}
+                    className="inline-flex rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-bold text-slate-700 transition hover:border-[#FF5722]/40 hover:text-[#FF5722]"
+                  >
+                    {hub.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
