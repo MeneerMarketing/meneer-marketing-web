@@ -37,8 +37,7 @@ export function ConversionBackdrop({
 
       {/* Speelse harde vormen (MM-karakter) */}
       <motion.div
-        className="absolute right-[8%] top-[18%] size-16 rounded-2xl bg-[#FF5722]/90 shadow-lg shadow-orange-500/30 sm:size-20"
-        style={{ rotate: 12 }}
+        className="absolute right-[8%] top-[18%] size-16 rotate-12 rounded-2xl bg-[#FF5722]/90 shadow-lg shadow-orange-500/30 sm:size-20"
         animate={reduce ? undefined : { y: [0, -10, 0], rotate: [12, 18, 12] }}
         transition={{ duration: 7, ease: "easeInOut", repeat: Infinity }}
       />
@@ -47,10 +46,7 @@ export function ConversionBackdrop({
         animate={reduce ? undefined : { y: [0, 12, 0] }}
         transition={{ duration: 9, ease: "easeInOut", repeat: Infinity }}
       />
-      <div
-        className="absolute bottom-[22%] right-[28%] hidden h-3 w-24 rounded-full bg-slate-900/90 sm:block"
-        style={{ rotate: -8 }}
-      />
+      <div className="absolute bottom-[22%] right-[28%] hidden h-3 w-24 -rotate-[8deg] rounded-full bg-slate-900/90 sm:block" />
       <div className="absolute left-[6%] top-[58%] size-3 rounded-full bg-[#FF5722]" />
       <div className="absolute left-[12%] top-[64%] size-2 rounded-full bg-slate-900/80" />
     </div>
