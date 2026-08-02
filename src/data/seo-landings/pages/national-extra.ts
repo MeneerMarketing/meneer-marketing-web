@@ -25,41 +25,85 @@ export const META_ADS_BUREAU: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Meta Ads bureau · Instagram & Facebook die opleveren | Meneer Marketing",
   metaDescription:
-    "Meta Ads bureau voor Instagram en Facebook. UGC, creatives en landingspagina's die converteren. Eén strategie met Google Ads.",
-  keywords: ["meta ads bureau", "facebook ads bureau", "instagram ads bureau", "meta advertising"],
+    "Meta Ads bureau voor Instagram en Facebook. UGC, creatives en landings die converteren. Eén lijn met Google Ads. Ik beheer het zelf.",
+  keywords: [
+    "meta ads bureau",
+    "facebook ads bureau",
+    "instagram ads bureau",
+    "meta advertising",
+    "facebook advertising",
+    "instagram ads specialist",
+  ],
   eyebrow: "Meta Ads",
   headline: "Meta Ads bureau dat creatives",
   headlineAccent: "niet verloopt in de feed.",
   subheadline:
-    "Mooie video, lege winkelwagen. Ik koppel Meta Ads aan landingspagina's, UGC en een plan dat past bij je marge.",
+    "Facebook en Instagram zijn één platform. Ik bouw campagnes, creatives en landings die bij je marge passen. Boost-knop mag in de prullenbak.",
   pains: [
-    { title: "Boostpost-gokken", body: "De knop 'promoten' is geen strategie. Het is roulette met je merk." },
+    { title: "Boostpost-gokken", body: "De knop 'promoten' is roulette met je merk. Wel bereik, weinig funnel, dikke factuur." },
     { title: "Stock die niemand gelooft", body: "Mensen scrollen door perfecte stockfoto's alsof het reclame uit 2014 is." },
-    { title: "Kanalen los van elkaar", body: "Twee bureaus, twee verhalen. Jij betaalt dubbel voor verwarring." },
+    { title: "Kanalen los van elkaar", body: "Meta hier, Google daar. Twee verhalen. Jij betaalt dubbel voor verwarring." },
   ],
   deliverables: [
-    { title: "Meta + Google onder één dak", body: "Eén strategie, geen tegenstrijdige boodschappen." },
-    { title: "UGC & creators", body: "Echte mensen, echte hooks. Authentieke content." },
-    { title: "Landings die matchen", body: "Ad en pagina zeggen hetzelfde. Anders gooi je geld weg." },
-    { title: "Wekelijkse bijstuur", body: "Creatives roteren. Budget naar winnaars." },
+    { title: "Meta + Google onder één dak", body: "Eén strategie, één meetlat, één aanspreekpunt." },
+    { title: "UGC & creators", body: "Echte mensen, echte hooks. Content die niet als ad schreeuwt." },
+    { title: "Landings die matchen", body: "Ad en pagina zeggen hetzelfde. Anders brand je budget." },
+    { title: "Wekelijkse bijstuur", body: "Creatives roteren. Budget naar winnaars. Fatigue opsporen vóór het pijn doet." },
   ],
   visual: "meta-ads",
   visualCaption: "Instagram en Facebook met een plan, niet met hoop.",
-  processTitle: "Zo pakken we Meta Ads aan",
+  processTitle: "Zo pak ik Meta Ads aan",
   processSteps: processDefault,
   proofTitle: "Creators + conversie",
-  proofBody: "Bij SkinComplete en andere klanten combineren we UGC met landingspagina's die verkopen. Niet alleen views.",
-  hotTake: { label: "Heet take", body: "Een Meta Ads bureau dat geen landingspagina wil aanraken, verkoopt je dopamine, geen omzet." },
+  proofBody:
+    "Bij SkinComplete draaide Meta pas hard toen landings en UGC klopten. Views zijn leuk. Orders zijn het doel.",
+  hotTake: {
+    label: "Heet take",
+    body: "Een Meta Ads bureau dat landingspagina's niet mag aanraken, verkoopt dopamine. Omzet zit in de klik ná de ad.",
+  },
   faq: [
-    { question: "Doen jullie ook Google Ads?", answer: "Ja. Vaak slim om ze onder één strategie te zetten." },
-    { question: "Werken jullie met UGC?", answer: "Ja. Creators, reels, TikTok en Meta in één lijn." },
-    { question: "Wat is een realistisch budget?", answer: "Hangt af van je marge. We rekenen breakeven door vóór we opschalen." },
+    {
+      question: "Is Facebook Ads bureau hetzelfde als Meta Ads?",
+      answer:
+        "Ja. Facebook en Instagram zitten in Meta Ads Manager. Eén hub, één strategie. Apart 'Instagram bureau' is vaak dezelfde account met een ander label.",
+    },
+    {
+      question: "Doe je ook Google Ads?",
+      answer: "Ja. Vaak slim onder één plan, zodat remarketing en boodschap niet botsen.",
+    },
+    {
+      question: "Werk je met UGC?",
+      answer: "Ja. Creators, Reels en landings in één lijn. Stock alleen als het écht past.",
+    },
+    {
+      question: "Wat is een realistisch startbudget?",
+      answer: "Hangt af van je marge en ticketprijs. Eerst breakeven rekenen, dan testen, dan opschalen.",
+    },
   ],
-  ctaTitle: "Meta Ads zonder feed-hoppen?",
-  ctaBody: "Vertel je product en doelgroep. Ik schets of Meta nu past.",
-  relatedSlugs: ["google-ads-bureau", "google-shopping-ads", "landing-page-laten-maken"],
+  ctaTitle: "Meta Ads die verkopen?",
+  ctaBody: "Vertel je product en doelgroep. Ik schets of Meta nu past, of dat je site eerst moet.",
+  relatedSlugs: ["google-ads-bureau", "ugc-marketing", "landing-page-laten-maken", "social-media-advertising"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "Waarom Facebook en Instagram één plan verdienen",
+      paragraphs: [
+        "Je zoekt een Facebook Ads bureau of een Instagram Ads specialist. In de praktijk is het dezelfde Ads Manager, dezelfde pixel, dezelfde creatives-pipeline. Apart inkopen is dubbel werk.",
+        "Ik start bij je landingspagina en je marge. Als de belofte in de ad niet op de pagina terugkomt, stop ik liever de campagne dan dat we views kopen voor niks.",
+        "Daarna: UGC of sterke creatives, scherpe targeting, en wekelijkse rotatie. Wat wint krijgt budget. Wat faalt stopt. Simpel, meetbaar, onder één aanspreekpunt.",
+      ],
+    },
+    deepDive: {
+      title: "Van boost-knop naar echte funnel",
+      paragraphs: [
+        "De boost-knop voelt veilig: één post, wat euro's, klaar. Tot je merkt dat je bereik koopt bij mensen die nooit kopen. Funnel-denken is saai. Het is ook het enige dat schaalt.",
+        "Ik zet cold, warm en hot apart. Cold krijgt bewijs en een scherpe hook. Warm krijgt social proof. Hot krijgt de deal of de checkout-push. Elke laag een eigen creative en landing.",
+        "Google en Meta praten met elkaar via remarketing en dezelfde tracking. Zo betaal je niet twee keer voor dezelfde twijfelaar met twee boodschappen.",
+      ],
+    },
+  },
 };
 
 export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
@@ -69,7 +113,15 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
   metaTitle: "Online marketing bureau · één lijn, geen losse eilandjes | Meneer Marketing",
   metaDescription:
     "Online marketing bureau dat bouwt, vindbaar maakt en campagnes draait. Site, SEO, Google Ads en Meta. Eén team, één plan.",
-  keywords: ["online marketing bureau", "marketing bureau nederland", "digitaal marketing bureau"],
+  keywords: [
+    "online marketing bureau",
+    "marketing bureau nederland",
+    "digitaal marketing bureau",
+    "marketing bureau",
+    "digital marketing bureau",
+    "internetmarketing bureau",
+    "online marketing specialist",
+  ],
   eyebrow: "Online marketing",
   headline: "Online marketing bureau dat",
   headlineAccent: "alles onder één dak heeft.",
@@ -108,42 +160,87 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
   slug: "shopify-expert",
   primaryKeyword: "shopify expert",
   category: "shopify",
-  metaTitle: "Shopify expert · custom shops & B2B | Meneer Marketing",
+  metaTitle: "Shopify expert · custom webshop & theme | Meneer Marketing",
   metaDescription:
-    "Shopify expert voor custom themes, B2B-portalen en groei. Custom build. SkinComplete-niveau vakmanschap.",
-  keywords: ["shopify expert", "shopify specialist nederland", "shopify ontwikkelaar"],
+    "Shopify expert voor custom themes, webshops laten maken en B2B-portalen. Snel, SEO-klaar, klaar voor Shopping. SkinComplete-niveau.",
+  keywords: [
+    "shopify expert",
+    "shopify specialist nederland",
+    "shopify ontwikkelaar",
+    "shopify webshop laten maken",
+    "shopify theme laten maken",
+    "custom shopify theme",
+  ],
   eyebrow: "Shopify expert",
   headline: "Shopify expert die je shop",
   headlineAccent: "niet uit een thema-store tilt.",
   subheadline:
-    "Shopify is krachtig als je het goed inricht. Ik bouw custom, B2B waar nodig, en koppel marketing er direct op.",
+    "Webshop laten maken op Shopify? Theme op maat? Ik bouw custom, koppel SEO en ads er direct op, en houd snelheid heilig.",
   pains: [
-    { title: "Theme-limitaties", body: "Je wilt iets unieks. Het theme zegt nee." },
-    { title: "Trage shop", body: "Elke seconde kost omzet. Templates zijn vaak opgeblazen." },
-    { title: "Marketing losgekoppeld", body: "Shop klaar, niemand vindt hem." },
+    { title: "Theme-limitaties", body: "Je wilt iets unieks. Het theme zegt nee of vraagt drie apps die je shop vertragen." },
+    { title: "Trage shop", body: "Elke seconde kost omzet. Opgeblazen templates verdampen Shopping-budget." },
+    { title: "Marketing losgekoppeld", body: "Shop live, niemand vindt hem. SEO en feeds waren 'fase twee'." },
   ],
   deliverables: [
-    { title: "Custom Shopify theme", body: "Snel, merk-eigen, schaalbaar." },
-    { title: "B2B-portaal", body: "Prijzen, login, herbestellen." },
-    { title: "SEO & Shopping", body: "Organisch en betaald vanaf één fundament." },
-    { title: "Doorlopend beheer", body: "Updates, features, groei." },
+    { title: "Custom Shopify theme", body: "Snel, merk-eigen, schaalbaar. Code die meegroeit, geen plugin-stapel." },
+    { title: "B2B-portaal", body: "Prijzen, login, herbestellen. Zoals bij SkinComplete." },
+    { title: "SEO & Shopping", body: "Organisch en Merchant Center vanaf dag één meedenken." },
+    { title: "Doorlopend beheer", body: "Updates, features, groei. Jij praat met mij." },
   ],
   visual: "webshop",
   processTitle: "Shopify traject",
   processSteps: processDefault,
   proofTitle: "SkinComplete",
-  proofBody: "B2B-portaal, marketing en vindbaarheid op Shopify. Dat is mijn referentie, niet een demo-theme.",
+  proofBody:
+    "B2B-portaal, marketing en vindbaarheid op Shopify. Eerst organisch laten groeien, daarna ads. Dat is mijn referentie, niet een demo-theme.",
   proofCase: "SkinComplete",
-  hotTake: { label: "Heet take", body: "Een Shopify expert die alleen themes installeert, is een monteur zonder garage." },
+  hotTake: {
+    label: "Heet take",
+    body: "Een Shopify expert die alleen themes installeert, is een monteur zonder garage. De winst zit in snelheid, data en marketing-koppelingen.",
+  },
   faq: [
-    { question: "Alleen Shopify?", answer: "Voor shops ja. Custom sites doe ik in Next.js." },
-    { question: "Migratie van WooCommerce?", answer: "Ja, met SEO en redirects waar nodig." },
+    {
+      question: "Shopify webshop laten maken of een theme kopen?",
+      answer:
+        "Koop-theme is prima voor een test. Wil je merk, B2B of serieus adverteren, dan bouw ik custom. Minder apps, meer controle, hogere snelheid.",
+    },
+    {
+      question: "Alleen Shopify?",
+      answer: "Voor shops ja. Custom sites en landings doe ik in Next.js als dat slimmer is.",
+    },
+    {
+      question: "Migratie van WooCommerce?",
+      answer: "Ja. Redirects, SEO en productdata meenemen zodat je rankings niet in rook opgaan.",
+    },
+    {
+      question: "Regel je ook Shopify SEO?",
+      answer: "Ja. Structuur, productcopy, snelheid en Shopping-feed horen bij hetzelfde traject.",
+    },
   ],
   ctaTitle: "Shopify die echt past?",
-  ctaBody: "Vertel je assortiment en ambities.",
-  relatedSlugs: ["webshop-laten-maken", "b2b-portaal-bouwen", "google-shopping-ads"],
+  ctaBody: "Vertel je assortiment en ambities. Ik zeg eerlijk of Shopify of Next.js slimmer is.",
+  relatedSlugs: ["webshop-laten-maken", "b2b-portaal-bouwen", "shopify-seo", "google-shopping-ads"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "Waarom ik Shopify-webshops from scratch bouw",
+      paragraphs: [
+        "Je googelt 'Shopify webshop laten maken' of 'Shopify theme laten maken'. Meestal krijg je een theme-installateur met een factuur. Ik bouw de shop als groeimachine: snelheid, checkout, B2B waar nodig, feeds en SEO in één plan.",
+        "Bij SkinComplete bouwde ik het B2B-portaal op Shopify, zette e-mailmarketing op, en liet SEO eerst het verkeer domineren. Pas daarna gingen ads hard. Volgorde is alles.",
+        "Theme-store is handig om te starten. Zodra je marge, merk of B2B-prijzen serieus worden, wringt elk appje. Dan wil je code die jij begrijpt en ik kan onderhouden.",
+      ],
+    },
+    deepDive: {
+      title: "Theme, apps of custom code",
+      paragraphs: [
+        "Een gekocht theme plus acht apps voelt goedkoop. Tot Core Web Vitals rood staan en Shopping duurder wordt dan je marge toelaat. Custom theme betekent: alleen wat je nodig hebt.",
+        "Ik koppel Merchant Center, GA4 en je e-mailstack tijdens de build. Zo test je niet eerst zes maanden in het duister.",
+        "Wil je WooCommerce eraf? Dan plan ik redirects en URL-structuur mee. Verhuizen zonder SEO-plan is een stille ranking-moord.",
+      ],
+    },
+  },
 };
 
 export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
@@ -194,23 +291,30 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
   category: "content",
   metaTitle: "Vindbaarheid in AI · ChatGPT & Gemini | Meneer Marketing",
   metaDescription:
-    "Vindbaarheid in AI: genoemd worden in ChatGPT, Gemini en andere antwoorden. Structuur, content en autoriteit die AI citeert.",
-  keywords: ["vindbaarheid ai", "chatgpt vindbaarheid", "gemini seo", "ai zoek optimalisatie"],
-  eyebrow: "AI-vindbaarheid",
+    "Vindbaarheid in AI en ChatGPT: genoemd worden in antwoorden van ChatGPT, Gemini en co. Structuur, content en autoriteit die machines citeren.",
+  keywords: [
+    "vindbaarheid ai",
+    "chatgpt vindbaarheid",
+    "gemini seo",
+    "ai zoek optimalisatie",
+    "gevonden worden in chatgpt",
+    "ai antwoorden seo",
+  ],
+  eyebrow: "AI-antwoorden",
   headline: "Vindbaar in AI.",
-  headlineAccent: "Of je bestaat niet meer.",
+  headlineAccent: "Of je bent geen optie meer.",
   subheadline:
-    "Steeds meer klanten vragen ChatGPT of Gemini om advies. Sta jij niet in het antwoord, dan ben je geen optie. Ik fix dat: techniek + content die AI snapt.",
+    "Steeds meer klanten vragen ChatGPT of Gemini om advies. Sta jij niet in het antwoord, dan besta je niet. Ik bouw techniek en content die AI wél citeert.",
   pains: [
     { title: "Onzichtbaar in AI", body: "Je concurrent wél genoemd. Jij niet. Eerste indruk telt." },
-    { title: "Alleen klassieke SEO", body: "Google rankt je. AI negeert je. Twee werelden." },
-    { title: "AI-prutswerk", body: "Bulk ChatGPT-tekst helpt je niet. Het schaadt je." },
+    { title: "Alleen klassieke SEO", body: "Google rankt je. AI negeert je. Twee werelden, één contentplan nodig." },
+    { title: "AI-prutswerk", body: "Bulk ChatGPT-tekst schaadt je autoriteit. Citeerbaar werk wint." },
   ],
   deliverables: [
     { title: "AI-audit", body: "Wat antwoorden ChatGPT en Gemini nu op jouw markt?" },
-    { title: "Antwoord-pagina's", body: "Content die citeerbaar is, niet fluff." },
+    { title: "Antwoord-pagina's", body: "Content die citeerbaar is. Feiten, structuur, bewijs." },
     { title: "Schema & structuur", body: "Techniek die machines begrijpen." },
-    { title: "Google + AI samen", body: "Eén contentplan, twee kanalen." },
+    { title: "Google + AI samen", body: "Eén contentplan, twee kanalen. AI-antwoorden als volwaardige dienst." },
   ],
   visual: "ai-search",
   visualCaption: "Zo klinkt het als jij wél in het antwoord staat.",
@@ -220,14 +324,44 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
   proofBody: "Wie nu autoriteit opbouwt in AI-antwoorden, heeft straks voorsprong. Het is SEO-2010 vibes, maar dan voor ChatGPT.",
   hotTake: { label: "Heet take", body: "Vindbaarheid in AI met alleen een blog over 'top 10 tips' is alsof je een visitekaartje in een zwart gat gooit." },
   faq: [
-    { question: "Is dit los van SEO?", answer: "Nee. Sterke SEO-pagina's helpen vaak ook in AI." },
-    { question: "Hoe meet je het?", answer: "Handmatige checks + queries die je klanten echt stellen." },
+    {
+      question: "Is ChatGPT-vindbaarheid iets anders dan vindbaarheid in AI?",
+      answer:
+        "ChatGPT is één kanaal. Gemini, Perplexity en AI Overviews horen erbij. Eén hub, één plan: AI-antwoorden.",
+    },
+    {
+      question: "Is dit los van SEO?",
+      answer: "Nee. Sterke, feitelijke SEO-pagina's helpen vaak ook in AI. Bulk-fluff juist niet.",
+    },
+    {
+      question: "Hoe meet je het?",
+      answer: "Handmatige checks op queries die je klanten écht stellen, plus wat er in AI Overviews verschijnt.",
+    },
   ],
   ctaTitle: "In AI-antwoorden staan?",
-  ctaBody: "Vertel je markt. Ik test wat AI nu zegt.",
+  ctaBody: "Vertel je markt. Ik test wat AI nu zegt en wat er mist.",
   relatedSlugs: ["content-marketing-vindbaarheid", "hoger-in-google", "seo-specialist"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "ChatGPT noemt je concurrent. Jij niet.",
+      paragraphs: [
+        "Je typt je markt in ChatGPT. De antwoorden noemen drie merken. Jij staat er niet bij. Dat is de nieuwe 'pagina 2 van Google', alleen erger: er is geen pagina 2.",
+        "Ik behandel AI-antwoorden als volwaardig kanaal naast SEO. Zelfde feiten, betere structuur, schema en bronnen die machines durven te citeren.",
+        "Bulk-AI-tekst op je site helpt hier juist tegen. Wat wint: duidelijke claims, bewijs, NAP waar nodig, en pagina's die één vraag echt beantwoorden.",
+      ],
+    },
+    deepDive: {
+      title: "Zo bouw je citeerbare autoriteit",
+      paragraphs: [
+        "Eerst audit: wat zeggen ChatGPT en Gemini nu over jouw categorie? Welke bronnen citeren ze? Waar zit het gat.",
+        "Daarna antwoord-pagina's: korte, feitelijke blokken, FAQ-schema, interne links naar je money-pages. Klassieke SEO blijft meedraaien.",
+        "Tot slot ritme: updates als producten of diensten wijzigen. AI-caches zijn traag. Consistentie wint van een eenmalige contentdump.",
+      ],
+    },
+  },
 };
 
 export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
@@ -348,7 +482,7 @@ export const SEA_SPECIALIST: SeoLandingPage = {
   ],
   ctaTitle: "SEA zonder gokken?",
   ctaBody: "Vertel je markt en marge. Ik geef eerlijk advies.",
-  relatedSlugs: ["google-ads-bureau", "google-ads-beheer", "google-shopping-ads"],
+  relatedSlugs: ["google-ads-bureau", "google-shopping-ads"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };

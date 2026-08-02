@@ -10,9 +10,14 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   keywords: [
     "website laten maken",
     "website laten bouwen",
+    "website laten ontwerpen",
     "custom website",
     "website op maat",
     "professionele website",
+    "website specialist",
+    "website ontwikkelaar",
+    "webdesign bureau",
+    "webdesign specialist",
   ],
   eyebrow: "Websites from scratch",
   headline: "Website laten maken zonder",
@@ -96,12 +101,7 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   ],
   ctaTitle: "Site die echt werkt?",
   ctaBody: "Vertel wat je nodig hebt. Geen verkooppraat, wel een eerlijk plan en prijsindicatie.",
-  relatedSlugs: [
-    "webshop-laten-maken",
-    "hoger-in-google",
-    "google-ads-bureau",
-    "b2b-portaal-bouwen",
-  ],
+  relatedSlugs: ["webshop-laten-maken", "hoger-in-google", "google-ads-bureau", "b2b-portaal-bouwen"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };

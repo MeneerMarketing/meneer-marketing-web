@@ -301,7 +301,7 @@ export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProp
                   Apeldoorn · thuisbasis Meneer Marketing
                 </h3>
                 <p className="mt-2 text-sm text-slate-600">
-                  Gevestigd in Apeldoorn. Breedste dekking: Google Ads, SEO, webshops, automatisering
+                  Gevestigd in Apeldoorn. Acht kernpagina&apos;s: Ads, SEO, website, webshop, Meta
                   en meer.
                 </p>
                 <CityGrid items={apeldoornPages} highlightApeldoorn />

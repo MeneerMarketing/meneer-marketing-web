@@ -10,6 +10,7 @@ import {
   HOME_ABOUT_MENEER,
   HOME_ABOUT_MENEER_STRATEGY_CHAT,
 } from "@/data/home-about-meneer";
+import { APELDOORN_HQ_HUB } from "@/lib/seo/internal-links";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -52,6 +53,16 @@ export function HomeAboutMeneerSection() {
               </h2>
               <p className="mt-4 max-w-lg text-pretty text-base leading-relaxed text-slate-600">
                 {HOME_ABOUT_MENEER.intro}
+              </p>
+              <p className="mt-3 max-w-lg text-sm leading-relaxed text-slate-600">
+                Ik werk vanuit Apeldoorn. Lokaal starten mag:{" "}
+                <Link
+                  href={`/zoeken/${APELDOORN_HQ_HUB.slug}`}
+                  className="font-bold text-[#FF5722] underline-offset-2 hover:underline"
+                >
+                  {APELDOORN_HQ_HUB.label}
+                </Link>
+                .
               </p>
             </motion.div>
 

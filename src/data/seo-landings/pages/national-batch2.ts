@@ -25,10 +25,11 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
   category: "website",
   metaTitle: "Conversie optimalisatie · meer omzet zonder meer ads | Meneer Marketing",
   metaDescription:
-    "Conversie optimalisatie voor websites en webshops. Sneller, duidelijker, meer verkopen uit hetzelfde verkeer. Geen A/B-test circus zonder plan.",
+    "Conversie optimalisatie en CRO voor websites en webshops. Sneller, duidelijker, meer verkopen uit hetzelfde verkeer. Eerst de grote lekken, dan testen.",
   keywords: [
     "conversie optimalisatie",
     "cro specialist",
+    "cro bureau",
     "conversie optimalisatie website",
     "website conversie verbeteren",
   ],
@@ -115,14 +116,20 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
   ],
   ctaTitle: "Meer uit je verkeer halen?",
   ctaBody: "Stuur je URL. Ik noem de drie grootste lekken.",
-  relatedSlugs: [
-    "landing-page-laten-maken",
-    "website-laten-maken",
-    "google-ads-bureau",
-    "webshop-laten-maken",
-  ],
+  relatedSlugs: ["landing-page-laten-maken", "website-laten-maken", "google-ads-bureau", "webshop-laten-maken"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "CRO bureau of conversie optimalisatie: zelfde lekken",
+      paragraphs: [
+        "Je zoekt een CRO bureau of conversie optimalisatie. Het label maakt niet uit. Wat telt: waar bezoekers afhaken en of iemand dat in code en copy durft te fixen.",
+        "Ik begin bij de grootste lekken: trage mobiel, vage belofte, checkout-frictie. Micro-tests op knopkleur komen later, als er genoeg volume is.",
+        "Bij BestRest telt elke procent op een matras. Bij SkinComplete elke stap in het B2B-portaal. CRO is marge, geen speeltuin.",
+      ],
+    },
+  },
 };
 
 export const LOKALE_SEO: SeoLandingPage = {
@@ -362,7 +369,7 @@ export const TECHNISCHE_SEO: SeoLandingPage = {
   ],
   ctaTitle: "Techniek checken?",
   ctaBody: "Stuur je URL. Ik noem de blockers.",
-  relatedSlugs: ["hoger-in-google", "zoekmachine-optimalisatie", "website-laten-maken"],
+  relatedSlugs: ["hoger-in-google", "seo-specialist", "website-laten-maken"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
 };
@@ -433,7 +440,7 @@ export const PPC_BUREAU: SeoLandingPage = {
   ],
   ctaTitle: "PPC onder controle?",
   ctaBody: "Vertel je huidige spend. Ik kijk eerlijk mee.",
-  relatedSlugs: ["google-ads-bureau", "sea-specialist", "meta-ads-bureau"],
+  relatedSlugs: ["google-ads-bureau", "meta-ads-bureau"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -448,14 +455,16 @@ export const E_COMMERCE_MARKETING: SeoLandingPage = {
   keywords: [
     "e-commerce marketing",
     "ecommerce marketing bureau",
+    "ecommerce specialist",
     "online winkel marketing",
     "webshop marketing",
+    "webshop marketing bureau",
   ],
   eyebrow: "E-commerce",
   headline: "E-commerce marketing",
   headlineAccent: "zonder losse eilandjes.",
   subheadline:
-    "Je shop draait. Maar organisch, Shopping, e-mail en social praten niet met elkaar. Ik ben je e-commerce marketing manager: strategie, bouw en campagnes in één lijn.",
+    "Je shop draait. Organisch, Shopping, e-mail en social praten niet met elkaar. Ik ben je e-commerce specialist én marketing manager: strategie, bouw en campagnes in één lijn.",
   pains: [
     {
       title: "Alles los",
@@ -525,7 +534,9 @@ export const EMAILMARKETING: SeoLandingPage = {
     "E-mailmarketing voor webshops en leads. Welkomstflows, abandoned cart, nieuwsbrieven die niet in spam belanden. Gekoppeld aan je shop en ads.",
   keywords: [
     "e-mailmarketing",
+    "email marketing",
     "email marketing bureau",
+    "e-mailmarketing bureau",
     "e-mailmarketing webshop",
     "marketing automation e-mail",
   ],

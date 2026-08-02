@@ -325,32 +325,25 @@ export function buildSchemaFaqs(
 /** Nationale money-slugs zonder stad: hogere crawl-prioriteit. */
 const NATIONAL_MONEY_SLUGS = new Set([
   "google-ads-bureau",
-  "google-ads-beheer",
-  "google-ads-specialist",
-  "google-ads-uitbesteden",
   "seo-specialist",
-  "seo-uitbesteden",
   "seo-audit",
   "website-laten-maken",
-  "website-laten-bouwen",
   "webshop-laten-maken",
   "shopify-expert",
-  "shopify-webshop-laten-maken",
   "shopify-seo",
   "meta-ads-bureau",
   "online-marketing-bureau",
   "online-marketing-manager",
-  "marketing-bureau",
+  "e-commerce-marketing",
+  "conversie-optimalisatie",
+  "vindbaarheid-ai",
+  "e-mailmarketing",
   "lokale-seo",
   "hoger-in-google",
 ]);
 
-/** City-trio fill: website/marketing/seo × stad (breed, lagere prioriteit). */
-const CITY_TRIO_BASES = [
-  "website-laten-maken",
-  "marketing-bureau",
-  "seo-specialist",
-] as const;
+/** City fill bases (P0.4): website + seo × stad. */
+const CITY_TRIO_BASES = ["website-laten-maken", "seo-specialist"] as const;
 
 function isCityTrioFillSlug(slug: string): boolean {
   return CITY_TRIO_BASES.some(

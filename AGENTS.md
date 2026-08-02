@@ -61,12 +61,20 @@ Bij alle teksten voor meneermarketing.nl (naast de hoofdregels hierboven):
 2. **Premium micro-interacties:** Framer Motion en GSAP, hardware-versneld (`transform`/`opacity`, `will-change`). Knoppen, hovers en transities voelen op maat, nooit als template.
 3. **InteractiveLogo:** hoofd van Meneer Marketing naast het logo linksboven; pupillen volgen de cursor vloeiend over het hele scherm. Op mobiel reageert het op scroll/touch. `prefers-reduced-motion` respecteren.
 4. **SEO-techniek feilloos:** Core Web Vitals, semantische HTML, JSON-LD schema markup, a11y. Ads worden opgeschaald, dus landingspagina's moeten technisch perfect zijn.
+5. **`/zoeken/` growth freeze (actief):** geen nieuwe SEO-landings, city-pages, national batches of city-trio fills tot consolidatie klaar is (page weight, cannibal-clusters, city prune). Guard: [`src/data/seo-landings/growth-freeze.ts`](src/data/seo-landings/growth-freeze.ts). Prunen / 301 / noindex mag. Ceiling verhogen = freeze opheffen, alleen na P0.
 
 ## Shopify theme scheiding
 
 - **`shopify/`** = Skin Complete only (`sc-*` prefix). Werk hier in deze repo voor SC.
 - **`shopify-theme-bestrest/`** = BestRest live theme (`br-*`). Niet mixen, niet aanpassen tenzij expliciet gevraagd.
 - Geen BestRest-bestanden (`br-*`, `page.br-*`, BestRest page-sections) in `shopify/`.
+
+## DIBA Clinics (dibaclinics.nl)
+
+- **`diba/`** = aparte Next.js-app voor DIBA Clinics. Niet mixen met `src/` (MeneerMarketing).
+- Wet: [diba/DIBA-RULES.md](diba/DIBA-RULES.md) en [diba/DIBA-STAPPENPLAN.md](diba/DIBA-STAPPENPLAN.md). Die regels overschrijven AGENTS.md voor alles in `diba/`.
+- NAP: Weissenbruchlaan 166, 3054 HG Rotterdam. Formeel **u/uw**. Geen MeneerMarketing-tone.
+- Dev: `cd diba && npm run dev` (poort 3010). Oud project `meneermarketing-hq` niet meer gebruiken.
 
 ## Skin Complete — copy & compliance (Shopify)
 
@@ -80,7 +88,7 @@ Bij alle consumenten- en SEO-teksten voor Skin Complete (naast de algemene regel
 6. **Golflengtes:** Premium LED-Mask: **7 golflengtes** (410, 460, 610, 630, 660, 830, 850, 880 nm). Precision Photonic System: **4 golflengtes**.
 7. **Nabij-infrarood:** niet *infrarood* alleen; schrijf *nabij-infrarood (nir)*.
 8. **FDA 510(k):** alleen op **Premium LED-Mask** (SR-M4), niet op Neck & Décolleté of Precision Photonic System.
-9. **Geen 30-dagen retour/geld-terug** in marketingcopy. Trust bar: *Gratis verzending · Professionele ondersteuning · Veilig betalen*.
+9. **30 dagen bedenktijd** mag in marketingcopy (PDP, e-mail, retourbeleid). Formuleer als *30 dagen bedenktijd*, niet als harde "geld-terug-garantie". Trust bar basis: *Gratis verzending · Professionele ondersteuning · Veilig betalen* (bedenktijd alleen waar het past, bv. PDP-USPs).
 10. **Hero badge:** *Clinical-grade ontwerp* + *Alleen verkrijgbaar via professionals* (niet "Klinisch-gericht" / "Gebruikt in klinieken").
 11. **Golflengte-bolletjes:** kleur moet matchen met lichttype (geel = geel #F3C65B, rood = rood, nabij-infrarood = wit #FFFFFF).
 12. **Nabij-infrarood-label:** schrijf *nabij-infrarood (nir)*, niet *INFRAROOD* of *(NIR)* alleen.

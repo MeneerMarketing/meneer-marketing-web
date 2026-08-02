@@ -97,12 +97,7 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
   ],
   ctaTitle: "Klaar om hoger te ranken?",
   ctaBody: "Vertel je markt en waar je nu staat. Ik schets welke pagina's het verschil maken.",
-  relatedSlugs: [
-    "seo-specialist",
-    "content-marketing-vindbaarheid",
-    "website-laten-maken",
-    "google-ads-bureau",
-  ],
+  relatedSlugs: ["seo-specialist", "content-marketing-vindbaarheid", "website-laten-maken", "google-ads-bureau"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
 };

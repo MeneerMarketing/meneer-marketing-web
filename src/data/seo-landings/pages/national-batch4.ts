@@ -78,7 +78,7 @@ export const ZOEKMACHINE_MARKETING: SeoLandingPage = {
   ],
   ctaTitle: "Zoekmachine marketing uitbesteden?",
   ctaBody: "Vertel je markt. Ik schets SEO + SEA samen.",
-  relatedSlugs: ["zoekmachine-optimalisatie", "google-ads-bureau", "sea-specialist"],
+  relatedSlugs: ["seo-specialist", "google-ads-bureau"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
 };
@@ -116,7 +116,7 @@ export const ADVERTENTIEBEHEER: SeoLandingPage = {
   ],
   ctaTitle: "Advertenties laten beheren?",
   ctaBody: "Vertel je huidige spend. Ik kijk eerlijk mee.",
-  relatedSlugs: ["google-ads-beheer", "google-ads-uitbesteden", "meta-ads-bureau"],
+  relatedSlugs: ["google-ads-bureau", "meta-ads-bureau"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -127,11 +127,18 @@ export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Social media advertising · betaald social met plan | Meneer Marketing",
   metaDescription: "Social media advertising op Meta, TikTok en meer. UGC, landings en tracking met plan.",
-  keywords: ["social media advertising", "social media ads", "betaald adverteren social media", "social advertising bureau"],
+  keywords: [
+    "social media advertising",
+    "social media ads",
+    "social media marketing bureau",
+    "betaald adverteren social media",
+    "social advertising bureau",
+  ],
   eyebrow: "Social advertising",
   headline: "Social media advertising",
   headlineAccent: "zonder vanity metrics als doel.",
-  subheadline: "Likes zijn leuk voor je ego. Omzet is leuk voor je bedrijf. Social media advertising moet converteren, niet alleen bereiken.",
+  subheadline:
+    "Likes zijn leuk voor je ego. Omzet is leuk voor je bedrijf. Of je 'marketing bureau' of 'advertising' googelt: ik stuur op conversie, niet alleen bereik.",
   pains: [
     { title: "Bereik zonder sales", body: "Viral gevoel, lege bankrekening." },
     { title: "Verkeerd platform", body: "B2B op TikTok zonder plan. Geld weg." },
@@ -154,7 +161,7 @@ export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
   ],
   ctaTitle: "Social ads starten?",
   ctaBody: "Vertel je product en doelgroep.",
-  relatedSlugs: ["meta-ads-bureau", "tiktok-ads-bureau", "facebook-ads-bureau"],
+  relatedSlugs: ["meta-ads-bureau", "tiktok-ads-bureau"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -192,7 +199,7 @@ export const UGC_MARKETING: SeoLandingPage = {
   ],
   ctaTitle: "UGC proberen?",
   ctaBody: "Vertel je product. Ik schets creators + ads.",
-  relatedSlugs: ["influencer-marketing-bureau", "tiktok-ads-bureau", "instagram-ads-bureau"],
+  relatedSlugs: ["influencer-marketing-bureau", "tiktok-ads-bureau", "meta-ads-bureau"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
 };
@@ -307,7 +314,7 @@ export const ECOMMERCE_SPECIALIST: SeoLandingPage = {
   ],
   ctaTitle: "E-commerce hulp nodig?",
   ctaBody: "Stuur je shop-URL.",
-  relatedSlugs: ["e-commerce-marketing", "shopify-expert", "webshop-marketing"],
+  relatedSlugs: ["e-commerce-marketing", "shopify-expert"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };
@@ -497,7 +504,7 @@ export const WEBDESIGN_BUREAU: SeoLandingPage = {
   ],
   ctaTitle: "Webdesign bespreken?",
   ctaBody: "Vertel je merk en doelen.",
-  relatedSlugs: ["website-laten-maken", "nextjs-website-laten-maken", "cro-bureau"],
+  relatedSlugs: ["website-laten-maken", "nextjs-website-laten-maken", "conversie-optimalisatie"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };
@@ -611,7 +618,7 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
   ],
   ctaTitle: "Klaviyo laten inrichten?",
   ctaBody: "Vertel je shop en huidige flows.",
-  relatedSlugs: ["e-mailmarketing", "shopify-expert", "webshop-marketing"],
+  relatedSlugs: ["e-mailmarketing", "shopify-expert", "e-commerce-marketing"],
   pillarSlug: "behoud",
   pillarLabel: "Behoud",
 };
@@ -649,7 +656,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
   ],
   ctaTitle: "Snelheid laten checken?",
   ctaBody: "Stuur je URL. Ik noem de blockers.",
-  relatedSlugs: ["technische-seo", "shopify-expert", "cro-bureau"],
+  relatedSlugs: ["technische-seo", "shopify-expert", "conversie-optimalisatie"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };
@@ -726,7 +733,7 @@ export const TRAGE_WEBSITE_DURE_ADS: SeoLandingPage = {
   ],
   ctaTitle: "Site traag? Ads duur?",
   ctaBody: "Stuur je URL. Ik scan en zeg eerlijk wat eerst moet.",
-  relatedSlugs: ["core-web-vitals-verbeteren", "google-ads-bureau", "cro-bureau"],
+  relatedSlugs: ["core-web-vitals-verbeteren", "google-ads-bureau", "conversie-optimalisatie"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };
@@ -765,7 +772,7 @@ export const SHOPIFY_THEME_LATEN_MAKEN: SeoLandingPage = {
   ],
   ctaTitle: "Custom theme bespreken?",
   ctaBody: "Vertel je shop en wensen.",
-  relatedSlugs: ["shopify-expert", "shopify-webshop-laten-maken", "core-web-vitals-verbeteren"],
+  relatedSlugs: ["shopify-expert", "core-web-vitals-verbeteren"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };

@@ -42,7 +42,7 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
   ],
   ctaTitle: "Onzeker wat eerst?",
   ctaBody: "Vertel je situatie. Ik zeg eerlijk wat slim is.",
-  relatedSlugs: ["google-ads-bureau", "hoger-in-google", "seo-specialist", "zoekmachine-marketing"],
+  relatedSlugs: ["google-ads-bureau", "hoger-in-google", "seo-specialist"],
   pillarSlug: "strategie",
   pillarLabel: "Strategie",
 };
@@ -81,7 +81,7 @@ export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
   ],
   ctaTitle: "Twijfel over je platform?",
   ctaBody: "Vertel je shop. Ik schets opties.",
-  relatedSlugs: ["woocommerce-naar-shopify", "shopify-expert", "shopify-webshop-laten-maken"],
+  relatedSlugs: ["woocommerce-naar-shopify", "shopify-expert"],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
 };

@@ -1,4 +1,5 @@
 import type { ArticleSection } from "@/data/kennisbank/types";
+import { BrochureOmeter } from "@/components/kennisbank/BrochureOmeter";
 
 export function ArticleBody({ sections }: { sections: ArticleSection[] }) {
   return (
@@ -75,6 +76,11 @@ export function ArticleBody({ sections }: { sections: ArticleSection[] }) {
                 {block.text}
               </aside>
             );
+          case "interactive":
+            if (block.id === "brochure-ometer") {
+              return <BrochureOmeter key={i} />;
+            }
+            return null;
           default:
             return null;
         }

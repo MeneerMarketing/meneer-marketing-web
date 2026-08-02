@@ -7,6 +7,7 @@ import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/cont
 import { siteCtaList, siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
+import { TOP_ZOEKEN_HUB_LINKS } from "@/lib/seo/internal-links";
 
 const FOOTER_MAIN_CTAS = siteCtaList.filter((cta) => cta.href !== siteCtas.contact.href);
 
@@ -146,10 +147,29 @@ export function SiteFooter() {
               ))}
             </ul>
           </div>
+
+          <div className="col-span-2">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">
+              Veelgezocht
+            </p>
+            <ul className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2.5 text-sm font-medium text-slate-200 sm:grid-cols-4">
+              {TOP_ZOEKEN_HUB_LINKS.map((hub) => (
+                <li key={hub.slug}>
+                  <Link
+                    href={`/zoeken/${hub.slug}`}
+                    className="hover:text-sky-300"
+                    prefetch={false}
+                  >
+                    {hub.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Hoofdgrid — desktop (origineel) */}
-        <div className="mt-12 hidden gap-10 lg:grid lg:grid-cols-[1.2fr_1fr_1fr]">
+        <div className="mt-12 hidden gap-10 lg:grid lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div>
             <Logo variant="light" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed tracking-tight text-mm-footer-muted">
@@ -169,6 +189,29 @@ export function SiteFooter() {
                   <span className="mt-0.5 block text-xs text-mm-footer-muted">{col.subtitle}</span>
                 </li>
               ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
+              Veelgezocht
+            </p>
+            <ul className="mt-4 space-y-2 text-sm font-medium text-slate-200">
+              {TOP_ZOEKEN_HUB_LINKS.map((hub) => (
+                <li key={hub.slug}>
+                  <Link
+                    href={`/zoeken/${hub.slug}`}
+                    className="hover:text-sky-300"
+                    prefetch={false}
+                  >
+                    {hub.label}
+                  </Link>
+                </li>
+              ))}
+              <li className="pt-1">
+                <Link href="/zoeken" className="text-sky-300/90 hover:text-sky-300" prefetch={false}>
+                  Alle zoekpagina&apos;s
+                </Link>
+              </li>
             </ul>
           </div>
           <div>

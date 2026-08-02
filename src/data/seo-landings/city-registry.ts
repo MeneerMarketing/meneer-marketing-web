@@ -1,4 +1,7 @@
-/** Unieke steden/regio's voor SEO-landings (slug = URL-suffix). */
+/**
+ * Unieke steden/regio's voor SEO-landings (slug = URL-suffix).
+ * GROWTH FREEZE: geen steden toevoegen. Zie `growth-freeze.ts`.
+ */
 export const SEO_CITY_REGISTRY = [
   { slug: "apeldoorn", city: "Apeldoorn", region: "Gelderland" },
   { slug: "arnhem", city: "Arnhem", region: "Gelderland" },
