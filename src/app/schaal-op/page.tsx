@@ -46,14 +46,21 @@ export default function SchaalOpPage() {
           title={
             <>
               Groei met{" "}
-              <span className="text-[#FF5722]">richting</span> en meetpunten.
+              <span className="relative inline-block text-[#FF5722]">
+                richting
+                <span
+                  aria-hidden
+                  className="absolute -bottom-1 left-0 h-2 w-full rounded-full bg-[#FF5722]/25"
+                />
+              </span>{" "}
+              en meetpunten.
             </>
           }
           intro={
             <>
               Meer volume lost niet alles op. Eerst bepalen we waar de{" "}
               <span className="font-semibold text-slate-900">grootste hefboom</span>{" "}
-              zit. Dan bouwen we eromheen.
+              zit. Dan bouwen we eromheen. Speels plan, harde cijfers.
             </>
           }
           primaryCtaLabel="Start schaaltraject"
