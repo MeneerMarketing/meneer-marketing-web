@@ -192,7 +192,7 @@ export function ConversionHero({
               initial={reduce ? false : { opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
-              className="relative flex justify-center lg:justify-end"
+              className="relative hidden justify-end lg:flex"
             >
               {visual}
             </motion.div>
