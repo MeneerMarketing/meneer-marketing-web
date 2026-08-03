@@ -2,16 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowUpRight,
-  BadgeEuro,
   Gauge,
   Layers,
-  Rocket,
   Sparkles,
-  Timer,
 } from "lucide-react";
 import { ConversionAside } from "@/components/contact/ConversionAside";
 import { ConversionForm } from "@/components/contact/ConversionForm";
 import { ConversionHero } from "@/components/contact/ConversionHero";
+import { HeroProjectWindow } from "@/components/contact/HeroProjectWindow";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { siteCtas } from "@/lib/cta";
@@ -35,6 +33,16 @@ export const metadata: Metadata = {
   },
 };
 
+const PROJECT_STICKERS = [
+  "Scherpe kickoff",
+  "Scope eerst",
+  "Budgetbanden",
+  "Webshop of site",
+  "Marketing",
+  "Autopilot",
+  "Eerste win snel",
+] as const;
+
 export default function ProjectStartenPage() {
   return (
     <>
@@ -42,7 +50,7 @@ export default function ProjectStartenPage() {
       <main id="main" className="flex-1">
         <ConversionHero
           tone="accent"
-          eyebrow="Project starten"
+          eyebrow="Project starten · plan op maat"
           title={
             <>
               Van idee naar{" "}
@@ -54,29 +62,26 @@ export default function ProjectStartenPage() {
               Vertel kort wat je wilt bouwen of verbeteren. Type, budget en
               timing geven mij direct genoeg om{" "}
               <span className="font-semibold text-slate-900">scherp mee te denken</span>
-              . Zonder rondjes om de hete brei.
+              .
             </>
           }
           primaryCtaLabel="Start projectaanvraag"
           secondary={
             <Link
               href={siteCtas.startIntake.href}
-              className="inline-flex items-center gap-1.5 rounded-full border-2 border-slate-900 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-300/80 bg-white/70 px-6 py-3.5 text-sm font-bold text-slate-900 backdrop-blur transition hover:border-slate-900"
             >
               Eerst de intake
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
           }
-          badges={[
-            { icon: <Rocket className="size-3.5" />, label: "Scherpe kickoff" },
-            { icon: <BadgeEuro className="size-3.5" />, label: "Realistische budgetindicatie" },
-            { icon: <Timer className="size-3.5" />, label: "Start binnen weken mogelijk" },
-          ]}
           stats={[
             { value: "7 typen", label: "Projectscopes" },
-            { value: "5", label: "Budgetbanden" },
+            { value: "5 banden", label: "Budget" },
             { value: "≤ 2d", label: "Eerste reactie" },
           ]}
+          visual={<HeroProjectWindow />}
+          stickers={PROJECT_STICKERS}
         />
 
         <section
