@@ -60,7 +60,7 @@ export default function SchaalOpPage() {
             <>
               Meer volume lost niet alles op. Eerst bepalen we waar de{" "}
               <span className="font-semibold text-slate-900">grootste hefboom</span>{" "}
-              zit. Dan bouwen we eromheen. Speels plan, harde cijfers.
+              zit. Dan bouwen we eromheen.
             </>
           }
           primaryCtaLabel="Start schaaltraject"
