@@ -3,15 +3,13 @@ import Link from "next/link";
 import {
   ArrowUpRight,
   BarChart3,
-  Gauge,
-  Radar,
   Rocket,
-  ShieldCheck,
   Sparkles,
 } from "lucide-react";
 import { ConversionAside } from "@/components/contact/ConversionAside";
 import { ConversionForm } from "@/components/contact/ConversionForm";
 import { ConversionHero } from "@/components/contact/ConversionHero";
+import { HeroScaleWindow } from "@/components/contact/HeroScaleWindow";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { siteCtas } from "@/lib/cta";
@@ -35,6 +33,16 @@ export const metadata: Metadata = {
   },
 };
 
+const SCHAAL_STICKERS = [
+  "Eén hoofdfocus",
+  "KPI per kwartaal",
+  "Leads of conversie",
+  "Paid scherp",
+  "Autopilot",
+  "Meetbaar sturen",
+  "Cases eerst",
+] as const;
+
 export default function SchaalOpPage() {
   return (
     <>
@@ -42,7 +50,7 @@ export default function SchaalOpPage() {
       <main id="main" className="flex-1">
         <ConversionHero
           tone="accent"
-          eyebrow="Schaal op"
+          eyebrow="Schaal op · groei met meetpunten"
           title={
             <>
               Groei met{" "}
@@ -67,22 +75,19 @@ export default function SchaalOpPage() {
           secondary={
             <Link
               href="/cases"
-              className="inline-flex items-center gap-1.5 rounded-full border-2 border-slate-900 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-300/80 bg-white/70 px-6 py-3.5 text-sm font-bold text-slate-900 backdrop-blur transition hover:border-slate-900"
             >
               Bekijk cases
               <ArrowUpRight className="size-4" aria-hidden />
             </Link>
           }
-          badges={[
-            { icon: <Gauge className="size-3.5" />, label: "KPI-gedreven" },
-            { icon: <Radar className="size-3.5" />, label: "Meetbaar & schaalbaar" },
-            { icon: <ShieldCheck className="size-3.5" />, label: "Eén hoofdfocus" },
-          ]}
           stats={[
-            { value: "6", label: "Schaalfocussen" },
-            { value: "1", label: "Hoofd-KPI per kwartaal" },
+            { value: "6 focussen", label: "Aanpak" },
+            { value: "1 KPI", label: "Per kwartaal" },
             { value: "≤ 2d", label: "Terugkoppeling" },
           ]}
+          visual={<HeroScaleWindow />}
+          stickers={SCHAAL_STICKERS}
         />
 
         <section
@@ -101,7 +106,7 @@ export default function SchaalOpPage() {
                 },
                 {
                   title: "Hefboom kiezen",
-                  body: "Eén hoofd-KPI per kwartaal. Geen twintig losse experimenten.",
+                  body: "Eén hoofd-KPI per kwartaal. Experimenten die daar hard aan meewerken.",
                 },
                 {
                   title: "Bouwen & sturen",
