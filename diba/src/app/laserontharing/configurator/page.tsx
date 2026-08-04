@@ -87,17 +87,17 @@ export default function LaserConfiguratorPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 sm:p-10">
             <Label>Voordat je begint</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
-              De tarieven staan er nog niet in
+              De bedragen zijn nog voorlopig
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              We zetten liever geen bedrag neer dan een bedrag dat straks anders
-              blijkt. Je opbouw klopt al wel: welke zones je kiest, wat een
-              pakket vervangt en wat er los overblijft. Zodra de tarieven erin
-              staan zie je hier je bedrag.
+              Wat je hieronder ziet staan is nog niet door de kliniek vastgesteld.
+              De opbouw klopt al wel: welke zones je kiest, wat een pakket
+              vervangt en wat er los overblijft. Alleen de bedragen kunnen nog
+              veranderen.
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wil je het nu al weten, stel je vraag dan via WhatsApp. Dan krijg
-              je antwoord van een mens en niet van een lege tabel.
+              Wil je het zeker weten, stel je vraag dan via WhatsApp. Dan krijg je
+              antwoord van een mens.
             </p>
           </div>
         </div>

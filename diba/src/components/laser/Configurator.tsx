@@ -8,6 +8,7 @@ import Label from "@/components/ui/Label";
 import {
   FITZPATRICK_TYPES,
   LASER_ZONES,
+  VOORLOPIGE_PRIJZEN,
   type FitzpatrickId,
 } from "@/data/laser-zones";
 import {
@@ -23,22 +24,23 @@ import { DIBA_SALONIZED_BOOKING_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 /**
  * De laserconfigurator.
  *
- * Wat deze anders maakt dan de meeste: hij kan nog geen bedragen laten zien, en doet ook
- * niet alsof. De tarieven zijn er nog niet, dus staat er "nog niet bekend" en niet € 0.
- * Dat is niet de vervelende versie van eerlijk zijn maar de enige; wie een nul ziet denkt
- * aan een aanbieding, en dat is precies de verwachting die §7 verbiedt.
+ * Wat hij doet:
  *
- * Wat hij wél doet, en dat is het meeste werk:
- *
- * - je wijst je zones aan op een tekening in plaats van ze op te zoeken in een lijst
+ * - je wijst je zones aan op een schematisch lichaam in plaats van ze op te zoeken in een
+ *   lijst, en je ziet bij het zweven meteen wat die zone kost
  * - pakketten vervangen de losse zones die ze dekken, dus nooit twee keer hetzelfde
  * - hij zegt het als je in de buurt van een pakket komt, zonder aftellertje
  * - je keuze staat in de URL, dus je kunt hem bewaren of doorsturen
  *
- * Zodra Okan de tarieven aanlevert verandert er aan dit bestand niets. Dat is de test die
- * de opzet moest doorstaan.
+ * De bedragen die je ziet zijn VOORLOPIG. Ze staan in `laser-zones.ts` achter de vlag
+ * `VOORLOPIGE_PRIJZEN`, en zolang die aan staat zegt de opbouw er zelf bij dat de kliniek
+ * ze nog niet heeft vastgesteld. Die twee zitten met opzet aan elkaar vast: er kan geen
+ * versie bestaan met verzonnen bedragen zonder waarschuwing erbij.
  *
- * PRIJS-NODIG: alle bedragen in `laser-zones.ts`.
+ * Een bedrag van nul betekent nog steeds "nog niet bekend" en nooit "gratis". Wie € 0 ziet
+ * staan denkt aan een aanbieding, en dat is de verwachting die §7 verbiedt.
+ *
+ * PRIJS-NODIG: de echte tarieven, van Okan.
  * GEGEVEN-NODIG: het aantal sessies per zone.
  */
 
@@ -153,7 +155,7 @@ export default function Configurator() {
               </strong>{" "}
               aangewezen. Wat er nog bij zou komen:{" "}
               {advies.erbij.map((id) => label(id).toLowerCase()).join(", ")}. Of
-              dat gunstiger uitkomt hoor je zodra de tarieven erin staan.
+              dat gunstiger uitkomt hangt af van de definitieve tarieven.
             </p>
           ) : null}
         </div>
@@ -224,9 +226,17 @@ export default function Configurator() {
           </p>
           <p className="mt-3 text-[14px] leading-6 text-[var(--t-muted)]">
             {opbouw.hasMissingPrices
-              ? "De tarieven staan er nog niet in. Je opbouw klopt al wel, dus zodra ze erin staan zie je hier meteen je bedrag."
+              ? "Voor een deel van je keuze is nog geen tarief bekend. De opbouw klopt al wel."
               : "Prijs per sessie. Het aantal sessies hoor je in de intake."}
           </p>
+
+          {/* Hangt aan de vlag in de data, niet aan een los stukje tekst. Zolang daar
+              verzonnen bedragen in staan kan deze mededeling er niet af. */}
+          {VOORLOPIGE_PRIJZEN ? (
+            <p className="mt-3 rounded-[var(--r-sm)] bg-[var(--g-050)] p-3 text-[13px] leading-5 text-[var(--t-body)]">
+              Deze bedragen zijn voorlopig en nog niet door de kliniek vastgesteld.
+            </p>
+          ) : null}
 
           {opbouw.lines.length > 0 ? (
             <ul className="mt-6 space-y-3 border-t border-[var(--g-100)] pt-5">
