@@ -803,6 +803,18 @@ body:has(.figma-home) {
     color: var(--on-dark-label);
   }
 
+  /* Actieve pill op --g-700. Zonder dit wint .diba-label met --t-label op donkergroen
+     en is de tekst onleesbaar (eczeem-krabcirkel, psoriasis-silhouet, …). */
+  .diba-pill-active {
+    background-color: var(--g-700);
+    color: var(--on-dark);
+  }
+
+  .diba-pill-active.diba-label,
+  .diba-pill-active .diba-label {
+    color: var(--on-dark);
+  }
+
   /* De sweep van de mini-scan: één rondgang per 1,5s, zolang de scan loopt. */
   .diba-scan-sweep {
     animation: diba-sweep 1.5s linear infinite;
@@ -1079,6 +1091,58 @@ html.js-reveal [data-reveal].is-visible {
   }
 }
 
+@keyframes diba-review-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.review-marquee-track {
+  animation: diba-review-marquee 55s linear infinite;
+}
+
+.review-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .review-marquee-track {
+    animation: none;
+  }
+}
 
 
 
+
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Hero-variant: het menupaneel dat onder de navigatie uitklapt.
+
+   Alleen de opkomst, geen uitgang: een paneel dat wegvalt terwijl je muis er
+   al af is voelt traag. Respecteert prefers-reduced-motion, want dit is
+   versiering en geen informatie.
+   ────────────────────────────────────────────────────────────────────────── */
+@keyframes diba-paneel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes diba-paneel-in {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

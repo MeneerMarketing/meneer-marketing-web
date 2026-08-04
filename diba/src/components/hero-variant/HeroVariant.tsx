@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroNav from "@/components/hero-variant/HeroNav";
 import Topbalk from "@/components/hero-variant/Topbalk";
-import DibaLogo from "@/components/ui/DibaLogo";
 import Label from "@/components/ui/Label";
 import { FIGMA_HOME_PORTRAIT_WIDE } from "@/data/figma-home-images";
 import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
@@ -15,10 +15,13 @@ import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
  * op wit.
  *
  * Vandaar deze opbouw:
- *   1. topbalk op wit, dun
+ *   1. topbalk op wit, dun, van rand tot rand en zonder streep eronder
  *   2. één beeldvlak met ronde hoeken en witruimte eromheen, bijna schermvullend
- *   3. logo, navigatie en knop zweven daarbinnen, in wit
+ *   3. logo links, navigatie en knop rechts, zwevend daarbinnen in wit
  *   4. de kop linksonder in het beeld
+ *
+ * De navigatie zit in HeroNav en niet hier, want die is uitklapbaar en dus een
+ * clientcomponent. De rest van deze hero blijft daardoor server-side.
  *
  * Wat er anders is dan het voorbeeld, en met opzet:
  *
@@ -35,21 +38,13 @@ import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
  * Staat los op /home-variant. De bestaande homepage is niet aangeraakt.
  */
 
-const NAV = [
-  { label: "Huidproblemen", href: "/huidproblemen" },
-  { label: "Behandelingen", href: "/behandelingen" },
-  { label: "De huidscan", href: "/#huidscan" },
-  { label: "Ons verbond", href: "/ons-verbond" },
-  { label: "Prijzen", href: "/prijzen" },
-];
-
 export default function HeroVariant() {
   return (
     <div className="bg-white">
       <Topbalk />
 
-      <section className="p-2 sm:p-3">
-        <div className="relative h-[calc(100svh-6.5rem)] min-h-[560px] w-full overflow-hidden rounded-[var(--r-xl)]">
+      <section className="px-3 pb-3 sm:px-4 sm:pb-4">
+        <div className="relative h-[calc(100svh-5.5rem)] min-h-[560px] w-full overflow-hidden rounded-[var(--r-xl)]">
           <Image
             src={FIGMA_HOME_PORTRAIT_WIDE.src}
             alt={FIGMA_HOME_PORTRAIT_WIDE.alt}
@@ -70,49 +65,7 @@ export default function HeroVariant() {
           />
 
           {/* ── Navigatie, zwevend in het beeld ── */}
-          <header className="absolute inset-x-0 top-0 z-10 flex items-center justify-between gap-6 px-5 py-5 sm:px-8 lg:px-10">
-            <Link
-              href="/"
-              aria-label="Diba Clinics, naar de homepage"
-              className="shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-            >
-              <DibaLogo variant="white" />
-            </Link>
-
-            <nav aria-label="Hoofdnavigatie" className="hidden lg:block">
-              <ul className="flex items-center gap-8">
-                {NAV.map((n) => (
-                  <li key={n.href}>
-                    <Link
-                      href={n.href}
-                      className="text-[15px] text-white/90 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-                    >
-                      {n.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <Link
-              href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
-              className="diba-label inline-flex h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-5 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Afspraak maken
-              <svg
-                viewBox="0 0 16 16"
-                className="h-3 w-3"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" />
-              </svg>
-            </Link>
-          </header>
+          <HeroNav />
 
           {/* ── De kop ── */}
           <div className="absolute inset-x-0 bottom-0 z-10 px-5 pb-8 sm:px-8 sm:pb-10 lg:px-10 lg:pb-14">

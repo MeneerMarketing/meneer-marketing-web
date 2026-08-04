@@ -38,20 +38,58 @@ export default function HomeVariantPage() {
             beter, dan zetten we hem daar neer; vind je van niet, dan gaat deze pagina weg
             en is er niets gebeurd.
           </p>
-          <ul className="mt-7 space-y-2 text-[15px] leading-7 text-[var(--t-body)]">
-            <li>
-              De waardering staat linksboven met de bron erbij en linkt naar Salonized.
-            </li>
-            <li>
-              De taalkiezer toont vier talen; alleen Nederlands is er, de rest staat als
-              &quot;straks&quot; aangemerkt.
-            </li>
-            <li>
-              Het Salonized-beeldmerk ontbreekt nog. Zolang dat er niet is staat de naam
-              er als woord, want een verzonnen logo is erger dan geen logo.
-            </li>
-            <li>Wie de medische inhoud nakijkt moet nog worden vastgelegd.</li>
-          </ul>
+          <p className="mt-5 max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
+            Het menu is gebouwd voor de site zoals hij straks is en niet zoals hij nu is.
+            Alle bestemmingen bestaan als route, dus er zit geen dode link in, maar achter
+            de meeste staat nog geen inhoud. Die staan hieronder.
+          </p>
+
+          <div className="mt-8 grid gap-8 sm:grid-cols-2">
+            <div>
+              <Label>Wat er nieuw is</Label>
+              <ul className="mt-4 space-y-2 text-[15px] leading-7 text-[var(--t-body)]">
+                <li>
+                  De topbalk loopt van rand tot rand en heeft geen streep meer onder zich.
+                </li>
+                <li>
+                  De waardering staat linksboven zonder het woord Salonized; het hele blok
+                  linkt naar de openbare lijst en de voorleesnaam noemt de bron voluit.
+                </li>
+                <li>
+                  Logo links, menu en knop samen rechts tegen de rand, precies zoals in het
+                  voorbeeld dat je stuurde.
+                </li>
+                <li>
+                  Achter Huidproblemen, Behandelingen en Over Diba klapt een breed paneel
+                  uit. De zeventien huidproblemen staan er gegroepeerd in, elk met de
+                  vraag waarmee die pagina begint.
+                </li>
+                <li>
+                  Mijn Diba staat in de balk als uitklapje: het vertelt wat het portaal
+                  wordt en doet nog niets, want er is nog niets.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <Label>Wat er nog niet is</Label>
+              <ul className="mt-4 space-y-2 text-[15px] leading-7 text-[var(--t-body)]">
+                <li>
+                  Behandelingen, Laserontharing, Prijzen, Resultaten, Over ons, Team,
+                  Nazorg, Voor wie en Contact bestaan als pagina maar zijn nog leeg.
+                </li>
+                <li>Alle prijzen staan op nul tot jij de echte aanlevert.</li>
+                <li>
+                  De taalkiezer toont vier talen; alleen Nederlands is er, de rest staat
+                  als &quot;straks&quot; aangemerkt.
+                </li>
+                <li>
+                  Het Salonized-beeldmerk ontbreekt nog, dus staat er nu alleen de link.
+                </li>
+                <li>Wie de medische inhoud nakijkt moet nog worden vastgelegd.</li>
+              </ul>
+            </div>
+          </div>
           <Link
             href="/"
             className="diba-label mt-8 inline-block text-[var(--g-700)] underline underline-offset-4"
