@@ -45,12 +45,19 @@ export const DIBA_NAP = {
   whatsappHref: DIBA_WHATSAPP_URL,
 } as const;
 
+/** Publieke reviewbron — live op Salonized. */
+export const DIBA_SALONIZED_REVIEWS_URL = "https://dibaclinics.salonized.com/reviews";
+
+/** Stand Salonized (aug 2026): 5,0 · 3.883 reviews. */
+export const DIBA_SALONIZED_RATING = 5.0;
+export const DIBA_SALONIZED_REVIEW_COUNT = 3883;
+
 /** Canonieke proof points — enige toegestane cijfers (DIBA-RULES.md §11) */
 export const DIBA_PROOF = {
   activeSince: 2017,
   helpedClients: "8.000+",
   treatmentsPerformed: "50.000+",
-  clientReviews: "4.000+",
+  clientReviews: "3.883",
 } as const;
 
 /** Numerieke waarden voor ProofStrip count-up (§11, enige bron) */
@@ -58,19 +65,25 @@ export type ProofStripItem = {
   readonly value: number;
   readonly suffix?: string;
   readonly label: string;
+  /**
+   * Jaartallen krijgen geen duizendscheiding. Dat stond eerder impliciet in het ontbreken
+   * van een achtervoegsel, en toen het reviewaantal ook zonder plusje kwam te staan
+   * verscheen dat als "3883" in plaats van "3.883" — precies wat §11 verbiedt.
+   */
+  readonly isJaartal?: true;
 };
 
 export const DIBA_PROOF_STRIP_ITEMS: readonly ProofStripItem[] = [
-  { value: DIBA_PROOF.activeSince, label: "Actief sinds" },
+  { value: DIBA_PROOF.activeSince, label: "Actief sinds", isJaartal: true },
   { value: 8000, suffix: "+", label: "Geholpen klanten" },
   { value: 50000, suffix: "+", label: "Behandelingen" },
-  { value: 4000, suffix: "+", label: "Klantreviews" },
+  { value: DIBA_SALONIZED_REVIEW_COUNT, label: "Klantreviews" },
 ] as const;
 
 /** Figma homepage volgorde — stats bar onder hero */
 export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
-  { value: 4000, suffix: "+", label: "Klantreviews" },
+  { value: DIBA_SALONIZED_REVIEW_COUNT, label: "Klantreviews" },
   { value: 50000, suffix: "+", label: "Uitgevoerde behandelingen" },
   { value: 8000, suffix: "+", label: "Geholpen klanten" },
-  { value: DIBA_PROOF.activeSince, label: "Vertrouwd sinds" },
+  { value: DIBA_PROOF.activeSince, label: "Vertrouwd sinds", isJaartal: true },
 ] as const;

@@ -1,63 +1,28 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import {
-  FIGMA_INTENT_ACNE,
-  FIGMA_INTENT_LICHAAM,
-  FIGMA_INTENT_LITTEKENS,
-  FIGMA_INTENT_PIGMENT,
-  FIGMA_INTENT_VEROUDERING,
-} from "@/data/figma-home-images";
 import { BESTEMMINGEN, type Groep } from "@/data/symptoomzoeker";
 
 /**
  * Het raster op het huidproblemenoverzicht.
  *
- * Twee eerdere versies waren fout om dezelfde reden. De eerste zette vier groepen onder
- * elkaar als zestien identieke witte vakjes: een tabel. De tweede filterde wel, maar de
- * koppen gingen over de website ("zeventien pagina's, vijf gaan niet over ons") in plaats
- * van over huid. Interessant voor de bouwer, nutteloos voor iemand met een probleem.
+ * Drie versies verder is dit wat werkt. De eerste zette de groepen onder elkaar met
+ * identieke witte vakjes: een tabel. De tweede maakte er één filterbaar raster van, maar
+ * dan is het zeventien kaarten achter elkaar en zie je de indeling niet meer. De derde
+ * gebruikte de kaartvorm van de homepage, waar een kaart alleen een voorbeeld selecteert;
+ * op een overzicht wil je gewoon naar die pagina.
  *
- * Nu volgt hij de vorm van "Waar wil je hulp bij?" op de homepage: mintkaarten met een
- * pijlschijfje, de gekozen kaart in donkergroen, en daaronder een breed focusvlak met
- * beeld. Kiezen en kijken, en pas dan doorklikken.
+ * Nu: kaarten in de vorm van de homepage, maar gegroepeerd onder hun kop en met een
+ * sprongnavigatie erboven. De indeling is meteen zichtbaar, de kaarten zijn links, en je
+ * scrolt langs vier duidelijke blokken in plaats van langs één lijst.
  *
  * Wat elke kaart draagt is de eerste vraag van die aandoening. Dat is het onderscheidende
  * van de hele reeks: bij acne telt wáár het zit, bij pigment welk seizoen het is, bij
- * littekens hoe oud ze zijn. Wie met de verkeerde vraag begint behandelt maanden het
- * verkeerde, en dat is precies wat hier te zien is voordat je iets aanklikt.
- *
- * De groepen blijven, want ze zijn waar: een deel hoort bij een arts en bij één onderwerp
- * kan niemand iets. Ze staan nu alleen in klinische taal in plaats van als paginatelling.
+ * littekens hoe oud ze zijn. Zo weet je vóór het doorklikken waar we beginnen.
  */
 
-type Filter = "alles" | Groep;
-
-const FILTERS: readonly { readonly id: Filter; readonly label: string }[] = [
-  { id: "alles", label: "Alles" },
-  { id: "behandelen", label: "Wij behandelen dit" },
-  { id: "doorverwijzen", label: "Dit hoort bij een arts" },
-  { id: "niet", label: "Hier bestaat geen behandeling voor" },
-  { id: "wegwijzer", label: "Weet je het niet" },
-];
-
-const REGEL: Record<Filter, string> = {
-  alles:
-    "Kies waar je last van hebt. Je ziet meteen met welke vraag we bij dat probleem beginnen, want die verschilt per aandoening.",
-  behandelen:
-    "Hier meten we eerst en behandelen we daarna, of we raden het af. Elke pagina begint bij de vraag die bij dat probleem het zwaarst weegt.",
-  doorverwijzen:
-    "Deze horen bij je huisarts of een dermatoloog. We leggen uit waar je op let en waar je heen gaat, en we maken er geen afspraak voor.",
-  niet: "Hier kan niemand wat er beloofd wordt. Dat staat er met de uitleg erbij, zodat je het elders ook herkent.",
-  wegwijzer:
-    "Weet je niet hoe het heet? Deze twee sorteren op wat je ziet in plaats van op een naam.",
-};
-
-/** De zoeker hoort in de laatste groep maar is een gereedschap, geen aandoening. */
+/** De zoeker hoort in de laatste groep maar is gereedschap, geen aandoening. */
 const ZOEKER = {
   naam: "Symptoomzoeker",
   pad: "/huidproblemen/symptoomzoeker",
@@ -66,205 +31,143 @@ const ZOEKER = {
   groep: "wegwijzer" as Groep,
 };
 
-/** Beeld per onderwerp. Vijf shoots, verdeeld naar wat er te zien is. */
-const BEELD: Record<string, { readonly src: string; readonly alt: string }> = {
-  "/huidproblemen/acne": FIGMA_INTENT_ACNE,
-  "/huidproblemen/rosacea": FIGMA_INTENT_ACNE,
-  "/huidproblemen/porien": FIGMA_INTENT_ACNE,
-  "/huidproblemen/gevoelige-huid": FIGMA_INTENT_ACNE,
-  "/huidproblemen/pigmentvlekken": FIGMA_INTENT_PIGMENT,
-  "/huidproblemen/melasma": FIGMA_INTENT_PIGMENT,
-  "/huidproblemen/huidverkleuring": FIGMA_INTENT_PIGMENT,
-  "/huidproblemen/donkere-kringen": FIGMA_INTENT_PIGMENT,
-  "/huidproblemen/littekens": FIGMA_INTENT_LITTEKENS,
-  "/huidproblemen/huidveroudering": FIGMA_INTENT_VEROUDERING,
-  "/huidproblemen/droge-huid": FIGMA_INTENT_VEROUDERING,
-  "/huidproblemen/moedervlekken": FIGMA_INTENT_VEROUDERING,
-  "/huidproblemen/eczeem": FIGMA_INTENT_LICHAAM,
-  "/huidproblemen/psoriasis": FIGMA_INTENT_LICHAAM,
-  "/huidproblemen/huiduitslag": FIGMA_INTENT_LICHAAM,
-  "/huidproblemen/cellulitis": FIGMA_INTENT_LICHAAM,
-  "/huidproblemen/symptoomzoeker": FIGMA_INTENT_ACNE,
-};
-
-const CTA: Record<Groep, string> = {
-  behandelen: "Lees hoe wij dit aanpakken",
-  doorverwijzen: "Lees waar je op let",
-  niet: "Lees waarom niemand dit kan",
-  wegwijzer: "Zoek het uit",
-};
+const GROEPEN: readonly {
+  readonly id: Groep;
+  readonly anker: string;
+  readonly kort: string;
+  readonly label: string;
+  readonly kop: string;
+  readonly accent: string;
+  readonly intro: string;
+}[] = [
+  {
+    id: "behandelen",
+    anker: "behandelen",
+    kort: "Wij behandelen dit",
+    label: "Hier kunnen wij iets",
+    kop: "Wat wij",
+    accent: "behandelen.",
+    intro:
+      "Elk met een eigen pagina die begint bij de vraag die bij dat probleem het zwaarst weegt. Eerst meten, dan pas een plan, en soms is het advies om niets te doen.",
+  },
+  {
+    id: "doorverwijzen",
+    anker: "arts",
+    kort: "Bij een arts",
+    label: "Hier sturen wij je door",
+    kop: "Wat bij een arts",
+    accent: "hoort.",
+    intro:
+      "Deze pagina's hebben geen afspraakknop. Ze staan er omdat mensen ons dit vragen terwijl ze bij ons op de stoel liggen, en dan is een goed antwoord beter dan een ontwijkend.",
+  },
+  {
+    id: "niet",
+    anker: "geen-behandeling",
+    kort: "Geen behandeling",
+    label: "Hier bestaat geen behandeling voor",
+    kop: "Waar niemand",
+    accent: "iets aan kan.",
+    intro:
+      "Dat staat er zo, met de uitleg waarom geen enkele crème of apparaat het weghaalt. Zodat je het elders herkent als het je toch wordt aangeboden.",
+  },
+  {
+    id: "wegwijzer",
+    anker: "wegwijzer",
+    kort: "Weet je het niet",
+    label: "Weet je niet hoe het heet",
+    kop: "Begin dan",
+    accent: "bij wat je ziet.",
+    intro:
+      "Twee wegwijzers die sorteren op kleur of op wat je voelt, in plaats van op een naam die je niet kent.",
+  },
+];
 
 export default function Raster() {
-  const [filter, setFilter] = useState<Filter>("alles");
   const alles = [...BESTEMMINGEN, ZOEKER];
-  const zichtbaar = alles.filter(
-    (b) => filter === "alles" || b.groep === filter,
-  );
-  const [gekozenPad, setGekozenPad] = useState(alles[0].pad);
-
-  /* Valt de keuze buiten het filter, dan schuift hij naar de eerste die er wel in past.
-     Afgeleid tijdens de render, want state die state naloopt is een extra ronde. */
-  const gekozen = zichtbaar.find((b) => b.pad === gekozenPad) ?? zichtbaar[0];
-  const beeld = BEELD[gekozen.pad] ?? FIGMA_INTENT_ACNE;
 
   return (
     <div>
-      {/* ── Kop en filters ── */}
-      <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-12">
-        <div>
-          <Label>Voor jou</Label>
-          <h2 className="diba-display-m mt-4 max-w-[16ch]">
-            Waar wil je hulp bij?
-          </h2>
-        </div>
-        <p
-          className="max-w-[58ch] self-end text-[16px] leading-7 text-[var(--t-body)]"
-          aria-live="polite"
-        >
-          {REGEL[filter]}
-        </p>
-      </div>
-
-      <div
-        role="tablist"
-        aria-label="Filter op wat wij ermee doen"
-        className="mt-9 -mx-5 flex gap-2 overflow-x-auto px-5 pb-1 sm:mx-0 sm:flex-wrap sm:px-0"
+      {/* ── Sprongnavigatie ──
+          Plakt onder de header, zodat je vanaf elke plek naar een groep kunt springen.
+          Dezelfde vorm als de in-paginanavigatie op de huidprobleempagina's zelf. */}
+      <nav
+        aria-label="Naar een groep"
+        className="sticky top-0 z-20 -mx-5 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur sm:-mx-9 lg:-mx-[7.5vw]"
       >
-        {FILTERS.map((f) => {
-          const aan = f.id === filter;
-          return (
-            <button
-              key={f.id}
-              role="tab"
-              type="button"
-              aria-selected={aan}
-              onClick={() => setFilter(f.id)}
-              className={`diba-label flex min-h-12 shrink-0 items-center rounded-[var(--r-pill)] px-5 whitespace-nowrap transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
-                aan
-                  ? "bg-[var(--g-700)] text-[var(--on-dark-label)]"
-                  : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
-              }`}
-            >
-              {f.label}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* ── De kaarten ──
-          Links, geen knoppen. Ze waren even knoppen die alleen het focusvlak eronder
-          verzetten, met de echte navigatie in dat vlak. Dat is de vorm van de homepage,
-          waar zo'n blok een teaser is. Op een overzichtspagina is het verkeerd: je tikt
-          een huidprobleem aan en verwacht die pagina. Op een telefoon staat dat focusvlak
-          bovendien buiten beeld, dus leek er niets te gebeuren.
-
-          Het focusvlak blijft, maar het volgt nu de muis en het toetsenbord. Klikken doet
-          altijd wat je verwacht. */}
-      <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {zichtbaar.map((b) => {
-          const aan = b.pad === gekozen.pad;
-          return (
-            <li key={b.pad}>
-              <Link
-                href={b.pad}
-                onMouseEnter={() => setGekozenPad(b.pad)}
-                onFocus={() => setGekozenPad(b.pad)}
-                className={`block h-full rounded-[var(--r-lg)] p-6 text-left transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none sm:p-7 ${
-                  aan
-                    ? "bg-[var(--g-700)] shadow-[var(--shadow-float)]"
-                    : "bg-[var(--g-050)] hover:bg-[var(--g-100)]"
-                }`}
-              >
-                <span
-                  aria-hidden="true"
-                  className={`flex h-9 w-9 items-center justify-center rounded-[var(--r-pill)] transition-colors ${
-                    aan ? "bg-[var(--on-dark-accent)]" : "bg-white"
-                  }`}
+        <ul className="mx-auto flex max-w-[1800px] gap-2 overflow-x-auto px-5 py-3 sm:px-9 lg:px-[7.5vw]">
+          {GROEPEN.map((g) => {
+            const aantal = alles.filter((b) => b.groep === g.id).length;
+            return (
+              <li key={g.id}>
+                <a
+                  href={`#${g.anker}`}
+                  className="diba-label flex min-h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] px-4 whitespace-nowrap text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  <svg
-                    viewBox="0 0 16 16"
-                    className={`h-3.5 w-3.5 ${aan ? "text-[var(--g-800)]" : "text-[var(--g-700)]"}`}
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" />
-                  </svg>
-                </span>
-
-                <span
-                  className={`diba-card-title mt-8 block ${
-                    aan ? "text-[var(--on-dark)]" : "text-[var(--t-strong)]"
-                  }`}
-                >
-                  {b.naam}
-                </span>
-                <span
-                  className={`mt-2 block text-[15px] leading-6 ${
-                    aan ? "text-[var(--on-dark-body)]" : "text-[var(--t-body)]"
-                  }`}
-                >
-                  {b.eersteVraag}
-                </span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-
-      {/* ── Het focusvlak ── */}
-      <div
-        className="mt-3 grid overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-075)] lg:grid-cols-[0.85fr_1.15fr]"
-        aria-live="polite"
-      >
-        <div className="relative min-h-[220px] lg:min-h-[320px]">
-          <Image
-            src={beeld.src}
-            alt={beeld.alt}
-            fill
-            sizes="(min-width: 1024px) 40vw, 100vw"
-            className="object-cover object-center"
-          />
-        </div>
-
-        <div className="p-7 sm:p-10">
-          <Label>Jouw focus</Label>
-          <h3 className="diba-display-s mt-4">{gekozen.naam}</h3>
-
-          <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-            {gekozen.zin}
-          </p>
-
-          <p className="mt-6 border-l-2 border-[var(--g-300)] pl-4">
-            <Label>Waar we mee beginnen</Label>
-            <span className="diba-card-title mt-2 block text-[var(--t-strong)]">
-              {gekozen.eersteVraag}
-            </span>
-          </p>
-
-          <div className="mt-8">
-            <Button href={gekozen.pad}>{CTA[gekozen.groep]}</Button>
-          </div>
-        </div>
-      </div>
-
-      {/* Alle kaarten blijven ook zonder JavaScript bereikbaar. */}
-      <noscript>
-        <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
-          {alles.map((b) => (
-            <li key={b.pad}>
-              <Link
-                href={b.pad}
-                className="diba-label text-[var(--g-700)] underline underline-offset-4"
-              >
-                {b.naam}
-              </Link>
-            </li>
-          ))}
+                  {g.kort}
+                  <span className="tabular-nums text-[var(--t-muted)]">{aantal}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
-      </noscript>
+      </nav>
+
+      {/* ── De vier groepen ── */}
+      {GROEPEN.map((g) => {
+        const items = alles.filter((b) => b.groep === g.id);
+        return (
+          <section key={g.id} id={g.anker} className="scroll-mt-16 pt-16 first:pt-12">
+            <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-12">
+              <div>
+                <Label>{g.label}</Label>
+                <h2 className="diba-display-m mt-4 max-w-[16ch]">
+                  {g.kop}
+                  <br />
+                  <span className="diba-accent">{g.accent}</span>
+                </h2>
+              </div>
+              <p className="max-w-[58ch] self-end text-[16px] leading-7 text-[var(--t-body)]">
+                {g.intro}
+              </p>
+            </div>
+
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {items.map((b) => (
+                <li key={b.pad}>
+                  <Link
+                    href={b.pad}
+                    className="group block h-full rounded-[var(--r-lg)] bg-[var(--g-050)] p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-[var(--g-100)] hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:p-7"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="flex h-9 w-9 items-center justify-center rounded-[var(--r-pill)] bg-white transition-colors group-hover:bg-[var(--g-700)]"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        className="h-3.5 w-3.5 text-[var(--g-700)] transition-colors group-hover:text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" />
+                      </svg>
+                    </span>
+
+                    <span className="diba-card-title mt-8 block text-[var(--t-strong)]">
+                      {b.naam}
+                    </span>
+                    <span className="mt-2 block text-[15px] leading-6 text-[var(--t-body)]">
+                      {b.eersteVraag}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
     </div>
   );
 }

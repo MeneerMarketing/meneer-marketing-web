@@ -18,9 +18,15 @@ export default function SiteChrome({
   instagramHref,
 }: SiteChromeProps) {
   const pathname = usePathname();
-  const isFigmaHome = pathname === "/";
 
-  if (isFigmaHome) {
+  /**
+   * Twee routes brengen hun eigen kop mee: de homepage, en de hero-variant die als
+   * voorbeeld naast de homepage staat. Zonder deze uitzondering staan er twee headers
+   * boven elkaar en valt er niets te beoordelen.
+   */
+  const eigenChrome = pathname === "/" || pathname === "/home-variant";
+
+  if (eigenChrome) {
     return <>{children}</>;
   }
 

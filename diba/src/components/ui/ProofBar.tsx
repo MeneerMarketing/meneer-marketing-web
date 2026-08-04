@@ -17,10 +17,16 @@ import type { ProofStripItem } from "@/lib/site";
  * md staan ze weer op één rij zoals ze bedoeld zijn.
  */
 
-/** Jaartallen krijgen geen duizendscheiding; aantallen wel, plus hun achtervoegsel. */
+/**
+ * Jaartallen krijgen geen duizendscheiding; aantallen wel, plus hun achtervoegsel.
+ *
+ * "Is dit een jaartal" werd eerder afgeleid uit het ontbreken van een achtervoegsel. Dat
+ * hield stand tot het reviewaantal ook zonder plusje kwam te staan, en toen verscheen er
+ * "3883" op elke pagina in plaats van "3.883". Nu staat het als vlag in de data.
+ */
 function formatteer(item: ProofStripItem): string {
-  if (!item.suffix) return String(item.value);
-  return `${item.value.toLocaleString("nl-NL")}${item.suffix}`;
+  if (item.isJaartal) return String(item.value);
+  return `${item.value.toLocaleString("nl-NL")}${item.suffix ?? ""}`;
 }
 
 export default function ProofBar({
