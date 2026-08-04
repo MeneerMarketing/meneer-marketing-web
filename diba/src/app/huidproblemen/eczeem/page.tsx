@@ -121,7 +121,7 @@ export default function EczeemPage() {
       {/* ── De krabcirkel: de uitblinker ── */}
       <section
         id="cirkel"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
@@ -135,7 +135,7 @@ export default function EczeemPage() {
       </section>
 
       {/* ── Of is het iets anders ── */}
-      <section id="verwar" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section id="verwar" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
             label="Of is het iets anders"

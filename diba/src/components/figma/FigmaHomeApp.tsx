@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import FigmaKennisbankSection from "@/components/figma/FigmaKennisbankSection";
-import FigmaSiteHeaderBlock from "@/components/figma/FigmaSiteHeaderBlock";
+import HoofdNav from "@/components/nav/HoofdNav";
+import Topbalk from "@/components/nav/Topbalk";
 import FigmaVoorJouSection from "@/components/figma/FigmaVoorJouSection";
 import Button from "@/components/ui/Button";
 import DibaIcon from "@/components/ui/DibaIcon";
@@ -67,8 +68,9 @@ export default function FigmaHomeApp() {
   }, [scanOpen]);
 
   return (
-    <main className="figma-home min-h-screen overflow-hidden bg-[var(--g-010)] text-[var(--t-strong)] selection:bg-[var(--on-dark-accent)]">
-      <FigmaSiteHeaderBlock variant="home" whatsappHref={DIBA_WHATSAPP_URL} />
+    <main className="figma-home min-h-screen overflow-x-clip bg-[var(--g-010)] text-[var(--t-strong)] selection:bg-[var(--on-dark-accent)]">
+      <Topbalk />
+      <HoofdNav />
 
       <section id="top" className="relative mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid min-h-[730px] lg:grid-cols-[1.18fr_.82fr]">

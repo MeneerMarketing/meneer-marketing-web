@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import HeroNav from "@/components/hero-variant/HeroNav";
-import Topbalk from "@/components/hero-variant/Topbalk";
+import HoofdNav from "@/components/nav/HoofdNav";
+import Topbalk from "@/components/nav/Topbalk";
 import Label from "@/components/ui/Label";
 import { FIGMA_HOME_PORTRAIT_WIDE } from "@/data/figma-home-images";
 import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
@@ -20,8 +20,9 @@ import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
  *   3. logo links, navigatie en knop rechts, zwevend daarbinnen in wit
  *   4. de kop linksonder in het beeld
  *
- * De navigatie zit in HeroNav en niet hier, want die is uitklapbaar en dus een
- * clientcomponent. De rest van deze hero blijft daardoor server-side.
+ * De navigatie zit in HoofdNav en niet hier. Dat is dezelfde component die de rest van
+ * de site draagt, hier met `opBeeld` zodat hij in wit over de foto zweeft. De rest van
+ * deze hero blijft daardoor server-side.
  *
  * Wat er anders is dan het voorbeeld, en met opzet:
  *
@@ -65,7 +66,7 @@ export default function HeroVariant() {
           />
 
           {/* ── Navigatie, zwevend in het beeld ── */}
-          <HeroNav />
+          <HoofdNav opBeeld />
 
           {/* ── De kop ── */}
           <div className="absolute inset-x-0 bottom-0 z-10 px-5 pb-8 sm:px-8 sm:pb-10 lg:px-10 lg:pb-14">

@@ -83,7 +83,7 @@ export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTempl
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
           {publicCopy(
-            "U kiest zelf bij wie u start. Iedereen meet eerst, praat eerlijk en zegt ook nee als dat beter is.",
+            "Je kiest zelf bij wie je start. Iedereen meet eerst, praat eerlijk en zegt ook nee als dat beter is.",
           )}
         </p>
       </section>

@@ -142,7 +142,7 @@ export default function DonkereKringenPage() {
       {/* ── De spiegeltest: de uitblinker ──────────────────────────────── */}
       <section
         id="test"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
@@ -156,7 +156,7 @@ export default function DonkereKringenPage() {
       </section>
 
       {/* ── De drie types als naslag ───────────────────────────────────── */}
-      <section id="types" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section id="types" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
             label="De drie types"

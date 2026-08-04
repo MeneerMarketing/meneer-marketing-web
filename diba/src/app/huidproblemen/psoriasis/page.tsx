@@ -119,7 +119,7 @@ export default function PsoriasisPage() {
       {/* ── Het silhouet: de uitblinker ── */}
       <section
         id="silhouet"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop

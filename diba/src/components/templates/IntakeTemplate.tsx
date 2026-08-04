@@ -85,7 +85,7 @@ export default function IntakeTemplate({ whatsappHref, bookingHref }: IntakeTemp
             <p className={figmaLabel}>Behandeling Nul · je concern</p>
             <FigmaHeading as="h2" size="section" text="Wat speelt er bij *jouw* huid?" className="mt-4" />
             <p className={`mt-5 ${figmaBody}`}>
-              Kies wat het dichtst in de buurt komt. U kunt het later aanpassen.
+              Kies wat het dichtst in de buurt komt. Je kunt het later aanpassen.
             </p>
             <div className="mt-6">
               <DeLijn length="full" dot={progressDot(2)} />

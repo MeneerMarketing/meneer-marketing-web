@@ -150,7 +150,7 @@ export default function HuidverouderingPage() {
       {/* ── De onderarmtest: de uitblinker ─────────────────────────────── */}
       <section
         id="tijd-of-zon"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
@@ -164,7 +164,7 @@ export default function HuidverouderingPage() {
       </section>
 
       {/* ── Wat begint wanneer ─────────────────────────────────────────── */}
-      <section id="wanneer" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section id="wanneer" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
             label="Vijf sporen"
@@ -179,7 +179,7 @@ export default function HuidverouderingPage() {
       {/* ── Wat je ziet ────────────────────────────────────────────────── */}
       <section
         id="welke"
-        className="scroll-mt-24 bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import MijnDiba from "@/components/hero-variant/MijnDiba";
-import Taalkiezer from "@/components/hero-variant/Taalkiezer";
+import MijnDiba from "@/components/nav/MijnDiba";
+import Taalkiezer from "@/components/nav/Taalkiezer";
 import { TOPBALK_LINKS } from "@/data/hoofdnavigatie";
 import {
   DIBA_SALONIZED_RATING,

@@ -139,7 +139,7 @@ export default function AcnePage() {
       {/* ── De acnekaart: het onderdeel dat deze pagina onderscheidt ────── */}
       <section
         id="waar"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
@@ -163,7 +163,7 @@ export default function AcnePage() {
       </section>
 
       {/* ── Welk type ──────────────────────────────────────────────────── */}
-      <section id="welke" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section id="welke" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
             <div>
@@ -184,7 +184,7 @@ export default function AcnePage() {
       {/* ── Onder je huid ──────────────────────────────────────────────── */}
       <section
         id="onderhuid"
-        className="scroll-mt-24 bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
@@ -206,7 +206,7 @@ export default function AcnePage() {
       </section>
 
       {/* ── De eerlijke tijdlijn ───────────────────────────────────────── */}
-      <section id="tijdlijn" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section id="tijdlijn" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
             <div>
@@ -231,7 +231,7 @@ export default function AcnePage() {
       {/* ── Wat werkt en wat niet ──────────────────────────────────────── */}
       <section
         id="wel-niet"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
@@ -297,7 +297,7 @@ export default function AcnePage() {
       {/* ── Donkergroen 1 van 2: waar wij nee zeggen ───────────────────── */}
       <section
         id="nee"
-        className="scroll-mt-24 bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
@@ -338,7 +338,7 @@ export default function AcnePage() {
       </section>
 
       {/* ── De Nulmeting bij acne ─────────────────────────────────────── */}
-      <section id="meten" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section id="meten" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid max-w-[1800px] gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
           <div>
             <Label>De Nulmeting</Label>
@@ -377,7 +377,7 @@ export default function AcnePage() {
       {/* ── FAQ ──────────────────────────────────────────────────────── */}
       <section
         id="vragen"
-        className="scroll-mt-24 bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.7fr_1.3fr]">
           <div>

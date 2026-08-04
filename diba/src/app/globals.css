@@ -131,6 +131,17 @@
 
   /* Layout */
   --diba-container-max: 1440px;
+
+  /*
+   * De hoogte van de blijvende navigatiebalk: py-5 boven en onder plus een knop van 44px.
+   * Staat hier als token omdat er drie dingen van afhangen die anders stilletjes scheef
+   * gaan zodra die balk een pixel verandert: de sprongnavigaties op de huidprobleem-, de
+   * intake- en de pillarpagina's hangen eronder, en elk anker op de site moet er onderdoor
+   * mikken. Waar twee balken boven elkaar staan is dat samen 141px, en dat is waarom
+   * `--anker-offset` ruimer is dan `--nav-h`.
+   */
+  --nav-h: 84px;
+  --anker-offset: calc(var(--nav-h) + 4.5rem);
   --diba-read-max: 720px;
   --diba-section-y: var(--space-16);
   --diba-grid-columns: 4;

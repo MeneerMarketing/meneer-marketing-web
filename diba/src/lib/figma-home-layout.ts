@@ -12,7 +12,7 @@ import {
 
 export const figmaHomeShell =
 
-  "figma-home min-h-screen overflow-hidden bg-[#fcfdfb] text-[#17372a] selection:bg-[#b5df9d]";
+  "figma-home min-h-screen overflow-x-clip bg-[#fcfdfb] text-[#17372a] selection:bg-[#b5df9d]";
 
 
 

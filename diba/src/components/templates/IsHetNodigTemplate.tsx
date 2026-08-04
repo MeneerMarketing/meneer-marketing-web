@@ -111,7 +111,7 @@ export default function IsHetNodigTemplate({
         <div className={`${figmaInnerContainer} ${figmaSection} text-center`}>
           <FigmaHeading as="h2" size="section" text="Behandeling *nul*" className="mx-auto" />
           <p className={`mx-auto mt-5 max-w-xl ${figmaBody}`}>
-            Gratis, 4 minuten, online. U hoeft nog niets te boeken.
+            Gratis, 4 minuten, online. Je hoeft nog niets te boeken.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <Link href="/intake" className={figmaBtnPrimary}>

@@ -118,7 +118,7 @@ export default function CellulitisPage() {
       {/* ── De doorsnede: de uitblinker ── */}
       <section
         id="doorsnede"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
@@ -132,7 +132,7 @@ export default function CellulitisPage() {
       </section>
 
       {/* ── Mythes ── */}
-      <section id="mythes" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section id="mythes" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
             label="Vier mythes"

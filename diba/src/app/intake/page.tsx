@@ -128,7 +128,7 @@ export default function IntakePage() {
       {/* In-paginanavigatie, dezelfde vorm als op de huidprobleempagina's. */}
       <nav
         aria-label="Op deze pagina"
-        className="sticky top-0 z-20 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur"
+        className="sticky top-[var(--nav-h)] z-20 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur"
       >
         <ul className="mx-auto flex max-w-[1800px] gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (
@@ -147,7 +147,7 @@ export default function IntakePage() {
       {/* ── De tijdlijn: de uitblinker ── */}
       <section
         id="uur"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
@@ -163,7 +163,7 @@ export default function IntakePage() {
       {/* ── Voorbereiden ── */}
       <section
         id="voorbereiden"
-        className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop

@@ -110,7 +110,7 @@ export default function HuiduitslagPage() {
       {/* ── Alarmsignalen. Vóór alles, want dit is het enige dat echt haast heeft. ── */}
       <section
         id="alarm"
-        className="mx-5 scroll-mt-24 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
+        className="mx-5 scroll-mt-[var(--anker-offset)] rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
       >
         <div className="mx-auto max-w-[1800px]">
           <Label opDonker>Bel vandaag, of 112 buiten kantooruren</Label>
@@ -143,7 +143,7 @@ export default function HuiduitslagPage() {
       {/* ── De glastest: de uitblinker ── */}
       <section
         id="glastest"
-        className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop
@@ -159,7 +159,7 @@ export default function HuiduitslagPage() {
       {/* ── Gewone oorzaken ── */}
       <section
         id="oorzaken"
-        className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto max-w-[1800px]">
           <SectieKop

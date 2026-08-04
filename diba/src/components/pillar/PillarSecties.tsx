@@ -72,7 +72,7 @@ export function WelNiet({
   return (
     <section
       id="wel-niet"
-      className="scroll-mt-24 bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       <div className="mx-auto max-w-[1800px]">
         <SectieKop
@@ -151,7 +151,7 @@ export function WijZeggenNee({
   return (
     <section
       id="nee"
-      className="scroll-mt-24 bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       <div className="mx-auto max-w-[1800px]">
         <SectieKop
@@ -205,7 +205,7 @@ export function NulmetingAssen({
   assen: readonly (readonly [string, string])[];
 }) {
   return (
-    <section id="meten" className="scroll-mt-24 px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+    <section id="meten" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
       <div className="mx-auto grid max-w-[1800px] gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
         <div>
           <Label>De Nulmeting</Label>
@@ -243,7 +243,7 @@ export function PillarFaq({
   return (
     <section
       id="vragen"
-      className="scroll-mt-24 bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.7fr_1.3fr]">
         <div>

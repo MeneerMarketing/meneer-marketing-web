@@ -1,29 +1,32 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import FigmaSiteHeaderBlock from "@/components/figma/FigmaSiteHeaderBlock";
+import HoofdNav from "@/components/nav/HoofdNav";
+import Topbalk from "@/components/nav/Topbalk";
 import SiteFooter from "@/components/ui/SiteFooter";
 import { figmaHomeShell } from "@/lib/figma-home-layout";
 
 type SiteChromeProps = {
   children: React.ReactNode;
-  whatsappHref: string;
   instagramHref?: string;
 };
 
-/** Homepage = FigmaHomeApp (eigen chrome). Overige pagina's = zelfde header/top bar + Figma shell. */
+/**
+ * De vaste omlijsting van elke pagina: topbalk, hoofdnavigatie, inhoud, voettekst.
+ *
+ * Twee routes brengen hun eigen kop mee en slaan dit over: de homepage en de hero-variant
+ * die als voorbeeld naast de homepage staat. Zonder die uitzondering staan er twee headers
+ * boven elkaar en valt er niets te beoordelen.
+ *
+ * De topbalk scrollt gewoon mee weg, alleen de navigatie blijft hangen. Andersom zou een
+ * kwart van een telefoonscherm permanent bezet zijn door een waardering en een taalkiezer.
+ */
 export default function SiteChrome({
   children,
-  whatsappHref,
   instagramHref,
 }: SiteChromeProps) {
   const pathname = usePathname();
 
-  /**
-   * Twee routes brengen hun eigen kop mee: de homepage, en de hero-variant die als
-   * voorbeeld naast de homepage staat. Zonder deze uitzondering staan er twee headers
-   * boven elkaar en valt er niets te beoordelen.
-   */
   const eigenChrome = pathname === "/" || pathname === "/home-variant";
 
   if (eigenChrome) {
@@ -32,7 +35,8 @@ export default function SiteChrome({
 
   return (
     <div className={figmaHomeShell}>
-      <FigmaSiteHeaderBlock variant="inner" whatsappHref={whatsappHref} />
+      <Topbalk />
+      <HoofdNav />
       {children}
       <SiteFooter instagramHref={instagramHref} />
     </div>

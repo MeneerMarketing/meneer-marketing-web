@@ -13,7 +13,6 @@ import {
   DIBA_NAP,
   DIBA_SITE,
   DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 import "./globals.css";
 
@@ -120,10 +119,7 @@ export default function RootLayout({
             url: DIBA_SITE_URL,
           })}
         />
-        <SiteChrome
-          whatsappHref={DIBA_WHATSAPP_URL}
-          instagramHref={DIBA_INSTAGRAM_URL || undefined}
-        >
+        <SiteChrome instagramHref={DIBA_INSTAGRAM_URL || undefined}>
           <RevealObserver />
           {children}
         </SiteChrome>

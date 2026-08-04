@@ -8,31 +8,79 @@ import { HOOFDNAV, type NavItem } from "@/data/hoofdnavigatie";
 import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
 
 /**
- * De navigatie die in het hero-beeld zweeft.
+ * De hoofdnavigatie van de site. Eén component, twee verschijningsvormen.
  *
- * Drie dingen die anders zijn dan een gewone header:
+ * `opBeeld` zet hem in wit bovenop een foto: dat is de hero-variant, waar de navigatie in
+ * het beeld zweeft. Zonder die vlag staat hij op wit en blijft hij bij het scrollen boven
+ * in beeld hangen, en dat is wat elke andere pagina krijgt.
  *
- * 1. Hij staat óp de foto, in wit. Vandaar de verlopen in HeroVariant; zonder die
- *    verlopen haalt wit op een foto nooit AA.
- * 2. Alles staat rechts. Logo links, en dan één blok met de menu-items en de knop tegen
- *    de rechterrand aan. Dat is wat het voorbeeld zijn rust geeft: geen items die ergens
- *    in het midden zweven.
- * 3. De panelen zijn breed en niet smal. Zeventien huidproblemen passen niet in een
- *    kolommetje van 200px, en ze wegstoppen achter "Huidproblemen" is precies de kans
- *    missen: die lijst mét de eerste vraag eronder is het beste wat deze site heeft.
+ * Waarom één component en geen twee: het verschil tussen die vormen is kleur en
+ * verankering, en verder niets. De boom, de panelen, het mobiele scherm en de bediening
+ * zijn identiek. Twee kopieën zouden binnen een maand uit elkaar lopen op precies het
+ * soort detail dat niemand opmerkt tot er ergens een link ontbreekt.
+ *
+ * Wat de panelen bijzonder maakt: ze zijn breed en niet smal. Zeventien huidproblemen
+ * passen niet in een kolommetje van 200px, en ze wegstoppen is de kans missen. Die lijst
+ * mét de eerste vraag van elke pagina eronder is het beste wat deze site heeft.
  *
  * Bediening. Openen op hover, want dat hoort bij dit soort headers. Maar hover alleen is
- * niet genoeg voor WCAG 2.2 (1.4.13 wil dat je een paneel weg kunt krijgen), dus:
- * klikken opent en sluit ook, Escape sluit, en tabben opent het paneel waar je in staat.
- * Het paneel blijft staan zolang je muis erin is.
+ * niet genoeg voor WCAG 2.2 (1.4.13 wil dat je een paneel weg kunt krijgen), dus: klikken
+ * opent en sluit ook, Escape sluit, en tabben opent het paneel waar je in staat. Het
+ * paneel blijft staan zolang je muis erin is.
  *
- * Op mobiel geen hover maar een eigen paneel over het hele scherm, met de groepen in
- * `details` zodat het niet één lijst van veertig regels wordt.
+ * Op mobiel geen hover maar een eigen scherm over alles heen, met de groepen in `details`
+ * zodat het niet één lijst van veertig regels wordt.
  */
 
 const PANEEL_DICHT_VERTRAGING = 120;
 
-export default function HeroNav() {
+type Vormgeving = {
+  readonly wrapper: string;
+  readonly logo: "dark" | "white";
+  readonly item: string;
+  readonly itemOpen: string;
+  readonly knop: string;
+  readonly hamburger: string;
+  readonly scrim: string;
+  readonly paneel: string;
+};
+
+/**
+ * Alles wat tussen de twee vormen verschilt staat hier bij elkaar en nergens anders in dit
+ * bestand. Zo is in één oogopslag te zien wat er precies anders is aan de variant op
+ * beeld, en blijft de rest van de component vrij van vertakkingen.
+ */
+const VORM: Record<"opBeeld" | "opWit", Vormgeving> = {
+  opBeeld: {
+    wrapper: "absolute inset-x-0 top-0 z-30",
+    logo: "white",
+    item: "text-white/85 hover:bg-white/12 hover:text-white focus-visible:outline-white",
+    itemOpen: "bg-white/15 text-white",
+    knop: "bg-[var(--on-dark-btn)] text-[var(--on-dark-btn-text)] hover:bg-white focus-visible:outline-white",
+    hamburger:
+      "border-white/40 text-white hover:bg-white/10 focus-visible:outline-white",
+    scrim: "absolute inset-x-0 top-0 h-[130vh]",
+    paneel: "absolute inset-x-3 top-[76px] rounded-[var(--r-lg)]",
+  },
+  opWit: {
+    wrapper: "sticky top-0 z-40 bg-white",
+    logo: "dark",
+    item: "text-[var(--t-body)] hover:bg-[var(--g-050)] hover:text-[var(--t-strong)] focus-visible:outline-[var(--g-700)]",
+    itemOpen: "bg-[var(--g-050)] text-[var(--t-strong)]",
+    knop: "bg-[var(--g-700)] text-white hover:bg-[var(--g-800)] focus-visible:outline-[var(--g-700)]",
+    hamburger:
+      "border-[var(--g-100)] text-[var(--t-strong)] hover:bg-[var(--g-050)] focus-visible:outline-[var(--g-700)]",
+    /* Begint onder de header en niet bovenaan het scherm: met `fixed inset-0` werd de
+       topbalk erboven mee verduisterd terwijl de navigatie zelf wit bleef, en dat leest
+       als een fout in plaats van als een verduistering. */
+    scrim: "absolute inset-x-0 top-full h-screen",
+    paneel:
+      "absolute inset-x-0 top-full rounded-b-[var(--r-lg)] border-t border-[var(--g-100)]",
+  },
+};
+
+export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
+  const v = VORM[opBeeld ? "opBeeld" : "opWit"];
   const [open, setOpen] = useState<string | null>(null);
   const [mobielOpen, setMobielOpen] = useState(false);
   const sluitTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -82,20 +130,20 @@ export default function HeroNav() {
 
   return (
     <div
-      className="absolute inset-x-0 top-0 z-30"
+      className={v.wrapper}
       onMouseLeave={() => plan(null)}
       onBlur={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget as Node | null))
           setOpen(null);
       }}
     >
-      <header className="flex items-center justify-between gap-6 px-4 py-5 sm:px-6 lg:px-8">
+      <header className="relative z-10 flex items-center justify-between gap-6 bg-inherit px-4 py-5 sm:px-6 lg:px-8">
         <Link
           href="/"
           aria-label="Diba Clinics, naar de homepage"
-          className="shrink-0 rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+          className="shrink-0 rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current"
         >
-          <DibaLogo variant="white" priority />
+          <DibaLogo variant={v.logo} priority={opBeeld} />
         </Link>
 
         {/* Alles rechts: menu en knop in één blok tegen de rand. */}
@@ -106,6 +154,7 @@ export default function HeroNav() {
                 <li key={item.label}>
                   <NavKnop
                     item={item}
+                    vorm={v}
                     open={open === item.label}
                     onOpen={() => plan(item.label)}
                   />
@@ -114,12 +163,12 @@ export default function HeroNav() {
             </ul>
           </nav>
 
-          {/* Op mobiel staat deze knop er niet. Het logo plus de knop plus de hamburger
-              passen niet op 390px, en belangrijker: de kop eronder heeft dezelfde knop al
-              staan. Twee keer dezelfde primaire actie op één scherm is er één te veel. */}
+          {/* Op mobiel staat deze knop er niet. Logo plus knop plus hamburger passen niet
+              op 390px, en elke pagina heeft de afspraakknop verderop nog staan. Twee keer
+              dezelfde primaire actie op één scherm is er één te veel. */}
           <Link
             href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
-            className="diba-label hidden h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-5 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:inline-flex"
+            className={`diba-label hidden h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:inline-flex ${v.knop}`}
           >
             Afspraak maken
             <Pijl />
@@ -129,8 +178,8 @@ export default function HeroNav() {
             type="button"
             aria-expanded={mobielOpen}
             aria-label={mobielOpen ? "Menu sluiten" : "Menu openen"}
-            onClick={() => setMobielOpen((v) => !v)}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[var(--r-pill)] border border-white/40 text-white transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:hidden"
+            onClick={() => setMobielOpen((b) => !b)}
+            className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-[var(--r-pill)] border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 lg:hidden ${v.hamburger}`}
           >
             <svg
               viewBox="0 0 20 20"
@@ -151,20 +200,22 @@ export default function HeroNav() {
         </div>
       </header>
 
-      {/* Verduistering achter een open paneel, zodat het beeld het menu niet beconcurreert. */}
+      {/* Verduistering achter een open paneel, zodat de pagina het menu niet beconcurreert. */}
       <div
         aria-hidden="true"
-        className={`pointer-events-none absolute inset-x-0 top-0 h-[130vh] bg-[var(--g-900)]/45 transition-opacity duration-300 [transition-timing-function:var(--ease-diba)] ${
+        className={`pointer-events-none bg-[var(--g-900)]/45 transition-opacity duration-300 [transition-timing-function:var(--ease-diba)] ${v.scrim} ${
           actief ? "opacity-100" : "opacity-0"
         }`}
       />
 
-      {actief ? <Paneel item={actief} onSluit={() => setOpen(null)} /> : null}
+      {actief ? (
+        <Paneel item={actief} vorm={v} onSluit={() => setOpen(null)} />
+      ) : null}
 
-      {/* Het mobiele paneel gaat naar `body` en niet hier. Deze wrapper staat op z-30 en
-          maakt daarmee een eigen stapelcontext: alles daarbinnen concurreert als één
-          laag op z-30, dus ook een kind met z-60 verloor het van de cookiebalk op z-50.
-          Dat is precies wat er gebeurde: de afspraakknop onderin het menu zat eronder. */}
+      {/* Het mobiele paneel gaat naar `body` en niet hier. De wrapper heeft een z-index en
+          maakt daarmee een eigen stapelcontext: alles daarbinnen concurreert als één laag,
+          dus ook een kind met z-60 verloor het van de cookiebalk op z-50. Dat is precies
+          wat er gebeurde: de afspraakknop onderin het menu zat eronder. */}
       {mobielOpen
         ? createPortal(
             <MobielPaneel onSluit={() => setMobielOpen(false)} />,
@@ -196,29 +247,28 @@ function Pijl() {
  * Een item met een paneel is een knop en geen link: klikken hoort het paneel te openen.
  * De link naar de overzichtspagina staat onderin het paneel, waar je hem verwacht.
  * Een item zonder paneel is gewoon een link.
+ *
+ * Geen `diba-label` op de items. Dat zet alles in kapitalen met letterafstand, en vijf
+ * menu-items in kapitalen lezen als een waarschuwing en niet als een menu.
  */
 function NavKnop({
   item,
+  vorm,
   open,
   onOpen,
 }: {
   item: NavItem;
+  vorm: Vormgeving;
   open: boolean;
   onOpen: () => void;
 }) {
-  /**
-   * Geen `diba-label` hier. Dat zet alles in kapitalen met letterafstand, en zes
-   * menu-items in kapitalen leest als een waarschuwing en niet als een menu. In het
-   * voorbeeld staat de navigatie gewoon in gemengd schrift.
-   */
-  const vorm =
-    "flex h-10 items-center gap-1.5 rounded-[var(--r-pill)] px-3 text-[15px] leading-none text-white/85 transition-colors hover:bg-white/12 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
+  const basis = `flex h-10 items-center gap-1.5 rounded-[var(--r-pill)] px-3 text-[15px] leading-none transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${vorm.item}`;
 
   if (!item.kolommen) {
     return (
       <Link
         href={item.href}
-        className={vorm}
+        className={basis}
         onMouseEnter={onOpen}
         onFocus={onOpen}
       >
@@ -234,7 +284,7 @@ function NavKnop({
       onMouseEnter={onOpen}
       onFocus={onOpen}
       onClick={onOpen}
-      className={`${vorm} ${open ? "bg-white/15 text-white" : ""}`}
+      className={`${basis} ${open ? vorm.itemOpen : ""}`}
     >
       {item.label}
       <svg
@@ -260,7 +310,15 @@ function NavKnop({
  * kolom: bij een paneel van zeshonderd pixels hoog valt daar anders een gat waar niets in
  * staat.
  */
-function Paneel({ item, onSluit }: { item: NavItem; onSluit: () => void }) {
+function Paneel({
+  item,
+  vorm,
+  onSluit,
+}: {
+  item: NavItem;
+  vorm: Vormgeving;
+  onSluit: () => void;
+}) {
   /**
    * Het aantal kolommen volgt uit de inhoud en staat niet vast. Met een vast raster van
    * vier bleef er bij Huidproblemen een lege kolom over: driehonderd pixels niets naast
@@ -271,7 +329,7 @@ function Paneel({ item, onSluit }: { item: NavItem; onSluit: () => void }) {
 
   return (
     <div
-      className="absolute inset-x-3 top-[76px] hidden overflow-hidden rounded-[var(--r-lg)] bg-white shadow-[var(--shadow-float)] lg:block"
+      className={`hidden overflow-hidden bg-white shadow-[var(--shadow-float)] lg:block ${vorm.paneel}`}
       style={{ animation: "diba-paneel-in .28s var(--ease-diba) both" }}
     >
       <div className="grid grid-cols-12">
@@ -294,7 +352,7 @@ function Paneel({ item, onSluit }: { item: NavItem; onSluit: () => void }) {
                       <Link
                         href={l.href}
                         onClick={onSluit}
-                        className="group block rounded-[var(--r-sm)] px-3 py-2 -mx-3 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                        className="group -mx-3 block rounded-[var(--r-sm)] px-3 py-2 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                       >
                         <span className="block text-[15px] leading-6 font-medium text-[var(--t-strong)]">
                           {l.label}
@@ -354,11 +412,12 @@ function Paneel({ item, onSluit }: { item: NavItem; onSluit: () => void }) {
  * Mobiel. Geen hover, dus geen paneel dat meeschuift: één scherm over alles heen met de
  * groepen ingeklapt. `details` in plaats van state, zodat er niets kan ontsporen als er
  * halverwege een link wordt aangetikt.
+ *
+ * Boven de cookiebalk. Die staat op z-50 en dekte anders precies de afspraakknop onderin
+ * dit paneel af; een menu dat over het hele scherm ligt hoort bovenaan.
  */
 function MobielPaneel({ onSluit }: { onSluit: () => void }) {
   return (
-    /* Boven de cookiebalk. Die staat op z-50 en dekte anders precies de afspraakknop
-       onderin dit paneel af; een menu dat over het hele scherm ligt hoort bovenaan. */
     <div className="fixed inset-0 z-[60] flex flex-col bg-white lg:hidden">
       <div className="flex shrink-0 items-center justify-between border-b border-[var(--g-100)] px-4 py-4">
         <DibaLogo />

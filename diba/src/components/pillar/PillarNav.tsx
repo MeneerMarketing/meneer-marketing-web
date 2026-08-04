@@ -39,7 +39,7 @@ export default function PillarNav({ ankers }: { ankers: readonly Anker[] }) {
   return (
     <nav
       aria-label="Op deze pagina"
-      className="sticky top-0 z-20 hidden border-b border-[var(--g-100)] bg-[var(--g-010)]/92 backdrop-blur-sm lg:block"
+      className="sticky top-[var(--nav-h)] z-20 hidden border-b border-[var(--g-100)] bg-[var(--g-010)]/92 backdrop-blur-sm lg:block"
     >
       <ol className="mx-auto flex max-w-[1800px] flex-wrap items-center gap-x-7 gap-y-2 px-5 py-3.5 sm:px-9 lg:px-[7.5vw]">
         {ankers.map((a) => {
