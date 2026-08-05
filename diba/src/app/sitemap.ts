@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { INSURERS } from "@/data/insurers";
 import { PILLARS } from "@/data/pillars";
-import { TREATMENTS } from "@/data/treatments";
+import { BEHANDELINGEN } from "@/data/behandelingen";
 import { isPaginaAf, poortjeActief } from "@/lib/pagina-af";
 import { DIBA_SITE_URL } from "@/lib/site";
 
@@ -106,8 +106,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const behandelingen: MetadataRoute.Sitemap = TREATMENTS.filter(gereed).map((t) => ({
-    url: `${DIBA_SITE_URL}/behandelingen/${t.slug}`,
+  const behandelingen: MetadataRoute.Sitemap = BEHANDELINGEN.filter(gereed).map((b) => ({
+    url: `${DIBA_SITE_URL}/behandelingen/${b.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.75,

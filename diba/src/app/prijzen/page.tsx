@@ -1,14 +1,132 @@
 import type { Metadata } from "next";
-import PrijzenTemplate from "@/components/templates/PrijzenTemplate";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
+import Link from "next/link";
+import Prijslijst from "@/components/prijzen/Prijslijst";
+import Label from "@/components/ui/Label";
+import ProofBar from "@/components/ui/ProofBar";
+import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+
+/**
+ * De prijzenpagina.
+ *
+ * Herbouwd, en niet alleen qua vorm. De vorige versie bouwde de laserlijst met een
+ * hulpfunctie die elke prijs op nul zette, en toonde bij nul letterlijk "[PRIJS-NODIG]"
+ * op het scherm. Sinds er tarieven in `laser-zones.ts` staan zou deze pagina overal € 0
+ * hebben laten zien terwijl de configurator ernaast de juiste bedragen toont.
+ *
+ * Alle regels komen nu uit dezelfde bron als de rest van de site. Een prijs die op twee
+ * plekken staat, staat binnen een maand twee keer verschillend.
+ *
+ * Eén donkergroen vlak op deze pagina: de afsluiter. Een prijslijst hoort licht te zijn,
+ * anders leest hij als een offerte.
+ */
 
 export const metadata: Metadata = {
   title: "Prijzen",
   description:
-    "Volledige prijzen bij Diba Clinics. Trajectprijs naast losse prijs, filterbaar per categorie.",
-  ...NOG_IN_AANBOUW,
+    "Alle prijzen op één pagina. Geen sterretjes, geen bedragen die pas aan de balie compleet worden.",
 };
 
 export default function PrijzenPage() {
-  return <PrijzenTemplate />;
+  return (
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+      <SchemaMarkup
+        data={breadcrumbSchema([
+          { name: "Home", url: DIBA_SITE_URL },
+          { name: "Prijzen", url: `${DIBA_SITE_URL}/prijzen` },
+        ])}
+      />
+
+      {/* ── Hero ── */}
+      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+          <div>
+            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+              <Link href="/" className="hover:text-[var(--g-700)]">
+                Home
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--t-muted)]">Prijzen</span>
+            </nav>
+
+            <h1 className="diba-display-l mt-6 max-w-[14ch]">
+              Alles staat er.
+              <br />
+              <span className="diba-accent">Ook wat duur is.</span>
+            </h1>
+
+            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+              De meeste klinieken zetten hun prijzen niet online, of alleen de laagste met
+              een sterretje erachter. Dat is geen toeval: een bedrag dat je pas hoort als
+              je al op de stoel ligt, is makkelijker te verkopen.
+            </p>
+
+            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Hier staat het gewoon. Per sessie, per zone, inclusief wat een pakket
+              vervangt. Je kunt het vergelijken voordat je een afspraak maakt, en dat is
+              precies de bedoeling.
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 sm:p-10">
+            <Label>Wat een prijs niet is</Label>
+            <p className="diba-card-title mt-4 text-[var(--t-strong)]">
+              Een voorspelling
+            </p>
+            <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+              Wat een sessie kost weten we. Hoeveel sessies jij nodig hebt niet, want dat
+              hangt af van je huid en van wat je wil bereiken. Wie dat vooraf in een
+              totaalbedrag giet, gokt met jouw geld.
+            </p>
+            <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+              Daarom staan hier sessieprijzen en geen pakketten met een streep door de
+              oude prijs. Wat je in totaal kwijt bent hoor je na de meting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+
+      {/* ── De lijst ── */}
+      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto max-w-[1800px]">
+          <Prijslijst />
+        </div>
+      </section>
+
+      {/* ── Afsluiter ── */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto max-w-[1800px]">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
+            <Label opDonker>Zelf uitrekenen</Label>
+            <h2 className="diba-display-m mt-4 max-w-[22ch]">
+              Voor laser
+              <br />
+              <span className="diba-accent-on-dark">stel je het zelf samen.</span>
+            </h2>
+            <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Wijs je zones aan op een tekening en zie meteen wat je opbouw wordt,
+              inclusief wat een pakket vervangt. Je keuze staat daarna in de adresbalk, dus
+              je kunt hem bewaren of doorsturen.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <Link
+                href="/laserontharing/configurator"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Naar de configurator
+              </Link>
+              <Link
+                href="/behandelingen"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Wat de behandelingen doen
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

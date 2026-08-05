@@ -32,9 +32,15 @@ const euro = new Intl.NumberFormat("nl-NL", {
   maximumFractionDigits: 0,
 });
 
+/**
+ * Nul betekent "nog niet bekend" en nooit "gratis".
+ *
+ * Hier stond letterlijk "[PRIJS-NODIG]", en dat verscheen dus op het scherm van iedereen
+ * die de prijzenpagina opende. Vlaggen horen in de broncode, niet in beeld.
+ */
 function fmtPrice(value: number | undefined): string | null {
   if (value === undefined) return null;
-  if (value === 0) return "[PRIJS-NODIG]";
+  if (value === 0) return "Nog niet bekend";
   return euro.format(value);
 }
 

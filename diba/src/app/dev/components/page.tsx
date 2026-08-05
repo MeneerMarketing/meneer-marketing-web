@@ -11,7 +11,6 @@ import PriceTable from "@/components/ui/PriceTable";
 import ProofStrip from "@/components/ui/ProofStrip";
 import ReviewCard from "@/components/ui/ReviewCard";
 import StickyActionBar from "@/components/ui/StickyActionBar";
-import TreatmentCard from "@/components/ui/TreatmentCard";
 import { figmaBtnMint, figmaBtnPrimary, figmaHomeShell } from "@/lib/figma-home-layout";
 import { figmaBody, figmaCardWhite, figmaInnerContainer, figmaLabel, figmaSection } from "@/lib/figma-inner-layout";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
@@ -121,21 +120,6 @@ export default function DevComponentsPage() {
               id="vraag"
               label="Je vraag"
               hint="Hoe concreter, hoe beter we kunnen helpen."
-            />
-          </div>
-        </DevSection>
-
-        <DevSection title="Behandelkaart">
-          <div className="max-w-sm">
-            <TreatmentCard
-              href="/behandelingen/voorbeeld"
-              image={{
-                src: "/dev/behandeling.svg",
-                alt: "[BEELD-NODIG: echte behandelfoto]",
-              }}
-              name="[COPY-NODIG: behandelnaam]"
-              forWho="[COPY-NODIG: voor wie, één regel klanttaal]"
-              priceFrom={0}
             />
           </div>
         </DevSection>
