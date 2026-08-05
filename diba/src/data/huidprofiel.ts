@@ -88,29 +88,90 @@ export const HERSTELRUIMTE = [
 
 export type HerstelId = (typeof HERSTELRUIMTE)[number]["id"];
 
+/**
+ * De zes assen van de Eve-M-mini-scan.
+ *
+ * Stonden eerst binnen in `MiniHuidscan` en konden daardoor nergens anders komen. Nu is
+ * dit de bron: de scan vult ze, het spinnenweb tekent ze, het uitklapje rechtsonder toont
+ * ze terug en de behandelingenpagina leest ze.
+ */
+export const SCAN_ASSEN = [
+  { id: "hydratatie", label: "Hydratatie" },
+  { id: "pigment", label: "Pigment" },
+  { id: "porien", label: "Poriën" },
+  { id: "roodheid", label: "Roodheid" },
+  { id: "textuur", label: "Textuur" },
+  { id: "uv", label: "UV-belasting" },
+] as const;
+
+export type AsId = (typeof SCAN_ASSEN)[number]["id"];
+
+/**
+ * Wat de mini-scan achterlaat.
+ *
+ * Let op wat er níet in zit: geen meting. Dit is wat iemand zelf heeft aangegeven, en dat
+ * onderscheid staat overal waar dit getoond wordt met zoveel woorden erbij. Het
+ * spinnenweb houdt daarom ook zijn open buitenring: die ruimte is wat Eve-M er straks
+ * echt bij meet.
+ */
+export type Huidscan = {
+  readonly assen: Readonly<Record<AsId, number>>;
+  /** Het antwoord op de eerste vraag, letterlijk zoals de bezoeker het koos. */
+  readonly focusLabel: string;
+  /** De huidprobleempagina die daarbij hoort, als die er is. */
+  readonly pillar: string | null;
+  readonly kort: string | null;
+  /** ISO-datum. Een profiel van een half jaar oud mag zich niet voordoen als vers. */
+  readonly op: string;
+};
+
 export type Huidprofiel = {
   readonly doelen: readonly DoelId[];
   readonly huidtype: FitzpatrickId | null;
   readonly herstel: HerstelId | null;
+  /** Ingevuld zodra iemand de mini-scan heeft gedaan, op welke pagina dan ook. */
+  readonly scan: Huidscan | null;
 };
 
 export const LEEG_PROFIEL: Huidprofiel = {
   doelen: [],
   huidtype: null,
   herstel: null,
+  scan: null,
 };
 
 export function profielIsLeeg(p: Huidprofiel): boolean {
-  return p.doelen.length === 0 && p.huidtype === null && p.herstel === null;
+  return (
+    p.doelen.length === 0 &&
+    p.huidtype === null &&
+    p.herstel === null &&
+    p.scan === null
+  );
 }
 
-/** Hoeveel van de drie vragen beantwoord zijn. Stuurt de voortgangsbalk. */
+/** Hoeveel van de drie vragen beantwoord zijn. Stuurt de blaadjes. */
 export function ingevuld(p: Huidprofiel): number {
   return (
-    (p.doelen.length > 0 ? 1 : 0) +
-    (p.huidtype ? 1 : 0) +
-    (p.herstel ? 1 : 0)
+    (p.doelen.length > 0 ? 1 : 0) + (p.huidtype ? 1 : 0) + (p.herstel ? 1 : 0)
   );
+}
+
+/** De twee assen waar de scan het hoogst op uitkwam. */
+export function aandachtspunten(
+  s: Huidscan,
+): readonly (typeof SCAN_ASSEN)[number][] {
+  return [...SCAN_ASSEN].sort((a, b) => s.assen[b.id] - s.assen[a.id]).slice(0, 2);
+}
+
+/** "3 dagen geleden", "vorige maand". Zonder bibliotheek en zonder valse precisie. */
+export function hoeLangGeleden(iso: string): string {
+  const dagen = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+  if (Number.isNaN(dagen) || dagen < 0) return "";
+  if (dagen === 0) return "vandaag";
+  if (dagen === 1) return "gisteren";
+  if (dagen < 14) return `${dagen} dagen geleden`;
+  if (dagen < 60) return `${Math.round(dagen / 7)} weken geleden`;
+  return `${Math.round(dagen / 30)} maanden geleden`;
 }
 
 /**

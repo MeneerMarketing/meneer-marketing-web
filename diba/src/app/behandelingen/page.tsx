@@ -3,7 +3,7 @@ import Link from "next/link";
 import Diepteschaal from "@/components/behandelingen/Diepteschaal";
 import Huidprofiel from "@/components/behandelingen/Huidprofiel";
 import Huidreis from "@/components/behandelingen/Huidreis";
-import DibaLeaf from "@/components/ui/DibaLeaf";
+import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
@@ -73,7 +73,7 @@ export default function BehandelingenPage() {
           aria-hidden="true"
           className="pointer-events-none absolute top-24 -right-10 h-[300px] w-[300px] rounded-full bg-[var(--g-075)] opacity-60"
         />
-        <DibaLeaf
+        <DibaLeafMark
           aria-hidden="true"
           className="pointer-events-none absolute top-16 right-16 hidden h-[210px] w-[210px] rotate-12 opacity-90 lg:block"
         />
@@ -185,7 +185,7 @@ export default function BehandelingenPage() {
               <br />
               <span className="diba-accent">beste is.</span>
             </h2>
-            <DibaLeaf
+            <DibaLeafMark
               aria-hidden="true"
               className="mt-10 hidden h-24 w-24 opacity-70 lg:block"
             />
@@ -214,7 +214,7 @@ export default function BehandelingenPage() {
       <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
         <div className="mx-auto max-w-[1800px]">
           <div className="relative overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-14">
-            <DibaLeaf
+            <DibaLeafMark
               aria-hidden="true"
               className="pointer-events-none absolute -right-6 -bottom-10 h-[260px] w-[260px] -rotate-12 opacity-20"
             />

@@ -2,6 +2,8 @@
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Button from "@/components/ui/Button";
+import { FITZPATRICK_TYPES, SCAN_ASSEN, type AsId, type DoelId } from "@/data/huidprofiel";
+import { bewaarScan } from "@/lib/huidprofiel-opslag";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icon";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
 
@@ -21,16 +23,14 @@ import { useReducedMotion } from "@/lib/use-reduced-motion";
  * Geen dependencies: SVG + CSS-transities. Respecteert prefers-reduced-motion (§9).
  */
 
-const ASSEN = [
-  { id: "hydratatie", label: "Hydratatie" },
-  { id: "pigment", label: "Pigment" },
-  { id: "porien", label: "Poriën" },
-  { id: "roodheid", label: "Roodheid" },
-  { id: "textuur", label: "Textuur" },
-  { id: "uv", label: "UV-belasting" },
-] as const;
+/**
+ * De assen staan sinds deze ronde in `data/huidprofiel.ts` en niet meer hier. Reden: de
+ * uitkomst van deze scan ís voortaan het huidprofiel van de bezoeker, en dat profiel wordt
+ * ook getoond in het uitklapje rechtsonder en op de behandelingenpagina. Eén bron dus,
+ * anders lopen die drie plekken binnen een maand uit elkaar.
+ */
+const ASSEN = SCAN_ASSEN;
 
-type AsId = (typeof ASSEN)[number]["id"];
 type Gewichten = Partial<Record<AsId, number>>;
 
 type Optie = {
@@ -39,6 +39,8 @@ type Optie = {
   /** Alleen bij vraag 1: bepaalt waar de vervolgstap heen wijst. */
   readonly onderwerp?: string;
   readonly pillar?: string;
+  /** Alleen bij vraag 1: het doel in het huidprofiel waar dit antwoord op uitkomt. */
+  readonly doel?: DoelId;
   /** Korte naam voor in lopende tekst ("Lees over acne"). */
   readonly kort?: string;
   /** Alleen bij de huidtype-vraag: het staal naast de tekst. */
@@ -62,6 +64,7 @@ const VRAGEN: readonly Vraag[] = [
         label: "Puistjes of onzuiverheden",
         gewichten: { porien: 40, textuur: 20, roodheid: 12 },
         onderwerp: "acne",
+        doel: "textuur",
         pillar: "acne",
         kort: "acne",
       },
@@ -69,6 +72,7 @@ const VRAGEN: readonly Vraag[] = [
         label: "Vlekken of een ongelijke kleur",
         gewichten: { pigment: 45, uv: 22 },
         onderwerp: "pigment",
+        doel: "kleur",
         pillar: "pigmentvlekken",
         kort: "pigment",
       },
@@ -76,6 +80,7 @@ const VRAGEN: readonly Vraag[] = [
         label: "Roodheid of snel geïrriteerd",
         gewichten: { roodheid: 45, hydratatie: 16 },
         onderwerp: "roodheid",
+        doel: "roodheid",
         pillar: "rosacea",
         kort: "roodheid",
       },
@@ -83,6 +88,7 @@ const VRAGEN: readonly Vraag[] = [
         label: "Littekens of oneffen structuur",
         gewichten: { textuur: 45, porien: 18 },
         onderwerp: "littekens",
+        doel: "textuur",
         pillar: "littekens",
         kort: "littekens",
       },
@@ -90,6 +96,7 @@ const VRAGEN: readonly Vraag[] = [
         label: "Lijntjes of verslapping",
         gewichten: { textuur: 30, uv: 22, hydratatie: 14 },
         onderwerp: "veroudering",
+        doel: "lijntjes",
         pillar: "huidveroudering",
         kort: "huidveroudering",
       },
@@ -97,6 +104,7 @@ const VRAGEN: readonly Vraag[] = [
         label: "Droogheid of een doffe huid",
         gewichten: { hydratatie: 45, textuur: 14 },
         onderwerp: "droogheid",
+        doel: "onbekend",
         pillar: "droge-huid",
         kort: "een droge huid",
       },
@@ -185,6 +193,32 @@ export default function MiniHuidscan() {
     [profiel],
   );
 
+  /**
+   * Het resultaat is het huidprofiel. Vanaf hier onthoudt de site het, ook als je van deze
+   * pagina wegklikt: het uitklapje rechtsonder toont het terug en de behandelingenpagina
+   * rekent ermee. Bewaren gebeurt één keer, bij het bereiken van de resultaatfase, en niet
+   * bij elke muisbeweging erna.
+   */
+  useEffect(() => {
+    if (fase !== "resultaat") return;
+    const zon = keuzes[2];
+    bewaarScan(
+      {
+        assen: profiel,
+        focusLabel: gekozenFocus?.label ?? "",
+        pillar: gekozenFocus?.pillar ?? null,
+        kort: gekozenFocus?.kort ?? null,
+        op: new Date().toISOString(),
+      },
+      {
+        doel: gekozenFocus?.doel,
+        huidtype: zon !== null ? (FITZPATRICK_TYPES[zon]?.id ?? null) : null,
+      },
+    );
+    // Alleen op het moment dat de fase omslaat; de rest verandert daarna niet meer.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fase]);
+
   // Scanfase: korte opbouw, daarna het resultaat onthullen.
   useEffect(() => {
     if (fase !== "scannen") return;
@@ -229,7 +263,7 @@ export default function MiniHuidscan() {
     <div className="relative overflow-hidden rounded-[var(--r-lg)] bg-white p-5 text-[var(--t-strong)] shadow-[0_20px_60px_rgba(15,45,28,.18)] sm:p-7">
       {/* Kop van de kaart */}
       <div className="flex items-center justify-between gap-4">
-        <span className="diba-label rounded-[var(--r-pill)] bg-[var(--g-700)] px-3 py-1.5 text-white">
+        <span className="diba-label diba-pill-active rounded-[var(--r-pill)] px-3 py-1.5">
           Eve-M
         </span>
         <span className="diba-label text-[var(--t-muted)]">

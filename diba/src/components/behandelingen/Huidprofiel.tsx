@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import DibaLeaf from "@/components/ui/DibaLeaf";
+import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import Spinnenweb from "@/components/ui/Spinnenweb";
 import {
+  aandachtspunten,
   DOELEN,
   FITZPATRICK_TYPES,
   HERSTELRUIMTE,
+  hoeLangGeleden,
   huidtypeKanttekening,
   ingevuld,
   maakMatches,
@@ -78,7 +81,7 @@ export default function Huidprofiel() {
                 formulier dat je moet afmaken, het is er een dat je mag afmaken. */}
             <span className="flex items-center gap-1" aria-hidden="true">
               {[0, 1, 2].map((i) => (
-                <DibaLeaf
+                <DibaLeafMark
                   key={i}
                   className={`h-5 w-5 transition-opacity duration-500 ${
                     i < stand ? "opacity-100" : "opacity-25"
@@ -106,8 +109,82 @@ export default function Huidprofiel() {
           ) : null}
         </div>
 
+        {/* ── Wat er uit de mini-scan kwam ──
+            Wie de scan op de homepage heeft gedaan krijgt hier zijn eigen spinnenweb
+            terug, met de datum erbij. Dat terugzien is het halve idee: een profiel dat je
+            alleen ziet op de pagina waar je het invulde is geen profiel maar een tooltje.
+            Wie hem nog niet heeft gedaan krijgt hier de uitnodiging, want de scan zet twee
+            van de drie vragen hieronder meteen goed. */}
+        {profiel.scan ? (
+          <div className="mt-8 grid items-center gap-6 rounded-[var(--r-lg)] bg-[var(--g-025)] p-6 sm:grid-cols-[auto_1fr] sm:gap-9 sm:p-8">
+            <Spinnenweb
+              waarden={profiel.scan.assen}
+              metLabels
+              className="mx-auto h-[230px] w-[230px] shrink-0"
+            />
+            <div>
+              <p className="diba-label text-[var(--t-label)]">
+                Uit je mini-scan, {hoeLangGeleden(profiel.scan.op)}
+              </p>
+              {profiel.scan.focusLabel ? (
+                <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+                  {profiel.scan.focusLabel}
+                </p>
+              ) : null}
+
+              <ul className="mt-5 flex flex-wrap gap-2">
+                {aandachtspunten(profiel.scan).map((as) => (
+                  <li
+                    key={as.id}
+                    className="flex items-baseline gap-2 rounded-[var(--r-pill)] bg-white px-4 py-2"
+                  >
+                    <span className="text-[14px] leading-5 font-medium text-[var(--t-strong)]">
+                      {as.label}
+                    </span>
+                    <span className="text-[13px] leading-5 text-[var(--t-muted)] tabular-nums">
+                      {profiel.scan!.assen[as.id]}/100
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-5 max-w-[52ch] text-[14px] leading-6 text-[var(--t-body)]">
+                De buitenrand blijft open, en dat is met opzet. Dit is wat jij ons
+                vertelde; wat er echt zit meet Eve-M pas in Behandeling Nul.
+              </p>
+
+              <Link
+                href="/#huidscan"
+                className="diba-label mt-5 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Scan opnieuw doen
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <div className="mt-8 flex flex-wrap items-center justify-between gap-x-8 gap-y-5 rounded-[var(--r-lg)] bg-[var(--g-025)] p-6 sm:p-8">
+            <div className="max-w-[52ch]">
+              <p className="diba-label text-[var(--t-label)]">Begin hier</p>
+              <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+                Doe eerst de mini-scan
+              </p>
+              <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                Vier vragen, en je krijgt je profielschets als spinnenweb. Twee van de drie
+                vragen hieronder staan daarna al goed, en je profiel loopt daarna met je
+                mee over de hele site.
+              </p>
+            </div>
+            <Link
+              href="/#huidscan"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            >
+              Naar de mini-scan
+            </Link>
+          </div>
+        )}
+
         {/* Vraag 1 */}
-        <fieldset className="mt-8 border-0 p-0">
+        <fieldset className="mt-12 border-0 p-0">
           <legend className="diba-display-s max-w-[22ch]">
             Wat wil je <span className="diba-accent">veranderen?</span>
           </legend>

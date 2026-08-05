@@ -6,10 +6,13 @@ import {
   FITZPATRICK_TYPES,
   HERSTELRUIMTE,
   LEEG_PROFIEL,
+  SCAN_ASSEN,
+  type AsId,
   type DoelId,
   type FitzpatrickId,
   type HerstelId,
   type Huidprofiel,
+  type Huidscan,
 } from "@/data/huidprofiel";
 
 /**
@@ -35,7 +38,9 @@ import {
  * tegelijk mee.
  */
 
-const SLEUTEL = "diba-huidprofiel-v1";
+/* v2: er kwam een scanveld bij. Een oude v1-sleutel laten we gewoon staan en negeren we;
+   opruimen zou betekenen dat we in andermans opslag gaan wissen. */
+const SLEUTEL = "diba-huidprofiel-v2";
 
 let huidig: Huidprofiel = LEEG_PROFIEL;
 let gelezen = false;
@@ -65,10 +70,31 @@ function lees(): Huidprofiel {
       herstel: HERSTELRUIMTE.some((h) => h.id === p.herstel)
         ? (p.herstel as HerstelId)
         : null,
+      scan: leesScan(p.scan),
     };
   } catch {
     return LEEG_PROFIEL;
   }
+}
+
+/** Een scan uit de opslag: elke as moet een getal van 0 tot 100 zijn, anders weg ermee. */
+function leesScan(s: unknown): Huidscan | null {
+  if (!s || typeof s !== "object") return null;
+  const r = s as Partial<Huidscan>;
+  if (!r.assen || typeof r.assen !== "object") return null;
+  const assen = {} as Record<AsId, number>;
+  for (const as of SCAN_ASSEN) {
+    const w = (r.assen as Record<string, unknown>)[as.id];
+    if (typeof w !== "number" || !Number.isFinite(w)) return null;
+    assen[as.id] = Math.min(100, Math.max(0, w));
+  }
+  return {
+    assen,
+    focusLabel: typeof r.focusLabel === "string" ? r.focusLabel : "",
+    pillar: typeof r.pillar === "string" ? r.pillar : null,
+    kort: typeof r.kort === "string" ? r.kort : null,
+    op: typeof r.op === "string" ? r.op : new Date().toISOString(),
+  };
 }
 
 function abonneer(luisteraar: () => void) {
@@ -101,6 +127,34 @@ function zet(volgende: Huidprofiel) {
   meld();
 }
 
+/**
+ * De mini-scan schrijft hier haar uitkomst naartoe, waar hij ook staat.
+ *
+ * Behalve het spinnenweb zet hij ook meteen twee van de drie vragen: het doel volgt uit
+ * wat je als eerste opgaf, het huidtype uit hoe je huid op de zon reageert. Hersteltijd
+ * vraagt de scan niet, en die blijft dus open; dat is precies de vraag die je op de
+ * behandelingenpagina nog zelf zet.
+ *
+ * Wat er al stond wordt niet overschreven. Wie zijn doelen daar heeft bijgesteld en
+ * daarna de scan opnieuw doet, houdt zijn eigen keuzes.
+ */
+export function bewaarScan(
+  scan: Huidscan,
+  afgeleid: { doel?: DoelId; huidtype?: FitzpatrickId | null },
+) {
+  zet({
+    ...huidig,
+    scan,
+    doelen:
+      huidig.doelen.length > 0
+        ? huidig.doelen
+        : afgeleid.doel
+          ? [afgeleid.doel]
+          : [],
+    huidtype: huidig.huidtype ?? afgeleid.huidtype ?? null,
+  });
+}
+
 export function useHuidprofiel() {
   const profiel = useSyncExternalStore(
     abonneer,
@@ -127,5 +181,5 @@ export function useHuidprofiel() {
 
   const wis = useCallback(() => zet(LEEG_PROFIEL), []);
 
-  return { profiel, wisselDoel, zetHuidtype, zetHerstel, wis };
+  return { profiel, wisselDoel, zetHuidtype, zetHerstel, wis, bewaarScan };
 }
