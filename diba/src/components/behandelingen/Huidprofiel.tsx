@@ -15,6 +15,7 @@ import {
   profielIsLeeg,
   type MatchOordeel,
 } from "@/data/huidprofiel";
+import { prijsTekst } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
 
@@ -330,8 +331,13 @@ export default function Huidprofiel() {
 
             <div className="mt-8 space-y-8">
               {VOLGORDE.map((oordeel) => {
-                const groep = matches.filter((m) => m.oordeel === oordeel);
-                if (groep.length === 0) return null;
+                const alles = matches.filter((m) => m.oordeel === oordeel);
+                if (alles.length === 0) return null;
+                /* Wat past laten we altijd volledig zien. Van de andere twee groepen de
+                   eerste vier, met de telling erbij: twintig kaarten waarvan er zestien
+                   afvallen leest als een muur, niet als hulp. */
+                const groep = oordeel === "past" ? alles : alles.slice(0, 4);
+                const rest = alles.length - groep.length;
                 const stijl = OORDEELSTIJL[oordeel];
                 return (
                   <div key={oordeel}>
@@ -341,6 +347,9 @@ export default function Huidprofiel() {
                         className={`h-2 w-2 rounded-[var(--r-pill)] ${stijl.stip}`}
                       />
                       {stijl.kop}
+                      {rest > 0 ? (
+                        <span className="text-[var(--t-muted)]"> en nog {rest}</span>
+                      ) : null}
                     </p>
                     <ul className="mt-4 grid gap-3 lg:grid-cols-2">
                       {groep.map((m) => (
@@ -366,7 +375,7 @@ export default function Huidprofiel() {
                                     : "text-[var(--t-muted)]"
                                 }`}
                               >
-                                € {m.behandeling.prijs}
+                                {prijsTekst(m.behandeling.prijs)}
                               </span>
                             </span>
                             <span

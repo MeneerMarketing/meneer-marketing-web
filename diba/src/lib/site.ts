@@ -16,12 +16,17 @@ export const DIBA_SITE = {
 
 export const DIBA_ADDRESS = {
   street: "Weissenbruchlaan 166",
-  postalCode: "3054 HG",
+  postalCode: "3054 LS",
   city: "Rotterdam",
   country: "NL",
   /** Volledige regel voor footer/contact/schema */
-  line: "Weissenbruchlaan 166, 3054 HG Rotterdam",
+  line: "Weissenbruchlaan 166, 3054 LS Rotterdam",
 } as const;
+
+/** Telefoon en mail zoals ze op dibaclinics.nl staan. */
+export const DIBA_TELEFOON = "010-2038423";
+export const DIBA_TELEFOON_HREF = "tel:+31102038423";
+export const DIBA_EMAIL = "info@dibaclinics.nl";
 
 /** WhatsApp Business deeplink. */
 export const DIBA_WHATSAPP_URL = "https://wa.me/31639181277";

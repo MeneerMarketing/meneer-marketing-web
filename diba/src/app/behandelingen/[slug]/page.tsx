@@ -6,8 +6,8 @@ import ProofBar from "@/components/ui/ProofBar";
 import {
   BEHANDELINGEN,
   HUIDLAGEN,
-  VOORLOPIGE_PRIJZEN,
   behandelingVoorSlug,
+  prijsTekst,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -142,15 +142,11 @@ export default async function BehandelingPage({ params }: PageProps) {
               <div className="flex items-baseline justify-between gap-6">
                 <dt className="diba-label diba-label-on-dark">Per sessie</dt>
                 <dd className="diba-card-title text-right tabular-nums">
-                  € {b.prijs}
+                  {prijsTekst(b.prijs)}
                 </dd>
               </div>
             </dl>
-            {VOORLOPIGE_PRIJZEN ? (
-              <p className="mt-6 text-[14px] leading-6 text-[var(--on-dark-body)]">
-                Het bedrag is voorlopig en nog niet door de kliniek vastgesteld.
-              </p>
-            ) : null}
+
           </div>
         </div>
       </section>
@@ -242,7 +238,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           </h2>
 
           <ol className="mt-12 grid gap-4 md:grid-cols-3">
-            {b.stappen.map((s, i) => (
+            {(b.stappen ?? []).map((s, i) => (
               <li
                 key={s.kop}
                 className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
@@ -281,7 +277,7 @@ export default async function BehandelingPage({ params }: PageProps) {
             <div>
               <Label>Hier doet het iets aan</Label>
               <ul className="mt-5 space-y-3">
-                {b.wel.map((w) => (
+                {(b.wel ?? []).map((w) => (
                   <li
                     key={w}
                     className="rounded-[var(--r-sm)] bg-white p-5 text-[16px] leading-7 text-[var(--t-body)]"
@@ -295,7 +291,7 @@ export default async function BehandelingPage({ params }: PageProps) {
             <div>
               <Label>Hier niet</Label>
               <ul className="mt-5 space-y-3">
-                {b.niet.map((n) => (
+                {(b.niet ?? []).map((n) => (
                   <li
                     key={n}
                     className="rounded-[var(--r-sm)] bg-[var(--g-700)] p-5 text-[16px] leading-7 text-[var(--on-dark-body)]"
@@ -310,7 +306,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           <div className="mt-12">
             <Label>Komt vaak voor bij</Label>
             <ul className="mt-5 flex flex-wrap gap-2">
-              {b.bijProblemen.map((p) => (
+              {(b.bijProblemen ?? []).map((p) => (
                 <li key={p.href}>
                   <Link
                     href={p.href}
@@ -339,7 +335,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           </h2>
 
           <ul className="mt-10 max-w-[64ch] divide-y divide-[var(--g-100)] border-y border-[var(--g-100)]">
-            {b.faq.map((v) => (
+            {(b.faq ?? []).map((v) => (
               <li key={v.vraag}>
                 <details className="group py-5">
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] leading-7 font-medium text-[var(--t-strong)] [&::-webkit-details-marker]:hidden">

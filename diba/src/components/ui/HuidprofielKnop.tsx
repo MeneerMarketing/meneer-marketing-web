@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Spinnenweb from "@/components/ui/Spinnenweb";
+import { prijsTekst } from "@/data/behandelingen";
 import {
   aandachtspunten,
   hoeLangGeleden,
@@ -136,7 +137,7 @@ export default function HuidprofielKnop() {
                         >
                           {m.behandeling.naam}
                           <span className="shrink-0 text-[13px] text-[var(--t-muted)] tabular-nums">
-                            € {m.behandeling.prijs}
+                            {prijsTekst(m.behandeling.prijs)}
                           </span>
                         </Link>
                       </li>

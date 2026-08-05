@@ -5,8 +5,8 @@ import { useState } from "react";
 import {
   BEHANDELINGEN,
   HUIDLAGEN,
-  VOORLOPIGE_PRIJZEN,
   diepte,
+  prijsTekst,
   type HuidlaagId,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
@@ -63,7 +63,7 @@ export default function Diepteschaal() {
         </div>
 
         {/* De vijf kolommen. */}
-        <ul className="relative grid min-w-[520px] flex-1 grid-cols-5 gap-3 sm:min-w-0 sm:gap-4">
+        <ul className="relative grid flex-1 auto-cols-[minmax(104px,1fr)] grid-flow-col gap-3 sm:gap-4">
           {/* Hulplijnen op de laaggrenzen, dwars over alle vijf. */}
           <li
             aria-hidden="true"
@@ -126,7 +126,7 @@ export default function Diepteschaal() {
                     {publicCopy(b.herstel)}
                   </span>
                   <span className="mt-2 block text-[14px] leading-5 font-medium text-[var(--t-strong)] tabular-nums">
-                    € {b.prijs}
+                    {prijsTekst(b.prijs)}
                   </span>
                 </Link>
               </li>
@@ -138,10 +138,8 @@ export default function Diepteschaal() {
       <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
         Kijk naar de volgorde. De balken worden langer naar rechts, en de hersteltijd
         eronder wordt in precies dezelfde volgorde langer. Dat is geen toeval en geen
-        marketing: het is dezelfde wet twee keer.
-        {VOORLOPIGE_PRIJZEN
-          ? " De bedragen zijn voorlopig en nog niet door de kliniek vastgesteld."
-          : ""}
+        marketing: het is dezelfde wet twee keer. De bedragen zijn de gepubliceerde
+        tarieven van de kliniek; waar een behandeling varianten heeft staat de laagste.
       </p>
     </div>
   );

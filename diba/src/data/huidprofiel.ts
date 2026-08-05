@@ -192,19 +192,47 @@ const DOELMATRIX: Record<string, Partial<Record<DoelId, "vol" | "deels">>> = {
     haar: "deels",
     onbekend: "vol",
   },
-  "chemische-peeling": { kleur: "vol", textuur: "deels", lijntjes: "deels" },
-  microneedling: { textuur: "vol", lijntjes: "vol" },
-  lasertherapie: { haar: "vol", kleur: "vol", roodheid: "vol" },
-  ipl: { roodheid: "vol", kleur: "deels" },
+  hydrafacial: { textuur: "deels" },
+  oxygeneo: { textuur: "deels" },
+  dermaplaning: { textuur: "deels" },
+  coolift: { lijntjes: "deels" },
+  peelings: { kleur: "vol", textuur: "deels", lijntjes: "deels" },
+  skinpen: { textuur: "vol", lijntjes: "vol" },
+  "dermapen-4": { textuur: "vol", lijntjes: "vol" },
+  skinboosters: { lijntjes: "vol", kleur: "deels" },
+  fotona: { lijntjes: "vol", textuur: "vol" },
+  "nordlys-ipl": { roodheid: "vol", kleur: "vol" },
+  "lumi-8-led": { roodheid: "deels", lijntjes: "deels" },
+  "cosmelan-dermamelan": { kleur: "vol" },
+  "happy-intim": { kleur: "vol" },
+  laserontharing: { haar: "vol" },
+  "acne-traject": { textuur: "deels" },
+  littekentherapie: { textuur: "vol" },
+  "voedingsintolerantietest": { onbekend: "deels" },
 };
 
 /** Wat een behandeling aan hersteltijd vraagt, op dezelfde schaal als de vraag. */
 const HERSTELVRAAG: Record<string, HerstelId> = {
   huidanalyse: "geen",
-  ipl: "geen",
-  lasertherapie: "dag",
-  microneedling: "dag",
-  "chemische-peeling": "dagen",
+  hydrafacial: "geen",
+  oxygeneo: "geen",
+  dermaplaning: "geen",
+  coolift: "geen",
+  "lumi-8-led": "geen",
+  voedingsintolerantietest: "geen",
+  skinboosters: "dag",
+  "nordlys-ipl": "dag",
+  laserontharing: "dag",
+  fotona: "dag",
+  "xl-hair": "dag",
+  fibromen: "dag",
+  peelings: "dagen",
+  skinpen: "dagen",
+  "dermapen-4": "dagen",
+  "cosmelan-dermamelan": "dagen",
+  "happy-intim": "dagen",
+  "acne-traject": "dagen",
+  littekentherapie: "dagen",
 };
 
 const RUIMTE_VOLGORDE: HerstelId[] = ["geen", "dag", "dagen"];
@@ -228,7 +256,7 @@ export type Match = {
  */
 export function maakMatches(p: Huidprofiel): readonly Match[] {
   return BEHANDELINGEN.map((b): Match => {
-    const vraagt = HERSTELVRAAG[b.slug];
+    const vraagt = HERSTELVRAAG[b.slug] ?? "dag";
     const doelen = DOELMATRIX[b.slug] ?? {};
 
     /* Hersteltijd eerst. */

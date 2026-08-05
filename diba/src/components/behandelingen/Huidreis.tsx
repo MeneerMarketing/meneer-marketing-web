@@ -5,7 +5,7 @@ import { useCallback, useRef, useState } from "react";
 import {
   BEHANDELINGEN,
   HUIDLAGEN,
-  VOORLOPIGE_PRIJZEN,
+  prijsTekst,
   type HuidlaagId,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
@@ -63,7 +63,10 @@ export default function Huidreis() {
 
   const laagId = laagVoorDiepte(diepte);
   const laag = HUIDLAGEN.find((l) => l.id === laagId)!;
-  const hier = BEHANDELINGEN.filter((b) => b.lagen.includes(laagId));
+  const alleHier = BEHANDELINGEN.filter((b) => b.lagen.includes(laagId));
+  /* Zes is wat er past zonder dat de kolom langer wordt dan de doorsnede ernaast. */
+  const hier = alleHier.slice(0, 6);
+  const meerHier = alleHier.length - hier.length;
 
   const uitPositie = useCallback((klientY: number) => {
     const doos = vlak.current?.getBoundingClientRect();
@@ -206,11 +209,11 @@ export default function Huidreis() {
 
         <div className="mt-9 border-t border-[var(--g-100)] pt-7">
           <p className="diba-label text-[var(--t-muted)]">
-            {hier.length === 0
+            {alleHier.length === 0
               ? "Hier komt niets van ons"
-              : hier.length === 1
+              : alleHier.length === 1
                 ? "Eén van onze behandelingen komt hier"
-                : `${hier.length} van onze behandelingen komen hier`}
+                : `${alleHier.length} van onze behandelingen komen hier`}
           </p>
 
           <ul className="mt-5 space-y-2">
@@ -227,7 +230,7 @@ export default function Huidreis() {
                     {publicCopy(b.herstel)}
                   </span>
                   <span className="shrink-0 text-[15px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
-                    € {b.prijs}
+                    {prijsTekst(b.prijs)}
                   </span>
                   <svg
                     viewBox="0 0 16 16"
@@ -246,17 +249,19 @@ export default function Huidreis() {
             ))}
           </ul>
 
-          {hier.length === 0 ? (
+          {meerHier > 0 ? (
+            <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
+              En nog {meerHier} andere.
+            </p>
+          ) : null}
+
+          {alleHier.length === 0 ? (
             <p className="mt-5 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
               Zo diep gaan wij niet. Wat hier zit hoort bij een arts, of bij niemand.
             </p>
           ) : null}
 
-          {VOORLOPIGE_PRIJZEN ? (
-            <p className="mt-5 text-[13px] leading-5 text-[var(--t-muted)]">
-              De bedragen zijn voorlopig en nog niet door de kliniek vastgesteld.
-            </p>
-          ) : null}
+
         </div>
       </div>
     </div>
