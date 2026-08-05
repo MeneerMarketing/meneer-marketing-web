@@ -1,47 +1,55 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Diepteschaal from "@/components/behandelingen/Diepteschaal";
+import Huidprofiel from "@/components/behandelingen/Huidprofiel";
 import Huidreis from "@/components/behandelingen/Huidreis";
+import DibaLeaf from "@/components/ui/DibaLeaf";
 import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_SITE_URL } from "@/lib/site";
+import {
+  DIBA_SALONIZED_RATING,
+  DIBA_SALONIZED_REVIEWS_URL,
+  DIBA_SALONIZED_REVIEW_COUNT,
+  DIBA_SITE_URL,
+} from "@/lib/site";
 
 /**
  * De behandelingenpagina.
  *
- * DERDE VERSIE. De eerste was een raster met "[COPY-NODIG]" op de kaarten. De tweede was
- * goed geschreven maar bleef een brochure: twee tekstkolommen, een kaartje ernaast, een
- * cijferbalk die op elke pagina hetzelfde zegt. Terechte kritiek was dat het niet pakt.
+ * VIERDE VERSIE, en elke ronde ging over hetzelfde verwijt: het klopt wel, maar het pakt
+ * niet. Versie één was een raster met "[COPY-NODIG]". Versie twee was een goed geschreven
+ * brochure. Versie drie kreeg de huidreis en werd daarmee een pagina met één sterke tool.
  *
- * Deze versie heeft één idee en past dat over de hele pagina toe:
+ * Wat er nu bij is, en waardoor het een ervaring wordt in plaats van een tool met tekst
+ * eromheen: DE PAGINA ONTHOUDT JOU.
  *
- *     JE DAALT AF IN JE EIGEN HUID.
+ * Je vult drie dingen in, en de pagina zegt op basis daarvan wat past, wat half past en
+ * wat niet past. Dat profiel blijft in je browser staan, dus als je morgen terugkomt staat
+ * het er nog. Geen account, geen mailadres, geen server. Het is het voorproefje van Mijn
+ * Diba, en meteen de belofte die daar gaat gelden.
  *
- * De hero is geen tekstblok maar een sonde die je omlaag sleept. Hoe dieper je komt, hoe
- * minder behandelingen er nog bij zijn: bovenin vier, helemaal onderin één. Dat ene gebaar
- * legt de hele pagina uit voordat er één alinea gelezen is.
+ * De opbouw is een trechter die andersom loopt dan gebruikelijk. Niet: hier zijn onze
+ * behandelingen, kies er een. Maar: vertel drie dingen, dan zeggen wij welke afvallen.
+ * Een kliniek die begint met wat er níet bij je past heeft daarna geen verkooppraatje
+ * meer nodig.
  *
- * Wat er daarna komt is dezelfde as, twee keer anders bekeken. De diepteschaal zet alle
- * vijf naast elkaar zodat je ze kunt vergelijken, en daar zie je de pointe: de balken
- * worden dieper en de hersteltijd wordt in exact dezelfde volgorde langer.
- *
- * Wat er bewust NIET meer op staat:
- *
- * - De cijferbalk. Dezelfde vier getallen als op elke andere pagina, midden in een
- *   afdaling. Dat onderbreekt precies wat de pagina probeert op te bouwen.
- * - Het kaartenraster. Dat was een derde manier om dezelfde vijf te tonen. De
- *   diepteschaal is de betere: elke kolom is een link, dus je verliest geen ingang.
- * - De sprongnavigatie. Op een pagina van vier secties is dat meubilair.
- *
- * Eén donkergroen vlak: de afsluiter. De rest is licht, want een afdaling die halverwege
- * donker wordt leest als een waarschuwing.
+ * Ritme in kleur. Zes secties die afwisselen tussen paginavlak, mint en wit, met precies
+ * één donkergroen vlak aan het eind (§5). De matchkaarten in het profiel zijn kaarten en
+ * geen vlakken; die tellen niet mee, maar ze zijn er wel de reden voor dat de rest van de
+ * pagina licht blijft.
  */
 
 export const metadata: Metadata = {
   title: "Behandelingen",
   description:
-    "Je kiest geen behandeling, je kiest een diepte. Sleep door je huid en zie welke behandelingen daar komen, wat ze kosten en hoe lang je herstelt.",
+    "Vijf behandelingen en drie vragen om te weten welke bij je past. Je huidprofiel blijft in je eigen browser staan.",
 };
+
+const TROTS = [
+  { getal: `${DIBA_SALONIZED_RATING.toLocaleString("nl-NL", { minimumFractionDigits: 1 })}`, bij: "op Salonized" },
+  { getal: DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL"), bij: "reviews" },
+  { getal: "2017", bij: "open in Hillegersberg" },
+] as const;
 
 export default function BehandelingenPage() {
   return (
@@ -53,37 +61,105 @@ export default function BehandelingenPage() {
         ])}
       />
 
-      {/* ── Hero: de kop is kort, de sonde doet het werk ── */}
-      <section className="mx-auto max-w-[1800px] px-5 pt-12 sm:px-9 lg:px-[7.5vw] lg:pt-16">
-        <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
-          <Link href="/" className="hover:text-[var(--g-700)]">
-            Home
-          </Link>
-          <span aria-hidden="true">/</span>
-          <span className="text-[var(--t-muted)]">Behandelingen</span>
-        </nav>
+      {/* ══ Hero ══ */}
+      <section className="relative overflow-hidden">
+        {/* Twee zachte mintvlakken en een blad. Puur decoratie, en het enige stukje van
+            deze pagina dat er is om er te zijn. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-40 -right-32 h-[520px] w-[520px] rounded-full bg-[var(--g-050)]"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute top-24 -right-10 h-[300px] w-[300px] rounded-full bg-[var(--g-075)] opacity-60"
+        />
+        <DibaLeaf
+          aria-hidden="true"
+          className="pointer-events-none absolute top-16 right-16 hidden h-[210px] w-[210px] rotate-12 opacity-90 lg:block"
+        />
 
-        <div className="mt-8 grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
-          <h1 className="diba-display-l max-w-[13ch]">
-            Je kiest geen behandeling.
+        <div className="relative mx-auto max-w-[1800px] px-5 pt-12 pb-16 sm:px-9 lg:px-[7.5vw] lg:pt-16 lg:pb-20">
+          <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <Link href="/" className="hover:text-[var(--g-700)]">
+              Home
+            </Link>
+            <span aria-hidden="true">/</span>
+            <span className="text-[var(--t-muted)]">Behandelingen</span>
+          </nav>
+
+          <h1 className="diba-display-l mt-8 max-w-[19ch]">
+            Vijf behandelingen.
             <br />
-            <span className="diba-accent">Je kiest een diepte.</span>
+            <span className="diba-accent">Drie vragen om te weten welke.</span>
           </h1>
 
-          <p className="max-w-[46ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder
-            behandelingen er nog bij zijn. Daar zit alles in: wat het kost, hoe lang je
-            rood bent, en hoe vaak je terug moet.
+          <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            Vul hieronder je huidprofiel in en je ziet meteen wat bij je past, wat half
+            past en wat niet past. Dat laatste net zo duidelijk als het eerste, want daar
+            heb je meer aan.
           </p>
+
+          {/* Bewijs in één regel in plaats van een cijferbalk. Kleiner, en het onderbreekt
+              de pagina niet halverwege. */}
+          <ul className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3">
+            {TROTS.map((t) => (
+              <li key={t.bij} className="flex items-baseline gap-2">
+                <span className="text-[19px] leading-7 font-medium text-[var(--g-700)] tabular-nums">
+                  {t.getal}
+                </span>
+                <span className="text-[14px] leading-6 text-[var(--t-muted)]">
+                  {t.bij}
+                </span>
+              </li>
+            ))}
+            <li>
+              <a
+                href={DIBA_SALONIZED_REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Lees ze zelf
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section className="mx-auto mt-12 max-w-[1800px] px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
-        <Huidreis />
+      {/* ══ Het huidprofiel ══ */}
+      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+        <div className="mx-auto max-w-[1800px]">
+          <Huidprofiel />
+        </div>
       </section>
 
-      {/* ── Alle vijf naast elkaar ── */}
-      <section className="bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      {/* ══ De huidreis ══ */}
+      <section className="bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+        <div className="mx-auto max-w-[1800px]">
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
+            <div>
+              <Label>Waarom die drie vragen werken</Label>
+              <h2 className="diba-display-m mt-4 max-w-[16ch]">
+                Je kiest geen behandeling.
+                <br />
+                <span className="diba-accent">Je kiest een diepte.</span>
+              </h2>
+            </div>
+            <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder
+              behandelingen er nog bij zijn. Daar zit alles in: wat het kost, hoe lang je
+              rood bent en hoe vaak je terug moet.
+            </p>
+          </div>
+
+          <div className="mt-12">
+            <Huidreis />
+          </div>
+        </div>
+      </section>
+
+      {/* ══ De diepteschaal ══ */}
+      <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <Label>Naast elkaar</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -99,7 +175,7 @@ export default function BehandelingenPage() {
         </div>
       </section>
 
-      {/* ── De eerlijke tegenhanger ── */}
+      {/* ══ De eerlijke tegenhanger ══ */}
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
@@ -109,6 +185,10 @@ export default function BehandelingenPage() {
               <br />
               <span className="diba-accent">beste is.</span>
             </h2>
+            <DibaLeaf
+              aria-hidden="true"
+              className="mt-10 hidden h-24 w-24 opacity-70 lg:block"
+            />
           </div>
 
           <div className="max-w-[58ch]">
@@ -118,22 +198,27 @@ export default function BehandelingenPage() {
               passend of niet passend, en dat verschilt per persoon en per moment.
             </p>
             <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-              Daarom staat er nergens op deze pagina een aanbeveling. Wat er wél staat is
-              waar elke behandeling aankomt, zodat je zelf kunt zien waarom de een niet kan
-              wat de ander wel kan.
+              Ook je huidprofiel hierboven geeft geen advies. Het legt naast elkaar wat jij
+              hebt ingevuld en wat een behandeling doet, en zegt waar dat wringt. Dat is
+              iets anders dan een aanbeveling, en het is met opzet iets anders.
             </p>
             <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-              Wat bij jou past hoor je na de meting. Soms is dat geen van de vijf.
+              Wat bij jou past hoor je na de meting, van een mens. Soms is dat geen van de
+              vijf.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── Afsluiter ── */}
+      {/* ══ Afsluiter ══ */}
       <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
         <div className="mx-auto max-w-[1800px]">
-          <div className="rounded-[var(--r-xl)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-14">
-            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
+          <div className="relative overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-14">
+            <DibaLeaf
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-6 -bottom-10 h-[260px] w-[260px] -rotate-12 opacity-20"
+            />
+            <div className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
               <div>
                 <Label opDonker>Beginnen</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
@@ -146,7 +231,8 @@ export default function BehandelingenPage() {
               <div>
                 <p className="max-w-[50ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                   In Behandeling Nul kijken we onder vast licht wat er bij jou aan de hand
-                  is. Daar komt uit welke diepte er nodig is, of dat er niets nodig is.
+                  is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te
+                  beginnen.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-3">
                   <Link
