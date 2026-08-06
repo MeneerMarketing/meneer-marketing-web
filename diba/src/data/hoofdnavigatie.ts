@@ -103,6 +103,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             href: "/behandelingen",
             zin: "Filter op doel en op hersteltijd",
           },
+          {
+            label: "Onze apparatuur",
+            href: "/apparatuur",
+            zin: "Wat er staat, en wat het niet kan",
+          },
         ],
       },
       {

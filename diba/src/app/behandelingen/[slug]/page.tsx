@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Label from "@/components/ui/Label";
+import { apparatenVoorBehandeling } from "@/data/apparatuur";
 import ProofBar from "@/components/ui/ProofBar";
 import {
   BEHANDELINGEN,
@@ -64,6 +65,10 @@ export default async function BehandelingPage({ params }: PageProps) {
   const b = behandelingVoorSlug(slug);
   if (!b) notFound();
 
+  /* De koppeling loopt twee kanten op: hier het apparaat, en op de apparatuurpagina de
+     behandelingen die erop draaien. Beide uit dezelfde tabel. */
+  const apparaten = apparatenVoorBehandeling(b.slug);
+
   const diepsteLaag =
     b.lagen.length === 0
       ? null
@@ -101,6 +106,23 @@ export default async function BehandelingPage({ params }: PageProps) {
               {publicCopy(b.kort)}
             </p>
 
+            {apparaten.length > 0 ? (
+              <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-7 text-[var(--t-body)]">
+                <span className="text-[var(--t-muted)]">Draait op</span>
+                {apparaten.map((a, i) => (
+                  <span key={a.slug}>
+                    <Link
+                      href={`/apparatuur/${a.slug}`}
+                      className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                    >
+                      {a.naam}
+                    </Link>
+                    {i < apparaten.length - 1 ? <span>,</span> : null}
+                  </span>
+                ))}
+              </p>
+            ) : null}
+
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Link
                 href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
@@ -112,7 +134,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                 href="/behandelingen"
                 className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Vergelijk met de andere vier
+                Vergelijk met de rest
               </Link>
             </div>
           </div>

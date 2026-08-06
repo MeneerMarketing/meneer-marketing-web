@@ -570,6 +570,19 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
   },
   {
+    slug: "jongeren-acne-traject",
+    naam: "Jongeren Acne Traject",
+    categorie: "overig",
+    kort: "Voor 18 jaar en jonger. Een begeleid programma van drie maanden.",
+    lagen: ["hoornlaag", "opperhuid"],
+    werking:
+      "Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een medisch onderbouwd programma van drie maanden met begeleiding, opgezet voor jongeren van achttien jaar en jonger. [MEDISCHE-CHECK-ROJDA]",
+    herstel: "Wisselt per fase van het traject. [MEDISCHE-CHECK-ROJDA]",
+    sessies: "Drie maanden met begeleiding",
+    prijs: 0,
+    bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
+  },
+  {
     slug: "littekentherapie",
     naam: "Littekentherapie",
     categorie: "overig",
