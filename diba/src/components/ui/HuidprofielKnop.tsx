@@ -148,11 +148,18 @@ export default function HuidprofielKnop() {
 
               <div className="mt-6 flex flex-col gap-2">
                 <Link
-                  href="/behandelingen"
+                  href="/huidprofiel"
                   onClick={() => setOpen(false)}
                   className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)]"
                 >
-                  Bekijk je hele profiel
+                  Profiel aanvullen
+                </Link>
+                <Link
+                  href="/behandelingen"
+                  onClick={() => setOpen(false)}
+                  className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] border border-[var(--g-100)] px-5 text-[var(--t-label)] transition-colors hover:border-[var(--g-300)]"
+                >
+                  Alle behandelingen
                 </Link>
                 {scan.pillar ? (
                   <Link

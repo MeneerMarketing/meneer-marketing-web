@@ -91,13 +91,29 @@ export const HOOFDNAV: readonly NavItem[] = [
     href: "/behandelingen",
     kolommen: [
       {
-        kop: "Wat wij doen",
+        kop: "Begin hier",
         items: [
-          { label: "Huidanalyse", href: "/behandelingen/huidanalyse", zin: "Meten onder vast licht" },
-          { label: "Chemische peeling", href: "/behandelingen/chemische-peeling", binnenkort: true },
-          { label: "Microneedling", href: "/behandelingen/microneedling", binnenkort: true },
-          { label: "Lasertherapie", href: "/behandelingen/lasertherapie", binnenkort: true },
-          { label: "IPL", href: "/behandelingen/ipl", binnenkort: true },
+          {
+            label: "Je huidprofiel",
+            href: "/huidprofiel",
+            zin: "Acht stappen, en de site onthoudt het",
+          },
+          {
+            label: "Alle behandelingen",
+            href: "/behandelingen",
+            zin: "Filter op doel en op hersteltijd",
+          },
+        ],
+      },
+      {
+        kop: "Meest gevraagd",
+        items: [
+          { label: "Consult met Eve-M", href: "/behandelingen/huidanalyse", zin: "De nulmeting" },
+          { label: "HydraFacial", href: "/behandelingen/hydrafacial" },
+          { label: "SkinPen microneedling", href: "/behandelingen/skinpen" },
+          { label: "Medische peelings", href: "/behandelingen/peelings" },
+          { label: "Fotona TimeWalker", href: "/behandelingen/fotona" },
+          { label: "Nordlys IPL", href: "/behandelingen/nordlys-ipl" },
         ],
       },
       {
@@ -108,10 +124,9 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "Zones en prijzen",
             href: "/laserontharing/configurator",
             zin: "Stel je eigen combinatie samen",
-            binnenkort: true,
           },
           {
-            label: "GentleMax Pro",
+            label: "Gentle Laser Pro-U",
             href: "/gentlemax-pro",
             zin: "Het apparaat waar we mee werken",
             binnenkort: true,

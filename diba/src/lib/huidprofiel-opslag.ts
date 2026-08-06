@@ -4,15 +4,25 @@ import { useCallback, useSyncExternalStore } from "react";
 import {
   DOELEN,
   FITZPATRICK_TYPES,
+  GEBRUIK,
+  GEVOELIGHEID,
   HERSTELRUIMTE,
+  HUIDCONDITIES,
   LEEG_PROFIEL,
   SCAN_ASSEN,
+  SITUATIE,
+  VOORGESCHIEDENIS,
   type AsId,
+  type ConditieId,
   type DoelId,
   type FitzpatrickId,
+  type GebruikId,
+  type GevoeligheidId,
   type HerstelId,
   type Huidprofiel,
   type Huidscan,
+  type SituatieId,
+  type VoorgeschiedenisId,
 } from "@/data/huidprofiel";
 
 /**
@@ -38,9 +48,9 @@ import {
  * tegelijk mee.
  */
 
-/* v2: er kwam een scanveld bij. Een oude v1-sleutel laten we gewoon staan en negeren we;
+/* v3: het uitgebreide profiel kwam erbij. Een oude v1-sleutel laten we gewoon staan en negeren we;
    opruimen zou betekenen dat we in andermans opslag gaan wissen. */
-const SLEUTEL = "diba-huidprofiel-v2";
+const SLEUTEL = "diba-huidprofiel-v3";
 
 let huidig: Huidprofiel = LEEG_PROFIEL;
 let gelezen = false;
@@ -71,10 +81,33 @@ function lees(): Huidprofiel {
         ? (p.herstel as HerstelId)
         : null,
       scan: leesScan(p.scan),
+      conditie: HUIDCONDITIES.some((c) => c.id === p.conditie)
+        ? (p.conditie as ConditieId)
+        : null,
+      gevoeligheid: GEVOELIGHEID.some((g) => g.id === p.gevoeligheid)
+        ? (p.gevoeligheid as GevoeligheidId)
+        : null,
+      gebruikt: filterOp(p.gebruikt, GEBRUIK) as GebruikId[],
+      situatie: filterOp(p.situatie, SITUATIE) as SituatieId[],
+      voorgeschiedenis: filterOp(
+        p.voorgeschiedenis,
+        VOORGESCHIEDENIS,
+      ) as VoorgeschiedenisId[],
     };
   } catch {
     return LEEG_PROFIEL;
   }
+}
+
+/** Houdt alleen de ids over die we vandaag kennen. */
+function filterOp(
+  waarde: unknown,
+  lijst: readonly { readonly id: string }[],
+): string[] {
+  if (!Array.isArray(waarde)) return [];
+  return waarde.filter(
+    (x): x is string => typeof x === "string" && lijst.some((l) => l.id === x),
+  );
 }
 
 /** Een scan uit de opslag: elke as moet een getal van 0 tot 100 zijn, anders weg ermee. */
@@ -155,6 +188,17 @@ export function bewaarScan(
   });
 }
 
+/** Zet een id aan of uit, waarbij het "niets"-antwoord de rest uitsluit en andersom. */
+function wisselMetGeen<T extends string>(
+  huidigeLijst: readonly T[],
+  id: T,
+  geen: string,
+): T[] {
+  if (huidigeLijst.includes(id)) return huidigeLijst.filter((x) => x !== id);
+  if (id === geen) return [id];
+  return [...huidigeLijst.filter((x) => x !== geen), id];
+}
+
 export function useHuidprofiel() {
   const profiel = useSyncExternalStore(
     abonneer,
@@ -179,7 +223,47 @@ export function useHuidprofiel() {
     zet({ ...huidig, herstel: huidig.herstel === h ? null : h });
   }, []);
 
+  const zetConditie = useCallback((c: ConditieId) => {
+    zet({ ...huidig, conditie: huidig.conditie === c ? null : c });
+  }, []);
+
+  const zetGevoeligheid = useCallback((g: GevoeligheidId) => {
+    zet({ ...huidig, gevoeligheid: huidig.gevoeligheid === g ? null : g });
+  }, []);
+
+  /**
+   * De meerkeuzelijsten met een "niets van dit alles". Dat antwoord sluit de rest uit en
+   * andersom, want "ik gebruik niets" naast "ik gebruik retinol" is geen antwoord maar een
+   * fout die later een afspraak kost.
+   */
+  const wisselGebruik = useCallback((id: GebruikId) => {
+    zet({ ...huidig, gebruikt: wisselMetGeen(huidig.gebruikt, id, "niets") });
+  }, []);
+
+  const wisselSituatie = useCallback((id: SituatieId) => {
+    zet({ ...huidig, situatie: wisselMetGeen(huidig.situatie, id, "geen") });
+  }, []);
+
+  const wisselVoorgeschiedenis = useCallback((id: VoorgeschiedenisId) => {
+    zet({
+      ...huidig,
+      voorgeschiedenis: wisselMetGeen(huidig.voorgeschiedenis, id, "geen"),
+    });
+  }, []);
+
   const wis = useCallback(() => zet(LEEG_PROFIEL), []);
 
-  return { profiel, wisselDoel, zetHuidtype, zetHerstel, wis, bewaarScan };
+  return {
+    profiel,
+    wisselDoel,
+    zetHuidtype,
+    zetHerstel,
+    zetConditie,
+    zetGevoeligheid,
+    wisselGebruik,
+    wisselSituatie,
+    wisselVoorgeschiedenis,
+    wis,
+    bewaarScan,
+  };
 }

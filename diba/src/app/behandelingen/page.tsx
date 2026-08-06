@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Diepteschaal from "@/components/behandelingen/Diepteschaal";
-import Huidprofiel from "@/components/behandelingen/Huidprofiel";
+import Behandelingenoverzicht from "@/components/behandelingen/Behandelingenoverzicht";
 import Huidreis from "@/components/behandelingen/Huidreis";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Label from "@/components/ui/Label";
+import { BEHANDELINGEN } from "@/data/behandelingen";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_SALONIZED_RATING,
@@ -87,17 +87,32 @@ export default function BehandelingenPage() {
             <span className="text-[var(--t-muted)]">Behandelingen</span>
           </nav>
 
-          <h1 className="diba-display-l mt-8 max-w-[19ch]">
-            Vijf behandelingen.
+          <h1 className="diba-display-l mt-8 max-w-[17ch]">
+            {BEHANDELINGEN.length} behandelingen.
             <br />
-            <span className="diba-accent">Drie vragen om te weten welke.</span>
+            <span className="diba-accent">Eén vraag: hoe diep?</span>
           </h1>
 
           <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Vul hieronder je huidprofiel in en je ziet meteen wat bij je past, wat half
-            past en wat niet past. Dat laatste net zo duidelijk als het eerste, want daar
-            heb je meer aan.
+            Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel
+            bereikt. Waar een behandeling aankomt bepaalt de rest: wat het kost, hoe lang
+            je rood bent en hoe vaak je terug moet.
           </p>
+
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href="#alles"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
+            >
+              Naar alle behandelingen
+            </a>
+            <Link
+              href="/huidprofiel"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-300)] px-6 text-[var(--t-label)] transition-colors hover:border-[var(--g-700)] hover:text-[var(--t-strong)]"
+            >
+              Of maak eerst je huidprofiel
+            </Link>
+          </div>
 
           {/* Bewijs in één regel in plaats van een cijferbalk. Kleiner, en het onderbreekt
               de pagina niet halverwege. */}
@@ -126,19 +141,12 @@ export default function BehandelingenPage() {
         </div>
       </section>
 
-      {/* ══ Het huidprofiel ══ */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
-        <div className="mx-auto max-w-[1800px]">
-          <Huidprofiel />
-        </div>
-      </section>
-
       {/* ══ De huidreis ══ */}
       <section className="bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto max-w-[1800px]">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
             <div>
-              <Label>Waarom die drie vragen werken</Label>
+              <Label>Waarom diepte de kapstok is</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
                 Je kiest geen behandeling.
                 <br />
@@ -158,20 +166,26 @@ export default function BehandelingenPage() {
         </div>
       </section>
 
-      {/* ══ De diepteschaal ══ */}
-      <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      {/* ══ Alle behandelingen ══ */}
+      <section
+        id="alles"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
         <div className="mx-auto max-w-[1800px]">
-          <Label>Naast elkaar</Label>
+          <Label>Alles op een rij</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Dieper duurt langer.
+            {BEHANDELINGEN.length} behandelingen.
             <br />
-            <span className="diba-accent">Altijd.</span>
+            <span className="diba-accent">Filter tot er twee overblijven.</span>
           </h2>
           <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Dezelfde vijf, nu alle vijf tegelijk. Klik een kolom aan voor de hele uitleg.
+            Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede
+            filter staat nergens anders, terwijl het vaak het meest bepaalt.
           </p>
 
-          <Diepteschaal />
+          <div className="mt-12">
+            <Behandelingenoverzicht />
+          </div>
         </div>
       </section>
 
