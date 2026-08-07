@@ -33,6 +33,11 @@ export const metadata: Metadata = {
   },
   description: HOME_PAGE_DESCRIPTION,
   applicationName: SITE_NAME,
+  alternates: {
+    types: {
+      "application/xml": `${siteOrigin}/sitemap.xml`,
+    },
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
