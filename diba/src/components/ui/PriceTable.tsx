@@ -1,11 +1,3 @@
-/**
- * DIBA PriceTable — referentie batch 2 (DIBA-RULES.md §8 prijs-componenten)
- * Altijd volledige prijzen, geen sterretjes-voetnoten met addertjes.
- * Trajectprijs naast losse prijs, termijnbedrag klein eronder ("of €62/mnd").
- * Cijfers tabular lining. Server component, semantische tabel.
- * Prijzen komen uit getypeerde data — NOOIT verzonnen ([PRIJS-NODIG] tot Okan levert).
- */
-
 export type PriceRow = {
   name: string;
   /** Losse prijs in euro's; weglaten als alleen traject bestaat */
@@ -20,7 +12,7 @@ export type PriceRow = {
 };
 
 export type PriceTableProps = {
-  /** Zichtbare titel boven de tabel, bv. "Laserontharing — prijzen" */
+  /** Zichtbare titel boven de tabel, bv. "Laserontharing, gelaat" */
   caption: string;
   rows: PriceRow[];
 };
@@ -36,7 +28,10 @@ const euro = new Intl.NumberFormat("nl-NL", {
  * Nul betekent "nog niet bekend" en nooit "gratis".
  *
  * Hier stond letterlijk "[PRIJS-NODIG]", en dat verscheen dus op het scherm van iedereen
- * die de prijzenpagina opende. Vlaggen horen in de broncode, niet in beeld.
+ * die de prijzenpagina opende. Vlaggen horen in de broncode, niet in beeld. De code die
+ * daarop controleerde (`p.startsWith("[")`) is meeverdwenen: die kon na die fix niets
+ * meer vinden, en dode takken die op een opgelost probleem wachten lezen als een
+ * waarschuwing die er niet meer is.
  */
 function fmtPrice(value: number | undefined): string | null {
   if (value === undefined) return null;
@@ -45,87 +40,90 @@ function fmtPrice(value: number | undefined): string | null {
 }
 
 export default function PriceTable({ caption, rows }: PriceTableProps) {
+  /**
+   * De trajectkolom staat er alleen als er iets in staat.
+   *
+   * De kliniek publiceert geen trajectprijzen, dus na het overnemen van de echte tarieven
+   * stond er tweeënzestig keer "n.v.t." onder een kop die nergens naar verwees. Een lege
+   * kolom is niet neutraal: hij suggereert dat er een traject bestaat dat wij niet willen
+   * noemen. Komen ze er, dan verschijnt de kolom vanzelf weer.
+   */
+  const heeftTraject = rows.some((r) => r.traject);
+
   return (
     <table className="w-full border-collapse text-left">
-      <caption className="pb-4 text-left text-xl font-medium tracking-[-.03em] text-[#17372a] md:text-2xl">
+      <caption className="pb-4 text-left text-xl font-medium tracking-[-.03em] text-[var(--t-strong)] md:text-2xl">
         {caption}
       </caption>
       <thead>
-        <tr className="border-b border-[#dce8d9]">
+        <tr className="border-b border-[var(--g-100)]">
           <th
             scope="col"
-            className="py-3 pr-3 text-[11px] font-semibold uppercase tracking-[.1em] text-[#5d8166]"
+            className="py-3 pr-3 text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
           >
             Behandeling
           </th>
           <th
             scope="col"
-            className="w-[22%] py-3 pr-3 text-right text-[11px] font-semibold uppercase tracking-[.1em] text-[#5d8166]"
+            className="w-[30%] py-3 pr-3 text-right text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
           >
-            Losse prijs
+            Per sessie
           </th>
-          <th
-            scope="col"
-            className="w-[30%] py-3 text-right text-[11px] font-semibold uppercase tracking-[.1em] text-[#5d8166]"
-          >
-            Traject
-          </th>
+          {heeftTraject ? (
+            <th
+              scope="col"
+              className="w-[30%] py-3 text-right text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
+            >
+              Traject
+            </th>
+          ) : null}
         </tr>
       </thead>
       <tbody>
         {rows.map((row, i) => (
-          <tr key={`${row.name}-${i}`} className="border-b border-[#e8f0e4] align-top">
+          <tr
+            key={`${row.name}-${i}`}
+            className="border-b border-[var(--g-050)] align-top"
+          >
             <th
               scope="row"
-              className="py-4 pr-3 text-[15px] font-normal leading-relaxed text-[#17372a]"
+              className="py-4 pr-3 text-[15px] leading-relaxed font-normal text-[var(--t-strong)]"
             >
               {row.name}
             </th>
-            <td className="py-4 pr-3 text-right text-[15px] text-[#17372a] tabular-nums">
-              {(() => {
-                const p = fmtPrice(row.single);
-                if (p === null) {
-                  return <span className="text-[13px] text-[#9ab09a]">n.v.t.</span>;
-                }
-                return p.startsWith("[") ? (
-                  <span className="text-[13px] text-[#5f7765]">{p}</span>
-                ) : (
-                  p
-                );
-              })()}
-            </td>
-            <td className="py-4 text-right tabular-nums">
-              {row.traject ? (
-                <>
-                  <span className="text-[15px] font-medium text-[#17372a]">
-                    {(() => {
-                      const p = fmtPrice(row.traject.price);
-                      return p?.startsWith("[") ? (
-                        <span className="text-[13px] font-normal text-[#5f7765]">{p}</span>
-                      ) : (
-                        p
-                      );
-                    })()}
-                  </span>
-                  {row.traject.sessions ? (
-                    <span className="text-[13px] text-[#5f7765]">
-                      {" "}
-                      ({row.traject.sessions})
-                    </span>
-                  ) : null}
-                  {row.traject.perMonth !== undefined ? (
-                    <span className="block text-[13px] leading-relaxed text-[#5f7765]">
-                      {(() => {
-                        const p = fmtPrice(row.traject?.perMonth);
-                        return p?.startsWith("[") ? p : `of ${p}/mnd`;
-                      })()}
-                    </span>
-                  ) : null}
-                </>
-              ) : (
-                <span className="text-[13px] text-[#9ab09a]">n.v.t.</span>
+            <td className="py-4 pr-3 text-right text-[15px] text-[var(--t-strong)] tabular-nums">
+              {fmtPrice(row.single) ?? (
+                <span className="text-[13px] text-[var(--t-muted)]">
+                  n.v.t.
+                </span>
               )}
             </td>
+            {heeftTraject ? (
+              <td className="py-4 text-right tabular-nums">
+                {row.traject ? (
+                  <>
+                    <span className="text-[15px] font-medium text-[var(--t-strong)]">
+                      {fmtPrice(row.traject.price)}
+                    </span>
+                    {row.traject.sessions ? (
+                      <span className="text-[13px] text-[var(--t-muted)]">
+                        {" "}
+                        ({row.traject.sessions})
+                      </span>
+                    ) : null}
+                    {row.traject.perMonth !== undefined ? (
+                      <span className="block text-[13px] leading-relaxed text-[var(--t-muted)]">
+                        of {fmtPrice(row.traject.perMonth)} per maand
+                      </span>
+                    ) : null}
+                  </>
+                ) : (
+                  <span className="text-[13px] text-[var(--t-muted)]">
+                    n.v.t.
+                  </span>
+                )}
+              </td>
+            ) : null}
           </tr>
         ))}
       </tbody>

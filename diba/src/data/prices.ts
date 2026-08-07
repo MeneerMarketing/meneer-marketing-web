@@ -50,6 +50,14 @@ export type PriceSection = {
   /** Eén regel context onder de kop. Wat je krijgt voor dat bedrag. */
   readonly zin?: string;
   readonly rows: readonly PriceRow[];
+  /**
+   * Bij welke prijslijst deze sectie hoort, als dat uitmaakt.
+   *
+   * Alleen laserontharing heeft twee lijsten. Zonder dit veld staat "Voorhoofd" twee keer
+   * op de pagina met vijftig en vijfenzestig euro ernaast, en dan moet de bezoeker zelf
+   * raden welke van de twee voor hem geldt.
+   */
+  readonly geslacht?: LaserGeslacht;
 };
 
 /**
@@ -91,6 +99,7 @@ const laserSecties: readonly PriceSection[] = LASER_GESLACHTEN.flatMap((g) =>
     caption: `Laserontharing ${g.label.toLowerCase()}, ${gebied.caption}`,
     zin: gebied.zin,
     rows: laserRijen(gebied.id, g.id),
+    geslacht: g.id,
   })),
 ).filter((s) => s.rows.length > 0);
 

@@ -51,6 +51,12 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   "/huidproblemen/huidverkleuring",
   "/huidproblemen/symptoomzoeker",
   "/behandelingen",
+  // De apparatuurreeks en het huidprofiel stonden hier niet, ook niet als werkvoorraad.
+  // Ze bestonden dus wel op de site maar in geen enkele lijst, en daardoor kon niemand
+  // zien dat er nog een besluit over openstond. Aanmelden bij Google gebeurt pas als de
+  // foto's van de apparaten er zijn en Rojda de dieptes heeft nagelopen. [BESLUIT-OKAN]
+  "/apparatuur",
+  "/huidprofiel",
   "/team",
   "/ons-verbond",
   "/is-het-nodig",
@@ -106,12 +112,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const behandelingen: MetadataRoute.Sitemap = BEHANDELINGEN.filter(gereed).map((b) => ({
-    url: `${DIBA_SITE_URL}/behandelingen/${b.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.75,
-  }));
+  const behandelingen: MetadataRoute.Sitemap = BEHANDELINGEN.filter(gereed).map(
+    (b) => ({
+      url: `${DIBA_SITE_URL}/behandelingen/${b.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    }),
+  );
 
   // Vergoedingen staan bewust op de handrem. De automatische check keek ze door,
   // want een record `{slug, name}` bevat geen redactievlaggen — maar de pagina's
