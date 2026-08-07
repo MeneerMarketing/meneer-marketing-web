@@ -103,10 +103,10 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
   },
   seo: {
     pillar: "vindbaarheid",
-    title: "SEO | organisch vóór ads | Meneer Marketing",
+    title: "SEO uitbesteden | landings die ranken | Meneer Marketing",
     description:
-      "Landingspagina's die bovenaan scoren, techniek die Google vertrouwt, content op echte zoekintentie. Gratis verkeer maand na maand. SkinComplete deed het zo.",
-    keywords: ["SEO bureau", "hoger in google", "zoekmachine optimalisatie"],
+      "SEO-traject: landingspagina's, techniek en content op echte zoekintentie. Organisch vóór ads. SkinComplete deed het zo. Plan en uitvoering bij mij.",
+    keywords: ["SEO uitbesteden", "SEO traject", "zoekmachine optimalisatie"],
   },
   "ai-zoek": {
     pillar: "vindbaarheid",

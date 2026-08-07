@@ -1,6 +1,5 @@
 import type { SeoLandingCategory, SeoLandingPage } from "@/data/seo-landings/types";
-import { fill, hashSlug, pick, pickMany } from "@/lib/seo-landings-voice";
-import { buildSchemaPrimaryQuestion } from "@/lib/seo-landings-uniqueness";
+import { fill, pick, pickMany } from "@/lib/seo-landings-voice";
 
 const TITLE_MAX = 60;
 const DESC_MIN = 120;
@@ -238,9 +237,25 @@ function displayKeyword(keyword: string): string {
     .replace(/\bGbp\b/g, "GBP");
 }
 
+const BRAND_SUFFIX = "| Meneer Marketing";
+
+/** Title ≤60. Merknaam nooit half afhakken tot "Meneer.". */
 export function trimMetaTitle(title: string): string {
   const t = title.replace(/\s+/g, " ").trim();
   if (t.length <= TITLE_MAX) return t;
+
+  const brandIdx = t.lastIndexOf(BRAND_SUFFIX);
+  if (brandIdx > 0) {
+    const headBudget = TITLE_MAX - BRAND_SUFFIX.length - 1;
+    let head = t.slice(0, brandIdx).trimEnd();
+    if (head.length > headBudget) {
+      const cut = head.slice(0, headBudget);
+      const lastSpace = cut.lastIndexOf(" ");
+      head = (lastSpace > 16 ? cut.slice(0, lastSpace) : cut).trimEnd();
+    }
+    return `${head} ${BRAND_SUFFIX}`;
+  }
+
   const cut = t.slice(0, TITLE_MAX - 1);
   const lastSpace = cut.lastIndexOf(" ");
   const base = lastSpace > 24 ? cut.slice(0, lastSpace).trimEnd() : cut.trimEnd();
@@ -257,10 +272,41 @@ const SLUG_HOOKS = [
   "Unieke pagina, echte stem.",
 ] as const;
 
+/** Nationale money-slugs zonder stad: hogere crawl-prioriteit + curated meta. */
+const NATIONAL_MONEY_SLUGS = new Set([
+  "google-ads-bureau",
+  "seo-specialist",
+  "seo-audit",
+  "website-laten-maken",
+  "webshop-laten-maken",
+  "shopify-expert",
+  "shopify-seo",
+  "meta-ads-bureau",
+  "online-marketing-bureau",
+  "online-marketing-manager",
+  "e-commerce-marketing",
+  "conversie-optimalisatie",
+  "vindbaarheid-ai",
+  "e-mailmarketing",
+  "lokale-seo",
+  "hoger-in-google",
+]);
+
+function keywordForCityMeta(page: SeoLandingPage): string {
+  const city = page.location?.city;
+  let kw = displayKeyword(page.primaryKeyword);
+  if (!city) return kw;
+  const cityRe = new RegExp(`\\s*${city.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*$`, "i");
+  kw = kw.replace(cityRe, "").trim();
+  return kw || displayKeyword(page.primaryKeyword);
+}
+
 export function buildUniqueMetaDescription(page: SeoLandingPage): string {
   const curated = page.metaDescription?.replace(/\s+/g, " ").trim() ?? "";
-  // Nationale hubs: curated copy behouden als die al SERP-waardig is.
-  if (!page.location && curated.length >= DESC_MIN) {
+  const moneyNational =
+    !page.location && NATIONAL_MONEY_SLUGS.has(page.slug) && curated.length >= 100;
+  // Nationale hubs: curated copy behouden (gate 110 i.p.v. 120, money-slugs al vanaf 100).
+  if (!page.location && (moneyNational || curated.length >= 110)) {
     return clampDescription(curated);
   }
 
@@ -268,7 +314,7 @@ export function buildUniqueMetaDescription(page: SeoLandingPage): string {
   const middle = fill(pick(page.slug, META_DESC_MIDDLES[page.category], "meta-mid"), v);
   const closer = pick(page.slug, META_DESC_CLOSERS, "meta-close");
   const hook = pick(page.slug, SLUG_HOOKS, "meta-hook");
-  const kw = displayKeyword(page.primaryKeyword);
+  const kw = keywordForCityMeta(page);
 
   if (page.location?.city === "Apeldoorn") {
     return clampDescription(
@@ -326,41 +372,20 @@ export function buildKeyTakeaways(page: SeoLandingPage): readonly string[] {
   );
 }
 
+/**
+ * FAQ-schema = exact de FAQ-lijst die de UI toont (enrichedFaqs).
+ * Geen aparte “phantom” primary-vraag die niet op de pagina staat.
+ */
 export function buildSchemaFaqs(
-  page: SeoLandingPage,
+  _page: SeoLandingPage,
   enrichedFaqs: readonly { question: string; answer: string }[],
 ): readonly { question: string; answer: string }[] {
-  const primary = {
-    question: buildSchemaPrimaryQuestion(page),
-    answer: buildExpertSummary(page),
-  };
-  const unique = enrichedFaqs.filter(
-    (f, i, arr) => arr.findIndex((x) => x.question === f.question) === i,
-  );
-  const skipFirst = hashSlug(page.slug, "schema-skip") % 3 === 0;
-  const rest = skipFirst ? unique.slice(1, 8) : unique.slice(0, 7);
-  return [primary, ...rest];
+  return enrichedFaqs
+    .filter(
+      (f, i, arr) => arr.findIndex((x) => x.question === f.question) === i,
+    )
+    .slice(0, 8);
 }
-
-/** Nationale money-slugs zonder stad: hogere crawl-prioriteit. */
-const NATIONAL_MONEY_SLUGS = new Set([
-  "google-ads-bureau",
-  "seo-specialist",
-  "seo-audit",
-  "website-laten-maken",
-  "webshop-laten-maken",
-  "shopify-expert",
-  "shopify-seo",
-  "meta-ads-bureau",
-  "online-marketing-bureau",
-  "online-marketing-manager",
-  "e-commerce-marketing",
-  "conversie-optimalisatie",
-  "vindbaarheid-ai",
-  "e-mailmarketing",
-  "lokale-seo",
-  "hoger-in-google",
-]);
 
 /** City fill bases (P0.4): website + seo × stad. */
 const CITY_TRIO_BASES = ["website-laten-maken", "seo-specialist"] as const;

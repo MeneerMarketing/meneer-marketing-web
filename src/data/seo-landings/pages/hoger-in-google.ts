@@ -4,9 +4,9 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
   slug: "hoger-in-google",
   primaryKeyword: "hoger in google",
   category: "seo",
-  metaTitle: "Hoger in Google · landings die ranken | Meneer Marketing",
+  metaTitle: "Hoger in Google met pagina's die blijven | Meneer Marketing",
   metaDescription:
-    "Hoger in Google met landingspagina's, techniek en content die ranken. 12+ jaar SEO. Pagina's die organisch verkeer en leads opleveren.",
+    "Hoger in Google via landings, techniek en content op koopintentie. 12+ jaar SEO. Pagina's die gratis kliks blijven leveren als ads stoppen.",
   keywords: [
     "hoger in google",
     "hoger scoren in google",
@@ -14,11 +14,11 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
     "google ranking verbeteren",
     "seo nederland",
   ],
-  eyebrow: "SEO",
+  eyebrow: "Hoger in Google · pagina's, geen trucjes",
   headline: "Hoger in Google.",
   headlineAccent: "Gratis kliks, geen geluk.",
   subheadline:
-    "Ads stoppen als je budget stopt. Een pagina op positie 1 levert gewoon door. Ik bouw die pagina's, technisch strak en geschreven voor mensen én Google.",
+    "Ads stoppen als je budget stopt. Een sterke pagina op positie 1 blijft leveren. Ik bouw die pagina's technisch strak en geschreven voor mensen én Google.",
   pains: [
     {
       title: "Pagina 2 is onzichtbaar",

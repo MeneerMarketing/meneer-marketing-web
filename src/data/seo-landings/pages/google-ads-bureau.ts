@@ -4,9 +4,9 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
   slug: "google-ads-bureau",
   primaryKeyword: "google ads bureau",
   category: "google-ads",
-  metaTitle: "Google Ads bureau · Search & Shopping | Meneer Marketing",
+  metaTitle: "Google Ads bureau · conversie eerst | Meneer Marketing",
   metaDescription:
-    "Google Ads bureau dat eerst je site en tracking checkt. Search, Shopping en Performance Max op koopintentie. Beheer dat je marge beschermt.",
+    "Google Ads bureau dat Search, Shopping en PMax koppelt aan landings die verkopen. Tracking strak, biedingen op marge. Ik beheer het zelf.",
   keywords: [
     "google ads bureau",
     "google ads bureau nederland",
@@ -19,11 +19,11 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
     "ppc bureau",
     "advertentiebeheer",
   ],
-  eyebrow: "Google Ads",
+  eyebrow: "Google Ads · marge eerst",
   headline: "Google Ads bureau dat je budget",
   headlineAccent: "niet verbrandt.",
   subheadline:
-    "Iedereen kan op Start klikken. Het verschil zit in wat er vóór die klik staat: landingspagina, tracking en een plan. Daar begin ik.",
+    "Iedereen kan op Start klikken. Ik begin bij je landingspagina, tracking en breakeven. Pas dan krijgt Search of Shopping serieus budget.",
   pains: [
     {
       title: "Kliks zonder verkopen",

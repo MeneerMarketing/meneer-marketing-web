@@ -172,8 +172,8 @@ const PILLAR_ZOEKEN_LINKS: Record<PillarSlug, readonly { slug: string; label: st
     ],
     vindbaarheid: [
       { slug: "seo-specialist", label: "SEO specialist" },
+      { slug: "hoger-in-google", label: "Hoger in Google" },
       { slug: "vindbaarheid-ai", label: "Vindbaarheid in AI" },
-      { slug: "lokale-seo", label: "Lokale SEO" },
     ],
     campagnes: [
       { slug: "google-ads-bureau", label: "Google Ads bureau" },
