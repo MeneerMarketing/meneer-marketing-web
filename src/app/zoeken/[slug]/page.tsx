@@ -71,6 +71,7 @@ export default async function ZoekenLandingPage({ params }: ZoekenPageProps) {
     areaServed,
     serviceType: SERVICE_TYPE_BY_CATEGORY[page.category],
     isApeldoornHQ: page.location?.city === "Apeldoorn",
+    dateModified: "2026-08-02",
   });
 
   return (

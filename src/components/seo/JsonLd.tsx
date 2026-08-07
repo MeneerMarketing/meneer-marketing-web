@@ -17,13 +17,17 @@ import {
   type JsonLdObject,
 } from "@/lib/seo/schema";
 
+function serializeJsonLd(data: JsonLdObject | JsonLdObject[]): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 /** Sitewide Organization + WebSite schema, geladen in de root layout. */
 export function JsonLd() {
   const payload = [organizationJsonLd, websiteJsonLd];
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(payload) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(payload) }}
     />
   );
 }
@@ -36,7 +40,7 @@ export function JsonLdScript({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }}
     />
   );
 }
