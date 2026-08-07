@@ -516,6 +516,10 @@ export function buildExpandedExtraFaqs(page: SeoLandingPage): readonly SeoLandin
 
 /** Maakt base page-secties uniek per slug vóór enrich-lagen. */
 export function variateSeoLandingPage(page: SeoLandingPage): SeoLandingPage {
+  if (page.lockContent) {
+    return page;
+  }
+
   const vars = pageVars(page);
 
   const pains = mergeCards(page.slug, page.pains, PAIN_ALTS[page.category], 3, "pains", vars);

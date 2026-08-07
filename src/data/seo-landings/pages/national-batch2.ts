@@ -152,66 +152,138 @@ export const LOKALE_SEO: SeoLandingPage = {
     "Iemand zoekt je dienst plus stad. Sta jij in Maps met reviews en een pagina die klopt? Ik zet GBP, NAP en regio-landings strak, landelijk of lokaal.",
   pains: [
     {
-      title: "Onzichtbaar op Maps",
-      body: "Je profiel bestaat. Google negeert je alsof je gesloten bent.",
+      title: "Onzichtbaar in de map pack",
+      body: "Je Google Business Profile bestaat, maar concurrenten pakken de top drie. Belletjes gaan naar hen. Jij blijft een naam op pagina twee.",
     },
     {
-      title: "Concurrent met 200 reviews",
-      body: "Jij hebt er vier. Guess who wint.",
+      title: "Concurrent met een reviewberg",
+      body: "Zij hebben tientallen recente reviews. Jij hebt er vier uit 2021. Google en zoekers kiezen vertrouwen. Jij verliest voor het gesprek begint.",
     },
     {
-      title: "Geen regio-pagina's",
-      body: "Je site praat alleen nationaal. Google weet niet waar je zit.",
+      title: "Site zonder lokale ankers",
+      body: "Je praat alleen landelijk. Geen regio-pagina, NAP rommelig, schema half. Google weet niet goed waar je zit en voor wie.",
     },
   ],
   deliverables: [
     {
-      title: "Google Business Profile",
-      body: "Compleet, consistent, actief. Geen spookprofiel.",
+      title: "Google Business Profile op orde",
+      body: "Categorieën, diensten, foto's, uren, posts. Actief profiel, geen spookhuis dat alleen je adres toont.",
     },
     {
-      title: "Lokale landings",
-      body: "Regio-pagina's die ranken zonder keyword-spam.",
+      title: "Lokale landings die ranken",
+      body: "Regio- of stadsapagina's met echte inhoud. Dienst plus plaats, zonder keyword-spam of kopieer-plak per postcode.",
     },
     {
-      title: "Reviews & reputatie",
-      body: "Strategie om echte reviews te verzamelen.",
+      title: "Reviews en reputatie",
+      body: "Proces om echte reviews te vragen op het juiste moment. Geen nep, wel systeempjes die blijven lopen.",
     },
     {
-      title: "NAP & schema",
-      body: "Naam, adres, telefoon overal hetzelfde. Machines snappen het.",
+      title: "NAP en local schema",
+      body: "Naam, adres, telefoon overal hetzelfde. Machines snappen je locatie. Mensen vinden je belknop zonder puzzelen.",
     },
   ],
-  visual: "seo-serp",
+  visual: "local-maps",
   visualCaption: "Zo ziet het eruit als je wél in de buurt staat.",
-  processTitle: "Lokaal zichtbaar worden",
-  processSteps: processDefault,
-  proofTitle: "Brabant & verder",
+  processTitle: "Lokale SEO: van Maps tot regio-pagina",
+  processSteps: [
+    {
+      title: "Profiel en NAP-scan",
+      body: "GBP, vermeldingen, consistentie, categorieën. Ik zeg wat Google nu al snapt en wat je onzichtbaar houdt in de map pack.",
+    },
+    {
+      title: "Map pack versterken",
+      body: "Compleetheid, foto's, vragen, posts, reviewflow. Kleine signalen stapelen sneller dan alleen 'meer backlinks'.",
+    },
+    {
+      title: "Lokale pagina's bouwen",
+      body: "Landings per regio of kernstad die écht helpen. Interne links vanaf je sterke URL's. Geen dunne stadskopietjes.",
+    },
+    {
+      title: "Meten en bijsturen",
+      body: "Insights, queries, belletjes, richtingen. Maandelijks wat versterken en wat opschonen. Lokale SEO blijft bewegen.",
+    },
+  ],
+  proofTitle: "Apeldoorn als thuisbasis, landelijk bereik",
   proofBody:
-    "Ik werk vanuit de regio en bouw ook landelijke SEO. Lokale vindbaarheid is vaak de snelste winst voor een MKB-bedrijf.",
+    "Ik werk vanuit Apeldoorn en help ook landelijke merken. Voor MKB is lokale vindbaarheid vaak de snelste winst: Maps, reviews en een pagina die je dienst plus stad serieus neemt. Zelfde zorg als bij landelijke SEO, andere intentie.",
   hotTake: {
     label: "Heet take",
     body: "Lokale SEO met alleen je adres in de footer is alsof je een uithangbord in de kelder hangt.",
   },
   faq: [
     {
-      question: "Werken jullie alleen in Brabant?",
-      answer: "Nee. Strategie werkt overal. Ik ken de regio goed, maar pak ook landelijke klanten.",
+      question: "Wat is lokale SEO precies?",
+      answer:
+        "Gevonden worden als iemand jouw dienst plus plaats zoekt, of 'bij mij in de buurt'. Dat speelt in Google Maps, de lokale pack en op je site. GBP, reviews, NAP en regio-pagina's horen bij elkaar.",
     },
     {
-      question: "Hoe snel in Maps?",
-      answer: "Profiel en basis vaak binnen weken merkbaar. Rankings kosten langer, afhankelijk van concurrentie.",
+      question: "Werk je alleen in Brabant of Gelderland?",
+      answer:
+        "Nee. Strategie werkt overal in Nederland. Apeldoorn is thuisbasis. Ik pak lokale trajecten én landelijke merken. Belangrijk is jouw markt, niet alleen mijn postcode.",
     },
     {
-      question: "Kopen jullie nep-reviews?",
-      answer: "Nee. Dat is dom en gevaarlijk. Echte klanten, echte reviews.",
+      question: "Hoe snel sta ik hoger in Maps?",
+      answer:
+        "Profiel en basis zijn vaak binnen weken merkbaar. Stabiele rankings kosten langer, afhankelijk van concurrentie en reviews. Ik zeg vooraf wat realistisch is in jouw stad en branche.",
+    },
+    {
+      question: "Koop je nep-reviews?",
+      answer:
+        "Nee. Dat is dom en riskant. Ik help met een flow om echte klanten op het juiste moment te vragen. Kwaliteit en recentheid tellen harder dan een gekochte berg.",
+    },
+    {
+      question: "Heb ik regio-pagina's nodig?",
+      answer:
+        "Vaak wel als je meerdere steden bedient of als je site nu alleen nationaal praat. Elke pagina moet unieke hulp geven. Dunne kopieën per stad maken Google wantrouwig en mensen ook.",
+    },
+    {
+      question: "Helpt lokale SEO ook als ik landelijk werk?",
+      answer:
+        "Ja, voor vestigingen, servicegebieden of merken met een fysieke anker. Soms combineer je lokale pack-wins met landelijke landings. Ik kies op waar je klanten zoeken.",
+    },
+    {
+      question: "Wat heb je van mij nodig om te starten?",
+      answer:
+        "Toegang tot Google Business Profile, je adresgegevens, diensten en bij voorkeur Search Console. Daarna scan ik profiel en site en geef ik een concrete eerste release-lijst.",
     },
   ],
   ctaTitle: "Lokaal bovenaan?",
-  ctaBody: "Vertel je stad en dienst. Ik check je profiel en site.",
-  relatedSlugs: ["hoger-in-google", "seo-specialist", "google-ads-bureau"],
+  ctaBody: "Vertel je stad en dienst. Ik check je profiel en site en zeg wat eerst moet.",
+  relatedSlugs: ["hoger-in-google", "seo-specialist", "google-ads-bureau", "seo-specialist-apeldoorn"],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
+  layoutProfile: "editorial",
+  lockContent: true,
+  enrichedOverrides: {
+    story: {
+      title: "Lokale SEO wint in de map pack, niet in een blog",
+      paragraphs: [
+        "Je zoekt lokale SEO omdat klanten 'dienst + stad' typen of op Maps kijken wie dichtbij is. Wie daar niet staat, bestaat praktisch niet. Een landelijke homepage alleen lost dat zelden op.",
+        "Ik zet Google Business Profile, NAP, reviews en regio-pagina's in één plan. Zo snapt Google waar je zit, wat je doet, en waarom iemand jou zou kiezen boven de zaak drie straten verder.",
+        "Reviews zijn vertrouwen én een ranking-signaal. Recent en echt wint van oud en gekocht. Ik help met het proces, niet met trucjes die je account kunnen kosten.",
+        "Apeldoorn is thuisbasis. Ik ken lokale trajecten én landelijke builds zoals SkinComplete. Dezelfde standaard: unieke pagina's, schone techniek, meetbare volgende stap.",
+        "Wil je alleen je adres vetgedrukt in de footer? Dat is geen lokale SEO. Wil je belletjes en routeaanvragen uit je eigen regio? Dan bouwen we de signalen die Maps en zoekers serieus nemen.",
+      ],
+    },
+    deepDive: {
+      title: "GBP, reviews en regio-pagina's die samenwerken",
+      paragraphs: [
+        "Google Business Profile is je etalage. Categorieën, diensten, foto's, uren, berichten: incompleet voelt gesloten. Actief voelt open. Ik maak het compleet en houd het bewegend.",
+        "NAP-consistentie klinkt saai en beslist mee. Verschillende adressen of telefoonnummers op site, directories en socials maken Google onzeker. We trekken dat recht.",
+        "Regio-pagina's verdienen unieke inhoud: wat je daar doet, voor wie, met bewijs en een duidelijke CTA. Keyword in de titel is niet genoeg. Hulp is genoeg.",
+        "Interne links vanaf je sterke pagina's naar lokale URL's geven stem. Schema LocalBusiness of Organization helpt machines. Samen met GBP wordt het één verhaal.",
+        "Maandelijks: Insights, queries, reviewtempo, pagina's die stijgen. Lokale SEO is geen eenmalige optimalisatie-knop. Het is onderhoud met richting, net als landelijke SEO.",
+      ],
+    },
+    scenario: {
+      title: "Stel: je concurrent pakt elke Maps-klik",
+      paragraphs: [
+        "Je zoekt je dienst in je stad en ziet hen in de top drie. Meer reviews, betere foto's, soms een sterkere lokale pagina. Jij hebt een profiel dat half leeg is en een site zonder stad.",
+        "Ik zet hun signalen naast de jouwe: GBP, reviews, landings, NAP. Daarna drie acties die het hardst bewegen. Geen belofte van 'volgende week nummer 1', wel een zichtbare inhaalrace.",
+        "Eerste weken: profiel en reviewflow. Daarna lokale pagina live. Zo bouw je inhalen op releases, niet op hoop.",
+      ],
+    },
+  },
 };
 
 export const ZOEKMACHINE_OPTIMALISATIE: SeoLandingPage = {

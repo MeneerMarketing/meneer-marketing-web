@@ -419,7 +419,7 @@ export function enrichSeoLandingPage(page: SeoLandingPage): EnrichedSeoLandingPa
   const kennisbankPool = KENNISBANK_BY_CATEGORY[ready.category];
   const kennisbankSlug = pick(ready.slug, kennisbankPool, "kb");
   const headline = buildDisplayHeadline(ready);
-  const extraFaqs = buildExpandedExtraFaqs(ready);
+  const extraFaqs = ready.lockContent ? [] : buildExpandedExtraFaqs(ready);
   const faq = [...ready.faq, ...extraFaqs].filter(
     (f, i, arr) => arr.findIndex((x) => x.question === f.question) === i,
   );

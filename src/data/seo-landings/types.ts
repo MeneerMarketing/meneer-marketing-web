@@ -130,6 +130,11 @@ export interface SeoLandingPage {
   layoutProfile?: SeoLandingLayoutProfile;
   sceneBreaks?: readonly SeoLandingSceneBreak[];
   skipSections?: readonly SeoLandingSectionId[];
+  /**
+   * Money hubs: behoud handgeschreven pains/FAQ/process/CTA.
+   * Geen hash-variation of pool-extra FAQ's die diepte verdunnen.
+   */
+  lockContent?: boolean;
   enrichedOverrides?: {
     story?: SeoLandingProseOverride;
     deepDive?: SeoLandingProseOverride;
