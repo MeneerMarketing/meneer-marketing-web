@@ -35,7 +35,9 @@ export default function MijnDiba() {
       </summary>
 
       <div className="absolute right-0 z-40 mt-2 w-72 rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white p-5 shadow-[var(--shadow-float)]">
-        <p className="diba-card-title text-[var(--t-strong)]">{MIJN_DIBA.kop}</p>
+        <p className="diba-card-title text-[var(--t-strong)]">
+          {MIJN_DIBA.kop}
+        </p>
         <ul className="mt-3 space-y-2">
           {MIJN_DIBA.regels.map((r) => (
             <li

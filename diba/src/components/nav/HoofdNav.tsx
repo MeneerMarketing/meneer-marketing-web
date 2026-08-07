@@ -63,10 +63,14 @@ const VORM: Record<"opBeeld" | "opWit", Vormgeving> = {
     paneel: "absolute inset-x-3 top-[76px] rounded-[var(--r-lg)]",
   },
   opWit: {
-    wrapper: "sticky top-0 z-40 bg-white",
+    /* Zacht mint, geen wit.
+       Wit op een paginavlak van #fcfdfb is bijna hetzelfde en dat maakt de balk een
+       kleurloze strook. g-050 geeft hem een eigen vlak zonder dat er een lijn onder
+       hoeft, en dat is precies hoe de Figma-homepage haar banden scheidt. */
+    wrapper: "sticky top-0 z-40 bg-[var(--g-050)]",
     logo: "dark",
-    item: "text-[var(--t-body)] hover:bg-[var(--g-050)] hover:text-[var(--t-strong)] focus-visible:outline-[var(--g-700)]",
-    itemOpen: "bg-[var(--g-050)] text-[var(--t-strong)]",
+    item: "text-[var(--t-body)] hover:bg-white hover:text-[var(--t-strong)] focus-visible:outline-[var(--g-700)]",
+    itemOpen: "bg-white text-[var(--t-strong)]",
     knop: "bg-[var(--g-700)] text-white hover:bg-[var(--g-800)] focus-visible:outline-[var(--g-700)]",
     hamburger:
       "border-[var(--g-100)] text-[var(--t-strong)] hover:bg-[var(--g-050)] focus-visible:outline-[var(--g-700)]",
@@ -137,66 +141,74 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
           setOpen(null);
       }}
     >
-      <header className="relative z-10 flex items-center justify-between gap-6 bg-inherit px-4 py-5 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          aria-label="Diba Clinics, naar de homepage"
-          className="shrink-0 rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current"
-        >
-          <DibaLogo variant={v.logo} priority={opBeeld} />
-        </Link>
-
-        {/* Alles rechts: menu en knop in één blok tegen de rand. */}
-        <div className="flex items-center gap-2 lg:gap-6">
-          <nav aria-label="Hoofdnavigatie" className="hidden lg:block">
-            <ul className="flex items-center gap-1">
-              {HOOFDNAV.map((item) => (
-                <li key={item.label}>
-                  <NavKnop
-                    item={item}
-                    vorm={v}
-                    open={open === item.label}
-                    onOpen={() => plan(item.label)}
-                  />
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          {/* Op mobiel staat deze knop er niet. Logo plus knop plus hamburger passen niet
-              op 390px, en elke pagina heeft de afspraakknop verderop nog staan. Twee keer
-              dezelfde primaire actie op één scherm is er één te veel. */}
+      {/* Dezelfde container als elke pagina.
+          Gemeten op 1440 breed stond het logo op 32px terwijl de kruimel en de H1
+          eronder op 108px begonnen: de balk gebruikte px-4/sm:px-6/lg:px-8 en de rest
+          van de site mx-auto max-w-[1800px] px-5/sm:px-9/lg:px-[7.5vw]. Zesenzeventig
+          pixels verschil is precies genoeg om scheef te ogen zonder dat je meteen ziet
+          waarom. Nu vallen logo, kruimel en kop op één lijn. */}
+      <header className="relative z-10 bg-inherit">
+        <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-6 px-5 py-5 sm:px-9 lg:px-[7.5vw]">
           <Link
-            href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
-            className={`diba-label hidden h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:inline-flex ${v.knop}`}
+            href="/"
+            aria-label="Diba Clinics, naar de homepage"
+            className="shrink-0 rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current"
           >
-            Afspraak maken
-            <Pijl />
+            <DibaLogo variant={v.logo} priority={opBeeld} />
           </Link>
 
-          <button
-            type="button"
-            aria-expanded={mobielOpen}
-            aria-label={mobielOpen ? "Menu sluiten" : "Menu openen"}
-            onClick={() => setMobielOpen((b) => !b)}
-            className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-[var(--r-pill)] border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 lg:hidden ${v.hamburger}`}
-          >
-            <svg
-              viewBox="0 0 20 20"
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              aria-hidden="true"
+          {/* Alles rechts: menu en knop in één blok tegen de rand. */}
+          <div className="flex items-center gap-2 lg:gap-6">
+            <nav aria-label="Hoofdnavigatie" className="hidden lg:block">
+              <ul className="flex items-center gap-1">
+                {HOOFDNAV.map((item) => (
+                  <li key={item.label}>
+                    <NavKnop
+                      item={item}
+                      vorm={v}
+                      open={open === item.label}
+                      onOpen={() => plan(item.label)}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* Op mobiel staat deze knop er niet. Logo plus knop plus hamburger passen niet
+              op 390px, en elke pagina heeft de afspraakknop verderop nog staan. Twee keer
+              dezelfde primaire actie op één scherm is er één te veel. */}
+            <Link
+              href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+              className={`diba-label hidden h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:inline-flex ${v.knop}`}
             >
-              {mobielOpen ? (
-                <path d="M5 5l10 10M15 5 5 15" />
-              ) : (
-                <path d="M3 6h14M3 10h14M3 14h14" />
-              )}
-            </svg>
-          </button>
+              Afspraak maken
+              <Pijl />
+            </Link>
+
+            <button
+              type="button"
+              aria-expanded={mobielOpen}
+              aria-label={mobielOpen ? "Menu sluiten" : "Menu openen"}
+              onClick={() => setMobielOpen((b) => !b)}
+              className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-[var(--r-pill)] border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 lg:hidden ${v.hamburger}`}
+            >
+              <svg
+                viewBox="0 0 20 20"
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                aria-hidden="true"
+              >
+                {mobielOpen ? (
+                  <path d="M5 5l10 10M15 5 5 15" />
+                ) : (
+                  <path d="M3 6h14M3 10h14M3 14h14" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
       </header>
 

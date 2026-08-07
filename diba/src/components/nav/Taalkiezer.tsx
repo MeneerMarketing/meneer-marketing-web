@@ -29,7 +29,11 @@ const TALEN: readonly Taal[] = [
 ];
 
 function Vlag({ code }: { code: string }) {
-  const gedeeld = { width: 20, height: 14, className: "shrink-0 rounded-[2px]" } as const;
+  const gedeeld = {
+    width: 20,
+    height: 14,
+    className: "shrink-0 rounded-[2px]",
+  } as const;
 
   if (code === "NL") {
     return (
@@ -116,7 +120,9 @@ export default function Taalkiezer() {
                   <path d="M3 8.5 6.5 12 13 4.5" />
                 </svg>
               ) : (
-                <span className="diba-label ml-auto text-[var(--t-muted)]">Straks</span>
+                <span className="diba-label ml-auto text-[var(--t-muted)]">
+                  Straks
+                </span>
               )}
             </span>
           </li>

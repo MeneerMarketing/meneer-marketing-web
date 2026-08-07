@@ -32,7 +32,11 @@ export default function Topbalk() {
   const aantal = DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL");
 
   return (
-    <div className="flex w-full items-center justify-between gap-4 bg-white px-4 py-2.5 sm:px-6 lg:px-8">
+    /* Dezelfde container als de hoofdbalk en als elke pagina.
+       Deze strook liep op px-4/sm:px-6/lg:px-8 en begon dus tachtig pixels eerder dan
+       het logo eronder. Twee balken boven elkaar die geen van beide op de inhoud
+       uitlijnen valt niet op als fout, maar het is precies waarom een kop scheef oogt. */
+    <div className="mx-auto flex w-full max-w-[1800px] items-center justify-between gap-4 bg-white px-5 py-2.5 sm:px-9 lg:px-[7.5vw]">
       <a
         href={DIBA_SALONIZED_REVIEWS_URL}
         target="_blank"
