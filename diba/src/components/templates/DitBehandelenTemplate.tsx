@@ -95,7 +95,8 @@ export default function DitBehandelenTemplate({
             className="mx-auto"
           />
           <p className={`mx-auto mt-5 max-w-xl ${figmaBody}`}>
-            Start met Behandeling Nul. Gratis, 4 minuten, eerlijk antwoord.
+            Begin met de online intake: vier minuten, kosteloos, en je zit
+            nergens aan vast. De meting in de kliniek volgt daarna.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <Link href="/intake" className={figmaBtnPrimary}>

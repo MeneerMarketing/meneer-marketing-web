@@ -39,8 +39,8 @@ export default function ReviewsTemplate({ proofItems }: ReviewsTemplateProps) {
             <span className="diba-accent">3.883 verhalen.</span>
           </h1>
           <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Live uit Salonized. Filter op onderwerp, lees de highlights of blader door
-            echte quotes van klanten in Hillegersberg.
+            Live uit Salonized. Filter op onderwerp, lees de highlights of
+            blader door echte quotes van klanten in Hillegersberg.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button href="/intake">Start je intake (4 min)</Button>
@@ -72,7 +72,8 @@ export default function ReviewsTemplate({ proofItems }: ReviewsTemplateProps) {
               Je huid verdient hetzelfde niveau van zorg.
             </p>
             <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-              Start met een intake van vier minuten. Wij meten eerst, behandelen daarna.
+              Start met een intake van vier minuten. Wij meten eerst, behandelen
+              daarna.
             </p>
           </div>
           <Button href="/intake">Start je intake (4 min)</Button>

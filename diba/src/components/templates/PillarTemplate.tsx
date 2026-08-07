@@ -110,7 +110,9 @@ export default function PillarTemplate({
           <div>
             <p className={figmaLabel}>Huidprobleem</p>
             <FigmaHeading as="h1" size="hero" text={c.titel} className="mt-4" />
-            <p className={`mt-7 max-w-lg ${figmaBody}`}>{publicCopy(c.herkenning)}</p>
+            <p className={`mt-7 max-w-lg ${figmaBody}`}>
+              {publicCopy(c.herkenning)}
+            </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link href="/intake" className={figmaBtnPrimary}>
                 Start je intake (4 min) ↗
@@ -152,7 +154,12 @@ export default function PillarTemplate({
         <div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-end">
           <div>
             <p className={figmaLabel}>Wat er speelt</p>
-            <FigmaHeading as="h2" size="section" text={c.uitleg.kop} className="mt-4 max-w-md" />
+            <FigmaHeading
+              as="h2"
+              size="section"
+              text={c.uitleg.kop}
+              className="mt-4 max-w-md"
+            />
           </div>
           <div className="flex flex-col gap-4">
             {c.uitleg.alineas.map((alinea) => (
@@ -164,7 +171,10 @@ export default function PillarTemplate({
         </div>
       </section>
 
-      <section className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28" data-reveal>
+      <section
+        className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        data-reveal
+      >
         <div className="mx-auto max-w-[1800px]">
           <p className={figmaLabel}>Eerlijk advies</p>
           <FigmaHeading
@@ -190,7 +200,9 @@ export default function PillarTemplate({
           text={`${c.pad.naam}: van meting naar *resultaat*`}
           className="mt-4 max-w-3xl"
         />
-        <p className={`mt-4 max-w-2xl ${figmaBody}`}>{publicCopy(c.pad.belofte)}</p>
+        <p className={`mt-4 max-w-2xl ${figmaBody}`}>
+          {publicCopy(c.pad.belofte)}
+        </p>
 
         <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {c.pad.stappen.map((stap) => (
@@ -221,7 +233,9 @@ export default function PillarTemplate({
               ) : null}
             </p>
           ) : (
-            <p className={`text-sm ${figmaBody}`}>Prijzen volgen na je intake</p>
+            <p className={`text-sm ${figmaBody}`}>
+              Prijzen volgen na je intake
+            </p>
           )}
           {c.pad.losVanaf !== undefined ? (
             <p className={`text-sm ${figmaBody}`}>
@@ -235,19 +249,30 @@ export default function PillarTemplate({
       </section>
 
       {nazorg ? (
-        <section className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28" data-reveal>
+        <section
+          className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+          data-reveal
+        >
           <div className="mx-auto max-w-[1800px]">
             <p className={figmaLabel}>Nazorg</p>
             <div className="mt-4 [&_h2]:text-3xl [&_h2]:font-medium [&_h2]:tracking-[-.06em] [&_h2]:text-[#17372a]">
-              <NazorgTijdlijn kop="Nazorg na je *behandeling*" momenten={nazorg.momenten} />
+              <NazorgTijdlijn
+                kop="Nazorg na je *behandeling*"
+                momenten={nazorg.momenten}
+              />
             </div>
-            <p className={`mt-6 max-w-2xl ${figmaBody}`}>{publicCopy(nazorg.intro)}</p>
+            <p className={`mt-6 max-w-2xl ${figmaBody}`}>
+              {publicCopy(nazorg.intro)}
+            </p>
           </div>
         </section>
       ) : null}
 
       {c.resultaten.length > 0 ? (
-        <section className={`${figmaInnerContainer} ${figmaSectionTight}`} data-reveal>
+        <section
+          className={`${figmaInnerContainer} ${figmaSectionTight}`}
+          data-reveal
+        >
           <p className={figmaLabel}>Resultaten</p>
           <FigmaHeading
             as="h2"
@@ -257,7 +282,10 @@ export default function PillarTemplate({
           />
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {c.resultaten.map((resultaat) => (
-              <div key={resultaat.before.src} className={`overflow-hidden ${figmaCardRadius}`}>
+              <div
+                key={resultaat.before.src}
+                className={`overflow-hidden ${figmaCardRadius}`}
+              >
                 <BeforeAfterSlider {...resultaat} />
               </div>
             ))}
@@ -266,7 +294,10 @@ export default function PillarTemplate({
       ) : null}
 
       {c.reviews.length > 0 ? (
-        <section className={`${figmaInnerContainer} ${figmaSectionTight}`} data-reveal>
+        <section
+          className={`${figmaInnerContainer} ${figmaSectionTight}`}
+          data-reveal
+        >
           <div className="grid gap-4 md:grid-cols-3">
             {c.reviews.map((review) => (
               <div
@@ -280,8 +311,13 @@ export default function PillarTemplate({
         </section>
       ) : null}
 
-      <section className={`${figmaInnerContainer} ${figmaSectionTight}`} data-reveal>
-        <div className={`${figmaCardRadius} bg-[#286943] px-7 py-10 text-white sm:px-10 sm:py-12`}>
+      <section
+        className={`${figmaInnerContainer} ${figmaSectionTight}`}
+        data-reveal
+      >
+        <div
+          className={`${figmaCardRadius} bg-[#286943] px-7 py-10 text-white sm:px-10 sm:py-12`}
+        >
           <p className="text-[10px] font-medium uppercase tracking-[.16em] text-[#bfe7ac]">
             Vergoeding
           </p>
@@ -304,9 +340,17 @@ export default function PillarTemplate({
       </section>
 
       {c.faq.length > 0 ? (
-        <section className={`${figmaInnerContainer} pb-28 pt-16 lg:pb-36`} data-reveal>
+        <section
+          className={`${figmaInnerContainer} pb-28 pt-16 lg:pb-36`}
+          data-reveal
+        >
           <p className={figmaLabel}>Vragen</p>
-          <FigmaHeading as="h2" size="section" text="Veelgestelde *vragen*" className="mt-4" />
+          <FigmaHeading
+            as="h2"
+            size="section"
+            text="Veelgestelde *vragen*"
+            className="mt-4"
+          />
           <div className="mt-10 max-w-3xl">
             <FigmaFaqList items={c.faq} />
           </div>
