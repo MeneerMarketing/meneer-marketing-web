@@ -2,10 +2,11 @@ import type { KennisbankArticle } from "@/data/kennisbank/types";
 
 export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
   slug: "concurrent-hoger-in-google",
-  title: "Waarom je concurrent hoger staat met een lelijkere site",
+  title: "Concurrent hoger in Google met een lelijkere site: waarom",
   description:
-    "Design is niet ranking. Snelheid, intentie en autoriteit wel. Eerlijke uitleg waarom Google je mooiere site negeert.",
+    "Design rankt niet. Snelheid, zoekintentie en autoriteit wel. Zo haal je een concurrent in die er minder strak uitziet.",
   publishedAt: "2026-07-06",
+  modifiedAt: "2026-08-08",
   readMinutes: 8,
   category: "vindbaarheid",
   keywords: [

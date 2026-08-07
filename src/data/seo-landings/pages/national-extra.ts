@@ -110,9 +110,9 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
   slug: "online-marketing-bureau",
   primaryKeyword: "online marketing bureau",
   category: "seo",
-  metaTitle: "Online marketing bureau · één lijn, geen losse eilandjes | Meneer Marketing",
+  metaTitle: "Online marketing bureau · één aanspreekpunt | Meneer Marketing",
   metaDescription:
-    "Online marketing bureau dat bouwt, vindbaar maakt en campagnes draait. Site, SEO, Google Ads en Meta. Eén team, één plan.",
+    "Online marketing bureau dat bouwt, vindbaar maakt en campagnes draait. Site, SEO, Google Ads en Meta. Eén plan, één aanspreekpunt.",
   keywords: [
     "online marketing bureau",
     "marketing bureau nederland",
@@ -139,21 +139,56 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
     { title: "Campagnes", body: "Google Ads en Meta als het zinvol is." },
   ],
   visual: "content-hub",
-  visualCaption: "Eén bureau. Eén verhaal. Eén lijn.",
-  processTitle: "Zo werk ik als jouw bureau",
+  visualCaption: "Eén plan. Eén verhaal. Eén lijn.",
+  processTitle: "Zo werk ik als jouw marketingmanager",
   processSteps: processDefault,
   proofTitle: "SkinComplete & BestRest",
-  proofBody: "Van shop tot SEO tot ads: ik ken het traject omdat ik het zo heb gebouwd voor echte klanten.",
-  hotTake: { label: "Heet take", body: "Een online marketing bureau dat niet kan bouwen, is een PowerPoint-fabriek." },
+  proofBody:
+    "Van shop tot SEO tot ads: ik ken het traject omdat ik het zo heb gebouwd voor echte klanten.",
+  hotTake: {
+    label: "Heet take",
+    body: "Een online marketing bureau dat niet kan bouwen, is een PowerPoint-fabriek.",
+  },
   faq: [
-    { question: "Vervangen jullie mijn hele team?", answer: "Nee. Ik vul aan waar het moet: strategie, uitvoering, prioriteit." },
-    { question: "Werken jullie langdurig?", answer: "Ja, als het klikt. Maandelijks met duidelijke scope." },
+    {
+      question: "Vervang je mijn hele team?",
+      answer: "Nee. Ik vul aan waar het moet: strategie, uitvoering, prioriteit.",
+    },
+    {
+      question: "Werk je langdurig?",
+      answer: "Ja, als het klikt. Maandelijks met duidelijke scope.",
+    },
   ],
-  ctaTitle: "Eén bureau voor alles?",
+  ctaTitle: "Eén aanspreekpunt voor alles?",
   ctaBody: "Vertel waar je nu zit. Ik schets de slimste volgorde.",
-  relatedSlugs: ["google-ads-bureau", "hoger-in-google", "website-laten-maken", "meta-ads-bureau"],
+  relatedSlugs: [
+    "google-ads-bureau",
+    "seo-specialist",
+    "hoger-in-google",
+    "website-laten-maken",
+    "meta-ads-bureau",
+  ],
   pillarSlug: "strategie",
   pillarLabel: "Strategie",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "Online marketing bureau zonder eilandjes",
+      paragraphs: [
+        "Je zoekt een online marketing bureau omdat SEO, ads en je site nu los van elkaar lopen. Het resultaat: iedereen wijst naar de ander. Ik trek één lijn: eerst fundament, dan verkeer, dan schaal.",
+        "Bij SkinComplete bouwde ik het Shopify B2B-portaal, zette e-mail op, liet SEO eerst groeien en zette daarna ads aan. BestRest kreeg een eigen plan per product. Dat is bureauwerk zonder bureau-gedoe.",
+        "Jij hebt één aanspreekpunt. Strategie en uitvoering zitten bij mij. Dat scheelt overleg en versnelt wat live gaat.",
+      ],
+    },
+    deepDive: {
+      title: "De volgorde die je marge spaart",
+      paragraphs: [
+        "Eerst site en tracking die kloppen. Dan landings die zoekintentie pakken. Daarna Google Ads of Meta als je breakeven haalt. Anders betaal je voor lekken.",
+        "Vindbaarheid in Google én in AI-antwoorden hoort bij hetzelfde plan. Duidelijke expertise-pagina's helpen beide.",
+        "Wil je drie bureaus die elkaar mails sturen? Dat kan elders. Wil je één plan met meetbare stappen? Dan starten we met een eerlijke scan van waar je nu staat.",
+      ],
+    },
+  },
 };
 
 export const SHOPIFY_EXPERT: SeoLandingPage = {

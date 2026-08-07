@@ -4,9 +4,9 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
   slug: "google-ads-bureau",
   primaryKeyword: "google ads bureau",
   category: "google-ads",
-  metaTitle: "Google Ads bureau · campagnes die niet lekken | Meneer Marketing",
+  metaTitle: "Google Ads bureau · Search & Shopping | Meneer Marketing",
   metaDescription:
-    "Google Ads bureau dat eerst checkt of je site converteert. Search, Shopping en Performance Max. Setup die je marge beschermt.",
+    "Google Ads bureau dat eerst je site en tracking checkt. Search, Shopping en Performance Max op koopintentie. Beheer dat je marge beschermt.",
   keywords: [
     "google ads bureau",
     "google ads bureau nederland",
@@ -41,7 +41,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
   deliverables: [
     {
       title: "Search & Shopping",
-      body: "Campagnes op koopintentie. Geen budget naar mensen die gratis willen leren.",
+      body: "Campagnes op koopintentie. Budget naar mensen die willen kopen, niet alleen leren.",
     },
     {
       title: "Landingspagina's die matchen",
@@ -49,7 +49,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
     },
     {
       title: "Tracking dat klopt",
-      body: "Conversies, waarde, calls. Geen optimalisatie op vage 'engagement'.",
+      body: "Conversies, waarde, calls. Optimalisatie op omzet, niet op vage engagement.",
     },
     {
       title: "Wekelijks bijsturen",
@@ -58,11 +58,11 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
   ],
   visual: "google-ads",
   visualCaption: "Zo ziet een account eruit als iemand je geld serieus neemt.",
-  processTitle: "Zo starten we met Google Ads",
+  processTitle: "Zo start ik met Google Ads",
   processSteps: [
     {
       title: "Mag het überhaupt?",
-      body: "We rekenen breakeven door: marge, gemiddelde order, huidige conversie. Soms is eerst SEO of je site slimmer.",
+      body: "Ik reken breakeven door: marge, gemiddelde order, huidige conversie. Soms is eerst SEO of je site slimmer.",
     },
     {
       title: "Fundament leggen",
@@ -79,7 +79,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
   ],
   proofTitle: "BestRest en SkinComplete",
   proofBody:
-    "SkinComplete groeide eerst organisch, daarna pas ads. BestRest kreeg een eigen strategie per product. Geen copy-paste account voor iedereen.",
+    "SkinComplete groeide eerst organisch, daarna pas ads. BestRest kreeg een eigen strategie per product. Elk account een eigen plan.",
   proofCase: "SkinComplete",
   hotTake: {
     label: "Heet take",
@@ -89,7 +89,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Wat kost een Google Ads bureau?",
       answer:
-        "Hangt af van je markt en advertentiebudget. Je krijgt een voorstel na intake: beheer, opzet en wat we eerst aan de site fixen. Geen pakketten op de site die niet bij je passen.",
+        "Hangt af van je markt en advertentiebudget. Na intake krijg je een voorstel: beheer, opzet en wat ik eerst aan de site fix. Passende scope, maatwerk in plaats van een pakket van de plank.",
     },
     {
       question: "Hoe snel zie ik resultaat?",
@@ -97,19 +97,45 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
         "Eerste data binnen dagen. Echt weten of het kantelt duurt vaak twee tot zes weken, afhankelijk van volume en seizoen.",
     },
     {
-      question: "Beheren jullie ook bestaande accounts?",
+      question: "Beheer je ook bestaande accounts?",
       answer:
-        "Ja. Vaak beginnen we met een audit: wat lekt, wat werkt, wat weg mag. Daarna pas budget verplaatsen.",
+        "Ja. Vaak begin ik met een audit: wat lekt, wat werkt, wat weg mag. Daarna pas budget verplaatsen.",
     },
     {
-      question: "Doen jullie ook Meta Ads?",
+      question: "Doe je ook Meta Ads?",
       answer:
-        "Ja, als het past in je plan. Google en Meta onder één strategie, niet twee bureaus die elkaar tegenspreken.",
+        "Ja, als het past in je plan. Google en Meta onder één strategie, zodat twee kanalen elkaar niet tegenspreken.",
     },
   ],
   ctaTitle: "Google Ads zonder gokken?",
-  ctaBody: "Vertel waar je nu zit. Ik kijk eerlijk of ads nu slim is, of dat je eerst ergens anders winst pakt.",
-  relatedSlugs: ["google-ads-bureau", "hoger-in-google", "website-laten-maken", "webshop-laten-maken"],
+  ctaBody:
+    "Vertel waar je nu zit. Ik kijk eerlijk of ads nu slim is, of dat je eerst ergens anders winst pakt.",
+  relatedSlugs: [
+    "meta-ads-bureau",
+    "hoger-in-google",
+    "website-laten-maken",
+    "webshop-laten-maken",
+    "seo-specialist",
+  ],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "Wanneer Google Ads wél werkt",
+      paragraphs: [
+        "Je zoekt een Google Ads bureau omdat je sneller leads of orders wilt. Ads werken pas als je site converteert, je tracking klopt en je weet bij welke CPA of ROAS je nog marge houdt. Anders koop je verkeer voor een lekke emmer.",
+        "Ik start bij breakeven: marge, orderwaarde, huidige conversie. SkinComplete kreeg eerst SEO en een sterke shop. BestRest kreeg een plan per productlijn. Pas daarna ging het volume omhoog.",
+        "Search en Shopping op koopintentie, Performance Max alleen met schone feeds, wekelijks zoektermen schonen. Jij praat met mij over je account, niet met een wisselende accountmanager.",
+      ],
+    },
+    deepDive: {
+      title: "Search, Shopping of Performance Max",
+      paragraphs: [
+        "Search wint bij diensten en hoge intentie: iemand typt wat hij wil kopen. Shopping wint bij producten met scherpe feeds en sterke productpagina's. Performance Max kan schalen, maar alleen als input en conversiewaarde kloppen.",
+        "Broad match zonder plan is een verrassingsbox. Ik hou zoektermen strak tot er bewijs is. Remarketing met grenzen: herkenning, geen stalken.",
+        "Wil je alleen 'meer kliks'? Dan ben ik te duur. Wil je meetbare acquisitie die bij je marge past? Dan beginnen we klein en schalen we op bewijs.",
+      ],
+    },
+  },
 };

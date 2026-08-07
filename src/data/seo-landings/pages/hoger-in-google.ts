@@ -4,9 +4,9 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
   slug: "hoger-in-google",
   primaryKeyword: "hoger in google",
   category: "seo",
-  metaTitle: "Hoger in Google · SEO die blijft staan | Meneer Marketing",
+  metaTitle: "Hoger in Google · landings die ranken | Meneer Marketing",
   metaDescription:
-    "Hoger in Google met landingspagina's, techniek en content die ranken. 12+ jaar SEO. Geen trucjes, wel pagina's die gratis kliks opleveren.",
+    "Hoger in Google met landingspagina's, techniek en content die ranken. 12+ jaar SEO. Pagina's die organisch verkeer en leads opleveren.",
   keywords: [
     "hoger in google",
     "hoger scoren in google",
@@ -88,16 +88,43 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
     },
     {
       question: "Moet ik ook ads doen?",
-      answer: "Niet meteen. Vaak eerst pagina's die ranken en converteren. Ads versnellen wat al werkt.",
+      answer:
+        "Niet meteen. Vaak eerst pagina's die ranken en converteren. Ads versnellen wat al werkt.",
     },
     {
-      question: "Schrijven jullie de teksten?",
-      answer: "Ja. In jouw tone, met jouw expertise verwerkt. Geen AI-prutswerk dat Google negeert.",
+      question: "Schrijf jij de teksten?",
+      answer:
+        "Ja. In jouw tone, met jouw expertise verwerkt. Eigen stem, niet bulk-AI die Google negeert.",
     },
   ],
   ctaTitle: "Klaar om hoger te ranken?",
   ctaBody: "Vertel je markt en waar je nu staat. Ik schets welke pagina's het verschil maken.",
-  relatedSlugs: ["seo-specialist", "content-marketing-vindbaarheid", "website-laten-maken", "google-ads-bureau"],
+  relatedSlugs: [
+    "seo-specialist",
+    "vindbaarheid-ai",
+    "content-marketing-vindbaarheid",
+    "website-laten-maken",
+    "google-ads-bureau",
+  ],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "Hoger in Google begint bij één scherpe pagina",
+      paragraphs: [
+        "Hoger in Google is een probleem-zoekwoord: je wilt zichtbaar zijn waar klanten zoeken. Dat lukt zelden met alleen een blogkalender. Je hebt landings die één intentie pakken, snelle techniek en interne links vanaf je sterke pagina's.",
+        "Bij SkinComplete werden salonvragen omgezet naar pagina's die organisch domineerden. Daarna pas ads. Organisch verkeer is goedkoop als de pagina écht antwoordt.",
+        "Ik combineer SEO specialist-werk met bouwen: copy, code, schema, publicatie. Zo stijgt je positie én je conversie samen.",
+      ],
+    },
+    deepDive: {
+      title: "Van pagina 2 naar zichtbaar",
+      paragraphs: [
+        "Pagina 2 is praktisch onzichtbaar. Long-tail vragen winnen vaak sneller dan de breedste kopterm. Ik kaart die vragen, fix het fundament, en bouw pagina's die Google mag crawlen én mensen willen lezen.",
+        "Techniek houdt rankings vast: Core Web Vitals, indexatie, interne links. Content zonder fundering zakt weer weg na een update.",
+        "Wil je morgen positie 1 op de zwaarste term in je markt? Dat beloof ik niet. Wil je een route die meetbaar omhoog gaat? Die teken ik wel.",
+      ],
+    },
+  },
 };

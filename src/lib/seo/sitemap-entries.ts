@@ -53,10 +53,10 @@ const STATIC_INDEXABLE_PATHS = [
   },
 ] as const;
 
-/** Landings na SEO-consolidatie (cannibal + city prune). */
-const SEO_LANDING_LAST_MOD = new Date("2026-08-02");
-/** Hubs/static: sitemap-hygiëne + hero/conversion updates. */
-const SITE_LAST_MOD = new Date("2026-08-07");
+/** Landings na hub-verdieping + meta/CTR pack. */
+const SEO_LANDING_LAST_MOD = new Date("2026-08-08");
+/** Hubs/static: sitemap-hygiëne + content SEO pack. */
+const SITE_LAST_MOD = new Date("2026-08-08");
 
 const NOINDEX_PATH_SET = new Set<string>(NOINDEX_PATHS);
 
