@@ -33,12 +33,32 @@ export type { FitzpatrickId };
 
 /** Wat iemand wil veranderen, in gewone woorden en niet in vaktermen. */
 export const DOELEN = [
-  { id: "textuur", label: "Oneffen textuur", zin: "Putjes, littekens, een huid die niet glad aanvoelt" },
-  { id: "kleur", label: "Vlekken en kleur", zin: "Bruine plekken, ongelijke tint, pigment" },
-  { id: "roodheid", label: "Roodheid en vaatjes", zin: "Blijvende rode wangen, zichtbare adertjes" },
-  { id: "lijntjes", label: "Fijne lijntjes", zin: "Beginnende rimpeltjes, verslapping" },
+  {
+    id: "textuur",
+    label: "Oneffen textuur",
+    zin: "Putjes, littekens, een huid die niet glad aanvoelt",
+  },
+  {
+    id: "kleur",
+    label: "Vlekken en kleur",
+    zin: "Bruine plekken, ongelijke tint, pigment",
+  },
+  {
+    id: "roodheid",
+    label: "Roodheid en vaatjes",
+    zin: "Blijvende rode wangen, zichtbare adertjes",
+  },
+  {
+    id: "lijntjes",
+    label: "Fijne lijntjes",
+    zin: "Beginnende rimpeltjes, verslapping",
+  },
   { id: "haar", label: "Haargroei", zin: "Ongewenste haren, waar dan ook" },
-  { id: "onbekend", label: "Weet ik niet", zin: "Er is iets, maar wat precies weet ik niet" },
+  {
+    id: "onbekend",
+    label: "Weet ik niet",
+    zin: "Er is iets, maar wat precies weet ik niet",
+  },
 ] as const;
 export type DoelId = (typeof DOELEN)[number]["id"];
 
@@ -46,7 +66,11 @@ export type DoelId = (typeof DOELEN)[number]["id"];
 export const HERSTELRUIMTE = [
   { id: "geen", label: "Geen", zin: "Ik moet er meteen weer normaal uitzien" },
   { id: "dag", label: "Een dag", zin: "Een avond en een nacht rood mag" },
-  { id: "dagen", label: "Een paar dagen", zin: "Ik kan het inplannen rond een weekend" },
+  {
+    id: "dagen",
+    label: "Een paar dagen",
+    zin: "Ik kan het inplannen rond een weekend",
+  },
 ] as const;
 export type HerstelId = (typeof HERSTELRUIMTE)[number]["id"];
 
@@ -66,42 +90,82 @@ export type HerstelId = (typeof HERSTELRUIMTE)[number]["id"];
 export const HUIDCONDITIES = [
   { id: "droog", label: "Droog", zin: "Trekkerig, soms schilferig" },
   { id: "vet", label: "Vet", zin: "Glimt snel, vooral in de T-zone" },
-  { id: "gecombineerd", label: "Gecombineerd", zin: "Vet in het midden, droog aan de zijkant" },
+  {
+    id: "gecombineerd",
+    label: "Gecombineerd",
+    zin: "Vet in het midden, droog aan de zijkant",
+  },
   { id: "normaal", label: "In balans", zin: "Geen van beide echt" },
 ] as const;
 export type ConditieId = (typeof HUIDCONDITIES)[number]["id"];
 
 export const GEVOELIGHEID = [
   { id: "laag", label: "Verdraagt veel", zin: "Ik kan bijna alles gebruiken" },
-  { id: "gemiddeld", label: "Soms gevoelig", zin: "Bij sterke producten wordt het rood" },
-  { id: "hoog", label: "Snel geïrriteerd", zin: "Veel producten prikken of branden" },
+  {
+    id: "gemiddeld",
+    label: "Soms gevoelig",
+    zin: "Bij sterke producten wordt het rood",
+  },
+  {
+    id: "hoog",
+    label: "Snel geïrriteerd",
+    zin: "Veel producten prikken of branden",
+  },
 ] as const;
 export type GevoeligheidId = (typeof GEVOELIGHEID)[number]["id"];
 
 export const GEBRUIK = [
-  { id: "retinol", label: "Retinol of vitamine A", zin: "Moet je tijdig pauzeren" },
+  {
+    id: "retinol",
+    label: "Retinol of vitamine A",
+    zin: "Moet je tijdig pauzeren",
+  },
   { id: "zuren", label: "Zuren", zin: "Glycolzuur, salicylzuur, fruitzuren" },
   { id: "benzoyl", label: "Benzoylperoxide", zin: "Vaak bij acne" },
   { id: "vitamine-c", label: "Vitamine C", zin: "Meestal geen bezwaar" },
-  { id: "niets", label: "Niets bijzonders", zin: "Alleen reinigen en hydrateren" },
+  {
+    id: "niets",
+    label: "Niets bijzonders",
+    zin: "Alleen reinigen en hydrateren",
+  },
 ] as const;
 export type GebruikId = (typeof GEBRUIK)[number]["id"];
 
 export const SITUATIE = [
   { id: "zwanger", label: "Ik ben zwanger", zin: "" },
   { id: "borstvoeding", label: "Ik geef borstvoeding", zin: "" },
-  { id: "gebruind", label: "Mijn huid is nu gebruind", zin: "Zon of zonnebank" },
-  { id: "zon-op-komst", label: "Binnenkort veel zon", zin: "Vakantie of wintersport" },
+  {
+    id: "gebruind",
+    label: "Mijn huid is nu gebruind",
+    zin: "Zon of zonnebank",
+  },
+  {
+    id: "zon-op-komst",
+    label: "Binnenkort veel zon",
+    zin: "Vakantie of wintersport",
+  },
   { id: "geen", label: "Niets van dit alles", zin: "" },
 ] as const;
 export type SituatieId = (typeof SITUATIE)[number]["id"];
 
 export const VOORGESCHIEDENIS = [
-  { id: "isotretinoine", label: "Isotretinoïne gebruikt", zin: "Nu of in het afgelopen jaar" },
-  { id: "keloid", label: "Neiging tot keloïd", zin: "Littekens die dik worden en doorgroeien" },
+  {
+    id: "isotretinoine",
+    label: "Isotretinoïne gebruikt",
+    zin: "Nu of in het afgelopen jaar",
+  },
+  {
+    id: "keloid",
+    label: "Neiging tot keloïd",
+    zin: "Littekens die dik worden en doorgroeien",
+  },
   { id: "herpes", label: "Terugkerende koortslip", zin: "" },
   { id: "eerder-laser", label: "Eerder laser of IPL gehad", zin: "" },
-  { id: "lichtgevoelige-medicatie", label: "Lichtgevoelige medicatie", zin: "Sommige antibiotica en kruidenmiddelen" },
+  {
+    id: "lichtgevoelige-medicatie",
+    label: "Lichtgevoelige medicatie",
+    zin: "Sommige antibiotica en kruidenmiddelen",
+  },
   { id: "geen", label: "Niets van dit alles", zin: "" },
 ] as const;
 export type VoorgeschiedenisId = (typeof VOORGESCHIEDENIS)[number]["id"];
@@ -194,7 +258,9 @@ export function compleetheid(p: Huidprofiel): number {
 export function aandachtspunten(
   s: Huidscan,
 ): readonly (typeof SCAN_ASSEN)[number][] {
-  return [...SCAN_ASSEN].sort((a, b) => s.assen[b.id] - s.assen[a.id]).slice(0, 2);
+  return [...SCAN_ASSEN]
+    .sort((a, b) => s.assen[b.id] - s.assen[a.id])
+    .slice(0, 2);
 }
 
 /** "3 dagen geleden", "vorige maand". Zonder bibliotheek en zonder valse precisie. */
@@ -292,14 +358,28 @@ const BLOKKADES: readonly {
   },
   {
     wanneer: (p) => p.situatie.includes("zon-op-komst"),
-    slugs: ["peelings", "cosmelan-dermamelan", "laserontharing", "nordlys-ipl", "fotona", "happy-intim"],
+    slugs: [
+      "peelings",
+      "cosmelan-dermamelan",
+      "laserontharing",
+      "nordlys-ipl",
+      "fotona",
+      "happy-intim",
+    ],
     reden:
       "Niet vlak voor veel zon. De huid is daarna kwetsbaar, en pigment komt juist terug van wat je dan doet.",
   },
   {
     wanneer: (p) =>
       p.situatie.includes("zwanger") || p.situatie.includes("borstvoeding"),
-    slugs: ["peelings", "cosmelan-dermamelan", "skinboosters", "xl-hair", "happy-intim", "acne-traject"],
+    slugs: [
+      "peelings",
+      "cosmelan-dermamelan",
+      "skinboosters",
+      "xl-hair",
+      "happy-intim",
+      "acne-traject",
+    ],
     reden:
       "Vervalt tijdens zwangerschap en borstvoeding. Dermaplaning en een rustige gezichtsbehandeling kunnen meestal wel.",
   },
@@ -324,7 +404,8 @@ const LET_OP: readonly {
   readonly tekst: string;
 }[] = [
   {
-    wanneer: (p) => p.gebruikt.includes("retinol") || p.gebruikt.includes("zuren"),
+    wanneer: (p) =>
+      p.gebruikt.includes("retinol") || p.gebruikt.includes("zuren"),
     slugs: ["peelings", "skinpen", "dermapen-4", "fotona", "happy-intim"],
     tekst:
       "Je gebruikt retinol of zuren. Die moet je tijdig pauzeren; hoe lang hoor je in de intake.",
@@ -387,11 +468,13 @@ export type Match = {
  */
 export function maakMatches(p: Huidprofiel): readonly Match[] {
   return BEHANDELINGEN.map((b): Match => {
-    const letOp = LET_OP.filter((l) => l.wanneer(p) && l.slugs.includes(b.slug)).map(
-      (l) => l.tekst,
-    );
+    const letOp = LET_OP.filter(
+      (l) => l.wanneer(p) && l.slugs.includes(b.slug),
+    ).map((l) => l.tekst);
 
-    const blok = BLOKKADES.find((x) => x.wanneer(p) && x.slugs.includes(b.slug));
+    const blok = BLOKKADES.find(
+      (x) => x.wanneer(p) && x.slugs.includes(b.slug),
+    );
     if (blok) {
       return { behandeling: b, oordeel: "past-niet", reden: blok.reden, letOp };
     }
@@ -402,9 +485,14 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
       const nodig = RUIMTE_VOLGORDE.indexOf(vraagt);
       if (nodig > ruimte) {
         const gaf =
-          HERSTELRUIMTE.find((h) => h.id === p.herstel)?.label.toLowerCase() ?? "geen";
+          HERSTELRUIMTE.find((h) => h.id === p.herstel)?.label.toLowerCase() ??
+          "geen";
         const moet =
-          vraagt === "dagen" ? "een paar dagen" : vraagt === "dag" ? "een dag" : "niets";
+          vraagt === "dagen"
+            ? "een paar dagen"
+            : vraagt === "dag"
+              ? "een dag"
+              : "niets";
         return {
           behandeling: b,
           oordeel: "past-niet",
@@ -420,7 +508,9 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
       const zijdelings = p.doelen.filter((d) => doelen[d] === "deels");
 
       if (raak.length > 0) {
-        const namen = raak.map((d) => DOELEN.find((x) => x.id === d)!.label.toLowerCase());
+        const namen = raak.map((d) =>
+          DOELEN.find((x) => x.id === d)!.label.toLowerCase(),
+        );
         return {
           behandeling: b,
           oordeel: "past",
@@ -429,8 +519,8 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
         };
       }
       if (zijdelings.length > 0) {
-        const namen = zijdelings.map(
-          (d) => DOELEN.find((x) => x.id === d)!.label.toLowerCase(),
+        const namen = zijdelings.map((d) =>
+          DOELEN.find((x) => x.id === d)!.label.toLowerCase(),
         );
         return {
           behandeling: b,
@@ -442,7 +532,8 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
       return {
         behandeling: b,
         oordeel: "past-niet",
-        reden: "Werkt niet op wat jij wil veranderen. Niet minder goed, gewoon iets anders.",
+        reden:
+          "Werkt niet op wat jij wil veranderen. Niet minder goed, gewoon iets anders.",
         letOp,
       };
     }
@@ -473,6 +564,172 @@ export function meldPunten(p: Huidprofiel): readonly string[] {
  * De kanttekening bij het huidtype. Geen enkel type sluit iets uit; wat het wel doet is de
  * instellingen bepalen. [MEDISCHE-CHECK-ROJDA]
  */
+/* ══ De uitkomst ══════════════════════════════════════════════════════════ */
+
+/**
+ * Alleen de eerste letter klein.
+ *
+ * Met een gewone toLowerCase() werd "Vitamine C" tot "vitamine c" en "Retinol of
+ * vitamine A" tot "vitamine a". Die hoofdletters zijn geen opmaak maar de naam van de
+ * stof, en een kliniek die die verkeerd schrijft leest als een kliniek die niet oplet.
+ */
+function kleinBegin(s: string): string {
+  return s.charAt(0).toLowerCase() + s.slice(1);
+}
+
+/** "a, b en c": een opsomming die als Nederlands leest en niet als een array. */
+function opsomming(delen: readonly string[]): string {
+  if (delen.length === 0) return "";
+  if (delen.length === 1) return delen[0];
+  return delen.slice(0, -1).join(", ") + " en " + delen[delen.length - 1];
+}
+
+function labelVan<T extends { readonly id: string; readonly label: string }>(
+  tabel: readonly T[],
+  id: string | null,
+): string | null {
+  if (!id) return null;
+  return tabel.find((r) => r.id === id)?.label ?? null;
+}
+
+/**
+ * Het profiel teruggegeven in gewone zinnen.
+ *
+ * WAAROM DIT ER IS.
+ *
+ * De uitkomst gaf eerder twee lijstjes terug: wat past en wat je moet melden. Allebei
+ * bruikbaar, geen van beide herkenbaar. Wie acht vragen invult wil eerst horen dat er
+ * geluisterd is, en dat kan alleen als je het teruggeeft in de taal waarin het gevraagd is.
+ *
+ * Er staat niets in wat je niet zelf hebt ingevuld. Geen conclusie, geen inschatting, geen
+ * "waarschijnlijk". Dat is precies de scheiding waar deze pagina op rust: dit is wat jij
+ * vertelt, de meting komt daarna.
+ */
+export function profielSamenvatting(p: Huidprofiel): readonly string[] {
+  const zinnen: string[] = [];
+
+  const doelen = p.doelen
+    .filter((d) => d !== "onbekend")
+    .map((d) => {
+      const l = DOELEN.find((x) => x.id === d)?.label;
+      return l ? kleinBegin(l) : undefined;
+    })
+    .filter((l): l is string => Boolean(l));
+
+  if (p.doelen.includes("onbekend") && doelen.length === 0) {
+    zinnen.push(
+      "Je weet dat er iets is, maar niet precies wat. Dat is een prima startpunt: uitzoeken wát het is, is het werk van de meting.",
+    );
+  } else if (doelen.length > 0) {
+    zinnen.push(`Je wil iets doen aan ${opsomming(doelen)}.`);
+  }
+
+  const conditie = labelVan(HUIDCONDITIES, p.conditie);
+  const gevoelig = labelVan(GEVOELIGHEID, p.gevoeligheid);
+  if (conditie && gevoelig) {
+    zinnen.push(
+      `Je huid is ${kleinBegin(conditie)} en ${kleinBegin(gevoelig)}.`,
+    );
+  } else if (conditie) {
+    zinnen.push(`Je huid is ${kleinBegin(conditie)}.`);
+  } else if (gevoelig) {
+    zinnen.push(`Je huid ${kleinBegin(gevoelig)}.`);
+  }
+
+  if (p.huidtype) {
+    zinnen.push(`Je schat jezelf in op Fitzpatrick ${p.huidtype}.`);
+  }
+
+  /* Hersteltijd staat er apart, want die stuurt meer weg dan mensen verwachten. */
+  if (p.herstel === "geen") {
+    zinnen.push(
+      "Je hebt geen hersteltijd: je moet er meteen weer normaal uitzien. Dat sluit een deel van de lijst uit, en dat is beter dan erachter komen op de dag zelf.",
+    );
+  } else if (p.herstel === "dag") {
+    zinnen.push("Je kunt een avond en een nacht rood zijn, langer niet.");
+  } else if (p.herstel === "dagen") {
+    zinnen.push(
+      "Je kunt een paar dagen herstel inplannen. Dat opent de zwaardere behandelingen.",
+    );
+  }
+
+  const gebruikt = p.gebruikt
+    .filter((g) => g !== "niets")
+    .map((g) => {
+      const l = GEBRUIK.find((x) => x.id === g)?.label;
+      return l ? kleinBegin(l) : undefined;
+    })
+    .filter((l): l is string => Boolean(l));
+  if (gebruikt.length > 0) {
+    zinnen.push(`Je gebruikt nu ${opsomming(gebruikt)}.`);
+  } else if (p.gebruikt.includes("niets")) {
+    zinnen.push("Je gebruikt niets bijzonders op je huid.");
+  }
+
+  return zinnen;
+}
+
+/**
+ * Wat er met deze antwoorden niet te weten valt, en met een meting wel.
+ *
+ * DIT IS DE KERN VAN DE PAGINA EN NIET EEN VERKOOPARGUMENT.
+ *
+ * "Wij gokken niet, wij meten" is een merkregel die alleen iets waard is als hij ergens
+ * kosten heeft. Hier heeft hij die: deze pagina geeft je acht antwoorden terug en zegt er
+ * daarna bij wat ze níet kunnen beslissen. Dat is oncomfortabel en het is waar, en het is
+ * ook precies waarom een meting zin heeft.
+ *
+ * De punten zijn gekoppeld aan wat iemand zelf heeft ingevuld. Een algemene lijst zou hier
+ * hetzelfde zeggen tegen iedereen, en dan is het weer wél een verkooppraatje.
+ *
+ * [MEDISCHE-CHECK-ROJDA] elke regel hieronder.
+ */
+export function nogNietGemeten(p: Huidprofiel): readonly string[] {
+  const punten: string[] = [];
+
+  if (p.doelen.includes("kleur")) {
+    punten.push(
+      "Of je pigment oppervlakkig ligt of dieper in de huid zit. Dat verschil bepaalt of een peeling genoeg is of dat er laser aan te pas moet, en het is met het blote oog niet te zien.",
+    );
+  }
+  if (p.doelen.includes("textuur")) {
+    punten.push(
+      "Hoe diep de oneffenheid zit. Blijft het bij de bovenlaag, dan is de aanpak een andere dan wanneer het bindweefsel eronder is aangedaan.",
+    );
+  }
+  if (p.doelen.includes("roodheid")) {
+    punten.push(
+      "Of de roodheid van vaatjes komt of van een barrière die van slag is. Dat lijkt op elkaar en vraagt het tegenovergestelde.",
+    );
+  }
+  if (p.doelen.includes("lijntjes")) {
+    punten.push(
+      "Hoeveel stevigheid er onder de lijntjes nog zit. Verslapping vraagt iets anders dan lijntjes in de bovenlaag, en dat onderscheid maak je niet in de spiegel.",
+    );
+  }
+  if (p.doelen.includes("haar")) {
+    punten.push(
+      "Hoe je huid op de eerste puls reageert en in welke groeifase je haren zitten. Dat bepaalt de instelling en het interval van je reeks.",
+    );
+  }
+  if (p.doelen.includes("onbekend") || p.doelen.length === 0) {
+    punten.push(
+      "Wat er eigenlijk aan de hand is. Je hoeft dat niet zelf te weten voordat je komt; uitzoeken is het werk.",
+    );
+  }
+
+  /* Twee dingen gelden voor iedereen, en die staan achteraan zodat het persoonlijke
+     stuk vooropgaat. */
+  punten.push(
+    "Je vochtwaarde en de staat van je barrière, gemeten in plaats van gevoeld. Een huid die trekkerig aanvoelt is niet altijd een droge huid.",
+  );
+  punten.push(
+    "Een nulpunt. Zonder meting van vandaag is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.",
+  );
+
+  return punten;
+}
+
 export function huidtypeKanttekening(t: FitzpatrickId | null): string | null {
   if (!t) return null;
   if (t === "V" || t === "VI") {
