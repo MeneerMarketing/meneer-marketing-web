@@ -4,9 +4,9 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   slug: "website-laten-maken",
   primaryKeyword: "website laten maken",
   category: "website",
-  metaTitle: "Website laten maken · from scratch, geen template | Meneer Marketing",
+  metaTitle: "Website laten maken · Next.js custom build | Meneer Marketing",
   metaDescription:
-    "Website laten maken from scratch in Next.js. Snel, SEO-klaar en gebouwd om te converteren. Geen page builder die vastloopt bij groei.",
+    "Website laten maken from scratch in Next.js. Snel, SEO-klaar en gebouwd om te converteren. Eigen code, klaar voor ads en groei.",
   keywords: [
     "website laten maken",
     "website laten bouwen",
@@ -79,7 +79,7 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   ],
   proofTitle: "Gebouwd om te groeien",
   proofBody:
-    "MeneerMarketing.nl zelf, klantportalen en shops: alles custom. Geen thema dat 10.000 anderen ook hebben.",
+    "MeneerMarketing.nl zelf, klantportalen en shops: alles custom. Eigen code, niet hetzelfde thema als tienduizend anderen.",
   hotTake: {
     label: "Heet take",
     body: "Een website laten maken via een template is als een maatpak kopen in de sale. Het past nooit echt.",
@@ -88,20 +88,47 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
     {
       question: "WordPress of custom?",
       answer:
-        "Ik bouw custom. WordPress alleen als migratie vanaf een oude site. Geen nieuwe WordPress-projecten.",
+        "Ik bouw custom in Next.js. WordPress alleen als migratie vanaf een oude site. Nieuwe WordPress-projecten doe ik niet.",
     },
     {
       question: "Hoe lang duurt een website?",
-      answer: "Hangt af van scope. Een sterke bedrijfssite vaak enkele weken. Webshop of portaal langer. Je krijgt een eerlijke planning.",
+      answer:
+        "Hangt af van scope. Een sterke bedrijfssite vaak enkele weken. Webshop of portaal langer. Je krijgt een eerlijke planning.",
     },
     {
-      question: "Kunnen jullie ook SEO en ads?",
-      answer: "Ja, onder één dak. Site bouwen en daarna vindbaarheid en campagnes. Eén team, één lijn.",
+      question: "Regel jij ook SEO en ads?",
+      answer:
+        "Ja, onder één dak. Site bouwen en daarna vindbaarheid en campagnes. Eén aanspreekpunt, één lijn.",
     },
   ],
   ctaTitle: "Site die echt werkt?",
-  ctaBody: "Vertel wat je nodig hebt. Geen verkooppraat, wel een eerlijk plan en prijsindicatie.",
-  relatedSlugs: ["webshop-laten-maken", "hoger-in-google", "google-ads-bureau", "b2b-portaal-bouwen"],
+  ctaBody: "Vertel wat je nodig hebt. Eerlijk plan en prijsindicatie, zonder verkooppraat.",
+  relatedSlugs: [
+    "webshop-laten-maken",
+    "hoger-in-google",
+    "google-ads-bureau",
+    "b2b-portaal-bouwen",
+    "seo-specialist",
+  ],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "Website laten maken die verkoopt om 23:00",
+      paragraphs: [
+        "Je zoekt iemand voor een website laten maken. Het verschil zit niet in nog een mooi ontwerp. Het zit in snelheid, duidelijke CTA's, SEO-fundament en een structuur die ads aankan zonder dat alles vastloopt.",
+        "Ik bouw from scratch in Next.js: eigen code, semantische HTML, schema, Core Web Vitals in de basis. MeneerMarketing.nl zelf is zo gebouwd. Hetzelfde niveau wil ik voor jouw merk.",
+        "Template voelt goedkoop tot je wilt schalen. Dan remt elke page builder. Custom betekent: jij bepaalt de roadmap, ik publiceer mee.",
+      ],
+    },
+    deepDive: {
+      title: "Wat je krijgt voordat we live gaan",
+      paragraphs: [
+        "Doel en doelgroep scherp, sitemap, copy die verkoopt, daarna bouw en QA op mobiel. Tracking staat vóór launch. Zo meet je vanaf dag één wat werkt.",
+        "Na live: indexatie, eerste landings voor zoek, en ruimte voor campagnes. Zo blijft je site een verkoper, niet een digitaal visitekaartje.",
+        "Wil je alleen een thema met je logo? Dan is er goedkopere hulp. Wil je een fundament voor SEO en ads? Dan bouwen we custom.",
+      ],
+    },
+  },
 };

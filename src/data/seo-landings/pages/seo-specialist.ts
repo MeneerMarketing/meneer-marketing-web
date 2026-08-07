@@ -4,9 +4,9 @@ export const SEO_SPECIALIST: SeoLandingPage = {
   slug: "seo-specialist",
   primaryKeyword: "seo specialist",
   category: "seo",
-  metaTitle: "SEO specialist · 12+ jaar Google-rankings | Meneer Marketing",
+  metaTitle: "SEO specialist inhuren · bouw + rankings | Meneer Marketing",
   metaDescription:
-    "SEO specialist met 12+ jaar ervaring. Landingspagina's, techniek en content die ranken. Rapporten met uitvoering erbij.",
+    "SEO specialist die landingspagina's bouwt, techniek fixt en content schrijft. 12+ jaar Google. Rapport met uitvoering erbij, vanuit Apeldoorn.",
   keywords: [
     "seo specialist",
     "seo specialist inhuren",
@@ -21,19 +21,19 @@ export const SEO_SPECIALIST: SeoLandingPage = {
   headline: "SEO specialist die ook",
   headlineAccent: "de pagina bouwt.",
   subheadline:
-    "Veel SEO-specialisten schrijven advies. Ik schrijf, bouw en fix. 12 jaar Google, honderden pagina's, en nog steeds geen trucjes uit 2014.",
+    "Veel SEO-specialisten leveren advies. Ik schrijf, bouw en publiceer. Twaalf jaar Google, honderden pagina's, en nog steeds hands-on in de code.",
   pains: [
     {
       title: "Advies zonder uitvoering",
-      body: "PDF met 40 tips. Jij zoekt een developer. Niets gebeurt.",
+      body: "PDF met 40 tips. Jij zoekt een developer. Er gebeurt niks.",
     },
     {
       title: "Generieke maandpakketten",
-      body: "Vier blogs, wat links, klaar. Geen idee of het jouw markt raakt.",
+      body: "Vier blogs, wat links, klaar. Onduidelijk of het jouw markt raakt.",
     },
     {
-      title: "Geen businesszin",
-      body: "Rankings op termen die niemand koopt. Mooie grafiek, lege pipeline.",
+      title: "Rankings zonder businesszin",
+      body: "Mooie posities op termen die niemand koopt. Grafiek omhoog, pipeline leeg.",
     },
   ],
   deliverables: [
@@ -51,7 +51,7 @@ export const SEO_SPECIALIST: SeoLandingPage = {
     },
     {
       title: "Rapportage die je snapt",
-      body: "Rankings, verkeer, leads. Geen jargonwall zonder actie.",
+      body: "Rankings, verkeer, leads. Acties, niet alleen jargon.",
     },
   ],
   visual: "seo-serp",
@@ -68,11 +68,11 @@ export const SEO_SPECIALIST: SeoLandingPage = {
     },
     {
       title: "Bouwen & publiceren",
-      body: "Ik voer uit. Geen wachten op derden voor elke wijziging.",
+      body: "Ik voer uit. Jij wacht niet op derden voor elke wijziging.",
     },
     {
       title: "Bijsturen",
-      body: "Google update? Concurrent beweegt? We passen aan op data.",
+      body: "Google update? Concurrent beweegt? Ik pas aan op data.",
     },
   ],
   proofTitle: "12 jaar, nog steeds hands-on",
@@ -86,20 +86,52 @@ export const SEO_SPECIALIST: SeoLandingPage = {
     {
       question: "Wat is het verschil met een SEO bureau?",
       answer:
-        "Bij mij krijg je specialist én uitvoerder. Geen accountmanager tussen jou en het werk.",
+        "Bij mij praat je met de specialist die ook uitvoert. Jij belt mij, niet een accountmanager.",
     },
     {
-      question: "Werken jullie met contracten?",
-      answer: "Maandelijks traject met duidelijke scope. Geen jaarloket zonder resultaat.",
+      question: "Werk je met vaste contracten?",
+      answer:
+        "Maandelijks traject met duidelijke scope. Doorlopen zolang het resultaat oplevert.",
     },
     {
-      question: "Doen jullie linkbuilding?",
-      answer: "Alleen als het past en natuurlijk voelt. Content en autoriteit eerst, geen spamnetwerken.",
+      question: "Doe je ook linkbuilding?",
+      answer:
+        "Alleen als het past en natuurlijk voelt. Content en autoriteit eerst, spamnetwerken blijven uit.",
+    },
+    {
+      question: "Wat doet een SEO specialist concreet in de eerste maand?",
+      answer:
+        "Baseline van rankings en techniek, prioriteitenlijst, eerste fixes live, en minstens één pagina die een koopvraag beter beantwoordt dan je concurrent.",
     },
   ],
   ctaTitle: "SEO zonder tussenlaag?",
   ctaBody: "Vertel je markt. Ik zeg wat ik zou doen en wat het ongeveer kost.",
-  relatedSlugs: ["hoger-in-google", "content-marketing-vindbaarheid", "website-laten-maken", "google-ads-bureau"],
+  relatedSlugs: [
+    "hoger-in-google",
+    "vindbaarheid-ai",
+    "lokale-seo",
+    "website-laten-maken",
+    "google-ads-bureau",
+  ],
   pillarSlug: "vindbaarheid",
   pillarLabel: "Vindbaarheid",
+  layoutProfile: "editorial",
+  enrichedOverrides: {
+    story: {
+      title: "Wat een SEO specialist écht moet leveren",
+      paragraphs: [
+        "Je zoekt een SEO specialist omdat je hoger wilt ranken. Het verschil zit niet in nog een keywordlijst. Het zit in pagina's die één zoekvraag beter beantwoorden dan de top 10, technisch snel genoeg om te blijven staan, en gekoppeld aan wat je verkoopt.",
+        "Ik schrijf de copy, bouw de landingspagina, zet schema erop en publiceer. SkinComplete groeide eerst organisch op salonvragen die mensen echt stellen. Pas daarna gingen ads hard. Die volgorde spaart budget.",
+        "Twaalf jaar Google betekent: core updates meemaken, lokale mkb én shops. Nog steeds zelf in Search Console en in de code. Dat is mijn definitie van specialist.",
+      ],
+    },
+    deepDive: {
+      title: "Zo pak ik SEO aan (kort en eerlijk)",
+      paragraphs: [
+        "Eerst intentie: welke vragen leiden tot leads of orders? Daarna techniek: indexatie, snelheid, interne links. Dan content: één sterke pagina per intentie, met een antwoordblok dat Google én ChatGPT kunnen citeren.",
+        "Lokale SEO en AI-vindbaarheid horen in hetzelfde plan. GBP, landings en duidelijke expertise versterken elkaar. Maandelijks sturen we bij op queries die stijgen of dalen.",
+        "Wil je alleen een rapport? Dan ben ik de verkeerde. Wil je pagina's live en meetbaar verkeer? Dan praten we verder.",
+      ],
+    },
+  },
 };

@@ -412,7 +412,7 @@ export function webPageJsonLd(input: {
 }
 
 /** Default freshness voor SEO-landings (align met sitemap SEO_LANDING_LAST_MOD). */
-const SEO_LANDING_SCHEMA_MODIFIED = "2026-08-02";
+const SEO_LANDING_SCHEMA_MODIFIED = "2026-08-08";
 
 export function seoLandingPageGraph(input: {
   name: string;

@@ -63,10 +63,11 @@ export const kennisbankArticles: KennisbankArticle[] = [
   AI_CONTENT_BULK_SEO,
   MARKETINGBUDGET_VOLGORDE,  {
     slug: "ai-zoek-vindbaarheid-chatgpt",
-    title: "Gevonden worden in ChatGPT: zo werkt vindbaarheid in AI-antwoorden",
+    title: "Vindbaarheid in AI-antwoorden: gevonden worden in ChatGPT & Gemini",
     description:
-      "Steeds meer klanten vragen ChatGPT of Gemini om advies in plaats van Google. Zo zorg je dat jouw bedrijf in die antwoorden staat.",
+      "Klanten vragen ChatGPT en Gemini om advies. Zo bouw je pagina's die AI citeert: heldere antwoorden, schema en consistente expertise.",
     publishedAt: "2026-06-18",
+    modifiedAt: "2026-08-08",
     readMinutes: 7,
     category: "vindbaarheid",
     keywords: [
@@ -121,10 +122,11 @@ export const kennisbankArticles: KennisbankArticle[] = [
   },
   {
     slug: "seo-eerst-dan-ads",
-    title: "Waarom SkinComplete eerst organisch scoorde en toen pas adverteerde",
+    title: "SEO eerst, dan ads: de SkinComplete-volgorde die budget spaart",
     description:
-      "Advertenties op een zwak fundament zijn dure pleisters. De volgorde die wél werkt, uitgelegd aan de hand van een echte webshop.",
+      "Ads op een zwak fundament zijn dure pleisters. Case: eerst organisch scoren, daarna Google Ads opschalen. Zo doe je de volgorde goed.",
     publishedAt: "2026-05-27",
+    modifiedAt: "2026-08-08",
     readMinutes: 6,
     category: "strategie",
     keywords: [

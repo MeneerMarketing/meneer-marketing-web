@@ -2,10 +2,11 @@ import type { KennisbankArticle } from "@/data/kennisbank/types";
 
 export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
   slug: "google-reviews-lokale-seo",
-  title: "Drie reviews uit 2019 en Google denkt dat je dicht bent",
+  title: "Google reviews & lokale SEO: zo blijf je zichtbaar op Maps",
   description:
-    "Google reviews en lokale SEO: waarom recentie telt, hoe je antwoordt op kritiek en wat je GBP echt levend houdt.",
+    "Recente reviews, snelle antwoorden en een levend GBP. Praktische lokale SEO die 'bij mij in de buurt' wint.",
   publishedAt: "2026-07-06",
+  modifiedAt: "2026-08-08",
   readMinutes: 7,
   category: "vindbaarheid",
   keywords: [

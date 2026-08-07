@@ -2,10 +2,11 @@ import type { KennisbankArticle } from "@/data/kennisbank/types";
 
 export const AI_CONTENT_BULK_SEO: KennisbankArticle = {
   slug: "ai-content-bulk-onzichtbaar",
-  title: "AI-content bulk uploaden: het snelste pad naar onzichtbaarheid",
+  title: "AI-content voor SEO: slim gebruiken zonder bulk-ruis",
   description:
-    "ChatGPT kan 50 blogs in een uur schrijven. Google en AI-antwoorden negeren je dan net zo snel. Zo gebruik je AI wél slim voor vindbaarheid.",
+    "Vijftig ChatGPT-blogs in een uur klinkt productief. Google en AI-antwoorden negeren gemiddelde tekst. Zo gebruik je AI wél voor vindbaarheid.",
   publishedAt: "2026-07-01",
+  modifiedAt: "2026-08-08",
   readMinutes: 9,
   category: "vindbaarheid",
   keywords: [
