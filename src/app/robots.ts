@@ -38,6 +38,7 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: `${siteOrigin}/sitemap.xml`,
-    host: siteOrigin,
+    // Hostname only (Yandex Host). Google gebruikt vooral Sitemap:.
+    host: new URL(siteOrigin).host,
   };
 }
