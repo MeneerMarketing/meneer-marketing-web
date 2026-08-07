@@ -12,7 +12,11 @@ import {
   ZONE_VORMEN,
   type Aanzicht,
 } from "@/data/laser-lichaamskaart";
-import { LASER_ZONES } from "@/data/laser-zones";
+import {
+  vormenVanZones,
+  zoneVoorVorm,
+  type LaserGeslacht,
+} from "@/data/laser-zones";
 import { formatLaserPrice } from "@/lib/laser-pricing";
 
 /**
@@ -42,6 +46,15 @@ type Props = {
   /** Zones die door een gekozen pakket gedekt worden: aan, maar niet los af te zetten. */
   gedekt: readonly string[];
   onWissel: (zoneId: string) => void;
+  /**
+   * Welke prijslijst er geldt.
+   *
+   * De kaart tekent vormen, niet tarieven. Welk tarief achter een vorm zit hangt af van de
+   * lijst: heren betalen voor dezelfde wang meer, en hun lijst kent helemaal geen benen of
+   * bikinilijn. Vormen zonder tarief op deze lijst worden niet getekend, want een gebied
+   * dat oplicht maar niets kost is een belofte die de kliniek niet doet.
+   */
+  geslacht: LaserGeslacht;
 };
 
 type Staat = "uit" | "aan" | "gedekt";
@@ -54,20 +67,42 @@ const VULLING: Record<Staat | "zweef", string> = {
   gedekt: "var(--g-300)",
 };
 
-export default function Lichaamskaart({ gekozen, gedekt, onWissel }: Props) {
+export default function Lichaamskaart({
+  gekozen,
+  gedekt,
+  onWissel,
+  geslacht,
+}: Props) {
   const [aanzicht, setAanzicht] = useState<Aanzicht>("voor");
   const [zweef, setZweef] = useState<string | null>(null);
   const sleutel = useId().replace(/:/g, "");
 
   const isGezicht = aanzicht === "gezicht";
+
+  /* Een vorm is zichtbaar als hij getekend kan worden én op deze prijslijst staat. */
+  const zone = (vorm: string) => zoneVoorVorm(vorm, geslacht);
   const zichtbaar = ZONE_VOLGORDE[aanzicht].filter(
-    (id) => ZONE_VORMEN[id]?.[aanzicht],
+    (vorm) => ZONE_VORMEN[vorm]?.[aanzicht] && zone(vorm),
   );
 
-  const staat = (id: string): Staat =>
-    gedekt.includes(id) ? "gedekt" : gekozen.includes(id) ? "aan" : "uit";
+  /* Welke vormen oplichten doordat je iets anders koos.
+   *
+   * Twee gevallen die op hetzelfde neerkomen: een pakket dat de zone dekt, en een
+   * combinatietarief dat over meerdere vormen loopt ("Gehele benen" raakt bovenbeen én
+   * onderbeen). In beide gevallen heb je dit stuk huid al te pakken en verandert er niets
+   * als je er nog een keer op klikt. Dus zien ze er hetzelfde uit en doen ze hetzelfde. */
+  const gedektDoorAnders = vormenVanZones(gedekt);
+  const verlichtDoorKeuze = vormenVanZones(gekozen);
 
-  const zone = (id: string) => LASER_ZONES.find((z) => z.id === id);
+  const staat = (vorm: string): Staat => {
+    const z = zone(vorm);
+    if (!z) return "uit";
+    if (gedekt.includes(z.id) || gedektDoorAnders.has(vorm)) return "gedekt";
+    if (gekozen.includes(z.id)) return "aan";
+    /* Wel opgelicht, maar door een andere regel dan de hoofdzone van deze vorm. */
+    if (verlichtDoorKeuze.has(vorm)) return "gedekt";
+    return "uit";
+  };
 
   /** Wat er in de strook onder de tekening staat. */
   const onderschrift = (() => {
@@ -85,7 +120,11 @@ export default function Lichaamskaart({ gekozen, gedekt, onWissel }: Props) {
   return (
     <div>
       {/* ── Aanzicht kiezen ── */}
-      <div role="tablist" aria-label="Aanzicht" className="flex flex-wrap gap-2">
+      <div
+        role="tablist"
+        aria-label="Aanzicht"
+        className="flex flex-wrap gap-2"
+      >
         {AANZICHTEN.map((a) => (
           <button
             key={a.id}
@@ -147,7 +186,10 @@ export default function Lichaamskaart({ gekozen, gedekt, onWissel }: Props) {
                   key={id}
                   clipPath={`url(#${sleutel}-${vorm.knipOp})`}
                   onPointerEnter={() => setZweef(id)}
-                  onClick={() => s !== "gedekt" && onWissel(id)}
+                  onClick={() => {
+                    const z = zone(id);
+                    if (s !== "gedekt" && z) onWissel(z.id);
+                  }}
                   style={{
                     cursor: s === "gedekt" ? "default" : "pointer",
                     transition: "opacity .25s var(--ease-diba)",
@@ -202,7 +244,7 @@ export default function Lichaamskaart({ gekozen, gedekt, onWissel }: Props) {
                 </span>
                 <span className="shrink-0 text-[14px] text-[var(--t-muted)] tabular-nums">
                   {onderschrift.staat === "gedekt"
-                    ? "Zit in je pakket"
+                    ? "Zit al in je keuze"
                     : onderschrift.prijs}
                 </span>
               </>
@@ -229,7 +271,7 @@ export default function Lichaamskaart({ gekozen, gedekt, onWissel }: Props) {
                   type="button"
                   aria-pressed={s !== "uit"}
                   disabled={s === "gedekt"}
-                  onClick={() => onWissel(id)}
+                  onClick={() => onWissel(z.id)}
                   onPointerEnter={() => setZweef(id)}
                   onPointerLeave={() => setZweef(null)}
                   onFocus={() => setZweef(id)}
@@ -259,7 +301,7 @@ export default function Lichaamskaart({ gekozen, gedekt, onWissel }: Props) {
                     }`}
                   >
                     {s === "gedekt"
-                      ? "In pakket"
+                      ? "Zit er al in"
                       : formatLaserPrice(z.singlePrice)}
                   </span>
                 </button>

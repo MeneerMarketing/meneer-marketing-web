@@ -1,7 +1,11 @@
 import Link from "next/link";
 import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider";
 import FigmaHeading from "@/components/figma/FigmaHeading";
-import { figmaInnerContainer, figmaSectionTight } from "@/lib/figma-inner-layout";
+import { publicCopy } from "@/lib/copy-flags";
+import {
+  figmaInnerContainer,
+  figmaSectionTight,
+} from "@/lib/figma-inner-layout";
 
 export type ResultaatItem = {
   id: string;
@@ -20,7 +24,10 @@ export const RESULTATEN_PLACEHOLDERS: readonly ResultaatItem[] = [
     id: "acne-dev",
     behandeling: "Acne",
     pillarHref: "/huidproblemen/acne",
-    before: { src: "/dev/voor.svg", alt: "[BEELD-NODIG: acne voor behandeling]" },
+    before: {
+      src: "/dev/voor.svg",
+      alt: "[BEELD-NODIG: acne voor behandeling]",
+    },
     after: { src: "/dev/na.svg", alt: "[BEELD-NODIG: acne na behandeling]" },
     sessions: "[COPY-NODIG: x sessies]",
     timeline: "[COPY-NODIG: x maanden]",
@@ -30,7 +37,10 @@ export const RESULTATEN_PLACEHOLDERS: readonly ResultaatItem[] = [
     id: "pigment-dev",
     behandeling: "Pigmentvlekken",
     pillarHref: "/huidproblemen/pigmentvlekken",
-    before: { src: "/dev/voor.svg", alt: "[BEELD-NODIG: pigment voor behandeling]" },
+    before: {
+      src: "/dev/voor.svg",
+      alt: "[BEELD-NODIG: pigment voor behandeling]",
+    },
     after: { src: "/dev/na.svg", alt: "[BEELD-NODIG: pigment na behandeling]" },
     sessions: "[COPY-NODIG: x sessies]",
     timeline: "[COPY-NODIG: x maanden]",
@@ -40,8 +50,14 @@ export const RESULTATEN_PLACEHOLDERS: readonly ResultaatItem[] = [
     id: "rosacea-dev",
     behandeling: "Roodheid",
     pillarHref: "/huidproblemen/rosacea",
-    before: { src: "/dev/voor.svg", alt: "[BEELD-NODIG: roodheid voor behandeling]" },
-    after: { src: "/dev/na.svg", alt: "[BEELD-NODIG: roodheid na behandeling]" },
+    before: {
+      src: "/dev/voor.svg",
+      alt: "[BEELD-NODIG: roodheid voor behandeling]",
+    },
+    after: {
+      src: "/dev/na.svg",
+      alt: "[BEELD-NODIG: roodheid na behandeling]",
+    },
     sessions: "[COPY-NODIG: x sessies]",
     timeline: "[COPY-NODIG: x maanden]",
     skinType: "[COPY-NODIG: huidtype]",
@@ -64,9 +80,11 @@ export default function ResultatenGallery({
             <BeforeAfterSlider
               before={item.before}
               after={item.after}
-              sessions={item.sessions}
-              timeline={item.timeline}
-              skinType={item.skinType}
+              // Alle drie de meetwaarden door de vlaggenfilter: het zijn nog
+              // placeholders, en die stonden hier zichtbaar op het scherm.
+              sessions={publicCopy(item.sessions, "Volgt")}
+              timeline={publicCopy(item.timeline, "Volgt")}
+              skinType={publicCopy(item.skinType, "Volgt")}
             />
             <Link
               href={item.pillarHref}

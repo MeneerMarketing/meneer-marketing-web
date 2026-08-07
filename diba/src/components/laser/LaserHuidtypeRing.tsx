@@ -17,14 +17,15 @@ export default function LaserHuidtypeRing() {
       >
         <div
           aria-hidden="true"
-          className="absolute inset-4 rounded-full border border-[#dce8d9]"
+          className="absolute inset-4 rounded-full border border-[var(--g-100)]"
         />
         <div
           aria-hidden="true"
           className="absolute inset-10 rounded-full border border-[#b5df9d]/50"
         />
         {FITZPATRICK_TYPES.map((type, i) => {
-          const angle = (i / FITZPATRICK_TYPES.length) * Math.PI * 2 - Math.PI / 2;
+          const angle =
+            (i / FITZPATRICK_TYPES.length) * Math.PI * 2 - Math.PI / 2;
           const radius = 42;
           const x = 50 + Math.cos(angle) * radius;
           const y = 50 + Math.sin(angle) * radius;
@@ -38,8 +39,8 @@ export default function LaserHuidtypeRing() {
               onClick={() => setSelected(type.id)}
               className={`absolute grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full text-[11px] font-medium transition sm:h-11 sm:w-11 ${
                 on
-                  ? "bg-[#286943] text-white shadow-[0_8px_24px_rgba(40,105,67,.25)]"
-                  : "border border-[#dce8d9] bg-white text-[#286943] hover:border-[#286943]"
+                  ? "bg-[var(--g-700)] text-white shadow-[0_8px_24px_rgba(40,105,67,.25)]"
+                  : "border border-[var(--g-100)] bg-white text-[var(--g-700)] hover:border-[var(--g-700)]"
               }`}
               style={{ left: `${x}%`, top: `${y}%` }}
             >
@@ -47,22 +48,24 @@ export default function LaserHuidtypeRing() {
             </button>
           );
         })}
-        <span className="text-center text-[10px] font-medium uppercase tracking-[.14em] text-[#5d9564]">
+        <span className="text-center text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
           Fitzpatrick
         </span>
       </div>
 
       <div>
-        <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[#5d9564]">
+        <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
           Huidtype {current.label}
         </p>
         <h3 className="mt-3 text-2xl tracking-[-.05em] sm:text-3xl">
           {current.description}
         </h3>
-        <p className="mt-4 text-sm leading-6 text-[#5f7765]">
-          GentleMax Pro kan veilig worden ingezet bij Fitzpatrick I tot VI. In de
-          configurator kies je je type; wij stemmen fluence en koeling daarop af.
-          [MEDISCHE-CHECK-ROJDA]
+        <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
+          {/* [MEDISCHE-CHECK-ROJDA]: de uitspraak over Fitzpatrick I tot VI. De vlag
+              stond in de zin zelf en dus op het scherm. */}
+          De Gentle Laser Pro-U werkt op Fitzpatrick I tot en met VI. In de
+          configurator kies je je type; de energie en de koeling worden daarop
+          afgestemd.
         </p>
       </div>
     </div>

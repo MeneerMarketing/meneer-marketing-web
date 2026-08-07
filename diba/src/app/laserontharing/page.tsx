@@ -12,10 +12,7 @@ import { reviewsForTopic } from "@/data/reviews";
 import { publicCopy } from "@/lib/copy-flags";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import {
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Laserontharing Rotterdam | GentleMax Pro",
@@ -49,8 +46,8 @@ export default function LaserontharingPage() {
               <span className="text-[#387849]">Je huidtype meegenomen.</span>
             </h1>
             <p className="mt-7 max-w-lg text-[16px] leading-7 text-[#5f7765]">
-              Kies je zones in de configurator, zie direct je opbouw en plan een intake
-              wanneer het plan klopt. Geen gokwerk, wel duidelijkheid.
+              Kies je zones in de configurator, zie direct je opbouw en plan een
+              intake wanneer het plan klopt. Geen gokwerk, wel duidelijkheid.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link
@@ -92,7 +89,9 @@ export default function LaserontharingPage() {
         <div className="mx-auto grid max-w-[1800px] divide-y divide-[#dce8d9] md:grid-cols-3 md:divide-x md:divide-y-0">
           {LASER_USP_ROWS.map(({ title, body }) => (
             <div key={title} className="py-8 md:px-6 md:first:pl-0">
-              <h2 className="text-lg tracking-[-.04em] text-[#286943]">{title}</h2>
+              <h2 className="text-lg tracking-[-.04em] text-[#286943]">
+                {title}
+              </h2>
               <p className="mt-2 text-sm leading-6 text-[#5f7765]">{body}</p>
             </div>
           ))}
@@ -106,7 +105,7 @@ export default function LaserontharingPage() {
             Configurator
           </p>
           <h2 className="mt-4 max-w-2xl text-4xl tracking-[-.06em] sm:text-5xl">
-            Waar wilt u ontharen?
+            Waar wil je ontharen?
           </h2>
           <div className="mt-14">
             <LaserPulseMap />
@@ -185,7 +184,10 @@ export default function LaserontharingPage() {
           </div>
           <div className="mt-10 border-t border-[#dce8d9] lg:mt-0">
             {LASER_LANDING_FAQ.map((item) => (
-              <details key={item.id} className="group border-b border-[#dce8d9] py-6">
+              <details
+                key={item.id}
+                className="group border-b border-[#dce8d9] py-6"
+              >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
                   <span>{item.question}</span>
                   <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#edf6e8] text-[#367544] transition group-open:rotate-45">

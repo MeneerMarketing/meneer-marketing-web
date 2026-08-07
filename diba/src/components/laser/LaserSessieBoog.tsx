@@ -7,7 +7,9 @@ const SESSIES = [
   { nr: 1, label: "Start", note: "Intake + huidtype + eerste sessie" },
   { nr: 3, label: "Opbouw", note: "Haarfollikels in rustfase bereiken" },
   { nr: 6, label: "Verschil", note: "Grover haar verdwijnt merkbaar" },
-  { nr: 8, label: "Onderhoud", note: "Interval wordt ruimer [MEDISCHE-CHECK-ROJDA]" },
+  /* [MEDISCHE-CHECK-ROJDA]: de intervallen in deze boog. De vlag hoort in dit
+     commentaar; hij stond in de zin zelf en werd dus gewoon meegerenderd. */
+  { nr: 8, label: "Onderhoud", note: "Interval wordt ruimer" },
 ] as const;
 
 /**
@@ -20,8 +22,8 @@ export default function LaserSessieBoog() {
   const current = SESSIES[active];
 
   return (
-    <div className="rounded-[2rem] border border-[#dce8d9] bg-white p-7 sm:p-10">
-      <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[#5d9564]">
+    <div className="rounded-[2rem] border border-[var(--g-100)] bg-white p-7 sm:p-10">
+      <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
         Traject in beeld
       </p>
       <h3 className="mt-3 text-2xl tracking-[-.05em] sm:text-3xl">
@@ -37,7 +39,7 @@ export default function LaserSessieBoog() {
           <path
             d="M 20 90 Q 200 10 380 90"
             fill="none"
-            stroke="#dce8d9"
+            stroke="var(--g-100)"
             strokeWidth="2"
           />
           {SESSIES.map((s, i) => {
@@ -51,15 +53,15 @@ export default function LaserSessieBoog() {
                   cx={x}
                   cy={y}
                   r={on ? 10 : 7}
-                  fill={on ? "#286943" : "#eff8ea"}
-                  stroke={on ? "#286943" : "#95c592"}
+                  fill={on ? "var(--g-700)" : "var(--g-050)"}
+                  stroke={on ? "var(--g-700)" : "var(--g-300)"}
                   strokeWidth="2"
                 />
                 <text
                   x={x}
                   y={y + 28}
                   textAnchor="middle"
-                  className="fill-[#5f7765] text-[11px] font-medium uppercase tracking-wider"
+                  className="fill-[var(--t-muted)] text-[11px] font-medium uppercase tracking-wider"
                   style={{ fontSize: 10 }}
                 >
                   {s.label}
@@ -73,11 +75,11 @@ export default function LaserSessieBoog() {
         </div>
       </div>
 
-      <div className="mt-8 rounded-[1.25rem] bg-[#f2f7ef] p-6">
-        <p className="text-[10px] font-medium uppercase tracking-[.12em] text-[#5d9564]">
+      <div className="mt-8 rounded-[1.25rem] bg-[var(--g-025)] p-6">
+        <p className="text-[10px] font-medium uppercase tracking-[.12em] text-[var(--t-label)]">
           Sessie {current.nr}
         </p>
-        <p className="mt-2 text-lg text-[#17372a]">{current.note}</p>
+        <p className="mt-2 text-lg text-[var(--t-strong)]">{current.note}</p>
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -89,8 +91,8 @@ export default function LaserSessieBoog() {
             aria-pressed={i === active}
             className={`rounded-full px-4 py-2 text-[10px] font-medium uppercase tracking-[.12em] transition ${
               i === active
-                ? "bg-[#286943] text-white"
-                : "border border-[#dce8d9] bg-white text-[#286943] hover:bg-[#eff8ea]"
+                ? "bg-[var(--g-700)] text-white"
+                : "border border-[var(--g-100)] bg-white text-[var(--g-700)] hover:bg-[var(--g-050)]"
             }`}
           >
             {s.label}

@@ -5,6 +5,7 @@ import Configurator from "@/components/laser/Configurator";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { VOORLOPIGE_PRIJZEN } from "@/data/laser-zones";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 /**
@@ -15,9 +16,9 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * de pagina opende. Verder stond er "Waar wilt u ontharen" boven, en dat is de u-vorm die
  * §2 verbiedt.
  *
- * Nu een tekening waarop je aanwijst, pakketlogica die uitlegt wat ze doet, en een opbouw
- * die eerlijk zegt dat de tarieven er nog niet zijn. Zie `Configurator.tsx` voor waarom
- * dat laatste zo staat.
+ * Nu een tekening waarop je aanwijst, pakketlogica die uitlegt wat ze doet, en de echte
+ * tarieven van de kliniek. Dat zijn er twee lijsten geworden, dames en heren, want voor
+ * dezelfde zone verschilt het bedrag. Zie `Configurator.tsx` voor hoe dat werkt.
  *
  * Twee donkergroene vlakken op deze pagina: het blok over de reeks in de configurator en
  * de afsluiter onderaan. Niet meer (§5).
@@ -83,21 +84,32 @@ export default function LaserConfiguratorPage() {
             </p>
           </div>
 
-          {/* Het voorbehoud staat meteen in beeld en niet in de kleine lettertjes. */}
+          {/* Het voorbehoud staat meteen in beeld en niet in de kleine lettertjes.
+
+              Dit blok zei eerder dat de bedragen voorlopig waren, en dat was waar zolang
+              ze verzonnen waren. Ze komen nu van de tarievenlijst van de kliniek, dus is
+              het voorbehoud verschoven naar wat er wél nog ontbreekt: het aantal sessies.
+              Dat is geen detail maar het grootste deel van wat je uiteindelijk betaalt. */}
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 sm:p-10">
             <Label>Voordat je begint</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
-              De bedragen zijn nog voorlopig
+              Dit is de prijs per sessie, niet van je traject
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wat je hieronder ziet staan is nog niet door de kliniek vastgesteld.
-              De opbouw klopt al wel: welke zones je kiest, wat een pakket
-              vervangt en wat er los overblijft. Alleen de bedragen kunnen nog
-              veranderen.
+              De tarieven hieronder staan zo op de prijslijst van de kliniek.
+              Wat er niet op staat is hoeveel sessies jij nodig hebt, en dat is
+              nou juist het getal waar je totaal van afhangt. Dat hoor je in de
+              intake, na de meting.
             </p>
+            {VOORLOPIGE_PRIJZEN ? (
+              <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                Een deel van de bedragen is nog niet door de kliniek
+                vastgesteld.
+              </p>
+            ) : null}
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wil je het zeker weten, stel je vraag dan via WhatsApp. Dan krijg je
-              antwoord van een mens.
+              Wil je het zeker weten, stel je vraag dan via WhatsApp. Dan krijg
+              je antwoord van een mens.
             </p>
           </div>
         </div>

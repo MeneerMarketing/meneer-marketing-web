@@ -27,7 +27,11 @@ export default function LaserPulseMap() {
           className="absolute left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-[#5eae67]/25 blur-2xl transition-all duration-500 motion-reduce:transition-none"
           style={{ top: glowY }}
         />
-        <svg viewBox="0 0 100 100" className="relative h-full w-full" aria-hidden="true">
+        <svg
+          viewBox="0 0 100 100"
+          className="relative h-full w-full"
+          aria-hidden="true"
+        >
           <defs>
             <linearGradient id="laser-body" x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="0%" stopColor="#dce8d9" />

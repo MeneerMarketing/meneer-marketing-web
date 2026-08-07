@@ -36,7 +36,9 @@ export type DoelgroepHubTemplateProps = {
   siteUrl: string;
 };
 
-export default function DoelgroepHubTemplate({ siteUrl }: DoelgroepHubTemplateProps) {
+export default function DoelgroepHubTemplate({
+  siteUrl,
+}: DoelgroepHubTemplateProps) {
   return (
     <main className="pb-20">
       <SchemaMarkup
@@ -48,10 +50,7 @@ export default function DoelgroepHubTemplate({ siteUrl }: DoelgroepHubTemplatePr
 
       <section className={`${figmaInnerContainer} ${figmaSection}`} data-reveal>
         <FigmaBreadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Doelgroepen" },
-          ]}
+          items={[{ label: "Home", href: "/" }, { label: "Doelgroepen" }]}
         />
         <p className={figmaLabel}>Doelgroepen</p>
         <FigmaHeading
@@ -62,7 +61,7 @@ export default function DoelgroepHubTemplate({ siteUrl }: DoelgroepHubTemplatePr
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
           {publicCopy(
-            "Verschillende huiden, verschillende vragen. Kies wat op u lijkt.",
+            "Verschillende huiden, verschillende vragen. Kies wat op jou lijkt.",
           )}
         </p>
       </section>
@@ -78,8 +77,12 @@ export default function DoelgroepHubTemplate({ siteUrl }: DoelgroepHubTemplatePr
                             focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
                             focus-visible:outline-[#286943] motion-reduce:transition-none motion-reduce:hover:translate-y-0`}
               >
-                <span className="text-xl font-medium tracking-[-.03em] text-[#17372a]">{d.meta}</span>
-                <span className={`mt-4 ${figmaBody}`}>{publicCopy(d.korteOmschrijving)}</span>
+                <span className="text-xl font-medium tracking-[-.03em] text-[#17372a]">
+                  {d.meta}
+                </span>
+                <span className={`mt-4 ${figmaBody}`}>
+                  {publicCopy(d.korteOmschrijving)}
+                </span>
                 <span className="mt-6 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[.1em] text-[#286943]">
                   Lees meer <Arrow />
                 </span>

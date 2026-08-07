@@ -1,12 +1,15 @@
-import { LASER_ZONES, type LaserZone } from "@/data/laser-zones";
+import {
+  LASER_ZONES,
+  type LaserGeslacht,
+  type LaserZone,
+} from "@/data/laser-zones";
 
 /**
  * De rekenkern van de laserconfigurator.
  *
- * Alle bedragen staan nog op nul. Dat is geen tijdelijke schoonheidsfout maar de reden dat
- * deze module bestaat: de opbouw moet nu al kloppen, zodat er straks één bestand met
- * tarieven bij hoeft en de hele configurator werkt. Wat hier gebeurt is dus vooral
- * bepálen welke regels je betaalt, en dat is de moeilijke helft.
+ * Deze module bepaalt welke regels je betaalt, en dat is de moeilijke helft. De bedragen
+ * zelf komen uit `laser-zones.ts` en zijn inmiddels de echte gepubliceerde tarieven van
+ * de kliniek; toen ze er nog niet waren rekende dit al correct met nullen.
  *
  * Een prijs van nul betekent "nog niet bekend" en nooit "gratis". Dat verschil staat in
  * `formatLaserPrice`, en het is belangrijker dan het lijkt: wie € 0 ziet staan denkt aan
@@ -201,22 +204,33 @@ export function toggleZoneSelection(
 export function zonesNaarQuery(
   zones: readonly string[],
   huidtype: string | null,
+  geslacht: LaserGeslacht,
 ): string {
   const p = new URLSearchParams();
+  /* De prijslijst staat er altijd in, ook bij een lege keuze. Zonder dat opent een
+     gedeelde link bij de ander op de andere lijst, met dezelfde zonenamen en andere
+     bedragen ernaast. Dat is het soort fout dat niemand ziet gebeuren. */
+  p.set("lijst", geslacht);
   if (zones.length) p.set("zones", zones.join(","));
   if (huidtype) p.set("type", huidtype);
-  const s = p.toString();
-  return s ? `?${s}` : "";
+  return `?${p.toString()}`;
 }
 
 export function zonesUitQuery(zoek: string): {
   zones: string[];
   huidtype: string | null;
+  geslacht: LaserGeslacht;
 } {
   const p = new URLSearchParams(zoek);
+  const lijst = p.get("lijst");
+  const geslacht: LaserGeslacht = lijst === "heren" ? "heren" : "dames";
   const zones = (p.get("zones") ?? "")
     .split(",")
     .map((s) => s.trim())
-    .filter((id) => LASER_ZONES.some((z) => z.id === id));
-  return { zones, huidtype: p.get("type") };
+    /* Ook op geslacht filteren: een oude link kan zones van de andere lijst bevatten,
+       en die zouden hier stilletjes meetellen in een opbouw die ze niet toont. */
+    .filter((id) =>
+      LASER_ZONES.some((z) => z.id === id && z.geslacht === geslacht),
+    );
+  return { zones, huidtype: p.get("type"), geslacht };
 }

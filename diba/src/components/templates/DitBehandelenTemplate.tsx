@@ -1,6 +1,9 @@
 import Link from "next/link";
 import FigmaHeading from "@/components/figma/FigmaHeading";
-import { FigmaBreadcrumbs, FigmaCrossIcon } from "@/components/figma/FigmaTemplateUi";
+import {
+  FigmaBreadcrumbs,
+  FigmaCrossIcon,
+} from "@/components/figma/FigmaTemplateUi";
 import { WEIGER_CATEGORIEEN } from "@/data/weigeren";
 import { publicCopy } from "@/lib/copy-flags";
 import { figmaBtnMint, figmaBtnPrimary } from "@/lib/figma-home-layout";
@@ -50,19 +53,29 @@ export default function DitBehandelenTemplate({
           className="mt-4 max-w-3xl"
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
-          Wat wij niet kunnen staat hier ook. Soms is het antwoord nee, en dat zeggen we vooraf.
+          Wat wij niet kunnen staat hier ook. Soms is het antwoord nee, en dat
+          zeggen we vooraf.
         </p>
       </section>
 
       <section className={`${figmaInnerContainer} ${figmaSectionTight} pb-24`}>
         <div className="flex flex-col gap-6">
           {WEIGER_CATEGORIEEN.map((cat) => (
-            <article key={cat.id} className={`${figmaCardSoft} p-7 sm:p-10`} data-reveal>
+            <article
+              key={cat.id}
+              className={`${figmaCardSoft} p-7 sm:p-10`}
+              data-reveal
+            >
               <FigmaHeading as="h2" size="card" text={cat.kop} />
-              <p className={`mt-4 max-w-2xl ${figmaBody}`}>{publicCopy(cat.intro)}</p>
+              <p className={`mt-4 max-w-2xl ${figmaBody}`}>
+                {publicCopy(cat.intro)}
+              </p>
               <ul className="mt-6 flex flex-col gap-3">
                 {cat.items.map((item) => (
-                  <li key={item} className="flex gap-3 text-[15px] leading-7 text-[#17372a]">
+                  <li
+                    key={item}
+                    className="flex gap-3 text-[15px] leading-7 text-[#17372a]"
+                  >
                     <FigmaCrossIcon />
                     {publicCopy(item)}
                   </li>
@@ -75,7 +88,12 @@ export default function DitBehandelenTemplate({
 
       <section className="bg-[#f2f7ef]" data-reveal>
         <div className={`${figmaInnerContainer} ${figmaSection} text-center`}>
-          <FigmaHeading as="h2" size="section" text="Twijfelt u of het *past*?" className="mx-auto" />
+          <FigmaHeading
+            as="h2"
+            size="section"
+            text="Twijfel je of het *past*?"
+            className="mx-auto"
+          />
           <p className={`mx-auto mt-5 max-w-xl ${figmaBody}`}>
             Start met Behandeling Nul. Gratis, 4 minuten, eerlijk antwoord.
           </p>

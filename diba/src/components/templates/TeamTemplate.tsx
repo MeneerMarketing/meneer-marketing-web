@@ -45,7 +45,11 @@ function Arrow() {
   );
 }
 
-export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTemplateProps) {
+export default function TeamTemplate({
+  leden,
+  whatsappHref,
+  siteUrl,
+}: TeamTemplateProps) {
   return (
     <main className="pb-20">
       <SchemaMarkup
@@ -54,25 +58,29 @@ export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTempl
           { name: "Team", url: `${siteUrl}/team` },
         ])}
       />
-      {leden.map((m) => (
-        <SchemaMarkup
-          key={m.slug}
-          data={physicianSchema({
-            name: m.name,
-            jobTitle: m.role,
-            url: `${siteUrl}/team#${m.slug}`,
-            image: `${siteUrl}${m.image.src}`,
-            siteUrl,
-          })}
-        />
-      ))}
+      {/* Alleen leden met een echte naam krijgen structured data.
+
+          Hier ging `[COPY-NODIG]` als `name` de schema.org-blokken in. Dat is erger dan
+          een placeholder op het scherm: het publiceert een verzonnen zorgverlener naar
+          zoekmachines, onder het kopje Physician. Geen naam betekent geen vermelding. */}
+      {leden
+        .filter((m) => publicCopy(m.name) !== "")
+        .map((m) => (
+          <SchemaMarkup
+            key={m.slug}
+            data={physicianSchema({
+              name: publicCopy(m.name),
+              jobTitle: m.role,
+              url: `${siteUrl}/team#${m.slug}`,
+              image: `${siteUrl}${m.image.src}`,
+              siteUrl,
+            })}
+          />
+        ))}
 
       <section className={`${figmaInnerContainer} ${figmaSection}`} data-reveal>
         <FigmaBreadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Team" },
-          ]}
+          items={[{ label: "Home", href: "/" }, { label: "Team" }]}
         />
         <p className={figmaLabel}>Team</p>
         <FigmaHeading
@@ -96,7 +104,7 @@ export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTempl
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-[#cbe5bf] md:col-span-2">
                   <Image
                     src={m.image.src}
-                    alt={m.image.alt}
+                    alt={publicCopy(m.image.alt, "Portret volgt")}
                     fill
                     sizes="(min-width: 768px) 240px, 100vw"
                     className="object-cover mix-blend-multiply opacity-90"
@@ -104,7 +112,7 @@ export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTempl
                 </div>
                 <div className="md:col-span-3">
                   <h2 className="text-2xl font-medium tracking-[-.04em] text-[#17372a] md:text-3xl">
-                    {m.name}
+                    {publicCopy(m.name, "Naam volgt")}
                   </h2>
                   <p className="mt-2 text-[13px] font-semibold uppercase tracking-[.1em] text-[#286943]">
                     {m.role}
@@ -115,7 +123,10 @@ export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTempl
                       href="/intake"
                       className="inline-flex items-center gap-2 text-[14px] font-medium text-[#286943] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#286943]"
                     >
-                      Boek bij {m.name.split(" ")[0]} <Arrow />
+                      {publicCopy(m.name)
+                        ? `Boek bij ${publicCopy(m.name).split(" ")[0]}`
+                        : "Plan een afspraak"}{" "}
+                      <Arrow />
                     </Link>
                   </p>
                 </div>
@@ -127,9 +138,15 @@ export default function TeamTemplate({ leden, whatsappHref, siteUrl }: TeamTempl
 
       <section className="bg-[#f2f7ef]" data-reveal>
         <div className={`${figmaInnerContainer} ${figmaSection} text-center`}>
-          <FigmaHeading as="h2" size="section" text="Nog niet zeker *wie*?" className="mx-auto" />
+          <FigmaHeading
+            as="h2"
+            size="section"
+            text="Nog niet zeker *wie*?"
+            className="mx-auto"
+          />
           <p className={`mx-auto mt-5 max-w-xl ${figmaBody}`}>
-            Start met Behandeling Nul. Wij koppelen u aan de therapeut die bij je huid en vraag past.
+            Start met Behandeling Nul. Wij koppelen je aan de therapeut die bij
+            jouw huid en vraag past.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <Link href="/intake" className={figmaBtnPrimary}>

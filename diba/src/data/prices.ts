@@ -11,12 +11,20 @@
  * prijzenpagina overal € 0 hebben laten zien terwijl de configurator ernaast de juiste
  * bedragen toonde.
  *
- * De bedragen zijn voorlopig zolang `VOORLOPIGE_PRIJZEN` aan staat. Zie `laser-zones.ts`.
+ * De laserbedragen waren verzonnen en zijn nu overgenomen van de tarievenpagina van de
+ * kliniek. Daardoor zijn het ook twee lijsten geworden in plaats van één, want dames en
+ * heren betalen voor dezelfde zone een ander bedrag. Zie `laser-zones.ts`.
  */
 
 import type { PriceRow } from "@/components/ui/PriceTable";
 import { BEHANDELINGEN } from "@/data/behandelingen";
-import { LASER_ZONES, VOORLOPIGE_PRIJZEN, type LaserZoneArea } from "@/data/laser-zones";
+import {
+  LASER_GESLACHTEN,
+  LASER_ZONES,
+  VOORLOPIGE_PRIJZEN,
+  type LaserGeslacht,
+  type LaserZoneArea,
+} from "@/data/laser-zones";
 import { publicCopy } from "@/lib/copy-flags";
 
 export { VOORLOPIGE_PRIJZEN };
@@ -44,13 +52,47 @@ export type PriceSection = {
   readonly rows: readonly PriceRow[];
 };
 
-function laserRijen(area: LaserZoneArea): PriceRow[] {
-  return LASER_ZONES.filter((z) => z.area === area).map((z) => ({
-    name: z.label,
-    single: z.singlePrice,
-    ...(z.traject ? { traject: z.traject } : {}),
-  }));
+/**
+ * De laserrijen van één prijslijst.
+ *
+ * De kliniek publiceert twee lijsten, dames en heren, met voor dezelfde zone een ander
+ * bedrag. Die door elkaar zetten zou "Voorhoofd" twee keer in dezelfde tabel geven met
+ * vijftig en vijfenzestig euro ernaast, en dan is de tabel niet onvolledig maar fout.
+ *
+ * Trajectprijzen staan niet op de tarievenpagina van de kliniek, dus staan ze hier ook
+ * niet. `PriceRow` kent het veld nog wel, voor als ze er komen.
+ */
+function laserRijen(area: LaserZoneArea, geslacht: LaserGeslacht): PriceRow[] {
+  return LASER_ZONES.filter(
+    (z) => z.area === area && z.geslacht === geslacht,
+  ).map((z) => ({ name: z.label, single: z.singlePrice }));
 }
+
+/** Vier gebieden maal twee prijslijsten, zonder acht keer hetzelfde blok te typen. */
+const LASER_GEBIEDEN: readonly {
+  readonly id: LaserZoneArea;
+  readonly caption: string;
+  readonly zin?: string;
+}[] = [
+  { id: "gelaat", caption: "gelaat" },
+  { id: "bovenlichaam", caption: "bovenlichaam" },
+  { id: "onderlichaam", caption: "onderlichaam" },
+  {
+    id: "pakket",
+    caption: "pakketten",
+    zin: "Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.",
+  },
+];
+
+const laserSecties: readonly PriceSection[] = LASER_GESLACHTEN.flatMap((g) =>
+  LASER_GEBIEDEN.map((gebied) => ({
+    id: `laser-${g.id}-${gebied.id}`,
+    category: "laser" as const,
+    caption: `Laserontharing ${g.label.toLowerCase()}, ${gebied.caption}`,
+    zin: gebied.zin,
+    rows: laserRijen(gebied.id, g.id),
+  })),
+).filter((s) => s.rows.length > 0);
 
 const huidbehandelingen = BEHANDELINGEN.filter((b) => b.slug !== "huidanalyse");
 const huidanalyse = BEHANDELINGEN.find((b) => b.slug === "huidanalyse");
@@ -71,33 +113,11 @@ export const PRICE_SECTIONS: readonly PriceSection[] = [
       huidanalyse?.kort ?? "",
       "Meten onder vast licht, zonder dat er iets aan je huid gebeurt.",
     ),
-    rows: huidanalyse ? [{ name: huidanalyse.naam, single: huidanalyse.prijs }] : [],
+    rows: huidanalyse
+      ? [{ name: huidanalyse.naam, single: huidanalyse.prijs }]
+      : [],
   },
-  {
-    id: "laser-gelaat",
-    category: "laser",
-    caption: "Laserontharing, gelaat",
-    rows: laserRijen("gelaat"),
-  },
-  {
-    id: "laser-boven",
-    category: "laser",
-    caption: "Laserontharing, bovenlichaam",
-    rows: laserRijen("bovenlichaam"),
-  },
-  {
-    id: "laser-onder",
-    category: "laser",
-    caption: "Laserontharing, onderlichaam",
-    rows: laserRijen("onderlichaam"),
-  },
-  {
-    id: "laser-pakketten",
-    category: "laser",
-    caption: "Laserontharing, pakketten",
-    zin: "Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.",
-    rows: laserRijen("pakket"),
-  },
+  ...laserSecties,
 ] as const;
 
 export function sectionsForCategory(

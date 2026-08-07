@@ -52,13 +52,15 @@ export default function ContentPageTemplate({
 
       <section className={`${figmaInnerContainer} ${figmaSection}`} data-reveal>
         <FigmaBreadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: pageTitle },
-          ]}
+          items={[{ label: "Home", href: "/" }, { label: pageTitle }]}
         />
         <p className={figmaLabel}>{breadcrumbLabel}</p>
-        <FigmaHeading as="h1" size="hero" text={h1} className="mt-4 max-w-4xl" />
+        <FigmaHeading
+          as="h1"
+          size="hero"
+          text={h1}
+          className="mt-4 max-w-4xl"
+        />
         {intro ? (
           <p className={`mt-7 max-w-2xl ${figmaBody}`}>{publicCopy(intro)}</p>
         ) : null}
@@ -80,9 +82,16 @@ export default function ContentPageTemplate({
               data-reveal
             >
               {sectie.kop ? (
-                <FigmaHeading as="h2" size="card" text={sectie.kop} className="max-w-2xl" />
+                <FigmaHeading
+                  as="h2"
+                  size="card"
+                  text={sectie.kop}
+                  className="max-w-2xl"
+                />
               ) : null}
-              <div className={`flex flex-col gap-4 ${sectie.kop ? "mt-5" : ""}`}>
+              <div
+                className={`flex flex-col gap-4 ${sectie.kop ? "mt-5" : ""}`}
+              >
                 {sectie.alineas.map((alinea) => (
                   <p key={alinea} className={figmaBody}>
                     {publicCopy(alinea)}
@@ -100,7 +109,8 @@ export default function ContentPageTemplate({
             className={`mx-auto max-w-[1800px] ${figmaCardSoft} flex flex-col items-center gap-4 px-7 py-12 text-center sm:px-10`}
           >
             <p className="max-w-md text-[15px] leading-7 text-[#5f7765]">
-              Twijfelt u nog? Stel je vraag via WhatsApp. Wij reageren persoonlijk.
+              Twijfel je nog? Stel je vraag via WhatsApp. Je krijgt antwoord van
+              een mens.
             </p>
             <a
               href={whatsappHref}
