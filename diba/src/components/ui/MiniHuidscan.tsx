@@ -2,7 +2,12 @@
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Button from "@/components/ui/Button";
-import { FITZPATRICK_TYPES, SCAN_ASSEN, type AsId, type DoelId } from "@/data/huidprofiel";
+import {
+  FITZPATRICK_TYPES,
+  SCAN_ASSEN,
+  type AsId,
+  type DoelId,
+} from "@/data/huidprofiel";
 import { bewaarScan } from "@/lib/huidprofiel-opslag";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icon";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
@@ -58,7 +63,8 @@ const VRAGEN: readonly Vraag[] = [
   {
     id: "focus",
     vraag: "Wat valt jou het eerst op aan je huid?",
-    toelichting: "Kies wat het dichtst in de buurt komt. Er is geen fout antwoord.",
+    toelichting:
+      "Kies wat het dichtst in de buurt komt. Er is geen fout antwoord.",
     opties: [
       {
         label: "Puistjes of onzuiverheden",
@@ -115,9 +121,18 @@ const VRAGEN: readonly Vraag[] = [
     vraag: "Hoe voelt je huid meestal?",
     opties: [
       { label: "Droog of trekkerig", gewichten: { hydratatie: 32 } },
-      { label: "Vettig, vooral in de T-zone", gewichten: { porien: 28, textuur: 10 } },
-      { label: "Wisselend per zone", gewichten: { hydratatie: 15, porien: 15 } },
-      { label: "Snel geïrriteerd", gewichten: { roodheid: 30, hydratatie: 14 } },
+      {
+        label: "Vettig, vooral in de T-zone",
+        gewichten: { porien: 28, textuur: 10 },
+      },
+      {
+        label: "Wisselend per zone",
+        gewichten: { hydratatie: 15, porien: 15 },
+      },
+      {
+        label: "Snel geïrriteerd",
+        gewichten: { roodheid: 30, hydratatie: 14 },
+      },
     ],
   },
   {
@@ -126,12 +141,36 @@ const VRAGEN: readonly Vraag[] = [
     toelichting:
       "Dit bepaalt mee welke instellingen veilig zijn. Alle huidtypes zijn hier gelijk.",
     opties: [
-      { label: "Verbrandt altijd, wordt nooit bruin", gewichten: { uv: 36, pigment: 8 }, tint: "#f3ddcf" },
-      { label: "Verbrandt snel, wordt licht bruin", gewichten: { uv: 30, pigment: 10 }, tint: "#e8c4a6" },
-      { label: "Verbrandt soms, wordt daarna bruin", gewichten: { uv: 23, pigment: 13 }, tint: "#d1a077" },
-      { label: "Verbrandt zelden, wordt snel bruin", gewichten: { uv: 16, pigment: 16 }, tint: "#a9714a" },
-      { label: "Verbrandt bijna nooit", gewichten: { uv: 11, pigment: 19 }, tint: "#71432a" },
-      { label: "Verbrandt niet", gewichten: { uv: 8, pigment: 21 }, tint: "#3d2318" },
+      {
+        label: "Verbrandt altijd, wordt nooit bruin",
+        gewichten: { uv: 36, pigment: 8 },
+        tint: "#f3ddcf",
+      },
+      {
+        label: "Verbrandt snel, wordt licht bruin",
+        gewichten: { uv: 30, pigment: 10 },
+        tint: "#e8c4a6",
+      },
+      {
+        label: "Verbrandt soms, wordt daarna bruin",
+        gewichten: { uv: 23, pigment: 13 },
+        tint: "#d1a077",
+      },
+      {
+        label: "Verbrandt zelden, wordt snel bruin",
+        gewichten: { uv: 16, pigment: 16 },
+        tint: "#a9714a",
+      },
+      {
+        label: "Verbrandt bijna nooit",
+        gewichten: { uv: 11, pigment: 19 },
+        tint: "#71432a",
+      },
+      {
+        label: "Verbrandt niet",
+        gewichten: { uv: 8, pigment: 21 },
+        tint: "#3d2318",
+      },
     ],
   },
   {
@@ -169,17 +208,24 @@ export default function MiniHuidscan() {
   const titelId = useId();
   const [fase, setFase] = useState<Fase>("intro");
   const [stap, setStap] = useState(0);
-  const [keuzes, setKeuzes] = useState<(number | null)[]>(() => VRAGEN.map(() => null));
+  const [keuzes, setKeuzes] = useState<(number | null)[]>(() =>
+    VRAGEN.map(() => null),
+  );
   const [onthuld, setOnthuld] = useState(false);
   const statusRef = useRef<HTMLParagraphElement>(null);
 
   const profiel = useMemo(() => {
-    const waarden = Object.fromEntries(ASSEN.map((a) => [a.id, BASIS])) as Record<AsId, number>;
+    const waarden = Object.fromEntries(
+      ASSEN.map((a) => [a.id, BASIS]),
+    ) as Record<AsId, number>;
     keuzes.forEach((keuze, vi) => {
       if (keuze === null) return;
       const optie = VRAGEN[vi].opties[keuze];
       for (const [as, gewicht] of Object.entries(optie.gewichten)) {
-        waarden[as as AsId] = Math.min(MAX, waarden[as as AsId] + (gewicht ?? 0));
+        waarden[as as AsId] = Math.min(
+          MAX,
+          waarden[as as AsId] + (gewicht ?? 0),
+        );
       }
     });
     return waarden;
@@ -188,8 +234,7 @@ export default function MiniHuidscan() {
   const gekozenFocus = keuzes[0] !== null ? VRAGEN[0].opties[keuzes[0]] : null;
 
   const aandachtspunten = useMemo(
-    () =>
-      [...ASSEN].sort((a, b) => profiel[b.id] - profiel[a.id]).slice(0, 2),
+    () => [...ASSEN].sort((a, b) => profiel[b.id] - profiel[a.id]).slice(0, 2),
     [profiel],
   );
 
@@ -334,8 +379,8 @@ function Intro({ onStart, titelId }: { onStart: () => void; titelId: string }) {
           Doe de mini-scan.
         </h3>
         <p className="mt-3 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-          Vier vragen, dertig seconden. Je krijgt een profielschets van wat jij ons
-          vertelt, en dus geen meting. Wel een goed begin.
+          Vier vragen, dertig seconden. Je krijgt een profielschets van wat jij
+          ons vertelt, en dus geen meting. Wel een goed begin.
         </p>
         <Button onClick={onStart} className="mt-6">
           Start de mini-scan
@@ -385,7 +430,11 @@ function Vraagstap({
         </p>
       ) : null}
 
-      <div className="mt-5 grid gap-2 sm:grid-cols-2" role="radiogroup" aria-label={vraag.vraag}>
+      <div
+        className="mt-5 grid gap-2 sm:grid-cols-2"
+        role="radiogroup"
+        aria-label={vraag.vraag}
+      >
         {vraag.opties.map((optie, i) => {
           const actief = gekozen === i;
           return (
@@ -476,10 +525,25 @@ function Resultaat({
           </p>
         </div>
 
-        <div className="mt-5 flex flex-wrap items-center gap-3">
-          <Button href={`/intake${focus?.onderwerp ? `?topic=${focus.onderwerp}` : ""}`}>
+        {/* De weg naar het volledige profiel.
+
+            Deze schets is vier vragen. Op /huidprofiel staan er meer, en dat profiel is
+            wat de behandelpagina's gebruiken om te ordenen. Zonder deze regel eindigt de
+            mini-scan doodlopend: hij bewaart wel, maar nodigt nergens toe uit. Als link
+            en niet als knop, want er staat al een primaire knop in dit blok. */}
+        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <Button
+            href={`/intake${focus?.onderwerp ? `?topic=${focus.onderwerp}` : ""}`}
+          >
             Plan De Nulmeting
           </Button>
+          <a
+            href="/huidprofiel"
+            className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
+          >
+            Vul je profiel verder aan
+            <ArrowUpRight size={13} />
+          </a>
           {focus?.pillar ? (
             <a
               href={`/huidproblemen/${focus.pillar}`}
@@ -490,6 +554,11 @@ function Resultaat({
             </a>
           ) : null}
         </div>
+
+        <p className="mt-3 text-[13px] leading-6 text-[var(--t-muted)]">
+          Je schets is bewaard op dit apparaat. Ga je naar de behandelingen, dan
+          staat wat bij je profiel past bovenaan.
+        </p>
 
         <button
           type="button"
@@ -523,7 +592,15 @@ function RadarGrid() {
       {ASSEN.map((as, i) => {
         const [x, y] = punt(i, R);
         return (
-          <line key={as.id} x1={CX} y1={CY} x2={x} y2={y} stroke="var(--g-100)" strokeWidth="0.8" />
+          <line
+            key={as.id}
+            x1={CX}
+            y1={CY}
+            x2={x}
+            y2={y}
+            stroke="var(--g-100)"
+            strokeWidth="0.8"
+          />
         );
       })}
     </g>
@@ -533,11 +610,25 @@ function RadarGrid() {
 /** Rustige staat: alleen het raster, met een zachte sweep tijdens het scannen. */
 function RadarStil({ scannend = false }: { scannend?: boolean }) {
   return (
-    <svg viewBox="0 0 340 340" className="h-[220px] w-[220px] sm:h-[250px] sm:w-[250px]" aria-hidden="true">
+    <svg
+      viewBox="0 0 340 340"
+      className="h-[220px] w-[220px] sm:h-[250px] sm:w-[250px]"
+      aria-hidden="true"
+    >
       <RadarGrid />
       {scannend ? (
-        <g className="diba-scan-sweep" style={{ transformOrigin: `${CX}px ${CY}px` }}>
-          <line x1={CX} y1={CY} x2={CX} y2={CY - R} stroke="var(--g-400)" strokeWidth="1.5" />
+        <g
+          className="diba-scan-sweep"
+          style={{ transformOrigin: `${CX}px ${CY}px` }}
+        >
+          <line
+            x1={CX}
+            y1={CY}
+            x2={CX}
+            y2={CY - R}
+            stroke="var(--g-400)"
+            strokeWidth="1.5"
+          />
           <circle cx={CX} cy={CY - R} r="4" fill="var(--g-700)" />
         </g>
       ) : null}
@@ -553,8 +644,9 @@ function RadarResultaat({
   profiel: Record<AsId, number>;
   onthuld: boolean;
 }) {
-  const vorm = ASSEN.map((as, i) => punt(i, (R * (onthuld ? profiel[as.id] : 0)) / 100).join(","))
-    .join(" ");
+  const vorm = ASSEN.map((as, i) =>
+    punt(i, (R * (onthuld ? profiel[as.id] : 0)) / 100).join(","),
+  ).join(" ");
 
   return (
     <figure className="m-0">
