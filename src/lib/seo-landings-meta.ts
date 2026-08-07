@@ -9,7 +9,7 @@ const DESC_MAX = 158;
 const META_DESC_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
   "google-ads": [
     "Eerst site en tracking, dan Search of Shopping op koopintentie.",
-    "Geen budget naar 'gratis' zoektermen. Wel landings die converteren.",
+    "Budget naar koopintentie, niet naar 'gratis' zoektermen. Landings die converteren.",
     "Wekelijks bijsturen op marge, niet op impressies.",
     "Broad match zonder plan is een verrassingsbox. Dat fixen we eerst.",
     "Performance Max werkt alleen met schone feeds en duidelijke doelen.",
@@ -21,31 +21,31 @@ const META_DESC_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
     "Techniek, intentie en content die één vraag echt beantwoordt.",
     "Core Web Vitals, schema en interne links ingebakken.",
     "Organisch én vindbaar in ChatGPT, met echte expertise.",
-    "GBP en website in één verhaal. Geen adres in de footer als enige lokaal signaal.",
-    "Eén sterke pagina per zoekintentie. Geen keyword-stuffing.",
-    "Dunne content verliest van dieper antwoord. Wij kiezen dieper.",
+    "GBP en website in één verhaal. Lokaal signaal zit in content, niet alleen de footer.",
+    "Eén sterke pagina per zoekintentie. Keyword-stuffing blijft uit.",
+    "Dunne content verliest van dieper antwoord. Ik kies dieper.",
     "Lokaal ranken vraagt vertrouwen, niet alleen citations.",
     "Updates op oude posts vóór nieuwe blogs stapelen.",
   ],
   website: [
     "Custom build in Next.js: snel, vindbaar, klaar voor campagnes.",
-    "Geen page builder die je groei remt. Wel semantische HTML.",
+    "Custom code die meeschaaft. Semantische HTML, klaar voor groei.",
     "Landings en CTA's die op mobiel werken vóór je ads aanzet.",
-    "From scratch, niet from theme. Jouw merk, geen template.",
+    "From scratch, niet from theme. Jouw merk, eigen code.",
     "Tracking live vóór launch. Gokken is duur.",
     "Mobiel-first QA. Desktop is nice, telefoon is realiteit.",
-    "Schema en CWV in de basis, geen SEO-plugin achteraf.",
+    "Schema en CWV in de basis, niet als plugin achteraf.",
     "Landings per dienst of campagne, niet alles op homepage.",
   ],
   shopify: [
     "Feeds, snelheid en checkout vóór je Shopping opschaalt.",
-    "Custom theme waar nodig. Geen app-hel die je CWV sloopt.",
+    "Custom theme waar nodig. Lichte stack, sterke CWV.",
     "Van migratie tot B2B: Shopify als schaalbaar fundament.",
     "Abandoned cart is gratis geld. Flows horen standaard.",
     "Product-SEO in titels en structuur, niet in leverancier-copy.",
     "App-audit: weg met wat traag en nutteloos is.",
     "B2B op Shopify kan. Excel naast je shop is een keuze.",
-    "Migratie met redirects. Organische dip is geen must.",
+    "Migratie met redirects. Organische dip is te vermijden.",
   ],
   content: [
     "Antwoord-pagina's die ranken en converteren, geen bulk-ruis.",
@@ -65,7 +65,7 @@ const META_DESC_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
     "Self-service moet makkelijker zijn dan mailen.",
     "n8n/Make koppelingen zonder dubbel typen.",
     "Tel uren op handmatig werk vóór je bouwt.",
-    "Shopify B2B waar het past. Geen Excel als eindstation.",
+    "Shopify B2B waar het past. Orders online, Excel als uitzondering.",
   ],
 };
 
@@ -73,11 +73,11 @@ const META_DESC_CLOSERS = [
   "Eerlijk advies van Meneer Marketing.",
   "SkinComplete en BestRest als referentie waar het past.",
   "Intake vaak binnen een week.",
-  "Geen retainer zonder plan.",
-  "Eén aanspreekpunt, geen keten van specialisten.",
+  "Retainer alleen met een duidelijk plan.",
+  "Eén aanspreekpunt. Jij belt mij, niet een keten.",
   "Fundament eerst, dan schalen.",
   "Jij/je, direct, soms droog grappig.",
-  "Custom build, geen templates.",
+  "Custom build, eigen code.",
 ] as const;
 
 const CITY_HEADLINES: Record<
@@ -172,7 +172,7 @@ const KEY_TAKEAWAY_BANK: Record<SeoLandingCategory, readonly string[]> = {
     "Mobiel eerst testen, altijd",
     "Semantische HTML en schema",
     "CTA zichtbaar zonder scrollen",
-    "Geen page builder als eindstation",
+    "Custom code als eindstation",
     "Landings per dienst of campagne",
     "Snelheid is conversie",
   ],
@@ -219,51 +219,71 @@ function pageVars(page: SeoLandingPage) {
 }
 
 function clampDescription(text: string): string {
-  let d = text.replace(/\s+/g, " ").trim();
-  if (d.length > DESC_MAX) {
-    d = `${d.slice(0, DESC_MAX - 1).trimEnd()}…`;
-  }
-  if (d.length < DESC_MIN && d.length > 0) {
-    return d;
-  }
-  return d;
+  const d = text.replace(/\s+/g, " ").trim();
+  if (d.length <= DESC_MAX) return d;
+  const cut = d.slice(0, DESC_MAX - 1);
+  const lastSpace = cut.lastIndexOf(" ");
+  const base =
+    lastSpace >= DESC_MIN - 20 ? cut.slice(0, lastSpace).trimEnd() : cut.trimEnd();
+  return `${base}…`;
+}
+
+function displayKeyword(keyword: string): string {
+  const titled = keyword.replace(/^\w/, (c) => c.toUpperCase());
+  return titled
+    .replace(/\bSeo\b/g, "SEO")
+    .replace(/\bAi\b/g, "AI")
+    .replace(/\bCro\b/g, "CRO")
+    .replace(/\bShopify\b/gi, "Shopify")
+    .replace(/\bGbp\b/g, "GBP");
 }
 
 export function trimMetaTitle(title: string): string {
   const t = title.replace(/\s+/g, " ").trim();
   if (t.length <= TITLE_MAX) return t;
-  return `${t.slice(0, TITLE_MAX - 1).trimEnd()}…`;
+  const cut = t.slice(0, TITLE_MAX - 1);
+  const lastSpace = cut.lastIndexOf(" ");
+  const base = lastSpace > 24 ? cut.slice(0, lastSpace).trimEnd() : cut.trimEnd();
+  return `${base}…`;
 }
 
 const SLUG_HOOKS = [
-  "Geen template-bureau.",
+  "Custom build, eigen aanpak.",
   "Eerlijk advies, soms droog.",
   "Fundament eerst.",
   "Meneer Marketing stem.",
-  "Custom build, geen hok.",
+  "Jouw merk, eigen code.",
   "Marge als kompas.",
-  "Unieke pagina, geen copy-paste.",
+  "Unieke pagina, echte stem.",
 ] as const;
 
 export function buildUniqueMetaDescription(page: SeoLandingPage): string {
+  const curated = page.metaDescription?.replace(/\s+/g, " ").trim() ?? "";
+  // Nationale hubs: curated copy behouden als die al SERP-waardig is.
+  if (!page.location && curated.length >= DESC_MIN) {
+    return clampDescription(curated);
+  }
+
   const v = pageVars(page);
   const middle = fill(pick(page.slug, META_DESC_MIDDLES[page.category], "meta-mid"), v);
   const closer = pick(page.slug, META_DESC_CLOSERS, "meta-close");
   const hook = pick(page.slug, SLUG_HOOKS, "meta-hook");
+  const kw = displayKeyword(page.primaryKeyword);
 
   if (page.location?.city === "Apeldoorn") {
     return clampDescription(
-      `${hook} Meneer Marketing, gevestigd in Apeldoorn. ${middle} ${closer} Thuisbasis Veluwe, ook landelijk.`,
+      `${kw} in Apeldoorn. ${middle} Thuisbasis Veluwe. ${closer}`,
     );
   }
 
   if (page.location) {
+    const region = page.location.region ? ` (${page.location.region})` : "";
     return clampDescription(
-      `${hook} ${page.primaryKeyword} in ${page.location.city}${page.location.region ? ` (${page.location.region})` : ""}: ${middle} ${closer}`,
+      `${kw} in ${page.location.city}${region}. ${middle} ${closer}`,
     );
   }
 
-  return clampDescription(`${hook} ${page.primaryKeyword}: ${middle} ${closer}`);
+  return clampDescription(`${hook} ${kw}: ${middle} ${closer}`);
 }
 
 export function buildDisplayHeadline(page: SeoLandingPage): {

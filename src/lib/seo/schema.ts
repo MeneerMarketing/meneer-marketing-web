@@ -405,11 +405,14 @@ export function webPageJsonLd(input: {
     description: input.description,
     url: absoluteUrl(input.path),
     inLanguage: "nl-NL",
-    dateModified: input.dateModified ?? "2026-07-06",
+    dateModified: input.dateModified ?? "2026-08-07",
     isPartOf: websiteRef(),
     publisher: orgRef(),
   };
 }
+
+/** Default freshness voor SEO-landings (align met sitemap SEO_LANDING_LAST_MOD). */
+const SEO_LANDING_SCHEMA_MODIFIED = "2026-08-02";
 
 export function seoLandingPageGraph(input: {
   name: string;
@@ -421,8 +424,10 @@ export function seoLandingPageGraph(input: {
   areaServed?: string | { "@type": "City"; name: string };
   serviceType?: string;
   isApeldoornHQ?: boolean;
+  dateModified?: string;
 }): JsonLdObject {
   const url = absoluteUrl(input.path);
+  const dateModified = input.dateModified ?? SEO_LANDING_SCHEMA_MODIFIED;
   const graph: JsonLdObject[] = [
     {
       "@type": "WebPage",
@@ -432,7 +437,7 @@ export function seoLandingPageGraph(input: {
       description: input.description,
       url,
       inLanguage: "nl-NL",
-      dateModified: "2026-07-06",
+      dateModified,
       isPartOf: websiteRef(),
       publisher: orgRef(),
       speakable: {

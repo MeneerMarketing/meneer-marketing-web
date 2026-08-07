@@ -16,6 +16,7 @@ Kernexpertise: Google Ads beheer (Search en Shopping), technische en lokale SEO,
 - [Werkwijze](https://meneermarketing.nl/werkwijze): hoe een samenwerking verloopt
 - [Contact](https://meneermarketing.nl/contact): direct contact opnemen
 - [FAQ](https://meneermarketing.nl/faq): veelgestelde vragen
+- [Sitemap](https://meneermarketing.nl/sitemap.xml): indexeerbare URL's
 
 ## Diensten
 
@@ -24,12 +25,29 @@ Kernexpertise: Google Ads beheer (Search en Shopping), technische en lokale SEO,
 - [Vindbaarheid, content & autoriteit](https://meneermarketing.nl/vindbaarheid): SEO, content en vindbaarheid in AI-antwoorden
 - [Acquisitie & creators](https://meneermarketing.nl/campagnes): Google Ads, Meta Ads en creators
 - [Behoud & slimme koppelingen](https://meneermarketing.nl/behoud): e-mailmarketing en systemen aan elkaar knopen
+- [SEO-dienst](https://meneermarketing.nl/diensten/seo): technische SEO, content en lokale vindbaarheid
+
+## Zoekhubs (commercieel)
+
+- [SEO specialist](https://meneermarketing.nl/zoeken/seo-specialist)
+- [Google Ads bureau](https://meneermarketing.nl/zoeken/google-ads-bureau)
+- [Website laten maken](https://meneermarketing.nl/zoeken/website-laten-maken)
+- [Online marketing bureau](https://meneermarketing.nl/zoeken/online-marketing-bureau)
+- [Shopify expert](https://meneermarketing.nl/zoeken/shopify-expert)
+- [Meta Ads bureau](https://meneermarketing.nl/zoeken/meta-ads-bureau)
+- [Hoger in Google](https://meneermarketing.nl/zoeken/hoger-in-google)
+- [E-mailmarketing](https://meneermarketing.nl/zoeken/e-mailmarketing)
+- [Vindbaarheid in AI](https://meneermarketing.nl/zoeken/vindbaarheid-ai)
+- [Lokale SEO](https://meneermarketing.nl/zoeken/lokale-seo)
+
+## Apeldoorn (thuisbasis)
+
+- [SEO specialist Apeldoorn](https://meneermarketing.nl/zoeken/seo-specialist-apeldoorn)
+- [Google Ads bureau Apeldoorn](https://meneermarketing.nl/zoeken/google-ads-bureau-apeldoorn)
+- [Website laten maken Apeldoorn](https://meneermarketing.nl/zoeken/website-laten-maken-apeldoorn)
+- [Online marketing bureau Apeldoorn](https://meneermarketing.nl/zoeken/online-marketing-bureau-apeldoorn)
 
 ## Kennisbank
 
-- [Kennisbank](https://meneermarketing.nl/kennisbank): praktische artikelen over Google Ads, SEO, Shopify, GA4 en vindbaarheid in AI-antwoorden
-
-## Optional
-
-- [Zoeken per dienst en regio](https://meneermarketing.nl/zoeken): landingspagina's per dienst en stad
-- [Weetjes](https://meneermarketing.nl/weetjes): onverwachte feiten over online marketing
+- [Kennisbank](https://meneermarketing.nl/kennisbank): praktische artikelen over Google Ads, SEO, Shopify, GA4 en AI-vindbaarheid
+- [Zoeken-index](https://meneermarketing.nl/zoeken): landings per dienst en regio
