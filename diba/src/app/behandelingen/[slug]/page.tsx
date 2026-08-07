@@ -275,8 +275,8 @@ export default async function BehandelingPage({ params }: PageProps) {
                         raakt
                           ? "bg-[var(--g-700)]"
                           : doorheen
-                            ? "border-2 border-[var(--g-500)]"
-                            : "border border-[var(--g-300)]"
+                            ? "bg-[var(--g-400)]"
+                            : "bg-[var(--g-200)]"
                       }`}
                     />
                     <span

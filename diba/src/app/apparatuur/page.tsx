@@ -214,7 +214,7 @@ export default function ApparatuurPage() {
               </Link>
               <Link
                 href="/huidprofiel"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-300)] px-6 text-[var(--t-label)] transition-colors hover:border-[var(--g-700)] hover:text-[var(--t-strong)]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
               >
                 Maak je huidprofiel
               </Link>

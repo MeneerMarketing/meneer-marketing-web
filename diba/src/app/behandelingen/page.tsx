@@ -46,8 +46,14 @@ export const metadata: Metadata = {
 };
 
 const TROTS = [
-  { getal: `${DIBA_SALONIZED_RATING.toLocaleString("nl-NL", { minimumFractionDigits: 1 })}`, bij: "op Salonized" },
-  { getal: DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL"), bij: "reviews" },
+  {
+    getal: `${DIBA_SALONIZED_RATING.toLocaleString("nl-NL", { minimumFractionDigits: 1 })}`,
+    bij: "op Salonized",
+  },
+  {
+    getal: DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL"),
+    bij: "reviews",
+  },
   { getal: "2017", bij: "open in Hillegersberg" },
 ] as const;
 
@@ -79,7 +85,10 @@ export default function BehandelingenPage() {
         />
 
         <div className="relative mx-auto max-w-[1800px] px-5 pt-12 pb-16 sm:px-9 lg:px-[7.5vw] lg:pt-16 lg:pb-20">
-          <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label flex flex-wrap gap-2"
+          >
             <Link href="/" className="hover:text-[var(--g-700)]">
               Home
             </Link>
@@ -94,9 +103,9 @@ export default function BehandelingenPage() {
           </h1>
 
           <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel
-            bereikt. Waar een behandeling aankomt bepaalt de rest: wat het kost, hoe lang
-            je rood bent en hoe vaak je terug moet.
+            Van een peeling die aan de oppervlakte blijft tot een laser die de
+            haarwortel bereikt. Waar een behandeling aankomt bepaalt de rest:
+            wat het kost, hoe lang je rood bent en hoe vaak je terug moet.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -108,7 +117,7 @@ export default function BehandelingenPage() {
             </a>
             <Link
               href="/huidprofiel"
-              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-300)] px-6 text-[var(--t-label)] transition-colors hover:border-[var(--g-700)] hover:text-[var(--t-strong)]"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
             >
               Of maak eerst je huidprofiel
             </Link>
@@ -154,9 +163,9 @@ export default function BehandelingenPage() {
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder
-              behandelingen er nog bij zijn. Daar zit alles in: wat het kost, hoe lang je
-              rood bent en hoe vaak je terug moet.
+              Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe
+              minder behandelingen er nog bij zijn. Daar zit alles in: wat het
+              kost, hoe lang je rood bent en hoe vaak je terug moet.
             </p>
           </div>
 
@@ -179,8 +188,9 @@ export default function BehandelingenPage() {
             <span className="diba-accent">Filter tot er twee overblijven.</span>
           </h2>
           <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede
-            filter staat nergens anders, terwijl het vaak het meest bepaalt.
+            Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat
+            tweede filter staat nergens anders, terwijl het vaak het meest
+            bepaalt.
           </p>
 
           <div className="mt-12">
@@ -207,18 +217,20 @@ export default function BehandelingenPage() {
 
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Die vraag heeft geen antwoord zonder jouw huid erbij. Dieper is niet beter,
-              duurder is niet beter, en nieuwer al helemaal niet. Een behandeling is
-              passend of niet passend, en dat verschilt per persoon en per moment.
+              Die vraag heeft geen antwoord zonder jouw huid erbij. Dieper is
+              niet beter, duurder is niet beter, en nieuwer al helemaal niet.
+              Een behandeling is passend of niet passend, en dat verschilt per
+              persoon en per moment.
             </p>
             <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-              Ook je huidprofiel hierboven geeft geen advies. Het legt naast elkaar wat jij
-              hebt ingevuld en wat een behandeling doet, en zegt waar dat wringt. Dat is
-              iets anders dan een aanbeveling, en het is met opzet iets anders.
+              Ook je huidprofiel hierboven geeft geen advies. Het legt naast
+              elkaar wat jij hebt ingevuld en wat een behandeling doet, en zegt
+              waar dat wringt. Dat is iets anders dan een aanbeveling, en het is
+              met opzet iets anders.
             </p>
             <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-              Wat bij jou past hoor je na de meting, van een mens. Soms is dat geen van de
-              vijf.
+              Wat bij jou past hoor je na de meting, van een mens. Soms is dat
+              geen van de vijf.
             </p>
           </div>
         </div>
@@ -244,9 +256,9 @@ export default function BehandelingenPage() {
 
               <div>
                 <p className="max-w-[50ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  In Behandeling Nul kijken we onder vast licht wat er bij jou aan de hand
-                  is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te
-                  beginnen.
+                  In Behandeling Nul kijken we onder vast licht wat er bij jou
+                  aan de hand is. Neem je huidprofiel mee: dan hoef je het
+                  gesprek niet bij nul te beginnen.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-3">
                   <Link

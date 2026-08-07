@@ -113,7 +113,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
   return (
     <div
       ref={venster}
-      className="grid gap-8 rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:p-10"
+      className="grid gap-8 rounded-[var(--r-lg)] bg-white p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:p-10"
     >
       {/* ── De doorsnede ── */}
       <div>
@@ -339,7 +339,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
         </ol>
 
         {/* Waar het op aangrijpt. Bij licht is dit natuurkunde, geen marketing. */}
-        <div className="mt-6 rounded-[var(--r-sm)] border border-[var(--g-100)] p-5">
+        <div className="mt-6 rounded-[var(--r-md)] bg-[var(--g-050)] p-5">
           <p className="diba-label text-[var(--t-label)]">Grijpt aan op</p>
           <p className="mt-2 text-[16px] leading-6 font-medium text-[var(--t-strong)]">
             {doelwit.naam}

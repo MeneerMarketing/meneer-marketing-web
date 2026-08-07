@@ -97,7 +97,7 @@ export default function Prijslijst() {
                 className={`diba-label inline-flex min-h-11 items-center rounded-[var(--r-pill)] px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                   g.id === lijst
                     ? "diba-pill-active"
-                    : "border border-[var(--g-300)] text-[var(--t-label)] hover:border-[var(--g-700)]"
+                    : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
                 }`}
               >
                 {g.label}

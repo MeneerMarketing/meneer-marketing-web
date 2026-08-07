@@ -93,7 +93,7 @@ export default async function ApparaatPage({ params }: PageProps) {
           </div>
 
           {/* Wat erop draait. De hele reden dat deze pagina bestaat naast de behandeling. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
             <Label>Hierop draait</Label>
             {behandelingen.length > 0 ? (
               <ul className="mt-5 space-y-2">
@@ -224,7 +224,7 @@ export default async function ApparaatPage({ params }: PageProps) {
               </Link>
               <Link
                 href="/apparatuur"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-300)] px-6 text-[var(--t-label)] transition-colors hover:border-[var(--g-700)] hover:text-[var(--t-strong)]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
               >
                 Alle apparatuur
               </Link>

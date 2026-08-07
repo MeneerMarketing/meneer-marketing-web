@@ -32,7 +32,6 @@ import { publicCopy } from "@/lib/copy-flags";
  * Alles is een link. Er zit geen scherm tussen de vergelijking en het apparaat zelf.
  */
 
-
 const MECHANIEKEN: readonly {
   readonly id: Werkwijze;
   readonly label: string;
@@ -178,14 +177,15 @@ export default function Dieptevergelijker() {
                       </span>
                       {/* Tot hier komt dit apparaat.
 
-                          Een meetapparaat krijgt een open balk en geen volle. Het komt
-                          wel tot die diepte, maar het doet daar niets, en een volle balk
-                          naast een laser zou net doen alsof dat hetzelfde is. */}
+                          Een meetapparaat krijgt een lichte balk en geen groene. Het
+                          komt wel tot die diepte, maar het doet daar niets, en dezelfde
+                          balk als een laser zou net doen alsof dat hetzelfde is.
+
+                          Dit was een gestippelde omlijning. Dat leest goed en het is een
+                          streep, en de huisstijl kent alleen vlakken. */}
                       <span
                         className={`absolute inset-y-0 left-0 flex items-center justify-end rounded-[var(--r-pill)] pr-3 ${
-                          leest
-                            ? "border-2 border-dashed border-[var(--g-700)]"
-                            : "bg-[var(--g-700)]"
+                          leest ? "bg-[var(--g-300)]" : "bg-[var(--g-700)]"
                         }`}
                         style={{
                           width: `${a.diepte}%`,
@@ -194,7 +194,7 @@ export default function Dieptevergelijker() {
                       >
                         <span
                           className={`text-[12px] leading-4 font-semibold tabular-nums ${
-                            leest ? "text-[var(--g-800)]" : "text-white"
+                            leest ? "text-[var(--g-900)]" : "text-white"
                           }`}
                         >
                           {a.diepte}
@@ -313,7 +313,7 @@ function Chip({
       className={`diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] px-5 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
         actief
           ? "bg-[var(--g-700)] text-white"
-          : "border border-[var(--g-300)] text-[var(--t-label)] hover:border-[var(--g-700)] hover:text-[var(--t-strong)]"
+          : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
       }`}
     >
       {label}
