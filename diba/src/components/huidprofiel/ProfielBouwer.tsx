@@ -73,30 +73,22 @@ function Vraag({
   children: React.ReactNode;
 }) {
   return (
-    /* Ingevuld licht op, nog open blijft ingetogen.
+    /* Vlakken, geen lijnen, en alle kaarten dezelfde.
      *
-     * Eerst was het andersom: wit als je nog moest en mint als je klaar was. Dat leest
-     * verkeerd om (een afgeronde vraag hoort naar voren te komen, niet weg te zakken) en
-     * het brak bovendien de keuzeknoppen, want die zijn wit en verdwenen dan in een witte
-     * kaart. Nu staan ze op mint als de vraag nog open is en op wit als hij af is, en in
-     * beide gevallen steken ze af. */
-    <section
-      className={`relative overflow-hidden rounded-[var(--r-lg)] border transition-all duration-300 ${
-        klaar
-          ? "border-[var(--g-300)] bg-white shadow-[var(--shadow-float)]"
-          : "border-[var(--g-100)] bg-[var(--g-025)]"
-      }`}
-    >
-      {/* De rail links kleurt mee. Kleur die iets betekent: je ziet aan de zijkant hoe
-          ver je bent, ook als de kop zelf buiten beeld staat. */}
-      <span
-        aria-hidden="true"
-        className={`absolute inset-y-0 left-0 w-1.5 transition-colors duration-300 ${
-          klaar ? "bg-[var(--g-600)]" : "bg-[var(--g-100)]"
-        }`}
-      />
-
-      <div className="grid gap-8 p-7 pl-8 sm:p-9 sm:pl-11 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 lg:p-11 lg:pl-14">
+     * Er stonden hier randen, een schaduw en een gekleurde rail. Alle drie van mij, geen
+     * van drieën uit het ontwerp: de Figma-homepage bouwt met gevulde vlakken en geen
+     * enkele streep. Een rand is de makkelijke manier om iets af te bakenen en precies
+     * wat deze huisstijl niet doet.
+     *
+     * Daarna liet ik de vulling de staat dragen (wit als het nog open stond, mint als
+     * het af was). Ook mis: de sectie eronder is zelf mint, dus de ingevulde kaarten
+     * losten erin op. Wit op mint is het contrast dat de homepage gebruikt, en dat werkt
+     * alleen als álle kaarten wit zijn.
+     *
+     * De staat zit dus in de badge en het label, zoals de homepage het ook doet: met
+     * pillen en niet met vlakken. */
+    <section className="overflow-hidden rounded-[var(--r-lg)] bg-white">
+      <div className="grid gap-8 p-7 sm:p-9 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 lg:p-11">
         {/* Niet meer sticky.
 
             Toen elke vraag nog een strook op één doorlopende achtergrond was, hielp het
@@ -104,12 +96,16 @@ function Vraag({
             zijn werkt het tegen je: de kop zakt binnen zijn eigen kaart naar beneden en
             komt halverwege de antwoorden te hangen. Kaarten zijn kort genoeg. */}
         <div className="self-start">
-          <p className="diba-label flex items-center gap-2.5 text-[var(--t-label)]">
+          <p
+            className={`diba-label flex items-center gap-2.5 ${
+              klaar ? "text-[var(--g-700)]" : "text-[var(--t-muted)]"
+            }`}
+          >
             <span
-              className={`flex h-7 w-7 items-center justify-center rounded-[var(--r-pill)] text-[12px] tabular-nums transition-colors duration-300 ${
+              className={`grid h-8 w-8 place-items-center rounded-[var(--r-pill)] text-[12px] tabular-nums transition-colors duration-300 ${
                 klaar
                   ? "bg-[var(--g-700)] text-white"
-                  : "border border-[var(--g-300)] text-[var(--t-muted)]"
+                  : "bg-[var(--g-050)] text-[var(--g-700)]"
               }`}
             >
               {nummer}
@@ -159,7 +155,7 @@ function Blokkop({
     <div className="flex items-start gap-5 pt-4">
       <span
         aria-hidden="true"
-        className="diba-label mt-1 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-075)] px-3 py-1.5 text-[var(--g-800)]"
+        className="diba-label mt-1.5 shrink-0 rounded-[var(--r-pill)] bg-white px-4 py-2 text-[var(--g-700)]"
       >
         {nummer}
       </span>
@@ -196,10 +192,12 @@ function Keuzes({
             type="button"
             aria-pressed={aan}
             onClick={() => onKies(o.id)}
-            className={`flex min-h-14 flex-col justify-center rounded-[var(--r-md)] border px-5 py-3 text-left transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+            /* g-050 op wit is precies wat de homepage doet met haar lijstitems.
+               Geen rand, alleen een vlak dat een tint donkerder is dan de kaart. */
+            className={`flex min-h-14 flex-col justify-center rounded-[var(--r-md)] px-5 py-3.5 text-left transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
               aan
-                ? "border-[var(--g-700)] bg-[var(--g-700)]"
-                : "border-[var(--g-100)] bg-white hover:-translate-y-0.5 hover:border-[var(--g-300)] hover:shadow-[var(--shadow-float)]"
+                ? "bg-[var(--g-700)]"
+                : "bg-[var(--g-050)] hover:bg-[var(--g-100)]"
             }`}
           >
             <span
@@ -564,7 +562,7 @@ export default function ProfielBouwer() {
         ) : (
           <div className="mt-10 space-y-4">
             {/* ── 1. Je huid, teruggelezen ── */}
-            <div className="rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-7 sm:p-9 lg:p-11">
+            <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
               <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:gap-14">
                 <div className="mx-auto lg:mx-0">
                   {profiel.scan ? (
@@ -630,7 +628,7 @@ export default function ProfielBouwer() {
             </div>
 
             {/* ── 2. Wat erbij past, met de reden erbij ── */}
-            <div className="rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-7 sm:p-9 lg:p-11">
+            <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
               <p className="diba-label text-[var(--t-label)]">
                 {past.length === 0
                   ? "Nog niets dat volledig past"
@@ -644,7 +642,7 @@ export default function ProfielBouwer() {
                       <li key={m.behandeling.slug}>
                         <Link
                           href={`/behandelingen/${m.behandeling.slug}`}
-                          className="block rounded-[var(--r-md)] border border-[var(--g-100)] p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--g-300)] hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-6"
+                          className="block rounded-[var(--r-md)] bg-[var(--g-050)] p-5 transition-colors duration-200 hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-6"
                         >
                           <span className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                             <span className="flex items-baseline gap-3">
@@ -752,10 +750,13 @@ export default function ProfielBouwer() {
             </div>
 
             {/* ── 4. Wat er dan gebeurt ── */}
-            <div className="rounded-[var(--r-lg)] border-2 border-[var(--g-300)] bg-[var(--g-025)] p-7 sm:p-9 lg:p-11">
+            {/* Het zwaarste mintvlak van de pagina, zoals de featuretegels op de
+                homepage. Labels staan hier in g-800 en niet in t-label: dat laatste haalt
+                op deze tint geen AA (4,21) en g-800 wel (7,14). */}
+            <div className="rounded-[var(--r-lg)] bg-[var(--g-200)] p-7 sm:p-9 lg:p-11">
               <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
                 <div>
-                  <p className="diba-label text-[var(--t-label)]">
+                  <p className="diba-label text-[var(--g-800)]">
                     De volgende stap
                   </p>
                   <h3 className="diba-display-s mt-4 max-w-[16ch]">
@@ -765,7 +766,7 @@ export default function ProfielBouwer() {
                       Meten, niet behandelen.
                     </span>
                   </h3>
-                  <p className="mt-6 max-w-[52ch] text-[16px] leading-8 text-[var(--t-body)]">
+                  <p className="mt-6 max-w-[52ch] text-[16px] leading-8 text-[var(--g-900)]">
                     Er gebeurt niets met je huid. Er wordt gekeken, gemeten en
                     uitgelegd, en je gaat naar huis met wat er uit de meting
                     kwam en wat dat betekent voor je doel. Ook als dat betekent
@@ -790,7 +791,7 @@ export default function ProfielBouwer() {
 
                 {/* De feiten komen uit behandelingen.ts, zodat de prijs hier nooit
                     los kan gaan lopen van de prijslijst. */}
-                <dl className="space-y-4 self-center">
+                <dl className="space-y-3 self-center rounded-[var(--r-md)] bg-white p-6 sm:p-7">
                   {[
                     [
                       "Wat het kost",
@@ -805,7 +806,7 @@ export default function ProfielBouwer() {
                   ].map(([kop, waarde]) => (
                     <div
                       key={kop}
-                      className="flex items-baseline justify-between gap-6 border-b border-[var(--g-100)] pb-4 last:border-b-0 last:pb-0"
+                      className="flex items-baseline justify-between gap-6 border-b border-[var(--g-050)] pb-3 last:border-b-0 last:pb-0"
                     >
                       <dt className="diba-label shrink-0 text-[var(--t-label)]">
                         {kop}
