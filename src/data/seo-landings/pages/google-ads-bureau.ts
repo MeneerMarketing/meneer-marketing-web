@@ -6,7 +6,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Google Ads bureau · campagnes die niet lekken | Meneer Marketing",
   metaDescription:
-    "Google Ads bureau dat eerst checkt of je site converteert. Search, Shopping en Performance Max. Geen setup die geld verdampt.",
+    "Google Ads bureau dat eerst checkt of je site converteert. Search, Shopping en Performance Max. Setup die je marge beschermt.",
   keywords: [
     "google ads bureau",
     "google ads bureau nederland",

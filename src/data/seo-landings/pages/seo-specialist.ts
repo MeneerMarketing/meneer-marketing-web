@@ -6,7 +6,7 @@ export const SEO_SPECIALIST: SeoLandingPage = {
   category: "seo",
   metaTitle: "SEO specialist · 12+ jaar Google-rankings | Meneer Marketing",
   metaDescription:
-    "SEO specialist met 12+ jaar ervaring. Landingspagina's, techniek en content die ranken. Geen rapporten zonder uitvoering.",
+    "SEO specialist met 12+ jaar ervaring. Landingspagina's, techniek en content die ranken. Rapporten met uitvoering erbij.",
   keywords: [
     "seo specialist",
     "seo specialist inhuren",
