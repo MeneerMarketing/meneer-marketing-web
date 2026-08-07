@@ -4,9 +4,9 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   slug: "website-laten-maken",
   primaryKeyword: "website laten maken",
   category: "website",
-  metaTitle: "Website laten maken · Next.js custom build | Meneer Marketing",
+  metaTitle: "Website laten maken from scratch | Meneer Marketing",
   metaDescription:
-    "Website laten maken from scratch in Next.js. Snel, SEO-klaar en gebouwd om te converteren. Eigen code, klaar voor ads en groei.",
+    "Website laten maken in Next.js: custom build, snel, SEO-klaar en gebouwd om leads te winnen. Klaar voor Google Ads en Meta. Plan en prijs helder.",
   keywords: [
     "website laten maken",
     "website laten bouwen",

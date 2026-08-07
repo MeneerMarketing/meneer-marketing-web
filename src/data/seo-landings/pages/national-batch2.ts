@@ -136,20 +136,20 @@ export const LOKALE_SEO: SeoLandingPage = {
   slug: "lokale-seo",
   primaryKeyword: "lokale seo",
   category: "seo",
-  metaTitle: "Lokale SEO · gevonden in je regio | Meneer Marketing",
+  metaTitle: "Lokale SEO · Maps, reviews en regio-pagina's | Meneer Marketing",
   metaDescription:
-    "Lokale SEO voor bedrijven in Brabant en heel NL. Google Maps, reviews, regio-pagina's. Gevonden worden als iemand zoekt met een plaatsnaam.",
+    "Lokale SEO voor MKB: Google Business Profile, reviews en regio-pagina's die ranken. Gevonden worden als iemand jouw dienst plus plaatsnaam zoekt.",
   keywords: [
     "lokale seo",
     "lokale vindbaarheid",
     "google maps seo",
     "seo voor lokale bedrijven",
   ],
-  eyebrow: "Lokale SEO",
+  eyebrow: "Lokale SEO · map pack eerst",
   headline: "Lokale SEO zodat je buurman",
   headlineAccent: "jou vindt, niet alleen je concurrent.",
   subheadline:
-    "Iemand zoekt 'loodgieter Eindhoven' of 'marketingbureau Someren'. Sta jij in de map pack? Lokale SEO is geen trucje, het is structuur + autoriteit in je regio.",
+    "Iemand zoekt je dienst plus stad. Sta jij in Maps met reviews en een pagina die klopt? Ik zet GBP, NAP en regio-landings strak, landelijk of lokaal.",
   pains: [
     {
       title: "Onzichtbaar op Maps",
@@ -529,9 +529,9 @@ export const EMAILMARKETING: SeoLandingPage = {
   slug: "e-mailmarketing",
   primaryKeyword: "e-mailmarketing",
   category: "content",
-  metaTitle: "E-mailmarketing · flows die verkopen | Meneer Marketing",
+  metaTitle: "E-mailmarketing · flows die omzet terugbrengen | Meneer Marketing",
   metaDescription:
-    "E-mailmarketing voor webshops en leads. Welkomstflows, abandoned cart, nieuwsbrieven die niet in spam belanden. Gekoppeld aan je shop en ads.",
+    "E-mailmarketing voor webshops en leads: welkom, abandoned cart, segmentatie. Gekoppeld aan Shopify of CRM. Mails die openen en verkopen, netjes op consent.",
   keywords: [
     "e-mailmarketing",
     "email marketing",
@@ -540,11 +540,11 @@ export const EMAILMARKETING: SeoLandingPage = {
     "e-mailmarketing webshop",
     "marketing automation e-mail",
   ],
-  eyebrow: "E-mailmarketing",
+  eyebrow: "E-mailmarketing · je lijst werkt wél",
   headline: "E-mailmarketing die",
   headlineAccent: "niet in de spamfolder eindigt.",
   subheadline:
-    "Je lijst is goud. Maar je mails zijn saai, te laat of illegaal zonder consent. Ik zet e-mailmarketing op die verkoopt en past bij je merk. Geen 'dear valued customer'-energie.",
+    "Je lijst is goud als de flows kloppen. Ik zet welkom, cart en win-back op die bij je merk passen. Bij SkinComplete zit mail in het groeiplan, niet als bijzaak.",
   pains: [
     {
       title: "Lijst zonder plan",

@@ -149,7 +149,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     metaDescription:
       "Organisch verkeer is gratis verkeer. SEO, AI-antwoorden, Maps en reviews. Ik zorg dat je klopt waar mensen zoeken, ook buiten Google.",
     keywords: [
-      "SEO bureau Nederland",
+      "vindbaarheid online",
       "vindbaar in ChatGPT",
       "Vindbaarheid in AI-antwoorden",
       "lokale SEO",
@@ -158,7 +158,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     headline: "Gevonden worden. Overal waar je klant zoekt.",
     subheadline:
-      "Google is niet meer de enige plek waar klanten zoeken. Wij maken je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
+      "Google is niet meer de enige plek waar klanten zoeken. Ik maak je vindbaar in zoekmachines, AI-assistenten, Maps en op de plekken waar reviews de doorslag geven.",
     stats: [
       { label: "SEO", value: "Content · techniek" },
       { label: "AI-antwoorden", value: "ChatGPT · Gemini" },
@@ -166,18 +166,18 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     introParagraphs: [
       "Hier een feit dat veel ondernemers missen: een groeiend deel van je klanten vraagt eerst aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen geen optie meer.",
-      "Vindbaarheid is daarom breder geworden dan SEO alleen. Het is de combinatie van goede content, een technisch kloppende site, lokale aanwezigheid en reviews die vertrouwen geven. Wij pakken die keten als geheel op, want de onderdelen versterken elkaar.",
+      "Vindbaarheid is breder dan klassieke SEO. Het is content, techniek, lokale aanwezigheid en reviews die elkaar versterken. Ik pak die keten als geheel: van SEO-specialist-werk tot AI-antwoorden en Maps.",
     ],
     angleTitle: "SEO die bovenaan scoort. Organisch verkeer is gratis.",
     angleBody:
-      "Ik ben SEO-expert op hoog niveau: landingspagina's op wat klanten echt zoeken, techniek die Google vertrouwt, content die blijft ranken. Dat levert gratis verkeer op, maand na maand. Sterke SEO staat op zich al. Ads kunnen later en worden dan goedkoper. SkinComplete bewees het: bovenaan in Google vóór er één euro aan ads ging.",
+      "Landingspagina's op wat klanten echt zoeken, techniek die Google vertrouwt, content die blijft ranken. Dat levert gratis verkeer op, maand na maand. Ads kunnen later en worden dan goedkoper. SkinComplete bewees het: bovenaan in Google vóór er één euro aan ads ging.",
     serviceIntro:
       "Van klassieke SEO tot AI-antwoorden en reviews: dit zijn de trajecten binnen vindbaarheid.",
-    processTitle: "Zo bouwen we je vindbaarheid op",
+    processTitle: "Zo bouw ik je vindbaarheid op",
     processSteps: [
       {
         title: "Zoekgedrag in kaart",
-        body: "Wat typt en vraagt jouw klant, in Google én aan AI? Daar richten we structuur en content op in.",
+        body: "Wat typt en vraagt jouw klant, in Google én aan AI? Daar richt ik structuur en content op in.",
       },
       {
         title: "Techniek op orde",
@@ -185,7 +185,7 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
       },
       {
         title: "Content die antwoordt",
-        body: "Landingspagina's op wat klanten echt typen. Geen opgeblazen blogkalender. Wel pagina's die bovenaan scoren.",
+        body: "Landingspagina's op wat klanten echt typen. Scherpe antwoorden per intentie, klaar om te ranken.",
       },
       {
         title: "Autoriteit uitbouwen",
@@ -194,10 +194,10 @@ export const pillarPages: Record<PillarSlug, PillarPageData> = {
     ],
     proofTitle: "Vindbaarheid is een bezit, geen kostenpost",
     proofBody:
-      "Advertenties stoppen zodra je budget stopt. Een sterke organische positie blijft klanten opleveren, maand na maand. Daarom behandelen we vindbaarheid als investering: meetbaar in posities, verkeer en omzet per pagina.",
+      "Advertenties stoppen zodra je budget stopt. Een sterke organische positie blijft klanten opleveren, maand na maand. Daarom behandel ik vindbaarheid als investering: meetbaar in posities, verkeer en omzet per pagina.",
     ctaTitle: "Klaar om overal gevonden te worden?",
     ctaBody:
-      "We checken waar je nu staat in Google én in AI-antwoorden, en welke stappen het snelst traffic en vertrouwen opleveren. Start met de intake.",
+      "Ik check waar je nu staat in Google én in AI-antwoorden, en welke stappen het snelst traffic en vertrouwen opleveren. Start met de intake.",
   },
   campagnes: {
     slug: "campagnes",

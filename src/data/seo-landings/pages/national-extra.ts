@@ -23,9 +23,9 @@ export const META_ADS_BUREAU: SeoLandingPage = {
   slug: "meta-ads-bureau",
   primaryKeyword: "meta ads bureau",
   category: "google-ads",
-  metaTitle: "Meta Ads bureau · Instagram & Facebook die opleveren | Meneer Marketing",
+  metaTitle: "Meta Ads bureau · Instagram & Facebook die verkopen | Meneer Marketing",
   metaDescription:
-    "Meta Ads bureau voor Instagram en Facebook. UGC, creatives en landings die converteren. Eén lijn met Google Ads. Ik beheer het zelf.",
+    "Meta Ads bureau voor Instagram en Facebook. UGC, creatives en landings in één lijn met Google Ads. Wekelijks bijsturen op omzet, niet op likes.",
   keywords: [
     "meta ads bureau",
     "facebook ads bureau",
@@ -34,11 +34,11 @@ export const META_ADS_BUREAU: SeoLandingPage = {
     "facebook advertising",
     "instagram ads specialist",
   ],
-  eyebrow: "Meta Ads",
+  eyebrow: "Meta Ads · funnel, niet feed-roulette",
   headline: "Meta Ads bureau dat creatives",
   headlineAccent: "niet verloopt in de feed.",
   subheadline:
-    "Facebook en Instagram zijn één platform. Ik bouw campagnes, creatives en landings die bij je marge passen. Boost-knop mag in de prullenbak.",
+    "Facebook en Instagram zitten in één Ads Manager. Ik bouw creatives, targeting en landings die bij je marge passen. Boost-knop blijft waar hij hoort: uit.",
   pains: [
     { title: "Boostpost-gokken", body: "De knop 'promoten' is roulette met je merk. Wel bereik, weinig funnel, dikke factuur." },
     { title: "Stock die niemand gelooft", body: "Mensen scrollen door perfecte stockfoto's alsof het reclame uit 2014 is." },
@@ -112,7 +112,7 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
   category: "seo",
   metaTitle: "Online marketing bureau · één aanspreekpunt | Meneer Marketing",
   metaDescription:
-    "Online marketing bureau dat bouwt, vindbaar maakt en campagnes draait. Site, SEO, Google Ads en Meta. Eén plan, één aanspreekpunt.",
+    "Online marketing bureau voor site, SEO, Google Ads en Meta Ads. Ik ben strategie én uitvoering. Eerst volgorde, dan budget dat rendeert.",
   keywords: [
     "online marketing bureau",
     "marketing bureau nederland",
@@ -122,11 +122,11 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
     "internetmarketing bureau",
     "online marketing specialist",
   ],
-  eyebrow: "Online marketing",
+  eyebrow: "Online marketing · ik ben je manager",
   headline: "Online marketing bureau dat",
   headlineAccent: "alles onder één dak heeft.",
   subheadline:
-    "SEO, ads en site onder één dak. Ik ben je online marketing manager: strategie én uitvoering.",
+    "Site, SEO, Google Ads en Meta onder één lijn. Ik ben je online marketing manager: prioriteiten, bouw en campagnes, zonder doorgeefluik.",
   pains: [
     { title: "Te veel partijen", body: "Iedereen wijst naar de ander als het niet werkt." },
     { title: "Rapporten zonder actie", body: "Mooie slides. Pagina's die niet ranken. Ads die niet converteren." },
@@ -195,9 +195,9 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
   slug: "shopify-expert",
   primaryKeyword: "shopify expert",
   category: "shopify",
-  metaTitle: "Shopify expert · custom webshop & theme | Meneer Marketing",
+  metaTitle: "Shopify expert · custom theme & groei | Meneer Marketing",
   metaDescription:
-    "Shopify expert voor custom themes, webshops laten maken en B2B-portalen. Snel, SEO-klaar, klaar voor Shopping. SkinComplete-niveau.",
+    "Shopify expert voor custom themes, B2B-portalen en shops die klaar zijn voor SEO en Shopping. Zoals bij SkinComplete: eerst organisch, dan ads.",
   keywords: [
     "shopify expert",
     "shopify specialist nederland",
@@ -206,11 +206,11 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
     "shopify theme laten maken",
     "custom shopify theme",
   ],
-  eyebrow: "Shopify expert",
+  eyebrow: "Shopify expert · custom, niet theme-store",
   headline: "Shopify expert die je shop",
   headlineAccent: "niet uit een thema-store tilt.",
   subheadline:
-    "Webshop laten maken op Shopify? Theme op maat? Ik bouw custom, koppel SEO en ads er direct op, en houd snelheid heilig.",
+    "Ik bouw Shopify die snel blijft, merk-eigen oogt en SEO plus Merchant Center vanaf de build meeneemt. Theme-apps als pleisters? Liever netjes in code.",
   pains: [
     { title: "Theme-limitaties", body: "Je wilt iets unieks. Het theme zegt nee of vraagt drie apps die je shop vertragen." },
     { title: "Trage shop", body: "Elke seconde kost omzet. Opgeblazen templates verdampen Shopping-budget." },
@@ -324,9 +324,9 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
   slug: "vindbaarheid-ai",
   primaryKeyword: "vindbaarheid ai",
   category: "content",
-  metaTitle: "Vindbaarheid in AI · ChatGPT & Gemini | Meneer Marketing",
+  metaTitle: "Vindbaarheid in AI · genoemd in ChatGPT | Meneer Marketing",
   metaDescription:
-    "Vindbaarheid in AI en ChatGPT: genoemd worden in antwoorden van ChatGPT, Gemini en co. Structuur, content en autoriteit die machines citeren.",
+    "Vindbaarheid in AI: genoemd worden in ChatGPT en Gemini. Citeerbare pagina's, schema en autoriteit. Google SEO en AI-antwoorden in één contentplan.",
   keywords: [
     "vindbaarheid ai",
     "chatgpt vindbaarheid",
@@ -335,11 +335,11 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
     "gevonden worden in chatgpt",
     "ai antwoorden seo",
   ],
-  eyebrow: "AI-antwoorden",
+  eyebrow: "AI-antwoorden · jij in het antwoord",
   headline: "Vindbaar in AI.",
   headlineAccent: "Of je bent geen optie meer.",
   subheadline:
-    "Steeds meer klanten vragen ChatGPT of Gemini om advies. Sta jij niet in het antwoord, dan besta je niet. Ik bouw techniek en content die AI wél citeert.",
+    "Steeds meer klanten vragen ChatGPT of Gemini om advies. Ik bouw content en techniek die machines wél citeren, naast klassieke Google-SEO.",
   pains: [
     { title: "Onzichtbaar in AI", body: "Je concurrent wél genoemd. Jij niet. Eerste indruk telt." },
     { title: "Alleen klassieke SEO", body: "Google rankt je. AI negeert je. Twee werelden, één contentplan nodig." },

@@ -4,24 +4,22 @@ export const SEO_SPECIALIST: SeoLandingPage = {
   slug: "seo-specialist",
   primaryKeyword: "seo specialist",
   category: "seo",
-  metaTitle: "SEO specialist inhuren · bouw + rankings | Meneer Marketing",
+  metaTitle: "SEO specialist die bouwt én rankt | Meneer Marketing",
   metaDescription:
-    "SEO specialist die landingspagina's bouwt, techniek fixt en content schrijft. 12+ jaar Google. Rapport met uitvoering erbij, vanuit Apeldoorn.",
+    "SEO specialist met 12+ jaar Google. Ik schrijf, bouw en fix landings die ranken op koopintentie. Plan op impact, uitvoering erbij.",
   keywords: [
     "seo specialist",
     "seo specialist inhuren",
     "seo expert nederland",
     "zoekmachine optimalisatie specialist",
-    "seo bureau",
     "seo uitbesteden",
     "zoekmachine optimalisatie",
-    "zoekmachine marketing",
   ],
-  eyebrow: "SEO specialist",
+  eyebrow: "SEO specialist · uitvoering inbegrepen",
   headline: "SEO specialist die ook",
   headlineAccent: "de pagina bouwt.",
   subheadline:
-    "Veel SEO-specialisten leveren advies. Ik schrijf, bouw en publiceer. Twaalf jaar Google, honderden pagina's, en nog steeds hands-on in de code.",
+    "Veel SEO stopt bij een PDF. Ik schrijf de pagina, bouw hem live en stuur bij op wat écht leads oplevert. 12 jaar Google, nog steeds hands-on.",
   pains: [
     {
       title: "Advies zonder uitvoering",
