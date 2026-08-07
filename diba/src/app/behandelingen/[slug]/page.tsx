@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
+import Variantkiezer from "@/components/behandelingen/Variantkiezer";
 import Label from "@/components/ui/Label";
 import { apparatenVoorBehandeling } from "@/data/apparatuur";
 import ProofBar from "@/components/ui/ProofBar";
@@ -8,7 +10,7 @@ import {
   BEHANDELINGEN,
   HUIDLAGEN,
   behandelingVoorSlug,
-  prijsTekst,
+  diepteVanLagen,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -34,7 +36,16 @@ import {
  * De wel- en nietlijst zijn even lang. Dat is geen toeval maar de bedoeling: een lijstje
  * van zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak.
  *
- * Twee donkergroene vlakken per pagina: het nietblok en de afsluiter (§5).
+ * DONKERGROENE VLAKKEN: DRIE, EN DAT IS ER ÉÉN TE VEEL (§5).
+ *
+ * Gemeten op deze pagina: de herokaart, het nietblok en de afsluiter. Dit stond hier
+ * eerder als "twee" genoteerd, maar de herokaart is altijd al donkergroen geweest en
+ * werd niet meegeteld. Het waren er zelfs vier zolang het lagentrapje ook donkere balken
+ * had; dat trapje is nu licht, dus het gaat de goede kant op.
+ *
+ * Welke van de drie licht wordt is een ontwerpkeuze en geen opruimklus, want alle drie
+ * dragen ze iets: de herokaart de getallen, het nietblok de grenzen, de afsluiter de
+ * uitnodiging. [BESLUIT-OKAN]
  */
 
 type PageProps = { params: Promise<{ slug: string }> };
@@ -43,7 +54,9 @@ export function generateStaticParams() {
   return BEHANDELINGEN.map((b) => ({ slug: b.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const b = behandelingVoorSlug(slug);
   if (!b) return {};
@@ -69,10 +82,13 @@ export default async function BehandelingPage({ params }: PageProps) {
      behandelingen die erop draaien. Beide uit dezelfde tabel. */
   const apparaten = apparatenVoorBehandeling(b.slug);
 
-  const diepsteLaag =
-    b.lagen.length === 0
-      ? null
-      : HUIDLAGEN.find((l) => l.id === b.lagen[b.lagen.length - 1]);
+  /* De diepste laag die geraakt wordt, en op welke plek die in de rij staat. Dat tweede
+     bepaalt welke lagen erboven gepasseerd worden om er te komen. */
+  const diepsteIndex = HUIDLAGEN.reduce(
+    (tot, laag, i) => (b.lagen.includes(laag.id) ? i : tot),
+    -1,
+  );
+  const diepsteLaag = diepsteIndex < 0 ? null : HUIDLAGEN[diepsteIndex];
 
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
@@ -88,7 +104,10 @@ export default async function BehandelingPage({ params }: PageProps) {
       <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -144,31 +163,39 @@ export default async function BehandelingPage({ params }: PageProps) {
             <Label opDonker>In het kort</Label>
             <dl className="mt-6 space-y-4">
               <div className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4">
-                <dt className="diba-label diba-label-on-dark">Hoe diep</dt>
+                <dt className="diba-label diba-label-on-dark shrink-0">
+                  Hoe diep
+                </dt>
                 <dd className="diba-card-title text-right">
                   {diepsteLaag ? diepsteLaag.naam : "Raakt niets"}
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4">
-                <dt className="diba-label diba-label-on-dark">Herstel</dt>
+                <dt className="diba-label diba-label-on-dark shrink-0">
+                  Herstel
+                </dt>
                 <dd className="diba-card-title text-right">
                   {publicCopy(b.herstel)}
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4">
-                <dt className="diba-label diba-label-on-dark">Hoe vaak</dt>
+                <dt className="diba-label diba-label-on-dark shrink-0">
+                  Hoe vaak
+                </dt>
                 <dd className="diba-card-title text-right">
                   {publicCopy(b.sessies, "Nog niet vastgesteld")}
                 </dd>
               </div>
-              <div className="flex items-baseline justify-between gap-6">
-                <dt className="diba-label diba-label-on-dark">Per sessie</dt>
-                <dd className="diba-card-title text-right tabular-nums">
-                  {prijsTekst(b.prijs)}
-                </dd>
-              </div>
             </dl>
 
+            {/* De prijs staat buiten de dl, want het is geen enkel getal meer maar een
+                keuze. Alle varianten even zichtbaar, ook de duurste. */}
+            <div className="mt-4">
+              <Variantkiezer
+                varianten={b.varianten ?? []}
+                basisprijs={b.prijs}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -207,37 +234,84 @@ export default async function BehandelingPage({ params }: PageProps) {
             {publicCopy(b.werking)}
           </p>
 
-          {/* De lagen als trapje: je ziet in één oogopslag waar het stopt. */}
-          <ul className="mt-10 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)]">
-            {HUIDLAGEN.map((laag) => {
+          {/* Draait deze behandeling op een apparaat, dan hoort het mechaniek erbij.
+
+              De diepte komt uit de lagen van deze behandeling en niet uit het apparaat:
+              de Fotona haalt vijfentachtig procent, maar niet elke behandeling erop gaat
+              zo diep. Het apparaat levert het hoe, de behandeling bepaalt het hoever. */}
+          {apparaten.length > 0 && b.lagen.length > 0 ? (
+            <div className="mt-10">
+              <Werkingsvenster
+                apparaat={apparaten[0]}
+                diepte={diepteVanLagen(b.lagen)}
+              />
+            </div>
+          ) : null}
+
+          {/* De lagen in woorden.
+
+              Dit was een trapje met donkergroene balken, en dat werkte tot de doorsnede
+              erboven kwam te staan. Twee keer hetzelfde signaal geven is niet dubbel zo
+              duidelijk maar half zo rustig, en het luidste van de twee wint dan van het
+              nauwkeurigste. De tekening zegt nu waar het aankomt; deze lijst voegt toe
+              wat elke laag eigenlijk is. */}
+          <ul className="mt-10 divide-y divide-[var(--g-100)] overflow-hidden rounded-[var(--r-md)] bg-white">
+            {HUIDLAGEN.map((laag, i) => {
               const raakt = b.lagen.includes(laag.id);
+              /* Een laag waar niet gewerkt wordt maar die wel boven de diepste ligt,
+                 wordt gepasseerd. Een naald die tot in de lederhuid komt gaat nu
+                 eenmaal door de hoornlaag heen, en "blijft onaangeroerd" zou daar de
+                 tekening tegenspreken. */
+              const doorheen = !raakt && i < diepsteIndex;
               return (
                 <li
                   key={laag.id}
-                  className={`flex flex-wrap items-baseline gap-x-5 gap-y-1 p-5 ${
-                    raakt ? "bg-[var(--g-700)]" : "bg-white"
-                  }`}
+                  className="flex flex-wrap items-baseline gap-x-5 gap-y-1 p-5"
                 >
-                  <span
-                    className={`w-[13rem] shrink-0 text-[15px] leading-6 font-medium ${
-                      raakt ? "text-white" : "text-[var(--t-strong)]"
-                    }`}
-                  >
-                    {laag.naam}
+                  <span className="flex w-[13rem] shrink-0 items-baseline gap-2.5">
+                    <span
+                      aria-hidden="true"
+                      className={`h-2.5 w-2.5 shrink-0 translate-y-[-1px] rounded-full ${
+                        raakt
+                          ? "bg-[var(--g-700)]"
+                          : doorheen
+                            ? "border-2 border-[var(--g-500)]"
+                            : "border border-[var(--g-300)]"
+                      }`}
+                    />
+                    <span
+                      className={`text-[15px] leading-6 ${
+                        raakt
+                          ? "font-medium text-[var(--t-strong)]"
+                          : doorheen
+                            ? "text-[var(--t-body)]"
+                            : "text-[var(--t-muted)]"
+                      }`}
+                    >
+                      {laag.naam}
+                    </span>
                   </span>
                   <span
                     className={`flex-1 text-[14px] leading-6 ${
-                      raakt ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"
+                      raakt || doorheen
+                        ? "text-[var(--t-body)]"
+                        : "text-[var(--t-muted)]"
                     }`}
                   >
                     {laag.zin}
                   </span>
                   <span
                     className={`diba-label shrink-0 ${
-                      raakt ? "diba-label-on-dark" : "text-[var(--t-muted)]"
+                      raakt || doorheen
+                        ? "text-[var(--t-label)]"
+                        : "text-[var(--t-muted)]"
                     }`}
                   >
-                    {raakt ? "Hier werkt het" : "Blijft onaangeroerd"}
+                    {raakt
+                      ? "Hier werkt het"
+                      : doorheen
+                        ? "Gaat er doorheen"
+                        : "Blijft onaangeroerd"}
                   </span>
                 </li>
               );
@@ -268,7 +342,9 @@ export default async function BehandelingPage({ params }: PageProps) {
                 <span className="diba-label text-[var(--t-muted)] tabular-nums">
                   Stap {i + 1}
                 </span>
-                <p className="diba-card-title mt-3 text-[var(--t-strong)]">{s.kop}</p>
+                <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+                  {s.kop}
+                </p>
                 <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(s.zin)}
                 </p>
@@ -291,8 +367,8 @@ export default async function BehandelingPage({ params }: PageProps) {
             <span className="diba-accent">en dat is met opzet.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak.
-            Daarom staan hier links en rechts evenveel regels.
+            Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar
+            opmaak. Daarom staan hier links en rechts evenveel regels.
           </p>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -396,9 +472,10 @@ export default async function BehandelingPage({ params }: PageProps) {
               <span className="diba-accent-on-dark">weten we nog niet.</span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Deze pagina vertelt wat {b.naam.toLowerCase()} doet. Of het bij jouw huid het
-              juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een
-              meting. Soms komt daar uit dat je hier niets aan hebt.
+              Deze pagina vertelt wat {b.naam.toLowerCase()} doet. Of het bij
+              jouw huid het juiste is, hangt af van wat er bij jou aan de hand
+              is, en dat begint met een meting. Soms komt daar uit dat je hier
+              niets aan hebt.
             </p>
             <Link
               href="/intake"

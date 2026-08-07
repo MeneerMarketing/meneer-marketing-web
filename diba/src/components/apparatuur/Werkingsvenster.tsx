@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import { DOELWITTEN, type Apparaat } from "@/data/apparatuur";
-import { HUIDLAGEN } from "@/data/behandelingen";
+import { HUIDLAGEN, LAAGAANDEEL } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 
 /**
@@ -40,11 +40,16 @@ const OPPERVLAK = 88;
 const BODEM = 300;
 
 /**
- * Onderkant van elke laag, in dezelfde verhouding als de as op het overzicht
- * (9,5 / 20 / 29,5 / 41 procent). Dezelfde schaal op beide plekken, anders is
- * vergelijken een truc.
+ * Onderkant van elke laag, afgeleid uit dezelfde verhoudingen als de vergelijkingsas op
+ * het overzicht. Afgeleid en niet overgeschreven: twee lijstjes met dezelfde getallen
+ * lopen vroeg of laat uit elkaar, en dan klopt de vergelijking tussen apparaten niet meer
+ * zonder dat iemand het merkt.
  */
-const LAAGGRENZEN = [108, 150, 213, BODEM] as const;
+const LAAGGRENZEN = LAAGAANDEEL.reduce<number[]>((rij, deel) => {
+  const vorig = rij.length === 0 ? OPPERVLAK : rij[rij.length - 1];
+  rij.push(vorig + ((BODEM - OPPERVLAK) * deel) / 100);
+  return rij;
+}, []);
 
 /** De diepte uit de data (procenten) omgerekend naar een y in de tekening. */
 function diepteY(procent: number): number {
@@ -56,9 +61,20 @@ function golf(y: number, amplitude = 3): string {
   return `M0 ${y} C 45 ${y - amplitude}, 90 ${y + amplitude}, 135 ${y} S 225 ${y - amplitude}, 270 ${y}`;
 }
 
-type Props = { readonly apparaat: Apparaat };
+type Props = {
+  readonly apparaat: Apparaat;
+  /**
+   * De diepte van dít geval, als die afwijkt van wat het apparaat maximaal haalt.
+   *
+   * Op een behandelpagina is dat het verschil tussen wat de Fotona kán (85) en waar deze
+   * ene behandeling op wordt ingesteld. Het apparaat levert het mechaniek, de behandeling
+   * bepaalt de diepte. Zonder dit onderscheid zou elke behandeling op een apparaat de
+   * maximale diepte claimen, en dat is precies één claim te veel.
+   */
+  readonly diepte?: number;
+};
 
-export default function Werkingsvenster({ apparaat }: Props) {
+export default function Werkingsvenster({ apparaat, diepte }: Props) {
   const [stap, setStap] = useState(0);
   const [zelfGestuurd, setZelfGestuurd] = useState(false);
   const [rustig, setRustig] = useState(true);
@@ -66,7 +82,7 @@ export default function Werkingsvenster({ apparaat }: Props) {
   const venster = useRef<HTMLDivElement>(null);
 
   const fasen = apparaat.fasen;
-  const bodem = diepteY(apparaat.diepte);
+  const bodem = diepteY(diepte ?? apparaat.diepte);
   const doelwit = DOELWITTEN[apparaat.doelwit];
 
   /* Beweging alleen als het besturingssysteem er niet om vraagt hem te laten. */

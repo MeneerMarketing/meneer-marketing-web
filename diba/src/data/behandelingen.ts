@@ -74,6 +74,35 @@ export const HUIDLAGEN = [
 
 export type HuidlaagId = (typeof HUIDLAGEN)[number]["id"];
 
+/**
+ * Hoeveel van de doorsnede elke laag beslaat, in procenten.
+ *
+ * Dit staat hier en niet in een component, omdat drie plekken dezelfde schaal gebruiken:
+ * het werkingsvenster op de apparatuurpagina's, de vergelijkingsas op het overzicht en de
+ * behandelpagina's. Zodra die uit elkaar lopen is vergelijken een truc geworden.
+ *
+ * De verhoudingen zijn schematisch en niet anatomisch exact. [MEDISCHE-CHECK-ROJDA]
+ */
+export const LAAGAANDEEL = [9.5, 20, 29.5, 41] as const;
+
+/**
+ * De onderkant van de diepste laag die geraakt wordt, als percentage van de doorsnede.
+ *
+ * Een behandeling erft niet de maximale diepte van het apparaat waar hij op draait. De
+ * Fotona haalt vijfentachtig procent, maar dat betekent niet dat elke behandeling erop
+ * zo diep gaat. Wat een behandeling raakt staat in haar eigen `lagen`, en dat is wat
+ * hier geteld wordt.
+ */
+export function diepteVanLagen(lagen: readonly HuidlaagId[]): number {
+  if (lagen.length === 0) return 0;
+  const diepste = HUIDLAGEN.reduce(
+    (tot, laag, i) => (lagen.includes(laag.id) ? i : tot),
+    -1,
+  );
+  if (diepste < 0) return 0;
+  return LAAGAANDEEL.slice(0, diepste + 1).reduce((s, d) => s + d, 0);
+}
+
 /** Waar een behandeling voor gemaakt is. Stuurt de groepen op het overzicht. */
 export const CATEGORIEEN = [
   { id: "meting", label: "Meten", zin: "Eerst kijken, nog niets doen." },

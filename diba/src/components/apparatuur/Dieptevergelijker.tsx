@@ -8,7 +8,7 @@ import {
   type Doelwit,
   type Werkwijze,
 } from "@/data/apparatuur";
-import { HUIDLAGEN } from "@/data/behandelingen";
+import { HUIDLAGEN, LAAGAANDEEL } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 
 /**
@@ -32,8 +32,6 @@ import { publicCopy } from "@/lib/copy-flags";
  * Alles is een link. Er zit geen scherm tussen de vergelijking en het apparaat zelf.
  */
 
-/** De lagen in de verhouding waarin ze in het werkingsvenster staan. */
-const LAAGDELEN = [9.5, 20, 29.5, 41] as const;
 
 const MECHANIEKEN: readonly {
   readonly id: Werkwijze;
@@ -167,7 +165,7 @@ export default function Dieptevergelijker() {
                         aria-hidden="true"
                         className="absolute inset-0 flex"
                       >
-                        {LAAGDELEN.map((deel, i) => (
+                        {LAAGAANDEEL.map((deel, i) => (
                           <span
                             key={HUIDLAGEN[i].id}
                             style={{
@@ -217,8 +215,8 @@ export default function Dieptevergelijker() {
           negen procent breed. Dan botsen de namen, en dat is niet op te lossen met een
           kleiner lettertype maar door het label los te koppelen van de bandbreedte. */}
       <ul className="mt-6 grid gap-x-6 gap-y-2 sm:grid-cols-2 xl:grid-cols-4">
-        {LAAGDELEN.map((deel, i) => {
-          const vanaf = LAAGDELEN.slice(0, i).reduce((s, d) => s + d, 0);
+        {LAAGAANDEEL.map((deel, i) => {
+          const vanaf = LAAGAANDEEL.slice(0, i).reduce((s, d) => s + d, 0);
           return (
             <li key={HUIDLAGEN[i].id} className="flex items-baseline gap-2.5">
               <span
