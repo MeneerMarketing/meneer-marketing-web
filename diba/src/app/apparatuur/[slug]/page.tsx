@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
 import Label from "@/components/ui/Label";
 import { APPARATUUR, apparaatVoorSlug } from "@/data/apparatuur";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
@@ -30,7 +31,9 @@ export function generateStaticParams() {
   return APPARATUUR.map((a) => ({ slug: a.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const a = apparaatVoorSlug(slug);
   if (!a) return {};
@@ -60,7 +63,10 @@ export default async function ApparaatPage({ params }: PageProps) {
       <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -114,9 +120,34 @@ export default async function ApparaatPage({ params }: PageProps) {
             )}
 
             <p className="mt-6 border-t border-[var(--g-100)] pt-5 text-[14px] leading-6 text-[var(--t-muted)]">
-              Welke instelling er gekozen wordt hangt af van je huid, en dat bepaalt een
-              mens na de meting. Niet dit apparaat en niet deze pagina.
+              Welke instelling er gekozen wordt hangt af van je huid, en dat
+              bepaalt een mens na de meting. Niet dit apparaat en niet deze
+              pagina.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Het mechaniek ── */}
+      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+        <div className="mx-auto max-w-[1800px]">
+          <div className="max-w-[62ch]">
+            <Label>Hoe het werkt</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Niet wat het doet.
+              <br />
+              <span className="diba-accent">Hoe het het doet.</span>
+            </h2>
+            <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
+              Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte.
+              Dat is meteen ook de grens van wat het kan. Hieronder zie je die
+              grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je
+              ze naast elkaar kunt leggen.
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <Werkingsvenster apparaat={a} />
           </div>
         </div>
       </section>
@@ -131,8 +162,8 @@ export default async function ApparaatPage({ params }: PageProps) {
             <span className="diba-accent">en dat is met opzet.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant.
-            Daarom staan hier links en rechts evenveel regels.
+            Een apparatuurpagina zonder deze rechterkolom is een folder van de
+            fabrikant. Daarom staan hier links en rechts evenveel regels.
           </p>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -179,9 +210,10 @@ export default async function ApparaatPage({ params }: PageProps) {
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil
-              zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of
-              iemand durft te zeggen dat het bij jou niet past.
+              Twee klinieken met dit apparaat geven niet hetzelfde resultaat.
+              Het verschil zit in wat er vooraf gemeten is, welke instelling er
+              wordt gekozen en of iemand durft te zeggen dat het bij jou niet
+              past.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link

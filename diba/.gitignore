@@ -6,3 +6,6 @@
 !.env.example
 *.tsbuildinfo
 .vercel
+
+# verificatiebeelden van de capture-scripts
+/scratch/

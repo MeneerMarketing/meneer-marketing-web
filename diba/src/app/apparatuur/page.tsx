@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Dieptevergelijker from "@/components/apparatuur/Dieptevergelijker";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Label from "@/components/ui/Label";
-import {
-  APPARAAT_CATEGORIEEN,
-  APPARATUUR,
-  type ApparaatCategorie,
-} from "@/data/apparatuur";
+import { APPARAAT_CATEGORIEEN, APPARATUUR } from "@/data/apparatuur";
 import { behandelingVoorSlug } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -59,7 +56,10 @@ export default function ApparatuurPage() {
           className="pointer-events-none absolute top-16 right-24 hidden h-[170px] w-[170px] rotate-12 text-[var(--g-200)] lg:block"
         />
         <div className="relative mx-auto max-w-[1800px] px-5 pt-12 pb-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
-          <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label flex flex-wrap gap-2"
+          >
             <Link href="/" className="hover:text-[var(--g-700)]">
               Home
             </Link>
@@ -74,14 +74,14 @@ export default function ApparatuurPage() {
           </h1>
 
           <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben de
-            HydraFacial. Alsof het apparaat het werk doet en wij alleen de stekker erin
-            steken.
+            Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben
+            de HydraFacial. Alsof het apparaat het werk doet en wij alleen de
+            stekker erin steken.
           </p>
           <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Het is andersom. Een apparaat is gereedschap. Wat telt is de instelling, de
-            hand die het vasthoudt en of het bij jouw huid past. Daarom staat bij elk
-            apparaat hieronder ook wat het níet kan.
+            Het is andersom. Een apparaat is gereedschap. Wat telt is de
+            instelling, de hand die het vasthoudt en of het bij jouw huid past.
+            Daarom staat bij elk apparaat hieronder ook wat het níet kan.
           </p>
         </div>
       </section>
@@ -103,12 +103,14 @@ export default function ApparatuurPage() {
               </div>
               <div>
                 <p className="text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt
-                  gekozen en of iemand durft te zeggen dat een behandeling bij jou niet
-                  past. Een merknaam zegt daar niets over.
+                  Het verschil zit in wat er vooraf gemeten is, welke instelling
+                  er wordt gekozen en of iemand durft te zeggen dat een
+                  behandeling bij jou niet past. Een merknaam zegt daar niets
+                  over.
                 </p>
                 <p className="mt-4 text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Daarom begint elk traject hier met een meting en niet met een apparaat.
+                  Daarom begint elk traject hier met een meting en niet met een
+                  apparaat.
                 </p>
                 <Link
                   href="/intake"
@@ -122,8 +124,33 @@ export default function ApparatuurPage() {
         </div>
       </section>
 
-      {/* ── De apparaten ── */}
+      {/* ── Alles op één schaal ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto max-w-[1800px]">
+          <div className="max-w-[62ch]">
+            <Label>Naast elkaar</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              {APPARATUUR.length} apparaten,
+              <br />
+              <span className="diba-accent">één schaal.</span>
+            </h2>
+            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Het verschil tussen deze apparaten zit in twee dingen: waar ze op
+              aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens
+              van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij
+              daar niet komt, en dat is hieronder te zien in plaats van te
+              geloven.
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <Dieptevergelijker />
+          </div>
+        </div>
+      </section>
+
+      {/* ── De apparaten ── */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto max-w-[1800px] space-y-16">
           {perCategorie.map((c) => (
             <div key={c.id}>
@@ -136,7 +163,9 @@ export default function ApparatuurPage() {
                       className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-7"
                     >
                       {a.merk ? (
-                        <span className="diba-label text-[var(--t-muted)]">{a.merk}</span>
+                        <span className="diba-label text-[var(--t-muted)]">
+                          {a.merk}
+                        </span>
                       ) : null}
                       <span className="diba-card-title mt-2 text-[var(--t-strong)]">
                         {a.naam}
@@ -172,9 +201,9 @@ export default function ApparatuurPage() {
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Wie begint bij de techniek komt uit bij waar het meest over geschreven is.
-              Dat is zelden hetzelfde als wat bij jouw huid past. Begin bij wat je wil
-              veranderen, of laat het eerst meten.
+              Wie begint bij de techniek komt uit bij waar het meest over
+              geschreven is. Dat is zelden hetzelfde als wat bij jouw huid past.
+              Begin bij wat je wil veranderen, of laat het eerst meten.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
