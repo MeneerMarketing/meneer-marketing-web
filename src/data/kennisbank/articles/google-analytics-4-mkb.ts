@@ -7,7 +7,7 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     "Google Analytics 4 voor MKB: welke events ertoe doen, conversies die kloppen en antwoorden op de vraag welke campagne geld opleverde.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "behoud",
   keywords: [
     "google analytics 4 mkb",
@@ -47,6 +47,96 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     {
       type: "p",
       text: "Je opent GA4. Duizend grafieken. Sessions, engaged sessions, scroll depth, iets met explorations. Je vraag is simpel: welke campagne leverde gisteren een order op? Stilte. GA4 is geen slecht product. Het is een product dat je vertelt dat je druk bent, niet dat je rijk wordt.",
+    },
+    {
+      type: "callout",
+      text: "Mijn regel: meet weinig, meet het goed. Eén primaire conversie die je bankrekening herkent, slaat twintig vanity-events.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Dashboard-detox",
+      title: "Vanity-event-meter",
+      intro:
+        "Vink aan wat in jouw GA4 of Ads als ‘succes’ telt. Hoe hoger, hoe meer je optimaliseert op drukte in plaats van geld.",
+      storageKey: "mm-ga4-vanity",
+      eventName: "ga4_vanity_complete",
+      sharePath: "/kennisbank/google-analytics-4-mkb",
+      scoreNoun: "vanity",
+      ctaHref: "/diensten/tracking",
+      ctaLabel: "Tracking",
+      checks: [
+        {
+          id: "scroll",
+          label: "Scroll 90% of engaged session staat als primary conversie",
+          fix: "Haal het uit primary. Dat is diagnostiek, geen doel.",
+        },
+        {
+          id: "waarde",
+          label: "Purchase zonder value of currency",
+          fix: "Stuur orderwaarde mee. Anders is ROAS decoratie.",
+        },
+        {
+          id: "mismatch",
+          label: "Ads-cijfers wijken structureel af van shop of CRM",
+          fix: "Test zelf een conversie. Fix tags vóór je budget verhoogt.",
+        },
+        {
+          id: "micro",
+          label: "Form start of pageview stuurt Smart Bidding",
+          fix: "Alleen generate_lead / purchase / call die ertoe doen.",
+        },
+        {
+          id: "consent",
+          label: "Banner en Consent Mode heb je nooit in Tag Assistant getest",
+          fix: "Incognito: accepteer en weiger. Zie je verschil? Zo nee, kapot.",
+        },
+        {
+          id: "events",
+          label: "Meer dan tien events gemarkeerd als conversie",
+          fix: "Snoei tot wat je bankrekening snapt. Minder is slimmer.",
+        },
+        {
+          id: "utm",
+          label: "UTM's zijn een wildwest; niemand houdt dezelfde namen aan",
+          fix: "Eén naamconventie. Anders vergelijk je appels met koekjes.",
+        },
+        {
+          id: "never",
+          label: "Na de laatste site-update heeft niemand tracking gecheckt",
+          fix: "Na elke checkout- of tag-wijziging: sanity check. Tracking rot stil.",
+        },
+      ],
+      tiers: [
+        {
+          id: "bank",
+          min: 0,
+          max: 24,
+          label: "Bankrekening-first",
+          quip: "Je meet wat telt. Blijf vies van scroll-als-doel.",
+        },
+        {
+          id: "rommel",
+          min: 25,
+          max: 49,
+          label: "Bijna bruikbaar",
+          quip: "Er zit nog theater in. Snoei primary conversies deze week.",
+        },
+        {
+          id: "druk",
+          min: 50,
+          max: 74,
+          label: "Drukte-dashboard",
+          quip: "GA4 juicht. Omzet zucht. Klassiek MKB-patroon.",
+        },
+        {
+          id: "fantasie",
+          min: 75,
+          max: 100,
+          label: "Fantasie-funnel",
+          quip: "Smart Bidding vliegt op fantomen. Stop opschalen tot tags kloppen.",
+        },
+      ],
     },
     {
       type: "callout",

@@ -7,7 +7,7 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
     "Je Google Ads-account verzamelt elke week zoektermen die geld kosten. Dit rapport lezen is goedkoper dan je denkt. Zo doe je het zonder uren te verdwalen.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "zoektermenrapport google ads",
@@ -47,6 +47,96 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
     {
       type: "p",
       text: "Er is een rapport in Google Ads dat precies laat zien waarvoor je betaalt. Niet wat je dacht in te stellen. Wat mensen echt typten voordat ze op je advertentie klikten. Het heet het zoektermenrapport. Het is gratis. Het staat in je account. En het wordt door ongeveer niemand gelezen totdat de boekhouder vraagt waarom de omzet niet meebeweegt.",
+    },
+    {
+      type: "callout",
+      text: "Mijn ritme: twintig minuten per week, top 20 op kosten, hardop lezen. Alsof iemand naast je staat met je pinpas. Dat ritme bespaart meer dan een creatieve brainstorm.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Boekhouder-check",
+      title: "Zoektermen-blindheidmeter",
+      intro:
+        "Vink aan wat klopt voor jouw account. Hoe hoger, hoe meer je betaalt voor woorden die je nooit zou goedkeuren.",
+      storageKey: "mm-zoektermen-blind",
+      eventName: "zoektermen_blind_complete",
+      sharePath: "/kennisbank/zoektermenrapport-google-ads",
+      scoreNoun: "blindheid",
+      ctaHref: "/diensten/google-ads",
+      ctaLabel: "Google Ads",
+      checks: [
+        {
+          id: "never",
+          label: "Ik heb het zoektermenrapport deze maand niet geopend",
+          fix: "Open het nu. 30 dagen, sort op kosten. Top 20 hardop.",
+        },
+        {
+          id: "gratis",
+          label: "In de top staan gratis, vacature, DIY of opleiding",
+          fix: "Negatief op account- of campagneniveau. Vandaag nog.",
+        },
+        {
+          id: "broad",
+          label: "Broad of AI Max aan zonder wekelijks zoektermen-ritme",
+          fix: "Of ritme erin, of match types strakker. Open kraan anders.",
+        },
+        {
+          id: "bureau",
+          label: "Mijn bureau deelt nooit zoektermen-top 20",
+          fix: "Vraag ernaar. Geruststelling zonder woorden is geen beheer.",
+        },
+        {
+          id: "landing",
+          label: "Goede termen bestaan, maar landings matcht niet",
+          fix: "Keyword of ad group naar een URL die exact dat belooft.",
+        },
+        {
+          id: "negatief-bang",
+          label: "Ik durf nauwelijks negatieven toe te voegen",
+          fix: "Negatieven snijden ruis, niet groei. Budget gaat naar kopers.",
+        },
+        {
+          id: "pmax-only",
+          label: "Alles draait op PMax, dus ik kijk nooit naar Search-terms",
+          fix: "Houd Search of companion zichtbaar. PMax is geen excuus voor blindheid.",
+        },
+        {
+          id: "maand",
+          label: "Ik check alleen als de factuur pijn doet",
+          fix: "Wekelijks twintig minuten. Pijn voorkomen is goedkoper dan pijn uitleggen.",
+        },
+      ],
+      tiers: [
+        {
+          id: "scherp",
+          min: 0,
+          max: 24,
+          label: "Pinpas-bewaker",
+          quip: "Je leest wat mensen typen. Blijf zo saai. Saai spaart.",
+        },
+        {
+          id: "half",
+          min: 25,
+          max: 49,
+          label: "Af en toe nieuwsgierig",
+          quip: "Beter dan niets. Zet het in je agenda alsof het payroll is.",
+        },
+        {
+          id: "blind",
+          min: 50,
+          max: 74,
+          label: "Dashboard-toerist",
+          quip: "Groene ROAS, grijze zoektermen. Klassiek geldlek.",
+        },
+        {
+          id: "boekhouder",
+          min: 75,
+          max: 100,
+          label: "Boekhouder-verrassing",
+          quip: "Je ontdekt het rapport als het al te laat voelt. Open het vóór die mail komt.",
+        },
+      ],
     },
     {
       type: "callout",
