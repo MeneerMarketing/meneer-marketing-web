@@ -150,7 +150,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
       title: "Stel: je shop is live, maar traag en onzichtbaar",
       paragraphs: [
         "Je hebt een theme, wat apps en een productfeed die half werkt. Ads zijn duur, organisch is stil, B2B loopt nog via mail. Klassiek plafond.",
-        "Ik scan snelheid, apps, SEO en checkout. Daarna een plan: wat opschonen, wat custom, wat eerst voor conversie. Geen big-bang als een gerichte rebuild slimmer is.",
+        "Ik scan snelheid, apps, SEO en checkout. Daarna een plan: wat opschonen, wat custom, wat eerst voor conversie. Gerichte rebuild als dat slimmer is dan big-bang.",
         "Eerste wins gaan live: snellere LCP, schonere feed, sterkere productpagina. Daarna pas budget omhoog. Zo voel je of de expert-route werkt.",
       ],
     },

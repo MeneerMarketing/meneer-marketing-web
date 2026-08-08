@@ -35,7 +35,7 @@ const BATCH5_PROCESS: Record<string, readonly SeoLandingStep[]> = {
     { title: "Maandelijks bijsturen", body: "ROAS, rankings en omzet per flow. Cijfers die actie geven." },
   ],
   "website-specialist": [
-    { title: "Audit op mobiel", body: "Snelheid, structuur, CTA's. Wat lekt vóór we bouwen." },
+    { title: "Audit op mobiel", body: "Snelheid, structuur, CTA's. Wat lekt vóór ik bouw." },
     { title: "Architectuur", body: "Next.js of Shopify. Custom build die meegroeit." },
     { title: "Bouwen & SEO-fundament", body: "Code, schema, interne links. Lighthouse groen." },
     { title: "Klaar voor campagnes", body: "GTM, landings, tracking. Ads kunnen aan." },
@@ -695,7 +695,7 @@ export const WEBSITE_LATEN_ONTWERPEN = buildNationalPage({
     "Ontwerp is geen plaatje. Het is structuur, vertrouwen en een pad naar actie. Ik ontwerp én bouw, zodat het ook echt online staat.",
   pains: [
     {
-      title: "Mooi mockup, geen developer",
+      title: "Mockup dat nooit live komt",
       body: "Het ontwerp verdwijnt in een map. De live site ziet er anders uit.",
     },
     {
@@ -728,7 +728,7 @@ export const WEBSITE_LATEN_ONTWERPEN = buildNationalPage({
     },
     {
       question: "Hebben jullie een huisstijl nodig?",
-      answer: "Helpt. Nog geen stijl? Dan bouwen we die mee op.",
+      answer: "Helpt. Nog geen stijl? Dan bouw ik die mee op.",
     },
   ],
   ctaTitle: "Ontwerp dat ook live komt?",

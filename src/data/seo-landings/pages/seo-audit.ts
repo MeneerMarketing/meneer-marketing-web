@@ -65,7 +65,7 @@ export const SEO_AUDIT: SeoLandingPage = {
     },
     {
       title: "Prioriteiten scherp",
-      body: "Drie tot zeven dingen die echt bewegen. Geen checklist van 200 items om indruk te maken.",
+      body: "Drie tot zeven dingen die echt bewegen. Korte lijst met impact, niet een checklist van 200 items om indruk te maken.",
     },
     {
       title: "Doorpakken of overdragen",
@@ -137,7 +137,7 @@ export const SEO_AUDIT: SeoLandingPage = {
         "Ik kijk naar techniek én content. Alleen crawl errors fixen terwijl je dunne pagina's hebt, levert weinig. Alleen blogs terwijl LCP rood is, ook niet.",
         "Omdat ik bouw, lees ik code. Shopify theme, Next.js, redirects, schema. Wat ik vind, kan ik vaak zelf live zetten. Dat is het verschil met een pure adviseur.",
         "Standaard traject: audit, fix, dan content en ads. Omgekeerd stapel je blogs op een lekkend dak.",
-        "Wil je een score van 100 in een tool? Dat is theater. Wil je weten welke drie fixes deze maand verkeer of conversie raken? Dan auditen we zo.",
+        "Wil je een score van 100 in een tool? Dat is theater. Wil je weten welke drie fixes deze maand verkeer of conversie raken? Dan audit ik zo.",
       ],
     },
     deepDive: {
@@ -153,9 +153,9 @@ export const SEO_AUDIT: SeoLandingPage = {
     scenario: {
       title: "Stel: je hebt al een audit van 80 pagina's",
       paragraphs: [
-        "Dan vraag ik wat er live is gegaan. Vaak: bijna niks. We filteren de drie blockers en zetten die eerst.",
+        "Dan vraag ik wat er live is gegaan. Vaak: bijna niks. Ik filter de drie blockers en zet die eerst.",
         "Daarna pas content of linkbuilding. Anders herhaal je het rapport over een jaar.",
-        "Zo wordt een oude audit alsnog nuttig. Of we gooien de theater-PDF weg en beginnen opnieuw, korter.",
+        "Zo wordt een oude audit alsnog nuttig. Of ik gooi de theater-PDF weg en begin opnieuw, korter.",
       ],
     },
   },

@@ -43,7 +43,7 @@ export const ONLINE_MARKETING_MANAGER: SeoLandingPage = {
     },
     {
       title: "Wekelijks bijsturen",
-      body: "Korte ritmes op data. Geen kwartaalgesprek over cijfers van drie maanden geleden.",
+      body: "Korte ritmes op data. Wekelijks bijsturen, geen kwartaalgesprek over oude cijfers.",
     },
     {
       title: "Eén aanspreekpunt",
@@ -134,7 +134,7 @@ export const ONLINE_MARKETING_MANAGER: SeoLandingPage = {
       title: "Online marketing manager: eigenaar van resultaat, niet van slides",
       paragraphs: [
         "Je zoekt een online marketing manager omdat te veel partijen naast elkaar werken of omdat je geen fulltime CMO kunt betalen. Je wilt iemand die prioriteert én uitvoert.",
-        "Ik ben die lijn: site, SEO, Google Ads, Meta, automatisering waar nodig. Eén brein. Geen tolk tussen junior en senior.",
+        "Ik ben die lijn: site, SEO, Google Ads, Meta, automatisering waar nodig. Eén brein. Jij praat met mij, niet met een tolk tussen junior en senior.",
         "In de praktijk telt volgorde. Fundament, dan volume. Manager-werk is ook zeggen wat níet deze maand gebeurt.",
         "Bureaus zonder uitvoering laten je met to-do's zitten. Freelancers zonder overzicht maken eilandjes. Het Meneer-model zit ertussen.",
         "Wil je alleen een sparringpartner? Soms genoeg. Wil je iemand die landings en campagnes live zet? Dan is dit de rol.",

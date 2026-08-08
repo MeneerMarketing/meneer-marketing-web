@@ -39,7 +39,7 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
     },
     {
       title: "Message match met ads",
-      body: "Google Ads en Meta landen op dezelfde belofte. Geen verrassing na de klik.",
+      body: "Google Ads en Meta landen op dezelfde belofte. Message match tot na de klik.",
     },
     {
       title: "Snel en technisch strak",
@@ -51,7 +51,7 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
     },
   ],
   visual: "website-build",
-  visualCaption: "Eén belofte. Eén CTA. Geen museumtour.",
+  visualCaption: "Eén belofte. Eén CTA. Alleen wat converteert.",
   processTitle: "Landing page laten maken die ads verdient",
   processSteps: [
     {
@@ -60,7 +60,7 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
     },
     {
       title: "Structuur en copy",
-      body: "Hook, bewijs, bezwaren, CTA. Tekst die klinkt als Meneer Marketing of als jouw merk. Geen brochurewol.",
+      body: "Hook, bewijs, bezwaren, CTA. Tekst die verkoopt, als Meneer Marketing of als jouw merk.",
     },
     {
       title: "Bouwen en meten",
@@ -128,7 +128,7 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
       title: "Landing page laten maken is message match, geen mooi plaatje",
       paragraphs: [
         "Je zoekt iemand voor een landing page laten maken omdat je ads klikken trekken en je site ze laat vallen. Het verschil zit zelden in nog een animatie. Het zit in één belofte, één CTA en snelheid die mobiel verdraagt.",
-        "Ik bouw from scratch: copy, structuur, code, tracking. De ad belooft X. De pagina bewijst X. Geen menu-rondleiding, geen blog-sidebar, geen 'bekijk ook onze vacatures'.",
+        "Ik bouw from scratch: copy, structuur, code, tracking. De ad belooft X. De pagina bewijst X. Alleen belofte en CTA, verder niets wat afleidt.",
         "Het patroon is steeds hetzelfde: landings die een vraag of product serieus nemen, daarna pas budget omhoog. Ads zonder landing is een emmer met een gat.",
         "SEO mag meeliften. Een goede landing beantwoordt een intentie zo helder dat Google én bezoekers er iets aan hebben. Ads-first is prima. Dunne doorway-pagina's niet.",
         "Wil je een Canva-pagina met je logo? Dan is er goedkopere hulp. Wil je een pagina die CPA omlaag trekt? Dan bouw ik hem alsof elke klik geld kost. Want dat doet hij.",
@@ -137,7 +137,7 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
     deepDive: {
       title: "Wat een converterende landing wél doet",
       paragraphs: [
-        "Bovenaan: belofte en CTA. Geen essay. Bezoeker uit een ad heeft seconden, geen lunchpauze. Bewijs volgt: social proof, specificiteit, bezwaren.",
+        "Belofte en CTA bovenaan. Kort en scherp. Bezoeker uit een ad heeft seconden, geen lunchpauze. Bewijs volgt: social proof, specificiteit, bezwaren.",
         "Mobiel eerst ontwerpen. Duimzone, korte alinea's, formulier zonder frictie. Desktop mag mooi. Mobiel moet werken.",
         "Tracking vóór launch: conversion events, bedankpagina, spamfilters op forms. Optimaliseren zonder meting is mening.",
         "Message match testen: zelfde woorden als de ad in kop en hero. Verander je ad, check of de landing nog klopt. Anders betaal je voor cognitieve dissonantie.",

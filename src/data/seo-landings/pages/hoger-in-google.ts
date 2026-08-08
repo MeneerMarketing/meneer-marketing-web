@@ -36,7 +36,7 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
   deliverables: [
     {
       title: "Landings per zoekvraag",
-      body: "Elke pagina pakt één intentie. Kop, antwoord, bewijs, CTA. Geen vangnet van 800 woorden zonder focus.",
+      body: "Elke pagina pakt één intentie. Kop, antwoord, bewijs, CTA. Scherp en compact, niet een woordenemmer zonder focus.",
     },
     {
       title: "Techniek die rankings vasthoudt",
@@ -57,7 +57,7 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
   processSteps: [
     {
       title: "Zoekintentie in kaart",
-      body: "Welke vragen stellen jouw klanten echt? Welke termen brengen leads, welke alleen ego? Die kaart bepaalt welke pagina's we eerst bouwen.",
+      body: "Welke vragen stellen jouw klanten echt? Welke termen brengen leads, welke alleen ego? Die kaart bepaalt welke pagina's ik eerst bouw.",
     },
     {
       title: "Fundament fixen",
@@ -65,7 +65,7 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
     },
     {
       title: "Pagina's bouwen die antwoorden",
-      body: "Custom landings, scherpe copy, schema, interne links. Geschreven voor mensen, leesbaar voor Google. Geen template die iedereen heeft.",
+      body: "Custom landings, scherpe copy, schema, interne links. Geschreven voor mensen, leesbaar voor Google. Op maat gebouwd, niet het template dat iedereen heeft.",
     },
     {
       title: "Autoriteit laten groeien",
@@ -109,7 +109,7 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
     {
       question: "Wat is belangrijker: content of techniek?",
       answer:
-        "Beide. Techniek zonder antwoord wint niks. Antwoord zonder indexatie of interne links zakt weg. Ik start bij wat het hardst remt in jouw situatie, daarna stapelen we wins.",
+        "Beide. Techniek zonder antwoord wint niks. Antwoord zonder indexatie of interne links zakt weg. Ik start bij wat het hardst remt in jouw situatie, daarna stapel ik wins.",
     },
     {
       question: "Kan ik morgen positie 1 garanderen?",
@@ -149,15 +149,15 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
         "Techniek houdt rankings vast: Core Web Vitals, indexatie, canonieke duidelijkheid, interne links. Content zonder fundering piekt kort en zakt na een update. Ik wil dat je stijging blijft.",
         "Elke ranking-pagina krijgt een helder antwoord bovenaan, bewijs in het midden, en een CTA die past bij de intentie. Zo match je wat mensen zoeken met wat jij verkoopt.",
         "Interne links zijn onderschat. Sterke URL's moeten stemmen geven aan nieuwe of zwakkere pagina's. Zonder dat netwerk blijf je eilandjes bouwen die Google niet serieus neemt.",
-        "Maandelijks kijken we naar queries die stijgen of dalen. Wat trekt, versterken we. Wat zakt, herschrijven of opsplitsen we. Hoger in Google is onderhoud met richting, geen eenmalige truc.",
+        "Maandelijks kijk ik naar queries die stijgen of dalen. Wat trekt, versterk ik. Wat zakt, herschrijf of splits ik op. Hoger in Google is onderhoud met richting, geen eenmalige truc.",
       ],
     },
     scenario: {
       title: "Stel: je concurrent staat overal boven je",
       paragraphs: [
         "Je typt je belangrijkste termen en ziet steeds dezelfde concurrent. Vaak hebben zij meer pagina's per intentie, sterkere interne links of simpelweg een snellere, duidelijkere site. Paniek helpt niet. Vergelijken wel.",
-        "Ik zet hun top-URL's naast de jouwe: intentie, diepte, techniek, CTA. Daarna kiezen we drie pagina's waarmee jij sneller kunt winnen dan op hun zwaarste kopterm te knallen.",
-        "Eerste releases gaan live. Daarna meten we beweging. Zo bouw je inhalen op bewijs, niet op het gevoel dat 'meer blogs' het vanzelf oplost.",
+        "Ik zet hun top-URL's naast de jouwe: intentie, diepte, techniek, CTA. Daarna kies ik drie pagina's waarmee jij sneller kunt winnen dan op hun zwaarste kopterm te knallen.",
+        "Eerste releases gaan live. Daarna meet ik beweging. Zo bouw je inhalen op bewijs, niet op het gevoel dat 'meer blogs' het vanzelf oplost.",
       ],
     },
   },

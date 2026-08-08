@@ -136,7 +136,7 @@ export const REMARKETING_GOOGLE_ADS: SeoLandingPage = {
         "Ik bouw lijsten op fase: PDP, cart, converters eruit. Creatives die product of bezwaar raken. Frequentie onder controle.",
         "Bij catalogi met veel varianten telt welk product iemand zag. Dynamic remarketing zonder schone feed toont de verkeerde SKU. Dat is erger dan geen remarketing.",
         "E-mail en remarketing horen bij elkaar. Cart abandon vaak eerst mail, ads als tweede tap. Dubbel dezelfde korting overal is ruis.",
-        "Wil je alleen 'zet remarketing aan'? Dat kan een toggle. Wil je CPA die daalt zonder merkschade? Dan bouwen we het als systeem.",
+        "Wil je alleen 'zet remarketing aan'? Dat kan een toggle. Wil je CPA die daalt zonder merkschade? Dan bouw ik het als systeem.",
       ],
     },
     deepDive: {

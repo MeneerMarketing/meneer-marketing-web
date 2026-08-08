@@ -95,7 +95,7 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
     {
       question: "Hoe meet je vindbaarheid in AI?",
       answer:
-        "Handmatige checks op queries die je klanten écht stellen, plus wat er in AI Overviews verschijnt. Geen magische dashboard-score die alles belooft.",
+        "Handmatige checks op queries die je klanten écht stellen, plus wat er in AI Overviews verschijnt. Echte signalen in plaats van een nep-score op een dashboard.",
     },
     {
       question: "Helpt bulk ChatGPT-content op mijn site?",

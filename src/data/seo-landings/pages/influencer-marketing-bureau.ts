@@ -103,7 +103,7 @@ export const INFLUENCER_MARKETING_BUREAU: SeoLandingPage = {
     {
       question: "Wat kost een influencer marketing bureau-traject?",
       answer:
-        "Hangt af van aantal creators, rechten en of ads-beheer meeloopt. Na intake een scope met meetlat. Geen vage pakketprijs zonder doel.",
+        "Hangt af van aantal creators, rechten en of ads-beheer meeloopt. Na intake een scope met meetlat en een prijs die bij je doel past.",
     },
     {
       question: "Werkt dit voor B2B?",

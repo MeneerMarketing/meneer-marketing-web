@@ -25,7 +25,7 @@ export const CONTENT_MARKETING_VINDBAARHEID: SeoLandingPage = {
       body: "Maandelijks een artikel. Google zegt: leuk, maar niet beter dan wat al staat. Volume zonder intentie is ruis.",
     },
     {
-      title: "Geen structuur",
+      title: "Losse posts zonder netwerk",
       body: "Losse posts zonder interne links. Autoriteit verdampt. Elke URL is een eiland.",
     },
     {
@@ -48,7 +48,7 @@ export const CONTENT_MARKETING_VINDBAARHEID: SeoLandingPage = {
     },
     {
       title: "AI-vindbaarheid meegenomen",
-      body: "Antwoorden die ChatGPT en Gemini kunnen citeren. Geen truc, wel structuur en feiten.",
+      body: "Antwoorden die ChatGPT en Gemini kunnen citeren. Structuur en feiten die machines kunnen overnemen.",
     },
   ],
   visual: "content-hub",
@@ -138,7 +138,7 @@ export const CONTENT_MARKETING_VINDBAARHEID: SeoLandingPage = {
         "Ik start bij vragen uit sales en support, niet bij een keywordtool alleen. Vragen die mensen echt typen voeden Google én ChatGPT. Die logica zet ik in elk contentplan.",
         "Bulk-AI zonder redactie maakt je onzichtbaar. Gemiddelde tekst is per definitie niet beter dan wat al staat. Jouw ervaring, cases en mening maken het verschil.",
         "Techniek hoort erbij: interne links, schema, updates. Content zonder netwerk is een eiland. Content met structuur wordt een cluster dat autoriteit opbouwt.",
-        "Wil je een blogkalender voor de show? Dan ben ik te streng. Wil je pagina's die leads of orders opleveren? Dan zetten we een contentplan dat meetbaar blijft.",
+        "Wil je een blogkalender voor de show? Dan ben ik te streng. Wil je pagina's die leads of orders opleveren? Dan zet ik een contentplan dat meetbaar blijft.",
       ],
     },
     deepDive: {
@@ -148,14 +148,14 @@ export const CONTENT_MARKETING_VINDBAARHEID: SeoLandingPage = {
         "Clusters: hub-pagina's linken naar spokes, spokes terug naar money-pages. Zo verdeel je autoriteit in plaats van hem te versnipperen.",
         "AI-vindbaarheid vraagt om citeerbare feiten bovenaan. SEO vraagt om diepte eronder. Eén contentplan, twee kanalen.",
         "Refresh-ritme: wat stijgt versterken, wat zakt herschrijven of opsplitsen. Publiceren is stap één. Onderhouden is stap twee.",
-        "Rapportage in queries, posities en leads. Niet in 'we hebben vier blogs geplaatst'. Output is verkeer en pipeline, niet woordenaantal.",
+        "Rapportage in queries, posities en leads. Niet in 'ik heb vier blogs geplaatst'. Output is verkeer en pipeline, niet woordenaantal.",
       ],
     },
     scenario: {
       title: "Stel: je publiceert al een jaar zonder resultaat",
       paragraphs: [
         "Veertig blogs, drie landings, weinig leads. Meestal mist intentie, interne links of unieke diepte. Soms cannibaliseren pagina's elkaar.",
-        "Ik audit welke URL's bijna ranken en welke weg mogen. Daarna drie releases die koopvragen pakken. Geen nieuwe kalender vóór die diagnose.",
+        "Ik audit welke URL's bijna ranken en welke weg mogen. Daarna drie releases die koopvragen pakken. Eerst die diagnose, dan pas een kalender.",
         "Binnen weken zie je concrete URL's verbeteren. Zo weet je of content marketing voor vindbaarheid bij jou werkt vóór je een jaar doorschuift.",
       ],
     },

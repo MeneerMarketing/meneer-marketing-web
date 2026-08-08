@@ -6,7 +6,7 @@ export const GOOGLE_ADS_BEHEER: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Google Ads beheer · account dat je niet uitvreet | Meneer Marketing",
   metaDescription:
-    "Google Ads beheer met wekelijkse bijsturing, schone zoektermen en landingspagina's die converteren. Geen rapport dat in een la verdwijnt.",
+    "Google Ads beheer met wekelijkse bijsturing, schone zoektermen en landingspagina's die converteren. Wekelijkse updates met cijfers die je gebruikt.",
   keywords: [
     "google ads beheer",
     "google ads uitbesteden",
@@ -29,7 +29,7 @@ export const GOOGLE_ADS_BEHEER: SeoLandingPage = {
       body: "Performance Max hier, legacy daar. Niemand weet meer welke knop iets oplevert.",
     },
     {
-      title: "Geen eigenaar",
+      title: "Account wisselt van manager",
       body: "Accountmanager wisselt. Kennis verdwijnt. Jij blijft met een login en een vraagteken.",
     },
   ],
@@ -48,7 +48,7 @@ export const GOOGLE_ADS_BEHEER: SeoLandingPage = {
     },
     {
       title: "Transparant ritme",
-      body: "Korte updates, harde cijfers. Geen PDF van 40 pagina's waar niemand doorheen komt.",
+      body: "Korte updates, harde cijfers. Data die je actie geeft, niet veertig pagina's die in de la verdwijnen.",
     },
   ],
   visual: "google-ads",

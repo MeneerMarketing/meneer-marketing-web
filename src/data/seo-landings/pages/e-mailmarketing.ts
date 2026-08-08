@@ -90,7 +90,7 @@ export const EMAILMARKETING: SeoLandingPage = {
     {
       question: "Hoe zit het met GDPR en consent?",
       answer:
-        "Consent en uitschrijven netjes. Geen shortcuts. Deliverability begint bij toestemming en relevante mail, niet bij trucjes.",
+        "Consent en uitschrijven netjes. Alles volgens de regels. Deliverability begint bij toestemming en relevante mail, niet bij trucjes.",
     },
     {
       question: "Hoeveel mails is te veel?",

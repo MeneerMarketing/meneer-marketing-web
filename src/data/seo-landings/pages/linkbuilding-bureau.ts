@@ -133,10 +133,10 @@ export const LINKBUILDING_BUREAU: SeoLandingPage = {
       title: "Linkbuilding bureau: autoriteit verdienen, niet kopen",
       paragraphs: [
         "Je zoekt een linkbuilding bureau omdat rankings stagneren of omdat iemand je een pakket van vijftig links beloofde. Pakketten met garanties zijn vaak het risico, niet de oplossing.",
-        "Ik begin bij de basis: snelle site, sterke pagina's, iets citeerbaars. Daarna outreach. Spam-PBN's skip ik. Echte vermeldingen proberen we wel.",
+        "Ik begin bij de basis: snelle site, sterke pagina's, iets citeerbaars. Daarna outreach. Spam-PBN's skip ik. Echte vermeldingen probeer ik wel.",
         "Content marketing en AI-vindbaarheid overlappen. Wat mensen willen citeren, willen taalmodellen ook snappen. Diepe expertise helpt beide.",
         "Interne links zijn onderschat. Autoriteit op je homepage die nergens naartoe stroomt, is verspilling.",
-        "Wil je volume-rapporten met Domain Rating? Dan ben ik te kieskeurig. Wil je relevante autoriteit die blijft? Dan bouwen we assets en relaties.",
+        "Wil je volume-rapporten met Domain Rating? Dan ben ik te kieskeurig. Wil je relevante autoriteit die blijft? Dan bouw ik assets en relaties.",
       ],
     },
     deepDive: {
@@ -152,7 +152,7 @@ export const LINKBUILDING_BUREAU: SeoLandingPage = {
     scenario: {
       title: "Stel: je hebt al 200 backlinks en nog steeds pagina 3",
       paragraphs: [
-        "Vaak zijn het irrelevante of giftige links, plus dunne content. We auditen het profiel en de pagina's.",
+        "Vaak zijn het irrelevante of giftige links, plus dunne content. Ik audit het profiel en de pagina's.",
         "Eerst content en techniek. Dan gerichte vermeldingen. Meer van hetzelfde spam lost niks op.",
         "Binnen een kwartaal zie je of kwaliteit beweegt. Zo niet, dan is concurrentie of intentie het volgende gesprek.",
       ],

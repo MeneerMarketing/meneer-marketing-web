@@ -50,7 +50,7 @@ export const LOKALE_SEO: SeoLandingPage = {
     },
     {
       title: "Site zonder lokale ankers",
-      body: "Je praat alleen landelijk. Geen regio-pagina, NAP rommelig, schema half. Google weet niet goed waar je zit en voor wie.",
+      body: "Je praat alleen landelijk. Regio-pagina ontbreekt, NAP rommelig, schema half. Google weet niet goed waar je zit en voor wie.",
     },
   ],
   deliverables: [
@@ -64,7 +64,7 @@ export const LOKALE_SEO: SeoLandingPage = {
     },
     {
       title: "Reviews en reputatie",
-      body: "Proces om echte reviews te vragen op het juiste moment. Geen nep, wel systeempjes die blijven lopen.",
+      body: "Proces om echte reviews te vragen op het juiste moment. Echte reviews via systeempjes die blijven lopen.",
     },
     {
       title: "NAP en local schema",
@@ -85,7 +85,7 @@ export const LOKALE_SEO: SeoLandingPage = {
     },
     {
       title: "Lokale pagina's bouwen",
-      body: "Landings per regio of kernstad die écht helpen. Interne links vanaf je sterke URL's. Geen dunne stadskopietjes.",
+      body: "Landings per regio of kernstad die écht helpen. Interne links vanaf je sterke URL's. Unieke inhoud per stad, geen kopietjes.",
     },
     {
       title: "Meten en bijsturen",
@@ -151,14 +151,14 @@ export const LOKALE_SEO: SeoLandingPage = {
         "Ik zet Google Business Profile, NAP, reviews en regio-pagina's in één plan. Zo snapt Google waar je zit, wat je doet, en waarom iemand jou zou kiezen boven de zaak drie straten verder.",
         "Reviews zijn vertrouwen én een ranking-signaal. Recent en echt wint van oud en gekocht. Ik help met het proces, niet met trucjes die je account kunnen kosten.",
         "Apeldoorn is thuisbasis. Ik ken lokale trajecten én landelijke builds op custom sites en shops. Dezelfde standaard: unieke pagina's, schone techniek, meetbare volgende stap.",
-        "Wil je alleen je adres vetgedrukt in de footer? Dat is geen lokale SEO. Wil je belletjes en routeaanvragen uit je eigen regio? Dan bouwen we de signalen die Maps en zoekers serieus nemen.",
+        "Wil je alleen je adres vetgedrukt in de footer? Dat is geen lokale SEO. Wil je belletjes en routeaanvragen uit je eigen regio? Dan bouw ik de signalen die Maps en zoekers serieus nemen.",
       ],
     },
     deepDive: {
       title: "GBP, reviews en regio-pagina's die samenwerken",
       paragraphs: [
         "Google Business Profile is je etalage. Categorieën, diensten, foto's, uren, berichten: incompleet voelt gesloten. Actief voelt open. Ik maak het compleet en houd het bewegend.",
-        "NAP-consistentie klinkt saai en beslist mee. Verschillende adressen of telefoonnummers op site, directories en socials maken Google onzeker. We trekken dat recht.",
+        "NAP-consistentie klinkt saai en beslist mee. Verschillende adressen of telefoonnummers op site, directories en socials maken Google onzeker. Ik trek dat recht.",
         "Regio-pagina's verdienen unieke inhoud: wat je daar doet, voor wie, met bewijs en een duidelijke CTA. Keyword in de titel is niet genoeg. Hulp is genoeg.",
         "Interne links vanaf je sterke pagina's naar lokale URL's geven stem. Schema LocalBusiness of Organization helpt machines. Samen met GBP wordt het één verhaal.",
         "Maandelijks: Insights, queries, reviewtempo, pagina's die stijgen. Lokale SEO is geen eenmalige optimalisatie-knop. Het is onderhoud met richting, net als landelijke SEO.",
@@ -168,7 +168,7 @@ export const LOKALE_SEO: SeoLandingPage = {
       title: "Stel: je concurrent pakt elke Maps-klik",
       paragraphs: [
         "Je zoekt je dienst in je stad en ziet hen in de top drie. Meer reviews, betere foto's, soms een sterkere lokale pagina. Jij hebt een profiel dat half leeg is en een site zonder stad.",
-        "Ik zet hun signalen naast de jouwe: GBP, reviews, landings, NAP. Daarna drie acties die het hardst bewegen. Geen belofte van 'volgende week nummer 1', wel een zichtbare inhaalrace.",
+        "Ik zet hun signalen naast de jouwe: GBP, reviews, landings, NAP. Daarna drie acties die het hardst bewegen. Realistische inhaalrace, geen belofte van 'volgende week nummer 1'.",
         "Eerste weken: profiel en reviewflow. Daarna lokale pagina live. Zo bouw je inhalen op releases, niet op hoop.",
       ],
     },
@@ -278,7 +278,7 @@ export const PPC_BUREAU: SeoLandingPage = {
       body: "Duurdere kliks, zelfde conversie. Iemand moet dat uitleggen.",
     },
     {
-      title: "Geen attributie",
+      title: "Budget zonder inzicht",
       body: "Wat leverde welke campagne op? Gokken met het maandbudget.",
     },
     {
@@ -297,7 +297,7 @@ export const PPC_BUREAU: SeoLandingPage = {
     },
     {
       title: "Landings bouwen",
-      body: "Message match. Geen doorverwijzen.",
+      body: "Message match. Bezoekers landen op de juiste pagina.",
     },
     {
       title: "ROAS/CPA dashboards",
@@ -320,7 +320,7 @@ export const PPC_BUREAU: SeoLandingPage = {
     },
     {
       question: "Minimum budget?",
-      answer: "Afhankelijk van markt. We rekenen breakeven door vóór opschalen.",
+      answer: "Afhankelijk van markt. Ik reken breakeven door vóór opschalen.",
     },
   ],
   ctaTitle: "PPC onder controle?",

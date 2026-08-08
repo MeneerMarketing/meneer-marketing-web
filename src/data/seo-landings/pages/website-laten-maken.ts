@@ -35,7 +35,7 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
     },
     {
       title: "Bouwer die verdwijnt",
-      body: "Site opgeleverd, klaar. Geen idee hoe je iets aanpast als je markt verandert. Elke kleine wijziging wordt een ticket van drie weken.",
+      body: "Site opgeleverd, klaar. Jij weet niet meer hoe je iets aanpast als je markt verandert. Elke kleine wijziging wordt een ticket van drie weken.",
     },
   ],
   deliverables: [
@@ -74,7 +74,7 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
     },
     {
       title: "Launch plus vindbaarheid",
-      body: "Live, indexeren, eerste landings voor zoek. Geen site die in een hoekje staat te wachten tot 'marketing later'.",
+      body: "Live, indexeren, eerste landings voor zoek. Een site die meteen meedraait, niet een hoekje dat wacht op 'marketing later'.",
     },
   ],
   proofTitle: "Gebouwd om te groeien",
@@ -109,12 +109,12 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
     {
       question: "Kan ik later zelf teksten aanpassen?",
       answer:
-        "Dat regelen we in de oplevering: wat jij veilig zelf wijzigt, wat ik beheer. Belangrijk is dat de structuur SEO en conversie niet breekt bij elke edit.",
+        "Dat regel ik in de oplevering: wat jij veilig zelf wijzigt, wat ik beheer. Belangrijk is dat de structuur SEO en conversie niet breekt bij elke edit.",
     },
     {
       question: "Bouw je ook webshops?",
       answer:
-        "Ja, onder andere Shopify custom themes en B2B-portalen. Voor een klassieke bedrijfssite blijft Next.js vaak de snelste, schoonste route. We kiezen op jouw model, niet op mijn favoriete tool.",
+        "Ja, onder andere Shopify custom themes en B2B-portalen. Voor een klassieke bedrijfssite blijft Next.js vaak de snelste, schoonste route. Ik kies op jouw model, niet op mijn favoriete tool.",
     },
     {
       question: "Waarom geen page builder?",
@@ -141,26 +141,26 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
       paragraphs: [
         "Je zoekt iemand voor een website laten maken. Het verschil zit niet in nog een mooi ontwerp. Het zit in snelheid, duidelijke CTA's, SEO-fundament en een structuur die ads aankan zonder dat alles vastloopt.",
         "Ik bouw from scratch in Next.js: eigen code, semantische HTML, schema, Core Web Vitals in de basis. MeneerMarketing.nl zelf is zo gebouwd. Hetzelfde niveau wil ik voor jouw merk.",
-        "Template voelt goedkoop tot je wilt schalen. Dan remt elke page builder. Custom betekent: jij bepaalt de roadmap, ik publiceer mee. Geen 'dat kan het thema niet'.",
+        "Template voelt goedkoop tot je wilt schalen. Dan remt elke page builder. Custom betekent: jij bepaalt de roadmap, ik publiceer mee. Alles kan, zolang het bij je groei past.",
         "Shop, SEO en ads op één fundament: zo ontwerp ik sites. Elke site krijgt eigen architectuur, geen kopieer-plak van de vorige klant.",
         "Wil je alleen een thema met je logo? Dan is er goedkopere hulp. Wil je een fundament voor SEO en ads dat jaren meegaat? Dan bouw ik custom.",
       ],
     },
     deepDive: {
-      title: "Wat je krijgt voordat we live gaan",
+      title: "Wat je krijgt voordat je live gaat",
       paragraphs: [
         "Doel en doelgroep scherp, sitemap, copy die verkoopt, daarna bouw en QA op mobiel. Tracking staat vóór launch. Zo meet je vanaf dag één wat werkt, in plaats van te gokken na drie maanden.",
         "SEO zit in de botten: headings, interne links, schema, snelle images, schone URL's. Ads vragen om landings die matchen. Die ruimte bouw ik in, zodat je niet later alles openbreekt.",
         "Design is strak en merkwaardig, maar nooit los van conversie. Elke sectie heeft een taak. Animatie mag, rommel niet. Premium voelt rustig én duidelijk.",
         "Na live: indexatie, eerste landings voor zoek, en ruimte voor campagnes. Zo blijft je site een verkoper, niet een digitaal visitekaartje dat je een keer per jaar update.",
-        "Oplevering betekent ook overdracht: wat jij zelf kunt, wat ik blijf doen, hoe we doorontwikkelen. Een website laten maken is het begin van groei, niet het einde van een projectmap.",
+        "Oplevering betekent ook overdracht: wat jij zelf kunt, wat ik blijf doen, hoe ik doorontwikkel. Een website laten maken is het begin van groei, niet het einde van een projectmap.",
       ],
     },
     scenario: {
       title: "Stel: je zit vast in een trage template-site",
       paragraphs: [
         "Elke wijziging is duur, pagina's laden traag, SEO is een lapmiddel en ads landen op de homepage. Je overweegt 'nog een redesign' in hetzelfde systeem. Dat lost zelden het plafond op.",
-        "Ik schets wat custom oplevert: welke pagina's eerst, wat migreert, wat weg mag, hoe we ranking en tracking meenemen. Geen big-bang paniek als een gefaseerde rebuild slimmer is.",
+        "Ik schets wat custom oplevert: welke pagina's eerst, wat migreert, wat weg mag, hoe ik ranking en tracking meeneem. Gefaseerde rebuild in plaats van big-bang paniek als dat slimmer is.",
         "Eerste nieuwe landings of de nieuwe homepage gaan live met meetlat. Zo voel je het verschil in snelheid en duidelijkheid voordat het hele domein om is.",
       ],
     },

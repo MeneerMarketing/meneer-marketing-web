@@ -29,14 +29,14 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
       body: "Shop, ERP, mail. Alles dubbel invoeren. Voorraad en factuur lopen uit elkaar op het drukste moment.",
     },
     {
-      title: "Geen self-service",
+      title: "Mail blijft de orderdesk",
       body: "Klanten mailen om 22:00 voor status. Jij antwoordt om 09:00. Ondertussen bestelt de consument wél in drie klikken.",
     },
   ],
   deliverables: [
     {
       title: "Klantlogin en eigen prijzen",
-      body: "Per klant of groep. Geen PDF-prijslijst die veroudert zodra je hem mailt.",
+      body: "Per klant of groep. Live prijzen in het portaal, altijd actueel.",
     },
     {
       title: "Herbestellen in twee kliks",
@@ -48,7 +48,7 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
     },
     {
       title: "Marketing op hetzelfde fundament",
-      body: "SEO, mail en ads mogen meeliften. Geen los portaal in een hoek dat niemand vindt.",
+      body: "SEO, mail en ads mogen meeliften. Eén systeem dat gevonden wordt en meegroeit.",
     },
   ],
   visual: "b2b-portal",
@@ -65,7 +65,7 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
     },
     {
       title: "Bouwen en testen",
-      body: "Met echte scenario's: herhaalorders, verkeerde login, edge-case prijzen. Geen live zetten op hoop.",
+      body: "Met echte scenario's: herhaalorders, verkeerde login, edge-case prijzen. Eerst testen, daarna live.",
     },
     {
       title: "Onboarden en groeien",

@@ -64,7 +64,7 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
     },
     {
       title: "Segmenten en suppressions",
-      body: "Geen cart-mail naar recente kopers. Geen consumentenmail naar portal-klanten. Hygiëne eerst.",
+      body: "Suppressions op recente kopers. Portal-klanten krijgen B2B-mail. Hygiëne eerst.",
     },
     {
       title: "Koppelen aan groei",
@@ -93,7 +93,7 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
     {
       question: "Schrijf je ook de mails?",
       answer:
-        "Ja. Tone die bij je merk past, mobiel leesbaar, CTA's die duidelijk zijn. Geen template-praat die iedereen herkent.",
+        "Ja. Tone die bij je merk past, mobiel leesbaar, CTA's die duidelijk zijn. Copy op maat, niet template-praat die iedereen herkent.",
     },
     {
       question: "Hoe meet je succes in Klaviyo?",
@@ -131,7 +131,7 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
         "Mail vóór hard ads maakt acquisitie goedkoper. Abandoned carts en post-purchase zijn geen nice-to-have. Het is geld dat al in je funnel zat.",
         "Segmentatie voorkomt spam-gevoel. B2B via portal krijgt andere mail dan B2C. Grote catalogi vragen productlijn-logica, geen één nieuwsbrief voor iedereen.",
         "Techniek hoort erbij: checkout-herstel, events, consent, deliverability. Mooie HTML in de spamfolder is theater.",
-        "Wil je twintig templates geïmporteerd? Dan ben ik te streng. Wil je omzet per flow in het dashboard? Dan richten we Klaviyo in als groeimachine.",
+        "Wil je twintig templates geïmporteerd? Dan ben ik te streng. Wil je omzet per flow in het dashboard? Dan richt ik Klaviyo in als groeimachine.",
       ],
     },
     deepDive: {
@@ -148,7 +148,7 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
       title: "Stel: je adverteert hard, Klaviyo is half leeg",
       paragraphs: [
         "CPA onder druk, winkelwagens halfvol, welkomstflow bestaat uit één mail uit 2023. Klassiek lek tussen acquisitie en retentie.",
-        "Ik zet kernflows live, check events, koppel suppressions aan ads. Daarna kijken we naar revenue uit mail naast ROAS.",
+        "Ik zet kernflows live, check events, koppel suppressions aan ads. Daarna kijk ik naar revenue uit mail naast ROAS.",
         "Vaak zakt de druk op ads omdat meer intentie alsnog converteert. Zo verdient een Klaviyo specialist zichzelf terug.",
       ],
     },

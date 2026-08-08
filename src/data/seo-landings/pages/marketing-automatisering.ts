@@ -47,7 +47,7 @@ export const MARKETING_AUTOMATISERING: SeoLandingPage = {
     },
     {
       title: "Documentatie",
-      body: "Je team snapt wat er gebeurt als ik er niet bij ben. Geen black box.",
+      body: "Je team snapt wat er gebeurt als ik er niet bij ben. Alles uitgelegd en gedocumenteerd.",
     },
   ],
   visual: "b2b-portal",
@@ -93,7 +93,7 @@ export const MARKETING_AUTOMATISERING: SeoLandingPage = {
     {
       question: "Hoe lang duurt een eerste flow?",
       answer:
-        "Een gerichte leadflow vaak sneller dan je denkt. Complexe shop-ERP-ketens langer. Je krijgt een MVP die pijn weghaalt vóór we alles willen automatiseren.",
+        "Een gerichte leadflow vaak sneller dan je denkt. Complexe shop-ERP-ketens langer. Je krijgt een MVP die pijn weghaalt vóór ik alles automatiseer.",
     },
     {
       question: "Wat als een koppeling stukgaat?",
@@ -154,7 +154,7 @@ export const MARKETING_AUTOMATISERING: SeoLandingPage = {
       paragraphs: [
         "Websiteformulier, Instagram DM, telefoon, beurs, WhatsApp. Alles eindigt in iemands hoofd of een sheet. Follow-up is willekeur. Leads koelen af.",
         "Ik teken één intake-pad: alles landt in CRM met bron, daarna de juiste mail of taak. Uitzonderingen blijven menselijk. De rest niet.",
-        "Eerste week: minder gemiste opvolging. Daarna rapportage per bron. Zo wordt marketing automatisering voelbaar vóór we fancy bouwen.",
+        "Eerste week: minder gemiste opvolging. Daarna rapportage per bron. Zo wordt marketing automatisering voelbaar vóór ik verder uitbreid.",
       ],
     },
   },

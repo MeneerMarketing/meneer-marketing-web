@@ -64,7 +64,7 @@ export const BUREAU_OF_FREELANCER_MARKETING: SeoLandingPage = {
     },
     {
       title: "Plan met eigenaar",
-      body: "Eén persoon verantwoordelijk voor volgorde en resultaat. Geen eilandjes.",
+      body: "Eén persoon verantwoordelijk voor volgorde en resultaat. Eén lijn van strategie tot live.",
     },
     {
       title: "Uitvoeren",
