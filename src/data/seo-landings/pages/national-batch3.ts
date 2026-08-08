@@ -135,7 +135,7 @@ export const FACEBOOK_ADS_BUREAU: SeoLandingPage = {
   hotTake: { label: "Heet take", body: "Een Facebook Ads bureau zonder landingspagina wil je dopamine verkopen, geen omzet." },
   faq: [
     { question: "Facebook of Meta?", answer: "Zelfde platform. Ik spreek beide talen." },
-    { question: "Doen jullie ook Instagram?", answer: "Ja. Vaak dezelfde campagnes, andere placements." },
+    { question: "Doe je ook Instagram?", answer: "Ja. Vaak dezelfde campagnes, andere placements." },
   ],
   ctaTitle: "Facebook Ads zonder boost-gokken?",
   ctaBody: "Vertel je product. Ik schets of het nu past.",
@@ -176,7 +176,7 @@ export const INSTAGRAM_ADS_BUREAU: SeoLandingPage = {
   hotTake: { label: "Heet take", body: "Instagram Ads met je product op een witte achtergrond en niets anders is een catalogus die niemand openslaat." },
   faq: [
     { question: "Alleen Instagram?", answer: "Nee. Meta campagnes dekken Instagram en Facebook." },
-    { question: "Werken jullie met influencers?", answer: "Ja. UGC en creators onderdeel van het plan." },
+    { question: "Werk je met influencers?", answer: "Ja. UGC en creators onderdeel van het plan." },
   ],
   ctaTitle: "Instagram Ads proberen?",
   ctaBody: "Vertel je doelgroep. Ik zeg eerlijk of het zinvol is.",

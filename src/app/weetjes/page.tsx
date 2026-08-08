@@ -52,8 +52,8 @@ export default function WeetjesPage() {
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
                 Allemaal echt, allemaal met een punt. Draai een kaart om voor het
-                hele verhaal. Stiekem verklaren ze ook waarom wij marketing
-                aanpakken zoals we het aanpakken.
+                hele verhaal. Stiekem verklaren ze ook waarom ik marketing
+                aanpak zoals ik het aanpak.
               </p>
             </Reveal>
           </div>

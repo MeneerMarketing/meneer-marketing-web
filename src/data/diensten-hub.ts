@@ -223,7 +223,7 @@ export const DIENSTEN_HUB_FAQ = [
       "Ja, als het past bij je fase. Soms zeg ik eerlijk: begin ergens anders. Een site zonder meetplan maakt ads duurder. Daarom start ik altijd met context.",
   },
   {
-    question: "Bouwen jullie met templates?",
+    question: "Bouw je met templates?",
     answer:
       "Nee. From scratch in Next.js of Shopify. Eigen code die meegroeit, zonder page builder die je over een jaar tegen de plinten loopt.",
   },
@@ -238,7 +238,7 @@ export const DIENSTEN_HUB_FAQ = [
       "Intake invullen, twee minuten. Daarna een gesprek met scherpte op prioriteit. Jouw route, niet een standaardpakket voor iedereen.",
   },
   {
-    question: "Werken jullie buiten Apeldoorn?",
+    question: "Werk je buiten Apeldoorn?",
     answer:
       "Ja, landelijk. Apeldoorn is thuisbasis. Online groeien met dezelfde aanpak, waar je ook zit.",
   },

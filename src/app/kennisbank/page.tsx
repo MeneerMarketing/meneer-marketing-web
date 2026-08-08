@@ -82,15 +82,14 @@ export default function KennisbankPage() {
                 Kennisbank
               </p>
               <h1 className="mt-4 max-w-3xl text-balance text-4xl font-extrabold tracking-tight text-mm-text sm:text-5xl">
-                Alles wat wij weten.
+                Alles wat ik weet.
                 <br />
                 Gratis na te lezen.
               </h1>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-mm-muted">
-                Geen dichtgetimmerde whitepapers achter een e-mailmuur, gewoon
-                de kennis waar we zelf mee werken. Georganiseerd langs dezelfde
-                vijf blokken als onze diensten, zodat je van lezen direct naar
-                doen kunt.
+                Open kennis, niet achter een e-mailmuur. Praktijk waar ik zelf
+                mee werk. Georganiseerd langs dezelfde vijf blokken als het
+                aanbod, zodat je van lezen direct naar doen kunt.
               </p>
             </Reveal>
 

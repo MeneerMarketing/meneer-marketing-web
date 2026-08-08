@@ -30,7 +30,7 @@ export const PILLAR_FAQS: Record<PillarSlug, readonly PillarFaqItem[]> = {
   ],
   bouwen: [
     {
-      question: "Bouwen jullie met WordPress of page builders?",
+      question: "Bouw je met WordPress of page builders?",
       answer:
         "Ik bouw websites in Next.js en Shopify custom build from scratch. Code die meegroeit met campagnes en SEO, zonder template dat je over een jaar tegen de plinten loopt.",
     },
@@ -40,7 +40,7 @@ export const PILLAR_FAQS: Record<PillarSlug, readonly PillarFaqItem[]> = {
         "Ja, dat is precies waarom ik from scratch bouw. Landings, snelheid en structuur zitten in het fundament. Je hoeft niet alles opnieuw te laten doen als je opschaalt.",
     },
     {
-      question: "Bouwen jullie ook B2B-portalen in Shopify?",
+      question: "Bouw je ook B2B-portalen in Shopify?",
       answer:
         "Ja. Volledige B2B-portals: klanten loggen in, zien eigen prijzen en bestellen 24/7. Eén shop, twee gezichten. Alles in Shopify, geen los systeem ernaast.",
     },
@@ -52,7 +52,7 @@ export const PILLAR_FAQS: Record<PillarSlug, readonly PillarFaqItem[]> = {
   ],
   vindbaarheid: [
     {
-      question: "Doen jullie ook vindbaarheid in ChatGPT en AI-antwoorden?",
+      question: "Doe je ook vindbaarheid in ChatGPT en AI-antwoorden?",
       answer:
         "Ja, dat is een volwaardige dienst. Techniek, content en structuur zodat je pagina's citeerbaar zijn. Niet iets voor later op de roadmap.",
     },
@@ -67,14 +67,14 @@ export const PILLAR_FAQS: Record<PillarSlug, readonly PillarFaqItem[]> = {
         "Vaak SEO en site eerst, ads als versterker. Organisch verkeer vóór paid is vaak de slimme volgorde. Ads op een zwakke site zijn duur pleisterwerk.",
     },
     {
-      question: "Schrijven jullie bulk AI-content?",
+      question: "Schrijf je bulk AI-content?",
       answer:
         "Ik schrijf antwoord-pagina's die één vraag echt beantwoorden. Bulk-ruis rankt kort en verdwijnt. Mijn copy is voor mensen én voor AI die bronnen zoekt.",
     },
   ],
   campagnes: [
     {
-      question: "Welke advertentiekanalen beheren jullie?",
+      question: "Welke advertentiekanalen beheer je?",
       answer:
         "Google Ads (Search, Shopping, Performance Max waar het past) en Meta Ads (Facebook en Instagram). Expliciet benoemd, niet verstopt achter vage termen.",
     },
@@ -84,12 +84,12 @@ export const PILLAR_FAQS: Record<PillarSlug, readonly PillarFaqItem[]> = {
         "Tracking die klopt, landings die matchen met je advertentie, en een site die converteert. Anders betaal je voor klikken die nergens landen.",
     },
     {
-      question: "Werken jullie met influencers en UGC?",
+      question: "Werk je met influencers en UGC?",
       answer:
         "Ja. Creators leveren content die ook in Meta-campagnes terugkomt. Echte beelden die mensen geloven, geen stock.",
     },
     {
-      question: "Hoe vaak sturen jullie campagnes bij?",
+      question: "Hoe vaak stuur je campagnes bij?",
       answer:
         "Wekelijks op data, niet op gevoel. Zoektermen, landings, budget naar winnaars. Wat lekt gaat eruit. Set-and-forget is niet mijn werkwijze.",
     },
@@ -101,12 +101,12 @@ export const PILLAR_FAQS: Record<PillarSlug, readonly PillarFaqItem[]> = {
         "Een nieuwe klant werven kost al snel vijf keer meer dan een bestaande behouden. Flows vangen bezoekers op die nog niet kochten. Anders lekt je advertentiebudget.",
     },
     {
-      question: "Welke tools gebruiken jullie voor automatisering?",
+      question: "Welke tools gebruik je voor automatisering?",
       answer:
         "Klaviyo voor e-commerce mail, n8n voor koppelingen tussen shop, boekhouding en Slack. De tool volgt het proces, niet andersom.",
     },
     {
-      question: "Kunnen jullie bestaande flows verbeteren?",
+      question: "Kun je bestaande flows verbeteren?",
       answer:
         "Ja. Vaak staat er al iets. Ik meet opens, clicks en omzet per flow en schroef aan wat rendeert. Alles opnieuw alleen als het echt nodig is.",
     },

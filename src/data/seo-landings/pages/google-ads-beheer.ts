@@ -86,7 +86,7 @@ export const GOOGLE_ADS_BEHEER: SeoLandingPage = {
       answer: "Ja. Je blijft eigenaar. Ik werk in jouw account met duidelijke rechten en overdracht als je ooit stopt.",
     },
     {
-      question: "Hoe vaak sturen jullie bij?",
+      question: "Hoe vaak stuur je bij?",
       answer: "Wekelijks op actieve accounts. Bij kleiner budget kijk ik wat past, maar slapen doe ik niet op lopende campagnes.",
     },
     {

@@ -46,7 +46,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
           "Je krijgt Meneer Marketing. Eén aanspreekpunt dat strategie, design, code en marketing combineert. Wat jij en ik bespreken, bouw ik. Jij merkt het verschil in snelheid.",
       },
       {
-        question: "Werken jullie met vaste pakketten?",
+        question: "Werk je met vaste pakketten?",
         answer:
           "Nee. Goud, zilver en brons zijn leuk voor de Olympische Spelen, niet voor jouw marketing. Elk bedrijf heeft andere marges, klanten en systemen. Je krijgt een voorstel op basis van jouw situatie, met uitleg waarom die volgorde de slimste is.",
       },

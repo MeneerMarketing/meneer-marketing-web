@@ -246,7 +246,7 @@ export const kennisbankArticles: KennisbankArticle[] = [
     slug: "n8n-eerste-workflow",
     title: "Van spreadsheet naar n8n: je eerste workflow die tijd teruggeeft",
     description:
-      "Geen mega-project: een eerste automatisering die wél in productie gaat. Met logging, eigenaarschap en ruimte om uit te breiden.",
+      "Start klein: een eerste automatisering die wél in productie gaat. Met logging, eigenaarschap en ruimte om uit te breiden.",
     publishedAt: "2026-01-15",
     readMinutes: 6,
     category: "behoud",

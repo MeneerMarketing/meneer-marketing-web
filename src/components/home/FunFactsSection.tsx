@@ -145,7 +145,7 @@ export function FunFactsSection() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600">
             Allemaal echt, allemaal onderbouwd. En stiekem verklaren ze precies
-            waarom wij marketing aanpakken zoals we het aanpakken.
+            waarom ik marketing aanpak zoals ik het aanpak.
           </p>
         </div>
 

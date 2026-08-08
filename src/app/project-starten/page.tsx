@@ -99,7 +99,7 @@ export default function ProjectStartenPage() {
                 },
                 {
                   title: "Scope-call (30 min)",
-                  body: "Online, concreet. Jij met beslissers, wij met uitvoerenden.",
+                  body: "Online, concreet. Jij met beslissers, ik met de uitvoering.",
                 },
                 {
                   title: "Voorstel met fases",

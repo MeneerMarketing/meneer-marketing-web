@@ -404,7 +404,7 @@ export const MARKETING_BUREAU = buildNationalPage({
         "In de praktijk hetzelfde vak. Jij zoekt 'marketing bureau', ik lever site, SEO, ads en mail onder één dak.",
     },
     {
-      question: "Werken jullie voor MKB?",
+      question: "Werk je voor MKB?",
       answer: "Ja. Dat is waar ik het meest waarde toevoeg: snel schakelen, geen corporate traagheid.",
     },
   ],
@@ -464,11 +464,11 @@ export const WEBSITE_SPECIALIST = buildNationalPage({
     "Een website specialist die geen Core Web Vitals kan uitleggen, is een grafisch ontwerper met een duurder label.",
   faq: [
     {
-      question: "Bouwen jullie ook webshops?",
+      question: "Bouw je ook webshops?",
       answer: "Ja, vooral Shopify custom. B2B-portaal kan ook.",
     },
     {
-      question: "Kunnen jullie een bestaande site verbeteren?",
+      question: "Kun je een bestaande site verbeteren?",
       answer: "Ja. Audit eerst: snelheid, SEO, conversie. Dan pas bouwen of fixen.",
     },
   ],
@@ -663,7 +663,7 @@ export const EMAILMARKETING_BUREAU = buildNationalPage({
       answer: "Nee. Ook B2B met lead-nurturing. Shop is wel mijn sweet spot.",
     },
     {
-      question: "Schrijven jullie de mails?",
+      question: "Schrijf je de mails?",
       answer: "Ja. Jij levert input, ik maak het scherp en on-brand.",
     },
   ],
@@ -723,11 +723,11 @@ export const WEBSITE_LATEN_ONTWERPEN = buildNationalPage({
     "Website laten ontwerpen door iemand die niet kan bouwen is een tekening van een huis zonder fundering.",
   faq: [
     {
-      question: "Kunnen jullie alleen ontwerp?",
+      question: "Kun je alleen ontwerp?",
       answer: "Liever niet. Ontwerp zonder bouw mist de realiteit van snelheid en SEO.",
     },
     {
-      question: "Hebben jullie een huisstijl nodig?",
+      question: "Heb ik een huisstijl nodig?",
       answer: "Helpt. Nog geen stijl? Dan bouw ik die mee op.",
     },
   ],
@@ -972,7 +972,7 @@ export const SOCIAL_MEDIA_MARKETING_BUREAU = buildNationalPage({
     "Een social media marketing bureau dat geen landingspagina wil aanraken, optimaliseert voor applause, niet voor checkout.",
   faq: [
     {
-      question: "Doen jullie ook LinkedIn?",
+      question: "Doe je ook LinkedIn?",
       answer: "Ja, vooral B2B. Content en LinkedIn Ads.",
     },
     {

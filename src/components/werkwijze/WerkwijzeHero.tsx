@@ -178,7 +178,7 @@ export function WerkwijzeHero() {
               </ul>
 
               <p className="mt-4 text-center text-[10px] font-medium text-slate-500">
-                Animatie ter illustratie. Jouw volgorde bepalen we samen.
+                Animatie ter illustratie. Jouw volgorde komt uit het gesprek.
               </p>
             </div>
           </motion.div>
