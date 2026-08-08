@@ -6,7 +6,8 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
   description:
     "Bovenaan Google staat steeds vaker een AI-samenvatting. Bezoekers klikken minder. Niet paniekeren, wel aanpassen. Zo speel je mee in 2026 zonder je SEO te laten stikken.",
   publishedAt: "2026-07-12",
-  readMinutes: 10,
+  modifiedAt: "2026-08-08",
+  readMinutes: 12,
   category: "vindbaarheid",
   keywords: [
     "google ai overviews",
@@ -31,6 +32,16 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
       question: "Hoe meet ik impact op mijn traffic?",
       answer:
         "Search Console: vergelijk clicks en impressies op queries waar je vroeger goed rankte. GA4: organische sessies per landingspagina. Let op branded vs non-branded. Als alleen generieke info-queries dalen maar 'jouw merk + dienst' stabiel blijft, is dat het AI-overview-effect, geen complete ramp.",
+    },
+    {
+      question: "Helpt featured snippets nog naast AI Overviews?",
+      answer:
+        "Soms. Snippets en overviews kunnen naast elkaar bestaan of elkaar afwisselen. Wat blijft: een scherp antwoordblok bovenaan, duidelijke koppen, feiten. Wie alleen voor een oude snippet schreef zonder diepte, voelt de druk harder.",
+    },
+    {
+      question: "Moet elke blog een FAQ-schema krijgen?",
+      answer:
+        "Alleen als je echte vragen beantwoordt. Lege FAQ-schema's voor SEO-theater helpen niet. Drie scherpe vragen uit sales of support slaan harder aan dan tien generieke.",
     },
   ],
   sections: [
@@ -77,7 +88,7 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Schrijf antwoorden alsof je in een kennisbank zit, niet alsof je een brochure verspreidt. Ironisch genoeg is dat precies waarom wij zelf artikelen als deze maken. Diep, specifiek, met mening.",
+      text: "Schrijf antwoorden alsof je in een kennisbank zit, niet alsof je een brochure verspreidt. Ironisch genoeg is dat precies waarom ik zelf artikelen als deze maak. Diep, specifiek, met mening.",
     },
     {
       type: "h3",
@@ -120,6 +131,35 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
     {
       type: "callout",
       text: "Heet take: bureaus die alleen 'meer blogs' verkopen tegen AI Overviews, verkopen zandzakken tegen een tsunami. Je hebt structuur, intentie-splitsing en merk nodig. Veel blogs helpt niet automatisch.",
+    },
+    {
+      type: "h2",
+      text: "Lokale diensten en AI Overviews",
+    },
+    {
+      type: "p",
+      text: "Bij lokale intentie blijft Maps vaak de kortste route naar de bel. AI Overviews raken vooral informatieve queries. Zorg dat je Google Business Profile en lokale landings scherp zijn. Reviews en NAP zijn geen bijzaak als info-blogs minder klikken opleveren.",
+    },
+    {
+      type: "p",
+      text: "Voor een dienstverlener in Apeldoorn of Rotterdam betekent dat: één sterke money-page per dienst, lokale bewijsvoering, en een GBP dat eruitziet alsof er iemand achter zit. Dunne stad-pagina's met alleen een postcode vullen de overview niet. Echte reviews en echte cases wel.",
+    },
+    {
+      type: "h2",
+      text: "Content die wél een klik waard is",
+    },
+    {
+      type: "p",
+      text: "De overview geeft het 'wat'. Jij moet het 'waarom jij' hebben. Rekenvoorbeelden, ranges, screenshots van setups, een mening over wat concurrenten overdrijven. Tools, calculators, checklists die je downloadt. BestRest werkt met een eigen plan per klant. Dat soort specificiteit past niet in één grijze box.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Prijsranges en wat er wél en niet in zit (zonder loze beloftes).",
+        "Case met uitgangspunt, keuze en resultaat in gewone taal.",
+        "Vergelijkingstabellen die eerlijk zijn, niet alleen flattering.",
+        "Contact of intake als logische volgende stap, niet als schreeuwende sticky bar.",
+      ],
     },
     {
       type: "h2",

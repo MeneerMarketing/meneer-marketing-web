@@ -7,7 +7,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     "Je winkelwagen lekt geld. Niet met schreeuwerige mails, maar met timing, tone of voice en een flow die aanvoelt als een herinnering, geen stalker.",
   publishedAt: "2026-07-12",
   modifiedAt: "2026-08-08",
-  readMinutes: 10,
+  readMinutes: 12,
   category: "behoud",
   keywords: [
     "abandoned cart email",
@@ -31,6 +31,16 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
       question: "Wat als mijn checkout zelf faalt?",
       answer:
         "Fix eerst snelheid, betaalmethodes en duidelijke kosten. Mail vangt twijfel op. Het repareert geen kapotte shop.",
+    },
+    {
+      question: "Welke tool gebruik je voor cart-flows op Shopify?",
+      answer:
+        "Vaak Klaviyo of de native Shopify-flows, afhankelijk van volume en stack. Belangrijker dan de tool: timing, segmentatie, tone of voice en een productblok dat klopt. Flow zonder data is theater.",
+    },
+    {
+      question: "Hoe meet ik of cart-mails écht werken?",
+      answer:
+        "Herstel-omzet, open rate is vanity. Kijk naar attributed revenue, unsubscribe-rate en of converters uit remarketing én mail dubbel getikt worden. Eén dashboard, één waarheid.",
     },
   ],
   sections: [
@@ -114,6 +124,31 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     {
       type: "p",
       text: "Checkout-link moet de mand herstellen. Mobiel moet lekker lezen. Afmeldlink moet werken. GDPR: alleen mailen met consent. Meet omzet per flow. Open rate is leuk. Revenue is waarom je dit doet.",
+    },
+    {
+      type: "h2",
+      text: "Remarketing naast je cart-mail",
+    },
+    {
+      type: "p",
+      text: "Mail eerst, ads als tweede tap. Zelfde product, andere toon. Caps aan zodat je niet overal tegelijk schreeuwt. Converters uitsluiten. Cart-flow en remarketing horen bij één retentieplan, niet bij twee bureaus die elkaar niet kennen.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Mail: persoonlijk, product in beeld, bezwaren wegnemen.",
+        "Ads: korte reminder, social proof, frequency cap.",
+        "Uitsluitingen: gekocht, al in late flow, of te recent geopend zonder klik.",
+        "Test: incentive alleen in mail 3 of alleen in ads, niet overal tegelijk.",
+      ],
+    },
+    {
+      type: "h2",
+      text: "Tone of voice die niet schreeuwt",
+    },
+    {
+      type: "p",
+      text: "Schrijf alsof je een klant helpt die even afgeleid was. 'Je matras staat nog klaar' slaat harder aan dan 'Laatste kans!!!'. Bij BestRest past rust en expertise. Bij SkinComplete professioneel en warm voor salons. De flow is techniek. De zin is merk.",
     },
     {
       type: "h2",
