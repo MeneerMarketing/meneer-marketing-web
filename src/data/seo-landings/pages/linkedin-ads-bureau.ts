@@ -73,8 +73,8 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
   ],
   proofTitle: "B2B funnels",
   proofBody:
-    "LinkedIn werkt als opvolging en site meedoen. SkinComplete-achtig B2B-denken: serieuze aanvragen, niet vanity leads. Een portaal of scherpe landings plus snelle opvolging maakt dure kliks alsnog interessant.",
-  proofCase: "SkinComplete",
+    "LinkedIn werkt als opvolging en site meedoen. Serieuze aanvragen, niet vanity leads. Een portaal of scherpe landings plus snelle opvolging maakt dure kliks alsnog interessant.",
+  proofCase: "Kwalificatie eerst",
   hotTake: {
     label: "Heet take",
     body: "LinkedIn Ads zonder sales-opvolging is een dure spreadsheet.",
@@ -83,7 +83,7 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Wat is een minimum budget voor LinkedIn Ads?",
       answer:
-        "LinkedIn vraagt vaak hoger budget dan Meta of Google Search. We rekenen eerst door of je CPA-ruimte het aankan. Soms is Google of content slimmer.",
+        "LinkedIn vraagt vaak hoger budget dan Meta of Google Search. Ik reken eerst door of je CPA-ruimte het aankan. Soms is Google of content slimmer.",
     },
     {
       question: "Werkt LinkedIn voor elk B2B-bedrijf?",
@@ -113,7 +113,7 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Past dit bij een B2B-portaal?",
       answer:
-        "Vaak wel. Ads naar een landings of login-flow die serieus voelt. SkinComplete-niveau: self-service na de eerste knipoog.",
+        "Vaak wel. Ads naar een landings of login-flow die serieus voelt. Self-service na de eerste knipoog.",
     },
   ],
   ctaTitle: "LinkedIn Ads proberen?",
@@ -134,9 +134,9 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een LinkedIn Ads bureau omdat B2B op Meta of Google niet genoeg beslissers raakt. Of omdat iemand zei dat LinkedIn moet. LinkedIn mag. Alleen met targeting, landings en sales-opvolging.",
         "Ik begin bij wat een gekwalificeerde lead mag kosten. Daarna targeting op functie en sector. Breed 'iedereen in marketing' is een snelle manier om budget te verbranden.",
-        "SkinComplete-denken: serieuze aanvragen, niet whitepaper-toeristen. Forms en landings filteren. CRM krijgt leads met context, niet alleen een e-mailadres.",
+        "Serieuze aanvragen, niet whitepaper-toeristen. Forms en landings filteren. CRM krijgt leads met context, niet alleen een e-mailadres.",
         "LinkedIn naast Google werkt als intentie en account-based elkaar aanvullen. Twee bureaus met twee verhalen maakt het duurder.",
-        "Wil je alleen impressies op LinkedIn? Dan ben ik te streng. Wil je gesprekken die sales wil opnemen? Dan bouwen we de campagne als B2B-systeem.",
+        "Wil je alleen impressies op LinkedIn? Dan ben ik te streng. Wil je gesprekken die sales wil opnemen? Dan bouw ik de campagne als B2B-systeem.",
       ],
     },
     deepDive: {
@@ -152,7 +152,7 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
     scenario: {
       title: "Stel: je hebt 80 LinkedIn-leads en sales belt er 5 terug",
       paragraphs: [
-        "Dan is het probleem zelden 'meer budget'. Het is kwalificatie of opvolging. We scherpen het form aan en zetten notificaties + SLA.",
+        "Dan is het probleem zelden 'meer budget'. Het is kwalificatie of opvolging. Ik scherp het form aan en zet notificaties + SLA.",
         "Daarna pas opnieuw volume. LinkedIn straft slordige funnels met hoge CPC's die niks opleveren.",
         "Binnen een sprint zie je of leads serieuzer worden. Zo niet, dan is het kanaal of het aanbod het gesprek. Niet nog een creative-test alleen.",
       ],

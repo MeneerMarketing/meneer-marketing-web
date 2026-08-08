@@ -71,10 +71,10 @@ export const META_ADS_OF_GOOGLE_ADS: SeoLandingPage = {
       body: "Werkt discovery? Search erbij. Werkt search? Retargeting op Meta. Data beslist.",
     },
   ],
-  proofTitle: "Consumer vs search",
+  proofTitle: "Intentie versus discovery",
   proofBody:
-    "SkinComplete-style: vaak beide, maar niet blind. Eerst weten wat converteert. BestRest: per product andere mix. Matras met hoge zoekintentie anders dan iets dat je moet laten zien.",
-  proofCase: "BestRest",
+    "Search vangt intentie, Meta creëert vraag. Ik bepaal de mix op marge, ticketprijs en creative-pipeline. Product met hoge zoekintentie krijgt andere ad-spend dan discovery. Eerst één kanaal scherp, daarna mix op data.",
+  proofCase: "Kanaal-mix audit",
   hotTake: {
     label: "Heet take",
     body: "Meta Ads voor B2B zonder creative plan is dure brand awareness voor je concurrent.",
@@ -134,9 +134,9 @@ export const META_ADS_OF_GOOGLE_ADS: SeoLandingPage = {
       paragraphs: [
         "Je zoekt meta ads of google ads omdat iemand zei dat je 'op social moet' of dat 'search altijd wint'. Beide zijn half waar. Het hangt van intentie en creative af.",
         "Google vangt mensen die al zoeken. Meta onderbreekt mensen die scrollen. Zonder landings die converteren verlies je op beide.",
-        "Bij BestRest verschilt de mix per product. Bij SkinComplete vaak beide, maar pas nadat organisch en shop klopten. Volgorde spaart budget.",
+        "Ik start met één kanaal dat past bij intentie en assets. Pas als conversies en landings kloppen, voeg ik het tweede kanaal toe. Volgorde spaart budget.",
         "Twee bureaus met twee verhalen is duur. Eén strategie met gedeelde landings en duidelijke KPI's wint vaker.",
-        "Wil je een simpel antwoord voor elk bedrijf? Dat bestaat niet. Wil je een eerlijke keuze voor jouw product? Dan tekenen we die uit.",
+        "Wil je een simpel antwoord voor elk bedrijf? Dat bestaat niet. Wil je een eerlijke keuze voor jouw product? Dan teken ik die uit.",
       ],
     },
     deepDive: {

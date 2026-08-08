@@ -72,10 +72,10 @@ export const TRACKING_GOOGLE_ANALYTICS: SeoLandingPage = {
       body: "Wat meet wat. Zodat de volgende theme-update niet stiekem alles breekt.",
     },
   ],
-  proofTitle: "Ads + data",
+  proofTitle: "Ads plus data",
   proofBody:
-    "Zonder tracking fix je geen ads-account. Ik begin vaak hier voordat budget omhoog gaat. Bij shops als BestRest en B2B-flows als SkinComplete telt waarde per order of lead. Anders optimaliseer je op fantomen.",
-  proofCase: "BestRest",
+    "Zonder tracking fix je geen ads-account. Ik begin vaak hier voordat budget omhoog gaat. Orderwaarde, lead-events en primary conversions moeten kloppen met shop of CRM. Anders optimaliseer je op fantomen.",
+  proofCase: "Tracking-audit",
   hotTake: {
     label: "Heet take",
     body: "Google Ads optimaliseren zonder werkende conversietracking is autorijden met een beslagen voorruit.",
@@ -84,7 +84,7 @@ export const TRACKING_GOOGLE_ANALYTICS: SeoLandingPage = {
     {
       question: "Alleen tracking-setup, of breder traject?",
       answer:
-        "Beide kan. Setup alleen, of onderdeel van ads en CRO. Liever data die klopt vóór we budget opschalen.",
+        "Beide kan. Setup alleen, of onderdeel van ads en CRO. Liever data die klopt vóór ik budget opschaal.",
     },
     {
       question: "Shopify of custom?",
@@ -135,9 +135,9 @@ export const TRACKING_GOOGLE_ANALYTICS: SeoLandingPage = {
       paragraphs: [
         "Je zoekt google analytics tracking omdat dashboards liegen of omdat niemand weet welke campagne geld opleverde. GA4 is geen orakel. Het is een gereedschap. Slecht gezet = dure gokken.",
         "Ik audit tags, events en ads-import. Dubbele conversies eruit. Waarde erin. Consent correct. Daarna pas budget omhoog.",
-        "Bij BestRest telt orderwaarde. Bij SkinComplete B2B-leads of portal-gedrag. Zelfde discipline: meet wat de bankrekening snapt.",
+        "Of het nu e-commerce of B2B-leads is: ik meet wat de bankrekening snapt. Zelfde discipline, andere events.",
         "Theme-updates en apps breken tracking stiekem. Documentatie en een testritme horen bij de oplevering.",
-        "Wil je alleen een GA4-property? Dat is vijf minuten. Wil je data waarop smart bidding mag leren? Dan bouwen we het netjes.",
+        "Wil je alleen een GA4-property? Dat is vijf minuten. Wil je data waarop smart bidding mag leren? Dan bouw ik het netjes.",
       ],
     },
     deepDive: {

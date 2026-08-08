@@ -73,7 +73,7 @@ export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   ],
   proofTitle: "MeneerMarketing zelf",
   proofBody:
-    "Deze site draait op Next.js. Ik eet mijn eigen cooking. Snelheid, SEO en animaties zonder compromis. SkinComplete-achtige contentmachines en lead-sites: dezelfde principes. Shops doe ik in Shopify.",
+    "Deze site draait op Next.js. Ik eet mijn eigen cooking. Snelheid, SEO en animaties zonder compromis. Contentmachines en lead-sites bouw ik met dezelfde principes. Shops doe ik in Shopify.",
   hotTake: {
     label: "Heet take",
     body: "Een Next.js website laten maken door iemand die alleen WordPress kent, is een Ferrari-bouwplaats met een fietsenmaker.",
@@ -112,7 +112,7 @@ export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
     {
       question: "Kan ik later ads opschalen?",
       answer:
-        "Ja. Daarom bouwen we message match, snelheid en tracking mee. Opschalen op een trage site is water in een lekke emmer.",
+        "Ja. Daarom bouw ik message match, snelheid en tracking mee. Opschalen op een trage site is water in een lekke emmer.",
     },
   ],
   ctaTitle: "Next.js site bespreken?",
@@ -133,9 +133,9 @@ export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
       paragraphs: [
         "Je zoekt next.js website laten maken omdat WordPress of een builder je remt. Of omdat je ads wilt opschalen op iets dat echt snel is. Next.js is mijn default voor custom sites die moeten ranken en converteren.",
         "Ik bouw from scratch: App Router, TypeScript, Tailwind. Semantische HTML, schema, landings per intentie. Theme-limieten bestaan niet. Wel keuzes die je performance beschermen.",
-        "meneermarketing.nl zelf draait zo. SkinComplete-achtige content en B2B-denken: snelheid en structuur eerst, dan marketing erop. Shops horen in Shopify, niet geforceerd in Next als checkout het speerpunt is.",
+        "meneermarketing.nl zelf draait zo. Content- en leadmachines bouw ik met snelheid en structuur eerst, marketing erop. Shops horen in Shopify, niet geforceerd in Next als checkout het speerpunt is.",
         "Migratie vanaf WordPress kan. Redirects, URL-plan, eerlijk over een dip. Import-knop plus hopen is geen strategie.",
-        "Wil je een template met React-saus? Dan ben ik te streng. Wil je een site die ads en SEO aankan zonder plugin-roulette? Dan bouwen we custom.",
+        "Wil je een template met React-saus? Dan ben ik te streng. Wil je een site die ads en SEO aankan zonder plugin-roulette? Dan bouw ik custom.",
       ],
     },
     deepDive: {

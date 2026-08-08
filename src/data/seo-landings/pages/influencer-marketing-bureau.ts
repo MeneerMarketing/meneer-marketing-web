@@ -73,8 +73,8 @@ export const INFLUENCER_MARKETING_BUREAU: SeoLandingPage = {
   ],
   proofTitle: "Acquisitie en creators",
   proofBody:
-    "Influencer marketing werkt als het onderdeel is van je funnel, niet als losse hype. Bij SkinComplete-achtige merken winnen creators die productbewijs leveren én content die je in ads mag draaien.",
-  proofCase: "SkinComplete",
+    "Influencer marketing werkt als het onderdeel is van je funnel, niet als losse hype. Creators die productbewijs leveren én content die je in ads mag draaien winnen het vaakst.",
+  proofCase: "UGC in ads",
   hotTake: {
     label: "Heet take",
     body: "Influencer marketing zonder landingspagina is fame zonder fortune.",
@@ -129,9 +129,9 @@ export const INFLUENCER_MARKETING_BUREAU: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een influencer marketing bureau omdat bereik alleen je omzet niet redt. Klopt. Een creator met bereik en verkeerde audience is een billboard op de snelweg naar nergens.",
         "Ik selecteer op fit en op contentrechten. De post mag organisch werken. De echte schaal zit vaak in ads met diezelfde creative. Zonder rechten koop je een moment.",
-        "SkinComplete-achtige producten vragen bewijs en vertrouwen. Dansjes kunnen. Demo's en echte use-cases winnen vaker. BestRest vraagt per productlijn een andere hook.",
+        "Producten die bewijs en vertrouwen vragen: demo's en echte use-cases winnen vaker dan dansjes. Per productlijn een andere hook, altijd met meetlat.",
         "Tracking is geen bijzaak. UTM, codes, landings. Anders discussieer je achteraf over 'awareness' terwijl je CPA onbekend blijft.",
-        "Wil je alleen een lijst met handles? Dan ben ik te streng. Wil je creators in je acquisitieplan? Dan bouwen we selectie, rights, landings en ads als één keten.",
+        "Wil je alleen een lijst met handles? Dan ben ik te streng. Wil je creators in je acquisitieplan? Dan bouw ik selectie, rights, landings en ads als één keten.",
       ],
     },
     deepDive: {

@@ -79,8 +79,8 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   ],
   proofTitle: "Gebouwd om te groeien",
   proofBody:
-    "MeneerMarketing.nl zelf, klantportalen en shops: alles custom. SkinComplete kreeg een Shopify B2B-portaal dat marketing aankan. BestRest een eigen strategische aanpak. Eigen code, niet hetzelfde thema als tienduizend anderen.",
-  proofCase: "SkinComplete",
+    "MeneerMarketing.nl zelf, klantportalen en shops: alles custom. Elk traject krijgt eigen architectuur: portaal waar B2B het vraagt, SEO in de botten, ruimte voor campagnes. Eigen code, niet hetzelfde thema als tienduizend anderen.",
+  proofCase: "Custom from scratch",
   hotTake: {
     label: "Heet take",
     body: "Een website laten maken via een template is als een maatpak kopen in de sale. Het past nooit echt.",
@@ -142,8 +142,8 @@ export const WEBSITE_LATEN_MAKEN: SeoLandingPage = {
         "Je zoekt iemand voor een website laten maken. Het verschil zit niet in nog een mooi ontwerp. Het zit in snelheid, duidelijke CTA's, SEO-fundament en een structuur die ads aankan zonder dat alles vastloopt.",
         "Ik bouw from scratch in Next.js: eigen code, semantische HTML, schema, Core Web Vitals in de basis. MeneerMarketing.nl zelf is zo gebouwd. Hetzelfde niveau wil ik voor jouw merk.",
         "Template voelt goedkoop tot je wilt schalen. Dan remt elke page builder. Custom betekent: jij bepaalt de roadmap, ik publiceer mee. Geen 'dat kan het thema niet'.",
-        "SkinComplete laat zien wat er gebeurt als shop, SEO en ads op één fundament staan. BestRest kreeg een eigen plan. Elke site krijgt een eigen architectuur, geen kopieer-plak van de vorige klant.",
-        "Wil je alleen een thema met je logo? Dan is er goedkopere hulp. Wil je een fundament voor SEO en ads dat jaren meegaat? Dan bouwen we custom.",
+        "Shop, SEO en ads op één fundament: zo ontwerp ik sites. Elke site krijgt eigen architectuur, geen kopieer-plak van de vorige klant.",
+        "Wil je alleen een thema met je logo? Dan is er goedkopere hulp. Wil je een fundament voor SEO en ads dat jaren meegaat? Dan bouw ik custom.",
       ],
     },
     deepDive: {

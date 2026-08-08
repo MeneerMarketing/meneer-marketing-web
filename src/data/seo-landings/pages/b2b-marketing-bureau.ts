@@ -6,7 +6,7 @@ export const B2B_MARKETING_BUREAU: SeoLandingPage = {
   category: "b2b-portal",
   metaTitle: "B2B marketing bureau · leads die tellen | Meneer Marketing",
   metaDescription:
-    "B2B marketing bureau voor langere salescycli. Portaal, SEO, ads en leadflows. Kwalificatie en opvolging, SkinComplete B2B-niveau.",
+    "B2B marketing bureau voor langere salescycli. Portaal, SEO, ads en leadflows. Kwalificatie en opvolging op professioneel niveau.",
   keywords: [
     "b2b marketing bureau",
     "b2b online marketing",
@@ -71,10 +71,10 @@ export const B2B_MARKETING_BUREAU: SeoLandingPage = {
       body: "Opvolging meten, win-rate terugkoppelen, kanalen bijsturen. Volume volgt kwaliteit.",
     },
   ],
-  proofTitle: "SkinComplete B2B",
+  proofTitle: "Self-service B2B",
   proofBody:
-    "Salons bestellen zelf, op hun tijd, tegen hun prijzen. SEO en e-mail hoorden bij hetzelfde traject. Dat is B2B marketing die werkt: minder mail-chaos, meer orders buiten kantoor.",
-  proofCase: "SkinComplete",
+    "Zakelijke klanten bestellen zelf, op hun tijd, tegen hun prijzen. SEO en e-mail horen bij hetzelfde traject. B2B marketing die werkt: minder mail-chaos, meer orders buiten kantooruren.",
+  proofCase: "Portaal + leads",
   hotTake: {
     label: "Heet take",
     body: "B2B marketing met alleen LinkedIn-posts is netwerken zonder net.",
@@ -108,7 +108,7 @@ export const B2B_MARKETING_BUREAU: SeoLandingPage = {
     {
       question: "Combineer je B2B en B2C?",
       answer:
-        "Vaak in één Shopify-shop: twee gezichten, één voorraad. SkinComplete-model. Communicatie en prijzen gescheiden.",
+        "Vaak in één Shopify-shop: twee gezichten, één voorraad. Één catalogus, gescheiden prijzen en communicatie.",
     },
     {
       question: "Wat met automatisering?",
@@ -134,9 +134,9 @@ export const B2B_MARKETING_BUREAU: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een b2b marketing bureau omdat leads rommelig zijn of omdat zakelijke klanten nog steeds mailen voor een prijslijst. B2B vraagt geduld en structuur. Flash sales helpen zelden.",
         "Ik bouw wat de cycle kort: portaal waar het past, landings die kwalificeren, ads die bij de belofte horen, opvolging die niet in Gmail sterft.",
-        "SkinComplete: salons bestellen zelf. SEO en e-mail op hetzelfde fundament. Minder handwerk, meer orders buiten kantooruren.",
+        "Self-service portaal waar het past. SEO en e-mail op hetzelfde fundament. Minder handwerk, meer orders buiten kantooruren.",
         "LinkedIn, Google en content kunnen naast elkaar. Alleen met één verhaal en één eigenaar. Twee bureaus met twee pitches maakt B2B duurder.",
-        "Wil je alleen posts op LinkedIn? Dan ben ik te hands-on. Wil je leads en herbestellingen die sales vertrouwt? Dan tekenen we het systeem.",
+        "Wil je alleen posts op LinkedIn? Dan ben ik te hands-on. Wil je leads en herbestellingen die sales vertrouwt? Dan teken ik het systeem.",
       ],
     },
     deepDive: {
@@ -152,7 +152,7 @@ export const B2B_MARKETING_BUREAU: SeoLandingPage = {
     scenario: {
       title: "Stel: je inbox vol 'interesse', je pipeline leeg",
       paragraphs: [
-        "Dan is volume niet het probleem. Kwalificatie of opvolging wel. We scherpen belofte en form aan, zetten SLA.",
+        "Dan is volume niet het probleem. Kwalificatie of opvolging wel. Ik scherp belofte en form aan en zet SLA.",
         "Parallel: self-service voor bestaande klanten zodat sales tijd heeft voor nieuwe deals.",
         "Binnen weken zie je of serieuze gesprekken stijgen. Zo niet, dan is aanbod of markt het gesprek. Niet nog een leadmagneet.",
       ],

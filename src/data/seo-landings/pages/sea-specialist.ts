@@ -74,8 +74,8 @@ export const SEA_SPECIALIST: SeoLandingPage = {
   ],
   proofTitle: "Ads na fundament",
   proofBody:
-    "Organisch eerst bij SkinComplete, daarna SEA. Die volgorde bespaart leer-geld. BestRest kreeg een plan per productlijn. Een SEA specialist die alleen biedingen draait zonder landings te raken, mist de helft van het vak.",
-  proofCase: "SkinComplete",
+    "Organisch eerst, SEA daarna. Die volgorde bespaart leergeld. Per productlijn eigen plan voordat budget hard gaat. Een SEA specialist die alleen biedingen draait zonder landings te raken, mist de helft van het vak.",
+  proofCase: "Fundament eerst",
   hotTake: {
     label: "Heet take",
     body: "Een SEA specialist die landing page uitbesteedt aan een goedkope freelancer, gokt met jouw geld.",
@@ -89,7 +89,7 @@ export const SEA_SPECIALIST: SeoLandingPage = {
     {
       question: "Wat is een minimum advertentiebudget?",
       answer:
-        "Hangt af van markt, ticketprijs en concurrentie. We rekenen eerst door of SEA überhaupt kan. Soms is de eerlijke uitkomst: eerst site of SEO.",
+        "Hangt af van markt, ticketprijs en concurrentie. Ik reken eerst door of SEA überhaupt kan. Soms is de eerlijke uitkomst: eerst site of SEO.",
     },
     {
       question: "Beheer je ook bestaande SEA-accounts?",
@@ -134,10 +134,10 @@ export const SEA_SPECIALIST: SeoLandingPage = {
       title: "SEA specialist: klikken sturen die bij je marge passen",
       paragraphs: [
         "Je zoekt een SEA specialist omdat Google Ads budget vraagt en resultaten wisselvallig zijn. Het verschil zit zelden in nog een smart campaign. Het zit in intentie, tracking, landings en wekelijks schonen.",
-        "Ik start bij breakeven. Mag deze klik überhaupt? SkinComplete kreeg eerst organisch en een sterke shop. BestRest een plan per lijn. Pas daarna hardere SEA.",
+        "Ik start bij breakeven. Mag deze klik überhaupt? Eerst organisch en een sterke shop of site. Per lijn eigen aanpak. Pas daarna hardere SEA.",
         "Search vangt hoge intentie. Shopping vraagt schone feeds. PMax kan schalen als input klopt. Ik kies op bewijs, niet op hype uit je Google-rep-mail.",
         "Landings horen bij SEA. Ad belooft X, pagina bewijst X. Uitbesteden aan iemand die je account niet kent is hoe message match scheurt.",
-        "Wil je alleen biedingen en een PDF? Dan ben ik te hands-on. Wil je acquisitie die bij je marge past? Dan pakken we account en pagina samen.",
+        "Wil je alleen biedingen en een PDF? Dan ben ik te hands-on. Wil je acquisitie die bij je marge past? Dan pak ik account en pagina samen.",
       ],
     },
     deepDive: {
@@ -147,14 +147,14 @@ export const SEA_SPECIALIST: SeoLandingPage = {
         "Shopping: Merchant Center groen, PDP sterk, biedingen op marge niet alleen op omzet.",
         "PMax: versterker, geen toverstaf. Vieze feed of zwakke conversies maken de zwarte doos duurder.",
         "Tracking: waarde, calls, leads. Optimaliseer je op micro-events, dan wint Google volume dat jou niks oplevert.",
-        "Rapportage: kosten per resultaat en wat we volgende week wijzigen. SEA zonder actie is een duur dashboard.",
+        "Rapportage: kosten per resultaat en wat ik volgende week wijzig. SEA zonder actie is een duur dashboard.",
       ],
     },
     scenario: {
       title: "Stel: je CPA ziet er oké uit, je marge niet",
       paragraphs: [
         "Het account scoort op conversies. Je controller ziet rood. Vaak optimaliseer je op de verkeerde producten of leads die nooit sluiten.",
-        "Ik koppel conversiewaarde of leadkwaliteit terug en herverdeelt budget. Soms stoppen we wat 'goedkoop' leek.",
+        "Ik koppel conversiewaarde of leadkwaliteit terug en herverdeel budget. Soms stop ik wat 'goedkoop' leek.",
         "Binnen korte tijd zie je of SEA te redden is met sturing, of dat aanbod en landings eerst moeten. Eerlijk, meetbaar.",
       ],
     },

@@ -73,8 +73,8 @@ export const PRODUCTPAGINA_SEO: SeoLandingPage = {
   ],
   proofTitle: "Shopify SEO",
   proofBody:
-    "Collecties ranken vaak wel. Producten moet je bewust bouwen. Bij BestRest kreeg niet elke matras dezelfde diepte. Marge en intentie bepaalden de investering. SkinComplete: organische PDP's vóór zware ads.",
-  proofCase: "BestRest",
+    "Collecties ranken vaak wel. Producten moet je bewust bouwen. Marge en intentie bepalen de investering per SKU. Organische diepte op bestsellers vóór zware ads.",
+  proofCase: "Marge per SKU",
   hotTake: {
     label: "Heet take",
     body: "Productpagina SEO met ChatGPT-bulk is een catalogus die Google als spam ziet.",
@@ -134,9 +134,9 @@ export const PRODUCTPAGINA_SEO: SeoLandingPage = {
       paragraphs: [
         "Je zoekt productpagina seo omdat collecties misschien ranken en bestsellers niet. Of omdat Shopping klikt en de PDP teleurstelt.",
         "Ik prioriteer SKU's op omzet en marge. Unieke antwoorden op koopvragen. Schema dat klopt. Filters die niet indexeren wat niet moet.",
-        "BestRest: niet elke matras dezelfde content-investering. SkinComplete: organische diepte vóór ads-volume.",
+        "Niet elke SKU krijgt dezelfde content-investering. Organische diepte op winnaars vóór ads-volume.",
         "AI-bulk zonder feiten is catalogusruis. Google heeft genoeg daarvan gezien.",
-        "Wil je tienduizend pagina's herschreven in een week? Dan ben ik te kieskeurig. Wil je PDP's die ranken én verkopen? Dan bouwen we op prioriteit.",
+        "Wil je tienduizend pagina's herschreven in een week? Dan ben ik te kieskeurig. Wil je PDP's die ranken én verkopen? Dan bouw ik op prioriteit.",
       ],
     },
     deepDive: {

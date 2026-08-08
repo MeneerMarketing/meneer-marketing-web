@@ -72,10 +72,10 @@ export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
       body: "SEO-content of ads-budget omhoog op wat werkt. Dode landings snijden of herschrijven.",
     },
   ],
-  proofTitle: "Van SkinComplete B2B tot lokale leads",
+  proofTitle: "Serieuze aanvragen",
   proofBody:
-    "Bij SkinComplete draait een B2B-portaal om serieuze aanvragen, niet om vanity traffic. Bij lokale diensten geldt hetzelfde: Maps, landings en forms moeten één verhaal vertellen. Leadgeneratie is structuur plus belofte.",
-  proofCase: "SkinComplete",
+    "Leadgeneratie draait om structuur plus belofte. Ik definieer eerst wat een goede lead is, bouw landings per intentie en meet echte conversies. B2B-portaal of lokale dienst: hetzelfde principe, andere CTA.",
+  proofCase: "Leadfunnel traject",
   hotTake: {
     label: "Heet take",
     body: "Meer traffic-knoppen op je homepage is geen leadstrategie. Het is paniek in UI-vorm.",
@@ -89,7 +89,7 @@ export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
     {
       question: "Werkt dit voor B2B?",
       answer:
-        "Ja. Langere cycles, andere CTA's, vaak meer bewijs. SkinComplete is B2B-denken in de praktijk. Kwaliteit boven volume.",
+        "Ja. Langere cycles, andere CTA's, vaak meer bewijs. Ik optimaliseer op kwaliteit boven volume. Een goede B2B-lead vraagt scherpere belofte en kortere forms dan consumer-traffic.",
     },
     {
       question: "Koppel je Google Ads eraan?",
@@ -104,7 +104,7 @@ export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
     {
       question: "Wat als ik al veel leads heb maar slechte?",
       answer:
-        "Dan scherpen we belofte, targeting en formkwalificatie aan. Minder volume met hogere fit is goedkoper dan meer rommel.",
+        "Dan scherp ik belofte, targeting en formkwalificatie aan. Minder volume met hogere fit is goedkoper dan meer rommel.",
     },
     {
       question: "Hoe snel zie ik meer leads?",
@@ -136,9 +136,9 @@ export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een leadgeneratie website omdat bezoekers niet bellen of mailen. Of omdat ze wel bellen met de verkeerde vraag. Beide zijn een belofte-probleem, geen 'meer knoppen'-probleem.",
         "Ik bouw of scherp landings per intentie. Form kort. Bewijs dichtbij. Tracking op echte leads. SEO en Google Ads wijzen naar dezelfde belofte.",
-        "Bij SkinComplete telt de B2B-aanvraag. Bij lokale diensten telt de bel of afspraak. Volume zonder kwaliteit is duur theater.",
+        "B2B-aanvragen en lokale afspraken vragen andere CTA's. Volume zonder kwaliteit is duur theater.",
         "Homepage als enige funnel werkt zelden. Mensen komen met één vraag. Geef één antwoord en één CTA. De rest van de site mag erachter liggen.",
-        "Wil je alleen een mooiere homepage? Dan ben ik te funnel-gericht. Wil je meetbare leads die sales kan bellen? Dan bouwen we de route.",
+        "Wil je alleen een mooiere homepage? Dan ben ik te funnel-gericht. Wil je meetbare leads die sales kan bellen? Dan bouw ik de route.",
       ],
     },
     deepDive: {

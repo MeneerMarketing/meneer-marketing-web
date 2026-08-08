@@ -73,8 +73,8 @@ export const BUREAU_OF_FREELANCER_MARKETING: SeoLandingPage = {
   ],
   proofTitle: "Meneer-model",
   proofBody:
-    "Ik ben je online marketing manager, niet een kantoor vol stagiairs. SkinComplete en BestRest kregen strategie én uitvoering onder één dak: shop, SEO, ads, automatisering. Dat is het derde antwoord tussen bureau en losse freelancer.",
-  proofCase: "SkinComplete",
+    "Ik ben je online marketing manager, niet een kantoor vol stagiairs. Strategie én uitvoering onder één dak: shop, SEO, ads, automatisering. Dat is het derde antwoord tussen bureau en losse freelancer.",
+  proofCase: "Strategie in uitvoering",
   hotTake: {
     label: "Heet take",
     body: "Een marketing bureau waar je nooit de persoon spreekt die je account aanraakt, is een gok met service fee.",
@@ -133,7 +133,7 @@ export const BUREAU_OF_FREELANCER_MARKETING: SeoLandingPage = {
       paragraphs: [
         "Je zoekt marketing bureau of freelancer omdat je hulp nodig hebt en twee karikaturen kent: duur kantoor of goedkope eenpitter. De echte vraag is: wie eigenaar is van resultaat tot live.",
         "Grote bureaus brengen breedte en overhead. Freelancers brengen focus tot je vijf stuks coördineert. Ik zit ertussen: één senior die bouwt, SEO doet en ads draait.",
-        "Bij SkinComplete en BestRest zat strategie niet in een aparte deck-fase. Het zat in de shop, de landings en de campagnes. Uitvoering is de strategie.",
+        "Strategie zit niet in een aparte deck-fase. Het zit in de shop, de landings en de campagnes. Uitvoering is de strategie.",
         "Junior-account met senior-pitch is een klassieker. Als je nooit praat met wie je account aanraakt, koop je een gok met service fee.",
         "Wil je een logo op je factuur van twintig mensen? Soms nodig. Wil je MKB-groei zonder circus? Dan is het Meneer-model vaak scherper.",
       ],

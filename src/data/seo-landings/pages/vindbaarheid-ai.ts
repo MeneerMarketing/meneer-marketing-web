@@ -75,8 +75,8 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
   ],
   proofTitle: "Nieuw speelveld, vroege winst",
   proofBody:
-    "Wie nu autoriteit opbouwt in AI-antwoorden, heeft straks voorsprong. De basis overlapt met goede SEO: heldere pagina's, schema, echte expertise. SkinComplete groeide eerst op vragen die mensen écht stellen. Dezelfde logica geldt voor ChatGPT en Gemini.",
-  proofCase: "SkinComplete",
+    "Wie nu autoriteit opbouwt in AI-antwoorden, heeft voorsprong. De basis overlapt met goede SEO: heldere pagina's, schema, echte expertise. Ik bouw antwoordblokken op vragen die klanten écht stellen.",
+  proofCase: "AI-audit traject",
   hotTake: {
     label: "Heet take",
     body: "Vindbaarheid in AI met alleen een blog over top 10 tips is alsof je een visitekaartje in een zwart gat gooit.",
@@ -132,8 +132,8 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
         "Je typt je markt in ChatGPT. De antwoorden noemen drie merken. Jij staat er niet bij. Dat is de nieuwe pagina 2 van Google, alleen erger: er is geen pagina 2.",
         "Ik behandel AI-antwoorden als volwaardig kanaal naast SEO. Zelfde feiten, betere structuur, schema en bronnen die machines durven te citeren.",
         "Bulk-AI-tekst op je site helpt hier juist tegen. Wat wint: duidelijke claims, bewijs, NAP waar nodig, en pagina's die één vraag echt beantwoorden.",
-        "SkinComplete groeide eerst op salonvragen die mensen typen. Dezelfde vragen belanden nu ook in AI-chats. Wie die antwoorden scherp heeft, wint twee kanalen tegelijk.",
-        "Wil je een trucje om morgen in elk AI-antwoord te staan? Dat bestaat niet. Wil je een contentplan dat citeerbaar is en Google blijft voeden? Dan beginnen we met een audit.",
+        "De vragen uit intake, support en sales belanden nu ook in AI-chats. Wie die antwoorden scherp heeft, wint twee kanalen tegelijk.",
+        "Wil je een trucje om morgen in elk AI-antwoord te staan? Dat bestaat niet. Wil je een contentplan dat citeerbaar is en Google blijft voeden? Dan begin ik met een audit.",
       ],
     },
     deepDive: {
@@ -142,7 +142,7 @@ export const VINDBAARHEID_AI: SeoLandingPage = {
         "Eerst audit: wat zeggen ChatGPT en Gemini nu over jouw categorie? Welke bronnen citeren ze? Waar zit het gat tussen hun antwoord en jouw expertise.",
         "Daarna antwoord-pagina's: korte, feitelijke blokken bovenaan, diepte eronder, FAQ-schema, interne links naar je money-pages. Klassieke SEO blijft meedraaien.",
         "Consistentie telt. Naam, dienst, regio en claims moeten overal hetzelfde klinken. Machines vertrouwen bronnen die niet elke pagina een ander verhaal vertellen.",
-        "E-E-A-T is geen buzzword-lijstje. Cases, werkwijze, duidelijke auteur of merk. SkinComplete en BestRest werken als bewijs omdat ze concreet zijn, niet omdat ze mooi klinken.",
+        "E-E-A-T is geen buzzword-lijstje. Werkwijze, duidelijke auteur of merk, concrete antwoorden. Machines citeren pagina's die één vraag volledig afmaken, niet marketingwol.",
         "Tot slot ritme: updates als producten of diensten wijzigen. AI-caches zijn traag. Consistent publiceren wint van een eenmalige contentdump die daarna stof vangt.",
       ],
     },

@@ -72,10 +72,10 @@ export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
       body: "Winnaars budget. Verliezers snijden. Google erbij waar intentie telt.",
     },
   ],
-  proofTitle: "Creators + performance",
+  proofTitle: "Creators plus performance",
   proofBody:
-    "Social advertising werkt als creative en landing samen bewegen. BestRest: visueel product, discovery mogelijk. SkinComplete: vaak search en organisch eerst, social gericht. UGC zit in de aanpak, niet als trucje.",
-  proofCase: "BestRest",
+    "Social advertising werkt als creative en landing samen bewegen. Ik kies platform op waar jouw koper hangt, test hooks en stuur bij op conversies. UGC zit in de aanpak, niet als los trucje.",
+  proofCase: "Social funnel traject",
   hotTake: {
     label: "Heet take",
     body: "Social media advertising met stockvideo is een reclamefolder in 2026. Niemand kijkt.",
@@ -137,8 +137,8 @@ export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
         "Je zoekt social media advertising omdat bereik alleen niet meer genoeg voelt. Of omdat iemand zei dat je op Instagram moet. Social mag. Alleen met offer, landings en creatives die niet als folder schreeuwen.",
         "Ik kies platform op waar jouw koper hangt. Meta en TikTok zijn anders dan Google Search. Intentie versus interruptie.",
         "UGC en short video zitten in de aanpak. Stock met lachen is 2020. Fatigue komt sneller dan je denkt.",
-        "BestRest-achtige producten lenen zich voor discovery. B2B vaak niet blind op TikTok. Eerlijk past beter dan trendy.",
-        "Wil je alleen likes? Dan ben ik te streng. Wil je leads of orders uit social? Dan bouwen we de funnel.",
+        "Visuele consumer-producten lenen zich voor discovery. B2B vraagt vaak een andere route. Eerlijk past beter dan trendy.",
+        "Wil je alleen likes? Dan ben ik te streng. Wil je leads of orders uit social? Dan bouw ik de funnel.",
       ],
     },
     deepDive: {
