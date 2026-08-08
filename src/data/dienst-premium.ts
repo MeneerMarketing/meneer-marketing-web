@@ -151,7 +151,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroKicker:
       "De Shopify Store heeft duizenden themes. Jouw merk verdient eigen Liquid, checkout en portals. Custom gebouwd, zonder shortcuts.",
     funFact:
-      "Een theme uit de Shopify Store met jouw logo erop is vermomde template. Maatwerk begint op een leeg canvas.",
+      "Een theme uit de Shopify Store met jouw logo erop is vermomde template. From scratch begint op een leeg canvas.",
     funFactSource: "Daarom from scratch",
     funFactStat: "0",
     principles: [

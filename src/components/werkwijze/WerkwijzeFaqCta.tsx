@@ -18,7 +18,7 @@ export function WerkwijzeFaqSection() {
             id="werkwijze-faq-heading"
             className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
           >
-            Vragen over hoe we werken
+            Vragen over hoe ik werk
           </h2>
           <p className="mt-2 text-slate-600">
             Kort en eerlijk. Staat je vraag er niet tussen? Start de intake of

@@ -135,7 +135,7 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
           min: 75,
           max: 100,
           label: "Optie nul",
-          quip: "Voor die klant bestaan jullie niet. Stop bulk. Bouw antwoorden.",
+          quip: "Voor die klant bestaat jouw merk niet. Stop bulk. Bouw antwoorden.",
         },
       ],
     },

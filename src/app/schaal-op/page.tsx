@@ -133,7 +133,7 @@ export default function SchaalOpPage() {
                   icon: <BarChart3 className="size-4" />,
                 },
               ]}
-              trustLabel="We delen wat werkt en wat níét werkte in eerdere trajecten."
+              trustLabel="Ik deel wat werkt en wat níét werkte in eerdere trajecten."
             />
           </div>
         </section>

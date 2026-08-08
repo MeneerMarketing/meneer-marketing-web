@@ -444,7 +444,7 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
     extras: ["websiteUrl"],
     messagePlaceholder:
       "Wat groeit al? Waar hapert het? Getallen (verkeer / conversie / CAC) helpen enorm.",
-    submitLabel: "Laat ons schalen",
+    submitLabel: "Laat me schalen",
   },
 };
 
@@ -1227,7 +1227,7 @@ export function ConversionForm({
                     id={pid("websiteUrl")}
                     label="Website of shop-URL"
                     icon={Link2}
-                    hint="Scheelt ons flink voorwerk. Check ook subpagina’s."
+                    hint="Scheelt mij flink voorwerk. Check ook subpagina’s."
                   >
                     <input
                       id={pid("websiteUrl")}

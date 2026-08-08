@@ -20,7 +20,7 @@ import { NOINDEX_FOLLOW_ROBOTS } from "@/lib/seo/robots-policy";
 export const metadata: Metadata = {
   title: "Project starten",
   description:
-    "Dien een projectaanvraag in bij Meneer Marketing: type, budget, timing. We reageren met een concreet vervolg.",
+    "Dien een projectaanvraag in bij Meneer Marketing: type, budget, timing. Ik reageer met een concreet vervolg.",
   alternates: { canonical: absoluteUrl("/project-starten") },
   robots: NOINDEX_FOLLOW_ROBOTS,
   openGraph: {
@@ -95,7 +95,7 @@ export default function ProjectStartenPage() {
               steps={[
                 {
                   title: "Voorbereiding",
-                  body: "We scannen je site/shop en toetsen scope aan jouw doelen.",
+                  body: "Ik scan je site/shop en toets scope aan jouw doelen.",
                 },
                 {
                   title: "Scope-call (30 min)",
@@ -110,7 +110,7 @@ export default function ProjectStartenPage() {
                 {
                   label: "Bekijk alle diensten",
                   href: "/diensten",
-                  description: "Per blok wat we uitvoeren en wanneer.",
+                  description: "Per blok wat ik uitvoer en wanneer.",
                   icon: <Layers className="size-4" />,
                 },
                 {

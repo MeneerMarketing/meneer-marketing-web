@@ -88,7 +88,7 @@ export const INFLUENCER_MARKETING_BUREAU: SeoLandingPage = {
     {
       question: "Wat is het verschil met UGC marketing?",
       answer:
-        "Influencers draaien om hun publiek en plaatsing. UGC focust op ads-ready content. In de praktijk combineren we vaak: creator maakt, jij adverteert.",
+        "Influencers draaien om hun publiek en plaatsing. UGC focust op ads-ready content. In de praktijk combineer ik vaak: creator maakt, jij adverteert.",
     },
     {
       question: "Regel je ook de Meta Ads erbij?",

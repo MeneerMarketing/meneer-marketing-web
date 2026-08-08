@@ -342,7 +342,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepExtended:
       "Server-side of client-side tagging bepaal ik op risico, precisie en onderhoud. Het doel is dat jij campagnes én boardroom met dezelfde cijfers kunt bespreken.",
     signals: [
-      "Welke conversies zijn ‘leading’ voor jullie beslissingen?",
+      "Welke conversies zijn ‘leading’ voor jouw beslissingen?",
       "Hoe ziet je cookie/consent setup eruit?",
       "Gebruik je enhanced conversions, offline imports, refunds?",
       "Welke dashboards gebruik je vandaag. En wat mist daar?",

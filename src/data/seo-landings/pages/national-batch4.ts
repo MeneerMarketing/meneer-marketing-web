@@ -101,7 +101,7 @@ export const ADVERTENTIEBEHEER: SeoLandingPage = {
   ],
   deliverables: [
     { title: "Wekelijks beheer", body: "Biedingen, zoektermen, budget." },
-    { title: "Maandrapport met actie", body: "Wat we deden, wat volgende week." },
+    { title: "Maandrapport met actie", body: "Wat ik deed, wat volgende week." },
     { title: "Landings bijsturen", body: "Message match blijft kloppen." },
     { title: "Google + Meta", body: "Eén strategie, twee platforms." },
   ],

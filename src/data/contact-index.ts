@@ -319,7 +319,7 @@ export const CONTACT_TOPICS: ContactTopic[] = [
 
 export const CONTACT_QUOTES = [
   "Psst. Hoe korter je bericht, hoe sneller ik kan schakelen. Tenzij het ingewikkeld is. Dan mag het lang.",
-  "Gewoon Nederlands. We kennen elkaar nog niet, maar voelt al vertrouwd.",
+  "Gewoon Nederlands. Ik ken je nog niet, maar voelt al vertrouwd.",
   "Als je site-URL meestuurt, scheelt dat drie mails heen en weer. Trust me.",
   "Urgent? Zet 'urgent' in je onderwerp. Ik beloof niks, maar ik kijk wel eerder.",
 ] as const;

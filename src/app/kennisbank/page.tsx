@@ -190,8 +190,8 @@ export default function KennisbankPage() {
                   Liever dat ik dit voor je regel?
                 </p>
                 <p className="mt-1 text-sm text-mm-muted">
-                  Lezen is gratis, uitvoeren doe ik dagelijks. Vul de intake in
-                  en we bespreken waar voor jou de winst zit.
+                  Lezen is gratis, uitvoeren doe ik dagelijks. Vul de intake in.
+                  Dan bespreek ik waar voor jou de winst zit.
                 </p>
               </div>
               <Link

@@ -930,7 +930,7 @@ const TRIO_PROCESS_TITLES: Record<TrioBaseSlug, readonly string[]> = {
   ],
   "marketing-bureau": [
     "Marketing in {city}, één lijn",
-    "Zo werk ik als bureau in {region}",
+    "Zo werk ik in {region}",
     "{kw} zonder spaghetti",
   ],
 };

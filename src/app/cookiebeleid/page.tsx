@@ -82,7 +82,7 @@ export default function CookiePage() {
           Vragen over dit cookiebeleid of over je gegevens? Mail naar{" "}
           <a href={`mailto:${businessEmail}`}>{businessEmail}</a> of kijk in{" "}
           <a href="/privacybeleid">het privacybeleid</a> voor het volledige
-          verhaal over hoe we met persoonsgegevens omgaan.
+          verhaal over hoe ik met persoonsgegevens omga.
         </p>
       </LegalPageShell>
     </>
