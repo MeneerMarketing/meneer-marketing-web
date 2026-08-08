@@ -72,10 +72,10 @@ export const SHOPIFY_SEO: SeoLandingPage = {
       body: "Search Console, organische omzet, overlap met Shopping. Opschalen wat werkt.",
     },
   ],
-  proofTitle: "SkinComplete eerst organisch",
+  proofTitle: "Organisch vóór ads-volume",
   proofBody:
-    "Eerst SEO en shop, daarna ads. Die volgorde bij SkinComplete is geen toeval. Organisch bewees wat converteerde. Ads schaalden daarna goedkoper. BestRest: per product andere SEO-diepte, want niet elke matras verdient dezelfde content-investering.",
-  proofCase: "SkinComplete",
+    "Eerst SEO en shop, daarna ads. Organisch bewijst wat converteert. Ads schalen daarna goedkoper. SEO-diepte volgt marge en intentie: niet elk product krijgt hetzelfde essay.",
+  proofCase: "Catalogus op prioriteit",
   hotTake: {
     label: "Heet take",
     body: "Shopify SEO met alleen AI-productbeschrijvingen is een catalogus die Google negeert.",
@@ -136,9 +136,9 @@ export const SHOPIFY_SEO: SeoLandingPage = {
       paragraphs: [
         "Je zoekt Shopify SEO omdat organisch stil is of omdat ads te duur voelen. Vaak is de catalogus het probleem: dunne PDP's, filter-URL's, trage theme, dezelfde tekst overal.",
         "Ik fix techniek in het theme waar nodig. Daarna content op producten en collecties die geld verdienen. Niet elk product krijgt een essay. Wel elk product dat moet ranken.",
-        "SkinComplete: organisch eerst, ads later. BestRest: SEO-diepte per product op marge en intentie. Dat is Shopify SEO die bij business hoort.",
+        "Organisch eerst, ads later. SEO-diepte per product op marge en intentie. Dat is Shopify SEO die bij business hoort, niet bij een keywordlijst zonder kassa.",
         "AI-bulkbeschrijvingen zonder unieke feiten zijn ruis. Google heeft genoeg catalogi gezien. Jouw verschil moet in HTML staan, niet alleen in je merkboek.",
-        "Wil je alleen keywords in titles? Dat kan een junior. Wil je indexatie, snelheid en pagina's die converteren? Dan pakken we de shop als systeem.",
+        "Wil je alleen keywords in titles? Dat kan een junior. Wil je indexatie, snelheid en pagina's die converteren? Dan pak ik de shop als systeem.",
       ],
     },
     deepDive: {

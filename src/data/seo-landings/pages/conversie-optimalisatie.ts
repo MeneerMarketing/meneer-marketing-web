@@ -57,7 +57,7 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
   processSteps: [
     {
       title: "Baseline vastleggen",
-      body: "Conversie, bounce, device-split, belangrijkste landings. Weten waar je staat vóór we knoppen verplaatsen.",
+      body: "Conversie, bounce, device-split, belangrijkste landings. Weten waar je staat vóór ik knoppen verplaats.",
     },
     {
       title: "Grootste lek eerst",
@@ -72,10 +72,10 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
       body: "Werkt het echt in orders of leads? Dan door. Zo niet: volgende hypothese, niet hardnekkig vasthouden aan smaak.",
     },
   ],
-  proofTitle: "BestRest en SkinComplete",
+  proofTitle: "Zelfde verkeer, meer omzet",
   proofBody:
-    "Bij BestRest telt elke procent op een matras. Bij SkinComplete elke stap in het B2B-portaal. CRO is geen luxe. Het is marge. Zelfde verkeer harder laten werken spaart adsbudget.",
-  proofCase: "BestRest",
+    "Bij hoge tickets telt elke procent in checkout. Bij B2B-portalen elke stap in login en herbestellen. CRO is marge. Zelfde verkeer harder laten werken spaart adsbudget.",
+  proofCase: "Funnel-audit traject",
   hotTake: {
     label: "Heet take",
     body: "Conversie optimalisatie met alleen een heatmap-abonnement is een thermometer in een koude oven.",
@@ -136,9 +136,9 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
       paragraphs: [
         "Je zoekt conversie optimalisatie of een CRO bureau omdat verkeer wel komt en omzet achterblijft. Het label maakt niet uit. Wat telt: waar bezoekers afhaken en of iemand dat in code en copy durft te fixen.",
         "Ik begin bij de grootste lekken: trage mobiel, vage belofte, form of checkout-frictie. Micro-tests op knopkleur komen later, als er genoeg volume is om iets te leren.",
-        "Bij BestRest telt elke procent op een matras. Bij SkinComplete elke stap in het B2B-portaal. CRO is marge, geen speeltuin voor designers met te veel tijd.",
+        "Bij hoge tickets telt elke procent in checkout. Bij zakelijke flows elke stap in het portaal. CRO is marge, geen speeltuin voor designers met te veel tijd.",
         "Ads zonder CRO is water in een emmer met gaten. SEO zonder CRO is hetzelfde met gratis water. Eerst dichten, dan volume.",
-        "Wil je alleen een heatmap-dashboard? Dan ben ik te hands-on. Wil je meetbare lifts in leads of orders? Dan bouwen we fixes in volgorde van impact.",
+        "Wil je alleen een heatmap-dashboard? Dan ben ik te hands-on. Wil je meetbare lifts in leads of orders? Dan bouw ik fixes in volgorde van impact.",
       ],
     },
     deepDive: {

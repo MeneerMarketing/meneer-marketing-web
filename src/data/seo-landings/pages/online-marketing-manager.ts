@@ -71,10 +71,10 @@ export const ONLINE_MARKETING_MANAGER: SeoLandingPage = {
       body: "Wekelijks bijsturen, maandelijks eerlijk: opschalen, pauzeren of stoppen.",
     },
   ],
-  proofTitle: "SkinComplete & BestRest",
+  proofTitle: "Eén lijn, echte volgorde",
   proofBody:
-    "Van shop tot SEO tot ads: ik ken het traject omdat ik het zo heb gedaan voor echte klanten. SkinComplete organisch eerst, daarna ads. BestRest per product een eigen logica. Dat is manager-werk, geen slide-deck.",
-  proofCase: "SkinComplete",
+    "Van shop tot SEO tot ads onder één prioriteitenlijst. Eerst organisch waar het kan, daarna ads. Per productlijn een eigen logica. Dat is manager-werk, geen slide-deck.",
+  proofCase: "Doorlopend management",
   hotTake: {
     label: "Heet take",
     body: "Een online marketing manager die niet kan bouwen, is een planner zonder werkplaats.",
@@ -135,7 +135,7 @@ export const ONLINE_MARKETING_MANAGER: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een online marketing manager omdat te veel partijen naast elkaar werken of omdat je geen fulltime CMO kunt betalen. Je wilt iemand die prioriteert én uitvoert.",
         "Ik ben die lijn: site, SEO, Google Ads, Meta, automatisering waar nodig. Eén brein. Geen tolk tussen junior en senior.",
-        "SkinComplete en BestRest lieten zien: volgorde telt. Fundament, dan volume. Manager-werk is zeggen wat níet deze maand gebeurt.",
+        "In de praktijk telt volgorde. Fundament, dan volume. Manager-werk is ook zeggen wat níet deze maand gebeurt.",
         "Bureaus zonder uitvoering laten je met to-do's zitten. Freelancers zonder overzicht maken eilandjes. Het Meneer-model zit ertussen.",
         "Wil je alleen een sparringpartner? Soms genoeg. Wil je iemand die landings en campagnes live zet? Dan is dit de rol.",
       ],

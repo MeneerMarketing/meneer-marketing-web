@@ -72,10 +72,10 @@ export const UGC_MARKETING: SeoLandingPage = {
       body: "Winnaars opschalen, vermoeide creatives vervangen. Pipeline blijft lopen. Sentiment is geen KPI.",
     },
   ],
-  proofTitle: "SkinComplete-style",
+  proofTitle: "UGC met kassa",
   proofBody:
-    "Professionele producten, menselijke content. Meta draaide harder toen UGC en landings klopten. Views zijn leuk. Orders zijn het doel. BestRest vraagt per productlijn een andere hook.",
-  proofCase: "SkinComplete",
+    "Professionele producten, menselijke content. Meta draait harder als UGC en landings dezelfde belofte maken. Views zijn leuk. Orders zijn het doel. Elke productlijn krijgt een eigen hook.",
+  proofCase: "Creative → landing → ads",
   hotTake: {
     label: "Heet take",
     body: "UGC marketing met alleen je team voor de camera is een inside joke die niemand buiten kantoor snapt.",
@@ -134,10 +134,10 @@ export const UGC_MARKETING: SeoLandingPage = {
       title: "UGC marketing is performance-content, geen toevallige selfie",
       paragraphs: [
         "Je zoekt UGC marketing omdat stock en corporate video niet meer stoppen in de feed. Klopt. Mensen geloven mensen sneller dan een logo-animatie. Maar UGC zonder landings en tracking is als een etalage zonder kassa.",
-        "Ik koppel creators aan Meta Ads, soms TikTok, altijd aan een pagina die dezelfde belofte waarmaakt. SkinComplete liet zien dat professionele producten harder verkopen met menselijke content.",
-        "BestRest vraagt per productlijn een andere hook. Een topper is geen matras. Generieke 'wij zijn geweldig'-reels negeren dat. Specificiteit verkoopt.",
-        "Rechten regelen we vooraf: organisch posten is leuk, ads draaien is waar je schaalt. Zonder whitelisting of usage rights zit je vast na één organische piek.",
-        "Wil je alleen virale views? Dan ben ik te streng. Wil je creatives die CPA of ROAS verbeteren? Dan bouwen we een pipeline, geen eenmalige shoot.",
+        "Ik koppel creators aan Meta Ads, soms TikTok, altijd aan een pagina die dezelfde belofte waarmaakt. Professionele producten verkopen harder met menselijke content dan met logo-animaties.",
+        "Elke productlijn vraagt een andere hook. Impuls en research-koop zijn andere breinen. Generieke 'wij zijn geweldig'-reels negeren dat. Specificiteit verkoopt.",
+        "Rechten regel ik vooraf: organisch posten is leuk, ads draaien is waar je schaalt. Zonder whitelisting of usage rights zit je vast na één organische piek.",
+        "Wil je alleen virale views? Dan ben ik te streng. Wil je creatives die CPA of ROAS verbeteren? Dan bouw ik een pipeline, geen eenmalige shoot.",
       ],
     },
     deepDive: {
