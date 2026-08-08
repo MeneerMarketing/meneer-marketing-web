@@ -6,7 +6,8 @@ export const HOMEPAGE_GEEN_LANDINGSPAGINA: KennisbankArticle = {
   description:
     "Je advertentie belooft iets concreets. Je homepage zegt welkom. Message match uitgelegd, met fixes die je conversie direct raken.",
   publishedAt: "2026-07-06",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "landingspagina vs homepage",
@@ -15,6 +16,33 @@ export const HOMEPAGE_GEEN_LANDINGSPAGINA: KennisbankArticle = {
     "conversie landingspagina",
   ],
   dienstSlugs: ["cro", "webdevelopment", "google-ads"],
+  faqs: [
+    {
+      question: "Mag ik ads ooit naar de homepage sturen?",
+      answer:
+        "Alleen bij pure merkcampagnes of als je home één scherpe belofte en CTA heeft. Voor product- of dienstads wil je een landings die de ad herhaalt.",
+    },
+    {
+      question: "Is een productpagina goed genoeg als landings?",
+      answer:
+        "Vaak wel als die snel is, de belofte bovenaan staat en de CTA duidelijk is. Zo niet: aparte landings from scratch voor de campagne die het budget trekt.",
+    },
+    {
+      question: "Hoeveel landings heb ik nodig?",
+      answer:
+        "Eén sterke per belangrijkste adgroep of intentie. Liever drie scherpe URL's dan vijftien halfbakken. Schaal landings mee met budget, niet met ego.",
+    },
+    {
+      question: "Helpt message match Quality Score?",
+      answer:
+        "Indirect ja: relevantere landings, betere CTR en conversie. Direct voel je het in CPA. Quality Score is het bijeffect, je bankrekening is het doel.",
+    },
+    {
+      question: "Wat als mijn theme geen custom landings aankan?",
+      answer:
+        "Dan knijpt het theme je ads. Overweeg custom build of een stack die landings per campagne aankan. Ads op een starre template is water in een lekke emmer.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -56,6 +84,14 @@ export const HOMEPAGE_GEEN_LANDINGSPAGINA: KennisbankArticle = {
     {
       type: "p",
       text: "Bij BestRest kreeg niet elke matras dezelfde landings. Producten met andere marges, andere zoekintentie, andere vergelijking. Sommige campagnes gingen naar een productpagina die scherp was. Sommige naar een landings die één aanbod maakte. De homepage was het visitekaartje. Niet het verkoopgesprek om 23:00.",
+    },
+    {
+      type: "h2",
+      text: "SkinComplete: landings vóór ads-schaal",
+    },
+    {
+      type: "p",
+      text: "Eerst organische landings op salonvragen, shop scherp, daarna pas budget omhoog. Diezelfde discipline geldt voor paid: belofte in de ad, bewijs op de URL, CTA zonder omweg. Homepage mag branden. Campagne-URL's moeten verkopen.",
     },
     {
       type: "h2",

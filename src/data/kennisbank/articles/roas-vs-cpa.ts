@@ -6,7 +6,8 @@ export const ROAS_VS_CPA: KennisbankArticle = {
   description:
     "ROAS klinkt indrukwekkend op een dashboard. CPA ook. Maar welke metric past bij jouw marge? Met rekenvoorbeelden die je echt kunt gebruiken.",
   publishedAt: "2026-07-10",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "roas uitleg",
@@ -15,6 +16,33 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     "google ads metrics",
   ],
   dienstSlugs: ["google-ads", "adverteren", "tracking"],
+  faqs: [
+    {
+      question: "Wat is een goede ROAS?",
+      answer:
+        "Die bestaat niet zonder marge. ROAS 4 is feest bij 60% marge en verlies bij 15%. Reken terug vanaf kostprijs + vaste kosten, niet vanaf wat concurrenten op LinkedIn posten.",
+    },
+    {
+      question: "Wanneer kies ik CPA in plaats van ROAS?",
+      answer:
+        "Bij leads, afspraken of diensten met één duidelijke conversie. Of bij gemengde catalogus waar gemiddelde ROAS producten met verschillende marges door elkaar gooit.",
+    },
+    {
+      question: "Moet ik tROAS of tCPA in Google Ads zetten?",
+      answer:
+        "tROAS als je betrouwbare conversiewaarde meestuurt en marges binnen de camp vergelijkbaar zijn. tCPA als elke conversie ongeveer evenveel mag kosten. Verkeerde target op rommeldata is sneller kapot dan handmatig.",
+    },
+    {
+      question: "Telt branded search mee in ROAS?",
+      answer:
+        "Vaak ja in het dashboard, en dat maakt je ROAS mooier dan acquisitie echt is. Rapportageer branded apart. Anders juich je voor mensen die je naam al kenden.",
+    },
+    {
+      question: "Hoe koppel ik marge aan Ads?",
+      answer:
+        "Stuur orderwaarde of aangepaste waarde (marge) terug. Split campagnes per productgroep met vergelijkbare economics. Dashboard zonder marge is theater.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -71,6 +99,14 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     {
       type: "p",
       text: "Stuur orderwaarde of leadwaarde terug naar Google. Dan kan smart bidding optimaliseren op waarde, niet op volume. Zonder waarde leert het algoritme dat een €20 order even goed is als een €500 order. Spoiler: dat is niet zo.",
+    },
+    {
+      type: "h2",
+      text: "POAS: de metric die niemand in Ads ziet",
+    },
+    {
+      type: "p",
+      text: "Profit on Ad Spend. Omzet min kostprijs, gedeeld door ad spend. Google ziet dat niet standaard. Jij wel in je sheet. Als je schaalt op ROAS zonder POAS, schaal je soms omzet die je liever niet had. BestRest: per matras andere inkoop. SkinComplete B2B: andere orderwaarde dan een losse consumentenklik. Meet wat overblijft.",
     },
     {
       type: "h2",

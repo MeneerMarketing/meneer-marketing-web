@@ -6,7 +6,8 @@ export const LEADS_GMAIL_OPVOLGING: KennisbankArticle = {
   description:
     "Leads verdwijnen in je inbox tussen facturen en nieuwsbrieven. Zo zet je opvolging op rails zonder direct een zware CRM.",
   publishedAt: "2026-07-06",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "behoud",
   keywords: [
     "leads opvolgen",
@@ -15,6 +16,33 @@ export const LEADS_GMAIL_OPVOLGING: KennisbankArticle = {
     "lead nurturing",
   ],
   dienstSlugs: ["automatisering", "workflows", "email"],
+  faqs: [
+    {
+      question: "Hoe snel moet ik een lead opvolgen?",
+      answer:
+        "Bevestiging binnen minuten. Menselijk contact binnen dezelfde werkdag, liefst binnen een paar uur. Na 24 uur voelt het al koud. Na vier dagen is de concurrent vaak al aan de lijn.",
+    },
+    {
+      question: "Heb ik meteen een dure CRM nodig?",
+      answer:
+        "Nee. Begin met bevestigingsmail, notificatie naar de juiste persoon en een statuslijst (nieuw → contact → offerte → gewonnen/verloren). Tool later. Proces nu.",
+    },
+    {
+      question: "Wat als ik alleen in het weekend leads krijg?",
+      answer:
+        "Automatische bevestiging met verwachting ('maandag bel ik tussen 9 en 11'). Stilte in het weekend voelt als verdwijnen. Een eerlijke timeline houdt de lead warm.",
+    },
+    {
+      question: "Welke tools gebruik je voor MKB?",
+      answer:
+        "Afhankelijk van stack: n8n of Make voor de glue, HubSpot/Pipedrive als volume groeit, Slack of gelabelde mail voor alerts. De flow telt harder dan het logo op de factuur.",
+    },
+    {
+      question: "Hoe meet ik of opvolging werkt?",
+      answer:
+        "Tijd tot eerste reactie, percentage 'nieuw' langer dan 48 uur, win-rate per bron. Als leads sterven zonder ooit gebeld te zijn, is ads niet het probleem. Opvolging wel.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -69,6 +97,14 @@ export const LEADS_GMAIL_OPVOLGING: KennisbankArticle = {
     {
       type: "p",
       text: "SkinComplete-salons bestelden via portaal. Minder mail-heen-en-weer. Jij hoeft geen B2B-portaal te bouwen voor elke lead, maar je proces mag ook geen bingo zijn.",
+    },
+    {
+      type: "h2",
+      text: "Ads zonder opvolging is weggegooid budget",
+    },
+    {
+      type: "p",
+      text: "Je kunt CPA groen houden in Google Ads en toch omzet missen als leads in Gmail sterven. Meet tijd tot eerste reactie naast CPA. Als half je formulieren nooit gebeld worden, fix opvolging vóór je budget verhoogt. Anders schaal je een vergiet.",
     },
     {
       type: "h2",
