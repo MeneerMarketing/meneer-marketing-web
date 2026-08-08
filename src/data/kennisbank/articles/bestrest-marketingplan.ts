@@ -7,7 +7,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     "Twee matrassen, twee toppers, twee marges. Bij BestRest geen generiek advertentieaccount, wel een strategie per product. Zo pak je dat aan.",
   publishedAt: "2026-07-05",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 15,
   category: "strategie",
   keywords: [
     "marketingstrategie e-commerce",
@@ -47,6 +47,44 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     {
       type: "p",
       text: "Stel je voor: je verkoopt matrassen en toppers. Logisch idee: één grote campagne, één boodschap, 'slaap lekker', klaar. Alleen werkt dat in de praktijk als je alle producten dezelfde marge hebben, dezelfde doelgroep aanspreken en dezelfde concurrentie. Bij BestRest was dat niet zo. En toen werd 'even adverteren' ineens een duur experiment.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Catalogus-keuze",
+      title: "Eén plan of per product?",
+      prompt:
+        "Kies hoe jij je shop aanstuurt. Ik zeg of je marge mengt tot een leugen of strategie per groep bouwt.",
+      options: [
+        {
+          id: "soep",
+          label: "Eén campagne, één boodschap, hele catalogus erin",
+          verdict:
+            "Dashboard-gemiddelde. Winnaars en verliezers in één soep. Bij BestRest was dat te duur.",
+          tone: "ouch",
+        },
+        {
+          id: "groep",
+          label: "Per productgroep: eigen CPA/tROAS, landings en copy",
+          verdict:
+            "Dit is wat ik bij BestRest deed. Matras ≠ topper. Economics eerst, dan ads.",
+          tone: "win",
+        },
+        {
+          id: "pmax",
+          label: "Eén PMax over alles, want Google regelt het wel",
+          verdict:
+            "Alleen met vergelijkbare economie en schone feed. Anders is het theater met shopping-tiles.",
+          tone: "ouch",
+        },
+        {
+          id: "seo-ads",
+          label: "Zelfde vragen organisch testen, dan schalen met ads",
+          verdict:
+            "Mijn vaste volgorde. Goedkope copy-test, betaald opschalen wat werkt.",
+          tone: "win",
+        },
+      ],
     },
     {
       type: "h2",

@@ -7,7 +7,8 @@ export const AI_MAX_GOOGLE_ADS_SEARCH_2026: KennisbankArticle = {
   description:
     "AI Max for Search belooft meer bereik en slimmere ads. In de praktijk gebruikt Google je website als menu. Zo zet je het aan zonder je landings en budget te laten kapen.",
   publishedAt: "2026-07-26",
-  readMinutes: 12,
+  modifiedAt: "2026-08-08",
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "ai max google ads",
@@ -52,6 +53,92 @@ export const AI_MAX_GOOGLE_ADS_SEARCH_2026: KennisbankArticle = {
     {
       type: "callout",
       text: "Vuistregel: AI Max straft een zwakke website harder dan een zwakke keywordlijst. Keywords kun je uitsluiten. Een homepage die overal ‘relevant genoeg’ voor lijkt, blijft clicks stelen.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "AI Max-check",
+      title: "Site-als-menu-meter",
+      intro:
+        "Vink aan wat klopt vóór je AI Max aanzet. Hoe hoger, hoe meer Google jouw rommelige site als bestellijst gebruikt en jij de interpretatie betaalt.",
+      storageKey: "mm-aimax-menu",
+      eventName: "aimax_menu_complete",
+      sharePath: "/kennisbank/ai-max-google-ads-search-2026",
+      scoreNoun: "kaping",
+      ctaHref: "/diensten/google-ads",
+      ctaLabel: "Google Ads",
+      checks: [
+        {
+          id: "url-exp",
+          label: "Final URL Expansion staat aan zonder URL-uitsluitingen",
+          fix: "Streng: blog, over-ons, dunne collecties uitsluiten of expansion uit.",
+        },
+        {
+          id: "home",
+          label: "Homepage of blog uit 2019 steelt Search-clicks",
+          fix: "Landings per intentie. Homepage is geen catch-all voor ads.",
+        },
+        {
+          id: "pin",
+          label: "Je wilt pinning houden maar expansion staat aan",
+          fix: "Expansion uit als RSA-pins heilig zijn. Of pins loslaten.",
+        },
+        {
+          id: "meet",
+          label: "Conversies of Smart Bidding zijn nog rommelig",
+          fix: "Eerst meten. AI Max schaalt wat je meet, ook het verkeerde.",
+        },
+        {
+          id: "landings",
+          label: "Landings zijn dun of message-mismatch met ads",
+          fix: "Eén belofte, één URL. Zwakke site = duurdere AI Max.",
+        },
+        {
+          id: "zoek",
+          label: "Zoektermenrapport check je niet na aanzetten",
+          fix: "Wekelijks. Negatieven. Anders betaal je Google's fantasiematch.",
+        },
+        {
+          id: "pmax",
+          label: "Je denkt dat AI Max hetzelfde is als Performance Max",
+          fix: "AI Max = Search met turbo. PMax is ander voertuig.",
+        },
+        {
+          id: "aan",
+          label: "Knop aan 'voor bereik', site en tracking later",
+          fix: "Volgorde omdraaien. Site + data eerst, dan schakelaar.",
+        },
+      ],
+      tiers: [
+        {
+          id: "klaar",
+          min: 0,
+          max: 24,
+          label: "Klaar voor turbo",
+          quip: "Site en meting dragen AI Max. Houd zoektermen in de gaten.",
+        },
+        {
+          id: "risico",
+          min: 25,
+          max: 49,
+          label: "Risico-zone",
+          quip: "Expansion strak zetten. Eén week monitoren vóór je budget jaagt.",
+        },
+        {
+          id: "menu",
+          min: 50,
+          max: 74,
+          label: "Google bestelt van je menu",
+          quip: "Zwakke pagina's winnen clicks. Fix landings of knop uit.",
+        },
+        {
+          id: "kaping",
+          min: 75,
+          max: 100,
+          label: "Budget-kaping",
+          quip: "Zet uit of hard beperken. Eerst site, dan AI Max.",
+        },
+      ],
     },
     {
       type: "h2",
