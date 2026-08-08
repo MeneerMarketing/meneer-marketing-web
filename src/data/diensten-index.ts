@@ -1,9 +1,9 @@
 export const DIENSTEN_HERO = {
   eyebrow: "Diensten & trajecten",
   title: "Van strategie tot Google Ads.",
-  titleAccent: "Vijf blokken. Eén bureau dat alles snapt.",
+  titleAccent: "Vijf blokken. Eén plan van code tot campagne.",
   subtitle:
-    "Strategie, websites from scratch, vindbaarheid in Google én ChatGPT, Google Ads, Meta Ads en behoud. Geen keten van freelancers die elkaar de bal toeschoppen. Wel één plan dat klopt van code tot campagne.",
+    "Strategie, websites from scratch, vindbaarheid in Google én ChatGPT, Google Ads, Meta Ads en behoud. Eén aanspreekpunt die alles snapt. Eén plan dat klopt van code tot campagne.",
   stats: [
     { label: "Hoofdblokken", value: "5" },
     { label: "Concrete trajecten", value: "30+" },
@@ -21,30 +21,30 @@ export interface DienstenHeroFact {
 
 export const DIENSTEN_HERO_FACTS: DienstenHeroFact[] = [
   {
-    id: "skincomplete",
-    badge: "SkinComplete",
-    text: "B2B-portaal, Shopify theme en mail. Eerst SEO. Ads pas toen het al verkocht. Geen gok met budget.",
+    id: "b2b-portaal",
+    badge: "B2B-portaal",
+    text: "Custom portaal, Shopify theme en mail. Eerst SEO. Ads pas wanneer het al verkocht. Bewuste volgorde, geen budgetgok.",
     accent: "#FF5722",
     tilt: -1.25,
   },
   {
-    id: "bestrest",
-    badge: "BestRest",
-    text: "Custom Shopify in een markt met miljoenenbudgetten. Per productlijn eigen SEO, mail en ads. Geen copy-paste.",
+    id: "eigen-route",
+    badge: "Eigen route",
+    text: "Custom Shopify in een drukke markt. Per productlijn eigen SEO, mail en ads. Jouw koers, geen copy-paste.",
     accent: "#0284C7",
     tilt: 1,
   },
   {
     id: "anti-template",
     badge: "From scratch",
-    text: "Geen page builder die je over een jaar tegen de plinten loopt. Custom build in Next.js of Shopify waar het moet.",
+    text: "Custom build in Next.js of Shopify waar het moet. Code die meegroeit, zonder page builder die je over een jaar tegen de plinten loopt.",
     accent: "#0F172A",
     tilt: -0.5,
   },
   {
     id: "ai-zoek",
     badge: "AI-antwoorden",
-    text: "Vindbaar in ChatGPT en Gemini is geen bijzaak. Het staat live in het aanbod, niet op de roadmap van 2027.",
+    text: "Vindbaar in ChatGPT en Gemini is een volwaardig kanaal. Het staat live in het aanbod, niet op de roadmap van 2027.",
     accent: "#00BCD4",
     tilt: 1.5,
   },
@@ -89,8 +89,8 @@ export const DIENSTEN_FIVE_BLOCKS = [
     emoji: "🧭",
     title: "Strategie & groei",
     tagline: "Eerst weten waar je naartoe rijdt",
-    body: "Groeiplan, advertentiestrategie, CRO en tracking. Geen 40 pagina's powerpoint. Wel: welk kanaal wanneer, en waarom.",
-    highlight: "BestRest kreeg per productlijn een eigen route. Geen standaard funnel.",
+    body: "Groeiplan, advertentiestrategie, CRO en tracking. Een plan dat je opent: welk kanaal wanneer, en waarom.",
+    highlight: "Per productlijn een eigen route. Jouw funnel, niet een standaard template.",
     accent: "#FF5722",
   },
   {
@@ -98,8 +98,8 @@ export const DIENSTEN_FIVE_BLOCKS = [
     emoji: "⚡",
     title: "Bouwen from scratch",
     tagline: "Websites, Shopify, apps",
-    body: "Next.js, custom Shopify themes, B2B-portalen. Geen templates. Code die meegroeit als jij opschaalt.",
-    highlight: "SkinComplete: B2B-portaal waar salons 24/7 bestellen. Geen Excel meer om 2 uur 's nachts.",
+    body: "Next.js, custom Shopify themes, B2B-portalen. From scratch. Code die meegroeit als jij opschaalt.",
+    highlight: "B2B-portaal waar klanten 24/7 bestellen. Van nachtelijke mailtjes naar een systeem dat meeschaalt.",
     accent: "#0284C7",
   },
   {
@@ -108,7 +108,7 @@ export const DIENSTEN_FIVE_BLOCKS = [
     title: "Vindbaarheid & autoriteit",
     tagline: "Google, content, AI-antwoorden",
     body: "SEO, techniek, semantische content en vindbaarheid in ChatGPT. Organisch verkeer dat je ads later goedkoper maakt.",
-    highlight: "SkinComplete domineerde eerst organisch. Ads kwamen pas op een shop die al verkocht.",
+    highlight: "Eerst organisch domineren. Ads pas op een shop die al verkocht.",
     accent: "#00BCD4",
   },
   {
@@ -135,13 +135,13 @@ export const DIENSTEN_VOLGORDE = {
   eyebrow: "De volgorde die wél werkt",
   title: "Fundament eerst.",
   titleAccent: "Ads als versterker.",
-  body: "Bij SkinComplete koos ik bewust: eerst site, SEO en mail. Pas toen organisch verkeer verkocht, ging er budget naar Google Ads en Meta. Advertenties versterken wat er al is. Een zwakke shop wordt er alleen armer van.",
+  body: "Bewuste volgorde: eerst site, SEO en mail. Pas wanneer organisch verkeer verkocht, gaat er budget naar Google Ads en Meta. Advertenties versterken wat er al is. Een zwakke shop wordt er alleen armer van.",
   bullets: [
     "Organisch verkeer bewijst dat je pagina's overtuigen zonder geld op de klik.",
     "E-mail vangt bezoekers op die nog niet kopen.",
     "Ads op bewezen landings = elke euro werkt harder.",
   ],
-  cta: { label: "Lees de SkinComplete case", href: "/cases/skincomplete" },
+  cta: { label: "Bekijk cases", href: "/cases" },
 } as const;
 
 export const DIENSTEN_CASE_PROOF = {
@@ -149,19 +149,19 @@ export const DIENSTEN_CASE_PROOF = {
   title: "Dit heb ik echt gebouwd.",
   cases: [
     {
-      name: "SkinComplete",
-      hook: "Salons bestelden via mail. Nu 24/7 via B2B-portaal.",
+      name: "B2B e-commerce",
+      hook: "Klanten bestelden via mail. Nu 24/7 via B2B-portaal.",
       tags: ["Shopify", "B2B-portaal", "SEO vóór ads"],
       href: "/cases/skincomplete",
     },
     {
-      name: "BestRest",
-      hook: "Eigen koers in matrassenland met miljoenenbudgetten.",
+      name: "E-commerce matrassen",
+      hook: "Eigen koers in een markt met miljoenenbudgetten.",
       tags: ["Custom Shopify", "Per-lijn SEO", "Google Ads & Meta"],
       href: "/cases/bestrest",
     },
     {
-      name: "Hills Pilates",
+      name: "Boekingsplatform",
       hook: "Website, boekingsapp en mails in één lijn.",
       tags: ["Next.js", "Boekingsapp", "Automatisering"],
       href: "/cases/hills-pilates",
@@ -173,25 +173,25 @@ export const DIENSTEN_APPROACH = [
   {
     tag: "Begrijpen",
     title: "Eerst jouw context",
-    body: "Doelen, data, stack en waar het nu lekt. Geen offerte voordat dat helder is. Ik stel soms ongemakkelijke vragen. Dat is de bedoeling.",
-    meneerLine: "Als je zegt 'we willen ads' maar je site converteert op 0,4%, beginnen we ergens anders.",
+    body: "Doelen, data, stack en waar het nu lekt. Eerst helderheid, dan pas een offerte. Ik stel soms ongemakkelijke vragen. Dat is de bedoeling.",
+    meneerLine: "Als je zegt 'ik wil ads' maar je site converteert op 0,4%, begin ik ergens anders.",
   },
   {
     tag: "Route",
     title: "Volgorde bepalen",
-    body: "Maximaal drie focuspunten tegelijk. SEO eerst, ads later, of andersom. Per klant anders. Geen standaardpakket dat voor iedereen hetzelfde is.",
-    meneerLine: "SkinComplete: SEO en mail. BestRest: per productlijn. Jij krijgt jouw volgorde.",
+    body: "Maximaal drie focuspunten tegelijk. SEO eerst, ads later, of andersom. Per klant anders. Jouw route, niet een standaardpakket.",
+    meneerLine: "Soms SEO en mail eerst. Soms per productlijn. Jij krijgt jouw volgorde.",
   },
   {
     tag: "Bouwen",
     title: "Uitvoeren & meten",
-    body: "Sites, shops, campagnes en mail. Alles met meetpunten vanaf dag één. Geen 'we kijken wel na drie maanden'.",
+    body: "Sites, shops, campagnes en mail. Alles met meetpunten vanaf dag één. Ik meet vanaf week één, niet pas na drie maanden.",
     meneerLine: "Deploy, meet, bijsturen. De grafiek omhoog is mijn dopamine. Koffie is ook fijn.",
   },
   {
     tag: "Opschalen",
     title: "Wat werkt krijgt gas",
-    body: "Budget verschuiven naar winnaars. Geen sentiment, wel resultaat. Wat niet rendeert, gaat uit. Hard maar eerlijk.",
+    body: "Budget verschuiven naar winnaars. Resultaat boven sentiment. Wat niet rendeert, gaat uit. Hard maar eerlijk.",
     meneerLine: "Ads opschalen doe je op pagina's die al bewezen hebben. Niet op hoop.",
   },
 ] as const;
@@ -202,11 +202,11 @@ export const DIENSTEN_WHY = {
   points: [
     {
       title: "Eén lijn tussen strategie en code",
-      body: "Het plan en de uitvoering komen uit hetzelfde brein. Geen vertaalfouten tussen designer, developer en marketeer.",
+      body: "Het plan en de uitvoering komen uit hetzelfde brein. Eén brein van strategie tot implementatie, zonder vertaalfouten.",
     },
     {
       title: "Google Ads en Meta Ads expliciet",
-      body: "Geen vaag 'datagedreven adverteren'. Wel campagnes die je kunt uitleggen en waar je op kunt sturen.",
+      body: "Campagnes die je kunt uitleggen en waar je op kunt sturen. Expliciet benoemd, niet verstopt achter vaag jargon.",
     },
     {
       title: "Vindbaar in Google én in AI",
@@ -232,7 +232,7 @@ export const DIENSTEN_DISCOVER = {
     },
     {
       label: "Werkwijze",
-      description: "Hoe een traject start, wat je mag verwachten en hoe we communiceren.",
+      description: "Hoe een traject start, wat je mag verwachten en hoe ik communiceer.",
       href: "/werkwijze",
       accent: "#0284C7",
     },
@@ -246,17 +246,17 @@ export const DIENSTEN_FAQ = [
   {
     question: "Kan ik ook één dienst afnemen?",
     answer:
-      "Ja, als het past bij je fase. Vaak hangen dingen wel samen: een site zonder meetplan of SEO maakt ads duurder. Daarom beginnen we met context en kiezen we de juiste volgorde.",
+      "Ja, als het past bij je fase. Vaak hangen dingen wel samen: een site zonder meetplan of SEO maakt ads duurder. Daarom begin ik met context en kies ik de juiste volgorde.",
   },
   {
     question: "Bouwen jullie met templates of page builders?",
     answer:
-      "Nee. Websites en Shopify-thema's bouwen we from scratch. Custom code, snel en klaar om op te schalen. Geen template dat je over een jaar tegen de plinten loopt.",
+      "Nee. Websites en Shopify-thema's bouw ik from scratch. Custom code, snel en klaar om op te schalen. Eigen code die meegroeit, zonder template dat je over een jaar tegen de plinten loopt.",
   },
   {
     question: "Doen jullie ook alleen Google Ads of alleen SEO?",
     answer:
-      "Dat kan, mits de basis klopt. SkinComplete begon bijvoorbeeld met SEO en e-mail. Ads kwamen pas toen organisch verkeer al verkocht. Die volgorde bespreken we eerlijk.",
+      "Dat kan, mits de basis klopt. Vaak begin ik met SEO en e-mail. Ads pas wanneer organisch verkeer al verkocht. Die volgorde bespreek ik eerlijk.",
   },
   {
     question: "Wat is het verschil tussen een blokpagina en een dienstpagina?",
@@ -271,7 +271,7 @@ export const DIENSTEN_FAQ = [
   {
     question: "Werken jullie ook buiten Apeldoorn?",
     answer:
-      "Ja. Apeldoorn is thuisbasis, maar ik werk landelijk met dezelfde aanpak. SkinComplete en BestRest zijn geen lokale bakkerijen. Wel klanten die online willen groeien.",
+      "Ja. Apeldoorn is thuisbasis, maar ik werk landelijk met dezelfde aanpak. Online groeien, waar je ook zit.",
   },
 ] as const;
 

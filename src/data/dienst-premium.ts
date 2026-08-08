@@ -76,7 +76,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   webdevelopment: {
     heroVisual: "build",
     heroKicker:
-      "Geen template dat op duizend andere sites lijkt. Een website die vanaf regel één voor jouw bedrijf is gebouwd. Snel, veilig en klaar om te groeien.",
+      "Een website die vanaf regel één voor jouw bedrijf is gebouwd. Uniek, snel, veilig en klaar om te groeien.",
     funFact:
       "Je concurrent kan hetzelfde theme kopen als jij. Dan betaal jij harder adverteren voor hetzelfde vertrouwen.",
     funFactSource: "Daarom uniek gebouwd",
@@ -87,8 +87,8 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Wat een webshop nodig heeft, verschilt nogal van een B2B-dienstverlener. Zelfs als ze allebei 'gewoon een site' vragen. Dus ik begin met vragen stellen, niet met bouwen.",
       },
       {
-        title: "Eén aanspreekpunt, geen estafette",
-        body: "Geen keten van vijf specialisten die naar elkaar wijzen als iets misgaat. Web, marketing en techniek komen bij mij uit één brein. Scheelt vergaderingen, scheelt misverstanden.",
+        title: "Eén aanspreekpunt",
+        body: "Web, marketing en techniek komen bij mij uit één brein. Eén lijn, minder vergaderingen, minder misverstanden.",
       },
       {
         title: "Taal die je gewoon snapt",
@@ -99,7 +99,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Eerst begrijpen, dan bouwen",
-        body: "We beginnen niet in de code maar bij jouw bedrijf: wie is je klant, wat moet de site opleveren en welke systemen moeten meepraten?",
+        body: "Ik begin niet in de code maar bij jouw bedrijf: wie is je klant, wat moet de site opleveren en welke systemen moeten meepraten?",
       },
       {
         title: "Structuur en ontwerp",
@@ -107,11 +107,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Bouwen from scratch",
-        body: "Elke regel code schrijven we zelf. Geen pagebuilder-ballast, geen plugins die elkaar bijten. Wel een site die laadt voor je er erg in hebt.",
+        body: "Elke regel code schrijf ik zelf. Eigen code, lichte stack, een site die laadt voor je er erg in hebt.",
       },
       {
         title: "Live en verder",
-        body: "Na de lancering krijg je documentatie, een korte uitleg en een site die je zelf kunt beheren. Wij blijven beschikbaar, maar je zit nergens aan vast.",
+        body: "Na de lancering krijg je documentatie, een korte uitleg en een site die je zelf kunt beheren. Ik blijf beschikbaar, maar je zit nergens aan vast.",
       },
     ],
     capabilities: [
@@ -132,7 +132,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Beheer zonder gedoe",
         detail:
-          "Teksten, foto's en pagina's pas je zelf aan zonder technische kennis. Geen belletje naar een bouwer voor elke komma die anders moet.",
+          "Teksten, foto's en pagina's pas je zelf aan zonder technische kennis. Zelf aanpassen, zonder belletje naar een bouwer voor elke komma.",
       },
       {
         title: "Eigenaarschap bij jou",
@@ -149,9 +149,9 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   "shopify-enterprise": {
     heroVisual: "shopify",
     heroKicker:
-      "De Shopify Store heeft duizenden themes. Geen daarvan is jouw merk. Ik bouw custom: eigen Liquid, checkout, portals. Geen shortcuts.",
+      "De Shopify Store heeft duizenden themes. Jouw merk verdient eigen Liquid, checkout en portals. Custom gebouwd, zonder shortcuts.",
     funFact:
-      "Geen theme uit de Shopify Store met jouw logo erop. Dat is geen maatwerk, dat is vermomde template.",
+      "Een theme uit de Shopify Store met jouw logo erop is vermomde template. Maatwerk begint op een leeg canvas.",
     funFactSource: "Daarom from scratch",
     funFactStat: "0",
     principles: [
@@ -160,7 +160,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Ik koop geen theme in de Shopify Store en plak je logo erop. Elke shop start op een leeg canvas: eigen secties, eigen Liquid, jouw merk. Daarmee kan alles wat Shopify aankan.",
       },
       {
-        title: "Geen app-estafette",
+        title: "Apps met discipline",
         body: "Veel Shopify-projecten ontsporen door twintig apps die elkaar bijten. Ik bouw liever in het theme wat kan, houd wat werkt en geef je één aanspreekpunt voor code, koppelingen en performance.",
       },
       {
@@ -168,11 +168,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Checkout, Storefront API, koppelingen, portals: ik spreek Shopify vloeiend en leg keuzes uit in normaal Nederlands. Jij hoeft geen extra developer in te huren naast mij.",
       },
     ],
-    lens: "Bij Shopify bouw ik alsof je over een jaar drie keer zo groot bent: meer producten, meer kanalen, meer automatisering. Alles in één maatwerk theme dat je team snapt. Geen template, geen black box.",
+    lens: "Bij Shopify bouw ik alsof je over een jaar drie keer zo groot bent: meer producten, meer kanalen, meer automatisering. Alles in één maatwerk theme dat je team snapt. Transparant, geen black box.",
     approachSteps: [
       {
         title: "Stack & catalogus audit",
-        body: "We brengen je huidige theme, apps, koppelingen en bottlenecks in kaart. Wat is kritisch, wat is ballast, en waar lekt omzet weg?",
+        body: "Ik breng je huidige theme, apps, koppelingen en bottlenecks in kaart. Wat is kritisch, wat is ballast, en waar lekt omzet weg?",
       },
       {
         title: "Theme from scratch",
@@ -180,11 +180,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Bouwen & migreren",
-        body: "Custom theme, checkout en koppelingen in sprints met staging en QA. Migraties plannen we met redirects en campagne-impact, zodat SEO en ads niet schokken.",
+        body: "Custom theme, checkout en koppelingen in sprints met staging en QA. Migraties plan ik met redirects en campagne-impact, zodat SEO en ads niet schokken.",
       },
       {
         title: "Live, meten, doorontwikkelen",
-        body: "Na launch meten we Core Web Vitals, conversie en operationele tijdwinst. Je team krijgt documentatie en een roadmap voor wat later kan.",
+        body: "Na launch meet ik Core Web Vitals, conversie en operationele tijdwinst. Je team krijgt documentatie en een roadmap voor wat later kan.",
       },
     ],
     capabilities: [
@@ -200,12 +200,12 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Theme from scratch",
         detail:
-          "Geen template uit de store. Eigen secties en code die meegroeien met je assortiment en merk. Je team past content aan zonder bang te zijn iets te breken.",
+          "Eigen secties en code from scratch die meegroeien met je assortiment en merk. Je team past content aan zonder bang te zijn iets te breken.",
       },
       {
         title: "Checkout zonder gedoe",
         detail:
-          "Complexe prijzen, bundles en internationale storefronts werken stabiel. Geen ketting van apps die elkaar tegenwerken zodra je één regel aanpast.",
+          "Complexe prijzen, bundles en internationale storefronts werken stabiel. Eén samenhangend systeem, ook als je één regel aanpast.",
       },
       {
         title: "Snelheid als harde eis",
@@ -220,13 +220,13 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     ],
     scaleCallout: {
       title: "Al bezig met Shopify? Tijd om op te schalen.",
-      body: "Je shop draait al, maar groeit niet meer mee. Theme, snelheid of campagnes remmen. Via Schaal op kijken we waar jouw grootste hefboom zit en bouwen we daaromheen.",
+      body: "Je shop draait al, maar groeit niet meer mee. Theme, snelheid of campagnes remmen. Via Schaal op kijk ik waar jouw grootste hefboom zit en bouw ik daaromheen.",
     },
   },
   "web-apps": {
     heroVisual: "portal",
     heroKicker:
-      "Portals, boekingsapps en interne tools from scratch. Geen losse spreadsheet-ketting, geen duct-tape tussen vijf systemen. Wel één product dat klanten en team begrijpen.",
+      "Portals, boekingsapps en interne tools from scratch. Eén product dat klanten en team begrijpen, zonder spreadsheet-ketting of duct-tape tussen systemen.",
     funFact:
       "Nog steeds orders via mail en Excel? Dat werkt tot je groeit. Dan wordt het chaos voor jou en je klant.",
     funFactSource: "Daarom één portaal",
@@ -234,11 +234,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Rollen eerst, pixels daarna",
-        body: "Wie mag wat zien en doen? Dat bepaalt elk scherm. SkinComplete salons zien andere prijzen dan jij. Hills Pilates klanten boeken alleen hun eigen lessen. Dat map ik voordat er design is.",
+        body: "Wie mag wat zien en doen? Dat bepaalt elk scherm. B2B-klanten zien andere prijzen dan retail. Boekingsklanten zien alleen hun eigen agenda. Dat map ik voordat er design is.",
       },
       {
         title: "Koppelingen zonder spaghetti",
-        body: "Shopify, CRM, e-mail, boekhouding: alles praat met elkaar via nette API's. Geen copy-paste tussen tabbladen. Geen 'even exporteer ik het wel'.",
+        body: "Shopify, CRM, e-mail, boekhouding: alles praat met elkaar via nette API's. Eén bron van waarheid, zonder copy-paste tussen tabbladen.",
       },
       {
         title: "Product dat blijft leven",
@@ -249,7 +249,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Gebruikers en stappen in kaart",
-        body: "Wie logt in, wat moet die persoon kunnen, welke data hoort waar? We tekenen de keten voordat er code is.",
+        body: "Wie logt in, wat moet die persoon kunnen, welke data hoort waar? Ik teken de keten voordat er code is.",
       },
       {
         title: "Architectuur & koppelingen",
@@ -261,7 +261,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Live, meten, doorontwikkelen",
-        body: "Na launch meten we adoptie: gebruikt je team het, boeken klanten, lekt er data? Documentatie en een roadmap voor wat logisch volgt.",
+        body: "Na launch meet ik adoptie: gebruikt je team het, boeken klanten, lekt er data? Documentatie en een roadmap voor wat logisch volgt.",
       },
     ],
     capabilities: [
@@ -275,14 +275,14 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     ],
     outcomes: [
       {
-        title: "B2B-portaal dat salons zelf laat bestellen",
+        title: "B2B-portaal dat klanten zelf laat bestellen",
         detail:
-          "SkinComplete: salons loggen in, zien hun prijzen en bestellen 24/7. Geen mailtjes meer, geen Excel. Custom gebouwd in Shopify, klaar om te schalen.",
+          "Klanten loggen in, zien hun prijzen en bestellen 24/7. Custom gebouwd in Shopify, klaar om te schalen.",
       },
       {
         title: "App met agenda en boekingen",
         detail:
-          "Hills Pilates: website, e-mailmarketing en een eigen app met agenda. Klanten boeken zelf, het team ziet alles op één plek.",
+          "Website, e-mailmarketing en een eigen app met agenda. Klanten boeken zelf, het team ziet alles op één plek.",
       },
       {
         title: "Koppelingen die blijven werken",
@@ -293,13 +293,13 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroStats: [
       { label: "Aanpak", value: "From scratch" },
       { label: "Stack", value: "Next.js · typed" },
-      { label: "Cases", value: "SC · Hills" },
+      { label: "Focus", value: "Portaal · app" },
     ],
   },
   optimalisatie: {
     heroVisual: "speed",
     heroKicker:
-      "Snellere site, betere scores in Google. Geen cosmetische speed plugin maar code, assets en server: meten op pagina's die omzet draaien, prioriteren, fixen, opnieuw meten.",
+      "Snellere site, betere scores in Google. Code, assets en server: meten op pagina's die omzet draaien, prioriteren, fixen, opnieuw meten.",
     funFact:
       "Google beloont snelle, goed gestructureerde pagina's. Trage sites met rommelige HTML verliezen crawlruimte én clicks.",
     funFactSource: "Daarom bouwen en SEO samen",
@@ -315,14 +315,14 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Snel blijven na launch",
-        body: "Elke nieuwe feature is een kans om snelheid terug te verliezen. Daarom documenteer ik wat we aanpassen en waar je op moet letten. Jij of je team hoeft geen performance-engineer te worden.",
+        body: "Elke nieuwe feature is een kans om snelheid terug te verliezen. Daarom documenteer ik wat ik aanpas en waar je op moet letten. Jij of je team hoeft geen performance-engineer te worden.",
       },
     ],
-    lens: "Optimaliseren is geen eenmalige sprint. Het is voorkomen dat je site langzamer wordt terwijl je groeit: meer SKU's, meer scripts, meer campagnes. Bij BestRest en SkinComplete bouwden we al snel from scratch. Deze dienst houdt dat vast, of herstelt wat een template of app-estafette heeft gesloopt.",
+    lens: "Optimaliseren is geen eenmalige sprint. Het is voorkomen dat je site langzamer wordt terwijl je groeit: meer SKU's, meer scripts, meer campagnes. Ik bouw snel from scratch en houd dat vast, of herstel wat een template of app-estafette heeft gesloopt.",
     approachSteps: [
       {
         title: "Audit op echte templates",
-        body: "We brengen in kaart welke URL's omzet, leads of autoriteit dragen. Core Web Vitals, third-parties, theme-bloat en crawl-problemen per template, niet alleen op de homepage.",
+        body: "Ik breng in kaart welke URL's omzet, leads of autoriteit dragen. Core Web Vitals, third-parties, theme-bloat en crawl-problemen per template, niet alleen op de homepage.",
       },
       {
         title: "Prioriteren met impact",
@@ -330,7 +330,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Fixen in code en assets",
-        body: "Afbeeldingen, fonts, lazy loading, script-loading, Liquid-bloat, caching. Geen plugin die alles maskeert. Wel concrete fixes die je kunt terugvinden in de codebase.",
+        body: "Afbeeldingen, fonts, lazy loading, script-loading, Liquid-bloat, caching. Concrete fixes in de codebase, geen plugin die alles maskeert.",
       },
       {
         title: "Meten, documenteren, door",
@@ -340,7 +340,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     capabilities: [
       "CWV groen",
       "LCP · INP · CLS",
-      "Geen speed plugins",
+      "Code-first fixes",
       "Third-party trim",
       "Technische SEO",
       "Voor/na meting",
@@ -350,7 +350,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Concrete winst op LCP, INP en CLS",
         detail:
-          "Gemeten voor en na op de templates die ertoe doen. Geen vage 'sneller gevoel', wel cijfers die je kunt koppelen aan conversie en crawlruimte in Google.",
+          "Gemeten voor en na op de templates die ertoe doen. Harde cijfers die je kunt koppelen aan conversie en crawlruimte in Google.",
       },
       {
         title: "Minder ballast, zelfde functionaliteit",
@@ -360,7 +360,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Documentatie die blijft werken",
         detail:
-          "Je team weet wat een nieuwe sectie of app doet met snelheid. Geen black box die over drie maanden weer rood wordt zodra iemand een slider toevoegt.",
+          "Je team weet wat een nieuwe sectie of app doet met snelheid. Transparante documentatie, zodat scores groen blijven na elke wijziging.",
       },
     ],
     heroStats: [
@@ -372,7 +372,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   webdesign: {
     heroVisual: "ux",
     heroKicker:
-      "Ontwerp dat verkopen en vertrouwen combineert. Geen mooie plaatjes zonder doel: structuur, hiërarchie en schermen die duidelijk maken wat de volgende stap is. Op desktop én mobiel.",
+      "Ontwerp dat verkopen en vertrouwen combineert. Structuur, hiërarchie en schermen die duidelijk maken wat de volgende stap is. Op desktop én mobiel.",
     funFact:
       "Bezoekers vormen in minder dan een halve seconde een eerste indruk van je site. Nog voordat ze je aanbod hebben gelezen.",
     funFactSource: "Daarom hiërarchie vóór decoratie",
@@ -384,7 +384,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Context boven templates",
-        body: "Een checkout voor luxe goederen vraagt andere hiërarchie dan een B2B-formulier of een Shopify PDP. Elke niche krijgt eigen UI-logica. Geen one-size template.",
+        body: "Een checkout voor luxe goederen vraagt andere hiërarchie dan een B2B-formulier of een Shopify PDP. Elke niche krijgt eigen UI-logica.",
       },
       {
         title: "Design dat gebouwd wordt",
@@ -395,7 +395,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Klantreis en acties",
-        body: "We brengen in kaart wie er landt, waar ze vandaan komen (SEO, Google Ads, Meta Ads) en welke stap je per scherm wilt. Objections van sales en support nemen we mee.",
+        body: "Ik breng in kaart wie er landt, waar ze vandaan komen (SEO, Google Ads, Meta Ads) en welke stap je per scherm wilt. Objections van sales en support neem ik mee.",
       },
       {
         title: "Wireframes",
@@ -407,7 +407,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Handoff en iteratie",
-        body: "Ontwerp met specs, states en a11y-notities. Afstemming met development zodat wat ontworpen is ook zo live gaat. Daarna meten we gedrag en scherpen bij.",
+        body: "Ontwerp met specs, states en a11y-notities. Afstemming met development zodat wat ontworpen is ook zo live gaat. Daarna meet ik gedrag en scherp bij.",
       },
     ],
     capabilities: [
@@ -428,7 +428,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Ontwerp met componenten en states",
         detail:
-          "Hover, focus, error, loading: alles wat development nodig heeft om zonder giswerk te bouwen. Geen losse JPG's of vage 'maak het zoals Apple'.",
+          "Hover, focus, error, loading: alles wat development nodig heeft om zonder giswerk te bouwen. Specs en states, klaar voor development.",
       },
       {
         title: "Consistent en toegankelijk",
@@ -445,7 +445,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   branding: {
     heroVisual: "brand",
     heroKicker:
-      "Huisstijl die op je site, in Google Ads, Meta Ads en mail hetzelfde verhaal vertelt. Geen los logo-PDF dat in een la verdwijnt. Wel merk dat klanten herkennen en vertrouwen.",
+      "Huisstijl die op je site, in Google Ads, Meta Ads en mail hetzelfde verhaal vertelt. Merk dat klanten herkennen en vertrouwen, met guidelines die je team gebruikt.",
     funFact:
       "Microsoft testte tientallen tinten blauw voor één linkkleur in Bing. De winnaar leverde tientallen miljoenen extra op. Kleur is geen smaak, kleur is omzet.",
     funFactSource: "Daarom strategie én uitvoering",
@@ -453,22 +453,22 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Positionering vóór pixels",
-        body: "Wie ben je voor wie, en waarom jij en niet de concurrent? Dat bepaalt toon, kleur en beeld. Pas daarna logo, typo en templates. Geen mooi plaatje zonder verhaal.",
+        body: "Wie ben je voor wie, en waarom jij en niet de concurrent? Dat bepaalt toon, kleur en beeld. Pas daarna logo, typo en templates.",
       },
       {
         title: "Eén merk, alle kanalen",
-        body: "Je site kan strak zijn terwijl je ads nog 'oud' aanvoelen. Of omgekeerd. Ik zet richtlijnen neer die op site, mail, social en campagnes werken. BestRest en SkinComplete hebben elk een eigen wereld, geen copy-paste.",
+        body: "Je site kan strak zijn terwijl je ads nog 'oud' aanvoelen. Of omgekeerd. Ik zet richtlijnen neer die op site, mail, social en campagnes werken. Elk merk krijgt een eigen wereld.",
       },
       {
         title: "Guidelines die je team snapt",
-        body: "Geen 80-pagina PDF die niemand leest. Wel kleur, typo, beeldstijl en componenten die je team en partners direct kunnen toepassen. Klaar voor web, ads en mail.",
+        body: "Compacte guidelines die je team en partners direct toepassen. Kleur, typo, beeldstijl en componenten, klaar voor web, ads en mail.",
       },
     ],
     lens: "Branding is geen logo-ontwerp in isolatie. Het is hoe klanten je herkennen op de productpagina, in de nieuwsbrief en in de Google Ads die ze terugzien. Ik verbind merkstrategie met wat er écht live gaat, zodat je niet twee keer betaalt voor hetzelfde gevoel.",
     approachSteps: [
       {
         title: "Positionering & onderscheid",
-        body: "Wie is je klant, wat belooft je merk, en waar wijk je af van alternatieven? We maken dat concreet voordat er kleur op papier komt.",
+        body: "Wie is je klant, wat belooft je merk, en waar wijk je af van alternatieven? Ik maak dat concreet voordat er kleur op papier komt.",
       },
       {
         title: "Visuele identiteit",
@@ -496,12 +496,12 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Positionering die onderscheidt",
         detail:
-          "Duidelijk verhaal: wie je bent, voor wie, en waarom jij. Geen vage missie, wel keuzes die doorwerken in copy, design en campagnes.",
+          "Duidelijk verhaal: wie je bent, voor wie, en waarom jij. Concrete keuzes die doorwerken in copy, design en campagnes.",
       },
       {
         title: "Huisstijl op alle kanalen",
         detail:
-          "Site, Google Ads, Meta Ads, mail en social voelen als één merk. Geen oude banner naast een nieuwe homepage.",
+          "Site, Google Ads, Meta Ads, mail en social voelen als één merk. Consistent over alle kanalen.",
       },
       {
         title: "Guidelines die blijven werken",
@@ -526,22 +526,22 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Functie vóór flair",
-        body: "Elke animatie moet iets doen: hiërarchie, feedback of richting. Geen parallax omdat het kan. Ik storyboard per sectie welke energie past: rust op trust, tempo op product, speelsheid waar het merk het toelaat.",
+        body: "Elke animatie moet iets doen: hiërarchie, feedback of richting. Ik storyboard per sectie welke energie past: rust op trust, tempo op product, speelsheid waar het merk het toelaat.",
       },
       {
         title: "Performance-budget",
-        body: "Transform en opacity, hardware-versneld. Geen layout-thrashing of zware filters op omzetpagina's. Je Google Ads-landings en checkout blijven groen terwijl de site levend aanvoelt.",
+        body: "Transform en opacity, hardware-versneld. Lichtgewicht animaties op omzetpagina's. Je Google Ads-landings en checkout blijven groen terwijl de site levend aanvoelt.",
       },
       {
         title: "Reduced motion standaard",
-        body: "prefers-reduced-motion hoort in elke component. Zo blijft je site premium voor iedereen, ook wie geen trillingen of excessieve beweging wil. Geen afterthought, wel onderdeel van het ontwerp.",
+        body: "prefers-reduced-motion hoort in elke component. Zo blijft je site premium voor iedereen, ook wie geen trillingen of excessieve beweging wil. Ingebouwd vanaf het ontwerp.",
       },
     ],
     lens: "Motion is de laag tussen statisch design en een site die je onthoudt. Te veel beweging kost conversie. Te weinig voelt goedkoop. Ik kies per scherm en sectie wat vertrouwen, speelsheid of tempo ondersteunt. Binnen een budget dat Core Web Vitals niet sloopt.",
     approachSteps: [
       {
         title: "Storyboard & energie",
-        body: "Welke secties rust, welke tempo? We brengen de klantreis in kaart en kiezen waar motion verhaal vertelt en waar stilte conversie dient.",
+        body: "Welke secties rust, welke tempo? Ik breng de klantreis in kaart en kies waar motion verhaal vertelt en waar stilte conversie dient.",
       },
       {
         title: "Micro-interacties",
@@ -549,7 +549,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Implementatie & test",
-        body: "GPU-vriendelijke animaties, prefers-reduced-motion en meting op echte devices. Geen demo die op je MacBook Pro vloeiend is en op mobiel hapert.",
+        body: "GPU-vriendelijke animaties, prefers-reduced-motion en meting op echte devices. Vloeiend op mobiel én desktop, getest op echte devices.",
       },
       {
         title: "Iteratie op gedrag",
@@ -579,7 +579,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Storyboard per sectie",
         detail:
-          "Consistente energie over de hele site: rust waar twijfel zit, tempo waar je product of proces uitlegt. Geen willekeurige effecten per pagina.",
+          "Consistente energie over de hele site: rust waar twijfel zit, tempo waar je product of proces uitlegt. Bewuste keuzes per pagina.",
       },
     ],
     heroStats: [
@@ -591,15 +591,15 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   seo: {
     heroVisual: "seo",
     heroKicker:
-      "Hoger in Google door content die antwoord geeft, structuur die klopt en techniek die zoekmachines begrijpen. Geen trucjes. Wel posities die blijven staan.",
+      "Hoger in Google door content die antwoord geeft, structuur die klopt en techniek die zoekmachines begrijpen. Posities die blijven staan, op basis van vakmanschap.",
     funFact:
       "Bijna dertig procent van alle kliks gaat naar resultaat één. Resultaat tien krijgt minder dan één procent. Positie is geen trofee, positie is omzet.",
-    funFactSource: "Daarom meten we per pagina, niet per vanity keyword",
+    funFactSource: "Daarom meet ik per pagina, niet per vanity keyword",
     funFactStat: "30%",
     principles: [
       {
         title: "Zoekintentie vóór volume",
-        body: "Ik begin bij wat jouw klant echt typt en waarom. Niet bij keywords met hoog volume waar niemand koopt. SkinComplete domineerde eerst organisch. Ads kwamen daarna, goedkoper.",
+        body: "Ik begin bij wat jouw klant echt typt en waarom. Niet bij keywords met hoog volume waar niemand koopt. Organisch eerst, ads daarna, goedkoper.",
       },
       {
         title: "Techniek én content samen",
@@ -614,7 +614,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Audit & zoekintentie",
-        body: "We brengen in kaart waar je staat, wat je klant zoekt en welke pagina's al verkeer of omzet dragen. Geen alles-tegelijk-plan.",
+        body: "Ik breng in kaart waar je staat, wat je klant zoekt en welke pagina's al verkeer of omzet dragen. Gefocust plan, niet alles tegelijk.",
       },
       {
         title: "Structuur & clusters",
@@ -626,7 +626,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Posities vasthouden",
-        body: "Maandelijks bijsturen: wat stijgt krijgt versterking, wat stagneert krijgt een test. Geen set-and-forget.",
+        body: "Maandelijks bijsturen: wat stijgt krijgt versterking, wat stagneert krijgt een test. Actief onderhoud, geen set-and-forget.",
       },
     ],
     capabilities: [
@@ -658,16 +658,16 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroStats: [
       { label: "Aanpak", value: "Intentie-first" },
       { label: "Meting", value: "Per pagina" },
-      { label: "Case", value: "SkinComplete" },
+      { label: "Focus", value: "Organisch eerst" },
     ],
   },
   "ai-zoek": {
     heroVisual: "ai-search",
     heroKicker:
-      "Gevonden worden als iemand ChatGPT of Gemini vraagt welk bedrijf ze moeten kiezen. Geen toekomstmuziek. Wel structuren die AI vandaag al citeert.",
+      "Gevonden worden als iemand ChatGPT of Gemini vraagt welk bedrijf ze moeten kiezen. Structuren die AI vandaag al citeert.",
     funFact:
       "Steeds meer jongvolwassenen stellen hun eerste vraag aan AI, niet aan Google. Sta jij niet in dat antwoord, dan besta je voor hen niet.",
-    funFactSource: "Daarom optimaliseren we voor Google én AI",
+    funFactSource: "Daarom optimaliseer ik voor Google én AI",
     funFactStat: "AI",
     principles: [
       {
@@ -676,11 +676,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "SEO als fundament",
-        body: "Wat goed rankt in Google voedt vaak ook AI-antwoorden. Schema, autoriteit en heldere pagina's doen dubbel werk. Geen aparte truc, wel één keten.",
+        body: "Wat goed rankt in Google voedt vaak ook AI-antwoorden. Schema, autoriteit en heldere pagina's doen dubbel werk. Eén keten, geen aparte truc.",
       },
       {
         title: "Meten waar je genoemd wordt",
-        body: "We testen wat ChatGPT, Gemini en AI Overviews nu antwoorden op jouw categorie. Niet gokken, wel bijsturen op basis van wat er echt verschijnt.",
+        body: "Ik test wat ChatGPT, Gemini en AI Overviews nu antwoorden op jouw categorie. Niet gokken, wel bijsturen op basis van wat er echt verschijnt.",
       },
     ],
     lens: "Vindbaarheid in AI-antwoorden is een volwaardig kanaal naast Google. Wie daar niet in het antwoord staat, verliest klanten voordat die ooit een zoekresultaat zien. Ik bouw dat mee in je content en techniek.",
@@ -699,7 +699,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Bijhouden & versterken",
-        body: "Modellen veranderen. We meten periodiek opnieuw en scherpen pagina's aan die het meest geciteerd worden.",
+        body: "Modellen veranderen. Ik meet periodiek opnieuw en scherp pagina's aan die het meest geciteerd worden.",
       },
     ],
     capabilities: [
@@ -720,7 +720,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Content die modellen begrijpen",
         detail:
-          "Pagina's met duidelijke koppen, feiten en antwoorden. Geen keyword-stuffing, wel structuur die zowel Google als AI kan parsen.",
+          "Pagina's met duidelijke koppen, feiten en antwoorden. Heldere structuur die zowel Google als AI kan parsen.",
       },
       {
         title: "Sterker klassiek SEO",
@@ -737,7 +737,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   "local-seo": {
     heroVisual: "local",
     heroKicker:
-      "Bovenaan in Maps als iemand in jouw regio zoekt. Google Business, lokale pagina's en reviews op één lijn. Geen generieke landingspagina voor heel Nederland.",
+      "Bovenaan in Maps als iemand in jouw regio zoekt. Google Business, lokale pagina's en reviews op één lijn. Unieke landings per regio en dienst.",
     funFact:
       "Zoekopdrachten met 'bij mij in de buurt' zijn de afgelopen jaren harder gegroeid dan bijna elk ander type. Lokaal is geen bijzaak meer.",
     funFactSource: "Daarom per regio en dienst ingericht",
@@ -764,7 +764,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Lokale pagina's",
-        body: "Landings per dienst en regio met unieke copy, schema en interne links. Geen copy-paste met alleen de stad gewisseld.",
+        body: "Landings per dienst en regio met unieke copy, schema en interne links. Echte lokale content, niet alleen de stad gewisseld.",
       },
       {
         title: "Reviews & reputatie",
@@ -810,7 +810,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   "content-marketing": {
     heroVisual: "content",
     heroKicker:
-      "Pagina's en artikelen die de vragen van je klant echt beantwoorden. Geen opgeblazen blogkalender. Wel content die verkeer, vertrouwen en verkopen oplevert.",
+      "Pagina's en artikelen die de vragen van je klant echt beantwoorden. Content die verkeer, vertrouwen en verkopen oplevert.",
     funFact:
       "Bedrijven die consistent antwoord geven op klantvragen in content zien gemiddeld drie keer meer organisch verkeer dan sites die alleen productpagina's hebben.",
     funFactSource: "Daarom clusters, geen losse posts",
@@ -818,7 +818,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Vragen vóór kalender",
-        body: "Ik start bij wat mensen zoeken en wat sales je vertelt over twijfel. Geen artikel per week omdat het moet. Wel pagina's die een taak hebben in je funnel.",
+        body: "Ik start bij wat mensen zoeken en wat sales je vertelt over twijfel. Pagina's die een taak hebben in je funnel, niet artikelen om de kalender vol te houden.",
       },
       {
         title: "Clusters, geen losse posts",
@@ -833,7 +833,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Zoekvragen & gaps",
-        body: "Wat vraagt je klant vóór de koop? Wat mist er op je site? We prioriteren op impact, niet op volume alleen.",
+        body: "Wat vraagt je klant vóór de koop? Wat mist er op je site? Ik prioriteer op impact, niet op volume alleen.",
       },
       {
         title: "Cluster & structuur",
@@ -854,7 +854,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       "Interne links",
       "AI-ready copy",
       "Per pagina meten",
-      "Geen fluff",
+      "Substantie",
       "Conversiepad",
     ],
     outcomes: [
@@ -866,7 +866,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Verkeer dat converteert",
         detail:
-          "Pagina's met een duidelijke vervolgstap. Geen bounce naar nergens, wel routes naar aanvraag, shop of contact.",
+          "Pagina's met een duidelijke vervolgstap. Routes naar aanvraag, shop of contact.",
       },
       {
         title: "Content die blijft werken",
@@ -883,7 +883,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   reviews: {
     heroVisual: "reviews",
     heroKicker:
-      "Meer en betere reviews op de plekken waar klanten kijken vóór ze kopen. Geen hoop dat ze vanzelf komen. Wel een systeem dat tevreden klanten op het juiste moment vraagt.",
+      "Meer en betere reviews op de plekken waar klanten kijken vóór ze kopen. Een systeem dat tevreden klanten op het juiste moment vraagt.",
     funFact:
       "Negen van de tien mensen leest reviews vóór een aankoop. Gemiddeld scoren bedrijven met actieve reviewflow tientallen procentpunten meer dan wie passief afwacht.",
     funFactSource: "Daarom automatisch vragen op het juiste moment",
@@ -906,7 +906,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Platforms & baseline",
-        body: "Waar kijkt jouw klant? Wat is je score nu versus concurrenten? We kiezen waar we eerst op sturen.",
+        body: "Waar kijkt jouw klant? Wat is je score nu versus concurrenten? Ik kies waar ik eerst op stuur.",
       },
       {
         title: "Review flow bouwen",
@@ -918,7 +918,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Reageren & bijsturen",
-        body: "Templates en proces voor kritiek. Maandelijks: volume, score en wat we testen in timing of channel.",
+        body: "Templates en proces voor kritiek. Maandelijks: volume, score en wat ik test in timing of channel.",
       },
     ],
     capabilities: [
@@ -968,14 +968,14 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Maximaal drie focuspunten",
-        body: "Alles tegelijk is niets tegelijk. We kiezen max drie hefbomen tegelijk. De rest wacht zijn beurt met een duidelijke reden.",
+        body: "Alles tegelijk is niets tegelijk. Ik kies max drie hefbomen tegelijk. De rest wacht zijn beurt met een duidelijke reden.",
       },
       {
         title: "Plan én uitvoering",
-        body: "Ik bouw sites, zet Google Ads en Meta Ads op en schrijf content zelf. Dus het plan is realistisch. Geen twintig kanalen waarvan er achttien blijven liggen.",
+        body: "Ik bouw sites, zet Google Ads en Meta Ads op en schrijf content zelf. Dus het plan is realistisch. Maximaal drie kanalen die je echt uitvoert.",
       },
     ],
-    lens: "Strategie is het stuurwiel. Zonder plan verbrand je budget op losse acties. Met een plan weet je wat eerst moet, wat het kost en wanneer je opschaalt. BestRest kreeg per product een eigen route. Jij krijgt jouw route.",
+    lens: "Strategie is het stuurwiel. Zonder plan verbrand je budget op losse acties. Met een plan weet je wat eerst moet, wat het kost en wanneer je opschaalt. Jij krijgt jouw route.",
     approachSteps: [
       {
         title: "Cijfers & doelen",
@@ -983,7 +983,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Kanalen & volgorde",
-        body: "Welke hefbomen leveren het snelst winst? SEO eerst, site eerst, ads eerst? Dat beslissen we op jouw situatie, niet op hype.",
+        body: "Welke hefbomen leveren het snelst winst? SEO eerst, site eerst, ads eerst? Dat beslis ik op jouw situatie, niet op hype.",
       },
       {
         title: "Plan op papier én in de agenda",
@@ -991,7 +991,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Maandelijks bijsturen",
-        body: "Wat werkt krijgt gas. Wat niet werkt gaat eruit. Geen sentiment, wel cijfers.",
+        body: "Wat werkt krijgt gas. Wat niet werkt gaat eruit. Cijfers boven sentiment.",
       },
     ],
     capabilities: [
@@ -1001,13 +1001,13 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       "Meetbaar",
       "Plan + uitvoering",
       "Maandelijks sturen",
-      "Geen PDF-lade",
+      "Plan dat leeft",
     ],
     outcomes: [
       {
         title: "Eén plan dat klopt",
         detail:
-          "Kanalen, budget en volgorde in één document dat je snapt. Geen losse acties meer tussen bureaus die elkaar tegenwerken.",
+          "Kanalen, budget en volgorde in één document dat je snapt. Eén plan, één aanspreekpunt.",
       },
       {
         title: "Onderbouwd met jouw cijfers",
@@ -1023,13 +1023,13 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     heroStats: [
       { label: "Focus", value: "Max. 3 kanalen" },
       { label: "Aanpak", value: "Data-first" },
-      { label: "Case", value: "BestRest" },
+      { label: "Focus", value: "Jouw route" },
     ],
   },
   adverteren: {
     heroVisual: "ads-strategy",
     heroKicker:
-      "Google Ads en Meta Ads op één lijn: budget, funnel en schaalpad. Geen losse campagnes zonder landingspagina. Wel een structuur die je snapt en kunt sturen.",
+      "Google Ads en Meta Ads op één lijn: budget, funnel en schaalpad. Een structuur die je snapt en kunt sturen, met landings die converteren.",
     funFact:
       "Gemiddeld gaat ruim een kwart van advertentiebudget naar zoektermen die je al organisch scoret. Wie SEO en ads combineert, betaalt dubbel voor dezelfde klik.",
     funFactSource: "Daarom eerst kijken wat al werkt",
@@ -1052,7 +1052,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Break-even & marge",
-        body: "Wat mag een klant kosten? Welke ROAS of CPA is winstgevend? Dat bepalen we vóór er euro's uitgaan.",
+        body: "Wat mag een klant kosten? Welke ROAS of CPA is winstgevend? Dat bepaal ik vóór er euro's uitgaan.",
       },
       {
         title: "Account & funnel structuur",
@@ -1085,12 +1085,12 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Google + Meta op één lijn",
         detail:
-          "Creatives, copy en landings die hetzelfde beloven. Geen Meta-advertentie die naar een homepage zonder CTA leidt.",
+          "Creatives, copy en landings die hetzelfde beloven. Elke advertentie leidt naar een pagina met een duidelijke CTA.",
       },
       {
         title: "Schaalpad dat klopt",
         detail:
-          "Duidelijk wanneer opschalen slim is en wanneer eerst site, tracking of CRO moet. Geen budget burn zonder leercurve.",
+          "Duidelijk wanneer opschalen slim is en wanneer eerst site, tracking of CRO moet. Schaalpad met leercurve, niet budget burn.",
       },
     ],
     heroStats: [
@@ -1121,7 +1121,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Meer conversie op verkeerde bezoekers helpt niet. CRO werkt het best als traffic-kwaliteit en landings op één lijn zitten.",
       },
     ],
-    lens: "CRO is geen knopkleur veranderen. Het is frictie wegnemen op checkout, formulieren en mobiel. BestRest en SkinComplete hadden elk andere bottlenecks. Jij ook.",
+    lens: "CRO is geen knopkleur veranderen. Het is frictie wegnemen op checkout, formulieren en mobiel. Elke shop heeft andere bottlenecks. Jij ook.",
     approachSteps: [
       {
         title: "Gedrag in kaart",
@@ -1198,7 +1198,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Pijnpunten & propositie",
-        body: "Wat houdt je ideale klant tegen? We vertalen dat naar een aanbod en landing die direct duidelijk zijn.",
+        body: "Wat houdt je ideale klant tegen? Ik vertaal dat naar een aanbod en landing die direct duidelijk zijn.",
       },
       {
         title: "Landing & form",
@@ -1236,7 +1236,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Opvolging zonder spam",
         detail:
-          "Sequences die menselijk blijven en op tijd arriveren. Geen leads die na drie dagen koud zijn.",
+          "Sequences die menselijk blijven en op tijd arriveren. Leads warm houden, niet laten afkoelen.",
       },
     ],
     heroStats: [
@@ -1256,22 +1256,22 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Events met functie",
-        body: "Elk event heeft een doel: sturen op ads, CRO of boardroom. Geen dataLayer vol ruis waar niemand iets mee doet.",
+        body: "Elk event heeft een doel: sturen op ads, CRO of boardroom. Een dataLayer met events die je team echt gebruikt.",
       },
       {
         title: "Consent netjes",
-        body: "Tags en cookies die samenwerken met je banner. Geen meting die AVG negeert, geen consent die je ads kapot maakt.",
+        body: "Tags en cookies die samenwerken met je banner. AVG-proof meting die je ads intact laat.",
       },
       {
         title: "Debugbaar voor je team",
-        body: "Documentatie en een proces om te checken of events nog kloppen na elke site-wijziging. Geen black box die niemand durft aan te raken.",
+        body: "Documentatie en een proces om te checken of events nog kloppen na elke site-wijziging. Transparant en door jouw team te onderhouden.",
       },
     ],
     lens: "Als meting niet klopt, vechten kanalen om schuld. Tracking is het fundament onder strategie, ads en CRO. Eén waarheid, zelfde cijfers in campagnes én in je vergadering.",
     approachSteps: [
       {
         title: "Audit & event-spec",
-        body: "Wat moet je meten voor ads, site en management? We brengen gaps en dubbele events in kaart.",
+        body: "Wat moet je meten voor ads, site en management? Ik breng gaps en dubbele events in kaart.",
       },
       {
         title: "GTM & dataLayer",
@@ -1279,7 +1279,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Consent & testen",
-        body: "Cookie-banner, tag firing en debug in staging. Geen live-gang zonder check op echte conversies.",
+        body: "Cookie-banner, tag firing en debug in staging. Live-gang pas na check op echte conversies.",
       },
       {
         title: "Dashboards & onderhoud",
@@ -1309,7 +1309,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Dashboards die je gebruikt",
         detail:
-          "Geen veertig tabbladen. Wel de cijfers die je nodig hebt voor campagnes én voor je maandelijkse beslissing.",
+          "De cijfers die je nodig hebt voor campagnes én voor je maandelijkse beslissing. Overzichtelijk, niet veertig tabbladen.",
       },
     ],
     heroStats: [
@@ -1333,7 +1333,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Structuur die je snapt",
-        body: "Campagnes ingericht zodat jij ziet waar budget naartoe gaat. Geen black box account waar alleen het bureau de weg kent.",
+        body: "Campagnes ingericht zodat jij ziet waar budget naartoe gaat. Transparant account dat jij kunt volgen.",
       },
       {
         title: "Meting tot de verkoop",
@@ -1344,7 +1344,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Break-even & structuur",
-        body: "Wat mag een klant kosten? Welke zoektermen en campagnes passen bij je marge? We zetten de basis vóór er budget uitgaat.",
+        body: "Wat mag een klant kosten? Welke zoektermen en campagnes passen bij je marge? Ik zet de basis vóór er budget uitgaat.",
       },
       {
         title: "Campagnes live",
@@ -1406,7 +1406,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Funnel van koud tot hot",
-        body: "Prospecting, retargeting, bestaande kopers: elke fase krijgt eigen creatives en KPI's. Geen koud publiek met hard-sell zonder warming.",
+        body: "Prospecting, retargeting, bestaande kopers: elke fase krijgt eigen creatives en KPI's. Koud publiek eerst warmen, dan pas hard-sell.",
       },
       {
         title: "Meting die blijft werken",
@@ -1417,7 +1417,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Funnel & doelgroep",
-        body: "Waar zit je publiek? Koud, warm, hot? We tekenen de structuur en kiezen formats per fase.",
+        body: "Waar zit je publiek? Koud, warm, hot? Ik teken de structuur en kies formats per fase.",
       },
       {
         title: "Creatives & hooks",
@@ -1450,7 +1450,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Hooks die stoppen met scrollen",
         detail:
-          "Varianten en iteraties op basis van data. Geen enkele creative die maanden blijft draaien zonder te vermoeien.",
+          "Varianten en iteraties op basis van data. Creatives die regelmatig vernieuwd worden.",
       },
       {
         title: "Retargeting zonder irritatie",
@@ -1467,7 +1467,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   "social-media": {
     heroVisual: "social-organic",
     heroKicker:
-      "Organisch zichtbaar op Instagram, TikTok of LinkedIn. Ritme en formats die je team volhoudt. Geen dagelijkse dansjes, wel een uithangbord dat vertrouwen geeft.",
+      "Organisch zichtbaar op Instagram, TikTok of LinkedIn. Ritme en formats die je team volhoudt. Een uithangbord dat vertrouwen geeft.",
     funFact:
       "Negen van de tien kopers checkt je social voordat ze een aankoop doen. Een dode feed kost vertrouwen, ook als je ads perfect draaien.",
     funFactSource: "Daarom ritme boven viraliteit",
@@ -1490,7 +1490,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Kanaal & doel",
-        body: "Waar zit je klant? Wat moet social opleveren: vertrouwen, bereik of traffic? We kiezen max twee focuskanalen.",
+        body: "Waar zit je klant? Wat moet social opleveren: vertrouwen, bereik of traffic? Ik kies max twee focuskanalen.",
       },
       {
         title: "Formats & ritme",
@@ -1528,7 +1528,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Aansluiting op campagnes",
         detail:
-          "Organic en paid vertellen hetzelfde verhaal. Geen oude post naast een nieuwe landingspagina.",
+          "Organic en paid vertellen hetzelfde verhaal. Consistent over alle kanalen.",
       },
     ],
     heroStats: [
@@ -1556,18 +1556,18 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Rechten netjes",
-        body: "Usage rights, whitelisting en hergebruik zwart op wit. Geen video die je niet mag inzetten na de eerste campagne.",
+        body: "Usage rights, whitelisting en hergebruik zwart op wit. Content die je overal mag inzetten.",
       },
     ],
     lens: "UGC is content die je koopt, niet het bereik van de creator. Perfect voor ads die moeten voelen als iemand die jij kent, niet als een bureau.",
     approachSteps: [
       {
         title: "Product & hooks",
-        body: "Welk product, welke bezwaren, welke hook? We briefen vóór creator-selectie.",
+        body: "Welk product, welke bezwaren, welke hook? Ik brief vóór creator-selectie.",
       },
       {
         title: "Creators selecteren",
-        body: "Passend bij je doelgroep en merk. Geen generic faces, wel mensen die je klant herkent.",
+        body: "Passend bij je doelgroep en merk. Gezichten die je klant herkent.",
       },
       {
         title: "Productie & review",
@@ -1596,7 +1596,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Stroom aan varianten",
         detail:
-          "Nieuwe hooks elke maand zodat campagnes niet vermoeien. Geen enkele creative die eeuwig draait.",
+          "Nieuwe hooks elke maand zodat campagnes niet vermoeien. Variatie die performance houdt.",
       },
       {
         title: "Rechten geregeld",
@@ -1625,7 +1625,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Afspraken zwart op wit",
-        body: "Content, timing, rechten, vergoeding en exclusiviteit. Geen vage DM-deals die later escaleren.",
+        body: "Content, timing, rechten, vergoeding en exclusiviteit. Afspraken zwart op wit vanaf dag één.",
       },
       {
         title: "Meten per creator",
@@ -1636,11 +1636,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Doel & budget",
-        body: "Bereik, content of allebei? Wat past bij je marge? We stellen verwachtingen vóór de eerste DM.",
+        body: "Bereik, content of allebei? Wat past bij je marge? Ik stel verwachtingen vóór de eerste DM.",
       },
       {
         title: "Selectie & outreach",
-        body: "Creators op engagement, niche en eerdere campagnes. Geen volgersaantallen als enige criterium.",
+        body: "Creators op engagement, niche en eerdere campagnes. Kwaliteit boven volgersaantallen.",
       },
       {
         title: "Deal & content",
@@ -1664,12 +1664,12 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Creators die passen",
         detail:
-          "Samenwerkingen met accounts die je doelgroep echt volgt. Geen generic influencers met nep-engagement.",
+          "Samenwerkingen met accounts die je doelgroep echt volgt. Echte engagement, meetbaar per campagne.",
       },
       {
         title: "Meetbaar bereik",
         detail:
-          "Per campagne zichtbaar wat codes, links en omzet opleverden. Geen vage exposure-deals.",
+          "Per campagne zichtbaar wat codes, links en omzet opleverden. Meetbare deals, geen vage exposure.",
       },
       {
         title: "Content én bereik",
@@ -1698,14 +1698,14 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Listings die scoren",
-        body: "Titels, bullets en zoekwoorden op hoe mensen binnen Bol en Amazon zoeken. Geen copy-paste van je webshop zonder aanpassing.",
+        body: "Titels, bullets en zoekwoorden op hoe mensen binnen Bol en Amazon zoeken. Aangepast aan marketplace-zoekgedrag, niet copy-paste van je webshop.",
       },
       {
         title: "Shop + marketplace aligned",
         body: "Assortiment en prijsstrategie zodat kanalen elkaar versterken in plaats of kannibaliseren.",
       },
     ],
-    lens: "Bol en Amazon zijn het schap waar je klant al staat. Listings, reviews en ads moeten samen werken. SkinComplete en andere cases leerden me: marketplace is kanaal, geen afterthought.",
+    lens: "Bol en Amazon zijn het schap waar je klant al staat. Listings, reviews en ads moeten samen werken. Marketplace is een volwaardig kanaal, geen afterthought.",
     approachSteps: [
       {
         title: "Assortiment & marge",
@@ -1782,7 +1782,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Hooks & formats",
-        body: "Welke platforms, welke lengtes, welke bezwaren moet de creative wegnemen? We briefen vóór productie.",
+        body: "Welke platforms, welke lengtes, welke bezwaren moet de creative wegnemen? Ik brief vóór productie.",
       },
       {
         title: "Productie",
@@ -1815,7 +1815,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Consistent met merk",
         detail:
-          "Ads die hetzelfde beloven als je landingspagina. Geen oude banner naast nieuwe site.",
+          "Ads die hetzelfde beloven als je landingspagina. Consistent over alle kanalen.",
       },
       {
         title: "Snelle iteratie",
@@ -1832,7 +1832,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
   email: {
     heroVisual: "email-flow",
     heroKicker:
-      "De juiste mail op het juiste moment. Welkom, herinnering, opvolging na aankoop. Geen spam, wel omzet uit klanten die je al hebt.",
+      "De juiste mail op het juiste moment. Welkom, herinnering, opvolging na aankoop. Omzet uit klanten die je al hebt.",
     funFact:
       "Gemiddeld laat zeven van de tien winkelwagens liggen. Een goed getimede herinnermail haalt daar een flink deel van terug. Zonder extra advertentiebudget.",
     funFactSource: "Daarom flows vóór losse nieuwsbrieven",
@@ -1851,11 +1851,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Templates die op mobiel én desktop professioneel ogen en passen bij je merk. Klaviyo, Shopify Mail of jouw tool: technisch strak opgezet.",
       },
     ],
-    lens: "E-mail is het kanaal waar jij de relatie bewaakt. Geen algoritme dat je bereik verlaagt. Als je list gezond is en je flows logisch lopen, is dit vaak je hoogste ROI-kanaal.",
+    lens: "E-mail is het kanaal waar jij de relatie bewaakt. Jij bepaalt het bereik, niet een algoritme. Als je list gezond is en je flows logisch lopen, is dit vaak je hoogste ROI-kanaal.",
     approachSteps: [
       {
         title: "Audit & data",
-        body: "Welke mails stuur je nu? Welke tool, welke segmenten, welke open- en clickcijfers? We brengen gaten en quick wins in kaart.",
+        body: "Welke mails stuur je nu? Welke tool, welke segmenten, welke open- en clickcijfers? Ik breng gaten en quick wins in kaart.",
       },
       {
         title: "Flows & templates",
@@ -1863,7 +1863,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Techniek & koppeling",
-        body: "Events uit Shopify of site, juiste triggers, deliverability basics. Geen mails die in spam belanden.",
+        body: "Events uit Shopify of site, juiste triggers, deliverability basics. Mails die aankomen, niet in spam belanden.",
       },
       {
         title: "Test & optimaliseer",
@@ -1888,7 +1888,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Merk dat consistent blijft",
         detail:
-          "Mails die eruitzien en klinken als je site. Geen losse template uit 2019 naast je nieuwe shop.",
+          "Mails die eruitzien en klinken als je site. Consistent met je huidige merk en shop.",
       },
       {
         title: "Structuur die je team snapt",
@@ -1928,7 +1928,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Cohort & churn",
-        body: "Hoeveel kopers komen terug? Na hoeveel dagen? We tekenen je baseline en zoeken waar het lekt.",
+        body: "Hoeveel kopers komen terug? Na hoeveel dagen? Ik teken je baseline en zoek waar het lekt.",
       },
       {
         title: "Programma & flows",
@@ -1961,7 +1961,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Programma's die passen",
         detail:
-          "Loyaliteit en win-back afgestemd op je product en marge. Geen generieke puntenclub die niets oplevert.",
+          "Loyaliteit en win-back afgestemd op je product en marge. Programma's die echt renderen.",
       },
       {
         title: "Inzicht in churn",
@@ -1986,7 +1986,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Pijn eerst, alles later",
-        body: "Ik automatiseer niet je hele bedrijf in één keer. We beginnen waar handwerk het meest zeer doet of fouten maakt. Quick wins met robuuste basis.",
+        body: "Ik automatiseer niet je hele bedrijf in één keer. Ik begin waar handwerk het meest zeer doet of fouten maakt. Quick wins met robuuste basis.",
       },
       {
         title: "Robuust of niet doen",
@@ -1994,14 +1994,14 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Eigenaarschap bij jou",
-        body: "Documentatie en keuzes die je begrijpt. Geen black box die alleen de maker kan fixen. Tooling op onderhoudbaarheid, niet op hype.",
+        body: "Documentatie en keuzes die je begrijpt. Onderhoudbaar door jouw team, niet afhankelijk van de maker.",
       },
     ],
     lens: "Automatisering is geen speeltje. Het is operations die op autopilot draait. Maar alleen als je weet wat er gebeurt als iets misgaat.",
     approachSteps: [
       {
         title: "Inventarisatie",
-        body: "Welke systemen, welke triggers, welke edge cases? We tekenen de keten voordat er code of flows worden gebouwd.",
+        body: "Welke systemen, welke triggers, welke edge cases? Ik teken de keten voordat er code of flows worden gebouwd.",
       },
       {
         title: "Prioriteit & scope",
@@ -2034,7 +2034,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Minder fouten",
         detail:
-          "Geen vergeten exports, dubbele invoer of verkeerde klantmails door menselijke slip-ups.",
+          "Minder fouten door automatisering: exports, invoer en klantmails lopen consistent door.",
       },
       {
         title: "Schaal zonder extra FTE",
@@ -2059,15 +2059,15 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Keten, geen losse stapjes",
-        body: "Order, voorraad, fulfilment, finance en mail horen op één lijn. Ik teken edge cases uit vóór we automatiseren.",
+        body: "Order, voorraad, fulfilment, finance en mail horen op één lijn. Ik teken edge cases uit vóór ik automatiseer.",
       },
       {
         title: "Edge cases expliciet",
-        body: "Deels verzonden, gedeeltelijke refund, voorraad op meerdere locaties: standaardflows falen hier. Wij niet.",
+        body: "Deels verzonden, gedeeltelijke refund, voorraad op meerdere locaties: standaardflows falen hier. Ik bouw flows die edge cases vangen.",
       },
       {
         title: "Playbook bij storing",
-        body: "Als een koppeling uitvalt, moet je team weten wat er gebeurt. Geen paniek, wel een duidelijk protocol.",
+        body: "Als een koppeling uitvalt, moet je team weten wat er gebeurt. Een duidelijk protocol, geen paniek.",
       },
     ],
     lens: "E-commerce workflows zijn het zenuwstelsel van je shop. Als die hapert, voelt de klant het direct. En jouw team zit in Excel.",
@@ -2078,7 +2078,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       },
       {
         title: "Bron van waarheid",
-        body: "Waar leeft klant, order, voorraad? We kiezen één leidend systeem per datapunt.",
+        body: "Waar leeft klant, order, voorraad? Ik kies één leidend systeem per datapunt.",
       },
       {
         title: "Automatisering live",
@@ -2107,7 +2107,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
       {
         title: "Klantmails die kloppen",
         detail:
-          "Statusupdates op het juiste moment, in je tone of voice. Geen verkeerde tracking of dubbele mails.",
+          "Statusupdates op het juiste moment, in je tone of voice. Juiste tracking, zonder dubbele mails.",
       },
       {
         title: "Finance die synchroon loopt",
@@ -2132,11 +2132,11 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     principles: [
       {
         title: "Kennis uit jouw bronnen",
-        body: "Site, FAQ, productfeed, policies: gestructureerd ingelezen. Geen hallucinaties over prijzen of levertijden die niet kloppen.",
+        body: "Site, FAQ, productfeed, policies: gestructureerd ingelezen. Antwoorden op basis van jouw echte data.",
       },
       {
         title: "Mens waar het complex wordt",
-        body: "Escalatie met context mee. Support ziet wat de klant al gevraagd heeft. Geen herhalen van hetzelfde verhaal.",
+        body: "Escalatie met context mee. Support ziet wat de klant al gevraagd heeft. Eén verhaal, geen herhaling.",
       },
       {
         title: "Meten wat het oplevert",
@@ -2147,7 +2147,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
     approachSteps: [
       {
         title: "Use cases & bronnen",
-        body: "Welke vragen komen het vaakst? Welke documenten zijn leidend en up-to-date? We kiezen scope bewust.",
+        body: "Welke vragen komen het vaakst? Welke documenten zijn leidend en up-to-date? Ik kies scope bewust.",
       },
       {
         title: "Train & tone",

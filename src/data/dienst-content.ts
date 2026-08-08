@@ -8,7 +8,7 @@ export interface DienstBody {
 }
 
 const FALLBACK_CLOSING =
-  "We koppelen dit altijd aan jouw groeidoelen: wat er eerst moet, wat later kan, en wat je zelf wilt leren beheren.";
+  "Ik koppel dit altijd aan jouw groeidoelen: wat er eerst moet, wat later kan, en wat je zelf wilt leren beheren.";
 
 function body(
   intro: string,
@@ -20,7 +20,7 @@ function body(
 
 const CONTENT = {
   "shopify-enterprise": body(
-    "Ik ben Shopify-expert en bouw webshops from scratch. Portals, bundles, international storefronts: in Shopify kan het, als je theme en koppelingen kloppen. Geen template met twintig apps eroverheen. Geen theme uit de store met jouw logo erop.",
+    "Ik ben Shopify-expert en bouw webshops from scratch. Portals, bundles, international storefronts: in Shopify kan het, als je theme en koppelingen kloppen. Alles custom: eigen secties, eigen flow, alleen de apps die echt nodig zijn.",
     [
       "Custom Shopify-themes from scratch, geen kant-en-klare templates",
       "Checkout, bundles, portals en koppelingen waar jij ze nodig hebt",
@@ -42,7 +42,7 @@ const CONTENT = {
     [
       "Rollen en rechten die kloppen: salon, admin, klant. Ieder ziet wat hij mag zien",
       "Koppelingen met Shopify, CRM en automatisering zonder copy-paste tussen tabbladen",
-      "UI die vertrouwen geeft. Geen engineer-only schermen waar niemand mee wil werken",
+      "UI die vertrouwen geeft: schermen waar je team en klanten graag mee werken",
       "Documentatie en overdracht: je zit niet vast aan obscure code of een developer die weg is",
     ],
   ),
@@ -56,7 +56,7 @@ const CONTENT = {
     ],
   ),
   seo: body(
-    "SEO betekent: gevonden worden in Google door de juiste content, een logische site-structuur en techniek die goed werkt. Geen trucjes, wel een site die antwoord geeft op wat je klanten zoeken.",
+    "SEO betekent: gevonden worden in Google door de juiste content, een logische site-structuur en techniek die goed werkt. Duurzame vindbaarheid: een site die antwoord geeft op wat je klanten zoeken.",
     [
       "Site-structuur die logisch is voor bezoekers én Google",
       "Content die écht helpt, niet gekopieerd van concurrenten",
@@ -87,7 +87,7 @@ const CONTENT = {
     [
       "Leadmagneten en proposities die aansluiten op echte pijnpunten",
       "Forms, CRM-koppelingen en scoring waar het zinvol is",
-      "Sequences die menselijk blijven. Geen spammachine",
+      "Sequences die menselijk blijven en vertrouwen opbouwen",
       "Rapportage: kosten per lead, kwaliteit en doorloop naar deal",
     ],
   ),
@@ -96,7 +96,7 @@ const CONTENT = {
     [
       "Inventarisatie: welke systemen, welke triggers, welke edge cases",
       "Robuuste automatisering met logging, alerts en fallbacks",
-      "Geen vendor-lock-in: documentatie en eigenaarschap bij jou",
+      "Eigenaarschap bij jou: documentatie, open keuzes en geen vendor-lock-in",
       "Security: secrets, scopes en minimale rechten per integratie",
     ],
   ),
@@ -124,7 +124,7 @@ const CONTENT = {
       "Event-spec op maat: e-commerce, leads, scroll, video, formulieren",
       "Consent en tags die netjes samenwerken",
       "Debug-proces zodat je team issues snel vindt",
-      "Dashboards die je écht gebruikt. Geen 40 tabbladen",
+      "Overzichtelijke dashboards die je écht gebruikt",
     ],
   ),
   branding: body(
@@ -133,7 +133,7 @@ const CONTENT = {
       "Positionering en onderscheid ten opzichte van concurrenten",
       "Kleuren, type, beeldstijl en componenten voor site, ads en mail",
       "Brand guidelines en templates die je team en partners volgen",
-      "Afstemming met web en campagnes. Geen los PDF-boekje in een la",
+      "Afstemming met web en campagnes: één werkend merk, niet een map in een la",
     ],
   ),
   webdesign: body(
@@ -200,7 +200,7 @@ const CONTENT = {
     ],
   ),
   "content-marketing": body(
-    "Goede content is de motor achter vindbaarheid, autoriteit en vertrouwen. Ik schrijf en structureer content die de vragen van jouw klant echt beantwoordt. Geen opgeblazen blogkalender, wel pagina's die verkeer én klanten opleveren.",
+    "Goede content is de motor achter vindbaarheid, autoriteit en vertrouwen. Ik schrijf en structureer content die de vragen van jouw klant echt beantwoordt. Pagina's met een taak: verkeer én klanten opleveren, niet een opgeblazen blogkalender.",
     [
       "Contentplan op basis van wat jouw klant echt zoekt en vraagt",
       "Artikelen en pagina's die scoren in Google én in AI-antwoorden",
@@ -236,7 +236,7 @@ const CONTENT = {
     ],
   ),
   "social-media": body(
-    "Organische social media is het uithangbord van je merk: de plek waar klanten checken of je echt bent. Ik help met een ritme en format dat vol te houden is en dat past bij jouw bedrijf. Geen dagelijkse dansjes, wel consistente zichtbaarheid.",
+    "Organische social media is het uithangbord van je merk: de plek waar klanten checken of je echt bent. Ik help met een ritme en format dat vol te houden is en dat past bij jouw bedrijf. Consistente zichtbaarheid die je team kan volhouden.",
     [
       "Kanaalkeuze: waar zit jouw klant echt (Instagram, TikTok, LinkedIn)",
       "Formats en ritme die je team kan volhouden",
@@ -287,7 +287,7 @@ export function getDienstContent(slug: string): DienstBody {
   if (hit) return hit;
   return {
     intro:
-      "Deze dienstpagina wordt nog aangevuld met jouw specifieke voorkeuren. Neem contact op voor een korte afstemming. Dan maken we de copy en cases 100% op maat.",
+      "Deze dienstpagina wordt nog aangevuld met jouw specifieke voorkeuren. Neem contact op voor een korte afstemming. Dan maak ik de copy en cases 100% op maat.",
     bullets: [
       "Scope en succescriteria in een eerste gesprek scherp",
       "Voorbeeldtraject en planning op basis van jouw situatie",

@@ -5,19 +5,19 @@ export interface DienstExtra {
 
 const Q = {
   start: {
-    question: "Hoe starten we. En hoe snel zie ik iets live?",
+    question: "Hoe start ik. En hoe snel zie jij iets live?",
     answer:
-      "We beginnen met een korte intake: doelen, stack, prioriteit. Daarna een sprintplan met duidelijke oplevermomenten. Geen zwarte doos van maanden zonder zichtbare voortgang.",
+      "Ik begin met een korte intake: doelen, stack, prioriteit. Daarna een sprintplan met duidelijke oplevermomenten. Zichtbare voortgang per sprint, geen zwarte doos van maanden.",
   },
   remote: {
-    question: "Werken jullie remote met ons team?",
+    question: "Werk je remote met mijn team?",
     answer:
-      "Ja. We werken gestructureerd async (documentatie, Loom, tickets) en plannen vaste syncs waar nodig. Vooral rond launches en experimenten.",
+      "Ja. Ik werk gestructureerd async (documentatie, Loom, tickets) en plan vaste syncs waar nodig. Vooral rond launches en experimenten.",
   },
   meet: {
-    question: "Hoe meten we succes?",
+    question: "Hoe meet je succes?",
     answer:
-      "Vooraf KPI’s afstemmen (omzet, leads, CPA, snelheid, tijdwinst). We koppelen dat aan analytics en. Waar zinvol. Dashboards zodat je team zelf kan meelezen.",
+      "Vooraf KPI’s afstemmen (omzet, leads, CPA, snelheid, tijdwinst). Ik koppel dat aan analytics en. Waar zinvol. Dashboards zodat je team zelf kan meelezen.",
   },
 } as const;
 
@@ -31,9 +31,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Migreren jullie ook van legacy-themes naar Online Store 2.0?",
+        question: "Migreer je ook van legacy-themes naar Online Store 2.0?",
         answer:
-          "Ja. We plannen migraties met redirects, data en campagne-impact. Zodat SEO en ads niet onnodig schokken.",
+          "Ja. Ik plan migraties met redirects, data en campagne-impact. Zodat SEO en ads niet onnodig schokken.",
       },
       Q.meet,
     ],
@@ -47,9 +47,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Werken jullie met bestaande agencies of in-house devs?",
+        question: "Werk je met bestaande agencies of in-house devs?",
         answer:
-          "Zeker. We kunnen lead nemen, meebouwen of alleen architectuur/review leveren. Afhankelijk van wat je team nodig heeft.",
+          "Zeker. Ik kan lead nemen, meebouwen of alleen architectuur/review leveren. Afhankelijk van wat je team nodig heeft.",
       },
       Q.remote,
     ],
@@ -68,14 +68,14 @@ export const dienstExtras: Record<string, DienstExtra> = {
           "Een website informeert. Een portaal of app laat mensen inloggen, data zien en acties uitvoeren: bestellen, boeken, status volgen. Dat vraagt auth, rollen en vaak koppelingen met je andere systemen.",
       },
       {
-        question: "Kunnen jullie koppelen met onze bestaande CRM of ERP?",
+        question: "Kun je koppelen met mijn bestaande CRM of ERP?",
         answer:
           "Ja. Via API's, webhooks of integratieplatformen. Altijd met aandacht voor foutafhandeling en één bron van waarheid voor je data.",
       },
       {
-        question: "Hebben jullie voorbeelden van portalen die jullie bouwden?",
+        question: "Heb je voorbeelden van portalen die je bouwde?",
         answer:
-          "SkinComplete: B2B-portaal in Shopify waar salons zelf bestellen. Hills Pilates: website plus app met agenda en boekingen. Beide from scratch, beide gebouwd om mee te groeien.",
+          "B2B-portalen in Shopify waar partners zelf bestellen. Boekingsapps met agenda en rechten per rol. Beide from scratch, gebouwd om mee te groeien.",
       },
       Q.meet,
     ],
@@ -88,12 +88,12 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Hoe diep gaan jullie. Ook server en DNS?",
+        question: "Hoe diep ga je. Ook server en DNS?",
         answer:
-          "We beginnen bij de grootste bottlenecks, meestal frontend, assets en third-parties. Wa nodig kijken we mee naar hosting, caching en CDN, in samenwerking met je provider.",
+          "Ik begin bij de grootste bottlenecks, meestal frontend, assets en third-parties. Waar nodig kijk ik mee naar hosting, caching en CDN, in samenwerking met je provider.",
       },
       {
-        question: "Optimaliseren jullie alleen Shopify, of ook custom sites?",
+        question: "Optimaliseer je alleen Shopify, of ook custom sites?",
         answer:
           "Beide. Shopify-themes, Next.js, WordPress-migraties: de aanpak is hetzelfde. Meten op templates die ertoe doen, fixen in code, niet maskeren met plugins.",
       },
@@ -109,9 +109,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Beloven jullie posities?",
+        question: "Beloof je posities?",
         answer:
-          "Nee. Dat is onbetrouwbaar. We beloven proces: heldere structuur, sterke content, techniek en rapportage die beslissingen ondersteunen.",
+          "Nee. Dat is onbetrouwbaar. Ik beloof proces: heldere structuur, sterke content, techniek en rapportage die beslissingen ondersteunen.",
       },
       Q.start,
       Q.remote,
@@ -127,7 +127,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Google, Meta of beide?",
         answer:
-          "Dat hangt af van je aanbod en doelgroep. We starten waar de grootste leercurve per euro zit en schalen beheerst.",
+          "Dat hangt af van je aanbod en doelgroep. Ik start waar de grootste leercurve per euro zit en schaal beheerst.",
       },
       Q.start,
       Q.meet,
@@ -141,9 +141,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Hebben we veel traffic nodig voor A/B-tests?",
+        question: "Heb ik veel traffic nodig voor A/B-tests?",
         answer:
-          "Voor sommige tests wel. Bij lagere volumes werken we met directional evidence, UX-sprints en kwalitatieve data.",
+          "Voor sommige tests wel. Bij lagere volumes werk ik met directional evidence, UX-sprints en kwalitatieve data.",
       },
       Q.start,
       Q.meet,
@@ -158,9 +158,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Doen jullie ook outbound of alleen inbound?",
+        question: "Doe je ook outbound of alleen inbound?",
         answer:
-          "Primair inbound en paid/organic kanalen. Outbound koppelen we aan partners waar nodig. Met dezelfde meetlat.",
+          "Primair inbound en paid/organic kanalen. Outbound koppel ik aan partners waar nodig. Met dezelfde meetlat.",
       },
       Q.meet,
     ],
@@ -175,7 +175,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "n8n of Make. Wat kiezen we?",
         answer:
-          "Hangt van je stack, hosting en team af. We adviseren op onderhoudbaarheid en kosten. Niet op hype.",
+          "Hangt van je stack, hosting en team af. Ik adviseer op onderhoudbaarheid en kosten. Niet op hype.",
       },
       Q.start,
       Q.remote,
@@ -190,9 +190,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Ondersteunen jullie multi-warehouse of dropship?",
+        question: "Ondersteun je multi-warehouse of dropship?",
         answer:
-          "Ja, mits je bron-systemen API’s of exports hebben die betrouwbaar zijn. We mappen edge cases expliciet.",
+          "Ja, mits je bron-systemen API’s of exports hebben die betrouwbaar zijn. Ik map edge cases expliciet.",
       },
       Q.meet,
     ],
@@ -207,7 +207,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Hoe zit het met privacy en AVG?",
         answer:
-          "We ontwerpen datastromen vanaf dag één: welke data mag waar, hoe lang bewaren we logs, en hoe informeer je gebruikers?",
+          "Ik ontwerp datastromen vanaf dag één: welke data mag waar, hoe lang bewaar ik logs, en hoe informeer je gebruikers?",
       },
       Q.start,
       Q.remote,
@@ -223,7 +223,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Server-side tagging. Wanneer is dat nodig?",
         answer:
-          "Bij strengere browsers, complexe stacks of wanneer je first-party data wilt stabiliseren. We adviseren op basis van risico en ROI.",
+          "Bij strengere browsers, complexe stacks of wanneer je first-party data wilt stabiliseren. Ik adviseer op basis van risico en ROI.",
       },
       Q.start,
       Q.meet,
@@ -238,14 +238,14 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Leveren jullie alleen strategy of ook uitvoering?",
+        question: "Lever je alleen strategy of ook uitvoering?",
         answer:
           "Beide: van merkstory tot visuele templates. Afgestemd op je web-build en campagneproces, zodat alles één geheel wordt.",
       },
       {
         question: "Moet ik al een logo hebben?",
         answer:
-          "Nee. Soms hergebruiken we wat werkt, soms breken we bewust met het oude. We beginnen bij positionering, niet bij 'even een icoon'.",
+          "Nee. Soms hergebruik ik wat werkt, soms breek ik bewust met het oude. Ik begin bij positionering, niet bij 'even een icoon'.",
       },
       Q.remote,
     ],
@@ -259,14 +259,14 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Leveren jullie ontwerp-specs voor developers?",
+        question: "Lever je ontwerp-specs voor developers?",
         answer:
           "Ja. Met componenten, states, spacing en specificaties zodat build voorspelbaar blijft. Of ik bouw het zelf from scratch, dan zit design en code al op één lijn.",
       },
       {
-        question: "Ontwerpen jullie alleen, of bouwen jullie ook?",
+        question: "Ontwerp je alleen, of bouw je ook?",
         answer:
-          "Beide. Vaak ontwerp én bouw ik in één lijn: wireframes, specs, Next.js of Shopify. Geen estafette tussen designer en developer die elkaar niet snappen.",
+          "Beide. Vaak ontwerp én bouw ik in één lijn: wireframes, specs, Next.js of Shopify. Eén lijn van ontwerp tot code, zonder estafette tussen designer en developer.",
       },
       Q.meet,
     ],
@@ -281,7 +281,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Framer Motion of CSS-only?",
         answer:
-          "Hangt van stack en onderhoud af. We kiezen wat je team langdurig kan dragen.",
+          "Hangt van stack en onderhoud af. Ik kies wat je team langdurig kan dragen.",
       },
       Q.start,
       Q.remote,
@@ -296,9 +296,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Leveren jullie ook UGC-stijl content?",
+        question: "Lever je ook UGC-stijl content?",
         answer:
-          "We richten op wat past bij je merk. Soms strak studio, soms authentieker. We stemmen af op platform en doelgroep.",
+          "Ik richt op wat past bij je merk. Soms strak studio, soms authentieker. Afgestemd op platform en doelgroep.",
       },
       Q.meet,
     ],
@@ -312,21 +312,21 @@ export const dienstExtras: Record<string, DienstExtra> = {
     faq: [
       Q.start,
       {
-        question: "Doen jullie alleen design of ook de strategie en opzet?",
+        question: "Doe je alleen design of ook de strategie en opzet?",
         answer:
           "Beide. Van welke mails je wanneer stuurt tot hoe ze eruitzien en technisch worden opgezet in je e-mailtool.",
       },
       {
-        question: "Kunnen jullie koppelen met Klaviyo of Shopify Mail?",
+        question: "Kun je koppelen met Klaviyo of Shopify Mail?",
         answer:
-          "Ja. We werken met de tools die jij al gebruikt, of adviseren wat het beste past bij je webshop of site.",
+          "Ja. Ik werk met de tools die jij al gebruikt, of adviseer wat het beste past bij je webshop of site.",
       },
       Q.remote,
     ],
   },
   strategie: {
     outcomes: [
-      "Eén plan met kanalen, budget en volgorde. Geen losse acties meer",
+      "Eén plan met kanalen, budget en volgorde. Alles op één lijn",
       "Onderbouwing met jouw cijfers, niet met onderbuikgevoel",
       "Maandelijkse bijsturing: meer naar wat werkt, weg met wat niet werkt",
     ],
@@ -334,7 +334,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Krijg ik alleen een plan of ook de uitvoering?",
         answer:
-          "Beide kan. Het plan staat op zichzelf, maar de meeste klanten laten ons ook uitvoeren. Dan blijft de strategie geen papier en zie je elke maand wat het oplevert.",
+          "Beide kan. Het plan staat op zichzelf, maar de meeste klanten laten mij ook uitvoeren. Dan blijft de strategie geen papier en zie je elke maand wat het oplevert.",
       },
       Q.start,
       Q.meet,
@@ -370,7 +370,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Werkt lokale SEO ook zonder fysieke winkel?",
         answer:
-          "Ja, ook als je aan huis werkt of een servicegebied hebt. We richten je profiel en pagina's dan in op de regio's waar je klanten zitten.",
+          "Ja, ook als je aan huis werkt of een servicegebied hebt. Ik richt je profiel en pagina's in op de regio's waar je klanten zitten.",
       },
       Q.start,
       Q.meet,
@@ -384,9 +384,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Schrijven jullie de content zelf?",
+        question: "Schrijf je de content zelf?",
         answer:
-          "Ja, in jouw tone of voice en afgestemd op wat je klant zoekt. Jij controleert op vakinhoud, wij zorgen dat het scoort en prettig leest.",
+          "Ja, in jouw tone of voice en afgestemd op wat je klant zoekt. Jij controleert op vakinhoud, ik zorg dat het scoort en prettig leest.",
       },
       Q.start,
       Q.remote,
@@ -400,7 +400,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Wat doen jullie met negatieve reviews?",
+        question: "Wat doe je met negatieve reviews?",
         answer:
           "Netjes en snel reageren, en ervan leren. Een goed afgehandelde kritische review wekt vaak meer vertrouwen dan tien juichende. Verwijderen kan alleen als een review echt tegen de regels ingaat.",
       },
@@ -418,7 +418,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Wat is een realistisch startbudget?",
         answer:
-          "Dat hangt af van je markt en marge. We rekenen vooraf uit wat een klant mag kosten en starten met een budget waarmee we snel kunnen leren. Meestal kun je binnen enkele weken zien of het kanaal voor jou werkt.",
+          "Dat hangt af van je markt en marge. Ik reken vooraf uit wat een klant mag kosten en start met een budget waarmee ik snel kan leren. Meestal kun je binnen enkele weken zien of het kanaal voor jou werkt.",
       },
       Q.start,
       Q.meet,
@@ -432,9 +432,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Hebben jullie ook de content voor de advertenties?",
+        question: "Heb je ook de content voor de advertenties?",
         answer:
-          "Ja. We maken creatives zelf of zetten UGC en creators in. Vaak is de content het verschil tussen een campagne die rendeert en één die geld kost.",
+          "Ja. Ik maak creatives zelf of zet UGC en creators in. Vaak is de content het verschil tussen een campagne die rendeert en één die geld kost.",
       },
       Q.start,
       Q.meet,
@@ -448,9 +448,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Moeten we op elk platform zitten?",
+        question: "Moet ik op elk platform zitten?",
         answer:
-          "Nee. Beter twee kanalen goed dan vijf halfslachtig. We kiezen de plekken waar jouw klant echt zit en waar je het ritme kunt volhouden.",
+          "Nee. Beter twee kanalen goed dan vijf halfslachtig. Ik kies de plekken waar jouw klant echt zit en waar je het ritme kunt volhouden.",
       },
       Q.start,
       Q.remote,
@@ -466,7 +466,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Wat is het verschil tussen UGC en influencer marketing?",
         answer:
-          "Bij UGC koop je de content: een creator maakt video's die jij inzet in je eigen advertenties. Bij influencer marketing koop je ook het bereik van de creator zelf. Vaak combineren we beide.",
+          "Bij UGC koop je de content: een creator maakt video's die jij inzet in je eigen advertenties. Bij influencer marketing koop je ook het bereik van de creator zelf. Vaak combineer ik beide.",
       },
       Q.start,
       Q.meet,
@@ -480,9 +480,9 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "Hoe voorkomen jullie nep-volgers en tegenvallend bereik?",
+        question: "Hoe voorkom je nep-volgers en tegenvallend bereik?",
         answer:
-          "We beoordelen accounts op echt engagement en eerdere samenwerkingen, niet op volgersaantallen. En we meten elke samenwerking met eigen codes of links, zodat het resultaat zichtbaar is.",
+          "Ik beoordeel accounts op echt engagement en eerdere samenwerkingen, niet op volgersaantallen. En ik meet elke samenwerking met eigen codes of links, zodat het resultaat zichtbaar is.",
       },
       Q.start,
       Q.meet,
@@ -498,7 +498,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
       {
         question: "Kannibaliseert Bol of Amazon mijn eigen webshop niet?",
         answer:
-          "Dat risico bestaat en daarom stemmen we assortiment en prijsstrategie af. Vaak bereik je op marketplaces klanten die je eigen shop nooit gevonden hadden.",
+          "Dat risico bestaat en daarom stem ik assortiment en prijsstrategie af. Vaak bereik je op marketplaces klanten die je eigen shop nooit gevonden hadden.",
       },
       Q.start,
       Q.meet,

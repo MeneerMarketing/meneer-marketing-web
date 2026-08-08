@@ -1,6 +1,6 @@
 /**
  * Strategische boodschap per dienst: benadrukt maatwerk, niche-denken en allround-expertise.
- * Geen copy-paste trajecten. Elke opdracht start met context.
+ * Maatwerk per opdracht. Elke opdracht start met context.
  */
 
 export interface StrategicScenario {
@@ -13,20 +13,20 @@ export interface DienstStrategicContent {
   deepTitle: string;
   deepLead: string;
   deepExtended: string;
-  /** Waar we bij intake op letten (transparant voor de klant) */
+  /** Waar ik bij intake op let (transparant voor de klant) */
   signals: string[];
   scenarios: StrategicScenario[];
 }
 
 const PILLAR_LENS: Record<string, string> = {
   Strategie:
-    "Binnen Strategie start ik bij jouw cijfers, niet bij een standaardaanpak. Waar komt je omzet vandaan, waar lekt hij weg, en welke kanalen passen bij jouw marge en klant? Pas als dat helder is, gaan we bouwen en budget uitgeven. Zo weet je zeker dat elke volgende stap de slimste is.",
+    "Binnen Strategie start ik bij jouw cijfers, niet bij een standaardaanpak. Waar komt je omzet vandaan, waar lekt hij weg, en welke kanalen passen bij jouw marge en klant? Pas als dat helder is, bouw ik en zet ik budget in. Zo weet je zeker dat elke volgende stap de slimste is.",
   Bouwen:
-    "Binnen Bouwen kijk ik niet alleen naar ‘een site’ of ‘een shop’, maar naar hoe jouw bedrijf over vijf jaar nog steeds snel kan groeien. Dat bepaalt welk platform we kiezen, hoe we koppelingen ontwerpen en waar we problemen voorkomen. Zo sluit alles aan op hoe jij echt werkt, niet op een standaard template.",
+    "Binnen Bouwen kijk ik niet alleen naar ‘een site’ of ‘een shop’, maar naar hoe jouw bedrijf over vijf jaar nog steeds snel kan groeien. Dat bepaalt welk platform ik kies, hoe ik koppelingen ontwerp en waar ik problemen voorkom. Zo sluit alles aan op hoe jij echt werkt, niet op een standaard template.",
   Vindbaarheid:
     "Binnen Vindbaarheid denk ik verder dan Google alleen: je klant zoekt ook via ChatGPT, Maps en reviews. Ik bouw de keten als geheel: content die antwoord geeft, techniek die klopt en autoriteit die groeit. Organisch eerst, want elke positie die je organisch wint, maakt je advertenties daarna goedkoper.",
   Campagnes:
-    "Binnen Campagnes gaat geen euro budget aan voordat de meting klopt en de landingspagina zijn werk doet. Daarna kiezen we de kanalen die bij jouw marge passen: Google, Meta, creators of marketplaces. We testen klein, schalen wat werkt en snijden wat ruis geeft. Zonder sentiment.",
+    "Binnen Campagnes gaat geen euro budget aan voordat de meting klopt en de landingspagina zijn werk doet. Daarna kies ik de kanalen die bij jouw marge passen: Google, Meta, creators of marketplaces. Ik test klein, schaal wat werkt en snijd wat ruis geeft. Zonder sentiment.",
   Behoud:
     "Binnen Behoud zoek ik de omzet die je al betaald hebt: klanten die eerder kochten en alleen een goede reden nodig hebben om terug te komen. E-mail, retentie en de systemen erachter werken samen, zodat de tweede aankoop makkelijker wordt dan de eerste. En jouw team minder handwerk heeft.",
 };
@@ -35,11 +35,11 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
   Strategie: [
     {
       title: "Alles tegelijk, niks af",
-      body: "Je doet van alles een beetje: wat ads, wat social, soms een mail. Dan bepalen we eerst welke twee kanalen echt renderen en maken die af.",
+      body: "Je doet van alles een beetje: wat ads, wat social, soms een mail. Dan bepaal ik eerst welke twee kanalen echt renderen en maak die af.",
     },
     {
       title: "Groei stagneert",
-      body: "Wat eerst werkte, werkt niet meer. Dan kijken we naar de cijfers: zit het probleem in verkeer, conversie of herhaalaankopen?",
+      body: "Wat eerst werkte, werkt niet meer. Dan kijk ik naar de cijfers: zit het probleem in verkeer, conversie of herhaalaankopen?",
     },
     {
       title: "Nieuwe markt of product",
@@ -63,15 +63,15 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
   Vindbaarheid: [
     {
       title: "Onzichtbaar in je markt",
-      body: "Concurrenten staan overal bovenaan, jij niet. Dan bouwen we structuur en content op waar jouw klant echt op zoekt.",
+      body: "Concurrenten staan overal bovenaan, jij niet. Dan bouw ik structuur en content op waar jouw klant echt op zoekt.",
     },
     {
       title: "Niet in AI-antwoorden",
-      body: "Klanten vragen ChatGPT om advies in jouw branche. Dan zorgen we dat jouw bedrijf het antwoord is, vóór je concurrent het doorheeft.",
+      body: "Klanten vragen ChatGPT om advies in jouw branche. Dan zorg ik dat jouw bedrijf het antwoord is, vóór je concurrent het doorheeft.",
     },
     {
       title: "Lokaal winnen",
-      body: "Je klanten komen uit de regio maar vinden je niet. Dan pakken we Google Business, Maps en lokale pagina's als eerste.",
+      body: "Je klanten komen uit de regio maar vinden je niet. Dan pak ik Google Business, Maps en lokale pagina's als eerste.",
     },
   ],
   Campagnes: [
@@ -81,25 +81,25 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
     },
     {
       title: "Creatives verslijten",
-      body: "Je campagnes draaien, maar de content raakt op. Dan zetten we UGC en creators in voor een stroom verse varianten.",
+      body: "Je campagnes draaien, maar de content raakt op. Dan zet ik UGC en creators in voor een stroom verse varianten.",
     },
     {
       title: "Nieuw kanaal erbij",
-      body: "Je wilt van één kanaal naar meer: Meta erbij, of Bol en Amazon. Dan testen we klein en schalen op basis van cijfers.",
+      body: "Je wilt van één kanaal naar meer: Meta erbij, of Bol en Amazon. Dan test ik klein en schaal op basis van cijfers.",
     },
   ],
   Behoud: [
     {
       title: "Eenmalige kopers",
-      body: "Klanten kopen één keer en verdwijnen. Dan bouwen we opvolging en mailreeksen die de tweede aankoop vanzelfsprekend maken.",
+      body: "Klanten kopen één keer en verdwijnen. Dan bouw ik opvolging en mailreeksen die de tweede aankoop vanzelfsprekend maken.",
     },
     {
       title: "Orderstress",
-      body: "Orders hopen op en spreadsheets raken vol. Dan automatiseren we eerst de pijnlijkste stap. Met zichtbare tijdwinst binnen weken.",
+      body: "Orders hopen op en spreadsheets raken vol. Dan automatiseer ik eerst de pijnlijkste stap. Met zichtbare tijdwinst binnen weken.",
     },
     {
       title: "Support & FAQ",
-      body: "Team herhaalt dezelfde antwoorden. Dan combineren we kennisbank, bot en escalatie zodat mensen alleen waardevolle cases zien.",
+      body: "Team herhaalt dezelfde antwoorden. Dan combineer ik kennisbank, bot en escalatie zodat mensen alleen waardevolle cases zien.",
     },
   ],
 };
@@ -108,7 +108,7 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
   "shopify-enterprise": [
     {
       title: "Van template naar maatwerk",
-      body: "Je zit vast in een theme uit de store dat nergens op lijkt wat je wilt. Dan bouwen we from scratch: eigen secties, eigen flow, jouw merk.",
+      body: "Je zit vast in een theme uit de store dat nergens op lijkt wat je wilt. Dan bouw ik from scratch: eigen secties, eigen flow, jouw merk.",
     },
     {
       title: "Schaal-up e-commerce",
@@ -122,21 +122,21 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
   "web-apps": [
     {
       title: "B2B-portaal voor je klanten",
-      body: "Salons, dealers of partners loggen in en bestellen zelf. SkinComplete deed het zo: custom in Shopify, 24/7, zonder mailtjes en Excel.",
+      body: "Salons, dealers of partners loggen in en bestellen zelf. Ik map rollen, prijzen en rechten voordat er design is. Daarna bouw ik het portaal in Shopify, 24/7, zonder mailtjes en Excel.",
     },
     {
       title: "Boekingsapp met agenda",
-      body: "Hills Pilates: klanten boeken lessen in de app, het team ziet alles op één plek. Website, e-mail en app die samenwerken.",
+      body: "Klanten boeken lessen in de app, het team ziet alles op één plek. Website, e-mail en app die samenwerken, met agenda en rechten die per rol kloppen.",
     },
     {
       title: "Interne tool die adoptie haalt",
-      body: "Je team gebruikt het echt, omdat stappen logisch zijn en schermen helder. Geen project dat na launch in een la verdwijnt.",
+      body: "Je team gebruikt het echt, omdat stappen logisch zijn en schermen helder. Een product dat na launch blijft leven, niet in een la verdwijnt.",
     },
   ],
   optimalisatie: [
     {
       title: "Trage productpagina's",
-      body: "Je ads draaien, maar landingspagina's of PDP's laden traag. Dan pakken we LCP en INP op de templates die omzet dragen, niet alleen de homepage.",
+      body: "Je ads draaien, maar landingspagina's of PDP's laden traag. Dan pak ik LCP en INP op de templates die omzet dragen, niet alleen de homepage.",
     },
     {
       title: "Content & SEO-machine",
@@ -150,11 +150,11 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
   webdesign: [
     {
       title: "Checkout of PDP die niet converteert",
-      body: "Bezoekers komen binnen via Google Ads of SEO, maar kopen niet. Dan kijken we naar hiërarchie, trust en mobiele frictie op de schermen die omzet moeten dragen.",
+      body: "Bezoekers komen binnen via Google Ads of SEO, maar kopen niet. Dan kijk ik naar hiërarchie, trust en mobiele frictie op de schermen die omzet moeten dragen.",
     },
     {
       title: "Portaal waar niemand mee wil werken",
-      body: "Je team of klanten loggen in en raken kwijt. Dan herontwerpen we schermen en rollen zodat de volgende stap vanzelfsprekend is. SkinComplete en Hills Pilates begonnen zo.",
+      body: "Je team of klanten loggen in en raken kwijt. Dan herontwerp ik schermen en rollen zodat de volgende stap vanzelfsprekend is.",
     },
     {
       title: "Rebrand plus nieuwe site",
@@ -164,29 +164,29 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
   animaties: [
     {
       title: "Site voelt statisch na rebrand",
-      body: "Je nieuwe huisstijl staat, maar scrollen voelt als een PDF. Dan geven we key secties gerichte motion: reveals, hover-states en overgangen die bij je merk passen.",
+      body: "Je nieuwe huisstijl staat, maar scrollen voelt als een PDF. Dan geef ik key secties gerichte motion: reveals, hover-states en overgangen die bij je merk passen.",
     },
     {
       title: "Te veel gimmicks",
-      body: "Parallax overal, alles beweegt, niemand koopt. Dan trimmen we terug naar motion met functie en een performance-budget op je omzetpagina's.",
+      body: "Parallax overal, alles beweegt, niemand koopt. Dan trim ik terug naar motion met functie en een performance-budget op je omzetpagina's.",
     },
     {
       title: "Premium product, saaie PDP",
-      body: "SkinComplete en BestRest verkopen op vertrouwen en detail. Dan vertelt motion het productverhaal zonder je laadtijd of Core Web Vitals te slopen.",
+      body: "Premium producten verkopen op vertrouwen en detail. Dan vertelt motion het productverhaal zonder je laadtijd of Core Web Vitals te slopen.",
     },
   ],
   branding: [
     {
       title: "Site en ads voelen anders",
-      body: "Je homepage is strak, je Meta Ads nog uit 2019. Dan trekken we één lijn: kleur, typo en beeld over alle kanalen.",
+      body: "Je homepage is strak, je Meta Ads nog uit 2019. Dan trek ik één lijn: kleur, typo en beeld over alle kanalen.",
     },
     {
       title: "B2B zonder saai te worden",
-      body: "Professional hoeft niet grijs en generiek. BestRest en SkinComplete hebben elk een eigen wereld die vertrouwen uitstraalt in hun niche.",
+      body: "Professional hoeft niet grijs en generiek. Elk merk verdient een eigen wereld die vertrouwen uitstraalt in zijn niche.",
     },
     {
       title: "Rebrand met live site",
-      body: "Nieuwe identiteit terwijl je doorverkoopt. We plannen rollout zodat web, mail en campagnes niet wekenlang uit elkaar lopen.",
+      body: "Nieuwe identiteit terwijl je doorverkoopt. Ik plan de rollout zodat web, mail en campagnes niet wekenlang uit elkaar lopen.",
     },
   ],
 };
@@ -200,7 +200,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
       "Soms is een strak OS 2.0-theme from scratch de slimste route. Soms headless of een hybride met maatwerk front. Ik laat je zien waarom, wat het betekent voor onderhoud, SEO en snelheid. Zo koop je geen template, maar een shop die past bij jouw volgende fase.",
     signals: [
       "Hoe complex is je catalogus (varianten, prijzen, regio's)?",
-      "Welke apps zijn echt kritisch. En welke vervangen we door maatwerk in het theme?",
+      "Welke apps zijn echt kritisch. En welke vervang ik door maatwerk in het theme?",
       "Waar zit je omzet: SEO, ads, e-mail. En wat verwacht je storefront daarvoor?",
       "Hoe ziet je release-proces eruit (staging, QA, rollback)?",
     ],
@@ -210,7 +210,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "Ik bouw geen kant-en-klare templates. Elke site start op een leeg canvas: design, structuur en code passend bij jouw merk, doelen en team. Of het nu een bedrijfswebsite, landingspagina of portal is.",
     deepExtended:
-      "Snelheid en veiligheid zijn standaard. De prioriteit verschilt wel: een webshop heeft andere eisen dan een site met veel content of zware formulieren. Ik leg uit welke keuzes we maken, hoe je zelf content kunt beheren en hoe we voorkomen dat je over drie jaar vastzit aan obscure oplossingen.",
+      "Snelheid en veiligheid zijn standaard. De prioriteit verschilt wel: een webshop heeft andere eisen dan een site met veel content of zware formulieren. Ik leg uit welke keuzes ik maak, hoe je zelf content kunt beheren en hoe ik voorkom dat je over drie jaar vastzit aan obscure oplossingen.",
     signals: [
       "Wie past content aan, en hoe vaak?",
       "Welke koppelingen (CRM, webshop, boekhouding) zijn must-haves?",
@@ -221,18 +221,18 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   "web-apps": {
     deepTitle: "Webapps & portalen from scratch: productdenken, geen eenmalig project",
     deepLead:
-      "Portals en apps falen als ze alleen mooi gebouwd zijn maar niet aansluiten op rollen, rechten en datastromen. Bij SkinComplete zien salons andere prijzen dan jij. Bij Hills Pilates boeken klanten alleen hun eigen lessen. Dat map ik voordat er design is.",
+      "Portals en apps falen als ze alleen mooi gebouwd zijn maar niet aansluiten op rollen, rechten en datastromen. Dealers zien andere prijzen dan jij. Klanten boeken alleen hun eigen lessen. Dat map ik voordat er design is.",
     deepExtended:
       "Technisch bouw ik in Next.js met nette auth en API's. Business-wise vertaal ik het naar schermen die vertrouwen geven en stappen die logisch zijn. Zodat je team en klanten het echt gebruiken na launch, niet alleen bij de demo.",
     signals: [
       "Welke rollen doen wat, en welke data mogen ze zien?",
       "Moet het realtime, batch of offline kunnen werken?",
-      "Welke systemen blijven even staan, en hoe koppelen we veilig?",
+      "Welke systemen blijven even staan, en hoe koppel ik veilig?",
       "Wat is succes na 90 dagen: adoptie, minder handwerk, meer omzet?",
     ],
   },
   optimalisatie: {
-    deepTitle: "Snelheid: geen score-jacht, maar conversie en crawlruimte",
+    deepTitle: "Snelheid: conversie en crawlruimte, niet score-jacht",
     deepLead:
       "Een goede optimalisatie start met meten op de pagina's die geld of autoriteit dragen. Niet met een willekeurige homepage-score. Ik koppel LCP en INP aan templates, landingsverkeer, Google Ads en SEO-prioriteiten.",
     deepExtended:
@@ -260,9 +260,9 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   adverteren: {
     deepTitle: "Ads: budget naar het juiste verhaal op het juiste moment",
     deepLead:
-      "B2B met lange deals vraagt andere campagnes dan D2C met impulsaankopen. Ik koppel accountstructuur aan marge, inventaris en wat je site echt kan uitdragen. Geen losse creaties zonder landingspagina.",
+      "B2B met lange deals vraagt andere campagnes dan D2C met impulsaankopen. Ik koppel accountstructuur aan marge, inventaris en wat je site echt kan uitdragen. Creaties en landingspagina's als één geheel.",
     deepExtended:
-      "We sturen op learning speed: welke audiences en hooks leveren snel inzicht? Daarna schalen we wat werkt en snijden we wat ruis geeft. Inclusief samenwerking met SEO/CRO als die de bottleneck is.",
+      "Ik stuur op learning speed: welke audiences en hooks leveren snel inzicht? Daarna schaal ik wat werkt en snijd wat ruis geeft. Inclusief samenwerking met SEO/CRO als die de bottleneck is.",
     signals: [
       "Wat is je break-even CPA of ROAS. En hoe zeker is je marge?",
       "Welke landingspagina’s zijn ‘campaign-ready’?",
@@ -288,7 +288,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "Een leadmagnet voor accountants ziet er anders uit dan voor e-commerce merchants of SaaS-trialers. Ik ontwerp aanbod, landingspagina en opvolging als één keten. Met scoring waar het zinvol is.",
     deepExtended:
-      "Ik koppel leads aan CRM-automatisering zodat sales geen inbox-chaos krijgt. En we meten wat telt: niet alleen CPL, maar ook kwaliteit en doorlooptijd naar deal.",
+      "Ik koppel leads aan CRM-automatisering zodat sales geen inbox-chaos krijgt. En ik meet wat telt: niet alleen CPL, maar ook kwaliteit en doorlooptijd naar deal.",
     signals: [
       "Wie qualificeert leads. Sales, founder, SDR?",
       "Welke data vraag je wanneer (progressive profiling)?",
@@ -299,7 +299,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   automatisering: {
     deepTitle: "Automatisering: robuust waar het pijn doet",
     deepLead:
-      "Ik automatiseer niet alles tegelijk. We beginnen waar handwerk het meest zeer doet of fouten maakt. En bouwen automatisering met logging en fallbacks zodat operations niet op zwart zaad zit.",
+      "Ik automatiseer niet alles tegelijk. Ik begin waar handwerk het meest zeer doet of fouten maakt. En bouw automatisering met logging en fallbacks zodat operations niet op zwart zaad zit.",
     deepExtended:
       "Tooling kies ik op basis van jouw hosting, budget en team-skill: soms is n8n self-hosted logisch, andere keren Make sneller. Transparantie over trade-offs hoort daarbij.",
     signals: [
@@ -312,9 +312,9 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   workflows: {
     deepTitle: "E-commerce workflows: keten denken, niet stapjes plakken",
     deepLead:
-      "Van betaalde order tot retour: elke stap heeft edge cases (deels verzonden, gedeeltelijke refund, voorraad op meerdere locaties). Ik teken je keten uit voordat we automatiseren.",
+      "Van betaalde order tot retour: elke stap heeft edge cases (deels verzonden, gedeeltelijke refund, voorraad op meerdere locaties). Ik teken je keten uit voordat ik automatiseer.",
     deepExtended:
-      "Zo voorkom je ‘bijna goed’ mails naar klanten of voorraad die niet klopt. En je team weet wat er gebeurt als een koppeling uitvalt. Geen paniek, wel een duidelijk playbook.",
+      "Zo voorkom je ‘bijna goed’ mails naar klanten of voorraad die niet klopt. En je team weet wat er gebeurt als een koppeling uitvalt. Een duidelijk playbook, zodat je rustig kunt handelen.",
     signals: [
       "Hoe ziet je fulfilment eruit (eigen magazijn, 3PL, dropship)?",
       "Welke uitzonderingen komen wekelijks voor?",
@@ -327,7 +327,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "Een bot die foute antwoorden geeft is erger dan geen bot. Ik train op jouw echte kennisbronnen en ontwerp escalatie zodat mensen complexe cases zien. Met context.",
     deepExtended:
-      "We meten welke vragen binnenkomen, waar gebruikers afhaken en wat tijd bespaart. Privacy en datastromen regelen we vanaf het begin, niet als patch.",
+      "Ik meet welke vragen binnenkomen, waar gebruikers afhaken en wat tijd bespaart. Privacy en datastromen regel ik vanaf het begin, niet als patch.",
     signals: [
       "Welke vragen komen het vaakst bij support of sales?",
       "Welke documenten en feeds zijn leidend en up-to-date?",
@@ -353,16 +353,16 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "Positionering is geen woordenlijst. Het is keuzes in toon, kleur en vorm die overal terugkomen. Ik vertaal strategie naar richtlijnen die je team, partners en campagnes kunnen volgen.",
     deepExtended:
-      "Zo voorkom je dat je site strak is maar je Google Ads of Meta Ads nog 'oud' aanvoelen. Eenheid bouwt vertrouwen, vooral bij hogere tickets, B2B of premium producten zoals bij BestRest en SkinComplete.",
+      "Zo voorkom je dat je site strak is maar je Google Ads of Meta Ads nog 'oud' aanvoelen. Eenheid bouwt vertrouwen, vooral bij hogere tickets, B2B of premium producten.",
     signals: [
       "Wie zijn je echte alternatieven in het hoofd van de klant?",
       "Welke emotie of belofte moet je merk dragen (rust, energie, autoriteit)?",
       "Welke kanalen zijn het zichtbaarst. En waar breekt consistentie nu?",
-      "Heb je al merkassets die we moeten respecteren of juist doorbreken?",
+      "Heb je al merkassets die ik moet respecteren of juist doorbreken?",
     ],
   },
   webdesign: {
-    deepTitle: "UI/UX: conversie is context. Geen one-size template",
+    deepTitle: "UI/UX: conversie is context, maatwerk per niche",
     deepLead:
       "Een checkout voor luxe goederen vraagt andere hiërarchie dan een snelle SaaS-trial of een B2B-formulier. Ik ontwerp schermen vanuit jouw klantreis, niet vanuit een Dribbble-shot.",
     deepExtended:
@@ -405,7 +405,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "E-mail werkt als je de juiste mail op het juiste moment stuurt. Ik help met strategie, opzet en design: van je eerste nieuwsbrief tot automatische welkomstmails, herinnermails en opvolging na aankoop.",
     deepExtended:
-      "Of je nu Klaviyo, Shopify Mail of een andere tool gebruikt: ik zorg dat je mails er professioneel uitzien, logisch doorlopen en aansluiten op je merk. Geen spam, wel mails die klanten waarderen en die verkopen ondersteunen.",
+      "Of je nu Klaviyo, Shopify Mail of een andere tool gebruikt: ik zorg dat je mails er professioneel uitzien, logisch doorlopen en aansluiten op je merk. Mails die klanten waarderen en verkopen ondersteunen.",
     signals: [
       "Welke mails stuur je nu al (welkom, nieuwsbrief, herinnering)?",
       "Welke e-mailtool gebruik je (Klaviyo, Shopify, Mailchimp)?",
@@ -416,9 +416,9 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   strategie: {
     deepTitle: "Strategie: het plan dat bepaalt of de rest werkt",
     deepLead:
-      "Voor BestRest bedachten we een eigen aanpak per product in plaats van één generieke funnel. Dat is de kern: jouw markt, marge en klant bepalen de route. Niet het trucje dat bij een ander werkte.",
+      "Jouw markt, marge en klant bepalen de route. Niet het trucje dat bij een ander werkte. Per product of dienst kan de aanpak anders zijn dan één generieke funnel.",
     deepExtended:
-      "Het plan is pas af als het uitvoerbaar is: wie doet wat, wat kost het en wanneer zie je resultaat. Omdat ik zelf bouw en uitvoer, weet ik wat realistisch is. Geen plan van twintig kanalen waarvan er achttien blijven liggen.",
+      "Het plan is pas af als het uitvoerbaar is: wie doet wat, wat kost het en wanneer zie je resultaat. Omdat ik zelf bouw en uitvoer, weet ik wat realistisch is. Een haalbaar aantal kanalen dat je echt oppakt.",
     signals: [
       "Waar komt je omzet nu vandaan. En weet je dat zeker uit data?",
       "Wat mag een nieuwe klant je kosten, gezien je marge?",
@@ -461,7 +461,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     signals: [
       "Welke vragen stellen klanten vóór ze bij je kopen?",
       "Welke content heb je al. En wat doet die nu echt?",
-      "Wie levert de vakkennis: jij, je team of wij samen?",
+      "Wie levert de vakkennis: jij, je team of ik schrijf het met jou?",
       "Waar moet content naartoe leiden: aanvraag, verkoop, vertrouwen?",
     ],
   },
@@ -483,7 +483,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     deepLead:
       "Het moment dat iemand zoekt naar wat jij verkoopt is het beste marketingmoment dat bestaat. Maar Google verdient aan je klikken, niet aan je omzet. Ik bouw campagnes die dat verschil bewaken.",
     deepExtended:
-      "Dat betekent: een structuur die je snapt, zoektermen uitsluiten die nooit converteren en meting die klopt tot aan de verkoop. Pas als de cijfers kloppen, gaan we schalen. Niet andersom.",
+      "Dat betekent: een structuur die je snapt, zoektermen uitsluiten die nooit converteren en meting die klopt tot aan de verkoop. Pas als de cijfers kloppen, schaal ik. Niet andersom.",
     signals: [
       "Wat mag een klant je kosten, gezien je marge?",
       "Welke zoektermen leveren nu omzet. En welke alleen kosten?",
@@ -577,7 +577,7 @@ function fallbackSlugContent(): Omit<DienstStrategicContent, "scenarios"> {
     deepLead:
       "Deze dienst wordt per klant anders ingevuld: ik start met jouw markt, stack en doelen. Niet met een standaard pakket.",
     deepExtended:
-      "In een kort gesprek breng ik scope, risico’s en quick wins in kaart. Daarna krijg je een voorstel waarin duidelijk is wat we bouwen, meten en opleveren. Transparant en zonder jargon waar het niet nodig is.",
+      "In een kort gesprek breng ik scope, risico’s en quick wins in kaart. Daarna krijg je een voorstel waarin duidelijk is wat ik bouw, meet en oplever. Transparant en zonder jargon waar het niet nodig is.",
     signals: [
       "Wat wil je over 90 dagen bereikt zien?",
       "Welke systemen en teams raken we?",
@@ -606,7 +606,7 @@ export function getDienstStrategic(
 }
 
 export const STRATEGY_MANIFESTO = {
-  title: "Geen standaardpakketten. Wél een plan op maat",
+  title: "Plan op maat voor jouw situatie",
   paragraphs: [
     "Ik geloof niet dat hetzelfde plan voor elke onderneming werkt. Wat een webshop nodig heeft, verschilt van een B2B-dienstverlener of een lokale retailer. Zelfs als ze allemaal ‘een site’ willen.",
     "Daarom start elk traject met luisteren: wie is je klant, waar zit je winst, welke systemen gebruik je, en waar verlies je nu tijd of omzet? Pas daarna kies ik welke diensten, tools en volgorde het beste passen.",
@@ -618,7 +618,7 @@ export const STRATEGY_MANIFESTO = {
 export const STRATEGY_SIGNATURE_INSIGHTS = [
   {
     title: "Elke markt vraagt om een eigen route",
-    body: "Webshop, B2B, retail of SaaS: zelfs met dezelfde wens (‘een site’) hoort een andere aanpak. Geen kopie van de vorige klant.",
+    body: "Webshop, B2B, retail of SaaS: zelfs met dezelfde wens (‘een site’) hoort een andere aanpak. Jouw route, niet een kopie van de vorige klant.",
   },
   {
     title: "Eerst begrijpen, dan pas kiezen",
