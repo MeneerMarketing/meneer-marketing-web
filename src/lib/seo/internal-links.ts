@@ -222,6 +222,18 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
     { slug: "vindbaarheid-ai", label: "Vindbaarheid in AI" },
     { slug: "seo-specialist", label: "SEO specialist" },
   ],
+  "ai-zoek-vindbaarheid-chatgpt": [
+    { slug: "vindbaarheid-ai", label: "Vindbaarheid in AI" },
+    { slug: "seo-specialist", label: "SEO specialist" },
+  ],
+  "ai-content-bulk-onzichtbaar": [
+    { slug: "seo-specialist", label: "SEO specialist" },
+    { slug: "vindbaarheid-ai", label: "Vindbaarheid in AI" },
+  ],
+  "shopify-performance-roas": [
+    { slug: "shopify-expert", label: "Shopify expert" },
+    { slug: "webshop-laten-maken", label: "Webshop laten maken" },
+  ],
   "google-ai-overviews-clicks-2026": [
     { slug: "hoger-in-google", label: "Hoger in Google" },
     { slug: "content-marketing-vindbaarheid", label: "Content marketing vindbaarheid" },

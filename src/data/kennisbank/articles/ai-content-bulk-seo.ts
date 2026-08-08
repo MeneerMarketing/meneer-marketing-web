@@ -35,7 +35,7 @@ export const AI_CONTENT_BULK_SEO: KennisbankArticle = {
         "Geen echte ervaring (de E van E-E-A-T): je was er niet bij, je hebt het niet gebouwd, je hebt geen case.",
         "Geen specifieke details: AI houdt van algemeenheden. 'Belangrijk om SEO te doen' is geen informatie.",
         "Dubbele content in je eigen site: vijftig blogs over 'wat is SEO' cannibaliseren elkaar.",
-        "Geen unieke invalshoek: als tien concurrenten hetzelfde prompten, klinken jullie als één stem.",
+        "Geen unieke invalshoek: als tien concurrenten hetzelfde prompten, klinkt iedereen als één stem.",
       ],
     },
     {

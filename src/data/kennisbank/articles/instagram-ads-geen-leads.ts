@@ -6,7 +6,8 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
   description:
     "Waarom mooie creatives niet converteren, wat Meta Ads anders doet dan boosten, en hoe je leads krijgt zonder dansjes te forceren.",
   publishedAt: "2026-07-06",
-  readMinutes: 8,
+  modifiedAt: "2026-08-08",
+  readMinutes: 10,
   category: "campagnes",
   keywords: [
     "instagram ads geen resultaat",
@@ -15,6 +16,23 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     "instagram ads tips",
   ],
   dienstSlugs: ["meta-ads", "social-media", "ugc", "cro"],
+  faqs: [
+    {
+      question: "Waarom leveren mijn Instagram Ads geen leads?",
+      answer:
+        "Meestal faalt de landing, het offer of de pixel. Soms is de creative zonder hook of de doelgroep te breed. Mooi beeld alleen lost zelden een lege inbox op.",
+    },
+    {
+      question: "Is de boost-knop genoeg?",
+      answer:
+        "Voor een event soms. Voor leads en omzet bijna nooit. Echte campagnes met conversiedoelen, audiences en tests geven controle die boosten niet heeft.",
+    },
+    {
+      question: "Moet ik UGC gebruiken?",
+      answer:
+        "Vaak wel. Echte mensen en concrete hooks winnen vaker dan stock met lachen. Niet elke brand moet dansjes doen. Wel: menselijk, snel naar de point.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -26,11 +44,15 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Boost vs echte campagnes",
+      text: "Boost versus echte Meta-campagnes",
     },
     {
       type: "p",
-      text: "De boost-knop is de frikandel van Meta Ads: snel, makkelijk, je weet niet precies wat erin zit. Echte campagnes hebben doel (conversies, leads), pixel events, audiences, exclusions, creatives getest tegen elkaar. Meer werk. Meer controle.",
+      text: "De boost-knop is de frikandel van Meta Ads: snel, makkelijk, je weet niet precies wat erin zit. Echte campagnes hebben een doel (conversies, leads), pixel events, audiences, exclusions en creatives die je tegen elkaar test. Meer werk. Meer controle. Minder verrassingen op de factuur.",
+    },
+    {
+      type: "p",
+      text: "Facebook en Instagram zitten in dezelfde Ads Manager. Apart een Facebook Ads bureau en een Instagram specialist inkopen is vaak dubbel werk. Eén plan, één pixel, één meetlat. Dat is hoe ik Meta aanpak als Meta Ads bureau: funnel eerst, feed later.",
     },
     {
       type: "h2",
@@ -40,35 +62,52 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
       type: "ul",
       items: [
         "Traffic naar homepage in plaats van landings met één CTA.",
-        "Pixel fired niet of op verkeerde event.",
-        "Doelgroep te breed: heel NL, 18-65, interesse 'marketing'.",
-        "Creative zonder hook in eerste seconde. Scroll, weg.",
+        "Pixel fired niet of op het verkeerde event.",
+        "Doelgroep te breed: heel NL, 18-65, interesse marketing.",
+        "Creative zonder hook in de eerste seconde. Scroll, weg.",
         "Geen social proof of offer. Waarom nu? Waarom jij?",
+        "Google en Meta vertellen twee verschillende verhalen.",
       ],
     },
     {
       type: "h2",
-      text: "UGC en authenticiteit",
+      text: "UGC en authenticiteit die wél koopt",
     },
     {
       type: "p",
-      text: "Perfect geproduceerde video kan verliezen van iemand die uitlegt hoe het product haar probleem oploste. Niet elke brand moet dansjes doen. Wel: menselijk, concreet, snel naar de point. UGC past bij veel merken. Stock met lachen niet.",
+      text: "Perfect geproduceerde video kan verliezen van iemand die uitlegt hoe het product haar probleem oploste. Niet elke brand moet dansjes doen. Wel: menselijk, concreet, snel naar de point. UGC past bij veel merken. Stock met geforceerd lachen niet.",
+    },
+    {
+      type: "p",
+      text: "Bij SkinComplete draaide Meta pas hard toen landings en UGC klopten. Views zijn leuk. Orders zijn het doel. BestRest vraagt per productlijn een andere hook. Een generieke reel over alles tegelijk converteert zelden.",
     },
     {
       type: "h2",
-      text: "Combineer met Google",
+      text: "Cold, warm en hot uit elkaar trekken",
     },
     {
       type: "p",
-      text: "Meta vangt demand en bouwt awareness. Google vangt intentie als iemand zoekt. Samen onder één strategie, niet als twee bureaus die elkaar de schuld geven. Remarketing lists gedeeld waar het kan. Eén verhaal op site en ads.",
+      text: "Iemand die je nog nooit zag, heeft ander bewijs nodig dan iemand die je site al bezocht. Cold krijgt hook en probleem. Warm krijgt social proof. Hot krijgt de deal of de checkout-push. Elke laag een eigen creative en bij voorkeur een passende landing. Dat klinkt saai. Het is ook het verschil tussen bereik en pipeline.",
+    },
+    {
+      type: "h2",
+      text: "Combineer met Google Ads",
+    },
+    {
+      type: "p",
+      text: "Meta vangt demand en bouwt bekendheid. Google vangt intentie als iemand zoekt. Samen onder één strategie, niet als twee partijen die elkaar de schuld geven. Remarketing lists gedeeld waar het kan. Eén verhaal op site en ads. Zo betaal je niet twee keer voor dezelfde twijfelaar.",
     },
     {
       type: "callout",
       text: "Een reel die viral gaat in je team is niet hetzelfde als een reel die koopt.",
     },
     {
+      type: "h2",
+      text: "Een test die je deze week kunt draaien",
+    },
+    {
       type: "p",
-      text: "Test één landings, één offer, twee creatives. Meet leads, niet likes. Scale wat converteert. Kill wat mooi is maar stil blijft.",
+      text: "Eén landings, één offer, twee creatives. Conversiedoel aan. Meet leads of aankopen, niet likes. Scale wat converteert. Kill wat mooi is maar stil blijft. Binnen korte tijd weet je of Instagram Ads past of dat je site eerst moet. Die eerlijkheid spaart meer dan nog een maand boosten op hoop.",
     },
   ],
 };
