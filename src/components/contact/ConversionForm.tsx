@@ -145,7 +145,7 @@ const SAMENWERKING_OPTIONS: readonly TileOption[] = [
   {
     value: "retainer",
     label: "Retainer",
-    description: "Langdurig partnerschap. Wij zijn je groei-team.",
+    description: "Langdurig partnerschap. Ik ben je groei-partner.",
     Icon: InfinityIcon,
   },
   {
@@ -315,12 +315,12 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
   samenwerken: {
     subject: "[Samenwerken]",
     bodyTag: "Aanvraag via meneermarketing.nl/samenwerken",
-    intro: "Vertel hoe je wilt samenwerken. Wij mappen scope, ritme en rollen. En reageren met een helder voorstel.",
+    intro: "Vertel hoe je wilt samenwerken. Ik map scope, ritme en rollen. En reageer met een helder voorstel.",
     tiles: [
       {
         key: "samenwerkingsvorm",
         title: "Welke samenwerkingsvorm past?",
-        subtitle: "Kies de vorm die het dichtst bij jouw behoefte zit. We verfijnen later.",
+        subtitle: "Kies de vorm die het dichtst bij jouw behoefte zit. Ik verfijn later.",
         columns: 2,
         options: SAMENWERKING_OPTIONS,
       },
@@ -424,12 +424,12 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
   "schaal-op": {
     subject: "[Schaal op]",
     bodyTag: "Aanvraag via meneermarketing.nl/schaal-op",
-    intro: "Meer volume lost niet alles op. We willen weten waar je grootste hefboom zit.",
+    intro: "Meer volume lost niet alles op. Ik wil weten waar je grootste hefboom zit.",
     tiles: [
       {
         key: "schaalFocus",
         title: "Waar wil je vooral op schalen?",
-        subtitle: "Eén hoofdfocus. We bouwen eromheen.",
+        subtitle: "Eén hoofdfocus. Ik bouw eromheen.",
         columns: 3,
         options: SCHAAL_OPTIONS,
       },
@@ -810,12 +810,12 @@ function SuccessState({ onReset, replyToEmail }: SuccessStateProps) {
       </motion.div>
 
       <h3 className="relative mt-6 text-2xl font-extrabold text-mm-text sm:text-3xl">
-        Bedankt. We hebben je aanvraag ontvangen.
+        Bedankt. Ik heb je aanvraag ontvangen.
       </h3>
       <p className="relative mx-auto mt-3 max-w-md text-sm leading-relaxed text-mm-muted">
-        We reageren binnen één à twee werkdagen op{" "}
+        Ik reageer binnen één à twee werkdagen op{" "}
         <strong className="text-mm-text">{replyToEmail}</strong>. Komt er niets
-        binnen? Check je spam of mail ons op{" "}
+        binnen? Check je spam of mail me op{" "}
         <a
           href={`mailto:${businessEmail}`}
           className="font-semibold text-mm-sky-deep underline-offset-4 hover:underline"

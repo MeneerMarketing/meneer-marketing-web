@@ -41,7 +41,7 @@ export const VINDABAARHEID_SERP: SerpHeroConfig = {
       { url: "concurrent-c.nl", title: "Webshop laten bouwen", snippet: "Snel online met ons pakket..." },
     ],
     [
-      { url: "meneermarketing.nl", title: "Vindbaar in AI-antwoorden · MeneerMarketing", snippet: "Genoemd worden in ChatGPT en Gemini. Wij regelen het.", isYou: true },
+      { url: "meneermarketing.nl", title: "Vindbaar in AI-antwoorden · MeneerMarketing", snippet: "Genoemd worden in ChatGPT en Gemini. Ik regel het.", isYou: true },
       { url: "seo-blog.nl", title: "AI SEO tips 2026", snippet: "10 tricks die je concurrent al kent..." },
       { url: "concurrent-d.nl", title: "ChatGPT optimalisatie", snippet: "Wij schrijven AI-content..." },
     ],

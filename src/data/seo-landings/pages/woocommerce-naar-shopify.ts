@@ -112,7 +112,7 @@ export const WOOCOMMERCE_NAAR_SHOPIFY: SeoLandingPage = {
     {
       question: "Wat met maatwerk-plugins?",
       answer:
-        "We inventariseren wat echt nodig is. Soms Shopify-app, soms custom, soms laten vallen omdat het alleen complexiteit was.",
+        "Ik inventariseer wat echt nodig is. Soms Shopify-app, soms custom, soms laten vallen omdat het alleen complexiteit was.",
     },
   ],
   ctaTitle: "Migratie plannen?",
@@ -152,7 +152,7 @@ export const WOOCOMMERCE_NAAR_SHOPIFY: SeoLandingPage = {
     scenario: {
       title: "Stel: je hebt 2.000 producten en organisch is 40% van je omzet",
       paragraphs: [
-        "Dan is redirect-plan geen bijzaak. Het is het project. We prioriteren URL's met verkeer en omzet.",
+        "Dan is redirect-plan geen bijzaak. Het is het project. Ik prioriteer URL's met verkeer en omzet.",
         "Staging langer, cutover gecontroleerd, monitoring strak. Liever een week extra dan een stille ranking-moord.",
         "Zo blijft WooCommerce naar Shopify een groei-stap, geen reset naar nul.",
       ],

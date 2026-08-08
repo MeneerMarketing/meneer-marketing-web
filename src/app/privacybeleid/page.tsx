@@ -81,7 +81,7 @@ export default function PrivacyPage() {
         <h2>Met wie delen we gegevens?</h2>
         <p>
           We verkopen je gegevens nooit. We delen ze alleen met partijen die
-          nodig zijn om onze diensten te leveren, zoals hostingpartij Vercel,
+          nodig zijn om de diensten te leveren, zoals hostingpartij Vercel,
           e-mailverwerker Resend en, bij toestemming, Google Analytics. Met
           verwerkers sluiten we verwerkersovereenkomsten waar de AVG dat
           vereist. Sommige partijen verwerken gegevens buiten de EU; in dat

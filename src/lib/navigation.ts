@@ -284,7 +284,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
     featured: {
       title: "Budget dat terugkomt",
       description:
-        "Adverteren zonder metingen is gokken. Wij koppelen elke euro aan wat hij oplevert.",
+        "Adverteren zonder metingen is gokken. Ik koppel elke euro aan wat hij oplevert.",
       href: "/cases",
     },
   },

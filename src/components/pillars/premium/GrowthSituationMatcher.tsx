@@ -47,7 +47,7 @@ const GOALS: GrowthGoal[] = [
       { name: "Marketingstrategie & groeiplan", href: "/diensten/strategie" },
     ],
     outcome:
-      "Ads zonder conversie is geld weg. We fixen eerst je funnel en meting, daarna schaal je op.",
+      "Ads zonder conversie is geld weg. Ik fix eerst je funnel en meting, daarna schaal je op.",
   },
   {
     id: "pipeline",

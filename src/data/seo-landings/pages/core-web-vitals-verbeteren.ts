@@ -136,7 +136,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
         "Je zoekt Core Web Vitals verbeteren omdat Search Console rood is of omdat landings traag aanvoelen. Beide zijn genoeg reden. Google en je bezoeker zijn het eens: wachten is verliezen.",
         "Ik meet op URL's die geld verdienen. Daarna fix ik LCP, INP of CLS in je theme of Next.js. Cache-plugins helpen soms. Structurele bloat lossen ze zelden op.",
         "Performance zit in de architectuur. Ads opschalen op een trage site is water in een lekke emmer.",
-        "Lighthouse is een lamp. Field data is de waarheid. We optimaliseren voor echte gebruikers op mobiel, niet voor een screenshot op desktop.",
+        "Lighthouse is een lamp. Field data is de waarheid. Ik optimaliseer voor echte gebruikers op mobiel, niet voor een screenshot op desktop.",
         "Wil je alleen tips in een PDF? Dan ben ik te hands-on. Wil je meetbaar sneller en groener? Dan deployen we fixes in volgorde van impact.",
       ],
     },

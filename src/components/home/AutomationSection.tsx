@@ -29,7 +29,7 @@ export function AutomationSection() {
               <p className="mt-4 text-lg leading-relaxed tracking-tight text-mm-muted">
                 De meeste marketing mislukt niet door slechte uitvoering, maar
                 door geen plan. Losse campagnes, een site die niet meewerkt en
-                kanalen die elkaar tegenspreken. Wij draaien het om: eerst
+                kanalen die elkaar tegenspreken. Ik draai het om: eerst
                 bepalen waar jouw omzet zit, dan pas bouwen en adverteren. In de
                 juiste volgorde.
               </p>

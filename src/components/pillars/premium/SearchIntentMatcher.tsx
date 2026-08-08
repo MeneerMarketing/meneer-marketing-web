@@ -33,7 +33,7 @@ const INTENTS: SearchIntent[] = [
       { name: "Vindbaar in AI-antwoorden", href: "/diensten/ai-zoek" },
     ],
     outcome:
-      "We brengen structuur, content en techniek op orde zodat Google en AI je site begrijpen en ranken.",
+      "Ik breng structuur, content en techniek op orde zodat Google en AI je site begrijpen en ranken.",
   },
   {
     id: "ai",
