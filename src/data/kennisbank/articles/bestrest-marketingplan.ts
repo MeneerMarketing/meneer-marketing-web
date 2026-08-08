@@ -6,7 +6,8 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
   description:
     "Twee matrassen, twee toppers, twee marges. Bij BestRest geen generiek advertentieaccount, wel een strategie per product. Zo pak je dat aan.",
   publishedAt: "2026-07-05",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "strategie",
   keywords: [
     "marketingstrategie e-commerce",
@@ -15,6 +16,33 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     "google ads productstrategie",
   ],
   dienstSlugs: ["strategie", "google-ads", "seo"],
+  faqs: [
+    {
+      question: "Waarom één marketingplan per product?",
+      answer:
+        "Omdat marge, zoekintentie en koopcyclus per SKU-groep verschillen. Eén soep-campagne mengt winnaars en verliezers tot een gemiddelde dat liegt.",
+    },
+    {
+      question: "Geldt dit alleen voor matrassen?",
+      answer:
+        "Nee. Elke shop met producten die niet op elkaar lijken: mode, beauty, B2B, tools. Zodra economics verschillen, volgt de strategie de productgroep.",
+    },
+    {
+      question: "Hoe reken ik wat een klant mag kosten?",
+      answer:
+        "Per productgroep: verkoopprijs min kostprijs en verzending, minus wat je nog nodig hebt voor overhead. Dat plafond stuurt CPA of tROAS. Globaal shopgemiddelde is te grof.",
+    },
+    {
+      question: "Mag Performance Max over de hele catalogus?",
+      answer:
+        "Alleen met discipline: vergelijkbare economie, schone feed, landings die converteren. Hele catalogus in één PMax is vaak dashboard, geen strategie.",
+    },
+    {
+      question: "SEO en ads per product: dubbel werk?",
+      answer:
+        "Nee. Dezelfde vragen en landings voeden organisch én paid. Je test copy goedkoop organisch, schaal wat werkt met ads. SkinComplete deed die volgorde ook.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -108,6 +136,14 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     {
       type: "p",
       text: "PMax over je hele catalogus is precies het gemiddelde dat liegt. Als je het gebruikt, beperk je tot productgroepen met vergelijkbare economie, schone feeds en landings die converteren. Anders is de zwarte doos een snellere manier om budget te verdelen over wat Google makkelijk vindt, niet over wat jij wilt verdienen.",
+    },
+    {
+      type: "h2",
+      text: "Remarketing en mail per productlijn",
+    },
+    {
+      type: "p",
+      text: "Iemand die een topper bekeken heeft, krijgt geen drie weken dezelfde premium-matras-banner. Segmenten volgen productintentie. Cart-flows tonen het juiste SKU. Zo blijft retentie net zo scherp als acquisitie. Eén generieke 'slaap lekker'-flow is branding. Geen marge-bescherming.",
     },
     {
       type: "h2",

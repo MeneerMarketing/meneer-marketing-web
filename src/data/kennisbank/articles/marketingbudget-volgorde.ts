@@ -6,7 +6,8 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
   description:
     "Ads, SEO, site, e-mail: wat eerst, wat later? Een eerlijk kader voor MKB zonder pakketten-praat en zonder 'het hangt ervan af' zonder uitleg.",
   publishedAt: "2026-06-28",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "strategie",
   keywords: [
     "marketingbudget verdelen",
@@ -15,6 +16,33 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
     "marketing prioriteiten mkb",
   ],
   dienstSlugs: ["strategie", "seo", "google-ads", "cro"],
+  faqs: [
+    {
+      question: "Waar moet ik als MKB eerst marketingbudget aan besteden?",
+      answer:
+        "Bijna altijd eerst de site en tracking die niet lekken, dan retentie van wat je al binnenhaalt, dan SEO/lokaal, dan pas betaald verkeer. Ads als versneller, niet als fundament.",
+    },
+    {
+      question: "Hoeveel procent naar Google Ads vs SEO?",
+      answer:
+        "Percentages liegen zonder context. Als je site lekt, gaat 0% naar ads tot landings kloppen. Als SEO al trekt en ads klaar staan, hangt het af van marge en snelheid van groei. Volgorde eerst, pie chart later.",
+    },
+    {
+      question: "Mag ik ads eerder aanzetten bij spoed-omzet?",
+      answer:
+        "Ja, met klein budget, als landings en conversies kloppen. Bewust breken is risicobeheer. Blind alles in PMax sturen omdat iemand een pakket verkoopt, niet.",
+    },
+    {
+      question: "Wanneer hoort e-mail in de volgorde?",
+      answer:
+        "Vóór je nieuwe klanten jaagt: abandoned cart, lead-opvolging, eenvoudige flows. Goedkoper dan ads, vaak onderschat. SkinComplete bouwde retentie vroeg mee.",
+    },
+    {
+      question: "Past creators/TikTok in dit kader?",
+      answer:
+        "Als je product erbij past en je fundament staat. B2B met lange salescyclus heeft andere creatieve behoeften dan een consumer product met marge. Kanaal volgt product, niet hype.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -117,6 +145,14 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
     {
       type: "p",
       text: "n8n, Make, CRM-koppelingen: zodra je team hetzelfde typt in drie systemen, is automatisering geen luxe. Maar automatiseer geen chaos. Eerst proces helder, dan tool. Anders automatiseer je fouten sneller.",
+    },
+    {
+      type: "h2",
+      text: "Een maandbudget in de praktijk",
+    },
+    {
+      type: "p",
+      text: "Stel je hebt €3.000. Site lekt op mobiel: grootste deel naar fix + één scherpe landings. Retentie half af: cart-flow en lead-alerts. Site en retentie oké: SEO-pagina's op klantvragen plus klein Search-budget met zoektermen-ritme. Alles tegelijk half doen voelt druk. Eén zwakke schakel fixen voelt saai. Saai wint.",
     },
     {
       type: "h2",

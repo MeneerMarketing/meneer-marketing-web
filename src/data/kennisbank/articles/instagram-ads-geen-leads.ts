@@ -7,7 +7,7 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     "Waarom mooie creatives niet converteren, wat Meta Ads anders doet dan boosten, en hoe je leads krijgt zonder dansjes te forceren.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "instagram ads geen resultaat",
@@ -31,6 +31,16 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
       question: "Moet ik UGC gebruiken?",
       answer:
         "Vaak wel. Echte mensen en concrete hooks winnen vaker dan stock met lachen. Niet elke brand moet dansjes doen. Wel: menselijk, snel naar de point.",
+    },
+    {
+      question: "Hoe breed mag mijn doelgroep?",
+      answer:
+        "Begin smaller dan 'heel NL 18-65'. Test op interesse of lookalike van echte converters. Te breed + zwakke landings = bereik zonder inbox.",
+    },
+    {
+      question: "Wanneer stop ik Instagram Ads?",
+      answer:
+        "Als landings en pixel na eerlijke tests nog steeds lekken, of als CPA structureel boven je plafond zit. Stop of fix. Boosten op hoop is geen plan B.",
     },
   ],
   sections: [
@@ -108,6 +118,14 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     {
       type: "p",
       text: "Zelfde reel drie maanden lang is hoe CPA kruipt. Roteer hooks. Wissel format. Houd een kleine pipeline van UGC of shots klaar. Social media advertising zonder creative-ritme is een korte honeymoon.",
+    },
+    {
+      type: "h2",
+      text: "Leadform in Meta vs landings op je site",
+    },
+    {
+      type: "p",
+      text: "Instant forms voelen makkelijk. Kwaliteit is vaak lager. Site-landings met scherp offer en snelle load geven betere leads als je opvolging klaarstaat. Kies bewust: volume in Meta of kwaliteit op je eigen URL. Meet win-rate, niet alleen CPL.",
     },
     {
       type: "h2",

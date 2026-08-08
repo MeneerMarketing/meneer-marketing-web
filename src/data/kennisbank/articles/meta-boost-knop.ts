@@ -7,7 +7,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     "Promoten op Instagram voelt productief. Meestal is het roulette met je merk. Zo zet je Meta Ads wél op als ondernemer met een plan.",
   publishedAt: "2026-07-09",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "facebook ads boosten",
@@ -31,6 +31,16 @@ export const META_BOOST_KNOP: KennisbankArticle = {
       question: "Waarom converteren mijn boosted posts niet?",
       answer:
         "Vaak geen pixel-doel, verkeer naar feed of homepage, creative zonder hook. Mooi bereik is geen funnel.",
+    },
+    {
+      question: "Heb ik de Meta-pixel nodig vóór ik ads draai?",
+      answer:
+        "Ja, als je conversies wilt. Zonder pixel (of CAPI) optimaliseer je op likes en klikken. Dat voelt druk. Het voedt geen slimme campagnes.",
+    },
+    {
+      question: "Mag ik Google en Meta door twee bureaus laten doen?",
+      answer:
+        "Mag wel. Werkt zelden. Twee verhalen, twee dashboards, jij betaalt de verwarring. Eén strategie, twee kanalen, één meetlat.",
     },
   ],
   sections: [
@@ -102,6 +112,14 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     {
       type: "callout",
       text: "Heet take: boosten op een post zonder pixel en zonder landingspagina is een kunstproject, geen acquisitie.",
+    },
+    {
+      type: "h2",
+      text: "Pixel, CAPI en consent",
+    },
+    {
+      type: "p",
+      text: "Zonder nette events en Consent Mode blijft Meta half blind. Dan lijkt de boost-knop 'eenvoudiger' omdat je geen setup doet. Je betaalt die eenvoud terug in CPA. Fix tracking vóór je creatives opschaalt. Zie ook Consent Mode en GA4 voor MKB.",
     },
     {
       type: "h2",

@@ -6,7 +6,8 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
   description:
     "Whiteboards, sticky notes en synergie. Of: meten, bouwen, bijsturen. Waarom uitvoering wint van vergaderen voor MKB.",
   publishedAt: "2026-07-06",
-  readMinutes: 10,
+  modifiedAt: "2026-08-08",
+  readMinutes: 12,
   category: "strategie",
   keywords: [
     "marketing strategie mkb",
@@ -15,6 +16,33 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     "marketing plan uitvoering",
   ],
   dienstSlugs: ["strategie", "google-ads", "seo"],
+  faqs: [
+    {
+      question: "Hoe vaak moet ik over marketing vergaderen?",
+      answer:
+        "Kort en ritmisch: wekelijks 20 minuten op cijfers en taken, maandelijks een eerlijke stop/start. Drie uur whiteboard zonder live-taak is theater.",
+    },
+    {
+      question: "Wat hoort in een strategie van één pagina?",
+      answer:
+        "Klant, marge, doel, welk kanaal eerst, welke metric beslist, wie zet het live. Alles daaronder is uitvoering. Dertig slides zijn vaak uitstel met animaties.",
+    },
+    {
+      question: "Heb ik een bureau of een online marketing manager nodig?",
+      answer:
+        "Iemand die accounts opent en bijstuurt, niet alleen decks levert. Of dat ik ben of iemand intern: uitvoering met eigenaarschap. Retainer omdat de kalender het zegt, is theater.",
+    },
+    {
+      question: "Wanneer is een strategie-sessie wél nuttig?",
+      answer:
+        "Als er één prioriteit uitkomt, een eigenaar, een metric en een stopregel. En als binnen 48 uur iets live staat. Anders was het geen sessie.",
+    },
+    {
+      question: "Hoe begin ik zonder meer meetings?",
+      answer:
+        "Open ads, analytics en inbox. Top 20 zoektermen op kosten. Top landings op mobiel. Eén lek deze week. Dat is strategie die je morgen voelt.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -73,11 +101,32 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "Signalen dat je te veel praat en te weinig doet",
+    },
+    {
+      type: "ul",
+      items: [
+        "Actiepunten uit vorige meeting staan nog open.",
+        "Niemand kan de CPA of ROAS van vorige week noemen.",
+        "Er is een 'merkstory' maar geen landings voor de ad die al loopt.",
+        "Het woord synergie viel vaker dan het woord zoektermen.",
+      ],
+    },
+    {
+      type: "h2",
       text: "Apeldoorn, landelijk, het maakt niet uit",
     },
     {
       type: "p",
       text: "Of je nu MKB bent op de Veluwe of in Amsterdam: de bankrekening spreekt dezelfde taal. Minder slides. Meer cijfers. Meer we doen dit volgende week en minder we nemen het mee.",
+    },
+    {
+      type: "h2",
+      text: "Koppel vergadering aan budget-volgorde",
+    },
+    {
+      type: "p",
+      text: "Als je niet weet wat eerst komt (site, retentie, SEO, ads), vul je de agenda met alles tegelijk. Zie ook het artikel over marketingbudget-volgorde. Eén zwakke schakel per sprint. Dat is hoe €800 aan uurloon wél clicks oplevert.",
     },
     {
       type: "callout",
