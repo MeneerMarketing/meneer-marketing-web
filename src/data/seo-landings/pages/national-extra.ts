@@ -187,90 +187,11 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
 
 export { SHOPIFY_EXPERT } from './shopify-expert';
 
-export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
-  slug: "google-shopping-ads",
-  primaryKeyword: "google shopping ads",
-  category: "google-ads",
-  metaTitle: "Google Shopping ads · feeds die verkopen | Meneer Marketing",
-  metaDescription:
-    "Google Shopping ads met schone feeds, sterke productpagina's en bijsturing op marge. Conversie vóór opschalen.",
-  keywords: ["google shopping ads", "google shopping bureau", "shopping campagnes", "merchant center"],
-  eyebrow: "Google Shopping",
-  headline: "Google Shopping ads zonder",
-  headlineAccent: "rommel in je feed.",
-  subheadline:
-    "Shopping lijkt simpel: upload producten, klaar. Tot je betaalt voor clicks op producten die niet converteren. Ik fix feed, pagina's en biedingen.",
-  pains: [
-    { title: "Feed-fouten", body: "Afgekeurd, verkeerde prijzen, ontbrekende attributen." },
-    { title: "Alle producten gelijk", body: "Budget op items met lage marge. Bankroet in slow motion." },
-    { title: "Dunne productpagina's", body: "Klik, afhaker. De feed was oké, de shop niet." },
-  ],
-  deliverables: [
-    { title: "Merchant Center setup", body: "Feed, conversies, policies. Schoon en compleet." },
-    { title: "Product-SEO", body: "Pagina's die ranken én converteren." },
-    { title: "Marge-gestuurde biedingen", body: "Meer budget op wat winst geeft." },
-    { title: "Performance Max slim", body: "Niet blind vertrouwen op de zwarte doos." },
-  ],
-  visual: "webshop",
-  visualCaption: "Shopping werkt als product én pagina kloppen.",
-  processTitle: "Shopping die rendeert",
-  processSteps: processDefault,
-  proofTitle: "E-commerce ervaring",
-  proofBody: "SkinComplete en BestRest: verschillende producten, verschillende marges. Shopping vraagt om maatwerk per catalogus.",
-  hotTake: { label: "Heet take", body: "Google Shopping ads op een trage shop met template-productpagina's is een dure catalogus die niemand koopt." },
-  faq: [
-    { question: "Heb ik een Shopify shop nodig?", answer: "Niet per se, wel een goede feed en landings." },
-    { question: "Hoe snel live?", answer: "Feed en tracking eerst. Vaak binnen enkele weken testbaar." },
-  ],
-  ctaTitle: "Shopping laten checken?",
-  ctaBody: "Stuur je shop-URL. Ik kijk naar feed en pagina's.",
-  relatedSlugs: ["google-ads-bureau", "webshop-laten-maken", "shopify-expert"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { GOOGLE_SHOPPING_ADS } from './google-shopping-ads';
 
 export { VINDBAARHEID_AI } from './vindbaarheid-ai';
 
-export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
-  slug: "landing-page-laten-maken",
-  primaryKeyword: "landing page laten maken",
-  category: "website",
-  metaTitle: "Landing page laten maken · converteert, geen praatje | Meneer Marketing",
-  metaDescription:
-    "Landing page laten maken from scratch. Snel, SEO-klaar en gebouwd voor Google Ads en Meta. Custom build die converteert.",
-  keywords: ["landing page laten maken", "landingspagina laten maken", "conversie pagina bouwen"],
-  eyebrow: "Landingspagina's",
-  headline: "Landing page laten maken die",
-  headlineAccent: "ads niet laat bloeden.",
-  subheadline:
-    "Je ad klikt. Je pagina laat los. Ik bouw landings from scratch: één doel, één CTA, snelheid groen, copy die verkoopt.",
-  pains: [
-    { title: "Ad ≠ pagina", body: "Belofte in de ad, andere boodschap op de pagina. Afhakers." },
-    { title: "Te veel afleiding", body: "Menu, blog, footer met 40 links. Niemand koopt." },
-    { title: "Traag op mobiel", body: "70% van je ads is mobiel. Je pagina denkt nog desktop." },
-  ],
-  deliverables: [
-    { title: "Eén doel per pagina", body: "Lead, aankoop of call. Focus op één actie." },
-    { title: "Ads-ready", body: "Message match met Google en Meta." },
-    { title: "Snel & technisch strak", body: "Core Web Vitals, schema, tracking." },
-    { title: "Testen", body: "Varianten als het volume het trekt." },
-  ],
-  visual: "website-build",
-  processTitle: "Landings die converteren",
-  processSteps: processDefault,
-  proofTitle: "Ads zonder lekke landings",
-  proofBody: "BestRest en andere klanten: eerst pagina die converteert, dan pas budget omhoog. Anders verbrand je geld.",
-  hotTake: { label: "Heet take", body: "Een landing page laten maken in Canva en dan €3.000 in ads pompen is een kunstproject, geen marketing." },
-  faq: [
-    { question: "Los van mijn site?", answer: "Kan. Vaak koppel ik aan je domein voor vertrouwen en SEO." },
-    { question: "Hoe snel?", answer: "Eenvoudige landings vaak binnen 1-2 weken." },
-  ],
-  ctaTitle: "Landings die verkopen?",
-  ctaBody: "Vertel je campagne of product. Ik schets de pagina.",
-  relatedSlugs: ["google-ads-bureau", "meta-ads-bureau", "website-laten-maken"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { LANDING_PAGE_LATEN_MAKEN } from './landing-page-laten-maken';
 
 export const MARKETING_AUTOMATISERING: SeoLandingPage = {
   slug: "marketing-automatisering",
