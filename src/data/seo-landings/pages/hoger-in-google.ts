@@ -72,10 +72,10 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
       body: "Updaten wat al rankt, uitbreiden wat trekt, linken vanaf sterke URL's. Hoger in Google is een doorlopende productielijn.",
     },
   ],
-  proofTitle: "SkinComplete: organisch eerst, ads later",
+  proofTitle: "Organisch eerst, ads later",
   proofBody:
-    "Salonvragen die echt gesteld worden, omgezet naar landingspagina's. Eerst organisch domineren op die vragen, daarna pas ads opschalen. BestRest kreeg een eigen plan per productlijn. Hoger in Google werkt als de pagina de belofte waarmaakt.",
-  proofCase: "SkinComplete",
+    "Vragen die echt gesteld worden, omgezet naar landingspagina's. Eerst organisch domineren op die vragen, daarna pas ads opschalen. Eigen plan per productlijn waar dat telt. Hoger in Google werkt als de pagina de belofte waarmaakt.",
+  proofCase: "Organisch eerst",
   hotTake: {
     label: "Heet take",
     body: "Hoger in Google met alleen een blogkalender is als sporten met alleen een smoothie. Je mist het zware werk.",
@@ -136,7 +136,7 @@ export const HOGER_IN_GOOGLE: SeoLandingPage = {
       title: "Hoger in Google begint bij één scherpe pagina",
       paragraphs: [
         "Hoger in Google is een probleem-zoekwoord: je wilt zichtbaar zijn waar klanten zoeken. Dat lukt zelden met alleen een blogkalender. Je hebt landings die één intentie pakken, snelle techniek en interne links vanaf je sterke pagina's.",
-        "Bij SkinComplete werden salonvragen omgezet naar pagina's die organisch gingen trekken. Daarna pas ads. Organisch verkeer is goedkoop als de pagina écht antwoordt en iemand verder helpt naar contact of order.",
+        "Vragen uit de markt omgezet naar pagina's die organisch trekken. Daarna pas ads. Organisch verkeer is goedkoop als de pagina écht antwoordt en iemand verder helpt naar contact of order.",
         "Ik combineer rankingwerk met bouwen: copy, code, schema, publicatie. Zo stijgt je positie én je conversie samen. Een ranking zonder leads is een trofee die niks waard is.",
         "Long-tail wint vaak sneller dan de breedste kopterm. Ik kaart die vragen, fix het fundament, en publiceer pagina's die Google mag crawlen én mensen willen uitlezen. Tempo zit in releases, niet in beloftes.",
         "Wil je morgen positie 1 op de zwaarste term in je markt? Dat beloof ik niet. Wil je een route die meetbaar omhoog gaat met pagina's die blijven staan? Die teken ik wél.",

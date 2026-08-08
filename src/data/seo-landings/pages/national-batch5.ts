@@ -220,7 +220,7 @@ const BATCH5_STORY: Record<string, SeoLandingProseOverride> = {
     title: "Waarom de meeste marketing bureaus je teleurstellen",
     paragraphs: [
       "Je belt een bureau. Mooi gesprek. Drie weken later een deck met vijf kanalen, twaalf KPI's en een retainer die begint voordat er iets live staat. Jij bent projectmanager geworden tussen SEO-partij, ads-guy en een bouwer die elkaar niet kennen.",
-      "Ik werk anders. Eén aanspreekpunt, één plan, één iemand die je site opent, je account leest en je mailflows meet. SkinComplete groeide organisch voordat ads gingen draaien. BestRest kreeg per product een eigen aanpak. Elk plan op maat.",
+      "Ik werk anders. Eén aanspreekpunt, één plan, één iemand die je site opent, je account leest en je mailflows meet. Eerst organisch groeien, daarna pas ads. Per productlijn een eigen aanpak. Elk plan op maat.",
       "Marketing bureau bij mij betekent: ik zeg eerlijk wat eerst moet. Soms is dat geen ads. Soms is het een landingspagina die je in drie seconden laadt. Altijd is het meetbaar.",
     ],
   },
@@ -236,7 +236,7 @@ const BATCH5_STORY: Record<string, SeoLandingProseOverride> = {
     title: "Email marketing die omzet oplevert, niet alleen opens",
     paragraphs: [
       "Je hebt een lijst. Soms stuur je een nieuwsbrief. Open rate daalt. Niemand koopt. Je lijst is geen asset, het is een verplichting geworden.",
-      "Flows veranderen dat. Welkom na aanmelding. Cart recovery na twee uur. Win-back na zestig dagen zonder koop. SkinComplete zette mail vóór het adsbudget omhoog ging. Elke euro op ads werkte harder.",
+      "Flows veranderen dat. Welkom na aanmelding. Cart recovery na twee uur. Win-back na zestig dagen zonder koop. Mail staat vóór het adsbudget omhoog gaat. Elke euro op ads werkte harder.",
       "Email marketing is geen 'leuke nieuwsbrief'. Het is retentie op autopilot. Ik bouw de flows, schrijf de copy en koppel aan je shop.",
     ],
   },
@@ -253,7 +253,7 @@ const BATCH5_STORY: Record<string, SeoLandingProseOverride> = {
     paragraphs: [
       "Mailchimp in een hoek. Shop in Shopify. Prijzen kloppen niet in de mail. Segmenten ontbreken. Batch op dinsdag naar iedereen.",
       "E-mailmarketing bureau bij mij koppelt shop, segmenten en flows. Welkom, cart, post-purchase. Omzet per mailreeks.",
-      "SkinComplete hing mail aan shop en B2B-portaal. Dat is hoe mail waarde levert in plaats van ruis.",
+      "Mail gekoppeld aan shop en B2B-portaal. Dat is hoe mail waarde levert in plaats van ruis.",
     ],
   },
   "website-laten-ontwerpen": {
@@ -269,7 +269,7 @@ const BATCH5_STORY: Record<string, SeoLandingProseOverride> = {
     paragraphs: [
       "Site bij de ene, SEO bij de tweede, ads bij de derde. Jij bent projectmanager. Budget lekt tussen de partijen door.",
       "Internetmarketing bureau bij mij is volgorde: fundament, vindbaarheid, campagnes, retentie. Eén dashboard, één aanspreekpunt.",
-      "SkinComplete en BestRest kregen elk een eigen route. Internetmarketing met die discipline wint van alles-tegelijk.",
+      "Elk traject krijgt een eigen route. Internetmarketing met die discipline wint van alles-tegelijk.",
     ],
   },
   "online-marketing-specialist": {
@@ -391,10 +391,10 @@ export const MARKETING_BUREAU = buildNationalPage({
   visual: "strategy-stack",
   visualCaption: "Eén bureau. Eén lijn van strategie tot live.",
   processTitle: "Zo werk ik als marketing bureau",
-  proofTitle: "SkinComplete & BestRest",
+  proofTitle: "Van site tot mail",
   proofBody:
     "Van shop en SEO tot ads en mail: ik ken het traject omdat ik het zo heb gebouwd. Praktijk, geen theorie uit een template.",
-  proofCase: "SkinComplete",
+  proofCase: "Strategie tot uitvoering",
   hotTake:
     "Een marketing bureau dat niet kan bouwen is een PowerPoint-fabriek met een duur uurtarief.",
   faq: [
@@ -523,8 +523,8 @@ export const SEO_BUREAU = buildNationalPage({
   processTitle: "Zo werkt dit SEO bureau",
   proofTitle: "Organisch eerst",
   proofBody:
-    "SkinComplete rankte op salonvragen voordat ads gingen draaien. Dat is hoe een SEO bureau waarde moet leveren.",
-  proofCase: "SkinComplete",
+    "Eerst ranken op koopintentie, daarna pas ads. Dat is hoe een SEO bureau waarde moet leveren.",
+  proofCase: "Organisch eerst",
   hotTake:
     "Een SEO bureau dat geen landingspagina wil schrijven, verkoopt je een abonnement op hoop.",
   faq: [
@@ -586,10 +586,10 @@ export const EMAIL_MARKETING = buildNationalPage({
   visual: "email-flow",
   visualCaption: "Email marketing = klanten die terugkomen.",
   processTitle: "Email marketing opzetten",
-  proofTitle: "SkinComplete mail",
+  proofTitle: "Mail vóór ads",
   proofBody:
     "Vóór het adsbudget omhoog ging, stonden mail en flows. Elke euro op ads werkte harder.",
-  proofCase: "SkinComplete",
+  proofCase: "Flow-opbouw traject",
   hotTake:
     "Email marketing zonder abandoned cart flow is een winkel zonder iemand die terugbelt naar vergeten shoppers.",
   faq: [
@@ -653,8 +653,8 @@ export const EMAILMARKETING_BUREAU = buildNationalPage({
   processTitle: "E-mailmarketing bureau aanpak",
   proofTitle: "Shop + mail samen",
   proofBody:
-    "Bij SkinComplete hing mail aan de shop en het B2B-portaal. Eén stack, één verhaal.",
-  proofCase: "SkinComplete",
+    "Mail gekoppeld aan shop en B2B-portaal. Eén stack, één verhaal.",
+  proofCase: "Shop + mail traject",
   hotTake:
     "Een e-mailmarketing bureau dat geen Shopify kan koppelen, stuurt je mooie nieuwsbrieven naar een lege winkelwagen.",
   faq: [
@@ -781,7 +781,7 @@ export const INTERNETMARKETING_BUREAU = buildNationalPage({
   processTitle: "Internetmarketing aanpak",
   proofTitle: "Eén lijn online",
   proofBody:
-    "BestRest en SkinComplete: verschillende markten, zelfde aanpak. Eerst fundament, dan schalen.",
+    "Verschillende markten, zelfde aanpak. Eerst fundament, dan schalen.",
   hotTake:
     "Een internetmarketing bureau dat vijf tools verkoopt maar geen pagina kan fixen, is een abonnementenverkoper.",
   faq: [
@@ -846,7 +846,7 @@ export const ONLINE_MARKETING_SPECIALIST = buildNationalPage({
   faq: [
     {
       question: "Freelancer of bureau?",
-      answer: "Eén persoon, bureau-breed vak. SkinComplete en BestRest als bewijs.",
+      answer: "Eén persoon, bureau-breed vak. Strategie én uitvoering in de praktijk.",
     },
     {
       question: "Op locatie mogelijk?",

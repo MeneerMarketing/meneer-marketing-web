@@ -73,8 +73,8 @@ export const MARKETING_AUTOMATISERING: SeoLandingPage = {
   ],
   proofTitle: "E-commerce op autopilot",
   proofBody:
-    "SkinComplete-style: B2B-portaal, e-mailflows en minder handwerk zodat ads en SEO harder werken. Automatisering is geen luxe-gadget. Het is schaal zonder chaos.",
-  proofCase: "SkinComplete",
+    "B2B-portaal, e-mailflows en minder handwerk zodat ads en SEO harder werken. Automatisering is geen luxe-gadget. Het is schaal zonder chaos.",
+  proofCase: "Systeemkoppeling traject",
   hotTake: {
     label: "Heet take",
     body: "Marketing automatisering zonder iemand die je site en ads snapt, is duct tape op een lekkende pijp.",
@@ -134,9 +134,9 @@ export const MARKETING_AUTOMATISERING: SeoLandingPage = {
       paragraphs: [
         "Je zoekt marketing automatisering omdat je groeit in omzet en vastloopt in handwerk. Leads in mail, orders in chats, rapporten in spreadsheets. Dat schaalt tot je eerste drukke maand. Daarna knalt het.",
         "Ik knoop systemen aan elkaar in gewone taal: formulier binnen, CRM bijgewerkt, mail verstuurd, sales gewaarschuwd. Tools als n8n of Make zijn middelen. Het proces is het product.",
-        "Bij SkinComplete hoorden portaal, mail en marketing bij elkaar. Minder overtypen, meer tijd voor groei. BestRest vraagt per productlijn andere data. Generieke Zaps negeren dat.",
+        "Portaal, mail en marketing horen bij elkaar. Minder overtypen, meer tijd voor groei. Per productlijn andere data nodig? Generieke Zaps negeren dat.",
         "Attributie wordt pas eerlijk als data doorstroomt. Anders discussieer je over ads terwijl je CRM half leeg is. Automatisering maakt die discussie korter.",
-        "Wil je twintig tools erbij? Dan ben ik de verkeerde. Wil je minder chaos en meetbare flows? Dan tekenen we eerst wat weg mag, daarna wat we bouwen.",
+        "Wil je twintig tools erbij? Dan ben ik de verkeerde. Wil je minder chaos en meetbare flows? Dan teken ik eerst wat weg mag, daarna wat ik bouw.",
       ],
     },
     deepDive: {

@@ -76,10 +76,10 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
       body: "Wat leverde leads of omzet? Wat stoppen we? Wat verdient meer budget? Rapportage met besluiten, niet alleen grafieken.",
     },
   ],
-  proofTitle: "SkinComplete en BestRest",
+  proofTitle: "Eén lijn, echte uitvoering",
   proofBody:
-    "Bij SkinComplete bouwde ik het Shopify B2B-portaal, zette e-mail op, liet SEO eerst groeien en zette daarna ads aan. BestRest kreeg een eigen plan per product. Dat is hoe een online marketing bureau moet voelen: één lijn, echte uitvoering.",
-  proofCase: "SkinComplete",
+    "Ik bouw de shop of site, zet e-mail op, laat SEO eerst groeien en zet daarna pas ads aan. Per productlijn een eigen plan. Dat is hoe een online marketing bureau moet voelen: één lijn, echte uitvoering.",
+  proofCase: "Strategie tot uitvoering",
   hotTake: {
     label: "Heet take",
     body: "Een online marketing bureau dat niet kan bouwen, is een PowerPoint-fabriek.",
@@ -139,7 +139,7 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
       title: "Online marketing bureau zonder eilandjes",
       paragraphs: [
         "Je zoekt een online marketing bureau omdat SEO, ads en je site nu los van elkaar lopen. Het resultaat: iedereen wijst naar de ander. Ik trek één lijn: eerst fundament, dan verkeer, dan schaal.",
-        "Bij SkinComplete bouwde ik het Shopify B2B-portaal, zette e-mail op, liet SEO eerst groeien en zette daarna ads aan. BestRest kreeg een eigen plan per product. Dat is bureauwerk zonder bureau-gedoe.",
+        "Ik bouw de shop of site, zet e-mail op, laat SEO eerst groeien en zet daarna ads aan. Per productlijn een eigen plan. Dat is bureauwerk zonder bureau-gedoe.",
         "Jij hebt één aanspreekpunt. Strategie en uitvoering zitten bij mij. Dat scheelt overleg, voorkomt tegenstrijdige beloftes en versnelt wat live gaat.",
         "Ik praat in omzet, leads en marge, niet in 'awareness' als einddoel. Campagnes en content dienen hetzelfde verhaal. Anders betaal je twee keer voor ruis.",
         "Wil je drie partijen die elkaar mails sturen? Dat kan elders. Wil je één plan met meetbare stappen en iemand die ook bouwt? Dan starten we met een eerlijke scan.",

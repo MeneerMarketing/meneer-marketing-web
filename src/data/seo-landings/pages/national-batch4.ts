@@ -32,7 +32,7 @@ export const DIGITAL_MARKETING_BUREAU: SeoLandingPage = {
   visual: "content-hub",
   processTitle: "Digital met één lijn",
   processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
+  proofTitle: "Eén lijn online",
   proofBody: "Digital marketing die werkt, ziet eruit als één verhaal van site tot ad.",
   hotTake: { label: "Heet take", body: "Een digital marketing bureau zonder code in huis, verkoopt je slides." },
   faq: [
@@ -70,7 +70,7 @@ export const ZOEKMACHINE_MARKETING: SeoLandingPage = {
   visual: "seo-serp",
   processTitle: "Zoekmachines domineren",
   processSteps: processDefault,
-  proofTitle: "SkinComplete-volgorde",
+  proofTitle: "Organisch vóór ads",
   proofBody: "Eerst organisch, dan ads. Zoekmachine marketing met een plan, niet met paniek.",
   hotTake: { label: "Heet take", body: "Zoekmachine marketing door twee bureaus is twee koks in één keuken. Chaos gegarandeerd." },
   faq: [
@@ -121,93 +121,13 @@ export const ADVERTENTIEBEHEER: SeoLandingPage = {
   pillarLabel: "Campagnes",
 };
 
-export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
-  slug: "social-media-advertising",
-  primaryKeyword: "social media advertising",
-  category: "google-ads",
-  metaTitle: "Social media advertising · betaald social met plan | Meneer Marketing",
-  metaDescription: "Social media advertising op Meta, TikTok en meer. UGC, landings en tracking met plan.",
-  keywords: [
-    "social media advertising",
-    "social media ads",
-    "social media marketing bureau",
-    "betaald adverteren social media",
-    "social advertising bureau",
-  ],
-  eyebrow: "Social advertising",
-  headline: "Social media advertising",
-  headlineAccent: "zonder vanity metrics als doel.",
-  subheadline:
-    "Likes zijn leuk voor je ego. Omzet is leuk voor je bedrijf. Of je 'marketing bureau' of 'advertising' googelt: ik stuur op conversie, niet alleen bereik.",
-  pains: [
-    { title: "Bereik zonder sales", body: "Viral gevoel, lege bankrekening." },
-    { title: "Verkeerd platform", body: "B2B op TikTok zonder plan. Geld weg." },
-    { title: "Creatives die verlopen", body: "Eén video, drie maanden. Ad fatigue." },
-  ],
-  deliverables: [
-    { title: "Platform-keuze", body: "Meta, TikTok, waar jouw klant zit." },
-    { title: "UGC & creators", body: "Content die niet als ad schreeuwt." },
-    { title: "Funnel & retargeting", body: "Van koud naar warm naar klant." },
-    { title: "Koppeling met Google", body: "Eén groeiplan, geen eilandjes." },
-  ],
-  visual: "meta-ads",
-  processTitle: "Social die verkoopt",
-  processSteps: processDefault,
-  proofTitle: "Creators + performance",
-  proofBody: "Social advertising werkt als creative en landing samen bewegen.",
-  hotTake: { label: "Heet take", body: "Social media advertising met stockvideo is een reclamefolder in 2026. Niemand kijkt." },
-  faq: [
-    { question: "Organisch social ook?", answer: "Focus betaald + creators. Organisch kan als onderdeel." },
-  ],
-  ctaTitle: "Social ads starten?",
-  ctaBody: "Vertel je product en doelgroep.",
-  relatedSlugs: ["meta-ads-bureau", "tiktok-ads-bureau"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { SOCIAL_MEDIA_ADVERTISING } from './social-media-advertising';
 
 export { UGC_MARKETING } from './ugc-marketing';
 
 export { INFLUENCER_MARKETING_BUREAU } from './influencer-marketing-bureau';
 
-export const B2B_MARKETING_BUREAU: SeoLandingPage = {
-  slug: "b2b-marketing-bureau",
-  primaryKeyword: "b2b marketing bureau",
-  category: "b2b-portal",
-  metaTitle: "B2B marketing bureau · leads die tellen | Meneer Marketing",
-  metaDescription: "B2B marketing bureau voor langere salescycli. Portaal, SEO, ads en leadflows. SkinComplete B2B-niveau.",
-  keywords: ["b2b marketing bureau", "b2b online marketing", "marketing bureau zakelijk"],
-  eyebrow: "B2B marketing",
-  headline: "B2B marketing bureau",
-  headlineAccent: "dat begrijpt dat je klant niet impuls koopt.",
-  subheadline: "B2B is geen B2C met een andere logo. Langere cycli, meerdere beslissers, soms een portaal. Ik bouw systemen die leads kwalificeren en herbestellen makkelijk maken.",
-  pains: [
-    { title: "Leads zonder opvolging", body: "Formulier binnen. Niemand belt." },
-    { title: "B2C-tactieken op B2B", body: "Flash sale energie op een €50k deal." },
-    { title: "Site zonder portaal", body: "Zakelijke klant moet mailen voor prijs." },
-  ],
-  deliverables: [
-    { title: "B2B-portaal op Shopify", body: "Prijzen, login, herbestellen." },
-    { title: "Leadgeneratie", body: "SEO + ads + kwalificatie." },
-    { title: "Automatisering", body: "CRM, mail, opvolging." },
-    { title: "Content voor beslissers", body: "Antwoorden die vertrouwen bouwen." },
-  ],
-  visual: "b2b-portal",
-  processTitle: "B2B dat schaalt",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete B2B",
-  proofBody: "Salons bestellen zelf, op hun tijd. Dat is B2B marketing die werkt.",
-  proofCase: "SkinComplete",
-  hotTake: { label: "Heet take", body: "B2B marketing met alleen LinkedIn-posts is netwerken zonder net." },
-  faq: [
-    { question: "Alleen Shopify B2B?", answer: "Voor shops ja. Leadgen-sites in Next.js." },
-  ],
-  ctaTitle: "B2B marketing bespreken?",
-  ctaBody: "Vertel je salesproces en doelgroep.",
-  relatedSlugs: ["b2b-portaal-bouwen", "leadgeneratie-website", "linkedin-ads-bureau"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { B2B_MARKETING_BUREAU } from './b2b-marketing-bureau';
 
 export const ECOMMERCE_SPECIALIST: SeoLandingPage = {
   slug: "ecommerce-specialist",
@@ -232,10 +152,8 @@ export const ECOMMERCE_SPECIALIST: SeoLandingPage = {
     { title: "Automatisering", body: "Minder handwerk, meer schaal." },
   ],
   visual: "webshop",
-  processTitle: "E-commerce end-to-end",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
-  proofBody: "Twee shops, twee strategieën. E-commerce is nooit one-size-fits-all.",
+  proofTitle: "Shop op maat",
+  proofBody: "Elke shop krijgt een eigen strategie. E-commerce is nooit one-size-fits-all.",
   hotTake: { label: "Heet take", body: "Een e-commerce specialist die Shopify niet kan aanpassen, is een coach zonder gym." },
   faq: [
     { question: "Verschil met e-commerce marketing?", answer: "Overlap. Specialist = meer techniek + uitvoering." },
@@ -272,7 +190,7 @@ export const WEBSHOP_MARKETING: SeoLandingPage = {
   visual: "webshop",
   processTitle: "Shop laten groeien",
   processSteps: processDefault,
-  proofTitle: "BestRest per product",
+  proofTitle: "Per productlijn",
   proofBody: "Webshop marketing per productlijn, niet één sop voor alles.",
   hotTake: { label: "Heet take", body: "Webshop marketing met alleen kortingscodes is een uitverkoop, geen strategie." },
   faq: [
@@ -285,43 +203,7 @@ export const WEBSHOP_MARKETING: SeoLandingPage = {
   pillarLabel: "Strategie",
 };
 
-export const PRODUCTPAGINA_SEO: SeoLandingPage = {
-  slug: "productpagina-seo",
-  primaryKeyword: "productpagina seo",
-  category: "shopify",
-  metaTitle: "Productpagina SEO · ranken én verkopen | Meneer Marketing",
-  metaDescription: "Productpagina SEO voor webshops. Unieke content, schema, snelheid die rankt.",
-  keywords: ["productpagina seo", "seo productpagina's webshop", "product seo shopify"],
-  eyebrow: "Productpagina SEO",
-  headline: "Productpagina SEO",
-  headlineAccent: "die Google niet negeert.",
-  subheadline: "Duizend SKU's met dezelfde beschrijving is geen SEO. Het is ruis. Productpagina SEO betekent unieke antwoorden op echte koopvragen per product.",
-  pains: [
-    { title: "Dunne pagina's", body: "Titel, prijs, klaar. Google zegt nee." },
-    { title: "Duplicate content", body: "Leverancierstekst overal hetzelfde." },
-    { title: "Filters als SEO-val", body: "Duizend URL's, nul waarde." },
-  ],
-  deliverables: [
-    { title: "Template met diepte", body: "Unieke blokken per product waar het telt." },
-    { title: "Schema & rich results", body: "Product, review, availability." },
-    { title: "Interne links", body: "Collecties en blogs die producten voeden." },
-    { title: "Snelheid per template", body: "CWV op productniveau." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Producten vindbaar maken",
-  processSteps: processDefault,
-  proofTitle: "Shopify SEO",
-  proofBody: "Collecties ranken vaak wel. Producten moet je bewust bouwen.",
-  hotTake: { label: "Heet take", body: "Productpagina SEO met ChatGPT bulk is een catalogus die Google als spam ziet." },
-  faq: [
-    { question: "Grote catalogus?", answer: "Prioriteit op bestsellers en marge-winnaars eerst." },
-  ],
-  ctaTitle: "Productpagina's laten checken?",
-  ctaBody: "Stuur je shop. Ik noem de patronen.",
-  relatedSlugs: ["shopify-seo", "hoger-in-google", "google-shopping-ads"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { PRODUCTPAGINA_SEO } from './productpagina-seo';
 
 export const CHATGPT_VINDBAARHEID: SeoLandingPage = {
   slug: "chatgpt-vindbaarheid",
@@ -361,43 +243,7 @@ export const CHATGPT_VINDBAARHEID: SeoLandingPage = {
   pillarLabel: "Vindbaarheid",
 };
 
-export const GOOGLE_MAPS_MARKETING: SeoLandingPage = {
-  slug: "google-maps-marketing",
-  primaryKeyword: "google maps marketing",
-  category: "seo",
-  metaTitle: "Google Maps marketing · lokaal gevonden worden | Meneer Marketing",
-  metaDescription: "Google Maps marketing: Business Profile, reviews, lokale SEO. Verschijn in de map pack als klanten in je regio zoeken.",
-  keywords: ["google maps marketing", "google maps vindbaarheid", "map pack seo", "lokaal gevonden worden google"],
-  eyebrow: "Google Maps",
-  headline: "Google Maps marketing",
-  headlineAccent: "zodat je niet onzichtbaar bent op 'bij mij in de buurt'.",
-  subheadline: "Maps is vaak de eerste indruk voor lokale bedrijven. Je profiel, reviews en regio-pagina's bepalen of je in de map pack staat of in het niets.",
-  pains: [
-    { title: "Spookprofiel", body: "Ingevuld en vergeten. Google denkt: gesloten?" },
-    { title: "Concurrent met reviews", body: "Jij 4, zij 200. Guess who." },
-    { title: "Site zonder regio", body: "Google weet niet waar je zit." },
-  ],
-  deliverables: [
-    { title: "Business Profile optimalisatie", body: "Compleet, actief, consistent." },
-    { title: "Review-strategie", body: "Echt, niet gekocht." },
-    { title: "Lokale landings", body: "Regio-pagina's die kloppen." },
-    { title: "Maps + SEO + ads", body: "Lokaal als systeem." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Maps domineren",
-  processSteps: processDefault,
-  proofTitle: "Brabant & regio",
-  proofBody: "Eindhoven tot Someren: lokale vindbaarheid is vaak de snelste MKB-winst.",
-  hotTake: { label: "Heet take", body: "Google Maps marketing met alleen je adres in de footer is een uithangbord in de kelder." },
-  faq: [
-    { question: "Verschil met lokale SEO?", answer: "Maps is onderdeel. Deze pagina vangt 'maps' zoekers." },
-  ],
-  ctaTitle: "Lokaal in Maps staan?",
-  ctaBody: "Vertel je stad en dienst.",
-  relatedSlugs: ["lokale-seo", "google-ads-bureau", "seo-specialist"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { GOOGLE_MAPS_MARKETING } from './google-maps-marketing';
 
 export const WEBDESIGN_BUREAU: SeoLandingPage = {
   slug: "webdesign-bureau",
@@ -437,198 +283,17 @@ export const WEBDESIGN_BUREAU: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
-  slug: "growth-marketing-bureau",
-  primaryKeyword: "growth marketing bureau",
-  category: "seo",
-  metaTitle: "Growth marketing bureau · schaalbaar groeien | Meneer Marketing",
-  metaDescription: "Growth marketing bureau met data, experimenten en uitvoering. Volgorde die schaalt.",
-  keywords: ["growth marketing bureau", "growth hacker nederland", "growth marketing mkb"],
-  eyebrow: "Growth marketing",
-  headline: "Growth marketing bureau",
-  headlineAccent: "zonder 'hockey stick' slides.",
-  subheadline: "Growth marketing is niet een magische knop. Het is de juiste volgorde: fix je funnel, meet eerlijk, test klein, schaal wat werkt. Ik doe dat zonder buzzword-bingo.",
-  pains: [
-    { title: "Growth zonder fundament", body: "Opschalen wat lekt." },
-    { title: "Hacks zonder data", body: "Trucjes die één week werken." },
-    { title: "Alleen acquisitie", body: "Retentie vergeten. CAC stijgt." },
-  ],
-  deliverables: [
-    { title: "Funnel-analyse", body: "Waar zit de bottleneck." },
-    { title: "Experimenten", body: "Klein testen, hard schalen." },
-    { title: "Kanalen mix", body: "SEO, ads, mail, automation." },
-    { title: "Unit economics", body: "Weten wat een klant mag kosten." },
-  ],
-  visual: "content-hub",
-  processTitle: "Groeien met discipline",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete traject",
-  proofBody: "Organisch eerst, dan ads. Dat is growth die blijft staan.",
-  hotTake: { label: "Heet take", body: "Growth marketing bureau dat alleen ads opschaalt, is een benzinepomp zonder motor." },
-  faq: [
-    { question: "Verschil met performance marketing?", answer: "Growth is breder: product, retentie, kanalen. Performance focust op paid." },
-  ],
-  ctaTitle: "Growth plan maken?",
-  ctaBody: "Vertel je huidige cijfers.",
-  relatedSlugs: ["performance-marketing-bureau", "online-marketing-manager", "conversie-optimalisatie"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { GROWTH_MARKETING_BUREAU } from './growth-marketing-bureau';
 
-export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
-  slug: "linkedin-ads-bureau",
-  primaryKeyword: "linkedin ads bureau",
-  category: "google-ads",
-  metaTitle: "LinkedIn Ads bureau · B2B leads die tellen | Meneer Marketing",
-  metaDescription: "LinkedIn Ads bureau voor B2B. Targeting op functie en sector, landings die kwalificeren.",
-  keywords: ["linkedin ads bureau", "linkedin advertising nederland", "linkedin ads b2b"],
-  eyebrow: "LinkedIn Ads",
-  headline: "LinkedIn Ads bureau",
-  headlineAccent: "voor B2B, niet voor likes van collega's.",
-  subheadline: "LinkedIn is duur per klik. Dat kan, als je beslissers target en landings die junk filteren. Anders betaal je voor mensen die je whitepaper downloaden en nooit terugkomen.",
-  pains: [
-    { title: "Dure kliks", body: "CPA die pijn doet zonder kwalificatie." },
-    { title: "Brede targeting", body: "Iedereen met 'marketing' in titel." },
-    { title: "Leadform zonder opvolging", body: "100 leads, 2 gesprekken." },
-  ],
-  deliverables: [
-    { title: "B2B targeting", body: "Functie, sector, bedrijfsgrootte." },
-    { title: "Lead kwalificatie", body: "Formulieren die junk filteren." },
-    { title: "Landings voor B2B", body: "Vertrouwen en duidelijke propositie." },
-    { title: "Koppeling CRM", body: "Lead direct naar sales." },
-  ],
-  visual: "meta-ads",
-  processTitle: "LinkedIn die oplevert",
-  processSteps: processDefault,
-  proofTitle: "B2B funnels",
-  proofBody: "LinkedIn werkt als opvolging en site meedoen. Anders is het dure e-mailverzameling.",
-  hotTake: { label: "Heet take", body: "LinkedIn Ads zonder sales-opvolging is een dure spreadsheet." },
-  faq: [
-    { question: "Minimum budget?", answer: "LinkedIn vraagt vaak hoger budget. We rekenen eerst door of het kan." },
-  ],
-  ctaTitle: "LinkedIn Ads proberen?",
-  ctaBody: "Vertel je B2B-doelgroep.",
-  relatedSlugs: ["b2b-marketing-bureau", "leadgeneratie-website", "google-ads-bureau"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { LINKEDIN_ADS_BUREAU } from './linkedin-ads-bureau';
 
 export { KLAVIYO_SPECIALIST } from './klaviyo-specialist';
 
-export const CORE_WEB_VITALS: SeoLandingPage = {
-  slug: "core-web-vitals-verbeteren",
-  primaryKeyword: "core web vitals verbeteren",
-  category: "website",
-  metaTitle: "Core Web Vitals verbeteren · sneller ranken & converteren | Meneer Marketing",
-  metaDescription: "Core Web Vitals verbeteren in code. LCP, INP, CLS. Snelheid die SEO en ads helpt.",
-  keywords: ["core web vitals verbeteren", "website snelheid verbeteren", "lcp inp cls", "pagespeed optimalisatie"],
-  eyebrow: "Core Web Vitals",
-  headline: "Core Web Vitals verbeteren",
-  headlineAccent: "zonder trucjes die morgen crashen.",
-  subheadline: "Google meet hoe snel en stabiel je site voelt. Traag = minder rankings, duurdere ads, meer afhakers. Ik fix CWV in je theme of Next.js project, niet met een magische plugin.",
-  pains: [
-    { title: "Rood in PageSpeed", body: "LCP, INP of CLS fail. Omzet lijdt." },
-    { title: "Plugin-patches", body: "Tijdelijk groen, structureel kapot." },
-    { title: "Ads op trage landings", body: "Je betaalt voor afhakers." },
-  ],
-  deliverables: [
-    { title: "Performance audit", body: "Wat blokkeert je metrics." },
-    { title: "Code-optimalisatie", body: "Assets, fonts, JS, images." },
-    { title: "Shopify of Next.js", body: "Stack-specifieke fixes." },
-    { title: "Monitoring", body: "Blijven groen na updates." },
-  ],
-  visual: "website-build",
-  processTitle: "Snelheid die blijft",
-  processSteps: processDefault,
-  proofTitle: "ROAS & SEO",
-  proofBody: "Elke seconde telt op mobiel. CWV is geen SEO-truc, het is marge.",
-  hotTake: { label: "Heet take", body: "Core Web Vitals verbeteren met alleen een cache-plugin is pleister op een gebroken been." },
-  faq: [
-    { question: "Hoe snel resultaat?", answer: "Vaak merkbaar binnen dagen na deploy." },
-  ],
-  ctaTitle: "Snelheid laten checken?",
-  ctaBody: "Stuur je URL. Ik noem de blockers.",
-  relatedSlugs: ["technische-seo", "shopify-expert", "conversie-optimalisatie"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { CORE_WEB_VITALS } from './core-web-vitals-verbeteren';
 
-export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
-  slug: "marketing-consultant-mkb",
-  primaryKeyword: "marketing consultant mkb",
-  category: "seo",
-  metaTitle: "Marketing consultant MKB · strategie én uitvoering | Meneer Marketing",
-  metaDescription: "Marketing consultant voor MKB die ook bouwt en campagnes draait. Advies dat live gaat.",
-  keywords: ["marketing consultant mkb", "marketing adviseur mkb", "externe marketing consultant"],
-  eyebrow: "Marketing consultant",
-  headline: "Marketing consultant voor MKB",
-  headlineAccent: "die ook de knoppen indrukt.",
-  subheadline: "Consultants die alleen adviseren, laten jouw team met een to-do lijst zitten. Ik adviseer én voer uit: site, SEO, ads. Eén aanspreekpunt.",
-  pains: [
-    { title: "Advies zonder handen", body: "Rapport klaar. Niets live." },
-    { title: "Te duur fulltime", body: "CMO huren is zwaar voor MKB." },
-    { title: "Alles urgent", body: "Niets krijgt prioriteit, niets wordt af." },
-  ],
-  deliverables: [
-    { title: "Strategie-sessie", body: "Helder wat eerst moet." },
-    { title: "Uitvoering", body: "Ik bouw en zet live." },
-    { title: "Maandelijkse sparring", body: "Bijsturen op data." },
-    { title: "Eerlijke nee", body: "Als iets geen zin heeft, zeg ik het." },
-  ],
-  visual: "content-hub",
-  processTitle: "Consultancy die landt",
-  processSteps: processDefault,
-  proofTitle: "Meneer als consultant",
-  proofBody: "Ik zit aan tafel alsof ik je marketingmanager ben. Omdat dat is wat je nodig hebt.",
-  hotTake: { label: "Heet take", body: "Een marketing consultant die nooit in je Google Ads heeft gekeken, gokt met jouw geld." },
-  faq: [
-    { question: "Verschil met online marketing manager?", answer: "Consultant zoek je soms projectmatig. Manager is doorlopender. Overlap groot." },
-  ],
-  ctaTitle: "Sparren over marketing?",
-  ctaBody: "Vertel je situatie. Eerste gesprek zonder circus.",
-  relatedSlugs: ["online-marketing-manager", "online-marketing-bureau", "growth-marketing-bureau"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { MARKETING_CONSULTANT_MKB } from './marketing-consultant-mkb';
 
-export const TRAGE_WEBSITE_DURE_ADS: SeoLandingPage = {
-  slug: "trage-website-dure-ads",
-  primaryKeyword: "trage website conversie",
-  category: "website",
-  metaTitle: "Trage website = dure ads · fix eerst je snelheid | Meneer Marketing",
-  metaDescription: "Trage website maakt elke advertentie duurder. Snelheid, conversie en ads in één fix. Stop met budget verbranden op afhakers.",
-  keywords: ["trage website conversie", "website traag ads", "snelheid website omzet", "trage site google ads"],
-  eyebrow: "Snelheid & ads",
-  headline: "Trage website?",
-  headlineAccent: "Dan zijn je ads een belasting op afhakers.",
-  subheadline: "Je kunt het mooiste account hebben. Als je site op mobiel traag is, betaal je voor mensen die wegklikken voordat ze je aanbod zien. Fix snelheid eerst. Je ads worden ineens 'ineens goed'.",
-  pains: [
-    { title: "Hoge CPC, lage conversie", body: "Google straft trage landings." },
-    { title: "Bounce op mobiel", body: "70% ads is mobiel. Jij denkt desktop." },
-    { title: "Meer budget, zelfde probleem", body: "Opschalen wat lekt." },
-  ],
-  deliverables: [
-    { title: "Snelheidsaudit", body: "LCP, INP, CLS in kaart." },
-    { title: "Fix in code", body: "Theme of Next.js, geen pleister." },
-    { title: "Landings voor ads", body: "Snelle pagina's per campagne." },
-    { title: "Daarna pas opschalen", body: "Budget als conversie klopt." },
-  ],
-  visual: "website-build",
-  visualCaption: "Snelheid is geen SEO-detail. Het is je ads-subsidie.",
-  processTitle: "Eerst snel, dan budget",
-  processSteps: processDefault,
-  proofTitle: "Shopify performance",
-  proofBody: "Theme-bloat saboteert ROAS. Ik zie het wekelijks.",
-  hotTake: { label: "Heet take", body: "Dubbel je ads-budget op een trage site en je hebt dubbel zoveel afhakers." },
-  faq: [
-    { question: "Hoe meet ik het?", answer: "PageSpeed, CrUX, en je conversie per device." },
-  ],
-  ctaTitle: "Site traag? Ads duur?",
-  ctaBody: "Stuur je URL. Ik scan en zeg eerlijk wat eerst moet.",
-  relatedSlugs: ["core-web-vitals-verbeteren", "google-ads-bureau", "conversie-optimalisatie"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { TRAGE_WEBSITE_DURE_ADS } from './trage-website-dure-ads';
 
 export const SHOPIFY_THEME_LATEN_MAKEN: SeoLandingPage = {
   slug: "shopify-theme-laten-maken",
@@ -655,9 +320,9 @@ export const SHOPIFY_THEME_LATEN_MAKEN: SeoLandingPage = {
   visual: "webshop",
   processTitle: "Theme dat schaalt",
   processSteps: processDefault,
-  proofTitle: "SkinComplete",
-  proofBody: "Custom theme + B2B + marketing. Dat is het niveau waar je naartoe wilt.",
-  proofCase: "SkinComplete",
+  proofTitle: "Custom theme traject",
+  proofBody: "Custom theme plus B2B plus marketing. Dat is het niveau waar je naartoe wilt.",
+  proofCase: "Theme build traject",
   hotTake: { label: "Heet take", body: "Een Shopify theme laten maken door iemand die alleen themes installeert, is een Ferrari-bestelling met fietswielen." },
   faq: [
     { question: "Verschil met shopify-expert?", answer: "Theme is onderdeel. Expert is het bredere traject." },

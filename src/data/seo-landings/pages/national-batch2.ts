@@ -19,118 +19,7 @@ const processDefault = [
   },
 ] as const;
 
-export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
-  slug: "conversie-optimalisatie",
-  primaryKeyword: "conversie optimalisatie",
-  category: "website",
-  metaTitle: "Conversie optimalisatie · meer omzet zonder meer ads | Meneer Marketing",
-  metaDescription:
-    "Conversie optimalisatie en CRO voor websites en webshops. Sneller, duidelijker, meer verkopen uit hetzelfde verkeer. Eerst de grote lekken, dan testen.",
-  keywords: [
-    "conversie optimalisatie",
-    "cro specialist",
-    "cro bureau",
-    "conversie optimalisatie website",
-    "website conversie verbeteren",
-  ],
-  eyebrow: "Conversie",
-  headline: "Conversie optimalisatie die",
-  headlineAccent: "je ads niet nodig heeft om te winnen.",
-  subheadline:
-    "Meer budget in ads is de luie fix. Ik kijk waar bezoekers afhaken: snelheid, copy, vertrouwen, checkout. Zelfde verkeer, meer omzet.",
-  pains: [
-    {
-      title: "Veel bezoekers, weinig actie",
-      body: "Analytics zegt 10.000 sessies. Je inbox zegt iets anders.",
-    },
-    {
-      title: "Checkout-drama",
-      body: "Winkelwagen vol, betalen nooit. Meestal ligt het aan vertrouwen of irritatie, niet aan je product.",
-    },
-    {
-      title: "Testen zonder hypothese",
-      body: "Knop groen of rood? Leuk experiment. Geen strategie.",
-    },
-  ],
-  deliverables: [
-    {
-      title: "Funnel-audit",
-      body: "Waar lekt het? Van eerste klik tot betaling.",
-    },
-    {
-      title: "Snelheid & UX",
-      body: "Core Web Vitals, mobiel eerst. Traag = weg.",
-    },
-    {
-      title: "Copy & structuur",
-      body: "Duidelijke belofte, bewijs, één sterke CTA.",
-    },
-    {
-      title: "Meten wat telt",
-      body: "Events, heatmaps waar zinvol, beslissingen op data.",
-    },
-  ],
-  visual: "website-build",
-  visualCaption: "Conversie is geen magie. Het is een site die niet irriteert.",
-  processTitle: "CRO zonder gokken",
-  processSteps: [
-    {
-      title: "Baseline vastleggen",
-      body: "Conversie, bounce, device-split. Weten waar je staat.",
-    },
-    {
-      title: "Grootste lek eerst",
-      body: "Niet tien micro-tests. Eén ding dat het meeste oplevert.",
-    },
-    {
-      title: "Bouwen & live",
-      body: "Ik pas aan in code. Geen maanden wachten op een plugin.",
-    },
-    {
-      title: "Valideren",
-      body: "Werkt het echt? Dan door. Zo niet: volgende hypothese.",
-    },
-  ],
-  proofTitle: "BestRest & SkinComplete",
-  proofBody:
-    "Bij BestRest telt elke procent op een matras. Bij SkinComplete elke stap in het B2B-portaal. CRO is geen luxe, het is marge.",
-  proofCase: "BestRest",
-  hotTake: {
-    label: "Heet take",
-    body: "Conversie optimalisatie met alleen een heatmap-abonnement is een thermometer in een koude oven.",
-  },
-  faq: [
-    {
-      question: "Hoeveel meer conversie kan ik verwachten?",
-      answer:
-        "Hangt af van hoe lelijk het nu is. Soms 20%, soms verdubbeling. Eerst audit, dan eerlijk schatten.",
-    },
-    {
-      question: "Doen jullie ook A/B-tests?",
-      answer: "Ja, als er genoeg volume is. Anders fix ik de grote lekken eerst.",
-    },
-    {
-      question: "Werkt dit samen met SEO?",
-      answer: "Juist. Meer organisch verkeer zonder conversie is drukte, geen groei.",
-    },
-  ],
-  ctaTitle: "Meer uit je verkeer halen?",
-  ctaBody: "Stuur je URL. Ik noem de drie grootste lekken.",
-  relatedSlugs: ["landing-page-laten-maken", "website-laten-maken", "google-ads-bureau", "webshop-laten-maken"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-  layoutProfile: "editorial",
-  enrichedOverrides: {
-    story: {
-      title: "CRO bureau of conversie optimalisatie: zelfde lekken",
-      paragraphs: [
-        "Je zoekt een CRO bureau of conversie optimalisatie. Het label maakt niet uit. Wat telt: waar bezoekers afhaken en of iemand dat in code en copy durft te fixen.",
-        "Ik begin bij de grootste lekken: trage mobiel, vage belofte, checkout-frictie. Micro-tests op knopkleur komen later, als er genoeg volume is.",
-        "Bij BestRest telt elke procent op een matras. Bij SkinComplete elke stap in het B2B-portaal. CRO is marge, geen speeltuin.",
-      ],
-    },
-  },
-};
+export { CONVERSIE_OPTIMALISATIE } from './conversie-optimalisatie';
 
 export const LOKALE_SEO: SeoLandingPage = {
   slug: "lokale-seo",
@@ -261,7 +150,7 @@ export const LOKALE_SEO: SeoLandingPage = {
         "Je zoekt lokale SEO omdat klanten 'dienst + stad' typen of op Maps kijken wie dichtbij is. Wie daar niet staat, bestaat praktisch niet. Een landelijke homepage alleen lost dat zelden op.",
         "Ik zet Google Business Profile, NAP, reviews en regio-pagina's in één plan. Zo snapt Google waar je zit, wat je doet, en waarom iemand jou zou kiezen boven de zaak drie straten verder.",
         "Reviews zijn vertrouwen én een ranking-signaal. Recent en echt wint van oud en gekocht. Ik help met het proces, niet met trucjes die je account kunnen kosten.",
-        "Apeldoorn is thuisbasis. Ik ken lokale trajecten én landelijke builds zoals SkinComplete. Dezelfde standaard: unieke pagina's, schone techniek, meetbare volgende stap.",
+        "Apeldoorn is thuisbasis. Ik ken lokale trajecten én landelijke builds op custom sites en shops. Dezelfde standaard: unieke pagina's, schone techniek, meetbare volgende stap.",
         "Wil je alleen je adres vetgedrukt in de footer? Dat is geen lokale SEO. Wil je belletjes en routeaanvragen uit je eigen regio? Dan bouwen we de signalen die Maps en zoekers serieus nemen.",
       ],
     },
@@ -339,10 +228,10 @@ export const ZOEKMACHINE_OPTIMALISATIE: SeoLandingPage = {
   visual: "seo-serp",
   processTitle: "SEO die blijft staan",
   processSteps: processDefault,
-  proofTitle: "SkinComplete eerst organisch",
+  proofTitle: "Organisch eerst",
   proofBody:
-    "SkinComplete domineerde eerst SEO, daarna pas ads. Die volgorde is zoekmachine optimalisatie die zichzelf terugbetaalt.",
-  proofCase: "SkinComplete",
+    "Eerst SEO en site, daarna pas ads. Die volgorde is zoekmachine optimalisatie die zichzelf terugbetaalt.",
+  proofCase: "Organisch eerst",
   hotTake: {
     label: "Heet take",
     body: "Zoekmachine optimalisatie uitbesteden aan iemand die je site niet kan lezen in de broncode is een dure gok.",
@@ -368,83 +257,7 @@ export const ZOEKMACHINE_OPTIMALISATIE: SeoLandingPage = {
   pillarLabel: "Vindbaarheid",
 };
 
-export const TECHNISCHE_SEO: SeoLandingPage = {
-  slug: "technische-seo",
-  primaryKeyword: "technische seo",
-  category: "seo",
-  metaTitle: "Technische SEO · indexatie, snelheid, schema | Meneer Marketing",
-  metaDescription:
-    "Technische SEO voor developers en marketeers. Crawlbaarheid, Core Web Vitals, structured data. De fundering onder elke ranking.",
-  keywords: [
-    "technische seo",
-    "technische seo audit",
-    "core web vitals seo",
-    "structured data seo",
-  ],
-  eyebrow: "Technische SEO",
-  headline: "Technische SEO.",
-  headlineAccent: "Want content op een kapotte site rankt niet.",
-  subheadline:
-    "Je copy is briljant. Je site laadt 6 seconden en heeft 400 redirect-ketens. Technische SEO fixt wat je niet ziet in Word, maar Google wél ziet.",
-  pains: [
-    {
-      title: "Niet geïndexeerd",
-      body: "Pagina's bestaan. Google kent ze niet.",
-    },
-    {
-      title: "CWV in het rood",
-      body: "LCP, CLS, INP. Drie letters die je omzet kosten.",
-    },
-    {
-      title: "Schema-chaos",
-      body: "Geen structured data, of foutieve rich results.",
-    },
-  ],
-  deliverables: [
-    {
-      title: "Technische audit",
-      body: "Crawl, logs, indexatie, duplicates.",
-    },
-    {
-      title: "Performance",
-      body: "Snelheid in code, niet alleen met een plugin.",
-    },
-    {
-      title: "Schema markup",
-      body: "JSON-LD die klopt en rich results oplevert.",
-    },
-    {
-      title: "Migratie-begeleiding",
-      body: "Redirects, canonicals, geen verkeersdip na launch.",
-    },
-  ],
-  visual: "website-build",
-  visualCaption: "Techniek eerst. Content daarna. Anders bouw je op zand.",
-  processTitle: "Technische SEO traject",
-  processSteps: processDefault,
-  proofTitle: "Custom builds",
-  proofBody:
-    "Ik bouw in Next.js en Shopify. Technische SEO zit in mijn code, niet in een checklist die ik uitbesteed.",
-  hotTake: {
-    label: "Heet take",
-    body: "Technische SEO door een bureau dat alleen WordPress-plugins kent, is een timmerman met alleen een plakband.",
-  },
-  faq: [
-    {
-      question: "Alleen audits?",
-      answer: "Nee. Ik fix het ook. In je theme of Next.js project.",
-    },
-    {
-      question: "Shopify of custom?",
-      answer: "Beide. Andere stack, zelfde principes.",
-    },
-  ],
-  ctaTitle: "Techniek checken?",
-  ctaBody: "Stuur je URL. Ik noem de blockers.",
-  relatedSlugs: ["hoger-in-google", "seo-specialist", "website-laten-maken"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { TECHNISCHE_SEO } from './technische-seo';
 
 export const PPC_BUREAU: SeoLandingPage = {
   slug: "ppc-bureau",
@@ -495,7 +308,7 @@ export const PPC_BUREAU: SeoLandingPage = {
   processTitle: "PPC met controle",
   processSteps: processDefault,
   proofTitle: "Ads na SEO",
-  proofBody: "PPC werkt het best als je site al converteert. SkinComplete deed het in die volgorde. Scheelt je een fortuin aan leergeld.",
+  proofBody: "PPC werkt het best als je site al converteert. Die volgorde bespaart je een fortuin aan leergeld.",
   hotTake: {
     label: "Heet take",
     body: "Een PPC bureau dat alleen in het ads-dashboard leeft, is een piloot die nooit het vliegtuig inspecteert.",
@@ -517,241 +330,13 @@ export const PPC_BUREAU: SeoLandingPage = {
   pillarLabel: "Campagnes",
 };
 
-export const E_COMMERCE_MARKETING: SeoLandingPage = {
-  slug: "e-commerce-marketing",
-  primaryKeyword: "e-commerce marketing",
-  category: "shopify",
-  metaTitle: "E-commerce marketing · shop, SEO & ads | Meneer Marketing",
-  metaDescription:
-    "E-commerce marketing from scratch: Shopify, SEO, Google Shopping, e-mail en automatisering. Eén plan voor je hele shop.",
-  keywords: [
-    "e-commerce marketing",
-    "ecommerce marketing bureau",
-    "ecommerce specialist",
-    "online winkel marketing",
-    "webshop marketing",
-    "webshop marketing bureau",
-  ],
-  eyebrow: "E-commerce",
-  headline: "E-commerce marketing",
-  headlineAccent: "zonder losse eilandjes.",
-  subheadline:
-    "Je shop draait. Organisch, Shopping, e-mail en social praten niet met elkaar. Ik ben je e-commerce specialist én marketing manager: strategie, bouw en campagnes in één lijn.",
-  pains: [
-    {
-      title: "Alles los",
-      body: "SEO-bureau hier, ads daar, shop door een neef. Chaos.",
-    },
-    {
-      title: "Marge onzichtbaar",
-      body: "Je weet niet welk product ads kan betalen en welk niet.",
-    },
-    {
-      title: "Seizoensstress",
-      body: "Black Friday zonder plan is paniek met budget.",
-    },
-  ],
-  deliverables: [
-    {
-      title: "Shop + marketing",
-      body: "Shopify custom, snel en schaalbaar.",
-    },
-    {
-      title: "Organisch + Shopping",
-      body: "Product-SEO en feeds die kloppen.",
-    },
-    {
-      title: "E-mail & retentie",
-      body: "Herhaalaankopen, niet alleen nieuwe klanten jagen.",
-    },
-    {
-      title: "Automatisering",
-      body: "Flows die orders en leads koppelen.",
-    },
-  ],
-  visual: "webshop",
-  visualCaption: "E-commerce is een systeem. Geen losse knoppen.",
-  processTitle: "Shop die groeit",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
-  proofBody:
-    "Twee totaal verschillende shops. Zelfde aanpak: eerst fundament, dan schalen. E-commerce marketing is maatwerk, geen pakket.",
-  hotTake: {
-    label: "Heet take",
-    body: "E-commerce marketing met alleen meer ads is benzine in een lekke tank.",
-  },
-  faq: [
-    {
-      question: "Alleen Shopify?",
-      answer: "Voor shops voorkeur Shopify. Custom sites in Next.js.",
-    },
-    {
-      question: "B2B webshops?",
-      answer: "Ja. Portaal, prijzen, herbestellen. SkinComplete-niveau.",
-    },
-  ],
-  ctaTitle: "Shop laten groeien?",
-  ctaBody: "Vertel je omzet en doel. Ik schets de volgorde.",
-  relatedSlugs: ["webshop-laten-maken", "shopify-expert", "google-shopping-ads"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { E_COMMERCE_MARKETING } from './e-commerce-marketing';
 
 export { EMAILMARKETING } from './e-mailmarketing';
 
 export { TIKTOK_ADS_BUREAU } from './tiktok-ads-bureau';
 
-export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
-  slug: "leadgeneratie-website",
-  primaryKeyword: "leadgeneratie website",
-  category: "website",
-  metaTitle: "Leadgeneratie website · leads die converteren | Meneer Marketing",
-  metaDescription:
-    "Leadgeneratie website from scratch. Formulieren, landings, SEO en ads-klaar. Meer gekwalificeerde leads, minder junk in je inbox.",
-  keywords: [
-    "leadgeneratie website",
-    "leads genereren website",
-    "leadgeneratie online marketing",
-    "b2b leadgeneratie",
-  ],
-  eyebrow: "Leadgeneratie",
-  headline: "Leadgeneratie website",
-  headlineAccent: "zonder junk leads.",
-  subheadline:
-    "Je wilt leads. Niet 'interesse' van iemand die alleen je whitepaper wil en nooit koopt. Ik bouw sites en landings die de juiste mensen aantrekken en filteren.",
-  pains: [
-    {
-      title: "Formulier, geen follow-up",
-      body: "Lead binnen. Niemand belt. Lead koud.",
-    },
-    {
-      title: "Verkeerde leads",
-      body: "Studenten, concurrenten, mensen zonder budget.",
-    },
-    {
-      title: "Site zonder SEO",
-      body: "Alleen ads. Duur als de kraan dichtgaat.",
-    },
-  ],
-  deliverables: [
-    {
-      title: "Landings per dienst",
-      body: "Eén propositie, één CTA. Duidelijk.",
-    },
-    {
-      title: "SEO + ads",
-      body: "Organisch en betaald op dezelfde pagina's.",
-    },
-    {
-      title: "Kwalificatie",
-      body: "Vragen die junk filteren.",
-    },
-    {
-      title: "CRM-koppeling",
-      body: "Lead direct waar je team hem ziet.",
-    },
-  ],
-  visual: "website-build",
-  processTitle: "Leads die tellen",
-  processSteps: processDefault,
-  proofTitle: "B2B en dienstverlening",
-  proofBody:
-    "Leadgeneratie werkt als site, copy en opvolging op één lijn zitten. Ik bouw dat plaatje.",
-  hotTake: {
-    label: "Heet take",
-    body: "Leadgeneratie met een formulier onderaan je homepage is een visitekaartje in een windtunnel.",
-  },
-  faq: [
-    {
-      question: "B2B of B2C?",
-      answer: "Beide. B2B vaker met kwalificatie en langere cycles.",
-    },
-    {
-      question: "Alleen de site?",
-      answer: "Nee. SEO, ads en automatisering horen er vaak bij.",
-    },
-  ],
-  ctaTitle: "Betere leads?",
-  ctaBody: "Vertel je dienst en ideale klant. Ik schets de site.",
-  relatedSlugs: ["landing-page-laten-maken", "google-ads-bureau", "marketing-automatisering"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { LEADGENERATIE_WEBSITE } from './leadgeneratie-website';
 
-export const WOOCOMMERCE_NAAR_SHOPIFY: SeoLandingPage = {
-  slug: "woocommerce-naar-shopify",
-  primaryKeyword: "woocommerce naar shopify",
-  category: "shopify",
-  metaTitle: "WooCommerce naar Shopify · migratie zonder SEO-dip | Meneer Marketing",
-  metaDescription:
-    "WooCommerce naar Shopify migreren met redirects, SEO en custom theme. Geen template-migratie die je rankings sloopt.",
-  keywords: [
-    "woocommerce naar shopify",
-    "wordpress webshop migratie shopify",
-    "shopify migratie",
-    "webshop migreren naar shopify",
-  ],
-  eyebrow: "Migratie",
-  headline: "WooCommerce naar Shopify",
-  headlineAccent: "zonder rankings te vermoorden.",
-  subheadline:
-    "WordPress webshop traag, plugin-hel en updates die alles breken? Shopify is vaak slimmer. Maar slordig migreren kost je Google-verkeer. Ik migreer met SEO, redirects en een shop die sneller verkoopt.",
-  pains: [
-    {
-      title: "Plugin-spaghetti",
-      body: "Elke functie een plugin. Site instabiel.",
-    },
-    {
-      title: "Migratie = 404-drama",
-      body: "URLs veranderen. Rankings weg. Omzet weg.",
-    },
-    {
-      title: "Theme dat niet schaalt",
-      body: "WooCommerce theme was oké. Groei niet.",
-    },
-  ],
-  deliverables: [
-    {
-      title: "SEO-veilige migratie",
-      body: "Redirects, canonicals, sitemap. Geen dip als het kan.",
-    },
-    {
-      title: "Custom Shopify theme",
-      body: "Niet alleen importeren. Verbeteren.",
-    },
-    {
-      title: "Data & orders",
-      body: "Producten, klanten, historie netjes over.",
-    },
-    {
-      title: "Marketing aansluiten",
-      body: "Shopping, e-mail, tracking direct goed.",
-    },
-  ],
-  visual: "webshop",
-  visualCaption: "Migratie is geen knop. Het is een project met een checklist.",
-  processTitle: "Veilig overstappen",
-  processSteps: processDefault,
-  proofTitle: "Migratie-ervaring",
-  proofBody:
-    "WordPress promoten doe ik niet. Migreren naar custom of Shopify wel. Je verliest geen tijd aan plugins, je wint snelheid.",
-  hotTake: {
-    label: "Heet take",
-    body: "WooCommerce naar Shopify migreren met een gratis import-app en geen redirect-plan is SEO-zelfmoord.",
-  },
-  faq: [
-    {
-      question: "Hoe lang duurt het?",
-      answer: "Kleine shop: weken. Grote catalogus: langer. Altijd met testomgeving.",
-    },
-    {
-      question: "Blijft mijn SEO?",
-      answer: "Dat is het doel. Redirects en structuur zijn het halve werk.",
-    },
-  ],
-  ctaTitle: "Migratie plannen?",
-  ctaBody: "Vertel je huidige shop. Ik schets stappen en risico's.",
-  relatedSlugs: ["shopify-expert", "webshop-laten-maken", "technische-seo"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { WOOCOMMERCE_NAAR_SHOPIFY } from './woocommerce-naar-shopify';
+

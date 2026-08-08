@@ -46,7 +46,7 @@ export const GOOGLE_ADS_SPECIALIST: SeoLandingPage = {
   visual: "google-ads",
   processTitle: "Google Ads met het volle plaatje",
   processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
+  proofTitle: "Marge per account",
   proofBody: "Verschillende shops, verschillende marges. Geen copy-paste specialist die elk account hetzelfde behandelt.",
   hotTake: { label: "Heet take", body: "Een Google Ads specialist die landings uitbesteedt, gokt met jouw budget." },
   faq: [
@@ -88,7 +88,7 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
   processTitle: "Zo pak ik uitbesteding aan",
   processSteps: processDefault,
   proofTitle: "Ads na fundament",
-  proofBody: "SkinComplete: eerst organisch en site, dan ads. Die volgorde bespaart je op uitbesteding die te vroeg begint.",
+  proofBody: "Eerst organisch en site, dan ads. Die volgorde bespaart je op uitbesteding die te vroeg begint.",
   hotTake: { label: "Heet take", body: "Google Ads uitbesteden aan iemand die je site nooit opent, is een duur experiment." },
   faq: [
     { question: "Wat kost uitbesteden?", answer: "Hangt af van markt en budget. Voorstel na intake, geen vaste pakketten op de site." },
@@ -101,47 +101,7 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
   pillarLabel: "Campagnes",
 };
 
-export const REMARKETING_GOOGLE_ADS: SeoLandingPage = {
-  slug: "remarketing-google-ads",
-  primaryKeyword: "remarketing google ads",
-  category: "google-ads",
-  metaTitle: "Remarketing Google Ads · warm verkeer terug | Meneer Marketing",
-  metaDescription:
-    "Remarketing in Google Ads zonder irritatie. Segmenten, frequentiecaps en creatives die converteren. Geen stalker-banner.",
-  keywords: ["remarketing google ads", "retargeting google", "remarketing campagne", "google ads retargeting"],
-  eyebrow: "Remarketing",
-  headline: "Remarketing die mensen",
-  headlineAccent: "terugbrengt, niet wegjaagt.",
-  subheadline:
-    "Bezoekers die al interesse toonden zijn goedkoper dan koude kliks. Maar zonder segmentatie en caps word je het merk dat mensen naar adblocker drijft.",
-  pains: [
-    { title: "Iedereen dezelfde banner", body: "Converters zien nog weken je ads. Irritant en duur." },
-    { title: "Geen segmenten", body: "Cart abandoners en bloglezers in dezelfde campagne. Chaos." },
-    { title: "Remarketing vóór volume", body: "Tien bezoekers per dag. Remarketing lost dat niet op." },
-  ],
-  deliverables: [
-    { title: "Segmentatie", body: "Productviewers, cart, converters uitsluiten." },
-    { title: "Frequentiecaps", body: "Genoeg herinnering, geen spam." },
-    { title: "Dynamic remarketing", body: "Producten die ze bekeken, met schone feed." },
-    { title: "Cross-channel", body: "Google + Meta in één strategie." },
-  ],
-  visual: "google-ads",
-  visualCaption: "Warm verkeer is goedkoop. Alleen als je site al converteert.",
-  processTitle: "Remarketing die rendeert",
-  processSteps: processDefault,
-  proofTitle: "E-commerce retentie",
-  proofBody: "Remarketing vangt twijfel op. Het vervangt geen goede productpagina of e-mailflow.",
-  hotTake: { label: "Heet take", body: "Remarketing op je hele site zonder segmentatie is een megafoon in een bibliotheek." },
-  faq: [
-    { question: "Hoeveel verkeer heb ik nodig?", answer: "Hangt af van je cyclus. Lage traffic? Eerst acquisitie of SEO." },
-    { question: "GDPR en consent?", answer: "Correcte consent mode. Geen shortcuts." },
-  ],
-  ctaTitle: "Remarketing laten opzetten?",
-  ctaBody: "Vertel je traffic en doelen. Ik schets de segmenten.",
-  relatedSlugs: ["google-ads-bureau", "meta-ads-bureau", "conversie-optimalisatie"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { REMARKETING_GOOGLE_ADS } from './remarketing-google-ads';
 
 export const FACEBOOK_ADS_BUREAU: SeoLandingPage = {
   slug: "facebook-ads-bureau",
@@ -252,9 +212,9 @@ export const SHOPIFY_WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   visual: "webshop",
   processTitle: "Shopify traject",
   processSteps: processDefault,
-  proofTitle: "SkinComplete",
-  proofBody: "B2B-portaal, marketing en vindbaarheid op Shopify. Dat is mijn referentie.",
-  proofCase: "SkinComplete",
+  proofTitle: "Shop + marketing",
+  proofBody: "B2B-portaal, marketing en vindbaarheid op Shopify. Dat is het niveau waar ik naartoe bouw.",
+  proofCase: "Shopify build traject",
   hotTake: { label: "Heet take", body: "Een Shopify webshop laten maken met alleen een theme installeren is een monteur zonder garage." },
   faq: [
     { question: "Verschil met webshop laten maken?", answer: "Zelfde intentie. Deze pagina is voor wie specifiek Shopify zoekt." },
@@ -267,88 +227,9 @@ export const SHOPIFY_WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const SHOPIFY_SEO: SeoLandingPage = {
-  slug: "shopify-seo",
-  primaryKeyword: "shopify seo",
-  category: "shopify",
-  metaTitle: "Shopify SEO · producten ranken & converteren | Meneer Marketing",
-  metaDescription:
-    "Shopify SEO: techniek, productpagina's, collecties en Shopping. Organisch verkeer dat je ads versterkt, niet vervangt.",
-  keywords: ["shopify seo", "shopify seo specialist", "seo shopify webshop", "shopify vindbaarheid"],
-  eyebrow: "Shopify SEO",
-  headline: "Shopify SEO die",
-  headlineAccent: "producten laat ranken én verkopen.",
-  subheadline:
-    "Shopify SEO is niet alleen titeltags invullen. Het is snelheid, dunne pagina's vermijden, collecties structureren en content die antwoord geeft op echte zoekvragen.",
-  pains: [
-    { title: "Collecties ranken, producten niet", body: "Dunne productpagina's, duplicate filters." },
-    { title: "Theme SEO-limiet", body: "Standaard theme blokkeert technische fixes." },
-    { title: "Alleen ads", body: "Organisch leeg. Elke euro via betaald." },
-  ],
-  deliverables: [
-    { title: "Technische Shopify SEO", body: "Snelheid, indexatie, schema." },
-    { title: "Product- & collectie-optimalisatie", body: "Unieke content per pagina." },
-    { title: "Blog & koopgidsen", body: "Intentie die Shopping voedt." },
-    { title: "Koppeling met ads", body: "Organisch eerst testen, dan schalen." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Shopify organisch laten groeien",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete eerst organisch",
-  proofBody: "Eerst SEO en shop, daarna ads. Die volgorde bij SkinComplete is geen toeval.",
-  proofCase: "SkinComplete",
-  hotTake: { label: "Heet take", body: "Shopify SEO met alleen AI-productbeschrijvingen is een catalogus die Google negeert." },
-  faq: [
-    { question: "Hoe lang tot resultaat?", answer: "Eerste beweging vaak weken. Dominantie kan maanden duren." },
-    { question: "Custom theme nodig?", answer: "Niet altijd. Wel vaak voor serieuze technische SEO." },
-  ],
-  ctaTitle: "Shopify SEO laten checken?",
-  ctaBody: "Stuur je shop-URL. Ik noem de grootste kansen.",
-  relatedSlugs: ["shopify-expert", "hoger-in-google", "google-shopping-ads"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { SHOPIFY_SEO } from './shopify-seo';
 
-export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
-  slug: "nextjs-website-laten-maken",
-  primaryKeyword: "next.js website laten maken",
-  category: "website",
-  metaTitle: "Next.js website laten maken · custom build | Meneer Marketing",
-  metaDescription:
-    "Next.js website laten maken from scratch. Snel, SEO-perfect, schaalbaar. Geen WordPress, geen page builder.",
-  keywords: ["next.js website laten maken", "nextjs website", "react website laten maken", "custom website nextjs"],
-  eyebrow: "Next.js",
-  headline: "Next.js website laten maken",
-  headlineAccent: "zonder template-gedoe.",
-  subheadline:
-    "Next.js is wat ik gebruik voor sites die snel moeten zijn, perfect moeten ranken en moeten meegroeien. Geen plugins die breken. Eigen code, volledige controle.",
-  pains: [
-    { title: "WordPress traagheid", body: "Plugins, updates, hacks. Je site wordt een project op zich." },
-    { title: "Page builders", body: "Mooi in de editor, zwaar in de browser." },
-    { title: "Geen schaal", body: "Template kraakt onder verkeer en ambities." },
-  ],
-  deliverables: [
-    { title: "Custom Next.js build", body: "App Router, TypeScript, Tailwind." },
-    { title: "Core Web Vitals groen", body: "Snelheid als standaard, niet als afterthought." },
-    { title: "SEO & schema", body: "JSON-LD, semantische HTML, sitemap." },
-    { title: "CMS waar nodig", body: "Jij beheert content zonder de tech te slopen." },
-  ],
-  visual: "website-build",
-  processTitle: "From scratch bouwen",
-  processSteps: processDefault,
-  proofTitle: "MeneerMarketing zelf",
-  proofBody: "Deze site draait op Next.js. Ik eet mijn eigen cooking. Snelheid, SEO en animaties zonder compromis.",
-  hotTake: { label: "Heet take", body: "Een Next.js website laten maken door iemand die alleen WordPress kent, is een Ferrari-bouwplaats met een fietsenmaker." },
-  faq: [
-    { question: "WordPress migratie?", answer: "Ja. Van WordPress naar custom als het zinvol is." },
-    { question: "Alleen corporate sites?", answer: "Corporate, landings, portals. Shops doe ik in Shopify." },
-  ],
-  ctaTitle: "Next.js site bespreken?",
-  ctaBody: "Vertel je plannen. Ik schets architectuur en scope.",
-  relatedSlugs: ["website-laten-maken", "technische-seo"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { NEXTJS_WEBSITE_LATEN_MAKEN } from './nextjs-website-laten-maken';
 
 export const WEBSITE_LATEN_BOUWEN: SeoLandingPage = {
   slug: "website-laten-bouwen",
@@ -391,46 +272,7 @@ export const WEBSITE_LATEN_BOUWEN: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const SEO_AUDIT: SeoLandingPage = {
-  slug: "seo-audit",
-  primaryKeyword: "seo audit",
-  category: "seo",
-  metaTitle: "SEO audit · wat lekt en wat wint | Meneer Marketing",
-  metaDescription:
-    "SEO audit met techniek, content en autoriteit. Geen 200-punten PDF die in een la verdwijnt. Wel prioriteiten die je deze maand kunt fixen.",
-  keywords: ["seo audit", "seo audit laten uitvoeren", "website seo analyse", "seo scan"],
-  eyebrow: "SEO audit",
-  headline: "SEO audit die",
-  headlineAccent: "geen Excel-cemetery wordt.",
-  subheadline:
-    "Een audit moet je vertellen wat je eerst fixt en waarom. Niet vijftig pagina's met vage scores. Ik audit alsof ik daarna zelf ga bouwen. Omdat dat vaak ook zo is.",
-  pains: [
-    { title: "Audit zonder actie", body: "Mooi rapport. Niets live. Rankings hetzelfde." },
-    { title: "Alleen techniek", body: "Crawl errors gefixt. Content nog steeds waardeloos." },
-    { title: "Alleen content", body: "Blogs geschreven. Site nog steeds traag." },
-  ],
-  deliverables: [
-    { title: "Technische scan", body: "Indexatie, snelheid, schema, redirects." },
-    { title: "Content & intentie", body: "Wat rankt, wat mist, wat cannibaliseert." },
-    { title: "Concurrentie-snapshot", body: "Wie wint op jouw zoekwoorden en waarom." },
-    { title: "Prioriteitenlijst", body: "Gesorteerd op impact en inspanning." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Audit die leidt tot actie",
-  processSteps: processDefault,
-  proofTitle: "Bouwer + SEO",
-  proofBody: "Ik lees broncode. Audits zijn geen theoretische oefening. Wat ik vind, kan ik vaak zelf fixen.",
-  hotTake: { label: "Heet take", body: "Een SEO audit van iemand die niet kan bouwen, is een diagnose zonder dokter." },
-  faq: [
-    { question: "Hoe lang duurt een audit?", answer: "Kleine site: dagen. Grote shop: langer. Altijd met heldere deadline." },
-    { question: "Implementeren jullie ook?", answer: "Ja. Audit alleen kan, doorpakken liever." },
-  ],
-  ctaTitle: "SEO audit aanvragen?",
-  ctaBody: "Stuur je URL. Ik schets scope en aanpak.",
-  relatedSlugs: ["technische-seo", "seo-specialist", "hoger-in-google"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { SEO_AUDIT } from './seo-audit';
 
 export const SEO_UITBESTEDEN: SeoLandingPage = {
   slug: "seo-uitbesteden",
@@ -459,9 +301,9 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
   visual: "seo-serp",
   processTitle: "SEO die rendeert",
   processSteps: processDefault,
-  proofTitle: "SkinComplete organisch eerst",
+  proofTitle: "Organisch eerst",
   proofBody: "SEO uitbesteden werkt als je partner kan bouwen én schrijven. Niet alleen het een of het ander.",
-  proofCase: "SkinComplete",
+  proofCase: "SEO uitbesteding traject",
   hotTake: { label: "Heet take", body: "SEO uitbesteden aan een bureau dat je site niet in code kan lezen, is een abonnement op teleurstelling." },
   faq: [
     { question: "Hoe snel resultaat?", answer: "Eerste signalen vaak 6-12 weken. Eerlijk gecommuniceerd." },
@@ -474,129 +316,11 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
   pillarLabel: "Vindbaarheid",
 };
 
-export const LINKBUILDING_BUREAU: SeoLandingPage = {
-  slug: "linkbuilding-bureau",
-  primaryKeyword: "linkbuilding bureau",
-  category: "seo",
-  metaTitle: "Linkbuilding bureau · autoriteit zonder spam | Meneer Marketing",
-  metaDescription:
-    "Linkbuilding met echte vermeldingen en content die citeerbaar is. Geen link-farmen, geen PBN's. Autoriteit die Google en AI vertrouwen.",
-  keywords: ["linkbuilding bureau", "linkbuilding seo", "autoriteit opbouwen seo", "backlinks nederland"],
-  eyebrow: "Linkbuilding",
-  headline: "Linkbuilding bureau dat",
-  headlineAccent: "geen link-spam verkoopt.",
-  subheadline:
-    "Links tellen nog steeds. Alleen kopen in bulk werkt niet meer. Autoriteit komt van echte vermeldingen, sterke content en een merk dat mensen willen citeren.",
-  pains: [
-    { title: "Gekochte links", body: "Penalty-risico. Kort gewin, lang verlies." },
-    { title: "Geen linkwaardige content", body: "Niemand linkt naar een dunne productpagina." },
-    { title: "Alleen links, geen basis", body: "100 backlinks op een trage site. Verspilling." },
-  ],
-  deliverables: [
-    { title: "Content die linkwaardig is", body: "Onderzoek, cases, tools. Niet fluff." },
-    { title: "Digitale PR & outreach", body: "Echte vermeldingen in je markt." },
-    { title: "Interne linkstructuur", body: "Autoriteit door je eigen site leiden." },
-    { title: "E-E-A-T versterken", body: "Expertise zichtbaar maken voor Google en AI." },
-  ],
-  visual: "content-hub",
-  processTitle: "Autoriteit opbouwen",
-  processSteps: processDefault,
-  proofTitle: "Kwaliteit boven kwantiteit",
-  proofBody: "Liever tien goede vermeldingen dan honderd spam-links. Google is niet dom. Jij ook niet.",
-  hotTake: { label: "Heet take", body: "Een linkbuilding bureau dat garanties geeft op x backlinks, verkoopt je een penalty in installments." },
-  faq: [
-    { question: "Kopen jullie links?", answer: "Nee. Echte outreach en content die mensen willen delen." },
-    { question: "Hoe lang duurt het?", answer: "Autoriteit bouwt maanden. Geen overnight tricks." },
-  ],
-  ctaTitle: "Autoriteit opbouwen?",
-  ctaBody: "Vertel je markt. Ik schets wat linkwaardig is.",
-  relatedSlugs: ["seo-specialist", "content-marketing-vindbaarheid", "hoger-in-google"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { LINKBUILDING_BUREAU } from './linkbuilding-bureau';
 
-export const ONLINE_MARKETING_MANAGER: SeoLandingPage = {
-  slug: "online-marketing-manager",
-  primaryKeyword: "online marketing manager",
-  category: "seo",
-  metaTitle: "Online marketing manager · één aanspreekpunt | Meneer Marketing",
-  metaDescription:
-    "Jouw online marketing manager: strategie, bouw, SEO, Google Ads en Meta. Geen vijf freelancers, wel één plan en één stem.",
-  keywords: ["online marketing manager", "marketing manager inhuren", "online marketing manager mkb", "externe marketing manager"],
-  eyebrow: "Online marketing manager",
-  headline: "Jouw online marketing manager.",
-  headlineAccent: "Zonder HR-gedoe.",
-  subheadline:
-    "Ik ben geen bureau met 40 junior medewerkers. Ik ben de online marketing manager die je site bouwt, je SEO fixt en je ads bijstuurt. Eén brein, één lijn, geen spaghetti.",
-  pains: [
-    { title: "Te veel partijen", body: "SEO hier, ads daar, site door een neef. Niemand heeft overzicht." },
-    { title: "Intern te duur of te weinig tijd", body: "Een fulltime manager is zwaar voor veel MKB." },
-    { title: "Bureau zonder uitvoering", body: "Slides en rapporten. Geen pagina die live gaat." },
-  ],
-  deliverables: [
-    { title: "Strategie & prioriteit", body: "Wat eerst, wat later. Eerlijk." },
-    { title: "Uitvoering", body: "Bouwen, schrijven, campagnes draaien." },
-    { title: "Wekelijks bijsturen", body: "Geen kwartaalgesprek over cijfers van drie maanden geleden." },
-    { title: "Eén aanspreekpunt", body: "Jij praat met mij. Niet met een account manager die wisselt." },
-  ],
-  visual: "content-hub",
-  visualCaption: "Eén manager. Eén plan. Geen eilandjes.",
-  processTitle: "Zo werk ik als jouw manager",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
-  proofBody: "Van shop tot SEO tot ads: ik ken het traject omdat ik het zo heb gedaan voor echte klanten.",
-  hotTake: { label: "Heet take", body: "Een online marketing manager die niet kan bouwen, is een planner zonder werkplaats." },
-  faq: [
-    { question: "Vervang ik mijn hele team?", answer: "Nee. Ik vul aan waar het moet en pak de rode draad." },
-    { question: "Hoeveel uur per maand?", answer: "Hangt af van scope. Intake bepaalt wat je nodig hebt." },
-  ],
-  ctaTitle: "Marketing manager nodig?",
-  ctaBody: "Vertel waar je nu zit. Ik schets hoe ik aansluit.",
-  relatedSlugs: ["online-marketing-bureau", "google-ads-bureau", "hoger-in-google"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { ONLINE_MARKETING_MANAGER } from './online-marketing-manager';
 
-export const PERFORMANCE_MARKETING_BUREAU: SeoLandingPage = {
-  slug: "performance-marketing-bureau",
-  primaryKeyword: "performance marketing bureau",
-  category: "google-ads",
-  metaTitle: "Performance marketing bureau · meetbaar groeien | Meneer Marketing",
-  metaDescription:
-    "Performance marketing bureau: Google Ads, Meta, Shopping en landings die converteren. ROAS en CPA met marge in het hoofd.",
-  keywords: ["performance marketing bureau", "performance marketing nederland", "datagedreven marketing bureau"],
-  eyebrow: "Performance marketing",
-  headline: "Performance marketing bureau",
-  headlineAccent: "dat je bankrekening snapt.",
-  subheadline:
-    "Performance marketing klinkt als jargon. Het betekent: elke euro moet je kunnen verantwoorden. Ik meet wat werkt, stop wat lekt, en bouw wat ontbreekt.",
-  pains: [
-    { title: "Metrics zonder marge", body: "ROAS 5 op producten die verlies draaien." },
-    { title: "Klikken als doel", body: "Dashboard groen. Omzet grijs." },
-    { title: "Kanalen zonder samenhang", body: "Google en Meta vechten tegen elkaar." },
-  ],
-  deliverables: [
-    { title: "Google & Meta performance", body: "Search, Shopping, social met conversiedoel." },
-    { title: "Tracking & attributie", body: "Weten wat echt oplevert." },
-    { title: "Landings & CRO", body: "Performance stopt niet bij de klik." },
-    { title: "Wekelijkse optimalisatie", body: "Budget naar bewezen winnaars." },
-  ],
-  visual: "google-ads",
-  processTitle: "Performance met discipline",
-  processSteps: processDefault,
-  proofTitle: "BestRest per product",
-  proofBody: "Performance marketing werkt per productlijn, niet op accountniveau met gemiddelden die liegen.",
-  hotTake: { label: "Heet take", body: "Performance marketing zonder iemand die je site kan fixen, is optimalisatie in een huis met lekkende ramen." },
-  faq: [
-    { question: "Verschil met online marketing bureau?", answer: "Performance focust op meetbare acquisitie. Ik pak vaak het bredere plaatje mee." },
-    { question: "Minimum budget?", answer: "Afhankelijk van markt. Breakeven eerst doorrekenen." },
-  ],
-  ctaTitle: "Performance marketing starten?",
-  ctaBody: "Vertel je doelen en marge. Ik schets het plan.",
-  relatedSlugs: ["google-ads-bureau", "conversie-optimalisatie"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { PERFORMANCE_MARKETING_BUREAU } from './performance-marketing-bureau';
 
 export const CRO_BUREAU: SeoLandingPage = {
   slug: "cro-bureau",
@@ -625,7 +349,7 @@ export const CRO_BUREAU: SeoLandingPage = {
   visual: "website-build",
   processTitle: "CRO die oplevert",
   processSteps: processDefault,
-  proofTitle: "BestRest & shops",
+  proofTitle: "Conversie op schaal",
   proofBody: "Elke procent conversie telt op schaal. CRO is de goedkoopste groei als je al verkeer hebt.",
   hotTake: { label: "Heet take", body: "Een CRO bureau dat je site niet aanraakt, verkoopt je inzichten die niemand uitvoert." },
   faq: [
@@ -639,44 +363,5 @@ export const CRO_BUREAU: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const TRACKING_GOOGLE_ANALYTICS: SeoLandingPage = {
-  slug: "tracking-google-analytics",
-  primaryKeyword: "google analytics tracking",
-  category: "b2b-portal",
-  metaTitle: "Google Analytics tracking · data die klopt | Meneer Marketing",
-  metaDescription:
-    "Google Analytics, GTM en conversietracking goed zetten. Consent mode, ecommerce events, ads-koppeling. Geen optimalisatie op leugens.",
-  keywords: ["google analytics tracking", "gtm specialist", "conversietracking setup", "google tag manager bureau"],
-  eyebrow: "Tracking",
-  headline: "Google Analytics tracking",
-  headlineAccent: "zonder fantasie-cijfers.",
-  subheadline:
-    "Je optimaliseert op wat je meet. Meet je rommel, krijg je rommel. Ik zet GA4, GTM en ads-tracking zo dat je team en algoritmes de waarheid zien.",
-  pains: [
-    { title: "Dubbele conversies", body: "Dashboard toont 40 sales. Je had er 8." },
-    { title: "Geen ecommerce events", body: "ROAS is decoratie zonder waarde." },
-    { title: "Consent kapot", body: "Data mist. Smart bidding vliegt blind." },
-  ],
-  deliverables: [
-    { title: "GA4 & GTM setup", body: "Schone container, documentatie." },
-    { title: "Ecommerce tracking", body: "Orders, waarde, producten." },
-    { title: "Ads-koppeling", body: "Google en Meta conversies correct." },
-    { title: "Consent mode", body: "GDPR-proof zonder data-zwart gat." },
-  ],
-  visual: "b2b-portal",
-  visualCaption: "Meet eerst. Optimaliseer daarna. Anders gok je.",
-  processTitle: "Tracking die blijft werken",
-  processSteps: processDefault,
-  proofTitle: "Ads + data",
-  proofBody: "Zonder tracking fix je geen ads-account. Ik begin vaak hier voordat budget omhoog gaat.",
-  hotTake: { label: "Heet take", body: "Google Ads optimaliseren zonder werkende conversietracking is autorijden met een beslagen voorruit." },
-  faq: [
-    { question: "Alleen setup?", answer: "Ja, of onderdeel van een breder traject met ads en CRO." },
-    { question: "Shopify of custom?", answer: "Beide. Andere stack, zelfde principes." },
-  ],
-  ctaTitle: "Tracking laten checken?",
-  ctaBody: "Vertel je stack. Ik scan wat er mis gaat.",
-  relatedSlugs: ["google-ads-bureau", "performance-marketing-bureau"],
-  pillarSlug: "behoud",
-  pillarLabel: "Behoud",
-};
+export { TRACKING_GOOGLE_ANALYTICS } from './tracking-google-analytics';
+

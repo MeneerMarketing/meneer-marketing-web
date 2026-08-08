@@ -74,8 +74,8 @@ export const CONTENT_MARKETING_VINDBAARHEID: SeoLandingPage = {
   ],
   proofTitle: "Vindbaarheid is content plus techniek",
   proofBody:
-    "SkinComplete rankte op salonvragen omdat elke pagina een echt antwoord was, niet een generiek blogbericht met een keyword in de titel. BestRest kreeg per productlijn eigen verhaal. Specificiteit compound.",
-  proofCase: "SkinComplete",
+    "Elke pagina pakt één echte vraag. Niet een generiek blogbericht met een keyword in de titel. Per productlijn eigen verhaal waar dat telt. Specificiteit compound.",
+  proofCase: "Intentie eerst",
   hotTake: {
     label: "Heet take",
     body: "Content marketing voor vindbaarheid zonder landingspagina's is een folder vol mooie teksten die niemand leest.",
@@ -135,7 +135,7 @@ export const CONTENT_MARKETING_VINDBAARHEID: SeoLandingPage = {
       title: "Content marketing voor vindbaarheid is antwoorden bouwen",
       paragraphs: [
         "Je zoekt content marketing voor vindbaarheid omdat blogs niet ranken en AI je concurrent noemt. Het verschil zit zelden in meer publicaties. Het zit in pagina's die één vraag beter beantwoorden dan de top 10.",
-        "Ik start bij vragen uit sales en support, niet bij een keywordtool alleen. SkinComplete groeide op salonvragen die mensen echt typen. Diezelfde logica voedt Google én ChatGPT.",
+        "Ik start bij vragen uit sales en support, niet bij een keywordtool alleen. Vragen die mensen echt typen voeden Google én ChatGPT. Die logica zet ik in elk contentplan.",
         "Bulk-AI zonder redactie maakt je onzichtbaar. Gemiddelde tekst is per definitie niet beter dan wat al staat. Jouw ervaring, cases en mening maken het verschil.",
         "Techniek hoort erbij: interne links, schema, updates. Content zonder netwerk is een eiland. Content met structuur wordt een cluster dat autoriteit opbouwt.",
         "Wil je een blogkalender voor de show? Dan ben ik te streng. Wil je pagina's die leads of orders opleveren? Dan zetten we een contentplan dat meetbaar blijft.",
