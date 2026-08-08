@@ -7,7 +7,7 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
     "Wanneer WordPress genoeg is en wanneer custom build in Next.js logischer is voor snelheid, SEO en campagnes.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 15,
   category: "bouwen",
   keywords: [
     "wordpress website traag",
@@ -51,6 +51,92 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: blijf op WordPress als het werkt en je scope klein blijft. Overweeg custom build als snelheid, SEO, campagnes en eigen uitbreidingen je theme constant tegenwerken.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Theme-check",
+      title: "Theme-knijpt-meter",
+      intro:
+        "Vink aan wat klopt. Hoe hoger, hoe harder je WordPress-theme terugknijpt terwijl jij wilt schalen.",
+      storageKey: "mm-wp-knijpt",
+      eventName: "wp_knijpt_complete",
+      sharePath: "/kennisbank/wordpress-theme-groeien-nextjs",
+      scoreNoun: "knijp",
+      ctaHref: "/diensten/webdevelopment",
+      ctaLabel: "Websites from scratch",
+      checks: [
+        {
+          id: "landings",
+          label: "Elke campagne vraagt landings die alleen met hacks lukken",
+          fix: "Custom landings of migratie. Theme is geen ads-stack.",
+        },
+        {
+          id: "psi",
+          label: "PageSpeed rood ondanks optimalisatie-plugin",
+          fix: "Plugin-pleisters lossen theme-schuld niet op. Meet Core Web Vitals.",
+        },
+        {
+          id: "update",
+          label: "Niemand durft WordPress of plugins te updaten",
+          fix: "Angst is een signaal. Staging + migratieplan, of blijf bewust klein.",
+        },
+        {
+          id: "ads",
+          label: "Je betaalt ads naar een site die op mobiel traag is",
+          fix: "CPA-hygiëne eerst. Snelle stack voor geld-pagina's.",
+        },
+        {
+          id: "seo",
+          label: "SEO-structuur botst met wat het theme toelaat",
+          fix: "URL's, schema, snelle templates. From scratch als theme blijft blokkeren.",
+        },
+        {
+          id: "builder",
+          label: "Page builder + twintig plugins is 'het systeem'",
+          fix: "Minder glue, meer eigen code waar het telt.",
+        },
+        {
+          id: "hybride",
+          label: "Je onderhoudt al twee stacks 'even tussendoor'",
+          fix: "Kies één pad. Hybride zonder eigenaar is dubbel werk.",
+        },
+        {
+          id: "scope",
+          label: "Scope is groot (campagnes, SEO, leads) maar stack is blog-theme",
+          fix: "WordPress mag blijven bij kleine scope. Schalen vraagt andere lat.",
+        },
+      ],
+      tiers: [
+        {
+          id: "fit",
+          min: 0,
+          max: 24,
+          label: "Theme past nog",
+          quip: "Blijf. Optimaliseer. Migratie is geen statussymbool.",
+        },
+        {
+          id: "wrang",
+          min: 25,
+          max: 49,
+          label: "Wrang maar werkbaar",
+          quip: "Eén geld-pagina hard maken. Meet of migratie de CPA waard is.",
+        },
+        {
+          id: "knijpt",
+          min: 50,
+          max: 74,
+          label: "Theme knijpt",
+          quip: "Campagnes en SEO betalen de prijs. Plan redirects en custom build.",
+        },
+        {
+          id: "breuk",
+          min: 75,
+          max: 100,
+          label: "Update-angst",
+          quip: "Je site is een museumstuk met ads. Migratie vóór de volgende crash.",
+        },
+      ],
     },
     {
       type: "h2",

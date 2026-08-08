@@ -7,7 +7,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     "Je winkelwagen lekt geld. Niet met schreeuwerige mails, maar met timing, tone of voice en een flow die aanvoelt als een herinnering, geen stalker.",
   publishedAt: "2026-07-12",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 14,
   category: "behoud",
   keywords: [
     "abandoned cart email",
@@ -53,6 +53,92 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
       text: "Kort antwoord: drie mails, menselijke toon, checkout-herstel, exclude recente kopers. Meet omzet per flow. Korting alleen als je marge het verdraagt.",
     },
     {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Cart-flow-check",
+      title: "Stalker-mail-meter",
+      intro:
+        "Vink aan wat je herkent in jouw abandoned-cart flow. Hoe hoger, hoe meer irritatie en hoe minder herstel-omzet.",
+      storageKey: "mm-cart-stalker",
+      eventName: "cart_stalker_complete",
+      sharePath: "/kennisbank/abandoned-cart-emails-die-converteren",
+      scoreNoun: "stalkscore",
+      ctaHref: "/diensten/email",
+      ctaLabel: "E-mailflows",
+      checks: [
+        {
+          id: "spam",
+          label: "Drie of meer mails binnen een paar uur",
+          fix: "Spreid: ~1 uur, ~1 dag, ~2–3 dagen. Ademruimte verkoopt.",
+        },
+        {
+          id: "korting",
+          label: "Eerste mail is meteen korting",
+          fix: "Eerst helpen en bewijs. Korting trainen klanten om te wachten.",
+        },
+        {
+          id: "generiek",
+          label: "Beste klant + stockfoto, productblok ontbreekt of klopt niet",
+          fix: "Product, prijs, checkout-link. Menselijke zin, geen brochure.",
+        },
+        {
+          id: "exclude",
+          label: "Recente kopers of al-betaald krijgen alsnog cart-mails",
+          fix: "Exclude. Dubbel tikken voelt als stalken.",
+        },
+        {
+          id: "checkout",
+          label: "Checkout is traag of kosten verrassen, mail negeert dat",
+          fix: "Fix shop eerst. Mail vangt twijfel, niet een kapotte funnel.",
+        },
+        {
+          id: "tone",
+          label: "Onderwerp schreeuwt JE BENT VERGETEN!!!!",
+          fix: "Herinnering, geen paniek. Toon alsof je naast ze zit.",
+        },
+        {
+          id: "meet",
+          label: "Je stuurt op open rate, niet op herstel-omzet",
+          fix: "Attributed revenue + unsubscribes. Open is vanity.",
+        },
+        {
+          id: "proof",
+          label: "Mail twee mist review, garantie of verzendclarity",
+          fix: "Raak het echte bezwaar. Vergeet iets is zelden genoeg.",
+        },
+      ],
+      tiers: [
+        {
+          id: "helper",
+          min: 0,
+          max: 24,
+          label: "Behulpzame herinnering",
+          quip: "Timing en toon kloppen. Houd marge en exclude heilig.",
+        },
+        {
+          id: "ruw",
+          min: 25,
+          max: 49,
+          label: "Ruw maar herstelbaar",
+          quip: "Eén irritatie eruit deze sprint. Meet omzet, niet opens.",
+        },
+        {
+          id: "stalk",
+          min: 50,
+          max: 74,
+          label: "Raamklopper",
+          quip: "Te snel, te luid, te generiek. Flow herschrijven vóór je volume jaagt.",
+        },
+        {
+          id: "spam",
+          min: 75,
+          max: 100,
+          label: "Spam met winkelwagen",
+          quip: "Stop de cascade. Drie mails, menselijk, exclude. Dan pas opschalen.",
+        },
+      ],
+    },
+    {
       type: "h2",
       text: "Waarom mensen afhaken",
     },
@@ -64,7 +150,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
       type: "ul",
       items: [
         "Verzendkosten pas laat in checkout: herinner aan totaal inclusief verzending.",
-        "Geen social proof: een review of garantie in mail twee kan twijfel breken.",
+        "Social proof ontbreekt: een review of garantie in mail twee kan twijfel breken.",
         "Te veel mails te snel: drie mails in vier uur voelt als spam.",
         "Generieke copy: Beste klant met een stockfoto. Niemand gelooft dat.",
       ],
