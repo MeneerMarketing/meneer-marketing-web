@@ -53,7 +53,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
     },
     {
       title: "Wekelijks bijsturen",
-      body: "Zoektermen schonen, winnaars opschalen, verliezers stoppen. SkinComplete deed dit pas nadat SEO en site stonden.",
+      body: "Zoektermen schonen, winnaars opschalen, verliezers stoppen. Pas nadat SEO en site staan, anders juich je te vroeg.",
     },
   ],
   visual: "google-ads",
