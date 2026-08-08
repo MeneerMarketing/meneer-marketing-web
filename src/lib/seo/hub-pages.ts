@@ -39,7 +39,7 @@ export const HUB_PAGE_SEO = {
   diensten: {
     title: "Diensten | Website, SEO, Google Ads & Shopify | Meneer Marketing",
     description:
-      "Website zonder stagiair aan de lijn. SEO, Google Ads, Meta Ads en Shopify. Geen doorverbinding. Jij belt mij, ik voer het uit.",
+      "Website zonder stagiair aan de lijn. SEO, Google Ads, Meta Ads en Shopify. Jij belt mij, ik voer het uit.",
     ogAccent: "FF5722",
     keywords: [
       "marketing diensten",
@@ -128,7 +128,7 @@ export const HUB_PAGE_SEO = {
 
     description:
 
-      "Chat-achtig contact vanuit Apeldoorn. Site, Shopify, SEO, ads of gewoon sparren. Geen bot, geen CRM-stagiair. Reactie binnen één à twee werkdagen.",
+      "Chat-achtig contact vanuit Apeldoorn. Site, Shopify, SEO, ads of gewoon sparren. Ik antwoord zelf. Reactie binnen één à twee werkdagen.",
 
     ogAccent: "FF5722",
 
@@ -139,7 +139,7 @@ export const HUB_PAGE_SEO = {
     title: "Werkwijze | intake, bouwen, meten, opschalen | Meneer Marketing",
 
     description:
-      "Intake, routekaart, custom build en bijsturen. Vier fases, interactief uitgelegd. SkinComplete en BestRest als voorbeeld van de volgorde.",
+      "Intake, routekaart, custom build en bijsturen. Vier fases, interactief uitgelegd. Met voorbeelden van volgorde per traject.",
 
     ogAccent: "FF5722",
 

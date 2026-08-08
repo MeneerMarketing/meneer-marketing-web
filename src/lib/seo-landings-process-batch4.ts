@@ -4,21 +4,21 @@ import type { SeoLandingStep } from "@/data/seo-landings/types";
 export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> = {
   "digital-marketing-bureau": [
     { title: "Kanalen inventariseren", body: "Site, shop, ads, mail, content. Wat draait, wat lekt, wat ontbreekt." },
-    { title: "Volgorde op marge", body: "Eerst fundament, dan vindbaarheid, dan paid. Geen twaalf-kanaal-deck." },
-    { title: "Uitrollen onder één dak", body: "Ik bouw, schrijf en zet campagnes live. Geen losse partijen." },
+    { title: "Volgorde op marge", body: "Eerst fundament, dan vindbaarheid, dan paid. Eén plan in plaats van twaalf-kanaal-deck." },
+    { title: "Uitrollen onder één dak", body: "Ik bouw, schrijf en zet campagnes live. Eén partij, één lijn." },
     { title: "Dashboard op omzet", body: "Leads, ROAS, rankings. Cijfers die actie geven, geen PDF-theater." },
   ],
   "zoekmachine-marketing": [
     { title: "Keyword-kaart", body: "Organisch vs paid per intentie. Waar SEO wint, waar ads slimmer zijn." },
     { title: "Gedeelde landings", body: "Pagina's die ranken én converteren voor campagnes." },
     { title: "Tracking één lijn", body: "GA4, conversies, Search Console. Eén waarheid voor SEO en SEA." },
-    { title: "Maandelijks sturen", body: "Budget verschuiven op data. Geen silo's tussen kanalen." },
+    { title: "Maandelijks sturen", body: "Budget verschuiven op data. Kanalen die elkaar versterken." },
   ],
   "advertentiebeheer": [
     { title: "Account-audit", body: "Zoektermen, structuur, conversies, landings. Wat lekt direct?" },
     { title: "Opschonen", body: "Zombie-campagnes eruit. Negatieven bijwerken. Budget herverdelen." },
-    { title: "Wekelijks ritme", body: "Zoektermenrapport, biedingen, message match. Geen maandelijks hopen." },
-    { title: "Rapport + actie", body: "Wat we deden, wat volgende week. Geen dashboard zonder besluit." },
+    { title: "Wekelijks ritme", body: "Zoektermenrapport, biedingen, message match. Wekelijks bijsturen op data." },
+    { title: "Rapport + actie", body: "Wat ik deed, wat volgende week. Dashboard met besluit, geen theater." },
   ],
   "social-media-advertising": [
     { title: "Doel en funnel", body: "Awareness, leads of sales? Creative en budget volgen het doel." },
@@ -40,7 +40,7 @@ export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> 
   ],
   "b2b-marketing-bureau": [
     { title: "ICP scherp", body: "Wie koopt, wie beslist, hoe lang duurt de cyclus?" },
-    { title: "Funnel per fase", body: "Awareness, nurture, demo, portal. Geen B2C-tactics op B2B." },
+    { title: "Funnel per fase", body: "Awareness, nurture, demo, portal. B2B-tactics op elke funnelstap." },
     { title: "LinkedIn + site + mail", body: "Kanalen die elkaar voeden, niet dupliceren." },
     { title: "Pipeline meten", body: "MQL, SQL, deal velocity. Marketing gekoppeld aan sales." },
   ],
@@ -53,12 +53,12 @@ export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> 
   "webshop-marketing": [
     { title: "Customer journey", body: "Van eerste klik tot herhaalaankoop. Waar valt iemand af?" },
     { title: "Kanaal-mix", body: "Organisch, paid, mail, marketplaces. Volgorde op bewijs." },
-    { title: "Landings per intentie", body: "Category, product, campagne. Geen alles-op-homepage." },
+    { title: "Landings per intentie", body: "Category, product, campagne. Eén intentie per URL." },
     { title: "Retentie meenemen", body: "Flows, win-back, LTV. Acquisitie is de helft." },
   ],
   "productpagina-seo": [
     { title: "SKU-prioriteit", body: "Welke producten dragen omzet? Die pagina's eerst." },
-    { title: "Unieke copy", body: "Vragen, specs, use cases. Geen fabrikant-duplicaten." },
+    { title: "Unieke copy", body: "Vragen, specs, use cases. Unieke copy per SKU." },
     { title: "Techniek & schema", body: "Product markup, snelheid, interne links." },
     { title: "Rankings + omzet", body: "Posities meten én wat ze opleveren in de shop." },
   ],
@@ -77,7 +77,7 @@ export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> 
   "webdesign-bureau": [
     { title: "Doel & wireframe", body: "Wie moet wat doen? Structuur vóór moodboards." },
     { title: "Visueel systeem", body: "Merk, trust, CTA's. Design dat schaalt." },
-    { title: "Bouwen in code", body: "Geen Figma die maanden blijft liggen. Live URL." },
+    { title: "Bouwen in code", body: "Live URL in plaats van Figma die maanden blijft liggen." },
     { title: "Launch + meten", body: "Snelheid, conversie, tracking. Mooi én meetbaar." },
   ],
   "growth-marketing-bureau": [
@@ -87,9 +87,9 @@ export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> 
     { title: "Leren & herhalen", body: "Winnaar opschalen. Verliezer killen. Documenteren." },
   ],
   "linkedin-ads-bureau": [
-    { title: "Targeting scherp", body: "Functie, sector, bedrijfsgrootte. Geen 'iedereen in NL'." },
+    { title: "Targeting scherp", body: "Functie, sector, bedrijfsgrootte. Targeting op functie en sector." },
     { title: "Lead magnet + landing", body: "Formulier of demo-pagina die kwalificeert." },
-    { title: "Creative B2B", body: "Probleem eerst, pitch later. Geen stock-handdruk-foto." },
+    { title: "Creative B2B", body: "Probleem eerst, pitch later. Expertise in beeld, niet stock." },
     { title: "Cost per qualified lead", body: "Sturen op pipeline, niet op kliks." },
   ],
   "klaviyo-specialist": [
@@ -105,9 +105,9 @@ export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> 
     { title: "Monitoren na launch", body: "Search Console + CrUX. Blijven groen houden." },
   ],
   "marketing-consultant-mkb": [
-    { title: "Situatiegesprek", body: "Omzet, marges, kanalen, team. Geen verkooppraat." },
+    { title: "Situatiegesprek", body: "Omzet, marges, kanalen, team. Eerlijk gesprek over marge en timing." },
     { title: "Plan op papier", body: "Volgorde, budget, verwachting. Eerlijk over timing." },
-    { title: "Uitvoering (optioneel)", body: "Ik kan zelf bouwen en draaien. Geen advies-only die blijft hangen." },
+    { title: "Uitvoering (optioneel)", body: "Ik kan zelf bouwen en draaien. Advies én uitvoering in één lijn." },
     { title: "Review per kwartaal", body: "Wat werkte, wat niet. Plan bijsturen op cijfers." },
   ],
   "trage-website-dure-ads": [
@@ -117,7 +117,7 @@ export const BATCH4_PROCESS: Partial<Record<string, readonly SeoLandingStep[]>> 
     { title: "Ads opnieuw meten", body: "CPA en ROAS vóór en na. Verschil moet zichtbaar zijn." },
   ],
   "shopify-theme-laten-maken": [
-    { title: "Scope & sections", body: "Welke blokken je team nodig heeft. Geen over-engineering." },
+    { title: "Scope & sections", body: "Alleen blokken die je team nodig heeft. Lean scope, geen over-engineering." },
     { title: "Design + Liquid", body: "Merk, UX, performance in één theme." },
     { title: "Staging & test", body: "Checkout, B2B, feed. Alles doorlopen vóór live." },
     { title: "Launch + doorontwikkeling", body: "SEO, tracking, features als je groeit." },

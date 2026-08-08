@@ -6,7 +6,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
     title: "Digital marketing bureau: online groei met één rode draad",
     paragraphs: [
       "Digital marketing bureau zoeken betekent vaak: strategie, social, ads, SEO en development uit vijf hoeken. Bij mij zit dat onder één dak. Ik bouw je site, maak je vindbaar en zet campagnes aan als de basis staat.",
-      "Digital marketing is geen losse verzameling kanalen. Het is volgorde. Soms eerst techniek en SEO, soms eerst Shopping, soms eerst mail. SkinComplete en BestRest kregen elk een eigen route.",
+      "Digital marketing is geen losse verzameling kanalen. Het is volgorde. Soms eerst techniek en SEO, soms eerst Shopping, soms eerst mail. Elk traject krijgt een eigen route op marge.",
       "Ik rapporteer in omzet-taal: wat ging live, wat levert het op, wat schuift volgende maand. Slides met twaalf KPI's zonder actie helpen je inbox niet.",
       "Digital marketing bureau bij Meneer Marketing is één senior brein dat code schrijft, accounts leest en eerlijk nee zegt als een kanaal je marge niet past.",
     ],
@@ -17,7 +17,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "Zoekmachine marketing combineert organisch (SEO) en betaald (SEA/Google Ads) op dezelfde zoekintentie. Het doel: zichtbaar zijn wanneer iemand zoekt wat jij verkoopt, via rankings én ads.",
       "Ik zorg dat SEO en SEA elkaar niet bijten. Dezelfde landings, dezelfde boodschap, data die je laat zien wanneer organic wint en wanneer paid slimmer is.",
       "Zoekmachine marketing faalt als twee bureaus elkaar tegenspreken. Eén zoektermenlijst, één prioriteit per pagina, één dashboard dat klopt.",
-      "SkinComplete domineerde eerst organisch op salonvragen. Ads kwamen daarna. Zoekmachine marketing met die volgorde is goedkoper op lange termijn.",
+      "Organisch eerst op koopintentie, ads daarna. Zoekmachine marketing met die volgorde is goedkoper op lange termijn.",
     ],
   },
   "advertentiebeheer": {
@@ -44,7 +44,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "UGC marketing gebruikt content van echte gebruikers en creators: reviews op video, unboxing, tutorials. Het voelt authentieker dan studio en presteert vaak beter in Meta en TikTok.",
       "Ik help met briefing, selectie en hergebruik: één shoot voor ads, site en social. Creators leveren hooks die jij in meerdere campagnes kunt testen.",
       "UGC marketing is geen losse video-bestelling. Het moet landen op een pagina die converteert en passen bij je merk en compliance.",
-      "Bij SkinComplete kwam UGC terug in Meta-campagnes. UGC marketing bij mij is onderdeel van acquisitie, niet een eenmalige influencer-post.",
+      "UGC komt terug in Meta-campagnes zodra de landings kloppen. UGC marketing bij mij is onderdeel van acquisitie, niet een eenmalige influencer-post.",
     ],
   },
   "influencer-marketing-bureau": {
@@ -62,7 +62,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "B2B marketing bureau zoeken betekent: leads, pipeline en soms portalen of offerte-flows. De cyclus is langer dan B2C, maar je site en content moeten elke stap ondersteunen.",
       "Ik bouw B2B-portalen op Shopify, landings per sector en campagnes op koopintentie én nurture. Mail en LinkedIn Ads vullen elkaar aan.",
       "B2B marketing draait om vertrouwen: cases, technische diepgang, snelle site, duidelijke pricing waar het mag. Template-copy voor 'zakelijke oplossingen' werkt niet.",
-      "SkinComplete B2B is mijn referentie: salons bestellen zelf, SEO trok professionals, mail en ads volgden op data. B2B marketing bureau bij mij is uitvoering, niet alleen decks.",
+      "B2B-portaal op Shopify is mijn referentie: zakelijke klanten bestellen zelf, SEO trok professionals, mail en ads volgden op data. B2B marketing bureau bij mij is uitvoering, niet alleen decks.",
     ],
   },
   "ecommerce-specialist": {
@@ -80,7 +80,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "Webshop marketing is alles wat je online winkel laat groeien: SEO, Google Shopping, Meta, mail, marketplaces en site-ervaring. Het moet één klantreis zijn.",
       "Ik begin bij data: welke producten dragen winst, waar valt de cart weg, welk kanaal brengt herhaalaankopen. Volgorde volgt daaruit.",
       "Webshop marketing zonder retentie is steeds nieuwe klanten kopen. Mailflows en loyalty horen bij een gezond plan.",
-      "Webshop marketing bij SkinComplete: organisch eerst, mail gekoppeld, ads daarna. Die volgorde bespaart leergeld.",
+      "Webshop marketing volgt hetzelfde patroon: organisch eerst, mail gekoppeld, ads daarna. Die volgorde bespaart leergeld.",
     ],
   },
   "productpagina-seo": {
@@ -116,7 +116,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "Webdesign bureau zoeken betekent vaak mooie mockups. Bij mij eindigt webdesign in live code: Next.js of Shopify, met conversie en SEO ingebouwd.",
       "Ik ontwerp voor mobiel eerst, met duidelijke hiërarchie, trust en één primaire actie per pagina. Design zonder meetplan is decoratie.",
       "Webdesign bureau bij Meneer Marketing is geen Figma-dossier dat maanden in een la ligt. Ik teken, bouw en zet analytics klaar.",
-      "BestRest en Hills Pilates kregen design dat past bij merk én performance. Webdesign moet je bankrekening snappen, niet alleen Dribbble.",
+      "Hills Pilates en ecommerce-klanten kregen design dat past bij merk én performance. Webdesign moet je bankrekening snappen, niet alleen Dribbble.",
     ],
   },
   "growth-marketing-bureau": {
@@ -125,7 +125,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "Growth marketing bureau focust op meetbare groei: testen, schalen, funnels optimaliseren. Het werkt alleen als tracking klopt en je product-market fit niet een lekke emmer is.",
       "Ik combineer growth met bouwen. Hypothese, landings aanpassen, ads testen, mail triggeren. Snelle cycli zonder je site te slopen.",
       "Growth marketing is geen hype-woord voor 'meer ads'. Het is discipline: één variabele tegelijk, duidelijke success metric, stoppen als het niet werkt.",
-      "Growth marketing bureau bij mij past bij MKB dat wil schalen met bewijs. SkinComplete schaalde pas na organisch bewijs. Dat is growth met gezond verstand.",
+      "Growth marketing bureau bij mij past bij MKB dat wil schalen met bewijs. Opschalen pas na organisch bewijs. Dat is growth met gezond verstand.",
     ],
   },
   "linkedin-ads-bureau": {
@@ -170,7 +170,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "Een trage website maakt elke klik duurder. Hoge bounce, lage Quality Score, slechte Core Web Vitals. Je betaalt voor verkeer dat vertrekt voordat de pagina laadt.",
       "Ik meet LCP en mobiele ervaring, fix images, scripts, caching en server-side waar nodig. Op Shopify en Next.js.",
       "Trage website dure ads is een symptoom. De behandeling is techniek, niet hoger bieden in Google Ads.",
-      "Na versnelling schaal ik pas ads. SkinComplete en BestRest bouwden snelheid in from scratch. Trage website fixen is vaak de hoogste ROI stap.",
+      "Na versnelling schaal ik pas ads. Snelheid zit in from scratch builds. Trage website fixen is vaak de hoogste ROI stap.",
     ],
   },
   "shopify-theme-laten-maken": {
@@ -179,7 +179,7 @@ export const DEEPDIVE_BATCH4: Partial<Record<string, SeoLandingProseOverride>> =
       "Shopify theme laten maken is een custom theme op maat: jouw merk, jouw checkout-flow, B2B-logica en performance zonder theme-store beperkingen.",
       "Ik bouw from scratch of fork een lean basis. Lichtgewicht themes die snel laden en makkelijk uitbreiden.",
       "Shopify theme laten maken includes SEO-structuur, schema, snelheid en koppelingen met mail en portalen. Theme is het fundament van je ecommerce marketing.",
-      "SkinComplete draait op custom Shopify. Shopify theme laten maken bij mij is investering in schaal, niet in cosmetica.",
+      "Custom Shopify is het fundament voor schaal. Shopify theme laten maken bij mij is investering in groei, niet in cosmetica.",
     ],
   },
 };

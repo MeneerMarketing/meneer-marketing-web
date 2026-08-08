@@ -65,14 +65,14 @@ const TRIO_PAIN_POOL: Record<
       },
       {
         title: "Offerte zonder techniek",
-        body: "Bureau uit de Randstad stuurt een mooi deck. Geen idee hoe je site straks meet, rankt of converteert in {region}.",
+        body: "Bureau uit de Randstad stuurt een mooi deck. Zonder plan voor hoe je site straks meet, rankt of converteert in {region}.",
       },
       {
         title: "Mobiel is afterthought",
         body: "In {city} komt het meeste verkeer vanaf de telefoon. Je huidige site laadt traag tussen afspraken door.",
       },
       {
-        title: "Geen landings voor campagnes",
+        title: "Campagnes zonder landings",
         body: "Je wilt adverteren op {kw}. Je homepage is geen landingspagina. Elke klik kost geld zonder duidelijke CTA.",
       },
       {
@@ -116,7 +116,7 @@ const TRIO_PAIN_POOL: Record<
         body: "Rotterdam, Amsterdam, Den Haag: iedereen vergelijkt op mobiel. Trage site = wegklikken.",
       },
       {
-        title: "Geen SEO in de basis",
+        title: "SEO ontbreekt in de basis",
         body: "Page builder levert mooi design. Schema, semantiek en Core Web Vitals moet je daarna alsnog fixen.",
       },
       {
@@ -138,8 +138,8 @@ const TRIO_PAIN_POOL: Record<
         body: "Bezoekers komen, niemand belt. CTA's en vertrouwen ontbreken op mobiel.",
       },
       {
-        title: "Geen plan na launch",
-        body: "Site live, dan stilte. Geen indexatie, geen landings voor zoek, geen tracking voor ads.",
+        title: "Stilte na launch",
+        body: "Site live, dan stilte. Indexatie, landings voor zoek en tracking voor ads ontbreken allemaal.",
       },
       {
         title: "Vendor lock-in",
@@ -156,7 +156,7 @@ const TRIO_PAIN_POOL: Record<
         body: "Concurrenten in Zwolle of Enschede investeren online. Jouw site dateert van vóór mobiel-first.",
       },
       {
-        title: "Geen B2B-portaal",
+        title: "B2B-portaal ontbreekt",
         body: "Zakelijke klanten in {region} willen online bestellen. Jij mailt nog PDF's.",
       },
       {
@@ -198,7 +198,7 @@ const TRIO_PAIN_POOL: Record<
         body: "Specialist rankt op brede termen. Jouw Brabantse klant zoekt specifieker.",
       },
       {
-        title: "Geen link tussen SEO en ads",
+        title: "SEO en ads los van elkaar",
         body: "Organisch en paid lopen los. Dubbel werk, dubbele kosten in {region}.",
       },
       {
@@ -210,21 +210,21 @@ const TRIO_PAIN_POOL: Record<
         body: "Alles is 'belangrijk'. Niets is af. {kw} voelt als abonnement op hopen.",
       },
       {
-        title: "Geen uitvoerder",
+        title: "Advies zonder uitvoerder",
         body: "PDF klaar, developer zoeken, wachten. Ondernemers in {city} willen snelheid.",
       },
     ],
     randstad: [
       {
         title: "Duur bureau, dunne output",
-        body: "Retainer in {city}, maar pagina's blijven generiek. Geen differentiatie in SERP.",
+        body: "Retainer in {city}, maar pagina's blijven generiek. SERP-differentiatie ontbreekt.",
       },
       {
         title: "Keyword-stuffing reflex",
         body: "Oude tactics in competitieve markt. Google is strenger, jij betaalt de prijs.",
       },
       {
-        title: "Geen business case",
+        title: "Posities zonder business case",
         body: "Positie 4 op term die niets oplevert. Mooie grafiek, lege pipeline in {region}.",
       },
       {
@@ -246,7 +246,7 @@ const TRIO_PAIN_POOL: Record<
         body: "Migratie zonder redirects, dubbele titels, schema ontbreekt. {kw} lijdt eronder.",
       },
       {
-        title: "Geen AI-zichtbaarheid",
+        title: "AI-zoek onbenut",
         body: "Semantische SEO en antwoord-pagina's ontbreken. ChatGPT citeert anderen.",
       },
       {
@@ -268,7 +268,7 @@ const TRIO_PAIN_POOL: Record<
         body: "Eén pagina voor alles. Long-tail in {region} pakt je concurrent.",
       },
       {
-        title: "Geen updates op oude content",
+        title: "Oude content verwaarloosd",
         body: "Nieuwe blogs, oude posts verrotten. Autoriteit daalt stilletjes.",
       },
       {
@@ -296,7 +296,7 @@ const TRIO_PAIN_POOL: Record<
         body: "Budget naar Google terwijl site in {region} niet overtuigt op mobiel.",
       },
       {
-        title: "Geen marge-inzicht",
+        title: "Rapporten zonder marge-inzicht",
         body: "Bureau rapporteert klikken. Jij wilt weten of {kw} iets oplevert deze maand.",
       },
       {
@@ -307,7 +307,7 @@ const TRIO_PAIN_POOL: Record<
     "brabant-limburg": [
       {
         title: "Channel-spaghetti",
-        body: "Meta, Google, mail, SEO los van elkaar. Geen plan voor {region}.",
+        body: "Meta, Google, mail, SEO los van elkaar. Eén plan voor {region} ontbreekt.",
       },
       {
         title: "Bureau zonder bouwer",
@@ -344,7 +344,7 @@ const TRIO_PAIN_POOL: Record<
         body: "TikTok omdat het hot is. Niet omdat jouw klant in {city} daar koopt.",
       },
       {
-        title: "Geen eigenaarschap",
+        title: "Verantwoordelijkheid versnipperd",
         body: "Iedereen doet een stukje. Niemand voelt je P&L.",
       },
     ],
@@ -373,15 +373,15 @@ const TRIO_PAIN_POOL: Record<
     "overijssel-noord": [
       {
         title: "Postbus-marketing",
-        body: "Bureau kent {city} van Google Maps. Geen context, wel retainer.",
+        body: "Bureau kent {city} van Google Maps. Retainer wel, context niet.",
       },
       {
         title: "Offline sterk, online matig",
         body: "Mond-tot-mond in {region} top. Site en vindbaarheid achterlopen.",
       },
       {
-        title: "Geen B2B-flow",
-        body: "Leads in mail. Geen portal, geen nurture. Handwerk blijft.",
+        title: "B2B-flow ontbreekt",
+        body: "Leads in mail. Portal en nurture ontbreken. Handwerk blijft.",
       },
       {
         title: "Ads zonder SEO",
@@ -389,7 +389,7 @@ const TRIO_PAIN_POOL: Record<
       },
       {
         title: "Rapportcultuur",
-        body: "Maandelijks PDF. Geen pagina live, geen campagne bijgestuurd.",
+        body: "Maandelijks PDF. Pagina's live en campagnes bijgestuurd? Dat blijft uit.",
       },
     ],
   },
@@ -404,7 +404,7 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Structuur & copy",
-        body: "Sitemap en teksten die {kw} in {region} echt beantwoorden. Geen filler.",
+        body: "Sitemap en teksten die {kw} in {region} echt beantwoorden. Alleen wat helpt, geen filler.",
       },
       {
         title: "Bouwen & meten",
@@ -422,7 +422,7 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Architectuur kiezen",
-        body: "Custom build die past bij groei in {region}. Geen theme-plafond.",
+        body: "Custom build die past bij groei in {region}. Schaalbaar, zonder theme-plafond.",
       },
       {
         title: "Ontwikkelen",
@@ -444,7 +444,7 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Build from scratch",
-        body: "Geen page builder. Code die meeschaaft met ads en SEO.",
+        body: "Code die meeschaaft met ads en SEO. Page builders blijven achter.",
       },
       {
         title: "Overdracht zonder gaten",
@@ -464,11 +464,11 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Bouwen & fixen",
-        body: "Ik schrijf én publiceer. Geen wachten op derden voor {kw}.",
+        body: "Ik schrijf én publiceer. Direct live voor {kw}, zonder wachten op derden.",
       },
       {
         title: "Bijsturen op omzet",
-        body: "Posities plus pipeline. Google update of AI-zoek: we passen aan.",
+        body: "Posities plus pipeline. Google update of AI-zoek: ik pas aan.",
       },
     ],
     [
@@ -496,7 +496,7 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Roadmap kwartaal",
-        body: "Volgorde op impact. Geen twaalf projecten tegelijk.",
+        body: "Volgorde op impact. Drie projecten tegelijk, niet twaalf.",
       },
       {
         title: "Content + code",
@@ -504,7 +504,7 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Rapport met actie",
-        body: "Wat live ging, wat volgende maand. Geen PDF zonder besluit.",
+        body: "Wat live ging, wat volgende maand. Elk rapport eindigt met een besluit.",
       },
     ],
   ],
@@ -552,7 +552,7 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Plan in mensentaal",
-        body: "Geen jargon-deck. Wel: dit doen we in {city}, dit niet.",
+        body: "Plan in mensentaal. Wel: dit doe ik in {city}, dit niet.",
       },
       {
         title: "Hands-on livegang",
@@ -560,7 +560,7 @@ const TRIO_PROCESS: Record<TrioBaseSlug, readonly (readonly SeoLandingStep[])[]>
       },
       {
         title: "Eigenaarschap",
-        body: "Ik ken je shop en accounts. Geen accountmanager-telefoon.",
+        body: "Ik ken je shop en accounts. Jij praat met mij, niet met een accountmanager-telefoon.",
       },
     ],
   ],
@@ -667,21 +667,21 @@ const TRIO_STORY_OPENERS: Record<
 
 const TRIO_STORY_MIDDLES: Record<TrioBaseSlug, readonly string[]> = {
   "website-laten-maken": [
-    "Ik bouw from scratch in Next.js of Shopify custom. Snelheid, schema, landings en tracking zitten erin vóór launch. SkinComplete en BestRest zijn zo opgebouwd.",
-    "{kw} bij mij is één lijn: code, SEO-fundament, conversie. Geen page builder die vastloopt als je wilt adverteren in {city}.",
+    "Ik bouw from scratch in Next.js of Shopify custom. Snelheid, schema, landings en tracking zitten erin vóór launch.",
+    "{kw} bij mij is één lijn: code, SEO-fundament, conversie. Custom build die meeschaaft als je wilt adverteren in {city}.",
     "Je klant in {region} vergelijkt op mobiel. Custom build is geen luxe, het is de minimumeis voor {kw} die campagnes aankan.",
     "Landings per dienst, niet alles op homepage. Google Ads en Meta Ads linken naar pagina's die {kw} beantwoorden, niet naar je logo.",
   ],
   "seo-specialist": [
-    "Ik doe keyword-plan, technische fixes én landings bouwen. SkinComplete rankte op salonvragen vóór ads. Zo hoort {kw} te werken.",
+    "Ik doe keyword-plan, technische fixes én landings bouwen. Organisch bewijs vóór ads. Zo hoort {kw} te werken.",
     "12 jaar Google. AI-zoek erbij. {kw} in {city} vraagt antwoord-pagina's die ChatGPT kan citeren, niet keyword-lists.",
     "Eerlijk als ads slimmer zijn dan nog een blog. MKB in {region} heeft geen budget voor ego-SEO.",
     "GBP, reviews, interne links, snelheid: {kw} is geen los advies, het is live werk op je domein.",
   ],
   "marketing-bureau": [
     "Ik bouw site en shop, regel SEO, zet Google Ads en Meta Ads live als de basis staat. E-mail en flows houden wat je betaald hebt.",
-    "SkinComplete: shop, SEO, ads, mail. BestRest: per product een plan. {kw} in {city} krijgt dezelfde eerlijkheid over volgorde.",
-    "Geen retainer zonder prioriteit. We beginnen waar marge het snelst stijgt: vaak site of techniek, niet viral stunt.",
+    "{kw} in {city} krijgt dezelfde eerlijkheid over volgorde: fundament eerst, dan schalen.",
+    "Retainer alleen met prioriteit. Ik begin waar marge het snelst stijgt: vaak site of techniek, niet viral stunt.",
     "Jij praat met mij. Ik ken je accounts en je checkout. {kw} zonder keten van specialisten.",
   ],
 };
@@ -692,7 +692,7 @@ const TRIO_DEEPDIVE: Record<TrioBaseSlug, readonly string[]> = {
     "Custom build betekent controle. Snelheid, schema, landings, GTM. Alles wat page builders als add-on verkopen, zit in de basis.",
     "Campagnes in {region} falen op message match. Ad belooft X, homepage zegt Y. Landings per intentie fixen dat.",
     "Mobiel-first is geen trend in {city}. Het is waar je klant je vindt. Core Web Vitals zijn ranking én conversie.",
-    "After launch blijf ik betrokken. Site aanpassen, landings bijbouwen, tracking checken. Geen bouwer die verdwijnt.",
+    "After launch blijf ik betrokken. Site aanpassen, landings bijbouwen, tracking checken. Ik blijf, ook na livegang.",
   ],
   "seo-specialist": [
     "{kw} zonder uitvoering is een PDF. Rankings komen van pagina's die helpen, techniek die klopt en updates die blijven komen.",
@@ -706,7 +706,7 @@ const TRIO_DEEPDIVE: Record<TrioBaseSlug, readonly string[]> = {
     "Google Ads en Meta Ads expliciet in het plan. Niet verstopt achter 'performance'. Jij moet weten waar budget naartoe gaat.",
     "E-mail en flows in {city} vaak onderbenut. Gratis geld na eerste aankoop, als shop en mail gekoppeld zijn.",
     "Te veel partijen = niemand voelt je P&L. Eén aanspreekpunt die bouwt en bijstuurt wint op snelheid.",
-    "SkinComplete-gedachte: organisch fundament, dan pas ads. {region} MKB kan die volgorde niet skippen zonder te betalen.",
+    "Organisch fundament eerst, dan pas ads. {region} MKB kan die volgorde niet skippen zonder te betalen.",
   ],
 };
 
@@ -724,7 +724,7 @@ const TRIO_SCENE_BREAKS: Record<TrioBaseSlug, readonly SeoLandingSceneBreak[]> =
       placement: "after-deep-dive",
       visual: "website-build",
       eyebrow: "Launch",
-      title: "Geen template-geur in {city}",
+      title: "Op maat gebouwd in {city}",
       caption: "Next.js of Shopify custom. Jouw merk, geen theme store met logo swap.",
     },
   ],
@@ -735,7 +735,7 @@ const TRIO_SCENE_BREAKS: Record<TrioBaseSlug, readonly SeoLandingSceneBreak[]> =
       eyebrow: "{city} · SEO",
       title: "Pagina's die ranken én converteren",
       caption:
-        "{kw} in {region}: ik schrijf, bouw en publiceer. Geen wachtrij bij een developer.",
+        "{kw} in {region}: ik schrijf, bouw en publiceer. Direct live, zonder wachtrij bij een developer.",
     },
     {
       placement: "after-deep-dive",
@@ -811,18 +811,18 @@ const TRIO_HOT_TAKES: Record<TrioBaseSlug, readonly { label: string; body: strin
 
 const TRIO_PROOF: Record<TrioBaseSlug, readonly string[]> = {
   "website-laten-maken": [
-    "MeneerMarketing.nl, SkinComplete en klantportalen: custom builds die in {city} en landelijk meeschalen. Geen theme dat 10.000 anderen ook hebben.",
+    "MeneerMarketing.nl en klantportalen: custom builds die in {city} en landelijk meeschalen. Uniek design, geen theme dat 10.000 anderen ook hebben.",
     "From scratch in {region} betekent: snelheid en landings die klaar zijn vóór je Google Ads aanzet.",
     "Ik bouw wat je nodig hebt voor {kw}, niet wat een theme store toevallig aanbiedt.",
   ],
   "seo-specialist": [
-    "12 jaar hands-on. Pagina's live in {city}-context en nationaal. SkinComplete rankte vóór ads. BestRest per product.",
+    "12 jaar hands-on. Pagina's live in {city}-context en nationaal. Organisch bewijs vóór ads, per product waar nodig.",
     "{kw} in {region} met uitvoering: ik fix techniek én publiceer landings zelf.",
     "Core updates overleefd omdat pagina's helpen, niet omdat ik trucjes uit 2014 herhaal.",
   ],
   "marketing-bureau": [
-    "Van shop tot ads en mail voor SkinComplete. BestRest kreeg per product een plan. {kw} in {city} krijgt diezelfde volgorde-eerlijkheid.",
-    "Eén aanspreekpunt in {region}. Ik open je site, je accounts en je checkout. Geen keten.",
+    "Van shop tot ads en mail onder één dak. Per product een plan waar het past. {kw} in {city} krijgt diezelfde volgorde-eerlijkheid.",
+    "Eén aanspreekpunt in {region}. Ik open je site, je accounts en je checkout. Eén lijn, geen keten.",
     "Praktijk, geen theorie-deck. {kw} moet deze maand iets opleveren, niet vol kwartaal.",
   ],
 };

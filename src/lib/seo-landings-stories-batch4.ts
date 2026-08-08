@@ -6,7 +6,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     title: "Digital marketing bureau zonder PowerPoint-fabriek",
     paragraphs: [
       "Je zoekt een digital marketing bureau en krijgt een deck met twaalf kanalen, drie partijen en een retainer die start voordat er iets live staat. SEO hier, social daar, ads ergens anders. Jij coördineert.",
-      "Digital marketing bij mij is één lijn: site die converteert, vindbaarheid die blijft, campagnes als de basis staat. SkinComplete groeide organisch. BestRest kreeg per product een plan.",
+      "Digital marketing bij mij is één lijn: site die converteert, vindbaarheid die blijft, campagnes als de basis staat. Organisch eerst, per product een plan op marge.",
       "Digital marketing bureau inhuren bij Meneer Marketing is één senior brein dat code schrijft, accounts leest en eerlijk zegt wat eerst moet.",
     ],
   },
@@ -15,7 +15,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Twee bureaus, twee verhalen, één zoekmachine. SEO wil blogs. SEA wil budget. Niemand deelt data. Jij betaalt dubbel.",
       "Zoekmachine marketing onder één dak betekent: dezelfde landings, dezelfde zoektermen, helder wanneer organic wint en wanneer paid slimmer is.",
-      "SkinComplete domineerde eerst organisch op salonvragen. Ads kwamen daarna. Zoekmachine marketing met die volgorde bespaart leergeld.",
+      "Organisch eerst op koopintentie, ads daarna. Zoekmachine marketing met die volgorde bespaart leergeld.",
     ],
   },
   "advertentiebeheer": {
@@ -23,7 +23,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Je account draait. Niemand kijkt wekelijks naar zoektermen. Zombie-campagnes eten budget. Bij de maandrapportage zie je kliks, weinig omzet.",
       "Advertentiebeheer bij mij is wekelijks bijsturen: budget naar winnaars, lekke termen eruit, landings fixen als message match scheurt.",
-      "Vaak vind ik vijftien tot dertig procent budget op termen die niemand zou goedkeuren. Dat is gratis winst voordat we opschalen.",
+      "Vaak vind ik vijftien tot dertig procent budget op termen die niemand zou goedkeuren. Dat is gratis winst voordat ik opschaal.",
     ],
   },
   "social-media-advertising": {
@@ -39,7 +39,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Corporate video met logo eerst. Swipe. Budget weg. UGC marketing faalt als het voelt als een script dat niemand gelooft.",
       "Echte creators, hooks in de eerste twee seconden, content die je hergebruikt in Meta, TikTok en op je site.",
-      "Bij SkinComplete-style merken werkt het contrast: professioneel product, menselijke content. Dat converteert.",
+      "Bij premium merken werkt het contrast: professioneel product, menselijke content. Dat converteert.",
     ],
   },
   "influencer-marketing-bureau": {
@@ -55,7 +55,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "B2B betekent vertrouwen, langere overweging en soms portalen in plaats van impulse buy. Template-copy voor 'zakelijke oplossingen' werkt niet.",
       "Ik bouw B2B-portalen op Shopify, landings per sector en campagnes op koopintentie én nurture. Mail en LinkedIn vullen elkaar aan.",
-      "SkinComplete B2B is mijn referentie: salons bestellen zelf, SEO trok professionals, mail en ads volgden op data.",
+      "B2B-portaal op Shopify is mijn referentie: zakelijke klanten bestellen zelf, SEO trok professionals, mail en ads volgden op data.",
     ],
   },
   "ecommerce-specialist": {
@@ -71,7 +71,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "SEO, Shopping, Meta, mail, marketplaces. Elk kanaal apart ingehuurd, elk met eigen verhaal. De klant merkt de chaos in je checkout.",
       "Webshop marketing bij mij is één plan: welke producten dragen winst, waar valt de cart weg, welk kanaal brengt herhaalaankopen.",
-      "SkinComplete: organisch eerst, mail gekoppeld, ads daarna. Die volgorde beschermt je marge.",
+      "Het patroon: organisch eerst, mail gekoppeld, ads daarna. Die volgorde beschermt je marge.",
     ],
   },
   "productpagina-seo": {
@@ -103,7 +103,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Mooie mockups in Figma. Maanden later nog offline. Webdesign bureau zonder developers levert decoratie.",
       "Ik ontwerp en bouw in één traject: mobiel eerst, conversie, trust, Core Web Vitals groen. Design dat je bankrekening snapt.",
-      "BestRest en Hills Pilates kregen design dat past bij merk én performance. Webdesign eindigt bij mij op een live URL.",
+      "Hills Pilates en ecommerce-klanten kregen design dat past bij merk én performance. Webdesign eindigt bij mij op een live URL.",
     ],
   },
   "growth-marketing-bureau": {
@@ -111,7 +111,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Growth klinkt sexy. Testen, schalen, hockey stick. Maar growth op een lekkende funnel is budget verbranden met een mooier label.",
       "Ik combineer experimenten met bouwen: hypothese, landings aanpassen, ads testen, mail triggeren. Eén variabele tegelijk, duidelijke metric.",
-      "SkinComplete schaalde pas na organisch bewijs. Growth marketing met gezond verstand wint van hype-decks.",
+      "Opschalen pas na organisch bewijs. Growth marketing met gezond verstand wint van hype-decks.",
     ],
   },
   "linkedin-ads-bureau": {
@@ -151,7 +151,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Je schaalt ads. CPA stijgt. De site laadt traag op mobiel. Het probleem zit niet in het budget, het zit in de pagina na de klik.",
       "Ik meet field data, vind bottlenecks in theme en scripts, fix in code. Opschalen pas als de funnel het aankan.",
-      "SkinComplete en BestRest bouwden snelheid in from scratch. Trage website fixen is vaak de hoogste ROI stap.",
+      "Snelheid zit in from scratch builds. Trage website fixen is vaak de hoogste ROI stap.",
     ],
   },
   "shopify-theme-laten-maken": {
@@ -159,7 +159,7 @@ export const STORY_BATCH4: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Theme store themes worden zwaar. Apps stapelen. Checkout traag. B2B-logica past niet. Je groeit tegen het plafond.",
       "Custom Shopify theme is jouw merk, jouw checkout, performance zonder vijftig plugins om functioneel te worden.",
-      "SkinComplete draait op custom Shopify. Theme laten maken bij mij is investering in schaal, niet in cosmetica.",
+      "Custom Shopify is het fundament voor schaal. Theme laten maken bij mij is investering in groei, niet in cosmetica.",
     ],
   },
 };

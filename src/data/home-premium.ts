@@ -12,7 +12,7 @@ export const HOME_PROOF = {
   tag: "Echt werk",
   title: "Ik kan wel mooi praten.",
   titleAccent: "Dit liever laten zien.",
-  body: "Twee trajecten die nu live draaien. Geen mockup, geen stockfoto met jouw logo erop geplakt. Open de site, kijk mee en oordeel zelf.",
+  body: "Twee trajecten die nu live draaien. Open de site, kijk mee en oordeel zelf. Mockups en stockfoto's met jouw logo erop? Die laat ik links.",
   featuredHref: "/cases",
   featuredLabel: "Alle cases bekijken",
 } as const;
@@ -26,7 +26,7 @@ export const HOME_WHY_MENEER = {
   strengths: [
     {
       label: "Custom build",
-      detail: "Shopify en Next.js from scratch. Geen page builder die je remt als je groeit.",
+      detail: "Shopify en Next.js from scratch. Code die meegroeit, geen page builder die je remt als je groeit.",
     },
     {
       label: "SEO-expert",
@@ -57,8 +57,8 @@ export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
     id: "discover",
     short: "Snappen",
     title: "Waar zit je?",
-    headline: "We starten met jouw werkelijkheid, niet met een pitch.",
-    body: "Intake, data, doelen en je huidige stack. Geen offerte vóór er helderheid is over waar groei zit en wat eerst moet.",
+    headline: "Ik start met jouw werkelijkheid, niet met een pitch.",
+    body: "Intake, data, doelen en je huidige stack. Eerst helderheid over waar groei zit en wat eerst moet, dan pas een offerte.",
     tags: ["Intake", "Stack in kaart", "Quick wins"],
     scene: "discover",
   },
@@ -67,7 +67,7 @@ export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
     short: "Volgorde",
     title: "Wat eerst?",
     headline: "Maximaal drie focuspunten. De rest wacht zijn beurt.",
-    body: "Welke kanalen, welke volgorde en wat het kost. Geen alles-tegelijk-plan dat niemand uitvoert.",
+    body: "Welke kanalen, welke volgorde en wat het kost. Max drie focuspunten, geen alles-tegelijk-plan dat niemand uitvoert.",
     tags: ["Volgorde per kanaal", "Budget", "Meetplan"],
     scene: "route",
   },
@@ -95,11 +95,11 @@ export const HOME_CTA = {
   eyebrow: "Afsluiter",
   title: "Jouw bureau heeft een receptionist.",
   titleAccent: "Ik heb de code.",
-  body: "Vertel waar het nu wringt. Geen warme-overdracht naar een stagiair die je verhaal half snapt. Ik bouw je site of shop, fix je vindbaarheid en zet je Google Ads en Meta aan. Eén aanspreekpunt dat ook echt de knoppen indrukt.",
+  body: "Vertel waar het nu wringt. Ik bouw je site of shop, fix je vindbaarheid en zet je Google Ads en Meta aan. Eén aanspreekpunt dat ook echt de knoppen indrukt. Stagiair-overdracht is niet mijn model.",
   buttonLabel: "Vertel me je verhaal",
   secondaryLead: "Liever geen call?",
   secondaryLink: "Mail me even",
-  secondarySuffix: "Ik antwoord zelf. Geen chatbot.",
+  secondarySuffix: "Ik antwoord zelf. Persoonlijk, geen chatbot.",
   scrollHint: "Afsluiter. Vertel je verhaal. Ik reageer zelf, snor en al.",
 } as const;
 

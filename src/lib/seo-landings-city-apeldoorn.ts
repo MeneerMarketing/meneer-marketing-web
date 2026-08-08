@@ -81,7 +81,7 @@ const APELDOORN_PAIN_POOL: Record<
       body: "Veluwe-ondernemers zoeken op telefoon. Trage site = backup-optie.",
     },
     {
-      title: "Geen landings voor ads",
+      title: "Ads zonder campagne-landings",
       body: "Google Ads en Meta Ads naar homepage. Duur in Apeldoorn en daarbuiten.",
     },
     {
@@ -112,7 +112,7 @@ const APELDOORN_PAIN_POOL: Record<
     },
     {
       title: "Migratie-angst",
-      body: "WooCommerce vast, Shopify spannend. Geen plan = rankings gok.",
+      body: "WooCommerce vast, Shopify spannend. Zonder plan is rankings gokken.",
     },
   ],
   content: [
@@ -121,7 +121,7 @@ const APELDOORN_PAIN_POOL: Record<
       body: "AI-blogs die niemand leest. {kw} vraagt antwoorden die ranken én converteren.",
     },
     {
-      title: "Geen interne links",
+      title: "Content zonder interne links",
       body: "Content eilanden. Autoriteit stroomt niet naar dienstpagina's.",
     },
     {
@@ -130,7 +130,7 @@ const APELDOORN_PAIN_POOL: Record<
     },
     {
       title: "AI-zichtbaarheid nul",
-      body: "Geen pagina's die ChatGPT kan citeren. {region} concurrence wél.",
+      body: "Pagina's die ChatGPT kan citeren ontbreken. Concurrenten in {region} wel.",
     },
     {
       title: "Content los van site",
@@ -143,7 +143,7 @@ const APELDOORN_PAIN_POOL: Record<
       body: "B2B in Apeldoorn typt nog handmatig. {kw} automatiseert uren per week.",
     },
     {
-      title: "Geen self-service",
+      title: "Self-service ontbreekt",
       body: "Zakelijke klanten willen online bestellen. PDF en telefoon remmen groei.",
     },
     {
@@ -191,7 +191,7 @@ const APELDOORN_PROCESS: Record<
       },
       {
         title: "Structuur op intentie",
-        body: "Search, Shopping, remarketing. Geen alles-in-één-zak.",
+        body: "Search, Shopping, remarketing. Elk kanaal zijn eigen structuur.",
       },
       {
         title: "Live + test",
@@ -215,7 +215,7 @@ const APELDOORN_PROCESS: Record<
       },
       {
         title: "Bouwen & publiceren",
-        body: "Ik schrijf én zet live. Geen wachten op derden voor {kw}.",
+        body: "Ik schrijf én zet live. Direct, zonder wachten op derden voor {kw}.",
       },
       {
         title: "Bijsturen op omzet",
@@ -271,7 +271,7 @@ const APELDOORN_PROCESS: Record<
       },
       {
         title: "Bouwen in code",
-        body: "Geen page builder. Controle over elke URL.",
+        body: "Controle over elke URL in code. Page builders blijven achter.",
       },
       {
         title: "Overdracht",
@@ -287,7 +287,7 @@ const APELDOORN_PROCESS: Record<
       },
       {
         title: "Custom waar nodig",
-        body: "B2B, portalen, unieke flows. SkinComplete-model.",
+        body: "B2B, portalen, unieke flows. Custom Shopify waar het past.",
       },
       {
         title: "SEO + feed",
@@ -305,7 +305,7 @@ const APELDOORN_PROCESS: Record<
       },
       {
         title: "Theme & snelheid",
-        body: "CWV groen bij launch. Geen app-hel.",
+        body: "CWV groen bij launch. Snelle shop, zonder app-hel.",
       },
       {
         title: "Migratie of rebuild",
@@ -325,7 +325,7 @@ const APELDOORN_PROCESS: Record<
       },
       {
         title: "Antwoord-pagina's",
-        body: "Eén intentie per URL. Geen bulk-ruis.",
+        body: "Eén intentie per URL. Scherpe pagina's, geen bulk-ruis.",
       },
       {
         title: "Interne links",
@@ -377,7 +377,7 @@ const APELDOORN_STORY_TITLES: Record<SeoLandingCategory, readonly string[]> = {
   ],
   shopify: [
     "{kw} met shop die meegroeit",
-    "Shopify in Apeldoorn: SkinComplete-model",
+    "Shopify in Apeldoorn: custom build op maat",
     "Webshop voor {region} die campagnes aankan",
   ],
   content: [
@@ -393,7 +393,7 @@ const APELDOORN_STORY_TITLES: Record<SeoLandingCategory, readonly string[]> = {
 };
 
 const APELDOORN_STORY_OPENERS: readonly string[] = [
-  "Apeldoorn is thuisbasis van Meneer Marketing. Ik zit niet in een postbus in Amsterdam. {kw} bespreek ik met je alsof we aan tafel zitten, met cijfers open en een plan dat je begrijpt.",
+  "Apeldoorn is thuisbasis van Meneer Marketing. Ik zit niet in een postbus in Amsterdam. {kw} bespreek ik met je alsof ik aan tafel bij je zit, met cijfers open en een plan dat je begrijpt.",
   "Veluwe-MKB werkt hard en heeft weinig geduld voor bureau-theater. {kw} in Apeldoorn moet deze maand iets opleveren, niet vol kwartaal in slides.",
   "Je concurreert online met iedereen die {region} target, ook buiten Gelderland. {kw} wint op snelheid, relevantie en vertrouwen, niet op hardste schreeuwer.",
   "Offline ken je mensen in Apeldoorn. Online moet hetzelfde vertrouwen voelbaar zijn. Generieke copy met 'Apeldoorn' in de H1 werkt niet.",
@@ -403,18 +403,18 @@ const APELDOORN_STORY_OPENERS: readonly string[] = [
 const APELDOORN_STORY_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
   "google-ads": [
     "Ik beheer accounts zelf, fix landings en zet tracking goed vóór opschalen. Google Ads en Meta Ads expliciet in het plan, niet verstopt achter jargon.",
-    "SkinComplete schaalde ads na organisch bewijs. BestRest per product bekeken. Die volgorde geldt ook voor Veluwe-ondernemers.",
+    "Ik schaal ads pas na organisch bewijs. Per product bekeken waar marge het toelaat. Die volgorde geldt ook voor Veluwe-ondernemers.",
   ],
   seo: [
-    "Ik schrijf, bouw en publiceer. Geen PDF die in Drive verrot. GBP, reviews en landings voor {kw} in één lijn.",
+    "Ik schrijf, bouw en publiceer. Live op je domein, niet een PDF die in Drive verrot. GBP, reviews en landings voor {kw} in één lijn.",
     "12 jaar Google plus AI-zoek in 2026. Pagina's die ChatGPT kunnen citeren, niet keyword-lists uit 2014.",
   ],
   website: [
-    "Custom Next.js of Shopify. Snelheid, schema, landings en tracking vóór je trots de link deelt. Geen page builder die vastloopt bij groei.",
+    "Custom Next.js of Shopify. Snelheid, schema, landings en tracking vóór je trots de link deelt. Custom build die meeschaaft bij groei.",
     "MeneerMarketing.nl zelf, klantportalen en shops: from scratch in Apeldoorn, schaalbaar landelijk.",
   ],
   shopify: [
-    "SkinComplete draait op custom Shopify met B2B, SEO en mail gekoppeld. {kw} volgt dat model waar het past.",
+    "Custom Shopify met B2B, SEO en mail gekoppeld. {kw} volgt dat model waar het past.",
     "Feed, checkout en abandoned cart horen standaard. Ads opschalen op lekkende shop is lerngeld.",
   ],
   content: [
@@ -430,13 +430,13 @@ const APELDOORN_STORY_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
 const APELDOORN_DEEPDIVE: Record<SeoLandingCategory, readonly string[]> = {
   "google-ads": [
     "{kw} in Apeldoorn: je betaalt per klik. Landings en tracking moeten kloppen vóór budget omhoog. Message match is geen detail, het is marge.",
-    "Thuisbasis betekent korte lijnen. Geen accountmanager die je shop nooit opende. Ik lees zoektermen, fix pagina's, stuur bij op ROAS.",
+    "Thuisbasis betekent korte lijnen. Ik open je shop zelf, geen accountmanager die je site nooit bezocht. Ik lees zoektermen, fix pagina's, stuur bij op ROAS.",
     "Veluwe-ondernemers adverteren soms tegen Randstad-bureaus die {region} als targeting zien. Jij wint op relevantie en snelheid.",
-    "Google Ads en Meta Ads samen in één strategie als beide passen. Zelfde landings, andere hooks. Geen silo's.",
+    "Google Ads en Meta Ads samen in één strategie als beide passen. Zelfde landings, andere hooks. Eén plan, geen silo's.",
   ],
   seo: [
     "Lokaal ranken in Apeldoorn vraagt GBP, reviews, landings en techniek. Footer-adres alleen is postbus-SEO.",
-    "Organisch fundament vóór ads opschalen. SkinComplete-gedachte werkt ook voor salon, maakbedrijf of dienstverlener op de Veluwe.",
+    "Organisch fundament vóór ads opschalen. Die volgorde werkt ook voor salon, maakbedrijf of dienstverlener op de Veluwe.",
     "AI-zoek: antwoord-pagina's, schema, updates op oude content. {kw} in 2026 is Google én ChatGPT.",
     "Ik meet op leads en omzet, niet alleen positie. Ranking zonder pipeline is decoratie.",
   ],
@@ -444,7 +444,7 @@ const APELDOORN_DEEPDIVE: Record<SeoLandingCategory, readonly string[]> = {
     "{kw} from scratch: controle over snelheid, landings en integraties. Theme-plafond remt campagnes.",
     "Mobiel-first is realiteit in {region}. Core Web Vitals zijn ranking én conversie.",
     "Landings per dienst of campagne. Homepage is geen vangnet voor al je ads.",
-    "After launch blijf ik betrokken. Site aanpassen, meten, bijbouwen. Geen bouwer die verdwijnt.",
+    "After launch blijf ik betrokken. Site aanpassen, meten, bijbouwen. Ik blijf beschikbaar na livegang.",
   ],
   shopify: [
     "Shopify in Apeldoorn: B2B, retail of beide. Custom theme waar theme store stopt.",
@@ -471,7 +471,7 @@ const APELDOORN_SCENES: Record<SeoLandingCategory, readonly SeoLandingSceneBreak
       visual: "google-ads",
       eyebrow: "Apeldoorn · thuisbasis",
       title: "{kw} met landings in dezelfde handen",
-      caption: "Google Ads, Meta Ads, tracking. Geen bureau op afstand dat alleen dashboards stuurt.",
+      caption: "Google Ads, Meta Ads, tracking. Hands-on vanuit Apeldoorn, niet alleen dashboards op afstand.",
     },
   ],
   seo: [
@@ -505,7 +505,7 @@ const APELDOORN_SCENES: Record<SeoLandingCategory, readonly SeoLandingSceneBreak
       visual: "webshop",
       eyebrow: "Shopify · Apeldoorn",
       title: "Shop die feed, mail en ads koppelt",
-      caption: "SkinComplete-model: B2B, SEO, flows onder één dak.",
+      caption: "B2B, SEO en flows onder één dak. Custom waar het theme stopt.",
     },
   ],
   content: [
@@ -544,9 +544,9 @@ const APELDOORN_HOT_TAKES: readonly { label: string; body: string }[] = [
 ];
 
 const APELDOORN_PROOF = [
-  "Meneer Marketing is gevestigd in Apeldoorn. SkinComplete, BestRest en MeneerMarketing.nl: gebouwd from scratch, landelijk schaalbaar. {kw} krijgt diezelfde hands-on aanpak.",
+  "Meneer Marketing is gevestigd in Apeldoorn. MeneerMarketing.nl en klantportalen: gebouwd from scratch, landelijk schaalbaar. {kw} krijgt diezelfde hands-on aanpak.",
   "Thuisbasis Veluwe betekent: ik ken {region}, ik open je shop en accounts zelf, en ik zeg nee als {kw} niet past bij je marge.",
-  "Praktijk uit Apeldoorn, resultaat landelijk. Geen slides-fabriek, wel pagina's en campagnes die live gaan.",
+  "Praktijk uit Apeldoorn, resultaat landelijk. Pagina's en campagnes die live gaan, niet alleen slides.",
 ];
 
 const APELDOORN_PROCESS_TITLES: Record<SeoLandingCategory, readonly string[]> = {

@@ -119,7 +119,7 @@ export const HOME_MOBILE_CHAPTER_BOUWEN: MobileChapter = {
   id: "bouwen",
   eyebrow: "Bouwen from scratch",
   title: "Je site is je verkoper, geen digitaal visitekaartje.",
-  body: "Custom Next.js of Shopify. Geen page builder die vastloopt zodra je gaat adverteren. Snel, technisch strak en gebouwd om te converteren.",
+  body: "Custom Next.js of Shopify. Custom build die meeschaaft zodra je gaat adverteren. Snel, technisch strak en gebouwd om te converteren.",
   hotTake:
     "Gekochte templates en page builders zijn als een pak van de Hema. Past, maar niemand onthoudt je naam.",
   inlineProof:
@@ -134,7 +134,7 @@ export const HOME_MOBILE_CHAPTER_VINDBAARHEID: MobileChapter = {
   id: "vindbaarheid",
   eyebrow: "Google SEO",
   title: "12 jaar Google. Ik ken het spel.",
-  body: "AI-zoek hebben we net gehad. Hier draait het om Google: ranken, landingspagina's en autoriteit die blijft staan. Geen trucjes uit 2014. Wel vakmanschap dat ik al meer dan een decennium oefen.",
+  body: "AI-zoek hebben we net gehad. Hier draait het om Google: ranken, landingspagina's en autoriteit die blijft staan. Vakmanschap dat ik al meer dan een decennium oefen, geen trucjes uit 2014.",
   hotTake:
     "Google verandert constant. Ik ook. Daarom win je van concurrenten die SEO al drie jaar niet hebben bijgewerkt.",
   inlineProof:
@@ -195,7 +195,7 @@ export const HOME_MOBILE_MYTHS: readonly MobileMyth[] = [
     eyebrow: "LinkedIn hot take",
     myth: "SEO is dood. Alleen AI-zoek telt nog",
     meneer:
-      "AI-zoek is erbij. Geen vervanging. Wie SEO laat liggen en alleen ChatGPT optimaliseert, bouwt op zand.",
+      "AI-zoek is erbij. Een aanvulling, geen vervanging. Wie SEO laat liggen en alleen ChatGPT optimaliseert, bouwt op zand.",
     href: "/vindbaarheid",
     linkLabel: "Vindbaarheid",
   },

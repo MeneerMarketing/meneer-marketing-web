@@ -6,7 +6,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     title: "Marketing bureau dat bouwt, rankt en adverteert",
     paragraphs: [
       "Marketing bureau zoeken is vaak zoeken naar iemand die strategie én uitvoering kan. Bij mij zit webdevelopment, SEO, Google Ads, Meta en automatisering onder één dak.",
-      "Ik werk als jouw online marketing manager: één aanspreekpunt, eerlijke prioriteiten, rapportage in omzet-taal. SkinComplete en BestRest zijn geen slides, het zijn live projecten.",
+      "Ik werk als jouw online marketing manager: één aanspreekpunt, eerlijke prioriteiten, rapportage in omzet-taal. Live projecten die je zelf kunt checken: code, campagnes en mail onder één dak.",
       "Marketing bureau bij Meneer Marketing is custom build en meetbaar groeien. Templates en page builders zijn niet mijn werkwijze.",
       "Apeldoorn en landelijk. Marketing bureau met twaalf jaar praktijk en cases die je zelf kunt checken.",
     ],
@@ -15,9 +15,9 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     title: "Website specialist voor snelle, vindbare sites",
     paragraphs: [
       "Website specialist betekent: iemand die je site technisch en commercieel begrijpt. Snelheid, SEO, conversie en onderhoud horen bij elkaar.",
-      "Ik bouw Next.js en Shopify sites from scratch. Geen WordPress als eindstation, wel migratie als je daar nu zit.",
+      "Ik bouw Next.js en Shopify sites from scratch. Custom build als eindstation. Migratie wanneer je nu op WordPress zit.",
       "Website specialist bij mij meet Core Web Vitals, zet schema klaar en denkt mee over landings voor ads. Site is je marketing-fundament.",
-      "Hills Pilates en BestRest kregen sites die ranken én verkopen. Website specialist is geen thema installeren en door.",
+      "Hills Pilates en ecommerce-klanten kregen sites die ranken én verkopen. Website specialist is meer dan een thema installeren en door.",
     ],
   },
   "seo-bureau": {
@@ -25,8 +25,8 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     paragraphs: [
       "SEO bureau helpt je organisch vindbaar worden op zoektermen die omzet opleveren. Dat vraagt techniek, content en links die passen bij je merk.",
       "Ik audit crawl, indexatie, schema en content. Daarna een roadmap: welke pagina's eerst, welke clusters, welke interne links.",
-      "SEO bureau bij Meneer Marketing bouwt ook de site. Geen rapport dat maanden in een la ligt terwijl je developer iets anders bouwt.",
-      "SkinComplete domineerde salon-zoektermen voor ads werden aangezet. SEO bureau met die volgorde bespaart leergeld.",
+      "SEO bureau bij Meneer Marketing bouwt ook de site. Rapport én publicatie in hetzelfde traject, niet maanden wachten op je developer.",
+      "Organisch eerst op niche-zoektermen, daarna pas ads. SEO bureau met die volgorde bespaart leergeld.",
     ],
   },
   "email-marketing": {
@@ -51,7 +51,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     title: "Website laten ontwerpen met design dat converteert",
     paragraphs: [
       "Website laten ontwerpen gaat verder dan mooi. Hiërarchie, trust, mobiel en één duidelijke actie per pagina bepalen of bezoekers blijven.",
-      "Ik ontwerp en bouw in één traject. Geen overdracht tussen designer en developer die weken kost.",
+      "Ik ontwerp en bouw in één traject. Designer en developer in één hand, weken bespaard.",
       "Website laten ontwerpen bij Meneer Marketing past bij merken die premium willen ogen zonder trage multipurpose themes.",
       "Design volgt data: heatmaps, scroll, conversie. Website laten ontwerpen is iteratie, niet een eenmalige lancering.",
     ],
@@ -61,8 +61,8 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     paragraphs: [
       "Internetmarketing bureau dekt SEO, SEA, social, mail en site. Het voordeel van één partij: dezelfde boodschap en prioriteit over kanalen.",
       "Ik begin met audit en volgorde. Soms eerst site, soms eerst Shopping, soms eerst content. Internetmarketing is geen alles-tegelijk.",
-      "Internetmarketing bureau bij mij is senior uitvoering. Geen accountmanager die alles uitbesteedt aan stagiaires.",
-      "Cases: SkinComplete ecommerce, BestRest matrassen, Hills Pilates lokaal. Internetmarketing met bewijs.",
+      "Internetmarketing bureau bij mij is senior uitvoering. Jij praat met mij, niet met een accountmanager die alles uitbesteedt.",
+      "Cases in ecommerce, B2B-portalen en lokale dienstverlening. Internetmarketing met bewijs dat je kunt meten.",
     ],
   },
   "online-marketing-specialist": {
@@ -70,7 +70,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     paragraphs: [
       "Online marketing specialist is hands-on: campagnes, landings, rapporten, bijsturing. Bij MKB vaak de rol die je niet fulltime wilt inhuren.",
       "Ik werk remote en on-site waar het helpt. Vaste ritmes: wekelijkse ads, maandelijkse SEO, kwartaalstrategie.",
-      "Online marketing specialist bij mij schrijft ook code en content. Geen losse adviezen die niemand implementeert.",
+      "Online marketing specialist bij mij schrijft ook code en content. Adviezen die live gaan, niet in een la liggen.",
       "Online marketing specialist met developer-skills scheelt tussenpartijen en versnelt livegang.",
     ],
   },
@@ -104,10 +104,10 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
   "website-laten-maken": {
     title: "Website laten maken from scratch, geen template",
     paragraphs: [
-      "Website laten maken betekent bij mij: custom code, jouw merk, jouw funnel. Geen page builder die over twee jaar tegen je werkt.",
+      "Website laten maken betekent bij mij: custom code, jouw merk, jouw funnel. Page builders die over twee jaar tegen je werken, sla ik over.",
       "Ik bouw in Next.js of Shopify afhankelijk van je model. SEO, schema, snelheid en analytics staan dag één klaar.",
       "Website laten maken is investering in vindbaarheid en ads. Trage template-sites maken elke campagne duurder.",
-      "BestRest en Hills Pilates zijn referenties. Website laten maken bij Meneer Marketing is één traject van strategie tot live.",
+      "Hills Pilates en ecommerce-klanten zijn referenties. Website laten maken bij Meneer Marketing is één traject van strategie tot live.",
     ],
   },
   "seo-specialist": {
@@ -124,7 +124,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     paragraphs: [
       "Google Ads bureau beheert Search, Shopping, Performance Max en remarketing. Succes hangt af van tracking, feed en landings die matchen met je ads.",
       "Ik setup conversies, lees zoektermen wekelijks en bouw landings bij als data het vraagt. Quality Score is geen abstract cijfer, het is lagere CPC.",
-      "Google Ads bureau bij Meneer Marketing schaalt pas na bewijs. SkinComplete en BestRest kregen elk een eigen account-structuur.",
+      "Google Ads bureau bij Meneer Marketing schaalt pas na bewijs. Elk account krijgt een structuur op marge en intentie.",
       "Google Ads en SEO onder één dak houdt je CPC en organische groei in balans.",
     ],
   },
@@ -132,7 +132,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     title: "Google Ads beheer: accounts die wekelijks scherper worden",
     paragraphs: [
       "Google Ads beheer is het doorlopend optimaliseren van je campagnes: zoektermen, biedingen, budgetten, advertenties en landings.",
-      "Ik pauzeer wat lekt, schaal wat marge oplevert en leg uit waarom in gewone taal. Geen maandrapport zonder actie.",
+      "Ik pauzeer wat lekt, schaal wat marge oplevert en leg uit waarom in gewone taal. Elke maand een actie, niet alleen een rapport.",
       "Google Ads beheer zonder sterke site is geld verbranden. Ik fix landings en tracking in hetzelfde traject.",
       "Beheer bij mij is één vaste contactpersoon die je account kent en je shop kan lezen.",
     ],
@@ -143,16 +143,16 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
       "Hoger in Google betekent zichtbaar zijn op zoektermen die klanten opleveren, niet alleen op je merknaam.",
       "Ik werk aan techniek, content, interne links en autoriteit. Prioriteit op pagina's met koopintentie.",
       "Hoger in Google vraagt tijd, maar elke positie op de juiste term kan maanden traffic geven zonder extra ad-spend.",
-      "SkinComplete steeg organisch op salonvragen voordat ads gingen draaien. Hoger in Google met die volgorde is duurzaam.",
+      "Organisch eerst op koopintentie, ads daarna. Hoger in Google met die volgorde is duurzaam.",
     ],
   },
   "webshop-laten-maken": {
     title: "Webshop laten maken op Shopify met groei ingebouwd",
     paragraphs: [
       "Webshop laten maken is meer dan producten uploaden. Theme, checkout, feed, mail en SEO bepalen of je kunt schalen.",
-      "Ik bouw custom Shopify waar nodig, koppel Klaviyo en zet Shopping klaar. Geen zware theme-store rommel.",
+      "Ik bouw custom Shopify waar nodig, koppel Klaviyo en zet Shopping klaar. Lean themes in plaats van zware theme-store rommel.",
       "Webshop laten maken bij Meneer Marketing eindigt in een winkel die ads en organisch verkeer aankan.",
-      "SkinComplete is het voorbeeld: B2B-portaal, SEO, mail en campagnes op één fundament.",
+      "Het patroon: B2B-portaal, SEO, mail en campagnes op één Shopify-fundament.",
     ],
   },
   "content-marketing-vindbaarheid": {
@@ -170,7 +170,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
       "B2B portaal bouwen laat zakelijke klanten zelf bestellen met eigen prijzen, assortiment en facturatie.",
       "Ik bouw op Shopify met login, prijslijsten, minimum orders en koppelingen naar mail en CRM.",
       "B2B portaal bouwen is geen plugin-trial. Het is proces: wie bestelt, hoe worden prijzen bepaald, wat gaat automatisch.",
-      "SkinComplete B2B-portaal is mijn referentie. Salons bestellen zelf, marketing focust op groei in plaats van order-entry.",
+      "B2B-portaal op Shopify is mijn referentie. Zakelijke klanten bestellen zelf, marketing focust op groei in plaats van order-entry.",
     ],
   },
   "meta-ads-bureau": {
@@ -197,7 +197,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
       "Shopify expert kent het platform door en door: Liquid, apps, checkout, feeds, B2B en performance.",
       "Ik optimaliseer themes, verwijder app-bloat, fix Shopping-feeds en koppel mail en portalen.",
       "Shopify expert bij mij is ook marketeer. Ik zie direct wat je checkout en SEO kost.",
-      "SkinComplete draait op custom Shopify. Shopify expert met die referentie weet wat schaal vraagt.",
+      "Custom Shopify met B2B, feed en mail gekoppeld. Shopify expert met dat traject weet wat schaal vraagt.",
     ],
   },
   "google-shopping-ads": {
@@ -213,7 +213,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
     title: "Vindbaarheid in AI: ChatGPT, Gemini en klassiek zoeken",
     paragraphs: [
       "Vindbaarheid AI betekent dat grote taalmodellen en zoekmachines je merk kennen en citeren wanneer iemand een vraag stelt.",
-      "Ik bouw expertise-pagina's, FAQ, cases en gestructureerde data. Geen spam, wel antwoorden die je autoriteit tonen.",
+      "Ik bouw expertise-pagina's, FAQ, cases en gestructureerde data. Antwoorden die je autoriteit tonen, geen spam.",
       "Vindbaarheid AI hangt samen met SEO: hetzelfde sterke fundament, consistent over site en profielen.",
       "Dit is volwaardige dienst bij Meneer Marketing. Vindbaarheid AI is geen toekomstmuziek, het is nu meten en bijbouwen.",
     ],
@@ -242,7 +242,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
       "SEA specialist beheert je betaalde zoekcampagnes: Search, Shopping, remarketing. Het doel is omzet tegen acceptabele CPA of ROAS.",
       "Ik lees zoektermen, pas biedingen aan en bouw landings bij. SEA zonder message match is duur experiment.",
       "SEA specialist bij Meneer Marketing kent ook SEO. Beide kanalen delen dezelfde zoekintentie.",
-      "SkinComplete en BestRest kregen elk een SEA-structuur op maat. Opschalen na bewijs, niet op dag één.",
+      "Elk account krijgt een SEA-structuur op marge en intentie. Opschalen na bewijs, niet op dag één.",
     ],
   },
   "google-ads-of-seo": {
@@ -251,7 +251,7 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
       "Google Ads of SEO is de klassieke keuze: direct traffic kopen of organisch bouwen. Het antwoord hangt af van marge, concurrentie en tijdshorizon.",
       "SEO is trager maar goedkoper op termijn. Ads geven volume nu maar CPC stijgt. Vaak: SEO op kerntermen, ads op test en piekmomenten.",
       "Google Ads of SEO als exclusieve keuze werkt zelden. Dezelfde landings en boodschap maken beide goedkoper.",
-      "SkinComplete koos organisch eerst. Google Ads of SEO bij jou bepaal ik na audit van site, markt en budget.",
+      "Organisch eerst, ads daarna: dat is mijn standaardvolgorde. Google Ads of SEO bij jou bepaal ik na audit van site, markt en budget.",
     ],
   },
   "shopify-of-woocommerce": {
@@ -269,14 +269,14 @@ export const DEEPDIVE_BATCH5_EXTRA: Partial<Record<string, SeoLandingProseOverri
       "Meta Ads of Google Ads is geen wedstrijd met één winnaar. Search vangt intentie, Meta bouwt vraag en retargeting. Budget volgt je funnel.",
       "Ik start met data: orderwaarde, overwegingstijd, waar je doelgroep zoekt. D2C vaak Meta plus Shopping, B2B vaak Search plus LinkedIn.",
       "Meta Ads of Google Ads vergelijken zonder landings en tracking levert verkeerde conclusies. Beide eindigen op je site.",
-      "Bij SkinComplete en BestRest verschilde de mix. Meta Ads of Google Ads kies ik per case, niet standaard fifty-fifty.",
+      "De mix verschilt per merk en marge. Meta Ads of Google Ads kies ik per case, niet standaard fifty-fifty.",
     ],
   },
   "bureau-of-freelancer-marketing": {
     title: "Bureau of freelancer marketing: wat past bij MKB",
     paragraphs: [
       "Bureau of freelancer marketing is de vraag: breed team met overhead of één specialist die alles doet. MKB heeft vaak iets tussenin nodig.",
-      "Bij Meneer Marketing krijg je één senior brein dat strategie, code, SEO en ads combineert. Geen accountmanager die alles uitbesteedt.",
+      "Bij Meneer Marketing krijg je één senior brein dat strategie, code, SEO en ads combineert. Jij praat met mij, niet met een accountmanager die alles uitbesteedt.",
       "Bureau of freelancer marketing hangt af van complexiteit. Custom shop plus meerdere kanalen vraagt iemand die de hele stack snapt.",
       "Freelancer voor één taak, bureau voor breedte, of één partner die bouwt én adverteert. Ik pas bij die laatste categorie.",
     ],

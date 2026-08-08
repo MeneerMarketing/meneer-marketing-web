@@ -68,7 +68,7 @@ const REGIONAL_PAIN_POOL: Record<
   website: [
     { title: "Template-plafond", body: "{kw} via page builder remt groei in {region}. Custom schaalt mee." },
     { title: "Mobiel te traag", body: "Klanten in {city} vergelijken op telefoon. Trage site = weg." },
-    { title: "Geen campagne-landings", body: "Ads naar homepage. Duur in {city} en daarbuiten." },
+    { title: "Campagne-landings ontbreken", body: "Ads naar homepage. Duur in {city} en daarbuiten." },
     { title: "Bouwer weg na live", body: "Site staat, tracking onduidelijk. Ondernemer in {region} zoekt zelf." },
     { title: "Mooi zonder CTA", body: "Design award, lege inbox. {kw} moet converteren." },
   ],
@@ -77,18 +77,18 @@ const REGIONAL_PAIN_POOL: Record<
     { title: "Feed en SEO los", body: "Shopping en organisch delen geen data. Dubbel werk in {region}." },
     { title: "Checkout lekt", body: "Cart abandon hoog terwijl ads draaien op {kw}." },
     { title: "B2B via mail", body: "Zakelijke klanten in {city} willen portal, geen PDF." },
-    { title: "Migratie-angst", body: "WooCommerce vast. Geen redirect-plan voor {region}." },
+    { title: "Migratie-angst", body: "WooCommerce vast. Redirect-plan voor {region} ontbreekt." },
   ],
   content: [
     { title: "Bulk zonder stem", body: "AI-blogs die niemand in {city} leest. {kw} vraagt antwoorden." },
-    { title: "Geen interne links", body: "Content-eilanden. Autoriteit stroomt niet in {region}." },
+    { title: "Content zonder interne links", body: "Content-eilanden. Autoriteit stroomt niet in {region}." },
     { title: "Vragen genegeerd", body: "Support-mail is gratis contentplan voor {kw}." },
-    { title: "AI-zichtbaarheid nul", body: "Geen pagina's die ChatGPT kan citeren voor {city}." },
+    { title: "AI-zichtbaarheid nul", body: "Pagina's die ChatGPT kan citeren voor {city} ontbreken." },
     { title: "Content los van site", body: "Blogs ranken niet door trage techniek in {region}." },
   ],
   "b2b-portal": [
     { title: "Orders in mail", body: "B2B in {city} typt handmatig. {kw} kan uren teruggeven." },
-    { title: "Geen self-service", body: "Zakelijke klanten in {region} willen online bestellen." },
+    { title: "Self-service ontbreekt", body: "Zakelijke klanten in {region} willen online bestellen." },
     { title: "Leads in Gmail", body: "Formulieren zonder flow. Opvolging hapert." },
     { title: "Excel naast shop", body: "Dubbel werk dat {kw} zou kunnen automatiseren." },
     { title: "Automatisering zonder plan", body: "Tools geïnstalleerd, niets gekoppeld in {city}." },
@@ -121,7 +121,7 @@ const REGIONAL_STORY_OPENERS: Record<RegionBucket, readonly string[]> = {
 const REGIONAL_STORY_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
   "google-ads": [
     "Google Ads en Meta Ads expliciet waar passend. Landings fix ik zelf. Tracking vóór opschalen.",
-    "SkinComplete schaalde na organisch. BestRest per product. Die volgorde geldt ook in {city}.",
+    "Ik schaal ads pas na organisch bewijs. Per product bekeken waar marge het toelaat. Die volgorde geldt ook in {city}.",
   ],
   seo: [
     "Ik schrijf, bouw en publiceer. GBP, reviews en landings voor {kw} in één lijn.",
@@ -149,8 +149,8 @@ const REGIONAL_DEEPDIVE: Record<SeoLandingCategory, readonly string[]> = {
   "google-ads": [
     "{kw} in {city}: elke klik kost geld. Landings en tracking moeten kloppen vóór budget omhoog.",
     "Message match tussen ad en pagina is marge in {region}, geen detail.",
-    "Google Ads en Meta Ads in één strategie als beide passen. Geen silo's.",
-    "Wekelijks bijsturen op zoektermen en ROAS. Geen maandrapport zonder actie.",
+    "Google Ads en Meta Ads in één strategie als beide passen. Eén plan, geen silo's.",
+    "Wekelijks bijsturen op zoektermen en ROAS. Actie per week, niet alleen een maandrapport.",
   ],
   seo: [
     "Lokaal ranken in {city} vraagt GBP, reviews, landings en techniek.",
@@ -198,7 +198,7 @@ const REGIONAL_PROCESS: Record<
     [
       { title: "Baseline {city}", body: "Rankings, techniek, GBP. Weten waar je staat in {region}." },
       { title: "Prioriteit", body: "Pagina's op marge eerst voor {kw}." },
-      { title: "Bouwen & live", body: "Ik publiceer zelf. Geen wachten op derden." },
+      { title: "Bouwen & live", body: "Ik publiceer zelf. Direct live, zonder wachten op derden." },
       { title: "Meten", body: "Posities plus pipeline in {city}." },
     ],
   ],
