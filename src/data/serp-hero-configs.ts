@@ -46,7 +46,7 @@ export const VINDABAARHEID_SERP: SerpHeroConfig = {
       { url: "concurrent-d.nl", title: "ChatGPT optimalisatie", snippet: "Wij schrijven AI-content..." },
     ],
     [
-      { url: "meneermarketing.nl", title: "Websites from scratch · MeneerMarketing", snippet: "Geen page builders. Custom build, CWV groen.", isYou: true },
+      { url: "meneermarketing.nl", title: "Websites from scratch · MeneerMarketing", snippet: "Custom build from scratch. CWV groen.", isYou: true },
       { url: "wordpress-host.nl", title: "Website in 1 dag", snippet: "Template + plugins = klaar!" },
       { url: "concurrent-e.nl", title: "Goedkope website", snippet: "Vanaf € 299 all-in..." },
     ],
@@ -70,7 +70,7 @@ export const SEO_SERP: SerpHeroConfig = {
   ],
   serpSets: [
     [
-      { url: "concurrent-seo.nl", title: "SEO pakket vanaf € 299", snippet: "500 backlinks en wat blogposts. Resultaat? Geen idee." },
+      { url: "concurrent-seo.nl", title: "SEO pakket vanaf € 299", snippet: "500 backlinks en wat blogposts. Resultaat? Onduidelijk." },
       { url: "marketing-totaal.nl", title: "Online marketing alles-in-één", snippet: "SEO, social, ads. Een beetje van alles." },
       { url: "meneermarketing.nl", title: "SEO from scratch · MeneerMarketing", snippet: "Techniek, content en autoriteit. Organisch vóór paid.", isYou: true },
     ],

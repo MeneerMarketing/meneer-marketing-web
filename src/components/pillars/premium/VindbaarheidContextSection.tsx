@@ -19,7 +19,7 @@ const INSIGHTS = [
     icon: Bot,
     label: "AI-antwoorden",
     title: "ChatGPT is ook een zoekmachine",
-    preview: "Geen antwoord? Dan kijkt je klant verder.",
+    preview: "Zonder antwoord kijkt je klant verder.",
     body: "Steeds meer klanten vragen eerst aan ChatGPT of Gemini welk bedrijf ze moeten kiezen. Sta jij niet in dat antwoord, dan ben je voor hen simpelweg geen optie meer.",
   },
   {
@@ -28,15 +28,15 @@ const INSIGHTS = [
     label: "Keten",
     title: "SEO is breder dan rankings",
     preview: "Content, techniek, lokaal, reviews.",
-    body: "Vindbaarheid is de combinatie van goede content, een technisch kloppende site, lokale aanwezigheid en reviews die vertrouwen geven. Wij pakken die keten als geheel op, want de onderdelen versterken elkaar.",
+    body: "Vindbaarheid is de combinatie van goede content, een technisch kloppende site, lokale aanwezigheid en reviews die vertrouwen geven. Ik pak die keten als geheel op, want de onderdelen versterken elkaar.",
   },
   {
     id: "volgorde",
     icon: Star,
     label: "Volgorde",
     title: "Organisch eerst, ads daarna",
-    preview: "SkinComplete-model: SEO vóór budget.",
-    body: "SkinComplete stond bovenaan in Google vóór er één euro aan advertenties werd uitgegeven. Organische vindbaarheid maakt elke advertentie-euro daarna goedkoper, omdat je merk al vertrouwen heeft opgebouwd waar klanten zoeken.",
+    preview: "SEO vóór budget.",
+    body: "Eerst bovenaan in Google, daarna pas advertentiebudget. Organische vindbaarheid maakt elke advertentie-euro daarna goedkoper, omdat je merk al vertrouwen heeft opgebouwd waar klanten zoeken.",
   },
 ] as const;
 

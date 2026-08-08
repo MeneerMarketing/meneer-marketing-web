@@ -42,7 +42,7 @@ export const HOME_MOBILE_GOOGLE_ERAS: readonly GoogleExpertEra[] = [
     id: "content",
     label: "Content",
     year: "2022",
-    headline: "Helpful content. Geen AI-prutswerk.",
+    headline: "Helpful content. Menselijk, geen AI-prutswerk.",
     meneer:
       "Iedereen plakte ChatGPT-tekst op hun blog. Google wilde antwoorden die echt helpen. Dat bouw ik: pagina's die ranken én converteren.",
     rank: 2,
@@ -54,7 +54,7 @@ export const HOME_MOBILE_GOOGLE_ERAS: readonly GoogleExpertEra[] = [
     year: "12+ jr",
     headline: "Positie 1. Organisch. Gratis kliks.",
     meneer:
-      "Ads stoppen als je budget stopt. Een pagina op #1 levert gewoon door. SkinComplete deed dit eerst organisch, daarna pas ads.",
+      "Ads stoppen als je budget stopt. Een pagina op #1 levert gewoon door. Eerst organisch, daarna pas ads.",
     rank: 1,
     searchSnippet: "Jouw merk · Expert in [jouw dienst] · Geciteerd door Google",
   },

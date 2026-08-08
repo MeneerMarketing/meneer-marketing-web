@@ -38,7 +38,7 @@ const GOALS: CampaignGoal[] = [
   {
     id: "creative",
     icon: Video,
-    label: "Geen hook",
+    label: "Zwakke hook",
     title: "Creatives die niet converteren",
     priority: ["UGC", "Media", "Meta Ads"],
     services: [
@@ -47,7 +47,7 @@ const GOALS: CampaignGoal[] = [
       { name: "Meta Ads", href: "/diensten/meta-ads" },
     ],
     outcome:
-      "Echte mensen, korte hooks en formats die passen bij het kanaal. Geen stock die niemand pauzeert.",
+      "Echte mensen, korte hooks en formats die passen bij het kanaal. Content die mensen pauzeren.",
   },
   {
     id: "scale",

@@ -356,10 +356,10 @@ export function DienstPremiumView({
                   className="flex items-center gap-2.5 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
                 >
                   <Route className="size-7 text-[#FF5722]" aria-hidden />
-                  Zo pakken we het aan
+                  Zo pak ik het aan
                 </h2>
                 <p className="mt-2 max-w-xl text-slate-600">
-                  Geen black box van maanden. Je ziet elke fase wat er gebeurt
+                  Elke fase zichtbaar. Je ziet wat er gebeurt
                   en waarom.
                 </p>
               </Reveal>
@@ -380,7 +380,7 @@ export function DienstPremiumView({
                   Waar ik bij jou naar kijk
                 </h2>
                 <p className="mt-2 max-w-xl text-slate-600">
-                  Geen trucvragen. Dit is letterlijk hoe ons eerste gesprek
+                  Echte vragen. Dit is letterlijk hoe mijn eerste gesprek
                   eruitziet, en elk antwoord stuurt de route bij.
                 </p>
               </Reveal>

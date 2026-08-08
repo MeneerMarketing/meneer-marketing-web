@@ -34,9 +34,9 @@ const INSIGHTS = [
     id: "groei",
     icon: Gauge,
     label: "Groei",
-    title: "Geen black box, wel een bouwplan",
+    title: "Een bouwplan dat je kunt volgen",
     preview: "Frontends, koppelingen, logging, documentatie.",
-    body: "We denken vanuit groei: wat gebeurt er als verkeer verdubbelt, als je nieuwe markten opent, als marketing strakkere landingspagina's nodig heeft? Daarom combineren we strakke frontends met robuuste koppelingen, logging en documentatie.",
+    body: "Ik denk vanuit groei: wat gebeurt er als verkeer verdubbelt, als je nieuwe markten opent, als marketing strakkere landingspagina's nodig heeft? Daarom combineer ik strakke frontends met robuuste koppelingen, logging en documentatie.",
   },
 ] as const;
 

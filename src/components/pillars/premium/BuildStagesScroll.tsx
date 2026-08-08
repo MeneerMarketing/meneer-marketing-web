@@ -148,7 +148,7 @@ interface BuildStagesScrollProps {
 
 /**
  * Bouwtraject met klikbare fases links en sticky preview rechts.
- * Geen scroll-triggered hover meer: je kiest zelf de fase.
+ * Scroll-gestuurde fase-keuze: je kiest zelf de fase.
  */
 export function BuildStagesScroll({ title, stages }: BuildStagesScrollProps) {
   const reduce = useReducedMotion();

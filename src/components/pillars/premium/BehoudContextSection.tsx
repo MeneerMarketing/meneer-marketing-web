@@ -27,8 +27,8 @@ const INSIGHTS = [
     icon: Mail,
     label: "E-mail",
     title: "Mails die op het juiste moment landen",
-    preview: "Geen spam, wel timing.",
-    body: "Voor SkinComplete richtten we de volledige e-mailmarketing in: van welkomstmails tot opvolging na aankoop. Geen spam, wel mails die op het juiste moment aankomen. De automatisering erachter regelt het handwerk.",
+    preview: "Timing die converteert.",
+    body: "Ik richt de volledige e-mailmarketing in: van welkomstmails tot opvolging na aankoop. Mails op het juiste moment, geen spam. De automatisering erachter regelt het handwerk.",
   },
   {
     id: "systemen",
@@ -231,16 +231,16 @@ export function BehoudContextSection({
 
             <div className="rounded-3xl border border-slate-200 bg-slate-900 p-5 text-white sm:p-6">
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-                SkinComplete-case
+                E-mailflow-voorbeeld
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-300">
-                Welkomstmails, opvolging na aankoop en herinnermails. Geen spam,
-                wel omzet die elke maand terugkomt.
+                Welkomstmails, opvolging na aankoop en herinnermails. Timing eerst,
+                omzet die elke maand terugkomt.
               </p>
               <p className="mt-4 flex items-center gap-1.5 text-xs text-slate-400">
                 <ArrowRight className="size-3.5 text-[#FF5722]" aria-hidden />
                 {mode === "retain"
-                  ? "Zo bouwen wij aan behoud."
+                  ? "Zo bouw ik aan behoud."
                   : "Werven zonder opvolgmail laat geld liggen."}
               </p>
             </div>

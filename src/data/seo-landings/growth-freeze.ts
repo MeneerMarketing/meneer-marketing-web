@@ -31,7 +31,7 @@ export function assertSeoLandingGrowthFreeze(pageCount: number): void {
     throw new Error(
       [
         `SEO landing growth freeze actief: ${pageCount} pagina's > ceiling ${SEO_LANDING_COUNT_CEILING}.`,
-        "Geen nieuwe /zoeken-landings, city-trio fills of national batches tot consolidatie klaar is.",
+        "Freeze actief: nieuwe /zoeken-landings, city-trio fills en national batches gepauzeerd tot consolidatie klaar is.",
         "Prunen mag (ceiling in growth-freeze.ts verlagen).",
         "Freeze opheffen: SEO_LANDING_GROWTH_FROZEN = false ná P0 (page weight, cannibal, city prune).",
       ].join(" "),

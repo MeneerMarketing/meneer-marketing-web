@@ -28,7 +28,7 @@ const CHANNELS: ChannelData[] = [
     ctr: "6,2%",
     accent: "#4285F4",
     adTitle: "Shopify expert · from scratch",
-    adHook: "Geen templates. Custom build die converteert.",
+    adHook: "Custom build from scratch die converteert.",
   },
   {
     id: "meta",
@@ -50,7 +50,7 @@ const CHANNELS: ChannelData[] = [
     ctr: "4,1%",
     accent: "#FF5722",
     adTitle: "Creator review · 15 sec",
-    adHook: "Echt mens, echt product. Geen stockbeelden.",
+    adHook: "Echt mens, echt product. Jouw beelden, geen stock.",
   },
 ];
 

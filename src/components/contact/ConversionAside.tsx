@@ -34,7 +34,7 @@ export function ConversionAside({
   links,
   quickMailSubject,
   responseLabel = "1 – 2 werkdagen",
-  trustLabel = "Geen CRM-automaat. Je praat direct met ons team.",
+  trustLabel = "Je praat direct met mij. Ik lees alles zelf.",
 }: ConversionAsideProps) {
   const mailHref = mailtoHref({
     subject: quickMailSubject,

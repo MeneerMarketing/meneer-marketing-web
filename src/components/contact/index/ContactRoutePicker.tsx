@@ -62,7 +62,7 @@ export function ContactRoutePicker() {
           Vier manieren om te starten
         </h2>
         <p className="mt-3 max-w-xl text-slate-600">
-          Geen verkeerde keuze. Tik een route en zie wat er gebeurt.
+          Elke route werkt. Tik een route en zie wat er gebeurt.
         </p>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:items-stretch">

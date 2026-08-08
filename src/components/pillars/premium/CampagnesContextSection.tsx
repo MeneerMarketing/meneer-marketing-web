@@ -28,7 +28,7 @@ const INSIGHTS = [
     label: "Creatives",
     title: "Koude ads worden duurder",
     preview: "UGC en creators winnen van stock.",
-    body: "Het speelveld verschuift: generieke advertenties worden duurder, terwijl content van echte mensen juist beter presteert. Wij combineren paid en creators en verschuiven budget naar waar het rendeert.",
+    body: "Het speelveld verschuift: generieke advertenties worden duurder, terwijl content van echte mensen juist beter presteert. Ik combineer paid en creators en verschuif budget naar waar het rendeert.",
   },
   {
     id: "hand",
@@ -36,7 +36,7 @@ const INSIGHTS = [
     label: "Eén hand",
     title: "Ads en site uit één hand",
     preview: "Fix waar het echt zit.",
-    body: "De beste campagne faalt op een trage landingspagina, en de beste creator-video verzuipt zonder goede targeting. Omdat wij zowel de techniek als de campagnes doen, lossen we het probleem op waar het echt zit.",
+    body: "De beste campagne faalt op een trage landingspagina, en de beste creator-video verzuipt zonder goede targeting. Omdat ik zowel de techniek als de campagnes doe, los ik het probleem op waar het echt zit.",
   },
 ] as const;
 

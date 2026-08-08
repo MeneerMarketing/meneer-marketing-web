@@ -411,7 +411,7 @@ export const COFFEE_CHATS: Record<
       lines: [
         { who: "ondernemer", text: "Onze site is toch mooi? We hebben net een nieuw theme." },
         { who: "meneer", text: "Mooi is goed. Laadt hij op 4G binnen drie seconden?" },
-        { who: "ondernemer", text: "Geen idee." },
+        { who: "ondernemer", text: "Weet ik niet." },
         { who: "meneer", text: "Dan is {kw} vooral een theme met je logo. Ik meet, bouw from scratch waar nodig, en zorg dat je CTA zichtbaar is voordat je bezoeker wegscrollt." },
         { who: "stem", text: "(Je bounce rate fluistert: ja hoor.)" },
       ],

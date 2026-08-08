@@ -165,7 +165,7 @@ export const CONTACT_QUICK_REPLIES: ContactQuickReply[] = [
   },
   {
     id: "geen-idee",
-    label: "Geen idee nog",
+    label: "Nog zoekend",
     onderwerp: "anders",
     meneerReply:
       "Ook prima. Kies wat het dichtst in de buurt komt. Rustig aan.",
@@ -254,7 +254,7 @@ export const CONTACT_PROCESS = [
   {
     tag: "Lezen",
     title: "Ik lees je bericht zelf",
-    body: "Geen tussenlaag. Ik snap je context en stel scherpe vervolgvragen als dat nodig is.",
+    body: "Direct bij mij. Ik snap je context en stel scherpe vervolgvragen als dat nodig is.",
   },
   {
     tag: "Scherp",
@@ -269,7 +269,7 @@ export const CONTACT_PROCESS = [
   {
     tag: "Voorstel",
     title: "Voorstel op maat",
-    body: "Geen standaardpakket. Wel een plan dat past bij je fase, budget en ambities.",
+    body: "Een plan dat past bij je fase, budget en ambities. Op maat, niet standaard.",
   },
 ] as const;
 
@@ -319,7 +319,7 @@ export const CONTACT_TOPICS: ContactTopic[] = [
 
 export const CONTACT_QUOTES = [
   "Psst. Hoe korter je bericht, hoe sneller ik kan schakelen. Tenzij het ingewikkeld is. Dan mag het lang.",
-  "Geen 'dear sir/madam'. We kennen elkaar nog niet, maar we zijn al vrienden.",
+  "Gewoon Nederlands. We kennen elkaar nog niet, maar we zijn al vrienden.",
   "Als je site-URL meestuurt, scheelt dat drie mails heen en weer. Trust me.",
   "Urgent? Zet 'urgent' in je onderwerp. Ik beloof niks, maar ik kijk wel eerder.",
 ] as const;

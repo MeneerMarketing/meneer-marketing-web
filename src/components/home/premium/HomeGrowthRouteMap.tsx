@@ -95,7 +95,7 @@ export function HomeGrowthRouteMap() {
           id="home-route-heading"
           className="mt-4 text-2xl font-extrabold tracking-tight text-white sm:text-3xl"
         >
-          Vijf blokken. Eén lijn. Geen losse eindjes.
+          Vijf blokken. Eén lijn. Alles sluit aan.
         </h2>
         <p className="mt-2 max-w-xl text-slate-400">
           Strategie, bouw, vindbaarheid, campagnes en behoud horen bij elkaar. Klik

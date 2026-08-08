@@ -234,7 +234,7 @@ export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProp
         <p className="mt-4 text-sm leading-relaxed text-slate-500">
           {normalized ? (
             totalResults === 0 ? (
-              "Geen pagina's gevonden. Probeer een andere stad of dienst."
+              "Niets gevonden. Probeer een andere stad of dienst."
             ) : (
               <>
                 <span className="font-bold tabular-nums text-slate-700">
@@ -351,7 +351,7 @@ export function ZoekenIndexExplorer({ national, local }: ZoekenIndexExplorerProp
 
       {totalResults === 0 && normalized ? (
         <p className="rounded-2xl border border-dashed border-slate-200 bg-slate-50 px-6 py-8 text-center text-slate-600">
-          Geen match. Probeer &quot;Google Ads&quot;, &quot;Arnhem&quot;, &quot;Gelderland&quot; of{" "}
+          Probeer &quot;Google Ads&quot;, &quot;Arnhem&quot;, &quot;Gelderland&quot; of{" "}
           <button
             type="button"
             onClick={() => setQuery("")}

@@ -45,7 +45,7 @@ export function IntakeHero() {
 
           <p className="mt-4 max-w-xl text-base leading-relaxed tracking-tight text-slate-600 sm:text-[1.05rem]">
             Waar je staat, wat je wilt. Ik lees het zelf en plan een gesprek van
-            30 minuten. Geen verkoopcall, wel eerlijk advies over wat slim is om
+            30 minuten. Eerlijk advies over wat slim is om
             eerst aan te pakken.
           </p>
 

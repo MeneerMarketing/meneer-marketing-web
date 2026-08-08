@@ -42,7 +42,7 @@ export function WerkwijzeClientPathsSection() {
           Twee cases. Totaal verschillende routes.
         </h2>
         <p className="mt-3 max-w-xl text-white/85">
-          SkinComplete en BestRest zijn geen marketingpraat. Kies een case, klik
+          Dit zijn echte routes, geen marketingpraat. Kies een case, klik
           door de route en zie waarom volgorde alles is.
         </p>
 

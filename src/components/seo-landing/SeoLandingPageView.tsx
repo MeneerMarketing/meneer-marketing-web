@@ -339,7 +339,7 @@ export function SeoLandingPageView({
 
       <SeoLandingInlineCta
         title="Herken je dit?"
-        body={`Dan hoeft ${page.primaryKeyword} geen eindeloze zoektocht te zijn. Plan een intake en we kijken eerlijk wat slim is voor jouw situatie.`}
+        body={`Dan hoeft ${page.primaryKeyword} geen eindeloze zoektocht te zijn. Plan een intake en ik kijk eerlijk wat slim is voor jouw situatie.`}
       />
 
       {shouldShowSeoSection(page, "innerVoice") ? (
@@ -393,7 +393,7 @@ export function SeoLandingPageView({
 
       <SeoLandingInlineCta
         title="Dit pak ik concreet voor je aan"
-        body={`Geen vaag bureaupraat. Je weet wat je krijgt rond ${page.primaryKeyword} en wat de volgende stap is.`}
+        body={`Concreet rond ${page.primaryKeyword}. Je weet wat je krijgt en wat de volgende stap is.`}
         variant="dark"
       />
 
@@ -668,7 +668,7 @@ export function SeoLandingPageView({
               </Link>
             </div>
             <p className="mt-4 text-sm text-slate-500">
-              Geen verplichtingen · Reactie binnen 1 à 2 werkdagen
+              Vrijblijvend · Reactie binnen 1 à 2 werkdagen
             </p>
           </Reveal>
         </div>

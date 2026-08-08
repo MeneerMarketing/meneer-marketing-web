@@ -46,8 +46,8 @@ const CHAT = [
   { from: "meneer", text: "Waar wil je over een jaar staan?" },
   { from: "jij", text: "Meer omzet online, zonder losse eindjes." },
   { from: "meneer", text: "Welke kanalen draaien nu al?" },
-  { from: "jij", text: "Site staat. Ads lukken matig. SEO? Geen idee." },
-  { from: "meneer", text: "Dan weten we waar we beginnen." },
+  { from: "jij", text: "Site staat. Ads lukken matig. SEO? Ook daar twijfel ik." },
+  { from: "meneer", text: "Dan weet ik waar ik begin." },
 ] as const;
 
 function DiscoverChat({ reduce }: { reduce: boolean }) {

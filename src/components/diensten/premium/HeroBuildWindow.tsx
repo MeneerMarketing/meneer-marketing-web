@@ -28,7 +28,7 @@ const BUILD_LOG = [
 const STACK_CHIPS = ["Next.js", "React", "TypeScript", "Tailwind"] as const;
 
 /**
- * Code-editor + losse layout-blokken die in elkaar klikken. Geen browsermockup.
+ * Code-editor + losse layout-blokken die in elkaar klikken. Bouwproces in plaats van browsermockup.
  */
 export function HeroBuildWindow() {
   const { reduce, rotateX, rotateY, onMove, onLeave } = useHeroTilt();

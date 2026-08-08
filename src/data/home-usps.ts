@@ -30,7 +30,7 @@ export const HOME_USPS: HomeUsp[] = [
   {
     scene: "build",
     title: "From scratch",
-    body: "Geen templates, geen page builders. Websites en Shopify custom gebouwd, snel en klaar om op te schalen.",
+    body: "Websites en Shopify custom gebouwd from scratch. Snel en klaar om op te schalen.",
     accent: "#0284c7",
   },
   {
@@ -48,7 +48,7 @@ export const HOME_USPS: HomeUsp[] = [
 ];
 
 export const HOME_USP_STICKERS = [
-  "Geen templates",
+  "From scratch",
   "Shopify-expert",
   "SEO",
   AI_ANSWERS.sticker,

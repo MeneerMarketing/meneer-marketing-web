@@ -182,10 +182,10 @@ export function OverDayTimeline() {
               className="mt-3 max-w-2xl text-pretty text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl"
             >
               Zo ziet mijn dag eruit.{" "}
-              <span className="text-slate-400">Geen hustle-porn.</span>
+              <span className="text-slate-400">Echt werk, geen hustle-porn.</span>
             </h2>
             <p className="mt-3 max-w-xl text-pretty text-slate-600">
-              Tik een moment en zie wat ik doe. Geen mystiek, wel ritme. Zo weet je waar je tijd
+              Tik een moment en zie wat ik doe. Ritme en duidelijkheid. Zo weet je waar je tijd
               en budget naartoe gaan als we samenwerken.
             </p>
           </div>

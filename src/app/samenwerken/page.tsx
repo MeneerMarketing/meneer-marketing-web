@@ -87,12 +87,12 @@ export default function SamenwerkenPage() {
               quickMailSubject="Samenwerking bespreken"
               steps={[
                 {
-                  title: "We lezen mee. Persoonlijk",
-                  body: "Geen ticket-systeem: een van de oprichters pakt je aanvraag op.",
+                  title: "Ik lees mee. Persoonlijk",
+                  body: "Direct bij mij. Ik pak je aanvraag zelf op.",
                 },
                 {
                   title: "Kort terugkoppelingsgesprek",
-                  body: "Meestal binnen een werkweek. Scope, fit en ritme bepalen we samen.",
+                  body: "Meestal binnen een werkweek. Scope, fit en ritme bepalen jij en ik samen.",
                 },
                 {
                   title: "Voorstel op maat",

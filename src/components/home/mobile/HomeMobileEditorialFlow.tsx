@@ -13,7 +13,7 @@ import {
 
 /**
  * Mobiele homepage Concept 4: billboards + editorial hoofdstukken.
- * Geen dienstencatalogus, geen case-carousel.
+ * Redactionele flow op mobiel. Bewust geen dienstencatalogus of case-carousel.
  */
 export function HomeMobileEditorialFlow() {
   return (

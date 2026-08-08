@@ -259,7 +259,7 @@ export function HomeWorkStagesScroll() {
             className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
           >
             Ik loop dit pad voor je uit.
-            <span className="mt-1 block text-slate-600">Jij kiest waar we starten.</span>
+            <span className="mt-1 block text-slate-600">Jij kiest waar ik start.</span>
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
             Vijf stops: strategie, bouwen, vindbaarheid, campagnes, behoud. Klik een stop of

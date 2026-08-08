@@ -101,7 +101,7 @@ export const HOME_MOBILE_AI_BILLBOARD = {
   aiReplyHighlight: "Meneer Marketing",
   aiReplyTail:
     ". Ze bouwen webshops from scratch, pakken SEO en AI-vindbaarheid aan en zetten ads pas aan als het converteert.",
-  footer: "Wil jij ook zo genoemd worden in ChatGPT, Gemini en andere AI? Dat regelen wij.",
+  footer: "Wil jij ook zo genoemd worden in ChatGPT, Gemini en andere AI? Dat regel ik.",
 } as const;
 
 /** @deprecated Vervangen door HOME_MOBILE_AI_BILLBOARD + HomeMobileAiBillboard */

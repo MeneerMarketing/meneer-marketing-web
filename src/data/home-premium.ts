@@ -107,7 +107,7 @@ export const HOME_CONTACT_CHAT = {
   eyebrow: "Contact",
   title: "Typ alsof je me app't",
   subtitle:
-    "Geen formulier-gevoel. Kies twee keer een richting, typ daarna je bericht. Op contact kun je meteen versturen.",
+    "Chat-ervaring bij mij. Kies twee keer een richting, typ daarna je bericht. Op contact kun je meteen versturen.",
   ctaLabel: "Ga verder op contact",
   ctaHref: "/contact#gesprek",
 } as const;

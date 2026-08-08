@@ -101,7 +101,7 @@ export function BuildStackMatcher() {
           Kies je doel. Zie je stack.
         </h2>
         <p className="mt-2 max-w-xl text-slate-600">
-          Geen abstracte toolbox. Tik op wat jij nodig hebt en je ziet meteen
+          Concrete toolbox. Tik op wat jij nodig hebt en je ziet meteen
           welke diensten en techniek daarbij passen.
         </p>
 

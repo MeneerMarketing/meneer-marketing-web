@@ -14,7 +14,7 @@ interface CaseStoryRailProps {
   palette: CasePalette;
 }
 
-/** Volle-breedte verhaalblokken. Geen smalle 3-kolommen. */
+/** Volle-breedte verhaalblokken in plaats van smalle 3-kolommen. */
 export function CaseStoryRail({ caseItem, palette }: CaseStoryRailProps) {
   const reduce = useReducedMotion();
 

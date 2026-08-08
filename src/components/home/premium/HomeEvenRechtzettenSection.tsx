@@ -194,7 +194,7 @@ export function HomeEvenRechtzettenSection() {
                 Nog {ALL_MARKETING_FUN_FACTS.length - 1} feitjes die je scherper laten adverteren.
               </p>
               <p className="mt-1 text-pretty text-xs text-slate-400">
-                Geen LinkedIn-wijsheid. Wel cijfers die je route bepalen.
+                Cijfers die je route bepalen. Praktisch, niet theoretisch.
               </p>
             </div>
           </div>

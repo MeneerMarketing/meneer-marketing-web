@@ -16,11 +16,11 @@ export function OverCasesSection() {
             id="over-cases-heading"
             className="mt-3 max-w-2xl text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
           >
-            Geen stockfoto's. Wel echte trajecten.
+            Echte trajecten. Stockfoto&apos;s mogen weg.
           </h2>
           <p className="mt-3 max-w-xl text-slate-600">
-            SkinComplete, BestRest en Hills Pilates laten zien hoe strategie, bouw
-            en marketing in de juiste volgorde samenkomen.
+            De cases laten zien hoe strategie, bouw en marketing in de juiste
+            volgorde samenkomen.
           </p>
         </Reveal>
         <CaseSpotlight />

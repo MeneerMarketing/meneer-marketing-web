@@ -35,7 +35,7 @@ const STAGE_META: Record<
     label: "Structuur & code",
     emoji: "🏗️",
     widthPct: 100,
-    quip: "Geen template. Eigen code, zodat je site snel blijft en mee kan schalen.",
+    quip: "Eigen code from scratch, zodat je site snel blijft en mee kan schalen.",
   },
   "/diensten/shopify-enterprise": {
     label: "Shopify shop",

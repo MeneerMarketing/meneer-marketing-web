@@ -140,7 +140,7 @@ export interface WerkwijzeWelItem {
 export const WERKWIJZE_WEL = {
   title: "Wat je wél krijgt",
   subtitle:
-    "Geen verrassingen achteraf. Wel dit. Handig om te weten voordat we starten.",
+    "Alles vooraf helder. Handig om te weten voordat ik start.",
   items: [
     {
       title: "Custom build die meegroeit",
@@ -183,7 +183,7 @@ export const WERKWIJZE_SPRINTS = {
       emoji: "🚀",
       body: "Doelen, stack, volgorde. Iedereen snapt wat eerst.",
       deliverable: "Routekaart + meetplan",
-      quip: "Geen vergader-marathon. Wel een plan dat past op één scherm.",
+      quip: "Een plan dat past op één scherm. Kort en scherp.",
     },
     {
       id: "sprint",
@@ -219,7 +219,7 @@ export const WERKWIJZE_FAQ = [
       "Handig, niet verplicht. Twee minuten en ik weet genoeg om het gesprek scherp te starten. Liever mailen? Het contactformulier werkt ook.",
   },
   {
-    question: "Hoe snel kunnen we starten?",
+    question: "Hoe snel kan ik starten?",
     answer:
       "Als de intake binnen is, meestal binnen één à twee werkdagen reactie. Urgent? Zet het in je bericht. Dan kijk ik eerder.",
   },

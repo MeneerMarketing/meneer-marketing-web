@@ -29,7 +29,7 @@ const ONDERWERPEN = [
 
 const COACH_BY_ONDERWERP: Record<string, string> = {
   "": "Vertel het gewoon. Salespitch mag weg. Ik lees alles zelf.",
-  intake: "Kennismaken? Top. Hoe concreter je bent, hoe sneller we schakelen.",
+  intake: "Kennismaken? Top. Hoe concreter je bent, hoe sneller ik schakel.",
   strategie: "Prioriteit scherp? Top. Vertel waar je tegenaan loopt.",
   "web-shop": "Website, Shopify of portaal? Stuur je URL mee als je die hebt.",
   marketing: "SEO, Google Ads, Meta Ads? Vertel waar je nu zit en wat je mist.",
@@ -91,7 +91,7 @@ export function ContactForm() {
       return;
     }
     if (!form.onderwerp) {
-      setError("Kies een onderwerp, dan weten we direct hoe we kunnen helpen.");
+      setError("Kies een onderwerp, dan weet ik direct hoe ik kan helpen.");
       return;
     }
     const label =
@@ -140,7 +140,7 @@ export function ContactForm() {
         <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-600">
           Je bericht staat in mijn inbox. Reactie binnen één à twee werkdagen op{" "}
           <strong className="text-slate-900">{form.email.trim()}</strong>.
-          Geen automaat die je drie dagen later nagaapt.
+          Ik lees alles zelf. Persoonlijk antwoord binnen één à twee werkdagen.
         </p>
         <button
           type="button"

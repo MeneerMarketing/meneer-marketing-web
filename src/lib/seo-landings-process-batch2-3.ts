@@ -146,7 +146,7 @@ export const BATCH2_BATCH3_PROCESS: Partial<
     { title: "Attributie simpel", body: "Eén waarheid over leads en omzet." },
     { title: "Channel-mix", body: "Google Ads, Meta Ads, mail. Budget op ROAS." },
     { title: "Landings optimaliseren", body: "Waar budget naartoe stroomt, fix ik." },
-    { title: "Opschalen op breakeven", body: "Geen hype. Rekensom eerst." },
+    { title: "Opschalen op breakeven", body: "Rekensom eerst. Dan pas opschalen." },
   ],
   "cro-bureau": [
     { title: "Data + sessies", body: "Funnels, heatmaps, device splits." },

@@ -25,7 +25,7 @@ const RECOGNITION_HEADINGS = [
 ] as const;
 
 const RECOGNITION_INTROS = [
-  "Geen schuldgevoel. Wel een patroon dat ik vaak zie.",
+  "Patroon dat ik vaak zie. Jij bent niet de enige.",
   "Ondernemers praten hier zelden over. Ik wel, in intake.",
   "Als drie of meer punten kloppen, is er meestal winst te pakken.",
   "Dit zijn geen persoonlijke fouten. Het zijn structurele lekken.",
@@ -36,12 +36,12 @@ const DELIVERABLES_HEADINGS = [
   "Concreet, geen retainer-vagheid",
   "Dit lever ik op bij {kw}",
   "Wat er uit de bus komt",
-  "Geen slides. Dit wel.",
+  "Concreet. Dit wel.",
 ] as const;
 
 const PROCESS_INTROS = [
   "Een volgorde die je bankrekening snapt.",
-  "Geen twaalf-stappen-framework. Wel een plan dat klopt.",
+  "Een plan dat klopt zonder twaalf-stappen-framework.",
   "Zo werk ik. Heldere scope, geen verrassingen achteraf.",
   "Stappen die ik echt doorloop, niet marketingtaal.",
   "Volgorde die past bij {kw}, niet bij een template.",
@@ -69,8 +69,8 @@ export function getDeliverablesHeading(slug: string, primaryKeyword: string): st
 
 const DELIVERABLES_INTROS = [
   "Concreet rond {kw}. Dit pak ik aan met je marge en je tijd in gedachten.",
-  "Geen retainer-vagheid. Wel dingen die je kunt aanwijzen als ze live staan.",
-  "Wat je krijgt als we {kw} samen oppakken. Meetbaar waar het kan.",
+  "Dingen die je kunt aanwijzen als ze live staan. Concreet rond {kw}.",
+  "Wat je krijgt als ik {kw} met je oppak. Meetbaar waar het kan.",
   "Dit is geen wishlist. Dit is wat ik echt lever op {kw}.",
 ] as const;
 

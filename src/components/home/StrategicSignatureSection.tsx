@@ -114,7 +114,7 @@ export function StrategicSignatureSection() {
                     className="mt-1.5 size-1.5 shrink-0 rounded-full bg-mm-accent"
                     aria-hidden
                   />
-                  Eerst context. Geen offerte vóór er helderheid is.
+                  Eerst context. Pas daarna een offerte als er helderheid is.
                 </li>
                 <li className="flex gap-3">
                   <span

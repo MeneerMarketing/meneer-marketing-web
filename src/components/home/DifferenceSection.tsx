@@ -7,7 +7,7 @@ import { siteCtas } from "@/lib/cta";
 const pillars = [
   {
     title: "Groeistrategie",
-    body: "Geen losse acties. Een helder plan: welke kanalen, welke boodschap en wat je eerst aanpakt om maximaal te groeien.",
+    body: "Eén helder plan: welke kanalen, welke boodschap en wat je eerst aanpakt om maximaal te groeien.",
     tag: "Marketing",
   },
   {

@@ -120,7 +120,7 @@ function HeroCtaButton({ cta, onReset }: { cta: SiteCta; onReset: () => void }) 
         <span className="min-w-0">
           <span className="block truncate text-sm font-extrabold">{cta.label}</span>
           <span className="mt-0.5 block truncate text-[10px] font-semibold text-white/75">
-            Laten we regelen
+            Ik regel het
           </span>
         </span>
         <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-white/15 transition group-hover:rotate-45">

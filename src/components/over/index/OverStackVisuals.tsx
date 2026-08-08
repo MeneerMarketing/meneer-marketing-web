@@ -140,7 +140,7 @@ function ShopifyVisual({ accent }: { accent: string }) {
             </span>
           </motion.div>
           <p className="mt-2 text-center text-[8px] font-bold text-slate-500">
-            Geen Excel. Geen &ldquo;bel me maandag&rdquo;.
+            Direct antwoord in plaats van Excel of &ldquo;bel me maandag&rdquo;.
           </p>
         </div>
       </BrowserChrome>
@@ -351,7 +351,7 @@ function GoogleAdsVisual({ accent }: { accent: string }) {
         <div className="mt-3 flex items-center gap-2 rounded-lg border border-[#FF5722]/25 bg-[#FF5722]/10 px-3 py-2">
           <MousePointerClick className="size-3.5 text-[#FF5722]" aria-hidden />
           <p className="text-[9px] font-bold text-[#FF5722]">
-            Landingspagina scoorde eerst. Ads daarna. Geen gokken.
+            Landingspagina scoorde eerst. Ads daarna. Meten en bijsturen.
           </p>
         </div>
       </div>

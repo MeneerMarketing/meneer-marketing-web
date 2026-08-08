@@ -43,7 +43,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Krijg ik een heel team of gewoon jou?",
         answer:
-          "Je krijgt Meneer Marketing. Eén aanspreekpunt dat strategie, design, code en marketing combineert. Wat we bespreken is wat er gebouwd wordt. Jij merkt het verschil in snelheid.",
+          "Je krijgt Meneer Marketing. Eén aanspreekpunt dat strategie, design, code en marketing combineert. Wat jij en ik bespreken, bouw ik. Jij merkt het verschil in snelheid.",
       },
       {
         question: "Werken jullie met vaste pakketten?",
@@ -53,7 +53,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Zit ik vast aan een langlopend contract?",
         answer:
-          "Nee. Alles wat we bouwen is van jou: de code, de accounts, de data. Klanten blijven omdat het werkt, niet omdat er een handtekening knelt. Voor doorlopend werk spreken we gewoon een nette opzegtermijn af.",
+          "Nee. Alles wat ik bouw is van jou: de code, de accounts, de data. Klanten blijven omdat het werkt, niet omdat er een handtekening knelt. Voor doorlopend werk spreek ik gewoon een nette opzegtermijn af.",
       },
       {
         question: "Remote of op locatie?",
@@ -75,12 +75,12 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Ik heb een webshop. Kun je met Shopify uit de voeten?",
         answer:
-          "Shopify is de thuisbasis. Van maatwerkthema's tot complete B2B-portalen waar zakelijke klanten zelf bestellen tegen eigen prijzen. Voor SkinComplete draait dat systeem dagelijks. Dus ja, ruimschoots.",
+          "Shopify is de thuisbasis. Van maatwerkthema's tot complete B2B-portalen waar zakelijke klanten zelf bestellen tegen eigen prijzen. Dat soort systemen draaien dagelijks bij klanten. Dus ja, ruimschoots.",
       },
       {
         question: "Kan ik straks zelf teksten en foto's aanpassen?",
         answer:
-          "Ja. Je krijgt een site die je zelf kunt bijhouden, met korte uitleg hoe. Heb je er geen zin in of geen tijd voor? Dan doen wij het beheer. Ook prima.",
+          "Ja. Je krijgt een site die je zelf kunt bijhouden, met korte uitleg hoe. Heb je er geen zin in of geen tijd voor? Dan doe ik het beheer. Ook prima.",
       },
       {
         question: "Mijn huidige site is traag. Moet alles opnieuw?",
@@ -97,7 +97,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Hoe lang duurt het voor SEO iets oplevert?",
         answer:
-          "Maanden, geen dagen. Wie je topposities binnen twee weken belooft, verkoopt vooral facturen. Maar als het eenmaal loopt, heb je een kanaal dat blijft werken zonder dat je per klik betaalt. SkinComplete haalde eerst organisch verkeer binnen voordat er één euro naar advertenties ging.",
+          "Maanden, geen dagen. Wie je topposities binnen twee weken belooft, verkoopt vooral facturen. Maar als het eenmaal loopt, heb je een kanaal dat blijft werken zonder dat je per klik betaalt. Eerst organisch verkeer, daarna pas advertentiebudget. Die volgorde loont.",
       },
       {
         question: "Google Ads of Meta Ads: wat past bij mij?",
@@ -107,12 +107,12 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Wat is vindbaarheid in AI-antwoorden?",
         answer:
-          "Steeds meer mensen vragen ChatGPT of Gemini om advies in plaats van Google. Wij zorgen dat jouw bedrijf in die antwoorden opduikt, technisch én inhoudelijk. Nieuw speelveld, nog weinig concurrentie. Wie nu instapt, heeft straks de voorsprong.",
+          "Steeds meer mensen vragen ChatGPT of Gemini om advies in plaats van Google. Ik zorg dat jouw bedrijf in die antwoorden opduikt, technisch én inhoudelijk. Nieuw speelveld, nog weinig concurrentie. Wie nu instapt, heeft straks de voorsprong.",
       },
       {
         question: "Garanderen jullie resultaat?",
         answer:
-          "We garanderen eerlijk werk, meetbare rapportage en dat we stoppen met dingen die niet werken. Posities of omzet garanderen kan niemand, wat verkopers ook beweren. Wel kun je sturen op data in plaats van op hoop. Dat is precies wat we doen.",
+          "Ik garandeer eerlijk werk, meetbare rapportage en dat ik stop met dingen die niet werken. Posities of omzet garanderen kan niemand, wat verkopers ook beweren. Wel kun je sturen op data in plaats van op hoop. Dat is precies wat ik doe.",
       },
     ],
   },
