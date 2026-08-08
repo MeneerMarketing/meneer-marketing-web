@@ -7,7 +7,7 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     "Recente reviews, snelle antwoorden en een levend GBP. Praktische lokale SEO die 'bij mij in de buurt' wint.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 14,
   category: "vindbaarheid",
   keywords: [
     "google reviews lokale seo",
@@ -51,6 +51,92 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: vraag actief om reviews, reageer op elke review, post maandelijks iets relevants, en zorg dat je site hetzelfde verhaal vertelt als je GBP.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Review-hygiëne",
+      title: "Stil-profiel-meter",
+      intro:
+        "Vink aan wat voor jouw Google-reviews klopt. Hoe hoger, hoe meer Maps denkt dat je stilstaat. Concurrent met leven wint bij mij in de buurt.",
+      storageKey: "mm-reviews-stil",
+      eventName: "reviews_stil_complete",
+      sharePath: "/kennisbank/google-reviews-lokale-seo",
+      scoreNoun: "stilte",
+      ctaHref: "/diensten/local-seo",
+      ctaLabel: "Lokale SEO",
+      checks: [
+        {
+          id: "oud",
+          label: "Laatste reviews zijn maanden of jaren oud",
+          fix: "Na tevreden oplevering: één link, mail of SMS. Recent wint van volume uit 2019.",
+        },
+        {
+          id: "familie",
+          label: "Bijna alleen reviews van bekenden of collega's",
+          fix: "Echte klanten vragen. Gekocht of familie is riskant en voelt nep.",
+        },
+        {
+          id: "stil",
+          label: "Owner responses blijven uit, ook bij negatieve reviews",
+          fix: "Elke review beantwoorden. Snel, menselijk, oplossingsgericht.",
+        },
+        {
+          id: "sterren",
+          label: "Alleen sterren, bijna nooit tekst met details",
+          fix: "Vraag om één zin over wat ze kochten of hoe het ging.",
+        },
+        {
+          id: "timing",
+          label: "Je vraagt om reviews drie maanden later of nooit",
+          fix: "Direct na tevreden moment. Later voelt als spam.",
+        },
+        {
+          id: "site",
+          label: "Site en GBP vertellen een ander verhaal over regio of diensten",
+          fix: "Zelfde NAP, zelfde regio's, zelfde aanbod. Reviews versterken dat.",
+        },
+        {
+          id: "copy",
+          label: "Antwoorden zijn copy-paste of defensief",
+          fix: "Naam + concrete volgende stap. Nep-vriendelijkheid ziet iedereen.",
+        },
+        {
+          id: "ads",
+          label: "Lokale ads lopen terwijl het review-profiel stil oogt",
+          fix: "Eerst leven in reviews. Daarna werkt elke euro harder.",
+        },
+      ],
+      tiers: [
+        {
+          id: "levend",
+          min: 0,
+          max: 24,
+          label: "Levend etalage",
+          quip: "Recent, beantwoord, echt. Houd dat ritme vast.",
+        },
+        {
+          id: "dof",
+          min: 25,
+          max: 49,
+          label: "Dof maar open",
+          quip: "Nog te redden. Deze week: drie echte klanten vragen + openstaande antwoorden.",
+        },
+        {
+          id: "stil",
+          min: 50,
+          max: 74,
+          label: "Stil bord",
+          quip: "Maps ziet stilstand. Concurrent met verse reviews wint de buurt.",
+        },
+        {
+          id: "dicht",
+          min: 75,
+          max: 100,
+          label: "Gesloten gevoel",
+          quip: "Stop de excuses. Flow + antwoorden, dan pas lokale ads opschalen.",
+        },
+      ],
     },
     {
       type: "h2",

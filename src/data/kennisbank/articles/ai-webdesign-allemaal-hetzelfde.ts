@@ -7,7 +7,7 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
     "Paarse gradients, dezelfde cards, dezelfde '01 02 03'-stappen. AI-webdesign herken je in een seconde. Daarom bouw ik websites from scratch, niet vanuit een prompt-template.",
   publishedAt: "2026-07-18",
   modifiedAt: "2026-08-08",
-  readMinutes: 11,
+  readMinutes: 13,
   category: "bouwen",
   keywords: [
     "ai webdesign",
@@ -59,17 +59,102 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
       text: "Leuk weetje: mensen herkennen 'AI-design' vaak sneller dan ze kunnen uitleggen waarom. Je brein ziet patronen. Als alles op elkaar lijkt, voelt niets meer als merk.",
     },
     {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Tien-seconden-test",
+      title: "AI-lookalike-meter",
+      intro:
+        "Open je eigen site (of die van je concurrent). Vink aan wat je binnen tien seconden ziet. Hoe hoger, hoe meer prompt-template en hoe minder merk.",
+      storageKey: "mm-ai-lookalike",
+      eventName: "ai_lookalike_complete",
+      sharePath: "/kennisbank/ai-webdesign-allemaal-hetzelfde",
+      scoreNoun: "lookalike",
+      ctaHref: "/diensten/webdevelopment",
+      ctaLabel: "Websites from scratch",
+      checks: [
+        {
+          id: "paars",
+          label: "Paars-indigo gradient of warme crème + terracotta accent",
+          fix: "Kies een palet dat bij jouw merk hoort, niet bij het internetgemiddelde.",
+        },
+        {
+          id: "cards",
+          label: "Drie feature-cards met icoontjes onder de hero",
+          fix: "Eén compositie, één boodschap. Cards alleen als interactie het vraagt.",
+        },
+        {
+          id: "stappen",
+          label: "Hoe-het-werkt in 01 / 02 / 03 blokjes",
+          fix: "Schrijf proces in gewone taal. AI-nummering voelt als template.",
+        },
+        {
+          id: "logos",
+          label: "Logo-strip zonder context ('zij vertrouwen ons')",
+          fix: "Eén logo + korte uitkomst. Zwijgende strip is decoratie.",
+        },
+        {
+          id: "badge",
+          label: "Floating badge die 'premium' schreeuwt zonder bewijs",
+          fix: "Bewijs in copy of case. Badge zonder inhoud is sticker-theater.",
+        },
+        {
+          id: "prompt",
+          label: "De prompt was de creative director",
+          fix: "AI als schets. Jij kiest type, layout, stem. From scratch waar ads hangen.",
+        },
+        {
+          id: "ads",
+          label: "Je betaalt ads naar een site die op drie concurrenten lijkt",
+          fix: "Custom build is CPA-hygiëne, geen ego. Message match + unieke look.",
+        },
+        {
+          id: "uitwissel",
+          label: "Elke alinea kan op elke concurrent-site staan",
+          fix: "Specifiek: product, proces, regio, mening. Anders ben je gemiddelde.",
+        },
+      ],
+      tiers: [
+        {
+          id: "merk",
+          min: 0,
+          max: 24,
+          label: "Eigen gezicht",
+          quip: "Je site zou niet van een ander kunnen zijn. Houd die lat.",
+        },
+        {
+          id: "half",
+          min: 25,
+          max: 49,
+          label: "Bijna herkenbaar",
+          quip: "Er zit nog template in. Snijd één AI-cliché eruit deze sprint.",
+        },
+        {
+          id: "prompt",
+          min: 50,
+          max: 74,
+          label: "Prompt-portfolio",
+          quip: "Mooi gemiddelde. Ads en SEO verdienen een eigen plan.",
+        },
+        {
+          id: "clone",
+          min: 75,
+          max: 100,
+          label: "Internet-clone",
+          quip: "Logo plakken op dezelfde film. Bouw from scratch of kies keihard.",
+        },
+      ],
+    },
+    {
       type: "h2",
       text: "Het herkenningsritueel",
     },
     {
       type: "p",
-      text: "Ik open een site en speel een spelletje. Tel binnen tien seconden hoeveel van deze elementen je ziet. Hoe hoger de score, hoe groter de kans dat iemand een prompt heeft laten 'ontwerpen' en daarna is gaan publiceren.",
+      text: "Ik open een site en speel dat spelletje hierboven. Hoe hoger de lookalike-score, hoe groter de kans dat iemand een prompt heeft laten 'ontwerpen' en daarna is gaan publiceren. Extra signalen die ik nog zie:",
     },
     {
       type: "ul",
       items: [
-        "Paars-naar-indigo of warme crème met terracotta accent. Alsof het internet één kleurenpalet heeft afgesproken.",
         "Hero met headline, korte zin, twee knoppen, en een screenshot in een floating card.",
         "Drie of vier feature-cards met hetzelfde icoonformaat en dezelfde zinlengte.",
         "Genummerde stappen die eruitzien alsof een robot trots is op zijn planning.",

@@ -7,7 +7,7 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     "Je profiel bestaat, maar Google doet alsof je dicht bent. Zo fix je Maps, reviews en regio-pagina's zonder keyword-spam.",
   publishedAt: "2026-07-03",
   modifiedAt: "2026-08-08",
-  readMinutes: 14,
+  readMinutes: 15,
   category: "vindbaarheid",
   keywords: [
     "google business profile optimaliseren",
@@ -51,6 +51,92 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: maak GBP compleet en levend, trek NAP recht, vraag echte reviews, bouw regio-pagina's die echt helpen. Maps beloont bewijs dat je bestaat, niet alleen een adresregel.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Maps-check",
+      title: "Spookhuis-meter",
+      intro:
+        "Vink aan wat klopt voor jouw Google Business Profile. Hoe hoger, hoe meer Maps denkt dat je dicht bent.",
+      storageKey: "mm-gbp-spookhuis",
+      eventName: "gbp_spookhuis_complete",
+      sharePath: "/kennisbank/google-business-profile-lokaal",
+      scoreNoun: "spookscore",
+      ctaHref: "/diensten/local-seo",
+      ctaLabel: "Lokale SEO",
+      checks: [
+        {
+          id: "nap",
+          label: "Naam, adres of telefoon wijkt af tussen site, GBP en socials",
+          fix: "NAP overal identiek. Google vergelijkt bronnen.",
+        },
+        {
+          id: "stil",
+          label: "Posts, foto's of review-antwoorden ontbreken al maanden",
+          fix: "Wekelijks iets kleins. Stilte voelt als gesloten.",
+        },
+        {
+          id: "categorie",
+          label: "Primaire categorie is breed of vaag (consultant i.p.v. je omzet)",
+          fix: "Kies de categorie die het dichtst bij je geld ligt.",
+        },
+        {
+          id: "reviews",
+          label: "Reviews zijn oud, weinig, of alleen van familie",
+          fix: "Flow na tevreden werk: één link, mail of SMS.",
+        },
+        {
+          id: "stock",
+          label: "Alleen stockfoto's of één blurry gevel uit 2019",
+          fix: "Echte werkplek, team, resultaat. Etalage in drie seconden.",
+        },
+        {
+          id: "regio",
+          label: "Site zegt landelijk, GBP en regio-pagina's zijn leeg of copy-paste",
+          fix: "Echte regio-pagina's voor gebieden die je bedient.",
+        },
+        {
+          id: "ads",
+          label: "Je koopt lokale ads terwijl het profiel slapend is",
+          fix: "Spookhuis eerst. Daarna werkt elke euro harder.",
+        },
+        {
+          id: "uren",
+          label: "Openingstijden of diensten kloppen niet meer",
+          fix: "Maandelijks checken. Verkeerde uren = gemiste bel.",
+        },
+      ],
+      tiers: [
+        {
+          id: "open",
+          min: 0,
+          max: 24,
+          label: "Licht aan, deur open",
+          quip: "Je bestaat zichtbaar. Blijf wekelijks iets posten of beantwoorden.",
+        },
+        {
+          id: "schemer",
+          min: 25,
+          max: 49,
+          label: "Schemerzone",
+          quip: "Nog te redden. NAP + reviews + één verse foto deze week.",
+        },
+        {
+          id: "spook",
+          min: 50,
+          max: 74,
+          label: "Spookhuis met wifi",
+          quip: "Profiel bestaat. Maps twijfelt. Concurrent met leven wint.",
+        },
+        {
+          id: "dicht",
+          min: 75,
+          max: 100,
+          label: "Gesloten bord",
+          quip: "Stop lokale ads. Maak het profiel levend. Dan pas budget.",
+        },
+      ],
     },
     {
       type: "h2",
