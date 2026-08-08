@@ -6,7 +6,8 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
   description:
     "Twee matrassen, twee toppers, twee marges. Bij BestRest geen generiek advertentieaccount, wel een strategie per product. Zo pak je dat aan.",
   publishedAt: "2026-07-05",
-  readMinutes: 9,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "strategie",
   keywords: [
     "marketingstrategie e-commerce",
@@ -15,6 +16,33 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     "google ads productstrategie",
   ],
   dienstSlugs: ["strategie", "google-ads", "seo"],
+  faqs: [
+    {
+      question: "Waarom één marketingplan per product?",
+      answer:
+        "Omdat marge, zoekintentie en koopcyclus per SKU-groep verschillen. Eén soep-campagne mengt winnaars en verliezers tot een gemiddelde dat liegt.",
+    },
+    {
+      question: "Geldt dit alleen voor matrassen?",
+      answer:
+        "Nee. Elke shop met producten die niet op elkaar lijken: mode, beauty, B2B, tools. Zodra economics verschillen, volgt de strategie de productgroep.",
+    },
+    {
+      question: "Hoe reken ik wat een klant mag kosten?",
+      answer:
+        "Per productgroep: verkoopprijs min kostprijs en verzending, minus wat je nog nodig hebt voor overhead. Dat plafond stuurt CPA of tROAS. Globaal shopgemiddelde is te grof.",
+    },
+    {
+      question: "Mag Performance Max over de hele catalogus?",
+      answer:
+        "Alleen met discipline: vergelijkbare economie, schone feed, landings die converteren. Hele catalogus in één PMax is vaak dashboard, geen strategie.",
+    },
+    {
+      question: "SEO en ads per product: dubbel werk?",
+      answer:
+        "Nee. Dezelfde vragen en landings voeden organisch én paid. Je test copy goedkoop organisch, schaal wat werkt met ads. SkinComplete deed die volgorde ook.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -42,7 +70,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Wat we bij BestRest anders deden",
+      text: "Wat ik bij BestRest anders deed",
     },
     {
       type: "p",
@@ -54,7 +82,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Voordat er euro's naar Google gingen, rekenden we door: wat mag een klant kosten bij dit product? Niet globaal voor de hele shop, maar per SKU-groep. Klinkt saai. Is saai. En redt je van het gevoel dat 'ads niet werken' terwijl ads wél werken, maar alleen op producten waar je te veel voor betaalt.",
+      text: "Voordat er euro's naar Google gingen, rekende ik door: wat mag een klant kosten bij dit product? Niet globaal voor de hele shop, maar per SKU-groep. Klinkt saai. Is saai. En redt je van het gevoel dat ads niet werken terwijl ads wél werken, maar alleen op producten waar je te veel voor betaalt.",
     },
     {
       type: "h3",
@@ -62,7 +90,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Iemand die zoekt op een specifieke maat of materiaal wil geen filosofisch essay over slaap. Die wil bewijs dat dit matras past bij zijn situatie. Daarom bouwden we pagina's die één verhaal vertellen: dit product, dit probleem, dit bewijs, deze CTA. Geen menu met veertig opties. Geen 'ontdek onze collectie' als iemand al weet wat hij wil.",
+      text: "Iemand die zoekt op een specifieke maat of materiaal wil geen filosofisch essay over slaap. Die wil bewijs dat dit matras past bij zijn situatie. Daarom bouwde ik pagina's die één verhaal vertellen: dit product, dit probleem, dit bewijs, deze CTA. Menu met veertig opties skippen. Ontdek onze collectie skippen als iemand al weet wat hij wil.",
     },
     {
       type: "h3",
@@ -99,7 +127,23 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Eerlijk: soms heb je één heldere hero-product met één doelgroep. Dan mag je focussen. Maar zodra je catalogus groeit en je denkt 'we gooien het er allemaal in', ben je niet efficiënt. Je bent lui. En Google is graag mee met lui, want jij betaalt voor elke klik.",
+      text: "Eerlijk: soms heb je één heldere hero-product met één doelgroep. Dan mag je focussen. Maar zodra je catalogus groeit en je denkt ik gooi het er allemaal in, ben je niet efficiënt. Je bent lui. En Google is graag mee met lui, want jij betaalt voor elke klik.",
+    },
+    {
+      type: "h2",
+      text: "Performance Max past hier alleen met discipline",
+    },
+    {
+      type: "p",
+      text: "PMax over je hele catalogus is precies het gemiddelde dat liegt. Als je het gebruikt, beperk je tot productgroepen met vergelijkbare economie, schone feeds en landings die converteren. Anders is de zwarte doos een snellere manier om budget te verdelen over wat Google makkelijk vindt, niet over wat jij wilt verdienen.",
+    },
+    {
+      type: "h2",
+      text: "Remarketing en mail per productlijn",
+    },
+    {
+      type: "p",
+      text: "Iemand die een topper bekeken heeft, krijgt geen drie weken dezelfde premium-matras-banner. Segmenten volgen productintentie. Cart-flows tonen het juiste SKU. Zo blijft retentie net zo scherp als acquisitie. Eén generieke 'slaap lekker'-flow is branding. Geen marge-bescherming.",
     },
     {
       type: "h2",
