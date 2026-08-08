@@ -72,10 +72,10 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
       body: "Shopping en Search als de shop converteert. Niet eerder. Budget volgt bewijs, niet ongeduld.",
     },
   ],
-  proofTitle: "SkinComplete",
+  proofTitle: "Shop als groeimachine",
   proofBody:
-    "Shopify B2B-portaal, e-mailflows, organisch verkeer eerst, daarna ads. BestRest kreeg een eigen plan per productlijn. Dat traject ken ik van binnenuit, niet van een theme-demo.",
-  proofCase: "SkinComplete",
+    "Ik bouw Shopify from scratch: checkout, PDP's, B2B waar nodig, tracking in de basis. Organisch en mail eerst als de shop nog lekt. Ads pas als conversie bewijs levert. Theme-demo's skip ik.",
+  proofCase: "Build vóór budget",
   hotTake: {
     label: "Heet take",
     body: "Een webshop laten maken op een theme van vijftig euro en dan vijfduizend per maand in ads pompen is een dure hobby.",
@@ -99,7 +99,7 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
     {
       question: "Wat kost een webshop laten maken?",
       answer:
-        "Hangt af van assortiment, B2B, migratie en integraties. Na intake een voorstel met scope en mijlpalen. Heldere prijs vóór we bouwen.",
+        "Hangt af van assortiment, B2B, migratie en integraties. Na intake een voorstel met scope en mijlpalen. Heldere prijs vóór ik bouw.",
     },
     {
       question: "Hoe lang duurt het tot live?",
@@ -114,7 +114,7 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
     {
       question: "Moet ik meteen adverteren na launch?",
       answer:
-        "Alleen als conversie en tracking kloppen. Vaak eerst organisch en e-mail. Ads versnellen wat al werkt. SkinComplete deed die volgorde bewust.",
+        "Alleen als conversie en tracking kloppen. Vaak eerst organisch en e-mail. Ads versnellen wat al werkt. Die volgorde spaart je de dure hobbyfase.",
     },
   ],
   ctaTitle: "Shop die verdient?",
@@ -135,10 +135,10 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
       title: "Webshop laten maken die om 23:00 nog verkoopt",
       paragraphs: [
         "Je zoekt iemand voor een webshop laten maken. Het verschil zit niet in nog een theme met je logo. Het zit in snelheid, checkout, productpagina's die twijfel wegnemen en een plan voor SEO en ads.",
-        "Ik bouw op Shopify from scratch: custom theme waar het moet, B2B als je salons of retailers bedient, feeds en tracking in de basis. SkinComplete bewijst dat die mix werkt.",
+        "Ik bouw op Shopify from scratch: custom theme waar het moet, B2B als je salons of retailers bedient, feeds en tracking in de basis. Die mix hoort bij de build, niet bij fase twee.",
         "Template voelt goedkoop tot Shopping duur wordt en elke wijziging drie apps vraagt. Custom betekent: jij bepaalt de roadmap, ik publiceer mee zonder theme-plafond.",
-        "BestRest laat zien dat productlijnen verschillende boodschappen verdienen. Een matras is geen impulse topper. De shopstructuur moet dat respecteren, anders verdwaalt de koper.",
-        "Wil je alleen een catalogus online zetten? Dan is er goedkopere hulp. Wil je een webshop die organisch én betaald mag groeien? Dan bouwen we hem als groeimachine.",
+        "Productlijnen verdienen verschillende boodschappen. Impuls en research-koop horen niet in dezelfde landings-logica. De shopstructuur moet dat respecteren, anders verdwaalt de koper.",
+        "Wil je alleen een catalogus online zetten? Dan is er goedkopere hulp. Wil je een webshop die organisch én betaald mag groeien? Dan bouw ik hem als groeimachine.",
       ],
     },
     deepDive: {
@@ -147,7 +147,7 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
         "Eerst assortiment en marge. Welke producten verdienen landings? Welke zijn bijzaak? Zonder die keuzes bouw je een mooie rommelzolder.",
         "Daarna theme en checkout: mobiel, vertrouwen, snelheid, B2B-login als nodig. Tracking staat vóór launch. Zo meet je vanaf dag één wat werkt.",
         "SEO zit in titels, collecties, interne links en schema. Merchant Center wil schone feeds en sterke productpagina's. Die twee horen bij de build, niet bij fase twee.",
-        "E-mailflows houden omzet vast: abandoned cart, post-purchase, winback. Bij SkinComplete was mail onderdeel van het fundament, geen latere app-install.",
+        "E-mailflows houden omzet vast: abandoned cart, post-purchase, winback. Mail hoort bij het fundament, niet bij een latere app-install.",
         "Ads komen als versneller. Search, Shopping, Meta onder één lijn. Budget volgt conversie. Zo blijft een webshop laten maken een investering, geen hobby met facturen.",
       ],
     },
@@ -155,7 +155,7 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
       title: "Stel: je adverteert al, maar de shop lekt",
       paragraphs: [
         "CPA te hoog, ROAS te laag, checkout traag, productpagina's dun. Stoppen voelt eng. Blind doorgaan is duurder. De shop is vaak de bottleneck, niet alleen het biedingsalgoritme.",
-        "Ik scan snelheid, landings, feed en B2B-frictie. Daarna fixes die conversie raken vóór we budget omhoog gooien. Soms is een gerichte rebuild slimmer dan nog een app.",
+        "Ik scan snelheid, landings, feed en B2B-frictie. Daarna fixes die conversie raken vóór het budget omhoog gaat. Soms is een gerichte rebuild slimmer dan nog een app.",
         "Eerste releases: snellere pagina's, sterkere PDP, schonere feed. Dan pas opnieuw testen met ads. Zo weet je of de webshop-route werkt.",
       ],
     },
