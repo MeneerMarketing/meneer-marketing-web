@@ -515,43 +515,7 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
 
 export { KLAVIYO_SPECIALIST } from './klaviyo-specialist';
 
-export const CORE_WEB_VITALS: SeoLandingPage = {
-  slug: "core-web-vitals-verbeteren",
-  primaryKeyword: "core web vitals verbeteren",
-  category: "website",
-  metaTitle: "Core Web Vitals verbeteren · sneller ranken & converteren | Meneer Marketing",
-  metaDescription: "Core Web Vitals verbeteren in code. LCP, INP, CLS. Snelheid die SEO en ads helpt.",
-  keywords: ["core web vitals verbeteren", "website snelheid verbeteren", "lcp inp cls", "pagespeed optimalisatie"],
-  eyebrow: "Core Web Vitals",
-  headline: "Core Web Vitals verbeteren",
-  headlineAccent: "zonder trucjes die morgen crashen.",
-  subheadline: "Google meet hoe snel en stabiel je site voelt. Traag = minder rankings, duurdere ads, meer afhakers. Ik fix CWV in je theme of Next.js project, niet met een magische plugin.",
-  pains: [
-    { title: "Rood in PageSpeed", body: "LCP, INP of CLS fail. Omzet lijdt." },
-    { title: "Plugin-patches", body: "Tijdelijk groen, structureel kapot." },
-    { title: "Ads op trage landings", body: "Je betaalt voor afhakers." },
-  ],
-  deliverables: [
-    { title: "Performance audit", body: "Wat blokkeert je metrics." },
-    { title: "Code-optimalisatie", body: "Assets, fonts, JS, images." },
-    { title: "Shopify of Next.js", body: "Stack-specifieke fixes." },
-    { title: "Monitoring", body: "Blijven groen na updates." },
-  ],
-  visual: "website-build",
-  processTitle: "Snelheid die blijft",
-  processSteps: processDefault,
-  proofTitle: "ROAS & SEO",
-  proofBody: "Elke seconde telt op mobiel. CWV is geen SEO-truc, het is marge.",
-  hotTake: { label: "Heet take", body: "Core Web Vitals verbeteren met alleen een cache-plugin is pleister op een gebroken been." },
-  faq: [
-    { question: "Hoe snel resultaat?", answer: "Vaak merkbaar binnen dagen na deploy." },
-  ],
-  ctaTitle: "Snelheid laten checken?",
-  ctaBody: "Stuur je URL. Ik noem de blockers.",
-  relatedSlugs: ["technische-seo", "shopify-expert", "conversie-optimalisatie"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { CORE_WEB_VITALS } from './core-web-vitals-verbeteren';
 
 export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
   slug: "marketing-consultant-mkb",

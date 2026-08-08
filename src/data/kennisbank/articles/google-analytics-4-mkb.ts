@@ -4,9 +4,9 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
   slug: "google-analytics-4-mkb",
   title: "GA4 meet alles behalve wat je wilt weten",
   description:
-    "Google Analytics 4 vol voor MKB: welke events ertoe doen, conversies die kloppen en antwoorden op de vraag welke campagne geld opleverde.",
+    "Google Analytics 4 voor MKB: welke events ertoe doen, conversies die kloppen en antwoorden op de vraag welke campagne geld opleverde.",
   publishedAt: "2026-07-06",
-  readMinutes: 8,
+  readMinutes: 11,
   category: "behoud",
   keywords: [
     "google analytics 4 mkb",
@@ -32,10 +32,10 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
       type: "ul",
       items: [
         "Te veel events standaard aan zonder business betekenis.",
-        "Conversies die alles meet behalve geld: scroll 90%, session > 10 sec.",
+        "Conversies die alles meten behalve geld: scroll 90%, session langer dan 10 seconden.",
         "Geen waarde op ecommerce events, dus ROAS liegt.",
         "Ads en GA4 praten langs elkaar door verkeerde tagging.",
-        "Niemand die maandelijks checkt of data nog klopt na site-update.",
+        "Niemand die maandelijks checkt of data nog klopt na een site-update.",
       ],
     },
     {
@@ -62,7 +62,11 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Als Google Ads optimaliseert op 'bedanktpagina bekeken' terwijl je denkt dat het op orders optimaliseert, brand je budget. Ik zie accounts die maanden draaien op verkeerde events. Dashboard groen. Omzet flat.",
+      text: "Als Google Ads optimaliseert op bedanktpagina bekeken terwijl jij denkt dat het op orders optimaliseert, brand je budget. Ik zie accounts die maanden draaien op verkeerde events. Dashboard groen. Omzet flat.",
+    },
+    {
+      type: "p",
+      text: "Check wekelijks: Ads-conversies versus shop-admin of CRM op dezelfde dag. Wijkt het structureel af, dan optimaliseer je op fantomen. Fix de tag vóór je budget verhoogt.",
     },
     {
       type: "h3",
@@ -70,7 +74,15 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Cookies verdwijnen, adblockers groeien. Server-side tracking via GTM server of tag manager cloud is niet meer alleen enterprise. Voor shops met serieus ad spend is het steeds vaker de juiste investering. Niet omdat het hip is. Omdat je anders blind optimaliseert.",
+      text: "Cookies verdwijnen, adblockers groeien. Server-side tracking via GTM server of een cloud tag manager is niet meer alleen enterprise. Voor shops met serieus ad spend is het steeds vaker de juiste investering. Niet omdat het hip is. Omdat je anders blind optimaliseert.",
+    },
+    {
+      type: "h2",
+      text: "Leadgeneratie meets anders dan shops",
+    },
+    {
+      type: "p",
+      text: "Bij diensten is purchase zeldzaam. Dan telt generate_lead of een call-click. Kwaliteit meet je in CRM: welke leads werden klant? GA4 alleen zegt hoeveel formulieren binnenkwamen. Sales zegt hoeveel ertoe deden. Beide nodig.",
     },
     {
       type: "h2",
@@ -81,7 +93,7 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
       items: [
         "Admin > Events: welke zijn gemarkeerd als conversie? Klopt dat?",
         "Test zelf een aankoop of formulier. Komt het in GA4 en Ads binnen?",
-        "Vergelijk Ads conversies met je shop admin op dezelfde dag.",
+        "Vergelijk Ads-conversies met je shop admin of CRM op dezelfde dag.",
         "Verwijder rommel-conversies uit primary goals.",
       ],
     },

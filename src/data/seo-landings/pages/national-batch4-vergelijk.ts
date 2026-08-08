@@ -7,45 +7,7 @@ const processDefault = [
   { title: "Uitvoeren", body: "Ik help je het ook echt live te krijgen." },
 ] as const;
 
-export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
-  slug: "google-ads-of-seo",
-  primaryKeyword: "google ads of seo",
-  category: "google-ads",
-  metaTitle: "Google Ads of SEO · wat eerst? | Meneer Marketing",
-  metaDescription: "Google Ads of SEO: eerlijke vergelijking voor MKB. Wanneer betaald, wanneer organisch, en wanneer beide.",
-  keywords: ["google ads of seo", "seo of google ads", "adverteren of seo", "sea of seo"],
-  eyebrow: "Google Ads vs SEO",
-  headline: "Google Ads of SEO?",
-  headlineAccent: "Het antwoord is irritant: het hangt ervan af.",
-  subheadline: "Iedereen wil één antwoord. Snel verkeer? Ads. Langdurige marge? SEO. Maar de echte vraag is: wat is je site waard als verkeer komt?",
-  pains: [
-    { title: "Alleen ads", body: "Kraan dicht = omzet weg." },
-    { title: "Alleen SEO", body: "Duurt. Geduld is duur als je huur moet betalen." },
-    { title: "Beide zonder plan", body: "Budget en content vechten." },
-  ],
-  deliverables: [
-    { title: "Beslisboom op maat", body: "Jouw marge, markt, site-status." },
-    { title: "SEO eerst als site klaar is", body: "SkinComplete-route." },
-    { title: "Ads voor testen", body: "Snel leren bij nieuw product." },
-    { title: "Beide onder één dak", body: "Eén strategie over kanalen." },
-  ],
-  visual: "google-ads",
-  visualCaption: "Ads en SEO zijn geen vijanden. Ze zijn tijdlijnen.",
-  processTitle: "De juiste volgorde kiezen",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete deed SEO eerst",
-  proofBody: "Organisch bewezen, daarna ads. BestRest per product bepaald. Logica op marge en tijdlijn.",
-  hotTake: { label: "Heet take", body: "Google Ads op een site die niet converteert is SEO-budget verbranden met extra stappen." },
-  faq: [
-    { question: "Kan ik beide tegelijk?", answer: "Ja, als je weet wat elke euro doet en je site meewerkt." },
-    { question: "Wat is goedkoper?", answer: "SEO op lange termijn vaak. Ads op korte termijn. Reken je CPA door." },
-  ],
-  ctaTitle: "Onzeker wat eerst?",
-  ctaBody: "Vertel je situatie. Ik zeg eerlijk wat slim is.",
-  relatedSlugs: ["google-ads-bureau", "hoger-in-google", "seo-specialist"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { GOOGLE_ADS_OF_SEO } from './google-ads-of-seo';
 
 export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
   slug: "shopify-of-woocommerce",

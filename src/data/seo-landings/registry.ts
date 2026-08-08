@@ -20,14 +20,16 @@ import {
   LANDING_PAGE_LATEN_MAKEN,
   MARKETING_AUTOMATISERING,
 } from "@/data/seo-landings/pages/national-extra";
+import { CONVERSIE_OPTIMALISATIE } from "@/data/seo-landings/pages/conversie-optimalisatie";
+import { TECHNISCHE_SEO } from "@/data/seo-landings/pages/technische-seo";
+import { LEADGENERATIE_WEBSITE } from "@/data/seo-landings/pages/leadgeneratie-website";
+import { CORE_WEB_VITALS } from "@/data/seo-landings/pages/core-web-vitals-verbeteren";
+import { GOOGLE_ADS_OF_SEO } from "@/data/seo-landings/pages/google-ads-of-seo";
 import {
-  CONVERSIE_OPTIMALISATIE,
   LOKALE_SEO,
-  TECHNISCHE_SEO,
   E_COMMERCE_MARKETING,
   EMAILMARKETING,
   TIKTOK_ADS_BUREAU,
-  LEADGENERATIE_WEBSITE,
   WOOCOMMERCE_NAAR_SHOPIFY,
 } from "@/data/seo-landings/pages/national-batch2";
 import {
@@ -50,12 +52,10 @@ import {
   GROWTH_MARKETING_BUREAU,
   LINKEDIN_ADS_BUREAU,
   KLAVIYO_SPECIALIST,
-  CORE_WEB_VITALS,
   MARKETING_CONSULTANT_MKB,
   TRAGE_WEBSITE_DURE_ADS,
 } from "@/data/seo-landings/pages/national-batch4";
 import {
-  GOOGLE_ADS_OF_SEO,
   SHOPIFY_OF_WOOCOMMERCE,
   META_ADS_OF_GOOGLE_ADS,
   BUREAU_OF_FREELANCER_MARKETING,
