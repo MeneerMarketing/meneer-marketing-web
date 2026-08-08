@@ -189,7 +189,7 @@ export default async function DienstPage({
 
                 <Reveal delay={0.06}>
                   <h2 className="mt-14 text-2xl font-extrabold text-mm-text">
-                    Zo pakken we het aan
+                    Zo pak ik het aan
                   </h2>
                   <ul className="mt-6 space-y-4">
                     {body.bullets.map((line) => (
@@ -241,7 +241,7 @@ export default async function DienstPage({
                         Veelgestelde vragen
                       </h2>
                       <p className="mt-2 text-mm-muted">
-                        Korte antwoorden. In een gesprek maken we ze specifiek
+                        Korte antwoorden. In een gesprek maak ik ze specifiek
                         voor jouw situatie.
                       </p>
                     </Reveal>
