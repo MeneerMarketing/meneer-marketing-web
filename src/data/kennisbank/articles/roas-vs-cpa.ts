@@ -6,7 +6,8 @@ export const ROAS_VS_CPA: KennisbankArticle = {
   description:
     "ROAS klinkt indrukwekkend op een dashboard. CPA ook. Maar welke metric past bij jouw marge? Met rekenvoorbeelden die je echt kunt gebruiken.",
   publishedAt: "2026-07-10",
-  readMinutes: 8,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "roas uitleg",
@@ -15,6 +16,33 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     "google ads metrics",
   ],
   dienstSlugs: ["google-ads", "adverteren", "tracking"],
+  faqs: [
+    {
+      question: "Wat is een goede ROAS?",
+      answer:
+        "Die bestaat niet zonder marge. ROAS 4 is feest bij 60% marge en verlies bij 15%. Reken terug vanaf kostprijs + vaste kosten, niet vanaf wat concurrenten op LinkedIn posten.",
+    },
+    {
+      question: "Wanneer kies ik CPA in plaats van ROAS?",
+      answer:
+        "Bij leads, afspraken of diensten met één duidelijke conversie. Of bij gemengde catalogus waar gemiddelde ROAS producten met verschillende marges door elkaar gooit.",
+    },
+    {
+      question: "Moet ik tROAS of tCPA in Google Ads zetten?",
+      answer:
+        "tROAS als je betrouwbare conversiewaarde meestuurt en marges binnen de camp vergelijkbaar zijn. tCPA als elke conversie ongeveer evenveel mag kosten. Verkeerde target op rommeldata is sneller kapot dan handmatig.",
+    },
+    {
+      question: "Telt branded search mee in ROAS?",
+      answer:
+        "Vaak ja in het dashboard, en dat maakt je ROAS mooier dan acquisitie echt is. Rapportageer branded apart. Anders juich je voor mensen die je naam al kenden.",
+    },
+    {
+      question: "Hoe koppel ik marge aan Ads?",
+      answer:
+        "Stuur orderwaarde of aangepaste waarde (marge) terug. Split campagnes per productgroep met vergelijkbare economics. Dashboard zonder marge is theater.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -73,16 +101,41 @@ export const ROAS_VS_CPA: KennisbankArticle = {
       text: "Stuur orderwaarde of leadwaarde terug naar Google. Dan kan smart bidding optimaliseren op waarde, niet op volume. Zonder waarde leert het algoritme dat een €20 order even goed is als een €500 order. Spoiler: dat is niet zo.",
     },
     {
+      type: "h2",
+      text: "POAS: de metric die niemand in Ads ziet",
+    },
+    {
+      type: "p",
+      text: "Profit on Ad Spend. Omzet min kostprijs, gedeeld door ad spend. Google ziet dat niet standaard. Jij wel in je sheet. Als je schaalt op ROAS zonder POAS, schaal je soms omzet die je liever niet had. BestRest: per matras andere inkoop. SkinComplete B2B: andere orderwaarde dan een losse consumentenklik. Meet wat overblijft.",
+    },
+    {
+      type: "h2",
+      text: "SkinComplete en BestRest in één zin",
+    },
+    {
+      type: "p",
+      text: "Bij SkinComplete telde B2B-waarde anders dan een losse consumentenorder. Bij BestRest verschilt de marge per matras en topper. Zelfde dashboard-metrics, andere beslissingen. Daarom split ik campagnes en rapportages op wat economisch hetzelfde is.",
+    },
+    {
       type: "callout",
       text: "Heet take: een bureau dat alleen ROAS in je maandrapport zet zonder je marge te kennen, rapporteert een thermometer in een sauna.",
     },
     {
       type: "h2",
-      text: "Wat je dashboard mínimaal moet tonen",
+      text: "Wat je dashboard minimaal moet tonen",
     },
     {
       type: "p",
       text: "Advertentiekosten. Omzet of leads. CPA of ROAS per campagne met vergelijkbare producten. Marge-indicator (zelfs ruw). En de vraag: als ik morgen budget verdubbel, blijft de unit economics gelijk? Zo nee, schaal niet. Optimaliseer eerst.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Kosten en omzet (of gekwalificeerde leads) naast elkaar.",
+        "CPA of ROAS per campagne met vergelijkbare marge.",
+        "Uitsluitingen: wat telt niet mee als succes?",
+        "Trend over weken, niet alleen gisteren groen.",
+      ],
     },
     {
       type: "h2",
@@ -90,7 +143,7 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "ROAS en CPA zijn geen doelen. Ze zijn signalen. Je doel is winstgevend groeien. Begin met wat een klant mag kosten. Kies de metric die dat het scherpst maakt voor jouw business. En geloof nooit een dashboard dat groen is terwijl je team elke maand zucht bij de bankafschrift.",
+      text: "ROAS en CPA zijn geen doelen. Ze zijn signalen. Je doel is winstgevend groeien. Begin met wat een klant mag kosten. Kies de metric die dat het scherpst maakt voor jouw business. En geloof nooit een dashboard dat groen is terwijl je team elke maand zucht bij het bankafschrift.",
     },
   ],
 };

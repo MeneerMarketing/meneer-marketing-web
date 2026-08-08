@@ -6,7 +6,8 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
   description:
     "Na audits in uiteenlopende branches: deze vijf fouten kosten het meeste geld. Herkenbaar, fixbaar, en vaak niet je schuld.",
   publishedAt: "2026-07-02",
-  readMinutes: 10,
+  modifiedAt: "2026-08-08",
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "google ads fouten",
@@ -15,6 +16,33 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
     "google ads bureau tips",
   ],
   dienstSlugs: ["google-ads", "adverteren", "cro", "tracking"],
+  faqs: [
+    {
+      question: "Wat is de duurste fout in Google Ads?",
+      answer:
+        "Meestal ads op een site die niet converteert, of tracking die liegt. Budget verhogen lost dat niet op. Het vermenigvuldigt het lek.",
+    },
+    {
+      question: "Hoe snel zie ik of mijn account lekt?",
+      answer:
+        "Open zoektermen (30 dagen, sort op kosten), check Ads-conversies vs shop/CRM, open je top-landings op mobiel. Twintig minuten geeft vaak een scherpere diagnose dan een dik rapport.",
+    },
+    {
+      question: "Moet ik Performance Max uitzetten?",
+      answer:
+        "Niet altijd. Wel als feed, landings en tracking nog lekken. PMax op een zwakke basis is een snellere manier om budget te verdelen over Google's netwerk.",
+    },
+    {
+      question: "Wanneer is een audit de moeite waard?",
+      answer:
+        "Als je structureel spend hebt en de omzet niet meeloopt, of als niemand het zoektermenrapport deelt. Audit vóór je budget verdubbelt, niet erna.",
+    },
+    {
+      question: "Kan ik dit zelf fixen zonder bureau?",
+      answer:
+        "De hygiëne wel: zoektermen, landings-match, conversies checken. Structuur en bidding bij grotere accounts vraagt ervaring. Begin bij het zwakste schakel, niet bij 'meer budget'.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -49,7 +77,7 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
       items: [
         "Pageview als conversie. Nee. Dat is bezoek, geen resultaat.",
         "Dankpagina die ook zonder formulier bereikbaar is. Je telt fantasie.",
-        "Geen waarde meegeven bij ecommerce. ROAS wordt dan een decoratief getal.",
+        "Waarde ontbreekt bij ecommerce. ROAS wordt dan een decoratief getal.",
         "Consent mode verkeerd: je mist data en het algoritme vliegt blind.",
       ],
     },
@@ -83,11 +111,33 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "De advertentie belooft 'Shopify B2B-portaal in 6 weken'. De landingspagina is je homepage met 'Welkom bij ons, wij doen alles'. De bezoeker denkt: verkeerde link. Jij denkt: ads werken niet. Message match is de goedkoopste winst in paid search. Zelfde kop, zelfde belofte, zelfde CTA. Saai? Misschien. Effectief? Altijd.",
+      text: "De advertentie belooft Shopify B2B-portaal in 6 weken. De landingspagina is je homepage met welkom bij ons, specialist in alles. De bezoeker denkt: verkeerde link. Jij denkt: ads werken niet. Message match is de goedkoopste winst in paid search. Zelfde kop, zelfde belofte, zelfde CTA. Saai? Misschien. Effectief? Altijd.",
     },
     {
       type: "p",
       text: "Daarom bouw ik landings from scratch voor campagnes die serieus budget krijgen. Niet omdat homepages lelijk zijn, maar omdat ze te veel keuzes geven. Ads brengen intentie. Landings moeten die intentie bevestigen, niet verdoven met een menu.",
+    },
+    {
+      type: "h2",
+      text: "Hoe de vijf fouten elkaar versterken",
+    },
+    {
+      type: "p",
+      text: "Zwakke landings plus slechte tracking plus broad match zonder zoektermen-ritme is geen drie problemen. Het is één kettingreactie. Smart bidding krijgt verkeerde signalen, stuurt budget naar verkeerde terms, en jij verhoogt budget omdat het dashboard druk oogt. Stop de keten bij de zwakste schakel. Vaak tracking of landings. Daarna structuur. Daarna volume.",
+    },
+    {
+      type: "h2",
+      text: "Audit-volgorde die ik altijd aanhoud",
+    },
+    {
+      type: "ul",
+      items: [
+        "Conversies vs realiteit (shop, CRM, telefoon).",
+        "Top landings op mobiel: belofte, snelheid, CTA.",
+        "Zoektermen top 20 op kosten + negatieven.",
+        "Campagnestructuur: brand, generiek, shopping, remarketing gescheiden.",
+        "Pas daarna bidding, budget en creatives.",
+      ],
     },
     {
       type: "h2",

@@ -6,7 +6,8 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
   description:
     "Wanneer WordPress genoeg is en wanneer custom build in Next.js logischer is voor snelheid, SEO en campagnes.",
   publishedAt: "2026-07-06",
-  readMinutes: 8,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "bouwen",
   keywords: [
     "wordpress website traag",
@@ -15,10 +16,37 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
     "custom website laten maken",
   ],
   dienstSlugs: ["webdevelopment", "optimalisatie", "seo"],
+  faqs: [
+    {
+      question: "Wanneer is migratie van WordPress naar Next.js de moeite waard?",
+      answer:
+        "Als landings, snelheid, SEO-structuur of ads je theme constant tegenwerken, en je elke update vreest. Kleine site met weinig campagnes mag op WordPress blijven als het écht werkt.",
+    },
+    {
+      question: "Verlies ik SEO bij een migratie?",
+      answer:
+        "Alleen als redirects, canonicals en URL-planning rommelig zijn. 301 per belangrijke URL, sitemap updaten, Search Console monitoren. Een dip kan kort. Chaos in redirects is structureel.",
+    },
+    {
+      question: "Shopify of Next.js als ik een webshop heb?",
+      answer:
+        "Catalogus + checkout: Shopify is vaak slimmer. Content-, lead- of marketingmachine met strakke landings: Next.js from scratch. Keuze volgt wat je verkoopt, niet wat hip klinkt.",
+    },
+    {
+      question: "Kan ik WordPress behouden en alleen landings custom bouwen?",
+      answer:
+        "Soms als hybride. Vaak wordt het twee systemen onderhouden. Als ads serieus zijn, is één snelle stack meestal goedkoper dan eindeloze theme-hacks.",
+    },
+    {
+      question: "Hoe lang duurt een migratie?",
+      answer:
+        "Afhankelijk van pagina's, content en integraties. Tel redirects en content-inventaris mee, niet alleen 'nieuwe site live'. Haast zonder URL-plan is SEO-zelfmoord.",
+    },
+  ],
   sections: [
     {
       type: "p",
-      text: "Je theme was perfect voor jaar één. Logo erop, pagina's live, blogje erbij. Nu wil je landings per campagne, snelheid onder twee seconden, geen plugin die elk jaar instort als WordPress update. Het theme zegt: 'Ik ben gebouwd voor blogs en kleine sites.' Jij zegt: 'Ik wil schalen.' Iemand liegt. Hint: niet jij.",
+      text: "Je theme was perfect voor jaar één. Logo erop, pagina's live, blogje erbij. Nu wil je landings per campagne, snelheid onder twee seconden, geen plugin die elk jaar instort als WordPress update. Het theme zegt: ik ben gebouwd voor blogs en kleine sites. Jij zegt: ik wil schalen. Iemand liegt. Hint: niet jij.",
     },
     {
       type: "callout",
@@ -32,7 +60,7 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
       type: "ul",
       items: [
         "Elke campagne vraagt om landings die je theme niet netjes kan zonder hacks.",
-        "PageSpeed rood ondanks 'optimalisatie plugin'.",
+        "PageSpeed rood ondanks optimalisatie-plugin.",
         "Developer durft niet meer te updaten uit angst voor breuk.",
         "Je betaalt voor ads op een site die op mobiel traag is.",
         "SEO-content moet op plekken waar het theme structuur blokkeert.",
@@ -47,12 +75,16 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
       text: "Ik promoot WordPress niet als eindstation voor serieuze groei, maar migratie is een project. Soms is WordPress nog steeds goedkoper dan herbouwen. Soms is het duurder omdat je elk jaar plugins, fixes en hacks betaalt. Tel dev-tijd mee, niet alleen hosting.",
     },
     {
+      type: "p",
+      text: "Voor een lokale dienstverlener met vijf pagina's en weinig ads kan WordPress prima. Voor een bedrijf dat landings, A/B, schema en Core Web Vitals serieus neemt, knijpt een theme vaak eerder dan je denkt.",
+    },
+    {
       type: "h2",
       text: "Waarom Next.js from scratch",
     },
     {
       type: "p",
-      text: "Next.js geeft controle over performance, routing, landings, schema markup en campagnes. Geen theme-limiet. Geen plugin die JS toevoegt omdat iemand een sterretje wilde. Custom build is geen buzzword bij mij. Het is letterlijk wat je krijgt.",
+      text: "Next.js geeft controle over performance, routing, landings, schema markup en campagnes. Theme-limiet? Die is er niet. Plugin die JS toevoegt omdat iemand een sterretje wilde? Die bouw je niet in. Custom build is geen buzzword bij mij. Het is letterlijk wat je krijgt.",
     },
     {
       type: "ul",
@@ -64,11 +96,49 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "Shopify of Next.js?",
+    },
+    {
+      type: "p",
+      text: "Webshop met catalogus en checkout? Shopify is vaak slimmer dan WooCommerce of een custom cart. Content- en leadmachine met strakke landings? Next.js from scratch. Ik kies op wat je verkoopt en hoe je groeit, niet op wat hip klinkt.",
+    },
+    {
+      type: "h2",
+      text: "Ads, CWV en het theme dat knijpt",
+    },
+    {
+      type: "p",
+      text: "Elke trage seconde op mobiel eet conversie. Optimalisatie-plugins stapelen JS tot je site zucht. Custom build in Next.js laat je alleen laden wat de landings nodig heeft. SkinComplete en BestRest draaien op stacks die ads aankunnen. Theme-hacks met page builders houden die belofte zelden.",
+    },
+    {
+      type: "h2",
       text: "Migratie zonder SEO-zelfmoord",
     },
     {
       type: "p",
-      text: "Redirects zijn saai en cruciaal. Import-knop plus hopen is geen strategie. Google is chagrijnig bij verhuizing. Eerlijk zijn over een dip, redirects goed doen, sitemap updaten, Search Console monitoren.",
+      text: "Redirects zijn saai en cruciaal. Import-knop plus hopen is geen strategie. Google is chagrijnig bij verhuizing. Eerlijk zijn over een dip, redirects goed doen, sitemap updaten, Search Console monitoren. URL-structuur bewust houden waar het kan.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Inventariseer URL's die verkeer of backlinks hebben.",
+        "301 per oude URL naar de juiste nieuwe. Ketens vermijden.",
+        "Canonicals en interne links in één keer goed.",
+        "Na launch: Search Console, 404's, CWV. Niet pas na een maand.",
+      ],
+    },
+    {
+      type: "h2",
+      text: "Wat ik in een migratie-intake vraag",
+    },
+    {
+      type: "ul",
+      items: [
+        "Welke URL's brengen leads of omzet vandaag?",
+        "Welke campagnes staan klaar of branden al budget?",
+        "Welke integraties (forms, CRM, mail) mogen niet stuk?",
+        "Is de pijn theme-techniek of content/strategie?",
+      ],
     },
     {
       type: "callout",
@@ -76,7 +146,7 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Als je theme je remt, is het theme niet gratis geweest. Het was uitstel met maandelijkse rente.",
+      text: "Als je theme je remt, is het theme niet gratis geweest. Het was uitstel met maandelijkse rente. Bouw from scratch als je groei serieus is. Blijf op WordPress als je scope klein blijft en het écht werkt. Ik zeg het eerlijk, ook als dat betekent dat we nog niet migreren.",
     },
   ],
 };
