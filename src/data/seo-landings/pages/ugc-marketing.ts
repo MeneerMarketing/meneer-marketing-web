@@ -52,7 +52,7 @@ export const UGC_MARKETING: SeoLandingPage = {
     },
   ],
   visual: "meta-ads",
-  visualCaption: "Echte hooks. Meetbare ads. Geen stocklach.",
+  visualCaption: "Echte hooks. Meetbare ads. Stocklach mag weg.",
   processTitle: "UGC marketing die oplevert, niet alleen viral voelt",
   processSteps: [
     {
@@ -104,7 +104,7 @@ export const UGC_MARKETING: SeoLandingPage = {
     {
       question: "Wat kost UGC marketing?",
       answer:
-        "Hangt af van creators, volume en of ads-beheer meeloopt. Na intake een scope: hoeveel takes, welke kanalen, welke landings. Geen losse like-prijzen.",
+        "Hangt af van creators, volume en of ads-beheer meeloopt. Na intake een scope: hoeveel takes, welke kanalen, welke landings. Losse like-prijzen skip ik.",
     },
     {
       question: "Werkt UGC ook voor B2B?",
@@ -147,7 +147,7 @@ export const UGC_MARKETING: SeoLandingPage = {
         "Teststructuur: twee tot drie hooks, één landing, één offer. Meet aankopen of leads. Likes zijn bijzaak.",
         "Fatigue komt snel. Plan al een volgende batch voordat de winnaar verzadigd is. Stilte in de pipeline is stille CPA-stijging.",
         "Landings op mobiel: korte hero, bewijs, form of checkout. De creative opent de deur. De pagina sluit de deal.",
-        "Google en Meta mogen dezelfde proof assets delen waar het past. Eén verhaal. Geen twee bureaus met twee tones.",
+        "Google en Meta mogen dezelfde proof assets delen waar het past. Eén verhaal. Eén tone, niet twee bureaus.",
       ],
     },
     scenario: {
