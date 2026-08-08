@@ -6,7 +6,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
   category: "seo",
   metaTitle: "Core Web Vitals verbeteren · LCP, INP, CLS | Meneer Marketing",
   metaDescription:
-    "Core Web Vitals verbeteren voor SEO en conversie. LCP, INP en CLS fixen in echte code. Geen cache-plugin-theater. Meetbaar sneller op mobiel.",
+    "Core Web Vitals verbeteren voor SEO en conversie. LCP, INP en CLS fixen in echte code. Fixes in de stack, niet plugin-theater. Meetbaar sneller op mobiel.",
   keywords: [
     "core web vitals verbeteren",
     "lcp verbeteren",
@@ -65,7 +65,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
     },
     {
       title: "Bouwen en meten",
-      body: "Live deploy, opnieuw meten. Geen PDF met 'probeer WebP' zonder dat iemand het doet.",
+      body: "Live deploy, opnieuw meten. Ik deploy WebP en de rest, niet alleen tips op papier.",
     },
     {
       title: "Vasthouden",
@@ -114,7 +114,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
     {
       question: "Wat als mijn hosting het probleem is?",
       answer:
-        "Soms. Vaak is het front-end. Ik zeg eerlijk of hosting, CDN of code eerst moet. Geen hosting-upsell als code de boosdoener is.",
+        "Soms. Vaak is het front-end. Ik zeg eerlijk of hosting, CDN of code eerst moet. Code eerst als code de boosdoener is, hosting alleen als dat het echt is.",
     },
   ],
   ctaTitle: "CWV uit het rood?",
@@ -145,7 +145,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
       paragraphs: [
         "LCP: grootste zichtbare element snel tonen. Vaak hero, font of blokkerende scripts. Preload en slimme images helpen. Zware sliders niet.",
         "INP: interactie moet snel reageren. Minder JS, minder main-thread-werk. Apps en trackers tellen mee.",
-        "CLS: ruimte reserveren voor images, banners, embeds. Geen layout-sprongen na load.",
+        "CLS: ruimte reserveren voor images, banners, embeds. Vaste plekken zodat de layout rustig blijft na load.",
         "Meet opnieuw na elke fix. Eén grote winst is meer waard dan tien micro-tweaks die niemand voelt.",
         "Houd een budget: nieuwe features mogen CWV niet stiekem opeten. Performance is productbeleid.",
       ],

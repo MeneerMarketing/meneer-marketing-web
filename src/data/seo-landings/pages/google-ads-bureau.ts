@@ -119,7 +119,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Praat ik met jou of met een accountmanager?",
       answer:
-        "Met mij. Ik bouw en beheer. Geen doorgeefluik dat je vragen vertaalt naar een specialist die je nooit spreekt. Dat is precies waarom klanten een Google Ads bureau zoeken dat klein en scherp blijft.",
+        "Met mij. Ik bouw en beheer. Jij praat direct met wie je account runt. Dat is precies waarom klanten een Google Ads bureau zoeken dat klein en scherp blijft.",
     },
   ],
   ctaTitle: "Google Ads zonder gokken?",

@@ -149,7 +149,7 @@ export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
       title: "Stel: veel Shopping-klikken, weinig orders",
       paragraphs: [
         "Je ziet impressions en kliks. Orders blijven achter. Meestal faalt de PDP, de prijscommunicatie of de feed-match. Soms bid je op de verkeerde helft van je catalogus.",
-        "Ik vergelijk top-klikkers met conversie en marge. Daarna drie fixes: feed-titels, pagina-vertrouwen, budget weg van verliezers. Geen maand 'algoritme laten leren' zonder diagnose.",
+        "Ik vergelijk top-klikkers met conversie en marge. Daarna drie fixes: feed-titels, pagina-vertrouwen, budget weg van verliezers. Diagnose eerst, daarna pas het algoritme laten leren.",
         "Binnen korte tijd weet je of Shopping te redden is of dat de shop eerst moet. Die eerlijkheid spaart meer dan nog een week duurdere kliks.",
       ],
     },

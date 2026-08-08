@@ -25,7 +25,7 @@ export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
     },
     {
       title: "Hacks zonder data",
-      body: "Trucjes die één week werken. Geen ritme, geen leren, wel een factuur.",
+      body: "Trucjes die één week werken. Daarna stilte en een factuur zonder les.",
     },
     {
       title: "Alleen acquisitie",
@@ -108,7 +108,7 @@ export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
     {
       question: "Meet je experimenten hoe?",
       answer:
-        "Vooraf hypothese en metric. Na live: won of niet. Geen gevoels-A/B zonder volume.",
+        "Vooraf hypothese en metric. Na live: won of niet. Alleen A/B als er genoeg volume is om te leren.",
     },
     {
       question: "Bouw je ook de site?",

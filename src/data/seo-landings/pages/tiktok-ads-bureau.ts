@@ -25,7 +25,7 @@ export const TIKTOK_ADS_BUREAU: SeoLandingPage = {
       body: "Logo eerst, muziekje, swipe. Het algoritme beloont herkenning, niet boardroom-polish. Budget verdwijnt in views zonder intentie.",
     },
     {
-      title: "Geen creator-pipeline",
+      title: "Lege creator-pipeline",
       body: "Je team filmt in kantoorlicht. Eén take, daarna stilte. Fatigue komt sneller dan je denkt.",
     },
     {
@@ -61,7 +61,7 @@ export const TIKTOK_ADS_BUREAU: SeoLandingPage = {
     },
     {
       title: "Creatives en brief",
-      body: "Hooks, bezwaren, CTA. Creators of UGC. Geen TV-commercial in 9:16.",
+      body: "Hooks, bezwaren, CTA. Creators of UGC die in de feed thuishoren.",
     },
     {
       title: "Landings en tracking",

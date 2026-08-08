@@ -135,7 +135,7 @@ export const TRAGE_WEBSITE_DURE_ADS: SeoLandingPage = {
         "Ik meet LCP en vrienden op de URL's waar je budget naartoe gaat. Daarna fix in theme of Next.js. Cache-plugins zijn soms een pleister.",
         "Shopify-shops met te veel apps zijn klassiek. Elke app is JS. Elke seconde is marge.",
         "Eerst snel en duidelijk. Dan budget. Omgekeerd is benzine in een lekke tank, alleen duurder.",
-        "Wil je alleen een PageSpeed-score van 100? Theater. Wil je lagere CPA op mobiel? Dan fixen we wat gebruikers voelen.",
+        "Wil je alleen een PageSpeed-score van 100? Theater. Wil je lagere CPA op mobiel? Dan fix ik wat gebruikers voelen.",
       ],
     },
     deepDive: {

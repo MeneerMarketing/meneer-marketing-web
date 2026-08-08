@@ -25,7 +25,7 @@ export const GOOGLE_ADS_SPECIALIST: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Google Ads specialist · Search, Shopping & landings | Meneer Marketing",
   metaDescription:
-    "Google Ads specialist met marge in het hoofd. Campagnes, tracking en landingspagina's. Geen account zonder conversieplan.",
+    "Google Ads specialist met marge in het hoofd. Campagnes, tracking en landingspagina's. Elk account met conversieplan.",
   keywords: ["google ads specialist", "google ads expert", "adwords specialist", "sea specialist nederland"],
   eyebrow: "Google Ads specialist",
   headline: "Google Ads specialist die ook",
@@ -39,7 +39,7 @@ export const GOOGLE_ADS_SPECIALIST: SeoLandingPage = {
   ],
   deliverables: [
     { title: "Search & Shopping", body: "Intentie-gestuurd, marge-bewust per productgroep." },
-    { title: "Landings bouwen", body: "Message match. Geen homepage als alles-doos." },
+    { title: "Landings bouwen", body: "Dedicated landings met message match, niet je homepage als alles-doos." },
     { title: "Tracking & waarde", body: "Conversies die kloppen met je bankrekening." },
     { title: "Wekelijkse optimalisatie", body: "Budget naar winnaars. Rommel eruit." },
   ],
@@ -47,7 +47,7 @@ export const GOOGLE_ADS_SPECIALIST: SeoLandingPage = {
   processTitle: "Google Ads met het volle plaatje",
   processSteps: processDefault,
   proofTitle: "Marge per account",
-  proofBody: "Verschillende shops, verschillende marges. Geen copy-paste specialist die elk account hetzelfde behandelt.",
+  proofBody: "Verschillende shops, verschillende marges. Elk account op eigen marge gelezen.",
   hotTake: { label: "Heet take", body: "Een Google Ads specialist die landings uitbesteedt, gokt met jouw budget." },
   faq: [
     { question: "Verschil met een Google Ads bureau?", answer: "Zelfde vak, andere zoekterm. Ik pak beide." },
@@ -66,7 +66,7 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Google Ads uitbesteden · zonder budget te verbranden | Meneer Marketing",
   metaDescription:
-    "Google Ads uitbesteden met landings, tracking en wekelijkse bijsturing. Geen account dat op zichzelf draait terwijl je site lekt.",
+    "Google Ads uitbesteden met landings, tracking en wekelijkse bijsturing. Actief bijgestuurd, niet een account dat lekt terwijl jij slaapt.",
   keywords: ["google ads uitbesteden", "google ads uitbesteden kosten", "adwords uitbesteden", "sea uitbesteden"],
   eyebrow: "Google Ads uitbesteden",
   headline: "Google Ads uitbesteden",
@@ -75,14 +75,14 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
     "Uitbesteden is niet: budget geven en hopen. Het is: iemand die je account leest alsof het zijn eigen geld is, en je site aanpast als dat nodig is.",
   pains: [
     { title: "Uitbesteed en vergeten", body: "Maandrapport komt binnen. Omzet niet. Niemand vraagt waarom." },
-    { title: "Geen transparantie", body: "Je weet niet waar je budget naartoe gaat of welke zoektermen geld stelen." },
+    { title: "Dichte rapportage", body: "Je weet niet waar je budget naartoe gaat of welke zoektermen geld stelen." },
     { title: "Site blijft buiten scope", body: "Bureau optimaliseert ads op een pagina die niet converteert." },
   ],
   deliverables: [
     { title: "Volledig beheer", body: "Search, Shopping, remarketing waar zinvol." },
-    { title: "Transparante rapportage", body: "Zoektermen, CPA, wat we volgende week doen." },
+    { title: "Transparante rapportage", body: "Zoektermen, CPA, wat ik volgende week doe." },
     { title: "Landings & CRO", body: "Ik hoef niemand anders te bellen als de pagina lekt." },
-    { title: "Eerlijke scope", body: "Geen pakket dat niet bij je markt past." },
+    { title: "Eerlijke scope", body: "Scope op maat voor jouw markt." },
   ],
   visual: "google-ads",
   processTitle: "Zo pak ik uitbesteding aan",
@@ -92,7 +92,7 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
   hotTake: { label: "Heet take", body: "Google Ads uitbesteden aan iemand die je site nooit opent, is een duur experiment." },
   faq: [
     { question: "Wat kost uitbesteden?", answer: "Hangt af van markt en budget. Voorstel na intake, geen vaste pakketten op de site." },
-    { question: "Kan ik tussentijds stoppen?", answer: "Ja. Maandelijks met duidelijke scope. Geen jaarcontracten die niemand leest." },
+    { question: "Kan ik tussentijds stoppen?", answer: "Ja. Maandelijks met duidelijke scope. Opzegbaar per maand, geen jaarcontract in kleine lettertjes." },
   ],
   ctaTitle: "Google Ads uitbesteden?",
   ctaBody: "Vertel je huidige situatie. Ik kijk eerlijk mee.",
@@ -109,7 +109,7 @@ export const FACEBOOK_ADS_BUREAU: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Facebook Ads bureau · Meta met een plan | Meneer Marketing",
   metaDescription:
-    "Facebook Ads bureau voor campagnes die converteren. Geen boost-knop, wel UGC, landings en koppeling met Google Ads.",
+    "Facebook Ads bureau voor campagnes die converteren. UGC, landings en koppeling met Google Ads in plaats van de boost-knop.",
   keywords: ["facebook ads bureau", "facebook advertising bureau", "facebook ads nederland", "meta ads facebook"],
   eyebrow: "Facebook Ads",
   headline: "Facebook Ads bureau dat",
@@ -117,7 +117,7 @@ export const FACEBOOK_ADS_BUREAU: SeoLandingPage = {
   subheadline:
     "Facebook en Instagram zijn één platform. Maar de meeste MKB'ers zoeken 'Facebook Ads'. Prima. Ik bouw campagnes die verkopen, niet posts die likes krijgen.",
   pains: [
-    { title: "Boost-post roulette", body: "Budget in één klik. Geen funnel, geen pixel, geen plan." },
+    { title: "Boost-post roulette", body: "Budget in één klik. Funnel, pixel en meetplan ontbreken." },
     { title: "Stock die niemand gelooft", body: "Perfecte foto's, nul vertrouwen. Swipe." },
     { title: "Los van Google", body: "Twee verhalen, twee bureaus. Jij betaalt verwarring." },
   ],
@@ -150,7 +150,7 @@ export const INSTAGRAM_ADS_BUREAU: SeoLandingPage = {
   category: "google-ads",
   metaTitle: "Instagram Ads bureau · Reels & feed die converteren | Meneer Marketing",
   metaDescription:
-    "Instagram Ads bureau met UGC, Reels en landings voor mobiel. Geen feed die alleen mooi is, wel ads die verkopen.",
+    "Instagram Ads bureau met UGC, Reels en landings voor mobiel. Ads die verkopen, niet alleen een mooie feed.",
   keywords: ["instagram ads bureau", "instagram advertising", "instagram ads nederland", "reels ads bureau"],
   eyebrow: "Instagram Ads",
   headline: "Instagram Ads bureau voor",
@@ -191,13 +191,13 @@ export const SHOPIFY_WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   category: "shopify",
   metaTitle: "Shopify webshop laten maken · custom, snel, schaalbaar | Meneer Marketing",
   metaDescription:
-    "Shopify webshop laten maken from scratch. Custom theme, B2B waar nodig, SEO en marketing erop. Geen template die je groei remt.",
+    "Shopify webshop laten maken from scratch. Custom theme, B2B waar nodig, SEO en marketing erop. Theme dat meegroeit met je groei.",
   keywords: ["shopify webshop laten maken", "shopify shop laten maken", "shopify webshop bouwen", "shopify ontwikkelaar nederland"],
   eyebrow: "Shopify webshop",
   headline: "Shopify webshop laten maken",
   headlineAccent: "zonder theme-store plafond.",
   subheadline:
-    "Shopify is krachtig als je het goed inricht. Ik bouw custom shops die snel laden, merk-eigen zijn en meegroeien met je marketing. Geen demo-store die je over twee jaar uitgroeit.",
+    "Shopify is krachtig als je het goed inricht. Ik bouw custom shops die snel laden, merk-eigen zijn en meegroeien met je marketing. Shops die je niet over twee jaar uitgroeit.",
   pains: [
     { title: "Theme-limitaties", body: "Je wilt uniek. Het theme zegt nee." },
     { title: "Trage shop", body: "Apps en sliders killen conversie en ROAS." },
@@ -246,11 +246,11 @@ export const WEBSITE_LATEN_BOUWEN: SeoLandingPage = {
     "Website laten bouwen klinkt als hetzelfde als website laten maken. Klopt grotendeels. Alleen zoek jij misschien 'bouwen' omdat je een fundament wilt, geen skin over oude rotzooi.",
   pains: [
     { title: "Template-plafond", body: "Goedkoop starten, duur uitgroeien." },
-    { title: "Geen SEO-fundament", body: "Mooi design, pagina 4 in Google." },
+    { title: "SEO als afterthought", body: "Mooi design, pagina 4 in Google." },
     { title: "Bouwer zonder marketing", body: "Site live. Niemand komt." },
   ],
   deliverables: [
-    { title: "Custom build", body: "From scratch in Next.js. Geen page builder." },
+    { title: "Custom build", body: "From scratch in Next.js. Eigen code, geen page builder." },
     { title: "Conversie & snelheid", body: "CWV groen, duidelijke CTA's." },
     { title: "SEO ingebakken", body: "Schema, structuur, techniek." },
     { title: "Marketing aansluiten", body: "Ads, content en automatisering vanaf dag één meedenken." },
@@ -280,7 +280,7 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
   category: "seo",
   metaTitle: "SEO uitbesteden · organisch groeien zonder trucjes | Meneer Marketing",
   metaDescription:
-    "SEO uitbesteden met techniek, content en AI-vindbaarheid. Geen maandelijkse rapportage zonder rankings. Wel een plan dat blijft staan.",
+    "SEO uitbesteden met techniek, content en AI-vindbaarheid. Rankings en actie, niet alleen maandrapporten. Plan dat blijft staan.",
   keywords: ["seo uitbesteden", "zoekmachine optimalisatie uitbesteden", "seo uitbesteden kosten", "seo beheer uitbesteden"],
   eyebrow: "SEO uitbesteden",
   headline: "SEO uitbesteden",
@@ -289,7 +289,7 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
     "Uitbesteden is niet: blogs laten schrijven door iemand die je branche niet snapt. Het is: techniek fixen, pagina's bouwen die ranken, en autoriteit opbouwen die blijft.",
   pains: [
     { title: "Content-zonder-techniek", body: "50 blogs. Site nog traag. Google ongeïnteresseerd." },
-    { title: "Geen transparantie", body: "Je weet niet wat er gedaan wordt of waarom." },
+    { title: "Onduidelijke voortgang", body: "Je weet niet wat er gedaan wordt of waarom." },
     { title: "Garanties die liegen", body: "Pagina 1 in 30 dagen. Run." },
   ],
   deliverables: [
@@ -334,10 +334,10 @@ export const CRO_BUREAU: SeoLandingPage = {
   headline: "CRO bureau dat",
   headlineAccent: "in code fixt, niet alleen rapporteert.",
   subheadline:
-    "CRO is niet een heatmap-abonnement. Het is weten waar bezoekers afhaken en dat oplossen in je site. Ik bouw, meet en pas aan. Geen PDF die in een la verdwijnt.",
+    "CRO is niet een heatmap-abonnement. Het is weten waar bezoekers afhaken en dat oplossen in je site. Ik bouw, meet en pas aan. Fixes in code, geen PDF in een la.",
   pains: [
     { title: "Veel traffic, weinig sales", body: "Ads of SEO werken. Site niet." },
-    { title: "A/B-test zonder plan", body: "Knop groen of rood. Geen hypothese." },
+    { title: "A/B-test zonder plan", body: "Knop groen of rood. Varianten zonder hypothese." },
     { title: "CRO los van tech", body: "Advies dat dev niet kan bouwen." },
   ],
   deliverables: [

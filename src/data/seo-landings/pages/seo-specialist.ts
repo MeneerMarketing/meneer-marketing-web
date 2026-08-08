@@ -49,7 +49,7 @@ export const SEO_SPECIALIST: SeoLandingPage = {
     },
     {
       title: "Rapportage met acties",
-      body: "Queries, posities, verkeer, leads. Elke maand: wat doen we volgende week, niet alleen wat er gebeurde.",
+      body: "Queries, posities, verkeer, leads. Elke maand: wat doe ik volgende week, niet alleen wat er gebeurde.",
     },
   ],
   visual: "seo-serp",
@@ -110,7 +110,7 @@ export const SEO_SPECIALIST: SeoLandingPage = {
     {
       question: "Werk je met vaste contracten?",
       answer:
-        "Maandelijks traject met duidelijke scope. We lopen door zolang het resultaat oplevert. Stoppen kan als de fase klaar is. Ik hou je niet vast aan een jaarcontract voor show.",
+        "Maandelijks traject met duidelijke scope. Ik loop door zolang het resultaat oplevert. Stoppen kan als de fase klaar is. Ik hou je niet vast aan een jaarcontract voor show.",
     },
     {
       question: "Schrijf en bouw jij de pagina's zelf?",
@@ -137,28 +137,28 @@ export const SEO_SPECIALIST: SeoLandingPage = {
       title: "Wat een SEO specialist écht moet leveren",
       paragraphs: [
         "Je zoekt een SEO specialist omdat je wilt dat Google de juiste mensen naar je stuurt. Het verschil zit zelden in nog een keywordlijst. Het zit in pagina's die één zoekvraag scherper beantwoorden dan de top 10, technisch snel genoeg blijven staan, en gekoppeld zijn aan wat je verkoopt.",
-        "Ik schrijf de copy, bouw de landingspagina, zet schema erop en publiceer. Geen doorgeefluik naar een junior of een externe freelancershop. Als iets in Search Console piept, zie ik het zelf en fix ik het zelf.",
+        "Ik schrijf de copy, bouw de landingspagina, zet schema erop en publiceer. Jij praat met mij, niet met een junior die doorstuurt. Als iets in Search Console piept, zie ik het zelf en fix ik het zelf.",
         "Eerst organisch op vragen die mensen echt typen. Pas daarna ads hard. Die volgorde spaart budget: je betaalt niet voor verkeer naar een site die nog niet klaar is om te converteren.",
         "Twaalf jaar Google betekent core updates meemaken, lokale mkb én shops. Nog steeds zelf in Search Console en in de code. Dat is mijn definitie van specialist: iemand die het werk kan doen, niet alleen kan beschrijven.",
-        "Wil je alleen een rapport voor je board? Dan ben ik de verkeerde. Wil je pagina's live, meetbaar verkeer en een aanspreekpunt dat ook uitvoert? Dan praten we verder over scope en volgorde.",
+        "Wil je alleen een rapport voor je board? Dan ben ik de verkeerde. Wil je pagina's live, meetbaar verkeer en een aanspreekpunt dat ook uitvoert? Dan bespreek ik scope en volgorde met je.",
       ],
     },
     deepDive: {
       title: "Hoe ik SEO aanpak als specialist",
       paragraphs: [
         "Eerst intentie. Welke vragen leiden tot een lead of order? Welke termen zijn ego en welke zijn omzet? Die splitsing voorkomt dat je budget opzichtbaar verkeer gooit dat nooit converteert.",
-        "Daarna techniek. Indexatie, crawlfouten, snelheid, interne links, schema. Content op een lekkend dak is zonde. Ik fix wat Google remt voordat we nieuwe pagina's stapelen.",
-        "Dan content: één sterke pagina per intentie, met een antwoordblok dat mensen én systemen kunnen citeren. Geen bulk-AI die overal hetzelfde klinkt. Wel jouw expertise, scherp geformuleerd.",
-        "Lokale SEO en vindbaarheid in AI-antwoorden horen in hetzelfde plan. Google Business Profile, regio-landings en duidelijke expertise versterken elkaar. Maandelijks sturen we bij op queries die stijgen of dalen.",
-        "Rapportage is een middel. Elke maand: wat publiceerden we, wat bewoog, wat is de volgende release. Zo blijft SEO een productieworkflow, geen mysterieus abonnement.",
+        "Daarna techniek. Indexatie, crawlfouten, snelheid, interne links, schema. Content op een lekkend dak is zonde. Ik fix wat Google remt voordat ik nieuwe pagina's stapel.",
+        "Dan content: één sterke pagina per intentie, met een antwoordblok dat mensen én systemen kunnen citeren. Jouw expertise, scherp geformuleerd. Niet dezelfde AI-tekst als iedereen.",
+        "Lokale SEO en vindbaarheid in AI-antwoorden horen in hetzelfde plan. Google Business Profile, regio-landings en duidelijke expertise versterken elkaar. Maandelijks stuur ik bij op queries die stijgen of dalen.",
+        "Rapportage is een middel. Elke maand: wat ik publiceerde, wat bewoog, wat de volgende release is. Zo blijft SEO een productieworkflow, geen mysterieus abonnement.",
       ],
     },
     scenario: {
       title: "Stel: je hebt al een SEO partij gehad",
       paragraphs: [
         "Je hebt maanden betaald voor blogs en een mooi dashboard. Rankings op long-tail zijn oké, maar leads blijven achter. Meestal mist de koopintentie-pagina, of de techniek remt, of niemand durfde de site aan te raken.",
-        "Ik start met een eerlijke scan: wat mag blijven, wat weg mag, welke drie pagina's het eerst moeten. Daarna bouwen we die pagina's. Geen nieuwe 12-maanden-belofte zonder eerste releases.",
-        "Binnen enkele weken zie je concrete URLs live. Daarna kijken we naar beweging in Search Console. Zo weet je of de specialist-route werkt voordat je jaren vastzit.",
+        "Ik start met een eerlijke scan: wat mag blijven, wat weg mag, welke drie pagina's het eerst moeten. Daarna bouw ik die pagina's. Eerst releases live, daarna pas een langetermijnplan.",
+        "Binnen enkele weken zie je concrete URLs live. Daarna kijk ik naar beweging in Search Console. Zo weet je of de specialist-route werkt voordat je jaren vastzit.",
       ],
     },
   },

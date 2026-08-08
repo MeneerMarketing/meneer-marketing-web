@@ -30,7 +30,7 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
     },
     {
       title: "Testen zonder hypothese",
-      body: "Knop groen of rood? Leuk experiment. Geen strategie. Micro-tests terwijl de hero nog liegt.",
+      body: "Knop groen of rood? Leuk experiment. Eerst strategie, dan kleine tests. Micro-tests terwijl de hero nog liegt.",
     },
   ],
   deliverables: [
@@ -65,7 +65,7 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
     },
     {
       title: "Bouwen en live",
-      body: "Ik pas aan in code of theme. Geen maanden wachten op een plugin of een designrondje zonder deploy.",
+      body: "Ik pas aan in code of theme. Deploy in dagen, niet maanden wachten op een plugin of designrondje zonder livegang.",
     },
     {
       title: "Valideren",
@@ -155,7 +155,7 @@ export const CONVERSIE_OPTIMALISATIE: SeoLandingPage = {
       title: "Stel: je CPA stijgt terwijl traffic gelijk blijft",
       paragraphs: [
         "Ads lijkt duurder. Vaak is de site slechter geworden: zwaardere theme-update, langzamere hero, form erbij. De klik is niet het probleem. De landing is het.",
-        "Ik vergelijk conversie vóór en ná, per device. Daarna één grote fix live. Geen maand A/B op knopkleur terwijl LCP rood staat.",
+        "Ik vergelijk conversie vóór en ná, per device. Daarna één grote fix live. Knopkleur wacht tot LCP groen is.",
         "Binnen korte tijd zie je of CRO de CPA terugtrekt. Zo weet je of je meer budget mag geven of dat aanbod eerst moet.",
       ],
     },

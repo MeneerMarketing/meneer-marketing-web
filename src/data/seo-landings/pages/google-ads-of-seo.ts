@@ -36,7 +36,7 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
   deliverables: [
     {
       title: "Beslisboom op jouw cijfers",
-      body: "Marge, markt, site-status, cashflow. Geen generieke 'doe beide'-slide.",
+      body: "Marge, markt, site-status, cashflow. Een beslisboom op jouw cijfers, niet een generieke 'doe beide'-slide.",
     },
     {
       title: "SEO eerst als de site klaar is",
@@ -69,7 +69,7 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
     },
     {
       title: "Uitvoeren",
-      body: "Landings, SEO of campagnes live. Meten. Bijsturen. Geen advies-PDF die in een lade verdwijnt.",
+      body: "Landings, SEO of campagnes live. Meten. Bijsturen. Live werk dat je meet en bijstuurt, niet een advies-PDF in een lade.",
     },
   ],
   proofTitle: "Volgorde op marge en tijdlijn",

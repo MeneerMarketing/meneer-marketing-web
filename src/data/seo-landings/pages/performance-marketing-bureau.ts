@@ -108,7 +108,7 @@ export const PERFORMANCE_MARKETING_BUREAU: SeoLandingPage = {
     {
       question: "Hoe vaak stuur je bij?",
       answer:
-        "Wekelijks op actieve accounts. Maandelijks een heldere stand. Geen verrassing na negentig dagen stilte.",
+        "Wekelijks op actieve accounts. Maandelijks een heldere stand. Altijd hoor je waar je aan toe bent.",
     },
     {
       question: "Fix je ook de site?",

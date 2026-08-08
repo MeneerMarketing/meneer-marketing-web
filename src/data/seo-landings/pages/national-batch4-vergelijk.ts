@@ -1,7 +1,7 @@
-import type { SeoLandingPage } from "@/data/seo-landings/types";
+﻿import type { SeoLandingPage } from "@/data/seo-landings/types";
 
 const processDefault = [
-  { title: "Jouw situatie helder", body: "We kijken naar marge, verkeer, tijdlijn en wat je al hebt." },
+  { title: "Jouw situatie helder", body: "Ik kijk naar marge, verkeer, tijdlijn en wat je al hebt." },
   { title: "Eerlijke keuze", body: "Data en logica. Een aanbeveling met waarom." },
   { title: "Plan met volgorde", body: "Wat eerst, wat later, wat nooit." },
   { title: "Uitvoeren", body: "Ik help je het ook echt live te krijgen." },

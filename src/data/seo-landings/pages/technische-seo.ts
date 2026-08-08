@@ -30,7 +30,7 @@ export const TECHNISCHE_SEO: SeoLandingPage = {
     },
     {
       title: "Schema-chaos",
-      body: "Geen structured data, of foutieve markup die rich results blokkeert en vertrouwen knaagt.",
+      body: "Structured data ontbreekt, of markup klopt niet. Rich results blokkeren en vertrouwen knaagt.",
     },
   ],
   deliverables: [
@@ -48,7 +48,7 @@ export const TECHNISCHE_SEO: SeoLandingPage = {
     },
     {
       title: "Migratie-begeleiding",
-      body: "Redirects, canonicals, Search Console. Geen stille verkeersdip na launch als het te voorkomen is.",
+      body: "Redirects, canonicals, Search Console. Verkeersdip na launch voorkomen waar het kan.",
     },
   ],
   visual: "website-build",
@@ -137,7 +137,7 @@ export const TECHNISCHE_SEO: SeoLandingPage = {
         "Ik audit crawlbaarheid, canonicals, redirects, snelheid en schema. Daarna fix ik het in code. Next.js en Shopify ken ik van binnenuit, niet alleen van een checklist.",
         "Snelheid en structuur eerst, dan content die rankt. Omgekeerd stapel je blogs op een lekkend dak.",
         "Core Web Vitals zijn geen nerddetail. Trage landings kosten SEO én ads. Elke seconde op mobiel is marge.",
-        "Wil je alleen een PDF met 200 issues? Dan ben ik te praktisch. Wil je blockers weg en meetbare indexatie? Dan pakken we techniek als productiewerk.",
+        "Wil je alleen een PDF met 200 issues? Dan ben ik te praktisch. Wil je blockers weg en meetbare indexatie? Dan pak ik techniek als productiewerk.",
       ],
     },
     deepDive: {

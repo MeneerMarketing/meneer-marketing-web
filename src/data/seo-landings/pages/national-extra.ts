@@ -65,7 +65,7 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
     },
     {
       title: "Volgorde vastzetten",
-      body: "Fundament, dan verkeer, dan schaal. Jij krijgt één roadmap. Geen drie bureaus die elkaars planning doorkruisen.",
+      body: "Fundament, dan verkeer, dan schaal. Jij krijgt één roadmap. Eén aanspreekpunt in plaats van drie bureaus die elkaars planning doorkruisen.",
     },
     {
       title: "Uitvoeren onder één dak",
@@ -73,7 +73,7 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
     },
     {
       title: "Maandelijks bijsturen",
-      body: "Wat leverde leads of omzet? Wat stoppen we? Wat verdient meer budget? Rapportage met besluiten, niet alleen grafieken.",
+      body: "Wat leverde leads of omzet? Wat stop ik? Wat verdient meer budget? Rapportage met besluiten, niet alleen grafieken.",
     },
   ],
   proofTitle: "Eén lijn, echte uitvoering",
@@ -98,12 +98,12 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
     {
       question: "Werk je langdurig samen?",
       answer:
-        "Ja, als het klikt. Maandelijks met duidelijke scope. Projecten voor een site of migratie kunnen, groei daarna ook. Geen jaarcontract voor show.",
+        "Ja, als het klikt. Maandelijks met duidelijke scope. Projecten voor een site of migratie kunnen, groei daarna ook. Maandelijks opzegbaar, geen jaarcontract voor show.",
     },
     {
       question: "Moet ik meteen ads aanschaffen?",
       answer:
-        "Alleen als je site en tracking klaar zijn om te converteren. Anders eerst fundament. Ik zeg dat hard, ook als dat betekent dat we ads een maand later aanzetten.",
+        "Alleen als je site en tracking klaar zijn om te converteren. Anders eerst fundament. Ik zeg dat hard, ook als dat betekent dat ik ads een maand later aanzet.",
     },
     {
       question: "Doe je SEO én Google Ads én Meta?",
@@ -142,7 +142,7 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
         "Ik bouw de shop of site, zet e-mail op, laat SEO eerst groeien en zet daarna ads aan. Per productlijn een eigen plan. Dat is bureauwerk zonder bureau-gedoe.",
         "Jij hebt één aanspreekpunt. Strategie en uitvoering zitten bij mij. Dat scheelt overleg, voorkomt tegenstrijdige beloftes en versnelt wat live gaat.",
         "Ik praat in omzet, leads en marge, niet in 'awareness' als einddoel. Campagnes en content dienen hetzelfde verhaal. Anders betaal je twee keer voor ruis.",
-        "Wil je drie partijen die elkaar mails sturen? Dat kan elders. Wil je één plan met meetbare stappen en iemand die ook bouwt? Dan starten we met een eerlijke scan.",
+        "Wil je drie partijen die elkaar mails sturen? Dat kan elders. Wil je één plan met meetbare stappen en iemand die ook bouwt? Dan start ik met een eerlijke scan.",
       ],
     },
     deepDive: {
@@ -151,15 +151,15 @@ export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
         "Eerst site en tracking die kloppen. Dan landings die zoekintentie pakken. Daarna Google Ads of Meta als je breakeven haalt. Anders betaal je voor lekken en noem je het 'testen'.",
         "Vindbaarheid in Google én in AI-antwoorden hoort bij hetzelfde plan. Duidelijke expertise-pagina's helpen beide. Ik schrijf antwoorden die mensen én systemen kunnen gebruiken.",
         "SEO zonder ads kan. Ads zonder SEO ook. Samen onder één manager wint vaker: organisch bouwt assets, betaald vult tempo en leert welke boodschap converteert.",
-        "Maandelijks kijken we naar wat opleverde. Kanalen zonder bewijs krijgen minder. Winnaars krijgen gas. Zo blijft marketing een investering met stuur, geen vaste kostenpost.",
-        "Rapportage is kort en besluitgericht. Wat stoppen we, wat publiceren we, wat schalen we? Als jij na een call weet wat er volgende week live gaat, werkt het bureau.",
+        "Maandelijks kijk ik naar wat opleverde. Kanalen zonder bewijs krijgen minder. Winnaars krijgen gas. Zo blijft marketing een investering met stuur, geen vaste kostenpost.",
+        "Rapportage is kort en besluitgericht. Wat stop ik, wat publiceer ik, wat schaal ik? Als jij na een call weet wat er volgende week live gaat, werkt het bureau.",
       ],
     },
     scenario: {
       title: "Stel: je hebt al drie leveranciers",
       paragraphs: [
         "De site-man zegt dat ads moeten. Ads zegt dat de site faalt. SEO wil meer blogs. Jij betaalt drie facturen en mist één plan. Herkenbaar, en oplosbaar.",
-        "Ik zet alles op één roadmap: wat mag blijven, wat weg mag, wat ik overneem. Geen big-bang ontslag van iedereen als iets al werkt. Wel één stuur.",
+        "Ik zet alles op één roadmap: wat mag blijven, wat weg mag, wat ik overneem. Wat al werkt blijft draaien. Wel één stuur.",
         "Eerste maand: quick wins en duidelijkheid. Daarna structureel bouwen. Zo voel je of één aanspreekpunt rust geeft voordat je alles omgooit.",
       ],
     },

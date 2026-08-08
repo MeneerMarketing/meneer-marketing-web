@@ -64,7 +64,7 @@ export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
     },
     {
       title: "Migratieplan",
-      body: "URL's, redirects, data, checkout-testen. Geen import-knop en bidden.",
+      body: "URL's, redirects, data, checkout-testen. Met een plan, niet alleen een import-knop en bidden.",
     },
     {
       title: "Live en marketing",
@@ -102,7 +102,7 @@ export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
     {
       question: "Wat met maatwerk in Woo?",
       answer:
-        "Soms herbouwen we logica in Shopify (apps, custom). Soms is Next.js of een andere stack slimmer. Hangt van de functie af.",
+        "Soms herbouw ik logica in Shopify (apps, custom). Soms is Next.js of een andere stack slimmer. Hangt van de functie af.",
     },
     {
       question: "Doe je ook WooCommerce naar Shopify als apart traject?",
@@ -135,7 +135,7 @@ export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
         "WooCommerce voelt vrij tot elke functie een plugin wordt. Dan betaal je in updates, conflicten en trage pagina's. Shopify voelt als abonnement tot je merkt hoeveel tijd je terugkrijgt.",
         "Ik promoot WordPress niet als eindstation. Wel zeg ik eerlijk wanneer migreren te vroeg is. Stabiele Woo met tevreden team mag blijven. Remmende Woo moet door.",
         "Migratie zonder SEO-plan is een stille ranking-moord. Redirects en URL-hygiëne zijn saai en cruciaal. Dat is half het project.",
-        "Wil je een slogan? Die bestaat niet. Wil je een eerlijke keuze plus uitvoering? Dan kijken we naar cijfers en zetten we het plan live.",
+        "Wil je een slogan? Die bestaat niet. Wil je een eerlijke keuze plus uitvoering? Dan kijk ik naar cijfers en zet ik het plan live.",
       ],
     },
     deepDive: {
@@ -153,7 +153,7 @@ export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
       paragraphs: [
         "Dat is vaak het moment. Niet omdat Shopify magisch is, omdat Woo je tijd opeet die je aan producten en klanten wilt besteden.",
         "Ik schets migratie-scope, SEO-risico en wat custom moet. Daarna pas go/no-go.",
-        "Als we gaan, doen we het met redirects en testorders. Als we niet gaan, fixen we de grootste lekken op Woo tot migratie wel kan.",
+        "Ga je migreren? Dan doe ik het met redirects en testorders. Blijf je op Woo? Dan fix ik de grootste lekken tot migratie wel kan.",
       ],
     },
   },

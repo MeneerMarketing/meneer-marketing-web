@@ -114,7 +114,7 @@ export const SEA_SPECIALIST: SeoLandingPage = {
     {
       question: "Praat ik met jou of met een accountteam?",
       answer:
-        "Met mij. Strategie en uitvoering. Geen doorgeefluik dat je vragen vertaalt naar iemand die je nooit spreekt.",
+        "Met mij. Strategie en uitvoering. Jij spreekt degene die het account runt.",
     },
   ],
   ctaTitle: "SEA zonder gokken?",

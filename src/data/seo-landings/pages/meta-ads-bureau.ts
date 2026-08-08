@@ -100,7 +100,7 @@ export const META_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Wat is een realistisch startbudget voor Meta Ads?",
       answer:
-        "Hangt af van je marge en ticketprijs. Eerst breakeven rekenen, dan testen met beperkt budget, dan opschalen. Geen vast bedrag uit een brochure.",
+        "Hangt af van je marge en ticketprijs. Eerst breakeven rekenen, dan testen met beperkt budget, dan opschalen. Altijd op maat na intake.",
     },
     {
       question: "Waarom converteren mijn Instagram Ads niet?",
@@ -115,7 +115,7 @@ export const META_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Praat ik met jou of met een social team?",
       answer:
-        "Met mij. Strategie, creatives-richting, landings en bijsturen. Geen doorgeefluik dat likes viert terwijl jij op leads wacht.",
+        "Met mij. Strategie, creatives-richting, landings en bijsturen. Jij spreekt degene die op leads stuurt, niet op likes.",
     },
   ],
   ctaTitle: "Meta Ads die verkopen?",

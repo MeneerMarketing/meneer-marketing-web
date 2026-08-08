@@ -152,7 +152,7 @@ export const GOOGLE_MAPS_MARKETING: SeoLandingPage = {
       title: "Stel: je hebt 4.8 sterren maar slechts 12 reviews",
       paragraphs: [
         "Score is mooi. Volume mist. Concurrent met 150 reviews wint vertrouwen en vaak de pack.",
-        "Ik zet een vraagproces neer na succesvolle jobs of leveringen. Geen spam. Wel systeem.",
+        "Ik zet een vraagproces neer na succesvolle jobs of leveringen. Timing en tone die passen. Systeem dat reviews laat groeien.",
         "Parallel: profiel compleet en één sterke lokale landings. Maps + site in één verhaal.",
       ],
     },

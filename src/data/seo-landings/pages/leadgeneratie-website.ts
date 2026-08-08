@@ -40,11 +40,11 @@ export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
     },
     {
       title: "Forms die converteren",
-      body: "Korte, duidelijke velden. Vertrouwen naast de knop. Geen twintig vragen vóór iemand je mag bellen.",
+      body: "Korte, duidelijke velden. Vertrouwen naast de knop. Kort formulier zodat iemand je snel mag bellen.",
     },
     {
       title: "Tracking die sales begrijpt",
-      body: "GA4 en Ads op echte leads. Geen bedanktpagina-theater. Wat binnenkomt, kun je optimaliseren.",
+      body: "GA4 en Ads op echte leads. Meetbare conversies die je kunt optimaliseren.",
     },
     {
       title: "SEO + ads op één lijn",
@@ -61,7 +61,7 @@ export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
     },
     {
       title: "Funnel en landings",
-      body: "Welke zoekintenties en ads verdienen een eigen pagina? Ik teken de structuur vóór we bouwen.",
+      body: "Welke zoekintenties en ads verdienen een eigen pagina? Ik teken de structuur vóór ik bouw.",
     },
     {
       title: "Bouwen en meten",
