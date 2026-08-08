@@ -6,7 +6,7 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   category: "shopify",
   metaTitle: "Webshop laten maken · Shopify from scratch | Meneer Marketing",
   metaDescription:
-    "Webshop laten maken op Shopify, custom gebouwd. B2B-portaal, SEO en ads vanaf één team. SkinComplete-style, zonder template-gedoe.",
+    "Webshop laten maken op Shopify, custom gebouwd. B2B-portaal, SEO en ads vanaf één aanspreekpunt. From scratch, zonder template-gedoe.",
   keywords: [
     "webshop laten maken",
     "shopify webshop laten maken",
@@ -18,7 +18,7 @@ export const WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   headline: "Webshop laten maken die",
   headlineAccent: "meegroeit.",
   subheadline:
-    "Shopify is krachtig als je het serieus inricht: snelle theme, B2B als het moet, SEO en Shopping erna. Ik bouwde SkinComplete zo. Jij krijgt hetzelfde vakmanschap.",
+    "Shopify is krachtig als je het serieus inricht: snelle theme, B2B als het moet, SEO en Shopping erna. Ik bouw zo: custom waar het telt, meetbaar vanaf dag één.",
   pains: [
     {
       title: "Standaard theme, standaard omzet",
