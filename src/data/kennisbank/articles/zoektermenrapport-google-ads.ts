@@ -138,7 +138,7 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Een zoekterm kan perfect zijn en toch geld verliezen als je landingspagina traag is, vaag is of op mobiel breekt. Bij SkinComplete keek ik eerst of de shop overtuigde voordat ads opschalen zin had. Bij BestRest telde per product de marge mee. Zoektermen zijn de helft van het verhaal. Je site is de andere helft.",
+      text: "Een zoekterm kan perfect zijn en toch geld verliezen als je landingspagina traag is, vaag is of op mobiel breekt. Ik kijk eerst of de shop overtuigt voordat ads opschalen zin heeft. Per product telt de marge mee. Zoektermen zijn de helft van het verhaal. Je site is de andere helft.",
     },
     {
       type: "p",

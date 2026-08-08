@@ -193,7 +193,7 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "ChatGPT maakt je niet automatisch vindbaar. Het helpt je sneller zijn. Vindbaarheid in Google en in antwoorden van ChatGPT zelf vraagt nog steeds: snelle site, duidelijke structuur, schema markup, echte expertise op pagina's. SkinComplete groeide organisch vóór ads omdat de basis klopte, niet omdat iemand prompts had.",
+      text: "ChatGPT maakt je niet automatisch vindbaar. Het helpt je sneller zijn. Vindbaarheid in Google en in antwoorden van ChatGPT zelf vraagt nog steeds: snelle site, duidelijke structuur, schema markup, echte expertise op pagina's. Organisch groeien vóór ads werkt omdat de basis klopt, niet omdat iemand prompts had.",
     },
     {
       type: "p",

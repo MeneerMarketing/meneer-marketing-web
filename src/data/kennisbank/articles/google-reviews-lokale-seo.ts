@@ -124,7 +124,7 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Sterke reviews op GBP en op je site versterken message match. Ads beloven expertise. Landings en Maps moeten dat bewijzen. SkinComplete en BestRest bouwen vertrouwen met bewijs, niet met sterren-stickers zonder verhaal.",
+      text: "Sterke reviews op GBP en op je site versterken message match. Ads beloven expertise. Landings en Maps moeten dat bewijzen. Vertrouwen bouw je met bewijs, niet met sterren-stickers zonder verhaal.",
     },
     {
       type: "callout",

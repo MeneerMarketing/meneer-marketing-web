@@ -108,7 +108,7 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Elke trage seconde op mobiel eet conversie. Optimalisatie-plugins stapelen JS tot je site zucht. Custom build in Next.js laat je alleen laden wat de landings nodig heeft. SkinComplete en BestRest draaien op stacks die ads aankunnen. Theme-hacks met page builders houden die belofte zelden.",
+      text: "Elke trage seconde op mobiel eet conversie. Optimalisatie-plugins stapelen JS tot je site zucht. Custom build in Next.js laat je alleen laden wat de landings nodig heeft. Stacks die ik bouw zijn gemaakt om ads aan te kunnen. Theme-hacks met page builders houden die belofte zelden.",
     },
     {
       type: "h2",

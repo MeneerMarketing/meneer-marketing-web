@@ -91,7 +91,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "BestRest en andere shops waar ik ads op zet: zonder correcte consent + events is elke ROAS-discussie theater. Je optimaliseert op noise.",
+      text: "Zonder correcte consent + events is elke ROAS-discussie theater. Je optimaliseert op noise.",
     },
     {
       type: "h2",
@@ -161,11 +161,11 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "SkinComplete-les: meten vóór schalen",
+      text: "Meten vóór schalen",
     },
     {
       type: "p",
-      text: "Eerst organisch en shop-fundament, daarna ads. Die volgorde geldt ook voor consent: eerst tags en banner, dan budget. SkinComplete schalen zonder betrouwbare purchase-events was een no-go. BestRest idem: marge per SKU vraagt waarde in de hit, niet alleen een bedanktpagina-view.",
+      text: "Eerst organisch en shop-fundament, daarna ads. Die volgorde geldt ook voor consent: eerst tags en banner, dan budget. Schalen zonder betrouwbare purchase-events is een no-go. Marge per SKU vraagt waarde in de hit, niet alleen een bedanktpagina-view.",
     },
     {
       type: "h2",

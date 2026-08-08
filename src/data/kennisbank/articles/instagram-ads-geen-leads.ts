@@ -89,7 +89,7 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete draaide Meta pas hard toen landings en UGC klopten. Views zijn leuk. Orders zijn het doel. BestRest vraagt per productlijn een andere hook. Een generieke reel over alles tegelijk converteert zelden.",
+      text: "Meta draait pas hard bij mij als landings en UGC kloppen. Views zijn leuk. Orders zijn het doel. Per productlijn vraagt een andere hook. Een generieke reel over alles tegelijk converteert zelden.",
     },
     {
       type: "h2",

@@ -84,7 +84,7 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Voor SkinComplete bouwde ik eerst landings op salonvragen die mensen echt stellen. Diezelfde vragen belanden nu ook in ChatGPT. Wie die antwoorden scherp heeft, voedt Google én AI tegelijk. Dat is geen tweede project. Dat is hetzelfde contentplan met strengere eisen aan duidelijkheid.",
+      text: "Ik bouw eerst landings op vragen die klanten echt stellen. Diezelfde vragen belanden nu ook in ChatGPT. Wie die antwoorden scherp heeft, voedt Google én AI tegelijk. Dat is geen tweede project. Dat is hetzelfde contentplan met strengere eisen aan duidelijkheid.",
     },
     {
       type: "h2",
@@ -135,7 +135,7 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete was de volgorde: organische landings scherp, daarna pas ads. Dezelfde landings voeden nu ook AI-antwoorden. BestRest kreeg een eigen strategische aanpak per productlijn. Dat soort unieke keuzes is precies wat generieke AI-blogs niet kunnen nabootsen.",
+      text: "Mijn volgorde: organische landings scherp, daarna pas ads. Dezelfde landings voeden nu ook AI-antwoorden. Unieke keuzes per productlijn zijn precies wat generieke AI-blogs niet kunnen nabootsen.",
     },
     {
       type: "h2",

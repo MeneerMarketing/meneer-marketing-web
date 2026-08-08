@@ -7,7 +7,7 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
     "Design rankt niet. Snelheid, zoekintentie en autoriteit wel. Zo haal je een concurrent in die er minder strak uitziet.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 11,
+  readMinutes: 13,
   category: "vindbaarheid",
   keywords: [
     "concurrent hoger in google",
@@ -32,6 +32,16 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
       answer:
         "Kies één term waar je op pagina 2 staat. Vergelijk top 3. Verbeter die ene URL. Link ernaartoe vanaf sterke pagina's. Meet over twee tot vier weken.",
     },
+    {
+      question: "Helpt een redesign tegen een lelijke concurrent?",
+      answer:
+        "Alleen als je ook sneller, scherper en relevanter wordt. Redesign zonder intentie is een dure spiegel.",
+    },
+    {
+      question: "Wanneer is ads de snellere route?",
+      answer:
+        "Als je morgen omzet nodig hebt en één landings al converteert. SEO blijft de lange motor. Ads is de brug, niet de excuus om de site te laten lekken.",
+    },
   ],
   sections: [
     {
@@ -40,7 +50,45 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
     },
     {
       type: "callout",
-      text: "Kort antwoord: hij beantwoordt waarschijnlijk de zoekvraag sneller, duidelijker en met meer vertrouwenssignalen. Mooi helpt. Mooi zonder inhoud en snelheid niet.",
+      text: "Mijn eerste check is nooit 'wie heeft mooiere kleuren'. Het is: wie beantwoordt de zoekvraag sneller, duidelijker en met meer bewijs.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Eerlijkheidstest",
+      title: "Wat doe jij als eerste?",
+      prompt:
+        "Je concurrent staat hoger. Je hebt één sprint. Kies je zet. Ik zeg wat ik ervan vind.",
+      options: [
+        {
+          id: "redesign",
+          label: "Nieuwe homepage, want die van hen is lelijk",
+          verdict:
+            "Ego-zet. Als hun lelijke pagina de vraag beter beantwoordt, blijf je onder ze staan. Fix intentie en snelheid eerst. Mooi mag daarna.",
+          tone: "ouch",
+        },
+        {
+          id: "one-url",
+          label: "Eén pagina op pagina 2 keihard verbeteren",
+          verdict:
+            "Dit is hoe ik werk. Eén URL, top 3 naast elkaar, antwoord bovenaan, interne links, CWV. Saai. Effectief.",
+          tone: "win",
+        },
+        {
+          id: "fifty-blogs",
+          label: "Vijftig AI-blogs over hetzelfde thema",
+          verdict:
+            "Volume zonder scherpte. Je dilueert je eigen autoriteit. Liever drie pagina's die écht winnen.",
+          tone: "ouch",
+        },
+        {
+          id: "ads-only",
+          label: "Budget verdubbelen in Google Ads, SEO later",
+          verdict:
+            "Mag als landings en tracking kloppen en je morgen cashflow nodig hebt. Als permanente vervanging van SEO: dure gewoonte.",
+          tone: "meh",
+        },
+      ],
     },
     {
       type: "h2",
@@ -48,7 +96,7 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Core Web Vitals zijn geen nerddetail. Trage sites haken af op mobiel. Google meet dat. Gebruikers meten dat harder. Je concurrent laadt misschien in 1,8 seconden. Jij in 4,2 met een slider, vier scripts en een cookiebanner die half scherm pakt.",
+      text: "Core Web Vitals zijn geen nerddetail. Trage sites haken af op mobiel. Google meet dat. Gebruikers meten dat harder. Hij laadt misschien in 1,8 seconden. Jij in 4,2 met een slider, vier scripts en een cookiebanner die half scherm pakt.",
     },
     {
       type: "ul",
@@ -68,7 +116,7 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Dat is precies waarom ik landings per intentie bouw als je hoger in Google wilt. Niet omdat blogs fout zijn. Omdat een blog zelden de koopvraag wint van een pagina die die koopvraag frontaal beantwoordt.",
+      text: "Daarom bouw ik landings per intentie als je hoger in Google wilt. Niet omdat blogs fout zijn. Omdat een blog zelden de koopvraag wint van een pagina die die koopvraag frontaal beantwoordt.",
     },
     {
       type: "h2",
@@ -76,11 +124,11 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Hij rankt al langer. Heeft meer links, meer vermeldingen, meer reviews, consistentere Google Business Profile. SEO is geen sprint. Maar je kunt wel snelle wins pakken op pagina's die nu op pagina 2 staan terwijl ze bijna goed genoeg zijn.",
+      text: "Hij rankt al langer. Heeft meer links, meer vermeldingen, meer reviews, consistenter Google Business Profile. SEO is geen sprint. Wel kun je snelle wins pakken op pagina's die nu op pagina 2 staan terwijl ze bijna goed genoeg zijn.",
     },
     {
       type: "h2",
-      text: "Hoe je een eerlijke vergelijking maakt",
+      text: "Hoe ik een concurrent naast jouw URL leg",
     },
     {
       type: "ul",
@@ -88,8 +136,21 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
         "Open hun ranking-URL en de jouwe naast elkaar. Waar staat het antwoord?",
         "Tel unieke secties die de vraag écht helpen. Negeer fluff.",
         "Check interne links: hoeveel sterke pagina's stemmen op hun URL?",
-        "Check mobiele snelheid, niet alleen desktop Lighthouse-scores voor de show.",
+        "Check mobiele snelheid, niet alleen desktop Lighthouse voor de show.",
+        "Check of zij schema, FAQ en auteur hebben en jij alleen sfeer.",
       ],
+    },
+    {
+      type: "h2",
+      text: "Mijn werkvolgorde (niet sexy, wel scherp)",
+    },
+    {
+      type: "p",
+      text: "Eerst meten wat er al binnenkomt. Dan de zwakste schakel: te traag, te vaag, te weinig bewijs. Dan één money-URL of bijna-winnaar aanscherpen. Interne links. Pas daarna praten over meer content of meer ads. Ik haat parallelle half-projecten. Eén hefboom per sprint.",
+    },
+    {
+      type: "callout",
+      text: "Mooi zonder snelheid is een museum. Zorg dat je site een kassa heeft.",
     },
     {
       type: "h2",
@@ -99,22 +160,10 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
       type: "ul",
       items: [
         "PageSpeed op mobiel voor je belangrijkste landings.",
-        "Google de zoekterm die je wilt winnen. Open top 3. Wat doen zij dat jij niet doet?",
+        "Google de term die je wilt winnen. Open top 3. Wat doen zij dat jij niet doet?",
         "Eén pagina kiezen die bijna rankt. Die verbeteren in plaats van een nieuwe blog stapelen.",
         "Interne links vanaf je sterke URL's naar die pagina.",
       ],
-    },
-    {
-      type: "h2",
-      text: "SkinComplete en BestRest leerden me dit",
-    },
-    {
-      type: "p",
-      text: "Organisch groeien kost tijd, maar het compound. SkinComplete domineerde eerst SEO op salonvragen, daarna pas ads. BestRest kreeg per product een eigen verhaal en landings. Geen copy-paste. Google beloont specificiteit. Jouw mooie homepage is trots waard. Rankende pagina's zijn vaak specifiek en snel.",
-    },
-    {
-      type: "callout",
-      text: "Mooi zonder snelheid is een museum. Zorg dat je site een kassa heeft.",
     },
     {
       type: "p",

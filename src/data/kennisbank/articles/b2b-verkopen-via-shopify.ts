@@ -21,7 +21,7 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     {
       question: "Kan B2B en B2C in één Shopify-shop?",
       answer:
-        "Ja. Bij SkinComplete: één catalogus, twee gezichten. Consument ziet consumentenprijzen. Zakelijke klant logt in en ziet zijn afspraken. Voorraad blijft één bron.",
+        "Ja. Eén catalogus, twee gezichten. Consument ziet consumentenprijzen. Zakelijke klant logt in en ziet zijn afspraken. Voorraad blijft één bron.",
     },
     {
       question: "Wanneer is een B2B-portaal de moeite waard?",
@@ -55,11 +55,11 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Wat ik voor SkinComplete bouwde",
+      text: "Hoe ik een B2B-portal in Shopify bouw",
     },
     {
       type: "p",
-      text: "Voor SkinComplete bouwde ik een volledig B2B-portal binnen de bestaande Shopify-shop. Salons loggen in op een eigen omgeving, zien hun eigen prijzen en bestellen wanneer het hen uitkomt. Geen aparte software, geen tweede systeem om te onderhouden. Eén shop, twee gezichten.",
+      text: "Ik bouw B2B-portals binnen de bestaande Shopify-shop. Salons en retailers loggen in op een eigen omgeving, zien hun eigen prijzen en bestellen wanneer het hen uitkomt. Geen aparte software, geen tweede systeem om te onderhouden. Eén shop, twee gezichten.",
     },
     {
       type: "ul",
@@ -95,7 +95,7 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete hoorde SEO en e-mail bij hetzelfde traject. Eerst organisch groeien op vragen die salons stellen, daarna ads. Een B2B-portaal zonder vindbaarheid en retentie is half werk. Self-service verdient traffic net zo goed als een consumentenshop.",
+      text: "SEO en e-mail horen bij hetzelfde traject. Eerst organisch groeien op vragen die salons en retailers stellen, daarna ads. Een B2B-portaal zonder vindbaarheid en retentie is half werk. Self-service verdient traffic net zo goed als een consumentenshop.",
     },
     {
       type: "h2",
@@ -111,7 +111,7 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "B2B-segmenten horen niet in dezelfde Klaviyo-flow als consumenten. Orderbevestigingen, herbestel-reminders en restock-alerts volgen zakelijke logica. SkinComplete: portal + e-mail die elkaars waarheid spiegelen. Consumentenmail naar een salon is hoe je trust kwijtraakt.",
+      text: "B2B-segmenten horen niet in dezelfde Klaviyo-flow als consumenten. Orderbevestigingen, herbestel-reminders en restock-alerts volgen zakelijke logica. Portal en e-mail moeten dezelfde waarheid spiegelen. Consumentenmail naar een salon is hoe je trust kwijtraakt.",
     },
     {
       type: "h2",

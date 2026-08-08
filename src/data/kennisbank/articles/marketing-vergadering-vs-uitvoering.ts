@@ -62,7 +62,7 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "De volgorde die ik bij SkinComplete en BestRest gebruikte",
+      text: "De volgorde die ik aanhoud",
     },
     {
       type: "ul",
@@ -76,7 +76,7 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete eerst organisch en shop-fundament, daarna ads. Bij BestRest per product andere logica. Dat is strategie die je in het account ziet, niet alleen op het whiteboard.",
+      text: "Eerst organisch en shop-fundament, daarna ads. Per productlijn andere logica waar de marge dat vraagt. Dat is strategie die je in het account ziet, niet alleen op het whiteboard.",
     },
     {
       type: "h2",
