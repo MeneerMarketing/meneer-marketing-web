@@ -58,7 +58,7 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     },
     {
       type: "callout",
-      text: "Vuistregel: ROAS werkt vooral goed als je ecommerce-marges vergelijkbaar zijn. Bij BestRest met verschillende producten en marges wordt ROAS alleen al snel misleidend op accountniveau.",
+      text: "Vuistregel: ROAS werkt vooral goed als je ecommerce-marges vergelijkbaar zijn. Bij een gemengde catalogus met verschillende producten en marges wordt ROAS alleen al snel misleidend op accountniveau.",
     },
     {
       type: "h2",
@@ -106,15 +106,15 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Profit on Ad Spend. Omzet min kostprijs, gedeeld door ad spend. Google ziet dat niet standaard. Jij wel in je sheet. Als je schaalt op ROAS zonder POAS, schaal je soms omzet die je liever niet had. BestRest: per matras andere inkoop. SkinComplete B2B: andere orderwaarde dan een losse consumentenklik. Meet wat overblijft.",
+      text: "Profit on Ad Spend. Omzet min kostprijs, gedeeld door ad spend. Google ziet dat niet standaard. Jij wel in je sheet. Als je schaalt op ROAS zonder POAS, schaal je soms omzet die je liever niet had. Per SKU-groep andere inkoop. B2B-orders andere waarde dan consumentenklikken. Meet wat overblijft.",
     },
     {
       type: "h2",
-      text: "SkinComplete en BestRest in één zin",
+      text: "Hoe ik dit aanpak",
     },
     {
       type: "p",
-      text: "Bij SkinComplete telde B2B-waarde anders dan een losse consumentenorder. Bij BestRest verschilt de marge per matras en topper. Zelfde dashboard-metrics, andere beslissingen. Daarom split ik campagnes en rapportages op wat economisch hetzelfde is.",
+      text: "B2B-waarde telt anders dan een losse consumentenorder. Marge verschilt per productlijn. Zelfde dashboard-metrics, andere beslissingen. Daarom split ik campagnes en rapportages op wat economisch hetzelfde is.",
     },
     {
       type: "callout",

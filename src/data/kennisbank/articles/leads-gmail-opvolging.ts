@@ -96,7 +96,7 @@ export const LEADS_GMAIL_OPVOLGING: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "SkinComplete-salons bestelden via portaal. Minder mail-heen-en-weer. Jij hoeft geen B2B-portaal te bouwen voor elke lead, maar je proces mag ook geen bingo zijn.",
+      text: "Zakelijke klanten die via een portaal bestellen, sturen minder mail-heen-en-weer. Jij hoeft geen B2B-portaal te bouwen voor elke lead, maar je proces mag ook geen bingo zijn.",
     },
     {
       type: "h2",

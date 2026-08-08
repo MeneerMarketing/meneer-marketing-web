@@ -40,7 +40,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     {
       question: "Mag ik heel mijn catalogus in één PMax?",
       answer:
-        "Alleen bij vergelijkbare economie en schone feed. Bij BestRest-achtige mix: split per productgroep. Gemiddelde ROAS over alles liegt.",
+        "Alleen bij vergelijkbare economie en schone feed. Bij gemengde catalogus met verschillende marges: split per productgroep. Gemiddelde ROAS over alles liegt.",
     },
   ],
   sections: [
@@ -96,7 +96,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete groeide eerst organisch verkeer. De shop bewees dat ze overtuigde. Pas daarna ads, eerst strakker, later meer automated. Bij ecommerce met Shopping: feed diagnostics groen, landings snel, remarketing lists gevuld, dan PMax testen met beperkt budget.",
+      text: "Ik laat eerst organisch verkeer groeien. De shop moet bewijzen dat ze overtuigt. Pas daarna ads, eerst strakker, later meer automated. Bij ecommerce met Shopping: feed diagnostics groen, landings snel, remarketing lists gevuld, dan PMax testen met beperkt budget.",
     },
     {
       type: "ul",
@@ -118,7 +118,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Stop niet alles in één asset group. Groepeer wat economisch hetzelfde is: zelfde marge, zelfde intentie, zelfde landings. BestRest: toppers en premium matrassen niet in één soep. Anders optimaliseert PMax op wat makkelijk klikt, niet op wat jij wilt verdienen.",
+      text: "Stop niet alles in één asset group. Groepeer wat economisch hetzelfde is: zelfde marge, zelfde intentie, zelfde landings. Toppers en premium producten horen niet in één soep. Anders optimaliseert PMax op wat makkelijk klikt, niet op wat jij wilt verdienen.",
     },
     {
       type: "h2",

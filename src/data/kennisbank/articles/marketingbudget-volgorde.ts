@@ -35,7 +35,7 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
     {
       question: "Wanneer hoort e-mail in de volgorde?",
       answer:
-        "Vóór je nieuwe klanten jaagt: abandoned cart, lead-opvolging, eenvoudige flows. Goedkoper dan ads, vaak onderschat. SkinComplete bouwde retentie vroeg mee.",
+        "Vóór je nieuwe klanten jaagt: abandoned cart, lead-opvolging, eenvoudige flows. Goedkoper dan ads, vaak onderschat. Retentie bouw ik vroeg mee.",
     },
     {
       question: "Past creators/TikTok in dit kader?",
@@ -83,7 +83,7 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Voordat je nieuwe klanten jaagt, stop je het lek. E-mailflows, abandoned cart, simpele opvolging van leads. Dit is goedkoper dan ads en wordt dramatisch onderschat. SkinComplete bouwde retentie mee vanaf het begin. Niet sexy. Wel winst.",
+      text: "Voordat je nieuwe klanten jaagt, stop je het lek. E-mailflows, abandoned cart, simpele opvolging van leads. Dit is goedkoper dan ads en wordt dramatisch onderschat. Retentie bouw ik mee vanaf het begin. Niet sexy. Wel winst.",
     },
     {
       type: "p",
@@ -107,7 +107,7 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Google Ads, Meta, Shopping: allemaal versnellers. Niet fundamenten. Ik zet ads aan als breakeven klopt, tracking klopt en landings kloppen. Bij BestRest per productlijn. Bij SkinComplete pas na organisch succes. Die volgorde is geen dogma, het is risicobeheer.",
+      text: "Google Ads, Meta, Shopping: allemaal versnellers. Niet fundamenten. Ik zet ads aan als breakeven klopt, tracking klopt en landings kloppen. Per productlijn waar de marge dat vraagt. Pas na organisch succes waar dat kan. Die volgorde is geen dogma, het is risicobeheer.",
     },
     {
       type: "ul",

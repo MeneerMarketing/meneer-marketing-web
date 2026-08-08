@@ -104,7 +104,7 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Als mensen je naam kennen, omzeilen ze Google's samenvatting. LinkedIn, nieuwsbrief, cases, mond-tot-mond. Klinkt old school. Werkt als antifragiel tegen AI-boxen. BestRest en SkinComplete krijgen traffic omdat mensen het merk zoeken, niet alleen 'matras online' of 'led mask salon'.",
+      text: "Als mensen je naam kennen, omzeilen ze Google's samenvatting. LinkedIn, nieuwsbrief, cases, mond-tot-mond. Klinkt old school. Werkt als antifragiel tegen AI-boxen. Sterke merken krijgen traffic omdat mensen de naam zoeken, niet alleen een generieke productterm.",
     },
     {
       type: "h2",
@@ -126,7 +126,7 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Organisch blijft de goedkoopste lange termijn. Maar als AI Overviews je info-funnel leegtrekt terwijl je product klaar staat, is paid een brug. Niet als permanent pleister op een slechte site. Wel om zichtbaar te blijven terwijl je content-shift doorloopt. SkinComplete deed het andersom: eerst SEO, daarna ads. In 2026 is de mix vaker: SEO herstructureren + gerichte Google Ads op koop-intent.",
+      text: "Organisch blijft de goedkoopste lange termijn. Maar als AI Overviews je info-funnel leegtrekt terwijl je product klaar staat, is paid een brug. Niet als permanent pleister op een slechte site. Wel om zichtbaar te blijven terwijl je content-shift doorloopt. Mijn standaard: eerst SEO, daarna ads. In 2026 is de mix vaker: SEO herstructureren + gerichte Google Ads op koop-intent.",
     },
     {
       type: "callout",
@@ -150,7 +150,7 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "De overview geeft het 'wat'. Jij moet het 'waarom jij' hebben. Rekenvoorbeelden, ranges, screenshots van setups, een mening over wat concurrenten overdrijven. Tools, calculators, checklists die je downloadt. BestRest werkt met een eigen plan per klant. Dat soort specificiteit past niet in één grijze box.",
+      text: "De overview geeft het 'wat'. Jij moet het 'waarom jij' hebben. Rekenvoorbeelden, ranges, screenshots van setups, een mening over wat concurrenten overdrijven. Tools, calculators, checklists die je downloadt. Een eigen plan per klant. Dat soort specificiteit past niet in één grijze box.",
     },
     {
       type: "ul",

@@ -40,7 +40,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     {
       question: "SEO en ads per product: dubbel werk?",
       answer:
-        "Nee. Dezelfde vragen en landings voeden organisch én paid. Je test copy goedkoop organisch, schaal wat werkt met ads. SkinComplete deed die volgorde ook.",
+        "Nee. Dezelfde vragen en landings voeden organisch én paid. Je test copy goedkoop organisch, schaal wat werkt met ads. Die volgorde pas ik overal toe.",
     },
   ],
   sections: [
@@ -98,7 +98,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "BestRest kreeg niet 'SEO hier, ads daar'. Dezelfde vragen die mensen in Google typen, werden beantwoord op pagina's die ook als landings dienden. Zo test je copy en structuur organisch voordat je er geld tegenaan gooit. SkinComplete deed iets vergelijkbaars: eerst bewijzen dat pagina's overtuigen, dan pas budget omhoog. Bij BestRest was de productmix anders, maar het principe hetzelfde.",
+      text: "BestRest kreeg niet 'SEO hier, ads daar'. Dezelfde vragen die mensen in Google typen, werden beantwoord op pagina's die ook als landings dienden. Zo test je copy en structuur organisch voordat je er geld tegenaan gooit. Eerst bewijzen dat pagina's overtuigen, dan pas budget omhoog. Bij BestRest was de productmix anders dan bij andere shops, maar het principe hetzelfde.",
     },
     {
       type: "h2",

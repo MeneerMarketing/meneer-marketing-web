@@ -32,7 +32,7 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
     {
       question: "Kost custom build altijd meer dan AI-design?",
       answer:
-        "Vaak wel in uren aan de voorkant. Wat je terugkrijgt: een site die bij ads en SEO past, sneller laadt, en die je concurrent niet in twee prompts nabouwt. SkinComplete en BestRest zijn daar voorbeelden van: eigen plan, eigen look, geen template-gevoel.",
+        "Vaak wel in uren aan de voorkant. Wat je terugkrijgt: een site die bij ads en SEO past, sneller laadt, en die je concurrent niet in twee prompts nabouwt. Eigen plan, eigen look, geen template-gevoel.",
     },
     {
       question: "Kan ik AI gebruiken en tóch uniek zijn?",
@@ -112,7 +112,7 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete bouwden we het B2B-portaal en de site alsof marketing en shop één systeem zijn. Eerst organisch en structuur, daarna ads. Bij BestRest kreeg elke lijn een eigen plan, niet één generieke matras-funnel. Dat zie je. Niet omdat we meer gradients gebruikten. Omdat keuzes merkbaar zijn.",
+      text: "Ik bouw B2B-portals en sites alsof marketing en shop één systeem zijn. Eerst organisch en structuur, daarna ads. Elke productlijn krijgt een eigen plan, niet één generieke funnel. Dat zie je. Niet omdat ik meer gradients gebruik. Omdat keuzes merkbaar zijn.",
     },
     {
       type: "h2",

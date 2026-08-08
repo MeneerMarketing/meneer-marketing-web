@@ -138,11 +138,11 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Broad match naast SkinComplete- en BestRest-logica",
+      text: "Hoe ik broad match inzet",
     },
     {
       type: "p",
-      text: "Bij SkinComplete eerst organisch en shop-fundament, daarna ads. Broad match was geen shortcut om die volgorde over te slaan. Bij BestRest per product andere intentie: wat voor de ene matras werkt, is voor een andere SKU ruis. Broad zonder segmentatie mengt die werelden. Splits wat economisch anders is.",
+      text: "Eerst organisch en shop-fundament, daarna ads. Broad match is geen shortcut om die volgorde over te slaan. Per product andere intentie: wat voor de ene SKU werkt, is voor een andere ruis. Broad zonder segmentatie mengt die werelden. Splits wat economisch anders is.",
     },
     {
       type: "h2",

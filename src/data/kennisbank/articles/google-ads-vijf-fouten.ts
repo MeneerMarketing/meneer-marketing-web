@@ -58,7 +58,7 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete koos ik bewust: eerst shop en SEO, dan pas ads. Niet omdat ads slecht zijn, maar omdat ads op een zwakke bestemming leer geld heten. Tel even mee: 1000 klikken à €2 is €2000. Bij 1% conversie heb je tien orders. Bij 2% conversie twintig. Zelfde budget, dubbele omzet. Dat verschil zit vaak in je pagina, niet in je keyword.",
+      text: "Ik kies bewust: eerst shop en SEO, dan pas ads. Niet omdat ads slecht zijn, maar omdat ads op een zwakke bestemming leer geld heten. Tel even mee: 1000 klikken à €2 is €2000. Bij 1% conversie heb je tien orders. Bij 2% conversie twintig. Zelfde budget, dubbele omzet. Dat verschil zit vaak in je pagina, niet in je keyword.",
     },
     {
       type: "callout",
@@ -91,7 +91,7 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "BestRest leerde me: producten met verschillende marges horen niet in één logische emmer. Hetzelfde geldt voor intentie. Iemand die je merknaam zoekt, is geen koude prospect. Die hoort niet dezelfde boodschap en zeker niet hetzelfde budgetplafond als iemand die 'beste matras rugpijn' intypt.",
+      text: "Producten met verschillende marges horen niet in één logische emmer. Hetzelfde geldt voor intentie. Iemand die je merknaam zoekt, is geen koude prospect. Die hoort niet dezelfde boodschap en zeker niet hetzelfde budgetplafond als iemand die een specifiek probleem intypt.",
     },
     {
       type: "h2",

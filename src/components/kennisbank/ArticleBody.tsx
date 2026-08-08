@@ -1,5 +1,7 @@
 import type { ArticleSection } from "@/data/kennisbank/types";
 import { BrochureOmeter } from "@/components/kennisbank/BrochureOmeter";
+import { ChecklistMeter } from "@/components/kennisbank/ChecklistMeter";
+import { HotTakePicker } from "@/components/kennisbank/HotTakePicker";
 
 export function ArticleBody({ sections }: { sections: ArticleSection[] }) {
   return (
@@ -79,6 +81,35 @@ export function ArticleBody({ sections }: { sections: ArticleSection[] }) {
           case "interactive":
             if (block.id === "brochure-ometer") {
               return <BrochureOmeter key={i} />;
+            }
+            if (block.id === "checklist-meter") {
+              return (
+                <ChecklistMeter
+                  key={i}
+                  eyebrow={block.eyebrow}
+                  title={block.title}
+                  intro={block.intro}
+                  storageKey={block.storageKey}
+                  eventName={block.eventName}
+                  sharePath={block.sharePath}
+                  scoreNoun={block.scoreNoun}
+                  checks={block.checks}
+                  tiers={block.tiers}
+                  ctaHref={block.ctaHref}
+                  ctaLabel={block.ctaLabel}
+                />
+              );
+            }
+            if (block.id === "hot-take") {
+              return (
+                <HotTakePicker
+                  key={i}
+                  eyebrow={block.eyebrow}
+                  title={block.title}
+                  prompt={block.prompt}
+                  options={block.options}
+                />
+              );
             }
             return null;
           default:

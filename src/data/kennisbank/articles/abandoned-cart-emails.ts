@@ -95,7 +95,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bezwaar wegnemen: verzending, retour, waarom dit product. Bij SkinComplete-style shops: waarom professionals dit gebruiken, niet waarom jij wanhopig omzet nodig hebt.",
+      text: "Bezwaar wegnemen: verzending, retour, waarom dit product. Bij professionele shops: waarom vakmensen dit gebruiken, niet waarom jij wanhopig omzet nodig hebt.",
     },
     {
       type: "h3",
@@ -111,7 +111,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Schrijf alsof je tegen iemand praat die je product al leuk vond. BestRest klinkt anders dan SkinComplete. Dat hoort zo. Hey, je liet dit nog liggen werkt beter dan ACTIE VEREIST.",
+      text: "Schrijf alsof je tegen iemand praat die je product al leuk vond. Een matraswinkel klinkt anders dan een beauty-brand. Dat hoort zo. Hey, je liet dit nog liggen werkt beter dan ACTIE VEREIST.",
     },
     {
       type: "callout",
@@ -148,7 +148,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Schrijf alsof je een klant helpt die even afgeleid was. 'Je matras staat nog klaar' slaat harder aan dan 'Laatste kans!!!'. Bij BestRest past rust en expertise. Bij SkinComplete professioneel en warm voor salons. De flow is techniek. De zin is merk.",
+      text: "Schrijf alsof je een klant helpt die even afgeleid was. 'Je mand staat nog klaar' slaat harder aan dan 'Laatste kans!!!'. Rust en expertise passen bij een duur product. Professioneel en warm past bij B2B. De flow is techniek. De zin is merk.",
     },
     {
       type: "h2",

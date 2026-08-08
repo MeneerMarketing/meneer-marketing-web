@@ -40,7 +40,7 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
     {
       question: "Helpt een schone feed als mijn PDP zwak is?",
       answer:
-        "Half. Feed krijgt je in Shopping. Productpagina moet overtuigen. Dunne PDP = dure kliks. BestRest en SkinComplete: feed én pagina samen.",
+        "Half. Feed krijgt je in Shopping. Productpagina moet overtuigen. Dunne PDP = dure kliks. Feed én pagina moeten samen kloppen.",
     },
   ],
   sections: [
@@ -115,7 +115,7 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij BestRest en SkinComplete is de les hetzelfde: feed is helft, productpagina is andere helft. Klik op Shopping, land op dunne pagina, afhaker. Google ziet dat. Je betaalt meer voor minder. Investeer in productpagina's met duidelijke info, reviews en snelheid.",
+      text: "De les is altijd hetzelfde: feed is helft, productpagina is andere helft. Klik op Shopping, land op dunne pagina, afhaker. Google ziet dat. Je betaalt meer voor minder. Investeer in productpagina's met duidelijke info, reviews en snelheid.",
     },
     {
       type: "h2",

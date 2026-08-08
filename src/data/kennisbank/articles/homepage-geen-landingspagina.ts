@@ -79,19 +79,19 @@ export const HOMEPAGE_GEEN_LANDINGSPAGINA: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "BestRest deed het anders",
+      text: "Hoe ik landings per intentie aanpak",
     },
     {
       type: "p",
-      text: "Bij BestRest kreeg niet elke matras dezelfde landings. Producten met andere marges, andere zoekintentie, andere vergelijking. Sommige campagnes gingen naar een productpagina die scherp was. Sommige naar een landings die één aanbod maakte. De homepage was het visitekaartje. Niet het verkoopgesprek om 23:00.",
+      text: "Niet elk product krijgt dezelfde landings. Andere marges, andere zoekintentie, andere vergelijking. Sommige campagnes gaan naar een productpagina die scherp is. Sommige naar een landings die één aanbod maakt. De homepage is het visitekaartje. Niet het verkoopgesprek om 23:00.",
     },
     {
       type: "h2",
-      text: "SkinComplete: landings vóór ads-schaal",
+      text: "Landings vóór ads-schaal",
     },
     {
       type: "p",
-      text: "Eerst organische landings op salonvragen, shop scherp, daarna pas budget omhoog. Diezelfde discipline geldt voor paid: belofte in de ad, bewijs op de URL, CTA zonder omweg. Homepage mag branden. Campagne-URL's moeten verkopen.",
+      text: "Eerst organische landings op echte klantvragen, shop scherp, daarna pas budget omhoog. Diezelfde discipline geldt voor paid: belofte in de ad, bewijs op de URL, CTA zonder omweg. Homepage mag branden. Campagne-URL's moeten verkopen.",
     },
     {
       type: "h2",
@@ -116,7 +116,7 @@ export const HOMEPAGE_GEEN_LANDINGSPAGINA: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Als je homepage één duidelijke CTA heeft, snel laadt, en je ad generiek merkbewustzijn is (BestRest matrassen), kan home soms werken. Generieke merkcampagnes zijn duur en moeilijk meetbaar. Voor MKB met beperkt budget is specifiek bijna altijd slimmer.",
+      text: "Als je homepage één duidelijke CTA heeft, snel laadt, en je ad generiek merkbewustzijn is, kan home soms werken. Generieke merkcampagnes zijn duur en moeilijk meetbaar. Voor MKB met beperkt budget is specifiek bijna altijd slimmer.",
     },
     {
       type: "h2",

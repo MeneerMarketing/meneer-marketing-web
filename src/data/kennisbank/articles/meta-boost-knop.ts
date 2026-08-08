@@ -127,7 +127,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Twee bureaus, twee verhalen, twee dashboards. Jij betaalt dubbel voor verwarring. Bij SkinComplete en BestRest kijk ik naar beide kanalen in één strategie: wie zie je waar, welke creative hergebruik je, waar lekt de funnel. Meta is zelden het enige kanaal. Behandel het ook niet als een losse knop.",
+      text: "Twee bureaus, twee verhalen, twee dashboards. Jij betaalt dubbel voor verwarring. Ik kijk naar beide kanalen in één strategie: wie zie je waar, welke creative hergebruik je, waar lekt de funnel. Meta is zelden het enige kanaal. Behandel het ook niet als een losse knop.",
     },
     {
       type: "h2",

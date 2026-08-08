@@ -135,11 +135,11 @@ export const REMARKETING_GOOGLE_ADS: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "SkinComplete en BestRest: warm verkeer verdienen",
+      text: "Warm verkeer verdienen",
     },
     {
       type: "p",
-      text: "SkinComplete groeide eerst organisch. Remarketing had pas zin toen er genoeg warme bezoekers waren. BestRest: per productlijn andere intentie en marge. Eén generieke retargeting-campagne mengt die werelden. Segmenteren is geen luxe, het is margebescherming.",
+      text: "Eerst organisch groeien. Remarketing had pas zin toen er genoeg warme bezoekers waren. Per productlijn andere intentie en marge. Eén generieke retargeting-campagne mengt die werelden. Segmenteren is geen luxe, het is margebescherming.",
     },
     {
       type: "h2",

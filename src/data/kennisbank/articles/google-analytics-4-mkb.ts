@@ -134,7 +134,7 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Bij SkinComplete was de volgorde: shop en meting eerst, ads later. Bij BestRest telde per product de waarde mee, anders optimaliseer je op omzet zonder marge. GA4 zonder value is een scorebord zonder punten.",
+      text: "Mijn volgorde: shop en meting eerst, ads later. Per product telt de waarde mee, anders optimaliseer je op omzet zonder marge. GA4 zonder value is een scorebord zonder punten.",
     },
     {
       type: "h2",
