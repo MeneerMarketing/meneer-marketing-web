@@ -36,7 +36,7 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
   "remarketing-zonder-stalken":
     "Bezoekers terugbrengen zonder irritatie. Je leert: frequentie, segmenten en creatives die remarketing wél laten renderen.",
   "bestrest-matrassen-eigen-marketingplan":
-    "Twee matrassen, één generieke funnel. Je leert: waarom BestRest per productlijn SEO, mail en ads kreeg en wat dat opleverde.",
+    "Twee matrassen, één generieke funnel. Je leert: waarom elke productlijn eigen SEO, mail en ads verdient en wat dat oplevert.",
   "broad-match-google-ads-verrassingsbox":
     "Broad match is geen strategie, het is verrassing. Je leert: welke zoektermen je geld stelen en hoe je match types weer onder controle krijgt.",
   "google-business-profile-spookhuis":
@@ -50,7 +50,7 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
   "ai-zoek-vindbaarheid-chatgpt":
     "Klanten vragen ChatGPT, niet Google. Je leert: hoe AI-antwoorden bronnen kiezen en wat je site technisch en inhoudelijk nodig heeft.",
   "seo-eerst-dan-ads":
-    "Ads op een zwak fundament zijn dure pleisters. Je leert: de volgorde van SkinComplete (SEO en mail vóór paid) en waarom die loont.",
+    "Ads op een zwak fundament zijn dure pleisters. Je leert: SEO en mail vóór paid, en waarom die volgorde loont.",
   "b2b-verkopen-via-shopify":
     "B2B via mail en telefoon schaalt niet. Je leert: hoe een Shopify-portaal salons en zakelijke klanten self-service geeft.",
   "shopify-performance-roas":

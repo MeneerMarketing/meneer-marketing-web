@@ -11,7 +11,7 @@ export const CASE_SEO: Record<string, CaseSeoEntry> = {
   skincomplete: {
     title: "Case SkinComplete | B2B-portaal & SEO vóór ads | Meneer Marketing",
     description:
-      "Salons bestelden om 2 uur 's nachts via mail. Custom Shopify, B2B-portaal en mailflows. Organisch vóór paid. Geen gok met adsbudget.",
+      "Salons bestelden om 2 uur 's nachts via mail. Custom Shopify, B2B-portaal en mailflows. Organisch vóór paid. Ads pas met bewijs.",
     publishedAt: "2024-09-01",
     dateModified: "2026-03-15",
   },
@@ -25,7 +25,7 @@ export const CASE_SEO: Record<string, CaseSeoEntry> = {
   "hills-pilates": {
     title: "Case Hills Pilates | site, app & mail in één lijn | Meneer Marketing",
     description:
-      "Lessen, mails en boekingen in losse tools. Website, boekingsapp en automatisering from scratch. Geen WhatsApp-planning meer.",
+      "Lessen, mails en boekingen in losse tools. Website, boekingsapp en automatisering from scratch. Planning centraal, niet via WhatsApp.",
     publishedAt: "2025-06-01",
     dateModified: "2026-05-01",
   },

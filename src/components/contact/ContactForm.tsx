@@ -28,7 +28,7 @@ const ONDERWERPEN = [
 ] as const;
 
 const COACH_BY_ONDERWERP: Record<string, string> = {
-  "": "Vertel het gewoon. Geen salespitch nodig. Ik lees alles zelf.",
+  "": "Vertel het gewoon. Salespitch mag weg. Ik lees alles zelf.",
   intake: "Kennismaken? Top. Hoe concreter je bent, hoe sneller we schakelen.",
   strategie: "Prioriteit scherp? Top. Vertel waar je tegenaan loopt.",
   "web-shop": "Website, Shopify of portaal? Stuur je URL mee als je die hebt.",
@@ -65,7 +65,7 @@ export function ContactForm() {
   const coachLine = COACH_BY_ONDERWERP[form.onderwerp] ?? COACH_BY_ONDERWERP[""]!;
   const messageLength = form.bericht.trim().length;
   const clarityHint = useMemo(() => {
-    if (messageLength === 0) return "Nog leeg. Geen stress, maar ik kan niks lezen wat er niet staat.";
+    if (messageLength === 0) return "Nog leeg. Rustig, maar ik kan niks lezen wat er niet staat.";
     if (messageLength < 40) return "Kort. Kan, maar iets meer context helpt mij sneller schakelen.";
     if (messageLength < 140) return "Prima start. URL of cijfer erbij maakt het nóg scherper.";
     return "Dit leest als iemand die weet wat hij wil. Meneer-approved.";
@@ -309,7 +309,7 @@ export function ContactForm() {
 
       <div className="mt-auto flex flex-col gap-3 border-t border-slate-100 pt-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xs text-slate-500">
-          Direct naar info@meneermarketing.nl. Geen CRM die je later stalkt.
+          Direct naar info@meneermarketing.nl. Jouw mail, geen CRM die later stalkt.
         </p>
         <button
           type="submit"

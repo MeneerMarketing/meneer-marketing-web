@@ -10,7 +10,7 @@ const LOCAL_SUB_BY_CATEGORY: Record<
   "google-ads": [
     "{base} In {city} adverteren Randstad-bureaus vaak op jouw regio. {kw} met landings die lokaal vertrouwen wekken wint van generieke campagnes.",
     "{base} Zoektermen in {city} zijn soms goedkoper dan in Amsterdam. Maar message match en snelheid moeten wél kloppen.",
-    "{base} Ik beheer accounts voor MKB in {city}{region}. Geen white-label agency die je stad alleen als targeting ziet.",
+    "{base} Ik beheer accounts voor MKB in {city}{region}. Direct, niet via een white-label agency die je stad alleen als targeting ziet.",
   ],
   seo: [
     "{base} Lokaal ranken in {city} vraagt meer dan je adres in de footer. GBP, reviews en pagina's die {kw} echt beantwoorden.",
@@ -72,7 +72,7 @@ export function withSeoLandingLocation(
 
   const localSubTemplates = isApeldoorn
     ? [
-        `${page.subheadline} Ik zit in Apeldoorn. Geen bureau op afstand dat de Veluwe alleen van de A1 kent. ${page.primaryKeyword} pak ik aan met lokale context én dezelfde custom build en campagnes als voor SkinComplete en BestRest.`,
+        `${page.subheadline} Ik zit in Apeldoorn. Lokaal, niet een bureau op afstand dat de Veluwe alleen van de A1 kent. ${page.primaryKeyword} pak ik aan met lokale context, custom build en campagnes die bij jouw marge passen.`,
         `${page.subheadline} Thuisbasis Apeldoorn, Veluwe, Gelderland. ${page.primaryKeyword} met cijfers open en een plan dat je begrijpt.`,
         `${page.subheadline} Vanuit Apeldoorn werk ik met MKB dat resultaat wil zien, geen maandrapport met groene pijltjes. ${page.primaryKeyword} included.`,
       ]
@@ -110,7 +110,7 @@ export function withSeoLandingLocation(
     visualCaption:
       page.visualCaption ??
       pick(slugKey, [
-        `Zo pakken we ${page.primaryKeyword} aan voor ondernemers rond ${city}.`,
+        `Zo pak ik ${page.primaryKeyword} aan voor ondernemers rond ${city}.`,
         `${page.primaryKeyword} in ${city}: plan op maat, geen template.`,
         `Illustratie bij ${keyword}. Lokaal vertrouwen, technisch scherp.`,
       ], "visual-cap-city"),

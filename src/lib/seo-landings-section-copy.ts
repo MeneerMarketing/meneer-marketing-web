@@ -42,7 +42,7 @@ const DELIVERABLES_HEADINGS = [
 const PROCESS_INTROS = [
   "Een volgorde die je bankrekening snapt.",
   "Geen twaalf-stappen-framework. Wel een plan dat klopt.",
-  "Zo werk ik. Geen verrassingen achteraf.",
+  "Zo werk ik. Heldere scope, geen verrassingen achteraf.",
   "Stappen die ik echt doorloop, niet marketingtaal.",
   "Volgorde die past bij {kw}, niet bij een template.",
 ] as const;

@@ -10,9 +10,9 @@ const META_DESC_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
     "Eerst site en tracking, dan Search of Shopping op koopintentie.",
     "Budget naar koopintentie, niet naar 'gratis' zoektermen. Landings die converteren.",
     "Wekelijks bijsturen op marge, niet op impressies.",
-    "Broad match zonder plan is een verrassingsbox. Dat fixen we eerst.",
+    "Broad match zonder plan is een verrassingsbox. Dat fix ik eerst.",
     "Performance Max werkt alleen met schone feeds en duidelijke doelen.",
-    "SkinComplete-gedachte: SEO en site stonden vóór opschalen.",
+    "SEO en site eerst, dan opschalen. Die volgorde spaart adsgeld.",
     "Remarketing met grenzen. Herkenning zonder stalken.",
     "Breakeven vóór budget omhoog. Anders vermenigvuldig je alleen je problemen.",
   ],
@@ -70,7 +70,7 @@ const META_DESC_MIDDLES: Record<SeoLandingCategory, readonly string[]> = {
 
 const META_DESC_CLOSERS = [
   "Eerlijk advies van Meneer Marketing.",
-  "SkinComplete en BestRest als referentie waar het past.",
+  "Cases en echte trajecten als referentie waar het past.",
   "Intake vaak binnen een week.",
   "Retainer alleen met een duidelijk plan.",
   "Eén aanspreekpunt. Jij belt mij, niet een keten.",

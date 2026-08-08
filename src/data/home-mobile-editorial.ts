@@ -123,7 +123,7 @@ export const HOME_MOBILE_CHAPTER_BOUWEN: MobileChapter = {
   hotTake:
     "Gekochte templates en page builders zijn als een pak van de Hema. Past, maar niemand onthoudt je naam.",
   inlineProof:
-    "SkinComplete: custom Shopify, B2B-portaal en e-mailmarketing from scratch.",
+    "Custom Shopify, B2B-portaal en e-mailmarketing from scratch.",
   href: "/bouwen",
   linkLabel: "Meer over bouwen",
   pillarId: "bouwen",
@@ -138,7 +138,7 @@ export const HOME_MOBILE_CHAPTER_VINDBAARHEID: MobileChapter = {
   hotTake:
     "Google verandert constant. Ik ook. Daarom win je van concurrenten die SEO al drie jaar niet hebben bijgewerkt.",
   inlineProof:
-    "SkinComplete domineerde organisch met landingspagina's op de vragen die salons echt stellen.",
+    "Organisch domineren met landingspagina's op de vragen die klanten echt stellen.",
   href: "/vindbaarheid",
   linkLabel: "Meer over Google SEO",
   pillarId: "vindbaarheid",
@@ -154,7 +154,7 @@ export const HOME_MOBILE_CHAPTER_CAMPAGNES: MobileChapter = {
   hotTake:
     "Een campagne zonder tracking is als autorijden met dichte ogen. Leuk tot de eerste bocht.",
   inlineProof:
-    "BestRest: eigen strategie per product, geen generieke funnel.",
+    "Eigen strategie per product, geen generieke funnel.",
   href: "/campagnes",
   linkLabel: "Meer over campagnes",
   pillarId: "campagnes",

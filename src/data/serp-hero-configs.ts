@@ -76,12 +76,12 @@ export const SEO_SERP: SerpHeroConfig = {
     ],
     [
       { url: "dropship-tips.nl", title: "Meer traffic zonder ads", snippet: "10 hacks uit 2019..." },
-      { url: "meneermarketing.nl", title: "Organisch groeien · MeneerMarketing", snippet: "SkinComplete domineerde eerst SEO. Ads kwamen pas later.", isYou: true },
+      { url: "meneermarketing.nl", title: "Organisch groeien · MeneerMarketing", snippet: "Eerst SEO domineren. Ads komen pas later.", isYou: true },
       { url: "concurrent-f.nl", title: "Webshop marketing tips", snippet: "Meer volgers = meer omzet? Niet echt." },
     ],
     [
       { url: "shopify-apps.nl", title: "SEO app installeren", snippet: "Plugin lost alles op. Spoiler: nee." },
-      { url: "meneermarketing.nl", title: "Shopify SEO · MeneerMarketing", snippet: "Structuur, snelheid, content. Geen template-truc.", isYou: true },
+      { url: "meneermarketing.nl", title: "Shopify SEO · MeneerMarketing", snippet: "Structuur, snelheid, content. Custom, geen template-truc.", isYou: true },
       { url: "concurrent-g.nl", title: "Shopify marketing", snippet: "Ads first, SEO later..." },
     ],
     [
@@ -115,7 +115,7 @@ export const GOOGLE_ADS_SERP: SerpHeroConfig = {
     ],
     [
       { url: "sea-generiek.nl", title: "SEA totaalpakket", snippet: "Google en Bing. Zelfde aanpak voor iedereen.", isAd: true },
-      { url: "meneermarketing.nl", title: "SEA met meetplan · MeneerMarketing", snippet: "ROAS en CAC scherp. Geen gokken met je budget.", isYou: true, isAd: true },
+      { url: "meneermarketing.nl", title: "SEA met meetplan · MeneerMarketing", snippet: "ROAS en CAC scherp. Budget met plan, geen gokwerk.", isYou: true, isAd: true },
       { url: "concurrent-c.nl", title: "Online adverteren", snippet: "Account aan, budget erin, hopen..." },
     ],
     [

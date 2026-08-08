@@ -329,7 +329,7 @@ export function computeGrowthTier(score: number): GrowthTier {
       id: "rocket",
       label: "Klaar om te schalen",
       body: "Je fundament is sterk. Nu gaat het om scherpe keuzes en gas geven waar het rendeert.",
-      quip: "SkinComplete begon met SEO. Ads kwamen pas toen organisch al verkocht.",
+      quip: "Begin met SEO. Ads komen pas als organisch al verkoopt.",
     };
   }
   if (score >= 68) {
@@ -544,10 +544,10 @@ export function getMeneerCoachLine(
     return "Soepel proces = sneller groeien. Rommelige processen = duurder adverteren.";
   }
   if (step === "diensten") {
-    return "Vink aan wat je al doet. Geen vaktaal nodig. Als je het herkent, is het goed.";
+    return "Vink aan wat je al doet. Gewone taal volstaat. Als je het herkent, is het goed.";
   }
   if (step === "route") {
-    return "Dit is je scan. De sessie met mij maakt het concreet met jouw cijfers. Geen gokken.";
+    return "Dit is je scan. De sessie met mij maakt het concreet met jouw cijfers. Dan gok je niet meer.";
   }
   return "Elk antwoord telt mee in je groeikracht. Rechts zie je live wat je score doet.";
 }

@@ -41,7 +41,7 @@ export const HOME_ABOUT_MENEER_STRATEGY_OUTCOME = {
   eyebrow: "Voorgestelde strategie",
   exampleLabel: "Voorbeeld",
   title: "Influencer + UGC",
-  body: "Zo kan een keuze eruitzien na ons gesprek. Geen standaardpakket: bij jou bepalen we wat past. En ja, dit regel ik ook, niet alleen het plan.",
+  body: "Zo kan een keuze eruitzien na ons gesprek. Op maat: bij jou bepaal ik wat past. En ja, dit regel ik ook, niet alleen het plan.",
   previewCaption: "Illustratie · één mogelijke mix na intake",
 } as const;
 
@@ -65,7 +65,7 @@ export const HOME_ABOUT_MENEER = {
   eyebrow: "Wie zit er achter dit?",
   title: "Van code schrijven naar bedrijven laten groeien.",
   intro:
-    "Ik begon als applicatieontwikkelaar. Inmiddels zit ik al twaalf jaar in webdesign en marketing. Het leukste? Samen met jou uitzoeken wat écht werkt. Geen standaard pakket van de plank. Wel een plan waar we allebei achter staan.",
+    "Ik begon als applicatieontwikkelaar. Inmiddels zit ik al twaalf jaar in webdesign en marketing. Het leukste? Samen met jou uitzoeken wat écht werkt. Op maat, niet van de plank. Wel een plan waar jij en ik allebei achter staan.",
   journey: [
     {
       id: "dev",

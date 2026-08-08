@@ -14,8 +14,8 @@ type CampagnesVisualSize = "mobile" | "desktop";
 
 export const CAMPAGNES_CHANNEL_BUBBLES: Record<Channel, string> = {
   google:
-    "Klein testen. Verkoopt het? Budget erbij. Verkoopt het niet? Uit. Geen gokken met jouw geld.",
-  meta: "Instagram én Facebook. Eén plan. Geen losse eilandjes waar budget in verdwijnt.",
+    "Klein testen. Verkoopt het? Budget erbij. Verkoopt het niet? Uit. Jouw geld verdient een plan.",
+  meta: "Instagram én Facebook. Eén plan. Budget blijft in de funnel, niet op eilandjes.",
 };
 
 interface HomeCampagnesVisualProps {

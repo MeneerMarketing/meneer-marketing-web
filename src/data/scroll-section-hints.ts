@@ -15,17 +15,17 @@ export const SCROLL_SECTION_HINTS: Readonly<Record<string, string>> = {
   services: "Mijn kantoor. Klik rond, zie wat ik bouw en fix.",
   "services-heading": "Mijn kantoor. Klik rond, zie wat ik bouw en fix.",
   "home-ideal-route-heading":
-    "De route. Geen funnel uit 2018, wel wat echt converteert.",
+    "De route. Wat echt converteert, niet een funnel uit 2018.",
   "home-about-meneer-title":
     "Over mij. Twaalf jaar online, nul keer 'even snel een template'.",
   "home-proof-heading":
-    "Cases. Geen stockfoto-handdruk, wel shops die echt draaien.",
+    "Cases. Shops die echt draaien, geen stockfoto-handdruk.",
   "home-why-meneer-heading":
     "Waarom ik? Omdat je geen tiende bureau nodig hebt dat scope verschuift.",
   "even-rechtzetten-heading":
     "Mythes. LinkedIn zegt veel. Ik zeg wat klopt.",
   "insights-heading":
-    "Kennisbank. Alles wat ik weet, gratis. Geen paywall op common sense.",
+    "Kennisbank. Alles wat ik weet, gratis. Common sense zonder paywall.",
   "home-pillars-strip-heading":
     "Vijf blokken. Strategie tot behoud. Tik door naar het stuk dat bij jou past.",
   "home-cta": "Afsluiter. Waar zit jouw groei? Vertel het, ik reageer zelf.",
@@ -51,7 +51,7 @@ export const SCROLL_SECTION_HINTS: Readonly<Record<string, string>> = {
   "mobile-myth-heading":
     "Even rechtzetten. Swipe. Influencers liegen soms, ik niet (vaak).",
   "mobile-pillars-strip-heading":
-    "Vijf blokken. Waar je start bepaalt de volgorde. Geen alles-tegelijk-plan.",
+    "Vijf blokken. Waar je start bepaalt de volgorde. Eén focus, geen alles-tegelijk.",
   "mobile-funfacts-heading":
     "Weetjes. Nutteloos? Misschien. Grappig? Zeker weten.",
   "mobile-cta": "Laatste stop. Plan een gesprek of mail. Ik bijt niet.",

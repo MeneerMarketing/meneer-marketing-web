@@ -14,7 +14,7 @@ const PAIN_POINTS = [
     paragraphs: [
       "Je website bij bureau A, ads bij bureau B, SEO bij freelancer C. Niemand kent het geheel en jij bent de projectmanager. In WhatsApp-groepen, niet achter je eigen werk.",
       "Iedere partij optimaliseert z'n eigen stukje. Ads wijzen naar landingspagina's die traag zijn. SEO schrijft teksten die sales niet herkent. Content past niet bij wat Meta Ads belooft. Jij regelt wie wat doet, terwijl je bedrijf doorloopt.",
-      "Dat patroon zie ik steeds opnieuw: pas als één iemand strategie, bouw en campagnes bewaakt, gaat het echt vooruit. Geen losse eilanden. Wel één plan waar alles aan hangt.",
+      "Dat patroon zie ik steeds opnieuw: pas als één iemand strategie, bouw en campagnes bewaakt, gaat het echt vooruit. Eén plan waar alles aan hangt, geen losse eilanden.",
     ],
     visual: "team" as const,
   },
@@ -26,7 +26,7 @@ const PAIN_POINTS = [
     paragraphs: [
       "Templates en page builders lijken goedkoop. Tot je groeit. Dan botsen plugins, wordt alles traag en moet je alsnog opnieuw beginnen. Met de rekening van alles wat je al betaald had.",
       "Custom checkout? B2B-prijzen? Koppeling met je CRM of voorraad? Half gebeurt het met workarounds, half niet. Je zit vast in code die drie freelancers voor je hebben gestapeld. Niemand durft meer te raken.",
-      "Ik bouw websites en shops from scratch. Geen plafond, geen template-dialect. Wel een fundament dat meegroeit als je ads opschaalt, je assortiment verdubbelt of je een B2B-portaal nodig hebt.",
+      "Ik bouw websites en shops from scratch. Custom code zonder template-plafond. Wel een fundament dat meegroeit als je ads opschaalt, je assortiment verdubbelt of je een B2B-portaal nodig hebt.",
     ],
     visual: "template" as const,
   },
