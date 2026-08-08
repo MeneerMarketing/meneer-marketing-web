@@ -73,10 +73,10 @@ export const META_ADS_BUREAU: SeoLandingPage = {
       body: "Winnaars krijgen gas. Verliezers stoppen. Google en Meta blijven één verhaal vertellen.",
     },
   ],
-  proofTitle: "Creators plus conversie",
+  proofTitle: "Creatives plus conversie",
   proofBody:
-    "Bij SkinComplete draaide Meta pas hard toen landings en UGC klopten. Views zijn leuk. Orders zijn het doel. BestRest vraagt per productlijn een andere boodschap. Daarom beheer ik zelf, niet via een boost-knop en hoop.",
-  proofCase: "SkinComplete",
+    "Meta draait pas hard als landings, tracking en creatives op één lijn zitten. Ik start met marge-check en pixel-events, test twee tot drie creatives tegen één scherpe landing, en stuur wekelijks bij op leads en orders. Views zijn bijzaak.",
+  proofCase: "Meta-funnel traject",
   hotTake: {
     label: "Heet take",
     body: "Een Meta Ads bureau dat landingspagina's niet mag aanraken, verkoopt dopamine. Omzet zit in de klik ná de ad.",
@@ -130,10 +130,10 @@ export const META_ADS_BUREAU: SeoLandingPage = {
       title: "Waarom Facebook en Instagram één plan verdienen",
       paragraphs: [
         "Je zoekt een Facebook Ads bureau of een Instagram Ads specialist. In de praktijk is het dezelfde Ads Manager, dezelfde pixel, dezelfde creatives-pipeline. Apart inkopen is dubbel werk en twee verhalen.",
-        "Ik start bij je landingspagina en je marge. Als de belofte in de ad niet op de pagina terugkomt, stop ik liever de campagne dan dat we views kopen voor niks. Omzet zit ná de klik.",
+        "Ik start bij je landingspagina en je marge. Als de belofte in de ad niet op de pagina terugkomt, stop ik liever de campagne dan dat ik views koop voor niks. Omzet zit ná de klik.",
         "Daarna: UGC of sterke creatives, scherpe targeting, wekelijkse rotatie. Wat wint krijgt budget. Wat faalt stopt. Simpel, meetbaar, onder één aanspreekpunt.",
-        "SkinComplete liet zien dat Meta pas hard draait als shop, bewijs en creatives kloppen. BestRest vraagt per product een andere hook. Generieke feed-ads negeren dat verschil.",
-        "Wil je alleen bereik en een mooi rapport? Dan ben ik te streng. Wil je leads of orders uit Instagram en Facebook? Dan bouwen we een funnel, geen roulette.",
+        "Product en prijs bepalen de hook. Een discovery-product vraagt ander bewijs dan iets met hoge zoekintentie. Ik pas creatives en landings per aanbod aan, niet één generieke feed-ad voor alles.",
+        "Wil je alleen bereik en een mooi rapport? Dan ben ik te streng. Wil je leads of orders uit Instagram en Facebook? Dan bouw ik een funnel met meetbare stappen.",
       ],
     },
     deepDive: {

@@ -73,8 +73,8 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
   ],
   proofTitle: "Eerst pagina, dan budget",
   proofBody:
-    "BestRest en SkinComplete: eerst pagina's die converteren, dan pas ads hard aanzetten. Anders verbrand je geld op een lek. Een landing page laten maken is acquisitie-infrastructuur, geen los designklusje.",
-  proofCase: "BestRest",
+    "Eerst pagina's die converteren, dan pas ads hard aanzetten. Anders verbrand je geld op een lek. Een landing page laten maken is acquisitie-infrastructuur, geen los designklusje.",
+  proofCase: "Pagina vóór budget",
   hotTake: {
     label: "Heet take",
     body: "Een landing page laten maken in Canva en dan drieduizend euro in ads pompen is een kunstproject, geen marketing.",
@@ -129,9 +129,9 @@ export const LANDING_PAGE_LATEN_MAKEN: SeoLandingPage = {
       paragraphs: [
         "Je zoekt iemand voor een landing page laten maken omdat je ads klikken trekken en je site ze laat vallen. Het verschil zit zelden in nog een animatie. Het zit in één belofte, één CTA en snelheid die mobiel verdraagt.",
         "Ik bouw from scratch: copy, structuur, code, tracking. De ad belooft X. De pagina bewijst X. Geen menu-rondleiding, geen blog-sidebar, geen 'bekijk ook onze vacatures'.",
-        "Bij SkinComplete en BestRest zie je hetzelfde patroon: landings die een vraag of product serieus nemen, daarna pas budget omhoog. Ads zonder landing is een emmer met een gat.",
+        "Het patroon is steeds hetzelfde: landings die een vraag of product serieus nemen, daarna pas budget omhoog. Ads zonder landing is een emmer met een gat.",
         "SEO mag meeliften. Een goede landing beantwoordt een intentie zo helder dat Google én bezoekers er iets aan hebben. Ads-first is prima. Dunne doorway-pagina's niet.",
-        "Wil je een Canva-pagina met je logo? Dan is er goedkopere hulp. Wil je een pagina die CPA omlaag trekt? Dan bouwen we hem alsof elke klik geld kost. Want dat doet hij.",
+        "Wil je een Canva-pagina met je logo? Dan is er goedkopere hulp. Wil je een pagina die CPA omlaag trekt? Dan bouw ik hem alsof elke klik geld kost. Want dat doet hij.",
       ],
     },
     deepDive: {

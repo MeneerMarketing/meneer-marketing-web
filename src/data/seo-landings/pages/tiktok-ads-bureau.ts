@@ -72,10 +72,10 @@ export const TIKTOK_ADS_BUREAU: SeoLandingPage = {
       body: "Klein testen, winnaars gas, nieuwe hooks klaarzetten vóór fatigue. Sentiment is geen KPI.",
     },
   ],
-  proofTitle: "Creators en conversie",
+  proofTitle: "Hooks en conversie",
   proofBody:
-    "UGC en short video zitten in mijn campagne-aanpak, niet als trucje. SkinComplete-achtige merken winnen met bewijs in beeld. BestRest vraagt per productlijn een andere hook. Views zijn bijzaak. Orders tellen.",
-  proofCase: "SkinComplete",
+    "UGC en short video zitten in mijn campagne-aanpak. Eerste twee seconden bepalen of iemand blijft. Ik test hooks tegen één mobiele landing en stuur bij op kosten per lead of order. Views zijn bijzaak. Orders tellen.",
+  proofCase: "Short-video tests",
   hotTake: {
     label: "Heet take",
     body: "TikTok Ads met je CEO die in een pak een product vasthoudt is drie cent per view en nul cent per verkoop.",
@@ -94,7 +94,7 @@ export const TIKTOK_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Wat is het verschil met Meta Ads?",
       answer:
-        "Format en cultuur verschillen. Creatives overlap vaak. Strategie en meetlat houden we hetzelfde: conversie, niet alleen bereik.",
+        "Format en cultuur verschillen. Creatives overlap vaak. Strategie en meetlat houd ik hetzelfde: conversie, niet alleen bereik.",
     },
     {
       question: "Heb ik influencers nodig?",
@@ -114,7 +114,7 @@ export const TIKTOK_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Moet mijn site eerst klaar zijn?",
       answer:
-        "Vaak wel. Trage of verwarrende landings maken TikTok duur. Soms starten we micro-tests én een landing-fix tegelijk.",
+        "Vaak wel. Trage of verwarrende landings maken TikTok duur. Soms start ik micro-tests én een landing-fix tegelijk.",
     },
   ],
   ctaTitle: "TikTok proberen?",
@@ -130,9 +130,9 @@ export const TIKTOK_ADS_BUREAU: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een TikTok Ads bureau omdat je hoort dat short video scoort. Klopt, als hooks, creators en landings kloppen. Corporate polish voelt op TikTok als een verkeerde taal.",
         "Ik start bij fit: past je product in de feed, heb je marge voor testen, is de landing mobiel genoeg? Zonder die check koop je views voor een lekke emmer.",
-        "UGC en creators leveren content die mag adverteren. SkinComplete-achtige merken winnen met bewijs in beeld. BestRest vraagt per lijn een andere belofte.",
+        "UGC en creators leveren content die mag adverteren. Bewijs in beeld wint vaker dan boardroom-polish. Per product bepaal ik welke hook en welke belofte in de eerste seconden thuishoren.",
         "Meta en TikTok delen vaak creatives. Google vangt intentie. Onder één plan voorkom je drie verhalen en drie facturen die elkaar tegenspreken.",
-        "Wil je alleen viral? Dan ben ik te streng. Wil je short video die leads of orders oplevert? Dan bouwen we tests, landings en rotatie als acquisitie.",
+        "Wil je alleen viral? Dan ben ik te streng. Wil je short video die leads of orders oplevert? Dan bouw ik tests, landings en rotatie als acquisitie.",
       ],
     },
     deepDive: {
