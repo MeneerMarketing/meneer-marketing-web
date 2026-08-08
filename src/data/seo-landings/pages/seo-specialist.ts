@@ -75,8 +75,8 @@ export const SEO_SPECIALIST: SeoLandingPage = {
   ],
   proofTitle: "12 jaar, nog steeds zelf in de code",
   proofBody:
-    "Van lokale mkb tot shops met B2B: ik overleefde core updates omdat ik pagina's bouw die mensen écht helpen. SkinComplete groeide eerst organisch op salonvragen die klanten stellen. Pas daarna gingen ads hard. Die volgorde ken ik omdat ik hem zelf heb uitgevoerd.",
-  proofCase: "SkinComplete",
+    "Van lokale mkb tot shops met B2B: ik overleefde core updates omdat ik pagina's bouw die mensen écht helpen. Eerst organisch op vragen die klanten stellen. Pas daarna ads hard. Die volgorde ken ik omdat ik hem zelf heb uitgevoerd.",
+  proofCase: "Bouwen + ranken",
   hotTake: {
     label: "Heet take",
     body: "Een SEO specialist die geen code kan lezen, is een weerman die door een gesloten raam kijkt.",
@@ -138,7 +138,7 @@ export const SEO_SPECIALIST: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een SEO specialist omdat je wilt dat Google de juiste mensen naar je stuurt. Het verschil zit zelden in nog een keywordlijst. Het zit in pagina's die één zoekvraag scherper beantwoorden dan de top 10, technisch snel genoeg blijven staan, en gekoppeld zijn aan wat je verkoopt.",
         "Ik schrijf de copy, bouw de landingspagina, zet schema erop en publiceer. Geen doorgeefluik naar een junior of een externe freelancershop. Als iets in Search Console piept, zie ik het zelf en fix ik het zelf.",
-        "SkinComplete groeide eerst organisch op salonvragen die mensen echt typen. Pas daarna gingen ads hard. Die volgorde spaart budget: je betaalt niet voor verkeer naar een site die nog niet klaar is om te converteren.",
+        "Eerst organisch op vragen die mensen echt typen. Pas daarna ads hard. Die volgorde spaart budget: je betaalt niet voor verkeer naar een site die nog niet klaar is om te converteren.",
         "Twaalf jaar Google betekent core updates meemaken, lokale mkb én shops. Nog steeds zelf in Search Console en in de code. Dat is mijn definitie van specialist: iemand die het werk kan doen, niet alleen kan beschrijven.",
         "Wil je alleen een rapport voor je board? Dan ben ik de verkeerde. Wil je pagina's live, meetbaar verkeer en een aanspreekpunt dat ook uitvoert? Dan praten we verder over scope en volgorde.",
       ],

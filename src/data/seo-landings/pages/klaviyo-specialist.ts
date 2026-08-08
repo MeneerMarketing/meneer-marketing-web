@@ -73,8 +73,8 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
   ],
   proofTitle: "Retentie is groei",
   proofBody:
-    "Herhalende klanten zijn goedkoper dan ads. Bij SkinComplete stonden mail en flows vóór ads hard gingen. Klaviyo is je vangnet: elke acquisitie-euro werkt harder als opvolging klopt.",
-  proofCase: "SkinComplete",
+    "Herhalende klanten zijn goedkoper dan ads. Mail en flows vóór ads hard gaan. Klaviyo is je vangnet: elke acquisitie-euro werkt harder als opvolging klopt.",
+  proofCase: "Flow-opbouw traject",
   hotTake: {
     label: "Heet take",
     body: "Een Klaviyo specialist die alleen templates importeert, installeert ruis, geen omzet.",
@@ -128,8 +128,8 @@ export const KLAVIYO_SPECIALIST: SeoLandingPage = {
       title: "Klaviyo specialist: vier flows die echt verdienen",
       paragraphs: [
         "Je zoekt een Klaviyo specialist omdat het platform alles kan en jij daardoor niks afmaakt. Herkenbaar. Ik start met vier flows die bijna elke serieuze Shopify-shop nodig heeft. Werkend. Meetbaar. Daarna pas fancy.",
-        "SkinComplete liet zien dat mail vóór hard ads acquisitie goedkoper maakt. Abandoned carts en post-purchase zijn geen nice-to-have. Het is geld dat al in je funnel zat.",
-        "Segmentatie voorkomt spam-gevoel. B2B via portal krijgt andere mail dan B2C. BestRest-achtige catalogi vragen productlijn-logica, geen één nieuwsbrief voor iedereen.",
+        "Mail vóór hard ads maakt acquisitie goedkoper. Abandoned carts en post-purchase zijn geen nice-to-have. Het is geld dat al in je funnel zat.",
+        "Segmentatie voorkomt spam-gevoel. B2B via portal krijgt andere mail dan B2C. Grote catalogi vragen productlijn-logica, geen één nieuwsbrief voor iedereen.",
         "Techniek hoort erbij: checkout-herstel, events, consent, deliverability. Mooie HTML in de spamfolder is theater.",
         "Wil je twintig templates geïmporteerd? Dan ben ik te streng. Wil je omzet per flow in het dashboard? Dan richten we Klaviyo in als groeimachine.",
       ],

@@ -74,7 +74,8 @@ export const GOOGLE_ADS_BEHEER: SeoLandingPage = {
   ],
   proofTitle: "Van audit naar groei",
   proofBody:
-    "Bij BestRest draait het om producten met verschillende marges. Dan wil je beheer dat per categorie nadenkt, niet één CPA voor alles.",
+    "Producten met verschillende marges vragen beheer dat per categorie nadenkt, niet één CPA voor alles.",
+  proofCase: "Marge per categorie",
   hotTake: {
     label: "Heet take",
     body: "Google Ads beheer is geen maandelijks rapport sturen. Het is elke week durven zeggen: deze campagne gaat uit.",
@@ -82,11 +83,11 @@ export const GOOGLE_ADS_BEHEER: SeoLandingPage = {
   faq: [
     {
       question: "Kan ik mijn eigen account houden?",
-      answer: "Ja. Je blijft eigenaar. Wij werken in jouw account met duidelijke rechten en overdracht als je ooit stopt.",
+      answer: "Ja. Je blijft eigenaar. Ik werk in jouw account met duidelijke rechten en overdracht als je ooit stopt.",
     },
     {
       question: "Hoe vaak sturen jullie bij?",
-      answer: "Wekelijks op actieve accounts. Bij kleiner budget kijken we wat past, maar slapen doen we niet op lopende campagnes.",
+      answer: "Wekelijks op actieve accounts. Bij kleiner budget kijk ik wat past, maar slapen doe ik niet op lopende campagnes.",
     },
     {
       question: "Wat als mijn site de bottleneck is?",
@@ -94,8 +95,9 @@ export const GOOGLE_ADS_BEHEER: SeoLandingPage = {
     },
   ],
   ctaTitle: "Account laten checken?",
-  ctaBody: "Stuur je situatie. Ik geef eerlijk aan waar het lekt en of beheer bij ons past.",
+  ctaBody: "Stuur je situatie. Ik geef eerlijk aan waar het lekt en of beheer bij mij past.",
   relatedSlugs: ["google-ads-bureau", "hoger-in-google", "website-laten-maken"],
   pillarSlug: "campagnes",
   pillarLabel: "Campagnes",
+  lockContent: true,
 };

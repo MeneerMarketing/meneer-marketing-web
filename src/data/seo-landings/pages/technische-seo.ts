@@ -74,8 +74,8 @@ export const TECHNISCHE_SEO: SeoLandingPage = {
   ],
   proofTitle: "Custom builds met SEO in de botten",
   proofBody:
-    "Ik bouw in Next.js en Shopify. Technische SEO zit in mijn code, niet in een checklist die ik uitbesteed. SkinComplete en meneermarketing.nl zelf: snelheid en structuur als basis, content erop.",
-  proofCase: "SkinComplete",
+    "Ik bouw in Next.js en Shopify. Technische SEO zit in mijn code, niet in een checklist die ik uitbesteed. Snelheid en structuur als basis, content erop.",
+  proofCase: "Techniek eerst",
   hotTake: {
     label: "Heet take",
     body: "Technische SEO door een bureau dat alleen WordPress-plugins kent, is een timmerman met alleen plakband.",
@@ -135,7 +135,7 @@ export const TECHNISCHE_SEO: SeoLandingPage = {
       paragraphs: [
         "Je zoekt technische SEO omdat content niet lijkt te werken. Vaak is de content niet het enige probleem. Google kan pagina's niet netjes crawlen, indexeren of snel genoeg tonen.",
         "Ik audit crawlbaarheid, canonicals, redirects, snelheid en schema. Daarna fix ik het in code. Next.js en Shopify ken ik van binnenuit, niet alleen van een checklist.",
-        "SkinComplete en custom builds laten zien: snelheid en structuur eerst, dan content die rankt. Omgekeerd stapel je blogs op een lekkend dak.",
+        "Snelheid en structuur eerst, dan content die rankt. Omgekeerd stapel je blogs op een lekkend dak.",
         "Core Web Vitals zijn geen nerddetail. Trage landings kosten SEO én ads. Elke seconde op mobiel is marge.",
         "Wil je alleen een PDF met 200 issues? Dan ben ik te praktisch. Wil je blockers weg en meetbare indexatie? Dan pakken we techniek als productiewerk.",
       ],

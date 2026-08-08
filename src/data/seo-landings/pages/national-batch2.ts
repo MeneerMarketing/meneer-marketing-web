@@ -150,7 +150,7 @@ export const LOKALE_SEO: SeoLandingPage = {
         "Je zoekt lokale SEO omdat klanten 'dienst + stad' typen of op Maps kijken wie dichtbij is. Wie daar niet staat, bestaat praktisch niet. Een landelijke homepage alleen lost dat zelden op.",
         "Ik zet Google Business Profile, NAP, reviews en regio-pagina's in één plan. Zo snapt Google waar je zit, wat je doet, en waarom iemand jou zou kiezen boven de zaak drie straten verder.",
         "Reviews zijn vertrouwen én een ranking-signaal. Recent en echt wint van oud en gekocht. Ik help met het proces, niet met trucjes die je account kunnen kosten.",
-        "Apeldoorn is thuisbasis. Ik ken lokale trajecten én landelijke builds zoals SkinComplete. Dezelfde standaard: unieke pagina's, schone techniek, meetbare volgende stap.",
+        "Apeldoorn is thuisbasis. Ik ken lokale trajecten én landelijke builds op custom sites en shops. Dezelfde standaard: unieke pagina's, schone techniek, meetbare volgende stap.",
         "Wil je alleen je adres vetgedrukt in de footer? Dat is geen lokale SEO. Wil je belletjes en routeaanvragen uit je eigen regio? Dan bouwen we de signalen die Maps en zoekers serieus nemen.",
       ],
     },
@@ -228,10 +228,10 @@ export const ZOEKMACHINE_OPTIMALISATIE: SeoLandingPage = {
   visual: "seo-serp",
   processTitle: "SEO die blijft staan",
   processSteps: processDefault,
-  proofTitle: "SkinComplete eerst organisch",
+  proofTitle: "Organisch eerst",
   proofBody:
-    "SkinComplete domineerde eerst SEO, daarna pas ads. Die volgorde is zoekmachine optimalisatie die zichzelf terugbetaalt.",
-  proofCase: "SkinComplete",
+    "Eerst SEO en site, daarna pas ads. Die volgorde is zoekmachine optimalisatie die zichzelf terugbetaalt.",
+  proofCase: "Organisch eerst",
   hotTake: {
     label: "Heet take",
     body: "Zoekmachine optimalisatie uitbesteden aan iemand die je site niet kan lezen in de broncode is een dure gok.",
@@ -308,7 +308,7 @@ export const PPC_BUREAU: SeoLandingPage = {
   processTitle: "PPC met controle",
   processSteps: processDefault,
   proofTitle: "Ads na SEO",
-  proofBody: "PPC werkt het best als je site al converteert. SkinComplete deed het in die volgorde. Scheelt je een fortuin aan leergeld.",
+  proofBody: "PPC werkt het best als je site al converteert. Die volgorde bespaart je een fortuin aan leergeld.",
   hotTake: {
     label: "Heet take",
     body: "Een PPC bureau dat alleen in het ads-dashboard leeft, is een piloot die nooit het vliegtuig inspecteert.",

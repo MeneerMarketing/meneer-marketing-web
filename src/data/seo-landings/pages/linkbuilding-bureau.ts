@@ -73,8 +73,8 @@ export const LINKBUILDING_BUREAU: SeoLandingPage = {
   ],
   proofTitle: "Kwaliteit boven kwantiteit",
   proofBody:
-    "Liever tien goede vermeldingen dan honderd spam-links. Bij content-zware trajecten (kennisbank, cases, SkinComplete-achtige expertise) werkt autoriteit samen met SEO en AI-vindbaarheid. Google is niet dom. Jij ook niet.",
-  proofCase: "SkinComplete",
+    "Liever tien goede vermeldingen dan honderd spam-links. Bij content-zware trajecten (kennisbank, cases, citeerbare expertise) werkt autoriteit samen met SEO en AI-vindbaarheid. Google is niet dom. Jij ook niet.",
+  proofCase: "Autoriteit opbouwen",
   hotTake: {
     label: "Heet take",
     body: "Een linkbuilding bureau dat garanties geeft op x backlinks, verkoopt je een penalty in termijnen.",
@@ -134,7 +134,7 @@ export const LINKBUILDING_BUREAU: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een linkbuilding bureau omdat rankings stagneren of omdat iemand je een pakket van vijftig links beloofde. Pakketten met garanties zijn vaak het risico, niet de oplossing.",
         "Ik begin bij de basis: snelle site, sterke pagina's, iets citeerbaars. Daarna outreach. Spam-PBN's skip ik. Echte vermeldingen proberen we wel.",
-        "Content marketing en AI-vindbaarheid overlappen. Wat mensen willen citeren, willen taalmodellen ook snappen. SkinComplete-achtige expertise helpt beide.",
+        "Content marketing en AI-vindbaarheid overlappen. Wat mensen willen citeren, willen taalmodellen ook snappen. Diepe expertise helpt beide.",
         "Interne links zijn onderschat. Autoriteit op je homepage die nergens naartoe stroomt, is verspilling.",
         "Wil je volume-rapporten met Domain Rating? Dan ben ik te kieskeurig. Wil je relevante autoriteit die blijft? Dan bouwen we assets en relaties.",
       ],

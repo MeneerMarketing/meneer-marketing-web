@@ -74,8 +74,8 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
   ],
   proofTitle: "Custom builds met performance in de botten",
   proofBody:
-    "Ik bouw sites die ads moeten dragen. Core Web Vitals zijn geen bijzaak. Op meneermarketing.nl en bij klanten als SkinComplete zit snelheid in de architectuur, niet in een laat pluginje.",
-  proofCase: "SkinComplete",
+    "Ik bouw sites die ads moeten dragen. Core Web Vitals zijn geen bijzaak. Snelheid zit in de architectuur, niet in een laat pluginje.",
+  proofCase: "Performance eerst",
   hotTake: {
     label: "Heet take",
     body: "Een cache-plugin op een zwaar theme is een pleister op een gebroken been.",
@@ -135,7 +135,7 @@ export const CORE_WEB_VITALS: SeoLandingPage = {
       paragraphs: [
         "Je zoekt Core Web Vitals verbeteren omdat Search Console rood is of omdat landings traag aanvoelen. Beide zijn genoeg reden. Google en je bezoeker zijn het eens: wachten is verliezen.",
         "Ik meet op URL's die geld verdienen. Daarna fix ik LCP, INP of CLS in je theme of Next.js. Cache-plugins helpen soms. Structurele bloat lossen ze zelden op.",
-        "Bij SkinComplete en custom builds zit performance in de architectuur. Ads opschalen op een trage site is water in een lekke emmer.",
+        "Performance zit in de architectuur. Ads opschalen op een trage site is water in een lekke emmer.",
         "Lighthouse is een lamp. Field data is de waarheid. We optimaliseren voor echte gebruikers op mobiel, niet voor een screenshot op desktop.",
         "Wil je alleen tips in een PDF? Dan ben ik te hands-on. Wil je meetbaar sneller en groener? Dan deployen we fixes in volgorde van impact.",
       ],

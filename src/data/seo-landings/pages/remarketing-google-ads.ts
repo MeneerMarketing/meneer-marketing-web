@@ -73,8 +73,8 @@ export const REMARKETING_GOOGLE_ADS: SeoLandingPage = {
   ],
   proofTitle: "E-commerce retentie",
   proofBody:
-    "Remarketing vangt twijfel op. Het vervangt geen goede productpagina of e-mailflow. Bij BestRest en shops met serieuze catalogi werkt dynamic remarketing pas als feed en PDP kloppen. Anders toon je de verkeerde matras op het verkeerde moment.",
-  proofCase: "BestRest",
+    "Remarketing vangt twijfel op. Het vervangt geen goede productpagina of e-mailflow. Dynamic remarketing werkt pas als feed en PDP kloppen. Anders toon je het verkeerde product op het verkeerde moment.",
+  proofCase: "Segmentatie traject",
   hotTake: {
     label: "Heet take",
     body: "Remarketing op je hele site zonder segmentatie is een megafoon in een bibliotheek.",
@@ -134,7 +134,7 @@ export const REMARKETING_GOOGLE_ADS: SeoLandingPage = {
       paragraphs: [
         "Je zoekt remarketing google ads omdat warm verkeer goedkoper voelt. Klopt, als je segmenteert. Zonder caps en uitsluitingen word je het merk dat mensen aan vrienden noemen als adblocker-reden.",
         "Ik bouw lijsten op fase: PDP, cart, converters eruit. Creatives die product of bezwaar raken. Frequentie onder controle.",
-        "Bij BestRest telt welke matras iemand zag. Dynamic remarketing zonder schone feed toont de verkeerde SKU. Dat is erger dan geen remarketing.",
+        "Bij catalogi met veel varianten telt welk product iemand zag. Dynamic remarketing zonder schone feed toont de verkeerde SKU. Dat is erger dan geen remarketing.",
         "E-mail en remarketing horen bij elkaar. Cart abandon vaak eerst mail, ads als tweede tap. Dubbel dezelfde korting overal is ruis.",
         "Wil je alleen 'zet remarketing aan'? Dat kan een toggle. Wil je CPA die daalt zonder merkschade? Dan bouwen we het als systeem.",
       ],

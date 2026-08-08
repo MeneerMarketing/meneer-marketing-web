@@ -32,7 +32,7 @@ export const DIGITAL_MARKETING_BUREAU: SeoLandingPage = {
   visual: "content-hub",
   processTitle: "Digital met één lijn",
   processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
+  proofTitle: "Eén lijn online",
   proofBody: "Digital marketing die werkt, ziet eruit als één verhaal van site tot ad.",
   hotTake: { label: "Heet take", body: "Een digital marketing bureau zonder code in huis, verkoopt je slides." },
   faq: [
@@ -70,7 +70,7 @@ export const ZOEKMACHINE_MARKETING: SeoLandingPage = {
   visual: "seo-serp",
   processTitle: "Zoekmachines domineren",
   processSteps: processDefault,
-  proofTitle: "SkinComplete-volgorde",
+  proofTitle: "Organisch vóór ads",
   proofBody: "Eerst organisch, dan ads. Zoekmachine marketing met een plan, niet met paniek.",
   hotTake: { label: "Heet take", body: "Zoekmachine marketing door twee bureaus is twee koks in één keuken. Chaos gegarandeerd." },
   faq: [
@@ -152,10 +152,8 @@ export const ECOMMERCE_SPECIALIST: SeoLandingPage = {
     { title: "Automatisering", body: "Minder handwerk, meer schaal." },
   ],
   visual: "webshop",
-  processTitle: "E-commerce end-to-end",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
-  proofBody: "Twee shops, twee strategieën. E-commerce is nooit one-size-fits-all.",
+  proofTitle: "Shop op maat",
+  proofBody: "Elke shop krijgt een eigen strategie. E-commerce is nooit one-size-fits-all.",
   hotTake: { label: "Heet take", body: "Een e-commerce specialist die Shopify niet kan aanpassen, is een coach zonder gym." },
   faq: [
     { question: "Verschil met e-commerce marketing?", answer: "Overlap. Specialist = meer techniek + uitvoering." },
@@ -192,7 +190,7 @@ export const WEBSHOP_MARKETING: SeoLandingPage = {
   visual: "webshop",
   processTitle: "Shop laten groeien",
   processSteps: processDefault,
-  proofTitle: "BestRest per product",
+  proofTitle: "Per productlijn",
   proofBody: "Webshop marketing per productlijn, niet één sop voor alles.",
   hotTake: { label: "Heet take", body: "Webshop marketing met alleen kortingscodes is een uitverkoop, geen strategie." },
   faq: [
@@ -322,9 +320,9 @@ export const SHOPIFY_THEME_LATEN_MAKEN: SeoLandingPage = {
   visual: "webshop",
   processTitle: "Theme dat schaalt",
   processSteps: processDefault,
-  proofTitle: "SkinComplete",
-  proofBody: "Custom theme + B2B + marketing. Dat is het niveau waar je naartoe wilt.",
-  proofCase: "SkinComplete",
+  proofTitle: "Custom theme traject",
+  proofBody: "Custom theme plus B2B plus marketing. Dat is het niveau waar je naartoe wilt.",
+  proofCase: "Theme build traject",
   hotTake: { label: "Heet take", body: "Een Shopify theme laten maken door iemand die alleen themes installeert, is een Ferrari-bestelling met fietswielen." },
   faq: [
     { question: "Verschil met shopify-expert?", answer: "Theme is onderdeel. Expert is het bredere traject." },

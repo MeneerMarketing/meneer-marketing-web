@@ -46,7 +46,7 @@ export const GOOGLE_ADS_SPECIALIST: SeoLandingPage = {
   visual: "google-ads",
   processTitle: "Google Ads met het volle plaatje",
   processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
+  proofTitle: "Marge per account",
   proofBody: "Verschillende shops, verschillende marges. Geen copy-paste specialist die elk account hetzelfde behandelt.",
   hotTake: { label: "Heet take", body: "Een Google Ads specialist die landings uitbesteedt, gokt met jouw budget." },
   faq: [
@@ -88,7 +88,7 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
   processTitle: "Zo pak ik uitbesteding aan",
   processSteps: processDefault,
   proofTitle: "Ads na fundament",
-  proofBody: "SkinComplete: eerst organisch en site, dan ads. Die volgorde bespaart je op uitbesteding die te vroeg begint.",
+  proofBody: "Eerst organisch en site, dan ads. Die volgorde bespaart je op uitbesteding die te vroeg begint.",
   hotTake: { label: "Heet take", body: "Google Ads uitbesteden aan iemand die je site nooit opent, is een duur experiment." },
   faq: [
     { question: "Wat kost uitbesteden?", answer: "Hangt af van markt en budget. Voorstel na intake, geen vaste pakketten op de site." },
@@ -212,9 +212,9 @@ export const SHOPIFY_WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   visual: "webshop",
   processTitle: "Shopify traject",
   processSteps: processDefault,
-  proofTitle: "SkinComplete",
-  proofBody: "B2B-portaal, marketing en vindbaarheid op Shopify. Dat is mijn referentie.",
-  proofCase: "SkinComplete",
+  proofTitle: "Shop + marketing",
+  proofBody: "B2B-portaal, marketing en vindbaarheid op Shopify. Dat is het niveau waar ik naartoe bouw.",
+  proofCase: "Shopify build traject",
   hotTake: { label: "Heet take", body: "Een Shopify webshop laten maken met alleen een theme installeren is een monteur zonder garage." },
   faq: [
     { question: "Verschil met webshop laten maken?", answer: "Zelfde intentie. Deze pagina is voor wie specifiek Shopify zoekt." },
@@ -301,9 +301,9 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
   visual: "seo-serp",
   processTitle: "SEO die rendeert",
   processSteps: processDefault,
-  proofTitle: "SkinComplete organisch eerst",
+  proofTitle: "Organisch eerst",
   proofBody: "SEO uitbesteden werkt als je partner kan bouwen én schrijven. Niet alleen het een of het ander.",
-  proofCase: "SkinComplete",
+  proofCase: "SEO uitbesteding traject",
   hotTake: { label: "Heet take", body: "SEO uitbesteden aan een bureau dat je site niet in code kan lezen, is een abonnement op teleurstelling." },
   faq: [
     { question: "Hoe snel resultaat?", answer: "Eerste signalen vaak 6-12 weken. Eerlijk gecommuniceerd." },
@@ -349,7 +349,7 @@ export const CRO_BUREAU: SeoLandingPage = {
   visual: "website-build",
   processTitle: "CRO die oplevert",
   processSteps: processDefault,
-  proofTitle: "BestRest & shops",
+  proofTitle: "Conversie op schaal",
   proofBody: "Elke procent conversie telt op schaal. CRO is de goedkoopste groei als je al verkeer hebt.",
   hotTake: { label: "Heet take", body: "Een CRO bureau dat je site niet aanraakt, verkoopt je inzichten die niemand uitvoert." },
   faq: [

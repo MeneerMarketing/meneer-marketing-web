@@ -74,8 +74,8 @@ export const SEO_AUDIT: SeoLandingPage = {
   ],
   proofTitle: "Bouwer + SEO",
   proofBody:
-    "Ik lees broncode. Audits zijn geen theoretische oefening. Wat ik vind bij SkinComplete-achtige shops of custom Next.js-sites, kan ik vaak zelf fixen. Diagnose en dokter in één.",
-  proofCase: "SkinComplete",
+    "Ik lees broncode. Audits zijn geen theoretische oefening. Wat ik vind bij Shopify-shops of custom Next.js-sites, kan ik vaak zelf fixen. Diagnose en dokter in één.",
+  proofCase: "Audit → fix traject",
   hotTake: {
     label: "Heet take",
     body: "Een SEO audit van iemand die niet kan bouwen, is een diagnose zonder dokter.",
@@ -136,7 +136,7 @@ export const SEO_AUDIT: SeoLandingPage = {
         "Je zoekt een SEO audit omdat rankings stagneren of omdat iemand je een dik rapport beloofde. Het rapport is niet het product. De prioriteitenlijst is het product.",
         "Ik kijk naar techniek én content. Alleen crawl errors fixen terwijl je dunne pagina's hebt, levert weinig. Alleen blogs terwijl LCP rood is, ook niet.",
         "Omdat ik bouw, lees ik code. Shopify theme, Next.js, redirects, schema. Wat ik vind, kan ik vaak zelf live zetten. Dat is het verschil met een pure adviseur.",
-        "SkinComplete-achtige trajecten laten zien: audit, fix, dan content en ads. Omgekeerd stapel je blogs op een lekkend dak.",
+        "Standaard traject: audit, fix, dan content en ads. Omgekeerd stapel je blogs op een lekkend dak.",
         "Wil je een score van 100 in een tool? Dat is theater. Wil je weten welke drie fixes deze maand verkeer of conversie raken? Dan auditen we zo.",
       ],
     },
