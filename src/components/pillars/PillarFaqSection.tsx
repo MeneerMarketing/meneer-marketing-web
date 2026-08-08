@@ -37,7 +37,7 @@ export function PillarFaqSection({
             Veelgestelde vragen over dit blok
           </h2>
           <p className={`mt-2 ${isDark ? "text-slate-400" : "text-mm-muted"}`}>
-            Kort en eerlijk. In een gesprek maken we het concreet voor jouw situatie.
+            Kort en eerlijk. In een gesprek maak ik het concreet voor jouw situatie.
           </p>
         </Reveal>
         <div className="mt-8">

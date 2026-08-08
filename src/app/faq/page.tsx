@@ -75,7 +75,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Ik heb een webshop. Kun je met Shopify uit de voeten?",
         answer:
-          "Shopify is de thuisbasis. Van maatwerkthema's tot complete B2B-portalen waar zakelijke klanten zelf bestellen tegen eigen prijzen. Dat soort systemen draaien dagelijks bij klanten. Dus ja, ruimschoots.",
+          "Shopify is de thuisbasis. Van custom themes tot complete B2B-portalen waar zakelijke klanten zelf bestellen tegen eigen prijzen. Dat soort systemen draaien dagelijks bij klanten. Dus ja, ruimschoots.",
       },
       {
         question: "Kan ik straks zelf teksten en foto's aanpassen?",
@@ -110,7 +110,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
           "Steeds meer mensen vragen ChatGPT of Gemini om advies in plaats van Google. Ik zorg dat jouw bedrijf in die antwoorden opduikt, technisch én inhoudelijk. Nieuw speelveld, nog weinig concurrentie. Wie nu instapt, heeft straks de voorsprong.",
       },
       {
-        question: "Garanderen jullie resultaat?",
+        question: "Garandeer je resultaat?",
         answer:
           "Ik garandeer eerlijk werk, meetbare rapportage en dat ik stop met dingen die niet werken. Posities of omzet garanderen kan niemand, wat verkopers ook beweren. Wel kun je sturen op data in plaats van op hoop. Dat is precies wat ik doe.",
       },
@@ -129,7 +129,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Hoe snel kan ik live?",
         answer:
-          "Een strakke landingspagina kan binnen enkele weken. Een maatwerkshop of platform vraagt meer tijd. In het voorstel staan mijlpalen die kloppen. Liever realistisch beloven dan achteraf sorry zeggen.",
+          "Een strakke landingspagina kan binnen enkele weken. Een custom shop of platform vraagt meer tijd. In het voorstel staan mijlpalen die kloppen. Liever realistisch beloven dan achteraf sorry zeggen.",
       },
       {
         question: "Hoe weet ik of het werkt?",

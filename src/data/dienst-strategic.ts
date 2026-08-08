@@ -1,5 +1,5 @@
 /**
- * Strategische boodschap per dienst: benadrukt maatwerk, niche-denken en allround-expertise.
+ * Strategische boodschap per dienst: from scratch, niche-denken en allround-expertise.
  * Maatwerk per opdracht. Elke opdracht start met context.
  */
 
@@ -193,14 +193,14 @@ const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
 
 const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
   "shopify-enterprise": {
-    deepTitle: "Shopify from scratch: maatwerk zonder chaos",
+    deepTitle: "Shopify from scratch: custom zonder chaos",
     deepLead:
       "Ik koop geen theme in de Shopify Store en plak je logo erop. Elke shop start op een leeg canvas: eigen secties, eigen Liquid, jouw merk. Of je nu D2C verkoopt, internationaal schaalt of een portal nodig hebt. In Shopify kan het, als je iemand hebt die het platform écht kent.",
     deepExtended:
-      "Soms is een strak OS 2.0-theme from scratch de slimste route. Soms headless of een hybride met maatwerk front. Ik laat je zien waarom, wat het betekent voor onderhoud, SEO en snelheid. Zo koop je geen template, maar een shop die past bij jouw volgende fase.",
+      "Soms is een strak OS 2.0-theme from scratch de slimste route. Soms headless of een hybride met custom front. Ik laat je zien waarom, wat het betekent voor onderhoud, SEO en snelheid. Zo koop je geen template, maar een shop die past bij jouw volgende fase.",
     signals: [
       "Hoe complex is je catalogus (varianten, prijzen, regio's)?",
-      "Welke apps zijn echt kritisch. En welke vervang ik door maatwerk in het theme?",
+      "Welke apps zijn echt kritisch. En welke vervang ik door custom code in het theme?",
       "Waar zit je omzet: SEO, ads, e-mail. En wat verwacht je storefront daarvoor?",
       "Hoe ziet je release-proces eruit (staging, QA, rollback)?",
     ],
@@ -362,7 +362,7 @@ const BY_SLUG: Record<string, Omit<DienstStrategicContent, "scenarios">> = {
     ],
   },
   webdesign: {
-    deepTitle: "UI/UX: conversie is context, maatwerk per niche",
+    deepTitle: "UI/UX: conversie is context, per niche anders",
     deepLead:
       "Een checkout voor luxe goederen vraagt andere hiërarchie dan een snelle SaaS-trial of een B2B-formulier. Ik ontwerp schermen vanuit jouw klantreis, niet vanuit een Dribbble-shot.",
     deepExtended:
@@ -580,7 +580,7 @@ function fallbackSlugContent(): Omit<DienstStrategicContent, "scenarios"> {
       "In een kort gesprek breng ik scope, risico’s en quick wins in kaart. Daarna krijg je een voorstel waarin duidelijk is wat ik bouw, meet en oplever. Transparant en zonder jargon waar het niet nodig is.",
     signals: [
       "Wat wil je over 90 dagen bereikt zien?",
-      "Welke systemen en teams raken we?",
+      "Welke systemen en teams raken dit?",
       "Wat is nu de grootste bottleneck. Techniek, traffic of conversie?",
       "Hoe wil je samenwerken (embedded, project, retainer)?",
     ],

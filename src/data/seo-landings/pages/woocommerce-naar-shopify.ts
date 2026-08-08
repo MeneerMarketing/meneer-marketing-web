@@ -133,10 +133,10 @@ export const WOOCOMMERCE_NAAR_SHOPIFY: SeoLandingPage = {
       title: "WooCommerce naar Shopify is een SEO-project vermomd als shop-wissel",
       paragraphs: [
         "Je zoekt woocommerce naar shopify omdat plugins knijpen of omdat ads te duur worden op een trage shop. De verhuizing voelt technisch. De risico's zitten vooral in URL's en redirects.",
-        "Ik begin met inventaris: wat rankt, wat verkoopt, wat is plugin-schuld. Daarna staging. Pas als testorders en 301's kloppen, gaan we live.",
+        "Ik begin met inventaris: wat rankt, wat verkoopt, wat is plugin-schuld. Daarna staging. Pas als testorders en 301's kloppen, zet ik hem live.",
         "WordPress promoot ik niet. Wel zeg ik eerlijk wanneer migreren te vroeg is. Stabiele Woo mag blijven tot je groei het afdwingt.",
         "Na cutover horen Merchant Center, mail en tracking erbij. Een mooie Shopify-shop met dode feeds is half werk.",
-        "Wil je alleen een import-app? Dan ben ik te streng. Wil je een migratie die rankings en omzet respecteert? Dan doen we het als project.",
+        "Wil je alleen een import-app? Dan ben ik te streng. Wil je een migratie die rankings en omzet respecteert? Dan pak ik het als project.",
       ],
     },
     deepDive: {

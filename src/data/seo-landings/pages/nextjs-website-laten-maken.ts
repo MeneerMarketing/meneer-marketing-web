@@ -56,7 +56,7 @@ export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   processSteps: [
     {
       title: "Doel en architectuur",
-      body: "Landings, diensten, blog, portal? Ik schets structuur vóór we code schrijven.",
+      body: "Landings, diensten, blog, portal? Ik schets structuur vóór ik code schrijf.",
     },
     {
       title: "Design + build",

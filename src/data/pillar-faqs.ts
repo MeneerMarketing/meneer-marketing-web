@@ -25,7 +25,7 @@ export const PILLAR_FAQS: Record<PillarSlug, readonly PillarFaqItem[]> = {
     {
       question: "Wat meet je om te weten of de strategie werkt?",
       answer:
-        "Omzet per kanaal, kosten per lead of sale, en of de volgende stap logisch is. Vanity metrics laat ik links. Als iets niet rendeert, schuiven we budget of stoppen we.",
+        "Omzet per kanaal, kosten per lead of sale, en of de volgende stap logisch is. Vanity metrics laat ik links. Als iets niet rendeert, schuif ik budget of stop ik.",
     },
   ],
   bouwen: [

@@ -34,7 +34,7 @@ const IMPACT_PANELS: readonly MeneerImpactPanel[] = [
     visual: "intake",
     label: "Intake",
     headline: "Twee minuten. Live, geen deck.",
-    body: "Jij vult in waar het wringt. Ik stel soms ongemakkelijke vragen. Zeg je 'ads' terwijl je site op 0,4% converteert? Dan beginnen we ergens anders. Eerlijk, soms droog.",
+    body: "Jij vult in waar het wringt. Ik stel soms ongemakkelijke vragen. Zeg je 'ads' terwijl je site op 0,4% converteert? Dan begin ik ergens anders. Eerlijk, soms droog.",
     href: "/werkwijze",
     linkLabel: "Zo start een traject",
   },

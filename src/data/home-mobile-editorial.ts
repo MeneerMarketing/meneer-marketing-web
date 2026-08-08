@@ -134,7 +134,7 @@ export const HOME_MOBILE_CHAPTER_VINDBAARHEID: MobileChapter = {
   id: "vindbaarheid",
   eyebrow: "Google SEO",
   title: "12 jaar Google. Ik ken het spel.",
-  body: "AI-zoek hebben we net gehad. Hier draait het om Google: ranken, landingspagina's en autoriteit die blijft staan. Vakmanschap dat ik al meer dan een decennium oefen, geen trucjes uit 2014.",
+  body: "AI-zoek had je net. Hier draait het om Google: ranken, landingspagina's en autoriteit die blijft staan. Vakmanschap dat ik al meer dan een decennium oefen, geen trucjes uit 2014.",
   hotTake:
     "Google verandert constant. Ik ook. Daarom win je van concurrenten die SEO al drie jaar niet hebben bijgewerkt.",
   inlineProof:

@@ -103,11 +103,11 @@ export default function SamenwerkenPage() {
                 {
                   label: "Werkwijze in detail",
                   href: "/werkwijze",
-                  description: "Hoe we intake, bouw en overdracht inrichten.",
+                  description: "Hoe ik intake, bouw en overdracht inricht.",
                   icon: <Compass className="size-4" />,
                 },
                 {
-                  label: "Onze blokken",
+                  label: "Het aanbod",
                   href: "/diensten",
                   description: "Strategie, bouwen, vindbaarheid, campagnes, behoud.",
                   icon: <Layers className="size-4" />,

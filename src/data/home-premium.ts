@@ -85,7 +85,7 @@ export const HOME_TRAJECTORY_STAGES: HomeTrajectoryStage[] = [
     short: "Gas geven",
     title: "Opschalen",
     headline: "Wat werkt krijgt gas. Wat niet werkt gaat eruit.",
-    body: "Klein testen was het begin. Nu schalen we wat geld oplevert en snijden we wat alleen ruis was weg.",
+    body: "Klein testen was het begin. Nu schaal ik wat geld oplevert en snijd ik wat alleen ruis was weg.",
     tags: ["Budget verschuiven", "Nieuwe tests", "Maandelijks sturen"],
     scene: "scale",
   },

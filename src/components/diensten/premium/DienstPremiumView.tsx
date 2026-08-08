@@ -269,7 +269,7 @@ export function DienstPremiumView({
                   Hoe ik werk
                 </h2>
                 <p className="mt-2 max-w-xl text-slate-600">
-                  Drie dingen die je bij mij altijd krijgt. Wat we ook bouwen.
+                  Drie dingen die je bij mij altijd krijgt. Wat ik ook bouw.
                 </p>
               </Reveal>
               <PrincipleScenes principles={[...premium.principles]} />
@@ -429,7 +429,7 @@ export function DienstPremiumView({
                   Typische situaties. Elke uitwerking anders
                 </h2>
                 <p className="mt-2 max-w-xl text-slate-600">
-                  Herken je jezelf hierin? Dan weet je meteen waar we zouden
+                  Herken je jezelf hierin? Dan weet je meteen waar ik zou
                   starten.
                 </p>
                 <ul className="mt-8 space-y-4">
@@ -477,7 +477,7 @@ export function DienstPremiumView({
                     Veelgestelde vragen
                   </h2>
                   <p className="mt-2 text-slate-600">
-                    Korte antwoorden. In een gesprek maken we ze specifiek voor
+                    Korte antwoorden. In een gesprek maak ik ze specifiek voor
                     jouw situatie.
                   </p>
                 </Reveal>

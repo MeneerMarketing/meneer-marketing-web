@@ -688,7 +688,7 @@ export const STORY_BODY_BANK: Record<SeoLandingCategory, readonly string[]> = {
   ],
   website: [
     "Je neef is aardig. WordPress staat. Er is een logo. Maar {kw} betekent niet 'iemand kent WordPress'. Het betekent: snel, mobiel, vindbaar, converteerbaar.",
-    "Ik promoot geen templates of page builders. Ik bouw from scratch in Next.js omdat maatwerk dan geen marketingterm is, maar wat je krijgt.",
+    "Ik promoot geen templates of page builders. Ik bouw from scratch in Next.js. Custom build is dan geen marketingterm, maar wat je krijgt.",
     "Een site is geen online visitekaartje meer. Het is je verkoopgesprek om 23:00 uur op zondag. Als dat gesprek vaag is, is {kw} geld naar een mooie façade zonder deuren.",
     "Soms is het antwoord: niet de homepage. Soms is het een landingspagina per dienst, per product, per regio{loc}. Saai? Effectief.",
     "Ik bouw sites alsof marketing er al op zit. Want straks zit marketing erop. Dan wil je geen redesign omdat je CTA verdween in een hero met stockfoto's.",
@@ -775,7 +775,7 @@ export const DEEPDIVE_BANK: Record<SeoLandingCategory, readonly string[]> = {
   ],
   website: [
     "Veel partijen verkopen design. Ik verkoop een machine die vindbaar is en converteert.",
-    "Next.js voor maatwerk. Shopify voor shops. Custom code die je vrij laat groeien.",
+    "Next.js voor custom builds. Shopify voor shops. Code die je vrij laat groeien.",
     "{kw} is geen project van vier weken dat 'af' is. Het is een fundament waar marketing op staat.",
     "Landings voor campagnes, formulieren die werken, snelle assets: ingebouwd, niet geplakt.",
     "WordPress promoten doe ik niet. Migreren van WordPress wel, als dat de opdracht is.",

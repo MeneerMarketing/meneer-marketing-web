@@ -173,7 +173,7 @@ export const dienstExtras: Record<string, DienstExtra> = {
     ],
     faq: [
       {
-        question: "n8n of Make. Wat kiezen we?",
+        question: "n8n of Make. Wat past?",
         answer:
           "Hangt van je stack, hosting en team af. Ik adviseer op onderhoudbaarheid en kosten. Niet op hype.",
       },

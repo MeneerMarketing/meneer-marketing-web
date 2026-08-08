@@ -48,7 +48,7 @@ export const CONTACT_QUICK_REPLIES: ContactQuickReply[] = [
         id: "match",
         label: "Twijfel of we matchen",
         meneerReply:
-          "Snap ik. Vertel waar je mee zit. Dan merken we snel of het klikt.",
+          "Snap ik. Vertel waar je mee zit. Dan merk je snel of het klikt.",
       },
       {
         id: "second",
@@ -192,7 +192,7 @@ export const CONTACT_QUICK_REPLIES: ContactQuickReply[] = [
         id: "blank",
         label: "Echt blank canvas",
         meneerReply:
-          "Ook goed. Beschrijf je bedrijf in twee zinnen, dan zoeken we de ingang.",
+          "Ook goed. Beschrijf je bedrijf in twee zinnen, dan zoek ik de ingang.",
       },
     ],
   },
@@ -319,7 +319,7 @@ export const CONTACT_TOPICS: ContactTopic[] = [
 
 export const CONTACT_QUOTES = [
   "Psst. Hoe korter je bericht, hoe sneller ik kan schakelen. Tenzij het ingewikkeld is. Dan mag het lang.",
-  "Gewoon Nederlands. We kennen elkaar nog niet, maar we zijn al vrienden.",
+  "Gewoon Nederlands. We kennen elkaar nog niet, maar voelt al vertrouwd.",
   "Als je site-URL meestuurt, scheelt dat drie mails heen en weer. Trust me.",
   "Urgent? Zet 'urgent' in je onderwerp. Ik beloof niks, maar ik kijk wel eerder.",
 ] as const;

@@ -97,7 +97,7 @@ export default function SchaalOpPage() {
           <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-12 lg:px-8">
             <ConversionForm variant="schaal-op" />
             <ConversionAside
-              processTitle="Hoe we opschalen"
+              processTitle="Hoe ik opschaal"
               quickMailSubject="Schaaltraject bespreken"
               steps={[
                 {
@@ -117,7 +117,7 @@ export default function SchaalOpPage() {
                 {
                   label: "Start intake",
                   href: siteCtas.startIntake.href,
-                  description: "Twee minuten context, daarna plannen we het gesprek.",
+                  description: "Twee minuten context, daarna plan ik het gesprek.",
                   icon: <Sparkles className="size-4" />,
                 },
                 {

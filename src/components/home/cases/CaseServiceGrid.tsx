@@ -106,7 +106,7 @@ export function CaseServiceGrid({ services, palette }: CaseServiceGridProps) {
   return (
     <div className="border-t border-slate-200/80 bg-white/60 p-4 sm:p-5">
       <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
-        Wat we bouwden &amp; draaiden
+        Wat ik bouwde &amp; draaide
       </p>
       <div
         className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3"

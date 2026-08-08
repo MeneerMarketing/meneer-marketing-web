@@ -168,7 +168,7 @@ const PREMIUM: Record<string, DienstPremiumContent> = {
         body: "Checkout, Storefront API, koppelingen, portals: ik spreek Shopify vloeiend en leg keuzes uit in normaal Nederlands. Jij hoeft geen extra developer in te huren naast mij.",
       },
     ],
-    lens: "Bij Shopify bouw ik alsof je over een jaar drie keer zo groot bent: meer producten, meer kanalen, meer automatisering. Alles in één maatwerk theme dat je team snapt. Transparant, geen black box.",
+    lens: "Bij Shopify bouw ik alsof je over een jaar drie keer zo groot bent: meer producten, meer kanalen, meer automatisering. Alles in één custom theme dat je team snapt. Transparant, geen black box.",
     approachSteps: [
       {
         title: "Stack & catalogus audit",

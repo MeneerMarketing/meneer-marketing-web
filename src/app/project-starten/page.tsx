@@ -116,13 +116,13 @@ export default function ProjectStartenPage() {
                 {
                   label: "Start intake",
                   href: siteCtas.startIntake.href,
-                  description: "Twee minuten context, daarna plannen we het gesprek.",
+                  description: "Twee minuten context, daarna plan ik het gesprek.",
                   icon: <Gauge className="size-4" />,
                 },
                 {
-                  label: "Onze cases",
+                  label: "Cases",
                   href: "/cases",
-                  description: "Echte outcomes, geen moodboards.",
+                  description: "Echte outcomes, echte beelden.",
                   icon: <Sparkles className="size-4" />,
                 },
               ]}

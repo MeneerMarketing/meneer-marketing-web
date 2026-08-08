@@ -242,5 +242,5 @@ export const WERKWIJZE_FAQ = [
 
 export const WERKWIJZE_CTA = {
   title: "Klaar om te weten wat bij jou eerst moet?",
-  body: "Vul de intake in. Twee minuten. Daarna plannen we een gesprek van dertig minuten. Verplicht traject niet, wel helderheid.",
+  body: "Vul de intake in. Twee minuten. Daarna plan ik een gesprek van dertig minuten. Verplicht traject niet, wel helderheid.",
 } as const;

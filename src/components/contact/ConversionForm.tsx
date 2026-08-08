@@ -163,7 +163,7 @@ const SAMENWERKING_OPTIONS: readonly TileOption[] = [
   {
     value: "sparren",
     label: "Sparren",
-    description: "Eerst context opbouwen. Vorm bepalen we samen.",
+    description: "Eerst context opbouwen. Vorm komt uit het gesprek.",
     Icon: Coffee,
   },
 ];
@@ -378,7 +378,7 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
       {
         key: "intakeDoel",
         title: "Wat is je hoofddoel?",
-        subtitle: "Eén richting is genoeg. De rest verfijnen we samen.",
+        subtitle: "Eén richting is genoeg. De rest verfijn ik later met je.",
         columns: 3,
         options: INTAKE_DOEL_OPTIONS,
       },
@@ -392,7 +392,7 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
       {
         key: "urgentie",
         title: "Hoe snel wil je schakelen?",
-        subtitle: "Eerlijk is beter. Dan plannen we realistisch.",
+        subtitle: "Eerlijk is beter. Dan plan ik realistisch.",
         columns: 3,
         options: URGENTIE_OPTIONS,
       },
@@ -529,7 +529,7 @@ function intakeStepHeading(step: number): { title: string; subtitle: string } {
     case 3:
       return {
         title: "Hoe snel wil je schakelen?",
-        subtitle: "Eerlijk is beter. Dan plannen we realistisch.",
+        subtitle: "Eerlijk is beter. Dan plan ik realistisch.",
       };
     default:
       return { title: "", subtitle: "" };
@@ -900,7 +900,7 @@ export function ConversionForm({
     }
     if (s === contactStep) {
       if (!state.naam.trim()) return "Je naam mag niet ontbreken.";
-      if (!state.email.trim()) return "E-mail is nodig. Zo kunnen we terugkoppelen.";
+      if (!state.email.trim()) return "E-mail is nodig. Zo kan ik terugkoppelen.";
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(state.email.trim())) {
         return "Check even het e-mailadres.";
       }
@@ -1162,7 +1162,7 @@ export function ConversionForm({
                     Wie ben je?
                   </h3>
                   <p className="mt-1 text-sm text-mm-muted">
-                    Zodat we gericht kunnen terugkoppelen. We bellen of mailen in jouw voorkeurskanaal.
+                    Zodat ik gericht kan terugkoppelen. Ik bel of mail in jouw voorkeurskanaal.
                   </p>
                 </div>
 
@@ -1261,7 +1261,7 @@ export function ConversionForm({
                     Vertel je verhaal.
                   </h3>
                   <p className="mt-1 text-sm text-mm-muted">
-                    Hoe concreter, hoe beter we kunnen voorbereiden.
+                    Hoe concreter, hoe beter ik kan voorbereiden.
                   </p>
                 </div>
 

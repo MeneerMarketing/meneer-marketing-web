@@ -5,7 +5,7 @@ import type { CasePalette, HomeCase } from "@/data/home-cases";
 
 const BLOCKS = [
   { key: "challenge", label: "De uitdaging" },
-  { key: "move", label: "Onze aanpak" },
+  { key: "move", label: "De aanpak" },
   { key: "result", label: "Het resultaat" },
 ] as const;
 

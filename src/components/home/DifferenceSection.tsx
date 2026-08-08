@@ -22,7 +22,7 @@ const pillars = [
   },
   {
     title: "Meetbaar groeien",
-    body: "SEO, ads, social en e-mail met duidelijke KPI's. Je ziet wat werkt. Dan schalen we op waar de omzet zit.",
+    body: "SEO, ads, social en e-mail met duidelijke KPI's. Je ziet wat werkt. Dan schaal ik op waar de omzet zit.",
     tag: "Resultaat",
   },
 ] as const;
