@@ -7,7 +7,7 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     "ROAS klinkt indrukwekkend op een dashboard. CPA ook. Maar welke metric past bij jouw marge? Met rekenvoorbeelden die je echt kunt gebruiken.",
   publishedAt: "2026-07-10",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 15,
   category: "campagnes",
   keywords: [
     "roas uitleg",
@@ -47,6 +47,44 @@ export const ROAS_VS_CPA: KennisbankArticle = {
     {
       type: "p",
       text: "Je opent je ads-dashboard. ROAS is 4,2. Je voelt je goed. Je bankrekening voelt zich minder uitgenodigd. Dat kan. ROAS en CPA zijn handige kompassen, maar ze vertellen niet automatisch of je geld verdient. Dat hangt af van je marge. En marge is het woord dat dashboards graag vergeten.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Metric-keuze",
+      title: "Welke metric stuurt je week?",
+      prompt:
+        "Kies hoe jij Ads nu stuurt. Ik zeg of je bankrekening meeluistert of alleen je dashboard.",
+      options: [
+        {
+          id: "roas-blind",
+          label: "ROAS zo hoog mogelijk, marge kijk ik later",
+          verdict:
+            "Dashboard juicht, kas mogelijk niet. Zonder marge is ROAS theater met procenten.",
+          tone: "ouch",
+        },
+        {
+          id: "cpa-lead",
+          label: "CPA per lead of afspraak, met win-rate in het hoofd",
+          verdict:
+            "Dit is mijn default bij diensten. Eén conversie, één plafond, dan pas schalen.",
+          tone: "win",
+        },
+        {
+          id: "troas",
+          label: "tROAS op catalogus met vergelijkbare marges + waarde terug",
+          verdict:
+            "Slim als data klopt. Gemengde marges in één target? Dan stuurt Google de verkeerde producten.",
+          tone: "win",
+        },
+        {
+          id: "branded",
+          label: "Account-ROAS inclusief branded, want het ziet er lekker uit",
+          verdict:
+            "Je juicht voor mensen die je naam al kenden. Split branded. Anders leer je niks over acquisitie.",
+          tone: "ouch",
+        },
+      ],
     },
     {
       type: "h2",

@@ -7,7 +7,7 @@ export const LEADS_GMAIL_OPVOLGING: KennisbankArticle = {
     "Leads verdwijnen in je inbox tussen facturen en nieuwsbrieven. Zo zet je opvolging op rails zonder direct een zware CRM.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 15,
   category: "behoud",
   keywords: [
     "leads opvolgen",
@@ -51,6 +51,92 @@ export const LEADS_GMAIL_OPVOLGING: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: elke lead binnen 5 minuten een bevestiging, binnen 24 uur menselijk contact of duidelijke vervolgstap. Automatiseer het saaie, houd het menselijke menselijk.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Inbox-check",
+      title: "Vergiet-meter",
+      intro:
+        "Vink aan wat klopt voor jouw lead-opvolging. Hoe hoger, hoe meer Gmail als CRM fungeert en hoe meer warme leads weglopen.",
+      storageKey: "mm-leads-vergiet",
+      eventName: "leads_vergiet_complete",
+      sharePath: "/kennisbank/leads-gmail-opvolging",
+      scoreNoun: "lek",
+      ctaHref: "/diensten/automatisering",
+      ctaLabel: "Automatisering",
+      checks: [
+        {
+          id: "bevestig",
+          label: "Automatische bevestiging binnen minuten ontbreekt",
+          fix: "Mail met verwachting: wanneer bel of mail je terug.",
+        },
+        {
+          id: "alert",
+          label: "Niemand krijgt een push/Slack/mail als er een lead binnenkomt",
+          fix: "Alert naar de persoon die belt. Inbox is geen notificatielamp.",
+        },
+        {
+          id: "status",
+          label: "Status nieuw/contact/offerte bestaat alleen in iemands hoofd",
+          fix: "Simpele lijst of CRM-light. Zichtbaar wie stilstaat.",
+        },
+        {
+          id: "weekend",
+          label: "Weekend-leads blijven tot maandag stil zonder eerlijke timeline",
+          fix: "Auto-reply met tijdvak. Stilte voelt als verdwijnen.",
+        },
+        {
+          id: "dagen",
+          label: "Leads ouder dan 48 uur zonder menselijk contact zijn normaal",
+          fix: "SLA: zelfde werkdag. Daarna is concurrent vaak al aan de lijn.",
+        },
+        {
+          id: "bron",
+          label: "Je meet niet welke bron leads wint of sterft",
+          fix: "Win-rate per bron. Anders schaal je ads naar een lek.",
+        },
+        {
+          id: "crm",
+          label: "Gmail-labels zijn het enige 'systeem'",
+          fix: "Proces eerst. Tool later. Labels zijn geen pipeline.",
+        },
+        {
+          id: "ads",
+          label: "Je schaalt ads terwijl opvolging nog handmatig en traag is",
+          fix: "Eerst rails. Dan budget. Anders koop je leads voor de concurrent.",
+        },
+      ],
+      tiers: [
+        {
+          id: "rails",
+          min: 0,
+          max: 24,
+          label: "Rails liggen",
+          quip: "Snel, zichtbaar, menselijk. Houd die SLA heilig.",
+        },
+        {
+          id: "lek",
+          min: 25,
+          max: 49,
+          label: "Klein lek",
+          quip: "Eén alert + bevestiging deze week. Dat is al meer pipeline.",
+        },
+        {
+          id: "vergiet",
+          min: 50,
+          max: 74,
+          label: "Vergiet met @",
+          quip: "Ads vullen, inbox lekt. Fix opvolging vóór je budget verdubbelt.",
+        },
+        {
+          id: "dood",
+          min: 75,
+          max: 100,
+          label: "Vier-dagen-graf",
+          quip: "Stop met 'we bellen later'. Concurrent zit al in hun agenda.",
+        },
+      ],
     },
     {
       type: "h2",

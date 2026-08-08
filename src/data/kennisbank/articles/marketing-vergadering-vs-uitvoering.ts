@@ -7,7 +7,7 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     "Whiteboards, sticky notes en synergie. Of: meten, bouwen, bijsturen. Waarom uitvoering wint van vergaderen voor MKB.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 14,
   category: "strategie",
   keywords: [
     "marketing strategie mkb",
@@ -51,6 +51,44 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: strategie zonder uitvoering is een hobby. Meet wat er is, fix het grootste lek, dan pas praten over schalen.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Vergader-test",
+      title: "Wat doe je met die drie uur?",
+      prompt:
+        "Kies. Ik zeg of je strategie koopt of sticky-note-theater.",
+      options: [
+        {
+          id: "whiteboard",
+          label: "Whiteboard, synergie, funnel op A3, daarna 'we pakken het op'",
+          verdict:
+            "€800 uurloon, nul clicks. Zonder live-taak binnen 48 uur was het geen sessie.",
+          tone: "ouch",
+        },
+        {
+          id: "cijfers",
+          label: "Twintig minuten: zoektermen, landings, één lek, eigenaar, deadline",
+          verdict:
+            "Dit is mijn ritme. Kort, gemeen eerlijk, iets staat die week live.",
+          tone: "win",
+        },
+        {
+          id: "deck",
+          label: "Dertig slides strategie, implementatie 'volgende kwartaal'",
+          verdict:
+            "Uitstel met animaties. Eén pagina volstaat: klant, marge, kanaal, metric, stopregel.",
+          tone: "ouch",
+        },
+        {
+          id: "open",
+          label: "Eerst ads + analytics + inbox openen, dan pas praten",
+          verdict:
+            "Precies. Strategie begint bij wat er al brandt, niet bij wat je wilt tekenen.",
+          tone: "win",
+        },
+      ],
     },
     {
       type: "h2",
