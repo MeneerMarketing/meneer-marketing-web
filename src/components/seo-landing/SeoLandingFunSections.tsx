@@ -190,7 +190,7 @@ export function SeoLandingNightmareList({
             <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">{title}</h2>
           </div>
           <p className="mt-3 max-w-2xl text-slate-600">
-            Geen horrorfilm. Wel accounts en sites die ik te vaak open en dan even moet ademen.
+            Herkenbare accounts en sites die ik te vaak open en dan even moet ademen.
           </p>
         </Reveal>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2">

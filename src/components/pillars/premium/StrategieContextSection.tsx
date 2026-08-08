@@ -27,8 +27,8 @@ const INSIGHTS = [
     icon: Route,
     label: "Route",
     title: "Jouw markt bepaalt de route",
-    preview: "Geen generieke funnel kopiëren.",
-    body: "Voor BestRest bedachten we een eigen aanpak per product in plaats van één generieke funnel. Jouw markt, marge en klant bepalen de volgorde. Niet het trucje dat bij een ander werkte.",
+    preview: "Jouw markt bepaalt de route.",
+    body: "Ik bedenk een eigen aanpak per product of dienst in plaats van één generieke funnel. Jouw markt, marge en klant bepalen de volgorde. Niet het trucje dat bij een ander werkte.",
   },
   {
     id: "uitvoer",
@@ -36,7 +36,7 @@ const INSIGHTS = [
     label: "Uitvoering",
     title: "Plan zonder actie is papier",
     preview: "Per kwartaal: wat, kosten, opbrengst.",
-    body: "Een plan zonder uitvoering is een duur PDF-bestand. Omdat wij ook bouwen, adverteren en optimaliseren, blijft de strategie geen papier. Je ziet per kwartaal wat er gebeurt, wat het kost en wat het oplevert.",
+    body: "Een plan zonder uitvoering is een duur PDF-bestand. Omdat ik ook bouw, adverteer en optimaliseer, blijft de strategie geen papier. Je ziet per kwartaal wat er gebeurt, wat het kost en wat het oplevert.",
   },
 ] as const;
 
@@ -231,7 +231,7 @@ export function StrategieContextSection({
 
             <div className="rounded-3xl border border-slate-200 bg-slate-900 p-5 text-white sm:p-6">
               <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-                SkinComplete-case
+                Volgorde-voorbeeld
               </p>
               <p className="mt-3 text-sm leading-relaxed text-slate-300">
                 Eerst SEO en mailautomatisering. Daarna pas ads. Elke euro kwam binnen op
@@ -240,7 +240,7 @@ export function StrategieContextSection({
               <p className="mt-4 flex items-center gap-1.5 text-xs text-slate-400">
                 <ArrowRight className="size-3.5 text-[#FF5722]" aria-hidden />
                 {mode === "plan"
-                  ? "Zo pakken wij volgorde aan."
+                  ? "Zo pak ik volgorde aan."
                   : "Zonder plan verbrand je budget."}
               </p>
             </div>

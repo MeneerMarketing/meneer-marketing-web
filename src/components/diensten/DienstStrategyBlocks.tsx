@@ -72,7 +72,7 @@ export function DienstStrategyBlocks({
             Waar ik bij jou naar kijk
           </h2>
           <p className="mt-2 text-sm text-mm-muted">
-            Geen trucvragen. Wel de dingen die bepalen welke route voor{" "}
+            Echte vragen. De dingen die bepalen welke route voor{" "}
             <span className="font-semibold text-mm-text">{dienstName}</span> het
             slimst is.
           </p>

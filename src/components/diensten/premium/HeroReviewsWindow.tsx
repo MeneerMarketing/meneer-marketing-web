@@ -41,7 +41,7 @@ function Stars({ filled }: { filled: number }) {
 }
 
 /**
- * Score-meter + inkomende review-notificaties. Geen statisch sterrenblok.
+ * Score-meter + inkomende review-notificaties. Live inkomende reviews in plaats van statisch sterrenblok.
  */
 export function HeroReviewsWindow() {
   const reduce = useReducedMotion() ?? false;

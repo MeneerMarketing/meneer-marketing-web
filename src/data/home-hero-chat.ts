@@ -86,7 +86,7 @@ export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
       {
         id: "mix",
         label: "Alles door elkaar",
-        userReply: "Geen idee waar te beginnen",
+        userReply: "Weet niet waar te beginnen",
         meneerReply:
           "Chaos is mijn favoriete startpunt. Ik orden het en pak eerst de winst die het snelst binnenkomt.",
         cta: siteCtas.startIntake,

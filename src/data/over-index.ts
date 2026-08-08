@@ -120,7 +120,7 @@ export const OVER_PRINCIPLES = [
   },
   {
     title: "Menselijk",
-    body: "Geen moeilijke bureautaal in je inbox. Mail, WhatsApp of bellen, wat voor jou het fijnst is. Samen kiezen welke kanalen en platforms passen. Duidelijk en soms droog grappig, strak professioneel waar het moet.",
+    body: "Gewone taal in je inbox. Mail, WhatsApp of bellen, wat voor jou het fijnst is. Samen kiezen welke kanalen en platforms passen. Duidelijk en soms droog grappig, strak professioneel waar het moet.",
   },
 ] as const;
 
@@ -209,7 +209,7 @@ export const OVER_DAY: OverDayMoment[] = [
     timeLabel: "Ochtend",
     title: "Koffie en cijfers checken",
     body: "Dashboard open voordat mijn ontbijt koud is. Conversies, ads, errors uit de nacht. Brandt er ergens iets? Dan fix ik het voordat jij je eerste mail opent.",
-    quip: "Geen verrassingen tijdens je croissant. Dat is de deal.",
+    quip: "Heldere afspraken tijdens je croissant. Dat is de deal.",
     ping: "3 conversies · 0 errors · koffie heet",
     mood: "coffee",
     chips: ["Analytics", "Alerts", "ROAS"],
@@ -323,5 +323,5 @@ export const OVER_FAQ = [
 
 export const OVER_CTA = {
   title: "Klaar om kennis te maken?",
-  body: "Geen verplichtingen. Wel een eerste gesprek in gewoon Nederlands. Vul de intake in (twee minuten) of neem contact op als je liever mailt.",
+  body: "Vrijblijvend eerste gesprek in gewoon Nederlands. Vul de intake in (twee minuten) of neem contact op als je liever mailt.",
 } as const;

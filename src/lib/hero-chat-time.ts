@@ -35,7 +35,7 @@ export const HERO_CHAT_INTRO_BY_TIME: Record<
   ],
   afternoon: [
     "Hoi. Nog één tabblad open voor het weekend. Herkenbaar.",
-    "Geen bureau-praat. Wel iemand die meet wat werkt. Kies hieronder wat past.",
+    "Iemand die meet wat werkt. Kies hieronder wat past.",
   ],
   evening: [
     "Hoi. Na werktijd nog aan je bedrijf denken. Dat soort mensen help ik graag.",

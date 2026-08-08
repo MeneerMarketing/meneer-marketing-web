@@ -34,7 +34,7 @@ export function DienstenFiveBlocks() {
             id="diensten-blocks-heading"
             className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"
           >
-            Vijf blokken. Geen verrassingen achter een formulier.
+            Vijf blokken. Alles vooraf helder, ook achter het formulier.
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-slate-600">
             Elk blok heeft een eigen landingspagina met proces, bewijs en concrete

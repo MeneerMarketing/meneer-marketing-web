@@ -49,7 +49,7 @@ const IG_GRID = [
 
 const IG_REEL_HOOKS = [
   "Eerlijk: na 2 weken merk ik verschil.",
-  "Geen script. Gewoon thuis gefilmd.",
+  "Thuis gefilmd. Gewoon zoals het is.",
 ] as const;
 
 const TIKTOK_AUDIO = "origineel geluid · hergebruik in Meta ads";
@@ -350,7 +350,7 @@ function TikTokScreen() {
           <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/92 via-black/55 to-transparent pr-9 pl-2 pb-2 pt-9">
             <p className="text-[10px] font-extrabold text-white">{CREATOR_HANDLE}</p>
             <p className="mt-0.5 text-pretty text-[9px] font-semibold leading-snug text-white/95">
-              Eerlijk: na 2 weken merk ik verschil. Geen script, thuis gefilmd.
+              Eerlijk: na 2 weken merk ik verschil. Thuis gefilmd, authentiek.
             </p>
             <MarqueeAudio text={TIKTOK_AUDIO} reduce={reduce} />
           </div>
@@ -538,7 +538,7 @@ function CompactUgcCard() {
 
 interface AboutMeneerStrategyOutcomeProps {
   visible: boolean;
-  /** Geen vertraagde mount: direct zichtbaar, geen slide-in (desktop). */
+  /** Direct zichtbaar bij mount, zonder vertraagde slide-in (desktop). */
   immediate?: boolean;
 }
 

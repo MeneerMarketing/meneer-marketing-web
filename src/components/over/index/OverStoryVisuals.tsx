@@ -331,7 +331,7 @@ function PartnerScene({ active, chapter }: { active: boolean; chapter: OverStory
               <InteractiveLogo className="h-4 w-4" />
             </span>
             <p className="rounded-2xl rounded-bl-md bg-slate-100 px-3 py-2 text-[10px] font-medium leading-relaxed text-slate-800">
-              Ja, live sinds 09:12. ROAS zit op 4,2. Geen novel nodig.
+              Ja, live sinds 09:12. ROAS zit op 4,2. Kort en helder.
             </p>
           </div>
         </div>
@@ -343,7 +343,7 @@ function PartnerScene({ active, chapter }: { active: boolean; chapter: OverStory
       >
         <div className="flex items-center gap-2">
           <Ban className="size-3.5 text-emerald-600" aria-hidden />
-          <p className="text-[10px] font-bold text-emerald-800">Geen corporate masker</p>
+          <p className="text-[10px] font-bold text-emerald-800">Echt, niet corporate</p>
         </div>
         <span className="text-[9px] font-bold uppercase tracking-wider text-emerald-600">
           {chapter.metric.value}

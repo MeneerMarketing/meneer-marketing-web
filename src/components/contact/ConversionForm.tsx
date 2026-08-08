@@ -345,7 +345,7 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
       {
         key: "budgetIndicatie",
         title: "Budgetindicatie",
-        subtitle: "Geen offerte-trigger. Het helpt ons scope realistisch voorstellen.",
+        subtitle: "Helpt mij scope realistisch voorstellen. Eerst context, dan pas een voorstel.",
         columns: 3,
         options: BUDGET_OPTIONS,
       },
@@ -366,12 +366,12 @@ const VARIANTS: Record<ConversionFormVariant, VariantConfig> = {
     subject: "[Start intake]",
     bodyTag: "Intake via meneermarketing.nl/intake",
     intro:
-      "Twee minuten invullen. Dan weet ik genoeg om het gesprek scherp te starten. Geen jargon, wel eerlijk.",
+      "Twee minuten invullen. Dan weet ik genoeg om het gesprek scherp te starten. Jargon-vrij en eerlijk.",
     tiles: [
       {
         key: "intakeFase",
         title: "Waar sta je nu?",
-        subtitle: "Geen goed of fout. Het helpt me inschatten waar we beginnen.",
+        subtitle: "Helpt me inschatten waar ik begin. Alles mag.",
         columns: 2,
         options: INTAKE_FASE_OPTIONS,
       },
@@ -546,7 +546,7 @@ function schaalOpStepHeading(step: number): { title: string; subtitle: string } 
     case 1:
       return {
         title: "Budgetindicatie",
-        subtitle: "Geen offerte-trigger. Wel een realistisch voorstel op basis van scope.",
+        subtitle: "Realistisch voorstel op basis van scope. Eerst context, dan pas een offerte.",
       };
     default:
       return { title: "", subtitle: "" };

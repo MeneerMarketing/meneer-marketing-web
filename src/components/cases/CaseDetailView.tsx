@@ -161,7 +161,7 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
         <div className="mx-auto max-w-xl px-4">
           <h2 className="text-2xl font-extrabold text-white">Jouw case hier?</h2>
           <p className="mt-3 text-slate-400">
-            Geen nep-successen. Wel trajecten waar je trots op bent.
+            Echte trajecten waar je trots op bent.
           </p>
           <Link
             href={siteCtas.startIntake.href}

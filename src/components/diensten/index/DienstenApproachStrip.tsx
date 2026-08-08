@@ -110,7 +110,7 @@ export function DienstenApproachStrip() {
           </h2>
           <p className="mt-2 max-w-xl text-slate-600">
             Altijd dezelfde kwaliteit van beslissingen. De invulling verschilt per
-            klant. Tik een fase. Geen verrassingen in week zes.
+            klant. Tik een fase. Week zes voelt hetzelfde als week één.
           </p>
         </Reveal>
 

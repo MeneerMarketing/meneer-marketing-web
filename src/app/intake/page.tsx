@@ -47,7 +47,7 @@ export default function IntakePage() {
               steps={[
                 {
                   title: "Formulier (± 2 min)",
-                  body: "Waar je staat, wat je doel is, contactgegevens. Geen roman nodig.",
+                  body: "Waar je staat, wat je doel is, contactgegevens. Kort en helder.",
                 },
                 {
                   title: "30 minuten online",

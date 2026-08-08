@@ -331,7 +331,7 @@ export const EXTRA_FAQ_POOL: Record<SeoLandingCategory, readonly SeoLandingFaq[]
   "google-ads": [
     { question: "Wat maakt mijn {kw} anders dan een standaard bureau?", answer: "Ik bouw en optimaliseer zelf: site, landings, tracking, campagnes. Eén lijn van intake tot livegang." },
     { question: "Werk je ook voor kleinere budgetten?", answer: "Ja, als de rekensom klopt. Liever €800 strak dan €8.000 zonder plan." },
-    { question: "Hoe snel kunnen we starten met {kw}?", answer: "Intake en plan vaak binnen een week. Een audit is sneller dan een volledige site rebuild vóór ads." },
+    { question: "Hoe snel kan ik starten met {kw}?", answer: "Intake en plan vaak binnen een week. Een audit is sneller dan een volledige site rebuild vóór ads." },
     { question: "Moet ik al verkeer hebben voor {kw}?", answer: "Niet per se. Wel meetpunten. Zonder data is strategie gokken." },
     { question: "Wat als het niet werkt?", answer: "Dan zeg ik waarom en wat ik anders doe of stop. Cijfers bepalen, niet de kalender." },
     { question: "Beheer je Performance Max?", answer: "Ja, met schone feeds en duidelijke doelen. PMax zonder input is een gokautomaat." },

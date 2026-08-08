@@ -24,7 +24,7 @@ export function EeatCaseCredit({
         Case uitgevoerd door {BRAND_DISPLAY}
       </p>
       <p className="mt-3 text-sm leading-relaxed text-slate-600">
-        Echte klant ({client}), echte stack, echte cijfers waar we ze kunnen delen. Geen stockfoto,
+        Echte klant ({client}), echte stack, echte cijfers waar ik ze kan delen. Echte beelden,
         geen vage &ldquo;we hielpen een merk groeien&rdquo;-praat.
       </p>
       <div className="mt-5 flex flex-wrap items-baseline gap-2">

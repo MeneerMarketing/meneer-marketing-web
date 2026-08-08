@@ -90,7 +90,7 @@ const DEFAULT_HEADING = {
   eyebrow: "Het gesprek",
   title: "Typ alsof je me app't",
   subtitle:
-    "Geen formulier-gevoel. Wel dezelfde inbox bij mij. Scroll mee, klik een richting of typ gewoon los.",
+    "Chat-ervaring bij mij. Dezelfde inbox, scroll mee, klik een richting of typ gewoon los.",
 };
 
 function TypingIndicator() {
@@ -214,7 +214,7 @@ function ContactChatAside() {
         </div>
         <div className="flex items-start gap-3 text-slate-600">
           <ShieldCheck className="mt-0.5 size-4 shrink-0 text-[#FF5722]" aria-hidden />
-          <p>Direct bij mij. Geen CRM die je later nagaapt.</p>
+          <p>Direct bij mij. Jij praat met mij, niet met een CRM die je later nagaapt.</p>
         </div>
       </div>
     </aside>

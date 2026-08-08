@@ -12,7 +12,7 @@ const QUOTES = [
   "Plot twist: jij kent mij bijna. Ik ken jouw bedrijf nog nul procent. Oneerlijk hè.",
   "Ik ga je niks verkopen wat je niet nodig hebt. Slecht voor mijn omzet. Goed voor jou.",
   "Nog klikken? Dan ben je officieel nieuwsgierig. Dat is mijn favoriete type klant.",
-  "Geen chatbot. Geen stagiair. Gewoon ik. Met koffie klaar. Virtueel, maar echt.",
+  "Jij praat met mij. Chatbot of stagiair krijg je niet. Koffie klaar. Virtueel, maar echt.",
 ] as const;
 
 const BUBBLE_TAIL =

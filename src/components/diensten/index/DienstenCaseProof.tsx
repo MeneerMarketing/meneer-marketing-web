@@ -38,7 +38,7 @@ export function DienstenCaseProof() {
             {DIENSTEN_CASE_PROOF.title}
           </h2>
           <p className="mt-2 max-w-lg text-slate-600">
-            Geen stockfoto&apos;s. Wel portaal, shop en campagnes die ik echt heb gebouwd en run.
+            Portaal, shop en campagnes die ik echt heb gebouwd en run.
           </p>
         </Reveal>
 

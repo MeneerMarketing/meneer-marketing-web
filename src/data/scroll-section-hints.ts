@@ -9,7 +9,7 @@ export const SCROLL_SECTION_HINTS: Readonly<Record<string, string>> = {
 
   // USP-balk
   Specialismes:
-    "Vijf blokken, één aanspreekpunt. Geen 'dat doen wij niet' tussen door.",
+    "Vijf blokken, één aanspreekpunt. Alles uit één hand.",
 
   // Desktop
   services: "Mijn kantoor. Klik rond, zie wat ik bouw en fix.",

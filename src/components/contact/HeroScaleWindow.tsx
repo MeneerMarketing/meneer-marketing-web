@@ -22,7 +22,7 @@ const CHANNELS = [
 type ChannelId = (typeof CHANNELS)[number]["id"];
 
 /**
- * Schaal-op hero: equalizer + multiplier. Geen hub/spoke.
+ * Schaal-op hero: equalizer + multiplier. Equalizer-visual in plaats van hub/spoke.
  * Tik een kanaal: die bar pompt omhoog, de rest zakt, ×-factor springt mee.
  */
 export function HeroScaleWindow() {

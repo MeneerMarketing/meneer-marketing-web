@@ -24,7 +24,7 @@ const GOALS: RetentionGoal[] = [
   {
     id: "repeat",
     icon: Repeat,
-    label: "Geen herhaal",
+    label: "Eenmalige koop",
     title: "Klanten kopen één keer en verdwijnen",
     priority: ["E-mail", "Retentie", "Mailreeksen"],
     services: [
@@ -47,7 +47,7 @@ const GOALS: RetentionGoal[] = [
       { name: "E-mailmarketing", href: "/diensten/email" },
     ],
     outcome:
-      "Systemen die met elkaar praten. Geen dubbel werk, minder fouten, meer rust in je team.",
+      "Systemen die met elkaar praten. Minder dubbel werk, minder fouten, meer rust in je team.",
   },
   {
     id: "stil",

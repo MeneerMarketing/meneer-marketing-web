@@ -115,7 +115,7 @@ function ContactAsidePanel() {
         </div>
         <div className="flex items-start gap-3 text-slate-600">
           <ShieldCheck className="mt-0.5 size-4 shrink-0 text-[#FF5722]" aria-hidden />
-          <p>Geen CRM-automaat. Je praat direct met mij.</p>
+          <p>Je praat direct met mij. Ik lees alles zelf.</p>
         </div>
       </div>
     </aside>

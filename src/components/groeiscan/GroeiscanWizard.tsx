@@ -310,7 +310,7 @@ export function GroeiscanWizard() {
                     Waar sta je nu met je online groei?
                   </legend>
                   <p className="mt-2 text-sm text-slate-600">
-                    Geen examen. Alleen eerlijk. Hoe verder je staat, hoe meer punten op je stand.
+                    Eerlijk antwoord volstaat. Hoe verder je staat, hoe meer punten op je stand.
                   </p>
                   <div className="mt-5 grid gap-2 sm:grid-cols-2">
                     {GROEISCAN_SITUATIONS.map((s) => {
@@ -350,7 +350,7 @@ export function GroeiscanWizard() {
                     Wat kun je maandelijks investeren in groei?
                   </h2>
                   <p className="mt-2 text-sm text-slate-600">
-                    Geen verplichting. Wel realistisch. Meer budget = meer ruimte in je score en
+                    Vrijblijvend en realistisch. Meer budget = meer ruimte in je score en
                     route.
                   </p>
 
@@ -457,7 +457,7 @@ export function GroeiscanWizard() {
                     Wat heb je al staan?
                   </legend>
                   <p className="mt-2 text-sm text-slate-600">
-                    Vink aan wat je herkent. Geen vaktaal nodig. Meer stack = meer punten (max +45).
+                    Vink aan wat je herkent. Gewone taal volstaat. Meer stack = meer punten (max +45).
                   </p>
 
                   <div className="mt-4 flex flex-wrap gap-2">

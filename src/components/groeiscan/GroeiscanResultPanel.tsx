@@ -169,7 +169,7 @@ export function GroeiscanResultPanel({
             </p>
             <p className="mt-1 text-sm text-slate-300">
               Deze scan is je start. In 45 minuten maak ik er een concreet plan van met
-              jouw cijfers. Geen verkooppraatje, wel eerlijk advies.
+              jouw cijfers. Eerlijk advies op basis van data.
             </p>
           </div>
           <a

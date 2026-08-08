@@ -92,7 +92,7 @@ export const HOME_CASES: HomeCase[] = [
     homeHook: "B2B-portaal, SEO en ads. SEO eerst, ads als het fundament staat.",
     metric: "24/7",
     metricHint: "salons bestellen zelf via het portaal",
-    body: "Geen nieuwe shop from scratch. Wel een custom B2B-portaal, SEO, e-mailmarketing, Google Ads, Meta Ads en UGC via influencers. Alles op elkaar afgestemd.",
+    body: "Bestaande shop geoptimaliseerd met custom B2B-portaal, SEO, e-mailmarketing, Google Ads, Meta Ads en UGC via influencers. Alles op elkaar afgestemd.",
     challenge:
       "Salons bestelden via mail en Excel. Tegelijk moest het merk vindbaar worden, e-mail en ads moesten meewerken zonder budget te verbranden.",
     move:

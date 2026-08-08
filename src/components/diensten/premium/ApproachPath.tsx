@@ -18,7 +18,7 @@ const STEP_ICONS = [Compass, PenTool, Code2, Rocket] as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 /**
- * "Zo pakken we het aan" als route in plaats van gestapelde blokken:
+ * "Zo pak ik het aan" als route in plaats van gestapelde blokken:
  * een oranje lijn die meetekent met je scroll, met stations onderweg.
  */
 export function ApproachPath({ steps }: { steps: ApproachStep[] }) {

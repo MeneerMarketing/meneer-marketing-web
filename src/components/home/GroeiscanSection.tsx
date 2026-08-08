@@ -17,7 +17,7 @@ const HIGHLIGHTS = [
   },
   {
     icon: Compass,
-    title: "Geen verplichting",
+    title: "Vrijblijvend",
     body: "Snel beginnen, serieus eindigen. Wil je dieper? Plan daarna een echte sessie.",
   },
 ] as const;
@@ -52,8 +52,7 @@ export function GroeiscanSection() {
                 <span className="text-[#FF5722]">Meet je groeikracht.</span>
               </h2>
               <p className="mt-4 max-w-lg text-lg leading-relaxed text-slate-600">
-                Geen intake-formulier met twintig velden. Zes stappen, een score die oploopt
-                en welke route logisch is. Gratis scan, daarna plan je een sessie.
+                Zes stappen, een score die oploopt en welke route logisch is. Gratis scan, daarna plan je een sessie.
               </p>
             </Reveal>
 

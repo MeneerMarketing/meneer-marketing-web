@@ -22,7 +22,7 @@ export function DienstenIndexFaq() {
             id="diensten-faq-heading"
             className="mt-3 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
           >
-            Kort antwoord. Geen salespraat.
+            Kort antwoord. Recht door zee.
           </h2>
           <p className="mt-2 text-slate-600">
             Staat je vraag er niet tussen? Stel hem via contact of de intake.

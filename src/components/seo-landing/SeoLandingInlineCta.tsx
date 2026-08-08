@@ -77,7 +77,7 @@ export function SeoLandingInlineCta({
                 isDark ? "text-white/45" : "text-slate-500"
               }`}
             >
-              Geen verplichtingen · Reactie binnen 1 à 2 werkdagen · Je praat met mij
+              Vrijblijvend · Reactie binnen 1 à 2 werkdagen · Je praat met mij
             </p>
           </div>
         </Reveal>

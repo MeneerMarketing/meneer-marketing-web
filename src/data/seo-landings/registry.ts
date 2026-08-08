@@ -20,46 +20,42 @@ import {
   LANDING_PAGE_LATEN_MAKEN,
   MARKETING_AUTOMATISERING,
 } from "@/data/seo-landings/pages/national-extra";
+import { CONVERSIE_OPTIMALISATIE } from "@/data/seo-landings/pages/conversie-optimalisatie";
+import { TECHNISCHE_SEO } from "@/data/seo-landings/pages/technische-seo";
+import { LEADGENERATIE_WEBSITE } from "@/data/seo-landings/pages/leadgeneratie-website";
+import { CORE_WEB_VITALS } from "@/data/seo-landings/pages/core-web-vitals-verbeteren";
+import { GOOGLE_ADS_OF_SEO } from "@/data/seo-landings/pages/google-ads-of-seo";
+import { E_COMMERCE_MARKETING } from "@/data/seo-landings/pages/e-commerce-marketing";
+import { SHOPIFY_SEO } from "@/data/seo-landings/pages/shopify-seo";
+import { SEO_AUDIT } from "@/data/seo-landings/pages/seo-audit";
+import { SHOPIFY_OF_WOOCOMMERCE } from "@/data/seo-landings/pages/shopify-of-woocommerce";
+import { META_ADS_OF_GOOGLE_ADS } from "@/data/seo-landings/pages/meta-ads-of-google-ads";
+import { WOOCOMMERCE_NAAR_SHOPIFY } from "@/data/seo-landings/pages/woocommerce-naar-shopify";
+import { REMARKETING_GOOGLE_ADS } from "@/data/seo-landings/pages/remarketing-google-ads";
+import { LINKEDIN_ADS_BUREAU } from "@/data/seo-landings/pages/linkedin-ads-bureau";
+import { BUREAU_OF_FREELANCER_MARKETING } from "@/data/seo-landings/pages/bureau-of-freelancer-marketing";
 import {
-  CONVERSIE_OPTIMALISATIE,
   LOKALE_SEO,
-  TECHNISCHE_SEO,
-  E_COMMERCE_MARKETING,
   EMAILMARKETING,
   TIKTOK_ADS_BUREAU,
-  LEADGENERATIE_WEBSITE,
-  WOOCOMMERCE_NAAR_SHOPIFY,
 } from "@/data/seo-landings/pages/national-batch2";
+import { NEXTJS_WEBSITE_LATEN_MAKEN } from "@/data/seo-landings/pages/nextjs-website-laten-maken";
+import { LINKBUILDING_BUREAU } from "@/data/seo-landings/pages/linkbuilding-bureau";
+import { TRACKING_GOOGLE_ANALYTICS } from "@/data/seo-landings/pages/tracking-google-analytics";
+import { B2B_MARKETING_BUREAU } from "@/data/seo-landings/pages/b2b-marketing-bureau";
+import { ONLINE_MARKETING_MANAGER } from "@/data/seo-landings/pages/online-marketing-manager";
+import { PERFORMANCE_MARKETING_BUREAU } from "@/data/seo-landings/pages/performance-marketing-bureau";
+import { GOOGLE_MAPS_MARKETING } from "@/data/seo-landings/pages/google-maps-marketing";
+import { TRAGE_WEBSITE_DURE_ADS } from "@/data/seo-landings/pages/trage-website-dure-ads";
+import { SOCIAL_MEDIA_ADVERTISING } from "@/data/seo-landings/pages/social-media-advertising";
+import { PRODUCTPAGINA_SEO } from "@/data/seo-landings/pages/productpagina-seo";
+import { GROWTH_MARKETING_BUREAU } from "@/data/seo-landings/pages/growth-marketing-bureau";
+import { MARKETING_CONSULTANT_MKB } from "@/data/seo-landings/pages/marketing-consultant-mkb";
 import {
-  REMARKETING_GOOGLE_ADS,
-  SHOPIFY_SEO,
-  NEXTJS_WEBSITE_LATEN_MAKEN,
-  SEO_AUDIT,
-  LINKBUILDING_BUREAU,
-  ONLINE_MARKETING_MANAGER,
-  PERFORMANCE_MARKETING_BUREAU,
-  TRACKING_GOOGLE_ANALYTICS,
-} from "@/data/seo-landings/pages/national-batch3";
-import {
-  SOCIAL_MEDIA_ADVERTISING,
   UGC_MARKETING,
   INFLUENCER_MARKETING_BUREAU,
-  B2B_MARKETING_BUREAU,
-  PRODUCTPAGINA_SEO,
-  GOOGLE_MAPS_MARKETING,
-  GROWTH_MARKETING_BUREAU,
-  LINKEDIN_ADS_BUREAU,
   KLAVIYO_SPECIALIST,
-  CORE_WEB_VITALS,
-  MARKETING_CONSULTANT_MKB,
-  TRAGE_WEBSITE_DURE_ADS,
 } from "@/data/seo-landings/pages/national-batch4";
-import {
-  GOOGLE_ADS_OF_SEO,
-  SHOPIFY_OF_WOOCOMMERCE,
-  META_ADS_OF_GOOGLE_ADS,
-  BUREAU_OF_FREELANCER_MARKETING,
-} from "@/data/seo-landings/pages/national-batch4-vergelijk";
 import { NATIONAL_BATCH5_PAGES } from "@/data/seo-landings/pages/national-batch5";
 import { SEO_LANDING_CITY_PAGES } from "@/data/seo-landings/locations";
 

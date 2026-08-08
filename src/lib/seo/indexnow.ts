@@ -76,7 +76,7 @@ export async function submitToIndexNow(
       submitted: 0,
       batches: 0,
       scope,
-      message: "Geen URLs om in te dienen",
+      message: "Niets om in te dienen",
     };
   }
 

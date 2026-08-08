@@ -46,7 +46,7 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
     ],
     funFact:
       "40% van jongvolwassenen gebruikt AI als eerste stap vóór Google. Als je daar niet in het antwoord staat, ben je voor hen onzichtbaar.",
-    funFactSource: "Daarom optimaliseren we voor Google én AI",
+    funFactSource: "Daarom optimaliseer ik voor Google én AI",
     funFactStat: "40%",
     hubTitle: "Elk zoekvlak is een kans om gevonden te worden.",
     hubSubtitle:
@@ -93,7 +93,7 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
     ],
     funFact:
       "Duurt je site langer dan 3 seconden om te laden? Dan is de helft van je bezoekers al weg voordat ze iets zien. Snel bouwen is dus geen luxe.",
-    funFactSource: "Daarom testen we elke release op snelheid",
+    funFactSource: "Daarom test ik elke release op snelheid",
     funFactStat: "3 sec",
     hubTitle: "Elk onderdeel van je site is een vak apart.",
     hubSubtitle:
@@ -116,7 +116,7 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
     ],
     funFact:
       "Een nieuwe klant werven kost gemiddeld vijf keer meer dan een bestaande behouden. Toch gaat het meeste budget nog steeds naar acquisitie.",
-    funFactSource: "Daarom meten we in herhaalaankopen en LTV",
+    funFactSource: "Daarom meet ik in herhaalaankopen en LTV",
     funFactStat: "5×",
     hubTitle: "Vijf systemen. Eén klantmotor. Vastgehouden na de eerste koop.",
     hubSubtitle:

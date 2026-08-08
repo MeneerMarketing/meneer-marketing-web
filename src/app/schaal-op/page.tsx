@@ -66,9 +66,9 @@ export default function SchaalOpPage() {
           }
           intro={
             <>
-              Meer volume lost niet alles op. Eerst bepalen we waar de{" "}
+              Meer volume lost niet alles op. Eerst bepaal ik waar de{" "}
               <span className="font-semibold text-slate-900">grootste hefboom</span>{" "}
-              zit. Dan bouwen we eromheen.
+              zit. Dan bouw ik eromheen.
             </>
           }
           primaryCtaLabel="Start schaaltraject"

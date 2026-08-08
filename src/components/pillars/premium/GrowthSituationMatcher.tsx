@@ -66,7 +66,7 @@ const GOALS: GrowthGoal[] = [
   {
     id: "data",
     icon: BarChart2,
-    label: "Geen inzicht",
+    label: "Blind vliegen",
     title: "Je weet niet wat werkt",
     priority: ["Tracking", "Strategie", "CRO"],
     services: [

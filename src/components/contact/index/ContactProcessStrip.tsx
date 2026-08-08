@@ -80,7 +80,7 @@ export function ContactProcessStrip() {
           Wat gebeurt er na je bericht?
         </h2>
         <p className="mt-3 max-w-xl text-slate-400">
-          Geen black box. Tik een fase en zie hoe we schakelen.
+          Tik een fase en zie hoe ik schakel. Alles transparant.
         </p>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:items-stretch">

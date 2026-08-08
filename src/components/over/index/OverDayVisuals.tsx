@@ -148,7 +148,7 @@ function ChartVisual({ accent }: { accent: string }) {
         </div>
         <div className="mt-2 flex items-center gap-2 rounded-lg border border-emerald-200 bg-emerald-50 px-2.5 py-2">
           <TrendingUp className="size-3.5 shrink-0 text-emerald-600" aria-hidden />
-          <p className="text-[9px] font-bold text-emerald-800">ROAS omhoog. Geen gevoel, wel cijfers.</p>
+          <p className="text-[9px] font-bold text-emerald-800">ROAS omhoog. Cijfers die je kunt volgen.</p>
         </div>
       </div>
     </VisualFrame>
@@ -178,7 +178,7 @@ function CallVisual({ accent, ping }: { accent: string; ping: string }) {
         </div>
         <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2">
           <MessageCircle className="size-4 text-[#25D366]" aria-hidden />
-          <p className="text-[9px] font-bold text-slate-500">Geen slides. Wel antwoord.</p>
+          <p className="text-[9px] font-bold text-slate-500">Antwoord in plaats van slides.</p>
         </div>
       </div>
     </VisualFrame>
@@ -216,7 +216,7 @@ function DeployVisual({ accent }: { accent: string }) {
           <span className="text-sm font-black text-emerald-800">Live op productie</span>
         </motion.div>
         <p className="text-center text-[10px] font-bold text-slate-500">
-          Geen mapje final_v3_definitief_echt.
+          Liever iets kleins live dan iets groots in een mapje final_v3_definitief_echt.
         </p>
       </div>
     </VisualFrame>

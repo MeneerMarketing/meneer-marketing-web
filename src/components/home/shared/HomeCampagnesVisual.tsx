@@ -266,7 +266,7 @@ export function HomeCampagnesVisual({
             size === "desktop" ? "text-xs sm:text-sm" : "text-[11px]"
           }`}
         >
-          Geen moeilijke termen. Wel resultaat.{" "}
+          Gewone taal. Resultaat.{" "}
           <span className="text-[#FF5722]">Dat is het verschil.</span>
         </p>
       )}
