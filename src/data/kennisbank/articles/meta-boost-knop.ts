@@ -6,7 +6,8 @@ export const META_BOOST_KNOP: KennisbankArticle = {
   description:
     "Promoten op Instagram voelt productief. Meestal is het roulette met je merk. Zo zet je Meta Ads wél op als ondernemer met een plan.",
   publishedAt: "2026-07-09",
-  readMinutes: 8,
+  modifiedAt: "2026-08-08",
+  readMinutes: 10,
   category: "campagnes",
   keywords: [
     "facebook ads boosten",
@@ -15,10 +16,31 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     "meta ads voor ondernemers",
   ],
   dienstSlugs: ["meta-ads", "social-media", "ugc"],
+  faqs: [
+    {
+      question: "Is de Meta boost-knop ooit oké?",
+      answer:
+        "Voor een event of lokale aankondiging soms, met klein budget. Voor leads en omzet bijna nooit. Dan wil je Ads Manager met conversiedoelen.",
+    },
+    {
+      question: "Wat is het verschil tussen boosten en Meta Ads?",
+      answer:
+        "Boosten promoot één post op engagement. Echte Meta Ads sturen op conversies, audiences, creatives en landings. Meer controle, meer leerdata.",
+    },
+    {
+      question: "Waarom converteren mijn boosted posts niet?",
+      answer:
+        "Vaak geen pixel-doel, verkeer naar feed of homepage, creative zonder hook. Mooi bereik is geen funnel.",
+    },
+  ],
   sections: [
     {
       type: "p",
-      text: "Je post iets op Instagram. Het presteert matig. Er verschijnt een knop: Boost. Eén klik, budget instellen, klaar. Je voelt dat je iets doet. En dat is precies het probleem. De boost-knop is marketing voor mensen die geen tijd hebben om na te denken, ontworpen door een platform dat wíél heeft dat je budget uitgeeft. Het is niet per se kwaadaardig. Het is gewoon niet jouw strategie.",
+      text: "Je post iets op Instagram. Het presteert matig. Er verschijnt een knop: Boost. Eén klik, budget instellen, klaar. Je voelt dat je iets doet. En dat is precies het probleem. De boost-knop is marketing voor mensen die geen tijd hebben om na te denken, ontworpen door een platform dat wél heeft dat je budget uitgeeft. Het is niet per se kwaadaardig. Het is gewoon niet jouw strategie.",
+    },
+    {
+      type: "callout",
+      text: "Kort antwoord: wil je orders of leads, bouw campagnes in Ads Manager met pixel, landings en creatives. Boost alleen voor korte awareness met lage verwachting.",
     },
     {
       type: "h2",
@@ -31,15 +53,15 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     {
       type: "ul",
       items: [
-        "Geen controle over doelgroep buiten ruwe demografie en interesses.",
-        "Geen echte funnel: awareness, retargeting, conversie apart testen.",
-        "Geen landingspagina-match: je stuurt mensen naar je feed of homepage.",
-        "Geen leerdata die je campagnes slimmer maakt. Alleen 'deze post deed het iets beter'.",
+        "Weinig controle over doelgroep buiten ruwe demografie en interesses.",
+        "Geen echte funnel: cold, warm en hot apart testen.",
+        "Vaak verkeer naar feed of homepage in plaats van een landing.",
+        "Weinig leerdata die je volgende campagnes slimmer maakt.",
       ],
     },
     {
       type: "callout",
-      text: "Ongeveer 95% van je Instagram-bereik op ads is mobiel. Als je landingspagina daar niet voor gebouwd is, gooi je boost-geld rechtstreeks in de afvoer.",
+      text: "Ongeveer 95 procent van je Instagram-ads-bereik is mobiel. Als je landingspagina daar niet voor gebouwd is, gooi je boost-geld rechtstreeks in de afvoer.",
     },
     {
       type: "h2",
@@ -47,7 +69,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Eerlijk: voor een lokale aankondiging, een event, of 'we bestaan nog' kan boost even werken. Kort, klein budget, lage verwachting. Maar als je structureel producten wilt verkopen of leads wilt, is het alsof je elke dag loterij speelt in plaats van beleggen.",
+      text: "Voor een lokale aankondiging, een event, of we bestaan nog kan boost even werken. Kort, klein budget, lage verwachting. Maar als je structureel producten wilt verkopen of leads wilt, is het alsof je elke dag loterij speelt in plaats van beleggen.",
     },
     {
       type: "h2",
@@ -55,11 +77,11 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     },
     {
       type: "h3",
-      text: "Werk met Ads Manager (of iemand die dat voor je doet)",
+      text: "Ads Manager met een conversiedoel",
     },
     {
       type: "p",
-      text: "Campagnes met doel: conversies, leads, catalog sales. Pixel of Conversions API goed geïnstalleerd. Doelgroepen opgebouwd. Creatives die niet alleen mooi zijn, maar een hook hebben in de eerste twee seconden.",
+      text: "Campagnes met doel conversies, leads of catalog sales. Pixel of Conversions API goed geïnstalleerd. Doelgroepen opgebouwd. Creatives met een hook in de eerste twee seconden. Dat is Meta Ads bureau-werk, geen knop in de app.",
     },
     {
       type: "h3",
@@ -75,7 +97,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Belofte in de ad = belofte op de pagina. Geen homepage met twaalf menu-items. Eén doel. Eén CTA. Zelfde principe als Google Ads. Meta is niet magischer, alleen visueler.",
+      text: "Belofte in de ad is belofte op de pagina. Homepage met twaalf menu-items is hoe je CPA oploopt. Eén doel. Eén CTA. Zelfde principe als Google Ads.",
     },
     {
       type: "callout",
@@ -83,11 +105,11 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Meta + Google onder één dak",
+      text: "Meta en Google onder één dak",
     },
     {
       type: "p",
-      text: "Twee bureaus, twee verhalen, twee dashboards. Jij betaalt dubbel voor verwarring. Bij SkinComplete en andere klanten kijk ik naar beide kanalen in één strategie: wie zie je waar, welke creative hergebruik je, waar lekt de funnel. Meta is zelden het enige kanaal. Behandel het ook niet als een losse knop.",
+      text: "Twee bureaus, twee verhalen, twee dashboards. Jij betaalt dubbel voor verwarring. Bij SkinComplete en BestRest kijk ik naar beide kanalen in één strategie: wie zie je waar, welke creative hergebruik je, waar lekt de funnel. Meta is zelden het enige kanaal. Behandel het ook niet als een losse knop.",
     },
     {
       type: "h2",
@@ -95,7 +117,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Vraag: wat moet deze euro opleveren? Als het antwoord 'meer likes' is, boost. Als het antwoord 'orders' of 'afspraken' is, bouw een campagne met tracking en een pagina die converteert. De knop is snel. Goede marketing is dat ook, maar dan met een plan erachter.",
+      text: "Vraag: wat moet deze euro opleveren? Als het antwoord meer likes is, boost. Als het antwoord orders of afspraken is, bouw een campagne met tracking en een pagina die converteert. Op mijn Meta Ads bureau-hub leg ik de funnel uit zonder roulette.",
     },
   ],
 };

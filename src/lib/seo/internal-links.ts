@@ -242,6 +242,22 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
     { slug: "tracking-google-analytics", label: "Tracking & Google Analytics" },
     { slug: "google-ads-bureau", label: "Google Ads bureau" },
   ],
+  "performance-max-zwarte-doos": [
+    { slug: "google-ads-bureau", label: "Google Ads bureau" },
+    { slug: "google-shopping-ads", label: "Google Shopping ads" },
+  ],
+  "merchant-center-feed-afgekeurd": [
+    { slug: "google-shopping-ads", label: "Google Shopping ads" },
+    { slug: "google-ads-bureau", label: "Google Ads bureau" },
+  ],
+  "meta-boost-knop-budget-verbranden": [
+    { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
+    { slug: "ugc-marketing", label: "UGC marketing" },
+  ],
+  "klaviyo-flows-elke-shop-nodig": [
+    { slug: "e-mailmarketing", label: "E-mailmarketing" },
+    { slug: "webshop-laten-maken", label: "Webshop laten maken" },
+  ],
 };
 
 const ARTICLE_CASE_OVERRIDES: Partial<Record<string, string>> = {

@@ -168,43 +168,7 @@ export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
 
 export { UGC_MARKETING } from './ugc-marketing';
 
-export const INFLUENCER_MARKETING_BUREAU: SeoLandingPage = {
-  slug: "influencer-marketing-bureau",
-  primaryKeyword: "influencer marketing bureau",
-  category: "content",
-  metaTitle: "Influencer marketing bureau · creators met rendement | Meneer Marketing",
-  metaDescription: "Influencer marketing bureau dat creators koppelt aan conversie. UGC en ads die doorlopen.",
-  keywords: ["influencer marketing bureau", "influencer bureau nederland", "creator marketing"],
-  eyebrow: "Influencer marketing",
-  headline: "Influencer marketing bureau",
-  headlineAccent: "zonder alleen views te kopen.",
-  subheadline: "Een influencer met 200k volgers en nul conversies is een dure poster. Ik zoek creators die passen bij je product én je ads-strategie.",
-  pains: [
-    { title: "Views zonder track", body: "Pixel en code ontbreken. Onzichtbaar wat werkt." },
-    { title: "Verkeerde match", body: "Audience koopt niet wat je verkoopt." },
-    { title: "Eenmalige post", body: "Content verdwijnt na één plaatsing. Zonde van budget." },
-  ],
-  deliverables: [
-    { title: "Creator selectie", body: "Fit met merk en marge." },
-    { title: "Deals & rechten", body: "Content die je in ads mag gebruiken." },
-    { title: "UGC pipeline", body: "Niet één post, een stroom." },
-    { title: "Performance meten", body: "Wat levert het op, niet alleen bereik." },
-  ],
-  visual: "meta-ads",
-  processTitle: "Creators met plan",
-  processSteps: processDefault,
-  proofTitle: "Acquisitie & creators",
-  proofBody: "Influencer marketing werkt als het onderdeel is van je funnel, niet als losse hype.",
-  hotTake: { label: "Heet take", body: "Influencer marketing zonder landingspagina is fame zonder fortune." },
-  faq: [
-    { question: "Micro of macro?", answer: "Hangt af van product en budget. Vaak winnen micro + UGC." },
-  ],
-  ctaTitle: "Creators zoeken?",
-  ctaBody: "Vertel je doelgroep en marge.",
-  relatedSlugs: ["ugc-marketing", "social-media-advertising", "meta-ads-bureau"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { INFLUENCER_MARKETING_BUREAU } from './influencer-marketing-bureau';
 
 export const B2B_MARKETING_BUREAU: SeoLandingPage = {
   slug: "b2b-marketing-bureau",

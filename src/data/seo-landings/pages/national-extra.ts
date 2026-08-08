@@ -193,46 +193,7 @@ export { VINDBAARHEID_AI } from './vindbaarheid-ai';
 
 export { LANDING_PAGE_LATEN_MAKEN } from './landing-page-laten-maken';
 
-export const MARKETING_AUTOMATISERING: SeoLandingPage = {
-  slug: "marketing-automatisering",
-  primaryKeyword: "marketing automatisering",
-  category: "b2b-portal",
-  metaTitle: "Marketing automatisering · systemen koppelen | Meneer Marketing",
-  metaDescription:
-    "Marketing automatisering: leads, mail, CRM en shop aan elkaar. Minder handwerk, meer overzicht. n8n, Make en custom koppelingen.",
-  keywords: ["marketing automatisering", "marketing automation", "systemen koppelen marketing"],
-  eyebrow: "Automatisering",
-  headline: "Marketing automatisering zonder",
-  headlineAccent: "Excel-chaos.",
-  subheadline:
-    "Leads in mail, orders in WhatsApp, rapporten in vijf tools. Ik knoop systemen aan elkaar zodat jij kunt groeien in plaats van copy-pasten.",
-  pains: [
-    { title: "Handmatig werk", body: "Elke lead dubbel intypen. Foutgevoelig en traag." },
-    { title: "Attributie ontbreekt", body: "Niemand weet welke campagne welke klant bracht." },
-    { title: "Tool-spaghetti", body: "Tien apps die niet praten. Duur en irritant." },
-  ],
-  deliverables: [
-    { title: "Leadflows", body: "Formulier → CRM → mail → opvolging." },
-    { title: "E-commerce koppelingen", body: "Shop, voorraad, mail, ads-data." },
-    { title: "Rapportage", body: "Eén dashboard in plaats van vijf exports." },
-    { title: "Documentatie", body: "Je team snapt wat er gebeurt." },
-  ],
-  visual: "b2b-portal",
-  processTitle: "Automatisering die blijft werken",
-  processSteps: processDefault,
-  proofTitle: "E-commerce op autopilot",
-  proofBody: "SkinComplete-style flows: minder handwerk, meer tijd voor groei. Automatisering is geen luxe, het is schaal.",
-  hotTake: { label: "Heet take", body: "Marketing automatisering zonder iemand die je site en ads snapt, is duct tape op een lekkende pijp." },
-  faq: [
-    { question: "Welke tools?", answer: "Wat past bij je stack: n8n, Make, custom API's." },
-    { question: "Vervangt dit mijn team?", answer: "Nee. Het haalt rotwerk weg." },
-  ],
-  ctaTitle: "Minder handwerk?",
-  ctaBody: "Vertel welke systemen je gebruikt. Ik schets de koppelingen.",
-  relatedSlugs: ["b2b-portaal-bouwen", "online-marketing-bureau", "webshop-laten-maken"],
-  pillarSlug: "behoud",
-  pillarLabel: "Behoud",
-};
+export { MARKETING_AUTOMATISERING } from './marketing-automatisering';
 
 export const SEA_SPECIALIST: SeoLandingPage = {
   slug: "sea-specialist",
