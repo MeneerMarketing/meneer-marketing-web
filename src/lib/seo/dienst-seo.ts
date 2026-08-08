@@ -49,28 +49,28 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "strategie",
     title: "Tracking & analytics | meten wat echt oplevert | Meneer Marketing",
     description:
-      "GTM, GA4 en dashboards die kloppen vóór je ads aanzet. Geen ruis in je rapportages. Wel inzicht in welke euro's omzet geven.",
+      "GTM, GA4 en dashboards die kloppen vóór je ads aanzet. Inzicht in welke euro's omzet geven, zonder ruis in je rapportages.",
     keywords: ["google tag manager", "GA4 setup", "marketing analytics"],
   },
   webdevelopment: {
     pillar: "bouwen",
     title: "Websites from scratch | geen templates | Meneer Marketing",
     description:
-      "Custom build in Next.js: snel, veilig, klaar voor SEO en ads. Geen page builder die je groei remt. Ik bouw het fundament achter je marketing.",
+      "Custom build in Next.js: snel, veilig, klaar voor SEO en ads. Code die meegroeit met je marketing, geen page builder die je groei remt.",
     keywords: ["website laten bouwen", "custom website", "next.js development"],
   },
   "shopify-enterprise": {
     pillar: "bouwen",
     title: "Shopify | custom theme & B2B from scratch | Meneer Marketing",
     description:
-      "Shopify-shops from scratch: custom themes, B2B-portalen, feeds en snelheid. Geen template-chaos. Wel schaalbaar voor SEO, mail en ads.",
+      "Shopify-shops from scratch: custom themes, B2B-portalen, feeds en snelheid. Schaalbaar voor SEO, mail en ads, zonder template-chaos.",
     keywords: ["shopify development", "shopify expert", "shopify webshop laten maken"],
   },
   "web-apps": {
     pillar: "bouwen",
     title: "Webapps & portalen | minder mail, meer self-service | Meneer Marketing",
     description:
-      "Boekingsapps, B2B-portalen en interne tools from scratch. Rollen, koppelingen en UX die je team écht gebruikt. SkinComplete als referentie.",
+      "Boekingsapps, B2B-portalen en interne tools from scratch. Rollen, koppelingen en UX die je team écht gebruikt.",
     keywords: ["webapp laten bouwen", "B2B portaal", "boekingsapp"],
   },
   optimalisatie: {
@@ -84,7 +84,7 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "bouwen",
     title: "UI/UX design | ontwerp dat converteert | Meneer Marketing",
     description:
-      "Schermen die verkopen én vertrouwen geven. Conversiegedreven UI voor landings, checkout en productpagina's. Geen Dribbble-showcase zonder resultaat.",
+      "Schermen die verkopen én vertrouwen geven. Conversiegedreven UI voor landings, checkout en productpagina's. Resultaat boven Dribbble-showcase.",
     keywords: ["UI UX design", "conversie design", "landingspagina design"],
   },
   branding: {
@@ -105,7 +105,7 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "vindbaarheid",
     title: "SEO uitbesteden | landings die ranken | Meneer Marketing",
     description:
-      "SEO-traject: landingspagina's, techniek en content op echte zoekintentie. Organisch vóór ads. SkinComplete deed het zo. Plan en uitvoering bij mij.",
+      "SEO-traject: landingspagina's, techniek en content op echte zoekintentie. Organisch vóór ads. Plan en uitvoering bij mij.",
     keywords: ["SEO uitbesteden", "SEO traject", "zoekmachine optimalisatie"],
   },
   "ai-zoek": {
@@ -126,7 +126,7 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "vindbaarheid",
     title: "Contentmarketing | autoriteit die rankt | Meneer Marketing",
     description:
-      "Geen opgeblazen blogkalender. Wel pagina's die één vraag echt beantwoorden en verkopen. Content voor Google, AI-antwoorden en mensen.",
+      "Pagina's die één vraag echt beantwoorden en verkopen. Content voor Google, AI-antwoorden en mensen. Geen opgeblazen blogkalender.",
     keywords: ["contentmarketing", "SEO content", "content strategie"],
   },
   reviews: {
@@ -147,7 +147,7 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "campagnes",
     title: "Meta Ads | creatives die converteren | Meneer Marketing",
     description:
-      "Facebook en Instagram campagnes met targeting, creatives en landings die matchen. Geen boost-knop roulette. Wel meetbaar resultaat per euro.",
+      "Facebook en Instagram campagnes met targeting, creatives en landings die matchen. Meetbaar resultaat per euro, geen boost-knop roulette.",
     keywords: ["meta ads bureau", "facebook ads", "instagram ads"],
   },
   "social-media": {
@@ -168,7 +168,7 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "campagnes",
     title: "Influencer marketing | deals die renderen | Meneer Marketing",
     description:
-      "De juiste creators vinden, deals regelen en meten wat elke samenwerking oplevert. Geen vanity metrics. Wel content die in je ads en funnel landt.",
+      "De juiste creators vinden, deals regelen en meten wat elke samenwerking oplevert. Content die in je ads en funnel landt, geen vanity metrics.",
     keywords: ["influencer marketing", "creator deals", "influencer bureau"],
   },
   marketplaces: {
@@ -182,14 +182,14 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "campagnes",
     title: "Foto & video-ads | creatives voor campagnes | Meneer Marketing",
     description:
-      "Beeld en video die passen bij je hooks, doelgroepen en kanalen. Formats voor Google, Meta en social. Geen stock die iedereen al gebruikt.",
+      "Beeld en video die passen bij je hooks, doelgroepen en kanalen. Formats voor Google, Meta en social. Eigen beelden, geen stock die iedereen al gebruikt.",
     keywords: ["video ads", "commercial fotografie", "ad creatives"],
   },
   email: {
     pillar: "behoud",
     title: "E-mailmarketing | flows die verkopen terwijl je slaapt | Meneer Marketing",
     description:
-      "Welkom, abandoned cart, post-purchase en win-back via Klaviyo of Shopify. Geen spam. Wel mails op het moment dat ze logisch zijn, meetbaar in omzet.",
+      "Welkom, abandoned cart, post-purchase en win-back via Klaviyo of Shopify. Mails op het moment dat ze logisch zijn, meetbaar in omzet.",
     keywords: ["e-mailmarketing", "klaviyo specialist", "email flows shopify"],
   },
   retentie: {
@@ -210,14 +210,14 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "behoud",
     title: "Shop workflows | orders & mail in sync | Meneer Marketing",
     description:
-      "Orders, voorraad, facturatie en klantmail in één keten. Geen gekopieer tussen Shopify, boekhouding en inbox. Minder fouten, snellere fulfilment.",
+      "Orders, voorraad, facturatie en klantmail in één keten. Minder fouten en snellere fulfilment, zonder gekopieer tussen Shopify, boekhouding en inbox.",
     keywords: ["e-commerce workflows", "shopify automatisering", "order automatisering"],
   },
   chatbots: {
     pillar: "behoud",
     title: "AI-chatbots | 24/7 op jouw tone of voice | Meneer Marketing",
     description:
-      "Chat die antwoordt op basis van jouw FAQ, productdata en tone of voice. Slim waar het past, menselijk waar het moet. Geen generieke bot-antwoorden.",
+      "Chat die antwoordt op basis van jouw FAQ, productdata en tone of voice. Slim waar het past, menselijk waar het moet.",
     keywords: ["AI chatbot website", "klantenservice automatisering", "chatbot e-commerce"],
   },
 };

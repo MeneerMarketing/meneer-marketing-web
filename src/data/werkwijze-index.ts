@@ -41,9 +41,9 @@ export const WERKWIJZE_PHASES: WerkwijzePhase[] = [
     tag: "Routekaart",
     title: "Volgorde die rendeert",
     headline: "Max drie focuspunten. De rest wacht geduldig.",
-    body: "Niet alles tegelijk. Soms techniek eerst, soms SEO, soms ads. SkinComplete begon organisch, ads kwamen pas toen het verkocht. BestRest kreeg per product een eigen koers.",
+    body: "Niet alles tegelijk. Soms techniek eerst, soms SEO, soms ads. Organisch vóór paid is vaak de slimme volgorde. Per product of lijn kan de route anders zijn.",
     punchline: "Alles tegelijk is een verzekering dat niets af komt.",
-    tags: ["Volgorde per kanaal", "Meetplan", "SkinComplete-logica"],
+    tags: ["Volgorde per kanaal", "Meetplan", "SEO vóór paid"],
     scene: "route",
     metric: { label: "Focus", value: "Max 3" },
   },
@@ -52,8 +52,8 @@ export const WERKWIJZE_PHASES: WerkwijzePhase[] = [
     tag: "Bouwen & meten",
     title: "From scratch, met cijfers",
     headline: "Live zetten met meetpunten vanaf dag één.",
-    body: "Websites from scratch, Shopify, Google Ads, Meta Ads, koppelingen. Jij ziet wat live gaat, wat het meet en waarom we iets aanpassen. Geen zwarte doos achter een agency-portaal.",
-    punchline: "Mooi zonder cijfers is een hobby. Geen groei.",
+    body: "Websites from scratch, Shopify, Google Ads, Meta Ads, koppelingen. Jij ziet wat live gaat, wat het meet en waarom ik iets aanpas. Alles transparant, geen zwarte doos achter een agency-portaal.",
+    punchline: "Mooi zonder cijfers is een hobby. Groei vraagt data.",
     tags: ["Custom build", "Tracking", "Core Web Vitals"],
     scene: "build",
     metric: { label: "Tempo", value: "Sprints" },
@@ -63,7 +63,7 @@ export const WERKWIJZE_PHASES: WerkwijzePhase[] = [
     tag: "Sturen",
     title: "Leren en opschalen",
     headline: "Winnaars krijgen gas. Rest gaat eruit.",
-    body: "Live betekent leren. We sturen bij op data én op wat jij merkt in de praktijk. Maandelijks scherp. Budget verschuift naar wat rendeert.",
+    body: "Live betekent leren. Ik stuur bij op data én op wat jij merkt in de praktijk. Maandelijks scherp. Budget verschuift naar wat rendeert.",
     punchline: "Opschalen is geen knop. Het is een gewoonte.",
     tags: ["Maandelijks sturen", "Budget verschuiven", "Eerlijk stoppen"],
     scene: "steer",
@@ -83,9 +83,9 @@ export interface WerkwijzeClientPath {
 
 export const WERKWIJZE_CLIENT_PATHS: WerkwijzeClientPath[] = [
   {
-    id: "skincomplete",
-    name: "SkinComplete",
-    tagline: "Shopify B2B-portaal, SEO eerst",
+    id: "b2b-shop",
+    name: "B2B-webshop",
+    tagline: "Portaal, SEO eerst, ads later",
     body: "Eerst organisch verkeer domineren. Pas toen dat verkocht, ads aangezet. Portaal from scratch, e-mailmarketing opgezet, alles op één lijn.",
     steps: [
       { label: "SEO & content", detail: "Organisch vóór paid" },
@@ -94,12 +94,12 @@ export const WERKWIJZE_CLIENT_PATHS: WerkwijzeClientPath[] = [
       { label: "Ads opschalen", detail: "Toen het al verkocht" },
     ],
     accent: "#45382C",
-    quip: "Ads pas toen de site al convert. Logische volgorde, geen ego.",
+    quip: "Ads pas toen de site al convert. Logische volgorde.",
   },
   {
-    id: "bestrest",
-    name: "BestRest",
-    tagline: "Matrassen, eigen strategie per lijn",
+    id: "ecom-multi",
+    name: "E-commerce multi-lijn",
+    tagline: "Eigen strategie per productlijn",
     body: "Per product een andere route: vindbaarheid, landings, campagnes. Compleet eigen aanpak, want elke klant krijgt die.",
     steps: [
       { label: "Strategie per product", detail: "Eigen playbook per lijn" },
@@ -108,7 +108,7 @@ export const WERKWIJZE_CLIENT_PATHS: WerkwijzeClientPath[] = [
       { label: "Doorsturen op data", detail: "Budget naar winnaars" },
     ],
     accent: "#0284C7",
-    quip: "Toppers en matrassen vragen om andere hooks. Logisch.",
+    quip: "Verschillende producten vragen om andere hooks. Logisch.",
   },
 ];
 
@@ -150,13 +150,13 @@ export const WERKWIJZE_WEL = {
     },
     {
       title: "Één senior die het uitvoert",
-      body: "Jij praat met mij. Ik bouw, meet en stuur bij. Geen keten van juniors die je dossier net opent.",
+      body: "Jij praat met mij. Ik bouw, meet en stuur bij. Eén senior die je dossier kent, geen keten van juniors.",
       quip: "Accountmanager die je shop googelt = rode vlag.",
       emoji: "👋",
     },
     {
       title: "Cijfers die actie opleveren",
-      body: "ROAS, CPA, organisch verkeer: in normale taal. Geen kwartaaldeck van 40 slides.",
+      body: "ROAS, CPA, organisch verkeer: in normale taal. Drie regels die actie geven, geen kwartaaldeck van 40 slides.",
       quip: "Mooie grafiek zonder beslissing is decoratie.",
       emoji: "📊",
     },
@@ -226,7 +226,7 @@ export const WERKWIJZE_FAQ = [
   {
     question: "Werk je met vaste pakketten?",
     answer:
-      "Nee. Elk bedrijf krijgt een mix op maat. SkinComplete anders dan BestRest. Jij krijgt wat bij jouw fase past, niet wat bij de vorige klant werkte.",
+      "Elk bedrijf krijgt een mix op maat. Soms eerst SEO, soms per productlijn een eigen route. Jij krijgt wat bij jouw fase past, niet wat bij de vorige klant werkte.",
   },
   {
     question: "Moet alles bij jou?",
@@ -242,5 +242,5 @@ export const WERKWIJZE_FAQ = [
 
 export const WERKWIJZE_CTA = {
   title: "Klaar om te weten wat bij jou eerst moet?",
-  body: "Vul de intake in. Twee minuten. Daarna plannen we een gesprek van dertig minuten. Geen verplicht traject, wel helderheid.",
+  body: "Vul de intake in. Twee minuten. Daarna plannen we een gesprek van dertig minuten. Verplicht traject niet, wel helderheid.",
 } as const;

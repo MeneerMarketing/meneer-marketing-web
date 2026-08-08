@@ -2,7 +2,7 @@ export const CONTACT_HERO = {
   eyebrow: "Contact",
   title: "Gewoon even praten.",
   subtitle:
-    "Geen standaard contactformulier met dropdowns en corporate tone. Dit voelt als een gesprek. Typ wat je wilt: marketing, je site, een idee, of gewoon 'hoi, kunnen we bellen?'",
+    "Een gesprek, geen standaard contactformulier met dropdowns en corporate tone. Typ wat je wilt: marketing, je site, een idee, of gewoon 'hoi, kunnen we bellen?'",
   stats: [
     { label: "Reactietijd", value: "1–2 dagen" },
     { label: "Tussenlaag", value: "Nul" },
@@ -11,7 +11,7 @@ export const CONTACT_HERO = {
 } as const;
 
 export const CONTACT_CHAT_OPENERS = [
-  "Hoi. Je hebt me te pakken. Geen chatbot die 'ik begrijp het' zegt en niks doet.",
+  "Hoi. Je hebt me te pakken. Ik ben geen chatbot die 'ik begrijp het' zegt en niks doet.",
   "Marketing, je site, Shopify, ads, automatisering... of gewoon even je situatie uiten. Allemaal goed.",
   "Je hoeft me niet te vertellen welke pizza je gisteren at. Tenzij het je conversie-ratio raakt. Grapje. Praat gewoon.",
 ] as const;
@@ -36,7 +36,7 @@ export const CONTACT_QUICK_REPLIES: ContactQuickReply[] = [
     label: "Even sparren",
     onderwerp: "anders",
     meneerReply:
-      "Lekker. Geen salespitch nodig. Eerst even scherp krijgen waar je zit.",
+      "Lekker. Eerst even scherp krijgen waar je zit. Salespitch hoeft niet.",
     focusOptions: [
       {
         id: "begin",
@@ -60,7 +60,7 @@ export const CONTACT_QUICK_REPLIES: ContactQuickReply[] = [
         id: "ideas",
         label: "Gewoon ideeën uitwisselen",
         meneerReply:
-          "Mooi. Geen verplicht plan. Vertel waar je over nadenkt.",
+          "Mooi. Vertel waar je over nadenkt. Verplicht plan hoeft niet.",
       },
     ],
   },
@@ -168,7 +168,7 @@ export const CONTACT_QUICK_REPLIES: ContactQuickReply[] = [
     label: "Geen idee nog",
     onderwerp: "anders",
     meneerReply:
-      "Ook prima. Geen stress. Kies wat het dichtst in de buurt komt.",
+      "Ook prima. Kies wat het dichtst in de buurt komt. Rustig aan.",
     focusOptions: [
       {
         id: "stuck",
@@ -202,7 +202,7 @@ export const CONTACT_CHAT_PROMPTS = {
   askFocus: "Waar zit je hoofd nu? Kies wat het dichtst in de buurt komt.",
   askMessage: "Nu jij. Typ wat je wilt delen. Kort mag, lang mag ook.",
   askName: "Top. En wie ben jij? Naam en e-mail, dan kan ik terugkoppelen.",
-  askSend: "Klaar om te versturen? Ik lees alles zelf. Geen automaat.",
+  askSend: "Klaar om te versturen? Ik lees alles zelf. Persoonlijk, geen automaat.",
   sent: "Bedankt. Staat in mijn inbox. Reactie binnen één à twee werkdagen.",
   teaserContinue:
     "Mooi. Vertel het verder op contact. Dan zit je meteen in mijn inbox.",
@@ -232,7 +232,7 @@ export const CONTACT_ROUTES: ContactRoute[] = [
   {
     id: "mail",
     title: "Direct mailen",
-    body: "Liever je eigen woorden in de mail? Prima. Onderwerp en context helpen ons direct schakelen.",
+    body: "Liever je eigen woorden in de mail? Prima. Onderwerp en context helpen mij direct schakelen.",
     quip: "Ik lees ook mails met alleen 'hoi, kunnen we bellen?'",
     href: "mailto:info@meneermarketing.nl",
     external: true,
@@ -264,7 +264,7 @@ export const CONTACT_PROCESS = [
   {
     tag: "Gesprek",
     title: "Kennismaking of intake",
-    body: "Kort gesprek na je aanvraag. Geen verplicht traject, wel helderheid.",
+    body: "Kort gesprek na je aanvraag. Verplicht traject niet, wel helderheid.",
   },
   {
     tag: "Voorstel",
@@ -338,17 +338,17 @@ export const CONTACT_FAQ = [
   {
     question: "Werk je met vaste pakketten?",
     answer:
-      "Nee. Elk traject is anders. SkinComplete begon met SEO. BestRest kreeg een eigen koers per product. Jij krijgt wat bij jouw fase past.",
+      "Elk traject is anders. Soms eerst SEO, soms een eigen koers per product. Jij krijgt wat bij jouw fase past.",
   },
   {
     question: "Kan ik ook alleen even sparren?",
     answer:
-      "Ja. Geen verplicht vervolgtraject. Wel een eerlijk gesprek over wat zinvol is en wat niet.",
+      "Ja. Verplicht vervolgtraject niet. Wel een eerlijk gesprek over wat zinvol is en wat niet.",
   },
   {
     question: "Waar komen mijn gegevens terecht?",
     answer:
-      "Direct bij mij via info@meneermarketing.nl. Geen CRM-automaat die je drie dagen later een generieke follow-up stuurt.",
+      "Direct bij mij via info@meneermarketing.nl. Ik reageer zelf, geen CRM-automaat die je drie dagen later een generieke follow-up stuurt.",
   },
 ] as const;
 

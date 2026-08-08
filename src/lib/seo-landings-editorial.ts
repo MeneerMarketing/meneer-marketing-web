@@ -255,7 +255,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         title: "Google Ads bureau inhuren zonder leergeld",
         paragraphs: [
           "Je hebt een bureau gehad. Of een freelancer die op Start drukte. Dashboard vol kliks, bankrekening stil. Meestal liegt de site, niet het budget. Broad match vreet marge. Niemand leest het zoektermenrapport.",
-          "Ik begin bij wat er ná de klik gebeurt. Landings, tracking, marge per productgroep. SkinComplete draaide ads pas na organisch bewijs. BestRest kreeg per matras een eigen aanpak.",
+          "Ik begin bij wat er ná de klik gebeurt. Landings, tracking, marge per productgroep. Ads pas na organisch bewijs. Per productlijn een eigen aanpak.",
           "Google Ads bureau bij mij is één iemand die je account leest alsof het zijn eigen geld is. En je site aanpast als die dat vraagt.",
         ],
       },
@@ -316,7 +316,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         title: "Hoger in Google zonder rapportenla",
         paragraphs: [
           "Je wilt hoger in Google. Je krijgt tips, blogs, soms links. Zes maanden later sta je op pagina twee voor een term die niemand koopt. De site is nog steeds traag op mobiel.",
-          "Ik bouw de pagina's die moeten ranken. Techniek, schema, interne links, copy die antwoord geeft. SkinComplete domineerde salonvragen organisch voordat ads live gingen.",
+          "Ik bouw de pagina's die moeten ranken. Techniek, schema, interne links, copy die antwoord geeft. Organisch eerst op koopintentie, ads daarna.",
           "Hoger in Google is bij mij meetbaar in posities én in wat die posities opleveren. Niet in aantal blogs.",
         ],
       },
@@ -358,7 +358,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         visual: "email-flow",
         eyebrow: "B2B portaal",
         title: "Salons bestellen zelf. Jij typt minder orders over.",
-        caption: "Prijzen, herbestellen, facturen. SkinComplete-route.",
+        caption: "Prijzen, herbestellen, facturen. B2B-portaal op Shopify.",
       },
     ],
     enrichedOverrides: {
@@ -366,7 +366,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         title: "B2B portaal bouwen zonder Excel-chaos",
         paragraphs: [
           "Je B2B-klanten mailen orders. Jij typt ze over. Fouten, vertraging, niemand weet welke prijs gold. Een portaal klinkt duur tot je uren gaat tellen.",
-          "Ik bouw portalen op Shopify die salons en groothandel begrijpen. Prijslijsten, herbestellen, login. SkinComplete draait zo. Minder mail, sneller cashflow.",
+          "Ik bouw portalen op Shopify die salons en groothandel begrijpen. Prijslijsten, herbestellen, login. Zakelijke klanten bestellen zelf. Minder mail, sneller cashflow.",
           "B2B portaal bouwen is bij mij custom code dat blijft draaien. Gebouwd voor salons en groothandel.",
         ],
       },
@@ -385,7 +385,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         placement: "after-aanpak",
         visual: "metrics-dashboard",
         eyebrow: "Beslisboom",
-        title: "SkinComplete deed SEO eerst. Dat was geen toeval.",
+        title: "SEO eerst, ads daarna. Dat is geen toeval.",
         caption: "Organisch bewijs, dan pas budget omhoog.",
       },
     ],
@@ -394,7 +394,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         title: "Google Ads of SEO: het eerlijke antwoord",
         paragraphs: [
           "Iedereen wil één antwoord. Ads voor snel. SEO voor goedkoop op termijn. Maar de echte vraag is: wat is je site waard als verkeer komt? Traag en vaag? Dan helpen beide niet.",
-          "SkinComplete rankte eerst op salonvragen. Daarna ads. BestRest per product bekeken. Logica op marge en tijdlijn.",
+          "Organisch eerst op koopintentie, daarna ads. Per product bekeken. Logica op marge en tijdlijn.",
           "Ik help je kiezen wat eerst. En ik voer het uit. Eén aanspreekpunt, één lijn voor je budget.",
         ],
       },
@@ -610,7 +610,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         title: "Website laten maken: waar het misgaat",
         paragraphs: [
           "Je zoekt iemand die een site neerzet. Je krijgt een template met jouw logo, een page builder die traag wordt en een bouwer die na oplevering niet meer opneemt. Zes maanden later wil je adverteren en blijkt je landingspagina drie seconden te laden.",
-          "Ik bouw from scratch in Next.js of Shopify custom. Snelheid, SEO, conversie en tracking zitten erin vóór je de link deelt. SkinComplete en BestRest zijn zo gebouwd. Uniek thema, custom build.",
+          "Ik bouw from scratch in Next.js of Shopify custom. Snelheid, SEO, conversie en tracking zitten erin vóór je de link deelt. Custom build, uniek thema, klaar voor campagnes.",
           "Website laten maken bij mij is: één iemand die code schrijft, je vindbaarheid regelt en je site klaarmaakt voor campagnes. Eén lijn van bouwen tot campagnes.",
         ],
       },
@@ -638,7 +638,7 @@ const SLUG_OVERRIDES: Partial<Record<string, EditorialConfig>> = {
         title: "SEO specialist inhuren zonder rapportenla",
         paragraphs: [
           "Je hebt een SEO specialist gehad. Of een bureau. Je kreeg maandrapporten, soms blogs, zelden een pagina die echt rankt op koopintentie. De specialist bleef bij rapporten. De developer snapte SEO niet.",
-          "Ik doe beide. Keyword-plan, technische fixes, landings schrijven en bouwen. SkinComplete rankte op salonvragen voordat ads gingen draaien. Dat is hoe een SEO specialist waarde moet leveren.",
+          "Ik doe beide. Keyword-plan, technische fixes, landings schrijven en bouwen. Organisch eerst op koopintentie, ads daarna. Dat is hoe een SEO specialist waarde moet leveren.",
           "12 jaar Google. Pagina's die helpen, schema dat klopt en eerlijk advies als ads slimmer zijn dan nog een blog.",
         ],
       },

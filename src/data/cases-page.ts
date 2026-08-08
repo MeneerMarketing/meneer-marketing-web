@@ -49,12 +49,12 @@ export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
         text: "Salons loggen in en bestellen zelf. Organisch verkeer en mail dragen omzet. Ads schalen op een fundament dat al werkt. Influencers leveren content voor campagnes.",
       },
     ],
-    punch: "24/7 bestellen. Organisch vóór paid. Geen gok met adsbudget.",
+    punch: "24/7 bestellen. Organisch vóór paid. Ads op een fundament dat al werkt.",
   },
   bestrest: {
     hook: "Miljoenenbudgetten in matrassenland. BestRest moest opvallen, niet schreeuwen.",
     meneerLine:
-      "Custom Shopify from scratch. Per productlijn eigen SEO, mail en ads. Geen copy-paste funnel.",
+      "Custom Shopify from scratch. Per productlijn eigen SEO, mail en ads. Elke lijn kreeg een eigen route.",
     beats: [
       {
         label: "Zo begon het",
@@ -74,7 +74,7 @@ export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
   "hills-pilates": {
     hook: "Lessen, mails en boekingen zaten allemaal in losse tools. Niets praatte met elkaar.",
     meneerLine:
-      "Website, boekingsapp en mails in één lijn. From scratch. Geen template, geen puzzel.",
+      "Website, boekingsapp en mails in één lijn. From scratch. Eén stack, geen losse puzzel.",
     beats: [
       {
         label: "Zo begon het",
@@ -89,7 +89,7 @@ export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
         text: "Klanten boeken via de app. Hills ziet alles op één plek. Site, mail en app trekken dezelfde kant op.",
       },
     ],
-    punch: "Site, app en mail. Eén lijn. Geen losse tools meer.",
+    punch: "Site, app en mail. Eén lijn. Alles op dezelfde stack.",
   },
 };
 
@@ -102,7 +102,7 @@ export const CASES_PAGE_CTA = {
 export const CASES_PAGE_PROOF = {
   eyebrow: "Live check",
   title: "Drie links die je zelf opent.",
-  titleAccent: "Geen mockup-map.",
+  titleAccent: "Alles live op productie.",
   lead: "Alles wat je hierboven zag draait ergens op productie. Ik hoef je geen deck te sturen. Klik, kijk, oordeel.",
   meneerQuip: "Staat de URL niet live? Dan staat het niet op deze pagina.",
   receiptLabel: "Trajectbon",
@@ -122,7 +122,7 @@ export const CASES_PAGE_WERKWIJZE = {
     route:
       "BestRest kreeg per matras een andere route. Toppers zijn geen matrassen. Logisch.",
     bouwen:
-      "Hills kreeg site, app en mail in één lijn. Geen vijf losse abonnementen die niet praten.",
+      "Hills kreeg site, app en mail in één lijn. Vijf losse abonnementen die niet praten? Dat was het oude model.",
     sturen:
       "Ads opschalen als het al verkocht. Anders gok je met iemand anders zijn budget.",
   },
@@ -147,7 +147,7 @@ export const CASES_PAGE_HONEST = {
     "Update in normale taal: wat live staat en wat het doet",
     "Route op maat. SkinComplete ≠ BestRest ≠ Hills",
   ],
-  meneerLine: "Ik groei als jij groeit. Geen agency-praat. Wel iemand die meedenkt en doorpakt.",
+  meneerLine: "Ik groei als jij groeit. Direct advies, geen agency-praat. Iemand die meedenkt en doorpakt.",
 } as const;
 
 export const CASES_PAGE_FUN_FACTS_TITLE = "Feitjes die je case raken";

@@ -98,7 +98,7 @@ export const CITY_VOICE: Record<string, CityVoiceProfile> = {
     vibe: "thuisbasis van Meneer Marketing: koninklijk groen, Veluwe, MKB dat werkt en weinig poespas wil",
     zoekgedrag: "Apeldoorn en de Veluwe zoeken lokaal met vertrouwen: 'bij mij in de buurt', duidelijke dienst, geen Randstad-bureau dat de A1 alleen kent als file",
     detail: "Van centrum en Osseveld tot Beekbergen, Ugchelen en de bedrijventerreinen richting Deventer en Arnhem. Je markt is Veluwe, Gelderland en steeds vaker landelijk als je site en campagnes meeschalen.",
-    ondernemerstype: "nuchtere ondernemers die resultaat willen zien. Geen maandrapport met groene pijltjes. Wel omzet, leads en een plan dat je begrijpt",
+    ondernemerstype: "nuchtere ondernemers die resultaat willen zien. Omzet, leads en een plan dat je begrijpt, niet alleen groene pijltjes in een maandrapport",
   },
   Ede: {
     vibe: "Wageningen naast de deur, defensie, ondernemers die werken",
@@ -222,10 +222,10 @@ export const APELDOORN_STORY_TITLES: readonly string[] = [
 ];
 
 export const APELDOORN_STORY_BODY: readonly string[] = [
-  "Ik ben gevestigd in Apeldoorn. Geen virtueel kantoor in Amsterdam met een postbus op de Veluwe. Als we afspreken, is dat hier of online met schermen open: je account, je site, je cijfers.",
+  "Ik ben gevestigd in Apeldoorn. Echt hier, met een echt adres op de Veluwe. Als jij en ik afspreken, is dat hier of online met schermen open: je account, je site, je cijfers.",
   "{kw} in Apeldoorn betekent voor mij: je concurreert met lokale ondernemers én met bureaus uit de Randstad die jouw regio targeten met ads. Dan wil je landings die snel zijn en een plan dat je marge kent.",
   "Van Osseveld tot Ugchelen, van Beekbergen tot centrum: je klant zoekt 'bij mij in de buurt'. Je Google Business Profile, je site en je campagnes moeten hetzelfde verhaal vertellen.",
-  "SkinComplete en BestRest deed ik niet vanuit een template. Apeldoornse en Brabantse ondernemers krijgen hetzelfde: custom build, eerst fundament, dan schalen. Geen copy-paste.",
+  "Elk traject deed ik niet vanuit een template. Apeldoornse en Brabantse ondernemers krijgen hetzelfde: custom build, eerst fundament, dan schalen.",
   "Ik werk veel op de Veluwe en in Gelderland, en landelijk als het project past. {kw} is geen postcodewedstrijd. Het is wel makkelijker als je partner weet hoe de regio zoekt.",
   "Apeldoorn heeft meer ondernemerschap dan mensen denken. Logistiek, dienstverlening, retail, B2B. Allemaal typen '{kw}' anders. Jij wilt iemand die dat snapt zonder uitleg over de A1.",
   "Als je ads draaien op een site die op mobiel traag is, zie ik dat hier eerder dan een bureau in Utrecht. Ik test lokaal, op 4G, op de telefoon die je klant ook heeft.",
@@ -315,7 +315,7 @@ export const STORY_TITLES: Record<SeoLandingCategory, readonly string[]> = {
     "Je shop draait. Maar groeit hij?",
     "De app-store die je CWV vermoordde",
     "Theme-store met je logo is geen merk",
-    "SkinComplete deed het anders. Jij kunt dat patroon volgen.",
+    "Sterke shops bouw ik anders. Jij kunt dat patroon volgen.",
     "Je feed is afgekeurd en niemand las de foutmelding",
     "WooCommerce migratie zonder redirects is SEO-zelfmoord",
     "B2B op Shopify is geen mythe. Het is configuratie.",
@@ -343,7 +343,7 @@ export const STORY_TITLES: Record<SeoLandingCategory, readonly string[]> = {
     "Je B2B-klant bestelt bij de concurrent omdat die een portaal heeft",
     "Handmatig orderverwerken schaalt niet. Jij wel, met pijn.",
     "n8n is geen speelgoed. Het is je team zonder burn-out.",
-    "SkinComplete salons bestelden anders. Jouw proces kan ook.",
+    "B2B-klanten bestelden anders via portaal. Jouw proces kan ook.",
     "Koppelingen zijn saai. Foutieve orders zijn duur.",
     "Je verkoopt aan bedrijven alsof het 2004 is",
   ],
@@ -360,8 +360,8 @@ export const COFFEE_CHATS: Record<
         { who: "ondernemer", text: "We zetten €3.000 per maand in Google Ads. Waarom komen er geen aanvragen?" },
         { who: "meneer", text: "Laat me je zoektermenrapport zien. ... Oké. Je betaalt voor 'gratis {kw}'. Dat zijn mensen die nooit betalen." },
         { who: "ondernemer", text: "Maar Google zei dat broad match slim leren is." },
-        { who: "meneer", text: "Google leert van jouw data. Als jouw data rommel is, leert het rommel. We beginnen met strakke intentie en een landingspagina die niet op mobiel crasht." },
-        { who: "stem", text: "(Je telefoon: 47 notificaties van je ads-account. Geen enkele lead.)" },
+        { who: "meneer", text: "Google leert van jouw data. Als jouw data rommel is, leert het rommel. Ik begin met strakke intentie en een landingspagina die niet op mobiel crasht." },
+        { who: "stem", text: "(Je telefoon: 47 notificaties van je ads-account. Nul leads.)" },
       ],
     },
     {
@@ -384,7 +384,7 @@ export const COFFEE_CHATS: Record<
         { who: "ondernemer", text: "Ons vorige bureau beloofde dat wel." },
         { who: "meneer", text: "En waar sta je nu?" },
         { who: "ondernemer", text: "...pagina 2." },
-        { who: "meneer", text: "Pagina 2 is de plek waar je bijna wint en niemand klikt. We fixen techniek, intentie en content die één vraag echt beantwoordt." },
+        { who: "meneer", text: "Pagina 2 is de plek waar je bijna wint en niemand klikt. Ik fix techniek, intentie en content die één vraag echt beantwoordt." },
       ],
     },
     {
@@ -392,7 +392,7 @@ export const COFFEE_CHATS: Record<
       lines: [
         { who: "ondernemer", text: "We hebben toch een Google Business Profile? Dat is toch {kw}?" },
         { who: "meneer", text: "Het is een deel. Een profiel met drie reviews uit 2019 is een spookhuis met deur op slot." },
-        { who: "meneer", text: "Je site moet hetzelfde verhaal vertellen. Je landings moeten de vraag beantwoorden. Dan pas praten we over domineren in {city}." },
+        { who: "meneer", text: "Je site moet hetzelfde verhaal vertellen. Je landings moeten de vraag beantwoorden. Dan pas kijk ik naar domineren in {city}." },
         { who: "stem", text: "(Je concurrent heeft gisteren nog een post geplaatst. Jij niet.)" },
       ],
     },
@@ -401,7 +401,7 @@ export const COFFEE_CHATS: Record<
       lines: [
         { who: "ondernemer", text: "ChatGPT noemt ons niet als ik vraag wie goed is in {kw}." },
         { who: "meneer", text: "Logisch. AI citeert wie duidelijk en consistent is. Bulk blogs van 300 woorden helpen daar niet." },
-        { who: "meneer", text: "We bouwen antwoord-pagina's, schema, interne links. Saai werk. Tot je in het antwoord staat." },
+        { who: "meneer", text: "Ik bouw antwoord-pagina's, schema, interne links. Saai werk. Tot je in het antwoord staat." },
       ],
     },
   ],
@@ -471,7 +471,7 @@ export const RANTS: Record<SeoLandingCategory, readonly string[]> = {
   shopify: [
     "Shopify apps die elkaar tegenwerken zijn de stille moordenaar van je marge. Je shop wordt trager, je ads duurder, je checkout haakt af. En dan koop je nog een app om conversie te 'fixen'.",
     "Merchant Center diagnostics negeren en toch Shopping draaien is als rijden met een waarschuwingslampje en hopen dat het meevalt. Het valt niet mee. Je feed liegt tegen je.",
-    "B2B op Shopify kan. 'Kan niet' is vaak code voor 'we hebben het niet geprobeerd met iemand die het wel kan'. SkinComplete bewijst het.",
+    "B2B op Shopify kan. 'Kan niet' is vaak code voor 'niemand heeft het goed geprobeerd'. Configuratie en vakmanschap bepalen het.",
   ],
   content: [
     "Contentkalenders vol onderwerpen waar niemand om vroeg zijn mijn allergie. Schrijf wat je klanten echt vragen. Niet wat je stagiair interessant vond op Pinterest.",
@@ -495,7 +495,7 @@ export const ANALOGIES: Record<SeoLandingCategory, readonly { title: string; set
     {
       title: "Als je budget een hond was",
       setup: "Je laat hem los in een park vol eekhoorns. Hij rent. Enorm veel energie. Je bent moe. Er is niks mee opgeleverd.",
-      punchline: "Broad match zonder negatieven is die hond. Leuk bewegen. Geen resultaat.",
+      punchline: "Broad match zonder negatieven is die hond. Leuk bewegen. Nul resultaat.",
     },
   ],
   seo: [
@@ -545,7 +545,7 @@ export const NIGHTMARES: Record<SeoLandingCategory, readonly string[]> = {
     "Remarketing op mensen die al kochten. Je betaalt om je eigen klanten terug te kopen.",
   ],
   seo: [
-    "Je hebt 200 pagina's. Geen enkele beantwoordt één vraag goed.",
+    "Je hebt 200 pagina's. Niet één beantwoordt één vraag goed.",
     "Je LCP is rood. Google ziet het. Gebruikers ook.",
     "Je GBP heeft drie reviews uit 2019. Je concurrent heeft er veertig.",
     "Interne links ontbreken. Elke pagina is een eiland.",
@@ -589,7 +589,7 @@ export const NIGHTMARES: Record<SeoLandingCategory, readonly string[]> = {
 export const CONFESSIONS: readonly { title: string; body: string }[] = [
   {
     title: "Ik heb ook weleens te laat 'nee' gezegd",
-    body: "Een keer draaide ik ads op een shop die op mobiel niet werkte. Ik dacht: we fixen het onderweg. Dom. Nu check ik eerst de site. Altijd. Liever een week later live met kans op winst dan direct live met zekerheid op verlies.",
+    body: "Een keer draaide ik ads op een shop die op mobiel niet werkte. Ik dacht: ik fix het onderweg. Dom. Nu check ik eerst de site. Altijd. Liever een week later live met kans op winst dan direct live met zekerheid op verlies.",
   },
   {
     title: "Ik vind Merchant Center diagnostics spannend",
@@ -597,7 +597,7 @@ export const CONFESSIONS: readonly { title: string; body: string }[] = [
   },
   {
     title: "Ik heb een hekel aan rapporten die alleen indruk maken",
-    body: "Als je maandrapport vijf pagina's is en geen enkele zin zegt wat we volgende maand anders doen, is het decoratie. Ik stuur liever drie regels die ertoe doen.",
+    body: "Als je maandrapport vijf pagina's is en geen enkele zin zegt wat ik volgende maand anders doe, is het decoratie. Ik stuur liever drie regels die ertoe doen.",
   },
   {
     title: "Soms is het antwoord: nog even niks",
@@ -605,7 +605,7 @@ export const CONFESSIONS: readonly { title: string; body: string }[] = [
   },
   {
     title: "Ik bouw liever dan dat ik vergader",
-    body: "Intake, plan, uitvoeren. Geen eindeloze workshops over je 'merkessentie'. Die essentie zie ik in je cijfers, je klanten en je site. De rest komt tijdens het werk.",
+    body: "Intake, plan, uitvoeren. Workshops over je 'merkessentie' sla ik over. Die essentie zie ik in je cijfers, je klanten en je site. De rest komt tijdens het werk.",
   },
 ];
 
@@ -639,7 +639,7 @@ export const INNER_MONOLOGUE: Record<SeoLandingCategory, readonly { inHead: stri
   shopify: [
     {
       inHead: "Shopify is plug and play. We hebben een theme.",
-      reality: "Theme is start. Schaal vraagt feed, snelheid, flows en soms custom. SkinComplete-level vraagt vakmanschap.",
+      reality: "Theme is start. Schaal vraagt feed, snelheid, flows en soms custom. Serieus schalen vraagt vakmanschap.",
     },
   ],
   content: [
@@ -650,7 +650,7 @@ export const INNER_MONOLOGUE: Record<SeoLandingCategory, readonly { inHead: stri
   ],
   "b2b-portal": [
     {
-      inHead: "Onze klanten willen persoonlijk contact. Geen portaal.",
+      inHead: "Onze klanten willen persoonlijk contact. Een portaal is te koud.",
       reality: "Sommigen willen bellen. Velen willen om 22:00 bestellen zonder te wachten. Geef beide. Verlies geen van beide.",
     },
   ],
@@ -660,7 +660,7 @@ export const INNER_MONOLOGUE: Record<SeoLandingCategory, readonly { inHead: stri
 export const STORY_BODY_BANK: Record<SeoLandingCategory, readonly string[]> = {
   "google-ads": [
     "Je opent Google Ads op een dinsdagochtend. Groene pijltjes. Meer klikken. Je voelt je even de slimste ondernemer van {city}. Tot je boekhouder vraagt waarom de omzet niet meebeweegt.",
-    "Bij SkinComplete zette ik ads pas aan toen organisch verkeer al bewees dat de shop overtuigde. Bij BestRest bepaalde de marge per matras welke campagne überhaupt budget kreeg.",
+    "Ik zette ads pas aan toen organisch verkeer al bewees dat de shop overtuigde. Marge per product bepaalde welke campagne überhaupt budget kreeg.",
     "{kw} is geen sport van klikken maximaliseren. Het is de juiste klik krijgen en die niet laten weglopen. Daarvoor moet iemand je account én je website lezen alsof het hun eigen geld is.",
     "Als je moeder jou niet vindt als ze '{kw}' googelt, vindt je ideale klant je soms ook niet. Of erger: hij vindt je wel en vertrekt binnen vier seconden.",
     "Performance Max zonder schone feed en landings is een verrassingsbox. Soms verrast die positief. Vaker niet. Ik wil liever weten waar mijn geld naartoe gaat.",
@@ -680,7 +680,7 @@ export const STORY_BODY_BANK: Record<SeoLandingCategory, readonly string[]> = {
     "Lokaal{loc} telt mee: Google wil weten waar je hangt, of je profiel leeft, of mensen je vermelden.",
     "Interne links zijn geen SEO-trucje. Het is een routekaart voor Google en voor je bezoeker. Eiland-pagina's verzuipen.",
     "Je canonical naar de verkeerde URL is een kleine regel die grote schade kan doen. Techniek is saai tot het niet werkt.",
-    "Schema markup is je CV voor robots. Geen garantie op pagina 1. Wel duidelijkheid over wie je bent en wat je doet.",
+    "Schema markup is je CV voor robots. Pagina 1 is geen garantie. Wel duidelijkheid over wie je bent en wat je doet.",
     "Vijftig dunne pagina's verliezen van tien die écht helpen. Volume was nooit de strategie. Antwoorden wel.",
     "Core Web Vitals zijn geen bijlage. Ze zitten in hoe ik bouw. Trage site, moeilijke rankings. Simpel.",
     "Reviews uit 2019 op je GBP zijn een signaal dat je offline misschien goed zit, maar online stilstaat.",
@@ -694,7 +694,7 @@ export const STORY_BODY_BANK: Record<SeoLandingCategory, readonly string[]> = {
     "Ik bouw sites alsof marketing er al op zit. Want straks zit marketing erop. Dan wil je geen redesign omdat je CTA verdween in een hero met stockfoto's.",
     "Semantische HTML is geen nerd-detail. Het is hoe Google en screenreaders begrijpen wat belangrijk is.",
     "Je formulier dat op Safari faalt, is elke dag leads die je nooit ziet in je dashboard.",
-    "Migratie van WordPress naar custom is soms de opdracht. Dan doen we redirects goed of we accepteren dat Google even chagrijnig is.",
+    "Migratie van WordPress naar custom is soms de opdracht. Dan zet ik redirects goed of ik accepteer dat Google even chagrijnig is.",
     "Design zonder snelheid is een museum. Mooi om naar te kijken. Niemand koopt er.",
     "Je sitemap met 404's is een uitnodiging aan Google om te stoppen met vertrouwen.",
     "From scratch wil zeggen: geen theme dat je groei remt, geen code die niemand durft aan te raken.",
@@ -702,12 +702,12 @@ export const STORY_BODY_BANK: Record<SeoLandingCategory, readonly string[]> = {
   ],
   shopify: [
     "Shopify maakt starten makkelijk. Schalen is waar het pijn doet. Feeds, apps, B2B, internationalisering: het vraagt keuzes.",
-    "SkinComplete is mijn referentie: custom theme, B2B voor salons, eerst organisch, daarna ads. BestRest leerde me dat elk product een eigen verhaal verdient.",
+    "Mijn referentie: custom theme, B2B-laag, eerst organisch, daarna ads. Elk product verdient een eigen verhaal.",
     "{kw} zonder die context is een theme-store met je logo erop. Dat kan werken. Tot je wilt groeien.",
     "Merchant Center diagnostics negeren is als rijden met een waarschuwingslampje. Het valt niet mee.",
     "Elke app is JS. Te veel apps = trage shop = duurdere ads. Reken het door.",
     "Abandoned cart flows die uit staan zijn geld op de grond. Gratis geld, als je ze aanzet.",
-    "B2B op Shopify kan. SkinComplete bewijst het. 'Kan niet' is vaak 'we hebben het verkeerd geprobeerd'.",
+    "B2B op Shopify kan. 'Kan niet' is vaak 'het is verkeerd geprobeerd'.",
     "Migreren van WooCommerce zonder redirects is SEO-zelfmoord. Liever eerlijk over dip dan import-knop en hopen.",
     "Product-SEO begint bij titels die mensen en Google begrijpen, niet interne codes.",
     "Checkout-frictie zie je niet in je ads-dashboard. Wel in je omzet.",
@@ -723,14 +723,14 @@ export const STORY_BODY_BANK: Record<SeoLandingCategory, readonly string[]> = {
     "Keywords proppen werkte vroeger. Intentie en structuur winnen nu.",
     "Owned content op je domein blijft van jou. Social verdwijnt in de feed.",
     "Contentkalenders vol onderwerpen waar niemand om vroeg zijn mijn allergie. Schrijf wat klanten echt vragen.",
-    "Cases zoals SkinComplete en BestRest gebruik ik waar het past. Niet als decoratie. Als bewijs.",
+    "Cases met echte cijfers gebruik ik waar het past. Niet als decoratie. Als bewijs.",
     "Vijftig artikelen die niemand leest vertellen Google: hier woont ruis.",
     "Eén sterke FAQ-pagina kan meer opleveren dan tien vage blogs.",
     "Meneer Marketing klinkt als iemand die aan tafel zit. Niet als een persbericht met 'innovatieve oplossingen'.",
   ],
   "b2b-portal": [
     "Je zakelijke klant wil om 22:00 uur bestellen. Jouw proces wil dat ze mailen en wachten tot maandag. Ondertussen bestelt de consument op je shop in drie klikken.",
-    "{kw} gaat over systemen die schalen zonder dat je team verdubbelt. SkinComplete deed dit voor salons. Jij kunt het patroon volgen.",
+    "{kw} gaat over systemen die schalen zonder dat je team verdubbelt. Portaal en flows kunnen het patroon volgen dat jij nodig hebt.",
     "Ik verkoop geen software. Ik verkoop tijd terug en minder fouten. {kw} is saai tot je ziet hoeveel uur er in handmatig werk zit.",
     "Excel met acht tabs is een parttimebaan. Niemand wil die baan. Automatisering wel.",
     "Leads in Gmail verdwijnen sneller dan je denkt. Een flow die ze opvolgt is geen luxe.",
@@ -757,25 +757,25 @@ export const DEEPDIVE_BANK: Record<SeoLandingCategory, readonly string[]> = {
     "Ik combineer Search, Shopping en waar het past Meta. Niet omdat meer kanalen altijd beter zijn. Omdat je klant niet in één kanaal leeft.",
     "Je concurrent die '{kw}' adverteert met een slakkere site wint soms toch. Prijs en merk helpen. Maar niet voor altijd.",
     "Call tracking, lead forms, enhanced conversions: saai tot je ziet hoeveel je miste.",
-    "SkinComplete en BestRest leerden me dat elk account een eigen volgorde heeft. Copy-paste bestaat niet.",
+    "Elk account heeft een eigen volgorde. Copy-paste bestaat niet.",
   ],
   seo: [
     "SEO is fundament: techniek, intentie, autoriteit. Minder trucjes, meer consistentie.",
     "Pagina's met één doel ranken beter dan pagina's die alles willen zijn.",
     "Ik schrijf niet voor robots. Maar ik respecteer robots. Crawlbaarheid, CWV, schema: ingebakken.",
-    "{kw}{loc} vraagt dat je online hetzelfde verhaal vertelt als offline. Geen ghost-locaties.",
+    "{kw}{loc} vraagt dat je online hetzelfde verhaal vertelt als offline. Echte locatie, echt verhaal.",
     "Linkbuilding zonder goede content is een huis op zand. Content zonder techniek is een huis zonder fundering.",
     "AI-zoek vraagt om duidelijke antwoorden, merkinfo en pagina's die je expertise tonen.",
     "Je sitemap, robots.txt en canonicals zijn saai tot ze fout gaan. Dan zijn ze urgent.",
     "Lokale rankings hangen aan GBP, reviews, NAP en pagina's die regio serieus nemen.",
-    "Internationale SEO? Hreflang en structuur. Geen Google Translate-knop en hopen.",
+    "Internationale SEO? Hreflang en structuur. Vertaling met plan, niet alleen een knop en hopen.",
     "Content decay is echt. Pagina's van drie jaar geleden kunnen achteruit glijden. Onderhoud hoort erbij.",
     "Ik meet niet alleen posities. Ik meet clicks, leads en of het geld oplevert.",
     "Organisch verkeer is geen gratis lunch. Het is rente op goed werk. Die rente kan lang doorlopen.",
   ],
   website: [
     "Veel partijen verkopen design. Ik verkoop een machine die vindbaar is en converteert.",
-    "Next.js voor maatwerk. Shopify voor shops. Geen page builder die je opsluit.",
+    "Next.js voor maatwerk. Shopify voor shops. Custom code die je vrij laat groeien.",
     "{kw} is geen project van vier weken dat 'af' is. Het is een fundament waar marketing op staat.",
     "Landings voor campagnes, formulieren die werken, snelle assets: ingebouwd, niet geplakt.",
     "WordPress promoten doe ik niet. Migreren van WordPress wel, als dat de opdracht is.",
@@ -791,12 +791,12 @@ export const DEEPDIVE_BANK: Record<SeoLandingCategory, readonly string[]> = {
     "Shopify schaalt, tot apps je CWV slopen. Dan wordt {kw} een race tegen je eigen stack.",
     "Custom theme waar nodig. Apps alleen met business case. Feeds en SEO vanaf dag één.",
     "B2B, international, subscriptions: het kan. Met configuratie en soms custom.",
-    "Productfeeds voor Google en Meta moeten kloppen. Prijs, voorraad, titel. Geen gokwerk.",
+    "Productfeeds voor Google en Meta moeten kloppen. Prijs, voorraad, titel. Data die je kunt vertrouwen.",
     "Checkout-extensies en verzendlogica bepalen of mensen afhaken. Ads sturen ze ernaartoe.",
     "Theme 2.0 en sections zijn flexibel. Maar geen excuus voor trage assets.",
     "Shopify SEO: collecties, blogs, interne links, geen duplicate thin pages.",
     "Migratie: redirects, data, flows. Import-knop alleen is te mager.",
-    "SkinComplete-niveau vraagt iemand die Shopify als platform kent, niet als hobby.",
+    "Serieus schalen vraagt iemand die Shopify als platform kent, niet als hobby.",
     "Abandoned cart, post-purchase, win-back: flows die geld opleveren zonder extra ad spend.",
     "B2B-portaal op Shopify: prijslijsten, klantgroepen, bestelhistorie. Kan.",
     "Je apps inventariseren elk kwartaal. Wat gebruik je? Wat kost het? Wat sloopt snelheid?",
@@ -822,7 +822,7 @@ export const DEEPDIVE_BANK: Record<SeoLandingCategory, readonly string[]> = {
     "n8n en Make zijn tools. Het gaat om welke flow je bouwt en wat die oplevert.",
     "Leads uit formulier naar CRM naar opvolging: geen handmatig tussenstation.",
     "B2B-prijzen en catalogi online vragen logica. Niet alles is standaard Shopify.",
-    "SkinComplete salons bestelden via portaal. Jouw sector kan eigen variant hebben.",
+    "B2B-klanten bestelden via portaal. Jouw sector kan een eigen variant hebben.",
     "Koppelingen met boekhouding en voorraad voorkomen dubbel werk en fouten.",
     "Self-service voor B2B betekent niet geen contact. Het betekent keuze.",
     "Je team meet uren op handmatig werk. Dat getal is je business case.",
@@ -858,13 +858,13 @@ export const MYTH_POOL: Record<SeoLandingCategory, readonly { myth: string; real
     { myth: "WordPress is altijd goedkoopst", reality: "Tel dev-tijd, plugins en hacks mee." },
     { myth: "Mobiel komt later wel", reality: "Meer dan de helft van je verkeer zegt nee." },
     { myth: "Een redesign lost alles op", reality: "Zonder strategie is het een nieuwe jas op dezelfde fouten." },
-    { myth: "SSL en snelheid zijn technisch gedoe", reality: "Het is conversie en SEO. Geen gedoe." },
+    { myth: "SSL en snelheid zijn technisch gedoe", reality: "Het is conversie en SEO. Fundament, geen bijzaak." },
     { myth: "Meer pagina's = betere site", reality: "Meer duidelijke pagina's wel. Meer rommel niet." },
     { myth: "Je neef die websites bouwt is gratis", reality: "Gratis bouwen, betaald herstellen is een klassieker." },
   ],
   shopify: [
     { myth: "Shopify is duur", reality: "Vaak goedkoper dan WooCommerce plus onderhoud plus traagheid." },
-    { myth: "B2B kan niet op Shopify", reality: "SkinComplete bewijst het tegendeel." },
+    { myth: "B2B kan niet op Shopify", reality: "B2B op Shopify kan met de juiste configuratie en vakmanschap." },
     { myth: "Apps fixen alles", reality: "Elke app is JS. Te veel apps = trage shop." },
     { myth: "Theme is genoeg voor schaal", reality: "Schaal vraagt custom, feeds en flows." },
     { myth: "Shopify SEO doet zichzelf", reality: "Titels, structuur, snelheid en content doe jij. Of ik." },

@@ -7,7 +7,7 @@ export const BATCH2_BATCH3_PROCESS: Partial<
   "conversie-optimalisatie": [
     { title: "Funnel meten", body: "GA4, Clarity of shop-data. Waar haken bezoekers af?" },
     { title: "Hypothese op impact", body: "Checkout, formulier, trust, snelheid. Grootste lek eerst." },
-    { title: "Fix live zetten", body: "Ik pas pagina's zelf aan. Geen ticket naar een derde team." },
+    { title: "Fix live zetten", body: "Ik pas pagina's zelf aan. Direct, zonder ticket naar een derde team." },
     { title: "Opnieuw meten", body: "Conversie vóór en na. Opschalen als het verschil zichtbaar is." },
   ],
   "lokale-seo": [
@@ -115,7 +115,7 @@ export const BATCH2_BATCH3_PROCESS: Partial<
   "website-laten-bouwen": [
     { title: "Doel scherp", body: "Wie moet wat doen? Niet eerst kleuren." },
     { title: "Sitemap & wireframe", body: "Pagina's per intentie, geen filler." },
-    { title: "From scratch bouwen", body: "Next.js of Shopify custom. Geen page builder." },
+    { title: "From scratch bouwen", body: "Next.js of Shopify custom. Custom code, geen page builder." },
     { title: "Live + meten", body: "Tracking, eerste optimalisaties op data." },
   ],
   "seo-audit": [
@@ -127,11 +127,11 @@ export const BATCH2_BATCH3_PROCESS: Partial<
   "seo-uitbesteden": [
     { title: "Inventarisatie", body: "Rankings, techniek, content gaps." },
     { title: "Roadmap op marge", body: "Welke pagina's eerst, welke fixes nu." },
-    { title: "Uitvoering", body: "Ik bouw en publiceer. Geen wachten op derden." },
+    { title: "Uitvoering", body: "Ik bouw en publiceer. Direct live, zonder wachten op derden." },
     { title: "Rapport + actie", body: "Posities én omzet per pagina waar mogelijk." },
   ],
   "linkbuilding-bureau": [
-    { title: "Linkwaardige assets", body: "Gidsen, data, tools, cases. Geen gekochte spam." },
+    { title: "Linkwaardige assets", body: "Gidsen, data, tools, cases. Echte waarde, geen gekochte spam." },
     { title: "Outreach waar zinvol", body: "Relevante sites, echte waarde." },
     { title: "Content die trekt", body: "Pagina's waar anderen naartoe willen linken." },
     { title: "Referral + rankings", body: "Traffic en posities, niet alleen DR." },
@@ -139,7 +139,7 @@ export const BATCH2_BATCH3_PROCESS: Partial<
   "online-marketing-manager": [
     { title: "Kanalen in kaart", body: "Site, SEO, ads, mail. Wat lekt, wat wint?" },
     { title: "Volgorde kwartaal", body: "Eerlijk: soms SEO, soms CRO, soms Shopping." },
-    { title: "Uitvoeren zelf", body: "Regie én hands-on. Geen vijf juniors." },
+    { title: "Uitvoeren zelf", body: "Regie én hands-on. Eén senior, geen vijf juniors." },
     { title: "Wekelijkse regie", body: "Wat live, wat oplevert, wat volgende week." },
   ],
   "performance-marketing-bureau": [

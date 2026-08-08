@@ -6,7 +6,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     title: "Conversie-optimalisatie begint bij je checkout, niet bij je moodboard",
     paragraphs: [
       "Je hebt verkeer. De inbox blijft stil. Conversie-optimalisatie wordt vaak verkocht als heatmaps en A/B-testen, maar bij MKB wint één grote fix: checkout die op mobiel werkt, vertrouwen dat zichtbaar is, formulier dat niet vijftien velden vraagt.",
-      "Ik begin met meten. GA4, Microsoft Clarity, soms je shop-statistieken. Waar valt iemand af? Dan pas design. Bij BestRest keek ik per productlijn naar andere blokkades. Matras A en topper B hadden niet dezelfde frictie.",
+      "Ik begin met meten. GA4, Microsoft Clarity, soms je shop-statistieken. Waar valt iemand af? Dan pas design. Per productlijn kijk ik naar andere blokkades. Matras A en topper B hadden niet dezelfde frictie.",
       "Conversie-optimalisatie bij mij hangt samen met bouwen en campagnes. Ik pas de pagina aan die je ads al naar sturen. Dat levert sneller winst dan maanden testen op knopkleur.",
     ],
   },
@@ -21,7 +21,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
   "zoekmachine-optimalisatie": {
     title: "Zoekmachine-optimalisatie is geen maandblog, het is fundament",
     paragraphs: [
-      "Zoekmachine-optimalisatie klinkt als vier blogs per maand. In 2026 is het techniek, structuur en antwoord-pagina's die koopintentie vangen. SkinComplete domineerde salonvragen organisch vóór ads live gingen. Dat is de volgorde.",
+      "Zoekmachine-optimalisatie klinkt als vier blogs per maand. In 2026 is het techniek, structuur en antwoord-pagina's die koopintentie vangen. Organisch eerst op koopintentie, ads daarna. Dat is de volgorde.",
       "Ik werk in lagen: crawl en snelheid, interne links en silo's, content die één vraag echt beantwoordt. Keyword-onderzoek is marge-gedreven. Positie op een term die niemand koopt is een trofee zonder omzet.",
       "Zoekmachine-optimalisatie combineer ik met AI-zoek: sterke FAQ's, duidelijke merkinfo, pagina's die ChatGPT en Gemini kunnen citeren. Google is niet meer de enige ingang.",
     ],
@@ -47,7 +47,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     paragraphs: [
       "E-commerce marketing is vindbaarheid, ads, mail, marketplace en site-ervaring in één klantreis. Elk kanaal apart ingehuurd geeft tegenstrijdige adviezen en een checkout die niemand durft aan te raken.",
       "Ik start bij shop-data: welke SKU's dragen marge, waar valt de cart weg, welk kanaal brengt herhaalaankopen. Volgorde is vaak feed en techniek, dan SEO of Shopping, dan mail en retentie.",
-      "Bij SkinComplete hing B2B-portaal, SEO, mail en ads aan dezelfde Shopify. E-commerce marketing is één brein dat je winkel leest, geen vijf freelancers met losse logins.",
+      "B2B-portaal, SEO, mail en ads hangen aan dezelfde Shopify. E-commerce marketing is één brein dat je winkel leest, niet vijf freelancers met losse logins.",
     ],
   },
   "e-mailmarketing": {
@@ -55,7 +55,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     paragraphs: [
       "E-mailmarketing is meer dan een nieuwsbrief op dinsdag. Welkom na aanmelding, cart recovery, post-purchase, win-back. Elk met een doel en een metric. Open rate zonder checkout is vanity.",
       "Ik koppel mail aan je shop: productdata, segmenten op gedrag, dynamische blokken die kloppen. Klaviyo of Shopify Email, afhankelijk van wat je stack nodig heeft.",
-      "Mail versterkte SkinComplete vóór ads opschalen. Elke euro op Google trof een lijst die al geconditioneerd was. Dat is hoe e-mailmarketing paid versterkt in plaats van dupliceren.",
+      "Mail draait vóór ads opschalen. Elke euro op Google trof een lijst die al geconditioneerd was. Dat is hoe e-mailmarketing paid versterkt in plaats van dupliceren.",
     ],
   },
   "tiktok-ads-bureau": {
@@ -95,7 +95,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     paragraphs: [
       "Google Ads uitbesteden loont als je tijd tekort komt of je account te groot wordt voor weekend-tweaks. Het faalt als je maandelijks een PDF krijgt zonder dat er iets verandert in je account.",
       "Bij uitbesteding krijg je structuur, wekelijkse bijsturing, zoektermenhygiëne en rapportage in omzet-taal. ROAS, CPA, conversiewaarde. Ik heb toegang nodig tot site en analytics. Ads in isolatie is gokken.",
-      "SkinComplete schaalde pas na organisch bewijs. Google Ads uitbesteden volgt jouw volgorde, niet een standaard retainer van twaalf maanden die op dag één start.",
+      "Ads schalen pas na organisch bewijs. Google Ads uitbesteden volgt jouw volgorde, niet een standaard retainer van twaalf maanden die op dag één start.",
     ],
   },
   "remarketing-google-ads": {
@@ -111,7 +111,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     paragraphs: [
       "Facebook Ads bereikt mensen in feed, Stories en Reels. Een bureau dat alleen creatives levert maar je pixel niet controleert, optimaliseert Meta op verkeerde signalen. Views voelen goed. Omzet niet.",
       "Campagnes op conversies, leads of catalog sales. Pixel en CAPI moeten kloppen. Creatives roteren, UGC werkt vaak beter dan studio-perfect dat niemand gelooft.",
-      "Facebook Ads bureau bij mij werkt samen met Google Ads onder één strategie. Zelfde aanbod, zelfde landings, andere hooks per kanaal. SkinComplete gebruikte UGC ook in Meta.",
+      "Facebook Ads bureau bij mij werkt samen met Google Ads onder één strategie. Zelfde aanbod, zelfde landings, andere hooks per kanaal. UGC past in Meta zodra landings kloppen.",
     ],
   },
   "instagram-ads-bureau": {
@@ -126,7 +126,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     title: "Shopify webshop laten maken: theme store is start, niet eind",
     paragraphs: [
       "Shopify webshop laten maken is architectuur voor assortiment, B2B als dat moet, feed voor Shopping en checkout die converteert. Theme uit de store is oké voor hobby, niet voor schaal.",
-      "Ik bouw custom waar de store stopt: portalen, prijslijsten, unieke configuraties, koppelingen met mail en ERP. SkinComplete draait zo. Snelheid en SEO horen bij launch.",
+      "Ik bouw custom waar de store stopt: portalen, prijslijsten, unieke configuraties, koppelingen met mail en ERP. B2B en feed op één fundament. Snelheid en SEO horen bij launch.",
       "Shopify webshop laten maken includes groeipad: tracking, mailflows, campagnes als fundament staat. Eén lijn van bouw tot marketing, geen bouwer die verdwijnt na oplevering.",
     ],
   },
@@ -141,7 +141,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
   "nextjs-website-laten-maken": {
     title: "Next.js website laten maken: snelheid is conversie",
     paragraphs: [
-      "Next.js is mijn stack voor marketing sites en landings die snel moeten zijn. Server components, caching, controle over elke URL en meta-tag. Geen plugin die je CWV sloopt.",
+      "Next.js is mijn stack voor marketing sites en landings die snel moeten zijn. Server components, caching, controle over elke URL en meta-tag. Performance ingebouwd, plugins die je CWV slopen eruit.",
       "Next.js website laten maken betekent custom build from scratch. Core Web Vitals ingebouwd, schema per pagina, structuur die groeit met je diensten. Koppeling met CMS, forms, analytics waar nodig.",
       "Sites die ik bouw zijn klaar voor Google Ads en organisch op dag één. MeneerMarketing.nl draait zo. Snelheid is geen nice-to-have, het is ranking én conversie.",
     ],
@@ -149,15 +149,15 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
   "website-laten-bouwen": {
     title: "Website laten bouwen: from scratch, niet from theme",
     paragraphs: [
-      "Website laten bouwen is bij mij structuur eerst, dan design en code in Next.js of Shopify. Jij vertelt het doel, ik vertaal het naar pagina's die converteren. Geen vijftig pagina's filler voor SEO.",
+      "Website laten bouwen is bij mij structuur eerst, dan design en code in Next.js of Shopify. Jij vertelt het doel, ik vertaal het naar pagina's die converteren. Landings op intentie, geen filler voor SEO.",
       "Elke pagina heeft één job. Snelheid, toegankelijkheid en tracking zitten in het fundament. Ads opschalen op een trage site is duurder dan je denkt. Message match begint bij bouw.",
-      "Website laten bouwen eindigt niet bij oplevering. Ik meet, bijstuur en breid uit. Eén bouwer die ook vindbaarheid en campagnes snapt. Geen keten van partijen.",
+      "Website laten bouwen eindigt niet bij oplevering. Ik meet, bijstuur en breid uit. Eén bouwer die ook vindbaarheid en campagnes snapt. Eén lijn, geen keten van partijen.",
     ],
   },
   "seo-audit": {
     title: "SEO audit: tachtig pagina's PDF helpt niemand",
     paragraphs: [
-      "Een SEO audit is een foto van vindbaarheid: techniek, content, autoriteit. Bij mij wordt het een ranked lijst met impact die je morgen kunt uitvoeren. Geen roman die in Drive verrot.",
+      "Een SEO audit is een foto van vindbaarheid: techniek, content, autoriteit. Bij mij wordt het een ranked lijst met impact die je morgen kunt uitvoeren. Actie eerst, geen roman die in Drive verrot.",
       "Crawl, Core Web Vitals, keyword gaps, concurrentie. Lokaal, nationaal of shop-specifiek. Elke bevinding: ernst, inspanning, verwacht effect. Sommige fixes zijn een uur, andere een nieuwe landingspagina.",
       "SEO audit zinvol vóór redesign, na migratie, of als verkeer stagneert. Antwoord is vaak minder bloggen, meer fundament. Ik kan de fixes zelf doen als je wilt.",
     ],
@@ -167,7 +167,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     paragraphs: [
       "SEO uitbesteden werkt als je execution mist. Het faalt als je maandelijks tips krijgt zonder dat er iets live gaat. Rankings komen van pagina's die helpen, niet van vergaderingen.",
       "Bij uitbesteding krijg je roadmap, uitvoering en meting. Ik schrijf en bouw landings, fix techniek, rapporteer in posities én omzet. Partnership, geen black box met 'tactieken'.",
-      "SkinComplete rankte eerst organisch. SEO uitbesteden volgt die logica: eerst gratis verkeer dat converteert, dan paid versterken. Volgorde op marge, niet op retainer-duur.",
+      "Organisch eerst, paid daarna. SEO uitbesteden volgt die logica: eerst gratis verkeer dat converteert, dan paid versterken. Volgorde op marge, niet op retainer-duur.",
     ],
   },
   "linkbuilding-bureau": {
@@ -199,7 +199,7 @@ export const STORY_BATCH2_3: Partial<Record<string, SeoLandingProseOverride>> = 
     paragraphs: [
       "CRO verhoogt het percentage bezoekers dat koopt, belt of inschrijft. Als je site al lekt, is CRO goedkoper dan meer kliks kopen. Halve procentpunt conversie kan duizenden euro's zijn.",
       "Heatmaps, funnels, device splits, dan hypotheses en fixes. CRO bureau bij mij werkt niet los van development. Checkout, formulieren, trust: zelfde week live.",
-      "CRO is continu bij webshops met seizoenen. Ik implementeer, meet opnieuw, herhaal. Geen agency die alleen slides met testideeën stuurt.",
+      "CRO is continu bij webshops met seizoenen. Ik implementeer, meet opnieuw, herhaal. Uitvoering in code, geen agency die alleen slides met testideeën stuurt.",
     ],
   },
   "tracking-google-analytics": {

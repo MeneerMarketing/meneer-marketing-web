@@ -11,7 +11,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
     title: "Conversie-optimalisatie op je echte shop, niet op een heatmap-slideshow",
     paragraphs: [
       "Conversie-optimalisatie begint bij meten: waar haken mensen af, welke stap kost je een aanvraag, welke productpagina trekt kliks maar geen checkout. Ik start met data uit GA4, Clarity of je shop-statistieken. Daarna pas design.",
-      "CRO is meer dan een knop groen maken. Het is vertrouwen op mobiel, checkout zonder frictie, prijs en verzending die vooraf duidelijk zijn, en landings die matchen met je ads. Bij BestRest keek ik per productlijn naar andere blokkades.",
+      "CRO is meer dan een knop groen maken. Het is vertrouwen op mobiel, checkout zonder frictie, prijs en verzending die vooraf duidelijk zijn, en landings die matchen met je ads. Ik kijk per productlijn naar andere blokkades.",
       "A/B-testen kan, maar alleen als je genoeg verkeer hebt. Bij MKB wint vaak één grote fix: snelheid, formulier korter, trust-elementen, of een landingspagina die eindelijk de vraag beantwoordt waar je ad op target.",
       "Conversie-optimalisatie bij mij hangt samen met bouwen en campagnes. Ik pas de pagina aan die je verkeer al heeft. Dat levert sneller winst dan maanden testen op details die niemand ziet.",
     ],
@@ -29,7 +29,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
     title: "Zoekmachine-optimalisatie als langdurig verkeurskanaal",
     paragraphs: [
       "Zoekmachine-optimalisatie is het structureel verbeteren van je site en content zodat Google je pagina's begrijpt, vertrouwt en bovenaan zet bij vragen met koopintentie. Het vraagt maanden discipline, geen snelle truc.",
-      "Ik werk in drie lagen: techniek (crawl, snelheid, schema), structuur (interne links, silo's, landings per intentie) en content (antwoorden die ranken én converteren). SkinComplete domineerde salonvragen organisch voordat ads live gingen.",
+      "Ik werk in drie lagen: techniek (crawl, snelheid, schema), structuur (interne links, silo's, landings per intentie) en content (antwoorden die ranken én converteren). Organisch eerst op koopintentie, ads daarna.",
       "Keyword-onderzoek bij mij is marge-gedreven. Welke termen leveren klanten op, niet alleen volume. Een positie op pagina één voor een term die niemand koopt is een trofee zonder omzet.",
       "Zoekmachine-optimalisatie combineer ik met AI-antwoorden: sterke FAQ's, duidelijke merkinfo en pagina's die ChatGPT en Gemini kunnen citeren. Dat is vindbaarheid in 2026, niet alleen tien blauwe links.",
     ],
@@ -49,7 +49,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
       "PPC (pay-per-click) is betaald adverteren op Google, Meta en soms Bing. Een PPC bureau beheert budget, campagnes, zoektermen en landings zodat elke euro meetbaar bijdraagt aan leads of omzet.",
       "Ik begin bij intentie: Search voor koopmomenten, Shopping voor producten met feed-kwaliteit, Meta voor vraag creëren. Performance Max alleen als je input schoon is. Anders optimaliseer je op een zwarte doos met vieze data.",
       "PPC zonder tracking is gokken. Ik zet GA4, GTM en conversies goed neer vóór ik budget opschaal. ROAS en CPA moeten je bankrekening snappen, niet alleen je dashboard.",
-      "Als PPC bureau ben ik ook bouwer. Landings die lekken na de klik fix ik zelf. Dat scheelt weken tussen ads-team en web-team. SkinComplete en BestRest draaiden zo.",
+      "Als PPC bureau ben ik ook bouwer. Landings die lekken na de klik fix ik zelf. Dat scheelt weken tussen ads-team en web-team.",
     ],
   },
   "e-commerce-marketing": {
@@ -58,7 +58,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
       "E-commerce marketing is het geheel van tactieken die je webshop laat groeien: vindbaarheid, ads, e-mail, marketplace en site-ervaring. Alles moet dezelfde klantreis ondersteunen.",
       "Ik start bij je shop-data: welke producten dragen marge, waar valt de winkelwagen weg, welk kanaal levert herhaalaankopen. Daarna kies ik volgorde: vaak techniek en feed, dan SEO of Shopping, dan mail en retentie.",
       "E-commerce marketing faalt als kanalen tegen elkaar werken. Ads naar uitverkochte SKU's, mail met verkeerde prijzen, SEO naar pagina's zonder voorraad. Ik koppel shop, feed en campagnes.",
-      "Bij SkinComplete hing B2B-portaal, SEO, mail en ads aan dezelfde Shopify. E-commerce marketing is bij mij één brein dat je winkel leest, niet vijf freelancers met losse logins.",
+      "B2B-portaal, SEO, mail en ads hangen aan dezelfde Shopify. E-commerce marketing is bij mij één brein dat je winkel leest, niet vijf freelancers met losse logins.",
     ],
   },
   "e-mailmarketing": {
@@ -67,7 +67,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
       "E-mailmarketing is meer dan een nieuwsbrief op dinsdag. Het is welkom na aanmelding, cart recovery na verlaten checkout, post-purchase flows en win-back voor slapende klanten. Elk met een doel en een metric.",
       "Ik koppel mail aan je shop: productdata, segmenten op gedrag, dynamische blokken die kloppen. Klaviyo of Shopify Email, afhankelijk van wat je stack nodig heeft.",
       "Open rate is een vanity metric als niemand koopt. Ik meet omzet per flow, click-to-purchase en LTV per segment. Mail moet je shop voeden, niet alleen je merk 'warm houden'.",
-      "E-mailmarketing werkte bij SkinComplete vóór het adsbudget omhoog ging. Elke euro op ads trof een lijst die al geconditioneerd was. Dat is hoe mail je paid versterkt.",
+      "Mail draait vóór het adsbudget omhoog gaat. Elke euro op ads trof een lijst die al geconditioneerd was. Dat is hoe mail je paid versterkt.",
     ],
   },
   "tiktok-ads-bureau": {
@@ -112,7 +112,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
       "Google Ads uitbesteden loont als je specialist mist, tijd tekort komt of je account te groot wordt voor weekend-tweaks. Het faalt als je alleen een dashboard krijgt zonder actie.",
       "Bij uitbesteding krijg je bij mij: accountstructuur, wekelijkse bijsturing, zoektermenhygiëne, landings die matchen en rapportage in omzet-taal. ROAS, CPA, conversiewaarde.",
       "Ik heb toegang nodig tot je site, analytics en idealiter je shop. Ads in isolatie optimaliseren is optimaliseren op halve waarheid. Uitbesteden is samenwerken, niet wegstoppen.",
-      "SkinComplete schaalde ads pas na organisch bewijs. BestRest per matras bekeken. Google Ads uitbesteden bij mij volgt jouw volgorde, niet een standaard pakket van twaalf maanden.",
+      "Ads schalen pas na organisch bewijs. Per productlijn bekeken. Google Ads uitbesteden bij mij volgt jouw volgorde, niet een standaard pakket van twaalf maanden.",
     ],
   },
   "remarketing-google-ads": {
@@ -130,7 +130,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
       "Facebook Ads (Meta) bereikt mensen in feed, Stories en Reels. Een bureau dat alleen mooie creatives levert maar je checkout niet aanraakt, levert views, geen omzet.",
       "Ik zet campagnes op met duidelijke doelen: conversies, leads of catalog sales. Pixel en CAPI moeten kloppen. Anders optimaliseert Meta op verkeerde signalen.",
       "Creatives roteren. Fatigue is echt. UGC en korte hooks werken vaak beter dan studio-perfecte beelden waar niemand in gelooft.",
-      "Facebook Ads bureau bij mij werkt samen met Google Ads onder één strategie. Zelfde aanbod, zelfde landings, andere hooks per kanaal. SkinComplete gebruikte UGC ook in Meta.",
+      "Facebook Ads bureau bij mij werkt samen met Google Ads onder één strategie. Zelfde aanbod, zelfde landings, andere hooks per kanaal. UGC past in Meta zodra landings kloppen.",
     ],
   },
   "instagram-ads-bureau": {
@@ -146,7 +146,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
     title: "Shopify webshop laten maken: custom theme en klaar voor groei",
     paragraphs: [
       "Shopify webshop laten maken is meer dan een theme uit de store kiezen. Het is architectuur voor jouw assortiment, B2B als dat moet, feed voor Shopping en checkout die converteert.",
-      "Ik bouw custom waar de theme store stopt: portalen, prijslijsten, unieke productconfiguraties, koppelingen met ERP of mail. SkinComplete draait zo.",
+      "Ik bouw custom waar de theme store stopt: portalen, prijslijsten, unieke productconfiguraties, koppelingen met ERP of mail. B2B en feed op één fundament.",
       "Snelheid en SEO horen bij launch. Product-schema, collectiestructuur, filters die indexeerbaar blijven waar het kan. Een shop die alleen mooi is maar niet rankt, wacht op ads voor elke bezoeker.",
       "Shopify webshop laten maken bij mij includes groeipad: mailflows, tracking, en campagnes als het fundament staat. Eén lijn van bouw tot marketing.",
     ],
@@ -193,7 +193,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
       "SEO uitbesteden werkt als je execution mist: techniek, content, linkwaardige pagina's. Het faalt als je maandrapporten krijgt zonder dat er iets live gaat.",
       "Bij uitbesteding krijg je roadmap, uitvoering en meting. Ik schrijf en bouw landings, fix techniek en rapporteer in posities én omzet, niet alleen impressions.",
       "SEO uitbesteden is een partnership. Ik heb toegang nodig tot CMS, Search Console en analytics. Geheimzinnigheid over 'tactieken' is vaak masker voor weinig werk.",
-      "SkinComplete rankte eerst organisch. SEO uitbesteden bij mij volgt die logica: eerst wat gratis verkeer oplevert, dan pas paid versterken.",
+      "Organisch eerst, paid daarna. SEO uitbesteden bij mij volgt die logica: eerst wat gratis verkeer oplevert, dan pas paid versterken.",
     ],
   },
   "linkbuilding-bureau": {
@@ -211,7 +211,7 @@ export const DEEPDIVE_BATCH2_BATCH3: Partial<
       "Een online marketing manager coördineert site, SEO, ads, mail en data. Bij Meneer Marketing ben ik die manager én de uitvoerder. Jij hebt één aanspreekpunt dat zelf in accounts en code zit.",
       "Ik maak het jaarplan niet in een vacuüm. Ik kijk naar marge, seizoen, capaciteit en wat je site aankan. Soms is het kwartaal van SEO, soms van CRO, soms van Shopping opschalen.",
       "Online marketing manager uitbesteden aan een bureau met vijf juniors is anders dan aan één senior die je shop opent, je zoektermen leest en je flows meet.",
-      "Rapportage is wekelijks of maandelijks in mensentaal: wat ging live, wat levert het op, wat doen we volgende week. Online marketing manager bij mij is regie met handen.",
+      "Rapportage is wekelijks of maandelijks in mensentaal: wat ging live, wat levert het op, wat doe ik volgende week. Online marketing manager bij mij is regie met handen.",
     ],
   },
   "performance-marketing-bureau": {

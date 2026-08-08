@@ -6,15 +6,15 @@ export const STORY_BATCH5: Partial<Record<string, SeoLandingProseOverride>> = {
     title: "Marketing bureau zonder tien partijen en tien facturen",
     paragraphs: [
       "Je zoekt een marketing bureau en krijgt een deck, drie partijen en een retainer voordat er iets live staat. SEO hier, ads daar, site ergens anders. Jij coördineert.",
-      "Marketing bureau bij mij is één lijn: site die converteert, SEO die blijft, Google Ads en Meta Ads als de basis staat. SkinComplete en BestRest zijn geen slides.",
-      "Geen PowerPoint-fabriek. Wel pagina's, campagnes en mail die je bankrekening snappen.",
+      "Marketing bureau bij mij is één lijn: site die converteert, SEO die blijft, Google Ads en Meta Ads als de basis staat. Live projecten die je zelf kunt checken.",
+      "Pagina's, campagnes en mail die je bankrekening snappen. Uitvoering in code, geen PowerPoint-fabriek.",
     ],
   },
   "website-specialist": {
     title: "Website specialist die ook je CWV opent",
     paragraphs: [
       "Website specialist inhuren klinkt simpel tot je merkt dat niemand je tracking, schema of checkout aanraakt. Mooi design, lege pipeline.",
-      "Ik bouw Next.js en Shopify from scratch. Snelheid, SEO, conversie en onderhoud horen bij elkaar. Hills Pilates en BestRest ranken én verkopen.",
+      "Ik bouw Next.js en Shopify from scratch. Snelheid, SEO, conversie en onderhoud horen bij elkaar. Hills Pilates en ecommerce-klanten ranken én verkopen.",
       "Website specialist is geen theme installeren. Het is je marketing-fundament goed neerzetten.",
     ],
   },
@@ -22,7 +22,7 @@ export const STORY_BATCH5: Partial<Record<string, SeoLandingProseOverride>> = {
     title: "SEO bureau dat ook de pagina publiceert",
     paragraphs: [
       "SEO bureau leverde je een audit. De developer las hem niet. Drie maanden later staat er nog steeds niets live op koopintentie.",
-      "Ik audit, prioriteer en bouw. Keyword-plan, techniek, landings schrijven en publiceren. SkinComplete rankte vóór ads.",
+      "Ik audit, prioriteer en bouw. Keyword-plan, techniek, landings schrijven en publiceren. Organisch eerst, ads daarna.",
       "SEO bureau bij Meneer Marketing is uitvoering, geen maandrapport-theater.",
     ],
   },
@@ -31,7 +31,7 @@ export const STORY_BATCH5: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Email marketing is meer dan een nieuwsbrief op dinsdag. Welkom, cart recovery, post-purchase. Elk met een metric in euro's.",
       "Ik koppel Klaviyo of Shopify Mail aan je shop. Segmenten op gedrag, geen batch naar iedereen.",
-      "Mail versterkte SkinComplete vóór ads opschalen. Gratis retentie-kanaal naast paid.",
+      "Mail draait vóór ads opschalen. Gratis retentie-kanaal naast paid.",
     ],
   },
   "e-mailmarketing-bureau": {
@@ -55,14 +55,14 @@ export const STORY_BATCH5: Partial<Record<string, SeoLandingProseOverride>> = {
     paragraphs: [
       "Internetmarketing bureau dekt SEO, SEA, social, mail en site. Los ingehuurd wordt het tegenstrijdige advies en dubbel budget.",
       "Ik begin met audit en volgorde. Soms site eerst, soms Shopping, soms content. Eerlijk over wat niet kan.",
-      "Internetmarketing met bewijs: SkinComplete ecommerce, BestRest per product, Hills Pilates lokaal.",
+      "Internetmarketing met bewijs: ecommerce, B2B-portalen en lokale dienstverlening.",
     ],
   },
   "online-marketing-specialist": {
     title: "Online marketing specialist als verlengstuk, geen telefoon",
     paragraphs: [
       "Online marketing specialist is hands-on: campagnes, landings, bijsturing. Bij MKB vaak de rol die je niet fulltime wilt inhuren.",
-      "Ik schrijf code, content en lees accounts zelf. Geen advies dat in Drive verrot.",
+      "Ik schrijf code, content en lees accounts zelf. Advies dat live gaat, niet in Drive verrot.",
       "Online marketing specialist met developer-skills scheelt tussenpartijen en versnelt livegang.",
     ],
   },

@@ -67,7 +67,7 @@ export const OVER_STORY: OverStoryChapter[] = [
     id: "solo",
     tag: "Wie",
     title: "Twaalf jaar leren wat werkt",
-    body: "In twaalf jaar heb ik gezien wat online écht werkt en wat vooral geld kost zonder resultaat. Van app developer naar marketeer: ik weet wat bedrijven nodig hebben om maximaal te scoren. Geen theorie uit een boek, maar lessen uit echte projecten. Daarom focus ik op groei en omzet, niet alleen op mooie plaatjes.",
+    body: "In twaalf jaar heb ik gezien wat online écht werkt en wat vooral geld kost zonder resultaat. Van app developer naar marketeer: ik weet wat bedrijven nodig hebben om maximaal te scoren. Lessen uit echte projecten, niet theorie uit een boek. Daarom focus ik op groei en omzet, niet alleen op mooie plaatjes.",
     punchline: "Twaalf jaar les: groei is het doel, pixels zijn het middel.",
     scene: "solo",
     highlights: ["12 jaar", "Wat werkt", "Maximaal halen"],
@@ -79,9 +79,9 @@ export const OVER_STORY: OverStoryChapter[] = [
     tag: "Daarom",
     title: "From scratch, met meetplan",
     body: "Templates en page builders heb ik genoeg zien vastlopen. Rapporten vol moeilijke woorden leverden niks op. Ads zonder meetplan verbrandden budget. Na twaalf jaar weet ik: from scratch bouwen en meten is wat blijft werken als je echt wilt groeien.",
-    punchline: "Geen shortcuts meer. Alleen wat bewezen werkt.",
+    punchline: "Shortcuts zijn uit. Alleen wat bewezen werkt.",
     scene: "contrast",
-    highlights: ["From scratch", "Meetplan", "Geen shortcuts"],
+    highlights: ["From scratch", "Meetplan", "Bewezen werkt"],
     metric: { label: "Templates", value: "Nul" },
     footnote: "Bouwen · meten · geen page builder",
   },
@@ -101,7 +101,7 @@ export const OVER_STORY: OverStoryChapter[] = [
     tag: "Samen",
     title: "Jij kent je klant, ik ken de kanalen",
     body: "De beste keuzes komen uit gesprekken, niet uit een standaard pakket. Wel Shopify of Next.js? Google Ads nu of SEO eerst? Meta of e-mail? Jij kent je markt, ik ken wat technisch en commercieel werkt. Samen kiezen we de volgorde die bij jouw fase past.",
-    punchline: "Geen dictatuur. Wel richting. En eerlijk advies als iets (nog) geen zin heeft.",
+    punchline: "Richting en eerlijk advies. Dictatuur is niet mijn stijl.",
     scene: "partner",
     highlights: ["Kanalen kiezen", "Platform match", "Team modus"],
     metric: { label: "Aanpak", value: "Samen" },
@@ -116,7 +116,7 @@ export const OVER_PRINCIPLES = [
   },
   {
     title: "Technisch sterk",
-    body: "Shopify, websites from scratch, Next.js en slimme koppelingen. Ik bouw alles alsof het vandaag live moet, want dat moet het. Geen losse tools die elkaar negeren. Eén lijn van site tot campagne, zonder verrassingen als je groeit.",
+    body: "Shopify, websites from scratch, Next.js en slimme koppelingen. Ik bouw alles alsof het vandaag live moet, want dat moet het. Eén lijn van site tot campagne, zonder losse tools die elkaar negeren. Alles schaalt mee als jij groeit.",
   },
   {
     title: "Menselijk",
@@ -142,7 +142,7 @@ export const OVER_STACK: OverStackItem[] = [
   {
     id: "shopify",
     label: "Shopify",
-    body: "Webshops en B2B-portals from scratch. Geen theme uit de Store met jouw logo erop alsof dat maatwerk is.",
+    body: "Webshops en B2B-portals from scratch. Custom build, niet een theme uit de Store met jouw logo erop.",
     quip: "Salons die om 2 uur 's nachts bestellen? Been there. Built that.",
     accent: "#96BF48",
     chips: ["Liquid", "B2B-portaal", "Checkout", "GraphQL"],
@@ -166,7 +166,7 @@ export const OVER_STACK: OverStackItem[] = [
   {
     id: "google-ads",
     label: "Google Ads",
-    body: "Search, Shopping, wat past. Campagnes die je kunt uitleggen aan je moeder. Geen black box met een maandbudget.",
+    body: "Search, Shopping, wat past. Campagnes die je kunt uitleggen aan je moeder. Transparant beheer, geen black box met een maandbudget.",
     quip: "Eerst converteren. Dan pas budget erbij. Anders gokken.",
     accent: "#4285F4",
     chips: ["Search", "Shopping", "ROAS", "Landings"],
@@ -244,7 +244,7 @@ export const OVER_DAY: OverDayMoment[] = [
     time: "15:00",
     timeLabel: "Contact",
     title: "WhatsApp, mail, gewoon praten",
-    body: "Update in normale taal: wat live staat, wat het doet, wat de volgende stap is. Geen veertig slides. Geen drie alinea's voordat je punt duidelijk is. Gewoon menselijk.",
+    body: "Update in normale taal: wat live staat, wat het doet, wat de volgende stap is. Drie regels die ertoe doen, niet veertig slides. Gewoon menselijk.",
     quip: "Als ik moet gokken wat je bedoelt, is je briefing te ingewikkeld.",
     ping: "Hoi! De pagina staat live. ROAS ziet er goed uit 👍",
     mood: "call",
@@ -292,7 +292,7 @@ export const OVER_FAQ = [
   {
     question: "Ben je een eenmanszaak of een bureau?",
     answer:
-      "Eén aanspreekpunt met twaalf jaar ervaring in development, design en marketing. Strategie, bouw en campagnes komen uit hetzelfde hoofd. Geen wisselende accountmanagers.",
+      "Eén aanspreekpunt met twaalf jaar ervaring in development, design en marketing. Strategie, bouw en campagnes komen uit hetzelfde hoofd. Altijd dezelfde persoon aan de lijn.",
   },
   {
     question: "Werk je alleen in Nederland?",
@@ -307,7 +307,7 @@ export const OVER_FAQ = [
   {
     question: "Hoe verschilt dit van een groot marketingbureau?",
     answer:
-      "Sneller schakelen, minder lagen, meer eigenaarschap. Geen junior die jouw account leert kennen terwijl de deadline nadert.",
+      "Sneller schakelen, minder lagen, meer eigenaarschap. Senior die je dossier kent vóór de deadline, geen junior die net begint.",
   },
   {
     question: "Hoe communiceer je met klanten?",

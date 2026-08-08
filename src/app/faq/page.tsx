@@ -43,7 +43,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Krijg ik een heel team of gewoon jou?",
         answer:
-          "Je krijgt Meneer Marketing. Eén aanspreekpunt dat strategie, design, code en marketing combineert. Geen accountmanager die jouw verhaal doorvertelt aan iemand die het half begrijpt. Wat we bespreken is wat er gebouwd wordt, en je merkt het verschil in snelheid.",
+          "Je krijgt Meneer Marketing. Eén aanspreekpunt dat strategie, design, code en marketing combineert. Wat we bespreken is wat er gebouwd wordt. Jij merkt het verschil in snelheid.",
       },
       {
         question: "Werken jullie met vaste pakketten?",
@@ -134,7 +134,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Hoe weet ik of het werkt?",
         answer:
-          "Omdat je het ziet. Meetbare doelen vooraf, nette tracking en rapportage in taal die je begrijpt. Geen rapport van veertig pagina's met grafieken die niets zeggen, wel de cijfers waar jij beslissingen op neemt.",
+          "Omdat je het ziet. Meetbare doelen vooraf, nette tracking en rapportage in taal die je begrijpt. De cijfers waar jij beslissingen op neemt, niet een rapport van veertig pagina's met grafieken die niets zeggen.",
       },
     ],
   },
@@ -231,7 +231,7 @@ export default function FaqPage() {
                     Nog steeds een vraag over?
                   </p>
                   <p className="mt-1 text-sm text-mm-muted">
-                    Typ alsof je me app't. Geen chatbot, geen tussenlaag.
+                    Typ alsof je me app't. Ik reageer zelf, persoonlijk.
                   </p>
                 </div>
               </div>

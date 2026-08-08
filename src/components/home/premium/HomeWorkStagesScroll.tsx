@@ -61,7 +61,7 @@ const IDEAL_ROUTE: RouteStop[] = [
     chipLabel: "Denken vóór pixels",
     journeyLabel: "Eerst weten waar je winst zit en wat je als eerste aanpakt.",
     href: "/strategie",
-    hook: "Groeiplan, kanalen en budget in één routekaart. Geen twintig dingen tegelijk, wel drie keuzes die echt renderen.",
+    hook: "Groeiplan, kanalen en budget in één routekaart. Drie keuzes die renderen, niet twintig dingen tegelijk.",
     meneer: "Zonder plan is elke euro een gok. Behalve aan koffie. Die mag.",
     icon: Compass,
     accent: "#FF5722",
@@ -73,7 +73,7 @@ const IDEAL_ROUTE: RouteStop[] = [
     chipLabel: "Bouwen zonder drama",
     journeyLabel: "Website of shop from scratch. Snel, strak, klaar om te verkopen.",
     href: "/bouwen",
-    hook: "Custom code, snelle laadtijd, alles meetbaar vanaf dag één. Geen page builder die je later remt.",
+    hook: "Custom code, snelle laadtijd, alles meetbaar vanaf dag één. Code die meeschaaft, geen page builder die je later remt.",
     meneer: "Ads op een rommelige site is geld verbranden. SkinComplete bouwde ik zo op.",
     icon: Hammer,
     accent: "#45382C",
@@ -263,8 +263,8 @@ export function HomeWorkStagesScroll() {
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
             Vijf stops: strategie, bouwen, vindbaarheid, campagnes, behoud. Klik een stop of
-            druk op play en je ziet in welke volgorde online groei het best werkt. Geen losse
-            projecten, wel één lijn die blijft.
+            druk op play en je ziet in welke volgorde online groei het best werkt. Eén lijn die
+            blijft, geen losse projecten.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2">
