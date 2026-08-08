@@ -170,44 +170,7 @@ export { UGC_MARKETING } from './ugc-marketing';
 
 export { INFLUENCER_MARKETING_BUREAU } from './influencer-marketing-bureau';
 
-export const B2B_MARKETING_BUREAU: SeoLandingPage = {
-  slug: "b2b-marketing-bureau",
-  primaryKeyword: "b2b marketing bureau",
-  category: "b2b-portal",
-  metaTitle: "B2B marketing bureau · leads die tellen | Meneer Marketing",
-  metaDescription: "B2B marketing bureau voor langere salescycli. Portaal, SEO, ads en leadflows. SkinComplete B2B-niveau.",
-  keywords: ["b2b marketing bureau", "b2b online marketing", "marketing bureau zakelijk"],
-  eyebrow: "B2B marketing",
-  headline: "B2B marketing bureau",
-  headlineAccent: "dat begrijpt dat je klant niet impuls koopt.",
-  subheadline: "B2B is geen B2C met een andere logo. Langere cycli, meerdere beslissers, soms een portaal. Ik bouw systemen die leads kwalificeren en herbestellen makkelijk maken.",
-  pains: [
-    { title: "Leads zonder opvolging", body: "Formulier binnen. Niemand belt." },
-    { title: "B2C-tactieken op B2B", body: "Flash sale energie op een €50k deal." },
-    { title: "Site zonder portaal", body: "Zakelijke klant moet mailen voor prijs." },
-  ],
-  deliverables: [
-    { title: "B2B-portaal op Shopify", body: "Prijzen, login, herbestellen." },
-    { title: "Leadgeneratie", body: "SEO + ads + kwalificatie." },
-    { title: "Automatisering", body: "CRM, mail, opvolging." },
-    { title: "Content voor beslissers", body: "Antwoorden die vertrouwen bouwen." },
-  ],
-  visual: "b2b-portal",
-  processTitle: "B2B dat schaalt",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete B2B",
-  proofBody: "Salons bestellen zelf, op hun tijd. Dat is B2B marketing die werkt.",
-  proofCase: "SkinComplete",
-  hotTake: { label: "Heet take", body: "B2B marketing met alleen LinkedIn-posts is netwerken zonder net." },
-  faq: [
-    { question: "Alleen Shopify B2B?", answer: "Voor shops ja. Leadgen-sites in Next.js." },
-  ],
-  ctaTitle: "B2B marketing bespreken?",
-  ctaBody: "Vertel je salesproces en doelgroep.",
-  relatedSlugs: ["b2b-portaal-bouwen", "leadgeneratie-website", "linkedin-ads-bureau"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { B2B_MARKETING_BUREAU } from './b2b-marketing-bureau';
 
 export const ECOMMERCE_SPECIALIST: SeoLandingPage = {
   slug: "ecommerce-specialist",

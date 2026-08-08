@@ -7,7 +7,7 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     "Zakelijke klanten die zelf bestellen tegen eigen prijzen, zonder telefoontjes of Excel-orders. Zo bouw je dat binnen Shopify.",
   publishedAt: "2026-04-30",
   modifiedAt: "2026-08-08",
-  readMinutes: 10,
+  readMinutes: 12,
   category: "bouwen",
   keywords: [
     "Shopify B2B",
@@ -86,6 +86,14 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     {
       type: "p",
       text: "Bij SkinComplete hoorde SEO en e-mail bij hetzelfde traject. Eerst organisch groeien op vragen die salons stellen, daarna ads. Een B2B-portaal zonder vindbaarheid en retentie is half werk. Self-service verdient traffic net zo goed als een consumentenshop.",
+    },
+    {
+      type: "h2",
+      text: "Wat er technisch onder de motorkap zit",
+    },
+    {
+      type: "p",
+      text: "Accounts, prijslijsten, zichtbaarheid per klantgroep, checkout die B2B-regels respecteert. Soms Shopify B2B-native, soms custom theme-logica. Het doel is hetzelfde: de zakelijke klant ziet wat hij mag zien, bestelt zonder jouw inbox, en voorraad blijft één bron. Overtypen van Excel naar admin is de vijand.",
     },
     {
       type: "h2",

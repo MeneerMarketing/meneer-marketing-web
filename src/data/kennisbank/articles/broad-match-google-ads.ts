@@ -6,7 +6,7 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
   description:
     "Waarom broad match je budget opvreugt, welke zoektermen je geld stelen en hoe je wél structuur krijgt in Google Ads. Zonder jargon-regen.",
   publishedAt: "2026-07-04",
-  readMinutes: 8,
+  readMinutes: 11,
   category: "campagnes",
   keywords: [
     "broad match google ads",
@@ -92,13 +92,21 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
         "Start strak: phrase of exact op zoekwoorden met bewezen intentie. Saai? Ja. Winstgevend? Ook ja.",
         "Broad alleen met vangnet: aparte campagne, beperkt budget, wekelijkse zoektermen-review. Geen 'zet het aan en vergeet het'.",
         "Negatieven als sport: elke week termen toevoegen die geld stelen. Het is geen eenmalige klus.",
-        "Landings die matchen: als iemand op 'shopify expert' klikt, wil hij geen pagina over 'alles wat wij doen'.",
+        "Landings die matchen: als iemand op shopify expert klikt, wil hij geen pagina over alles wat het bureau doet.",
         "Conversies die kloppen: optimaliseer niet op aanmeldingen die nooit iemand belt terug.",
       ],
     },
     {
       type: "callout",
       text: "Heet take: als je bureau je zoektermenrapport niet in de eerste meeting laat zien, vraag waarom. Serieus. Gewoon vragen.",
+    },
+    {
+      type: "h2",
+      text: "Broad match naast SkinComplete- en BestRest-logica",
+    },
+    {
+      type: "p",
+      text: "Bij SkinComplete eerst organisch en shop-fundament, daarna ads. Broad match was geen shortcut om die volgorde over te slaan. Bij BestRest per product andere intentie: wat voor de ene matras werkt, is voor een andere SKU ruis. Broad zonder segmentatie mengt die werelden. Splits wat economisch anders is.",
     },
     {
       type: "h2",

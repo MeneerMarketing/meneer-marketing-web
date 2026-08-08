@@ -39,18 +39,18 @@ import {
   EMAILMARKETING,
   TIKTOK_ADS_BUREAU,
 } from "@/data/seo-landings/pages/national-batch2";
+import { NEXTJS_WEBSITE_LATEN_MAKEN } from "@/data/seo-landings/pages/nextjs-website-laten-maken";
+import { LINKBUILDING_BUREAU } from "@/data/seo-landings/pages/linkbuilding-bureau";
+import { TRACKING_GOOGLE_ANALYTICS } from "@/data/seo-landings/pages/tracking-google-analytics";
+import { B2B_MARKETING_BUREAU } from "@/data/seo-landings/pages/b2b-marketing-bureau";
 import {
-  NEXTJS_WEBSITE_LATEN_MAKEN,
-  LINKBUILDING_BUREAU,
   ONLINE_MARKETING_MANAGER,
   PERFORMANCE_MARKETING_BUREAU,
-  TRACKING_GOOGLE_ANALYTICS,
 } from "@/data/seo-landings/pages/national-batch3";
 import {
   SOCIAL_MEDIA_ADVERTISING,
   UGC_MARKETING,
   INFLUENCER_MARKETING_BUREAU,
-  B2B_MARKETING_BUREAU,
   PRODUCTPAGINA_SEO,
   GOOGLE_MAPS_MARKETING,
   GROWTH_MARKETING_BUREAU,

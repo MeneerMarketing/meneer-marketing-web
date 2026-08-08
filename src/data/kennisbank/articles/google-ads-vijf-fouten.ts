@@ -6,7 +6,7 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
   description:
     "Na audits in uiteenlopende branches: deze vijf fouten kosten het meeste geld. Herkenbaar, fixbaar, en vaak niet je schuld.",
   publishedAt: "2026-07-02",
-  readMinutes: 10,
+  readMinutes: 12,
   category: "campagnes",
   keywords: [
     "google ads fouten",
@@ -83,11 +83,19 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "De advertentie belooft 'Shopify B2B-portaal in 6 weken'. De landingspagina is je homepage met 'Welkom bij ons, wij doen alles'. De bezoeker denkt: verkeerde link. Jij denkt: ads werken niet. Message match is de goedkoopste winst in paid search. Zelfde kop, zelfde belofte, zelfde CTA. Saai? Misschien. Effectief? Altijd.",
+      text: "De advertentie belooft Shopify B2B-portaal in 6 weken. De landingspagina is je homepage met welkom bij ons, specialist in alles. De bezoeker denkt: verkeerde link. Jij denkt: ads werken niet. Message match is de goedkoopste winst in paid search. Zelfde kop, zelfde belofte, zelfde CTA. Saai? Misschien. Effectief? Altijd.",
     },
     {
       type: "p",
       text: "Daarom bouw ik landings from scratch voor campagnes die serieus budget krijgen. Niet omdat homepages lelijk zijn, maar omdat ze te veel keuzes geven. Ads brengen intentie. Landings moeten die intentie bevestigen, niet verdoven met een menu.",
+    },
+    {
+      type: "h2",
+      text: "Hoe de vijf fouten elkaar versterken",
+    },
+    {
+      type: "p",
+      text: "Zwakke landings plus slechte tracking plus broad match zonder zoektermen-ritme is geen drie problemen. Het is één kettingreactie. Smart bidding krijgt verkeerde signalen, stuurt budget naar verkeerde terms, en jij verhoogt budget omdat het dashboard druk oogt. Stop de keten bij de zwakste schakel. Vaak tracking of landings. Daarna structuur. Daarna volume.",
     },
     {
       type: "h2",

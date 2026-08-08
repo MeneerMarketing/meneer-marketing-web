@@ -229,46 +229,7 @@ export const SHOPIFY_WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
 
 export { SHOPIFY_SEO } from './shopify-seo';
 
-export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
-  slug: "nextjs-website-laten-maken",
-  primaryKeyword: "next.js website laten maken",
-  category: "website",
-  metaTitle: "Next.js website laten maken · custom build | Meneer Marketing",
-  metaDescription:
-    "Next.js website laten maken from scratch. Snel, SEO-perfect, schaalbaar. Geen WordPress, geen page builder.",
-  keywords: ["next.js website laten maken", "nextjs website", "react website laten maken", "custom website nextjs"],
-  eyebrow: "Next.js",
-  headline: "Next.js website laten maken",
-  headlineAccent: "zonder template-gedoe.",
-  subheadline:
-    "Next.js is wat ik gebruik voor sites die snel moeten zijn, perfect moeten ranken en moeten meegroeien. Geen plugins die breken. Eigen code, volledige controle.",
-  pains: [
-    { title: "WordPress traagheid", body: "Plugins, updates, hacks. Je site wordt een project op zich." },
-    { title: "Page builders", body: "Mooi in de editor, zwaar in de browser." },
-    { title: "Geen schaal", body: "Template kraakt onder verkeer en ambities." },
-  ],
-  deliverables: [
-    { title: "Custom Next.js build", body: "App Router, TypeScript, Tailwind." },
-    { title: "Core Web Vitals groen", body: "Snelheid als standaard, niet als afterthought." },
-    { title: "SEO & schema", body: "JSON-LD, semantische HTML, sitemap." },
-    { title: "CMS waar nodig", body: "Jij beheert content zonder de tech te slopen." },
-  ],
-  visual: "website-build",
-  processTitle: "From scratch bouwen",
-  processSteps: processDefault,
-  proofTitle: "MeneerMarketing zelf",
-  proofBody: "Deze site draait op Next.js. Ik eet mijn eigen cooking. Snelheid, SEO en animaties zonder compromis.",
-  hotTake: { label: "Heet take", body: "Een Next.js website laten maken door iemand die alleen WordPress kent, is een Ferrari-bouwplaats met een fietsenmaker." },
-  faq: [
-    { question: "WordPress migratie?", answer: "Ja. Van WordPress naar custom als het zinvol is." },
-    { question: "Alleen corporate sites?", answer: "Corporate, landings, portals. Shops doe ik in Shopify." },
-  ],
-  ctaTitle: "Next.js site bespreken?",
-  ctaBody: "Vertel je plannen. Ik schets architectuur en scope.",
-  relatedSlugs: ["website-laten-maken", "technische-seo"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { NEXTJS_WEBSITE_LATEN_MAKEN } from './nextjs-website-laten-maken';
 
 export const WEBSITE_LATEN_BOUWEN: SeoLandingPage = {
   slug: "website-laten-bouwen",
@@ -355,46 +316,7 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
   pillarLabel: "Vindbaarheid",
 };
 
-export const LINKBUILDING_BUREAU: SeoLandingPage = {
-  slug: "linkbuilding-bureau",
-  primaryKeyword: "linkbuilding bureau",
-  category: "seo",
-  metaTitle: "Linkbuilding bureau · autoriteit zonder spam | Meneer Marketing",
-  metaDescription:
-    "Linkbuilding met echte vermeldingen en content die citeerbaar is. Geen link-farmen, geen PBN's. Autoriteit die Google en AI vertrouwen.",
-  keywords: ["linkbuilding bureau", "linkbuilding seo", "autoriteit opbouwen seo", "backlinks nederland"],
-  eyebrow: "Linkbuilding",
-  headline: "Linkbuilding bureau dat",
-  headlineAccent: "geen link-spam verkoopt.",
-  subheadline:
-    "Links tellen nog steeds. Alleen kopen in bulk werkt niet meer. Autoriteit komt van echte vermeldingen, sterke content en een merk dat mensen willen citeren.",
-  pains: [
-    { title: "Gekochte links", body: "Penalty-risico. Kort gewin, lang verlies." },
-    { title: "Geen linkwaardige content", body: "Niemand linkt naar een dunne productpagina." },
-    { title: "Alleen links, geen basis", body: "100 backlinks op een trage site. Verspilling." },
-  ],
-  deliverables: [
-    { title: "Content die linkwaardig is", body: "Onderzoek, cases, tools. Niet fluff." },
-    { title: "Digitale PR & outreach", body: "Echte vermeldingen in je markt." },
-    { title: "Interne linkstructuur", body: "Autoriteit door je eigen site leiden." },
-    { title: "E-E-A-T versterken", body: "Expertise zichtbaar maken voor Google en AI." },
-  ],
-  visual: "content-hub",
-  processTitle: "Autoriteit opbouwen",
-  processSteps: processDefault,
-  proofTitle: "Kwaliteit boven kwantiteit",
-  proofBody: "Liever tien goede vermeldingen dan honderd spam-links. Google is niet dom. Jij ook niet.",
-  hotTake: { label: "Heet take", body: "Een linkbuilding bureau dat garanties geeft op x backlinks, verkoopt je een penalty in installments." },
-  faq: [
-    { question: "Kopen jullie links?", answer: "Nee. Echte outreach en content die mensen willen delen." },
-    { question: "Hoe lang duurt het?", answer: "Autoriteit bouwt maanden. Geen overnight tricks." },
-  ],
-  ctaTitle: "Autoriteit opbouwen?",
-  ctaBody: "Vertel je markt. Ik schets wat linkwaardig is.",
-  relatedSlugs: ["seo-specialist", "content-marketing-vindbaarheid", "hoger-in-google"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { LINKBUILDING_BUREAU } from './linkbuilding-bureau';
 
 export const ONLINE_MARKETING_MANAGER: SeoLandingPage = {
   slug: "online-marketing-manager",
@@ -520,44 +442,5 @@ export const CRO_BUREAU: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const TRACKING_GOOGLE_ANALYTICS: SeoLandingPage = {
-  slug: "tracking-google-analytics",
-  primaryKeyword: "google analytics tracking",
-  category: "b2b-portal",
-  metaTitle: "Google Analytics tracking · data die klopt | Meneer Marketing",
-  metaDescription:
-    "Google Analytics, GTM en conversietracking goed zetten. Consent mode, ecommerce events, ads-koppeling. Geen optimalisatie op leugens.",
-  keywords: ["google analytics tracking", "gtm specialist", "conversietracking setup", "google tag manager bureau"],
-  eyebrow: "Tracking",
-  headline: "Google Analytics tracking",
-  headlineAccent: "zonder fantasie-cijfers.",
-  subheadline:
-    "Je optimaliseert op wat je meet. Meet je rommel, krijg je rommel. Ik zet GA4, GTM en ads-tracking zo dat je team en algoritmes de waarheid zien.",
-  pains: [
-    { title: "Dubbele conversies", body: "Dashboard toont 40 sales. Je had er 8." },
-    { title: "Geen ecommerce events", body: "ROAS is decoratie zonder waarde." },
-    { title: "Consent kapot", body: "Data mist. Smart bidding vliegt blind." },
-  ],
-  deliverables: [
-    { title: "GA4 & GTM setup", body: "Schone container, documentatie." },
-    { title: "Ecommerce tracking", body: "Orders, waarde, producten." },
-    { title: "Ads-koppeling", body: "Google en Meta conversies correct." },
-    { title: "Consent mode", body: "GDPR-proof zonder data-zwart gat." },
-  ],
-  visual: "b2b-portal",
-  visualCaption: "Meet eerst. Optimaliseer daarna. Anders gok je.",
-  processTitle: "Tracking die blijft werken",
-  processSteps: processDefault,
-  proofTitle: "Ads + data",
-  proofBody: "Zonder tracking fix je geen ads-account. Ik begin vaak hier voordat budget omhoog gaat.",
-  hotTake: { label: "Heet take", body: "Google Ads optimaliseren zonder werkende conversietracking is autorijden met een beslagen voorruit." },
-  faq: [
-    { question: "Alleen setup?", answer: "Ja, of onderdeel van een breder traject met ads en CRO." },
-    { question: "Shopify of custom?", answer: "Beide. Andere stack, zelfde principes." },
-  ],
-  ctaTitle: "Tracking laten checken?",
-  ctaBody: "Vertel je stack. Ik scan wat er mis gaat.",
-  relatedSlugs: ["google-ads-bureau", "performance-marketing-bureau"],
-  pillarSlug: "behoud",
-  pillarLabel: "Behoud",
-};
+export { TRACKING_GOOGLE_ANALYTICS } from './tracking-google-analytics';
+
