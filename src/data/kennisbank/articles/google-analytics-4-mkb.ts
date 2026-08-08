@@ -6,7 +6,8 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
   description:
     "Google Analytics 4 voor MKB: welke events ertoe doen, conversies die kloppen en antwoorden op de vraag welke campagne geld opleverde.",
   publishedAt: "2026-07-06",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "behoud",
   keywords: [
     "google analytics 4 mkb",
@@ -15,6 +16,33 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     "google ads conversie tracking",
   ],
   dienstSlugs: ["tracking", "google-ads", "strategie"],
+  faqs: [
+    {
+      question: "Welke GA4-conversies moet ik als primary zetten?",
+      answer:
+        "Alleen wat je bankrekening herkent: purchase met waarde, of generate_lead / call-click bij diensten. Scroll, engaged session en 'form start' horen niet in Smart Bidding.",
+    },
+    {
+      question: "Waarom wijken Ads en GA4 af van mijn shop?",
+      answer:
+        "Consent, adblockers, verkeerde tags, dubbele firings, of attributievensters. Vergelijk op dezelfde dag met admin of CRM. Structureel verschil? Fix tags vóór je budget verhoogt.",
+    },
+    {
+      question: "Heb ik server-side tracking nodig?",
+      answer:
+        "Niet vanaf dag één. Wel zodra ad spend serieus is en cookies/adblockers je data leegtrekken. Server-side is hygiëne bij schaal, geen statussymbool.",
+    },
+    {
+      question: "Is GA4 genoeg om campagnes te sturen?",
+      answer:
+        "Voor richting ja, voor optimalisatie wil je Ads-conversies die kloppen plus backend. GA4 alleen zonder waarde en Ads-import is een mooi dashboard met een gat in de bodem.",
+    },
+    {
+      question: "Hoe vaak moet ik tracking checken?",
+      answer:
+        "Na elke site- of checkout-wijziging, en wekelijks een snelle sanity check. Maandelijks: Ads vs shop/CRM. Tracking rot stil als niemand kijkt.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -78,11 +106,35 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Leadgeneratie meets anders dan shops",
+      text: "Leadgeneratie meet anders dan shops",
     },
     {
       type: "p",
       text: "Bij diensten is purchase zeldzaam. Dan telt generate_lead of een call-click. Kwaliteit meet je in CRM: welke leads werden klant? GA4 alleen zegt hoeveel formulieren binnenkwamen. Sales zegt hoeveel ertoe deden. Beide nodig.",
+    },
+    {
+      type: "h2",
+      text: "Consent Mode en GA4 in één adem",
+    },
+    {
+      type: "p",
+      text: "Zonder nette banner en Consent Mode v2 mist GA4 een deel van je traffic en modelleert de rest. Dat voelt als 'Analytics liegt'. Vaak is het privacy + implementatie. Lees het Consent Mode-artikel als Ads en shop uit elkaar lopen terwijl tags 'groen' staan in Tag Assistant na accept.",
+    },
+    {
+      type: "h2",
+      text: "Explorations die wél de moeite waard zijn",
+    },
+    {
+      type: "ul",
+      items: [
+        "Landingspagina × conversie: welke URL's verdienen ads-budget?",
+        "Bron/medium × aankoopwaarde: welke kanalen brengen marge, niet alleen sessies?",
+        "Funnel: view_item → add_to_cart → begin_checkout → purchase. Waar valt het stil?",
+      ],
+    },
+    {
+      type: "p",
+      text: "Bij SkinComplete was de volgorde: shop en meting eerst, ads later. Bij BestRest telde per product de waarde mee, anders optimaliseer je op omzet zonder marge. GA4 zonder value is een scorebord zonder punten.",
     },
     {
       type: "h2",

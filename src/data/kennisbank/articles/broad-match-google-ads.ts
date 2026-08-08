@@ -6,7 +6,8 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
   description:
     "Waarom broad match je budget opvreugt, welke zoektermen je geld stelen en hoe je wél structuur krijgt in Google Ads. Zonder jargon-regen.",
   publishedAt: "2026-07-04",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "broad match google ads",
@@ -15,6 +16,33 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
     "negatieve zoekwoorden",
   ],
   dienstSlugs: ["google-ads", "adverteren", "tracking"],
+  faqs: [
+    {
+      question: "Wanneer mag broad match wél aan?",
+      answer:
+        "Als conversies kloppen, landings scherp zijn, negatieven wekelijks bijgehouden worden, en je het in een aparte camp met budgetplafond zet. Broad zonder ritme is een open kraan.",
+    },
+    {
+      question: "Broad of phrase/exact voor starters?",
+      answer:
+        "Start phrase/exact op bewezen intentie. Broad later als discovery-laag. Saai wint van verrassingsbox zolang je data dun is.",
+    },
+    {
+      question: "Lost Smart Bidding broad-match-ruis op?",
+      answer:
+        "Nee. Bidding optimaliseert op wat je meet. Voed je verkeerde klikken en micro-conversies, dan schaalt het verkeerde. Structuur + zoektermen eerst.",
+    },
+    {
+      question: "Is AI Max hetzelfde als broad?",
+      answer:
+        "Vergelijkbare geest: meer bereik, minder controle. Zelfde hygiëne: sterke assets, landings, negatieven, schone conversies. Zie het AI Max-artikel voor Search.",
+    },
+    {
+      question: "Hoe snel zie ik of broad lekt?",
+      answer:
+        "Na een paar dagen in het zoektermenrapport, gesorteerd op kosten. Wacht niet tot einde maand. Twintig minuten per week bespaart vaak meer dan een creatieve brainstorm.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -99,6 +127,14 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
     {
       type: "callout",
       text: "Heet take: als je bureau je zoektermenrapport niet in de eerste meeting laat zien, vraag waarom. Serieus. Gewoon vragen.",
+    },
+    {
+      type: "h2",
+      text: "Broad naast tCPA en tROAS",
+    },
+    {
+      type: "p",
+      text: "Lage targets op broad is een snelle manier om volume te krijgen zonder kwaliteit. Hoge targets zonder volume laten de camp stil vallen. Eerst data op phrase/exact, dan broad met ruimere maar eerlijke doelen. Bidding is geen pleister op slechte match types.",
     },
     {
       type: "h2",
