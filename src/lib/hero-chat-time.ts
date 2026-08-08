@@ -43,7 +43,7 @@ export const HERO_CHAT_INTRO_BY_TIME: Record<
   ],
   late: [
     "Hoi. Late avond, grote plannen? Herken ik.",
-    "Morgen pakken we het op. Nu alvast kiezen? Tik hieronder wat het dichtstbij zit.",
+    "Morgen pak ik het op. Nu alvast kiezen? Tik hieronder wat het dichtstbij zit.",
   ],
 };
 

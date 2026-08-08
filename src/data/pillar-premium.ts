@@ -18,12 +18,12 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       "CRO",
       "Leadgen",
       "Tracking",
-      "Geen PDF",
+      "Live plan",
       "Meetbaar",
     ],
     funFact:
-      "73% van de marketingbudgetten gaat naar kanalen die al bewezen werken bij de concurrent. Niet bij jou. Daarom kijken we eerst naar jouw cijfers.",
-    funFactSource: "Daarom starten we met data, niet met ads",
+      "73% van de marketingbudgetten gaat naar kanalen die al bewezen werken bij de concurrent. Niet bij jou. Daarom kijk ik eerst naar jouw cijfers.",
+    funFactSource: "Daarom start ik met data, niet met ads",
     funFactStat: "73%",
     hubTitle: "Elk kanaal heeft zijn plek in het plan.",
     hubSubtitle:
@@ -70,9 +70,9 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
     ],
     funFact:
       "Gemiddeld gaat 26% van advertentiebudget naar zoektermen die al organisch scoren. Wie SEO en ads combineert, betaalt dubbel voor dezelfde klik.",
-    funFactSource: "Daarom kijken we eerst naar je fundament",
+    funFactSource: "Daarom kijk ik eerst naar je fundament",
     funFactStat: "26%",
-    hubTitle: "Zeven kanalen. Eén funnel. Geen budget in de afvoer.",
+    hubTitle: "Zeven kanalen. Eén funnel. Budget dat rendeert.",
     hubSubtitle:
       "Google, Meta, creators, marketplaces: elk vlak heeft een rol. Beweeg over de slakkenbuis of klik door naar de dienst die bij jouw fase past.",
     proofMetrics: [
@@ -84,7 +84,7 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
   bouwen: {
     stickers: [
       "From scratch",
-      "Geen templates",
+      "Custom build",
       "Shopify",
       "Next.js",
       "Supersnel",
@@ -118,7 +118,7 @@ const PREMIUM: Partial<Record<PillarSlug, PillarPremiumContent>> = {
       "Een nieuwe klant werven kost gemiddeld vijf keer meer dan een bestaande behouden. Toch gaat het meeste budget nog steeds naar acquisitie.",
     funFactSource: "Daarom meten we in herhaalaankopen en LTV",
     funFactStat: "5×",
-    hubTitle: "Vijf systemen. Eén klantmotor. Geen lek na de eerste koop.",
+    hubTitle: "Vijf systemen. Eén klantmotor. Vastgehouden na de eerste koop.",
     hubSubtitle:
       "Mail, retentie, workflows, automatisering en AI: elk stuk houdt klanten terug. Beweeg over de motor of klik door naar het traject dat bij je shop past.",
     proofMetrics: [

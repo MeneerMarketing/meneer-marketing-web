@@ -122,7 +122,7 @@ const SCENARIO_BODY_BANK = [
   "In {city} zie ik vaak dat ondernemers denken dat lokaal automatisch betekent: adres op de site. Google is strenger. Je profiel, reviews en landings moeten mee.",
   "Je concurrent adverteert al op '{kw}'. Jij twijfelt nog. Elke week wachten is een week dat hij data verzamelt en jij niet.",
   "Als je marge op je belangrijkste product te laag is voor ads, zeg ik dat hardop. Dan is SEO of je site slimmer dan branden.",
-  "SkinComplete groeide eerst organisch. BestRest kreeg per product een plan. Jij krijgt een volgorde op maat die klopt.",
+  "Eerst organisch bewijzen, daarna ads. Per product of dienst een eigen plan. Jij krijgt een volgorde op maat die klopt.",
   "In {city} telt niet wie het hardst schreeuwt op LinkedIn. Het telt wie de snelste, duidelijkste pagina heeft als iemand op zoek is naar {kw}.",
   "Je concurrent in {region} adverteert misschien al op jouw stad. Lokaal winnen betekent: betere landings, niet per se meer budget.",
   "Mond-tot-mond werkt nog steeds in {city}. Maar de mond begint steeds vaker met een Google-zoekopdracht.",

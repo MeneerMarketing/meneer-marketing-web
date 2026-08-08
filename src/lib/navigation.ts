@@ -90,7 +90,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
     featured: {
       title: "Eerst het plan, dan de euro's",
       description:
-        "Bij BestRest begon alles met een eigen strategie per product. Geen standaard funnel, wel resultaat.",
+        "Eerst een eigen strategie per product of dienst. Resultaat via maatwerk, niet via een standaard funnel.",
       href: "/cases",
     },
   },
@@ -102,10 +102,10 @@ export const megaMenuColumns: MegaMenuColumn[] = [
     items: [
       {
         name: "Websites from scratch",
-        description: "Geen templates, volledig custom build",
+        description: "Custom build from scratch, zonder templates",
         menuLabel: "Websites from scratch",
         menuDescription:
-          "Websites die we zelf bouwen: snel, veilig en precies passend bij jouw bedrijf.",
+          "Websites die ik zelf bouw: snel, veilig en precies passend bij jouw bedrijf.",
         href: "/diensten/webdevelopment",
       },
       {
@@ -113,7 +113,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
         description: "Shopify-webshops from scratch, custom themes",
         menuLabel: "Shopify from scratch",
         menuDescription:
-          "Shopify-expert: maatwerk themes from scratch. Geen templates, alles wat het platform kan.",
+          "Shopify-expert: themes from scratch. Alles wat het platform kan, zonder store-template.",
         href: "/diensten/shopify-enterprise",
       },
       {
@@ -160,7 +160,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
     featured: {
       title: "Het fundament voor groei",
       description:
-        "Geen standaardtemplates: platformen die snel, veilig en klaar zijn om te schalen.",
+        "Custom platformen die snel, veilig en klaar zijn om te schalen.",
       href: "/cases",
     },
   },
@@ -214,7 +214,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
     featured: {
       title: "Gevonden vóór de advertentie",
       description:
-        "SkinComplete stond eerst bovenaan in Google. Daarna pas gingen de ads aan. Die volgorde loont.",
+        "Eerst organisch bovenaan, daarna pas ads. Die volgorde loont.",
       href: "/cases",
     },
   },

@@ -282,7 +282,7 @@ export function casesItemListJsonLd(
     "@type": "ItemList",
     name: "Cases Meneer Marketing",
     description:
-      "Succesverhalen: SkinComplete, BestRest en Hills Pilates. Shopify, SEO, ads en custom build.",
+      "Succesverhalen met Shopify, SEO, ads en custom build. Cases die je zelf kunt checken.",
     itemListElement: cases.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,

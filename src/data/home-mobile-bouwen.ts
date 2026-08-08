@@ -12,13 +12,13 @@ export const HOME_MOBILE_BOUWEN_INTRO = {
   title: "Vertel wat je wilt.",
   titleAccent: "Ik bouw het.",
   lead:
-    "Geen templates, geen page builders. Jij beschrijft het idee, ik schrijf de code. Webshop, website from scratch, app, landingspagina of boekingssysteem: als het online moet draaien, regelen we het.",
+    "Custom code, geen templates of page builders. Jij beschrijft het idee, ik schrijf de code. Webshop, website from scratch, app, landingspagina of boekingssysteem: als het online moet draaien, regel ik het.",
 } as const;
 
 /** Vertellend: één intro, geen opsomming */
 export const HOME_MOBILE_BOUWEN_STORY = [
   "Sommige bureaus verkopen een standaardpakket. Ik niet. Jij vertelt waar je naartoe wilt, ik kijk wat past en bouw het from scratch. Concreet of vaag, maakt niet uit.",
-  "Webshop op Shopify? Custom site? B2B-portaal, boekingsflow, landingspagina voor je ads? Allemaal gedaan. Ooit zelfs een game gebouwd. Geen AAA-blockbuster, wel het bewijs dat 'kan niet' zelden een technisch probleem is.",
+  "Webshop op Shopify? Custom site? B2B-portaal, boekingsflow, landingspagina voor je ads? Allemaal gedaan. Ooit zelfs een game gebouwd. Niet AAA, wel het bewijs dat 'kan niet' zelden een technisch probleem is.",
 ] as const;
 
 export const HOME_MOBILE_BOUWEN_CAN_BUILD = [
