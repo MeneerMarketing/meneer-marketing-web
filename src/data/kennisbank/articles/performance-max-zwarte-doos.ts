@@ -6,7 +6,8 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
   description:
     "PMax kan werken. Ook zonder controle als je een verrassing wilt. Wanneer Performance Max past, wanneer niet, en wat je eerst op orde moet hebben.",
   publishedAt: "2026-07-06",
-  readMinutes: 9,
+  modifiedAt: "2026-08-08",
+  readMinutes: 11,
   category: "campagnes",
   keywords: [
     "performance max uitleg",
@@ -15,6 +16,23 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     "performance max shopping",
   ],
   dienstSlugs: ["google-ads", "adverteren", "shopify-enterprise"],
+  faqs: [
+    {
+      question: "Wanneer werkt Performance Max wél?",
+      answer:
+        "Met schone feeds of sterke assets, landings die converteren, genoeg conversiedata en realistische marges. Zonder dat is PMax sneller budget verdelen, geen shortcut.",
+    },
+    {
+      question: "Moet ik Search stopzetten voor PMax?",
+      answer:
+        "Niet blind. Vaak eerst Search of Shopping met controle, dan PMax testen met beperkt budget. Alles op PMax omdat Google het aanraadt is geen plan.",
+    },
+    {
+      question: "Waarom zie ik weinig detail in PMax?",
+      answer:
+        "Google optimaliseert over veel placements en toont minder query-detail. Daarom moet input schoon zijn: anders optimaliseer je blind op ruis.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -39,7 +57,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Waar het misgaat (en waarom niemand het hardop zegt)",
+      text: "Waar het misgaat",
     },
     {
       type: "p",
@@ -76,13 +94,13 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
         "Merchant Center zonder rode vlaggen.",
         "Conversietracking die waarde meestuurt, niet alleen pageviews.",
         "Landings per productgroep of intentie waar het kan.",
-        "Klein PMax-budget, vier weken data, dan pas oordelen.",
-        "Insights tab lezen alsof het je bankafschrift is.",
+        "Klein PMax-budget, weken data, dan pas oordelen.",
+        "Insights-tab lezen alsof het je bankafschrift is.",
       ],
     },
     {
       type: "callout",
-      text: "Heet take: 'we zetten alles op PMax want Google raadt het aan' is geen plan. Het is outsourcing van verantwoordelijkheid naar een algoritme dat van volume houdt.",
+      text: "Heet take: alles op PMax omdat Google het aanraadt is geen plan. Het is outsourcing van verantwoordelijkheid naar een algoritme dat van volume houdt.",
     },
     {
       type: "h2",
@@ -90,11 +108,11 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Als je site niet converteert. Als je feed liegt. Als je minder dan genoeg conversies per maand hebt om te leren. Als je eerlijk geen tijd hebt om assets te maken en toch kwaliteit wilt. Dan is klassieke Search of Shopping strakker vaak slimmer. Saai? Soms. Winstgevend? Vaker dan je denkt.",
+      text: "Als je site niet converteert. Als je feed liegt. Als je te weinig conversies per maand hebt om te leren. Als je eerlijk geen tijd hebt om assets te maken en toch kwaliteit wilt. Dan is klassieke Search of Shopping strakker vaak slimmer. Saai? Soms. Winstgevend? Vaker dan je denkt.",
     },
     {
       type: "p",
-      text: "PMax is geen vijand. Het is een versterker. En een versterker op ruis levert harder ruis. Fix de ruis eerst.",
+      text: "PMax is geen vijand. Het is een versterker. En een versterker op ruis levert harder ruis. Fix de ruis eerst. Op mijn Google Ads bureau- en Shopping-pagina's leg ik uit hoe feed, landings en biedingen samenhangen voordat je de zwarte doos meer budget geeft.",
     },
   ],
 };
