@@ -73,8 +73,8 @@ export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
   ],
   proofTitle: "Meneer als consultant",
   proofBody:
-    "Ik zit aan tafel alsof ik je marketingmanager ben. Omdat dat is wat je nodig hebt. SkinComplete en BestRest kregen strategie én uitvoering: shop, SEO, ads. Geen advies-PDF zonder deploy.",
-  proofCase: "SkinComplete",
+    "Ik zit aan tafel alsof ik je marketingmanager ben. Diagnose, plan op één pagina, daarna live zetten: site, SEO, ads. Advies dat eindigt in deploy, niet in een lade.",
+  proofCase: "Advies met uitvoering",
   hotTake: {
     label: "Heet take",
     body: "Een marketing consultant die nooit in je Google Ads heeft gekeken, gokt met jouw geld.",
@@ -134,7 +134,7 @@ export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een marketing consultant mkb omdat je sturing wilt zonder een fulltime CMO. Of omdat je bureau slides levert en weinig live zet.",
         "Ik combineer diagnose met uitvoering. Site, SEO, Google Ads, Meta. Eén aanspreekpunt. Prioriteit boven drukte.",
-        "SkinComplete: organisch eerst, dan ads. BestRest: per product andere logica. Dat is consultancy die in het account zichtbaar is.",
+        "Consultancy die landt zie je in het account: tracking die klopt, campagnes die draaien, landings die live staan. Ik prioriteer wat eerst moet op basis van marge en teamcapaciteit, niet op de nieuwste trend.",
         "Een to-do lijst zonder eigenaar is duur. Ik pak wat eerst moet en zet het live, of zeg eerlijk dat jij het intern moet doen.",
         "Wil je alleen een sparringsessie? Kan. Wil je iemand die ook bouwt? Dan is dit de rol.",
       ],

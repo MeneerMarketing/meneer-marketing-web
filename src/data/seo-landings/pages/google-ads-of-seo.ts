@@ -40,7 +40,7 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
     },
     {
       title: "SEO eerst als de site klaar is",
-      body: "SkinComplete-route: organisch bewijzen, dan ads opschalen. Alleen als fundering klopt.",
+      body: "Organisch bewijzen, dan ads opschalen. Alleen als fundering en landings kloppen.",
     },
     {
       title: "Ads om te leren",
@@ -72,10 +72,10 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
       body: "Landings, SEO of campagnes live. Meten. Bijsturen. Geen advies-PDF die in een lade verdwijnt.",
     },
   ],
-  proofTitle: "SkinComplete deed SEO eerst",
+  proofTitle: "Volgorde op marge en tijdlijn",
   proofBody:
-    "Bij SkinComplete eerst organisch verkeer en autoriteit, daarna ads. Bij BestRest per product andere mix: soms ads om te testen, soms SEO omdat de marge het verdient. Logica op marge en tijdlijn, niet op mode.",
-  proofCase: "SkinComplete",
+    "Soms wint SEO omdat je tijd hebt en de site al converteert. Soms ads om snel te leren of cashflow te vullen. Ik kies per product of dienst wat eerst moet. Logica op marge en tijdlijn, niet op wat het luidst klinkt in een salescall.",
+  proofCase: "Beslisboom op cijfers",
   hotTake: {
     label: "Heet take",
     body: "Google Ads op een site die niet converteert is SEO-budget verbranden met extra stappen.",
@@ -102,9 +102,9 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
         "Soms op merkzoekwoorden. Vaak versterken ze elkaar: ads testen copy, SEO schaalt wat werkt. Ik plan overlapping bewust, niet per ongeluk.",
     },
     {
-      question: "Hoe past SkinComplete in dit verhaal?",
+      question: "Hoe kies je de volgorde in de praktijk?",
       answer:
-        "Eerst SEO en organische groei, daarna ads. Zo wist je wat converteerde vóór je budget opschaalde. Die volgorde spaart dure lessen.",
+        "Ik kijk naar cashflow, sitekwaliteit en CPA-ruimte. Converteert de site al? Dan kan ads snel leren. Heb je tijd en sterke content? SEO eerst. Bij een ecommerce-shop met veel SKU's kan per product een andere mix slim zijn.",
     },
     {
       question: "Hoe lang duurt SEO versus ads?",
@@ -135,9 +135,9 @@ export const GOOGLE_ADS_OF_SEO: SeoLandingPage = {
       paragraphs: [
         "Je zoekt google ads of seo omdat iemand je dwong te kiezen. Of omdat je budget beide half doet en niks wint. De vraag is zelden óf. Het is wanneer, en wat eerst moet kloppen.",
         "Ads kopen snelheid. SEO koopt bezit. Beide falen op een site die niet converteert. Daarom begin ik vaak bij landings en meting, niet bij 'meer budget' of 'meer blogs'.",
-        "SkinComplete: organisch eerst, ads later. BestRest: per matras of topper andere mix. Jouw antwoord hangt van marge, concurrentie en hoe snel de bankrekening iets moet zien.",
+        "Jouw antwoord hangt van marge, concurrentie en hoe snel de bankrekening iets moet zien. Organisch eerst als je tijd hebt en landings sterk zijn. Ads eerst als je snel moet valideren of cashflow nodig hebt.",
         "Doe je beide zonder plan, dan vechten keywords en copy. Doe je één kanaal goed met scherpe landings, dan leer je sneller wat schaalbaar is.",
-        "Wil je een slogan als antwoord? Die bestaat niet. Wil je een eerlijke volgorde voor jouw situatie? Dan tekenen we die uit en voeren we hem uit.",
+        "Wil je een slogan als antwoord? Die bestaat niet. Wil je een eerlijke volgorde voor jouw situatie? Dan teken ik die uit en voer ik hem uit.",
       ],
     },
     deepDive: {

@@ -71,10 +71,10 @@ export const PERFORMANCE_MARKETING_BUREAU: SeoLandingPage = {
       body: "Winnaars budget. Verliezers snijden of fixen. Elke week.",
     },
   ],
-  proofTitle: "BestRest per product",
+  proofTitle: "Performance per productlijn",
   proofBody:
-    "Performance marketing werkt per productlijn, niet op accountniveau met gemiddelden die liegen. Bij BestRest andere marge, andere CPA-ruimte. Bij SkinComplete eerst organisch bewijs, daarna ads opschalen.",
-  proofCase: "BestRest",
+    "Performance marketing werkt per productlijn, niet op accountniveau met gemiddelden die liegen. Ik reken breakeven CPA of minimale ROAS per groep door. Pas daarna schaal ik budget naar winnaars en snijd ik wat verlies draait.",
+  proofCase: "Unit economics",
   hotTake: {
     label: "Heet take",
     body: "Performance marketing zonder iemand die je site kan fixen, is optimalisatie in een huis met lekkende ramen.",
@@ -135,9 +135,9 @@ export const PERFORMANCE_MARKETING_BUREAU: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een performance marketing bureau omdat vanity metrics niet meer genoeg zijn. Impressies zijn leuk. Marge is eten.",
         "Ik begin bij unit economics en tracking. Daarna landings. Pas dan budget. Google Ads, Meta, Shopping onder één strategie.",
-        "BestRest: performance per product, niet één gemiddelde ROAS die liegt. SkinComplete: organisch eerst, ads als versneller.",
+        "Performance per product of leadtype, niet één gemiddelde ROAS die liegt. Eerst bewijs op een beperkte set, daarna opschalen. Ads zijn versneller, geen vervanging voor een lekkende landingspagina.",
         "Kanalen die elkaar tegenspreken kosten dubbel. Message match en gedeelde landings houden de CPA eerlijk.",
-        "Wil je alleen mediabuying zonder site-aanraking? Dan ben ik te breed. Wil je meetbare groei tot in de bankrekening? Dan bouwen we het systeem.",
+        "Wil je alleen mediabuying zonder site-aanraking? Dan ben ik te breed. Wil je meetbare groei tot in de bankrekening? Dan bouw ik het systeem.",
       ],
     },
     deepDive: {

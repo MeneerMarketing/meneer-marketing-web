@@ -77,10 +77,10 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
       body: "ROAS of CPA op orde? Dan pas budget omhoog. Niet omdat de maand om is of omdat een dashboard 'opportunity' schreeuwt.",
     },
   ],
-  proofTitle: "BestRest en SkinComplete",
+  proofTitle: "Beheer met eigenaarschap",
   proofBody:
-    "SkinComplete groeide eerst organisch, daarna pas ads. BestRest kreeg een eigen strategie per productlijn, niet één generiek accountplan. Elk traject heeft andere marge, seizoen en intentie. Daarom beheer ik zelf, niet via een wisselende junior-laag.",
-  proofCase: "SkinComplete",
+    "Elk traject heeft andere marge, seizoen en intentie. Ik begin bij breakeven en landings, dan Search of Shopping, dan pas volume. Beheer ik zelf, niet via een wisselende junior-laag.",
+  proofCase: "Breakeven eerst",
   hotTake: {
     label: "Heet take",
     body: "Een Google Ads bureau dat je site niet wil aanraken, verkoopt je een thermometer terwijl je huis lekt.",
@@ -114,7 +114,7 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
     {
       question: "Wat als mijn site nog niet converteert?",
       answer:
-        "Dan zeg ik dat eerlijk. Eerst landings, snelheid of aanbod scherper, dan ads. Budget op een lekke emmer is duur onderwijs. Soms starten we met een klein testbudget én een pagina-fix tegelijk.",
+        "Dan zeg ik dat eerlijk. Eerst landings, snelheid of aanbod scherper, dan ads. Budget op een lekke emmer is duur onderwijs. Soms start ik met een klein testbudget én een pagina-fix tegelijk.",
     },
     {
       question: "Praat ik met jou of met een accountmanager?",
@@ -141,10 +141,10 @@ export const GOOGLE_ADS_BUREAU: SeoLandingPage = {
       title: "Wanneer Google Ads wél werkt",
       paragraphs: [
         "Je zoekt een Google Ads bureau omdat je sneller leads of orders wilt. Ads werken pas als je site converteert, je tracking klopt en je weet bij welke CPA of ROAS je nog marge houdt. Anders koop je verkeer voor een lekke emmer.",
-        "Ik start bij breakeven: marge, orderwaarde, huidige conversie. SkinComplete kreeg eerst SEO en een sterke shop. BestRest kreeg een plan per productlijn. Pas daarna ging het volume omhoog.",
+        "Ik start bij breakeven: marge, orderwaarde, huidige conversie. Sterke shop en scherpe landings eerst. Pas daarna gaat het volume omhoog.",
         "Search en Shopping op koopintentie, Performance Max alleen met schone feeds, wekelijks zoektermen schonen. Jij praat met mij over je account, niet met een wisselende accountmanager.",
-        "Een goed bureau zegt ook nee. Te lage marge, te zwakke landings, te vieze data: dan fixen we dat eerst of we starten micro. Liever een klein winstgevend account dan een groot verliesgevend theater.",
-        "Wil je alleen meer kliks in je rapport? Dan ben ik te duur. Wil je meetbare acquisitie die bij je marge past? Dan beginnen we klein en schalen we op bewijs.",
+        "Een goed bureau zegt ook nee. Te lage marge, te zwakke landings, te vieze data: dan fix ik dat eerst of start ik micro. Liever een klein winstgevend account dan een groot verliesgevend theater.",
+        "Wil je alleen meer kliks in je rapport? Dan ben ik te duur. Wil je meetbare acquisitie die bij je marge past? Dan begin ik klein en schaal ik op bewijs.",
       ],
     },
     deepDive: {

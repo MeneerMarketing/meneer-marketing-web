@@ -73,10 +73,10 @@ export const E_COMMERCE_MARKETING: SeoLandingPage = {
       body: "Seizoen, PMax, Klaviyo. Eerst bewijs, dan volume. Elke week bijsturen op orders, niet op vanity.",
     },
   ],
-  proofTitle: "SkinComplete & BestRest",
+  proofTitle: "Fundament eerst, dan schalen",
   proofBody:
-    "Twee totaal verschillende shops. Zelfde aanpak: eerst fundament, dan schalen. Bij SkinComplete organisch en B2B-portaal vóór zware ads. Bij BestRest per matras en topper een eigen logica. E-commerce marketing is maatwerk, geen pakket.",
-  proofCase: "BestRest",
+    "Elke shop heeft andere marge, voorraad en klanttype. Ik begin bij snelheid, feed en checkout. Daarna kies ik per product of SEO, Shopping of mail het zwaartepunt draagt. E-commerce marketing is volgorde op jouw cijfers, niet een standaardpakket.",
+  proofCase: "Volgorde op marge",
   hotTake: {
     label: "Heet take",
     body: "E-commerce marketing met alleen meer ads is benzine in een lekke tank.",
@@ -90,7 +90,7 @@ export const E_COMMERCE_MARKETING: SeoLandingPage = {
     {
       question: "Doe je ook B2B webshops?",
       answer:
-        "Ja. Portaal, prijzen, herbestellen. SkinComplete-niveau: serieuze aanvragen, niet alleen een open catalogus.",
+        "Ja. Portaal, prijzen, herbestellen. Ik bouw voor serieuze aanvragen en herhaalorders, niet alleen een open catalogus zonder logica.",
     },
     {
       question: "Wat is het verschil met een webshop laten maken?",
@@ -137,9 +137,9 @@ export const E_COMMERCE_MARKETING: SeoLandingPage = {
       paragraphs: [
         "Je zoekt e-commerce marketing omdat je shop wel draait, maar niet als machine. SEO, Shopping, Meta en e-mail vechten om dezelfde producten met andere beloftes.",
         "Ik begin bij de shop zelf: snelheid, productdata, checkout, tracking. Daarna pas budget. Meer ads op een trage of vage productpagina maakt alleen de factuur groter.",
-        "Bij BestRest telde elke matras anders. Bij SkinComplete eerst organisch en B2B, daarna ads. Jouw mix hangt van marge en voorraad af, niet van wat hip is op LinkedIn.",
+        "Jouw mix hangt van marge en voorraad af, niet van wat hip is op LinkedIn. Soms wint organisch en mail. Soms Shopping op een beperkte SKU-set. Ik teken die volgorde uit vóór het budget omhoog gaat.",
         "E-mail is geen bijzaak. Herhaalaankopen en abandoned cart zijn vaak goedkoper dan nieuwe klikken. Wie alleen acquisitie koopt, huurt groei.",
-        "Wil je alleen een campagne-manager? Dan ben ik te breed. Wil je shop, SEO en ads in één lijn? Dan tekenen we het systeem en zetten we het live.",
+        "Wil je alleen een campagne-manager? Dan ben ik te breed. Wil je shop, SEO en ads in één lijn? Dan teken ik het systeem en zet ik het live.",
       ],
     },
     deepDive: {

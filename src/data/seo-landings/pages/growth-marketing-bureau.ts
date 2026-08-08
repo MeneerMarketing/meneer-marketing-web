@@ -71,10 +71,10 @@ export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
       body: "Budget en content op bewijs. Verliezers snijden. Retentie meenemen.",
     },
   ],
-  proofTitle: "SkinComplete traject",
+  proofTitle: "Growth die blijft staan",
   proofBody:
-    "Organisch eerst, dan ads. Dat is growth die blijft staan. BestRest: per product andere schaal-logica. Hacks zonder fundament skip ik.",
-  proofCase: "SkinComplete",
+    "Ik fix eerst funnel en meting. Daarna kleine tests, dan schaal op bewijs. Organisch en retentie vóór blind budget opschalen. Zo blijft groei zichtbaar als je ads even pauzeert.",
+  proofCase: "Funnel eerst",
   hotTake: {
     label: "Heet take",
     body: "Growth marketing bureau dat alleen ads opschaalt, is een benzinepomp zonder motor.",
@@ -135,9 +135,9 @@ export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
       paragraphs: [
         "Je zoekt een growth marketing bureau omdat je wilt groeien zonder willekeurige hacks. Goed. Growth is volgorde, niet een hockeystick in een deck.",
         "Ik begin bij funnel en unit economics. Daarna experimenten. SEO, ads, mail en automatisering volgen de bottleneck, niet de mode.",
-        "SkinComplete: organisch bewijzen, dan ads. BestRest: schalen per productmarge. Dat is growth die blijft staan als je budget even pauzeert.",
+        "Growth die blijft staan begint bij een funnel die niet lekt. Daarna kies ik per kanaal wat de bottleneck oplost: SEO voor bezit, ads voor snelheid, mail voor herhaal. Schalen volgt de cijfers, niet de hockeystick in je deck.",
         "Alleen acquisitie zonder retentie is een hamsterwiel. CAC stijgt, team raakt uitgeput.",
-        "Wil je growth hacks zonder data? Dan ben ik te saai. Wil je meetbare schaal met uitvoering? Dan tekenen we het systeem.",
+        "Wil je growth hacks zonder data? Dan ben ik te saai. Wil je meetbare schaal met uitvoering? Dan teken ik het systeem.",
       ],
     },
     deepDive: {
