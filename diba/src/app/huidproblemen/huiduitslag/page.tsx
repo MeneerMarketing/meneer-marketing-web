@@ -66,9 +66,12 @@ export default function HuiduitslagPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="py-14 lg:py-20">
-          <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label flex flex-wrap gap-2"
+          >
             <Link href="/" className="hover:text-[var(--g-700)]">
               Home
             </Link>
@@ -87,14 +90,16 @@ export default function HuiduitslagPage() {
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Huiduitslag is geen aandoening maar een symptoom, met tientallen oorzaken die
-            uiteenlopen van onschuldig tot spoedeisend. Wij stellen daar geen diagnose over
-            en we stellen je ook niet gerust, want dat zou meewegen in of je belt.
+            Huiduitslag is geen aandoening maar een symptoom, met tientallen
+            oorzaken die uiteenlopen van onschuldig tot spoedeisend. Wij stellen
+            daar geen diagnose over en we stellen je ook niet gerust, want dat
+            zou meewegen in of je belt.
           </p>
 
           <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Wat we wel doen is de test uitleggen die artsen zelf gebruiken om haast van
-            geen haast te onderscheiden. Hij kost tien seconden en bijna niemand kent hem.
+            Wat we wel doen is de test uitleggen die artsen zelf gebruiken om
+            haast van geen haast te onderscheiden. Hij kost tien seconden en
+            bijna niemand kent hem.
           </p>
 
           <div className="mt-9">
@@ -112,7 +117,7 @@ export default function HuiduitslagPage() {
         id="alarm"
         className="mx-5 scroll-mt-[var(--anker-offset)] rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label opDonker>Bel vandaag, of 112 buiten kantooruren</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
             Zes signalen waarbij
@@ -126,7 +131,10 @@ export default function HuiduitslagPage() {
                 key={a}
                 className="flex gap-3 border-t border-white/20 pt-4 text-[16px] leading-7 text-[var(--on-dark-body)]"
               >
-                <span aria-hidden="true" className="text-[var(--on-dark-accent)]">
+                <span
+                  aria-hidden="true"
+                  className="text-[var(--on-dark-accent)]"
+                >
                   •
                 </span>
                 {a}
@@ -145,7 +153,7 @@ export default function HuiduitslagPage() {
         id="glastest"
         className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De glastest"
             kop="Drukken de vlekken weg"
@@ -161,7 +169,7 @@ export default function HuiduitslagPage() {
         id="oorzaken"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Gewone oorzaken"
             kop="Vier die veel"
@@ -176,7 +184,9 @@ export default function HuiduitslagPage() {
                 <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)]">
                   {o.herken}
                 </p>
-                <p className="diba-label mt-5 text-[var(--t-muted)]">Waar je heen gaat</p>
+                <p className="diba-label mt-5 text-[var(--t-muted)]">
+                  Waar je heen gaat
+                </p>
                 <p className="mt-1.5 text-[15px] leading-6 text-[var(--t-body)]">
                   {o.waarheen.replace(/\[[^\]]+\]/g, "").trim()}
                 </p>
@@ -211,7 +221,7 @@ export default function HuiduitslagPage() {
 
       {/* ── Afsluiting zonder afspraakknop ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
             Naar je huisarts.
@@ -219,9 +229,9 @@ export default function HuiduitslagPage() {
             <span className="diba-accent">Bij twijfel vandaag nog.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina geen knop om bij ons een afspraak te maken. Maak een
-            foto bij het begin en noteer wat eraan voorafging; dat is het meest bruikbare
-            dat je kunt meenemen.
+            Er staat op deze pagina geen knop om bij ons een afspraak te maken.
+            Maak een foto bij het begin en noteer wat eraan voorafging; dat is
+            het meest bruikbare dat je kunt meenemen.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

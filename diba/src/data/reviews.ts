@@ -1,4 +1,8 @@
 import type { ReviewCardProps } from "@/components/ui/ReviewCard";
+import {
+  SALONIZED_REVIEWS,
+  type SalonizedReviewEntry,
+} from "@/data/salonized-reviews";
 
 export type ReviewTopic =
   | "alle"
@@ -27,64 +31,47 @@ export const REVIEW_TOPICS: readonly ReviewTopicMeta[] = [
 export type Review = ReviewCardProps & {
   readonly id: string;
   readonly topics: readonly Exclude<ReviewTopic, "alle">[];
+  readonly relativeDate?: string;
 };
 
-/**
- * Salonized-export structuur. Quotes zijn placeholders tot Okan levert.
- * Nooit verzonnen reviews — alleen [COPY-NODIG] tags.
- */
-export const REVIEWS: readonly Review[] = [
-  {
-    id: "rev-1",
-    quote: "[COPY-NODIG: echte review uit Salonized-export]",
-    name: "[COPY-NODIG: klant 1]",
-    treatment: "[COPY-NODIG: behandeling 1]",
-    stars: 5,
-    topics: ["acne"],
-  },
-  {
-    id: "rev-2",
-    quote: "[COPY-NODIG: echte review uit Salonized-export]",
-    name: "[COPY-NODIG: klant 2]",
-    treatment: "[COPY-NODIG: behandeling 2]",
-    stars: 5,
-    topics: ["pigment"],
-  },
-  {
-    id: "rev-3",
-    quote: "[COPY-NODIG: echte review uit Salonized-export]",
-    name: "[COPY-NODIG: klant 3]",
-    treatment: "[COPY-NODIG: behandeling 3]",
-    stars: 5,
-    topics: ["rosacea"],
-  },
-  {
-    id: "rev-4",
-    quote: "[COPY-NODIG: echte review uit Salonized-export]",
-    name: "[COPY-NODIG: klant 4]",
-    treatment: "[COPY-NODIG: behandeling 4]",
-    stars: 5,
-    topics: ["laser"],
-  },
-  {
-    id: "rev-5",
-    quote: "[COPY-NODIG: echte review uit Salonized-export]",
-    name: "[COPY-NODIG: klant 5]",
-    treatment: "[COPY-NODIG: behandeling 5]",
-    stars: 5,
-    topics: ["huidveroudering"],
-  },
-  {
-    id: "rev-6",
-    quote: "[COPY-NODIG: echte review uit Salonized-export]",
-    name: "[COPY-NODIG: klant 6]",
-    treatment: "[COPY-NODIG: behandeling 6]",
-    stars: 5,
-    topics: ["algemeen", "acne"],
-  },
-] as const;
+export const REVIEWS: readonly Review[] = SALONIZED_REVIEWS.map(
+  (entry: SalonizedReviewEntry): Review => ({
+    id: entry.id,
+    quote: entry.quote,
+    name: entry.name,
+    treatment: entry.treatment,
+    stars: entry.stars,
+    relativeDate: entry.relativeDate,
+    topics: entry.topics,
+  }),
+);
 
 export function reviewsForTopic(topic: ReviewTopic): readonly Review[] {
   if (topic === "alle") return REVIEWS;
   return REVIEWS.filter((r) => r.topics.includes(topic));
+}
+
+const TOPIC_LABELS: Record<Exclude<ReviewTopic, "alle">, string> = {
+  acne: "Acne",
+  pigment: "Pigment",
+  rosacea: "Roodheid",
+  laser: "Laser",
+  huidveroudering: "Huidveroudering",
+  algemeen: "Algemeen",
+};
+
+/** Primair onderwerp voor pill op kaart (voorkeur voor specifiek boven algemeen). */
+export function primaryReviewTopic(
+  review: Review,
+): Exclude<ReviewTopic, "alle"> {
+  const specific = review.topics.find((t) => t !== "algemeen");
+  return specific ?? "algemeen";
+}
+
+export function reviewTopicLabel(topic: Exclude<ReviewTopic, "alle">): string {
+  return TOPIC_LABELS[topic];
+}
+
+export function reviewCountForTopic(topic: ReviewTopic): number {
+  return reviewsForTopic(topic).length;
 }

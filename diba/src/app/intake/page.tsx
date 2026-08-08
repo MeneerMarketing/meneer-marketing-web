@@ -56,10 +56,13 @@ export default function IntakePage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -74,14 +77,14 @@ export default function IntakePage() {
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Behandeling Nul is een afspraak waarin niet behandeld wordt. We meten je huid
-              onder vaste belichting, laten zien wat we zien en vertellen wat er realistisch
-              mogelijk is. Meer niet.
+              Behandeling Nul is een afspraak waarin niet behandeld wordt. We
+              meten je huid onder vaste belichting, laten zien wat we zien en
+              vertellen wat er realistisch mogelijk is. Meer niet.
             </p>
 
             <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je hoeft aan het eind niets af te spreken. Soms is het advies zelfs om niets
-              te doen, en dan houdt het daar op.
+              Je hoeft aan het eind niets af te spreken. Soms is het advies
+              zelfs om niets te doen, en dan houdt het daar op.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -116,8 +119,8 @@ export default function IntakePage() {
               ))}
             </dl>
             <p className="mt-6 text-[15px] leading-7 text-[var(--on-dark-body)]">
-              De meting staat los van de behandeling. Dat is geen formaliteit: het is de
-              reden dat het advies eerlijk kan zijn.
+              De meting staat los van de behandeling. Dat is geen formaliteit:
+              het is de reden dat het advies eerlijk kan zijn.
             </p>
           </div>
         </div>
@@ -130,7 +133,7 @@ export default function IntakePage() {
         aria-label="Op deze pagina"
         className="sticky top-[var(--nav-h)] z-20 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur"
       >
-        <ul className="mx-auto flex max-w-[1800px] gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
+        <ul className="mx-auto flex gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (
             <li key={a.id}>
               <a
@@ -149,7 +152,7 @@ export default function IntakePage() {
         id="uur"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Het uur, stap voor stap"
             kop="Bij elke stap staat"
@@ -165,7 +168,7 @@ export default function IntakePage() {
         id="voorbereiden"
         className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Voorbereiden"
             kop="Vier dingen altijd,"
@@ -192,7 +195,10 @@ export default function IntakePage() {
               <Label>Afhankelijk van waarvoor je komt</Label>
               <ul className="mt-5 space-y-3">
                 {VOORBEREIDING.soms.map((v) => (
-                  <li key={v.wanneer} className="rounded-[var(--r-sm)] bg-white p-5">
+                  <li
+                    key={v.wanneer}
+                    className="rounded-[var(--r-sm)] bg-white p-5"
+                  >
                     <span className="diba-card-title block">{v.wanneer}</span>
                     <span className="mt-2 block text-[16px] leading-7 text-[var(--t-body)]">
                       {publicCopy(v.wat)}
@@ -203,8 +209,8 @@ export default function IntakePage() {
 
               <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
                 <p className="max-w-[54ch] text-[15px] leading-7 text-[var(--t-body)]">
-                  Weet je nog niet waarvoor je komt? Dat is geen bezwaar, en de zoeker helpt
-                  je een richting te vinden voordat je hier bent.
+                  Weet je nog niet waarvoor je komt? Dat is geen bezwaar, en de
+                  zoeker helpt je een richting te vinden voordat je hier bent.
                 </p>
                 <Link
                   href="/huidproblemen/symptoomzoeker"
@@ -222,7 +228,7 @@ export default function IntakePage() {
 
       {/* ── Slot ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px] lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
+        <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Behandeling nul</Label>
             <h2 className="diba-display-l mt-5 max-w-[15ch]">
@@ -233,8 +239,8 @@ export default function IntakePage() {
           </div>
           <div className="mt-8 flex flex-col justify-end lg:mt-0">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn.
-              Wat je daarna doet, beslis je thuis.
+              Je gaat weg met een meting die van jou is en een advies dat ook
+              nee mag zijn. Wat je daarna doet, beslis je thuis.
             </p>
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
               <Button

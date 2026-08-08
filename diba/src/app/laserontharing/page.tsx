@@ -34,7 +34,7 @@ export default function LaserontharingPage() {
       />
 
       {/* Hero */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid min-h-[520px] gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
             <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[#5d9564]">
@@ -86,7 +86,7 @@ export default function LaserontharingPage() {
 
       {/* USP strip */}
       <section className="border-y border-[#dce8d9] bg-white px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto grid max-w-[1800px] divide-y divide-[#dce8d9] md:grid-cols-3 md:divide-x md:divide-y-0">
+        <div className="mx-auto grid divide-y divide-[#dce8d9] md:grid-cols-3 md:divide-x md:divide-y-0">
           {LASER_USP_ROWS.map(({ title, body }) => (
             <div key={title} className="py-8 md:px-6 md:first:pl-0">
               <h2 className="text-lg tracking-[-.04em] text-[#286943]">
@@ -100,7 +100,7 @@ export default function LaserontharingPage() {
 
       {/* Zone map */}
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
             Configurator
           </p>
@@ -115,7 +115,7 @@ export default function LaserontharingPage() {
 
       {/* Huidtype */}
       <section className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
             Huidtype
           </p>
@@ -130,7 +130,7 @@ export default function LaserontharingPage() {
 
       {/* Sessie boog */}
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px] lg:max-w-4xl">
+        <div className="mx-auto lg:max-w-4xl">
           <LaserSessieBoog />
         </div>
       </section>
@@ -138,7 +138,7 @@ export default function LaserontharingPage() {
       {/* Reviews */}
       {LASER_REVIEWS.length > 0 ? (
         <section className="bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-          <div className="mx-auto max-w-[1800px]">
+          <div className="mx-auto">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <div>
                 <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
@@ -173,7 +173,7 @@ export default function LaserontharingPage() {
 
       {/* FAQ */}
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px] lg:grid lg:grid-cols-[.7fr_1.3fr] lg:gap-16">
+        <div className="mx-auto lg:grid lg:grid-cols-[.7fr_1.3fr] lg:gap-16">
           <div>
             <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
               Goed om te weten

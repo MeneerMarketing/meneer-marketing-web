@@ -36,10 +36,7 @@ export default function NazorgPage() {
 
       <section className={`${figmaInnerContainer} ${figmaSection}`} data-reveal>
         <FigmaBreadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Nazorg" },
-          ]}
+          items={[{ label: "Home", href: "/" }, { label: "Nazorg" }]}
         />
         <p className={figmaLabel}>Nazorg</p>
         <FigmaHeading
@@ -58,9 +55,15 @@ export default function NazorgPage() {
       <section className={`${figmaInnerContainer} ${figmaSectionTight} pb-24`}>
         <div className="flex flex-col gap-8">
           {NAZORG_TRAJECTEN.map((t) => (
-            <article key={t.slug} className={`${figmaCardSoft} p-7 sm:p-10`} data-reveal>
+            <article
+              key={t.slug}
+              className={`${figmaCardSoft} p-7 sm:p-10`}
+              data-reveal
+            >
               <FigmaHeading as="h2" size="card" text={t.titel} />
-              <p className={`mt-4 max-w-2xl ${figmaBody}`}>{publicCopy(t.intro)}</p>
+              <p className={`mt-4 max-w-2xl ${figmaBody}`}>
+                {publicCopy(t.intro)}
+              </p>
               <div className="mt-8">
                 <NazorgTijdlijn momenten={t.momenten} />
               </div>

@@ -38,7 +38,10 @@ import { publicCopy } from "@/lib/copy-flags";
  */
 
 /** Waar elke laag begint en eindigt, als percentage van de doorsnede. */
-const GRENZEN: Record<HuidlaagId, { readonly van: number; readonly tot: number }> = {
+const GRENZEN: Record<
+  HuidlaagId,
+  { readonly van: number; readonly tot: number }
+> = {
   hoornlaag: { van: 0, tot: 9 },
   opperhuid: { van: 9, tot: 27 },
   "lederhuid-boven": { van: 27, tot: 55 },
@@ -46,7 +49,9 @@ const GRENZEN: Record<HuidlaagId, { readonly van: number; readonly tot: number }
 };
 
 function laagVoorDiepte(d: number): HuidlaagId {
-  const gevonden = HUIDLAGEN.find((l) => d >= GRENZEN[l.id].van && d < GRENZEN[l.id].tot);
+  const gevonden = HUIDLAGEN.find(
+    (l) => d >= GRENZEN[l.id].van && d < GRENZEN[l.id].tot,
+  );
   return gevonden?.id ?? "lederhuid-diep";
 }
 
@@ -102,7 +107,12 @@ export default function Huidreis() {
               style={{
                 top: `${GRENZEN[l.id].van}%`,
                 height: `${GRENZEN[l.id].tot - GRENZEN[l.id].van}%`,
-                background: ["var(--g-050)", "var(--g-100)", "var(--g-200)", "var(--g-300)"][i],
+                background: [
+                  "var(--g-050)",
+                  "var(--g-100)",
+                  "var(--g-200)",
+                  "var(--g-300)",
+                ][i],
               }}
             />
           ))}
@@ -127,7 +137,8 @@ export default function Huidreis() {
                 className="absolute right-6 text-[13px] leading-5 font-medium"
                 style={{
                   top: `calc(${GRENZEN[l.id].van}% + 10px)`,
-                  color: bereikt || gedeeltelijk ? "#ffffff" : "var(--t-strong)",
+                  color:
+                    bereikt || gedeeltelijk ? "#ffffff" : "var(--t-strong)",
                   transition: "color .3s var(--ease-diba)",
                 }}
               >
@@ -257,11 +268,10 @@ export default function Huidreis() {
 
           {alleHier.length === 0 ? (
             <p className="mt-5 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Zo diep gaan wij niet. Wat hier zit hoort bij een arts, of bij niemand.
+              Zo diep gaan wij niet. Wat hier zit hoort bij een arts, of bij
+              niemand.
             </p>
           ) : null}
-
-
         </div>
       </div>
     </div>

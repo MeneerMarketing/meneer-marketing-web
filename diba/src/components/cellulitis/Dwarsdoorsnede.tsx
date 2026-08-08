@@ -51,7 +51,11 @@ export default function Dwarsdoorsnede() {
       {/* ── De doorsnede ── */}
       <div className="self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7">
         <div className="overflow-hidden rounded-[var(--r-sm)]">
-          <svg viewBox="0 0 400 160" className="block w-full" aria-hidden="true">
+          <svg
+            viewBox="0 0 400 160"
+            className="block w-full"
+            aria-hidden="true"
+          >
             <rect width="400" height="160" fill="var(--g-050)" />
 
             {/* De vetlaag. */}
@@ -144,7 +148,7 @@ export default function Dwarsdoorsnede() {
               onClick={() => setBouw(id)}
               className={`diba-label min-h-12 rounded-[var(--r-pill)] px-5 transition-colors ${
                 bouw === id
-                  ? "bg-[var(--g-700)] text-[var(--on-dark-label)]"
+                  ? "diba-pill-active"
                   : "bg-[var(--g-050)] text-[var(--t-label)] hover:bg-[var(--g-100)]"
               } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
             >
@@ -175,8 +179,9 @@ export default function Dwarsdoorsnede() {
             }
           />
           <p className="mt-3 text-sm leading-6 text-[var(--t-muted)]">
-            Schuif hem helemaal naar links. Het reliëf wordt vlakker en het patroon staat
-            er nog steeds, want de schotjes lopen nog waar ze liepen.
+            Schuif hem helemaal naar links. Het reliëf wordt vlakker en het
+            patroon staat er nog steeds, want de schotjes lopen nog waar ze
+            liepen.
           </p>
         </div>
       </div>
@@ -195,7 +200,9 @@ export default function Dwarsdoorsnede() {
           </div>
           <div className="border-l-2 border-[var(--g-300)] pl-4">
             <dt className="diba-label">Wat je daarvan ziet</dt>
-            <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">{b.gevolg}</dd>
+            <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
+              {b.gevolg}
+            </dd>
           </div>
         </dl>
 
@@ -207,8 +214,8 @@ export default function Dwarsdoorsnede() {
         </div>
 
         <p className="mt-6 border-l-2 border-[var(--g-300)] pl-4 text-[16px] leading-7 text-[var(--t-strong)]">
-          Zet de schakelaar op kruislings en laat het vet staan waar het staat. Dezelfde
-          hoeveelheid, een ander oppervlak. Dat is het hele verhaal.
+          Zet de schakelaar op kruislings en laat het vet staan waar het staat.
+          Dezelfde hoeveelheid, een ander oppervlak. Dat is het hele verhaal.
         </p>
       </div>
     </div>

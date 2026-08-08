@@ -19,7 +19,9 @@ export default function RevealObserver() {
   useEffect(() => {
     document.documentElement.classList.add("js-reveal");
 
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     const els = document.querySelectorAll<HTMLElement>("[data-reveal]");
 
     if (reduce) {
@@ -36,7 +38,7 @@ export default function RevealObserver() {
           }
         });
       },
-      { threshold: 0.08, rootMargin: "0px 0px 8% 0px" }
+      { threshold: 0.08, rootMargin: "0px 0px 8% 0px" },
     );
 
     els.forEach((el) => {

@@ -126,7 +126,9 @@ export default function Stapelteller() {
           <h3 className={`diba-card-title-lg mt-6 ${METER_TEKST[belasting]}`}>
             {lezing.kop}
           </h3>
-          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">{lezing.tekst}</p>
+          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+            {lezing.tekst}
+          </p>
           <p className="mt-4 border-l-2 border-[var(--g-300)] pl-4 text-[16px] leading-7 text-[var(--t-strong)]">
             {publicCopy(lezing.advies)}
           </p>
@@ -161,7 +163,9 @@ export default function Stapelteller() {
               Kijk dan hieronder verder
             </Button>
           ) : (
-            <Button href="/intake?topic=gevoelige-huid">Laat meekijken naar je routine</Button>
+            <Button href="/intake?topic=gevoelige-huid">
+              Laat meekijken naar je routine
+            </Button>
           )}
           {punten > 0 ? (
             <button

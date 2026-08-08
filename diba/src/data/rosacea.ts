@@ -35,31 +35,36 @@ export const ROSACEA_TRIGGERS: readonly Trigger[] = [
     id: "alcohol",
     naam: "Alcohol",
     groep: "beinvloedbaar",
-    waarom: "Verwijdt de bloedvaten direct. Rode wijn doet dit bij de meeste mensen het snelst.",
+    waarom:
+      "Verwijdt de bloedvaten direct. Rode wijn doet dit bij de meeste mensen het snelst.",
   },
   {
     id: "pittig",
     naam: "Pittig eten",
     groep: "beinvloedbaar",
-    waarom: "Capsaïcine zet dezelfde vaatreactie in gang als warmte. [MEDISCHE-CHECK-ROJDA]",
+    waarom:
+      "Capsaïcine zet dezelfde vaatreactie in gang als warmte. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     id: "hete-dranken",
     naam: "Hete koffie of thee",
     groep: "beinvloedbaar",
-    waarom: "Niet de cafeïne maar de temperatuur. Laten afkoelen scheelt al veel.",
+    waarom:
+      "Niet de cafeïne maar de temperatuur. Laten afkoelen scheelt al veel.",
   },
   {
     id: "cosmetica",
     naam: "Producten met alcohol of parfum",
     groep: "beinvloedbaar",
-    waarom: "Prikkelen een huid die al overactief reageert. Vaak de stille dader.",
+    waarom:
+      "Prikkelen een huid die al overactief reageert. Vaak de stille dader.",
   },
   {
     id: "sauna",
     naam: "Sauna of hete douche",
     groep: "beinvloedbaar",
-    waarom: "Warmte is de sterkste trigger die er is. Lauw douchen voelt zuur maar werkt.",
+    waarom:
+      "Warmte is de sterkste trigger die er is. Lauw douchen voelt zuur maar werkt.",
   },
   {
     id: "zon",
@@ -119,8 +124,12 @@ export function leesTriggers(gekozen: readonly string[]): Lezing {
     };
   }
 
-  const gekozenTriggers = ROSACEA_TRIGGERS.filter((t) => gekozen.includes(t.id));
-  const beinvloedbaar = gekozenTriggers.filter((t) => t.groep === "beinvloedbaar").length;
+  const gekozenTriggers = ROSACEA_TRIGGERS.filter((t) =>
+    gekozen.includes(t.id),
+  );
+  const beinvloedbaar = gekozenTriggers.filter(
+    (t) => t.groep === "beinvloedbaar",
+  ).length;
   const rest = gekozenTriggers.length - beinvloedbaar;
 
   if (rest === 0) {
@@ -146,8 +155,7 @@ export function leesTriggers(gekozen: readonly string[]): Lezing {
   if (beinvloedbaar >= rest) {
     return {
       kop: "Bij jou zit de hefboom vooral in gewoontes",
-      tekst:
-        `Je tikte ${beinvloedbaar} trigger${beinvloedbaar === 1 ? "" : "s"} aan die je kunt beïnvloeden en ${rest} die je niet kunt vermijden. Bij die verhouding is het eerlijkste advies: begin met de eerste groep voordat je geld aan behandelingen uitgeeft.`,
+      tekst: `Je tikte ${beinvloedbaar} trigger${beinvloedbaar === 1 ? "" : "s"} aan die je kunt beïnvloeden en ${rest} die je niet kunt vermijden. Bij die verhouding is het eerlijkste advies: begin met de eerste groep voordat je geld aan behandelingen uitgeeft.`,
       waarDeKnopZit:
         "We maken een korte lijst van wat je aanpast, en meten na zes weken. Werkt dat genoeg, dan hoef je hier niet terug te komen.",
     };
@@ -155,8 +163,7 @@ export function leesTriggers(gekozen: readonly string[]): Lezing {
 
   return {
     kop: "Een gemengd patroon, en dat is het meest voorkomende",
-    tekst:
-      `Je hebt ${beinvloedbaar} trigger${beinvloedbaar === 1 ? "" : "s"} met een knop en ${rest} zonder. Dan werkt één ding alleen niet: gewoontes halen de pieken eraf, behandelen verlaagt de basis.`,
+    tekst: `Je hebt ${beinvloedbaar} trigger${beinvloedbaar === 1 ? "" : "s"} met een knop en ${rest} zonder. Dan werkt één ding alleen niet: gewoontes halen de pieken eraf, behandelen verlaagt de basis.`,
     waarDeKnopZit:
       "Twee sporen naast elkaar. Eerst de beïnvloedbare triggers eruit halen, daarna meten hoeveel roodheid er overblijft. Dat overblijvende deel is wat we behandelen.",
   };
@@ -207,7 +214,8 @@ export const ROSACEA_SOORTEN: readonly RosaceaSoort[] = [
   {
     id: "papulopustuleus",
     naam: "Rode bultjes op een rode ondergrond",
-    klanttaal: "Puistjes die eruitzien als acne, maar op een huid die al rood is",
+    klanttaal:
+      "Puistjes die eruitzien als acne, maar op een huid die al rood is",
     vakterm: "papulopustuleuze rosacea",
     watJeZiet:
       "Bultjes en puskopjes, maar zonder mee-eters. Dat laatste is het onderscheid met acne.",
@@ -223,7 +231,8 @@ export const ROSACEA_SOORTEN: readonly RosaceaSoort[] = [
     naam: "Verdikte huid op de neus",
     klanttaal: "De huid van je neus wordt dikker en de poriën groter",
     vakterm: "rhinophyma",
-    watJeZiet: "Een geleidelijk dikkere neus met grovere poriën, vooral bij mannen.",
+    watJeZiet:
+      "Een geleidelijk dikkere neus met grovere poriën, vooral bij mannen.",
     watHetBetekent:
       "Een gevorderd stadium waarbij bindweefsel is toegenomen. Dit hoort bij de dermatoloog. [MEDISCHE-CHECK-ROJDA]",
     aanpak:

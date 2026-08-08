@@ -23,7 +23,10 @@ export default function AcneTypeKiezer() {
 
   return (
     <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
-      <div role="radiogroup" aria-label="Kies het beeld dat het dichtst bij jouw huid komt">
+      <div
+        role="radiogroup"
+        aria-label="Kies het beeld dat het dichtst bij jouw huid komt"
+      >
         <ul className="space-y-2">
           {ACNE_TYPES.map((t, i) => {
             const gekozen = i === actief;
@@ -40,10 +43,14 @@ export default function AcneTypeKiezer() {
                       : "bg-[var(--g-050)] hover:bg-[var(--g-075)]"
                   } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
                 >
-                  <span className="text-[15px] font-medium leading-6">{t.naam}</span>
+                  <span className="text-[15px] font-medium leading-6">
+                    {t.naam}
+                  </span>
                   <span
                     className={`text-sm leading-5 ${
-                      gekozen ? "text-[var(--on-dark-body)]" : "text-[var(--t-body)]"
+                      gekozen
+                        ? "text-[var(--on-dark-body)]"
+                        : "text-[var(--t-body)]"
                     }`}
                   >
                     {t.klanttaal}
@@ -62,7 +69,9 @@ export default function AcneTypeKiezer() {
       >
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
           <h3 className="diba-card-title-lg">{type.naam}</h3>
-          <span className="diba-label text-[var(--t-muted)]">{type.vakterm}</span>
+          <span className="diba-label text-[var(--t-muted)]">
+            {type.vakterm}
+          </span>
         </div>
 
         <dl className="mt-6 space-y-5">

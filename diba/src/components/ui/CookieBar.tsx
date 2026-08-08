@@ -38,7 +38,7 @@ export default function CookieBar() {
          ongeveer 70px. */
       className="fixed inset-x-0 bottom-0 z-50 border-t border-[#dce8d9] bg-[#fcfdfb]/95 px-4 py-3 backdrop-blur-sm pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:px-9 md:py-4 md:pb-[calc(1rem+env(safe-area-inset-bottom))]"
     >
-      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-3 md:gap-4">
+      <div className="mx-auto flex items-center justify-between gap-3 md:gap-4">
         <p className="max-w-xl text-[13px] leading-snug text-[#5f7765] md:text-[14px] md:leading-relaxed">
           Cookies voor een werkende site en anonieme statistieken.
           <span className="hidden sm:inline"> Geen advertentie-tracking.</span>

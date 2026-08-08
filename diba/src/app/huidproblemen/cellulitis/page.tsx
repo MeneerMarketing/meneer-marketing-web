@@ -60,10 +60,13 @@ export default function CellulitisPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -82,14 +85,16 @@ export default function CellulitisPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Onder je huid lopen bindweefselschotjes. Bij vrouwen staan die overwegend
-              rechtop, bij mannen kruisen ze elkaar. Dat ene verschil bepaalt of hetzelfde
-              vet een glad oppervlak geeft of een patroon van kuiltjes.
+              Onder je huid lopen bindweefselschotjes. Bij vrouwen staan die
+              overwegend rechtop, bij mannen kruisen ze elkaar. Dat ene verschil
+              bepaalt of hetzelfde vet een glad oppervlak geeft of een patroon
+              van kuiltjes.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Daarmee valt alles op zijn plek: waarom slanke vrouwen het ook hebben, waarom
-              sporten het niet weghaalt, en waarom niemand het kan verwijderen.
+              Daarmee valt alles op zijn plek: waarom slanke vrouwen het ook
+              hebben, waarom sporten het niet weghaalt, en waarom niemand het
+              kan verwijderen.
             </p>
 
             <div className="mt-9">
@@ -100,12 +105,13 @@ export default function CellulitisPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>Meteen maar gezegd</Label>
             <p className="diba-card-title-lg mt-5">
-              Wij behandelen dit niet. We hebben er geen behandeling voor en we gaan er
-              ook geen bedenken.
+              Wij behandelen dit niet. We hebben er geen behandeling voor en we
+              gaan er ook geen bedenken.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Deze pagina staat er om te voorkomen dat je betaalt voor een belofte die
-              niemand kan waarmaken. Dat is het enige eerlijke aanbod dat hier past.
+              Deze pagina staat er om te voorkomen dat je betaalt voor een
+              belofte die niemand kan waarmaken. Dat is het enige eerlijke
+              aanbod dat hier past.
             </p>
           </div>
         </div>
@@ -120,7 +126,7 @@ export default function CellulitisPage() {
         id="doorsnede"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De dwarsdoorsnede"
             kop="Zelfde vet,"
@@ -132,8 +138,11 @@ export default function CellulitisPage() {
       </section>
 
       {/* ── Mythes ── */}
-      <section id="mythes" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="mythes"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Vier mythes"
             kop="Vier dingen die"
@@ -144,7 +153,9 @@ export default function CellulitisPage() {
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2">
             {CELLULITIS_MYTHES.map((m) => (
               <li key={m.mythe} className="bg-white p-6 sm:p-8">
-                <h3 className="diba-card-title text-[var(--t-muted)]">{m.mythe}</h3>
+                <h3 className="diba-card-title text-[var(--t-muted)]">
+                  {m.mythe}
+                </h3>
                 <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
                   {m.waarheid.replace(/\[[^\]]+\]/g, "").trim()}
                 </p>
@@ -171,7 +182,7 @@ export default function CellulitisPage() {
 
       {/* ── Afsluiting zonder afspraakknop ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Wat er dan wel te doen valt</Label>
           <h2 className="diba-display-s mt-5 max-w-[24ch]">
             Niets, wat ons betreft.
@@ -179,9 +190,9 @@ export default function CellulitisPage() {
             <span className="diba-accent">En dat is geen slecht nieuws.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina geen knop om een afspraak te maken. Wil je wel iets aan
-            de kwaliteit van je huid doen, dan is dat een andere vraag met een ander
-            antwoord, en daar kijken we graag naar mee.
+            Er staat op deze pagina geen knop om een afspraak te maken. Wil je
+            wel iets aan de kwaliteit van je huid doen, dan is dat een andere
+            vraag met een ander antwoord, en daar kijken we graag naar mee.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

@@ -153,8 +153,9 @@ export default function Spiegeltest() {
         <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
           <Oogvlak test={test.id} />
           <p className="mt-5 text-sm leading-6 text-[var(--t-muted)]">
-            Je hebt hier alleen een spiegel of je telefoon voor nodig. De test kost je
-            twee minuten en bepaalt of behandelen in jouw geval zin heeft.
+            Je hebt hier alleen een spiegel of je telefoon voor nodig. De test
+            kost je twee minuten en bepaalt of behandelen in jouw geval zin
+            heeft.
           </p>
         </div>
 
@@ -186,7 +187,9 @@ export default function Spiegeltest() {
           </div>
 
           <h3 className="diba-card-title-lg mt-6">{test.kop}</h3>
-          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">{test.opdracht}</p>
+          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+            {test.opdracht}
+          </p>
 
           <ul className="mt-7 space-y-3">
             {test.antwoorden.map((a) => (
@@ -228,10 +231,14 @@ export default function Spiegeltest() {
 
   return (
     <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
-      <div className={`self-start rounded-[var(--r-md)] p-6 sm:p-8 ${VLAK[uitkomst.wijHelpen]}`}>
+      <div
+        className={`self-start rounded-[var(--r-md)] p-6 sm:p-8 ${VLAK[uitkomst.wijHelpen]}`}
+      >
         <Label>Wat de test aanwijst</Label>
         <h3 className="diba-card-title-lg mt-4">{uitkomst.kop}</h3>
-        <p className="diba-label mt-3 text-[var(--t-muted)]">{uitkomst.vakterm}</p>
+        <p className="diba-label mt-3 text-[var(--t-muted)]">
+          {uitkomst.vakterm}
+        </p>
 
         <button
           type="button"
@@ -276,9 +283,9 @@ export default function Spiegeltest() {
         <div className="mt-8">
           {uitkomst.wijHelpen === "nee" ? (
             <p className="text-[16px] leading-7 text-[var(--t-strong)]">
-              Hier houdt het voor ons op, en dat is de eerlijke uitkomst. Twijfel je of de
-              test klopt? Loop binnen en dan kijken we mee, ook als het antwoord hetzelfde
-              blijft.
+              Hier houdt het voor ons op, en dat is de eerlijke uitkomst.
+              Twijfel je of de test klopt? Loop binnen en dan kijken we mee, ook
+              als het antwoord hetzelfde blijft.
             </p>
           ) : (
             <Button

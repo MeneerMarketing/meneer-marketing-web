@@ -28,13 +28,15 @@ import { publicCopy } from "@/lib/copy-flags";
 const GROEP_INFO = {
   beinvloedbaar: {
     kop: "Hier zit een knop",
-    toelichting: "Dit kun je zelf beïnvloeden. Dat is geen schuld, dat is een hefboom.",
+    toelichting:
+      "Dit kun je zelf beïnvloeden. Dat is geen schuld, dat is een hefboom.",
     kleur: "var(--g-700)",
     vlak: "var(--g-050)",
   },
   "niet-beinvloedbaar": {
     kop: "Hier zit geen knop",
-    toelichting: "Dit kun je niet vermijden. Precies hier heeft behandelen zin.",
+    toelichting:
+      "Dit kun je niet vermijden. Precies hier heeft behandelen zin.",
     kleur: "var(--warn)",
     vlak: "#faf3e6",
   },
@@ -45,7 +47,9 @@ export default function Triggersorteerder() {
   const lezing = useMemo(() => leesTriggers(gekozen), [gekozen]);
 
   const wissel = (id: string) =>
-    setGekozen((h) => (h.includes(id) ? h.filter((x) => x !== id) : [...h, id]));
+    setGekozen((h) =>
+      h.includes(id) ? h.filter((x) => x !== id) : [...h, id],
+    );
 
   const nogTeKiezen = ROSACEA_TRIGGERS.filter((t) => !gekozen.includes(t.id));
   const perGroep = (g: keyof typeof GROEP_INFO) =>
@@ -72,11 +76,14 @@ export default function Triggersorteerder() {
           ) : null}
         </div>
 
-        <div className="mt-5 flex flex-wrap gap-2" aria-label="Beschikbare triggers">
+        <div
+          className="mt-5 flex flex-wrap gap-2"
+          aria-label="Beschikbare triggers"
+        >
           {nogTeKiezen.length === 0 ? (
             <p className="text-[15px] leading-7 text-[var(--t-body)]">
-              Je hebt ze allemaal aangetikt. Dat komt voor, en het betekent niet dat je er
-              slechter aan toe bent dan iemand met twee.
+              Je hebt ze allemaal aangetikt. Dat komt voor, en het betekent niet
+              dat je er slechter aan toe bent dan iemand met twee.
             </p>
           ) : (
             nogTeKiezen.map((t) => (
@@ -111,9 +118,13 @@ export default function Triggersorteerder() {
                   style={{ background: info.kleur }}
                   aria-hidden="true"
                 />
-                <h3 className="diba-label text-[var(--t-strong)]">{info.kop}</h3>
+                <h3 className="diba-label text-[var(--t-strong)]">
+                  {info.kop}
+                </h3>
               </div>
-              <p className="mt-2 text-sm leading-6 text-[var(--t-body)]">{info.toelichting}</p>
+              <p className="mt-2 text-sm leading-6 text-[var(--t-body)]">
+                {info.toelichting}
+              </p>
 
               <ul className="mt-5 space-y-2.5" aria-live="polite">
                 {items.length === 0 ? (
@@ -130,7 +141,9 @@ export default function Triggersorteerder() {
                         className="w-full rounded-[var(--r-sm)] bg-white p-4 text-left transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                       >
                         <span className="flex items-baseline justify-between gap-3">
-                          <strong className="text-[15px] font-medium leading-6">{t.naam}</strong>
+                          <strong className="text-[15px] font-medium leading-6">
+                            {t.naam}
+                          </strong>
                           <span className="diba-label shrink-0 text-[var(--t-muted)]">
                             Weghalen
                           </span>
@@ -155,7 +168,9 @@ export default function Triggersorteerder() {
       >
         <div>
           <h3 className="diba-card-title-lg">{lezing.kop}</h3>
-          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">{lezing.tekst}</p>
+          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+            {lezing.tekst}
+          </p>
         </div>
 
         <div className="flex flex-col rounded-[var(--r-sm)] bg-[var(--g-075)] p-5">
@@ -167,14 +182,17 @@ export default function Triggersorteerder() {
             href={`/intake?topic=rosacea${gekozen.length ? `&triggers=${gekozen.join(",")}` : ""}`}
             className="mt-6 w-fit"
           >
-            {gekozen.length ? "Neem dit mee naar de intake" : "Start je intake (4 min)"}
+            {gekozen.length
+              ? "Neem dit mee naar de intake"
+              : "Start je intake (4 min)"}
           </Button>
         </div>
       </div>
 
       <p className="mt-5 max-w-[72ch] text-sm leading-6 text-[var(--t-muted)]">
-        Dit is geen diagnose en geen test. Het is een manier om je eigen patroon te zien
-        voordat je hier binnenloopt, zodat het gesprek niet bij nul begint.
+        Dit is geen diagnose en geen test. Het is een manier om je eigen patroon
+        te zien voordat je hier binnenloopt, zodat het gesprek niet bij nul
+        begint.
       </p>
     </div>
   );

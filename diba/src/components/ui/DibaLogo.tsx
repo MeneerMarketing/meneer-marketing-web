@@ -33,7 +33,11 @@ export default function DibaLogo({
 
   if (href) {
     return (
-      <Link href={href} className="flex shrink-0 items-center" aria-label="Diba Clinics home">
+      <Link
+        href={href}
+        className="flex shrink-0 items-center"
+        aria-label="Diba Clinics home"
+      >
         {image}
       </Link>
     );

@@ -23,7 +23,11 @@ import {
 } from "@/data/rosacea";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Rosacea en couperose — eigen pagina met een eigen uitblinker.
@@ -72,15 +76,27 @@ const SOORTEN: readonly SoortOptie[] = ROSACEA_SOORTEN.map((s) => ({
     ["Wat het betekent", s.watHetBetekent],
     ["Wat wij eerst doen", s.aanpak],
   ] as const,
-  uitgelicht: { label: "Wat mensen hier vaak verkeerd hebben", tekst: s.verwarring },
+  uitgelicht: {
+    label: "Wat mensen hier vaak verkeerd hebben",
+    tekst: s.verwarring,
+  },
 }));
 
 /** Het onderscheid dat het vaakst misgaat, en dat je zelf kunt maken. */
 const ACNE_OF_ROSACEA = [
-  ["Mee-eters", "Bij acne wel. Bij rosacea niet. Dit is het snelste onderscheid."],
-  ["Waar het zit", "Acne ook op kaaklijn en voorhoofdsrand. Rosacea vooral in het midden."],
+  [
+    "Mee-eters",
+    "Bij acne wel. Bij rosacea niet. Dit is het snelste onderscheid.",
+  ],
+  [
+    "Waar het zit",
+    "Acne ook op kaaklijn en voorhoofdsrand. Rosacea vooral in het midden.",
+  ],
   ["Blozen", "Bij rosacea hoort opvlammen erbij. Bij acne niet."],
-  ["Wat scrubben doet", "Bij acne soms iets. Bij rosacea maakt het het aantoonbaar erger."],
+  [
+    "Wat scrubben doet",
+    "Bij acne soms iets. Bij rosacea maakt het het aantoonbaar erger.",
+  ],
 ] as const;
 
 export default function RosaceaPage() {
@@ -95,10 +111,13 @@ export default function RosaceaPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -107,7 +126,9 @@ export default function RosaceaPage() {
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Rosacea en couperose</span>
+              <span className="text-[var(--t-muted)]">
+                Rosacea en couperose
+              </span>
             </nav>
 
             <h1 className="diba-display-l mt-6">
@@ -117,9 +138,9 @@ export default function RosaceaPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              We beginnen liever met die zin dan dat je hem na vijf sessies van ons hoort.
-              Wat wél kan: minder opvlammingen, minder zichtbare adertjes, een rustiger
-              basiskleur.
+              We beginnen liever met die zin dan dat je hem na vijf sessies van
+              ons hoort. Wat wél kan: minder opvlammingen, minder zichtbare
+              adertjes, een rustiger basiskleur.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -161,7 +182,7 @@ export default function RosaceaPage() {
         id="triggers"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De triggersorteerder"
             kop="Niet welke triggers,"
@@ -173,8 +194,11 @@ export default function RosaceaPage() {
       </section>
 
       {/* ── Welk beeld ─────────────────────────────────────────────────── */}
-      <section id="welke" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="welke"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Herkenning"
             kop="Vier beelden,"
@@ -195,7 +219,7 @@ export default function RosaceaPage() {
         id="acne"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Het verschil dat uitmaakt"
             kop="Rosacea of acne?"
@@ -206,15 +230,17 @@ export default function RosaceaPage() {
             {ACNE_OF_ROSACEA.map(([kop, tekst]) => (
               <li key={kop} className="bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{kop}</h3>
-                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">{tekst}</p>
+                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
+                  {tekst}
+                </p>
               </li>
             ))}
           </ul>
 
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-white p-6">
             <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Denk je na het lezen hiervan dat je toch acne hebt? Dan hoor je op de andere
-              pagina, en dat is geen omweg maar de kortste route.
+              Denk je na het lezen hiervan dat je toch acne hebt? Dan hoor je op
+              de andere pagina, en dat is geen omweg maar de kortste route.
             </p>
             <Link
               href="/huidproblemen/acne"

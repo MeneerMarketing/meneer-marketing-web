@@ -24,7 +24,11 @@ import {
 } from "@/data/pigment";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Pigmentvlekken en melasma — eigen pagina met een eigen uitblinker.
@@ -85,10 +89,13 @@ export default function PigmentPage() {
       {/* ── Hero ───────────────────────────────────────────────────────────
           De kop zet meteen de omkering neer die deze pagina eigen maakt: bij
           pigment is timing belangrijker dan techniek. */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -107,8 +114,9 @@ export default function PigmentPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De beste behandeling in juni doet minder dan een matige behandeling in
-              oktober. Daarom begint deze pagina niet met techniek maar met de kalender.
+              De beste behandeling in juni doet minder dan een matige
+              behandeling in oktober. Daarom begint deze pagina niet met
+              techniek maar met de kalender.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -150,7 +158,7 @@ export default function PigmentPage() {
         id="wanneer"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Het zonjaar"
             kop="Het jaar bepaalt"
@@ -162,8 +170,11 @@ export default function PigmentPage() {
       </section>
 
       {/* ── Welk pigment ───────────────────────────────────────────────── */}
-      <section id="welke" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="welke"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Herkenning"
             kop="Drie soorten pigment,"
@@ -181,21 +192,21 @@ export default function PigmentPage() {
 
       {/* ── Het pigmentgeheugen: waarom bescherming de behandeling is ──── */}
       <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto grid max-w-[1800px] gap-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
+        <div className="mx-auto grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
           <div>
             <Label>Waarom het terugkomt</Label>
             <h2 className="diba-display-m mt-4 max-w-[20ch]">
               Je huid onthoudt elke zomer.
             </h2>
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Pigmentcellen die één keer ontregeld zijn geraakt, reageren de volgende keer
-              sneller. Daarom is pigment een aandoening met een geheugen: elke onbeschermde
-              zomer telt op bij de vorige.
+              Pigmentcellen die één keer ontregeld zijn geraakt, reageren de
+              volgende keer sneller. Daarom is pigment een aandoening met een
+              geheugen: elke onbeschermde zomer telt op bij de vorige.
             </p>
             <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dat klinkt somber, maar het is juist goed nieuws. Het betekent dat de
-              belangrijkste stap iets is dat je zelf doet, elke dag, en dat wij er niets
-              aan verdienen.
+              Dat klinkt somber, maar het is juist goed nieuws. Het betekent dat
+              de belangrijkste stap iets is dat je zelf doet, elke dag, en dat
+              wij er niets aan verdienen.
             </p>
           </div>
 
@@ -225,12 +236,18 @@ export default function PigmentPage() {
                   className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-[var(--r-pill)]"
                   style={{
                     background:
-                      i === 0 ? "var(--warn)" : i === 1 ? "var(--g-400)" : "var(--g-700)",
+                      i === 0
+                        ? "var(--warn)"
+                        : i === 1
+                          ? "var(--g-400)"
+                          : "var(--g-700)",
                   }}
                   aria-hidden="true"
                 />
                 <span>
-                  <strong className="block text-[15px] font-medium leading-6">{kop}</strong>
+                  <strong className="block text-[15px] font-medium leading-6">
+                    {kop}
+                  </strong>
                   <span className="mt-1 block text-sm leading-6 text-[var(--t-body)]">
                     {tekst}
                   </span>
@@ -262,7 +279,10 @@ export default function PigmentPage() {
         ]}
         assen={[
           ["Pigment", "Hoe donker en hoe verspreid, objectief in kaart"],
-          ["UV-belasting", "Wat de zon al heeft aangericht, ook wat je niet ziet"],
+          [
+            "UV-belasting",
+            "Wat de zon al heeft aangericht, ook wat je niet ziet",
+          ],
           ["Textuur", "Of er naast kleur ook oneffenheid meespeelt"],
         ]}
       />

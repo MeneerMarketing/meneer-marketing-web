@@ -44,10 +44,14 @@ const EIGEN_PAGINA = new Set([
 ]);
 
 export function generateStaticParams() {
-  return PILLARS.filter((p) => !EIGEN_PAGINA.has(p.slug)).map((p) => ({ slug: p.slug }));
+  return PILLARS.filter((p) => !EIGEN_PAGINA.has(p.slug)).map((p) => ({
+    slug: p.slug,
+  }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const pillar = PILLARS.find((p) => p.slug === slug);
   if (!pillar) return {};
@@ -73,7 +77,8 @@ export default async function PillarPage({ params }: PageProps) {
 
   const enriched = {
     ...content,
-    reviews: content.reviews.length > 0 ? content.reviews : reviewsForPillar(slug),
+    reviews:
+      content.reviews.length > 0 ? content.reviews : reviewsForPillar(slug),
   };
 
   return (

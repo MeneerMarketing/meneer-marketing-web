@@ -94,7 +94,7 @@ export default function Raster() {
         aria-label="Naar een groep"
         className="sticky top-[var(--nav-h)] z-20 -mx-5 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur sm:-mx-9 lg:-mx-[7.5vw]"
       >
-        <ul className="mx-auto flex max-w-[1800px] gap-2 overflow-x-auto px-5 py-3 sm:px-9 lg:px-[7.5vw]">
+        <ul className="mx-auto flex gap-2 overflow-x-auto px-5 py-3 sm:px-9 lg:px-[7.5vw]">
           {GROEPEN.map((g) => {
             const aantal = alles.filter((b) => b.groep === g.id).length;
             return (
@@ -104,7 +104,9 @@ export default function Raster() {
                   className="diba-label flex min-h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] px-4 whitespace-nowrap text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   {g.kort}
-                  <span className="tabular-nums text-[var(--t-muted)]">{aantal}</span>
+                  <span className="tabular-nums text-[var(--t-muted)]">
+                    {aantal}
+                  </span>
                 </a>
               </li>
             );
@@ -116,7 +118,11 @@ export default function Raster() {
       {GROEPEN.map((g) => {
         const items = alles.filter((b) => b.groep === g.id);
         return (
-          <section key={g.id} id={g.anker} className="scroll-mt-[var(--anker-offset)] pt-16 first:pt-12">
+          <section
+            key={g.id}
+            id={g.anker}
+            className="scroll-mt-[var(--anker-offset)] pt-16 first:pt-12"
+          >
             <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-12">
               <div>
                 <Label>{g.label}</Label>

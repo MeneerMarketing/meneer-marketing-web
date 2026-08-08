@@ -76,7 +76,7 @@ export default function Silhouet() {
                   ANKERS[i]
                 } ${
                   aan
-                    ? "bg-[var(--g-700)] text-[var(--on-dark-label)]"
+                    ? "diba-pill-active"
                     : "bg-white text-[var(--t-label)] shadow-[var(--shadow-float)] hover:bg-[var(--g-050)]"
                 }`}
               >
@@ -87,15 +87,17 @@ export default function Silhouet() {
         </div>
 
         <p className="mt-6 text-sm leading-6 text-[var(--t-muted)]">
-          Tik de plekken aan. Ze horen bij dezelfde aandoening, ook als ze niet tegelijk
-          opspelen.
+          Tik de plekken aan. Ze horen bij dezelfde aandoening, ook als ze niet
+          tegelijk opspelen.
         </p>
       </div>
 
       {/* ── De lezing ── */}
       <div aria-live="polite">
         {zone.dringend ? (
-          <Label className="text-[var(--warn-text)]">Hier niet mee wachten</Label>
+          <Label className="text-[var(--warn-text)]">
+            Hier niet mee wachten
+          </Label>
         ) : (
           <Label>Wat hier bij hoort</Label>
         )}

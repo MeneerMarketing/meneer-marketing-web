@@ -11,7 +11,11 @@ import {
   type Behandeling,
   type CategorieId,
 } from "@/data/behandelingen";
-import { maakMatches, profielIsLeeg, type MatchOordeel } from "@/data/huidprofiel";
+import {
+  maakMatches,
+  profielIsLeeg,
+  type MatchOordeel,
+} from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
 
@@ -53,13 +57,23 @@ function kortHerstel(b: Behandeling): boolean {
   return !heeftHersteltijd(b) || /uur|één tot drie|een dag/i.test(b.herstel);
 }
 
-const BADGE: Record<MatchOordeel, { readonly tekst: string; readonly stijl: string }> = {
+const BADGE: Record<
+  MatchOordeel,
+  { readonly tekst: string; readonly stijl: string }
+> = {
   past: { tekst: "Past bij je profiel", stijl: "bg-[var(--g-700)] text-white" },
   deels: { tekst: "Deels", stijl: "bg-[var(--g-100)] text-[var(--t-strong)]" },
-  "past-niet": { tekst: "Past niet", stijl: "bg-[var(--g-050)] text-[var(--t-muted)]" },
+  "past-niet": {
+    tekst: "Past niet",
+    stijl: "bg-[var(--g-050)] text-[var(--t-muted)]",
+  },
 };
 
-const RANG: Record<MatchOordeel, number> = { past: 0, deels: 1, "past-niet": 2 };
+const RANG: Record<MatchOordeel, number> = {
+  past: 0,
+  deels: 1,
+  "past-niet": 2,
+};
 
 export default function Behandelingenoverzicht() {
   const { profiel } = useHuidprofiel();
@@ -100,33 +114,41 @@ export default function Behandelingenoverzicht() {
     <div>
       {/* ── Filters ── */}
       <div className="flex flex-col gap-5">
-        <div role="tablist" aria-label="Soort behandeling" className="flex flex-wrap gap-2">
-          {[{ id: "alles" as const, label: "Alles" }, ...CATEGORIEEN].map((c) => {
-            const aan = categorie === c.id;
-            return (
-              <button
-                key={c.id}
-                role="tab"
-                type="button"
-                aria-selected={aan}
-                onClick={() => setCategorie(c.id as CategorieId | "alles")}
-                className={`diba-label inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] px-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
-                  aan
-                    ? "diba-pill-active"
-                    : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
-                }`}
-              >
-                {c.label}
-                <span
-                  className={`rounded-[var(--r-pill)] px-1.5 py-0.5 text-[10px] tabular-nums ${
-                    aan ? "bg-white/20" : "bg-[var(--g-050)] text-[var(--t-muted)]"
+        <div
+          role="tablist"
+          aria-label="Soort behandeling"
+          className="flex flex-wrap gap-2"
+        >
+          {[{ id: "alles" as const, label: "Alles" }, ...CATEGORIEEN].map(
+            (c) => {
+              const aan = categorie === c.id;
+              return (
+                <button
+                  key={c.id}
+                  role="tab"
+                  type="button"
+                  aria-selected={aan}
+                  onClick={() => setCategorie(c.id as CategorieId | "alles")}
+                  className={`diba-label inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] px-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+                    aan
+                      ? "diba-pill-active"
+                      : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
                   }`}
                 >
-                  {telling(c.id as CategorieId | "alles")}
-                </span>
-              </button>
-            );
-          })}
+                  {c.label}
+                  <span
+                    className={`rounded-[var(--r-pill)] px-1.5 py-0.5 text-[10px] tabular-nums ${
+                      aan
+                        ? "bg-white/20"
+                        : "bg-[var(--g-050)] text-[var(--t-muted)]"
+                    }`}
+                  >
+                    {telling(c.id as CategorieId | "alles")}
+                  </span>
+                </button>
+              );
+            },
+          )}
         </div>
 
         <div
@@ -134,7 +156,9 @@ export default function Behandelingenoverzicht() {
           aria-label="Hersteltijd"
           className="flex flex-wrap items-center gap-2"
         >
-          <span className="diba-label mr-1 text-[var(--t-muted)]">Hersteltijd</span>
+          <span className="diba-label mr-1 text-[var(--t-muted)]">
+            Hersteltijd
+          </span>
           {HERSTELFILTERS.map((h) => {
             const aan = herstel === h.id;
             return (
@@ -161,8 +185,8 @@ export default function Behandelingenoverzicht() {
       <p className="mt-7 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
         {heeftProfiel ? (
           <>
-            De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat afvalt, met
-            bij elke kaart de reden.{" "}
+            De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat
+            afvalt, met bij elke kaart de reden.{" "}
             <Link
               href="/huidprofiel"
               className="text-[var(--g-700)] underline underline-offset-4"
@@ -199,7 +223,9 @@ export default function Behandelingenoverzicht() {
                 className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-7"
               >
                 <span className="flex flex-wrap items-center gap-2">
-                  <span className="diba-label text-[var(--t-muted)]">{diepste}</span>
+                  <span className="diba-label text-[var(--t-muted)]">
+                    {diepste}
+                  </span>
                   {match ? (
                     <span
                       className={`diba-label rounded-[var(--r-pill)] px-2.5 py-1 ${BADGE[match.oordeel].stijl}`}
@@ -255,7 +281,8 @@ export default function Behandelingenoverzicht() {
 
       {lijst.length === 0 ? (
         <p className="mt-10 text-[16px] leading-7 text-[var(--t-body)]">
-          Geen behandelingen met deze combinatie van filters. Zet de hersteltijd wat ruimer.
+          Geen behandelingen met deze combinatie van filters. Zet de hersteltijd
+          wat ruimer.
         </p>
       ) : null}
     </div>

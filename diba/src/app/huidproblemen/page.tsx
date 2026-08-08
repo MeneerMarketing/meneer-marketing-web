@@ -44,7 +44,7 @@ export default function HuidproblemenPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
@@ -110,14 +110,14 @@ export default function HuidproblemenPage() {
           Wit vlak, mintkaarten. Stond de sectie ook op mint, dan liepen kaart en
           ondergrond in elkaar over en las het als losse tekst in plaats van als kaarten. */}
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Raster />
         </div>
       </section>
 
       {/* ── Wat elke pagina gemeen heeft ── */}
       <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto max-w-[1800px] rounded-[var(--r-md)] bg-[var(--g-050)] p-7 sm:p-10">
+        <div className="mx-auto rounded-[var(--r-md)] bg-[var(--g-050)] p-7 sm:p-10">
           <Label>Wat op elke pagina terugkomt</Label>
           <h2 className="diba-display-s mt-5 max-w-[20ch]">
             Dezelfde vier vragen,
@@ -156,7 +156,7 @@ export default function HuidproblemenPage() {
 
       {/* ── Slot ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px] lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
+        <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Behandeling nul</Label>
             <h2 className="diba-display-l mt-5 max-w-[16ch]">

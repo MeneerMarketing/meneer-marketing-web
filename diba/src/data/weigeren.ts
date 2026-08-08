@@ -33,7 +33,8 @@ export const WEIGER_CATEGORIEEN: readonly WeigerCategorie[] = [
   {
     id: "verwachting",
     kop: "Wanneer we *nee* zeggen",
-    intro: "Soms is het advies om niet te behandelen. Dat is ook een uitkomst van Behandeling Nul.",
+    intro:
+      "Soms is het advies om niet te behandelen. Dat is ook een uitkomst van Behandeling Nul.",
     items: [
       "[COPY-NODIG: verwachting die niet realistisch is]",
       "[COPY-NODIG: situatie zonder meetbaar doel]",

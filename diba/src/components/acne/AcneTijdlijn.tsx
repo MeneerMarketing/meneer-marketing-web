@@ -95,9 +95,13 @@ export default function AcneTijdlijn() {
         <div>
           <div className="flex flex-wrap items-baseline gap-x-3">
             <h3 className="diba-card-title-lg">{fase.kop}</h3>
-            <span className="diba-label text-[var(--t-muted)]">{fase.periode}</span>
+            <span className="diba-label text-[var(--t-muted)]">
+              {fase.periode}
+            </span>
           </div>
-          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">{fase.tekst}</p>
+          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+            {fase.tekst}
+          </p>
         </div>
 
         <div
@@ -107,7 +111,9 @@ export default function AcneTijdlijn() {
           <Label className={fase.isDip ? "text-[var(--warn-text)]" : undefined}>
             {fase.isDip ? "Let hier op" : "Wat wij dan doen"}
           </Label>
-          <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">{fase.watWijDoen}</p>
+          <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
+            {fase.watWijDoen}
+          </p>
         </div>
       </div>
     </div>

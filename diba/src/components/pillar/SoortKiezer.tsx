@@ -54,7 +54,11 @@ export default function SoortKiezer({
 
   return (
     <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
-      <ul role="radiogroup" aria-label="Kies het beeld dat het dichtst bij jouw huid komt" className="space-y-2">
+      <ul
+        role="radiogroup"
+        aria-label="Kies het beeld dat het dichtst bij jouw huid komt"
+        className="space-y-2"
+      >
         {opties.map((o, i) => {
           const gekozen = i === actief;
           return (
@@ -70,10 +74,14 @@ export default function SoortKiezer({
                     : "bg-[var(--g-050)] hover:bg-[var(--g-075)]"
                 } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
               >
-                <span className="text-[15px] font-medium leading-6">{o.naam}</span>
+                <span className="text-[15px] font-medium leading-6">
+                  {o.naam}
+                </span>
                 <span
                   className={`text-sm leading-5 ${
-                    gekozen ? "text-[var(--on-dark-body)]" : "text-[var(--t-body)]"
+                    gekozen
+                      ? "text-[var(--on-dark-body)]"
+                      : "text-[var(--t-body)]"
                   }`}
                 >
                   {o.klanttaal}
@@ -84,10 +92,15 @@ export default function SoortKiezer({
         })}
       </ul>
 
-      <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8" aria-live="polite">
+      <div
+        className="rounded-[var(--r-md)] bg-white p-6 sm:p-8"
+        aria-live="polite"
+      >
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
           <h3 className="diba-card-title-lg">{optie.naam}</h3>
-          <span className="diba-label text-[var(--t-muted)]">{optie.vakterm}</span>
+          <span className="diba-label text-[var(--t-muted)]">
+            {optie.vakterm}
+          </span>
         </div>
 
         <dl className="mt-6 space-y-5">
@@ -111,7 +124,9 @@ export default function SoortKiezer({
         ) : null}
 
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
-          <Button href={ctaHrefPatroon.replace("{id}", optie.id)}>{ctaLabel}</Button>
+          <Button href={ctaHrefPatroon.replace("{id}", optie.id)}>
+            {ctaLabel}
+          </Button>
           {hint ? <Label className="max-w-[26ch]">{hint}</Label> : null}
         </div>
       </div>

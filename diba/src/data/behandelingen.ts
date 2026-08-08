@@ -106,14 +106,46 @@ export function diepteVanLagen(lagen: readonly HuidlaagId[]): number {
 /** Waar een behandeling voor gemaakt is. Stuurt de groepen op het overzicht. */
 export const CATEGORIEEN = [
   { id: "meting", label: "Meten", zin: "Eerst kijken, nog niets doen." },
-  { id: "gezicht", label: "Gezichtsbehandelingen", zin: "Reinigen, hydrateren, oppervlakkig vernieuwen." },
-  { id: "peeling", label: "Peelings", zin: "De bovenlaag sneller laten vernieuwen." },
-  { id: "needling", label: "Microneedling", zin: "Herstel op gang brengen in het bindweefsel." },
-  { id: "injectie", label: "Skinboosters", zin: "Werkzame stoffen precies op diepte brengen." },
-  { id: "laser", label: "Laser en licht", zin: "Mikken op kleur, vaten of structuur." },
-  { id: "pigment", label: "Pigmenttrajecten", zin: "Maanden werk aan hardnekkig pigment." },
-  { id: "ontharing", label: "Laserontharing", zin: "De haarwortel uitschakelen." },
-  { id: "overig", label: "Overig", zin: "Wat er verder in de kliniek gebeurt." },
+  {
+    id: "gezicht",
+    label: "Gezichtsbehandelingen",
+    zin: "Reinigen, hydrateren, oppervlakkig vernieuwen.",
+  },
+  {
+    id: "peeling",
+    label: "Peelings",
+    zin: "De bovenlaag sneller laten vernieuwen.",
+  },
+  {
+    id: "needling",
+    label: "Microneedling",
+    zin: "Herstel op gang brengen in het bindweefsel.",
+  },
+  {
+    id: "injectie",
+    label: "Skinboosters",
+    zin: "Werkzame stoffen precies op diepte brengen.",
+  },
+  {
+    id: "laser",
+    label: "Laser en licht",
+    zin: "Mikken op kleur, vaten of structuur.",
+  },
+  {
+    id: "pigment",
+    label: "Pigmenttrajecten",
+    zin: "Maanden werk aan hardnekkig pigment.",
+  },
+  {
+    id: "ontharing",
+    label: "Laserontharing",
+    zin: "De haarwortel uitschakelen.",
+  },
+  {
+    id: "overig",
+    label: "Overig",
+    zin: "Wat er verder in de kliniek gebeurt.",
+  },
 ] as const;
 
 export type CategorieId = (typeof CATEGORIEEN)[number]["id"];
@@ -145,8 +177,14 @@ export type Behandeling = {
   readonly wel?: readonly string[];
   readonly niet?: readonly string[];
   readonly stappen?: readonly { readonly kop: string; readonly zin: string }[];
-  readonly bijProblemen?: readonly { readonly label: string; readonly href: string }[];
-  readonly faq?: readonly { readonly vraag: string; readonly antwoord: string }[];
+  readonly bijProblemen?: readonly {
+    readonly label: string;
+    readonly href: string;
+  }[];
+  readonly faq?: readonly {
+    readonly vraag: string;
+    readonly antwoord: string;
+  }[];
 };
 
 export const BEHANDELINGEN: readonly Behandeling[] = [
@@ -179,9 +217,18 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Voorspelt geen resultaat. Een meting is een startpunt, geen belofte",
     ],
     stappen: [
-      { kop: "Schoon gezicht", zin: "Make-up eraf. Een meting over foundation heen is geen meting." },
-      { kop: "Opname onder vast licht", zin: "Zelfde lamp, zelfde afstand, zelfde stand. Dat maakt vergelijken mogelijk." },
-      { kop: "Samen kijken", zin: "Je ziet hetzelfde scherm als wij, ook als het meevalt." },
+      {
+        kop: "Schoon gezicht",
+        zin: "Make-up eraf. Een meting over foundation heen is geen meting.",
+      },
+      {
+        kop: "Opname onder vast licht",
+        zin: "Zelfde lamp, zelfde afstand, zelfde stand. Dat maakt vergelijken mogelijk.",
+      },
+      {
+        kop: "Samen kijken",
+        zin: "Je ziet hetzelfde scherm als wij, ook als het meevalt.",
+      },
     ],
     bijProblemen: [
       { label: "Behandeling Nul", href: "/intake" },
@@ -288,7 +335,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     lagen: ["hoornlaag", "opperhuid"],
     werking:
       "Een peeling maakt de verbinding tussen de buitenste huidcellen los, zodat die laag sneller wordt vervangen dan hij uit zichzelf zou doen. Hoe ver dat gaat hangt af van het middel en de sterkte: de kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Meestal een reeks, met weken ertussen [GEGEVEN-NODIG]",
     prijs: 140,
     varianten: [
@@ -309,9 +357,18 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Houdt niet vanzelf aan. Stop je, dan komt de oude situatie terug",
     ],
     stappen: [
-      { kop: "Huid beoordelen", zin: "De sterkte wordt op je huid van vandaag gekozen." },
-      { kop: "Aanbrengen en tijd bewaken", zin: "De inwerktijd is het middel. Te lang is niet beter maar schadelijker." },
-      { kop: "Neutraliseren en beschermen", zin: "Daarna zon vermijden. Dat is geen advies maar een voorwaarde. [MEDISCHE-CHECK-ROJDA]" },
+      {
+        kop: "Huid beoordelen",
+        zin: "De sterkte wordt op je huid van vandaag gekozen.",
+      },
+      {
+        kop: "Aanbrengen en tijd bewaken",
+        zin: "De inwerktijd is het middel. Te lang is niet beter maar schadelijker.",
+      },
+      {
+        kop: "Neutraliseren en beschermen",
+        zin: "Daarna zon vermijden. Dat is geen advies maar een voorwaarde. [MEDISCHE-CHECK-ROJDA]",
+      },
     ],
     bijProblemen: [
       { label: "Acne", href: "/huidproblemen/acne" },
@@ -330,7 +387,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
       "Met fijne naalden worden heel veel kleine kanaaltjes tot in de bovenste lederhuid gemaakt. Daar zit het bindweefsel, en de huid reageert daarop met herstel en collageenaanmaak. Dat herstel is het doel; de prikjes zelf zijn alleen de aanleiding. Daarom duurt het weken voor je iets ziet en niet dagen. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Eén tot drie dagen rood, als een stevige zonnegloed. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Eén tot drie dagen rood, als een stevige zonnegloed. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Een reeks met weken ertussen [GEGEVEN-NODIG]",
     prijs: 180,
     varianten: [
@@ -350,9 +408,18 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Is niet geschikt bij actieve ontsteking [MEDISCHE-CHECK-ROJDA]",
     ],
     stappen: [
-      { kop: "Verdoven en afdekken", zin: "Een verdovende crème krijgt tijd om te werken. Dat wachten hoort erbij." },
-      { kop: "Behandelen per zone", zin: "De diepte wordt per zone gekozen. Rond de ogen is de huid dunner." },
-      { kop: "Rust geven", zin: "Daarna niets erop wat er niet op hoeft. [MEDISCHE-CHECK-ROJDA]" },
+      {
+        kop: "Verdoven en afdekken",
+        zin: "Een verdovende crème krijgt tijd om te werken. Dat wachten hoort erbij.",
+      },
+      {
+        kop: "Behandelen per zone",
+        zin: "De diepte wordt per zone gekozen. Rond de ogen is de huid dunner.",
+      },
+      {
+        kop: "Rust geven",
+        zin: "Daarna niets erop wat er niet op hoeft. [MEDISCHE-CHECK-ROJDA]",
+      },
     ],
     bijProblemen: [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
@@ -394,7 +461,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     lagen: ["lederhuid-boven"],
     werking:
       "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Kort rood en soms kleine bultjes, meestal binnen een dag weg. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Kort rood en soms kleine bultjes, meestal binnen een dag weg. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Vaak een kuur van drie [GEGEVEN-NODIG]",
     prijs: 175,
     varianten: [
@@ -421,7 +489,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     lagen: ["opperhuid", "lederhuid-boven", "lederhuid-diep"],
     werking:
       "Naarmate de huid veroudert wordt die slapper en minder elastisch. De Fotona TimeWalker pakt dat aan met verschillende gespecialiseerde laserbehandelingen die elk op één probleem mikken: 4D Lift voor een complete lifting van binnen én buiten, VectorLift voor de wenkbrauw- en oogregio, SmoothEye voor de oogcontour en LipLase voor lipvolume. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Los of als kuur van drie [GEGEVEN-NODIG]",
     prijs: 150,
     varianten: [
@@ -498,7 +567,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     lagen: ["opperhuid"],
     werking:
       "Cosmelan is een behandeltraject van zes maanden. Het begint met twee weken voorbereiding thuis met specifieke producten, daarna volgt de behandeling in de praktijk en een vaste huidverzorgingsroutine. De specialist bepaalt welke van de twee bij jouw indicatie past. Zon, hormonen, zwangerschap en genen bepalen mee waarom pigment ontstaat, en daarom is het thuiswerk geen bijzaak. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Eén traject van ongeveer zes maanden",
     prijs: 550,
     varianten: [
@@ -530,9 +600,14 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     prijs: 175,
     varianten: [
       { naam: "Los", prijs: 175 },
-      { naam: "Kuur inclusief lightening crème, oksels of intieme zone", prijs: 300 },
+      {
+        naam: "Kuur inclusief lightening crème, oksels of intieme zone",
+        prijs: 300,
+      },
     ],
-    bijProblemen: [{ label: "Huidverkleuring", href: "/huidproblemen/huidverkleuring" }],
+    bijProblemen: [
+      { label: "Huidverkleuring", href: "/huidproblemen/huidverkleuring" },
+    ],
   },
 
   /* ── Laserontharing ────────────────────────────────────────────────────── */
@@ -545,8 +620,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     lagen: ["lederhuid-diep"],
     werking:
       "De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom is laser precies, en daarom moet je weten waar je op mikt. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Een paar uur rood, soms bultjes rond de haarzakjes. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Altijd een reeks. Het aantal hangt af van zone en huidtype [GEGEVEN-NODIG]",
+    herstel:
+      "Een paar uur rood, soms bultjes rond de haarzakjes. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Altijd een reeks. Het aantal hangt af van zone en huidtype [GEGEVEN-NODIG]",
     prijs: 20,
     wel: [
       "Werkt op haargroei op vrijwel elke zone",
@@ -630,7 +707,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { naam: "Borstcorrectie", prijs: 175 },
       { naam: "Buikwandcorrectie", prijs: 200 },
     ],
-    bijProblemen: [{ label: "Littekens en striae", href: "/huidproblemen/littekens" }],
+    bijProblemen: [
+      { label: "Littekens en striae", href: "/huidproblemen/littekens" },
+    ],
   },
   {
     slug: "fibromen",

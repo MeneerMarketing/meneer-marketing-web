@@ -9,13 +9,22 @@ import Topbalk from "@/components/nav/Topbalk";
 import FigmaVoorJouSection from "@/components/figma/FigmaVoorJouSection";
 import Button from "@/components/ui/Button";
 import DibaIcon from "@/components/ui/DibaIcon";
-import { ArrowUpRight, Close, PlusMinus, Pulse, Sparkle } from "@/components/ui/Icon";
+import {
+  ArrowUpRight,
+  Close,
+  PlusMinus,
+  Pulse,
+  Sparkle,
+} from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
 import MiniHuidscan from "@/components/ui/MiniHuidscan";
 import WerkwijzeStepsFlow from "@/components/ui/WerkwijzeStepsFlow";
-import { FIGMA_HOME_CLINIC, FIGMA_TRAJECT_TESTIMONIAL } from "@/data/figma-home-images";
+import {
+  FIGMA_HOME_CLINIC,
+  FIGMA_TRAJECT_TESTIMONIAL,
+} from "@/data/figma-home-images";
 import { HOME_FAQ_ITEMS } from "@/data/home-faq";
 import { publicCopy } from "@/lib/copy-flags";
 import {
@@ -24,7 +33,11 @@ import {
   FIGMA_HERO_PORTRAIT,
   FIGMA_HERO_PORTRAIT_ALT,
 } from "@/lib/figma-home-layout";
-import { DIBA_HOME_PROOF_ITEMS, DIBA_INSTAGRAM_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_HOME_PROOF_ITEMS,
+  DIBA_INSTAGRAM_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * De drie punten onder "Eerlijk advies". Concepttekst, overgenomen uit het ontwerp.
@@ -72,7 +85,10 @@ export default function FigmaHomeApp() {
       <Topbalk />
       <HoofdNav />
 
-      <section id="top" className="relative mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section
+        id="top"
+        className="relative mx-auto px-5 sm:px-9 lg:px-[7.5vw]"
+      >
         <div className="grid min-h-[730px] lg:grid-cols-[1.18fr_.82fr]">
           {/* De linkerkolom is de binnenkomer. Eén blok, verticaal gecentreerd tegenover
               het beeld — geen `justify-between` meer. Dat duwde de slogan tegen de
@@ -101,8 +117,9 @@ export default function FigmaHomeApp() {
             </h1>
 
             <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare prijzen,
-              en een nulmeting voordat we behandelen. Soms is het advies om even te wachten.
+              Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare
+              prijzen, en een nulmeting voordat we behandelen. Soms is het
+              advies om even te wachten.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -150,7 +167,7 @@ export default function FigmaHomeApp() {
       <FigmaVoorJouSection />
 
       <section className="relative overflow-hidden px-5 py-10 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto flex max-w-[1800px] flex-wrap items-center justify-between gap-5 rounded-[var(--r-lg)] bg-[var(--g-050)] px-7 py-6 sm:px-10">
+        <div className="mx-auto flex flex-wrap items-center justify-between gap-5 rounded-[var(--r-lg)] bg-[var(--g-050)] px-7 py-6 sm:px-10">
           <div className="flex items-center gap-5">
             <DibaIcon variant="groen" size={52} />
             <p className="max-w-xl text-sm leading-6 text-[var(--t-body)]">
@@ -176,7 +193,7 @@ export default function FigmaHomeApp() {
         id="huidscan"
         className="bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto grid max-w-[1800px] gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
+        <div className="mx-auto grid gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <Label opDonker>De Diba huidscan</Label>
             <h2 className="diba-display-l mt-5">
@@ -185,13 +202,17 @@ export default function FigmaHomeApp() {
               <span className="diba-accent-on-dark">Wij meten.</span>
             </h2>
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Met de Eve-M huidanalyse maken we een objectieve nulmeting. Zo zien we wat
-              jouw huid nodig heeft en volgen we jouw voortgang in beeld.
+              Met de Eve-M huidanalyse maken we een objectieve nulmeting. Zo
+              zien we wat jouw huid nodig heeft en volgen we jouw voortgang in
+              beeld.
             </p>
             <div className="mt-9 flex w-fit flex-col items-start gap-4">
               {/* De mini-scan in de kaart hiernaast is de primaire actie van deze
                   sectie. Deze knop is de uitleg-route en blijft dus secundair. */}
-              <Button variant="secundair-op-donker" onClick={() => setScanOpen(true)}>
+              <Button
+                variant="secundair-op-donker"
+                onClick={() => setScanOpen(true)}
+              >
                 Hoe werkt de huidscan?
               </Button>
               <Link
@@ -234,19 +255,26 @@ export default function FigmaHomeApp() {
               Jouw huid in kaart.
             </h3>
             <p className="mt-5 max-w-md leading-7 text-[var(--t-body)]">
-              Tijdens je intake bekijken we onder meer hydratatie, pigment, poriën en
-              huidstructuur. De huidscan geeft ons een objectieve start. Jouw wensen
-              blijven altijd leidend.
+              Tijdens je intake bekijken we onder meer hydratatie, pigment,
+              poriën en huidstructuur. De huidscan geeft ons een objectieve
+              start. Jouw wensen blijven altijd leidend.
             </p>
-            <Button href="/intake" onClick={() => setScanOpen(false)} className="mt-7">
+            <Button
+              href="/intake"
+              onClick={() => setScanOpen(false)}
+              className="mt-7"
+            >
               Start je intake (4 min)
             </Button>
           </div>
         </div>
       ) : null}
 
-      <section id="werkwijze" className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="werkwijze"
+        className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
             <div>
               <Label>Onze werkwijze</Label>
@@ -266,7 +294,7 @@ export default function FigmaHomeApp() {
           die de belofte concreet maken. Die rijen zijn het verschil: zonder hen is dit
           een claim, met hen is het na te rekenen. */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto grid max-w-[1800px] items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
+        <div className="mx-auto grid items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
           <div className="relative min-h-[320px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-400)] lg:min-h-[440px]">
             <Image
               src={FIGMA_EERLIJK_PORTRAIT}
@@ -291,8 +319,8 @@ export default function FigmaHomeApp() {
               Soms is niet behandelen óók het beste advies.
             </h2>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wij behandelen niet om te behandelen. We adviseren wat past bij jouw huid,
-              jouw doel en jouw veiligheid.
+              Wij behandelen niet om te behandelen. We adviseren wat past bij
+              jouw huid, jouw doel en jouw veiligheid.
             </p>
 
             <ul className="mt-6 space-y-2.5">
@@ -317,7 +345,11 @@ export default function FigmaHomeApp() {
               ))}
             </ul>
 
-            <Button href="/intake?topic=second-opinion" variant="secundair" className="mt-7">
+            <Button
+              href="/intake?topic=second-opinion"
+              variant="secundair"
+              className="mt-7"
+            >
               Vraag een second opinion
             </Button>
           </div>
@@ -326,16 +358,18 @@ export default function FigmaHomeApp() {
 
       <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <FigmaSoftAccent variant="traject" />
-        <div className="relative mx-auto max-w-[1800px]">
+        <div className="relative mx-auto">
           <div className="grid gap-10 lg:grid-cols-[.72fr_1.28fr]">
             <div>
               <Label>Niet zomaar een afspraak</Label>
-              <h2 className="diba-display-m mt-4">Een traject dat met je meebeweegt.</h2>
+              <h2 className="diba-display-m mt-4">
+                Een traject dat met je meebeweegt.
+              </h2>
             </div>
             <p className="max-w-2xl self-end text-[16px] leading-7 text-[var(--t-body)]">
-              Een mooie huid is zelden één moment. Daarom bekijken we samen wat er speelt,
-              wat haalbaar is en hoe we jouw voortgang kunnen volgen, zonder dat je vastzit
-              aan een pakket.
+              Een mooie huid is zelden één moment. Daarom bekijken we samen wat
+              er speelt, wat haalbaar is en hoe we jouw voortgang kunnen volgen,
+              zonder dat je vastzit aan een pakket.
             </p>
           </div>
           <div className="mt-14 grid gap-4 lg:grid-cols-[1.05fr_.95fr]">
@@ -357,8 +391,13 @@ export default function FigmaHomeApp() {
                   { label: "Textuur", value: "Rustiger", width: "63%" },
                   { label: "Jouw plan", value: "Helder", width: "88%" },
                 ].map((metric) => (
-                  <div key={metric.label} className="rounded-[var(--r-sm)] bg-white p-4">
-                    <span className="diba-label text-[var(--t-muted)]">{metric.label}</span>
+                  <div
+                    key={metric.label}
+                    className="rounded-[var(--r-sm)] bg-white p-4"
+                  >
+                    <span className="diba-label text-[var(--t-muted)]">
+                      {metric.label}
+                    </span>
                     <strong className="mt-4 block text-2xl tracking-[-.06em] text-[var(--g-600)] tabular-nums">
                       {metric.value}
                     </strong>
@@ -385,7 +424,8 @@ export default function FigmaHomeApp() {
                 aria-hidden="true"
               />
               <blockquote className="absolute bottom-7 left-7 right-7 max-w-md text-2xl leading-[1.15] tracking-[-.04em] text-white sm:text-3xl">
-                “Ik voelde me voor het eerst niet als een probleem dat opgelost moest worden.”
+                “Ik voelde me voor het eerst niet als een probleem dat opgelost
+                moest worden.”
               </blockquote>
             </div>
           </div>
@@ -393,14 +433,17 @@ export default function FigmaHomeApp() {
       </section>
 
       <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
               <Label>In de kliniek</Label>
-              <h2 className="diba-display-m mt-4">Een groene pauze in je dag.</h2>
+              <h2 className="diba-display-m mt-4">
+                Een groene pauze in je dag.
+              </h2>
             </div>
             <p className="max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-              Van de eerste kop thee tot je nazorg: we hebben aandacht voor de hele ervaring.
+              Van de eerste kop thee tot je nazorg: we hebben aandacht voor de
+              hele ervaring.
             </p>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-[.75fr_1.25fr_.75fr]">
@@ -469,18 +512,21 @@ export default function FigmaHomeApp() {
       <FigmaKennisbankSection />
 
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[.7fr_1.3fr]">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
           <div>
             <Label>Goed om te weten</Label>
             <h2 className="diba-display-m mt-4">Eerst even dit.</h2>
             <p className="mt-6 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-              Duidelijkheid is een vorm van zorg. Daarom beantwoorden we de vragen die het
-              vaakst vooraf worden gesteld.
+              Duidelijkheid is een vorm van zorg. Daarom beantwoorden we de
+              vragen die het vaakst vooraf worden gesteld.
             </p>
           </div>
           <div className="border-t border-[var(--g-100)]">
             {HOME_FAQ_ITEMS.map((item) => (
-              <details key={item.id} className="group border-b border-[var(--g-100)] py-6">
+              <details
+                key={item.id}
+                className="group border-b border-[var(--g-100)] py-6"
+              >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
                   <span>{item.question}</span>
                   <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] transition group-open:rotate-180">
@@ -514,10 +560,14 @@ export default function FigmaHomeApp() {
           </div>
           <div className="relative flex flex-col justify-end">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Plan een intake in onze kliniek in Hillegersberg. We nemen de tijd voor jouw
-              vragen, huidanalyse en een duidelijk behandelvoorstel.
+              Plan een intake in onze kliniek in Hillegersberg. We nemen de tijd
+              voor jouw vragen, huidanalyse en een duidelijk behandelvoorstel.
             </p>
-            <Button href="/intake" variant="primair-op-donker" className="mt-8 w-fit">
+            <Button
+              href="/intake"
+              variant="primair-op-donker"
+              className="mt-8 w-fit"
+            >
               Start je intake (4 min)
             </Button>
             <a
@@ -532,22 +582,37 @@ export default function FigmaHomeApp() {
         </div>
       </section>
 
-      <footer className="mx-auto max-w-[1800px] px-5 pb-10 sm:px-9 lg:px-[7.5vw]">
+      <footer className="mx-auto px-5 pb-10 sm:px-9 lg:px-[7.5vw]">
         <div className="flex flex-col gap-6 border-t border-[var(--g-100)] pt-7">
           <div className="diba-label flex flex-wrap gap-x-8 gap-y-3 text-[var(--t-muted)]">
-            <Link href="/huidproblemen" className="transition hover:text-[var(--g-700)]">
+            <Link
+              href="/huidproblemen"
+              className="transition hover:text-[var(--g-700)]"
+            >
               Huidproblemen
             </Link>
-            <Link href="/prijzen" className="transition hover:text-[var(--g-700)]">
+            <Link
+              href="/prijzen"
+              className="transition hover:text-[var(--g-700)]"
+            >
               Prijzen
             </Link>
-            <Link href="/contact" className="transition hover:text-[var(--g-700)]">
+            <Link
+              href="/contact"
+              className="transition hover:text-[var(--g-700)]"
+            >
               Contact
             </Link>
-            <Link href="/privacybeleid" className="transition hover:text-[var(--g-700)]">
+            <Link
+              href="/privacybeleid"
+              className="transition hover:text-[var(--g-700)]"
+            >
               Privacy
             </Link>
-            <Link href="/cookiebeleid" className="transition hover:text-[var(--g-700)]">
+            <Link
+              href="/cookiebeleid"
+              className="transition hover:text-[var(--g-700)]"
+            >
               Cookies
             </Link>
             {DIBA_INSTAGRAM_URL ? (

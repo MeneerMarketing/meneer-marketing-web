@@ -29,16 +29,16 @@ export default function VergoedingenPage() {
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: PAGE_DEFAULTS.siteUrl },
-          { name: "Vergoedingen", url: `${PAGE_DEFAULTS.siteUrl}/vergoedingen` },
+          {
+            name: "Vergoedingen",
+            url: `${PAGE_DEFAULTS.siteUrl}/vergoedingen`,
+          },
         ])}
       />
 
       <section className={`${figmaInnerContainer} ${figmaSection}`} data-reveal>
         <FigmaBreadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Vergoedingen" },
-          ]}
+          items={[{ label: "Home", href: "/" }, { label: "Vergoedingen" }]}
         />
         <p className={figmaLabel}>Vergoedingen</p>
         <FigmaHeading
@@ -54,7 +54,10 @@ export default function VergoedingenPage() {
         </p>
       </section>
 
-      <section className={`${figmaInnerContainer} ${figmaSectionTight}`} data-reveal>
+      <section
+        className={`${figmaInnerContainer} ${figmaSectionTight}`}
+        data-reveal
+      >
         <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
           {INSURERS.map((v) => (
             <li key={v.slug}>

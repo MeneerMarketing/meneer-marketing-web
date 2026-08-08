@@ -180,8 +180,22 @@ export default function AcneOnderDeHuid() {
             className="transition-opacity duration-700 motion-reduce:transition-none"
             opacity={ontstoken ? 1 : 0}
           >
-            <ellipse cx="210" cy="130" rx="70" ry="62" fill="var(--error)" opacity="0.10" />
-            <ellipse cx="210" cy="130" rx="48" ry="44" fill="var(--error)" opacity="0.14" />
+            <ellipse
+              cx="210"
+              cy="130"
+              rx="70"
+              ry="62"
+              fill="var(--error)"
+              opacity="0.10"
+            />
+            <ellipse
+              cx="210"
+              cy="130"
+              rx="48"
+              ry="44"
+              fill="var(--error)"
+              opacity="0.14"
+            />
             {/* De zwelling boven het oppervlak */}
             <path
               d="M170 70 C176 40 244 40 250 70 Z"
@@ -223,7 +237,12 @@ export default function AcneOnderDeHuid() {
       </div>
 
       {/* ── De uitleg ── */}
-      <div id="stadium-paneel" role="tabpanel" aria-live="polite" className="flex flex-col">
+      <div
+        id="stadium-paneel"
+        role="tabpanel"
+        aria-live="polite"
+        className="flex flex-col"
+      >
         <h3 className="diba-card-title-lg">{stadium.naam}</h3>
 
         <dl className="mt-6 space-y-6">

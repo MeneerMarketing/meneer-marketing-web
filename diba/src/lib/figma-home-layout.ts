@@ -16,7 +16,7 @@ export const figmaHomeShell =
 
 
 
-export const figmaContainer = "mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]";
+export const figmaContainer = "mx-auto px-5 sm:px-9 lg:px-[7.5vw]";
 
 
 

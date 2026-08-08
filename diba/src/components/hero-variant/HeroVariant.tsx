@@ -80,8 +80,8 @@ export default function HeroVariant() {
               </h1>
 
               <p className="mt-5 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Elke behandeling begint met een meting onder vast licht. Daarna hoor je wat
-                er realistisch mogelijk is, en soms is dat niets.
+                Elke behandeling begint met een meting onder vast licht. Daarna
+                hoor je wat er realistisch mogelijk is, en soms is dat niets.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -129,14 +129,16 @@ export default function HeroVariant() {
       </section>
 
       {/* ── Klinische verantwoording ── */}
-      <div className="mx-auto flex max-w-[1800px] flex-wrap items-center gap-x-3 gap-y-1 px-5 py-6 sm:px-9 lg:px-[7.5vw]">
+      <div className="mx-auto flex flex-wrap items-center gap-x-3 gap-y-1 px-5 py-6 sm:px-9 lg:px-[7.5vw]">
         <span className="text-[14px] leading-6 text-[var(--t-muted)]">
           De medische inhoud op deze site wordt nagekeken door
         </span>
         <span className="text-[14px] leading-6 font-medium text-[var(--t-strong)] underline decoration-[var(--g-300)] underline-offset-4">
           Rojda
         </span>
-        <span className="diba-label text-[var(--t-muted)]">Nog vast te leggen</span>
+        <span className="diba-label text-[var(--t-muted)]">
+          Nog vast te leggen
+        </span>
       </div>
     </div>
   );

@@ -69,10 +69,13 @@ export default function MoedervlekkenPage() {
       {/* ── Hero ──
           Geen beeld naast de kop. Op deze pagina zou een sfeerfoto van een behandeling
           precies het verkeerde suggereren, namelijk dat je hiermee bij ons terechtkunt. */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -91,15 +94,15 @@ export default function MoedervlekkenPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wij beoordelen geen moedervlekken en we verwijderen ze niet. Dat hoort bij je
-              huisarts of een dermatoloog, want daar hebben ze de apparatuur en de opleiding
-              waar dit om vraagt.
+              Wij beoordelen geen moedervlekken en we verwijderen ze niet. Dat
+              hoort bij je huisarts of een dermatoloog, want daar hebben ze de
+              apparatuur en de opleiding waar dit om vraagt.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wat we wel doen is je vertellen waar je op let. Je ligt bij ons op de stoel
-              met je huid in beeld, dus je stelt de vraag toch. Dan liever een goed antwoord
-              dan een ontwijkend.
+              Wat we wel doen is je vertellen waar je op let. Je ligt bij ons op
+              de stoel met je huid in beeld, dus je stelt de vraag toch. Dan
+              liever een goed antwoord dan een ontwijkend.
             </p>
 
             <div className="mt-9">
@@ -112,12 +115,12 @@ export default function MoedervlekkenPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>Het korte antwoord</Label>
             <p className="diba-card-title-lg mt-5">
-              Verandert er iets aan een plekje, dan ga je naar de huisarts. Niet naar een
-              kliniek, niet naar een app, en niet naar ons.
+              Verandert er iets aan een plekje, dan ga je naar de huisarts. Niet
+              naar een kliniek, niet naar een app, en niet naar ons.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Dat kost je een consult. Het alternatief is een oordeel van iemand die het
-              niet mag geven, en dat is het niet waard.
+              Dat kost je een consult. Het alternatief is een oordeel van iemand
+              die het niet mag geven, en dat is het niet waard.
             </p>
           </div>
         </div>
@@ -132,7 +135,7 @@ export default function MoedervlekkenPage() {
         id="check"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De ABCDE-check"
             kop="Zes dingen"
@@ -161,7 +164,7 @@ export default function MoedervlekkenPage() {
       {/* ── Afsluiting zonder afspraakknop ──
           Waar op elke andere pagina de intake staat, staat hier de huisarts. */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[20ch]">
             Naar je huisarts.
@@ -169,10 +172,11 @@ export default function MoedervlekkenPage() {
             <span className="diba-accent">Daar houdt het bij ons op.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina expres nergens een knop om bij ons een afspraak te
-            maken. Kom je voor iets anders en zit er een moedervlek in het gebied, dan
-            dekken we die af en gaan we verder. Kom je voor de moedervlek zelf, dan sturen
-            we je door voordat je bent gaan zitten.
+            Er staat op deze pagina expres nergens een knop om bij ons een
+            afspraak te maken. Kom je voor iets anders en zit er een moedervlek
+            in het gebied, dan dekken we die af en gaan we verder. Kom je voor
+            de moedervlek zelf, dan sturen we je door voordat je bent gaan
+            zitten.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

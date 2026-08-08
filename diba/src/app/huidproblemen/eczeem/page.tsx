@@ -62,10 +62,13 @@ export default function EczeemPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -84,15 +87,16 @@ export default function EczeemPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Jeuk geeft krabben, krabben breekt je barrière, een kapotte barrière laat
-              meer prikkels door, en die geven weer jeuk. Wie alleen naar de plek kijkt,
-              behandelt één punt van een lus die daarna gewoon doordraait.
+              Jeuk geeft krabben, krabben breekt je barrière, een kapotte
+              barrière laat meer prikkels door, en die geven weer jeuk. Wie
+              alleen naar de plek kijkt, behandelt één punt van een lus die
+              daarna gewoon doordraait.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Eczeem hoort bij je huisarts. Wij kunnen op precies één punt van die cirkel
-              iets betekenen, en het is eerlijker om te laten zien welk punt dat is dan om
-              te doen alsof we de rest ook kunnen.
+              Eczeem hoort bij je huisarts. Wij kunnen op precies één punt van
+              die cirkel iets betekenen, en het is eerlijker om te laten zien
+              welk punt dat is dan om te doen alsof we de rest ook kunnen.
             </p>
 
             <div className="mt-9">
@@ -103,12 +107,12 @@ export default function EczeemPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>Het korte antwoord</Label>
             <p className="diba-card-title-lg mt-5">
-              Jeuk die je uit je slaap houdt, kloofjes, of plekken die steeds terugkomen op
-              dezelfde plaats: dat is een reden voor de huisarts.
+              Jeuk die je uit je slaap houdt, kloofjes, of plekken die steeds
+              terugkomen op dezelfde plaats: dat is een reden voor de huisarts.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Er bestaat behandeling voor, en die begint daar. Hoe langer de cirkel draait,
-              hoe moeilijker hij te doorbreken is.
+              Er bestaat behandeling voor, en die begint daar. Hoe langer de
+              cirkel draait, hoe moeilijker hij te doorbreken is.
             </p>
           </div>
         </div>
@@ -123,7 +127,7 @@ export default function EczeemPage() {
         id="cirkel"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De krabcirkel"
             kop="Vier schakels,"
@@ -135,8 +139,11 @@ export default function EczeemPage() {
       </section>
 
       {/* ── Of is het iets anders ── */}
-      <section id="verwar" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="verwar"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Of is het iets anders"
             kop="Drie dingen die"
@@ -180,7 +187,7 @@ export default function EczeemPage() {
 
       {/* ── Afsluiting zonder afspraakknop ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
             Naar je huisarts.
@@ -188,9 +195,10 @@ export default function EczeemPage() {
             <span className="diba-accent">Wij zijn hooguit een schakel.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina bewust geen knop om bij ons een afspraak te maken.
-            Heb je naast eczeem iets anders waar je wél iets aan wilt doen, en is je huid
-            op dat moment rustig, dan kijken we graag mee. Anders sturen we je door.
+            Er staat op deze pagina bewust geen knop om bij ons een afspraak te
+            maken. Heb je naast eczeem iets anders waar je wél iets aan wilt
+            doen, en is je huid op dat moment rustig, dan kijken we graag mee.
+            Anders sturen we je door.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

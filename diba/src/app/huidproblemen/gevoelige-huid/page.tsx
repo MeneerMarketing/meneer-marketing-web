@@ -22,7 +22,11 @@ import {
   GEVOELIG_WIJ_DOEN_NIET,
 } from "@/data/gevoelige-huid";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Gevoelige huid — elfde eigen pagina.
@@ -68,10 +72,13 @@ export default function GevoeligeHuidPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -90,14 +97,14 @@ export default function GevoeligeHuidPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Een huid die jarenlang alles verdroeg en het opeens niet meer doet, is zelden
-              veranderd van aanleg. Er is meestal iets bij gekomen, en daarna nog iets, en
-              alles werkt op dezelfde barrière.
+              Een huid die jarenlang alles verdroeg en het opeens niet meer
+              doet, is zelden veranderd van aanleg. Er is meestal iets bij
+              gekomen, en daarna nog iets, en alles werkt op dezelfde barrière.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je ziet dat niet, omdat je het per product bekijkt en niet bij elkaar optelt.
-              Hieronder tellen we het wel op.
+              Je ziet dat niet, omdat je het per product bekijkt en niet bij
+              elkaar optelt. Hieronder tellen we het wel op.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -136,7 +143,7 @@ export default function GevoeligeHuidPage() {
         id="teller"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De stapelteller"
             kop="Vink aan wat je"
@@ -148,8 +155,11 @@ export default function GevoeligeHuidPage() {
       </section>
 
       {/* ── Als het de routine niet is ─────────────────────────────────── */}
-      <section id="anders" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="anders"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Als het dat niet is"
             kop="Vier aandoeningen"
@@ -177,9 +187,10 @@ export default function GevoeligeHuidPage() {
           <div className="mt-6 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
             <Label>Wanneer je naar de huisarts gaat</Label>
             <p className="mt-3 max-w-[70ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Bij jeuk die je uit je slaap houdt, bij kloofjes of wondjes, bij plekken die
-              niet weggaan of steeds terugkomen op dezelfde plaats. Dat is geen gevoelige
-              huid meer en daar zijn wij niet de juiste plek voor.
+              Bij jeuk die je uit je slaap houdt, bij kloofjes of wondjes, bij
+              plekken die niet weggaan of steeds terugkomen op dezelfde plaats.
+              Dat is geen gevoelige huid meer en daar zijn wij niet de juiste
+              plek voor.
             </p>
           </div>
         </div>

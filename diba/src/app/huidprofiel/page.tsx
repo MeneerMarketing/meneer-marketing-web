@@ -46,8 +46,11 @@ export default function HuidprofielPage() {
           className="pointer-events-none absolute top-14 right-20 hidden h-[180px] w-[180px] rotate-12 text-[var(--g-200)] lg:block"
         />
 
-        <div className="relative mx-auto max-w-[1800px] px-5 pt-12 pb-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
-          <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+        <div className="relative mx-auto px-5 pt-12 pb-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label flex flex-wrap gap-2"
+          >
             <Link href="/" className="hover:text-[var(--g-700)]">
               Home
             </Link>
@@ -62,20 +65,22 @@ export default function HuidprofielPage() {
           </h1>
 
           <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            De meeste vragen hieronder gaan niet over wat je wil, maar over wat er kán.
-            Retinol, zwangerschap, een gebruinde huid, medicatie. Dat komt in een kliniek
-            meestal pas aan de balie boven tafel, en dan gaat de afspraak niet door.
+            De meeste vragen hieronder gaan niet over wat je wil, maar over wat
+            er kán. Retinol, zwangerschap, een gebruinde huid, medicatie. Dat
+            komt in een kliniek meestal pas aan de balie boven tafel, en dan
+            gaat de afspraak niet door.
           </p>
           <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Hier weet je het vooraf. En je profiel loopt mee: op de behandelingenpagina
-            staat daarna bovenaan wat bij je past, en bij de rest waarom niet.
+            Hier weet je het vooraf. En je profiel loopt mee: op de
+            behandelingenpagina staat daarna bovenaan wat bij je past, en bij de
+            rest waarom niet.
           </p>
         </div>
       </section>
 
       {/* ── De acht stappen ── */}
       <section className="bg-[var(--g-025)] px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <ProfielBouwer />
         </div>
       </section>

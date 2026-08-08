@@ -122,7 +122,10 @@ export default function HetZonjaar() {
         {/* Legenda: verklaart de kleuren zonder dat je erop moet klikken. */}
         <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-[var(--g-100)] pt-5">
           {(["goed", "kan", "liever-niet"] as const).map((k) => (
-            <span key={k} className="diba-label flex items-center gap-2 text-[var(--t-muted)]">
+            <span
+              key={k}
+              className="diba-label flex items-center gap-2 text-[var(--t-muted)]"
+            >
               <span
                 className="h-2.5 w-2.5 rounded-[var(--r-pill)]"
                 style={{ background: STAAF_KLEUR[k] }}
@@ -157,15 +160,17 @@ export default function HetZonjaar() {
         </div>
 
         <div className="rounded-[var(--r-md)] bg-[var(--g-075)] p-6 sm:p-8">
-          <Label className={ADVIES_TEKSTKLEUR[maand.start]}>{ADVIES_LABEL[maand.start]}</Label>
+          <Label className={ADVIES_TEKSTKLEUR[maand.start]}>
+            {ADVIES_LABEL[maand.start]}
+          </Label>
           <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
             {maand.startAdvies}
           </p>
 
           {maand.start === "liever-niet" ? (
             <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
-              We zeggen dit ook aan de telefoon. Je mag wel nu al de nulmeting doen, dan
-              staan we in september klaar met een vertrekpunt.
+              We zeggen dit ook aan de telefoon. Je mag wel nu al de nulmeting
+              doen, dan staan we in september klaar met een vertrekpunt.
             </p>
           ) : null}
 
@@ -174,7 +179,9 @@ export default function HetZonjaar() {
             variant={maand.start === "liever-niet" ? "secundair" : "primair"}
             className="mt-6"
           >
-            {maand.start === "liever-niet" ? "Alleen de nulmeting doen" : "Plan je nulmeting"}
+            {maand.start === "liever-niet"
+              ? "Alleen de nulmeting doen"
+              : "Plan je nulmeting"}
           </Button>
         </div>
       </div>

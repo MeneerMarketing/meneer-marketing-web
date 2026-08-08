@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ReviewsTemplate from "@/components/templates/ReviewsTemplate";
-import { DIBA_PROOF_STRIP_ITEMS } from "@/lib/site";
+import { DIBA_HOME_PROOF_ITEMS } from "@/lib/site";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 
 export const metadata: Metadata = {
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function ReviewsPage() {
-  return <ReviewsTemplate proofItems={[...DIBA_PROOF_STRIP_ITEMS]} />;
+  return <ReviewsTemplate proofItems={DIBA_HOME_PROOF_ITEMS} />;
 }

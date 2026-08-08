@@ -1,6 +1,6 @@
 /** Layout + typografie voor inner pages in Figma-home stijl. */
 
-export const figmaInnerContainer = "mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]";
+export const figmaInnerContainer = "mx-auto px-5 sm:px-9 lg:px-[7.5vw]";
 
 export const figmaSection = "py-20 lg:py-28";
 

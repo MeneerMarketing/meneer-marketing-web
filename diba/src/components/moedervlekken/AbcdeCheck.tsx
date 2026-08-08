@@ -32,7 +32,10 @@ import { publicCopy } from "@/lib/copy-flags";
 type Keuze = "rustig" | "opvallend";
 type Antwoorden = Record<string, Keuze>;
 
-const PUNTEN: readonly (Criterium | typeof LELIJK_EENDJE)[] = [...ABCDE, LELIJK_EENDJE];
+const PUNTEN: readonly (Criterium | typeof LELIJK_EENDJE)[] = [
+  ...ABCDE,
+  LELIJK_EENDJE,
+];
 
 function sleutel(p: (typeof PUNTEN)[number]) {
   return "letter" in p ? p.letter : "eend";
@@ -52,7 +55,15 @@ const GEKARTELD = Array.from({ length: 18 }, (_, i) => {
  * dat punt gáát over kleur. Zou je de opvallende variant overal oker maken, dan leert de
  * tekening je "oker is fout" in plaats van waar je op moet letten.
  */
-function Vorm({ punt, variant, uid }: { punt: string; variant: Keuze; uid: string }) {
+function Vorm({
+  punt,
+  variant,
+  uid,
+}: {
+  punt: string;
+  variant: Keuze;
+  uid: string;
+}) {
   const opvallend = variant === "opvallend";
   const vulling = "var(--t-strong)";
   const dekking = 0.45;
@@ -107,9 +118,30 @@ function Vorm({ punt, variant, uid }: { punt: string; variant: Keuze; uid: strin
           <circle cx="40" cy="40" r="24" fill={vulling} fillOpacity={dekking} />
           {opvallend ? (
             <g clipPath={`url(#${knipId})`}>
-              <rect x="16" y="16" width="48" height="26" fill="var(--t-strong)" opacity="0.75" />
-              <ellipse cx="52" cy="54" rx="14" ry="11" fill="var(--warn)" opacity="0.95" />
-              <ellipse cx="26" cy="52" rx="8" ry="7" fill="white" opacity="0.85" />
+              <rect
+                x="16"
+                y="16"
+                width="48"
+                height="26"
+                fill="var(--t-strong)"
+                opacity="0.75"
+              />
+              <ellipse
+                cx="52"
+                cy="54"
+                rx="14"
+                ry="11"
+                fill="var(--warn)"
+                opacity="0.95"
+              />
+              <ellipse
+                cx="26"
+                cy="52"
+                rx="8"
+                ry="7"
+                fill="white"
+                opacity="0.85"
+              />
             </g>
           ) : null}
         </>
@@ -134,8 +166,22 @@ function Vorm({ punt, variant, uid }: { punt: string; variant: Keuze; uid: strin
             strokeWidth="2"
             strokeLinecap="round"
           />
-          <line x1="12" y1="68" x2="12" y2="76" stroke="var(--g-300)" strokeWidth="2" />
-          <line x1="68" y1="68" x2="68" y2="76" stroke="var(--g-300)" strokeWidth="2" />
+          <line
+            x1="12"
+            y1="68"
+            x2="12"
+            y2="76"
+            stroke="var(--g-300)"
+            strokeWidth="2"
+          />
+          <line
+            x1="68"
+            y1="68"
+            x2="68"
+            y2="76"
+            stroke="var(--g-300)"
+            strokeWidth="2"
+          />
         </>
       ) : null}
 
@@ -190,7 +236,9 @@ export default function AbcdeCheck() {
   const uid = useId().replace(/:/g, "");
 
   const beantwoord = Object.keys(antwoorden).length;
-  const opvallend = Object.values(antwoorden).filter((a) => a === "opvallend").length;
+  const opvallend = Object.values(antwoorden).filter(
+    (a) => a === "opvallend",
+  ).length;
   const compleet = beantwoord === PUNTEN.length;
   const uitkomst = opvallend > 0 ? UITKOMST_WEL : UITKOMST_GEEN;
 
@@ -217,7 +265,9 @@ export default function AbcdeCheck() {
                       key={variant}
                       type="button"
                       aria-pressed={actief}
-                      onClick={() => setAntwoorden((v) => ({ ...v, [k]: variant }))}
+                      onClick={() =>
+                        setAntwoorden((v) => ({ ...v, [k]: variant }))
+                      }
                       className={`flex items-center gap-4 rounded-[var(--r-sm)] border p-4 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                         actief
                           ? "border-[var(--g-300)] bg-[var(--g-050)]"
@@ -242,19 +292,24 @@ export default function AbcdeCheck() {
       </ul>
 
       {/* ── De uitkomst ── */}
-      <div className="mt-8 rounded-[var(--r-md)] bg-[var(--g-050)] p-7 sm:p-9" aria-live="polite">
+      <div
+        className="mt-8 rounded-[var(--r-md)] bg-[var(--g-050)] p-7 sm:p-9"
+        aria-live="polite"
+      >
         {!compleet ? (
           <>
             <Label>{`${beantwoord} van ${PUNTEN.length} beantwoord`}</Label>
             <p className="mt-4 max-w-[70ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Loop de punten hierboven langs. Wat je ook invult, de uitkomst van deze check
-              is nooit een oordeel over jouw plekje: hij helpt je alleen te bepalen of je
-              ermee naar de huisarts gaat.
+              Loop de punten hierboven langs. Wat je ook invult, de uitkomst van
+              deze check is nooit een oordeel over jouw plekje: hij helpt je
+              alleen te bepalen of je ermee naar de huisarts gaat.
             </p>
           </>
         ) : (
           <>
-            <Label className={opvallend > 0 ? "text-[var(--warn-text)]" : undefined}>
+            <Label
+              className={opvallend > 0 ? "text-[var(--warn-text)]" : undefined}
+            >
               {opvallend > 0
                 ? `${opvallend} van ${PUNTEN.length} punten vielen op`
                 : "Geen van de punten viel op"}
@@ -278,9 +333,10 @@ export default function AbcdeCheck() {
       </div>
 
       <p className="mt-5 max-w-[80ch] text-sm leading-6 text-[var(--t-muted)]">
-        Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien wat een arts
-        met een dermatoscoop wel ziet, en hij kan dus ook niets uitsluiten. Bij twijfel geldt
-        altijd hetzelfde advies: laat het nakijken.
+        Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien
+        wat een arts met een dermatoscoop wel ziet, en hij kan dus ook niets
+        uitsluiten. Bij twijfel geldt altijd hetzelfde advies: laat het
+        nakijken.
       </p>
     </div>
   );

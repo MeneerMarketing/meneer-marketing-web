@@ -62,7 +62,11 @@ export default function WatBegintWanneer() {
   return (
     <div className="mt-12">
       {/* Fasekiezer. Tikken, geen schuiven: dit zijn losse fases en geen doorlopende as. */}
-      <div role="tablist" aria-label="Levensfase" className="flex flex-wrap gap-2">
+      <div
+        role="tablist"
+        aria-label="Levensfase"
+        className="flex flex-wrap gap-2"
+      >
         {FASES.map((f, i) => (
           <button
             key={f.id}
@@ -72,7 +76,7 @@ export default function WatBegintWanneer() {
             onClick={() => setIndex(i)}
             className={`diba-label min-h-12 rounded-[var(--r-pill)] px-5 transition-colors ${
               i === index
-                ? "bg-[var(--g-700)] text-[var(--on-dark-label)]"
+                ? "diba-pill-active"
                 : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
             } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
           >
@@ -104,18 +108,24 @@ export default function WatBegintWanneer() {
                       <span
                         key={s}
                         className={`h-2 w-10 rounded-[var(--r-pill)] transition-colors duration-300 motion-reduce:transition-none ${
-                          s < gevuld ? BRON_VULLING[p.bron] : "bg-[var(--g-100)]"
+                          s < gevuld
+                            ? BRON_VULLING[p.bron]
+                            : "bg-[var(--g-100)]"
                         }`}
                       />
                     ))}
                   </div>
-                  <span className="text-sm text-[var(--t-muted)]">{STAND_TEKST[stand]}</span>
+                  <span className="text-sm text-[var(--t-muted)]">
+                    {STAND_TEKST[stand]}
+                  </span>
                 </div>
 
                 <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
                   {publicCopy(p.uitleg)}
                 </p>
-                <p className="diba-label mt-2 text-[var(--t-muted)]">{p.vakterm}</p>
+                <p className="diba-label mt-2 text-[var(--t-muted)]">
+                  {p.vakterm}
+                </p>
               </li>
             );
           })}
@@ -125,14 +135,16 @@ export default function WatBegintWanneer() {
         <div aria-live="polite" className="lg:sticky lg:top-24 lg:self-start">
           <Label>Wat wij hier zouden zeggen</Label>
           <h3 className="diba-card-title-lg mt-4">{advies.kop}</h3>
-          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">{advies.tekst}</p>
+          <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+            {advies.tekst}
+          </p>
 
           <div className="mt-8 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
             <Label>Waarom de kleur ertoe doet</Label>
             <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-              Tel de okeren balkjes. Dat is het deel van wat je ziet dat door zon komt, en
-              daarmee het deel waar vandaag nog iets aan te doen valt. De groene balkjes
-              lopen door wat je ook kiest.
+              Tel de okeren balkjes. Dat is het deel van wat je ziet dat door
+              zon komt, en daarmee het deel waar vandaag nog iets aan te doen
+              valt. De groene balkjes lopen door wat je ook kiest.
             </p>
           </div>
         </div>

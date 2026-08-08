@@ -8,7 +8,8 @@ type FigmaHeadingProps = {
 
 const sizeClasses = {
   hero: "text-[clamp(2.35rem,5vw,4.25rem)] font-medium leading-[.93] tracking-[-.065em] sm:text-6xl lg:text-[4.25rem]",
-  section: "text-3xl font-medium leading-[.98] tracking-[-.06em] sm:text-4xl lg:text-5xl",
+  section:
+    "text-3xl font-medium leading-[.98] tracking-[-.06em] sm:text-4xl lg:text-5xl",
   card: "text-xl font-medium tracking-[-.04em] sm:text-2xl",
 } as const;
 

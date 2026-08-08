@@ -11,6 +11,7 @@ export type ReviewCardProps = {
   treatment: string;
   /** 1 t/m 5 */
   stars: number;
+  relativeDate?: string;
 };
 
 function Star({ filled }: { filled: boolean }) {
@@ -29,7 +30,13 @@ function Star({ filled }: { filled: boolean }) {
   );
 }
 
-export default function ReviewCard({ quote, name, treatment, stars }: ReviewCardProps) {
+export default function ReviewCard({
+  quote,
+  name,
+  treatment,
+  stars,
+  relativeDate,
+}: ReviewCardProps) {
   const n = Math.max(1, Math.min(5, Math.round(stars)));
   return (
     <figure className="rounded-[1.5rem] border border-[#dce8d9] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
@@ -40,8 +47,22 @@ export default function ReviewCard({ quote, name, treatment, stars }: ReviewCard
       </blockquote>
       <figcaption className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
         <span className="text-[13px] font-medium text-[#17372a]">{name}</span>
-        <span aria-hidden="true" className="h-1 w-1 rounded-full bg-[#dce8d9]" />
+        <span
+          aria-hidden="true"
+          className="h-1 w-1 rounded-full bg-[#dce8d9]"
+        />
         <span className="text-[13px] text-[#5f7765]">{treatment}</span>
+        {relativeDate ? (
+          <>
+            <span
+              aria-hidden="true"
+              className="h-1 w-1 rounded-full bg-[#dce8d9]"
+            />
+            <span className="text-[11px] uppercase tracking-[.1em] text-[#8aa88f]">
+              {relativeDate}
+            </span>
+          </>
+        ) : null}
         <span
           className="ml-auto inline-flex gap-[3px]"
           role="img"

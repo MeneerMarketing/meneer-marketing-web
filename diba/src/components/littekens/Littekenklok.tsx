@@ -47,7 +47,9 @@ export default function Littekenklok() {
       {/* ── De tekening plus de schuifbalk ──
           De klasse van de fase zet --fase-kleur, en die stuurt zowel de tekening als
           de schuifbalk aan. Eén bron, dus ze kunnen niet uit elkaar lopen. */}
-      <div className={`rounded-[var(--r-md)] bg-white p-6 sm:p-8 ${fase.kleurKlasse}`}>
+      <div
+        className={`rounded-[var(--r-md)] bg-white p-6 sm:p-8 ${fase.kleurKlasse}`}
+      >
         <svg
           viewBox="0 0 320 190"
           className="w-full"
@@ -55,7 +57,14 @@ export default function Littekenklok() {
           aria-label={`Schematische huid met een litteken en striae, kleur passend bij: ${fase.label}`}
         >
           {/* Huidvlak, neutraal en abstract. Geen huidtint van een persoon. */}
-          <rect x="10" y="10" width="300" height="170" rx="20" fill="var(--g-050)" />
+          <rect
+            x="10"
+            y="10"
+            width="300"
+            height="170"
+            rx="20"
+            fill="var(--g-050)"
+          />
 
           {/* Het litteken: een getapete streep.
               Eronder een vaste, iets bredere halo. Zonder die halo verdwijnt de vorm
@@ -157,7 +166,9 @@ export default function Littekenklok() {
                 // de hele fase.
                 aria-label={f.label}
                 className={`diba-label min-h-12 flex-1 px-1 text-center transition-colors ${
-                  i === index ? "text-[var(--t-strong)]" : "text-[var(--t-muted)]"
+                  i === index
+                    ? "text-[var(--t-strong)]"
+                    : "text-[var(--t-muted)]"
                 } hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
               >
                 {/* Vijf volle labels naast elkaar breken op mobiel in drie regels en
@@ -173,8 +184,12 @@ export default function Littekenklok() {
         {/* Het venster: krimpt zichtbaar naarmate je verder schuift. */}
         <div className="mt-6 border-t border-[var(--g-100)] pt-5">
           <div className="flex items-baseline justify-between gap-4">
-            <Label className={VENSTER_TEKSTKLEUR[fase.venster]}>{venster.kop}</Label>
-            <span className="text-sm leading-6 text-[var(--t-muted)]">{venster.tekst}</span>
+            <Label className={VENSTER_TEKSTKLEUR[fase.venster]}>
+              {venster.kop}
+            </Label>
+            <span className="text-sm leading-6 text-[var(--t-muted)]">
+              {venster.tekst}
+            </span>
           </div>
           <div className="mt-3 h-2 w-full rounded-[var(--r-pill)] bg-[var(--g-100)]">
             <div
@@ -225,8 +240,8 @@ export default function Littekenklok() {
         </div>
 
         <p className="mt-6 text-sm leading-6 text-[var(--t-muted)]">
-          Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent jong,
-          wit betekent oud. Dat is nauwkeuriger dan je geheugen.
+          Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent
+          jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.
         </p>
       </div>
     </div>

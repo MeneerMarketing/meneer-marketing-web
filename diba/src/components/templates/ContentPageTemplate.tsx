@@ -106,7 +106,7 @@ export default function ContentPageTemplate({
       {whatsappHref ? (
         <section className="px-5 pb-24 sm:px-9 lg:px-[7.5vw]" data-reveal>
           <div
-            className={`mx-auto max-w-[1800px] ${figmaCardSoft} flex flex-col items-center gap-4 px-7 py-12 text-center sm:px-10`}
+            className={`mx-auto ${figmaCardSoft} flex flex-col items-center gap-4 px-7 py-12 text-center sm:px-10`}
           >
             <p className="max-w-md text-[15px] leading-7 text-[#5f7765]">
               Twijfel je nog? Stel je vraag via WhatsApp. Je krijgt antwoord van

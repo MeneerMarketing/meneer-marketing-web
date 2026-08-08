@@ -251,7 +251,7 @@ export default function ProfielBouwer() {
     <div>
       {/* ── Voortgang ── */}
       <div className="sticky top-[var(--nav-h)] z-20 -mx-5 mb-10 border-b border-[var(--g-100)] bg-[var(--g-010)]/95 px-5 py-4 backdrop-blur sm:-mx-9 sm:px-9 lg:-mx-[7.5vw] lg:px-[7.5vw]">
-        <div className="mx-auto flex max-w-[1800px] flex-wrap items-center justify-between gap-x-8 gap-y-3">
+        <div className="mx-auto flex flex-wrap items-center justify-between gap-x-8 gap-y-3">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1" aria-hidden="true">
               {Array.from({ length: PROFIEL_ONDERDELEN }, (_, i) => (

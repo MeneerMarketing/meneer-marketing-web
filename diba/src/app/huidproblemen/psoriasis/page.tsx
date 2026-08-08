@@ -60,10 +60,13 @@ export default function PsoriasisPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -82,14 +85,15 @@ export default function PsoriasisPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Psoriasis is een aandoening van je afweersysteem die zich in de huid laat
-              zien. Dat verschil is niet academisch: het verklaart waarom een crème de plek
-              aanpakt en niet de oorzaak.
+              Psoriasis is een aandoening van je afweersysteem die zich in de
+              huid laat zien. Dat verschil is niet academisch: het verklaart
+              waarom een crème de plek aanpakt en niet de oorzaak.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Het verklaart ook waarom je nagels en je gewrichten erbij horen. Die worden
-              het vaakst gemist, en bij gewrichten kost dat je iets dat niet terugkomt.
+              Het verklaart ook waarom je nagels en je gewrichten erbij horen.
+              Die worden het vaakst gemist, en bij gewrichten kost dat je iets
+              dat niet terugkomt.
             </p>
 
             <div className="mt-9">
@@ -100,13 +104,13 @@ export default function PsoriasisPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>Waar je niet mee wacht</Label>
             <p className="diba-card-title-lg mt-5">
-              Stijve gewrichten in de ochtend, gezwollen vingers of tenen, of rugpijn die
-              beter wordt van bewegen. Noem dat bij je huisarts, ook als je huidplekken
-              meevallen.
+              Stijve gewrichten in de ochtend, gezwollen vingers of tenen, of
+              rugpijn die beter wordt van bewegen. Noem dat bij je huisarts, ook
+              als je huidplekken meevallen.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Schade aan een gewricht is blijvend. Dit is het enige onderdeel waar op tijd
-              zijn echt iets verandert.
+              Schade aan een gewricht is blijvend. Dit is het enige onderdeel
+              waar op tijd zijn echt iets verandert.
             </p>
           </div>
         </div>
@@ -121,7 +125,7 @@ export default function PsoriasisPage() {
         id="silhouet"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Meer dan huid"
             kop="Vier plekken,"
@@ -149,7 +153,7 @@ export default function PsoriasisPage() {
 
       {/* ── Afsluiting zonder afspraakknop ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
             Naar de huisarts,
@@ -157,9 +161,10 @@ export default function PsoriasisPage() {
             <span className="diba-accent">en die verwijst door.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina geen knop om bij ons een afspraak te maken. Neem je
-            nagels mee in dat gesprek en noem je gewrichten, ook als je er zelf weinig van
-            vindt. Dat zijn de twee dingen die het vaakst worden overgeslagen.
+            Er staat op deze pagina geen knop om bij ons een afspraak te maken.
+            Neem je nagels mee in dat gesprek en noem je gewrichten, ook als je
+            er zelf weinig van vindt. Dat zijn de twee dingen die het vaakst
+            worden overgeslagen.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

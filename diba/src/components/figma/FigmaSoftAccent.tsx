@@ -40,6 +40,11 @@ const varianten = {
   cta: "pointer-events-none absolute -right-14 -top-12 h-[240px] w-[240px] rotate-[188deg] text-[var(--g-800)]/45 sm:-right-16 sm:h-[320px] sm:w-[320px] lg:-right-20 lg:h-[400px] lg:w-[400px]",
 } as const;
 
-export default function FigmaSoftAccent({ variant, className = "" }: FigmaSoftAccentProps) {
-  return <DibaLeafMark className={`${varianten[variant]} ${className}`.trim()} />;
+export default function FigmaSoftAccent({
+  variant,
+  className = "",
+}: FigmaSoftAccentProps) {
+  return (
+    <DibaLeafMark className={`${varianten[variant]} ${className}`.trim()} />
+  );
 }

@@ -45,7 +45,7 @@ export default function LaserConfiguratorPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
@@ -119,7 +119,7 @@ export default function LaserConfiguratorPage() {
 
       {/* ── De configurator ── */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Suspense
             fallback={
               <p className="text-[15px] leading-7 text-[var(--t-body)]">
@@ -134,7 +134,7 @@ export default function LaserConfiguratorPage() {
 
       {/* ── Afsluiter ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Daarna</Label>
             <h2 className="diba-display-m mt-4 max-w-[20ch]">

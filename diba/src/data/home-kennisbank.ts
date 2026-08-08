@@ -26,7 +26,8 @@ export const HOME_KENNISBANK_ARTICLES: readonly KennisbankArticle[] = [
     id: "pigment",
     tag: "Pigment & melasma",
     title: "Pigment: een realistisch plan",
-    summary: "Waarom geduld en bescherming net zo belangrijk zijn als behandeling.",
+    summary:
+      "Waarom geduld en bescherming net zo belangrijk zijn als behandeling.",
     href: "/huidproblemen/pigmentvlekken",
     image: FIGMA_KENNISBANK_PIGMENT,
   },
@@ -34,7 +35,8 @@ export const HOME_KENNISBANK_ARTICLES: readonly KennisbankArticle[] = [
     id: "laser",
     tag: "Laserontharing",
     title: "Laserontharing uitgelegd",
-    summary: "Veiligheid, huidtype, zones en wat je per sessie kunt verwachten.",
+    summary:
+      "Veiligheid, huidtype, zones en wat je per sessie kunt verwachten.",
     href: "/laserontharing",
     image: FIGMA_KENNISBANK_LASER,
   },

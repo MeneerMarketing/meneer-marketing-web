@@ -40,9 +40,12 @@ export default function HuidverkleuringPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="py-14 lg:py-20">
-          <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label flex flex-wrap gap-2"
+          >
             <Link href="/" className="hover:text-[var(--g-700)]">
               Home
             </Link>
@@ -61,14 +64,14 @@ export default function HuidverkleuringPage() {
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Verkleuring is een verzamelwoord. Bruin is iets anders dan rood, en wit is weer
-            een heel ander verhaal. De kleur vertelt in welke laag het zit, en daarmee of er
-            iets aan te doen valt.
+            Verkleuring is een verzamelwoord. Bruin is iets anders dan rood, en
+            wit is weer een heel ander verhaal. De kleur vertelt in welke laag
+            het zit, en daarmee of er iets aan te doen valt.
           </p>
 
           <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Op deze pagina staat geen behandeling en geen prijs. Hij brengt je naar de
-            pagina die er wel over gaat, en soms is dat de huisarts.
+            Op deze pagina staat geen behandeling en geen prijs. Hij brengt je
+            naar de pagina die er wel over gaat, en soms is dat de huisarts.
           </p>
 
           <div className="mt-9">
@@ -84,7 +87,7 @@ export default function HuidverkleuringPage() {
         id="kleur"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De kleurwijzer"
             kop="Vier kleuren,"
@@ -99,7 +102,7 @@ export default function HuidverkleuringPage() {
 
       {/* ── Afsluiting ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px] lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
+        <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Weet je het nog niet</Label>
             <h2 className="diba-display-l mt-5 max-w-[16ch]">
@@ -110,11 +113,15 @@ export default function HuidverkleuringPage() {
           </div>
           <div className="mt-8 flex flex-col justify-end lg:mt-0">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Twijfel je tussen twee kleuren, of speelt er meer tegelijk? Dan is dat precies
-              de reden om het te laten bekijken in plaats van er zelf uit te komen.
+              Twijfel je tussen twee kleuren, of speelt er meer tegelijk? Dan is
+              dat precies de reden om het te laten bekijken in plaats van er
+              zelf uit te komen.
             </p>
             <div className="mt-7">
-              <Button href="/intake?topic=huidverkleuring" variant="primair-op-donker">
+              <Button
+                href="/intake?topic=huidverkleuring"
+                variant="primair-op-donker"
+              >
                 Plan de nulmeting
               </Button>
             </div>

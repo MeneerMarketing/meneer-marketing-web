@@ -52,7 +52,7 @@ export default function TeamPage() {
       />
 
       {/* ── Hero: de belofte van de apparatuurpagina's, hier ingelost ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
@@ -111,7 +111,7 @@ export default function TeamPage() {
 
       {/* ── De signatuur: welke titel is beschermd ── */}
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
               <div>
@@ -168,7 +168,7 @@ export default function TeamPage() {
 
       {/* ── De mensen, per vak ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px] space-y-14">
+        <div className="mx-auto space-y-14">
           {perVak.map((v) => (
             <div key={v.id}>
               <Label>
@@ -236,7 +236,7 @@ export default function TeamPage() {
 
       {/* ── Afsluiter ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Bij wie kom je terecht</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">

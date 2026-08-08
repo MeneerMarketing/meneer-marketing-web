@@ -685,7 +685,9 @@ body:has(.figma-home) {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: var(--diba-green-900);
-  transition: border-color var(--dur-micro) var(--ease-diba), color var(--dur-micro) var(--ease-diba);
+  transition:
+    border-color var(--dur-micro) var(--ease-diba),
+    color var(--dur-micro) var(--ease-diba);
 }
 
 .diba-hp-ghost-btn:hover {
@@ -1124,10 +1126,6 @@ html.js-reveal [data-reveal].is-visible {
     animation: none;
   }
 }
-
-
-
-
 
 /* ──────────────────────────────────────────────────────────────────────────
    Hero-variant: het menupaneel dat onder de navigatie uitklapt.

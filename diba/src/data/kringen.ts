@@ -85,8 +85,16 @@ export const TESTEN: readonly Test[] = [
     waarom:
       "Dan speelt vocht mee. Dat is geen aparte oorzaak maar het maakt elk van de andere drie tijdelijk erger, en het verklaart waarom je resultaat lijkt te schommelen.",
     antwoorden: [
-      { id: "ja", label: "Ja, het wisselt sterk", onder: "Sommige ochtenden veel erger" },
-      { id: "nee", label: "Nee, het is vrij constant", onder: "Elke dag ongeveer hetzelfde" },
+      {
+        id: "ja",
+        label: "Ja, het wisselt sterk",
+        onder: "Sommige ochtenden veel erger",
+      },
+      {
+        id: "nee",
+        label: "Nee, het is vrij constant",
+        onder: "Elke dag ongeveer hetzelfde",
+      },
     ],
   },
 ] as const;
@@ -114,8 +122,7 @@ export const UITKOMSTEN: Record<UitkomstId, Uitkomst> = {
     kunnenWij:
       "Niets zinvols. Een huidbehandeling verandert de vorm van je gezicht niet, en een lichtere huid maakt een schaduw niet ondieper. Dit hoort bij een arts, of bij niets doen.",
     wijHelpen: "nee",
-    zelf:
-      "Wat wél helpt is de richting van het licht: recht van voren, niet van bovenaf. Dat verklaart ook waarom je er op de ene foto uitgerust uitziet en op de andere niet.",
+    zelf: "Wat wél helpt is de richting van het licht: recht van voren, niet van bovenaf. Dat verklaart ook waarom je er op de ene foto uitgerust uitziet en op de andere niet.",
   },
   pigment: {
     id: "pigment",

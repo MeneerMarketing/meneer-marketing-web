@@ -12,12 +12,7 @@
  */
 
 export type ZoneId =
-  | "voorhoofd"
-  | "neus"
-  | "wangen"
-  | "kin"
-  | "kaaklijn"
-  | "rug";
+  "voorhoofd" | "neus" | "wangen" | "kin" | "kaaklijn" | "rug";
 
 export type Zone = {
   readonly id: ZoneId;
@@ -177,7 +172,9 @@ export function lees(gekozen: readonly ZoneId[]): Lezing {
 
   for (const regel of REGELS) {
     const heeftAlle = regel.vereist.every((z) => gekozen.includes(z));
-    const heeftGeenVerboden = (regel.zonder ?? []).every((z) => !gekozen.includes(z));
+    const heeftGeenVerboden = (regel.zonder ?? []).every(
+      (z) => !gekozen.includes(z),
+    );
     if (heeftAlle && heeftGeenVerboden) return regel.lezing;
   }
 

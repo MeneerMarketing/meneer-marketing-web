@@ -57,7 +57,9 @@ export default function PrivacyPage() {
         },
         {
           kop: "Cookies",
-          alineas: ["Zie ons cookiebeleid voor analytische cookies en uw keuze."],
+          alineas: [
+            "Zie ons cookiebeleid voor analytische cookies en uw keuze.",
+          ],
         },
       ]}
       primaireCta={{ label: "Terug naar home", href: "/" }}

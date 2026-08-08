@@ -13,7 +13,10 @@ import {
   type Review,
   type ReviewTopic,
 } from "@/data/reviews";
-import { SALONIZED_REVIEWS_URL, SALONIZED_REVIEW_SUMMARY } from "@/data/salonized-reviews";
+import {
+  SALONIZED_REVIEWS_URL,
+  SALONIZED_REVIEW_SUMMARY,
+} from "@/data/salonized-reviews";
 
 const PAGE_SIZE = 12;
 
@@ -27,7 +30,9 @@ type FigmaReviewsExperienceProps = {
   className?: string;
 };
 
-export default function FigmaReviewsExperience({ className = "" }: FigmaReviewsExperienceProps) {
+export default function FigmaReviewsExperience({
+  className = "",
+}: FigmaReviewsExperienceProps) {
   const [topic, setTopic] = useState<ReviewTopic>("alle");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [activeFeatured, setActiveFeatured] = useState(0);
@@ -129,7 +134,8 @@ export default function FigmaReviewsExperience({ className = "" }: FigmaReviewsE
                   {SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}
                 </p>
                 <p className="mt-2 text-[15px] text-[var(--on-dark-body)]">
-                  {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews · echt en openbaar
+                  {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews · echt en
+                  openbaar
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -178,7 +184,11 @@ export default function FigmaReviewsExperience({ className = "" }: FigmaReviewsE
               {pickFeaturedReviews(filtered)
                 .slice(0, 4)
                 .map((review) => (
-                  <FigmaReviewCard key={`hi-${review.id}`} review={review} variant="featured" />
+                  <FigmaReviewCard
+                    key={`hi-${review.id}`}
+                    review={review}
+                    variant="featured"
+                  />
                 ))}
             </div>
           </div>
@@ -192,7 +202,8 @@ export default function FigmaReviewsExperience({ className = "" }: FigmaReviewsE
             <div>
               <Label>Alle reviews</Label>
               <p className="mt-2 text-[15px] text-[var(--t-body)]">
-                {filtered.length} quote{filtered.length === 1 ? "" : "s"} op deze pagina
+                {filtered.length} quote{filtered.length === 1 ? "" : "s"} op
+                deze pagina
               </p>
             </div>
             <Link
@@ -207,13 +218,20 @@ export default function FigmaReviewsExperience({ className = "" }: FigmaReviewsE
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
             {visible.map((review) => (
-              <FigmaReviewCard key={review.id} review={review} variant="standard" />
+              <FigmaReviewCard
+                key={review.id}
+                review={review}
+                variant="standard"
+              />
             ))}
           </div>
 
           {hasMore ? (
             <div className="mt-12 flex justify-center">
-              <Button variant="secundair" onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}>
+              <Button
+                variant="secundair"
+                onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+              >
                 Meer laden ({filtered.length - visibleCount})
               </Button>
             </div>

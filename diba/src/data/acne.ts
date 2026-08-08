@@ -125,7 +125,8 @@ export const ACNE_STADIA: readonly Stadium[] = [
   {
     id: "talg",
     naam: "Talg",
-    merkbaar: "Je huid glanst sneller dan je wilt, vooral op je neus en voorhoofd.",
+    merkbaar:
+      "Je huid glanst sneller dan je wilt, vooral op je neus en voorhoofd.",
     uitleg:
       "De talgklier zit diep in de huid en maakt vet dat langs de haarschacht naar boven loopt. Onder invloed van hormonen maakt hij meer dan de huid kwijt kan. [MEDISCHE-CHECK-ROJDA]",
     ingrijpen:

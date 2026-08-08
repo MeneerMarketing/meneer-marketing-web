@@ -108,7 +108,7 @@ export default function Krabcirkel() {
                 style={{ left: `${POSITIES[i].x}%`, top: `${POSITIES[i].y}%` }}
                 className={`absolute flex min-h-12 -translate-x-1/2 -translate-y-1/2 items-center rounded-[var(--r-pill)] px-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                   aan
-                    ? "bg-[var(--g-700)] text-[var(--on-dark-label)]"
+                    ? "diba-pill-active"
                     : "bg-white text-[var(--t-label)] shadow-[var(--shadow-float)] hover:bg-[var(--g-050)]"
                 }`}
               >
@@ -119,14 +119,16 @@ export default function Krabcirkel() {
         </div>
 
         <p className="mt-6 text-sm leading-6 text-[var(--t-muted)]">
-          Tik een schakel aan. Elk punt heeft iemand die hem kan doorbreken, en dat is
-          lang niet altijd dezelfde.
+          Tik een schakel aan. Elk punt heeft iemand die hem kan doorbreken, en
+          dat is lang niet altijd dezelfde.
         </p>
       </div>
 
       {/* ── De lezing ── */}
       <div aria-live="polite">
-        <Label className={WIE_KLEUR[schakel.wie]}>{WIE_LABEL[schakel.wie]}</Label>
+        <Label className={WIE_KLEUR[schakel.wie]}>
+          {WIE_LABEL[schakel.wie]}
+        </Label>
         <h3 className="diba-card-title-lg mt-4">{schakel.naam}</h3>
 
         <dl className="mt-6 space-y-5">

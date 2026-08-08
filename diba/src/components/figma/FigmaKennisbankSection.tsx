@@ -16,7 +16,7 @@ export default function FigmaKennisbankSection({
 }: FigmaKennisbankSectionProps) {
   return (
     <section id={id} className={className}>
-      <div className="mx-auto max-w-[1800px]">
+      <div className="mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-5">
           <div>
             <Label>Diba kennisbank</Label>
@@ -56,7 +56,9 @@ export default function FigmaKennisbankSection({
               </div>
 
               <div className="flex flex-1 flex-col p-6 sm:p-7">
-                <h3 className="diba-card-title text-[var(--t-strong)]">{article.title}</h3>
+                <h3 className="diba-card-title text-[var(--t-strong)]">
+                  {article.title}
+                </h3>
                 <p className="mt-3 flex-1 text-sm leading-6 text-[var(--t-body)]">
                   {article.summary}
                 </p>

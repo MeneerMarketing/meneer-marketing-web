@@ -40,7 +40,11 @@ export function SectieKop({
           {accent ? (
             <>
               <br />
-              <span className={opDonker ? "diba-accent-on-dark" : "diba-accent"}>{accent}</span>
+              <span
+                className={opDonker ? "diba-accent-on-dark" : "diba-accent"}
+              >
+                {accent}
+              </span>
             </>
           ) : null}
         </h2>
@@ -74,7 +78,7 @@ export function WelNiet({
       id="wel-niet"
       className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
-      <div className="mx-auto max-w-[1800px]">
+      <div className="mx-auto">
         <SectieKop
           label="Zonder omwegen"
           kop="Wat werkt. En wat niet."
@@ -109,7 +113,9 @@ export function WelNiet({
           </div>
 
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
-            <h3 className="diba-label text-[var(--warn-text)]">Dit raden we af</h3>
+            <h3 className="diba-label text-[var(--warn-text)]">
+              Dit raden we af
+            </h3>
             <ul className="mt-5 space-y-4">
               {niet.map((r) => (
                 <li key={r} className="flex gap-3 text-[15px] leading-7">
@@ -153,7 +159,7 @@ export function WijZeggenNee({
       id="nee"
       className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
-      <div className="mx-auto max-w-[1800px]">
+      <div className="mx-auto">
         <SectieKop
           label="Waar wij nee zeggen"
           kop={kop}
@@ -205,26 +211,41 @@ export function NulmetingAssen({
   assen: readonly (readonly [string, string])[];
 }) {
   return (
-    <section id="meten" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-      <div className="mx-auto grid max-w-[1800px] gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
+    <section
+      id="meten"
+      className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+    >
+      <div className="mx-auto grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
         <div>
           <Label>De Nulmeting</Label>
           <h2 className="diba-display-m mt-4 max-w-[18ch]">{kop}</h2>
           {alineas.map((a) => (
-            <p key={a} className="mt-5 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p
+              key={a}
+              className="mt-5 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]"
+            >
               {publicCopy(a)}
             </p>
           ))}
-          <Button href="/behandelingen/huidanalyse" variant="secundair" className="mt-8">
+          <Button
+            href="/behandelingen/huidanalyse"
+            variant="secundair"
+            className="mt-8"
+          >
             Meer over De Nulmeting
           </Button>
         </div>
 
         <ul className="grid gap-3 sm:grid-cols-3">
           {assen.map(([as, wat]) => (
-            <li key={as} className="rounded-[var(--r-sm)] bg-[var(--g-050)] p-5">
+            <li
+              key={as}
+              className="rounded-[var(--r-sm)] bg-[var(--g-050)] p-5"
+            >
               <h3 className="diba-card-title">{as}</h3>
-              <p className="mt-2 text-sm leading-6 text-[var(--t-body)]">{wat}</p>
+              <p className="mt-2 text-sm leading-6 text-[var(--t-body)]">
+                {wat}
+              </p>
             </li>
           ))}
         </ul>
@@ -245,7 +266,7 @@ export function PillarFaq({
       id="vragen"
       className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
-      <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.7fr_1.3fr]">
+      <div className="mx-auto grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
         <div>
           <Label>Goed om te weten</Label>
           <h2 className="diba-display-m mt-4 max-w-[16ch]">
@@ -255,7 +276,10 @@ export function PillarFaq({
 
         <div className="border-t border-[var(--g-100)]">
           {items.map((item) => (
-            <details key={item.vraag} className="group border-b border-[var(--g-100)] py-6">
+            <details
+              key={item.vraag}
+              className="group border-b border-[var(--g-100)] py-6"
+            >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
                 <span>{item.vraag}</span>
                 <span
@@ -303,7 +327,9 @@ export function PillarCta({
           </h2>
         </div>
         <div className="flex flex-col justify-end">
-          <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">{tekst}</p>
+          <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
+            {tekst}
+          </p>
           <Button
             href={`/intake?topic=${topic}`}
             variant="primair-op-donker"

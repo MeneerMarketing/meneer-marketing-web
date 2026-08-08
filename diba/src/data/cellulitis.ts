@@ -130,7 +130,8 @@ export const CELLULITIS_FAQ = [
   },
   {
     vraag: "Is het schadelijk?",
-    antwoord: "Nee. Het is geen ziekte en er is medisch gezien niets aan de hand.",
+    antwoord:
+      "Nee. Het is geen ziekte en er is medisch gezien niets aan de hand.",
   },
   {
     vraag: "Kan ik hiervoor bij jullie terecht?",

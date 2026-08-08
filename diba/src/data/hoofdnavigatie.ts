@@ -113,7 +113,11 @@ export const HOOFDNAV: readonly NavItem[] = [
       {
         kop: "Meest gevraagd",
         items: [
-          { label: "Consult met Eve-M", href: "/behandelingen/huidanalyse", zin: "De nulmeting" },
+          {
+            label: "Consult met Eve-M",
+            href: "/behandelingen/huidanalyse",
+            zin: "De nulmeting",
+          },
           { label: "HydraFacial", href: "/behandelingen/hydrafacial" },
           { label: "SkinPen microneedling", href: "/behandelingen/skinpen" },
           { label: "Medische peelings", href: "/behandelingen/peelings" },
@@ -172,9 +176,20 @@ export const HOOFDNAV: readonly NavItem[] = [
       {
         kop: "Waar wij voor staan",
         items: [
-          { label: "Ons verbond", href: "/ons-verbond", zin: "Wat wij beloven en wat niet" },
-          { label: "Dit behandelen wij niet", href: "/dit-behandelen-wij-niet" },
-          { label: "Is het wel nodig", href: "/is-het-nodig", binnenkort: true },
+          {
+            label: "Ons verbond",
+            href: "/ons-verbond",
+            zin: "Wat wij beloven en wat niet",
+          },
+          {
+            label: "Dit behandelen wij niet",
+            href: "/dit-behandelen-wij-niet",
+          },
+          {
+            label: "Is het wel nodig",
+            href: "/is-het-nodig",
+            binnenkort: true,
+          },
           { label: "Nazorg", href: "/nazorg", binnenkort: true },
           { label: "Voor wie", href: "/doelgroep", binnenkort: true },
         ],

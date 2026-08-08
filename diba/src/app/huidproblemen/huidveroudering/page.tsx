@@ -24,7 +24,11 @@ import {
 } from "@/data/veroudering";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Huidveroudering — vijfde eigen pagina, met een eigen uitblinker.
@@ -70,7 +74,10 @@ const SOORTEN: readonly SoortOptie[] = VEROUDERING_SOORTEN.map((s) => ({
     ["Wat het betekent", s.watHetBetekent],
     ["Wat wij doen", s.aanpak],
   ] as const,
-  uitgelicht: { label: "Wat mensen hier vaak verkeerd hebben", tekst: s.verwarring },
+  uitgelicht: {
+    label: "Wat mensen hier vaak verkeerd hebben",
+    tekst: s.verwarring,
+  },
 }));
 
 export default function HuidverouderingPage() {
@@ -85,10 +92,13 @@ export default function HuidverouderingPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -107,14 +117,15 @@ export default function HuidverouderingPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Kijk naar de binnenkant van je bovenarm en dan naar je gezicht. Twee stukken
-              huid van precies dezelfde leeftijd, die er totaal anders uitzien. Dat
-              verschil is geen tijd.
+              Kijk naar de binnenkant van je bovenarm en dan naar je gezicht.
+              Twee stukken huid van precies dezelfde leeftijd, die er totaal
+              anders uitzien. Dat verschil is geen tijd.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Deze pagina scheidt wat door de tijd komt van wat door de zon komt. Alleen op
-              dat tweede deel zit een knop, en dat is meer dan de meeste mensen denken.
+              Deze pagina scheidt wat door de tijd komt van wat door de zon
+              komt. Alleen op dat tweede deel zit een knop, en dat is meer dan
+              de meeste mensen denken.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -152,7 +163,7 @@ export default function HuidverouderingPage() {
         id="tijd-of-zon"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De onderarmtest"
             kop="Veeg zelf tussen"
@@ -164,8 +175,11 @@ export default function HuidverouderingPage() {
       </section>
 
       {/* ── Wat begint wanneer ─────────────────────────────────────────── */}
-      <section id="wanneer" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="wanneer"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Vijf sporen"
             kop="Niet één proces,"
@@ -181,7 +195,7 @@ export default function HuidverouderingPage() {
         id="welke"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Herkenning"
             kop="Vier dingen die mensen"
@@ -197,9 +211,9 @@ export default function HuidverouderingPage() {
 
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-white p-6">
             <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Gaat het je vooral om vlekken en niet om lijnen? Dan begint het verhaal
-              ergens anders, want daar speelt het seizoen een grote rol in wanneer je moet
-              beginnen.
+              Gaat het je vooral om vlekken en niet om lijnen? Dan begint het
+              verhaal ergens anders, want daar speelt het seizoen een grote rol
+              in wanneer je moet beginnen.
             </p>
             <Link
               href="/huidproblemen/pigmentvlekken"

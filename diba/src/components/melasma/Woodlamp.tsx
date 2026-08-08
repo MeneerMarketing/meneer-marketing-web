@@ -1,6 +1,11 @@
 "use client";
 
-import { useId, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
+import {
+  useId,
+  useRef,
+  useState,
+  type PointerEvent as ReactPointerEvent,
+} from "react";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { LAGEN, LAMP_UITLEG, type Laag } from "@/data/melasma";
@@ -63,13 +68,16 @@ export default function Woodlamp() {
   const uid = useId().replace(/:/g, "");
 
   /** Welk gebied ligt het dichtst bij de lamp? Dat is wat je aan het bekijken bent. */
-  const actief = (Object.keys(GEBIEDEN) as Laag["id"][]).reduce((beste, id) => {
-    const a = GEBIEDEN[id];
-    const b = GEBIEDEN[beste];
-    const da = (a.x - positie.x) ** 2 + (a.y - positie.y) ** 2;
-    const db = (b.x - positie.x) ** 2 + (b.y - positie.y) ** 2;
-    return da < db ? id : beste;
-  }, "epidermaal" as Laag["id"]);
+  const actief = (Object.keys(GEBIEDEN) as Laag["id"][]).reduce(
+    (beste, id) => {
+      const a = GEBIEDEN[id];
+      const b = GEBIEDEN[beste];
+      const da = (a.x - positie.x) ** 2 + (a.y - positie.y) ** 2;
+      const db = (b.x - positie.x) ** 2 + (b.y - positie.y) ** 2;
+      return da < db ? id : beste;
+    },
+    "epidermaal" as Laag["id"],
+  );
 
   const laag = LAGEN.find((l) => l.id === actief)!;
 
@@ -101,7 +109,11 @@ export default function Woodlamp() {
           onPointerUp={() => setSleept(false)}
           onPointerCancel={() => setSleept(false)}
         >
-          <svg viewBox="0 0 600 300" className="block w-full" aria-hidden="true">
+          <svg
+            viewBox="0 0 600 300"
+            className="block w-full"
+            aria-hidden="true"
+          >
             <defs>
               {/* De lamp: alles buiten de cirkel blijft gewoon licht. */}
               <mask id={`${uid}-lamp`}>
@@ -172,14 +184,20 @@ export default function Woodlamp() {
                 strokeWidth="2"
                 strokeLinecap="round"
               />
-              <circle cx="12" cy="12" r="3.5" stroke="currentColor" strokeWidth="2" />
+              <circle
+                cx="12"
+                cy="12"
+                r="3.5"
+                stroke="currentColor"
+                strokeWidth="2"
+              />
             </svg>
           </span>
         </div>
 
         <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
-          Sleep de lamp over de vlek. In gewoon licht ziet alles er hetzelfde uit; onder de
-          lamp niet.
+          Sleep de lamp over de vlek. In gewoon licht ziet alles er hetzelfde
+          uit; onder de lamp niet.
         </p>
 
         {/* Slepen is nooit de enige weg. */}
@@ -194,7 +212,7 @@ export default function Woodlamp() {
                 onClick={() => setPositie(GEBIEDEN[l.id])}
                 className={`diba-label min-h-12 rounded-[var(--r-pill)] px-5 transition-colors ${
                   l.id === actief
-                    ? "bg-[var(--g-700)] text-[var(--on-dark-label)]"
+                    ? "diba-pill-active"
                     : "bg-[var(--g-050)] text-[var(--t-label)] hover:bg-[var(--g-100)]"
                 } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
               >
@@ -234,7 +252,9 @@ export default function Woodlamp() {
               ? "Laat eerlijk narekenen wat dit oplevert"
               : "Laat de diepte meten"}
           </Button>
-          <Label className={`max-w-[24ch] ${VOORUITZICHT_KLEUR[laag.vooruitzicht]}`}>
+          <Label
+            className={`max-w-[24ch] ${VOORUITZICHT_KLEUR[laag.vooruitzicht]}`}
+          >
             {laag.vooruitzicht === "goed"
               ? "Hier valt het meeste te halen"
               : laag.vooruitzicht === "matig"

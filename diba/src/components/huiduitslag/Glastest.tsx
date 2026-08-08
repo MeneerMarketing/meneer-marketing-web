@@ -49,7 +49,11 @@ export default function Glastest() {
         {/* ── Het vlak met het glas ── */}
         <div className="self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7">
           <div className="relative overflow-hidden rounded-[var(--r-sm)]">
-            <svg viewBox="0 0 460 220" className="block w-full" aria-hidden="true">
+            <svg
+              viewBox="0 0 460 220"
+              className="block w-full"
+              aria-hidden="true"
+            >
               <defs>
                 {/* Het glas: alleen binnen deze rechthoek verandert het beeld. */}
                 <clipPath id={`${uid}-glas`}>
@@ -128,16 +132,18 @@ export default function Glastest() {
           />
 
           <p className="mt-5 text-sm leading-6 text-[var(--t-muted)]">
-            Links zie je hoe het eruitziet als vlekken wél wegdrukken. Wat jij thuis ziet
-            is óf het linkerbeeld óf het rechterbeeld, en dat verschil bepaalt of je
-            vandaag belt.
+            Links zie je hoe het eruitziet als vlekken wél wegdrukken. Wat jij
+            thuis ziet is óf het linkerbeeld óf het rechterbeeld, en dat
+            verschil bepaalt of je vandaag belt.
           </p>
         </div>
 
         {/* ── De lezing ── */}
         <div aria-live="polite">
           {uitkomst.spoed ? (
-            <Label className="text-[var(--warn-text)]">Dit is een reden om te bellen</Label>
+            <Label className="text-[var(--warn-text)]">
+              Dit is een reden om te bellen
+            </Label>
           ) : (
             <Label>Geen haast, wel een vraag</Label>
           )}
@@ -153,7 +159,9 @@ export default function Glastest() {
               <div
                 key={kop}
                 className={`border-l-2 pl-4 ${
-                  uitkomst.spoed ? "border-[var(--warn)]" : "border-[var(--g-200)]"
+                  uitkomst.spoed
+                    ? "border-[var(--warn)]"
+                    : "border-[var(--g-200)]"
                 }`}
               >
                 <dt className="diba-label">{kop}</dt>

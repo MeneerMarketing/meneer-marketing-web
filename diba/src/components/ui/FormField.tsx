@@ -33,7 +33,10 @@ function Wrapper({
 }: BaseProps & { required?: boolean; children: ReactNode }) {
   return (
     <div className="flex flex-col gap-2">
-      <label htmlFor={id} className="text-[14px] font-medium leading-relaxed text-[#17372a]">
+      <label
+        htmlFor={id}
+        className="text-[14px] font-medium leading-relaxed text-[#17372a]"
+      >
         {label}
         {required ? (
           <span aria-hidden="true" className="text-[#5d9564]">
@@ -44,11 +47,17 @@ function Wrapper({
       </label>
       {children}
       {error ? (
-        <p id={`${id}-error`} className="text-[13px] leading-relaxed text-[#b85c5c]">
+        <p
+          id={`${id}-error`}
+          className="text-[13px] leading-relaxed text-[#b85c5c]"
+        >
           {error}
         </p>
       ) : hint ? (
-        <p id={`${id}-hint`} className="text-[13px] leading-relaxed text-[#5f7765]">
+        <p
+          id={`${id}-hint`}
+          className="text-[13px] leading-relaxed text-[#5f7765]"
+        >
           {hint}
         </p>
       ) : null}
@@ -65,11 +74,19 @@ export function TextField({
   ...rest
 }: BaseProps & InputHTMLAttributes<HTMLInputElement>) {
   return (
-    <Wrapper label={label} id={id} error={error} hint={hint} required={rest.required}>
+    <Wrapper
+      label={label}
+      id={id}
+      error={error}
+      hint={hint}
+      required={rest.required}
+    >
       <input
         id={id}
         aria-invalid={error ? true : undefined}
-        aria-describedby={error ? `${id}-error` : hint ? `${id}-hint` : undefined}
+        aria-describedby={
+          error ? `${id}-error` : hint ? `${id}-hint` : undefined
+        }
         className={`h-12 ${fieldBase} ${error ? borders.error : borders.normal} ${className}`}
         {...rest}
       />
@@ -87,12 +104,20 @@ export function TextareaField({
   ...rest
 }: BaseProps & TextareaHTMLAttributes<HTMLTextAreaElement>) {
   return (
-    <Wrapper label={label} id={id} error={error} hint={hint} required={rest.required}>
+    <Wrapper
+      label={label}
+      id={id}
+      error={error}
+      hint={hint}
+      required={rest.required}
+    >
       <textarea
         id={id}
         rows={rows}
         aria-invalid={error ? true : undefined}
-        aria-describedby={error ? `${id}-error` : hint ? `${id}-hint` : undefined}
+        aria-describedby={
+          error ? `${id}-error` : hint ? `${id}-hint` : undefined
+        }
         className={`py-3 ${fieldBase} ${error ? borders.error : borders.normal} ${className}`}
         {...rest}
       />

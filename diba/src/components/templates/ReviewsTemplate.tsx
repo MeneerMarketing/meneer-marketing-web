@@ -18,7 +18,7 @@ export default function ReviewsTemplate({ proofItems }: ReviewsTemplateProps) {
       {/* Hero */}
       <section className="relative overflow-hidden px-5 sm:px-9 lg:px-[7.5vw]">
         <FigmaSoftAccent variant="traject" />
-        <div className="relative mx-auto max-w-[1800px] py-20 lg:py-28">
+        <div className="relative mx-auto py-20 lg:py-28">
           <nav
             aria-label="Broodkruimels"
             className="diba-label mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-[var(--t-label)]"
@@ -59,13 +59,13 @@ export default function ReviewsTemplate({ proofItems }: ReviewsTemplateProps) {
       <ProofBar items={proofItems} />
 
       <section className="px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto max-w-[1800px] py-16 lg:py-24">
+        <div className="mx-auto py-16 lg:py-24">
           <FigmaReviewsExperience />
         </div>
       </section>
 
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
-        <div className="mx-auto flex max-w-[1800px] flex-wrap items-center justify-between gap-8 rounded-[var(--r-lg)] bg-white px-7 py-8 sm:px-10">
+        <div className="mx-auto flex flex-wrap items-center justify-between gap-8 rounded-[var(--r-lg)] bg-white px-7 py-8 sm:px-10">
           <div className="max-w-lg">
             <Label>Klaar voor je plan?</Label>
             <p className="mt-3 diba-card-title text-[var(--t-strong)]">

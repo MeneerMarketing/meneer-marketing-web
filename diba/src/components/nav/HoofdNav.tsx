@@ -67,10 +67,10 @@ const VORM: Record<"opBeeld" | "opWit", Vormgeving> = {
        Wit op een paginavlak van #fcfdfb is bijna hetzelfde en dat maakt de balk een
        kleurloze strook. g-050 geeft hem een eigen vlak zonder dat er een lijn onder
        hoeft, en dat is precies hoe de Figma-homepage haar banden scheidt. */
-    wrapper: "sticky top-0 z-40 bg-[var(--g-050)]",
+    wrapper: "sticky top-0 z-40 bg-white",
     logo: "dark",
-    item: "text-[var(--t-body)] hover:bg-white hover:text-[var(--t-strong)] focus-visible:outline-[var(--g-700)]",
-    itemOpen: "bg-white text-[var(--t-strong)]",
+    item: "text-[var(--t-body)] hover:bg-[var(--g-050)] hover:text-[var(--t-strong)] focus-visible:outline-[var(--g-700)]",
+    itemOpen: "bg-[var(--g-050)] text-[var(--t-strong)]",
     knop: "bg-[var(--g-700)] text-white hover:bg-[var(--g-800)] focus-visible:outline-[var(--g-700)]",
     hamburger:
       "border-[var(--g-100)] text-[var(--t-strong)] hover:bg-[var(--g-050)] focus-visible:outline-[var(--g-700)]",
@@ -144,11 +144,11 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
       {/* Dezelfde container als elke pagina.
           Gemeten op 1440 breed stond het logo op 32px terwijl de kruimel en de H1
           eronder op 108px begonnen: de balk gebruikte px-4/sm:px-6/lg:px-8 en de rest
-          van de site mx-auto max-w-[1800px] px-5/sm:px-9/lg:px-[7.5vw]. Zesenzeventig
+          van de site mx-auto px-5/sm:px-9/lg:px-[7.5vw]. Zesenzeventig
           pixels verschil is precies genoeg om scheef te ogen zonder dat je meteen ziet
           waarom. Nu vallen logo, kruimel en kop op één lijn. */}
       <header className="relative z-10 bg-inherit">
-        <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-6 px-5 py-5 sm:px-9 lg:px-[7.5vw]">
+        <div className="mx-auto flex items-center justify-between gap-6 px-5 py-5 sm:px-9 lg:px-[7.5vw]">
           <Link
             href="/"
             aria-label="Diba Clinics, naar de homepage"

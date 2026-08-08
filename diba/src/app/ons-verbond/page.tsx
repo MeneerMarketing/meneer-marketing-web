@@ -4,7 +4,12 @@ import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { VERBOND_FAQ, VERBOND_INTRO, VERBOND_SLOT, WEIGERINGEN } from "@/data/verbond";
+import {
+  VERBOND_FAQ,
+  VERBOND_INTRO,
+  VERBOND_SLOT,
+  WEIGERINGEN,
+} from "@/data/verbond";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
@@ -42,9 +47,12 @@ export default function OnsVerbondPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="py-14 lg:py-20">
-          <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label flex flex-wrap gap-2"
+          >
             <Link href="/" className="hover:text-[var(--g-700)]">
               Home
             </Link>
@@ -75,7 +83,7 @@ export default function OnsVerbondPage() {
         id="weigeringen"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De weigeringen"
             kop="Elke regel heeft"
@@ -107,7 +115,9 @@ export default function OnsVerbondPage() {
                   </div>
 
                   <div className="border-t border-[var(--g-100)] pt-4 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8">
-                    <Label className="text-[var(--warn-text)]">Wat dit ons kost</Label>
+                    <Label className="text-[var(--warn-text)]">
+                      Wat dit ons kost
+                    </Label>
                     <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                       {w.kost}
                     </p>
@@ -123,7 +133,7 @@ export default function OnsVerbondPage() {
 
       {/* ── Slot ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto max-w-[1800px] lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
+        <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Wat je ermee kunt</Label>
             <h2 className="diba-display-l mt-5 max-w-[14ch]">

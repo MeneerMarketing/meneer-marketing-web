@@ -103,7 +103,10 @@ export const PROCESSEN: readonly Proces[] = [
 ] as const;
 
 /** Wat we per levensfase eerlijk adviseren. Let op de eerste: die kost niets. */
-export const FASE_ADVIES: Record<string, { readonly kop: string; readonly tekst: string }> = {
+export const FASE_ADVIES: Record<
+  string,
+  { readonly kop: string; readonly tekst: string }
+> = {
   "20": {
     kop: "Hier valt het meeste te winnen en het kost bijna niets",
     tekst:

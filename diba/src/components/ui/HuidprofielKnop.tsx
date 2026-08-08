@@ -77,7 +77,9 @@ export default function HuidprofielKnop() {
           >
             <div className="flex items-start justify-between gap-4 border-b border-[var(--g-100)] px-6 pt-6 pb-5">
               <div>
-                <p className="diba-label text-[var(--t-label)]">Je huidprofiel</p>
+                <p className="diba-label text-[var(--t-label)]">
+                  Je huidprofiel
+                </p>
                 <p className="mt-1 text-[13px] leading-5 text-[var(--t-muted)]">
                   Ingevuld {wanneer}
                 </p>
@@ -104,7 +106,10 @@ export default function HuidprofielKnop() {
 
             <div className="px-6 py-6">
               <div className="flex items-center gap-5">
-                <Spinnenweb waarden={scan.assen} className="h-28 w-28 shrink-0" />
+                <Spinnenweb
+                  waarden={scan.assen}
+                  className="h-28 w-28 shrink-0"
+                />
                 <ul className="min-w-0 flex-1 space-y-2">
                   {top.map((as) => (
                     <li key={as.id}>
@@ -120,13 +125,15 @@ export default function HuidprofielKnop() {
               </div>
 
               <p className="mt-5 text-[13px] leading-5 text-[var(--t-muted)]">
-                Dit is wat jij ons vertelde, nog niet wat we gemeten hebben. De open
-                buitenrand is precies dat verschil.
+                Dit is wat jij ons vertelde, nog niet wat we gemeten hebben. De
+                open buitenrand is precies dat verschil.
               </p>
 
               {passend.length > 0 ? (
                 <div className="mt-5 border-t border-[var(--g-100)] pt-5">
-                  <p className="diba-label text-[var(--t-muted)]">Past hierbij</p>
+                  <p className="diba-label text-[var(--t-muted)]">
+                    Past hierbij
+                  </p>
                   <ul className="mt-3 space-y-1.5">
                     {passend.map((m) => (
                       <li key={m.behandeling.slug}>
@@ -188,7 +195,9 @@ export default function HuidprofielKnop() {
             <DibaLeafMark className="h-5 w-5" />
           </span>
           <span className="sr-only sm:not-sr-only sm:text-left">
-            <span className="diba-label block text-[var(--t-label)]">Je huidprofiel</span>
+            <span className="diba-label block text-[var(--t-label)]">
+              Je huidprofiel
+            </span>
             <span className="block text-[12px] leading-4 text-[var(--t-muted)]">
               {top.map((a) => a.label.toLowerCase()).join(" en ")}
             </span>
@@ -199,8 +208,8 @@ export default function HuidprofielKnop() {
       {/* Ruimte voor de schermlezer: het aantal assen wordt nergens genoemd en dit is de
           enige plek waar dat nog uit te leggen valt zonder de kaart vol te zetten. */}
       <p className="sr-only">
-        Je huidprofiel is opgebouwd uit {SCAN_ASSEN.length} onderdelen die je zelf hebt
-        aangegeven in de mini-scan.
+        Je huidprofiel is opgebouwd uit {SCAN_ASSEN.length} onderdelen die je
+        zelf hebt aangegeven in de mini-scan.
       </p>
     </>
   );

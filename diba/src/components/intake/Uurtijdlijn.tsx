@@ -53,7 +53,9 @@ export default function Uurtijdlijn() {
                   aan ? "bg-white" : "hover:bg-white/60"
                 }`}
               >
-                <span className="diba-label block text-[var(--t-muted)]">{s.tijd}</span>
+                <span className="diba-label block text-[var(--t-muted)]">
+                  {s.tijd}
+                </span>
                 <span
                   className={`diba-card-title mt-1 block ${
                     aan ? "text-[var(--t-strong)]" : "text-[var(--t-body)]"

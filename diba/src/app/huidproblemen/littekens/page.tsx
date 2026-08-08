@@ -23,7 +23,11 @@ import {
 } from "@/data/littekens";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Littekens en striae — eigen pagina met een eigen uitblinker.
@@ -71,7 +75,10 @@ const SOORTEN: readonly SoortOptie[] = LITTEKEN_SOORTEN.map((s) => ({
     ["Wat het betekent", s.watHetBetekent],
     ["Wat wij eerst doen", s.aanpak],
   ] as const,
-  uitgelicht: { label: "Wat mensen hier vaak verkeerd hebben", tekst: s.verwarring },
+  uitgelicht: {
+    label: "Wat mensen hier vaak verkeerd hebben",
+    tekst: s.verwarring,
+  },
 }));
 
 /** De volgorde die bijna altijd wordt omgedraaid, met de reden erbij. */
@@ -110,10 +117,13 @@ export default function LittekensPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -132,14 +142,14 @@ export default function LittekensPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De leeftijd van een litteken bepaalt de uitkomst meer dan de techniek. Dat
-              geldt net zo goed voor striae. Daarom begint deze pagina met de vraag hoe
-              lang je het al hebt.
+              De leeftijd van een litteken bepaalt de uitkomst meer dan de
+              techniek. Dat geldt net zo goed voor striae. Daarom begint deze
+              pagina met de vraag hoe lang je het al hebt.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Bij oude, witte littekens is ons antwoord vaak dat het niet genoeg oplevert.
-              Liever nu dan na vier sessies.
+              Bij oude, witte littekens is ons antwoord vaak dat het niet genoeg
+              oplevert. Liever nu dan na vier sessies.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -177,7 +187,7 @@ export default function LittekensPage() {
         id="hoe-oud"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De littekenklok"
             kop="Hoe oud het is,"
@@ -189,8 +199,11 @@ export default function LittekensPage() {
       </section>
 
       {/* ── Welk type ──────────────────────────────────────────────────── */}
-      <section id="welke" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="welke"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Herkenning"
             kop="Vier beelden,"
@@ -211,7 +224,7 @@ export default function LittekensPage() {
         id="volgorde"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De volgorde"
             kop="De stap die iedereen"
@@ -223,15 +236,18 @@ export default function LittekensPage() {
             {VOLGORDE.map((v) => (
               <li key={v.stap} className="bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{v.stap}</h3>
-                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">{v.tekst}</p>
+                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
+                  {v.tekst}
+                </p>
               </li>
             ))}
           </ol>
 
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-white p-6">
             <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en pas daarna
-              hier. Dat is geen omweg maar de kortste route naar minder littekens.
+              Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en
+              pas daarna hier. Dat is geen omweg maar de kortste route naar
+              minder littekens.
             </p>
             <Link
               href="/huidproblemen/acne"

@@ -60,7 +60,10 @@ export default function StickyActionBar({
         >
           {questionLabel}
         </Link>
-        <Link href={intakeHref} className={`${figmaBtnPrimary} block py-3.5 text-center text-[10px]`}>
+        <Link
+          href={intakeHref}
+          className={`${figmaBtnPrimary} block py-3.5 text-center text-[10px]`}
+        >
           {intakeLabel}
         </Link>
       </div>

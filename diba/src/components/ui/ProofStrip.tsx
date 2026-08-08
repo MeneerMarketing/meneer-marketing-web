@@ -69,7 +69,7 @@ export default function ProofStrip({
         requestAnimationFrame(tick);
       },
       // Start ~150px vóór zichtbaarheid: de gebruiker ziet nooit een statische 0.
-      { threshold: 0.1, rootMargin: "0px 0px 150px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px 150px 0px" },
     );
     io.observe(el);
     return () => io.disconnect();
@@ -99,7 +99,9 @@ export default function ProofStrip({
               {fmt(item, shown)}
               {item.suffix ?? ""}
             </dd>
-            <dt className={`mt-[var(--space-2)] text-[13px] leading-[1.45] ${lab}`}>
+            <dt
+              className={`mt-[var(--space-2)] text-[13px] leading-[1.45] ${lab}`}
+            >
               {item.label}
             </dt>
           </div>

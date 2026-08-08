@@ -22,13 +22,13 @@ export default function GentleMaxProPage() {
         },
         {
           kop: "Voor *laserontharing*",
-          alineas: [
-            "[COPY-NODIG]",
-            "Bereken je prijs via de configurator.",
-          ],
+          alineas: ["[COPY-NODIG]", "Bereken je prijs via de configurator."],
         },
       ]}
-      primaireCta={{ label: "Bereken je laserprijs", href: "/laserontharing/configurator" }}
+      primaireCta={{
+        label: "Bereken je laserprijs",
+        href: "/laserontharing/configurator",
+      }}
       {...PAGE_DEFAULTS}
     />
   );

@@ -41,7 +41,7 @@ export default function ProofBar({
       className={`border-y border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw] ${className}`.trim()}
       aria-label="Diba Clinics in cijfers"
     >
-      <div className="mx-auto grid max-w-[1800px] grid-cols-2 gap-px bg-[var(--g-100)] md:grid-cols-4">
+      <div className="mx-auto grid grid-cols-2 gap-px bg-[var(--g-100)] md:grid-cols-4">
         {items.map((item) => (
           <div key={item.label} className="bg-white py-4 text-center md:py-7">
             <strong className="block text-xl tracking-[-.05em] text-[var(--g-700)] tabular-nums md:text-3xl md:tracking-[-.06em]">

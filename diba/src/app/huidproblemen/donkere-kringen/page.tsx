@@ -22,7 +22,11 @@ import {
 } from "@/data/kringen";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Donkere kringen — zevende eigen pagina.
@@ -75,10 +79,13 @@ export default function DonkereKringenPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -97,15 +104,15 @@ export default function DonkereKringenPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Donkere kringen zijn geen aandoening maar een uiterlijk kenmerk met drie
-              verschillende oorzaken. Ze zien er hetzelfde uit en vragen alle drie iets
-              anders, en bij één ervan is de eerlijke uitkomst dat wij je niet verder
-              helpen.
+              Donkere kringen zijn geen aandoening maar een uiterlijk kenmerk
+              met drie verschillende oorzaken. Ze zien er hetzelfde uit en
+              vragen alle drie iets anders, en bij één ervan is de eerlijke
+              uitkomst dat wij je niet verder helpen.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je kunt zelf uitzoeken welke het bij jou is. Daar heb je een spiegel voor
-              nodig en twee minuten, en het kost je niets.
+              Je kunt zelf uitzoeken welke het bij jou is. Daar heb je een
+              spiegel voor nodig en twee minuten, en het kost je niets.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -144,7 +151,7 @@ export default function DonkereKringenPage() {
         id="test"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De spiegeltest"
             kop="Zoek zelf uit"
@@ -156,8 +163,11 @@ export default function DonkereKringenPage() {
       </section>
 
       {/* ── De drie types als naslag ───────────────────────────────────── */}
-      <section id="types" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="types"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="De drie types"
             kop="Hetzelfde beeld,"
@@ -171,13 +181,17 @@ export default function DonkereKringenPage() {
               return (
                 <li key={u.id} className="bg-white p-6 sm:p-8">
                   <h3 className="diba-card-title">{u.kop}</h3>
-                  <p className="diba-label mt-2 text-[var(--t-muted)]">{u.vakterm}</p>
+                  <p className="diba-label mt-2 text-[var(--t-muted)]">
+                    {u.vakterm}
+                  </p>
                   <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
                     {u.watHetIs.replace(/\[[^\]]+\]/g, "").trim()}
                   </p>
                   <p
                     className={`diba-label mt-5 ${
-                      u.wijHelpen === "nee" ? "text-[var(--warn-text)]" : "text-[var(--g-700)]"
+                      u.wijHelpen === "nee"
+                        ? "text-[var(--warn-text)]"
+                        : "text-[var(--g-700)]"
                     }`}
                   >
                     {HELPT_LABEL[u.wijHelpen]}
@@ -189,8 +203,9 @@ export default function DonkereKringenPage() {
 
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-white p-6">
             <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Kwam er pigment uit? Dan gelden dezelfde regels als voor pigment elders in
-              je gezicht, inclusief het seizoen waarin je beter niet begint.
+              Kwam er pigment uit? Dan gelden dezelfde regels als voor pigment
+              elders in je gezicht, inclusief het seizoen waarin je beter niet
+              begint.
             </p>
             <Link
               href="/huidproblemen/pigmentvlekken"

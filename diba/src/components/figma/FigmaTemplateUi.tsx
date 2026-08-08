@@ -12,7 +12,10 @@ export function FigmaBreadcrumbs({ items }: { items: FigmaBreadcrumbItem[] }) {
       className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-medium uppercase tracking-[.12em] text-[#5d8166]"
     >
       {items.map((item, index) => (
-        <span key={`${item.label}-${index}`} className="inline-flex items-center gap-2">
+        <span
+          key={`${item.label}-${index}`}
+          className="inline-flex items-center gap-2"
+        >
           {index > 0 ? (
             <span aria-hidden className="opacity-40">
               /
@@ -33,7 +36,14 @@ export function FigmaBreadcrumbs({ items }: { items: FigmaBreadcrumbItem[] }) {
 
 export function FigmaCheckIcon() {
   return (
-    <svg aria-hidden width="18" height="18" viewBox="0 0 18 18" fill="none" className="mt-0.5 shrink-0">
+    <svg
+      aria-hidden
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      fill="none"
+      className="mt-0.5 shrink-0"
+    >
       <circle cx="9" cy="9" r="8.5" stroke="#5eae67" />
       <path
         d="M5.5 9l2.5 2.5 4.5-5"
@@ -48,8 +58,20 @@ export function FigmaCheckIcon() {
 
 export function FigmaCrossIcon() {
   return (
-    <svg aria-hidden width="16" height="16" viewBox="0 0 16 16" fill="none" className="mt-1 shrink-0">
-      <path d="M4 4l8 8M12 4l-8 8" stroke="#b85c5c" strokeWidth="1.5" strokeLinecap="round" />
+    <svg
+      aria-hidden
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      className="mt-1 shrink-0"
+    >
+      <path
+        d="M4 4l8 8M12 4l-8 8"
+        stroke="#b85c5c"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
@@ -75,7 +97,10 @@ export function FigmaWelNietGrid({
         </p>
         <ul className="mt-5 flex flex-col gap-3">
           {wel.map((item) => (
-            <li key={item} className="flex gap-3 text-[15px] leading-7 text-[#17372a]">
+            <li
+              key={item}
+              className="flex gap-3 text-[15px] leading-7 text-[#17372a]"
+            >
               <FigmaCheckIcon />
               {item}
             </li>
@@ -88,7 +113,10 @@ export function FigmaWelNietGrid({
         </p>
         <ul className="mt-5 flex flex-col gap-3">
           {niet.map((item) => (
-            <li key={item} className="flex gap-3 text-[15px] leading-7 text-[#5f5765]">
+            <li
+              key={item}
+              className="flex gap-3 text-[15px] leading-7 text-[#5f5765]"
+            >
               <FigmaCrossIcon />
               {item}
             </li>

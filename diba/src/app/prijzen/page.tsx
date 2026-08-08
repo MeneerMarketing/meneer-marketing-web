@@ -38,10 +38,13 @@ export default function PrijzenPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -56,15 +59,16 @@ export default function PrijzenPage() {
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De meeste klinieken zetten hun prijzen niet online, of alleen de laagste met
-              een sterretje erachter. Dat is geen toeval: een bedrag dat je pas hoort als
-              je al op de stoel ligt, is makkelijker te verkopen.
+              De meeste klinieken zetten hun prijzen niet online, of alleen de
+              laagste met een sterretje erachter. Dat is geen toeval: een bedrag
+              dat je pas hoort als je al op de stoel ligt, is makkelijker te
+              verkopen.
             </p>
 
             <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Hier staat het gewoon. Per sessie, per zone, inclusief wat een pakket
-              vervangt. Je kunt het vergelijken voordat je een afspraak maakt, en dat is
-              precies de bedoeling.
+              Hier staat het gewoon. Per sessie, per zone, inclusief wat een
+              pakket vervangt. Je kunt het vergelijken voordat je een afspraak
+              maakt, en dat is precies de bedoeling.
             </p>
           </div>
 
@@ -74,13 +78,14 @@ export default function PrijzenPage() {
               Een voorspelling
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wat een sessie kost weten we. Hoeveel sessies jij nodig hebt niet, want dat
-              hangt af van je huid en van wat je wil bereiken. Wie dat vooraf in een
-              totaalbedrag giet, gokt met jouw geld.
+              Wat een sessie kost weten we. Hoeveel sessies jij nodig hebt niet,
+              want dat hangt af van je huid en van wat je wil bereiken. Wie dat
+              vooraf in een totaalbedrag giet, gokt met jouw geld.
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Daarom staan hier sessieprijzen en geen pakketten met een streep door de
-              oude prijs. Wat je in totaal kwijt bent hoor je na de meting.
+              Daarom staan hier sessieprijzen en geen pakketten met een streep
+              door de oude prijs. Wat je in totaal kwijt bent hoor je na de
+              meting.
             </p>
           </div>
         </div>
@@ -90,25 +95,27 @@ export default function PrijzenPage() {
 
       {/* ── De lijst ── */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Prijslijst />
         </div>
       </section>
 
       {/* ── Afsluiter ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Zelf uitrekenen</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
               Voor laser
               <br />
-              <span className="diba-accent-on-dark">stel je het zelf samen.</span>
+              <span className="diba-accent-on-dark">
+                stel je het zelf samen.
+              </span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wijs je zones aan op een tekening en zie meteen wat je opbouw wordt,
-              inclusief wat een pakket vervangt. Je keuze staat daarna in de adresbalk, dus
-              je kunt hem bewaren of doorsturen.
+              Wijs je zones aan op een tekening en zie meteen wat je opbouw
+              wordt, inclusief wat een pakket vervangt. Je keuze staat daarna in
+              de adresbalk, dus je kunt hem bewaren of doorsturen.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link

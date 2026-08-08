@@ -28,7 +28,8 @@ export const ABCDE: readonly Criterium[] = [
   {
     letter: "A",
     naam: "Asymmetrie",
-    vraag: "Vouw het plekje in gedachten dubbel. Passen de twee helften op elkaar?",
+    vraag:
+      "Vouw het plekje in gedachten dubbel. Passen de twee helften op elkaar?",
     rustig: "De helften lijken op elkaar",
     opvallend: "De ene helft is duidelijk anders dan de andere",
     uitleg:
@@ -55,7 +56,8 @@ export const ABCDE: readonly Criterium[] = [
   {
     letter: "D",
     naam: "Doorsnede",
-    vraag: "Is het plekje groter dan een gum op een potlood, ongeveer zes millimeter?",
+    vraag:
+      "Is het plekje groter dan een gum op een potlood, ongeveer zes millimeter?",
     rustig: "Kleiner dan ongeveer zes millimeter",
     opvallend: "Groter dan ongeveer zes millimeter",
     uitleg:
@@ -149,7 +151,8 @@ export const MOEDERVLEK_FAQ = [
       "Nee. Niet bij een verdacht plekje en ook niet bij eentje waar je alleen maar vanaf wilt. Dat gaat naar de huisarts, die kan het zelf doen of doorverwijzen.",
   },
   {
-    vraag: "Ik heb een behandeling gepland en er zit een moedervlek in het gebied.",
+    vraag:
+      "Ik heb een behandeling gepland en er zit een moedervlek in het gebied.",
     antwoord:
       "Dan dekken we die af. Dat kost een halve minuut en het scheelt dat een arts later nog kan beoordelen wat er zit. [MEDISCHE-CHECK-ROJDA]",
   },

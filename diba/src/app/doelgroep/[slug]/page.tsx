@@ -16,7 +16,9 @@ export function generateStaticParams() {
   ];
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const d = doelgroepBySlug(slug);
   if (!d) return {};

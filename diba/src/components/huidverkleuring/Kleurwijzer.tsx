@@ -28,7 +28,11 @@ export default function Kleurwijzer() {
   return (
     <div className="mt-12">
       {/* De vier stalen. Kiezen zonder dat je een term hoeft te kennen. */}
-      <div role="tablist" aria-label="Kleur van de verkleuring" className="flex flex-wrap gap-3">
+      <div
+        role="tablist"
+        aria-label="Kleur van de verkleuring"
+        className="flex flex-wrap gap-3"
+      >
         {KLEUREN.map((k, i) => (
           <button
             key={k.id}
@@ -38,7 +42,7 @@ export default function Kleurwijzer() {
             onClick={() => setActief(i)}
             className={`flex min-h-12 items-center gap-3 rounded-[var(--r-pill)] py-2 pr-5 pl-3 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
               i === actief
-                ? "bg-[var(--g-700)] text-[var(--on-dark-label)]"
+                ? "diba-pill-active"
                 : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
             }`}
           >
@@ -52,7 +56,10 @@ export default function Kleurwijzer() {
         ))}
       </div>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12" aria-live="polite">
+      <div
+        className="mt-10 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12"
+        aria-live="polite"
+      >
         {/* ── Wat die kleur betekent ── */}
         <div className="self-start rounded-[var(--r-md)] bg-white p-6 sm:p-8">
           <Label>Wat deze kleur betekent</Label>

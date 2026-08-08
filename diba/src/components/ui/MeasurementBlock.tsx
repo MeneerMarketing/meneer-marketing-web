@@ -12,25 +12,36 @@ export type MeasurementBlockProps = {
 
 const nf = new Intl.NumberFormat("nl-NL");
 
-export default function MeasurementBlock({ context, metrics }: MeasurementBlockProps) {
+export default function MeasurementBlock({
+  context,
+  metrics,
+}: MeasurementBlockProps) {
   return (
     <div className="rounded-[1.5rem] border border-[#dce8d9] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
       <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[#5d9564]">
         Wij meten
       </p>
-      <p className="mt-1 text-[16px] leading-relaxed text-[#17372a]">{context}</p>
+      <p className="mt-1 text-[16px] leading-relaxed text-[#17372a]">
+        {context}
+      </p>
 
       <dl className="mt-6 flex flex-col gap-6">
         {metrics.map((m) => {
           const max = Math.max(m.baseline, m.current, 1);
           const lowerIsBetter = m.lowerIsBetter ?? true;
-          const improved = lowerIsBetter ? m.current < m.baseline : m.current > m.baseline;
-          const deltaPct = Math.round(((m.current - m.baseline) / m.baseline) * 100);
+          const improved = lowerIsBetter
+            ? m.current < m.baseline
+            : m.current > m.baseline;
+          const deltaPct = Math.round(
+            ((m.current - m.baseline) / m.baseline) * 100,
+          );
 
           return (
             <div key={m.label}>
               <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-[14px] font-medium text-[#17372a]">{m.label}</dt>
+                <dt className="text-[14px] font-medium text-[#17372a]">
+                  {m.label}
+                </dt>
                 <dd className="text-[13px] text-[#5f7765] tabular-nums">
                   {nf.format(m.baseline)} → {nf.format(m.current)}
                   {improved ? (
@@ -62,11 +73,17 @@ export default function MeasurementBlock({ context, metrics }: MeasurementBlockP
 
       <p className="mt-6 flex flex-wrap items-center gap-4 text-[13px] text-[#5f7765]">
         <span className="inline-flex items-center gap-2">
-          <span aria-hidden="true" className="h-[6px] w-[18px] rounded-[3px] bg-[#95c592]" />
+          <span
+            aria-hidden="true"
+            className="h-[6px] w-[18px] rounded-[3px] bg-[#95c592]"
+          />
           Nulmeting
         </span>
         <span className="inline-flex items-center gap-2">
-          <span aria-hidden="true" className="h-[6px] w-[18px] rounded-[3px] bg-[#286943]" />
+          <span
+            aria-hidden="true"
+            className="h-[6px] w-[18px] rounded-[3px] bg-[#286943]"
+          />
           Nu
         </span>
         <span className="ml-auto">Gemeten met Eve-M huidanalyse</span>

@@ -101,7 +101,7 @@ export default async function BehandelingPage({ params }: PageProps) {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
@@ -206,7 +206,7 @@ export default async function BehandelingPage({ params }: PageProps) {
         aria-label="Op deze pagina"
         className="sticky top-[var(--nav-h)] z-20 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur"
       >
-        <ul className="mx-auto flex max-w-[1800px] gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
+        <ul className="mx-auto flex gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (
             <li key={a.id}>
               <a
@@ -225,7 +225,7 @@ export default async function BehandelingPage({ params }: PageProps) {
         id="werking"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Wat het doet</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             {diepsteLaag ? "Waar het aankomt" : "Waarom er niets gebeurt"}
@@ -325,7 +325,7 @@ export default async function BehandelingPage({ params }: PageProps) {
         id="afspraak"
         className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>In de afspraak</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             Wat er gebeurt,
@@ -359,7 +359,7 @@ export default async function BehandelingPage({ params }: PageProps) {
         id="grenzen"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Wat het wel en niet doet</Label>
           <h2 className="diba-display-m mt-4 max-w-[24ch]">
             Even lang,
@@ -424,7 +424,7 @@ export default async function BehandelingPage({ params }: PageProps) {
         id="vragen"
         className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Vragen</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             Wat mensen
@@ -463,7 +463,7 @@ export default async function BehandelingPage({ params }: PageProps) {
 
       {/* ── Afsluiter ── */}
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Eerst meten</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">

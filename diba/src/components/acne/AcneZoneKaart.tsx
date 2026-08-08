@@ -24,7 +24,13 @@ import { publicCopy } from "@/lib/copy-flags";
  * werkt als aanwijzen op een tekening lastig is.
  */
 
-type Vorm = { readonly cx: number; readonly cy: number; readonly rx: number; readonly ry: number; readonly rot?: number };
+type Vorm = {
+  readonly cx: number;
+  readonly cy: number;
+  readonly rx: number;
+  readonly ry: number;
+  readonly rot?: number;
+};
 
 /**
  * De vlakken per zone, anatomisch geplaatst. Wangen en kaaklijn bestaan uit twee vormen.
@@ -47,7 +53,6 @@ const ZONE_VORMEN: Record<ZoneId, readonly Vorm[]> = {
   kin: [{ cx: 160, cy: 269, rx: 29, ry: 21 }],
   rug: [],
 };
-
 
 export default function AcneZoneKaart() {
   const [gekozen, setGekozen] = useState<ZoneId[]>([]);
@@ -90,7 +95,9 @@ export default function AcneZoneKaart() {
                   cy={v.cy}
                   rx={v.rx}
                   ry={v.ry}
-                  transform={v.rot ? `rotate(${v.rot} ${v.cx} ${v.cy})` : undefined}
+                  transform={
+                    v.rot ? `rotate(${v.rot} ${v.cx} ${v.cy})` : undefined
+                  }
                   role={i === 0 ? "checkbox" : undefined}
                   aria-checked={i === 0 ? actief(zone.id) : undefined}
                   aria-label={i === 0 ? zone.naam : undefined}
@@ -141,7 +148,9 @@ export default function AcneZoneKaart() {
               textAnchor="middle"
               className="fill-[var(--t-muted)] text-[11px] font-semibold uppercase [letter-spacing:0.14em]"
             >
-              {zweeft ? ACNE_ZONES.find((z) => z.id === zweeft)?.naam : "Tik een zone aan"}
+              {zweeft
+                ? ACNE_ZONES.find((z) => z.id === zweeft)?.naam
+                : "Tik een zone aan"}
             </text>
           </svg>
         </div>
@@ -173,9 +182,16 @@ export default function AcneZoneKaart() {
       </div>
 
       {/* ── De lezing ── */}
-      <div className="flex flex-col rounded-[var(--r-md)] bg-white p-6 sm:p-8" aria-live="polite">
+      <div
+        className="flex flex-col rounded-[var(--r-md)] bg-white p-6 sm:p-8"
+        aria-live="polite"
+      >
         <div className="flex items-center justify-between gap-4">
-          <Label>{gekozen.length === 0 ? "Nog niets gekozen" : `${gekozen.length} van 6 zones`}</Label>
+          <Label>
+            {gekozen.length === 0
+              ? "Nog niets gekozen"
+              : `${gekozen.length} van 6 zones`}
+          </Label>
           {gekozen.length > 0 ? (
             <button
               type="button"
@@ -201,15 +217,18 @@ export default function AcneZoneKaart() {
 
         {/* De eerlijkheidsclausule hoort hier, niet in kleine lettertjes onderaan. */}
         <p className="mt-5 text-sm leading-6 text-[var(--t-muted)]">
-          Dit is een patroonduiding, geen diagnose. Twee mensen met dezelfde zones kunnen
-          een ander plan krijgen. Daarom meten we voordat we behandelen.
+          Dit is een patroonduiding, geen diagnose. Twee mensen met dezelfde
+          zones kunnen een ander plan krijgen. Daarom meten we voordat we
+          behandelen.
         </p>
 
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
           <Button
             href={`/intake?topic=acne${gekozen.length ? `&zones=${gekozen.join(",")}` : ""}`}
           >
-            {gekozen.length ? "Neem dit mee naar de intake" : "Start je intake (4 min)"}
+            {gekozen.length
+              ? "Neem dit mee naar de intake"
+              : "Start je intake (4 min)"}
           </Button>
           <a
             href="#tijdlijn"

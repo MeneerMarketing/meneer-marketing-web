@@ -57,10 +57,19 @@ export const NAZORG_TRAJECTEN: readonly NazorgTraject[] = [
     intro: "[COPY-NODIG: nazorg-intro huidveroudering] [MEDISCHE-CHECK-ROJDA]",
     pillarHref: "/huidproblemen/huidveroudering",
     momenten: [
-      { label: "Direct na", tekst: "[COPY-NODIG: nazorg direct na anti-aging]" },
+      {
+        label: "Direct na",
+        tekst: "[COPY-NODIG: nazorg direct na anti-aging]",
+      },
       { label: "Eerste week", tekst: "[COPY-NODIG: nazorg week 1 anti-aging]" },
-      { label: "Eerste maand", tekst: "[COPY-NODIG: nazorg maand 1 anti-aging]" },
-      { label: "Thuisfase", tekst: "[COPY-NODIG: nazorg thuisfase anti-aging]" },
+      {
+        label: "Eerste maand",
+        tekst: "[COPY-NODIG: nazorg maand 1 anti-aging]",
+      },
+      {
+        label: "Thuisfase",
+        tekst: "[COPY-NODIG: nazorg thuisfase anti-aging]",
+      },
     ],
   },
   {
@@ -71,7 +80,10 @@ export const NAZORG_TRAJECTEN: readonly NazorgTraject[] = [
     momenten: [
       { label: "Direct na", tekst: "[COPY-NODIG: nazorg direct na laser]" },
       { label: "Eerste week", tekst: "[COPY-NODIG: nazorg week 1 laser]" },
-      { label: "Tussen sessies", tekst: "[COPY-NODIG: nazorg tussen sessies laser]" },
+      {
+        label: "Tussen sessies",
+        tekst: "[COPY-NODIG: nazorg tussen sessies laser]",
+      },
       { label: "Zon en zonnebank", tekst: "[COPY-NODIG: nazorg zon laser]" },
     ],
   },

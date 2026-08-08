@@ -31,7 +31,10 @@ type DibaLeafMarkProps = {
   size?: number;
 };
 
-export default function DibaLeafMark({ className = "", size }: DibaLeafMarkProps) {
+export default function DibaLeafMark({
+  className = "",
+  size,
+}: DibaLeafMarkProps) {
   return (
     <svg
       viewBox="28.9 40.8 43.4 43.2"

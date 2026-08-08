@@ -1,7 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { HOME_WERKWIJZE_STEPS, type WerkwijzeStep } from "@/data/home-werkwijze";
+import {
+  HOME_WERKWIJZE_STEPS,
+  type WerkwijzeStep,
+} from "@/data/home-werkwijze";
 
 type WerkwijzeStepsFlowProps = {
   className?: string;
@@ -49,7 +52,9 @@ function StepNode({
           WCAG AA. Nu op de labelmaat, met kleuren die wel meten. */}
       <span
         className={`diba-label mt-2 transition-colors duration-300 ${
-          active ? "text-[var(--g-700)]" : "text-[var(--t-muted)] group-hover:text-[var(--g-700)]"
+          active
+            ? "text-[var(--g-700)]"
+            : "text-[var(--t-muted)] group-hover:text-[var(--g-700)]"
         }`}
       >
         {STEP_TAGS[index] ?? `Stap ${index + 1}`}
@@ -82,7 +87,8 @@ export default function WerkwijzeStepsFlow({
     };
   }, [advance, paused]);
 
-  const progressPct = steps.length <= 1 ? 0 : (active / (steps.length - 1)) * 100;
+  const progressPct =
+    steps.length <= 1 ? 0 : (active / (steps.length - 1)) * 100;
 
   const cardBase =
     variant === "figma"
@@ -112,7 +118,10 @@ export default function WerkwijzeStepsFlow({
       {/* Desktop: timeline + kaarten in één grid */}
       <div className="hidden sm:grid sm:grid-cols-3 sm:gap-4">
         <div className="relative col-span-3 h-[4.5rem]">
-          <div className="absolute inset-x-0 top-[22px] h-px bg-[var(--g-100)]" aria-hidden />
+          <div
+            className="absolute inset-x-0 top-[22px] h-px bg-[var(--g-100)]"
+            aria-hidden
+          />
           <div
             className="absolute left-0 top-[22px] h-px origin-left bg-gradient-to-r from-[var(--g-400)] via-[var(--g-400)] to-[var(--on-dark-accent)] transition-[width] duration-700 ease-out"
             style={{ width: `${progressPct}%` }}
@@ -218,10 +227,14 @@ function StepCard({
       }`}
       aria-pressed={active}
     >
-      <h3 className={`${titleClass} ${active ? "text-[var(--g-700)]" : "text-[var(--t-strong)]"}`}>
+      <h3
+        className={`${titleClass} ${active ? "text-[var(--g-700)]" : "text-[var(--t-strong)]"}`}
+      >
         {step.title}
       </h3>
-      <p className={`${bodyClass} ${active ? "text-[var(--t-body)]" : ""}`}>{step.body}</p>
+      <p className={`${bodyClass} ${active ? "text-[var(--t-body)]" : ""}`}>
+        {step.body}
+      </p>
     </button>
   );
 }

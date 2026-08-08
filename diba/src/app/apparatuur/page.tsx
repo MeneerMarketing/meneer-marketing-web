@@ -55,7 +55,7 @@ export default function ApparatuurPage() {
           aria-hidden="true"
           className="pointer-events-none absolute top-16 right-24 hidden h-[170px] w-[170px] rotate-12 text-[var(--g-200)] lg:block"
         />
-        <div className="relative mx-auto max-w-[1800px] px-5 pt-12 pb-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+        <div className="relative mx-auto px-5 pt-12 pb-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
           <nav
             aria-label="Kruimelpad"
             className="diba-label flex flex-wrap gap-2"
@@ -88,7 +88,7 @@ export default function ApparatuurPage() {
 
       {/* ── De stelling ── */}
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16">
               <div>
@@ -126,7 +126,7 @@ export default function ApparatuurPage() {
 
       {/* ── Alles op één schaal ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="max-w-[62ch]">
             <Label>Naast elkaar</Label>
             <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -151,7 +151,7 @@ export default function ApparatuurPage() {
 
       {/* ── De apparaten ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px] space-y-16">
+        <div className="mx-auto space-y-16">
           {perCategorie.map((c) => (
             <div key={c.id}>
               <Label>{c.label}</Label>
@@ -190,7 +190,7 @@ export default function ApparatuurPage() {
 
       {/* ── Verder ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Verder</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">

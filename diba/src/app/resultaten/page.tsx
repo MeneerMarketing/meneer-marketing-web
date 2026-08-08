@@ -12,7 +12,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Resultaten",
-  description: "Voor/na-resultaten bij Diba Clinics, met sessies, tijdlijn en huidtype.",
+  description:
+    "Voor/na-resultaten bij Diba Clinics, met sessies, tijdlijn en huidtype.",
   ...NOG_IN_AANBOUW,
 };
 
@@ -21,10 +22,7 @@ export default function ResultatenPage() {
     <main className="pb-20">
       <section className={`${figmaInnerContainer} ${figmaSection}`} data-reveal>
         <FigmaBreadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Resultaten" },
-          ]}
+          items={[{ label: "Home", href: "/" }, { label: "Resultaten" }]}
         />
         <p className={figmaLabel}>Resultaten</p>
         <FigmaHeading
@@ -34,8 +32,9 @@ export default function ResultatenPage() {
           className="mt-4 max-w-3xl"
         />
         <p className={`mt-7 max-w-2xl ${figmaBody}`}>
-          Voor/na-beelden volgen het protocol: sessies, tijdlijn en huidtype staan er altijd bij.
-          Tot Aleks levert: dev-placeholders met het juiste kader.
+          Voor/na-beelden volgen het protocol: sessies, tijdlijn en huidtype
+          staan er altijd bij. Tot Aleks levert: dev-placeholders met het juiste
+          kader.
         </p>
       </section>
       <ResultatenGallery />

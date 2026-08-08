@@ -81,7 +81,13 @@ const VAATJES = [
 const KANTEL_LAAG = 34;
 const KANTEL_HOOG = 66;
 
-function Huidvlak({ blootgesteld, uid }: { blootgesteld: boolean; uid: string }) {
+function Huidvlak({
+  blootgesteld,
+  uid,
+}: {
+  blootgesteld: boolean;
+  uid: string;
+}) {
   /* Huid heeft van dichtbij een ruitjespatroon van piepkleine groefjes. Dat patroon
      wordt met de jaren en vooral met zon grover en onregelmatiger, en dat is precies
      wat je hier ziet: links fijn en gelijkmatig, rechts groot en grof. */
@@ -116,7 +122,12 @@ function Huidvlak({ blootgesteld, uid }: { blootgesteld: boolean; uid: string })
       </defs>
 
       <rect width="1200" height="420" fill="var(--g-050)" />
-      <rect width="1200" height="420" fill={`url(#${patroonId})`} opacity={0.9} />
+      <rect
+        width="1200"
+        height="420"
+        fill={`url(#${patroonId})`}
+        opacity={0.9}
+      />
 
       {blootgesteld ? (
         <>
@@ -167,7 +178,11 @@ export default function Onderarmtest() {
   const uid = useId().replace(/:/g, "");
 
   const kant =
-    stand >= KANTEL_HOOG ? "beschut" : stand <= KANTEL_LAAG ? "blootgesteld" : "beide";
+    stand >= KANTEL_HOOG
+      ? "beschut"
+      : stand <= KANTEL_LAAG
+        ? "blootgesteld"
+        : "beide";
   const lezing =
     kant === "beschut"
       ? ONDERARM.beschut.lezing
@@ -199,8 +214,17 @@ export default function Onderarmtest() {
           aria-hidden="true"
         >
           <span className="absolute top-1/2 left-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[var(--r-pill)] border border-[var(--g-100)] bg-white text-[var(--g-700)] shadow-[var(--shadow-float)]">
-            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor">
-              <path d="M9 6 4 12l5 6M15 6l5 6-5 6" strokeWidth="2" strokeLinecap="round" />
+            <svg
+              viewBox="0 0 24 24"
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                d="M9 6 4 12l5 6M15 6l5 6-5 6"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
             </svg>
           </span>
         </div>
@@ -247,7 +271,9 @@ export default function Onderarmtest() {
         <div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <Label>{ONDERARM.beschut.label}</Label>
-            <span className="text-sm text-[var(--t-muted)]">{ONDERARM.beschut.onder}</span>
+            <span className="text-sm text-[var(--t-muted)]">
+              {ONDERARM.beschut.onder}
+            </span>
           </div>
           <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2">
             <Label>{ONDERARM.blootgesteld.label}</Label>
@@ -258,10 +284,12 @@ export default function Onderarmtest() {
         </div>
 
         <div aria-live="polite">
-          <p className="text-[16px] leading-7 text-[var(--t-body)]">{publicCopy(lezing)}</p>
+          <p className="text-[16px] leading-7 text-[var(--t-body)]">
+            {publicCopy(lezing)}
+          </p>
           <p className="mt-4 border-l-2 border-[var(--g-300)] pl-4 text-[16px] leading-7 text-[var(--t-strong)]">
-            Allebei die stukken huid zijn precies even oud. Wat je rechts extra ziet is
-            opgebouwd, niet meegegroeid.
+            Allebei die stukken huid zijn precies even oud. Wat je rechts extra
+            ziet is opgebouwd, niet meegegroeid.
           </p>
         </div>
       </div>

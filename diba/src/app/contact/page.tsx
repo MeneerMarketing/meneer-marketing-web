@@ -90,7 +90,7 @@ export default function ContactPage() {
       />
 
       {/* ── Hero: het adres, en meteen de drie manieren ── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
@@ -176,7 +176,7 @@ export default function ContactPage() {
 
       {/* ── De ingangkiezer: de signatuur van deze pagina ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="max-w-[62ch]">
             <Label>Welke vraag, welk kanaal</Label>
             <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -200,7 +200,7 @@ export default function ContactPage() {
 
       {/* ── Wat er op afstand niet kan ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
               <div>
@@ -236,7 +236,7 @@ export default function ContactPage() {
 
       {/* ── Route ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Route</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">

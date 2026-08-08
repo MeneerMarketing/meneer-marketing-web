@@ -23,7 +23,11 @@ import {
 } from "@/data/porien";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Poriën — zesde eigen pagina, met de kortste en scherpste boodschap van allemaal.
@@ -65,7 +69,10 @@ const SOORTEN: readonly SoortOptie[] = PORIEN_SOORTEN.map((s) => ({
     ["Wat het betekent", s.watHetBetekent],
     ["Wat wij doen", s.aanpak],
   ] as const,
-  uitgelicht: { label: "Wat mensen hier vaak verkeerd hebben", tekst: s.verwarring },
+  uitgelicht: {
+    label: "Wat mensen hier vaak verkeerd hebben",
+    tekst: s.verwarring,
+  },
 }));
 
 export default function PorienPage() {
@@ -80,10 +87,13 @@ export default function PorienPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -102,15 +112,15 @@ export default function PorienPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De doorsnede van een porie ligt vast in je aanleg. Wij beloven dus niet dat
-              ze kleiner worden, want dat kan niemand waarmaken. Dat is meteen het meest
-              gestelde ding op deze pagina uit de weg.
+              De doorsnede van een porie ligt vast in je aanleg. Wij beloven dus
+              niet dat ze kleiner worden, want dat kan niemand waarmaken. Dat is
+              meteen het meest gestelde ding op deze pagina uit de weg.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Er zijn wel drie dingen die je echt kunt veranderen, en samen schelen die
-              zoveel dat de meeste mensen denken dat hun poriën kleiner zijn geworden.
-              Hieronder mag je ze zelf aanzetten.
+              Er zijn wel drie dingen die je echt kunt veranderen, en samen
+              schelen die zoveel dat de meeste mensen denken dat hun poriën
+              kleiner zijn geworden. Hieronder mag je ze zelf aanzetten.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -150,7 +160,7 @@ export default function PorienPage() {
         id="knoppen"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Drie knoppen"
             kop="Zet ze aan"
@@ -162,8 +172,11 @@ export default function PorienPage() {
       </section>
 
       {/* ── Wat je ziet ────────────────────────────────────────────────── */}
-      <section id="welke" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="welke"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="Herkenning"
             kop="Vier beelden,"
@@ -179,8 +192,9 @@ export default function PorienPage() {
 
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-white p-6">
             <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Heb je er ook rode, ontstoken plekjes bij? Dan begint het verhaal daar, want
-              werken aan poriën in een ontstoken huid is dweilen met de kraan open.
+              Heb je er ook rode, ontstoken plekjes bij? Dan begint het verhaal
+              daar, want werken aan poriën in een ontstoken huid is dweilen met
+              de kraan open.
             </p>
             <Link
               href="/huidproblemen/acne"

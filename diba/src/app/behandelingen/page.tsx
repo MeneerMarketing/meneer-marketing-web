@@ -84,7 +84,7 @@ export default function BehandelingenPage() {
           className="pointer-events-none absolute top-16 right-16 hidden h-[210px] w-[210px] rotate-12 opacity-90 lg:block"
         />
 
-        <div className="relative mx-auto max-w-[1800px] px-5 pt-12 pb-16 sm:px-9 lg:px-[7.5vw] lg:pt-16 lg:pb-20">
+        <div className="relative mx-auto px-5 pt-12 pb-16 sm:px-9 lg:px-[7.5vw] lg:pt-16 lg:pb-20">
           <nav
             aria-label="Kruimelpad"
             className="diba-label flex flex-wrap gap-2"
@@ -152,7 +152,7 @@ export default function BehandelingenPage() {
 
       {/* ══ De huidreis ══ */}
       <section className="bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
             <div>
               <Label>Waarom diepte de kapstok is</Label>
@@ -180,7 +180,7 @@ export default function BehandelingenPage() {
         id="alles"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <Label>Alles op een rij</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             {BEHANDELINGEN.length} behandelingen.
@@ -201,7 +201,7 @@ export default function BehandelingenPage() {
 
       {/* ══ De eerlijke tegenhanger ══ */}
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto grid max-w-[1800px] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat hier niet staat</Label>
             <h2 className="diba-display-m mt-4 max-w-[14ch]">
@@ -238,7 +238,7 @@ export default function BehandelingenPage() {
 
       {/* ══ Afsluiter ══ */}
       <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <div className="relative overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-14">
             <DibaLeafMark
               aria-hidden="true"

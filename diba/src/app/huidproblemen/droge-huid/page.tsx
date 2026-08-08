@@ -21,7 +21,11 @@ import {
 } from "@/data/droge-huid";
 import { FIGMA_INTENT_VEROUDERING } from "@/data/figma-home-images";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Droge huid — tiende eigen pagina.
@@ -63,10 +67,13 @@ export default function DrogeHuidPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -85,14 +92,15 @@ export default function DrogeHuidPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Droog gaat over vet. Uitgedroogd gaat over water. Overal wordt dat als één
-              lijn getekend, van vet naar droog, en dat klopt niet. Je kunt een vette huid
-              hebben die uitgedroogd is.
+              Droog gaat over vet. Uitgedroogd gaat over water. Overal wordt dat
+              als één lijn getekend, van vet naar droog, en dat klopt niet. Je
+              kunt een vette huid hebben die uitgedroogd is.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Precies daar gaat het mis. Wie in het verkeerde vak zit, koopt jarenlang
-              producten die het andere probleem oplossen. Zet jezelf hieronder eens neer.
+              Precies daar gaat het mis. Wie in het verkeerde vak zit, koopt
+              jarenlang producten die het andere probleem oplossen. Zet jezelf
+              hieronder eens neer.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -130,7 +138,7 @@ export default function DrogeHuidPage() {
         id="matrix"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De huidmatrix"
             kop="Zet jezelf neer"
@@ -146,7 +154,7 @@ export default function DrogeHuidPage() {
         id="verwarring"
         className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="Drie misverstanden"
             kop="Dit horen we"
@@ -158,16 +166,18 @@ export default function DrogeHuidPage() {
             {VERWARRINGEN.map((v) => (
               <li key={v.vraag} className="bg-white p-6 sm:p-8">
                 <h3 className="diba-card-title">{v.vraag}</h3>
-                <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">{v.antwoord}</p>
+                <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                  {v.antwoord}
+                </p>
               </li>
             ))}
           </ul>
 
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
             <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Verdraagt je huid steeds minder producten en wordt hij snel rood? Dan is een
-              droge huid vaak het gevolg en niet de oorzaak, en begint het verhaal ergens
-              anders.
+              Verdraagt je huid steeds minder producten en wordt hij snel rood?
+              Dan is een droge huid vaak het gevolg en niet de oorzaak, en
+              begint het verhaal ergens anders.
             </p>
             <Link
               href="/huidproblemen/gevoelige-huid"

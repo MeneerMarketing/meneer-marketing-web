@@ -11,8 +11,18 @@ import PriceTable from "@/components/ui/PriceTable";
 import ProofStrip from "@/components/ui/ProofStrip";
 import ReviewCard from "@/components/ui/ReviewCard";
 import StickyActionBar from "@/components/ui/StickyActionBar";
-import { figmaBtnMint, figmaBtnPrimary, figmaHomeShell } from "@/lib/figma-home-layout";
-import { figmaBody, figmaCardWhite, figmaInnerContainer, figmaLabel, figmaSection } from "@/lib/figma-inner-layout";
+import {
+  figmaBtnMint,
+  figmaBtnPrimary,
+  figmaHomeShell,
+} from "@/lib/figma-home-layout";
+import {
+  figmaBody,
+  figmaCardWhite,
+  figmaInnerContainer,
+  figmaLabel,
+  figmaSection,
+} from "@/lib/figma-inner-layout";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -66,11 +76,16 @@ export default function DevComponentsPage() {
     <div className={figmaHomeShell}>
       <main className={`${figmaInnerContainer} ${figmaSection} pb-24`}>
         <p className={`mb-10 max-w-2xl ${figmaBody}`}>
-          Figma design system review. Niet indexeren. Alle kerncomponenten na site-wide migratie.
+          Figma design system review. Niet indexeren. Alle kerncomponenten na
+          site-wide migratie.
         </p>
 
         <div className="mb-12 flex flex-col gap-6">
-          <FigmaHeading as="h1" size="hero" text="Eerlijk advies voor *jouw* huid" />
+          <FigmaHeading
+            as="h1"
+            size="hero"
+            text="Eerlijk advies voor *jouw* huid"
+          />
           <FigmaHeading as="h2" size="section" text="Is het *nodig*?" />
           <DeLijn length="lang" dot={62} />
         </div>
@@ -79,14 +94,20 @@ export default function DevComponentsPage() {
           <div className="flex max-w-md flex-col items-start gap-3">
             <span className={figmaBtnPrimary}>Start je intake (4 min) ↗</span>
             <span className={figmaBtnMint}>Bekijk alle prijzen ↗</span>
-            <Link href="/contact" className="text-[14px] font-medium text-[#286943] underline-offset-4 hover:underline">
+            <Link
+              href="/contact"
+              className="text-[14px] font-medium text-[#286943] underline-offset-4 hover:underline"
+            >
               Nog niet zeker? Stel je vraag
             </Link>
           </div>
         </DevSection>
 
         <DevSection title="Proof-strip">
-          <ProofStrip items={[...DIBA_PROOF_STRIP_ITEMS]} highlightLabel="Klantreviews" />
+          <ProofStrip
+            items={[...DIBA_PROOF_STRIP_ITEMS]}
+            highlightLabel="Klantreviews"
+          />
         </DevSection>
 
         <DevSection title="Reviewkaart">
@@ -108,7 +129,12 @@ export default function DevComponentsPage() {
 
         <DevSection title="Formuliervelden">
           <div className="flex max-w-md flex-col gap-6">
-            <TextField id="email" label="E-mailadres" type="email" placeholder="naam@voorbeeld.nl" />
+            <TextField
+              id="email"
+              label="E-mailadres"
+              type="email"
+              placeholder="naam@voorbeeld.nl"
+            />
             <TextField
               id="email-err"
               label="E-mailadres"
@@ -125,8 +151,13 @@ export default function DevComponentsPage() {
         </DevSection>
 
         <DevSection title="Prijstabel" wide>
-          <div className={`${figmaCardWhite} max-w-2xl overflow-x-auto p-6 sm:p-8`}>
-            <PriceTable caption="[COPY-NODIG: tabeltitel]" rows={[...DEV_PRICE_ROWS]} />
+          <div
+            className={`${figmaCardWhite} max-w-2xl overflow-x-auto p-6 sm:p-8`}
+          >
+            <PriceTable
+              caption="[COPY-NODIG: tabeltitel]"
+              rows={[...DEV_PRICE_ROWS]}
+            />
           </div>
         </DevSection>
 
@@ -167,7 +198,9 @@ export default function DevComponentsPage() {
           className="mt-12 min-h-[120vh] rounded-[1.5rem] border border-dashed border-[#dce8d9] bg-[#f2f7ef] p-6 md:hidden"
           aria-hidden="true"
         >
-          <p className={figmaBody}>Scroll-zone voor sticky actiebalk-test (alleen mobiel).</p>
+          <p className={figmaBody}>
+            Scroll-zone voor sticky actiebalk-test (alleen mobiel).
+          </p>
         </div>
       </main>
 

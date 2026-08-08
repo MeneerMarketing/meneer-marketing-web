@@ -175,7 +175,7 @@ export default function PillarTemplate({
         className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
         data-reveal
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <p className={figmaLabel}>Eerlijk advies</p>
           <FigmaHeading
             as="h2"
@@ -253,7 +253,7 @@ export default function PillarTemplate({
           className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
           data-reveal
         >
-          <div className="mx-auto max-w-[1800px]">
+          <div className="mx-auto">
             <p className={figmaLabel}>Nazorg</p>
             <div className="mt-4 [&_h2]:text-3xl [&_h2]:font-medium [&_h2]:tracking-[-.06em] [&_h2]:text-[#17372a]">
               <NazorgTijdlijn

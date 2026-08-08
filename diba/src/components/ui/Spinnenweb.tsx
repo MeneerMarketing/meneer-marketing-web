@@ -24,7 +24,11 @@ const R = 116;
 const RINGEN = [0.3, 0.55, 0.8, 1];
 
 /** Hoek per as: de eerste as recht omhoog, daarna met de klok mee. */
-export function punt(index: number, straal: number, aantal = SCAN_ASSEN.length) {
+export function punt(
+  index: number,
+  straal: number,
+  aantal = SCAN_ASSEN.length,
+) {
   const hoek = ((-90 + index * (360 / aantal)) * Math.PI) / 180;
   return [CX + straal * Math.cos(hoek), CY + straal * Math.sin(hoek)] as const;
 }
@@ -114,7 +118,9 @@ export default function Spinnenweb({
                 key={as.id}
                 x={x}
                 y={y + 4}
-                textAnchor={x > CX + 4 ? "start" : x < CX - 4 ? "end" : "middle"}
+                textAnchor={
+                  x > CX + 4 ? "start" : x < CX - 4 ? "end" : "middle"
+                }
                 fontSize="12"
                 fill="var(--t-muted)"
               >

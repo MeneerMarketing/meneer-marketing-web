@@ -61,7 +61,11 @@ const PORIEN = [
 type Aan = Record<Knop["id"], boolean>;
 
 export default function DrieKnoppen() {
-  const [aan, setAan] = useState<Aan>({ inhoud: false, spanning: false, talg: false });
+  const [aan, setAan] = useState<Aan>({
+    inhoud: false,
+    spanning: false,
+    talg: false,
+  });
   const [uitlegOpen, setUitlegOpen] = useState(false);
   const uid = useId().replace(/:/g, "");
   const uitlegId = `${uid}-vierde`;
@@ -121,7 +125,12 @@ export default function DrieKnoppen() {
             </defs>
 
             <rect width="520" height="300" fill="var(--g-050)" />
-            <rect width="520" height="300" fill={`url(#${uid}-korrel)`} opacity="0.7" />
+            <rect
+              width="520"
+              height="300"
+              fill={`url(#${uid}-korrel)`}
+              opacity="0.7"
+            />
 
             <rect
               width="520"
@@ -176,8 +185,8 @@ export default function DrieKnoppen() {
         </div>
 
         <p className="mt-5 text-sm leading-6 text-[var(--t-muted)]">
-          Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn in elke
-          stand precies even groot.
+          Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn
+          in elke stand precies even groot.
         </p>
       </div>
 
@@ -252,7 +261,11 @@ export default function DrieKnoppen() {
                 aria-hidden="true"
                 className="relative flex h-7 w-12 shrink-0 items-center justify-end rounded-[var(--r-pill)] bg-[var(--g-050)] pr-1.5"
               >
-                <svg viewBox="0 0 24 24" className="h-4 w-4 text-[var(--t-muted)]" fill="none">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-4 w-4 text-[var(--t-muted)]"
+                  fill="none"
+                >
                   <path
                     d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z"
                     stroke="currentColor"
@@ -277,10 +290,15 @@ export default function DrieKnoppen() {
         </div>
 
         {/* ── De uitkomst ── */}
-        <div className="mt-8 border-t border-[var(--g-100)] pt-6" aria-live="polite">
+        <div
+          className="mt-8 border-t border-[var(--g-100)] pt-6"
+          aria-live="polite"
+        >
           <Label>{`${telAan} van 3 aangepakt`}</Label>
           <h3 className="diba-card-title-lg mt-3">{uitkomst.kop}</h3>
-          <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">{uitkomst.tekst}</p>
+          <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
+            {uitkomst.tekst}
+          </p>
         </div>
       </div>
     </div>

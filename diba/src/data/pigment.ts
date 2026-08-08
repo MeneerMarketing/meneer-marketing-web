@@ -39,7 +39,8 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "Januari",
     kort: "jan",
     uv: 0.6,
-    watGebeurt: "Nauwelijks UV. Pigment dat in de zomer opkwam is nu op zijn lichtst.",
+    watGebeurt:
+      "Nauwelijks UV. Pigment dat in de zomer opkwam is nu op zijn lichtst.",
     startAdvies:
       "Uitstekend moment. Je hebt vier maanden voordat de zon weer meedoet, en dat is precies wat een pigmenttraject nodig heeft.",
     start: "goed",
@@ -56,7 +57,8 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "Maart",
     kort: "mrt",
     uv: 2.1,
-    watGebeurt: "De UV klimt sneller dan mensen denken. Op een heldere dag telt maart al mee.",
+    watGebeurt:
+      "De UV klimt sneller dan mensen denken. Op een heldere dag telt maart al mee.",
     startAdvies:
       "Kan nog, maar dan wel met zonbescherming vanaf dag één. Anders werken we tegen de zon in.",
     start: "kan",
@@ -75,7 +77,8 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "Mei",
     kort: "mei",
     uv: 4.6,
-    watGebeurt: "Hoge UV. Pigmentcellen zijn actief en reageren op elke prikkel.",
+    watGebeurt:
+      "Hoge UV. Pigmentcellen zijn actief en reageren op elke prikkel.",
     startAdvies:
       "Liever niet. Behandelen nu geeft een grote kans dat het pigment terugkomt of donkerder wordt.",
     start: "liever-niet",
@@ -84,7 +87,8 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "Juni",
     kort: "jun",
     uv: 5.4,
-    watGebeurt: "De piek van het jaar. Dit is het moment waarop pigment het snelst verergert.",
+    watGebeurt:
+      "De piek van het jaar. Dit is het moment waarop pigment het snelst verergert.",
     startAdvies:
       "Nee. Dit is het slechtste moment van het jaar. Wij zeggen dit ook als je nú wilt beginnen.",
     start: "liever-niet",
@@ -93,8 +97,10 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "Juli",
     kort: "jul",
     uv: 5.3,
-    watGebeurt: "Nog steeds piek. Vakantie en zon maken het beeld onvoorspelbaar.",
-    startAdvies: "Nee. Kom terug in september, dan hebben we een eerlijke start.",
+    watGebeurt:
+      "Nog steeds piek. Vakantie en zon maken het beeld onvoorspelbaar.",
+    startAdvies:
+      "Nee. Kom terug in september, dan hebben we een eerlijke start.",
     start: "liever-niet",
   },
   {
@@ -110,7 +116,8 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "September",
     kort: "sep",
     uv: 3.2,
-    watGebeurt: "De UV zakt. Dit is de maand waarin het pigment zijn donkerste stand laat zien.",
+    watGebeurt:
+      "De UV zakt. Dit is de maand waarin het pigment zijn donkerste stand laat zien.",
     startAdvies:
       "Vanaf nu wordt het interessant. Meten in september geeft het eerlijkste vertrekpunt van het jaar.",
     start: "kan",
@@ -119,7 +126,8 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "Oktober",
     kort: "okt",
     uv: 1.8,
-    watGebeurt: "Laag genoeg om te behandelen zonder dat de zon het werk ongedaan maakt.",
+    watGebeurt:
+      "Laag genoeg om te behandelen zonder dat de zon het werk ongedaan maakt.",
     startAdvies:
       "Het beste startmoment. Je hebt vijf maanden met lage UV vóór je, en dat is precies genoeg.",
     start: "goed",
@@ -128,7 +136,8 @@ export const ZONJAAR: readonly Maand[] = [
     naam: "November",
     kort: "nov",
     uv: 0.8,
-    watGebeurt: "Minimale UV. De huid herstelt en het pigment trekt langzaam weg.",
+    watGebeurt:
+      "Minimale UV. De huid herstelt en het pigment trekt langzaam weg.",
     startAdvies: "Uitstekend moment. Rustig opbouwen kan nu zonder haast.",
     start: "goed",
   },
@@ -160,7 +169,8 @@ export const PIGMENT_SOORTEN: readonly PigmentSoort[] = [
   {
     id: "zonschade",
     naam: "Losse, scherp begrensde vlekken",
-    klanttaal: "Bruine vlekjes met een duidelijke rand, vooral waar de zon komt",
+    klanttaal:
+      "Bruine vlekjes met een duidelijke rand, vooral waar de zon komt",
     vakterm: "lentigines, zonschade",
     patroon:
       "Op de uitstekende delen: jukbeen, neusbrug, voorhoofd, handrug en decolleté. Niet symmetrisch, elke vlek heeft zijn eigen vorm.",

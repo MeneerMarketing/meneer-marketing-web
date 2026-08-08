@@ -62,7 +62,7 @@ export default function FigmaVoorJouSection() {
 
   return (
     <section id="voorjou" className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-      <div className="mx-auto max-w-[1800px]">
+      <div className="mx-auto">
         <div className="grid gap-8 lg:grid-cols-[.7fr_1.3fr]">
           <div>
             <Label>Voor jou</Label>
@@ -71,8 +71,9 @@ export default function FigmaVoorJouSection() {
             <h2 className="diba-display-s mt-4">Waar wil je hulp bij?</h2>
           </div>
           <p className="max-w-xl self-end text-[15px] leading-7 text-[var(--t-body)]">
-            Of je nu last hebt van acne, pigment, ongewenste haargroei of een huid die veranderd
-            voelt: we beginnen bij wat jouw huid écht nodig heeft.
+            Of je nu last hebt van acne, pigment, ongewenste haargroei of een
+            huid die veranderd voelt: we beginnen bij wat jouw huid écht nodig
+            heeft.
           </p>
         </div>
 
@@ -117,7 +118,10 @@ export default function FigmaVoorJouSection() {
             <p className="mt-4 max-w-md text-[15px] leading-7 text-[var(--t-body)]">
               {selectedIntent.subtitle}
             </p>
-            <Button href={`/intake?topic=${selectedIntent.id}`} className="mt-8 w-fit">
+            <Button
+              href={`/intake?topic=${selectedIntent.id}`}
+              className="mt-8 w-fit"
+            >
               Bespreek dit met ons
             </Button>
           </div>

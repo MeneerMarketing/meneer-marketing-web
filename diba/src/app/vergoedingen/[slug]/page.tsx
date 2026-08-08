@@ -26,7 +26,9 @@ export function generateStaticParams() {
   return INSURERS.map((i) => ({ slug: i.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const insurer = insurerBySlug(slug);
   if (!insurer) return { title: "Vergoedingen" };
@@ -49,7 +51,10 @@ export default async function InsurerPage({ params }: PageProps) {
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: PAGE_DEFAULTS.siteUrl },
-          { name: "Vergoedingen", url: `${PAGE_DEFAULTS.siteUrl}/vergoedingen` },
+          {
+            name: "Vergoedingen",
+            url: `${PAGE_DEFAULTS.siteUrl}/vergoedingen`,
+          },
           {
             name: insurer.name,
             url: `${PAGE_DEFAULTS.siteUrl}/vergoedingen/${insurer.slug}`,
@@ -77,7 +82,10 @@ export default async function InsurerPage({ params }: PageProps) {
         </p>
       </section>
 
-      <section className={`${figmaInnerContainer} ${figmaSectionTight}`} data-reveal>
+      <section
+        className={`${figmaInnerContainer} ${figmaSectionTight}`}
+        data-reveal
+      >
         <div className="mx-auto flex max-w-3xl flex-col gap-6">
           <article className={`${figmaCardSoft} p-7 sm:p-9`}>
             <FigmaHeading as="h2" size="card" text="Wat *vergoed* wordt" />
@@ -94,7 +102,9 @@ export default async function InsurerPage({ params }: PageProps) {
             </p>
           </article>
           <p className={figmaBody}>
-            {publicCopy("[COPY-NODIG: vergoedingen-disclaimer] Controleer altijd je eigen polis.")}
+            {publicCopy(
+              "[COPY-NODIG: vergoedingen-disclaimer] Controleer altijd je eigen polis.",
+            )}
           </p>
         </div>
       </section>

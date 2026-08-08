@@ -22,7 +22,11 @@ import {
   MELASMA_WIJ_DOEN_NIET,
 } from "@/data/melasma";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * Melasma — negende eigen pagina.
@@ -73,10 +77,13 @@ export default function MelasmaPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1800px] px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <nav aria-label="Kruimelpad" className="diba-label flex flex-wrap gap-2">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
               <Link href="/" className="hover:text-[var(--g-700)]">
                 Home
               </Link>
@@ -95,15 +102,15 @@ export default function MelasmaPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Bij melasma bepaalt de diepte van het pigment wat er mogelijk is, en die zie
-              je in gewoon licht niet. Twee vlekken die er identiek uitzien kunnen totaal
-              anders reageren.
+              Bij melasma bepaalt de diepte van het pigment wat er mogelijk is,
+              en die zie je in gewoon licht niet. Twee vlekken die er identiek
+              uitzien kunnen totaal anders reageren.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Daarom begint het hier met kijken en niet met behandelen. Zit het diep, dan
-              raden we het af, want dit is de enige aandoening waarbij harder werken je
-              verder van huis brengt.
+              Daarom begint het hier met kijken en niet met behandelen. Zit het
+              diep, dan raden we het af, want dit is de enige aandoening waarbij
+              harder werken je verder van huis brengt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -141,7 +148,7 @@ export default function MelasmaPage() {
         id="diepte"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto max-w-[1800px]">
+        <div className="mx-auto">
           <SectieKop
             label="De woodlamp"
             kop="Wat je in gewoon licht"
@@ -153,8 +160,11 @@ export default function MelasmaPage() {
       </section>
 
       {/* ── De drie kranen ─────────────────────────────────────────────── */}
-      <section id="kranen" className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto max-w-[1800px]">
+      <section
+        id="kranen"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
           <SectieKop
             label="De drie kranen"
             kop="Melasma heeft een kraan."
@@ -186,9 +196,9 @@ export default function MelasmaPage() {
 
           <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
             <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Bescherming is bij melasma geen advies naast de behandeling maar een deel van
-              de behandeling zelf. Zonder dat werkt de rest niet, en dat is de reden dat we
-              er hier zo lang over doorgaan.
+              Bescherming is bij melasma geen advies naast de behandeling maar
+              een deel van de behandeling zelf. Zonder dat werkt de rest niet,
+              en dat is de reden dat we er hier zo lang over doorgaan.
             </p>
             <Link
               href="/huidproblemen/pigmentvlekken"

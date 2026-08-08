@@ -26,13 +26,15 @@ export const KNOPPEN: readonly Knop[] = [
     id: "inhoud",
     label: "Inhoud eruit",
     aanTekst: "De donkere kern is weg, dus de porie oogt meteen kleiner.",
-    uitTekst: "Een gevulde porie leest als een donkere stip en lijkt daardoor groter.",
+    uitTekst:
+      "Een gevulde porie leest als een donkere stip en lijkt daardoor groter.",
     hoe: "Reinigen dat bij jouw huid past, en waar nodig een behandeling die de porie leegt. Niet uitknijpen: dat maakt de opening juist wijder. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     id: "spanning",
     label: "Huid eromheen steviger",
-    aanTekst: "De opening trekt rond in plaats van uitgerekt, en valt minder op.",
+    aanTekst:
+      "De opening trekt rond in plaats van uitgerekt, en valt minder op.",
     uitTekst:
       "Bij minder stevige huid zakt de opening uit tot een druppelvorm, vooral op de wangen.",
     hoe: "Hier werken we aan de huid rondom de porie en niet aan de porie zelf. Dat is het verschil tussen minder zichtbaar en kleiner. [MEDISCHE-CHECK-ROJDA]",
@@ -40,8 +42,10 @@ export const KNOPPEN: readonly Knop[] = [
   {
     id: "talg",
     label: "Minder glans erop",
-    aanTekst: "Zonder glans werpt de rand geen schaduw meer en verdwijnt het reliëf.",
-    uitTekst: "Een glanzend oppervlak zet elke porierand aan met een schaduwtje.",
+    aanTekst:
+      "Zonder glans werpt de rand geen schaduw meer en verdwijnt het reliëf.",
+    uitTekst:
+      "Een glanzend oppervlak zet elke porierand aan met een schaduwtje.",
     hoe: "Deels verzorging, deels behandeling. Dit is ook de reden dat je poriën op foto's met flits altijd erger lijken dan ze zijn.",
   },
 ] as const;
@@ -111,7 +115,8 @@ export const PORIEN_SOORTEN = [
   {
     id: "verwijd",
     naam: "Zichtbaar wijde poriën",
-    klanttaal: "Poriën die je van dichtbij duidelijk ziet, zonder dat er iets in zit",
+    klanttaal:
+      "Poriën die je van dichtbij duidelijk ziet, zonder dat er iets in zit",
     vakterm: "verwijde poriën",
     watJeZiet:
       "Openingen die opvallen op de wangen en neusvleugels, vaak in de vorm van een druppel in plaats van rond.",

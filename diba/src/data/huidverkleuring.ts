@@ -35,11 +35,13 @@ export const KLEUREN: readonly Kleur[] = [
     staal: "var(--warn)",
     watHetIs:
       "Meer pigment dan de huid eromheen. De vraag die telt is niet hoe donker maar waaróm het er zit, want dat bepaalt wat er mogelijk is. [MEDISCHE-CHECK-ROJDA]",
-    vraag: "Kwam het geleidelijk met de jaren, of kwam het in vlakken tegelijk?",
+    vraag:
+      "Kwam het geleidelijk met de jaren, of kwam het in vlakken tegelijk?",
     routes: [
       {
         naam: "Pigmentvlekken",
-        wanneer: "Losse plekjes die er tien jaar geleden niet zaten, vooral waar zon komt.",
+        wanneer:
+          "Losse plekjes die er tien jaar geleden niet zaten, vooral waar zon komt.",
         pad: "/huidproblemen/pigmentvlekken",
       },
       {
@@ -71,7 +73,8 @@ export const KLEUREN: readonly Kleur[] = [
       },
       {
         naam: "Acne",
-        wanneer: "Rode plekjes met bultjes of puistjes erin, die komen en gaan.",
+        wanneer:
+          "Rode plekjes met bultjes of puistjes erin, die komen en gaan.",
         pad: "/huidproblemen/acne",
       },
       {
@@ -82,7 +85,8 @@ export const KLEUREN: readonly Kleur[] = [
       },
       {
         naam: "Littekens",
-        wanneer: "Eén rode streep of plek op de plaats van een oude wond of van striae.",
+        wanneer:
+          "Eén rode streep of plek op de plaats van een oude wond of van striae.",
         pad: "/huidproblemen/littekens",
       },
     ],
@@ -93,11 +97,13 @@ export const KLEUREN: readonly Kleur[] = [
     staal: "var(--litteken-oud)",
     watHetIs:
       "Minder pigment dan de huid eromheen. Dit is de lastigste categorie, want verloren pigment komt zelden terug en een deel hoort bij de huisarts. [MEDISCHE-CHECK-ROJDA]",
-    vraag: "Zit het op één oude plek, of komen er verspreid nieuwe plekken bij?",
+    vraag:
+      "Zit het op één oude plek, of komen er verspreid nieuwe plekken bij?",
     routes: [
       {
         naam: "Littekens en striae",
-        wanneer: "Eén plek die precies samenvalt met een oud litteken of oude striae.",
+        wanneer:
+          "Eén plek die precies samenvalt met een oud litteken of oude striae.",
         pad: "/huidproblemen/littekens",
       },
       {
@@ -118,12 +124,14 @@ export const KLEUREN: readonly Kleur[] = [
     routes: [
       {
         naam: "Donkere kringen",
-        wanneer: "Onder de ogen, blauwpaars van tint, en het wisselt met slaap en vocht.",
+        wanneer:
+          "Onder de ogen, blauwpaars van tint, en het wisselt met slaap en vocht.",
         pad: "/huidproblemen/donkere-kringen",
       },
       {
         naam: "Littekens en striae",
-        wanneer: "Paarse strepen op buik, dijen of borsten, vaak nog vrij nieuw.",
+        wanneer:
+          "Paarse strepen op buik, dijen of borsten, vaak nog vrij nieuw.",
         pad: "/huidproblemen/littekens",
       },
       {

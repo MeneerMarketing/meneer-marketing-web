@@ -74,7 +74,10 @@ export function Pulse(props: IconProps) {
 }
 
 /** Plus/min voor de FAQ. Draait naar een min bij `open`. */
-export function PlusMinus({ open = false, ...props }: IconProps & { open?: boolean }) {
+export function PlusMinus({
+  open = false,
+  ...props
+}: IconProps & { open?: boolean }) {
   return (
     <svg {...svgProps(props)}>
       <path d="M4.5 12h15" />
