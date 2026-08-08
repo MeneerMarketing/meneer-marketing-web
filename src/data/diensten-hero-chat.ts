@@ -19,9 +19,9 @@ export const DIENSTEN_CHAT_OPTIONS: readonly DienstenChatOption[] = [
     id: "strategie",
     anchor: "hub-strategie",
     label: "Strategie",
-    userReply: "Geen plan, wel budget",
+    userReply: "Budget zonder route",
     meneerReply:
-      "Dan beginnen we niet met ads. Eerst route. BestRest kreeg per productlijn een eigen koers, geen Canva-funnel.",
+      "Dan begin ik niet met ads. Eerst route: welk kanaal, welke volgorde, welke landings. Per productlijn kan dat anders zijn dan één Canva-funnel.",
     ctaLabel: "Naar strategie",
   },
   {
@@ -30,7 +30,7 @@ export const DIENSTEN_CHAT_OPTIONS: readonly DienstenChatOption[] = [
     label: "Iets bouwen",
     userReply: "Site of shop",
     meneerReply:
-      "From scratch. SkinComplete had om 2 uur 's nachts Excel-bestellingen. Nu een B2B-portaal dat 24/7 draait.",
+      "From scratch. Dealers bestelden om 2 uur 's nachts via mail en Excel. Nu een B2B-portaal dat 24/7 draait.",
     ctaLabel: "Naar bouwen",
   },
   {
