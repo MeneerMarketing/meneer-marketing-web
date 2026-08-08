@@ -7,7 +7,7 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
     "Ads, SEO, site, e-mail: wat eerst, wat later? Een eerlijk kader voor MKB zonder pakketten-praat en zonder 'het hangt ervan af' zonder uitleg.",
   publishedAt: "2026-06-28",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "strategie",
   keywords: [
     "marketingbudget verdelen",
@@ -46,7 +46,45 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
   sections: [
     {
       type: "p",
-      text: "De meest gestelde vraag in marketing is niet 'hoeveel moet ik uitgeven?' Het is 'waar moet ik beginnen als ik niet alles tegelijk kan betalen?' En dat is bijna iedereen. Je hebt een budget dat eindigt, een team dat al vol zit en een inbox met voorstellen van mensen die allemaal zeggen dat hun kanaal het belangrijkst is. Logisch dat je overweldigd raakt. Dit artikel is mijn antwoord. Geen universeel recept, wel een volgorde die in de praktijk het vaakst geld bespaart en omzet oplevert.",
+      text: "De meest gestelde vraag in marketing is niet 'hoeveel moet ik uitgeven?' Het is 'waar moet ik beginnen als ik niet alles tegelijk kan betalen?' En dat is bijna iedereen. Je hebt een budget dat eindigt, een team dat al vol zit en een inbox met voorstellen van mensen die allemaal zeggen dat hun kanaal het belangrijkst is. Logisch dat je overweldigd raakt. Dit artikel is mijn antwoord: een volgorde die in de praktijk het vaakst geld bespaart en omzet oplevert. Universeel recept bestaat niet. Risicobeheer wel.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Eerste-euro-test",
+      title: "Waar gaat je volgende €1.000 naartoe?",
+      prompt:
+        "Je hebt één zak geld deze maand. Kies. Ik zeg of je een hefboom pakt of een vuurwerkje.",
+      options: [
+        {
+          id: "pmax",
+          label: "Alles in Performance Max, want bereik",
+          verdict:
+            "Alleen als landings, feed en tracking al kloppen. Zo niet: je koopt een druk dashboard en een stil bankafschrift.",
+          tone: "ouch",
+        },
+        {
+          id: "site",
+          label: "Mobiele landings + checkout fixen",
+          verdict:
+            "Dit is hoe ik meestal begin. Elke latere euro ads of SEO werkt harder. Saai. Winstgevend.",
+          tone: "win",
+        },
+        {
+          id: "email",
+          label: "Cart-flow en lead-opvolging live zetten",
+          verdict:
+            "Sterk als je al traffic hebt die weglekt. Retentie vóór nieuwe jacht. Goedkoopste groei die er is.",
+          tone: "win",
+        },
+        {
+          id: "tiktok",
+          label: "Creators en TikTok, want iedereen zit daar",
+          verdict:
+            "Pas als product, marge en fundament staan. Hype zonder kassa is een feestje op kosten van je marge.",
+          tone: "meh",
+        },
+      ],
     },
     {
       type: "h2",

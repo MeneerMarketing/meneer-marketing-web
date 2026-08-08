@@ -7,7 +7,7 @@ export const REMARKETING_GOOGLE_ADS: KennisbankArticle = {
     "Bezoekers terugbrengen zonder irritatie. Frequentie, segmenten en creatives die converteren in plaats van mensen naar adblocker jagen.",
   publishedAt: "2026-07-07",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "remarketing google ads",
@@ -35,7 +35,7 @@ export const REMARKETING_GOOGLE_ADS: KennisbankArticle = {
     {
       question: "Moet ik converters uitsluiten?",
       answer:
-        "Bijna altijd, tenzij je upsell of consumables met korte herhaal-aankoop hebt. Iemand die net een matras kocht, wil die matras niet drie weken in zijn timeline.",
+        "Bijna altijd, tenzij je upsell of consumables met korte herhaal-aankoop hebt. Iemand die net een dure aankoop deed, wil dat product niet drie weken in zijn timeline.",
     },
     {
       question: "E-mail of ads eerst bij cart abandon?",
@@ -61,6 +61,92 @@ export const REMARKETING_GOOGLE_ADS: KennisbankArticle = {
       text: "Vuistregel: remarketing fix je conversie op mensen die al geïnteresseerd waren. Het haalt geen nieuwe geïnteresseerden tevoorschijn.",
     },
     {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Stalk-check",
+      title: "Adblocker-uitnodigingsmeter",
+      intro:
+        "Vink aan wat je herkent in je remarketing. Hoe hoger, hoe dichter je bij 'waarom heb ik een adblocker'-status zit.",
+      storageKey: "mm-remarketing-stalk",
+      eventName: "remarketing_stalk_complete",
+      sharePath: "/kennisbank/remarketing-zonder-stalken",
+      scoreNoun: "stalkscore",
+      ctaHref: "/diensten/google-ads",
+      ctaLabel: "Google Ads",
+      checks: [
+        {
+          id: "nocap",
+          label: "Frequentiecap staat uit of absurd hoog",
+          fix: "Cap conservatief. Roteer creatives. Minder is vaak meer orders.",
+        },
+        {
+          id: "allsite",
+          label: "Iedereen die de site bezocht krijgt dezelfde banner",
+          fix: "Split product/cart/converters. Megafoon in een bibliotheek werkt niet.",
+        },
+        {
+          id: "logo",
+          label: "Creative is alleen logo op gekleurde achtergrond",
+          fix: "Toon product, review of bezwaar. Dynamic als je feed klopt.",
+        },
+        {
+          id: "bought",
+          label: "Kopers zien wekenlang hetzelfde product",
+          fix: "Exclude converters hard, tenzij bewuste upsell met andere boodschap.",
+        },
+        {
+          id: "mailads",
+          label: "Cart-mail en ads schreeuwen tegelijk zonder uitsluiting",
+          fix: "Mail eerst, ads parallel met caps. Eén plan, twee kanalen.",
+        },
+        {
+          id: "consent",
+          label: "Audience blijft klein terwijl traffic groeit",
+          fix: "Check Consent Mode en tags. Remarketing zonder consent is giswerk.",
+        },
+        {
+          id: "traffic",
+          label: "Je zet remarketing aan met nauwelijks siteverkeer",
+          fix: "Eerst acquisitie of SEO. Je kunt geen lege kamer retargeten.",
+        },
+        {
+          id: "months",
+          label: "Zelfde banner al drie maanden ongewijzigd",
+          fix: "Ververs na een week de hoek: proof, bezwaar, gerelateerd. Stilte of stop.",
+        },
+      ],
+      tiers: [
+        {
+          id: "tap",
+          min: 0,
+          max: 24,
+          label: "Gentle tap",
+          quip: "Je herinnert, je stalkt niet. Blijf zo onzichtbaar winstgevend.",
+        },
+        {
+          id: "nag",
+          min: 25,
+          max: 49,
+          label: "Zeurende buur",
+          quip: "Nog net acceptabel. Caps en segmenten aanscherpen vóór het irriteert.",
+        },
+        {
+          id: "shadow",
+          min: 50,
+          max: 74,
+          label: "Schaduw op Instagram",
+          quip: "Mensen herkennen je merk als banner, niet als oplossing. Roteren en knijpen.",
+        },
+        {
+          id: "blocker",
+          min: 75,
+          max: 100,
+          label: "Adblocker-influencer",
+          quip: "Je bent het voorbeeld in de groepschat. Stop. Segmenteer. Cap. Adem.",
+        },
+      ],
+    },
+    {
       type: "h2",
       text: "Segmenten die ik altijd scheid",
     },
@@ -69,7 +155,7 @@ export const REMARKETING_GOOGLE_ADS: KennisbankArticle = {
       items: [
         "Bezocht productpagina, geen cart: zachte herinnering met productfocus.",
         "Cart abandoners: vaak beter via e-mail, remarketing als tweede kanaal.",
-        "Converters uitsluiten: niemand wil na aankoop nog drie weken dezelfde matras zien.",
+        "Converters uitsluiten: niemand wil na aankoop nog drie weken hetzelfde product zien.",
         "Korte vs lange cyclus: B2B met lange sales vraagt langere vensters, impulse producten korter.",
       ],
     },
@@ -95,7 +181,7 @@ export const REMARKETING_GOOGLE_ADS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Impulsproduct: dagen, niet weken. Matras of B2B-traject: langer, maar met frisse creatives. Een banner die drie maanden hetzelfde zegt, voelt als stalken. Een banner die na een week het bezwaar adresseert (garantie, maat, levering), voelt als service.",
+      text: "Impulsproduct: dagen, niet weken. Dure aankoop of B2B-traject: langer, maar met frisse creatives. Een banner die drie maanden hetzelfde zegt, voelt als stalken. Een banner die na een week het bezwaar adresseert (garantie, levering, prijs), voelt als service.",
     },
     {
       type: "ul",

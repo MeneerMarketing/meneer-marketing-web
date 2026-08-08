@@ -7,7 +7,7 @@ export const HOMEPAGE_GEEN_LANDINGSPAGINA: KennisbankArticle = {
     "Je advertentie belooft iets concreets. Je homepage zegt welkom. Message match uitgelegd, met fixes die je conversie direct raken.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "landingspagina vs homepage",
@@ -46,11 +46,97 @@ export const HOMEPAGE_GEEN_LANDINGSPAGINA: KennisbankArticle = {
   sections: [
     {
       type: "p",
-      text: "Je ad zegt: matras 160x200, gratis bezorgd, proefslapen. Je homepage zegt welkom bij dé specialist sinds 1987, met een slider van vijf stockfoto's. De klik was duur. De bounce was gratis voor Google. De verloren order was voor jou.",
+      text: "Je ad zegt: product X, gratis bezorgd, klaar in twee weken. Je homepage zegt welkom bij dé specialist sinds 1987, met een slider van vijf stockfoto's. De klik was duur. De bounce was gratis voor Google. De verloren order was voor jou.",
     },
     {
       type: "callout",
       text: "Kort antwoord: stuur paid traffic naar een pagina die exact herhaalt wat je ad belooft. Niet naar je homepage tenzij die homepage één ding doet: verkopen wat de ad zei.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Mobiele eerlijkheidstest",
+      title: "Message-match-meter",
+      intro:
+        "Open je sterkste ad en de landings-URL op je telefoon. Vink aan wat je ziet. Hoe hoger, hoe meer je betaalt voor verwarring.",
+      storageKey: "mm-message-match",
+      eventName: "message_match_complete",
+      sharePath: "/kennisbank/homepage-geen-landingspagina",
+      scoreNoun: "mismatch",
+      ctaHref: "/diensten/cro",
+      ctaLabel: "Conversie-optimalisatie",
+      checks: [
+        {
+          id: "home",
+          label: "De ad landt op de homepage",
+          fix: "Maak of kies één URL die het aanbod uit de ad herhaalt.",
+        },
+        {
+          id: "h1",
+          label: "H1 praat over welkom of 'dé specialist', niet over het ad-aanbod",
+          fix: "Zet de belofte uit de ad in de landingskop. Message match eerst.",
+        },
+        {
+          id: "menu",
+          label: "Bovenaan staan vijf menu's en geen primaire CTA",
+          fix: "Eén CTA boven de vouw op mobiel. Keuzevrijheid is conversie-dood.",
+        },
+        {
+          id: "prijs",
+          label: "Ad noemt prijs of voorwaarde, landings niet",
+          fix: "Zelfde prijs of voorwaarde zichtbaar. Verrassing na de klik voelt als bedrog.",
+        },
+        {
+          id: "slow",
+          label: "Landings laadt traag op 4G",
+          fix: "CWV op die URL, niet alleen op home. Trage ads zijn dure afhakers.",
+        },
+        {
+          id: "cta-fold",
+          label: "Primaire knop zit onder de vouw op mobiel",
+          fix: "Knop zichtbaar vóór twijfel-scroll. Anders betaal je voor nadenken.",
+        },
+        {
+          id: "bewijs",
+          label: "Ad belooft expertise, landings toont nul bewijs",
+          fix: "Review, garantie of kort resultaat dicht bij de CTA.",
+        },
+        {
+          id: "alles",
+          label: "Landings wil ook blog, vacatures en over-ons verkopen",
+          fix: "Eén intentie, één pagina. Homepage mag rijk zijn. Campagne-URL niet.",
+        },
+      ],
+      tiers: [
+        {
+          id: "klik",
+          min: 0,
+          max: 24,
+          label: "Klik voelt als thuiskomen",
+          quip: "Belofte en pagina praten dezelfde taal. Houd dat heilig bij elke nieuwe adgroep.",
+        },
+        {
+          id: "huh",
+          min: 25,
+          max: 49,
+          label: "Even zoeken…",
+          quip: "Bezoeker moet nog detective spelen. Strakker trekken vóór je budget omhoog gooit.",
+        },
+        {
+          id: "verkeerd",
+          min: 50,
+          max: 74,
+          label: "Verkeerde link-gevoel",
+          quip: "Je betaalt voor twijfel. Eén scherpe landings wint van tien halfbakken.",
+        },
+        {
+          id: "lek",
+          min: 75,
+          max: 100,
+          label: "Geldlek met welkomstslider",
+          quip: "Homepage als alles-doos + betaalde klik = water in een zeef. Stop. Match. Dan pas schalen.",
+        },
+      ],
     },
     {
       type: "h2",
