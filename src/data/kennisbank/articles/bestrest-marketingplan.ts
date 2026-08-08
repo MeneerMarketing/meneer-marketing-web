@@ -6,7 +6,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
   description:
     "Twee matrassen, twee toppers, twee marges. Bij BestRest geen generiek advertentieaccount, wel een strategie per product. Zo pak je dat aan.",
   publishedAt: "2026-07-05",
-  readMinutes: 9,
+  readMinutes: 11,
   category: "strategie",
   keywords: [
     "marketingstrategie e-commerce",
@@ -42,7 +42,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Wat we bij BestRest anders deden",
+      text: "Wat ik bij BestRest anders deed",
     },
     {
       type: "p",
@@ -54,7 +54,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Voordat er euro's naar Google gingen, rekenden we door: wat mag een klant kosten bij dit product? Niet globaal voor de hele shop, maar per SKU-groep. Klinkt saai. Is saai. En redt je van het gevoel dat 'ads niet werken' terwijl ads wél werken, maar alleen op producten waar je te veel voor betaalt.",
+      text: "Voordat er euro's naar Google gingen, rekende ik door: wat mag een klant kosten bij dit product? Niet globaal voor de hele shop, maar per SKU-groep. Klinkt saai. Is saai. En redt je van het gevoel dat ads niet werken terwijl ads wél werken, maar alleen op producten waar je te veel voor betaalt.",
     },
     {
       type: "h3",
@@ -62,7 +62,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Iemand die zoekt op een specifieke maat of materiaal wil geen filosofisch essay over slaap. Die wil bewijs dat dit matras past bij zijn situatie. Daarom bouwden we pagina's die één verhaal vertellen: dit product, dit probleem, dit bewijs, deze CTA. Geen menu met veertig opties. Geen 'ontdek onze collectie' als iemand al weet wat hij wil.",
+      text: "Iemand die zoekt op een specifieke maat of materiaal wil geen filosofisch essay over slaap. Die wil bewijs dat dit matras past bij zijn situatie. Daarom bouwde ik pagina's die één verhaal vertellen: dit product, dit probleem, dit bewijs, deze CTA. Menu met veertig opties skippen. Ontdek onze collectie skippen als iemand al weet wat hij wil.",
     },
     {
       type: "h3",
@@ -99,7 +99,15 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Eerlijk: soms heb je één heldere hero-product met één doelgroep. Dan mag je focussen. Maar zodra je catalogus groeit en je denkt 'we gooien het er allemaal in', ben je niet efficiënt. Je bent lui. En Google is graag mee met lui, want jij betaalt voor elke klik.",
+      text: "Eerlijk: soms heb je één heldere hero-product met één doelgroep. Dan mag je focussen. Maar zodra je catalogus groeit en je denkt ik gooi het er allemaal in, ben je niet efficiënt. Je bent lui. En Google is graag mee met lui, want jij betaalt voor elke klik.",
+    },
+    {
+      type: "h2",
+      text: "Performance Max past hier alleen met discipline",
+    },
+    {
+      type: "p",
+      text: "PMax over je hele catalogus is precies het gemiddelde dat liegt. Als je het gebruikt, beperk je tot productgroepen met vergelijkbare economie, schone feeds en landings die converteren. Anders is de zwarte doos een snellere manier om budget te verdelen over wat Google makkelijk vindt, niet over wat jij wilt verdienen.",
     },
     {
       type: "h2",

@@ -7,7 +7,7 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     "Je profiel bestaat, maar Google doet alsof je dicht bent. Zo fix je Maps, reviews en regio-pagina's zonder keyword-spam.",
   publishedAt: "2026-07-03",
   modifiedAt: "2026-08-08",
-  readMinutes: 11,
+  readMinutes: 12,
   category: "vindbaarheid",
   keywords: [
     "google business profile optimaliseren",
@@ -114,6 +114,10 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     {
       type: "p",
       text: "Je kunt in Maps of Search adverteren voor snelle zichtbaarheid. Maar als je profiel en site zwak zijn, betaal je voor klikken naar een spookhuis. Fix eerst de basis: profiel compleet, reviews lopen, pagina's kloppen. Dan wordt elke euro in ads harder werken.",
+    },
+    {
+      type: "p",
+      text: "Google Maps marketing is geen aparte truc naast lokale SEO. Het is dezelfde etalage, scherper bekeken. Wie alleen adverteert om een slapend profiel te compenseren, huurt zichtbaarheid die organisch gratis had kunnen zijn.",
     },
     {
       type: "callout",

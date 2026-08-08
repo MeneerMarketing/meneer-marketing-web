@@ -324,43 +324,7 @@ export const CHATGPT_VINDBAARHEID: SeoLandingPage = {
   pillarLabel: "Vindbaarheid",
 };
 
-export const GOOGLE_MAPS_MARKETING: SeoLandingPage = {
-  slug: "google-maps-marketing",
-  primaryKeyword: "google maps marketing",
-  category: "seo",
-  metaTitle: "Google Maps marketing · lokaal gevonden worden | Meneer Marketing",
-  metaDescription: "Google Maps marketing: Business Profile, reviews, lokale SEO. Verschijn in de map pack als klanten in je regio zoeken.",
-  keywords: ["google maps marketing", "google maps vindbaarheid", "map pack seo", "lokaal gevonden worden google"],
-  eyebrow: "Google Maps",
-  headline: "Google Maps marketing",
-  headlineAccent: "zodat je niet onzichtbaar bent op 'bij mij in de buurt'.",
-  subheadline: "Maps is vaak de eerste indruk voor lokale bedrijven. Je profiel, reviews en regio-pagina's bepalen of je in de map pack staat of in het niets.",
-  pains: [
-    { title: "Spookprofiel", body: "Ingevuld en vergeten. Google denkt: gesloten?" },
-    { title: "Concurrent met reviews", body: "Jij 4, zij 200. Guess who." },
-    { title: "Site zonder regio", body: "Google weet niet waar je zit." },
-  ],
-  deliverables: [
-    { title: "Business Profile optimalisatie", body: "Compleet, actief, consistent." },
-    { title: "Review-strategie", body: "Echt, niet gekocht." },
-    { title: "Lokale landings", body: "Regio-pagina's die kloppen." },
-    { title: "Maps + SEO + ads", body: "Lokaal als systeem." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Maps domineren",
-  processSteps: processDefault,
-  proofTitle: "Brabant & regio",
-  proofBody: "Eindhoven tot Someren: lokale vindbaarheid is vaak de snelste MKB-winst.",
-  hotTake: { label: "Heet take", body: "Google Maps marketing met alleen je adres in de footer is een uithangbord in de kelder." },
-  faq: [
-    { question: "Verschil met lokale SEO?", answer: "Maps is onderdeel. Deze pagina vangt 'maps' zoekers." },
-  ],
-  ctaTitle: "Lokaal in Maps staan?",
-  ctaBody: "Vertel je stad en dienst.",
-  relatedSlugs: ["lokale-seo", "google-ads-bureau", "seo-specialist"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { GOOGLE_MAPS_MARKETING } from './google-maps-marketing';
 
 export const WEBDESIGN_BUREAU: SeoLandingPage = {
   slug: "webdesign-bureau",
@@ -482,44 +446,7 @@ export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
   pillarLabel: "Strategie",
 };
 
-export const TRAGE_WEBSITE_DURE_ADS: SeoLandingPage = {
-  slug: "trage-website-dure-ads",
-  primaryKeyword: "trage website conversie",
-  category: "website",
-  metaTitle: "Trage website = dure ads · fix eerst je snelheid | Meneer Marketing",
-  metaDescription: "Trage website maakt elke advertentie duurder. Snelheid, conversie en ads in één fix. Stop met budget verbranden op afhakers.",
-  keywords: ["trage website conversie", "website traag ads", "snelheid website omzet", "trage site google ads"],
-  eyebrow: "Snelheid & ads",
-  headline: "Trage website?",
-  headlineAccent: "Dan zijn je ads een belasting op afhakers.",
-  subheadline: "Je kunt het mooiste account hebben. Als je site op mobiel traag is, betaal je voor mensen die wegklikken voordat ze je aanbod zien. Fix snelheid eerst. Je ads worden ineens 'ineens goed'.",
-  pains: [
-    { title: "Hoge CPC, lage conversie", body: "Google straft trage landings." },
-    { title: "Bounce op mobiel", body: "70% ads is mobiel. Jij denkt desktop." },
-    { title: "Meer budget, zelfde probleem", body: "Opschalen wat lekt." },
-  ],
-  deliverables: [
-    { title: "Snelheidsaudit", body: "LCP, INP, CLS in kaart." },
-    { title: "Fix in code", body: "Theme of Next.js, geen pleister." },
-    { title: "Landings voor ads", body: "Snelle pagina's per campagne." },
-    { title: "Daarna pas opschalen", body: "Budget als conversie klopt." },
-  ],
-  visual: "website-build",
-  visualCaption: "Snelheid is geen SEO-detail. Het is je ads-subsidie.",
-  processTitle: "Eerst snel, dan budget",
-  processSteps: processDefault,
-  proofTitle: "Shopify performance",
-  proofBody: "Theme-bloat saboteert ROAS. Ik zie het wekelijks.",
-  hotTake: { label: "Heet take", body: "Dubbel je ads-budget op een trage site en je hebt dubbel zoveel afhakers." },
-  faq: [
-    { question: "Hoe meet ik het?", answer: "PageSpeed, CrUX, en je conversie per device." },
-  ],
-  ctaTitle: "Site traag? Ads duur?",
-  ctaBody: "Stuur je URL. Ik scan en zeg eerlijk wat eerst moet.",
-  relatedSlugs: ["core-web-vitals-verbeteren", "google-ads-bureau", "conversie-optimalisatie"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { TRAGE_WEBSITE_DURE_ADS } from './trage-website-dure-ads';
 
 export const SHOPIFY_THEME_LATEN_MAKEN: SeoLandingPage = {
   slug: "shopify-theme-laten-maken",

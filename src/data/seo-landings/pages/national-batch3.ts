@@ -318,88 +318,9 @@ export const SEO_UITBESTEDEN: SeoLandingPage = {
 
 export { LINKBUILDING_BUREAU } from './linkbuilding-bureau';
 
-export const ONLINE_MARKETING_MANAGER: SeoLandingPage = {
-  slug: "online-marketing-manager",
-  primaryKeyword: "online marketing manager",
-  category: "seo",
-  metaTitle: "Online marketing manager · één aanspreekpunt | Meneer Marketing",
-  metaDescription:
-    "Jouw online marketing manager: strategie, bouw, SEO, Google Ads en Meta. Geen vijf freelancers, wel één plan en één stem.",
-  keywords: ["online marketing manager", "marketing manager inhuren", "online marketing manager mkb", "externe marketing manager"],
-  eyebrow: "Online marketing manager",
-  headline: "Jouw online marketing manager.",
-  headlineAccent: "Zonder HR-gedoe.",
-  subheadline:
-    "Ik ben geen bureau met 40 junior medewerkers. Ik ben de online marketing manager die je site bouwt, je SEO fixt en je ads bijstuurt. Eén brein, één lijn, geen spaghetti.",
-  pains: [
-    { title: "Te veel partijen", body: "SEO hier, ads daar, site door een neef. Niemand heeft overzicht." },
-    { title: "Intern te duur of te weinig tijd", body: "Een fulltime manager is zwaar voor veel MKB." },
-    { title: "Bureau zonder uitvoering", body: "Slides en rapporten. Geen pagina die live gaat." },
-  ],
-  deliverables: [
-    { title: "Strategie & prioriteit", body: "Wat eerst, wat later. Eerlijk." },
-    { title: "Uitvoering", body: "Bouwen, schrijven, campagnes draaien." },
-    { title: "Wekelijks bijsturen", body: "Geen kwartaalgesprek over cijfers van drie maanden geleden." },
-    { title: "Eén aanspreekpunt", body: "Jij praat met mij. Niet met een account manager die wisselt." },
-  ],
-  visual: "content-hub",
-  visualCaption: "Eén manager. Eén plan. Geen eilandjes.",
-  processTitle: "Zo werk ik als jouw manager",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete & BestRest",
-  proofBody: "Van shop tot SEO tot ads: ik ken het traject omdat ik het zo heb gedaan voor echte klanten.",
-  hotTake: { label: "Heet take", body: "Een online marketing manager die niet kan bouwen, is een planner zonder werkplaats." },
-  faq: [
-    { question: "Vervang ik mijn hele team?", answer: "Nee. Ik vul aan waar het moet en pak de rode draad." },
-    { question: "Hoeveel uur per maand?", answer: "Hangt af van scope. Intake bepaalt wat je nodig hebt." },
-  ],
-  ctaTitle: "Marketing manager nodig?",
-  ctaBody: "Vertel waar je nu zit. Ik schets hoe ik aansluit.",
-  relatedSlugs: ["online-marketing-bureau", "google-ads-bureau", "hoger-in-google"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { ONLINE_MARKETING_MANAGER } from './online-marketing-manager';
 
-export const PERFORMANCE_MARKETING_BUREAU: SeoLandingPage = {
-  slug: "performance-marketing-bureau",
-  primaryKeyword: "performance marketing bureau",
-  category: "google-ads",
-  metaTitle: "Performance marketing bureau · meetbaar groeien | Meneer Marketing",
-  metaDescription:
-    "Performance marketing bureau: Google Ads, Meta, Shopping en landings die converteren. ROAS en CPA met marge in het hoofd.",
-  keywords: ["performance marketing bureau", "performance marketing nederland", "datagedreven marketing bureau"],
-  eyebrow: "Performance marketing",
-  headline: "Performance marketing bureau",
-  headlineAccent: "dat je bankrekening snapt.",
-  subheadline:
-    "Performance marketing klinkt als jargon. Het betekent: elke euro moet je kunnen verantwoorden. Ik meet wat werkt, stop wat lekt, en bouw wat ontbreekt.",
-  pains: [
-    { title: "Metrics zonder marge", body: "ROAS 5 op producten die verlies draaien." },
-    { title: "Klikken als doel", body: "Dashboard groen. Omzet grijs." },
-    { title: "Kanalen zonder samenhang", body: "Google en Meta vechten tegen elkaar." },
-  ],
-  deliverables: [
-    { title: "Google & Meta performance", body: "Search, Shopping, social met conversiedoel." },
-    { title: "Tracking & attributie", body: "Weten wat echt oplevert." },
-    { title: "Landings & CRO", body: "Performance stopt niet bij de klik." },
-    { title: "Wekelijkse optimalisatie", body: "Budget naar bewezen winnaars." },
-  ],
-  visual: "google-ads",
-  processTitle: "Performance met discipline",
-  processSteps: processDefault,
-  proofTitle: "BestRest per product",
-  proofBody: "Performance marketing werkt per productlijn, niet op accountniveau met gemiddelden die liegen.",
-  hotTake: { label: "Heet take", body: "Performance marketing zonder iemand die je site kan fixen, is optimalisatie in een huis met lekkende ramen." },
-  faq: [
-    { question: "Verschil met online marketing bureau?", answer: "Performance focust op meetbare acquisitie. Ik pak vaak het bredere plaatje mee." },
-    { question: "Minimum budget?", answer: "Afhankelijk van markt. Breakeven eerst doorrekenen." },
-  ],
-  ctaTitle: "Performance marketing starten?",
-  ctaBody: "Vertel je doelen en marge. Ik schets het plan.",
-  relatedSlugs: ["google-ads-bureau", "conversie-optimalisatie"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { PERFORMANCE_MARKETING_BUREAU } from './performance-marketing-bureau';
 
 export const CRO_BUREAU: SeoLandingPage = {
   slug: "cro-bureau",

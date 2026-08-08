@@ -85,6 +85,14 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "Negatieve reviews: niet panikeren, wel antwoorden",
+    },
+    {
+      type: "p",
+      text: "Eén boze review is geen crisis. Stilte erop wel. Antwoord kalm, feitelijk, met een pad naar oplossing. Andere lezers kijken hoe jij reageert. Dat is ook lokale SEO: vertrouwen in het openbaar.",
+    },
+    {
+      type: "h2",
       text: "Lokaal in Apeldoorn en verder",
     },
     {
@@ -97,7 +105,7 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Vraag deze week drie tevreden klanten om een review. Reageer op oude reviews die nog open staan. Post één update. Klein werk. Zichtbaar effect. Wil je Maps, reviews en regio-pagina's in één plan? Op mijn hub over lokale SEO leg ik die route uit.",
+      text: "Vraag deze week drie tevreden klanten om een review. Reageer op oude reviews die nog open staan. Post één update. Klein werk. Zichtbaar effect. Wil je Maps, reviews en regio-pagina's in één plan? Op mijn hub over lokale SEO en Google Maps marketing leg ik die route uit.",
     },
   ],
 };
