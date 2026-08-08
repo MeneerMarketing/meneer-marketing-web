@@ -315,7 +315,7 @@ export const OVER_FAQ = [
       "Als een mens, niet als een mailrobot. Afspraken, deadlines en cijfers zijn keihard professioneel. In je inbox gewoon duidelijk Nederlands. Soms droog, altijd helder, zodat jij en ik snel kunnen schakelen.",
   },
   {
-    question: "Hoe starten we?",
+    question: "Hoe begin je?",
     answer:
       "Met een intake. Twee minuten invullen, daarna een gesprek. Je krijgt helderheid op prioriteit en route. Daarna een voorstel dat past bij je fase, niet bij een standaardpakket.",
   },

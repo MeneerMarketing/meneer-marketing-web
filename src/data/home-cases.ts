@@ -143,7 +143,7 @@ export const HOME_CASES: HomeCase[] = [
     challenge:
       "Grote spelers domineren met budget. Een standaard thema en losse marketing hielden BestRest niet scherp genoeg in de ruis.",
     move:
-      "Custom Shopify-webshop gebouwd from scratch. SEO-structuur, e-mailmarketing en Google Ads en Meta Ads per assortimentsstuk. Geen copy-paste funnel.",
+      "Custom Shopify-webshop gebouwd from scratch. SEO-structuur, e-mailmarketing en Google Ads en Meta Ads per assortimentsstuk. Eigen funnel, geen copy-paste.",
     result:
       "Een shop en marketinglijn die past bij toppers en matrassen: meetbaar, eigen en klaar om op te schalen wat werkt.",
     tags: [
@@ -176,9 +176,9 @@ export const HOME_CASES: HomeCase[] = [
     homeHook: "Website from scratch, mail en boekingsapp. Alles op één stack.",
     metric: "Boekingsapp",
     metricHint: "website en mail in dezelfde lijn",
-    body: "Website from scratch, e-mailmarketing en een eigen app met agenda en boekingen. Geen losse tools die niet met elkaar praten.",
+    body: "Website from scratch, e-mailmarketing en een eigen app met agenda en boekingen. Alles gekoppeld, geen losse tools die langs elkaar praten.",
     challenge:
-      "Lessen plannen, aanmeldingen en communicatie liepen versnipperd. Geen centrale plek waar klanten boeken en Hills Pilates haar planning beheert.",
+      "Lessen plannen, aanmeldingen en communicatie liepen versnipperd. Ontbrekende centrale plek waar klanten boeken en Hills Pilates haar planning beheert.",
     move:
       "Custom website gebouwd from scratch. Automatische mails voor welkom, herinneringen en retentie. App met agenda, boekingen en overzicht voor het team.",
     result:

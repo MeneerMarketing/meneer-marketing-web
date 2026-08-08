@@ -126,7 +126,7 @@ export const DIENST_SEO: Record<string, DienstSeoEntry> = {
     pillar: "vindbaarheid",
     title: "Contentmarketing | autoriteit die rankt | Meneer Marketing",
     description:
-      "Pagina's die één vraag echt beantwoorden en verkopen. Content voor Google, AI-antwoorden en mensen. Geen opgeblazen blogkalender.",
+      "Pagina's die één vraag echt beantwoorden en verkopen. Content voor Google, AI-antwoorden en mensen. Liever scherpe pagina's dan een opgeblazen blogkalender.",
     keywords: ["contentmarketing", "SEO content", "content strategie"],
   },
   reviews: {

@@ -167,7 +167,7 @@ export const HERO_CHAT_OPTIONS: HeroChatOption[] = [
     label: "Gewoon praten",
     userReply: "Even een vraag",
     meneerReply: "Top. Snel antwoord of uitgebreid gesprek? Jij beslist.",
-    focusPrompt: "Hoe pakken we het aan?",
+    focusPrompt: "Hoe pak jij het aan?",
     cta: siteCtas.contact,
     focusOptions: [
       {
