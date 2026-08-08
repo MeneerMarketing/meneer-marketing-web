@@ -513,43 +513,7 @@ export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
   pillarLabel: "Campagnes",
 };
 
-export const KLAVIYO_SPECIALIST: SeoLandingPage = {
-  slug: "klaviyo-specialist",
-  primaryKeyword: "klaviyo specialist",
-  category: "b2b-portal",
-  metaTitle: "Klaviyo specialist · e-mail die je shop laat groeien | Meneer Marketing",
-  metaDescription: "Klaviyo specialist voor Shopify. Flows, segmentatie, abandoned cart. E-mailmarketing die retentie oplevert.",
-  keywords: ["klaviyo specialist", "klaviyo expert nederland", "klaviyo shopify setup"],
-  eyebrow: "Klaviyo",
-  headline: "Klaviyo specialist",
-  headlineAccent: "die je flows laat verdienen.",
-  subheadline: "Klaviyo openen is makkelijk. Klaviyo goed inrichten niet. Ik zet flows, segmenten en koppelingen zodat je shop niet alleen nieuwe klanten jaagt maar ook terugwint.",
-  pains: [
-    { title: "Flows half af", body: "Welkomstmail bestaat. Rest niet." },
-    { title: "Alles in één lijst", body: "Iedereen dezelfde mail. Spam-gevoel." },
-    { title: "E-mail los van ads", body: "Verhaal wisselt per kanaal." },
-  ],
-  deliverables: [
-    { title: "Flow setup", body: "Welcome, cart, post-purchase, win-back." },
-    { title: "Segmentatie", body: "B2B vs B2C, koopgedrag." },
-    { title: "Shopify integratie", body: "Events, producten, orders." },
-    { title: "Rapportage", body: "Omzet per flow, niet alleen opens." },
-  ],
-  visual: "b2b-portal",
-  processTitle: "Klaviyo die draait",
-  processSteps: processDefault,
-  proofTitle: "Retentie = groei",
-  proofBody: "Herhalende klanten zijn goedkoper dan ads. Klaviyo is je vangnet.",
-  hotTake: { label: "Heet take", body: "Een Klaviyo specialist die alleen templates importeert, installeert ruis, geen omzet." },
-  faq: [
-    { question: "Alleen Shopify?", answer: "Focus Shopify. Andere stacks in overleg." },
-  ],
-  ctaTitle: "Klaviyo laten inrichten?",
-  ctaBody: "Vertel je shop en huidige flows.",
-  relatedSlugs: ["e-mailmarketing", "shopify-expert", "e-commerce-marketing"],
-  pillarSlug: "behoud",
-  pillarLabel: "Behoud",
-};
+export { KLAVIYO_SPECIALIST } from './klaviyo-specialist';
 
 export const CORE_WEB_VITALS: SeoLandingPage = {
   slug: "core-web-vitals-verbeteren",

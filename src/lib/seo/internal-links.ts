@@ -196,7 +196,7 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
   ],
   "google-reviews-lokale-seo": [
     { slug: "lokale-seo", label: "Lokale SEO" },
-    { slug: "google-maps-marketing", label: "Google Maps marketing" },
+    { slug: "seo-specialist-apeldoorn", label: "SEO specialist Apeldoorn" },
   ],
   "instagram-ads-geen-leads": [
     { slug: "meta-ads-bureau", label: "Meta Ads bureau" },
@@ -255,8 +255,12 @@ const ARTICLE_ZOEKEN_OVERRIDES: Partial<
     { slug: "ugc-marketing", label: "UGC marketing" },
   ],
   "klaviyo-flows-elke-shop-nodig": [
+    { slug: "klaviyo-specialist", label: "Klaviyo specialist" },
     { slug: "e-mailmarketing", label: "E-mailmarketing" },
-    { slug: "webshop-laten-maken", label: "Webshop laten maken" },
+  ],
+  "abandoned-cart-emails-die-converteren": [
+    { slug: "e-mailmarketing", label: "E-mailmarketing" },
+    { slug: "klaviyo-specialist", label: "Klaviyo specialist" },
   ],
 };
 

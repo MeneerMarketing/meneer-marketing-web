@@ -608,13 +608,31 @@ function buildApeldoornDeepDive(page: SeoLandingPage): {
 }
 
 /**
- * Unieke contentlaag voor alle Apeldoorn-varianten (~45 pagina's).
- * Thuisbasis Meneer Marketing: Veluwe-context, HQ-proof, eigen story/deep-dive.
+ * Unieke contentlaag voor Apeldoorn-varianten.
+ * Money hubs met lockContent behouden handgeschreven diepte; alleen lokale proof/scenes erbij.
  */
 export function applyApeldoornCityLayer(page: SeoLandingPage): SeoLandingPage {
   if (page.location?.city !== "Apeldoorn") return page;
 
   const v = pageVars(page);
+  const sceneBreaks = APELDOORN_SCENES[page.category].map((scene) => ({
+    ...scene,
+    eyebrow: fill(scene.eyebrow, v),
+    title: fill(scene.title, v),
+    caption: scene.caption ? fill(scene.caption, v) : undefined,
+  }));
+
+  if (page.lockContent) {
+    const hasLocalProof = /Apeldoorn|Veluwe/i.test(page.proofBody);
+    return {
+      ...page,
+      proofBody: hasLocalProof
+        ? page.proofBody
+        : `${page.proofBody} Thuisbasis: Apeldoorn op de Veluwe. Landelijke trajecten ook.`,
+      sceneBreaks: page.sceneBreaks?.length ? page.sceneBreaks : sceneBreaks,
+    };
+  }
+
   const hotTake = pick(page.slug, APELDOORN_HOT_TAKES, "apel-hot");
   const proofBody = fill(pick(page.slug, APELDOORN_PROOF, "apel-proof"), v);
   const processVariant = pick(page.slug, APELDOORN_PROCESS[page.category], "apel-process");
@@ -634,12 +652,6 @@ export function applyApeldoornCityLayer(page: SeoLandingPage): SeoLandingPage {
   ).map((p) => ({
     title: fill(p.title, v),
     body: fill(p.body, v),
-  }));
-  const sceneBreaks = APELDOORN_SCENES[page.category].map((scene) => ({
-    ...scene,
-    eyebrow: fill(scene.eyebrow, v),
-    title: fill(scene.title, v),
-    caption: scene.caption ? fill(scene.caption, v) : undefined,
   }));
 
   return {
