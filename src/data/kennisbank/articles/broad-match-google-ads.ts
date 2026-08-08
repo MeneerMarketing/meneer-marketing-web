@@ -7,7 +7,7 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
     "Waarom broad match je budget opvreugt, welke zoektermen je geld stelen en hoe je wél structuur krijgt in Google Ads. Zonder jargon-regen.",
   publishedAt: "2026-07-04",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "broad match google ads",
@@ -47,6 +47,96 @@ export const BROAD_MATCH_GOOGLE_ADS: KennisbankArticle = {
     {
       type: "p",
       text: "Google Ads heeft een knop die heet 'breed matchen'. Klinkt onschuldig. Alsof je zegt: vind maar leuke mensen voor mij. In werkelijkheid is broad match een verrassingsbox. Soms zit er iets goeds in. Vaker zit er een gratiszoeker, een vacaturezoeker of iemand die jouw concurrent bedoelde in. En jij betaalt voor die verrassing alsof het een feature is.",
+    },
+    {
+      type: "callout",
+      text: "Mijn regel: broad alleen met vangnet. Aparte camp, budgetplafond, wekelijks zoektermen. Zonder ritme is het een open kraan met een glimlach.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Creditcard-check",
+      title: "Verrassingsbox-meter",
+      intro:
+        "Vink aan wat je herkent. Hoe hoger, hoe meer je Google laat raden met jouw geld.",
+      storageKey: "mm-broad-verrassing",
+      eventName: "broad_verrassing_complete",
+      sharePath: "/kennisbank/broad-match-google-ads-verrassingsbox",
+      scoreNoun: "verrassing",
+      ctaHref: "/diensten/google-ads",
+      ctaLabel: "Google Ads",
+      checks: [
+        {
+          id: "all-broad",
+          label: "Bijna alles staat op broad, ‘voor bereik’",
+          fix: "Start phrase/exact op bewezen intentie. Broad als aparte discovery-laag.",
+        },
+        {
+          id: "no-neg",
+          label: "Negatievenlijst is leeg of maanden oud",
+          fix: "Wekelijks gratis, vacature, DIY, verkeerde regio eruit.",
+        },
+        {
+          id: "no-report",
+          label: "Zoektermenrapport heb je na broad-aanzetten niet gelezen",
+          fix: "Top 20 op kosten binnen een week. Wacht niet tot de factuur.",
+        },
+        {
+          id: "same-camp",
+          label: "Broad zit in dezelfde camp als brand of exact winners",
+          fix: "Splits. Anders steelt ruis budget van wat al werkt.",
+        },
+        {
+          id: "micro",
+          label: "Smart Bidding eet micro-conversies terwijl broad openstaat",
+          fix: "Schone primary conversies. Rommel + broad = domme schaal.",
+        },
+        {
+          id: "landing",
+          label: "Landings zijn generiek terwijl broad alles mag",
+          fix: "Message match per intentie. Broad zonder scherpe URL is duur.",
+        },
+        {
+          id: "aimax",
+          label: "AI Max of broad ‘gewoon aan’ omdat Google het wil",
+          fix: "Hygiëne eerst. Advies van het platform is geen plan.",
+        },
+        {
+          id: "hope",
+          label: "Ik hoop dat bidding de ruis vanzelf uitfiltert",
+          fix: "Bidding optimaliseert op wat je voedt. Voed je rommel, schaal je rommel.",
+        },
+      ],
+      tiers: [
+        {
+          id: "vangnet",
+          min: 0,
+          max: 24,
+          label: "Discovery met riem",
+          quip: "Broad mag meedoen omdat jij de baas blijft. Blijf wekelijks lezen.",
+        },
+        {
+          id: "gok",
+          min: 25,
+          max: 49,
+          label: "Halve verrassingsbox",
+          quip: "Nog te redden. Caps, negatieven en aparte camp deze week.",
+        },
+        {
+          id: "kraan",
+          min: 50,
+          max: 74,
+          label: "Open kraan",
+          quip: "Bereik voelt lekker. Je pinpas minder. Zoektermen nu.",
+        },
+        {
+          id: "cadeau",
+          min: 75,
+          max: 100,
+          label: "Cadeau voor Google",
+          quip: "Je betaalt voor interpretatie. Zet de doos dicht tot hygiëne klopt.",
+        },
+      ],
     },
     {
       type: "h2",

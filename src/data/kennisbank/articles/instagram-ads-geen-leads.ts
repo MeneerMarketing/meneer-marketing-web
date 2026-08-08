@@ -7,7 +7,7 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     "Waarom mooie creatives niet converteren, wat Meta Ads anders doet dan boosten, en hoe je leads krijgt zonder dansjes te forceren.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "instagram ads geen resultaat",
@@ -51,6 +51,92 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: pixel goed, doelgroep scherp, offer duidelijk, landings die op mobiel converteren. Creative ondersteunt dat. Het vervangt het niet.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Inbox-check",
+      title: "Mooi-beeld-lege-inbox-meter",
+      intro:
+        "Vink aan wat je herkent. Hoe hoger, hoe meer je betaalt voor wow in de teamchat en stilte in je CRM.",
+      storageKey: "mm-ig-lege-inbox",
+      eventName: "ig_lege_inbox_complete",
+      sharePath: "/kennisbank/instagram-ads-geen-leads",
+      scoreNoun: "leegte",
+      ctaHref: "/diensten/meta-ads",
+      ctaLabel: "Meta Ads",
+      checks: [
+        {
+          id: "boost",
+          label: "Je ‘campagnes’ zijn vooral boosted posts",
+          fix: "Ads Manager met conversiedoel. Boost is geen acquisitie-machine.",
+        },
+        {
+          id: "home",
+          label: "Traffic gaat naar de homepage",
+          fix: "Eén landings, één offer, CTA boven de vouw op mobiel.",
+        },
+        {
+          id: "pixel",
+          label: "Pixel of CAPI is half of niet getest",
+          fix: "Test events. Zonder signaal optimaliseer je op likes.",
+        },
+        {
+          id: "breed",
+          label: "Doelgroep is heel NL, 18-65, interesse ‘marketing’",
+          fix: "Smaller starten. Lookalike van echte converters waar mogelijk.",
+        },
+        {
+          id: "hook",
+          label: "Creative heeft geen hook in de eerste seconde",
+          fix: "Probleem of belofte meteen. Scroll wacht niet op je logo.",
+        },
+        {
+          id: "fatigue",
+          label: "Zelfde reel al maanden ongewijzigd",
+          fix: "Roteer hooks. Ad fatigue is hoe CPA kruipt.",
+        },
+        {
+          id: "likes",
+          label: "Je stuurt bij op bereik of likes, niet op leads/orders",
+          fix: "Meet inbox of aankopen. Team-wow is geen KPI.",
+        },
+        {
+          id: "google-meta",
+          label: "Google en Meta vertellen twee verschillende verhalen",
+          fix: "Eén strategie, één meetlat. Anders betaal je twee keer voor verwarring.",
+        },
+      ],
+      tiers: [
+        {
+          id: "pipeline",
+          min: 0,
+          max: 24,
+          label: "Reel die koopt",
+          quip: "Mooi én meetbaar. Blijf creatives roteren voordat fatigue toeslaat.",
+        },
+        {
+          id: "bijna",
+          min: 25,
+          max: 49,
+          label: "Bijna inbox",
+          quip: "Er zit potentie in. Landings en pixel strakker, dan creative.",
+        },
+        {
+          id: "portfolio",
+          min: 50,
+          max: 74,
+          label: "Designer-portfolio",
+          quip: "Team juicht. CRM zwijgt. Klassiek Instagram-lek.",
+        },
+        {
+          id: "like",
+          min: 75,
+          max: 100,
+          label: "Dure like-machine",
+          quip: "Stop boosten op hoop. Funnel eerst, dansjes later (of nooit).",
+        },
+      ],
     },
     {
       type: "h2",

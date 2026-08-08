@@ -7,7 +7,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     "PMax kan werken. Ook zonder controle als je een verrassing wilt. Wanneer Performance Max past, wanneer niet, en wat je eerst op orde moet hebben.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "performance max uitleg",
@@ -51,6 +51,44 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: PMax werkt het best met schone feeds, sterke landings, goede conversiedata en realistische marges. Zonder dat is het geen shortcut. Het is sneller budget verdelen over Google's netwerk.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Zwarte-doos-test",
+      title: "Zet jij PMax aan?",
+      prompt:
+        "Kies je situatie. Ik zeg of je een versterker aanzet of een snellere kraan.",
+      options: [
+        {
+          id: "google-says",
+          label: "Google raadt het aan, dus alles op PMax",
+          verdict:
+            "Outsourcing van verantwoordelijkheid. Platformadvies is geen plan. Hygiëne eerst, dan beperkt testen.",
+          tone: "ouch",
+        },
+        {
+          id: "ready",
+          label: "Feed groen, landings scherp, conversies met waarde, klein testbudget",
+          verdict:
+            "Dit is wanneer ik ja zeg. Insights lezen alsof het je bankafschrift is. Daarna pas oordelen.",
+          tone: "win",
+        },
+        {
+          id: "catalog",
+          label: "Hele catalogus in één PMax, verschillende marges",
+          verdict:
+            "Gemiddelde ROAS liegt. Split per productgroep met vergelijkbare economie.",
+          tone: "ouch",
+        },
+        {
+          id: "search-first",
+          label: "Eerst Search/Shopping met controle, PMax later naast",
+          verdict:
+            "Mijn favoriete volgorde. Controle bouwt data. PMax versterkt wat al werkt.",
+          tone: "win",
+        },
+      ],
     },
     {
       type: "h2",

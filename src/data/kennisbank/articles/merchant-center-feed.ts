@@ -7,7 +7,7 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
     "Merchant Center weigert je producten, Shopping staat stil en niemand weet waarom. De meest voorkomende feed-fouten en hoe je ze fixt.",
   publishedAt: "2026-07-11",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "merchant center fouten",
@@ -51,6 +51,92 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
     {
       type: "callout",
       text: "Kort antwoord: sync prijs en voorraad, fix identifiers en images, kies de juiste categorie, check landings-URL's. Bestsellers eerst. Daarna pas budget omhoog.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Diagnostics-feest",
+      title: "Feed-chaos-meter",
+      intro:
+        "Vink aan wat je herkent in Merchant Center. Hoe hoger, hoe meer Shopping en PMax op rommel draaien.",
+      storageKey: "mm-feed-chaos",
+      eventName: "feed_chaos_complete",
+      sharePath: "/kennisbank/merchant-center-feed-afgekeurd",
+      scoreNoun: "chaos",
+      ctaHref: "/diensten/google-ads",
+      ctaLabel: "Google Ads / Shopping",
+      checks: [
+        {
+          id: "price",
+          label: "Prijs of voorraad in feed wijkt af van de site",
+          fix: "Dagelijkse sync. Mismatch is snelle afkeuring.",
+        },
+        {
+          id: "gtin",
+          label: "GTIN/MPN/merk ontbreekt of staat op ‘generic’",
+          fix: "Identifiers serieus invullen. Shortcuts = limited performance.",
+        },
+        {
+          id: "image",
+          label: "Foto’s met watermerk, SALE-tekst of te klein",
+          fix: "Schone productfoto’s. Instagram-filters horen niet in Shopping.",
+        },
+        {
+          id: "category",
+          label: "Google product category is ‘ongeveer goed’",
+          fix: "Juiste categorie. Anders concurreer je met kaarsen i.p.v. je product.",
+        },
+        {
+          id: "url",
+          label: "Landing URL’s 404’en of zitten in redirect-ketens",
+          fix: "Directe, werkende PDP-URL’s. Check bestsellers eerst.",
+        },
+        {
+          id: "pmax",
+          label: "PMax draait terwijl Diagnostics rood staat",
+          fix: "Eerst groen. Rommel in feed = duurdere ruis in PMax.",
+        },
+        {
+          id: "pdp",
+          label: "Feed oké, maar productpagina’s zijn dun",
+          fix: "Feed is helft. PDP met bewijs en snelheid is de andere helft.",
+        },
+        {
+          id: "ignore",
+          label: "Afkeuringen laat ik weken liggen ‘want het is maar 2%’",
+          fix: "Die 2% is vaak je bestseller-volume. Fix impact-sort eerst.",
+        },
+      ],
+      tiers: [
+        {
+          id: "groen",
+          min: 0,
+          max: 24,
+          label: "Winkelwagen-waardig",
+          quip: "Feed en site praten dezelfde taal. Blijf wekelijks Diagnostics checken.",
+        },
+        {
+          id: "oranje",
+          min: 25,
+          max: 49,
+          label: "Bijna Shopping-klaar",
+          quip: "Bestsellers hard fixen. Daarna systematisch per fouttype.",
+        },
+        {
+          id: "rood",
+          min: 50,
+          max: 74,
+          label: "Rode mail in je inbox",
+          quip: "Merchant Center schreeuwt. Budget omhoog is zinloos tot dit stil is.",
+        },
+        {
+          id: "scratch",
+          min: 75,
+          max: 100,
+          label: "Scratchcard-catalogus",
+          quip: "Je gokt met producten. Stop ads-opschaling. Diagnostics nu.",
+        },
+      ],
     },
     {
       type: "h2",
