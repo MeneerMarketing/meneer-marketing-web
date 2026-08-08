@@ -64,7 +64,7 @@ const GOALS: BuildGoal[] = [
     id: "rebuild",
     icon: LayoutGrid,
     label: "Rebuild",
-    title: "Van template naar maatwerk",
+    title: "Van template naar custom build",
     stack: ["Migratie", "CWV audit", "Component library"],
     services: [
       { name: "Websites from scratch", href: "/diensten/webdevelopment" },

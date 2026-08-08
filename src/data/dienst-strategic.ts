@@ -107,7 +107,7 @@ const SCENARIOS_BY_PILLAR: Record<string, StrategicScenario[]> = {
 const SCENARIOS_BY_SLUG: Record<string, StrategicScenario[]> = {
   "shopify-enterprise": [
     {
-      title: "Van template naar maatwerk",
+      title: "Van template naar custom build",
       body: "Je zit vast in een theme uit de store dat nergens op lijkt wat je wilt. Dan bouw ik from scratch: eigen secties, eigen flow, jouw merk.",
     },
     {

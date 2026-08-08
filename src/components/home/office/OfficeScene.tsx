@@ -875,7 +875,7 @@ export function OfficeScene({
         </g>
 
         {/* Zittende benen: onderbenen gevouwen richting de stoel, voeten
-            naast de gasveer — plus oranje sokken boven nette schoenen */}
+            naast de gasveer, plus oranje sokken boven nette schoenen */}
         <g>
           <path d="M747 612 Q750 652 752 684" fill="none" stroke="#242C3E" strokeWidth="26" strokeLinecap="round" />
           <path d="M803 612 Q800 652 798 684" fill="none" stroke="#242C3E" strokeWidth="26" strokeLinecap="round" />

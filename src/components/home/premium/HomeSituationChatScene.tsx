@@ -18,7 +18,7 @@ const CHAT_BY_SITUATION: Record<string, readonly ChatLine[]> = {
   site: [
     { from: "meneer", text: "Wat houdt je site of shop tegen?" },
     { from: "jij", text: "Traag, gedateerd en converteert niet." },
-    { from: "meneer", text: "Template of echt maatwerk?" },
+    { from: "meneer", text: "Template of from scratch?" },
     { from: "jij", text: "Theme. Ads worden alleen duurder." },
     { from: "meneer", text: "From scratch is vaak goedkoper op lange termijn." },
   ],

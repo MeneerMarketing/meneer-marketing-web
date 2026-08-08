@@ -184,7 +184,7 @@ const PROJECT_TYPE_OPTIONS: readonly TileOption[] = [
   {
     value: "webapp",
     label: "Webapp",
-    description: "Maatwerk in Next.js, dashboards, portals.",
+    description: "Custom build in Next.js, dashboards, portals.",
     Icon: Code2,
   },
   {
@@ -1132,7 +1132,7 @@ export function ConversionForm({
                     id={pid("huidigeStack")}
                     label="Huidige stack (optioneel)"
                     icon={Layers}
-                    hint="Bijv. Shopify + Klaviyo, maatwerk website + HubSpot, Next.js + Vercel."
+                    hint="Bijv. Shopify + Klaviyo, website from scratch + HubSpot, Next.js + Vercel."
                   >
                     <input
                       id={pid("huidigeStack")}

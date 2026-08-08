@@ -1,5 +1,5 @@
 /**
- * P0.3 cannibal slice 2 — Shopify, Meta, e-com, CRO, AI (+ social synonym).
+ * P0.3 cannibal slice 2: Shopify, Meta, e-com, CRO, AI (+ social synonym).
  * Secondaries: 301 → primary + uit registry.
  */
 

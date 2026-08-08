@@ -1,5 +1,5 @@
 /**
- * SEO growth freeze (P0.1 — MAX-SEO plan, 2 aug 2026)
+ * SEO growth freeze (P0.1, MAX-SEO plan, 2 aug 2026)
  *
  * Doel: stoppen met meer `/zoeken/`-landings tot consolidatie klaar is.
  * Prunen / noindex / 301 (aantal omlaag) mag wél.

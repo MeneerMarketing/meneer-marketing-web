@@ -214,7 +214,7 @@ export function HeroSocialOrganicWindow() {
                     })}
                     {dayPosts.length === 0 ? (
                       <span className="flex flex-1 items-center justify-center text-[8px] font-semibold text-slate-300">
-                        —
+                        ·
                       </span>
                     ) : null}
                   </div>

@@ -90,7 +90,7 @@ export const megaMenuColumns: MegaMenuColumn[] = [
     featured: {
       title: "Eerst het plan, dan de euro's",
       description:
-        "Eerst een eigen strategie per product of dienst. Resultaat via maatwerk, niet via een standaard funnel.",
+        "Eerst een eigen strategie per product of dienst. Resultaat via custom build, niet via een standaard funnel.",
       href: "/cases",
     },
   },

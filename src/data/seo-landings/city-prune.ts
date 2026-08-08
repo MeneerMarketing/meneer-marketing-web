@@ -1,5 +1,5 @@
 /**
- * P0.4 city prune redirects — generated 2026-08-02.
+ * P0.4 city prune redirects, generated 2026-08-02.
  * Keep rules: Apeldoorn 8 hubs; other cities website+seo (+ existing online-marketing,
  * tier-A google-ads). Regenerate: npx tsx scripts/generate-city-prune.ts
  * (run BEFORE filtering locations, or from a git snapshot with full city inventory).

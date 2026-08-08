@@ -19,7 +19,7 @@ import { siteCtas } from "@/lib/cta";
 import type { PillarSlug } from "@/lib/navigation";
 
 /* ------------------------------------------------------------------ */
-/* Content — De Marketing-APK                                          */
+/* Content: De Marketing-APK                                          */
 /* ------------------------------------------------------------------ */
 
 interface CheckItem {

@@ -1,5 +1,5 @@
 /**
- * P0.3 cannibal slice 1 — nationale synoniem-clusters.
+ * P0.3 cannibal slice 1: nationale synoniem-clusters.
  * Secondaries: 301 → primary + uit registry (sitemap / SSG).
  * City-clones van dezelfde bases blijven tot P0.4.
  */

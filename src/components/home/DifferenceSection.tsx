@@ -12,7 +12,7 @@ const pillars = [
   },
   {
     title: "High-end websites",
-    body: "Maatwerk sites from scratch: snel, veilig en ingericht volgens Google's richtlijnen. Core Web Vitals en SEO-structuur inbegrepen.",
+    body: "Websites from scratch: snel, veilig en ingericht volgens Google's richtlijnen. Core Web Vitals en SEO-structuur inbegrepen.",
     tag: "Websites",
   },
   {

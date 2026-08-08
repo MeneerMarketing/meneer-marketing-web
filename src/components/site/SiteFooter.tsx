@@ -42,7 +42,7 @@ export function SiteFooter() {
       className="border-t border-slate-800 bg-mm-footer-bg text-white"
     >
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        {/* CTA — mobiel */}
+        {/* CTA · mobiel */}
         <div className="rounded-2xl border border-slate-600/80 bg-slate-800/90 p-4 sm:p-8 lg:hidden">
           <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-sky-300/90 sm:text-xs sm:tracking-[0.2em]">
             Klaar voor de volgende stap?
@@ -77,7 +77,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* CTA — desktop (origineel) */}
+        {/* CTA · desktop (origineel) */}
         <div className="hidden rounded-2xl border border-slate-600/80 bg-slate-800/90 p-6 sm:p-8 lg:block">
           <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-sky-300/90">
             Klaar voor de volgende stap?
@@ -99,7 +99,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Hoofdgrid — mobiel */}
+        {/* Hoofdgrid · mobiel */}
         <div className="mt-8 grid grid-cols-2 gap-x-5 gap-y-7 sm:gap-x-8 lg:hidden">
           <div className="col-span-2">
             <Logo variant="light" />
@@ -168,7 +168,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Hoofdgrid — desktop (origineel) */}
+        {/* Hoofdgrid · desktop (origineel) */}
         <div className="mt-12 hidden gap-10 lg:grid lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div>
             <Logo variant="light" />
@@ -281,7 +281,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Juridisch — mobiel */}
+        {/* Juridisch · mobiel */}
         <nav
           aria-label="Juridisch"
           className="mt-6 flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-1 text-[11px] font-normal text-slate-400 lg:hidden"
@@ -303,7 +303,7 @@ export function SiteFooter() {
           className="mt-8 border-t border-white/10 pt-8 sm:mt-10 lg:hidden"
         />
 
-        {/* Copyright — mobiel */}
+        {/* Copyright · mobiel */}
         <div className="mt-6 flex flex-col items-center gap-2 text-center text-xs text-mm-footer-muted sm:mt-8 lg:hidden">
           <p className="text-slate-400">
             © {new Date().getFullYear()} {BRAND_DISPLAY}. Alle rechten voorbehouden.
@@ -324,7 +324,7 @@ export function SiteFooter() {
           className="mt-12 hidden border-t border-white/10 pt-10 lg:block"
         />
 
-        {/* Copyright — desktop (origineel) */}
+        {/* Copyright · desktop (origineel) */}
         <div className="mt-12 hidden flex-col gap-2 border-t border-white/10 pt-8 text-xs text-mm-footer-muted sm:flex-row sm:items-center sm:justify-between lg:flex">
           <p className="text-slate-400">
             © {new Date().getFullYear()} {BRAND_DISPLAY}. Alle rechten voorbehouden.
