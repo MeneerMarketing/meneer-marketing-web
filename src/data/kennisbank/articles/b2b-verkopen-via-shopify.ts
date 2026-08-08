@@ -7,7 +7,7 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     "Zakelijke klanten die zelf bestellen tegen eigen prijzen, zonder telefoontjes of Excel-orders. Zo bouw je dat binnen Shopify.",
   publishedAt: "2026-04-30",
   modifiedAt: "2026-08-08",
-  readMinutes: 14,
+  readMinutes: 15,
   category: "bouwen",
   keywords: [
     "Shopify B2B",
@@ -54,19 +54,57 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
       text: "Kort antwoord: bouw B2B self-service in dezelfde Shopify-shop waar je B2C draait. Eigen login, eigen prijzen, herbestellen, één voorraad. Minder fouten, meer orders buiten kantoor.",
     },
     {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Excel-of-portal",
+      title: "Hoe loopt jouw B2B-order?",
+      prompt:
+        "Kies wat het dichtst bij de waarheid ligt. Ik zeg of je tijd koopt of kwijtraakt.",
+      options: [
+        {
+          id: "excel",
+          label: "Mail, WhatsApp en Excel. Persoonlijk hoor.",
+          verdict:
+            "Persoonlijk tot het een dagtaak is. Tel uren × 52. Dat bedrag ligt vaak boven een portal.",
+          tone: "ouch",
+        },
+        {
+          id: "portal",
+          label: "Zakelijke login, eigen prijzen, herbestellen in dezelfde Shopify-shop",
+          verdict:
+            "Dit is hoe ik het bouw. Eén voorraad, twee gezichten. Orders om 22:00 zonder jouw inbox.",
+          tone: "win",
+        },
+        {
+          id: "tweede",
+          label: "Apart B2B-platform naast de webshop",
+          verdict:
+            "Kan. Vaak dubbel beheer en prijsdrift. Binnen Shopify houdt je team één waarheid.",
+          tone: "meh",
+        },
+        {
+          id: "live-geen-adoptie",
+          label: "Portal staat live, niemand gebruikt hem nog",
+          verdict:
+            "Duur intranet. Onboarding eerst: accounts, prijslijsten, één klantgroep parallel met mail.",
+          tone: "ouch",
+        },
+      ],
+    },
+    {
       type: "h2",
       text: "Hoe ik een B2B-portal in Shopify bouw",
     },
     {
       type: "p",
-      text: "Ik bouw B2B-portals binnen de bestaande Shopify-shop. Salons en retailers loggen in op een eigen omgeving, zien hun eigen prijzen en bestellen wanneer het hen uitkomt. Geen aparte software, geen tweede systeem om te onderhouden. Eén shop, twee gezichten.",
+      text: "Ik bouw B2B-portals binnen de bestaande Shopify-shop. Salons en retailers loggen in op een eigen omgeving, zien hun eigen prijzen en bestellen wanneer het hen uitkomt. Alles in één shop, twee gezichten. Een tweede systeem om te onderhouden is overbodig.",
     },
     {
       type: "ul",
       items: [
         "Eigen accounts met zakelijke prijzen die de consument nooit te zien krijgt.",
         "Bestelgeschiedenis en snel herbestellen, want B2B-klanten kopen vaak hetzelfde.",
-        "Orders stromen direct de bestaande afhandeling in. Geen overtypen, geen fouten.",
+        "Orders stromen direct de bestaande afhandeling in. Overtypen en typfouten vallen weg.",
       ],
     },
     {

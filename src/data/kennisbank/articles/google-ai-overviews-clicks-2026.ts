@@ -7,7 +7,7 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
     "Bovenaan Google staat steeds vaker een AI-samenvatting. Bezoekers klikken minder. Niet paniekeren, wel aanpassen. Zo speel je mee in 2026 zonder je SEO te laten stikken.",
   publishedAt: "2026-07-12",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 14,
   category: "vindbaarheid",
   keywords: [
     "google ai overviews",
@@ -52,6 +52,96 @@ export const GOOGLE_AI_OVERVIEWS_CLICKS_2026: KennisbankArticle = {
     {
       type: "p",
       text: "Ik zie dit bij klanten die jarenlang traffic kregen van 'wat is X' en 'hoe werkt Y'. Die pagina's waren prima als instap. Nu is de instap de AI-box. Paniek is optioneel. Aanpassen is verplicht.",
+    },
+    {
+      type: "callout",
+      text: "Mijn shift: minder volume-blogs, meer citeerbare antwoorden, koopintentie-pagina's en merk dat mensen direct zoeken. Zero-click is een signaal, geen excuus.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Zero-click-check",
+      title: "AI-Overview-kwetsbaarheidsmeter",
+      intro:
+        "Vink aan wat je herkent. Hoe hoger, hoe meer je organische funnel op samenvattingen leunt die niemand doorklikt.",
+      storageKey: "mm-aio-kwetsbaar",
+      eventName: "aio_kwetsbaar_complete",
+      sharePath: "/kennisbank/google-ai-overviews-clicks-2026",
+      scoreNoun: "kwetsbaarheid",
+      ctaHref: "/diensten/seo",
+      ctaLabel: "SEO",
+      checks: [
+        {
+          id: "info",
+          label: "Topverkeer komt van 'wat is' en 'hoe werkt' blogs",
+          fix: "Verschuif energie naar commercieel + diepte die geciteerd mag worden.",
+        },
+        {
+          id: "geen-antwoord",
+          label: "Pagina's openen met sfeer, niet met een extracteerbaar antwoord",
+          fix: "Antwoord in de eerste alinea. Koppen die één vraag pakken.",
+        },
+        {
+          id: "brand",
+          label: "Branded search is zwak; niemand zoekt je naam",
+          fix: "Cases, LinkedIn, nieuwsbrief. Merk omzeilt de AI-box.",
+        },
+        {
+          id: "schema",
+          label: "FAQ, auteur of schema ontbreekt op kennisbank",
+          fix: "Echte vragen + schema. Theater-FAQ skippen.",
+        },
+        {
+          id: "lokaal",
+          label: "Lokale diensten leunen alleen op info-blogs, niet op GBP",
+          fix: "Maps en lokale landings scherp. Lokale intent blijft vaak Maps-first.",
+        },
+        {
+          id: "meet",
+          label: "Je meet niet branded vs non-branded in Search Console",
+          fix: "Split. Alleen non-branded info daalt? Overview-effect, geen totale ramp.",
+        },
+        {
+          id: "ads-brug",
+          label: "Info-funnel leeg, product klaar, ads nog uit principe uit",
+          fix: "Gerichte ads op koopintentie terwijl je content-shift doorloopt.",
+        },
+        {
+          id: "bulk",
+          label: "Reactie op AIO is 'meer blogs uploaden'",
+          fix: "Meer gemiddelde tekst helpt niet. Structuur, intentie, bewijs wel.",
+        },
+      ],
+      tiers: [
+        {
+          id: "weerbaar",
+          min: 0,
+          max: 24,
+          label: "Klik-waardig merk",
+          quip: "Je hebt redenen om door te klikken die een box niet kan geven. Blijf zo.",
+        },
+        {
+          id: "wankel",
+          min: 25,
+          max: 49,
+          label: "Wankele instap",
+          quip: "Info daalt sneller dan je denkt. Versterk money-pages en merk.",
+        },
+        {
+          id: "zero",
+          min: 50,
+          max: 74,
+          label: "Zero-click-dieet",
+          quip: "Je rankt nog. De kassa hoort het niet. Shift deze maand.",
+        },
+        {
+          id: "samenvatting",
+          min: 75,
+          max: 100,
+          label: "Google's samenvatting",
+          quip: "Jouw content voedt de box. Jouw merk ontbreekt. Fix citeerbaarheid + koopintentie.",
+        },
+      ],
     },
     {
       type: "h2",
