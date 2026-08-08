@@ -6,7 +6,8 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
   description:
     "Paarse gradients, dezelfde cards, dezelfde '01 02 03'-stappen. AI-webdesign herken je in een seconde. Daarom bouw ik websites from scratch, niet vanuit een prompt-template.",
   publishedAt: "2026-07-18",
-  readMinutes: 9,
+  modifiedAt: "2026-08-08",
+  readMinutes: 11,
   category: "bouwen",
   keywords: [
     "ai webdesign",
@@ -32,6 +33,16 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
       question: "Kost custom build altijd meer dan AI-design?",
       answer:
         "Vaak wel in uren aan de voorkant. Wat je terugkrijgt: een site die bij ads en SEO past, sneller laadt, en die je concurrent niet in twee prompts nabouwt. SkinComplete en BestRest zijn daar voorbeelden van: eigen plan, eigen look, geen template-gevoel.",
+    },
+    {
+      question: "Kan ik AI gebruiken en tóch uniek zijn?",
+      answer:
+        "Ja, als jij de keuzes maakt. AI als schets, jij als art director. Kleuren, typografie, layout-regels en copy uit jouw merk. De prompt is geen creative director.",
+    },
+    {
+      question: "Wanneer is een AI-site wel goed genoeg?",
+      answer:
+        "Intern prototype, tijdelijke event-pagina, of een proof of concept voor stakeholders. Zodra je ads, SEO of merkvertrouwen hangt aan de URL, wil je custom build of een strak design system.",
     },
   ],
   sections: [
@@ -142,11 +153,31 @@ export const AI_WEBDESIGN_ALLEMAAL_HETZELFDE: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "Ads op een generieke AI-site",
+    },
+    {
+      type: "p",
+      text: "Betaalde klikken naar een site die op drie concurrenten lijkt, verbrandt vertrouwen sneller dan je denkt. Message match helpt, maar als de hele look voelt als template, daalt conversie. Custom build is niet alleen ego. Het is CPA-hygiëne.",
+    },
+    {
+      type: "p",
+      text: "Ik zie het in accounts waar Quality Score en landing page experience stil blijven terwijl de ads scherp zijn. De ad belooft een specialist. De site voelt als een prompt van vorige week. Mensen merken dat in een seconde, ook als ze het niet zo kunnen benoemen.",
+    },
+    {
+      type: "h2",
+      text: "SEO en AI-lookalike sites",
+    },
+    {
+      type: "p",
+      text: "Google beloont nut, niet gradients. Wel helpt een unieke site met duidelijke structuur, snelle laadtijd en eigen content. Als jouw HTML, copy en visuals ruiken naar massaal gegenereerde templates, is er weinig reden om jou boven een concurrent te zetten die wél expertise toont. From scratch betekent: eigen code, eigen keuzes, meetbare landings.",
+    },
+    {
+      type: "h2",
       text: "Kort: stop met herkenbaar zijn om de verkeerde reden",
     },
     {
       type: "p",
-      text: "Herkenbaar mag. Als mensen jouw site herkennen als jóuw merk. Niet als 'weer zo'n AI-landingspagina'. Standaard AI-webdesign is snel, goedkoop en overal hetzelfde. Dat is prima voor een intern prototype op dinsdagmiddag. Het is een zwakke basis voor ads, SEO en een merk dat wil groeien.",
+      text: "Herkenbaar mag. Als mensen jouw site herkennen als jóuw merk. Niet als weer zo'n AI-landingspagina. Standaard AI-webdesign is snel, goedkoop en overal hetzelfde. Dat is prima voor een intern prototype op dinsdagmiddag. Het is een zwakke basis voor ads, SEO en een merk dat wil groeien.",
     },
     {
       type: "p",

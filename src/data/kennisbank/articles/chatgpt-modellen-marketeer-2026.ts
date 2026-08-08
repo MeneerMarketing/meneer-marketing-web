@@ -7,7 +7,8 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
   description:
     "OpenAI noemt modellen alsof het planeten zijn. Als marketeer hoef je geen rocket scientist te zijn. Wel moet je weten welk model copy schrijft, welk model nadenkt en welk model je beter links laat.",
   publishedAt: "2026-07-12",
-  readMinutes: 11,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "vindbaarheid",
   keywords: [
     "chatgpt modellen 2026",
@@ -32,6 +33,16 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
       question: "Vervangt ChatGPT mijn SEO-bureau?",
       answer:
         "Nee. ChatGPT helpt je sneller onderzoek doen, teksten structureren en ideeën testen. Vindbaarheid in Google én AI-antwoorden vraagt nog steeds techniek, structuur, echte cases en consistente content op je site. AI zonder fundament is een typer die nergens woont.",
+    },
+    {
+      question: "Moet ik betalen voor Plus of Team als marketeer?",
+      answer:
+        "Als je dagelijks structureert, researcht of copy-varianten maakt: ja, de snellere limieten en betere modellen betalen zich terug in uren. Als je eens per maand een mail herschrijft: free is genoeg. Toolkeuze volgt werkvolume.",
+    },
+    {
+      question: "Welk model voor Google Ads-structuur?",
+      answer:
+        "Reasoning voor campagne-architectuur, keyword-thema's en negatieve lijsten. Snel model voor ad-varianten zodra de structuur vastligt. Nooit het snelle model laten 'een complete account bouwen' zonder jouw data en doelstellingen.",
     },
   ],
   sections: [
@@ -150,6 +161,31 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
     {
       type: "callout",
       text: "Heet take: ondernemers die het duurste model voor alles gebruiken, betalen premium voor middelmatige tweets. Ondernemers die alleen het gratis snelle model gebruiken zonder te checken, lanceren campagnes op aannames. De winnaar wisselt.",
+    },
+    {
+      type: "h2",
+      text: "Bulk-content met het verkeerde model",
+    },
+    {
+      type: "p",
+      text: "Het snelle model op vijftig productteksten zonder feiten is hoe catalogusruis ontstaat. Reasoning-modellen op diezelfde bulk is duur theater. Gebruik AI om te structureren. Lever specs en cases zelf. Productpagina SEO en AI-content voor SEO horen bij elkaar: tools versnellen, uniekheid blijft mensenwerk.",
+    },
+    {
+      type: "h2",
+      text: "Mijn praktijksplit per taak",
+    },
+    {
+      type: "ul",
+      items: [
+        "Headline- en subjectvarianten: snel model, jij kiest en scherpt.",
+        "Positionering, funnelkeuze, budgetlogica: reasoning-model + jouw cijfers.",
+        "Code, tracking-debug, schema-fouten: code-gericht model of Claude in de editor.",
+        "Klantmail die gevoelig ligt: jij schrijft, AI checkt toon en lengte.",
+      ],
+    },
+    {
+      type: "p",
+      text: "De namen in de dropdown veranderen sneller dan je contentkalender. De regel blijft: match het denkwerk aan het model, niet de hype aan je ego.",
     },
     {
       type: "h2",

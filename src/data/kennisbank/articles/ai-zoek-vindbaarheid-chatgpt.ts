@@ -7,7 +7,7 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
     "Klanten vragen ChatGPT en Gemini om advies. Zo bouw je pagina's die AI citeert: heldere antwoorden, schema en consistente expertise.",
   publishedAt: "2026-06-18",
   modifiedAt: "2026-08-08",
-  readMinutes: 11,
+  readMinutes: 13,
   category: "vindbaarheid",
   keywords: [
     "AI-antwoorden",
@@ -26,12 +26,22 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
     {
       question: "Hoe meet ik of ChatGPT mij noemt?",
       answer:
-        "Handmatig op queries die je klanten écht stellen. Noteer wie genoemd wordt en welke bronnen terugkomen. Geen magische score die alles belooft.",
+        "Handmatig op queries die je klanten écht stellen. Noteer wie genoemd wordt en welke bronnen terugkomen. Scoreboards die alles beloven bestaan nauwelijks. Een spreadsheet met tien vragen per maand is eerlijker.",
     },
     {
       question: "Helpt schema markup voor AI-citaten?",
       answer:
         "Het helpt machines snappen wie je bent en wat je doet. Samen met duidelijke antwoorden. Schema zonder inhoud is versiering.",
+    },
+    {
+      question: "Moet ik aparte pagina's maken voor AI en voor Google?",
+      answer:
+        "Meestal niet. Eén sterke antwoordpagina voedt beide. Wel strengere eisen: extracteerbaar antwoord bovenaan, bewijs, schema, consistente merkinfo. Twee parallelle sites is onderhoudsdrama.",
+    },
+    {
+      question: "Helpt vindbaarheid in AI ook B2B?",
+      answer:
+        "Ja. Beslissers typen langere vragen in chat: 'welk Shopify B2B-portaal past bij groothandel X'. Wie die vraag feitelijk beantwoordt met cases en ranges, staat eerder in het antwoord dan een algemene homepage.",
     },
   ],
   sections: [
@@ -100,6 +110,32 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
     {
       type: "p",
       text: "Vijftig gemiddelde blogs uploaden voelt productief. Voor AI-citaten is het vaak giftig. Modellen zoeken bronnen met scherpte, niet met volume. Als jouw site klinkt als het gemiddelde van het internet, is er weinig reden om jou te noemen. Gebruik AI om te structureren. Lever zelf de feiten, cases en mening.",
+    },
+    {
+      type: "h2",
+      text: "AI Overviews en ChatGPT: dezelfde discipline",
+    },
+    {
+      type: "p",
+      text: "Google AI Overviews en chat-antwoorden belonen vergelijkbare dingen: extracteerbare antwoorden, bewijs, schema, consistente merkinfo. Wie alleen voor klassieke rankings blogt zonder antwoordblokken, mist beide. Eén contentplan, strengere eisen. Zie ook het artikel over AI Overviews en clicks.",
+    },
+    {
+      type: "h2",
+      text: "Wat ik in audits als eerste check",
+    },
+    {
+      type: "ul",
+      items: [
+        "Heeft elke money-page een antwoord in de eerste alinea, of alleen sfeer?",
+        "Kloppen naam, diensten en regio over site, GBP en LinkedIn heen?",
+        "Zijn cases zo specifiek dat een model ze kan citeren zonder fluff?",
+        "Staat er schema op Organization, FAQ en Product waar het past?",
+        "Word jij genoemd als ik de top 5 klantvragen in ChatGPT typ?",
+      ],
+    },
+    {
+      type: "p",
+      text: "Bij SkinComplete was de volgorde: organische landings scherp, daarna pas ads. Dezelfde landings voeden nu ook AI-antwoorden. BestRest kreeg een eigen strategische aanpak per productlijn. Dat soort unieke keuzes is precies wat generieke AI-blogs niet kunnen nabootsen.",
     },
     {
       type: "h2",
