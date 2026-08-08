@@ -7,7 +7,8 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
   description:
     "Sinds GDPR en cookiebanners meet Google niet meer alles. Consent Mode v2 is geen marketingterm, het is de reden dat je ROAS soms liegt. Zo fix je data zonder de boete.",
   publishedAt: "2026-07-12",
-  readMinutes: 10,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "behoud",
   keywords: [
     "consent mode v2",
@@ -21,7 +22,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     {
       question: "Is Consent Mode v2 verplicht in Nederland?",
       answer:
-        "Als je Google Ads, GA4 of remarketing gebruikt en bezoekers uit de EU hebt, moet consent netjes geregeld zijn. Consent Mode v2 is Google's manier om met gedeeltelijke toestemming toch te modelleren. Geen juridisch advies, wel: negeren maakt je data onbetrouwbaar en kan problemen geven bij audits.",
+        "Als je Google Ads, GA4 of remarketing gebruikt en bezoekers uit de EU hebt, moet consent netjes geregeld zijn. Consent Mode v2 is Google's manier om met gedeeltelijke toestemming toch te modelleren. Dit is geen juridisch advies, wel: negeren maakt je data onbetrouwbaar en kan problemen geven bij audits.",
     },
     {
       question: "Waarom zie ik minder conversies in Google Ads dan in mijn shop?",
@@ -33,6 +34,16 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
       answer:
         "Alleen als je basistracking klopt: consent banner, GA4-events, conversie-import, enhanced conversions waar mogelijk. Smart Bidding op lege of verkeerde data is als autopilot op een kaart van 2019. Technisch rijd je. Praktisch in de sloot.",
     },
+    {
+      question: "Wat is het verschil tussen basic en advanced Consent Mode?",
+      answer:
+        "Basic: tags laden pas na toestemming. Advanced: tags laden in denied-state met cookieless pings voor modeling. Advanced helpt Smart Bidding meer, mits je banner en defaults kloppen. Verkeerd advanced is nog steeds verkeerd.",
+    },
+    {
+      question: "Helpt Enhanced Conversions naast Consent Mode?",
+      answer:
+        "Ja. Gehashte e-mail of telefoon (met toestemming) geeft Google een extra match als cookies ontbreken. Samen met Consent Mode is het de hygiëne-stack voor 2026, niet een nice-to-have.",
+    },
   ],
   sections: [
     {
@@ -41,7 +52,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Ik leg uit wat het is, waarom het sinds 2024/2025 overal opduikt, en wat jij als ondernemer praktisch moet weten. Geen juridisch college. Wel: waarom je marketing er slimmer uitziet als je dit snapt.",
+      text: "Ik leg uit wat het is, waarom het sinds 2024/2025 overal opduikt, en wat jij als ondernemer praktisch moet weten. Dit is geen juridisch college. Wel: waarom je marketing er slimmer uitziet als je dit snapt.",
     },
     {
       type: "h2",
@@ -92,7 +103,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Cookiebot, Complianz, of custom via Google Consent Mode v2 default. Belangrijk: tags laden in de juiste volgorde. GA4 en Google Ads pas na consent-update, met modeling ingeschakeld. Onze site gebruikt zelf een simpele banner met echte keuze. GA4 laadt pas na ja. Geen tracking op nee. Dat voelt als omzet laten liggen. Het is vertrouwen + wet + betere data op lange termijn.",
+      text: "Cookiebot, Complianz, of custom via Google Consent Mode v2 default. Belangrijk: tags laden in de juiste volgorde. GA4 en Google Ads pas na consent-update, met modeling ingeschakeld. Op meneermarketing.nl gebruik ik zelf een simpele banner met echte keuze. GA4 laadt pas na ja. Bij weigeren blijft marketing-tracking uit. Dat voelt als omzet laten liggen. Het is vertrouwen + wet + betere data op lange termijn.",
     },
     {
       type: "h3",
@@ -100,7 +111,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Geen 47 custom events waar niemand naar kijkt. Wel: purchase, generate_lead, begin_checkout, add_to_cart waar relevant. Zelfde definities in GA4 en Google Ads conversie-import. Eén waarheid. Anders vergelijk je appels met koekjes die misschien cookies waren.",
+      text: "Skip de 47 custom events waar niemand naar kijkt. Wel: purchase, generate_lead, begin_checkout, add_to_cart waar relevant. Zelfde definities in GA4 en Google Ads conversie-import. Eén waarheid. Anders vergelijk je appels met koekjes die misschien cookies waren.",
     },
     {
       type: "h3",
@@ -123,6 +134,14 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
       text: "Praktisch advies: fix tracking vóór je budget verdubbelt. Anders schaal je onzekerheid. Ik zie accounts waar 'meer budget' het enige was wat ontbrak. Zeldzaam. Meestal ontbrak consent.",
     },
     {
+      type: "h2",
+      text: "Remarketing en audiences onder consent",
+    },
+    {
+      type: "p",
+      text: "Zonder ad_storage blijven remarketinglijsten klein. Dan lijkt retargeting 'niet te werken' terwijl je eigenlijk te weinig consented users hebt. Fix consent vóór je creatives en caps finetunet. Anders optimaliseer je een lekkende emmer.",
+    },
+    {
       type: "callout",
       text: "Heet take: een bureau dat campagnes draait zonder ooit Tag Assistant te openen, is een chauffeur met zonnebril 's nachts. Lekker stoer. Gevaarlijk.",
     },
@@ -139,6 +158,14 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
         "Zet één primaire conversie in Ads. Geen twintig micro-conversies die Smart Bidding verwarren.",
         "Documenteer wat 'conversie' voor jou betekent. Lead? Sale? Afspraak? Iedereen in het team hetzelfde antwoord.",
       ],
+    },
+    {
+      type: "h2",
+      text: "SkinComplete-les: meten vóór schalen",
+    },
+    {
+      type: "p",
+      text: "Eerst organisch en shop-fundament, daarna ads. Die volgorde geldt ook voor consent: eerst tags en banner, dan budget. SkinComplete schalen zonder betrouwbare purchase-events was een no-go. BestRest idem: marge per SKU vraagt waarde in de hit, niet alleen een bedanktpagina-view.",
     },
     {
       type: "h2",

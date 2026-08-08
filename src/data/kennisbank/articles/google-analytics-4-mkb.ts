@@ -4,9 +4,10 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
   slug: "google-analytics-4-mkb",
   title: "GA4 meet alles behalve wat je wilt weten",
   description:
-    "Google Analytics 4 vol voor MKB: welke events ertoe doen, conversies die kloppen en antwoorden op de vraag welke campagne geld opleverde.",
+    "Google Analytics 4 voor MKB: welke events ertoe doen, conversies die kloppen en antwoorden op de vraag welke campagne geld opleverde.",
   publishedAt: "2026-07-06",
-  readMinutes: 8,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "behoud",
   keywords: [
     "google analytics 4 mkb",
@@ -15,6 +16,33 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     "google ads conversie tracking",
   ],
   dienstSlugs: ["tracking", "google-ads", "strategie"],
+  faqs: [
+    {
+      question: "Welke GA4-conversies moet ik als primary zetten?",
+      answer:
+        "Alleen wat je bankrekening herkent: purchase met waarde, of generate_lead / call-click bij diensten. Scroll, engaged session en 'form start' horen niet in Smart Bidding.",
+    },
+    {
+      question: "Waarom wijken Ads en GA4 af van mijn shop?",
+      answer:
+        "Consent, adblockers, verkeerde tags, dubbele firings, of attributievensters. Vergelijk op dezelfde dag met admin of CRM. Structureel verschil? Fix tags vóór je budget verhoogt.",
+    },
+    {
+      question: "Heb ik server-side tracking nodig?",
+      answer:
+        "Niet vanaf dag één. Wel zodra ad spend serieus is en cookies/adblockers je data leegtrekken. Server-side is hygiëne bij schaal, geen statussymbool.",
+    },
+    {
+      question: "Is GA4 genoeg om campagnes te sturen?",
+      answer:
+        "Voor richting ja, voor optimalisatie wil je Ads-conversies die kloppen plus backend. GA4 alleen zonder waarde en Ads-import is een mooi dashboard met een gat in de bodem.",
+    },
+    {
+      question: "Hoe vaak moet ik tracking checken?",
+      answer:
+        "Na elke site- of checkout-wijziging, en wekelijks een snelle sanity check. Maandelijks: Ads vs shop/CRM. Tracking rot stil als niemand kijkt.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -32,10 +60,10 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
       type: "ul",
       items: [
         "Te veel events standaard aan zonder business betekenis.",
-        "Conversies die alles meet behalve geld: scroll 90%, session > 10 sec.",
+        "Conversies die alles meten behalve geld: scroll 90%, session langer dan 10 seconden.",
         "Geen waarde op ecommerce events, dus ROAS liegt.",
         "Ads en GA4 praten langs elkaar door verkeerde tagging.",
-        "Niemand die maandelijks checkt of data nog klopt na site-update.",
+        "Niemand die maandelijks checkt of data nog klopt na een site-update.",
       ],
     },
     {
@@ -62,7 +90,11 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Als Google Ads optimaliseert op 'bedanktpagina bekeken' terwijl je denkt dat het op orders optimaliseert, brand je budget. Ik zie accounts die maanden draaien op verkeerde events. Dashboard groen. Omzet flat.",
+      text: "Als Google Ads optimaliseert op bedanktpagina bekeken terwijl jij denkt dat het op orders optimaliseert, brand je budget. Ik zie accounts die maanden draaien op verkeerde events. Dashboard groen. Omzet flat.",
+    },
+    {
+      type: "p",
+      text: "Check wekelijks: Ads-conversies versus shop-admin of CRM op dezelfde dag. Wijkt het structureel af, dan optimaliseer je op fantomen. Fix de tag vóór je budget verhoogt.",
     },
     {
       type: "h3",
@@ -70,7 +102,39 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Cookies verdwijnen, adblockers groeien. Server-side tracking via GTM server of tag manager cloud is niet meer alleen enterprise. Voor shops met serieus ad spend is het steeds vaker de juiste investering. Niet omdat het hip is. Omdat je anders blind optimaliseert.",
+      text: "Cookies verdwijnen, adblockers groeien. Server-side tracking via GTM server of een cloud tag manager is niet meer alleen enterprise. Voor shops met serieus ad spend is het steeds vaker de juiste investering. Niet omdat het hip is. Omdat je anders blind optimaliseert.",
+    },
+    {
+      type: "h2",
+      text: "Leadgeneratie meet anders dan shops",
+    },
+    {
+      type: "p",
+      text: "Bij diensten is purchase zeldzaam. Dan telt generate_lead of een call-click. Kwaliteit meet je in CRM: welke leads werden klant? GA4 alleen zegt hoeveel formulieren binnenkwamen. Sales zegt hoeveel ertoe deden. Beide nodig.",
+    },
+    {
+      type: "h2",
+      text: "Consent Mode en GA4 in één adem",
+    },
+    {
+      type: "p",
+      text: "Zonder nette banner en Consent Mode v2 mist GA4 een deel van je traffic en modelleert de rest. Dat voelt als 'Analytics liegt'. Vaak is het privacy + implementatie. Lees het Consent Mode-artikel als Ads en shop uit elkaar lopen terwijl tags 'groen' staan in Tag Assistant na accept.",
+    },
+    {
+      type: "h2",
+      text: "Explorations die wél de moeite waard zijn",
+    },
+    {
+      type: "ul",
+      items: [
+        "Landingspagina × conversie: welke URL's verdienen ads-budget?",
+        "Bron/medium × aankoopwaarde: welke kanalen brengen marge, niet alleen sessies?",
+        "Funnel: view_item → add_to_cart → begin_checkout → purchase. Waar valt het stil?",
+      ],
+    },
+    {
+      type: "p",
+      text: "Bij SkinComplete was de volgorde: shop en meting eerst, ads later. Bij BestRest telde per product de waarde mee, anders optimaliseer je op omzet zonder marge. GA4 zonder value is een scorebord zonder punten.",
     },
     {
       type: "h2",
@@ -81,7 +145,7 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
       items: [
         "Admin > Events: welke zijn gemarkeerd als conversie? Klopt dat?",
         "Test zelf een aankoop of formulier. Komt het in GA4 en Ads binnen?",
-        "Vergelijk Ads conversies met je shop admin op dezelfde dag.",
+        "Vergelijk Ads-conversies met je shop admin of CRM op dezelfde dag.",
         "Verwijder rommel-conversies uit primary goals.",
       ],
     },

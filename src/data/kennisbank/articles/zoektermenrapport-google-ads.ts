@@ -6,7 +6,8 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
   description:
     "Je Google Ads-account verzamelt elke week zoektermen die geld kosten. Dit rapport lezen is goedkoper dan je denkt. Zo doe je het zonder uren te verdwalen.",
   publishedAt: "2026-07-06",
-  readMinutes: 9,
+  modifiedAt: "2026-08-08",
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "zoektermenrapport google ads",
@@ -15,6 +16,33 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
     "search terms rapport",
   ],
   dienstSlugs: ["google-ads", "adverteren", "tracking"],
+  faqs: [
+    {
+      question: "Hoe vaak moet ik het zoektermenrapport checken?",
+      answer:
+        "Wekelijks op je grootste Search-campagne, twintig minuten. Na een broad- of AI Max-wijziging: vaker. Maandelijks is te laat als broad openstaat.",
+    },
+    {
+      question: "Accountniveau of campagneniveau negatieven?",
+      answer:
+        "Account voor universele ruis (gratis, vacature, DIY). Campagne als iets in de ene camp wel mag en in de andere niet. Overdrijf niet: te brede account-negatieven knijpen groei.",
+    },
+    {
+      question: "Zie ik alle zoektermen nog?",
+      answer:
+        "Nee. Google toont een deel, vooral bij lage volume of privacy. Toch is wat je wél ziet genoeg om lekken te dichten. Gebruik ook n-grams en thema's, niet alleen één rare term.",
+    },
+    {
+      question: "Wanneer voeg ik een term toe als keyword?",
+      answer:
+        "Als hij converteert of duidelijk koopintentie heeft, en je landings erbij past. Dan phrase/exact in de juiste camp. Niet alles wat klikt, wel alles wat betaalt.",
+    },
+    {
+      question: "Helpt dit ook bij Performance Max?",
+      answer:
+        "PMax toont minder detail. Search-campagnes blijven je röntgenfoto. Gebruik insights + search companions waar mogelijk, maar verwacht geen volledig zoektermenrapport zoals vroeger.",
+    },
+  ],
   sections: [
     {
       type: "p",
@@ -30,12 +58,12 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Je dashboard toont klikken, impressies, soms zelfs een groene ROAS. Mooi. Het zoektermenrapport toont de woorden achter die klikken. 'Gratis google ads cursus'. 'Marketing vacature utrecht'. 'Concurrent naam + review'. Dat zijn geen statistieken. Dat zijn factuurregels.",
+      text: "Je dashboard toont klikken, impressies, soms zelfs een groene ROAS. Mooi. Het zoektermenrapport toont de woorden achter die klikken. Gratis google ads cursus. Marketing vacature utrecht. Concurrent naam + review. Dat zijn geen statistieken. Dat zijn factuurregels.",
     },
     {
       type: "ul",
       items: [
-        "Je ziet intentie, niet alleen volume. Iemand die 'kopen' typt is iets anders dan iemand die 'uitleg' typt.",
+        "Je ziet intentie, niet alleen volume. Iemand die kopen typt is iets anders dan iemand die uitleg typt.",
         "Je vindt goud dat je miste. Soms blijkt een long-tail term goedkoper én converterender dan je hoofdkeyword.",
         "Je stopt geldlekken voordat ze maandenlang doorlopen. Negatieven vandaag zijn morgen al bespaard budget.",
       ],
@@ -53,7 +81,7 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
       items: [
         "Gratis en DIY: mensen die willen leren, niet betalen.",
         "Vacatures en opleidingen: tenzij je recruitment doet, weg ermee.",
-        "Informatie zonder koop: 'wat is', 'hoe werkt', 'verschil tussen'. Educatie is prima, maar niet met je salesbudget.",
+        "Informatie zonder koop: wat is, hoe werkt, verschil tussen. Educatie is prima, maar niet met je salesbudget.",
         "Verkeerde regio: steden en landen waar je niet levert.",
         "Concurrenten en merknamen: soms bewust, vaak per ongeluk. Beslis bewust.",
       ],
@@ -77,6 +105,14 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
       ],
     },
     {
+      type: "h2",
+      text: "Broad match zonder dit ritme is duur",
+    },
+    {
+      type: "p",
+      text: "Broad match kan werken met sterke creatives, landings en conversiedata. Zonder wekelijks zoektermen lezen is het een open kraan. Smart bidding optimaliseert op wat je hem voedt. Voed je rommel, dan schaalt hij rommel.",
+    },
+    {
       type: "callout",
       text: "Heet take: als je bureau dit rapport niet in de eerste maand minstens één keer met je deelt, vraag waarom. Serieus. Gewoon vragen.",
     },
@@ -87,6 +123,14 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
     {
       type: "p",
       text: "Sommige ondernemers zijn bang dat negatieven kansen missen. Alsof je de deur dichtgooit. In werkelijkheid gooi je de deur dicht voor mensen die toch nooit kopen. De rest krijgt een groter deel van je budget. Dat is geen minder bereik. Dat is minder ruis.",
+    },
+    {
+      type: "h2",
+      text: "Van zoekterm naar landingspagina",
+    },
+    {
+      type: "p",
+      text: "Een term die converteert verdient een eigen ad group of scherpe RSA-variant, niet alleen een negatief voor de buren. Message match: headline = belofte van de query, landings = bewijs. Anders betaal je voor een klik die op de homepage verdwaalt.",
     },
     {
       type: "h2",
