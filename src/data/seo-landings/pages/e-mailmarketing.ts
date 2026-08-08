@@ -19,7 +19,7 @@ export const EMAILMARKETING: SeoLandingPage = {
   headline: "E-mailmarketing die",
   headlineAccent: "niet in de spamfolder eindigt.",
   subheadline:
-    "Je lijst is goud als de flows kloppen. Ik zet welkom, cart en win-back op die bij je merk passen. Bij SkinComplete zit mail in het groeiplan, niet als bijzaak.",
+    "Je lijst is goud als de flows kloppen. Ik zet welkom, cart en win-back op die bij je merk passen. Mail hoort in het groeiplan, niet als bijzaak.",
   pains: [
     {
       title: "Lijst zonder plan",
@@ -70,13 +70,13 @@ export const EMAILMARKETING: SeoLandingPage = {
     },
     {
       title: "Koppelen aan groei",
-      body: "Ads en SEO leveren traffic. Mail houdt waarde vast. Samen onder één plan, zoals bij SkinComplete.",
+      body: "Ads en SEO leveren traffic. Mail houdt waarde vast. Samen onder één plan, met meetbare flows.",
     },
   ],
-  proofTitle: "SkinComplete flows",
+  proofTitle: "Retentie in het groeiplan",
   proofBody:
-    "Bij SkinComplete zat e-mailmarketing in het groeiplan vóór ads hard gingen. Elke euro op acquisitie werkte harder omdat opvolging stond. Mail is retentie-infrastructuur, geen bijproject na drie jaar stilstand.",
-  proofCase: "SkinComplete",
+    "Welkom, cart en post-purchase vóór je ads hard gaan. Elke euro op acquisitie werkt harder als opvolging staat. Mail is retentie-infrastructuur, geen bijproject na drie jaar stilstand.",
+  proofCase: "Flow-opbouw traject",
   hotTake: {
     label: "Heet take",
     body: "E-mailmarketing met alleen een maandelijkse nieuwsbrief is een ansichtkaart die niemand leest.",
@@ -100,7 +100,7 @@ export const EMAILMARKETING: SeoLandingPage = {
     {
       question: "Doe je ook copy en design?",
       answer:
-        "Ja. Tone die bij je merk past, mobiel leesbaar, CTA's die duidelijk zijn. Template-praat vermijden we.",
+        "Ja. Tone die bij je merk past, mobiel leesbaar, CTA's die duidelijk zijn. Template-praat vermijd ik.",
     },
     {
       question: "Werkt dit ook zonder webshop?",
@@ -136,10 +136,10 @@ export const EMAILMARKETING: SeoLandingPage = {
       title: "E-mailmarketing is retentie, geen spamkanon",
       paragraphs: [
         "Je zoekt e-mailmarketing omdat acquisitie duur is en je lijst stil ligt. Mail is een van de weinige kanalen waar je niet per klik opnieuw betaalt. Mits flows, consent en relevantie kloppen.",
-        "Ik bouw welkom, abandoned cart, post-purchase en win-back alsof het productfeatures zijn. SkinComplete bewees: mail vóór hard ads maakt elke advertentie-euro harder werken.",
-        "BestRest-achtige catalogi vragen segmentatie. Een topper-koper is geen matras-onderzoeker. Dezelfde nieuwsbrief voor iedereen is lui en duur in unsubscribes.",
+        "Ik bouw welkom, abandoned cart, post-purchase en win-back alsof het productfeatures zijn. Mail vóór hard ads maakt elke advertentie-euro harder werken.",
+        "Breed assortiment vraagt segmentatie. Een repeat buyer is geen eerste bezoeker. Dezelfde nieuwsbrief voor iedereen kost je opens en omzet.",
         "Deliverability is deel van het vak. Lijsthygiëne, authenticatie, klachten omlaag houden. Mooie HTML in de spamfolder is theater.",
-        "Wil je alleen een mooie template? Dan is er goedkopere hulp. Wil je omzet uit je lijst met meetbare flows? Dan zetten we e-mailmarketing in je groeiplan.",
+        "Wil je alleen een mooie template? Dan is er goedkopere hulp. Wil je omzet uit je lijst met meetbare flows? Dan zet ik e-mailmarketing in je groeiplan.",
       ],
     },
     deepDive: {
@@ -156,7 +156,7 @@ export const EMAILMARKETING: SeoLandingPage = {
       title: "Stel: je adverteert hard, je mail is stil",
       paragraphs: [
         "Budget omhoog, ROAS onder druk, winkelwagens halfvol. Klassiek lek: je koopt intentie en vangt hem niet op in de inbox.",
-        "Ik zet kernflows live en check events in je shop. Daarna kijken we naar revenue uit mail naast ads. Vaak zakt de druk op CPA omdat meer clicks alsnog converteren.",
+        "Ik zet kernflows live en check events in je shop. Daarna kijk ik naar revenue uit mail naast ads. Vaak zakt de druk op CPA omdat meer clicks alsnog converteren.",
         "Binnen korte tijd zie je of e-mailmarketing je acquisitie versterkt. Zo wordt mail geen bijzaak meer in de maandrapportage.",
       ],
     },

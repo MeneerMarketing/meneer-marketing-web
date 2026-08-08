@@ -6,7 +6,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
   category: "shopify",
   metaTitle: "Shopify expert · custom theme & groei | Meneer Marketing",
   metaDescription:
-    "Shopify expert voor custom themes, B2B-portalen en shops die klaar zijn voor SEO en Shopping. Zoals bij SkinComplete: eerst organisch, dan ads.",
+    "Shopify expert voor custom themes, B2B-portalen en shops die klaar zijn voor SEO en Shopping. Eerst een sterk fundament, daarna opschalen op bewijs.",
   keywords: [
     "shopify expert",
     "shopify specialist nederland",
@@ -41,7 +41,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
     },
     {
       title: "B2B-portaal",
-      body: "Prijzen, login, herbestellen. Zoals bij SkinComplete: één shop, twee gezichten.",
+      body: "Prijzen, login, herbestellen. Eén shop, twee gezichten waar het past.",
     },
     {
       title: "SEO en Shopping meegenomen",
@@ -73,10 +73,10 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
       body: "Eerst organisch waar het kan, dan ads. Features erbij als de shop trekt. Volgorde spaart budget.",
     },
   ],
-  proofTitle: "SkinComplete op Shopify",
+  proofTitle: "Fundament, dan volume",
   proofBody:
-    "B2B-portaal, e-mailmarketing en vindbaarheid op Shopify. Eerst organisch laten groeien, daarna ads. Dat is mijn referentie, niet een demo-theme uit de store met vijf sterren en nul support.",
-  proofCase: "SkinComplete",
+    "Custom theme, B2B waar nodig, feeds en SEO vanaf dag één. Eerst organisch valideren, daarna ads. Die volgorde spaart budget en voorkomt dat je op een template hopend groeit.",
+  proofCase: "Shopify groeitraject",
   hotTake: {
     label: "Heet take",
     body: "Een Shopify expert die alleen themes installeert, is een monteur zonder garage. De winst zit in snelheid, data en marketing-koppelingen.",
@@ -90,7 +90,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
     {
       question: "Bouw je alleen Shopify?",
       answer:
-        "Voor shops ja. Custom bedrijfssites en landings doe ik in Next.js als dat slimmer is. We kiezen op jouw model, niet op mijn favoriete stack.",
+        "Voor shops ja. Custom bedrijfssites en landings doe ik in Next.js als dat slimmer is. Ik kies samen met jou op jouw model, niet op mijn favoriete stack.",
     },
     {
       question: "Kun je migreren van WooCommerce?",
@@ -115,7 +115,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
     {
       question: "Doe je ook ads en e-mail na de shop?",
       answer:
-        "Ja. Shop bouwen en daarna SEO, Google Ads, Meta en mail onder één lijn. Zoals bij SkinComplete: eerst fundament, dan verkeer.",
+        "Ja. Shop bouwen en daarna SEO, Google Ads, Meta en mail onder één lijn. Eerst het fundament, dan het verkeer.",
     },
   ],
   ctaTitle: "Shopify die echt past?",
@@ -130,9 +130,9 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
       title: "Waarom ik Shopify-webshops from scratch bouw",
       paragraphs: [
         "Je googelt Shopify webshop laten maken of Shopify theme laten maken. Meestal krijg je een theme-installateur met een factuur. Ik bouw de shop als groeimachine: snelheid, checkout, B2B waar nodig, feeds en SEO in één plan.",
-        "Bij SkinComplete bouwde ik het B2B-portaal op Shopify, zette e-mailmarketing op, en liet SEO eerst het verkeer domineren. Pas daarna gingen ads hard. Volgorde is alles.",
+        "Ik start met assortiment en businessmodel. B2B waar nodig, feeds en SEO in hetzelfde plan. Pas als de shop converteert, schaal ik ads op. Volgorde is alles.",
         "Theme-store is handig om te starten. Zodra marge, merk of B2B-prijzen serieus worden, wringt elk appje. Dan wil je code die jij begrijpt en ik kan onderhouden.",
-        "BestRest laat zien dat productlijnen verschillende landings en boodschappen verdienen. Eén generieke collection-template doet dat zelden. Custom secties maken het verschil tussen scrollen en kopen.",
+        "Productlijnen verdienen verschillende landings en boodschappen. Eén generieke collection-template doet dat zelden. Custom secties maken het verschil tussen scrollen en kopen.",
         "Wil je alleen een theme met je logo? Dan is er goedkopere hulp. Wil je een Shopify expert die marketing meeneemt in de build? Dan praten we over scope en volgorde.",
       ],
     },
@@ -141,7 +141,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
       paragraphs: [
         "Een gekocht theme plus acht apps voelt goedkoop. Tot Core Web Vitals rood staan en Shopping duurder wordt dan je marge toelaat. Custom theme betekent: alleen wat je nodig hebt.",
         "Ik koppel Merchant Center, GA4 en je e-mailstack tijdens de build. Zo test je niet eerst zes maanden in het duister terwijl ads al branden.",
-        "B2B binnen Shopify houdt voorraad en producten op één plek. Losse portals ernaast betekenen dubbele waarheid. SkinComplete bewijst dat login, eigen prijzen en herbestellen netjes kunnen.",
+        "B2B binnen Shopify houdt voorraad en producten op één plek. Losse portals ernaast betekenen dubbele waarheid. Login, eigen prijzen en herbestellen horen in hetzelfde systeem.",
         "Wil je WooCommerce eraf? Dan plan ik redirects en URL-structuur mee. Verhuizen zonder SEO-plan voelt snel live en scoort stil lager.",
         "Na live: meten, opschonen, uitbreiden. Een Shopify expert die verdwijnt na oplevering laat je zitten met een theme dat niemand snapt. Ik blijf aanspreekpunt.",
       ],

@@ -6,7 +6,7 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
   category: "b2b-portal",
   metaTitle: "B2B portaal bouwen · Shopify & custom | Meneer Marketing",
   metaDescription:
-    "B2B portaal bouwen from scratch: prijzen, klanten, herbestellen. SkinComplete-style op Shopify. Excel en mail vervangen door self-service.",
+    "B2B portaal bouwen from scratch: prijzen, klanten, herbestellen op Shopify of custom. Excel en mail vervangen door self-service.",
   keywords: [
     "b2b portaal bouwen",
     "portal b2b bouwen",
@@ -18,7 +18,7 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
   headline: "B2B portaal bouwen.",
   headlineAccent: "Excel mag met pensioen.",
   subheadline:
-    "Orders via mail en spreadsheet schalen niet. Ik bouw portalen waar klanten zelf bestellen, prijzen zien die voor hen gelden en history terugvinden. SkinComplete deed ik zo.",
+    "Orders via mail en spreadsheet schalen niet. Ik bouw portalen waar klanten zelf bestellen, prijzen zien die voor hen gelden en history terugvinden.",
   pains: [
     {
       title: "Handmatige orders",
@@ -72,10 +72,10 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
       body: "Klanten erin, team getraind, mail en vindbaarheid aangezet als het staat. Portaal zonder adoptie is een leeg gebouw.",
     },
   ],
-  proofTitle: "SkinComplete B2B",
+  proofTitle: "B2B self-service op Shopify",
   proofBody:
-    "Professionals bestellen via een portaal op maat binnen Shopify: eigen prijzen, login, herbestellen. Gekoppeld aan marketing en vindbaarheid. Eerst organisch, daarna ads. Dat is geen plugin. Dat is een systeem.",
-  proofCase: "SkinComplete",
+    "Zakelijke klanten bestellen via een portaal op maat: eigen prijzen, login, herbestellen. Gekoppeld aan marketing en vindbaarheid. Eerst adoptie, dan opschalen. Dat is een systeem, geen losse plugin.",
+  proofCase: "B2B portaal traject",
   hotTake: {
     label: "Heet take",
     body: "Een B2B portaal bouwen zonder iemand die ook je shop en SEO snapt, is een nieuw silo waar je data in vastloopt.",
@@ -94,12 +94,12 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
     {
       question: "Hoe lang duurt een B2B portaal bouwen?",
       answer:
-        "Eenvoudig portaal: weken. Complex met integraties: langer. Je krijgt een planning met mijlpalen vóór we starten. Geen vage 'ergens dit kwartaal'.",
+        "Eenvoudig portaal: weken. Complex met integraties: langer. Je krijgt een planning met mijlpalen vóór ik start. Liever helder vooraf dan verrassingen halverwege.",
     },
     {
       question: "Werkt dit naast een B2C-shop?",
       answer:
-        "Ja. Bij SkinComplete: één shop, twee gezichten. Consument ziet consumentenprijzen. Zakelijke klant logt in en ziet zijn afspraken. Voorraad blijft één bron.",
+        "Ja. Eén shop, twee gezichten waar het past. Consument ziet consumentenprijzen. Zakelijke klant logt in en ziet zijn afspraken. Voorraad blijft één bron.",
     },
     {
       question: "Wat gebeurt er met bestaande klanten?",
@@ -135,10 +135,10 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
       title: "B2B portaal bouwen zodat je stopt met orderdesk spelen",
       paragraphs: [
         "Je zoekt iemand om een B2B portaal te bouwen omdat mail, WhatsApp en Excel niet meer schalen. Klanten willen om 22:00 bestellen. Jij wilt niet om 09:00 fouten uit een bijlage halen.",
-        "Ik bouw self-service waar zakelijke klanten hun prijzen zien, herbestellen en history terugvinden. Bij SkinComplete binnen Shopify: één catalogus, twee ervaringen, minder handwerk.",
+        "Ik bouw self-service waar zakelijke klanten hun prijzen zien, herbestellen en history terugvinden. Binnen Shopify waar het past: één catalogus, twee ervaringen, minder handwerk.",
         "Het onderschatte voordeel: een portaal verkoopt buiten kantoortijden. Een flink deel van B2B-orders komt binnen wanneer vroeger niemand de telefoon opnam.",
-        "Integraties doen we slim. Eerst wat pijn doet, dan wat nice-to-have is. Liever een portaal dat teams écht gebruiken dan een enterprise-droom die niemand adopteert.",
-        "Wil je alleen een login voor de show? Dan is er goedkopere hulp. Wil je minder fouten, snellere orders en marketing op hetzelfde fundament? Dan bouwen we het systeem.",
+        "Ik pak integraties slim aan. Eerst wat pijn doet, dan wat nice-to-have is. Liever een portaal dat teams écht gebruiken dan een enterprise-droom die niemand adopteert.",
+        "Wil je alleen een login voor de show? Dan is er goedkopere hulp. Wil je minder fouten, snellere orders en marketing op hetzelfde fundament? Dan bouw ik het systeem.",
       ],
     },
     deepDive: {

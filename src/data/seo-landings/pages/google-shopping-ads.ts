@@ -72,10 +72,10 @@ export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
       body: "Klein starten, winnaars gas geven, verliezers pauzeren. ROAS of marge als stuur, niet vanity clicks.",
     },
   ],
-  proofTitle: "SkinComplete en BestRest",
+  proofTitle: "Catalogus en marge eerst",
   proofBody:
-    "Verschillende producten, verschillende marges, verschillende feeds. SkinComplete vroeg om strakke productpagina's vóór hard Shopping. BestRest om een plan per productlijn. Shopping is geen knop. Het is cataloguswerk plus ads.",
-  proofCase: "SkinComplete",
+    "Verschillende producten, verschillende marges, verschillende feeds. Strakke productpagina's vóór hard Shopping. Een plan per lijn in plaats van alles even hard bieden. Shopping is cataloguswerk plus ads.",
+  proofCase: "Feed-first Shopping",
   hotTake: {
     label: "Heet take",
     body: "Google Shopping ads op een trage shop met template-productpagina's is een dure catalogus die niemand koopt.",
@@ -104,7 +104,7 @@ export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
     {
       question: "Optimaliseer je op ROAS of marge?",
       answer:
-        "Op wat jouw business draagt. ROAS alleen liegt als marges per product sterk verschillen. Dan sturen we op winstbijdrage, niet op één dashboardcijfer.",
+        "Op wat jouw business draagt. ROAS alleen liegt als marges per product sterk verschillen. Dan stuur ik op winstbijdrage, niet op één dashboardcijfer.",
     },
     {
       question: "Fix je ook de productpagina's?",
@@ -112,9 +112,9 @@ export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
         "Ja. Shopping zonder sterke PDP is lekken dichten met een gieter. Ik raak feed én shop aan, anders blijf je klikken kopen naar afhakers.",
     },
     {
-      question: "Werkt dit ook voor BestRest-achtige catalogi?",
+      question: "Werkt dit bij grote catalogi met veel varianten?",
       answer:
-        "Juist daar. Matrassen en toppers hebben andere intentie en ticketprijzen. Eén generieke Shopping-structuur negeert dat. Per lijn denken spaart budget.",
+        "Juist daar. Hoge ticketprijzen en verschillende intenties per lijn vragen structuur. Eén generieke Shopping-set negeert dat. Per lijn denken spaart budget.",
     },
   ],
   ctaTitle: "Shopping laten checken?",
@@ -129,10 +129,10 @@ export const GOOGLE_SHOPPING_ADS: SeoLandingPage = {
       title: "Google Shopping ads winnen in de feed én op de PDP",
       paragraphs: [
         "Je zoekt Google Shopping ads omdat productplaatjes in Google sneller verkopen dan alleen tekstads. Klopt, als de feed schoon is en de productpagina overtuigt. Anders koop je verkeer voor een etalage zonder kassa.",
-        "Ik start bij catalogus en marge. Welke producten verdienen budget? Welke alleen organisch of helemaal niet? SkinComplete en BestRest leren hetzelfde: niet elk item verdient even hard adverteren.",
+        "Ik start bij catalogus en marge. Welke producten verdienen budget? Welke alleen organisch of helemaal niet? Niet elk item verdient even hard adverteren.",
         "Daarna Merchant Center: titels, attributen, prijzen, availability. Saai. Beslist. Een verkeerde prijs of ontbrekende GTIN kost meer dan een hoge CPC.",
         "Parallel fix ik de PDP: snelheid, bewijs, verzendduidelijkheid, schema. Shopping belooft iets in de SERP. De pagina moet die belofte in drie seconden waarmaken op mobiel.",
-        "Wil je alleen 'feed uploaden en hopen'? Dan ben ik te streng. Wil je Shopping dat op winst stuurt? Dan bouwen we feed, shop en campagnes als één systeem.",
+        "Wil je alleen 'feed uploaden en hopen'? Dan ben ik te streng. Wil je Shopping dat op winst stuurt? Dan bouw ik feed, shop en campagnes als één systeem.",
       ],
     },
     deepDive: {
