@@ -7,7 +7,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     "Promoten op Instagram voelt productief. Meestal is het roulette met je merk. Zo zet je Meta Ads wél op als ondernemer met een plan.",
   publishedAt: "2026-07-09",
   modifiedAt: "2026-08-08",
-  readMinutes: 10,
+  readMinutes: 12,
   category: "campagnes",
   keywords: [
     "facebook ads boosten",
@@ -113,11 +113,19 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "Wanneer boosten wél mag (klein)",
+    },
+    {
+      type: "p",
+      text: "Lokale aankondiging, event, eenmalige brand-post met laag budget en lage verwachting. Zet dan nog steeds een doel dat snapt: klikken naar een landings, niet alleen bereik. En stop als je geen leerdata meer krijgt. Boost is geen doorlopende acquisitie-machine.",
+    },
+    {
+      type: "h2",
       text: "De test voor jezelf",
     },
     {
       type: "p",
-      text: "Vraag: wat moet deze euro opleveren? Als het antwoord meer likes is, boost. Als het antwoord orders of afspraken is, bouw een campagne met tracking en een pagina die converteert. Op mijn Meta Ads bureau-hub leg ik de funnel uit zonder roulette.",
+      text: "Vraag: wat moet deze euro opleveren? Als het antwoord meer likes is, boost. Als het antwoord orders of afspraken is, bouw een campagne met tracking en een pagina die converteert. Op mijn Meta Ads bureau-hub en social media advertising-pagina leg ik de funnel uit zonder roulette.",
     },
   ],
 };

@@ -47,14 +47,14 @@ import { ONLINE_MARKETING_MANAGER } from "@/data/seo-landings/pages/online-marke
 import { PERFORMANCE_MARKETING_BUREAU } from "@/data/seo-landings/pages/performance-marketing-bureau";
 import { GOOGLE_MAPS_MARKETING } from "@/data/seo-landings/pages/google-maps-marketing";
 import { TRAGE_WEBSITE_DURE_ADS } from "@/data/seo-landings/pages/trage-website-dure-ads";
+import { SOCIAL_MEDIA_ADVERTISING } from "@/data/seo-landings/pages/social-media-advertising";
+import { PRODUCTPAGINA_SEO } from "@/data/seo-landings/pages/productpagina-seo";
+import { GROWTH_MARKETING_BUREAU } from "@/data/seo-landings/pages/growth-marketing-bureau";
+import { MARKETING_CONSULTANT_MKB } from "@/data/seo-landings/pages/marketing-consultant-mkb";
 import {
-  SOCIAL_MEDIA_ADVERTISING,
   UGC_MARKETING,
   INFLUENCER_MARKETING_BUREAU,
-  PRODUCTPAGINA_SEO,
-  GROWTH_MARKETING_BUREAU,
   KLAVIYO_SPECIALIST,
-  MARKETING_CONSULTANT_MKB,
 } from "@/data/seo-landings/pages/national-batch4";
 import { NATIONAL_BATCH5_PAGES } from "@/data/seo-landings/pages/national-batch5";
 import { SEO_LANDING_CITY_PAGES } from "@/data/seo-landings/locations";

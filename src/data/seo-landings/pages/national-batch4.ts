@@ -121,50 +121,7 @@ export const ADVERTENTIEBEHEER: SeoLandingPage = {
   pillarLabel: "Campagnes",
 };
 
-export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
-  slug: "social-media-advertising",
-  primaryKeyword: "social media advertising",
-  category: "google-ads",
-  metaTitle: "Social media advertising · betaald social met plan | Meneer Marketing",
-  metaDescription: "Social media advertising op Meta, TikTok en meer. UGC, landings en tracking met plan.",
-  keywords: [
-    "social media advertising",
-    "social media ads",
-    "social media marketing bureau",
-    "betaald adverteren social media",
-    "social advertising bureau",
-  ],
-  eyebrow: "Social advertising",
-  headline: "Social media advertising",
-  headlineAccent: "zonder vanity metrics als doel.",
-  subheadline:
-    "Likes zijn leuk voor je ego. Omzet is leuk voor je bedrijf. Of je 'marketing bureau' of 'advertising' googelt: ik stuur op conversie, niet alleen bereik.",
-  pains: [
-    { title: "Bereik zonder sales", body: "Viral gevoel, lege bankrekening." },
-    { title: "Verkeerd platform", body: "B2B op TikTok zonder plan. Geld weg." },
-    { title: "Creatives die verlopen", body: "Eén video, drie maanden. Ad fatigue." },
-  ],
-  deliverables: [
-    { title: "Platform-keuze", body: "Meta, TikTok, waar jouw klant zit." },
-    { title: "UGC & creators", body: "Content die niet als ad schreeuwt." },
-    { title: "Funnel & retargeting", body: "Van koud naar warm naar klant." },
-    { title: "Koppeling met Google", body: "Eén groeiplan, geen eilandjes." },
-  ],
-  visual: "meta-ads",
-  processTitle: "Social die verkoopt",
-  processSteps: processDefault,
-  proofTitle: "Creators + performance",
-  proofBody: "Social advertising werkt als creative en landing samen bewegen.",
-  hotTake: { label: "Heet take", body: "Social media advertising met stockvideo is een reclamefolder in 2026. Niemand kijkt." },
-  faq: [
-    { question: "Organisch social ook?", answer: "Focus betaald + creators. Organisch kan als onderdeel." },
-  ],
-  ctaTitle: "Social ads starten?",
-  ctaBody: "Vertel je product en doelgroep.",
-  relatedSlugs: ["meta-ads-bureau", "tiktok-ads-bureau"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { SOCIAL_MEDIA_ADVERTISING } from './social-media-advertising';
 
 export { UGC_MARKETING } from './ugc-marketing';
 
@@ -248,43 +205,7 @@ export const WEBSHOP_MARKETING: SeoLandingPage = {
   pillarLabel: "Strategie",
 };
 
-export const PRODUCTPAGINA_SEO: SeoLandingPage = {
-  slug: "productpagina-seo",
-  primaryKeyword: "productpagina seo",
-  category: "shopify",
-  metaTitle: "Productpagina SEO · ranken én verkopen | Meneer Marketing",
-  metaDescription: "Productpagina SEO voor webshops. Unieke content, schema, snelheid die rankt.",
-  keywords: ["productpagina seo", "seo productpagina's webshop", "product seo shopify"],
-  eyebrow: "Productpagina SEO",
-  headline: "Productpagina SEO",
-  headlineAccent: "die Google niet negeert.",
-  subheadline: "Duizend SKU's met dezelfde beschrijving is geen SEO. Het is ruis. Productpagina SEO betekent unieke antwoorden op echte koopvragen per product.",
-  pains: [
-    { title: "Dunne pagina's", body: "Titel, prijs, klaar. Google zegt nee." },
-    { title: "Duplicate content", body: "Leverancierstekst overal hetzelfde." },
-    { title: "Filters als SEO-val", body: "Duizend URL's, nul waarde." },
-  ],
-  deliverables: [
-    { title: "Template met diepte", body: "Unieke blokken per product waar het telt." },
-    { title: "Schema & rich results", body: "Product, review, availability." },
-    { title: "Interne links", body: "Collecties en blogs die producten voeden." },
-    { title: "Snelheid per template", body: "CWV op productniveau." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Producten vindbaar maken",
-  processSteps: processDefault,
-  proofTitle: "Shopify SEO",
-  proofBody: "Collecties ranken vaak wel. Producten moet je bewust bouwen.",
-  hotTake: { label: "Heet take", body: "Productpagina SEO met ChatGPT bulk is een catalogus die Google als spam ziet." },
-  faq: [
-    { question: "Grote catalogus?", answer: "Prioriteit op bestsellers en marge-winnaars eerst." },
-  ],
-  ctaTitle: "Productpagina's laten checken?",
-  ctaBody: "Stuur je shop. Ik noem de patronen.",
-  relatedSlugs: ["shopify-seo", "hoger-in-google", "google-shopping-ads"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { PRODUCTPAGINA_SEO } from './productpagina-seo';
 
 export const CHATGPT_VINDBAARHEID: SeoLandingPage = {
   slug: "chatgpt-vindbaarheid",
@@ -364,43 +285,7 @@ export const WEBDESIGN_BUREAU: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
-  slug: "growth-marketing-bureau",
-  primaryKeyword: "growth marketing bureau",
-  category: "seo",
-  metaTitle: "Growth marketing bureau · schaalbaar groeien | Meneer Marketing",
-  metaDescription: "Growth marketing bureau met data, experimenten en uitvoering. Volgorde die schaalt.",
-  keywords: ["growth marketing bureau", "growth hacker nederland", "growth marketing mkb"],
-  eyebrow: "Growth marketing",
-  headline: "Growth marketing bureau",
-  headlineAccent: "zonder 'hockey stick' slides.",
-  subheadline: "Growth marketing is niet een magische knop. Het is de juiste volgorde: fix je funnel, meet eerlijk, test klein, schaal wat werkt. Ik doe dat zonder buzzword-bingo.",
-  pains: [
-    { title: "Growth zonder fundament", body: "Opschalen wat lekt." },
-    { title: "Hacks zonder data", body: "Trucjes die één week werken." },
-    { title: "Alleen acquisitie", body: "Retentie vergeten. CAC stijgt." },
-  ],
-  deliverables: [
-    { title: "Funnel-analyse", body: "Waar zit de bottleneck." },
-    { title: "Experimenten", body: "Klein testen, hard schalen." },
-    { title: "Kanalen mix", body: "SEO, ads, mail, automation." },
-    { title: "Unit economics", body: "Weten wat een klant mag kosten." },
-  ],
-  visual: "content-hub",
-  processTitle: "Groeien met discipline",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete traject",
-  proofBody: "Organisch eerst, dan ads. Dat is growth die blijft staan.",
-  hotTake: { label: "Heet take", body: "Growth marketing bureau dat alleen ads opschaalt, is een benzinepomp zonder motor." },
-  faq: [
-    { question: "Verschil met performance marketing?", answer: "Growth is breder: product, retentie, kanalen. Performance focust op paid." },
-  ],
-  ctaTitle: "Growth plan maken?",
-  ctaBody: "Vertel je huidige cijfers.",
-  relatedSlugs: ["performance-marketing-bureau", "online-marketing-manager", "conversie-optimalisatie"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { GROWTH_MARKETING_BUREAU } from './growth-marketing-bureau';
 
 export { LINKEDIN_ADS_BUREAU } from './linkedin-ads-bureau';
 
@@ -408,43 +293,7 @@ export { KLAVIYO_SPECIALIST } from './klaviyo-specialist';
 
 export { CORE_WEB_VITALS } from './core-web-vitals-verbeteren';
 
-export const MARKETING_CONSULTANT_MKB: SeoLandingPage = {
-  slug: "marketing-consultant-mkb",
-  primaryKeyword: "marketing consultant mkb",
-  category: "seo",
-  metaTitle: "Marketing consultant MKB · strategie én uitvoering | Meneer Marketing",
-  metaDescription: "Marketing consultant voor MKB die ook bouwt en campagnes draait. Advies dat live gaat.",
-  keywords: ["marketing consultant mkb", "marketing adviseur mkb", "externe marketing consultant"],
-  eyebrow: "Marketing consultant",
-  headline: "Marketing consultant voor MKB",
-  headlineAccent: "die ook de knoppen indrukt.",
-  subheadline: "Consultants die alleen adviseren, laten jouw team met een to-do lijst zitten. Ik adviseer én voer uit: site, SEO, ads. Eén aanspreekpunt.",
-  pains: [
-    { title: "Advies zonder handen", body: "Rapport klaar. Niets live." },
-    { title: "Te duur fulltime", body: "CMO huren is zwaar voor MKB." },
-    { title: "Alles urgent", body: "Niets krijgt prioriteit, niets wordt af." },
-  ],
-  deliverables: [
-    { title: "Strategie-sessie", body: "Helder wat eerst moet." },
-    { title: "Uitvoering", body: "Ik bouw en zet live." },
-    { title: "Maandelijkse sparring", body: "Bijsturen op data." },
-    { title: "Eerlijke nee", body: "Als iets geen zin heeft, zeg ik het." },
-  ],
-  visual: "content-hub",
-  processTitle: "Consultancy die landt",
-  processSteps: processDefault,
-  proofTitle: "Meneer als consultant",
-  proofBody: "Ik zit aan tafel alsof ik je marketingmanager ben. Omdat dat is wat je nodig hebt.",
-  hotTake: { label: "Heet take", body: "Een marketing consultant die nooit in je Google Ads heeft gekeken, gokt met jouw geld." },
-  faq: [
-    { question: "Verschil met online marketing manager?", answer: "Consultant zoek je soms projectmatig. Manager is doorlopender. Overlap groot." },
-  ],
-  ctaTitle: "Sparren over marketing?",
-  ctaBody: "Vertel je situatie. Eerste gesprek zonder circus.",
-  relatedSlugs: ["online-marketing-manager", "online-marketing-bureau", "growth-marketing-bureau"],
-  pillarSlug: "strategie",
-  pillarLabel: "Strategie",
-};
+export { MARKETING_CONSULTANT_MKB } from './marketing-consultant-mkb';
 
 export { TRAGE_WEBSITE_DURE_ADS } from './trage-website-dure-ads';
 

@@ -7,7 +7,7 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     "Waarom mooie creatives niet converteren, wat Meta Ads anders doet dan boosten, en hoe je leads krijgt zonder dansjes te forceren.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 10,
+  readMinutes: 12,
   category: "campagnes",
   keywords: [
     "instagram ads geen resultaat",
@@ -100,6 +100,14 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
     {
       type: "callout",
       text: "Een reel die viral gaat in je team is niet hetzelfde als een reel die koopt.",
+    },
+    {
+      type: "h2",
+      text: "Ad fatigue: waarom je creative sneller doodgaat dan je denkt",
+    },
+    {
+      type: "p",
+      text: "Zelfde reel drie maanden lang is hoe CPA kruipt. Roteer hooks. Wissel format. Houd een kleine pipeline van UGC of shots klaar. Social media advertising zonder creative-ritme is een korte honeymoon.",
     },
     {
       type: "h2",

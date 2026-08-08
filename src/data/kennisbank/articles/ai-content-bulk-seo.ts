@@ -7,7 +7,7 @@ export const AI_CONTENT_BULK_SEO: KennisbankArticle = {
     "Vijftig ChatGPT-blogs in een uur klinkt productief. Google en AI-antwoorden negeren gemiddelde tekst. Zo gebruik je AI wél voor vindbaarheid.",
   publishedAt: "2026-07-01",
   modifiedAt: "2026-08-08",
-  readMinutes: 9,
+  readMinutes: 11,
   category: "vindbaarheid",
   keywords: [
     "ai content seo",
@@ -119,6 +119,14 @@ export const AI_CONTENT_BULK_SEO: KennisbankArticle = {
     {
       type: "p",
       text: "Deze kennisbank is daarom bewust klein en traag gegroeid. Liever een artikel waar je iets van leert dan twintig die je vergeet. Google merkt dat verschil. En mensen ook, wat toevallig weer goed is voor Google.",
+    },
+    {
+      type: "h2",
+      text: "Productpagina's en AI: extra gevaarlijk",
+    },
+    {
+      type: "p",
+      text: "Bulk AI op productpagina's is nog erger dan op blogs. Zelfde leverancierstekst, herschreven door een model, blijft duplicate in de praktijk. Voor bestsellers: unieke specs, FAQ, bewijs. AI mag helpen structureren. Jij vult de feiten. Zie productpagina SEO als je catalogus dit probleem heeft.",
     },
     {
       type: "h2",
