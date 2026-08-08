@@ -7,7 +7,7 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
     "Na audits in uiteenlopende branches: deze vijf fouten kosten het meeste geld. Herkenbaar, fixbaar, en vaak niet je schuld.",
   publishedAt: "2026-07-02",
   modifiedAt: "2026-08-08",
-  readMinutes: 14,
+  readMinutes: 15,
   category: "campagnes",
   keywords: [
     "google ads fouten",
@@ -47,6 +47,96 @@ export const GOOGLE_ADS_VIJF_FOUTEN: KennisbankArticle = {
     {
       type: "p",
       text: "Ik open regelmatig Google Ads-accounts van bedrijven die ergens anders begonnen zijn. Of zelf zijn begonnen met de beste bedoelingen en een YouTube-tutorial. Het patroon is verrassend voorspelbaar. Verschillende branches, verschillende budgetten, zelfde vijf gaten in de emmer. Dit artikel is geen roast. Het is een veldrapport. Want als je jezelf hierin herkent, ben je niet dom. Je bent normaal. En je kunt het fixen.",
+    },
+    {
+      type: "callout",
+      text: "Mijn audit-volgorde is saai en heilig: tracking, landings, zoektermen, structuur, pas daarna budget. Wie bij budget begint, optimaliseert een lek.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Account-check",
+      title: "Emmer-lek-meter",
+      intro:
+        "Vink aan wat je herkent in je Google Ads-account. Hoe hoger de score, hoe harder je budget uit de bodem lekt.",
+      storageKey: "mm-ads-emmer-lek",
+      eventName: "ads_emmer_lek_complete",
+      sharePath: "/kennisbank/google-ads-vijf-fouten-elke-account",
+      scoreNoun: "lekscore",
+      ctaHref: "/diensten/google-ads",
+      ctaLabel: "Google Ads",
+      checks: [
+        {
+          id: "site",
+          label: "Ads draaien, maar organisch verkeer converteert ook slecht",
+          fix: "Fix landings en CTA eerst. Ads vermenigvuldigen wat er al is.",
+        },
+        {
+          id: "tracking",
+          label: "Ads-conversies wijken structureel af van shop of CRM",
+          fix: "Eén primaire conversie met waarde. Test zelf een order of lead.",
+        },
+        {
+          id: "soep",
+          label: "Brand, generiek, Shopping en remarketing zitten door elkaar",
+          fix: "Splits op intentie en marge. Anders steelt de luidste klik het budget.",
+        },
+        {
+          id: "zoektermen",
+          label: "Zoektermenrapport heb je deze maand niet geopend",
+          fix: "Top 20 op kosten. Negatieven voor gratis, vacature, DIY, verkeerde regio.",
+        },
+        {
+          id: "homepage",
+          label: "Sterkste ads landen op de homepage",
+          fix: "Eén landings die de ad-belofte herhaalt. Message match vóór meer budget.",
+        },
+        {
+          id: "micro",
+          label: "Smart Bidding optimaliseert op scroll of 'bedankt bekeken'",
+          fix: "Haal micro-conversies uit primary. Optimaliseer op geld of gekwalificeerde lead.",
+        },
+        {
+          id: "pmax",
+          label: "Alles staat op PMax omdat Google het aanraadde",
+          fix: "PMax pas met schone feed, landings en data. Anders is het een snellere kraan.",
+        },
+        {
+          id: "marge",
+          label: "Je weet niet wat een klant mag kosten",
+          fix: "Reken breakeven per productgroep. CPA/ROAS zonder marge is theater.",
+        },
+      ],
+      tiers: [
+        {
+          id: "dicht",
+          min: 0,
+          max: 24,
+          label: "Emmer met bodem",
+          quip: "Je hygiëne klopt redelijk. Blijf wekelijks zoektermen lezen alsof het je pinpas is.",
+        },
+        {
+          id: "druppel",
+          min: 25,
+          max: 49,
+          label: "Druppellek",
+          quip: "Nog te redden. Pak het zwakste schakel deze week, niet drie tegelijk.",
+        },
+        {
+          id: "gat",
+          min: 50,
+          max: 74,
+          label: "Gat in de bodem",
+          quip: "Dashboard kan druk ogen. Je bankrekening huilt stilletjes. Stop met opschalen.",
+        },
+        {
+          id: "douche",
+          min: 75,
+          max: 100,
+          label: "Open riool",
+          quip: "Meer budget nu is benzine op een BBQ. Tracking en landings eerst.",
+        },
+      ],
     },
     {
       type: "h2",
