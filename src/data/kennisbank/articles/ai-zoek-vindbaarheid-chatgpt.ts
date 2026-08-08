@@ -7,7 +7,7 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
     "Klanten vragen ChatGPT en Gemini om advies. Zo bouw je pagina's die AI citeert: heldere antwoorden, schema en consistente expertise.",
   publishedAt: "2026-06-18",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 15,
   category: "vindbaarheid",
   keywords: [
     "AI-antwoorden",
@@ -47,11 +47,97 @@ export const AI_ZOEK_VINDBAARHEID_CHATGPT: KennisbankArticle = {
   sections: [
     {
       type: "p",
-      text: "Even een ongemakkelijke waarheid: een deel van jouw potentiële klanten googelt niet meer. Ze typen hun vraag in ChatGPT of Gemini en krijgen één antwoord, met een paar bronnen. Sta jij daar niet tussen, dan ben je voor die klant geen optie meer. Geen tweede pagina om nog op gevonden te worden, geen advertentiepositie om te kopen.",
+      text: "Even een ongemakkelijke waarheid: een deel van jouw potentiële klanten googelt niet meer. Ze typen hun vraag in ChatGPT of Gemini en krijgen één antwoord, met een paar bronnen. Sta jij daar niet tussen, dan ben je voor die klant geen optie meer. Er is geen tweede pagina om nog op gevonden te worden, en geen advertentiepositie om te kopen.",
     },
     {
       type: "callout",
       text: "Kort antwoord: bouw pagina's die één vraag volledig beantwoorden, met feiten, schema en consistente merkinfo. Test zelf wat AI nu zegt over jouw markt. Verbeter wat ontbreekt. Herhaal.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "AI-citatie-check",
+      title: "Onzichtbaar-in-chat-meter",
+      intro:
+        "Vink aan wat klopt. Hoe hoger, hoe groter de kans dat ChatGPT en Gemini je overslaan terwijl concurrenten wél genoemd worden.",
+      storageKey: "mm-ai-onzichtbaar",
+      eventName: "ai_onzichtbaar_complete",
+      sharePath: "/kennisbank/ai-zoek-vindbaarheid-chatgpt",
+      scoreNoun: "onzichtbaarheid",
+      ctaHref: "/diensten/ai-zoek",
+      ctaLabel: "AI-antwoorden",
+      checks: [
+        {
+          id: "test",
+          label: "Je test nooit zelf wat AI zegt over jouw markt",
+          fix: "Tien klantvragen per maand. Noteer wie genoemd wordt.",
+        },
+        {
+          id: "antwoord",
+          label: "Pagina's openen met sfeer i.p.v. een extracteerbaar antwoord",
+          fix: "Antwoord in alinea één. Koppen die één vraag pakken.",
+        },
+        {
+          id: "schema",
+          label: "Schema, auteur of NAP is inconsistent of ontbreekt",
+          fix: "Machines moeten weten wie je bent. Schema en dezelfde feiten overal.",
+        },
+        {
+          id: "bulk",
+          label: "Reactie is meer blogs uploaden zonder diepte",
+          fix: "Citeerbare antwoorden + bewijs. Volume zonder feiten is lucht.",
+        },
+        {
+          id: "brand",
+          label: "Merk en cases zijn zwak; alleen generieke dienstenpagina's",
+          fix: "Cases, ranges, concrete mening. AI citeert bewijs, niet fluff.",
+        },
+        {
+          id: "dubbel",
+          label: "Je bouwt aparte AI-sites naast Google-content",
+          fix: "Eén sterke pagina voedt beide. Twee stacks is onderhoudsdrama.",
+        },
+        {
+          id: "b2b",
+          label: "Lange B2B-vragen blijven onbeantwoord op de site",
+          fix: "Schrijf de vraag die beslissers in chat typen. Feitelijk, met bereik.",
+        },
+        {
+          id: "seo-split",
+          label: "SEO en AI-antwoorden zijn twee losse hobby's",
+          fix: "Eén contentplan. Sterke pagina's helpen Google én chat.",
+        },
+      ],
+      tiers: [
+        {
+          id: "citeer",
+          min: 0,
+          max: 24,
+          label: "Citeerbaar",
+          quip: "Je hebt antwoorden die machines kunnen pakken. Blijf testen.",
+        },
+        {
+          id: "half",
+          min: 25,
+          max: 49,
+          label: "Half zichtbaar",
+          quip: "Eén money-vraag deze week hard beantwoorden. Meet of AI volgt.",
+        },
+        {
+          id: "mist",
+          min: 50,
+          max: 74,
+          label: "Mist in de chat",
+          quip: "Concurrenten vullen het antwoord. Jij hebt fluff. Fix extracteerbaarheid.",
+        },
+        {
+          id: "weg",
+          min: 75,
+          max: 100,
+          label: "Optie nul",
+          quip: "Voor die klant bestaan jullie niet. Stop bulk. Bouw antwoorden.",
+        },
+      ],
     },
     {
       type: "h2",

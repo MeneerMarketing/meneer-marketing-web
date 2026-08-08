@@ -8,7 +8,7 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
     "OpenAI noemt modellen alsof het planeten zijn. Als marketeer hoef je geen rocket scientist te zijn. Wel moet je weten welk model copy schrijft, welk model nadenkt en welk model je beter links laat.",
   publishedAt: "2026-07-12",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 15,
   category: "vindbaarheid",
   keywords: [
     "chatgpt modellen 2026",
@@ -53,6 +53,44 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
     {
       type: "p",
       text: "Ik leg het uit zonder jargon-wand. Niet omdat je dom bent. Omdat OpenAI het zelf ook niet gebruiksvriendelijk maakt. En als marketeer wil je weten: wanneer zet ik welk model in voor online werk? Copy, SEO, ads, automatisering, concurrentie-analyse. Dat soort dingen.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Model-keuze",
+      title: "Welk model pak je nu?",
+      prompt:
+        "Kies je default. Ik zeg of je het juiste gereedschap pakt of een raket voor een meta description.",
+      options: [
+        {
+          id: "dropdown",
+          label: "Altijd het eerste model in de dropdown",
+          verdict:
+            "Handig tot het misgaat. Snel model voor fluff, reasoning voor structuur. Bewust kiezen bespaart uren.",
+          tone: "ouch",
+        },
+        {
+          id: "snel",
+          label: "Snel model voor headlines, mails, ad-varianten",
+          verdict:
+            "Dit is mijn default voor volume-copy. Daarna jij redigeert. Model schrijft, jij beslist.",
+          tone: "win",
+        },
+        {
+          id: "reason",
+          label: "Reasoning voor campagne-architectuur en positionering",
+          verdict:
+            "Juist. Denkwerk eerst, dan snelle varianten. Nooit o-series voor tien emoji-tweets.",
+          tone: "win",
+        },
+        {
+          id: "account",
+          label: "Snel model: 'bouw mijn hele Ads-account'",
+          verdict:
+            "Zonder jouw data en doelen is dat theater. Structuur met reasoning + jouw cijfers, dan pas ads-tekst.",
+          tone: "ouch",
+        },
+      ],
     },
     {
       type: "h2",
