@@ -161,7 +161,7 @@ export const INSTAGRAM_ADS_GEEN_LEADS: KennisbankArticle = {
         "Pixel fired niet of op het verkeerde event.",
         "Doelgroep te breed: heel NL, 18-65, interesse marketing.",
         "Creative zonder hook in de eerste seconde. Scroll, weg.",
-        "Geen social proof of offer. Waarom nu? Waarom jij?",
+        "Social proof of offer ontbreekt. Waarom nu? Waarom jij?",
         "Google en Meta vertellen twee verschillende verhalen.",
       ],
     },

@@ -164,7 +164,7 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Een spookhuis-profiel heeft alle minimale velden ingevuld en verder niets. Geen posts, geen nieuwe foto's, geen antwoorden op reviews. Google ziet dat als: dit bedrijf is misschien nog wel open, misschien niet. Bij gelijke concurrentie wint degene die leeft.",
+      text: "Een spookhuis-profiel heeft alle minimale velden ingevuld en verder niets. Posts, nieuwe foto's en antwoorden op reviews ontbreken. Google ziet dat als: dit bedrijf is misschien nog wel open, misschien niet. Bij gelijke concurrentie wint degene die leeft.",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Lokale SEO stopt niet bij je profiel. Als je site alleen zegt dat je de beste in Nederland bent, weet Google niet waar je hangt. Regio-pagina's helpen, mits ze echt zijn. Geen copy-paste van Eindhoven naar Helmond met alleen de stadswissel. Schrijf wat je in die regio doet, welke klanten, welk verschil.",
+      text: "Lokale SEO stopt niet bij je profiel. Als je site alleen zegt dat je de beste in Nederland bent, weet Google niet waar je hangt. Regio-pagina's helpen, mits ze echt zijn. Copy-paste van Eindhoven naar Helmond met alleen de stadswissel werkt niet. Schrijf wat je in die regio doet, welke klanten, welk verschil.",
     },
     {
       type: "p",

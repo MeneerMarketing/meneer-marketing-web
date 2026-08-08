@@ -181,7 +181,7 @@ export const BESTREST_MARKETINGPLAN: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Iemand die een topper bekeken heeft, krijgt geen drie weken dezelfde premium-matras-banner. Segmenten volgen productintentie. Cart-flows tonen het juiste SKU. Zo blijft retentie net zo scherp als acquisitie. Eén generieke 'slaap lekker'-flow is branding. Geen marge-bescherming.",
+      text: "Iemand die een topper bekeken heeft, krijgt geen drie weken dezelfde premium-matras-banner. Segmenten volgen productintentie. Cart-flows tonen het juiste SKU. Zo blijft retentie net zo scherp als acquisitie. Eén generieke 'slaap lekker'-flow is branding, geen marge-bescherming.",
     },
     {
       type: "h2",

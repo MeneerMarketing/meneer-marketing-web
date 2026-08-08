@@ -228,11 +228,11 @@ export const WORDPRESS_THEME_GROEIEN_NEXTJS: KennisbankArticle = {
     },
     {
       type: "callout",
-      text: "Templates zijn een start. Geen eindstation voor een bedrijf dat ads wil opschalen.",
+      text: "Templates zijn een start. Voor een bedrijf dat ads wil opschalen is het zelden het eindstation.",
     },
     {
       type: "p",
-      text: "Als je theme je remt, is het theme niet gratis geweest. Het was uitstel met maandelijkse rente. Bouw from scratch als je groei serieus is. Blijf op WordPress als je scope klein blijft en het écht werkt. Ik zeg het eerlijk, ook als dat betekent dat we nog niet migreren.",
+      text: "Als je theme je remt, is het theme niet gratis geweest. Het was uitstel met maandelijkse rente. Bouw from scratch als je groei serieus is. Blijf op WordPress als je scope klein blijft en het écht werkt. Ik zeg het eerlijk, ook als dat betekent dat jij nog niet migreert.",
     },
   ],
 };

@@ -104,12 +104,12 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Eerst komt bijna altijd je bestemming. Niet je logo. Niet je slogan. De plek waar mensen landen en beslissen. Traag op mobiel? Onduidelijke propositie? Geen vertrouwen? Dan is elk ander kanaal een tolweg naar een gesloten winkel.",
+      text: "Eerst komt bijna altijd je bestemming. Niet je logo. Niet je slogan. De plek waar mensen landen en beslissen. Traag op mobiel? Onduidelijke propositie? Vertrouwen ontbreekt? Dan is elk ander kanaal een tolweg naar een gesloten winkel.",
     },
     {
       type: "ul",
       items: [
-        "Snelheid: elke seconde kost je op mobiel. Geen discussie.",
+        "Snelheid: elke seconde kost je op mobiel. Dat is geen debatpunt.",
         "Eén duidelijke boodschap boven de vouw: wat doe je, voor wie, waarom jij.",
         "Bewijs: reviews, cases, certificeringen die echt zijn.",
         "Werkt het formulier of de checkout? Test het zelf. Serieus. Nu.",

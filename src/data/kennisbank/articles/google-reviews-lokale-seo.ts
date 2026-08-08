@@ -169,7 +169,7 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Vraag op het moment dat de klant tevreden is: na oplevering, na een geslaagde afspraak, na een herhaalorder. Eén link. Geen roman. Mail of SMS. Train je team dat dit bij de afronding hoort, niet bij 'ooit later'.",
+      text: "Vraag op het moment dat de klant tevreden is: na oplevering, na een geslaagde afspraak, na een herhaalorder. Eén link. Kort, geen roman. Mail of SMS. Train je team dat dit bij de afronding hoort, niet bij 'ooit later'.",
     },
     {
       type: "ul",
