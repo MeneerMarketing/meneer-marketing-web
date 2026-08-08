@@ -78,7 +78,7 @@ export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
     beats: [
       {
         label: "Zo begon het",
-        text: "Aanmeldingen via WhatsApp, planning in het hoofd, mails handmatig. Geen plek waar klant boekt en Hills haar agenda ziet.",
+        text: "Aanmeldingen via WhatsApp, planning in het hoofd, mails handmatig. Ontbrekende plek waar de klant boekt en Hills haar agenda ziet.",
       },
       {
         label: "Zo bouwde ik",
