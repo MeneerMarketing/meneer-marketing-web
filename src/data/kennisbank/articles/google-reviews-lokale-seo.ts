@@ -7,7 +7,7 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     "Recente reviews, snelle antwoorden en een levend GBP. Praktische lokale SEO die 'bij mij in de buurt' wint.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 7,
+  readMinutes: 10,
   category: "vindbaarheid",
   keywords: [
     "google reviews lokale seo",
@@ -16,10 +16,27 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     "lokale seo tips",
   ],
   dienstSlugs: ["local-seo", "seo", "content-marketing"],
+  faqs: [
+    {
+      question: "Hoe belangrijk zijn Google reviews voor lokale SEO?",
+      answer:
+        "Zwaar. Volume, recentie, tekst en owner responses wegen mee voor mensen én Maps. Een stil profiel voelt gesloten, ook als je open bent.",
+    },
+    {
+      question: "Mag ik reviews kopen?",
+      answer:
+        "Nee. Riskant en dom. Bouw een flow om echte klanten te vragen na tevreden werk. Recent en echt wint van oud en gekocht.",
+    },
+    {
+      question: "Hoe vaak moet ik reviews beantwoorden?",
+      answer:
+        "Idealiter elke review, ook de negatieve. Snel, menselijk, oplossingsgericht. Copy-paste antwoorden voelen nep.",
+    },
+  ],
   sections: [
     {
       type: "p",
-      text: "Je Google Business Profile heeft een foto uit 2019, drie reviews waarvan één van je neef, en een post die zegt 'fijne feestdagen' in maart. Je concurrent heeft veertig reviews dit jaar, foto's elke maand, en antwoordt binnen een dag. Raad eens wie wint bij 'bij mij in de buurt'.",
+      text: "Je Google Business Profile heeft een foto uit 2019, drie reviews waarvan één van je neef, en een post die zegt fijne feestdagen in maart. Je concurrent heeft veertig reviews dit jaar, foto's elke maand, en antwoordt binnen een dag. Raad eens wie wint bij bij mij in de buurt.",
     },
     {
       type: "callout",
@@ -52,6 +69,14 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "Een reviewflow die blijft lopen",
+    },
+    {
+      type: "p",
+      text: "Vraag op het moment dat de klant tevreden is: na oplevering, na een geslaagde afspraak, na een herhaalorder. Eén link. Geen roman. Mail of SMS. Train je team dat dit bij de afronding hoort, niet bij 'ooit later'.",
+    },
+    {
+      type: "h2",
       text: "GBP is geen eenmalige setup",
     },
     {
@@ -60,11 +85,11 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Lokaal in Apeldoorn, Arnhem of Amsterdam",
+      text: "Lokaal in Apeldoorn en verder",
     },
     {
       type: "p",
-      text: "Of je nu op de Veluwe zit of in de Randstad: lokale intentie is een groot deel van Google-zoekgedrag. 'Bij mij in de buurt' is geen grap meer. Je site moet regio serieus nemen met pagina's die kloppen, niet alleen een adres in de footer.",
+      text: "Ik werk vanuit Apeldoorn op de Veluwe en help ook landelijk. Lokale intentie is een groot deel van Google-zoekgedrag. Je site moet regio serieus nemen met pagina's die kloppen, niet alleen een adres in de footer. Reviews zonder lokale pagina's is half werk. Pagina's zonder reviews ook.",
     },
     {
       type: "callout",
@@ -72,7 +97,7 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Vraag deze week drie tevreden klanten om een review. Reageer op oude reviews die nog open staan. Post één update. Klein werk. Zichtbaar effect.",
+      text: "Vraag deze week drie tevreden klanten om een review. Reageer op oude reviews die nog open staan. Post één update. Klein werk. Zichtbaar effect. Wil je Maps, reviews en regio-pagina's in één plan? Op mijn hub over lokale SEO leg ik die route uit.",
     },
   ],
 };

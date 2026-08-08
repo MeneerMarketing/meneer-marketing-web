@@ -599,77 +599,7 @@ export const E_COMMERCE_MARKETING: SeoLandingPage = {
 
 export { EMAILMARKETING } from './e-mailmarketing';
 
-export const TIKTOK_ADS_BUREAU: SeoLandingPage = {
-  slug: "tiktok-ads-bureau",
-  primaryKeyword: "tiktok ads bureau",
-  category: "google-ads",
-  metaTitle: "TikTok Ads bureau · UGC & short video | Meneer Marketing",
-  metaDescription:
-    "TikTok Ads bureau met creators en UGC. Short video die scrollt stopt. Gekoppeld aan landings en Meta waar het zinvol is.",
-  keywords: ["tiktok ads bureau", "tiktok advertising", "tiktok marketing bureau", "ugc tiktok ads"],
-  eyebrow: "TikTok Ads",
-  headline: "TikTok Ads bureau dat",
-  headlineAccent: "niet zoals TV reclame klinkt.",
-  subheadline:
-    "TikTok is geen billboard. Het is UGC, hooks en creators die je product laten zien alsof het geen ad is. Ik combineer TikTok Ads met landings die converteren.",
-  pains: [
-    {
-      title: "Corporate video op TikTok",
-      body: "Logo aan het begin. Swipe. Budget weg.",
-    },
-    {
-      title: "Geen creators",
-      body: "Je team filmt in kantoorlicht. Het algoritme lacht.",
-    },
-    {
-      title: "Views zonder sales",
-      body: "Viraal is leuk. Omzet is beter.",
-    },
-  ],
-  deliverables: [
-    {
-      title: "UGC & creators",
-      body: "Echte mensen, echte hooks.",
-    },
-    {
-      title: "TikTok + Meta",
-      body: "Short video hergebruiken waar het past.",
-    },
-    {
-      title: "Landings voor mobile",
-      body: "95% mobiel. Pagina moet mee.",
-    },
-    {
-      title: "Testen op hooks",
-      body: "Eerste 2 seconden bepalen alles.",
-    },
-  ],
-  visual: "meta-ads",
-  visualCaption: "TikTok werkt als het niet voelt als een ad.",
-  processTitle: "TikTok die verkoopt",
-  processSteps: processDefault,
-  proofTitle: "Creators & conversie",
-  proofBody: "UGC en short video zitten in mijn campagne-aanpak. Niet als trucje, als standaard.",
-  hotTake: {
-    label: "Heet take",
-    body: "TikTok Ads met je CEO die in een pak een product vasthoudt is €0,03 per view en €0,00 per verkoop.",
-  },
-  faq: [
-    {
-      question: "Voor welke producten?",
-      answer: "Consumer, lifestyle, e-commerce. B2B kan, maar vraagt andere aanpak.",
-    },
-    {
-      question: "Doen jullie ook organische TikTok?",
-      answer: "Focus op betaald + creators. Organisch kan als onderdeel van plan.",
-    },
-  ],
-  ctaTitle: "TikTok proberen?",
-  ctaBody: "Vertel je product. Ik zeg eerlijk of TikTok nu zinvol is.",
-  relatedSlugs: ["meta-ads-bureau", "landing-page-laten-maken", "e-commerce-marketing"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { TIKTOK_ADS_BUREAU } from './tiktok-ads-bureau';
 
 export const LEADGENERATIE_WEBSITE: SeoLandingPage = {
   slug: "leadgeneratie-website",

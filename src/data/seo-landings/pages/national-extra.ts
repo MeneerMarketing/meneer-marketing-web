@@ -1,24 +1,5 @@
 import type { SeoLandingPage } from "@/data/seo-landings/types";
 
-const processDefault = [
-  {
-    title: "Intake zonder salescircus",
-    body: "Jij vertelt waar je zit. Ik zeg eerlijk wat zin heeft en wat niet.",
-  },
-  {
-    title: "Plan met volgorde",
-    body: "Niet alles tegelijk. Eerst wat het snelst oplevert of het fundament fixt.",
-  },
-  {
-    title: "Uitvoeren",
-    body: "Ik bouw, schrijf en zet live. Alles onder één dak.",
-  },
-  {
-    title: "Meten en bijsturen",
-    body: "Cijfers beslissen. Sentiment niet.",
-  },
-] as const;
-
 export { META_ADS_BUREAU } from './meta-ads-bureau';
 
 export const ONLINE_MARKETING_BUREAU: SeoLandingPage = {
@@ -195,43 +176,4 @@ export { LANDING_PAGE_LATEN_MAKEN } from './landing-page-laten-maken';
 
 export { MARKETING_AUTOMATISERING } from './marketing-automatisering';
 
-export const SEA_SPECIALIST: SeoLandingPage = {
-  slug: "sea-specialist",
-  primaryKeyword: "sea specialist",
-  category: "google-ads",
-  metaTitle: "SEA specialist · Google Ads met marge in het hoofd | Meneer Marketing",
-  metaDescription:
-    "SEA specialist voor Search, Shopping en Performance Max. Landingspagina's en tracking inbegrepen. Elk account met conversieplan.",
-  keywords: ["sea specialist", "sea bureau", "zoekmachine adverteren specialist", "google ads specialist"],
-  eyebrow: "SEA",
-  headline: "SEA specialist die ook",
-  headlineAccent: "je landingspagina fixt.",
-  subheadline:
-    "SEA is niet alleen bieden op zoekwoorden. Het is weten welke klik geld oplevert en wat er daarna gebeurt. Ik doe beide.",
-  pains: [
-    { title: "CPA zonder context", body: "Mooie CPA op een product dat niets verdient." },
-    { title: "Zoektermen-lek", body: "Je betaalt voor gratis, jobs en concurrenten." },
-    { title: "Message match scheurt", body: "Ad belooft A, pagina zegt B." },
-  ],
-  deliverables: [
-    { title: "Search & Shopping", body: "Intentie-gestuurd, marge-bewust." },
-    { title: "Tracking & attributie", body: "Weten wat echt converteert." },
-    { title: "Landings bouwen", body: "Ik hoef niemand anders te bellen." },
-    { title: "Wekelijkse optimalisatie", body: "Budget naar winnaars." },
-  ],
-  visual: "google-ads",
-  processTitle: "SEA met het volle plaatje",
-  processSteps: processDefault,
-  proofTitle: "Ads na fundament",
-  proofBody: "Organisch eerst bij SkinComplete, daarna SEA. Die volgorde bespaart je duizenden euro's aan leer geld.",
-  hotTake: { label: "Heet take", body: "Een SEA specialist die 'landing page' uitbesteedt aan een goedkope freelancer, gokt met jouw geld." },
-  faq: [
-    { question: "Verschil met Google Ads bureau?", answer: "Zelfde vak, andere zoekterm. Ik pak beide." },
-    { question: "Minimum budget?", answer: "Hangt af van markt. We rekenen eerst door of het kan." },
-  ],
-  ctaTitle: "SEA zonder gokken?",
-  ctaBody: "Vertel je markt en marge. Ik geef eerlijk advies.",
-  relatedSlugs: ["google-ads-bureau", "google-shopping-ads"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { SEA_SPECIALIST } from './sea-specialist';
