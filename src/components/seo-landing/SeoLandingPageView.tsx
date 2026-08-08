@@ -456,7 +456,7 @@ export function SeoLandingPageView({
       </section>
 
       <SeoLandingInlineCta
-        title="Zullen we jouw situatie even doorlichten?"
+        title="Jouw situatie even doorlichten?"
         body="Ik lees je huidige setup en zeg eerlijk wat de volgende stap is. Gratis intake, geen verplichtingen."
       />
 

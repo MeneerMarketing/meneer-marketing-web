@@ -133,7 +133,7 @@ export const SHOPIFY_EXPERT: SeoLandingPage = {
         "Ik start met assortiment en businessmodel. B2B waar nodig, feeds en SEO in hetzelfde plan. Pas als de shop converteert, schaal ik ads op. Volgorde is alles.",
         "Theme-store is handig om te starten. Zodra marge, merk of B2B-prijzen serieus worden, wringt elk appje. Dan wil je code die jij begrijpt en ik kan onderhouden.",
         "Productlijnen verdienen verschillende landings en boodschappen. Eén generieke collection-template doet dat zelden. Custom secties maken het verschil tussen scrollen en kopen.",
-        "Wil je alleen een theme met je logo? Dan is er goedkopere hulp. Wil je een Shopify expert die marketing meeneemt in de build? Dan praten we over scope en volgorde.",
+        "Wil je alleen een theme met je logo? Dan is er goedkopere hulp. Wil je een Shopify expert die marketing meeneemt in de build? Dan praat ik met je over scope en volgorde.",
       ],
     },
     deepDive: {

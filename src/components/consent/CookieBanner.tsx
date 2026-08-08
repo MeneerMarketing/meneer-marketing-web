@@ -73,7 +73,7 @@ export function CookieBanner() {
               className="mt-3 text-sm leading-relaxed text-mm-muted"
             >
               Noodzakelijke cookies houden de site werkend.
-              Met jouw toestemming mogen we ook anonieme statistiek gebruiken om
+              Met jouw toestemming mag ik ook anonieme statistiek gebruiken om
               de site te verbeteren.{" "}
               <Link
                 href="/cookiebeleid"

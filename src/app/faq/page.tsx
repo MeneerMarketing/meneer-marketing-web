@@ -43,7 +43,7 @@ const FAQ_CATEGORIES: FaqCategory[] = [
       {
         question: "Krijg ik een heel team of gewoon jou?",
         answer:
-          "Je krijgt Meneer Marketing. Eén aanspreekpunt dat strategie, design, code en marketing combineert. Wat jij en ik bespreken, bouw ik. Jij merkt het verschil in snelheid.",
+          "Je krijgt Meneer Marketing. Eén aanspreekpunt dat strategie, design, code en marketing combineert. Wat jij en ik bespreken, bouw ik zelf. Jij merkt het verschil in snelheid.",
       },
       {
         question: "Werk je met vaste pakketten?",

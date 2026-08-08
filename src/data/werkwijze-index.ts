@@ -30,7 +30,7 @@ export const WERKWIJZE_PHASES: WerkwijzePhase[] = [
     tag: "Snappen",
     title: "Eerst jouw werkelijkheid",
     headline: "Luisteren vóór er een euro op tafel ligt.",
-    body: "Intake, stack, cijfers en ambities. Waar zit marge, waar lekt tijd, wat moet over een half jaar anders? Pas als dat helder is, praten we over volgorde en budget.",
+    body: "Intake, stack, cijfers en ambities. Waar zit marge, waar lekt tijd, wat moet over een half jaar anders? Pas als dat helder is, praat ik over volgorde en budget.",
     punchline: "Offerte zonder context is gokken met je bankrekening.",
     tags: ["Intake ± 2 min", "Stack in kaart", "Eerlijke prioriteit"],
     scene: "intake",

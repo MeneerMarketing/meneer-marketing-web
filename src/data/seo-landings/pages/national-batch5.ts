@@ -977,7 +977,7 @@ export const SOCIAL_MEDIA_MARKETING_BUREAU = buildNationalPage({
     },
     {
       question: "Moet ik zelf posten?",
-      answer: "Kan ik overnemen of we doen het samen. Ritme is belangrijker dan perfectie.",
+      answer: "Kan ik overnemen, of doen we het samen. Ritme is belangrijker dan perfectie.",
     },
   ],
   ctaTitle: "Social met rendement?",

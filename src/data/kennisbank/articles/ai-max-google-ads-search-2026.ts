@@ -297,7 +297,7 @@ export const AI_MAX_GOOGLE_ADS_SEARCH_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Wil je weten of jouw Search-account klaar is voor AI Max, of dat je eerst landings en tracking moet rechtzetten? Start een intake. Ik kijk mee in het account én op je site. De knop laten we pas knipperen als het menu klopt.",
+      text: "Wil je weten of jouw Search-account klaar is voor AI Max, of dat je eerst landings en tracking moet rechtzetten? Start een intake. Ik kijk mee in het account én op je site. De knop laat ik pas knipperen als het menu klopt.",
     },
   ],
 };

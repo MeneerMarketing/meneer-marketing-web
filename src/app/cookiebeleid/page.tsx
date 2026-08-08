@@ -24,7 +24,7 @@ export default function CookiePage() {
       <LegalPageShell
         title="Cookiebeleid"
         updatedAt="2 juli 2026"
-        intro="Kort samengevat: deze site gebruikt zo min mogelijk cookies. Statistieken laden we alleen als jij daar via de banner toestemming voor geeft, en je kunt die keuze altijd terugdraaien."
+        intro="Kort samengevat: deze site gebruikt zo min mogelijk cookies. Statistieken laden alleen als jij daar via de banner toestemming voor geeft, en je kunt die keuze altijd terugdraaien."
       >
         <h2>Wat zijn cookies?</h2>
         <p>
