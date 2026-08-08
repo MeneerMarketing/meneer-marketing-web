@@ -8,7 +8,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     "Sinds GDPR en cookiebanners meet Google niet meer alles. Consent Mode v2 is geen marketingterm, het is de reden dat je ROAS soms liegt. Zo fix je data zonder de boete.",
   publishedAt: "2026-07-12",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "behoud",
   keywords: [
     "consent mode v2",
@@ -53,6 +53,92 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     {
       type: "p",
       text: "Ik leg uit wat het is, waarom het sinds 2024/2025 overal opduikt, en wat jij als ondernemer praktisch moet weten. Dit is geen juridisch college. Wel: waarom je marketing er slimmer uitziet als je dit snapt.",
+    },
+    {
+      type: "interactive",
+      id: "checklist-meter",
+      eyebrow: "Tag Assistant-moment",
+      title: "Blind-vlieg-meter",
+      intro:
+        "Vink aan wat je herkent. Hoe hoger, hoe meer Smart Bidding op giswerk vliegt terwijl jij denkt dat Google liegt.",
+      storageKey: "mm-consent-blind",
+      eventName: "consent_blind_complete",
+      sharePath: "/kennisbank/consent-mode-google-ads-2026",
+      scoreNoun: "blindheid",
+      ctaHref: "/diensten/tracking",
+      ctaLabel: "Tracking",
+      checks: [
+        {
+          id: "banner",
+          label: "Banner staat onderaan, grijs, of pre-checked",
+          fix: "Echte keuze vóór marketing-tags. Dat is consent, geen decoratie.",
+        },
+        {
+          id: "tag",
+          label: "Nooit Tag Assistant gedraaid met accept én weiger",
+          fix: "Incognito test. Geen verschil? Implementatie is kapot.",
+        },
+        {
+          id: "cookiebot-claim",
+          label: "‘We hebben Cookiebot’ zonder GA4 Consent Mode check",
+          fix: "Tool ≠ setup. Check in GA4 admin of Consent Mode actief is.",
+        },
+        {
+          id: "ads-shop",
+          label: "Ads-conversies en shop wijken structureel af",
+          fix: "Consent + events + enhanced conversions. Daarna pas budget.",
+        },
+        {
+          id: "remarketing",
+          label: "Remarketing-audiences blijven klein terwijl traffic groeit",
+          fix: "ad_storage geweigerd of tags te laat. Fix consent vóór creatives.",
+        },
+        {
+          id: "micro",
+          label: "Twintig micro-conversies voeden Smart Bidding",
+          fix: "Eén primaire conversie. Modeling vult gaten, geen rommeldoelen.",
+        },
+        {
+          id: "scale",
+          label: "Budget verdubbeld terwijl tracking ‘ongeveer’ klopt",
+          fix: "Je schaalt onzekerheid. Fix input, dan volume.",
+        },
+        {
+          id: "enhanced",
+          label: "Enhanced Conversions staan uit bij checkout of leadform",
+          fix: "Gehashte e-mail (met toestemming) helpt als cookies ontbreken.",
+        },
+      ],
+      tiers: [
+        {
+          id: "helder",
+          min: 0,
+          max: 24,
+          label: "Eerlijke weegschaal",
+          quip: "Je meet wat je mag meten. Smart Bidding krijgt betere input.",
+        },
+        {
+          id: "mist",
+          min: 25,
+          max: 49,
+          label: "Mist op de baan",
+          quip: "Nog te redden. Tag Assistant deze week. Accepteer én weiger.",
+        },
+        {
+          id: "nacht",
+          min: 50,
+          max: 74,
+          label: "Nachtbril-chauffeur",
+          quip: "Campagnes draaien. Data liegt half. Klassiek 2026-lek.",
+        },
+        {
+          id: "sloot",
+          min: 75,
+          max: 100,
+          label: "Autopilot in de sloot",
+          quip: "Stop met ‘Google liegt’. Fix consent. Dan pas oordelen over ROAS.",
+        },
+      ],
     },
     {
       type: "h2",

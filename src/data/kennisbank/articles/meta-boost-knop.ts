@@ -7,7 +7,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     "Promoten op Instagram voelt productief. Meestal is het roulette met je merk. Zo zet je Meta Ads wél op als ondernemer met een plan.",
   publishedAt: "2026-07-09",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "campagnes",
   keywords: [
     "facebook ads boosten",
@@ -47,6 +47,44 @@ export const META_BOOST_KNOP: KennisbankArticle = {
     {
       type: "p",
       text: "Je post iets op Instagram. Het presteert matig. Er verschijnt een knop: Boost. Eén klik, budget instellen, klaar. Je voelt dat je iets doet. En dat is precies het probleem. De boost-knop is marketing voor mensen die geen tijd hebben om na te denken, ontworpen door een platform dat wél heeft dat je budget uitgeeft. Het is niet per se kwaadaardig. Het is gewoon niet jouw strategie.",
+    },
+    {
+      type: "interactive",
+      id: "hot-take",
+      eyebrow: "Boost of bouw",
+      title: "Wat doe je met €200 op Meta?",
+      prompt:
+        "Kies. Ik zeg of je een strategie koopt of een lekker gevoel.",
+      options: [
+        {
+          id: "boost",
+          label: "Boost de post die het team ‘wow’ vond",
+          verdict:
+            "Likes-machine. Zonder pixel-doel en landings koop je bereik, geen pipeline. Prima voor een event. Slecht als acquisitie.",
+          tone: "ouch",
+        },
+        {
+          id: "ads",
+          label: "Ads Manager: conversiedoel, pixel, één landings, twee creatives",
+          verdict:
+            "Dit is hoe ik Meta aanpak. Meer werk. Meer controle. Minder verrassing op de factuur.",
+          tone: "win",
+        },
+        {
+          id: "home",
+          label: "Traffic naar de homepage, want daar staat alles",
+          verdict:
+            "Message mismatch. Op mobiel verdwaalt iedereen. Eén belofte, één URL, één CTA.",
+          tone: "ouch",
+        },
+        {
+          id: "ugc",
+          label: "Eerst een echte UGC-hook, dan pas budget",
+          verdict:
+            "Slim als de landings al klopt. Creative zonder funnel is alsnog theater. Hook + URL samen.",
+          tone: "win",
+        },
+      ],
     },
     {
       type: "callout",
