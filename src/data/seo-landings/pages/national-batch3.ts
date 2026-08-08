@@ -267,47 +267,7 @@ export const SHOPIFY_WEBSHOP_LATEN_MAKEN: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const SHOPIFY_SEO: SeoLandingPage = {
-  slug: "shopify-seo",
-  primaryKeyword: "shopify seo",
-  category: "shopify",
-  metaTitle: "Shopify SEO · producten ranken & converteren | Meneer Marketing",
-  metaDescription:
-    "Shopify SEO: techniek, productpagina's, collecties en Shopping. Organisch verkeer dat je ads versterkt, niet vervangt.",
-  keywords: ["shopify seo", "shopify seo specialist", "seo shopify webshop", "shopify vindbaarheid"],
-  eyebrow: "Shopify SEO",
-  headline: "Shopify SEO die",
-  headlineAccent: "producten laat ranken én verkopen.",
-  subheadline:
-    "Shopify SEO is niet alleen titeltags invullen. Het is snelheid, dunne pagina's vermijden, collecties structureren en content die antwoord geeft op echte zoekvragen.",
-  pains: [
-    { title: "Collecties ranken, producten niet", body: "Dunne productpagina's, duplicate filters." },
-    { title: "Theme SEO-limiet", body: "Standaard theme blokkeert technische fixes." },
-    { title: "Alleen ads", body: "Organisch leeg. Elke euro via betaald." },
-  ],
-  deliverables: [
-    { title: "Technische Shopify SEO", body: "Snelheid, indexatie, schema." },
-    { title: "Product- & collectie-optimalisatie", body: "Unieke content per pagina." },
-    { title: "Blog & koopgidsen", body: "Intentie die Shopping voedt." },
-    { title: "Koppeling met ads", body: "Organisch eerst testen, dan schalen." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Shopify organisch laten groeien",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete eerst organisch",
-  proofBody: "Eerst SEO en shop, daarna ads. Die volgorde bij SkinComplete is geen toeval.",
-  proofCase: "SkinComplete",
-  hotTake: { label: "Heet take", body: "Shopify SEO met alleen AI-productbeschrijvingen is een catalogus die Google negeert." },
-  faq: [
-    { question: "Hoe lang tot resultaat?", answer: "Eerste beweging vaak weken. Dominantie kan maanden duren." },
-    { question: "Custom theme nodig?", answer: "Niet altijd. Wel vaak voor serieuze technische SEO." },
-  ],
-  ctaTitle: "Shopify SEO laten checken?",
-  ctaBody: "Stuur je shop-URL. Ik noem de grootste kansen.",
-  relatedSlugs: ["shopify-expert", "hoger-in-google", "google-shopping-ads"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { SHOPIFY_SEO } from './shopify-seo';
 
 export const NEXTJS_WEBSITE_LATEN_MAKEN: SeoLandingPage = {
   slug: "nextjs-website-laten-maken",
@@ -391,46 +351,7 @@ export const WEBSITE_LATEN_BOUWEN: SeoLandingPage = {
   pillarLabel: "Bouwen",
 };
 
-export const SEO_AUDIT: SeoLandingPage = {
-  slug: "seo-audit",
-  primaryKeyword: "seo audit",
-  category: "seo",
-  metaTitle: "SEO audit · wat lekt en wat wint | Meneer Marketing",
-  metaDescription:
-    "SEO audit met techniek, content en autoriteit. Geen 200-punten PDF die in een la verdwijnt. Wel prioriteiten die je deze maand kunt fixen.",
-  keywords: ["seo audit", "seo audit laten uitvoeren", "website seo analyse", "seo scan"],
-  eyebrow: "SEO audit",
-  headline: "SEO audit die",
-  headlineAccent: "geen Excel-cemetery wordt.",
-  subheadline:
-    "Een audit moet je vertellen wat je eerst fixt en waarom. Niet vijftig pagina's met vage scores. Ik audit alsof ik daarna zelf ga bouwen. Omdat dat vaak ook zo is.",
-  pains: [
-    { title: "Audit zonder actie", body: "Mooi rapport. Niets live. Rankings hetzelfde." },
-    { title: "Alleen techniek", body: "Crawl errors gefixt. Content nog steeds waardeloos." },
-    { title: "Alleen content", body: "Blogs geschreven. Site nog steeds traag." },
-  ],
-  deliverables: [
-    { title: "Technische scan", body: "Indexatie, snelheid, schema, redirects." },
-    { title: "Content & intentie", body: "Wat rankt, wat mist, wat cannibaliseert." },
-    { title: "Concurrentie-snapshot", body: "Wie wint op jouw zoekwoorden en waarom." },
-    { title: "Prioriteitenlijst", body: "Gesorteerd op impact en inspanning." },
-  ],
-  visual: "seo-serp",
-  processTitle: "Audit die leidt tot actie",
-  processSteps: processDefault,
-  proofTitle: "Bouwer + SEO",
-  proofBody: "Ik lees broncode. Audits zijn geen theoretische oefening. Wat ik vind, kan ik vaak zelf fixen.",
-  hotTake: { label: "Heet take", body: "Een SEO audit van iemand die niet kan bouwen, is een diagnose zonder dokter." },
-  faq: [
-    { question: "Hoe lang duurt een audit?", answer: "Kleine site: dagen. Grote shop: langer. Altijd met heldere deadline." },
-    { question: "Implementeren jullie ook?", answer: "Ja. Audit alleen kan, doorpakken liever." },
-  ],
-  ctaTitle: "SEO audit aanvragen?",
-  ctaBody: "Stuur je URL. Ik schets scope en aanpak.",
-  relatedSlugs: ["technische-seo", "seo-specialist", "hoger-in-google"],
-  pillarSlug: "vindbaarheid",
-  pillarLabel: "Vindbaarheid",
-};
+export { SEO_AUDIT } from './seo-audit';
 
 export const SEO_UITBESTEDEN: SeoLandingPage = {
   slug: "seo-uitbesteden",

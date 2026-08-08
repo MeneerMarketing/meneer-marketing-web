@@ -6,7 +6,7 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
   description:
     "Whiteboards, sticky notes en synergie. Of: meten, bouwen, bijsturen. Waarom uitvoering wint van vergaderen voor MKB.",
   publishedAt: "2026-07-06",
-  readMinutes: 7,
+  readMinutes: 10,
   category: "strategie",
   keywords: [
     "marketing strategie mkb",
@@ -47,12 +47,29 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
       ],
     },
     {
+      type: "p",
+      text: "Bij SkinComplete eerst organisch en shop-fundament, daarna ads. Bij BestRest per product andere logica. Dat is strategie die je in het account ziet, niet alleen op het whiteboard.",
+    },
+    {
       type: "h2",
       text: "Online marketing manager vs vergader-marathon",
     },
     {
       type: "p",
-      text: "Een online marketing manager (of bureau dat zo werkt) opent je account, je shop, je analytics. Niet om te oordelen. Om te fixen. Wekelijks bijsturen. Maandelijks eerlijk: opschalen, pauzeren of stoppen. Geen retainer omdat de kalender het zegt.",
+      text: "Een online marketing manager (of iemand die zo werkt) opent je account, je shop, je analytics. Niet om te oordelen. Om te fixen. Wekelijks bijsturen. Maandelijks eerlijk: opschalen, pauzeren of stoppen. Retainer omdat de kalender het zegt, is theater.",
+    },
+    {
+      type: "h2",
+      text: "Wat een nuttige sessie wél oplevert",
+    },
+    {
+      type: "ul",
+      items: [
+        "Eén prioriteit voor de komende twee weken.",
+        "Eigenaar: wie zet het live?",
+        "Metric: waaraan zie je dat het werkt?",
+        "Stopregel: wanneer stoppen we of sturen we bij?",
+      ],
     },
     {
       type: "h2",
@@ -60,7 +77,7 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Of je nu MKB bent op de Veluwe of in Amsterdam: de bankrekening spreekt dezelfde taal. Minder slides. Meer cijfers. Meer 'we doen dit volgende week' en minder 'we nemen het mee'.",
+      text: "Of je nu MKB bent op de Veluwe of in Amsterdam: de bankrekening spreekt dezelfde taal. Minder slides. Meer cijfers. Meer we doen dit volgende week en minder we nemen het mee.",
     },
     {
       type: "callout",

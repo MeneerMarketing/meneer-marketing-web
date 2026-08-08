@@ -9,83 +9,9 @@ const processDefault = [
 
 export { GOOGLE_ADS_OF_SEO } from './google-ads-of-seo';
 
-export const SHOPIFY_OF_WOOCOMMERCE: SeoLandingPage = {
-  slug: "shopify-of-woocommerce",
-  primaryKeyword: "shopify of woocommerce",
-  category: "shopify",
-  metaTitle: "Shopify of WooCommerce · eerlijke keuze | Meneer Marketing",
-  metaDescription: "Shopify of WooCommerce? Wanneer welke shop. Migratie, SEO en groei. Eerlijk advies op maat.",
-  keywords: ["shopify of woocommerce", "woocommerce of shopify", "webshop platform kiezen"],
-  eyebrow: "Shopify vs WooCommerce",
-  headline: "Shopify of WooCommerce?",
-  headlineAccent: "Hint: ik promoot WordPress niet.",
-  subheadline: "WooCommerce kan. Tot plugins, updates en trage shops je tijd opeten. Shopify is vaak slimmer voor groei. Ik migreer je erheen als het zinvol is, met SEO intact.",
-  pains: [
-    { title: "Plugin-hel", body: "Elke functie een plugin. Site instabiel." },
-    { title: "Trage shop", body: "Conversie en SEO lijden." },
-    { title: "Verkeerde keuze vastzitten", body: "Bang om te migreren." },
-  ],
-  deliverables: [
-    { title: "Platform-advies", body: "Eerlijk op basis van je plannen." },
-    { title: "Migratie met SEO", body: "Redirects, geen dip als het kan." },
-    { title: "Custom Shopify", body: "Theme dat meegroeit." },
-    { title: "Marketing erop", body: "Shopping, mail, ads vanaf dag één." },
-  ],
-  visual: "webshop",
-  processTitle: "Platform kiezen of wisselen",
-  processSteps: processDefault,
-  proofTitle: "Migratie-ervaring",
-  proofBody: "Van WordPress/Woo naar Shopify als het zinvol is. Niet omdat het hip is, omdat het schaalt.",
-  hotTake: { label: "Heet take", body: "WooCommerce met veertig plugins is een fulltime baan die niemand op je salarislijst heeft staan." },
-  faq: [
-    { question: "Is Shopify duurder?", answer: "Soms op papier. Vaak goedkoper als je dev-tijd meetelt." },
-    { question: "Blijf ik bij Woo?", answer: "Als het stabiel is en je team happy, kan. Ik push niet zomaar migratie." },
-  ],
-  ctaTitle: "Twijfel over je platform?",
-  ctaBody: "Vertel je shop. Ik schets opties.",
-  relatedSlugs: ["woocommerce-naar-shopify", "shopify-expert"],
-  pillarSlug: "bouwen",
-  pillarLabel: "Bouwen",
-};
+export { SHOPIFY_OF_WOOCOMMERCE } from './shopify-of-woocommerce';
 
-export const META_ADS_OF_GOOGLE_ADS: SeoLandingPage = {
-  slug: "meta-ads-of-google-ads",
-  primaryKeyword: "meta ads of google ads",
-  category: "google-ads",
-  metaTitle: "Meta Ads of Google Ads · welk kanaal eerst? | Meneer Marketing",
-  metaDescription: "Meta Ads of Google Ads: wanneer Instagram/Facebook, wanneer Google. Eerlijk advies voor je product en marge.",
-  keywords: ["meta ads of google ads", "facebook ads of google ads", "google ads of facebook ads"],
-  eyebrow: "Meta vs Google",
-  headline: "Meta Ads of Google Ads?",
-  headlineAccent: "Verschillende hersenen, verschillende momenten.",
-  subheadline: "Google vangt intentie: mensen zoeken wat jij verkoopt. Meta creëert vraag: mensen scrollen en ontdekken. Beide kunnen. Niet elk product hoort op beide.",
-  pains: [
-    { title: "Alles op Meta", body: "Mooie video, geen koopintentie." },
-    { title: "Alles op Google", body: "Duur in een kleine markt." },
-    { title: "Twee bureaus", body: "Tegenstrijdige boodschappen." },
-  ],
-  deliverables: [
-    { title: "Product-channel fit", body: "Waar past jouw aanbod." },
-    { title: "Eén strategie", body: "Google + Meta onder één dak." },
-    { title: "Gedeelde landings", body: "Message match op beide." },
-    { title: "Budget op data", body: "Opschalen wat werkt." },
-  ],
-  visual: "meta-ads",
-  processTitle: "Kanaal kiezen",
-  processSteps: processDefault,
-  proofTitle: "Consumer vs search",
-  proofBody: "SkinComplete-style: vaak beide, maar niet blind. BestRest: per product andere mix.",
-  hotTake: { label: "Heet take", body: "Meta Ads voor B2B zonder creative plan is dure brand awareness voor je concurrent." },
-  faq: [
-    { question: "Klein budget?", answer: "Kies één kanaal, doe het goed. Niet beide half." },
-    { question: "UGC nodig?", answer: "Vaak op Meta. Google wil intentie en landings." },
-  ],
-  ctaTitle: "Welk kanaal past?",
-  ctaBody: "Vertel product en marge. Ik schets de mix.",
-  relatedSlugs: ["meta-ads-bureau", "google-ads-bureau", "ugc-marketing"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { META_ADS_OF_GOOGLE_ADS } from './meta-ads-of-google-ads';
 
 export const BUREAU_OF_FREELANCER_MARKETING: SeoLandingPage = {
   slug: "bureau-of-freelancer-marketing",

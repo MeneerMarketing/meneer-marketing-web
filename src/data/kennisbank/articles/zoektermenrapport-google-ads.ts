@@ -6,7 +6,7 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
   description:
     "Je Google Ads-account verzamelt elke week zoektermen die geld kosten. Dit rapport lezen is goedkoper dan je denkt. Zo doe je het zonder uren te verdwalen.",
   publishedAt: "2026-07-06",
-  readMinutes: 9,
+  readMinutes: 11,
   category: "campagnes",
   keywords: [
     "zoektermenrapport google ads",
@@ -30,12 +30,12 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Je dashboard toont klikken, impressies, soms zelfs een groene ROAS. Mooi. Het zoektermenrapport toont de woorden achter die klikken. 'Gratis google ads cursus'. 'Marketing vacature utrecht'. 'Concurrent naam + review'. Dat zijn geen statistieken. Dat zijn factuurregels.",
+      text: "Je dashboard toont klikken, impressies, soms zelfs een groene ROAS. Mooi. Het zoektermenrapport toont de woorden achter die klikken. Gratis google ads cursus. Marketing vacature utrecht. Concurrent naam + review. Dat zijn geen statistieken. Dat zijn factuurregels.",
     },
     {
       type: "ul",
       items: [
-        "Je ziet intentie, niet alleen volume. Iemand die 'kopen' typt is iets anders dan iemand die 'uitleg' typt.",
+        "Je ziet intentie, niet alleen volume. Iemand die kopen typt is iets anders dan iemand die uitleg typt.",
         "Je vindt goud dat je miste. Soms blijkt een long-tail term goedkoper én converterender dan je hoofdkeyword.",
         "Je stopt geldlekken voordat ze maandenlang doorlopen. Negatieven vandaag zijn morgen al bespaard budget.",
       ],
@@ -53,7 +53,7 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
       items: [
         "Gratis en DIY: mensen die willen leren, niet betalen.",
         "Vacatures en opleidingen: tenzij je recruitment doet, weg ermee.",
-        "Informatie zonder koop: 'wat is', 'hoe werkt', 'verschil tussen'. Educatie is prima, maar niet met je salesbudget.",
+        "Informatie zonder koop: wat is, hoe werkt, verschil tussen. Educatie is prima, maar niet met je salesbudget.",
         "Verkeerde regio: steden en landen waar je niet levert.",
         "Concurrenten en merknamen: soms bewust, vaak per ongeluk. Beslis bewust.",
       ],
@@ -75,6 +75,14 @@ export const ZOEKTERMENRAPPORT_GOOGLE_ADS: KennisbankArticle = {
         "Negatief keyword voor alles waar je nee op zegt. Campagne- of accountniveau, afhankelijk van scope.",
         "Voor termen die wél kloppen: bestaat er een landingspagina die exact dat belooft? Zo nee, fix dat eerst.",
       ],
+    },
+    {
+      type: "h2",
+      text: "Broad match zonder dit ritme is duur",
+    },
+    {
+      type: "p",
+      text: "Broad match kan werken met sterke creatives, landings en conversiedata. Zonder wekelijks zoektermen lezen is het een open kraan. Smart bidding optimaliseert op wat je hem voedt. Voed je rommel, dan schaalt hij rommel.",
     },
     {
       type: "callout",
