@@ -69,7 +69,7 @@ export const AI_CONTENT_BULK_SEO: KennisbankArticle = {
         {
           id: "digitale-wereld",
           label: "Openers als 'In de huidige digitale wereld...'",
-          fix: "Open met de vraag of het probleem van de lezer. Geen weerbericht.",
+          fix: "Open met de vraag of het probleem van de lezer. Skip het weerbericht.",
         },
         {
           id: "ultieme-gids",

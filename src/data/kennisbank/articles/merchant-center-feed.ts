@@ -164,7 +164,7 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Voor veel productcategorieën wil Google identificatoren. Geen barcode? Soms mag het met brand plus MPN, soms niet. Generic invullen om het te omzeilen werkt niet. Dan krijg je limited performance in plaats van vrij spelen.",
+      text: "Voor veel productcategorieën wil Google identificatoren. Mist je een barcode? Soms mag het met brand plus MPN, soms niet. Generic invullen om het te omzeilen werkt niet. Dan krijg je limited performance in plaats van vrij spelen.",
     },
     {
       type: "h3",

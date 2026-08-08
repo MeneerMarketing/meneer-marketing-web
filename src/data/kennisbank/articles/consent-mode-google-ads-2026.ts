@@ -76,7 +76,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
         {
           id: "tag",
           label: "Nooit Tag Assistant gedraaid met accept én weiger",
-          fix: "Incognito test. Geen verschil? Implementatie is kapot.",
+          fix: "Incognito test. Ziet tracking er hetzelfde uit? Dan is de implementatie kapot.",
         },
         {
           id: "cookiebot-claim",
@@ -159,7 +159,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
     },
     {
       type: "callout",
-      text: "Analogie: je weegt een zak appels, maar 30 procent weigert op de weegschaal te staan. Consent Mode schat het gewicht van de weigeraars op basis van de rest. Handig. Geen excuus om de weegschaal kapot te laten.",
+      text: "Analogie: je weegt een zak appels, maar 30 procent weigert op de weegschaal te staan. Consent Mode schat het gewicht van de weigeraars op basis van de rest. Handig. Wel eerst zorgen dat de weegschaal zelf nog werkt.",
     },
     {
       type: "h2",

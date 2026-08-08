@@ -48,7 +48,7 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
   sections: [
     {
       type: "p",
-      text: "Je opent ChatGPT. Bovenin staat een dropdown met namen die klinken als een mix tussen NASA-missies en energy drinks: GPT-5, iets met 'o', soms codenames als Sol, Terra of Luna. Geen wonder dat ondernemers even slikken en dan gewoon het eerste model pakken. Dat werkt… totdat je merkt dat het ene model briljante ad copy schrijft en het andere drie pagina's philosophie geeft als je vraagt om een meta description van 155 tekens.",
+      text: "Je opent ChatGPT. Bovenin staat een dropdown met namen die klinken als een mix tussen NASA-missies en energy drinks: GPT-5, iets met 'o', soms codenames als Sol, Terra of Luna. Logisch dat ondernemers even slikken en dan gewoon het eerste model pakken. Dat werkt… totdat je merkt dat het ene model briljante ad copy schrijft en het andere drie pagina's philosophie geeft als je vraagt om een meta description van 155 tekens.",
     },
     {
       type: "p",
@@ -140,7 +140,7 @@ export const CHATGPT_MODELLEN_MARKETEER_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Sommige varianten zijn getraind voor code, beeld of langere context. Als marketeer raak je vooral de multimodal kant: screenshots van een landingspagina uploaden en vragen wat er mis mee is. Of een concurrent-pagina laten samenvatten. Handig. Geen vervanging voor een CRO-test, wel een snelle second opinion.",
+      text: "Sommige varianten zijn getraind voor code, beeld of langere context. Als marketeer raak je vooral de multimodal kant: screenshots van een landingspagina uploaden en vragen wat er mis mee is. Of een concurrent-pagina laten samenvatten. Handig als snelle second opinion. Een echte CRO-test vervangt het niet.",
     },
     {
       type: "h2",
