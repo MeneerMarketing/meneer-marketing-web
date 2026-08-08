@@ -7,7 +7,7 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
     "Design rankt niet. Snelheid, zoekintentie en autoriteit wel. Zo haal je een concurrent in die er minder strak uitziet.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 13,
+  readMinutes: 14,
   category: "vindbaarheid",
   keywords: [
     "concurrent hoger in google",
@@ -168,6 +168,18 @@ export const CONCURRENT_HOGER_IN_GOOGLE: KennisbankArticle = {
     {
       type: "p",
       text: "Wil je dit structureel aanpakken? Op mijn pagina over hoger in Google leg ik de route uit: intentie, fundament, pagina's, bijsturen. Concurrent inhalen begint bij één URL die beter antwoordt. Niet bij een redesign dat alleen je ego streelt.",
+    },
+    {
+      type: "h2",
+      text: "Wat ik níet doe als iemand 'de concurrent' noemt",
+    },
+    {
+      type: "p",
+      text: "Ik bouw geen kopie van hun site. Ik bouw een scherpere antwoordmachine op de query die jij wilt winnen. Soms betekent dat minder pagina's, meer diepte. Soms betekent dat hun blog winnen met een dienstenpagina die wél de koopvraag pakt. De concurrent is een spiegel, geen blauwdruk.",
+    },
+    {
+      type: "p",
+      text: "En als hun voorsprong puur autoriteit is? Dan zeg ik dat hardop. Links en tijd koop je niet met een nieuwe homepage. Je wint dan op snelle pagina's, betere antwoorden en lokale signalen terwijl je autoriteit bijbouwt. Eerlijk plan. Minder theater.",
     },
   ],
 };

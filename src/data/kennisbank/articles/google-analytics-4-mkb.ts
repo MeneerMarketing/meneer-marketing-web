@@ -151,7 +151,7 @@ export const GOOGLE_ANALYTICS_4_MKB: KennisbankArticle = {
       items: [
         "Te veel events standaard aan zonder business betekenis.",
         "Conversies die alles meten behalve geld: scroll 90%, session langer dan 10 seconden.",
-        "Geen waarde op ecommerce events, dus ROAS liegt.",
+        "Waarde ontbreekt op ecommerce events, dus ROAS liegt.",
         "Ads en GA4 praten langs elkaar door verkeerde tagging.",
         "Niemand die maandelijks checkt of data nog klopt na een site-update.",
       ],

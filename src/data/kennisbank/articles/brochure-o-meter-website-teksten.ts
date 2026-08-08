@@ -6,7 +6,8 @@ export const BROCHURE_O_METER_WEBSITE_TEKSTEN: KennisbankArticle = {
   description:
     "Doe de test: hoe brochure-achtig klinken jouw website-teksten? Score, roast en fixes die wél converteren. Voor landings, ads en homepages.",
   publishedAt: "2026-08-02",
-  readMinutes: 8,
+  modifiedAt: "2026-08-08",
+  readMinutes: 10,
   category: "strategie",
   keywords: [
     "website teksten verbeteren",
@@ -162,6 +163,18 @@ export const BROCHURE_O_METER_WEBSITE_TEKSTEN: KennisbankArticle = {
     {
       type: "callout",
       text: "Als je score boven de 50 zat: herschrijf eerst één geldpagina (landings of diensten), niet je hele site. Eén scherpe pagina leert je meer dan twintig halfwarme edits.",
+    },
+    {
+      type: "h2",
+      text: "Hoe ik brochure-taal uit een account snijd",
+    },
+    {
+      type: "p",
+      text: "Ik open ads en site naast elkaar. Als de ad iets concreets belooft en de hero iets vaags zegt, herschrijf ik de hero eerst. Daarna de knop. Daarna één bewijsblok. Pas als die drie kloppen, raak ik de rest. Zo voorkom je dat je een week slogans poetst terwijl de CPA stilstaat.",
+    },
+    {
+      type: "p",
+      text: "Leuk weetje: bezoekers scannen. Ze lezen de eerste zin, de knop en wat ernaast staat. De rest is voor wie al half overtuigd is. Daarom begin ik altijd bij de scan-route, niet bij de over-ons-paragraaf die je team het mooist vindt.",
     },
   ],
 };

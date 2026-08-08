@@ -241,7 +241,7 @@ export const CONSENT_MODE_GOOGLE_ADS_2026: KennisbankArticle = {
         "Open Tag Assistant op je site in incognito. Accepteer en weiger cookies. Zie je verschil?",
         "Check Search Console vs GA4 vs shop-backend op één week. Waar wijkt het?",
         "Controleer of Consent Mode v2 active is in GA4 admin (niet alleen 'we hebben Cookiebot').",
-        "Zet één primaire conversie in Ads. Geen twintig micro-conversies die Smart Bidding verwarren.",
+        "Zet één primaire conversie in Ads. Twintig micro-conversies verwarren Smart Bidding.",
         "Documenteer wat 'conversie' voor jou betekent. Lead? Sale? Afspraak? Iedereen in het team hetzelfde antwoord.",
       ],
     },

@@ -156,7 +156,7 @@ export const MARKETING_VERGADERING_VS_UITVOERING: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Of je nu MKB bent op de Veluwe of in Amsterdam: de bankrekening spreekt dezelfde taal. Minder slides. Meer cijfers. Meer we doen dit volgende week en minder we nemen het mee.",
+      text: "Of je nu MKB bent op de Veluwe of in Amsterdam: de bankrekening spreekt dezelfde taal. Minder slides. Meer cijfers. Meer ‘dit staat volgende week live’ en minder ‘we nemen het mee’.",
     },
     {
       type: "h2",

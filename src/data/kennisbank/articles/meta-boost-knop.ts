@@ -102,7 +102,7 @@ export const META_BOOST_KNOP: KennisbankArticle = {
       type: "ul",
       items: [
         "Weinig controle over doelgroep buiten ruwe demografie en interesses.",
-        "Geen echte funnel: cold, warm en hot apart testen.",
+        "Ontbrekende funnel: cold, warm en hot niet apart te testen.",
         "Vaak verkeer naar feed of homepage in plaats van een landing.",
         "Weinig leerdata die je volgende campagnes slimmer maakt.",
       ],

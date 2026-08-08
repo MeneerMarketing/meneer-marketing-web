@@ -157,7 +157,7 @@ export const LEADS_GMAIL_OPVOLGING: KennisbankArticle = {
     {
       type: "ul",
       items: [
-        "Formulier-submit triggert direct bevestigingsmail: we hebben het, dit gebeurt er nu.",
+        "Formulier-submit triggert direct bevestigingsmail: ontvangen, dit gebeurt er nu.",
         "Notificatie naar juiste persoon (Slack, mail met label, geen info@ black hole).",
         "Taak in je CRM of zelfs Trello: bel binnen X uur.",
         "Elke lead heeft een status: nieuw, contact, offerte, gewonnen, verloren.",

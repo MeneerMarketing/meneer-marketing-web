@@ -78,7 +78,7 @@ export const AI_CONTENT_BULK_SEO: KennisbankArticle = {
         },
         {
           id: "geen-cijfers",
-          label: "Geen ranges, geen voorbeelden, geen 'dit werkt niet als'",
+          label: "Ranges, voorbeelden of 'dit werkt niet als' ontbreken",
           fix: "Voeg één rekensom, één voorwaarde of één harde mening toe per pagina.",
         },
         {

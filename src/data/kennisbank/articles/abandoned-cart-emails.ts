@@ -165,7 +165,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Geen rocket science. Wel discipline. Dit is het skelet dat bij de meeste Shopify-shops werkt, mits je product en marge het toelaten.",
+      text: "Rocket science is het niet. Wel discipline. Dit is het skelet dat bij de meeste Shopify-shops werkt, mits je product en marge het toelaten.",
     },
     {
       type: "h3",
@@ -173,7 +173,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Kort, vriendelijk, geen korting. Je mand staat nog klaar. Toon productafbeelding, prijs, link direct naar checkout. Menselijke toon. Geen CAPS LOCK.",
+      text: "Kort, vriendelijk, zonder korting. Je mand staat nog klaar. Toon productafbeelding, prijs, link direct naar checkout. Menselijke toon. Caps lock mag in de lade blijven.",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const ABANDONED_CART_EMAILS: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Alleen als het past bij je marge: een incentive. Geen standaard tien procent voor iedereen. Soms werkt gratis verzending beter. Liegen over voorraad is een slecht idee.",
+      text: "Alleen als het past bij je marge: een incentive. Standaard tien procent voor iedereen trainen klanten om te wachten. Soms werkt gratis verzending beter. Liegen over voorraad is een slecht idee.",
     },
     {
       type: "h2",

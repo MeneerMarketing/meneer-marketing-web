@@ -146,7 +146,7 @@ export const AI_MAX_GOOGLE_ADS_SEARCH_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "AI Max for Search is een pakketje automatisering bovenop een gewone Search-campagne. Geen nieuw kanaal. Wel meer vrijheid voor Google om te beslissen:",
+      text: "AI Max for Search is een pakketje automatisering bovenop een gewone Search-campagne. Het is geen nieuw kanaal. Wel meer vrijheid voor Google om te beslissen:",
     },
     {
       type: "ul",
@@ -263,7 +263,7 @@ export const AI_MAX_GOOGLE_ADS_SEARCH_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Een homepage die ‘welkom, wij doen van alles’ zegt, is voor Google een buffet. Een dienstenpagina of productlandings met één belofte, één CTA en snelle laadtijd is een bestelling. AI Max houdt van buffetten. Jij wilt bestellingen.",
+      text: "Een homepage die ‘welkom, wij doen van alles’ zegt (bureau-taal), is voor Google een buffet. Een dienstenpagina of productlandings met één belofte, één CTA en snelle laadtijd is een bestelling. AI Max houdt van buffetten. Jij wilt bestellingen.",
     },
     {
       type: "callout",
@@ -275,7 +275,7 @@ export const AI_MAX_GOOGLE_ADS_SEARCH_2026: KennisbankArticle = {
     },
     {
       type: "p",
-      text: "Geen heilige checklist uit een PDF. Wel een werkwijze die voorkomt dat AI Max met je speelgoed gaat rennen.",
+      text: "Dit is geen heilige checklist uit een PDF. Wel een werkwijze die voorkomt dat AI Max met je speelgoed gaat rennen.",
     },
     {
       type: "ul",

@@ -7,7 +7,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     "PMax kan werken. Ook zonder controle als je een verrassing wilt. Wanneer Performance Max past, wanneer niet, en wat je eerst op orde moet hebben.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 14,
+  readMinutes: 15,
   category: "campagnes",
   keywords: [
     "performance max uitleg",
@@ -46,7 +46,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
   sections: [
     {
       type: "p",
-      text: "Performance Max is Google's antwoord op: vertrouw ons, wij optimaliseren wel. Je stopt assets erin. Budget erbij. De campagne verschijnt op Search, Display, YouTube, Discover, Maps en Gmail. Klinkt als magie. Voelt soms als een zwarte doos met je pinpas erin.",
+      text: "Performance Max is Google's antwoord op: vertrouw het systeem, het optimaliseert wel. Je stopt assets erin. Budget erbij. De campagne verschijnt op Search, Display, YouTube, Discover, Maps en Gmail. Klinkt als magie. Voelt soms als een zwarte doos met je pinpas erin.",
     },
     {
       type: "callout",
@@ -177,6 +177,18 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     {
       type: "p",
       text: "PMax is geen vijand. Het is een versterker. En een versterker op ruis levert harder ruis. Fix de ruis eerst. Op mijn Google Ads bureau- en Shopping-pagina's leg ik uit hoe feed, landings en biedingen samenhangen voordat je de zwarte doos meer budget geeft.",
+    },
+    {
+      type: "h2",
+      text: "Hoe ik een PMax-week lees",
+    },
+    {
+      type: "p",
+      text: "Ik open Insights alsof het een bankafschrift is. Welke asset groups trekken spend? Welke productgroepen verdienen? Welk aandeel is branded? Als de omzet mooi is maar non-brand stilstaat, juich ik niet. Dan trek ik budget terug naar Search of Shopping met meer controle tot de zwarte doos bewijs levert.",
+    },
+    {
+      type: "p",
+      text: "Drie vragen elke week: wat kocht Google namens mij, wat leverde marge, wat was toerisme? Zonder die drie is PMax een gevoel. Met die drie is het een knop die je bewust groter of kleiner draait.",
     },
   ],
 };
