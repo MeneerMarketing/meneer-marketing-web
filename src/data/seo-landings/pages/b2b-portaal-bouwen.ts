@@ -6,7 +6,7 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
   category: "b2b-portal",
   metaTitle: "B2B portaal bouwen · Shopify & custom | Meneer Marketing",
   metaDescription:
-    "B2B portaal bouwen from scratch: prijzen, klanten, herbestellen. SkinComplete-style op Shopify. Geen Excel en mail meer.",
+    "B2B portaal bouwen from scratch: prijzen, klanten, herbestellen. SkinComplete-style op Shopify. Excel en mail vervangen door self-service.",
   keywords: [
     "b2b portaal bouwen",
     "portal b2b bouwen",
@@ -14,67 +14,67 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
     "b2b shopify",
     "wholesale portaal",
   ],
-  eyebrow: "B2B portaal",
+  eyebrow: "B2B portaal · self-service",
   headline: "B2B portaal bouwen.",
-  headlineAccent: "Geen Excel meer.",
+  headlineAccent: "Excel mag met pensioen.",
   subheadline:
     "Orders via mail en spreadsheet schalen niet. Ik bouw portalen waar klanten zelf bestellen, prijzen zien die voor hen gelden en history terugvinden. SkinComplete deed ik zo.",
   pains: [
     {
       title: "Handmatige orders",
-      body: "Fouten, vertraging, niemand weet welke prijs gold.",
+      body: "Fouten in aantallen, verouderde prijzen, niemand weet welke afspraak gold. Jij bent fulltime orderdesk.",
     },
     {
       title: "Losse systemen",
-      body: "Shop, ERP, mail. Alles dubbel invoeren.",
+      body: "Shop, ERP, mail. Alles dubbel invoeren. Voorraad en factuur lopen uit elkaar op het drukste moment.",
     },
     {
       title: "Geen self-service",
-      body: "Klanten mailen voor status. Jij bent de helpdesk.",
+      body: "Klanten mailen om 22:00 voor status. Jij antwoordt om 09:00. Ondertussen bestelt de consument wél in drie klikken.",
     },
   ],
   deliverables: [
     {
-      title: "Klantlogin & prijzen",
-      body: "Per klant of groep. Geen prijslijst in PDF die veroudert.",
+      title: "Klantlogin en eigen prijzen",
+      body: "Per klant of groep. Geen PDF-prijslijst die veroudert zodra je hem mailt.",
     },
     {
       title: "Herbestellen in twee kliks",
-      body: "Orderhistorie, favorieten, snelle checkout.",
+      body: "Orderhistorie, favorieten, snelle checkout. B2B koopt vaak hetzelfde. Maak dat makkelijk.",
     },
     {
       title: "Shopify of custom",
-      body: "Passend bij je stack. Integraties waar nodig.",
+      body: "Passend bij je stack. Integraties waar nodig. Eén waarheid voor producten en voorraad.",
     },
     {
-      title: "Marketing erbij",
-      body: "SEO, mail en ads op hetzelfde fundament. Geen los portaal in een hoek.",
+      title: "Marketing op hetzelfde fundament",
+      body: "SEO, mail en ads mogen meeliften. Geen los portaal in een hoek dat niemand vindt.",
     },
   ],
   visual: "b2b-portal",
   visualCaption: "Zo ziet rust eruit in je orderadministratie.",
-  processTitle: "Portaal dat landt",
+  processTitle: "B2B portaal bouwen dat landt bij je klanten",
   processSteps: [
     {
       title: "Processen in kaart",
-      body: "Wie bestelt, welke prijzen, welke goedkeuring? Eerst het proces, dan software.",
+      body: "Wie bestelt, welke prijzen, welke goedkeuring, welke uitzonderingen? Eerst het proces, dan software. Anders automatiseer je chaos.",
     },
     {
-      title: "Ontwerp & rollen",
-      body: "Admin, sales, klant. Iedereen ziet wat nodig is, niet meer.",
+      title: "Rollen en ontwerp",
+      body: "Admin, sales, klant. Iedereen ziet wat nodig is, niet meer. B2B-UI mag rustig. Frictie mag niet.",
     },
     {
-      title: "Bouwen & testen",
-      body: "Met echte scenario's. Geen live zetten op hoop.",
+      title: "Bouwen en testen",
+      body: "Met echte scenario's: herhaalorders, verkeerde login, edge-case prijzen. Geen live zetten op hoop.",
     },
     {
-      title: "Onboarden",
-      body: "Klanten erin, team getraind, marketing aangezet als het staat.",
+      title: "Onboarden en groeien",
+      body: "Klanten erin, team getraind, mail en vindbaarheid aangezet als het staat. Portaal zonder adoptie is een leeg gebouw.",
     },
   ],
   proofTitle: "SkinComplete B2B",
   proofBody:
-    "Professionals bestellen via een portaal op maat, gekoppeld aan marketing en vindbaarheid. Dat is geen plugin, dat is een systeem.",
+    "Professionals bestellen via een portaal op maat binnen Shopify: eigen prijzen, login, herbestellen. Gekoppeld aan marketing en vindbaarheid. Eerst organisch, daarna ads. Dat is geen plugin. Dat is een systeem.",
   proofCase: "SkinComplete",
   hotTake: {
     label: "Heet take",
@@ -83,20 +83,81 @@ export const B2B_PORTAAL_BOUWEN: SeoLandingPage = {
   faq: [
     {
       question: "Shopify B2B of volledig custom?",
-      answer: "Vaak Shopify B2B voor snelheid en onderhoud. Custom als je processen echt uniek zijn. We kiezen na intake.",
+      answer:
+        "Vaak Shopify B2B voor snelheid en onderhoud. Custom als je processen echt uniek zijn. Na intake kies ik wat goedkoper blijft over twee jaar, niet alleen wat snel live voelt.",
     },
     {
-      question: "Koppeling met ERP?",
-      answer: "Mogelijk via API of middleware. We kijken wat je nu gebruikt en wat realistisch is.",
+      question: "Kun je koppelen met ons ERP?",
+      answer:
+        "Vaak via API of middleware. Ik kijk wat je nu gebruikt, wat realistisch is en wat handmatig mag blijven tot volume het vraagt. Niet alles hoeft week één perfect.",
     },
     {
-      question: "Hoe lang duurt het?",
-      answer: "Eenvoudig portaal: weken. Complex met integraties: langer. Je krijgt een planning vóór we starten.",
+      question: "Hoe lang duurt een B2B portaal bouwen?",
+      answer:
+        "Eenvoudig portaal: weken. Complex met integraties: langer. Je krijgt een planning met mijlpalen vóór we starten. Geen vage 'ergens dit kwartaal'.",
+    },
+    {
+      question: "Werkt dit naast een B2C-shop?",
+      answer:
+        "Ja. Bij SkinComplete: één shop, twee gezichten. Consument ziet consumentenprijzen. Zakelijke klant logt in en ziet zijn afspraken. Voorraad blijft één bron.",
+    },
+    {
+      question: "Wat gebeurt er met bestaande klanten?",
+      answer:
+        "Onboarding hoort bij het traject: accounts, prijslijsten, uitleg, eventueel parallel draaien met mailorders tot iedereen erin zit. Adoptie is onderdeel van oplevering.",
+    },
+    {
+      question: "Regel je ook marketing voor B2B?",
+      answer:
+        "Ja. SEO, mail en ads op hetzelfde fundament. Een portaal dat niemand vindt, is een duur intranet. Self-service verdient traffic en retentie.",
+    },
+    {
+      question: "Voor wie is een portaal géén match?",
+      answer:
+        "Als je vijf B2B-klanten hebt die zelden bestellen, is een simpele flow soms genoeg. Wordt mail en Excel een dagtaak, dan verdient een portaal zichzelf.",
     },
   ],
   ctaTitle: "Klaar voor een echt portaal?",
-  ctaBody: "Vertel hoe je nu bestelt en wat je wilt automatiseren. Ik schets de aanpak.",
-  relatedSlugs: ["webshop-laten-maken", "website-laten-maken", "google-ads-bureau", "hoger-in-google"],
+  ctaBody: "Vertel hoe je nu bestelt en wat je wilt automatiseren. Ik schets de aanpak en wat het ongeveer kost.",
+  relatedSlugs: [
+    "webshop-laten-maken",
+    "shopify-expert",
+    "website-laten-maken",
+    "google-ads-bureau",
+    "hoger-in-google",
+  ],
   pillarSlug: "bouwen",
   pillarLabel: "Bouwen",
+  layoutProfile: "editorial",
+  lockContent: true,
+  enrichedOverrides: {
+    story: {
+      title: "B2B portaal bouwen zodat je stopt met orderdesk spelen",
+      paragraphs: [
+        "Je zoekt iemand om een B2B portaal te bouwen omdat mail, WhatsApp en Excel niet meer schalen. Klanten willen om 22:00 bestellen. Jij wilt niet om 09:00 fouten uit een bijlage halen.",
+        "Ik bouw self-service waar zakelijke klanten hun prijzen zien, herbestellen en history terugvinden. Bij SkinComplete binnen Shopify: één catalogus, twee ervaringen, minder handwerk.",
+        "Het onderschatte voordeel: een portaal verkoopt buiten kantoortijden. Een flink deel van B2B-orders komt binnen wanneer vroeger niemand de telefoon opnam.",
+        "Integraties doen we slim. Eerst wat pijn doet, dan wat nice-to-have is. Liever een portaal dat teams écht gebruiken dan een enterprise-droom die niemand adopteert.",
+        "Wil je alleen een login voor de show? Dan is er goedkopere hulp. Wil je minder fouten, snellere orders en marketing op hetzelfde fundament? Dan bouwen we het systeem.",
+      ],
+    },
+    deepDive: {
+      title: "Proces, rollen en adoptie vóór fancy features",
+      paragraphs: [
+        "Eerst processen: wie mag wat zien, welke prijsregels, welke goedkeuring. Software zonder die map automatiseert verwarring.",
+        "Daarna UX voor B2B: rustig, duidelijk, snel herbestellen. Zakelijke kopers willen efficiëntie, geen speeltuin.",
+        "Shopify B2B wint vaak op onderhoud. Custom wint als je stack of regels dat eisen. Ik kies op total cost, niet op buzzwords.",
+        "Data: één waarheid voor producten en voorraad. Dubbele systemen betekenen dubbele fouten. Middleware alleen als het moet.",
+        "Na live: onboarding, mailflows, SEO waar zinvol. Een B2B portaal bouwen stopt niet bij deploy. Het begint pas als klanten zonder jou bestellen.",
+      ],
+    },
+    scenario: {
+      title: "Stel: je grootste klant bestelt nog via Excel",
+      paragraphs: [
+        "Elke week een sheet, elke week correcties, elke week discussie over prijzen. Je team is de middleware. De klant vindt het 'prima' tot hij een concurrent met portal ziet.",
+        "Ik teken jouw huidige flow en de portal-flow naast elkaar. Welke stappen verdwijnen? Welke uitzonderingen blijven handmatig? Daarna een MVP die die klant wél wil gebruiken.",
+        "Eerste release met één klantgroep. Meten: fouten omlaag, tijd omlaag, orders buiten kantoor omhoog. Zo bewijs je het portaal vóór je iedereen migreert.",
+      ],
+    },
+  },
 };

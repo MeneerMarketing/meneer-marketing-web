@@ -166,43 +166,7 @@ export const SOCIAL_MEDIA_ADVERTISING: SeoLandingPage = {
   pillarLabel: "Campagnes",
 };
 
-export const UGC_MARKETING: SeoLandingPage = {
-  slug: "ugc-marketing",
-  primaryKeyword: "ugc marketing",
-  category: "content",
-  metaTitle: "UGC marketing · creators die converteren | Meneer Marketing",
-  metaDescription: "UGC marketing voor Meta, TikTok en ads. Echte mensen, echte hooks die converteren.",
-  keywords: ["ugc marketing", "user generated content marketing", "ugc ads", "ugc creators nederland"],
-  eyebrow: "UGC marketing",
-  headline: "UGC marketing die",
-  headlineAccent: "niet voelt als een ad.",
-  subheadline: "Mensen scrollen door perfecte stockfoto's. Ze stoppen voor echte gezichten die een product laten zien alsof het geen script is. Dat is UGC. En het verkoopt.",
-  pains: [
-    { title: "Corporate video", body: "Logo eerst. Swipe. Budget weg." },
-    { title: "Creator-pipeline ontbreekt", body: "Eén video en dan stilte." },
-    { title: "UGC zonder landings", body: "Mooie view, kapotte checkout." },
-  ],
-  deliverables: [
-    { title: "Creator sourcing", body: "Mensen die bij je merk passen." },
-    { title: "Hooks & scripts", body: "Eerste twee seconden die tellen." },
-    { title: "Ads-koppeling", body: "UGC in Meta, TikTok, Google waar past." },
-    { title: "Landings op mobiel", body: "Ad en pagina in sync." },
-  ],
-  visual: "meta-ads",
-  processTitle: "UGC die oplevert",
-  processSteps: processDefault,
-  proofTitle: "SkinComplete-style",
-  proofBody: "Professionele producten, menselijke content. Dat contrast converteert.",
-  hotTake: { label: "Heet take", body: "UGC marketing met alleen je team voor de camera is een inside joke die niemand buiten kantoor snapt." },
-  faq: [
-    { question: "Influencers of UGC?", answer: "Beide kan. UGC focust op ads-ready content." },
-  ],
-  ctaTitle: "UGC proberen?",
-  ctaBody: "Vertel je product. Ik schets creators + ads.",
-  relatedSlugs: ["influencer-marketing-bureau", "tiktok-ads-bureau", "meta-ads-bureau"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { UGC_MARKETING } from './ugc-marketing';
 
 export const INFLUENCER_MARKETING_BUREAU: SeoLandingPage = {
   slug: "influencer-marketing-bureau",
