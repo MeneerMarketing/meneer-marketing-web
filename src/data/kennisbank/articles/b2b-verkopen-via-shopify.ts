@@ -7,7 +7,7 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     "Zakelijke klanten die zelf bestellen tegen eigen prijzen, zonder telefoontjes of Excel-orders. Zo bouw je dat binnen Shopify.",
   publishedAt: "2026-04-30",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 14,
   category: "bouwen",
   keywords: [
     "Shopify B2B",
@@ -32,6 +32,16 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
       question: "Moet ik meteen aan een ERP koppelen?",
       answer:
         "Niet altijd week één. Eerst self-service die teams gebruiken. Integraties volgen als volume en fouten dat eisen.",
+    },
+    {
+      question: "Hoe lang duurt een B2B-portal build?",
+      answer:
+        "Afhankelijk van prijslijsten, klantgroepen en theme-werk. Tel onboarding en migratie mee, niet alleen 'theme live'. Haast zonder adoptieplan faalt stil.",
+    },
+    {
+      question: "Helpt SEO nog bij B2B Shopify?",
+      answer:
+        "Ja. Salons en retailers zoeken nog steeds. Landings op hun vragen, daarna ads. Portal zonder vindbaarheid is half werk.",
     },
   ],
   sections: [
@@ -97,11 +107,32 @@ export const B2B_VERKOPEN_VIA_SHOPIFY: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "E-mail en portal: geen dubbele chaos",
+    },
+    {
+      type: "p",
+      text: "B2B-segmenten horen niet in dezelfde Klaviyo-flow als consumenten. Orderbevestigingen, herbestel-reminders en restock-alerts volgen zakelijke logica. SkinComplete: portal + e-mail die elkaars waarheid spiegelen. Consumentenmail naar een salon is hoe je trust kwijtraakt.",
+    },
+    {
+      type: "h2",
       text: "Voor wie dit interessant is",
     },
     {
       type: "p",
       text: "Verkoop je aan salons, retailers, horeca of andere bedrijven naast je consumentenverkoop? Tel de uren die je team per week kwijt is aan handmatige orders en vermenigvuldig dat met een jaar. Dat bedrag ligt vrijwel altijd ruim boven de kosten van een goed portal.",
+    },
+    {
+      type: "h2",
+      text: "Checklist vóór je bouwt",
+    },
+    {
+      type: "ul",
+      items: [
+        "Welke klantgroepen en prijslijsten bestaan echt?",
+        "Welke producten zijn B2B-only of B2C-only?",
+        "Wie doet onboarding de eerste maand?",
+        "Welke mailflows moeten gesplitst worden?",
+      ],
     },
     {
       type: "p",

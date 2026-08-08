@@ -7,7 +7,7 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     "Recente reviews, snelle antwoorden en een levend GBP. Praktische lokale SEO die 'bij mij in de buurt' wint.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 10,
+  readMinutes: 12,
   category: "vindbaarheid",
   keywords: [
     "google reviews lokale seo",
@@ -31,6 +31,16 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
       question: "Hoe vaak moet ik reviews beantwoorden?",
       answer:
         "Idealiter elke review, ook de negatieve. Snel, menselijk, oplossingsgericht. Copy-paste antwoorden voelen nep.",
+    },
+    {
+      question: "Wanneer vraag ik om een review?",
+      answer:
+        "Direct na tevreden oplevering of herhaalorder. Eén link, mail of SMS. Drie maanden later voelt het als spam en krijg je minder respons.",
+    },
+    {
+      question: "Helpen reviews zonder lokale pagina's?",
+      answer:
+        "Half. Reviews versterken GBP. Site en regio-pagina's moeten hetzelfde verhaal vertellen. Alleen sterren zonder lokale landings is onvolledig.",
     },
   ],
   sections: [
@@ -76,6 +86,15 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
       text: "Vraag op het moment dat de klant tevreden is: na oplevering, na een geslaagde afspraak, na een herhaalorder. Eén link. Geen roman. Mail of SMS. Train je team dat dit bij de afronding hoort, niet bij 'ooit later'.",
     },
     {
+      type: "ul",
+      items: [
+        "Trigger in je CRM of factuurflow: review-link klaarzetten.",
+        "Korte tekst: wat je vraagt en waarom (échte feedback, geen druk).",
+        "Opvolging één keer als ze vergeten, niet vijf keer stalken.",
+        "Meet: hoeveel vragen → hoeveel reviews per maand.",
+      ],
+    },
+    {
       type: "h2",
       text: "GBP is geen eenmalige setup",
     },
@@ -85,11 +104,11 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     },
     {
       type: "h2",
-      text: "Negatieve reviews: niet panikeren, wel antwoorden",
+      text: "Keywords in reviews: niet forceren",
     },
     {
       type: "p",
-      text: "Eén boze review is geen crisis. Stilte erop wel. Antwoord kalm, feitelijk, met een pad naar oplossing. Andere lezers kijken hoe jij reageert. Dat is ook lokale SEO: vertrouwen in het openbaar.",
+      text: "Klanten die spontaan 'matras Apeldoorn' of je dienst noemen, helpen. Jij moet ze niet dwingen tot keyword-zinnen. Dat ruikt nep. Vraag om eerlijke ervaring. Specifieke woorden volgen vanzelf bij tevreden mensen.",
     },
     {
       type: "h2",
@@ -98,6 +117,14 @@ export const GOOGLE_REVIEWS_LOKALE_SEO: KennisbankArticle = {
     {
       type: "p",
       text: "Ik werk vanuit Apeldoorn op de Veluwe en help ook landelijk. Lokale intentie is een groot deel van Google-zoekgedrag. Je site moet regio serieus nemen met pagina's die kloppen, niet alleen een adres in de footer. Reviews zonder lokale pagina's is half werk. Pagina's zonder reviews ook.",
+    },
+    {
+      type: "h2",
+      text: "Reviews naast ads en landings",
+    },
+    {
+      type: "p",
+      text: "Sterke reviews op GBP en op je site versterken message match. Ads beloven expertise. Landings en Maps moeten dat bewijzen. SkinComplete en BestRest bouwen vertrouwen met bewijs, niet met sterren-stickers zonder verhaal.",
     },
     {
       type: "callout",

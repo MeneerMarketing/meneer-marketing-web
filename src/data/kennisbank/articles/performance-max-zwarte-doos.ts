@@ -7,7 +7,7 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     "PMax kan werken. Ook zonder controle als je een verrassing wilt. Wanneer Performance Max past, wanneer niet, en wat je eerst op orde moet hebben.",
   publishedAt: "2026-07-06",
   modifiedAt: "2026-08-08",
-  readMinutes: 11,
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "performance max uitleg",
@@ -31,6 +31,16 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
       question: "Waarom zie ik weinig detail in PMax?",
       answer:
         "Google optimaliseert over veel placements en toont minder query-detail. Daarom moet input schoon zijn: anders optimaliseer je blind op ruis.",
+    },
+    {
+      question: "Hoeveel conversies heb ik nodig voor PMax?",
+      answer:
+        "Hoe meer betrouwbare conversies met waarde, hoe beter. Te weinig per maand? Algoritme gokt. Dan is strakkere Search of Shopping vaak slimmer.",
+    },
+    {
+      question: "Mag ik heel mijn catalogus in één PMax?",
+      answer:
+        "Alleen bij vergelijkbare economie en schone feed. Bij BestRest-achtige mix: split per productgroep. Gemiddelde ROAS over alles liegt.",
     },
   ],
   sections: [
@@ -101,6 +111,22 @@ export const PERFORMANCE_MAX_ZWARTE_DOOS: KennisbankArticle = {
     {
       type: "callout",
       text: "Heet take: alles op PMax omdat Google het aanraadt is geen plan. Het is outsourcing van verantwoordelijkheid naar een algoritme dat van volume houdt.",
+    },
+    {
+      type: "h2",
+      text: "Asset groups en productgroep-logica",
+    },
+    {
+      type: "p",
+      text: "Stop niet alles in één asset group. Groepeer wat economisch hetzelfde is: zelfde marge, zelfde intentie, zelfde landings. BestRest: toppers en premium matrassen niet in één soep. Anders optimaliseert PMax op wat makkelijk klikt, niet op wat jij wilt verdienen.",
+    },
+    {
+      type: "h2",
+      text: "Brand vs non-brand onder PMax",
+    },
+    {
+      type: "p",
+      text: "PMax pakt graag branded queries mee. Je ROAS ziet er dan mooier uit dan acquisitie echt is. Houd brand Search apart waar je kunt. Rapportageer eerlijk. Anders juich je voor mensen die je naam al kenden.",
     },
     {
       type: "h2",

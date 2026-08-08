@@ -7,7 +7,7 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     "Je profiel bestaat, maar Google doet alsof je dicht bent. Zo fix je Maps, reviews en regio-pagina's zonder keyword-spam.",
   publishedAt: "2026-07-03",
   modifiedAt: "2026-08-08",
-  readMinutes: 12,
+  readMinutes: 14,
   category: "vindbaarheid",
   keywords: [
     "google business profile optimaliseren",
@@ -31,6 +31,16 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
       question: "Zijn regio-pagina's nodig naast GBP?",
       answer:
         "Vaak wel als je meerdere gebieden bedient of je site alleen landelijk praat. Elke pagina moet unieke hulp geven. Dunne stadskopietjes werken averechts.",
+    },
+    {
+      question: "Hoe vaak moet ik GBP updaten?",
+      answer:
+        "Wekelijks iets kleins: foto, post of review-antwoord. Maandelijks openingstijden en diensten checken. Stilte voelt als gesloten, ook als je open bent.",
+    },
+    {
+      question: "Helpt lokale ads als mijn GBP slapend is?",
+      answer:
+        "Je koopt dan klikken naar een spookhuis. Fix eerst profiel, reviews en regio-pagina's. Daarna werkt elke euro in Maps of Search harder.",
     },
   ],
   sections: [
@@ -109,6 +119,14 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     },
     {
       type: "h2",
+      text: "Posts, Q&A en attributen die je vergeet",
+    },
+    {
+      type: "p",
+      text: "Wekelijkse of maandelijkse posts over aanbod of tip. Q&A zelf invullen voordat rare antwoorden verschijnen. Attributen (parking, afspraak, talen) die kloppen. Dit is geen contentkalender-theater. Het is bewijs dat iemand de zaak runt.",
+    },
+    {
+      type: "h2",
       text: "Lokaal adverteren vs lokaal ranken",
     },
     {
@@ -118,6 +136,14 @@ export const GOOGLE_BUSINESS_PROFILE_LOKAAL: KennisbankArticle = {
     {
       type: "p",
       text: "Google Maps marketing is geen aparte truc naast lokale SEO. Het is dezelfde etalage, scherper bekeken. Wie alleen adverteert om een slapend profiel te compenseren, huurt zichtbaarheid die organisch gratis had kunnen zijn.",
+    },
+    {
+      type: "h2",
+      text: "AI Overviews en lokale intentie",
+    },
+    {
+      type: "p",
+      text: "Informatieve queries raken AI-samenvattingen. Lokale 'bij mij in de buurt'-intentie blijft vaak Maps-first. Sterke GBP en lokale landings blijven dus geld waard, ook als blogs minder klikken opleveren. Reviews en NAP zijn geen bijzaak.",
     },
     {
       type: "callout",

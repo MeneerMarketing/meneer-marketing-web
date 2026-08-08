@@ -7,7 +7,7 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
     "Merchant Center weigert je producten, Shopping staat stil en niemand weet waarom. De meest voorkomende feed-fouten en hoe je ze fixt.",
   publishedAt: "2026-07-11",
   modifiedAt: "2026-08-08",
-  readMinutes: 11,
+  readMinutes: 13,
   category: "campagnes",
   keywords: [
     "merchant center fouten",
@@ -31,6 +31,16 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
       question: "Kan ik Performance Max draaien met een rommelige feed?",
       answer:
         "Technisch soms. Slim: nee. PMax trekt Shopping-data mee. Rommel in input wordt duurdere ruis. Eerst Merchant Center groen.",
+    },
+    {
+      question: "Wat fix ik eerst bij honderden fouten?",
+      answer:
+        "Bestsellers en producten met het meeste zoekvolume. Daarna systematisch per fouttype. Alles tegelijk half doen kost meer tijd dan de top 20 hard.",
+    },
+    {
+      question: "Helpt een schone feed als mijn PDP zwak is?",
+      answer:
+        "Half. Feed krijgt je in Shopping. Productpagina moet overtuigen. Dunne PDP = dure kliks. BestRest en SkinComplete: feed én pagina samen.",
     },
   ],
   sections: [
@@ -106,6 +116,14 @@ export const MERCHANT_CENTER_FEED: KennisbankArticle = {
     {
       type: "p",
       text: "Bij BestRest en SkinComplete is de les hetzelfde: feed is helft, productpagina is andere helft. Klik op Shopping, land op dunne pagina, afhaker. Google ziet dat. Je betaalt meer voor minder. Investeer in productpagina's met duidelijke info, reviews en snelheid.",
+    },
+    {
+      type: "h2",
+      text: "Titels en attributen die wél verkopen",
+    },
+    {
+      type: "p",
+      text: "Schrijf titels zoals kopers zoeken: merk, type, maat, materiaal. Niet keyword-soep. Custom labels voor marge of seizoen helpen je campagnes sturen zonder de feed te vervuilen. Attributen die kloppen winnen van creatieve titels die liegen.",
     },
     {
       type: "h2",
