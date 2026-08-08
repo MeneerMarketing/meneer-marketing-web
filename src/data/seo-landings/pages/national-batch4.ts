@@ -475,43 +475,7 @@ export const GROWTH_MARKETING_BUREAU: SeoLandingPage = {
   pillarLabel: "Strategie",
 };
 
-export const LINKEDIN_ADS_BUREAU: SeoLandingPage = {
-  slug: "linkedin-ads-bureau",
-  primaryKeyword: "linkedin ads bureau",
-  category: "google-ads",
-  metaTitle: "LinkedIn Ads bureau · B2B leads die tellen | Meneer Marketing",
-  metaDescription: "LinkedIn Ads bureau voor B2B. Targeting op functie en sector, landings die kwalificeren.",
-  keywords: ["linkedin ads bureau", "linkedin advertising nederland", "linkedin ads b2b"],
-  eyebrow: "LinkedIn Ads",
-  headline: "LinkedIn Ads bureau",
-  headlineAccent: "voor B2B, niet voor likes van collega's.",
-  subheadline: "LinkedIn is duur per klik. Dat kan, als je beslissers target en landings die junk filteren. Anders betaal je voor mensen die je whitepaper downloaden en nooit terugkomen.",
-  pains: [
-    { title: "Dure kliks", body: "CPA die pijn doet zonder kwalificatie." },
-    { title: "Brede targeting", body: "Iedereen met 'marketing' in titel." },
-    { title: "Leadform zonder opvolging", body: "100 leads, 2 gesprekken." },
-  ],
-  deliverables: [
-    { title: "B2B targeting", body: "Functie, sector, bedrijfsgrootte." },
-    { title: "Lead kwalificatie", body: "Formulieren die junk filteren." },
-    { title: "Landings voor B2B", body: "Vertrouwen en duidelijke propositie." },
-    { title: "Koppeling CRM", body: "Lead direct naar sales." },
-  ],
-  visual: "meta-ads",
-  processTitle: "LinkedIn die oplevert",
-  processSteps: processDefault,
-  proofTitle: "B2B funnels",
-  proofBody: "LinkedIn werkt als opvolging en site meedoen. Anders is het dure e-mailverzameling.",
-  hotTake: { label: "Heet take", body: "LinkedIn Ads zonder sales-opvolging is een dure spreadsheet." },
-  faq: [
-    { question: "Minimum budget?", answer: "LinkedIn vraagt vaak hoger budget. We rekenen eerst door of het kan." },
-  ],
-  ctaTitle: "LinkedIn Ads proberen?",
-  ctaBody: "Vertel je B2B-doelgroep.",
-  relatedSlugs: ["b2b-marketing-bureau", "leadgeneratie-website", "google-ads-bureau"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { LINKEDIN_ADS_BUREAU } from './linkedin-ads-bureau';
 
 export { KLAVIYO_SPECIALIST } from './klaviyo-specialist';
 

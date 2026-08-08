@@ -101,47 +101,7 @@ export const GOOGLE_ADS_UITBESTEDEN: SeoLandingPage = {
   pillarLabel: "Campagnes",
 };
 
-export const REMARKETING_GOOGLE_ADS: SeoLandingPage = {
-  slug: "remarketing-google-ads",
-  primaryKeyword: "remarketing google ads",
-  category: "google-ads",
-  metaTitle: "Remarketing Google Ads · warm verkeer terug | Meneer Marketing",
-  metaDescription:
-    "Remarketing in Google Ads zonder irritatie. Segmenten, frequentiecaps en creatives die converteren. Geen stalker-banner.",
-  keywords: ["remarketing google ads", "retargeting google", "remarketing campagne", "google ads retargeting"],
-  eyebrow: "Remarketing",
-  headline: "Remarketing die mensen",
-  headlineAccent: "terugbrengt, niet wegjaagt.",
-  subheadline:
-    "Bezoekers die al interesse toonden zijn goedkoper dan koude kliks. Maar zonder segmentatie en caps word je het merk dat mensen naar adblocker drijft.",
-  pains: [
-    { title: "Iedereen dezelfde banner", body: "Converters zien nog weken je ads. Irritant en duur." },
-    { title: "Geen segmenten", body: "Cart abandoners en bloglezers in dezelfde campagne. Chaos." },
-    { title: "Remarketing vóór volume", body: "Tien bezoekers per dag. Remarketing lost dat niet op." },
-  ],
-  deliverables: [
-    { title: "Segmentatie", body: "Productviewers, cart, converters uitsluiten." },
-    { title: "Frequentiecaps", body: "Genoeg herinnering, geen spam." },
-    { title: "Dynamic remarketing", body: "Producten die ze bekeken, met schone feed." },
-    { title: "Cross-channel", body: "Google + Meta in één strategie." },
-  ],
-  visual: "google-ads",
-  visualCaption: "Warm verkeer is goedkoop. Alleen als je site al converteert.",
-  processTitle: "Remarketing die rendeert",
-  processSteps: processDefault,
-  proofTitle: "E-commerce retentie",
-  proofBody: "Remarketing vangt twijfel op. Het vervangt geen goede productpagina of e-mailflow.",
-  hotTake: { label: "Heet take", body: "Remarketing op je hele site zonder segmentatie is een megafoon in een bibliotheek." },
-  faq: [
-    { question: "Hoeveel verkeer heb ik nodig?", answer: "Hangt af van je cyclus. Lage traffic? Eerst acquisitie of SEO." },
-    { question: "GDPR en consent?", answer: "Correcte consent mode. Geen shortcuts." },
-  ],
-  ctaTitle: "Remarketing laten opzetten?",
-  ctaBody: "Vertel je traffic en doelen. Ik schets de segmenten.",
-  relatedSlugs: ["google-ads-bureau", "meta-ads-bureau", "conversie-optimalisatie"],
-  pillarSlug: "campagnes",
-  pillarLabel: "Campagnes",
-};
+export { REMARKETING_GOOGLE_ADS } from './remarketing-google-ads';
 
 export const FACEBOOK_ADS_BUREAU: SeoLandingPage = {
   slug: "facebook-ads-bureau",

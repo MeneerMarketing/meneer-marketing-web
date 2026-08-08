@@ -6,7 +6,7 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
   description:
     "Ads, SEO, site, e-mail: wat eerst, wat later? Een eerlijk kader voor MKB zonder pakketten-praat en zonder 'het hangt ervan af' zonder uitleg.",
   publishedAt: "2026-06-28",
-  readMinutes: 9,
+  readMinutes: 11,
   category: "strategie",
   keywords: [
     "marketingbudget verdelen",
@@ -86,13 +86,21 @@ export const MARKETINGBUDGET_VOLGORDE: KennisbankArticle = {
       items: [
         "Reken wat een klant mag kosten vóór je opschaalt.",
         "Start klein met strakke zoekwoorden, niet met 'zet het aan'.",
-        "Landings die matchen met je ads. Geen homepage als alles-doos.",
+        "Landings die matchen met je ads. Homepage als alles-doos skippen.",
         "Wekelijks bijsturen. Niet maandelijks hopen.",
       ],
     },
     {
       type: "callout",
       text: "Heet take: een bureau dat in week één je volledige budget in PMax stopt zonder je site te hebben gezien, verkoopt activiteit, geen groei.",
+    },
+    {
+      type: "h2",
+      text: "Wanneer je de volgorde mag breken",
+    },
+    {
+      type: "p",
+      text: "Soms moet er morgen omzet staan en is de site goed genoeg. Dan mag een klein ads-budget eerder, als landings en tracking kloppen. Soms is je product nieuw en zoekt niemand ernaar. Dan helpt Meta of UGC eerder dan SEO. De volgorde is risicobeheer, geen religie. Breek hem bewust, niet omdat iemand een pakket verkoopt.",
     },
     {
       type: "h2",
