@@ -7,6 +7,7 @@ import { BROAD_MATCH_GOOGLE_ADS } from "@/data/kennisbank/articles/broad-match-g
 import { GOOGLE_BUSINESS_PROFILE_LOKAAL } from "@/data/kennisbank/articles/google-business-profile-lokaal";
 import { GOOGLE_ADS_VIJF_FOUTEN } from "@/data/kennisbank/articles/google-ads-vijf-fouten";
 import { AI_CONTENT_BULK_SEO } from "@/data/kennisbank/articles/ai-content-bulk-seo";
+import { AI_ZOEK_VINDBAARHEID_CHATGPT } from "@/data/kennisbank/articles/ai-zoek-vindbaarheid-chatgpt";
 import { MARKETINGBUDGET_VOLGORDE } from "@/data/kennisbank/articles/marketingbudget-volgorde";
 import { ABANDONED_CART_EMAILS } from "@/data/kennisbank/articles/abandoned-cart-emails";
 import { MERCHANT_CENTER_FEED } from "@/data/kennisbank/articles/merchant-center-feed";
@@ -61,65 +62,8 @@ export const kennisbankArticles: KennisbankArticle[] = [
   GOOGLE_BUSINESS_PROFILE_LOKAAL,
   GOOGLE_ADS_VIJF_FOUTEN,
   AI_CONTENT_BULK_SEO,
-  MARKETINGBUDGET_VOLGORDE,  {
-    slug: "ai-zoek-vindbaarheid-chatgpt",
-    title: "Vindbaarheid in AI-antwoorden: gevonden worden in ChatGPT & Gemini",
-    description:
-      "Klanten vragen ChatGPT en Gemini om advies. Zo bouw je pagina's die AI citeert: heldere antwoorden, schema en consistente expertise.",
-    publishedAt: "2026-06-18",
-    modifiedAt: "2026-08-08",
-    readMinutes: 7,
-    category: "vindbaarheid",
-    keywords: [
-      "AI-antwoorden",
-      "ChatGPT vindbaarheid",
-      "Gemini vindbaarheid",
-      "generative engine optimization",
-    ],
-    dienstSlugs: ["ai-zoek", "seo", "content-marketing"],
-    sections: [
-      {
-        type: "p",
-        text: "Even een ongemakkelijke waarheid: een deel van jouw potentiële klanten googelt niet meer. Ze typen hun vraag in ChatGPT of Gemini en krijgen één antwoord, met een paar bronnen. Sta jij daar niet tussen, dan ben je voor die klant geen optie meer. Geen tweede pagina om nog op gevonden te worden, geen advertentiepositie om te kopen.",
-      },
-      {
-        type: "h2",
-        text: "Hoe ChatGPT en Gemini kiezen wie ze noemen",
-      },
-      {
-        type: "p",
-        text: "ChatGPT, Gemini en vergelijkbare AI-tools verzinnen hun antwoorden niet uit het niets. Ze leunen op wat ze kunnen crawlen en begrijpen: heldere pagina's, duidelijke structuur en tekst die een vraag echt beantwoordt. Vaag geformuleerde marketingpraat wordt vrijwel nooit geciteerd. Concreet en feitelijk wint van wollig en wervend.",
-      },
-      {
-        type: "ul",
-        items: [
-          "Structured data (schema markup) helpt AI-systemen snappen wie je bent, wat je verkoopt en voor wie.",
-          "Pagina's die één vraag volledig beantwoorden worden vaker als bron gebruikt dan lange verzamelpagina's.",
-          "Consistentie telt: als je naam, dienst en regio overal hetzelfde beschreven staan, stijgt het vertrouwen van het model.",
-        ],
-      },
-      {
-        type: "callout",
-        text: "Leuk detail: van alles wat mensen dagelijks in Google typen is zo'n 15 procent nog nooit eerder gezocht. In AI-antwoorden is dat effect nog sterker, want mensen stellen er vollere, persoonlijkere vragen. Wie die vragen beantwoordt, pakt verkeer waar nog geen concurrentie op zit.",
-      },
-      {
-        type: "h2",
-        text: "Wat je deze maand al kunt doen",
-      },
-      {
-        type: "p",
-        text: "Begin met de vragen die klanten je aan de telefoon stellen. Zet elk antwoord op een eigen, goed gestructureerde pagina met nette koppen en schema markup. Check daarna zelf in ChatGPT en Gemini wat er gebeurt als je naar jouw dienst in jouw regio vraagt. Word je niet genoemd, kijk dan wie wel en wat die pagina's anders doen.",
-      },
-      {
-        type: "h2",
-        text: "Waarom dit nu instappen loont",
-      },
-      {
-        type: "p",
-        text: "SEO in 2010 was makkelijk scoren omdat bijna niemand het serieus nam. Vindbaarheid in AI-antwoorden zit nu in diezelfde fase. De technische basis overlapt flink met goede SEO, dus werk dat je nu doet betaalt dubbel uit: beter vindbaar in Google én in de AI-antwoorden waar je klanten steeds vaker zitten.",
-      },
-    ],
-  },
+  MARKETINGBUDGET_VOLGORDE,
+  AI_ZOEK_VINDBAARHEID_CHATGPT,
   {
     slug: "seo-eerst-dan-ads",
     title: "SEO eerst, dan ads: de SkinComplete-volgorde die budget spaart",
