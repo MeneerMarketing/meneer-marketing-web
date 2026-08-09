@@ -4,6 +4,8 @@ import {
   getSeoLandingBySlug,
 } from "@/data/seo-landings/registry";
 import { getKennisbankArticleBySlug } from "@/lib/kennisbank";
+import { getDienstBySlug } from "@/lib/diensten";
+import { resolveDienstSlugForHub } from "@/lib/seo-landings-topic-map";
 
 /** Slimme nav-teasers: geen volledige registry op de client. */
 export interface SeoLandingNavLink {
@@ -17,10 +19,17 @@ export interface SeoLandingKennisbankTeaser {
   description: string;
 }
 
+export interface SeoLandingDienstTeaser {
+  slug: string;
+  name: string;
+  href: string;
+}
+
 export interface SeoLandingNavProps {
   related: SeoLandingNavLink[];
   citySiblings: SeoLandingNavLink[];
   kennisbankTeaser: SeoLandingKennisbankTeaser | null;
+  dienstTeaser: SeoLandingDienstTeaser | null;
 }
 
 function toNavLink(page: EnrichedSeoLandingPage): SeoLandingNavLink {
@@ -60,5 +69,18 @@ export function resolveSeoLandingNav(
       }
     : null;
 
-  return { related, citySiblings, kennisbankTeaser };
+  const dienstSlug = resolveDienstSlugForHub(
+    page.slug,
+    page.location?.city,
+  );
+  const dienst = dienstSlug ? getDienstBySlug(dienstSlug) : null;
+  const dienstTeaser = dienst
+    ? {
+        slug: dienst.slug,
+        name: dienst.name,
+        href: `/diensten/${dienst.slug}`,
+      }
+    : null;
+
+  return { related, citySiblings, kennisbankTeaser, dienstTeaser };
 }

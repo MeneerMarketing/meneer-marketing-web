@@ -45,6 +45,7 @@ import type {
   SeoLandingMyth,
   SeoLandingProseBlock,
 } from "@/data/seo-landings/enriched-types";
+import { resolveKennisbankSlugForHub } from "@/lib/seo-landings-topic-map";
 
 const PAGE_TOC: readonly SeoLandingTocItem[] = [
   { id: "samenvatting", label: "Kort antwoord" },
@@ -417,7 +418,12 @@ export function enrichSeoLandingPage(page: SeoLandingPage): EnrichedSeoLandingPa
     };
   }
   const kennisbankPool = KENNISBANK_BY_CATEGORY[ready.category];
-  const kennisbankSlug = pick(ready.slug, kennisbankPool, "kb");
+  const kennisbankSlug = resolveKennisbankSlugForHub(
+    ready.slug,
+    ready.location?.city,
+    kennisbankPool,
+    pick,
+  );
   const headline = buildDisplayHeadline(ready);
   const extraFaqs = ready.lockContent ? [] : buildExpandedExtraFaqs(ready);
   const faq = [...ready.faq, ...extraFaqs].filter(

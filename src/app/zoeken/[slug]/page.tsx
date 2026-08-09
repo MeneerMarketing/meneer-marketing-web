@@ -11,6 +11,7 @@ import {
   seoLandingPath,
 } from "@/lib/seo-landings";
 import { resolveSeoLandingNav } from "@/lib/seo-landing-nav";
+import { resolveServiceTypeForHub } from "@/lib/seo-landings-topic-map";
 
 interface ZoekenPageProps {
   params: Promise<{ slug: string }>;
@@ -69,9 +70,13 @@ export default async function ZoekenLandingPage({ params }: ZoekenPageProps) {
     breadcrumbs,
     faqs: [...page.schemaFaqs],
     areaServed,
-    serviceType: SERVICE_TYPE_BY_CATEGORY[page.category],
+    serviceType: resolveServiceTypeForHub(
+      page.slug,
+      page.location?.city,
+      SERVICE_TYPE_BY_CATEGORY[page.category] ?? "Online marketing",
+    ),
     isApeldoornHQ: page.location?.city === "Apeldoorn",
-    dateModified: "2026-08-08",
+    dateModified: "2026-08-09",
   });
 
   return (

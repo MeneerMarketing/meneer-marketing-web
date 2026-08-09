@@ -121,6 +121,7 @@ export function SeoLandingPageView({
   related,
   citySiblings,
   kennisbankTeaser,
+  dienstTeaser,
 }: {
   page: EnrichedSeoLandingPage;
 } & SeoLandingNavProps) {
@@ -198,12 +199,21 @@ export function SeoLandingPageView({
                 {siteCtas.startIntake.label}
                 <ArrowUpRight className="size-4" aria-hidden />
               </Link>
-              <Link
-                href={`/${page.pillarSlug}`}
-                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
-              >
-                Meer over {page.pillarLabel}
-              </Link>
+              {dienstTeaser ? (
+                <Link
+                  href={dienstTeaser.href}
+                  className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+                >
+                  Meer over {dienstTeaser.name}
+                </Link>
+              ) : (
+                <Link
+                  href={`/${page.pillarSlug}`}
+                  className="inline-flex items-center gap-2 rounded-full border-2 border-slate-900 px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+                >
+                  Meer over {page.pillarLabel}
+                </Link>
+              )}
             </motion.div>
           </div>
           <motion.div
