@@ -152,6 +152,8 @@ export const ECOMMERCE_SPECIALIST: SeoLandingPage = {
     { title: "Automatisering", body: "Minder handwerk, meer schaal." },
   ],
   visual: "webshop",
+  processTitle: "Shop, marketing en keten",
+  processSteps: processDefault,
   proofTitle: "Shop op maat",
   proofBody: "Elke shop krijgt een eigen strategie. E-commerce is nooit one-size-fits-all.",
   hotTake: { label: "Heet take", body: "Een e-commerce specialist die Shopify niet kan aanpassen, is een coach zonder gym." },
