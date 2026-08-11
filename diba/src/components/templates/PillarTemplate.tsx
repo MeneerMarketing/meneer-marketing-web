@@ -10,11 +10,9 @@ import BeforeAfterSlider, {
   type BeforeAfterSliderProps,
 } from "@/components/ui/BeforeAfterSlider";
 import type { FaqItem } from "@/components/ui/FaqAccordion";
-import NazorgTijdlijn from "@/components/ui/NazorgTijdlijn";
 import ReviewCard, { type ReviewCardProps } from "@/components/ui/ReviewCard";
 import StickyActionBar from "@/components/ui/StickyActionBar";
 import { type ProofItem } from "@/components/ui/ProofStrip";
-import { nazorgBySlug } from "@/data/nazorg";
 import { publicCopy } from "@/lib/copy-flags";
 import { figmaBtnMint, figmaBtnPrimary } from "@/lib/figma-home-layout";
 import {
@@ -83,7 +81,9 @@ export default function PillarTemplate({
 }: PillarTemplateProps) {
   const c = content;
   const pageUrl = `${siteUrl}/huidproblemen/${c.slug}`;
-  const nazorg = c.nazorgSlug ? nazorgBySlug(c.nazorgSlug) : undefined;
+  /* Nazorg hoort bij wat er gedaan is en niet bij wat je hebt, dus staat het per
+     behandeling op /nazorg en niet per huidprobleem hier. */
+  const heeftNazorg = Boolean(c.nazorgSlug);
   const pageTitle = publicCopy(c.titel.replace(/\*/g, ""));
 
   return (
@@ -248,22 +248,28 @@ export default function PillarTemplate({
         </div>
       </section>
 
-      {nazorg ? (
+      {heeftNazorg ? (
         <section
           className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
           data-reveal
         >
           <div className="mx-auto">
             <p className={figmaLabel}>Nazorg</p>
-            <div className="mt-4 [&_h2]:text-3xl [&_h2]:font-medium [&_h2]:tracking-[-.06em] [&_h2]:text-[#17372a]">
-              <NazorgTijdlijn
-                kop="Nazorg na je *behandeling*"
-                momenten={nazorg.momenten}
-              />
-            </div>
+            <h2 className="mt-4 max-w-[20ch] text-3xl font-medium tracking-[-.06em] text-[#17372a]">
+              Wat mag wanneer weer
+            </h2>
             <p className={`mt-6 max-w-2xl ${figmaBody}`}>
-              {publicCopy(nazorg.intro)}
+              Nazorg hangt af van de behandeling die je krijgt en niet van wat
+              je hebt. Op de nazorgpagina staat per behandeling een rooster:
+              vanaf wanneer je weer mag sporten, de zon in, make-up op, en
+              waarom.
             </p>
+            <Link
+              href="/nazorg"
+              className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#d8f0c8] px-6 text-[11px] font-semibold uppercase tracking-[.13em] text-[#245f3b] transition-colors hover:bg-[#cbe5bf]"
+            >
+              Naar de nazorg
+            </Link>
           </div>
         </section>
       ) : null}
