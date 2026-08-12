@@ -107,15 +107,14 @@ export function PilatesFinalCta({
           </Reveal>
 
           <Reveal delay={0.06} className="h-full">
-            <div className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 text-slate-900 shadow-[0_28px_70px_rgba(0,0,0,0.35)] sm:p-8">
-              <h3 className="text-xl font-extrabold tracking-tight">
-                Vertel over je studio
+            <div className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-5 text-slate-900 shadow-[0_28px_70px_rgba(0,0,0,0.35)] sm:p-6">
+              <h3 className="text-lg font-extrabold tracking-tight">
+                Stuur je studio door
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-500">
-                Hoe meer context, hoe scherper mijn antwoord. Duurt 2 minuten.
-                Rechtstreeks naar mij.
+              <p className="mt-1 text-sm text-slate-500">
+                Vier velden. Optioneel iets erbij. Ik reageer persoonlijk.
               </p>
-              <div className="mt-6 flex-1">
+              <div className="mt-4 flex-1">
                 <PilatesLeadForm
                   personalization={personalization}
                   campaignRef={campaignRef}
