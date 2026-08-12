@@ -154,6 +154,18 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
               </li>
             ))}
           </ul>
+          {caseData.id === "hills-pilates" ? (
+            <p className="mt-8 text-sm leading-relaxed text-slate-600">
+              Bouw je een boutique Pilates studio uit?{" "}
+              <Link
+                href="/pilates-studios"
+                className="font-bold text-slate-900 underline decoration-[#FF5722]/50 underline-offset-2 hover:text-[#FF5722]"
+              >
+                Website, SEO en marketing voor Pilates studio&apos;s
+              </Link>
+              .
+            </p>
+          ) : null}
         </div>
       </section>
 

@@ -1,12 +1,14 @@
 import { z } from "zod";
 import { CONTACT_MAIL_NOT_CONFIGURED_CODE } from "@/lib/contact-mail";
 
-export const FORM_SOURCES = [  "contact",
+export const FORM_SOURCES = [
+  "contact",
   "samenwerken",
   "project-starten",
   "intake",
   "groeiscan",
   "schaal-op",
+  "pilates-studios",
 ] as const;
 
 export type FormSource = (typeof FORM_SOURCES)[number];
