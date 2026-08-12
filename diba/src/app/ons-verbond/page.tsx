@@ -91,9 +91,18 @@ export default function OnsVerbondPage() {
             intro="Die staat er in de rechterkolom bij. Dat is meteen de reden dat deze lijst kort is: er staat alleen op wat we ook volhouden als het ons iets kost."
           />
 
-          <ol className="mt-12 space-y-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)]">
+          {/*
+            Dit was één blok met haarlijnen ertussen (space-y-px op een --g-100-vlak) en
+            een verticale streep tussen de kolommen. Lijnen zijn niet de huisstijl: kaarten
+            dragen zichzelf met een vlak. Nu losse kaarten met ruimte ertussen, en de
+            kostenkolom is een eigen vlak binnen de kaart.
+          */}
+          <ol className="mt-12 space-y-4">
             {WEIGERINGEN.map((w) => (
-              <li key={w.nummer} className="bg-white p-6 sm:p-8">
+              <li
+                key={w.nummer}
+                className="rounded-[var(--r-lg)] bg-white p-6 sm:p-9"
+              >
                 <div className="grid gap-6 lg:grid-cols-[auto_1.25fr_0.75fr] lg:gap-10">
                   <span className="diba-label text-[var(--t-muted)] lg:w-10">
                     {w.nummer}
@@ -114,7 +123,7 @@ export default function OnsVerbondPage() {
                     ) : null}
                   </div>
 
-                  <div className="border-t border-[var(--g-100)] pt-4 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8">
+                  <div className="rounded-[var(--r-md)] bg-[var(--g-050)] p-5 sm:p-6">
                     <Label className="text-[var(--warn-text)]">
                       Wat dit ons kost
                     </Label>
