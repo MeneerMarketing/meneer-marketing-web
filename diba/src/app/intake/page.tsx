@@ -6,7 +6,16 @@ import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { INTAKE_FAQ, INTAKE_FEITEN, VOORBEREIDING } from "@/data/intake";
+import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
+import {
+  CONSULT_REVIEW_IDS,
+  INTAKE_FAQ,
+  INTAKE_FEITEN_VAST,
+  INTAKE_MINUTEN,
+  OOK_ALS_JE_STOPT,
+  VOORBEREIDING,
+} from "@/data/intake";
+import { SALONIZED_REVIEWS } from "@/data/salonized-reviews";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
@@ -37,12 +46,33 @@ import {
 export const metadata: Metadata = {
   title: "Behandeling Nul: de intake",
   description:
-    "Wat er in de intake gebeurt, wat je niet hoeft, en waarom er in die afspraak niet behandeld wordt.",
+    "Wat er in de intake gebeurt, wat het kost, wat je niet hoeft, en wat je overhoudt als je daarna nooit meer terugkomt.",
 };
+
+/**
+ * De feiten naast de kop.
+ *
+ * Duur en kosten stonden hier als lege vlaggen, op precies de plek waar iemand kijkt
+ * voordat hij boekt. Het bedrag stond ondertussen gewoon in de behandelingentabel en werd
+ * op de uitkomst van het huidprofiel al getoond. Nu komt het daarvandaan, zodat de prijs
+ * op de boekpagina nooit los kan lopen van de prijslijst.
+ */
+function intakeFeiten() {
+  const nul = behandelingVoorSlug("huidanalyse");
+  return [
+    { label: "Duur", waarde: `${INTAKE_MINUTEN} minuten` },
+    {
+      label: "Kosten",
+      waarde: nul ? prijsTekst(nul.prijs) : "Op aanvraag",
+    },
+    ...INTAKE_FEITEN_VAST,
+  ];
+}
 
 const ANKERS = [
   { id: "uur", label: "Wat er gebeurt" },
   { id: "voorbereiden", label: "Voorbereiden" },
+  { id: "ook-als-je-stopt", label: "Als je hierna stopt" },
   { id: "vragen", label: "Vragen" },
 ];
 
@@ -107,7 +137,7 @@ export default function IntakePage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>In het kort</Label>
             <dl className="mt-6 space-y-4">
-              {INTAKE_FEITEN.map((f) => (
+              {intakeFeiten().map((f) => (
                 <div
                   key={f.label}
                   className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4"
@@ -234,6 +264,99 @@ export default function IntakePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Wat je overhoudt als je stopt ──
+          De drempel bij een intake is niet het bedrag maar het vermoeden dat het de ingang
+          van een traject is. Schaarste en kortingen mogen hier niet en werken bij een
+          medische keuze averechts; het risico wegnemen werkt wel. Dus staat hier wat de
+          afspraak oplevert als je daarna nooit meer terugkomt. */}
+      <section
+        id="ook-als-je-stopt"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="Als je hierna niets doet"
+            kop="Wat je dan nog steeds"
+            accent="meeneemt."
+            intro="De meeste twijfel gaat niet over het bedrag maar over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt."
+          />
+
+          <ul className="mt-12 grid gap-4 md:grid-cols-2">
+            {OOK_ALS_JE_STOPT.map((k) => (
+              <li
+                key={k.kop}
+                className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9"
+              >
+                <p className="diba-card-title text-[var(--t-strong)]">
+                  {k.kop}
+                </p>
+                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                  {k.zin}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
+            Wat we niet doen: nabellen, een aanbod dat verloopt, of een korting
+            als je vandaag beslist. Die staan nergens op deze site en ze komen er
+            ook niet.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Wat mensen zeiden die precies dit deden ──
+          Op /reviews staan alle 56 met de waarschuwing dat een 5,0 wantrouwen verdient.
+          Hier staan alleen de mensen die voor een consult kwamen, geselecteerd op de
+          behandeling die erbij staat en niet op inhoud. */}
+      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+        <div className="mx-auto">
+          <SectieKop
+            label="Van mensen die dit boekten"
+            kop="Wat ze zeiden over"
+            accent="het consult zelf."
+            intro="Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tekst staat. Alle 56 staan er, met de kanttekening dat een 5,0 wantrouwen verdient."
+          />
+
+          <ul className="mt-12 gap-4 sm:columns-2 xl:columns-3 [&>li]:mb-4 [&>li]:break-inside-avoid">
+            {CONSULT_REVIEW_IDS.map((id) => {
+              const r = SALONIZED_REVIEWS.find((x) => x.id === id);
+              if (!r) return null;
+              return (
+                <li
+                  key={r.id}
+                  className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-8"
+                >
+                  <blockquote className="text-[16px] leading-7 text-[var(--t-strong)]">
+                    {r.quote}
+                  </blockquote>
+                  <div className="mt-5 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                    <span className="text-[15px] leading-6 font-medium text-[var(--t-strong)]">
+                      {r.name}
+                    </span>
+                    {r.relativeDate ? (
+                      <span className="text-[14px] leading-6 text-[var(--t-muted)]">
+                        {r.relativeDate}
+                      </span>
+                    ) : null}
+                  </div>
+                  <p className="diba-label mt-4 inline-flex rounded-[var(--r-pill)] bg-white px-4 py-2 text-[var(--t-label)]">
+                    {r.treatment}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+
+          <Link
+            href="/reviews"
+            className="diba-label mt-8 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+          >
+            Alle reviews, en waarom een 5,0 wantrouwen verdient
+          </Link>
         </div>
       </section>
 

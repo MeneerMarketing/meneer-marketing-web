@@ -70,12 +70,66 @@ export const STAPPEN: readonly Stap[] = [
   },
 ];
 
-export const INTAKE_FEITEN = [
-  { label: "Duur", waarde: "[GEGEVEN-NODIG] minuten" },
-  { label: "Kosten", waarde: "[PRIJS-NODIG]" },
+/**
+ * Hoe lang de afspraak duurt.
+ *
+ * Stond als "[GEGEVEN-NODIG] minuten" en werd daardoor een leeg vakje op de plek waar de
+ * bezoeker het hardst kijkt. Tegelijk heet de grootste sectie van de pagina "het uur, stap
+ * voor stap" en is de tijdlijn op een uur gebouwd. Twee plekken die hetzelfde beweren en
+ * elkaar niet kenden, waarvan er één zweeg.
+ *
+ * Nu één getal dat beide voedt. [BESLUIT-OKAN] of zestig minuten klopt met wat er in de
+ * agenda staat; klopt het niet, dan verandert deze regel en loopt de hele pagina mee.
+ */
+export const INTAKE_MINUTEN = 60;
+
+/**
+ * De vier feiten naast de kop.
+ *
+ * Kosten stond hier op "[PRIJS-NODIG]" en werd dus leeg getoond, terwijl het bedrag gewoon
+ * in `behandelingen.ts` staat en op de uitkomst van het huidprofiel al zichtbaar was. Twee
+ * pagina's over dezelfde afspraak, waarvan de ene het bedrag noemde en de andere niet, en
+ * dat was juist de pagina waar je boekt.
+ *
+ * Daarom komt de prijs nu uit de behandelingentabel en niet uit een tweede plek die kan
+ * gaan afwijken. Zie `intakeFeiten()` in de pagina.
+ */
+export const INTAKE_FEITEN_VAST = [
   { label: "Verplichting", waarde: "Geen" },
   { label: "Behandeling deze afspraak", waarde: "Nee" },
 ] as const;
+
+/**
+ * Wat je overhoudt als je hierna niets meer doet.
+ *
+ * DE ENIGE EERLIJKE MANIER OM DEZE PAGINA BETER TE LATEN CONVERTEREN.
+ *
+ * Wat mensen tegenhoudt bij een intake is niet het bedrag maar het vermoeden dat het de
+ * ingang van een traject is. Schaarste, kortingen en aflopende aanbiedingen mogen hier niet
+ * en werken bij een medische keuze ook averechts. Wat wel werkt is het risico wegnemen:
+ * laten zien dat de afspraak op zichzelf iets oplevert, ook als je daarna nooit meer
+ * terugkomt.
+ *
+ * Alles hieronder is nacontroleerbaar op de rest van de site, en dat is met opzet.
+ */
+export const OOK_ALS_JE_STOPT: readonly { kop: string; zin: string }[] = [
+  {
+    kop: "Een nulpunt dat van jou is",
+    zin: "Je meting blijft bewaard als beginpunt. Ga je later ergens anders heen, dan heb je iets om mee te vergelijken dat niet van een telefooncamera komt.",
+  },
+  {
+    kop: "Weten wat je niet moet doen",
+    zin: "Vaak is de winst dat er iets afvalt. Een behandeling die je overwoog en die op jouw huid niets gaat doen, is een besparing van honderden euro's en een paar maanden.",
+  },
+  {
+    kop: "Je routine doorgelicht",
+    zin: "We kijken naar wat je nu thuis gebruikt en naar de ingrediëntenlijst, niet naar de naam op de verpakking. Soms zit daar het hele antwoord.",
+  },
+  {
+    kop: "Een advies dat nee mag zijn",
+    zin: "Soms is het advies om niets te doen, of om eerst iets af te bouwen en over twee weken opnieuw te kijken. Dat hoor je dan ook, en het kost je niets extra.",
+  },
+];
 
 /* ── Voorbereiden ──────────────────────────────────────────────────────── */
 
@@ -101,6 +155,28 @@ export const VOORBEREIDING = {
     },
   ],
 } as const;
+
+/**
+ * Reviews van mensen die voor een consult kwamen.
+ *
+ * WAAROM HIER EN NIET ALLEEN OP /REVIEWS.
+ *
+ * Op /reviews staan alle 56 quotes met de waarschuwing dat een 5,0 wantrouwen verdient. Dat
+ * blijft daar staan. Maar op de pagina waar iemand besluit of hij die ene afspraak boekt,
+ * helpt iets anders: wat zeiden mensen die precies dít deden.
+ *
+ * Deze acht zijn geselecteerd op de behandeling die erbij staat, niet op inhoud. Dat is een
+ * controleerbaar criterium; "de mooiste eruit" zou dat niet zijn en is precies wat we op
+ * /resultaten afkeuren.
+ */
+export const CONSULT_REVIEW_IDS: readonly string[] = [
+  "salon-aydan",
+  "salon-sarah-grissel",
+  "salon-alice-advies",
+  "salon-meike",
+  "salon-martyna",
+  "salon-fleur",
+];
 
 export const INTAKE_FAQ = [
   {
