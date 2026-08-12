@@ -1,16 +1,10 @@
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
-
-const SAFE_REF_PATTERN = /^[a-zA-Z0-9_-]{8,64}$/;
-
-/**
- * Campaign ref foundation voor Vertical Growth Pages.
- * Token wordt NOOIT rechtstreeks gerenderd. Alleen server-side gekoppelde lead-data
- * mag personalisatie opleveren. Zonder geldige lookup blijft de pagina generiek.
- */
-export function isSafeCampaignRef(ref: string | null | undefined): boolean {
-  if (!ref) return false;
-  return SAFE_REF_PATTERN.test(ref);
-}
+import {
+  isSafeLgeCampaignRef,
+  isValidCampaignContext,
+  mapContextToPersonalization,
+  resolveCampaignContext,
+} from "@/lib/lge/campaign";
 
 export interface ResolveCampaignRefResult {
   ref: string | null;
@@ -18,20 +12,33 @@ export interface ResolveCampaignRefResult {
 }
 
 /**
- * Placeholder-resolver. Later: lookup in Local Growth Engine.
- * Nu: valideert formaat en retourneert geen personalisatie.
+ * Server-side campaign ref → LGE public context.
+ * Invalid / offline / timeout → generieke pagina (geen crash, geen leak).
  */
 export async function resolveCampaignRef(
   rawRef: string | null | undefined,
 ): Promise<ResolveCampaignRefResult> {
-  if (!isSafeCampaignRef(rawRef)) {
+  if (!isSafeLgeCampaignRef(rawRef)) {
     return { ref: null, personalization: null };
   }
 
-  // TODO: server-side koppeling aan Local Growth Engine lead
-  // Nooit query-data rechtstreeks in UI plakken.
+  const ref = rawRef as string;
+  const context = await resolveCampaignContext(ref);
+
+  if (!isValidCampaignContext(context)) {
+    if (process.env.NODE_ENV === "development" && context?.valid === false) {
+      console.info("[lge] invalid/expired campaign ref ignored");
+    }
+    return { ref: null, personalization: null };
+  }
+
   return {
-    ref: rawRef ?? null,
-    personalization: null,
+    ref,
+    personalization: mapContextToPersonalization(context, ref),
   };
+}
+
+/** @deprecated use isSafeLgeCampaignRef */
+export function isSafeCampaignRef(ref: string | null | undefined): boolean {
+  return isSafeLgeCampaignRef(ref);
 }

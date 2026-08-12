@@ -8,7 +8,10 @@ export type VerticalPackageId =
   | "local-growth"
   | "growth-partner";
 
-export type VerticalInterestId = VerticalPackageId | "unsure";
+export type VerticalInterestId =
+  | VerticalPackageId
+  | "signature-custom"
+  | "unsure";
 
 export interface VerticalMoney {
   /** Bedrag in eurocent of hele euro's. Zie unit. */
@@ -94,9 +97,23 @@ export interface VerticalCaseStudy {
 export interface VerticalCampaignPersonalization {
   businessName?: string;
   city?: string;
+  /**
+   * LGE city_status snapshot.
+   * AVAILABLE | PRIMARY_CANDIDATE | RESERVED | EXCLUSIVE
+   */
+  cityStatus?: string;
+  /** @deprecated gebruik cityStatus */
   cityAvailable?: boolean;
   previewReady?: boolean;
   previewHref?: string;
+  recommendedPackage?:
+    | "STUDIO_EDITION"
+    | "LOCAL_GROWTH"
+    | "GROWTH_PARTNER"
+    | "SIGNATURE_CUSTOM";
+  primaryService?: string;
+  selectedTemplate?: string;
+  vertical?: string;
 }
 
 export interface VerticalLaunchPromo {
