@@ -48,13 +48,14 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
         ctaLabel: "Ik wil Studio Edition",
         inclusions: [
+          "Website live binnen 5 werkdagen",
+          "SEO-injectie op Pilates [jouw stad]",
           "Eén van de high-end Pilates Studio Editions",
           "Aangepast aan naam, logo en huisstijl",
           "Mobiel geoptimaliseerd (daar gebeurt het echte boeken)",
           "Lessen, trainers, tarieven, contact en locatie",
           "Boekingskoppeling met bestaand systeem (waar technisch redelijk)",
-          "Technische SEO en lokale SEO-basis",
-          "Google Analytics / tracking-basis",
+          "Technische SEO + schema + tracking-basis",
           "Hosting, onderhoud, beveiliging en kleine wijzigingen",
         ],
       },
@@ -70,13 +71,11 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
         ctaLabel: "Local Growth is mijn ding",
         inclusions: [
           "Alles uit Studio Edition",
-          "Actieve lokale SEO",
+          "Meerdere landingspagina's (Reformer, Mat, Private, …)",
+          "SEO op bredere lokale zoektermen, niet alleen Pilates [stad]",
+          "Actieve lokale SEO + maandelijkse bijsturing",
           "Google Business Profile-optimalisatie",
-          "Lokale keywordstrategie en rank tracking",
-          "Search Console-monitoring",
-          "Servicepagina- en contentverbeteringen",
-          "Technische SEO-monitoring",
-          "Maandelijkse optimalisatie",
+          "Keywordstrategie, Search Console en rank tracking",
           "SEO-dashboard / rapportage",
           "Lokale concurrentieanalyse",
           "Stadsexclusiviteit binnen dit programma",
@@ -93,9 +92,9 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
         ctaLabel: "Praat over Growth Partner",
         inclusions: [
           "Alles uit Local Growth",
+          "Extra campagne-landingspagina's voor Ads",
           "Google Ads-beheer (advertentiebudget niet inbegrepen)",
           "Conversion tracking",
-          "Campagne-landingspagina's",
           "Advertenties gekoppeld aan relevante lessen",
           "Booking funnel-analyse",
           "CRO-optimalisaties",
@@ -261,12 +260,17 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
     {
       question: "Help je met SEO voor mijn Pilates studio?",
       answer:
-        "Ja. Studio Edition bevat technische SEO en een lokale basis. Local Growth voegt actieve lokale SEO, GBP, tracking en maandelijkse optimalisatie toe. Dat is waar de meeste studio's landen.",
+        "Ja. Bij Studio Edition injecteer ik SEO al op Pilates [jouw stad], plus technische SEO. Local Growth en Growth Partner pakken meer zoektermen en meerdere landingspagina's, met maandelijkse bijsturing. Dat is waar de meeste studio's landen.",
     },
     {
-      question: "Kun je garanderen dat ik #1 sta?",
+      question: "Hoe snel staat mijn website live?",
       answer:
-        "Nee. Magische #1-beloftes doe ik niet. Wel: echte zoekvraag onderzoeken, structuur bouwen, meten en bijsturen. Transparantie boven loze garanties.",
+        "Bij Studio Edition mik ik op oplevering binnen 5 werkdagen, inclusief SEO-injectie op Pilates [jouw stad]. Content en assets van jouw kant op tijd aanleveren helpt enorm.",
+    },
+    {
+      question: "Kom ik op pagina 1 in Google?",
+      answer:
+        "Daar is de strategie op gebouwd. Ik weet hoe Google werkt: intentie, structuur, snelheid, content, Maps. Voor de kernzoekterm Pilates [stad] mikken we hard op pagina 1, met serieuze kans op topposities. Local Growth en Growth Partner verbreden dat naar meer zoektermen. Magische garanties zonder werk beloof ik niet. Wel een aanpak die Google beloont.",
     },
     {
       question: "Wat betekent één studio per stad?",
@@ -319,11 +323,11 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
     },
     {
       title: "Website live",
-      body: "Scherpe afwerking. Zonder maandenlange bureau-rituelen.",
+      body: "Binnen 5 werkdagen live. Inclusief SEO-injectie op Pilates [jouw stad].",
     },
     {
       title: "Growth waar je voor kiest",
-      body: "Bij Local Growth of Growth Partner starten SEO en eventueel Google Ads.",
+      body: "Local Growth: meer zoektermen en landingspagina's. Growth Partner: plus Google Ads.",
     },
   ],
   localSeoExamples: {

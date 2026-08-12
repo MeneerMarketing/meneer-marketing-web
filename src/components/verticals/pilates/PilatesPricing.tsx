@@ -153,7 +153,7 @@ export function PilatesPricing({
                   className={
                     recommended
                       ? "group relative flex h-full flex-col rounded-3xl bg-slate-900 p-6 text-white shadow-[0_28px_70px_rgba(15,23,42,0.28)] ring-2 ring-[#FF5722]/70 transition duration-300 hover:-translate-y-1 sm:p-7"
-                      : "group flex h-full flex-col rounded-3xl border border-slate-200/90 bg-white p-6 shadow-[0_16px_40px_-28px_rgba(15,23,42,0.2)] transition duration-300 hover:-translate-y-1 hover:border-[#FF5722]/35 hover:shadow-[0_24px_50px_-24px_rgba(255,87,34,0.25)] sm:p-7"
+                      : "group relative flex h-full flex-col rounded-3xl border border-slate-200/90 bg-white p-6 shadow-[0_16px_40px_-28px_rgba(15,23,42,0.2)] transition duration-300 hover:-translate-y-1 hover:border-[#FF5722]/35 hover:shadow-[0_24px_50px_-24px_rgba(255,87,34,0.25)] sm:p-7"
                   }
                 >
                   {recommended ? (
@@ -161,6 +161,10 @@ export function PilatesPricing({
                       {campaignRecommended
                         ? "Aanbevolen voor jullie"
                         : "Meest gekozen"}
+                    </span>
+                  ) : pkg.id === "studio-edition" ? (
+                    <span className="absolute -top-3 left-6 rounded-full bg-emerald-500 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-white shadow-lg">
+                      Live in 5 werkdagen
                     </span>
                   ) : null}
 

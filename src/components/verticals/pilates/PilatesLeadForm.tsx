@@ -22,17 +22,17 @@ const INTEREST_OPTIONS: {
   {
     id: "studio-edition",
     label: "Studio Edition",
-    hint: `${formatVerticalMoney(PILATES_VERTICAL.pricing.packages[0]!.monthly)}/m · website`,
+    hint: `${formatVerticalMoney(PILATES_VERTICAL.pricing.packages[0]!.monthly)}/m · 5 dagen + Pilates [stad]`,
   },
   {
     id: "local-growth",
     label: "Local Growth",
-    hint: `${formatVerticalMoney(PILATES_VERTICAL.pricing.packages[1]!.monthly)}/m · + lokale SEO`,
+    hint: `${formatVerticalMoney(PILATES_VERTICAL.pricing.packages[1]!.monthly)}/m · meer pagina's & SEO`,
   },
   {
     id: "growth-partner",
     label: "Growth Partner",
-    hint: `${formatVerticalMoney(PILATES_VERTICAL.pricing.packages[2]!.monthly)}/m · + Google Ads`,
+    hint: `${formatVerticalMoney(PILATES_VERTICAL.pricing.packages[2]!.monthly)}/m · SEO + Google Ads`,
   },
   {
     id: "signature-custom",

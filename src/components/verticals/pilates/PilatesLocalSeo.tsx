@@ -173,11 +173,13 @@ export function PilatesLocalSeo() {
 
               <div className="mt-5 flex-1 rounded-2xl bg-slate-900 p-5 text-white sm:p-6">
                 <p className="text-sm font-extrabold tracking-tight">
-                  Magische #1-beloftes laat ik aan anderen.
+                  Studio Edition: Pilates [stad]. Growth: de rest erbij.
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                  Ik meet, bouw en stuur bij. Transparantie wint van loze
-                  garanties. Elke keer.
+                  Bij €89 injecteer ik SEO al op de kernzoekterm. Bij Local
+                  Growth en Growth Partner volgen meer zoektermen en
+                  landingspagina&apos;s. Strategie gericht op pagina 1, met
+                  serieuze kans op topposities.
                 </p>
                 <p className="mt-4 text-xs leading-relaxed text-slate-400">
                   Technische SEO, snelheid, schema, interne linking, Google
