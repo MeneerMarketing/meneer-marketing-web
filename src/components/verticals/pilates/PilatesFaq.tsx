@@ -29,11 +29,14 @@ export function PilatesFaq() {
           </h2>
         </Reveal>
 
-        <div className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        <div className="mt-10 space-y-3">
           {faqs.map((item, i) => (
             <Reveal key={item.question} delay={Math.min(i, 6) * 0.03}>
-              <details className="group" open={i === 0}>
-                <summary className="flex cursor-pointer list-none items-start justify-between gap-4 py-5 text-left marker:hidden [&::-webkit-details-marker]:hidden">
+              <details
+                className="group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 open:border-[#FF5722]/30 open:bg-white open:shadow-[0_12px_32px_-20px_rgba(255,87,34,0.35)]"
+                open={i === 0}
+              >
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-4 text-left marker:hidden [&::-webkit-details-marker]:hidden">
                   <span className="text-base font-bold tracking-tight text-slate-900 sm:text-lg">
                     {item.question}
                   </span>
@@ -50,7 +53,7 @@ export function PilatesFaq() {
                     −
                   </span>
                 </summary>
-                <p className="pb-5 pr-8 text-sm leading-relaxed text-slate-600 sm:text-base">
+                <p className="border-t border-slate-100 px-5 pb-5 pt-3 pr-8 text-sm leading-relaxed text-slate-600 sm:text-base">
                   {item.answer}
                 </p>
               </details>

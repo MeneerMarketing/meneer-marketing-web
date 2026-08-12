@@ -3,7 +3,11 @@
 import { useEffect, useRef } from "react";
 
 import { Reveal } from "@/components/effects/Reveal";
+import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
+import type { VerticalInterestId } from "@/data/verticals/types";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
+import { packageIdToKey, packageKeyToInterest } from "@/lib/lge/package-map";
+import { trackCampaignEvent } from "@/lib/lge/track-client";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
 import {
   formatMonthlyWithSetup,
@@ -14,8 +18,19 @@ const { packages, termDisclaimer, minTermMonths, launchPromo } =
   PILATES_VERTICAL.pricing;
 const promo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
 
-export function PilatesPricing() {
+interface PilatesPricingProps {
+  campaignRef?: string | null;
+  personalization?: VerticalCampaignPersonalization | null;
+  onPackageSelect?: (interest: VerticalInterestId) => void;
+}
+
+export function PilatesPricing({
+  campaignRef = null,
+  personalization = null,
+  onPackageSelect,
+}: PilatesPricingProps) {
   const viewed = useRef(false);
+  const campaignRecommended = personalization?.recommendedPackage ?? null;
 
   useEffect(() => {
     const el = document.getElementById("pakketten");
@@ -25,21 +40,39 @@ export function PilatesPricing() {
         if (entry?.isIntersecting && !viewed.current) {
           viewed.current = true;
           trackPilatesEvent("pilates_package_view");
+          if (campaignRef) {
+            void trackCampaignEvent(
+              campaignRef,
+              "PACKAGE_SECTION_VIEWED",
+              { section: "pakketten", path: "/pilates-studios" },
+              `PACKAGE_SECTION_VIEWED:${campaignRef}`,
+            );
+          }
         }
       },
       { threshold: 0.25 },
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [campaignRef]);
 
   return (
     <section
       id="pakketten"
-      className="border-b border-slate-200 bg-[#f3f7fb]"
+      className="relative overflow-hidden border-b border-slate-200 bg-slate-50"
       aria-labelledby="pilates-pricing-heading"
     >
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-45"
+        aria-hidden
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,87,34,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,87,34,0.045) 1px, transparent 1px)",
+          backgroundSize: "36px 36px",
+        }}
+      />
+
+      <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <Reveal>
           <div className="flex flex-wrap items-center gap-2">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
@@ -61,7 +94,10 @@ export function PilatesPricing() {
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             Drie treden. Zelfde partner. Jij kiest hoe ver je digitaal wilt
-            gaan. De meeste studio&apos;s landen op Local Growth.
+            gaan.
+            {campaignRecommended
+              ? " Op basis van jullie website en lokale groeikansen ligt één pakket het dichtst bij."
+              : " De meeste studio's landen op Local Growth."}
           </p>
           {promo ? (
             <p className="mt-3 text-sm font-semibold text-slate-800">
@@ -82,8 +118,10 @@ export function PilatesPricing() {
             <span key={p.id} className="inline-flex items-center gap-2">
               <span
                 className={
-                  p.recommended
-                    ? "rounded-full bg-slate-900 px-3 py-1 text-white"
+                  (campaignRecommended
+                    ? packageKeyToInterest(campaignRecommended) === p.id
+                    : p.recommended)
+                    ? "rounded-full bg-slate-900 px-3 py-1 text-white shadow-md"
                     : "rounded-full border border-slate-200 bg-white px-3 py-1"
                 }
               >
@@ -98,27 +136,31 @@ export function PilatesPricing() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-4 lg:mt-12 lg:grid-cols-3 lg:items-stretch lg:gap-5">
+        <div className="mt-10 grid gap-5 lg:mt-12 lg:grid-cols-3 lg:items-stretch">
           {packages.map((pkg, i) => {
             const prices = formatMonthlyWithSetup(
               pkg.monthly,
               pkg.setup,
               launchPromo,
             );
-            const recommended = Boolean(pkg.recommended);
+            const recommended = campaignRecommended
+              ? packageKeyToInterest(campaignRecommended) === pkg.id
+              : Boolean(pkg.recommended);
 
             return (
               <Reveal key={pkg.id} delay={i * 0.06} className="h-full">
                 <article
                   className={
                     recommended
-                      ? "relative flex h-full flex-col bg-slate-900 p-6 text-white shadow-[0_24px_60px_rgba(15,23,42,0.25)] sm:p-7"
-                      : "flex h-full flex-col border border-slate-200 bg-white p-6 sm:p-7"
+                      ? "group relative flex h-full flex-col rounded-3xl bg-slate-900 p-6 text-white shadow-[0_28px_70px_rgba(15,23,42,0.28)] ring-2 ring-[#FF5722]/70 transition duration-300 hover:-translate-y-1 sm:p-7"
+                      : "group flex h-full flex-col rounded-3xl border border-slate-200/90 bg-white p-6 shadow-[0_16px_40px_-28px_rgba(15,23,42,0.2)] transition duration-300 hover:-translate-y-1 hover:border-[#FF5722]/35 hover:shadow-[0_24px_50px_-24px_rgba(255,87,34,0.25)] sm:p-7"
                   }
                 >
                   {recommended ? (
-                    <span className="absolute -top-3 left-6 bg-[#FF5722] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
-                      Meest gekozen
+                    <span className="absolute -top-3 left-6 rounded-full bg-[#FF5722] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-white shadow-lg">
+                      {campaignRecommended
+                        ? "Aanbevolen voor jullie"
+                        : "Meest gekozen"}
                     </span>
                   ) : null}
 
@@ -147,8 +189,8 @@ export function PilatesPricing() {
                   <div
                     className={
                       recommended
-                        ? "mt-6 border-y border-white/10 py-5"
-                        : "mt-6 border-y border-slate-100 py-5"
+                        ? "mt-6 rounded-2xl border border-white/10 bg-white/5 px-4 py-5"
+                        : "mt-6 rounded-2xl border border-slate-100 bg-slate-50 px-4 py-5"
                     }
                   >
                     <p className="text-3xl font-extrabold tracking-tight">
@@ -205,7 +247,7 @@ export function PilatesPricing() {
                     {pkg.inclusions.slice(0, 6).map((item) => (
                       <li key={item} className="flex gap-2">
                         <span
-                          className="mt-1.5 size-1 shrink-0 rounded-full bg-[#FF5722]"
+                          className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#FF5722]"
                           aria-hidden
                         />
                         <span>{item}</span>
@@ -220,15 +262,22 @@ export function PilatesPricing() {
 
                   <a
                     href="#aanvraag"
-                    onClick={() =>
+                    onClick={() => {
                       trackPilatesEvent("pilates_package_select", {
                         package: pkg.id,
-                      })
-                    }
+                      });
+                      onPackageSelect?.(pkg.id);
+                      const key = packageIdToKey(pkg.id);
+                      if (campaignRef && key) {
+                        void trackCampaignEvent(campaignRef, "PACKAGE_SELECTED", {
+                          package: key,
+                        });
+                      }
+                    }}
                     className={
                       recommended
-                        ? "mt-8 inline-flex w-full items-center justify-center rounded-2xl bg-[#FF5722] px-5 py-3.5 text-sm font-bold text-white transition hover:bg-[#e64a19]"
-                        : "mt-8 inline-flex w-full items-center justify-center rounded-2xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-bold text-slate-900 transition hover:border-[#FF5722] hover:text-[#FF5722]"
+                        ? "mt-8 inline-flex w-full items-center justify-center rounded-2xl bg-[#FF5722] px-5 py-3.5 text-sm font-bold text-white shadow-[0_12px_28px_rgba(255,87,34,0.35)] transition hover:bg-[#e64a19]"
+                        : "mt-8 inline-flex w-full items-center justify-center rounded-2xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-bold text-slate-900 transition group-hover:border-[#FF5722] group-hover:text-[#FF5722]"
                     }
                   >
                     {pkg.ctaLabel}
@@ -239,7 +288,7 @@ export function PilatesPricing() {
           })}
         </div>
 
-        <details className="mt-8 border border-slate-200 bg-white p-5 text-sm text-slate-600">
+        <details className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-600 shadow-sm">
           <summary className="cursor-pointer font-bold text-slate-900">
             Alles wat erin zit, per pakket
           </summary>

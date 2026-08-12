@@ -27,7 +27,7 @@ const PHASES = [
     icon: CalendarCheck,
     kicker: "Boeken",
     title: "Klik wordt een plek in het rooster.",
-    body: "Koppeling met je huidige systeem, branded app of maatwerk. Wat past bij budget en proces. WhatsApp is geen boekingssysteem.",
+    body: "Koppeling met je huidige systeem, branded app of maatwerk. Wat past bij budget en proces. Echt boeken, niet eindeloos heen-en-weer appen.",
     example: "Proefles of membership",
   },
   {
@@ -107,7 +107,7 @@ export function PilatesCompleteFlow() {
             return (
               <li key={phase.id}>
                 <Reveal delay={index * 0.07} className="h-full">
-                  <article className="relative flex h-full flex-col bg-[#f7fafc] p-5 ring-1 ring-slate-200/90 transition hover:bg-white hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)] hover:ring-[#FF5722]/35 sm:p-6">
+                  <article className="relative flex h-full flex-col rounded-3xl bg-[#f7fafc] p-5 ring-1 ring-slate-200/90 transition hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)] hover:ring-[#FF5722]/35 sm:p-6">
                     <div className="relative z-10 flex size-11 items-center justify-center rounded-2xl bg-white text-[#FF5722] shadow-sm ring-1 ring-slate-200">
                       <Icon className="size-5" aria-hidden />
                     </div>

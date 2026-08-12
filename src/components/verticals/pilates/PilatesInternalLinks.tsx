@@ -30,7 +30,7 @@ export function PilatesInternalLinks() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="group flex h-full items-start justify-between gap-3 border border-slate-200 bg-[#f7fafc] px-4 py-4 transition hover:border-[#FF5722]/40 hover:bg-white"
+                className="group flex h-full items-start justify-between gap-3 rounded-2xl border border-slate-200 bg-[#f7fafc] px-4 py-4 transition hover:-translate-y-0.5 hover:border-[#FF5722]/40 hover:bg-white hover:shadow-[0_12px_28px_-18px_rgba(15,23,42,0.2)]"
               >
                 <span>
                   <span className="block text-sm font-extrabold tracking-tight text-slate-900 group-hover:text-[#FF5722]">

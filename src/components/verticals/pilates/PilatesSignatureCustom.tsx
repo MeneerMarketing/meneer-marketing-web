@@ -2,12 +2,22 @@
 
 import { Reveal } from "@/components/effects/Reveal";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
+import { packageIdToKey } from "@/lib/lge/package-map";
+import { trackCampaignEvent } from "@/lib/lge/track-client";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
 import { formatVerticalMoney } from "@/lib/verticals/format-price";
 
 const sig = PILATES_VERTICAL.pricing.signatureCustom;
 
-export function PilatesSignatureCustom() {
+interface PilatesSignatureCustomProps {
+  campaignRef?: string | null;
+  onSelect?: () => void;
+}
+
+export function PilatesSignatureCustom({
+  campaignRef = null,
+  onSelect,
+}: PilatesSignatureCustomProps) {
   return (
     <section
       id="signature-custom"
@@ -43,7 +53,7 @@ export function PilatesSignatureCustom() {
                 {sig.bullets.map((b) => (
                   <li
                     key={b}
-                    className="border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200"
+                    className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200 transition hover:border-[#FF5722]/40 hover:bg-white/10"
                   >
                     {b}
                   </li>
@@ -51,7 +61,7 @@ export function PilatesSignatureCustom() {
               </ul>
             </div>
 
-            <div className="shrink-0 border border-white/15 bg-white/5 p-6 backdrop-blur-sm lg:min-w-[240px] lg:text-right">
+            <div className="shrink-0 rounded-3xl border border-white/15 bg-white/5 p-6 backdrop-blur-sm lg:min-w-[240px] lg:text-right">
               <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                 Vanaf
               </p>
@@ -64,7 +74,16 @@ export function PilatesSignatureCustom() {
               <p className="mt-1 text-sm text-slate-400">eenmalig · from scratch</p>
               <a
                 href="#aanvraag"
-                onClick={() => trackPilatesEvent("pilates_custom_click")}
+                onClick={() => {
+                  trackPilatesEvent("pilates_custom_click");
+                  onSelect?.();
+                  const key = packageIdToKey("signature-custom");
+                  if (campaignRef && key) {
+                    void trackCampaignEvent(campaignRef, "PACKAGE_SELECTED", {
+                      package: key,
+                    });
+                  }
+                }}
                 className="mt-5 inline-flex w-full items-center justify-center rounded-2xl bg-white px-6 py-3.5 text-sm font-bold text-slate-900 transition hover:bg-orange-50 lg:w-auto"
               >
                 {sig.ctaLabel}

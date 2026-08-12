@@ -81,7 +81,7 @@ export function PilatesLiveDesign() {
                       variant: art.id,
                     })
                   }
-                  className="group flex h-full flex-col border border-white/15 bg-white/[0.04] p-5 transition hover:border-orange-400/50 hover:bg-white/[0.07] sm:p-6"
+                  className="group flex h-full flex-col rounded-3xl border border-white/15 bg-white/[0.04] p-5 transition hover:-translate-y-0.5 hover:border-orange-400/50 hover:bg-white/[0.07] sm:p-6"
                 >
                   <div className="relative mb-5 overflow-hidden rounded-xl border border-white/10 bg-slate-900">
                     <div className="flex items-center gap-1 border-b border-white/10 px-2.5 py-1.5">
