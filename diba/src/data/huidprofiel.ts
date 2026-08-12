@@ -852,6 +852,92 @@ function labelVan<T extends { readonly id: string; readonly label: string }>(
  * "waarschijnlijk". Dat is precies de scheiding waar deze pagina op rust: dit is wat jij
  * vertelt, de meting komt daarna.
  */
+/**
+ * Het profiel als platte tekst, om mee te nemen naar de afspraak.
+ *
+ * WAAROM DIT PLATTE TEKST IS EN GEEN VERZENDKNOP.
+ *
+ * Het profiel staat in de browser van de bezoeker en gaat nergens heen; dat staat zo in
+ * het privacybeleid en in `huidprofiel-opslag.ts`. Een knop die het naar ons stuurt zou dat
+ * omdraaien, en dan is de belofte weg.
+ *
+ * Dus levert deze functie tekst op die de bezoeker zelf kopieert en meestuurt als hij een
+ * afspraak maakt. Hij bepaalt of het verstuurd wordt, wij niet. Dat het via WhatsApp gaat
+ * en niet via een formulier is geen omweg maar het hele punt.
+ *
+ * DE VOLGORDE IS DIE VAN DE BEHANDELKAMER EN NIET DIE VAN DE VRAGENLIJST.
+ *
+ * Eerst waarvoor iemand komt, dan wat er in de weg kan zitten. Dat laatste is waar het om
+ * gaat: het zijn precies de dingen die anders pas aan de balie boven tafel komen.
+ */
+export function intakeTekst(p: Huidprofiel): string {
+  const regels: string[] = ["Mijn huidprofiel van dibaclinics.nl", ""];
+
+  const doelen = p.doelen
+    .map((d) => DOELEN.find((x) => x.id === d)?.label)
+    .filter(Boolean);
+  if (doelen.length > 0) regels.push(`Waarvoor ik kom: ${doelen.join(", ")}`);
+
+  if (p.leeftijd) {
+    regels.push(
+      `Leeftijd: ${LEEFTIJD.find((l) => l.id === p.leeftijd)?.label}`,
+    );
+  }
+  if (p.huidtype) regels.push(`Huidtype: Fitzpatrick ${p.huidtype}`);
+  if (p.herstel) {
+    regels.push(
+      `Hersteltijd die ik heb: ${HERSTELRUIMTE.find((h) => h.id === p.herstel)?.label}`,
+    );
+  }
+  if (p.conditie) {
+    regels.push(
+      `Huidconditie: ${HUIDCONDITIES.find((c) => c.id === p.conditie)?.label}`,
+    );
+  }
+  if (p.gevoeligheid) {
+    regels.push(
+      `Gevoeligheid: ${GEVOELIGHEID.find((g) => g.id === p.gevoeligheid)?.label}`,
+    );
+  }
+
+  const gebruikt = p.gebruikt
+    .filter((g) => g !== "niets")
+    .map((g) => GEBRUIK.find((x) => x.id === g)?.label)
+    .filter(Boolean);
+  if (gebruikt.length > 0) {
+    regels.push(`Wat ik nu gebruik: ${gebruikt.join(", ")}`);
+  }
+
+  const situatie = p.situatie
+    .filter((s) => s !== "geen")
+    .map((s) => SITUATIE.find((x) => x.id === s)?.label)
+    .filter(Boolean);
+  const historie = p.voorgeschiedenis
+    .filter((v) => v !== "geen")
+    .map((v) => VOORGESCHIEDENIS.find((x) => x.id === v)?.label)
+    .filter(Boolean);
+  const bijzonder = [...situatie, ...historie];
+  if (bijzonder.length > 0) {
+    regels.push(`Speelt er nu: ${bijzonder.join(", ")}`);
+  }
+
+  const melden = meldPunten(p);
+  if (melden.length > 0) {
+    /* De meldpunten zijn geschreven als tekst aan de bezoeker ("je gebruikt retinol").
+       In een bericht dat diezelfde bezoeker naar de kliniek stuurt, klopt die richting
+       niet. Het kopje zegt daarom expliciet dat dit de notities van de site zijn en
+       niet zijn eigen woorden; dat is goedkoper dan elke regel dubbel schrijven. */
+    regels.push("", "Wat de site aangaf om te bespreken:");
+    for (const m of melden) regels.push(`- ${m}`);
+  }
+
+  regels.push(
+    "",
+    "Dit is wat ik zelf heb ingevuld, geen meting. Ik weet dat er niets vaststaat tot er gemeten is.",
+  );
+  return regels.join("\n");
+}
+
 export function profielSamenvatting(p: Huidprofiel): readonly string[] {
   const zinnen: string[] = [];
 

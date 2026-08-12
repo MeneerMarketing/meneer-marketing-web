@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Meeneemkaart from "@/components/intake/Meeneemkaart";
 import Uurtijdlijn from "@/components/intake/Uurtijdlijn";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
@@ -127,6 +128,18 @@ export default function IntakePage() {
       </section>
 
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+
+      {/* ── Je huidprofiel meenemen ──
+          Hier hield de keten op. Je kon op /huidprofiel een profiel opbouwen dat klopte,
+          op "plan Behandeling Nul" klikken, en dan kwam je hier op een algemene uitleg die
+          niets van je wist. Deze kaart maakt er één ding van: wat je meeneemt staat er, en
+          je kopieert het zelf. Versturen doen wij niet, want het profiel hoort in jouw
+          browser te blijven. */}
+      <section className="px-5 pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+        <div className="mx-auto">
+          <Meeneemkaart />
+        </div>
+      </section>
 
       {/* In-paginanavigatie, dezelfde vorm als op de huidprobleempagina's. */}
       <nav
