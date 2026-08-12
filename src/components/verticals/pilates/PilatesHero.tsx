@@ -7,7 +7,6 @@ import { ArrowUpRight, Search } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { Magnetic } from "@/components/effects/Magnetic";
 import { LivingCloudGrid } from "@/components/effects/LivingCloudGrid";
-import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
 import {
@@ -19,21 +18,10 @@ const cfg = PILATES_VERTICAL;
 const fromMonthly = formatVerticalMoney(cfg.pricing.packages[0]!.monthly);
 const launchPromo = getActiveLaunchPromo(cfg.pricing);
 
-interface PilatesHeroProps {
-  personalization: VerticalCampaignPersonalization | null;
-}
-
-export function PilatesHero({ personalization }: PilatesHeroProps) {
+export function PilatesHero() {
   useEffect(() => {
     trackPilatesEvent("pilates_page_view");
   }, []);
-
-  const cityLine =
-    personalization?.businessName && personalization?.city
-      ? `Voor ${personalization.businessName} in ${personalization.city}`
-      : personalization?.city
-        ? `Voor Pilates studio's in ${personalization.city}`
-        : null;
 
   return (
     <header className="relative isolate overflow-hidden border-b border-slate-200 bg-[#0c1222] text-white">
@@ -64,10 +52,6 @@ export function PilatesHero({ personalization }: PilatesHeroProps) {
               </span>
             ) : null}
           </div>
-
-          {cityLine ? (
-            <p className="mt-4 text-sm font-medium text-sky-200/90">{cityLine}</p>
-          ) : null}
 
           <h1 className="mt-5 text-[2.4rem] font-extrabold leading-[1.02] tracking-tight text-balance sm:text-5xl lg:text-[3.45rem] lg:leading-[1.0]">
             Ze zoeken Pilates.
@@ -127,7 +111,7 @@ export function PilatesHero({ personalization }: PilatesHeroProps) {
 
         <Reveal delay={0.1} className="relative">
           <div className="relative mx-auto w-full max-w-[420px] lg:max-w-none">
-            <div className="absolute -left-2 top-6 z-20 hidden rotate-[-6deg] sm:block lg:-left-8">
+            <div className="absolute -left-2 top-14 z-20 hidden rotate-[-6deg] sm:block lg:-left-8 lg:top-16">
               <div className="flex items-center gap-2 rounded-xl border border-white/15 bg-slate-900/90 px-3 py-2 shadow-xl backdrop-blur-md">
                 <Search className="size-3.5 text-sky-300" aria-hidden />
                 <span className="text-xs font-semibold text-slate-100">
