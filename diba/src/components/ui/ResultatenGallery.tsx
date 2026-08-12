@@ -7,6 +7,17 @@ import {
   figmaSectionTight,
 } from "@/lib/figma-inner-layout";
 
+/**
+ * NIET MEER IN GEBRUIK, EN NIET ZOMAAR WEER AANZETTEN.
+ *
+ * /resultaten draaide hierop en toonde drie dev-placeholders. Die pagina laat nu zien
+ * waarom een voor-en-na-foto zonder protocol niets bewijst, en krijgt pas beelden zodra er
+ * echte zijn (zie `src/app/resultaten/page.tsx` en `src/data/fotobewijs.ts`).
+ *
+ * De placeholders hieronder bevatten `[COPY-NODIG]` en `[BEELD-NODIG]`. Die worden door
+ * `publicCopy` afgevangen in de bijschriften, maar niet in de alt-teksten. Wie dit
+ * component opnieuw inzet zonder echte data zet dus vlaggen op het scherm.
+ */
 export type ResultaatItem = {
   id: string;
   behandeling: string;
