@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ProfielBouwer from "@/components/huidprofiel/ProfielBouwer";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import { PROFIEL_ONDERDELEN, telwoord } from "@/data/huidprofiel";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 
 /**
- * /huidprofiel — je huid in acht stappen.
+ * /huidprofiel — je huid in negen stappen.
  *
  * Waarom dit een eigen pagina is: wat hier gevraagd wordt zijn geen voorkeuren maar feiten
  * die bepalen wat er kán. Retinol, zwangerschap, een gebruinde huid, isotretinoïne,
@@ -22,7 +23,7 @@ import { DIBA_SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Je huidprofiel",
   description:
-    "Bouw je huidprofiel op in acht stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.",
+    `Bouw je huidprofiel op in ${telwoord(PROFIEL_ONDERDELEN)} stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.`,
 };
 
 export default function HuidprofielPage() {
@@ -58,10 +59,14 @@ export default function HuidprofielPage() {
             <span className="text-[var(--t-muted)]">Je huidprofiel</span>
           </nav>
 
+          {/* Het aantal komt uit PROFIEL_ONDERDELEN en staat hier niet als woord:
+              er kwam een negende vraag bij en de kop bleef "in acht stappen" staan. */}
           <h1 className="diba-display-l mt-8 max-w-[17ch]">
             Je huid,
             <br />
-            <span className="diba-accent">in acht stappen.</span>
+            <span className="diba-accent">
+              in {telwoord(PROFIEL_ONDERDELEN)} stappen.
+            </span>
           </h1>
 
           <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
@@ -78,7 +83,7 @@ export default function HuidprofielPage() {
         </div>
       </section>
 
-      {/* ── De acht stappen ── */}
+      {/* ── De stappen ── */}
       <section className="bg-[var(--g-025)] px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <ProfielBouwer />

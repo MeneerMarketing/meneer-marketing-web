@@ -8,6 +8,7 @@ import {
   GEVOELIGHEID,
   HERSTELRUIMTE,
   HUIDCONDITIES,
+  LEEFTIJD,
   LEEG_PROFIEL,
   SCAN_ASSEN,
   SITUATIE,
@@ -17,6 +18,7 @@ import {
   type DoelId,
   type FitzpatrickId,
   type GebruikId,
+  type LeeftijdId,
   type GevoeligheidId,
   type HerstelId,
   type Huidprofiel,
@@ -74,6 +76,11 @@ function lees(): Huidprofiel {
       doelen: Array.isArray(p.doelen)
         ? p.doelen.filter((d): d is DoelId => DOELEN.some((x) => x.id === d))
         : [],
+      /* Profielen van vóór de leeftijdsvraag missen dit veld. Die komen hier op null
+         uit en blijven verder gewoon werken; de vraag staat dan open. */
+      leeftijd: LEEFTIJD.some((l) => l.id === p.leeftijd)
+        ? (p.leeftijd as LeeftijdId)
+        : null,
       huidtype: FITZPATRICK_TYPES.some((f) => f.id === p.huidtype)
         ? (p.huidtype as FitzpatrickId)
         : null,
@@ -215,6 +222,10 @@ export function useHuidprofiel() {
     });
   }, []);
 
+  const zetLeeftijd = useCallback((l: LeeftijdId) => {
+    zet({ ...huidig, leeftijd: huidig.leeftijd === l ? null : l });
+  }, []);
+
   const zetHuidtype = useCallback((t: FitzpatrickId | null) => {
     zet({ ...huidig, huidtype: huidig.huidtype === t ? null : t });
   }, []);
@@ -256,6 +267,7 @@ export function useHuidprofiel() {
   return {
     profiel,
     wisselDoel,
+    zetLeeftijd,
     zetHuidtype,
     zetHerstel,
     zetConditie,

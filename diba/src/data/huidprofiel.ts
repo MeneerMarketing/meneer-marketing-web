@@ -32,7 +32,34 @@ export type { FitzpatrickId };
 /* ══ De korte vragen ══════════════════════════════════════════════════════ */
 
 /** Wat iemand wil veranderen, in gewone woorden en niet in vaktermen. */
+/**
+ * Wat iemand wil veranderen.
+ *
+ * DRIE DOELEN ONTBRAKEN, EN DAT MAAKTE DE UITKOMST ONWAAR.
+ *
+ * Er stonden er zes. Daardoor konden drie behandelingen uit het aanbod nooit matchen: ze
+ * kwamen bij iedereen uit op "werkt niet op wat jij wil veranderen", en dat is een bewering
+ * die niet klopte. Het probleem zat niet in die behandelingen maar hier.
+ *
+ *   - `acne` bestond niet, terwijl acne de meest voorkomende reden is om naar een
+ *     huidkliniek te gaan. Beide acnetrajecten kwamen daardoor hooguit op "deels" uit, via
+ *     textuur. Textuur gaat over littekens ná acne, niet over de puistjes zelf.
+ *   - `haaruitval` bestond niet. XL Hair is een traject tegen dunner wordend haar, en het
+ *     enige haar-doel dat er was ging juist over haar dat weg moet. Precies het omgekeerde.
+ *   - `oneffenheden` bestond niet, dus fibromen verwijderen hoorde nergens bij.
+ *
+ * Het oude label "Haargroei" was daarbij dubbelzinnig: dat leest als een doel om haar te
+ * krijgen. Nu staat er wat het is.
+ *
+ * [MEDISCHE-CHECK-ROJDA] de indeling, en dan vooral of actieve acne en acnelittekens hier
+ * terecht uit elkaar getrokken zijn.
+ */
 export const DOELEN = [
+  {
+    id: "acne",
+    label: "Puistjes en acne",
+    zin: "Actieve onzuiverheden, ontstoken plekjes",
+  },
   {
     id: "textuur",
     label: "Oneffen textuur",
@@ -53,7 +80,21 @@ export const DOELEN = [
     label: "Fijne lijntjes",
     zin: "Beginnende rimpeltjes, verslapping",
   },
-  { id: "haar", label: "Haargroei", zin: "Ongewenste haren, waar dan ook" },
+  {
+    id: "haar",
+    label: "Ongewenste haargroei",
+    zin: "Haar dat je liever kwijt bent, waar dan ook",
+  },
+  {
+    id: "haaruitval",
+    label: "Dunner wordend haar",
+    zin: "Haaruitval op je hoofd, meer haar in de borstel",
+  },
+  {
+    id: "oneffenheden",
+    label: "Bultjes en steelwratjes",
+    zin: "Kleine uitsteeksels die je weg wil hebben",
+  },
   {
     id: "onbekend",
     label: "Weet ik niet",
@@ -61,6 +102,31 @@ export const DOELEN = [
   },
 ] as const;
 export type DoelId = (typeof DOELEN)[number]["id"];
+
+/**
+ * Leeftijd, en waarom die er alleen als twee vakjes staat.
+ *
+ * Er zijn twee acnetrajecten in het aanbod en het enige verschil is de leeftijd: het
+ * jongerentraject is voor 18 jaar en jonger. Zonder deze vraag kreeg een veertigjarige het
+ * jongerentraject aangeraden en een zestienjarige het volwassentraject. Allebei fout, en
+ * allebei onzichtbaar.
+ *
+ * Meer banden dan deze twee zou betekenen dat we gegevens vragen die we nergens voor
+ * gebruiken, en dat is precies wat dataminimalisatie verbiedt.
+ */
+export const LEEFTIJD = [
+  {
+    id: "tot-18",
+    label: "18 of jonger",
+    zin: "Er is een traject dat hier speciaal op gemaakt is",
+  },
+  {
+    id: "18-plus",
+    label: "Ouder dan 18",
+    zin: "Het hele aanbod staat open",
+  },
+] as const;
+export type LeeftijdId = (typeof LEEFTIJD)[number]["id"];
 
 /** Hoeveel je erna kunt hebben. De vraag die de rest van de branche niet stelt. */
 export const HERSTELRUIMTE = [
@@ -131,20 +197,32 @@ export const GEBRUIK = [
 ] as const;
 export type GebruikId = (typeof GEBRUIK)[number]["id"];
 
+/**
+ * `inZin` staat er los van `label` omdat die twee een ander werk doen. Op een vakje leest
+ * "Ik ben zwanger" natuurlijk, maar in een zin die de bezoeker aanspreekt werd dat "dat
+ * ligt aan één ding: ik ben zwanger". Dat stond er letterlijk tot ik het uitrekende.
+ */
 export const SITUATIE = [
-  { id: "zwanger", label: "Ik ben zwanger", zin: "" },
-  { id: "borstvoeding", label: "Ik geef borstvoeding", zin: "" },
+  { id: "zwanger", label: "Ik ben zwanger", zin: "", inZin: "je zwangerschap" },
+  {
+    id: "borstvoeding",
+    label: "Ik geef borstvoeding",
+    zin: "",
+    inZin: "dat je borstvoeding geeft",
+  },
   {
     id: "gebruind",
     label: "Mijn huid is nu gebruind",
     zin: "Zon of zonnebank",
+    inZin: "je gebruinde huid",
   },
   {
     id: "zon-op-komst",
     label: "Binnenkort veel zon",
     zin: "Vakantie of wintersport",
+    inZin: "de zon die eraan komt",
   },
-  { id: "geen", label: "Niets van dit alles", zin: "" },
+  { id: "geen", label: "Niets van dit alles", zin: "", inZin: "" },
 ] as const;
 export type SituatieId = (typeof SITUATIE)[number]["id"];
 
@@ -196,6 +274,7 @@ export type Huidscan = {
 
 export type Huidprofiel = {
   readonly doelen: readonly DoelId[];
+  readonly leeftijd: LeeftijdId | null;
   readonly huidtype: FitzpatrickId | null;
   readonly herstel: HerstelId | null;
   readonly scan: Huidscan | null;
@@ -208,6 +287,7 @@ export type Huidprofiel = {
 
 export const LEEG_PROFIEL: Huidprofiel = {
   doelen: [],
+  leeftijd: null,
   huidtype: null,
   herstel: null,
   scan: null,
@@ -221,6 +301,7 @@ export const LEEG_PROFIEL: Huidprofiel = {
 export function profielIsLeeg(p: Huidprofiel): boolean {
   return (
     p.doelen.length === 0 &&
+    p.leeftijd === null &&
     p.huidtype === null &&
     p.herstel === null &&
     p.scan === null &&
@@ -240,12 +321,40 @@ export function ingevuld(p: Huidprofiel): number {
 }
 
 /** Hoe compleet het uitgebreide profiel is. Stuurt de balk op /huidprofiel. */
-export const PROFIEL_ONDERDELEN = 8;
+export const PROFIEL_ONDERDELEN = 9;
+
+/**
+ * Het aantal voluit, voor in een kop.
+ *
+ * De kop stond hardgecodeerd op "in acht stappen" en bleef daar staan toen er een negende
+ * vraag bij kwam. Nu volgt hij het getal, maar wel als woord: "in 9 stappen" leest als een
+ * formulier en niet als een zin.
+ */
+const TELWOORDEN = [
+  "nul",
+  "één",
+  "twee",
+  "drie",
+  "vier",
+  "vijf",
+  "zes",
+  "zeven",
+  "acht",
+  "negen",
+  "tien",
+  "elf",
+  "twaalf",
+] as const;
+
+export function telwoord(n: number): string {
+  return TELWOORDEN[n] ?? String(n);
+}
 
 export function compleetheid(p: Huidprofiel): number {
   return (
     (p.scan ? 1 : 0) +
     (p.doelen.length > 0 ? 1 : 0) +
+    (p.leeftijd ? 1 : 0) +
     (p.huidtype ? 1 : 0) +
     (p.herstel ? 1 : 0) +
     (p.conditie ? 1 : 0) +
@@ -284,30 +393,42 @@ export function hoeLangGeleden(iso: string): string {
  */
 const DOELMATRIX: Record<string, Partial<Record<DoelId, "vol" | "deels">>> = {
   huidanalyse: {
+    acne: "deels",
     textuur: "deels",
     kleur: "deels",
     roodheid: "deels",
     lijntjes: "deels",
     haar: "deels",
+    haaruitval: "deels",
+    oneffenheden: "deels",
     onbekend: "vol",
   },
-  hydrafacial: { textuur: "deels" },
+  hydrafacial: { textuur: "deels", acne: "deels" },
   oxygeneo: { textuur: "deels" },
+  /* Dermaplaning haalt donshaartjes weg, maar dat is geen ontharing: het groeit
+     identiek terug. Daarom bewust géén koppeling met het haar-doel; die zou een
+     verwachting wekken die de behandeling niet waarmaakt. */
   dermaplaning: { textuur: "deels" },
   coolift: { lijntjes: "deels" },
-  peelings: { kleur: "vol", textuur: "deels", lijntjes: "deels" },
+  peelings: { kleur: "vol", acne: "vol", textuur: "deels", lijntjes: "deels" },
+  /* Microneedling mikt op de laag waar structuur zit; acnelittekens vallen daarom onder
+     textuur. Actieve, ontstoken acne staat er bewust niet bij. */
   skinpen: { textuur: "vol", lijntjes: "vol" },
   "dermapen-4": { textuur: "vol", lijntjes: "vol" },
   skinboosters: { lijntjes: "vol", kleur: "deels" },
   fotona: { lijntjes: "vol", textuur: "vol" },
   "nordlys-ipl": { roodheid: "vol", kleur: "vol" },
-  "lumi-8-led": { roodheid: "deels", lijntjes: "deels" },
+  "lumi-8-led": { roodheid: "deels", lijntjes: "deels", acne: "deels" },
   "cosmelan-dermamelan": { kleur: "vol" },
   "happy-intim": { kleur: "vol" },
   laserontharing: { haar: "vol" },
-  "acne-traject": { textuur: "deels" },
+  /* Stond hier niet, en kwam daardoor bij iedereen uit op "past niet". */
+  "xl-hair": { haaruitval: "vol" },
+  "acne-traject": { acne: "vol", textuur: "deels" },
+  "jongeren-acne-traject": { acne: "vol", textuur: "deels" },
   littekentherapie: { textuur: "vol" },
-  voedingsintolerantietest: { onbekend: "deels" },
+  fibromen: { oneffenheden: "vol" },
+  voedingsintolerantietest: { onbekend: "deels", acne: "deels" },
 };
 
 /** Wat een behandeling aan hersteltijd vraagt, op dezelfde schaal als de vraag. */
@@ -331,6 +452,9 @@ const HERSTELVRAAG: Record<string, HerstelId> = {
   "cosmelan-dermamelan": "dagen",
   "happy-intim": "dagen",
   "acne-traject": "dagen",
+  /* Stond hier niet en viel dus stilzwijgend terug op "dag", terwijl het
+     volwassentraject op "dagen" staat. Zelfde traject, andere leeftijd. */
+  "jongeren-acne-traject": "dagen",
   littekentherapie: "dagen",
 };
 
@@ -349,6 +473,15 @@ const BLOKKADES: readonly {
   readonly wanneer: (p: Huidprofiel) => boolean;
   readonly slugs: readonly string[];
   readonly reden: string;
+  /**
+   * Hoort dit thuis in "meld dit in de intake"?
+   *
+   * Standaard wel: bijna elke blokkade is iets wat de therapeut moet weten. De
+   * leeftijdsregels niet, want die zijn geen bijzonderheid maar een routering. Die stonden
+   * er wel, en dan las je bij je meldpunten "op jouw leeftijd loopt dit via het
+   * jongerentraject" alsof je dat aan de balie moest gaan vertellen.
+   */
+  readonly melden?: boolean;
 }[] = [
   {
     wanneer: (p) => p.situatie.includes("gebruind"),
@@ -394,6 +527,23 @@ const BLOKKADES: readonly {
     slugs: ["skinpen", "dermapen-4", "fibromen"],
     reden:
       "Bij neiging tot keloïd kan een prikkel in het bindweefsel juist een dik litteken geven.",
+  },
+  /* De twee acnetrajecten verschillen alleen in leeftijd. Zonder deze twee regels kreeg
+     een veertigjarige het jongerentraject aangeraden en een zestienjarige het
+     volwassentraject, en dat was aan niets te zien. */
+  {
+    wanneer: (p) => p.leeftijd === "18-plus",
+    slugs: ["jongeren-acne-traject"],
+    reden:
+      "Dit traject is gemaakt voor 18 jaar en jonger. Voor jou is het gewone acnetraject de juiste.",
+    melden: false,
+  },
+  {
+    wanneer: (p) => p.leeftijd === "tot-18",
+    slugs: ["acne-traject"],
+    reden:
+      "Op jouw leeftijd loopt dit via het jongerentraject, dat op dezelfde klacht is gemaakt maar op jouw huid is afgestemd.",
+    melden: false,
   },
 ];
 
@@ -548,6 +698,100 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
 }
 
 /**
+ * Waarom er niets volledig past, en wat daaraan te doen is.
+ *
+ * WAAROM DIT BESTAAT.
+ *
+ * Bij het doorrekenen van echte profielen bleken er twee te zijn die nul volledige matches
+ * opleveren, allebei terecht: wie ongewenste haargroei wil aanpakken maar net gebruind is,
+ * en wie pigment wil aanpakken maar geen enkele hersteltijd heeft. In beide gevallen kreeg
+ * je een lege lijst te zien. Dat is technisch juist en in de praktijk waardeloos: een leeg
+ * scherm vertelt niet dat er één ding in de weg staat en dat het volgende maand wel kan.
+ *
+ * Dus wordt hier uitgezocht wélke voorwaarde het is. Dat gebeurt door de matcher opnieuw te
+ * draaien met precies één belemmering weggenomen. Verschijnt er dan wel iets, dan wéten we
+ * dat dat de blokkade was en hoeven we het niet te gokken.
+ *
+ * Het onderscheid tussen "niet nu" en "niet voor jou" is het belangrijkste dat deze functie
+ * maakt. Gebruind zijn gaat over, een neiging tot keloïd niet.
+ */
+export type GeenMatch = {
+  readonly soort: "tijdelijk" | "hersteltijd" | "niets-in-aanbod";
+  readonly kop: string;
+  readonly zin: string;
+  /** Wat er zou veranderen. Zonder dit is het alsnog een leeg scherm. */
+  readonly wat: string;
+  /** Wat er dan wel zou passen. Concreet, want een belofte zonder naam is vaag. */
+  readonly danWel: readonly string[];
+};
+
+/** Situaties die vanzelf overgaan. De rest is een eigenschap en geen moment. */
+const TIJDELIJK: readonly SituatieId[] = [
+  "gebruind",
+  "zon-op-komst",
+  "zwanger",
+  "borstvoeding",
+];
+
+export function waaromNiets(p: Huidprofiel): GeenMatch | null {
+  const nu = maakMatches(p);
+  if (nu.some((m) => m.oordeel === "past")) return null;
+  if (p.doelen.length === 0) return null;
+
+  const namen = (ms: readonly Match[]) =>
+    ms.filter((m) => m.oordeel === "past").map((m) => m.behandeling.naam);
+
+  /* 1. Een tijdelijke situatie. Die weegt het zwaarst, want hij gaat over. */
+  const tijdelijk = p.situatie.filter((s) => TIJDELIJK.includes(s));
+  if (tijdelijk.length > 0) {
+    const zonder = namen(
+      maakMatches({
+        ...p,
+        situatie: p.situatie.filter((s) => !TIJDELIJK.includes(s)),
+      }),
+    );
+    if (zonder.length > 0) {
+      const labels = tijdelijk.map(
+        (s) => SITUATIE.find((x) => x.id === s)?.inZin ?? s,
+      );
+      return {
+        soort: "tijdelijk",
+        kop: "Niet nu, maar wel straks",
+        zin: `Er is nu niets dat volledig past, en dat ligt aan één ding: ${labels.join(" en ")}. Dat is een moment en geen eigenschap.`,
+        wat: "Zodra dat voorbij is, verandert deze uitkomst vanzelf. Je hoeft er verder niets voor te doen.",
+        danWel: zonder,
+      };
+    }
+  }
+
+  /* 2. De hersteltijd. Perfect passend maar niet in te plannen is geen match. */
+  if (p.herstel && p.herstel !== "dagen") {
+    const zonder = namen(maakMatches({ ...p, herstel: "dagen" }));
+    if (zonder.length > 0) {
+      const gaf =
+        HERSTELRUIMTE.find((h) => h.id === p.herstel)?.label.toLowerCase() ??
+        "geen";
+      return {
+        soort: "hersteltijd",
+        kop: "Alleen de hersteltijd zit in de weg",
+        zin: `Voor wat jij wil veranderen bestaat er wel iets, maar niet binnen de ruimte die je opgaf: je koos ${gaf} hersteltijd.`,
+        wat: "Kun je het rond een weekend plannen, dan komt er wel iets vrij. Kan dat niet, dan is dat een eerlijk antwoord en geen reden om iets lichters te boeken dat niet gaat werken.",
+        danWel: zonder,
+      };
+    }
+  }
+
+  /* 3. Dan ligt het niet aan een voorwaarde maar aan het aanbod. */
+  return {
+    soort: "niets-in-aanbod",
+    kop: "Hier ligt het antwoord niet",
+    zin: "Voor wat jij wil veranderen heeft deze kliniek geen behandeling die er volledig op mikt.",
+    wat: "Dat is geen afwijzing maar een doorverwijzing. In de intake kijken we mee waar je wel terechtkunt, en dat kost je niets.",
+    danWel: [],
+  };
+}
+
+/**
  * Alles wat je in de intake moet melden, ongeacht welke behandeling het wordt.
  *
  * Dit is de lijst die deze pagina het meest waard maakt: hij bestaat uit dingen die in de
@@ -556,7 +800,10 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
 export function meldPunten(p: Huidprofiel): readonly string[] {
   const uniek = new Set<string>();
   for (const l of LET_OP) if (l.wanneer(p)) uniek.add(l.tekst);
-  for (const b of BLOKKADES) if (b.wanneer(p)) uniek.add(b.reden);
+  for (const b of BLOKKADES) {
+    if (b.melden === false) continue;
+    if (b.wanneer(p)) uniek.add(b.reden);
+  }
   return [...uniek];
 }
 

@@ -1,9 +1,10 @@
 "use client";
 
-import Link from "next/link";
+import { useState } from "react";
+import Uitkomst from "@/components/huidprofiel/Uitkomst";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import MiniHuidscan from "@/components/ui/MiniHuidscan";
 import Spinnenweb from "@/components/ui/Spinnenweb";
-import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import {
   aandachtspunten,
   compleetheid,
@@ -15,10 +16,7 @@ import {
   hoeLangGeleden,
   HUIDCONDITIES,
   huidtypeKanttekening,
-  maakMatches,
-  meldPunten,
-  nogNietGemeten,
-  profielSamenvatting,
+  LEEFTIJD,
   PROFIEL_ONDERDELEN,
   SITUATIE,
   VOORGESCHIEDENIS,
@@ -27,7 +25,7 @@ import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
 
 /**
- * De profielpagina: je huid in acht stappen.
+ * De profielpagina: je huid in negen stappen.
  *
  * Waarom dit een eigen pagina is en geen blok op de behandelingenpagina: wat hier gevraagd
  * wordt zijn geen voorkeuren maar feiten die bepalen wat er kán. Retinol, zwangerschap,
@@ -232,20 +230,15 @@ export default function ProfielBouwer() {
     wisselGebruik,
     wisselSituatie,
     wisselVoorgeschiedenis,
+    zetLeeftijd,
     wis,
   } = useHuidprofiel();
 
+  const [scanOpen, setScanOpen] = useState(false);
   const stand = compleetheid(profiel);
-  const matches = maakMatches(profiel);
-  const past = matches.filter((m) => m.oordeel === "past");
-  const kanNiet = matches.filter((m) => m.oordeel === "past-niet");
-  const melden = meldPunten(profiel);
+  /* Alles wat met de uitkomst te maken heeft, staat sinds deze ronde in Uitkomst.tsx.
+     Dit component stelt de vragen; dat component leest ze terug. */
   const kanttekening = huidtypeKanttekening(profiel.huidtype);
-  const samenvatting = profielSamenvatting(profiel);
-  const onbekend = nogNietGemeten(profiel);
-  /* De nulmeting uit de behandelingentabel: prijs en hersteltijd komen daar vandaan
-     en niet uit een tweede plek die kan verlopen. */
-  const nulmeting = behandelingVoorSlug("huidanalyse");
 
   return (
     <div>
@@ -336,28 +329,38 @@ export default function ProfielBouwer() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href="/#huidscan"
-                  className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4"
+                {/* Was een link naar /#huidscan, dus naar de homepage. Je werd van je
+                    eigen profielpagina weggestuurd om stap 1 te kunnen doen, en kwam
+                    daarna op een andere pagina uit. De scan draait nu hier. */}
+                <button
+                  type="button"
+                  onClick={() => setScanOpen((v) => !v)}
+                  aria-expanded={scanOpen}
+                  className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
                 >
-                  Scan opnieuw doen
-                </Link>
+                  {scanOpen ? "Sluit de scan" : "Scan opnieuw doen"}
+                </button>
               </div>
             </div>
           ) : (
-            <div className="rounded-[var(--r-lg)] bg-white p-8">
-              <p className="text-[16px] leading-7 text-[var(--t-body)]">
-                Je hebt de mini-scan nog niet gedaan. Begin daar: het duurt een
-                minuut en het zet meteen twee van de vragen hieronder goed.
+            <div className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8">
+              <p className="max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Begin hier: vier vragen, ongeveer een minuut. Je krijgt je
+                profielschets terug en twee van de vragen hieronder staan daarna
+                meteen goed.
               </p>
-              <Link
-                href="/#huidscan"
-                className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
-              >
-                Naar de mini-scan
-              </Link>
+              <div className="mt-7">
+                <MiniHuidscan />
+              </div>
             </div>
           )}
+
+          {/* Opnieuw scannen, op dezelfde plek en zonder de pagina te verlaten. */}
+          {profiel.scan && scanOpen ? (
+            <div className="mt-4 rounded-[var(--r-lg)] bg-white p-6 sm:p-8">
+              <MiniHuidscan />
+            </div>
+          ) : null}
         </Vraag>
 
         {/* ── 2. Doelen ── */}
@@ -375,9 +378,29 @@ export default function ProfielBouwer() {
           />
         </Vraag>
 
-        {/* ── 3. Huidtype ── */}
+        {/* ── 3. Leeftijd ──
+            Twee vakjes, en dat is geen luiheid: er zijn twee acnetrajecten en het enige
+            verschil is de leeftijd. Zonder deze vraag kreeg een veertigjarige het
+            jongerentraject aangeraden en een zestienjarige het volwassentraject, allebei
+            zonder dat er iets zichtbaar misging. Meer banden vragen zou betekenen dat we
+            gegevens opslaan die we nergens voor gebruiken. */}
         <Vraag
           nummer={3}
+          kop="Hoe oud"
+          accent="ben je?"
+          uitleg="Alleen omdat er een acnetraject bestaat dat speciaal voor 18 jaar en jonger gemaakt is. Verder doen we niets met dit antwoord."
+          klaar={profiel.leeftijd !== null}
+        >
+          <Keuzes
+            opties={LEEFTIJD}
+            actief={profiel.leeftijd ? [profiel.leeftijd] : []}
+            onKies={(id) => zetLeeftijd(id as never)}
+          />
+        </Vraag>
+
+        {/* ── 4. Huidtype ── */}
+        <Vraag
+          nummer={4}
           kop="Welk"
           accent="huidtype?"
           uitleg="Fitzpatrick I tot en met VI. Je type bepaalt niet óf iets kan, maar met welke instellingen."
@@ -422,7 +445,7 @@ export default function ProfielBouwer() {
 
         {/* ── 4. Hersteltijd ── */}
         <Vraag
-          nummer={4}
+          nummer={5}
           kop="Hoeveel"
           accent="hersteltijd?"
           uitleg="De vraag die niemand stelt en die vaak het meest bepaalt. Wie maandag moet werken heeft niets aan een behandeling waar je drie dagen rood van bent."
@@ -449,7 +472,7 @@ export default function ProfielBouwer() {
       <div className="mt-8 space-y-4">
         {/* ── 5. Huidconditie ── */}
         <Vraag
-          nummer={5}
+          nummer={6}
           kop="Hoe voelt je huid"
           accent="meestal?"
           uitleg="Dit stuurt vooral de voorbereiding thuis, en dat is bij een droge huid belangrijker dan de behandeling zelf."
@@ -464,7 +487,7 @@ export default function ProfielBouwer() {
 
         {/* ── 6. Gevoeligheid ── */}
         <Vraag
-          nummer={6}
+          nummer={7}
           kop="Hoe snel"
           accent="reageert hij?"
           uitleg="Bij een huid die snel geïrriteerd raakt wordt met een lagere sterkte begonnen. Dat is geen beperking maar een startpunt."
@@ -480,7 +503,7 @@ export default function ProfielBouwer() {
 
         {/* ── 7. Wat je gebruikt ── */}
         <Vraag
-          nummer={7}
+          nummer={8}
           kop="Wat gebruik je"
           accent="nu op je huid?"
           uitleg="Retinol en zuren moeten voor sommige behandelingen tijdig gepauzeerd worden. Beter nu weten dan aan de balie."
@@ -495,7 +518,7 @@ export default function ProfielBouwer() {
 
         {/* ── 8. Situatie en voorgeschiedenis ── */}
         <Vraag
-          nummer={8}
+          nummer={9}
           kop="Speelt er nog"
           accent="iets anders?"
           uitleg="Zwangerschap, een gebruinde huid of een vakantie op komst bepalen wat er nu kan. De voorgeschiedenis vul je één keer in en blijft staan."
@@ -554,273 +577,7 @@ export default function ProfielBouwer() {
           <span className="diba-accent">voor jouw huid.</span>
         </h2>
 
-        {stand === 0 ? (
-          <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Vul hierboven iets in, dan staat hier meteen je profiel, wat erbij
-            past en wat je in de intake moet melden.
-          </p>
-        ) : (
-          <div className="mt-10 space-y-4">
-            {/* ── 1. Je huid, teruggelezen ── */}
-            <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
-              <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:gap-14">
-                <div className="mx-auto lg:mx-0">
-                  {profiel.scan ? (
-                    <Spinnenweb
-                      waarden={profiel.scan.assen}
-                      metLabels
-                      className="h-[260px] w-[260px]"
-                    />
-                  ) : (
-                    <div className="flex h-[260px] w-[260px] flex-col items-center justify-center rounded-[var(--r-lg)] bg-[var(--g-025)] p-8 text-center">
-                      <DibaLeafMark className="h-9 w-9 text-[var(--g-300)]" />
-                      <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
-                        Doe de mini-scan, dan staat je spinnenweb hier.
-                      </p>
-                    </div>
-                  )}
-                </div>
-
-                <div>
-                  <p className="diba-label text-[var(--t-label)]">
-                    Je huid, zoals jij hem beschrijft
-                  </p>
-                  <div className="mt-5 space-y-3">
-                    {samenvatting.map((z) => (
-                      <p
-                        key={z}
-                        className="max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]"
-                      >
-                        {z}
-                      </p>
-                    ))}
-                  </div>
-
-                  {/* Wat je moet melden hoort bij je profiel en niet bij het aanbod. */}
-                  {melden.length > 0 ? (
-                    <div className="mt-7 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
-                      <p className="diba-label text-[var(--t-label)]">
-                        Meld dit in de intake · {melden.length}
-                      </p>
-                      <ul className="mt-4 space-y-3">
-                        {melden.map((m) => (
-                          <li
-                            key={m}
-                            className="flex gap-3 text-[15px] leading-7 text-[var(--t-body)]"
-                          >
-                            <DibaLeafMark className="mt-1.5 h-3.5 w-3.5 shrink-0 text-[var(--g-600)]" />
-                            {m}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-
-                  {stand < PROFIEL_ONDERDELEN ? (
-                    <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
-                      Je hebt {stand} van de {PROFIEL_ONDERDELEN} vragen
-                      ingevuld. Elke vraag die je nog beantwoordt maakt deze
-                      uitkomst preciezer.
-                    </p>
-                  ) : null}
-                </div>
-              </div>
-            </div>
-
-            {/* ── 2. Wat erbij past, met de reden erbij ── */}
-            <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
-              <p className="diba-label text-[var(--t-label)]">
-                {past.length === 0
-                  ? "Nog niets dat volledig past"
-                  : `Past bij je profiel · ${past.length}`}
-              </p>
-
-              {past.length > 0 ? (
-                <>
-                  <ul className="mt-6 space-y-3">
-                    {past.slice(0, 4).map((m, i) => (
-                      <li key={m.behandeling.slug}>
-                        <Link
-                          href={`/behandelingen/${m.behandeling.slug}`}
-                          className="block rounded-[var(--r-md)] bg-[var(--g-050)] p-5 transition-colors duration-200 hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-6"
-                        >
-                          <span className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-                            <span className="flex items-baseline gap-3">
-                              {i === 0 ? (
-                                <span className="diba-label rounded-[var(--r-pill)] bg-[var(--g-700)] px-2.5 py-1 text-white">
-                                  Beste match
-                                </span>
-                              ) : null}
-                              <span className="text-[18px] leading-7 font-medium text-[var(--t-strong)]">
-                                {m.behandeling.naam}
-                              </span>
-                            </span>
-                            <span className="shrink-0 text-[15px] leading-7 text-[var(--t-muted)] tabular-nums">
-                              {prijsTekst(m.behandeling.prijs)}
-                            </span>
-                          </span>
-
-                          {/* De reden werd al berekend en werd nergens getoond. Juist
-                              die maakt het verschil tussen een lijst en een advies. */}
-                          <span className="mt-2 block max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-                            {publicCopy(m.reden)}
-                          </span>
-
-                          <span className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-[13px] leading-6 text-[var(--t-muted)]">
-                            <span>
-                              Herstel: {publicCopy(m.behandeling.herstel)}
-                            </span>
-                            <span>
-                              {publicCopy(
-                                m.behandeling.sessies,
-                                "Aantal sessies volgt in de intake",
-                              )}
-                            </span>
-                          </span>
-
-                          {m.letOp.length > 0 ? (
-                            <span className="mt-3 block text-[13px] leading-6 text-[var(--t-label)]">
-                              Let op: {m.letOp.join(". ")}
-                            </span>
-                          ) : null}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
-                    <Link
-                      href="/behandelingen"
-                      className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-                    >
-                      Alle behandelingen, geordend op je profiel
-                    </Link>
-                    {kanNiet.length > 0 ? (
-                      <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-                        {kanNiet.length} vallen af op wat je hebt ingevuld. Daar
-                        staat per stuk bij waarom.
-                      </span>
-                    ) : null}
-                  </div>
-                </>
-              ) : profiel.doelen.length === 0 ? (
-                <p className="mt-5 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Vul aan wat je wil veranderen, dan komt hier de lijst.
-                </p>
-              ) : (
-                <p className="mt-5 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Alles wat op jouw doel gemaakt is, valt af op iets anders dat
-                  je hebt ingevuld. Meestal is dat tijdelijk: hersteltijd, zon
-                  of een middel dat je nu gebruikt. Hierboven staat wat je in de
-                  intake moet melden.
-                </p>
-              )}
-            </div>
-
-            {/* ── 3. Wat hier niet uit te halen valt ── */}
-            <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9 lg:p-11">
-              <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
-                <div>
-                  <p className="diba-label diba-label-on-dark">
-                    Eerlijk gezegd
-                  </p>
-                  <p className="diba-display-s mt-4 max-w-[16ch]">
-                    Dit weten we
-                    <span className="diba-accent-on-dark"> nog niet.</span>
-                  </p>
-                  <p className="mt-6 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                    Alles hierboven komt uit jouw antwoorden. Dat is genoeg om
-                    te ordenen en niet genoeg om te beslissen. Wat er hieronder
-                    staat is met het blote oog niet vast te stellen, ook niet
-                    door ons.
-                  </p>
-                </div>
-                <ul className="space-y-4">
-                  {onbekend.map((z) => (
-                    <li
-                      key={z}
-                      className="flex gap-3.5 border-b border-white/15 pb-4 text-[15px] leading-7 text-[var(--on-dark-body)] last:border-b-0 last:pb-0"
-                    >
-                      <DibaLeafMark className="mt-1.5 h-3.5 w-3.5 shrink-0 text-[var(--on-dark-accent)]" />
-                      {publicCopy(z)}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* ── 4. Wat er dan gebeurt ── */}
-            {/* Het zwaarste mintvlak van de pagina, zoals de featuretegels op de
-                homepage. Labels staan hier in g-800 en niet in t-label: dat laatste haalt
-                op deze tint geen AA (4,21) en g-800 wel (7,14). */}
-            <div className="rounded-[var(--r-lg)] bg-[var(--g-200)] p-7 sm:p-9 lg:p-11">
-              <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
-                <div>
-                  <p className="diba-label text-[var(--g-800)]">
-                    De volgende stap
-                  </p>
-                  <h3 className="diba-display-s mt-4 max-w-[16ch]">
-                    Behandeling Nul.
-                    <span className="diba-accent">
-                      {" "}
-                      Meten, niet behandelen.
-                    </span>
-                  </h3>
-                  <p className="mt-6 max-w-[52ch] text-[16px] leading-8 text-[var(--g-900)]">
-                    Er gebeurt niets met je huid. Er wordt gekeken, gemeten en
-                    uitgelegd, en je gaat naar huis met wat er uit de meting
-                    kwam en wat dat betekent voor je doel. Ook als dat betekent
-                    dat we je iets afraden.
-                  </p>
-
-                  <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-                    <Link
-                      href="/intake"
-                      className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-7 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                    >
-                      Plan Behandeling Nul
-                    </Link>
-                    <Link
-                      href="/behandelingen/huidanalyse"
-                      className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-                    >
-                      Wat er precies gebeurt
-                    </Link>
-                  </div>
-                </div>
-
-                {/* De feiten komen uit behandelingen.ts, zodat de prijs hier nooit
-                    los kan gaan lopen van de prijslijst. */}
-                <dl className="space-y-3 self-center rounded-[var(--r-md)] bg-white p-6 sm:p-7">
-                  {[
-                    [
-                      "Wat het kost",
-                      nulmeting ? prijsTekst(nulmeting.prijs) : "Op aanvraag",
-                    ],
-                    [
-                      "Hersteltijd",
-                      nulmeting ? publicCopy(nulmeting.herstel) : "Geen",
-                    ],
-                    ["Wat er gebeurt", "Meten en uitleggen, niet behandelen"],
-                    ["Daarna", "Je zit nergens aan vast"],
-                  ].map(([kop, waarde]) => (
-                    <div
-                      key={kop}
-                      className="flex items-baseline justify-between gap-6 border-b border-[var(--g-050)] pb-3 last:border-b-0 last:pb-0"
-                    >
-                      <dt className="diba-label shrink-0 text-[var(--t-label)]">
-                        {kop}
-                      </dt>
-                      <dd className="text-right text-[16px] leading-7 font-medium text-[var(--t-strong)]">
-                        {waarde}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </div>
-          </div>
-        )}
+        <Uitkomst profiel={profiel} />
 
         <p className="mt-10 max-w-[64ch] text-[15px] leading-7 text-[var(--t-body)]">
           Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij
