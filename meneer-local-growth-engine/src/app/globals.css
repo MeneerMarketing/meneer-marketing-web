@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #171717;
+  --ease-premium: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --mm-bg: #f3f7fb;
+  --mm-surface: #e8f0f8;
+  --mm-border: #d0dce8;
+  --mm-text: #0f172a;
+  --mm-muted: #64748b;
+  --mm-accent: #c2410c;
+  --mm-brand: #ff5722;
+  --mm-shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px rgb(15 23 42 / 0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mm-bg: var(--mm-bg);
+  --color-mm-surface: var(--mm-surface);
+  --color-mm-border: var(--mm-border);
+  --color-mm-text: var(--mm-text);
+  --color-mm-muted: var(--mm-muted);
+  --color-mm-accent: var(--mm-accent);
+  --color-mm-brand: var(--mm-brand);
+  --font-sans: var(--font-editorial-sans), ui-sans-serif, system-ui, sans-serif;
+  --shadow-mm-card: var(--mm-shadow-card);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.editorial-root {
+  font-family: var(--font-editorial-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.figma-root {
+  font-family: var(--font-figma-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+.soft-root {
+  font-family: var(--font-soft-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+.mm-grid-bg {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.figma-display-xl {
+  font-family: var(--font-figma-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(3rem, 7.2vw, 6.5rem);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.085em;
+}
+
+.figma-display-l {
+  font-family: var(--font-figma-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(2.4rem, 5vw, 4.25rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.figma-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 18s var(--ease-premium) forwards;
+}
+
+@keyframes soft-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+.animate-soft-float {
+  animation: soft-float 7s var(--ease-premium) infinite;
+}
+
+@keyframes soft-pulse-ring {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
+
+.animate-soft-pulse-ring {
+  animation: soft-pulse-ring 2.8s var(--ease-premium) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-ken-burns,
+  .animate-soft-float,
+  .animate-soft-pulse-ring {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,2 @@
+-- Seed file (also applied via Supabase MCP). Safe to re-run with ON CONFLICT.
+-- See 20260810170000_milestone2_dashboard.sql for schema.
