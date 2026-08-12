@@ -84,17 +84,34 @@ const uitSitemap = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (m) => new URL(m[1]).pathname,
 );
 
-const apparaatSlugs = [
-  ...(await page
-    .goto(`${BASIS}/apparatuur`, { waitUntil: "networkidle" })
-    .then(() =>
-      page.evaluate(() =>
-        [...document.querySelectorAll("a[href^='/apparatuur/']")]
-          .map((a) => a.getAttribute("href"))
-          .filter((h, i, l) => l.indexOf(h) === i),
-      ),
-    )),
+/**
+ * Dynamische routes die noch in de sitemap noch onder src/app als eigen bestand staan.
+ *
+ * Dit stond hier eerst alleen voor apparatuur, met de slugs hardgeplakt in één blok. Toen
+ * /vergoedingen/[slug] zes echte pagina's kreeg, telde de controle nog steeds 81 en zag hij
+ * die zes niet. Er stond prompt een u-vorm op die er niet hoorde, en de controle zweeg.
+ *
+ * Vandaar per overzichtspagina de links eronder oogsten. Komt er een nieuwe dynamische
+ * reeks bij, dan hoort zijn overzichtspagina hier in de lijst.
+ */
+const OVERZICHTEN = [
+  { pad: "/apparatuur", voorvoegsel: "/apparatuur/" },
+  { pad: "/vergoedingen", voorvoegsel: "/vergoedingen/" },
 ];
+
+const uitOverzichten = [];
+for (const { pad, voorvoegsel } of OVERZICHTEN) {
+  await page.goto(`${BASIS}${pad}`, { waitUntil: "networkidle" });
+  const gevonden = await page.evaluate(
+    (v) =>
+      [...document.querySelectorAll(`a[href^='${v}']`)]
+        .map((a) => a.getAttribute("href"))
+        .filter((h, i, l) => l.indexOf(h) === i),
+    voorvoegsel,
+  );
+  uitOverzichten.push(...gevonden);
+}
+const apparaatSlugs = uitOverzichten;
 
 const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
   .map(
