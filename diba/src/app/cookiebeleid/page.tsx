@@ -1,59 +1,220 @@
 import type { Metadata } from "next";
-import ContentPageTemplate from "@/components/templates/ContentPageTemplate";
-import { PAGE_DEFAULTS } from "@/lib/page-defaults";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
+import Link from "next/link";
+import Toestemmingschakelaar from "@/components/consent/Toestemmingschakelaar";
+import Label from "@/components/ui/Label";
+import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { DIBA_SITE, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+
+/**
+ * Cookiebeleid.
+ *
+ * WAT ER MIS WAS, EN DAT WAS MEER DAN COPY.
+ *
+ * De tekst beschreef netjes dat analytische cookies pas na akkoord laden. Dat klopte ook:
+ * `Analytics.tsx` kijkt naar de toestemming voordat het iets inlaadt. Maar de balk had
+ * alleen een akkoordknop, en de link ernaast heette "Instellingen" terwijl deze pagina geen
+ * enkele instelling had. Weigeren kon dus niet, en voor wie niets deed kwam de balk elk
+ * bezoek terug tot hij ja zei.
+ *
+ * En dan de zin die het hardst wrong: "Wilt u uw keuze wijzigen? Wis de sitegegevens van
+ * dibaclinics.nl in uw browser." Dat is geen intrekmogelijkheid maar een omweg die niemand
+ * loopt, en het maakte een gegeven toestemming in de praktijk definitief.
+ *
+ * Toestemming is alleen iets waard als nee zeggen net zo makkelijk is als ja zeggen, en als
+ * je het daarna kunt intrekken. Allebei bestaan nu: twee gelijkwaardige knoppen op de balk,
+ * en bovenaan deze pagina een schakelaar die je stand laat zien en omzet.
+ *
+ * DE U-VORM MAG HIER.
+ *
+ * Dit is een juridische pagina, en dat is de uitzondering op jij en je.
+ *
+ * [BESLUIT-OKAN] het e-mailadres voor privacyvragen. Zolang dat er niet is, wijst de pagina
+ * naar WhatsApp en dat staat er dan ook zo.
+ */
 
 export const metadata: Metadata = {
   title: "Cookiebeleid",
   description:
-    "Hoe Diba Clinics cookies gebruikt: functioneel en anonieme statistieken. Geen advertentie-tracking.",
-  ...NOG_IN_AANBOUW,
+    "Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe u uw keuze op elk moment kunt wijzigen. Geen advertentie-tracking.",
+  robots: { index: true, follow: true },
 };
+
+const COOKIES = [
+  {
+    soort: "Noodzakelijk",
+    altijd: true,
+    wat: "Nodig om de site te laten werken. Hieronder valt het onthouden van de keuze die u op de cookiebalk maakt, want zonder dat zou de vraag bij elk bezoek terugkomen.",
+    wanneer: "Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.",
+  },
+  {
+    soort: "Anonieme statistieken",
+    altijd: false,
+    wat: "Google Analytics 4, met een verkort IP-adres, en Microsoft Clarity. Daarmee zien we welke pagina's mensen helpen en waar ze vastlopen. Er worden geen advertentieprofielen opgebouwd en er wordt niets doorverkocht.",
+    wanneer:
+      "Alleen na uw akkoord. Zolang dat er niet is, worden deze scripts niet ingeladen; ze staan dus niet uit maar zijn er niet.",
+  },
+] as const;
 
 export default function CookiePage() {
   return (
-    <ContentPageTemplate
-      h1="Cookiebeleid"
-      breadcrumbLabel="Cookiebeleid"
-      breadcrumbPath="/cookiebeleid"
-      intro="We houden het klein. Geen advertentie-tracking, geen pop-up die de site blokkeert."
-      secties={[
-        {
-          kop: "Wat zijn *cookies*?",
-          alineas: [
-            "Cookies zijn kleine bestanden die uw browser opslaat. Ze helpen de site onthouden wat nodig is om goed te werken.",
-          ],
-        },
-        {
-          kop: "Welke cookies *gebruiken* we?",
-          alineas: [
-            "Functionele cookies: nodig om de site te laten werken, bijvoorbeeld uw cookievoorkeur onthouden.",
-            "Analytische cookies: alleen als u akkoord geeft. We gebruiken anonieme statistieken om te zien welke pagina's helpen. Geen advertentie-profielen.",
-          ],
-        },
-        {
-          kop: "Diensten *achter* analytische cookies",
-          alineas: [
-            "Google Analytics 4 (anoniem IP-adres) en Microsoft Clarity, alleen na uw akkoord via de cookiebalk.",
-            "Zonder akkoord laden deze scripts niet.",
-          ],
-        },
-        {
-          kop: "Uw *keuze*",
-          alineas: [
-            "Via de cookiebalk kunt u akkoord geven of dit beleid lezen. Uw keuze slaan we lokaal op in uw browser.",
-            "Wilt u uw keuze wijzigen? Wis de sitegegevens van dibaclinics.nl in uw browser, of neem contact op via WhatsApp.",
-          ],
-        },
-        {
-          kop: "Vragen",
-          alineas: [
-            "[COPY-NODIG: contact voor privacyvragen] Zie ook ons privacybeleid voor hoe we met persoonsgegevens omgaan.",
-          ],
-        },
-      ]}
-      primaireCta={{ label: "Terug naar home", href: "/" }}
-      {...PAGE_DEFAULTS}
-    />
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+      <SchemaMarkup
+        data={breadcrumbSchema([
+          { name: "Home", url: DIBA_SITE_URL },
+          { name: "Cookiebeleid", url: `${DIBA_SITE_URL}/cookiebeleid` },
+        ])}
+      />
+
+      {/* ── Hero ── */}
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+        <div className="grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+          <div>
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-[var(--g-700)]">
+                Home
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--t-muted)]">Cookiebeleid</span>
+            </nav>
+
+            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+              Twee soorten,
+              <br />
+              <span className="diba-accent">en één keuze.</span>
+            </h1>
+
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+              De ene soort is nodig om de site te laten werken. De andere is
+              anonieme statistiek, en die laadt alleen als u daar akkoord voor
+              geeft. Advertentie-tracking staat er niet op.
+            </p>
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+              Uw keuze kunt u op elk moment wijzigen, hiernaast. Niet door
+              browsergegevens te wissen, gewoon met een knop.
+            </p>
+          </div>
+
+          {/* De schakelaar staat bovenaan, want dat is waar mensen voor komen. */}
+          <div className="flex flex-col justify-center">
+            <Toestemmingschakelaar />
+          </div>
+        </div>
+      </section>
+
+      {/* ── De twee soorten ── */}
+      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div className="max-w-[62ch]">
+            <Label>Wat er precies staat</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Wat er laadt,
+              <br />
+              <span className="diba-accent">en wanneer.</span>
+            </h2>
+          </div>
+
+          <ul className="mt-10 grid gap-4 md:grid-cols-2">
+            {COOKIES.map((c) => (
+              <li
+                key={c.soort}
+                className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-9"
+              >
+                <p className="diba-label text-[var(--t-label)]">
+                  {c.altijd ? "Altijd aan" : "Alleen met akkoord"}
+                </p>
+                <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+                  {c.soort}
+                </p>
+                <p className="mt-4 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
+                  {c.wat}
+                </p>
+                <p className="mt-5 rounded-[var(--r-md)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
+                  <span className="diba-label block text-[var(--t-label)]">
+                    Wanneer
+                  </span>
+                  <span className="mt-2 block">{c.wanneer}</span>
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ── Hoe het werkt ── */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <Label>Hoe uw keuze bewaard wordt</Label>
+            <h2 className="diba-display-m mt-4 max-w-[16ch]">
+              Per browser,
+              <br />
+              <span className="diba-accent">op dit apparaat.</span>
+            </h2>
+          </div>
+          <div className="max-w-[58ch]">
+            <p className="text-[17px] leading-8 text-[var(--t-body)]">
+              Uw keuze wordt lokaal in deze browser opgeslagen en gaat niet mee
+              naar onze servers. Gebruikt u een ander apparaat of een andere
+              browser, dan wordt de vraag daar opnieuw gesteld, want daar weten
+              we het antwoord niet.
+            </p>
+            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+              Weigert u, dan verdwijnt de balk ook. Een balk die blijft
+              terugkomen tot u ja zegt is geen keuze maar aandrang.
+            </p>
+            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+              Trekt u uw toestemming later in, dan stopt het laden vanaf dat
+              moment. Wat er in de sessies daarvoor gemeten is, blijft bij die
+              diensten staan; wilt u dat ook verwijderd hebben, neem dan contact
+              op.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Vragen ── */}
+      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <Label>Vragen hierover</Label>
+            <h2 className="diba-display-m mt-4 max-w-[16ch]">
+              Stel ze
+              <br />
+              <span className="diba-accent">gewoon.</span>
+            </h2>
+          </div>
+          <div className="max-w-[58ch]">
+            <p className="text-[17px] leading-8 text-[var(--t-body)]">
+              Heeft u een vraag over wat er van u wordt vastgelegd, of wilt u
+              gegevens laten verwijderen, stuur dan een bericht. In het
+              privacybeleid staat wat er verder met persoonsgegevens gebeurt en
+              welke rechten u heeft.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+              <a
+                href={DIBA_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
+              >
+                Stuur een bericht
+              </a>
+              <Link
+                href="/privacybeleid"
+                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Naar het privacybeleid
+              </Link>
+            </div>
+            <p className="mt-8 text-[14px] leading-6 text-[var(--t-muted)]">
+              Dit beleid gaat over {DIBA_SITE.domain}.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
