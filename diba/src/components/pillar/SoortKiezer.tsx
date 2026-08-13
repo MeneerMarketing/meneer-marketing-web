@@ -55,10 +55,25 @@ export default function SoortKiezer({
 
   return (
     <div className={`mt-10 ${RASTER_SECTIE}`}>
+      {/* De keuzelijst vult de hoogte van het paneel ernaast.
+          Stond hij op zijn natuurlijke hoogte, dan bleef er onder de laatste knop een
+          gat van bijna driehonderd pixels open naast een paneel van ruim zeshonderd. Twee
+          kolommen die niet even lang zijn lezen als scheef, hoe netjes de linkerranden
+          ook uitlijnen.
+
+          Twee dingen geprobeerd die niet werkten. De knoppen laten uitrekken maakte ze op
+          pagina's met drie opties 216 pixels hoog: twee regels tekst in een vlak van een
+          halve schermhoogte. Met een dak erop verhuisde het probleem naar de tussenruimte,
+          die dan net zo groot werd als de knoppen zelf; drie zwevende blokken.
+
+          Wat wel werkt is de lijst een eigen vlak geven, zoals het paneel ernaast er een
+          heeft. Dan zijn het twee gelijke kaarten naast elkaar, staan de knoppen bovenin
+          op hun natuurlijke hoogte, en is wat overblijft gewoon marge binnen een kaart in
+          plaats van een gat in de compositie. */}
       <ul
         role="radiogroup"
         aria-label="Kies het beeld dat het dichtst bij jouw huid komt"
-        className="space-y-2"
+        className="flex flex-col gap-2 rounded-[var(--r-md)] bg-white p-5 sm:p-6 lg:h-full"
       >
         {opties.map((o, i) => {
           const gekozen = i === actief;
@@ -69,7 +84,7 @@ export default function SoortKiezer({
                 role="radio"
                 aria-checked={gekozen}
                 onClick={() => setActief(i)}
-                className={`flex min-h-12 w-full flex-col items-start gap-0.5 rounded-[var(--r-sm)] px-4 py-3.5 text-left transition ${
+                className={`flex min-h-12 w-full flex-col items-start gap-0.5 rounded-[var(--r-sm)] px-5 py-4 text-left transition ${
                   gekozen
                     ? "bg-[var(--g-700)] text-white"
                     : "bg-[var(--g-050)] hover:bg-[var(--g-075)]"
