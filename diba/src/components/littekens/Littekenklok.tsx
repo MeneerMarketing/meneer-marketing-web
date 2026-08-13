@@ -5,6 +5,7 @@ import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { LITTEKEN_FASES, VENSTER_TEKST } from "@/data/littekens";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De littekenklok — de uitblinker van de littekens- en striaepagina.
@@ -55,7 +56,7 @@ export default function Littekenklok() {
   const venster = VENSTER_TEKST[fase.venster];
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De tekening plus de schuifbalk ──
           De klasse van de fase zet --fase-kleur, en die stuurt zowel de tekening als
           de schuifbalk aan. Eén bron, dus ze kunnen niet uit elkaar lopen. */}

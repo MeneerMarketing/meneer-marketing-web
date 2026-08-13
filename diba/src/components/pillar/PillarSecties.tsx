@@ -3,6 +3,11 @@ import Button from "@/components/ui/Button";
 import { ArrowUpRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
 import { publicCopy } from "@/lib/copy-flags";
+import {
+  RASTER_GELIJK,
+  RASTER_SECTIEKOP,
+  RASTER_SECTIEKOP_GELIJK,
+} from "@/lib/raster";
 
 /**
  * De secties die elke huidprobleempagina deelt.
@@ -23,6 +28,7 @@ export function SectieKop({
   accent,
   intro,
   opDonker = false,
+  raster = "standaard",
 }: {
   label: string;
   kop: string;
@@ -30,9 +36,24 @@ export function SectieKop({
   accent?: string;
   intro?: string;
   opDonker?: boolean;
+  /**
+   * Welke indeling de inhoud onder deze kop heeft.
+   *
+   * De kop volgt wat eronder staat en niet andersom: bij twee gelijke helften hoort de
+   * introzin op de helft te beginnen, bij kop-links-inhoud-rechts op 0.9/1.1. Zonder dit
+   * onderscheid stond de zin zesenveertig pixels naast de kaarten eronder.
+   */
+  raster?: "standaard" | "gelijk";
 }) {
   return (
-    <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+    /* Eén gedeeld raster met de inhoud eronder. Stond op 0.85/1.15 met gap-6 terwijl de
+       tools eronder 0.9/1.1 met gap-8 gebruikten, en dan begint de introzin tweeëndertig
+       pixels naast het paneel eronder. Zie `raster.ts`. */
+    <div
+      className={
+        raster === "gelijk" ? RASTER_SECTIEKOP_GELIJK : RASTER_SECTIEKOP
+      }
+    >
       <div>
         <Label opDonker={opDonker}>{label}</Label>
         <h2 className="diba-display-m mt-4 max-w-[18ch]">
@@ -86,9 +107,10 @@ export function WelNiet({
             intro ??
             "De rechterkolom is de nuttigste van de twee. Bij elk kruisje staat waarom, want “niet doen” zonder reden onthoudt niemand."
           }
+          raster="gelijk"
         />
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-2 lg:gap-8">
+        <div className={`mt-12 ${RASTER_GELIJK}`}>
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
             <h3 className="diba-label text-[var(--g-700)]">Dit werkt</h3>
             <ul className="mt-5 space-y-4">

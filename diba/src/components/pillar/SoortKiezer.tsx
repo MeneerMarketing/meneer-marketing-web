@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * Keuzelijst met detailpaneel — het herkenningsonderdeel van elke huidprobleempagina.
@@ -53,7 +54,7 @@ export default function SoortKiezer({
   const optie = opties[actief];
 
   return (
-    <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
+    <div className={`mt-10 ${RASTER_SECTIE}`}>
       <ul
         role="radiogroup"
         aria-label="Kies het beeld dat het dichtst bij jouw huid komt"
