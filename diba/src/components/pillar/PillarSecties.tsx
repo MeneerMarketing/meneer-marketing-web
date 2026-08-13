@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { publicCopy } from "@/lib/copy-flags";
 import {
   RASTER_GELIJK,
+  RASTER_SECTIE,
   RASTER_SECTIEKOP,
   RASTER_SECTIEKOP_GELIJK,
 } from "@/lib/raster";
@@ -190,27 +191,43 @@ export function WijZeggenNee({
           opDonker
         />
 
-        {/* De kolommen volgen het aantal punten. Met vast drie kolommen laat een
-            vierde punt twee lege cellen achter, en die krijgen door de gap-truc de
-            lichtere achtergrond van de lijst: een leeg blok dat er opzettelijk uitziet. */}
-        <ul
-          className={`mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-white/15 ${
-            punten.length % 3 === 0 || punten.length % 2 !== 0
-              ? "md:grid-cols-3"
-              : "md:grid-cols-2"
-          }`}
-        >
+        {/* ── Rijen, geen kolommen ──
+            Hier stonden drie kolommen met haarlijntjes ertussen: een raster met gap-px op
+            een lichter vlak, waarbij elke cel dezelfde donkergroene achtergrond had als de
+            sectie. Het waren dus geen kaarten maar losse tekstkolommen met streepjes
+            ertussen, en dat is precies de lijnenstijl die deze huisstijl niet voert.
+
+            Erger was wat het met de inhoud deed. Drie weigeringen met ongelijk lange
+            redenen naast elkaar geven onderaan rafelrand: de korte kolom houdt lucht over,
+            de lange loopt door. Naast elkaar zetten dwingt ze bovendien in dezelfde breedte
+            terwijl ze niet even zwaar wegen.
+
+            Als rijen klopt het wel. De weigering staat groot links, de reden ernaast, en
+            elke rij vult de volle breedte. Lange en korte redenen kunnen naast elkaar
+            bestaan zonder dat er iets rafelt, en de weigeringen komen onder elkaar te
+            staan waardoor je ze als reeks leest. Ze beginnen alle drie met "Geen", dus dat
+            wordt vanzelf een ritme. */}
+        <ul className="mt-12 space-y-3">
           {punten.map((p) => (
-            <li key={p.titel} className="bg-[var(--g-700)] p-6 sm:p-8">
-              <h3 className="diba-card-title">{p.titel}</h3>
-              <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
+            <li
+              key={p.titel}
+              /* Donkerder dan de sectie en niet lichter. Met bg-white/10 werd het groen
+                 opgelicht tot rgb(62,120,86) en zakte de bodytekst naar 4,08, onder de
+                 AA-grens. Op --g-800 haalt diezelfde tekst 7,57 en de titel 9,68, dus het
+                 vlak dat de rijen afbakent maakt ze meteen beter leesbaar. */
+              className="grid gap-4 rounded-[var(--r-lg)] bg-[var(--g-800)] p-7 sm:p-9 lg:grid-cols-[0.8fr_1.2fr] lg:items-baseline lg:gap-12"
+            >
+              <h3 className="text-[22px] leading-[1.15] font-medium tracking-[-.03em] text-balance sm:text-[26px]">
+                {p.titel}
+              </h3>
+              <p className="max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                 {publicCopy(p.tekst)}
               </p>
             </li>
           ))}
         </ul>
 
-        <p className="diba-label diba-label-on-dark mt-8">
+        <p className="diba-label diba-label-on-dark mt-10">
           Dit staat ook in ons verbond ·{" "}
           <Link href="/ons-verbond" className="underline underline-offset-4">
             lees de tien weigeringen
@@ -237,7 +254,16 @@ export function NulmetingAssen({
       id="meten"
       className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
-      <div className="mx-auto grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
+      {/* ── Eén meetpaneel in plaats van drie zwevende kaartjes ──
+            De rechterkolom was 145 pixels hoog naast een linkerkolom van 347, en stond
+            ook nog verticaal gecentreerd. Drie kaartjes die in tweehonderd pixels leegte
+            hangen; dat is wat er scheef aan oogde.
+
+            De inhoud is bovendien geen drie losse dingen maar één ding: wat er bij deze
+            aandoening gemeten wordt. Als één paneel met de assen eronder leest het als een
+            meetrapport, wat het ook is, en het loopt door tot dezelfde onderkant als de
+            tekst ernaast. */}
+      <div className={`mx-auto ${RASTER_SECTIE}`}>
         <div>
           <Label>De Nulmeting</Label>
           <h2 className="diba-display-m mt-4 max-w-[18ch]">{kop}</h2>
@@ -258,19 +284,28 @@ export function NulmetingAssen({
           </Button>
         </div>
 
-        <ul className="grid gap-3 sm:grid-cols-3">
-          {assen.map(([as, wat]) => (
-            <li
-              key={as}
-              className="rounded-[var(--r-sm)] bg-[var(--g-050)] p-5"
-            >
-              <h3 className="diba-card-title">{as}</h3>
-              <p className="mt-2 text-sm leading-6 text-[var(--t-body)]">
-                {wat}
-              </p>
-            </li>
-          ))}
-        </ul>
+        <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-9 lg:h-full">
+          <p className="diba-label text-[var(--t-label)]">
+            Wat we hier meten
+          </p>
+          <dl className="mt-6 space-y-6">
+            {assen.map(([as, wat]) => (
+              <div key={as}>
+                <dt className="text-[19px] leading-7 font-medium text-[var(--t-strong)]">
+                  {as}
+                </dt>
+                <dd className="mt-1 max-w-[46ch] text-[15px] leading-7 text-[var(--t-body)]">
+                  {wat}
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-8 max-w-[46ch] text-[14px] leading-6 text-[var(--t-muted)]">
+            Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde
+            belichting. Daarom is verschil later iets dat je ziet en niet iets
+            dat je moet geloven.
+          </p>
+        </div>
       </div>
     </section>
   );
