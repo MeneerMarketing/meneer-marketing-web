@@ -15,44 +15,57 @@ import { publicCopy } from "@/lib/copy-flags";
  * acne in het algemeen; deze laat de bezoeker zijn eigen zones aantikken en leest live
  * mee wat dat patroon betekent.
  *
- * Het is bewust een diagram en geen foto: A10 verbiedt AI-gegenereerde mensen of huid,
- * en abstracte SVG's zonder huid mogen wel. Dat past hier ook beter — een schema nodigt
- * uit om aan te tikken, een foto niet.
+ * WAT HIER STOND EN WAAROM HET WEG MOEST.
  *
- * Toegankelijkheid: elke zone in de tekening is een checkbox met toetsenbordbediening,
- * en dezelfde zones staan eronder als chips. Twee wegen naar hetzelfde, zodat het ook
- * werkt als aanwijzen op een tekening lastig is.
+ * Een getekend hoofd: een dunne contourlijn met daarin zwevende ellipsen, en twee
+ * streepjes voor ogen en één voor een mond. Dat had twee problemen tegelijk.
+ *
+ * Het eerste is stijl. Deze huisstijl bouwt met gevulde vlakken en geen enkele lijn, en
+ * dit was vrijwel alleen lijn: contour, randen om de ellipsen, streepjes. Precies wat er
+ * elders van de site is afgehaald.
+ *
+ * Het tweede is dat het iets probeerde te tékenen. De drie tools op deze site die het
+ * beste werken zijn geen van drieën figuratief: het zonjaar is een staafgrafiek, de
+ * ABCDE-check is een lijst, de huidmatrix is een raster. Een hoofd met twee streepjes
+ * voor ogen wordt nooit mooi, en het hoeft ook niet: wat de bezoeker nodig heeft is de
+ * plaats, niet het portret.
+ *
+ * DUS: TEGELS IN PLAATS VAN EEN TEKENING.
+ *
+ * Een raster dat de indeling van een gezicht volgt zonder een gezicht te zijn. Voorhoofd
+ * boven, dan de band met wangen, neus en kaaklijn, dan de kin, en rug en schouders apart
+ * eronder omdat die niet op het gezicht liggen. De volgorde draagt de plaats; de vulling
+ * draagt de staat. Verder is er niets nodig.
+ *
+ * Bijvangst: de losse chips onder de tekening konden weg. Die stonden er als tweede,
+ * altijd werkende weg naar dezelfde zones, en de tegels zíjn nu die weg. Elke zone stond
+ * dus twee keer op het scherm.
  */
-
-type Vorm = {
-  readonly cx: number;
-  readonly cy: number;
-  readonly rx: number;
-  readonly ry: number;
-  readonly rot?: number;
-};
 
 /**
- * De vlakken per zone, anatomisch geplaatst. Wangen en kaaklijn bestaan uit twee vormen.
+ * Waar elke zone in het raster staat.
  *
- * De maten zijn bewust kleiner dan het hoofd: als de zones het gezicht vullen leest het
- * niet meer als gezicht. De oog- en mondstreepjes worden ná de zones getekend, zodat ze
- * er niet achter verdwijnen.
+ * Drie kolommen. Voorhoofd en kin lopen over de volle breedte omdat ze dat op een gezicht
+ * ook doen; de middelste band heeft er drie naast elkaar. `rug` staat er niet in: die
+ * krijgt een eigen plek onder een tussenkopje, want hij ligt buiten het gezicht en dat is
+ * precies het onderscheid dat de oude tekening niet kon maken.
  */
-const ZONE_VORMEN: Record<ZoneId, readonly Vorm[]> = {
-  voorhoofd: [{ cx: 160, cy: 92, rx: 52, ry: 25 }],
-  neus: [{ cx: 160, cy: 170, rx: 16, ry: 31 }],
-  wangen: [
-    { cx: 110, cy: 177, rx: 24, ry: 27 },
-    { cx: 210, cy: 177, rx: 24, ry: 27 },
-  ],
-  kaaklijn: [
-    { cx: 114, cy: 240, rx: 25, ry: 14, rot: -28 },
-    { cx: 206, cy: 240, rx: 25, ry: 14, rot: 28 },
-  ],
-  kin: [{ cx: 160, cy: 269, rx: 29, ry: 21 }],
-  rug: [],
+const RASTER: Record<Exclude<ZoneId, "rug">, string> = {
+  voorhoofd: "col-span-3",
+  wangen: "col-span-1",
+  neus: "col-span-1",
+  kaaklijn: "col-span-1",
+  kin: "col-span-3",
 };
+
+/** De volgorde in het raster, van boven naar beneden zoals op een gezicht. */
+const RASTER_VOLGORDE: readonly Exclude<ZoneId, "rug">[] = [
+  "voorhoofd",
+  "wangen",
+  "neus",
+  "kaaklijn",
+  "kin",
+];
 
 export default function AcneZoneKaart() {
   const [gekozen, setGekozen] = useState<ZoneId[]>([]);
@@ -66,119 +79,106 @@ export default function AcneZoneKaart() {
     );
 
   const actief = (id: ZoneId) => gekozen.includes(id);
-  const opgelicht = (id: ZoneId) => actief(id) || zweeft === id;
 
   return (
     <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
-      {/* ── De tekening ── */}
+      {/* ── Het raster ── */}
       <div>
-        <div className="relative rounded-[var(--r-md)] bg-white p-4 sm:p-6">
-          <svg
-            viewBox="0 0 320 360"
-            className="mx-auto w-full max-w-[340px]"
-            role="group"
-            aria-label="Diagram van een gezicht met aanklikbare zones"
-          >
-            {/* Hoofdcontour, alleen lijn. Geen huid, geen persoon: dit is een schema. */}
-            <path
-              d="M160 38c45 0 80 32 84 92 4 62-24 134-54 166-12 13-22 20-30 20s-18-7-30-20c-30-32-58-104-54-166 4-60 39-92 84-92Z"
-              fill="none"
-              stroke="var(--g-300)"
-              strokeWidth="1.5"
-            />
+        <div
+          className="rounded-[var(--r-md)] bg-white p-5 sm:p-7"
+          role="group"
+          aria-label="Zones van het gezicht, aan te tikken"
+        >
+          <Label>Waar zit het bij jou?</Label>
+          <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+            Meerdere mag. De plaats zegt vaak meer over de oorzaak dan hoe erg
+            het eruitziet.
+          </p>
 
-            {ACNE_ZONES.filter((z) => !z.buitenGezicht).map((zone) =>
-              ZONE_VORMEN[zone.id].map((v, i) => (
-                <ellipse
-                  key={`${zone.id}-${i}`}
-                  cx={v.cx}
-                  cy={v.cy}
-                  rx={v.rx}
-                  ry={v.ry}
-                  transform={
-                    v.rot ? `rotate(${v.rot} ${v.cx} ${v.cy})` : undefined
-                  }
-                  role={i === 0 ? "checkbox" : undefined}
-                  aria-checked={i === 0 ? actief(zone.id) : undefined}
-                  aria-label={i === 0 ? zone.naam : undefined}
-                  tabIndex={i === 0 ? 0 : -1}
-                  onClick={() => wissel(zone.id)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                      e.preventDefault();
-                      wissel(zone.id);
-                    }
-                  }}
-                  onMouseEnter={() => setZweeft(zone.id)}
+          <div className="mt-6 grid grid-cols-3 gap-2">
+            {RASTER_VOLGORDE.map((id) => {
+              const zone = ACNE_ZONES.find((z) => z.id === id);
+              if (!zone) return null;
+              const aan = actief(id);
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  role="checkbox"
+                  aria-checked={aan}
+                  onClick={() => wissel(id)}
+                  onMouseEnter={() => setZweeft(id)}
                   onMouseLeave={() => setZweeft(null)}
-                  onFocus={() => setZweeft(zone.id)}
+                  onFocus={() => setZweeft(id)}
                   onBlur={() => setZweeft(null)}
-                  className="cursor-pointer transition-all duration-300 ease-[var(--ease-diba)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none"
-                  fill={
-                    actief(zone.id)
-                      ? "var(--g-700)"
-                      : zweeft === zone.id
-                        ? "var(--g-200)"
-                        : "var(--g-050)"
-                  }
-                  stroke={opgelicht(zone.id) ? "var(--g-700)" : "var(--g-200)"}
-                  strokeWidth={actief(zone.id) ? 0 : 1.5}
-                />
-              )),
+                  className={`${RASTER[id]} flex min-h-16 items-center justify-center rounded-[var(--r-md)] px-3 py-4 text-center text-[15px] leading-5 font-medium transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+                    aan
+                      ? "bg-[var(--g-700)] text-white"
+                      : "bg-[var(--g-050)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
+                  }`}
+                >
+                  {zone.naam}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Rug en schouders liggen buiten het gezicht. In de oude tekening pasten ze
+              nergens en stonden ze alleen als losse chip; hier krijgen ze hun eigen plek
+              met de reden erbij. */}
+          {(() => {
+            const rug = ACNE_ZONES.find((z) => z.buitenGezicht);
+            if (!rug) return null;
+            const aan = actief(rug.id);
+            return (
+              <div className="mt-5">
+                <p className="diba-label text-[var(--t-label)]">
+                  Buiten het gezicht
+                </p>
+                <button
+                  type="button"
+                  role="checkbox"
+                  aria-checked={aan}
+                  onClick={() => wissel(rug.id)}
+                  onMouseEnter={() => setZweeft(rug.id)}
+                  onMouseLeave={() => setZweeft(null)}
+                  onFocus={() => setZweeft(rug.id)}
+                  onBlur={() => setZweeft(null)}
+                  className={`mt-3 flex min-h-16 w-full items-center justify-center rounded-[var(--r-md)] px-3 py-4 text-center text-[15px] leading-5 font-medium transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+                    aan
+                      ? "bg-[var(--g-700)] text-white"
+                      : "bg-[var(--g-050)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
+                  }`}
+                >
+                  {rug.naam}
+                </button>
+              </div>
+            );
+          })()}
+
+          {/* Wat de zone waar je op staat op zichzelf betekent. Vaste hoogte, zodat het
+              raster niet verspringt zodra je erlangs beweegt. */}
+          <div className="mt-5 min-h-[92px] rounded-[var(--r-sm)] bg-[var(--g-025)] p-5">
+            {zweeft ? (
+              <>
+                <p className="diba-label text-[var(--t-label)]">
+                  {ACNE_ZONES.find((z) => z.id === zweeft)?.naam}
+                </p>
+                <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(
+                    ACNE_ZONES.find((z) => z.id === zweeft)?.opZichzelf ?? "",
+                  )}
+                </p>
+              </>
+            ) : (
+              <p className="text-[15px] leading-7 text-[var(--t-muted)]">
+                Ga over een zone om te lezen wat die op zichzelf meestal
+                betekent. Tik hem aan om hem mee te tellen in de duiding
+                hiernaast.
+              </p>
             )}
-
-            {/* Oog- en mondstreepjes ná de zones, zodat ze zichtbaar blijven. Net genoeg
-                om het als gezicht te lezen, niet meer. */}
-            <g
-              stroke="var(--g-400)"
-              strokeWidth="2"
-              strokeLinecap="round"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path d="M121 133h21" />
-              <path d="M178 133h21" />
-              <path d="M145 226h30" />
-            </g>
-
-            {/* Naam van de zone waar je op staat, onderin de tekening. */}
-            <text
-              x="160"
-              y="344"
-              textAnchor="middle"
-              className="fill-[var(--t-muted)] text-[11px] font-semibold uppercase [letter-spacing:0.14em]"
-            >
-              {zweeft
-                ? ACNE_ZONES.find((z) => z.id === zweeft)?.naam
-                : "Tik een zone aan"}
-            </text>
-          </svg>
+          </div>
         </div>
-
-        {/* Dezelfde zones als chips: tweede, altijd werkende weg. */}
-        <div className="mt-4 flex flex-wrap gap-2">
-          {ACNE_ZONES.map((zone) => (
-            <button
-              key={zone.id}
-              type="button"
-              aria-pressed={actief(zone.id)}
-              onClick={() => wissel(zone.id)}
-              onMouseEnter={() => setZweeft(zone.id)}
-              onMouseLeave={() => setZweeft(null)}
-              className={`diba-label min-h-12 rounded-[var(--r-pill)] px-4 transition ${
-                actief(zone.id)
-                  ? "bg-[var(--g-700)] text-white"
-                  : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
-              } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
-            >
-              {zone.naam}
-              {zone.buitenGezicht ? " ·" : ""}
-            </button>
-          ))}
-        </div>
-        <p className="mt-3 text-sm leading-6 text-[var(--t-muted)]">
-          Rug en schouders staan niet in de tekening, maar tellen wel mee.
-        </p>
       </div>
 
       {/* ── De lezing ── */}
