@@ -84,20 +84,22 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
       {
         id: "growth-partner",
         name: "Growth Partner",
-        eyebrow: "Site, Google, boekingen",
-        tagline: "Site, SEO en Google Ads. Jij runt de studio.",
+        eyebrow: "Site, ads, influencers",
+        tagline: "SEO, Google Ads, Meta Ads en creators. Jij runt de studio.",
         ladderLabel: "Complete groei",
         monthly: { amount: 399, unit: "eur", cadence: "monthly" },
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
         ctaLabel: "Praat over Growth Partner",
         inclusions: [
           "Alles uit Local Growth",
-          "Extra campagne-landingspagina's voor Ads",
           "Google Ads-beheer (advertentiebudget niet inbegrepen)",
-          "Conversion tracking",
+          "Meta Ads waar bereik en retargeting het verschil maken",
+          "Campagne-landingspagina's die direct laten boeken",
+          "Influencer-matches en collabs die bij jouw studio passen",
+          "Creator-boosts: content die klikt én boekt",
+          "Conversion tracking op proefles en membership",
           "Advertenties gekoppeld aan relevante lessen",
-          "Booking funnel-analyse",
-          "CRO-optimalisaties",
+          "Booking funnel-analyse + CRO",
           "Retargeting / aanvullende campagnes waar relevant",
           "Maandelijkse groeianalyse",
         ],
@@ -305,7 +307,7 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
     {
       question: "Zit advertentiebudget inbegrepen?",
       answer:
-        "Nee. Growth Partner bevat Google Ads-beheer. Het mediabudget bij Google betaal je apart. Zo houd je zicht op wat je uitgeeft aan clicks.",
+        "Nee. Growth Partner bevat Google Ads- en Meta Ads-beheer, plus influencer-matches. Het mediabudget bij Google/Meta en eventuele creator-fees betaal je apart. Zo houd je zicht op wat je uitgeeft.",
     },
   ],
   howItWorks: [
@@ -327,7 +329,7 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
     },
     {
       title: "Growth waar je voor kiest",
-      body: "Local Growth: meer zoektermen en landingspagina's. Growth Partner: plus Google Ads.",
+      body: "Local Growth: meer zoektermen en landingspagina's. Growth Partner: plus Google Ads, Meta Ads en influencers.",
     },
   ],
   localSeoExamples: {

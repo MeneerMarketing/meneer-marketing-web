@@ -12,8 +12,9 @@ const STEPS = [
     priceHint: "€89/m",
     title: "Pilates [jouw stad]",
     body: "De kernzoekterm waar het geld zit. SEO-injectie zit erin, website live binnen vijf werkdagen.",
+    bullets: [] as string[],
     pages: ["Homepage", "Pilates [stad]"],
-    height: "lg:h-[250px]",
+    height: "lg:h-[260px]",
   },
   {
     id: "growth",
@@ -21,23 +22,39 @@ const STEPS = [
     priceHint: "€179/m",
     title: "Meer zoektermen, meer pagina's",
     body: "Reformer, Mat, Private, prijzen en locatie krijgen een eigen pagina. Elke maand bijsturen.",
+    bullets: [] as string[],
     pages: ["Reformer", "Mat", "Private", "Prijzen", "Locatie"],
-    height: "lg:h-[320px]",
+    height: "lg:h-[340px]",
   },
   {
     id: "partner",
     packageName: "Growth Partner",
     priceHint: "€399/m",
-    title: "Organisch plus Google Ads",
-    body: "Alles van Local Growth, met advertenties en campagne-landingspagina's erbovenop.",
-    pages: ["SEO-pagina's", "Ads-landings", "Funnel"],
-    height: "lg:h-[390px]",
+    title: "SEO, Ads én influencers. Hard groeien.",
+    body: "Alles van Local Growth, plus de kanalen die écht volume brengen. Organisch blijft lopen, betaald en creators zetten er vaart achter.",
+    bullets: [
+      "Google Ads-beheer op lessen en proeflessen",
+      "Meta Ads waar bereik en retargeting tellen",
+      "Campagne-landingspagina's die direct laten boeken",
+      "Influencer-matches en collabs die bij jouw studio passen",
+      "Boosts via creators: content die echt klikt en boekt",
+      "Funnel-analyse, CRO en maandelijkse groeianalyse",
+    ],
+    pages: [
+      "Google Ads",
+      "Meta Ads",
+      "Influencers",
+      "Landings",
+      "Retargeting",
+      "CRO",
+    ],
+    height: "lg:h-[520px]",
   },
 ] as const;
 
 export function PilatesGoogleStrategy() {
   const reduce = useReducedMotion();
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(2);
 
   return (
     <section
@@ -78,8 +95,8 @@ export function PilatesGoogleStrategy() {
 
         {/* Ascending ladder */}
         <Reveal delay={0.1}>
-          <div className="relative mt-14 lg:mt-16 lg:pl-10">
-            <p className="pointer-events-none absolute bottom-14 left-0 hidden origin-bottom-left -rotate-90 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 lg:block">
+          <div className="relative mt-14 lg:mt-16 lg:pl-12">
+            <p className="pointer-events-none absolute bottom-16 left-0 z-20 hidden origin-bottom-left -rotate-90 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 lg:block">
               Zichtbaarheid
             </p>
 
@@ -125,6 +142,23 @@ export function PilatesGoogleStrategy() {
                       <p className="mt-2 text-sm leading-relaxed text-slate-300">
                         {step.body}
                       </p>
+
+                      {step.bullets.length > 0 ? (
+                        <ul className="mt-3 space-y-1.5">
+                          {step.bullets.map((item) => (
+                            <li
+                              key={item}
+                              className="flex gap-2 text-left text-[12px] leading-snug text-slate-200"
+                            >
+                              <span
+                                className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#FF5722]"
+                                aria-hidden
+                              />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
 
                       <div className="mt-4 flex flex-wrap gap-1.5">
                         {step.pages.map((page) => (
