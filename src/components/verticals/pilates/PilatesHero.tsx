@@ -2,15 +2,7 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import {
-  ArrowUpRight,
-  CalendarCheck,
-  Globe2,
-  MapPin,
-  Megaphone,
-  MessageCircle,
-  Search,
-} from "lucide-react";
+import { ArrowUpRight, MessageCircle, Search } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
 import { Magnetic } from "@/components/effects/Magnetic";
@@ -33,26 +25,10 @@ const whatsappLink =
   ) ?? "/contact";
 
 const pageSummary = [
-  {
-    icon: Globe2,
-    label: "Custom website",
-    line: "From scratch, op jouw studio. Niet uit een template.",
-  },
-  {
-    icon: MapPin,
-    label: "Lokaal gevonden",
-    line: "SEO op Pilates + jouw stad, zodat zoekers jou vinden.",
-  },
-  {
-    icon: CalendarCheck,
-    label: "Boekingsflow",
-    line: "Van klik naar proefles of lidmaatschap, zonder gedoe.",
-  },
-  {
-    icon: Megaphone,
-    label: "Ads & groei",
-    line: "Google Ads en Meta Ads als je wilt opschalen.",
-  },
+  { label: "Website", hint: "From scratch" },
+  { label: "Lokaal SEO", hint: "Pilates + stad" },
+  { label: "Boekingen", hint: "Klik → les" },
+  { label: "Ads", hint: "Google · Meta" },
 ] as const;
 
 export function PilatesHero() {
@@ -74,8 +50,8 @@ export function PilatesHero() {
         <LivingCloudGrid />
       </div>
 
-      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10 lg:px-8 lg:pb-24 lg:pt-20">
-        <Reveal>
+      <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-2 lg:items-stretch lg:gap-12 lg:px-8 lg:pb-24 lg:pt-20">
+        <Reveal className="flex h-full flex-col">
           <div className="flex flex-wrap items-center gap-3">
             <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-orange-300">
               Voor boutique Pilates studio&apos;s
@@ -87,23 +63,22 @@ export function PilatesHero() {
             ) : null}
           </div>
 
-          <h1 className="mt-5 text-[2.35rem] font-extrabold leading-[1.05] tracking-tight text-balance sm:text-5xl lg:text-[3.25rem] lg:leading-[1.02]">
-            Ze zoeken Pilates in jouw stad.
+          <h1 className="mt-5 max-w-[18ch] text-[2.45rem] font-extrabold leading-[1.05] tracking-tight sm:max-w-none sm:text-[2.85rem] lg:text-[3.05rem] lg:leading-[1.05]">
+            Ze zoeken Pilates.
             <br />
-            <span className="text-[#FF5722]">Ik zorg dat ze bij jou boeken.</span>
+            <span className="text-[#FF5722]">Ik zorg dat ze boeken.</span>
           </h1>
 
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
-            Website from scratch, lokale SEO op Pilates + jouw stad, en een
-            boekingsflow die klopt. Optioneel Google Ads of Meta Ads erbij.
-            Vanaf {fromMonthly} per maand
+          <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-slate-300 sm:text-base">
+            Custom website, lokale SEO en een boekingsflow die klopt. Optioneel
+            Google Ads of Meta Ads. Vanaf {fromMonthly}/m
             {launchPromo ? (
               <>
-                , launch tijdelijk{" "}
+                , launch{" "}
                 <span className="font-semibold text-orange-200">€0</span>
               </>
             ) : null}
-            . Eén partner per stad. Je praat rechtstreeks met mij.
+            . Eén partner per stad.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
@@ -156,40 +131,31 @@ export function PilatesHero() {
               }
               className="font-semibold text-orange-200/90 underline decoration-orange-200/35 underline-offset-2 hover:text-white"
             >
-              Bekijk de live demo
+              Live demo
             </a>
           </p>
 
-          <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {pageSummary.map((item) => {
-              const Icon = item.icon;
-              return (
-                <li
-                  key={item.label}
-                  className="rounded-2xl border border-white/10 bg-white/[0.035] px-4 py-3.5 transition hover:border-white/20 hover:bg-white/[0.06]"
-                >
-                  <div className="flex items-start gap-3">
-                    <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-xl bg-[#FF5722]/15 text-[#FF5722]">
-                      <Icon className="size-4" aria-hidden />
-                    </span>
-                    <div className="min-w-0">
-                      <p className="text-sm font-bold tracking-tight text-white">
-                        {item.label}
-                      </p>
-                      <p className="mt-0.5 text-xs leading-relaxed text-slate-400">
-                        {item.line}
-                      </p>
-                    </div>
-                  </div>
+          {/* Compact page summary — fills remaining column height */}
+          <div className="mt-8 border-t border-white/10 pt-5 lg:mt-auto lg:pt-6">
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">
+              Wat je hier regelt
+            </p>
+            <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-4 sm:gap-3">
+              {pageSummary.map((item) => (
+                <li key={item.label} className="min-w-0">
+                  <p className="text-sm font-bold tracking-tight text-white">
+                    {item.label}
+                  </p>
+                  <p className="mt-0.5 text-[11px] text-slate-400">{item.hint}</p>
                 </li>
-              );
-            })}
-          </ul>
+              ))}
+            </ul>
+          </div>
         </Reveal>
 
-        <Reveal delay={0.1} className="relative">
-          <div className="relative mx-auto w-full max-w-[420px] lg:max-w-none">
-            <div className="absolute -left-2 top-14 z-20 hidden rotate-[-6deg] sm:block lg:-left-8 lg:top-16">
+        <Reveal delay={0.1} className="relative flex h-full">
+          <div className="relative flex h-full w-full flex-col">
+            <div className="absolute -left-2 top-[18%] z-20 hidden rotate-[-6deg] sm:block lg:-left-6">
               <div className="flex items-center gap-2 rounded-xl border border-white/15 bg-slate-900/90 px-3 py-2 shadow-xl backdrop-blur-md">
                 <Search className="size-3.5 text-sky-300" aria-hidden />
                 <span className="text-xs font-semibold text-slate-100">
@@ -197,14 +163,14 @@ export function PilatesHero() {
                 </span>
               </div>
             </div>
-            <div className="absolute -right-1 bottom-24 z-20 hidden rotate-[4deg] sm:block lg:-right-6">
+            <div className="absolute -right-1 bottom-[28%] z-20 hidden rotate-[4deg] sm:block lg:-right-4">
               <div className="rounded-xl border border-orange-400/30 bg-[#FF5722] px-3 py-2 text-xs font-bold text-white shadow-xl">
                 Proefles geboekt
               </div>
             </div>
 
-            <figure className="relative overflow-hidden rounded-[1.35rem] border border-white/15 bg-slate-950 shadow-[0_32px_80px_rgba(0,0,0,0.45)]">
-              <div className="flex items-center gap-1.5 border-b border-white/10 bg-slate-900/95 px-3 py-2.5">
+            <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border border-white/15 bg-slate-950 shadow-[0_32px_80px_rgba(0,0,0,0.45)]">
+              <div className="flex shrink-0 items-center gap-1.5 border-b border-white/10 bg-slate-900/95 px-3 py-2.5">
                 <span className="size-2 rounded-full bg-rose-400/80" />
                 <span className="size-2 rounded-full bg-amber-400/80" />
                 <span className="size-2 rounded-full bg-emerald-400/80" />
@@ -215,13 +181,13 @@ export function PilatesHero() {
                   </span>
                 </span>
               </div>
-              <div className="relative aspect-[4/3] bg-slate-800">
+              <div className="relative min-h-[240px] flex-1 bg-slate-800 sm:min-h-[280px] lg:min-h-0">
                 <Image
                   src={cfg.caseStudy.imageSrc}
                   alt="High-end Pilates studio website"
                   fill
                   priority
-                  sizes="(max-width: 1024px) 90vw, 440px"
+                  sizes="(max-width: 1024px) 90vw, 480px"
                   className="object-cover object-center"
                 />
                 <div
@@ -229,7 +195,7 @@ export function PilatesHero() {
                   aria-hidden
                 />
               </div>
-              <figcaption className="grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-slate-950/95 text-center">
+              <figcaption className="grid shrink-0 grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-slate-950/95 text-center">
                 {[
                   { step: "Google", hint: "Gevonden" },
                   { step: "Website", hint: "Overtuigd" },
@@ -247,7 +213,7 @@ export function PilatesHero() {
               </figcaption>
             </figure>
 
-            <p className="mt-4 text-center text-xs text-slate-400 sm:text-left">
+            <p className="mt-3 shrink-0 text-center text-xs text-slate-400 sm:text-left">
               Vanaf {fromMonthly}
               {launchPromo ? (
                 <>
@@ -260,7 +226,7 @@ export function PilatesHero() {
                 </>
               ) : (
                 " + launch"
-              )}
+              )}{" "}
               · 1 studio per stad
             </p>
           </div>
