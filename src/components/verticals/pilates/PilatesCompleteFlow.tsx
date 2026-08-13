@@ -1,11 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  AnimatePresence,
-  motion,
-  useReducedMotion,
-} from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import {
   ArrowRight,
   CalendarCheck,
@@ -23,7 +19,7 @@ const PHASES = [
     icon: MapPin,
     kicker: "Gevonden",
     title: "Google zoekt. Jij verschijnt.",
-    body: 'Lokale zoekvraag zoals "Pilates + jouw stad". Structuur, Maps en SEO die daarop meewerken.',
+    body: "Lokale zoekvraag, structuur en Maps die samenwerken.",
     pill: "Zoeken → jouw studio",
   },
   {
@@ -31,7 +27,7 @@ const PHASES = [
     icon: Sparkles,
     kicker: "Vertrouwen",
     title: "De site overtuigt in één scroll.",
-    body: "Art direction, lessen, trainers, prijzen. Voelt als jouw studio, niet als stockfoto-sportschool.",
+    body: "Art direction, lessen, trainers en prijzen die kloppen.",
     pill: "Twijfel → dit is het",
   },
   {
@@ -39,7 +35,7 @@ const PHASES = [
     icon: CalendarCheck,
     kicker: "Boeken",
     title: "Klik wordt een plek in het rooster.",
-    body: "Koppeling met je systeem, branded app of maatwerk. Echt boeken, niet eindeloos heen-en-weer appen.",
+    body: "Jouw systeem, branded app of maatwerk. Echt boeken.",
     pill: "Klik → roosterplek",
   },
   {
@@ -47,31 +43,28 @@ const PHASES = [
     icon: RefreshCw,
     kicker: "Terugkomen",
     title: "Leden blijven in je systeem.",
-    body: "App, herinneringen, memberships. Het pad stopt niet bij de eerste boeking. Dat is retentie.",
+    body: "App, herinneringen en memberships houden het warm.",
     pill: "Les → vast lid",
   },
 ] as const;
 
-const EASE = [0.22, 1, 0.36, 1] as const;
+type PhaseIndex = 0 | 1 | 2 | 3;
 
 export function PilatesCompleteFlow() {
   const reduce = useReducedMotion();
-  const [active, setActive] = useState(0);
-  const phase = PHASES[active]!;
-  const ActiveIcon = phase.icon;
+  const [active, setActive] = useState<PhaseIndex>(0);
 
   return (
     <section
-      className="relative overflow-hidden border-b border-slate-200 bg-slate-50"
+      className="relative overflow-hidden border-b border-slate-800 bg-[#0c1222] text-white"
       aria-labelledby="pilates-flow-heading"
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-45"
+        className="pointer-events-none absolute inset-0"
         aria-hidden
         style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,87,34,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,87,34,0.045) 1px, transparent 1px)",
-          backgroundSize: "36px 36px",
+          background:
+            "radial-gradient(ellipse 60% 45% at 10% 0%, rgba(255,87,34,0.22), transparent 55%), radial-gradient(ellipse 45% 40% at 95% 100%, rgba(56,189,248,0.12), transparent 55%)",
         }}
       />
 
@@ -79,31 +72,31 @@ export function PilatesCompleteFlow() {
         <Reveal>
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-orange-300">
                 Complete studio flow
               </p>
               <h2
                 id="pilates-flow-heading"
-                className="mt-3 text-3xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.06]"
+                className="mt-3 text-3xl font-extrabold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.06]"
               >
                 Van Google-zoekopdracht tot vaste Pilates-klant.
                 <span className="mt-1 block text-[#FF5722]">
                   Dat is het echte product.
                 </span>
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
-                Tik een stap. Zo werkt het pad waar je omzet van hangt: gevonden
-                worden, overtuigen, boeken, terugkomen. Van{" "}
+              <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+                Volg de route. Gevonden worden, overtuigen, boeken, terugkomen.
+                Van{" "}
                 <Link
                   href="/diensten/seo"
-                  className="font-bold text-slate-900 underline decoration-[#FF5722]/40 underline-offset-2 hover:text-[#FF5722]"
+                  className="font-bold text-white underline decoration-[#FF5722]/50 underline-offset-2 hover:text-[#FF5722]"
                 >
                   SEO
                 </Link>{" "}
                 tot{" "}
                 <Link
                   href="/campagnes"
-                  className="font-bold text-slate-900 underline decoration-[#FF5722]/40 underline-offset-2 hover:text-[#FF5722]"
+                  className="font-bold text-white underline decoration-[#FF5722]/50 underline-offset-2 hover:text-[#FF5722]"
                 >
                   campagnes
                 </Link>
@@ -112,7 +105,7 @@ export function PilatesCompleteFlow() {
             </div>
             <a
               href="#pakketten"
-              className="group inline-flex shrink-0 items-center gap-2 self-start rounded-2xl bg-slate-900 px-5 py-3.5 text-sm font-bold text-white transition hover:bg-[#FF5722] lg:self-auto"
+              className="group inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-900 transition hover:bg-[#FF5722] hover:text-white lg:self-auto"
             >
               Welk pakket past?
               <ArrowRight
@@ -123,149 +116,173 @@ export function PilatesCompleteFlow() {
           </div>
         </Reveal>
 
-        {/* Interactive journey */}
-        <div className="mt-12 grid gap-6 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_minmax(280px,340px)] lg:items-stretch lg:gap-8">
-          <Reveal className="h-full">
-            <div className="flex h-full flex-col rounded-3xl border border-slate-200/90 bg-white p-5 shadow-[0_20px_50px_-28px_rgba(15,23,42,0.18)] sm:p-6">
-              {/* Progress rail */}
-              <div className="mb-5 flex items-center gap-1.5" aria-hidden>
-                {PHASES.map((p, i) => (
-                  <div key={p.id} className="flex flex-1 items-center gap-1.5">
-                    <button
-                      type="button"
-                      onClick={() => setActive(i)}
+        {/* Desktop: zigzag rail */}
+        <Reveal delay={0.1}>
+          <div className="relative mt-16 hidden lg:block">
+            <div
+              className="absolute left-0 right-0 top-1/2 h-px -translate-y-1/2 bg-white/12"
+              aria-hidden
+            />
+            <motion.div
+              className="absolute left-0 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-sky-400 via-[#FF5722] to-orange-300"
+              aria-hidden
+              initial={false}
+              animate={{
+                width: `${((active + 1) / PHASES.length) * 100}%`,
+              }}
+              transition={
+                reduce ? { duration: 0 } : { duration: 0.4, ease: [0.22, 1, 0.36, 1] }
+              }
+            />
+
+            <ol className="relative grid grid-cols-4">
+              {PHASES.map((phase, index) => {
+                const Icon = phase.icon;
+                const isActive = active === index;
+                const above = index % 2 === 0;
+                const reached = index <= active;
+
+                const card = (
+                  <motion.div
+                    className={
+                      isActive
+                        ? "w-full rounded-2xl border border-[#FF5722]/50 bg-white/[0.07] p-4 backdrop-blur-sm"
+                        : "w-full rounded-2xl border border-white/10 bg-white/[0.03] p-4"
+                    }
+                    initial={false}
+                    animate={
+                      reduce
+                        ? undefined
+                        : { y: isActive ? -4 : 0, opacity: isActive ? 1 : 0.72 }
+                    }
+                    transition={{ duration: 0.28 }}
+                  >
+                    <p
                       className={
-                        i <= active
-                          ? "size-2.5 rounded-full bg-[#FF5722] transition"
-                          : "size-2.5 rounded-full bg-slate-200 transition"
+                        isActive
+                          ? "text-[10px] font-bold uppercase tracking-[0.18em] text-orange-300"
+                          : "text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400"
                       }
-                      aria-label={`Stap ${i + 1}: ${p.kicker}`}
-                    />
-                    {i < PHASES.length - 1 ? (
-                      <div
-                        className={
-                          i < active
-                            ? "h-0.5 flex-1 rounded-full bg-[#FF5722]/70"
-                            : "h-0.5 flex-1 rounded-full bg-slate-200"
-                        }
-                      />
-                    ) : null}
-                  </div>
-                ))}
-              </div>
-
-              <ol
-                className="grid flex-1 gap-3 sm:grid-cols-2"
-                role="tablist"
-                aria-label="Studio flow stappen"
-              >
-                {PHASES.map((item, index) => {
-                  const Icon = item.icon;
-                  const selected = active === index;
-                  return (
-                    <li key={item.id} className="h-full">
-                      <button
-                        type="button"
-                        role="tab"
-                        aria-selected={selected}
-                        onClick={() => setActive(index)}
-                        onMouseEnter={() => {
-                          if (!reduce) setActive(index);
-                        }}
-                        className={
-                          selected
-                            ? "flex h-full w-full flex-col rounded-2xl border-2 border-slate-900 bg-slate-900 p-4 text-left text-white transition sm:p-5"
-                            : "flex h-full w-full flex-col rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left text-slate-900 transition hover:border-slate-300 hover:bg-white sm:p-5"
-                        }
-                      >
-                        <span className="flex items-center justify-between gap-2">
-                          <span
-                            className={
-                              selected
-                                ? "flex size-9 items-center justify-center rounded-xl bg-[#FF5722] text-white"
-                                : "flex size-9 items-center justify-center rounded-xl bg-white text-[#FF5722] ring-1 ring-slate-200"
-                            }
-                          >
-                            <Icon className="size-4" aria-hidden />
-                          </span>
-                          <span
-                            className={
-                              selected
-                                ? "text-[10px] font-bold uppercase tracking-[0.16em] text-orange-300"
-                                : "text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF5722]"
-                            }
-                          >
-                            {item.kicker}
-                          </span>
-                        </span>
-                        <span className="mt-3 text-sm font-extrabold leading-snug tracking-tight sm:text-[0.95rem]">
-                          {item.title}
-                        </span>
-                        <span
-                          className={
-                            selected
-                              ? "mt-auto pt-4 text-[11px] font-bold text-orange-200"
-                              : "mt-auto pt-4 text-[11px] font-bold text-slate-500"
-                          }
-                        >
-                          {item.pill}
-                        </span>
-                      </button>
-                    </li>
-                  );
-                })}
-              </ol>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.08} className="h-full">
-            <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-[0_24px_50px_-28px_rgba(15,23,42,0.2)]">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={phase.id}
-                  initial={reduce ? false : { opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={reduce ? undefined : { opacity: 0, y: -8 }}
-                  transition={{ duration: 0.25, ease: EASE }}
-                  className="flex h-full flex-col"
-                >
-                  <div className="bg-slate-900 p-6 text-white sm:p-7">
-                    <div className="flex items-center gap-3">
-                      <span className="flex size-11 items-center justify-center rounded-2xl bg-[#FF5722]">
-                        <ActiveIcon className="size-5" aria-hidden />
-                      </span>
-                      <div>
-                        <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-orange-300">
-                          Stap {active + 1} van {PHASES.length}
-                        </p>
-                        <p className="mt-0.5 text-sm font-semibold text-slate-300">
-                          {phase.kicker}
-                        </p>
-                      </div>
-                    </div>
-                    <h3 className="mt-5 text-xl font-extrabold tracking-tight sm:text-2xl">
+                    >
+                      {phase.kicker}
+                    </p>
+                    <p className="mt-2 text-base font-extrabold leading-snug tracking-tight">
                       {phase.title}
-                    </h3>
-                  </div>
-
-                  <div className="flex flex-1 flex-col p-6 sm:p-7">
-                    <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+                    </p>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-300">
                       {phase.body}
                     </p>
-                    <p className="mt-5 inline-flex w-fit whitespace-nowrap rounded-full bg-slate-900 px-3.5 py-2 text-xs font-bold text-orange-200">
+                    <p
+                      className={
+                        isActive
+                          ? "mt-3 inline-flex whitespace-nowrap rounded-full bg-[#FF5722] px-3 py-1 text-[11px] font-bold text-white"
+                          : "mt-3 inline-flex whitespace-nowrap rounded-full bg-white/10 px-3 py-1 text-[11px] font-bold text-slate-300"
+                      }
+                    >
                       {phase.pill}
                     </p>
-                    <p className="mt-auto pt-8 text-xs leading-relaxed text-slate-500">
-                      Je koopt geen losse website. Je koopt een commercieel
-                      systeem rond je rooster. Local Growth en Growth Partner
-                      pakken vindbaarheid en Google Ads erbij.
-                    </p>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-          </Reveal>
-        </div>
+                  </motion.div>
+                );
+
+                const stem = (
+                  <span
+                    className={
+                      reached
+                        ? "block h-8 w-px bg-[#FF5722]/60"
+                        : "block h-8 w-px bg-white/15"
+                    }
+                    aria-hidden
+                  />
+                );
+
+                return (
+                  <li key={phase.id} className="px-2">
+                    <button
+                      type="button"
+                      onClick={() => setActive(index as PhaseIndex)}
+                      onMouseEnter={() => setActive(index as PhaseIndex)}
+                      className="flex w-full flex-col items-center text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF5722] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0c1222]"
+                      aria-pressed={isActive}
+                    >
+                      <div className="flex h-[220px] w-full flex-col justify-end">
+                        {above ? (
+                          <>
+                            {card}
+                            <div className="flex justify-center">{stem}</div>
+                          </>
+                        ) : null}
+                      </div>
+
+                      <motion.div
+                        className={
+                          isActive
+                            ? "z-10 flex size-14 items-center justify-center rounded-2xl bg-[#FF5722] text-white shadow-[0_12px_30px_rgba(255,87,34,0.45)]"
+                            : reached
+                              ? "z-10 flex size-14 items-center justify-center rounded-2xl bg-white/10 text-orange-200 ring-1 ring-[#FF5722]/40"
+                              : "z-10 flex size-14 items-center justify-center rounded-2xl bg-[#0c1222] text-slate-400 ring-1 ring-white/15"
+                        }
+                        initial={false}
+                        animate={reduce ? undefined : { scale: isActive ? 1.06 : 1 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      >
+                        <Icon className="size-6" aria-hidden />
+                      </motion.div>
+
+                      <div className="flex h-[220px] w-full flex-col justify-start">
+                        {above ? null : (
+                          <>
+                            <div className="flex justify-center">{stem}</div>
+                            {card}
+                          </>
+                        )}
+                      </div>
+                    </button>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        </Reveal>
+
+        {/* Mobile: vertical rail */}
+        <ol className="relative mt-10 space-y-3 lg:hidden">
+          {PHASES.map((phase, index) => {
+            const Icon = phase.icon;
+            return (
+              <li key={phase.id}>
+                <Reveal delay={index * 0.05}>
+                  <article className="flex gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#FF5722]/15 text-[#FF5722] ring-1 ring-[#FF5722]/30">
+                      <Icon className="size-5" aria-hidden />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-orange-300">
+                        {phase.kicker}
+                      </p>
+                      <p className="mt-1.5 text-base font-extrabold leading-snug tracking-tight">
+                        {phase.title}
+                      </p>
+                      <p className="mt-1.5 text-sm leading-relaxed text-slate-300">
+                        {phase.body}
+                      </p>
+                      <p className="mt-3 inline-flex whitespace-nowrap rounded-full bg-white/10 px-3 py-1 text-[11px] font-bold text-orange-200">
+                        {phase.pill}
+                      </p>
+                    </div>
+                  </article>
+                </Reveal>
+              </li>
+            );
+          })}
+        </ol>
+
+        <Reveal delay={0.16}>
+          <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-slate-400 lg:mt-16">
+            Je koopt geen losse website. Je koopt een commercieel systeem rond je
+            rooster. Local Growth en Growth Partner pakken vindbaarheid en Google
+            Ads erbij.
+          </p>
+        </Reveal>
       </div>
     </section>
   );

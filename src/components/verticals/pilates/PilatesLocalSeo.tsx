@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Search } from "lucide-react";
+import { MapPin, Search, Star } from "lucide-react";
 import { useState } from "react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -10,31 +10,33 @@ import { MarketingFunFactCard } from "@/components/shared/MarketingFunFactCard";
 import { getFunFactById } from "@/data/marketing-fun-facts";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 
-const { queries, pages } = PILATES_VERTICAL.localSeoExamples;
-
-const PAGE_HINTS: Record<string, string> = {
-  Homepage:
-    "Hier landt iemand die je studio al kent. Snelheid, proefles en vertrouwen in één blik.",
-  "Reformer Pilates":
-    "Hoge intentie. Mensen zoeken dit letterlijk. Een dunne tekstpagina wint dat niet.",
-  "Mat Pilates":
-    "Andere zoeker, andere belofte. Apart uitwerken voorkomt dat alles op één hoop belandt.",
-  "Private Pilates":
-    "Premium intentie. Prijs, privacy en boeken moeten hier meteen kloppen.",
-  Prijzen:
-    "Twijfelers willen duidelijkheid. Verberg je tarieven en je verliest ze aan de concurrent.",
-  "Studio / locatie":
-    "Maps, parkeren, sfeer, openingstijden. Lokaal zoeken eindigt vaak hier.",
-  FAQ: "Vragen die je sowieso krijgt, vooraf beantwoord. Scheelt DM's en wrijving.",
-};
+const { queries } = PILATES_VERTICAL.localSeoExamples;
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
+const RESULT_COPY: Record<number, { title: string; snippet: string }> = {
+  0: {
+    title: "Jouw studio · Pilates in het centrum",
+    snippet:
+      "Lessen, tarieven en een proefles die je in twee tikken boekt. Precies wat iemand met deze zoekvraag zoekt.",
+  },
+  1: {
+    title: "Reformer lessen · niveau en rooster",
+    snippet:
+      "Eigen pagina voor reformer, met rooster, begeleiding en wat je kunt verwachten als beginner.",
+  },
+  2: {
+    title: "Proefles plannen · nieuwe leden",
+    snippet:
+      "Directe boekingsroute vanaf Google. Zonder omweg via een contactformulier dat niemand invult.",
+  },
+};
+
 export function PilatesLocalSeo() {
   const reduce = useReducedMotion();
-  const [activePage, setActivePage] = useState(pages[1] ?? pages[0]!);
+  const [activeQuery, setActiveQuery] = useState(0);
   const weetje = getFunFactById("google-page-two");
-  const hint = PAGE_HINTS[activePage] ?? "Elke pagina verdient een eigen zoekintentie.";
+  const query = queries[activeQuery] ?? queries[0]!;
 
   return (
     <section
@@ -42,168 +44,210 @@ export function PilatesLocalSeo() {
       aria-labelledby="pilates-local-seo-heading"
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-50"
+        className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(ellipse_at_top,_rgba(255,87,34,0.08),_transparent_60%)]"
         aria-hidden
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,87,34,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,87,34,0.045) 1px, transparent 1px)",
-          backgroundSize: "36px 36px",
-        }}
       />
 
       <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-        <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
-          {/* Left */}
-          <Reveal className="h-full">
-            <div className="flex h-full flex-col rounded-3xl border border-slate-200/90 bg-white p-6 shadow-[0_20px_50px_-28px_rgba(15,23,42,0.18)] sm:p-8">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-                Local SEO
-              </p>
-              <h2
-                id="pilates-local-seo-heading"
-                className="mt-3 text-3xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-4xl lg:text-[2.45rem] lg:leading-[1.08]"
-              >
-                Mooi is leuk.
-                <span className="mt-1 block text-[#FF5722]">
-                  Gevonden worden betaalt de reformers.
-                </span>
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
-                Ik bouw de site rond echte lokale zoekvraag. Niet rond een
-                keyword-lijst van 200 dunne pagina&apos;s. Local Growth houdt dat
-                maandelijks scherp, want Google blijft bewegen.
-              </p>
+        <Reveal>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+              Local SEO
+            </p>
+            <h2
+              id="pilates-local-seo-heading"
+              className="mt-3 text-3xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.06]"
+            >
+              Mooi is leuk.
+              <span className="text-[#FF5722]">
+                {" "}
+                Gevonden worden betaalt de reformers.
+              </span>
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+              Kies een zoekopdracht die jouw toekomstige leden intikken. Zo ziet
+              het eruit als de site meewerkt in plaats van tegenwerkt.
+            </p>
+          </div>
+        </Reveal>
 
-              <div className="mt-8 flex flex-1 flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50/80">
-                <div className="flex items-center gap-2 border-b border-slate-200/80 bg-white px-4 py-3">
-                  <Search className="size-4 text-slate-400" aria-hidden />
-                  <span className="text-sm font-medium text-slate-700">
-                    pilates + jouw stad
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col justify-center divide-y divide-slate-200/80 p-4 sm:p-5">
-                  {queries.map((q, i) => (
-                    <div key={q} className="py-3.5 first:pt-0 last:pb-0">
-                      <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-                        {i === 0 ? "Dit wil je scoren" : "Hier hoor je bij"}
-                      </p>
-                      <p className="mt-1 text-base font-semibold text-sky-800">
-                        {q}
-                      </p>
-                      <p className="mt-0.5 text-xs text-emerald-700">
-                        jouwstudio.nl · Open · Boek proefles
-                      </p>
-                      <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
-                        Lessen, prijzen en een boekingspad dat klopt. Zo ziet
-                        intentie eruit als de site meewerkt.
-                      </p>
-                    </div>
-                  ))}
-                </div>
+        <div className="relative mt-10 lg:mt-12">
+          {/* Floating weetje, desktop only */}
+          {weetje ? (
+            <Reveal delay={0.18}>
+              <div className="pointer-events-auto absolute -right-2 top-10 hidden w-[250px] rotate-[3deg] xl:block">
+                <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
+                  Weetje · draai me om
+                </p>
+                <MarketingFunFactCard fact={weetje} className="!h-[230px]" />
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+          ) : null}
 
-          {/* Right */}
-          <Reveal delay={0.08} className="h-full">
-            <div className="flex h-full flex-col rounded-3xl border border-slate-200/90 bg-white p-6 shadow-[0_20px_50px_-28px_rgba(15,23,42,0.18)] sm:p-8">
-              <h3 className="text-lg font-extrabold tracking-tight text-slate-900">
-                Tik een pagina. Ik zeg waarom die telt.
-              </h3>
-              <p className="mt-1.5 text-sm text-slate-500">
-                Dunne pagina&apos;s scoren zelden. Dit zijn de bouwstenen.
-              </p>
-
+          {/* Centered Google simulation */}
+          <Reveal delay={0.06}>
+            <div className="mx-auto max-w-2xl">
               <div
-                className="mt-4 flex flex-wrap gap-2"
+                className="flex flex-wrap justify-center gap-2"
                 role="tablist"
-                aria-label="Pagina types"
+                aria-label="Zoekopdrachten"
               >
-                {pages.map((page) => {
-                  const selected = activePage === page;
+                {queries.map((q, i) => {
+                  const selected = activeQuery === i;
                   return (
                     <button
-                      key={page}
+                      key={q}
                       type="button"
                       role="tab"
                       aria-selected={selected}
-                      onClick={() => setActivePage(page)}
+                      onClick={() => setActiveQuery(i)}
+                      onMouseEnter={() => {
+                        if (!reduce) setActiveQuery(i);
+                      }}
                       className={
                         selected
-                          ? "rounded-full border border-slate-900 bg-slate-900 px-3.5 py-2 text-xs font-bold text-white shadow-md transition"
-                          : "rounded-full border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-bold text-slate-600 transition hover:border-slate-300 hover:bg-white hover:text-slate-900"
+                          ? "rounded-full bg-slate-900 px-3.5 py-2 text-xs font-bold text-white"
+                          : "rounded-full border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-600 transition hover:border-slate-300"
                       }
                     >
-                      {page}
+                      {q}
                     </button>
                   );
                 })}
               </div>
 
-              <div className="mt-4 min-h-[5.5rem] rounded-2xl border border-orange-200/70 bg-gradient-to-br from-orange-50 to-white p-4">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={activePage}
-                    initial={reduce ? false : { opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={reduce ? undefined : { opacity: 0, y: -6 }}
-                    transition={{ duration: 0.22, ease: EASE }}
-                  >
-                    <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF5722]">
-                      {activePage}
-                    </p>
-                    <p className="mt-2 text-sm font-semibold leading-relaxed text-slate-800">
-                      {hint}
-                    </p>
-                  </motion.div>
-                </AnimatePresence>
-              </div>
-
-              {weetje ? (
-                <div className="mt-5">
-                  <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                    Weetje · tik om te draaien
-                  </p>
-                  <MarketingFunFactCard
-                    fact={weetje}
-                    className="!h-[210px] sm:!h-[220px]"
+              <div className="mt-5 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_28px_70px_-40px_rgba(15,23,42,0.35)]">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-4 py-4 sm:px-6">
+                  <Search className="size-4 shrink-0 text-slate-400" aria-hidden />
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={query}
+                      initial={reduce ? false : { opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={reduce ? undefined : { opacity: 0, y: -6 }}
+                      transition={{ duration: 0.18, ease: EASE }}
+                      className="truncate text-sm font-semibold text-slate-800 sm:text-base"
+                    >
+                      {query}
+                    </motion.span>
+                  </AnimatePresence>
+                  <span
+                    className="ml-auto h-4 w-px animate-pulse bg-[#FF5722]"
+                    aria-hidden
                   />
                 </div>
-              ) : null}
 
-              <div className="mt-5 flex-1 rounded-2xl bg-slate-900 p-5 text-white sm:p-6">
-                <p className="text-sm font-extrabold tracking-tight">
-                  Studio Edition: Pilates [stad]. Growth: de rest erbij.
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                  Bij €89 injecteer ik SEO al op de kernzoekterm. Bij Local
-                  Growth en Growth Partner volgen meer zoektermen en
-                  landingspagina&apos;s. Strategie gericht op pagina 1, met
-                  serieuze kans op topposities.
-                </p>
-                <p className="mt-4 text-xs leading-relaxed text-slate-400">
-                  Technische SEO, snelheid, schema, interne linking, Google
-                  Business Profile, Search Console, rank tracking. Bij Growth
-                  stuur ik maandelijks bij. Meer over{" "}
-                  <Link
-                    href="/diensten/local-seo"
-                    className="font-bold text-white underline decoration-[#FF5722]/50 underline-offset-2 hover:text-[#FF5722]"
+                {/* Map pack */}
+                <div className="flex items-center gap-3 border-b border-slate-100 bg-slate-50/80 px-4 py-3 sm:px-6">
+                  <span className="flex size-8 items-center justify-center rounded-lg bg-white text-[#FF5722] ring-1 ring-slate-200">
+                    <MapPin className="size-4" aria-hidden />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="text-xs font-extrabold text-slate-900">
+                      Maps · jouw studio bovenaan
+                    </p>
+                    <p className="mt-0.5 flex items-center gap-1 text-[11px] text-slate-500">
+                      <Star className="size-3 fill-amber-400 text-amber-400" aria-hidden />
+                      Google Business Profile netjes ingericht
+                    </p>
+                  </div>
+                </div>
+
+                <AnimatePresence mode="wait">
+                  <motion.ol
+                    key={query}
+                    initial={reduce ? false : { opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={reduce ? undefined : { opacity: 0, y: -8 }}
+                    transition={{ duration: 0.25, ease: EASE }}
+                    className="divide-y divide-slate-100"
                   >
-                    lokale SEO
-                  </Link>{" "}
-                  en{" "}
-                  <Link
-                    href="/vindbaarheid"
-                    className="font-bold text-white underline decoration-[#FF5722]/50 underline-offset-2 hover:text-[#FF5722]"
-                  >
-                    vindbaarheid
-                  </Link>
-                  .
-                </p>
+                    {[0, 1, 2].map((i) => {
+                      const copy = RESULT_COPY[i]!;
+                      const first = i === 0;
+                      return (
+                        <li
+                          key={i}
+                          className={
+                            first
+                              ? "relative bg-orange-50/50 px-4 py-4 sm:px-6"
+                              : "px-4 py-4 sm:px-6"
+                          }
+                        >
+                          {first ? (
+                            <span
+                              className="absolute inset-y-0 left-0 w-1 bg-[#FF5722]"
+                              aria-hidden
+                            />
+                          ) : null}
+                          <p className="text-[11px] text-emerald-700">
+                            jouwstudio.nl · Open · Boek proefles
+                          </p>
+                          <p className="mt-1 text-base font-semibold text-sky-800">
+                            {copy.title}
+                          </p>
+                          <p className="mt-1 text-xs leading-relaxed text-slate-500 sm:text-sm">
+                            {copy.snippet}
+                          </p>
+                        </li>
+                      );
+                    })}
+                  </motion.ol>
+                </AnimatePresence>
               </div>
             </div>
           </Reveal>
         </div>
+
+        {/* Capability strip */}
+        <Reveal delay={0.14}>
+          <div className="mt-10 grid gap-3 sm:grid-cols-3">
+            {[
+              {
+                title: "Techniek die meewerkt",
+                text: "Snelheid, schema, interne linking en een structuur die Google snapt.",
+              },
+              {
+                title: "Maps en profiel",
+                text: "Google Business Profile, categorieën, foto's en reviews op orde.",
+              },
+              {
+                title: "Blijven bijsturen",
+                text: "Search Console, rank tracking en maandelijkse aanpassingen bij Growth.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-[#FF5722]/35"
+              >
+                <p className="text-sm font-extrabold tracking-tight text-slate-900">
+                  {item.title}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-5 text-center text-sm leading-relaxed text-slate-500">
+            Bij Studio Edition zit de injectie op Pilates [jouw stad]. Meer over{" "}
+            <Link
+              href="/diensten/local-seo"
+              className="font-bold text-slate-900 underline decoration-[#FF5722]/40 underline-offset-2 hover:text-[#FF5722]"
+            >
+              lokale SEO
+            </Link>{" "}
+            en{" "}
+            <Link
+              href="/vindbaarheid"
+              className="font-bold text-slate-900 underline decoration-[#FF5722]/40 underline-offset-2 hover:text-[#FF5722]"
+            >
+              vindbaarheid
+            </Link>
+            .
+          </p>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -16,203 +17,187 @@ const sigFrom = formatVerticalMoney({
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-type Track = "foundation" | "custom";
-
-const TRACKS: Record<
-  Track,
+const SEGMENTS = [
   {
-    label: string;
-    eyebrow: string;
-    title: string;
-    body: string;
-    bullets: string[];
-    priceLine: string;
-  }
-> = {
-  foundation: {
-    label: "Studio Edition",
-    eyebrow: "Pilates foundation",
-    title: "High-end basis. Jouw studio erin.",
-    body: "Logo, kleuren, foto's, lessen, stad, booking. Alles personaliseer ik. De technische basis hoeft niet opnieuw uitgevonden.",
-    bullets: [
-      "Gespecialiseerde Pilates art direction",
-      "Aangepast tot het van jou voelt",
-      "SEO-basis + hosting + onderhoud",
-      "Sneller live, scherper geprijsd",
-    ],
-    priceLine: `${monthly}/m · slimme foundation`,
+    id: "foundation",
+    label: "Foundation",
+    weight: "lg:flex-[1.15]",
+    tone: "bg-slate-900 text-white",
+    dot: "bg-orange-300",
+    detail:
+      "De Pilates-fundering, UX en design systems staan al. Die uren zijn ooit gemaakt en betaal jij niet opnieuw.",
   },
-  custom: {
-    label: "Signature Custom",
-    eyebrow: "From scratch",
-    title: "Alles op maat, vanaf nul.",
-    body: "Eigen art direction, UX en architectuur. Als Hills Pilates: uniek, geen foundation-pad.",
-    bullets: [
-      "Volledig unieke art direction",
-      "Custom UX en componentarchitectuur",
-      "Bijzondere koppelingen en funnels",
-      "Past bij multi-location of complexe studio's",
-    ],
-    priceLine: `Vanaf ${sigFrom} · eenmalig`,
+  {
+    id: "branding",
+    label: "Jouw branding",
+    weight: "lg:flex-[1]",
+    tone: "bg-[#FF5722] text-white",
+    dot: "bg-white",
+    detail:
+      "Logo, kleuren, fotografie, lessen, trainers en tarieven. Hier gaat mijn tijd heen, want dit maakt het jouw studio.",
   },
-};
+  {
+    id: "seo",
+    label: "Lokale SEO",
+    weight: "lg:flex-[0.85]",
+    tone: "bg-slate-200 text-slate-900",
+    dot: "bg-[#FF5722]",
+    detail:
+      "Structuur, schema, snelheid en de injectie op Pilates [jouw stad], zodat zoekverkeer je überhaupt vindt.",
+  },
+  {
+    id: "care",
+    label: "Hosting & zorg",
+    weight: "lg:flex-[0.7]",
+    tone: "bg-white text-slate-900 ring-1 ring-slate-200",
+    dot: "bg-slate-400",
+    detail:
+      "Hosting, beveiliging, updates en kleine wijzigingen. Jij mailt mij, ik regel het. Elke maand opnieuw.",
+  },
+] as const;
 
 export function PilatesWhyPrice() {
   const reduce = useReducedMotion();
-  const [track, setTrack] = useState<Track>("foundation");
-  const current = TRACKS[track];
+  const [active, setActive] = useState(0);
+  const segment = SEGMENTS[active]!;
 
   return (
     <section
-      className="relative overflow-hidden border-b border-slate-200 bg-white"
+      className="relative overflow-hidden border-b border-slate-200 bg-slate-50"
       aria-labelledby="pilates-why-price-heading"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-35"
-        aria-hidden
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,87,34,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,87,34,0.04) 1px, transparent 1px)",
-          backgroundSize: "36px 36px",
-        }}
-      />
-
       <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-        <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-10">
-          <Reveal className="h-full">
-            <div className="flex h-full flex-col rounded-3xl border border-slate-200/90 bg-slate-50 p-6 sm:p-8">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-                Eerlijk over de prijs
-              </p>
-              <h2
-                id="pilates-why-price-heading"
-                className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.6rem] lg:leading-[1.08]"
-              >
-                {monthly} per maand.
-                <span className="mt-1 block text-slate-500">
-                  Hoe dan, als het er zo premium uitziet?
-                </span>
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">
-                Omdat de Pilates-fundering, UX en design systems al staan. Ik
-                begin niet iedere keer vanaf een blanco canvas. De uren gaan naar
-                jouw branding, lessen, lokale SEO, booking en afwerking.
-              </p>
-              <p className="mt-4 text-sm font-semibold text-slate-900">
-                Slim hergebruik van een specialistische foundation. Premium
-                resultaat, eerlijke instap.
-              </p>
-
-              <div className="mt-auto pt-8">
-                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-                  Kies je pad
-                </p>
-                <div
-                  className="mt-2.5 flex flex-wrap gap-2"
-                  role="tablist"
-                  aria-label="Prijsroutes"
-                >
-                  {(Object.keys(TRACKS) as Track[]).map((key) => {
-                    const selected = track === key;
-                    return (
-                      <button
-                        key={key}
-                        type="button"
-                        role="tab"
-                        aria-selected={selected}
-                        onClick={() => setTrack(key)}
-                        className={
-                          selected
-                            ? "rounded-full bg-slate-900 px-4 py-2 text-xs font-bold text-white shadow-md"
-                            : "rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-600 hover:border-slate-300"
-                        }
-                      >
-                        {TRACKS[key].label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+        {/* Editorial statement */}
+        <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
+          <Reveal className="lg:col-span-7">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+              Eerlijk over de prijs
+            </p>
+            <h2
+              id="pilates-why-price-heading"
+              className="mt-4 text-[2.6rem] font-extrabold leading-[0.95] tracking-tight text-slate-900 sm:text-[3.6rem] lg:text-[4.6rem]"
+            >
+              {monthly}
+              <span className="block text-slate-400">per maand.</span>
+              <span className="mt-2 block text-[1.6rem] leading-tight text-[#FF5722] sm:text-[2rem] lg:text-[2.3rem]">
+                Hoe kan dat, zo premium?
+              </span>
+            </h2>
           </Reveal>
 
-          <Reveal delay={0.08} className="h-full">
-            <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_24px_50px_-28px_rgba(15,23,42,0.2)]">
+          <Reveal delay={0.08} className="lg:col-span-5 lg:pt-24">
+            <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
+              Omdat ik niet iedere keer op een blanco canvas begin. De
+              Pilates-fundering staat, dus de uren gaan naar jouw studio in
+              plaats van naar het opnieuw uitvinden van een menu.
+            </p>
+            <p className="mt-4 text-sm font-semibold text-slate-900">
+              Slim hergebruik van een specialistische foundation. Premium
+              resultaat, eerlijke instap.
+            </p>
+          </Reveal>
+        </div>
+
+        {/* Interactive allocation bar */}
+        <Reveal delay={0.12}>
+          <div className="mt-12 lg:mt-16">
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+              Waar de uren heen gaan
+            </p>
+
+            <div
+              className="mt-3 flex flex-col gap-2 lg:flex-row lg:gap-2.5"
+              role="tablist"
+              aria-label="Kostenverdeling"
+            >
+              {SEGMENTS.map((item, i) => {
+                const selected = active === i;
+                return (
+                  <motion.button
+                    key={item.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={selected}
+                    onClick={() => setActive(i)}
+                    onMouseEnter={() => {
+                      if (!reduce) setActive(i);
+                    }}
+                    className={`${item.tone} ${item.weight} group relative overflow-hidden rounded-2xl px-4 py-4 text-left transition sm:px-5`}
+                    initial={false}
+                    animate={
+                      reduce
+                        ? undefined
+                        : { y: selected ? -4 : 0, opacity: selected ? 1 : 0.82 }
+                    }
+                    transition={{ duration: 0.25, ease: EASE }}
+                  >
+                    <span className="flex items-center gap-2">
+                      <span
+                        className={`size-1.5 rounded-full ${item.dot}`}
+                        aria-hidden
+                      />
+                      <span className="text-sm font-extrabold tracking-tight">
+                        {item.label}
+                      </span>
+                    </span>
+                    <span
+                      className={
+                        selected
+                          ? "mt-3 block h-0.5 w-full rounded-full bg-current opacity-70"
+                          : "mt-3 block h-0.5 w-8 rounded-full bg-current opacity-30"
+                      }
+                      aria-hidden
+                    />
+                  </motion.button>
+                );
+              })}
+            </div>
+
+            <div className="mt-4 min-h-[5.5rem] rounded-2xl border border-slate-200 bg-white px-5 py-4 sm:px-6 sm:py-5">
               <AnimatePresence mode="wait">
                 <motion.div
-                  key={track}
-                  initial={reduce ? false : { opacity: 0, x: 12 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={reduce ? undefined : { opacity: 0, x: -10 }}
-                  transition={{ duration: 0.25, ease: EASE }}
-                  className="flex h-full flex-col"
+                  key={segment.id}
+                  initial={reduce ? false : { opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={reduce ? undefined : { opacity: 0, y: -6 }}
+                  transition={{ duration: 0.2, ease: EASE }}
                 >
-                  <div
-                    className={
-                      track === "foundation"
-                        ? "bg-slate-900 p-6 text-white sm:p-8"
-                        : "bg-gradient-to-br from-[#FF5722] to-[#e64a19] p-6 text-white sm:p-8"
-                    }
-                  >
-                    <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-orange-200">
-                      {current.eyebrow}
-                    </p>
-                    <h3 className="mt-2 text-xl font-extrabold tracking-tight sm:text-2xl">
-                      {current.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-white/80">
-                      {current.body}
-                    </p>
-                    <p className="mt-5 inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-bold">
-                      {current.priceLine}
-                    </p>
-                  </div>
-
-                  <ul className="flex flex-1 flex-col gap-3 p-6 sm:p-8">
-                    {current.bullets.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50 px-3.5 py-3 text-sm font-semibold text-slate-800"
-                      >
-                        <span
-                          className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[#FF5722]"
-                          aria-hidden
-                        />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="border-t border-slate-100 px-6 py-4 sm:px-8">
-                    {track === "foundation" ? (
-                      <p className="text-sm text-slate-500">
-                        Liever alles vanaf nul?{" "}
-                        <button
-                          type="button"
-                          onClick={() => setTrack("custom")}
-                          className="font-bold text-slate-900 underline decoration-[#FF5722]/40 underline-offset-2 hover:text-[#FF5722]"
-                        >
-                          Bekijk Signature Custom
-                        </button>
-                      </p>
-                    ) : (
-                      <p className="text-sm text-slate-500">
-                        Of spring naar{" "}
-                        <a
-                          href="#signature-custom"
-                          className="font-bold text-slate-900 underline decoration-[#FF5722]/40 underline-offset-2 hover:text-[#FF5722]"
-                        >
-                          Signature Custom
-                        </a>{" "}
-                        en vraag het aan.
-                      </p>
-                    )}
-                  </div>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#FF5722]">
+                    {segment.label}
+                  </p>
+                  <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-700 sm:text-base">
+                    {segment.detail}
+                  </p>
                 </motion.div>
               </AnimatePresence>
             </div>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
+
+        {/* Slim Signature Custom strip */}
+        <Reveal delay={0.16}>
+          <a
+            href="#signature-custom"
+            className="group mt-5 flex flex-col gap-3 rounded-2xl bg-slate-900 px-5 py-4 text-white transition hover:bg-slate-800 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-5"
+          >
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-orange-300">
+                Liever alles vanaf nul
+              </p>
+              <p className="mt-1.5 text-sm font-semibold text-slate-200 sm:text-base">
+                Signature Custom bouwt from scratch. Eigen art direction, UX en
+                architectuur. Vanaf {sigFrom} eenmalig.
+              </p>
+            </div>
+            <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#FF5722] px-4 py-2 text-sm font-bold">
+              Bekijk Signature
+              <ArrowUpRight
+                className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                aria-hidden
+              />
+            </span>
+          </a>
+        </Reveal>
       </div>
     </section>
   );

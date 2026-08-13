@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
@@ -9,37 +9,16 @@ import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 
 const steps = PILATES_VERTICAL.howItWorks;
 
-const STEP_CHIPS = [
-  "Intake",
-  "Richting",
-  "Bouwen",
-  "Live",
-  "Groeien",
-] as const;
-
-const EASE = [0.22, 1, 0.36, 1] as const;
-
 export function PilatesHowItWorks() {
   const reduce = useReducedMotion();
   const [active, setActive] = useState(0);
-  const step = steps[active] ?? steps[0]!;
 
   return (
     <section
       className="relative overflow-hidden border-b border-slate-200 bg-slate-50"
       aria-labelledby="pilates-how-heading"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-45"
-        aria-hidden
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,87,34,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,87,34,0.04) 1px, transparent 1px)",
-          backgroundSize: "36px 36px",
-        }}
-      />
-
-      <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <Reveal>
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
             Werkwijze
@@ -50,100 +29,93 @@ export function PilatesHowItWorks() {
           >
             Snel. Persoonlijk. Duidelijk.
           </h2>
-          <p className="mt-4 max-w-xl text-base text-slate-600">
-            Intake past op één koffie. Daarna bouw ik door. Tik een stap, zie
-            wat er gebeurt.
+          <p className="mt-4 text-base leading-relaxed text-slate-600">
+            Intake past op één koffie. Daarna bouw ik door en weet jij steeds
+            waar je aan toe bent.
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(280px,380px)] lg:items-stretch">
-          <Reveal className="h-full">
-            <ol className="flex h-full flex-col gap-2.5">
-              {steps.map((item, i) => {
-                const selected = active === i;
-                return (
-                  <li key={item.title} className="flex-1">
-                    <button
-                      type="button"
-                      onClick={() => setActive(i)}
-                      onMouseEnter={() => setActive(i)}
+        <ol className="relative mt-10 pl-8 sm:pl-10">
+          <div
+            className="absolute left-[11px] top-2 bottom-8 w-px bg-slate-200 sm:left-[15px]"
+            aria-hidden
+          />
+          <motion.div
+            className="absolute left-[11px] top-2 w-px bg-[#FF5722] sm:left-[15px]"
+            aria-hidden
+            initial={false}
+            animate={{
+              height: `${((active + 1) / steps.length) * 88}%`,
+            }}
+            transition={
+              reduce ? { duration: 0 } : { duration: 0.35, ease: [0.22, 1, 0.36, 1] }
+            }
+          />
+
+          {steps.map((step, i) => {
+            const selected = active === i;
+            return (
+              <li key={step.title} className="relative">
+                <Reveal delay={i * 0.04}>
+                  <button
+                    type="button"
+                    onClick={() => setActive(i)}
+                    onMouseEnter={() => {
+                      if (!reduce) setActive(i);
+                    }}
+                    aria-pressed={selected}
+                    className={
+                      selected
+                        ? "mb-2 block w-full rounded-2xl border border-[#FF5722]/30 bg-white px-5 py-4 text-left shadow-[0_16px_36px_-26px_rgba(15,23,42,0.35)] transition"
+                        : "mb-2 block w-full rounded-2xl border border-transparent px-5 py-4 text-left transition hover:bg-white/70"
+                    }
+                  >
+                    <span
                       className={
                         selected
-                          ? "flex h-full w-full items-start gap-4 rounded-2xl border-2 border-slate-900 bg-slate-900 px-4 py-4 text-left text-white shadow-lg transition sm:px-5"
-                          : "flex h-full w-full items-start gap-4 rounded-2xl border border-slate-200 bg-white px-4 py-4 text-left text-slate-900 transition hover:border-slate-300 sm:px-5"
+                          ? "absolute -left-8 top-6 flex size-6 items-center justify-center rounded-full bg-[#FF5722] ring-4 ring-slate-50 sm:-left-10"
+                          : "absolute -left-8 top-6 flex size-6 items-center justify-center rounded-full bg-white ring-4 ring-slate-50 sm:-left-10"
                       }
+                      aria-hidden
                     >
                       <span
                         className={
                           selected
-                            ? "mt-0.5 text-sm font-extrabold text-orange-300"
-                            : "mt-0.5 text-sm font-extrabold text-[#FF5722]"
+                            ? "size-2 rounded-full bg-white"
+                            : "size-2 rounded-full bg-slate-300"
                         }
-                        aria-hidden
-                      >
-                        {STEP_CHIPS[i] ?? String.fromCharCode(65 + i)}
-                      </span>
-                      <span className="min-w-0">
-                        <span className="block text-base font-extrabold tracking-tight sm:text-lg">
-                          {item.title}
-                        </span>
-                        <span
-                          className={
-                            selected
-                              ? "mt-1 block text-sm leading-relaxed text-slate-300 lg:hidden"
-                              : "mt-1 block text-sm leading-relaxed text-slate-500 lg:hidden"
-                          }
-                        >
-                          {item.body}
-                        </span>
-                      </span>
-                    </button>
-                  </li>
-                );
-              })}
-            </ol>
-          </Reveal>
+                      />
+                    </span>
 
-          <Reveal delay={0.08} className="hidden h-full lg:block">
-            <div className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-[0_24px_50px_-28px_rgba(15,23,42,0.2)]">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={active}
-                  initial={reduce ? false : { opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={reduce ? undefined : { opacity: 0, y: -8 }}
-                  transition={{ duration: 0.22, ease: EASE }}
-                  className="flex h-full flex-col"
-                >
-                  <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF5722]">
-                    Stap {active + 1} van {steps.length}
-                  </p>
-                  <h3 className="mt-3 text-2xl font-extrabold tracking-tight text-slate-900">
-                    {step.title}
-                  </h3>
-                  <p className="mt-4 flex-1 text-base leading-relaxed text-slate-600">
-                    {step.body}
-                  </p>
-                  <a
-                    href="#aanvraag"
-                    className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-3.5 text-sm font-bold text-white transition hover:bg-[#e64a19]"
-                  >
-                    Start met een intake
-                    <ArrowRight className="size-4" aria-hidden />
-                  </a>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-          </Reveal>
-        </div>
+                    <span className="block text-lg font-extrabold tracking-tight text-slate-900">
+                      {step.title}
+                    </span>
+                    <span
+                      className={
+                        selected
+                          ? "mt-1.5 block text-sm leading-relaxed text-slate-600 sm:text-base"
+                          : "mt-1.5 block text-sm leading-relaxed text-slate-500"
+                      }
+                    >
+                      {step.body}
+                    </span>
+                  </button>
+                </Reveal>
+              </li>
+            );
+          })}
+        </ol>
 
         <Reveal delay={0.12}>
           <a
             href="#aanvraag"
-            className="mt-8 inline-flex items-center gap-2 rounded-2xl border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-900 transition hover:border-[#FF5722] hover:text-[#FF5722] lg:hidden"
+            className="group mt-6 inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#FF5722]"
           >
             Start met een intake
-            <ArrowRight className="size-4" aria-hidden />
+            <ArrowRight
+              className="size-4 transition group-hover:translate-x-0.5"
+              aria-hidden
+            />
           </a>
         </Reveal>
       </div>
