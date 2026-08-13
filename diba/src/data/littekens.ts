@@ -17,6 +17,8 @@
  * percentages: geen belofte zonder meting (A7).
  */
 
+import { kostenVraag } from "@/data/pillar-kosten";
+
 export type Fase = {
   readonly id: string;
   /** Wat er op de schuifbalk staat. */
@@ -248,8 +250,11 @@ export const LITTEKEN_FAQ = [
       "Dat horen we vaak, en het is een echte reden om te komen. We gaan alleen niet doen alsof we ze kunnen wegtoveren. Wat we wel doen is eerlijk zeggen hoeveel verschil er in jouw geval te verwachten is.",
   },
   {
+    /* Zelfde als op de acnepagina: dit antwoord was al compleet, de vlag vroeg om een
+       bedrag dat pas ná de meting bestaat. De kostenvraag staat er nu apart onder. */
     vraag: "Hoeveel sessies heb ik nodig?",
     antwoord:
-      "Dat hangt af van de leeftijd van het litteken en het type. Na de meting krijg je een aantal en een prijs, en een moment waarop we opnieuw kijken of het werkt. [PRIJS-NODIG]",
+      "Dat hangt af van de leeftijd van het litteken en het type. Na de meting krijg je een aantal en een prijs, en een moment waarop we opnieuw kijken of het werkt.",
   },
+  kostenVraag(),
 ] as const;

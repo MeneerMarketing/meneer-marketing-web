@@ -13,6 +13,8 @@
  * percentages: geen belofte zonder meting (A7).
  */
 
+import { kostenVraag } from "@/data/pillar-kosten";
+
 export type Knop = {
   readonly id: "inhoud" | "spanning" | "talg";
   readonly label: string;
@@ -204,9 +206,5 @@ export const PORIEN_FAQ = [
     antwoord:
       "Voor even. Je trekt het bovenste stukje van de prop mee en het ziet er direct beter uit. De porie vult zich daarna gewoon weer, en bij vaak gebruik raakt de huid eromheen geïrriteerd.",
   },
-  {
-    vraag: "Wat kost dit?",
-    antwoord:
-      "[PRIJS-NODIG] De nulmeting staat los van de behandeling, zodat je eerst weet waar je naar kijkt voordat je iets afneemt.",
-  },
+  kostenVraag(),
 ] as const;

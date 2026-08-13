@@ -18,6 +18,8 @@
  * percentages, geen uitspraken over hoe vaak iets voorkomt: dat weten we niet (A7).
  */
 
+import { kostenVraag } from "@/data/pillar-kosten";
+
 export type Antwoord = {
   readonly id: string;
   readonly label: string;
@@ -215,9 +217,5 @@ export const KRINGEN_FAQ = [
     antwoord:
       "[GEGEVEN-NODIG] Bij pigment werken we onder het oog bewust in kleinere stappen, dus reken op meer sessies dan bij dezelfde vlek op je wang.",
   },
-  {
-    vraag: "Wat kost dit?",
-    antwoord:
-      "[PRIJS-NODIG] Als de test uitwijst dat wij niets kunnen doen, kost het consult je niets aan vervolg: dan hoor je dat en is het klaar.",
-  },
+  kostenVraag(),
 ] as const;

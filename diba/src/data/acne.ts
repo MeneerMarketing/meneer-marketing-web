@@ -17,6 +17,8 @@
  * beweringen zijn gemarkeerd met [MEDISCHE-CHECK-ROJDA] en moeten langs Rojda.
  */
 
+import { kostenVraag } from "@/data/pillar-kosten";
+
 export type AcneType = {
   readonly id: string;
   readonly naam: string;
@@ -248,9 +250,12 @@ export const ACNE_FAQ = [
       "Bij de meeste mensen is acne goed te beheersen. Bij sommigen blijft het terugkomen, bijvoorbeeld door hormonen. We zeggen vooraf wat we in jouw geval realistisch vinden, en we meten of het werkt. Beheersing is soms het eerlijke doel, en dat is geen tweede keus. [MEDISCHE-CHECK-ROJDA]",
   },
   {
+    /* Hier stond een prijsvlag op een antwoord dat al compleet is: het aantal en de prijs
+       volgen ná de meting, en dat ís het antwoord. Wat ontbrak was een eigen kostenvraag,
+       en die staat nu onderaan met het bedrag uit de behandelingentabel. */
     vraag: "Hoeveel sessies heb ik nodig?",
     antwoord:
-      "Dat hangt af van het type acne en hoe lang het speelt. Na de nulmeting krijg je een aantal en een prijs, geen open einde. [PRIJS-NODIG]",
+      "Dat hangt af van het type acne en hoe lang het speelt. Na de nulmeting krijg je een aantal en een prijs, geen open einde.",
   },
   {
     vraag: "Ik heb al alles geprobeerd. Waarom zou dit werken?",
@@ -277,4 +282,5 @@ export const ACNE_FAQ = [
     antwoord:
       "Dat zijn meestal geen littekens maar pigmentvlekken, en die trekken vaak weg. Ze verdwijnen sneller met zonbescherming dan met een behandeling. Zit er een kuiltje in de huid, dan is het wél een litteken en kijken we ernaar zodra de huid rustig is.",
   },
+  kostenVraag(),
 ] as const;

@@ -3,7 +3,7 @@
 import { useState, useSyncExternalStore } from "react";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import { ZONJAAR } from "@/data/pigment";
+import { ZONJAAR, ZONJAAR_KANTTEKENING } from "@/data/pigment";
 import { publicCopy } from "@/lib/copy-flags";
 
 /**
@@ -185,6 +185,13 @@ export default function HetZonjaar() {
           </Button>
         </div>
       </div>
+
+      {/* De grafiek toont maandgemiddelden. Wie 5,4 in juni leest als de hoogste
+          zonkracht hier, onderschat een heldere junidag met ongeveer de helft, en
+          op een pigmentpagina is dat de verkeerde kant om je te vergissen. */}
+      <p className="mt-6 max-w-[68ch] text-[14px] leading-6 text-[var(--t-muted)]">
+        {ZONJAAR_KANTTEKENING}
+      </p>
     </div>
   );
 }

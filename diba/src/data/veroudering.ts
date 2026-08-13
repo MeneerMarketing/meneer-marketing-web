@@ -14,6 +14,8 @@
  * percentages en geen "x jaar jonger": geen belofte zonder meting (A7).
  */
 
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /* ── De onderarmtest ───────────────────────────────────────────────────── */
 
 export const ONDERARM = {
@@ -256,9 +258,5 @@ export const VEROUDERING_FAQ = [
     antwoord:
       "Zolang de oorzaak niet doorloopt. Zonder bescherming bouwt de zonschade gewoon verder en dan zie je hetzelfde terugkomen. Met bescherming houdt het aanzienlijk langer, al is 'aanzienlijk' geen getal dat we hard kunnen maken. [GEGEVEN-NODIG]",
   },
-  {
-    vraag: "Wat kost dit?",
-    antwoord:
-      "[PRIJS-NODIG] De nulmeting en het advies staan los van de behandeling, zodat je eerst weet wat er speelt voordat je iets afneemt.",
-  },
+  kostenVraag(),
 ] as const;

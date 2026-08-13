@@ -18,8 +18,31 @@
 
 /* ── Het zonjaar ────────────────────────────────────────────────────────────
    UV-index per maand voor Nederland. Dit zijn publieke, gemiddelde waarden en
-   geen Diba-cijfers; laat ze wel verifiëren voordat de pagina live gaat.
-   [GEGEVEN-NODIG: bron UV-index Nederland, bijvoorbeeld KNMI of RIVM] */
+   geen Diba-cijfers.
+
+   NAGEZOCHT EN NIET ROND GEKREGEN. Het RIVM en het KNMI publiceren wel uitleg
+   over zonkracht maar geen maandtabel; die twaalf getallen zijn dus nergens
+   één-op-een te controleren. Wat de bronnen wél zeggen: zonkracht is het laagst
+   van november tot en met februari, piekt in mei, juni en juli, en op heldere
+   zomerdagen wordt in Nederland regelmatig 7 tot 8 gehaald.
+
+   Dat laatste is belangrijker dan het lijkt. De reeks hieronder loopt tot 5,4 in
+   juni, en dat is een maandgemiddelde en geen dagpiek. Wie 5,4 leest als "zo hoog
+   wordt het hier" onderschat een heldere junidag met de helft, en op een pagina
+   over pigment is dat precies de verkeerde kant om je te vergissen. Daarom staat
+   ZONJAAR_KANTTEKENING hieronder op het scherm, en niet alleen in dit commentaar.
+
+   [GEGEVEN-NODIG: maandwaarden UV-index Nederland uit een noembare bron. Tot die
+   er is, blijft de kanttekening op de pagina staan.] */
+
+/**
+ * Wat er bij de grafiek hoort te staan zolang de maandwaarden onbevestigd zijn.
+ *
+ * Niet in de kleine letters: een bezoeker die hierop zijn zonbescherming afstemt,
+ * moet weten dat een gemiddelde iets anders is dan een dag.
+ */
+export const ZONJAAR_KANTTEKENING =
+  "Dit zijn maandgemiddelden en geen dagwaarden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is precies het moment waarop pigment ontstaat.";
 
 export type Maand = {
   readonly naam: string;
