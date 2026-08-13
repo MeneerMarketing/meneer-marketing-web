@@ -207,6 +207,47 @@ export default function DitBehandelenWijNietPage() {
                         </p>
                       </div>
 
+                      {/* ── Wat wij er wél bij doen ──
+                          Zonder dit blok las elke kaart als een dichte deur, terwijl er
+                          bij bijna elk punt wel iets is dat we doen. Iemand met eczeem
+                          las "ga naar de huisarts" en was weg, terwijl we aan de droge
+                          huid en de barrière naast die behandeling gewoon iets kunnen.
+
+                          Het staat er bewust ná "waar dan wel" en niet ervoor: eerst het
+                          juiste adres, dan pas wat wij nog betekenen. Bij de urgente
+                          gevallen staat het er helemaal niet, want daar zou het de haast
+                          verwateren. */}
+                      {w.watWel ? (
+                        <div
+                          /* Op de donkere kaarten donkerder vullen en niet lichter.
+                             Met white/10 werd het vlak rgb(46,96,70) en zat het label op
+                             precies 4,50: het haalt de norm, maar zonder marge. Op
+                             --g-900 haalt het 8,98 en de tekst 10,16. */
+                          className={`mt-3 rounded-[var(--r-md)] p-5 ${
+                            dringend ? "bg-[var(--g-900)]" : "bg-[var(--g-200)]"
+                          }`}
+                        >
+                          <p
+                            className={`diba-label ${
+                              dringend
+                                ? "diba-label-on-dark"
+                                : "text-[var(--g-900)]"
+                            }`}
+                          >
+                            Wat wij hier wél bij doen
+                          </p>
+                          <p
+                            className={`mt-2 text-[15px] leading-7 ${
+                              dringend
+                                ? "text-[var(--on-dark-body)]"
+                                : "text-[var(--g-900)]"
+                            }`}
+                          >
+                            {publicCopy(w.watWel)}
+                          </p>
+                        </div>
+                      ) : null}
+
                       {w.link ? (
                         <Link
                           href={w.link.href}
