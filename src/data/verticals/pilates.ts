@@ -133,20 +133,29 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
     {
       id: "editorial",
       name: "Editorial Pilates",
-      blurb: "Magazine-achtig. Sterke typografie. Premium rust die blijft hangen.",
+      blurb:
+        "Magazine-editorial. Newsreader + Figtree. Beeldcollage, lessen met beeldwissel, parallax.",
       demoHref: `${PREVIEW_BASE}/studio-forma-arnhem-editorial`,
+      ready: true,
+      shortLabel: "1",
     },
     {
       id: "reformer-minimal",
-      name: "Reformer Minimal",
-      blurb: "Architecturaal. Reformer-first. Strak genoeg om een interieurmag te zijn.",
+      name: "Figma Full Screen",
+      blurb:
+        "Full-screen Figma-energie. DM Sans, inset hero, ken burns, accordion-lessen.",
       demoHref: `${PREVIEW_BASE}/studio-forma-arnhem-reformer`,
+      ready: true,
+      shortLabel: "2",
     },
     {
       id: "soft-movement",
       name: "Soft Movement",
-      blurb: "Warm, organisch, soft focus. Alsof je al bijna op de mat ligt.",
+      blurb:
+        "Warm organisch. Sora. Soft CTA, floating blobs, snap-carousel voor lessen.",
       demoHref: `${PREVIEW_BASE}/studio-forma-arnhem-soft`,
+      ready: true,
+      shortLabel: "3",
     },
   ],
   bookingRoutes: [

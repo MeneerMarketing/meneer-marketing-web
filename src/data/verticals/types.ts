@@ -64,6 +64,10 @@ export interface VerticalArtDirection {
   name: string;
   blurb: string;
   demoHref: string;
+  /** Template-nummer voor UI (1 / 2 / 3). */
+  shortLabel?: string;
+  /** Of de live preview klaar is om te embedden. */
+  ready?: boolean;
 }
 
 export interface VerticalFlowPhase {
