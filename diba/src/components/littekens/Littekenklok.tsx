@@ -161,19 +161,18 @@ export default function Littekenklok() {
       <div className="flex flex-col" aria-live="polite">
         <h3 className="diba-card-title-lg">{fase.label}</h3>
 
-        <dl className="mt-6 space-y-5">
+        {/* Eerst een streep links, toen gevulde vlakjes: allebei mis. De vlakjes maakten
+            er kaarten in een kaart van en drie identieke plakken lezen als één massa.
+            Ruimte doet het werk: strak binnen een paar, ruim ertussen. */}
+        <dl className="mt-7 space-y-6">
           {[
             ["Wat er dan in je huid gebeurt", fase.watErGebeurt],
             ["Wat realistisch is", fase.watRealistischIs],
             ["Wat wij zouden doen", fase.watWijDoen],
           ].map(([kop, tekst]) => (
-            /* Stond op een streep links (border-l-2). Vlakken, geen lijnen. */
-            <div
-              key={kop}
-              className="rounded-[var(--r-md)] bg-[var(--g-050)] p-5 sm:p-6"
-            >
+            <div key={kop}>
               <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
-              <dd className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
+              <dd className="mt-1.5 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
                 {publicCopy(tekst)}
               </dd>
             </div>

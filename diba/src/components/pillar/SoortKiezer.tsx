@@ -104,17 +104,19 @@ export default function SoortKiezer({
           </span>
         </div>
 
-        {/* Stond op een streep links (border-l-2 border-g-200). Deze huisstijl bouwt met
-            gevulde vlakken en geen lijnen, en dit component staat op vijf pillarpagina's,
-            dus die streep stond vijf keer op de site. */}
-        <dl className="mt-6 space-y-3">
+        {/* Hier stond eerst een streep links, en daarna vier gevulde vlakjes. Allebei mis.
+            De streep is niet de huisstijl; de vlakjes maakten er kaarten in een kaart van,
+            en vier identieke plakken onder elkaar lezen als één grijze massa waarin je oog
+            geen ingang vindt.
+
+            Een label met een waarde eronder heeft geen bak nodig. Ruimte doet het werk:
+            strak tegen elkaar binnen een paar, ruim ertussen. Dat is wat een uitslag
+            klinisch laat lezen, en het scheelt hier ruim tweehonderd pixels hoogte. */}
+        <dl className="mt-7 space-y-6">
           {optie.velden.map(([kop, tekst]) => (
-            <div
-              key={kop}
-              className="rounded-[var(--r-md)] bg-[var(--g-050)] p-5 sm:p-6"
-            >
+            <div key={kop}>
               <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
-              <dd className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
+              <dd className="mt-1.5 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
                 {publicCopy(tekst)}
               </dd>
             </div>
