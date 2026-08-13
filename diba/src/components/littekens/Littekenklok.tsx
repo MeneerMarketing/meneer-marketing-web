@@ -19,7 +19,19 @@ import { publicCopy } from "@/lib/copy-flags";
  * zonjaar op de pigmentpagina, maar met een andere as en een ander doel.
  *
  * Elegant: striae volgen precies dezelfde as. Rood en nieuw is striae rubrae, wit en oud
- * is striae albae. Eén interactie dekt allebei, en de tekening laat dat ook zien.
+ * is striae albae. Eén interactie dekt allebei, en /huidproblemen/striae wijst hierheen.
+ *
+ * WAT ER WEG IS EN WAAROM.
+ *
+ * Er stond een tekening boven de schuifbalk: een mintvlak met daarin een kronkelende
+ * streep die een litteken moest voorstellen, en drie kleinere streepjes ernaast voor
+ * striae. Dat had hetzelfde probleem als het getekende hoofd op de acnepagina. Het was
+ * bijna alleen lijn, terwijl deze huisstijl met vlakken bouwt, en je moest maar raden wat
+ * je zag. Een streep die je als litteken moet lezen wordt nooit een litteken.
+ *
+ * Ondertussen zat de eigenlijke boodschap eronder weggestopt in een balkje van twee pixel:
+ * het venster dat dichtgaat. Dat is precies wat deze pagina te vertellen heeft, dus dat is
+ * nu het hoofdbeeld en de tekening is verdwenen.
  *
  * Toegankelijkheid: een echte range-input, dus pijltjestoetsen en Home/End werken vanzelf.
  * aria-valuetext geeft de fase in woorden in plaats van een getal.
@@ -50,88 +62,49 @@ export default function Littekenklok() {
       <div
         className={`rounded-[var(--r-md)] bg-white p-6 sm:p-8 ${fase.kleurKlasse}`}
       >
-        <svg
-          viewBox="0 0 320 190"
-          className="w-full"
-          role="img"
-          aria-label={`Schematische huid met een litteken en striae, kleur passend bij: ${fase.label}`}
-        >
-          {/* Huidvlak, neutraal en abstract. Geen huidtint van een persoon. */}
-          <rect
-            x="10"
-            y="10"
-            width="300"
-            height="170"
-            rx="20"
-            fill="var(--g-050)"
-          />
+        {/* ── Het venster ──
+            Dit was een klein balkje onderaan, onder een tekening van een kronkelstreep
+            met drie streepjes ernaast. Die tekening is weg; zie het docblock. Wat eronder
+            zat is nu het hoofdbeeld, want dát is de boodschap: hoeveel er nog te
+            veranderen valt, en hoe dat krimpt naarmate je langer wacht. */}
+        <div className="rounded-[var(--r-md)] bg-[var(--g-025)] p-6 sm:p-8">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+            <Label className={VENSTER_TEKSTKLEUR[fase.venster]}>
+              {venster.kop}
+            </Label>
+            <span className="diba-label text-[var(--t-muted)]">
+              {fase.vakterm}
+            </span>
+          </div>
 
-          {/* Het litteken: een getapete streep.
-              Eronder een vaste, iets bredere halo. Zonder die halo verdwijnt de vorm
-              bij de laatste fase compleet, want wit op mint is geen contrast. Een rijp
-              litteken zie je in het echt ook aan zijn reliëf en niet aan zijn kleur,
-              dus dit blijft eerlijk: de kleur vervaagt, de vorm blijft. */}
-          <path
-            d="M70 52c14-6 30-4 44 2s26 14 40 16"
-            fill="none"
-            stroke="var(--g-100)"
-            strokeWidth="13"
-            strokeLinecap="round"
-          />
-          <path
-            d="M70 52c14-6 30-4 44 2s26 14 40 16"
-            fill="none"
-            strokeWidth="9"
-            strokeLinecap="round"
-            className="litteken-lijn"
-          />
-          <text
-            x="70"
-            y="34"
-            className="fill-[var(--t-muted)] text-[10px] font-semibold uppercase [letter-spacing:0.12em]"
+          <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+            {venster.tekst}
+          </p>
+
+          {/* De balk is dik en de baan blijft zichtbaar, zodat je ziet hoeveel er wég is
+              en niet alleen hoeveel er nog staat. Bij de laatste fase blijft er een
+              streepje over: nul tonen zou suggereren dat er niets meer kan, en dat klopt
+              niet. Er valt dan weinig te halen, niet niets. */}
+          <div
+            role="img"
+            aria-label={`Ruimte om iets te veranderen bij ${fase.label}: ${venster.kop}`}
+            className="mt-6 h-5 w-full overflow-hidden rounded-[var(--r-pill)] bg-[var(--g-100)]"
           >
-            Litteken
-          </text>
-
-          {/* Striae: dezelfde as, dus dezelfde kleur. Ook hier eerst de halo. */}
-          {[0, 1, 2].map((i) => (
-            <path
-              key={`halo-${i}`}
-              d={`M${74 + i * 28} 112c6 14 8 30 4 46`}
-              fill="none"
-              stroke="var(--g-100)"
-              strokeWidth="10"
-              strokeLinecap="round"
+            <div
+              className="h-full rounded-[var(--r-pill)] transition-all duration-500 ease-[var(--ease-diba)] motion-reduce:transition-none"
+              style={{
+                width: VENSTER_BREEDTE[fase.venster],
+                background: VENSTER_KLEUR[fase.venster],
+              }}
             />
-          ))}
-          {[0, 1, 2].map((i) => (
-            <path
-              key={i}
-              d={`M${74 + i * 28} 112c6 14 8 30 4 46`}
-              fill="none"
-              strokeWidth="6"
-              strokeLinecap="round"
-              opacity={0.9 - i * 0.12}
-              className="litteken-lijn"
-            />
-          ))}
-          <text
-            x="74"
-            y="100"
-            className="fill-[var(--t-muted)] text-[10px] font-semibold uppercase [letter-spacing:0.12em]"
-          >
-            Striae
-          </text>
+          </div>
 
-          <text
-            x="300"
-            y="172"
-            textAnchor="end"
-            className="fill-[var(--t-muted)] text-[10px] font-semibold uppercase [letter-spacing:0.12em]"
-          >
-            {fase.vakterm}
-          </text>
-        </svg>
+          <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
+            De balk is geen meting maar een verhouding: hij laat zien hoe de ruimte om
+            iets te veranderen krimpt naarmate een litteken ouder wordt.
+          </p>
+        </div>
+
 
         {/* De schuifbalk. */}
         <div className="mt-7">
@@ -181,26 +154,6 @@ export default function Littekenklok() {
           </div>
         </div>
 
-        {/* Het venster: krimpt zichtbaar naarmate je verder schuift. */}
-        <div className="mt-6 border-t border-[var(--g-100)] pt-5">
-          <div className="flex items-baseline justify-between gap-4">
-            <Label className={VENSTER_TEKSTKLEUR[fase.venster]}>
-              {venster.kop}
-            </Label>
-            <span className="text-sm leading-6 text-[var(--t-muted)]">
-              {venster.tekst}
-            </span>
-          </div>
-          <div className="mt-3 h-2 w-full rounded-[var(--r-pill)] bg-[var(--g-100)]">
-            <div
-              className="h-full rounded-[var(--r-pill)] transition-all duration-500 ease-[var(--ease-diba)] motion-reduce:transition-none"
-              style={{
-                width: VENSTER_BREEDTE[fase.venster],
-                background: VENSTER_KLEUR[fase.venster],
-              }}
-            />
-          </div>
-        </div>
       </div>
 
       {/* ── De lezing ── */}
@@ -213,9 +166,13 @@ export default function Littekenklok() {
             ["Wat realistisch is", fase.watRealistischIs],
             ["Wat wij zouden doen", fase.watWijDoen],
           ].map(([kop, tekst]) => (
-            <div key={kop} className="border-l-2 border-[var(--g-200)] pl-4">
-              <dt className="diba-label">{kop}</dt>
-              <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
+            /* Stond op een streep links (border-l-2). Vlakken, geen lijnen. */
+            <div
+              key={kop}
+              className="rounded-[var(--r-md)] bg-[var(--g-050)] p-5 sm:p-6"
+            >
+              <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
+              <dd className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
                 {publicCopy(tekst)}
               </dd>
             </div>

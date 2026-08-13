@@ -103,11 +103,17 @@ export default function SoortKiezer({
           </span>
         </div>
 
-        <dl className="mt-6 space-y-5">
+        {/* Stond op een streep links (border-l-2 border-g-200). Deze huisstijl bouwt met
+            gevulde vlakken en geen lijnen, en dit component staat op vijf pillarpagina's,
+            dus die streep stond vijf keer op de site. */}
+        <dl className="mt-6 space-y-3">
           {optie.velden.map(([kop, tekst]) => (
-            <div key={kop} className="border-l-2 border-[var(--g-200)] pl-4">
-              <dt className="diba-label">{kop}</dt>
-              <dd className="mt-1.5 text-[15px] leading-7 text-[var(--t-body)]">
+            <div
+              key={kop}
+              className="rounded-[var(--r-md)] bg-[var(--g-050)] p-5 sm:p-6"
+            >
+              <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
+              <dd className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
                 {publicCopy(tekst)}
               </dd>
             </div>
