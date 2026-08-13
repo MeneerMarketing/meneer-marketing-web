@@ -14,21 +14,21 @@ export const TEMPLATES: {
     label: "Editorial Pilates",
     shortLabel: "A",
     description:
-      "Magazine-editorial. Newsreader + Figtree. Kinetic tagline, hover-lessen met beeldwissel.",
+      "Magazine-editorial. Newsreader + Figtree. Brandkleuren van de studio, beeldcollage, lessen met beeldwissel, scroll-driven parallax.",
   },
   {
     variant: "reformer-minimal",
-    label: "Figma Full Screen",
+    label: "Clinic Full Screen",
     shortLabel: "B",
     description:
-      "DIBA-achtig full-screen. DM Sans, inset hero, ken burns, accordion-lessen, sage accent.",
+      "Body Clinic-taal. Wit, trust-first, inset hero, behandelkaarten, verwachting-stappen, sticky boek-CTA.",
   },
   {
     variant: "soft-movement",
-    label: "Soft Movement",
+    label: "Cinematic Form",
     shortLabel: "C",
     description:
-      "Warm organisch. Sora. Pulsing CTA, floating blobs, horizontale snap-carousel voor lessen.",
+      "Filmische magazine-stijl. Instrument Serif met italic, oxblood en cream, volbeeld opening, fijne filmkorrel en fullscreen menu.",
   },
 ];
 
@@ -111,7 +111,12 @@ function parseTemplateParam(value?: string | null): TemplateVariant | null {
   if (normalized === "b" || normalized === "reformer" || normalized === "reformer-minimal") {
     return "reformer-minimal";
   }
-  if (normalized === "c" || normalized === "soft" || normalized === "soft-movement") {
+  if (
+    normalized === "c" ||
+    normalized === "soft" ||
+    normalized === "soft-movement" ||
+    normalized === "cinematic"
+  ) {
     return "soft-movement";
   }
   return null;

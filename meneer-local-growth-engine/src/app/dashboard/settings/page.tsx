@@ -141,6 +141,55 @@ export default async function SettingsPage() {
             <KeyValue label="Previews" value="Publiek via preview host /{slug} (noindex)" />
           </dl>
         </Panel>
+
+        <Panel title="Campaign / production health">
+          <dl>
+            <KeyValue
+              label="Preview host"
+              value={
+                process.env.OUTREACH_PREVIEW_BASE_URL ||
+                process.env.PREVIEW_BASE_URL ||
+                "niet gezet"
+              }
+            />
+            <KeyValue
+              label="Meneer Marketing host"
+              value={
+                process.env.MENEER_MARKETING_BASE_URL || "https://meneermarketing.nl"
+              }
+            />
+            <KeyValue
+              label="Resend status"
+              value={sender.configured ? "Configured" : "Not configured"}
+            />
+            <KeyValue
+              label="Webhook status"
+              value={sender.webhookConfigured ? "Configured" : "Not configured"}
+            />
+            <KeyValue
+              label="Real send enabled"
+              value={sender.realSendEnabled ? "true" : "false"}
+            />
+            <KeyValue
+              label="Campaign event ingest secret"
+              value={
+                process.env.LGE_EVENT_INGEST_SECRET ? "Configured" : "Not configured"
+              }
+            />
+            <KeyValue
+              label="Default campaign environment"
+              value={process.env.CAMPAIGN_DEFAULT_ENVIRONMENT || "DEVELOPMENT"}
+            />
+            <KeyValue
+              label="Test mode policy"
+              value="DEVELOPMENT campaigns force is_test=true; client cannot override"
+            />
+            <KeyValue
+              label="Contact integration"
+              value="MM /api/contact + LGE CONTACT_SUBMITTED (dry-run = test)"
+            />
+          </dl>
+        </Panel>
       </div>
     </div>
   );

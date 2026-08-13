@@ -22,6 +22,10 @@ import {
   getTemplates,
   getVerticals,
 } from "@/lib/data/dashboard";
+import { buildLeadJourney, getCampaignEventSplit } from "@/services/campaigns/campaignService";
+import { createAdminClient } from "@/lib/supabase/admin";
+import { maskCampaignRef } from "@/services/campaigns/types";
+import { PreparePilotButton } from "@/components/dashboard/PreparePilotButton";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -30,6 +34,7 @@ interface Props {
 
 const TABS = [
   "overview",
+  "journey",
   "website",
   "preview",
   "seo",
@@ -48,7 +53,7 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
     ? (tabParam as (typeof TABS)[number])
     : "overview";
 
-  const [verticals, cities, templates, previews, seo, contacts, messages, activity, exclusivityRows] =
+  const [verticals, cities, templates, previews, seo, contacts, messages, activity, exclusivityRows, journey] =
     await Promise.all([
       getVerticals(),
       getCities(),
@@ -59,7 +64,26 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
       getOutreachMessages(),
       getActivityForBusiness(business.id),
       getExclusivity(),
+      buildLeadJourney(business.id).catch(() => []),
     ]);
+
+  const campaignRes = await createAdminClient()
+    .from("campaigns")
+    .select("*")
+    .eq("business_id", business.id)
+    .order("created_at", { ascending: false })
+    .limit(1)
+    .maybeSingle();
+  const campaign = campaignRes.error
+    ? null
+    : ((campaignRes.data as Record<string, unknown> | null) ?? null);
+
+  const eventSplit = campaign?.id
+    ? await getCampaignEventSplit(String(campaign.id)).catch(() => ({
+        real: [],
+        test: [],
+      }))
+    : { real: [], test: [] };
 
   const vertical = verticals.find((v) => v.id === business.vertical_id)!;
   const city = cities.find((c) => c.id === business.city_id)!;
@@ -240,6 +264,120 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
               <p className="mt-4 text-sm font-semibold text-emerald-700">
                 READY FOR OUTREACH — nog geen e-mail verzonden.
               </p>
+            ) : null}
+          </Panel>
+        </div>
+      ) : null}
+
+      {tab === "journey" ? (
+        <div className="space-y-6">
+          <Panel title={`${business.studio_name} — ${city.name}`}>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">
+              Real activity
+            </p>
+            <ol className="space-y-3">
+              {journey.map((step, index) => (
+                <li key={step.key} className="flex items-start gap-3">
+                  <span
+                    className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center text-[11px] font-bold ${
+                      step.done
+                        ? "bg-emerald-700 text-white"
+                        : "border border-mm-border bg-white text-slate-400"
+                    }`}
+                  >
+                    {step.done ? "✓" : index + 1}
+                  </span>
+                  <div>
+                    <p
+                      className={`text-sm font-semibold ${
+                        step.done ? "text-slate-900" : "text-slate-400"
+                      }`}
+                    >
+                      {step.label}
+                    </p>
+                    <p className="text-xs text-slate-500">
+                      {step.at
+                        ? new Date(step.at).toLocaleString("nl-NL")
+                        : "Nog niet"}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </Panel>
+
+          <Panel title="Test activity">
+            {eventSplit.test.length === 0 ? (
+              <p className="text-sm text-slate-500">Geen testevents.</p>
+            ) : (
+              <ul className="space-y-2">
+                {eventSplit.test.map((ev, i) => (
+                  <li
+                    key={`${ev.event_type}-${ev.created_at}-${i}`}
+                    className="flex items-center justify-between gap-3 text-sm"
+                  >
+                    <span className="font-medium text-slate-700">
+                      <Badge tone="warn">TEST</Badge>{" "}
+                      {ev.event_type}
+                    </span>
+                    <span className="text-xs text-slate-400">
+                      {new Date(ev.created_at).toLocaleString("nl-NL")}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Panel>
+
+          <Panel title="Campaign">
+            <dl>
+              <KeyValue
+                label="Ref"
+                value={
+                  campaign?.campaign_ref
+                    ? maskCampaignRef(String(campaign.campaign_ref))
+                    : "geen actieve campaign"
+                }
+              />
+              <KeyValue
+                label="Environment"
+                value={String(campaign?.environment ?? "—")}
+              />
+              <KeyValue
+                label="Lifecycle"
+                value={String(campaign?.lifecycle_status ?? "—")}
+              />
+              <KeyValue
+                label="Engagement (real)"
+                value={String(campaign?.engagement_level ?? business.engagement_level ?? "COLD")}
+              />
+              <KeyValue
+                label="Conversion (real)"
+                value={String(campaign?.conversion_status ?? "NONE")}
+              />
+              <KeyValue
+                label="Real events"
+                value={String(campaign?.real_event_count ?? eventSplit.real.length)}
+              />
+              <KeyValue
+                label="Test events"
+                value={String(campaign?.test_event_count ?? eventSplit.test.length)}
+              />
+              <KeyValue
+                label="Recommended package"
+                value={String(campaign?.recommended_package ?? "—")}
+              />
+              <KeyValue
+                label="Recommendation reason"
+                value={String(campaign?.recommendation_reason ?? "—")}
+              />
+              <KeyValue
+                label="Selected package (real)"
+                value={String(campaign?.selected_package ?? "—")}
+              />
+            </dl>
+            {campaign?.id ? (
+              <PreparePilotButton campaignId={String(campaign.id)} />
             ) : null}
           </Panel>
         </div>

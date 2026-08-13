@@ -27,12 +27,12 @@ const DIRECTION_META: Record<
     accent: "#9C6B45",
   },
   "reformer-minimal": {
-    vibe: "Full screen · Figma",
-    accent: "#64748b",
+    vibe: "Clinic · interactief",
+    accent: "#9C6B45",
   },
   "soft-movement": {
-    vibe: "Warm · organisch",
-    accent: "#d97706",
+    vibe: "Cinematic · magazine",
+    accent: "#4e1a0f",
   },
 };
 
@@ -148,9 +148,9 @@ export function PilatesLiveDesign() {
               <span className="text-[#FF5722]"> Live uit de engine.</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Template 1 (Editorial) staat klaar. Tik een richting en je ziet
-              de echte preview. Logo, kleuren, foto&apos;s en booking zetten we
-              daarna om naar jouw studio.
+              Drie richtingen, allemaal live uit de engine. Tik een template en
+              je ziet de echte preview. Logo, kleuren, foto&apos;s en booking
+              zetten we daarna om naar jouw studio.
             </p>
           </div>
         </Reveal>

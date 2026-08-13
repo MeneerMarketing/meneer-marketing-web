@@ -18,9 +18,9 @@ export function ConceptBanner({ studio, tone = "light" }: ConceptBannerProps) {
       role="note"
     >
       <div className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-2.5 sm:px-6">
-        <div className="flex items-center justify-between gap-4 text-[11px] tracking-[0.12em] uppercase">
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-[11px] tracking-[0.12em] uppercase">
           <span className="font-medium opacity-90">
-            Conceptpreview · {studio.studio_name}
+            Persoonlijk ontwerpvoorstel voor {studio.studio_name}
           </span>
           <span className="hidden opacity-70 sm:inline">
             Concept samengesteld door Meneer Marketing

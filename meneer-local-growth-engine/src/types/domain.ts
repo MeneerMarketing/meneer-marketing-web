@@ -142,6 +142,18 @@ export const ACTIVITY_TYPES = [
   "SEO_OPPORTUNITY_CALCULATED",
   "SEO_ANALYSIS_COMPLETED",
   "SEO_ANALYSIS_FAILED",
+  "CAMPAIGN_CREATED",
+  "CITY_RESERVATION_EXPIRED",
+  "CAMPAIGN_REVOKED",
+  "CAMPAIGN_PREPARE_FOR_PILOT",
+  "PREVIEW_OPENED",
+  "PREVIEW_CTA_CLICKED",
+  "LANDING_PAGE_VIEWED",
+  "PACKAGE_SECTION_VIEWED",
+  "PACKAGE_SELECTED",
+  "BOOKING_OPTION_VIEWED",
+  "CONTACT_STARTED",
+  "CONTACT_SUBMITTED",
   "CLIENT_WON",
 ] as const;
 
@@ -222,6 +234,10 @@ export interface Business {
   exclusive_status: "none" | "reserved" | "active";
   exclusive_started_at: string | null;
   exclusive_ends_at: string | null;
+  conversion_status?: string | null;
+  engagement_level?: string | null;
+  recommended_package?: string | null;
+  active_campaign_id?: string | null;
   is_demo: boolean;
   selected_template_id: string | null;
   metadata: Record<string, unknown>;

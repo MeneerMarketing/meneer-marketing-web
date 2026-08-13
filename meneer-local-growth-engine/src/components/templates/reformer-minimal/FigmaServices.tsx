@@ -24,7 +24,10 @@ export function FigmaServices({ services }: Props) {
               className="flex w-full items-center gap-4 py-6 text-left transition-colors hover:bg-black/[0.02] sm:gap-8 sm:py-8"
               aria-expanded={open}
             >
-              <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#A8B59A]" aria-hidden />
+              <span
+                className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--fc-accent)]"
+                aria-hidden
+              />
               <span className="min-w-0 flex-1 font-[family-name:var(--font-figma-display)] text-[clamp(1.5rem,4vw,2.75rem)] font-medium leading-[1.05] tracking-[-0.06em]">
                 {service.name}
               </span>
@@ -51,7 +54,7 @@ export function FigmaServices({ services }: Props) {
                     {service.description}
                   </p>
                   {service.highlight && (
-                    <span className="inline-flex w-fit rounded-full bg-[#C8D5C0] px-4 py-1.5 text-[11px] font-medium tracking-[0.12em] uppercase text-[#2A3328]">
+                    <span className="inline-flex w-fit rounded-full bg-[var(--fc-accent-soft)] px-4 py-1.5 text-[11px] font-medium tracking-[0.12em] uppercase text-[var(--fc-ink)]">
                       Primair
                     </span>
                   )}

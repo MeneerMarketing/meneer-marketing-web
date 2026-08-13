@@ -11,6 +11,7 @@ const NAV: { href: string; label: string; exact?: boolean }[] = [
   { href: "/dashboard/previews", label: "Previews" },
   { href: "/dashboard/seo", label: "SEO Opportunities" },
   { href: "/dashboard/outreach", label: "Outreach" },
+  { href: "/dashboard/campaigns", label: "Campaigns" },
   { href: "/dashboard/exclusivity", label: "Exclusiviteit" },
   { href: "/dashboard/templates", label: "Templates" },
   { href: "/dashboard/analytics", label: "Analytics" },

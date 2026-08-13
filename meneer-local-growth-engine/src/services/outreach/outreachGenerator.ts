@@ -16,6 +16,7 @@ import {
 } from "@/services/outreach/personalizationSchema";
 import { validateOutreachCopy } from "@/services/outreach/copyValidation";
 import { formatPublicPreviewUrl } from "@/services/outreach/previewUrl";
+import { ensureCampaignForBusiness } from "@/services/campaigns/campaignService";
 import type { Business, OutreachMessage, PreviewRecord, SeoOpportunity } from "@/types/domain";
 
 export type GenerationMethod = "HARDENED_TEMPLATE" | "LEGACY_AI" | "MANUAL_EDIT";
@@ -521,6 +522,17 @@ export async function generateOutreachDraft(input: {
       description: generated.subject,
       metadata: { message_id: message.id, method: "HARDENED_TEMPLATE" },
     });
+  }
+
+  // Ensure opaque campaign exists for preview → offer bridge
+  try {
+    await ensureCampaignForBusiness({
+      businessId: business.id,
+      outreachMessageId: message.id,
+      createReservation: true,
+    });
+  } catch {
+    // Campaign is additive; draft remains valid if campaign create fails
   }
 
   return {

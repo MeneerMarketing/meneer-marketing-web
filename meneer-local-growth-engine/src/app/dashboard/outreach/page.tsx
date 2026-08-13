@@ -11,6 +11,7 @@ import {
   getContactsForBusiness,
   getOutreachMessages,
 } from "@/lib/data/dashboard";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 interface Props {
   searchParams: Promise<{ status?: string }>;
@@ -52,6 +53,15 @@ export default async function OutreachPage({ searchParams }: Props) {
     getCities(),
   ]);
 
+  const campaignsRes = await createAdminClient()
+    .from("campaigns")
+    .select("*")
+    .eq("status", "ACTIVE");
+  const campaigns = (campaignsRes.error ? [] : campaignsRes.data ?? []) as Record<
+    string,
+    unknown
+  >[];
+
   const readyToDraft = businesses.filter(
     (b) =>
       !b.is_demo &&
@@ -77,7 +87,8 @@ export default async function OutreachPage({ searchParams }: Props) {
         const city = business ? cities.find((c) => c.id === business.city_id) : null;
         const contacts = business ? await getContactsForBusiness(business.id) : [];
         const contact = contacts.find((c) => c.id === message.contact_id) ?? null;
-        return { message, business, contact, city };
+        const campaign = campaigns.find((c) => c.business_id === message.business_id) ?? null;
+        return { message, business, contact, city, campaign };
       })
   );
 
@@ -140,7 +151,15 @@ export default async function OutreachPage({ searchParams }: Props) {
           {enriched.length === 0 ? (
             <p className="text-sm text-slate-500">Geen berichten in deze filter.</p>
           ) : null}
-          {enriched.map(({ message, business, contact, city }) => (
+          {enriched.map(({ message, business, contact, city, campaign }) => {
+            const previewViewed = ["OPENED", "ENGAGED", "HIGH_INTENT", "INBOUND"].includes(
+              String(campaign?.engagement_level ?? "")
+            );
+            const offerViewed = ["ENGAGED", "HIGH_INTENT", "INBOUND"].includes(
+              String(campaign?.engagement_level ?? "")
+            );
+            const contactDone = campaign?.conversion_status === "INBOUND_LEAD";
+            return (
             <article
               key={message.id}
               className="border border-mm-border bg-white p-5 shadow-mm-card"
@@ -155,15 +174,25 @@ export default async function OutreachPage({ searchParams }: Props) {
                   </div>
                   <p className="mt-1 text-sm text-slate-500">
                     {business?.studio_name ?? "—"} · {city?.name ?? "—"} ·{" "}
-                    {contact?.email ?? "geen contact"} · confidence{" "}
-                    {business?.winner_confidence != null
-                      ? Math.round(Number(business.winner_confidence))
-                      : "—"}{" "}
-                    · SEO{" "}
-                    {business?.seo_opportunity_score != null
-                      ? Math.round(Number(business.seo_opportunity_score))
-                      : "—"}
+                    {contact?.email ?? "geen contact"}
                   </p>
+                  <div className="mt-3 flex flex-wrap gap-2 text-[10px] font-bold uppercase tracking-[0.12em]">
+                    <Badge tone={message.status === "SENT" || message.sent_at ? "brand" : "neutral"}>
+                      Email: {message.sent_at ? "SENT" : message.status}
+                    </Badge>
+                    <Badge tone={previewViewed ? "sky" : "neutral"}>
+                      Preview: {previewViewed ? "VIEWED" : "NOT VIEWED"}
+                    </Badge>
+                    <Badge tone={offerViewed ? "sky" : "neutral"}>
+                      Offer: {offerViewed ? "VIEWED" : "NOT VIEWED"}
+                    </Badge>
+                    <Badge tone={campaign?.selected_package ? "brand" : "neutral"}>
+                      Interest: {String(campaign?.selected_package ?? "—")}
+                    </Badge>
+                    <Badge tone={contactDone ? "success" : "neutral"}>
+                      Contact: {contactDone ? "SUBMITTED" : "NOT SUBMITTED"}
+                    </Badge>
+                  </div>
                 </div>
                 <Link
                   href={`/dashboard/outreach/${message.id}`}
@@ -176,7 +205,8 @@ export default async function OutreachPage({ searchParams }: Props) {
                 {message.body_text ?? message.body}
               </p>
             </article>
-          ))}
+            );
+          })}
         </div>
       ) : null}
     </div>

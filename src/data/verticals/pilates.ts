@@ -150,9 +150,9 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
     },
     {
       id: "soft-movement",
-      name: "Soft Movement",
+      name: "Cinematic Form",
       blurb:
-        "Warm organisch. Sora. Soft CTA, floating blobs, snap-carousel voor lessen.",
+        "Filmische magazine-stijl. Instrument Serif met italic, oxblood en cream, volbeeld opening en fijne filmkorrel.",
       demoHref: `${PREVIEW_BASE}/studio-forma-arnhem-soft`,
       ready: true,
       shortLabel: "3",

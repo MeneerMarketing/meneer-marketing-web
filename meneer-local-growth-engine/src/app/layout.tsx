@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import {
   DM_Sans,
   Figtree,
+  Instrument_Serif,
+  Inter,
   Newsreader,
-  Sora,
 } from "next/font/google";
 import "./globals.css";
 
@@ -25,14 +26,22 @@ const editorialSans = Figtree({
 const figmaDisplay = DM_Sans({
   variable: "--font-figma-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-/** C — Soft Movement: geometric friendly display */
-const softDisplay = Sora({
-  variable: "--font-soft-display",
+/** C — Cinematic: high-contrast magazine serif met expressieve italic */
+const cineDisplay = Instrument_Serif({
+  variable: "--font-cine-display",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+});
+
+/** C — Cinematic: neutrale grotesque voor labels en lopende tekst */
+const cineSans = Inter({
+  variable: "--font-cine-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -53,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="nl"
-      className={`${editorialSerif.variable} ${editorialSans.variable} ${figmaDisplay.variable} ${softDisplay.variable} h-full antialiased`}
+      className={`${editorialSerif.variable} ${editorialSans.variable} ${figmaDisplay.variable} ${cineDisplay.variable} ${cineSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

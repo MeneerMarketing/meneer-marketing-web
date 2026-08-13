@@ -460,6 +460,30 @@ export async function sendOutreachEmail(messageId: string): Promise<{
   }
   if (message.is_test) throw new Error("Testberichten mogen niet als echte send");
 
+  // Campaign environment / lifecycle hard gate
+  const { data: campaignGate } = await client
+    .from("campaigns")
+    .select("id, environment, lifecycle_status, status")
+    .eq("business_id", business.id)
+    .eq("status", "ACTIVE")
+    .order("created_at", { ascending: false })
+    .limit(1)
+    .maybeSingle();
+
+  if (!campaignGate) {
+    throw new Error("Geen actieve campaign voor real send");
+  }
+  if (campaignGate.environment !== "PRODUCTION") {
+    throw new Error(
+      "Real send geblokkeerd: campaign environment is DEVELOPMENT"
+    );
+  }
+  if (!["LAUNCH_READY", "LIVE"].includes(String(campaignGate.lifecycle_status))) {
+    throw new Error(
+      `Real send geblokkeerd: lifecycle is ${campaignGate.lifecycle_status}`
+    );
+  }
+
   // Hard safety: never send real mail to the configured test inbox as "real"
   const testTo = process.env.OUTREACH_TEST_EMAIL?.trim().toLowerCase();
   if (testTo && toEmail === testTo) {
