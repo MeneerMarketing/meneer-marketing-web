@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
 import { KWALITEITSREGISTER, TEAM, VAKGEBIEDEN } from "@/data/team";
+import { reviewsVoorTeamlid } from "@/data/team-reviews";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
@@ -41,6 +42,16 @@ export default function TeamPage() {
     ...v,
     leden: TEAM.filter((t) => t.vak === v.id),
   })).filter((v) => v.leden.length > 0);
+
+  /* Wie er in de reviews bij naam genoemd wordt, meest genoemd eerst. Wie niet genoemd
+     wordt valt weg in plaats van met een leeg vak te blijven staan: nul reviews tonen
+     leest als een oordeel over die persoon en dat is het niet. */
+  const genoemd = TEAM.map((lid) => ({
+    lid,
+    reviews: reviewsVoorTeamlid(lid.naam),
+  }))
+    .filter((x) => x.reviews.length > 0)
+    .sort((a, b) => b.reviews.length - a.reviews.length);
 
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
@@ -233,6 +244,70 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Wie er bij naam genoemd wordt ──
+          De teampagina had acht namen met acht functies en verder niets. Biografieën
+          verzinnen kan niet: dit zijn echte mensen. Wat wel bestaat zijn klanten die uit
+          zichzelf een naam noemen, en die quotes staan openbaar bij Salonized. Gekoppeld
+          op het behandelveld ("Behandeling bij Iris") en niet op de tekst van de review,
+          want dan belandt een toevallige naamsvermelding bij de verkeerde persoon. */}
+      {genoemd.length > 0 ? (
+        <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+          <div className="mx-auto">
+            <div className="max-w-[62ch]">
+              <Label>Bij naam genoemd</Label>
+              <h2 className="diba-display-m mt-4 max-w-[20ch]">
+                Wat klanten schreven
+                <br />
+                <span className="diba-accent">over wie hen hielp.</span>
+              </h2>
+              <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+                Niet door ons uitgekozen op inhoud: dit zijn de reviews waar de
+                naam van de behandelaar bij staat. Wie hier niet tussen staat is
+                daarom niet minder goed, alleen minder vaak bij naam genoemd.
+              </p>
+            </div>
+
+            <ul className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {genoemd.map(({ lid, reviews }) => (
+                <li
+                  key={lid.slug}
+                  className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
+                >
+                  <p className="diba-card-title text-[var(--t-strong)]">
+                    {lid.naam}
+                  </p>
+                  <p className="diba-label mt-2 text-[var(--t-label)]">
+                    {lid.functie}
+                  </p>
+                  <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
+                    {reviews.length}{" "}
+                    {reviews.length === 1
+                      ? "review noemt deze naam"
+                      : "reviews noemen deze naam"}
+                  </p>
+                  <blockquote className="mt-5 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
+                    {reviews[0].quote}
+                  </blockquote>
+                  <p className="mt-5 text-[14px] leading-6 text-[var(--t-muted)]">
+                    {reviews[0].name}
+                    {reviews[0].relativeDate
+                      ? ` · ${reviews[0].relativeDate}`
+                      : ""}
+                  </p>
+                </li>
+              ))}
+            </ul>
+
+            <Link
+              href="/reviews"
+              className="diba-label mt-8 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              Alle reviews, en waarom een 5,0 wantrouwen verdient
+            </Link>
+          </div>
+        </section>
+      ) : null}
 
       {/* ── Afsluiter ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
