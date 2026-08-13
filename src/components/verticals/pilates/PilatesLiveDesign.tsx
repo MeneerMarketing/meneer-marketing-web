@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, ExternalLink, Maximize2 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Reveal } from "@/components/effects/Reveal";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
@@ -14,7 +14,7 @@ type ArtId = (typeof arts)[number]["id"];
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-/** Desktop artboard inside the stage; scaled down to fit the card. */
+/** Desktop artboard; scaled with object-fit:cover math to fill the stage. */
 const FRAME_W = 1440;
 const FRAME_H = 900;
 
@@ -37,15 +37,38 @@ const DIRECTION_META: Record<
 };
 
 function LiveTemplateFrame({ src, title }: { src: string; title: string }) {
+  const stageRef = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(0.5);
+
+  useEffect(() => {
+    const el = stageRef.current;
+    if (!el) return;
+
+    const update = () => {
+      const { width, height } = el.getBoundingClientRect();
+      if (width < 1 || height < 1) return;
+      // Cover: always fill the whole block (may crop a bit on one axis).
+      setScale(Math.max(width / FRAME_W, height / FRAME_H));
+    };
+
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
   return (
-    <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#f8f4ee] sm:aspect-[16/9.2]">
-      {/*
-        Real LGE preview (not a CSS mock). Fixed desktop artboard, scaled to card.
-        pointer-events-none so the overlay CTA stays the clear interaction.
-      */}
+    <div
+      ref={stageRef}
+      className="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 sm:aspect-[16/9.2]"
+    >
       <div
-        className="pointer-events-none absolute left-0 top-0 origin-top-left scale-[0.28] max-[399px]:scale-[0.26] min-[480px]:scale-[0.34] sm:scale-[0.42] md:scale-[0.5] lg:scale-[0.555] xl:scale-[0.62]"
-        style={{ width: FRAME_W, height: FRAME_H }}
+        className="pointer-events-none absolute left-0 top-0 origin-top-left"
+        style={{
+          width: FRAME_W,
+          height: FRAME_H,
+          transform: `scale(${scale})`,
+        }}
       >
         <iframe
           src={src}
