@@ -369,6 +369,11 @@ export const PILATES_PACKAGE_BY_ID = Object.fromEntries(
 /** Interne links voor discovery en topical authority (niet in footer/nav). */
 export const PILATES_RELATED_LINKS = [
   {
+    href: "/huidklinieken",
+    label: "Huidklinieken",
+    hint: "Zelfde Local Growth Engine, andere branche",
+  },
+  {
     href: "/bouwen",
     label: "Websites from scratch",
     hint: "Custom build, echt vanaf nul",
