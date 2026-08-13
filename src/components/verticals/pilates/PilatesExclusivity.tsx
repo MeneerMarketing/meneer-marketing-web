@@ -76,7 +76,7 @@ export function PilatesExclusivity({ personalization }: PilatesExclusivityProps)
         <div className="mt-12 grid gap-4 sm:grid-cols-3 sm:items-stretch">
           {PILLARS.map((card, i) => (
             <Reveal key={card.title} delay={0.06 * i} className="h-full">
-              <article className="group h-full rounded-3xl border border-white/12 bg-white/[0.05] p-5 backdrop-blur-sm transition hover:border-[#FF5722]/40 hover:bg-white/[0.08] sm:p-6">
+              <article className="group h-full rounded-3xl border border-white/12 bg-white/[0.05] p-5 backdrop-blur-sm transition hover:border-white/25 hover:bg-white/[0.09] sm:p-6">
                 <div className="mb-3 size-2 rounded-full bg-[#FF5722] transition group-hover:scale-125" />
                 <h3 className="text-lg font-extrabold tracking-tight">
                   {card.title}
@@ -124,7 +124,7 @@ export function PilatesExclusivity({ personalization }: PilatesExclusivityProps)
                         onBlur={() => setHoverCity(null)}
                         className={
                           hot
-                            ? "flex w-full items-center justify-between rounded-2xl border border-[#FF5722]/50 bg-white/10 px-4 py-3.5 text-left transition"
+                            ? "flex w-full items-center justify-between rounded-2xl border border-white/25 bg-white/10 px-4 py-3.5 text-left transition"
                             : "flex w-full items-center justify-between rounded-2xl border border-white/15 bg-white/[0.04] px-4 py-3.5 text-left transition hover:border-white/30"
                         }
                       >

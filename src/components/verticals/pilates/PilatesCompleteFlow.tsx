@@ -146,7 +146,7 @@ export function PilatesCompleteFlow() {
                   <motion.div
                     className={
                       isActive
-                        ? "w-full rounded-2xl border border-[#FF5722]/50 bg-white/[0.07] p-4 backdrop-blur-sm"
+                        ? "w-full rounded-2xl border border-white/20 bg-white/[0.1] p-4 shadow-[0_16px_40px_-24px_rgba(0,0,0,0.55)] backdrop-blur-sm"
                         : "w-full rounded-2xl border border-white/10 bg-white/[0.03] p-4"
                     }
                     initial={false}
@@ -218,7 +218,7 @@ export function PilatesCompleteFlow() {
                           isActive
                             ? "z-10 flex size-14 items-center justify-center rounded-2xl bg-[#FF5722] text-white shadow-[0_12px_30px_rgba(255,87,34,0.45)]"
                             : reached
-                              ? "z-10 flex size-14 items-center justify-center rounded-2xl bg-white/10 text-orange-200 ring-1 ring-[#FF5722]/40"
+                              ? "z-10 flex size-14 items-center justify-center rounded-2xl bg-white/12 text-white ring-1 ring-white/25"
                               : "z-10 flex size-14 items-center justify-center rounded-2xl bg-[#0c1222] text-slate-400 ring-1 ring-white/15"
                         }
                         initial={false}

@@ -50,7 +50,7 @@ export function PilatesGoogleStrategy() {
         aria-hidden
         style={{
           background:
-            "radial-gradient(ellipse 55% 50% at 85% 0%, rgba(255,87,34,0.25), transparent 55%)",
+            "radial-gradient(ellipse 50% 40% at 90% 0%, rgba(255,255,255,0.06), transparent 55%)",
         }}
       />
 
@@ -78,12 +78,12 @@ export function PilatesGoogleStrategy() {
 
         {/* Ascending ladder */}
         <Reveal delay={0.1}>
-          <div className="relative mt-14 lg:mt-16">
-            <div className="pointer-events-none absolute -left-2 bottom-10 hidden -rotate-90 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 lg:block">
+          <div className="relative mt-14 lg:mt-16 lg:pl-10">
+            <p className="pointer-events-none absolute bottom-14 left-0 hidden origin-bottom-left -rotate-90 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 lg:block">
               Zichtbaarheid
-            </div>
+            </p>
 
-            <ol className="grid gap-3 lg:grid-cols-3 lg:items-end lg:gap-4">
+            <ol className="relative z-10 grid gap-3 lg:grid-cols-3 lg:items-end lg:gap-4">
               {STEPS.map((step, index) => {
                 const selected = active === index;
                 return (
@@ -97,8 +97,8 @@ export function PilatesGoogleStrategy() {
                       aria-pressed={selected}
                       className={
                         selected
-                          ? `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-[#FF5722]/50 bg-gradient-to-b from-[#FF5722]/20 to-white/[0.06] p-5 text-left transition sm:p-6`
-                          : `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-white/10 bg-white/[0.03] p-5 text-left transition hover:border-white/25 sm:p-6`
+                          ? `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-white/20 bg-white/[0.1] p-5 text-left shadow-[0_20px_50px_-28px_rgba(0,0,0,0.55)] transition sm:p-6`
+                          : `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-white/10 bg-white/[0.03] p-5 text-left transition hover:bg-white/[0.06] sm:p-6`
                       }
                       initial={false}
                       animate={reduce ? undefined : { y: selected ? -6 : 0 }}
@@ -146,7 +146,7 @@ export function PilatesGoogleStrategy() {
               })}
             </ol>
 
-            <div className="h-px w-full bg-gradient-to-r from-transparent via-[#FF5722] to-transparent" />
+            <div className="h-px w-full bg-white/15" />
             <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
               <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">
                 Instap
@@ -163,7 +163,7 @@ export function PilatesGoogleStrategy() {
             <p className="max-w-2xl text-sm leading-relaxed text-slate-300">
               <span className="font-extrabold text-white">Eerlijk blijft eerlijk:</span>{" "}
               een gekochte garantie op positie 1 bestaat niet. Wel een aanpak die
-              Google beloont, met serieuze kans op toppostities voor je
+              Google beloont, met serieuze kans op topposities voor je
               kernzoekterm.
             </p>
             <a

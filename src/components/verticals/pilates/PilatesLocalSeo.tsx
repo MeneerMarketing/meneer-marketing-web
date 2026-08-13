@@ -72,21 +72,9 @@ export function PilatesLocalSeo() {
         </Reveal>
 
         <div className="relative mt-10 lg:mt-12">
-          {/* Floating weetje, desktop only */}
-          {weetje ? (
-            <Reveal delay={0.18}>
-              <div className="pointer-events-auto absolute -right-2 top-10 hidden w-[250px] rotate-[3deg] xl:block">
-                <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-                  Weetje · draai me om
-                </p>
-                <MarketingFunFactCard fact={weetje} className="!h-[230px]" />
-              </div>
-            </Reveal>
-          ) : null}
-
           {/* Centered Google simulation */}
           <Reveal delay={0.06}>
-            <div className="mx-auto max-w-2xl">
+            <div className="relative z-0 mx-auto max-w-2xl">
               <div
                 className="flex flex-wrap justify-center gap-2"
                 role="tablist"
@@ -170,15 +158,14 @@ export function PilatesLocalSeo() {
                           key={i}
                           className={
                             first
-                              ? "relative bg-orange-50/50 px-4 py-4 sm:px-6"
+                              ? "relative bg-slate-50 px-4 py-4 sm:px-6"
                               : "px-4 py-4 sm:px-6"
                           }
                         >
                           {first ? (
-                            <span
-                              className="absolute inset-y-0 left-0 w-1 bg-[#FF5722]"
-                              aria-hidden
-                            />
+                            <span className="mb-2 inline-flex rounded-full bg-slate-900 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-white">
+                              Topresultaat
+                            </span>
                           ) : null}
                           <p className="text-[11px] text-emerald-700">
                             jouwstudio.nl · Open · Boek proefles
@@ -197,6 +184,16 @@ export function PilatesLocalSeo() {
               </div>
             </div>
           </Reveal>
+
+          {/* Weetje bovenop de SERP (desktop) */}
+          {weetje ? (
+            <div className="pointer-events-auto absolute -right-2 top-16 z-30 hidden w-[250px] rotate-[3deg] xl:block">
+              <p className="mb-2 text-center text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
+                Weetje · draai me om
+              </p>
+              <MarketingFunFactCard fact={weetje} className="!h-[230px]" />
+            </div>
+          ) : null}
         </div>
 
         {/* Capability strip */}
