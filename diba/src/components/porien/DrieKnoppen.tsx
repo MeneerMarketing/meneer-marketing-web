@@ -4,6 +4,7 @@ import { useId, useState } from "react";
 import Label from "@/components/ui/Label";
 import { KNOPPEN, UITKOMST, VIERDE_KNOP, type Knop } from "@/data/porien";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * Drie knoppen — de uitblinker van de poriënpagina.
@@ -82,7 +83,7 @@ export default function DrieKnoppen() {
   const glans = !aan.talg;
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De tekening ──
           Blijft op groot scherm staan terwijl je verderop schakelt, want anders schuift
           hij uit beeld op het moment dat je een knop omzet.

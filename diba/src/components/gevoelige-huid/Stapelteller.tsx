@@ -10,6 +10,7 @@ import {
   bepaalBelasting,
 } from "@/data/gevoelige-huid";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De stapelteller — de uitblinker van de pagina over een gevoelige huid.
@@ -72,7 +73,7 @@ export default function Stapelteller() {
   const naam = (id: string) => STAPELAARS.find((s) => s.id === id)?.naam ?? id;
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De lijst ── */}
       <ul className="grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] sm:grid-cols-2">
         {STAPELAARS.map((s) => {

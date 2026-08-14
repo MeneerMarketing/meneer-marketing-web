@@ -4,6 +4,7 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { CIRKEL, CIRKEL_SLOT, WIE_LABEL } from "@/data/eczeem";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De krabcirkel — de uitblinker van de eczeempagina.
@@ -48,7 +49,7 @@ export default function Krabcirkel() {
   const schakel = CIRKEL[actief];
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De ring ── */}
       <div className="self-start rounded-[var(--r-md)] bg-white p-6 sm:p-8">
         <div className="relative mx-auto aspect-square w-full max-w-[400px]">

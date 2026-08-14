@@ -4,6 +4,7 @@ import { useState, type CSSProperties } from "react";
 import Label from "@/components/ui/Label";
 import { BOUW, GEWICHT_TEKST, type Bouw } from "@/data/cellulitis";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De dwarsdoorsnede — de uitblinker van de cellulitispagina.
@@ -47,7 +48,7 @@ export default function Dwarsdoorsnede() {
     : `M20 54 Q200 ${54 - bolling} 380 54`;
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De doorsnede ── */}
       <div className="self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7">
         <div className="overflow-hidden rounded-[var(--r-sm)]">

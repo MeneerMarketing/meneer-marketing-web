@@ -4,6 +4,7 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { ACNE_STADIA } from "@/data/acne";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * Onder je huid — een doorsnede die je door de vier stadia kunt klikken.
@@ -30,7 +31,7 @@ export default function AcneOnderDeHuid() {
   const ontstoken = actief >= 3;
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De doorsnede ── */}
       <div className="rounded-[var(--r-md)] bg-white p-5 sm:p-7">
         <svg

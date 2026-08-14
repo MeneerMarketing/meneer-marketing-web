@@ -10,6 +10,7 @@ import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { LAGEN, LAMP_UITLEG, type Laag } from "@/data/melasma";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De woodlamp — de uitblinker van de melasmapagina.
@@ -92,7 +93,7 @@ export default function Woodlamp() {
   }
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── Het vlak met de lamp ── */}
       <div className="self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7">
         <div

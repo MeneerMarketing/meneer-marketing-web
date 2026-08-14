@@ -6,6 +6,7 @@ import { ArrowRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
 import { ACNE_ZONES, lees, type ZoneId } from "@/data/acne-zones";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De acnekaart — het onderdeel dat deze pagina onderscheidt.
@@ -81,7 +82,7 @@ export default function AcneZoneKaart() {
   const actief = (id: ZoneId) => gekozen.includes(id);
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── Het raster ── */}
       <div>
         <div

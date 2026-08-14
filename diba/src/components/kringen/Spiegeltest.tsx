@@ -11,6 +11,7 @@ import {
   type UitkomstId,
 } from "@/data/kringen";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De spiegeltest — de uitblinker van de pagina over donkere kringen.
@@ -149,7 +150,7 @@ export default function Spiegeltest() {
 
   if (!klaar) {
     return (
-      <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
+      <div className={`mt-12 ${RASTER_SECTIE}`}>
         <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
           <Oogvlak test={test.id} />
           <p className="mt-5 text-sm leading-6 text-[var(--t-muted)]">

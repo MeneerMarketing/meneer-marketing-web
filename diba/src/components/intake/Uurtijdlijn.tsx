@@ -4,6 +4,7 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { STAPPEN } from "@/data/intake";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De tijdlijn van het uur — de uitblinker van de intakepagina.
@@ -25,7 +26,7 @@ export default function Uurtijdlijn() {
   const stap = STAPPEN[actief];
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De stappen ── */}
       <ol className="self-start">
         {STAPPEN.map((s, i) => {

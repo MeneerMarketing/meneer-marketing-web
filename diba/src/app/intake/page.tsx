@@ -16,6 +16,7 @@ import {
   VOORBEREIDING,
 } from "@/data/intake";
 import { SALONIZED_REVIEWS } from "@/data/salonized-reviews";
+import { RASTER_GELIJK } from "@/lib/raster";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
@@ -217,9 +218,10 @@ export default function IntakePage() {
             kop="Vier dingen altijd,"
             accent="en drie soms."
             intro="Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is het belangrijkste: een meting over foundation heen is geen meting."
+            raster="gelijk"
           />
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-12">
+          <div className={`mt-12 ${RASTER_GELIJK}`}>
             <div>
               <Label>Altijd</Label>
               <ul className="mt-5 space-y-3">
@@ -282,9 +284,10 @@ export default function IntakePage() {
             kop="Wat je dan nog steeds"
             accent="meeneemt."
             intro="De meeste twijfel gaat niet over het bedrag maar over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt."
+            raster="gelijk"
           />
 
-          <ul className="mt-12 grid gap-4 md:grid-cols-2">
+          <ul className={`mt-12 ${RASTER_GELIJK}`}>
             {OOK_ALS_JE_STOPT.map((k) => (
               <li
                 key={k.kop}
