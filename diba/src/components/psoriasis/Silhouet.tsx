@@ -4,6 +4,7 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { SILHOUET_SLOT, ZONES } from "@/data/psoriasis";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * Het silhouet — de uitblinker van de psoriasispagina.
@@ -24,73 +25,73 @@ import { publicCopy } from "@/lib/copy-flags";
  * BEELD: schematisch silhouet zonder gezicht en zonder huidtint (§14).
  */
 
-/**
- * De labels staan buiten de romp en niet erop. Het silhouet is smal, dus een label dat op
- * een lichaamsdeel gecentreerd staat legt zich eroverheen; met de korte namen uit de data
- * passen ze links en rechts ernaast.
- */
-const ANKERS = [
-  "left-1/2 top-0 -translate-x-1/2",
-  "left-0 top-[36%]",
-  "right-0 top-[52%]",
-  "left-1/2 bottom-0 -translate-x-1/2",
-] as const;
-
 export default function Silhouet() {
   const [actief, setActief] = useState(0);
   const zone = ZONES[actief];
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
-      {/* ── Het silhouet ── */}
-      <div className="self-start rounded-[var(--r-md)] bg-white p-6 sm:p-8">
-        <div className="relative mx-auto aspect-[3/4] w-full max-w-[340px]">
-          {/* Het silhouet krijgt niet de volle hoogte: boven en onder blijft ruimte over
-              voor het label dat daar staat. */}
-          <svg
-            viewBox="0 0 120 160"
-            className="absolute inset-x-0 top-[11%] bottom-[11%] h-[78%] w-full"
-            aria-hidden="true"
-          >
-            {/* Hoofd, romp en ledematen als losse vormen. Geen gezicht, geen huid. */}
-            <circle cx="60" cy="16" r="11" fill="var(--g-100)" />
-            <path
-              d="M46 32h28c4 0 7 3 7 7v34c0 4-3 7-7 7H46c-4 0-7-3-7-7V39c0-4 3-7 7-7z"
-              fill="var(--g-100)"
-            />
-            <path d="M39 40 24 78l8 3 12-34z" fill="var(--g-100)" />
-            <path d="M81 40l15 38-8 3-12-34z" fill="var(--g-100)" />
-            <path d="M48 82h9l-2 62h-9z" fill="var(--g-100)" />
-            <path d="M63 82h9l2 62h-9z" fill="var(--g-100)" />
-          </svg>
+    <div className={`mt-12 ${RASTER_SECTIE}`}>
+      {/* ── De plekken ──
+          Hier stond een getekend poppetje: hoofd, romp en ledematen als losse vlakken,
+          met vier labels eromheen gehangen op vaste ankerpunten. Hetzelfde bezwaar als
+          bij het hoofd op de acnepagina en de kronkelstreep bij littekens. Je moest maar
+          raden wat je zag, de labels hadden een zweefschaduw die deze huisstijl niet
+          voert, en zodra een naam iets langer werd botste hij tegen de romp.
 
-          {ZONES.map((z, i) => {
-            const aan = i === actief;
-            return (
+          De boodschap is bovendien niet hoe een lichaam eruitziet maar dat deze vier bij
+          elkaar horen. Als lijst van boven naar beneden lees je die spreiding net zo
+          goed, en er is ruimte om erbij te zetten waar elk van de vier voor wordt
+          aangezien. Dat laatste is bij psoriasis het punt: nagels gaan door voor
+          schimmel, de hoofdhuid voor hardnekkige roos. */}
+      <ul
+        role="radiogroup"
+        aria-label="De plekken waar psoriasis zich laat zien"
+        className="flex flex-col gap-2 rounded-[var(--r-md)] bg-white p-5 sm:p-6 lg:h-full"
+      >
+        <li>
+          <p className="diba-label text-[var(--t-label)]">
+            Van boven naar beneden
+          </p>
+          <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
+            Ze horen bij dezelfde aandoening, ook als ze niet tegelijk opspelen.
+          </p>
+        </li>
+        {ZONES.map((z, i) => {
+          const aan = i === actief;
+          return (
+            <li key={z.id} className={i === 0 ? "mt-3" : undefined}>
               <button
-                key={z.id}
                 type="button"
-                aria-pressed={aan}
+                role="radio"
+                aria-checked={aan}
                 onClick={() => setActief(i)}
-                className={`absolute flex min-h-12 items-center rounded-[var(--r-pill)] px-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
-                  ANKERS[i]
-                } ${
+                className={`flex min-h-12 w-full items-center justify-between gap-3 rounded-[var(--r-sm)] px-5 py-4 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                   aan
-                    ? "diba-pill-active"
-                    : "bg-white text-[var(--t-label)] shadow-[var(--shadow-float)] hover:bg-[var(--g-050)]"
+                    ? "bg-[var(--g-700)] text-white"
+                    : "bg-[var(--g-050)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
                 }`}
               >
-                <span className="diba-label whitespace-nowrap">{z.kort}</span>
+                <span className="text-[16px] leading-6 font-medium">
+                  {z.naam}
+                </span>
+                {/* Bij de gewrichten kan wachten blijvende schade geven. Dat mag je niet
+                    pas zien nadat je hem hebt aangetikt. */}
+                {z.dringend ? (
+                  <span
+                    className={`diba-label shrink-0 rounded-[var(--r-pill)] px-3 py-1 ${
+                      aan
+                        ? "bg-white/20 text-white"
+                        : "bg-[var(--g-050)] text-[var(--warn-text)]"
+                    }`}
+                  >
+                    Niet mee wachten
+                  </span>
+                ) : null}
               </button>
-            );
-          })}
-        </div>
-
-        <p className="mt-6 text-sm leading-6 text-[var(--t-muted)]">
-          Tik de plekken aan. Ze horen bij dezelfde aandoening, ook als ze niet
-          tegelijk opspelen.
-        </p>
-      </div>
+            </li>
+          );
+        })}
+      </ul>
 
       {/* ── De lezing ── */}
       <div aria-live="polite">
@@ -105,20 +106,28 @@ export default function Silhouet() {
         <h3 className="diba-card-title-lg mt-4">{zone.naam}</h3>
         <p className="diba-label mt-3 text-[var(--t-muted)]">{zone.vakterm}</p>
 
-        <dl className="mt-6 space-y-5">
-          <div className="border-l-2 border-[var(--g-200)] pl-4">
-            <dt className="diba-label">Wat je ziet of voelt</dt>
-            <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
+        {/* Stond op strepen links. Vlakken of niets, en hier is niets genoeg: een label
+            met een waarde eronder heeft geen bak nodig, ruimte doet het werk. */}
+        <dl className="mt-7 space-y-6">
+          <div>
+            <dt className="diba-label text-[var(--t-label)]">
+              Wat je ziet of voelt
+            </dt>
+            <dd className="mt-1.5 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(zone.watJeZiet)}
             </dd>
           </div>
-          <div
-            className={`border-l-2 pl-4 ${
-              zone.dringend ? "border-[var(--warn)]" : "border-[var(--g-300)]"
-            }`}
-          >
-            <dt className="diba-label">Waarom dit telt</dt>
-            <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
+          <div>
+            <dt
+              className={`diba-label ${
+                zone.dringend
+                  ? "text-[var(--warn-text)]"
+                  : "text-[var(--t-label)]"
+              }`}
+            >
+              Waarom dit telt
+            </dt>
+            <dd className="mt-1.5 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(zone.waaromHetTelt)}
             </dd>
           </div>

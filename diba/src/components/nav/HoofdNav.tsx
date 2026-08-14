@@ -260,8 +260,14 @@ function Pijl() {
  * De link naar de overzichtspagina staat onderin het paneel, waar je hem verwacht.
  * Een item zonder paneel is gewoon een link.
  *
- * Geen `diba-label` op de items. Dat zet alles in kapitalen met letterafstand, en vijf
- * menu-items in kapitalen lezen als een waarschuwing en niet als een menu.
+ * De items dragen `diba-label`: kapitalen met letterafstand, zoals de labels boven elke
+ * sectiekop. Hier heeft eerder het omgekeerde gestaan, met als reden dat vijf items in
+ * kapitalen als een waarschuwing zouden lezen. Dat was een smaakoordeel van mij en niet
+ * iets dat gemeten was; Yasin kiest de kapitalen, en dat is zijn merk.
+ *
+ * Wat er wél aan gemeten moet worden is de breedte. Kapitalen met letterafstand nemen
+ * meer ruimte dan gewone tekst, dus na elke wijziging aan de menu-items controleren dat
+ * de balk niet omslaat op de smalste desktopbreedte.
  */
 function NavKnop({
   item,
@@ -274,7 +280,11 @@ function NavKnop({
   open: boolean;
   onOpen: () => void;
 }) {
-  const basis = `flex h-10 items-center gap-1.5 rounded-[var(--r-pill)] px-3 text-[15px] leading-none transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${vorm.item}`;
+  /* Krapper op de smalste desktopmaat. Met kapitalen groeide de balk zo ver dat de knop
+     "Afspraak maken" bij 1024 breed tot 1046 liep, dus tweeëntwintig pixels buiten beeld.
+     Precies bij het breekpunt waarop deze navigatie verschijnt. Van px-3 naar px-2 scheelt
+     acht pixels per item, over vijf items veertig; vanaf xl is er ruimte genoeg. */
+  const basis = `diba-label flex h-10 items-center gap-1.5 rounded-[var(--r-pill)] px-2 leading-none transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 xl:px-3 ${vorm.item}`;
 
   if (!item.kolommen) {
     return (
