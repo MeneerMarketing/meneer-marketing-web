@@ -139,7 +139,17 @@ export default function Prijslijst() {
         </nav>
       ) : null}
 
-      <div className="mt-10 grid gap-4 lg:grid-cols-2">
+      {/* Kolommen die vullen, geen raster dat uitrekt.
+          Dit was `grid lg:grid-cols-2`, en rasteritems rekken mee met de langste in hun
+          rij. De sectie Metingen heeft één regel van 138 pixels en stond naast een buur
+          van 1182: dat leverde ruim duizend pixels wit op in een kaart met één prijs
+          erin. Precies wat er op het scherm zo raar uitzag.
+
+          De secties verschillen enorm in lengte, van één regel tot vijfentwintig. Dan is
+          een raster het verkeerde gereedschap: dat wil rijen, en rijen willen gelijke
+          hoogtes. Kolommen laten de secties gewoon doorlopen en achter elkaar aansluiten,
+          dus er blijft nergens lucht over. `break-inside-avoid` houdt een sectie heel. */}
+      <div className="mt-10 gap-4 lg:columns-2 [&>section]:mb-4 [&>section]:break-inside-avoid">
         {secties.map((s) => (
           <section
             key={s.id}
