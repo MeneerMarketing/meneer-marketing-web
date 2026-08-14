@@ -5,7 +5,6 @@ import Label from "@/components/ui/Label";
 import PriceTable from "@/components/ui/PriceTable";
 import { LASER_GESLACHTEN, type LaserGeslacht } from "@/data/laser-zones";
 import {
-  PRICE_CATEGORIES,
   VOORLOPIGE_PRIJZEN,
   sectionsForCategory,
   type PriceCategory,
@@ -37,9 +36,21 @@ import {
  * en vijfenzestig euro ernaast. Beide bedragen kloppen en samen zeggen ze niets. Er wordt
  * hier dus geen informatie verborgen; er wordt bepaald wélke van de twee voor jou geldt.
  */
+/**
+ * Alleen nog de laserzones.
+ *
+ * De huid- en metingregels stonden hier als tweede kopie van wat er al in
+ * `behandelingen.ts` staat, en toonden alleen een naam met een bedrag. Twee bronnen voor
+ * één prijs lopen binnen een maand uit elkaar, en een bedrag zonder hersteltijd of aantal
+ * sessies beantwoordt de vraag niet waarmee iemand hier komt. Die staan nu in
+ * `Behandelprijzen`, dat rechtstreeks uit de behandelingentabel leest.
+ *
+ * Wat hier blijft is wél een tabel: veertig zones tegen twee tarievenlijsten. Dat is
+ * rijen en kolommen in de letterlijke zin, en daar is een tabel het juiste gereedschap.
+ */
 export default function Prijslijst() {
-  const [categorie, setCategorie] = useState<PriceCategory>("alle");
   const [lijst, setLijst] = useState<LaserGeslacht>("dames");
+  const categorie: PriceCategory = "laser";
 
   const secties = useMemo(
     () =>
@@ -54,28 +65,6 @@ export default function Prijslijst() {
 
   return (
     <div>
-      <div
-        role="tablist"
-        aria-label="Prijscategorie"
-        className="flex flex-wrap gap-2"
-      >
-        {PRICE_CATEGORIES.map((c) => (
-          <button
-            key={c.id}
-            role="tab"
-            type="button"
-            aria-selected={c.id === categorie}
-            onClick={() => setCategorie(c.id)}
-            className={`diba-label inline-flex min-h-12 items-center rounded-[var(--r-pill)] px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
-              c.id === categorie
-                ? "diba-pill-active"
-                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
-            }`}
-          >
-            {c.label}
-          </button>
-        ))}
-      </div>
 
       {/* De laserlijst geldt per persoon, dus die keuze staat er alleen als hij ertoe doet. */}
       {toontLaser ? (

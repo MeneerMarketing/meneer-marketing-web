@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Prijslijst from "@/components/prijzen/Prijslijst";
+import Behandelprijzen from "@/components/prijzen/Behandelprijzen";
 import PrijzenVoorJou from "@/components/prijzen/PrijzenVoorJou";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
@@ -109,10 +110,49 @@ export default function PrijzenPage() {
         </div>
       </section>
 
-      {/* ── De lijst ── */}
+      {/* ── De behandelingen, met wat je voor dat bedrag krijgt ──
+          Dit was een tabel met een naam links en een bedrag rechts. De vraag achter "wat
+          kost een peeling" gaat nooit alleen over het bedrag, maar over of het bij je
+          past, hoe vaak je moet komen en hoe lang je erna rood bent. Dat stond allemaal
+          al in behandelingen.ts en werd hier niet gebruikt. Nu wel, uitklapbaar, met het
+          bedrag altijd in beeld. */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <Prijslijst />
+          <div className="max-w-[62ch]">
+            <Label>Per behandeling</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Wat het kost,
+              <br />
+              <span className="diba-accent">en wat je ervoor krijgt.</span>
+            </h2>
+            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Klap een behandeling open en je ziet hoe vaak je moet komen, hoe
+              lang de hersteltijd is en wat het niet doet. Het bedrag blijft
+              staan, ook dicht.
+            </p>
+          </div>
+          <div className="mt-10">
+            <Behandelprijzen />
+          </div>
+        </div>
+      </section>
+
+      {/* ── De laserzones ──
+          Dit blijft een tabel, want dat is het ook: veertig zones tegen twee
+          tarievenlijsten. Rijen en kolommen in de letterlijke zin. */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div className="max-w-[62ch]">
+            <Label>Laserontharing per zone</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Elke zone,
+              <br />
+              <span className="diba-accent">met het tarief erbij.</span>
+            </h2>
+          </div>
+          <div className="mt-10">
+            <Prijslijst />
+          </div>
         </div>
       </section>
 
