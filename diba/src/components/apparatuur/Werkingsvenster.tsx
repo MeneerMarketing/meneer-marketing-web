@@ -35,6 +35,24 @@ import { publicCopy } from "@/lib/copy-flags";
  * blijven gewoon klikbaar, dus de inhoud is compleet zonder één pixel beweging.
  */
 
+/**
+ * Hoe heet wat er in de huid gebeurt.
+ *
+ * Elke laag in de tekening draagt een naam en die lezen mensen moeiteloos. Alles wat er
+ * beweegt droeg er geen, en dan wordt het raden: vier streepjes in een mintvlak zijn geen
+ * naaldjes tot er "naaldjes" bij staat. Dit is de kortst mogelijke naam voor het ding dat
+ * je op dat moment ziet, niet voor het apparaat en niet voor het effect.
+ */
+const WERKWIJZE_NAAM: Record<string, string> = {
+  meten: "Meetlicht",
+  licht: "Lichtpuls",
+  naald: "Naaldjes",
+  chemisch: "Zuur",
+  zuiging: "Zuiging",
+  kou: "Koude CO2",
+  injectie: "Injectie",
+};
+
 /** Waar de huid begint in de tekening, en waar de diepste lederhuid ophoudt. */
 const OPPERVLAK = 88;
 const BODEM = 300;
@@ -230,6 +248,23 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
             beweegt={beweegt}
             uid={uid}
           />
+
+          {/* Wat er in de huid gebeurt, met een naam erbij.
+              Zelfde reden als bij het handstuk: de lagen dragen namen en zijn daardoor
+              leesbaar, de bewegende vormen droegen er geen. Vier streepjes in een
+              mintvlak zijn geen naaldjes tot er "naaldjes" bij staat. Alleen tijdens de
+              stap waarin het werk gebeurt, want daarna klopt de naam niet meer. */}
+          <text
+            x="8"
+            y={OPPERVLAK - 8}
+            className="fill-[var(--g-900)] text-[10px] tracking-[.12em] uppercase"
+            style={{
+              opacity: stap === 1 ? 0.75 : 0,
+              transition: beweegt ? "opacity 400ms ease" : undefined,
+            }}
+          >
+            {WERKWIJZE_NAAM[apparaat.werkwijze]}
+          </text>
 
           {/* De laagnamen naast de tekening; wat buiten bereik ligt vervaagt. */}
           <g>
@@ -804,6 +839,19 @@ function Handstuk({
         rx="6"
         fill="var(--g-500)"
       />
+
+      {/* Zeg wat het is.
+          De huidlagen dragen allemaal een naam en die leest iedereen moeiteloos. Alles
+          wat er in de tekening beweegt droeg er geen, en dus werd dit vlak boven de huid
+          een raadsel: een donkergroen blokje dat je maar moest herkennen als gereedschap.
+          Een tekening zonder namen is een plaatje; met namen is het een schema. */}
+      <text
+        x={links + breedte + 8}
+        y="47"
+        className="fill-[var(--t-muted)] text-[10px] tracking-[.12em] uppercase"
+      >
+        Handstuk
+      </text>
     </g>
   );
 }
