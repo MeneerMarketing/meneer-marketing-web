@@ -3,7 +3,6 @@
 import { ArrowUpRight } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
-import { LivingCloudGrid } from "@/components/effects/LivingCloudGrid";
 import { PilatesLeadForm } from "@/components/verticals/pilates/PilatesLeadForm";
 import type {
   VerticalCampaignPersonalization,
@@ -37,12 +36,17 @@ export function PilatesFinalCta({
   return (
     <section
       id="aanvraag"
-      className="relative overflow-hidden bg-mm-footer-bg text-white"
+      className="relative overflow-hidden border-b border-slate-800 bg-[#0c1222] text-white"
       aria-labelledby="pilates-final-heading"
     >
-      <div className="pointer-events-none absolute inset-0 opacity-[0.14]">
-        <LivingCloudGrid />
-      </div>
+      <div
+        className="pointer-events-none absolute inset-0"
+        aria-hidden
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 45% at 10% 0%, rgba(255,87,34,0.22), transparent 55%), radial-gradient(ellipse 45% 40% at 95% 100%, rgba(56,189,248,0.12), transparent 55%)",
+        }}
+      />
 
       <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:pb-24 lg:pt-20">
         <div className="grid items-stretch gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10">
