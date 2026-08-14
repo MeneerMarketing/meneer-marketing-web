@@ -78,7 +78,7 @@ export function PilatesHero() {
                 <span className="font-semibold text-orange-200">€0</span>
               </>
             ) : null}
-            . Eén partner per stad.
+            .
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
@@ -93,7 +93,7 @@ export function PilatesHero() {
                 }
                 className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(255,87,34,0.65)] transition hover:bg-orange-600 sm:w-auto"
               >
-                Check of mijn stad vrij is
+                Stuur mijn studio door
                 <ArrowUpRight
                   className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden
@@ -226,8 +226,7 @@ export function PilatesHero() {
                 </>
               ) : (
                 " + launch"
-              )}{" "}
-              · 1 studio per stad
+              )}
             </p>
           </div>
         </Reveal>

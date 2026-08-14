@@ -93,7 +93,7 @@ export function PilatesFinalCta({
               {[
                 "Rechtstreeks contact",
                 "Site, SEO en ads onder één dak",
-                "Eén Pilates partner per stad",
+                "Live in circa 5 werkdagen",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <span

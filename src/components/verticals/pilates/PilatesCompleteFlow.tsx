@@ -73,15 +73,15 @@ export function PilatesCompleteFlow() {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-orange-300">
-                Complete studio flow
+                Van website naar een pad
               </p>
               <h2
                 id="pilates-flow-heading"
                 className="mt-3 text-3xl font-extrabold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.06]"
               >
-                Van Google-zoekopdracht tot vaste Pilates-klant.
+                Gevonden worden, vertrouwen winnen, les boeken.
                 <span className="mt-1 block text-[#FF5722]">
-                  Dat is het echte product.
+                  Eén doorlopende route.
                 </span>
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">

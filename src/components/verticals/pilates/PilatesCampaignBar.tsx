@@ -18,7 +18,7 @@ function reservationCopy(
     return `Voor dit traject houden we ${city} momenteel voor jullie gereserveerd.`;
   }
   if (status === "EXCLUSIVE") {
-    return `${city} valt binnen jullie exclusieve Pilates-traject.`;
+    return `${city} staat in jullie persoonlijke Pilates-traject.`;
   }
   return null;
 }

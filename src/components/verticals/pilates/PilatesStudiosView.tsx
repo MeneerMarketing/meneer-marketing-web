@@ -7,7 +7,6 @@ import { PilatesCampaignBar } from "@/components/verticals/pilates/PilatesCampai
 import { PilatesCampaignTracker } from "@/components/verticals/pilates/PilatesCampaignTracker";
 import { PilatesCase } from "@/components/verticals/pilates/PilatesCase";
 import { PilatesCompleteFlow } from "@/components/verticals/pilates/PilatesCompleteFlow";
-import { PilatesExclusivity } from "@/components/verticals/pilates/PilatesExclusivity";
 import { PilatesFaq } from "@/components/verticals/pilates/PilatesFaq";
 import { PilatesFinalCta } from "@/components/verticals/pilates/PilatesFinalCta";
 import { PilatesGoogleStrategy } from "@/components/verticals/pilates/PilatesGoogleStrategy";
@@ -53,25 +52,23 @@ export function PilatesStudiosView({
       ) : null}
       <PilatesHero />
       <PilatesStudioExperience />
-      <PilatesCompleteFlow />
       <PilatesLiveDesign />
       <PilatesWhyPrice />
       <PilatesGoogleStrategy />
       <PilatesLocalSeo />
-      <PilatesExclusivity personalization={personalization} />
       <PilatesBookingApp campaignRef={campaignRef} />
       <PilatesPricing
         campaignRef={campaignRef}
         personalization={personalization}
         onPackageSelect={onPackageSelect}
       />
+      <PilatesCompleteFlow />
       <PilatesSignatureCustom
         campaignRef={campaignRef}
         onSelect={() => onPackageSelect("signature-custom")}
       />
       <PilatesCase />
       <PilatesHowItWorks />
-      <PilatesInternalLinks />
       <PilatesFaq />
       <PilatesFinalCta
         personalization={personalization}
@@ -79,6 +76,7 @@ export function PilatesStudiosView({
         selectedInterest={selectedInterest}
         onInterestChange={setSelectedInterest}
       />
+      <PilatesInternalLinks />
     </main>
   );
 }
