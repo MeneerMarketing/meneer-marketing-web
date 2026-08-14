@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Prijslijst from "@/components/prijzen/Prijslijst";
+import PrijzenVoorJou from "@/components/prijzen/PrijzenVoorJou";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -72,7 +73,9 @@ export default function PrijzenPage() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 sm:p-10">
+          {/* Stond op een rand. Vlakken dragen zichzelf; op --g-010 is wit al genoeg
+              onderscheid en een lijntje eromheen is precies de stijl die hier niet hoort. */}
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
             <Label>Wat een prijs niet is</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
               Een voorspelling
@@ -92,6 +95,19 @@ export default function PrijzenPage() {
       </section>
 
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+
+      {/* ── Wat het bij jou kost ──
+          De lijst hieronder is ruim vier schermen lang, en dat blijft zo: alles staat er,
+          altijd. Maar het antwoord op de vraag waarmee iemand hier komt stond daardoor
+          ergens in die vier schermen verstopt. De behandelingenpagina ordende al op het
+          huidprofiel; deze pagina deed dat niet, dus las je daar wat bij je past en hier
+          weer een alfabetische muur. Dit blok haalt die twee bij elkaar. Er wordt niets
+          weggefilterd; het staat erboven en niet ervoor in de plaats. */}
+      <section className="px-5 pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+        <div className="mx-auto">
+          <PrijzenVoorJou />
+        </div>
+      </section>
 
       {/* ── De lijst ── */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">

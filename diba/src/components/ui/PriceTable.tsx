@@ -56,7 +56,7 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
         {caption}
       </caption>
       <thead>
-        <tr className="border-b border-[var(--g-100)]">
+        <tr>
           <th
             scope="col"
             className="py-3 pr-3 text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
@@ -81,17 +81,22 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
       </thead>
       <tbody>
         {rows.map((row, i) => (
+          /* Om en om gevuld in plaats van een lijntje onder elke regel.
+             Vijfentachtig regels met een streepje eronder geven vijfentachtig lijnen op
+             een pagina waar deze huisstijl er nul voert, en ze maken de lijst bovendien
+             hoger dan nodig. Een zebra leest bij een prijslijst net zo goed, want je oog
+             volgt de rij en niet de scheiding. */
           <tr
             key={`${row.name}-${i}`}
-            className="border-b border-[var(--g-050)] align-top"
+            className={`align-top ${i % 2 === 1 ? "bg-[var(--g-025)]" : ""}`}
           >
             <th
               scope="row"
-              className="py-4 pr-3 text-[15px] leading-relaxed font-normal text-[var(--t-strong)]"
+              className="rounded-l-[var(--r-sm)] py-3 pr-3 pl-4 text-[15px] leading-6 font-normal text-[var(--t-strong)]"
             >
               {row.name}
             </th>
-            <td className="py-4 pr-3 text-right text-[15px] text-[var(--t-strong)] tabular-nums">
+            <td className="py-3 pr-3 text-right text-[15px] leading-6 text-[var(--t-strong)] tabular-nums">
               {fmtPrice(row.single) ?? (
                 <span className="text-[13px] text-[var(--t-muted)]">
                   n.v.t.
@@ -99,7 +104,7 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
               )}
             </td>
             {heeftTraject ? (
-              <td className="py-4 text-right tabular-nums">
+              <td className="rounded-r-[var(--r-sm)] py-3 pr-4 text-right leading-6 tabular-nums">
                 {row.traject ? (
                   <>
                     <span className="text-[15px] font-medium text-[var(--t-strong)]">
