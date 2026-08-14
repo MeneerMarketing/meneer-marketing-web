@@ -230,12 +230,13 @@ export function HuidkliniekLiveDesign() {
               id="Huidkliniek-live-design-heading"
               className="mt-3 text-3xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.06]"
             >
-              Dit worden de echte kliniek-templates.
-              <span className="text-[#FF5722]"> Live uit de engine.</span>
+              Kliniek-richtingen in wording
+              <span className="text-[#FF5722]"> Clinical · Soft · Dark.</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Template 1–3 komen in de Local Growth Engine. Logo, kleuren,
-              foto&apos;s en afspraakroute zetten we daarna om naar jouw kliniek.
+              Drie concepten voor huid- en cosmetische klinieken. Zodra Template
+              1 live staat in de engine, komt die hier exact binnen. Nu al
+              kiezen we de vibe die bij jouw behandelkamer past.
             </p>
           </div>
         </Reveal>
@@ -348,3 +349,4 @@ export function HuidkliniekLiveDesign() {
     </section>
   );
 }
+

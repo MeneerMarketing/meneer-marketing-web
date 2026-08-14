@@ -63,14 +63,16 @@ export function HuidkliniekFinalCta({
                 id="Huidkliniek-final-heading"
                 className="mt-4 text-3xl font-extrabold tracking-tight text-balance sm:text-4xl lg:text-[2.55rem] lg:leading-[1.08]"
               >
-                Je kliniek staat al.
-                <span className="mt-1 block text-[#FF5722]">Nu digitaal.</span>
+                De intake begint online.
+                <span className="mt-1 block text-[#FF5722]">
+                  Niet pas aan de balie.
+                </span>
               </h2>
 
               <p className="mt-5 max-w-md text-base leading-relaxed text-slate-300 sm:text-lg">
-                Stuur je kliniek door. Ik kijk welk pakket past en reageer
-                rechtstreeks. Vanaf {fromMonthly}
-                {promo ? ", launch tijdelijk €0" : ""}.
+                Stuur je kliniek door. Ik zeg eerlijk welk pakket past: Clinic
+                Edition, Local Growth of Growth Partner. Vanaf {fromMonthly}
+                {promo ? ", launch tijdelijk €0" : ""}, één partner per stad.
               </p>
 
               <a

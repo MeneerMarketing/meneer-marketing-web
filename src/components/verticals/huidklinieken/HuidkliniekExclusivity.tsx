@@ -62,11 +62,9 @@ export function HuidkliniekExclusivity({ personalization }: HuidkliniekExclusivi
           </p>
           <h2
             id="Huidkliniek-exclusivity-heading"
-            className="mt-5 max-w-4xl text-[2.4rem] font-extrabold leading-[1.02] tracking-tight sm:text-5xl lg:text-[3.4rem]"
+            className="mt-5 max-w-4xl text-[2.2rem] font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-[3.1rem]"
           >
-            <span className="block text-white">Eén kliniek.</span>
-            <span className="block text-white/90">Eén stad.</span>
-            <span className="block text-[#FF5722]">Eén team dat voor jou werkt.</span>
+            {exclusivity.headline}
           </h2>
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
             {exclusivity.body}

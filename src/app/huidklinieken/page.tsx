@@ -50,9 +50,9 @@ export default async function HuidkliniekenPage({ searchParams }: PageProps) {
             dateModified: "2026-08-14",
           }),
           serviceJsonLd({
-            name: "Website, SEO en marketing voor huidklinieken",
+            name: "Website, Maps en intake-marketing voor huidklinieken",
             description:
-              "High-end huidkliniek website, lokale SEO, Google Ads-beheer en afspraakflow. Clinic Edition, Local Growth of Growth Partner. Eén partner per stad.",
+              "Custom website voor huid- en cosmetische klinieken, lokale SEO, Google Business Profile en pad naar intake. Clinic Edition, Local Growth of Growth Partner. Eén partner per stad.",
             path: PAGE_PATH,
             areaServed: "Nederland",
           }),

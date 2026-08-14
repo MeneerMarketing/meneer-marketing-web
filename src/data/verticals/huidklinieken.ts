@@ -11,16 +11,16 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
   verticalNamePlural: "Huidklinieken",
   themeAccent: "#FF5722",
   seo: {
-    title: "Website & SEO voor huidklinieken | Meneer Marketing",
+    title: "Huidkliniek online: site, Maps & intake | Meneer Marketing",
     description:
-      "Huidkliniek website laten maken? Custom build, lokale SEO en afspraakflow in één traject. Clinic Edition vanaf €89 per maand.",
+      "Custom website voor je huidkliniek, lokale SEO en een pad van Google naar intake. Clinic Edition vanaf €89/m, launch tijdelijk €0. Eén partner per stad.",
     keywords: [
-      "website huidkliniek",
-      "webdesign huidkliniek",
-      "seo huidkliniek",
-      "marketing huidkliniek",
-      "huidkliniek website laten maken",
-      "lokale seo cosmetische kliniek",
+      "huidkliniek website",
+      "cosmetische kliniek marketing",
+      "lokale seo huidkliniek",
+      "google business huidkliniek",
+      "website cosmetische kliniek",
+      "intake boeken website kliniek",
     ],
   },
   pricing: {
@@ -39,9 +39,9 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
       {
         id: "studio-edition",
         name: "Clinic Edition",
-        eyebrow: "Instap die voelt als premium",
-        tagline: "Je kliniek digitaal. Eindelijk op niveau.",
-        ladderLabel: "Website",
+        eyebrow: "Digitale voordeur",
+        tagline: "De digitale voordeur van je kliniek. Rustig, helder, klaar om te boeken.",
+        ladderLabel: "Kliniek-site",
         monthly: { amount: 89, unit: "eur", cadence: "monthly" },
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
         ctaLabel: "Ik wil Clinic Edition",
@@ -60,9 +60,10 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
       {
         id: "local-growth",
         name: "Local Growth",
-        eyebrow: "Meest gekozen",
-        tagline: "Online staan is makkelijk. Lokaal gevonden worden niet.",
-        ladderLabel: "Website + vindbaarheid",
+        eyebrow: "Maps & stad",
+        tagline:
+          "Zichtbaar op huidkliniek + stad, behandelingen en Maps. Elke maand bijgestuurd.",
+        ladderLabel: "Site + lokale vindbaarheid",
         recommended: true,
         monthly: { amount: 179, unit: "eur", cadence: "monthly" },
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
@@ -82,10 +83,10 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
       {
         id: "growth-partner",
         name: "Growth Partner",
-        eyebrow: "Site, ads, influencers",
+        eyebrow: "Agenda vullen",
         tagline:
-          "SEO, Google Ads, Meta Ads en creators. Jij runt de kliniek.",
-        ladderLabel: "Complete groei",
+          "Organisch blijft lopen. Google Ads, Meta Ads en creators vullen de agenda sneller.",
+        ladderLabel: "Vindbaarheid + ads",
         monthly: { amount: 399, unit: "eur", cadence: "monthly" },
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
         ctaLabel: "Praat over Growth Partner",
@@ -221,9 +222,9 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
     },
   ],
   exclusivity: {
-    headline: "Eén kliniek. Eén stad. Eén aanspreekpunt.",
-    lead: "Eén huidkliniek-partner per stad. Bewust.",
-    body: "Als ik jouw lokale vindbaarheid bouw, help ik niet tegelijk jouw directe concurrent om dezelfde Google-positie te pakken. Dat is hoe dit programma werkt zolang de exclusieve samenwerking actief is.",
+    headline: "Jouw stad. Jouw kliniek. Niet die van de concurrent.",
+    lead: "Eén huidkliniek-partner per stad binnen dit programma.",
+    body: "Als ik jouw lokale vindbaarheid en Maps-positie bouw, help ik niet tegelijk de kliniek om de hoek om dezelfde zoekvraag te pakken. Dat blijft zo zolang de exclusieve samenwerking actief is.",
     cities: [],
   },
   caseStudy: {
@@ -241,73 +242,65 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
   },
   faq: [
     {
-      question: "Is dit een template?",
+      question:
+        "Past dit bij een cosmetische kliniek, of alleen bij “huidkliniek” in de naam?",
       answer:
-        "Clinic Edition is een gespecialiseerde kliniek-foundation die ik aanpas aan jouw merk. Pagebuilders horen hier niet bij. Voor volledige unieke architectuur is er Signature Custom.",
+        "Beide. Ik richt structuur en zoektermen op hoe mensen in jouw stad zoeken: klinieknaam, behandelingen, Maps. De site volgt jouw merkstijl en agenda, niet een generiek schoonheidssjabloon.",
     },
     {
-      question: "Kan mijn huidige agendasysteem blijven?",
+      question: "Wat als we al een agenda of patiëntensysteem hebben?",
       answer:
-        "Vaak wel. Werkt je huidige systeem, dan koppel ik intake, consult en herhaalafspraken aan de nieuwe site wanneer dat technisch redelijk is. Dat zit in Clinic Edition.",
+        "Dan houd je dat. Waar het technisch redelijk is, koppel ik de site aan intake, consult en herhaalafspraak. Zo blijft de boeking in jullie bestaande flow.",
     },
     {
-      question: "Help je met lokale SEO voor mijn huidkliniek?",
+      question: "Schrijf jij teksten die medische claims claimen?",
       answer:
-        "Ja. Bij Clinic Edition injecteer ik SEO al op huidkliniek [jouw stad], plus technische SEO. Local Growth en Growth Partner pakken bredere zoektermen, Maps en maandelijkse bijsturing.",
+        "Nee. Ik zorg voor vindbaarheid, structuur en een pad naar afspraak. Wat je wél mag zeggen over behandelingen bepaal jij met je eigen kaders. Ik duw geen beloftes in je copy die niet bij een kliniek horen.",
     },
     {
-      question: "Hoe snel staat mijn website live?",
+      question: "Hoe snel staat Clinic Edition live?",
       answer:
-        "Bij Clinic Edition mik ik op oplevering binnen circa 5 werkdagen. Content en assets van jouw kant op tijd aanleveren helpt enorm.",
+        "Ik mik op circa 5 werkdagen zodra logo, behandelaanbod en de nodige assets binnen zijn. Launch is tijdelijk €0; daarna geldt het maandbedrag bij 12 maanden.",
     },
     {
-      question: "Wat betekent één partner per stad?",
+      question: "Wat betekent één partner per stad concreet?",
       answer:
-        "Binnen dit huidklinieken-programma werk ik met maximaal één actieve kliniek-partner per stad. Zo help ik niet twee directe concurrenten tegelijk op dezelfde lokale zoekvraag.",
+        "Binnen dit programma werk ik met maximaal één actieve huidkliniek-partner per stad. Jouw lokale SEO bouw ik niet tegelijk voor de concurrent om de hoek.",
     },
     {
-      question: "Zit advertentiebudget inbegrepen?",
+      question:
+        "Wanneer kies ik Local Growth of Growth Partner in plaats van alleen Clinic Edition?",
       answer:
-        "Nee. Growth Partner bevat Google Ads- en Meta Ads-beheer, plus influencer-matches. Mediabudget en creator-fees betaal je apart.",
-    },
-    {
-      question: "Kan ik later upgraden?",
-      answer:
-        "Ja. Van Clinic Edition naar Local Growth of Growth Partner. Signature Custom blijft een apart from-scratch traject.",
-    },
-    {
-      question: "Wie beheert de website?",
-      answer:
-        "Ik. Hosting, onderhoud, beveiliging en kleine wijzigingen zitten in de maandpakketten. Jij mailt mij, niet een ticketwachtrij.",
+        "Clinic Edition zet site + basisinjectie op huidkliniek [jouw stad]. Local Growth trekt bredere lokale zoektermen, Maps en maandelijkse sturing. Growth Partner voegt Google Ads, Meta Ads en creator-werk toe; mediabudget blijft apart.",
     },
   ],
   howItWorks: [
     {
-      title: "Ik bekijk je kliniek",
-      body: "Locatie, behandelingen, agenda, merkstijl. Intake past op één koffie.",
+      title: "Ik loop je kliniek digitaal na",
+      body: "Behandelingen, agenda, Google Business Profile, merkstijl. Kort en concreet.",
     },
     {
-      title: "Art direction kiezen",
-      body: "Clinical Editorial, Soft Clinical of Precision Dark. Of Signature Custom.",
+      title: "Richting kiezen",
+      body: "Clinical Editorial, Soft Clinical of Precision Dark. Of Signature Custom als je volledig uniek wilt.",
     },
     {
-      title: "Branding, aanbod en afspraken",
-      body: "Jouw content, huisstijl en boekingsroute erin.",
+      title: "Site, Maps en intake-route",
+      body: "Jouw content erin, lokale structuur scherp, knop naar afspraak die klopt.",
     },
     {
-      title: "Website live",
-      body: "Binnen circa 5 werkdagen. Inclusief SEO-injectie op huidkliniek [jouw stad].",
+      title: "Live in circa 5 werkdagen",
+      body: "Clinic Edition online met SEO-injectie op huidkliniek [jouw stad].",
     },
     {
-      title: "Growth waar je voor kiest",
-      body: "Local Growth voor meer zoektermen. Growth Partner plus Google Ads, Meta Ads en influencers.",
+      title: "Groeien op jouw tempo",
+      body: "Local Growth voor meer zoektermen en Maps. Growth Partner plus Google Ads, Meta Ads en creators.",
     },
   ],
   localSeoExamples: {
     queries: [
       "huidkliniek Utrecht",
       "cosmetische kliniek Utrecht",
-      "botox Utrecht",
+      "laserontharing Utrecht",
       "huidverbetering Utrecht",
     ],
     pages: [
@@ -331,29 +324,19 @@ export const HUIDKLINIEKEN_PACKAGE_BY_ID = Object.fromEntries(
 
 export const HUIDKLINIEKEN_RELATED_LINKS = [
   {
-    href: "/pilates-studios",
-    label: "Pilates studio's",
-    hint: "Zelfde Local Growth Engine, andere branche",
+    href: "/diensten/local-seo",
+    label: "Lokale SEO",
+    hint: "Stad, Maps, Google Business",
   },
   {
     href: "/bouwen",
     label: "Websites from scratch",
-    hint: "Custom build, echt vanaf nul",
+    hint: "Custom build voor merken die serieus zijn",
   },
   {
     href: "/diensten/webdesign",
     label: "Webdesign",
-    hint: "Design dat mensen laat boeken",
-  },
-  {
-    href: "/diensten/seo",
-    label: "SEO",
-    hint: "Technisch + content dat rankt",
-  },
-  {
-    href: "/diensten/local-seo",
-    label: "Lokale SEO",
-    hint: "Stad, Maps, Google Business",
+    hint: "Design dat rust en precisie uitstraalt",
   },
   {
     href: "/vindbaarheid",
@@ -369,5 +352,10 @@ export const HUIDKLINIEKEN_RELATED_LINKS = [
     href: "/diensten/google-ads",
     label: "Google Ads",
     hint: "Search die afspraken oplevert",
+  },
+  {
+    href: "/contact",
+    label: "Contact",
+    hint: "Bel, mail of WhatsApp",
   },
 ] as const;
