@@ -6,6 +6,7 @@ import {
   ArrowUpRight,
   Gauge,
   MessageCircle,
+  Rocket,
   Search,
   Sparkles,
   TrendingUp,
@@ -28,7 +29,7 @@ const launchPromo = getActiveLaunchPromo(cfg.pricing);
 
 const whatsappLink =
   whatsappHref(
-    "Hoi Meneer Marketing! Ik heb een Pilates studio en wil graag even schakelen.",
+    "Hoi Meneer Marketing! Ik heb een Pilates studio en wil eerst even contact voordat ik start.",
   ) ?? "/contact";
 
 const heroPillars = [
@@ -81,25 +82,58 @@ export function PilatesHero() {
             ) : null}
           </div>
 
-          <h1 className="mt-5 max-w-[14ch] text-[2.4rem] font-extrabold leading-[1.04] tracking-tight sm:max-w-none sm:text-[2.85rem] lg:text-[3.1rem] lg:leading-[1.02]">
-            High-end Pilates-design.
-            <br />
-            <span className="text-[#FF5722]">Zo hoog mogelijk in Google.</span>
+          <h1 className="mt-5 text-pretty text-[2.35rem] font-extrabold leading-[1.06] tracking-tight sm:text-[2.8rem] lg:text-[3.2rem] lg:leading-[1.02]">
+            <span className="block text-white">High-end Pilates design.</span>
+            <span className="mt-1 block text-[#FF5722]">
+              Zo hoog mogelijk in Google.
+            </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Ik bouw je site from scratch: art direction op studioniveau, code
-            die Google écht snapt, en lokale SEO die mikken op Maps en zo hoog
-            mogelijk in de zoekresultaten. Daarna boeken ze via jouw site. Vanaf{" "}
-            {fromMonthly}/m
-            {launchPromo ? (
-              <>
-                , launch{" "}
-                <span className="font-semibold text-orange-200">€0</span>
-              </>
-            ) : null}
-            , maandelijks opzegbaar.
+            Ik bouw from scratch: art direction op studioniveau, code die Google
+            écht snapt, en lokale SEO die mikken op Maps en pagina 1. Jouw
+            studio verdient een site die net zo strak voelt als je reformer.
           </p>
+
+          <div className="mt-5 inline-flex max-w-full flex-col gap-2 rounded-2xl border border-white/12 bg-white/[0.05] p-1 sm:inline-block">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-[0.9rem] border border-[#FF5722]/25 bg-gradient-to-r from-[#FF5722]/15 via-white/[0.04] to-transparent px-4 py-3">
+              <div className="min-w-[5.5rem]">
+                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-orange-300">
+                  Studio Edition
+                </p>
+                <p className="mt-0.5 text-xl font-extrabold leading-none tracking-tight text-white">
+                  {fromMonthly}
+                  <span className="text-sm font-bold text-slate-300">/m</span>
+                </p>
+              </div>
+              {launchPromo ? (
+                <>
+                  <span
+                    className="hidden h-9 w-px shrink-0 bg-white/15 sm:block"
+                    aria-hidden
+                  />
+                  <div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
+                      Launch
+                    </p>
+                    <p className="mt-0.5 text-sm font-extrabold leading-none text-white">
+                      <span className="text-slate-500 line-through decoration-slate-500/80">
+                        {formatVerticalMoney(launchPromo.was)}
+                      </span>{" "}
+                      <span className="text-orange-300">€0</span>
+                    </p>
+                  </div>
+                </>
+              ) : null}
+              <span
+                className="hidden h-9 w-px shrink-0 bg-white/15 sm:block"
+                aria-hidden
+              />
+              <p className="text-[11px] font-extrabold uppercase tracking-[0.12em] text-emerald-300">
+                Maandelijks opzegbaar
+              </p>
+            </div>
+          </div>
 
           <ul className="mt-6 grid gap-3 sm:grid-cols-3">
             {heroPillars.map((pillar) => {
@@ -107,7 +141,7 @@ export function PilatesHero() {
               return (
                 <li
                   key={pillar.label}
-                  className="rounded-2xl border border-white/12 bg-white/[0.04] px-4 py-3.5 backdrop-blur-sm"
+                  className="rounded-2xl border border-white/12 bg-white/[0.04] px-4 py-3.5 backdrop-blur-sm transition hover:border-[#FF5722]/30 hover:bg-white/[0.07]"
                 >
                   <Icon className="size-4 text-[#FF5722]" aria-hidden />
                   <p className="mt-2 text-sm font-bold tracking-tight text-white">
@@ -121,7 +155,7 @@ export function PilatesHero() {
             })}
           </ul>
 
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch">
             <Magnetic strength={12} radius={170}>
               <a
                 href="#aanvraag"
@@ -131,9 +165,13 @@ export function PilatesHero() {
                     package: "unsure",
                   })
                 }
-                className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(255,87,34,0.65)] transition hover:bg-orange-600 sm:w-auto"
+                className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(255,87,34,0.65)] transition hover:-translate-y-0.5 hover:bg-orange-600 hover:shadow-[0_20px_44px_-10px_rgba(255,87,34,0.75)] sm:w-auto"
               >
-                Stuur mijn studio door
+                <Rocket
+                  className="size-4 transition group-hover:-translate-y-0.5"
+                  aria-hidden
+                />
+                Ik wil gelijk beginnen
                 <ArrowUpRight
                   className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden
@@ -153,10 +191,10 @@ export function PilatesHero() {
                   location: "hero_whatsapp",
                 })
               }
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-5 py-3.5 text-sm font-semibold tracking-tight text-white transition hover:border-white/35 hover:bg-white/10 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/25 bg-white/[0.07] px-5 py-4 text-sm font-bold tracking-tight text-white backdrop-blur-sm transition hover:border-white/40 hover:bg-white/[0.12] sm:w-auto"
             >
               <MessageCircle className="size-4 text-emerald-300" aria-hidden />
-              App me even
+              Ik wil eerst contact
             </a>
           </div>
 
@@ -173,25 +211,12 @@ export function PilatesHero() {
 
         <Reveal delay={0.1} className="relative flex h-full">
           <div className="relative flex h-full w-full flex-col">
-            <div className="absolute -left-2 top-[12%] z-20 hidden rotate-[-6deg] sm:block lg:-left-6">
+            <div className="absolute -left-2 top-[10%] z-20 hidden rotate-[-4deg] sm:block lg:-left-5">
               <div className="flex items-center gap-2 rounded-xl border border-emerald-400/25 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-md">
                 <Gauge className="size-3.5 text-emerald-300" aria-hidden />
                 <span className="text-xs font-semibold text-slate-100">
                   Core Web Vitals · groen
                 </span>
-              </div>
-            </div>
-            <div className="absolute -left-1 top-[42%] z-20 hidden sm:block lg:-left-3">
-              <div className="flex items-center gap-2 rounded-xl border border-white/15 bg-slate-900/90 px-3 py-2 shadow-xl backdrop-blur-md">
-                <Search className="size-3.5 text-sky-300" aria-hidden />
-                <span className="text-xs font-semibold text-slate-100">
-                  Pilates Utrecht · top 3
-                </span>
-              </div>
-            </div>
-            <div className="absolute -right-1 bottom-[28%] z-20 hidden rotate-[4deg] sm:block lg:-right-4">
-              <div className="rounded-xl border border-orange-400/30 bg-[#FF5722] px-3 py-2 text-xs font-bold text-white shadow-xl">
-                Proefles geboekt
               </div>
             </div>
 
@@ -203,30 +228,39 @@ export function PilatesHero() {
                 <span className="ml-2 flex min-w-0 flex-1 items-center gap-1.5 truncate rounded-md bg-white/5 px-2 py-1 text-[10px] text-slate-400">
                   <Search className="size-3 shrink-0" aria-hidden />
                   <span className="truncate">
-                    pilates studio utrecht · jouwstudio.nl
+                    pilates apeldoorn · hillsstudio.nl
                   </span>
                 </span>
               </div>
-              <div className="relative min-h-[240px] flex-1 bg-slate-800 sm:min-h-[280px] lg:min-h-0">
+              <div className="relative min-h-[260px] flex-1 bg-slate-800 sm:min-h-[300px] lg:min-h-[320px]">
                 <Image
                   src={cfg.caseStudy.imageSrc}
-                  alt="High-end Pilates studio website"
+                  alt="High-end Pilates studio website, Hills Pilates Apeldoorn"
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 480px"
                   className="object-cover object-center"
                 />
                 <div
-                  className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"
+                  className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"
                   aria-hidden
                 />
-                <div className="absolute left-4 top-4 rounded-lg border border-white/15 bg-slate-950/80 px-2.5 py-1.5 backdrop-blur-sm">
+                <div className="absolute left-4 top-4 rounded-lg border border-white/15 bg-slate-950/85 px-2.5 py-1.5 backdrop-blur-sm">
                   <p className="text-[9px] font-bold uppercase tracking-wider text-orange-300">
-                    Studio Edition
+                    Custom build
                   </p>
                   <p className="text-[11px] font-bold text-white">
-                    High-end Pilates UI
+                    From scratch · Hills Pilates
                   </p>
+                </div>
+                <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 rounded-xl border border-white/20 bg-slate-950/90 px-3 py-2 shadow-lg backdrop-blur-md">
+                  <Search className="size-3.5 shrink-0 text-sky-300" aria-hidden />
+                  <span className="text-xs font-bold text-white">
+                    Pilates Apeldoorn · top 3
+                  </span>
+                </div>
+                <div className="absolute bottom-4 right-4 z-10 rotate-[2deg] rounded-xl border border-orange-400/35 bg-[#FF5722] px-3 py-2 text-xs font-bold text-white shadow-lg">
+                  Proefles geboekt
                 </div>
               </div>
               <figcaption className="grid shrink-0 grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-slate-950/95 text-center">
@@ -247,22 +281,8 @@ export function PilatesHero() {
               </figcaption>
             </figure>
 
-            <p className="mt-3 shrink-0 text-center text-xs text-slate-400 sm:text-left">
-              Vanaf {fromMonthly}
-              {launchPromo ? (
-                <>
-                  {" "}
-                  · launch{" "}
-                  <span className="text-slate-500 line-through">
-                    {formatVerticalMoney(launchPromo.was)}
-                  </span>{" "}
-                  <span className="font-semibold text-orange-300">€0</span>
-                </>
-              ) : (
-                " + launch"
-              )}
-              {" "}
-              · maandelijks opzegbaar
+            <p className="mt-3 shrink-0 text-center text-[11px] font-semibold text-slate-500 sm:text-left">
+              Live case · design, techniek en boekingsflow in één lijn
             </p>
           </div>
         </Reveal>
