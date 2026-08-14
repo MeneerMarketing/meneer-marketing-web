@@ -27,9 +27,8 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   },
   pricing: {
     currency: "EUR",
-    minTermMonths: 12,
-    termDisclaimer:
-      "Maandbedragen gelden bij een minimale looptijd van 12 maanden.",
+    minTermMonths: 1,
+    termDisclaimer: "Per maand, maandelijks opzegbaar.",
     launchPromo: {
       active: true,
       current: { amount: 0, unit: "eur", cadence: "one_time" },
@@ -272,6 +271,11 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
       question: "Kan ik later upgraden?",
       answer:
         "Ja. Van Studio Edition naar Local Growth of Growth Partner. Signature Custom blijft een apart traject wanneer je volledig from scratch wilt.",
+    },
+    {
+      question: "Is het maandelijks opzegbaar?",
+      answer:
+        "Ja. Studio Edition, Local Growth en Growth Partner betaal je per maand. Opzeggen kan maandelijks via mij, zonder lang contract.",
     },
     {
       question: "Zit advertentiebudget inbegrepen?",

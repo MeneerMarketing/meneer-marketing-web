@@ -25,9 +25,8 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
   },
   pricing: {
     currency: "EUR",
-    minTermMonths: 12,
-    termDisclaimer:
-      "Maandbedragen gelden bij een minimale looptijd van 12 maanden.",
+    minTermMonths: 1,
+    termDisclaimer: "Per maand, maandelijks opzegbaar.",
     launchPromo: {
       active: true,
       current: { amount: 0, unit: "eur", cadence: "one_time" },
@@ -260,12 +259,17 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
     {
       question: "Hoe snel staat Clinic Edition live?",
       answer:
-        "Ik mik op circa 5 werkdagen zodra logo, behandelaanbod en de nodige assets binnen zijn. Launch is tijdelijk €0; daarna geldt het maandbedrag bij 12 maanden.",
+        "Ik mik op circa 5 werkdagen zodra logo, behandelaanbod en de nodige assets binnen zijn. Launch is tijdelijk €0; daarna geldt het maandbedrag per maand.",
     },
     {
       question: "Wat betekent één partner per stad concreet?",
       answer:
         "Binnen dit programma werk ik met maximaal één actieve huidkliniek-partner per stad. Jouw lokale SEO bouw ik niet tegelijk voor de concurrent om de hoek.",
+    },
+    {
+      question: "Is het maandelijks opzegbaar?",
+      answer:
+        "Ja. Clinic Edition, Local Growth en Growth Partner betaal je per maand. Opzeggen kan maandelijks via mij, zonder lang contract.",
     },
     {
       question:
