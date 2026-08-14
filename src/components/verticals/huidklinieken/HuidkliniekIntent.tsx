@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MapPinned, RotateCcw, Search, Sparkles } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
+import { GoogleLogoMark } from "@/components/icons/GoogleLogoMark";
 import { HUIDKLINIEKEN_VERTICAL } from "@/data/verticals/huidklinieken";
 
 const intents = [
@@ -109,11 +110,25 @@ export function HuidkliniekIntent() {
 
           <Reveal delay={0.1}>
             <div className="overflow-hidden rounded-[1.4rem] border border-white/10 bg-white text-slate-900 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.65)]">
-              <div className="flex items-center gap-2 border-b border-slate-100 bg-slate-50 px-4 py-3">
-                <Search className="size-3.5 text-slate-400" aria-hidden />
-                <p className="truncate text-sm font-medium text-slate-700">
-                  {query}
-                </p>
+              <div className="border-b border-slate-100 bg-slate-50 px-4 pb-3 pt-4">
+                <div className="flex items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/google-logo.png"
+                    alt="Google"
+                    width={96}
+                    height={32}
+                    className="h-7 w-auto bg-transparent"
+                    draggable={false}
+                  />
+                </div>
+                <div className="mt-3 flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2.5 shadow-sm">
+                  <GoogleLogoMark className="size-4 shrink-0" />
+                  <p className="min-w-0 flex-1 truncate text-sm font-medium text-slate-700">
+                    {query}
+                  </p>
+                  <Search className="size-3.5 shrink-0 text-slate-400" aria-hidden />
+                </div>
               </div>
               <div className="space-y-4 p-5 sm:p-6">
                 <div>

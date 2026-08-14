@@ -104,24 +104,37 @@ export function HuidkliniekLocalSeo() {
               </div>
 
               <div className="mt-5 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_28px_70px_-40px_rgba(15,23,42,0.35)]">
-                <div className="flex items-center gap-3 border-b border-slate-100 px-4 py-4 sm:px-6">
-                  <Search className="size-4 shrink-0 text-slate-400" aria-hidden />
-                  <AnimatePresence mode="wait">
-                    <motion.span
-                      key={query}
-                      initial={reduce ? false : { opacity: 0, y: 6 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={reduce ? undefined : { opacity: 0, y: -6 }}
-                      transition={{ duration: 0.18, ease: EASE }}
-                      className="truncate text-sm font-semibold text-slate-800 sm:text-base"
-                    >
-                      {query}
-                    </motion.span>
-                  </AnimatePresence>
-                  <span
-                    className="ml-auto h-4 w-px animate-pulse bg-[#FF5722]"
-                    aria-hidden
-                  />
+                <div className="border-b border-slate-100 px-4 pb-4 pt-5 sm:px-6">
+                  <div className="flex items-center justify-center">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/images/google-logo.png"
+                      alt="Google"
+                      width={110}
+                      height={36}
+                      className="h-8 w-auto bg-transparent"
+                      draggable={false}
+                    />
+                  </div>
+                  <div className="mt-4 flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-3 shadow-sm">
+                    <Search className="size-4 shrink-0 text-slate-400" aria-hidden />
+                    <AnimatePresence mode="wait">
+                      <motion.span
+                        key={query}
+                        initial={reduce ? false : { opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={reduce ? undefined : { opacity: 0, y: -6 }}
+                        transition={{ duration: 0.18, ease: EASE }}
+                        className="min-w-0 flex-1 truncate text-left text-sm font-semibold text-slate-800 sm:text-base"
+                      >
+                        {query}
+                      </motion.span>
+                    </AnimatePresence>
+                    <span
+                      className="h-4 w-px shrink-0 animate-pulse bg-[#FF5722]"
+                      aria-hidden
+                    />
+                  </div>
                 </div>
 
                 <div className="flex items-center gap-3 border-b border-slate-100 bg-slate-50/80 px-4 py-3 sm:px-6">
