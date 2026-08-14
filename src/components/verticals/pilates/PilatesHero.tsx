@@ -2,7 +2,14 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import { ArrowUpRight, MessageCircle, Search } from "lucide-react";
+import {
+  ArrowUpRight,
+  Gauge,
+  MessageCircle,
+  Search,
+  Sparkles,
+  TrendingUp,
+} from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
 import { Magnetic } from "@/components/effects/Magnetic";
@@ -24,11 +31,22 @@ const whatsappLink =
     "Hoi Meneer Marketing! Ik heb een Pilates studio en wil graag even schakelen.",
   ) ?? "/contact";
 
-const pageSummary = [
-  { label: "Website", hint: "From scratch" },
-  { label: "Lokaal SEO", hint: "Pilates + stad" },
-  { label: "Boekingen", hint: "Klik → les" },
-  { label: "Ads", hint: "Google · Meta" },
+const heroPillars = [
+  {
+    icon: Sparkles,
+    label: "High-end design",
+    hint: "Pilates op studioniveau, from scratch",
+  },
+  {
+    icon: Gauge,
+    label: "Technisch perfect",
+    hint: "Snelheid, schema, Core Web Vitals",
+  },
+  {
+    icon: TrendingUp,
+    label: "Zo hoog mogelijk",
+    hint: "Pilates + stad, Maps, pagina 1",
+  },
 ] as const;
 
 export function PilatesHero() {
@@ -63,23 +81,45 @@ export function PilatesHero() {
             ) : null}
           </div>
 
-          <h1 className="mt-5 max-w-[18ch] text-[2.45rem] font-extrabold leading-[1.05] tracking-tight sm:max-w-none sm:text-[2.85rem] lg:text-[3.05rem] lg:leading-[1.05]">
-            Ze zoeken Pilates.
+          <h1 className="mt-5 max-w-[14ch] text-[2.4rem] font-extrabold leading-[1.04] tracking-tight sm:max-w-none sm:text-[2.85rem] lg:text-[3.1rem] lg:leading-[1.02]">
+            High-end Pilates-design.
             <br />
-            <span className="text-[#FF5722]">Ik zorg dat ze boeken.</span>
+            <span className="text-[#FF5722]">Zo hoog mogelijk in Google.</span>
           </h1>
 
-          <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Custom website, lokale SEO en een boekingsflow die klopt. Optioneel
-            Google Ads of Meta Ads. Vanaf {fromMonthly}/m
+          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
+            Ik bouw je site from scratch: art direction op studioniveau, code
+            die Google écht snapt, en lokale SEO die mikken op Maps en zo hoog
+            mogelijk in de zoekresultaten. Daarna boeken ze via jouw site. Vanaf{" "}
+            {fromMonthly}/m
             {launchPromo ? (
               <>
                 , launch{" "}
                 <span className="font-semibold text-orange-200">€0</span>
               </>
             ) : null}
-            .
+            , maandelijks opzegbaar.
           </p>
+
+          <ul className="mt-6 grid gap-3 sm:grid-cols-3">
+            {heroPillars.map((pillar) => {
+              const Icon = pillar.icon;
+              return (
+                <li
+                  key={pillar.label}
+                  className="rounded-2xl border border-white/12 bg-white/[0.04] px-4 py-3.5 backdrop-blur-sm"
+                >
+                  <Icon className="size-4 text-[#FF5722]" aria-hidden />
+                  <p className="mt-2 text-sm font-bold tracking-tight text-white">
+                    {pillar.label}
+                  </p>
+                  <p className="mt-0.5 text-[11px] leading-snug text-slate-400">
+                    {pillar.hint}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <Magnetic strength={12} radius={170}>
@@ -93,7 +133,7 @@ export function PilatesHero() {
                 }
                 className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(255,87,34,0.65)] transition hover:bg-orange-600 sm:w-auto"
               >
-                Meer boekingen via mijn site
+                Stuur mijn studio door
                 <ArrowUpRight
                   className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden
@@ -120,47 +160,32 @@ export function PilatesHero() {
             </a>
           </div>
 
-          <p className="mt-3 text-xs leading-relaxed text-slate-400">
+          <p className="mt-3 text-xs leading-relaxed text-slate-400 lg:mt-auto lg:pt-6">
             Bel, mail of WhatsApp. Meestal dezelfde dag terug.{" "}
             <a
-              href="#aanvraag"
-              onClick={() =>
-                trackPilatesEvent("pilates_package_select", {
-                  location: "hero_sub_cta",
-                  package: "unsure",
-                })
-              }
+              href="#pakketten"
               className="font-semibold text-orange-200/90 underline decoration-orange-200/35 underline-offset-2 hover:text-white"
             >
-              Stuur je studio door · ik reageer meestal vandaag nog
+              Bekijk pakketten
             </a>
           </p>
-
-          {/* Compact page summary — fills remaining column height */}
-          <div className="mt-8 border-t border-white/10 pt-5 lg:mt-auto lg:pt-6">
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">
-              Wat je hier regelt
-            </p>
-            <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-4 sm:gap-3">
-              {pageSummary.map((item) => (
-                <li key={item.label} className="min-w-0">
-                  <p className="text-sm font-bold tracking-tight text-white">
-                    {item.label}
-                  </p>
-                  <p className="mt-0.5 text-[11px] text-slate-400">{item.hint}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
         </Reveal>
 
         <Reveal delay={0.1} className="relative flex h-full">
           <div className="relative flex h-full w-full flex-col">
-            <div className="absolute -left-2 top-[18%] z-20 hidden rotate-[-6deg] sm:block lg:-left-6">
+            <div className="absolute -left-2 top-[12%] z-20 hidden rotate-[-6deg] sm:block lg:-left-6">
+              <div className="flex items-center gap-2 rounded-xl border border-emerald-400/25 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-md">
+                <Gauge className="size-3.5 text-emerald-300" aria-hidden />
+                <span className="text-xs font-semibold text-slate-100">
+                  Core Web Vitals · groen
+                </span>
+              </div>
+            </div>
+            <div className="absolute -left-1 top-[42%] z-20 hidden sm:block lg:-left-3">
               <div className="flex items-center gap-2 rounded-xl border border-white/15 bg-slate-900/90 px-3 py-2 shadow-xl backdrop-blur-md">
                 <Search className="size-3.5 text-sky-300" aria-hidden />
                 <span className="text-xs font-semibold text-slate-100">
-                  Reformer Pilates + stad
+                  Pilates Utrecht · top 3
                 </span>
               </div>
             </div>
@@ -178,7 +203,7 @@ export function PilatesHero() {
                 <span className="ml-2 flex min-w-0 flex-1 items-center gap-1.5 truncate rounded-md bg-white/5 px-2 py-1 text-[10px] text-slate-400">
                   <Search className="size-3 shrink-0" aria-hidden />
                   <span className="truncate">
-                    jouwstudio.nl · lessen · boeken
+                    pilates studio utrecht · jouwstudio.nl
                   </span>
                 </span>
               </div>
@@ -195,12 +220,20 @@ export function PilatesHero() {
                   className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"
                   aria-hidden
                 />
+                <div className="absolute left-4 top-4 rounded-lg border border-white/15 bg-slate-950/80 px-2.5 py-1.5 backdrop-blur-sm">
+                  <p className="text-[9px] font-bold uppercase tracking-wider text-orange-300">
+                    Studio Edition
+                  </p>
+                  <p className="text-[11px] font-bold text-white">
+                    High-end Pilates UI
+                  </p>
+                </div>
               </div>
               <figcaption className="grid shrink-0 grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-slate-950/95 text-center">
                 {[
-                  { step: "Google", hint: "Gevonden" },
-                  { step: "Website", hint: "Overtuigd" },
-                  { step: "Rooster", hint: "Geboekt" },
+                  { step: "Design", hint: "Studioniveau" },
+                  { step: "Techniek", hint: "Google-ready" },
+                  { step: "Ranking", hint: "Zo hoog mogelijk" },
                 ].map((item) => (
                   <div key={item.step} className="px-2 py-3">
                     <p className="text-[10px] font-bold uppercase tracking-wider text-orange-300">
@@ -228,6 +261,8 @@ export function PilatesHero() {
               ) : (
                 " + launch"
               )}
+              {" "}
+              · maandelijks opzegbaar
             </p>
           </div>
         </Reveal>

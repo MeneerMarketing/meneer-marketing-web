@@ -3,10 +3,11 @@
 import { useEffect } from "react";
 import {
   ArrowUpRight,
-  CalendarCheck,
-  MapPin,
+  Gauge,
   MessageCircle,
-  ShieldCheck,
+  Search,
+  Sparkles,
+  TrendingUp,
 } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -25,24 +26,24 @@ const launchPromo = getActiveLaunchPromo(cfg.pricing);
 
 const whatsappLink =
   whatsappHref(
-    "Hoi Meneer Marketing! Ik heb een huidkliniek en wil checken of mijn stad vrij is.",
+    "Hoi Meneer Marketing! Ik heb een huidkliniek en wil weten welk pakket past.",
   ) ?? "/contact";
 
-const trustChips = [
+const heroPillars = [
   {
-    icon: CalendarCheck,
-    label: "Intake in de agenda",
-    hint: "klik → consult",
+    icon: Sparkles,
+    label: "High-end design",
+    hint: "Clinical editorial, from scratch",
   },
   {
-    icon: MapPin,
-    label: "Maps & stad",
-    hint: "huidkliniek + plaats",
+    icon: Gauge,
+    label: "Technisch perfect",
+    hint: "Snelheid, schema, Core Web Vitals",
   },
   {
-    icon: ShieldCheck,
-    label: "Eén kliniek per stad",
-    hint: "exclusief traject",
+    icon: TrendingUp,
+    label: "Zo hoog mogelijk",
+    hint: "Kliniek + stad, Maps, pagina 1",
   },
 ] as const;
 
@@ -84,24 +85,46 @@ export function HuidkliniekHero() {
             ) : null}
           </div>
 
-          <h1 className="mt-6 max-w-[16ch] text-[2.5rem] font-extrabold leading-[1.04] tracking-tight text-slate-950 sm:max-w-none sm:text-[3rem] lg:text-[3.35rem] lg:leading-[1.02]">
-            De behandelkamer is strak.
+          <h1 className="mt-6 max-w-[14ch] text-[2.4rem] font-extrabold leading-[1.04] tracking-tight text-slate-950 sm:max-w-none sm:text-[2.9rem] lg:text-[3.15rem] lg:leading-[1.02]">
+            High-end kliniek-design.
             <br />
-            <span className="text-[#FF5722]">Je website mag dat ook zijn.</span>
+            <span className="text-[#FF5722]">Zo hoog mogelijk in Google.</span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-600 sm:text-base">
-            Ik bouw je kliniek-site from scratch, zet je lokaal scherp op Google
-            en Maps, en koppel de route naar intake. Vanaf {fromMonthly} per
-            maand
+            Ik bouw je kliniek-site from scratch: art direction op
+            behandelkamerniveau, technisch perfect voor Google (snelheid, schema,
+            structuur) en lokale SEO die mikken op Maps en zo hoog mogelijk in
+            de zoekresultaten. Daarna intake via jouw site. Vanaf {fromMonthly}{" "}
+            per maand
             {launchPromo ? (
               <>
                 , launch tijdelijk{" "}
                 <span className="font-semibold text-[#FF5722]">€0</span>
               </>
             ) : null}
-            . Eén partner per stad.
+            , maandelijks opzegbaar.
           </p>
+
+          <ul className="mt-6 grid gap-3 sm:grid-cols-3">
+            {heroPillars.map((pillar) => {
+              const Icon = pillar.icon;
+              return (
+                <li
+                  key={pillar.label}
+                  className="rounded-2xl border border-slate-200/90 bg-white/90 px-4 py-3.5 shadow-[0_8px_24px_-18px_rgba(15,23,42,0.2)] backdrop-blur-sm"
+                >
+                  <Icon className="size-4 text-[#FF5722]" aria-hidden />
+                  <p className="mt-2 text-sm font-bold tracking-tight text-slate-900">
+                    {pillar.label}
+                  </p>
+                  <p className="mt-0.5 text-[11px] leading-snug text-slate-500">
+                    {pillar.hint}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <Magnetic strength={10} radius={160}>
@@ -115,7 +138,7 @@ export function HuidkliniekHero() {
                 }
                 className="group inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold text-white shadow-[0_18px_40px_-12px_rgba(255,87,34,0.55)] transition hover:bg-orange-600 sm:w-auto"
               >
-                Check of mijn stad vrij is
+                Stuur mijn kliniek door
                 <ArrowUpRight
                   className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden
@@ -142,40 +165,29 @@ export function HuidkliniekHero() {
             </a>
           </div>
 
-          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          <p className="mt-3 text-xs leading-relaxed text-slate-500 lg:mt-auto lg:pt-6">
             Bel, mail of WhatsApp. Meestal dezelfde dag terug.{" "}
             <a
-              href="#live-design"
+              href="#pakketten"
               className="font-semibold text-[#FF5722] underline decoration-[#FF5722]/35 underline-offset-2 hover:text-orange-700"
             >
-              Bekijk de richtingen
+              Bekijk pakketten
             </a>
           </p>
-
-          <ul className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3 lg:mt-auto lg:pt-10">
-            {trustChips.map((chip) => {
-              const Icon = chip.icon;
-              return (
-                <li
-                  key={chip.label}
-                  className="rounded-2xl border border-slate-200/90 bg-white/80 px-4 py-3.5 shadow-[0_8px_24px_-18px_rgba(15,23,42,0.35)] backdrop-blur-sm"
-                >
-                  <Icon className="size-4 text-[#FF5722]" aria-hidden />
-                  <p className="mt-2 text-sm font-bold tracking-tight text-slate-900">
-                    {chip.label}
-                  </p>
-                  <p className="mt-0.5 text-[11px] text-slate-500">{chip.hint}</p>
-                </li>
-              );
-            })}
-          </ul>
         </Reveal>
 
         <Reveal delay={0.08} className="relative flex h-full">
           <div className="relative flex w-full flex-col justify-center">
-            <div className="absolute -left-3 top-8 z-20 hidden rotate-[-5deg] sm:block lg:-left-5">
-              <div className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-bold text-slate-700 shadow-md">
-                Maps · open · reviews
+            <div className="absolute -left-3 top-6 z-20 hidden rotate-[-5deg] sm:block lg:-left-5">
+              <div className="flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-3 py-1.5 text-[11px] font-bold text-slate-700 shadow-md">
+                <Gauge className="size-3.5 text-emerald-600" aria-hidden />
+                Core Web Vitals · groen
+              </div>
+            </div>
+            <div className="absolute -left-2 top-[38%] z-20 hidden sm:block lg:-left-4">
+              <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-bold text-slate-700 shadow-md">
+                <Search className="size-3.5 text-sky-600" aria-hidden />
+                Huidkliniek Utrecht · top 3
               </div>
             </div>
             <div className="absolute -right-2 bottom-16 z-20 hidden rotate-[3deg] sm:block lg:-right-4">
@@ -199,14 +211,14 @@ export function HuidkliniekHero() {
                     Utrecht · huidkliniek
                   </p>
                   <p className="text-2xl font-extrabold leading-[1.1] tracking-tight text-slate-950 sm:text-[1.85rem]">
-                    Rust in de kamer.
+                    Clinical-grade online.
                     <span className="mt-1 block text-slate-500">
-                      Helderheid online.
+                      Google merkt het verschil.
                     </span>
                   </p>
                   <p className="max-w-[32ch] text-sm leading-relaxed text-slate-600">
-                    Behandelingen, team en tarieven in één scroll. Daarna één
-                    knop naar intake.
+                    Behandelingen, team en tarieven in één scroll. Technisch
+                    schoon, visueel strak, klaar om te ranken.
                   </p>
                   <div className="flex flex-wrap gap-2 pt-1">
                     <span className="rounded-full bg-slate-900 px-4 py-2 text-[11px] font-bold text-white">
@@ -221,22 +233,22 @@ export function HuidkliniekHero() {
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.18),transparent_45%)]" />
                   <div className="relative mt-auto flex h-full flex-col justify-end">
                     <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-orange-100/90">
-                      Volgende stap
+                      Clinic Edition
                     </p>
                     <p className="mt-1 text-base font-extrabold text-white">
-                      Consult · 30 min
+                      High-end kliniek UI
                     </p>
                     <p className="mt-1 text-xs text-white/75">
-                      Morgen 10:30 · nog 2 plekken
+                      Schema · snelheid · Maps
                     </p>
                   </div>
                 </div>
               </div>
               <figcaption className="grid grid-cols-3 divide-x divide-slate-100 border-t border-slate-100 bg-slate-50/80 text-center">
                 {[
-                  { k: "Google", v: "Gevonden" },
-                  { k: "Site", v: "Vertrouwen" },
-                  { k: "Agenda", v: "Intake" },
+                  { k: "Design", v: "Kliniekniveau" },
+                  { k: "Techniek", v: "Google-ready" },
+                  { k: "Ranking", v: "Zo hoog mogelijk" },
                 ].map((item) => (
                   <div key={item.k} className="px-2 py-3">
                     <p className="text-[10px] font-bold uppercase tracking-wider text-[#FF5722]">
@@ -261,8 +273,9 @@ export function HuidkliniekHero() {
                   </span>{" "}
                   <span className="font-semibold text-[#FF5722]">€0</span>
                 </>
-              ) : null}{" "}
-              · 1 kliniek per stad
+              ) : null}
+              {" "}
+              · maandelijks opzegbaar
             </p>
           </div>
         </Reveal>
