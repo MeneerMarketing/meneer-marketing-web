@@ -93,7 +93,7 @@ export function PilatesHero() {
                 }
                 className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(255,87,34,0.65)] transition hover:bg-orange-600 sm:w-auto"
               >
-                Stuur mijn studio door
+                Meer boekingen via mijn site
                 <ArrowUpRight
                   className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden
@@ -123,15 +123,16 @@ export function PilatesHero() {
           <p className="mt-3 text-xs leading-relaxed text-slate-400">
             Bel, mail of WhatsApp. Meestal dezelfde dag terug.{" "}
             <a
-              href={cfg.demo.primaryHref}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#aanvraag"
               onClick={() =>
-                trackPilatesEvent("pilates_demo_click", { location: "hero" })
+                trackPilatesEvent("pilates_package_select", {
+                  location: "hero_sub_cta",
+                  package: "unsure",
+                })
               }
               className="font-semibold text-orange-200/90 underline decoration-orange-200/35 underline-offset-2 hover:text-white"
             >
-              Live demo
+              Stuur je studio door · ik reageer meestal vandaag nog
             </a>
           </p>
 
