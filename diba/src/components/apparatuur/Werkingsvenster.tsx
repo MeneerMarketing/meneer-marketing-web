@@ -53,8 +53,15 @@ const WERKWIJZE_NAAM: Record<string, string> = {
   injectie: "Injectie",
 };
 
-/** Waar de huid begint in de tekening, en waar de diepste lederhuid ophoudt. */
-const OPPERVLAK = 88;
+/**
+ * Waar de huid begint in de tekening, en waar de diepste lederhuid ophoudt.
+ *
+ * De huid begon op 88 omdat er boven een handstuk moest passen. Dat handstuk is weg (zie
+ * `Mechaniek`), en die vierenveertig pixels gaan naar de huid: dat is een vijfde meer
+ * doorsnede, precies de plek waar dit onderdeel zijn werk doet. Wat er nog boven staat is
+ * ruimte voor de naam van het mechaniek en voor de schilfers die bij een peeling loslaten.
+ */
+const OPPERVLAK = 44;
 const BODEM = 300;
 
 /**
@@ -229,15 +236,19 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                 : undefined,
             }}
           >
-            <line
-              x1="0"
-              y1={bodem}
-              x2="270"
-              y2={bodem}
-              stroke="var(--g-900)"
-              strokeWidth="2"
-              strokeDasharray="7 6"
-            />
+            {/* De dieptegrens als reeks vulling in plaats van een gestreepte lijn:
+                dezelfde leesbaarheid, en de tekening houdt nul strepen over. */}
+            {Array.from({ length: 21 }, (_, i) => (
+              <rect
+                key={i}
+                x={i * 13}
+                y={bodem - 1.5}
+                width="7"
+                height="3"
+                rx="1.5"
+                fill="var(--g-900)"
+              />
+            ))}
             <circle cx="264" cy={bodem} r="4" fill="var(--g-900)" />
           </g>
 
@@ -250,10 +261,10 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
           />
 
           {/* Wat er in de huid gebeurt, met een naam erbij.
-              Zelfde reden als bij het handstuk: de lagen dragen namen en zijn daardoor
-              leesbaar, de bewegende vormen droegen er geen. Vier streepjes in een
-              mintvlak zijn geen naaldjes tot er "naaldjes" bij staat. Alleen tijdens de
-              stap waarin het werk gebeurt, want daarna klopt de naam niet meer. */}
+              De lagen dragen namen en zijn daardoor leesbaar; de bewegende vormen
+              droegen er geen. Vier streepjes in een mintvlak zijn geen naaldjes tot er
+              "naaldjes" bij staat. Alleen tijdens de stap waarin het werk gebeurt, want
+              daarna klopt de naam niet meer. */}
           <text
             x="8"
             y={OPPERVLAK - 8}
@@ -426,7 +437,6 @@ function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
       const y = stap === 0 ? OPPERVLAK - 4 : stap === 1 ? bodem : bodem;
       return (
         <>
-          <Handstuk stap={stap} beweegt={beweegt} />
           <g clipPath={knip}>
             <g style={{ opacity: stap === 0 ? 0 : 1, transition: soepel(600) }}>
               <line
@@ -481,7 +491,6 @@ function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
       const stralen = [40, 88, 136, 184, 232];
       return (
         <>
-          <Handstuk stap={stap} beweegt={beweegt} />
           <g clipPath={knip}>
             {stralen.map((x, i) => (
               <g
@@ -533,18 +542,14 @@ function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
       const naalden = [34, 62, 90, 118, 146, 174, 202, 230];
       return (
         <>
-          <Handstuk stap={stap} beweegt={beweegt} />
           <g clipPath={knip}>
+            {/* Kanaaltjes als vulling met een punt eraan, niet als streep. Acht gelijke
+                streepjes lezen als een hek; acht taps toelopende kanaaltjes als prikken. */}
             {naalden.map((x, i) => (
-              <line
+              <path
                 key={x}
-                x1={x}
-                y1={OPPERVLAK - 2}
-                x2={x}
-                y2={bodem}
-                stroke="var(--g-900)"
-                strokeWidth="2"
-                strokeLinecap="round"
+                d={`M${x - 2} ${OPPERVLAK - 2} L${x + 2} ${OPPERVLAK - 2} L${x + 1.5} ${bodem - 8} L${x} ${bodem} L${x - 1.5} ${bodem - 8} Z`}
+                fill="var(--g-900)"
                 style={{
                   transformOrigin: `${x}px ${OPPERVLAK}px`,
                   transform: `scaleY(${stap === 1 ? 1 : 0})`,
@@ -618,57 +623,62 @@ function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
               />
             ))}
           </g>
-          <Handstuk stap={stap} beweegt={beweegt} smal />
         </>
       );
     }
 
-    /* Zuiging: een mondstuk dat over de huid gaat en de poriën leegtrekt. */
+    /* Zuiging: poriën die van onderaf leeglopen.
+     *
+     * Hier stonden vier grijze lensvormen met groene balletjes die er boven de huid uit
+     * zweefden. Twee dingen mis. Het grijs zat in geen enkele token, en de balletjes
+     * gingen los van de huid hun eigen weg: bolletjes die in de lucht hangen zijn geen
+     * talg maar erwten, en dat was precies de klacht.
+     *
+     * De porie is nu een trechter in de hoornlaag en de propjes zitten erin. Het legen
+     * gebeurt binnen de huid: de prop krimpt van onderaf naar de opening toe en is
+     * daarna weg. Niets verlaat de tekening en er hoeft niets buiten de knipvorm.
+     */
     case "zuiging": {
       const porien = [52, 104, 158, 212];
+      /* Hoe vol de porie nog zit. Eén getal, want het is één beweging. */
+      const vulling = stap === 0 ? 1 : stap === 1 ? 0.35 : 0;
+      const diep = 34;
       return (
-        <>
-          <g
-            style={{
-              transform: `translateX(${stap === 0 ? -70 : stap === 1 ? 0 : 70}px)`,
-              transition: soepel(1100),
-            }}
-          >
-            <Handstuk stap={stap === 0 ? 0 : 1} beweegt={beweegt} smal />
-          </g>
-          <g clipPath={knip}>
-            {porien.map((x) => (
+        <g clipPath={knip}>
+          {porien.map((x, i) => (
+            <g key={x}>
+              {/* De porie zelf: een trechter, breed aan de oppervlakte. */}
               <path
-                key={x}
-                d={`M${x - 7} ${OPPERVLAK} q7 22 0 34 q-7 -12 0 -34Z`}
+                d={`M${x - 8} ${OPPERVLAK} L${x - 3} ${OPPERVLAK + diep} L${x + 3} ${OPPERVLAK + diep} L${x + 8} ${OPPERVLAK} Z`}
+                fill="var(--g-500)"
+                opacity="0.5"
+              />
+              {/* De prop erin. Krimpt naar de opening toe en verdwijnt daar. */}
+              <path
+                d={`M${x - 6} ${OPPERVLAK + 3} L${x - 3} ${OPPERVLAK + diep - 2} L${x + 3} ${OPPERVLAK + diep - 2} L${x + 6} ${OPPERVLAK + 3} Z`}
                 fill="var(--g-900)"
                 style={{
-                  opacity: stap === 2 ? 0.18 : 0.6,
-                  transition: soepel(600),
+                  transformOrigin: `${x}px ${OPPERVLAK + 3}px`,
+                  transform: `scaleY(${vulling})`,
+                  opacity: vulling === 0 ? 0 : 0.7,
+                  transition: soepel(750, i * 90),
                 }}
               />
-            ))}
-          </g>
-          {/* Wat eruit komt gaat omhoog en verlaat de huid. Dus buiten de knipvorm,
-              anders verdwijnt het precies op het moment dat het weggezogen wordt. */}
-          {porien.map((x, i) => (
-            <circle
-              key={`weg-${x}`}
-              cx={x}
-              cy={OPPERVLAK + 20}
-              r="5"
-              fill="var(--g-700)"
-              style={{
-                transform:
-                  stap === 0
-                    ? "none"
-                    : `translateY(-${stap === 1 ? 30 : 52}px)`,
-                opacity: stap === 0 ? 0.85 : stap === 1 ? 0.75 : 0,
-                transition: soepel(800, i * 100),
-              }}
-            />
+            </g>
           ))}
-        </>
+          {/* Stap 3: de hoornlaag is schoon. Eén lichte band, geen los voorwerp. */}
+          <rect
+            x="0"
+            y={OPPERVLAK}
+            width="270"
+            height={LAAGGRENZEN[0] - OPPERVLAK}
+            fill="white"
+            style={{
+              opacity: stap === 2 ? 0.5 : 0,
+              transition: soepel(600, 200),
+            }}
+          />
+        </g>
       );
     }
 
@@ -681,15 +691,12 @@ function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
         (f) => OPPERVLAK + (bodem - OPPERVLAK) * f,
       );
       /* Bij dit apparaat gebeurt het werk al in stap 1: de kou raakt de huid en de
-         vaatjes trekken samen. Daarna zetten ze uit, en dat uitzetten ís de prikkel.
-         Vandaar dat het handstuk hier meteen op zijn plek staat en niet eerst zweeft,
-         anders spreken de tekening en de tekst elkaar tegen. */
+         vaatjes trekken samen. Daarna zetten ze uit, en dat uitzetten ís de prikkel. */
       const wijdte = stap === 0 ? 2 : stap === 1 ? 8 : 6;
       return (
         <>
-          <Handstuk stap={1} beweegt={beweegt} smal />
-          {/* De koudestraal zelf, boven de huid. Daar is de achtergrond wit, dus
-              donker is hier het enige wat leesbaar is. */}
+          {/* De koudestraal boven de huid: een waaier die naar beneden breder wordt.
+              Gevulde driehoekjes en geen streepjes, want streepjes lezen als regen. */}
           <g
             style={{
               opacity: stap === 0 ? 1 : 0,
@@ -697,16 +704,10 @@ function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
             }}
           >
             {[-2, -1, 0, 1, 2].map((n) => (
-              <line
+              <path
                 key={n}
-                x1={135 + n * 7}
-                y1="70"
-                x2={135 + n * 26}
-                y2={OPPERVLAK - 4}
-                stroke="var(--g-600)"
-                strokeWidth="3"
-                strokeLinecap="round"
-                opacity="0.7"
+                d={`M${135 + n * 5 - 2} 4 L${135 + n * 5 + 2} 4 L${135 + n * 24 + 5} ${OPPERVLAK - 3} L${135 + n * 24 - 5} ${OPPERVLAK - 3} Z`}
+                fill="var(--g-300)"
               />
             ))}
           </g>
@@ -741,117 +742,47 @@ function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
       );
     }
 
-    /* Injectie: één naald op vaste diepte, en een bloem die zich verspreidt. */
+    /* Injectie: meerdere naaldjes op vaste diepte, en depots die zich verspreiden.
+     *
+     * Er stond één naald in het midden met drie depots eronder, en die twee hoorden
+     * zichtbaar niet bij elkaar: één prik die op drie plekken tegelijk iets achterlaat.
+     * De U225 zet er in werkelijkheid honderden per minuut. Nu staat er boven elk depot
+     * een naald, en de naald is een vulling met een punt in plaats van een streep.
+     */
     case "injectie": {
+      const prikken = [77, 135, 193];
       return (
-        <>
-          <Handstuk stap={stap} beweegt={beweegt} smal />
-          <g clipPath={knip}>
-            <line
-              x1="135"
-              y1={OPPERVLAK - 6}
-              x2="135"
-              y2={bodem}
-              stroke="var(--g-900)"
-              strokeWidth="3"
-              strokeLinecap="round"
+        <g clipPath={knip}>
+          {prikken.map((x, i) => (
+            <path
+              key={`naald-${x}`}
+              d={`M${x - 2.5} ${OPPERVLAK - 8} L${x + 2.5} ${OPPERVLAK - 8} L${x + 2.5} ${bodem - 7} L${x} ${bodem} L${x - 2.5} ${bodem - 7} Z`}
+              fill="var(--g-900)"
               style={{
-                transformOrigin: `135px ${OPPERVLAK}px`,
+                transformOrigin: `${x}px ${OPPERVLAK}px`,
                 transform: `scaleY(${stap === 0 ? 0 : stap === 1 ? 1 : 0})`,
-                transition: soepel(450),
+                transition: soepel(450, i * 70),
               }}
             />
-            {[0, 1, 2].map((i) => (
-              <ellipse
-                key={i}
-                cx={135 + (i - 1) * 58}
-                cy={bodem - 4}
-                rx="34"
-                ry="17"
-                fill="white"
-                style={{
-                  transform: `scale(${stap === 2 ? 1 : stap === 1 ? 0.35 : 0})`,
-                  transformOrigin: `${135 + (i - 1) * 58}px ${bodem - 4}px`,
-                  opacity: stap === 0 ? 0 : 0.45,
-                  transition: soepel(800, 120 + Math.abs(i - 1) * 160),
-                }}
-              />
-            ))}
-          </g>
-        </>
+          ))}
+          {prikken.map((x, i) => (
+            <ellipse
+              key={`depot-${x}`}
+              cx={x}
+              cy={bodem - 4}
+              rx="34"
+              ry="17"
+              fill="white"
+              style={{
+                transform: `scale(${stap === 2 ? 1 : stap === 1 ? 0.35 : 0})`,
+                transformOrigin: `${x}px ${bodem - 4}px`,
+                opacity: stap === 0 ? 0 : 0.45,
+                transition: soepel(800, 120 + i * 120),
+              }}
+            />
+          ))}
+        </g>
       );
     }
   }
-}
-
-/**
- * Het handstuk boven de huid.
- *
- * Een liggende kop, geen rechtopstaand voorwerp: dat laatste leest als een schaakstuk en
- * niet als iets wat over een huid gaat. De vorm is abstract met opzet, want een tekening
- * die op een productfoto wil lijken verliest het altijd van de productfoto zelf.
- *
- * In de eerste stap zweeft hij een stukje hoger. Dat verschil is het hele verhaal van
- * stap 1: er gaat iets aan vooraf, er raakt nog niets je huid.
- */
-function Handstuk({
-  stap,
-  beweegt,
-  smal = false,
-}: {
-  readonly stap: number;
-  readonly beweegt: boolean;
-  readonly smal?: boolean;
-}) {
-  const breedte = smal ? 52 : 176;
-  const links = 135 - breedte / 2;
-  return (
-    <g
-      style={{
-        transform: `translateY(${stap === 0 ? -20 : 0}px)`,
-        transition: beweegt
-          ? "transform 700ms cubic-bezier(.22,.61,.36,1)"
-          : undefined,
-      }}
-    >
-      {/* De kabel: één lijn is genoeg om er gereedschap van te maken. */}
-      <path
-        d={`M135 6 C 135 20, ${links + breedte - 14} 16, ${links + breedte - 14} 30`}
-        fill="none"
-        stroke="var(--g-200)"
-        strokeWidth="4"
-        strokeLinecap="round"
-      />
-      <rect
-        x={links}
-        y="28"
-        width={breedte}
-        height="30"
-        rx="13"
-        fill="var(--g-700)"
-      />
-      {/* De kop die het werk doet, lichter zodat je ziet waar het uit komt. */}
-      <rect
-        x={links + 10}
-        y="54"
-        width={breedte - 20}
-        height="14"
-        rx="6"
-        fill="var(--g-500)"
-      />
-
-      {/* Zeg wat het is.
-          De huidlagen dragen allemaal een naam en die leest iedereen moeiteloos. Alles
-          wat er in de tekening beweegt droeg er geen, en dus werd dit vlak boven de huid
-          een raadsel: een donkergroen blokje dat je maar moest herkennen als gereedschap.
-          Een tekening zonder namen is een plaatje; met namen is het een schema. */}
-      <text
-        x={links + breedte + 8}
-        y="47"
-        className="fill-[var(--t-muted)] text-[10px] tracking-[.12em] uppercase"
-      >
-        Handstuk
-      </text>
-    </g>
-  );
 }
