@@ -129,6 +129,8 @@ export default function CellulitisPage() {
         <div className="mx-auto">
           <SectieKop
             label="De dwarsdoorsnede"
+            // Twee gelijke helften eronder, dus de introzin volgt die indeling.
+            raster="gelijk"
             kop="Zelfde vet,"
             accent="ander oppervlak."
             intro="Twee doorsnedes naast elkaar, met één schuif die er in allebei evenveel vet in stopt. Links staan de bindweefselschotjes rechtop, rechts kruisen ze. Kijk naar de bovenranden: dat is het oppervlak dat je in de spiegel ziet."

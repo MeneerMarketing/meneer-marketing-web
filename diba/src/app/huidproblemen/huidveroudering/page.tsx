@@ -166,6 +166,8 @@ export default function HuidverouderingPage() {
         <div className="mx-auto">
           <SectieKop
             label="De onderarmtest"
+            // Twee gelijke helften eronder, dus de introzin volgt die indeling.
+            raster="gelijk"
             kop="Twee stukken huid,"
             accent="één verschil."
             intro="De binnenkant van je bovenarm zag vrijwel nooit zon, je gezicht kwam elke dag buiten. Dezelfde persoon, dezelfde genen, dezelfde leeftijd tot op de dag. Zet hieronder je eigen leeftijd erin en tel hoeveel regels er verschillen."

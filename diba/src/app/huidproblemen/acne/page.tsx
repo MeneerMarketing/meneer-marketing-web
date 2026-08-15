@@ -20,6 +20,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
 
 /**
  * Acne — eigen pagina, geen generiek pillar-sjabloon.
@@ -149,7 +150,7 @@ export default function AcnePage() {
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
-          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+          <div className={RASTER_SECTIEKOP}>
             <div>
               <Label>De acnekaart</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
@@ -175,7 +176,7 @@ export default function AcnePage() {
         className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
-          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+          <div className={RASTER_SECTIEKOP}>
             <div>
               <Label>Herkenning</Label>
               <h2 className="diba-display-m mt-4 max-w-[14ch]">
@@ -199,7 +200,7 @@ export default function AcnePage() {
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
-          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+          <div className={RASTER_SECTIEKOP}>
             <div>
               <Label>Onder je huid</Label>
               <h2 className="diba-display-m mt-4 max-w-[18ch]">
@@ -223,7 +224,7 @@ export default function AcnePage() {
         className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
-          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+          <div className={RASTER_SECTIEKOP}>
             <div>
               <Label>De eerlijke tijdlijn</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
@@ -250,7 +251,8 @@ export default function AcnePage() {
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
-          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+          {/* Twee gelijke helften eronder, dus deze kop volgt die indeling. */}
+          <div className={RASTER_SECTIEKOP_GELIJK}>
             <div>
               <Label>Zonder omwegen</Label>
               <h2 className="diba-display-m mt-4 max-w-[14ch]">
@@ -320,7 +322,7 @@ export default function AcnePage() {
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
-          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div className={RASTER_SECTIEKOP}>
             <div>
               <Label opDonker>Waar wij nee zeggen</Label>
               <h2 className="diba-display-m mt-4 max-w-[12ch]">

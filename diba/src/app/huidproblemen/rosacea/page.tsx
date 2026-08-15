@@ -185,6 +185,8 @@ export default function RosaceaPage() {
         <div className="mx-auto">
           <SectieKop
             label="De triggersorteerder"
+            // Twee gelijke helften eronder, dus de introzin volgt die indeling.
+            raster="gelijk"
             kop="Niet welke triggers,"
             accent="maar welke een knop hebben."
             intro="Dat wijn je rood maakt wist je al. De vraag die telt is hoeveel van jouw triggers je kunt beïnvloeden en hoeveel niet, want die verhouding bepaalt of gewoontes of behandelen het meeste oplevert. Tik aan wat je herkent."

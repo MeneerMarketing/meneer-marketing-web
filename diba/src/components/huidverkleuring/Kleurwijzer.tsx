@@ -5,6 +5,7 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { KLEUREN, KLEUR_UITLEG } from "@/data/huidverkleuring";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * De kleurwijzer — de uitblinker van de pagina over huidverkleuring.
@@ -57,7 +58,7 @@ export default function Kleurwijzer() {
       </div>
 
       <div
-        className="mt-10 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12"
+        className={`mt-10 ${RASTER_SECTIE}`}
         aria-live="polite"
       >
         {/* ── Wat die kleur betekent ── */}

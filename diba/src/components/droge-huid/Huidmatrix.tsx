@@ -4,6 +4,7 @@ import { useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
 import Button from "@/components/ui/Button";
 import { AS_UITLEG, KWADRANTEN, bepaalKwadrant } from "@/data/droge-huid";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_GELIJK } from "@/lib/raster";
 
 /**
  * De huidmatrix — de uitblinker van de pagina over een droge huid.
@@ -57,7 +58,7 @@ export default function Huidmatrix() {
   }
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-12">
+    <div className={`mt-12 ${RASTER_GELIJK}`}>
       {/* ── Het vlak ── */}
       <div className="self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7">
         {/* De vier aslabels staan elk aan hun eigen kant. Stonden ze alle drie op één

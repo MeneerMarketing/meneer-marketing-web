@@ -5,6 +5,7 @@ import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { ZONJAAR, ZONJAAR_KANTTEKENING } from "@/data/pigment";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * Het zonjaar — de uitblinker van de pigmentpagina.
@@ -145,7 +146,10 @@ export default function HetZonjaar() {
         id="zonjaar-paneel"
         role="tabpanel"
         aria-live="polite"
-        className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8"
+        /* items-start, want anders rekt de kortste kaart mee met de langste. De maand
+           links heeft één zin en het advies rechts vier: gelijk trekken levert daar een
+           halve kaart wit op. Twee kaarten van eigen hoogte naast elkaar leest beter. */
+        className={`mt-6 ${RASTER_SECTIE} lg:items-start`}
       >
         <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
           <div className="flex flex-wrap items-baseline gap-x-3">

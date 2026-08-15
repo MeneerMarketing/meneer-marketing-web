@@ -176,6 +176,8 @@ export default function HuiduitslagPage() {
         <div className="mx-auto">
           <SectieKop
             label="De glastest"
+            // Twee gelijke helften eronder, dus de introzin volgt die indeling.
+            raster="gelijk"
             kop="Drukken de vlekken weg"
             accent="of blijven ze staan?"
             intro="Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Hieronder staan beide uitkomsten naast elkaar, zodat je herkent welke je ziet in plaats van moet raden."

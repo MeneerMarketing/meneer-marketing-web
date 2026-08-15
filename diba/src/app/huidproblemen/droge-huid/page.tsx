@@ -141,6 +141,8 @@ export default function DrogeHuidPage() {
         <div className="mx-auto">
           <SectieKop
             label="De huidmatrix"
+            // Twee gelijke helften eronder, dus de introzin volgt die indeling.
+            raster="gelijk"
             kop="Zet jezelf neer"
             accent="in het vlak."
             intro="Naar links en rechts gaat over vet, naar boven en beneden over water. Sleep het punt naar waar jij denkt te zitten en kijk wat er dan zou moeten gebeuren. Merk op dat de twee richtingen los van elkaar bewegen."

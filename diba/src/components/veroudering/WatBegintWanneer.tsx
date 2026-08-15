@@ -4,6 +4,7 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { FASES, FASE_ADVIES, PROCESSEN, type Stand } from "@/data/veroudering";
 import { publicCopy } from "@/lib/copy-flags";
+import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
  * Wat begint wanneer — de tweede interactie op de pagina over huidveroudering.
@@ -85,7 +86,7 @@ export default function WatBegintWanneer() {
         ))}
       </div>
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+      <div className={`mt-8 ${RASTER_SECTIE}`}>
         {/* De vijf sporen. */}
         <ul className="space-y-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)]">
           {PROCESSEN.map((p) => {
