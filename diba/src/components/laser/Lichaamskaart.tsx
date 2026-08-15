@@ -8,9 +8,12 @@ import {
   GEZICHT_VIEWBOX,
   LICHAAM_VIEWBOX,
   LICHAAMSDELEN,
+  OVERTEKENEN,
+  SPIEGEL_AS,
   ZONE_VOLGORDE,
   ZONE_VORMEN,
   type Aanzicht,
+  type Lichaamsdeel,
 } from "@/data/laser-lichaamskaart";
 import {
   vormenVanZones,
@@ -22,18 +25,25 @@ import { formatLaserPrice } from "@/lib/laser-pricing";
 /**
  * De kaart waarop je je zones aanwijst.
  *
- * TWEEDE VERSIE, na terechte kritiek: de eerste zette blokken en ellipsen met randjes over
- * elkaar en dat zag eruit als een robot met een masker op.
+ * Geen enkele rand. Elke zone is een vulling die door een clippad wordt bijgesneden op de
+ * contour van het lichaamsdeel waar hij op zit. Dat is wat een zone er uit laat zien alsof
+ * hij op het lichaam getekend is in plaats van erop geplakt. Je kunt op het lichaam zelf
+ * zweven en klikken; onder de tekening staat een vaste strook met de naam en de prijs van
+ * de zone onder je muis. Vast, want een tekstregel die verschijnt en verdwijnt duwt de hele
+ * pagina op en neer.
  *
- * Wat er anders is:
+ * ELKE VORM WORDT TWEE KEER GETEKEND.
  *
- * - Geen enkele rand. Elke zone is een vulling die door een clippad wordt bijgesneden op de
- *   contour van het lichaamsdeel waar hij op zit. Dat is wat een zone er uit laat zien alsof
- *   hij op het lichaam getekend is in plaats van erop geplakt.
- * - Je kunt op het lichaam zelf zweven en klikken. Onder de tekening staat een vaste strook
- *   die de naam en de prijs van de zone onder je muis toont. Vast, want een tekstregel die
- *   verschijnt en verdwijnt duwt de hele pagina op en neer.
- * - De overgang van uit naar aan loopt over een kwart seconde, dus je ziet wat er verandert.
+ * De data is alleen de linkerhelft; `Paar` zet er de spiegeling naast. Daarvoor stond elke
+ * kant apart in het bestand en liep de romp vier pixels uit het midden, waardoor de
+ * borstzone links buiten de arm stak en rechts eronder verdween. Zo'n verschil kan nu niet
+ * meer ontstaan, want er is geen rechterkant om van af te wijken.
+ *
+ * EN DE ARMEN EN BENEN TWEE KEER.
+ *
+ * De romp loopt onder de arm en het bekken door, anders zit er een naad. Maar dan loopt een
+ * zone die op de romp is bijgesneden mee tot onder de arm. Door de arm en het been na de
+ * rompzones opnieuw te vullen stopt elke rompzone precies in de oksel en de liesplooi.
  *
  * Toegankelijkheid. De tekening is niet de enige ingang: ernaast staat dezelfde keuze als
  * gewone knoppen, en dat is de bediening voor toetsenbord en schermlezer. De vormen in de
@@ -60,12 +70,36 @@ type Props = {
 type Staat = "uit" | "aan" | "gedekt";
 
 /** De vulling per staat. Als tabel, zodat de tekening en de lijst niet uit elkaar lopen. */
-const VULLING: Record<Staat | "zweef", string> = {
+const VULLING: Record<Staat | "zweef" | "rust", string> = {
   uit: "transparent",
+  /** Alleen voor zones met `rustvlak`: zichtbaar zonder gekozen te zijn. Zie de kaartdata. */
+  rust: "var(--g-200)",
   zweef: "var(--g-300)",
   aan: "var(--g-500)",
   gedekt: "var(--g-300)",
 };
+
+/** De vulling van het silhouet zelf. Op één plek, want hij staat in twee lagen. */
+const HUID = "var(--g-100)";
+
+/**
+ * Een vorm en zijn spiegelbeeld.
+ *
+ * De hele kaart bestaat uit linkerhelften; dit is wat er een heel lichaam van maakt. Vormen
+ * die de middenas raken lopen er in de data een paar pixels overheen, zodat de twee helften
+ * elkaar overlappen en er geen haarlijn in het midden staat.
+ */
+function Paar({
+  d,
+  ...rest
+}: { d: string } & React.SVGProps<SVGPathElement>) {
+  return (
+    <>
+      <path d={d} {...rest} />
+      <path d={d} transform={`matrix(-1 0 0 1 ${SPIEGEL_AS} 0)`} {...rest} />
+    </>
+  );
+}
 
 export default function Lichaamskaart({
   gekozen,
@@ -102,6 +136,53 @@ export default function Lichaamskaart({
     /* Wel opgelicht, maar door een andere regel dan de hoofdzone van deze vorm. */
     if (verlichtDoorKeuze.has(vorm)) return "gedekt";
     return "uit";
+  };
+
+  /* De zones in twee lagen: eerst wat op de romp ligt, dan wat op een ledemaat ligt, met
+     het silhouet van dat ledemaat ertussen. Zie `OVERTEKENEN` in de kaartdata. */
+  const opLedemaat = (id: string) =>
+    OVERTEKENEN.includes(
+      ZONE_VORMEN[id]?.[aanzicht]?.knipOp as Lichaamsdeel,
+    );
+  const opRomp = zichtbaar.filter((id) => !opLedemaat(id));
+  const opLedematen = zichtbaar.filter(opLedemaat);
+
+  /** Eén zone, bijgesneden op het deel waar hij op ligt. */
+  const tekenZone = (id: string) => {
+    const vorm = ZONE_VORMEN[id]?.[aanzicht];
+    if (!vorm) return null;
+    const s = staat(id);
+    const kleur =
+      zweef === id && s === "uit"
+        ? VULLING.zweef
+        : s === "uit" && vorm.rustvlak
+          ? VULLING.rust
+          : VULLING[s];
+    return (
+      <g
+        key={id}
+        clipPath={`url(#${sleutel}-${vorm.knipOp})`}
+        onPointerEnter={() => setZweef(id)}
+        onClick={() => {
+          const z = zone(id);
+          if (s !== "gedekt" && z) onWissel(z.id);
+        }}
+        style={{
+          cursor: s === "gedekt" ? "default" : "pointer",
+          transition: "opacity .25s var(--ease-diba)",
+          opacity: s === "gedekt" ? 0.65 : 1,
+        }}
+      >
+        {vorm.paden.map((d, i) => (
+          <Paar
+            key={i}
+            d={d}
+            fill={kleur}
+            style={{ transition: "fill .25s var(--ease-diba)" }}
+          />
+        ))}
+      </g>
+    );
   };
 
   /** Wat er in de strook onder de tekening staat. */
@@ -160,7 +241,7 @@ export default function Lichaamskaart({
               {DELEN_PER_AANZICHT[aanzicht].map((deel) => (
                 <clipPath key={deel} id={`${sleutel}-${deel}`}>
                   {LICHAAMSDELEN[deel].map((d, i) => (
-                    <path key={i} d={d} />
+                    <Paar key={i} d={d} />
                   ))}
                 </clipPath>
               ))}
@@ -170,73 +251,55 @@ export default function Lichaamskaart({
                 vallen daardoor weg en het geheel leest als één lichaam. */}
             {DELEN_PER_AANZICHT[aanzicht].map((deel) =>
               LICHAAMSDELEN[deel].map((d, i) => (
-                <path key={`${deel}-${i}`} d={d} fill="var(--g-100)" />
+                <Paar key={`${deel}-${i}`} d={d} fill={HUID} />
               )),
             )}
 
-            {/* De zones, elk bijgesneden op het deel waar hij op ligt. */}
-            {zichtbaar.map((id) => {
-              const vorm = ZONE_VORMEN[id]?.[aanzicht];
-              if (!vorm) return null;
-              const s = staat(id);
-              const kleur =
-                zweef === id && s === "uit" ? VULLING.zweef : VULLING[s];
-              return (
-                <g
-                  key={id}
-                  clipPath={`url(#${sleutel}-${vorm.knipOp})`}
-                  onPointerEnter={() => setZweef(id)}
-                  onClick={() => {
-                    const z = zone(id);
-                    if (s !== "gedekt" && z) onWissel(z.id);
-                  }}
-                  style={{
-                    cursor: s === "gedekt" ? "default" : "pointer",
-                    transition: "opacity .25s var(--ease-diba)",
-                    opacity: s === "gedekt" ? 0.65 : 1,
-                  }}
-                >
-                  {vorm.paden.map((d, i) => (
-                    <path
-                      key={i}
-                      d={d}
-                      fill={kleur}
-                      style={{ transition: "fill .25s var(--ease-diba)" }}
-                    />
-                  ))}
-                </g>
-              );
-            })}
-
-            {/* De trekken van het gezicht liggen bovenop de zones, zodat het een gezicht
-                blijft ook als er een wang oplicht. */}
+            {/* Het oor hoort bij het silhouet en gaat er dus vóór de zones overheen. */}
             {isGezicht ? (
               <g pointerEvents="none">
-                {GEZICHT_TREKKEN.vlakken.map((d, i) => (
-                  <path key={`v${i}`} d={d} fill="var(--g-200)" />
+                {GEZICHT_TREKKEN.silhouet.map((d, i) => (
+                  <Paar key={`s${i}`} d={d} fill={HUID} />
                 ))}
-                {GEZICHT_TREKKEN.ogen.map((d, i) => (
-                  <path key={`o${i}`} d={d} fill="var(--g-010)" />
-                ))}
-                {GEZICHT_TREKKEN.pupillen.map((p, i) => (
-                  <circle key={`p${i}`} {...p} fill="var(--g-600)" />
-                ))}
-                {GEZICHT_TREKKEN.lijnen.map((d, i) => (
-                  <path
-                    key={`l${i}`}
-                    d={d}
-                    fill="none"
-                    stroke="var(--g-500)"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                  />
+              </g>
+            ) : null}
+
+            {/* Eerst de zones op de romp en het hoofd. */}
+            {opRomp.map(tekenZone)}
+
+            {/* Dan de armen en benen er nog een keer overheen, zodat de borst niet over de
+                schouder bloedt en de bikinilijn niet over het bovenbeen. Zelfde vulling als
+                de eerste laag, dus je ziet alleen dat de zone precies in de oksel stopt. */}
+            {OVERTEKENEN.filter((deel) =>
+              DELEN_PER_AANZICHT[aanzicht].includes(deel),
+            ).map((deel) =>
+              LICHAAMSDELEN[deel].map((d, i) => (
+                <Paar key={`over-${deel}-${i}`} d={d} fill={HUID} />
+              )),
+            )}
+
+            {/* En dan hun eigen zones, die daar wél overheen horen. */}
+            {opLedematen.map(tekenZone)}
+
+            {/* Het haar gaat over de zones heen, in de vulling van het silhouet: het is
+                geen zone en er wordt daar niets behandeld, dus het hoort de kleur van een
+                zone ook nooit te dragen. Zo begrenst het het voorhoofd van boven, ook als
+                het voorhoofd groen is. Stond het hier eerder in de rusttint, dan liep het
+                naadloos over in de voorhoofdzone en werd het samen één pet.
+                Verder staat er niets bovenop: geen oog, geen neus, geen mond. Zie de
+                toelichting bij GEZICHT_TREKKEN. */}
+            {isGezicht ? (
+              <g pointerEvents="none">
+                {GEZICHT_TREKKEN.haarlijn.map((d, i) => (
+                  <Paar key={`h${i}`} d={d} fill={HUID} />
                 ))}
               </g>
             ) : null}
           </svg>
 
-          {/* Vaste strook. Leeg als je nergens op staat, zodat er niets verspringt. */}
-          <div className="mt-4 flex min-h-11 items-center justify-between gap-3 border-t border-[var(--g-100)] pt-4">
+          {/* Vaste strook. Leeg als je nergens op staat, zodat er niets verspringt.
+              Stond op een streepje; een vlak scheidt net zo goed en past wel bij de rest. */}
+          <div className="mt-4 flex min-h-11 items-center justify-between gap-3 rounded-[var(--r-sm)] bg-[var(--g-025)] px-4 py-3">
             {onderschrift ? (
               <>
                 <span className="text-[15px] leading-6 font-medium text-[var(--t-strong)]">

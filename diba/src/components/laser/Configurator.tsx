@@ -401,12 +401,15 @@ export default function Configurator() {
               {opbouw.lines.map((l) => (
                 <li
                   key={l.zoneId}
-                  className="flex items-baseline justify-between gap-4"
+                  className="flex items-center justify-between gap-4"
                 >
+                  {/* Dit is een knop die een zone weer weghaalt, en hij was zo hoog als
+                      zijn tekstregel: vierentwintig pixels. Op een telefoon is dat mikken.
+                      De huisregel is achtenveertig. */}
                   <button
                     type="button"
                     onClick={() => wissel(l.zoneId)}
-                    className="text-left text-[15px] leading-6 text-[var(--t-strong)] underline decoration-[var(--g-300)] decoration-dotted underline-offset-4 hover:decoration-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                    className="inline-flex min-h-12 items-center text-left text-[15px] leading-6 text-[var(--t-strong)] underline decoration-[var(--g-300)] decoration-dotted underline-offset-4 hover:decoration-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                     aria-label={`${l.label} weghalen`}
                   >
                     {l.label}
