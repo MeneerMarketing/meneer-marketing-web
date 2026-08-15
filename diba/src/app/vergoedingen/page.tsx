@@ -31,7 +31,7 @@ import { DIBA_SITE_URL } from "@/lib/site";
  * De eerste scheelt letterlijk geld: vergoeding uit een aanvullende verzekering gaat niet
  * van je eigen risico af. Mensen stellen behandeling uit omdat ze denken van wel.
  *
- * Ook opgeruimd: de hardgecodeerde hex (#17372a, #95c592, #286943) en de hover-rand met
+ * Ook opgeruimd: de hardgecodeerde hex (var(--g-900), var(--g-300), var(--g-700)) en de hover-rand met
  * schaduw. Kaarten in deze huisstijl zijn vlakken zonder lijn.
  *
  * [BESLUIT-OKAN] of de losse verzekeraarspagina's blijven. Ze staan er nog en linken door,

@@ -138,7 +138,7 @@ export default function Huidreis() {
                 style={{
                   top: `calc(${GRENZEN[l.id].van}% + 10px)`,
                   color:
-                    bereikt || gedeeltelijk ? "#ffffff" : "var(--t-strong)",
+                    bereikt || gedeeltelijk ? "white" : "var(--t-strong)",
                   transition: "color .3s var(--ease-diba)",
                 }}
               >

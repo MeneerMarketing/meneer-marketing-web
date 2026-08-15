@@ -37,7 +37,7 @@ export default function LaserontharingPage() {
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid min-h-[520px] gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[#5d9564]">
+            <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
               Laserontharing · GentleMax Pro
             </p>
             <h1 className="mt-5 max-w-3xl text-[clamp(2.8rem,6vw,5.5rem)] font-medium leading-[.92] tracking-[-.07em]">
@@ -45,14 +45,14 @@ export default function LaserontharingPage() {
               <br />
               <span className="text-[#387849]">Je huidtype meegenomen.</span>
             </h1>
-            <p className="mt-7 max-w-lg text-[16px] leading-7 text-[#5f7765]">
+            <p className="mt-7 max-w-lg text-[16px] leading-7 text-[var(--t-muted)]">
               Kies je zones in de configurator, zie direct je opbouw en plan een
               intake wanneer het plan klopt. Geen gokwerk, wel duidelijkheid.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link
                 href="/laserontharing/configurator"
-                className="rounded-full bg-[#286943] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-white transition hover:-translate-y-0.5 hover:bg-[#174e31]"
+                className="rounded-full bg-[var(--g-700)] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-white transition hover:-translate-y-0.5 hover:bg-[#174e31]"
               >
                 Bereken je laserprijs ↗
               </Link>
@@ -85,14 +85,14 @@ export default function LaserontharingPage() {
       </section>
 
       {/* USP strip */}
-      <section className="border-y border-[#dce8d9] bg-white px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto grid divide-y divide-[#dce8d9] md:grid-cols-3 md:divide-x md:divide-y-0">
+      <section className="border-y border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw]">
+        <div className="mx-auto grid divide-y divide-[var(--g-100)] md:grid-cols-3 md:divide-x md:divide-y-0">
           {LASER_USP_ROWS.map(({ title, body }) => (
             <div key={title} className="py-8 md:px-6 md:first:pl-0">
-              <h2 className="text-lg tracking-[-.04em] text-[#286943]">
+              <h2 className="text-lg tracking-[-.04em] text-[var(--g-700)]">
                 {title}
               </h2>
-              <p className="mt-2 text-sm leading-6 text-[#5f7765]">{body}</p>
+              <p className="mt-2 text-sm leading-6 text-[var(--t-muted)]">{body}</p>
             </div>
           ))}
         </div>
@@ -101,7 +101,7 @@ export default function LaserontharingPage() {
       {/* Zone map */}
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
-          <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
+          <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
             Configurator
           </p>
           <h2 className="mt-4 max-w-2xl text-4xl tracking-[-.06em] sm:text-5xl">
@@ -114,15 +114,15 @@ export default function LaserontharingPage() {
       </section>
 
       {/* Huidtype */}
-      <section className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
-          <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
+          <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
             Huidtype
           </p>
           <h2 className="mt-4 max-w-xl text-4xl tracking-[-.06em] sm:text-5xl">
             Fitzpatrick I tot VI.
           </h2>
-          <div className="mt-12 rounded-[2rem] border border-[#dce8d9] bg-white p-7 sm:p-10">
+          <div className="mt-12 rounded-[2rem] border border-[var(--g-100)] bg-white p-7 sm:p-10">
             <LaserHuidtypeRing />
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function LaserontharingPage() {
           <div className="mx-auto">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <div>
-                <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
+                <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
                   Reviews
                 </p>
                 <h2 className="mt-4 text-4xl tracking-[-.06em] sm:text-5xl">
@@ -150,7 +150,7 @@ export default function LaserontharingPage() {
               </div>
               <Link
                 href="/reviews"
-                className="text-[11px] font-medium uppercase tracking-[.13em] text-[#286943] underline underline-offset-4"
+                className="text-[11px] font-medium uppercase tracking-[.13em] text-[var(--g-700)] underline underline-offset-4"
               >
                 Alle reviews ↗
               </Link>
@@ -175,22 +175,22 @@ export default function LaserontharingPage() {
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto lg:grid lg:grid-cols-[.7fr_1.3fr] lg:gap-16">
           <div>
-            <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]">
+            <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
               Goed om te weten
             </p>
             <h2 className="mt-4 text-4xl tracking-[-.06em] sm:text-5xl">
               Eerst even dit.
             </h2>
           </div>
-          <div className="mt-10 border-t border-[#dce8d9] lg:mt-0">
+          <div className="mt-10 border-t border-[var(--g-100)] lg:mt-0">
             {LASER_LANDING_FAQ.map((item) => (
               <details
                 key={item.id}
-                className="group border-b border-[#dce8d9] py-6"
+                className="group border-b border-[var(--g-100)] py-6"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
                   <span>{item.question}</span>
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#edf6e8] text-[#367544] transition group-open:rotate-45">
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[var(--g-050)] text-[#367544] transition group-open:rotate-45">
                     +
                   </span>
                 </summary>
@@ -204,10 +204,10 @@ export default function LaserontharingPage() {
       </section>
 
       {/* CTA */}
-      <section className="mx-5 mb-5 overflow-hidden rounded-[2.5rem] bg-[#286943] px-7 py-14 text-white sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 overflow-hidden rounded-[2.5rem] bg-[var(--g-700)] px-7 py-14 text-white sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto flex max-w-[1600px] flex-wrap items-end justify-between gap-10">
           <div>
-            <p className="text-[10px] font-medium uppercase tracking-[.16em] text-[#bfe7ac]">
+            <p className="text-[10px] font-medium uppercase tracking-[.16em] text-[var(--on-dark-label)]">
               Volgende stap
             </p>
             <h2 className="mt-5 max-w-xl text-4xl leading-[.95] tracking-[-.06em] sm:text-5xl">
@@ -219,7 +219,7 @@ export default function LaserontharingPage() {
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link
               href="/laserontharing/configurator"
-              className="rounded-full bg-[#d8f0c8] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-[#174e31] transition hover:bg-white"
+              className="rounded-full bg-[var(--on-dark-btn)] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-[#174e31] transition hover:bg-white"
             >
               Naar configurator ↗
             </Link>

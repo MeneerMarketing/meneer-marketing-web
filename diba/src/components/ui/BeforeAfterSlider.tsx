@@ -29,7 +29,7 @@ export default function BeforeAfterSlider({
   return (
     <figure className="w-full max-w-[720px]">
       <div
-        className="group relative overflow-hidden rounded-[1.5rem] border border-[#dce8d9] bg-[#f2f7ef]"
+        className="group relative overflow-hidden rounded-[1.5rem] border border-[var(--g-100)] bg-[var(--g-025)]"
         style={{ aspectRatio: aspect }}
       >
         <Image
@@ -54,10 +54,10 @@ export default function BeforeAfterSlider({
           />
         </div>
 
-        <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[.1em] text-[#5f7765]">
+        <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[.1em] text-[var(--t-muted)]">
           Voor
         </span>
-        <span className="pointer-events-none absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[.1em] text-[#5f7765]">
+        <span className="pointer-events-none absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[.1em] text-[var(--t-muted)]">
           Na
         </span>
 
@@ -66,7 +66,7 @@ export default function BeforeAfterSlider({
           className="pointer-events-none absolute inset-y-0 w-px bg-white"
           style={{ left: `${pos}%` }}
         >
-          <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-[#286943] text-white shadow-[0_8px_24px_rgba(15,45,28,.18)] group-has-[input:focus-visible]:outline group-has-[input:focus-visible]:outline-2 group-has-[input:focus-visible]:outline-offset-2 group-has-[input:focus-visible]:outline-[#286943]">
+          <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-[var(--g-700)] text-white shadow-[0_8px_24px_rgba(15,45,28,.18)] group-has-[input:focus-visible]:outline group-has-[input:focus-visible]:outline-2 group-has-[input:focus-visible]:outline-offset-2 group-has-[input:focus-visible]:outline-[var(--g-700)]">
             <svg
               width="18"
               height="18"
@@ -95,16 +95,16 @@ export default function BeforeAfterSlider({
         />
       </div>
 
-      <figcaption className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] leading-relaxed text-[#5f7765]">
+      <figcaption className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] leading-relaxed text-[var(--t-muted)]">
         <span>{sessions}</span>
         <span
           aria-hidden="true"
-          className="h-1 w-1 rounded-full bg-[#dce8d9]"
+          className="h-1 w-1 rounded-full bg-[var(--g-100)]"
         />
         <span>{timeline}</span>
         <span
           aria-hidden="true"
-          className="h-1 w-1 rounded-full bg-[#dce8d9]"
+          className="h-1 w-1 rounded-full bg-[var(--g-100)]"
         />
         <span>{skinType}</span>
       </figcaption>

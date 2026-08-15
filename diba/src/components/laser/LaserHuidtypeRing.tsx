@@ -21,7 +21,7 @@ export default function LaserHuidtypeRing() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-10 rounded-full border border-[#b5df9d]/50"
+          className="absolute inset-10 rounded-full border border-[var(--on-dark-accent)]/50"
         />
         {FITZPATRICK_TYPES.map((type, i) => {
           const angle =

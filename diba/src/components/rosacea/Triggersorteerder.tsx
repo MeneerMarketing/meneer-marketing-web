@@ -38,7 +38,7 @@ const GROEP_INFO = {
     toelichting:
       "Dit kun je niet vermijden. Precies hier heeft behandelen zin.",
     kleur: "var(--warn)",
-    vlak: "#faf3e6",
+    vlak: "var(--warn-vlak)",
   },
 } as const;
 

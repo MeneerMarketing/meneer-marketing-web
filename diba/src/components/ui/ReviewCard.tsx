@@ -21,8 +21,8 @@ function Star({ filled }: { filled: boolean }) {
       width="13"
       height="13"
       viewBox="0 0 20 20"
-      fill={filled ? "#286943" : "none"}
-      stroke="#95c592"
+      fill={filled ? "var(--g-700)" : "none"}
+      stroke="var(--g-300)"
       strokeWidth="1.25"
     >
       <path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8L10 1.8z" />
@@ -39,26 +39,26 @@ export default function ReviewCard({
 }: ReviewCardProps) {
   const n = Math.max(1, Math.min(5, Math.round(stars)));
   return (
-    <figure className="rounded-[1.5rem] border border-[#dce8d9] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
+    <figure className="rounded-[1.5rem] border border-[var(--g-100)] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
       <blockquote>
-        <p className="text-lg leading-relaxed text-[#17372a] [font-family:var(--font-accent)] italic font-light md:text-xl">
+        <p className="text-lg leading-relaxed text-[var(--g-900)] [font-family:var(--font-accent)] italic font-light md:text-xl">
           &ldquo;{quote}&rdquo;
         </p>
       </blockquote>
       <figcaption className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
-        <span className="text-[13px] font-medium text-[#17372a]">{name}</span>
+        <span className="text-[13px] font-medium text-[var(--g-900)]">{name}</span>
         <span
           aria-hidden="true"
-          className="h-1 w-1 rounded-full bg-[#dce8d9]"
+          className="h-1 w-1 rounded-full bg-[var(--g-100)]"
         />
-        <span className="text-[13px] text-[#5f7765]">{treatment}</span>
+        <span className="text-[13px] text-[var(--t-muted)]">{treatment}</span>
         {relativeDate ? (
           <>
             <span
               aria-hidden="true"
-              className="h-1 w-1 rounded-full bg-[#dce8d9]"
+              className="h-1 w-1 rounded-full bg-[var(--g-100)]"
             />
-            <span className="text-[11px] uppercase tracking-[.1em] text-[#8aa88f]">
+            <span className="text-[11px] uppercase tracking-[.1em] text-[var(--t-muted)]">
               {relativeDate}
             </span>
           </>

@@ -5,15 +5,15 @@ import type {
 } from "react";
 
 const fieldBase =
-  "w-full rounded-[1rem] bg-white px-4 text-[16px] leading-relaxed text-[#17372a] " +
-  "placeholder:text-[#9ab09a] border transition motion-reduce:transition-none " +
+  "w-full rounded-[1rem] bg-white px-4 text-[16px] leading-relaxed text-[var(--g-900)] " +
+  "placeholder:text-[var(--t-muted)] border transition motion-reduce:transition-none " +
   "focus:outline-none focus-visible:outline-none " +
-  "focus:ring-2 focus:ring-[#286943] focus:ring-offset-0 " +
-  "disabled:cursor-not-allowed disabled:text-[#9ab09a]";
+  "focus:ring-2 focus:ring-[var(--g-700)] focus:ring-offset-0 " +
+  "disabled:cursor-not-allowed disabled:text-[var(--t-muted)]";
 
 const borders = {
-  normal: "border-[#dce8d9] focus:border-[#286943]",
-  error: "border-[#b85c5c] focus:border-[#b85c5c] focus:ring-[#b85c5c]",
+  normal: "border-[var(--g-100)] focus:border-[var(--g-700)]",
+  error: "border-[var(--error)] focus:border-[var(--error)] focus:ring-[var(--error)]",
 };
 
 type BaseProps = {
@@ -35,11 +35,11 @@ function Wrapper({
     <div className="flex flex-col gap-2">
       <label
         htmlFor={id}
-        className="text-[14px] font-medium leading-relaxed text-[#17372a]"
+        className="text-[14px] font-medium leading-relaxed text-[var(--g-900)]"
       >
         {label}
         {required ? (
-          <span aria-hidden="true" className="text-[#5d9564]">
+          <span aria-hidden="true" className="text-[var(--t-label)]">
             {" "}
             *
           </span>
@@ -49,14 +49,14 @@ function Wrapper({
       {error ? (
         <p
           id={`${id}-error`}
-          className="text-[13px] leading-relaxed text-[#b85c5c]"
+          className="text-[13px] leading-relaxed text-[var(--error)]"
         >
           {error}
         </p>
       ) : hint ? (
         <p
           id={`${id}-hint`}
-          className="text-[13px] leading-relaxed text-[#5f7765]"
+          className="text-[13px] leading-relaxed text-[var(--t-muted)]"
         >
           {hint}
         </p>

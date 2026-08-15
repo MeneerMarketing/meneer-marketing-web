@@ -7,7 +7,7 @@ export type SiteFooterProps = {
 };
 
 const footerLink =
-  "text-[10px] font-medium uppercase tracking-[.13em] text-[#66806a] transition hover:text-[#286943] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#286943]";
+  "text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)] transition hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
 
 /** Figma footer — nav-links + copyright, zelfde als homepage. */
 export default function SiteFooter({ instagramHref }: SiteFooterProps) {
@@ -16,7 +16,7 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
 
   return (
     <footer className={`${figmaInnerContainer} pb-10 pt-4`}>
-      <div className="flex flex-col gap-6 border-t border-[#dce8d9] pt-7">
+      <div className="flex flex-col gap-6 border-t border-[var(--g-100)] pt-7">
         <div className="flex flex-wrap gap-x-8 gap-y-3">
           <Link href="/huidproblemen" className={footerLink}>
             Huidproblemen
@@ -54,7 +54,7 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
             </span>
           )}
         </div>
-        <div className="flex flex-col gap-5 text-[10px] font-medium uppercase tracking-[.13em] text-[#66806a] sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-5 text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)] sm:flex-row sm:items-center sm:justify-between">
           <span>
             © {year} {DIBA_SITE.name}
           </span>

@@ -75,10 +75,10 @@ export default function ProofStrip({
     return () => io.disconnect();
   }, []);
 
-  const line = onDark ? "border-[#387849]" : "border-[#dce8d9]";
-  const numBase = onDark ? "text-[#f2f7ef]" : "text-[#17372a]";
-  const numHi = onDark ? "text-[#d8f0c8]" : "text-[#286943]";
-  const lab = onDark ? "text-[#d8f0c8] opacity-80" : "text-[#5f7765]";
+  const line = onDark ? "border-[#387849]" : "border-[var(--g-100)]";
+  const numBase = onDark ? "text-[var(--g-025)]" : "text-[var(--g-900)]";
+  const numHi = onDark ? "text-[var(--on-dark-btn)]" : "text-[var(--g-700)]";
+  const lab = onDark ? "text-[var(--on-dark-btn)] opacity-80" : "text-[var(--t-muted)]";
 
   return (
     <dl

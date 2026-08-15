@@ -17,11 +17,11 @@ export default function MeasurementBlock({
   metrics,
 }: MeasurementBlockProps) {
   return (
-    <div className="rounded-[1.5rem] border border-[#dce8d9] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
-      <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[#5d9564]">
+    <div className="rounded-[1.5rem] border border-[var(--g-100)] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
+      <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[var(--t-label)]">
         Wij meten
       </p>
-      <p className="mt-1 text-[16px] leading-relaxed text-[#17372a]">
+      <p className="mt-1 text-[16px] leading-relaxed text-[var(--g-900)]">
         {context}
       </p>
 
@@ -39,13 +39,13 @@ export default function MeasurementBlock({
           return (
             <div key={m.label}>
               <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-[14px] font-medium text-[#17372a]">
+                <dt className="text-[14px] font-medium text-[var(--g-900)]">
                   {m.label}
                 </dt>
-                <dd className="text-[13px] text-[#5f7765] tabular-nums">
+                <dd className="text-[13px] text-[var(--t-muted)] tabular-nums">
                   {nf.format(m.baseline)} → {nf.format(m.current)}
                   {improved ? (
-                    <span className="ml-2 font-medium text-[#286943]">
+                    <span className="ml-2 font-medium text-[var(--g-700)]">
                       {deltaPct > 0 ? "+" : ""}
                       {nf.format(deltaPct)}%
                     </span>
@@ -53,15 +53,15 @@ export default function MeasurementBlock({
                 </dd>
               </div>
               <div className="mt-2 flex flex-col gap-1" aria-hidden="true">
-                <div className="h-[6px] w-full overflow-hidden rounded-[3px] bg-[#edf6e8]">
+                <div className="h-[6px] w-full overflow-hidden rounded-[3px] bg-[var(--g-050)]">
                   <div
-                    className="h-full rounded-[3px] bg-[#95c592]"
+                    className="h-full rounded-[3px] bg-[var(--g-300)]"
                     style={{ width: `${(m.baseline / max) * 100}%` }}
                   />
                 </div>
-                <div className="h-[6px] w-full overflow-hidden rounded-[3px] bg-[#edf6e8]">
+                <div className="h-[6px] w-full overflow-hidden rounded-[3px] bg-[var(--g-050)]">
                   <div
-                    className="h-full rounded-[3px] bg-[#286943]"
+                    className="h-full rounded-[3px] bg-[var(--g-700)]"
                     style={{ width: `${(m.current / max) * 100}%` }}
                   />
                 </div>
@@ -71,18 +71,18 @@ export default function MeasurementBlock({
         })}
       </dl>
 
-      <p className="mt-6 flex flex-wrap items-center gap-4 text-[13px] text-[#5f7765]">
+      <p className="mt-6 flex flex-wrap items-center gap-4 text-[13px] text-[var(--t-muted)]">
         <span className="inline-flex items-center gap-2">
           <span
             aria-hidden="true"
-            className="h-[6px] w-[18px] rounded-[3px] bg-[#95c592]"
+            className="h-[6px] w-[18px] rounded-[3px] bg-[var(--g-300)]"
           />
           Nulmeting
         </span>
         <span className="inline-flex items-center gap-2">
           <span
             aria-hidden="true"
-            className="h-[6px] w-[18px] rounded-[3px] bg-[#286943]"
+            className="h-[6px] w-[18px] rounded-[3px] bg-[var(--g-700)]"
           />
           Nu
         </span>

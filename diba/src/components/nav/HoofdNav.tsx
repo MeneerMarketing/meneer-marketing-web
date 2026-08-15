@@ -64,7 +64,7 @@ const VORM: Record<"opBeeld" | "opWit", Vormgeving> = {
   },
   opWit: {
     /* Zacht mint, geen wit.
-       Wit op een paginavlak van #fcfdfb is bijna hetzelfde en dat maakt de balk een
+       Wit op een paginavlak van var(--g-010) is bijna hetzelfde en dat maakt de balk een
        kleurloze strook. g-050 geeft hem een eigen vlak zonder dat er een lijn onder
        hoeft, en dat is precies hoe de Figma-homepage haar banden scheidt. */
     wrapper: "sticky top-0 z-40 bg-white",

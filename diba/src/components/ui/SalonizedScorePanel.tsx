@@ -21,7 +21,7 @@ function Stars({ size = 14 }: { size?: number }) {
           width={size}
           height={size}
           viewBox="0 0 20 20"
-          fill="#286943"
+          fill="var(--g-700)"
           aria-hidden="true"
         >
           <path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8L10 1.8z" />
@@ -44,7 +44,7 @@ export default function SalonizedScorePanel({
         href={SALONIZED_REVIEWS_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-flex flex-wrap items-center gap-3 rounded-full border border-[#dce8d9] bg-white px-4 py-2 text-[11px] font-medium uppercase tracking-[.12em] text-[#286943] transition hover:border-[#286943] hover:bg-[#eff8ea] ${className}`}
+        className={`inline-flex flex-wrap items-center gap-3 rounded-full border border-[var(--g-100)] bg-white px-4 py-2 text-[11px] font-medium uppercase tracking-[.12em] text-[var(--g-700)] transition hover:border-[var(--g-700)] hover:bg-[var(--g-050)] ${className}`}
       >
         <Stars size={11} />
         <span>
@@ -57,7 +57,7 @@ export default function SalonizedScorePanel({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-[2rem] border border-[#dce8d9] bg-[linear-gradient(145deg,#eff8ea,#fff_55%)] p-8 sm:p-10 ${className}`}
+      className={`relative overflow-hidden rounded-[2rem] border border-[var(--g-100)] bg-[linear-gradient(145deg,var(--g-050),#fff_55%)] p-8 sm:p-10 ${className}`}
     >
       <div
         aria-hidden="true"
@@ -65,18 +65,18 @@ export default function SalonizedScorePanel({
       />
       <div className="relative flex flex-wrap items-end justify-between gap-8">
         <div>
-          <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[#5d9564]">
+          <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
             Salonized · live
           </p>
           <p className="mt-3 flex items-baseline gap-3">
-            <span className="text-6xl font-medium tracking-[-.08em] text-[#286943] sm:text-7xl">
+            <span className="text-6xl font-medium tracking-[-.08em] text-[var(--g-700)] sm:text-7xl">
               {rating.toFixed(1).replace(".", ",")}
             </span>
             <Stars size={18} />
           </p>
-          <p className="mt-2 text-[15px] text-[#5f7765]">
+          <p className="mt-2 text-[15px] text-[var(--t-muted)]">
             Gebaseerd op{" "}
-            <strong className="font-medium text-[#17372a]">
+            <strong className="font-medium text-[var(--g-900)]">
               {countFormatted} reviews
             </strong>
           </p>
@@ -85,7 +85,7 @@ export default function SalonizedScorePanel({
           href={SALONIZED_REVIEWS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full border border-[#b8d0b9] px-5 py-3 text-[11px] font-medium uppercase tracking-[.13em] text-[#286943] transition hover:border-[#286943] hover:bg-white"
+          className="rounded-full border border-[#b8d0b9] px-5 py-3 text-[11px] font-medium uppercase tracking-[.13em] text-[var(--g-700)] transition hover:border-[var(--g-700)] hover:bg-white"
         >
           Alle reviews op Salonized ↗
         </Link>

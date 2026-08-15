@@ -81,6 +81,10 @@
   --success: #4a7c59;
   --warn: #b0813c;
   --error: #9c4038;
+  /* Het lichte warme vlak dat bij --warn hoort: de dip in de acnetijdlijn en de
+     twijfelkolom bij rosacea. Stond op twee plekken los als hex, en een kleur die twee
+     keer met de hand wordt overgetypt loopt uiteen zodra iemand er één aanpast. */
+  --warn-vlak: #faf3e6;
 
   /* Littekenschaal — rood naar wit, de as van de littekenklok.
      Geen merkkleuren maar een diagnostische reeks: rood is jong en reageert,

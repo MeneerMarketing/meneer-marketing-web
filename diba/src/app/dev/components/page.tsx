@@ -63,7 +63,7 @@ function DevSection({
   readonly wide?: boolean;
 }) {
   return (
-    <section className="border-t border-[#dce8d9] py-12 first:border-t-0">
+    <section className="border-t border-[var(--g-100)] py-12 first:border-t-0">
       <p className={figmaLabel}>{title}</p>
       <FigmaHeading as="h2" size="card" text={title} className="mt-3" />
       <div className={`mt-8 ${wide ? "w-full" : ""}`}>{children}</div>
@@ -96,7 +96,7 @@ export default function DevComponentsPage() {
             <span className={figmaBtnMint}>Bekijk alle prijzen ↗</span>
             <Link
               href="/contact"
-              className="text-[14px] font-medium text-[#286943] underline-offset-4 hover:underline"
+              className="text-[14px] font-medium text-[var(--g-700)] underline-offset-4 hover:underline"
             >
               Nog niet zeker? Stel je vraag
             </Link>
@@ -195,7 +195,7 @@ export default function DevComponentsPage() {
         </DevSection>
 
         <div
-          className="mt-12 min-h-[120vh] rounded-[1.5rem] border border-dashed border-[#dce8d9] bg-[#f2f7ef] p-6 md:hidden"
+          className="mt-12 min-h-[120vh] rounded-[1.5rem] border border-dashed border-[var(--g-100)] bg-[var(--g-025)] p-6 md:hidden"
           aria-hidden="true"
         >
           <p className={figmaBody}>

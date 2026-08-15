@@ -47,14 +47,14 @@ export default function NotFound() {
           Of ga direct naar{" "}
           <Link
             href="/huidproblemen"
-            className="text-[#286943] underline-offset-4 hover:underline"
+            className="text-[var(--g-700)] underline-offset-4 hover:underline"
           >
             huidproblemen
           </Link>{" "}
           of{" "}
           <Link
             href="/intake"
-            className="text-[#286943] underline-offset-4 hover:underline"
+            className="text-[var(--g-700)] underline-offset-4 hover:underline"
           >
             intake
           </Link>

@@ -121,7 +121,7 @@ export default function PillarTemplate({
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[11px] font-medium uppercase tracking-[.13em] text-[#286943] underline underline-offset-4"
+                className="text-[11px] font-medium uppercase tracking-[.13em] text-[var(--g-700)] underline underline-offset-4"
               >
                 Vraag stellen ↗
               </a>
@@ -131,18 +131,18 @@ export default function PillarTemplate({
         </div>
       </section>
 
-      <section className="border-y border-[#dce8d9] bg-white">
+      <section className="border-y border-[var(--g-100)] bg-white">
         <div
-          className={`${figmaInnerContainer} grid divide-y divide-[#dce8d9] md:grid-cols-4 md:divide-x md:divide-y-0`}
+          className={`${figmaInnerContainer} grid divide-y divide-[var(--g-100)] md:grid-cols-4 md:divide-x md:divide-y-0`}
         >
           {proofItems.map((item) => (
             <div key={item.label} className="py-7 text-center">
-              <strong className="block text-3xl tracking-[-.06em] text-[#276541]">
+              <strong className="block text-3xl tracking-[-.06em] text-[var(--g-700)]">
                 {item.label === "Actief sinds"
                   ? item.value
                   : `${nf.format(item.value)}${item.suffix ?? ""}`}
               </strong>
-              <span className="mt-2 block text-[10px] uppercase tracking-[.13em] text-[#66806a]">
+              <span className="mt-2 block text-[10px] uppercase tracking-[.13em] text-[var(--diba-green-500)]">
                 {item.label}
               </span>
             </div>
@@ -172,7 +172,7 @@ export default function PillarTemplate({
       </section>
 
       <section
-        className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
         data-reveal
       >
         <div className="mx-auto">
@@ -208,12 +208,12 @@ export default function PillarTemplate({
           {c.pad.stappen.map((stap) => (
             <article
               key={stap.titel}
-              className={`${figmaCardSoft} flex h-full flex-col p-6 transition hover:bg-[#e9f5e4]`}
+              className={`${figmaCardSoft} flex h-full flex-col p-6 transition hover:bg-[var(--g-075)]`}
             >
-              <h3 className="text-base font-medium tracking-[-.03em] text-[#17372a]">
+              <h3 className="text-base font-medium tracking-[-.03em] text-[var(--g-900)]">
                 {publicCopy(stap.titel)}
               </h3>
-              <p className="mt-3 flex-1 text-[14px] leading-6 text-[#5f7765]">
+              <p className="mt-3 flex-1 text-[14px] leading-6 text-[var(--t-muted)]">
                 {publicCopy(stap.tekst)}
               </p>
             </article>
@@ -221,13 +221,13 @@ export default function PillarTemplate({
         </div>
 
         <div
-          className={`mt-8 flex flex-wrap items-baseline gap-x-8 gap-y-3 ${figmaCardRadius} border border-[#dce8d9] bg-[#eff8ea] px-7 py-6 sm:px-8`}
+          className={`mt-8 flex flex-wrap items-baseline gap-x-8 gap-y-3 ${figmaCardRadius} border border-[var(--g-100)] bg-[var(--g-050)] px-7 py-6 sm:px-8`}
         >
           {c.pad.trajectPrijs !== undefined ? (
-            <p className="text-3xl font-medium tracking-[-.06em] text-[#17372a]">
+            <p className="text-3xl font-medium tracking-[-.06em] text-[var(--g-900)]">
               {euro.format(c.pad.trajectPrijs)}
               {c.pad.perMonth !== undefined ? (
-                <span className="ml-2 text-sm font-normal text-[#5f7765]">
+                <span className="ml-2 text-sm font-normal text-[var(--t-muted)]">
                   of {euro.format(c.pad.perMonth)}/mnd
                 </span>
               ) : null}
@@ -250,12 +250,12 @@ export default function PillarTemplate({
 
       {heeftNazorg ? (
         <section
-          className="bg-[#f2f7ef] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+          className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
           data-reveal
         >
           <div className="mx-auto">
             <p className={figmaLabel}>Nazorg</p>
-            <h2 className="mt-4 max-w-[20ch] text-3xl font-medium tracking-[-.06em] text-[#17372a]">
+            <h2 className="mt-4 max-w-[20ch] text-3xl font-medium tracking-[-.06em] text-[var(--g-900)]">
               Wat mag wanneer weer
             </h2>
             <p className={`mt-6 max-w-2xl ${figmaBody}`}>
@@ -266,7 +266,7 @@ export default function PillarTemplate({
             </p>
             <Link
               href="/nazorg"
-              className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#d8f0c8] px-6 text-[11px] font-semibold uppercase tracking-[.13em] text-[#245f3b] transition-colors hover:bg-[#cbe5bf]"
+              className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-full bg-[var(--on-dark-btn)] px-6 text-[11px] font-semibold uppercase tracking-[.13em] text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
             >
               Naar de nazorg
             </Link>
@@ -322,18 +322,18 @@ export default function PillarTemplate({
         data-reveal
       >
         <div
-          className={`${figmaCardRadius} bg-[#286943] px-7 py-10 text-white sm:px-10 sm:py-12`}
+          className={`${figmaCardRadius} bg-[var(--g-700)] px-7 py-10 text-white sm:px-10 sm:py-12`}
         >
-          <p className="text-[10px] font-medium uppercase tracking-[.16em] text-[#bfe7ac]">
+          <p className="text-[10px] font-medium uppercase tracking-[.16em] text-[var(--on-dark-label)]">
             Vergoeding
           </p>
           <FigmaHeading
             as="h2"
             size="card"
             text="Wat *jouw* verzekering vergoedt"
-            className="mt-4 !text-white [&_span]:!text-[#b8e39d]"
+            className="mt-4 !text-white [&_span]:!text-[var(--on-dark-accent)]"
           />
-          <p className="mt-4 max-w-2xl text-[15px] leading-7 text-[#d2ead0]">
+          <p className="mt-4 max-w-2xl text-[15px] leading-7 text-[var(--on-dark-body)]">
             {publicCopy(c.vergoeding.tekst)}
           </p>
           <Link

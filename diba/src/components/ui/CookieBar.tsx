@@ -26,7 +26,7 @@ import {
  * schrijft een echte "nee" weg, dus hij verdwijnt ook voor wie weigert. Intrekken kan
  * daarna op /cookiebeleid, waar nu wel een schakelaar staat.
  *
- * Ook opgeruimd: de hardgecodeerde hex (#dce8d9, #fcfdfb, #5f7765, #286943) en de bovenrand.
+ * Ook opgeruimd: de hardgecodeerde hex (var(--g-100), var(--g-010), var(--t-muted), var(--g-700)) en de bovenrand.
  * Vlakken in deze huisstijl dragen zichzelf; de balk staat los van de pagina door zijn
  * schaduw en niet door een lijn.
  *

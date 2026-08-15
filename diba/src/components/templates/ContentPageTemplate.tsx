@@ -108,7 +108,7 @@ export default function ContentPageTemplate({
           <div
             className={`mx-auto ${figmaCardSoft} flex flex-col items-center gap-4 px-7 py-12 text-center sm:px-10`}
           >
-            <p className="max-w-md text-[15px] leading-7 text-[#5f7765]">
+            <p className="max-w-md text-[15px] leading-7 text-[var(--t-muted)]">
               Twijfel je nog? Stel je vraag via WhatsApp. Je krijgt antwoord van
               een mens.
             </p>

@@ -13,7 +13,7 @@ export default function GlobalError({
 }) {
   return (
     <html lang="nl">
-      <body className="figma-home flex min-h-screen flex-col items-center justify-center bg-[#fcfdfb] px-5 antialiased">
+      <body className="figma-home flex min-h-screen flex-col items-center justify-center bg-[var(--g-010)] px-5 antialiased">
         <div className="max-w-md text-center">
           <FigmaHeading
             as="h1"

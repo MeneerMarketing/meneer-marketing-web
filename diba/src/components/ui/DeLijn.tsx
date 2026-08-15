@@ -17,10 +17,10 @@ export default function DeLijn({
   return (
     <span
       aria-hidden="true"
-      className={`relative block h-[1.5px] bg-[#dce8d9] ${widths[length]} ${className}`}
+      className={`relative block h-[1.5px] bg-[var(--g-100)] ${widths[length]} ${className}`}
     >
       <span
-        className="absolute top-1/2 h-[6px] w-[6px] -translate-y-1/2 rounded-full bg-[#286943]"
+        className="absolute top-1/2 h-[6px] w-[6px] -translate-y-1/2 rounded-full bg-[var(--g-700)]"
         style={{
           left: `${pct}%`,
           transform: `translate(-${pct}%, -50%)`,

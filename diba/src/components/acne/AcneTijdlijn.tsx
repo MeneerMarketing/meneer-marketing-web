@@ -106,7 +106,7 @@ export default function AcneTijdlijn() {
 
         <div
           className="rounded-[var(--r-sm)] p-5"
-          style={{ background: fase.isDip ? "#faf3e6" : "var(--g-050)" }}
+          style={{ background: fase.isDip ? "var(--warn-vlak)" : "var(--g-050)" }}
         >
           <Label className={fase.isDip ? "text-[var(--warn-text)]" : undefined}>
             {fase.isDip ? "Let hier op" : "Wat wij dan doen"}
