@@ -33,6 +33,36 @@ export const ONDERARM = {
   },
 } as const;
 
+/**
+ * De onderarmtest als wat hij eigenlijk is: een proef met een controlegroep.
+ *
+ * Dit is het enige experiment met een controlegroep dat iemand op zijn eigen lichaam kan
+ * doen. Twee stukken huid van dezelfde persoon, met dezelfde genen, dezelfde leeftijd,
+ * hetzelfde eten, dezelfde nachten en dezelfde hormonen. Eén variabele verschilt.
+ *
+ * Dat is een sterker argument dan een tekening van twee stukken huid, en het is ook
+ * eerlijker: we beweren nergens hoeveel van de veroudering door zon komt, want dat weten
+ * we niet en dat meten we niet. We laten alleen zien dat alles behalve die ene variabele
+ * gelijk is. De conclusie mag de lezer zelf trekken.
+ */
+export const PROEF = {
+  /** Wat er bij allebei gelijk is. Leeftijd zit er niet bij: die komt uit de schuif. */
+  gelijk: [
+    { wat: "Genen", waarde: "Dezelfde persoon" },
+    { wat: "Voeding en slaap", waarde: "Hetzelfde lijf, dezelfde jaren" },
+    { wat: "Hormonen", waarde: "Dezelfde" },
+    { wat: "Roken en alcohol", waarde: "Hetzelfde" },
+  ],
+  /** De enige variabele. Zonder getal: we tellen geen dagen die we niet geteld hebben. */
+  variabele: {
+    wat: "Dagen dat de huid buiten kwam",
+    beschut: "Bijna nul",
+    blootgesteld: "Bijna allemaal",
+  },
+  slot:
+    "En dat terwijl het gezicht meestal juist de meeste verzorging krijgt van de twee. De variabele die overblijft is niet je routine.",
+} as const;
+
 /* ── Wat begint wanneer ────────────────────────────────────────────────── */
 
 /** Drie standen, geen cijfers: we meten dit niet, dus we doen er ook geen getal omheen. */

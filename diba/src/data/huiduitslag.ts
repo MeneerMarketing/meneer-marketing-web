@@ -66,6 +66,29 @@ export const ALARM = [
 export const ALARM_SLOT =
   "Herken je hier iets van, dan telt de glastest niet meer. Bellen gaat dan voor. [MEDISCHE-CHECK-ROJDA]";
 
+/**
+ * Waar je dan naartoe belt.
+ *
+ * Dit stond als één regel boven de lijst: "Bel vandaag, of 112 buiten kantooruren". Dat
+ * zijn twee verschillende handelingen in één zin, zonder dat erbij staat wanneer welke
+ * geldt. Iemand die op dat moment op deze pagina staat heeft geen samenvatting nodig maar
+ * een nummer.
+ *
+ * De verdeling hieronder is niet nieuw; hij staat woordelijk al bij de uitkomst van de
+ * glastest. Maar wie waarheen belt is een medische keuze en geen redactionele, dus moet
+ * juist deze indeling langs Rojda voordat de pagina live gaat. Dat geldt in het bijzonder
+ * voor de derde regel: nu hangt 112 aan het tijdstip, en de vraag is of dat klopt of dat
+ * hij aan de toestand van de persoon hoort te hangen. [MEDISCHE-CHECK-ROJDA]
+ */
+export const ALARM_ROUTE = [
+  { wanneer: "Binnen kantooruren", waar: "Je eigen huisarts" },
+  { wanneer: "Avond, nacht of weekend", waar: "De huisartsenpost" },
+  {
+    wanneer: "Iemand maakt een zieke indruk en wachten voelt niet goed",
+    waar: "112",
+  },
+] as const;
+
 /* ── De gewone oorzaken ────────────────────────────────────────────────── */
 
 export const OORZAKEN = [

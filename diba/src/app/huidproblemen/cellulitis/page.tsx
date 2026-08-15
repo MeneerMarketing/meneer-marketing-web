@@ -131,7 +131,7 @@ export default function CellulitisPage() {
             label="De dwarsdoorsnede"
             kop="Zelfde vet,"
             accent="ander oppervlak."
-            intro="Wissel de richting van de schotjes en laat de hoeveelheid vet precies staan. Het oppervlak erboven verandert compleet mee. Schuif daarna het vet omlaag en kijk wat er blijft."
+            intro="Twee doorsnedes naast elkaar, met één schuif die er in allebei evenveel vet in stopt. Links staan de bindweefselschotjes rechtop, rechts kruisen ze. Kijk naar de bovenranden: dat is het oppervlak dat je in de spiegel ziet."
           />
           <Dwarsdoorsnede />
         </div>

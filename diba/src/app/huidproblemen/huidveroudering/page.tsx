@@ -166,9 +166,9 @@ export default function HuidverouderingPage() {
         <div className="mx-auto">
           <SectieKop
             label="De onderarmtest"
-            kop="Veeg zelf tussen"
-            accent="de twee stukken huid."
-            intro="Links huid die vrijwel nooit zon zag, rechts huid die elke dag buiten kwam. Dezelfde persoon, dezelfde leeftijd, dezelfde dag. Schuif de lijn en kijk wat er overblijft als je de zon eraf haalt."
+            kop="Twee stukken huid,"
+            accent="één verschil."
+            intro="De binnenkant van je bovenarm zag vrijwel nooit zon, je gezicht kwam elke dag buiten. Dezelfde persoon, dezelfde genen, dezelfde leeftijd tot op de dag. Zet hieronder je eigen leeftijd erin en tel hoeveel regels er verschillen."
           />
           <Onderarmtest />
         </div>

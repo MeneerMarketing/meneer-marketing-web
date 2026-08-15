@@ -13,6 +13,7 @@ import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import {
   ALARM,
+  ALARM_ROUTE,
   ALARM_SLOT,
   OORZAKEN,
   UITSLAG_FAQ,
@@ -118,25 +119,22 @@ export default function HuiduitslagPage() {
         className="mx-5 scroll-mt-[var(--anker-offset)] rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
       >
         <div className="mx-auto">
-          <Label opDonker>Bel vandaag, of 112 buiten kantooruren</Label>
+          <Label opDonker>Wanneer je niet afwacht</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
             Zes signalen waarbij
             <br />
-            <span className="diba-accent-on-dark">je niet afwacht.</span>
+            <span className="diba-accent-on-dark">je vandaag belt.</span>
           </h2>
 
-          <ul className="mt-10 grid gap-x-10 gap-y-4 md:grid-cols-2">
+          {/* De signalen op een eigen vlak in plaats van achter een haarlijntje. Dat is de
+              huisregel (vullingen, geen lijnen), en op --g-800 haalt --on-dark-body 7,57
+              tegen 4,08 op een doorschijnend wit vlak: dat laatste zakt onder AA. */}
+          <ul className="mt-10 grid gap-3 md:grid-cols-2 md:gap-4">
             {ALARM.map((a) => (
               <li
                 key={a}
-                className="flex gap-3 border-t border-white/20 pt-4 text-[16px] leading-7 text-[var(--on-dark-body)]"
+                className="rounded-[var(--r-sm)] bg-[var(--g-800)] px-5 py-4 text-[16px] leading-7 text-[var(--on-dark-body)]"
               >
-                <span
-                  aria-hidden="true"
-                  className="text-[var(--on-dark-accent)]"
-                >
-                  •
-                </span>
                 {a}
               </li>
             ))}
@@ -145,6 +143,28 @@ export default function HuiduitslagPage() {
           <p className="mt-8 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
             {ALARM_SLOT.replace(/\[[^\]]+\]/g, "").trim()}
           </p>
+
+          {/* Waar je dan naartoe belt. Dit stond als halve zin in het label erboven
+              ("bel vandaag, of 112 buiten kantooruren"): twee handelingen in één regel,
+              zonder te zeggen wanneer welke geldt. Wie hier op dit moment staat heeft
+              geen samenvatting nodig maar een nummer. */}
+          <div className="mt-10 rounded-[var(--r-md)] bg-[var(--g-800)] p-6 sm:p-8">
+            <Label opDonker>Waar je dan naartoe belt</Label>
+            <dl className="mt-5 grid gap-4 sm:grid-cols-3 sm:gap-6">
+              {/* De antwoorden op één lijn, ook als de vraag erboven twee regels pakt.
+                  Anders hangt 112 lager dan de rest en leest dat als minder belangrijk. */}
+              {ALARM_ROUTE.map((r) => (
+                <div key={r.waar} className="flex h-full flex-col">
+                  <dt className="text-[15px] leading-6 text-[var(--on-dark-body)]">
+                    {r.wanneer}
+                  </dt>
+                  <dd className="diba-card-title mt-auto pt-2 text-[var(--on-dark)]">
+                    {r.waar}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
       </section>
 
