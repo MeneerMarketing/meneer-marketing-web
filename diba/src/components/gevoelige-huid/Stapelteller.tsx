@@ -130,7 +130,7 @@ export default function Stapelteller() {
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
             {lezing.tekst}
           </p>
-          <p className="mt-4 border-l-2 border-[var(--g-300)] pl-4 text-[16px] leading-7 text-[var(--t-strong)]">
+          <p className="mt-4 rounded-[var(--r-sm)] bg-white p-4 text-[16px] leading-7 text-[var(--t-strong)]">
             {publicCopy(lezing.advies)}
           </p>
 

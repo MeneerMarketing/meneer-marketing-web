@@ -80,7 +80,7 @@ export default function AcneTypeKiezer() {
             ["Wat het betekent", type.watHetBetekent],
             ["Wat wij eerst doen", type.watWijEersteDoen],
           ].map(([kop, tekst]) => (
-            <div key={kop} className="border-l-2 border-[var(--g-200)] pl-4">
+            <div key={kop} className="rounded-[var(--r-sm)] bg-[var(--g-025)] p-4">
               <dt className="diba-label">{kop}</dt>
               <dd className="mt-1.5 text-[15px] leading-7 text-[var(--t-body)]">
                 {publicCopy(tekst)}

@@ -209,7 +209,7 @@ export default function Spiegeltest() {
             ))}
           </ul>
 
-          <p className="mt-6 border-l-2 border-[var(--g-200)] pl-4 text-sm leading-6 text-[var(--t-muted)]">
+          <p className="mt-6 rounded-[var(--r-sm)] bg-white p-4 text-sm leading-6 text-[var(--t-muted)]">
             {publicCopy(test.waarom)}
           </p>
 
@@ -252,19 +252,19 @@ export default function Spiegeltest() {
 
       <div aria-live="polite">
         <dl className="space-y-5">
-          <div className="border-l-2 border-[var(--g-200)] pl-4">
+          <div className="rounded-[var(--r-sm)] bg-white p-4">
             <dt className="diba-label">Wat het is</dt>
             <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(uitkomst.watHetIs)}
             </dd>
           </div>
-          <div className="border-l-2 border-[var(--g-300)] pl-4">
+          <div className="rounded-[var(--r-sm)] bg-white p-4">
             <dt className="diba-label">Wat wij kunnen doen</dt>
             <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(uitkomst.kunnenWij)}
             </dd>
           </div>
-          <div className="border-l-2 border-[var(--g-200)] pl-4">
+          <div className="rounded-[var(--r-sm)] bg-white p-4">
             <dt className="diba-label">Wat jij zelf kunt doen</dt>
             <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(uitkomst.zelf)}

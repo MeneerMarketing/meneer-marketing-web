@@ -53,50 +53,38 @@ export default function Krabcirkel() {
       {/* ── De ring ── */}
       <div className="self-start rounded-[var(--r-md)] bg-white p-6 sm:p-8">
         <div className="relative mx-auto aspect-square w-full max-w-[400px]">
+          {/* De ring als vlak, niet als lijn.
+              Dit waren twee cirkels met een streekdikte van tien en een streepjespatroon
+              dat meedraaide. Op zich leesbaar, maar het was de laatste lijntekening op de
+              site en een ring is net zo goed een vlak: een grote schijf met een kleinere
+              eruit geknipt. Dezelfde vorm, en nu volgens dezelfde regel als de rest. */}
           <svg
             viewBox="0 0 200 200"
             className="absolute inset-0 h-full w-full"
             aria-hidden="true"
           >
-            {/* De lus zelf. Vier bogen met een pijlpunt, zodat de richting klopt. */}
-            <circle
-              cx="100"
-              cy="100"
-              r="62"
-              fill="none"
-              stroke="var(--g-100)"
-              strokeWidth="10"
+            <path
+              d="M100 33a67 67 0 1 1 0 134a67 67 0 1 1 0-134ZM100 43a57 57 0 1 0 0 114a57 57 0 1 0 0-114Z"
+              fill="var(--g-100)"
+              fillRule="evenodd"
             />
-            <circle
-              cx="100"
-              cy="100"
-              r="62"
-              fill="none"
-              stroke="var(--g-300)"
-              strokeWidth="10"
-              strokeLinecap="round"
-              strokeDasharray="68 30"
-              strokeDashoffset={-15 - actief * 98}
-              className="transition-[stroke-dashoffset] duration-500 ease-[var(--ease-diba)] motion-reduce:transition-none"
-              transform="rotate(-90 100 100)"
-            />
-            <text
-              x="100"
-              y="96"
-              textAnchor="middle"
-              className="fill-[var(--t-muted)] text-[9px] font-semibold uppercase [letter-spacing:0.14em]"
+            {/* Het lopende deel: een kwart ring die naar de gekozen schakel draait. */}
+            <g
+              className="transition-transform duration-500 ease-[var(--ease-diba)] motion-reduce:transition-none"
+              style={{ transform: `rotate(${actief * 90}deg)`, transformOrigin: "100px 100px" }}
             >
-              Draait door
-            </text>
-            <text
-              x="100"
-              y="112"
-              textAnchor="middle"
-              className="fill-[var(--t-muted)] text-[9px] font-semibold uppercase [letter-spacing:0.14em]"
-            >
-              tot je hem breekt
-            </text>
+              <path
+                d="M100 33a67 67 0 0 1 67 67h-10a57 57 0 0 0-57-57Z"
+                fill="var(--g-300)"
+              />
+            </g>
           </svg>
+
+          {/* De tekst in het midden stond in de SVG en schaalde dus mee met de tekening.
+              Als gewone tekst leest hij op elk formaat even goed. */}
+          <p className="diba-label pointer-events-none absolute top-1/2 left-1/2 w-40 -translate-x-1/2 -translate-y-1/2 text-center text-[var(--t-muted)]">
+            Draait door tot je hem breekt
+          </p>
 
           {CIRKEL.map((s, i) => {
             const aan = i === actief;
@@ -133,13 +121,13 @@ export default function Krabcirkel() {
         <h3 className="diba-card-title-lg mt-4">{schakel.naam}</h3>
 
         <dl className="mt-6 space-y-5">
-          <div className="border-l-2 border-[var(--g-200)] pl-4">
+          <div className="rounded-[var(--r-sm)] bg-white p-4">
             <dt className="diba-label">Wat er gebeurt</dt>
             <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(schakel.watGebeurtEr)}
             </dd>
           </div>
-          <div className="border-l-2 border-[var(--g-300)] pl-4">
+          <div className="rounded-[var(--r-sm)] bg-white p-4">
             <dt className="diba-label">Hier valt de cirkel te breken</dt>
             <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(schakel.doorbreken)}

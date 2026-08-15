@@ -283,7 +283,7 @@ export default function AbcdeCheck() {
                 })}
               </div>
 
-              <p className="mt-4 border-l-2 border-[var(--g-200)] pl-4 text-sm leading-6 text-[var(--t-muted)]">
+              <p className="mt-4 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-sm leading-6 text-[var(--t-muted)]">
                 {publicCopy(p.uitleg)}
               </p>
             </li>

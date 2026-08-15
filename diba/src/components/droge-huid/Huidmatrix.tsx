@@ -125,7 +125,12 @@ export default function Huidmatrix() {
               className="absolute h-12 w-12 -translate-x-1/2 -translate-y-1/2 cursor-grab rounded-[var(--r-pill)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] active:cursor-grabbing"
               style={{ left: `${punt.x}%`, top: `${punt.y}%` }}
             >
-              <span className="absolute top-1/2 left-1/2 block h-6 w-6 -translate-x-1/2 -translate-y-1/2 rounded-[var(--r-pill)] border-[3px] border-[var(--g-700)] bg-white shadow-[var(--shadow-float)]" />
+              {/* De greep: een groene schijf met een witte erin, geen witte schijf met
+                  een rand eromheen. Ziet er hetzelfde uit en houdt de tekening vrij van
+                  randen, net als de rest van de site. */}
+              <span className="absolute top-1/2 left-1/2 block h-6 w-6 -translate-x-1/2 -translate-y-1/2 rounded-[var(--r-pill)] bg-[var(--g-700)] shadow-[var(--shadow-float)]">
+                <span className="absolute inset-[3px] block rounded-[var(--r-pill)] bg-white" />
+              </span>
             </button>
           </div>
 
@@ -167,7 +172,7 @@ export default function Huidmatrix() {
             ["Waar het vandaan komt", kwadrant.oorzaak],
             ["Wat er dan moet gebeuren", kwadrant.aanpak],
           ].map(([kop, tekst]) => (
-            <div key={kop} className="border-l-2 border-[var(--g-200)] pl-4">
+            <div key={kop} className="rounded-[var(--r-sm)] bg-white p-4">
               <dt className="diba-label">{kop}</dt>
               <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
                 {publicCopy(tekst)}
