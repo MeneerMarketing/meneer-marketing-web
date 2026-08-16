@@ -18,24 +18,35 @@ export function PilatesHowItWorks() {
       className="relative overflow-hidden border-b border-slate-200 bg-slate-50"
       aria-labelledby="pilates-how-heading"
     >
-      <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-        <Reveal>
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-            Werkwijze
-          </p>
-          <h2
-            id="pilates-how-heading"
-            className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"
-          >
-            Snel. Persoonlijk. Duidelijk.
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-slate-600">
-            Intake past op één koffie. Daarna bouw ik door en weet jij steeds
-            waar je aan toe bent.
-          </p>
-        </Reveal>
+      <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-14">
+          <Reveal>
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
+              Werkwijze
+            </p>
+            <h2
+              id="pilates-how-heading"
+              className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.6rem] lg:leading-[1.08]"
+            >
+              Snel. Persoonlijk. Duidelijk.
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
+              Intake past op één koffie. Daarna bouw ik door en weet jij steeds
+              waar je aan toe bent.
+            </p>
+            <a
+              href="#aanvraag"
+              className="group mt-8 inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#FF5722]"
+            >
+              Start met een intake
+              <ArrowRight
+                className="size-4 transition group-hover:translate-x-0.5"
+                aria-hidden
+              />
+            </a>
+          </Reveal>
 
-        <ol className="relative mt-10 pl-8 sm:pl-10">
+          <ol className="relative pl-8 sm:pl-10">
           <div
             className="absolute left-[11px] top-2 bottom-8 w-px bg-slate-200 sm:left-[15px]"
             aria-hidden
@@ -104,20 +115,8 @@ export function PilatesHowItWorks() {
               </li>
             );
           })}
-        </ol>
-
-        <Reveal delay={0.12}>
-          <a
-            href="#aanvraag"
-            className="group mt-6 inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#FF5722]"
-          >
-            Start met een intake
-            <ArrowRight
-              className="size-4 transition group-hover:translate-x-0.5"
-              aria-hidden
-            />
-          </a>
-        </Reveal>
+          </ol>
+        </div>
       </div>
     </section>
   );

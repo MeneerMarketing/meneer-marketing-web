@@ -16,20 +16,20 @@ export function PilatesFaq() {
       className="border-b border-slate-200 bg-white"
       aria-labelledby="pilates-faq-heading"
     >
-      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <Reveal>
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
             FAQ
           </p>
           <h2
             id="pilates-faq-heading"
-            className="mt-3 text-3xl font-extrabold tracking-tighter text-slate-900 sm:text-4xl"
+            className="mt-3 max-w-3xl text-3xl font-extrabold tracking-tighter text-slate-900 sm:text-4xl"
           >
             Vragen die studio-eigenaren écht stellen
           </h2>
         </Reveal>
 
-        <div className="mt-10 space-y-3">
+        <div className="mt-10 grid gap-3 lg:grid-cols-2 lg:items-start lg:gap-x-6">
           {faqs.map((item, i) => (
             <Reveal key={item.question} delay={Math.min(i, 6) * 0.03}>
               <details
