@@ -5,13 +5,14 @@ import { useEffect, useRef, useState } from "react";
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
-import { packageIdToKey } from "@/lib/lge/package-map";
 import { trackCampaignEvent } from "@/lib/lge/track-client";
-import { submitContactForm } from "@/lib/contact-submission";
+import { VerticalLeadSuccess } from "@/components/verticals/VerticalLeadSuccess";
+import { submitVerticalInbound } from "@/lib/verticals/submit-inbound";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
 import {
   formatVerticalMoney,
   getActiveLaunchPromo,
+  resolveLaunchAmountCents,
 } from "@/lib/verticals/format-price";
 
 const INTEREST_OPTIONS: {
@@ -91,8 +92,13 @@ export function PilatesLeadForm({
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">(
     "idle",
   );
+  const [successMeta, setSuccessMeta] = useState<{
+    submissionId: string | null;
+    launchAmountCents: number;
+    paymentRequired: boolean;
+    paymentStatus: "none" | "waived" | "pending" | "paid" | "failed";
+  } | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [mailtoHref, setMailtoHref] = useState<string | undefined>();
 
   useEffect(() => {
     if (personalization?.businessName) {
@@ -130,70 +136,51 @@ export function PilatesLeadForm({
     e.preventDefault();
     setStatus("loading");
     setError(null);
-    setMailtoHref(undefined);
 
-    const name = studioName.trim() || "Pilates studio";
-    const interestLabel =
-      INTEREST_OPTIONS.find((o) => o.id === interest)?.label ?? interest;
-    const bookingLabel =
-      BOOKING_OPTIONS.find((o) => o.id === bookingNeed)?.label ?? bookingNeed;
-
-    const bodyLines = [
-      "Aanvraag via meneermarketing.nl/pilates-studios",
-      "",
-      `Studio: ${studioName.trim()}`,
-      `Plaats: ${city.trim()}`,
-      `E-mail: ${email.trim()}`,
-      `Telefoon: ${phone.trim() || "n.v.t."}`,
-      `Boeken: ${bookingLabel}`,
-      `Interesse: ${interestLabel}`,
-      promo?.active ? `Launch promo: ${promo.badge}` : null,
-      campaignRef ? "Campaign: gekoppeld" : "Campaign: geen",
-      "",
-      "Situatie / vraag:",
-      message.trim() || "n.v.t.",
-    ].filter((line): line is string => line !== null);
-
-    const result = await submitContactForm({
+    const result = await submitVerticalInbound({
       source: "pilates-studios",
-      subject: `[Pilates studios] ${studioName.trim() || "Nieuwe studio"} · ${city.trim() || "plaats onbekend"}`,
-      replyToEmail: email.trim(),
-      replyToName: name,
-      body: bodyLines.join("\n"),
+      studioName: studioName.trim(),
+      city: city.trim(),
+      email: email.trim(),
+      phone: phone.trim() || undefined,
+      interest,
+      bookingNeed,
+      message: message.trim() || undefined,
+      campaignRef,
+      launchPromoActive: Boolean(promo?.active),
+      launchAmountCents: resolveLaunchAmountCents(PILATES_VERTICAL.pricing),
       companyWebsite: honeypot,
     });
 
     if (result.ok) {
       setStatus("ok");
+      setSuccessMeta({
+        submissionId: result.submissionId,
+        launchAmountCents: result.launchAmountCents,
+        paymentRequired: result.paymentRequired,
+        paymentStatus: result.paymentStatus,
+      });
       trackPilatesEvent("pilates_contact_submit", {
         interest,
         has_ref: Boolean(campaignRef),
         booking_need: bookingNeed,
       });
-
-      if (campaignRef) {
-        const pkg = packageIdToKey(interest);
-        void trackCampaignEvent(
-          campaignRef,
-          "CONTACT_SUBMITTED",
-          {
-            path: "/pilates-studios",
-            section: "aanvraag",
-            ...(pkg ? { package: pkg } : {}),
-          },
-          `CONTACT_SUBMITTED:${campaignRef}:${email.trim().toLowerCase()}`,
-        ).catch(() => {
-          console.warn(
-            "[lge] CONTACT_SUBMITTED tracking failed after MM success",
-          );
-        });
-      }
       return;
     }
 
     setStatus("error");
     setError(result.error);
-    setMailtoHref(result.mailtoHref);
+  }
+
+  if (status === "ok" && successMeta) {
+    return (
+      <VerticalLeadSuccess
+        submissionId={successMeta.submissionId}
+        launchAmountCents={successMeta.launchAmountCents}
+        paymentRequired={successMeta.paymentRequired}
+        paymentStatus={successMeta.paymentStatus}
+      />
+    );
   }
 
   if (status === "ok") {
@@ -360,12 +347,7 @@ export function PilatesLeadForm({
 
       {error ? (
         <p className="text-sm text-rose-700" role="alert">
-          {error}{" "}
-          {mailtoHref ? (
-            <a href={mailtoHref} className="font-bold underline">
-              Mail direct
-            </a>
-          ) : null}
+          {error}
         </p>
       ) : null}
 

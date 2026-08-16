@@ -66,3 +66,16 @@ export function getActiveLaunchPromo(
 ): VerticalLaunchPromo | undefined {
   return pricing.launchPromo?.active ? pricing.launchPromo : undefined;
 }
+
+/** Launch fee in centen voor Mollie (0 bij actieve €0-promo). */
+export function resolveLaunchAmountCents(
+  pricing: VerticalPricingConfig,
+): number {
+  const promo = getActiveLaunchPromo(pricing);
+  const setup =
+    pricing.packages[0]?.setup ??
+    ({ amount: 295, unit: "eur", cadence: "one_time" } as VerticalMoney);
+  const effective = resolveSetupMoney(setup, promo);
+  if (effective.unit === "eur_cents") return effective.amount;
+  return Math.round(effective.amount * 100);
+}
