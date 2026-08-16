@@ -147,6 +147,38 @@ export const KLEUREN: readonly Kleur[] = [
 export const KLEUR_UITLEG =
   "Waarom de kleur en niet de plaats: de kleur zegt iets over de laag waarin het zit. Pigment ligt anders dan bloedvaten, en dat bepaalt of iets reageert op behandeling. Een behandelaar kijkt daarom als eerste hiernaar, en jij kunt dat ook.";
 
+/**
+ * Wat de kleur niet zegt.
+ *
+ * Deze pagina was de enige huidprobleempagina zonder tegenkolom. Overal elders staat naast
+ * "wat het is" even nadrukkelijk wat het níet is, en juist hier is dat nodig: een pagina
+ * die je op kleur laat kiezen wekt de indruk dat kleur het antwoord is. Kleur is de eerste
+ * vraag en niet de laatste.
+ *
+ * De laatste regel is de enige die over veiligheid gaat en staat daarom apart op de
+ * pagina, niet tussen de andere drie. [MEDISCHE-CHECK-ROJDA]
+ */
+export const KLEUR_ZEGT_NIET = [
+  {
+    kop: "Hoe erg het is",
+    zin: "Een lichte verkleuring kan hardnekkiger zijn dan een donkere. Wat er te doen valt hangt af van de laag waarin het zit, en dat zie je niet aan de intensiteit.",
+  },
+  {
+    kop: "Of het weggaat",
+    zin: "Twee mensen met dezelfde kleur op dezelfde plek kunnen een heel ander verloop hebben. Wie op kleur alleen een uitkomst belooft, gokt.",
+  },
+  {
+    kop: "Hoe lang het er al zit",
+    zin: "Vers en oud zien er vaak hetzelfde uit, terwijl dat verschil juist bepaalt wat er nog beweegt. Daarom vragen we ernaar en kijken we er niet alleen naar.",
+  },
+] as const;
+
+/** De enige regel op deze pagina die over veiligheid gaat. [MEDISCHE-CHECK-ROJDA] */
+export const KLEUR_ALARM = {
+  kop: "Eén ding telt zwaarder dan de kleur",
+  zin: "Verandert een plek van vorm, kleur of grootte, jeukt of bloedt hij, of is hij er in korte tijd bij gekomen? Dan doet de kleur er niet toe en hoort hij bij de huisarts. Dat geldt voor bruin, rood, wit en blauw evengoed.",
+} as const;
+
 export const VERKLEURING_FAQ = [
   {
     vraag: "Wat als ik meerdere kleuren tegelijk heb?",

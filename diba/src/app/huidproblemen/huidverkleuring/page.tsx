@@ -5,7 +5,13 @@ import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { VERKLEURING_FAQ } from "@/data/huidverkleuring";
+import {
+  KLEUREN,
+  KLEUR_ALARM,
+  KLEUR_ZEGT_NIET,
+  VERKLEURING_FAQ,
+} from "@/data/huidverkleuring";
+import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
@@ -20,6 +26,25 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * zou tekst zijn over een aandoening die hier niet bestaat. Hij sorteert, en dan ben je
  * ergens anders. Dat is ook de reden dat hij kort is; een langere versie zou een dunne
  * doorslagpagina worden van de vier waar hij naartoe wijst.
+ *
+ * WAT ERBIJ MOCHT, EN WAAROM JUIST DIT.
+ *
+ * Die redenering klopt en houdt de pagina kort, maar hij liet drie dingen weg die alleen
+ * hier thuishoren en dus nergens anders gedekt worden.
+ *
+ * 1. Het volledige overzicht. De kleurwijzer laat één kleur tegelijk zien, dus je zag een
+ *    kwart van de kaart en moest vier keer klikken om te weten of jouw geval erbij stond.
+ *    Dat is precies het werk dat een wegwijzer je uit handen hoort te nemen. Twaalf routes
+ *    over vier kleuren, in één blik.
+ * 2. Wat de kleur níet zegt. Dit was de enige huidprobleempagina zonder tegenkolom, en
+ *    juist hier is die nodig: een pagina die je op kleur laat kiezen wekt de indruk dat
+ *    kleur het antwoord is. Kleur is de eerste vraag, niet de laatste.
+ * 3. De alarmregel. Een plek die verandert hoort bij de huisarts, ongeacht de kleur. Dat
+ *    stond weggestopt als vierde vraag in de FAQ. Het geldt voor alle vier de kleuren en
+ *    kan daarom op geen van de vier doelpagina's staan; het hoort hier.
+ *
+ * Geen van drieën is een doorslag van pigmentvlekken, melasma, rosacea of littekens. Ze
+ * gaan over het sorteren zelf, en dat is wat deze pagina is.
  */
 
 export const metadata: Metadata = {
@@ -95,6 +120,105 @@ export default function HuidverkleuringPage() {
             intro="Je hoeft geen term te kennen om te kiezen. Kijk bij daglicht, houd je onderarm ernaast als vergelijking, en tik de kleur aan die het dichtst komt."
           />
           <Kleurwijzer />
+        </div>
+      </section>
+
+      {/* ── Alle routes in één blik ──
+          De kleurwijzer laat er één tegelijk zien. Wie zijn eigen geval zoekt moest dus
+          vier keer klikken om te weten of het er tussen stond, en dat is precies het werk
+          dat een wegwijzer je uit handen hoort te nemen. */}
+      <section
+        id="overzicht"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="Alles op een rij"
+            kop="Twaalf routes,"
+            accent="vier kleuren."
+            intro="Hierboven zie je er één kleur van tegelijk. Hier staan ze allemaal, zodat je kunt scannen in plaats van klikken. Herken je je eigen geval in geen enkele regel, dan is dat ook informatie."
+          />
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 sm:items-start xl:grid-cols-4">
+            {KLEUREN.map((k) => (
+              <div
+                key={k.id}
+                className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
+              >
+                <div className="flex items-center gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="block h-4 w-4 shrink-0 rounded-[var(--r-pill)]"
+                    style={{ background: k.staal }}
+                  />
+                  <p className="diba-card-title text-[var(--t-strong)]">
+                    {k.naam}
+                  </p>
+                </div>
+                <p className="mt-3 text-[14px] leading-6 text-[var(--t-muted)]">
+                  {k.vraag}
+                </p>
+                <ul className="mt-5 space-y-2">
+                  {k.routes.map((r) => (
+                    <li key={r.naam + r.pad}>
+                      <Link
+                        href={r.pad}
+                        className="block rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                      >
+                        <span className="block text-[15px] leading-6 font-medium text-[var(--t-strong)]">
+                          {r.naam}
+                        </span>
+                        <span className="mt-1 block text-[14px] leading-6 text-[var(--t-body)]">
+                          {r.wanneer}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Wat de kleur niet zegt ──
+          Deze pagina was de enige huidprobleempagina zonder tegenkolom, en juist een
+          pagina die je op kleur laat sorteren wekt de indruk dat kleur het antwoord is. */}
+      <section className="bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+        <div className="mx-auto">
+          <SectieKop
+            label="De grens van deze pagina"
+            kop="Wat de kleur"
+            accent="niet zegt."
+            intro="De kleur is de eerste vraag en niet de laatste. Hij wijst de richting aan; wat er in die richting mogelijk is hangt af van dingen die je aan de buitenkant niet ziet."
+          />
+
+          <ul className="mt-12 grid gap-4 lg:grid-cols-3 lg:items-start">
+            {KLEUR_ZEGT_NIET.map((n) => (
+              <li
+                key={n.kop}
+                className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
+              >
+                <p className="diba-card-title text-[var(--t-strong)]">
+                  {n.kop}
+                </p>
+                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                  {n.zin}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          {/* De enige regel op deze pagina die over veiligheid gaat. Apart, want tussen
+              de andere drie zou hij wegvallen, en hij geldt voor alle vier de kleuren. */}
+          <div className="mt-6 rounded-[var(--r-lg)] bg-[var(--g-075)] p-6 sm:p-8">
+            <p className="diba-card-title text-[var(--t-strong)]">
+              {KLEUR_ALARM.kop}
+            </p>
+            <p className="mt-4 max-w-[76ch] text-[17px] leading-8 text-[var(--t-body)]">
+              {publicCopy(KLEUR_ALARM.zin)}
+            </p>
+          </div>
         </div>
       </section>
 
