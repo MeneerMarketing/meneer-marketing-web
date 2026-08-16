@@ -22,6 +22,19 @@ import { DIBA_SITE_URL } from "@/lib/site";
  * draait, en op elke behandelpagina staat op welk apparaat die behandeling gaat. Beide
  * komen uit dezelfde tabel in `apparatuur.ts`.
  *
+ * WAT ERBIJ IS GEKOMEN.
+ *
+ * Twee vragen die iemand op zo een pagina heeft en die hier niet beantwoord werden.
+ *
+ * De eerste: waarom dit apparaat en niet dat andere. Er staan er twaalf op deze site en
+ * meerdere doen hetzelfde soort werk. Twee microneedlingpennen, vier apparaten die met
+ * licht werken. Wie op de SkinPen belandt wil weten waarom het niet de Dermapen wordt, en
+ * dat is precies wat een folder nooit vertelt. Zie `verschilMet` in de apparatuurdata.
+ *
+ * De tweede: waar het bij helpt. Deze pagina wees door naar behandelingen, en die wijzen
+ * door naar huidproblemen, maar de stap van apparaat naar probleem was er niet. Die wordt
+ * nu afgeleid uit de behandelingen die erop draaien, dus er valt niets uit de pas te lopen.
+ *
  * Eén donkergroen vlak: het nietblok (§5).
  */
 
@@ -48,6 +61,25 @@ export default async function ApparaatPage({ params }: PageProps) {
   const behandelingen = a.behandelingen
     .map((s) => behandelingVoorSlug(s))
     .filter((b): b is NonNullable<typeof b> => Boolean(b));
+
+  /* Waar dit apparaat bij helpt: afgeleid uit de behandelingen die erop draaien, niet
+     apart bijgehouden. Een tweede lijst zou uiteenlopen zodra er één behandeling
+     bijkomt, en dan wijst het apparaat naar een probleem waar het niets meer mee doet. */
+  const problemen = [
+    ...new Map(
+      behandelingen
+        .flatMap((b) => b.bijProblemen ?? [])
+        .filter((p) => p.href.startsWith("/huidproblemen/"))
+        .map((p) => [p.href, p]),
+    ).values(),
+  ];
+
+  /* De apparaten waar dit apparaat het meest op lijkt, met de naam erbij. */
+  const buren = (a.verschilMet ?? [])
+    .map((v) => ({ ...v, ander: apparaatVoorSlug(v.apparaat) }))
+    .filter((v): v is typeof v & { ander: NonNullable<typeof v.ander> } =>
+      Boolean(v.ander),
+    );
 
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
@@ -196,6 +228,91 @@ export default async function ApparaatPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* ── Waarom dit en niet dat ──
+          Er staan twaalf apparaten op deze site en meerdere doen hetzelfde soort werk.
+          Wie hier belandt wil weten waarom hij dit apparaat zou krijgen en niet de buur
+          ernaast, en dat is precies wat een merkfolder niet vertelt. */}
+      {buren.length ? (
+        <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+          <div className="mx-auto">
+            <div className="max-w-[62ch]">
+              <Label>Waarom dit apparaat</Label>
+              <h2 className="diba-display-m mt-4 max-w-[20ch]">
+                Wat er anders is
+                <br />
+                <span className="diba-accent">dan de buren.</span>
+              </h2>
+              <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+                Meerdere apparaten hier doen op het oog hetzelfde. Welke je
+                krijgt hangt af van je huid en van wat er gemeten is, en niet
+                van welke naam het beste klinkt. Dit is het verschil, zonder
+                omweg.
+              </p>
+            </div>
+
+            <ul className="mt-12 grid gap-4 lg:grid-cols-3 lg:items-start">
+              {buren.map((v) => (
+                <li
+                  key={v.apparaat}
+                  className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
+                >
+                  <Label>Tegenover</Label>
+                  <p className="diba-card-title mt-2 text-[var(--t-strong)]">
+                    {v.ander.naam}
+                  </p>
+                  <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                    {publicCopy(v.verschil)}
+                  </p>
+                  <Link
+                    href={`/apparatuur/${v.ander.slug}`}
+                    className="diba-label mt-5 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                  >
+                    Naar de {v.ander.naam}
+                    <span aria-hidden="true">›</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Waar het bij helpt ──
+          De stap van apparaat naar huidprobleem ontbrak: je kon van hier naar een
+          behandeling en van daar naar een probleem, maar niet in één keer. Afgeleid uit
+          de behandelingen, zodat er geen tweede lijst is die kan gaan afwijken. */}
+      {problemen.length ? (
+        <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+          <div className="mx-auto">
+            <div className="max-w-[62ch]">
+              <Label>Waar het bij helpt</Label>
+              <h2 className="diba-display-m mt-4 max-w-[20ch]">
+                De problemen waar
+                <br />
+                <span className="diba-accent">dit apparaat bij past.</span>
+              </h2>
+              <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+                Passen is niet hetzelfde als oplossen. Op elke pagina hieronder
+                staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+              </p>
+            </div>
+
+            <ul className="mt-10 flex flex-wrap gap-3">
+              {problemen.map((p) => (
+                <li key={p.href}>
+                  <Link
+                    href={p.href}
+                    className="inline-flex min-h-12 items-center rounded-[var(--r-pill)] bg-white px-5 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  >
+                    {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {/* ── Afsluiter ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">

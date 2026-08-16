@@ -104,6 +104,23 @@ export type Apparaat = {
   readonly doelwit: Doelwit;
   /** Tot hoe diep het komt, als percentage van de doorsnede. */
   readonly diepte: number;
+  /**
+   * Waarin dit apparaat verschilt van de apparaten die er het meest op lijken.
+   *
+   * Twaalf apparaten waarvan er meerdere hetzelfde soort werk doen, en nergens stond
+   * waarom je de ene zou krijgen en niet de andere. Dat is precies de vraag van iemand
+   * die op zo een pagina belandt, en het is ook de vraag die een folder nooit
+   * beantwoordt: die noemt alleen wat er staat en niet waarom.
+   *
+   * Alleen ingevuld waar er echt een vergelijkbare buur is. Een apparaat dat het enige
+   * in zijn soort is krijgt niets, en dan verdwijnt de sectie in plaats van als lege
+   * kop te blijven staan. [MEDISCHE-CHECK-ROJDA]
+   */
+  readonly verschilMet?: readonly {
+    readonly apparaat: string;
+    readonly verschil: string;
+  }[];
+
   /** Drie fasen van wat er gebeurt, in volgorde. [MEDISCHE-CHECK-ROJDA] */
   readonly fasen: readonly { readonly kop: string; readonly zin: string }[];
 };
@@ -181,6 +198,23 @@ export const APPARATUUR: readonly Apparaat[] = [
         zin: "De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.",
       },
     ],
+    verschilMet: [
+      {
+        apparaat: "gentle-laser-pro-u",
+        verschil:
+          "Mikt op melanine en dus op de haarwortel. De Fotona mikt op water en dus op weefsel: een ander doelwit met een ander gevolg.",
+      },
+      {
+        apparaat: "nordlys-ipl",
+        verschil:
+          "Stuurt een bundel golflengtes tegelijk en komt minder diep. De Fotona werkt met één golflengte per stand en gaat door tot in de diepe lederhuid.",
+      },
+      {
+        apparaat: "lumi-8",
+        verschil:
+          "Geeft licht zonder doelwit en dus zonder warmte die iets afbreekt. De Fotona doet precies dat wel.",
+      },
+    ],
   },
   {
     slug: "gentle-laser-pro-u",
@@ -216,6 +250,23 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         kop: "Alleen wat groeit",
         zin: "Alleen haren die op dat moment groeien worden geraakt. Daarom is het altijd een reeks.",
+      },
+    ],
+    verschilMet: [
+      {
+        apparaat: "fotona",
+        verschil:
+          "Mikt op water en werkt op weefsel. Deze laser mikt op melanine, en dat is waarom hij de haarwortel raakt en de huid eromheen niet.",
+      },
+      {
+        apparaat: "nordlys-ipl",
+        verschil:
+          "Is geen laser maar een lamp met een bundel golflengtes. Dat werkt minder gericht op de haarwortel en komt minder diep.",
+      },
+      {
+        apparaat: "lumi-8",
+        verschil:
+          "Bouwt geen warmte op en doet dus niets aan haar. Een andere categorie, geen zwakkere versie.",
       },
     ],
   },
@@ -255,6 +306,23 @@ export const APPARATUUR: readonly Apparaat[] = [
         zin: "Gemiddeld komt het minder diep dan een laser. Dat is soms precies wat je wil.",
       },
     ],
+    verschilMet: [
+      {
+        apparaat: "fotona",
+        verschil:
+          "Eén golflengte per stand, tot diep in de lederhuid. De Nordlys werkt breder en oppervlakkiger, en dat past bij vaatjes en pigment die vlak onder de huid zitten.",
+      },
+      {
+        apparaat: "gentle-laser-pro-u",
+        verschil:
+          "Eén golflengte, gericht op de haarwortel. Daar is de Nordlys minder geschikt voor, en op roodheid juist wel.",
+      },
+      {
+        apparaat: "lumi-8",
+        verschil:
+          "Geen doelwit en geen warmte. De Nordlys mikt wel degelijk op iets, namelijk het rood in bloed.",
+      },
+    ],
   },
   {
     slug: "lumi-8",
@@ -290,6 +358,23 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         kop: "Geen hersteltijd",
         zin: "Er wordt niets beschadigd, dus er valt ook niets te herstellen.",
+      },
+    ],
+    verschilMet: [
+      {
+        apparaat: "nordlys-ipl",
+        verschil:
+          "Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 doet geen van beide, en heeft daarom ook geen hersteltijd.",
+      },
+      {
+        apparaat: "fotona",
+        verschil:
+          "Breekt weefsel af om herstel uit te lokken. De Lumi 8 breekt niets af, en dat is meteen zijn grens.",
+      },
+      {
+        apparaat: "coolifting",
+        verschil:
+          "Werkt ook zonder naalden en zonder hersteltijd, maar met kou en druk in plaats van licht.",
       },
     ],
   },
@@ -329,6 +414,18 @@ export const APPARATUUR: readonly Apparaat[] = [
         zin: "Daarna gaan er werkzame stoffen in dezelfde beweging weer in.",
       },
     ],
+    verschilMet: [
+      {
+        apparaat: "peelinglijnen",
+        verschil:
+          "Gaat dieper en vraagt hersteltijd. De HydraFacial blijft in de hoornlaag, en daar loop je zo weer mee de deur uit.",
+      },
+      {
+        apparaat: "dermaplane-pro",
+        verschil:
+          "Schraapt alleen. De HydraFacial maakt los, zuigt weg en brengt tegelijk iets in.",
+      },
+    ],
   },
   {
     slug: "skinpen-cit",
@@ -364,6 +461,18 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         kop: "Herstel is het werk",
         zin: "De prikjes zijn de aanleiding. Wat je ziet komt weken later, van de opbouw.",
+      },
+    ],
+    verschilMet: [
+      {
+        apparaat: "dermapen-4",
+        verschil:
+          "Doet hetzelfde: kanaaltjes maken zodat je huid zelf herstelt. Het verschil zit in het apparaat en niet in het principe, en welke van de twee past hangt af van je huid en de zone.",
+      },
+      {
+        apparaat: "u225",
+        verschil:
+          "Prikt ook, maar om iets achter te laten. De SkinPen laat niets achter en werkt met de prikkel alleen.",
       },
     ],
   },
@@ -403,6 +512,18 @@ export const APPARATUUR: readonly Apparaat[] = [
         zin: "De aanmaak komt op gang in de dagen erna, niet tijdens de behandeling.",
       },
     ],
+    verschilMet: [
+      {
+        apparaat: "skinpen-cit",
+        verschil:
+          "Doet hetzelfde: kanaaltjes maken zodat je huid zelf herstelt. Het verschil zit in het apparaat en niet in het principe, en welke van de twee past hangt af van je huid en de zone.",
+      },
+      {
+        apparaat: "u225",
+        verschil:
+          "Prikt ook, maar brengt er werkzame stoffen mee naar binnen. De Dermapen werkt met de prikkel alleen.",
+      },
+    ],
   },
   {
     slug: "u225",
@@ -438,6 +559,18 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         kop: "Verspreiden",
         zin: "Het middel verdeelt zich in de laag waar het werk moet gebeuren.",
+      },
+    ],
+    verschilMet: [
+      {
+        apparaat: "skinpen-cit",
+        verschil:
+          "Prikt om de huid te prikkelen en laat niets achter. De U225 brengt er juist iets in.",
+      },
+      {
+        apparaat: "dermapen-4",
+        verschil:
+          "Zelfde onderscheid: prikkel tegenover toediening. Wie stoffen op diepte wil, komt bij de U225 uit.",
       },
     ],
   },
@@ -477,6 +610,18 @@ export const APPARATUUR: readonly Apparaat[] = [
         zin: "De druk brengt hyaluronzuur en peptiden mee naar binnen.",
       },
     ],
+    verschilMet: [
+      {
+        apparaat: "lumi-8",
+        verschil:
+          "Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk.",
+      },
+      {
+        apparaat: "u225",
+        verschil:
+          "Brengt stoffen in de huid met een naald. De CooLifting duwt ze er zonder naald tegenaan, en komt dus minder ver.",
+      },
+    ],
   },
   {
     slug: "dermaplane-pro",
@@ -514,6 +659,18 @@ export const APPARATUUR: readonly Apparaat[] = [
         zin: "Er komt geen chemie aan te pas, dus ook een gevoelige huid verdraagt het.",
       },
     ],
+    verschilMet: [
+      {
+        apparaat: "peelinglijnen",
+        verschil:
+          "Lost de bovenste laag chemisch op. Dermaplaning schraapt hem af, en dat scheelt zowel in gevoel als in hersteltijd.",
+      },
+      {
+        apparaat: "hydrafacial-syndeo",
+        verschil:
+          "Combineert losmaken met zuigen en inbrengen. Dermaplaning doet alleen het eerste, en komt daarmee het minst diep van de drie.",
+      },
+    ],
   },
   {
     slug: "peelinglijnen",
@@ -549,6 +706,18 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         kop: "Vervellen",
         zin: "De losgemaakte laag komt er in dagen af en wordt sneller vervangen.",
+      },
+    ],
+    verschilMet: [
+      {
+        apparaat: "dermaplane-pro",
+        verschil:
+          "Schraapt de bovenste laag af met een mesje. Een peeling lost hem op, en kan afhankelijk van de lijn dieper komen.",
+      },
+      {
+        apparaat: "hydrafacial-syndeo",
+        verschil:
+          "Werkt met een milde zuur- en zuigcombinatie zonder hersteltijd. Een peeling gaat verder en vraagt er dus ook meer voor terug.",
       },
     ],
   },
