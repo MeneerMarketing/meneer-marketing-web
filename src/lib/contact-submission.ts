@@ -10,6 +10,7 @@ export const FORM_SOURCES = [
   "schaal-op",
   "pilates-studios",
   "huidklinieken",
+  "meter",
 ] as const;
 
 export type FormSource = (typeof FORM_SOURCES)[number];

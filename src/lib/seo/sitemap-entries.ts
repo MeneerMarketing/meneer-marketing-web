@@ -45,6 +45,11 @@ const STATIC_INDEXABLE_PATHS = [
     priority: 0.88,
     changeFrequency: "monthly" as const,
   },
+  {
+    path: "/meter",
+    priority: 0.9,
+    changeFrequency: "weekly" as const,
+  },
   { path: "/weetjes", priority: 0.8, changeFrequency: "monthly" as const },
   {
     path: "/privacybeleid",
@@ -71,6 +76,7 @@ const SITE_LAST_MOD = new Date("2026-08-09");
 const PATH_LAST_MOD: Readonly<Record<string, Date>> = {
   "/pilates-studios": new Date("2026-08-12"),
   "/huidklinieken": new Date("2026-08-14"),
+  "/meter": new Date("2026-08-17"),
 };
 
 const NOINDEX_PATH_SET = new Set<string>(NOINDEX_PATHS);
