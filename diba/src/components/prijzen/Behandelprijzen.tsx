@@ -35,13 +35,12 @@ import { publicCopy } from "@/lib/copy-flags";
  * Het bedrag staat altijd in beeld, ook dicht. Dat is de hele belofte van deze pagina en
  * die mag niet achter een klik verdwijnen.
  *
- * WAT ER NIET STAAT.
+ * HOE LANG HET DUURT.
  *
- * Hoe lang een afspraak duurt. Dat is gevraagd en het staat nergens in de data; het is
- * operationele informatie die alleen de kliniek heeft. Een getal verzinnen bij een
- * afspraak die iemand inplant is precies het soort gok dat deze site niet maakt.
- * [GEGEVEN-NODIG] duur per behandeling, in minuten. Zodra dat er is hoort het hier bij de
- * hersteltijd en de sessies te staan.
+ * Dat stond hier eerst niet, want het stond nergens in de data. Inmiddels wel: zie
+ * `duurMinuten` in de behandelingentabel. Het staat naast de hersteltijd, want dat zijn
+ * de twee vragen die samen bepalen of je er een ochtend voor vrij moet nemen.
+ * [GEGEVEN-NODIG: bevestiging van de behandelduur, Okan]
  */
 
 /** Alleen categorieën waar ook echt iets in zit. */
@@ -65,6 +64,7 @@ function Regel({
   const heeftDetail =
     Boolean(b.herstel) ||
     Boolean(b.sessies) ||
+    Boolean(b.duurMinuten) ||
     (b.varianten?.length ?? 0) > 0 ||
     (b.wel?.length ?? 0) > 0;
 
@@ -102,7 +102,17 @@ function Regel({
 
       {open && heeftDetail ? (
         <div className="px-5 pb-5">
-          <dl className="grid gap-x-8 gap-y-4 rounded-[var(--r-sm)] bg-white p-5 sm:grid-cols-2">
+          <dl className="grid gap-x-8 gap-y-4 rounded-[var(--r-sm)] bg-white p-5 sm:grid-cols-3">
+            {b.duurMinuten ? (
+              <div>
+                <dt className="diba-label text-[var(--t-label)]">
+                  Hoe lang je hier bent
+                </dt>
+                <dd className="mt-1 text-[15px] leading-7 text-[var(--t-body)] tabular-nums">
+                  {b.duurMinuten} minuten
+                </dd>
+              </div>
+            ) : null}
             {b.sessies ? (
               <div>
                 <dt className="diba-label text-[var(--t-label)]">Hoe vaak</dt>

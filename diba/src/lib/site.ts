@@ -41,6 +41,38 @@ export const DIBA_SALONIZED_BOOKING_URL =
 /** Instagram URL — [GEGEVEN-NODIG] */
 export const DIBA_INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "";
 
+/**
+ * Openingstijden.
+ *
+ * VOORLOPIG. Deze tijden zijn een werkbaar voorstel en niet door de kliniek bevestigd.
+ * Ze staan hier omdat een kliniek zonder openingstijden geen kliniek is: het is het
+ * meest opgezochte gegeven op een contactpagina, het hoort in het bedrijfsschema voor
+ * Google, en zonder tijden kon de pagina er ook niet omheen ontworpen worden.
+ *
+ * Wijzig ze op deze ene plek. Ze voeden de contactpagina, de voettekst en het
+ * LocalBusiness-schema tegelijk; wie ze op één van die drie aanpast krijgt drie
+ * verschillende antwoorden op dezelfde vraag.
+ *
+ * `dag` volgt de schema.org-notatie, want daar gaan ze uiteindelijk heen.
+ * [GEGEVEN-NODIG: de echte openingstijden, Okan]
+ */
+export const DIBA_OPENINGSTIJDEN = [
+  { dag: "Monday", label: "Maandag", van: "09:00", tot: "17:30" },
+  { dag: "Tuesday", label: "Dinsdag", van: "09:00", tot: "21:00" },
+  { dag: "Wednesday", label: "Woensdag", van: "09:00", tot: "17:30" },
+  { dag: "Thursday", label: "Donderdag", van: "09:00", tot: "21:00" },
+  { dag: "Friday", label: "Vrijdag", van: "09:00", tot: "17:30" },
+  { dag: "Saturday", label: "Zaterdag", van: "10:00", tot: "16:00" },
+  { dag: "Sunday", label: "Zondag", van: null, tot: null },
+] as const;
+
+/** Hoe snel je antwoord krijgt, per kanaal. [GEGEVEN-NODIG: bevestiging, Okan] */
+export const DIBA_REACTIETIJDEN = {
+  telefoon: "Tijdens openingstijden direct. Staat er niemand vrij, dan bellen we dezelfde dag terug.",
+  whatsapp: "Meestal binnen een paar uur op een werkdag, en altijd binnen één werkdag.",
+  email: "Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller.",
+} as const;
+
 /** NAP voor footer/schema — canoniek adres, geen verzonnen telefoon/KvK */
 export const DIBA_NAP = {
   name: DIBA_SITE.name,

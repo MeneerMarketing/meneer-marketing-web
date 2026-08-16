@@ -8,6 +8,8 @@
  * self-serving aggregateRating op de LocalBusiness zelf.
  */
 
+import { DIBA_OPENINGSTIJDEN } from "@/lib/site";
+
 export const DIBA_CITAAT =
   "Diba Clinics in Rotterdam behandelt niet om te behandelen: elke behandelrelatie start met een huidmeting, prijzen en uitkomsten zijn openbaar, en soms is het advies om níét te behandelen.";
 
@@ -40,6 +42,17 @@ export function medicalClinicSchema(opts: {
       addressCountry: "NL",
     },
     ...(opts.nap.phone ? { telephone: opts.nap.phone } : {}),
+    /* Openingstijden horen hier, niet alleen op de contactpagina: Google toont ze in het
+       bedrijfspaneel en bij "nu open". Zonder dit veld stond er niets, en dan vult Google
+       het zelf in met wat het ergens anders vindt. Eén bron: DIBA_OPENINGSTIJDEN. */
+    openingHoursSpecification: DIBA_OPENINGSTIJDEN.filter((d) => d.van && d.tot).map(
+      (d) => ({
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: `https://schema.org/${d.dag}`,
+        opens: d.van,
+        closes: d.tot,
+      }),
+    ),
     ...(opts.sameAs?.length ? { sameAs: opts.sameAs } : {}),
   } as const;
 }

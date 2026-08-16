@@ -4,10 +4,11 @@ import Ingangkiezer from "@/components/contact/Ingangkiezer";
 import Label from "@/components/ui/Label";
 import { SITUATIES } from "@/data/voorwaarden";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
+  DIBA_OPENINGSTIJDEN,
+  DIBA_SALONIZED_BOOKING_URL,
   DIBA_SITE,
   DIBA_SITE_URL,
   DIBA_TELEFOON,
@@ -53,13 +54,17 @@ import {
  * Diezelfde vier situaties staan hier nu wel, uit dezelfde bron. Ze waren al in de
  * jij-vorm geschreven, dus er valt niets te hertalen en niets te laten afwijken.
  *
- * OPENINGSTIJDEN STAAN ER NOG STEEDS NIET, EN DAT IS EEN ECHT GAT.
+ * OPENINGSTIJDEN.
  *
- * Ze staan nergens in de data en ook niet in het bedrijfsschema, en dat laatste kost
- * zichtbaarheid in Google. Ik verzin ze niet: dit is precies het soort gegeven waar
- * iemand op afreist. Wat er nu staat is wat wél waar is, namelijk dat de agenda toont
- * wanneer er plek is. [GEGEVEN-NODIG: de openingstijden per dag, Okan. Zodra ze er zijn
- * horen ze ook in openingHours van het LocalBusiness-schema.]
+ * Die stonden nergens, ook niet in het bedrijfsschema, en dat laatste kost zichtbaarheid
+ * in Google. Ze staan er nu, uit `DIBA_OPENINGSTIJDEN` in site.ts, en diezelfde bron
+ * voedt het schema. Wijzig ze daar en niet hier, anders geven de pagina en Google twee
+ * verschillende antwoorden op dezelfde vraag.
+ *
+ * De tijden zelf zijn een werkbaar voorstel en niet door de kliniek bevestigd. Er staat
+ * bewust bij dat de agenda actueler is dan het rijtje, want dat blijft waar ook als de
+ * tijden kloppen: binnen openingstijden staat niet elk uur een therapeut vrij.
+ * [GEGEVEN-NODIG: bevestiging van de openingstijden, Okan]
  *
  * Eén donkergroen vlak: het blok over wat er niet op afstand kan (§5).
  */
@@ -191,14 +196,14 @@ export default function ContactPage() {
                 staan terwijl er verderop een sectie over gaat. Twee antwoorden op één
                 vraag op dezelfde pagina; nu verwijst hij ernaar. */}
             <p className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-[14px] leading-6 text-[var(--t-muted)]">
-              Wanneer we er zijn zie je het snelst in de agenda.{" "}
+              Onze openingstijden en de agenda staan verderop.{" "}
               <Link
                 href="#agenda"
                 className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Verderop staat waarom
+                Bekijk ze
               </Link>
-              , en bellen kan altijd.
+              , en bellen kan tijdens die tijden altijd.
             </p>
           </div>
         </div>
@@ -342,16 +347,37 @@ export default function ContactPage() {
             </h2>
           </div>
           <div className="max-w-[58ch]">
-            <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Wat je in de agenda kunt aanklikken, is wat er open is. Dat is
-              actueler dan een rijtje openingstijden op een pagina, want een
-              vrije dag of een volgeboekte middag zie je daar meteen en hier
-              niet.
+            <ul className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7">
+              {DIBA_OPENINGSTIJDEN.map((d, i) => (
+                <li
+                  key={d.dag}
+                  className={`flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] px-4 py-3 text-[16px] leading-6 ${
+                    i % 2 === 1 ? "bg-[var(--g-025)]" : ""
+                  }`}
+                >
+                  <span className="text-[var(--t-strong)]">{d.label}</span>
+                  <span
+                    className={
+                      d.van
+                        ? "text-[var(--t-body)] tabular-nums"
+                        : "text-[var(--t-muted)]"
+                    }
+                  >
+                    {d.van ? `${d.van} tot ${d.tot}` : "Gesloten"}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in
+              de agenda kunt aanklikken is wat er echt open is, en dat is
+              actueler dan dit rijtje: een vrije dag of een volgeboekte middag
+              zie je daar meteen en hier niet.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Kom je liever langs zonder afspraak, bel dan eerst. De deur staat
-              niet de hele dag open en we willen je geen rit voor niets laten
-              maken.
+              Kom je liever langs zonder afspraak, bel dan eerst. We willen je
+              geen rit voor niets laten maken.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

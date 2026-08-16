@@ -3,6 +3,7 @@
 import { useState } from "react";
 import {
   DIBA_EMAIL,
+  DIBA_REACTIETIJDEN,
   DIBA_TELEFOON,
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
@@ -24,7 +25,10 @@ import {
  *
  * Geen formulier. Een contactformulier belooft dat er iets aankomt en zegt niet wanneer
  * er iemand kijkt; de kanalen hieronder zijn van de kliniek zelf en daar is dat wel te
- * zeggen. [GEGEVEN-NODIG: de reactietijden per kanaal, Okan]
+ * zeggen, en dat staat er nu ook: per kanaal hoe snel je antwoord krijgt. Dat is de
+ * tweede vraag na "waar moet ik zijn", en zonder dat antwoord kies je alsnog op gevoel.
+ * De tijden komen uit DIBA_REACTIETIJDEN in site.ts.
+ * [GEGEVEN-NODIG: bevestiging van de reactietijden, Okan]
  */
 
 type Ingang = {
@@ -81,30 +85,38 @@ const INGANGEN: readonly Ingang[] = [
   },
 ];
 
+/* `hoeSnel` hangt aan het kanaal en niet aan de vraag: hoe lang je op een mail wacht is
+   niet afhankelijk van waar die mail over gaat. De tijden staan in site.ts, want ze zijn
+   een afspraak van de kliniek en geen tekst van deze component. */
 const KANALEN = {
   whatsapp: {
     label: "WhatsApp",
     actie: "Stuur een bericht",
     href: DIBA_WHATSAPP_URL,
     extern: true,
+    hoeSnel: DIBA_REACTIETIJDEN.whatsapp,
   },
   bellen: {
     label: "Bellen",
     actie: DIBA_TELEFOON,
     href: DIBA_TELEFOON_HREF,
     extern: false,
+    hoeSnel: DIBA_REACTIETIJDEN.telefoon,
   },
   mail: {
     label: "E-mail",
     actie: DIBA_EMAIL,
     href: `mailto:${DIBA_EMAIL}`,
     extern: false,
+    hoeSnel: DIBA_REACTIETIJDEN.email,
   },
   afspraak: {
     label: "Online plannen",
     actie: "Plan Behandeling Nul",
     href: "/intake",
     extern: false,
+    hoeSnel:
+      "Meteen. Je kiest zelf een moment en de bevestiging komt direct binnen.",
   },
 } as const;
 
@@ -156,6 +168,17 @@ export default function Ingangkiezer() {
 
         <p className="mt-5 max-w-[46ch] text-[16px] leading-8 text-[var(--g-900)]">
           {ingang.waarom}
+        </p>
+
+        {/* Hoe snel je antwoord krijgt. Dat is de tweede vraag na "waar moet ik zijn",
+            en zonder dat antwoord kies je alsnog op gevoel welk kanaal het snelst is. */}
+        <p className="mt-5 max-w-[46ch] rounded-[var(--r-md)] bg-white p-5">
+          <span className="diba-label block text-[var(--t-label)]">
+            Wanneer je antwoord hebt
+          </span>
+          <span className="mt-2 block text-[15px] leading-7 text-[var(--t-body)]">
+            {kanaal.hoeSnel}
+          </span>
         </p>
 
         {/* Wat er via dit kanaal níet kan. Dit is de regel die de meeste tijd bespaart

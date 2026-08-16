@@ -153,6 +153,16 @@ export type CategorieId = (typeof CATEGORIEEN)[number]["id"];
 export type Variant = {
   readonly naam: string;
   readonly prijs: number;
+  /**
+   * Hoe lang je ervoor in de kliniek bent, in minuten.
+   *
+   * Stond nergens, terwijl dit de vraag is die bepaalt of je er een ochtend voor
+   * vrij moet nemen. In minuten en niet als tekst, zodat er later mee te rekenen
+   * valt en de agenda erop kan aansluiten.
+   *
+   * Voorlopige waarden. [GEGEVEN-NODIG: bevestiging van de behandelduur, Okan]
+   */
+  readonly duurMinuten?: number;
   readonly bij?: string;
 };
 
@@ -172,6 +182,16 @@ export type Behandeling = {
   readonly sessies: string;
   /** Laagste gepubliceerde tarief, in hele euro's. */
   readonly prijs: number;
+  /**
+   * Hoe lang je ervoor in de kliniek bent, in minuten.
+   *
+   * Stond nergens, terwijl dit de vraag is die bepaalt of je er een ochtend voor vrij
+   * moet nemen. In minuten en niet als tekst, zodat er later mee te rekenen valt en de
+   * agenda erop kan aansluiten.
+   *
+   * Voorlopige waarden. [GEGEVEN-NODIG: bevestiging van de behandelduur, Okan]
+   */
+  readonly duurMinuten?: number;
   /** De varianten zoals ze op de tarievenlijst staan. */
   readonly varianten?: readonly Variant[];
   readonly wel?: readonly string[];
@@ -241,6 +261,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Ja. Niet omdat het moet van ons, maar omdat een plan zonder beginmeting niet te controleren is. Je weet dan over drie maanden niet of het gewerkt heeft.",
       },
     ],
+    duurMinuten: 45,
   },
 
   /* ── Gezichtsbehandelingen ─────────────────────────────────────────────── */
@@ -254,7 +275,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen. Je kunt er direct mee de deur uit.",
-    sessies: "Los te doen, of maandelijks als onderhoud [GEGEVEN-NODIG]",
+    sessies:
+      "Los te doen, of maandelijks als onderhoud. Een startreeks is meestal drie tot zes. [MEDISCHE-CHECK-ROJDA]",
     prijs: 170,
     varianten: [
       { naam: "Signature", prijs: 170 },
@@ -275,6 +297,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Poriën", href: "/huidproblemen/porien" },
       { label: "Droge huid", href: "/huidproblemen/droge-huid" },
     ],
+    duurMinuten: 60,
   },
   {
     slug: "oxygeneo",
@@ -286,7 +309,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoffen inbrengt, waarbij er in de huid zelf zuurstof vrijkomt. Oppervlakkig werk met direct resultaat. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
-    sessies: "Los of als onderhoud [GEGEVEN-NODIG]",
+    sessies:
+      "Los, of als onderhoud elke vier tot zes weken. [MEDISCHE-CHECK-ROJDA]",
     prijs: 150,
     wel: [
       "Maakt de bovenste laag los en brengt in dezelfde beweging werkzame stoffen in",
@@ -328,6 +352,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Droge huid", href: "/huidproblemen/droge-huid" },
       { label: "Grove poriën", href: "/huidproblemen/porien" },
     ],
+    duurMinuten: 60,
   },
   {
     slug: "dermaplaning",
@@ -338,7 +363,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje, onder een hoek van 45 graden. Er komen geen zuren aan te pas, waardoor het ook kan bij een gevoelige, droge of allergische huid en tijdens de zwangerschap. Het is pijnloos en het resultaat is meteen zichtbaar. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
-    sessies: "Los of als onderhoud [GEGEVEN-NODIG]",
+    sessies:
+      "Los, of elke vier tot zes weken als onderhoud. [MEDISCHE-CHECK-ROJDA]",
     prijs: 150,
     wel: [
       "Geeft direct een gladde, egale huid",
@@ -354,6 +380,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Droge huid", href: "/huidproblemen/droge-huid" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
     ],
+    duurMinuten: 45,
   },
   {
     slug: "coolift",
@@ -365,8 +392,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper. De behandeling duurt vijf minuten. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
-    sessies: "Los, vaak vlak voor een gelegenheid [GEGEVEN-NODIG]",
-    prijs: 0,
+    sessies:
+      "Los, vaak vlak voor een gelegenheid. Als kuur meestal vier tot zes. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 75,
     wel: [
       "Laat je huid binnen vijf minuten strakker aanvoelen door de kou en de druk",
       "Brengt werkzame stoffen mee naar binnen zonder dat er een naald aan te pas komt",
@@ -400,12 +428,13 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Waarom staat er geen prijs bij?",
         antwoord:
-          "Omdat die nog niet is vastgesteld. Zodra hij er is staat hij hier, en niet pas aan de balie.",
+          "Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpagina en niet pas aan de balie. [PRIJS-NODIG: bevestiging van het bedrag]",
       },
     ],
     bijProblemen: [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
     ],
+    duurMinuten: 20,
   },
 
   /* ── Peelings ──────────────────────────────────────────────────────────── */
@@ -420,7 +449,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Een peeling maakt de verbinding tussen de buitenste huidcellen los, zodat die laag sneller wordt vervangen dan hij uit zichzelf zou doen. Hoe ver dat gaat hangt af van het middel en de sterkte: de kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Meestal een reeks, met weken ertussen [GEGEVEN-NODIG]",
+    sessies:
+      "Meestal een reeks van vier tot zes, met twee tot vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 140,
     varianten: [
       { naam: "Mesoestetic peeling", prijs: 140 },
@@ -458,6 +488,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Pigmentvlekken", href: "/huidproblemen/pigmentvlekken" },
       { label: "Poriën", href: "/huidproblemen/porien" },
     ],
+    duurMinuten: 45,
   },
 
   /* ── Microneedling ─────────────────────────────────────────────────────── */
@@ -472,7 +503,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Met fijne naalden worden heel veel kleine kanaaltjes tot in de bovenste lederhuid gemaakt. Daar zit het bindweefsel, en de huid reageert daarop met herstel en collageenaanmaak. Dat herstel is het doel; de prikjes zelf zijn alleen de aanleiding. Daarom duurt het weken voor je iets ziet en niet dagen. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Eén tot drie dagen rood, als een stevige zonnegloed. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Een reeks met weken ertussen [GEGEVEN-NODIG]",
+    sessies:
+      "Een reeks van drie tot zes, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 180,
     varianten: [
       { naam: "Gezicht", prijs: 180 },
@@ -509,6 +541,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Poriën", href: "/huidproblemen/porien" },
     ],
+    duurMinuten: 75,
   },
   {
     slug: "dermapen-4",
@@ -520,7 +553,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "Een microneedlingapparaat dat met minuscule, trillende naaldjes microscopisch kleine kanaaltjes in de huid maakt om het natuurlijke herstelproces te stimuleren. Dat stimuleert de collageenaanmaak, waardoor de huid steviger, gladder en egaler wordt. Werkt op fijne lijntjes, acnelittekens, grove poriën en een doffe huid. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Eén tot drie dagen rood. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Een reeks met weken ertussen [GEGEVEN-NODIG]",
+    sessies:
+      "Een reeks van drie tot zes, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 180,
     varianten: [
       { naam: "Gezicht", prijs: 180 },
@@ -568,6 +602,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.",
       },
     ],
+    duurMinuten: 75,
   },
 
   /* ── Skinboosters ──────────────────────────────────────────────────────── */
@@ -582,7 +617,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Kort rood en soms kleine bultjes, meestal binnen een dag weg. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Vaak een kuur van drie [GEGEVEN-NODIG]",
+    sessies:
+      "Vaak een kuur van drie, met twee tot vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 175,
     varianten: [
       { naam: "Skinbooster los", prijs: 180 },
@@ -632,6 +668,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevoeliger dan op de wang.",
       },
     ],
+    duurMinuten: 45,
   },
 
   /* ── Laser en licht ────────────────────────────────────────────────────── */
@@ -646,7 +683,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Naarmate de huid veroudert wordt die slapper en minder elastisch. De Fotona TimeWalker pakt dat aan met verschillende gespecialiseerde laserbehandelingen die elk op één probleem mikken: 4D Lift voor een complete lifting van binnen én buiten, VectorLift voor de wenkbrauw- en oogregio, SmoothEye voor de oogcontour en LipLase voor lipvolume. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Los of als kuur van drie [GEGEVEN-NODIG]",
+    sessies:
+      "Los of als kuur van drie, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 150,
     varianten: [
       { naam: "SmoothEye", prijs: 150 },
@@ -699,6 +737,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we niet kunnen onderbouwen. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
+    duurMinuten: 75,
   },
   {
     slug: "nordlys-ipl",
@@ -710,7 +749,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms precies wat je wil. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Meestal een paar uur rood. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Een reeks [GEGEVEN-NODIG]",
+    sessies:
+      "Een reeks van drie tot zes, met vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 75,
     varianten: [
       { naam: "Neus", prijs: 75 },
@@ -732,6 +772,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Rosacea", href: "/huidproblemen/rosacea" },
       { label: "Pigmentvlekken", href: "/huidproblemen/pigmentvlekken" },
     ],
+    duurMinuten: 45,
   },
   {
     slug: "lumi-8-led",
@@ -782,6 +823,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het als toevoeging tot zijn recht komt.",
       },
     ],
+    duurMinuten: 20,
   },
 
   /* ── Pigmenttrajecten ──────────────────────────────────────────────────── */
@@ -817,6 +859,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Loopt door thuis, want het grootste deel van dit traject gebeurt buiten de kliniek",
       "Werkt op melasma, dat bekendstaat als het lastigste soort pigment om rustig te krijgen [MEDISCHE-CHECK-ROJDA]",
     ],
+    duurMinuten: 60,
   },
   {
     slug: "happy-intim",
@@ -876,6 +919,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
+    duurMinuten: 45,
   },
 
   /* ── Laserontharing ────────────────────────────────────────────────────── */
@@ -891,7 +935,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     herstel:
       "Een paar uur rood, soms bultjes rond de haarzakjes. [MEDISCHE-CHECK-ROJDA]",
     sessies:
-      "Altijd een reeks. Het aantal hangt af van zone en huidtype [GEGEVEN-NODIG]",
+      "Altijd een reeks, meestal zes tot tien. Het aantal hangt af van zone en huidtype. [MEDISCHE-CHECK-ROJDA]",
     prijs: 20,
     wel: [
       "Werkt op haargroei op vrijwel elke zone",
@@ -907,6 +951,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Alle zones en prijzen", href: "/laserontharing/configurator" },
       { label: "Over laserontharing", href: "/laserontharing" },
     ],
+    duurMinuten: 30,
   },
 
   /* ── Overig ────────────────────────────────────────────────────────────── */
@@ -965,6 +1010,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       },
     ],
     bijProblemen: [{ label: "Alle huidproblemen", href: "/huidproblemen" }],
+    duurMinuten: 45,
   },
   {
     slug: "acne-traject",
@@ -974,9 +1020,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Een begeleid traject voor acne, met producten en controles.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
-      "Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en geen moment. [COPY-NODIG: opbouw van het traject] [MEDISCHE-CHECK-ROJDA]",
+      "Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en geen moment. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat je zelf volhoudt. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Wisselt per fase van het traject. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Een traject [GEGEVEN-NODIG]",
+    sessies:
+      "Een traject van drie tot zes maanden, met een controle om de vier tot zes weken. [MEDISCHE-CHECK-ROJDA]",
     prijs: 570,
     bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
     wel: [
@@ -1012,9 +1059,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Zit alles in de prijs?",
         antwoord:
-          "De opbouw van dit traject wordt nog vastgelegd, inclusief wat er wel en niet in zit. [COPY-NODIG: wat er in het trajecttarief zit]",
+          "In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de prijzenpagina. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
+    duurMinuten: 60,
   },
   {
     slug: "jongeren-acne-traject",
@@ -1026,7 +1074,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een medisch onderbouwd programma van drie maanden met begeleiding, opgezet voor jongeren van achttien jaar en jonger. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Wisselt per fase van het traject. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Drie maanden met begeleiding",
-    prijs: 0,
+    prijs: 450,
     bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
     wel: [
       "Is opgezet voor achttien jaar en jonger, met een programma van drie maanden [MEDISCHE-CHECK-ROJDA]",
@@ -1056,7 +1104,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Waarom staat er geen prijs?",
         antwoord:
-          "Omdat die nog niet is vastgesteld. We zetten liever niets neer dan een bedrag dat later verandert. [PRIJS-NODIG]",
+          "Het traject van drie maanden staat als één bedrag op de prijzenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie. [PRIJS-NODIG: bevestiging van het bedrag]",
       },
       {
         vraag: "Moet mijn ouder mee?",
@@ -1064,6 +1112,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Ja. Onder de achttien is toestemming van een ouder of verzorger nodig, en bij de intake willen we die er ook bij hebben.",
       },
     ],
+    duurMinuten: 60,
   },
   {
     slug: "littekentherapie",
@@ -1074,7 +1123,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "Littekens van een operatie reageren anders dan littekens van acne: ze zijn langer, dieper en vaak jonger. De behandeling en het aantal sessies hangen af van hoe oud het litteken is en waar het zit. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Wisselt per techniek. [MEDISCHE-CHECK-ROJDA]",
-    sessies: "Meestal een reeks [GEGEVEN-NODIG]",
+    sessies:
+      "Meestal een reeks van drie tot zes, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 100,
     varianten: [
       { naam: "Litteken 5 tot 10 cm", prijs: 100 },
@@ -1123,6 +1173,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van de lengte en de leeftijd van het litteken, en het staat er daarom niet als getal. [GEGEVEN-NODIG] aantal sessies per littekentype",
       },
     ],
+    duurMinuten: 45,
   },
   {
     slug: "fibromen",
@@ -1178,6 +1229,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
         href: "/huidproblemen/moedervlekken",
       },
     ],
+    duurMinuten: 15,
   },
   {
     slug: "voedingsintolerantietest",
@@ -1230,6 +1282,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Acne", href: "/huidproblemen/acne" },
       { label: "Rosacea", href: "/huidproblemen/rosacea" },
     ],
+    duurMinuten: 20,
   },
 ];
 

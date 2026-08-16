@@ -161,31 +161,37 @@ export default async function BehandelingPage({ params }: PageProps) {
           {/* De drie getallen die het verschil maken, meteen in beeld. */}
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>In het kort</Label>
-            <dl className="mt-6 space-y-4">
-              <div className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4">
-                <dt className="diba-label diba-label-on-dark shrink-0">
-                  Hoe diep
-                </dt>
-                <dd className="diba-card-title text-right">
-                  {diepsteLaag ? diepsteLaag.naam : "Raakt niets"}
-                </dd>
-              </div>
-              <div className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4">
-                <dt className="diba-label diba-label-on-dark shrink-0">
-                  Herstel
-                </dt>
-                <dd className="diba-card-title text-right">
-                  {publicCopy(b.herstel)}
-                </dd>
-              </div>
-              <div className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4">
-                <dt className="diba-label diba-label-on-dark shrink-0">
-                  Hoe vaak
-                </dt>
-                <dd className="diba-card-title text-right">
-                  {publicCopy(b.sessies, "Nog niet vastgesteld")}
-                </dd>
-              </div>
+            {/* Vier regels op een eigen vlak in plaats van achter een haarlijn: de
+                huisregel is vullingen, en op --g-800 haalt de tekst 7,57 tegen 4,08 op
+                een doorschijnend wit vlak. "Hoe lang" is er nieuw bij; dat is de vraag
+                die bepaalt of je er vrij voor moet nemen. */}
+            <dl className="mt-6 space-y-2">
+              {[
+                [
+                  "Hoe diep",
+                  diepsteLaag ? diepsteLaag.naam : "Raakt niets",
+                ] as const,
+                b.duurMinuten
+                  ? (["Hoe lang", `${b.duurMinuten} minuten`] as const)
+                  : null,
+                ["Herstel", publicCopy(b.herstel)] as const,
+                [
+                  "Hoe vaak",
+                  publicCopy(b.sessies, "Nog niet vastgesteld"),
+                ] as const,
+              ]
+                .filter((r): r is NonNullable<typeof r> => r !== null)
+                .map(([kop, waarde]) => (
+                  <div
+                    key={kop}
+                    className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-5 py-4"
+                  >
+                    <dt className="diba-label diba-label-on-dark shrink-0">
+                      {kop}
+                    </dt>
+                    <dd className="diba-card-title text-right">{waarde}</dd>
+                  </div>
+                ))}
             </dl>
 
             {/* De prijs staat buiten de dl, want het is geen enkel getal meer maar een
