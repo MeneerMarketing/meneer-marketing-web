@@ -1,18 +1,17 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
-import { PILATES_VERTICAL } from "@/data/verticals/pilates";
+import { HUIDKLINIEKEN_VERTICAL } from "@/data/verticals/huidklinieken";
+import { packageIdToKey } from "@/lib/lge/package-map";
 import { trackCampaignEvent } from "@/lib/lge/track-client";
-import { VerticalLeadSuccess } from "@/components/verticals/VerticalLeadSuccess";
-import { submitVerticalInbound } from "@/lib/verticals/submit-inbound";
-import { trackPilatesEvent } from "@/lib/verticals/analytics";
+import { submitContactForm } from "@/lib/contact-submission";
+import { trackHuidkliniekEvent } from "@/lib/verticals/analytics";
 import {
   formatVerticalMoney,
   getActiveLaunchPromo,
-  resolveLaunchAmountCents,
 } from "@/lib/verticals/format-price";
 
 const INTEREST_OPTIONS: {
@@ -22,24 +21,24 @@ const INTEREST_OPTIONS: {
 }[] = [
   {
     id: "studio-edition",
-    label: "Studio Edition",
-    short: formatVerticalMoney(PILATES_VERTICAL.pricing.packages[0]!.monthly),
+    label: "Clinic Edition",
+    short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[0]!.monthly),
   },
   {
     id: "local-growth",
     label: "Local Growth",
-    short: formatVerticalMoney(PILATES_VERTICAL.pricing.packages[1]!.monthly),
+    short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[1]!.monthly),
   },
   {
     id: "growth-partner",
     label: "Growth Partner",
-    short: formatVerticalMoney(PILATES_VERTICAL.pricing.packages[2]!.monthly),
+    short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[2]!.monthly),
   },
   {
     id: "signature-custom",
     label: "Signature",
     short: formatVerticalMoney(
-      PILATES_VERTICAL.pricing.signatureCustom.fromPrice,
+      HUIDKLINIEKEN_VERTICAL.pricing.signatureCustom.fromPrice,
     ),
   },
   {
@@ -50,8 +49,8 @@ const INTEREST_OPTIONS: {
 ];
 
 const BOOKING_OPTIONS = [
-  { id: "existing", label: "Heb al een boekingssysteem" },
-  { id: "need-app", label: "Wil branded app / Trainin" },
+  { id: "existing", label: "Heb al een agendasysteem" },
+  { id: "need-app", label: "Wil branded kliniek-app" },
   { id: "unsure", label: "Nog niet zeker" },
   { id: "none", label: "Nog geen digitaal boeken" },
 ] as const;
@@ -61,23 +60,23 @@ type BookingNeed = (typeof BOOKING_OPTIONS)[number]["id"];
 const inputClass =
   "mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#FF5722] focus:ring-2 focus:ring-[#FF5722]/20";
 
-interface PilatesLeadFormProps {
+interface HuidkliniekLeadFormProps {
   personalization: VerticalCampaignPersonalization | null;
   campaignRef: string | null;
   selectedInterest?: VerticalInterestId;
   onInterestChange?: (interest: VerticalInterestId) => void;
 }
 
-export function PilatesLeadForm({
+export function HuidkliniekLeadForm({
   personalization,
   campaignRef,
   selectedInterest,
   onInterestChange,
-}: PilatesLeadFormProps) {
+}: HuidkliniekLeadFormProps) {
   const started = useRef(false);
-  const promo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
+  const promo = getActiveLaunchPromo(HUIDKLINIEKEN_VERTICAL.pricing);
 
-  const [studioName, setStudioName] = useState(
+  const [clinicName, setClinicName] = useState(
     personalization?.businessName ?? "",
   );
   const [city, setCity] = useState(personalization?.city ?? "");
@@ -92,17 +91,12 @@ export function PilatesLeadForm({
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">(
     "idle",
   );
-  const [successMeta, setSuccessMeta] = useState<{
-    submissionId: string | null;
-    launchAmountCents: number;
-    paymentRequired: boolean;
-    paymentStatus: "none" | "waived" | "pending" | "paid" | "failed";
-  } | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [mailtoHref, setMailtoHref] = useState<string | undefined>();
 
   useEffect(() => {
     if (personalization?.businessName) {
-      setStudioName(personalization.businessName);
+      setClinicName(personalization.businessName);
     }
     if (personalization?.city) {
       setCity(personalization.city);
@@ -123,10 +117,10 @@ export function PilatesLeadForm({
   function markStart() {
     if (started.current) return;
     started.current = true;
-    trackPilatesEvent("pilates_contact_start");
+    trackHuidkliniekEvent("huidkliniek_contact_start");
     if (campaignRef) {
       void trackCampaignEvent(campaignRef, "CONTACT_STARTED", {
-        path: "/pilates-studios",
+        path: "/huidklinieken",
         section: "aanvraag",
       });
     }
@@ -136,51 +130,70 @@ export function PilatesLeadForm({
     e.preventDefault();
     setStatus("loading");
     setError(null);
+    setMailtoHref(undefined);
 
-    const result = await submitVerticalInbound({
-      source: "pilates-studios",
-      studioName: studioName.trim(),
-      city: city.trim(),
-      email: email.trim(),
-      phone: phone.trim() || undefined,
-      interest,
-      bookingNeed,
-      message: message.trim() || undefined,
-      campaignRef,
-      launchPromoActive: Boolean(promo?.active),
-      launchAmountCents: resolveLaunchAmountCents(PILATES_VERTICAL.pricing),
+    const name = clinicName.trim() || "Huidkliniek";
+    const interestLabel =
+      INTEREST_OPTIONS.find((o) => o.id === interest)?.label ?? interest;
+    const bookingLabel =
+      BOOKING_OPTIONS.find((o) => o.id === bookingNeed)?.label ?? bookingNeed;
+
+    const bodyLines = [
+      "Aanvraag via meneermarketing.nl/huidklinieken",
+      "",
+      `Kliniek: ${clinicName.trim()}`,
+      `Plaats: ${city.trim()}`,
+      `E-mail: ${email.trim()}`,
+      `Telefoon: ${phone.trim() || "n.v.t."}`,
+      `Boeken: ${bookingLabel}`,
+      `Interesse: ${interestLabel}`,
+      promo?.active ? `Launch promo: ${promo.badge}` : null,
+      campaignRef ? "Campaign: gekoppeld" : "Campaign: geen",
+      "",
+      "Situatie / vraag:",
+      message.trim() || "n.v.t.",
+    ].filter((line): line is string => line !== null);
+
+    const result = await submitContactForm({
+      source: "huidklinieken",
+      subject: `[Huidklinieken] ${clinicName.trim() || "Nieuwe kliniek"} · ${city.trim() || "plaats onbekend"}`,
+      replyToEmail: email.trim(),
+      replyToName: name,
+      body: bodyLines.join("\n"),
       companyWebsite: honeypot,
     });
 
     if (result.ok) {
       setStatus("ok");
-      setSuccessMeta({
-        submissionId: result.submissionId,
-        launchAmountCents: result.launchAmountCents,
-        paymentRequired: result.paymentRequired,
-        paymentStatus: result.paymentStatus,
-      });
-      trackPilatesEvent("pilates_contact_submit", {
+      trackHuidkliniekEvent("huidkliniek_contact_submit", {
         interest,
         has_ref: Boolean(campaignRef),
         booking_need: bookingNeed,
       });
+
+      if (campaignRef) {
+        const pkg = packageIdToKey(interest);
+        void trackCampaignEvent(
+          campaignRef,
+          "CONTACT_SUBMITTED",
+          {
+            path: "/huidklinieken",
+            section: "aanvraag",
+            ...(pkg ? { package: pkg } : {}),
+          },
+          `CONTACT_SUBMITTED:${campaignRef}:${email.trim().toLowerCase()}`,
+        ).catch(() => {
+          console.warn(
+            "[lge] CONTACT_SUBMITTED tracking failed after MM success",
+          );
+        });
+      }
       return;
     }
 
     setStatus("error");
     setError(result.error);
-  }
-
-  if (status === "ok" && successMeta) {
-    return (
-      <VerticalLeadSuccess
-        submissionId={successMeta.submissionId}
-        launchAmountCents={successMeta.launchAmountCents}
-        paymentRequired={successMeta.paymentRequired}
-        paymentStatus={successMeta.paymentStatus}
-      />
-    );
+    setMailtoHref(result.mailtoHref);
   }
 
   if (status === "ok") {
@@ -247,13 +260,13 @@ export function PilatesLeadForm({
 
       <div className="grid gap-3 sm:grid-cols-2">
         <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">Studio</span>
+          <span className="text-xs font-semibold text-slate-700">Kliniek</span>
           <input
             required
-            value={studioName}
-            onChange={(e) => setStudioName(e.target.value)}
+            value={clinicName}
+            onChange={(e) => setClinicName(e.target.value)}
             onFocus={markStart}
-            placeholder="Naam van je studio"
+            placeholder="Naam van je kliniek"
             className={inputClass}
             autoComplete="organization"
           />
@@ -281,7 +294,7 @@ export function PilatesLeadForm({
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onFocus={markStart}
-            placeholder="jij@studio.nl"
+            placeholder="jij@jouwkliniek.nl"
             className={inputClass}
             autoComplete="email"
           />
@@ -303,7 +316,9 @@ export function PilatesLeadForm({
       </div>
 
       <label className="block text-sm">
-        <span className="text-xs font-semibold text-slate-700">Boeken / app</span>
+        <span className="text-xs font-semibold text-slate-700">
+          Afspraken / app
+        </span>
         <select
           value={bookingNeed}
           onChange={(e) => setBookingNeed(e.target.value as BookingNeed)}
@@ -328,7 +343,7 @@ export function PilatesLeadForm({
           onChange={(e) => setMessage(e.target.value)}
           onFocus={markStart}
           rows={2}
-          placeholder="Nieuwe studio, zwakke site, lokale SEO…"
+          placeholder="Nieuwe kliniek, zwakke site, lokale SEO…"
           className={`${inputClass} resize-none`}
         />
       </label>
@@ -347,7 +362,12 @@ export function PilatesLeadForm({
 
       {error ? (
         <p className="text-sm text-rose-700" role="alert">
-          {error}
+          {error}{" "}
+          {mailtoHref ? (
+            <a href={mailtoHref} className="font-bold underline">
+              Mail direct
+            </a>
+          ) : null}
         </p>
       ) : null}
 
@@ -356,7 +376,7 @@ export function PilatesLeadForm({
         disabled={status === "loading"}
         className="inline-flex w-full items-center justify-center rounded-2xl bg-[#FF5722] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_24px_rgba(255,87,34,0.3)] transition hover:bg-[#e64a19] disabled:opacity-60"
       >
-        {status === "loading" ? "Versturen…" : "Stuur mijn studio door"}
+        {status === "loading" ? "Versturen…" : "Stuur mijn kliniek door"}
       </button>
     </form>
   );

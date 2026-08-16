@@ -14,7 +14,6 @@ import { PilatesGoogleStrategy } from "@/components/verticals/pilates/PilatesGoo
 import { PilatesHero } from "@/components/verticals/pilates/PilatesHero";
 import { PilatesHowItWorks } from "@/components/verticals/pilates/PilatesHowItWorks";
 import { PilatesInternalLinks } from "@/components/verticals/pilates/PilatesInternalLinks";
-import { PilatesLiveDesign } from "@/components/verticals/pilates/PilatesLiveDesign";
 import { PilatesLocalSeo } from "@/components/verticals/pilates/PilatesLocalSeo";
 import { PilatesPricing } from "@/components/verticals/pilates/PilatesPricing";
 import { PilatesSignatureCustom } from "@/components/verticals/pilates/PilatesSignatureCustom";
@@ -54,7 +53,6 @@ export function PilatesStudiosView({
       <PilatesHero />
       <PilatesStudioExperience />
       <PilatesCompleteFlow />
-      <PilatesLiveDesign />
       <PilatesWhyPrice />
       <PilatesGoogleStrategy />
       <PilatesLocalSeo />

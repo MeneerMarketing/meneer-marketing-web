@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { ArrowUpRight, Sparkles, Store } from "lucide-react";
@@ -8,42 +8,42 @@ import { Reveal } from "@/components/effects/Reveal";
 
 const YOU_BEATS = [
   {
-    title: "Studio & merk",
-    text: "Reformers, ruimte, licht en het gevoel dat leden meteen herkennen.",
+    title: "Behandelingen",
+    text: "Wat je aanbiedt, hoe je werkt, en wat mensen bij jou mogen verwachten.",
   },
   {
-    title: "Instructors",
-    text: "Mensen die het verschil maken op de mat.",
+    title: "Team & ruimte",
+    text: "De mensen en de plek die vertrouwen geven zodra iemand binnenloopt.",
   },
   {
-    title: "De ervaring",
-    text: "Wat er gebeurt zodra iemand binnenloopt.",
+    title: "De zorg zelf",
+    text: "Wat er gebeurt in de stoel. Dat blijft bij jou.",
   },
 ] as const;
 
 const ME_BEATS = [
   {
     title: "Website",
-    text: "High-end Pilates look die voelt als jouw studio.",
+    text: "High-end kliniek-look die voelt als jouw merk.",
   },
   {
     title: "Lokale Google",
-    text: "Gevonden worden op Pilates + jouw stad.",
+    text: "Gevonden worden op huidkliniek + jouw stad.",
   },
   {
-    title: "Boekingsflow",
-    text: "Van klik naar rooster. Zonder WhatsApp-chaos.",
+    title: "Afspraakflow",
+    text: "Van klik naar intake. Zonder WhatsApp-chaos.",
   },
 ] as const;
 
-export function PilatesStudioExperience() {
+export function HuidkliniekExperience() {
   const reduce = useReducedMotion();
   const [active, setActive] = useState<"you" | "me" | null>(null);
 
   return (
     <section
       className="relative overflow-hidden border-b border-slate-200 bg-white"
-      aria-labelledby="pilates-experience-heading"
+      aria-labelledby="Huidkliniek-experience-heading"
     >
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-[radial-gradient(ellipse_at_top,_rgba(255,87,34,0.08),_transparent_60%)]"
@@ -57,15 +57,16 @@ export function PilatesStudioExperience() {
               Duidelijke rolverdeling
             </p>
             <h2
-              id="pilates-experience-heading"
+              id="Huidkliniek-experience-heading"
               className="mt-3 text-3xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.06]"
             >
-              Jij runt de studio.
+              Jij runt de kliniek.
               <span className="text-[#FF5722]"> Ik regel digitaal.</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Op de vloer is het al premium. Online moet datzelfde niveau
-              landen. Hover over een kant. Dan zie je precies wie wat doet.
+              In de behandelkamer is het al premium. Online moet datzelfde
+              niveau landen. Hover over een kant. Dan zie je precies wie wat
+              doet.
             </p>
           </div>
         </Reveal>
@@ -76,7 +77,6 @@ export function PilatesStudioExperience() {
             onMouseLeave={() => setActive(null)}
           >
             <div className="grid lg:grid-cols-2">
-              {/* JIJ */}
               <motion.article
                 className="relative flex min-h-[420px] flex-col bg-[#f7fafc] p-7 sm:p-9 lg:min-h-[480px] lg:p-10"
                 onMouseEnter={() => setActive("you")}
@@ -100,7 +100,7 @@ export function PilatesStudioExperience() {
                       Dit regel jij
                     </p>
                     <h3 className="mt-3 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                      De ervaring op de vloer
+                      De zorg in de kliniek
                     </h3>
                   </div>
                   <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-600 ring-1 ring-emerald-500/20">
@@ -143,7 +143,6 @@ export function PilatesStudioExperience() {
                 </p>
               </motion.article>
 
-              {/* IK */}
               <motion.article
                 className="relative flex min-h-[420px] flex-col bg-slate-950 p-7 text-white sm:p-9 lg:min-h-[480px] lg:p-10"
                 onMouseEnter={() => setActive("me")}
@@ -174,7 +173,7 @@ export function PilatesStudioExperience() {
                       Dit regel ik
                     </p>
                     <h3 className="mt-3 text-2xl font-extrabold tracking-tight sm:text-3xl">
-                      Van Google naar je rooster
+                      Van Google naar je agenda
                     </h3>
                   </div>
                   <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF5722]/15 text-[#FF5722] ring-1 ring-[#FF5722]/30">
@@ -218,7 +217,6 @@ export function PilatesStudioExperience() {
               </motion.article>
             </div>
 
-            {/* Center seam badge */}
             <div className="pointer-events-none absolute left-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
               <motion.div
                 className="flex size-14 items-center justify-center rounded-full border-4 border-white bg-slate-900 text-[10px] font-extrabold uppercase tracking-[0.14em] text-white shadow-xl"
@@ -242,13 +240,13 @@ export function PilatesStudioExperience() {
           <div className="mt-5 flex flex-col items-start justify-between gap-4 rounded-2xl border border-slate-200 bg-[#f3f7fb] px-5 py-4 sm:flex-row sm:items-center sm:px-6 sm:py-5">
             <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
               <span className="font-extrabold text-slate-900">Samen:</span> jij
-              de studio, ik het systeem eromheen. Dan voelt boeken logisch.
+              de kliniek, ik het systeem eromheen. Dan voelt boeken logisch.
             </p>
             <a
-              href="#aanvraag"
+              href="#live-design"
               className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#FF5722]"
             >
-              Start met jouw studio
+              Bekijk art directions
               <ArrowUpRight
                 className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden

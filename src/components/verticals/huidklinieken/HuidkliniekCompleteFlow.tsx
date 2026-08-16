@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
@@ -20,44 +20,44 @@ const PHASES = [
     kicker: "Gevonden",
     title: "Google zoekt. Jij verschijnt.",
     body: "Lokale zoekvraag, structuur en Maps die samenwerken.",
-    pill: "Zoeken → jouw studio",
+    pill: "Zoeken → jouw kliniek",
   },
   {
     id: "trust",
     icon: Sparkles,
     kicker: "Vertrouwen",
     title: "De site overtuigt in één scroll.",
-    body: "Look, lessen, trainers en prijzen die kloppen.",
+    body: "Art direction, behandelingen, team en tarieven die kloppen.",
     pill: "Twijfel → dit is het",
   },
   {
     id: "book",
     icon: CalendarCheck,
-    kicker: "Boeken",
-    title: "Klik wordt een plek in het rooster.",
+    kicker: "Afspraak",
+    title: "Klik wordt een intake in je agenda.",
     body: "Jouw systeem, branded app of maatwerk. Echt boeken.",
-    pill: "Klik → roosterplek",
+    pill: "Klik → intake",
   },
   {
     id: "return",
     icon: RefreshCw,
-    kicker: "Terugkomen",
-    title: "Leden blijven in je systeem.",
-    body: "App, herinneringen en memberships houden het warm.",
-    pill: "Les → vast lid",
+    kicker: "Terugkeer",
+    title: "Patiënten blijven in je systeem.",
+    body: "Reminder, nazorgpad en herhaalafspraak houden het warm.",
+    pill: "Consult → terugkeer",
   },
 ] as const;
 
 type PhaseIndex = 0 | 1 | 2 | 3;
 
-export function PilatesCompleteFlow() {
+export function HuidkliniekCompleteFlow() {
   const reduce = useReducedMotion();
   const [active, setActive] = useState<PhaseIndex>(0);
 
   return (
     <section
       className="relative overflow-hidden border-b border-slate-800 bg-[#0c1222] text-white"
-      aria-labelledby="pilates-flow-heading"
+      aria-labelledby="Huidkliniek-flow-heading"
     >
       <div
         className="pointer-events-none absolute inset-0"
@@ -73,19 +73,19 @@ export function PilatesCompleteFlow() {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-orange-300">
-                Complete studio flow
+                Complete kliniek-flow
               </p>
               <h2
-                id="pilates-flow-heading"
+                id="Huidkliniek-flow-heading"
                 className="mt-3 text-3xl font-extrabold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.06]"
               >
-                Van Google-zoekopdracht tot vaste Pilates-klant.
+                Van Google-zoekopdracht tot vaste huidkliniek-klant.
                 <span className="mt-1 block text-[#FF5722]">
                   Dat is het echte product.
                 </span>
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
-                Volg de route. Gevonden worden, overtuigen, boeken, terugkomen.
+                Volg de route. Gevonden worden, overtuigen, afspraak, terugkeer.
                 Van{" "}
                 <Link
                   href="/diensten/seo"
@@ -116,7 +116,6 @@ export function PilatesCompleteFlow() {
           </div>
         </Reveal>
 
-        {/* Desktop: zigzag rail */}
         <Reveal delay={0.1}>
           <div className="relative mt-16 hidden lg:block">
             <div
@@ -244,7 +243,6 @@ export function PilatesCompleteFlow() {
           </div>
         </Reveal>
 
-        {/* Mobile: vertical rail */}
         <ol className="relative mt-10 space-y-3 lg:hidden">
           {PHASES.map((phase, index) => {
             const Icon = phase.icon;
@@ -278,9 +276,9 @@ export function PilatesCompleteFlow() {
 
         <Reveal delay={0.16}>
           <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-slate-400 lg:mt-16">
-            Je koopt geen losse website. Je koopt een commercieel systeem rond je
-            rooster. Local Growth en Growth Partner pakken vindbaarheid en Google
-            Ads erbij.
+            Je koopt geen losse website. Je koopt een commercieel systeem rond
+            je agenda. Local Growth en Growth Partner pakken vindbaarheid en
+            Google Ads erbij.
           </p>
         </Reveal>
       </div>
