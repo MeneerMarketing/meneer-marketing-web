@@ -23,3 +23,29 @@ export function trackPilatesEvent(
     ...payload,
   });
 }
+
+export type HuidkliniekAnalyticsEvent =
+  | "huidkliniek_page_view"
+  | "huidkliniek_demo_click"
+  | "huidkliniek_package_view"
+  | "huidkliniek_package_select"
+  | "huidkliniek_booking_app_click"
+  | "huidkliniek_custom_click"
+  | "huidkliniek_contact_start"
+  | "huidkliniek_contact_submit";
+
+export function trackHuidkliniekEvent(
+  event: HuidkliniekAnalyticsEvent,
+  payload: Record<string, unknown> = {},
+): void {
+  if (typeof window === "undefined") return;
+  const w = window as Window & {
+    dataLayer?: Array<Record<string, unknown>>;
+  };
+  w.dataLayer = w.dataLayer ?? [];
+  w.dataLayer.push({
+    event,
+    vertical: "huidklinieken",
+    ...payload,
+  });
+}
