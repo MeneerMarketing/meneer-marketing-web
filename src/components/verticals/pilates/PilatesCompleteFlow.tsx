@@ -27,7 +27,7 @@ const PHASES = [
     icon: Sparkles,
     kicker: "Vertrouwen",
     title: "De site overtuigt in één scroll.",
-    body: "Art direction, lessen, trainers en prijzen die kloppen.",
+    body: "Look, lessen, trainers en prijzen die kloppen.",
     pill: "Twijfel → dit is het",
   },
   {

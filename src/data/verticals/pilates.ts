@@ -28,7 +28,11 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   pricing: {
     currency: "EUR",
     minTermMonths: 1,
-    termDisclaimer: "Per maand, maandelijks opzegbaar.",
+    termDisclaimer: "Per maand, maandelijks opzegbaar. Prijzen ex. btw.",
+    includedInfraNote:
+      "Inclusief domeinnaam en hosting (t.w.v. €25 per maand).",
+    includedCareNote:
+      "Onderhoud, updates en kleine sitewijzigingen zitten in je abonnement. Remote bereikbaar: ik pak je wensen direct op.",
     launchPromo: {
       active: true,
       current: { amount: 0, unit: "eur", cadence: "one_time" },
@@ -49,13 +53,15 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
         inclusions: [
           "Website live binnen 5 werkdagen",
           "SEO-injectie op Pilates [jouw stad]",
-          "Eén van de high-end Pilates Studio Editions",
+          "Website designed around jouw studio en branding",
           "Aangepast aan naam, logo en huisstijl",
           "Mobiel geoptimaliseerd (daar gebeurt het echte boeken)",
           "Lessen, trainers, tarieven, contact en locatie",
           "Boekingskoppeling met bestaand systeem (waar technisch redelijk)",
           "Technische SEO + schema + tracking-basis",
-          "Hosting, onderhoud, beveiliging en kleine wijzigingen",
+          "Domeinnaam, hosting, beveiliging en technisch onderhoud",
+          "Kleine sitewijzigingen in je abonnement (teksten, tarieven, foto's)",
+          "Remote bereikbaar: ik regel je wensen direct",
         ],
       },
       {
@@ -207,7 +213,7 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
       id: "trust",
       title: "Vertrouwen",
       body: "Website en branding op studioniveau.",
-      detail: "Art direction, lessen, trainers, prijzen, bewijs van kwaliteit.",
+      detail: "Jouw branding, lessen, trainers, prijzen en bewijs van kwaliteit.",
     },
     {
       id: "book",
@@ -248,9 +254,9 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   },
   faq: [
     {
-      question: "Is dit een template?",
+      question: "Is mijn site echt op maat?",
       answer:
-        "Nee. Studio Edition is een gespecialiseerde Pilates-foundation: een design system dat ik aanpas aan jouw studio. ThemeForest en pagebuilders horen hier niet bij. Voor volledige unieke architectuur is er Signature Custom.",
+        "Ja. Jouw naam, logo, lessen en stad staan centraal. Wat je al gezien hebt is het startpunt dat ik voor jouw studio doorontwikkel en aanscherp. From scratch gebouwd, afgestemd op jouw studio.",
     },
     {
       question: "Kan mijn huidige boekingssysteem blijven?",
@@ -289,12 +295,12 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
       body: "Locatie, lessen, boeking, merkstijl. Kort en concreet. Intake past op één koffie.",
     },
     {
-      title: "Art direction kiezen of verfijnen",
-      body: "Eén van de Pilates Studio Editions, of Signature Custom als je studio dat vraagt.",
+      title: "Jouw studio, jouw site",
+      body: "Branding, lessen, tarieven en teksten op jouw studio afgestemd. Heb je al een richting gezien? Dan werk ik die door tot hij volledig van jou voelt.",
     },
     {
       title: "Branding, lessen en booking",
-      body: "Jouw content, huisstijl en boekingsroute erin. Dan voelt het als jouw studio.",
+      body: "Jouw content, huisstijl en boekingsroute erin. Alles voelt als jouw studio.",
     },
     {
       title: "Website live",

@@ -14,40 +14,19 @@ import {
 
 import { Reveal } from "@/components/effects/Reveal";
 import { Magnetic } from "@/components/effects/Magnetic";
-import { LivingCloudGrid } from "@/components/effects/LivingCloudGrid";
+import { InteractiveLogo } from "@/components/site/InteractiveLogo";
+import { PilatesHeroPriceEntrance } from "@/components/verticals/pilates/PilatesHeroPriceEntrance";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
-import { whatsappHref } from "@/lib/contact";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
-import {
-  formatVerticalMoney,
-  getActiveLaunchPromo,
-} from "@/lib/verticals/format-price";
+import { getActiveLaunchPromo } from "@/lib/verticals/format-price";
 
 const cfg = PILATES_VERTICAL;
-const fromMonthly = formatVerticalMoney(cfg.pricing.packages[0]!.monthly);
 const launchPromo = getActiveLaunchPromo(cfg.pricing);
 
-const whatsappLink =
-  whatsappHref(
-    "Hoi Meneer Marketing! Ik heb een Pilates studio en wil eerst even contact voordat ik start.",
-  ) ?? "/contact";
-
-const heroPillars = [
-  {
-    icon: Sparkles,
-    label: "High-end design",
-    hint: "Pilates op studioniveau, from scratch",
-  },
-  {
-    icon: Gauge,
-    label: "Technisch perfect",
-    hint: "Snelheid, schema, Core Web Vitals",
-  },
-  {
-    icon: TrendingUp,
-    label: "Zo hoog mogelijk",
-    hint: "Pilates + stad, Maps, pagina 1",
-  },
+const heroSignals = [
+  { icon: Sparkles, label: "Studioniveau design" },
+  { icon: Gauge, label: "Core Web Vitals groen" },
+  { icon: TrendingUp, label: "Pagina 1 ambities" },
 ] as const;
 
 export function PilatesHero() {
@@ -58,20 +37,27 @@ export function PilatesHero() {
   return (
     <header className="relative isolate overflow-hidden border-b border-slate-200 bg-[#0c1222] text-white">
       <div
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        aria-hidden
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,87,34,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,87,34,0.06) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
+      <div
         className="pointer-events-none absolute inset-0"
         aria-hidden
         style={{
           background:
-            "radial-gradient(ellipse 70% 50% at 80% 0%, rgba(255,87,34,0.22), transparent 55%), linear-gradient(180deg, #0c1222 0%, #111827 100%)",
+            "radial-gradient(ellipse 80% 55% at 85% -5%, rgba(255,87,34,0.28), transparent 55%), radial-gradient(ellipse 50% 40% at 0% 100%, rgba(255,87,34,0.08), transparent 50%), linear-gradient(180deg, #0c1222 0%, #111827 100%)",
         }}
       />
-      <div className="pointer-events-none absolute inset-0 opacity-[0.1] mix-blend-overlay">
-        <LivingCloudGrid />
-      </div>
 
       <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-2 lg:items-stretch lg:gap-12 lg:px-8 lg:pb-24 lg:pt-20">
         <Reveal className="flex h-full flex-col">
           <div className="flex flex-wrap items-center gap-3">
+            <InteractiveLogo className="size-9 shrink-0" interactive={false} />
             <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-orange-300">
               Voor boutique Pilates studio&apos;s
             </p>
@@ -82,89 +68,47 @@ export function PilatesHero() {
             ) : null}
           </div>
 
-          <h1 className="mt-5 text-pretty text-[2.35rem] font-extrabold leading-[1.06] tracking-tight sm:text-[2.8rem] lg:text-[3.2rem] lg:leading-[1.02]">
-            <span className="block text-white">High-end Pilates design.</span>
-            <span className="mt-1 block text-[#FF5722]">
-              Zo hoog mogelijk in Google.
+          <h1 className="mt-5 text-[1.95rem] font-extrabold leading-[1.08] tracking-tight sm:text-[2.8rem] lg:text-[3.15rem] lg:leading-[1.02]">
+            <span className="block whitespace-nowrap text-white">
+              High-end Pilates design.
+            </span>
+            <span className="mt-1 block whitespace-nowrap text-[#FF5722]">
+              Pagina 1 in Google.
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Ik bouw from scratch: art direction op studioniveau, code die Google
-            écht snapt, en lokale SEO die mikken op Maps en pagina 1. Jouw
-            studio verdient een site die net zo strak voelt als je reformer.
+            Je reformer staat niet stil. Waarom zou je website dat wel doen? Ik
+            bedenk je strategie, bouw from scratch en stuur op boekingen en
+            nieuwe leden. Een site die net zo strak voelt als je studio, met
+            mij als vaste partner.
           </p>
 
-          <div className="mt-5 inline-flex max-w-full flex-col gap-2 rounded-2xl border border-white/12 bg-white/[0.05] p-1 sm:inline-block">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-[0.9rem] border border-[#FF5722]/25 bg-gradient-to-r from-[#FF5722]/15 via-white/[0.04] to-transparent px-4 py-3">
-              <div className="min-w-[5.5rem]">
-                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-orange-300">
-                  Studio Edition
-                </p>
-                <p className="mt-0.5 text-xl font-extrabold leading-none tracking-tight text-white">
-                  {fromMonthly}
-                  <span className="text-sm font-bold text-slate-300">/m</span>
-                </p>
-              </div>
-              {launchPromo ? (
-                <>
-                  <span
-                    className="hidden h-9 w-px shrink-0 bg-white/15 sm:block"
-                    aria-hidden
-                  />
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-                      Launch
-                    </p>
-                    <p className="mt-0.5 text-sm font-extrabold leading-none text-white">
-                      <span className="text-slate-500 line-through decoration-slate-500/80">
-                        {formatVerticalMoney(launchPromo.was)}
-                      </span>{" "}
-                      <span className="text-orange-300">€0</span>
-                    </p>
-                  </div>
-                </>
-              ) : null}
-              <span
-                className="hidden h-9 w-px shrink-0 bg-white/15 sm:block"
-                aria-hidden
-              />
-              <p className="text-[11px] font-extrabold uppercase tracking-[0.12em] text-emerald-300">
-                Maandelijks opzegbaar
-              </p>
-            </div>
-          </div>
+          <PilatesHeroPriceEntrance />
 
-          <ul className="mt-6 grid gap-3 sm:grid-cols-3">
-            {heroPillars.map((pillar) => {
-              const Icon = pillar.icon;
-              return (
-                <li
-                  key={pillar.label}
-                  className="rounded-2xl border border-white/12 bg-white/[0.04] px-4 py-3.5 backdrop-blur-sm transition hover:border-[#FF5722]/30 hover:bg-white/[0.07]"
-                >
-                  <Icon className="size-4 text-[#FF5722]" aria-hidden />
-                  <p className="mt-2 text-sm font-bold tracking-tight text-white">
-                    {pillar.label}
-                  </p>
-                  <p className="mt-0.5 text-[11px] leading-snug text-slate-400">
-                    {pillar.hint}
-                  </p>
-                </li>
-              );
-            })}
+          <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 border-t border-white/10 pt-5">
+            {heroSignals.map(({ icon: Icon, label }) => (
+              <li
+                key={label}
+                className="inline-flex items-center gap-2 text-[12px] font-semibold text-slate-300"
+              >
+                <Icon className="size-3.5 shrink-0 text-[#FF5722]" aria-hidden />
+                {label}
+              </li>
+            ))}
           </ul>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch">
             <Magnetic strength={12} radius={170}>
               <a
                 href="#aanvraag"
-                onClick={() =>
+                onClick={() => {
+                  sessionStorage.setItem("lge-interest", "studio-edition");
                   trackPilatesEvent("pilates_package_select", {
                     location: "hero_cta",
-                    package: "unsure",
-                  })
-                }
+                    package: "studio-edition",
+                  });
+                }}
                 className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(255,87,34,0.65)] transition hover:-translate-y-0.5 hover:bg-orange-600 hover:shadow-[0_20px_44px_-10px_rgba(255,87,34,0.75)] sm:w-auto"
               >
                 <Rocket
@@ -179,16 +123,10 @@ export function PilatesHero() {
               </a>
             </Magnetic>
             <a
-              href={whatsappLink}
-              target={whatsappLink.startsWith("http") ? "_blank" : undefined}
-              rel={
-                whatsappLink.startsWith("http")
-                  ? "noopener noreferrer"
-                  : undefined
-              }
+              href="#eerlijk-prijs"
               onClick={() =>
                 trackPilatesEvent("pilates_demo_click", {
-                  location: "hero_whatsapp",
+                  location: "hero_contact",
                 })
               }
               className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/25 bg-white/[0.07] px-5 py-4 text-sm font-bold tracking-tight text-white backdrop-blur-sm transition hover:border-white/40 hover:bg-white/[0.12] sm:w-auto"
@@ -198,8 +136,8 @@ export function PilatesHero() {
             </a>
           </div>
 
-          <p className="mt-3 text-xs leading-relaxed text-slate-400 lg:mt-auto lg:pt-6">
-            Bel, mail of WhatsApp. Meestal dezelfde dag terug.{" "}
+          <p className="mt-3 text-xs leading-relaxed text-slate-500 lg:mt-auto lg:pt-6">
+            Minder dan één lege reformer per maand. Serieus.{" "}
             <a
               href="#pakketten"
               className="font-semibold text-orange-200/90 underline decoration-orange-200/35 underline-offset-2 hover:text-white"
@@ -211,7 +149,7 @@ export function PilatesHero() {
 
         <Reveal delay={0.1} className="relative flex h-full">
           <div className="relative flex h-full w-full flex-col">
-            <div className="absolute -left-2 top-[10%] z-20 hidden rotate-[-4deg] sm:block lg:-left-5">
+            <div className="absolute -left-2 top-[10%] z-20 hidden rotate-[-3deg] sm:block lg:-left-5">
               <div className="flex items-center gap-2 rounded-xl border border-emerald-400/25 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-md">
                 <Gauge className="size-3.5 text-emerald-300" aria-hidden />
                 <span className="text-xs font-semibold text-slate-100">
@@ -220,7 +158,7 @@ export function PilatesHero() {
               </div>
             </div>
 
-            <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border border-white/15 bg-slate-950 shadow-[0_32px_80px_rgba(0,0,0,0.45)]">
+            <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border border-white/15 bg-slate-950 shadow-[0_32px_80px_rgba(0,0,0,0.45)] lg:rotate-[0.6deg]">
               <div className="flex shrink-0 items-center gap-1.5 border-b border-white/10 bg-slate-900/95 px-3 py-2.5">
                 <span className="size-2 rounded-full bg-rose-400/80" />
                 <span className="size-2 rounded-full bg-amber-400/80" />
@@ -245,7 +183,7 @@ export function PilatesHero() {
                   className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"
                   aria-hidden
                 />
-                <div className="absolute left-4 top-4 rounded-lg border border-white/15 bg-slate-950/85 px-2.5 py-1.5 backdrop-blur-sm">
+                <div className="absolute left-4 top-4 rotate-[-1deg] rounded-lg border border-white/15 bg-slate-950/85 px-2.5 py-1.5 backdrop-blur-sm">
                   <p className="text-[9px] font-bold uppercase tracking-wider text-orange-300">
                     Custom build
                   </p>

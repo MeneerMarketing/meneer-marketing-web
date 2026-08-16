@@ -245,10 +245,10 @@ export function PilatesStudioExperience() {
               de studio, ik het systeem eromheen. Dan voelt boeken logisch.
             </p>
             <a
-              href="#live-design"
+              href="#aanvraag"
               className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#FF5722]"
             >
-              Bekijk art directions
+              Start met jouw studio
               <ArrowUpRight
                 className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden

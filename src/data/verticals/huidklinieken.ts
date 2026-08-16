@@ -26,7 +26,11 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
   pricing: {
     currency: "EUR",
     minTermMonths: 1,
-    termDisclaimer: "Per maand, maandelijks opzegbaar.",
+    termDisclaimer: "Per maand, maandelijks opzegbaar. Prijzen ex. btw.",
+    includedInfraNote:
+      "Inclusief domeinnaam en hosting (t.w.v. €25 per maand).",
+    includedCareNote:
+      "Onderhoud, updates en kleine sitewijzigingen zitten in je abonnement. Remote bereikbaar: ik pak je wensen direct op.",
     launchPromo: {
       active: true,
       current: { amount: 0, unit: "eur", cadence: "one_time" },
@@ -53,7 +57,9 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
           "Behandelingen, team, tarieven, contact en locatie",
           "Afspraakkoppeling met bestaand systeem (waar technisch redelijk)",
           "Technische SEO + schema + tracking-basis",
-          "Hosting, onderhoud, beveiliging en kleine wijzigingen",
+          "Domeinnaam, hosting, beveiliging en technisch onderhoud",
+          "Kleine sitewijzigingen in je abonnement (teksten, tarieven, foto's)",
+          "Remote bereikbaar: ik regel je wensen direct",
         ],
       },
       {
