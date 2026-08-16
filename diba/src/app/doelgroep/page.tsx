@@ -17,6 +17,21 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
  *
  * Dus staat dat voorbehoud bovenaan en niet in de kleine lettertjes, en telt elke kaart
  * hieronder hoeveel er per groep écht anders is. Dat getal is nergens hoger dan drie.
+ *
+ * WAT ERBIJ IS GEKOMEN, EN WAAROM.
+ *
+ * Deze pagina telde de verschillen op ("bij elkaar zijn dat twaalf punten") en liet ze
+ * vervolgens nergens zien. Om te weten of er iets bij zat dat op jou slaat, moest je vier
+ * keer doorklikken en vier pagina's lezen. Een hub die je laat zoeken naar wat hij zelf
+ * net heeft opgeteld, doet zijn werk niet.
+ *
+ * Nu staan de twaalf punten op de kaarten zelf. Dat maakt de belofte meteen controleerbaar:
+ * je ziet in één scherm dat het een korte lijst is, precies zoals de tekst erboven beweert.
+ *
+ * En het beloftekaartje in de hero noemt "wat je moet melden, zodat het niet pas aan de
+ * balie boven tafel komt". Dat stond dan wél weer vier klikken verderop. Die twaalf regels
+ * staan nu onderaan bij elkaar, want ze zijn korter dan de uitleg eromheen en het is het
+ * enige op deze pagina waar iemand iets mee móet.
  */
 
 export const metadata: Metadata = {
@@ -116,17 +131,83 @@ export default function DoelgroepHubPage() {
                   <span className="diba-display-s mt-3 block text-[var(--t-strong)]">
                     {d.meta}
                   </span>
-                  <span className="mt-4 flex-1 text-[16px] leading-8 text-[var(--t-body)]">
+                  <span className="mt-4 text-[16px] leading-8 text-[var(--t-body)]">
                     {publicCopy(d.korteOmschrijving)}
                   </span>
-                  <span className="diba-label mt-7 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4">
-                    Wat er anders is, en wat niet
+
+                  {/* De punten zelf, niet alleen hun aantal. Dit is wat de kaart
+                      beloofde en wat er tot nu toe vier klikken verderop stond. */}
+                  <span className="mt-6 flex flex-1 flex-col gap-2">
+                    {d.anders.map((a) => (
+                      <span
+                        key={a.kop}
+                        className="rounded-[var(--r-sm)] bg-[var(--g-025)] px-4 py-3 text-[15px] leading-6 text-[var(--t-body)]"
+                      >
+                        {publicCopy(a.kop)}
+                      </span>
+                    ))}
+                  </span>
+
+                  <span className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4">
+                    Met de reden erbij, en wat níet anders is
                     <span aria-hidden="true">›</span>
                   </span>
                 </Link>
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* ── Wat je meldt ──
+          Het beloftekaartje in de hero noemt dit als derde punt van elke pagina, en het is
+          het enige op deze hele hub waar iemand iets mee moet. Het stond vier klikken
+          verderop. Hier staat het bij elkaar, want zo is het ook korter dan de uitleg. */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div className="max-w-[62ch]">
+            <Label>Bij het maken van de afspraak</Label>
+            <h2 className="diba-display-m mt-4 max-w-[18ch]">
+              Zeg dit meteen,
+              <br />
+              <span className="diba-accent">niet pas aan de balie.</span>
+            </h2>
+            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Deze regels bepalen soms of een behandeling doorgaat, of welke
+              instelling erbij hoort. Wie ze pas noemt als hij op de stoel ligt,
+              loopt het risico dat de afspraak verzet wordt. Vandaar dat ze hier
+              staan en niet in de kleine lettertjes.
+            </p>
+          </div>
+
+          {/* items-start: de ene groep heeft langere regels dan de andere, en gelijk
+              trekken levert onderin een halve lege kaart op. */}
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 sm:items-start xl:grid-cols-4">
+            {DOELGROEPEN.map((d) => (
+              <div
+                key={d.slug}
+                className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
+              >
+                <Label>{d.meta}</Label>
+                <ul className="mt-4 space-y-3">
+                  {d.melden.map((m) => (
+                    <li
+                      key={m}
+                      className="text-[15px] leading-7 text-[var(--t-body)]"
+                    >
+                      {publicCopy(m)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 max-w-[70ch] text-[15px] leading-7 text-[var(--t-muted)]">
+            Sta je in geen van de vier groepen, dan geldt hiervan niets en is er
+            ook niets extra&apos;s te melden. Wat er altijd toe doet, hoor je in
+            de intake.
+          </p>
         </div>
       </section>
 
