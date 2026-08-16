@@ -1,5 +1,6 @@
 "use client";
 
+import { MessageCircle, Rocket } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
@@ -7,6 +8,8 @@ import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 import { trackCampaignEvent } from "@/lib/lge/track-client";
+import { isCheckoutPackageId } from "@/lib/mollie/checkout-eligible";
+import { useMollieCheckoutEnabled } from "@/lib/mollie/use-mollie-checkout-enabled";
 import { VerticalLeadSuccess } from "@/components/verticals/VerticalLeadSuccess";
 import { submitVerticalInbound } from "@/lib/verticals/submit-inbound";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
@@ -77,6 +80,7 @@ export function PilatesLeadForm({
 }: PilatesLeadFormProps) {
   const started = useRef(false);
   const promo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
+  const checkoutEnabled = useMollieCheckoutEnabled();
 
   const [studioName, setStudioName] = useState(
     personalization?.businessName ?? "",
@@ -100,6 +104,8 @@ export function PilatesLeadForm({
     paymentStatus: "none" | "waived" | "pending" | "paid" | "failed";
   } | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const payEligible = checkoutEnabled && isCheckoutPackageId(interest);
 
   useEffect(() => {
     if (personalization?.businessName) {
@@ -196,20 +202,21 @@ export function PilatesLeadForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-3.5" noValidate>
+    <form onSubmit={onSubmit} className="space-y-5" noValidate>
       {campaignRef ? (
         <input type="hidden" name="campaign_ref" value={campaignRef} readOnly />
       ) : null}
 
-      {promo ? (
-        <p className="text-[11px] font-semibold leading-snug text-[#FF5722]">
-          {promo.note}
-        </p>
-      ) : null}
-
       <fieldset>
-        <legend className="sr-only">Welk pakket</legend>
-        <div className="flex flex-wrap gap-1.5">
+        <legend className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+          Welk pakket?
+        </legend>
+        {promo ? (
+          <p className="mt-1 text-[11px] font-semibold leading-snug text-[#FF5722]">
+            {promo.note}
+          </p>
+        ) : null}
+        <div className="mt-2 flex flex-wrap gap-1.5">
           {INTEREST_OPTIONS.map((opt) => {
             const selected = interest === opt.id;
             return (
@@ -217,8 +224,8 @@ export function PilatesLeadForm({
                 key={opt.id}
                 className={
                   selected
-                    ? "cursor-pointer rounded-full bg-slate-900 px-3 py-1.5 text-xs font-bold text-white"
-                    : "cursor-pointer rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-xs font-bold text-slate-700 transition hover:border-slate-400 hover:bg-white"
+                    ? "cursor-pointer rounded-full bg-slate-900 px-3 py-1.5 text-xs font-bold text-white shadow-md"
+                    : "cursor-pointer rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
                 }
               >
                 <input
@@ -231,13 +238,7 @@ export function PilatesLeadForm({
                   className="sr-only"
                 />
                 {opt.label}
-                <span
-                  className={
-                    selected
-                      ? "ml-1.5 font-semibold text-slate-400"
-                      : "ml-1.5 font-semibold text-slate-400"
-                  }
-                >
+                <span className="ml-1.5 font-semibold text-slate-400">
                   {opt.short.replace(/^Vanaf\s+/i, "")}
                 </span>
               </label>
@@ -246,138 +247,202 @@ export function PilatesLeadForm({
         </div>
       </fieldset>
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">Studio</span>
-          <input
-            required
-            value={studioName}
-            onChange={(e) => setStudioName(e.target.value)}
-            onFocus={markStart}
-            placeholder="Naam van je studio"
-            className={inputClass}
-            autoComplete="organization"
-          />
-        </label>
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">Plaats</span>
-          <input
-            required
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            onFocus={markStart}
-            placeholder="Stad of regio"
-            className={inputClass}
-            autoComplete="address-level2"
-          />
-        </label>
-      </div>
-
-      <div className="grid gap-3 sm:grid-cols-2">
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">E-mail</span>
-          <input
-            required
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            onFocus={markStart}
-            placeholder="jij@studio.nl"
-            className={inputClass}
-            autoComplete="email"
-          />
-        </label>
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">
-            Telefoon <span className="font-normal text-slate-400">optioneel</span>
-          </span>
-          <input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            onFocus={markStart}
-            placeholder="06…"
-            className={inputClass}
-            autoComplete="tel"
-          />
-        </label>
-      </div>
-
-      <LgePayBlock
-        vertical="pilates-studios"
-        packageId={interest}
-        name={studioName}
-        email={email}
-        businessName={studioName}
-        campaignRef={campaignRef}
-        onPayStart={markStart}
-      />
-
-      <label className="block text-sm">
-        <span className="text-xs font-semibold text-slate-700">Boeken / app</span>
-        <select
-          value={bookingNeed}
-          onChange={(e) => setBookingNeed(e.target.value as BookingNeed)}
-          onFocus={markStart}
-          className={inputClass}
-        >
-          {BOOKING_OPTIONS.map((opt) => (
-            <option key={opt.id} value={opt.id}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <label className="block text-sm">
-        <span className="text-xs font-semibold text-slate-700">
-          Kort toelichten{" "}
-          <span className="font-normal text-slate-400">optioneel</span>
-        </span>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          onFocus={markStart}
-          rows={2}
-          placeholder="Nieuwe studio, zwakke site, lokale SEO…"
-          className={`${inputClass} resize-none`}
-        />
-      </label>
-
-      <div className="hidden" aria-hidden>
-        <label>
-          Bedrijfswebsite
-          <input
-            tabIndex={-1}
-            autoComplete="off"
-            value={honeypot}
-            onChange={(e) => setHoneypot(e.target.value)}
-          />
-        </label>
-      </div>
-
-      {error ? (
-        <p className="text-sm text-rose-700" role="alert">
-          {error}
+      <div>
+        <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+          Wie ben jij?
         </p>
-      ) : null}
-
-      <div className="relative py-1">
-        <div className="absolute inset-0 flex items-center" aria-hidden>
-          <span className="w-full border-t border-slate-200" />
+        <div className="mt-2 grid gap-3 sm:grid-cols-2">
+          <label className="block text-sm">
+            <span className="text-xs font-semibold text-slate-700">Studio</span>
+            <input
+              required
+              value={studioName}
+              onChange={(e) => setStudioName(e.target.value)}
+              onFocus={markStart}
+              placeholder="Naam van je studio"
+              className={inputClass}
+              autoComplete="organization"
+            />
+          </label>
+          <label className="block text-sm">
+            <span className="text-xs font-semibold text-slate-700">Plaats</span>
+            <input
+              required
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              onFocus={markStart}
+              placeholder="Stad of regio"
+              className={inputClass}
+              autoComplete="address-level2"
+            />
+          </label>
+          <label className="block text-sm">
+            <span className="text-xs font-semibold text-slate-700">E-mail</span>
+            <input
+              required
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              onFocus={markStart}
+              placeholder="jij@studio.nl"
+              className={inputClass}
+              autoComplete="email"
+            />
+          </label>
+          <label className="block text-sm">
+            <span className="text-xs font-semibold text-slate-700">
+              Telefoon{" "}
+              <span className="font-normal text-slate-400">optioneel</span>
+            </span>
+            <input
+              type="tel"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              onFocus={markStart}
+              placeholder="06…"
+              className={inputClass}
+              autoComplete="tel"
+            />
+          </label>
         </div>
-        <p className="relative mx-auto w-fit bg-white px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400">
-          Of eerst contact
-        </p>
       </div>
 
-      <button
-        type="submit"
-        disabled={status === "loading"}
-        className="inline-flex w-full items-center justify-center rounded-2xl bg-[#FF5722] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_24px_rgba(255,87,34,0.3)] transition hover:bg-[#e64a19] disabled:opacity-60"
-      >
-        {status === "loading" ? "Versturen…" : "Stuur mijn studio door"}
-      </button>
+      <div className="grid gap-4 lg:grid-cols-2 lg:items-stretch">
+        <section
+          className="flex flex-col rounded-2xl border-2 border-[#FF5722]/35 bg-gradient-to-b from-orange-50/80 to-white p-4 sm:p-5"
+          aria-labelledby="pilates-express-lane"
+        >
+          <div className="flex items-start gap-3">
+            <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-[#FF5722] text-white shadow-[0_8px_20px_-8px_rgba(255,87,34,0.6)]">
+              <Rocket className="size-4" aria-hidden />
+            </span>
+            <div>
+              <h4
+                id="pilates-express-lane"
+                className="text-base font-extrabold tracking-tight text-slate-900"
+              >
+                Snel live
+              </h4>
+              <p className="mt-1 text-[13px] leading-relaxed text-slate-600">
+                Klaar om te starten? Betaal via iDEAL. Ik mail je meteen met de
+                volgende stappen. Hoe eerder we live gaan, hoe eerder Google je
+                studio leert kennen.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 flex flex-1 flex-col">
+            {payEligible ? (
+              <LgePayBlock
+                vertical="pilates-studios"
+                packageId={interest}
+                name={studioName}
+                email={email}
+                businessName={studioName}
+                campaignRef={campaignRef}
+                onPayStart={markStart}
+                variant="express"
+              />
+            ) : (
+              <div className="flex flex-1 flex-col justify-center rounded-xl border border-dashed border-[#FF5722]/30 bg-white/80 px-4 py-5 text-center">
+                <p className="text-sm font-bold text-slate-900">
+                  Signature of hulp bij kiezen?
+                </p>
+                <p className="mt-1.5 text-[13px] leading-relaxed text-slate-600">
+                  Daarvoor eerst even sparren. Gebruik het blok &quot;Eerst
+                  praten&quot;. Ik denk mee welk pakket past.
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        <section
+          className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50/90 p-4 sm:p-5"
+          aria-labelledby="pilates-talk-lane"
+        >
+          <div className="flex items-start gap-3">
+            <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-[#FF5722]">
+              <MessageCircle className="size-4" aria-hidden />
+            </span>
+            <div>
+              <h4
+                id="pilates-talk-lane"
+                className="text-base font-extrabold tracking-tight text-slate-900"
+              >
+                Eerst praten
+              </h4>
+              <p className="mt-1 text-[13px] leading-relaxed text-slate-600">
+                Vragen over pakket, stad, boekingssysteem of timing? Stuur je
+                studio door. Ik lees alles zelf en reageer rechtstreeks.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 flex flex-1 flex-col gap-3">
+            <label className="block text-sm">
+              <span className="text-xs font-semibold text-slate-700">
+                Boeken / app
+              </span>
+              <select
+                value={bookingNeed}
+                onChange={(e) => setBookingNeed(e.target.value as BookingNeed)}
+                onFocus={markStart}
+                className={inputClass}
+              >
+                {BOOKING_OPTIONS.map((opt) => (
+                  <option key={opt.id} value={opt.id}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="block flex-1 text-sm">
+              <span className="text-xs font-semibold text-slate-700">
+                Kort toelichten{" "}
+                <span className="font-normal text-slate-400">optioneel</span>
+              </span>
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                onFocus={markStart}
+                rows={3}
+                placeholder="Waar loop je tegenaan? Nieuwe studio, zwakke site, twijfel over pakket…"
+                className={`${inputClass} min-h-[5.5rem] resize-none`}
+              />
+            </label>
+
+            <div className="hidden" aria-hidden>
+              <label>
+                Bedrijfswebsite
+                <input
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
+              </label>
+            </div>
+
+            {error ? (
+              <p className="text-sm text-rose-700" role="alert">
+                {error}
+              </p>
+            ) : null}
+
+            <button
+              type="submit"
+              disabled={status === "loading"}
+              className="mt-auto inline-flex w-full items-center justify-center rounded-2xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-bold text-slate-900 shadow-sm transition hover:border-[#FF5722] hover:text-[#FF5722] disabled:opacity-60"
+            >
+              {status === "loading"
+                ? "Versturen…"
+                : "Stuur door · ik neem contact op"}
+            </button>
+          </div>
+        </section>
+      </div>
     </form>
   );
 }
