@@ -1,9 +1,10 @@
 "use client";
 
-import { MessageCircle, Rocket } from "lucide-react";
+import { MessageCircle, Rocket, ShieldCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
+import { MollieTrustLine } from "@/components/verticals/PaymentMethodBadges";
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
@@ -23,21 +24,25 @@ const INTEREST_OPTIONS: {
   id: VerticalInterestId;
   label: string;
   short: string;
+  hint: string;
 }[] = [
   {
     id: "studio-edition",
     label: "Studio Edition",
     short: formatVerticalMoney(PILATES_VERTICAL.pricing.packages[0]!.monthly),
+    hint: "Site + lokaal gevonden",
   },
   {
     id: "local-growth",
     label: "Local Growth",
     short: formatVerticalMoney(PILATES_VERTICAL.pricing.packages[1]!.monthly),
+    hint: "Meer proeflessen uit Google",
   },
   {
     id: "growth-partner",
     label: "Growth Partner",
     short: formatVerticalMoney(PILATES_VERTICAL.pricing.packages[2]!.monthly),
+    hint: "Ads + creators, vol gas",
   },
   {
     id: "signature-custom",
@@ -45,11 +50,13 @@ const INTEREST_OPTIONS: {
     short: formatVerticalMoney(
       PILATES_VERTICAL.pricing.signatureCustom.fromPrice,
     ),
+    hint: "Volledig op maat",
   },
   {
     id: "unsure",
     label: "Help mij kiezen",
     short: "Advies",
+    hint: "Ik denk mee",
   },
 ];
 
@@ -61,9 +68,10 @@ const BOOKING_OPTIONS = [
 ] as const;
 
 type BookingNeed = (typeof BOOKING_OPTIONS)[number]["id"];
+type FormIntent = "pay" | "talk";
 
 const inputClass =
-  "mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#FF5722] focus:ring-2 focus:ring-[#FF5722]/20";
+  "mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#FF5722] focus:ring-2 focus:ring-[#FF5722]/20";
 
 interface PilatesLeadFormProps {
   personalization: VerticalCampaignPersonalization | null;
@@ -91,8 +99,9 @@ export function PilatesLeadForm({
   const [bookingNeed, setBookingNeed] = useState<BookingNeed>("unsure");
   const [message, setMessage] = useState("");
   const [interest, setInterest] = useState<VerticalInterestId>(
-    selectedInterest ?? "unsure",
+    selectedInterest ?? "studio-edition",
   );
+  const [intent, setIntent] = useState<FormIntent>("pay");
   const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">(
     "idle",
@@ -121,6 +130,12 @@ export function PilatesLeadForm({
       setInterest(selectedInterest);
     }
   }, [selectedInterest]);
+
+  useEffect(() => {
+    if (!payEligible && intent === "pay") {
+      setIntent("talk");
+    }
+  }, [payEligible, intent]);
 
   function setInterestBoth(next: VerticalInterestId) {
     setInterest(next);
@@ -181,79 +196,96 @@ export function PilatesLeadForm({
 
   if (status === "ok" && successMeta) {
     return (
-      <VerticalLeadSuccess
-        submissionId={successMeta.submissionId}
-        launchAmountCents={successMeta.launchAmountCents}
-        paymentRequired={successMeta.paymentRequired}
-        paymentStatus={successMeta.paymentStatus}
-      />
+      <div className="p-6 sm:p-8">
+        <VerticalLeadSuccess
+          submissionId={successMeta.submissionId}
+          launchAmountCents={successMeta.launchAmountCents}
+          paymentRequired={successMeta.paymentRequired}
+          paymentStatus={successMeta.paymentStatus}
+        />
+      </div>
     );
   }
 
   if (status === "ok") {
     return (
-      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-sm leading-relaxed text-emerald-900">
-        <p className="font-extrabold text-emerald-950">Binnen. Nice.</p>
-        <p className="mt-1.5">
-          Ik lees je aanvraag en neem contact op. Rechtstreeks, meestal snel.
-        </p>
+      <div className="p-6 sm:p-8">
+        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-sm leading-relaxed text-emerald-900">
+          <p className="font-extrabold text-emerald-950">Binnen. Nice.</p>
+          <p className="mt-1.5">
+            Ik lees je aanvraag en neem contact op. Rechtstreeks, meestal snel.
+          </p>
+        </div>
       </div>
     );
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5" noValidate>
+    <form onSubmit={onSubmit} className="divide-y divide-slate-100" noValidate>
       {campaignRef ? (
         <input type="hidden" name="campaign_ref" value={campaignRef} readOnly />
       ) : null}
 
-      <fieldset>
-        <legend className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
-          Welk pakket?
-        </legend>
-        {promo ? (
-          <p className="mt-1 text-[11px] font-semibold leading-snug text-[#FF5722]">
-            {promo.note}
-          </p>
-        ) : null}
-        <div className="mt-2 flex flex-wrap gap-1.5">
-          {INTEREST_OPTIONS.map((opt) => {
-            const selected = interest === opt.id;
-            return (
-              <label
-                key={opt.id}
-                className={
-                  selected
-                    ? "cursor-pointer rounded-full bg-slate-900 px-3 py-1.5 text-xs font-bold text-white shadow-md"
-                    : "cursor-pointer rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
-                }
-              >
-                <input
-                  type="radio"
-                  name="interest"
-                  value={opt.id}
-                  checked={selected}
-                  onChange={() => setInterestBoth(opt.id)}
-                  onFocus={markStart}
-                  className="sr-only"
-                />
-                {opt.label}
-                <span className="ml-1.5 font-semibold text-slate-400">
-                  {opt.short.replace(/^Vanaf\s+/i, "")}
-                </span>
-              </label>
-            );
-          })}
-        </div>
-      </fieldset>
+      <div className="p-6 sm:p-8">
+        <fieldset>
+          <legend className="text-sm font-extrabold tracking-tight text-slate-900">
+            Welk pakket past bij jou?
+          </legend>
+          {promo ? (
+            <p className="mt-1 text-xs font-semibold text-[#FF5722]">
+              {promo.note}
+            </p>
+          ) : null}
+          <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {INTEREST_OPTIONS.map((opt) => {
+              const selected = interest === opt.id;
+              return (
+                <label
+                  key={opt.id}
+                  className={
+                    selected
+                      ? "cursor-pointer rounded-2xl border-2 border-[#FF5722] bg-orange-50/60 p-3.5 shadow-[0_8px_24px_-16px_rgba(255,87,34,0.35)] ring-1 ring-[#FF5722]/15 transition"
+                      : "cursor-pointer rounded-2xl border border-slate-200 bg-white p-3.5 transition hover:border-slate-300 hover:bg-slate-50"
+                  }
+                >
+                  <input
+                    type="radio"
+                    name="interest"
+                    value={opt.id}
+                    checked={selected}
+                    onChange={() => setInterestBoth(opt.id)}
+                    onFocus={markStart}
+                    className="sr-only"
+                  />
+                  <span className="block text-sm font-extrabold text-slate-900">
+                    {opt.label}
+                  </span>
+                  <span className="mt-0.5 block font-mono text-xs font-bold text-[#FF5722]">
+                    {opt.short.replace(/^Vanaf\s+/i, "")}
+                    <span className="font-sans font-semibold text-slate-400">
+                      {" "}
+                      ex. btw/m
+                    </span>
+                  </span>
+                  <span className="mt-1 block text-[11px] leading-snug text-slate-500">
+                    {opt.hint}
+                  </span>
+                </label>
+              );
+            })}
+          </div>
+        </fieldset>
+      </div>
 
-      <div>
-        <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
-          Wie ben jij?
+      <div className="p-6 sm:p-8">
+        <p className="text-sm font-extrabold tracking-tight text-slate-900">
+          Jouw studio
         </p>
-        <div className="mt-2 grid gap-3 sm:grid-cols-2">
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <label className="block text-sm">
-            <span className="text-xs font-semibold text-slate-700">Studio</span>
+            <span className="text-xs font-semibold text-slate-700">
+              Studio naam
+            </span>
             <input
               required
               value={studioName}
@@ -307,79 +339,95 @@ export function PilatesLeadForm({
         </div>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2 lg:items-stretch">
-        <section
-          className="flex flex-col rounded-2xl border-2 border-[#FF5722]/35 bg-gradient-to-b from-orange-50/80 to-white p-4 sm:p-5"
-          aria-labelledby="pilates-express-lane"
+      <div className="p-6 sm:p-8">
+        <p className="text-sm font-extrabold tracking-tight text-slate-900">
+          Hoe wil je verder?
+        </p>
+
+        <div
+          className="mt-4 grid gap-2 sm:grid-cols-2"
+          role="tablist"
+          aria-label="Kies je route"
         >
-          <div className="flex items-start gap-3">
-            <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-[#FF5722] text-white shadow-[0_8px_20px_-8px_rgba(255,87,34,0.6)]">
-              <Rocket className="size-4" aria-hidden />
-            </span>
-            <div>
-              <h4
-                id="pilates-express-lane"
-                className="text-base font-extrabold tracking-tight text-slate-900"
+          <button
+            type="button"
+            role="tab"
+            aria-selected={intent === "pay"}
+            disabled={!payEligible}
+            onClick={() => setIntent("pay")}
+            className={
+              intent === "pay"
+                ? "flex items-center gap-3 rounded-2xl border-2 border-[#FF5722] bg-[#FF5722] px-4 py-3.5 text-left text-white shadow-[0_12px_28px_-12px_rgba(255,87,34,0.55)]"
+                : payEligible
+                  ? "flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3.5 text-left transition hover:border-slate-300"
+                  : "flex cursor-not-allowed items-center gap-3 rounded-2xl border border-dashed border-slate-200 bg-slate-50 px-4 py-3.5 text-left opacity-60"
+            }
+          >
+            <Rocket className="size-5 shrink-0" aria-hidden />
+            <span>
+              <span className="block text-sm font-extrabold">Direct starten</span>
+              <span
+                className={
+                  intent === "pay"
+                    ? "block text-[11px] text-orange-100"
+                    : "block text-[11px] text-slate-500"
+                }
               >
-                Snel live
-              </h4>
-              <p className="mt-1 text-[13px] leading-relaxed text-slate-600">
-                Klaar om te starten? Betaal via iDEAL. Ik mail je meteen met de
-                volgende stappen. Hoe eerder we live gaan, hoe eerder Google je
-                studio leert kennen.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-4 flex flex-1 flex-col">
-            {payEligible ? (
-              <LgePayBlock
-                vertical="pilates-studios"
-                packageId={interest}
-                name={studioName}
-                email={email}
-                businessName={studioName}
-                campaignRef={campaignRef}
-                onPayStart={markStart}
-                variant="express"
-              />
-            ) : (
-              <div className="flex flex-1 flex-col justify-center rounded-xl border border-dashed border-[#FF5722]/30 bg-white/80 px-4 py-5 text-center">
-                <p className="text-sm font-bold text-slate-900">
-                  Signature of hulp bij kiezen?
-                </p>
-                <p className="mt-1.5 text-[13px] leading-relaxed text-slate-600">
-                  Daarvoor eerst even sparren. Gebruik het blok &quot;Eerst
-                  praten&quot;. Ik denk mee welk pakket past.
-                </p>
-              </div>
-            )}
-          </div>
-        </section>
-
-        <section
-          className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50/90 p-4 sm:p-5"
-          aria-labelledby="pilates-talk-lane"
-        >
-          <div className="flex items-start gap-3">
-            <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-[#FF5722]">
-              <MessageCircle className="size-4" aria-hidden />
+                Betaal via iDEAL, ik plan meteen
+              </span>
             </span>
-            <div>
-              <h4
-                id="pilates-talk-lane"
-                className="text-base font-extrabold tracking-tight text-slate-900"
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={intent === "talk"}
+            onClick={() => setIntent("talk")}
+            className={
+              intent === "talk"
+                ? "flex items-center gap-3 rounded-2xl border-2 border-slate-900 bg-slate-900 px-4 py-3.5 text-left text-white shadow-md"
+                : "flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3.5 text-left transition hover:border-slate-300"
+            }
+          >
+            <MessageCircle className="size-5 shrink-0" aria-hidden />
+            <span>
+              <span className="block text-sm font-extrabold">Eerst praten</span>
+              <span
+                className={
+                  intent === "talk"
+                    ? "block text-[11px] text-slate-300"
+                    : "block text-[11px] text-slate-500"
+                }
               >
-                Eerst praten
-              </h4>
-              <p className="mt-1 text-[13px] leading-relaxed text-slate-600">
-                Vragen over pakket, stad, boekingssysteem of timing? Stuur je
-                studio door. Ik lees alles zelf en reageer rechtstreeks.
-              </p>
-            </div>
-          </div>
+                Vragen? Stuur door, ik bel of mail
+              </span>
+            </span>
+          </button>
+        </div>
 
-          <div className="mt-4 flex flex-1 flex-col gap-3">
+        {intent === "pay" && payEligible ? (
+          <div className="mt-6">
+            <LgePayBlock
+              vertical="pilates-studios"
+              packageId={interest}
+              name={studioName}
+              email={email}
+              businessName={studioName}
+              campaignRef={campaignRef}
+              onPayStart={markStart}
+              variant="checkout"
+            />
+          </div>
+        ) : null}
+
+        {intent === "talk" || !payEligible ? (
+          <div className="mt-6 space-y-4 rounded-2xl border border-slate-200 bg-slate-50/80 p-4 sm:p-5">
+            {!payEligible ? (
+              <p className="text-sm leading-relaxed text-slate-600">
+                Voor Signature of hulp bij kiezen starten we via contact. Ik denk
+                mee welk pakket past.
+              </p>
+            ) : null}
+
             <label className="block text-sm">
               <span className="text-xs font-semibold text-slate-700">
                 Boeken / app
@@ -398,7 +446,7 @@ export function PilatesLeadForm({
               </select>
             </label>
 
-            <label className="block flex-1 text-sm">
+            <label className="block text-sm">
               <span className="text-xs font-semibold text-slate-700">
                 Kort toelichten{" "}
                 <span className="font-normal text-slate-400">optioneel</span>
@@ -409,7 +457,7 @@ export function PilatesLeadForm({
                 onFocus={markStart}
                 rows={3}
                 placeholder="Waar loop je tegenaan? Nieuwe studio, zwakke site, twijfel over pakket…"
-                className={`${inputClass} min-h-[5.5rem] resize-none`}
+                className={`${inputClass} resize-none`}
               />
             </label>
 
@@ -434,14 +482,34 @@ export function PilatesLeadForm({
             <button
               type="submit"
               disabled={status === "loading"}
-              className="mt-auto inline-flex w-full items-center justify-center rounded-2xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-bold text-slate-900 shadow-sm transition hover:border-[#FF5722] hover:text-[#FF5722] disabled:opacity-60"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-sm font-bold text-white shadow-[0_12px_28px_-10px_rgba(255,87,34,0.45)] transition hover:bg-[#e64a19] disabled:opacity-60"
             >
               {status === "loading"
                 ? "Versturen…"
-                : "Stuur door · ik neem contact op"}
+                : "Stuur mijn studio door · ik neem contact op"}
             </button>
           </div>
-        </section>
+        ) : null}
+
+        {intent === "pay" && payEligible ? (
+          <div className="mt-5 flex items-start gap-2 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">
+            <ShieldCheck
+              className="mt-0.5 size-4 shrink-0 text-emerald-600"
+              aria-hidden
+            />
+            <p className="text-xs leading-relaxed text-slate-600">
+              Liever eerst vragen? Klik op{" "}
+              <button
+                type="button"
+                onClick={() => setIntent("talk")}
+                className="font-bold text-[#FF5722] underline decoration-[#FF5722]/30 underline-offset-2"
+              >
+                Eerst praten
+              </button>{" "}
+              hierboven.
+            </p>
+          </div>
+        ) : null}
       </div>
     </form>
   );

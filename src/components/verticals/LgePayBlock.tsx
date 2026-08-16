@@ -1,8 +1,12 @@
 "use client";
 
-import { CreditCard } from "lucide-react";
+import { ArrowRight, Lock } from "lucide-react";
 import { useState } from "react";
 
+import {
+  IdealBadge,
+  MollieTrustLine,
+} from "@/components/verticals/PaymentMethodBadges";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { isCheckoutPackageId } from "@/lib/mollie/checkout-eligible";
 import {
@@ -20,7 +24,7 @@ interface LgePayBlockProps {
   businessName: string;
   campaignRef: string | null;
   onPayStart?: () => void;
-  variant?: "default" | "express";
+  variant?: "default" | "express" | "checkout";
 }
 
 export function LgePayBlock({
@@ -47,6 +51,7 @@ export function LgePayBlock({
   const quote = buildLgeCheckoutQuote(vertical, checkoutPackageId);
   const monthlyExclLabel = `€${quote.monthlyExcl.value.replace(".", ",")}`;
 
+  const isCheckout = variant === "checkout";
   const isExpress = variant === "express";
 
   async function handlePay(): Promise<void> {
@@ -55,7 +60,7 @@ export function LgePayBlock({
 
     if (trimmedName.length < 2) {
       setPayStatus("error");
-      setPayError("Vul je naam of bedrijfsnaam in.");
+      setPayError("Vul je studio naam in.");
       return;
     }
 
@@ -87,6 +92,62 @@ export function LgePayBlock({
     }
   }
 
+  if (isCheckout) {
+    return (
+      <div className="overflow-hidden rounded-2xl border border-[#FF5722]/25 bg-gradient-to-br from-orange-50 via-white to-white">
+        <div className="border-b border-orange-100/80 bg-white/80 px-5 py-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <p className="text-sm font-extrabold tracking-tight text-slate-900">
+                Betalen en meteen starten
+              </p>
+              <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                Eerste maand {monthlyExclLabel} ex. btw. Daarna maandelijks
+                hetzelfde bedrag ex. btw. Opzegbaar per maand.
+              </p>
+            </div>
+            <MollieTrustLine />
+          </div>
+        </div>
+
+        <div className="px-5 py-5">
+          <ul className="space-y-2 text-[12px] font-semibold text-slate-600">
+            <li className="flex items-center gap-2">
+              <IdealBadge />
+              <span>iDEAL voor je eerste maand</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <Lock className="size-3.5 text-slate-400" aria-hidden />
+              <span>Daarna automatische incasso via Mollie</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <ArrowRight className="size-3.5 text-[#FF5722]" aria-hidden />
+              <span>Direct daarna mail ik je met de kick-off</span>
+            </li>
+          </ul>
+
+          {payError ? (
+            <p className="mt-4 text-xs font-semibold text-rose-700" role="alert">
+              {payError}
+            </p>
+          ) : null}
+
+          <button
+            type="button"
+            onClick={() => void handlePay()}
+            disabled={payStatus === "loading"}
+            className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-base font-bold text-white shadow-[0_16px_36px_-12px_rgba(255,87,34,0.55)] transition hover:bg-[#e64a19] disabled:opacity-60"
+          >
+            <IdealBadge className="h-6 px-2 text-[10px]" />
+            {payStatus === "loading"
+              ? "Door naar Mollie…"
+              : `Betaal ${monthlyExclLabel} ex. btw`}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       className={
@@ -97,50 +158,18 @@ export function LgePayBlock({
     >
       <div className={isExpress ? "rounded-lg bg-[#FF5722]/[0.06] p-3.5" : undefined}>
         <div className="flex items-start gap-3">
-          <span
-            className={
-              isExpress
-                ? "inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-[#FF5722] text-white"
-                : "inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-[#FF5722]/10 text-[#FF5722]"
-            }
-          >
-            <CreditCard className="size-4" aria-hidden />
-          </span>
+          <IdealBadge className="h-9 shrink-0 rounded-xl px-3 text-xs" />
           <div className="min-w-0 flex-1">
             <p className="text-sm font-extrabold tracking-tight text-slate-900">
-              {isExpress ? "Stap 1 · betaal via iDEAL" : "Direct starten via iDEAL"}
+              {isExpress ? "Betaal via iDEAL" : "Direct starten via iDEAL"}
             </p>
             <p className="mt-1 text-xs leading-relaxed text-slate-600">
-              {isExpress ? (
-                <>
-                  Eerste maand {monthlyExclLabel} ex. btw. Daarna hetzelfde bedrag
-                  per maand ex. btw. Ik mail je meteen met de volgende stappen.
-                </>
-              ) : (
-                <>
-                  Eerste betaling {monthlyExclLabel} ex. btw via iDEAL. Daarna{" "}
-                  {monthlyExclLabel} per maand ex. btw via incasso. Maandelijks
-                  opzegbaar. Inclusief domeinnaam en hosting (t.w.v. €25 per
-                  maand).
-                </>
-              )}
+              Eerste betaling {monthlyExclLabel} ex. btw via iDEAL. Daarna{" "}
+              {monthlyExclLabel} per maand ex. btw via incasso. Maandelijks
+              opzegbaar.
             </p>
           </div>
         </div>
-
-        {isExpress ? (
-          <ol className="mt-3 space-y-1.5 border-t border-[#FF5722]/10 pt-3 text-[11px] font-semibold text-slate-600">
-            <li className="flex gap-2">
-              <span className="text-[#FF5722]">→</span> Betalen duurt 30 seconden
-            </li>
-            <li className="flex gap-2">
-              <span className="text-[#FF5722]">→</span> Ik plan je content en kick-off
-            </li>
-            <li className="flex gap-2">
-              <span className="text-[#FF5722]">→</span> Site live, Google kan beginnen
-            </li>
-          </ol>
-        ) : null}
 
         {payError ? (
           <p className="mt-3 text-xs font-semibold text-rose-700" role="alert">
@@ -160,9 +189,7 @@ export function LgePayBlock({
         >
           {payStatus === "loading"
             ? "Door naar Mollie…"
-            : isExpress
-              ? `Betaal ${monthlyExclLabel} ex. btw · start meteen`
-              : `Betaal ${monthlyExclLabel} ex. btw en start`}
+            : `Betaal ${monthlyExclLabel} ex. btw en start`}
         </button>
       </div>
     </div>
