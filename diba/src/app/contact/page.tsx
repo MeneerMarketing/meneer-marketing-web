@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Ingangkiezer from "@/components/contact/Ingangkiezer";
 import Label from "@/components/ui/Label";
+import { SITUATIES } from "@/data/voorwaarden";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
@@ -39,6 +41,25 @@ import {
  *
  * De signatuur van deze pagina is de ingangkiezer: welke vraag hoort bij welk kanaal, en
  * wat er via dat kanaal niet kan. Zie `Ingangkiezer.tsx`.
+ *
+ * WAT ERBIJ IS GEKOMEN: DE REDEN DAT MENSEN HIER KOMEN.
+ *
+ * Deze pagina vertelde waar je je vraag kwijt kunt en niet wat er gebeurt als je hem
+ * stelt. Terwijl een groot deel van het verkeer op een contactpagina van een kliniek
+ * bestaat uit twee mensen: iemand die moet afzeggen en iemand die in de file staat. Die
+ * zoeken het telefoonnummer omdat ze iets willen wéten, en dat antwoord stond alleen op
+ * de algemene voorwaarden, in de u-vorm, tussen de juridische tekst.
+ *
+ * Diezelfde vier situaties staan hier nu wel, uit dezelfde bron. Ze waren al in de
+ * jij-vorm geschreven, dus er valt niets te hertalen en niets te laten afwijken.
+ *
+ * OPENINGSTIJDEN STAAN ER NOG STEEDS NIET, EN DAT IS EEN ECHT GAT.
+ *
+ * Ze staan nergens in de data en ook niet in het bedrijfsschema, en dat laatste kost
+ * zichtbaarheid in Google. Ik verzin ze niet: dit is precies het soort gegeven waar
+ * iemand op afreist. Wat er nu staat is wat wél waar is, namelijk dat de agenda toont
+ * wanneer er plek is. [GEGEVEN-NODIG: de openingstijden per dag, Okan. Zodra ze er zijn
+ * horen ze ook in openingHours van het LocalBusiness-schema.]
  *
  * Eén donkergroen vlak: het blok over wat er niet op afstand kan (§5).
  */
@@ -166,9 +187,18 @@ export default function ContactPage() {
               ))}
             </ul>
 
-            <p className="mt-6 border-t border-[var(--g-050)] pt-5 text-[14px] leading-6 text-[var(--t-muted)]">
-              Openingstijden staan hier nog niet. Bel of app gerust; dan hoor je
-              meteen wanneer het uitkomt.
+            {/* Stond op een haarlijn, en zei bovendien dat openingstijden hier niet
+                staan terwijl er verderop een sectie over gaat. Twee antwoorden op één
+                vraag op dezelfde pagina; nu verwijst hij ernaar. */}
+            <p className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-[14px] leading-6 text-[var(--t-muted)]">
+              Wanneer we er zijn zie je het snelst in de agenda.{" "}
+              <Link
+                href="#agenda"
+                className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Verderop staat waarom
+              </Link>
+              , en bellen kan altijd.
             </p>
           </div>
         </div>
@@ -216,11 +246,13 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <ul className="space-y-5">
+              {/* Stonden op een haarlijn. Een vlak scheidt net zo goed, en op --g-800
+                  haalt --on-dark-body 7,57 tegen 4,08 op doorschijnend wit. */}
+              <ul className="space-y-3">
                 {NIET_OP_AFSTAND.map((n) => (
                   <li
                     key={n.kop}
-                    className="border-b border-white/15 pb-5 last:border-b-0 last:pb-0"
+                    className="rounded-[var(--r-sm)] bg-[var(--g-800)] p-5"
                   >
                     <p className="text-[17px] leading-7 font-medium">{n.kop}</p>
                     <p className="mt-1.5 max-w-[52ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
@@ -229,6 +261,114 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Afzeggen, te laat, niet komen ──
+          De twee grootste redenen dat iemand een contactpagina opzoekt: hij moet afzeggen
+          of hij staat in de file. Het antwoord stond alleen op de algemene voorwaarden, in
+          de u-vorm tussen de juridische tekst. Zelfde bron, hier in gewone taal. */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div className="max-w-[62ch]">
+            <Label>Voordat je belt</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Afzeggen, verzetten
+              <br />
+              <span className="diba-accent">of te laat komen.</span>
+            </h2>
+            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Bel je hierover, dan hoor je dit. Het staat hier zodat je het ook
+              kunt lezen als je geen zin hebt in bellen, en zodat je vooraf weet
+              wat het kost in plaats van achteraf.
+            </p>
+          </div>
+
+          <ul className="mt-12 grid gap-4 lg:grid-cols-2 lg:items-start">
+            {SITUATIES.map((s) => (
+              <li
+                key={s.id}
+                className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8"
+              >
+                <p className="diba-card-title text-[var(--t-strong)]">
+                  {s.kop}
+                </p>
+                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                  {s.gebeurt}
+                </p>
+                <div className="mt-5 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4">
+                  <p className="diba-label text-[var(--t-label)]">Wat het kost</p>
+                  <p className="mt-1.5 text-[16px] leading-7 text-[var(--t-strong)]">
+                    {s.kost}
+                  </p>
+                </div>
+                <p className="mt-5 text-[15px] leading-7 text-[var(--t-muted)]">
+                  {s.waarom}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 max-w-[70ch] text-[15px] leading-7 text-[var(--t-muted)]">
+            Deze vier staan voluit in de{" "}
+            <Link
+              href="/algemene-voorwaarden"
+              className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              algemene voorwaarden
+            </Link>
+            , samen met wat er gebeurt als wij moeten afzeggen.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Wanneer we open zijn ──
+          De openingstijden staan nergens in de data en ook niet in het bedrijfsschema. Ik
+          verzin ze niet: dit is het soort gegeven waar iemand op afreist. Wat hier staat is
+          wat wél waar is, namelijk dat de agenda toont wanneer er plek is. */}
+      <section
+        id="agenda"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+      >
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <Label>Wanneer we er zijn</Label>
+            <h2 className="diba-display-m mt-4 max-w-[16ch]">
+              De agenda is
+              <br />
+              <span className="diba-accent">het antwoord.</span>
+            </h2>
+          </div>
+          <div className="max-w-[58ch]">
+            <p className="text-[17px] leading-8 text-[var(--t-body)]">
+              Wat je in de agenda kunt aanklikken, is wat er open is. Dat is
+              actueler dan een rijtje openingstijden op een pagina, want een
+              vrije dag of een volgeboekte middag zie je daar meteen en hier
+              niet.
+            </p>
+            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+              Kom je liever langs zonder afspraak, bel dan eerst. De deur staat
+              niet de hele dag open en we willen je geen rit voor niets laten
+              maken.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+              <Link
+                href={DIBA_SALONIZED_BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
+              >
+                Bekijk de agenda
+                <span aria-hidden="true">↗</span>
+              </Link>
+              <a
+                href={DIBA_TELEFOON_HREF}
+                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Of bel {DIBA_TELEFOON}
+              </a>
             </div>
           </div>
         </div>

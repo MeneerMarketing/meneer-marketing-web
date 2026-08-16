@@ -133,10 +133,13 @@ export default function Ingangkiezer() {
                 <span className="text-[16px] leading-6 font-medium">
                   {i.vraag}
                 </span>
+                {/* Stond op --g-300: 1,97 op wit, en dat is te bleek om te zien. Deze
+                    pijl wijst aan welke vraag je kunt aantikken, dus zichtbaarheid is
+                    hier geen versiering. --t-label haalt 4,54. */}
                 <span
                   aria-hidden="true"
                   className={`shrink-0 text-[18px] leading-none transition-transform duration-200 ${
-                    aan ? "translate-x-1 text-white" : "text-[var(--g-300)]"
+                    aan ? "translate-x-1 text-white" : "text-[var(--t-label)]"
                   }`}
                 >
                   ›
