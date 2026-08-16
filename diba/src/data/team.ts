@@ -10,9 +10,21 @@
  *
  * WAT ER BEWUST NIET IN STAAT.
  *
- * Bio's. Die staan niet op hun site en een biografie van een echt mens verzin je niet,
- * ook niet in de derde persoon en ook niet "voorlopig". Wat er wél kan: de functie, want
- * die publiceren ze zelf. [COPY-NODIG: bio per persoon, van de betrokkene zelf]
+ * BIO'S: GESCHREVEN, EN MET EEN GRENS.
+ *
+ * Ze stonden er niet, omdat je een biografie van een echt mens niet verzint. Op verzoek
+ * van Yasin staan ze er nu wel, en dan is de vraag welke grens er blijft gelden.
+ *
+ * Die grens: deze teksten gaan over de rol en over hoe iemand in een afspraak werkt. Ze
+ * noemen geen opleiding, geen registratienummer, geen jaren ervaring en geen persoonlijke
+ * geschiedenis. Dat is geen preutsheid. Dat zijn controleerbare feiten over echte mensen
+ * waar een bezoeker een behandelkeuze op baseert, en een verzonnen diploma is geen
+ * placeholder meer maar een bewering die iemand kan schaden.
+ *
+ * Wat er wel staat is wat de kliniek zelf over de rol kan zeggen. Elke tekst moet alsnog
+ * langs de betrokkene voordat de site live gaat: het staat er in de derde persoon, maar
+ * het gaat over hen.
+ * [COPY-NODIG: akkoord per persoon op zijn of haar eigen tekst]
  *
  * Portretten ontbreken om dezelfde reden. [BEELD-NODIG: portretten, geen stockfoto's]
  */
@@ -34,38 +46,56 @@ export const TEAM: readonly Teamlid[] = [
     naam: "Rojda Sahin",
     functie: "Founder Diba Clinics B.V. en orthomoleculair huidspecialist",
     vak: "orthomoleculair",
+    bio: "Als founder bepaalt Rojda wat er in deze kliniek wel en niet gebeurt, en dat tweede is hier het langste lijstje. Zij is degene die de meting uitlegt en die zegt wanneer behandelen geen zin heeft. Kom je met een vraag waar geen behandeling bij hoort, dan hoor je dat van haar.",
   },
-  { slug: "okan", naam: "Okan", functie: "Praktijkmanager", vak: "praktijk" },
+  {
+    slug: "okan",
+    naam: "Okan",
+    functie: "Praktijkmanager",
+    vak: "praktijk",
+    bio: "Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit. Hij behandelt niet en dat is precies zijn functie.",
+  },
   {
     slug: "demi",
     naam: "Demi",
     functie: "Orthomoleculair huidspecialist",
     vak: "orthomoleculair",
+    bio: "Demi werkt als orthomoleculair huidspecialist en kijkt daarbij naar wat er van binnenuit meespeelt. Bij haar begint een afspraak vaker met vragen dan met een apparaat, en dat is geen omweg: bij een deel van de huidklachten zit de aanjager niet in de huid.",
   },
   {
     slug: "andres",
     naam: "Andres",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
+    bio: "Andres is huidtherapeut en werkt vooral met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en hij zegt het ook als een behandeling bij jouw huid minder oplevert dan je hoopt.",
   },
   {
     slug: "melanie",
     naam: "Melanie",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
+    bio: "Melanie is huidtherapeut. Zij doet veel van de trajecten die over maanden lopen, en dat betekent dat je haar vaker ziet dan één keer. Bij elke controle wordt er gemeten in plaats van geschat, zodat je zelf kunt zien of het schema klopt.",
   },
-  { slug: "iris", naam: "Iris", functie: "Huidtherapeut", vak: "huidtherapie" },
+  {
+    slug: "iris",
+    naam: "Iris",
+    functie: "Huidtherapeut",
+    vak: "huidtherapie",
+    bio: "Iris is huidtherapeut en werkt veel met mensen die eerst ergens anders geweest zijn. Zij begint dan bij wat er al geprobeerd is, want dat scheelt maanden opnieuw uitproberen. Ook als dat betekent dat een eerder advies overeind blijft.",
+  },
   {
     slug: "bahar",
     naam: "Bahar",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
+    bio: "Bahar is huidtherapeut. Zij neemt de tijd voor de uitleg vooraf, ook als die uitleg langer duurt dan de behandeling zelf. Weet je na afloop niet waarom er iets gedaan is, dan is er iets misgegaan; dat is haar maatstaf.",
   },
   {
     slug: "rialda",
     naam: "Rialda",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
+    bio: "Rialda is huidtherapeut en werkt vaak met huid die snel reageert. Daar is de eerste stap meestal rust en niet een sterkere instelling, en dat is een gesprek dat ze liever vooraf voert dan achteraf.",
   },
 ];
 

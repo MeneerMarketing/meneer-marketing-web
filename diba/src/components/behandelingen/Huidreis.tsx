@@ -119,14 +119,15 @@ export default function Huidreis() {
 
           {/* Wat de sonde tot nu toe heeft doorlopen.
               --g-700 en niet --g-600: de laagnamen staan hier in wit overheen, en op
-              --g-600 bij 0,82 haalt dat 3,38 op de bovenste laag. Onder AA, en op een
-              schaal van tien procent doorzichtigheid niet op te lossen. Met --g-700 wordt
-              het 4,64, en de lagen schemeren er nog steeds doorheen. */}
+              --g-600 bij 0,82 haalt dat 3,38 op de bovenste laag. Met --g-700 werd het
+              4,44, en dat is nog altijd zes honderdsten onder AA omdat juist de bovenste
+              laag de lichtste is. Op 0,86 wordt het 4,85, en de lagen schemeren er nog
+              steeds doorheen: dat is waar die doorzichtigheid voor bedoeld was. */}
           <div
             className="absolute inset-x-0 top-0 bg-[var(--g-700)]"
             style={{
               height: `${diepte}%`,
-              opacity: 0.82,
+              opacity: 0.86,
               transition: sleept ? "none" : "height .3s var(--ease-diba)",
             }}
           />

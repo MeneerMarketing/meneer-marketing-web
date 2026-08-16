@@ -198,7 +198,7 @@ export default function Spiegeltest() {
                 <button
                   type="button"
                   onClick={() => beantwoord(a.id)}
-                  className="w-full rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white p-5 text-left transition-colors hover:border-[var(--g-300)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="w-full rounded-[var(--r-sm)] bg-white p-5 text-left transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   <span className="diba-card-title block">{a.label}</span>
                   <span className="mt-1 block text-[15px] leading-7 text-[var(--t-body)]">

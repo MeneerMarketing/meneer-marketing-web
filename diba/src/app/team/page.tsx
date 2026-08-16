@@ -25,7 +25,8 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
  * hoort te weten. Zie het commentaar bij `VAKGEBIEDEN` in `team.ts` voor de bronnen en
  * voor waarom dit een besluit van Okan is en niet van mij.
  *
- * WAT ER NIET STAAT: bio's en portretten. Die verzin je niet over echte mensen. De
+ * BIO`S: er staan er nu, over de rol en niet over de persoon. Zie team.ts.
+ * WAT ER NOG STEEDS NIET STAAT: bio's en portretten. Die verzin je niet over echte mensen. De
  * kaarten hieronder tonen wat de kliniek zelf publiceert, en meer niet.
  *
  * Eén donkergroen vlak: het blok over de twee titels (§5).

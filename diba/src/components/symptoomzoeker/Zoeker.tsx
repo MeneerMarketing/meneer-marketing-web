@@ -119,7 +119,7 @@ export default function Zoeker() {
                 <li key={t.pad}>
                   <Link
                     href={t.pad}
-                    className="flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white p-5 transition-colors hover:border-[var(--g-300)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                    className="flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] bg-white p-5 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
                     <span>
                       <span className="diba-card-title block">{t.naam}</span>

@@ -90,7 +90,7 @@ export default function LaserConfiguratorPage() {
               ze verzonnen waren. Ze komen nu van de tarievenlijst van de kliniek, dus is
               het voorbehoud verschoven naar wat er wél nog ontbreekt: het aantal sessies.
               Dat is geen detail maar het grootste deel van wat je uiteindelijk betaalt. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 shadow-[var(--shadow-float)] sm:p-10">
             <Label>Voordat je begint</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
               Dit is de prijs per sessie, niet van je traject

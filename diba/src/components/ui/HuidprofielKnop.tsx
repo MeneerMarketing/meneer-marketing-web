@@ -164,7 +164,7 @@ export default function HuidprofielKnop() {
                 <Link
                   href="/behandelingen"
                   onClick={() => setOpen(false)}
-                  className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] border border-[var(--g-100)] px-5 text-[var(--t-label)] transition-colors hover:border-[var(--g-300)]"
+                  className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-050)] px-5 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)]"
                 >
                   Alle behandelingen
                 </Link>

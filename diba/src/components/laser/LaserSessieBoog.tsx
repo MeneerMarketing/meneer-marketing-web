@@ -22,7 +22,7 @@ export default function LaserSessieBoog() {
   const current = SESSIES[active];
 
   return (
-    <div className="rounded-[2rem] border border-[var(--g-100)] bg-white p-7 sm:p-10">
+    <div className="rounded-[var(--r-lg)] bg-white p-7 shadow-[var(--shadow-float)] sm:p-10">
       <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
         Traject in beeld
       </p>
@@ -92,7 +92,7 @@ export default function LaserSessieBoog() {
             className={`rounded-full px-4 py-2 text-[10px] font-medium uppercase tracking-[.12em] transition ${
               i === active
                 ? "bg-[var(--g-700)] text-white"
-                : "border border-[var(--g-100)] bg-white text-[var(--g-700)] hover:bg-[var(--g-050)]"
+                : "bg-[var(--g-050)] text-[var(--g-700)] hover:bg-[var(--g-100)]"
             }`}
           >
             {s.label}

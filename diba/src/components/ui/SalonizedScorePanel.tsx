@@ -44,7 +44,7 @@ export default function SalonizedScorePanel({
         href={SALONIZED_REVIEWS_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-flex flex-wrap items-center gap-3 rounded-[var(--r-pill)] bg-white px-4 py-2 text-[11px] font-medium uppercase tracking-[.12em] text-[var(--g-700)] transition-colors hover:bg-[var(--g-050)] ${className}`}
+        className={`inline-flex flex-wrap items-center gap-3 rounded-[var(--r-pill)] bg-[var(--g-050)] px-4 py-2 text-[11px] font-medium uppercase tracking-[.12em] text-[var(--g-700)] transition-colors hover:bg-[var(--g-100)] ${className}`}
       >
         <Stars size={11} />
         <span>
