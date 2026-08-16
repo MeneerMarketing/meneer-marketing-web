@@ -1,11 +1,16 @@
+import Image from "next/image";
+
+const IDEAL_LOGO = "/brand/ideal-wero-lockup.png";
+
 export function IdealBadge({ className = "" }: { className?: string }) {
   return (
-    <span
-      className={`inline-flex h-7 items-center rounded-md bg-[#CC0066] px-2.5 text-[11px] font-black tracking-wide text-white shadow-sm ${className}`}
-      aria-label="iDEAL"
-    >
-      iDEAL
-    </span>
+    <Image
+      src={IDEAL_LOGO}
+      alt="iDEAL · wero"
+      width={132}
+      height={36}
+      className={`h-8 w-auto object-contain ${className}`}
+    />
   );
 }
 

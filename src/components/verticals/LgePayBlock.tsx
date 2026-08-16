@@ -138,7 +138,7 @@ export function LgePayBlock({
             disabled={payStatus === "loading"}
             className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-base font-bold text-white shadow-[0_16px_36px_-12px_rgba(255,87,34,0.55)] transition hover:bg-[#e64a19] disabled:opacity-60"
           >
-            <IdealBadge className="h-6 px-2 text-[10px]" />
+            <IdealBadge className="h-6" />
             {payStatus === "loading"
               ? "Door naar Mollie…"
               : `Betaal ${monthlyExclLabel} ex. btw`}
@@ -158,7 +158,7 @@ export function LgePayBlock({
     >
       <div className={isExpress ? "rounded-lg bg-[#FF5722]/[0.06] p-3.5" : undefined}>
         <div className="flex items-start gap-3">
-          <IdealBadge className="h-9 shrink-0 rounded-xl px-3 text-xs" />
+          <IdealBadge className="h-9 shrink-0" />
           <div className="min-w-0 flex-1">
             <p className="text-sm font-extrabold tracking-tight text-slate-900">
               {isExpress ? "Betaal via iDEAL" : "Direct starten via iDEAL"}
