@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
+import { LgePayBlock } from "@/components/verticals/LgePayBlock";
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
@@ -302,6 +303,16 @@ export function PilatesLeadForm({
         </label>
       </div>
 
+      <LgePayBlock
+        vertical="pilates-studios"
+        packageId={interest}
+        name={studioName}
+        email={email}
+        businessName={studioName}
+        campaignRef={campaignRef}
+        onPayStart={markStart}
+      />
+
       <label className="block text-sm">
         <span className="text-xs font-semibold text-slate-700">Boeken / app</span>
         <select
@@ -350,6 +361,15 @@ export function PilatesLeadForm({
           {error}
         </p>
       ) : null}
+
+      <div className="relative py-1">
+        <div className="absolute inset-0 flex items-center" aria-hidden>
+          <span className="w-full border-t border-slate-200" />
+        </div>
+        <p className="relative mx-auto w-fit bg-white px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+          Of eerst contact
+        </p>
+      </div>
 
       <button
         type="submit"

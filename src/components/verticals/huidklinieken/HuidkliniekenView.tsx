@@ -1,7 +1,9 @@
 ﻿"use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+import { LgeCheckoutThankYou } from "@/components/verticals/LgeCheckoutThankYou";
+import { LgeFloatingContact } from "@/components/verticals/LgeFloatingContact";
 import { HuidkliniekCampaignBar } from "@/components/verticals/huidklinieken/HuidkliniekCampaignBar";
 import { HuidkliniekCampaignTracker } from "@/components/verticals/huidklinieken/HuidkliniekCampaignTracker";
 import { HuidkliniekExclusivity } from "@/components/verticals/huidklinieken/HuidkliniekExclusivity";
@@ -24,6 +26,7 @@ import { packageKeyToInterest } from "@/lib/lge/package-map";
 interface HuidkliniekenViewProps {
   personalization: VerticalCampaignPersonalization | null;
   campaignRef: string | null;
+  checkoutPaymentId?: string | null;
 }
 
 /**
@@ -34,6 +37,7 @@ interface HuidkliniekenViewProps {
 export function HuidkliniekenView({
   personalization,
   campaignRef,
+  checkoutPaymentId = null,
 }: HuidkliniekenViewProps) {
   const [selectedInterest, setSelectedInterest] = useState<VerticalInterestId>(
     () =>
@@ -41,12 +45,25 @@ export function HuidkliniekenView({
       "unsure",
   );
 
+  useEffect(() => {
+    const preset = sessionStorage.getItem("lge-interest");
+    if (!preset) {
+      return;
+    }
+
+    sessionStorage.removeItem("lge-interest");
+    setSelectedInterest(preset as VerticalInterestId);
+  }, []);
+
   function onPackageSelect(interest: VerticalInterestId) {
     setSelectedInterest(interest);
   }
 
   return (
     <main id="main">
+      {checkoutPaymentId ? (
+        <LgeCheckoutThankYou paymentId={checkoutPaymentId} />
+      ) : null}
       <HuidkliniekCampaignTracker campaignRef={campaignRef} />
       {personalization?.businessName ? (
         <HuidkliniekCampaignBar personalization={personalization} />
@@ -74,6 +91,7 @@ export function HuidkliniekenView({
         selectedInterest={selectedInterest}
         onInterestChange={setSelectedInterest}
       />
+      <LgeFloatingContact vertical="huidklinieken" />
     </main>
   );
 }

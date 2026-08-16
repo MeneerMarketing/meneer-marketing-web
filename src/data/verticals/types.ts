@@ -135,6 +135,10 @@ export interface VerticalPricingConfig {
   /** Minimale contractduur in maanden voor maandpakketten */
   minTermMonths: number;
   termDisclaimer: string;
+  /** Domein + hosting inbegrepen bij maandpakketten */
+  includedInfraNote: string;
+  /** Onderhoud, wijzigingen en bereikbaarheid bij maandpakketten */
+  includedCareNote: string;
   /** Tijdelijke launch-actie. Override setup-weergave op alle maandpakketten. */
   launchPromo?: VerticalLaunchPromo;
   packages: readonly VerticalPackage[];

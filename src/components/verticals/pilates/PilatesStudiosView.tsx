@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+import { LgeCheckoutThankYou } from "@/components/verticals/LgeCheckoutThankYou";
+import { LgeFloatingContact } from "@/components/verticals/LgeFloatingContact";
 import { PilatesBookingApp } from "@/components/verticals/pilates/PilatesBookingApp";
 import { PilatesCampaignBar } from "@/components/verticals/pilates/PilatesCampaignBar";
 import { PilatesCampaignTracker } from "@/components/verticals/pilates/PilatesCampaignTracker";
 import { PilatesCase } from "@/components/verticals/pilates/PilatesCase";
-import { PilatesCompleteFlow } from "@/components/verticals/pilates/PilatesCompleteFlow";
-import { PilatesExclusivity } from "@/components/verticals/pilates/PilatesExclusivity";
 import { PilatesFaq } from "@/components/verticals/pilates/PilatesFaq";
 import { PilatesFinalCta } from "@/components/verticals/pilates/PilatesFinalCta";
 import { PilatesGoogleStrategy } from "@/components/verticals/pilates/PilatesGoogleStrategy";
@@ -28,11 +28,13 @@ import { packageKeyToInterest } from "@/lib/lge/package-map";
 interface PilatesStudiosViewProps {
   personalization: VerticalCampaignPersonalization | null;
   campaignRef: string | null;
+  checkoutPaymentId?: string | null;
 }
 
 export function PilatesStudiosView({
   personalization,
   campaignRef,
+  checkoutPaymentId = null,
 }: PilatesStudiosViewProps) {
   const [selectedInterest, setSelectedInterest] = useState<VerticalInterestId>(
     () =>
@@ -40,23 +42,34 @@ export function PilatesStudiosView({
       "unsure",
   );
 
+  useEffect(() => {
+    const preset = sessionStorage.getItem("lge-interest");
+    if (!preset) {
+      return;
+    }
+
+    sessionStorage.removeItem("lge-interest");
+    setSelectedInterest(preset as VerticalInterestId);
+  }, []);
+
   function onPackageSelect(interest: VerticalInterestId) {
     setSelectedInterest(interest);
   }
 
   return (
     <main id="main">
+      {checkoutPaymentId ? (
+        <LgeCheckoutThankYou paymentId={checkoutPaymentId} />
+      ) : null}
       <PilatesCampaignTracker campaignRef={campaignRef} />
       {personalization?.businessName ? (
         <PilatesCampaignBar personalization={personalization} />
       ) : null}
       <PilatesHero />
       <PilatesStudioExperience />
-      <PilatesCompleteFlow />
       <PilatesWhyPrice />
       <PilatesGoogleStrategy />
       <PilatesLocalSeo />
-      <PilatesExclusivity personalization={personalization} />
       <PilatesBookingApp campaignRef={campaignRef} />
       <PilatesPricing
         campaignRef={campaignRef}
@@ -69,7 +82,6 @@ export function PilatesStudiosView({
       />
       <PilatesCase />
       <PilatesHowItWorks />
-      <PilatesInternalLinks />
       <PilatesFaq />
       <PilatesFinalCta
         personalization={personalization}
@@ -77,6 +89,8 @@ export function PilatesStudiosView({
         selectedInterest={selectedInterest}
         onInterestChange={setSelectedInterest}
       />
+      <PilatesInternalLinks />
+      <LgeFloatingContact vertical="pilates-studios" />
     </main>
   );
 }

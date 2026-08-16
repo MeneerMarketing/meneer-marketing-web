@@ -103,7 +103,7 @@ export function HuidkliniekHero() {
                 <span className="font-semibold text-[#FF5722]">€0</span>
               </>
             ) : null}
-            , maandelijks opzegbaar.
+            , maandelijks opzegbaar. {cfg.pricing.includedInfraNote}
           </p>
 
           <ul className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -276,6 +276,9 @@ export function HuidkliniekHero() {
               ) : null}
               {" "}
               · maandelijks opzegbaar
+              <span className="block pt-1 text-[11px] font-semibold text-slate-600">
+                {cfg.pricing.includedInfraNote}
+              </span>
             </p>
           </div>
         </Reveal>

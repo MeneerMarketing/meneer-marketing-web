@@ -27,13 +27,27 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 interface PageProps {
-  searchParams: Promise<{ ref?: string | string[] }>;
+  searchParams: Promise<{
+    ref?: string | string[];
+    checkout?: string | string[];
+    payment?: string | string[];
+  }>;
 }
 
 export default async function HuidkliniekenPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const rawRef = Array.isArray(params.ref) ? params.ref[0] : params.ref;
   const { ref, personalization } = await resolveCampaignRef(rawRef);
+  const checkout = Array.isArray(params.checkout)
+    ? params.checkout[0]
+    : params.checkout;
+  const rawPayment = Array.isArray(params.payment)
+    ? params.payment[0]
+    : params.payment;
+  const checkoutPaymentId =
+    checkout === "bedankt" && rawPayment && rawPayment !== "pending"
+      ? rawPayment
+      : null;
 
   return (
     <>
@@ -68,6 +82,7 @@ export default async function HuidkliniekenPage({ searchParams }: PageProps) {
       <HuidkliniekenView
         personalization={personalization}
         campaignRef={ref}
+        checkoutPaymentId={checkoutPaymentId}
       />
       <SiteFooter />
     </>

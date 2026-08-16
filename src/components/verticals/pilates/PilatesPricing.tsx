@@ -13,8 +13,9 @@ import {
   formatMonthlyWithSetup,
   getActiveLaunchPromo,
 } from "@/lib/verticals/format-price";
+import { PRICE_EXCL_BTW_LABEL } from "@/lib/verticals/vat";
 
-const { packages, termDisclaimer, minTermMonths, launchPromo } =
+const { packages, termDisclaimer, includedInfraNote, includedCareNote, minTermMonths, launchPromo } =
   PILATES_VERTICAL.pricing;
 const promo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
 
@@ -111,6 +112,12 @@ export function PilatesPricing({
               {termDisclaimer} ({minTermMonths} maanden).
             </p>
           )}
+          <p className="mt-2 text-sm font-semibold text-slate-700">
+            {includedInfraNote}
+          </p>
+          <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-slate-600">
+            {includedCareNote}
+          </p>
         </Reveal>
 
         <div className="mt-8 flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500">
@@ -208,6 +215,15 @@ export function PilatesPricing({
                       >
                         / maand
                       </span>
+                    </p>
+                    <p
+                      className={
+                        recommended
+                          ? "mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400"
+                          : "mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500"
+                      }
+                    >
+                      {PRICE_EXCL_BTW_LABEL}
                     </p>
                     <p
                       className={

@@ -111,10 +111,11 @@ export function PilatesFinalCta({
           <Reveal delay={0.06} className="h-full">
             <div className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-5 text-slate-900 shadow-[0_28px_70px_rgba(0,0,0,0.35)] sm:p-6">
               <h3 className="text-lg font-extrabold tracking-tight">
-                Stuur je studio door
+                Start direct of stuur je studio door
               </h3>
               <p className="mt-1 text-sm text-slate-500">
-                Vier velden. Optioneel iets erbij. Ik reageer persoonlijk.
+                Kies je pakket, vul studio + e-mail in. Betalen via iDEAL of
+                eerst contact opnemen.
               </p>
               <div className="mt-4 flex-1">
                 <PilatesLeadForm

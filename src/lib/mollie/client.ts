@@ -1,4 +1,23 @@
-const MOLLIE_API = "https://api.mollie.com/v2";
+import createMollieClient, { type MollieClient } from "@mollie/api-client";
+
+import { getMollieApiKey, isMollieConfigured as isConfigured } from "./config";
+
+export { isMollieConfigured } from "./config";
+
+let cachedClient: MollieClient | null = null;
+
+export function getMollieClient(): MollieClient {
+  const apiKey = getMollieApiKey();
+  if (!apiKey) {
+    throw new Error("MOLLIE_API_KEY is niet geconfigureerd.");
+  }
+
+  if (!cachedClient) {
+    cachedClient = createMollieClient({ apiKey });
+  }
+
+  return cachedClient;
+}
 
 export type MolliePaymentStatus =
   | "open"
@@ -13,7 +32,7 @@ export interface MollieAmount {
   value: string;
 }
 
-export interface MolliePayment {
+export interface MolliePaymentRecord {
   id: string;
   status: MolliePaymentStatus;
   amount: MollieAmount;
@@ -24,19 +43,11 @@ export interface MolliePayment {
   metadata: Record<string, string> | null;
 }
 
-function getMollieApiKey(): string {
-  const key = process.env.MOLLIE_API_KEY?.trim();
-  if (!key) {
-    throw new Error("MOLLIE_API_KEY ontbreekt");
-  }
-  return key;
-}
-
 function centsToMollieValue(cents: number): string {
   return (cents / 100).toFixed(2);
 }
 
-function mapPayment(raw: Record<string, unknown>): MolliePayment {
+function mapPaymentRecord(raw: Record<string, unknown>): MolliePaymentRecord {
   const amount = raw.amount as MollieAmount | undefined;
   return {
     id: String(raw.id ?? ""),
@@ -59,25 +70,26 @@ function mapPayment(raw: Record<string, unknown>): MolliePayment {
   };
 }
 
-export function isMollieConfigured(): boolean {
-  return Boolean(process.env.MOLLIE_API_KEY?.trim());
-}
-
+/** Launch-fee flow via inbound API (fetch, metadata submission_id). */
 export async function createMolliePayment(input: {
   amountCents: number;
   description: string;
   redirectUrl: string;
   webhookUrl: string;
   metadata: Record<string, string>;
-}): Promise<MolliePayment> {
+}): Promise<MolliePaymentRecord> {
+  if (!isConfigured()) {
+    throw new Error("MOLLIE_API_KEY ontbreekt");
+  }
   if (input.amountCents < 1) {
     throw new Error("Mollie vereist minimaal €0,01");
   }
 
-  const res = await fetch(`${MOLLIE_API}/payments`, {
+  const apiKey = getMollieApiKey()!;
+  const res = await fetch("https://api.mollie.com/v2/payments", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${getMollieApiKey()}`,
+      Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
@@ -101,14 +113,21 @@ export async function createMolliePayment(input: {
     throw new Error(detail);
   }
 
-  return mapPayment(json);
+  return mapPaymentRecord(json);
 }
 
-export async function getMolliePayment(paymentId: string): Promise<MolliePayment> {
+export async function getMolliePayment(
+  paymentId: string,
+): Promise<MolliePaymentRecord> {
+  if (!isConfigured()) {
+    throw new Error("MOLLIE_API_KEY ontbreekt");
+  }
+
+  const apiKey = getMollieApiKey()!;
   const res = await fetch(
-    `${MOLLIE_API}/payments/${encodeURIComponent(paymentId)}`,
+    `https://api.mollie.com/v2/payments/${encodeURIComponent(paymentId)}`,
     {
-      headers: { Authorization: `Bearer ${getMollieApiKey()}` },
+      headers: { Authorization: `Bearer ${apiKey}` },
       cache: "no-store",
     },
   );
@@ -117,5 +136,5 @@ export async function getMolliePayment(paymentId: string): Promise<MolliePayment
   if (!res.ok || !json) {
     throw new Error(`Mollie fetch failed (${res.status})`);
   }
-  return mapPayment(json);
+  return mapPaymentRecord(json);
 }
