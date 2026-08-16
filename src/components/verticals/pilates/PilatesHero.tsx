@@ -9,7 +9,7 @@ import {
   MessageCircle,
   Rocket,
   Search,
-  Sparkles,
+  Users,
 } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -24,21 +24,9 @@ const cfg = PILATES_VERTICAL;
 const launchPromo = getActiveLaunchPromo(cfg.pricing);
 
 const heroSignals = [
-  {
-    icon: MapPin,
-    label: "Gevonden in jouw stad",
-    hint: "Pilates + jouw plaatsnaam",
-  },
-  {
-    icon: CalendarCheck,
-    label: "Proefles direct boeken",
-    hint: "Van Google naar rooster",
-  },
-  {
-    icon: Sparkles,
-    label: "Voelt als jóuw studio",
-    hint: "From scratch, geen template",
-  },
+  { icon: MapPin, label: "Lokaal gevonden" },
+  { icon: CalendarCheck, label: "Proefles boeken" },
+  { icon: Users, label: "Meer leden" },
 ] as const;
 
 export function PilatesHero() {
@@ -62,7 +50,7 @@ export function PilatesHero() {
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -right-16 bottom-0 size-72 rounded-full bg-[#0c1222]/15 blur-3xl"
+        className="pointer-events-none absolute -right-16 bottom-0 size-72 rounded-full bg-white/10 blur-3xl"
         aria-hidden
       />
 
@@ -81,35 +69,34 @@ export function PilatesHero() {
           </div>
 
           <h1 className="mt-5 text-[1.85rem] font-extrabold leading-[1.08] tracking-tight text-balance sm:text-[2.75rem] lg:text-[3.05rem] lg:leading-[1.02]">
-            <span className="block text-white sm:whitespace-nowrap">
+            <span className="block text-white drop-shadow-sm sm:whitespace-nowrap">
               Je studio is al strak.
             </span>
-            <span className="mt-1 block text-[#0c1222] sm:whitespace-nowrap">
-              Pagina 1 in Google.
+            <span className="mt-1 block text-white drop-shadow-[0_2px_12px_rgba(12,18,34,0.35)] sm:whitespace-nowrap">
+              Ik zorg voor{" "}
+              <span className="underline decoration-white/40 decoration-[3px] underline-offset-[6px]">
+                nieuwe leden
+              </span>
+              .
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-orange-50 sm:text-base">
-            Je reformer staat niet stil. Waarom zou je site dat wel doen? Ik bouw
-            from scratch, zorg dat je studio gevonden wordt, en stuur op
-            proeflessen en leden. Jij runt de les. Ik regel het digitale stuk.
+            Minder lege reformers, meer proeflessen uit Google. Ik bouw je site
+            from scratch, zorg dat je studio lokaal scoort, en stuur op boekingen.
+            Jij runt de les. Ik regel het stuk dat leden binnenbrengt.
           </p>
 
           <PilatesHeroBoostStory />
 
-          <ul className="mt-6 grid gap-2.5 sm:grid-cols-3">
-            {heroSignals.map(({ icon: Icon, label, hint }) => (
+          <ul className="mt-6 flex flex-wrap gap-x-4 gap-y-2 border-t border-white/20 pt-5">
+            {heroSignals.map(({ icon: Icon, label }) => (
               <li
                 key={label}
-                className="rounded-2xl border border-white/20 bg-white/10 px-3.5 py-3 backdrop-blur-sm"
+                className="inline-flex items-center gap-2 whitespace-nowrap text-[12px] font-bold text-white"
               >
-                <span className="inline-flex items-center gap-2 text-[12px] font-bold text-white">
-                  <Icon className="size-3.5 shrink-0 text-orange-100" aria-hidden />
-                  {label}
-                </span>
-                <span className="mt-1 block text-[10px] font-medium leading-snug text-orange-100/90">
-                  {hint}
-                </span>
+                <Icon className="size-3.5 shrink-0 text-orange-100" aria-hidden />
+                {label}
               </li>
             ))}
           </ul>
@@ -125,7 +112,7 @@ export function PilatesHero() {
                     package: "studio-edition",
                   });
                 }}
-                className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#0c1222] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(12,18,34,0.45)] transition hover:-translate-y-0.5 hover:bg-slate-900 sm:w-auto"
+                className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-white px-7 py-4 text-base font-bold tracking-tight text-[#FF5722] shadow-[0_16px_40px_-10px_rgba(12,18,34,0.25)] transition hover:-translate-y-0.5 hover:bg-orange-50 sm:w-auto"
               >
                 <Rocket
                   className="size-4 transition group-hover:-translate-y-0.5"
@@ -145,7 +132,7 @@ export function PilatesHero() {
                   location: "hero_contact",
                 })
               }
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/35 bg-white/10 px-5 py-4 text-sm font-bold tracking-tight text-white backdrop-blur-sm transition hover:border-white hover:bg-white/20 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/40 bg-white/10 px-5 py-4 text-sm font-bold tracking-tight text-white backdrop-blur-sm transition hover:border-white hover:bg-white/20 sm:w-auto"
             >
               <MessageCircle className="size-4" aria-hidden />
               Ik wil eerst contact
@@ -166,60 +153,61 @@ export function PilatesHero() {
 
         <Reveal delay={0.1} className="relative flex h-full">
           <div className="relative flex h-full w-full flex-col">
-            <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border-4 border-white/30 bg-white shadow-[0_32px_80px_-16px_rgba(12,18,34,0.4)] lg:rotate-[0.5deg]">
-              <div className="flex shrink-0 items-center gap-1.5 border-b border-slate-200 bg-slate-50 px-3 py-2.5">
-                <span className="size-2 rounded-full bg-rose-400/90" />
-                <span className="size-2 rounded-full bg-amber-400/90" />
-                <span className="size-2 rounded-full bg-emerald-400/90" />
-                <span className="ml-2 flex min-w-0 flex-1 items-center gap-1.5 truncate rounded-md border border-slate-200 bg-white px-2 py-1 text-[10px] text-slate-500">
+            <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border border-white/20 bg-slate-950 shadow-[0_32px_80px_rgba(12,18,34,0.45)] lg:rotate-[0.6deg]">
+              <div className="flex shrink-0 items-center gap-1.5 border-b border-white/10 bg-slate-900/95 px-3 py-2.5">
+                <span className="size-2 rounded-full bg-rose-400/80" />
+                <span className="size-2 rounded-full bg-amber-400/80" />
+                <span className="size-2 rounded-full bg-emerald-400/80" />
+                <span className="ml-2 flex min-w-0 flex-1 items-center gap-1.5 truncate rounded-md bg-white/5 px-2 py-1 text-[10px] text-slate-400">
                   <Search className="size-3 shrink-0" aria-hidden />
                   <span className="truncate">
                     pilates apeldoorn · hillsstudio.nl
                   </span>
                 </span>
               </div>
-              <div className="relative min-h-[260px] flex-1 bg-slate-100 sm:min-h-[300px] lg:min-h-[320px]">
+              <div className="relative min-h-[280px] flex-1 bg-slate-800 sm:min-h-[320px] lg:min-h-[360px]">
                 <Image
                   src={cfg.caseStudy.imageSrc}
                   alt="Pilates studio website, Hills Pilates Apeldoorn"
                   fill
                   priority
-                  sizes="(max-width: 1024px) 90vw, 480px"
-                  className="object-cover object-center"
+                  quality={92}
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                  className="object-cover object-[center_28%]"
                 />
                 <div
-                  className="absolute inset-0 bg-gradient-to-t from-slate-900/55 via-transparent to-transparent"
+                  className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/15 to-transparent"
                   aria-hidden
                 />
-                <div className="absolute left-4 top-4 rounded-lg border border-white/40 bg-white/95 px-2.5 py-1.5 shadow-md backdrop-blur-sm">
-                  <p className="text-[9px] font-bold uppercase tracking-wider text-[#C2410C]">
+                <div className="absolute left-4 top-4 rotate-[-1deg] rounded-lg border border-white/15 bg-slate-950/85 px-2.5 py-1.5 backdrop-blur-sm">
+                  <p className="text-[9px] font-bold uppercase tracking-wider text-orange-300">
                     Custom build
                   </p>
-                  <p className="text-[11px] font-bold text-slate-900">
+                  <p className="text-[11px] font-bold text-white">
                     From scratch · Hills Pilates
                   </p>
                 </div>
-                <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 rounded-xl border border-white/30 bg-white/95 px-3 py-2 shadow-lg backdrop-blur-md">
-                  <Search className="size-3.5 shrink-0 text-[#FF5722]" aria-hidden />
-                  <span className="text-xs font-bold text-slate-900">
+                <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 rounded-xl border border-white/20 bg-slate-950/90 px-3 py-2 shadow-lg backdrop-blur-md">
+                  <Search className="size-3.5 shrink-0 text-sky-300" aria-hidden />
+                  <span className="text-xs font-bold text-white">
                     Pilates Apeldoorn · top 3
                   </span>
                 </div>
-                <div className="absolute bottom-4 right-4 z-10 rounded-xl bg-[#FF5722] px-3 py-2 text-xs font-bold text-white shadow-lg">
+                <div className="absolute bottom-4 right-4 z-10 rotate-[2deg] rounded-xl border border-orange-400/35 bg-[#FF5722] px-3 py-2 text-xs font-bold text-white shadow-lg">
                   Proefles geboekt
                 </div>
               </div>
-              <figcaption className="grid shrink-0 grid-cols-3 divide-x divide-slate-200 border-t border-slate-200 bg-slate-50 text-center">
+              <figcaption className="grid shrink-0 grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-slate-950/95 text-center">
                 {[
                   { step: "Design", hint: "Studioniveau" },
-                  { step: "Techniek", hint: "Google-ready" },
-                  { step: "Ranking", hint: "Zo hoog mogelijk" },
+                  { step: "Leden", hint: "Meer proeflessen" },
+                  { step: "Google", hint: "Lokaal scoren" },
                 ].map((item) => (
                   <div key={item.step} className="px-2 py-3">
-                    <p className="text-[10px] font-bold uppercase tracking-wider text-[#C2410C]">
+                    <p className="text-[10px] font-bold uppercase tracking-wider text-orange-300">
                       {item.step}
                     </p>
-                    <p className="mt-0.5 text-xs font-semibold text-slate-800">
+                    <p className="mt-0.5 text-xs font-semibold text-white">
                       {item.hint}
                     </p>
                   </div>
@@ -227,8 +215,8 @@ export function PilatesHero() {
               </figcaption>
             </figure>
 
-            <p className="mt-3 shrink-0 text-center text-[11px] font-semibold text-orange-100/90 sm:text-left">
-              Live case · design, techniek en boekingsflow in één lijn
+            <p className="mt-3 shrink-0 text-center text-[11px] font-semibold text-orange-50/90 sm:text-left">
+              Live case · Hills Pilates · site, vindbaarheid en boekingen
             </p>
           </div>
         </Reveal>

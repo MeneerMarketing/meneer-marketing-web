@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowDown, Globe, Search, TrendingUp } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { getActiveLaunchPromo } from "@/lib/verticals/format-price";
@@ -9,37 +9,40 @@ import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 
 const launchPromo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
 
-const BOOST_STEPS = [
+const BOOST_FLOW = [
   {
-    icon: Globe,
-    title: "Ik bouw jouw site",
-    text: "From scratch in jouw branding. Lessen, tarieven, proefles. Voelt als je studio op de vloer.",
+    kicker: "Eerst vertrouwen",
+    title: "Site die verkoopt",
+    text: "From scratch, jouw vibe. Bezoeker denkt meteen: dit is dé studio hier.",
+    tilt: "-1.2deg",
   },
   {
-    icon: Search,
-    title: "Google leert je kennen",
-    text: "Pilates + jouw stad. Pagina's, Maps, structuur. Gevonden worden als iemand zoekt.",
+    kicker: "Dan vindbaarheid",
+    title: "Google stuurt ze door",
+    text: "Pilates + jouw stad. Jouw pagina, niet die van de studio om de hoek.",
+    tilt: "0.8deg",
   },
   {
-    icon: TrendingUp,
-    title: "Je rooster vult",
-    text: "Van zoekopdracht naar proefles, van proefles naar lid. Daar stuur ik op. Jij runt de les.",
+    kicker: "Dan groei",
+    title: "Nieuwe leden",
+    text: "Zoekopdracht → proefles → vaste plek op de mat. Daar stuur ik op.",
+    tilt: "-0.6deg",
   },
 ] as const;
 
 export function PilatesHeroBoostStory() {
   return (
     <div className="relative mt-8">
-      <article className="overflow-hidden rounded-[1.35rem] border border-white/25 bg-white shadow-[0_24px_60px_-20px_rgba(12,18,34,0.35)] ring-1 ring-white/40">
-        <div className="flex items-start gap-3 border-b border-orange-100 bg-gradient-to-r from-orange-50 to-white px-4 py-4 sm:px-5">
+      <article className="overflow-hidden rounded-[1.35rem] border border-white/30 bg-white/95 shadow-[0_24px_60px_-20px_rgba(12,18,34,0.4)] ring-1 ring-white/50 backdrop-blur-sm">
+        <div className="flex items-start gap-3 border-b border-orange-100/80 bg-gradient-to-r from-[#FF5722]/10 via-orange-50 to-white px-4 py-4 sm:px-5">
           <InteractiveLogo className="size-11 shrink-0" interactive={false} />
           <div className="min-w-0 flex-1">
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#C2410C]">
-              Zo boost ik jouw studio
+              Jouw groeiplan
             </p>
             <p className="mt-1 text-[15px] font-bold leading-snug text-slate-900">
-              Jij focust op reformers. Ik fix online vindbaarheid, vertrouwen en
-              boekingen.
+              Ik help je studio online nieuwe leden binnenhalen. Jij lesgeeft, ik
+              regel site, Google en conversie.
             </p>
             {launchPromo ? (
               <p className="mt-2 inline-flex rounded-full bg-[#FF5722] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
@@ -49,40 +52,48 @@ export function PilatesHeroBoostStory() {
           </div>
         </div>
 
-        <ol className="divide-y divide-slate-100">
-          {BOOST_STEPS.map((step) => {
-            const Icon = step.icon;
-            return (
-              <li
-                key={step.title}
-                className="flex gap-3.5 px-4 py-4 sm:px-5 sm:py-4"
+        <div className="grid gap-3 p-4 sm:p-5 lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:items-stretch lg:gap-2">
+          {BOOST_FLOW.map((step, index) => (
+            <div key={step.title} className="contents">
+              <div
+                className="relative flex min-h-[7.5rem] flex-col justify-between rounded-2xl border border-slate-200/90 bg-[#fffef9] p-3.5 shadow-[0_10px_28px_-22px_rgba(15,23,42,0.35)] sm:p-4"
+                style={{ transform: `rotate(${step.tilt})` }}
               >
-                <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-[#FF5722]/10 text-[#FF5722] ring-1 ring-[#FF5722]/15">
-                  <Icon className="size-4" aria-hidden />
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-sm font-extrabold tracking-tight text-slate-900">
+                <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#FF5722]">
+                  {step.kicker}
+                </p>
+                <div>
+                  <p className="text-[15px] font-extrabold leading-tight tracking-tight text-slate-900">
                     {step.title}
-                  </span>
-                  <span className="mt-1 block text-[13px] leading-relaxed text-slate-600">
+                  </p>
+                  <p className="mt-1.5 text-[12px] leading-snug text-slate-600">
                     {step.text}
-                  </span>
-                </span>
-              </li>
-            );
-          })}
-        </ol>
+                  </p>
+                </div>
+              </div>
+              {index < BOOST_FLOW.length - 1 ? (
+                <div
+                  className="hidden items-center justify-center text-[#FF5722] lg:flex"
+                  aria-hidden
+                >
+                  <ArrowRight className="size-4 shrink-0" strokeWidth={2.8} />
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
 
-        <div className="border-t border-dashed border-slate-200 bg-slate-50/80 px-4 py-3.5 sm:px-5">
+        <div className="border-t border-dashed border-slate-200 bg-slate-50/90 px-4 py-3.5 sm:px-5">
           <p className="text-xs leading-relaxed text-slate-600">
-            Prijs, pakketten en het volledige bonnetje?{" "}
+            Prijs en bonnetje staan bij{" "}
             <Link
               href="#eerlijk-prijs"
               className="inline-flex items-center gap-1 font-bold text-[#FF5722] underline decoration-[#FF5722]/30 underline-offset-2 hover:text-orange-600"
             >
-              Eerlijk over de prijs
+              eerlijk over de prijs
               <ArrowDown className="size-3" aria-hidden />
             </Link>
+            . Eerst weten wat je krijgt? Scroll daarheen.
           </p>
         </div>
       </article>
