@@ -1170,7 +1170,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Hoeveel sessies?",
         antwoord:
-          "Dat hangt af van de lengte en de leeftijd van het litteken, en het staat er daarom niet als getal. [GEGEVEN-NODIG] aantal sessies per littekentype",
+          "Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting. [GEGEVEN-NODIG: aantal sessies per littekentype]",
       },
     ],
     duurMinuten: 45,
