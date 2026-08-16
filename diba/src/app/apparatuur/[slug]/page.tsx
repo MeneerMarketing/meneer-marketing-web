@@ -50,7 +50,15 @@ export async function generateMetadata({
   const { slug } = await params;
   const a = apparaatVoorSlug(slug);
   if (!a) return {};
-  return { title: a.naam, description: publicCopy(a.kort) };
+  /* Drie apparaten heten net zo als de behandeling die erop draait: CooLift, Dermapen 4
+     en de Fotona. Die paren hadden daardoor een identieke paginatitel, en dat is voor
+     Google een signaal dat er twee keer hetzelfde staat. Het zijn juist twee verschillende
+     pagina's: wat de behandeling met je huid doet tegenover wat het apparaat is. Dat
+     verschil hoort dan ook in de titel te staan. */
+  return {
+    title: `${a.naam}: het apparaat`,
+    description: publicCopy(a.kort),
+  };
 }
 
 export default async function ApparaatPage({ params }: PageProps) {
