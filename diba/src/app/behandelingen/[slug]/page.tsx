@@ -321,145 +321,154 @@ export default async function BehandelingPage({ params }: PageProps) {
       </section>
 
       {/* ── In de afspraak ── */}
-      <section
-        id="afspraak"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
-      >
-        <div className="mx-auto">
-          <Label>In de afspraak</Label>
-          <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Wat er gebeurt,
-            <br />
-            <span className="diba-accent">in volgorde.</span>
-          </h2>
+      {/* Zonder stappen staat er "Wat er gebeurt, in volgorde" met een lege lijst eronder. */}
+      {b.stappen?.length ? (
+        <section
+          id="afspraak"
+          className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        >
+          <div className="mx-auto">
+            <Label>In de afspraak</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Wat er gebeurt,
+              <br />
+              <span className="diba-accent">in volgorde.</span>
+            </h2>
 
-          <ol className="mt-12 grid gap-4 md:grid-cols-3">
-            {(b.stappen ?? []).map((s, i) => (
-              <li
-                key={s.kop}
-                className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
-              >
-                <span className="diba-label text-[var(--t-muted)] tabular-nums">
-                  Stap {i + 1}
-                </span>
-                <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-                  {s.kop}
-                </p>
-                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-                  {publicCopy(s.zin)}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
+            <ol className="mt-12 grid gap-4 md:grid-cols-3">
+              {(b.stappen ?? []).map((s, i) => (
+                <li
+                  key={s.kop}
+                  className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+                >
+                  <span className="diba-label text-[var(--t-muted)] tabular-nums">
+                    Stap {i + 1}
+                  </span>
+                  <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+                    {s.kop}
+                  </p>
+                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                    {publicCopy(s.zin)}
+                  </p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      ) : null}
 
       {/* ── Wel en niet ── */}
-      <section
-        id="grenzen"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
-      >
-        <div className="mx-auto">
-          <Label>Wat het wel en niet doet</Label>
-          <h2 className="diba-display-m mt-4 max-w-[24ch]">
-            Even lang,
-            <br />
-            <span className="diba-accent">en dat is met opzet.</span>
-          </h2>
-          <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar
-            opmaak. Daarom staan hier links en rechts evenveel regels.
-          </p>
+      {/* Zonder wel en niet blijft alleen de belofte over dat links en rechts evenveel regels hebben. */}
+      {b.wel?.length || b.niet?.length ? (
+        <section
+          id="grenzen"
+          className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        >
+          <div className="mx-auto">
+            <Label>Wat het wel en niet doet</Label>
+            <h2 className="diba-display-m mt-4 max-w-[24ch]">
+              Even lang,
+              <br />
+              <span className="diba-accent">en dat is met opzet.</span>
+            </h2>
+            <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar
+              opmaak. Daarom staan hier links en rechts evenveel regels.
+            </p>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
-            <div>
-              <Label>Hier doet het iets aan</Label>
-              <ul className="mt-5 space-y-3">
-                {(b.wel ?? []).map((w) => (
-                  <li
-                    key={w}
-                    className="rounded-[var(--r-sm)] bg-white p-5 text-[16px] leading-7 text-[var(--t-body)]"
-                  >
-                    {publicCopy(w)}
-                  </li>
-                ))}
-              </ul>
+            <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
+              <div>
+                <Label>Hier doet het iets aan</Label>
+                <ul className="mt-5 space-y-3">
+                  {(b.wel ?? []).map((w) => (
+                    <li
+                      key={w}
+                      className="rounded-[var(--r-sm)] bg-white p-5 text-[16px] leading-7 text-[var(--t-body)]"
+                    >
+                      {publicCopy(w)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <Label>Hier niet</Label>
+                <ul className="mt-5 space-y-3">
+                  {(b.niet ?? []).map((n) => (
+                    <li
+                      key={n}
+                      className="rounded-[var(--r-sm)] bg-[var(--g-700)] p-5 text-[16px] leading-7 text-[var(--on-dark-body)]"
+                    >
+                      {publicCopy(n)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            <div>
-              <Label>Hier niet</Label>
-              <ul className="mt-5 space-y-3">
-                {(b.niet ?? []).map((n) => (
-                  <li
-                    key={n}
-                    className="rounded-[var(--r-sm)] bg-[var(--g-700)] p-5 text-[16px] leading-7 text-[var(--on-dark-body)]"
-                  >
-                    {publicCopy(n)}
+            <div className="mt-12">
+              <Label>Komt vaak voor bij</Label>
+              <ul className="mt-5 flex flex-wrap gap-2">
+                {(b.bijProblemen ?? []).map((p) => (
+                  <li key={p.href}>
+                    <Link
+                      href={p.href}
+                      className="diba-label inline-flex min-h-12 items-center rounded-[var(--r-pill)] bg-white px-5 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                    >
+                      {p.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
+        </section>
+      ) : null}
 
-          <div className="mt-12">
-            <Label>Komt vaak voor bij</Label>
-            <ul className="mt-5 flex flex-wrap gap-2">
-              {(b.bijProblemen ?? []).map((p) => (
-                <li key={p.href}>
-                  <Link
-                    href={p.href}
-                    className="diba-label inline-flex min-h-12 items-center rounded-[var(--r-pill)] bg-white px-5 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                  >
-                    {p.label}
-                  </Link>
+      {/* ── Vragen ── */}
+      {/* Een vragenkop zonder vragen. */}
+      {b.faq?.length ? (
+        <section
+          id="vragen"
+          className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        >
+          <div className="mx-auto">
+            <Label>Vragen</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Wat mensen
+              <br />
+              <span className="diba-accent">hierover vragen.</span>
+            </h2>
+
+            <ul className="mt-10 max-w-[64ch] divide-y divide-[var(--g-100)] border-y border-[var(--g-100)]">
+              {(b.faq ?? []).map((v) => (
+                <li key={v.vraag}>
+                  <details className="group py-5">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] leading-7 font-medium text-[var(--t-strong)] [&::-webkit-details-marker]:hidden">
+                      {v.vraag}
+                      <svg
+                        viewBox="0 0 12 12"
+                        className="h-3 w-3 shrink-0 text-[var(--t-muted)] transition-transform group-open:rotate-180"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M2.5 4.5 6 8l3.5-3.5" />
+                      </svg>
+                    </summary>
+                    <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
+                      {publicCopy(v.antwoord)}
+                    </p>
+                  </details>
                 </li>
               ))}
             </ul>
           </div>
-        </div>
-      </section>
-
-      {/* ── Vragen ── */}
-      <section
-        id="vragen"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
-      >
-        <div className="mx-auto">
-          <Label>Vragen</Label>
-          <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Wat mensen
-            <br />
-            <span className="diba-accent">hierover vragen.</span>
-          </h2>
-
-          <ul className="mt-10 max-w-[64ch] divide-y divide-[var(--g-100)] border-y border-[var(--g-100)]">
-            {(b.faq ?? []).map((v) => (
-              <li key={v.vraag}>
-                <details className="group py-5">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] leading-7 font-medium text-[var(--t-strong)] [&::-webkit-details-marker]:hidden">
-                    {v.vraag}
-                    <svg
-                      viewBox="0 0 12 12"
-                      className="h-3 w-3 shrink-0 text-[var(--t-muted)] transition-transform group-open:rotate-180"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M2.5 4.5 6 8l3.5-3.5" />
-                    </svg>
-                  </summary>
-                  <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
-                    {publicCopy(v.antwoord)}
-                  </p>
-                </details>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       {/* ── Afsluiter ── */}
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">

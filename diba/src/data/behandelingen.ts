@@ -288,6 +288,46 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     herstel: "Geen.",
     sessies: "Los of als onderhoud [GEGEVEN-NODIG]",
     prijs: 150,
+    wel: [
+      "Maakt de bovenste laag los en brengt in dezelfde beweging werkzame stoffen in",
+      "Laat je huid er meteen na afloop frisser en egaler uitzien",
+      "Past vlak voor een gelegenheid, want er is geen dag waarop je binnen moet blijven",
+    ],
+    niet: [
+      "Komt niet dieper dan de bovenste lagen. Wat in de lederhuid speelt blijft daar [MEDISCHE-CHECK-ROJDA]",
+      "Haalt geen littekens, diepe rimpels of pigment weg. Daar is dit niet het gereedschap voor",
+      "Houdt niet vanzelf aan. Eén keer glow is één keer glow, geen verandering in je huid",
+    ],
+    stappen: [
+      {
+        kop: "Eerst schoon",
+        zin: "Make-up en talg eraf. Anders werkt de rest op een laagje in plaats van op je huid.",
+      },
+      {
+        kop: "Losmaken en inbrengen",
+        zin: "De kop gaat over je huid en doet twee dingen tegelijk: de bovenste laag los, de stoffen erin.",
+      },
+      {
+        kop: "Meteen weer de deur uit",
+        zin: "Je huid is kort roze en dat trekt binnen een uur weg. Make-up mag dezelfde dag.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Hoe lang zie ik er iets van?",
+        antwoord:
+          "Dagen, geen weken. Dit is een opfrisser en geen kuur, en dat is precies waarom hij vaak vlak voor iets gepland wordt. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Kan dit bij een gevoelige huid?",
+        antwoord:
+          "Meestal wel, en dat bepalen we in de intake en niet op deze pagina. Bij actieve rosacea of ontstoken acne kijken we eerst naar de rust in je huid. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    bijProblemen: [
+      { label: "Droge huid", href: "/huidproblemen/droge-huid" },
+      { label: "Grove poriën", href: "/huidproblemen/porien" },
+    ],
   },
   {
     slug: "dermaplaning",
@@ -310,6 +350,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Doet niets aan pigment of littekens dieper in de huid",
       "Is geen ontharing; de donshaartjes komen terug",
     ],
+    bijProblemen: [
+      { label: "Droge huid", href: "/huidproblemen/droge-huid" },
+      { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+    ],
   },
   {
     slug: "coolift",
@@ -323,6 +367,45 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     herstel: "Geen.",
     sessies: "Los, vaak vlak voor een gelegenheid [GEGEVEN-NODIG]",
     prijs: 0,
+    wel: [
+      "Laat je huid binnen vijf minuten strakker aanvoelen door de kou en de druk",
+      "Brengt werkzame stoffen mee naar binnen zonder dat er een naald aan te pas komt",
+      "Kan direct voor een afspraak of gelegenheid, want er is niets aan je te zien",
+    ],
+    niet: [
+      "Verandert niets aan je huid op de lange duur. Het effect is tijdelijk en dat is de hele afspraak [MEDISCHE-CHECK-ROJDA]",
+      "Maakt geen collageen aan zoals naalden of laser dat doen",
+      "Doet niets aan pigment, littekens of rimpels die er al zijn",
+    ],
+    stappen: [
+      {
+        kop: "Vijf minuten",
+        zin: "Korter dan de tijd die je kwijt bent aan parkeren. Dat is geen verkooppraatje maar de hele behandelduur.",
+      },
+      {
+        kop: "Koude straal",
+        zin: "De CO2 komt er onder druk uit en dat voelt koud en stevig. Onaangenaam is het niet, verrassend wel.",
+      },
+      {
+        kop: "Direct verder",
+        zin: "Geen roodheid om te verbergen, geen dag om vrij te nemen.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Hoe lang houdt het aan?",
+        antwoord:
+          "Een dag tot enkele dagen, en dat verschilt per huid. Wie iets blijvends wil, zit bij dit apparaat verkeerd en dat zeggen we liever nu dan achteraf. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Waarom staat er geen prijs bij?",
+        antwoord:
+          "Omdat die nog niet is vastgesteld. Zodra hij er is staat hij hier, en niet pas aan de balie.",
+      },
+    ],
+    bijProblemen: [
+      { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+    ],
   },
 
   /* ── Peelings ──────────────────────────────────────────────────────────── */
@@ -449,6 +532,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
     ],
+    wel: [
+      "Maakt kanaaltjes in de huid die je eigen herstel op gang brengen [MEDISCHE-CHECK-ROJDA]",
+      "Werkt op fijne lijntjes, acnelittekens, grove poriën en een doffe structuur",
+      "Komt met trillende naaldjes gelijkmatiger door de huid dan met een rollende beweging",
+    ],
+    niet: [
+      "Werkt niet in één sessie. Wat je na één keer ziet is zwelling en geen resultaat",
+      "Haalt geen diepe of ingetrokken littekens helemaal weg [MEDISCHE-CHECK-ROJDA]",
+      "Past niet op een huid met actieve ontsteking. Dan gaat rust eerst",
+    ],
+    stappen: [
+      {
+        kop: "Verdovende crème",
+        zin: "Die trekt een half uur in. Zonder is het te scherp en met is het goed te doen.",
+      },
+      {
+        kop: "Het werk zelf",
+        zin: "Per zone, met een vaste diepte-instelling. Je hoort het apparaat meer dan dat je het voelt.",
+      },
+      {
+        kop: "Rood naar huis",
+        zin: "Eén tot drie dagen, alsof je te lang in de zon hebt gezeten. Make-up de eerste dag niet.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Wanneer zie ik er iets van?",
+        antwoord:
+          "Niet meteen. Collageenopbouw kost weken, dus wat je na de eerste sessie ziet is herstel en niet resultaat. Daarom meten we vooraf: anders vergelijk je met een herinnering. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat is het verschil met de SkinPen?",
+        antwoord:
+          "Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.",
+      },
+    ],
   },
 
   /* ── Skinboosters ──────────────────────────────────────────────────────── */
@@ -476,6 +595,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Melasma", href: "/huidproblemen/melasma" },
       { label: "Donkere kringen", href: "/huidproblemen/donkere-kringen" },
+    ],
+    wel: [
+      "Brengt werkzame stoffen ín de huid in plaats van erop",
+      "Zet de naald op een vaste diepte, zodat het niet per plek verschilt",
+      "Heeft een aparte booster voor pigment, zonneschade en melasma [MEDISCHE-CHECK-ROJDA]",
+    ],
+    niet: [
+      "Is geen filler. Er wordt niets opgevuld en er verandert niets aan je vorm",
+      "Werkt niet na één keer. Dit is een kuur en zo staat hij ook geprijsd",
+      "Doet niets aan huid die vooral zon nodig heeft te mijden. Zonder bescherming loopt pigment gewoon door",
+    ],
+    stappen: [
+      {
+        kop: "Kiezen welke booster",
+        zin: "Voor fijne lijnen of voor pigment. Dat is niet dezelfde vloeistof en niet hetzelfde doel.",
+      },
+      {
+        kop: "De injector",
+        zin: "De naald zit los van de spuit gemonteerd en beweegt dus niet met de hand mee. Dat is het hele voordeel van dit apparaat.",
+      },
+      {
+        kop: "Kort rood",
+        zin: "Soms kleine bultjes waar de naald ging. Meestal binnen een dag weg.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Waarom een kuur van drie?",
+        antwoord:
+          "Omdat de huid tussen de sessies door het werk doet. Eén sessie is één prikkel en daar bouwt een huid niets van op. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Is het pijnlijk?",
+        antwoord:
+          "Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevoeliger dan op de wang.",
+      },
     ],
   },
 
@@ -507,6 +662,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
+    ],
+    wel: [
+      "Werkt in meerdere richtingen: van binnenuit via de mond en van buitenaf op de huid",
+      "Heeft per gebied een eigen behandeling, van oogcontour tot lippen tot het hele gelaat",
+      "Kan zonder naalden en zonder snijden [MEDISCHE-CHECK-ROJDA]",
+    ],
+    niet: [
+      "Vervangt geen chirurgie. Wat losgelaten huid is, wordt hier niet vastgezet [MEDISCHE-CHECK-ROJDA]",
+      "Geeft geen vaste uitkomst. Hoeveel je huid opbouwt hangt van je huid af en niet van het apparaat",
+      "Is niet één behandeling. De naam Fotona zegt nog niets over wat je krijgt; de instelling en de zone doen dat",
+    ],
+    stappen: [
+      {
+        kop: "Vaststellen wat je krijgt",
+        zin: "4D, VectorLift, SmoothEye of LipLase zijn verschillende behandelingen op hetzelfde apparaat. Die keuze valt in de intake.",
+      },
+      {
+        kop: "Laag voor laag",
+        zin: "Bij de 4D wordt er in meerdere doorgangen gewerkt, elk op een andere diepte.",
+      },
+      {
+        kop: "Warm en rood",
+        zin: "Van een paar uur tot enkele dagen, afhankelijk van welke behandeling je kreeg.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Waarom lopen de prijzen zo uiteen?",
+        antwoord:
+          "Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een laserpeel is iets anders dan een volledige 4D, en dat staat per regel apart.",
+      },
+      {
+        vraag: "Hoeveel sessies heb ik nodig?",
+        antwoord:
+          "Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we niet kunnen onderbouwen. [MEDISCHE-CHECK-ROJDA]",
+      },
     ],
   },
   {
@@ -555,6 +746,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies: "Meestal als toevoeging bij een andere behandeling",
     prijs: 30,
     bijProblemen: [{ label: "Rosacea", href: "/huidproblemen/rosacea" }],
+    wel: [
+      "Werkt zonder naalden, zuren of hersteltijd",
+      "Wordt ingezet bij roodheid, rosacea en fijne lijntjes [MEDISCHE-CHECK-ROJDA]",
+      "Wisselt de pulsen af, zodat de huid niet aan het licht went",
+    ],
+    niet: [
+      "Doet weinig als losse behandeling. Dit is een toevoeging en zo verkopen we het ook",
+      "Verwijdert niets. Geen pigment, geen vaatjes, geen littekens",
+      "Werkt niet in één keer. Licht is een prikkel die je herhaalt of het doet niets [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Na de hoofdbehandeling",
+        zin: "Meestal aansluitend, terwijl je toch al ligt.",
+      },
+      {
+        kop: "Onder de lamp",
+        zin: "Ogen dicht, licht aan. Je voelt er niets van, hooguit lichte warmte.",
+      },
+      {
+        kop: "Klaar",
+        zin: "Geen roodheid, geen wachttijd, geen instructies voor thuis.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Waarom is dit zo goedkoop?",
+        antwoord:
+          "Omdat het weinig tijd kost en meestal aan iets anders wordt toegevoegd. Een lage prijs betekent hier ook een bescheiden effect, en dat hoort erbij.",
+      },
+      {
+        vraag: "Kan ik alleen hiervoor komen?",
+        antwoord:
+          "Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het als toevoeging tot zijn recht komt.",
+      },
+    ],
   },
 
   /* ── Pigmenttrajecten ──────────────────────────────────────────────────── */
@@ -585,6 +812,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Melasma", href: "/huidproblemen/melasma" },
       { label: "Pigmentvlekken", href: "/huidproblemen/pigmentvlekken" },
     ],
+    wel: [
+      "Pakt hardnekkig pigment aan waar losse behandelingen op stuklopen [MEDISCHE-CHECK-ROJDA]",
+      "Loopt door thuis, want het grootste deel van dit traject gebeurt buiten de kliniek",
+      "Werkt op melasma, dat bekendstaat als het lastigste soort pigment om rustig te krijgen [MEDISCHE-CHECK-ROJDA]",
+    ],
   },
   {
     slug: "happy-intim",
@@ -607,6 +839,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     ],
     bijProblemen: [
       { label: "Huidverkleuring", href: "/huidproblemen/huidverkleuring" },
+    ],
+    wel: [
+      "Maakt donkerder geworden huid in de intieme zone of oksels lichter en egaler [MEDISCHE-CHECK-ROJDA]",
+      "Werkt met peelings die op deze huid zijn afgestemd en niet met een gezichtspeeling op een andere plek",
+      "Kan als kuur, inclusief een crème voor thuis",
+    ],
+    niet: [
+      "Haalt de oorzaak niet weg. Komt de verkleuring door scheren of wrijving, dan komt hij terug [MEDISCHE-CHECK-ROJDA]",
+      "Maakt niets bleker dan je eigen huid. Egaler is het doel, niet lichter dan je bent",
+      "Past niet bij een huid die net onthaard of geïrriteerd is. Dan wachten we",
+    ],
+    stappen: [
+      {
+        kop: "Rustige huid",
+        zin: "Niet scheren of harsen in de dagen ervoor. Een geprikkelde huid reageert anders op een peeling.",
+      },
+      {
+        kop: "De peeling",
+        zin: "Kort inwerken, met tijden die per huid verschillen. Je voelt het prikken en dat hoort.",
+      },
+      {
+        kop: "Enkele dagen droog",
+        zin: "De huid schilfert licht en voelt gevoelig. Geen strakke kleding en geen sauna.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Is dit gênant?",
+        antwoord:
+          "Het is een behandeling zoals elke andere en de deur gaat dicht. Wat er wél anders is: je bepaalt zelf hoeveel je vertelt over waarom je komt.",
+      },
+      {
+        vraag: "Hoeveel sessies zijn er nodig?",
+        antwoord:
+          "Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs. [MEDISCHE-CHECK-ROJDA]",
+      },
     ],
   },
 
@@ -660,6 +928,43 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { naam: "Vrouwen, acht behandelingen inclusief producten", prijs: 1000 },
       { naam: "Vrouwen, acht behandelingen plus Hair Restart", prijs: 1300 },
     ],
+    wel: [
+      "Richt zich op de haarzakjes en de doorbloeding van de hoofdhuid [MEDISCHE-CHECK-ROJDA]",
+      "Loopt over meerdere maanden, want haargroei laat zich niet versnellen",
+      "Wordt afgestemd op je hoofdhuid en niet op een standaardschema",
+    ],
+    niet: [
+      "Brengt geen haar terug op plekken waar het zakje weg is [MEDISCHE-CHECK-ROJDA]",
+      "Is geen behandeling voor haaruitval met een medische oorzaak. Dat hoort bij een arts",
+      "Werkt niet als je stopt. Wat je hier opbouwt houd je bij of je verliest het weer",
+    ],
+    stappen: [
+      {
+        kop: "Kijken naar je hoofdhuid",
+        zin: "Waar het dunner wordt en sinds wanneer. Zonder dat vertrekpunt valt er later niets te vergelijken.",
+      },
+      {
+        kop: "De sessies",
+        zin: "Zes voor mannen, acht voor vrouwen, met weken ertussen. Dat aantal is het traject en geen richtprijs.",
+      },
+      {
+        kop: "Thuis doorgaan",
+        zin: "De producten horen bij het traject en staan in de prijs. Overslaan haalt de rest onderuit.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Wanneer zie ik verschil?",
+        antwoord:
+          "Niet binnen weken. Haar groeit in cycli en die laten zich niet opjagen, dus dit traject wordt in maanden gemeten. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Waarom is het voor vrouwen duurder?",
+        antwoord:
+          "Omdat er acht sessies in zitten in plaats van zes. Het verschil zit in het aantal en niet in het tarief.",
+      },
+    ],
+    bijProblemen: [{ label: "Alle huidproblemen", href: "/huidproblemen" }],
   },
   {
     slug: "acne-traject",
@@ -674,6 +979,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies: "Een traject [GEGEVEN-NODIG]",
     prijs: 570,
     bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
+    wel: [
+      "Volgt het verloop van acne in plaats van er één moment uit te pikken",
+      "Combineert behandelingen in de kliniek met producten en controles thuis",
+      "Legt bij elke controle vast wat er veranderd is, zodat je niet op je geheugen vergelijkt",
+    ],
+    niet: [
+      "Is geen kuur met een einddatum die we vooraf beloven [MEDISCHE-CHECK-ROJDA]",
+      "Vervangt geen behandeling door een arts. Bij zware of littekenvormende acne hoor je daar eerst [MEDISCHE-CHECK-ROJDA]",
+      "Werkt niet als de producten thuis blijven liggen. Het grootste deel van dit traject gebeurt buiten de kliniek",
+    ],
+    stappen: [
+      {
+        kop: "Meting vooraf",
+        zin: "Waar het zit, welk type en hoe je huid er nu aan toe is. Dat is het vertrekpunt.",
+      },
+      {
+        kop: "Behandelen en bijsturen",
+        zin: "Sessies in de kliniek met producten thuis, en bij elke controle kijken of het schema klopt.",
+      },
+      {
+        kop: "Afbouwen",
+        zin: "Een traject eindigt met wat je zelf volhoudt. Anders komt het terug en begint alles opnieuw.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Hoe lang duurt het traject?",
+        antwoord:
+          "Dat staat er bewust nog niet, omdat het per huid verschilt en we geen getal noemen dat we niet waar kunnen maken. Je hoort het na de meting. [GEGEVEN-NODIG] duur van het traject in maanden",
+      },
+      {
+        vraag: "Zit alles in de prijs?",
+        antwoord:
+          "De opbouw van dit traject wordt nog vastgelegd, inclusief wat er wel en niet in zit. [COPY-NODIG: wat er in het trajecttarief zit]",
+      },
+    ],
   },
   {
     slug: "jongeren-acne-traject",
@@ -687,6 +1028,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies: "Drie maanden met begeleiding",
     prijs: 0,
     bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
+    wel: [
+      "Is opgezet voor achttien jaar en jonger, met een programma van drie maanden [MEDISCHE-CHECK-ROJDA]",
+      "Werkt met begeleiding, want op die leeftijd is volhouden het lastigste deel",
+      "Neemt de huid serieus zonder er een probleem van te maken dat groter is dan het is",
+    ],
+    niet: [
+      "Belooft geen schone huid binnen drie maanden [MEDISCHE-CHECK-ROJDA]",
+      "Is geen behandeling voor acne die littekens maakt. Dan gaat een arts voor [MEDISCHE-CHECK-ROJDA]",
+      "Gaat niet buiten je ouders om. Onder de achttien komt er iemand mee en tekenen zij mee",
+    ],
+    stappen: [
+      {
+        kop: "Kennismaken",
+        zin: "Wat je zelf al probeert en wat er tot nu toe wel en niet hielp. Dat scheelt drie maanden opnieuw uitproberen.",
+      },
+      {
+        kop: "Drie maanden",
+        zin: "Een vast schema met controles ertussen, zodat er bijgestuurd wordt voordat het misloopt.",
+      },
+      {
+        kop: "Wat erna",
+        zin: "Je gaat naar huis met iets wat je zelf kunt volhouden. Dat is het echte doel.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Waarom staat er geen prijs?",
+        antwoord:
+          "Omdat die nog niet is vastgesteld. We zetten liever niets neer dan een bedrag dat later verandert. [PRIJS-NODIG]",
+      },
+      {
+        vraag: "Moet mijn ouder mee?",
+        antwoord:
+          "Ja. Onder de achttien is toestemming van een ouder of verzorger nodig, en bij de intake willen we die er ook bij hebben.",
+      },
+    ],
   },
   {
     slug: "littekentherapie",
@@ -710,6 +1087,42 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
     ],
+    wel: [
+      "Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens [MEDISCHE-CHECK-ROJDA]",
+      "Rekent naar de lengte van het litteken, zodat je vooraf weet waar je aan toe bent",
+      "Kijkt eerst naar de leeftijd van het litteken, want dat bepaalt wat er nog te winnen valt [MEDISCHE-CHECK-ROJDA]",
+    ],
+    niet: [
+      "Laat geen litteken verdwijnen. Een litteken is blijvend weefsel en dat verandert niet [MEDISCHE-CHECK-ROJDA]",
+      "Werkt niet op een litteken dat nog aan het genezen is. Daar wachten we op",
+      "Geeft geen voorspelling vooraf. Hoeveel een litteken opschuift verschilt per persoon en per plek",
+    ],
+    stappen: [
+      {
+        kop: "Kijken en meten",
+        zin: "Lengte, leeftijd, kleur en of het verhoogd of ingetrokken is. Dat bepaalt zowel de techniek als het tarief.",
+      },
+      {
+        kop: "De reeks",
+        zin: "Meestal meerdere sessies met weken ertussen, want het herstel doet het werk en niet de behandeling zelf.",
+      },
+      {
+        kop: "Vergelijken",
+        zin: "Foto's onder hetzelfde licht. Bij littekens maakt de lamp het verschil groter dan de behandeling.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Mijn litteken is tien jaar oud. Heeft het nog zin?",
+        antwoord:
+          "Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Hoeveel sessies?",
+        antwoord:
+          "Dat hangt af van de lengte en de leeftijd van het litteken, en het staat er daarom niet als getal. [GEGEVEN-NODIG] aantal sessies per littekentype",
+      },
+    ],
   },
   {
     slug: "fibromen",
@@ -723,6 +1136,48 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies: "Meestal één keer",
     prijs: 30,
     varianten: [{ naam: "Per kwartier", prijs: 30 }],
+    wel: [
+      "Haalt goedaardige steelwratjes weg, meestal in hals, oksels of liezen [MEDISCHE-CHECK-ROJDA]",
+      "Rekent per kwartier, dus meerdere kleine plekjes in één keer kost niet meer per stuk",
+      "Is in één afspraak klaar bij de meeste mensen",
+    ],
+    niet: [
+      "Beoordeelt geen moedervlekken of plekjes die veranderen. Dat hoort bij de huisarts of dermatoloog [MEDISCHE-CHECK-ROJDA]",
+      "Voorkomt niet dat er nieuwe komen. Wie ze aanmaakt, blijft ze aanmaken",
+      "Is geen behandeling zonder spoor. Er blijft een klein plekje dat langzaam vervaagt [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Eerst kijken",
+        zin: "Is het een fibroom en geen ander plekje. Twijfelen we, dan sturen we je door en behandelen we niet.",
+      },
+      {
+        kop: "Weghalen",
+        zin: "Per plekje een korte handeling. Meerdere achter elkaar binnen hetzelfde kwartier.",
+      },
+      {
+        kop: "Korstjes",
+        zin: "Die vallen er in dagen vanzelf af. Niet krabben, want dan wordt het wel een litteken.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Is het pijnlijk?",
+        antwoord:
+          "Kort en scherp per plekje, en het is snel voorbij. Bij grotere of gevoelige plekken verdoven we.",
+      },
+      {
+        vraag: "Waarom per kwartier en niet per stuk?",
+        antwoord:
+          "Omdat het aantal minder uitmaakt dan de tijd. Wie er twintig kleine heeft, betaalt anders het twintigvoudige voor hetzelfde kwartier werk.",
+      },
+    ],
+    bijProblemen: [
+      {
+        label: "Moedervlekken en plekjes",
+        href: "/huidproblemen/moedervlekken",
+      },
+    ],
   },
   {
     slug: "voedingsintolerantietest",
@@ -735,6 +1190,46 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     herstel: "Geen.",
     sessies: "Eén keer",
     prijs: 300,
+    wel: [
+      "Brengt in kaart op welke voedingsmiddelen je lichaam reageert [MEDISCHE-CHECK-ROJDA]",
+      "Geeft soms een verklaring voor huidklachten waar niets aan de huid zelf te vinden is",
+      "Levert een uitslag die je meeneemt, ook als je verder niets bij ons doet",
+    ],
+    niet: [
+      "Is geen allergietest en geen medische diagnose. Dat hoort bij een arts [MEDISCHE-CHECK-ROJDA]",
+      "Behandelt je huid niet. Er gebeurt hier niets aan je gezicht",
+      "Geeft geen garantie dat je huid opknapt als je iets weglaat [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "De afname",
+        zin: "Eén keer, en verder hoef je niets voor te bereiden.",
+      },
+      {
+        kop: "Wachten op de uitslag",
+        zin: "De uitslag komt van het laboratorium en niet uit de behandelkamer.",
+      },
+      {
+        kop: "Samen doornemen",
+        zin: "Wat er staat en wat het niet betekent. Dat tweede is bij dit soort tests het belangrijkste deel.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Wordt dit vergoed?",
+        antwoord:
+          "Dat verschilt per verzekeraar en per polis. Kijk bij vergoedingen wat er over jouw verzekeraar bekend is, en ga uit van wat je polis zegt en niet van wat wij zeggen.",
+      },
+      {
+        vraag: "Wat als er niets uitkomt?",
+        antwoord:
+          "Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haalt hem wel van je lijstje met vermoedens af. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    bijProblemen: [
+      { label: "Acne", href: "/huidproblemen/acne" },
+      { label: "Rosacea", href: "/huidproblemen/rosacea" },
+    ],
   },
 ];
 
