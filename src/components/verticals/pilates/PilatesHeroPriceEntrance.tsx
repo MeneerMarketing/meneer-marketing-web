@@ -87,25 +87,16 @@ export function PilatesHeroPriceEntrance() {
                 willChange: "transform",
               }
         }
-        className="relative overflow-visible rounded-[1.35rem] border border-white/12 bg-gradient-to-br from-white/[0.09] to-white/[0.03] p-5 shadow-[0_28px_60px_-28px_rgba(0,0,0,0.65)] backdrop-blur-md sm:p-6"
+        className="relative overflow-visible rounded-[1.35rem] border-2 border-[#FF5722]/25 bg-[#141a28] p-5 shadow-[0_20px_50px_-24px_rgba(0,0,0,0.7)] sm:p-6"
       >
-        <div
-          className="pointer-events-none absolute -inset-px rounded-[1.35rem] opacity-60"
-          aria-hidden
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(255,87,34,0.35), transparent 45%, transparent 70%, rgba(56,189,248,0.15))",
-          }}
-        />
-
         {launchPromo ? (
           <motion.button
             type="button"
             onClick={cycleQuip}
-            initial={reduce ? false : { scale: 0.8, rotate: -14 }}
-            animate={{ scale: 1, rotate: -10 }}
-            whileHover={reduce ? undefined : { rotate: -6, scale: 1.04 }}
-            className="absolute -right-2 -top-3 z-20 cursor-pointer rounded-full bg-[#FF5722] px-3.5 py-2 text-left shadow-[0_10px_28px_-8px_rgba(255,87,34,0.75)] ring-2 ring-white/25 sm:-right-3"
+            initial={reduce ? false : { scale: 0.92, rotate: -3 }}
+            animate={{ scale: 1, rotate: -2 }}
+            whileHover={reduce ? undefined : { rotate: 0, scale: 1.03 }}
+            className="absolute right-1 top-2 z-20 cursor-pointer rounded-full bg-[#FF5722] px-3.5 py-2 text-left shadow-[0_8px_24px_-6px_rgba(255,87,34,0.8)] ring-2 ring-white/20 sm:right-2 sm:top-1"
             aria-label="Launch actie: start nu zonder eenmalige fee"
           >
             <span className="block text-[9px] font-bold uppercase tracking-[0.14em] text-orange-100">
@@ -127,7 +118,7 @@ export function PilatesHeroPriceEntrance() {
               {PRICE_QUIPS[quipIndex]}
             </p>
             <p className="mt-1 text-[11px] text-slate-400">
-              Tik op het oranje rondje voor de volgende. Ja, echt.
+              Tik op het oranje badge voor de volgende. Ja, echt.
             </p>
           </div>
         </div>

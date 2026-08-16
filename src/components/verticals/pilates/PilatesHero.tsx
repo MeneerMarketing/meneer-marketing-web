@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect } from "react";
 import {
   ArrowUpRight,
-  Gauge,
+  CalendarCheck,
+  MapPin,
   MessageCircle,
   Rocket,
   Search,
   Sparkles,
-  TrendingUp,
 } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -24,9 +24,9 @@ const cfg = PILATES_VERTICAL;
 const launchPromo = getActiveLaunchPromo(cfg.pricing);
 
 const heroSignals = [
-  { icon: Sparkles, label: "Studioniveau design" },
-  { icon: Gauge, label: "Core Web Vitals groen" },
-  { icon: TrendingUp, label: "Pagina 1 ambities" },
+  { icon: MapPin, label: "Gevonden in jouw stad" },
+  { icon: CalendarCheck, label: "Proefles direct boeken" },
+  { icon: Sparkles, label: "Voelt als jóuw studio" },
 ] as const;
 
 export function PilatesHero() {
@@ -49,8 +49,7 @@ export function PilatesHero() {
         className="pointer-events-none absolute inset-0"
         aria-hidden
         style={{
-          background:
-            "radial-gradient(ellipse 80% 55% at 85% -5%, rgba(255,87,34,0.28), transparent 55%), radial-gradient(ellipse 50% 40% at 0% 100%, rgba(255,87,34,0.08), transparent 50%), linear-gradient(180deg, #0c1222 0%, #111827 100%)",
+          background: "#0c1222",
         }}
       />
 
@@ -149,15 +148,6 @@ export function PilatesHero() {
 
         <Reveal delay={0.1} className="relative flex h-full">
           <div className="relative flex h-full w-full flex-col">
-            <div className="absolute -left-2 top-[10%] z-20 hidden rotate-[-3deg] sm:block lg:-left-5">
-              <div className="flex items-center gap-2 rounded-xl border border-emerald-400/25 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-md">
-                <Gauge className="size-3.5 text-emerald-300" aria-hidden />
-                <span className="text-xs font-semibold text-slate-100">
-                  Core Web Vitals · groen
-                </span>
-              </div>
-            </div>
-
             <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border border-white/15 bg-slate-950 shadow-[0_32px_80px_rgba(0,0,0,0.45)] lg:rotate-[0.6deg]">
               <div className="flex shrink-0 items-center gap-1.5 border-b border-white/10 bg-slate-900/95 px-3 py-2.5">
                 <span className="size-2 rounded-full bg-rose-400/80" />
