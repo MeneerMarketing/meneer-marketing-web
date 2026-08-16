@@ -27,10 +27,59 @@ import {
   type ContactChannel,
 } from "@/lib/contact";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
-import { getPilatesPackageById } from "@/lib/verticals/pilates-receipt";
 
 const HEADING_ID = "pilates-why-price-heading";
 const EASE = [0.22, 1, 0.36, 1] as const;
+
+const PACKAGE_STORIES: Record<
+  VerticalPackageId,
+  {
+    eyebrow: string;
+    title: string;
+    paragraphs: readonly [string, string];
+    stats: readonly { k: string; v: string }[];
+  }
+> = {
+  "studio-edition": {
+    eyebrow: "Studio Edition · instap",
+    title: "Gevonden worden in jouw stad, met een site die echt klopt",
+    paragraphs: [
+      "Je studio oogt premium op de vloer. Online moet dat hetzelfde voelen. Ik bouw je site from scratch in jouw branding: lessen, tarieven, proefles. Geen template, geen rommel.",
+      "Daarna de basis die Google snapt: Pilates + jouw stad, technisch netjes, doorverwijzing naar boeking. Eerst zichtbaar worden en serieus overkomen. Ads kunnen later. Dit is je digitale visitekaartje, maar dan eentje die ook scoort.",
+    ],
+    stats: [
+      { k: "Doel", v: "Zichtbaar + vertrouwen" },
+      { k: "Google", v: "Lokaal gevonden" },
+      { k: "Site", v: "Studioniveau" },
+    ],
+  },
+  "local-growth": {
+    eyebrow: "Local Growth · meest gekozen",
+    title: "Structureel meer proeflessen uit Google",
+    paragraphs: [
+      "Alles uit Studio Edition, plus actieve groei. Meerdere pagina's voor reformer, mat, private. Google Maps scherp. Rankings die ik elke maand bijstuur op basis van wat er echt gebeurt in jouw regio.",
+      "Iemand zoekt Pilates bij jou in de buurt en landt op jouw pagina, niet op die van de concurrent. Proefles geboekt, rooster gevuld. Dit pakket is voor studio's die online al staan, maar nu echt willen groeien zonder zelf SEO te worden.",
+    ],
+    stats: [
+      { k: "Doel", v: "Meer proeflessen" },
+      { k: "Google", v: "Maandelijks scherp" },
+      { k: "Maps", v: "Lokaal zichtbaar" },
+    ],
+  },
+  "growth-partner": {
+    eyebrow: "Growth Partner · vol gas",
+    title: "Echte boost: meer leden, meer omzet",
+    paragraphs: [
+      "Organisch is solide, maar soms wil je sneller schalen. Growth Partner pakt alles uit Local Growth en zet daar Google Ads, Meta Ads en creators bovenop. Campagnes die doorsturen naar pagina's die echt laten boeken.",
+      "Meer verkeer, meer proeflessen, meer vaste leden. Jij runt de studio en de les. Ik run de kanalen die volume brengen. Wil je echt gas geven op omzet en leden, pak dan het grootste pakket.",
+    ],
+    stats: [
+      { k: "Doel", v: "Omzet + leden" },
+      { k: "Kanalen", v: "Ads + creators" },
+      { k: "Tempo", v: "Snel schalen" },
+    ],
+  },
+};
 
 interface TiltStackCardProps {
   children: ReactNode;
@@ -104,7 +153,7 @@ export function PilatesWhyPrice() {
     useState<ContactChannel["id"]>("whatsapp");
   const activeChannel =
     channels.find((c) => c.id === contactMode) ?? channels[1]!;
-  const selectedPkg = getPilatesPackageById(selectedPackage);
+  const packageStory = PACKAGE_STORIES[selectedPackage];
 
   function startDirect() {
     sessionStorage.setItem("lge-interest", selectedPackage);
@@ -152,43 +201,41 @@ export function PilatesWhyPrice() {
             <Reveal delay={0.06}>
               <TiltStackCard rotate={-0.55} delay={0.06}>
                 <article className="rounded-2xl border border-slate-200 bg-[#fffef9] p-5 shadow-[0_20px_48px_-32px_rgba(15,23,42,0.32)] ring-1 ring-slate-900/[0.04] sm:p-6">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF5722]">
-                    Waarom zo scherp?
-                  </p>
-                  <h3 className="mt-2 text-lg font-extrabold tracking-tight text-slate-900 sm:text-xl">
-                    Strategie die Google én je rooster vult
-                  </h3>
-                  <p className="mt-2.5 text-sm leading-relaxed text-slate-600">
-                    Twaalf jaar online marketing. Eerst kijk ik waar jouw
-                    kansen liggen: welke zoektermen, welke pagina&apos;s, waar
-                    lekt je conversie. Daar bouw ik je strategie omheen. Lokale
-                    SEO, sterke pagina&apos;s en een site die vertrouwen wekt
-                    en doorstuurt naar proefles of boeking.
-                  </p>
-                  <p className="mt-2.5 text-sm leading-relaxed text-slate-600">
-                    Ik zet het uit en houd het scherp. Nieuwe les, ander tarief,
-                    andere focus? Ik pas aan zodat je zo hoog mogelijk scoort
-                    én echt nieuwe leden binnenhaalt. Techniek en design staan
-                    al, dus mijn uren gaan naar jouw groei. Daarom kan dit voor
-                    €89.
-                  </p>
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={selectedPackage}
+                      initial={reduce ? false : { opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={reduce ? undefined : { opacity: 0, y: -8 }}
+                      transition={{ duration: 0.28, ease: EASE }}
+                    >
+                      <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF5722]">
+                        {packageStory.eyebrow}
+                      </p>
+                      <h3 className="mt-2 text-lg font-extrabold tracking-tight text-balance text-slate-900 sm:text-xl">
+                        {packageStory.title}
+                      </h3>
+                      <p className="mt-2.5 text-sm leading-relaxed text-slate-600">
+                        {packageStory.paragraphs[0]}
+                      </p>
+                      <p className="mt-2.5 text-sm leading-relaxed text-slate-600">
+                        {packageStory.paragraphs[1]}
+                      </p>
 
-                  <dl className="mt-4 grid grid-cols-3 gap-3 border-t border-dashed border-slate-200 pt-3.5">
-                    {[
-                      { k: "Focus", v: "Google + leden" },
-                      { k: "Ervaring", v: "12 jaar" },
-                      { k: "Aanpak", v: "Strategie op maat" },
-                    ].map((item) => (
-                      <div key={item.k}>
-                        <dt className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
-                          {item.k}
-                        </dt>
-                        <dd className="mt-0.5 text-sm font-extrabold tracking-tight text-slate-900">
-                          {item.v}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
+                      <dl className="mt-4 grid grid-cols-3 gap-3 border-t border-dashed border-slate-200 pt-3.5">
+                        {packageStory.stats.map((item) => (
+                          <div key={item.k}>
+                            <dt className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">
+                              {item.k}
+                            </dt>
+                            <dd className="mt-0.5 text-sm font-extrabold tracking-tight text-slate-900">
+                              {item.v}
+                            </dd>
+                          </div>
+                        ))}
+                      </dl>
+                    </motion.div>
+                  </AnimatePresence>
                 </article>
               </TiltStackCard>
             </Reveal>
@@ -237,9 +284,11 @@ export function PilatesWhyPrice() {
                     Ik wil gelijk beginnen
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-orange-50">
-                    {selectedPkg.name} · je betaalt, dan plannen we meteen je
-                    content. Hoe eerder we live gaan, hoe eerder Google jouw
-                    studio leert kennen.
+                    {selectedPackage === "studio-edition"
+                      ? "Je site live, gevonden in jouw stad. Hoe eerder we starten, hoe eerder Google je studio kent."
+                      : selectedPackage === "local-growth"
+                        ? "Local Growth · ik stuur actief op proeflessen uit Google. Laten we meteen plannen."
+                        : "Growth Partner · ads, creators en alles eromheen. Klaar voor echte groei? Start hier."}
                   </p>
                   <span className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold">
                     Naar checkout
