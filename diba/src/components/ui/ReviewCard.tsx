@@ -39,7 +39,7 @@ export default function ReviewCard({
 }: ReviewCardProps) {
   const n = Math.max(1, Math.min(5, Math.round(stars)));
   return (
-    <figure className="rounded-[1.5rem] border border-[var(--g-100)] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
+    <figure className="rounded-[var(--r-lg)] bg-white p-6 shadow-[var(--shadow-float)] sm:p-8">
       <blockquote>
         <p className="text-lg leading-relaxed text-[var(--g-900)] [font-family:var(--font-accent)] italic font-light md:text-xl">
           &ldquo;{quote}&rdquo;

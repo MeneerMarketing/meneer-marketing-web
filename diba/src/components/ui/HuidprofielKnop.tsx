@@ -75,7 +75,7 @@ export default function HuidprofielKnop() {
             className="w-[min(22rem,calc(100vw-2rem))] overflow-hidden rounded-[var(--r-lg)] bg-white shadow-[var(--shadow-float)]"
             style={{ animation: "diba-paneel-in .28s var(--ease-diba) both" }}
           >
-            <div className="flex items-start justify-between gap-4 border-b border-[var(--g-100)] px-6 pt-6 pb-5">
+            <div className="flex items-start justify-between gap-4 px-6 pt-6 pb-5">
               <div>
                 <p className="diba-label text-[var(--t-label)]">
                   Je huidprofiel
@@ -130,7 +130,7 @@ export default function HuidprofielKnop() {
               </p>
 
               {passend.length > 0 ? (
-                <div className="mt-5 border-t border-[var(--g-100)] pt-5">
+                <div className="mt-5 pt-5">
                   <p className="diba-label text-[var(--t-muted)]">
                     Past hierbij
                   </p>

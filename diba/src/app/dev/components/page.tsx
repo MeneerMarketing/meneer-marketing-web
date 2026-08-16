@@ -63,7 +63,7 @@ function DevSection({
   readonly wide?: boolean;
 }) {
   return (
-    <section className="border-t border-[var(--g-100)] py-12 first:border-t-0">
+    <section className="py-12 first:border-t-0">
       <p className={figmaLabel}>{title}</p>
       <FigmaHeading as="h2" size="card" text={title} className="mt-3" />
       <div className={`mt-8 ${wide ? "w-full" : ""}`}>{children}</div>

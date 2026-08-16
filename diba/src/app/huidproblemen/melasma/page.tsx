@@ -182,7 +182,7 @@ export default function MelasmaPage() {
                 {/* Een div en geen p: Label rendert zelf een <p>, en een <p> in een <p>
                     is ongeldige HTML waar de browser de boom voor herschikt. Dat leverde
                     een hydratiefout op. */}
-                <div className="mt-6 border-t border-[var(--g-100)] pt-4">
+                <div className="mt-6 pt-4">
                   <Label>Zelf in de hand</Label>
                   <span
                     className={`diba-card-title mt-2 block ${KNOP_KLEUR[a.knop] ?? ""}`}

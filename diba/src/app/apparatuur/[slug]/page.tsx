@@ -151,7 +151,7 @@ export default async function ApparaatPage({ params }: PageProps) {
               </p>
             )}
 
-            <p className="mt-6 border-t border-[var(--g-100)] pt-5 text-[14px] leading-6 text-[var(--t-muted)]">
+            <p className="mt-6 pt-5 text-[14px] leading-6 text-[var(--t-muted)]">
               Welke instelling er gekozen wordt hangt af van je huid, en dat
               bepaalt een mens na de meting. Niet dit apparaat en niet deze
               pagina.

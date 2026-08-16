@@ -67,7 +67,7 @@ export default function Kleurwijzer() {
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
             {publicCopy(kleur.watHetIs)}
           </p>
-          <p className="mt-6 border-t border-[var(--g-100)] pt-5 text-[16px] leading-7 text-[var(--t-strong)]">
+          <p className="mt-6 pt-5 text-[16px] leading-7 text-[var(--t-strong)]">
             {kleur.vraag}
           </p>
         </div>

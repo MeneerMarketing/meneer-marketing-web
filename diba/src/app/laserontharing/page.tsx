@@ -4,15 +4,46 @@ import Link from "next/link";
 import LaserHuidtypeRing from "@/components/laser/LaserHuidtypeRing";
 import LaserPulseMap from "@/components/laser/LaserPulseMap";
 import LaserSessieBoog from "@/components/laser/LaserSessieBoog";
+import PillarNav from "@/components/pillar/PillarNav";
+import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
+import Label from "@/components/ui/Label";
 import ReviewCard from "@/components/ui/ReviewCard";
 import SalonizedScorePanel from "@/components/ui/SalonizedScorePanel";
-import { LASER_LANDING_FAQ, LASER_USP_ROWS } from "@/data/laser-landing";
 import { FIGMA_INTENT_LASER } from "@/data/figma-home-images";
+import { LASER_LANDING_FAQ, LASER_USP_ROWS } from "@/data/laser-landing";
 import { reviewsForTopic } from "@/data/reviews";
-import { publicCopy } from "@/lib/copy-flags";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+
+/**
+ * Laserontharing — de grootste commerciële pagina van de site.
+ *
+ * HERBOUWD, EN NIET ALLEEN QUA OPMAAK.
+ *
+ * Dit was de laatste pagina die nog buiten het ontwerpsysteem stond. Zes losse
+ * hexkleuren, eigen kopformaten in plaats van de display-klassen, randen en
+ * scheidingslijnen overal, en een eigen FAQ-implementatie naast die van de rest.
+ * Daardoor week de belangrijkste pagina van de site zichtbaar af van de pagina's
+ * eromheen, en week hij ook af bij elke huisstijlwijziging die daarna komt.
+ *
+ * Zwaarder woog wat er níet stond. Vier secties bestonden uit een label, een kop en
+ * meteen een component: de configurator, het huidtype, de sessieboog en de reviews. Geen
+ * enkele zin die uitlegt waarom je ernaar kijkt. Voor iemand die hier binnenkomt met de
+ * vraag "kan dit bij mij en wat kost het" is dat vier keer een gereedschap zonder
+ * gebruiksaanwijzing, en dat is meteen de reden dat deze pagina met 402 woorden de dunste
+ * van alle grote pagina's was.
+ *
+ * Elke sectie heeft nu een introzin die één ding doet: zeggen welke vraag hij beantwoordt.
+ *
+ * WAT ER BEWUST BLIJFT.
+ *
+ * Het beeld in de hero, de drie punten in de strook en de volgorde van de secties. Die
+ * volgorde is de trechter van deze pagina: waar wil je het, past het bij jouw huid, hoe
+ * lang duurt het, wat zeggen anderen, en pas dan de vragen. Daar was niets mis mee.
+ *
+ * Eén donkergroen vlak: de afsluiter (§5).
+ */
 
 export const metadata: Metadata = {
   title: "Laserontharing Rotterdam | GentleMax Pro",
@@ -22,6 +53,14 @@ export const metadata: Metadata = {
 };
 
 const LASER_REVIEWS = reviewsForTopic("laser").slice(0, 3);
+
+const ANKERS = [
+  { id: "zones", label: "Waar je wilt ontharen" },
+  { id: "huidtype", label: "Jouw huidtype" },
+  { id: "sessies", label: "Hoeveel sessies" },
+  { id: "reviews", label: "Reviews" },
+  { id: "vragen", label: "Vragen" },
+] as const;
 
 export default function LaserontharingPage() {
   return (
@@ -33,49 +72,66 @@ export default function LaserontharingPage() {
         ])}
       />
 
-      {/* Hero */}
+      {/* ── Hero ── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid min-h-[520px] gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
-            <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
-              Laserontharing · GentleMax Pro
-            </p>
-            <h1 className="mt-5 max-w-3xl text-[clamp(2.8rem,6vw,5.5rem)] font-medium leading-[.92] tracking-[-.07em]">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-[var(--g-700)]">
+                Home
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--t-muted)]">Laserontharing</span>
+            </nav>
+
+            <h1 className="diba-display-l mt-6 max-w-[15ch]">
               Je prijs vooraf.
               <br />
-              <span className="text-[#387849]">Je huidtype meegenomen.</span>
+              <span className="diba-accent">Je huidtype meegenomen.</span>
             </h1>
-            <p className="mt-7 max-w-lg text-[16px] leading-7 text-[var(--t-muted)]">
-              Kies je zones in de configurator, zie direct je opbouw en plan een
-              intake wanneer het plan klopt. Geen gokwerk, wel duidelijkheid.
+
+            <p className="mt-7 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
+              Laserontharing wordt bijna overal per zone verkocht zonder dat je
+              vooraf weet wat het bij jou wordt. Hier kies je je zones, zie je
+              meteen je opbouw, en staat erbij wat een pakket vervangt.
             </p>
-            <div className="mt-9 flex flex-wrap items-center gap-4">
+            <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
+              Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af van
+              je huidtype en de zone, en dat hoor je na de meting in plaats van
+              nu.
+            </p>
+
+            <div className="mt-9 flex flex-wrap items-center gap-6">
               <Link
                 href="/laserontharing/configurator"
-                className="rounded-full bg-[var(--g-700)] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-white transition hover:-translate-y-0.5 hover:bg-[#174e31]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Bereken je laserprijs ↗
+                Bereken je laserprijs
+                <span aria-hidden="true">›</span>
               </Link>
               <SalonizedScorePanel variant="compact" />
             </div>
           </div>
 
-          <div className="relative min-h-[360px] overflow-hidden rounded-[2rem] bg-[#70a96d] lg:rounded-[2.5rem]">
+          <div className="relative min-h-[360px] overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-400)]">
             <Image
               src={FIGMA_INTENT_LASER.src}
               alt={FIGMA_INTENT_LASER.alt}
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
-              className="object-cover object-center mix-blend-multiply opacity-80"
+              className="object-cover object-center opacity-80 mix-blend-multiply"
             />
             <div
               className="absolute inset-0 bg-[linear-gradient(145deg,rgba(216,239,200,.75),rgba(30,85,54,.55))]"
               aria-hidden="true"
             />
-            <p className="absolute left-7 top-7 rounded-full bg-white/90 px-4 py-2 text-[10px] uppercase tracking-[.12em] text-[#397249]">
+            <p className="diba-label absolute top-7 left-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
               Hillegersberg · Rotterdam
             </p>
-            <p className="absolute bottom-7 left-7 max-w-xs text-2xl tracking-[-.05em] text-white drop-shadow-[0_2px_12px_rgba(15,45,28,.35)]">
+            <p className="diba-card-title-lg absolute bottom-7 left-7 max-w-xs text-white drop-shadow-[0_2px_12px_rgba(15,45,28,.35)]">
               Rustig in de stoel.
               <br />
               Scherp in de instelling.
@@ -84,152 +140,174 @@ export default function LaserontharingPage() {
         </div>
       </section>
 
-      {/* USP strip */}
-      <section className="border-y border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto grid divide-y divide-[var(--g-100)] md:grid-cols-3 md:divide-x md:divide-y-0">
+      {/* ── De drie punten ──
+          Stond op een strook met scheidingslijnen ertussen. Drie vlakken doen hetzelfde
+          zonder één lijn, en dat is de huisregel. */}
+      <section className="bg-white px-5 py-14 sm:px-9 lg:px-[7.5vw]">
+        <ul className="mx-auto grid gap-4 md:grid-cols-3">
           {LASER_USP_ROWS.map(({ title, body }) => (
-            <div key={title} className="py-8 md:px-6 md:first:pl-0">
-              <h2 className="text-lg tracking-[-.04em] text-[var(--g-700)]">
-                {title}
-              </h2>
-              <p className="mt-2 text-sm leading-6 text-[var(--t-muted)]">{body}</p>
-            </div>
+            <li
+              key={title}
+              className="rounded-[var(--r-md)] bg-[var(--g-025)] p-6 sm:p-7"
+            >
+              <p className="diba-card-title text-[var(--t-strong)]">{title}</p>
+              <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                {body}
+              </p>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
-      {/* Zone map */}
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <PillarNav ankers={ANKERS} />
+
+      {/* ── Zones ── */}
+      <section
+        id="zones"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
         <div className="mx-auto">
-          <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
-            Configurator
-          </p>
-          <h2 className="mt-4 max-w-2xl text-4xl tracking-[-.06em] sm:text-5xl">
-            Waar wil je ontharen?
-          </h2>
-          <div className="mt-14">
+          <SectieKop
+            label="De zones"
+            kop="Waar wil je"
+            accent="ontharen?"
+            intro="Kies een gebied en je ziet welke zones daaronder vallen. In de configurator daarna wijs je ze los aan en zie je meteen wat je opbouw wordt, inclusief het moment waarop een pakket goedkoper is dan de losse zones."
+          />
+          <div className="mt-12">
             <LaserPulseMap />
           </div>
         </div>
       </section>
 
-      {/* Huidtype */}
-      <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      {/* ── Huidtype ── */}
+      <section
+        id="huidtype"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
         <div className="mx-auto">
-          <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
-            Huidtype
-          </p>
-          <h2 className="mt-4 max-w-xl text-4xl tracking-[-.06em] sm:text-5xl">
-            Fitzpatrick I tot VI.
-          </h2>
-          <div className="mt-12 rounded-[2rem] border border-[var(--g-100)] bg-white p-7 sm:p-10">
+          <SectieKop
+            label="Huidtype"
+            kop="Fitzpatrick I"
+            accent="tot en met VI."
+            intro="Je huidtype bepaalt niet óf laserontharing kan, maar met welke instelling. Het gaat daarbij om hoe je huid op zon reageert en niet om hoe hij eruitziet, en weet je het niet zeker, dan wordt het bij de intake bepaald."
+          />
+          <div className="mt-12 rounded-[var(--r-lg)] bg-white p-7 sm:p-10">
             <LaserHuidtypeRing />
+          </div>
+          <p className="mt-6 max-w-[76ch] text-[15px] leading-7 text-[var(--t-muted)]">
+            De GentleMax Pro heeft twee golflengtes, en welke van de twee je
+            krijgt hangt hiervan af. Dat is de enige technische keuze op deze
+            site die rechtstreeks over veiligheid gaat.{" "}
+            <Link
+              href="/gentlemax-pro"
+              className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              Zo werkt dat
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      {/* ── Sessies ── */}
+      <section
+        id="sessies"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="Het verloop"
+            kop="Waarom het"
+            accent="een reeks is."
+            intro="Een haar is alleen te raken als hij in zijn groeifase zit, en dat doen ze niet allemaal tegelijk. Daarom werkt één sessie nooit en zit er tussen twee sessies weken. Dit is hoe zo'n reeks eruitziet."
+          />
+          <div className="mt-12 lg:max-w-4xl">
+            <LaserSessieBoog />
           </div>
         </div>
       </section>
 
-      {/* Sessie boog */}
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto lg:max-w-4xl">
-          <LaserSessieBoog />
-        </div>
-      </section>
-
-      {/* Reviews */}
+      {/* ── Reviews ── */}
       {LASER_REVIEWS.length > 0 ? (
-        <section className="bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+        <section
+          id="reviews"
+          className="scroll-mt-[var(--anker-offset)] bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        >
           <div className="mx-auto">
-            <div className="flex flex-wrap items-end justify-between gap-6">
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
-                  Reviews
-                </p>
-                <h2 className="mt-4 text-4xl tracking-[-.06em] sm:text-5xl">
-                  Over laser bij Diba.
-                </h2>
-              </div>
-              <Link
-                href="/reviews"
-                className="text-[11px] font-medium uppercase tracking-[.13em] text-[var(--g-700)] underline underline-offset-4"
-              >
-                Alle reviews ↗
-              </Link>
-            </div>
-            <div className="mt-10 grid gap-4 md:grid-cols-3">
+            <SectieKop
+              label="Reviews"
+              kop="Wat anderen"
+              accent="erover zeggen."
+              intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet bij staat is een voor-en-na, want bij ontharing verandert vooral het licht op de foto en niet wat je ziet."
+              raster="gelijk"
+            />
+            <ul className="mt-12 grid gap-4 md:grid-cols-3 md:items-start">
               {LASER_REVIEWS.map((r) => (
-                <ReviewCard
-                  key={r.id}
-                  quote={r.quote}
-                  name={r.name}
-                  treatment={r.treatment}
-                  stars={r.stars}
-                  relativeDate={r.relativeDate}
-                />
+                <li key={r.id}>
+                  <ReviewCard
+                    quote={r.quote}
+                    name={r.name}
+                    treatment={r.treatment}
+                    stars={r.stars}
+                    relativeDate={r.relativeDate}
+                  />
+                </li>
               ))}
-            </div>
+            </ul>
+            <Link
+              href="/resultaten"
+              className="diba-label mt-8 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              Alle reviews en resultaten
+              <span aria-hidden="true">›</span>
+            </Link>
           </div>
         </section>
       ) : null}
 
-      {/* FAQ */}
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto lg:grid lg:grid-cols-[.7fr_1.3fr] lg:gap-16">
-          <div>
-            <p className="text-[10px] font-medium uppercase tracking-[.15em] text-[var(--t-label)]">
-              Goed om te weten
-            </p>
-            <h2 className="mt-4 text-4xl tracking-[-.06em] sm:text-5xl">
-              Eerst even dit.
-            </h2>
-          </div>
-          <div className="mt-10 border-t border-[var(--g-100)] lg:mt-0">
-            {LASER_LANDING_FAQ.map((item) => (
-              <details
-                key={item.id}
-                className="group border-b border-[var(--g-100)] py-6"
-              >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
-                  <span>{item.question}</span>
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[var(--g-050)] text-[#367544] transition group-open:rotate-45">
-                    +
-                  </span>
-                </summary>
-                <p className="max-w-xl pt-4 text-[15px] leading-7 text-[#617968]">
-                  {publicCopy(item.answer)}
-                </p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── Vragen ──
+          Stond hier als eigen implementatie met haarlijnen, naast de PillarFaq die de
+          rest van de site gebruikt. Twee accordeons met hetzelfde doel lopen bij de
+          eerste wijziging uit elkaar. */}
+      <PillarFaq
+        items={LASER_LANDING_FAQ.map((f) => ({
+          vraag: f.question,
+          antwoord: f.answer,
+        }))}
+      />
 
-      {/* CTA */}
-      <section className="mx-5 mb-5 overflow-hidden rounded-[2.5rem] bg-[var(--g-700)] px-7 py-14 text-white sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto flex max-w-[1600px] flex-wrap items-end justify-between gap-10">
+      {/* ── Afsluiter ── */}
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
           <div>
-            <p className="text-[10px] font-medium uppercase tracking-[.16em] text-[var(--on-dark-label)]">
-              Volgende stap
-            </p>
-            <h2 className="mt-5 max-w-xl text-4xl leading-[.95] tracking-[-.06em] sm:text-5xl">
-              Configurator openen,
+            <Label opDonker>Volgende stap</Label>
+            <h2 className="diba-display-m mt-5 max-w-[18ch]">
+              Eerst je opbouw,
               <br />
-              daarna intake plannen.
+              <span className="diba-accent-on-dark">daarna pas een datum.</span>
             </h2>
+            <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              In de configurator stel je zelf samen wat je wilt en zie je het
+              bedrag per sessie. Je keuze staat daarna in de adresbalk, dus je
+              kunt hem bewaren of doorsturen en er later op terugkomen.
+            </p>
           </div>
-          <div className="flex flex-col gap-4 sm:flex-row">
+          <div className="flex flex-wrap items-center gap-3">
             <Link
               href="/laserontharing/configurator"
-              className="rounded-full bg-[var(--on-dark-btn)] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-[#174e31] transition hover:bg-white"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Naar configurator ↗
+              Naar de configurator
+              <span aria-hidden="true">›</span>
             </Link>
             <a
               href={DIBA_WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-white/40 px-6 py-4 text-center text-[11px] font-medium uppercase tracking-[.13em] text-white transition hover:bg-white/10"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-800)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-900)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Vraag via WhatsApp
+              Eerst je vraag stellen
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>

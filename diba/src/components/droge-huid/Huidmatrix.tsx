@@ -144,7 +144,7 @@ export default function Huidmatrix() {
           {AS_UITLEG.y.onder}
         </div>
 
-        <dl className="mt-6 space-y-3 border-t border-[var(--g-100)] pt-5">
+        <dl className="mt-6 space-y-3 pt-5">
           <div className="flex gap-4">
             <dt className="diba-label w-16 shrink-0">{AS_UITLEG.x.label}</dt>
             <dd className="text-sm leading-6 text-[var(--t-body)]">

@@ -121,7 +121,7 @@ export default function HetZonjaar() {
         </div>
 
         {/* Legenda: verklaart de kleuren zonder dat je erop moet klikken. */}
-        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-[var(--g-100)] pt-5">
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 pt-5">
           {(["goed", "kan", "liever-niet"] as const).map((k) => (
             <span
               key={k}

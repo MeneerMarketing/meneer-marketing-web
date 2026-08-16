@@ -173,7 +173,7 @@ export default function ApparatuurPage() {
                       <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
                         {publicCopy(a.kort)}
                       </span>
-                      <span className="mt-6 border-t border-[var(--g-100)] pt-4 text-[13px] leading-5 text-[var(--t-muted)]">
+                      <span className="mt-6 pt-4 text-[13px] leading-5 text-[var(--t-muted)]">
                         {a.behandelingen
                           .map((s) => behandelingVoorSlug(s)?.naam)
                           .filter(Boolean)

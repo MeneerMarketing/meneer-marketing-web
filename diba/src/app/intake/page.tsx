@@ -141,7 +141,7 @@ export default function IntakePage() {
               {intakeFeiten().map((f) => (
                 <div
                   key={f.label}
-                  className="flex items-baseline justify-between gap-6 border-b border-white/20 pb-4"
+                  className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-5 py-4"
                 >
                   <dt className="diba-label diba-label-on-dark">{f.label}</dt>
                   <dd className="diba-card-title text-right">
@@ -175,7 +175,7 @@ export default function IntakePage() {
       {/* In-paginanavigatie, dezelfde vorm als op de huidprobleempagina's. */}
       <nav
         aria-label="Op deze pagina"
-        className="sticky top-[var(--nav-h)] z-20 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur"
+        className="sticky top-[var(--nav-h)] z-20 bg-[var(--g-010)]/95 backdrop-blur"
       >
         <ul className="mx-auto flex gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (

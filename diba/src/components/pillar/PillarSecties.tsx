@@ -331,11 +331,11 @@ export function PillarFaq({
           </h2>
         </div>
 
-        <div className="border-t border-[var(--g-100)]">
+        <div className="space-y-2">
           {items.map((item) => (
             <details
               key={item.vraag}
-              className="group border-b border-[var(--g-100)] py-6"
+              className="group rounded-[var(--r-md)] bg-white px-6 py-5"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
                 <span>{item.vraag}</span>

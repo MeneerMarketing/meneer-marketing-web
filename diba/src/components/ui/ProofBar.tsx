@@ -38,7 +38,7 @@ export default function ProofBar({
 }) {
   return (
     <section
-      className={`border-y border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw] ${className}`.trim()}
+      className={`bg-white px-5 sm:px-9 lg:px-[7.5vw] ${className}`.trim()}
       aria-label="Diba Clinics in cijfers"
     >
       <div className="mx-auto grid grid-cols-2 gap-px bg-[var(--g-100)] md:grid-cols-4">

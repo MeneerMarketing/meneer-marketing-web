@@ -17,11 +17,11 @@ export default function LaserHuidtypeRing() {
       >
         <div
           aria-hidden="true"
-          className="absolute inset-4 rounded-full border border-[var(--g-100)]"
+          className="absolute inset-4 rounded-full bg-[var(--g-100)] [mask:radial-gradient(circle,transparent_calc(50%-1px),#000_calc(50%-1px))]"
         />
         <div
           aria-hidden="true"
-          className="absolute inset-10 rounded-full border border-[var(--on-dark-accent)]/50"
+          className="absolute inset-10 rounded-full bg-[var(--on-dark-accent)]/50 [mask:radial-gradient(circle,transparent_calc(50%-1px),#000_calc(50%-1px))]"
         />
         {FITZPATRICK_TYPES.map((type, i) => {
           const angle =
@@ -40,7 +40,7 @@ export default function LaserHuidtypeRing() {
               className={`absolute grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full text-[11px] font-medium transition sm:h-11 sm:w-11 ${
                 on
                   ? "bg-[var(--g-700)] text-white shadow-[0_8px_24px_rgba(40,105,67,.25)]"
-                  : "border border-[var(--g-100)] bg-white text-[var(--g-700)] hover:border-[var(--g-700)]"
+                  : "bg-white text-[var(--g-700)] hover:bg-[var(--g-050)]"
               }`}
               style={{ left: `${x}%`, top: `${y}%` }}
             >

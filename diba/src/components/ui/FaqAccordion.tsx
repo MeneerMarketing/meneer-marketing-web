@@ -39,13 +39,13 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <div className="border-t border-[var(--diba-green-200)]">
+    <div className="space-y-2">
       {items.map((item, i) => {
         const isOpen = open === i;
         const panelId = `${baseId}-panel-${i}`;
         const btnId = `${baseId}-btn-${i}`;
         return (
-          <div key={i} className="border-b border-[var(--diba-green-200)]">
+          <div key={i} className="rounded-[var(--r-md)] bg-white px-6 py-5">
             <h3>
               <button
                 id={btnId}

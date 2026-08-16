@@ -265,7 +265,7 @@ export default function Behandelingenoverzicht() {
                   </span>
                 ) : null}
 
-                <span className="mt-auto flex items-baseline justify-between gap-4 border-t border-[var(--g-100)] pt-4">
+                <span className="mt-auto flex items-baseline justify-between gap-4 pt-4">
                   <span className="text-[13px] leading-5 text-[var(--t-muted)]">
                     {publicCopy(b.herstel)}
                   </span>

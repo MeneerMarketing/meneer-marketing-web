@@ -92,7 +92,7 @@ export default function Raster() {
           Dezelfde vorm als de in-paginanavigatie op de huidprobleempagina's zelf. */}
       <nav
         aria-label="Naar een groep"
-        className="sticky top-[var(--nav-h)] z-20 -mx-5 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur sm:-mx-9 lg:-mx-[7.5vw]"
+        className="sticky top-[var(--nav-h)] z-20 -mx-5 bg-[var(--g-010)]/95 shadow-[0_6px_16px_-12px_rgba(15,45,28,.5)] backdrop-blur sm:-mx-9 lg:-mx-[7.5vw]"
       >
         <ul className="mx-auto flex gap-2 overflow-x-auto px-5 py-3 sm:px-9 lg:px-[7.5vw]">
           {GROEPEN.map((g) => {

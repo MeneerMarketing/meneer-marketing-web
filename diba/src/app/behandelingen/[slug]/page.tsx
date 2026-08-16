@@ -210,7 +210,7 @@ export default async function BehandelingPage({ params }: PageProps) {
 
       <nav
         aria-label="Op deze pagina"
-        className="sticky top-[var(--nav-h)] z-20 border-y border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur"
+        className="sticky top-[var(--nav-h)] z-20 bg-[var(--g-010)]/95 backdrop-blur"
       >
         <ul className="mx-auto flex gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (
@@ -446,7 +446,7 @@ export default async function BehandelingPage({ params }: PageProps) {
               <span className="diba-accent">hierover vragen.</span>
             </h2>
 
-            <ul className="mt-10 max-w-[64ch] divide-y divide-[var(--g-100)] border-y border-[var(--g-100)]">
+            <ul className="mt-10 max-w-[64ch] divide-y divide-[var(--g-100)]">
               {(b.faq ?? []).map((v) => (
                 <li key={v.vraag}>
                   <details className="group py-5">

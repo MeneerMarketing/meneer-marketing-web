@@ -292,7 +292,7 @@ export default function DrieKnoppen() {
 
         {/* ── De uitkomst ── */}
         <div
-          className="mt-8 border-t border-[var(--g-100)] pt-6"
+          className="mt-8 pt-6"
           aria-live="polite"
         >
           <Label>{`${telAan} van 3 aangepakt`}</Label>

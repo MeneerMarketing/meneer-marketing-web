@@ -397,7 +397,7 @@ export default function Configurator() {
           ) : null}
 
           {opbouw.lines.length > 0 ? (
-            <ul className="mt-6 space-y-3 border-t border-[var(--g-100)] pt-5">
+            <ul className="mt-6 space-y-3 pt-5">
               {opbouw.lines.map((l) => (
                 <li
                   key={l.zoneId}
@@ -421,7 +421,7 @@ export default function Configurator() {
               ))}
             </ul>
           ) : (
-            <p className="mt-6 border-t border-[var(--g-100)] pt-5 text-[15px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 pt-5 text-[15px] leading-7 text-[var(--t-body)]">
               Nog niets aangewezen. Kies links een zone op de tekening of in de
               lijst ernaast.
             </p>
@@ -435,7 +435,7 @@ export default function Configurator() {
           ) : null}
 
           {huidtype ? (
-            <p className="mt-4 border-t border-[var(--g-100)] pt-4 text-[14px] leading-6 text-[var(--t-body)]">
+            <p className="mt-4 pt-4 text-[14px] leading-6 text-[var(--t-body)]">
               Huidtype Fitzpatrick {huidtype}
             </p>
           ) : null}
@@ -458,7 +458,7 @@ export default function Configurator() {
           </div>
 
           {gekozen.length > 0 ? (
-            <div className="mt-5 flex items-center justify-between gap-3 border-t border-[var(--g-100)] pt-4">
+            <div className="mt-5 flex items-center justify-between gap-3 pt-4">
               <button
                 type="button"
                 onClick={deel}

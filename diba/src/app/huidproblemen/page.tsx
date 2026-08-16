@@ -143,7 +143,7 @@ export default function HuidproblemenPage() {
                 "Zonder beginpunt is een verschil later iets dat je moet geloven. Daarom leggen we vast waar we starten.",
               ],
             ].map(([kop, tekst]) => (
-              <li key={kop} className="border-t border-[var(--g-200)] pt-5">
+              <li key={kop} className="rounded-[var(--r-sm)] bg-white p-5">
                 <h3 className="diba-card-title">{kop}</h3>
                 <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tekst}

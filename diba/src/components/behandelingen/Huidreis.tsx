@@ -117,9 +117,13 @@ export default function Huidreis() {
             />
           ))}
 
-          {/* Wat de sonde tot nu toe heeft doorlopen. */}
+          {/* Wat de sonde tot nu toe heeft doorlopen.
+              --g-700 en niet --g-600: de laagnamen staan hier in wit overheen, en op
+              --g-600 bij 0,82 haalt dat 3,38 op de bovenste laag. Onder AA, en op een
+              schaal van tien procent doorzichtigheid niet op te lossen. Met --g-700 wordt
+              het 4,64, en de lagen schemeren er nog steeds doorheen. */}
           <div
-            className="absolute inset-x-0 top-0 bg-[var(--g-600)]"
+            className="absolute inset-x-0 top-0 bg-[var(--g-700)]"
             style={{
               height: `${diepte}%`,
               opacity: 0.82,
@@ -127,18 +131,21 @@ export default function Huidreis() {
             }}
           />
 
-          {/* De laagnamen. Wit zolang de sonde eroverheen is, anders donker. */}
+          {/* De laagnamen. Wit zodra de sonde over het lábel heen staat, en niet zodra hij
+              de laag raakt. Dat verschil is precies het bereik van dit label: het staat
+              tien pixels onder de laaggrens, dus bij "raakt de laag" sprong het al op wit
+              terwijl het nog op het lichte vlak stond. Wit op --g-100 haalt 1,27 en is
+              daarmee onleesbaar. */}
           {HUIDLAGEN.map((l) => {
-            const bereikt = diepte >= GRENZEN[l.id].tot - 0.5;
-            const gedeeltelijk = diepte > GRENZEN[l.id].van && !bereikt;
+            const g = GRENZEN[l.id];
+            const onderDeSonde = diepte > g.van + Math.min(6, (g.tot - g.van) / 2);
             return (
               <span
                 key={l.id}
                 className="absolute right-6 text-[13px] leading-5 font-medium"
                 style={{
-                  top: `calc(${GRENZEN[l.id].van}% + 10px)`,
-                  color:
-                    bereikt || gedeeltelijk ? "white" : "var(--t-strong)",
+                  top: `calc(${g.van}% + 10px)`,
+                  color: onderDeSonde ? "white" : "var(--t-strong)",
                   transition: "color .3s var(--ease-diba)",
                 }}
               >
@@ -218,7 +225,7 @@ export default function Huidreis() {
           {laag.zin}
         </p>
 
-        <div className="mt-9 border-t border-[var(--g-100)] pt-7">
+        <div className="mt-9 pt-7">
           <p className="diba-label text-[var(--t-muted)]">
             {alleHier.length === 0
               ? "Hier komt niets van ons"

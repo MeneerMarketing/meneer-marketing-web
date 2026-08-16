@@ -131,7 +131,7 @@ export default function PillarTemplate({
         </div>
       </section>
 
-      <section className="border-y border-[var(--g-100)] bg-white">
+      <section className="bg-white">
         <div
           className={`${figmaInnerContainer} grid divide-y divide-[var(--g-100)] md:grid-cols-4 md:divide-x md:divide-y-0`}
         >

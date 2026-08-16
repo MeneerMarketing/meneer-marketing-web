@@ -279,7 +279,7 @@ export default function Dieptevergelijker() {
                 {publicCopy(m.zin)}
               </span>
               {doelwitten.length > 0 ? (
-                <span className="mt-4 block border-t border-[var(--g-100)] pt-3 text-[13px] leading-5 text-[var(--t-muted)]">
+                <span className="mt-4 block pt-3 text-[13px] leading-5 text-[var(--t-muted)]">
                   Grijpt aan op{" "}
                   {doelwitten
                     .map((d) => DOELWITTEN[d].naam.toLowerCase())

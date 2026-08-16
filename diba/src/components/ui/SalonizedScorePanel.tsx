@@ -44,7 +44,7 @@ export default function SalonizedScorePanel({
         href={SALONIZED_REVIEWS_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className={`inline-flex flex-wrap items-center gap-3 rounded-full border border-[var(--g-100)] bg-white px-4 py-2 text-[11px] font-medium uppercase tracking-[.12em] text-[var(--g-700)] transition hover:border-[var(--g-700)] hover:bg-[var(--g-050)] ${className}`}
+        className={`inline-flex flex-wrap items-center gap-3 rounded-[var(--r-pill)] bg-white px-4 py-2 text-[11px] font-medium uppercase tracking-[.12em] text-[var(--g-700)] transition-colors hover:bg-[var(--g-050)] ${className}`}
       >
         <Stars size={11} />
         <span>
@@ -57,7 +57,7 @@ export default function SalonizedScorePanel({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-[2rem] border border-[var(--g-100)] bg-[linear-gradient(145deg,var(--g-050),#fff_55%)] p-8 sm:p-10 ${className}`}
+      className={`relative overflow-hidden rounded-[var(--r-lg)] bg-[linear-gradient(145deg,var(--g-050),#fff_55%)] p-8 sm:p-10 ${className}`}
     >
       <div
         aria-hidden="true"
@@ -85,7 +85,7 @@ export default function SalonizedScorePanel({
           href={SALONIZED_REVIEWS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full border border-[#b8d0b9] px-5 py-3 text-[11px] font-medium uppercase tracking-[.13em] text-[var(--g-700)] transition hover:border-[var(--g-700)] hover:bg-white"
+          className="rounded-[var(--r-pill)] bg-white/70 px-5 py-3 text-[11px] font-medium uppercase tracking-[.13em] text-[var(--g-700)] transition-colors hover:bg-white"
         >
           Alle reviews op Salonized ↗
         </Link>

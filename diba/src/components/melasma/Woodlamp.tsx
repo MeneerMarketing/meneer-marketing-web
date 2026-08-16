@@ -202,7 +202,7 @@ export default function Woodlamp() {
         </p>
 
         {/* Slepen is nooit de enige weg. */}
-        <div className="mt-5 border-t border-[var(--g-100)] pt-5">
+        <div className="mt-5 pt-5">
           <Label>Of zet de lamp direct op</Label>
           <div className="mt-3 flex flex-wrap gap-2">
             {LAGEN.map((l) => (
