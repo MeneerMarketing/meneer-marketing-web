@@ -625,7 +625,7 @@ export default function FigmaHomeApp() {
                 Instagram
               </a>
             ) : (
-              <span className="opacity-50" title="[GEGEVEN-NODIG]">
+              <span className="opacity-50">
                 Instagram
               </span>
             )}

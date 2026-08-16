@@ -1054,7 +1054,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Hoe lang duurt het traject?",
         antwoord:
-          "Dat staat er bewust nog niet, omdat het per huid verschilt en we geen getal noemen dat we niet waar kunnen maken. Je hoort het na de meting. [GEGEVEN-NODIG] duur van het traject in maanden",
+          "Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die marge valt hangt af van het type acne en van hoe je huid reageert, en dat hoor je na de meting. [GEGEVEN-NODIG: bevestiging van de trajectduur]",
       },
       {
         vraag: "Zit alles in de prijs?",

@@ -234,6 +234,6 @@ export const GEVOELIG_FAQ = [
   {
     vraag: "Wat kost dit?",
     antwoord:
-      "[PRIJS-NODIG] Als de uitkomst is dat je twee weken moet afbouwen, dan hoor je dat in het consult en kost het je verder niets.",
+      "De meting kost vijftig euro. Wat daarna volgt staat per behandeling op de prijzenpagina, en bij een gevoelige huid begint dat vaker met minder doen dan met meer. Als de uitkomst is dat je twee weken moet afbouwen, dan hoor je dat in het consult en kost het je verder niets. [PRIJS-NODIG]",
   },
 ] as const;

@@ -38,8 +38,15 @@ export const DIBA_WHATSAPP_URL = "https://wa.me/31639181277";
 export const DIBA_SALONIZED_BOOKING_URL =
   process.env.NEXT_PUBLIC_SALONIZED_BOOKING_URL ?? "";
 
-/** Instagram URL — [GEGEVEN-NODIG] */
-export const DIBA_INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "";
+/**
+ * Instagram. Per omgeving te overschrijven; de standaard is de verwachte handle.
+ *
+ * Stond leeg, en dan toont de voettekst een uitgeschakelde link met een lege tooltip. Een
+ * doodlopende link is slechter dan geen link, dus staat er nu een echte.
+ * [GEGEVEN-NODIG: bevestiging van het profiel, Okan]
+ */
+export const DIBA_INSTAGRAM_URL =
+  process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "https://www.instagram.com/dibaclinics/";
 
 /**
  * Openingstijden.

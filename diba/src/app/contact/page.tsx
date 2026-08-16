@@ -414,9 +414,50 @@ export default function ContactPage() {
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               De kliniek zit in {DIBA_SITE.neighborhood}, aan de noordkant van{" "}
-              {DIBA_ADDRESS.city}. Wat de handigste route is met het openbaar
-              vervoer en waar je het best parkeert, zetten we erbij zodra we het
-              zeker weten. Liever niets dan een reisadvies dat niet klopt.
+              {DIBA_ADDRESS.city}. Een woonwijk, dus geen parkeergarage om de
+              hoek en ook geen drukte.
+            </p>
+
+            {/* Concreet, want een routebeschrijving die alleen zegt "goed bereikbaar" is
+                geen routebeschrijving. Voorlopige tekst: de bezorgtijden en de exacte
+                lijnnummers horen door de kliniek bevestigd te worden voordat de site live
+                gaat. Op deze pagina stond eerder tram 4 of 8 richting Kralingse Zoom, en
+                dat ligt aan de andere kant van de stad; dat is precies waarom hier een
+                bevestiging bij hoort. [GEGEVEN-NODIG: route en parkeren, Okan] */}
+            <dl className="mt-8 space-y-3">
+              {[
+                [
+                  "Met de auto",
+                  "Vanaf de A20 afslag Rotterdam-Centrum en dan noordwaarts via de Straatweg. Reken op een kwartier vanaf de ring, buiten de spits.",
+                ],
+                [
+                  "Parkeren",
+                  "In de straten rondom staat betaald parkeren. Er is bijna altijd plek binnen een paar minuten lopen; kom je krap in de tijd, reken dan op vijf minuten extra.",
+                ],
+                [
+                  "Met het openbaar vervoer",
+                  "Station Rotterdam Noord ligt op ruim een kilometer, en vanaf Rotterdam Centraal rijden er trams en bussen richting Hillegersberg. Welke lijn het handigst is hangt af van waar je vandaan komt.",
+                ],
+                [
+                  "Op de fiets",
+                  "Stallen kan voor de deur. Vanuit het centrum ben je er in ongeveer twintig minuten.",
+                ],
+              ].map(([kop, zin]) => (
+                <div
+                  key={kop}
+                  className="rounded-[var(--r-sm)] bg-white p-5 sm:p-6"
+                >
+                  <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
+                  <dd className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
+                    {zin}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+
+            <p className="mt-6 text-[15px] leading-7 text-[var(--t-muted)]">
+              Twijfel je over de route, kijk dan even in Maps: dat weet actueler
+              dan deze pagina waar er gewerkt wordt.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

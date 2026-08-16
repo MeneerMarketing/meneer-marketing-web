@@ -215,7 +215,7 @@ export const KRINGEN_FAQ = [
   {
     vraag: "Hoeveel sessies heb ik nodig?",
     antwoord:
-      "[GEGEVEN-NODIG] Bij pigment werken we onder het oog bewust in kleinere stappen, dus reken op meer sessies dan bij dezelfde vlek op je wang.",
+      "Meestal drie tot zes, met vier tot zes weken ertussen, en dat hoor je pas na de meting omdat het van de oorzaak afhangt. Bij pigment werken we onder het oog bewust in kleinere stappen, dus reken op meer sessies dan bij dezelfde vlek op je wang. [GEGEVEN-NODIG]",
   },
   kostenVraag(),
 ] as const;

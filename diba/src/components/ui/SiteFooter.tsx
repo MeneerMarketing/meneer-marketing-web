@@ -48,7 +48,6 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
           ) : (
             <span
               className={`${footerLink} opacity-50`}
-              title="[GEGEVEN-NODIG]"
             >
               Instagram
             </span>

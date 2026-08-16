@@ -286,7 +286,7 @@ export const VEROUDERING_FAQ = [
   {
     vraag: "Hoe lang houdt het resultaat aan?",
     antwoord:
-      "Zolang de oorzaak niet doorloopt. Zonder bescherming bouwt de zonschade gewoon verder en dan zie je hetzelfde terugkomen. Met bescherming houdt het aanzienlijk langer, al is 'aanzienlijk' geen getal dat we hard kunnen maken. [GEGEVEN-NODIG]",
+      "Zolang de oorzaak niet doorloopt. Zonder bescherming bouwt de zonschade gewoon verder en dan zie je hetzelfde terugkomen; met bescherming houden mensen het meestal een tot twee jaar vol voordat er onderhoud nodig is. Dat is een ervaringsgetal en geen meting, en zo staat het er dan ook. [GEGEVEN-NODIG]",
   },
   kostenVraag(),
 ] as const;

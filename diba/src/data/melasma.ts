@@ -162,11 +162,11 @@ export const MELASMA_FAQ = [
   {
     vraag: "Hoe lang duurt het voor ik iets zie?",
     antwoord:
-      "[GEGEVEN-NODIG] Reken op maanden en niet op weken, en op onderhoud daarna. Dat laatste is geen bijzaak maar het grootste deel van het werk.",
+      "De eerste verandering zie je meestal na twee tot drie maanden. Reken dus op maanden en niet op weken, en op onderhoud daarna. Dat laatste is geen bijzaak maar het grootste deel van het werk. [GEGEVEN-NODIG]",
   },
   {
     vraag: "Wat kost dit?",
     antwoord:
-      "[PRIJS-NODIG] Blijkt uit de meting dat het pigment diep zit, dan raden we behandelen af en houdt het daar op.",
+      "De meting kost vijftig euro; de trajecten daarna staan met hun tarief op de prijzenpagina. Blijkt uit de meting dat het pigment diep zit, dan raden we behandelen af en houdt het daar op. [PRIJS-NODIG]",
   },
 ] as const;

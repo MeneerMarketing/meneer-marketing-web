@@ -105,7 +105,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "" ? 1 : 0.7,
   }));
 
-  const pillars: MetadataRoute.Sitemap = PILLARS.filter(gereed).map((p) => ({
+  /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde
+     pagina's. Ze werden hier gefilterd op een skelet vol "[COPY-NODIG]" dat op geen
+     enkele pagina meer terechtkwam, waardoor er nooit één van in de sitemap belandde
+     terwijl het de rijkste pagina's van de site zijn. Zie de toelichting in pillars.ts.
+
+     Nu volgen ze dezelfde weg als elke andere statische route: ze staan hieronder pas in
+     de sitemap als iemand ze bewust in STATISCH_GEREED zet. */
+  const pillars: MetadataRoute.Sitemap = PILLARS.filter((p) =>
+    STATISCH_GEREED.includes(`/huidproblemen/${p.slug}`),
+  ).map((p) => ({
     url: `${DIBA_SITE_URL}/huidproblemen/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly",
