@@ -7,13 +7,13 @@ import { PilatesCampaignBar } from "@/components/verticals/pilates/PilatesCampai
 import { PilatesCampaignTracker } from "@/components/verticals/pilates/PilatesCampaignTracker";
 import { PilatesCase } from "@/components/verticals/pilates/PilatesCase";
 import { PilatesCompleteFlow } from "@/components/verticals/pilates/PilatesCompleteFlow";
+import { PilatesExclusivity } from "@/components/verticals/pilates/PilatesExclusivity";
 import { PilatesFaq } from "@/components/verticals/pilates/PilatesFaq";
 import { PilatesFinalCta } from "@/components/verticals/pilates/PilatesFinalCta";
 import { PilatesGoogleStrategy } from "@/components/verticals/pilates/PilatesGoogleStrategy";
 import { PilatesHero } from "@/components/verticals/pilates/PilatesHero";
 import { PilatesHowItWorks } from "@/components/verticals/pilates/PilatesHowItWorks";
 import { PilatesInternalLinks } from "@/components/verticals/pilates/PilatesInternalLinks";
-import { PilatesLiveDesign } from "@/components/verticals/pilates/PilatesLiveDesign";
 import { PilatesLocalSeo } from "@/components/verticals/pilates/PilatesLocalSeo";
 import { PilatesPricing } from "@/components/verticals/pilates/PilatesPricing";
 import { PilatesSignatureCustom } from "@/components/verticals/pilates/PilatesSignatureCustom";
@@ -52,23 +52,24 @@ export function PilatesStudiosView({
       ) : null}
       <PilatesHero />
       <PilatesStudioExperience />
-      <PilatesLiveDesign />
+      <PilatesCompleteFlow />
       <PilatesWhyPrice />
       <PilatesGoogleStrategy />
       <PilatesLocalSeo />
+      <PilatesExclusivity personalization={personalization} />
       <PilatesBookingApp campaignRef={campaignRef} />
       <PilatesPricing
         campaignRef={campaignRef}
         personalization={personalization}
         onPackageSelect={onPackageSelect}
       />
-      <PilatesCompleteFlow />
       <PilatesSignatureCustom
         campaignRef={campaignRef}
         onSelect={() => onPackageSelect("signature-custom")}
       />
       <PilatesCase />
       <PilatesHowItWorks />
+      <PilatesInternalLinks />
       <PilatesFaq />
       <PilatesFinalCta
         personalization={personalization}
@@ -76,7 +77,6 @@ export function PilatesStudiosView({
         selectedInterest={selectedInterest}
         onInterestChange={setSelectedInterest}
       />
-      <PilatesInternalLinks />
     </main>
   );
 }

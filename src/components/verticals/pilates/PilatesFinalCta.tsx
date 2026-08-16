@@ -3,6 +3,7 @@
 import { ArrowUpRight } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
+import { LivingCloudGrid } from "@/components/effects/LivingCloudGrid";
 import { PilatesLeadForm } from "@/components/verticals/pilates/PilatesLeadForm";
 import type {
   VerticalCampaignPersonalization,
@@ -36,17 +37,12 @@ export function PilatesFinalCta({
   return (
     <section
       id="aanvraag"
-      className="relative overflow-hidden border-b border-slate-800 bg-[#0c1222] text-white"
+      className="relative overflow-hidden bg-mm-footer-bg text-white"
       aria-labelledby="pilates-final-heading"
     >
-      <div
-        className="pointer-events-none absolute inset-0"
-        aria-hidden
-        style={{
-          background:
-            "radial-gradient(ellipse 60% 45% at 10% 0%, rgba(255,87,34,0.22), transparent 55%), radial-gradient(ellipse 45% 40% at 95% 100%, rgba(56,189,248,0.12), transparent 55%)",
-        }}
-      />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.14]">
+        <LivingCloudGrid />
+      </div>
 
       <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:pb-24 lg:pt-20">
         <div className="grid items-stretch gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10">
@@ -77,27 +73,29 @@ export function PilatesFinalCta({
                 {promo ? ", launch tijdelijk €0" : ""}.
               </p>
 
-              <a
-                href={PILATES_VERTICAL.demo.primaryHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() =>
-                  trackPilatesEvent("pilates_demo_click", {
-                    location: "final_cta",
-                  })
-                }
-                className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2.5 text-sm font-bold text-white transition hover:border-[#FF5722]/50 hover:bg-[#FF5722]/10"
-              >
-                Eerst live demo bekijken
-                <ArrowUpRight className="size-4" aria-hidden />
-              </a>
+              {personalization?.previewHref ? (
+                <a
+                  href={personalization.previewHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() =>
+                    trackPilatesEvent("pilates_demo_click", {
+                      location: "final_cta",
+                    })
+                  }
+                  className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2.5 text-sm font-bold text-white transition hover:border-[#FF5722]/50 hover:bg-[#FF5722]/10"
+                >
+                  Bekijk jullie ontwerp opnieuw
+                  <ArrowUpRight className="size-4" aria-hidden />
+                </a>
+              ) : null}
             </div>
 
             <ul className="mt-10 space-y-3 border-t border-white/10 pt-6 text-sm text-slate-300">
               {[
                 "Rechtstreeks contact",
                 "Site, SEO en ads onder één dak",
-                "Live in circa 5 werkdagen",
+                "Eén Pilates partner per stad",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <span

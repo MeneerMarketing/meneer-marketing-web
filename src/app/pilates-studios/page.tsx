@@ -47,12 +47,12 @@ export default async function PilatesStudiosPage({ searchParams }: PageProps) {
             name: seo.title,
             description: seo.description,
             path: PAGE_PATH,
-            dateModified: "2026-08-14",
+            dateModified: "2026-08-12",
           }),
           serviceJsonLd({
             name: "Website, SEO en marketing voor Pilates studio's",
             description:
-              "High-end Pilates studio website, lokale SEO, Google Ads-beheer en boekingsflow. Studio Edition, Local Growth of Growth Partner.",
+              "High-end Pilates studio website, lokale SEO, Google Ads-beheer en boekingsflow. Studio Edition, Local Growth of Growth Partner. Één partner per stad.",
             path: PAGE_PATH,
             areaServed: "Nederland",
           }),

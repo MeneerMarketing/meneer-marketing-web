@@ -27,7 +27,7 @@ const PHASES = [
     icon: Sparkles,
     kicker: "Vertrouwen",
     title: "De site overtuigt in één scroll.",
-    body: "Art direction, lessen, trainers en prijzen die kloppen.",
+    body: "Look, lessen, trainers en prijzen die kloppen.",
     pill: "Twijfel → dit is het",
   },
   {
@@ -73,15 +73,15 @@ export function PilatesCompleteFlow() {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-orange-300">
-                Van website naar een pad
+                Complete studio flow
               </p>
               <h2
                 id="pilates-flow-heading"
                 className="mt-3 text-3xl font-extrabold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.06]"
               >
-                Gevonden worden, vertrouwen winnen, les boeken.
+                Van Google-zoekopdracht tot vaste Pilates-klant.
                 <span className="mt-1 block text-[#FF5722]">
-                  Eén doorlopende route.
+                  Dat is het echte product.
                 </span>
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">

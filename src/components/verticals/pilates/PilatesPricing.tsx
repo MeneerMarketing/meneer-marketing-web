@@ -103,12 +103,12 @@ export function PilatesPricing({
             <p className="mt-3 text-sm font-semibold text-slate-800">
               {promo.note}{" "}
               <span className="font-medium text-slate-500">
-                ({termDisclaimer})
+                ({termDisclaimer} {minTermMonths} maanden.)
               </span>
             </p>
           ) : (
             <p className="mt-3 text-sm font-medium text-slate-500">
-              {termDisclaimer}
+              {termDisclaimer} ({minTermMonths} maanden).
             </p>
           )}
         </Reveal>
