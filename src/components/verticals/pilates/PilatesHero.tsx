@@ -12,11 +12,10 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import { LivingCloudGrid } from "@/components/effects/LivingCloudGrid";
 import { Reveal } from "@/components/effects/Reveal";
 import { Magnetic } from "@/components/effects/Magnetic";
 import { InteractiveLogo } from "@/components/site/InteractiveLogo";
-import { PilatesHeroPriceEntrance } from "@/components/verticals/pilates/PilatesHeroPriceEntrance";
+import { PilatesHeroBoostStory } from "@/components/verticals/pilates/PilatesHeroBoostStory";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
 import { getActiveLaunchPromo } from "@/lib/verticals/format-price";
@@ -48,11 +47,22 @@ export function PilatesHero() {
   }, []);
 
   return (
-    <header className="relative isolate overflow-hidden border-b border-slate-200 bg-white text-slate-900">
-      <LivingCloudGrid />
-
+    <header className="relative isolate overflow-hidden border-b border-[#e64a19] bg-[#FF5722] text-white">
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(ellipse_at_top,_rgba(255,87,34,0.09),_transparent_65%)]"
+        className="pointer-events-none absolute inset-0 opacity-[0.22]"
+        aria-hidden
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute -left-20 top-10 size-64 rounded-full bg-white/10 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -right-16 bottom-0 size-72 rounded-full bg-[#0c1222]/15 blur-3xl"
         aria-hidden
       />
 
@@ -60,44 +70,44 @@ export function PilatesHero() {
         <Reveal className="flex h-full flex-col">
           <div className="flex flex-wrap items-center gap-3">
             <InteractiveLogo className="size-9 shrink-0" interactive={false} />
-            <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-[#C2410C]">
+            <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-orange-50">
               Voor boutique Pilates studio&apos;s
             </p>
             {launchPromo ? (
-              <span className="rounded-full border border-orange-200 bg-orange-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#C2410C]">
+              <span className="rounded-full border border-white/30 bg-white/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm">
                 Start nu zonder launchfee
               </span>
             ) : null}
           </div>
 
           <h1 className="mt-5 text-[1.85rem] font-extrabold leading-[1.08] tracking-tight text-balance sm:text-[2.75rem] lg:text-[3.05rem] lg:leading-[1.02]">
-            <span className="block text-slate-900 sm:whitespace-nowrap">
+            <span className="block text-white sm:whitespace-nowrap">
               Je studio is al strak.
             </span>
-            <span className="mt-1 block text-[#FF5722] sm:whitespace-nowrap">
+            <span className="mt-1 block text-[#0c1222] sm:whitespace-nowrap">
               Pagina 1 in Google.
             </span>
           </h1>
 
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-600 sm:text-base">
+          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-orange-50 sm:text-base">
             Je reformer staat niet stil. Waarom zou je site dat wel doen? Ik bouw
             from scratch, zorg dat je studio gevonden wordt, en stuur op
             proeflessen en leden. Jij runt de les. Ik regel het digitale stuk.
           </p>
 
-          <PilatesHeroPriceEntrance />
+          <PilatesHeroBoostStory />
 
           <ul className="mt-6 grid gap-2.5 sm:grid-cols-3">
             {heroSignals.map(({ icon: Icon, label, hint }) => (
               <li
                 key={label}
-                className="rounded-2xl border border-slate-200/90 bg-white/80 px-3.5 py-3 shadow-[0_8px_24px_-18px_rgba(15,23,42,0.12)] backdrop-blur-sm"
+                className="rounded-2xl border border-white/20 bg-white/10 px-3.5 py-3 backdrop-blur-sm"
               >
-                <span className="inline-flex items-center gap-2 text-[12px] font-bold text-slate-900">
-                  <Icon className="size-3.5 shrink-0 text-[#FF5722]" aria-hidden />
+                <span className="inline-flex items-center gap-2 text-[12px] font-bold text-white">
+                  <Icon className="size-3.5 shrink-0 text-orange-100" aria-hidden />
                   {label}
                 </span>
-                <span className="mt-1 block text-[10px] font-medium leading-snug text-slate-500">
+                <span className="mt-1 block text-[10px] font-medium leading-snug text-orange-100/90">
                   {hint}
                 </span>
               </li>
@@ -115,7 +125,7 @@ export function PilatesHero() {
                     package: "studio-edition",
                   });
                 }}
-                className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#FF5722] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(255,87,34,0.55)] transition hover:-translate-y-0.5 hover:bg-orange-600 hover:shadow-[0_20px_44px_-10px_rgba(255,87,34,0.65)] sm:w-auto"
+                className="group relative inline-flex w-full items-center justify-center gap-2.5 rounded-2xl rounded-bl-sm bg-[#0c1222] px-7 py-4 text-base font-bold tracking-tight text-white shadow-[0_16px_40px_-10px_rgba(12,18,34,0.45)] transition hover:-translate-y-0.5 hover:bg-slate-900 sm:w-auto"
               >
                 <Rocket
                   className="size-4 transition group-hover:-translate-y-0.5"
@@ -135,18 +145,18 @@ export function PilatesHero() {
                   location: "hero_contact",
                 })
               }
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-300/80 bg-white/70 px-5 py-4 text-sm font-bold tracking-tight text-slate-900 backdrop-blur-sm transition hover:border-[#FF5722] hover:bg-orange-50/80 hover:text-[#FF5722] sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/35 bg-white/10 px-5 py-4 text-sm font-bold tracking-tight text-white backdrop-blur-sm transition hover:border-white hover:bg-white/20 sm:w-auto"
             >
-              <MessageCircle className="size-4 text-[#FF5722]" aria-hidden />
+              <MessageCircle className="size-4" aria-hidden />
               Ik wil eerst contact
             </a>
           </div>
 
-          <p className="mt-3 text-xs leading-relaxed text-slate-500 lg:mt-auto lg:pt-4">
+          <p className="mt-3 text-xs leading-relaxed text-orange-100/90 lg:mt-auto lg:pt-4">
             Twijfel je over het pakket?{" "}
             <a
               href="#pakketten"
-              className="font-semibold text-[#FF5722] underline decoration-[#FF5722]/30 underline-offset-2 hover:text-orange-600"
+              className="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:decoration-white"
             >
               Bekijk de drie treden
             </a>
@@ -156,7 +166,7 @@ export function PilatesHero() {
 
         <Reveal delay={0.1} className="relative flex h-full">
           <div className="relative flex h-full w-full flex-col">
-            <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border border-slate-200 bg-white shadow-[0_32px_80px_-24px_rgba(15,23,42,0.18)] lg:rotate-[0.5deg]">
+            <figure className="relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.35rem] border-4 border-white/30 bg-white shadow-[0_32px_80px_-16px_rgba(12,18,34,0.4)] lg:rotate-[0.5deg]">
               <div className="flex shrink-0 items-center gap-1.5 border-b border-slate-200 bg-slate-50 px-3 py-2.5">
                 <span className="size-2 rounded-full bg-rose-400/90" />
                 <span className="size-2 rounded-full bg-amber-400/90" />
@@ -217,7 +227,7 @@ export function PilatesHero() {
               </figcaption>
             </figure>
 
-            <p className="mt-3 shrink-0 text-center text-[11px] font-semibold text-slate-500 sm:text-left">
+            <p className="mt-3 shrink-0 text-center text-[11px] font-semibold text-orange-100/90 sm:text-left">
               Live case · design, techniek en boekingsflow in één lijn
             </p>
           </div>
