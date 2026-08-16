@@ -62,26 +62,25 @@ export function PilatesHero() {
               Voor boutique Pilates studio&apos;s
             </p>
             {launchPromo ? (
-              <span className="rounded-full bg-[#FF5722] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
-                {launchPromo.badge}
+              <span className="rounded-full border border-[#FF5722]/40 bg-[#FF5722]/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-orange-200">
+                Start nu zonder launchfee
               </span>
             ) : null}
           </div>
 
-          <h1 className="mt-5 text-[1.95rem] font-extrabold leading-[1.08] tracking-tight sm:text-[2.8rem] lg:text-[3.15rem] lg:leading-[1.02]">
-            <span className="block whitespace-nowrap text-white">
-              High-end Pilates design.
+          <h1 className="mt-5 text-[1.85rem] font-extrabold leading-[1.08] tracking-tight sm:text-[2.75rem] lg:text-[3.05rem] lg:leading-[1.02]">
+            <span className="block text-white sm:whitespace-nowrap">
+              Je studio is al strak.
             </span>
-            <span className="mt-1 block whitespace-nowrap text-[#FF5722]">
+            <span className="mt-1 block text-[#FF5722] sm:whitespace-nowrap">
               Pagina 1 in Google.
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Je reformer staat niet stil. Waarom zou je website dat wel doen? Ik
-            bedenk je strategie, bouw from scratch en stuur op boekingen en
-            nieuwe leden. Een site die net zo strak voelt als je studio, met
-            mij als vaste partner.
+            Je reformer staat niet stil. Waarom zou je site dat wel doen? Ik bouw
+            from scratch, zorg dat je studio gevonden wordt, en stuur op
+            proeflessen en leden. Jij runt de les. Ik regel het digitale stuk.
           </p>
 
           <PilatesHeroPriceEntrance />
@@ -136,14 +135,15 @@ export function PilatesHero() {
             </a>
           </div>
 
-          <p className="mt-3 text-xs leading-relaxed text-slate-500 lg:mt-auto lg:pt-6">
-            Minder dan één lege reformer per maand. Serieus.{" "}
+          <p className="mt-3 text-xs leading-relaxed text-slate-500 lg:mt-auto lg:pt-4">
+            Twijfel je over het pakket?{" "}
             <a
               href="#pakketten"
               className="font-semibold text-orange-200/90 underline decoration-orange-200/35 underline-offset-2 hover:text-white"
             >
-              Bekijk pakketten
+              Bekijk de drie treden
             </a>
+            .
           </p>
         </Reveal>
 
@@ -173,7 +173,7 @@ export function PilatesHero() {
               <div className="relative min-h-[260px] flex-1 bg-slate-800 sm:min-h-[300px] lg:min-h-[320px]">
                 <Image
                   src={cfg.caseStudy.imageSrc}
-                  alt="High-end Pilates studio website, Hills Pilates Apeldoorn"
+                  alt="Pilates studio website, Hills Pilates Apeldoorn"
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 480px"
