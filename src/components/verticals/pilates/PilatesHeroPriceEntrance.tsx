@@ -18,11 +18,8 @@ import {
   formatVerticalMoney,
   getActiveLaunchPromo,
 } from "@/lib/verticals/format-price";
-import { applyNlVat } from "@/lib/verticals/vat";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
-const monthlyExcl = 89;
-const monthlyIncl = applyNlVat(monthlyExcl).incl;
 const launchPromo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
 
 const DEAL_LINES = [
@@ -37,14 +34,6 @@ const PRICE_QUIPS = [
   "Minder dan één lege reformer per maand.",
   "Wat je ziet is wat je betaalt. Echt.",
 ] as const;
-
-function formatEuroShort(euros: number): string {
-  return new Intl.NumberFormat("nl-NL", {
-    style: "currency",
-    currency: "EUR",
-    maximumFractionDigits: euros % 1 === 0 ? 0 : 2,
-  }).format(euros);
-}
 
 export function PilatesHeroPriceEntrance() {
   const reduce = useReducedMotion();
@@ -161,7 +150,7 @@ export function PilatesHeroPriceEntrance() {
                 <span className="text-lg font-bold text-slate-400">/m</span>
               </p>
               <p className="mt-1 text-xs font-semibold text-slate-400">
-                ex. btw · checkout {formatEuroShort(monthlyIncl)} incl. btw
+                ex. btw · maandelijks opzegbaar
               </p>
             </div>
 

@@ -43,9 +43,7 @@ export function LgePayBlock({
 
   const checkoutPackageId = packageId;
   const quote = buildLgeCheckoutQuote(vertical, checkoutPackageId);
-  const firstChargeLabel = `€${quote.amount.value.replace(".", ",")}`;
   const monthlyExclLabel = `€${quote.monthlyExcl.value.replace(".", ",")}`;
-  const monthlyInclLabel = `€${quote.monthlyAmount.value.replace(".", ",")}`;
 
   async function handlePay(): Promise<void> {
     const trimmedName = name.trim();
@@ -96,10 +94,9 @@ export function LgePayBlock({
             Direct starten via iDEAL
           </p>
           <p className="mt-1 text-xs leading-relaxed text-slate-600">
-            Eerste betaling {firstChargeLabel} incl. btw ({monthlyExclLabel}{" "}
-            ex. btw + 21% btw). Daarna {monthlyInclLabel} per maand via incasso.
-            Maandelijks opzegbaar. Inclusief domeinnaam en hosting (t.w.v. €25
-            per maand).
+            Eerste betaling {monthlyExclLabel} ex. btw via iDEAL. Daarna{" "}
+            {monthlyExclLabel} per maand ex. btw via incasso. Maandelijks
+            opzegbaar. Inclusief domeinnaam en hosting (t.w.v. €25 per maand).
           </p>
         </div>
       </div>
@@ -118,7 +115,7 @@ export function LgePayBlock({
       >
         {payStatus === "loading"
           ? "Door naar Mollie…"
-          : `Betaal ${firstChargeLabel} incl. btw en start`}
+          : `Betaal ${monthlyExclLabel} ex. btw en start`}
       </button>
     </div>
   );

@@ -11,11 +11,6 @@ import {
   getPilatesPackageById,
   getPilatesReceiptLines,
 } from "@/lib/verticals/pilates-receipt";
-import {
-  applyNlVat,
-  formatEuroAmount,
-  moneyToEuros,
-} from "@/lib/verticals/vat";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -68,8 +63,7 @@ export function PilatesStudioReceipt({ packageId }: PilatesStudioReceiptProps) {
   const reduce = useReducedMotion();
   const pkg = getPilatesPackageById(packageId);
   const items = getPilatesReceiptLines(packageId);
-  const vatBreakdown = applyNlVat(moneyToEuros(pkg.monthly));
-  const monthlyIncl = formatEuroAmount(vatBreakdown.incl);
+  const monthlyExcl = formatVerticalMoney(pkg.monthly);
   const launchPromo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
   const receiptId = `MM-PILATES-${getPilatesPackageMonthlyAmountSuffix(packageId)}`;
   const today = new Date().toLocaleDateString("nl-NL", {
@@ -102,7 +96,7 @@ export function PilatesStudioReceipt({ packageId }: PilatesStudioReceiptProps) {
         <motion.article
           layout
           className="relative overflow-visible rounded-sm bg-[#fffef9] shadow-[0_22px_50px_-28px_rgba(15,23,42,0.35),0_8px_0_0_rgba(15,23,42,0.04)] ring-1 ring-slate-900/5"
-          aria-label={`${pkg.name} bonnetje, ${monthlyIncl} incl. btw per maand`}
+          aria-label={`${pkg.name} bonnetje, ${monthlyExcl} ex. btw per maand`}
         >
           <ReceiptTearEdge />
 
@@ -206,39 +200,25 @@ export function PilatesStudioReceipt({ packageId }: PilatesStudioReceiptProps) {
             ) : null}
 
             <div className="border-b border-dashed border-slate-400 py-4">
-              <div className="space-y-2 border-b border-dotted border-slate-300/90 pb-3">
-                <div className="flex items-center justify-between gap-3 text-xs">
-                  <p className="font-semibold text-slate-600">Subtotaal ex. btw</p>
-                  <p className="font-mono font-semibold text-slate-700">
-                    {formatEuroAmount(vatBreakdown.excl)}
-                  </p>
-                </div>
-                <div className="flex items-center justify-between gap-3 text-xs">
-                  <p className="font-semibold text-slate-600">BTW 21%</p>
-                  <p className="font-mono font-semibold text-slate-700">
-                    {formatEuroAmount(vatBreakdown.vat)}
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-end justify-between gap-3 pt-3">
+              <div className="flex items-end justify-between gap-3">
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
-                    Totaal incl. btw / maand
+                    Totaal / maand
                   </p>
                   <p className="mt-1 text-[11px] text-slate-500">
-                    Maandelijks opzegbaar · incasso
+                    ex. btw · maandelijks opzegbaar
                   </p>
                 </div>
                 <AnimatePresence mode="wait">
                   <motion.p
-                    key={monthlyIncl}
+                    key={monthlyExcl}
                     initial={reduce ? false : { opacity: 0, scale: 0.92 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={reduce ? undefined : { opacity: 0, scale: 1.05 }}
                     transition={{ duration: 0.25, ease: EASE }}
                     className="font-mono text-4xl font-black tracking-tight text-[#FF5722]"
                   >
-                    {monthlyIncl}
+                    {monthlyExcl}
                   </motion.p>
                 </AnimatePresence>
               </div>
@@ -265,10 +245,7 @@ export function PilatesStudioReceipt({ packageId }: PilatesStudioReceiptProps) {
       </motion.div>
 
       <p className="mt-6 text-center text-xs text-slate-500">
-        Tik een pakket hierboven. De bon groeit mee. Marketingprijs{" "}
-        {formatEuroAmount(vatBreakdown.excl)} ex. btw, checkout{" "}
-        <span className="font-bold text-slate-700">{monthlyIncl}</span> incl.
-        btw.
+        Tik een pakket hierboven. De bon groeit mee. Alle bedragen ex. btw.
       </p>
     </div>
   );
