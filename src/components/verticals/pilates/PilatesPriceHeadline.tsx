@@ -69,7 +69,7 @@ export function PilatesPriceHeadline({
       </div>
 
       <div
-        className="mt-5 flex flex-wrap gap-2"
+        className="mt-5 flex flex-wrap gap-2 pt-2"
         role="radiogroup"
         aria-label="Kies je pakket"
       >
@@ -89,12 +89,12 @@ export function PilatesPriceHeadline({
               onClick={() => pickPackage(pkg.id)}
               className={
                 selected
-                  ? "relative inline-flex flex-col items-start rounded-2xl border-2 border-[#FF5722] bg-white px-4 py-3 text-left shadow-[0_12px_32px_-20px_rgba(255,87,34,0.55)] ring-1 ring-[#FF5722]/20 transition"
-                  : "relative inline-flex flex-col items-start rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-left transition hover:border-slate-300 hover:bg-white"
+                  ? "relative inline-flex flex-col items-start overflow-visible rounded-2xl border-2 border-[#FF5722] bg-white px-4 py-3 text-left shadow-[0_12px_32px_-20px_rgba(255,87,34,0.55)] ring-1 ring-[#FF5722]/20 transition"
+                  : "relative inline-flex flex-col items-start overflow-visible rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-left transition hover:border-slate-300 hover:bg-white"
               }
             >
               {pkg.recommended ? (
-                <span className="mb-1 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
+                <span className="pointer-events-none absolute -top-2.5 left-4 z-10 rounded-full bg-[#FF5722] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white shadow-[0_4px_12px_-4px_rgba(255,87,34,0.65)]">
                   Meest gekozen
                 </span>
               ) : null}
