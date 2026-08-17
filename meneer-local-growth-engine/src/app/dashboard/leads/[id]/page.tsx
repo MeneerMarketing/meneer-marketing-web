@@ -6,6 +6,7 @@ import {
   KeyValue,
   Panel,
   TextLink,
+  WebsiteLink,
   leadStatusTone,
 } from "@/components/dashboard/ui";
 import { PreviewActions } from "@/components/dashboard/PreviewActions";
@@ -22,10 +23,6 @@ import {
   getTemplates,
   getVerticals,
 } from "@/lib/data/dashboard";
-import { buildLeadJourney, getCampaignEventSplit } from "@/services/campaigns/campaignService";
-import { createAdminClient } from "@/lib/supabase/admin";
-import { maskCampaignRef } from "@/services/campaigns/types";
-import { PreparePilotButton } from "@/components/dashboard/PreparePilotButton";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -34,7 +31,6 @@ interface Props {
 
 const TABS = [
   "overview",
-  "journey",
   "website",
   "preview",
   "seo",
@@ -53,7 +49,7 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
     ? (tabParam as (typeof TABS)[number])
     : "overview";
 
-  const [verticals, cities, templates, previews, seo, contacts, messages, activity, exclusivityRows, journey] =
+  const [verticals, cities, templates, previews, seo, contacts, messages, activity, exclusivityRows] =
     await Promise.all([
       getVerticals(),
       getCities(),
@@ -64,26 +60,7 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
       getOutreachMessages(),
       getActivityForBusiness(business.id),
       getExclusivity(),
-      buildLeadJourney(business.id).catch(() => []),
     ]);
-
-  const campaignRes = await createAdminClient()
-    .from("campaigns")
-    .select("*")
-    .eq("business_id", business.id)
-    .order("created_at", { ascending: false })
-    .limit(1)
-    .maybeSingle();
-  const campaign = campaignRes.error
-    ? null
-    : ((campaignRes.data as Record<string, unknown> | null) ?? null);
-
-  const eventSplit = campaign?.id
-    ? await getCampaignEventSplit(String(campaign.id)).catch(() => ({
-        real: [],
-        test: [],
-      }))
-    : { real: [], test: [] };
 
   const vertical = verticals.find((v) => v.id === business.vertical_id)!;
   const city = cities.find((c) => c.id === business.city_id)!;
@@ -117,15 +94,13 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
             <p className="mt-1 text-sm text-slate-500">
               {city.name} · {vertical.name} · score {business.qualification_score ?? "—"}
             </p>
-            {business.website_url ? (
-              <a
-                href={business.website_url}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-2 inline-block text-sm font-semibold text-[#C2410C]"
-              >
-                {business.domain ?? business.website_url} ↗
-              </a>
+            {business.website_url || business.domain ? (
+              <div className="mt-2">
+                <WebsiteLink
+                  url={business.website_url}
+                  domain={business.domain}
+                />
+              </div>
             ) : null}
           </div>
         </div>
@@ -269,125 +244,29 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
         </div>
       ) : null}
 
-      {tab === "journey" ? (
-        <div className="space-y-6">
-          <Panel title={`${business.studio_name} — ${city.name}`}>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">
-              Real activity
-            </p>
-            <ol className="space-y-3">
-              {journey.map((step, index) => (
-                <li key={step.key} className="flex items-start gap-3">
-                  <span
-                    className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center text-[11px] font-bold ${
-                      step.done
-                        ? "bg-emerald-700 text-white"
-                        : "border border-mm-border bg-white text-slate-400"
-                    }`}
-                  >
-                    {step.done ? "✓" : index + 1}
-                  </span>
-                  <div>
-                    <p
-                      className={`text-sm font-semibold ${
-                        step.done ? "text-slate-900" : "text-slate-400"
-                      }`}
-                    >
-                      {step.label}
-                    </p>
-                    <p className="text-xs text-slate-500">
-                      {step.at
-                        ? new Date(step.at).toLocaleString("nl-NL")
-                        : "Nog niet"}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </Panel>
-
-          <Panel title="Test activity">
-            {eventSplit.test.length === 0 ? (
-              <p className="text-sm text-slate-500">Geen testevents.</p>
-            ) : (
-              <ul className="space-y-2">
-                {eventSplit.test.map((ev, i) => (
-                  <li
-                    key={`${ev.event_type}-${ev.created_at}-${i}`}
-                    className="flex items-center justify-between gap-3 text-sm"
-                  >
-                    <span className="font-medium text-slate-700">
-                      <Badge tone="warn">TEST</Badge>{" "}
-                      {ev.event_type}
-                    </span>
-                    <span className="text-xs text-slate-400">
-                      {new Date(ev.created_at).toLocaleString("nl-NL")}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </Panel>
-
-          <Panel title="Campaign">
-            <dl>
-              <KeyValue
-                label="Ref"
-                value={
-                  campaign?.campaign_ref
-                    ? maskCampaignRef(String(campaign.campaign_ref))
-                    : "geen actieve campaign"
-                }
-              />
-              <KeyValue
-                label="Environment"
-                value={String(campaign?.environment ?? "—")}
-              />
-              <KeyValue
-                label="Lifecycle"
-                value={String(campaign?.lifecycle_status ?? "—")}
-              />
-              <KeyValue
-                label="Engagement (real)"
-                value={String(campaign?.engagement_level ?? business.engagement_level ?? "COLD")}
-              />
-              <KeyValue
-                label="Conversion (real)"
-                value={String(campaign?.conversion_status ?? "NONE")}
-              />
-              <KeyValue
-                label="Real events"
-                value={String(campaign?.real_event_count ?? eventSplit.real.length)}
-              />
-              <KeyValue
-                label="Test events"
-                value={String(campaign?.test_event_count ?? eventSplit.test.length)}
-              />
-              <KeyValue
-                label="Recommended package"
-                value={String(campaign?.recommended_package ?? "—")}
-              />
-              <KeyValue
-                label="Recommendation reason"
-                value={String(campaign?.recommendation_reason ?? "—")}
-              />
-              <KeyValue
-                label="Selected package (real)"
-                value={String(campaign?.selected_package ?? "—")}
-              />
-            </dl>
-            {campaign?.id ? (
-              <PreparePilotButton campaignId={String(campaign.id)} />
-            ) : null}
-          </Panel>
-        </div>
-      ) : null}
-
       {tab === "website" ? (
         <Panel title="Website intelligence">
           <dl>
-            <KeyValue label="URL" value={business.website_url ?? "—"} />
-            <KeyValue label="Domain" value={business.domain ?? "—"} />
+            <KeyValue
+              label="URL"
+              value={
+                <WebsiteLink
+                  url={business.website_url}
+                  domain={business.domain}
+                  emptyLabel="—"
+                />
+              }
+            />
+            <KeyValue
+              label="Domain"
+              value={
+                business.domain ? (
+                  <WebsiteLink domain={business.domain} label={business.domain} />
+                ) : (
+                  "—"
+                )
+              }
+            />
             <KeyValue label="Normalized domain" value={business.normalized_domain ?? "—"} />
             <KeyValue label="Google place_id" value={business.google_place_id ?? "—"} />
             <KeyValue label="Google cid" value={business.google_cid ?? "—"} />
@@ -570,7 +449,11 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
                     .map((c, idx) => (
                       <li key={`${c.competitor_domain}-${idx}`} className="border border-slate-100 p-3">
                         <p className="font-semibold">
-                          {c.competitor_domain}
+                          {c.competitor_domain ? (
+                            <WebsiteLink domain={c.competitor_domain} showIcon={false} />
+                          ) : (
+                            "—"
+                          )}
                           {c.is_directory ? (
                             <span className="ml-2 text-[10px] font-bold uppercase text-slate-400">
                               directory
@@ -623,9 +506,25 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
 
       {tab === "outreach" ? (
         <Panel title="Outreach">
-          {business.lead_status === "READY_FOR_OUTREACH" || business.primary_candidate ? (
-            <div className="mb-4">
+          {!business.is_demo ? (
+            <div className="mb-4 space-y-3">
               <GenerateOutreachButton businessId={business.id} />
+              <p className="text-xs text-slate-500">
+                Maakt een draft op basis van preview, SEO en het outreach-template. Daarna
+                bewerk en verstuur je vanuit de outreach editor.
+              </p>
+              {business.preview_status !== "READY" ? (
+                <p className="text-xs text-amber-800">
+                  Preview is nog niet READY. Zonder preview kan de draft niet worden
+                  gegenereerd.
+                </p>
+              ) : null}
+              {contacts.every((c) => !c.email) ? (
+                <p className="text-xs text-amber-800">
+                  Nog geen e-mailadres bij dit contact. Voeg eerst een contact toe op het
+                  tabblad Contact.
+                </p>
+              ) : null}
             </div>
           ) : null}
           {outreachMessages.length === 0 ? (

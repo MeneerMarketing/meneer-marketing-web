@@ -81,7 +81,6 @@ export function renderOutreachHtml(input: {
     <p style="margin:8px 0 0;font-size:13px;line-height:1.55;color:#64748b;font-family:Arial,Helvetica,sans-serif;">
       ${escapeHtml(sender.signature_name)}${companyLine}<br>
       ${escapeHtml(input.brand.tagline)}<br>
-      <a href="${escapeHtml(input.brand.website)}" style="color:#C2410C;text-decoration:none;">${escapeHtml(input.brand.website_label)}</a><br>
       <a href="mailto:${escapeHtml(email)}" style="color:#C2410C;text-decoration:none;">${escapeHtml(email)}</a>${phone}${kvk}
     </p>
   </div>

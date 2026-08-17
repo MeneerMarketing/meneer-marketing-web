@@ -86,7 +86,6 @@ function signatureBlock(brand: MeneerMarketingBrandSettings): string {
   const lines = ["Groet,", "", sender.signature_name];
   if (sender.signature_company) lines.push(sender.signature_company);
   lines.push(brand.tagline);
-  lines.push(brand.website_label);
   lines.push(email);
   if (brand.contact_phone.trim()) lines.push(brand.contact_phone.trim());
   lines.push(`KVK ${brand.kvk || "42095913"}`);
