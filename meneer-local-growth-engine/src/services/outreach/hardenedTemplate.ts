@@ -119,9 +119,6 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const salutation = salutationLine(input.contact_first_name);
   fixed_parts.push("salutation");
 
-  const paraCred = `Ik bouw websites voor Pilates studio's from scratch en zorg dat je studio gevonden wordt in Google. ${experienceSentence(brand)}`;
-  fixed_parts.push("credibility");
-
   let personalTail = "";
   if (slots.site_gap?.trim()) {
     personalTail = ` ${slots.site_gap.trim().replace(/\s+/g, " ")}`;
@@ -131,8 +128,8 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     ai_parts.push("opening_observation");
   }
 
-  const paraOpener = `Voor ${city} zoek ik nog een studio om mee samen te werken. Daarbij viel mijn oog op ${business_name}.${personalTail}`;
-  fixed_parts.push("opener");
+  const paraIntro = `Ik help Pilates studio's met website en vindbaarheid in Google. ${experienceSentence(brand)} Voor ${city} zoek ik nog een studio om mee samen te werken. Daarbij viel mijn oog op ${business_name}.${personalTail}`;
+  fixed_parts.push("intro");
 
   const paraConcept = `Om je meteen een beeld te geven heb ik al een concept uitgewerkt:\n\n${input.preview_url}`;
   fixed_parts.push("concept");
@@ -162,9 +159,7 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const body_text = [
     salutation,
     "",
-    paraCred,
-    "",
-    paraOpener,
+    paraIntro,
     "",
     paraConcept,
     "",
