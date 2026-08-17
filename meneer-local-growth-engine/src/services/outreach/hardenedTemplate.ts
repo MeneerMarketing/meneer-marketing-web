@@ -44,18 +44,18 @@ function subjectFromSlots(
 ): string {
   switch (variant) {
     case "city":
-      return `Pilates studio in ${city}?`;
+      return `Pilates in ${city}: samen groeien?`;
     case "idea":
-      return `Samenwerken in ${city}?`;
+      return `Samenwerking in ${city}?`;
     case "concept":
-      return `Mijn voorstel voor ${businessName}`;
+      return `Een plan voor ${businessName}`;
     case "website":
-      return `Concept voor ${businessName}`;
+      return `Groei voor ${businessName}`;
     case "made":
-      return `${businessName}: dit is mijn voorstel`;
+      return `${businessName}: mijn voorstel`;
     case "chosen":
     default:
-      return `Ik zoek een Pilates studio in ${city}`;
+      return `Ik help Pilates studio's in ${city}`;
   }
 }
 
@@ -91,44 +91,38 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const open = greeting(input.contact_first_name);
   fixed_parts.push("greeting");
 
-  const paraHook = `Ik zoek nog een Pilates studio in ${city} om mee samen te werken. Mijn oog viel op ${business_name}.`;
-  fixed_parts.push("hook");
-
-  let paraPersonal = "";
+  let personalTail = "";
   if (slots.site_gap?.trim()) {
-    paraPersonal = slots.site_gap.trim().replace(/\s+/g, " ");
+    personalTail = ` ${slots.site_gap.trim().replace(/\s+/g, " ")}`;
     ai_parts.push("site_gap");
   } else if (slots.opening_observation?.trim()) {
-    paraPersonal = slots.opening_observation.trim().replace(/\s+/g, " ");
+    personalTail = ` ${slots.opening_observation.trim().replace(/\s+/g, " ")}`;
     ai_parts.push("opening_observation");
   }
 
-  const paraProposal = `Dit is mijn voorstel. Ik heb al een concept voor ${you.yourPossessive} studio uitgewerkt:`;
-  fixed_parts.push("proposal");
+  const paraOpener = `Ik help Pilates studio's online groeien. Voor ${city} zoek ik nog een studio om mee samen te werken, en daarbij viel mijn oog op ${business_name}.${personalTail}`;
+  fixed_parts.push("opener");
 
-  const previewBlock = input.preview_url;
-  fixed_parts.push("preview_link");
-
-  const paraOutcome = `Als we dit samen uitwerken, wordt ${you.yourPossessive} studio online professioneler en klantvriendelijker. Meer verkeer, meer mensen die een proefles boeken, meer leden op de lange termijn.`;
-  fixed_parts.push("outcome");
+  const paraConcept = `Om je meteen een beeld te geven heb ik al een concept uitgewerkt:\n\n${input.preview_url}`;
+  fixed_parts.push("concept");
 
   ai_parts.push("primary_keyword");
   if (slots.secondary_keyword) ai_parts.push("secondary_keyword");
 
   const keyword = slots.primary_keyword;
-  const paraTogether = `Het concept staat al. Samen perfectioneren we het tot het precies klopt. Ik bouw alles zelf, from scratch, en zet het neer op ${keyword} in ${city}.`;
-  fixed_parts.push("together");
+  const paraGrowthPlan = `Wat ik voor ${you.yourPossessive} studio wil neerzetten is een sterke online basis waar mensen in ${city} ${you.yourPossessive} studio vinden als ze zoeken op ${keyword}, makkelijk kunnen boeken en blijven terugkomen. Het doel is een voller rooster, meer leden en een agenda die loopt. Niet alleen bezoekers, maar echte boekingen en bekendheid in de buurt.`;
+  fixed_parts.push("growth_plan");
 
-  const paraDeal = `€${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw. Site live, elke maand werk aan ${you.yourPossessive} vindbaarheid in Google, en ik blijf bereikbaar voor alles wat ${you.subject} wilt aanpassen. Tekst, tarief, foto's, iets stuk? Stuur een bericht, ik regel het.`;
-  fixed_parts.push("deal");
+  const paraPartnership = `Het concept staat al. Samen maken we het af tot het precies bij ${you.yourPossessive} studio past. Ik bouw alles zelf en blijf ${you.yourPossessive} vaste contact online. Voor €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw heb je iemand die met je meedenkt, elke maand doorwerkt op ${you.yourPossessive} vindbaarheid en direct oppakt als er iets moet veranderen.`;
+  fixed_parts.push("partnership");
 
   let paraLanding = "";
   if (input.landing_page_url) {
-    paraLanding = input.landing_page_url;
+    paraLanding = `Meer over hoe ik werk met Pilates studio's: ${input.landing_page_url}`;
     fixed_parts.push("landing_page");
   }
 
-  const paraClose = `Heb je interesse? Kijk even naar het concept en laat me weten wat ${you.subject} ervan ${you.verbFind}.`;
+  const paraClose = `Kijk even naar het concept en laat me weten wat ${you.subject} ervan ${you.verbFind}.`;
   fixed_parts.push("close");
 
   const sig = signatureBlock(brand);
@@ -139,18 +133,13 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const body_text = [
     open,
     "",
-    paraHook,
-    ...(paraPersonal ? ["", paraPersonal] : []),
+    paraOpener,
     "",
-    paraProposal,
+    paraConcept,
     "",
-    previewBlock,
+    paraGrowthPlan,
     "",
-    paraOutcome,
-    "",
-    paraTogether,
-    "",
-    paraDeal,
+    paraPartnership,
     ...(paraLanding ? ["", paraLanding] : []),
     "",
     paraClose,
