@@ -60,10 +60,10 @@ export function PilatesHero() {
             </span>
           </div>
 
-          <h1 className="mt-6 text-[2rem] font-extrabold leading-[1.04] tracking-tighter text-balance sm:text-[2.7rem] lg:text-[3.1rem]">
-            Iemand zoekt nu een Pilates studio in jouw stad.
-            <span className="mt-2 block text-[#FF8A5B]">
-              Ik zorg dat ze bij jou op de mat komen.
+          <h1 className="mt-6 max-w-[16em] text-[1.85rem] font-extrabold leading-[1.06] tracking-tighter text-balance sm:max-w-none sm:text-[2.4rem] lg:text-[2.75rem] lg:leading-[1.05]">
+            Iemand zoekt Pilates in jouw stad.
+            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5">
+              Proefles op jouw mat.
             </span>
           </h1>
 
