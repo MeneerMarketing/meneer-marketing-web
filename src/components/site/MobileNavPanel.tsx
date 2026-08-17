@@ -148,6 +148,15 @@ export function MobileNavPanel({ open, onClose }: MobileNavPanelProps) {
                   </Link>
                 ))}
               </div>
+
+              <Link
+                href={siteCtas.meter.href}
+                className="mt-2 flex items-center justify-between rounded-xl border border-[#FF5722]/20 bg-orange-50 px-3 py-2.5 text-sm font-bold text-[#FF5722]"
+                onClick={onClose}
+              >
+                {siteCtas.meter.label}
+                <ArrowUpRight className="size-4" aria-hidden />
+              </Link>
             </div>
 
             <div className="shrink-0 border-t border-slate-100 p-3">

@@ -6,6 +6,7 @@ export const siteCtas = {
   schaalOp: { label: "Schaal op", href: "/schaal-op" },
   samenwerken: { label: "Samenwerken", href: "/samenwerken" },
   projectStarten: { label: "Project starten", href: "/project-starten" },
+  meter: { label: "De Meneer Meter", href: "/meter" },
 } as const;
 
 export type SiteCta = (typeof siteCtas)[keyof typeof siteCtas];

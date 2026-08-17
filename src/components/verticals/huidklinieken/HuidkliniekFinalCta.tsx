@@ -43,7 +43,7 @@ export function HuidkliniekFinalCta({
         }}
       />
 
-      <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:pb-28 lg:pt-24">
+      <div className="relative mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:pb-28 lg:pt-24">
         <Reveal>
           <div className="text-center">
             <div className="mx-auto flex w-fit items-center gap-2">

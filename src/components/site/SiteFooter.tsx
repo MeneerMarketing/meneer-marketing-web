@@ -20,6 +20,7 @@ const FOOTER_DIENSTEN = {
 
 const FOOTER_NAV = [
   { href: "/cases", label: "Cases" },
+  { href: "/meter", label: "De Meneer Meter" },
   { href: "/over", label: "Over" },
   { href: "/kennisbank", label: "Kennisbank" },
   { href: "/zoeken", label: "Zoeken" },

@@ -52,6 +52,28 @@ export function HeroSection() {
             />
             <Magnetic strength={10} radius={160}>
               <Link
+                href={siteCtas.meter.href}
+                className="group relative inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-300/70 bg-white/60 px-6 py-3.5 text-sm font-bold tracking-tight text-slate-900 backdrop-blur-md transition-[border-color,background-color,box-shadow] duration-300 hover:border-[#FF5722] hover:bg-orange-50/80 hover:text-[#FF5722] lg:w-auto lg:px-7 lg:py-4 lg:text-base"
+              >
+                <span>{siteCtas.meter.label}</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  className="size-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.4"
+                  aria-hidden
+                >
+                  <path
+                    d="M5 12h14M13 5l7 7-7 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+            </Magnetic>
+            <Magnetic strength={10} radius={160}>
+              <Link
                 href={siteCtas.projectStarten.href}
                 className="group relative inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-300/70 bg-white/60 px-6 py-3.5 text-sm font-bold tracking-tight text-slate-900 backdrop-blur-md transition-[border-color,background-color,box-shadow] duration-300 hover:border-[#FF5722] hover:bg-orange-50/80 hover:text-[#FF5722] lg:w-auto lg:px-7 lg:py-4 lg:text-base"
               >

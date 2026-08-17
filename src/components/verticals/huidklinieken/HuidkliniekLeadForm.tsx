@@ -1,12 +1,30 @@
 ﻿"use client";
 
-import { useEffect, useRef, useState } from "react";
+import { ShieldCheck } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
+import { VerticalContactFields } from "@/components/verticals/form/VerticalContactFields";
+import {
+  VerticalIntentTabs,
+  type VerticalFormIntent,
+} from "@/components/verticals/form/VerticalIntentTabs";
+import { VerticalLeadFormHeader } from "@/components/verticals/form/VerticalLeadFormHeader";
+import {
+  VerticalPackagePicker,
+  type VerticalPackageOption,
+} from "@/components/verticals/form/VerticalPackagePicker";
+import {
+  verticalInputClass,
+  verticalSectionClass,
+} from "@/components/verticals/form/vertical-form-styles";
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
+import { SubscriptionCheckoutLegal } from "@/components/verticals/SubscriptionCheckoutLegal";
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { HUIDKLINIEKEN_VERTICAL } from "@/data/verticals/huidklinieken";
 import { trackCampaignEvent } from "@/lib/lge/track-client";
+import { isCheckoutPackageId } from "@/lib/mollie/checkout-eligible";
+import { useMollieCheckoutEnabled } from "@/lib/mollie/use-mollie-checkout-enabled";
 import { submitVerticalInbound } from "@/lib/verticals/submit-inbound";
 import { buildThankYouUrl } from "@/lib/verticals/thank-you-url";
 import { trackHuidkliniekEvent } from "@/lib/verticals/analytics";
@@ -16,25 +34,25 @@ import {
   resolveLaunchAmountCents,
 } from "@/lib/verticals/format-price";
 
-const INTEREST_OPTIONS: {
-  id: VerticalInterestId;
-  label: string;
-  short: string;
-}[] = [
+const PACKAGE_OPTIONS: VerticalPackageOption[] = [
   {
     id: "studio-edition",
     label: "Clinic Edition",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[0]!.monthly),
+    hint: "Site + lokaal gevonden worden",
+    recommended: true,
   },
   {
     id: "local-growth",
     label: "Local Growth",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[1]!.monthly),
+    hint: "Meer patiënten uit Google",
   },
   {
     id: "growth-partner",
     label: "Growth Partner",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[2]!.monthly),
+    hint: "Ads + content, vol gas",
   },
   {
     id: "signature-custom",
@@ -42,11 +60,13 @@ const INTEREST_OPTIONS: {
     short: formatVerticalMoney(
       HUIDKLINIEKEN_VERTICAL.pricing.signatureCustom.fromPrice,
     ),
+    hint: "Volledig op maat, eenmalig project",
   },
   {
     id: "unsure",
     label: "Help mij kiezen",
     short: "Advies",
+    hint: "Ik denk mee welk pakket past",
   },
 ];
 
@@ -58,9 +78,6 @@ const BOOKING_OPTIONS = [
 ] as const;
 
 type BookingNeed = (typeof BOOKING_OPTIONS)[number]["id"];
-
-const inputClass =
-  "mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[#FF5722] focus:ring-2 focus:ring-[#FF5722]/20";
 
 interface HuidkliniekLeadFormProps {
   personalization: VerticalCampaignPersonalization | null;
@@ -79,6 +96,7 @@ export function HuidkliniekLeadForm({
 }: HuidkliniekLeadFormProps) {
   const started = useRef(false);
   const promo = getActiveLaunchPromo(HUIDKLINIEKEN_VERTICAL.pricing);
+  const checkoutEnabled = useMollieCheckoutEnabled();
 
   const [clinicName, setClinicName] = useState(
     personalization?.businessName ?? "",
@@ -89,28 +107,36 @@ export function HuidkliniekLeadForm({
   const [bookingNeed, setBookingNeed] = useState<BookingNeed>("unsure");
   const [message, setMessage] = useState("");
   const [interest, setInterest] = useState<VerticalInterestId>(
-    selectedInterest ?? "unsure",
+    selectedInterest ?? "studio-edition",
   );
+  const [intent, setIntent] = useState<VerticalFormIntent>("pay");
   const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<
     "idle" | "loading" | "redirecting" | "error"
   >("idle");
   const [error, setError] = useState<string | null>(null);
 
+  const payEligible = checkoutEnabled && isCheckoutPackageId(interest);
+  const contactReady = useMemo(
+    () =>
+      clinicName.trim().length >= 2 &&
+      city.trim().length >= 1 &&
+      email.trim().includes("@"),
+    [clinicName, city, email],
+  );
+
   useEffect(() => {
-    if (personalization?.businessName) {
-      setClinicName(personalization.businessName);
-    }
-    if (personalization?.city) {
-      setCity(personalization.city);
-    }
+    if (personalization?.businessName) setClinicName(personalization.businessName);
+    if (personalization?.city) setCity(personalization.city);
   }, [personalization]);
 
   useEffect(() => {
-    if (selectedInterest) {
-      setInterest(selectedInterest);
-    }
+    if (selectedInterest) setInterest(selectedInterest);
   }, [selectedInterest]);
+
+  useEffect(() => {
+    if (!payEligible && intent === "pay") setIntent("talk");
+  }, [payEligible, intent]);
 
   function setInterestBoth(next: VerticalInterestId) {
     setInterest(next);
@@ -178,199 +204,175 @@ export function HuidkliniekLeadForm({
 
   if (status === "redirecting") {
     return (
-      <p className="text-center text-sm text-slate-600">
-        Even doorsturen naar je bevestiging…
-      </p>
+      <div className="px-6 py-16 text-center sm:px-8">
+        <p className="text-sm font-semibold text-slate-600">
+          Even doorsturen naar je bevestiging…
+        </p>
+      </div>
     );
   }
 
   return (
-    <form onSubmit={onSubmit} className="space-y-3.5" noValidate>
+    <form onSubmit={onSubmit} className="divide-y divide-slate-100" noValidate>
       {campaignRef ? (
         <input type="hidden" name="campaign_ref" value={campaignRef} readOnly />
       ) : null}
 
-      {promo ? (
-        <p className="text-[11px] font-semibold leading-snug text-[#FF5722]">
-          {promo.note}
-        </p>
-      ) : null}
-
-      <fieldset>
-        <legend className="sr-only">Welk pakket</legend>
-        <div className="flex flex-wrap gap-1.5">
-          {INTEREST_OPTIONS.map((opt) => {
-            const selected = interest === opt.id;
-            return (
-              <label
-                key={opt.id}
-                className={
-                  selected
-                    ? "cursor-pointer rounded-full bg-slate-900 px-3 py-1.5 text-xs font-bold text-white"
-                    : "cursor-pointer rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-xs font-bold text-slate-700 transition hover:border-slate-400 hover:bg-white"
-                }
-              >
-                <input
-                  type="radio"
-                  name="interest"
-                  value={opt.id}
-                  checked={selected}
-                  onChange={() => setInterestBoth(opt.id)}
-                  onFocus={markStart}
-                  className="sr-only"
-                />
-                {opt.label}
-                <span
-                  className={
-                    selected
-                      ? "ml-1.5 font-semibold text-slate-400"
-                      : "ml-1.5 font-semibold text-slate-400"
-                  }
-                >
-                  {opt.short.replace(/^Vanaf\s+/i, "")}
-                </span>
-              </label>
-            );
-          })}
-        </div>
-      </fieldset>
-
-      <div className="grid gap-3 sm:grid-cols-2">
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">Kliniek</span>
-          <input
-            required
-            value={clinicName}
-            onChange={(e) => setClinicName(e.target.value)}
-            onFocus={markStart}
-            placeholder="Naam van je kliniek"
-            className={inputClass}
-            autoComplete="organization"
-          />
-        </label>
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">Plaats</span>
-          <input
-            required
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            onFocus={markStart}
-            placeholder="Stad of regio"
-            className={inputClass}
-            autoComplete="address-level2"
-          />
-        </label>
-      </div>
-
-      <div className="grid gap-3 sm:grid-cols-2">
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">E-mail</span>
-          <input
-            required
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            onFocus={markStart}
-            placeholder="jij@jouwkliniek.nl"
-            className={inputClass}
-            autoComplete="email"
-          />
-        </label>
-        <label className="block text-sm">
-          <span className="text-xs font-semibold text-slate-700">
-            Telefoon <span className="font-normal text-slate-400">optioneel</span>
-          </span>
-          <input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            onFocus={markStart}
-            placeholder="06…"
-            className={inputClass}
-            autoComplete="tel"
-          />
-        </label>
-      </div>
-
-      <LgePayBlock
-        vertical="huidklinieken"
-        packageId={interest}
-        name={clinicName}
-        email={email}
-        city={city}
-        businessName={clinicName}
-        campaignRef={campaignRef}
-        bookingNeed={bookingNeed}
-        onPayStart={markStart}
+      <VerticalLeadFormHeader
+        eyebrow="Intake"
+        title="Binnen twee minuten geregeld."
+        subtitle="Kies je pakket, vul je kliniek in, start wanneer jij wilt."
+        promoNote={promo?.badge ?? null}
+        packageChosen={Boolean(interest)}
+        contactReady={contactReady}
+        routeChosen={intent === "pay" ? payEligible : true}
       />
 
-      <label className="block text-sm">
-        <span className="text-xs font-semibold text-slate-700">
-          Afspraken / app
-        </span>
-        <select
-          value={bookingNeed}
-          onChange={(e) => setBookingNeed(e.target.value as BookingNeed)}
-          onFocus={markStart}
-          className={inputClass}
-        >
-          {BOOKING_OPTIONS.map((opt) => (
-            <option key={opt.id} value={opt.id}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
-      </label>
+      <VerticalPackagePicker
+        legend="Welk pakket past bij jou?"
+        options={PACKAGE_OPTIONS}
+        value={interest}
+        onChange={setInterestBoth}
+        onFocusStart={markStart}
+      />
 
-      <label className="block text-sm">
-        <span className="text-xs font-semibold text-slate-700">
-          Kort toelichten{" "}
-          <span className="font-normal text-slate-400">optioneel</span>
-        </span>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          onFocus={markStart}
-          rows={2}
-          placeholder="Nieuwe kliniek, zwakke site, lokale SEO…"
-          className={`${inputClass} resize-none`}
-        />
-      </label>
+      <VerticalContactFields
+        heading="Jouw kliniek"
+        nameLabel="Kliniek naam"
+        namePlaceholder="Naam van je kliniek"
+        name={clinicName}
+        onNameChange={setClinicName}
+        city={city}
+        onCityChange={setCity}
+        email={email}
+        onEmailChange={setEmail}
+        phone={phone}
+        onPhoneChange={setPhone}
+        onFocusStart={markStart}
+      />
 
-      <div className="hidden" aria-hidden>
-        <label>
-          Bedrijfswebsite
-          <input
-            tabIndex={-1}
-            autoComplete="off"
-            value={honeypot}
-            onChange={(e) => setHoneypot(e.target.value)}
+      <VerticalIntentTabs
+        intent={intent}
+        payEligible={payEligible}
+        onIntentChange={setIntent}
+      />
+
+      {intent === "pay" && payEligible ? (
+        <div className={verticalSectionClass}>
+          <LgePayBlock
+            vertical="huidklinieken"
+            packageId={interest}
+            name={clinicName}
+            email={email}
+            city={city}
+            phone={phone}
+            bookingNeed={bookingNeed}
+            message={message}
+            businessName={clinicName}
+            campaignRef={campaignRef}
+            onPayStart={markStart}
+            variant="checkout"
           />
-        </label>
-      </div>
-
-      {error ? (
-        <p className="text-sm text-rose-700" role="alert">
-          {error}
-        </p>
+        </div>
       ) : null}
 
-      <div className="relative py-1">
-        <div className="absolute inset-0 flex items-center" aria-hidden>
-          <span className="w-full border-t border-slate-200" />
-        </div>
-        <p className="relative mx-auto w-fit bg-white px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400">
-          Of eerst contact
-        </p>
-      </div>
+      {intent === "talk" || !payEligible ? (
+        <div className={`${verticalSectionClass} space-y-4`}>
+          {!payEligible ? (
+            <p className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-relaxed text-slate-600">
+              Voor Signature of hulp bij kiezen starten we via contact. Ik denk
+              mee welk pakket past.
+            </p>
+          ) : null}
 
-      <button
-        type="submit"
-        disabled={status === "loading"}
-        className="inline-flex w-full items-center justify-center rounded-2xl bg-[#FF5722] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_24px_rgba(255,87,34,0.3)] transition hover:bg-[#e64a19] disabled:opacity-60"
-      >
-        {status === "loading" ? "Versturen…" : "Stuur mijn kliniek door"}
-      </button>
+          <label className="block text-sm">
+            <span className="text-xs font-semibold text-slate-700">
+              Afspraken / app
+            </span>
+            <select
+              value={bookingNeed}
+              onChange={(e) => setBookingNeed(e.target.value as BookingNeed)}
+              onFocus={markStart}
+              className={verticalInputClass}
+            >
+              {BOOKING_OPTIONS.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="block text-sm">
+            <span className="text-xs font-semibold text-slate-700">
+              Kort toelichten{" "}
+              <span className="font-normal text-slate-400">optioneel</span>
+            </span>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              onFocus={markStart}
+              rows={3}
+              placeholder="Nieuwe kliniek, zwakke site, lokale SEO…"
+              className={`${verticalInputClass} resize-none`}
+            />
+          </label>
+
+          <div className="hidden" aria-hidden>
+            <label>
+              Bedrijfswebsite
+              <input
+                tabIndex={-1}
+                autoComplete="off"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+              />
+            </label>
+          </div>
+
+          {error ? (
+            <p className="text-sm font-semibold text-rose-700" role="alert">
+              {error}
+            </p>
+          ) : null}
+
+          <button
+            type="submit"
+            disabled={status === "loading"}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-base font-bold text-white shadow-[0_16px_36px_-12px_rgba(255,87,34,0.5)] transition hover:bg-[#e64a19] disabled:opacity-60"
+          >
+            {status === "loading"
+              ? "Versturen…"
+              : "Stuur door · ik neem contact op"}
+          </button>
+        </div>
+      ) : null}
+
+      {intent === "pay" && payEligible ? (
+        <div className={verticalSectionClass}>
+          <div className="flex items-start gap-2 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">
+            <ShieldCheck
+              className="mt-0.5 size-4 shrink-0 text-emerald-600"
+              aria-hidden
+            />
+            <p className="text-xs leading-relaxed text-slate-600">
+              Liever eerst vragen? Klik op{" "}
+              <button
+                type="button"
+                onClick={() => setIntent("talk")}
+                className="font-bold text-[#FF5722] underline decoration-[#FF5722]/30 underline-offset-2"
+              >
+                Eerst praten
+              </button>{" "}
+              hierboven.
+            </p>
+          </div>
+        </div>
+      ) : null}
+
+      <div className={verticalSectionClass}>
+        <SubscriptionCheckoutLegal variant="footnote" />
+      </div>
     </form>
   );
 }
