@@ -37,14 +37,6 @@ function greeting(firstName: string | null): string {
   return "Hoi,";
 }
 
-function keywordSentence(slots: OutreachPersonalizationSlots): string {
-  const primary = slots.primary_keyword;
-  if (slots.secondary_keyword) {
-    return `'${primary}' en '${slots.secondary_keyword}'`;
-  }
-  return `'${primary}'`;
-}
-
 function subjectFromSlots(
   businessName: string,
   city: string,
@@ -52,18 +44,18 @@ function subjectFromSlots(
 ): string {
   switch (variant) {
     case "city":
-      return `Pilates in ${city}: ${businessName}`;
+      return `${businessName} in ${city}`;
     case "idea":
-      return `Een idee voor ${businessName}`;
+      return `Even kijken naar ${businessName}`;
     case "concept":
       return `Concept voor ${businessName}`;
     case "website":
-      return `Een website-concept voor ${businessName}`;
+      return `Website-concept voor ${businessName}`;
     case "made":
-      return `Ik heb iets gemaakt voor ${businessName}`;
+      return `Kijk even wat ik voor ${businessName} heb gebouwd`;
     case "chosen":
     default:
-      return `Voor ${businessName} in ${city}`;
+      return `Dit staat er al voor ${businessName}`;
   }
 }
 
@@ -71,7 +63,6 @@ function subjectFromSlots(
 function voice(addressing: "singular" | "plural") {
   const singular = addressing === "singular";
   return {
-    you: singular ? "je" : "jullie",
     yourPossessive: singular ? "je" : "jullie",
     subject: singular ? "jij" : "jullie",
     verbFind: singular ? "vindt" : "vinden",
@@ -82,7 +73,6 @@ function signatureBlock(brand: MeneerMarketingBrandSettings): string {
   const sender = getSenderDisplay(brand);
   const lines = ["Groet,", "", sender.signature_name];
   if (sender.signature_company) lines.push(sender.signature_company);
-  lines.push(brand.tagline);
   lines.push(brand.website_label);
   if (brand.kvk) lines.push(`KVK ${brand.kvk}`);
   return lines.join("\n");
@@ -101,47 +91,38 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const open = greeting(input.contact_first_name);
   fixed_parts.push("greeting");
 
-  const paraIntent = `Ik help Pilates studio's online sterker worden: website, vindbaarheid in Google en zichtbaarheid die nieuwe mensen op de mat trekt. In ${city} viel mijn oog op ${business_name}. Ik wil graag helpen ${you.yourPossessive} studio online naar een hoger niveau te tillen.`;
-  fixed_parts.push("intent");
+  const paraHook = `Ik mail je over ${business_name} in ${city}. Ik ben hier om ${you.yourPossessive} studio online te helpen. Geen praatje vooraf: ik heb al een concept voor ${you.yourPossessive} studio uitgewerkt.`;
+  fixed_parts.push("hook");
 
-  let paraGap = "";
+  let paraPersonal = "";
   if (slots.site_gap?.trim()) {
-    paraGap = slots.site_gap.trim().replace(/\s+/g, " ");
+    paraPersonal = slots.site_gap.trim().replace(/\s+/g, " ");
     ai_parts.push("site_gap");
   } else if (slots.opening_observation?.trim()) {
-    paraGap = slots.opening_observation.trim().replace(/\s+/g, " ");
+    paraPersonal = slots.opening_observation.trim().replace(/\s+/g, " ");
     ai_parts.push("opening_observation");
   }
 
-  const paraConcept = `Daarom heb ik geen standaard pitch gestuurd, maar een persoonlijk concept uitgewerkt in ${you.yourPossessive} kleuren en met ${you.yourPossessive} sfeer.${paraGap ? ` ${paraGap}` : ""}`;
-  fixed_parts.push("concept");
+  const previewBlock = `→ ${input.preview_url}`;
+  fixed_parts.push("preview_link");
 
-  const previewBlock = `→ Bekijk ${you.yourPossessive} conceptwebsite
-${input.preview_url}
+  const paraTogether = `Kijk hoe ver we al zijn. Het concept staat. Samen perfectioneren we het tot precies zoals ${you.subject} het wilt. Ik bouw alles zelf, from scratch, met alle skills om het strak neer te zetten.`;
+  fixed_parts.push("together");
 
-Veilig voorbeeld via Meneer Marketing. Je opent het direct in je browser.`;
-  fixed_parts.push("preview_trust");
-
-  const keywords = keywordSentence(slots);
   ai_parts.push("primary_keyword");
   if (slots.secondary_keyword) ai_parts.push("secondary_keyword");
 
-  const paraValue = `De opzet is gebouwd op ${keywords}, zodat mensen in ${city} ${you.yourPossessive} studio vinden als ze een proefles zoeken. Studio's die zo live gaan zien vaak meer verkeer, meer proeflessen en meer naamsbekendheid in de buurt.`;
-  fixed_parts.push("value");
-
-  const paraFeedback = `Ook als ${you.subject} er nu niet voor kiest: ik hoor graag wat ${you.subject} van de richting ${you.verbFind}. Eerlijke feedback is altijd welkom, met of zonder vervolgstap.`;
-  fixed_parts.push("feedback");
-
-  const paraOffer = `Studio Edition start vanaf €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw. Eén vast aanspreekpunt: ik ben bereikbaar en pak ${you.yourPossessive} online wensen direct op.`;
-  fixed_parts.push("offer");
+  const keyword = slots.primary_keyword;
+  const paraMonthly = `Daarna pak ik elke maand ${you.yourPossessive} vindbaarheid in Google op, gericht op ${keyword} in ${city}. €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw. Top website, en ik ben gewoon bereikbaar als ${you.subject} iets wilt aanpassen.`;
+  fixed_parts.push("monthly");
 
   let paraLanding = "";
   if (input.landing_page_url) {
-    paraLanding = `Meer over hoe ik voor Pilates studio's werk:\n${input.landing_page_url}`;
+    paraLanding = input.landing_page_url;
     fixed_parts.push("landing_page");
   }
 
-  const paraClose = `Ik ben vooral benieuwd wat ${you.subject} van het concept ${you.verbFind}. Stuur gerust een kort antwoord.`;
+  const paraClose = `Wat ${you.verbFind} ${you.subject} ervan? Ook een korte reactie is prima.`;
   fixed_parts.push("close");
 
   const sig = signatureBlock(brand);
@@ -152,17 +133,14 @@ Veilig voorbeeld via Meneer Marketing. Je opent het direct in je browser.`;
   const body_text = [
     open,
     "",
-    paraIntent,
-    "",
-    paraConcept,
+    paraHook,
+    ...(paraPersonal ? ["", paraPersonal] : []),
     "",
     previewBlock,
     "",
-    paraValue,
+    paraTogether,
     "",
-    paraFeedback,
-    "",
-    paraOffer,
+    paraMonthly,
     ...(paraLanding ? ["", paraLanding] : []),
     "",
     paraClose,
