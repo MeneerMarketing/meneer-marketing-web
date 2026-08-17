@@ -398,19 +398,16 @@ export function getCaseLinkForArticle(articleSlug: string): CaseLinkItem | null 
   };
 }
 
+import { getLiveVerticals } from "@/data/verticals/registry";
+
 /** Commerciële branche-landings (niet /zoeken/). Sitebreed in footer + topical authority. */
-export const VERTICAL_LANDING_LINKS: readonly InternalLinkItem[] = [
-  {
-    href: "/pilates-studios",
-    label: "Pilates studio's",
-    hint: "Pilates website laten maken, SEO en marketing",
-  },
-  {
-    href: "/huidklinieken",
-    label: "Huidklinieken",
-    hint: "Website en lokale vindbaarheid voor klinieken",
-  },
-] as const;
+export const VERTICAL_LANDING_LINKS: readonly InternalLinkItem[] = getLiveVerticals().map(
+  (vertical) => ({
+    href: vertical.path,
+    label: vertical.verticalNamePlural,
+    hint: vertical.seoFocus[0] ?? vertical.fitNote,
+  }),
+);
 
 export const HOME_PILLAR_LINKS: readonly {
   slug: PillarSlug;

@@ -63,6 +63,12 @@ Bij alle teksten voor meneermarketing.nl (naast de hoofdregels hierboven):
 4. **SEO-techniek feilloos:** Core Web Vitals, semantische HTML, JSON-LD schema markup, a11y. Ads worden opgeschaald, dus landingspagina's moeten technisch perfect zijn.
 5. **`/zoeken/` growth freeze (actief):** geen nieuwe SEO-landings, city-pages, national batches of city-trio fills tot consolidatie klaar is (page weight, cannibal-clusters, city prune). Guard: [`src/data/seo-landings/growth-freeze.ts`](src/data/seo-landings/growth-freeze.ts). Prunen / 301 / noindex mag. Ceiling verhogen = freeze opheffen, alleen na P0.
 
+## Git branches (meneermarketing.nl + LGE)
+
+- **`main`** = productie meneermarketing.nl + `meneer-local-growth-engine/`. Vercel deployt hier vanaf. MM-werk altijd via `main` (worktree: `mm-web-deploy/`).
+- **`diba-redesign`** = alleen DIBA Clinics (`diba/`). Niet mergen naar `main` tenzij je bewust DIBA uitrolt. Geen pilates/LGE/meter-werk op deze branch.
+- Oude branches `diba-huisstijl` en `pilates-studios-live` zijn opgeruimd. Nieuwe vertical-landings: zie [src/data/verticals/registry.ts](src/data/verticals/registry.ts).
+
 ## Shopify theme scheiding
 
 - **`shopify/`** = Skin Complete only (`sc-*` prefix). Werk hier in deze repo voor SC.
