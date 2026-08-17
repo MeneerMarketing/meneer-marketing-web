@@ -13,11 +13,15 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   verticalNamePlural: "Pilates studio's",
   themeAccent: "#FF5722",
   seo: {
-    title: "Website & SEO voor Pilates studio's | Meneer Marketing",
+    title: "Pilates website laten maken | SEO & marketing | Meneer Marketing",
     description:
-      "Pilates studio website laten maken? High-end webdesign, lokale SEO en boekingsflow in één traject. Studio Edition vanaf €89 per maand.",
+      "Pilates website laten maken? High-end webdesign, lokale SEO en pilates marketing in één traject. Studio Edition vanaf €89 per maand. Jij wint de zoekopdracht in jouw stad.",
     keywords: [
+      "pilates website",
+      "pilates website laten maken",
+      "pilates marketing",
       "website pilates studio",
+      "website pilates studio laten maken",
       "webdesign pilates studio",
       "seo pilates studio",
       "marketing pilates studio",
@@ -254,6 +258,16 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   },
   faq: [
     {
+      question: "Wat kost een pilates website laten maken?",
+      answer:
+        "Studio Edition start vanaf €89 per maand, exclusief btw. De eenmalige launch is tijdelijk €0 in plaats van €295. Daarin zit je pilates website from scratch, SEO op Pilates [jouw stad] en onderhoud. Local Growth en Growth Partner voegen bredere lokale SEO en pilates marketing toe.",
+    },
+    {
+      question: "Regel je ook pilates marketing naast de website?",
+      answer:
+        "Ja. Studio Edition dekt website en basis-SEO. Local Growth pakt lokale vindbaarheid en meerdere landingspagina's. Growth Partner voegt Google Ads, Meta Ads en creator-collabs toe. Alles op één lijn, zodat zoeken, klikken en boeken samen lopen.",
+    },
+    {
       question: "Is mijn site echt op maat?",
       answer:
         "Ja. Jouw naam, logo, lessen en stad staan centraal. Wat je al gezien hebt is het startpunt dat ik voor jouw studio doorontwikkel en aanscherp. From scratch gebouwd, afgestemd op jouw studio.",
@@ -350,13 +364,13 @@ export const PILATES_RELATED_LINKS = [
   },
   {
     href: "/diensten/webdesign",
-    label: "Webdesign",
-    hint: "Design dat mensen laat boeken",
+    label: "Webdesign pilates studio",
+    hint: "Pilates website design dat proeflessen vult",
   },
   {
     href: "/diensten/seo",
-    label: "SEO",
-    hint: "Technisch + content dat rankt",
+    label: "SEO pilates studio",
+    hint: "Technisch + content voor pilates zoektermen",
   },
   {
     href: "/diensten/local-seo",

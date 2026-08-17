@@ -7,7 +7,7 @@ import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/cont
 import { siteCtaList, siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
-import { TOP_ZOEKEN_HUB_LINKS } from "@/lib/seo/internal-links";
+import { TOP_ZOEKEN_HUB_LINKS, VERTICAL_LANDING_LINKS } from "@/lib/seo/internal-links";
 
 const FOOTER_MAIN_CTAS = siteCtaList.filter((cta) => cta.href !== siteCtas.contact.href);
 
@@ -148,6 +148,21 @@ export function SiteFooter() {
             </ul>
           </div>
 
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">
+              Branches
+            </p>
+            <ul className="mt-3 space-y-2.5 text-sm font-medium text-slate-200">
+              {VERTICAL_LANDING_LINKS.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-sky-300" prefetch={false}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="col-span-2">
             <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">
               Veelgezocht
@@ -169,7 +184,7 @@ export function SiteFooter() {
         </div>
 
         {/* Hoofdgrid · desktop (origineel) */}
-        <div className="mt-12 hidden gap-10 lg:grid lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        <div className="mt-12 hidden gap-8 lg:grid lg:grid-cols-[1.15fr_0.85fr_0.85fr_0.85fr_1fr]">
           <div>
             <Logo variant="light" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed tracking-tight text-mm-footer-muted">
@@ -212,6 +227,23 @@ export function SiteFooter() {
                   Alle zoekpagina&apos;s
                 </Link>
               </li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
+              Branches
+            </p>
+            <ul className="mt-4 space-y-2 text-sm font-medium text-slate-200">
+              {VERTICAL_LANDING_LINKS.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-sky-300" prefetch={false}>
+                    {item.label}
+                  </Link>
+                  {item.hint ? (
+                    <span className="mt-0.5 block text-xs text-mm-footer-muted">{item.hint}</span>
+                  ) : null}
+                </li>
+              ))}
             </ul>
           </div>
           <div>

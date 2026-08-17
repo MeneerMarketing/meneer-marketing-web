@@ -24,11 +24,11 @@ const YOU_BEATS = [
 const ME_BEATS = [
   {
     title: "Website",
-    text: "High-end Pilates look die voelt als jouw studio.",
+    text: "Pilates website from scratch die voelt als jouw studio.",
   },
   {
     title: "Lokale Google",
-    text: "Gevonden worden op Pilates + jouw stad.",
+    text: "SEO op pilates, reformer en pilates studio plus jouw stad.",
   },
   {
     title: "Boekingsflow",
@@ -64,8 +64,9 @@ export function PilatesStudioExperience() {
               <span className="text-[#FF5722]"> Ik regel digitaal.</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Op de vloer is het al premium. Online moet datzelfde niveau
-              landen. Hover over een kant. Dan zie je precies wie wat doet.
+              Op de vloer is het al premium. Online moet datzelfde niveau landen: pilates
+              website, lokale SEO en pilates marketing op één lijn. Hover over een kant.
+              Dan zie je precies wie wat doet.
             </p>
           </div>
         </Reveal>

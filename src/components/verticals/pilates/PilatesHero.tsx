@@ -16,9 +16,9 @@ const cfg = PILATES_VERTICAL;
 const launchPromo = getActiveLaunchPromo(cfg.pricing);
 
 const PROOF_POINTS = [
-  "Site from scratch",
-  "Bovenaan bij pilates + jouw stad",
-  "Van zoekopdracht naar boeking",
+  "Pilates website from scratch",
+  "SEO op pilates + jouw stad",
+  "Pilates marketing die boekt",
 ] as const;
 
 export function PilatesHero() {
@@ -62,7 +62,7 @@ export function PilatesHero() {
 
           <h1 className="mt-6 text-[1.65rem] font-extrabold leading-[1.08] tracking-tighter sm:text-[2.2rem] lg:text-[2.65rem] lg:leading-[1.06]">
             <span className="block text-white sm:whitespace-nowrap">
-              Iemand zoekt Pilates in jouw stad.
+              Pilates website laten maken.
             </span>
             <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5 sm:whitespace-nowrap">
               Jij wint die zoekopdracht.
@@ -70,10 +70,10 @@ export function PilatesHero() {
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Jouw lessen zijn het probleem niet. Het probleem zit in de tien seconden
-            daarvoor: iemand zoekt, ziet drie studio&apos;s en kiest er één. Ik bouw je
-            site from scratch, zet je bovenaan bij pilates plus jouw stad, en stuur
-            alles op nieuwe leden die blijven hangen.
+            Zoekopdrachten als pilates plus jouw stad, reformer pilates of pilates studio
+            laten je links liggen als je site traag of generiek voelt. Ik bouw je pilates
+            website from scratch, pak lokale SEO en pilates marketing aan, en stuur alles
+            op nieuwe leden die blijven hangen.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">

@@ -74,7 +74,7 @@ const SEO_LANDING_LAST_MOD = new Date("2026-08-09");
 const SITE_LAST_MOD = new Date("2026-08-09");
 /** Per-path overrides wanneer een pagina substantieel is bijgewerkt. */
 const PATH_LAST_MOD: Readonly<Record<string, Date>> = {
-  "/pilates-studios": new Date("2026-08-12"),
+  "/pilates-studios": new Date("2026-08-17"),
   "/huidklinieken": new Date("2026-08-14"),
   "/meter": new Date("2026-08-17"),
 };

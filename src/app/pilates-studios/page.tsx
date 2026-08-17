@@ -61,14 +61,16 @@ export default async function PilatesStudiosPage({ searchParams }: PageProps) {
             name: seo.title,
             description: seo.description,
             path: PAGE_PATH,
-            dateModified: "2026-08-12",
+            datePublished: "2026-08-12",
+            dateModified: "2026-08-17",
           }),
           serviceJsonLd({
-            name: "Website, SEO en marketing voor Pilates studio's",
+            name: "Pilates website laten maken, SEO en marketing",
             description:
-              "High-end Pilates studio website, lokale SEO, Google Ads-beheer en boekingsflow. Studio Edition, Local Growth of Growth Partner. Één partner per stad.",
+              "Pilates website from scratch, lokale SEO op pilates plus jouw stad, Google Ads-beheer en boekingsflow. Studio Edition, Local Growth of Growth Partner.",
             path: PAGE_PATH,
             areaServed: "Nederland",
+            serviceType: "Website laten maken voor Pilates studio's",
           }),
           faqPageJsonLd(
             PILATES_VERTICAL.faq.map((f) => ({

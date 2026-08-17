@@ -58,15 +58,15 @@ export function PilatesLocalSeo() {
               id="pilates-local-seo-heading"
               className="mt-3 text-3xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.06]"
             >
-              Mooi is leuk.
+              Lokale SEO voor je pilates studio.
               <span className="text-[#FF5722]">
                 {" "}
                 Gevonden worden betaalt de reformers.
               </span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Kies een zoekopdracht die jouw toekomstige leden intikken. Zo ziet
-              het eruit als de site meewerkt in plaats van tegenwerkt.
+              Zoektermen als pilates plus jouw stad, reformer pilates en pilates studio.
+              Zo ziet het eruit als je pilates website meewerkt in plaats of tegenwerkt.
             </p>
           </div>
         </Reveal>

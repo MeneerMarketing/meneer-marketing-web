@@ -208,7 +208,8 @@ export function PilatesPriceHeadline({
           ))}
         </ul>
         <p className="mt-3 text-xs italic leading-relaxed text-slate-500">
-          Geen asterisk naar pagina 47. Alles staat op de bon hiernaast.
+          Alles staat op de bon hiernaast. Transparant, zonder kleine lettertjes ergens
+          anders.
         </p>
       </div>
     </div>

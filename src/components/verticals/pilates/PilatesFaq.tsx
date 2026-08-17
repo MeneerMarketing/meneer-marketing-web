@@ -10,7 +10,7 @@ import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 const SIDE_FACTS = [
   {
     title: "From scratch",
-    body: "Jouw naam, logo, lessen en stad. Geen template met jouw foto erop geplakt.",
+    body: "Jouw naam, logo, lessen en stad. Custom build, niet jouw foto op een template.",
   },
   {
     title: "Live binnen 5 werkdagen",
@@ -18,7 +18,7 @@ const SIDE_FACTS = [
   },
   {
     title: "Maandelijks opzegbaar",
-    body: "Geen lang contract. Opzeggen kan per maand via mij.",
+    body: "Per maand betalen, per maand opzegbaar via mij.",
   },
 ] as const;
 

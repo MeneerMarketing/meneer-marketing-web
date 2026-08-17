@@ -44,7 +44,7 @@ const PACKAGE_STORIES: Record<
     eyebrow: "Studio Edition · instap",
     title: "Gevonden worden in jouw stad, met een site die echt klopt",
     paragraphs: [
-      "Je studio oogt premium op de vloer. Online moet dat hetzelfde voelen. Ik bouw je site from scratch in jouw branding: lessen, tarieven, proefles. Geen template, geen rommel.",
+      "Je studio oogt premium op de vloer. Online moet dat hetzelfde voelen. Ik bouw je pilates website from scratch in jouw branding: lessen, tarieven, proefles. Custom build, zonder template-brommer.",
       "Daarna de basis die Google snapt: Pilates + jouw stad, technisch netjes, doorverwijzing naar boeking. Eerst zichtbaar worden en serieus overkomen. Ads kunnen later. Dit is je digitale visitekaartje, maar dan eentje die ook scoort.",
     ],
     stats: [
