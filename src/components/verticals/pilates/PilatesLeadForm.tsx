@@ -1,7 +1,6 @@
 "use client";
 
 import { MessageCircle, Rocket, ShieldCheck } from "lucide-react";
-import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
@@ -90,7 +89,6 @@ export function PilatesLeadForm({
   onInterestChange,
   onSubmitted,
 }: PilatesLeadFormProps) {
-  const router = useRouter();
   const started = useRef(false);
   const promo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
   const checkoutEnabled = useMollieCheckoutEnabled();
@@ -181,7 +179,7 @@ export function PilatesLeadForm({
         has_ref: Boolean(campaignRef),
         booking_need: bookingNeed,
       });
-      router.push(
+      window.location.assign(
         buildThankYouUrl("pilates-studios", {
           submissionId: result.submissionId,
           studioName: studioName.trim(),

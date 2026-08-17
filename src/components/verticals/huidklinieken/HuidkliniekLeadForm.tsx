@@ -1,6 +1,5 @@
 ﻿"use client";
 
-import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
@@ -78,7 +77,6 @@ export function HuidkliniekLeadForm({
   onInterestChange,
   onSubmitted,
 }: HuidkliniekLeadFormProps) {
-  const router = useRouter();
   const started = useRef(false);
   const promo = getActiveLaunchPromo(HUIDKLINIEKEN_VERTICAL.pricing);
 
@@ -159,7 +157,7 @@ export function HuidkliniekLeadForm({
         has_ref: Boolean(campaignRef),
         booking_need: bookingNeed,
       });
-      router.push(
+      window.location.assign(
         buildThankYouUrl("huidklinieken", {
           submissionId: result.submissionId,
           studioName: clinicName.trim(),

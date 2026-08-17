@@ -90,7 +90,9 @@ export function parseThankYouSearchParams(
 ): ThankYouPayload | null {
   const studio = firstParam(params.studio)?.trim();
   const submission = firstParam(params.submission)?.trim() ?? null;
-  const paidReturn = firstParam(params.betaald) === "1";
+  const molliePaymentId = firstParam(params.mollie)?.trim() ?? null;
+  const paidReturn =
+    firstParam(params.betaald) === "1" || Boolean(molliePaymentId);
 
   if (!studio && !submission && !paidReturn) {
     return null;

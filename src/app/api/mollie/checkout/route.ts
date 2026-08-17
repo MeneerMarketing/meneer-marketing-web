@@ -147,7 +147,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const payment = await mollie.payments.create({
       amount: quote.amount,
       description: quote.description,
-      redirectUrl: mollieCheckoutRedirectUrl(verticalPath, "pending"),
+      redirectUrl: mollieCheckoutRedirectUrl(verticalPath, "pending", {
+        submissionId,
+        studioName,
+        city: body.city,
+        packageId: body.packageId,
+        campaignRef,
+      }),
       webhookUrl: mollieWebhookUrl(),
       sequenceType: SequenceType.first,
       customerId: customer.id,
@@ -172,7 +178,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     }
 
     await mollie.payments.update(payment.id, {
-      redirectUrl: mollieCheckoutRedirectUrl(verticalPath, payment.id),
+      redirectUrl: mollieCheckoutRedirectUrl(verticalPath, payment.id, {
+        submissionId,
+        studioName,
+        city: body.city,
+        packageId: body.packageId,
+        campaignRef,
+      }),
     });
 
     if (submissionId && isLgeSupabaseConfigured()) {

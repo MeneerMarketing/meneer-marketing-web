@@ -147,13 +147,20 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       message?.trim() || "n.v.t.",
     ].filter((line): line is string => line !== null);
 
-    await sendNotificationMail({
-      source,
-      subject: `[${source.replace(/-/g, " ")}] ${studioName.trim()} · ${city.trim()}`,
-      replyToEmail: email.trim(),
-      replyToName: studioName.trim() || "Studio",
-      body: bodyLines.join("\n"),
-    });
+    try {
+      await sendNotificationMail({
+        source,
+        subject: `[${source.replace(/-/g, " ")}] ${studioName.trim()} · ${city.trim()}`,
+        replyToEmail: email.trim(),
+        replyToName: studioName.trim() || "Studio",
+        body: bodyLines.join("\n"),
+      });
+    } catch (mailErr) {
+      console.error("[API vertical inbound] notify mail", mailErr);
+      if (!submissionId) {
+        throw mailErr;
+      }
+    }
 
     const siteBase =
       process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
