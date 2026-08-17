@@ -532,8 +532,22 @@ export async function generateOutreachDraft(input: {
     studio_own_words: ctx.studio_own_words,
   });
 
-  const owner = ownerFirstName(ctx.studio_own_words, ctx.business_name);
-  // Eén studio, één eigenaar: "jij" past beter dan "jullie".
+  const ownerFromSite = ownerFirstName(ctx.studio_own_words, ctx.business_name);
+  const knownFirstName = firstNameFromContact(resolved.contact.name, ctx.business_name);
+  if (ownerFromSite && !knownFirstName) {
+    await client
+      .from("contacts")
+      .update({ name: ownerFromSite })
+      .eq("id", resolved.contact.id);
+    resolved.contact.name = ownerFromSite;
+    await writeActivity(client, {
+      business_id: business.id,
+      activity_type: "BUSINESS_UPDATED",
+      title: `Contactnaam bijgewerkt · ${ownerFromSite}`,
+      description: "Naam gevonden op studio-website voor outreach-aanhef.",
+    });
+  }
+
   const addressing: "singular" | "plural" = "singular";
 
   const { slots, cost, model, used } = await fetchPersonalizationSlots({
@@ -544,10 +558,13 @@ export async function generateOutreachDraft(input: {
 
   const landingPageUrl = buildOfferLandingUrl(ctx.preview_slug);
 
+  const contactFirstName =
+    firstNameFromContact(resolved.contact.name, ctx.business_name) ?? ownerFromSite;
+
   const rendered = renderHardenedOutreach({
     business_name: ctx.business_name,
     city: ctx.city,
-    contact_first_name: firstNameFromContact(ctx.contact_name, ctx.business_name) ?? owner,
+    contact_first_name: contactFirstName,
     preview_url: previewUrl,
     landing_page_url: landingPageUrl,
     city_exclusivity_available: cityExclusivityAvailable,

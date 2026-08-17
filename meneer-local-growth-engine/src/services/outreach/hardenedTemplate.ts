@@ -37,15 +37,29 @@ function experienceSentence(brand: MeneerMarketingBrandSettings): string {
   );
 }
 
-function openingLine(
-  firstName: string | null,
-  brand: MeneerMarketingBrandSettings,
-): string {
-  const cred = experienceSentence(brand);
+function timeGreetingNl(date = new Date()): string {
+  const hour = Number(
+    new Intl.DateTimeFormat("nl-NL", {
+      hour: "numeric",
+      hour12: false,
+      timeZone: "Europe/Amsterdam",
+    }).format(date),
+  );
+  if (hour < 12) return "Goedemorgen";
+  if (hour < 18) return "Goedemiddag";
+  return "Goedenavond";
+}
+
+function salutationLine(firstName: string | null): string {
+  const greeting = timeGreetingNl();
   if (firstName && firstName.length >= 2 && firstName.length <= 20) {
-    return `${firstName}, ik help Pilates studio's met website en vindbaarheid in Google. ${cred}`;
+    return `${greeting} ${firstName},`;
   }
-  return `Ik help Pilates studio's met website en vindbaarheid in Google. ${cred}`;
+  return `${greeting},`;
+}
+
+function pilatesOfferPageUrl(brand: MeneerMarketingBrandSettings): string {
+  return `${brand.website.replace(/\/$/, "")}/pilates-studios`;
 }
 
 function subjectFromSlots(
@@ -57,16 +71,16 @@ function subjectFromSlots(
     case "city":
       return `Website en Google voor ${businessName}`;
     case "idea":
-      return `Samenwerking in ${city}?`;
+      return `Samenwerken met ${businessName}?`;
     case "concept":
-      return `Een plan voor ${businessName}`;
-    case "website":
       return `Concept voor ${businessName}`;
+    case "website":
+      return `Website voor ${businessName}`;
     case "made":
-      return `${businessName}: mijn voorstel`;
+      return `${businessName}: kijk even mee`;
     case "chosen":
     default:
-      return `Pilates studio in ${city}?`;
+      return `Samenwerking in ${city}?`;
   }
 }
 
@@ -102,8 +116,11 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const ai_parts: string[] = [];
   const you = voice(input.addressing ?? "singular");
 
-  const open = openingLine(input.contact_first_name, brand);
-  fixed_parts.push("opening");
+  const salutation = salutationLine(input.contact_first_name);
+  fixed_parts.push("salutation");
+
+  const paraCred = `Ik bouw websites voor Pilates studio's from scratch en zorg dat je studio gevonden wordt in Google. ${experienceSentence(brand)}`;
+  fixed_parts.push("credibility");
 
   let personalTail = "";
   if (slots.site_gap?.trim()) {
@@ -114,7 +131,7 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     ai_parts.push("opening_observation");
   }
 
-  const paraOpener = `${open} Voor ${city} zoek ik nog een studio om mee samen te werken. Daarbij viel mijn oog op ${business_name}.${personalTail}`;
+  const paraOpener = `Voor ${city} zoek ik nog een studio om mee samen te werken. Daarbij viel mijn oog op ${business_name}.${personalTail}`;
   fixed_parts.push("opener");
 
   const paraConcept = `Om je meteen een beeld te geven heb ik al een concept uitgewerkt:\n\n${input.preview_url}`;
@@ -130,12 +147,11 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const paraPartnership = `Het concept staat al. Dat is het startpunt. Samen bouwen we daar verder op tot het precies bij ${you.yourPossessive} studio past. Ik bouw alles zelf en blijf ${you.yourPossessive} vaste contact. Voor €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw heb je iemand die met je meedenkt, elke maand doorwerkt op Google en direct oppakt als er iets moet veranderen.`;
   fixed_parts.push("partnership");
 
-  const pilatesPageUrl =
-    input.landing_page_url ?? `${brand.website.replace(/\/$/, "")}/pilates-studios`;
-  const paraPilatesPage = `Mijn volledige voorstel voor Pilates studio's, pakketten en prijzen staat hier:\n\n${pilatesPageUrl}`;
+  const pilatesPageUrl = pilatesOfferPageUrl(brand);
+  const paraPilatesPage = `Wil je meer weten hoe ik met studio's samenwerk en wat je van mij kunt verwachten? Dat lees je hier:\n\n${pilatesPageUrl}`;
   fixed_parts.push("pilates_page");
 
-  const paraClose = `Kijk naar het concept en het voorstel, en laat me weten wat ${you.subject} ervan ${you.verbFind}. Ik hoor graag je reactie.`;
+  const paraClose = `Kijk naar het concept en laat me weten wat ${you.subject} ervan ${you.verbFind}. Ik hoor graag je reactie.`;
   fixed_parts.push("close");
 
   const sig = signatureBlock(brand);
@@ -144,6 +160,10 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   if (slots.relevant_service) ai_parts.push("relevant_service");
 
   const body_text = [
+    salutation,
+    "",
+    paraCred,
+    "",
     paraOpener,
     "",
     paraConcept,
