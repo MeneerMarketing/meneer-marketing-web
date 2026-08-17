@@ -7,6 +7,7 @@ import {
   IdealBadge,
   MollieTrustLine,
 } from "@/components/verticals/PaymentMethodBadges";
+import { SubscriptionCheckoutLegal } from "@/components/verticals/SubscriptionCheckoutLegal";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { isCheckoutPackageId } from "@/lib/mollie/checkout-eligible";
 import {
@@ -50,6 +51,7 @@ export function LgePayBlock({
     "idle",
   );
   const [payError, setPayError] = useState<string | null>(null);
+  const [termsAccepted, setTermsAccepted] = useState(false);
 
   if (!checkoutEnabled || !isCheckoutPackageId(packageId)) {
     return null;
@@ -58,6 +60,8 @@ export function LgePayBlock({
   const checkoutPackageId = packageId;
   const quote = buildLgeCheckoutQuote(vertical, checkoutPackageId);
   const monthlyExclLabel = `€${quote.monthlyExcl.value.replace(".", ",")}`;
+  const monthlyExclEur = Number.parseFloat(quote.monthlyExcl.value);
+  const monthlyInclEur = Number.parseFloat(quote.monthlyAmount.value);
 
   const isCheckout = variant === "checkout";
   const isExpress = variant === "express";
@@ -81,6 +85,12 @@ export function LgePayBlock({
     if (city.trim().length < 1) {
       setPayStatus("error");
       setPayError("Vul je plaats in.");
+      return;
+    }
+
+    if (!termsAccepted) {
+      setPayStatus("error");
+      setPayError("Vink het vakje aan om akkoord te gaan met het abonnement.");
       return;
     }
 
@@ -144,6 +154,14 @@ export function LgePayBlock({
             </li>
           </ul>
 
+          <SubscriptionCheckoutLegal
+            variant="consent"
+            monthlyExclEur={monthlyExclEur}
+            monthlyInclEur={monthlyInclEur}
+            accepted={termsAccepted}
+            onAcceptedChange={setTermsAccepted}
+          />
+
           {payError ? (
             <p className="mt-4 text-xs font-semibold text-rose-700" role="alert">
               {payError}
@@ -153,7 +171,7 @@ export function LgePayBlock({
           <button
             type="button"
             onClick={() => void handlePay()}
-            disabled={payStatus === "loading"}
+            disabled={payStatus === "loading" || !termsAccepted}
             className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-base font-bold text-white shadow-[0_16px_36px_-12px_rgba(255,87,34,0.55)] transition hover:bg-[#e64a19] disabled:opacity-60"
           >
             <IdealBadge className="h-6" />
@@ -189,6 +207,14 @@ export function LgePayBlock({
           </div>
         </div>
 
+        <SubscriptionCheckoutLegal
+          variant="consent"
+          monthlyExclEur={monthlyExclEur}
+          monthlyInclEur={monthlyInclEur}
+          accepted={termsAccepted}
+          onAcceptedChange={setTermsAccepted}
+        />
+
         {payError ? (
           <p className="mt-3 text-xs font-semibold text-rose-700" role="alert">
             {payError}
@@ -198,7 +224,7 @@ export function LgePayBlock({
         <button
           type="button"
           onClick={() => void handlePay()}
-          disabled={payStatus === "loading"}
+          disabled={payStatus === "loading" || !termsAccepted}
           className={
             isExpress
               ? "mt-4 inline-flex w-full items-center justify-center rounded-xl bg-[#FF5722] px-4 py-3.5 text-sm font-bold text-white shadow-[0_12px_28px_-8px_rgba(255,87,34,0.55)] transition hover:bg-[#e64a19] disabled:opacity-60"

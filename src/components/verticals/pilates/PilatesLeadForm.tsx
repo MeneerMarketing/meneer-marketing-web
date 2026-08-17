@@ -4,6 +4,7 @@ import { MessageCircle, Rocket, ShieldCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
+import { SubscriptionCheckoutLegal } from "@/components/verticals/SubscriptionCheckoutLegal";
 import { MollieTrustLine } from "@/components/verticals/PaymentMethodBadges";
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
@@ -514,6 +515,10 @@ export function PilatesLeadForm({
             </p>
           </div>
         ) : null}
+      </div>
+
+      <div className="p-6 sm:p-8">
+        <SubscriptionCheckoutLegal variant="footnote" />
       </div>
     </form>
   );

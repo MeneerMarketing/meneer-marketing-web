@@ -23,7 +23,7 @@ export default function VoorwaardenPage() {
       />
       <LegalPageShell
         title="Algemene voorwaarden"
-        updatedAt="2 juli 2026"
+        updatedAt="17 augustus 2026"
         intro="Goede samenwerking begint met heldere afspraken. Deze voorwaarden gelden voor alle offertes en overeenkomsten van MeneerMarketing, ingeschreven bij de Kamer van Koophandel onder nummer 42095913."
       >
         <h2>Artikel 1. Definities</h2>
@@ -86,6 +86,32 @@ export default function VoorwaardenPage() {
           Opdrachtgever wettelijke handelsrente en redelijke incassokosten
           verschuldigd, en mag MeneerMarketing de werkzaamheden opschorten tot
           de betaling is voldaan.
+        </p>
+
+        <h2 id="abonnement-incasso">
+          Artikel 6a. Abonnementen en automatische incasso
+        </h2>
+        <p>
+          Voor doorlopende pakketten zoals Studio Edition geldt een
+          maandelijks abonnement. Maandbedragen op de website en in het
+          aanmeldformulier zijn exclusief btw, tenzij expliciet anders vermeld.
+          De eerste maand betaal je via iDEAL bij Mollie, inclusief 21% btw. Vanaf
+          de tweede maand incasseert Mollie maandelijks het overeengekomen bedrag
+          inclusief btw via SEPA-incasso, totdat je opzegt.
+        </p>
+        <p>
+          Je geeft toestemming voor deze incasso bij het afrekenen in Mollie en
+          bij het aanvinken van de akkoordverklaring op het formulier. Mollie
+          verwerkt de betalingen als betaalprovider; voor die verwerking geldt
+          ook het privacybeleid van Mollie waar van toepassing.
+        </p>
+        <p>
+          Het abonnement is maandelijks opzegbaar met inachtneming van de
+          opzegtermijn in artikel 10. Opzegging kan schriftelijk of per e-mail
+          naar{" "}
+          <a href={`mailto:${businessEmail}`}>{businessEmail}</a>. Reeds
+          betaalde perioden worden niet naar rato gerestitueerd, tenzij
+          schriftelijk anders overeengekomen.
         </p>
 
         <h2>Artikel 7. Intellectueel eigendom</h2>
