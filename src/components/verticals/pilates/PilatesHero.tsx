@@ -18,7 +18,7 @@ const launchPromo = getActiveLaunchPromo(cfg.pricing);
 const PROOF_POINTS = [
   "Site from scratch",
   "Bovenaan bij pilates + jouw stad",
-  "Proefles in drie tikken geboekt",
+  "Van zoekopdracht naar boeking",
 ] as const;
 
 export function PilatesHero() {
@@ -60,18 +60,20 @@ export function PilatesHero() {
             </span>
           </div>
 
-          <h1 className="mt-6 max-w-[16em] text-[1.85rem] font-extrabold leading-[1.06] tracking-tighter text-balance sm:max-w-none sm:text-[2.4rem] lg:text-[2.75rem] lg:leading-[1.05]">
-            Iemand zoekt Pilates in jouw stad.
-            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5">
-              Proefles op jouw mat.
+          <h1 className="mt-6 text-[1.65rem] font-extrabold leading-[1.08] tracking-tighter sm:text-[2.2rem] lg:text-[2.65rem] lg:leading-[1.06]">
+            <span className="block text-white sm:whitespace-nowrap">
+              Iemand zoekt Pilates in jouw stad.
+            </span>
+            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5 sm:whitespace-nowrap">
+              Jij wint die zoekopdracht.
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
             Jouw lessen zijn het probleem niet. Het probleem zit in de tien seconden
             daarvoor: iemand zoekt, ziet drie studio&apos;s en kiest er één. Ik bouw je
-            site from scratch, zet je bovenaan bij pilates plus jouw stad, en maak van
-            die zoekopdracht een geboekte proefles.
+            site from scratch, zet je bovenaan bij pilates plus jouw stad, en stuur
+            alles op nieuwe leden die blijven hangen.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
