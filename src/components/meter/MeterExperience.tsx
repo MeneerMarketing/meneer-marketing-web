@@ -28,6 +28,7 @@ export function MeterExperience() {
   const [guess, setGuess] = useState(52);
   const [scanLine, setScanLine] = useState(0);
   const [revealIndex, setRevealIndex] = useState(-1);
+  const [scanPulse, setScanPulse] = useState(38);
   const [loading, setLoading] = useState(false);
 
   const activeScanLine = useMemo(
@@ -42,6 +43,17 @@ export function MeterExperience() {
     }, 900);
     return () => window.clearInterval(id);
   }, [phase]);
+
+  useEffect(() => {
+    if (phase !== "scanning" || reduce) return;
+    let frame = 0;
+    const id = window.setInterval(() => {
+      frame += 1;
+      const wave = 38 + Math.sin(frame * 0.55) * 22 + Math.sin(frame * 0.18) * 8;
+      setScanPulse(Math.round(Math.max(12, Math.min(72, wave))));
+    }, 120);
+    return () => window.clearInterval(id);
+  }, [phase, reduce]);
 
   useEffect(() => {
     if (phase !== "revealing" || !result) return;
@@ -190,7 +202,7 @@ export function MeterExperience() {
             animate={{ opacity: 1, y: 0 }}
             className="mx-auto mt-12 max-w-lg text-center"
           >
-            <MeterDial value={42} size="hero" animate />
+            <MeterDial value={scanPulse} size="hero" animate variant="light" />
             <p className="mt-6 font-mono text-xs font-bold uppercase tracking-[0.16em] text-slate-400">
               Meter loopt…
             </p>
@@ -279,6 +291,7 @@ export function MeterExperience() {
                     value={phase === "verdict" ? result.total : 0}
                     size="result"
                     animate={phase === "verdict"}
+                    variant="dark"
                   />
                 </div>
                 <AnimatePresence>

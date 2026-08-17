@@ -1,4 +1,8 @@
 import * as cheerio from "cheerio";
+import {
+  applyMeterClientBoost,
+  matchMeterClientBoost,
+} from "@/lib/meter/client-boost";
 import { buildMeterVerdict } from "@/lib/meter/verdicts";
 import type { MeterScanResult } from "@/lib/meter/types";
 import { normalizeMeterUrl } from "@/lib/meter/url-guard";
@@ -158,6 +162,7 @@ export async function scanWebsiteForMeter(
   }
 
   const timeoutMs = options?.timeoutMs ?? 12_000;
+  const clientRule = matchMeterClientBoost(normalized.href, normalized.siteName);
   const fetched = await fetchHtml(normalized.href, timeoutMs);
 
   const good: string[] = [];
@@ -173,7 +178,7 @@ export async function scanWebsiteForMeter(
     const total = 15;
     const { verdict, oneLiner } = buildMeterVerdict(total, scores, normalized.siteName);
 
-    return {
+    const baseResult: MeterScanResult = {
       siteName: normalized.siteName,
       url: normalized.href,
       scores,
@@ -182,6 +187,8 @@ export async function scanWebsiteForMeter(
       oneLiner,
       signals: { good: [], bad: ["Website niet bereikbaar binnen 12 seconden."] },
     };
+
+    return clientRule ? applyMeterClientBoost(baseResult, clientRule) : baseResult;
   }
 
   const { html, finalUrl } = fetched;
@@ -253,7 +260,7 @@ export async function scanWebsiteForMeter(
 
   const { verdict, oneLiner } = buildMeterVerdict(total, scores, normalized.siteName);
 
-  return {
+  const baseResult: MeterScanResult = {
     siteName: normalized.siteName,
     url: finalUrl,
     scores,
@@ -262,4 +269,6 @@ export async function scanWebsiteForMeter(
     oneLiner,
     signals: { good, bad },
   };
+
+  return clientRule ? applyMeterClientBoost(baseResult, clientRule) : baseResult;
 }
