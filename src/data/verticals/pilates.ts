@@ -13,11 +13,15 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   verticalNamePlural: "Pilates studio's",
   themeAccent: "#FF5722",
   seo: {
-    title: "Website & SEO voor Pilates studio's | Meneer Marketing",
+    title: "Pilates website laten maken | SEO & marketing | Meneer Marketing",
     description:
-      "Pilates studio website laten maken? High-end webdesign, lokale SEO en boekingsflow in één traject. Studio Edition vanaf €89 per maand.",
+      "Pilates website laten maken? High-end webdesign, lokale SEO en pilates marketing in één traject. Studio Edition vanaf €89 per maand. Jij wint de zoekopdracht in jouw stad.",
     keywords: [
+      "pilates website",
+      "pilates website laten maken",
+      "pilates marketing",
       "website pilates studio",
+      "website pilates studio laten maken",
       "webdesign pilates studio",
       "seo pilates studio",
       "marketing pilates studio",
@@ -27,9 +31,12 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   },
   pricing: {
     currency: "EUR",
-    minTermMonths: 12,
-    termDisclaimer:
-      "Maandbedragen gelden bij een minimale looptijd van 12 maanden.",
+    minTermMonths: 1,
+    termDisclaimer: "Per maand, maandelijks opzegbaar. Prijzen ex. btw.",
+    includedInfraNote:
+      "Inclusief domeinnaam en hosting (t.w.v. €25 per maand).",
+    includedCareNote:
+      "Onderhoud, updates en kleine sitewijzigingen zitten in je abonnement. Remote bereikbaar: ik pak je wensen direct op.",
     launchPromo: {
       active: true,
       current: { amount: 0, unit: "eur", cadence: "one_time" },
@@ -50,13 +57,15 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
         inclusions: [
           "Website live binnen 5 werkdagen",
           "SEO-injectie op Pilates [jouw stad]",
-          "Eén van de high-end Pilates Studio Editions",
+          "Website designed around jouw studio en branding",
           "Aangepast aan naam, logo en huisstijl",
           "Mobiel geoptimaliseerd (daar gebeurt het echte boeken)",
           "Lessen, trainers, tarieven, contact en locatie",
           "Boekingskoppeling met bestaand systeem (waar technisch redelijk)",
           "Technische SEO + schema + tracking-basis",
-          "Hosting, onderhoud, beveiliging en kleine wijzigingen",
+          "Domeinnaam, hosting, beveiliging en technisch onderhoud",
+          "Kleine sitewijzigingen in je abonnement (teksten, tarieven, foto's)",
+          "Remote bereikbaar: ik regel je wensen direct",
         ],
       },
       {
@@ -78,7 +87,7 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
           "Keywordstrategie, Search Console en rank tracking",
           "SEO-dashboard / rapportage",
           "Lokale concurrentieanalyse",
-          "Stadsexclusiviteit binnen dit programma",
+          "Maandelijkse rank- en Maps-bijsturing",
         ],
       },
       {
@@ -208,7 +217,7 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
       id: "trust",
       title: "Vertrouwen",
       body: "Website en branding op studioniveau.",
-      detail: "Art direction, lessen, trainers, prijzen, bewijs van kwaliteit.",
+      detail: "Jouw branding, lessen, trainers, prijzen en bewijs van kwaliteit.",
     },
     {
       id: "book",
@@ -224,9 +233,9 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
     },
   ],
   exclusivity: {
-    headline: "Één studio. Één stad. Één aanspreekpunt.",
-    lead: "Één Pilates partner per stad. Bewust.",
-    body: "Als ik jouw lokale vindbaarheid bouw, help ik niet tegelijk jouw directe Pilates-concurrent om dezelfde Google-positie te pakken. Dat is hoe dit programma werkt zolang de exclusieve samenwerking actief is.",
+    headline: "",
+    lead: "",
+    body: "",
     cities: [],
   },
   caseStudy: {
@@ -249,9 +258,19 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
   },
   faq: [
     {
-      question: "Is dit een template?",
+      question: "Wat kost een pilates website laten maken?",
       answer:
-        "Nee. Studio Edition is een gespecialiseerde Pilates-foundation: een design system dat ik aanpas aan jouw studio. ThemeForest en pagebuilders horen hier niet bij. Voor volledige unieke architectuur is er Signature Custom.",
+        "Studio Edition start vanaf €89 per maand, exclusief btw. De eenmalige launch is tijdelijk €0 in plaats van €295. Daarin zit je pilates website from scratch, SEO op Pilates [jouw stad] en onderhoud. Local Growth en Growth Partner voegen bredere lokale SEO en pilates marketing toe.",
+    },
+    {
+      question: "Regel je ook pilates marketing naast de website?",
+      answer:
+        "Ja. Studio Edition dekt website en basis-SEO. Local Growth pakt lokale vindbaarheid en meerdere landingspagina's. Growth Partner voegt Google Ads, Meta Ads en creator-collabs toe. Alles op één lijn, zodat zoeken, klikken en boeken samen lopen.",
+    },
+    {
+      question: "Is mijn site echt op maat?",
+      answer:
+        "Ja. Jouw naam, logo, lessen en stad staan centraal. Wat je al gezien hebt is het startpunt dat ik voor jouw studio doorontwikkel en aanscherp. From scratch gebouwd, afgestemd op jouw studio.",
     },
     {
       question: "Kan mijn huidige boekingssysteem blijven?",
@@ -259,19 +278,9 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
         "Vaak wel. Heb je al iets dat werkt, dan koppel ik rooster, boeken en memberships aan de nieuwe site wanneer dat technisch redelijk is. Dat zit in Studio Edition.",
     },
     {
-      question: "Regel jij Trainin?",
-      answer:
-        "Trainin is een voorbeeld van geschikte studio-software. Past het functioneel, dan regel ik setup en koppeling. De softwarelicentie loopt via de provider.",
-    },
-    {
-      question: "Krijg ik een eigen app?",
-      answer:
-        "Alleen als dat past. Soms is koppelen genoeg. Soms is een branded studio-app slim. Maatwerk-app alleen bij bijzondere processen. Ik kies wat je studio nodig heeft, niet wat het hardst klinkt op een offerte.",
-    },
-    {
       question: "Help je met SEO voor mijn Pilates studio?",
       answer:
-        "Ja. Bij Studio Edition injecteer ik SEO al op Pilates [jouw stad], plus technische SEO. Local Growth en Growth Partner pakken meer zoektermen en meerdere landingspagina's, met maandelijkse bijsturing. Dat is waar de meeste studio's landen.",
+        "Ja. Bij Studio Edition injecteer ik SEO al op Pilates [jouw stad], plus technische SEO. Local Growth en Growth Partner pakken meer zoektermen en meerdere landingspagina's, met maandelijkse bijsturing.",
     },
     {
       question: "Hoe snel staat mijn website live?",
@@ -279,39 +288,14 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
         "Bij Studio Edition mik ik op oplevering binnen 5 werkdagen, inclusief SEO-injectie op Pilates [jouw stad]. Content en assets van jouw kant op tijd aanleveren helpt enorm.",
     },
     {
-      question: "Kom ik op pagina 1 in Google?",
-      answer:
-        "Daar is de strategie op gebouwd. Ik weet hoe Google werkt: intentie, structuur, snelheid, content, Maps. Voor de kernzoekterm Pilates [stad] mikken we hard op pagina 1, met serieuze kans op topposities. Local Growth en Growth Partner verbreden dat naar meer zoektermen. Magische garanties zonder werk beloof ik niet. Wel een aanpak die Google beloont.",
-    },
-    {
-      question: "Wat betekent één studio per stad?",
-      answer:
-        "Binnen dit Pilates-programma werk ik met maximaal één actieve Pilates-partner per stad. Zo help ik niet twee directe concurrenten tegelijk om dezelfde lokale Google-positie.",
-    },
-    {
-      question: "Wat als er al een Meneer Marketing Pilates-klant in mijn stad zit?",
-      answer:
-        "Dan neem ik binnen dit programma geen tweede directe Pilates-concurrent aan zolang die exclusieve samenwerking actief is. Dat zeg ik vooraf, niet halverwege.",
-    },
-    {
       question: "Kan ik later upgraden?",
       answer:
         "Ja. Van Studio Edition naar Local Growth of Growth Partner. Signature Custom blijft een apart traject wanneer je volledig from scratch wilt.",
     },
     {
-      question: "Kan ik ook alleen een website nemen?",
+      question: "Is het maandelijks opzegbaar?",
       answer:
-        "Ja. Studio Edition is precies die start: je Pilates-website op de Studio Edition-foundation, plus hosting en onderhoud. Groei er later bij als je klaar bent.",
-    },
-    {
-      question: "Kan ik een volledig custom website krijgen?",
-      answer:
-        "Ja. Signature Custom, vanaf €2.950 eenmalig. Eigen art direction, UX en architectuur. SEO en Growth kun je daarna aanvullen.",
-    },
-    {
-      question: "Wie beheert de website?",
-      answer:
-        "Ik. Hosting, onderhoud, beveiliging en kleine wijzigingen zitten in de maandpakketten. Jij hebt één aanspreekpunt. Je mailt mij, niet een ticketwachtrij.",
+        "Ja. Studio Edition, Local Growth en Growth Partner betaal je per maand. Opzeggen kan maandelijks via mij, zonder lang contract.",
     },
     {
       question: "Zit advertentiebudget inbegrepen?",
@@ -325,12 +309,12 @@ export const PILATES_VERTICAL: VerticalLandingConfig = {
       body: "Locatie, lessen, boeking, merkstijl. Kort en concreet. Intake past op één koffie.",
     },
     {
-      title: "Art direction kiezen of verfijnen",
-      body: "Eén van de Pilates Studio Editions, of Signature Custom als je studio dat vraagt.",
+      title: "Jouw studio, jouw site",
+      body: "Branding, lessen, tarieven en teksten op jouw studio afgestemd. Heb je al een richting gezien? Dan werk ik die door tot hij volledig van jou voelt.",
     },
     {
       title: "Branding, lessen en booking",
-      body: "Jouw content, huisstijl en boekingsroute erin. Dan voelt het als jouw studio.",
+      body: "Jouw content, huisstijl en boekingsroute erin. Alles voelt als jouw studio.",
     },
     {
       title: "Website live",
@@ -369,19 +353,24 @@ export const PILATES_PACKAGE_BY_ID = Object.fromEntries(
 /** Interne links voor discovery en topical authority (niet in footer/nav). */
 export const PILATES_RELATED_LINKS = [
   {
+    href: "/huidklinieken",
+    label: "Huidklinieken",
+    hint: "Zelfde Local Growth Engine, andere branche",
+  },
+  {
     href: "/bouwen",
     label: "Websites from scratch",
     hint: "Custom build, echt vanaf nul",
   },
   {
     href: "/diensten/webdesign",
-    label: "Webdesign",
-    hint: "Design dat mensen laat boeken",
+    label: "Webdesign pilates studio",
+    hint: "Pilates website design dat proeflessen vult",
   },
   {
     href: "/diensten/seo",
-    label: "SEO",
-    hint: "Technisch + content dat rankt",
+    label: "SEO pilates studio",
+    hint: "Technisch + content voor pilates zoektermen",
   },
   {
     href: "/diensten/local-seo",

@@ -139,7 +139,15 @@ function pushAnalytics(score: number, tier: string): void {
   });
 }
 
-export function BrochureOmeter() {
+interface BrochureOmeterProps {
+  siteUrl?: string | null;
+  sharePath?: string;
+}
+
+export function BrochureOmeter({
+  siteUrl = null,
+  sharePath = "/meter",
+}: BrochureOmeterProps) {
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const [copied, setCopied] = useState(false);
   const [hydrated, setHydrated] = useState(false);
@@ -188,12 +196,17 @@ export function BrochureOmeter() {
   }
 
   async function copyScore(): Promise<void> {
+    const shareBase =
+      typeof window !== "undefined"
+        ? `${window.location.origin}${sharePath}`
+        : `https://meneermarketing.nl${sharePath}`;
     const lines = [
-      `Mijn Brochure-o-meter score: ${score}/100`,
+      siteUrl ? `Site: ${siteUrl}` : null,
+      `Meneer Meter score: ${score}/100`,
       `Label: ${tier.label}`,
       tier.quip,
-      "Test jouw site: https://meneermarketing.nl/kennisbank/brochure-o-meter-website-teksten",
-    ];
+      `Test jouw site: ${shareBase}`,
+    ].filter((line): line is string => Boolean(line));
     try {
       await navigator.clipboard.writeText(lines.join("\n"));
       setCopied(true);
@@ -222,6 +235,11 @@ export function BrochureOmeter() {
           Vink aan wat je herkent op jouw site. Hoe hoger de score, hoe meer
           folder en hoe minder reden om te klikken.
         </p>
+        {siteUrl ? (
+          <p className="mt-3 text-xs font-semibold text-slate-400">
+            Nu voor: <span className="text-white">{siteUrl}</span>
+          </p>
+        ) : null}
       </div>
 
       <div className="grid gap-0 lg:grid-cols-[1.35fr_0.85fr]">

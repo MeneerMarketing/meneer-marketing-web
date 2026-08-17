@@ -13,6 +13,7 @@ import { persistInboundSubmission } from "@/lib/lge/inbound-store";
 import { postCampaignEvent } from "@/lib/lge/campaign";
 import { packageIdToKey } from "@/lib/lge/package-map";
 import type { VerticalInterestId } from "@/data/verticals/types";
+import { sendLeadConfirmationMail } from "@/lib/verticals/lead-confirmation-mail";
 
 const bodySchema = z.object({
   source: z.enum(["pilates-studios", "huidklinieken"]),
@@ -153,6 +154,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       replyToName: studioName.trim() || "Studio",
       body: bodyLines.join("\n"),
     });
+
+    const siteBase =
+      process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
+      "https://meneermarketing.nl";
+    const offerPageUrl = campaignRef
+      ? `${siteBase}/${source}?ref=${encodeURIComponent(campaignRef)}`
+      : `${siteBase}/${source}`;
+
+    try {
+      await sendLeadConfirmationMail({
+        toEmail: email.trim(),
+        studioName: studioName.trim(),
+        city: city.trim(),
+        source,
+        interest: interest as VerticalInterestId,
+        offerPageUrl,
+        meterUrl: null,
+      });
+    } catch (mailErr) {
+      console.error("[API vertical inbound] confirmation mail", mailErr);
+    }
 
     if (campaignRef) {
       const pkg = packageIdToKey(interest as VerticalInterestId);

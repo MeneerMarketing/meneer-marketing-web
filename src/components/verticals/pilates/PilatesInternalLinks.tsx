@@ -18,7 +18,7 @@ export function PilatesInternalLinks() {
           id="pilates-related-heading"
           className="mt-3 max-w-2xl text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl"
         >
-          Website, SEO en marketing. Dieper per dienst.
+          Website, SEO en pilates marketing. Dieper per dienst.
         </h2>
         <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
           Dit Pilates-programma leunt op dezelfde expertise. Bekijk de

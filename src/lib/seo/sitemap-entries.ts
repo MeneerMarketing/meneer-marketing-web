@@ -35,6 +35,21 @@ const STATIC_INDEXABLE_PATHS = [
   { path: "/contact", priority: 0.86, changeFrequency: "monthly" as const },
   { path: "/werkwijze", priority: 0.84, changeFrequency: "monthly" as const },
   { path: "/faq", priority: 0.84, changeFrequency: "monthly" as const },
+  {
+    path: "/pilates-studios",
+    priority: 0.88,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/huidklinieken",
+    priority: 0.88,
+    changeFrequency: "monthly" as const,
+  },
+  {
+    path: "/meter",
+    priority: 0.9,
+    changeFrequency: "weekly" as const,
+  },
   { path: "/weetjes", priority: 0.8, changeFrequency: "monthly" as const },
   {
     path: "/privacybeleid",
@@ -53,10 +68,16 @@ const STATIC_INDEXABLE_PATHS = [
   },
 ] as const;
 
-/** Landings na hub-verdieping + meta/CTR pack. */
-const SEO_LANDING_LAST_MOD = new Date("2026-08-08");
+/** Landings na hub-verdieping + topical map pack. */
+const SEO_LANDING_LAST_MOD = new Date("2026-08-09");
 /** Hubs/static: sitemap-hygiëne + content SEO pack. */
-const SITE_LAST_MOD = new Date("2026-08-08");
+const SITE_LAST_MOD = new Date("2026-08-09");
+/** Per-path overrides wanneer een pagina substantieel is bijgewerkt. */
+const PATH_LAST_MOD: Readonly<Record<string, Date>> = {
+  "/pilates-studios": new Date("2026-08-17"),
+  "/huidklinieken": new Date("2026-08-14"),
+  "/meter": new Date("2026-08-17"),
+};
 
 const NOINDEX_PATH_SET = new Set<string>(NOINDEX_PATHS);
 
@@ -101,7 +122,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     if (item.path && isNoindexPath(item.path)) continue;
     entries.push({
       url: toOriginUrl(item.path),
-      lastModified: SITE_LAST_MOD,
+      lastModified: PATH_LAST_MOD[item.path] ?? SITE_LAST_MOD,
       changeFrequency: item.changeFrequency,
       priority: item.priority,
     });

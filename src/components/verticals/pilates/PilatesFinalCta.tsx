@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import { ArrowUpRight } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -34,6 +36,8 @@ export function PilatesFinalCta({
   selectedInterest,
   onInterestChange,
 }: PilatesFinalCtaProps) {
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <section
       id="aanvraag"
@@ -73,20 +77,22 @@ export function PilatesFinalCta({
                 {promo ? ", launch tijdelijk €0" : ""}.
               </p>
 
-              <a
-                href={PILATES_VERTICAL.demo.primaryHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() =>
-                  trackPilatesEvent("pilates_demo_click", {
-                    location: "final_cta",
-                  })
-                }
-                className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2.5 text-sm font-bold text-white transition hover:border-[#FF5722]/50 hover:bg-[#FF5722]/10"
-              >
-                Eerst live demo bekijken
-                <ArrowUpRight className="size-4" aria-hidden />
-              </a>
+              {personalization?.previewHref ? (
+                <a
+                  href={personalization.previewHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() =>
+                    trackPilatesEvent("pilates_demo_click", {
+                      location: "final_cta",
+                    })
+                  }
+                  className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2.5 text-sm font-bold text-white transition hover:border-[#FF5722]/50 hover:bg-[#FF5722]/10"
+                >
+                  Bekijk jullie ontwerp opnieuw
+                  <ArrowUpRight className="size-4" aria-hidden />
+                </a>
+              ) : null}
             </div>
 
             <ul className="mt-10 space-y-3 border-t border-white/10 pt-6 text-sm text-slate-300">
@@ -108,18 +114,27 @@ export function PilatesFinalCta({
 
           <Reveal delay={0.06} className="h-full">
             <div className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-5 text-slate-900 shadow-[0_28px_70px_rgba(0,0,0,0.35)] sm:p-6">
-              <h3 className="text-lg font-extrabold tracking-tight">
-                Stuur je studio door
-              </h3>
-              <p className="mt-1 text-sm text-slate-500">
-                Vier velden. Optioneel iets erbij. Ik reageer persoonlijk.
-              </p>
+              {!submitted ? (
+                <>
+                  <h3 className="text-lg font-extrabold tracking-tight">
+                    Stuur je studio door
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-500">
+                    Vier velden. Optioneel iets erbij. Ik reageer persoonlijk.
+                  </p>
+                </>
+              ) : (
+                <h3 className="text-lg font-extrabold tracking-tight">
+                  Bedankt voor je aanvraag
+                </h3>
+              )}
               <div className="mt-4 flex-1">
                 <PilatesLeadForm
                   personalization={personalization}
                   campaignRef={campaignRef}
                   selectedInterest={selectedInterest}
                   onInterestChange={onInterestChange}
+                  onSubmitted={() => setSubmitted(true)}
                 />
               </div>
             </div>

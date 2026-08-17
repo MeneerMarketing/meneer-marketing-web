@@ -1,5 +1,6 @@
 "use client";
 
+import { Globe, Sparkles, Wrench } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -13,8 +14,9 @@ import {
   formatMonthlyWithSetup,
   getActiveLaunchPromo,
 } from "@/lib/verticals/format-price";
+import { PRICE_EXCL_BTW_LABEL } from "@/lib/verticals/vat";
 
-const { packages, termDisclaimer, minTermMonths, launchPromo } =
+const { packages, termDisclaimer, includedInfraNote, includedCareNote, launchPromo } =
   PILATES_VERTICAL.pricing;
 const promo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
 
@@ -63,7 +65,7 @@ export function PilatesPricing({
       aria-labelledby="pilates-pricing-heading"
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-45"
+        className="pointer-events-none absolute inset-0 opacity-30"
         aria-hidden
         style={{
           backgroundImage:
@@ -86,34 +88,65 @@ export function PilatesPricing({
           </div>
           <h2
             id="pilates-pricing-heading"
-            className="mt-3 max-w-3xl text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.6rem] lg:leading-[1.08]"
+            className="mt-3 max-w-3xl text-[1.75rem] font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.6rem] lg:leading-[1.08]"
           >
-            Website.
-            <span className="text-slate-400"> Dan vindbaarheid.</span>
-            <span className="block text-[#FF5722]"> Dan complete groei.</span>
+            <span className="block">Website.</span>
+            <span className="block text-slate-400">Dan vindbaarheid.</span>
+            <span className="block text-[#FF5722]">Dan complete groei.</span>
           </h2>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-            Drie treden. Zelfde partner. Jij kiest hoe ver je digitaal wilt
-            gaan.
+          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-600 sm:text-lg">
+            Drie treden, één partner. Jij kiest hoe ver je digitaal wilt gaan.
             {campaignRecommended
-              ? " Op basis van jullie website en lokale groeikansen ligt één pakket het dichtst bij."
-              : " De meeste studio's landen op Local Growth."}
+              ? " Op basis van jullie site en lokale kansen ligt één pakket het dichtst bij."
+              : " Meeste studio's landen op Local Growth."}
           </p>
-          {promo ? (
-            <p className="mt-3 text-sm font-semibold text-slate-800">
-              {promo.note}{" "}
-              <span className="font-medium text-slate-500">
-                ({termDisclaimer} {minTermMonths} maanden.)
-              </span>
-            </p>
-          ) : (
-            <p className="mt-3 text-sm font-medium text-slate-500">
-              {termDisclaimer} ({minTermMonths} maanden).
-            </p>
-          )}
+
+          <div className="mt-6 flex max-w-2xl flex-col gap-2.5 sm:mt-8">
+            {promo ? (
+              <div className="flex gap-3 rounded-2xl border border-[#FF5722]/15 bg-gradient-to-br from-[#FF5722]/[0.06] to-white px-4 py-3.5 sm:px-5 sm:py-4">
+                <Sparkles
+                  className="mt-0.5 size-4 shrink-0 text-[#FF5722]"
+                  aria-hidden
+                />
+                <div className="min-w-0">
+                  <p className="text-sm font-bold leading-snug text-slate-900">
+                    {promo.note}
+                  </p>
+                  <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
+                    {termDisclaimer}
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <p className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-xs leading-relaxed text-slate-500">
+                {termDisclaimer}
+              </p>
+            )}
+
+            <div className="grid gap-2.5 sm:grid-cols-2">
+              <div className="flex gap-3 rounded-xl border border-slate-200/90 bg-white/95 px-4 py-3.5 shadow-[0_8px_24px_-20px_rgba(15,23,42,0.25)]">
+                <Globe
+                  className="mt-0.5 size-4 shrink-0 text-slate-400"
+                  aria-hidden
+                />
+                <p className="text-[13px] leading-snug text-slate-700 sm:text-sm">
+                  {includedInfraNote}
+                </p>
+              </div>
+              <div className="flex gap-3 rounded-xl border border-slate-200/90 bg-white/95 px-4 py-3.5 shadow-[0_8px_24px_-20px_rgba(15,23,42,0.25)] sm:col-span-2">
+                <Wrench
+                  className="mt-0.5 size-4 shrink-0 text-slate-400"
+                  aria-hidden
+                />
+                <p className="text-[13px] leading-snug text-slate-600 sm:text-sm">
+                  {includedCareNote}
+                </p>
+              </div>
+            </div>
+          </div>
         </Reveal>
 
-        <div className="mt-8 flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500">
+        <div className="mt-10 flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 sm:mt-12">
           {packages.map((p, i) => (
             <span key={p.id} className="inline-flex items-center gap-2">
               <span
@@ -208,6 +241,15 @@ export function PilatesPricing({
                       >
                         / maand
                       </span>
+                    </p>
+                    <p
+                      className={
+                        recommended
+                          ? "mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400"
+                          : "mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500"
+                      }
+                    >
+                      {PRICE_EXCL_BTW_LABEL}
                     </p>
                     <p
                       className={

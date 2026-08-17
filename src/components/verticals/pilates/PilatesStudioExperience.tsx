@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowUpRight, Sparkles, Store } from "lucide-react";
+import { ArrowUpRight, Store, TrendingUp } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -24,11 +24,11 @@ const YOU_BEATS = [
 const ME_BEATS = [
   {
     title: "Website",
-    text: "High-end Pilates look die voelt als jouw studio.",
+    text: "Pilates website from scratch die voelt als jouw studio.",
   },
   {
     title: "Lokale Google",
-    text: "Gevonden worden op Pilates + jouw stad.",
+    text: "SEO op pilates, reformer en pilates studio plus jouw stad.",
   },
   {
     title: "Boekingsflow",
@@ -64,8 +64,9 @@ export function PilatesStudioExperience() {
               <span className="text-[#FF5722]"> Ik regel digitaal.</span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Op de vloer is het al premium. Online moet datzelfde niveau
-              landen. Hover over een kant. Dan zie je precies wie wat doet.
+              Op de vloer is het al premium. Online moet datzelfde niveau landen: pilates
+              website, lokale SEO en pilates marketing op één lijn. Hover over een kant.
+              Dan zie je precies wie wat doet.
             </p>
           </div>
         </Reveal>
@@ -157,17 +158,6 @@ export function PilatesStudioExperience() {
                 }
                 transition={{ duration: 0.35 }}
               >
-                <div
-                  className="pointer-events-none absolute inset-0 opacity-40"
-                  aria-hidden
-                  style={{
-                    background:
-                      active === "me"
-                        ? "radial-gradient(ellipse 70% 50% at 80% 10%, rgba(255,87,34,0.35), transparent 55%)"
-                        : "radial-gradient(ellipse 50% 40% at 90% 0%, rgba(255,87,34,0.18), transparent 50%)",
-                  }}
-                />
-
                 <div className="relative flex items-start justify-between gap-4">
                   <div>
                     <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-orange-300">
@@ -178,7 +168,7 @@ export function PilatesStudioExperience() {
                     </h3>
                   </div>
                   <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF5722]/15 text-[#FF5722] ring-1 ring-[#FF5722]/30">
-                    <Sparkles className="size-5" aria-hidden />
+                    <TrendingUp className="size-5" aria-hidden />
                   </span>
                 </div>
 
@@ -245,10 +235,10 @@ export function PilatesStudioExperience() {
               de studio, ik het systeem eromheen. Dan voelt boeken logisch.
             </p>
             <a
-              href="#live-design"
+              href="#aanvraag"
               className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#FF5722]"
             >
-              Bekijk art directions
+              Start met jouw studio
               <ArrowUpRight
                 className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden

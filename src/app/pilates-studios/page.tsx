@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -27,13 +28,30 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 interface PageProps {
-  searchParams: Promise<{ ref?: string | string[] }>;
+  searchParams: Promise<{
+    ref?: string | string[];
+    checkout?: string | string[];
+    payment?: string | string[];
+    submission?: string | string[];
+  }>;
 }
 
 export default async function PilatesStudiosPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const rawRef = Array.isArray(params.ref) ? params.ref[0] : params.ref;
   const { ref, personalization } = await resolveCampaignRef(rawRef);
+  const rawPayment = Array.isArray(params.payment)
+    ? params.payment[0]
+    : params.payment;
+  const submissionId = Array.isArray(params.submission)
+    ? params.submission[0]
+    : params.submission;
+
+  if (rawPayment === "return" && submissionId) {
+    redirect(
+      `/pilates-studios/bedankt?betaald=1&submission=${encodeURIComponent(submissionId)}`,
+    );
+  }
 
   return (
     <>
@@ -47,14 +65,16 @@ export default async function PilatesStudiosPage({ searchParams }: PageProps) {
             name: seo.title,
             description: seo.description,
             path: PAGE_PATH,
-            dateModified: "2026-08-12",
+            datePublished: "2026-08-12",
+            dateModified: "2026-08-17",
           }),
           serviceJsonLd({
-            name: "Website, SEO en marketing voor Pilates studio's",
+            name: "Pilates website laten maken, SEO en marketing",
             description:
-              "High-end Pilates studio website, lokale SEO, Google Ads-beheer en boekingsflow. Studio Edition, Local Growth of Growth Partner. Één partner per stad.",
+              "Pilates website from scratch, lokale SEO op pilates plus jouw stad, Google Ads-beheer en boekingsflow. Studio Edition, Local Growth of Growth Partner.",
             path: PAGE_PATH,
             areaServed: "Nederland",
+            serviceType: "Website laten maken voor Pilates studio's",
           }),
           faqPageJsonLd(
             PILATES_VERTICAL.faq.map((f) => ({
