@@ -128,6 +128,48 @@ export default async function OutreachDetailPage({ params }: Props) {
             </dl>
           </Panel>
 
+          <Panel title="Delivery tracking">
+            <dl>
+              <KeyValue
+                label="Verzonden"
+                value={
+                  message.sent_at
+                    ? new Date(message.sent_at).toLocaleString("nl-NL")
+                    : "—"
+                }
+              />
+              <KeyValue
+                label="Afgeleverd"
+                value={
+                  message.delivered_at
+                    ? new Date(message.delivered_at).toLocaleString("nl-NL")
+                    : "—"
+                }
+              />
+              <KeyValue
+                label="Geopend"
+                value={
+                  message.opened_at
+                    ? new Date(message.opened_at).toLocaleString("nl-NL")
+                    : "—"
+                }
+              />
+              <KeyValue
+                label="Geklikt"
+                value={
+                  message.clicked_at
+                    ? new Date(message.clicked_at).toLocaleString("nl-NL")
+                    : "—"
+                }
+              />
+              <KeyValue label="Status" value={message.status} />
+            </dl>
+            <p className="mt-3 text-xs text-slate-500">
+              Opens en clicks komen binnen via de Resend-webhook zodra die actief
+              is op je LGE-instance.
+            </p>
+          </Panel>
+
           <Panel title="Preview">
             {message.preview_url ? (
               <a
