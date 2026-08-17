@@ -1,16 +1,20 @@
 import Image from "next/image";
 
-const IDEAL_LOGO = "/brand/ideal-wero-lockup.png";
+const IDEAL_LOGO = "/brand/ideal-wero-lockup-transparent.png";
 
-export function IdealBadge({ className = "" }: { className?: string }) {
+export function IdealBadge({ className = "h-8" }: { className?: string }) {
   return (
-    <Image
-      src={IDEAL_LOGO}
-      alt="iDEAL · wero"
-      width={132}
-      height={36}
-      className={`h-8 w-auto object-contain ${className}`}
-    />
+    <span
+      className={`inline-flex shrink-0 overflow-hidden rounded-[10px] ${className}`}
+    >
+      <Image
+        src={IDEAL_LOGO}
+        alt="iDEAL · wero"
+        width={132}
+        height={36}
+        className="h-full w-auto object-contain"
+      />
+    </span>
   );
 }
 
@@ -25,12 +29,18 @@ export function SepaBadge({ className = "" }: { className?: string }) {
   );
 }
 
-export function MollieTrustLine({ className = "" }: { className?: string }) {
+export function MollieTrustLine({
+  className = "",
+  includeIdeal = true,
+}: {
+  className?: string;
+  includeIdeal?: boolean;
+}) {
   return (
     <p
       className={`flex flex-wrap items-center gap-2 text-[11px] font-semibold text-slate-500 ${className}`}
     >
-      <IdealBadge />
+      {includeIdeal ? <IdealBadge /> : null}
       <SepaBadge />
       <span className="text-slate-400">·</span>
       <span>Veilig via Mollie</span>

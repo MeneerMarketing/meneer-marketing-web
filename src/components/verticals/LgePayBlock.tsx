@@ -134,7 +134,7 @@ export function LgePayBlock({
                 hetzelfde bedrag ex. btw. Opzegbaar per maand.
               </p>
             </div>
-            <MollieTrustLine />
+            <MollieTrustLine includeIdeal={false} />
           </div>
         </div>
 
@@ -174,7 +174,6 @@ export function LgePayBlock({
             disabled={payStatus === "loading" || !termsAccepted}
             className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-base font-bold text-white shadow-[0_16px_36px_-12px_rgba(255,87,34,0.55)] transition hover:bg-[#e64a19] disabled:opacity-60"
           >
-            <IdealBadge className="h-6" />
             {payStatus === "loading"
               ? "Door naar Mollie…"
               : `Betaal ${monthlyExclLabel} ex. btw`}
