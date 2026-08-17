@@ -30,32 +30,43 @@ export interface HardenedRenderResult {
   word_count: number;
 }
 
-function greeting(firstName: string | null): string {
+function experienceSentence(brand: MeneerMarketingBrandSettings): string {
+  return brand.years_experience_phrase.replace(
+    /\{\{years\}\}/g,
+    String(brand.years_experience),
+  );
+}
+
+function openingLine(
+  firstName: string | null,
+  brand: MeneerMarketingBrandSettings,
+): string {
+  const cred = experienceSentence(brand);
   if (firstName && firstName.length >= 2 && firstName.length <= 20) {
-    return `Hoi ${firstName},`;
+    return `${firstName}, ik help Pilates studio's met website en vindbaarheid in Google. ${cred}`;
   }
-  return "Hoi,";
+  return `Ik help Pilates studio's met website en vindbaarheid in Google. ${cred}`;
 }
 
 function subjectFromSlots(
   businessName: string,
   city: string,
-  variant: OutreachPersonalizationSlots["subject_variant"]
+  variant: OutreachPersonalizationSlots["subject_variant"],
 ): string {
   switch (variant) {
     case "city":
-      return `Pilates in ${city}: samen groeien?`;
+      return `Website en Google voor ${businessName}`;
     case "idea":
       return `Samenwerking in ${city}?`;
     case "concept":
       return `Een plan voor ${businessName}`;
     case "website":
-      return `Groei voor ${businessName}`;
+      return `Concept voor ${businessName}`;
     case "made":
       return `${businessName}: mijn voorstel`;
     case "chosen":
     default:
-      return `Ik help Pilates studio's in ${city}`;
+      return `Pilates studio in ${city}?`;
   }
 }
 
@@ -88,8 +99,8 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const ai_parts: string[] = [];
   const you = voice(input.addressing ?? "singular");
 
-  const open = greeting(input.contact_first_name);
-  fixed_parts.push("greeting");
+  const open = openingLine(input.contact_first_name, brand);
+  fixed_parts.push("opening");
 
   let personalTail = "";
   if (slots.site_gap?.trim()) {
@@ -100,7 +111,7 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     ai_parts.push("opening_observation");
   }
 
-  const paraOpener = `Ik help Pilates studio's online groeien. Voor ${city} zoek ik nog een studio om mee samen te werken, en daarbij viel mijn oog op ${business_name}.${personalTail}`;
+  const paraOpener = `${open} Voor ${city} zoek ik nog een studio om mee samen te werken, en daarbij viel mijn oog op ${business_name}.${personalTail}`;
   fixed_parts.push("opener");
 
   const paraConcept = `Om je meteen een beeld te geven heb ik al een concept uitgewerkt:\n\n${input.preview_url}`;
@@ -110,10 +121,10 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   if (slots.secondary_keyword) ai_parts.push("secondary_keyword");
 
   const keyword = slots.primary_keyword;
-  const paraGrowthPlan = `Wat ik voor ${you.yourPossessive} studio wil neerzetten is een sterke online basis waar mensen in ${city} ${you.yourPossessive} studio vinden als ze zoeken op ${keyword}, makkelijk kunnen boeken en blijven terugkomen. Het doel is een voller rooster, meer leden en een agenda die loopt. Niet alleen bezoekers, maar echte boekingen en bekendheid in de buurt.`;
+  const paraGrowthPlan = `Wat ik voor ${you.yourPossessive} studio wil neerzetten is een sterke website en een plek in Google als mensen in ${city} zoeken op ${keyword}. Makkelijk boeken, mensen die terugkomen, een voller rooster en meer leden. Niet alleen bezoekers, maar echte boekingen en bekendheid in de buurt.`;
   fixed_parts.push("growth_plan");
 
-  const paraPartnership = `Het concept staat al. Samen maken we het af tot het precies bij ${you.yourPossessive} studio past. Ik bouw alles zelf en blijf ${you.yourPossessive} vaste contact online. Voor €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw heb je iemand die met je meedenkt, elke maand doorwerkt op ${you.yourPossessive} vindbaarheid en direct oppakt als er iets moet veranderen.`;
+  const paraPartnership = `Het concept staat al. Dat is het startpunt. Samen bouwen we daar verder op tot het precies bij ${you.yourPossessive} studio past, we gaan de goede kant op. Ik bouw alles zelf en blijf ${you.yourPossessive} vaste contact. Voor €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw heb je iemand die met je meedenkt, elke maand doorwerkt op Google en direct oppakt als er iets moet veranderen.`;
   fixed_parts.push("partnership");
 
   let paraLanding = "";
@@ -131,8 +142,6 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   if (slots.relevant_service) ai_parts.push("relevant_service");
 
   const body_text = [
-    open,
-    "",
     paraOpener,
     "",
     paraConcept,
