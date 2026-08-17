@@ -21,8 +21,12 @@ interface LgePayBlockProps {
   packageId: VerticalInterestId;
   name: string;
   email: string;
+  city: string;
   businessName: string;
   campaignRef: string | null;
+  phone?: string;
+  bookingNeed?: string;
+  message?: string;
   onPayStart?: () => void;
   variant?: "default" | "express" | "checkout";
 }
@@ -32,8 +36,12 @@ export function LgePayBlock({
   packageId,
   name,
   email,
+  city,
   businessName,
   campaignRef,
+  phone,
+  bookingNeed,
+  message,
   onPayStart,
   variant = "default",
 }: LgePayBlockProps) {
@@ -70,6 +78,12 @@ export function LgePayBlock({
       return;
     }
 
+    if (city.trim().length < 1) {
+      setPayStatus("error");
+      setPayError("Vul je plaats in.");
+      return;
+    }
+
     setPayStatus("loading");
     setPayError(null);
     onPayStart?.();
@@ -80,7 +94,11 @@ export function LgePayBlock({
         packageId: checkoutPackageId,
         name: trimmedName,
         email: trimmedEmail,
+        city: city.trim(),
         businessName: businessName.trim() || undefined,
+        phone: phone?.trim() || undefined,
+        bookingNeed: bookingNeed?.trim() || "unsure",
+        message: message?.trim() || undefined,
         campaignRef,
       });
       window.location.href = checkoutUrl;

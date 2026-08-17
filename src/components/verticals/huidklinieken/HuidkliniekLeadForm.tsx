@@ -321,6 +321,7 @@ export function HuidkliniekLeadForm({
         packageId={interest}
         name={clinicName}
         email={email}
+        city={city}
         businessName={clinicName}
         campaignRef={campaignRef}
         onPayStart={markStart}

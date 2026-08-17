@@ -7,7 +7,11 @@ export interface StartLgeCheckoutInput {
   packageId: VerticalPackageId;
   email: string;
   name: string;
+  city: string;
   businessName?: string;
+  phone?: string;
+  bookingNeed?: string;
+  message?: string;
   campaignRef?: string | null;
 }
 
@@ -27,7 +31,11 @@ export async function startLgeCheckout(
       packageId: input.packageId,
       email: input.email,
       name: input.name,
+      city: input.city,
       businessName: input.businessName,
+      phone: input.phone,
+      bookingNeed: input.bookingNeed,
+      message: input.message,
       campaignRef: input.campaignRef ?? undefined,
     }),
   });

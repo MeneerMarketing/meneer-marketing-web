@@ -411,6 +411,10 @@ export function PilatesLeadForm({
               packageId={interest}
               name={studioName}
               email={email}
+              city={city}
+              phone={phone}
+              bookingNeed={bookingNeed}
+              message={message}
               businessName={studioName}
               campaignRef={campaignRef}
               onPayStart={markStart}

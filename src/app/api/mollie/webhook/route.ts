@@ -21,14 +21,6 @@ function mapMollieStatus(status: string): string {
   }
 }
 
-function readMetadataString(metadata: unknown, key: string): string | null {
-  if (!metadata || typeof metadata !== "object") {
-    return null;
-  }
-  const value = (metadata as Record<string, unknown>)[key];
-  return typeof value === "string" && value.trim().length > 0 ? value : null;
-}
-
 export async function POST(req: NextRequest): Promise<NextResponse> {
   if (!isMollieConfigured()) {
     return NextResponse.json({ ok: false }, { status: 503 });
@@ -72,8 +64,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       });
     }
 
-    const submissionId = readMetadataString(payment.metadata, "submission_id");
-    if (submissionId && isLgeSupabaseConfigured()) {
+    if (isLgeSupabaseConfigured()) {
       const legacyPayment = await getMolliePayment(trimmedId);
       await updateCommercePaymentFromMollie({
         molliePaymentId: legacyPayment.id,
