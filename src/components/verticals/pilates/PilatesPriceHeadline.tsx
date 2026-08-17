@@ -12,14 +12,14 @@ import { PRICE_EXCL_BTW_LABEL } from "@/lib/verticals/vat";
 const ROTATING = ["betaalt", "krijgt", "snapt"] as const;
 const LONGEST = ROTATING.reduce((a, b) => (b.length > a.length ? b : a));
 
-const TICKER = [
-  "Website in jouw branding",
-  "Lokale SEO",
-  "Hosting inbegrepen",
-  "Domeinnaam inbegrepen",
-  "Klein onderhoud",
-  "6 dagen per week remote",
-  "Maandelijks opzegbaar",
+const INCLUSION_STICKERS = [
+  { label: "Website in jouw branding", tilt: -2 },
+  { label: "Lokale SEO", tilt: 1.5 },
+  { label: "Hosting inbegrepen", tilt: -1 },
+  { label: "Domeinnaam inbegrepen", tilt: 2 },
+  { label: "Klein onderhoud", tilt: -1.5 },
+  { label: "6 dagen per week remote", tilt: 1 },
+  { label: "Maandelijks opzegbaar", tilt: -0.5 },
 ] as const;
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -192,34 +192,24 @@ export function PilatesPriceHeadline({
         </span>
       </h2>
 
-      <div
-        className="relative mt-8 overflow-hidden rounded-2xl border border-slate-200/80 bg-white/70 py-3 backdrop-blur-sm"
-        aria-hidden
-      >
-        <div
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-white/90 to-transparent"
-          aria-hidden
-        />
-        <div
-          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-white/90 to-transparent"
-          aria-hidden
-        />
-        <motion.div
-          className="flex w-max gap-8 whitespace-nowrap"
-          animate={reduce ? undefined : { x: ["0%", "-50%"] }}
-          transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
-          style={{ willChange: "transform" }}
-        >
-          {[...TICKER, ...TICKER].map((item, i) => (
-            <span
-              key={`${item}-${i}`}
-              className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500"
+      <div className="mt-8 rounded-2xl border border-dashed border-slate-200 bg-[#fffef9] p-4 sm:p-5">
+        <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-400">
+          Standaard in elk pakket
+        </p>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          {INCLUSION_STICKERS.map((item) => (
+            <li
+              key={item.label}
+              className="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-bold text-slate-700 shadow-[0_4px_12px_-8px_rgba(15,23,42,0.25)] transition hover:-translate-y-0.5 hover:border-[#FF5722]/35 hover:text-[#FF5722]"
+              style={{ transform: `rotate(${item.tilt}deg)` }}
             >
-              <span className="size-1.5 rounded-full bg-[#FF5722]" aria-hidden />
-              {item}
-            </span>
+              {item.label}
+            </li>
           ))}
-        </motion.div>
+        </ul>
+        <p className="mt-3 text-xs italic leading-relaxed text-slate-500">
+          Geen asterisk naar pagina 47. Alles staat op de bon hiernaast.
+        </p>
       </div>
     </div>
   );
