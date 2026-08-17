@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowUpRight, Sparkles, Store } from "lucide-react";
+import { ArrowUpRight, Store, TrendingUp } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -157,17 +157,6 @@ export function PilatesStudioExperience() {
                 }
                 transition={{ duration: 0.35 }}
               >
-                <div
-                  className="pointer-events-none absolute inset-0 opacity-40"
-                  aria-hidden
-                  style={{
-                    background:
-                      active === "me"
-                        ? "radial-gradient(ellipse 70% 50% at 80% 10%, rgba(255,87,34,0.35), transparent 55%)"
-                        : "radial-gradient(ellipse 50% 40% at 90% 0%, rgba(255,87,34,0.18), transparent 50%)",
-                  }}
-                />
-
                 <div className="relative flex items-start justify-between gap-4">
                   <div>
                     <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-orange-300">
@@ -178,7 +167,7 @@ export function PilatesStudioExperience() {
                     </h3>
                   </div>
                   <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF5722]/15 text-[#FF5722] ring-1 ring-[#FF5722]/30">
-                    <Sparkles className="size-5" aria-hidden />
+                    <TrendingUp className="size-5" aria-hidden />
                   </span>
                 </div>
 
