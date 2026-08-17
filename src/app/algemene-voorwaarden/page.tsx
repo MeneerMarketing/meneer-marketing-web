@@ -36,7 +36,11 @@ export default function VoorwaardenPage() {
           opdracht verstrekt. <strong>Diensten</strong>: alle werkzaamheden die
           MeneerMarketing uitvoert, zoals beschreven in de offerte of
           overeenkomst, waaronder webontwikkeling, design, marketing en
-          strategie.
+          strategie.{" "}
+          <strong>Abonnementspakketten</strong>: doorlopende pakketten zoals
+          Studio Edition, Clinic Edition, Local Growth en Growth Partner, waarbij
+          een maandelijks bedrag geldt voor het gebruik van een website en
+          bijbehorende diensten.
         </p>
 
         <h2>Artikel 2. Toepasselijkheid</h2>
@@ -113,13 +117,56 @@ export default function VoorwaardenPage() {
           betaalde perioden worden niet naar rato gerestitueerd, tenzij
           schriftelijk anders overeengekomen.
         </p>
+        <h3 id="abonnement-website-beheer">
+          Beheer website bij abonnementspakketten
+        </h3>
+        <p>
+          Abonnementspakketten zijn bedoeld als doorlopend gebruik van een
+          website en bijbehorende diensten. Dit is geen koop of verkoop van een
+          website. Bij deze pakketten beheert MeneerMarketing de website,
+          hosting, technische infrastructuur en onderliggende code. De
+          Opdrachtgever krijgt een gebruiksrecht zolang het abonnement loopt en
+          betalingen op tijd binnen zijn.
+        </p>
+        <p>
+          Bij opzegging of beëindiging van het abonnement eindigt dat
+          gebruiksrecht. De website gaat offline of wordt buiten gebruik
+          gesteld. Er vindt geen overdracht plaats van bestanden, broncode,
+          design, databases of hosting naar de Opdrachtgever, tenzij partijen
+          vooraf schriftelijk een afkoop of migratie tegen een apart tarief
+          hebben afgesproken.
+        </p>
+        <p>
+          Wil je de website volledig in eigen beheer? Dat kan via een eenmalig
+          project of Signature Custom, met andere afspraken over oplevering en
+          eigendom. Die route staat los van de maandelijkse
+          abonnementspakketten.
+        </p>
+        <p>
+          Een domeinnaam die op naam van de Opdrachtgever staat, blijft
+          eigendom van de Opdrachtgever. Een domeinnaam die via het pakket door
+          MeneerMarketing wordt geregistreerd of beheerd, wordt na
+          beëindiging behandeld volgens de offerte of het aanbod. Overdracht of
+          vrijgave van alleen het domein betekent niet dat de volledige website
+          wordt overgedragen.
+        </p>
 
         <h2>Artikel 7. Intellectueel eigendom</h2>
         <p>
-          Na volledige betaling gaan de rechten op het specifiek voor de
-          Opdrachtgever gemaakte werk over op de Opdrachtgever, tenzij in de
-          offerte anders is afgesproken. Open-sourcecomponenten en
-          standaardsoftware blijven onder hun eigen licenties vallen.
+          Voor <strong>abonnementspakketten</strong> geldt artikel 6a. Daar
+          blijft intellectueel eigendom en technisch beheer bij
+          MeneerMarketing. De Opdrachtgever heeft alleen gebruiksrecht zolang het
+          abonnement loopt.
+        </p>
+        <p>
+          Voor eenmalige projecten, maatwerkopdrachten en andere opdrachten
+          waarbij volledige oplevering is overeengekomen: na volledige betaling
+          gaan de rechten op het specifiek voor de Opdrachtgever gemaakte werk
+          over op de Opdrachtgever, tenzij in de offerte anders is afgesproken.
+          Open-sourcecomponenten en standaardsoftware blijven onder hun eigen
+          licenties vallen.
+        </p>
+        <p>
           MeneerMarketing mag opgeleverd werk gebruiken als referentie in
           portfolio en marketinguitingen, tenzij de Opdrachtgever daar
           schriftelijk bezwaar tegen maakt.
@@ -155,6 +202,12 @@ export default function VoorwaardenPage() {
           ingang beëindigen bij faillissement, surseance of ernstige
           wanprestatie van de andere partij. Al uitgevoerde werkzaamheden worden
           bij beëindiging naar rato afgerekend.
+        </p>
+        <p>
+          Bij beëindiging van een abonnementspakket geldt tevens artikel 6a:
+          het gebruiksrecht op de website eindigt en MeneerMarketing zet de site
+          offline of buiten gebruik, zonder overdracht van code of hosting,
+          tenzij schriftelijk anders overeengekomen.
         </p>
 
         <h2>Artikel 11. Overmacht</h2>
