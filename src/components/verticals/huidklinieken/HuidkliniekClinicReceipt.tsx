@@ -17,6 +17,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 interface HuidkliniekClinicReceiptProps {
   packageId: VerticalPackageId;
+  variant?: "preview" | "submitted";
 }
 
 function ReceiptTearEdge({ flip }: { flip?: boolean }) {
@@ -61,7 +62,9 @@ function FakeBarcode() {
 
 export function HuidkliniekClinicReceipt({
   packageId,
+  variant = "preview",
 }: HuidkliniekClinicReceiptProps) {
+  const submitted = variant === "submitted";
   const reduce = useReducedMotion();
   const pkg = getHuidkliniekPackageById(packageId);
   const items = getHuidkliniekReceiptLines(packageId);
@@ -88,9 +91,9 @@ export function HuidkliniekClinicReceipt({
           aria-hidden
         >
           <div className="rounded-sm border-2 border-[#FF5722]/40 bg-[#FF5722]/10 px-3 py-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[#FF5722] shadow-sm backdrop-blur-sm">
-            Betaald
+            {submitted ? "Aangevraagd" : "Betaald"}
             <span className="mt-0.5 block text-[8px] font-semibold tracking-[0.2em] text-[#FF5722]/70">
-              met vertrouwen
+              {submitted ? "in mijn inbox" : "met vertrouwen"}
             </span>
           </div>
         </div>
@@ -246,9 +249,11 @@ export function HuidkliniekClinicReceipt({
         />
       </motion.div>
 
-      <p className="mt-6 text-center text-xs text-slate-500">
-        Tik een pakket hierboven. De bon groeit mee. Alle bedragen ex. btw.
-      </p>
+      {submitted ? null : (
+        <p className="mt-6 text-center text-xs text-slate-500">
+          Tik een pakket hierboven. De bon groeit mee. Alle bedragen ex. btw.
+        </p>
+      )}
     </div>
   );
 }

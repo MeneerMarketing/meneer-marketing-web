@@ -1,18 +1,20 @@
 ﻿"use client";
 
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { HUIDKLINIEKEN_VERTICAL } from "@/data/verticals/huidklinieken";
-import { packageIdToKey } from "@/lib/lge/package-map";
 import { trackCampaignEvent } from "@/lib/lge/track-client";
-import { submitContactForm } from "@/lib/contact-submission";
+import { submitVerticalInbound } from "@/lib/verticals/submit-inbound";
+import { buildThankYouUrl } from "@/lib/verticals/thank-you-url";
 import { trackHuidkliniekEvent } from "@/lib/verticals/analytics";
 import {
   formatVerticalMoney,
   getActiveLaunchPromo,
+  resolveLaunchAmountCents,
 } from "@/lib/verticals/format-price";
 
 const INTEREST_OPTIONS: {
@@ -66,6 +68,7 @@ interface HuidkliniekLeadFormProps {
   campaignRef: string | null;
   selectedInterest?: VerticalInterestId;
   onInterestChange?: (interest: VerticalInterestId) => void;
+  onSubmitted?: () => void;
 }
 
 export function HuidkliniekLeadForm({
@@ -73,7 +76,9 @@ export function HuidkliniekLeadForm({
   campaignRef,
   selectedInterest,
   onInterestChange,
+  onSubmitted,
 }: HuidkliniekLeadFormProps) {
+  const router = useRouter();
   const started = useRef(false);
   const promo = getActiveLaunchPromo(HUIDKLINIEKEN_VERTICAL.pricing);
 
@@ -89,11 +94,10 @@ export function HuidkliniekLeadForm({
     selectedInterest ?? "unsure",
   );
   const [honeypot, setHoneypot] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">(
-    "idle",
-  );
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "redirecting" | "error"
+  >("idle");
   const [error, setError] = useState<string | null>(null);
-  const [mailtoHref, setMailtoHref] = useState<string | undefined>();
 
   useEffect(() => {
     if (personalization?.businessName) {
@@ -131,80 +135,54 @@ export function HuidkliniekLeadForm({
     e.preventDefault();
     setStatus("loading");
     setError(null);
-    setMailtoHref(undefined);
 
-    const name = clinicName.trim() || "Huidkliniek";
-    const interestLabel =
-      INTEREST_OPTIONS.find((o) => o.id === interest)?.label ?? interest;
-    const bookingLabel =
-      BOOKING_OPTIONS.find((o) => o.id === bookingNeed)?.label ?? bookingNeed;
-
-    const bodyLines = [
-      "Aanvraag via meneermarketing.nl/huidklinieken",
-      "",
-      `Kliniek: ${clinicName.trim()}`,
-      `Plaats: ${city.trim()}`,
-      `E-mail: ${email.trim()}`,
-      `Telefoon: ${phone.trim() || "n.v.t."}`,
-      `Boeken: ${bookingLabel}`,
-      `Interesse: ${interestLabel}`,
-      promo?.active ? `Launch promo: ${promo.badge}` : null,
-      campaignRef ? "Campaign: gekoppeld" : "Campaign: geen",
-      "",
-      "Situatie / vraag:",
-      message.trim() || "n.v.t.",
-    ].filter((line): line is string => line !== null);
-
-    const result = await submitContactForm({
+    const result = await submitVerticalInbound({
       source: "huidklinieken",
-      subject: `[Huidklinieken] ${clinicName.trim() || "Nieuwe kliniek"} · ${city.trim() || "plaats onbekend"}`,
-      replyToEmail: email.trim(),
-      replyToName: name,
-      body: bodyLines.join("\n"),
+      studioName: clinicName.trim(),
+      city: city.trim(),
+      email: email.trim(),
+      phone: phone.trim() || undefined,
+      interest,
+      bookingNeed,
+      message: message.trim() || undefined,
+      campaignRef,
+      launchPromoActive: Boolean(promo?.active),
+      launchAmountCents: resolveLaunchAmountCents(HUIDKLINIEKEN_VERTICAL.pricing),
       companyWebsite: honeypot,
     });
 
     if (result.ok) {
-      setStatus("ok");
+      setStatus("redirecting");
+      onSubmitted?.();
       trackHuidkliniekEvent("huidkliniek_contact_submit", {
         interest,
         has_ref: Boolean(campaignRef),
         booking_need: bookingNeed,
       });
-
-      if (campaignRef) {
-        const pkg = packageIdToKey(interest);
-        void trackCampaignEvent(
+      router.push(
+        buildThankYouUrl("huidklinieken", {
+          submissionId: result.submissionId,
+          studioName: clinicName.trim(),
+          city: city.trim(),
+          interest,
           campaignRef,
-          "CONTACT_SUBMITTED",
-          {
-            path: "/huidklinieken",
-            section: "aanvraag",
-            ...(pkg ? { package: pkg } : {}),
-          },
-          `CONTACT_SUBMITTED:${campaignRef}:${email.trim().toLowerCase()}`,
-        ).catch(() => {
-          console.warn(
-            "[lge] CONTACT_SUBMITTED tracking failed after MM success",
-          );
-        });
-      }
+          launchAmountCents: result.launchAmountCents,
+          paymentRequired: result.paymentRequired,
+          paymentStatus: result.paymentStatus,
+        }),
+      );
       return;
     }
 
     setStatus("error");
     setError(result.error);
-    setMailtoHref(result.mailtoHref);
   }
 
-  if (status === "ok") {
+  if (status === "redirecting") {
     return (
-      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-sm leading-relaxed text-emerald-900">
-        <p className="font-extrabold text-emerald-950">Binnen. Nice.</p>
-        <p className="mt-1.5">
-          Ik lees je aanvraag en neem contact op. Rechtstreeks, meestal snel.
-        </p>
-      </div>
+      <p className="text-center text-sm text-slate-600">
+        Even doorsturen naar je bevestiging…
+      </p>
     );
   }
 
@@ -324,6 +302,7 @@ export function HuidkliniekLeadForm({
         city={city}
         businessName={clinicName}
         campaignRef={campaignRef}
+        bookingNeed={bookingNeed}
         onPayStart={markStart}
       />
 
@@ -374,12 +353,7 @@ export function HuidkliniekLeadForm({
 
       {error ? (
         <p className="text-sm text-rose-700" role="alert">
-          {error}{" "}
-          {mailtoHref ? (
-            <a href={mailtoHref} className="font-bold underline">
-              Mail direct
-            </a>
-          ) : null}
+          {error}
         </p>
       ) : null}
 

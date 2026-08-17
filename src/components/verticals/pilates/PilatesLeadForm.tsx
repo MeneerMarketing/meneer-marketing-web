@@ -1,6 +1,7 @@
 "use client";
 
 import { MessageCircle, Rocket, ShieldCheck } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
@@ -12,8 +13,8 @@ import { PILATES_VERTICAL } from "@/data/verticals/pilates";
 import { trackCampaignEvent } from "@/lib/lge/track-client";
 import { isCheckoutPackageId } from "@/lib/mollie/checkout-eligible";
 import { useMollieCheckoutEnabled } from "@/lib/mollie/use-mollie-checkout-enabled";
-import { VerticalLeadSuccess } from "@/components/verticals/VerticalLeadSuccess";
 import { submitVerticalInbound } from "@/lib/verticals/submit-inbound";
+import { buildThankYouUrl } from "@/lib/verticals/thank-you-url";
 import { trackPilatesEvent } from "@/lib/verticals/analytics";
 import {
   formatVerticalMoney,
@@ -79,6 +80,7 @@ interface PilatesLeadFormProps {
   campaignRef: string | null;
   selectedInterest?: VerticalInterestId;
   onInterestChange?: (interest: VerticalInterestId) => void;
+  onSubmitted?: () => void;
 }
 
 export function PilatesLeadForm({
@@ -86,7 +88,9 @@ export function PilatesLeadForm({
   campaignRef,
   selectedInterest,
   onInterestChange,
+  onSubmitted,
 }: PilatesLeadFormProps) {
+  const router = useRouter();
   const started = useRef(false);
   const promo = getActiveLaunchPromo(PILATES_VERTICAL.pricing);
   const checkoutEnabled = useMollieCheckoutEnabled();
@@ -104,15 +108,9 @@ export function PilatesLeadForm({
   );
   const [intent, setIntent] = useState<FormIntent>("pay");
   const [honeypot, setHoneypot] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">(
+  const [status, setStatus] = useState<"idle" | "loading" | "redirecting" | "error">(
     "idle",
   );
-  const [successMeta, setSuccessMeta] = useState<{
-    submissionId: string | null;
-    launchAmountCents: number;
-    paymentRequired: boolean;
-    paymentStatus: "none" | "waived" | "pending" | "paid" | "failed";
-  } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const payEligible = checkoutEnabled && isCheckoutPackageId(interest);
@@ -176,18 +174,25 @@ export function PilatesLeadForm({
     });
 
     if (result.ok) {
-      setStatus("ok");
-      setSuccessMeta({
-        submissionId: result.submissionId,
-        launchAmountCents: result.launchAmountCents,
-        paymentRequired: result.paymentRequired,
-        paymentStatus: result.paymentStatus,
-      });
+      setStatus("redirecting");
+      onSubmitted?.();
       trackPilatesEvent("pilates_contact_submit", {
         interest,
         has_ref: Boolean(campaignRef),
         booking_need: bookingNeed,
       });
+      router.push(
+        buildThankYouUrl("pilates-studios", {
+          submissionId: result.submissionId,
+          studioName: studioName.trim(),
+          city: city.trim(),
+          interest,
+          campaignRef,
+          launchAmountCents: result.launchAmountCents,
+          paymentRequired: result.paymentRequired,
+          paymentStatus: result.paymentStatus,
+        }),
+      );
       return;
     }
 
@@ -195,28 +200,10 @@ export function PilatesLeadForm({
     setError(result.error);
   }
 
-  if (status === "ok" && successMeta) {
+  if (status === "redirecting") {
     return (
-      <div className="p-6 sm:p-8">
-        <VerticalLeadSuccess
-          submissionId={successMeta.submissionId}
-          launchAmountCents={successMeta.launchAmountCents}
-          paymentRequired={successMeta.paymentRequired}
-          paymentStatus={successMeta.paymentStatus}
-        />
-      </div>
-    );
-  }
-
-  if (status === "ok") {
-    return (
-      <div className="p-6 sm:p-8">
-        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-sm leading-relaxed text-emerald-900">
-          <p className="font-extrabold text-emerald-950">Binnen. Nice.</p>
-          <p className="mt-1.5">
-            Ik lees je aanvraag en neem contact op. Rechtstreeks, meestal snel.
-          </p>
-        </div>
+      <div className="p-6 sm:p-8 text-center text-sm text-slate-600">
+        Even doorsturen naar je bevestiging…
       </div>
     );
   }

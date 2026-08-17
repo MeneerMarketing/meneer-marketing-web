@@ -1,5 +1,7 @@
 ﻿"use client";
 
+import { useState } from "react";
+
 import { ArrowUpRight } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -33,6 +35,8 @@ export function HuidkliniekFinalCta({
   selectedInterest,
   onInterestChange,
 }: HuidkliniekFinalCtaProps) {
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <section
       id="aanvraag"
@@ -112,19 +116,28 @@ export function HuidkliniekFinalCta({
 
           <Reveal delay={0.06} className="h-full">
             <div className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-5 text-slate-900 shadow-[0_28px_70px_rgba(0,0,0,0.35)] sm:p-6">
-              <h3 className="text-lg font-extrabold tracking-tight">
-                Start direct of stuur je kliniek door
-              </h3>
-              <p className="mt-1 text-sm text-slate-500">
-                Kies je pakket, vul kliniek + e-mail in. Betalen via iDEAL of
-                eerst contact opnemen.
-              </p>
+              {!submitted ? (
+                <>
+                  <h3 className="text-lg font-extrabold tracking-tight">
+                    Start direct of stuur je kliniek door
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-500">
+                    Kies je pakket, vul kliniek + e-mail in. Betalen via iDEAL of
+                    eerst contact opnemen.
+                  </p>
+                </>
+              ) : (
+                <h3 className="text-lg font-extrabold tracking-tight">
+                  Bedankt voor je aanvraag
+                </h3>
+              )}
               <div className="mt-4 flex-1">
                 <HuidkliniekLeadForm
                   personalization={personalization}
                   campaignRef={campaignRef}
                   selectedInterest={selectedInterest}
                   onInterestChange={onInterestChange}
+                  onSubmitted={() => setSubmitted(true)}
                 />
               </div>
             </div>

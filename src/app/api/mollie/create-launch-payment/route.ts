@@ -62,13 +62,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const base = siteBaseUrl();
     const returnPath =
       submission.source === "huidklinieken"
-        ? "/huidklinieken"
-        : "/pilates-studios";
+        ? "/huidklinieken/bedankt"
+        : "/pilates-studios/bedankt";
 
     const payment = await createMolliePayment({
       amountCents,
       description: `Launch fee · ${submission.studio_name}`.slice(0, 255),
-      redirectUrl: `${base}${returnPath}?payment=return&submission=${submission.id}`,
+      redirectUrl: `${base}${returnPath}?betaald=1&submission=${submission.id}`,
       webhookUrl: `${base}/api/mollie/webhook`,
       metadata: {
         submission_id: submission.id,

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -31,6 +32,7 @@ interface PageProps {
     ref?: string | string[];
     checkout?: string | string[];
     payment?: string | string[];
+    submission?: string | string[];
   }>;
 }
 
@@ -38,16 +40,18 @@ export default async function HuidkliniekenPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const rawRef = Array.isArray(params.ref) ? params.ref[0] : params.ref;
   const { ref, personalization } = await resolveCampaignRef(rawRef);
-  const checkout = Array.isArray(params.checkout)
-    ? params.checkout[0]
-    : params.checkout;
   const rawPayment = Array.isArray(params.payment)
     ? params.payment[0]
     : params.payment;
-  const checkoutPaymentId =
-    checkout === "bedankt" && rawPayment && rawPayment !== "pending"
-      ? rawPayment
-      : null;
+  const submissionId = Array.isArray(params.submission)
+    ? params.submission[0]
+    : params.submission;
+
+  if (rawPayment === "return" && submissionId) {
+    redirect(
+      `/huidklinieken/bedankt?betaald=1&submission=${encodeURIComponent(submissionId)}`,
+    );
+  }
 
   return (
     <>
@@ -66,7 +70,7 @@ export default async function HuidkliniekenPage({ searchParams }: PageProps) {
           serviceJsonLd({
             name: "Website, Maps en intake-marketing voor huidklinieken",
             description:
-              "Custom website voor huid- en cosmetische klinieken, lokale SEO, Google Business Profile en pad naar intake. Clinic Edition, Local Growth of Growth Partner. Eén partner per stad.",
+              "Custom website voor huid- en cosmetische klinieken, lokale SEO, Google Business Profile en pad naar intake. Clinic Edition, Local Growth of Growth Partner.",
             path: PAGE_PATH,
             areaServed: "Nederland",
           }),
@@ -82,7 +86,6 @@ export default async function HuidkliniekenPage({ searchParams }: PageProps) {
       <HuidkliniekenView
         personalization={personalization}
         campaignRef={ref}
-        checkoutPaymentId={checkoutPaymentId}
       />
       <SiteFooter />
     </>
