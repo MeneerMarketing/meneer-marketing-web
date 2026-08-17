@@ -398,6 +398,20 @@ export function getCaseLinkForArticle(articleSlug: string): CaseLinkItem | null 
   };
 }
 
+/** Commerciële branche-landings (niet /zoeken/). Sitebreed in footer + topical authority. */
+export const VERTICAL_LANDING_LINKS: readonly InternalLinkItem[] = [
+  {
+    href: "/pilates-studios",
+    label: "Pilates studio's",
+    hint: "Pilates website laten maken, SEO en marketing",
+  },
+  {
+    href: "/huidklinieken",
+    label: "Huidklinieken",
+    hint: "Website en lokale vindbaarheid voor klinieken",
+  },
+] as const;
+
 export const HOME_PILLAR_LINKS: readonly {
   slug: PillarSlug;
   label: string;

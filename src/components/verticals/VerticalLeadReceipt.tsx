@@ -33,7 +33,7 @@ export function VerticalLeadReceipt({
   return (
     <div className="space-y-4">
       {businessName ? (
-        <p className="text-center text-xs font-semibold text-emerald-800">
+        <p className="text-center text-xs font-semibold text-slate-600">
           {businessName}
           {city ? ` · ${city}` : ""}
         </p>
@@ -44,7 +44,7 @@ export function VerticalLeadReceipt({
         <HuidkliniekClinicReceipt packageId={packageId} variant="submitted" />
       )}
       {indicative ? (
-        <p className="text-center text-xs leading-relaxed text-emerald-800/80">
+        <p className="text-center text-xs leading-relaxed text-slate-500">
           Pakket indicatief op je aanvraag. Ik bevestig het juiste plan bij contact.
         </p>
       ) : null}

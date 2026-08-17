@@ -7,7 +7,7 @@ import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/cont
 import { siteCtaList, siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
-import { TOP_ZOEKEN_HUB_LINKS } from "@/lib/seo/internal-links";
+import { TOP_ZOEKEN_HUB_LINKS, VERTICAL_LANDING_LINKS } from "@/lib/seo/internal-links";
 
 const FOOTER_MAIN_CTAS = siteCtaList.filter((cta) => cta.href !== siteCtas.contact.href);
 
@@ -20,6 +20,7 @@ const FOOTER_DIENSTEN = {
 
 const FOOTER_NAV = [
   { href: "/cases", label: "Cases" },
+  { href: "/meter", label: "De Meneer Meter" },
   { href: "/over", label: "Over" },
   { href: "/kennisbank", label: "Kennisbank" },
   { href: "/zoeken", label: "Zoeken" },
@@ -42,7 +43,7 @@ export function SiteFooter() {
       className="border-t border-slate-800 bg-mm-footer-bg text-white"
     >
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        {/* CTA — mobiel */}
+        {/* CTA · mobiel */}
         <div className="rounded-2xl border border-slate-600/80 bg-slate-800/90 p-4 sm:p-8 lg:hidden">
           <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-sky-300/90 sm:text-xs sm:tracking-[0.2em]">
             Klaar voor de volgende stap?
@@ -77,7 +78,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* CTA — desktop (origineel) */}
+        {/* CTA · desktop (origineel) */}
         <div className="hidden rounded-2xl border border-slate-600/80 bg-slate-800/90 p-6 sm:p-8 lg:block">
           <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-sky-300/90">
             Klaar voor de volgende stap?
@@ -99,7 +100,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Hoofdgrid — mobiel */}
+        {/* Hoofdgrid · mobiel */}
         <div className="mt-8 grid grid-cols-2 gap-x-5 gap-y-7 sm:gap-x-8 lg:hidden">
           <div className="col-span-2">
             <Logo variant="light" />
@@ -148,6 +149,21 @@ export function SiteFooter() {
             </ul>
           </div>
 
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">
+              Branches
+            </p>
+            <ul className="mt-3 space-y-2.5 text-sm font-medium text-slate-200">
+              {VERTICAL_LANDING_LINKS.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-sky-300" prefetch={false}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="col-span-2">
             <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:text-xs">
               Veelgezocht
@@ -168,8 +184,8 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Hoofdgrid — desktop (origineel) */}
-        <div className="mt-12 hidden gap-10 lg:grid lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        {/* Hoofdgrid · desktop (origineel) */}
+        <div className="mt-12 hidden gap-8 lg:grid lg:grid-cols-[1.15fr_0.85fr_0.85fr_0.85fr_1fr]">
           <div>
             <Logo variant="light" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed tracking-tight text-mm-footer-muted">
@@ -212,6 +228,23 @@ export function SiteFooter() {
                   Alle zoekpagina&apos;s
                 </Link>
               </li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
+              Branches
+            </p>
+            <ul className="mt-4 space-y-2 text-sm font-medium text-slate-200">
+              {VERTICAL_LANDING_LINKS.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-sky-300" prefetch={false}>
+                    {item.label}
+                  </Link>
+                  {item.hint ? (
+                    <span className="mt-0.5 block text-xs text-mm-footer-muted">{item.hint}</span>
+                  ) : null}
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -281,7 +314,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Juridisch — mobiel */}
+        {/* Juridisch · mobiel */}
         <nav
           aria-label="Juridisch"
           className="mt-6 flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-1 text-[11px] font-normal text-slate-400 lg:hidden"
@@ -303,7 +336,7 @@ export function SiteFooter() {
           className="mt-8 border-t border-white/10 pt-8 sm:mt-10 lg:hidden"
         />
 
-        {/* Copyright — mobiel */}
+        {/* Copyright · mobiel */}
         <div className="mt-6 flex flex-col items-center gap-2 text-center text-xs text-mm-footer-muted sm:mt-8 lg:hidden">
           <p className="text-slate-400">
             © {new Date().getFullYear()} {BRAND_DISPLAY}. Alle rechten voorbehouden.
@@ -324,7 +357,7 @@ export function SiteFooter() {
           className="mt-12 hidden border-t border-white/10 pt-10 lg:block"
         />
 
-        {/* Copyright — desktop (origineel) */}
+        {/* Copyright · desktop (origineel) */}
         <div className="mt-12 hidden flex-col gap-2 border-t border-white/10 pt-8 text-xs text-mm-footer-muted sm:flex-row sm:items-center sm:justify-between lg:flex">
           <p className="text-slate-400">
             © {new Date().getFullYear()} {BRAND_DISPLAY}. Alle rechten voorbehouden.

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 
-import { VerticalOrderSummary } from "@/components/verticals/VerticalOrderSummary";
+import { VerticalLeadReceipt } from "@/components/verticals/VerticalLeadReceipt";
 import { VerticalLeadSuccess } from "@/components/verticals/VerticalLeadSuccess";
 import type { ThankYouPayload, VerticalThankYouSource } from "@/lib/verticals/thank-you-url";
 import { PILATES_VERTICAL } from "@/data/verticals/pilates";
@@ -67,7 +67,7 @@ export function VerticalThankYouView({
   }
 
   return (
-    <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-20">
+    <div className="mx-auto max-w-lg px-4 py-16 sm:px-6 sm:py-20">
       <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
         {payload.paidReturn ? "Betaling ontvangen" : "Aanvraag ontvangen"}
       </p>
@@ -80,15 +80,19 @@ export function VerticalThankYouView({
           : "Je krijgt een bevestigingsmail. Ik lees je aanvraag zelf en reageer meestal binnen 24 uur."}
       </p>
 
-      <div className="mt-8 space-y-4">
-        <VerticalOrderSummary
+      <div className="mt-8 space-y-5">
+        <VerticalLeadReceipt
           vertical={source}
-          studioName={payload.studioName}
           interest={payload.interest}
-          launchWaived={
-            payload.paymentStatus === "waived" || payload.launchAmountCents < 1
-          }
+          businessName={payload.studioName}
+          city={payload.city}
         />
+
+        {payload.paymentStatus === "waived" ? (
+          <p className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-center text-xs font-semibold text-slate-700">
+            Launch fee staat tijdelijk op €0. Je hoeft nu niets te betalen.
+          </p>
+        ) : null}
 
         {wa ? (
           <a
