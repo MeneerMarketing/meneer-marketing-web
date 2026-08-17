@@ -33,7 +33,7 @@ export const DEFAULT_BRAND_SETTINGS: MeneerMarketingBrandSettings = {
   kvk: process.env.OUTREACH_KVK ?? "42095913",
   from_email: process.env.RESEND_FROM_EMAIL ?? "",
   reply_to: process.env.OUTREACH_REPLY_TO ?? "info@meneermarketing.nl",
-  contact_phone: process.env.OUTREACH_CONTACT_PHONE ?? "",
+  contact_phone: process.env.OUTREACH_CONTACT_PHONE ?? "06 12 93 53 89",
   years_experience: Number(process.env.OUTREACH_YEARS_EXPERIENCE ?? 12),
   years_experience_phrase:
     process.env.OUTREACH_YEARS_EXPERIENCE_PHRASE ??
