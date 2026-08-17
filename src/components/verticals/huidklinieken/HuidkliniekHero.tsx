@@ -62,19 +62,17 @@ export function HuidkliniekHero() {
           </div>
 
           <h1 className="mt-6 text-[1.65rem] font-extrabold leading-[1.08] tracking-tighter sm:text-[2.2rem] lg:text-[2.65rem] lg:leading-[1.06]">
-            <span className="block text-white sm:whitespace-nowrap">
-              Huidkliniek website laten maken.
-            </span>
-            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5 sm:whitespace-nowrap">
+            <span className="block text-white">Huidkliniek website.</span>
+            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5">
               Jij wint die zoekopdracht.
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Zoekopdrachten als huidkliniek plus jouw stad, cosmetische kliniek of
-            laserontharing laten je links liggen als je site traag of generiek voelt.
-            Ik bouw je huidkliniek website from scratch, pak lokale SEO en kliniek
-            marketing aan, en stuur alles op nieuwe intakes die blijven hangen.
+            Huidkliniek website laten maken? Zoekopdrachten als huidkliniek plus jouw stad,
+            cosmetische kliniek of laserontharing laten je links liggen als je site traag of
+            generiek voelt. Ik bouw from scratch, pak lokale SEO en kliniek marketing aan, en
+            stuur alles op nieuwe intakes die blijven hangen.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">

@@ -61,19 +61,17 @@ export function PilatesHero() {
           </div>
 
           <h1 className="mt-6 text-[1.65rem] font-extrabold leading-[1.08] tracking-tighter sm:text-[2.2rem] lg:text-[2.65rem] lg:leading-[1.06]">
-            <span className="block text-white sm:whitespace-nowrap">
-              Pilates website laten maken.
-            </span>
-            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5 sm:whitespace-nowrap">
+            <span className="block text-white">Pilates website.</span>
+            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5">
               Jij wint die zoekopdracht.
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Zoekopdrachten als pilates plus jouw stad, reformer pilates of pilates studio
-            laten je links liggen als je site traag of generiek voelt. Ik bouw je pilates
-            website from scratch, pak lokale SEO en pilates marketing aan, en stuur alles
-            op nieuwe leden die blijven hangen.
+            Pilates website laten maken? Zoekopdrachten als pilates plus jouw stad, reformer
+            pilates of pilates studio laten je links liggen als je site traag of generiek voelt.
+            Ik bouw from scratch, pak lokale SEO en pilates marketing aan, en stuur alles op
+            nieuwe leden die blijven hangen.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
