@@ -58,15 +58,16 @@ export function HuidkliniekLocalSeo() {
               id="Huidkliniek-local-seo-heading"
               className="mt-3 text-3xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.06]"
             >
-              Mooi is leuk.
+              Lokale SEO voor je huidkliniek.
               <span className="text-[#FF5722]">
                 {" "}
                 Gevonden worden vult de agenda.
               </span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Kies een zoekopdracht die jouw toekomstige patiënten intikken. Zo
-              ziet het eruit als de site meewerkt in plaats van tegenwerkt.
+              Zoektermen als huidkliniek plus jouw stad, cosmetische kliniek en
+              laserontharing. Zo ziet het eruit als je huidkliniek website
+              meewerkt in plaats van tegenwerkt.
             </p>
           </div>
         </Reveal>

@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
-import { ArrowUpRight, Sparkles, Store } from "lucide-react";
+import { ArrowUpRight, Store, TrendingUp } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 
 import { Reveal } from "@/components/effects/Reveal";
@@ -24,11 +24,11 @@ const YOU_BEATS = [
 const ME_BEATS = [
   {
     title: "Website",
-    text: "High-end kliniek-look die voelt als jouw merk.",
+    text: "Huidkliniek website from scratch die voelt als jouw kliniek.",
   },
   {
     title: "Lokale Google",
-    text: "Gevonden worden op huidkliniek + jouw stad.",
+    text: "SEO op huidkliniek, cosmetische kliniek en jouw stad.",
   },
   {
     title: "Afspraakflow",
@@ -65,8 +65,9 @@ export function HuidkliniekExperience() {
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
               In de behandelkamer is het al premium. Online moet datzelfde
-              niveau landen. Hover over een kant. Dan zie je precies wie wat
-              doet.
+              niveau landen: huidkliniek website, lokale SEO en kliniek
+              marketing op één lijn. Hover over een kant. Dan zie je precies wie
+              wat doet.
             </p>
           </div>
         </Reveal>
@@ -177,7 +178,7 @@ export function HuidkliniekExperience() {
                     </h3>
                   </div>
                   <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#FF5722]/15 text-[#FF5722] ring-1 ring-[#FF5722]/30">
-                    <Sparkles className="size-5" aria-hidden />
+                    <TrendingUp className="size-5" aria-hidden />
                   </span>
                 </div>
 
@@ -243,10 +244,10 @@ export function HuidkliniekExperience() {
               de kliniek, ik het systeem eromheen. Dan voelt boeken logisch.
             </p>
             <a
-              href="#live-design"
+              href="#aanvraag"
               className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#FF5722]"
             >
-              Bekijk art directions
+              Start met jouw kliniek
               <ArrowUpRight
                 className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden

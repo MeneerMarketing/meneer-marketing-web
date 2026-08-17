@@ -334,6 +334,11 @@ export const HUIDKLINIEKEN_PACKAGE_BY_ID = Object.fromEntries(
 
 export const HUIDKLINIEKEN_RELATED_LINKS = [
   {
+    href: "/pilates-studios",
+    label: "Pilates studio's",
+    hint: "Zelfde Local Growth Engine, andere branche",
+  },
+  {
     href: "/diensten/local-seo",
     label: "Lokale SEO",
     hint: "Stad, Maps, Google Business",

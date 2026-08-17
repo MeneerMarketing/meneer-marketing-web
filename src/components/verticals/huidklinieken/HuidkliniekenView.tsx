@@ -4,19 +4,21 @@ import { useEffect, useState } from "react";
 
 import { LgeCheckoutThankYou } from "@/components/verticals/LgeCheckoutThankYou";
 import { LgeFloatingContact } from "@/components/verticals/LgeFloatingContact";
+import { HuidkliniekBookingApp } from "@/components/verticals/huidklinieken/HuidkliniekBookingApp";
 import { HuidkliniekCampaignBar } from "@/components/verticals/huidklinieken/HuidkliniekCampaignBar";
 import { HuidkliniekCampaignTracker } from "@/components/verticals/huidklinieken/HuidkliniekCampaignTracker";
-import { HuidkliniekExclusivity } from "@/components/verticals/huidklinieken/HuidkliniekExclusivity";
+import { HuidkliniekCase } from "@/components/verticals/huidklinieken/HuidkliniekCase";
+import { HuidkliniekExperience } from "@/components/verticals/huidklinieken/HuidkliniekExperience";
 import { HuidkliniekFaq } from "@/components/verticals/huidklinieken/HuidkliniekFaq";
 import { HuidkliniekFinalCta } from "@/components/verticals/huidklinieken/HuidkliniekFinalCta";
-import { HuidkliniekFriction } from "@/components/verticals/huidklinieken/HuidkliniekFriction";
+import { HuidkliniekGoogleStrategy } from "@/components/verticals/huidklinieken/HuidkliniekGoogleStrategy";
 import { HuidkliniekHero } from "@/components/verticals/huidklinieken/HuidkliniekHero";
 import { HuidkliniekHowItWorks } from "@/components/verticals/huidklinieken/HuidkliniekHowItWorks";
-import { HuidkliniekIntent } from "@/components/verticals/huidklinieken/HuidkliniekIntent";
 import { HuidkliniekInternalLinks } from "@/components/verticals/huidklinieken/HuidkliniekInternalLinks";
-import { HuidkliniekLiveDesign } from "@/components/verticals/huidklinieken/HuidkliniekLiveDesign";
+import { HuidkliniekLocalSeo } from "@/components/verticals/huidklinieken/HuidkliniekLocalSeo";
 import { HuidkliniekPricing } from "@/components/verticals/huidklinieken/HuidkliniekPricing";
 import { HuidkliniekSignatureCustom } from "@/components/verticals/huidklinieken/HuidkliniekSignatureCustom";
+import { HuidkliniekWhyPrice } from "@/components/verticals/huidklinieken/HuidkliniekWhyPrice";
 import type {
   VerticalCampaignPersonalization,
   VerticalInterestId,
@@ -29,11 +31,6 @@ interface HuidkliniekenViewProps {
   checkoutPaymentId?: string | null;
 }
 
-/**
- * Unique clinic page architecture (not a Pilates section clone):
- * Hero → Friction → Intent → Live design → Pricing → Exclusivity →
- * How it works → Signature → Links → FAQ → Final CTA
- */
 export function HuidkliniekenView({
   personalization,
   campaignRef,
@@ -69,21 +66,22 @@ export function HuidkliniekenView({
         <HuidkliniekCampaignBar personalization={personalization} />
       ) : null}
       <HuidkliniekHero />
-      <HuidkliniekFriction />
-      <HuidkliniekIntent />
-      <HuidkliniekLiveDesign />
+      <HuidkliniekExperience />
+      <HuidkliniekWhyPrice />
+      <HuidkliniekGoogleStrategy />
+      <HuidkliniekLocalSeo />
+      <HuidkliniekBookingApp campaignRef={campaignRef} />
       <HuidkliniekPricing
         campaignRef={campaignRef}
         personalization={personalization}
         onPackageSelect={onPackageSelect}
       />
-      <HuidkliniekExclusivity personalization={personalization} />
-      <HuidkliniekHowItWorks />
       <HuidkliniekSignatureCustom
         campaignRef={campaignRef}
         onSelect={() => onPackageSelect("signature-custom")}
       />
-      <HuidkliniekInternalLinks />
+      <HuidkliniekCase />
+      <HuidkliniekHowItWorks />
       <HuidkliniekFaq />
       <HuidkliniekFinalCta
         personalization={personalization}
@@ -91,6 +89,7 @@ export function HuidkliniekenView({
         selectedInterest={selectedInterest}
         onInterestChange={setSelectedInterest}
       />
+      <HuidkliniekInternalLinks />
       <LgeFloatingContact vertical="huidklinieken" />
     </main>
   );

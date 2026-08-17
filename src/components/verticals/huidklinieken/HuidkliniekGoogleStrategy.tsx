@@ -85,8 +85,8 @@ export function HuidkliniekGoogleStrategy() {
               <span className="text-[#FF5722]"> Daarom mikken we op pagina 1.</span>
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              Intentie, structuur, snelheid, content en Maps. Bij Clinic Edition
-              injecteer ik SEO op{" "}
+              Intentie, structuur, snelheid, content en Maps. Als huidkliniek
+              marketing partner injecteer ik SEO op{" "}
               <span className="font-semibold text-white">huidkliniek [jouw stad]</span>
               . Hoe hoger je instapt, hoe breder je zoekdekking wordt.
             </p>
