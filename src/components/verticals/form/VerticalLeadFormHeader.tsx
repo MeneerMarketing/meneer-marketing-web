@@ -22,21 +22,19 @@ export function VerticalLeadFormHeader({
   routeChosen,
 }: VerticalLeadFormHeaderProps) {
   return (
-    <div className="border-b border-orange-100/80 bg-gradient-to-br from-orange-50 via-white to-sky-50/40 px-6 py-5 sm:px-8 sm:py-6">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#FF5722]">
+    <div className="border-b border-orange-100/80 bg-gradient-to-r from-orange-50 via-white to-sky-50/30 px-4 py-4 sm:px-6">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <div className="min-w-0">
+          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF5722]">
             {eyebrow}
           </p>
-          <p className="mt-1.5 text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">
+          <p className="text-lg font-extrabold tracking-tight text-slate-900 sm:text-xl">
             {title}
           </p>
-          <p className="mt-1 max-w-md text-sm leading-relaxed text-slate-600">
-            {subtitle}
-          </p>
+          <p className="mt-0.5 text-xs text-slate-500 sm:text-sm">{subtitle}</p>
         </div>
         {promoNote ? (
-          <span className="shrink-0 rounded-full border border-[#FF5722]/25 bg-[#FF5722]/10 px-3 py-1 text-[11px] font-bold text-[#C2410C]">
+          <span className="shrink-0 rounded-full border border-[#FF5722]/25 bg-[#FF5722]/10 px-2.5 py-1 text-[10px] font-bold text-[#C2410C]">
             {promoNote}
           </span>
         ) : null}

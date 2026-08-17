@@ -1,8 +1,11 @@
 "use client";
 
-import { Mail, MapPin, Phone, Sparkles } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
-import { verticalInputClass, verticalSectionClass } from "@/components/verticals/form/vertical-form-styles";
+import {
+  verticalInputClass,
+  verticalSectionCompactClass,
+} from "@/components/verticals/form/vertical-form-styles";
 
 interface VerticalContactFieldsProps {
   heading: string;
@@ -17,6 +20,7 @@ interface VerticalContactFieldsProps {
   phone: string;
   onPhoneChange: (value: string) => void;
   onFocusStart?: () => void;
+  compact?: boolean;
 }
 
 export function VerticalContactFields({
@@ -32,22 +36,22 @@ export function VerticalContactFields({
   phone,
   onPhoneChange,
   onFocusStart,
+  compact = false,
 }: VerticalContactFieldsProps) {
   return (
-    <div className={`${verticalSectionClass} bg-slate-50/60`}>
-      <div className="flex items-center gap-2">
-        <Sparkles className="size-4 text-[#FF5722]" aria-hidden />
-        <p className="text-base font-extrabold tracking-tight text-slate-900">
-          {heading}
-        </p>
-      </div>
-      <p className="mt-1 text-sm text-slate-500">
-        Ik reageer rechtstreeks. Geen callcenter, geen doorverwijzing.
+    <div className={`${verticalSectionCompactClass} bg-slate-50/50`}>
+      <p className="text-sm font-extrabold tracking-tight text-slate-900">
+        {heading}
       </p>
-      <div className="mt-5 grid gap-4 sm:grid-cols-2">
+      {!compact ? (
+        <p className="mt-0.5 text-xs text-slate-500">
+          Ik reageer rechtstreeks. Meestal binnen één werkdag.
+        </p>
+      ) : null}
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
         <label className="block text-sm">
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700">
-            <Sparkles className="size-3.5 text-slate-400" aria-hidden />
+          <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600">
+            <MapPin className="size-3 text-slate-400" aria-hidden />
             {nameLabel}
           </span>
           <input
@@ -61,8 +65,8 @@ export function VerticalContactFields({
           />
         </label>
         <label className="block text-sm">
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700">
-            <MapPin className="size-3.5 text-slate-400" aria-hidden />
+          <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600">
+            <MapPin className="size-3 text-slate-400" aria-hidden />
             Plaats
           </span>
           <input
@@ -70,14 +74,14 @@ export function VerticalContactFields({
             value={city}
             onChange={(e) => onCityChange(e.target.value)}
             onFocus={onFocusStart}
-            placeholder="Stad of regio"
+            placeholder="Stad"
             className={verticalInputClass}
             autoComplete="address-level2"
           />
         </label>
         <label className="block text-sm">
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700">
-            <Mail className="size-3.5 text-slate-400" aria-hidden />
+          <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600">
+            <Mail className="size-3 text-slate-400" aria-hidden />
             E-mail
           </span>
           <input
@@ -86,16 +90,15 @@ export function VerticalContactFields({
             value={email}
             onChange={(e) => onEmailChange(e.target.value)}
             onFocus={onFocusStart}
-            placeholder="jij@bedrijf.nl"
+            placeholder="jij@…"
             className={verticalInputClass}
             autoComplete="email"
           />
         </label>
         <label className="block text-sm">
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700">
-            <Phone className="size-3.5 text-slate-400" aria-hidden />
-            Telefoon{" "}
-            <span className="font-normal text-slate-400">optioneel</span>
+          <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600">
+            <Phone className="size-3 text-slate-400" aria-hidden />
+            Tel <span className="font-normal text-slate-400">opt.</span>
           </span>
           <input
             type="tel"

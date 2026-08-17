@@ -1,6 +1,5 @@
 ﻿"use client";
 
-import { ShieldCheck } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import { VerticalContactFields } from "@/components/verticals/form/VerticalContactFields";
@@ -15,7 +14,7 @@ import {
 } from "@/components/verticals/form/VerticalPackagePicker";
 import {
   verticalInputClass,
-  verticalSectionClass,
+  verticalSectionCompactClass,
 } from "@/components/verticals/form/vertical-form-styles";
 import { LgePayBlock } from "@/components/verticals/LgePayBlock";
 import { SubscriptionCheckoutLegal } from "@/components/verticals/SubscriptionCheckoutLegal";
@@ -41,32 +40,37 @@ const PACKAGE_OPTIONS: VerticalPackageOption[] = [
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[0]!.monthly),
     hint: "Site + lokaal gevonden worden",
     recommended: true,
+    billing: "monthly",
   },
   {
     id: "local-growth",
     label: "Local Growth",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[1]!.monthly),
     hint: "Meer patiënten uit Google",
+    billing: "monthly",
   },
   {
     id: "growth-partner",
     label: "Growth Partner",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[2]!.monthly),
     hint: "Ads + content, vol gas",
+    billing: "monthly",
   },
   {
     id: "signature-custom",
-    label: "Signature",
+    label: "Signature Custom",
     short: formatVerticalMoney(
       HUIDKLINIEKEN_VERTICAL.pricing.signatureCustom.fromPrice,
     ),
-    hint: "Volledig op maat, eenmalig project",
+    hint: "Website afkopen in één keer. Daarna zelf beheer. Eén project, daarna ben jij aan zet.",
+    billing: "one_time",
   },
   {
     id: "unsure",
     label: "Help mij kiezen",
     short: "Advies",
-    hint: "Ik denk mee welk pakket past",
+    hint: "Twijfel je? Ik denk mee.",
+    billing: "advisory",
   },
 ];
 
@@ -221,157 +225,155 @@ export function HuidkliniekLeadForm({
       <VerticalLeadFormHeader
         eyebrow="Intake"
         title="Binnen twee minuten geregeld."
-        subtitle="Kies je pakket, vul je kliniek in, start wanneer jij wilt."
+        subtitle="Pakket, gegevens, start."
         promoNote={promo?.badge ?? null}
         packageChosen={Boolean(interest)}
         contactReady={contactReady}
         routeChosen={intent === "pay" ? payEligible : true}
       />
 
-      <VerticalPackagePicker
-        legend="Welk pakket past bij jou?"
-        options={PACKAGE_OPTIONS}
-        value={interest}
-        onChange={setInterestBoth}
-        onFocusStart={markStart}
-      />
+      <div className="lg:grid lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+        <div className="divide-y divide-slate-100">
+          <VerticalPackagePicker
+            legend="Welk pakket past bij jou?"
+            options={PACKAGE_OPTIONS}
+            value={interest}
+            onChange={setInterestBoth}
+            onFocusStart={markStart}
+            compact
+          />
 
-      <VerticalContactFields
-        heading="Jouw kliniek"
-        nameLabel="Kliniek naam"
-        namePlaceholder="Naam van je kliniek"
-        name={clinicName}
-        onNameChange={setClinicName}
-        city={city}
-        onCityChange={setCity}
-        email={email}
-        onEmailChange={setEmail}
-        phone={phone}
-        onPhoneChange={setPhone}
-        onFocusStart={markStart}
-      />
-
-      <VerticalIntentTabs
-        intent={intent}
-        payEligible={payEligible}
-        onIntentChange={setIntent}
-      />
-
-      {intent === "pay" && payEligible ? (
-        <div className={verticalSectionClass}>
-          <LgePayBlock
-            vertical="huidklinieken"
-            packageId={interest}
+          <VerticalContactFields
+            heading="Jouw kliniek"
+            nameLabel="Kliniek"
+            namePlaceholder="Naam van je kliniek"
             name={clinicName}
-            email={email}
+            onNameChange={setClinicName}
             city={city}
+            onCityChange={setCity}
+            email={email}
+            onEmailChange={setEmail}
             phone={phone}
-            bookingNeed={bookingNeed}
-            message={message}
-            businessName={clinicName}
-            campaignRef={campaignRef}
-            onPayStart={markStart}
-            variant="checkout"
+            onPhoneChange={setPhone}
+            onFocusStart={markStart}
+            compact
           />
         </div>
-      ) : null}
 
-      {intent === "talk" || !payEligible ? (
-        <div className={`${verticalSectionClass} space-y-4`}>
-          {!payEligible ? (
-            <p className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-relaxed text-slate-600">
-              Voor Signature of hulp bij kiezen starten we via contact. Ik denk
-              mee welk pakket past.
-            </p>
-          ) : null}
+        <div className="divide-y divide-slate-100 lg:border-l lg:border-slate-100">
+          <VerticalIntentTabs
+            intent={intent}
+            payEligible={payEligible}
+            onIntentChange={setIntent}
+            compact
+          />
 
-          <label className="block text-sm">
-            <span className="text-xs font-semibold text-slate-700">
-              Afspraken / app
-            </span>
-            <select
-              value={bookingNeed}
-              onChange={(e) => setBookingNeed(e.target.value as BookingNeed)}
-              onFocus={markStart}
-              className={verticalInputClass}
-            >
-              {BOOKING_OPTIONS.map((opt) => (
-                <option key={opt.id} value={opt.id}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="block text-sm">
-            <span className="text-xs font-semibold text-slate-700">
-              Kort toelichten{" "}
-              <span className="font-normal text-slate-400">optioneel</span>
-            </span>
-            <textarea
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              onFocus={markStart}
-              rows={3}
-              placeholder="Nieuwe kliniek, zwakke site, lokale SEO…"
-              className={`${verticalInputClass} resize-none`}
-            />
-          </label>
-
-          <div className="hidden" aria-hidden>
-            <label>
-              Bedrijfswebsite
-              <input
-                tabIndex={-1}
-                autoComplete="off"
-                value={honeypot}
-                onChange={(e) => setHoneypot(e.target.value)}
+          {intent === "pay" && payEligible ? (
+            <div className={verticalSectionCompactClass}>
+              <LgePayBlock
+                vertical="huidklinieken"
+                packageId={interest}
+                name={clinicName}
+                email={email}
+                city={city}
+                phone={phone}
+                bookingNeed={bookingNeed}
+                message={message}
+                businessName={clinicName}
+                campaignRef={campaignRef}
+                onPayStart={markStart}
+                variant="checkout"
               />
-            </label>
-          </div>
-
-          {error ? (
-            <p className="text-sm font-semibold text-rose-700" role="alert">
-              {error}
-            </p>
+              <p className="mt-3 text-[11px] leading-relaxed text-slate-500">
+                Liever vragen?{" "}
+                <button
+                  type="button"
+                  onClick={() => setIntent("talk")}
+                  className="font-bold text-[#FF5722] underline decoration-[#FF5722]/30 underline-offset-2"
+                >
+                  Eerst praten
+                </button>
+              </p>
+            </div>
           ) : null}
 
-          <button
-            type="submit"
-            disabled={status === "loading"}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-5 py-4 text-base font-bold text-white shadow-[0_16px_36px_-12px_rgba(255,87,34,0.5)] transition hover:bg-[#e64a19] disabled:opacity-60"
-          >
-            {status === "loading"
-              ? "Versturen…"
-              : "Stuur door · ik neem contact op"}
-          </button>
-        </div>
-      ) : null}
+          {intent === "talk" || !payEligible ? (
+            <div className={`${verticalSectionCompactClass} space-y-3`}>
+              {!payEligible ? (
+                <p className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs leading-relaxed text-slate-600">
+                  {interest === "signature-custom"
+                    ? "Signature is een eenmalig afkooptraject. Ik stuur je een offerte op maat."
+                    : "Voor dit pakket starten we via contact. Ik denk mee welk plan past."}
+                </p>
+              ) : null}
 
-      {intent === "pay" && payEligible ? (
-        <div className={verticalSectionClass}>
-          <div className="flex items-start gap-2 rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">
-            <ShieldCheck
-              className="mt-0.5 size-4 shrink-0 text-emerald-600"
-              aria-hidden
-            />
-            <p className="text-xs leading-relaxed text-slate-600">
-              Liever eerst vragen? Klik op{" "}
+              <label className="block text-sm">
+                <span className="text-[11px] font-semibold text-slate-700">
+                  Afspraken / app
+                </span>
+                <select
+                  value={bookingNeed}
+                  onChange={(e) => setBookingNeed(e.target.value as BookingNeed)}
+                  onFocus={markStart}
+                  className={verticalInputClass}
+                >
+                  {BOOKING_OPTIONS.map((opt) => (
+                    <option key={opt.id} value={opt.id}>
+                      {opt.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="block text-sm">
+                <span className="text-[11px] font-semibold text-slate-700">
+                  Kort toelichten{" "}
+                  <span className="font-normal text-slate-400">optioneel</span>
+                </span>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  onFocus={markStart}
+                  rows={2}
+                  placeholder="Nieuwe kliniek, zwakke site, lokale SEO…"
+                  className={`${verticalInputClass} resize-none`}
+                />
+              </label>
+
+              <div className="hidden" aria-hidden>
+                <label>
+                  Bedrijfswebsite
+                  <input
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                  />
+                </label>
+              </div>
+
+              {error ? (
+                <p className="text-xs font-semibold text-rose-700" role="alert">
+                  {error}
+                </p>
+              ) : null}
+
               <button
-                type="button"
-                onClick={() => setIntent("talk")}
-                className="font-bold text-[#FF5722] underline decoration-[#FF5722]/30 underline-offset-2"
+                type="submit"
+                disabled={status === "loading"}
+                className="inline-flex w-full items-center justify-center rounded-xl bg-[#FF5722] px-4 py-3.5 text-sm font-bold text-white shadow-[0_12px_28px_-10px_rgba(255,87,34,0.45)] transition hover:bg-[#e64a19] disabled:opacity-60"
               >
-                Eerst praten
-              </button>{" "}
-              hierboven.
-            </p>
+                {status === "loading"
+                  ? "Versturen…"
+                  : "Stuur door · ik neem contact op"}
+              </button>
+            </div>
+          ) : null}
+
+          <div className={verticalSectionCompactClass}>
+            <SubscriptionCheckoutLegal variant="footnote" />
           </div>
         </div>
-      ) : null}
-
-      <div className={verticalSectionClass}>
-        <SubscriptionCheckoutLegal variant="footnote" />
       </div>
     </form>
   );
