@@ -44,18 +44,18 @@ function subjectFromSlots(
 ): string {
   switch (variant) {
     case "city":
-      return `${businessName} in ${city}`;
+      return `${businessName}, ${city}`;
     case "idea":
-      return `Even kijken naar ${businessName}`;
+      return `${businessName}: even kijken`;
     case "concept":
-      return `Concept voor ${businessName}`;
+      return `Concept klaar voor ${businessName}`;
     case "website":
-      return `Website-concept voor ${businessName}`;
+      return `Website voor ${businessName}`;
     case "made":
-      return `Kijk even wat ik voor ${businessName} heb gebouwd`;
+      return `${businessName}: dit staat er al`;
     case "chosen":
     default:
-      return `Dit staat er al voor ${businessName}`;
+      return `Voor ${businessName} in ${city}`;
   }
 }
 
@@ -91,7 +91,7 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const open = greeting(input.contact_first_name);
   fixed_parts.push("greeting");
 
-  const paraHook = `Ik mail je over ${business_name} in ${city}. Ik ben hier om ${you.yourPossessive} studio online te helpen. Geen praatje vooraf: ik heb al een concept voor ${you.yourPossessive} studio uitgewerkt.`;
+  const paraHook = `Voor ${business_name} in ${city} heb ik al een concept website klaarstaan. Ik laat liever zien dan lang praten.`;
   fixed_parts.push("hook");
 
   let paraPersonal = "";
@@ -103,18 +103,21 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     ai_parts.push("opening_observation");
   }
 
-  const previewBlock = `→ ${input.preview_url}`;
+  const previewBlock = input.preview_url;
   fixed_parts.push("preview_link");
 
-  const paraTogether = `Kijk hoe ver we al zijn. Het concept staat. Samen perfectioneren we het tot precies zoals ${you.subject} het wilt. Ik bouw alles zelf, from scratch, met alle skills om het strak neer te zetten.`;
-  fixed_parts.push("together");
+  const paraConviction = `Als we dit samen doortrekken, ga je echt meer bereiken. Meer mensen die ${you.yourPossessive} studio vinden, meer verkeer, meer bekendheid in ${city}. Daar is dit op gebouwd.`;
+  fixed_parts.push("conviction");
 
   ai_parts.push("primary_keyword");
   if (slots.secondary_keyword) ai_parts.push("secondary_keyword");
 
   const keyword = slots.primary_keyword;
-  const paraMonthly = `Daarna pak ik elke maand ${you.yourPossessive} vindbaarheid in Google op, gericht op ${keyword} in ${city}. €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw. Top website, en ik ben gewoon bereikbaar als ${you.subject} iets wilt aanpassen.`;
-  fixed_parts.push("monthly");
+  const paraTogether = `Het concept staat al. We perfectioneren het samen tot het precies past bij hoe ${you.subject} het wilt. Ik bouw alles zelf, from scratch. En ik zet het meteen goed neer voor ${keyword} in ${city}.`;
+  fixed_parts.push("together");
+
+  const paraDeal = `€${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw. Daarvoor gaat de site live, werk ik elke maand aan ${you.yourPossessive} vindbaarheid in Google, en ben ik altijd bereikbaar voor wensen en aanpassingen. Andere tekst, nieuw tarief, foto's erin, iets stuk? Stuur een bericht, ik regel het.`;
+  fixed_parts.push("deal");
 
   let paraLanding = "";
   if (input.landing_page_url) {
@@ -122,7 +125,7 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     fixed_parts.push("landing_page");
   }
 
-  const paraClose = `Wat ${you.verbFind} ${you.subject} ervan? Ook een korte reactie is prima.`;
+  const paraClose = `Kijk even en laat me weten wat ${you.subject} ervan ${you.verbFind}.`;
   fixed_parts.push("close");
 
   const sig = signatureBlock(brand);
@@ -138,9 +141,11 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     "",
     previewBlock,
     "",
+    paraConviction,
+    "",
     paraTogether,
     "",
-    paraMonthly,
+    paraDeal,
     ...(paraLanding ? ["", paraLanding] : []),
     "",
     paraClose,
