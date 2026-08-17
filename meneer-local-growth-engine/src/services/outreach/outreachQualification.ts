@@ -1,5 +1,8 @@
 import { createAdminClient } from "@/lib/supabase/admin";
 import { pilatesScoringConfig } from "@/verticals/pilates/scoring";
+import { pilatesAcquisitionFitConfig } from "@/verticals/pilates/acquisitionFit";
+import { isCityManuallyProtected } from "@/services/city-outreach/cityAcquisitionProtection";
+import { assertAssignedTemplateCityUnique } from "@/services/city-outreach/cityOutreachService";
 import type { Business } from "@/types/domain";
 
 export interface OutreachQualificationResult {
@@ -7,34 +10,71 @@ export interface OutreachQualificationResult {
   reasons: string[];
 }
 
+export type OutreachQualificationMode = "pipeline" | "manual";
+
+/**
+ * Outreach gates v2 (M8.4): city rank #1 is geen harde gate meer.
+ * `manual` = dashboard-knop: alleen preview + veiligheid, geen pipeline-vlaggen.
+ */
 export async function qualifyForOutreachDraft(
-  business: Business
+  business: Business,
+  options?: { mode?: OutreachQualificationMode },
 ): Promise<OutreachQualificationResult> {
+  const mode = options?.mode ?? "pipeline";
   const reasons: string[] = [];
   const client = createAdminClient();
-  const rules = pilatesScoringConfig.winnerRules;
 
-  if (!business.primary_candidate) reasons.push("not_primary_candidate");
+  if (business.is_demo) reasons.push("demo_lead");
   if (business.lead_status === "DO_NOT_CONTACT") reasons.push("do_not_contact");
+  if (business.preview_status !== "READY") reasons.push("preview_not_ready");
+  if (!business.website_url && !business.domain) reasons.push("no_website");
+
+  const protection = await isCityManuallyProtected({
+    verticalId: business.vertical_id,
+    cityId: business.city_id,
+  });
+  if (protection.protected) reasons.push("city_manually_protected");
+
+  if (mode === "manual") {
+    return { ok: reasons.length === 0, reasons };
+  }
+
+  if (business.prospect_type !== "WEBSITE_TRANSFORMATION") {
+    reasons.push("not_website_transformation");
+  }
+  if (!business.preview_eligible) reasons.push("not_preview_eligible");
+  if (!business.selected_for_outreach) reasons.push("not_selected_for_outreach");
+  if (!business.assigned_template) reasons.push("assigned_template_missing");
+
   const allowedStatuses = new Set([
     "READY_FOR_OUTREACH",
     "CONTACTED",
     "REPLIED",
     "MEETING",
+    "PREVIEW_GENERATING",
+    "PREVIEW_READY",
   ]);
   if (!allowedStatuses.has(business.lead_status)) {
     reasons.push(`lead_status_${business.lead_status}`);
   }
-  if (business.preview_status !== "READY") reasons.push("preview_not_ready");
-  if (business.seo_opportunity_score == null) reasons.push("seo_not_analyzed");
-  if (!business.website_url) reasons.push("no_website");
 
-  const confidence = Number(business.winner_confidence ?? 0);
+  const transformationScore = Number(business.website_transformation_score ?? 0);
   if (
-    business.primary_candidate_source !== "manual" &&
-    confidence < rules.minConfidenceForOutreach
+    transformationScore <
+    pilatesAcquisitionFitConfig.transformationPrimaryMinScore
   ) {
-    reasons.push("winner_confidence_too_low");
+    reasons.push("transformation_score_too_low");
+  }
+
+  const visualConfidence = Number(business.visual_assessment_confidence ?? 0);
+  const transformationConfidence = Number(business.transformation_winner_confidence ?? 0);
+  const confidence = Math.max(visualConfidence, transformationConfidence);
+  if (
+    transformationScore < 65 &&
+    confidence > 0 &&
+    confidence < pilatesScoringConfig.winnerRules.minConfidenceForOutreach
+  ) {
+    reasons.push("transformation_confidence_too_low");
   }
 
   const { data: seo } = await client
@@ -46,19 +86,14 @@ export async function qualifyForOutreachDraft(
     reasons.push("seo_record_incomplete");
   }
 
-  const { data: exclusivity } = await client
-    .from("city_exclusivity")
-    .select("status, business_id")
-    .eq("city_id", business.city_id)
-    .eq("vertical_id", business.vertical_id)
-    .maybeSingle();
-
-  if (
-    exclusivity?.status === "EXCLUSIVE" &&
-    exclusivity.business_id &&
-    exclusivity.business_id !== business.id
-  ) {
-    reasons.push("city_exclusive_other");
+  if (business.assigned_template) {
+    const unique = await assertAssignedTemplateCityUnique({
+      businessId: business.id,
+      verticalId: business.vertical_id,
+      cityId: business.city_id,
+      assignedTemplate: business.assigned_template,
+    });
+    if (!unique.ok) reasons.push("duplicate_assigned_template_in_city");
   }
 
   return { ok: reasons.length === 0, reasons };

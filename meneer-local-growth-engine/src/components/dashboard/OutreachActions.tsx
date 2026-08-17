@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
+import { formatOutreachDraftError } from "@/services/outreach/outreachErrorLabels";
 
 export function OutreachActions({
   messageId,
@@ -165,7 +166,7 @@ export function GenerateOutreachButton({ businessId }: { businessId: string }) {
     });
     const json = (await res.json()) as { ok: boolean; error?: string; message?: { id: string } };
     if (!json.ok) {
-      setError(json.error ?? "Genereren mislukt");
+      setError(formatOutreachDraftError(json.error ?? "Genereren mislukt"));
       return;
     }
     startTransition(() => {

@@ -520,9 +520,9 @@ export default async function LeadDetailPage({ params, searchParams }: Props) {
                 </p>
               ) : null}
               {contacts.every((c) => !c.email) ? (
-                <p className="text-xs text-amber-800">
-                  Nog geen e-mailadres bij dit contact. Voeg eerst een contact toe op het
-                  tabblad Contact.
+                <p className="text-xs text-slate-500">
+                  Nog geen e-mail in Contact. Bij genereren zoek ik ook op de
+                  studio-website naar een adres.
                 </p>
               ) : null}
             </div>

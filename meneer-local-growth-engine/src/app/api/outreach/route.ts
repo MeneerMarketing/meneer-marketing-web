@@ -38,6 +38,7 @@ export async function POST(request: Request) {
       const result = await generateOutreachDraft({
         businessId: data.businessId,
         regenerate: data.action === "regenerate",
+        qualificationMode: "manual",
       });
       return NextResponse.json({
         ok: true,
