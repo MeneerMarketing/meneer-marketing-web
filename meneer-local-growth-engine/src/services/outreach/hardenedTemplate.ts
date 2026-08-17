@@ -44,18 +44,18 @@ function subjectFromSlots(
 ): string {
   switch (variant) {
     case "city":
-      return `${businessName}, ${city}`;
+      return `Pilates studio in ${city}?`;
     case "idea":
-      return `${businessName}: even kijken`;
+      return `Samenwerken in ${city}?`;
     case "concept":
-      return `Concept klaar voor ${businessName}`;
+      return `Mijn voorstel voor ${businessName}`;
     case "website":
-      return `Website voor ${businessName}`;
+      return `Concept voor ${businessName}`;
     case "made":
-      return `${businessName}: dit staat er al`;
+      return `${businessName}: dit is mijn voorstel`;
     case "chosen":
     default:
-      return `Voor ${businessName} in ${city}`;
+      return `Ik zoek een Pilates studio in ${city}`;
   }
 }
 
@@ -91,7 +91,7 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const open = greeting(input.contact_first_name);
   fixed_parts.push("greeting");
 
-  const paraHook = `Voor ${business_name} in ${city} heb ik al een concept website klaarstaan. Ik laat liever zien dan lang praten.`;
+  const paraHook = `Ik zoek nog een Pilates studio in ${city} om mee samen te werken. Mijn oog viel op ${business_name}.`;
   fixed_parts.push("hook");
 
   let paraPersonal = "";
@@ -103,20 +103,23 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     ai_parts.push("opening_observation");
   }
 
+  const paraProposal = `Dit is mijn voorstel. Ik heb al een concept voor ${you.yourPossessive} studio uitgewerkt:`;
+  fixed_parts.push("proposal");
+
   const previewBlock = input.preview_url;
   fixed_parts.push("preview_link");
 
-  const paraConviction = `Als we dit samen doortrekken, ga je echt meer bereiken. Meer mensen die ${you.yourPossessive} studio vinden, meer verkeer, meer bekendheid in ${city}. Daar is dit op gebouwd.`;
-  fixed_parts.push("conviction");
+  const paraOutcome = `Als we dit samen uitwerken, wordt ${you.yourPossessive} studio online professioneler en klantvriendelijker. Meer verkeer, meer mensen die een proefles boeken, meer leden op de lange termijn.`;
+  fixed_parts.push("outcome");
 
   ai_parts.push("primary_keyword");
   if (slots.secondary_keyword) ai_parts.push("secondary_keyword");
 
   const keyword = slots.primary_keyword;
-  const paraTogether = `Het concept staat al. We perfectioneren het samen tot het precies past bij hoe ${you.subject} het wilt. Ik bouw alles zelf, from scratch. En ik zet het meteen goed neer voor ${keyword} in ${city}.`;
+  const paraTogether = `Het concept staat al. Samen perfectioneren we het tot het precies klopt. Ik bouw alles zelf, from scratch, en zet het neer op ${keyword} in ${city}.`;
   fixed_parts.push("together");
 
-  const paraDeal = `€${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw. Daarvoor gaat de site live, werk ik elke maand aan ${you.yourPossessive} vindbaarheid in Google, en ben ik altijd bereikbaar voor wensen en aanpassingen. Andere tekst, nieuw tarief, foto's erin, iets stuk? Stuur een bericht, ik regel het.`;
+  const paraDeal = `€${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw. Site live, elke maand werk aan ${you.yourPossessive} vindbaarheid in Google, en ik blijf bereikbaar voor alles wat ${you.subject} wilt aanpassen. Tekst, tarief, foto's, iets stuk? Stuur een bericht, ik regel het.`;
   fixed_parts.push("deal");
 
   let paraLanding = "";
@@ -125,7 +128,7 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     fixed_parts.push("landing_page");
   }
 
-  const paraClose = `Kijk even en laat me weten wat ${you.subject} ervan ${you.verbFind}.`;
+  const paraClose = `Heb je interesse? Kijk even naar het concept en laat me weten wat ${you.subject} ervan ${you.verbFind}.`;
   fixed_parts.push("close");
 
   const sig = signatureBlock(brand);
@@ -139,9 +142,11 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     paraHook,
     ...(paraPersonal ? ["", paraPersonal] : []),
     "",
+    paraProposal,
+    "",
     previewBlock,
     "",
-    paraConviction,
+    paraOutcome,
     "",
     paraTogether,
     "",
@@ -177,6 +182,6 @@ export function deterministicSlots(input: {
     secondary_keyword: input.secondary_keywords[0] ?? null,
     relevant_service: input.relevant_service,
     wording_variant: "A",
-    subject_variant: "made",
+    subject_variant: "chosen",
   };
 }
