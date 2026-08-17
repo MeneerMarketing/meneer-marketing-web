@@ -13,6 +13,7 @@ export interface MeneerMarketingBrandSettings {
   kvk: string;
   from_email: string;
   reply_to: string;
+  contact_phone: string;
   years_experience: number;
   years_experience_phrase: string;
   allowed_sender_domains: string[];
@@ -29,13 +30,15 @@ export const DEFAULT_BRAND_SETTINGS: MeneerMarketingBrandSettings = {
   tagline: "Webdesign & online vindbaarheid",
   website: "https://meneermarketing.nl",
   website_label: "meneermarketing.nl",
-  kvk: process.env.OUTREACH_KVK ?? "",
+  kvk: process.env.OUTREACH_KVK ?? "42095913",
   from_email: process.env.RESEND_FROM_EMAIL ?? "",
-  reply_to: process.env.OUTREACH_REPLY_TO ?? "",
+  reply_to: process.env.OUTREACH_REPLY_TO ?? "info@meneermarketing.nl",
+  contact_phone: process.env.OUTREACH_CONTACT_PHONE ?? "",
   years_experience: Number(process.env.OUTREACH_YEARS_EXPERIENCE ?? 12),
   years_experience_phrase:
     process.env.OUTREACH_YEARS_EXPERIENCE_PHRASE ??
-    "Ik doe dit werk inmiddels {{years}} jaar en help bedrijven met webdesign en online vindbaarheid.",
+    // De mail zegt al in de opening wat ik doe, dus hier alleen de jaren.
+    "Ik doe dit werk inmiddels {{years}} jaar.",
   allowed_sender_domains: (
     process.env.OUTREACH_ALLOWED_SENDER_DOMAINS ??
     "meneermarketing.nl,mail.meneermarketing.nl"
@@ -84,6 +87,7 @@ export function mergeBrandSettings(
     ),
     years_experience_phrase:
       raw?.years_experience_phrase ?? DEFAULT_BRAND_SETTINGS.years_experience_phrase,
+    contact_phone: raw?.contact_phone ?? DEFAULT_BRAND_SETTINGS.contact_phone,
   };
 }
 

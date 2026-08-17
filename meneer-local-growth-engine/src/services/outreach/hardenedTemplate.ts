@@ -82,10 +82,14 @@ function voice(addressing: "singular" | "plural") {
 
 function signatureBlock(brand: MeneerMarketingBrandSettings): string {
   const sender = getSenderDisplay(brand);
+  const email = brand.reply_to || brand.from_email || "info@meneermarketing.nl";
   const lines = ["Groet,", "", sender.signature_name];
   if (sender.signature_company) lines.push(sender.signature_company);
+  lines.push(brand.tagline);
   lines.push(brand.website_label);
-  if (brand.kvk) lines.push(`KVK ${brand.kvk}`);
+  lines.push(email);
+  if (brand.contact_phone.trim()) lines.push(brand.contact_phone.trim());
+  lines.push(`KVK ${brand.kvk || "42095913"}`);
   return lines.join("\n");
 }
 
@@ -127,13 +131,12 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
   const paraPartnership = `Het concept staat al. Dat is het startpunt. Samen bouwen we daar verder op tot het precies bij ${you.yourPossessive} studio past. Ik bouw alles zelf en blijf ${you.yourPossessive} vaste contact. Voor €${STUDIO_EDITION_MONTHLY_EXCL_EUR} per maand ex. btw heb je iemand die met je meedenkt, elke maand doorwerkt op Google en direct oppakt als er iets moet veranderen.`;
   fixed_parts.push("partnership");
 
-  let paraLanding = "";
-  if (input.landing_page_url) {
-    paraLanding = `Meer over hoe ik werk met Pilates studio's: ${input.landing_page_url}`;
-    fixed_parts.push("landing_page");
-  }
+  const pilatesPageUrl =
+    input.landing_page_url ?? `${brand.website.replace(/\/$/, "")}/pilates-studios`;
+  const paraPilatesPage = `Mijn volledige voorstel voor Pilates studio's, pakketten en prijzen staat hier:\n\n${pilatesPageUrl}`;
+  fixed_parts.push("pilates_page");
 
-  const paraClose = `Kijk even naar het concept en laat me weten wat ${you.subject} ervan ${you.verbFind}.`;
+  const paraClose = `Kijk naar het concept en het voorstel, en laat me weten wat ${you.subject} ervan ${you.verbFind}. Ik hoor graag je reactie.`;
   fixed_parts.push("close");
 
   const sig = signatureBlock(brand);
@@ -149,7 +152,8 @@ export function renderHardenedOutreach(input: HardenedTemplateInput): HardenedRe
     paraGrowthPlan,
     "",
     paraPartnership,
-    ...(paraLanding ? ["", paraLanding] : []),
+    "",
+    paraPilatesPage,
     "",
     paraClose,
     "",
