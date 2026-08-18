@@ -62,7 +62,7 @@ const PACKAGE_OPTIONS: VerticalPackageOption[] = [
     short: formatVerticalMoney(
       HUIDKLINIEKEN_VERTICAL.pricing.signatureCustom.fromPrice,
     ),
-    hint: "Website afkopen in één keer. Daarna zelf beheer. Eén project, daarna ben jij aan zet.",
+    hint: "Website afkopen in één keer. Excl. beheer en SEO, los apart te regelen. Daarna is de site van jou.",
     billing: "one_time",
   },
   {

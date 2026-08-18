@@ -156,7 +156,7 @@ export function VerticalPackagePicker({
                       : "rounded-full bg-slate-200/80 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-slate-600"
                   }
                 >
-                  Alleen website · jij beheert
+                  Excl. beheer · los apart
                 </span>
               </span>
               <span
