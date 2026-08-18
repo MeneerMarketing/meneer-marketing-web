@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
     description:
 
-      "Plak je URL. Krijg een technische snapshot van je HTML response, render stack en indexeringssignalen.",
+      "Plak je URL. Krijg vier scores en één eindcijfer over snelheid, Google, vertrouwen en boeken. Gratis en in mensentaal.",
 
     url: absoluteUrl("/meter"),
 
@@ -74,7 +74,7 @@ export default function MeterPage() {
 
           description:
 
-            "Gratis technische website-scan met canonical, structured data, performance stack en conversie signalen.",
+            "Gratis website-scan met scores voor snelheid, vindbaarheid, vertrouwen en conversie.",
 
           dateModified: "2026-08-17",
 

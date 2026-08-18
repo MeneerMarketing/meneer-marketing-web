@@ -58,8 +58,9 @@ export function MeterTechnicalReport({ findings }: MeterTechnicalReportProps) {
               Wat ik in de HTML response zie
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-              Geen checklist van buzzwords. Concrete signalen uit de DOM, head tags, render stack
-              en integraties. Dit is wat crawlers en browsers ook zien.
+              Concrete signalen uit de DOM, head tags, render stack en integraties. Hetzelfde laag
+              die Google indexeert, browsers renderen, en waar ChatGPT zijn antwoord op haalt als
+              iemand naar je bedrijf vraagt.
             </p>
           </div>
           <dl className="flex shrink-0 gap-3 text-center">
