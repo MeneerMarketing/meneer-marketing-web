@@ -79,9 +79,9 @@ const GOALS: BuildGoal[] = [
  * Interactieve stack-matcher: kies wat je wilt bouwen en zie direct welke
  * diensten, tech en uitkomst daarbij horen.
  */
-export function BuildStackMatcher() {
+export function BuildStackMatcher({ defaultGoalId = "webshop" }: { defaultGoalId?: string }) {
   const reduce = useReducedMotion();
-  const [active, setActive] = useState<string>("webshop");
+  const [active, setActive] = useState<string>(defaultGoalId);
   const goal = GOALS.find((g) => g.id === active) ?? GOALS[0];
   const Icon = goal.icon;
 

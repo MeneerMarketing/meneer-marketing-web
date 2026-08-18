@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { SeoLandingPageView } from "@/components/seo-landing/SeoLandingPageView";
+import { SeoLandingWebsitePremiumView } from "@/components/seo-landing/SeoLandingWebsitePremiumView";
 import { JsonLdScript, seoLandingPageGraph } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -76,7 +77,7 @@ export default async function ZoekenLandingPage({ params }: ZoekenPageProps) {
       SERVICE_TYPE_BY_CATEGORY[page.category] ?? "Online marketing",
     ),
     isApeldoornHQ: page.location?.city === "Apeldoorn",
-    dateModified: "2026-08-09",
+    dateModified: slug === "website-laten-maken" ? "2026-08-18" : "2026-08-09",
   });
 
   return (
@@ -84,7 +85,11 @@ export default async function ZoekenLandingPage({ params }: ZoekenPageProps) {
       <JsonLdScript data={graphLd} />
       <SiteHeader />
       <main id="main" className="flex-1">
-        <SeoLandingPageView page={page} {...nav} />
+        {slug === "website-laten-maken" ? (
+          <SeoLandingWebsitePremiumView page={page} {...nav} />
+        ) : (
+          <SeoLandingPageView page={page} {...nav} />
+        )}
       </main>
       <SiteFooter />
     </>
