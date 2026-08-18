@@ -17,9 +17,9 @@ const launchPromo = getActiveLaunchPromo(cfg.pricing);
 const caseStudy = cfg.caseStudy;
 
 const PROOF_POINTS = [
-  "Site from scratch + Salonized",
-  "Hosting & domein inbegrepen",
-  "Huidproblemen-SEO op Local Growth",
+  "High-end · jouw branding",
+  "Salonized · intake in één klik",
+  "Technisch perfect · snel en veilig",
 ] as const;
 
 export function HuidkliniekHero() {
@@ -64,15 +64,12 @@ export function HuidkliniekHero() {
           <h1 className="mt-6 text-[1.65rem] font-extrabold leading-[1.08] tracking-tighter sm:text-[2.2rem] lg:text-[2.65rem] lg:leading-[1.06]">
             <span className="block text-white">Huidkliniek website.</span>
             <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5">
-              Jij wint die zoekopdracht.
+              High-end. Jouw stijl. Intakes die boeken.
             </span>
           </h1>
 
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Huidkliniek website laten maken? Zoekopdrachten als huidkliniek plus jouw stad,
-            cosmetische kliniek of laserontharing laten je links liggen als je site traag of
-            generiek voelt. Ik bouw from scratch, pak lokale SEO en kliniek marketing aan, en
-            stuur alles op nieuwe intakes die blijven hangen.
+          <p className="mt-4 text-[15px] leading-snug text-slate-300 sm:text-base">
+            From scratch in jouw merk. Salonized erop. Klaar om te laten zien wie jij bent.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
@@ -152,26 +149,35 @@ export function HuidkliniekHero() {
         </Reveal>
 
         <Reveal delay={0.1} className="min-w-0 lg:justify-self-end">
-          <HuidkliniekHeroSearchStory />
+          <div className="mx-auto w-full max-w-[430px]">
+            <HuidkliniekHeroSearchStory />
 
-          <p className="mt-5 text-center text-[12px] leading-relaxed text-slate-400 lg:text-left">
-            Zo ziet het eruit als het klopt.
-            {caseStudy.enabled ? (
-              <>
-                {" "}
-                Dit draait live bij{" "}
-                <Link
-                  href={caseStudy.href}
-                  className="font-bold text-white underline decoration-white/30 underline-offset-2 transition hover:decoration-[#FF5722]"
-                >
-                  {caseStudy.client} in {caseStudy.city}
-                </Link>
-                .
-              </>
-            ) : (
-              " Clinical-grade design, lokale SEO en intake zonder omweg."
-            )}
-          </p>
+            <p className="mt-4 w-full text-[14px] leading-relaxed text-slate-300 sm:text-[15px]">
+              Ik bouw een Google-technisch perfecte kliniekwebsite in jouw stijl. Clinical-grade,
+              snel, premium. Patiënten vinden jou, vertrouwen wat ze zien, en boeken intake via
+              Salonized. Jij krijgt een site die voelt als jouw kliniek, en een agenda die voller
+              loopt.
+            </p>
+
+            <p className="mt-3 w-full text-[12px] leading-relaxed text-slate-400">
+              Zo ziet het eruit als het klopt.
+              {caseStudy.enabled ? (
+                <>
+                  {" "}
+                  Dit draait live bij{" "}
+                  <Link
+                    href={caseStudy.href}
+                    className="font-bold text-white underline decoration-white/30 underline-offset-2 transition hover:decoration-[#FF5722]"
+                  >
+                    {caseStudy.client} in {caseStudy.city}
+                  </Link>
+                  .
+                </>
+              ) : (
+                " Premium design, direct boeken, techniek die meegroeit."
+              )}
+            </p>
+          </div>
         </Reveal>
       </div>
     </header>
