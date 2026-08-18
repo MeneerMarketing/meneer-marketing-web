@@ -6,6 +6,7 @@ import { isLgeSupabaseConfigured } from "@/lib/lge/supabase-admin";
 import { getMolliePayment, isMollieConfigured } from "@/lib/mollie/client";
 import { getMollieClient } from "@/lib/mollie/client";
 import { ensureLgeSubscriptionAfterFirstPayment } from "@/lib/mollie/subscription";
+import { sendCheckoutConfirmationMailForPayment } from "@/lib/mollie/send-checkout-confirmation-mail";
 
 function mapMollieStatus(status: string): string {
   switch (status) {
@@ -49,6 +50,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
       if (payment.sequenceType === SequenceType.first) {
         await ensureLgeSubscriptionAfterFirstPayment(payment);
+      }
+
+      try {
+        await sendCheckoutConfirmationMailForPayment(payment);
+      } catch (mailErr) {
+        console.error("[mollie/webhook] confirmation mail", mailErr);
       }
     }
 

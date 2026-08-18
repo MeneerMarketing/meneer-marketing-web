@@ -76,7 +76,7 @@ export function VerticalThankYouView({
       </h1>
       <p className="mt-4 text-base leading-relaxed text-slate-600">
         {payload.paidReturn
-          ? "Je launch fee staat. Ik neem binnen 24 uur contact op om je kick-off in te plannen."
+          ? "Je krijgt een bevestigingsmail met je pakket en vervolgstappen. Ik plan binnen 24 uur je kick-off in."
           : "Je krijgt een bevestigingsmail. Ik lees je aanvraag zelf en reageer meestal binnen 24 uur."}
       </p>
 
