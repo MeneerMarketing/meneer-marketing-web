@@ -18,6 +18,16 @@ export function PilatesHowItWorks() {
       className="relative overflow-hidden border-b border-slate-200 bg-slate-50"
       aria-labelledby="pilates-how-heading"
     >
+      <div
+        className="pointer-events-none absolute inset-0 opacity-30"
+        aria-hidden
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,87,34,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,87,34,0.045) 1px, transparent 1px)",
+          backgroundSize: "36px 36px",
+        }}
+      />
+
       <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-14">
           <Reveal>
@@ -47,74 +57,76 @@ export function PilatesHowItWorks() {
           </Reveal>
 
           <ol className="relative pl-8 sm:pl-10">
-          <div
-            className="absolute left-[11px] top-2 bottom-8 w-px bg-slate-200 sm:left-[15px]"
-            aria-hidden
-          />
-          <motion.div
-            className="absolute left-[11px] top-2 w-px bg-[#FF5722] sm:left-[15px]"
-            aria-hidden
-            initial={false}
-            animate={{
-              height: `${((active + 1) / steps.length) * 88}%`,
-            }}
-            transition={
-              reduce ? { duration: 0 } : { duration: 0.35, ease: [0.22, 1, 0.36, 1] }
-            }
-          />
+            <div
+              className="absolute left-[11px] top-2 bottom-8 w-px bg-slate-200 sm:left-[15px]"
+              aria-hidden
+            />
+            <motion.div
+              className="absolute left-[11px] top-2 w-px bg-[#FF5722] sm:left-[15px]"
+              aria-hidden
+              initial={false}
+              animate={{
+                height: `${((active + 1) / steps.length) * 88}%`,
+              }}
+              transition={
+                reduce
+                  ? { duration: 0 }
+                  : { duration: 0.35, ease: [0.22, 1, 0.36, 1] }
+              }
+            />
 
-          {steps.map((step, i) => {
-            const selected = active === i;
-            return (
-              <li key={step.title} className="relative">
-                <Reveal delay={i * 0.04}>
-                  <button
-                    type="button"
-                    onClick={() => setActive(i)}
-                    onMouseEnter={() => {
-                      if (!reduce) setActive(i);
-                    }}
-                    aria-pressed={selected}
-                    className={
-                      selected
-                        ? "mb-2 block w-full rounded-2xl border border-[#FF5722]/30 bg-white px-5 py-4 text-left shadow-[0_16px_36px_-26px_rgba(15,23,42,0.35)] transition"
-                        : "mb-2 block w-full rounded-2xl border border-transparent px-5 py-4 text-left transition hover:bg-white/70"
-                    }
-                  >
-                    <span
+            {steps.map((step, i) => {
+              const selected = active === i;
+              return (
+                <li key={step.title} className="relative">
+                  <Reveal delay={i * 0.04}>
+                    <button
+                      type="button"
+                      onClick={() => setActive(i)}
+                      onMouseEnter={() => {
+                        if (!reduce) setActive(i);
+                      }}
+                      aria-pressed={selected}
                       className={
                         selected
-                          ? "absolute -left-8 top-6 flex size-6 items-center justify-center rounded-full bg-[#FF5722] ring-4 ring-slate-50 sm:-left-10"
-                          : "absolute -left-8 top-6 flex size-6 items-center justify-center rounded-full bg-white ring-4 ring-slate-50 sm:-left-10"
+                          ? "mb-2 block w-full rounded-2xl border border-[#FF5722]/30 bg-white px-5 py-4 text-left shadow-[0_16px_36px_-26px_rgba(15,23,42,0.35)] transition"
+                          : "mb-2 block w-full rounded-2xl border border-transparent px-5 py-4 text-left transition hover:bg-white/70"
                       }
-                      aria-hidden
                     >
                       <span
                         className={
                           selected
-                            ? "size-2 rounded-full bg-white"
-                            : "size-2 rounded-full bg-slate-300"
+                            ? "absolute -left-8 top-6 flex size-6 items-center justify-center rounded-full bg-[#FF5722] ring-4 ring-slate-50 sm:-left-10"
+                            : "absolute -left-8 top-6 flex size-6 items-center justify-center rounded-full bg-white ring-4 ring-slate-50 sm:-left-10"
                         }
-                      />
-                    </span>
+                        aria-hidden
+                      >
+                        <span
+                          className={
+                            selected
+                              ? "size-2 rounded-full bg-white"
+                              : "size-2 rounded-full bg-slate-300"
+                          }
+                        />
+                      </span>
 
-                    <span className="block text-lg font-extrabold tracking-tight text-slate-900">
-                      {step.title}
-                    </span>
-                    <span
-                      className={
-                        selected
-                          ? "mt-1.5 block text-sm leading-relaxed text-slate-600 sm:text-base"
-                          : "mt-1.5 block text-sm leading-relaxed text-slate-500"
-                      }
-                    >
-                      {step.body}
-                    </span>
-                  </button>
-                </Reveal>
-              </li>
-            );
-          })}
+                      <span className="block text-lg font-extrabold tracking-tight text-slate-900">
+                        {step.title}
+                      </span>
+                      <span
+                        className={
+                          selected
+                            ? "mt-1.5 block text-sm leading-relaxed text-slate-600 sm:text-base"
+                            : "mt-1.5 block text-sm leading-relaxed text-slate-500"
+                        }
+                      >
+                        {step.body}
+                      </span>
+                    </button>
+                  </Reveal>
+                </li>
+              );
+            })}
           </ol>
         </div>
       </div>

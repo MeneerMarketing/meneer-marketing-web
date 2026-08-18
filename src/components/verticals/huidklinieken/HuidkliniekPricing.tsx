@@ -1,9 +1,9 @@
 ﻿"use client";
 
-import { Globe, Sparkles, Wrench } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Reveal } from "@/components/effects/Reveal";
+import { HuidkliniekPricingIntro } from "@/components/verticals/huidklinieken/HuidkliniekPricingIntro";
 import type { VerticalCampaignPersonalization } from "@/data/verticals/types";
 import type { VerticalInterestId } from "@/data/verticals/types";
 import { HUIDKLINIEKEN_VERTICAL } from "@/data/verticals/huidklinieken";
@@ -33,6 +33,13 @@ export function HuidkliniekPricing({
 }: HuidkliniekPricingProps) {
   const viewed = useRef(false);
   const campaignRecommended = personalization?.recommendedPackage ?? null;
+  const [activeTier, setActiveTier] = useState<VerticalInterestId>(() => {
+    if (campaignRecommended) {
+      const mapped = packageKeyToInterest(campaignRecommended);
+      if (mapped) return mapped;
+    }
+    return packages.find((p) => p.recommended)?.id ?? "local-growth";
+  });
 
   useEffect(() => {
     const el = document.getElementById("pakketten");
@@ -76,100 +83,24 @@ export function HuidkliniekPricing({
 
       <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <Reveal>
-          <div className="flex flex-wrap items-center gap-2">
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF5722]">
-              Pakketten
-            </p>
-            {promo ? (
-              <span className="rounded-full bg-[#FF5722] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
-                {promo.badge}
-              </span>
-            ) : null}
-          </div>
-          <h2
-            id="Huidkliniek-pricing-heading"
-            className="mt-3 max-w-3xl text-[1.75rem] font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.6rem] lg:leading-[1.08]"
-          >
-            <span className="block">Site + Salonized.</span>
-            <span className="block text-slate-400">Dan huidproblemen SEO.</span>
-            <span className="block text-[#FF5722]">Dan shop + complete groei.</span>
-          </h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-600 sm:text-lg">
-            Drie treden, één partner. Jij kiest hoe ver je digitaal wilt gaan.
-            {campaignRecommended
-              ? " Op basis van jullie website en lokale groeikansen ligt één pakket het dichtst bij."
-              : " De meeste klinieken landen op Local Growth."}
-          </p>
-
-          <div className="mt-6 flex max-w-2xl flex-col gap-2.5 sm:mt-8">
-            {promo ? (
-              <div className="flex gap-3 rounded-2xl border border-[#FF5722]/15 bg-gradient-to-br from-[#FF5722]/[0.06] to-white px-4 py-3.5 sm:px-5 sm:py-4">
-                <Sparkles
-                  className="mt-0.5 size-4 shrink-0 text-[#FF5722]"
-                  aria-hidden
-                />
-                <div className="min-w-0">
-                  <p className="text-sm font-bold leading-snug text-slate-900">
-                    {promo.note}
-                  </p>
-                  <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
-                    {termDisclaimer}
-                  </p>
-                </div>
-              </div>
-            ) : (
-              <p className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-xs leading-relaxed text-slate-500">
-                {termDisclaimer}
-              </p>
-            )}
-
-            <div className="grid gap-2.5 sm:grid-cols-2">
-              <div className="flex gap-3 rounded-xl border border-slate-200/90 bg-white/95 px-4 py-3.5 shadow-[0_8px_24px_-20px_rgba(15,23,42,0.25)]">
-                <Globe
-                  className="mt-0.5 size-4 shrink-0 text-slate-400"
-                  aria-hidden
-                />
-                <p className="text-[13px] leading-snug text-slate-700 sm:text-sm">
-                  {includedInfraNote}
-                </p>
-              </div>
-              <div className="flex gap-3 rounded-xl border border-slate-200/90 bg-white/95 px-4 py-3.5 shadow-[0_8px_24px_-20px_rgba(15,23,42,0.25)] sm:col-span-2">
-                <Wrench
-                  className="mt-0.5 size-4 shrink-0 text-slate-400"
-                  aria-hidden
-                />
-                <p className="text-[13px] leading-snug text-slate-600 sm:text-sm">
-                  {includedCareNote}
-                </p>
-              </div>
-            </div>
-          </div>
+          <HuidkliniekPricingIntro
+            headingId="Huidkliniek-pricing-heading"
+            packages={packages}
+            promo={promo ?? null}
+            termDisclaimer={termDisclaimer}
+            includedInfraNote={includedInfraNote}
+            includedCareNote={includedCareNote}
+            campaignRecommended={
+              campaignRecommended
+                ? packageKeyToInterest(campaignRecommended)
+                : null
+            }
+            activeTier={activeTier}
+            onActiveTierChange={setActiveTier}
+          />
         </Reveal>
 
-        <div className="mt-10 flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 sm:mt-12">
-          {packages.map((p, i) => (
-            <span key={p.id} className="inline-flex items-center gap-2">
-              <span
-                className={
-                  (campaignRecommended
-                    ? packageKeyToInterest(campaignRecommended) === p.id
-                    : p.recommended)
-                    ? "rounded-full bg-slate-900 px-3 py-1 text-white shadow-md"
-                    : "rounded-full border border-slate-200 bg-white px-3 py-1"
-                }
-              >
-                {p.ladderLabel}
-              </span>
-              {i < packages.length - 1 ? (
-                <span className="text-slate-300" aria-hidden>
-                  →
-                </span>
-              ) : null}
-            </span>
-          ))}
-        </div>
-
-        <div className="mt-10 grid gap-5 lg:mt-12 lg:grid-cols-3 lg:items-stretch">
+        <div className="mt-12 grid gap-5 lg:mt-14 lg:grid-cols-3 lg:items-stretch">
           {packages.map((pkg, i) => {
             const prices = formatMonthlyWithSetup(
               pkg.monthly,
@@ -179,14 +110,24 @@ export function HuidkliniekPricing({
             const recommended = campaignRecommended
               ? packageKeyToInterest(campaignRecommended) === pkg.id
               : Boolean(pkg.recommended);
+            const focused = activeTier === pkg.id;
 
             return (
               <Reveal key={pkg.id} delay={i * 0.06} className="h-full">
                 <article
+                  id={`pakket-${pkg.id}`}
                   className={
                     recommended
-                      ? "group relative flex h-full flex-col rounded-3xl bg-slate-900 p-6 text-white shadow-[0_28px_70px_rgba(15,23,42,0.28)] transition duration-300 hover:-translate-y-1 sm:p-7"
-                      : "group relative flex h-full flex-col rounded-3xl border border-slate-200/90 bg-white p-6 shadow-[0_16px_40px_-28px_rgba(15,23,42,0.2)] transition duration-300 hover:-translate-y-1 hover:border-[#FF5722]/35 hover:shadow-[0_24px_50px_-24px_rgba(255,87,34,0.25)] sm:p-7"
+                      ? `group relative flex h-full scroll-mt-28 flex-col rounded-3xl bg-slate-900 p-6 text-white shadow-[0_28px_70px_rgba(15,23,42,0.28)] transition duration-300 hover:-translate-y-1 sm:p-7${
+                          focused
+                            ? " ring-2 ring-[#FF5722] ring-offset-2 ring-offset-slate-50"
+                            : ""
+                        }`
+                      : `group relative flex h-full scroll-mt-28 flex-col rounded-3xl border bg-white p-6 shadow-[0_16px_40px_-28px_rgba(15,23,42,0.2)] transition duration-300 hover:-translate-y-1 sm:p-7${
+                          focused
+                            ? " border-[#FF5722] shadow-[0_24px_50px_-24px_rgba(255,87,34,0.3)] ring-2 ring-[#FF5722]/40 ring-offset-2 ring-offset-slate-50"
+                            : " border-slate-200/90 hover:border-[#FF5722]/35 hover:shadow-[0_24px_50px_-24px_rgba(255,87,34,0.25)]"
+                        }`
                   }
                 >
                   {recommended ? (
