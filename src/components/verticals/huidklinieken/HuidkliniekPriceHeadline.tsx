@@ -14,11 +14,11 @@ const LONGEST = ROTATING.reduce((a, b) => (b.length > a.length ? b : a));
 
 const INCLUSION_STICKERS = [
   { label: "Website in jouw branding", tilt: -2 },
+  { label: "Salonized-koppeling", tilt: 1 },
   { label: "Lokale SEO", tilt: 1.5 },
   { label: "Hosting inbegrepen", tilt: -1 },
   { label: "Domeinnaam inbegrepen", tilt: 2 },
   { label: "Klein onderhoud", tilt: -1.5 },
-  { label: "6 dagen per week remote", tilt: 1 },
   { label: "Maandelijks opzegbaar", tilt: -0.5 },
 ] as const;
 

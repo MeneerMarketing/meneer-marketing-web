@@ -38,22 +38,22 @@ const PACKAGE_OPTIONS: VerticalPackageOption[] = [
     id: "studio-edition",
     label: "Clinic Edition",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[0]!.monthly),
-    hint: "Site + lokaal gevonden worden",
-    recommended: true,
+    hint: "Site + Salonized · hosting incl.",
     billing: "monthly",
   },
   {
     id: "local-growth",
     label: "Local Growth",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[1]!.monthly),
-    hint: "Meer patiënten uit Google",
+    hint: "Huidproblemen-landings + SEO",
+    recommended: true,
     billing: "monthly",
   },
   {
     id: "growth-partner",
     label: "Growth Partner",
     short: formatVerticalMoney(HUIDKLINIEKEN_VERTICAL.pricing.packages[2]!.monthly),
-    hint: "Ads + content, vol gas",
+    hint: "Shopify + ads · hosting incl.",
     billing: "monthly",
   },
   {
@@ -75,10 +75,10 @@ const PACKAGE_OPTIONS: VerticalPackageOption[] = [
 ];
 
 const BOOKING_OPTIONS = [
-  { id: "existing", label: "Heb al een agendasysteem" },
-  { id: "need-app", label: "Wil branded kliniek-app" },
+  { id: "existing", label: "Salonized of vergelijkbaar" },
+  { id: "need-app", label: "Wil branded Salonized-app" },
   { id: "unsure", label: "Nog niet zeker" },
-  { id: "none", label: "Nog geen digitaal boeken" },
+  { id: "none", label: "Signature · eigen boekingssysteem" },
 ] as const;
 
 type BookingNeed = (typeof BOOKING_OPTIONS)[number]["id"];

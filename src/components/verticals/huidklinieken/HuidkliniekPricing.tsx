@@ -90,9 +90,9 @@ export function HuidkliniekPricing({
             id="Huidkliniek-pricing-heading"
             className="mt-3 max-w-3xl text-[1.75rem] font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.6rem] lg:leading-[1.08]"
           >
-            <span className="block">Website.</span>
-            <span className="block text-slate-400">Dan vindbaarheid.</span>
-            <span className="block text-[#FF5722]">Dan complete groei.</span>
+            <span className="block">Site + Salonized.</span>
+            <span className="block text-slate-400">Dan huidproblemen SEO.</span>
+            <span className="block text-[#FF5722]">Dan shop + complete groei.</span>
           </h2>
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-600 sm:text-lg">
             Drie treden, één partner. Jij kiest hoe ver je digitaal wilt gaan.

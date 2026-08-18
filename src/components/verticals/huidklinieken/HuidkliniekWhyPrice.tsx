@@ -42,40 +42,40 @@ const PACKAGE_STORIES: Record<
 > = {
   "studio-edition": {
     eyebrow: "Clinic Edition · instap",
-    title: "Gevonden worden in jouw stad, met een site die echt klopt",
+    title: "Site + Salonized. Gevonden worden in jouw stad.",
     paragraphs: [
-      "Je kliniek oogt premium in de behandelkamer. Online moet dat hetzelfde voelen. Ik bouw je huidkliniek website from scratch in jouw branding: behandelingen, tarieven, intake. Custom build, zonder template-brommer.",
-      "Daarna de basis die Google snapt: huidkliniek + jouw stad, technisch netjes, doorverwijzing naar afspraak. Eerst zichtbaar worden en serieus overkomen. Ads kunnen later. Dit is je digitale voordeur, maar dan eentje die ook scoort.",
+      "Je kliniek oogt premium in de behandelkamer. Online moet dat hetzelfde voelen. Ik bouw je site from scratch, koppel Salonized, en hosting plus domein zitten in je abonnement.",
+      "Daarna de basis die Google snapt: huidkliniek + jouw stad, technisch netjes, doorverwijzing naar afspraak. Eerst zichtbaar worden en serieus overkomen. Huidproblemen-landings en shop kunnen later.",
     ],
     stats: [
-      { k: "Doel", v: "Zichtbaar + vertrouwen" },
-      { k: "Google", v: "Lokaal gevonden" },
-      { k: "Site", v: "Kliniekniveau" },
+      { k: "Doel", v: "Zichtbaar + boeken" },
+      { k: "Infra", v: "Hosting incl." },
+      { k: "Agenda", v: "Salonized" },
     ],
   },
   "local-growth": {
     eyebrow: "Local Growth · meest gekozen",
-    title: "Structureel meer intakes uit Google",
+    title: "Huidproblemen-landings die intakes opleveren",
     paragraphs: [
-      "Alles uit Clinic Edition, plus actieve groei. Meerdere pagina's voor laser, huidverbetering, intake. Google Maps scherp. Rankings die ik elke maand bijstuur op basis van wat er echt gebeurt in jouw regio.",
-      "Iemand zoekt een huidkliniek bij jou in de buurt en landt op jouw pagina, niet op die van de concurrent. Intake geboekt, agenda gevuld. Dit pakket is voor klinieken die online al staan, maar nu echt willen groeien zonder zelf SEO te worden.",
+      "Alles uit Clinic Edition, plus landings per huidprobleem. Acne, pigment, roodheid. Elk probleem gekoppeld aan jouw apparatuur en behandeling, met SEO op symptoom + stad.",
+      "Iemand zoekt donkere kringen behandeling Utrecht en landt op jouw pagina, niet op die van de concurrent. Intake geboekt via Salonized. Dit pakket is voor klinieken die online al staan, maar nu per klacht willen scoren.",
     ],
     stats: [
       { k: "Doel", v: "Meer intakes" },
-      { k: "Google", v: "Maandelijks scherp" },
+      { k: "SEO", v: "Huidproblemen" },
       { k: "Maps", v: "Lokaal zichtbaar" },
     ],
   },
   "growth-partner": {
     eyebrow: "Growth Partner · vol gas",
-    title: "Echte boost: meer patiënten, meer omzet",
+    title: "Shopify shop + ads. Omzet naast de behandelkamer.",
     paragraphs: [
-      "Organisch is solide, maar soms wil je sneller schalen. Growth Partner pakt alles uit Local Growth en zet daar Google Ads, Meta Ads en creators bovenop. Campagnes die doorsturen naar pagina's die echt laten boeken.",
-      "Meer verkeer, meer intakes, meer herhaalbezoek. Jij runt de kliniek en de behandeling. Ik run de kanalen die volume brengen. Wil je echt gas geven op omzet en agenda, pak dan het grootste pakket.",
+      "Alles uit Local Growth, plus een Shopify shop voor homecare en retail. Serums, nazorg, producten naast je behandelingen. Google Ads, Meta Ads en creators vullen de funnel.",
+      "Shop verkoopt thuis. Landings en ads sturen door naar intake. Jij runt de kliniek. Ik run shop, vindbaarheid en campagnes. Wil je retail én agenda vullen, pak dan Growth Partner.",
     ],
     stats: [
-      { k: "Doel", v: "Omzet + agenda" },
-      { k: "Kanalen", v: "Ads + creators" },
+      { k: "Doel", v: "Shop + agenda" },
+      { k: "Shop", v: "Shopify" },
       { k: "Tempo", v: "Snel schalen" },
     ],
   },

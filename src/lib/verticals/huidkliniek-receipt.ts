@@ -14,6 +14,11 @@ export const HUIDKLINIEK_RECEIPT_BASE: readonly HuidkliniekReceiptLine[] = [
     was: null,
   },
   {
+    name: "Salonized-koppeling",
+    detail: "Intake vanaf je site (licentie apart)",
+    was: null,
+  },
+  {
     name: "Lokale SEO",
     detail: "Huidkliniek + jouw stad, schema, Maps",
     was: null,
@@ -42,13 +47,13 @@ export const HUIDKLINIEK_RECEIPT_BASE: readonly HuidkliniekReceiptLine[] = [
 
 const HUIDKLINIEK_RECEIPT_LOCAL: readonly HuidkliniekReceiptLine[] = [
   {
-    name: "Meerdere landingspagina's",
-    detail: "Laser, Huidverbetering, Intake, …",
+    name: "Huidproblemen-landings",
+    detail: "Acne, pigment, roodheid + apparatuur",
     was: null,
   },
   {
-    name: "Bredere lokale SEO",
-    detail: "Meer zoektermen dan alleen huidkliniek [stad]",
+    name: "Symptoom-SEO",
+    detail: "Probleem + behandeling + [jouw stad]",
     was: null,
   },
   {
@@ -70,6 +75,11 @@ const HUIDKLINIEK_RECEIPT_LOCAL: readonly HuidkliniekReceiptLine[] = [
 
 const HUIDKLINIEK_RECEIPT_GROWTH: readonly HuidkliniekReceiptLine[] = [
   {
+    name: "Shopify shop",
+    detail: "Setup + koppeling (Shopify-plan apart)",
+    was: null,
+  },
+  {
     name: "Google Ads-beheer",
     detail: "Campagnes (advertentiebudget apart)",
     was: null,
@@ -85,13 +95,8 @@ const HUIDKLINIEK_RECEIPT_GROWTH: readonly HuidkliniekReceiptLine[] = [
     was: null,
   },
   {
-    name: "Campagne-landings",
-    detail: "Pagina's die direct laten boeken",
-    was: null,
-  },
-  {
-    name: "Groeianalyse",
-    detail: "Funnel, CRO en maandelijkse sturing",
+    name: "Shop → intake funnel",
+    detail: "CRO op shop, landings en boeken",
     was: null,
   },
 ];

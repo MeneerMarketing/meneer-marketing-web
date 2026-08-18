@@ -17,9 +17,9 @@ const launchPromo = getActiveLaunchPromo(cfg.pricing);
 const caseStudy = cfg.caseStudy;
 
 const PROOF_POINTS = [
-  "Huidkliniek website from scratch",
-  "SEO op huidkliniek + jouw stad",
-  "Kliniek marketing die boekt",
+  "Site from scratch + Salonized",
+  "Hosting & domein inbegrepen",
+  "Huidproblemen-SEO op Local Growth",
 ] as const;
 
 export function HuidkliniekHero() {
@@ -122,7 +122,8 @@ export function HuidkliniekHero() {
           </div>
 
           <p className="mt-4 text-[11px] text-slate-400 sm:text-xs">
-            Live binnen 5 werkdagen · vanaf €89 per maand ex. btw · maandelijks opzegbaar
+            Live binnen 5 werkdagen · vanaf €89/m ex. btw · incl. hosting &amp;
+            domein · maandelijks opzegbaar
             {launchPromo ? ` · ${launchPromo.badge.toLowerCase()}` : ""}
           </p>
 

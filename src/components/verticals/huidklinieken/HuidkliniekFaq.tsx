@@ -9,12 +9,12 @@ import { HUIDKLINIEKEN_VERTICAL } from "@/data/verticals/huidklinieken";
 
 const SIDE_FACTS = [
   {
-    title: "From scratch",
-    body: "Jouw naam, logo, behandelingen en stad. Custom build, niet jouw foto op een template.",
+    title: "Hosting & domein incl.",
+    body: "Domein, hosting, beveiliging en klein onderhoud zitten in je abonnement. Twv. €25 per maand.",
   },
   {
     title: "Live binnen 5 werkdagen",
-    body: "Clinic Edition mik ik op oplevering binnen een werkweek, inclusief lokale SEO-basis.",
+    body: "Clinic Edition: site + Salonized-koppeling + lokale SEO-basis, binnen een werkweek.",
   },
   {
     title: "Maandelijks opzegbaar",
