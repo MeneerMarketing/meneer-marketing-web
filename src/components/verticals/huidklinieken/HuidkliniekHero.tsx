@@ -63,12 +63,10 @@ export function HuidkliniekHero() {
             </span>
           </div>
 
-          <h1 className="mt-5 text-[clamp(1.55rem,4.2vw,2.55rem)] font-extrabold leading-[1.1] tracking-tighter">
-            <span className="block text-white text-balance">
-              Jouw kliniek online, op het niveau dat past.
-            </span>
-            <span className="mt-1 block text-[#FF8A5B] text-balance">
-              Ik zorg dat patiënten jou vinden en boeken.
+          <h1 className="mt-5 text-[clamp(1.55rem,4.2vw,2.55rem)] font-extrabold leading-[1.08] tracking-tighter">
+            <span className="block text-white">Huidkliniek website.</span>
+            <span className="mt-1 block text-[#FF8A5B]">
+              Premium. Jouw stijl. Intakes die boeken.
             </span>
           </h1>
 
