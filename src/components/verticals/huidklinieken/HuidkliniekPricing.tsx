@@ -100,7 +100,7 @@ export function HuidkliniekPricing({
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-5 lg:mt-14 lg:grid-cols-3 lg:items-stretch">
+        <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-3 lg:items-stretch">
           {packages.map((pkg, i) => {
             const prices = formatMonthlyWithSetup(
               pkg.monthly,
