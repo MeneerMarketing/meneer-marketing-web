@@ -221,14 +221,13 @@ export default async function InsurerPage({ params }: PageProps) {
       {/* ── Eerst de hoofdvraag ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Voordat je belt</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Eén vraag komt
-              <br />
               <span className="diba-accent">hier nog vóór.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Namelijk of er een medische reden is. Zonder die reden wordt er
               door geen enkele verzekeraar iets vergoed, ook niet door{" "}
               {insurer.name}, en dan is de rest van deze pagina niet nodig. Voor

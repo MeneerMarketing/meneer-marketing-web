@@ -408,8 +408,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           <div className="mx-auto">
             <Label>Wat het wel en niet doet</Label>
             <h2 className="diba-display-m mt-4 max-w-[24ch]">
-              Even lang,
-              <br />
+              Even lang,{" "}
               <span className="diba-accent">en dat is met opzet.</span>
             </h2>
             <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -518,7 +517,6 @@ export default async function BehandelingPage({ params }: PageProps) {
             <Label opDonker>Eerst meten</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
               Of dit bij jou past
-              <br />
               <span className="diba-accent-on-dark">weten we nog niet.</span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">

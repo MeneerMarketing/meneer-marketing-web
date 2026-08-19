@@ -106,14 +106,13 @@ export default function VergoedingenPage() {
       {/* ── De route: drie vragen ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Drie vragen, op volgorde</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               En wat er gebeurt
-              <br />
               <span className="diba-accent">bij nee.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Die nee-tak staat normaal nergens, en dat is precies de tak waar de
               meeste mensen in terechtkomen.
             </p>
@@ -214,14 +213,13 @@ export default function VergoedingenPage() {
       {/* ── Misverstanden ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Vier misverstanden</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               De eerste
-              <br />
               <span className="diba-accent">scheelt geld.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Mensen stellen behandeling uit op grond van iets wat niet klopt.
               Daarom staat die bovenaan.
             </p>
@@ -257,14 +255,13 @@ export default function VergoedingenPage() {
       {/* ── De verzekeraars, nu op de juiste plek: als laatste ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Pas nu je verzekeraar</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Kwam je door
-              <br />
               <span className="diba-accent">alle drie de vragen?</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Dan is dit het moment om je eigen polis erbij te pakken. Deze
               pagina&apos;s wijzen je naar de plek waar jouw voorwaarden staan;
               wat er precies in jouw pakket zit, zie je alleen daar.

@@ -165,14 +165,13 @@ export default function DoelgroepHubPage() {
           verderop. Hier staat het bij elkaar, want zo is het ook korter dan de uitleg. */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Bij het maken van de afspraak</Label>
-            <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Zeg dit meteen,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Zeg dit meteen,{" "}
               <span className="diba-accent">niet pas aan de balie.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Deze regels bepalen soms of een behandeling doorgaat, of welke
               instelling erbij hoort. Wie ze pas noemt als hij op de stoel ligt,
               loopt het risico dat de afspraak verzet wordt. Vandaar dat ze hier
@@ -218,7 +217,6 @@ export default function DoelgroepHubPage() {
             <Label>En de rest</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
               Sta je er niet
-              <br />
               <span className="diba-accent">tussen?</span>
             </h2>
           </div>

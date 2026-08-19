@@ -162,14 +162,13 @@ export default function NazorgPage() {
       {/* ── Het rooster: de signatuur ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Zeven bezigheden, vijf behandelingen</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Wat mag
-              <br />
               <span className="diba-accent">wanneer weer.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Zoek je behandeling in de kolommen en je vraag in de rijen. Klik
               een vakje aan en de reden staat eronder, want een regel zonder
               reden is een verbod en verboden worden genegeerd.
@@ -185,14 +184,13 @@ export default function NazorgPage() {
       {/* ── Wat je meteen na afloop merkt ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Geen verrassingen</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Wat je de eerste uren
-              <br />
               <span className="diba-accent">gaat merken.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Bij elke behandeling hoort iets wat je thuis ziet of voelt. Wie
               dat vooraf weet schrikt niet, en belt ook niet voor iets wat
               hoort.

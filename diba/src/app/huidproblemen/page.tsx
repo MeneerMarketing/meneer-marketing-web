@@ -161,7 +161,6 @@ export default function HuidproblemenPage() {
             <Label opDonker>Behandeling nul</Label>
             <h2 className="diba-display-l mt-5 max-w-[16ch]">
               Alles begint
-              <br />
               <span className="diba-accent-on-dark">bij meten.</span>
             </h2>
           </div>

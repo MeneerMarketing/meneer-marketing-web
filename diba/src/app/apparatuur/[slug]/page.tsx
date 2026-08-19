@@ -212,14 +212,13 @@ export default async function ApparaatPage({ params }: PageProps) {
       {/* ── Het mechaniek ── */}
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Hoe het werkt</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Niet wat het doet.
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Niet wat het doet.{" "}
               <span className="diba-accent">Hoe het het doet.</span>
             </h2>
-            <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[16px] leading-7 text-[var(--t-body)]">
               Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte.
               Dat is meteen ook de grens van wat het kan. Hieronder zie je die
               grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je
@@ -238,8 +237,7 @@ export default async function ApparaatPage({ params }: PageProps) {
         <div className="mx-auto">
           <Label>Wat het wel en niet kan</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
-            Even lang,
-            <br />
+            Even lang,{" "}
             <span className="diba-accent">en dat is met opzet.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -285,14 +283,13 @@ export default async function ApparaatPage({ params }: PageProps) {
       {buren.length ? (
         <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
-            <div className="max-w-[62ch]">
+            <div>
               <Label>Waarom dit apparaat</Label>
-              <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              <h2 className="diba-display-m mt-4">
                 Wat er anders is
-                <br />
                 <span className="diba-accent">dan de buren.</span>
               </h2>
-              <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
                 Meerdere apparaten hier doen op het oog hetzelfde. Welke je
                 krijgt hangt af van je huid en van wat er gemeten is, en niet
                 van welke naam het beste klinkt. Dit is het verschil, zonder
@@ -334,14 +331,13 @@ export default async function ApparaatPage({ params }: PageProps) {
       {problemen.length ? (
         <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
-            <div className="max-w-[62ch]">
+            <div>
               <Label>Waar het bij helpt</Label>
-              <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              <h2 className="diba-display-m mt-4">
                 De problemen waar
-                <br />
                 <span className="diba-accent">dit apparaat bij past.</span>
               </h2>
-              <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
                 Passen is niet hetzelfde als oplossen. Op elke pagina hieronder
                 staat ook wat er niet lukt, en of wij het überhaupt behandelen.
               </p>

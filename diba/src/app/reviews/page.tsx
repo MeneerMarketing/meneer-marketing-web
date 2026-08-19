@@ -179,14 +179,13 @@ export default function ReviewsPage() {
       {/* ── De muur ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>{SALONIZED_REVIEWS.length} overgenomen quotes</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Zoek op wat
-              <br />
               <span className="diba-accent">jij zelf hebt.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Sorteren op score heeft geen zin als alles vijf is, en zelf de
               beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet. Dus
               filter je zelf, met het aantal op de knop. Ook als dat aantal
@@ -207,7 +206,6 @@ export default function ReviewsPage() {
             <Label>Wat hier niet staat</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
               Verzonnen
-              <br />
               <span className="diba-accent">reviews.</span>
             </h2>
           </div>

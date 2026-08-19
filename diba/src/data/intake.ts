@@ -210,3 +210,37 @@ export const INTAKE_FAQ = [
       "Dat is een prima reden om te komen. De symptoomzoeker helpt je een richting te vinden, en anders begint het gesprek gewoon met kijken.",
   },
 ] as const;
+
+/**
+ * De combinatie-afspraak: meten en meteen de eerste behandeling.
+ *
+ * WAAROM DIT HIER STAAT EN NIET STILLETJES IN DE TEKST HIERBOVEN IS VERWERKT.
+ *
+ * Okan zegt dat dit in de praktijk de meest gekozen afspraak is: Behandeling Nul plus een
+ * eerste behandeling, samen 120 minuten. Op de site stond daar niets over. Sterker nog:
+ * hierboven staat "Behandeling deze afspraak: Nee" en de hele pagina is gebouwd op één uur
+ * meten zonder behandelen.
+ *
+ * Die twee kunnen allebei waar zijn, maar dan moet het er wel staan. Als de meest gekozen
+ * afspraak nergens genoemd wordt, kiest niemand hem bewust; en als de pagina zegt dat er
+ * niet behandeld wordt terwijl dat meestal wel gebeurt, klopt de belofte niet meer.
+ *
+ * Daarom staat het er nu als een tweede, expliciete keuze naast Behandeling Nul, met de
+ * volgorde intact: eerst meten, dan pas behandelen, en alleen als de meting dat toelaat.
+ * Dat laatste is geen slag om de arm maar de kern van wat deze kliniek belooft.
+ *
+ * [BESLUIT-OKAN] klopt 120 minuten, en klopt het dat dit de meest gekozen afspraak is?
+ * [PRIJS-NODIG: wat kost de combinatie? De meting is 50 euro; wat de behandeling kost
+ * hangt af van welke het wordt, dus of dit een vast bedrag heeft of een optelsom.]
+ * [MEDISCHE-CHECK-ROJDA] wanneer kan er in dezelfde afspraak wél behandeld worden en
+ * wanneer niet. Dit is de enige zin op deze pagina waar een klant een verwachting aan
+ * ontleent over zijn eigen afspraak.
+ */
+export const COMBINATIE_AFSPRAAK = {
+  label: "Meest gekozen",
+  kop: "Meten en meteen beginnen",
+  minuten: 120,
+  zin: "De meting en de eerste behandeling in één afspraak. Twee uur, dus je hoeft niet twee keer te komen.",
+  voorwaarde:
+    "Of het kan hangt af van wat de meting laat zien. Blijkt dat behandelen nu niet verstandig is, dan gebeurt het niet en betaal je alleen de meting.",
+} as const;

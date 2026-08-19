@@ -119,14 +119,13 @@ export default function IsHetNodigPage() {
       {/* ── De weegschaal: de signatuur van deze pagina ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Twaalf maanden, twee sporen</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Wat er gebeurt
-              <br />
               <span className="diba-accent">als je niets doet.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Kies waar het bij jou over gaat. Links staat het verloop zonder
               behandeling, rechts met. Bij sommige dingen lopen die twee bijna
               gelijk op, en dan is de vraag niet of het werkt maar of het de

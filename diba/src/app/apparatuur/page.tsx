@@ -127,14 +127,13 @@ export default function ApparatuurPage() {
       {/* ── Alles op één schaal ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Naast elkaar</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              {APPARATUUR.length} apparaten,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              {APPARATUUR.length} apparaten,{" "}
               <span className="diba-accent">één schaal.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Het verschil tussen deze apparaten zit in twee dingen: waar ze op
               aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens
               van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij

@@ -109,14 +109,13 @@ export default function GentleMaxProPage() {
       {/* ── De signatuur: het golflengtevenster ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>755 of 1064 nanometer</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Welke laser
-              <br />
               <span className="diba-accent">krijg jij?</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Kies je huidtype en je ziet welke van de twee er dan gebruikt
               wordt, hoe diep die komt en waarom dat bij jou de juiste is.
             </p>

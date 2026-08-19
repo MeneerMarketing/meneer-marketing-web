@@ -218,7 +218,11 @@ export default function FigmaHomeApp({
               zien we wat jouw huid nodig heeft en volgen we jouw voortgang in
               beeld.
             </p>
-            <div className="mt-9 flex w-fit flex-col items-start gap-4">
+            {/* items-center en niet items-start. De wikkel is `w-fit`, dus precies zo
+                breed als de knop; met links uitlijnen begon de link daaronder aan de
+                linkerrand van die knop in plaats van eronder te staan. Nu hangt hij
+                gecentreerd onder de knop, en dat blijft kloppen als de knoptekst verandert. */}
+            <div className="mt-9 flex w-fit flex-col items-center gap-4">
               {/* De mini-scan in de kaart hiernaast is de primaire actie van deze
                   sectie. Deze knop is de uitleg-route en blijft dus secundair. */}
               <Button

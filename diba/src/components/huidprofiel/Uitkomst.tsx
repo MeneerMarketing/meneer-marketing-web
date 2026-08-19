@@ -438,7 +438,7 @@ export default function Uitkomst({ profiel }: Props) {
           <div>
             <p className="diba-label text-[var(--g-800)]">De volgende stap</p>
             <h3 className="diba-display-s mt-4 max-w-[16ch]">
-              Behandeling Nul.
+              Behandeling Nul.{" "}
               <span className="diba-accent"> Meten, niet behandelen.</span>
             </h3>
             <p className="mt-6 max-w-[52ch] text-[16px] leading-8 text-[var(--g-900)]">

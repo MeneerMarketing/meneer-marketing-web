@@ -8,6 +8,7 @@ import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import {
+  COMBINATIE_AFSPRAAK,
   CONSULT_REVIEW_IDS,
   INTAKE_FAQ,
   INTAKE_FEITEN_VAST,
@@ -159,6 +160,59 @@ export default function IntakePage() {
       </section>
 
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+
+      {/* ── De twee manieren om te beginnen ──
+
+          Deze sectie stond er niet, en dat was een gat: volgens Okan is de combinatie de
+          meest gekozen afspraak, terwijl de pagina alleen de losse meting beschreef en
+          hierboven zelfs "Behandeling deze afspraak: Nee" toont.
+
+          Ze staan naast elkaar en niet onder elkaar, want het is een keuze en geen
+          volgorde. De losse meting staat links omdat dat de afspraak is die deze pagina
+          uitlegt; de combinatie rechts, met de voorwaarde erbij. Die voorwaarde is geen
+          kleine lettertjes maar het verschil tussen de twee. */}
+      <section className="px-5 pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+        <div className="mx-auto">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
+            <Label>Twee manieren om te beginnen</Label>
+            <p className="text-[15px] leading-7 text-[var(--t-muted)]">
+              Allebei beginnen ze met dezelfde meting.
+            </p>
+          </div>
+
+          <div className="mt-6 grid gap-4 lg:grid-cols-2 lg:items-stretch">
+            <div className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-9">
+              <Label>Alleen meten</Label>
+              <p className="diba-card-title-lg mt-4 text-[var(--t-strong)]">
+                Behandeling Nul
+              </p>
+              <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                {INTAKE_MINUTEN} minuten meten, uitleg en een plan. Er gebeurt
+                niets aan je huid, en je zit nergens aan vast.
+              </p>
+              <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
+                {INTAKE_MINUTEN} minuten
+              </p>
+            </div>
+
+            <div className="flex flex-col rounded-[var(--r-lg)] bg-[var(--g-075)] p-7 sm:p-9">
+              <Label>{COMBINATIE_AFSPRAAK.label}</Label>
+              <p className="diba-card-title-lg mt-4 text-[var(--t-strong)]">
+                {COMBINATIE_AFSPRAAK.kop}
+              </p>
+              <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                {publicCopy(COMBINATIE_AFSPRAAK.zin)}
+              </p>
+              <p className="mt-4 text-[15px] leading-7 text-[var(--warn-text)]">
+                {publicCopy(COMBINATIE_AFSPRAAK.voorwaarde)}
+              </p>
+              <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
+                {COMBINATIE_AFSPRAAK.minuten} minuten
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ── Je huidprofiel meenemen ──
           Hier hield de keten op. Je kon op /huidprofiel een profiel opbouwen dat klopte,

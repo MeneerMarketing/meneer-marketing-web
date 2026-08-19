@@ -188,14 +188,13 @@ export default function PrivacyPage() {
       {/* ── Waar het wel terechtkomt ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Vier plekken</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Waar uw gegevens
-              <br />
               <span className="diba-accent">wel terechtkomen.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Drie van de vier zijn niet deze website. Bij elke plek staat wat er
               ligt en waar het heen gaat.
             </p>
@@ -249,7 +248,7 @@ export default function PrivacyPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Wat u kunt vragen</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Zes rechten,
+                Zes rechten,{" "}
                 <span className="diba-accent-on-dark">
                   {" "}
                   ongeacht waar iets ligt.

@@ -156,7 +156,7 @@ export default function WerkenBijPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Voordat je solliciteert</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Wat we van je vragen,
+                Wat we van je vragen,{" "}
                 <span className="diba-accent-on-dark"> en wat juist niet.</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
@@ -202,14 +202,13 @@ export default function WerkenBijPage() {
       {/* ── Waar je mee werkt ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Waar je mee werkt</Label>
-            <h2 className="diba-display-m mt-4 max-w-[18ch]">
+            <h2 className="diba-display-m mt-4">
               Twee vakken
-              <br />
               <span className="diba-accent">onder één dak.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Dat is geen indeling op papier. Bij acne en pigment zit er vaak
               een voedingskant aan het verhaal, en dan schuift er iemand aan die
               daarnaar kijkt. Bij laser en needling doet een huidtherapeut het.

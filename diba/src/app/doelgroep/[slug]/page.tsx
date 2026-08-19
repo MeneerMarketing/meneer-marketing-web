@@ -125,14 +125,13 @@ export default async function DoelgroepPage({ params }: PageProps) {
       {/* ── De signatuur: anders naast niet anders ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Twee kolommen</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Wat er anders is,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Wat er anders is,{" "}
               <span className="diba-accent">en wat niet.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               De meeste pagina&apos;s voor een doelgroep doen alsof er een
               aparte behandellijn bestaat. Die bestaat niet. Wat er wél
               verschilt staat links, en rechts staat even nadrukkelijk wat er
@@ -194,7 +193,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
               <div>
                 <Label opDonker>Bij het maken van de afspraak</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Zeg dit erbij,
+                  Zeg dit erbij,{" "}
                   <span className="diba-accent-on-dark">
                     {" "}
                     dan scheelt dat een keer.
@@ -224,14 +223,13 @@ export default async function DoelgroepPage({ params }: PageProps) {
       {/* ── De andere drie ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[58ch]">
+          <div>
             <Label>Herken je jezelf hier niet in</Label>
-            <h2 className="diba-display-m mt-4 max-w-[18ch]">
+            <h2 className="diba-display-m mt-4">
               Dan hoor je
-              <br />
               <span className="diba-accent">gewoon bij de rest.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[58ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Deze vier pagina&apos;s bestaan omdat er per groep iets te melden
               is, en niet omdat de rest ergens anders terechtkan. Alles begint
               bij dezelfde meting.

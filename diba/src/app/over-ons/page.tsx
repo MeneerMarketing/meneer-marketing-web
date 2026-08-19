@@ -170,7 +170,7 @@ export default function OverOnsPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Vier getallen</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Wat ze zeggen,
+                Wat ze zeggen,{" "}
                 <span className="diba-accent-on-dark"> en wat niet.</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
@@ -220,14 +220,13 @@ export default function OverOnsPage() {
       {/* ── Wat er in huis is ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Wat er in huis is</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Gereedschap,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Gereedschap,{" "}
               <span className="diba-accent">geen belofte.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben
               de HydraFacial. Alsof het apparaat het werk doet en de kliniek
               alleen de stekker erin steekt. Het is andersom: wat telt is de

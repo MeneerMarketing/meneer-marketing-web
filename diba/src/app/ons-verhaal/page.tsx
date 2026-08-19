@@ -183,11 +183,10 @@ export default function OnsVerhaalPage() {
       {/* ── De andere vier ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>De andere vier</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Elk principe
-              <br />
               <span className="diba-accent">heeft een rekening.</span>
             </h2>
           </div>
@@ -233,7 +232,6 @@ export default function OnsVerhaalPage() {
             <Label>Houd ons eraan</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
               Klopt er iets
-              <br />
               <span className="diba-accent">niet?</span>
             </h2>
           </div>

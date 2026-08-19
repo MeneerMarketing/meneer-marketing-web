@@ -130,7 +130,7 @@ export default function TeamPage() {
               <div>
                 <Label opDonker>Wat een titel betekent</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Twee vakken,
+                  Twee vakken,{" "}
                   <span className="diba-accent-on-dark">
                     {" "}
                     en één ervan is wettelijk beschermd.
@@ -283,14 +283,13 @@ export default function TeamPage() {
       {genoemd.length > 0 ? (
         <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
-            <div className="max-w-[62ch]">
+            <div>
               <Label>Bij naam genoemd</Label>
-              <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              <h2 className="diba-display-m mt-4">
                 Wat klanten schreven
-                <br />
                 <span className="diba-accent">over wie hen hielp.</span>
               </h2>
-              <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
                 Niet door ons uitgekozen op inhoud: dit zijn de reviews waar de
                 naam van de behandelaar bij staat. Wie hier niet tussen staat is
                 daarom niet minder goed, alleen minder vaak bij naam genoemd.

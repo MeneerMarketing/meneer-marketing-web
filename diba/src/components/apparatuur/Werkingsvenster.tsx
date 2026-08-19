@@ -138,7 +138,12 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
   return (
     <div
       ref={venster}
-      className="grid gap-8 rounded-[var(--r-lg)] bg-white p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:p-10"
+      /* lg:items-center, want de twee kolommen zijn ongelijk van aard: links een
+         doorsnede die zijn hoogte uit de tekening haalt, rechts drie stappen die zo lang
+         zijn als de tekst toevallig uitvalt. Zonder centreren rekt de korte kolom mee tot
+         onderaan en blijft de inhoud bovenin hangen, met een gat van een paar honderd
+         pixels eronder. Naast elkaar gecentreerd horen ze bij elkaar. */
+      className="grid items-center gap-8 rounded-[var(--r-lg)] bg-white p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:p-10"
     >
       {/* ── De doorsnede ── */}
       <div>

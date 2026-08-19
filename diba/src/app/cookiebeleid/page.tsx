@@ -107,11 +107,10 @@ export default function CookiePage() {
       {/* ── De twee soorten ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Wat er precies staat</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Wat er laadt,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Wat er laadt,{" "}
               <span className="diba-accent">en wanneer.</span>
             </h2>
           </div>

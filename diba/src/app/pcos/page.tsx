@@ -105,14 +105,13 @@ export default function PcosPage() {
       {/* ── De taakverdeling ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Drie kolommen</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Wie doet
-              <br />
               <span className="diba-accent">wat.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               De derde kolom is de eerlijkste, en die ontbreekt op vrijwel elke
               kliniekwebsite. Daar staat wat niemand kan.
             </p>
@@ -150,14 +149,13 @@ export default function PcosPage() {
       {/* ── Per klacht ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Vier huidklachten</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Wat we wel doen,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Wat we wel doen,{" "}
               <span className="diba-accent">en wat niet.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene
               zonder de andere is een verkooptekst.
             </p>

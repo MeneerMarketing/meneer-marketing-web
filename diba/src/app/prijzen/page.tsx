@@ -118,14 +118,13 @@ export default function PrijzenPage() {
           bedrag altijd in beeld. */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Per behandeling</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Wat het kost,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Wat het kost,{" "}
               <span className="diba-accent">en wat je ervoor krijgt.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Klap een behandeling open en je ziet hoe vaak je moet komen, hoe
               lang de hersteltijd is en wat het niet doet. Het bedrag blijft
               staan, ook dicht.
@@ -142,11 +141,10 @@ export default function PrijzenPage() {
           tarievenlijsten. Rijen en kolommen in de letterlijke zin. */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Laserontharing per zone</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Elke zone,
-              <br />
+            <h2 className="diba-display-m mt-4">
+              Elke zone,{" "}
               <span className="diba-accent">met het tarief erbij.</span>
             </h2>
           </div>

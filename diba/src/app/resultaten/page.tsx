@@ -108,14 +108,13 @@ export default function ResultatenPage() {
       {/* ── De Fotocheck: de signatuur ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Zeven variabelen</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Beoordeel zelf
-              <br />
               <span className="diba-accent">elk resultaatbeeld.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Dit werkt op elke kliniekwebsite, ook die van de buren en straks
               op die van ons. Zet aan wat er tussen de voorfoto en de nafoto
               gelijk is gehouden, en kijk wat het oordeel doet.
@@ -135,7 +134,7 @@ export default function ResultatenPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Waar je ons aan mag houden</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Zo maken wij ze,
+                Zo maken wij ze,{" "}
                 <span className="diba-accent-on-dark">
                   {" "}
                   of we maken ze niet.

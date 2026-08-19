@@ -212,14 +212,13 @@ export default function ContactPage() {
       {/* ── De ingangkiezer: de signatuur van deze pagina ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Welke vraag, welk kanaal</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Niet elk kanaal
-              <br />
               <span className="diba-accent">past bij elke vraag.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               De meeste contactpagina&apos;s zetten drie iconen naast elkaar en
               laten jou raden welke het snelst antwoord geeft. Wie het verkeerde
               kiest wacht twee dagen op iets wat via een bericht in tien minuten
@@ -277,14 +276,13 @@ export default function ContactPage() {
           de u-vorm tussen de juridische tekst. Zelfde bron, hier in gewone taal. */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div className="max-w-[62ch]">
+          <div>
             <Label>Voordat je belt</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            <h2 className="diba-display-m mt-4">
               Afzeggen, verzetten
-              <br />
               <span className="diba-accent">of te laat komen.</span>
             </h2>
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Bel je hierover, dan hoor je dit. Het staat hier zodat je het ook
               kunt lezen als je geen zin hebt in bellen, en zodat je vooraf weet
               wat het kost in plaats van achteraf.
