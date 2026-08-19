@@ -97,17 +97,16 @@ export default function OnsVerbondPage() {
             dragen zichzelf met een vlak. Nu losse kaarten met ruimte ertussen, en de
             kostenkolom is een eigen vlak binnen de kaart.
           */}
-          <ol className="mt-12 space-y-4">
+          {/* Geen "01 02 03" meer voor de regels. Die nummers waren decoratie: de
+              weigeringen hebben geen rangorde en je verwijst er nooit naar met hun nummer.
+              Ze lazen als een sjabloon in plaats van als een standpunt. */}
+          <ul className="mt-12 space-y-4">
             {WEIGERINGEN.map((w) => (
               <li
-                key={w.nummer}
+                key={w.regel}
                 className="rounded-[var(--r-lg)] bg-white p-6 sm:p-9"
               >
-                <div className="grid gap-6 lg:grid-cols-[auto_1.25fr_0.75fr] lg:gap-10">
-                  <span className="diba-label text-[var(--t-muted)] lg:w-10">
-                    {w.nummer}
-                  </span>
-
+                <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr] lg:gap-10">
                   <div>
                     <h2 className="diba-card-title">{w.regel}</h2>
                     <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
@@ -134,7 +133,7 @@ export default function OnsVerbondPage() {
                 </div>
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
       </section>
 

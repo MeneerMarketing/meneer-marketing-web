@@ -1,240 +1,135 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import {
-  HOME_WERKWIJZE_STEPS,
-  type WerkwijzeStep,
-} from "@/data/home-werkwijze";
+import { HOME_WERKWIJZE_STEPS } from "@/data/home-werkwijze";
 
-type WerkwijzeStepsFlowProps = {
-  className?: string;
-  variant?: "figma" | "opus";
-};
+/**
+ * De drie stappen naast "Eerst begrijpen. Dan behandelen."
+ *
+ * WAT ER MIS WAS, EN WAAROM HET ALS EEN SJABLOON OOGDE.
+ *
+ * Er stond een tijdlijn van drie bolletjes met een gloeiend randje, een pulserend stipje
+ * dat over een lijn liep, en drie kaarten met een rand eromheen. Los van elkaar zijn dat
+ * nette dingen; samen waren het vier decoraties die alle vier hetzelfde zeiden. En de
+ * randen botsten met de huisstijl: kaarten dragen zichzelf hier met een vlak, niet met
+ * een lijn. Deze component was de enige plek op de site die dat wel deed, en precies
+ * daarom viel hij op als vreemde eend.
+ *
+ * WAT ER NU STAAT.
+ *
+ * Drie gelijke kaarten, geen enkele lijn. Het verschil tussen actief en niet-actief zit
+ * in de vulling: wit met een zachte slagschaduw tegenover een lichte tint. De voortgang
+ * is een vulling die in ruim vier seconden onderin de actieve kaart vol loopt en dan
+ * doorschuift. Dat is het enige dat beweegt.
+ *
+ * Die balk staat op `mt-auto`, dus hij zakt naar de voet van de kaart. Daardoor liggen de
+ * drie balken altijd op één lijn, ook als een tekst op een smal scherm een regel langer
+ * wordt. Dat is de reden dat de rij als één object leest en niet als drie losse kaartjes.
+ *
+ * De animatie loopt op een keyframe en niet op een CSS-transitie, want een transitie van
+ * 0 naar 100% start niet bij de eerste render: de actieve kaart staat er dan al op 100%.
+ * Met een `key` die meeloopt met de actieve stap begint hij elke keer opnieuw bij nul.
+ *
+ * Beweging staat stil zodra je er met de muis of met toetsenbordfocus in komt, zodat je
+ * kunt lezen zonder dat het onder je handen wegschuift. Wie `prefers-reduced-motion` aan
+ * heeft staan krijgt de balk zonder animatie; de stappen wisselen dan nog wel.
+ */
 
-const STEP_TAGS = ["Eerst", "Daarna", "Tot slot"] as const;
+const STAP_LABEL = ["Eerst", "Daarna", "Tot slot"] as const;
 
-function StepNode({
-  index,
-  active,
-  total,
-  onSelect,
-}: {
-  index: number;
-  active: boolean;
-  total: number;
-  onSelect: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      aria-pressed={active}
-      onClick={onSelect}
-      className="group relative z-10 flex shrink-0 flex-col items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--g-400)]"
-    >
-      <span className="relative flex h-11 w-11 items-center justify-center">
-        {active ? (
-          <>
-            <span className="werkwijze-glow absolute inset-0 rounded-full bg-[var(--g-400)]/35" />
-            <span className="werkwijze-glow-ring absolute inset-1 rounded-full border border-[var(--on-dark-accent)]/60" />
-          </>
-        ) : (
-          <span className="absolute inset-2 rounded-full bg-[var(--g-050)] transition group-hover:bg-[var(--g-100)]" />
-        )}
-        <span
-          className={`relative rounded-full transition-all duration-500 ${
-            active
-              ? "h-3.5 w-3.5 bg-[var(--g-400)] shadow-[0_0_14px_rgba(107,173,106,.75)]"
-              : "h-2.5 w-2.5 bg-[var(--g-300)] group-hover:h-3 group-hover:w-3 group-hover:bg-[var(--g-400)]"
-          }`}
-        />
-      </span>
-      {/* Stond op 8px in --g-300: te klein (ondergrens is 11px) en met 1,9:1 ver onder
-          WCAG AA. Nu op de labelmaat, met kleuren die wel meten. */}
-      <span
-        className={`diba-label mt-2 transition-colors duration-300 ${
-          active
-            ? "text-[var(--g-700)]"
-            : "text-[var(--t-muted)] group-hover:text-[var(--g-700)]"
-        }`}
-      >
-        {STEP_TAGS[index] ?? `Stap ${index + 1}`}
-      </span>
-      <span className="sr-only">
-        Stap {index + 1} van {total}
-      </span>
-    </button>
-  );
-}
+/** Hoe lang een stap in beeld blijft. Gelijk aan de duur van de vulling. */
+const DUUR_MS = 4600;
 
 export default function WerkwijzeStepsFlow({
   className = "",
-  variant = "figma",
-}: WerkwijzeStepsFlowProps) {
-  const steps = HOME_WERKWIJZE_STEPS;
-  const [active, setActive] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+}: {
+  className?: string;
+}) {
+  const stappen = HOME_WERKWIJZE_STEPS;
+  const [actief, setActief] = useState(0);
+  const [gepauzeerd, setGepauzeerd] = useState(false);
+  const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const advance = useCallback(() => {
-    setActive((prev) => (prev + 1) % steps.length);
-  }, [steps.length]);
+  const volgende = useCallback(() => {
+    setActief((vorig) => (vorig + 1) % stappen.length);
+  }, [stappen.length]);
 
   useEffect(() => {
-    if (paused) return undefined;
-    timerRef.current = setInterval(advance, 4200);
+    if (gepauzeerd) return undefined;
+    timer.current = setInterval(volgende, DUUR_MS);
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
+      if (timer.current) clearInterval(timer.current);
     };
-  }, [advance, paused]);
-
-  const progressPct =
-    steps.length <= 1 ? 0 : (active / (steps.length - 1)) * 100;
-
-  const cardBase =
-    variant === "figma"
-      ? "h-full rounded-[1.75rem] border p-6 text-left transition-all duration-500 sm:p-7"
-      : "h-full rounded-[var(--radius-lg)] border p-[var(--space-5)] text-left transition-all duration-500 md:p-[var(--space-6)]";
-
-  const cardActive =
-    variant === "figma"
-      ? "border-[var(--g-300)] bg-white shadow-[0_12px_40px_rgba(40,105,67,.1)] -translate-y-0.5"
-      : "border-[var(--diba-green-300)] bg-[var(--white)] shadow-[0_12px_40px_rgba(40,105,67,.1)]";
-
-  const cardIdle =
-    variant === "figma"
-      ? "border-[var(--g-100)] bg-[var(--g-025)] hover:border-[var(--g-200)] hover:bg-[var(--g-050)]"
-      : "border-[var(--diba-green-200)]/50 bg-[var(--diba-cream-50)] hover:border-[var(--diba-green-200)] hover:bg-[var(--diba-cream-100)]";
+  }, [volgende, gepauzeerd]);
 
   return (
     <div
       className={className}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-      onFocus={() => setPaused(true)}
+      onMouseEnter={() => setGepauzeerd(true)}
+      onMouseLeave={() => setGepauzeerd(false)}
+      onFocus={() => setGepauzeerd(true)}
       onBlur={(e) => {
-        if (!e.currentTarget.contains(e.relatedTarget)) setPaused(false);
+        if (!e.currentTarget.contains(e.relatedTarget)) setGepauzeerd(false);
       }}
     >
-      {/* Desktop: timeline + kaarten in één grid */}
-      <div className="hidden sm:grid sm:grid-cols-3 sm:gap-4">
-        <div className="relative col-span-3 h-[4.5rem]">
-          <div
-            className="absolute inset-x-0 top-[22px] h-px bg-[var(--g-100)]"
-            aria-hidden
-          />
-          <div
-            className="absolute left-0 top-[22px] h-px origin-left bg-gradient-to-r from-[var(--g-400)] via-[var(--g-400)] to-[var(--on-dark-accent)] transition-[width] duration-700 ease-out"
-            style={{ width: `${progressPct}%` }}
-            aria-hidden
-          />
-          <div
-            className="werkwijze-pulse-travel absolute top-[18px] h-2 w-2 -translate-x-1/2 rounded-full bg-[var(--on-dark-btn)] shadow-[0_0_10px_rgba(184,227,157,.9)]"
-            style={{ left: `${progressPct}%` }}
-            aria-hidden
-          />
-          <div className="grid h-full grid-cols-3">
-            {steps.map((_, i) => (
-              <div key={steps[i].id} className="flex justify-center">
-                <StepNode
-                  index={i}
-                  active={active === i}
-                  total={steps.length}
-                  onSelect={() => setActive(i)}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+      <ul className="grid gap-3 sm:grid-cols-3">
+        {stappen.map((stap, i) => {
+          const aan = actief === i;
+          return (
+            <li key={stap.id} className="flex">
+              <button
+                type="button"
+                aria-pressed={aan}
+                onClick={() => setActief(i)}
+                className={`flex h-full w-full flex-col rounded-[var(--r-md)] p-6 text-left transition-colors duration-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-400)] sm:p-7 ${
+                  aan
+                    ? "cursor-default bg-white shadow-[0_18px_44px_rgba(23,55,42,.09)]"
+                    : "cursor-pointer bg-[var(--g-025)] hover:bg-[var(--g-050)]"
+                }`}
+              >
+                <span
+                  className={`diba-label transition-colors duration-500 ${
+                    aan ? "text-[var(--g-700)]" : "text-[var(--t-muted)]"
+                  }`}
+                >
+                  {STAP_LABEL[i] ?? stap.title}
+                </span>
 
-        {steps.map((step, i) => (
-          <StepCard
-            key={step.id}
-            step={step}
-            active={active === i}
-            onSelect={() => setActive(i)}
-            className={`${cardBase} ${active === i ? cardActive : cardIdle}`}
-            variant={variant}
-          />
-        ))}
-      </div>
+                <span className="mt-5 block text-[26px] leading-none tracking-[-.05em] text-[var(--t-strong)]">
+                  {stap.title}
+                </span>
 
-      {/* Mobiel */}
-      <div className="grid gap-3 sm:hidden">
-        <div className="relative pl-14">
-          <div className="absolute bottom-6 left-[22px] top-6 w-px bg-[var(--g-100)]">
-            <div
-              className="w-full origin-top bg-gradient-to-b from-[var(--g-400)] to-[var(--on-dark-accent)] transition-[height] duration-700 ease-out"
-              style={{ height: `${progressPct}%` }}
-              aria-hidden
-            />
-          </div>
-          {steps.map((step, i) => (
-            /* Geen ml-14 op de kaart: de wikkel heeft al pl-14. Samen was dat 112px
-               inspringing, waardoor de kaart op een scherm van 390px rechts wegviel. */
-            <div key={step.id} className="relative mb-3 last:mb-0">
-              <div className="absolute left-0 top-7">
-                <StepNode
-                  index={i}
-                  active={active === i}
-                  total={steps.length}
-                  onSelect={() => setActive(i)}
-                />
-              </div>
-              <StepCard
-                step={step}
-                active={active === i}
-                onSelect={() => setActive(i)}
-                className={`${cardBase} ${active === i ? cardActive : cardIdle}`}
-                variant={variant}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+                <span className="mt-3 block text-[14px] leading-6 text-[var(--t-body)]">
+                  {stap.body}
+                </span>
+
+                {/* De voortgang. Een vulling en geen lijn: dat is het verschil tussen
+                    huisstijl en sjabloon, en het is ook waarom de bak eronder in de
+                    inactieve kaarten gewoon zichtbaar mag blijven. */}
+                <span
+                  aria-hidden="true"
+                  className="mt-auto block h-1 w-full overflow-hidden rounded-[var(--r-pill)] bg-[var(--g-100)]"
+                >
+                  <span
+                    key={`${stap.id}-${aan ? actief : "uit"}`}
+                    className={`block h-full rounded-[var(--r-pill)] bg-[var(--g-400)] ${
+                      aan ? "werkwijze-vullen" : "w-0"
+                    }`}
+                    style={
+                      aan
+                        ? { animationDuration: `${DUUR_MS}ms` }
+                        : undefined
+                    }
+                  />
+                </span>
+                <span className="sr-only">
+                  Stap {i + 1} van {stappen.length}
+                </span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
     </div>
-  );
-}
-
-function StepCard({
-  step,
-  active,
-  onSelect,
-  className,
-  variant,
-}: {
-  step: WerkwijzeStep;
-  active: boolean;
-  onSelect: () => void;
-  className: string;
-  variant: "figma" | "opus";
-}) {
-  const titleClass =
-    variant === "figma"
-      ? "text-2xl tracking-[-.05em] text-[var(--t-strong)]"
-      : "diba-hp-step-title";
-
-  const bodyClass =
-    variant === "figma"
-      ? "mt-4 text-sm leading-6 text-[var(--t-body)]"
-      : "diba-hp-step-body mt-[var(--space-3)]";
-
-  return (
-    <button
-      type="button"
-      onClick={onSelect}
-      className={`${className} w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-400)] ${
-        active ? "cursor-default" : "cursor-pointer"
-      }`}
-      aria-pressed={active}
-    >
-      <h3
-        className={`${titleClass} ${active ? "text-[var(--g-700)]" : "text-[var(--t-strong)]"}`}
-      >
-        {step.title}
-      </h3>
-      <p className={`${bodyClass} ${active ? "text-[var(--t-body)]" : ""}`}>
-        {step.body}
-      </p>
-    </button>
   );
 }

@@ -37,7 +37,12 @@ const varianten = {
   // Donkergroene band: een blad dat dieper is dan het vlak, als reliëf. Dat is hier de
   // veilige kant op — een donkerder blad tilt het tekstcontrast juist omhoog (wit gaat
   // van 6,58 naar 7,06), waar een lichter blad het onder de norm duwt.
-  cta: "pointer-events-none absolute -right-14 -top-12 h-[240px] w-[240px] rotate-[188deg] text-[var(--g-800)]/45 sm:-right-16 sm:h-[320px] sm:w-[320px] lg:-right-20 lg:h-[400px] lg:w-[400px]",
+  // Het blad stak nauwelijks uit: op -top-12 hing hij binnen de band en las hij als een
+  // vlek in de hoek in plaats van als een vorm die van buiten het vlak binnenkomt. Nu is de
+  // voet fors boven de rand getild, zodat je rechtsboven een blad ziet dat de band
+  // binnendringt. De aansnijding blijft onder een kwart, want daarboven herken je de vorm
+  // niet meer. Verhouding blijft gelijk: verder omhoog gaat gelijk op met verder naar rechts.
+  cta: "pointer-events-none absolute -right-16 -top-28 h-[240px] w-[240px] rotate-[188deg] text-[var(--g-800)]/45 sm:-right-20 sm:-top-36 sm:h-[320px] sm:w-[320px] lg:-right-24 lg:-top-44 lg:h-[400px] lg:w-[400px]",
 } as const;
 
 export default function FigmaSoftAccent({

@@ -48,21 +48,18 @@ export const metadata: Metadata = {
  */
 const REGELS = [
   {
-    nr: "01",
     kop: "Eerst meten, dan pas behandelen",
     zin: "Elk traject begint met een meting, ook als je precies weet wat je wil. Zonder nulpunt is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.",
     kost:
       "Een afspraak die geen behandeling is. Een deel van de mensen haakt daar af, want ze wilden vandaag geholpen worden en niet gemeten.",
   },
   {
-    nr: "02",
     kop: "Nee zeggen mag, en gebeurt",
     zin: "Past een behandeling niet bij je huid, bij je hersteltijd of bij het moment, dan hoor je dat. Ook als je er speciaal voor gekomen bent.",
     kost:
       "Omzet, direct en meetbaar. Elke nee is een behandeling die niet geboekt wordt, en er staat niets tegenover behalve dat het klopt.",
   },
   {
-    nr: "03",
     kop: "Alle prijzen staan online",
     zin: "Per sessie, per zone, per variant, inclusief de duurste. Geen bedrag dat je pas hoort als je al op de stoel ligt.",
     kost:
@@ -70,14 +67,12 @@ const REGELS = [
     uitgelicht: true,
   },
   {
-    nr: "04",
     kop: "Bij elke behandeling staat wat hij niet kan",
     zin: "Op elke behandelpagina en bij elk apparaat staat de grens erbij, even nadrukkelijk als wat het wel doet. Een peeling neemt geen rimpels weg, want hij komt daar niet.",
     kost:
       "De helft van je verkooptekst. Een pagina die alleen voordelen opsomt verkoopt beter; hij levert alleen teleurstelling op bij de tweede afspraak.",
   },
   {
-    nr: "05",
     kop: "Geen belofte zonder getal",
     zin: "Geen resultaatgaranties, geen voor-en-na dat niet klopt, geen aantal sessies dat we niet kunnen onderbouwen. Wat we niet weten, zeggen we niet.",
     kost:
@@ -153,10 +148,9 @@ export default function OnsVerhaalPage() {
             <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
               <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
                 <div>
+                  {/* Hier stond het volgnummer op 64px. Een groot cijfer dat nergens naar
+                      verwijst is decoratie, en het label eronder zegt al wat dit is. */}
                   <Label opDonker>De duurste regel</Label>
-                  <p className="mt-4 text-[64px] leading-none font-medium tracking-[-.05em] text-[var(--on-dark-accent)] tabular-nums">
-                    {uitgelicht.nr}
-                  </p>
                   <h2 className="diba-display-m mt-5 max-w-[16ch]">
                     {uitgelicht.kop}
                   </h2>
@@ -201,14 +195,13 @@ export default function OnsVerhaalPage() {
           <ul className="mt-10 space-y-4">
             {rest.map((r) => (
               <li
-                key={r.nr}
+                key={r.kop}
                 className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11"
               >
                 <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
                   <div>
-                    <p className="diba-label text-[var(--t-label)]">
-                      Regel {r.nr}
-                    </p>
+                    {/* "Regel 01" is weg. De regels hebben geen volgorde en niemand
+                        verwijst ernaar met een nummer; de kop zegt genoeg. */}
                     <p className="mt-4 text-[30px] leading-[1.05] font-normal tracking-[-.05em] text-balance sm:text-[34px]">
                       {r.kop}
                     </p>

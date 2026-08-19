@@ -123,11 +123,25 @@ export type Apparaat = {
 
   /** Drie fasen van wat er gebeurt, in volgorde. [MEDISCHE-CHECK-ROJDA] */
   readonly fasen: readonly { readonly kop: string; readonly zin: string }[];
+
+  /**
+   * Het apparaat zoals het er bij ons bij staat, uit de eigen shoot.
+   *
+   * Niet elke pagina heeft er een. Waar hij ontbreekt is dat geen omissie maar een keuze:
+   * uit een opname is niet altijd af te leiden welk apparaat er precies op staat, en een
+   * foto onder de verkeerde naam is erger dan geen foto. Die paar volgen zodra iemand ze
+   * kan aanwijzen.
+   */
+  readonly foto?: { readonly src: string; readonly alt: string };
 };
 
 export const APPARATUUR: readonly Apparaat[] = [
   {
     slug: "eve-m",
+    foto: {
+      src: "/images/shoot/apparaat-eve-m.jpg",
+      alt: "Behandelaar plaatst een cliënt in de Eve-M huidscanner",
+    },
     naam: "Eve-M",
     categorie: "meten",
     kort: "De huidscanner waar elk traject mee begint. Meet, behandelt niet.",
@@ -164,6 +178,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "fotona",
+    foto: {
+      src: "/images/shoot/apparaat-fotona.jpg",
+      alt: "Het bedieningsscherm van de Fotona met het behandelmenu",
+    },
     naam: "Fotona TimeWalker",
     merk: "Fotona",
     categorie: "laser",
@@ -218,6 +236,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "gentle-laser-pro-u",
+    foto: {
+      src: "/images/shoot/apparaat-gentle-laser.jpg",
+      alt: "Laserontharing met beschermbrillen bij Diba Clinics",
+    },
     naam: "Gentle Laser Pro-U",
     merk: "Candela",
     categorie: "laser",
@@ -272,6 +294,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "nordlys-ipl",
+    foto: {
+      src: "/images/shoot/apparaat-nordlys.jpg",
+      alt: "De Nordlys van Candela met de handstukken in de houder",
+    },
     naam: "Nordlys",
     merk: "Candela",
     categorie: "licht",
@@ -326,6 +352,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "lumi-8",
+    foto: {
+      src: "/images/shoot/apparaat-lumi8.jpg",
+      alt: "Het Lumi-8 LED-paneel boven het gezicht van een cliënt",
+    },
     naam: "LUMI 8-LED",
     merk: "Lumi",
     categorie: "licht",
@@ -380,6 +410,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "hydrafacial-syndeo",
+    foto: {
+      src: "/images/shoot/apparaat-hydrafacial.jpg",
+      alt: "Het HydraFacial-handstuk op de huid, met het apparaat op de achtergrond",
+    },
     naam: "HydraFacial Syndeo",
     merk: "HydraFacial",
     categorie: "overig",
@@ -429,6 +463,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "skinpen-cit",
+    foto: {
+      src: "/images/shoot/apparaat-skinpen.jpg",
+      alt: "Het SkinPen-handstuk op het voorhoofd van een cliënt",
+    },
     naam: "SkinPen CIT",
     merk: "SkinPen",
     categorie: "needling",
@@ -478,6 +516,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "dermapen-4",
+    foto: {
+      src: "/images/shoot/apparaat-dermapen.jpg",
+      alt: "Het Dermapen-handstuk in gebruik bij een cliënt",
+    },
     naam: "Dermapen 4",
     merk: "Dermapen",
     categorie: "needling",
@@ -527,6 +569,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "u225",
+    foto: {
+      src: "/images/shoot/apparaat-u225.jpg",
+      alt: "Het U225-mesotherapiepistool op de hoofdhuid",
+    },
     naam: "U225 intradermale injector",
     merk: "U225",
     categorie: "injectie",
@@ -674,6 +720,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "peelinglijnen",
+    foto: {
+      src: "/images/shoot/apparaat-peelinglijn.jpg",
+      alt: "Een flacon Dermaceutic TCA naast een cliënt op de behandelbank",
+    },
     naam: "Peelinglijnen",
     merk: "Skin Tech Pharma, Image Skincare, ADO, Mesoestetic",
     categorie: "overig",

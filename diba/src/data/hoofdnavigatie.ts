@@ -23,6 +23,7 @@
  * niet zonder Rojda.
  */
 
+import { BEHANDELINGEN } from "@/data/behandelingen";
 import { BESTEMMINGEN, type Groep } from "@/data/symptoomzoeker";
 
 export type NavLink = {
@@ -48,6 +49,26 @@ export type NavUitgelicht = {
   readonly zin: string;
   readonly href: string;
   readonly knop: string;
+  /**
+   * De tweede ingang, als tekstlink onder de knop.
+   *
+   * Er zijn er twee die hier thuishoren en ze sluiten elkaar niet uit: het huidprofiel is
+   * voor wie weet wat hij heeft, de symptoomzoeker voor wie dat juist niet weet. Dat is
+   * precies dezelfde tweedeling als op de site zelf, dus ze horen hier naast elkaar.
+   *
+   * Wel in rangorde en niet als twee gelijke knoppen: één primaire stap per vlak blijft
+   * staan, anders is het weer kiezen in plaats van beginnen.
+   */
+  readonly tweede?: { readonly tekst: string; readonly href: string };
+  /**
+   * Het beeld boven het blok.
+   *
+   * De rechterkolom van een paneel is een halve pagina hoog en droeg vier regels tekst.
+   * Dat is veel wit voor weinig, en het maakte van het uitgelichte blok een voetnoot in
+   * plaats van een uitnodiging. Per paneel een andere opname, passend bij waar je net op
+   * geklikt hebt.
+   */
+  readonly foto?: { readonly src: string; readonly alt: string };
 };
 
 export type NavItem = {
@@ -58,6 +79,25 @@ export type NavItem = {
   readonly uitgelicht?: NavUitgelicht;
 };
 
+/**
+ * De eerste zin van `kort` bij een behandeling.
+ *
+ * Deze zinnen stonden hier leeg met de reden dat een behandeling in vier woorden
+ * omschrijven een medische uitspraak is die ik niet zonder Rojda schrijf. Dat klopt nog
+ * steeds, en daarom staat hier geen nieuwe tekst maar de eerste zin van het `kort`-veld
+ * dat de behandelpagina zelf al draagt. Dezelfde woorden, minder ervan.
+ *
+ * Zo is er ook maar één bron: past Rojda de omschrijving aan, dan verandert het menu mee
+ * en kan het er nooit iets anders beweren dan de pagina eronder.
+ */
+function kortZin(slug: string): string | undefined {
+  const b = BEHANDELINGEN.find((x) => x.slug === slug);
+  if (!b) return undefined;
+  const grens = b.kort.indexOf(". ");
+  const zin = grens === -1 ? b.kort : b.kort.slice(0, grens);
+  return zin.endsWith(".") ? zin.slice(0, -1) : zin;
+}
+
 /** Haalt een groep uit de bron en zet er de eerste vraag onder. */
 function uitGroep(groep: Groep): readonly NavLink[] {
   return BESTEMMINGEN.filter((b) => b.groep === groep).map((b) => ({
@@ -67,24 +107,97 @@ function uitGroep(groep: Groep): readonly NavLink[] {
   }));
 }
 
+/**
+ * De blokken rechts in de menupanelen.
+ *
+ * Ze stonden eerst alle drie op hetzelfde: het huidprofiel. Dat was een correctie op een
+ * eerdere versie waarin ze alle drie iets anders deden zonder samenhang, maar het sloeg
+ * door naar de andere kant: het menu bood drie keer dezelfde stap aan, ook als die niet
+ * paste bij waar je net op geklikt had.
+ *
+ * Nu volgt elk blok de ingang waar je vandaan komt, en dat is precies de volgorde die de
+ * site zelf ook aanhoudt:
+ *
+ * - Huidproblemen: je weet nog niet hoe het heet. Dus de symptoomzoeker, met het
+ *   huidprofiel als tweede stap.
+ * - Behandelingen: je weet wat er speelt en zoekt wat erbij past. Dus het huidprofiel, met
+ *   Behandeling Nul als tweede stap.
+ * - Over Diba: je kijkt naar ons en niet naar je huid. Dus wat klanten schrijven, want dat
+ *   is het enige oordeel dat niet van onszelf komt.
+ *
+ * Elk blok draagt een eigen opname. Geen van drieën is versiering: ze laten zien waar je
+ * terechtkomt.
+ */
+const ZOEKER_BLOK: NavUitgelicht = {
+  label: "Weet je niet hoe het heet",
+  kop: "Symptoomzoeker",
+  zin: "Kruis aan wat je ziet en wat je voelt, in gewone woorden. Geen vakterm nodig, en aan het eind weet je waar je moet zijn.",
+  href: "/huidproblemen/symptoomzoeker",
+  knop: "Naar de zoeker",
+  tweede: {
+    tekst: "Weet je het al? Vul je huidprofiel in",
+    href: "/huidprofiel",
+  },
+  foto: {
+    src: "/images/shoot/uitleg-huidlagen.jpg",
+    alt: "Behandelaar legt aan de hand van een doorsnedemodel van de huid uit wat er waar zit",
+  },
+};
+
+const HUIDPROFIEL_BLOK: NavUitgelicht = {
+  label: "Begin hier",
+  kop: "Je huidprofiel",
+  zin: "Negen vragen over je huid, je routine en wat je al geprobeerd hebt. De site onthoudt je antwoorden, dus je hoeft ze bij de intake niet opnieuw te vertellen.",
+  href: "/huidprofiel",
+  knop: "Vul het in",
+  tweede: {
+    tekst: "Liever eerst meten? Naar Behandeling Nul",
+    href: "/intake",
+  },
+  foto: {
+    src: "/images/shoot/apparaat-eve-m.jpg",
+    alt: "Behandelaar plaatst een cliënt in de Eve-M huidscanner",
+  },
+};
+
+const REVIEWS_BLOK: NavUitgelicht = {
+  label: "Openbaar en ongefilterd",
+  kop: "Wat klanten zeggen",
+  zin: "Alle reviews staan op Salonized, met datum en zonder selectie vooraf. Wij kunnen er niets uithalen en niets bijzetten.",
+  href: "/reviews",
+  knop: "Lees de reviews",
+  tweede: {
+    tekst: "Liever eerst het team zien?",
+    href: "/team",
+  },
+  foto: {
+    src: "/images/shoot/ontvangst-koffie.jpg",
+    alt: "Een cliënt krijgt koffie aangereikt bij Diba Clinics",
+  },
+};
+
 export const HOOFDNAV: readonly NavItem[] = [
   {
     label: "Huidproblemen",
     href: "/huidproblemen",
     kolommen: [
+      {
+        kop: "Weet je niet hoe het heet",
+        items: [
+          {
+            label: "Symptoomzoeker",
+            href: "/huidproblemen/symptoomzoeker",
+            zin: "Kruis aan wat je ziet en voelt, zonder vakterm",
+          },
+        ],
+      },
       { kop: "Wij behandelen dit", items: uitGroep("behandelen"), breed: true },
       {
         kop: "Hier hoort een arts bij",
         items: [...uitGroep("doorverwijzen"), ...uitGroep("niet")],
       },
     ],
-    uitgelicht: {
-      label: "Weet je niet hoe het heet",
-      kop: "Symptoomzoeker",
-      zin: "Kruis aan wat je ziet en voelt, in gewone woorden. Geen vakterm nodig.",
-      href: "/huidproblemen/symptoomzoeker",
-      knop: "Naar de zoeker",
-    },
+    uitgelicht: ZOEKER_BLOK,
   },
   {
     label: "Behandelingen",
@@ -94,9 +207,14 @@ export const HOOFDNAV: readonly NavItem[] = [
         kop: "Begin hier",
         items: [
           {
+            label: "Behandeling Nul",
+            href: "/intake",
+            zin: "De afspraak waarin niet behandeld wordt",
+          },
+          {
             label: "Je huidprofiel",
             href: "/huidprofiel",
-            zin: "Acht stappen, en de site onthoudt het",
+            zin: "Negen stappen, en de site onthoudt het",
           },
           {
             label: "Alle behandelingen",
@@ -116,19 +234,44 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Consult met Eve-M",
             href: "/behandelingen/huidanalyse",
-            zin: "De nulmeting",
+            zin: kortZin("huidanalyse"),
           },
-          { label: "HydraFacial", href: "/behandelingen/hydrafacial" },
-          { label: "SkinPen microneedling", href: "/behandelingen/skinpen" },
-          { label: "Medische peelings", href: "/behandelingen/peelings" },
-          { label: "Fotona TimeWalker", href: "/behandelingen/fotona" },
-          { label: "Nordlys IPL", href: "/behandelingen/nordlys-ipl" },
+          {
+            label: "HydraFacial",
+            href: "/behandelingen/hydrafacial",
+            zin: kortZin("hydrafacial"),
+          },
+          {
+            label: "SkinPen Microneedling",
+            href: "/behandelingen/skinpen",
+            zin: kortZin("skinpen"),
+          },
+          {
+            label: "Medische peelings",
+            href: "/behandelingen/peelings",
+            zin: kortZin("peelings"),
+          },
+          {
+            label: "Fotona TimeWalker",
+            href: "/behandelingen/fotona",
+            zin: kortZin("fotona"),
+          },
+          {
+            label: "Nordlys IPL",
+            href: "/behandelingen/nordlys-ipl",
+            zin: kortZin("nordlys-ipl"),
+          },
         ],
       },
       {
         kop: "Laserontharing",
         items: [
-          { label: "Hoe het werkt", href: "/laserontharing", binnenkort: true },
+          {
+            label: "Hoe het werkt",
+            href: "/laserontharing",
+            zin: kortZin("laserontharing"),
+            binnenkort: true,
+          },
           {
             label: "Zones en prijzen",
             href: "/laserontharing/configurator",
@@ -143,13 +286,7 @@ export const HOOFDNAV: readonly NavItem[] = [
         ],
       },
     ],
-    uitgelicht: {
-      label: "Begin hier",
-      kop: "Behandeling Nul",
-      zin: "De afspraak waarin niet behandeld wordt. Eerst meten, dan pas een plan, en soms is dat geen plan.",
-      href: "/intake",
-      knop: "Wat er gebeurt",
-    },
+    uitgelicht: HUIDPROFIEL_BLOK,
   },
   {
     label: "Resultaten",
@@ -166,16 +303,46 @@ export const HOOFDNAV: readonly NavItem[] = [
       {
         kop: "Wie wij zijn",
         items: [
-          { label: "Over ons", href: "/over-ons", binnenkort: true },
-          { label: "Ons verhaal", href: "/ons-verhaal", binnenkort: true },
-          { label: "Het team", href: "/team", binnenkort: true },
-          { label: "Werken bij Diba", href: "/werken-bij", binnenkort: true },
-          { label: "Contact", href: "/contact", binnenkort: true },
+          {
+            label: "Over ons",
+            href: "/over-ons",
+            zin: "De kliniek in Hillegersberg",
+            binnenkort: true,
+          },
+          {
+            label: "Ons verhaal",
+            href: "/ons-verhaal",
+            zin: "Vijf regels, en wat ze kosten",
+            binnenkort: true,
+          },
+          {
+            label: "Het team",
+            href: "/team",
+            zin: "Acht mensen, en wie wat doet",
+            binnenkort: true,
+          },
+          {
+            label: "Werken bij Diba",
+            href: "/werken-bij",
+            zin: "Twee vacatures en een open sollicitatie",
+            binnenkort: true,
+          },
+          {
+            label: "Contact",
+            href: "/contact",
+            zin: "Adres, tijden en hoe snel we antwoorden",
+            binnenkort: true,
+          },
         ],
       },
       {
         kop: "Waar wij voor staan",
         items: [
+          {
+            label: "Wat klanten zeggen",
+            href: "/reviews",
+            zin: "Alles op Salonized, zonder selectie vooraf",
+          },
           {
             label: "Ons verbond",
             href: "/ons-verbond",
@@ -184,24 +351,30 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Dit behandelen wij niet",
             href: "/dit-behandelen-wij-niet",
+            zin: "Drie soorten nee, en waar dan wel",
           },
           {
             label: "Is het wel nodig",
             href: "/is-het-nodig",
+            zin: "Wat er gebeurt als je niets doet",
             binnenkort: true,
           },
-          { label: "Nazorg", href: "/nazorg", binnenkort: true },
-          { label: "Voor wie", href: "/doelgroep", binnenkort: true },
+          {
+            label: "Nazorg",
+            href: "/nazorg",
+            zin: "Per behandeling: wanneer alles weer mag",
+            binnenkort: true,
+          },
+          {
+            label: "Voor wie",
+            href: "/doelgroep",
+            zin: "Vier groepen, dezelfde behandellijst",
+            binnenkort: true,
+          },
         ],
       },
     ],
-    uitgelicht: {
-      label: "Openbaar en ongefilterd",
-      kop: "Wat klanten zeggen",
-      zin: "Alle reviews staan op Salonized, met datum en zonder selectie vooraf.",
-      href: "/reviews",
-      knop: "Lees de reviews",
-    },
+    uitgelicht: REVIEWS_BLOK,
   },
 ];
 

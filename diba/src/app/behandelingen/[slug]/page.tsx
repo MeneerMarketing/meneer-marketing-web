@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
 import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
 import Variantkiezer from "@/components/behandelingen/Variantkiezer";
@@ -100,108 +101,141 @@ export default async function BehandelingPage({ params }: PageProps) {
         ])}
       />
 
-      {/* ── Hero ── */}
+      {/* ── De hero ──
+
+          Het groene blok stond in een eigen kolom naast alles wat links stond: kruimelpad,
+          kop, foto, omschrijving en knoppen. Daardoor was het net zo hoog als die hele
+          kolom en liep het ruim onder de foto door, met een leeg groen vlak als gevolg.
+
+          Nu staan de foto en het blok samen in een eigen rij met `items-stretch`. Die twee
+          zijn daarmee per definitie even hoog: de een kan niet groeien zonder de ander. De
+          kop staat erboven en de omschrijving eronder, allebei over de volle breedte.
+
+          Dat laatste is meteen waarom de omschrijving nu op één regel past. Hij stond in
+          een kolom van nog geen halve pagina en brak daardoor telkens af halverwege een
+          zin die als geheel bedoeld is. */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
-          <div>
-            <nav
-              aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
-            >
-              <Link href="/" className="hover:text-[var(--g-700)]">
-                Home
-              </Link>
-              <span aria-hidden="true">/</span>
-              <Link href="/behandelingen" className="hover:text-[var(--g-700)]">
-                Behandelingen
-              </Link>
-              <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">{b.naam}</span>
-            </nav>
+        <div className="py-14 lg:py-20">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label flex flex-wrap gap-2"
+          >
+            <Link href="/" className="hover:text-[var(--g-700)]">
+              Home
+            </Link>
+            <span aria-hidden="true">/</span>
+            <Link href="/behandelingen" className="hover:text-[var(--g-700)]">
+              Behandelingen
+            </Link>
+            <span aria-hidden="true">/</span>
+            <span className="text-[var(--t-muted)]">{b.naam}</span>
+          </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[16ch]">{b.naam}</h1>
+          <h1 className="diba-display-l mt-6 max-w-[16ch]">{b.naam}</h1>
 
-            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(b.kort)}
-            </p>
-
-            {apparaten.length > 0 ? (
-              <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-7 text-[var(--t-body)]">
-                <span className="text-[var(--t-muted)]">Draait op</span>
-                {apparaten.map((a, i) => (
-                  <span key={a.slug}>
-                    <Link
-                      href={`/apparatuur/${a.slug}`}
-                      className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-                    >
-                      {a.naam}
-                    </Link>
-                    {i < apparaten.length - 1 ? <span>,</span> : null}
-                  </span>
-                ))}
-              </p>
+          {/* ── De rij: wat je ziet, naast wat je moet weten ── */}
+          <div
+            className={`mt-8 grid gap-6 lg:items-stretch ${
+              b.foto ? "lg:grid-cols-[1.08fr_0.92fr]" : ""
+            }`}
+          >
+            {b.foto ? (
+              <BeeldVignet
+                src={b.foto.src}
+                alt={b.foto.alt}
+                onderschrift={
+                  b.apparaat && b.apparaat !== b.naam
+                    ? `${b.naam} · ${b.apparaat}`
+                    : b.naam
+                }
+                priority
+                sizes="(min-width: 1024px) 52vw, 92vw"
+                className="aspect-[4/3] lg:aspect-auto lg:min-h-[520px]"
+              />
             ) : null}
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Link
-                href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-              >
-                Plan Behandeling Nul
-              </Link>
-              <Link
-                href="/behandelingen"
-                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-              >
-                Vergelijk met de rest
-              </Link>
+            {/* De getallen die het verschil maken, meteen in beeld. */}
+            <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
+              <Label opDonker>In het kort</Label>
+              {/* Vier regels op een eigen vlak in plaats van achter een haarlijn: de
+                  huisregel is vullingen, en op --g-800 haalt de tekst 7,57 tegen 4,08 op
+                  een doorschijnend wit vlak. "Hoe lang" is er nieuw bij; dat is de vraag
+                  die bepaalt of je er vrij voor moet nemen. */}
+              <dl className="mt-6 space-y-2">
+                {[
+                  [
+                    "Hoe diep",
+                    diepsteLaag ? diepsteLaag.naam : "Raakt niets",
+                  ] as const,
+                  b.duurMinuten
+                    ? (["Hoe lang", `${b.duurMinuten} minuten`] as const)
+                    : null,
+                  ["Herstel", publicCopy(b.herstel)] as const,
+                  [
+                    "Hoe vaak",
+                    publicCopy(b.sessies, "Nog niet vastgesteld"),
+                  ] as const,
+                ]
+                  .filter((rij): rij is NonNullable<typeof rij> => rij !== null)
+                  .map(([kop, waarde]) => (
+                    <div
+                      key={kop}
+                      className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-5 py-4"
+                    >
+                      <dt className="diba-label diba-label-on-dark shrink-0">
+                        {kop}
+                      </dt>
+                      <dd className="diba-card-title text-right">{waarde}</dd>
+                    </div>
+                  ))}
+              </dl>
+
+              {/* De prijs staat buiten de dl, want het is geen enkel getal meer maar een
+                  keuze. Alle varianten even zichtbaar, ook de duurste. */}
+              <div className="mt-4">
+                <Variantkiezer
+                  varianten={b.varianten ?? []}
+                  basisprijs={b.prijs}
+                />
+              </div>
             </div>
           </div>
 
-          {/* De drie getallen die het verschil maken, meteen in beeld. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
-            <Label opDonker>In het kort</Label>
-            {/* Vier regels op een eigen vlak in plaats van achter een haarlijn: de
-                huisregel is vullingen, en op --g-800 haalt de tekst 7,57 tegen 4,08 op
-                een doorschijnend wit vlak. "Hoe lang" is er nieuw bij; dat is de vraag
-                die bepaalt of je er vrij voor moet nemen. */}
-            <dl className="mt-6 space-y-2">
-              {[
-                [
-                  "Hoe diep",
-                  diepsteLaag ? diepsteLaag.naam : "Raakt niets",
-                ] as const,
-                b.duurMinuten
-                  ? (["Hoe lang", `${b.duurMinuten} minuten`] as const)
-                  : null,
-                ["Herstel", publicCopy(b.herstel)] as const,
-                [
-                  "Hoe vaak",
-                  publicCopy(b.sessies, "Nog niet vastgesteld"),
-                ] as const,
-              ]
-                .filter((r): r is NonNullable<typeof r> => r !== null)
-                .map(([kop, waarde]) => (
-                  <div
-                    key={kop}
-                    className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-5 py-4"
-                  >
-                    <dt className="diba-label diba-label-on-dark shrink-0">
-                      {kop}
-                    </dt>
-                    <dd className="diba-card-title text-right">{waarde}</dd>
-                  </div>
-                ))}
-            </dl>
+          {/* ── Onder de rij, over de volle breedte ── */}
+          <p className="mt-8 text-[17px] leading-8 text-[var(--t-body)]">
+            {publicCopy(b.kort)}
+          </p>
 
-            {/* De prijs staat buiten de dl, want het is geen enkel getal meer maar een
-                keuze. Alle varianten even zichtbaar, ook de duurste. */}
-            <div className="mt-4">
-              <Variantkiezer
-                varianten={b.varianten ?? []}
-                basisprijs={b.prijs}
-              />
-            </div>
+          {apparaten.length > 0 ? (
+            <p className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-7 text-[var(--t-body)]">
+              <span className="text-[var(--t-muted)]">Draait op</span>
+              {apparaten.map((a, i) => (
+                <span key={a.slug}>
+                  <Link
+                    href={`/apparatuur/${a.slug}`}
+                    className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                  >
+                    {a.naam}
+                  </Link>
+                  {i < apparaten.length - 1 ? <span>,</span> : null}
+                </span>
+              ))}
+            </p>
+          ) : null}
+
+          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+            <Link
+              href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            >
+              Plan Behandeling Nul
+            </Link>
+            <Link
+              href="/behandelingen"
+              className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              Vergelijk met de rest
+            </Link>
           </div>
         </div>
       </section>
@@ -341,16 +375,17 @@ export default async function BehandelingPage({ params }: PageProps) {
               <span className="diba-accent">in volgorde.</span>
             </h2>
 
+            {/* Geen "Stap 1, Stap 2, Stap 3" boven deze kaarten. De kop erboven zegt al
+                "in volgorde", de kaarten staan van links naar rechts, en het is een
+                genummerde lijst. Drie keer dezelfde mededeling, waarvan er twee alleen
+                als opmaak leesbaar zijn. */}
             <ol className="mt-12 grid gap-4 md:grid-cols-3">
-              {(b.stappen ?? []).map((s, i) => (
+              {(b.stappen ?? []).map((s) => (
                 <li
                   key={s.kop}
                   className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
                 >
-                  <span className="diba-label text-[var(--t-muted)] tabular-nums">
-                    Stap {i + 1}
-                  </span>
-                  <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+                  <p className="diba-card-title text-[var(--t-strong)]">
                     {s.kop}
                   </p>
                   <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">

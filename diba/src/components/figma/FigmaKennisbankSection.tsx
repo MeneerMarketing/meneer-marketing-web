@@ -46,8 +46,12 @@ export default function FigmaKennisbankSection({
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition duration-500 group-hover:scale-[1.03]"
                 />
+                {/* Hier lag groen over groen: van mint naar donkergroen, over de volle
+                    hoogte van de foto. De chip linksboven draagt zijn eigen witte vlak, dus
+                    er was niets dat leesbaar gehouden hoefde te worden. Nu een neutraal
+                    vignet dat alleen onderin aanzet, zodat de kaartrand niet wegvalt. */}
                 <div
-                  className="absolute inset-0 bg-[linear-gradient(180deg,rgba(148,188,138,.35)_0%,rgba(40,105,67,.22)_100%)]"
+                  className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/28 via-transparent to-transparent"
                   aria-hidden="true"
                 />
                 <span className="diba-label absolute left-4 top-4 rounded-[var(--r-pill)] bg-white/90 px-3.5 py-1.5 text-[var(--g-700)] backdrop-blur-[2px]">

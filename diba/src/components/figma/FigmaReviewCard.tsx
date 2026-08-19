@@ -1,5 +1,3 @@
-"use client";
-
 import type { Review } from "@/data/reviews";
 import { primaryReviewTopic, reviewTopicLabel } from "@/data/reviews";
 

@@ -103,7 +103,7 @@ export default function FigmaVoorJouSection() {
               src={selectedIntent.image}
               alt={selectedIntent.imageAlt}
               fill
-              className="object-cover mix-blend-multiply transition-opacity duration-500"
+              className="object-cover transition-opacity duration-500"
               sizes="(min-width: 1024px) 44vw, 100vw"
             />
           </div>

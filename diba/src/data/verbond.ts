@@ -16,7 +16,6 @@
  */
 
 export type Weigering = {
-  readonly nummer: string;
   readonly regel: string;
   readonly uitleg: string;
   /** Wat deze regel ons kost. Zonder die kolom is het geen belofte maar een slogan. */
@@ -27,7 +26,6 @@ export type Weigering = {
 
 export const WEIGERINGEN: readonly Weigering[] = [
   {
-    nummer: "01",
     regel: "Wij beloven niets wat we niet kunnen meten",
     uitleg:
       "Geen percentages die we niet zelf hebben vastgesteld, geen jaren jonger, en geen aantal sessies dat we niet waar kunnen maken. Staat er een getal op deze site, dan komt het ergens vandaan.",
@@ -38,7 +36,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
     },
   },
   {
-    nummer: "02",
     regel: "Wij verkopen niets waarvan we weten dat het te weinig oplevert",
     uitleg:
       "Bij een wit litteken van tien jaar oud, bij diep pigment, bij schaduw onder je ogen: dan rekenen we het voor en raden we het af. Ook als je erom vraagt.",
@@ -49,7 +46,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
     },
   },
   {
-    nummer: "03",
     regel: "Wij behandelen niet wat bij een arts hoort",
     uitleg:
       "Moedervlekken, eczeem, psoriasis en onbegrepen uitslag gaan naar de huisarts of de dermatoloog. Die pagina's hebben bij ons niet eens een afspraakknop.",
@@ -60,7 +56,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
     },
   },
   {
-    nummer: "04",
     regel: "Wij beoordelen geen moedervlekken en verwijderen ze niet",
     uitleg:
       "Ook niet als je er alleen maar vanaf wilt. Wat weg is kan niet meer onderzocht worden, en dat risico is niet aan ons om te nemen. Bij elke behandeling dekken we ze af.",
@@ -71,7 +66,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
     },
   },
   {
-    nummer: "05",
     regel: "Wij behandelen niet op een huid die daar niet klaar voor is",
     uitleg:
       "Actieve acne, een kapotte barrière, een geïrriteerde huid of een verse zonvakantie: dan gaat de afspraak niet door. Je gaat naar huis met minder in plaats van meer.",
@@ -82,7 +76,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
     },
   },
   {
-    nummer: "06",
     regel: "Wij beginnen niet in het verkeerde seizoen",
     uitleg:
       "Pigment en melasma behandelen we liever in het najaar. In juni werk je tegen de zon in, en dan betaal je voor een resultaat dat de zomer niet haalt.",
@@ -90,7 +83,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
     zieOok: { tekst: "Zie het zonjaar", pad: "/huidproblemen/pigmentvlekken" },
   },
   {
-    nummer: "07",
     regel: "Wij doen niets aan volume en niets aan lichaamsvorm",
     uitleg:
       "Geen injectables, geen volumeopbouw, en geen behandeling tegen cellulitis. Dat zijn geen huidbehandelingen, en bij cellulitis kan niemand waarmaken wat er beloofd wordt.",
@@ -101,7 +93,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
     },
   },
   {
-    nummer: "08",
     regel: "Wij verkopen geen pakketten en geen abonnementen",
     uitleg:
       "Geen serie die je vooruit betaalt, geen strippenkaart, en geen routine met acht stappen. We spreken een aantal sessies af met een moment waarop we opnieuw kijken.",
@@ -109,14 +100,12 @@ export const WEIGERINGEN: readonly Weigering[] = [
     zieOok: { tekst: "Zie de poriënpagina", pad: "/huidproblemen/porien#nee" },
   },
   {
-    nummer: "09",
     regel: "Wij werken niet met korting, sale of schaarste",
     uitleg:
       "Geen actieprijs, geen nog twee plekken deze week, en geen aanbod dat vandaag afloopt. Een behandeling die je vanwege korting kiest, was niet de behandeling die je nodig had.",
     kost: "De hele gereedschapskist waarmee de rest van de branche zijn agenda vult, ligt bij ons dicht.",
   },
   {
-    nummer: "10",
     regel:
       "Wij tonen geen resultaat dat we niet onder hetzelfde licht hebben gemeten",
     uitleg:

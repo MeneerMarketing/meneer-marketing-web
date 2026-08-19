@@ -4,266 +4,276 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { ACNE_STADIA } from "@/data/acne";
 import { publicCopy } from "@/lib/copy-flags";
-import { RASTER_SECTIE } from "@/lib/raster";
 
 /**
- * Onder je huid — een doorsnede die je door de vier stadia kunt klikken.
+ * Onder je huid — één porie die je door de vier stadia heen ziet veranderen.
  *
- * Dit verving vier kaartjes met "01 02 03 04" erboven. Die nummers zijn een sjabloon en
- * geen gedachte: de volgorde blijkt hier uit de tekening zelf, en per stadium zie je
- * wát er verandert in plaats van dat je het moet lezen.
+ * WAT ER MIS WAS.
  *
- * De echte educatieve winst zit in het derde blok van elk stadium: bij elk punt in dit
- * proces is er een ándere lever. Daarom werkt harder poetsen niet — dat grijpt aan op
- * stadium twee en maakt stadium vier erger.
+ * De tekening was er wel, maar hij was klein en zweefde linksboven in een kaart die twee
+ * keer zo groot was. Daardoor las hij als een pictogram in plaats van als een doorsnede.
+ * Er was ook geen huid te zien: één buisje en een bolletje, zonder lagen, dus je keek naar
+ * een schema zonder te weten waar je naar keek. En de vier stadia stonden als losse pillen
+ * onderaan, waardoor je nergens zag dat het een volgorde was: je kon op vier knoppen
+ * drukken en het leek vier keer iets anders in plaats van vier keer verderop.
  *
- * Alles is schema, geen huid: A10 verbiedt AI-gegenereerde huid, en een doorsnede in
- * lijnen leest hier ook beter dan een foto ooit zou doen.
+ * WAT ER NU STAAT.
+ *
+ * De doorsnede vult de kaart en toont echte lagen: hoornlaag, opperhuid, lederhuid, met de
+ * porie die er dwars doorheen loopt en de talgklier onderin. Dat is meteen de reden dat
+ * dit een tekening moet zijn en geen foto: op een foto zie je alleen de bovenkant, en het
+ * hele punt van deze sectie is dat het probleem eronder zit. (A10 verbiedt bovendien
+ * AI-huid, en dit is geen omweg om die regel heen maar de betere vorm.)
+ *
+ * De vier stadia bouwen op in dezelfde porie. Je ziet dus niet vier plaatjes maar één
+ * porie die dichtslibt, en daardoor is te zien wat de tekst zegt: bij elk punt zit een
+ * andere knop. Harder schrobben grijpt aan op stadium twee en maakt stadium vier erger.
+ *
+ * De balk onder de tekening is een vulling en geen streepje per stap: hij loopt door de
+ * vier stadia heen, zodat je ziet hoe ver in het proces je kijkt. Vullingen en geen
+ * lijnen, zoals overal.
+ *
+ * KLEUR.
+ *
+ * Alles staat in de groentinten, op één uitzondering: de ontsteking gebruikt --warn, de
+ * grafische oker. Dat is de enige plek waar een andere kleur iets betekent in plaats van
+ * dat hij versiert. Rood zou hier misstaan; het gaat om een reactie van je afweer en niet
+ * om alarm.
  */
+
+/** Hoe ver het proces gevorderd is, per stadium. Bepaalt wat de tekening laat zien. */
+type Fase = 0 | 1 | 2 | 3;
+
 export default function AcneOnderDeHuid() {
-  const [actief, setActief] = useState(0);
+  const [actief, setActief] = useState<Fase>(0);
   const stadium = ACNE_STADIA[actief];
 
-  /** Hoeveel van het proces is bereikt: bepaalt wat de tekening laat zien. */
-  const talg = actief >= 0;
-  const dicht = actief >= 1;
-  const bacterie = actief >= 2;
+  const verhoornd = actief >= 1;
+  const afgesloten = actief >= 2;
   const ontstoken = actief >= 3;
 
   return (
-    <div className={`mt-12 ${RASTER_SECTIE}`}>
+    <div className="mt-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch lg:gap-12">
       {/* ── De doorsnede ── */}
-      <div className="rounded-[var(--r-md)] bg-white p-5 sm:p-7">
+      <div className="flex flex-col rounded-[var(--r-md)] bg-white p-5 sm:p-7">
         <svg
-          viewBox="0 0 420 300"
-          className="w-full"
+          viewBox="0 0 400 460"
+          className="w-full flex-1"
+          preserveAspectRatio="xMidYMid meet"
           role="img"
-          aria-label={`Doorsnede van de huid, stadium: ${stadium.naam}. ${stadium.merkbaar}`}
+          aria-label={`Doorsnede van de huid bij stadium ${actief + 1} van 4: ${stadium.naam}. ${publicCopy(stadium.merkbaar)}`}
         >
-          {/* Huidoppervlak */}
-          <line
-            x1="20"
-            y1="70"
-            x2="400"
-            y2="70"
-            stroke="var(--g-300)"
-            strokeWidth="1.5"
-          />
-          <text
-            x="20"
-            y="56"
-            className="fill-[var(--t-muted)] text-[10px] font-semibold uppercase [letter-spacing:0.12em]"
-          >
-            Huidoppervlak
-          </text>
+          {/* ── De lagen, van buiten naar binnen ── */}
+          <rect x="0" y="70" width="400" height="34" fill="var(--g-100)" />
+          <rect x="0" y="104" width="400" height="126" fill="var(--g-050)" />
+          <rect x="0" y="230" width="400" height="230" fill="var(--g-025)" />
 
-          {/* Bovenste huidlaag als lichte band */}
-          <rect x="20" y="70" width="380" height="26" fill="var(--g-050)" />
+          {/* De lederhuid kleurt mee als het ontstoken raakt: de reactie zit rondom de
+              porie en niet erin. Vandaar een cirkel en geen vlak. */}
+          {ontstoken ? (
+            <circle cx="200" cy="250" r="150" fill="var(--warn)" opacity="0.13" />
+          ) : null}
 
-          {/* De porie: twee wanden die naar elkaar toe komen als hij dichtgaat */}
+          {/* ── De porie ──
+              Twee zijwanden die naar beneden toe smaller worden. Bij verhoorning knijpt de
+              opening dicht: dezelfde vorm, andere x. */}
           <path
             d={
-              dicht
-                ? "M186 70 C188 120 190 150 194 196"
-                : "M180 70 C182 120 184 150 188 196"
+              verhoornd
+                ? "M176 70 L188 300 L212 300 L224 70 Z"
+                : "M168 70 L188 300 L212 300 L232 70 Z"
             }
-            fill="none"
-            stroke="var(--g-300)"
-            strokeWidth="1.5"
-            className="transition-all duration-500 ease-[var(--ease-diba)] motion-reduce:transition-none"
+            fill="var(--g-200)"
+            className="transition-all duration-500"
           />
+
+          {/* Talg in de porie. Loopt voller naarmate hij minder weg kan. */}
           <path
             d={
-              dicht
-                ? "M234 70 C232 120 230 150 226 196"
-                : "M240 70 C238 120 236 150 232 196"
+              afgesloten
+                ? "M178 88 L188 298 L212 298 L222 88 Z"
+                : verhoornd
+                  ? "M180 150 L188 298 L212 298 L220 150 Z"
+                  : "M184 210 L188 298 L212 298 L216 210 Z"
             }
-            fill="none"
-            stroke="var(--g-300)"
-            strokeWidth="1.5"
-            className="transition-all duration-500 ease-[var(--ease-diba)] motion-reduce:transition-none"
+            fill="var(--g-400)"
+            opacity="0.55"
+            className="transition-all duration-500"
           />
 
-          {/* Talgklier */}
-          <ellipse
-            cx="210"
-            cy="222"
-            rx="42"
-            ry="30"
-            fill={talg ? "var(--g-200)" : "var(--g-050)"}
-            stroke="var(--g-300)"
-            strokeWidth="1.5"
-            className="transition-all duration-500 motion-reduce:transition-none"
+          {/* ── De talgklier ── */}
+          <ellipse cx="200" cy="330" rx="52" ry="34" fill="var(--g-300)" />
+          <ellipse cx="200" cy="330" rx="30" ry="19" fill="var(--g-400)" opacity="0.5" />
+
+          {/* De haarschacht: het kanaal waar het langs omhoog gaat. */}
+          <path
+            d="M200 300 L200 74"
+            stroke="var(--g-600)"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            opacity={afgesloten ? 0.25 : 0.55}
+            className="transition-opacity duration-500"
           />
+
+          {/* ── Verhoorning: schilfers die aan de rand blijven plakken ── */}
+          {verhoornd
+            ? [
+                [172, 78],
+                [226, 80],
+                [178, 92],
+                [220, 94],
+                [175, 106],
+                [223, 108],
+              ].map(([x, y]) => (
+                <rect
+                  key={`s-${x}-${y}`}
+                  x={x - 6}
+                  y={y - 3}
+                  width="12"
+                  height="6"
+                  rx="3"
+                  fill="var(--g-600)"
+                  opacity="0.45"
+                />
+              ))
+            : null}
+
+          {/* ── Bacterie: stipjes in de afgesloten porie ── */}
+          {afgesloten
+            ? [
+                [194, 140],
+                [207, 162],
+                [192, 186],
+                [209, 208],
+                [196, 232],
+                [206, 256],
+              ].map(([x, y]) => (
+                <circle
+                  key={`b-${x}-${y}`}
+                  cx={x}
+                  cy={y}
+                  r="5"
+                  fill="var(--g-800)"
+                  opacity="0.7"
+                />
+              ))
+            : null}
+
+          {/* ── Ontsteking: de bult die je in de spiegel ziet ── */}
+          {ontstoken ? (
+            <>
+              <path
+                d="M148 70 Q200 16 252 70 Z"
+                fill="var(--warn)"
+                opacity="0.55"
+              />
+              <path
+                d="M170 66 Q200 40 230 66 Z"
+                fill="var(--warn)"
+                opacity="0.85"
+              />
+            </>
+          ) : null}
+
+          {/* ── Het huidoppervlak ──
+              Als laatste getekend, zodat de bult er netjes tegenaan sluit. */}
+          <rect
+            x="0"
+            y="66"
+            width="400"
+            height="5"
+            fill="var(--g-700)"
+            opacity="0.35"
+          />
+
+          {/* ── Waar je naar kijkt ── */}
           <text
-            x="210"
-            y="272"
-            textAnchor="middle"
-            className="fill-[var(--t-muted)] text-[10px] font-semibold uppercase [letter-spacing:0.12em]"
+            x="16"
+            y="52"
+            fill="var(--t-muted)"
+            fontSize="15"
+            letterSpacing="1.6"
           >
-            Talgklier
+            HUIDOPPERVLAK
           </text>
-
-          {/* Talgdruppels die omhoog komen */}
-          <g
-            className="transition-opacity duration-500 motion-reduce:transition-none"
-            opacity={talg ? 1 : 0}
+          <text
+            x="16"
+            y="440"
+            fill="var(--t-muted)"
+            fontSize="15"
+            letterSpacing="1.6"
           >
-            {[
-              [210, 196],
-              [204, 174],
-              [216, 152],
-              [208, 130],
-            ].map(([x, y], i) => (
-              <circle
-                key={i}
-                cx={x}
-                cy={y}
-                r={4.5}
-                fill="var(--g-400)"
-                opacity={0.55 + i * 0.1}
-              />
-            ))}
-          </g>
-
-          {/* Verhoornde cellen die de opening dichtplakken */}
-          <g
-            className="transition-opacity duration-500 motion-reduce:transition-none"
-            opacity={dicht ? 1 : 0}
-          >
-            {[
-              [193, 84],
-              [206, 79],
-              [219, 84],
-              [228, 90],
-              [199, 92],
-              [214, 91],
-            ].map(([x, y], i) => (
-              <rect
-                key={i}
-                x={x}
-                y={y}
-                width="8"
-                height="6"
-                rx="2"
-                fill="var(--g-300)"
-                transform={`rotate(${i * 23} ${x + 4} ${y + 3})`}
-              />
-            ))}
-          </g>
-
-          {/* Bacterie: kleine staafjes in de afgesloten porie */}
-          <g
-            className="transition-opacity duration-500 motion-reduce:transition-none"
-            opacity={bacterie ? 1 : 0}
-          >
-            {[
-              [204, 118],
-              [216, 136],
-              [206, 154],
-              [218, 170],
-            ].map(([x, y], i) => (
-              <rect
-                key={i}
-                x={x}
-                y={y}
-                width="9"
-                height="3.5"
-                rx="1.75"
-                fill="var(--g-700)"
-                transform={`rotate(${30 + i * 40} ${x + 4.5} ${y + 1.75})`}
-              />
-            ))}
-          </g>
-
-          {/* Ontsteking: een warme halo rond de porie */}
-          <g
-            className="transition-opacity duration-700 motion-reduce:transition-none"
-            opacity={ontstoken ? 1 : 0}
-          >
-            <ellipse
-              cx="210"
-              cy="130"
-              rx="70"
-              ry="62"
-              fill="var(--error)"
-              opacity="0.10"
-            />
-            <ellipse
-              cx="210"
-              cy="130"
-              rx="48"
-              ry="44"
-              fill="var(--error)"
-              opacity="0.14"
-            />
-            {/* De zwelling boven het oppervlak */}
-            <path
-              d="M170 70 C176 40 244 40 250 70 Z"
-              fill="var(--error)"
-              opacity="0.18"
-            />
-          </g>
+            TALGKLIER
+          </text>
         </svg>
 
-        {/* Stadiumkiezer */}
-        <div
-          role="tablist"
-          aria-label="Stadia van acne onder de huid"
-          className="mt-5 flex flex-wrap gap-2"
-        >
-          {ACNE_STADIA.map((s, i) => {
-            const gekozen = i === actief;
-            return (
+        {/* ── De vier stadia als één doorlopende weg ──
+
+            Vier knoppen boven één balk die meegroeit. Zo is te zien dat dit een volgorde
+            is en hoe ver je erin zit, in plaats van vier losse keuzes. */}
+        <div className="mt-6">
+          <div className="grid grid-cols-4 gap-1.5">
+            {ACNE_STADIA.map((s, i) => (
               <button
                 key={s.id}
-                role="tab"
                 type="button"
-                aria-selected={gekozen}
-                aria-controls="stadium-paneel"
-                onClick={() => setActief(i)}
-                onMouseEnter={() => setActief(i)}
-                onFocus={() => setActief(i)}
-                className={`diba-label min-h-12 rounded-[var(--r-pill)] px-4 transition ${
-                  gekozen
+                aria-pressed={actief === i}
+                onClick={() => setActief(i as Fase)}
+                className={`diba-label rounded-[var(--r-sm)] px-2 py-3 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-400)] ${
+                  actief === i
                     ? "bg-[var(--g-700)] text-white"
-                    : "bg-[var(--g-050)] text-[var(--t-label)] hover:bg-[var(--g-075)]"
-                } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
+                    : "bg-[var(--g-050)] text-[var(--t-label)] hover:bg-[var(--g-100)]"
+                }`}
               >
                 {s.naam}
               </button>
-            );
-          })}
+            ))}
+          </div>
+
+          <div
+            aria-hidden="true"
+            className="mt-3 h-1 w-full overflow-hidden rounded-[var(--r-pill)] bg-[var(--g-100)]"
+          >
+            <div
+              className="h-full rounded-[var(--r-pill)] bg-[var(--g-400)] transition-[width] duration-500 ease-out"
+              style={{ width: `${((actief + 1) / ACNE_STADIA.length) * 100}%` }}
+            />
+          </div>
+          <p className="diba-label mt-3 text-[var(--t-muted)]">
+            Stadium {actief + 1} van {ACNE_STADIA.length}
+          </p>
         </div>
       </div>
 
-      {/* ── De uitleg ── */}
-      <div
-        id="stadium-paneel"
-        role="tabpanel"
-        aria-live="polite"
-        className="flex flex-col"
-      >
-        <h3 className="diba-card-title-lg">{stadium.naam}</h3>
+      {/* ── Wat er op dit punt gebeurt ── */}
+      <div className="flex flex-col justify-center">
+        <h3 className="text-[30px] leading-none tracking-[-.05em] text-[var(--t-strong)] sm:text-[34px]">
+          {stadium.naam}
+        </h3>
 
-        <dl className="mt-6 space-y-6">
-          {[
-            ["Wat je hiervan merkt", stadium.merkbaar],
-            ["Wat er gebeurt", stadium.uitleg],
-          ].map(([kop, tekst]) => (
-            <div key={kop} className="rounded-[var(--r-sm)] bg-[var(--g-025)] p-4">
-              <dt className="diba-label">{kop}</dt>
-              <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
-                {publicCopy(tekst)}
-              </dd>
-            </div>
-          ))}
-        </dl>
+        <div className="mt-7 space-y-6">
+          <div>
+            <Label>Wat je hiervan merkt</Label>
+            <p className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
+              {publicCopy(stadium.merkbaar)}
+            </p>
+          </div>
 
-        {/* De kern van dit onderdeel: elk stadium heeft een eigen lever. */}
-        <div className="mt-7 rounded-[var(--r-sm)] bg-[var(--g-075)] p-5">
-          <Label>Waar je hier iets kunt veranderen</Label>
-          <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
+          <div>
+            <Label>Wat er gebeurt</Label>
+            <p className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
+              {publicCopy(stadium.uitleg)}
+            </p>
+          </div>
+        </div>
+
+        {/* De knop van dit stadium. Dit is het hele punt van de sectie, dus hij krijgt
+            een eigen vlak in plaats van dat hij als derde alinea meeleest. */}
+        <div className="mt-7 rounded-[var(--r-md)] bg-[var(--g-075)] p-6 sm:p-7">
+          <Label className="text-[var(--warn-text)]">
+            Waar je hier iets kunt veranderen
+          </Label>
+          <p className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
             {publicCopy(stadium.ingrijpen)}
           </p>
         </div>

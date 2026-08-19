@@ -35,11 +35,11 @@ export default function FigmaPillarHeroMedia({
         fill
         priority
         sizes="(min-width: 1024px) 46vw, 100vw"
-        className="object-cover object-center mix-blend-multiply opacity-80"
+        className="object-cover object-center"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-[linear-gradient(145deg,rgba(232,248,220,.82),transparent_55%,rgba(38,104,66,.22))]"
+        className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/32 via-transparent to-transparent"
       />
       <span className="absolute left-6 top-6 rounded-full bg-white/90 px-4 py-2 text-[10px] font-medium uppercase tracking-[.12em] text-[#397449] sm:left-7 sm:top-7">
         {badge}

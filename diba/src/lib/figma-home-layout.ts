@@ -5,7 +5,6 @@
 import {
   DIBA_EERLIJK_ADVIES,
   FIGMA_HOME_PORTRAIT,
-  FIGMA_HOME_PORTRAIT_WIDE,
 } from "@/data/figma-home-images";
 
 

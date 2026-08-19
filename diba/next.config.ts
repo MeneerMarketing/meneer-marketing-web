@@ -32,6 +32,18 @@ const nextConfig: NextConfig = {
     // Geen externe beeldbronnen. Alle fotografie is eigen materiaal onder /public/images
     // (DIBA-RULES §2: geen stockfoto's, §14: geen externe requests).
     remotePatterns: [],
+    /**
+     * Welke beeldkwaliteiten er opgevraagd mogen worden.
+     *
+     * Next 16 weigert elke andere waarde met een 400, en dat is terecht: zonder zo'n
+     * lijst kan iedereen willekeurige varianten laten genereren en je optimizer laten
+     * zweten. Vandaar precies twee.
+     *
+     * 75 is de standaard en genoeg voor alles wat in een kaartje past. 92 is er voor het
+     * ene beeld dat het hele eerste scherm vult: daar staat een artefact op tachtig
+     * centimeter van iemands ogen, en dan zie je het verschil wel.
+     */
+    qualities: [75, 92],
   },
   async redirects() {
     return LEGACY_REDIRECTS.map((r) => ({

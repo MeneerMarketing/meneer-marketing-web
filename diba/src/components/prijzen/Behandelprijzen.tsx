@@ -69,7 +69,7 @@ function Regel({
     (b.wel?.length ?? 0) > 0;
 
   return (
-    <li className="rounded-[var(--r-md)] bg-[var(--g-025)]">
+    <li className="overflow-hidden rounded-[var(--r-md)] bg-white">
       <button
         type="button"
         aria-expanded={open}
@@ -85,8 +85,13 @@ function Regel({
           </span>
         </span>
         <span className="flex shrink-0 items-baseline gap-3">
-          {/* Het bedrag blijft staan, ook dicht. Dat is de belofte van deze pagina. */}
-          <span className="text-[18px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
+          {/* Het bedrag blijft staan, ook dicht. Dat is de belofte van deze pagina.
+
+              `min-w` en rechts uitgelijnd: daardoor staan alle bedragen op dezelfde x,
+              ook als er een chevron naast staat en bij de ene wel en bij de andere niet.
+              Dat is het hele punt van een prijslijst: je scant de rechterrand omlaag en
+              niet elke regel apart. */}
+          <span className="min-w-[6.5ch] text-right text-[18px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
             {b.prijs > 0 ? prijsTekst(b.prijs) : "Na de meting"}
           </span>
           {heeftDetail ? (
@@ -102,7 +107,7 @@ function Regel({
 
       {open && heeftDetail ? (
         <div className="px-5 pb-5">
-          <dl className="grid gap-x-8 gap-y-4 rounded-[var(--r-sm)] bg-white p-5 sm:grid-cols-3">
+          <dl className="grid gap-x-8 gap-y-4 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5 sm:grid-cols-3">
             {b.duurMinuten ? (
               <div>
                 <dt className="diba-label text-[var(--t-label)]">
@@ -134,7 +139,7 @@ function Regel({
           </dl>
 
           {b.varianten?.length ? (
-            <div className="mt-3 rounded-[var(--r-sm)] bg-white p-5">
+            <div className="mt-3 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5">
               <p className="diba-label text-[var(--t-label)]">
                 Varianten en tarieven
               </p>
@@ -160,7 +165,7 @@ function Regel({
           ) : null}
 
           {b.niet?.length ? (
-            <div className="mt-3 rounded-[var(--r-sm)] bg-white p-5">
+            <div className="mt-3 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5">
               <p className="diba-label text-[var(--t-label)]">
                 Wat dit niet doet
               </p>
@@ -195,32 +200,37 @@ export default function Behandelprijzen() {
   const groepen = useMemo(() => metInhoud(), []);
 
   return (
-    /* Kolommen, geen stapel.
-       Alle zeven categorieën onder elkaar maakte de pagina negenduizend pixels lang,
-       terwijl er in de rechterhelft niets stond. Categorieën verschillen sterk in lengte,
-       dus een raster zou weer uitrekken; kolommen laten ze gewoon aansluiten. Een sectie
-       blijft heel, ook als hij openklapt. */
-    <div className="gap-4 xl:columns-2 [&>section]:mb-4 [&>section]:break-inside-avoid">
+    /* Eén kolom, en dat is een correctie op de vorige opzet.
+
+       Daar stonden de categorieën in twee CSS-kolommen, met het argument dat de pagina
+       anders te lang werd. Dat klopte als rekensom en niet als bladzijde: de negen
+       categorieën lopen van één tot zes behandelingen, dus de blokken sprongen links en
+       rechts op verschillende hoogtes uit elkaar. Wat je zag was geen prijslijst maar
+       losse vlakken.
+
+       Een prijslijst lees je langs de rechterrand omlaag. Dat kan alleen als alle rijen
+       even breed zijn en alle bedragen op dezelfde x staan, en dus in één kolom. De lengte
+       is opgelost door de rijen compact te maken en de kaart-in-kaart-in-kaart eruit te
+       halen: elke behandeling is nu één witte balk op de getinte ondergrond in plaats van
+       een kaartje in een kaartje.
+
+       Het aantal per categorie stond er ook nog bij ("4 behandelingen"). Dat is te tellen
+       en het stond in de weg. */
+    <div className="space-y-10">
       {groepen.map((g) => (
         <section
           key={g.id}
           id={`prijs-${g.id}`}
-          className="scroll-mt-[var(--anker-offset)] rounded-[var(--r-lg)] bg-white p-6 sm:p-8"
+          className="scroll-mt-[var(--anker-offset)]"
         >
-          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1">
-            <div>
-              <Label>{g.label}</Label>
-              <p className="mt-2 max-w-[52ch] text-[15px] leading-7 text-[var(--t-body)]">
-                {g.zin}
-              </p>
-            </div>
-            <p className="text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-              {g.items.length}{" "}
-              {g.items.length === 1 ? "behandeling" : "behandelingen"}
+          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1 pb-4">
+            <Label>{g.label}</Label>
+            <p className="text-[15px] leading-7 text-[var(--t-muted)]">
+              {g.zin}
             </p>
           </div>
 
-          <ul className="mt-6 space-y-2">
+          <ul className="space-y-1.5">
             {g.items.map((b) => (
               <Regel
                 key={b.slug}

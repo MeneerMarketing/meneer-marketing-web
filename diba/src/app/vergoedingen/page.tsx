@@ -122,13 +122,13 @@ export default function VergoedingenPage() {
           <ol className="mt-10 space-y-4">
             {ROUTE.map((s) => (
               <li
-                key={s.nr}
+                key={s.vraag}
                 className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11"
               >
                 <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
                   <div>
                     <p className="diba-label text-[var(--t-label)]">
-                      Vraag {s.nr}
+                      {s.stap}
                     </p>
                     <p className="mt-4 text-[28px] leading-[1.08] font-normal tracking-[-.04em] text-balance sm:text-[32px]">
                       {s.vraag}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
 import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
 import Label from "@/components/ui/Label";
@@ -100,9 +101,33 @@ export default async function ApparaatPage({ params }: PageProps) {
       />
 
       {/* ── Hero ── */}
+      {/* ── De hero ──
+
+          Dit is het sjabloon voor alle twaalf apparatuurpagina's, en het is met opzet
+          overal hetzelfde: wie van het ene apparaat naar het andere klikt hoort niet
+          telkens een andere opbouw te krijgen.
+
+          Wat er eerst stond: de foto hing onder de tekst in de linkerkolom, op 4:3.
+          Daardoor stond een staand apparaat liggend in beeld en zag je een uitsnede van
+          het midden in plaats van het ding zelf. Rechts stond een witte kaart met wat
+          erop draait, die op een korte pagina halverwege bleef zweven.
+
+          Nu: tekst links, apparaat rechts, en de twee kolommen zijn even lang. Dat laatste
+          doet `items-stretch` samen met de `mt-auto` op het blok "Hierop draait": dat blok
+          zakt naar de voet van de linkerkolom, dus beide kolommen eindigen op dezelfde
+          hoogte. Het beeldvlak is staand en minstens 640 hoog, zodat een apparaat dat
+          rechtop staat er ook rechtop in past.
+
+          Zonder foto vervalt de rechterkolom en loopt de tekst over de volle breedte. Dat
+          is beter dan een grijs vlak: twee apparaten wachten nog op een opname waarvan
+          zeker is welk apparaat erop staat. */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
-          <div>
+        <div
+          className={`grid gap-8 py-14 lg:items-stretch lg:gap-12 lg:py-20 ${
+            a.foto ? "lg:grid-cols-[1fr_0.82fr]" : ""
+          }`}
+        >
+          <div className="flex flex-col">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -130,11 +155,14 @@ export default async function ApparaatPage({ params }: PageProps) {
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
               {publicCopy(a.wat)}
             </p>
-          </div>
 
-          {/* Wat erop draait. De hele reden dat deze pagina bestaat naast de behandeling. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
-            <Label>Hierop draait</Label>
+            {/* Wat erop draait, onderaan de kolom.
+
+                `mt-auto` duwt dit blok naar de voet, zodat de tekstkolom even lang wordt als
+                het beeld ernaast. De hele reden dat deze pagina naast de behandelpagina
+                bestaat staat hier, dus hij mag niet wegzakken onder de vouw. */}
+            <div className="mt-auto rounded-[var(--r-lg)] bg-white p-7 pt-10 sm:p-9">
+              <Label>Hierop draait</Label>
             {behandelingen.length > 0 ? (
               <ul className="mt-5 space-y-2">
                 {behandelingen.map((b) => (
@@ -159,12 +187,25 @@ export default async function ApparaatPage({ params }: PageProps) {
               </p>
             )}
 
-            <p className="mt-6 pt-5 text-[14px] leading-6 text-[var(--t-muted)]">
-              Welke instelling er gekozen wordt hangt af van je huid, en dat
-              bepaalt een mens na de meting. Niet dit apparaat en niet deze
-              pagina.
-            </p>
+              <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
+                Welke instelling er gekozen wordt hangt af van je huid, en dat
+                bepaalt een mens na de meting. Niet dit apparaat en niet deze
+                pagina.
+              </p>
+            </div>
           </div>
+
+          {/* Het apparaat, staand en over de volle hoogte van de kolom. */}
+          {a.foto ? (
+            <BeeldVignet
+              src={a.foto.src}
+              alt={a.foto.alt}
+              onderschrift={a.merk ? `${a.naam} · ${a.merk}` : a.naam}
+              priority
+              sizes="(min-width: 1024px) 42vw, 92vw"
+              className="min-h-[460px] sm:min-h-[560px] lg:min-h-[640px]"
+            />
+          ) : null}
         </div>
       </section>
 

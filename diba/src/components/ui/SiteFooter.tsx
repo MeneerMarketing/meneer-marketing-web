@@ -18,22 +18,22 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
     <footer className={`${figmaInnerContainer} pb-10 pt-4`}>
       <div className="flex flex-col gap-6 border-t border-[var(--g-100)] pt-7">
         <div className="flex flex-wrap gap-x-8 gap-y-3">
-          <Link href="/huidproblemen" className={footerLink}>
+          <Link prefetch={false} href="/huidproblemen" className={footerLink}>
             Huidproblemen
           </Link>
-          <Link href="/behandelingen" className={footerLink}>
+          <Link prefetch={false} href="/behandelingen" className={footerLink}>
             Behandelingen
           </Link>
-          <Link href="/prijzen" className={footerLink}>
+          <Link prefetch={false} href="/prijzen" className={footerLink}>
             Prijzen
           </Link>
-          <Link href="/contact" className={footerLink}>
+          <Link prefetch={false} href="/contact" className={footerLink}>
             Contact
           </Link>
-          <Link href="/privacybeleid" className={footerLink}>
+          <Link prefetch={false} href="/privacybeleid" className={footerLink}>
             Privacy
           </Link>
-          <Link href="/cookiebeleid" className={footerLink}>
+          <Link prefetch={false} href="/cookiebeleid" className={footerLink}>
             Cookies
           </Link>
           {instagram ? (
@@ -46,11 +46,7 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
               Instagram
             </a>
           ) : (
-            <span
-              className={`${footerLink} opacity-50`}
-            >
-              Instagram
-            </span>
+            <span className={`${footerLink} opacity-50`}>Instagram</span>
           )}
         </div>
         <div className="flex flex-col gap-5 text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)] sm:flex-row sm:items-center sm:justify-between">

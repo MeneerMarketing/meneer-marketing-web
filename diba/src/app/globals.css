@@ -20,6 +20,27 @@
   --g-025: #f2f7ef; /* sectietint */
   --g-010: #fcfdfb; /* paginavlak */
 
+  /* Leeslaag over fotografie. Bewust NEUTRAAL en niet groen.
+
+     Over vrijwel elke foto op de site lag het merkgroen, via mix-blend-multiply op een
+     groen vlak of via een groen verloop. Dat maakt van een klinische opname een
+     sfeerbeeld: huidtinten verschuiven naar olijf, een rode huid na een laser wordt
+     grijsgroen, en het geheel leest als stockbeeld met een filter erover. Bij een
+     huidkliniek is de kleur van iemands huid nu juist het onderwerp.
+
+     Deze tint zit vlak naast zwart met een spoor groen erin, zodat een scrim leest als
+     schaduw en niet als kleur. Alleen inzetten waar tekst op het beeld staat. */
+  --foto-scrim: #0d1210;
+
+  /* Leeslaag over fotografie. Bewust NEUTRAAL en niet groen.
+     Over de foto's lag overal het merkgroen, via mix-blend-multiply of een groen verloop.
+     Dat maakt van een klinische opname een sfeerbeeld: huidtinten verschuiven, een rode
+     huid na een laser wordt olijf, en het geheel leest als een stockbeeld met een filter.
+     Precies het tegenovergestelde van wat deze foto's moeten uitstralen.
+     Deze tint zit vlak naast zwart met een spoor groen erin, zodat een scrim leest als
+     schaduw en niet als kleur. Alleen gebruiken waar tekst op het beeld staat. */
+  --foto-scrim: #0d1210;
+
   /* ── Tekst op lichte vlakken (groengrijs, AA-gevalideerd) ── */
   --t-strong: #17372a; /* 12.73 — koppen, bodytekst */
   --t-body: #526759; /*  4.50 — lopende tekst; haalt AA op elk licht vlak,
@@ -1053,48 +1074,34 @@ html.js-reveal [data-reveal].is-visible {
   }
 }
 
-/* Werkwijze stappen-flow */
-@keyframes werkwijze-glow-pulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.55;
-  }
-  50% {
-    transform: scale(1.12);
-    opacity: 0.9;
-  }
-}
+/* Werkwijze stappen-flow.
 
-@keyframes werkwijze-pulse-travel {
-  0%,
-  100% {
-    opacity: 0.35;
-    transform: translate(-50%, 0) scale(0.85);
+   De gloeiende bolletjes en het pulserende stipje zijn weg, en daarmee ook hun keyframes:
+   die sierden een tijdlijn die er niet meer is. Wat overblijft is een vulling die onderin
+   de actieve kaart vol loopt.
+
+   Op een keyframe en niet op een transitie: een transitie van 0 naar 100% start niet bij
+   de eerste render, want de actieve kaart staat er dan al op 100%. */
+@keyframes werkwijze-vullen {
+  from {
+    width: 0%;
   }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, 0) scale(1.15);
+  to {
+    width: 100%;
   }
 }
 
-.werkwijze-glow {
-  animation: werkwijze-glow-pulse 2.4s ease-in-out infinite;
-}
-
-.werkwijze-glow-ring {
-  animation: werkwijze-glow-pulse 2.4s ease-in-out infinite 0.15s;
-}
-
-.werkwijze-pulse-travel {
-  animation: werkwijze-pulse-travel 1.8s ease-in-out infinite;
+.werkwijze-vullen {
+  animation-name: werkwijze-vullen;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  width: 0%;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .werkwijze-glow,
-  .werkwijze-glow-ring,
-  .werkwijze-pulse-travel {
+  .werkwijze-vullen {
     animation: none;
+    width: 100%;
   }
 }
 

@@ -201,6 +201,14 @@ export type Behandeling = {
     readonly label: string;
     readonly href: string;
   }[];
+  /**
+   * De behandeling in uitvoering, uit de eigen shoot.
+   *
+   * Alleen daar waar de opname onmiskenbaar bij deze behandeling hoort. Bij twijfel geen
+   * foto: een willekeurige behandelfoto onder een specifieke naam wekt de indruk dat je
+   * ziet wat je krijgt, en dat is dan niet waar.
+   */
+  readonly foto?: { readonly src: string; readonly alt: string };
   readonly faq?: readonly {
     readonly vraag: string;
     readonly antwoord: string;
@@ -211,6 +219,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Meten ─────────────────────────────────────────────────────────────── */
   {
     slug: "huidanalyse",
+    foto: {
+      src: "/images/shoot/beh-huidanalyse.jpg",
+      alt: "Cliënt in de Eve-M huidscanner, met de opname op het scherm ernaast",
+    },
     naam: "Consult met Eve-M huidanalyse",
     apparaat: "Eve-M",
     categorie: "meting",
@@ -267,6 +279,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Gezichtsbehandelingen ─────────────────────────────────────────────── */
   {
     slug: "hydrafacial",
+    foto: {
+      src: "/images/shoot/beh-hydrafacial.jpg",
+      alt: "HydraFacial-behandeling in uitvoering bij Diba Clinics",
+    },
     naam: "HydraFacial",
     apparaat: "HydraFacial",
     categorie: "gezicht",
@@ -301,6 +317,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "oxygeneo",
+    foto: {
+      src: "/images/shoot/beh-oxygeneo.jpg",
+      alt: "Behandelgel op de huid met het handstuk erop",
+    },
     naam: "OxyGeneo Glow",
     apparaat: "OxyGeneo",
     categorie: "gezicht",
@@ -384,6 +404,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "coolift",
+    foto: {
+      src: "/images/shoot/beh-lichaam.jpg",
+      alt: "Een lichaamsbehandeling met een gekoeld handstuk",
+    },
     naam: "CooLift Cryo Therapy",
     apparaat: "CooLifting",
     categorie: "gezicht",
@@ -440,6 +464,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Peelings ──────────────────────────────────────────────────────────── */
   {
     slug: "peelings",
+    foto: {
+      src: "/images/shoot/beh-peeling.jpg",
+      alt: "Een peeling wordt met een wattenstaafje op het voorhoofd aangebracht",
+    },
     naam: "Medische peelings",
     apparaat: "Mesoestetic, Dermaceutic, Image Skincare, Skin Tech Pharma",
     categorie: "peeling",
@@ -494,7 +522,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Microneedling ─────────────────────────────────────────────────────── */
   {
     slug: "skinpen",
-    naam: "SkinPen microneedling",
+    foto: {
+      src: "/images/shoot/beh-skinpen.jpg",
+      alt: "Microneedling met de SkinPen op het voorhoofd",
+    },
+    naam: "SkinPen Microneedling",
     apparaat: "SkinPen CIT",
     categorie: "needling",
     kort: "Medisch gecertificeerd microneedlen. Werkt langzaam, op de laag waar structuur zit.",
@@ -545,6 +577,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "dermapen-4",
+    foto: {
+      src: "/images/shoot/beh-dermapen.jpg",
+      alt: "Behandeling met de Dermapen 4 bij een cliënt",
+    },
     naam: "Dermapen 4",
     apparaat: "Dermapen 4",
     categorie: "needling",
@@ -608,6 +644,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Skinboosters ──────────────────────────────────────────────────────── */
   {
     slug: "skinboosters",
+    foto: {
+      src: "/images/shoot/beh-skinbooster.jpg",
+      alt: "Een skinbooster wordt onder het oog ingebracht",
+    },
     naam: "Skinboosters en mesotherapie",
     apparaat: "U225 intradermale injector",
     categorie: "injectie",
@@ -674,6 +714,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Laser en licht ────────────────────────────────────────────────────── */
   {
     slug: "fotona",
+    foto: {
+      src: "/images/shoot/beh-fotona.jpg",
+      alt: "Fotona-laserbehandeling met oogbescherming",
+    },
     naam: "Fotona TimeWalker",
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
@@ -741,6 +785,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "nordlys-ipl",
+    foto: {
+      src: "/images/shoot/beh-nordlys.jpg",
+      alt: "Nordlys IPL-behandeling met beschermbril",
+    },
     naam: "Nordlys IPL",
     apparaat: "Nordlys",
     categorie: "laser",
@@ -776,6 +824,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "lumi-8-led",
+    foto: {
+      src: "/images/shoot/beh-led-masker.jpg",
+      alt: "Een LED-masker met rood licht op het gezicht",
+    },
     naam: "Lumi 8 LED",
     apparaat: "Lumi 8",
     categorie: "laser",
@@ -925,6 +977,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Laserontharing ────────────────────────────────────────────────────── */
   {
     slug: "laserontharing",
+    foto: {
+      src: "/images/shoot/apparaat-gentle-laser.jpg",
+      alt: "Laserontharing van de oksel met beschermbrillen",
+    },
     naam: "Laserontharing",
     apparaat: "Gentle Laser Pro-U",
     categorie: "ontharing",
@@ -957,6 +1013,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Overig ────────────────────────────────────────────────────────────── */
   {
     slug: "xl-hair",
+    foto: {
+      src: "/images/shoot/beh-xl-hair.jpg",
+      alt: "De XL Hair-behandeling wordt toegelicht bij een cliënt",
+    },
     naam: "XL Hair",
     apparaat: "U225 mesotherapie",
     categorie: "overig",
@@ -1014,6 +1074,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "acne-traject",
+    foto: {
+      src: "/images/shoot/beh-acne-traject.jpg",
+      alt: "Behandelproducten bij een cliënt met acne",
+    },
     naam: "Acnetraject",
     apparaat: "Blemiderm",
     categorie: "overig",
@@ -1177,6 +1241,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "fibromen",
+    foto: {
+      src: "/images/shoot/beh-fibromen.jpg",
+      alt: "Een fibroom wordt verwijderd naast de neus",
+    },
     naam: "Fibromen verwijderen",
     categorie: "overig",
     kort: "Steelwratjes weghalen. Per kwartier gerekend, niet per stuk.",

@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Label from "@/components/ui/Label";
 import { BESTEMMINGEN, type Groep } from "@/data/symptoomzoeker";

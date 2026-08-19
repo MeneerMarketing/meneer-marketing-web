@@ -83,6 +83,7 @@ export default function Topbalk() {
             {TOPBALK_LINKS.map((l) => (
               <li key={l.href}>
                 <Link
+                  prefetch={false}
                   href={l.href}
                   className="text-[13px] leading-none text-[var(--t-muted)] transition-colors hover:text-[var(--g-700)]"
                 >

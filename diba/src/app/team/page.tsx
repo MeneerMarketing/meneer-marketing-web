@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
+import Image from "next/image";
 import { KWALITEITSREGISTER, TEAM, VAKGEBIEDEN } from "@/data/team";
 import { reviewsVoorTeamlid } from "@/data/team-reviews";
 import { publicCopy } from "@/lib/copy-flags";
@@ -188,22 +189,49 @@ export default function TeamPage() {
               </Label>
               <ul className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                 {v.leden.map((lid) => (
+                  /* De kaart zelf heeft geen padding meer: het portret vult de bovenkant
+                     tot alle drie de randen, en de tekst zit in een eigen blok eronder. Een
+                     foto met marge eromheen leest als een plaatje in een kaartje; een foto
+                     die de kaart begint leest als de persoon zelf.
+
+                     Bij het aanwijzen zoomt het portret heel licht in en licht de naam op in
+                     het merkgroen. Meer gebeurt er niet: het is een kaart met een mens erop
+                     en geen bedieningselement. */
                   <li
                     key={lid.slug}
                     id={lid.slug}
-                    className="scroll-mt-[var(--anker-offset)] rounded-[var(--r-lg)] bg-white p-7"
+                    className="group scroll-mt-[var(--anker-offset)] overflow-hidden rounded-[var(--r-lg)] bg-white transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(23,55,42,.10)]"
                   >
-                    <p className="diba-card-title text-[var(--t-strong)]">
-                      {lid.naam}
-                    </p>
-                    <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-                      {lid.functie}
-                    </p>
-                    {lid.bio ? (
-                      <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-                        {publicCopy(lid.bio)}
-                      </p>
+                    {lid.portret ? (
+                      /* 4:5 en object-top: de opnamen zijn 2:3, dus er gaat onderaan iets
+                         af. Van boven bijsnijden zou het voorhoofd raken. */
+                      <div className="relative aspect-[4/5] overflow-hidden bg-[var(--g-050)]">
+                        <Image
+                          src={lid.portret}
+                          alt={`${lid.naam}, ${lid.functie}`}
+                          fill
+                          sizes="(min-width: 1280px) 23vw, (min-width: 640px) 46vw, 92vw"
+                          className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.035]"
+                        />
+                      </div>
                     ) : null}
+
+                    <div className="p-6 sm:p-7">
+                      <p className="diba-card-title text-[var(--t-strong)] transition-colors duration-500 group-hover:text-[var(--g-700)]">
+                        {lid.naam}
+                      </p>
+                      {/* De functie als label en niet als zin: hij herhaalt de kop van de
+                          groep waarin deze kaart staat, dus hij hoort te ondersteunen en
+                          niet mee te lezen met de bio. */}
+                      <p className="diba-label mt-2 text-[var(--t-label)]">
+                        {lid.functie}
+                      </p>
+                      {lid.bio ? (
+                        <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)]">
+                          {publicCopy(lid.bio)}
+                        </p>
+                      ) : null}
+                    </div>
                   </li>
                 ))}
               </ul>

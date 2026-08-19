@@ -98,10 +98,7 @@ export default async function InsurerPage({ params }: PageProps) {
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link
-                href="/vergoedingen"
-                className="hover:text-[var(--g-700)]"
-              >
+              <Link href="/vergoedingen" className="hover:text-[var(--g-700)]">
                 Vergoedingen
               </Link>
               <span aria-hidden="true">/</span>
@@ -121,8 +118,8 @@ export default async function InsurerPage({ params }: PageProps) {
               daar het vaakst tussen zit.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Bedragen staan hier niet. Die veranderen per jaar en per pakket, en
-              bij geld is onjuist erger dan afwezig.
+              Bedragen staan hier niet. Die veranderen per jaar en per pakket,
+              en bij geld is onjuist erger dan afwezig.
             </p>
           </div>
 
@@ -160,7 +157,9 @@ export default async function InsurerPage({ params }: PageProps) {
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
                 Waar het bij
                 <br />
-                <span className="diba-accent">{insurer.name} op vastloopt.</span>
+                <span className="diba-accent">
+                  {insurer.name} op vastloopt.
+                </span>
               </h2>
             </div>
             <div className="max-w-[58ch]">
@@ -171,8 +170,8 @@ export default async function InsurerPage({ params }: PageProps) {
               </div>
               <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
                 Dit is niet het bedrag maar de voorwaarde, en dat is met opzet:
-                een voorwaarde verandert veel minder vaak dan een maximum, en het
-                is meestal de reden dat een declaratie wordt afgewezen.
+                een voorwaarde verandert veel minder vaak dan een maximum, en
+                het is meestal de reden dat een declaratie wordt afgewezen.
               </p>
             </div>
           </div>
@@ -199,24 +198,22 @@ export default async function InsurerPage({ params }: PageProps) {
               </p>
             </div>
 
-            <ol className="mt-12 grid gap-4 md:grid-cols-2">
-              {ALTIJD_VRAGEN.map((v, i) => (
+            {/* Geen genummerde badge. Deze vier vragen hebben geen volgorde, dus een
+                cijfer erboven suggereert een stappenplan dat er niet is. De vraag zelf
+                is de kop. */}
+            <ul className="mt-12 grid gap-4 md:grid-cols-2">
+              {ALTIJD_VRAGEN.map((v) => (
                 <li
                   key={v.kop}
-                  className="rounded-[var(--r-lg)] bg-white/10 p-7 sm:p-8"
+                  className="rounded-[var(--r-lg)] bg-[var(--g-800)] p-7 sm:p-8"
                 >
-                  <p className="text-[15px] leading-6 tabular-nums text-[var(--on-dark-accent)]">
-                    {String(i + 1).padStart(2, "0")}
-                  </p>
-                  <p className="mt-3 text-[17px] leading-7 font-medium">
-                    {v.kop}
-                  </p>
+                  <p className="text-[17px] leading-7 font-medium">{v.kop}</p>
                   <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
                     {v.zin}
                   </p>
                 </li>
               ))}
-            </ol>
+            </ul>
           </div>
         </div>
       </section>
@@ -242,12 +239,10 @@ export default async function InsurerPage({ params }: PageProps) {
           <ul className="mt-10 grid gap-4 md:grid-cols-3">
             {ROUTE.map((s) => (
               <li
-                key={s.nr}
+                key={s.vraag}
                 className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
               >
-                <p className="diba-label text-[var(--t-label)]">
-                  Vraag {s.nr}
-                </p>
+                <p className="diba-label text-[var(--t-label)]">{s.stap}</p>
                 <p className="diba-card-title mt-3 text-[var(--t-strong)]">
                   {s.vraag}
                 </p>

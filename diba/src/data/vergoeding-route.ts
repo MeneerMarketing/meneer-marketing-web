@@ -26,7 +26,14 @@
  */
 
 export type Stap = {
-  readonly nr: string;
+  /**
+   * De plaats in de route, uitgeschreven en niet als "01".
+   *
+   * Deze drie vragen hebben wél een echte volgorde: je komt pas bij de tweede als de
+   * eerste met ja is beantwoord. Dat mag je dus zien. Maar een genummerd bolletje met
+   * "01" erin is sjabloon-opmaak; woorden lezen als iemand die het uitlegt.
+   */
+  readonly stap: string;
   readonly vraag: string;
   readonly zin: string;
   /** Wat er gebeurt als het antwoord nee is. Dit is bij elke stap het echte nieuws. */
@@ -36,21 +43,21 @@ export type Stap = {
 
 export const ROUTE: readonly Stap[] = [
   {
-    nr: "01",
+    stap: "Eerste vraag",
     vraag: "Is er een medische reden?",
     zin: "Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.",
     nee: "Dan wordt er niets vergoed, door geen enkele verzekeraar. Dat is geen strengheid van jouw polis maar hoe het stelsel is opgezet: cosmetische zorg valt er buiten. Voor het grootste deel van wat wij doen is dit het antwoord.",
     ja: "Dan gaat het verder naar de volgende vraag. Of er een medische reden is, bepaalt een arts en niet wij.",
   },
   {
-    nr: "02",
+    stap: "Tweede vraag",
     vraag: "Zit het in je aanvullende verzekering?",
     zin: "Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.",
     nee: "Dan betaal je zelf. Dat kan ook een prima keuze zijn, maar dan weet je het vooraf en niet achteraf.",
     ja: "Kijk dan meteen naar het maximum per jaar en of er een verwijzing van je huisarts nodig is. Dat laatste wordt het vaakst over het hoofd gezien.",
   },
   {
-    nr: "03",
+    stap: "Derde vraag",
     vraag: "Is er een verwijzing nodig?",
     zin: "Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.",
     nee: "Dan kun je rechtstreeks terecht. Meld bij de intake wel dat je een vergoeding verwacht, dan wordt er meteen gekeken of alles klopt.",

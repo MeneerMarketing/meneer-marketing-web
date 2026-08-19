@@ -36,44 +36,113 @@ import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
  * Hoogte in `svh` en niet in `vh`: op iOS is 100vh groter dan wat je ziet, en dan valt de
  * kop onder de adresbalk.
  *
- * Staat los op /home-variant. De bestaande homepage is niet aangeraakt.
+ * Dit blijft een variant en geen vervanging. Hij staat op /home-variant naast de
+ * bestaande homepage, zodat er iets te kiezen valt in plaats van iets te slikken; de
+ * homepage houdt zijn eigen hero tot die keuze gemaakt is. HeroVariant brengt zijn eigen
+ * Topbalk en HoofdNav mee, want in dit ontwerp zweven die binnen het beeld in plaats van
+ * erboven te staan.
  */
 
 export default function HeroVariant() {
   return (
-    <div className="bg-white">
+    /* De ondergrond is dezelfde tint als de topbalk (--g-050) en niet wit.
+
+       De balk stond op zacht groen en de randen om het beeldvlak op wit. Dat leest als
+       twee vlakken die toevallig boven elkaar staan: langs de foto zie je een lichtgrijze
+       rand waar niets hoort te zijn. Nu loopt de tint door van de balk, langs de zijkanten
+       en onder het beeld, tot en met de verantwoordingsregel. Het beeldvlak drijft daarin
+       in plaats van eruit te steken.
+
+       De tint staat op deze component en niet op de pagina, zodat hij zijn eigen grond
+       meebrengt waar hij ook geplaatst wordt. */
+    <div className="bg-[var(--g-050)]">
       <Topbalk />
 
       <section className="px-3 pb-3 sm:px-4 sm:pb-4">
         <div className="relative h-[calc(100svh-5.5rem)] min-h-[560px] w-full overflow-hidden rounded-[var(--r-xl)]">
+          {/* quality 92 en niet de standaard 75. Dat is hier geen luxe: dit beeld vult
+              het hele eerste scherm, dus elk artefact staat meteen op tachtig centimeter
+              van iemands ogen. Bij een kaartje van 400 pixels ziet niemand het verschil
+              en daar blijft de standaard dus staan.
+
+              De uitsnede staat links, en dat is een gemeten keuze.
+
+              De foto is 3:2. Op een telefoon is dit vlak ongeveer 1:2, dus er blijft maar
+              32% van de breedte over. Haar gezicht zit op 20-28% van de breedte, de tablet
+              op 37-57%: in een venster van 32% passen die twee nooit samen. Elke uitsnede
+              is dus een keuze tussen de behandelaar of het scherm.
+
+              Op 47% stond de scan er mooi middenin, en precies daar sneuvelde de
+              leesbaarheid: het label en de kop kwamen op het lichte tabletscherm te staan.
+              Op 10%, om de lichte wand aan de linkerrand kwijt te raken, hielp het op 320px
+              maar zakte het label op 375px van 8,2 naar 2,3 omdat het daar juist zijn
+              donkere ondergrond verloor. Geen enkele uitsnede is over de volle hoogte
+              donker; dit is niet met de uitsnede op te lossen maar met de scrim hieronder.
+
+              Links uitgelijnd staat ze in donkere Diba-kleding over de volle hoogte. De
+              huidscan is daarmee een desktopdetail: vanaf ongeveer 1024 pixels is het vlak
+              breder dan 3:2, wordt er horizontaal niets meer weggesneden en staat de hele
+              foto in beeld.
+
+              Een apart staand bestand voor de telefoon zou allebei kunnen geven, maar de
+              staande opnamen uit de shoot zijn allemaal 1334x2000 web-exports. Een
+              1:2-uitsnede daaruit is 1000 pixels breed, terwijl een telefoon met
+              pixeldichtheid 3 er 1125 vraagt. Dat kost dus zichtbaar scherpte. */}
           <Image
             src={FIGMA_HOME_PORTRAIT_WIDE.src}
             alt={FIGMA_HOME_PORTRAIT_WIDE.alt}
             fill
             priority
+            quality={92}
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-left-top"
           />
 
-          {/* Leesbaarheid, geen sfeer. Boven voor de navigatie, onder voor de kop. */}
+          {/* Leesbaarheid, geen sfeer. Boven voor de navigatie, onder voor de kop.
+
+              De onderste laag was /85 aflopend via /35, en dat was te licht. Gemeten op de
+              werkelijke letterpixels: de kop valt over haar blote onderarm en over de lichte
+              wand links, en daar bleef de ondergrond op een helderheid van 0,39 tot 0,51
+              steken. Wit haalde 1,8 en de accentregel 1,6, terwijl grote tekst 3,0 moet
+              halen. Dat het met het blote oog meeviel komt door de lettergrootte, niet door
+              het contrast. Nu /95 aflopend via /62, over drie kwart zodat de overgang lang
+              genoeg is om niet te banden. */}
           <div
             aria-hidden="true"
             className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[var(--g-900)]/55 to-transparent"
           />
           <div
             aria-hidden="true"
-            className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-[var(--g-900)]/85 via-[var(--g-900)]/35 to-transparent"
+            className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-[var(--g-900)]/95 via-[var(--g-900)]/62 to-transparent"
           />
 
           {/* ── Navigatie, zwevend in het beeld ── */}
           <HoofdNav opBeeld />
 
-          {/* ── De kop ── */}
-          <div className="absolute inset-x-0 bottom-0 z-10 px-5 pb-8 sm:px-8 sm:pb-10 lg:px-10 lg:pb-14">
+          {/* ── De kop ──
+
+              Het tekstblok draagt onder lg zijn eigen scrim, en dat is de kern van de
+              oplossing. Een scrim die aan het beeld hangt heeft een vaste hoogte, terwijl
+              het tekstblok juist meegroeit: op een iPhone SE loopt de alinea over vier
+              regels en breken de knoppen naar twee rijen, waardoor het blok 75% van de hero
+              vult en bovenaan buiten de scrim steekt. Precies daar stond wit op 1,4.
+
+              Deze laag hangt aan het blok zelf en dekt dus altijd exact de tekst, ongeacht
+              hoe hoog die uitvalt. De pt-28 is de aanloop waarin hij naar niets uitdooft,
+              zodat je geen rand ziet; het tussenpunt staat op 88% en niet halverwege, want
+              anders begint het uitdoven al onder het label. Met 85% aanloop bleef het label
+              op de SE op 4,07 steken tegen de eis van 4,5. Vanaf lg staat de tekst laag
+              genoeg en gaat de laag uit (`lg:bg-none`), want daar is verduisteren alleen
+              verlies. */}
+          <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[var(--g-900)]/88 via-[var(--g-900)]/74 via-88% to-transparent px-5 pt-28 pb-8 sm:px-8 sm:pb-10 lg:bg-none lg:px-10 lg:pt-0 lg:pb-14">
             <div className="max-w-[46ch]">
               <Label opDonker>Behandeling nul</Label>
 
-              <h1 className="diba-display-l mt-4 text-[var(--on-dark)]">
+              {/* Onder 360px stapt de kop terug naar 36px. Op 48px past "Wij gokken niet."
+                  niet in een kolom van 280px en breekt hij over drie regels, wat de tweede
+                  regel van het rijm losscheurt. Dit staat hier en niet op .diba-display-l:
+                  die schaal komt uit het ontwerp en geldt voor de hele site. */}
+              <h1 className="diba-display-l mt-4 text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
                 Wij gokken niet.
                 <br />
                 <span className="diba-accent-on-dark">Wij meten.</span>

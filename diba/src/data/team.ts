@@ -26,7 +26,8 @@
  * het gaat over hen.
  * [COPY-NODIG: akkoord per persoon op zijn of haar eigen tekst]
  *
- * Portretten ontbreken om dezelfde reden. [BEELD-NODIG: portretten, geen stockfoto's]
+ * Portretten staan er sinds de eigen shoot: acht staande opnamen, geen stockfoto's. Welk
+ * portret bij welke naam hoort is nog een aanname, zie het veld `portret` hieronder.
  */
 
 export type Vakgebied = "huidtherapie" | "orthomoleculair" | "praktijk";
@@ -38,11 +39,27 @@ export type Teamlid = {
   readonly vak: Vakgebied;
   /** Alleen invullen als de persoon het zelf heeft aangeleverd. */
   readonly bio?: string;
+  /**
+   * Portret uit de eigen shoot, staand.
+   *
+   * [GEGEVEN-NODIG: staat bij elke naam het juiste portret? Okan]
+   *
+   * De koppeling tussen naam en gezicht is hier een aanname en verder niets. De opnamen
+   * dragen alleen een cameranummer, en wie erop staat is uit het bestand niet af te
+   * leiden. Ze staan nu in de volgorde waarin ze zijn aangeleverd naast de namen in de
+   * volgorde waarin die hier stonden; dat kan kloppen en het kan er volledig naast zitten.
+   *
+   * Iemands gezicht bij de verkeerde naam is niet zomaar een schoonheidsfoutje: het is een
+   * van de weinige dingen op deze site die een bezoeker die hier komt zelf kan zien
+   * kloppen of niet. Dus dit moet iemand nalopen die het team kent, en niet ik.
+   */
+  readonly portret?: string;
 };
 
 export const TEAM: readonly Teamlid[] = [
   {
     slug: "rojda-sahin",
+    portret: "/images/shoot/team-portret-1.jpg",
     naam: "Rojda Sahin",
     functie: "Founder Diba Clinics B.V. en orthomoleculair huidspecialist",
     vak: "orthomoleculair",
@@ -50,6 +67,7 @@ export const TEAM: readonly Teamlid[] = [
   },
   {
     slug: "okan",
+    portret: "/images/shoot/team-portret-2.jpg",
     naam: "Okan",
     functie: "Praktijkmanager",
     vak: "praktijk",
@@ -57,6 +75,7 @@ export const TEAM: readonly Teamlid[] = [
   },
   {
     slug: "demi",
+    portret: "/images/shoot/team-portret-3.jpg",
     naam: "Demi",
     functie: "Orthomoleculair huidspecialist",
     vak: "orthomoleculair",
@@ -64,6 +83,7 @@ export const TEAM: readonly Teamlid[] = [
   },
   {
     slug: "andres",
+    portret: "/images/shoot/team-portret-4.jpg",
     naam: "Andres",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
@@ -71,6 +91,7 @@ export const TEAM: readonly Teamlid[] = [
   },
   {
     slug: "melanie",
+    portret: "/images/shoot/team-portret-5.jpg",
     naam: "Melanie",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
@@ -78,6 +99,7 @@ export const TEAM: readonly Teamlid[] = [
   },
   {
     slug: "iris",
+    portret: "/images/shoot/team-portret-6.jpg",
     naam: "Iris",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
@@ -85,6 +107,7 @@ export const TEAM: readonly Teamlid[] = [
   },
   {
     slug: "bahar",
+    portret: "/images/shoot/team-portret-7.jpg",
     naam: "Bahar",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
@@ -92,6 +115,7 @@ export const TEAM: readonly Teamlid[] = [
   },
   {
     slug: "rialda",
+    portret: "/images/shoot/team-portret-8.jpg",
     naam: "Rialda",
     functie: "Huidtherapeut",
     vak: "huidtherapie",

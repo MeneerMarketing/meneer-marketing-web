@@ -122,10 +122,10 @@ export default function LaserontharingPage() {
               alt={FIGMA_INTENT_LASER.alt}
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
-              className="object-cover object-center opacity-80 mix-blend-multiply"
+              className="object-cover object-center"
             />
             <div
-              className="absolute inset-0 bg-[linear-gradient(145deg,rgba(216,239,200,.75),rgba(30,85,54,.55))]"
+              className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/68 via-[var(--foto-scrim)]/12 to-transparent"
               aria-hidden="true"
             />
             <p className="diba-label absolute top-7 left-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">

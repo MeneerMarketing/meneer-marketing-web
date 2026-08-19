@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import VoorNaSchuif from "@/components/resultaten/VoorNaSchuif";
+import { VOOR_NA_PAREN } from "@/data/voor-na";
 import Fotocheck from "@/components/resultaten/Fotocheck";
 import Label from "@/components/ui/Label";
 import { FOTOVARIABELEN } from "@/data/fotobewijs";
@@ -77,9 +79,9 @@ export default function ResultatenPage() {
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Ze komen er, van eigen klanten en met hun toestemming. Tot die tijd
-              zetten we hier geen beelden neer die niet van onze klanten zijn,
-              want dat is een leugen met een bijschrift eronder.
+              Ze komen er, van eigen klanten en met hun toestemming. Tot die
+              tijd zetten we hier geen beelden neer die niet van onze klanten
+              zijn, want dat is een leugen met een bijschrift eronder.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               In plaats daarvan krijg je iets wat je aan drie foto&apos;s niet
@@ -114,9 +116,9 @@ export default function ResultatenPage() {
               <span className="diba-accent">elk resultaatbeeld.</span>
             </h2>
             <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Dit werkt op elke kliniekwebsite, ook die van de buren en straks op
-              die van ons. Zet aan wat er tussen de voorfoto en de nafoto gelijk
-              is gehouden, en kijk wat het oordeel doet.
+              Dit werkt op elke kliniekwebsite, ook die van de buren en straks
+              op die van ons. Zet aan wat er tussen de voorfoto en de nafoto
+              gelijk is gehouden, en kijk wat het oordeel doet.
             </p>
           </div>
 
@@ -134,7 +136,10 @@ export default function ResultatenPage() {
               <Label opDonker>Waar je ons aan mag houden</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
                 Zo maken wij ze,
-                <span className="diba-accent-on-dark"> of we maken ze niet.</span>
+                <span className="diba-accent-on-dark">
+                  {" "}
+                  of we maken ze niet.
+                </span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Zeven regels, één per variabele hierboven. Verschijnt er straks
@@ -143,30 +148,28 @@ export default function ResultatenPage() {
               </p>
             </div>
 
-            <ol className="mt-12 grid gap-4 md:grid-cols-2">
-              {FOTOVARIABELEN.map((v, i) => (
+            {/* Geen "01, 02, 03" boven deze kaarten. Deze zeven regels hebben geen
+                volgorde, dus zo'n nummer draagt niets: het is opmaak die doet alsof er
+                een stappenplan staat waar een lijst staat. De regel zelf is de kop. */}
+            <ul className="mt-12 grid gap-4 md:grid-cols-2">
+              {FOTOVARIABELEN.map((v) => (
                 <li
                   key={v.id}
-                  className="rounded-[var(--r-lg)] bg-white/10 p-7 sm:p-8"
+                  className="rounded-[var(--r-lg)] bg-[var(--g-800)] p-7 sm:p-8"
                 >
-                  <p className="text-[15px] leading-6 tabular-nums text-[var(--on-dark-accent)]">
-                    {String(i + 1).padStart(2, "0")}
-                  </p>
-                  <p className="mt-3 text-[17px] leading-7 font-medium">
-                    {v.label}
-                  </p>
+                  <p className="text-[17px] leading-7 font-medium">{v.label}</p>
                   <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
                     {v.onzeRegel}
                   </p>
                 </li>
               ))}
-            </ol>
+            </ul>
 
             <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
               Bij elk beeld komen bovendien de gegevens te staan die je nodig
               hebt om het te wegen: welke behandeling, hoeveel sessies, hoeveel
-              weken ertussen, welk huidtype en hoeveel weken na de laatste sessie
-              de nafoto gemaakt is.
+              weken ertussen, welk huidtype en hoeveel weken na de laatste
+              sessie de nafoto gemaakt is.
             </p>
           </div>
         </div>
@@ -185,14 +188,15 @@ export default function ResultatenPage() {
           </div>
           <div>
             <p className="max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]">
-              De huidscanner werkt met vast licht op een vaste afstand, elke keer
-              hetzelfde. Precies daarom is een meting van vandaag over drie
+              De huidscanner werkt met vast licht op een vaste afstand, elke
+              keer hetzelfde. Precies daarom is een meting van vandaag over drie
               maanden nog vergelijkbaar, en een telefoonfoto niet.
             </p>
             <p className="mt-4 max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Wat er dan uit komt zijn geen mooie plaatjes maar waardes: pigment,
-              vocht, poriestructuur, tekenen van veroudering. Jouw eigen nulpunt,
-              en het enige eerlijke vergelijkingsmateriaal dat er bestaat.
+              Wat er dan uit komt zijn geen mooie plaatjes maar waardes:
+              pigment, vocht, poriestructuur, tekenen van veroudering. Jouw
+              eigen nulpunt, en het enige eerlijke vergelijkingsmateriaal dat er
+              bestaat.
             </p>
 
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -283,6 +287,33 @@ export default function ResultatenPage() {
                 Wat klanten schrijven
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── De plekken zelf ──
+
+          Het raster staat er al voordat de beelden er zijn, en dat is met opzet. Negen
+          plekken laten zien hoeveel er komen te staan en waar; een pagina die pas vorm
+          krijgt als de inhoud er is, wordt op het laatste moment ontworpen.
+
+          Elk vak toont nu "Nog geen beeld". Er staat dus nergens een voorbeeldfoto uit een
+          andere shoot: dat zou een resultaat tonen dat niemand behaald heeft, en precies
+          daar gaat de uitleg hierboven over. */}
+      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
+            <Label>De vergelijkingen</Label>
+            <p className="text-[15px] leading-7 text-[var(--t-muted)]">
+              Schuif over een beeld om het verschil te zien. Bij elk paar staat
+              wat ervoor nodig was.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {VOOR_NA_PAREN.map((paar) => (
+              <VoorNaSchuif key={paar.id} paar={paar} />
+            ))}
           </div>
         </div>
       </section>

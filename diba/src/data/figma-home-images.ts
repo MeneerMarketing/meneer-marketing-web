@@ -18,16 +18,45 @@ type Beeld = { readonly src: string; readonly alt: string };
 
 const shoot = (naam: string) => `/images/shoot/${naam}.jpg`;
 
-/** Hero — laserbehandeling, precisie. Past bij "Geen gokwerk. Wel jouw huid." */
+/**
+ * Hero van de homepage: een IPL-behandeling in uitvoering.
+ *
+ * Hier stond `hero-behandeling`. Die opname is niet fout, maar deze is beter voor de plek:
+ * je ziet het handstuk op de huid, de beschermbril en de behandelaar die kijkt waar ze
+ * mikt. Dat is wat "Geen gokwerk. Wel jouw huid." bedoelt, en het is een van de weinige
+ * beelden waarop het werk zelf herkenbaar is in plaats van de sfeer eromheen.
+ *
+ * Camera-origineel 4S3A9362 uit de eigen shoot.
+ */
 export const FIGMA_HOME_PORTRAIT = {
-  src: shoot("hero-behandeling"),
-  alt: "Diba-behandelaar voert een laserbehandeling uit bij een cliënt met beschermbril",
+  src: shoot("hero-ipl-behandeling"),
+  alt: "Behandelaar van Diba Clinics voert een IPL-behandeling uit bij een cliënt met beschermbril",
 } as const satisfies Beeld;
 
-/** Behandelkamer, liggend formaat. */
+/**
+ * De hero van de homepage: de huidscan die samen bekeken wordt.
+ *
+ * WAAROM DEZE FOTO EN NIET DE BEHANDELKAMER.
+ *
+ * Hier stond `behandelkamer`, en dat was een sfeerbeeld: iemand aan het werk in een
+ * kamer. Deze foto toont wat deze kliniek van andere onderscheidt, namelijk dat je
+ * hetzelfde scherm ziet als de behandelaar. Dat is precies wat de kop eronder belooft en
+ * wat op de intakepagina staat, dus het beeld zegt nu hetzelfde als de tekst.
+ *
+ * WAAROM 3000 PIXELS BREED.
+ *
+ * Dit beeld vult de volle breedte én hoogte van het eerste scherm. Het vorige bestand was
+ * 1400x900 op 108 kB en werd dus fors uitgerekt; op een gewoon 1440-scherm met dubbele
+ * pixeldichtheid is er bijna 2900 pixels nodig. Vandaar dat het zacht oogde. Dit is de
+ * bron waar Next zelf uit schaalt, niet wat er verstuurd wordt.
+ *
+ * De cliënt in de kamer is van achteren gefotografeerd en dus niet herkenbaar. Op het
+ * scherm van de tablet staat wél een gezicht: dat is een scan en daar hoort toestemming
+ * bij, net als bij de andere beelden hieronder.
+ */
 export const FIGMA_HOME_PORTRAIT_WIDE = {
-  src: shoot("behandelkamer"),
-  alt: "Behandelaar aan het werk in een behandelkamer van Diba Clinics",
+  src: shoot("hero-huidscan"),
+  alt: "Behandelaar van Diba Clinics bespreekt de uitkomst van een huidscan met een cliënt",
 } as const satisfies Beeld;
 
 /** In de kliniek — twee behandelaars tussen twee afspraken door. */
@@ -36,10 +65,21 @@ export const FIGMA_HOME_CLINIC = {
   alt: "Twee behandelaars van Diba Clinics in gesprek in de kliniek in Hillegersberg",
 } as const satisfies Beeld;
 
-/** Eerlijk advies — consultmoment met de cliënt. */
+/**
+ * Eerlijk advies: het moment waarop iets uitgelegd wordt.
+ *
+ * Hier stond `eerlijk-advies-consult`, en daarop is een XL Hair-behandeling te zien met de
+ * verpakking in beeld. Dat is een product tonen, niet advies geven, en het staat naast een
+ * kop die precies het tegenovergestelde belooft. Wie de foto herkent leest de sectie als
+ * verkoop.
+ *
+ * Nu een opname waarop een behandelaar met een doorsnedemodel van de huid uitlegt wat er
+ * waar zit, met de client ernaast. Dat is letterlijk wat de drie punten eronder claimen:
+ * eerst begrijpen waar het over gaat, dan pas kiezen. Camera-origineel _DSC4085.
+ */
 export const FIGMA_EERLIJK_ADVIES = {
-  src: shoot("eerlijk-advies-consult"),
-  alt: "Behandelaar bespreekt een behandelplan met een cliënt in de kliniek",
+  src: shoot("uitleg-huidlagen"),
+  alt: "Behandelaar legt aan de hand van een doorsnedemodel van de huid uit wat er waar zit",
 } as const satisfies Beeld;
 
 /**

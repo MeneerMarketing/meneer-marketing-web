@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import FigmaKennisbankSection from "@/components/figma/FigmaKennisbankSection";
+import HeroVariant from "@/components/hero-variant/HeroVariant";
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
 import FigmaVoorJouSection from "@/components/figma/FigmaVoorJouSection";
@@ -22,7 +23,6 @@ import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
 import MiniHuidscan from "@/components/ui/MiniHuidscan";
 import WerkwijzeStepsFlow from "@/components/ui/WerkwijzeStepsFlow";
 import {
-  FIGMA_HOME_CLINIC,
   FIGMA_TRAJECT_TESTIMONIAL,
 } from "@/data/figma-home-images";
 import { HOME_FAQ_ITEMS } from "@/data/home-faq";
@@ -61,7 +61,18 @@ const EERLIJK_ADVIES_PUNTEN = [
   },
 ] as const;
 
-export default function FigmaHomeApp() {
+/**
+ * De homepage.
+ *
+ * `heroVariant` wisselt alleen het bovenste blok om. /  draait hem uit en
+ * /home-variant draait hem aan, zodat die twee routes verder letterlijk dezelfde
+ * pagina zijn en een vergelijking dus over de hero gaat en nergens anders over.
+ */
+export default function FigmaHomeApp({
+  heroVariant = false,
+}: {
+  heroVariant?: boolean;
+}) {
   const [scanOpen, setScanOpen] = useState(false);
 
   const year = new Date().getFullYear();
@@ -82,112 +93,113 @@ export default function FigmaHomeApp() {
 
   return (
     <main className="figma-home min-h-screen overflow-x-clip bg-[var(--g-010)] text-[var(--t-strong)] selection:bg-[var(--on-dark-accent)]">
-      <Topbalk />
-      <HoofdNav />
+      {/* De hero is het enige verschil tussen deze pagina en /home-variant.
 
-      <section
-        id="top"
-        className="relative mx-auto px-5 sm:px-9 lg:px-[7.5vw]"
-      >
-        <div className="grid min-h-[730px] lg:grid-cols-[1.18fr_.82fr]">
-          {/* De linkerkolom is de binnenkomer. Eén blok, verticaal gecentreerd tegenover
-              het beeld — geen `justify-between` meer. Dat duwde de slogan tegen de
-              bovenrand en de knoppen tegen de onderrand, met gaten ertussen die per
-              schermhoogte verschilden; daardoor stond die eerste regel los te zweven.
+          Die route liet eerst alleen de hero zien met een toelichting eronder. Dat is
+          geen vergelijking: je zag twee heroes maar maar één pagina, en juist hoe een
+          hero doorloopt naar de rest bepaalt of hij werkt. Nu draaien beide routes deze
+          hele component en verschilt alleen dit blok.
 
-              Ook nog maar één introregel. Er stonden er twee boven elkaar ("Trust the
-              green touch." én "Huidzorg die klopt"), die om dezelfde plek vochten. De
-              groene punt is meeverhuisd naar de overgebleven regel: dat is de Green
-              Touch als merkteken, niet als losse zin. De slogan zelf staat al in de
-              topbalk en in de footer. */}
-          <div className="flex flex-col justify-center py-16 lg:py-24">
-            <p className="diba-label flex items-center gap-2.5">
-              <span
-                className="h-2 w-2 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-400)]"
-                aria-hidden="true"
-              />
-              Huidzorg die klopt
-            </p>
+          HeroVariant brengt zijn eigen Topbalk en HoofdNav mee, want in dat ontwerp
+          zweven die binnen het beeld in plaats van erboven te staan. Vandaar dat ze in
+          de andere tak apart staan en hier niet. */}
+      {heroVariant ? (
+        <HeroVariant />
+      ) : (
+        <>
+          <Topbalk />
+          <HoofdNav />
 
-            {/* max-w in ch: de kop breekt op de bedoelde plek en raakt de foto nooit. */}
-            <h1 className="diba-display-xl mt-6 max-w-[11ch]">
-              Geen gokwerk.
-              <br />
-              <span className="diba-accent">Wel jouw huid.</span>
-            </h1>
+          <section
+            id="top"
+            className="relative mx-auto px-5 sm:px-9 lg:px-[7.5vw]"
+          >
+            <div className="grid min-h-[730px] lg:grid-cols-[1.18fr_.82fr]">
+              {/* De linkerkolom is de binnenkomer. Eén blok, verticaal gecentreerd tegenover
+                  het beeld — geen `justify-between` meer. Dat duwde de slogan tegen de
+                  bovenrand en de knoppen tegen de onderrand, met gaten ertussen die per
+                  schermhoogte verschilden; daardoor stond die eerste regel los te zweven.
 
-            <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare
-              prijzen, en een nulmeting voordat we behandelen. Soms is het
-              advies om even te wachten.
-            </p>
+                  Ook nog maar één introregel. Er stonden er twee boven elkaar ("Trust the
+                  green touch." én "Huidzorg die klopt"), die om dezelfde plek vochten. De
+                  groene punt is meeverhuisd naar de overgebleven regel: dat is de Green
+                  Touch als merkteken, niet als losse zin. De slogan zelf staat al in de
+                  topbalk en in de footer. */}
+              <div className="flex flex-col justify-center py-16 lg:py-24">
+                <p className="diba-label flex items-center gap-2.5">
+                  <span
+                    className="h-2 w-2 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-400)]"
+                    aria-hidden="true"
+                  />
+                  Huidzorg die klopt
+                </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake">Start je intake (4 min)</Button>
-              <Button
-                href={DIBA_WHATSAPP_URL}
-                variant="ghost"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Nog niet zeker? Stel je vraag
-              </Button>
+                {/* max-w in ch: de kop breekt op de bedoelde plek en raakt de foto nooit. */}
+                <h1 className="diba-display-xl mt-6 max-w-[11ch]">
+                  Geen gokwerk.
+                  <br />
+                  <span className="diba-accent">Wel jouw huid.</span>
+                </h1>
+
+                <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
+                  Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare
+                  prijzen, en een nulmeting voordat we behandelen. Soms is het
+                  advies om even te wachten.
+                </p>
+
+                <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
+                  <Button href="/intake">Start je intake (4 min)</Button>
+                  <Button
+                    href={DIBA_WHATSAPP_URL}
+                    variant="ghost"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Nog niet zeker? Stel je vraag
+                  </Button>
+                </div>
+              </div>
+
+              <div className="relative min-h-[440px] overflow-hidden rounded-bl-[9rem] bg-[var(--g-200)] lg:rounded-bl-[14rem]">
+                <Image
+                  src={FIGMA_HERO_PORTRAIT}
+                  alt={FIGMA_HERO_PORTRAIT_ALT}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover object-center"
+                />
+                {/* Geen groene waas meer over de foto.
+
+                    Hier lag een verloop van mintgroen naar donkergroen over het hele beeld.
+                    Het trok de huid van de behandelaar en van de client naar olijf, en dat
+                    is bij een huidkliniek nogal wat: de kleur van iemands huid is hier het
+                    onderwerp. Beide chips dragen bovendien hun eigen vlak, dus er was ook
+                    niets dat die laag nodig had.
+
+                    Wat er nu staat is een vignet en geen kleur: neutraal donker, alleen
+                    onderin, net genoeg om de ronde hoek diepte te geven. Boven de helft van
+                    het beeld gebeurt er niets. */}
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/30 via-transparent to-transparent"
+                  aria-hidden="true"
+                />
+                <span className="diba-label absolute left-7 top-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
+                  Huidzorg, zonder hype
+                </span>
+                <span className="diba-label absolute bottom-7 right-7 grid h-24 w-24 place-items-center rounded-[var(--r-pill)] border border-white/70 bg-[var(--g-700)]/90 text-center leading-4 text-white">
+                  Eerlijk
+                  <br />
+                  advies
+                </span>
+              </div>
             </div>
-          </div>
-
-          <div className="relative min-h-[440px] overflow-hidden rounded-bl-[9rem] bg-[var(--g-200)] lg:rounded-bl-[14rem]">
-            <Image
-              src={FIGMA_HERO_PORTRAIT}
-              alt={FIGMA_HERO_PORTRAIT_ALT}
-              fill
-              priority
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover object-center"
-            />
-            {/* Leeslaag, geen versiering (§2): net genoeg om de twee chips leesbaar te
-                houden. Stond op .84 om bleke stockbeelden groen te trekken; op een echte
-                behandelfoto wiste dat het gezicht van de behandelaar weg. */}
-            <div
-              className="absolute inset-0 bg-[linear-gradient(145deg,rgba(232,248,220,.28),transparent_45%,rgba(38,104,66,.30))]"
-              aria-hidden="true"
-            />
-            <span className="diba-label absolute left-7 top-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-              Huidzorg, zonder hype
-            </span>
-            <span className="diba-label absolute bottom-7 right-7 grid h-24 w-24 place-items-center rounded-[var(--r-pill)] border border-white/70 bg-[var(--g-700)]/90 text-center leading-4 text-white">
-              Eerlijk
-              <br />
-              advies
-            </span>
-          </div>
-        </div>
-      </section>
+          </section>
+        </>
+      )}
       <ProofBar items={DIBA_HOME_PROOF_ITEMS} />
 
       <FigmaVoorJouSection />
-
-      <section className="relative overflow-hidden px-5 py-10 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto flex flex-wrap items-center justify-between gap-5 rounded-[var(--r-lg)] bg-[var(--g-050)] px-7 py-6 sm:px-10">
-          <div className="flex items-center gap-5">
-            <DibaIcon variant="groen" size={52} />
-            <p className="max-w-xl text-sm leading-6 text-[var(--t-body)]">
-              <strong className="font-medium text-[var(--g-700)]">
-                Elke huid wordt serieus genomen.
-              </strong>{" "}
-              Ook als je nog niet weet waar je moet beginnen.
-            </p>
-          </div>
-          <a
-            href={DIBA_WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="diba-label inline-flex shrink-0 items-center gap-1.5 rounded-[var(--r-pill)] bg-white px-5 py-3 text-[var(--g-700)] shadow-sm transition hover:bg-[var(--g-025)]"
-          >
-            Stel je vraag
-            <ArrowUpRight size={13} />
-          </a>
-        </div>
-      </section>
 
       <section
         id="huidscan"
@@ -225,6 +237,39 @@ export default function FigmaHomeApp() {
             </div>
           </div>
           <MiniHuidscan />
+        </div>
+
+        {/* "Elke huid wordt serieus genomen" stond hierboven als losse strook tussen twee
+            secties in. Daar was het een tussenzin zonder eigenaar: een vlak dat nergens bij
+            hoorde en de overgang van "Waar wil je hulp bij?" naar de huidscan in tweeen hakte.
+
+            Hier hoort hij wel ergens bij. De sectie erboven gaat over meten, en meten kan
+            klinken als een drempel: alsof je eerst iets moet weten voordat je binnen mag.
+            Deze regel is precies het tegendeel daarvan, en staat nu dus op de plek waar die
+            twijfel ontstaat in plaats van ervoor.
+
+            Op donker en niet op mintgroen: dit is nu een onderdeel van de groene sectie en
+            geen los kaartje. De vulling is wit op tien procent, want een tweede
+            donkergroen vlak in hetzelfde vlak leest als een fout. */}
+        <div className="mx-auto mt-12 flex flex-wrap items-center justify-between gap-5 rounded-[var(--r-lg)] bg-white/10 px-7 py-6 sm:px-10 lg:mt-16">
+          <div className="flex items-center gap-5">
+            <DibaIcon variant="wit" size={52} />
+            <p className="max-w-xl text-sm leading-6 text-[var(--on-dark-body)]">
+              <strong className="font-medium text-[var(--on-dark)]">
+                Elke huid wordt serieus genomen.
+              </strong>{" "}
+              Ook als je nog niet weet waar je moet beginnen.
+            </p>
+          </div>
+          <a
+            href={DIBA_WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="diba-label inline-flex shrink-0 items-center gap-1.5 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-5 py-3 text-[var(--on-dark-btn-text)] transition hover:bg-white"
+          >
+            Stel je vraag
+            <ArrowUpRight size={13} />
+          </a>
         </div>
       </section>
 
@@ -284,7 +329,7 @@ export default function FigmaHomeApp() {
                 Dan behandelen.
               </h2>
             </div>
-            <WerkwijzeStepsFlow variant="figma" className="self-end" />
+            <WerkwijzeStepsFlow className="self-end" />
           </div>
         </div>
       </section>
@@ -295,17 +340,20 @@ export default function FigmaHomeApp() {
           een claim, met hen is het na te rekenen. */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
-          <div className="relative min-h-[320px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-400)] lg:min-h-[440px]">
+          {/* Het groene vlak eronder en de multiply-modus zijn allebei weg. Samen
+              verfden ze de foto egaal groen; wat overbleef was een silhouet, geen opname. */}
+          <div className="relative min-h-[320px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] lg:min-h-[440px]">
             <Image
               src={FIGMA_EERLIJK_PORTRAIT}
               alt={FIGMA_EERLIJK_PORTRAIT_ALT}
               fill
               sizes="(min-width: 1024px) 46vw, 100vw"
-              className="object-cover object-center mix-blend-multiply opacity-90"
+              className="object-cover object-center"
             />
-            {/* Leeslaag onderaan, zodat het vestigingslabel altijd leesbaar is. */}
+            {/* Leeslaag onderaan, zodat het vestigingslabel altijd leesbaar is. Neutraal
+                donker en niet groen: dit is schaduw, geen tint. */}
             <div
-              className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(23,55,42,.55))]"
+              className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/70 via-[var(--foto-scrim)]/10 to-transparent"
               aria-hidden="true"
             />
             <span className="diba-label absolute bottom-6 left-6 text-white">
@@ -357,16 +405,34 @@ export default function FigmaHomeApp() {
       </section>
 
       <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <FigmaSoftAccent variant="traject" />
+        {/* Het blad stond hier rechtsboven en is weg. Deze sectie heeft er geen ruimte
+            voor: de kop loopt nu over de volle kolombreedte, en dan wordt een merkteken in
+            de hoek geen accent maar een obstakel. */}
         <div className="relative mx-auto">
-          <div className="grid gap-10 lg:grid-cols-[.72fr_1.28fr]">
-            <div>
+          {/* De kop stond op twee regels omdat de kolom te smal was (.72 tegen 1.28) en
+              hij brak op "meebeweegt". Nu 1.05 tegen 0.95, en `text-nowrap` op groote
+              schermen zodat hij ook echt op één regel blijft in plaats van net wel of net
+              niet te passen.
+
+              De alinea staat op `items-baseline`, dus hij begint op dezelfde basislijn als
+              de kop in plaats van eronder uit te zakken. */}
+          {/* Een rij en geen raster.
+
+              Met vaste kolombreedtes moest de kop in een cel passen die smaller was dan de
+              zin zelf, dus hij brak of hij liep over de rand. Nu pakt de kop zijn eigen
+              breedte en krijgt de alinea wat overblijft.
+
+              `items-end` zet de onderkanten gelijk, waardoor de laatste regel van de alinea
+              op de basislijn van de kop staat. Dat is wat je bedoelt met op dezelfde regel:
+              niet dat ze even hoog beginnen, maar dat ze samen één regel vormen. */}
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
+            <div className="shrink-0">
               <Label>Niet zomaar een afspraak</Label>
-              <h2 className="diba-display-m mt-4">
+              <h2 className="diba-display-m mt-4 lg:whitespace-nowrap">
                 Een traject dat met je meebeweegt.
               </h2>
             </div>
-            <p className="max-w-2xl self-end text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
               Een mooie huid is zelden één moment. Daarom bekijken we samen wat
               er speelt, wat haalbaar is en hoe we jouw voortgang kunnen volgen,
               zonder dat je vastzit aan een pakket.
@@ -456,27 +522,22 @@ export default function FigmaHomeApp() {
                 Er is ruimte voor je vragen, en voor twijfel.
               </p>
             </div>
-            {/* Sfeerkaart, geen bewijsbeeld. Hier mag het beeld wél in het merkgroen
-                getrokken worden: mix-blend-multiply over een groen vlak geeft de rijke,
-                egale tint uit het ontwerp. Op behandelfoto's is dat juist verkeerd —
-                daar telt de echte huidskleur — dus staat het alleen hier. */}
-            <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-400)]">
-              <Image
-                src={FIGMA_HOME_CLINIC.src}
-                alt={FIGMA_HOME_CLINIC.alt}
-                fill
-                sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover object-center mix-blend-multiply opacity-80"
-              />
-              <div
-                className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(23,55,42,.42))]"
-                aria-hidden="true"
-              />
+            {/* Een vlak en geen foto.
+
+                Hier stond een opname van twee collega's met een leeslaag eroverheen. Die
+                foto had de leeslaag nodig om de twee regels leesbaar te houden, en daarmee
+                was hij half weggewerkt: te donker om als foto te tellen, te aanwezig om
+                rustig te zijn. Twee halve dingen in één vlak.
+
+                Nu een egaal groen vlak met het blad rechtsboven, zoals het eerder was. Het
+                merkteken heeft hier wel ruimte, want er staat niets achter dat eronder
+                lijdt. De foto's staan elders op de pagina, waar ze foto's mogen zijn. */}
+            <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-700)]">
               <FigmaSoftAccent variant="clinic" className="z-10" />
               <p className="diba-label absolute left-7 top-7 z-10 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
                 Diba, Rotterdam
               </p>
-              <p className="diba-card-title absolute bottom-7 left-7 z-10 text-white drop-shadow-[0_2px_12px_rgba(15,45,28,.35)]">
+              <p className="diba-card-title absolute bottom-7 left-7 z-10 text-[var(--on-dark)]">
                 Warm in gevoel.
                 <br />
                 Scherp in kennis.

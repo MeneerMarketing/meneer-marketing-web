@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -150,6 +151,7 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
       <header className="relative z-10 bg-inherit">
         <div className="mx-auto flex items-center justify-between gap-6 px-5 py-5 sm:px-9 lg:px-[7.5vw]">
           <Link
+            prefetch={false}
             href="/"
             aria-label="Diba Clinics, naar de homepage"
             className="shrink-0 rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current"
@@ -289,6 +291,7 @@ function NavKnop({
   if (!item.kolommen) {
     return (
       <Link
+        prefetch={false}
         href={item.href}
         className={basis}
         onMouseEnter={onOpen}
@@ -372,6 +375,7 @@ function Paneel({
                   {kolom.items.map((l) => (
                     <li key={l.href}>
                       <Link
+                        prefetch={false}
                         href={l.href}
                         onClick={onSluit}
                         className="group -mx-3 block rounded-[var(--r-sm)] px-3 py-2 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
@@ -394,6 +398,7 @@ function Paneel({
 
           <div className="mt-10 border-t border-[var(--g-100)] pt-5">
             <Link
+              prefetch={false}
               href={item.href}
               onClick={onSluit}
               className="diba-label inline-flex items-center gap-2 text-[var(--g-700)] transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
@@ -405,7 +410,22 @@ function Paneel({
         </div>
 
         {item.uitgelicht ? (
-          <div className="col-span-3 flex flex-col justify-center bg-[var(--g-050)] p-8 xl:p-10">
+          <div className="col-span-3 flex flex-col bg-[var(--g-050)]">
+            {/* Het beeld vult de bovenkant tot de randen. De kolom was voor twee derde
+                leeg; nu draagt hij waar je terechtkomt. */}
+            {item.uitgelicht.foto ? (
+              <div className="relative aspect-[16/11] w-full overflow-hidden">
+                <Image
+                  src={item.uitgelicht.foto.src}
+                  alt={item.uitgelicht.foto.alt}
+                  fill
+                  sizes="30vw"
+                  className="object-cover object-center"
+                />
+              </div>
+            ) : null}
+
+            <div className="flex flex-1 flex-col justify-center p-8 xl:p-10">
             <p className="diba-label text-[var(--t-muted)]">
               {item.uitgelicht.label}
             </p>
@@ -416,6 +436,7 @@ function Paneel({
               {item.uitgelicht.zin}
             </p>
             <Link
+              prefetch={false}
               href={item.uitgelicht.href}
               onClick={onSluit}
               className="diba-label mt-7 inline-flex h-11 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
@@ -423,6 +444,20 @@ function Paneel({
               {item.uitgelicht.knop}
               <Pijl />
             </Link>
+
+            {/* De tweede ingang. Bewust een tekstlink en geen tweede knop: twee knoppen
+                naast elkaar maken er een keuze van, en dan sta je alsnog stil. */}
+            {item.uitgelicht.tweede ? (
+              <Link
+                prefetch={false}
+                href={item.uitgelicht.tweede.href}
+                onClick={onSluit}
+                className="mt-4 inline-flex w-fit text-[14px] leading-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+              >
+                {item.uitgelicht.tweede.tekst}
+              </Link>
+            ) : null}
+            </div>
           </div>
         ) : null}
       </div>
@@ -497,6 +532,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                           {kolom.items.map((l) => (
                             <li key={l.href}>
                               <Link
+                                prefetch={false}
                                 href={l.href}
                                 onClick={onSluit}
                                 className="flex min-h-12 items-center rounded-[var(--r-sm)] px-3 text-[15px] text-[var(--t-body)] active:bg-[var(--g-050)]"
@@ -510,6 +546,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                     ))}
                     <li className="mt-2">
                       <Link
+                        prefetch={false}
                         href={item.href}
                         onClick={onSluit}
                         className="diba-label flex min-h-12 items-center px-3 text-[var(--g-700)]"
@@ -523,6 +560,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
             ) : (
               <li key={item.label}>
                 <Link
+                  prefetch={false}
                   href={item.href}
                   onClick={onSluit}
                   className="flex min-h-14 items-center text-[17px] font-medium text-[var(--t-strong)]"
