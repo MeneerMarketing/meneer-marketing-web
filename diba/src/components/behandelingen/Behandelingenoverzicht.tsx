@@ -14,6 +14,7 @@ import {
 import {
   maakMatches,
   profielIsLeeg,
+  type MatchGrond,
   type MatchOordeel,
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
@@ -57,16 +58,54 @@ function kortHerstel(b: Behandeling): boolean {
   return !heeftHersteltijd(b) || /uur|één tot drie|een dag/i.test(b.herstel);
 }
 
+/**
+ * Het label op de kaart, per grond en niet per oordeel.
+ *
+ * "Past niet" stond hier boven twee heel verschillende dingen: een behandeling die bij
+ * jou werkelijk niet kan, en een behandeling die gewoon over een ander probleem gaat.
+ * Wie acne opgeeft ziet dan veertien kaarten met "past niet", en concludeert dat deze
+ * kliniek weinig voor hem heeft, terwijl er alleen staat dat een laserontharing niets
+ * tegen puistjes doet.
+ *
+ * De reden staat er al onder; het label hoort daar niet mee in tegenspraak te zijn.
+ */
 const BADGE: Record<
-  MatchOordeel,
+  MatchGrond,
   { readonly tekst: string; readonly stijl: string }
 > = {
-  past: { tekst: "Past bij je profiel", stijl: "bg-[var(--g-700)] text-white" },
-  deels: { tekst: "Deels", stijl: "bg-[var(--g-100)] text-[var(--t-strong)]" },
-  "past-niet": {
-    tekst: "Past niet",
+  raak: {
+    tekst: "Past bij je profiel",
+    stijl: "bg-[var(--g-700)] text-white",
+  },
+  zijdelings: {
+    tekst: "Deels",
+    stijl: "bg-[var(--g-100)] text-[var(--t-strong)]",
+  },
+  blokkade: {
+    tekst: "Kan bij jou nu niet",
+    stijl: "bg-[var(--warn-vlak)] text-[var(--warn-text)]",
+  },
+  herstel: {
+    tekst: "Te veel hersteltijd",
+    stijl: "bg-[var(--warn-vlak)] text-[var(--warn-text)]",
+  },
+  "ander-doel": {
+    tekst: "Voor iets anders",
     stijl: "bg-[var(--g-050)] text-[var(--t-muted)]",
   },
+  "geen-doel": {
+    tekst: "Kies eerst een doel",
+    stijl: "bg-[var(--g-050)] text-[var(--t-muted)]",
+  },
+};
+/** Welke redenen voor elke behandeling hetzelfde luiden, en dus niets toevoegen. */
+const ALGEMEEN: Record<MatchGrond, boolean> = {
+  raak: false,
+  zijdelings: false,
+  blokkade: false,
+  herstel: false,
+  "ander-doel": true,
+  "geen-doel": true,
 };
 
 const RANG: Record<MatchOordeel, number> = {
@@ -186,7 +225,8 @@ export default function Behandelingenoverzicht() {
         {heeftProfiel ? (
           <>
             De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat
-            afvalt, met bij elke kaart de reden.{" "}
+            over iets anders gaat. Waar de reden per behandeling verschilt, staat
+            hij op de kaart.{" "}
             <Link
               href="/huidprofiel"
               className="text-[var(--g-700)] underline underline-offset-4"
@@ -228,9 +268,9 @@ export default function Behandelingenoverzicht() {
                   </span>
                   {match ? (
                     <span
-                      className={`diba-label rounded-[var(--r-pill)] px-2.5 py-1 ${BADGE[match.oordeel].stijl}`}
+                      className={`diba-label rounded-[var(--r-pill)] px-2.5 py-1 ${BADGE[match.grond].stijl}`}
                     >
-                      {BADGE[match.oordeel].tekst}
+                      {BADGE[match.grond].tekst}
                     </span>
                   ) : null}
                 </span>
@@ -248,7 +288,17 @@ export default function Behandelingenoverzicht() {
                   {publicCopy(b.kort)}
                 </span>
 
-                {match ? (
+                {/* De reden, maar alleen als die iets zegt dat de badge nog niet zei.
+
+                    Bij "voor iets anders" is de reden voor elke behandeling exact dezelfde
+                    zin. Veertien kaarten naast elkaar met hetzelfde vlak en dezelfde regel
+                    erin is geen uitleg maar behang: het duwt de naam, de prijs en de
+                    hersteltijd naar beneden en je leest het na de tweede kaart niet meer.
+                    De badge zegt het al in twee woorden.
+
+                    Bij een blokkade, te weinig hersteltijd of een treffer staat er wel iets
+                    dat per behandeling verschilt, en dan hoort het er juist te staan. */}
+                {match && (ALGEMEEN[match.grond] === false || match.letOp.length > 0) ? (
                   <span
                     className={`mt-4 rounded-[var(--r-sm)] p-4 text-[13px] leading-5 ${
                       match.oordeel === "past-niet"
@@ -256,7 +306,7 @@ export default function Behandelingenoverzicht() {
                         : "bg-[var(--g-025)] text-[var(--t-body)]"
                     }`}
                   >
-                    {match.reden}
+                    {ALGEMEEN[match.grond] ? null : match.reden}
                     {match.letOp.length > 0 ? (
                       <span className="mt-2 block font-medium text-[var(--t-strong)]">
                         Let op: {match.letOp[0]}

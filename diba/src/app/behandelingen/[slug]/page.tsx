@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ProfielOordeel from "@/components/huidprofiel/ProfielOordeel";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
 import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
@@ -200,6 +201,13 @@ export default async function BehandelingPage({ params }: PageProps) {
               </div>
             </div>
           </div>
+
+          {/* Wat er bij deze bezoeker uit het huidprofiel kwam.
+
+              Staat direct onder de rij en boven de omschrijving: als deze behandeling bij
+              jou is afgevallen, hoor je dat te lezen voordat je de verkooptekst leest en
+              niet erna. Zonder ingevuld profiel rendert hij niets. */}
+          <ProfielOordeel slug={b.slug} />
 
           {/* ── Onder de rij, over de volle breedte ── */}
           <p className="mt-8 text-[17px] leading-8 text-[var(--t-body)]">

@@ -88,7 +88,7 @@ export default function PrijzenVoorJou() {
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Dit is wat er op grond van je profiel bij je past, met het tarief
             erbij. De volledige lijst staat er gewoon onder; er is niets
-            weggefilterd.
+            weggefilterd. Wat bij jou afviel, staat daar aangemerkt.
           </p>
 
           <ul className="mt-7 space-y-2">
@@ -148,6 +148,14 @@ export default function PrijzenVoorJou() {
               Wat er dan wel past: {geenMatch.danWel.join(" · ")}.
             </p>
           ) : null}
+
+          {/* Ook als er niets past hoort de lijst eronder leesbaar te blijven. Zonder deze
+              regel scrol je naar eenentwintig prijzen zonder te weten dat de merktekens
+              daar van jou zijn. */}
+          <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
+            De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat
+            bij jou afviel, staat daar aangemerkt.
+          </p>
         </div>
       ) : (
         <p className="mt-5 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">

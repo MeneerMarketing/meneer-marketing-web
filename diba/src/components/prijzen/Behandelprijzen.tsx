@@ -10,6 +10,8 @@ import {
   type Behandeling,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
+import { useOordelen } from "@/lib/huidprofiel-oordeel";
+import type { Match, MatchGrond } from "@/data/huidprofiel";
 
 /**
  * De behandelprijzen, met wat je voor dat bedrag krijgt.
@@ -51,14 +53,29 @@ function metInhoud() {
   })).filter((c) => c.items.length > 0);
 }
 
+/** Per grond: wat er onder de regel komt, en of het een grens is of een verschil. */
+const MERKTEKEN: Record<
+  MatchGrond,
+  { tekst: string; hard: boolean } | null
+> = {
+  blokkade: { tekst: "Kan bij jou nu niet", hard: true },
+  herstel: { tekst: "Vraagt meer hersteltijd dan je aangaf", hard: true },
+  "ander-doel": { tekst: "Voor iets anders dan jij zoekt", hard: false },
+  zijdelings: { tekst: "Doet er iets aan, maar is er niet voor gemaakt", hard: false },
+  raak: null,
+  "geen-doel": null,
+};
+
 function Regel({
   behandeling,
   open,
   onWissel,
+  oordeel,
 }: {
   behandeling: Behandeling;
   open: boolean;
   onWissel: () => void;
+  oordeel?: Match;
 }) {
   const b = behandeling;
   const heeftDetail =
@@ -83,6 +100,31 @@ function Regel({
           <span className="mt-0.5 block max-w-[54ch] text-[14px] leading-6 text-[var(--t-muted)]">
             {publicCopy(b.kort)}
           </span>
+          {/* Wat het huidprofiel over deze regel te zeggen heeft.
+
+              WAAROM HIER NIET GEWOON "PAST NIET" STAAT.
+
+              Omdat dat bij veertien van de eenentwintig regels zou staan zodra iemand een
+              doel kiest, en het bij de meeste daarvan niet waar is. Wie acne opgeeft, ziet
+              elke rimpelbehandeling afvallen: niet omdat die bij hem niet kan, maar omdat
+              die over iets anders gaat. Dat naast een bedrag "viel bij jou af" noemen leest
+              als afwijzing, en dan gelooft iemand op den duur geen van beide merktekens meer.
+
+              Dus twee soorten. Een grens die bij jou hoort staat in de waarschuwingskleur;
+              een behandeling die simpelweg over iets anders gaat staat er grijs bij. En wat
+              wel past krijgt niets, want dat staat al bovenaan deze pagina met tarief en
+              reden erbij. Geen merkteken betekent dus: dit past bij je profiel. */}
+          {MERKTEKEN[oordeel?.grond ?? "raak"] ? (
+            <span
+              className={`mt-1 block text-[13px] leading-6 ${
+                MERKTEKEN[oordeel!.grond]!.hard
+                  ? "text-[var(--warn-text)]"
+                  : "text-[var(--t-muted)]"
+              }`}
+            >
+              {MERKTEKEN[oordeel!.grond]!.tekst}
+            </span>
+          ) : null}
         </span>
         <span className="flex shrink-0 items-baseline gap-3">
           {/* Het bedrag blijft staan, ook dicht. Dat is de belofte van deze pagina.
@@ -198,6 +240,7 @@ function Regel({
 export default function Behandelprijzen() {
   const [open, setOpen] = useState<string | null>(null);
   const groepen = useMemo(() => metInhoud(), []);
+  const oordelen = useOordelen();
 
   return (
     /* Eén kolom, en dat is een correctie op de vorige opzet.
@@ -237,6 +280,7 @@ export default function Behandelprijzen() {
                 behandeling={b}
                 open={open === b.slug}
                 onWissel={() => setOpen(open === b.slug ? null : b.slug)}
+                oordeel={oordelen?.get(b.slug)}
               />
             ))}
           </ul>

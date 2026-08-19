@@ -594,9 +594,40 @@ const LET_OP: readonly {
 
 export type MatchOordeel = "past" | "deels" | "past-niet";
 
+/**
+ * Waarom het oordeel is wat het is.
+ *
+ * `oordeel` alleen is te grof zodra je het buiten de uitkomstpagina gebruikt. Daar staan
+ * de behandelingen in drie bakken met de reden eronder, en dan is "past niet" duidelijk
+ * genoeg. Maar op een prijslijst, waar je alleen ruimte hebt voor drie woorden naast een
+ * bedrag, gaan twee heel verschillende dingen "past niet" heten:
+ *
+ * - je bent zwanger, dus deze behandeling kan nu niet;
+ * - je zoekt iets tegen acne, en dit is een rimpelbehandeling.
+ *
+ * Het eerste is een grens die bij jou hoort. Het tweede zegt niets over jou en alles over
+ * de behandeling. Ze allebei "viel bij jou af" noemen leest als afwijzing waar er alleen
+ * sprake is van een ander onderwerp, en dat is precies het soort onnauwkeurigheid dat deze
+ * site niet moet maken.
+ */
+export type MatchGrond =
+  /** Een contra-indicatie: zwangerschap, medicatie, huidtype. Kan nu niet. */
+  | "blokkade"
+  /** Vraagt meer hersteltijd dan je zei te hebben. Kan wel, maar niet zoals jij wil. */
+  | "herstel"
+  /** Werkt op iets anders dan wat jij wil veranderen. Niets mis mee. */
+  | "ander-doel"
+  /** Hiervoor is de behandeling gemaakt. */
+  | "raak"
+  /** Doet er iets aan, maar is er niet voor gemaakt. */
+  | "zijdelings"
+  /** Je hebt nog geen doel gekozen, dus valt er niets te zeggen. */
+  | "geen-doel";
+
 export type Match = {
   readonly behandeling: Behandeling;
   readonly oordeel: MatchOordeel;
+  readonly grond: MatchGrond;
   /** Waarom. Bij "past-niet" is dit de belangrijkste regel op de pagina. */
   readonly reden: string;
   /** Kan wel, maar moet besproken worden. Blokkeert niets. */
@@ -626,7 +657,13 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
       (x) => x.wanneer(p) && x.slugs.includes(b.slug),
     );
     if (blok) {
-      return { behandeling: b, oordeel: "past-niet", reden: blok.reden, letOp };
+      return {
+        behandeling: b,
+        oordeel: "past-niet",
+        grond: "blokkade",
+        reden: blok.reden,
+        letOp,
+      };
     }
 
     if (p.herstel) {
@@ -634,9 +671,18 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
       const ruimte = RUIMTE_VOLGORDE.indexOf(p.herstel);
       const nodig = RUIMTE_VOLGORDE.indexOf(vraagt);
       if (nodig > ruimte) {
+        /* De zin bouwt zich op uit twee labels, en dat ging mis bij het eerste.
+
+           `label` is bedoeld voor een keuzeknop ("Geen", "Een dag", "Een paar dagen") en
+           daar staat het prima. In een lopende zin werd het "Je gaf geen op", wat geen
+           Nederlands is. Vandaar hier een eigen formulering per keuze: een label in een knop
+           en een label in een zin zijn twee verschillende teksten. */
         const gaf =
-          HERSTELRUIMTE.find((h) => h.id === p.herstel)?.label.toLowerCase() ??
-          "geen";
+          p.herstel === "geen"
+            ? "dat je er meteen weer normaal uit moet zien"
+            : p.herstel === "dag"
+              ? "dat je een dag kunt hebben"
+              : "dat je een paar dagen kunt hebben";
         const moet =
           vraagt === "dagen"
             ? "een paar dagen"
@@ -646,7 +692,8 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
         return {
           behandeling: b,
           oordeel: "past-niet",
-          reden: `Vraagt meer hersteltijd dan je aangaf. Je gaf ${gaf} op, en hiervoor moet je rekenen op ${moet}.`,
+          grond: "herstel",
+          reden: `Vraagt meer hersteltijd dan je aangaf. Je gaf aan ${gaf}, en hiervoor moet je rekenen op ${moet}.`,
           letOp,
         };
       }
@@ -664,6 +711,7 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
         return {
           behandeling: b,
           oordeel: "past",
+          grond: "raak",
           reden: `Hiervoor is deze behandeling gemaakt: ${namen.join(" en ")}.`,
           letOp,
         };
@@ -675,6 +723,7 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
         return {
           behandeling: b,
           oordeel: "deels",
+          grond: "zijdelings",
           reden: `Doet iets aan ${namen.join(" en ")}, maar daar is het niet voor gemaakt.`,
           letOp,
         };
@@ -682,6 +731,7 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
       return {
         behandeling: b,
         oordeel: "past-niet",
+        grond: "ander-doel",
         reden:
           "Werkt niet op wat jij wil veranderen. Niet minder goed, gewoon iets anders.",
         letOp,
@@ -691,6 +741,7 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
     return {
       behandeling: b,
       oordeel: "deels",
+      grond: "geen-doel",
       reden: "Kies eerst wat je wil veranderen.",
       letOp,
     };
@@ -768,13 +819,16 @@ export function waaromNiets(p: Huidprofiel): GeenMatch | null {
   if (p.herstel && p.herstel !== "dagen") {
     const zonder = namen(maakMatches({ ...p, herstel: "dagen" }));
     if (zonder.length > 0) {
+      /* Zelfde reden als hierboven: "je koos geen hersteltijd" leest als "je hebt geen
+         keuze gemaakt", terwijl het betekent dat je er nul wilde. */
       const gaf =
-        HERSTELRUIMTE.find((h) => h.id === p.herstel)?.label.toLowerCase() ??
-        "geen";
+        p.herstel === "geen"
+          ? "dat je er meteen weer normaal uit moet zien"
+          : "dat je hooguit een dag hebt";
       return {
         soort: "hersteltijd",
         kop: "Alleen de hersteltijd zit in de weg",
-        zin: `Voor wat jij wil veranderen bestaat er wel iets, maar niet binnen de ruimte die je opgaf: je koos ${gaf} hersteltijd.`,
+        zin: `Voor wat jij wil veranderen bestaat er wel iets, maar niet binnen de ruimte die je opgaf: je gaf aan ${gaf}.`,
         wat: "Kun je het rond een weekend plannen, dan komt er wel iets vrij. Kan dat niet, dan is dat een eerlijk antwoord en geen reden om iets lichters te boeken dat niet gaat werken.",
         danWel: zonder,
       };
