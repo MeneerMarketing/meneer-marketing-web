@@ -112,7 +112,7 @@ export default function GentleMaxProPage() {
           <div>
             <Label>755 of 1064 nanometer</Label>
             <h2 className="diba-display-m mt-4">
-              Welke laser
+              Welke laser{" "}
               <span className="diba-accent">krijg jij?</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -166,7 +166,7 @@ export default function GentleMaxProPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Wat dit apparaat niet kan</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                De eerste hiervan
+                De eerste hiervan{" "}
                 <span className="diba-accent-on-dark">
                   {" "}
                   staat nergens in een folder.

@@ -6,6 +6,7 @@ import LaserPulseMap from "@/components/laser/LaserPulseMap";
 import LaserSessieBoog from "@/components/laser/LaserSessieBoog";
 import PillarNav from "@/components/pillar/PillarNav";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import ReviewCard from "@/components/ui/ReviewCard";
 import SalonizedScorePanel from "@/components/ui/SalonizedScorePanel";
@@ -143,6 +144,21 @@ export default function LaserontharingPage() {
       {/* ── De drie punten ──
           Stond op een strook met scheidingslijnen ertussen. Drie vlakken doen hetzelfde
           zonder één lijn, en dat is de huisregel. */}
+      {/* Een stilleven en geen behandelfoto, met opzet. Veiligheid is bij laser het
+          onderwerp waar mensen het minst over horen en het meest over twijfelen; een bril
+          op een handdoek zegt dat rustiger dan een zin erover. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw]">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/detail-laserbril.jpg"
+            alt="Een laserbeschermbril op een opgevouwen handdoek in de behandelkamer"
+            onderschrift="Beschermbril, voor jou en voor ons"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
       <section className="bg-white px-5 py-14 sm:px-9 lg:px-[7.5vw]">
         <ul className="mx-auto grid gap-4 md:grid-cols-3">
           {LASER_USP_ROWS.map(({ title, body }) => (

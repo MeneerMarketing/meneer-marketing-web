@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
@@ -218,6 +219,21 @@ export default function OverOnsPage() {
       </section>
 
       {/* ── Wat er in huis is ── */}
+      {/* Het einde van een afspraak, en daarmee van deze pagina: iemand die met haar
+          tas de deur uit loopt. De rest van de site gaat over wat er binnen gebeurt; dit
+          is het enige beeld waarop iemand weer weggaat. */}
+      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/ontvangst-vertrek.jpg"
+            alt="Een client verlaat de kliniek met een tas van Diba Clinics"
+            onderschrift="Na afloop, aan de Weissenbruchlaan"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Dieptevergelijker from "@/components/apparatuur/Dieptevergelijker";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { APPARAAT_CATEGORIEEN, APPARATUUR } from "@/data/apparatuur";
 import { behandelingVoorSlug } from "@/data/behandelingen";
@@ -94,7 +95,7 @@ export default function ApparatuurPage() {
               <div>
                 <Label opDonker>Waarom dit ertoe doet</Label>
                 <p className="diba-display-s mt-4 max-w-[22ch]">
-                  Twee klinieken met hetzelfde apparaat
+                  Twee klinieken met hetzelfde apparaat{" "}
                   <span className="diba-accent-on-dark">
                     {" "}
                     geven niet hetzelfde resultaat.
@@ -125,6 +126,20 @@ export default function ApparatuurPage() {
       </section>
 
       {/* ── Alles op één schaal ── */}
+      {/* Deze pagina beweert dat er twaalf apparaten staan. Een opname van een ervan in de
+          kamer maakt dat controleerbaar in plaats van een opsomming. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/kliniek-nordlys-staand.jpg"
+            alt="Behandelaar naast de Nordlys in de behandelkamer van Diba Clinics"
+            onderschrift="De Nordlys, zoals hij bij ons staat"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF, DIBA_SITE_URL } from "@/lib/site";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 
 /**
  * Ons verhaal.
@@ -181,12 +182,26 @@ export default function OnsVerhaalPage() {
       ) : null}
 
       {/* ── De andere vier ── */}
+      {/* Vijf regels en wat ze kosten is een abstract verhaal. Dit is waar zo'n regel in de
+          praktijk wordt toegepast: twee mensen die samen besluiten of iets meegaat. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/producten-overleg.jpg"
+            alt="Twee behandelaars bekijken samen een verpakking in de kliniek"
+            onderschrift="Wat er wel en niet in huis komt"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>De andere vier</Label>
             <h2 className="diba-display-m mt-4">
-              Elk principe
+              Elk principe{" "}
               <span className="diba-accent">heeft een rekening.</span>
             </h2>
           </div>
@@ -231,7 +246,7 @@ export default function OnsVerhaalPage() {
           <div>
             <Label>Houd ons eraan</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Klopt er iets
+              Klopt er iets{" "}
               <span className="diba-accent">niet?</span>
             </h2>
           </div>

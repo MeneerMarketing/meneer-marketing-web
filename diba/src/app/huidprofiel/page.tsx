@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import ProfielBouwer from "@/components/huidprofiel/ProfielBouwer";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import { PROFIEL_ONDERDELEN, telwoord } from "@/data/huidprofiel";
@@ -84,6 +85,20 @@ export default function HuidprofielPage() {
       </section>
 
       {/* ── De stappen ── */}
+      {/* Een profiel invullen is abstract tot je ziet waar het terechtkomt: bij iemand
+          die het erbij pakt voordat je binnenkomt. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/behandelaar-met-tablet.jpg"
+            alt="Behandelaar loopt door de kliniek met een tablet"
+            onderschrift="Wat jij invult, zien wij bij de intake"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <ProfielBouwer />

@@ -189,6 +189,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             href: "/huidproblemen/symptoomzoeker",
             zin: "Kruis aan wat je ziet en voelt, zonder vakterm",
           },
+          {
+            label: "Kennisbank",
+            href: "/kennisbank",
+            zin: "Alles wat hier uitgelegd staat, op één plek",
+          },
         ],
       },
       { kop: "Wij behandelen dit", items: uitGroep("behandelen"), breed: true },
@@ -370,6 +375,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             href: "/doelgroep",
             zin: "Vier groepen, dezelfde behandellijst",
             binnenkort: true,
+          },
+          {
+            label: "Voor verwijzers",
+            href: "/verwijzers",
+            zin: "Waar de grens ligt en hoe je verwijst",
           },
         ],
       },

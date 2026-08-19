@@ -13,6 +13,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 
 /**
  * Ons verbond — tien weigeringen.
@@ -140,6 +141,20 @@ export default function OnsVerbondPage() {
       <PillarFaq items={VERBOND_FAQ} />
 
       {/* ── Slot ── */}
+      {/* Tien weigeringen op een rij kan streng overkomen. Ze komen niet uit een reglement
+          maar uit gesprekken zoals deze, waarin twee mensen besluiten wat er niet gebeurt. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/team-overleg.jpg"
+            alt="Twee behandelaars in gesprek in de kliniek"
+            onderschrift="Elke nee begint met een gesprek"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>

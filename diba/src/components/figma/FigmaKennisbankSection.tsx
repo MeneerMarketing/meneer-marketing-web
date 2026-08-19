@@ -22,11 +22,13 @@ export default function FigmaKennisbankSection({
             <Label>Diba kennisbank</Label>
             <h2 className="diba-display-m mt-4">Eerlijke huidkennis.</h2>
           </div>
+          {/* Wees hier naar het huidprobleemoverzicht, terwijl de kop "Diba kennisbank"
+              belooft. Nu naar de kennisbank zelf, die sinds vandaag bestaat. */}
           <Link
-            href="/huidproblemen"
+            href="/kennisbank"
             className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
           >
-            Bekijk alles
+            Naar de kennisbank
             <ArrowUpRight size={13} />
           </Link>
         </div>

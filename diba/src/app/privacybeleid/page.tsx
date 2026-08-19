@@ -191,7 +191,7 @@ export default function PrivacyPage() {
           <div>
             <Label>Vier plekken</Label>
             <h2 className="diba-display-m mt-4">
-              Waar uw gegevens
+              Waar uw gegevens{" "}
               <span className="diba-accent">wel terechtkomen.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

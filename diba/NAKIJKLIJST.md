@@ -101,7 +101,7 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:109</sub>
+  <sub>src/app/sitemap.ts:111</sub>
 
 ## Voor Rojda (257)
 

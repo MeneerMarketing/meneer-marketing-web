@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Ingangkiezer from "@/components/contact/Ingangkiezer";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { SITUATIES } from "@/data/voorwaarden";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -211,11 +212,26 @@ export default function ContactPage() {
 
       {/* ── De ingangkiezer: de signatuur van deze pagina ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+
+      {/* Een contactpagina is adres, tijden en kanalen: allemaal tekst. Dit beeld laat zien
+          waar die gegevens heen leiden, en dat is precies wat iemand wil weten die nog
+          nooit binnen is geweest. */}
+      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/ontvangst-koffie.jpg"
+            alt="Een client krijgt koffie aangereikt bij binnenkomst in de kliniek"
+            onderschrift="Bij binnenkomst in Hillegersberg"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
         <div className="mx-auto">
           <div>
             <Label>Welke vraag, welk kanaal</Label>
             <h2 className="diba-display-m mt-4">
-              Niet elk kanaal
+              Niet elk kanaal{" "}
               <span className="diba-accent">past bij elke vraag.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -279,7 +295,7 @@ export default function ContactPage() {
           <div>
             <Label>Voordat je belt</Label>
             <h2 className="diba-display-m mt-4">
-              Afzeggen, verzetten
+              Afzeggen, verzetten{" "}
               <span className="diba-accent">of te laat komen.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

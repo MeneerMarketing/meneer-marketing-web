@@ -117,12 +117,23 @@ export default function IsHetNodigPage() {
       </section>
 
       {/* ── De weegschaal: de signatuur van deze pagina ── */}
+      {/* GEEN BEELD OP DEZE PAGINA, EN DAT IS EEN KEUZE.
+
+          Er hebben er twee gestaan. Eerst een portret van dichtbij; op een brede band werd
+          dat een uitsnede van een neus met roodheid, wat op deze pagina leest als een
+          huidprobleem in plaats van als rust. Toen een behandelkamer, maar daarop staat
+          iemand actief te behandelen onder het bijschrift "Soms is dit het hele advies".
+          Precies het tegenovergestelde van wat hier betoogd wordt.
+
+          Elke opname uit deze shoot laat zien dat er iets gebeurt, want daar is een shoot
+          voor. Deze pagina gaat over de mogelijkheid dat er niets gebeurt. Een foto die dat
+          toont bestaat niet, en een foto die het tegenspreekt is erger dan geen foto. */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Twaalf maanden, twee sporen</Label>
             <h2 className="diba-display-m mt-4">
-              Wat er gebeurt
+              Wat er gebeurt{" "}
               <span className="diba-accent">als je niets doet.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -147,7 +158,7 @@ export default function IsHetNodigPage() {
               <div>
                 <Label opDonker>De andere helft</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Drie keer kost
+                  Drie keer kost{" "}
                   <span className="diba-accent-on-dark">
                     {" "}
                     wachten wél iets.

@@ -286,7 +286,7 @@ export default function TeamPage() {
             <div>
               <Label>Bij naam genoemd</Label>
               <h2 className="diba-display-m mt-4">
-                Wat klanten schreven
+                Wat klanten schreven{" "}
                 <span className="diba-accent">over wie hen hielp.</span>
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

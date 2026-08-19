@@ -3,6 +3,7 @@ import Link from "next/link";
 import Behandelingenoverzicht from "@/components/behandelingen/Behandelingenoverzicht";
 import Huidreis from "@/components/behandelingen/Huidreis";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { BEHANDELINGEN } from "@/data/behandelingen";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -151,6 +152,20 @@ export default function BehandelingenPage() {
       </section>
 
       {/* ══ De huidreis ══ */}
+      {/* Eenentwintig behandelingen op een rij is een lijst. Dit is waar ze allemaal op
+          uitkomen: een kamer, een behandelaar en een half uur van je dag. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/kliniek-behandelkamer.jpg"
+            alt="Behandelaar werkt aan de huid van een client in de behandelkamer"
+            onderschrift="In de behandelkamer, Hillegersberg"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
       <section className="bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
@@ -205,7 +220,7 @@ export default function BehandelingenPage() {
           <div>
             <Label>Wat hier niet staat</Label>
             <h2 className="diba-display-m mt-4 max-w-[14ch]">
-              Welke de
+              Welke de{" "}
               <span className="diba-accent">beste is.</span>
             </h2>
             <DibaLeafMark

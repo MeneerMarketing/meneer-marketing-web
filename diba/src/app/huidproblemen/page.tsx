@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import Raster from "@/components/huidproblemen/Raster";
@@ -109,6 +110,20 @@ export default function HuidproblemenPage() {
       {/* ── Het filterbare raster ──
           Wit vlak, mintkaarten. Stond de sectie ook op mint, dan liepen kaart en
           ondergrond in elkaar over en las het als losse tekst in plaats van als kaarten. */}
+      {/* Zestien huidproblemen naast elkaar kan overweldigen. Dit beeld zegt dat er aan het
+          eind van elke pagina gewoon een gesprek staat. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/kliniek-kamer-overzicht.jpg"
+            alt="Overzicht van een behandelkamer bij Diba Clinics met een behandelaar aan het werk"
+            onderschrift="Waar het gesprek plaatsvindt"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <Raster />
@@ -160,7 +175,7 @@ export default function HuidproblemenPage() {
           <div>
             <Label opDonker>Behandeling nul</Label>
             <h2 className="diba-display-l mt-5 max-w-[16ch]">
-              Alles begint
+              Alles begint{" "}
               <span className="diba-accent-on-dark">bij meten.</span>
             </h2>
           </div>

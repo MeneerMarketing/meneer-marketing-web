@@ -185,7 +185,7 @@ export default async function InsurerPage({ params }: PageProps) {
             <div className="max-w-[62ch]">
               <Label opDonker>Wat je ze moet vragen</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Vier vragen
+                Vier vragen{" "}
                 <span className="diba-accent-on-dark">
                   {" "}
                   die het antwoord opleveren.
@@ -224,7 +224,7 @@ export default async function InsurerPage({ params }: PageProps) {
           <div>
             <Label>Voordat je belt</Label>
             <h2 className="diba-display-m mt-4">
-              Eén vraag komt
+              Eén vraag komt{" "}
               <span className="diba-accent">hier nog vóór.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

@@ -5,6 +5,7 @@ import { INSURERS } from "@/data/insurers";
 import { MISVERSTANDEN, ONZE_ROL, ROUTE } from "@/data/vergoeding-route";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 
 /**
  * Vergoedingen.
@@ -104,12 +105,26 @@ export default function VergoedingenPage() {
       </section>
 
       {/* ── De route: drie vragen ── */}
+      {/* Een pagina over vergoeding gaat over papier en polissen. Dit is de plek waar het
+          gesprek daarover werkelijk plaatsvindt. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/balie-ontvangst.jpg"
+            alt="De balie van Diba Clinics met het productschap op de achtergrond"
+            onderschrift="Aan de balie, na afloop"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Drie vragen, op volgorde</Label>
             <h2 className="diba-display-m mt-4">
-              En wat er gebeurt
+              En wat er gebeurt{" "}
               <span className="diba-accent">bij nee.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -216,7 +231,7 @@ export default function VergoedingenPage() {
           <div>
             <Label>Vier misverstanden</Label>
             <h2 className="diba-display-m mt-4">
-              De eerste
+              De eerste{" "}
               <span className="diba-accent">scheelt geld.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -258,7 +273,7 @@ export default function VergoedingenPage() {
           <div>
             <Label>Pas nu je verzekeraar</Label>
             <h2 className="diba-display-m mt-4">
-              Kwam je door
+              Kwam je door{" "}
               <span className="diba-accent">alle drie de vragen?</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Meeneemkaart from "@/components/intake/Meeneemkaart";
 import Uurtijdlijn from "@/components/intake/Uurtijdlijn";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
@@ -171,6 +172,20 @@ export default function IntakePage() {
           volgorde. De losse meting staat links omdat dat de afspraak is die deze pagina
           uitlegt; de combinatie rechts, met de voorwaarde erbij. Die voorwaarde is geen
           kleine lettertjes maar het verschil tussen de twee. */}
+      {/* Dit is letterlijk wat Behandeling Nul is: samen naar dezelfde meting kijken. Het
+          beeld staat ook op de homepage, en dat is hier geen herhaling maar bevestiging. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/hero-huidscan.jpg"
+            alt="Behandelaar bespreekt de uitkomst van een huidscan met een client"
+            onderschrift="Hetzelfde scherm, tegelijk"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
       <section className="px-5 pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <div className="mx-auto">
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">

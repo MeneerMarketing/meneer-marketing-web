@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nazorgrooster from "@/components/nazorg/Nazorgrooster";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { NAZORG } from "@/data/nazorg";
 import { publicCopy } from "@/lib/copy-flags";
@@ -113,7 +114,7 @@ export default function NazorgPage() {
               <div>
                 <Label opDonker>Bel ons</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Dit hoort niet
+                  Dit hoort niet{" "}
                   <span className="diba-accent-on-dark">
                     {" "}
                     onderaan te staan.
@@ -161,11 +162,25 @@ export default function NazorgPage() {
 
       {/* ── Het rooster: de signatuur ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+
+      {/* Nazorg is een pagina vol roosters en termijnen. Dit is het moment waar die roosters
+          over gaan: het meegeven en het uitleggen, aan het eind van de afspraak. */}
+      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/nazorg-producten.jpg"
+            alt="Behandelaar geeft een verzorgingsproduct mee aan een client"
+            onderschrift="Wat je meekrijgt, en waarom"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
         <div className="mx-auto">
           <div>
             <Label>Zeven bezigheden, vijf behandelingen</Label>
             <h2 className="diba-display-m mt-4">
-              Wat mag
+              Wat mag{" "}
               <span className="diba-accent">wanneer weer.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -187,7 +202,7 @@ export default function NazorgPage() {
           <div>
             <Label>Geen verrassingen</Label>
             <h2 className="diba-display-m mt-4">
-              Wat je de eerste uren
+              Wat je de eerste uren{" "}
               <span className="diba-accent">gaat merken.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

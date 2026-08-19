@@ -5,6 +5,7 @@ import { WEIGER_SOORTEN, WEIGERINGEN } from "@/data/weigeren";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 
 /**
  * Dit behandelen wij niet.
@@ -271,6 +272,20 @@ export default function DitBehandelenWijNietPage() {
       })}
 
       {/* ── Afsluiter ── */}
+      {/* Een lijst met weigeringen kan hard overkomen. Achter elke nee zit een gesprek, en
+          vaak ook een verwijzing naar iemand anders. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/team-gang-tablet.jpg"
+            alt="Twee behandelaars overleggen in de gang met een tablet"
+            onderschrift="Nee zeggen is ook overleggen"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>

@@ -226,7 +226,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
           <div>
             <Label>Herken je jezelf hier niet in</Label>
             <h2 className="diba-display-m mt-4">
-              Dan hoor je
+              Dan hoor je{" "}
               <span className="diba-accent">gewoon bij de rest.</span>
             </h2>
             <p className="max-w-[58ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

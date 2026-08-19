@@ -25,13 +25,24 @@ import { chromium, devices } from "playwright";
 
 const BASIS = process.env.BASIS ?? "http://localhost:3010";
 
-/** Op deze pagina's is de u-vorm juist de bedoeling. */
+/**
+ * Op deze pagina's is de u-vorm juist de bedoeling.
+ *
+ * De eerste vijf zijn juridisch: daar is de u-vorm de conventie en zou de je-vorm raar
+ * staan. /verwijzers is er later bij gekomen en is van een andere soort: die pagina praat
+ * tegen een huisarts en niet tegen een klant, en in professioneel Nederlands is "u" daar
+ * de norm. Besluit van Yasin, augustus 2026.
+ *
+ * Het staat hier en niet als uitgezette controle, want dan verdwijnt ook het toezicht op
+ * de pagina's die de je-vorm wél moeten volgen.
+ */
 const JURIDISCH = [
   "/algemene-voorwaarden",
   "/privacybeleid",
   "/cookiebeleid",
   "/disclaimer",
   "/klachten",
+  "/verwijzers",
 ];
 
 const VLAG = /\[(COPY|PRIJS|BEELD|GEGEVEN|MEDISCHE|BESLUIT)-[A-Z-]*[^\]]*\]/g;

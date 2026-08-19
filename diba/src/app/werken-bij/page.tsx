@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { TEAM, VAKGEBIEDEN } from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -200,12 +201,26 @@ export default function WerkenBijPage() {
       </section>
 
       {/* ── Waar je mee werkt ── */}
+      {/* Een vacaturepagina laat zelden zien hoe het er tussendoor aan toegaat, en dat is nu
+          juist waar een sollicitant naar raadt. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/team-gang-koffie.jpg"
+            alt="Twee behandelaars met koffie in de gang van de kliniek"
+            onderschrift="Tussen twee afspraken door"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Waar je mee werkt</Label>
             <h2 className="diba-display-m mt-4">
-              Twee vakken
+              Twee vakken{" "}
               <span className="diba-accent">onder één dak.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

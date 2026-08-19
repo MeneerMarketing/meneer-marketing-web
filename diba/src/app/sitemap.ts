@@ -74,6 +74,8 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   "/dit-behandelen-wij-niet",
   "/doelgroep",
   "/werken-bij",
+  "/verwijzers",
+  "/kennisbank",
   "/privacybeleid",
   "/cookiebeleid",
   "/algemene-voorwaarden",

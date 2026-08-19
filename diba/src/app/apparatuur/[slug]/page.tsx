@@ -286,7 +286,7 @@ export default async function ApparaatPage({ params }: PageProps) {
             <div>
               <Label>Waarom dit apparaat</Label>
               <h2 className="diba-display-m mt-4">
-                Wat er anders is
+                Wat er anders is{" "}
                 <span className="diba-accent">dan de buren.</span>
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -334,7 +334,7 @@ export default async function ApparaatPage({ params }: PageProps) {
             <div>
               <Label>Waar het bij helpt</Label>
               <h2 className="diba-display-m mt-4">
-                De problemen waar
+                De problemen waar{" "}
                 <span className="diba-accent">dit apparaat bij past.</span>
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

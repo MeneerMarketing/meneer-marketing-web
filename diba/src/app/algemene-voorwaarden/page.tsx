@@ -173,7 +173,7 @@ export default function VoorwaardenPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Wat altijd geldt</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Drie dingen die
+                Drie dingen die{" "}
                 <span className="diba-accent-on-dark">
                   {" "}
                   nooit veranderen.

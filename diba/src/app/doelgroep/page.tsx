@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { DOELGROEPEN } from "@/data/doelgroep";
 import { publicCopy } from "@/lib/copy-flags";
@@ -116,6 +117,20 @@ export default function DoelgroepHubPage() {
       </section>
 
       {/* ── De vier ── */}
+      {/* Vier groepen en een lijst is abstract. Deze opname maakt het punt van de pagina in
+          een beeld: dezelfde meting, ongeacht in welke groep je jezelf herkent. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/man-bij-de-scanner.jpg"
+            alt="Een man zit klaar bij de Eve-M huidscanner"
+            onderschrift="Dezelfde meting, voor iedereen"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <ul className="grid gap-4 md:grid-cols-2">
@@ -216,7 +231,7 @@ export default function DoelgroepHubPage() {
           <div>
             <Label>En de rest</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Sta je er niet
+              Sta je er niet{" "}
               <span className="diba-accent">tussen?</span>
             </h2>
           </div>

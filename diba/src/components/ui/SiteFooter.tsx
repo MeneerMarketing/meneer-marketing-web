@@ -27,8 +27,16 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
           <Link prefetch={false} href="/prijzen" className={footerLink}>
             Prijzen
           </Link>
+          <Link prefetch={false} href="/kennisbank" className={footerLink}>
+            Kennisbank
+          </Link>
           <Link prefetch={false} href="/contact" className={footerLink}>
             Contact
+          </Link>
+          {/* Voor verwijzers staat in de voettekst en niet in het hoofdmenu: het is een
+              kleine doelgroep die er gericht naar zoekt, en die kijkt onderaan. */}
+          <Link prefetch={false} href="/verwijzers" className={footerLink}>
+            Voor verwijzers
           </Link>
           <Link prefetch={false} href="/privacybeleid" className={footerLink}>
             Privacy

@@ -111,7 +111,7 @@ export default function ResultatenPage() {
           <div>
             <Label>Zeven variabelen</Label>
             <h2 className="diba-display-m mt-4">
-              Beoordeel zelf
+              Beoordeel zelf{" "}
               <span className="diba-accent">elk resultaatbeeld.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

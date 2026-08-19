@@ -4,6 +4,7 @@ import Label from "@/components/ui/Label";
 import { PCOS_KLACHTEN, PCOS_VERDELING } from "@/data/pcos";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 
 /**
  * PCOS en de huid.
@@ -103,12 +104,26 @@ export default function PcosPage() {
       </section>
 
       {/* ── De taakverdeling ── */}
+      {/* Bij PCOS begint het zelden met een behandeling en bijna altijd met uitzoeken wat er
+          van binnenuit meespeelt. Een gesprek dus, en geen apparaat. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/behandelaar-op-bank.jpg"
+            alt="Behandelaar zit op de behandelbank in een lege behandelkamer"
+            onderschrift="Eerst zitten, dan pas liggen"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Drie kolommen</Label>
             <h2 className="diba-display-m mt-4">
-              Wie doet
+              Wie doet{" "}
               <span className="diba-accent">wat.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

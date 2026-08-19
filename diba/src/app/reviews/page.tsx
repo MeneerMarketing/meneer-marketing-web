@@ -9,6 +9,7 @@ import {
 } from "@/data/salonized-reviews";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 
 /**
  * Reviews.
@@ -128,7 +129,7 @@ export default function ReviewsPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Lees dit eerst</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Drie redenen
+                Drie redenen{" "}
                 <span className="diba-accent-on-dark">
                   {" "}
                   om een 5,0 te wantrouwen.
@@ -177,12 +178,26 @@ export default function ReviewsPage() {
       </section>
 
       {/* ── De muur ── */}
+      {/* Reviews gaan bijna altijd over een persoon en niet over een apparaat. Dan hoort er
+          ook een mens bij te staan. */}
+      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/team-tweetal.jpg"
+            alt="Twee behandelaars van Diba Clinics naast elkaar in de kliniek"
+            onderschrift="De mensen over wie het gaat"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>{SALONIZED_REVIEWS.length} overgenomen quotes</Label>
             <h2 className="diba-display-m mt-4">
-              Zoek op wat
+              Zoek op wat{" "}
               <span className="diba-accent">jij zelf hebt.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -205,7 +220,7 @@ export default function ReviewsPage() {
           <div>
             <Label>Wat hier niet staat</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Verzonnen
+              Verzonnen{" "}
               <span className="diba-accent">reviews.</span>
             </h2>
           </div>
