@@ -783,6 +783,72 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     ],
     duurMinuten: 75,
   },
+  /* ── Snurken ───────────────────────────────────────────────────────────
+     NightLase draait op dezelfde Fotona als de 4D-behandelingen, maar hoort in geen enkele
+     huidcategorie thuis: er wordt niets aan een huid gedaan. Vandaar "overig" en niet
+     "laser"; wie de laserlijst scant zoekt daar naar kleur, vaten of structuur.
+
+     Dit is bovendien de enige behandeling op de site die niet cosmetisch is en niet over
+     de huid gaat. Dat maakt hem geen buitenbeentje maar wel een die zijn eigen grens moet
+     benoemen, en die grens staat in "niet": snurken is niet hetzelfde als slaapapneu. */
+  {
+    slug: "nightlase",
+    naam: "NightLase",
+    apparaat: "Fotona TimeWalker",
+    categorie: "overig",
+    kort: "Laser tegen snurken. Zonder operatie, zonder naalden, zonder beugel in je mond.",
+    lagen: [],
+    werking:
+      "Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen gecontroleerd verwarmd. Daardoor trekt het weefsel samen en gaat het minder meetrillen op de luchtstroom, en juist die trilling is het geluid dat snurken heet. Er wordt niet gesneden en er blijft niets achter. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Geen. Je eet en praat direct daarna gewoon; sommige mensen voelen een dag een licht schrapend gevoel in de keel. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    duurMinuten: 30,
+    bijProblemen: [{ label: "Snurken", href: "/snurken" }],
+    wel: [
+      "Werkt zonder snijden, zonder naalden en zonder iets dat je 's nachts in moet doen",
+      "Je kunt er meteen na weer gewoon eten, praten en werken",
+      "Is te herhalen als het effect terugloopt",
+    ],
+    niet: [
+      "Is geen behandeling voor slaapapneu. Bij ademstops hoort eerst slaaponderzoek, en dat regelt een arts en niet wij [MEDISCHE-CHECK-ROJDA]",
+      "Geeft geen blijvend resultaat. Het weefsel geeft na verloop van tijd weer mee",
+      "Werkt niet als het geluid ergens anders vandaan komt dan het zachte gehemelte [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Eerst kijken waar het geluid zit",
+        zin: "Niet elk snurkgeluid komt uit het zachte gehemelte. Dat bepaalt of dit bij jou iets oplevert.",
+      },
+      {
+        kop: "Pulsen op het gehemelte",
+        zin: "In een vast patroon over het weefsel, in ongeveer een half uur. Je zit erbij en je bent bij kennis.",
+      },
+      {
+        kop: "Drie keer, met weken ertussen",
+        zin: "Het weefsel trekt tussen de sessies door aan. Na de derde weet je wat het bij jou doet.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Doet het pijn?",
+        antwoord:
+          "Je voelt warmte achter in je mond en dat is het. Er is geen verdoving nodig en er wordt niets gesneden. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Werkt het ook bij slaapapneu?",
+        antwoord:
+          "Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Wij starten dan niet. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Hoe lang houdt het aan?",
+        antwoord:
+          "Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+  },
   {
     slug: "nordlys-ipl",
     foto: {

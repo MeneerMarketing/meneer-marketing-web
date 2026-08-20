@@ -81,6 +81,7 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   "/cookiebeleid",
   "/algemene-voorwaarden",
   "/pcos",
+  "/snurken",
   "/gentlemax-pro",
   "/doelgroep/jongeren",
   "/doelgroep/mannen",

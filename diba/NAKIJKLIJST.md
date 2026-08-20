@@ -11,10 +11,10 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 285 regels.**
+**Totaal: 307 regels.**
 
 
-## Voor Okan (16)
+## Voor Okan (17)
 
 ### GEGEVEN-NODIG · 7
 
@@ -23,9 +23,9 @@ Er staat een werkbare aanname. Bevestig hem of geef het juiste getal.
 **Inhoud: behandelingen** (2)
 
 - Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die marge valt hangt af van het type acne en van hoe je huid reageert, en dat hoor je na de meting.
-  <sub>src/data/behandelingen.ts:1121</sub>
+  <sub>src/data/behandelingen.ts:1187</sub>
 - Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.
-  <sub>src/data/behandelingen.ts:1237</sub>
+  <sub>src/data/behandelingen.ts:1303</sub>
 
 **Inhoud: droge-huid** (1)
 
@@ -52,7 +52,7 @@ Er staat een werkbare aanname. Bevestig hem of geef het juiste getal.
 - Zolang de oorzaak niet doorloopt. Zonder bescherming bouwt de zonschade gewoon verder en dan zie je hetzelfde terugkomen; met bescherming houden mensen het meestal een tot twee jaar vol voordat er onderhoud nodig is. Dat is een ervaringsgetal en geen meting, en zo staat het er dan ook.
   <sub>src/data/veroudering.ts:289</sub>
 
-### PRIJS-NODIG · 5
+### PRIJS-NODIG · 6
 
 Er staat een werkbaar bedrag. Bevestig het of geef het juiste tarief.
 
@@ -61,7 +61,7 @@ Er staat een werkbaar bedrag. Bevestig het of geef het juiste tarief.
 - Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpagina en niet pas aan de balie.
   <sub>src/data/behandelingen.ts:455</sub>
 - Het traject van drie maanden staat als één bedrag op de prijzenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie.
-  <sub>src/data/behandelingen.ts:1171</sub>
+  <sub>src/data/behandelingen.ts:1237</sub>
 
 **Inhoud: droge-huid** (1)
 
@@ -77,6 +77,11 @@ Er staat een werkbaar bedrag. Bevestig het of geef het juiste tarief.
 
 - De meting kost vijftig euro; de trajecten daarna staan met hun tarief op de prijzenpagina. Blijkt uit de meting dat het pigment diep zit, dan raden we behandelen af en houdt het daar op.
   <sub>src/data/melasma.ts:170</sub>
+
+**Inhoud: snurken** (1)
+
+- Het tarief voor NightLase staat op de prijzenpagina zodra het vastligt.
+  <sub>src/data/snurken.ts:169</sub>
 
 ### BESLUIT-OKAN · 3
 
@@ -101,11 +106,11 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:112</sub>
+  <sub>src/app/sitemap.ts:113</sub>
 
-## Voor Rojda (269)
+## Voor Rojda (290)
 
-### MEDISCHE-CHECK-ROJDA · 269
+### MEDISCHE-CHECK-ROJDA · 290
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
@@ -156,47 +161,47 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit door de mondholte en van buitenaf over de huid. Elke behandeling op dit apparaat mikt op één ding, en dat is precies waarom er meerdere namen op staan.
   <sub>src/data/apparatuur.ts:189</sub>
 - [ Haargroei. Daar staat een ander apparaat voor, Werken op een gebruinde huid
-  <sub>src/data/apparatuur.ts:197</sub>
+  <sub>src/data/apparatuur.ts:198</sub>
 - Een laser die ongewenste haargroei bij de kern aanpakt, ingegroeide haren en irritatie vermindert en zorgt voor een langdurig gladde en rustige huid. Wat de energie opneemt warmt op, de rest niet.
-  <sub>src/data/apparatuur.ts:247</sub>
+  <sub>src/data/apparatuur.ts:248</sub>
 - [ Haargroei op vrijwel elke zone van het lichaam, Ingegroeide haren en irritatie van scheren verminderen, Instelbaar op verschillende huidtypes
-  <sub>src/data/apparatuur.ts:251</sub>
+  <sub>src/data/apparatuur.ts:252</sub>
 - [ Pigmentvlekken of textuur. Dat zijn andere apparaten, Grijs of heel licht haar, want daar zit te weinig pigment in
-  <sub>src/data/apparatuur.ts:255</sub>
-- [ Pigmentvlekken of textuur. Dat zijn andere apparaten, Grijs of heel licht haar, want daar zit te weinig pigment in , Een gebruinde huid
   <sub>src/data/apparatuur.ts:256</sub>
+- [ Pigmentvlekken of textuur. Dat zijn andere apparaten, Grijs of heel licht haar, want daar zit te weinig pigment in , Een gebruinde huid
+  <sub>src/data/apparatuur.ts:257</sub>
 - IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser.
-  <sub>src/data/apparatuur.ts:305</sub>
+  <sub>src/data/apparatuur.ts:306</sub>
 - [ Wat diep zit. Daar komt het licht niet, Eén specifiek plekje; daar is een laser preciezer voor, Elk huidtype
-  <sub>src/data/apparatuur.ts:314</sub>
+  <sub>src/data/apparatuur.ts:315</sub>
 - Een niet-invasief LED-toestel dat werkt met een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went, wat bij een constante dosis wel gebeurt. Wordt meestal als toevoeging bij een andere behandeling gedaan.
-  <sub>src/data/apparatuur.ts:363</sub>
+  <sub>src/data/apparatuur.ts:364</sub>
 - Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van.
-  <sub>src/data/apparatuur.ts:421</sub>
+  <sub>src/data/apparatuur.ts:422</sub>
 - Met fijne naalden worden kanaaltjes tot in de bovenste lederhuid gemaakt. De huid reageert daarop met herstel en collageenaanmaak; dat herstel is het doel, de prikjes zijn de aanleiding. Daarom duurt het weken voor je iets ziet.
-  <sub>src/data/apparatuur.ts:474</sub>
+  <sub>src/data/apparatuur.ts:475</sub>
 - [ Kleur op zichzelf, Eén sessie met resultaat, Een huid met actieve ontsteking
-  <sub>src/data/apparatuur.ts:483</sub>
+  <sub>src/data/apparatuur.ts:484</sub>
 - Een microneedlingapparaat dat met minuscule, trillende naaldjes microscopisch kleine kanaaltjes in de huid maakt om het natuurlijke herstelproces te stimuleren. Dat stimuleert de collageenaanmaak, waardoor de huid steviger, gladder en egaler wordt.
-  <sub>src/data/apparatuur.ts:527</sub>
+  <sub>src/data/apparatuur.ts:528</sub>
 - [ Kleur op zichzelf, Eén sessie met resultaat, Een huid die net iets anders heeft ondergaan
-  <sub>src/data/apparatuur.ts:536</sub>
+  <sub>src/data/apparatuur.ts:537</sub>
 - Bij mesotherapie worden werkzame stoffen direct in de huid gebracht. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters, ook een depigmentatiebooster voor gezicht, hals en décolleté.
-  <sub>src/data/apparatuur.ts:580</sub>
+  <sub>src/data/apparatuur.ts:581</sub>
 - [ Volume opbouwen zoals een filler dat doet, Haargroei verwijderen, Zwangerschap en borstvoeding
-  <sub>src/data/apparatuur.ts:589</sub>
+  <sub>src/data/apparatuur.ts:590</sub>
 - Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper.
-  <sub>src/data/apparatuur.ts:629</sub>
+  <sub>src/data/apparatuur.ts:630</sub>
 - Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje onder een hoek van 45 graden. Er komen geen zuren aan te pas, waardoor het ook kan bij een gevoelige, droge of allergische huid en tijdens de zwangerschap. Het is pijnloos en het resultaat is meteen zichtbaar.
-  <sub>src/data/apparatuur.ts:678</sub>
+  <sub>src/data/apparatuur.ts:679</sub>
 - De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van je huid van dat moment, niet van wat er het sterkst is. De inwerktijd is het middel: te lang is niet beter maar schadelijker.
-  <sub>src/data/apparatuur.ts:731</sub>
+  <sub>src/data/apparatuur.ts:732</sub>
 - [ Littekens dieper dan de opperhuid, Zwangerschap en borstvoeding
-  <sub>src/data/apparatuur.ts:739</sub>
-- [ Littekens dieper dan de opperhuid, Zwangerschap en borstvoeding , Vlak voor veel zon
   <sub>src/data/apparatuur.ts:740</sub>
+- [ Littekens dieper dan de opperhuid, Zwangerschap en borstvoeding , Vlak voor veel zon
+  <sub>src/data/apparatuur.ts:741</sub>
 
-**Inhoud: behandelingen** (94)
+**Inhoud: behandelingen** (102)
 
 - De Eve-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd. Daarna volgt advies en een behandelplan, en de meting ...
   <sub>src/data/behandelingen.ts:232</sub>
@@ -278,114 +283,130 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/behandelingen.ts:754</sub>
 - Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we niet kunnen onderbouwen.
   <sub>src/data/behandelingen.ts:781</sub>
+- Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen gecontroleerd verwarmd. Daardoor trekt het weefsel samen en gaat het minder meetrillen op de luchtstroom, en juist die trilling is het geluid dat snurken heet. Er wordt niet gesneden en er blijft niets achter.
+  <sub>src/data/behandelingen.ts:802</sub>
+- Geen. Je eet en praat direct daarna gewoon; sommige mensen voelen een dag een licht schrapend gevoel in de keel.
+  <sub>src/data/behandelingen.ts:804</sub>
+- Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij.
+  <sub>src/data/behandelingen.ts:806</sub>
+- [ Is geen behandeling voor slaapapneu. Bij ademstops hoort eerst slaaponderzoek, en dat regelt een arts en niet wij
+  <sub>src/data/behandelingen.ts:816</sub>
+- [ Is geen behandeling voor slaapapneu. Bij ademstops hoort eerst slaaponderzoek, en dat regelt een arts en niet wij , Geeft geen blijvend resultaat. Het weefsel geeft na verloop van tijd weer mee, Werkt niet als het geluid ergens anders vandaan komt dan het zachte gehemelte
+  <sub>src/data/behandelingen.ts:818</sub>
+- Je voelt warmte achter in je mond en dat is het. Er is geen verdoving nodig en er wordt niets gesneden.
+  <sub>src/data/behandelingen.ts:838</sub>
+- Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Wij starten dan niet.
+  <sub>src/data/behandelingen.ts:843</sub>
+- Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken.
+  <sub>src/data/behandelingen.ts:848</sub>
 - IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms precies wat je wil.
-  <sub>src/data/behandelingen.ts:798</sub>
+  <sub>src/data/behandelingen.ts:864</sub>
 - Meestal een paar uur rood.
-  <sub>src/data/behandelingen.ts:799</sub>
+  <sub>src/data/behandelingen.ts:865</sub>
 - Een reeks van drie tot zes, met vier weken ertussen.
-  <sub>src/data/behandelingen.ts:801</sub>
+  <sub>src/data/behandelingen.ts:867</sub>
 - [ Is minder precies dan een laser met één golflengte, Bereikt niet wat diep zit, Is niet voor elk huidtype geschikt
-  <sub>src/data/behandelingen.ts:817</sub>
+  <sub>src/data/behandelingen.ts:883</sub>
 - Een niet-invasief LED-toestel met rood, geel en bijna-infrarood licht, in een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes.
-  <sub>src/data/behandelingen.ts:837</sub>
-- [ Werkt zonder naalden, zuren of hersteltijd, Wordt ingezet bij roodheid, rosacea en fijne lijntjes
-  <sub>src/data/behandelingen.ts:844</sub>
-- [ Doet weinig als losse behandeling. Dit is een toevoeging en zo verkopen we het ook, Verwijdert niets. Geen pigment, geen vaatjes, geen littekens, Werkt niet in één keer. Licht is een prikkel die je herhaalt of het doet niets
-  <sub>src/data/behandelingen.ts:850</sub>
-- Cosmelan is een behandeltraject van zes maanden. Het begint met twee weken voorbereiding thuis met specifieke producten, daarna volgt de behandeling in de praktijk en een vaste huidverzorgingsroutine. De specialist bepaalt welke van de twee bij jouw indicatie past. Zon, hormonen, zwangerschap en ...
-  <sub>src/data/behandelingen.ts:890</sub>
-- Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming.
-  <sub>src/data/behandelingen.ts:892</sub>
-- [ Is geen losse behandeling. Zonder het thuiswerk werkt het niet, Geeft geen garantie dat pigment wegblijft; zon brengt het terug, Is niet geschikt voor iedereen
   <sub>src/data/behandelingen.ts:903</sub>
-- [ Pakt hardnekkig pigment aan waar losse behandelingen op stuklopen
+- [ Werkt zonder naalden, zuren of hersteltijd, Wordt ingezet bij roodheid, rosacea en fijne lijntjes
   <sub>src/data/behandelingen.ts:910</sub>
+- [ Doet weinig als losse behandeling. Dit is een toevoeging en zo verkopen we het ook, Verwijdert niets. Geen pigment, geen vaatjes, geen littekens, Werkt niet in één keer. Licht is een prikkel die je herhaalt of het doet niets
+  <sub>src/data/behandelingen.ts:916</sub>
+- Cosmelan is een behandeltraject van zes maanden. Het begint met twee weken voorbereiding thuis met specifieke producten, daarna volgt de behandeling in de praktijk en een vaste huidverzorgingsroutine. De specialist bepaalt welke van de twee bij jouw indicatie past. Zon, hormonen, zwangerschap en ...
+  <sub>src/data/behandelingen.ts:956</sub>
+- Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming.
+  <sub>src/data/behandelingen.ts:958</sub>
+- [ Is geen losse behandeling. Zonder het thuiswerk werkt het niet, Geeft geen garantie dat pigment wegblijft; zon brengt het terug, Is niet geschikt voor iedereen
+  <sub>src/data/behandelingen.ts:969</sub>
+- [ Pakt hardnekkig pigment aan waar losse behandelingen op stuklopen
+  <sub>src/data/behandelingen.ts:976</sub>
 - [ Pakt hardnekkig pigment aan waar losse behandelingen op stuklopen , Loopt door thuis, want het grootste deel van dit traject gebeurt buiten de kliniek, Werkt op melasma, dat bekendstaat als het lastigste soort pigment om rustig te krijgen
-  <sub>src/data/behandelingen.ts:912</sub>
+  <sub>src/data/behandelingen.ts:978</sub>
 - Door hormonen, leeftijd of scheren kan de huid in het intieme gebied donkerder worden. Happy Intim werkt met chemische peelings die het pigment daar verlichten en de textuur egaler maken.
-  <sub>src/data/behandelingen.ts:924</sub>
-- Enkele dagen droog en gevoelig.
-  <sub>src/data/behandelingen.ts:925</sub>
-- [ Maakt donkerder geworden huid in de intieme zone of oksels lichter en egaler
-  <sub>src/data/behandelingen.ts:939</sub>
-- [ Haalt de oorzaak niet weg. Komt de verkleuring door scheren of wrijving, dan komt hij terug
-  <sub>src/data/behandelingen.ts:944</sub>
-- Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs.
-  <sub>src/data/behandelingen.ts:971</sub>
-- De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom is laser precies, en daarom moet je weten waar je op mikt. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk.
   <sub>src/data/behandelingen.ts:990</sub>
-- Een paar uur rood, soms bultjes rond de haarzakjes.
-  <sub>src/data/behandelingen.ts:992</sub>
-- Altijd een reeks, meestal zes tot tien. Het aantal hangt af van zone en huidtype.
-  <sub>src/data/behandelingen.ts:994</sub>
-- [ Werkt niet in één sessie, en dat is geen verkooptruc maar hoe haargroei werkt, Doet niets aan pigment of textuur, Is niet zonder risico bij een gebruinde huid
-  <sub>src/data/behandelingen.ts:1004</sub>
-- XL Hair stimuleert de haarzakjes en verbetert de doorbloeding van de hoofdhuid om de natuurlijke haargroei te ondersteunen. Het traject wordt afgestemd op je haarconditie en hoofdhuid, en loopt over meerdere maanden.
-  <sub>src/data/behandelingen.ts:1026</sub>
-- Kort gevoelige hoofdhuid.
-  <sub>src/data/behandelingen.ts:1027</sub>
-- [ Richt zich op de haarzakjes en de doorbloeding van de hoofdhuid
+- Enkele dagen droog en gevoelig.
+  <sub>src/data/behandelingen.ts:991</sub>
+- [ Maakt donkerder geworden huid in de intieme zone of oksels lichter en egaler
+  <sub>src/data/behandelingen.ts:1005</sub>
+- [ Haalt de oorzaak niet weg. Komt de verkleuring door scheren of wrijving, dan komt hij terug
+  <sub>src/data/behandelingen.ts:1010</sub>
+- Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs.
   <sub>src/data/behandelingen.ts:1037</sub>
+- De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom is laser precies, en daarom moet je weten waar je op mikt. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk.
+  <sub>src/data/behandelingen.ts:1056</sub>
+- Een paar uur rood, soms bultjes rond de haarzakjes.
+  <sub>src/data/behandelingen.ts:1058</sub>
+- Altijd een reeks, meestal zes tot tien. Het aantal hangt af van zone en huidtype.
+  <sub>src/data/behandelingen.ts:1060</sub>
+- [ Werkt niet in één sessie, en dat is geen verkooptruc maar hoe haargroei werkt, Doet niets aan pigment of textuur, Is niet zonder risico bij een gebruinde huid
+  <sub>src/data/behandelingen.ts:1070</sub>
+- XL Hair stimuleert de haarzakjes en verbetert de doorbloeding van de hoofdhuid om de natuurlijke haargroei te ondersteunen. Het traject wordt afgestemd op je haarconditie en hoofdhuid, en loopt over meerdere maanden.
+  <sub>src/data/behandelingen.ts:1092</sub>
+- Kort gevoelige hoofdhuid.
+  <sub>src/data/behandelingen.ts:1093</sub>
+- [ Richt zich op de haarzakjes en de doorbloeding van de hoofdhuid
+  <sub>src/data/behandelingen.ts:1103</sub>
 - [ Brengt geen haar terug op plekken waar het zakje weg is
-  <sub>src/data/behandelingen.ts:1042</sub>
+  <sub>src/data/behandelingen.ts:1108</sub>
 - Niet binnen weken. Haar groeit in cycli en die laten zich niet opjagen, dus dit traject wordt in maanden gemeten.
-  <sub>src/data/behandelingen.ts:1064</sub>
+  <sub>src/data/behandelingen.ts:1130</sub>
 - Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en geen moment. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat...
-  <sub>src/data/behandelingen.ts:1087</sub>
+  <sub>src/data/behandelingen.ts:1153</sub>
 - Wisselt per fase van het traject.
-  <sub>src/data/behandelingen.ts:1088</sub>
+  <sub>src/data/behandelingen.ts:1154</sub>
 - Een traject van drie tot zes maanden, met een controle om de vier tot zes weken.
-  <sub>src/data/behandelingen.ts:1090</sub>
+  <sub>src/data/behandelingen.ts:1156</sub>
 - [ Is geen kuur met een einddatum die we vooraf beloven
-  <sub>src/data/behandelingen.ts:1099</sub>
+  <sub>src/data/behandelingen.ts:1165</sub>
 - [ Is geen kuur met een einddatum die we vooraf beloven , Vervangt geen behandeling door een arts. Bij zware of littekenvormende acne hoor je daar eerst
-  <sub>src/data/behandelingen.ts:1100</sub>
+  <sub>src/data/behandelingen.ts:1166</sub>
 - In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de prijzenpagina.
-  <sub>src/data/behandelingen.ts:1126</sub>
+  <sub>src/data/behandelingen.ts:1192</sub>
 - Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een medisch onderbouwd programma van drie maanden met begeleiding, opgezet voor jongeren van achttien jaar en jonger.
-  <sub>src/data/behandelingen.ts:1138</sub>
+  <sub>src/data/behandelingen.ts:1204</sub>
 - Wisselt per fase van het traject.
-  <sub>src/data/behandelingen.ts:1139</sub>
-- [ Is opgezet voor achttien jaar en jonger, met een programma van drie maanden
-  <sub>src/data/behandelingen.ts:1144</sub>
-- [ Belooft geen schone huid binnen drie maanden
-  <sub>src/data/behandelingen.ts:1149</sub>
-- [ Belooft geen schone huid binnen drie maanden , Is geen behandeling voor acne die littekens maakt. Dan gaat een arts voor
-  <sub>src/data/behandelingen.ts:1150</sub>
-- Littekens van een operatie reageren anders dan littekens van acne: ze zijn langer, dieper en vaak jonger. De behandeling en het aantal sessies hangen af van hoe oud het litteken is en waar het zit.
-  <sub>src/data/behandelingen.ts:1188</sub>
-- Wisselt per techniek.
-  <sub>src/data/behandelingen.ts:1189</sub>
-- Meestal een reeks van drie tot zes, met vier tot zes weken ertussen.
-  <sub>src/data/behandelingen.ts:1191</sub>
-- [ Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens
   <sub>src/data/behandelingen.ts:1205</sub>
-- [ Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens , Rekent naar de lengte van het litteken, zodat je vooraf weet waar je aan toe bent, Kijkt eerst naar de leeftijd van het litteken, want dat bepaalt wat er nog te winnen valt
-  <sub>src/data/behandelingen.ts:1207</sub>
-- [ Laat geen litteken verdwijnen. Een litteken is blijvend weefsel en dat verandert niet
+- [ Is opgezet voor achttien jaar en jonger, met een programma van drie maanden
   <sub>src/data/behandelingen.ts:1210</sub>
-- Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting.
-  <sub>src/data/behandelingen.ts:1232</sub>
-- Fibromen zijn goedaardige huidaanhangsels die vaak in de hals, oksels of liezen zitten. Ze worden per behandelsessie weggenomen.
-  <sub>src/data/behandelingen.ts:1253</sub>
-- Kleine korstjes die in dagen verdwijnen.
+- [ Belooft geen schone huid binnen drie maanden
+  <sub>src/data/behandelingen.ts:1215</sub>
+- [ Belooft geen schone huid binnen drie maanden , Is geen behandeling voor acne die littekens maakt. Dan gaat een arts voor
+  <sub>src/data/behandelingen.ts:1216</sub>
+- Littekens van een operatie reageren anders dan littekens van acne: ze zijn langer, dieper en vaak jonger. De behandeling en het aantal sessies hangen af van hoe oud het litteken is en waar het zit.
   <sub>src/data/behandelingen.ts:1254</sub>
-- [ Haalt goedaardige steelwratjes weg, meestal in hals, oksels of liezen
-  <sub>src/data/behandelingen.ts:1259</sub>
-- [ Beoordeelt geen moedervlekken of plekjes die veranderen. Dat hoort bij de huisarts of dermatoloog
-  <sub>src/data/behandelingen.ts:1264</sub>
-- [ Beoordeelt geen moedervlekken of plekjes die veranderen. Dat hoort bij de huisarts of dermatoloog , Voorkomt niet dat er nieuwe komen. Wie ze aanmaakt, blijft ze aanmaken, Is geen behandeling zonder spoor. Er blijft een klein plekje dat langzaam vervaagt
-  <sub>src/data/behandelingen.ts:1266</sub>
-- Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen behandeling van de huid zelf, maar soms een verklaring voor wat er op de huid gebeurt.
-  <sub>src/data/behandelingen.ts:1309</sub>
-- [ Brengt in kaart op welke voedingsmiddelen je lichaam reageert
-  <sub>src/data/behandelingen.ts:1314</sub>
-- [ Is geen allergietest en geen medische diagnose. Dat hoort bij een arts
+- Wisselt per techniek.
+  <sub>src/data/behandelingen.ts:1255</sub>
+- Meestal een reeks van drie tot zes, met vier tot zes weken ertussen.
+  <sub>src/data/behandelingen.ts:1257</sub>
+- [ Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens
+  <sub>src/data/behandelingen.ts:1271</sub>
+- [ Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens , Rekent naar de lengte van het litteken, zodat je vooraf weet waar je aan toe bent, Kijkt eerst naar de leeftijd van het litteken, want dat bepaalt wat er nog te winnen valt
+  <sub>src/data/behandelingen.ts:1273</sub>
+- [ Laat geen litteken verdwijnen. Een litteken is blijvend weefsel en dat verandert niet
+  <sub>src/data/behandelingen.ts:1276</sub>
+- Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting.
+  <sub>src/data/behandelingen.ts:1298</sub>
+- Fibromen zijn goedaardige huidaanhangsels die vaak in de hals, oksels of liezen zitten. Ze worden per behandelsessie weggenomen.
   <sub>src/data/behandelingen.ts:1319</sub>
+- Kleine korstjes die in dagen verdwijnen.
+  <sub>src/data/behandelingen.ts:1320</sub>
+- [ Haalt goedaardige steelwratjes weg, meestal in hals, oksels of liezen
+  <sub>src/data/behandelingen.ts:1325</sub>
+- [ Beoordeelt geen moedervlekken of plekjes die veranderen. Dat hoort bij de huisarts of dermatoloog
+  <sub>src/data/behandelingen.ts:1330</sub>
+- [ Beoordeelt geen moedervlekken of plekjes die veranderen. Dat hoort bij de huisarts of dermatoloog , Voorkomt niet dat er nieuwe komen. Wie ze aanmaakt, blijft ze aanmaken, Is geen behandeling zonder spoor. Er blijft een klein plekje dat langzaam vervaagt
+  <sub>src/data/behandelingen.ts:1332</sub>
+- Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen behandeling van de huid zelf, maar soms een verklaring voor wat er op de huid gebeurt.
+  <sub>src/data/behandelingen.ts:1375</sub>
+- [ Brengt in kaart op welke voedingsmiddelen je lichaam reageert
+  <sub>src/data/behandelingen.ts:1380</sub>
+- [ Is geen allergietest en geen medische diagnose. Dat hoort bij een arts
+  <sub>src/data/behandelingen.ts:1385</sub>
 - [ Is geen allergietest en geen medische diagnose. Dat hoort bij een arts , Behandelt je huid niet. Er gebeurt hier niets aan je gezicht, Geeft geen garantie dat je huid opknapt als je iets weglaat
-  <sub>src/data/behandelingen.ts:1321</sub>
+  <sub>src/data/behandelingen.ts:1387</sub>
 - Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haalt hem wel van je lijstje met vermoedens af.
-  <sub>src/data/behandelingen.ts:1346</sub>
+  <sub>src/data/behandelingen.ts:1412</sub>
 
 **Inhoud: cellulitis** (6)
 
@@ -687,6 +708,35 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/rosacea.ts:289</sub>
 - Bij zichtbare vaatjes levert behandeling doorgaans het meeste op van alles wat we doen. Nieuwe vaatjes kunnen wel ontstaan zolang de triggers doorgaan, dus onderhoud hoort erbij.
   <sub>src/data/rosacea.ts:299</sub>
+
+**Inhoud: snurken** (13)
+
+- Het slappe weefsel achter in je mond trilt mee op de luchtstroom. Dit is de meest voorkomende bron en de enige waar een laser iets aan verandert.
+  <sub>src/data/snurken.ts:56</sub>
+- Een verstopte of scheve neus dwingt je tot ademen door je mond, en dan gaat het gehemelte pas meetrillen. De oorzaak zit dan een stuk eerder.
+  <sub>src/data/snurken.ts:67</sub>
+- De tong zakt in je slaap naar achteren en vernauwt de luchtweg. Dat is een ander mechanisme dan een trillend gehemelte.
+  <sub>src/data/snurken.ts:78</sub>
+- De ruimte achter in je keel is dan kleiner dan gemiddeld, ongeacht hoe strak het gehemelte staat.
+  <sub>src/data/snurken.ts:89</sub>
+- Eerst kijken waar het geluid vandaan komt, want dat bepaalt of dit bij jou iets oplevert, Doorsturen naar de huisarts als er ook maar één alarmsignaal is, ook als je hier al staat, NightLase als reeks van drie, met vooraf afgesproken momenten om te kijken of het werkt, Eerlijk zeggen dat het effe...
+  <sub>src/data/snurken.ts:117</sub>
+- [ Beginnen zonder te weten waar het geluid zit. Dan verkoop je een reeks en geen oplossing, Behandelen bij een vermoeden van slaapapneu. Daar hoort eerst slaaponderzoek bij
+  <sub>src/data/snurken.ts:121</sub>
+- [ Beginnen zonder te weten waar het geluid zit. Dan verkoop je een reeks en geen oplossing, Behandelen bij een vermoeden van slaapapneu. Daar hoort eerst slaaponderzoek bij , Beloven dat het snurken helemaal verdwijnt. Minder is realistisch, weg niet altijd
+  <sub>src/data/snurken.ts:122</sub>
+- Zijn er ademstops, of ben je overdag ongewoon slaperig, dan sturen we je naar de huisarts voor slaaponderzoek. Snurken zachter maken terwijl er ademstops onder zitten is het alarm uitzetten en het probleem laten staan.
+  <sub>src/data/snurken.ts:131</sub>
+- Van weefsel dat meetrilt op je ademhaling. In je slaap ontspannen de spieren in je keel, waardoor het zachte gehemelte en de huig gaan wapperen op de luchtstroom. Hoe nauwer de doorgang, hoe harder het geluid.
+  <sub>src/data/snurken.ts:144</sub>
+- Nee. Snurken is geluid; slaapapneu is dat je ademhaling tijdens de slaap kortdurend stopt. Ze komen vaak samen voor, en daarom vragen wij er altijd naar. Is er een vermoeden, dan hoort er eerst slaaponderzoek bij en beginnen wij niet.
+  <sub>src/data/snurken.ts:149</sub>
+- Nee, en er wordt ook niet gesneden. Je zit erbij, je bent bij kennis en je gaat er daarna zelf vandaan.
+  <sub>src/data/snurken.ts:154</sub>
+- Meestal drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op; na de eerste sessie is er zelden al iets te horen.
+  <sub>src/data/snurken.ts:159</sub>
+- Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Wie zegt dat het definitief is, verkoopt iets anders dan een behandeling.
+  <sub>src/data/snurken.ts:164</sub>
 
 **Inhoud: symptoomzoeker** (1)
 

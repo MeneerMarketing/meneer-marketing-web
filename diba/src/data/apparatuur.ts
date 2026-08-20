@@ -185,19 +185,20 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Fotona TimeWalker",
     merk: "Fotona",
     categorie: "laser",
-    kort: "Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase en VectorLift.",
+    kort: "Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase.",
     wat: "Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit door de mondholte en van buitenaf over de huid. Elke behandeling op dit apparaat mikt op één ding, en dat is precies waarom er meerdere namen op staan. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Verslapping en volumeverlies aanpakken zonder injectables",
       "Gericht werken rond de ogen, de lippen of de kaaklijn",
       "Laserpeel en fractionele behandeling van de huid",
+      "Snurken aanpakken met NightLase, en dat is het enige waarvoor dit apparaat niet op de huid werkt",
     ],
     nietVoor: [
       "Haargroei. Daar staat een ander apparaat voor",
       "Werken op een gebruinde huid [MEDISCHE-CHECK-ROJDA]",
       "Eén sessie met blijvend resultaat; het is altijd een reeks",
     ],
-    behandelingen: ["fotona"],
+    behandelingen: ["fotona", "nightlase"],
 
     werkwijze: "licht",
     doelwit: "water",

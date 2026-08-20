@@ -201,6 +201,30 @@ export const HOOFDNAV: readonly NavItem[] = [
         kop: "Hier hoort een arts bij",
         items: [...uitGroep("doorverwijzen"), ...uitGroep("niet")],
       },
+      {
+        /* Twee pagina's die geen huidprobleem zijn en toch bij Diba terechtkomen.
+
+           Ze stonden allebei nergens in de navigatie. /pcos was daarmee een weespagina:
+           bereikbaar via de URL en verder nergens vandaan gelinkt, wat voor een
+           zoekmachine betekent dat de rest van de site hem niet belangrijk genoeg vindt om
+           naar te wijzen. /snurken zou datzelfde lot krijgen.
+
+           Ze horen niet tussen de huidproblemen, want dat zijn ze niet. Vandaar een eigen
+           kop die precies zegt wat ze wel zijn. */
+        kop: "Ook zonder huidklacht",
+        items: [
+          {
+            label: "Snurken",
+            href: "/snurken",
+            zin: "Waar het geluid ontstaat bepaalt of wij iets kunnen",
+          },
+          {
+            label: "PCOS",
+            href: "/pcos",
+            zin: "Wat er van binnenuit meespeelt bij je huid",
+          },
+        ],
+      },
     ],
     uitgelicht: ZOEKER_BLOK,
   },
