@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import AcneOnderDeHuid from "@/components/acne/AcneOnderDeHuid";
 import PillarNav from "@/components/pillar/PillarNav";
-import AcneTijdlijn from "@/components/acne/AcneTijdlijn";
 import AcneTypeKiezer from "@/components/acne/AcneTypeKiezer";
 import AcneZoneKaart from "@/components/acne/AcneZoneKaart";
 import Button from "@/components/ui/Button";
@@ -31,14 +30,16 @@ import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
  *
  * De opbouw volgt hoe iemand met acne denkt, niet hoe een SEO-sjabloon is ingedeeld:
  *
- *   waar zit het  →  wat is het  →  hoe werkt het  →  hoe lang duurt het
- *   →  wat helpt   →  waar zeggen wij nee  →  hoe meten we  →  vragen  →  stap
+ *   waar zit het  →  wat is het  →  hoe werkt het  →  wat helpt
+ *   →  waar zeggen wij nee  →  hoe meten we  →  vragen  →  stap
  *
- * Vier onderdelen zijn interactief, en elk daarvan doet iets wat statische tekst niet kan:
+ * Drie onderdelen zijn interactief, en elk daarvan doet iets wat statische tekst niet kan:
  * - De acnekaart leest live mee wat jouw zones klinisch betekenen.
  * - De typekiezer neemt per beeld één misverstand weg.
  * - De doorsnede laat zien dat elk stadium een ándere lever heeft.
- * - De tijdlijn schuift De Lijn mee (A4) en zet de dip vooraan.
+ *
+ * Er was een vierde, de tijdlijn met "eerst even slechter". Die is er in augustus 2026
+ * uitgehaald op aanwijzing van Rojda; zie de opmerking op de plek waar hij stond.
  *
  * Twee donkergroene vlakken, niet meer (§5): het moment waarop we nee zeggen, en de
  * volgende stap. Geen italic accentwoorden; het accent zit in kleur.
@@ -58,7 +59,6 @@ const ANKERS = [
   { id: "waar", label: "Waar zit het" },
   { id: "welke", label: "Welk type" },
   { id: "onderhuid", label: "Onder je huid" },
-  { id: "tijdlijn", label: "Hoe lang" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
@@ -98,16 +98,20 @@ export default function AcnePage() {
               <span className="text-[var(--t-muted)]">Acne</span>
             </nav>
 
+            {/* Kop en eerste alinea zijn van Rojda, augustus 2026. De vorige kop
+                ("Acne is niet vies. Het is ontsteking.") ontkende eerst een verwijt
+                voordat hij iets beloofde; deze begint bij wat je komt halen. */}
             <h1 className="diba-display-l mt-6">
-              Acne is niet vies.
+              Begrijp je acne.
               <br />
-              <span className="diba-accent">Het is ontsteking.</span>
+              <span className="diba-accent">Behandel gericht.</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Daarom helpt harder poetsen niet, en daarom zit er ook geen schuld
-              in. Op deze pagina lees je waar jouw acne op wijst, wat er onder
-              je huid gebeurt, hoe lang het duurt en waar wij nee zeggen.
+              Acne heeft niet één oorzaak en daarom ook niet één
+              standaardbehandeling. We kijken naar jouw huid, de vorm en ernst
+              van de acne en factoren die daarop van invloed zijn. Zo bepalen we
+              welke aanpak bij jouw huid past.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -160,9 +164,10 @@ export default function AcnePage() {
               </h2>
             </div>
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De kaaklijn wijst iets anders aan dan de T-zone. Wangen alleen
-              wijzen vaak naar buiten: telefoon, kussensloop, mondkapje. Tik aan
-              waar het bij jou zit, dan lezen we mee. Je mag er meerdere kiezen.
+              De kaaklijn wijst iets anders aan dan de T-zone. Bij wangen kan het
+              van buiten komen, van je telefoon of je kussensloop, maar net zo
+              goed hormonaal zijn. Tik aan waar het bij jou zit, dan lezen we
+              mee. Je mag er meerdere kiezen.
             </p>
           </div>
 
@@ -218,32 +223,17 @@ export default function AcnePage() {
         </div>
       </section>
 
-      {/* ── De eerlijke tijdlijn ───────────────────────────────────────── */}
-      <section
-        id="tijdlijn"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
-      >
-        <div className="mx-auto">
-          <div className={RASTER_SECTIEKOP}>
-            <div>
-              <Label>De eerlijke tijdlijn</Label>
-              <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                Eerst even slechter.
-                <br />
-                <span className="diba-accent">Dan beter.</span>
-              </h2>
-            </div>
-            <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dit is de volgorde die we bij de meeste mensen zien. Het is een
-              indicatie en geen belofte: hoe snel het gaat verschilt per huid en
-              per type. We meten het, dus je hoeft het niet op ons woord te
-              geloven.
-            </p>
-          </div>
+      {/* Hier stond "Eerst even slechter. Dan beter." met een tijdlijn van twaalf weken.
 
-          <AcneTijdlijn />
-        </div>
-      </section>
+          Eruit op aanwijzing van Rojda, augustus 2026: een pagina die je binnenhaalt met
+          de belofte dat het eerst erger wordt, laat mensen afhaken voordat ze een afspraak
+          maken. Dat een huid tijdens een acnetraject door een mindere fase kan gaan is
+          waar, maar het is iets om in het consult te vertellen, waar je erop kunt reageren
+          en waar het over jouw huid gaat. Niet iets om een bezoeker als eerste te laten
+          lezen.
+
+          De component AcneTijdlijn blijft staan; hij is nergens anders in gebruik maar ook
+          niet stuk, en dit is een redactionele keuze die morgen anders kan liggen. */}
 
       {/* ── Wat werkt en wat niet ──────────────────────────────────────── */}
       <section
@@ -350,12 +340,6 @@ export default function AcnePage() {
             ))}
           </ul>
 
-          <p className="diba-label diba-label-on-dark mt-8">
-            Dit staat ook in ons verbond ·{" "}
-            <Link href="/ons-verbond" className="underline underline-offset-4">
-              lees de tien weigeringen
-            </Link>
-          </p>
         </div>
       </section>
 
@@ -368,12 +352,13 @@ export default function AcnePage() {
           <div>
             <Label>De Nulmeting</Label>
             <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Bij acne tellen drie assen.
+              Bij acne tellen vier assen.
             </h2>
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
               De Eve-M-meting legt je huid vast voordat we beginnen. Bij acne
-              zijn poriën, roodheid en textuur de assen die tellen. Na acht tot
-              twaalf weken meten we opnieuw en leggen we de twee naast elkaar.
+              zijn poriën, ontstekingen, roodheid en textuur de assen die
+              tellen. Na acht tot twaalf weken meten we opnieuw en leggen we de
+              twee naast elkaar.
             </p>
             <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
               Dat is niet om je te overtuigen. Het is zodat we het kunnen zien

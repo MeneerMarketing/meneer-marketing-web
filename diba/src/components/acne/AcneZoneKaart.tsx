@@ -231,11 +231,15 @@ export default function AcneZoneKaart() {
               ? "Neem dit mee naar de intake"
               : "Start je intake (4 min)"}
           </Button>
+          {/* Wees hier naar #tijdlijn, en die sectie bestaat niet meer sinds de
+              tijdlijn "eerst even slechter" eruit is gehaald. Een link naar een anker
+              dat er niet is doet niets en dat merk je nergens aan, dus die wijst nu naar
+              wat er wel staat: hoe we meten. */}
           <a
-            href="#tijdlijn"
+            href="#meten"
             className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
           >
-            Hoe lang duurt het
+            Hoe we dit meten
             <ArrowRight size={13} />
           </a>
         </div>

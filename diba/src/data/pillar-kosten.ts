@@ -37,6 +37,6 @@ export function kostenVraag(): { vraag: string; antwoord: string } {
       `Het begint bij de nulmeting: ${bedrag}, en daar zit geen behandeling in. ` +
       "Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. " +
       "Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. " +
-      "Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina, ook de duurste.",
+      "Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.",
   };
 }

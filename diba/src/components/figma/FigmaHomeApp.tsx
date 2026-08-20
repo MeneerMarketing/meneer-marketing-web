@@ -136,15 +136,14 @@ export default function FigmaHomeApp({
 
                 {/* max-w in ch: de kop breekt op de bedoelde plek en raakt de foto nooit. */}
                 <h1 className="diba-display-xl mt-6 max-w-[11ch]">
-                  Geen gokwerk.
+                  Geen hypes.
                   <br />
-                  <span className="diba-accent">Wel jouw huid.</span>
+                  <span className="diba-accent">Wel huidzorg.</span>
                 </h1>
 
                 <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
                   Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare
-                  prijzen, en een nulmeting voordat we behandelen. Soms is het
-                  advies om even te wachten.
+                  prijzen, en een nulmeting voordat we behandelen.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -184,8 +183,12 @@ export default function FigmaHomeApp({
                   className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/30 via-transparent to-transparent"
                   aria-hidden="true"
                 />
+                {/* Stond op "Huidzorg, zonder hype". Sinds de kop "Geen hypes. Wel
+                    huidzorg." is geworden, stonden dezelfde twee woorden twee keer naast
+                    elkaar in beeld. Dit label zegt nu waar de foto over gaat in plaats van
+                    de kop na te praten. */}
                 <span className="diba-label absolute left-7 top-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-                  Huidzorg, zonder hype
+                  Hillegersberg, Rotterdam
                 </span>
                 <span className="diba-label absolute bottom-7 right-7 grid h-24 w-24 place-items-center rounded-[var(--r-pill)] border border-white/70 bg-[var(--g-700)]/90 text-center leading-4 text-white">
                   Eerlijk
@@ -209,9 +212,9 @@ export default function FigmaHomeApp({
           <div>
             <Label opDonker>De Diba huidscan</Label>
             <h2 className="diba-display-l mt-5">
-              Wij gokken niet.
+              Analyse. Inzicht.
               <br />
-              <span className="diba-accent-on-dark">Wij meten.</span>
+              <span className="diba-accent-on-dark">Behandeling.</span>
             </h2>
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
               Met de Eve-M huidanalyse maken we een objectieve nulmeting. Zo

@@ -3,7 +3,7 @@
  *
  * Dit is de kern van de pagina en het onderdeel dat geen enkele andere kliniek heeft.
  * De plek van acne draagt klinische betekenis: de T-zone is talgrijk, de kaaklijn wijst
- * het vaakst op een hormonale factor, en wangen zijn vaker contact en wrijving. Door de
+ * het vaakst op een hormonale factor, en wangen zijn contact, wrijving of ook hormonaal. Door de
  * bezoeker zijn eigen zones te laten aantikken vertelt de pagina iets dat écht over hem
  * gaat, in plaats van een algemene beschrijving van acne.
  *
@@ -40,7 +40,7 @@ export const ACNE_ZONES: readonly Zone[] = [
     id: "wangen",
     naam: "Wangen",
     opZichzelf:
-      "Vaker contact dan talg. We vragen door naar je telefoon, je kussensloop en of je een mondkapje draagt op werk.",
+      "Vaak contact en wrijving, maar zeker zo vaak hormonaal. We vragen door naar je telefoon, je kussensloop, of je een mondkapje draagt op werk en naar je cyclus. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     id: "kin",
@@ -101,18 +101,21 @@ const REGELS: readonly Regel[] = [
       tekst:
         "De zone met de meeste talgklieren. Meestal gaat het hier om talg en verhoorning, niet om hormonen. Dat is het type dat vaak met de minste sessies rustig wordt.",
       eersteStap:
-        "Poriën openmaken en de verhoorning aanpakken, in stappen. En we kijken naar je haarproducten, want die lopen precies over deze zone.",
+        "Poriën reinigen en de verhoorning aanpakken, in stappen. En we kijken naar je haarproducten, want die lopen precies over deze zone.",
     },
   },
   {
     vereist: ["wangen"],
     zonder: ["voorhoofd", "neus", "kin", "kaaklijn"],
     lezing: {
-      kop: "Wangen alleen wijst vaak naar buiten",
+      kop: "Wangen: van buitenaf of hormonaal",
+      /* Stond op "wijst vaak naar buiten", met alleen contact als verklaring. Rojda,
+         augustus 2026: wangen zijn ook vaak hormonaal. Iemand die hier alleen las dat het
+         aan zijn kussensloop lag, ging thuis het verkeerde veranderen. */
       tekst:
-        "Als het alleen op je wangen zit, is de oorzaak vaker iets dat je huid raakt dan iets dat je huid doet. Telefoon, kussensloop, mondkapje, sportband.",
+        "Zit het alleen op je wangen, dan kan het iets zijn dat je huid raakt: telefoon, kussensloop, mondkapje, sportband. Maar net zo vaak speelt er hormonaal iets mee, en dat zie je van buiten niet. [MEDISCHE-CHECK-ROJDA]",
       eersteStap:
-        "Eerst uitzoeken wat er tegen je huid komt. Soms is dit op te lossen zonder één behandeling, en dan zeggen we dat.",
+        "Uitzoeken wat er tegen je huid komt, en vragen naar je cyclus en je medicatie. Soms is het op te lossen zonder één behandeling, en dan zeggen we dat.",
     },
   },
   {

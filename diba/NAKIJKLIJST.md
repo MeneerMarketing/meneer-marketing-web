@@ -1,6 +1,6 @@
 # Nakijklijst Diba Clinics
 
-*Automatisch gegenereerd op 19 augustus 2026. Draai `npm run nakijklijst` voor een verse versie.*
+*Automatisch gegenereerd op 20 augustus 2026. Draai `npm run nakijklijst` voor een verse versie.*
 
 Dit is alles wat er op de site staat en nog bevestigd moet worden. Het is met opzet
 ingevuld en niet leeggelaten: een lege pagina laat zich niet beoordelen en een site met
@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 273 regels.**
+**Totaal: 276 regels.**
 
 
 ## Voor Okan (16)
@@ -103,19 +103,19 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
   <sub>src/app/sitemap.ts:111</sub>
 
-## Voor Rojda (257)
+## Voor Rojda (260)
 
-### MEDISCHE-CHECK-ROJDA · 257
+### MEDISCHE-CHECK-ROJDA · 260
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
-**Inhoud: acne** (11)
+**Inhoud: acne** (12)
 
 - De porie zit dicht, maar je afweer is nog niet in actie gekomen. Dit is het stadium waarin je het meeste kunt vóórkomen in plaats van herstellen.
   <sub>src/data/acne.ts:45</sub>
 - Er is actieve ontsteking. De huid heeft eerst rust nodig. Dit is niet het moment voor peelings of laser, hoe verleidelijk dat ook is.
   <sub>src/data/acne.ts:59</sub>
-- Dit type hoort bij de arts, niet alleen bij de kliniek. Bij dit beeld verwijzen we door en werken we aanvullend.
+- Deze vorm kunnen wij behandelen. Bij een deel van de mensen is daarnaast een arts nodig, en dan werken we samen in plaats van los van elkaar.
   <sub>src/data/acne.ts:73</sub>
 - Het patroon in de tijd wijst op een hormonale factor. Huidbehandeling verbetert het beeld, maar de oorzaak ligt vaak dieper.
   <sub>src/data/acne.ts:87</sub>
@@ -131,17 +131,23 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/acne.ts:250</sub>
 - Dat kan, en het is vaak juist verstandig. Vertel het ons wel, dan stemmen we af wat veilig combineert met je medicatie.
   <sub>src/data/acne.ts:273</sub>
-- Voor sommige mensen maakt voeding verschil, voor andere niets. Het bewijs is minder hard dan internet doet vermoeden. We gaan je hier geen dieet aanpraten.
+- Soms wel. We werken samen met een laboratorium en kunnen een voedingsintolerantietest doen; komt daar iets uit, dan heeft je voeding aanpassen ook echt effect. Zonder die test blijft het gokken, en dan gaan we je hier geen dieet aanpraten.
   <sub>src/data/acne.ts:278</sub>
+- Dat zijn meestal geen littekens maar pigmentvlekken. Zonbescherming voorkomt dat ze donkerder worden en dat er nieuwe bij komen, maar het laat een vlek die er al zit niet verdwijnen; daar zijn behandelingen voor nodig. Zit er een kuiltje in de huid, dan is het wél een litteken en kijken we ernaar...
+  <sub>src/data/acne.ts:283</sub>
 
-**Inhoud: acne-zones** (3)
+**Inhoud: acne-zones** (5)
 
+- Vaak contact en wrijving, maar zeker zo vaak hormonaal. We vragen door naar je telefoon, je kussensloop, of je een mondkapje draagt op werk en naar je cyclus.
+  <sub>src/data/acne-zones.ts:43</sub>
 - Van alle zones is dit de sterkste aanwijzing voor een hormonale factor.
   <sub>src/data/acne-zones.ts:55</sub>
 - Kin en kaaklijn samen is het klassieke beeld. Vaak in golven, vaak rond een vast moment in de maand, vaak diepere plekjes die langer blijven zitten.
   <sub>src/data/acne-zones.ts:91</sub>
+- Zit het alleen op je wangen, dan kan het iets zijn dat je huid raakt: telefoon, kussensloop, mondkapje, sportband. Maar net zo vaak speelt er hormonaal iets mee, en dat zie je van buiten niet.
+  <sub>src/data/acne-zones.ts:116</sub>
 - Van alle zones is dit degene die het vaakst met hormonen te maken heeft. Zeker als het diepere, gevoelige plekjes zijn.
-  <sub>src/data/acne-zones.ts:135</sub>
+  <sub>src/data/acne-zones.ts:138</sub>
 
 **Inhoud: apparatuur** (22)
 

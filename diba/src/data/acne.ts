@@ -44,7 +44,7 @@ export const ACNE_TYPES: readonly AcneType[] = [
     watHetBetekent:
       "De porie zit dicht, maar je afweer is nog niet in actie gekomen. Dit is het stadium waarin je het meeste kunt vóórkomen in plaats van herstellen. [MEDISCHE-CHECK-ROJDA]",
     watWijEersteDoen:
-      "Poriën openmaken en de verhoorning aanpakken, in stappen en zonder de huid te irriteren. Dit is vaak het traject met de minste sessies.",
+      "Poriën reinigen en de verhoorning aanpakken, in stappen en zonder de huid te irriteren. Dit is vaak het traject met de minste sessies.",
     verwarMetNiet:
       "Die donkere puntjes zijn geen vuil. Het is talg dat aan de lucht is verkleurd. Daarom poetst het er ook niet uit.",
   },
@@ -70,7 +70,7 @@ export const ACNE_TYPES: readonly AcneType[] = [
     watJeZiet:
       "Zwellingen die je meer voelt dan ziet. Ze komen niet tot een kopje, ze doen zeer, en ze laten vaker een litteken of een donkere vlek achter.",
     watHetBetekent:
-      "Dit type hoort bij de arts, niet alleen bij de kliniek. Bij dit beeld verwijzen we door en werken we aanvullend. [MEDISCHE-CHECK-ROJDA]",
+      "Deze vorm kunnen wij behandelen. Bij een deel van de mensen is daarnaast een arts nodig, en dan werken we samen in plaats van los van elkaar. [MEDISCHE-CHECK-ROJDA]",
     watWijEersteDoen:
       "Een eerlijk gesprek. We overleggen met je huisarts of dermatoloog vóórdat we iets doen, en soms is ons advies om bij ons nog niet te starten.",
     verwarMetNiet:
@@ -210,7 +210,7 @@ export const ACNE_TIJDLIJN = [
 export const ACNE_WEL_NIET = {
   wel: [
     "Een nulmeting voordat we starten, zodat je later niet hoeft te geloven dat het werkte",
-    "Poriën openmaken en verhoorning aanpakken, in stappen die je huid aankan",
+    "Poriën reinigen en verhoorning aanpakken, in stappen die je huid aankan",
     "Ontsteking eerst omlaag, littekens daarna. Nooit tegelijk",
     "Zonbescherming, elke dag, ook in de winter. Dit voorkomt de donkere vlekken die na een puistje overblijven",
     "Doorverwijzen naar de arts als het beeld daarom vraagt, ook als je bij ons kwam",
@@ -245,7 +245,7 @@ export const ACNE_WIJ_DOEN_NIET = [
 
 export const ACNE_FAQ = [
   {
-    vraag: "Word ik hier van mijn acne af?",
+    vraag: "Kom ik hier van mijn acne af?",
     antwoord:
       "Bij de meeste mensen is acne goed te beheersen. Bij sommigen blijft het terugkomen, bijvoorbeeld door hormonen. We zeggen vooraf wat we in jouw geval realistisch vinden, en we meten of het werkt. Beheersing is soms het eerlijke doel, en dat is geen tweede keus. [MEDISCHE-CHECK-ROJDA]",
   },
@@ -275,12 +275,12 @@ export const ACNE_FAQ = [
   {
     vraag: "Helpt het als ik anders ga eten?",
     antwoord:
-      "Voor sommige mensen maakt voeding verschil, voor andere niets. Het bewijs is minder hard dan internet doet vermoeden. We gaan je hier geen dieet aanpraten. [MEDISCHE-CHECK-ROJDA]",
+      "Soms wel. We werken samen met een laboratorium en kunnen een voedingsintolerantietest doen; komt daar iets uit, dan heeft je voeding aanpassen ook echt effect. Zonder die test blijft het gokken, en dan gaan we je hier geen dieet aanpraten. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Ik heb vooral last van de vlekken die overblijven.",
     antwoord:
-      "Dat zijn meestal geen littekens maar pigmentvlekken, en die trekken vaak weg. Ze verdwijnen sneller met zonbescherming dan met een behandeling. Zit er een kuiltje in de huid, dan is het wél een litteken en kijken we ernaar zodra de huid rustig is.",
+      "Dat zijn meestal geen littekens maar pigmentvlekken. Zonbescherming voorkomt dat ze donkerder worden en dat er nieuwe bij komen, maar het laat een vlek die er al zit niet verdwijnen; daar zijn behandelingen voor nodig. Zit er een kuiltje in de huid, dan is het wél een litteken en kijken we ernaar zodra de huid rustig is. [MEDISCHE-CHECK-ROJDA]",
   },
   kostenVraag(),
 ] as const;

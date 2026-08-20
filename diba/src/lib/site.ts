@@ -96,12 +96,32 @@ export const DIBA_SALONIZED_REVIEWS_URL = "https://dibaclinics.salonized.com/rev
 export const DIBA_SALONIZED_RATING = 5.0;
 export const DIBA_SALONIZED_REVIEW_COUNT = 3883;
 
-/** Canonieke proof points — enige toegestane cijfers (DIBA-RULES.md §11) */
+/**
+ * Canonieke proof points, de enige toegestane cijfers (DIBA-RULES.md §11).
+ *
+ * De aantallen stonden hier twee keer: een keer als tekst met duizendscheiding en een keer
+ * als kaal getal in de tellers hieronder. Toen Rojda in augustus 2026 doorgaf dat het
+ * inmiddels tienduizend klanten en vijfenvijftigduizend behandelingen zijn, moest dat dus
+ * op vier plekken worden bijgewerkt, en dan is het een kwestie van tijd voor de homepage
+ * iets anders zegt dan /over-ons.
+ *
+ * Vandaar één getal per feit, en de tekstvorm eruit afgeleid.
+ */
+const AANTAL = {
+  geholpenKlanten: 10000,
+  behandelingen: 55000,
+} as const;
+
+/** "10.000+" uit 10000. Eén plek waar de vorm wordt bepaald. */
+function metPlus(aantal: number): string {
+  return `${aantal.toLocaleString("nl-NL")}+`;
+}
+
 export const DIBA_PROOF = {
   activeSince: 2017,
-  helpedClients: "8.000+",
-  treatmentsPerformed: "50.000+",
-  clientReviews: "3.883",
+  helpedClients: metPlus(AANTAL.geholpenKlanten),
+  treatmentsPerformed: metPlus(AANTAL.behandelingen),
+  clientReviews: DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL"),
 } as const;
 
 /** Numerieke waarden voor ProofStrip count-up (§11, enige bron) */
@@ -119,15 +139,15 @@ export type ProofStripItem = {
 
 export const DIBA_PROOF_STRIP_ITEMS: readonly ProofStripItem[] = [
   { value: DIBA_PROOF.activeSince, label: "Actief sinds", isJaartal: true },
-  { value: 8000, suffix: "+", label: "Geholpen klanten" },
-  { value: 50000, suffix: "+", label: "Behandelingen" },
+  { value: AANTAL.geholpenKlanten, suffix: "+", label: "Geholpen klanten" },
+  { value: AANTAL.behandelingen, suffix: "+", label: "Behandelingen" },
   { value: DIBA_SALONIZED_REVIEW_COUNT, label: "Klantreviews" },
 ] as const;
 
 /** Figma homepage volgorde — stats bar onder hero */
 export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
   { value: DIBA_SALONIZED_REVIEW_COUNT, label: "Klantreviews" },
-  { value: 50000, suffix: "+", label: "Uitgevoerde behandelingen" },
-  { value: 8000, suffix: "+", label: "Geholpen klanten" },
+  { value: AANTAL.behandelingen, suffix: "+", label: "Uitgevoerde behandelingen" },
+  { value: AANTAL.geholpenKlanten, suffix: "+", label: "Geholpen klanten" },
   { value: DIBA_PROOF.activeSince, label: "Vertrouwd sinds", isJaartal: true },
 ] as const;

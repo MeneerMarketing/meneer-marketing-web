@@ -58,10 +58,13 @@ export default function SymptoomzoekerPage() {
             <span className="text-[var(--t-muted)]">Symptoomzoeker</span>
           </nav>
 
+          {/* Rojda, augustus 2026. "Je hoeft niet te weten hoe het heet" zegt tegen
+              iemand wat hij niet kan; dit zegt wat wij wel kunnen. Zelfde belofte,
+              andere kant op geschreven. */}
           <h1 className="diba-display-l mt-6 max-w-[17ch]">
-            Je hoeft niet te weten
+            Jij ziet het.
             <br />
-            <span className="diba-accent">hoe het heet.</span>
+            <span className="diba-accent">Wij herkennen het.</span>
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">

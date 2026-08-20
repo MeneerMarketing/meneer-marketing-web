@@ -15,8 +15,14 @@ export type WerkwijzeStep = {
  * mis was: het waren drie losse zinnen in een raster in plaats van drie kaarten die
  * samen een rij vormen.
  *
- * Nu liggen de titels op 9 tot 12 tekens en de teksten op 94 tot 100. Dat is binnen de
+ * Nu liggen de titels op 9 tot 12 tekens en de teksten op 89 tot 101. Dat is binnen de
  * marge waarin ze op elke schermbreedte hetzelfde aantal regels vullen.
+ *
+ * De teksten bij "De meting" en "Het voorstel" zijn in augustus 2026 herschreven op
+ * aanwijzing van Rojda: de meting hoort te benoemen dat het in een professioneel
+ * huidanalysesysteem gebeurt, en bij het voorstel moest "wat het niet gaat doen" en "soms
+ * is het voorstel om nog niets te doen" eruit. Dat laatste hoort volgens haar in het
+ * consult thuis en niet op een homepage.
  *
  * "Luisteren / Kijken & meten / Een plan dat past" is vervangen door drie zelfstandige
  * naamwoorden. Werkwoorden beschrijven wat wij doen; zelfstandige naamwoorden benoemen
@@ -31,11 +37,11 @@ export const HOME_WERKWIJZE_STEPS: readonly WerkwijzeStep[] = [
   {
     id: "meting",
     title: "De meting",
-    body: "We kijken onder vast licht en leggen de uitkomst vast. Zo is verschil later ook echt verschil.",
+    body: "De meting doen we in een professioneel huidanalysesysteem, zodat verschil later ook echt verschil is.",
   },
   {
     id: "voorstel",
     title: "Het voorstel",
-    body: "Wat er kan, wat het kost en wat het niet gaat doen. Soms is het voorstel om nog niets te doen.",
+    body: "Wat er kan, wat het kost en wat je kunt verwachten. Daarna beslis jij, in je eigen tempo.",
   },
 ] as const;
