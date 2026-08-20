@@ -117,6 +117,22 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     kenmerken: ["bultjes"],
   },
   {
+    naam: "Huidverslapping",
+    pad: "/huidproblemen/huidverslapping",
+    zin: "Een vagere kaaklijn en wangen die zakken.",
+    eersteVraag: "Wat zie je liggend?",
+    groep: "behandelen",
+    kenmerken: ["lijntjes"],
+  },
+  {
+    naam: "Ingegroeide haren",
+    pad: "/huidproblemen/ingegroeide-haren",
+    zin: "Bultjes na het scheren, met een haar die niet naar buiten komt.",
+    eersteVraag: "Zit er een haar in?",
+    groep: "behandelen",
+    kenmerken: ["bultjes", "puistjes"],
+  },
+  {
     naam: "Rosacea",
     pad: "/huidproblemen/rosacea",
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",

@@ -1,6 +1,6 @@
 # Nakijklijst Diba Clinics
 
-*Automatisch gegenereerd op 20 augustus 2026. Draai `npm run nakijklijst` voor een verse versie.*
+*Automatisch gegenereerd op 21 augustus 2026. Draai `npm run nakijklijst` voor een verse versie.*
 
 Dit is alles wat er op de site staat en nog bevestigd moet worden. Het is met opzet
 ingevuld en niet leeggelaten: een lege pagina laat zich niet beoordelen en een site met
@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 378 regels.**
+**Totaal: 407 regels.**
 
 
 ## Voor Okan (17)
@@ -106,11 +106,11 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:118</sub>
+  <sub>src/app/sitemap.ts:120</sub>
 
-## Voor Rojda (361)
+## Voor Rojda (390)
 
-### MEDISCHE-CHECK-ROJDA · 361
+### MEDISCHE-CHECK-ROJDA · 390
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
@@ -514,35 +514,35 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 **Inhoud: gerstekorrels** (15)
 
 - Een piepklein cystje met keratine, ingesloten onder de opperhuid. Er zit geen opening naartoe, en dat is precies waarom knijpen niet werkt.
-  <sub>src/data/gerstekorrels.ts:47</sub>
+  <sub>src/data/gerstekorrels.ts:48</sub>
 - Openen met een steriele naald en de inhoud eruit lichten. Dat duurt per bolletje enkele seconden en er blijft niets van te zien.
-  <sub>src/data/gerstekorrels.ts:49</sub>
+  <sub>src/data/gerstekorrels.ts:50</sub>
 - Een ontstoken kliertje aan de ooglidrand. Dit is wat een gerstekorrel medisch gezien is, en het is iets heel anders dan een wit korreltje.
-  <sub>src/data/gerstekorrels.ts:60</sub>
+  <sub>src/data/gerstekorrels.ts:61</sub>
 - Niets. Dit hoort bij je huisarts en gaat vaak vanzelf over met warme kompressen. Wij prikken hier niet in.
-  <sub>src/data/gerstekorrels.ts:62</sub>
+  <sub>src/data/gerstekorrels.ts:63</sub>
 - Een verstopt talgkliertje in het ooglid dat is ingekapseld. Anders dan een strontje doet het meestal geen pijn, en het blijft langer zitten.
-  <sub>src/data/gerstekorrels.ts:73</sub>
+  <sub>src/data/gerstekorrels.ts:74</sub>
 - Ook hier niets. Dit hoort bij de huisarts of oogarts, die zo nodig doorverwijst.
-  <sub>src/data/gerstekorrels.ts:75</sub>
+  <sub>src/data/gerstekorrels.ts:76</sub>
 - Geen milium maar een verstopte porie die wél openstaat. Het donker is geoxideerd talg en geen vuil.
-  <sub>src/data/gerstekorrels.ts:86</sub>
+  <sub>src/data/gerstekorrels.ts:87</sub>
 - [ Eerst vaststellen of het een wit korreltje is of een ontsteking, want dat scheelt de huisarts of ons, Milia openen met een steriele naald, per stuk, in een behandeling van minuten
-  <sub>src/data/gerstekorrels.ts:96</sub>
-- [ Eerst vaststellen of het een wit korreltje is of een ontsteking, want dat scheelt de huisarts of ons, Milia openen met een steriele naald, per stuk, in een behandeling van minuten , Kijken of er een aanleiding is: te rijke oogcrème, zonschade, of iets dat de huid heeft beschadigd
   <sub>src/data/gerstekorrels.ts:97</sub>
+- [ Eerst vaststellen of het een wit korreltje is of een ontsteking, want dat scheelt de huisarts of ons, Milia openen met een steriele naald, per stuk, in een behandeling van minuten , Kijken of er een aanleiding is: te rijke oogcrème, zonschade, of iets dat de huid heeft beschadigd
+  <sub>src/data/gerstekorrels.ts:98</sub>
 - [ Prikken in iets dat ontstoken is. Rond het oog is dat een risico dat nergens voor nodig is
-  <sub>src/data/gerstekorrels.ts:101</sub>
+  <sub>src/data/gerstekorrels.ts:102</sub>
 - Een ontstoken kliertje aan de ooglidrand hoort bij de huisarts, en gaat vaak vanzelf over. Wij prikken daar niet in; de kans op verergering is klein maar de plek is te belangrijk om die kans te nemen.
-  <sub>src/data/gerstekorrels.ts:112</sub>
+  <sub>src/data/gerstekorrels.ts:113</sub>
 - Omdat er geen opening naartoe is. Een mee-eter heeft een poriegang naar buiten; een milium zit volledig ingesloten onder een laagje huid. Knijpen beschadigt daarom alleen het weefsel eromheen.
-  <sub>src/data/gerstekorrels.ts:125</sub>
+  <sub>src/data/gerstekorrels.ts:126</sub>
 - Je voelt een prikje per bolletje, vergelijkbaar met een splinter eruit halen. Er is geen verdoving nodig en je kunt daarna gewoon weg.
-  <sub>src/data/gerstekorrels.ts:130</sub>
+  <sub>src/data/gerstekorrels.ts:131</sub>
 - De behandelde bolletjes niet. Wel kunnen er nieuwe ontstaan, en dan kijken we of er een aanleiding is: bij sommige mensen is dat een te rijke oogcrème, bij anderen jarenlange zonschade.
-  <sub>src/data/gerstekorrels.ts:135</sub>
+  <sub>src/data/gerstekorrels.ts:136</sub>
 - Meestal alles wat er zit, in een afspraak. Zijn het er veel, dan spreiden we het soms om de huid rust te geven. Dat hoor je vooraf en niet halverwege.
-  <sub>src/data/gerstekorrels.ts:140</sub>
+  <sub>src/data/gerstekorrels.ts:141</sub>
 
 **Inhoud: gevoelige-huid** (4)
 
@@ -585,6 +585,70 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/huidverkleuring.ts:99</sub>
 - Meestal iets dat door de huid heen schemert, of pigment dat dieper zit dan gewoonlijk. De kleur zegt hier vooral iets over de diepte.
   <sub>src/data/huidverkleuring.ts:122</sub>
+
+**Inhoud: huidverslapping** (13)
+
+- Elastine en collageen nemen af, waardoor de huid trager terugveert. Dit is het vroegste stadium en het stadium waarin een behandeling het meeste oplevert.
+  <sub>src/data/huidverslapping.ts:50</sub>
+- De huid houdt de contour niet meer strak, terwijl er onder nog weinig is veranderd. Dit is de klacht waarmee de meeste mensen hier binnenkomen.
+  <sub>src/data/huidverslapping.ts:63</sub>
+- Vetkussens in het gezicht nemen af en verplaatsen, en bot trekt zich terug. Dat is geen huidprobleem, ook al zie je het aan je huid.
+  <sub>src/data/huidverslapping.ts:76</sub>
+- Weefsel dat werkelijk is losgelaten en niet alleen minder stevig. Geen apparaat zet dit terug, hoe vaak je ook komt.
+  <sub>src/data/huidverslapping.ts:89</sub>
+- [ Eerst vaststellen of het om stevigheid gaat, om volume, of om huid die echt is losgelaten, De diepere lagen aanspannen met laser, in een reeks met weken ertussen, Een nulmeting, want verandering over maanden zie je in de spiegel niet en op een meting wel, Zonbescherming, want UV breekt precies ...
+  <sub>src/data/huidverslapping.ts:130</sub>
+- [ Chirurgie nabootsen. Wat is losgelaten wordt hier niet vastgezet
+  <sub>src/data/huidverslapping.ts:134</sub>
+- [ Chirurgie nabootsen. Wat is losgelaten wordt hier niet vastgezet , Volume opvullen. Wij werken niet met fillers, en bij een smaller geworden gezicht is dat vaak wel het antwoord, Een reeks verkopen aan iemand bij wie de zwaartekrachttest nauwelijks verschil laat zien, Resultaat beloven in weken...
+  <sub>src/data/huidverslapping.ts:137</sub>
+- Chirurgie nabootsen. Wat is losgelaten wordt hier niet vastgezet , Volume opvullen. Wij werken niet met fillers, en bij een smaller geworden gezicht is dat vaak wel het antwoord, Een reeks verkopen aan iemand bij wie de zwaartekrachttest nauwelijks verschil laat zien, Resultaat beloven in weken. ...
+  <sub>src/data/huidverslapping.ts:138</sub>
+- Kun je een plooi vastpakken die blijft hangen, dan gaat het om weefsel dat verwijderd of verplaatst moet worden. Dat is chirurgie. Een reeks van drie verkopen aan iemand die een lift zoekt is het duurste nee dat wij kunnen uitstellen.
+  <sub>src/data/huidverslapping.ts:146</sub>
+- Nee, en iedereen die dat zegt verkoopt iets. Aanspannen van de huid en het verwijderen van weefsel zijn twee verschillende dingen. Wat wij doen werkt in het stadium daarvoor, en op het moment dat dat stadium voorbij is zeggen we dat.
+  <sub>src/data/huidverslapping.ts:159</sub>
+- Leeftijd zegt hier weinig; de zwaartekrachttest zegt meer. Zie je liggend duidelijk verschil met staand, dan valt er iets te winnen. Is dat verschil er nauwelijks, dan is er nog niets om aan te spannen of juist te veel om aan te pakken.
+  <sub>src/data/huidverslapping.ts:164</sub>
+- Het proces zelf gaat door, dus het is geen eindpunt maar een verschuiving. Hoe lang dat merkbaar blijft verschilt sterk per persoon; we spreken vooraf af wanneer we opnieuw meten in plaats van dat we een getal noemen.
+  <sub>src/data/huidverslapping.ts:169</sub>
+- Je voelt warmte en soms korte prikjes. De meeste mensen omschrijven het als goed te doen, en er is geen verdoving nodig. Wat je erna merkt hangt af van de behandeling en staat op de behandelpagina.
+  <sub>src/data/huidverslapping.ts:174</sub>
+
+**Inhoud: ingegroeide-haren** (16)
+
+- Het haar krult terug de huid in in plaats van eruit, en je afweer reageert op iets dat er hoort te zijn. Komt vaker en heftiger voor bij krullend haar.
+  <sub>src/data/ingegroeide-haren.ts:49</sub>
+- Een ontstoken haarzakje, meestal door bacteriën. Anders dan een ingegroeid haar gaat dit vaak vanzelf over, maar het kan ook hardnekkig worden.
+  <sub>src/data/ingegroeide-haren.ts:62</sub>
+- Niet laseren zolang het actief is. Zit het er al weken of komt het steeds terug, dan hoort er eerst een huisarts naar te kijken.
+  <sub>src/data/ingegroeide-haren.ts:64</sub>
+- Verhoorning rond de haarzakjes, en geen ingegroeid haar. Onschuldig, vaak erfelijk, en het wordt van ontharen niet minder.
+  <sub>src/data/ingegroeide-haren.ts:75</sub>
+- Pigment dat na de ontsteking is achtergebleven. Dit is wat er van jarenlang scheren vaak overblijft, en het is geen litteken.
+  <sub>src/data/ingegroeide-haren.ts:88</sub>
+- [ Eerst kijken of er werkelijk een haar in zit, want zonder haar doet ontharen niets, De haarwortel uitschakelen, want een haar dat er niet is kan ook niet ingroeien, Kijken naar hoe je nu onthaart. Soms is anders scheren de hele oplossing, en dan zeggen we dat, Instellingen aanpassen op je huidt...
+  <sub>src/data/ingegroeide-haren.ts:128</sub>
+- Eerst kijken of er werkelijk een haar in zit, want zonder haar doet ontharen niets, De haarwortel uitschakelen, want een haar dat er niet is kan ook niet ingroeien, Kijken naar hoe je nu onthaart. Soms is anders scheren de hele oplossing, en dan zeggen we dat, Instellingen aanpassen op je huidtyp...
+  <sub>src/data/ingegroeide-haren.ts:129</sub>
+- [ Laseren op een zone die op dit moment ontstoken is
+  <sub>src/data/ingegroeide-haren.ts:132</sub>
+- [ Laseren op een zone die op dit moment ontstoken is , Zelf uitpeuteren met een pincet of een naald. Dat is de snelste route naar een donkere vlek of een kuiltje, Scrubben tegen ingegroeide haren. Op een geïrriteerde zone maakt het de ontsteking erger, Behandelen op een gebruinde huid
+  <sub>src/data/ingegroeide-haren.ts:135</sub>
+- Laseren op een zone die op dit moment ontstoken is , Zelf uitpeuteren met een pincet of een naald. Dat is de snelste route naar een donkere vlek of een kuiltje, Scrubben tegen ingegroeide haren. Op een geïrriteerde zone maakt het de ontsteking erger, Behandelen op een gebruinde huid , Beloven dat...
+  <sub>src/data/ingegroeide-haren.ts:136</sub>
+- Rode, warme bultjes met een puskopje laten we eerst tot rust komen. Licht op een ontstoken haarzakje verergert de ontsteking en vergroot de kans op een blijvende vlek. Komt het steeds terug, dan kijkt er eerst een huisarts naar.
+  <sub>src/data/ingegroeide-haren.ts:144</sub>
+- Licht mikt op het pigment in de haarwortel. Blond, rood of grijs haar bevat daar te weinig van, en dan werkt het niet, hoeveel sessies je ook neemt. Dat stellen we vast voordat je iets afspreekt en niet erna.
+  <sub>src/data/ingegroeide-haren.ts:149</sub>
+- Bij het merendeel wel, en om een logische reden: waar geen haar groeit kan ook niets ingroeien. Het gaat geleidelijk, over een reeks sessies, en het werkt alleen als het haar donker genoeg is om licht op te vangen.
+  <sub>src/data/ingegroeide-haren.ts:157</sub>
+- Daar groeit het haar vaker krullend en ligt de haarzak schuiner, waardoor een teruggroeiend haar sneller de huid weer in gaat. Kleding die wrijft en strak scheren maken het erger.
+  <sub>src/data/ingegroeide-haren.ts:162</sub>
+- Scheren mag en moet zelfs: de zone hoort kort te zijn op de dag van de behandeling. Wat niet mag is epileren, harsen of een epilator, want dan trek je precies de wortel weg waar het licht op mikt.
+  <sub>src/data/ingegroeide-haren.ts:167</sub>
+- Dat is pigment en geen litteken. Zolang er nieuwe bultjes bij komen heeft behandelen weinig zin, want dan komen er ook nieuwe vlekjes bij. Eerst de oorzaak, dan de kleur.
+  <sub>src/data/ingegroeide-haren.ts:172</sub>
 
 **Inhoud: intake** (2)
 
@@ -694,35 +758,35 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Pigment dat zich na jaren zonblootstelling op een plek heeft opgehoopt. Onschuldig, en het meest voorkomende beeld op deze pagina.
   <sub>src/data/ouderdomsvlekken.ts:48</sub>
 - Een goedaardige woekering van huidcellen. Ondanks het uiterlijk heeft dit niets met zonschade te maken en het is ook geen moedervlek.
-  <sub>src/data/ouderdomsvlekken.ts:61</sub>
+  <sub>src/data/ouderdomsvlekken.ts:62</sub>
 - Hier doet licht niets: het pigment zit in weefsel dat boven de huid uitsteekt. Verwijderen kan wel, maar dat gebeurt eerst na beoordeling.
-  <sub>src/data/ouderdomsvlekken.ts:63</sub>
+  <sub>src/data/ouderdomsvlekken.ts:64</sub>
 - Een ander mechanisme dan een zonnevlek: hormonaal aangestuurd en veel gevoeliger voor licht en warmte. Verkeerd behandelen maakt het aantoonbaar erger.
-  <sub>src/data/ouderdomsvlekken.ts:74</sub>
+  <sub>src/data/ouderdomsvlekken.ts:76</sub>
 - Dat weten wij niet, en dat is precies het punt. Alles wat verandert hoort beoordeeld te worden voordat er iets mee gebeurt.
-  <sub>src/data/ouderdomsvlekken.ts:87</sub>
+  <sub>src/data/ouderdomsvlekken.ts:89</sub>
 - [ Eerst beoordelen of een plek onschuldig is, en bij twijfel doorsturen in plaats van behandelen, Een nulmeting onder UV-licht, want daar zie je pigment dat er al zit en nog niet zichtbaar is, Zonbescherming, elke dag en het hele jaar. Zonder dat komen de vlekken terug en werkt de rest niet
-  <sub>src/data/ouderdomsvlekken.ts:98</sub>
+  <sub>src/data/ouderdomsvlekken.ts:100</sub>
 - [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden
-  <sub>src/data/ouderdomsvlekken.ts:103</sub>
-- [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter
-  <sub>src/data/ouderdomsvlekken.ts:104</sub>
-- [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter , Bleekcrèmes met hydrochinon op eigen houtje. Dat hoort onder begeleiding
   <sub>src/data/ouderdomsvlekken.ts:105</sub>
-- Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter , Bleekcrèmes met hydrochinon op eigen houtje. Dat hoort onder begeleiding , Behandelen in de zomer zonder afspraken over zon. ...
+- [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter
+  <sub>src/data/ouderdomsvlekken.ts:106</sub>
+- [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter , Bleekcrèmes met hydrochinon op eigen houtje. Dat hoort onder begeleiding
   <sub>src/data/ouderdomsvlekken.ts:107</sub>
+- Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter , Bleekcrèmes met hydrochinon op eigen houtje. Dat hoort onder begeleiding , Behandelen in de zomer zonder afspraken over zon. ...
+  <sub>src/data/ouderdomsvlekken.ts:109</sub>
 - Groeit iets, verschiet het van kleur, of heeft het een rafelige rand? Dan gaat het eerst naar de huisarts. Wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen, en dat is een fout die niet te herstellen is.
-  <sub>src/data/ouderdomsvlekken.ts:115</sub>
+  <sub>src/data/ouderdomsvlekken.ts:117</sub>
 - Ga je binnen een paar weken naar de zon of op wintersport, dan starten we niet. Dat is geen formaliteit: pigment komt na blootstelling terug en dan heb je voor niets betaald.
-  <sub>src/data/ouderdomsvlekken.ts:120</sub>
+  <sub>src/data/ouderdomsvlekken.ts:122</sub>
 - Een gewone zonnevlek is onschuldig. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is de eerste vraag hier niet hoe je ervan afkomt maar of het is wat je denkt.
-  <sub>src/data/ouderdomsvlekken.ts:128</sub>
+  <sub>src/data/ouderdomsvlekken.ts:130</sub>
 - De behandelde vlek komt niet terug, maar er kunnen nieuwe bij komen zolang je huid zon blijft vangen. Dat is de reden dat zonbescherming hier geen advies achteraf is maar onderdeel van de behandeling.
-  <sub>src/data/ouderdomsvlekken.ts:133</sub>
+  <sub>src/data/ouderdomsvlekken.ts:135</sub>
 - Omdat pigment dieper in de huid begint dan waar je het ziet. De meting maakt zichtbaar wat er al ligt, en dat is soms confronterend. Het is ook nuttig: het verklaart waarom er zonder bescherming steeds nieuwe bij lijken te komen.
-  <sub>src/data/ouderdomsvlekken.ts:138</sub>
+  <sub>src/data/ouderdomsvlekken.ts:140</sub>
 - Ja, en dat is vaak de plek waar mensen het het eerst storend vinden. De huid daar is dunner en herstelt langzamer, dus we gaan er voorzichtiger te werk dan in het gezicht.
-  <sub>src/data/ouderdomsvlekken.ts:143</sub>
+  <sub>src/data/ouderdomsvlekken.ts:145</sub>
 
 **Inhoud: pigment** (9)
 
@@ -873,7 +937,7 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 **Inhoud: symptoomzoeker** (1)
 
 - Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag.
-  <sub>src/data/symptoomzoeker.ts:255</sub>
+  <sub>src/data/symptoomzoeker.ts:271</sub>
 
 **Inhoud: veroudering** (10)
 
