@@ -133,6 +133,22 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     kenmerken: ["bultjes", "puistjes"],
   },
   {
+    naam: "Onzuivere huid en mee-eters",
+    pad: "/huidproblemen/onzuivere-huid",
+    zin: "Verstopte porien en af en toe een puistje, zonder echte acne.",
+    eersteVraag: "Mee-eter of gewoon een porie?",
+    groep: "behandelen",
+    kenmerken: ["puistjes", "glans"],
+  },
+  {
+    naam: "Keratosis pilaris",
+    pad: "/huidproblemen/keratosis-pilaris",
+    zin: "Kippenvelhuid: ruwe bultjes op bovenarmen of dijen.",
+    eersteVraag: "Losse bultjes of alleen ruw?",
+    groep: "behandelen",
+    kenmerken: ["bultjes", "ruw", "droog"],
+  },
+  {
     naam: "Rosacea",
     pad: "/huidproblemen/rosacea",
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",

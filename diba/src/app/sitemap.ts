@@ -35,6 +35,8 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   // medische inhoud heeft nagelopen en de prijzen erin staan.
   "/huidproblemen/acne",
   "/huidproblemen/acne-littekens",
+  "/huidproblemen/onzuivere-huid",
+  "/huidproblemen/keratosis-pilaris",
   "/huidproblemen/pigmentvlekken",
   "/huidproblemen/rosacea",
   "/huidproblemen/rimpels",

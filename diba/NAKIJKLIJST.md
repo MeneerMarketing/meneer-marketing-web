@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 407 regels.**
+**Totaal: 434 regels.**
 
 
 ## Voor Okan (17)
@@ -106,11 +106,11 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:120</sub>
+  <sub>src/app/sitemap.ts:122</sub>
 
-## Voor Rojda (390)
+## Voor Rojda (417)
 
-### MEDISCHE-CHECK-ROJDA · 390
+### MEDISCHE-CHECK-ROJDA · 417
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
@@ -657,6 +657,37 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Geen zonvakantie of zonnebank in de weken ervoor. Een verse kleur maakt de meting onbetrouwbaar en behandelen daarna onverstandig.
   <sub>src/data/intake.ts:146</sub>
 
+**Inhoud: keratosis-pilaris** (14)
+
+- Verhoorning rond de haarzakjes: er vormt zich een propje hoorncellen boven elk haartje. Onschuldig, grotendeels erfelijk, en het wordt bij veel mensen met de jaren minder.
+  <sub>src/data/keratosis-pilaris.ts:51</sub>
+- Dezelfde verhoorning, maar in het gezicht en met meer roodheid eromheen. Het wordt vaak aangezien voor acne of rosacea en is geen van beide.
+  <sub>src/data/keratosis-pilaris.ts:64</sub>
+- Een droge huid en geen verhoorning rond de haarzakjes. Dit lijkt erop en vraagt om iets veel eenvoudigers.
+  <sub>src/data/keratosis-pilaris.ts:77</sub>
+- Ingegroeide haren, en geen keratosis pilaris. Het onderscheid zit in de plek en in de vraag of er een haar in zit.
+  <sub>src/data/keratosis-pilaris.ts:90</sub>
+- [ Eerlijk zeggen dat dit niet te genezen is, en wat er dan wel kan, De bovenlaag geleidelijk soepeler maken, met een tempo dat de huid aankan, Onderhoud dat je zelf volhoudt, want zonder dat komt het beeld terug, De roodheid apart aanpakken, want die stoort vaak meer dan de bultjes zelf
+  <sub>src/data/keratosis-pilaris.ts:130</sub>
+- Eerlijk zeggen dat dit niet te genezen is, en wat er dan wel kan, De bovenlaag geleidelijk soepeler maken, met een tempo dat de huid aankan, Onderhoud dat je zelf volhoudt, want zonder dat komt het beeld terug, De roodheid apart aanpakken, want die stoort vaak meer dan de bultjes zelf , Meewegen ...
+  <sub>src/data/keratosis-pilaris.ts:131</sub>
+- [ Schuren. De propjes zitten rond het haarzakje en niet aan de oppervlakte; je maakt alleen de roodheid erger
+  <sub>src/data/keratosis-pilaris.ts:134</sub>
+- [ Schuren. De propjes zitten rond het haarzakje en niet aan de oppervlakte; je maakt alleen de roodheid erger , Uitknijpen of pulken. Daar houd je donkere vlekjes en soms kuiltjes aan over, Een kuur met een eindpunt verkopen. Dit vraagt onderhoud en geen zes sessies, Beloven dat de huid glad word...
+  <sub>src/data/keratosis-pilaris.ts:137</sub>
+- Schuren. De propjes zitten rond het haarzakje en niet aan de oppervlakte; je maakt alleen de roodheid erger , Uitknijpen of pulken. Daar houd je donkere vlekjes en soms kuiltjes aan over, Een kuur met een eindpunt verkopen. Dit vraagt onderhoud en geen zes sessies, Beloven dat de huid glad wordt....
+  <sub>src/data/keratosis-pilaris.ts:138</sub>
+- Keratosis pilaris is grotendeels erfelijk en niet te genezen. Wat wij kunnen is de huid soepeler en de roodheid minder maken, met onderhoud erbij. Wie hier een reeks van zes tegenover zet verkoopt hoop en levert een teleurstelling.
+  <sub>src/data/keratosis-pilaris.ts:146</sub>
+- Genezen kan niet, maar bij veel mensen wordt het met de jaren vanzelf minder, vaak vanaf een jaar of dertig. In de tussentijd is het beeld wel te verzachten. Dat is geen mooi verhaal, en het is wel het eerlijke.
+  <sub>src/data/keratosis-pilaris.ts:159</sub>
+- Omdat de verhoorning rond het haarzakje zit en niet op de oppervlakte. Je schuurt dus over de bultjes heen in plaats van erin. Wat je wel bereikt is meer roodheid en een beschadigde barrière.
+  <sub>src/data/keratosis-pilaris.ts:164</sub>
+- Nee. Het is grotendeels erfelijk en het heeft niets te maken met hygiëne, voeding of hoe je je huid verzorgt. Dat is voor veel mensen de nuttigste zin op deze pagina.
+  <sub>src/data/keratosis-pilaris.ts:169</sub>
+- Koude lucht en binnenverwarming drogen de huid uit, en een drogere huid maakt de verhoorning zichtbaarder en ruwer. Bij bijna iedereen is het in de zomer minder. Dat is het seizoen en geen terugval.
+  <sub>src/data/keratosis-pilaris.ts:174</sub>
+
 **Inhoud: kringen** (8)
 
 - Bij uitrekken worden doorschijnende bloedvaatjes verder uit elkaar getrokken en verbleekt de kleur. Pigment zit in de huid zelf en verandert niet mee.
@@ -752,6 +783,35 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/moedervlekken.ts:162</sub>
 - Eén keer per maand is een veelgebruikt advies en vooral praktisch: vaak genoeg om verandering op te merken, zeldzaam genoeg om vol te houden. Vraag je huisarts wat in jouw geval verstandig is.
   <sub>src/data/moedervlekken.ts:167</sub>
+
+**Inhoud: onzuivere-huid** (13)
+
+- Geen mee-eter maar de normale inhoud van een werkende porie: talg met wat cellen. Iedereen heeft ze, en ze zijn binnen weken terug omdat ze horen terug te komen.
+  <sub>src/data/onzuivere-huid.ts:49</sub>
+- Een porie die is volgelopen en waarvan de inhoud aan de lucht is verkleurd. Het donker is geoxideerde talg en geen vuil; poetsen doet er niets aan.
+  <sub>src/data/onzuivere-huid.ts:62</sub>
+- Een volgelopen porie die dicht is gebleven, waardoor de inhoud niet verkleurt. Dit is het beeld dat mensen het langst zelf proberen op te lossen.
+  <sub>src/data/onzuivere-huid.ts:75</sub>
+- Dan gaat het niet meer om onzuiverheden maar om acne, en daar hoort een andere aanpak bij.
+  <sub>src/data/onzuivere-huid.ts:88</sub>
+- [ Eerst het onderscheid maken tussen normale talgfilamenten en echte verstopte poriën, De bovenlaag geleidelijk laten vernieuwen zodat volle poriën weer opengaan, Kijken wat je nu gebruikt, want een paar veelgebruikte producten houden het beeld in stand, Meewegen dat een vette huid niet uitgedroo...
+  <sub>src/data/onzuivere-huid.ts:129</sub>
+- [ Poriestrips en zuigapparaten. Ze halen talgfilamenten weg die binnen weken terug zijn, en rekken intussen de porie op
+  <sub>src/data/onzuivere-huid.ts:133</sub>
+- [ Poriestrips en zuigapparaten. Ze halen talgfilamenten weg die binnen weken terug zijn, en rekken intussen de porie op , Dagelijks scrubben. Je haalt de barrière weg en de huid reageert met meer talg, Alcoholtoners die je huid laten trekken. Een uitgedroogde huid maakt meer talg, niet minder
+  <sub>src/data/onzuivere-huid.ts:135</sub>
+- Poriestrips en zuigapparaten. Ze halen talgfilamenten weg die binnen weken terug zijn, en rekken intussen de porie op , Dagelijks scrubben. Je haalt de barrière weg en de huid reageert met meer talg, Alcoholtoners die je huid laten trekken. Een uitgedroogde huid maakt meer talg, niet minder , Zel...
+  <sub>src/data/onzuivere-huid.ts:137</sub>
+- Ze horen bij een werkende porie en ze komen terug, hoe grondig je ook te werk gaat. Wij verkopen daar geen reeks voor. Wat we wel doen is uitleggen waarom je neus er over drie weken weer zo uitziet, zodat je stopt met een gevecht dat niet te winnen is.
+  <sub>src/data/onzuivere-huid.ts:145</sub>
+- Omdat het in de meeste gevallen geen mee-eters zijn maar talgfilamenten. Die horen in een werkende porie thuis en vullen zich binnen enkele weken opnieuw. Dat is geen falen van je verzorging; het is hoe een porie werkt.
+  <sub>src/data/onzuivere-huid.ts:158</sub>
+- Ze halen er iets uit, en dat voelt bevredigend. Wat eruit komt is meestal normale porie-inhoud, die terugkomt, en het lostrekken rekt de porie-opening op. Dus: kortstondig zichtbaar effect, op de lange duur geen winst.
+  <sub>src/data/onzuivere-huid.ts:163</sub>
+- Nee, en dat onderscheid is niet cosmetisch. Bij onzuiverheden gaat het om verstopping zonder veel ontsteking; bij acne is de ontsteking het probleem. De aanpak en de volgorde zijn anders.
+  <sub>src/data/onzuivere-huid.ts:168</sub>
+- Bijna nooit. Wie een vette huid streng behandelt houdt een uitgedroogde huid over die meer talg maakt, en dan is het beeld na een maand slechter in plaats van beter.
+  <sub>src/data/onzuivere-huid.ts:173</sub>
 
 **Inhoud: ouderdomsvlekken** (16)
 
@@ -937,7 +997,7 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 **Inhoud: symptoomzoeker** (1)
 
 - Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag.
-  <sub>src/data/symptoomzoeker.ts:271</sub>
+  <sub>src/data/symptoomzoeker.ts:287</sub>
 
 **Inhoud: veroudering** (10)
 

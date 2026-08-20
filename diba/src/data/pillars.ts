@@ -35,6 +35,7 @@ export type Huidprobleem = {
 export const PILLARS: readonly Huidprobleem[] = [
   { slug: "acne", titel: "Acne: eerst begrijpen, dan *behandelen*" },
   { slug: "acne-littekens", titel: "Acnelittekens: eerst begrijpen, dan *behandelen*" },
+  { slug: "onzuivere-huid", titel: "Onzuivere huid: eerst begrijpen, dan *behandelen*" },
   { slug: "pigmentvlekken", titel: "Pigmentvlekken: eerst begrijpen, dan *behandelen*" },
   { slug: "rosacea", titel: "Rosacea en couperose: eerst begrijpen, dan *behandelen*" },
   { slug: "couperose", titel: "Couperose: eerst begrijpen, dan *behandelen*" },
@@ -45,6 +46,7 @@ export const PILLARS: readonly Huidprobleem[] = [
   { slug: "striae", titel: "Striae: eerst begrijpen, dan *behandelen*" },
   { slug: "porien", titel: "Grove poriën: eerst begrijpen, dan *behandelen*" },
   { slug: "ingegroeide-haren", titel: "Ingegroeide haren: eerst begrijpen, dan *behandelen*" },
+  { slug: "keratosis-pilaris", titel: "Keratosis pilaris: eerst begrijpen, dan *behandelen*" },
   { slug: "droge-huid", titel: "Droge huid: eerst begrijpen, dan *behandelen*" },
   { slug: "gevoelige-huid", titel: "Gevoelige huid: eerst begrijpen, dan *behandelen*" },
   { slug: "melasma", titel: "Melasma: eerst begrijpen, dan *behandelen*" },
