@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 307 regels.**
+**Totaal: 323 regels.**
 
 
 ## Voor Okan (17)
@@ -106,11 +106,11 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:113</sub>
+  <sub>src/app/sitemap.ts:114</sub>
 
-## Voor Rojda (290)
+## Voor Rojda (306)
 
-### MEDISCHE-CHECK-ROJDA · 290
+### MEDISCHE-CHECK-ROJDA · 306
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
@@ -140,6 +140,41 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/acne.ts:278</sub>
 - Dat zijn meestal geen littekens maar pigmentvlekken. Zonbescherming voorkomt dat ze donkerder worden en dat er nieuwe bij komen, maar het laat een vlek die er al zit niet verdwijnen; daar zijn behandelingen voor nodig. Zit er een kuiltje in de huid, dan is het wél een litteken en kijken we ernaar...
   <sub>src/data/acne.ts:283</sub>
+
+**Inhoud: acne-littekens** (16)
+
+- Zolang er nieuwe ontstekingen bij komen, komen er ook nieuwe plekken bij. Behandelen wat er al ligt terwijl de bron nog loopt is dweilen.
+  <sub>src/data/acne-littekens.ts:58</sub>
+- Geen litteken maar een vaatreactie: de ontsteking is weg, de doorbloeding is nog verhoogd. Dit is wat de meeste mensen bedoelen als ze acnelittekens zeggen.
+  <sub>src/data/acne-littekens.ts:73</sub>
+- Meestal wel, in weken tot maanden. Hoe lichter je huid, hoe langer het zichtbaar blijft.
+  <sub>src/data/acne-littekens.ts:77</sub>
+- Pigment dat na de ontsteking is achtergebleven. Ook dit is geen litteken: de huid is heel, alleen de kleur klopt niet. Komt vaker en heftiger voor bij een donkerder huidtype.
+  <sub>src/data/acne-littekens.ts:88</sub>
+- Deels, maar langzaam: maanden tot meer dan een jaar. Zonlicht maakt het elke keer opnieuw donkerder, dus zonder bescherming schiet het niet op.
+  <sub>src/data/acne-littekens.ts:92</sub>
+- Dit is wél littekenweefsel. Er is bij de ontsteking bindweefsel verloren gegaan en de huid is daar ingezakt. Kleur kan er los van staan; een putje kan gewoon huidkleurig zijn.
+  <sub>src/data/acne-littekens.ts:103</sub>
+- Herstel op gang brengen in het bindweefsel, met microneedling of laser, in een reeks over maanden. De vorm van het putje bepaalt wat er zin heeft.
+  <sub>src/data/acne-littekens.ts:105</sub>
+- [ Eerst vaststellen of het littekenweefsel is of kleur, want dat scheelt vaak een heel traject, Wachten tot de acne rustig is voordat er iets aan de littekens gebeurt, Zonbescherming, elke dag. Bij bruine vlekken is dit geen aanvulling maar de kern
+  <sub>src/data/acne-littekens.ts:144</sub>
+- [ Laseren of needlen in een huid met actieve ontstekingen. Dat verergert de acne en kan het litteken juist vastzetten
+  <sub>src/data/acne-littekens.ts:149</sub>
+- [ Laseren of needlen in een huid met actieve ontstekingen. Dat verergert de acne en kan het litteken juist vastzetten , Een pigmentvlek behandelen alsof het een litteken is. Het is een andere laag en een andere aanpak, Beloven dat putjes helemaal verdwijnen. Minder diep en minder zichtbaar is rea...
+  <sub>src/data/acne-littekens.ts:151</sub>
+- Laseren of needlen in een huid met actieve ontstekingen. Dat verergert de acne en kan het litteken juist vastzetten , Een pigmentvlek behandelen alsof het een litteken is. Het is een andere laag en een andere aanpak, Beloven dat putjes helemaal verdwijnen. Minder diep en minder zichtbaar is reali...
+  <sub>src/data/acne-littekens.ts:153</sub>
+- Komen er nog nieuwe ontstoken plekjes bij, dan behandelen we die eerst. Needlen of laseren in actieve acne verergert de ontsteking en kan het litteken vastzetten. Dat kost je maanden in plaats van dat het ze scheelt.
+  <sub>src/data/acne-littekens.ts:161</sub>
+- Met je vinger en met licht van opzij. Voel je een kuiltje of een randje, en zie je een schaduw als het licht schuin valt, dan is er weefsel verloren gegaan. Voelt het glad en zie je alleen kleur, dan is het rood of pigment en geen litteken.
+  <sub>src/data/acne-littekens.ts:174</sub>
+- Rode en bruine plekken deels wel, in maanden. Kuiltjes niet: die zitten er over jaren nog net zo. Dat onderscheid bepaalt of afwachten verstandig is of juist zonde van de tijd.
+  <sub>src/data/acne-littekens.ts:179</sub>
+- Er is geen vaste termijn; het gaat erom dat er geen nieuwe ontstekingen meer bij komen en dat de huid rustig is. Bij de meting kijken we daarnaar, en soms is het antwoord dat we over een paar maanden opnieuw kijken.
+  <sub>src/data/acne-littekens.ts:184</sub>
+- Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van meerdere sessies. Wie belooft dat je huid weer glad wordt, meet niet en heeft je huid niet gezien.
+  <sub>src/data/acne-littekens.ts:189</sub>
 
 **Inhoud: acne-zones** (5)
 
@@ -741,7 +776,7 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 **Inhoud: symptoomzoeker** (1)
 
 - Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag.
-  <sub>src/data/symptoomzoeker.ts:212</sub>
+  <sub>src/data/symptoomzoeker.ts:223</sub>
 
 **Inhoud: veroudering** (10)
 

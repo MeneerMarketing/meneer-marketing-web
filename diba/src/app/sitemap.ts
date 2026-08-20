@@ -34,6 +34,7 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   // pagina's hebben hun eigen inhoud. Ze blijven uit de sitemap tot Rojda de
   // medische inhoud heeft nagelopen en de prijzen erin staan.
   "/huidproblemen/acne",
+  "/huidproblemen/acne-littekens",
   "/huidproblemen/pigmentvlekken",
   "/huidproblemen/rosacea",
   "/huidproblemen/couperose",

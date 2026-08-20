@@ -118,6 +118,19 @@ export default function AcnePage() {
               De meeste mensen stellen deze afspraak twee jaar uit. Snappen we.
             </p>
 
+            {/* Kruisverwijzing naar wat er ná de acne overblijft. Wie hier komt voor de
+                plekken en niet voor de puistjes hoort dat meteen te lezen. */}
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Zit je vooral met wat er is achtergebleven? Dan begint het bij{" "}
+              <Link
+                href="/huidproblemen/acne-littekens"
+                className="text-[var(--g-700)] underline underline-offset-4"
+              >
+                acnelittekens
+              </Link>
+              , want dat is vaak helemaal geen litteken.
+            </p>
+
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Button href="/intake?topic=acne">Start je intake (4 min)</Button>
               <Button

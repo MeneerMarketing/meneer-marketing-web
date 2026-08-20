@@ -74,6 +74,17 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     kenmerken: ["puistjes", "rood", "glans", "bultjes"],
   },
   {
+    /* Staat naast acne en niet eronder. "Acnelittekens" is een eigen zoekterm en vaak
+       de eerste die iemand intikt, ook als hij nog actieve acne heeft; de pagina zelf
+       stuurt hem dan door. */
+    naam: "Acnelittekens",
+    pad: "/huidproblemen/acne-littekens",
+    zin: "Wat er na de puistjes achterbleef: kuiltjes, rood of pigment.",
+    eersteVraag: "Litteken of kleur?",
+    groep: "behandelen",
+    kenmerken: ["kuiltjes", "bruine-vlek", "rood"],
+  },
+  {
     naam: "Rosacea",
     pad: "/huidproblemen/rosacea",
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",
