@@ -59,7 +59,7 @@ import {
 export const metadata: Metadata = {
   title: "Couperose behandelen in Rotterdam",
   description:
-    "Zichtbare adertjes op je wangen of naast je neus. Met de drukproef zie je zelf of het couperose is of een rode gloed, en dat bepaalt wat helpt.",
+    "Rode vaatjes op je wangen of naast je neus. Met de drukproef zie je zelf of het couperose is of een rode gloed, en dat bepaalt wat helpt.",
   ...NOG_IN_AANBOUW,
 };
 
@@ -101,10 +101,7 @@ const COUPEROSE_OF_ROSACEA = [
     "Opvlammen",
     "Bij rosacea komt en gaat het in aanvallen. Losse vaatjes staan er elke dag hetzelfde bij.",
   ],
-  [
-    "Branderig gevoel",
-    "Hoort bij rosacea. Een verwijd vaatje voel je niet.",
-  ],
+  ["Branderig gevoel", "Hoort bij rosacea. Een verwijd vaatje voel je niet."],
   [
     "Bultjes",
     "Rode bultjes zonder mee-eters wijzen op rosacea, en daar hoort een arts bij.",
@@ -151,9 +148,9 @@ export default function CouperosePage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Zichtbare adertjes op je wangen of naast je neus heten couperose.
-              Een rode waas zonder losse lijntjes is iets anders, en vraagt om
-              een andere aanpak. Met je eigen vinger zie je binnen twee seconden
+              Rode vaatjes op je wangen of naast je neus heten couperose. Een
+              rode waas zonder losse lijntjes is iets anders, en vraagt om een
+              andere aanpak. Met je eigen vinger zie je binnen twee seconden
               welke van de twee je hebt.
             </p>
 
