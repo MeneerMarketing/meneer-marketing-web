@@ -36,6 +36,7 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   "/huidproblemen/acne",
   "/huidproblemen/pigmentvlekken",
   "/huidproblemen/rosacea",
+  "/huidproblemen/couperose",
   "/huidproblemen/littekens",
   "/huidproblemen/huidveroudering",
   "/huidproblemen/porien",

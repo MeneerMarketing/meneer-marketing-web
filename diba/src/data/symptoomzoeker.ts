@@ -26,6 +26,7 @@ export const KENMERKEN: readonly Kenmerk[] = [
   { id: "rood", tekst: "Rood of rode plekken" },
   { id: "puistjes", tekst: "Puistjes of mee-eters" },
   { id: "bultjes", tekst: "Bultjes zonder puistje" },
+  { id: "adertjes", tekst: "Zichtbare adertjes of rode lijntjes" },
   { id: "jeuk", tekst: "Het jeukt" },
   { id: "schilfers", tekst: "Schilfers of vellen" },
   { id: "droog", tekst: "Droog of trekkerig" },
@@ -78,7 +79,18 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",
     eersteVraag: "Wat zet het aan?",
     groep: "behandelen",
-    kenmerken: ["rood", "bultjes", "prikt"],
+    kenmerken: ["rood", "bultjes", "prikt", "adertjes"],
+  },
+  {
+    /* Staat naast rosacea en niet eronder verstopt. Wie de losse lijntjes zoekt
+       gebruikt dit woord en niet dat andere; wie meer herkent dan vaatjes wordt op de
+       couperosepagina zelf doorgestuurd. */
+    naam: "Couperose",
+    pad: "/huidproblemen/couperose",
+    zin: "Zichtbare adertjes die blijven staan als je erop drukt.",
+    eersteVraag: "Losse vaatjes of een gloed?",
+    groep: "behandelen",
+    kenmerken: ["rood", "adertjes"],
   },
   {
     naam: "Pigmentvlekken",

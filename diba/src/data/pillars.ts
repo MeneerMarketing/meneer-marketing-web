@@ -36,6 +36,7 @@ export const PILLARS: readonly Huidprobleem[] = [
   { slug: "acne", titel: "Acne: eerst begrijpen, dan *behandelen*" },
   { slug: "pigmentvlekken", titel: "Pigmentvlekken: eerst begrijpen, dan *behandelen*" },
   { slug: "rosacea", titel: "Rosacea en couperose: eerst begrijpen, dan *behandelen*" },
+  { slug: "couperose", titel: "Couperose: eerst begrijpen, dan *behandelen*" },
   { slug: "huidveroudering", titel: "Huidveroudering: eerst begrijpen, dan *behandelen*" },
   { slug: "littekens", titel: "Littekens en striae: eerst begrijpen, dan *behandelen*" },
   { slug: "striae", titel: "Striae: eerst begrijpen, dan *behandelen*" },

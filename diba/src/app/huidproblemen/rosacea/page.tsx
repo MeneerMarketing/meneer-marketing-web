@@ -147,6 +147,21 @@ export default function RosaceaPage() {
               En je hoeft hier niets uit te leggen over hoe snel je rood wordt.
             </p>
 
+            {/* De andere kant van de kruisverwijzing. Zonder dit is de couperosepagina
+                een doodlopende zijtak, en dan concurreren de twee wel met elkaar in
+                plaats van elkaar aan te vullen. */}
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Zie je vooral losse adertjes en geen opvlammingen? Dan gaat het
+              waarschijnlijk om{" "}
+              <Link
+                href="/huidproblemen/couperose"
+                className="text-[var(--g-700)] underline underline-offset-4"
+              >
+                couperose
+              </Link>
+              , en daar staat de drukproef waarmee je dat zelf nagaat.
+            </p>
+
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Button href="#triggers">Sorteer jouw triggers</Button>
               <Button
