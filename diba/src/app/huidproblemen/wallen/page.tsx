@@ -1,0 +1,259 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import PillarNav from "@/components/pillar/PillarNav";
+import {
+  PillarCta,
+  PillarFaq,
+  SectieKop,
+  WelNiet,
+  WijZeggenNee,
+} from "@/components/pillar/PillarSecties";
+import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
+import Button from "@/components/ui/Button";
+import Label from "@/components/ui/Label";
+import ProofBar from "@/components/ui/ProofBar";
+import {
+  OCHTENDTEST,
+  WAL_OORZAKEN,
+  WALLEN_FAQ,
+  WALLEN_WEL_NIET,
+  WALLEN_WIJ_DOEN_NIET,
+} from "@/data/wallen";
+import { publicCopy } from "@/lib/copy-flags";
+import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
+import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
+
+/**
+ * Wallen — de pagina die de meeste bezoekers doorstuurt.
+ *
+ * Waarom deze naast /huidproblemen/donkere-kringen staat, en waarom hij eerlijk moet zijn
+ * over wat een huidkliniek hier niet kan, staat in `src/data/wallen.ts`.
+ *
+ * DE OCHTENDTEST IS DE UITBLINKER.
+ *
+ * Twee foto's, dezelfde plek, twaalf uur ertussen. Verandert het, dan is het vocht en valt
+ * er iets te doen. Verandert het niet, dan is het vet of schaduw en ligt het antwoord
+ * buiten deze kliniek. Dat is geen truc maar de enige test die het onderscheid maakt
+ * zonder dat er iemand naar je kijkt.
+ *
+ * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
+ */
+
+export const metadata: Metadata = {
+  title: "Wallen onder de ogen: vocht, vet of schaduw",
+  description:
+    "Wallen hebben drie oorzaken en maar een daarvan is met een huidbehandeling aan te pakken. Met de ochtendtest weet je zelf welke je hebt.",
+  ...NOG_IN_AANBOUW,
+};
+
+const PAD = "/huidproblemen/wallen";
+
+const ANKERS = [
+  { id: "test", label: "De ochtendtest" },
+  { id: "welke", label: "Vocht, vet of schaduw" },
+  { id: "wel-niet", label: "Wat helpt" },
+  { id: "nee", label: "Waar wij nee zeggen" },
+  { id: "vragen", label: "Vragen" },
+] as const;
+
+const SOORTEN: readonly SoortOptie[] = WAL_OORZAKEN.map((o) => ({
+  id: o.id,
+  naam: o.naam,
+  klanttaal: o.klanttaal,
+  vakterm: o.vakterm,
+  velden: [
+    ["Waar je het zelf aan herkent", o.zelfcheck],
+    ["Wat het is", o.watHetIs],
+    ["Wat wij doen", o.watWijDoen],
+  ] as const,
+  uitgelicht: {
+    label: o.binnenBereik ? "Hier zijn wij aan zet" : "Hier zijn wij het niet",
+    tekst: o.binnenBereik
+      ? "Van de drie oorzaken is dit de enige die met een huidbehandeling te beïnvloeden is, en de enige die van dag tot dag verandert."
+      : "Een huidkliniek verandert hier niets aan. Wij zeggen dat liever nu dan na een reeks, ook als je hier kwam om iets te boeken.",
+  },
+}));
+
+export default function WallenPage() {
+  return (
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+      <SchemaMarkup
+        data={breadcrumbSchema([
+          { name: "Home", url: DIBA_SITE_URL },
+          { name: "Huidproblemen", url: `${DIBA_SITE_URL}/huidproblemen` },
+          { name: "Wallen", url: `${DIBA_SITE_URL}${PAD}` },
+        ])}
+      />
+
+      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="py-14 lg:py-20">
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-[var(--g-700)]">
+                Home
+              </Link>
+              <span aria-hidden="true">/</span>
+              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+                Huidproblemen
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--t-muted)]">Wallen</span>
+            </nav>
+
+            <h1 className="diba-display-l mt-6">
+              Vocht zakt weg.
+              <br />
+              <span className="diba-accent">Vet blijft staan.</span>
+            </h1>
+
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Wallen hebben drie oorzaken: vocht, uitgezakt vet en schaduw door
+              een groef. Ze zien er hetzelfde uit en vragen om totaal
+              verschillende dingen. Bij precies een ervan kan een huidkliniek
+              iets betekenen.
+            </p>
+
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Welke je hebt, weet je met twee foto&apos;s en een dag geduld.
+            </p>
+
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <Button href="#test">Doe de ochtendtest</Button>
+              <Button
+                href={DIBA_WHATSAPP_URL}
+                variant="ghost"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Liever eerst een vraag stellen
+              </Button>
+            </div>
+          </div>
+
+          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+            <Image
+              src="/images/shoot/beh-led-masker.jpg"
+              alt="Client met LED-masker tijdens een rustige behandeling"
+              fill
+              priority
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
+      </section>
+
+      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+
+      <PillarNav ankers={ANKERS} />
+
+      {/* ── De ochtendtest ─────────────────────────────────────────────── */}
+      <section
+        id="test"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="De ochtendtest"
+            raster="gelijk"
+            kop="Twee foto's,"
+            accent="twaalf uur ertussen."
+            intro="Dit is een herkenningshulp en geen diagnose. Maar het is wel de enige test die het onderscheid maakt zonder dat iemand naar je hoeft te kijken, en hij kost je niets dan een dag."
+          />
+
+          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+            {OCHTENDTEST.map((stap, i) => (
+              <li
+                key={stap.kop}
+                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <span className="diba-label text-[var(--g-700)]">
+                  Stap {i + 1}
+                </span>
+                <h3 className="diba-card-title mt-3">{stap.kop}</h3>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(stap.tekst)}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* ── Vocht, vet of schaduw ──────────────────────────────────────── */}
+      <section
+        id="welke"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="Drie oorzaken"
+            kop="En bij twee ervan"
+            accent="zijn wij niet de juiste."
+            intro="Dat is een ongebruikelijk begin voor een pagina van een kliniek. Het is ook de reden dat je hier geen reeks krijgt aangeboden voor iets dat er niet mee weggaat."
+          />
+          <SoortKiezer
+            opties={SOORTEN}
+            ctaHrefPatroon="/intake?topic=wallen&oorzaak={id}"
+            ctaLabel="Laat dit bekijken"
+            hint="Twijfel je tussen twee? Dan kijken we samen."
+          />
+
+          {/* Wallen en donkere kringen worden voortdurend door elkaar gehaald. Wie hier
+              op de verkeerde pagina is beland moet dat kunnen zien en weg kunnen. */}
+          <div className="mt-10 rounded-[var(--r-md)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9">
+            <Label opDonker>Gaat het bij jou om kleur?</Label>
+            <p className="diba-card-title-lg mt-4 max-w-[34ch]">
+              Dan zoek je geen wal maar een kring.
+            </p>
+            <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Een wal is volume: er zit iets. Een donkere kring is kleur:
+              pigment of vaatjes die doorschijnen. Ze komen vaak samen voor en
+              vragen om verschillende dingen.
+            </p>
+            <div className="mt-7">
+              <Button
+                href="/huidproblemen/donkere-kringen"
+                variant="primair-op-donker"
+              >
+                Naar donkere kringen
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <WelNiet
+        wel={WALLEN_WEL_NIET.wel}
+        niet={WALLEN_WEL_NIET.niet}
+        intro="De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan als hoe voorzichtig het moet."
+      />
+
+      <WijZeggenNee
+        kop="Twee keer nee,"
+        accent="en allebei kosten ze ons een klant."
+        intro="Dit zijn de gevallen waarin wij iemand wegsturen die met geld in de hand binnenkomt. Liever dat, dan een reeks die niets verandert."
+        punten={WALLEN_WIJ_DOEN_NIET}
+      />
+
+      <PillarFaq items={WALLEN_FAQ} />
+
+      <PillarCta
+        kop="Eerst kijken wat het is."
+        accent="Dan pas iets doen."
+        tekst="In Behandeling Nul stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen."
+        topic="wallen"
+        whatsappHref={DIBA_WHATSAPP_URL}
+      />
+    </main>
+  );
+}

@@ -49,9 +49,9 @@ import {
  */
 
 export const metadata: Metadata = {
-  title: "Acnelittekens behandelen in Rotterdam",
+  title: "Acnelittekens en acnevlekjes behandelen in Rotterdam",
   description:
-    "Wat na acne achterblijft is vaak geen litteken maar kleur. Met je vinger en schuin licht stel je zelf vast wat je hebt, en dat bepaalt wat helpt.",
+    "Acnevlekjes zijn vaak geen litteken maar kleur. Met je vinger en schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.",
   ...NOG_IN_AANBOUW,
 };
 
@@ -122,8 +122,8 @@ export default function AcneLittekensPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wat er na de puistjes achterbleef heet in de volksmond
-              acnelittekens, en dat is het in de meeste gevallen niet. Een rood
+              Wat er na de puistjes achterbleef heet acnelittekens of
+              acnevlekjes, en meestal is het geen van beide letterlijk. Een rood
               vlekje, een bruine vlek en een kuiltje zien er op een foto bijna
               hetzelfde uit. Ze vragen om drie verschillende behandelingen, en
               twee ervan trekken deels vanzelf weg.

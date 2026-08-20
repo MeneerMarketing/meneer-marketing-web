@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 323 regels.**
+**Totaal: 378 regels.**
 
 
 ## Voor Okan (17)
@@ -106,11 +106,11 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:114</sub>
+  <sub>src/app/sitemap.ts:118</sub>
 
-## Voor Rojda (306)
+## Voor Rojda (361)
 
-### MEDISCHE-CHECK-ROJDA · 306
+### MEDISCHE-CHECK-ROJDA · 361
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
@@ -511,6 +511,39 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Bij sommige mensen wel en bij anderen niet, en verbranden maakt het altijd erger. Lichttherapie bestaat als behandeling maar die hoort bij de dermatoloog en niet bij een huidkliniek.
   <sub>src/data/eczeem.ts:164</sub>
 
+**Inhoud: gerstekorrels** (15)
+
+- Een piepklein cystje met keratine, ingesloten onder de opperhuid. Er zit geen opening naartoe, en dat is precies waarom knijpen niet werkt.
+  <sub>src/data/gerstekorrels.ts:47</sub>
+- Openen met een steriele naald en de inhoud eruit lichten. Dat duurt per bolletje enkele seconden en er blijft niets van te zien.
+  <sub>src/data/gerstekorrels.ts:49</sub>
+- Een ontstoken kliertje aan de ooglidrand. Dit is wat een gerstekorrel medisch gezien is, en het is iets heel anders dan een wit korreltje.
+  <sub>src/data/gerstekorrels.ts:60</sub>
+- Niets. Dit hoort bij je huisarts en gaat vaak vanzelf over met warme kompressen. Wij prikken hier niet in.
+  <sub>src/data/gerstekorrels.ts:62</sub>
+- Een verstopt talgkliertje in het ooglid dat is ingekapseld. Anders dan een strontje doet het meestal geen pijn, en het blijft langer zitten.
+  <sub>src/data/gerstekorrels.ts:73</sub>
+- Ook hier niets. Dit hoort bij de huisarts of oogarts, die zo nodig doorverwijst.
+  <sub>src/data/gerstekorrels.ts:75</sub>
+- Geen milium maar een verstopte porie die wél openstaat. Het donker is geoxideerd talg en geen vuil.
+  <sub>src/data/gerstekorrels.ts:86</sub>
+- [ Eerst vaststellen of het een wit korreltje is of een ontsteking, want dat scheelt de huisarts of ons, Milia openen met een steriele naald, per stuk, in een behandeling van minuten
+  <sub>src/data/gerstekorrels.ts:96</sub>
+- [ Eerst vaststellen of het een wit korreltje is of een ontsteking, want dat scheelt de huisarts of ons, Milia openen met een steriele naald, per stuk, in een behandeling van minuten , Kijken of er een aanleiding is: te rijke oogcrème, zonschade, of iets dat de huid heeft beschadigd
+  <sub>src/data/gerstekorrels.ts:97</sub>
+- [ Prikken in iets dat ontstoken is. Rond het oog is dat een risico dat nergens voor nodig is
+  <sub>src/data/gerstekorrels.ts:101</sub>
+- Een ontstoken kliertje aan de ooglidrand hoort bij de huisarts, en gaat vaak vanzelf over. Wij prikken daar niet in; de kans op verergering is klein maar de plek is te belangrijk om die kans te nemen.
+  <sub>src/data/gerstekorrels.ts:112</sub>
+- Omdat er geen opening naartoe is. Een mee-eter heeft een poriegang naar buiten; een milium zit volledig ingesloten onder een laagje huid. Knijpen beschadigt daarom alleen het weefsel eromheen.
+  <sub>src/data/gerstekorrels.ts:125</sub>
+- Je voelt een prikje per bolletje, vergelijkbaar met een splinter eruit halen. Er is geen verdoving nodig en je kunt daarna gewoon weg.
+  <sub>src/data/gerstekorrels.ts:130</sub>
+- De behandelde bolletjes niet. Wel kunnen er nieuwe ontstaan, en dan kijken we of er een aanleiding is: bij sommige mensen is dat een te rijke oogcrème, bij anderen jarenlange zonschade.
+  <sub>src/data/gerstekorrels.ts:135</sub>
+- Meestal alles wat er zit, in een afspraak. Zijn het er veel, dan spreiden we het soms om de huid rust te geven. Dat hoor je vooraf en niet halverwege.
+  <sub>src/data/gerstekorrels.ts:140</sub>
+
 **Inhoud: gevoelige-huid** (4)
 
 - Bouw af voordat je iets nieuws probeert, en zeker voordat je een behandeling boekt. Op een kapotte barrière reageert je huid feller en levert dezelfde behandeling minder op.
@@ -656,6 +689,41 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Eén keer per maand is een veelgebruikt advies en vooral praktisch: vaak genoeg om verandering op te merken, zeldzaam genoeg om vol te houden. Vraag je huisarts wat in jouw geval verstandig is.
   <sub>src/data/moedervlekken.ts:167</sub>
 
+**Inhoud: ouderdomsvlekken** (16)
+
+- Pigment dat zich na jaren zonblootstelling op een plek heeft opgehoopt. Onschuldig, en het meest voorkomende beeld op deze pagina.
+  <sub>src/data/ouderdomsvlekken.ts:48</sub>
+- Een goedaardige woekering van huidcellen. Ondanks het uiterlijk heeft dit niets met zonschade te maken en het is ook geen moedervlek.
+  <sub>src/data/ouderdomsvlekken.ts:61</sub>
+- Hier doet licht niets: het pigment zit in weefsel dat boven de huid uitsteekt. Verwijderen kan wel, maar dat gebeurt eerst na beoordeling.
+  <sub>src/data/ouderdomsvlekken.ts:63</sub>
+- Een ander mechanisme dan een zonnevlek: hormonaal aangestuurd en veel gevoeliger voor licht en warmte. Verkeerd behandelen maakt het aantoonbaar erger.
+  <sub>src/data/ouderdomsvlekken.ts:74</sub>
+- Dat weten wij niet, en dat is precies het punt. Alles wat verandert hoort beoordeeld te worden voordat er iets mee gebeurt.
+  <sub>src/data/ouderdomsvlekken.ts:87</sub>
+- [ Eerst beoordelen of een plek onschuldig is, en bij twijfel doorsturen in plaats van behandelen, Een nulmeting onder UV-licht, want daar zie je pigment dat er al zit en nog niet zichtbaar is, Zonbescherming, elke dag en het hele jaar. Zonder dat komen de vlekken terug en werkt de rest niet
+  <sub>src/data/ouderdomsvlekken.ts:98</sub>
+- [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden
+  <sub>src/data/ouderdomsvlekken.ts:103</sub>
+- [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter
+  <sub>src/data/ouderdomsvlekken.ts:104</sub>
+- [ Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter , Bleekcrèmes met hydrochinon op eigen houtje. Dat hoort onder begeleiding
+  <sub>src/data/ouderdomsvlekken.ts:105</sub>
+- Alles wat bruin is wegbranden. Een plek die verandert hoort eerst beoordeeld te worden , Melasma behandelen alsof het een zonnevlek is. Dat maakt het erger en niet beter , Bleekcrèmes met hydrochinon op eigen houtje. Dat hoort onder begeleiding , Behandelen in de zomer zonder afspraken over zon. ...
+  <sub>src/data/ouderdomsvlekken.ts:107</sub>
+- Groeit iets, verschiet het van kleur, of heeft het een rafelige rand? Dan gaat het eerst naar de huisarts. Wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen, en dat is een fout die niet te herstellen is.
+  <sub>src/data/ouderdomsvlekken.ts:115</sub>
+- Ga je binnen een paar weken naar de zon of op wintersport, dan starten we niet. Dat is geen formaliteit: pigment komt na blootstelling terug en dan heb je voor niets betaald.
+  <sub>src/data/ouderdomsvlekken.ts:120</sub>
+- Een gewone zonnevlek is onschuldig. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is de eerste vraag hier niet hoe je ervan afkomt maar of het is wat je denkt.
+  <sub>src/data/ouderdomsvlekken.ts:128</sub>
+- De behandelde vlek komt niet terug, maar er kunnen nieuwe bij komen zolang je huid zon blijft vangen. Dat is de reden dat zonbescherming hier geen advies achteraf is maar onderdeel van de behandeling.
+  <sub>src/data/ouderdomsvlekken.ts:133</sub>
+- Omdat pigment dieper in de huid begint dan waar je het ziet. De meting maakt zichtbaar wat er al ligt, en dat is soms confronterend. Het is ook nuttig: het verklaart waarom er zonder bescherming steeds nieuwe bij lijken te komen.
+  <sub>src/data/ouderdomsvlekken.ts:138</sub>
+- Ja, en dat is vaak de plek waar mensen het het eerst storend vinden. De huid daar is dunner en herstelt langzamer, dus we gaan er voorzichtiger te werk dan in het gezicht.
+  <sub>src/data/ouderdomsvlekken.ts:143</sub>
+
 **Inhoud: pigment** (9)
 
 - Eerste terugkeer van vlekken die in de winter waren weggetrokken.
@@ -714,6 +782,35 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/psoriasis.ts:128</sub>
 - Dat kan, en het is het onderdeel waarmee je niet moet wachten. Ochtendstijfheid die langer dan een halfuur duurt hoort besproken te worden, ook als je huidplekken klein zijn.
   <sub>src/data/psoriasis.ts:133</sub>
+
+**Inhoud: rimpels** (13)
+
+- Geen rimpel maar een huid met te weinig vocht. De bovenste laag ligt dan niet glad en vangt licht in kleine streepjes.
+  <sub>src/data/rimpels.ts:51</sub>
+- Een vouw die ontstaat doordat een spier de huid samentrekt. De huid zelf is nog intact.
+  <sub>src/data/rimpels.ts:64</sub>
+- De huid heeft op die plek collageen en elasticiteit verloren en vouwt niet meer terug. Dit is waar een huidbehandeling werkt.
+  <sub>src/data/rimpels.ts:77</sub>
+- Niet een lijn maar de hele structuur die meegeeft: minder elasticiteit, minder steun, en zwaartekracht die zijn werk doet.
+  <sub>src/data/rimpels.ts:90</sub>
+- Aanspannen van de diepere lagen met laser, in een reeks. Wat losgelaten huid is wordt hier niet vastgezet; dat is chirurgie.
+  <sub>src/data/rimpels.ts:92</sub>
+- [ Eerst de beweegtest, want een dynamische lijn en een statische lijn vragen om iets anders, Collageenopbouw op gang brengen, in een reeks over maanden en niet in een sessie, Zonbescherming, elke dag. Dit is verreweg de grootste factor in hoe snel er nieuwe lijnen bij komen
+  <sub>src/data/rimpels.ts:101</sub>
+- [ Injectables. Wij werken er niet mee, en voor sommige lijnen is dat juist wel de logische route, Beloven dat lijnen verdwijnen. Minder diep en minder zichtbaar is realistisch
+  <sub>src/data/rimpels.ts:107</sub>
+- [ Injectables. Wij werken er niet mee, en voor sommige lijnen is dat juist wel de logische route, Beloven dat lijnen verdwijnen. Minder diep en minder zichtbaar is realistisch , Een reeks starten voor lijntjes die door droogte komen. Die zijn met verzorging weg, Losgelaten huid behandelen alsof h...
+  <sub>src/data/rimpels.ts:109</sub>
+- Injectables. Wij werken er niet mee, en voor sommige lijnen is dat juist wel de logische route, Beloven dat lijnen verdwijnen. Minder diep en minder zichtbaar is realistisch , Een reeks starten voor lijntjes die door droogte komen. Die zijn met verzorging weg, Losgelaten huid behandelen alsof het...
+  <sub>src/data/rimpels.ts:110</sub>
+- Botox en fillers horen niet bij wat wij doen. Bij een zuivere mimieklijn is dat vaak wél het antwoord, en dan zeggen we dat in plaats van je iets anders aan te bieden dat minder past.
+  <sub>src/data/rimpels.ts:118</sub>
+- Kijk een week lang op verschillende momenten. Een droogtelijntje verandert met de dag, het seizoen en je verzorging; een echte rimpel staat er elke ochtend hetzelfde bij.
+  <sub>src/data/rimpels.ts:131</sub>
+- Er is geen leeftijd. Wat er wel toe doet is of er iets te winnen valt: bij een huid die nog stevig is levert een reeks weinig op, en dan is zonbescherming de hele behandeling.
+  <sub>src/data/rimpels.ts:141</sub>
+- Collageenopbouw is een kwestie van maanden en niet van weken. Daarom meten we vooraf: over die termijn is je eigen indruk geen betrouwbare maat.
+  <sub>src/data/rimpels.ts:146</sub>
 
 **Inhoud: rosacea** (13)
 
@@ -776,7 +873,7 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 **Inhoud: symptoomzoeker** (1)
 
 - Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag.
-  <sub>src/data/symptoomzoeker.ts:223</sub>
+  <sub>src/data/symptoomzoeker.ts:255</sub>
 
 **Inhoud: veroudering** (10)
 
@@ -800,3 +897,28 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/veroudering.ts:261</sub>
 - Ja, maar anders. Een donkere huid vertoont minder snel lijntjes en meer pigmentverschuiving, en reageert feller op te agressieve behandeling. De instellingen en de volgorde zijn daarom anders.
   <sub>src/data/veroudering.ts:284</sub>
+
+**Inhoud: wallen** (11)
+
+- Vocht dat zich s nachts ophoopt in het losse weefsel onder je ogen en overdag wegzakt. Dit is de enige van de drie die van dag tot dag verandert.
+  <sub>src/data/wallen.ts:50</sub>
+- Het vetkussentje achter je oog duwt naar voren doordat het membraan dat het op zijn plek houdt verslapt. Er zit dan niets extras; het staat alleen op een andere plek.
+  <sub>src/data/wallen.ts:63</sub>
+- Geen wal en geen kring, maar een dal. Door volumeverlies aan de rand van je oogkas valt er schaduw, en die lees je als donker.
+  <sub>src/data/wallen.ts:76</sub>
+- [ Eerst vaststellen of het vocht, vet of schaduw is, want twee daarvan lossen we hier niet op, Bij vocht: afvoer stimuleren en de huid rond het oog steviger maken, in een reeks, Zonbescherming rond de ogen, want een dunnere huid laat alles eronder beter zien
+  <sub>src/data/wallen.ts:108</sub>
+- [ Eerst vaststellen of het vocht, vet of schaduw is, want twee daarvan lossen we hier niet op, Bij vocht: afvoer stimuleren en de huid rond het oog steviger maken, in een reeks, Zonbescherming rond de ogen, want een dunnere huid laat alles eronder beter zien , Meewegen wat er verder speelt: slaap...
+  <sub>src/data/wallen.ts:109</sub>
+- [ Fillers onder het oog. Dat doen wij niet, en het is bij een echte wal ook zelden de oplossing, Agressieve behandelingen op de dunste huid van je gezicht
+  <sub>src/data/wallen.ts:114</sub>
+- Zit de bolling er s ochtends en s avonds hetzelfde bij, dan gaat het om het vetkussen achter je oog. Daar is een ingreep voor, en die hoort bij een cosmetisch arts of oogarts. Wij zouden je een reeks verkopen die niets verandert.
+  <sub>src/data/wallen.ts:124</sub>
+- Wij werken niet met injectables in dit gebied. Dat is een keuze en geen tekort: het is een lastige plek waar te veel of te ondiep spuiten jarenlang zichtbaar blijft.
+  <sub>src/data/wallen.ts:129</sub>
+- Een wal is volume: er zit iets, of het nu vocht of vet is. Een donkere kring is kleur: pigment of doorschijnende vaatjes in een dunne huid. Ze komen vaak samen voor en vragen om verschillende dingen. Gaat het bij jou vooral om kleur, lees dan verder op de pagina over donkere kringen.
+  <sub>src/data/wallen.ts:137</sub>
+- Bij vocht scheelt het, net als minder zout en minder alcohol voor het slapen. Bij vet of schaduw verandert er niets van, hoe goed je ook slaapt. Dat is precies waarom we eerst willen weten wat je hebt.
+  <sub>src/data/wallen.ts:142</sub>
+- Met je hoofd iets hoger slapen en koelen in de ochtend helpt tegen vocht, tijdelijk. Wrijven in je ogen is het enige dat je echt moet laten: de huid daar is de dunste van je lichaam en rekt makkelijk op.
+  <sub>src/data/wallen.ts:147</sub>
