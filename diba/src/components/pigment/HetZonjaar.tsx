@@ -66,58 +66,84 @@ export default function HetZonjaar() {
     <div className="mt-12">
       <div className="rounded-[var(--r-md)] bg-white p-5 sm:p-8">
         {/* ── De staven ── */}
-        <div
-          role="tablist"
-          aria-label="Maanden van het jaar, met de UV-belasting in Nederland"
-          className="flex items-end gap-1.5 sm:gap-2.5"
-        >
-          {ZONJAAR.map((m, i) => {
-            const gekozen = i === actief;
-            const isNu = i === huidigeMaand;
-            return (
-              <button
-                key={m.naam}
-                role="tab"
-                type="button"
-                aria-selected={gekozen}
-                aria-controls="zonjaar-paneel"
-                aria-label={`${m.naam}, UV-index ${m.uv}. ${ADVIES_LABEL[m.start]}`}
-                onClick={() => setGekozen(i)}
-                onMouseEnter={() => setGekozen(i)}
-                onFocus={() => setGekozen(i)}
-                className="group flex flex-1 flex-col items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-              >
-                {/* "Nu"-markering, alleen boven de staaf van déze maand. De hoogte staat
+
+        {/* Schuifbaar op een telefoon, en dat is een reparatie.
+
+            Twaalf maanden naast elkaar hebben minstens driehonderdvijftig pixels nodig: elke
+            balk is zo breed als zijn eigen naam en dat is er zesentwintig. In de kaart is
+            tweehonderdvijfennegentig beschikbaar. Het gevolg was dat NOV en DEC gewoon
+            buiten beeld vielen, zonder scrollbalk en zonder dat de pagina opzij ging: twee
+            maanden die niet bestonden als je op een telefoon keek. En laat december nou
+            precies de maand zijn waarin je een pigmentbehandeling zou moeten beginnen.
+
+            Kleiner maken lost het niet op. Zelfs met alle balken op de kleinst mogelijke maat
+            komt het totaal boven de ruimte uit; er is geen verdeling die past.
+
+            Dus schuiven. De negatieve marge trekt het schuifvlak tot de rand van de kaart,
+            zodat de laatste balk half in beeld staat en je ziet dat er meer is. Vanaf sm is
+            er ruimte genoeg en gedraagt het zich weer als een gewone rij. */}
+        <div className="-mx-5 overflow-x-auto px-5 pb-1 sm:mx-0 sm:overflow-visible sm:px-0 sm:pb-0">
+          <div
+            role="tablist"
+            aria-label="Maanden van het jaar, met de UV-belasting in Nederland"
+            /* De balken blijven op een telefoon onder de vierentwintig pixels uit WCAG 2.5.8.
+             Dat is hier geen slordigheid maar de voorstelling zelf: een maand die smaller
+             wordt getekend dan een andere maand is een verkeerde grafiek. De richtlijn kent
+             daar zijn eigen uitzondering voor ("Essential"), en dit attribuut zegt dat tegen
+             scripts/controleer-mobiel.mjs zonder de controle elders uit te zetten. */
+            data-essentiele-maat=""
+            className="flex min-w-max items-end gap-1.5 sm:min-w-0 sm:gap-2.5"
+          >
+            {ZONJAAR.map((m, i) => {
+              const gekozen = i === actief;
+              const isNu = i === huidigeMaand;
+              return (
+                <button
+                  key={m.naam}
+                  role="tab"
+                  type="button"
+                  aria-selected={gekozen}
+                  aria-controls="zonjaar-paneel"
+                  aria-label={`${m.naam}, UV-index ${m.uv}. ${ADVIES_LABEL[m.start]}`}
+                  onClick={() => setGekozen(i)}
+                  onMouseEnter={() => setGekozen(i)}
+                  onFocus={() => setGekozen(i)}
+                  className="group flex flex-1 flex-col items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                >
+                  {/* "Nu"-markering, alleen boven de staaf van déze maand. De hoogte staat
                     vast zodat de staven niet verschuiven; de tekst staat er niet twaalf
                     keer onzichtbaar in, want dan leest een screenreader hem twaalf keer. */}
-                <span className="mb-1.5 h-[15px]" aria-hidden={!isNu}>
-                  {isNu ? (
-                    <span className="diba-label whitespace-nowrap text-[var(--t-strong)]">
-                      Nu
-                    </span>
-                  ) : null}
-                </span>
+                  <span className="mb-1.5 h-[15px]" aria-hidden={!isNu}>
+                    {isNu ? (
+                      <span className="diba-label whitespace-nowrap text-[var(--t-strong)]">
+                        Nu
+                      </span>
+                    ) : null}
+                  </span>
 
-                <span
-                  className="w-full rounded-t-[6px] transition-all duration-400 ease-[var(--ease-diba)] motion-reduce:transition-none"
-                  style={{
-                    height: `${28 + (m.uv / maxUv) * 122}px`,
-                    background: STAAF_KLEUR[m.start],
-                    opacity: gekozen ? 1 : 0.32,
-                  }}
-                  aria-hidden="true"
-                />
+                  <span
+                    className="w-full rounded-t-[6px] transition-all duration-400 ease-[var(--ease-diba)] motion-reduce:transition-none"
+                    style={{
+                      height: `${28 + (m.uv / maxUv) * 122}px`,
+                      background: STAAF_KLEUR[m.start],
+                      opacity: gekozen ? 1 : 0.32,
+                    }}
+                    aria-hidden="true"
+                  />
 
-                <span
-                  className={`diba-label mt-2.5 transition-colors ${
-                    gekozen ? "text-[var(--t-strong)]" : "text-[var(--t-muted)]"
-                  }`}
-                >
-                  {m.kort}
-                </span>
-              </button>
-            );
-          })}
+                  <span
+                    className={`diba-label mt-2.5 transition-colors ${
+                      gekozen
+                        ? "text-[var(--t-strong)]"
+                        : "text-[var(--t-muted)]"
+                    }`}
+                  >
+                    {m.kort}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Legenda: verklaart de kleuren zonder dat je erop moet klikken. */}

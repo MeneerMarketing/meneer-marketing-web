@@ -204,8 +204,9 @@ function Keuzes({
               {o.label}
             </span>
             {o.zin ? (
+              /* Geen label maar uitleg: hierop baseer je je antwoord, dus leesmaat. */
               <span
-                className={`mt-0.5 text-[12px] leading-4 ${aan ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"}`}
+                className={`mt-0.5 text-[13px] leading-5 ${aan ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"}`}
               >
                 {o.zin}
               </span>
@@ -427,8 +428,10 @@ export default function ProfielBouwer() {
                   >
                     Type {t.id}
                   </span>
+                  {/* Zelfde reden als hierboven: "Zeer licht, verbrandt snel" is de zin
+                      waarmee je je eigen huidtype herkent. */}
                   <span
-                    className={`mt-0.5 text-[11px] leading-4 ${aan ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"}`}
+                    className={`mt-0.5 text-[13px] leading-5 ${aan ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"}`}
                   >
                     {t.description}
                   </span>

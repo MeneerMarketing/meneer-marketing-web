@@ -833,6 +833,56 @@ body:has(.figma-home) {
     color: var(--t-label);
   }
 
+  /* Het tikvlak van een platte labellink.
+
+     HET PROBLEEM DAT JE OP EEN BUREAUBLAD NOOIT ZIET.
+
+     Deze labels staan op 11px met een regelhoogte van 1,3. Als het een kopje boven een
+     blok is, klopt dat precies. Maar dezelfde klasse zit ook op links: "Bekijk prijzen",
+     "Meer over de nulmeting", "Naar de kennisbank". Die zijn daarmee veertien pixels hoog,
+     en veertien pixels raak je met een muis altijd en met een duim niet. Een meting over
+     negenentachtig pagina-weergaven op een telefoon vond er vierhonderd.
+
+     WAAROM DIT ER NIET UITZIET ALS EEN WIJZIGING.
+
+     Er verandert niets aan de opmaak: geen padding, geen marge, geen verschoven regel. Er
+     ligt alleen een onzichtbaar vlak over de link dat vijf pixels boven en onder uitsteekt,
+     waarmee het aanraakvlak op vierentwintig pixels uitkomt. Dat is precies de ondergrens
+     uit WCAG 2.5.8, niveau AA.
+
+     WAAROM VIJF EN NIET MEER.
+
+     Gemeten op tien pagina-weergaven staan twee labellinks onder elkaar minimaal twaalf
+     pixels uit elkaar. Vijf boven en vijf onder laat daar twee pixels over. Groeit het vlak
+     verder, dan gaan de vlakken overlappen en tik je de bovenste link niet meer aan maar de
+     onderste. Een te groot tikvlak is net zo stuk als een te klein.
+
+     WAAROM ALLEEN DE PLATTE.
+
+     Dezelfde klasse zit op de pillen en de knoppen, en die zijn met hun eigen padding al
+     vierenveertig tot achtenveertig pixels hoog. Die staan op /behandelingen acht pixels uit
+     elkaar, dus daar zou dit juist schade doen. "rounded" in de klassenaam is wat die twee
+     soorten betrouwbaar scheidt. */
+  /* De klasse staat niet altijd op de link zelf. In de voettekst draagt de omhullende
+     div hem en erven de links de opmaak, dus a.diba-label vindt daar niets terwijl het
+     precies dezelfde elf pixels zijn. Vandaar allebei de vormen. */
+  a.diba-label:not([class*="rounded"]),
+  button.diba-label:not([class*="rounded"]),
+  .diba-label a:not([class*="rounded"]),
+  .diba-label button:not([class*="rounded"]) {
+    position: relative;
+  }
+
+  a.diba-label:not([class*="rounded"])::after,
+  button.diba-label:not([class*="rounded"])::after,
+  .diba-label a:not([class*="rounded"])::after,
+  .diba-label button:not([class*="rounded"])::after {
+    content: "";
+    position: absolute;
+    inset-block: -5px;
+    inset-inline: -4px;
+  }
+
   .diba-label-on-dark {
     color: var(--on-dark-label);
   }

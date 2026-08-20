@@ -113,9 +113,16 @@ export default function Prijslijst() {
           <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
             {secties.map((s) => (
               <li key={s.id}>
+                {/* De py-[3px] is er voor de duim en niet voor het oog.
+
+                    Deze sprongkoppen zijn twintig pixels hoog, en dat is onder de
+                    vierentwintig die WCAG 2.5.8 vraagt. Verticale padding op een inline
+                    element telt niet mee voor de regelhoogte, dus de lijst blijft er
+                    precies zo uitzien terwijl het aanraakvlak op zesentwintig komt. De
+                    rijen staan acht pixels uit elkaar, dus er blijft ruimte over. */}
                 <a
                   href={`#${s.id}`}
-                  className="text-[15px] leading-6 text-[var(--g-700)] underline decoration-[var(--g-300)] underline-offset-4 transition-colors hover:decoration-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="py-[3px] text-[15px] leading-6 text-[var(--g-700)] underline decoration-[var(--g-300)] underline-offset-4 transition-colors hover:decoration-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   {s.caption}{" "}
                   <span className="text-[var(--t-muted)] tabular-nums">
