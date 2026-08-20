@@ -146,3 +146,31 @@ export const RIMPELS_FAQ = [
       "Collageenopbouw is een kwestie van maanden en niet van weken. Daarom meten we vooraf: over die termijn is je eigen indruk geen betrouwbare maat. [MEDISCHE-CHECK-ROJDA]",
   },
 ];
+
+/**
+ * De beweegtest.
+ *
+ * Tien seconden voor de spiegel, en het antwoord bepaalt of een huidbehandeling bij jou
+ * iets oplevert of dat je bij iemand anders moet zijn. Dat is dezelfde soort test als de
+ * drukproef bij couperose: geen widget maar iets dat op je eigen gezicht werkt.
+ */
+export const BEWEEGTEST_STAPPEN: readonly {
+  readonly kop: string;
+  readonly tekst: string;
+}[] = [
+  {
+    kop: "Ontspan alles",
+    tekst:
+      "Ga voor de spiegel staan en laat je gezicht helemaal los. Niet lachen, niet fronsen, ook niet een beetje. Dat laatste is lastiger dan het klinkt.",
+  },
+  {
+    kop: "Kijk waar de lijn nog staat",
+    tekst:
+      "Welke lijnen zijn verdwenen nu je gezicht in rust is, en welke staan er nog? Alleen dat verschil telt; hoe diep ze zijn doet er nu even niet toe.",
+  },
+  {
+    kop: "Trek dan een gezicht",
+    tekst:
+      "Lach breed, frons, trek je wenkbrauwen op. De lijnen die er alleen nu zijn, zitten in de spier. De lijnen die er ook in rust waren, zitten in je huid.",
+  },
+];

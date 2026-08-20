@@ -39,7 +39,8 @@ export const BOLLETJE_BEELDEN: readonly BolletjeBeeld[] = [
   {
     id: "milia",
     naam: "Hard wit bolletje",
-    klanttaal: "Een wit korreltje onder je oog of op je wang dat er al maanden zit",
+    klanttaal:
+      "Een wit korreltje onder je oog of op je wang dat er al maanden zit",
     vakterm: "milium, meervoud milia",
     zelfcheck:
       "Is het wit of geelwit, niet rood, doet het geen pijn, en lukt het niet om er iets uit te knijpen?",
@@ -138,5 +139,34 @@ export const GERSTEKORRELS_FAQ = [
     vraag: "Hoeveel kunnen er in een keer?",
     antwoord:
       "Meestal alles wat er zit, in een afspraak. Zijn het er veel, dan spreiden we het soms om de huid rust te geven. Dat hoor je vooraf en niet halverwege. [MEDISCHE-CHECK-ROJDA]",
+  },
+];
+
+/**
+ * Wat er in de afspraak gebeurt.
+ *
+ * Bij milia is de grootste drempel niet de prijs of de tijd maar het beeld van een naald
+ * naast een oog. Dat beeld wordt niet kleiner door er omheen te praten, dus staat er
+ * precies wat er gebeurt en hoe lang het duurt. Wie het dan nog eng vindt, weet tenminste
+ * waarvan.
+ */
+export const AFSPRAAK_STAPPEN: readonly {
+  readonly kop: string;
+  readonly tekst: string;
+}[] = [
+  {
+    kop: "Eerst kijken, met vergroting",
+    tekst:
+      "We bekijken elk bolletje van dichtbij. Zit er iets tussen dat geen milium is, dan hoor je dat nu en niet halverwege.",
+  },
+  {
+    kop: "Een prikje per bolletje",
+    tekst:
+      "De huid erboven wordt met een steriele naald geopend en de inhoud eruit gelicht. Per bolletje enkele seconden, en je voelt een prikje zoals bij een splinter.",
+  },
+  {
+    kop: "Klaar, en je kunt weg",
+    tekst:
+      "Er is geen verdoving, geen pleister en geen hersteltijd. Soms is er een paar uur een rood puntje te zien, en daarna niets meer.",
   },
 ];

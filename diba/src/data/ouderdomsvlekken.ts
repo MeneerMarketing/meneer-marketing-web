@@ -53,7 +53,8 @@ export const PIGMENT_BEELDEN: readonly PigmentBeeld[] = [
   {
     id: "keratose",
     naam: "Ruwe bruine bult",
-    klanttaal: "Een bruin plekje dat verheven aanvoelt, alsof het erop geplakt zit",
+    klanttaal:
+      "Een bruin plekje dat verheven aanvoelt, alsof het erop geplakt zit",
     vakterm: "seborroïsche keratose",
     zelfcheck:
       "Voel je met je vingertop dat het boven de huid uitkomt, en is het oppervlak korrelig of wasachtig in plaats van glad?",
@@ -66,7 +67,8 @@ export const PIGMENT_BEELDEN: readonly PigmentBeeld[] = [
   {
     id: "melasma",
     naam: "Grote vlakken op je wangen",
-    klanttaal: "Symmetrische bruine vlakken, vaak na een zwangerschap of de pil",
+    klanttaal:
+      "Symmetrische bruine vlakken, vaak na een zwangerschap of de pil",
     vakterm: "melasma",
     zelfcheck:
       "Zit het aan beide kanten ongeveer gelijk, met vage randen in plaats van scherpe? En kwam het in een periode van hormonale verandering?",
@@ -141,5 +143,35 @@ export const OUDERDOMSVLEKKEN_FAQ = [
     vraag: "Kan dit ook op mijn handen?",
     antwoord:
       "Ja, en dat is vaak de plek waar mensen het het eerst storend vinden. De huid daar is dunner en herstelt langzamer, dus we gaan er voorzichtiger te werk dan in het gezicht. [MEDISCHE-CHECK-ROJDA]",
+  },
+];
+
+/**
+ * De verandercheck.
+ *
+ * Niet om vast te stellen wát iets is, want dat kan niemand vanaf een foto. Wel om vast te
+ * stellen óf er iets verandert, en dat is het enige dat bepaalt of je eerst naar de
+ * huisarts moet. Een foto met datum is daarvoor betrouwbaarder dan je geheugen, en dat is
+ * geen belediging: een plek die in acht maanden twee millimeter groeit ziet er elke ochtend
+ * hetzelfde uit.
+ */
+export const VERANDERCHECK_STAPPEN: readonly {
+  readonly kop: string;
+  readonly tekst: string;
+}[] = [
+  {
+    kop: "Maak een foto met iets ernaast",
+    tekst:
+      "Leg een muntje of je vingertop naast de plek en fotografeer recht van boven, bij daglicht. Zonder maatstaf is elke vergelijking later giswerk.",
+  },
+  {
+    kop: "Zet er een datum bij",
+    tekst:
+      "In je fotomap of in een notitie. Dit is de stap die mensen overslaan, en precies de stap waardoor de vergelijking later iets waard is.",
+  },
+  {
+    kop: "Kijk over drie maanden opnieuw",
+    tekst:
+      "Zelfde licht, zelfde hoek, zelfde maatstaf. Is er niets veranderd, dan weet je dat. Is er wel iets veranderd, dan ga je naar de huisarts en niet naar ons.",
   },
 ];

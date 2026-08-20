@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
+  NulmetingAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -11,12 +12,15 @@ import {
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
+import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
+import { publicCopy } from "@/lib/copy-flags";
 import {
   OUDERDOMSVLEKKEN_FAQ,
   OUDERDOMSVLEKKEN_WEL_NIET,
   OUDERDOMSVLEKKEN_WIJ_DOEN_NIET,
   PIGMENT_BEELDEN,
+  VERANDERCHECK_STAPPEN,
 } from "@/data/ouderdomsvlekken";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -36,9 +40,11 @@ export const metadata: Metadata = {
 const PAD = "/huidproblemen/ouderdomsvlekken";
 
 const ANKERS = [
+  { id: "check", label: "De verandercheck" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "nee", label: "Waar wij nee zeggen" },
+  { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -88,9 +94,7 @@ export default function Pagina() {
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">
-                Ouderdomsvlekken
-              </span>
+              <span className="text-[var(--t-muted)]">Ouderdomsvlekken</span>
             </nav>
 
             <h1 className="diba-display-l mt-6">
@@ -141,6 +145,59 @@ export default function Pagina() {
 
       <PillarNav ankers={ANKERS} />
 
+      {/* ── De verandercheck ── */}
+      <section
+        id="check"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="De verandercheck"
+            raster="gelijk"
+            kop="Een foto met een datum"
+            accent="verslaat je geheugen."
+            intro="Dit zegt niet wat een plek is; dat kan niemand vanaf een foto. Het zegt wel of er iets verandert, en dat is het enige dat bepaalt of je eerst ergens anders moet zijn."
+          />
+
+          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+            {VERANDERCHECK_STAPPEN.map((stap, i) => (
+              <li
+                key={stap.kop}
+                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <span className="diba-label text-[var(--g-700)]">
+                  Stap {i + 1}
+                </span>
+                <h3 className="diba-card-title mt-3">{stap.kop}</h3>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(stap.tekst)}
+                </p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-10 rounded-[var(--r-md)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9">
+            <Label opDonker>Twijfel je over een plek?</Label>
+            <p className="diba-card-title-lg mt-4 max-w-[36ch]">
+              Dan hoort daar eerst iemand anders naar te kijken.
+            </p>
+            <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Een rafelige rand, ongelijke kleur, groei of jeuk: bij die dingen
+              ga je naar de huisarts. Wij behandelen niets waarvan niet
+              vaststaat wat het is.
+            </p>
+            <div className="mt-7">
+              <Button
+                href="/huidproblemen/huidkanker-naevi"
+                variant="primair-op-donker"
+              >
+                Naar de ABCDE-check
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         id="welke"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
@@ -172,6 +229,19 @@ export default function Pagina() {
         accent="en de eerste is niet onderhandelbaar."
         intro="Een plek wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen. Dat is een fout die niet te herstellen is."
         punten={OUDERDOMSVLEKKEN_WIJ_DOEN_NIET}
+      />
+
+      <NulmetingAssen
+        kop="Onder UV zie je wat er nog komt."
+        alineas={[
+          "Pigment begint dieper in de huid dan waar je het ziet. Onder UV-licht wordt zichtbaar wat er al ligt en aan de oppervlakte nog niet doorkomt, en dat is vaak meer dan mensen verwachten.",
+          "Confronterend, en nuttig: het verklaart waarom er zonder zonbescherming steeds nieuwe vlekken bij lijken te komen. Ze kwamen er niet bij; ze waren er al.",
+        ]}
+        assen={[
+          ["Zichtbaar pigment", "De vlekken zoals je ze nu in de spiegel ziet"],
+          ["Onderliggend pigment", "Wat er dieper ligt en later doorkomt"],
+          ["Zonschade", "Hoeveel de huid over de jaren te verwerken kreeg"],
+        ]}
       />
 
       <PillarFaq items={OUDERDOMSVLEKKEN_FAQ} />

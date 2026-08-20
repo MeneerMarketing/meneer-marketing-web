@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
+  NulmetingAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -11,12 +12,15 @@ import {
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
+import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
+import { publicCopy } from "@/lib/copy-flags";
 import {
   LIJNSOORTEN,
   RIMPELS_FAQ,
   RIMPELS_WEL_NIET,
   RIMPELS_WIJ_DOEN_NIET,
+  BEWEEGTEST_STAPPEN,
 } from "@/data/rimpels";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -36,9 +40,11 @@ export const metadata: Metadata = {
 const PAD = "/huidproblemen/rimpels";
 
 const ANKERS = [
+  { id: "test", label: "De beweegtest" },
   { id: "welke", label: "Welke lijn heb je" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "nee", label: "Waar wij nee zeggen" },
+  { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -140,6 +146,59 @@ export default function Pagina() {
 
       <PillarNav ankers={ANKERS} />
 
+      {/* ── De beweegtest ── */}
+      <section
+        id="test"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="De beweegtest"
+            raster="gelijk"
+            kop="Tien seconden,"
+            accent="en je weet waar hij zit."
+            intro="Dit is geen diagnose maar het is wel het onderscheid dat alles bepaalt. Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen om iets totaal anders."
+          />
+
+          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+            {BEWEEGTEST_STAPPEN.map((stap, i) => (
+              <li
+                key={stap.kop}
+                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <span className="diba-label text-[var(--g-700)]">
+                  Stap {i + 1}
+                </span>
+                <h3 className="diba-card-title mt-3">{stap.kop}</h3>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(stap.tekst)}
+                </p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-10 rounded-[var(--r-md)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9">
+            <Label opDonker>Gaat het om meer dan lijnen?</Label>
+            <p className="diba-card-title-lg mt-4 max-w-[36ch]">
+              Dan kijk je breder dan deze pagina.
+            </p>
+            <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Pigment, textuur, elasticiteit en verslapping lopen bij
+              huidveroudering door elkaar. Zit je daarmee, dan is de bredere
+              pagina de betere ingang.
+            </p>
+            <div className="mt-7">
+              <Button
+                href="/huidproblemen/huidveroudering"
+                variant="primair-op-donker"
+              >
+                Naar huidveroudering
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         id="welke"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
@@ -171,6 +230,19 @@ export default function Pagina() {
         accent="en de eerste verrast mensen."
         intro="Dit zijn de gevallen waarin wij een behandeling afhouden die je zelf wilde boeken. In het ene geval omdat het niet ons vak is, in het andere omdat het niet nodig is."
         punten={RIMPELS_WIJ_DOEN_NIET}
+      />
+
+      <NulmetingAssen
+        kop="Je eigen gezicht is geen maat."
+        alineas={[
+          "Bij lijnen gaat het om maanden, en in die maanden zie je jezelf elke dag. Daardoor merk je een geleidelijke verandering nauwelijks op, in beide richtingen. De Eve-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
+          "Dat maakt het verschil later zichtbaar in plaats van dat je het moet geloven. En het werkt ook andersom: blijkt er na een reeks weinig veranderd, dan is dat een reden om iets anders te doen en niet om door te gaan.",
+        ]}
+        assen={[
+          ["Textuur", "Hoe fijn of grof het oppervlak van je huid is"],
+          ["Elasticiteit", "Hoe snel de huid terugveert, en waar niet meer"],
+          ["Zonschade", "Wat er onder de oppervlakte al is opgebouwd"],
+        ]}
       />
 
       <PillarFaq items={RIMPELS_FAQ} />

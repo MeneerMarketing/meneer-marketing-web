@@ -11,12 +11,15 @@ import {
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
+import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
+import { publicCopy } from "@/lib/copy-flags";
 import {
   BOLLETJE_BEELDEN,
   GERSTEKORRELS_FAQ,
   GERSTEKORRELS_WEL_NIET,
   GERSTEKORRELS_WIJ_DOEN_NIET,
+  AFSPRAAK_STAPPEN,
 } from "@/data/gerstekorrels";
 import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -36,6 +39,7 @@ export const metadata: Metadata = {
 const PAD = "/huidproblemen/gerstekorrels";
 
 const ANKERS = [
+  { id: "afspraak", label: "Wat er gebeurt" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "nee", label: "Waar wij nee zeggen" },
@@ -138,6 +142,56 @@ export default function Pagina() {
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       <PillarNav ankers={ANKERS} />
+
+      {/* ── In de behandelkamer ── */}
+      <section
+        id="afspraak"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="In de behandelkamer"
+            raster="gelijk"
+            kop="Een naald naast je oog."
+            accent="Daar mag je tegenop zien."
+            intro="De drempel bij milia is zelden de prijs en bijna altijd dat beeld. Daar omheen praten maakt het niet kleiner, dus staat hier gewoon wat er gebeurt en hoe lang het duurt."
+          />
+
+          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+            {AFSPRAAK_STAPPEN.map((stap, i) => (
+              <li
+                key={stap.kop}
+                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <span className="diba-label text-[var(--g-700)]">
+                  Stap {i + 1}
+                </span>
+                <h3 className="diba-card-title mt-3">{stap.kop}</h3>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(stap.tekst)}
+                </p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-10 rounded-[var(--r-md)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9">
+            <Label opDonker>Zitten er ook mee-eters bij?</Label>
+            <p className="diba-card-title-lg mt-4 max-w-[36ch]">
+              Dan is dit maar de helft van je verhaal.
+            </p>
+            <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Losse witte bolletjes zijn een ding op zich. Zie je daarnaast
+              verstopte porien, puistjes of een glimmende T-zone, dan gaat het
+              om onzuiverheden en is de acnepagina de betere ingang.
+            </p>
+            <div className="mt-7">
+              <Button href="/huidproblemen/acne" variant="primair-op-donker">
+                Naar de acnepagina
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section
         id="welke"
