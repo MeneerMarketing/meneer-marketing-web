@@ -4,7 +4,7 @@
  * De klinische waarheid die deze pagina eigen maakt: droog en uitgedroogd zijn niet
  * hetzelfde en het zijn ook geen twee standen van één schaal. Het zijn twee onafhankelijke
  * assen. Droog gaat over vet, uitgedroogd over water. Je kunt allebei tegelijk zijn, en je
- * kunt een vette huid hebben die uitgedroogd is — dat laatste is precies waarom mensen
+ * kunt een vette huid hebben die uitgedroogd is, en "vochtarm" is precies dat tweede — dat laatste is precies waarom mensen
  * jarenlang het verkeerde product kopen.
  *
  * Vandaar de matrix in plaats van een schaal. Je zet jezelf ergens in een vlak neer en

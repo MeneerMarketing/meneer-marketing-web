@@ -114,7 +114,9 @@ export default function PorienPage() {
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               De doorsnede van een porie ligt vast in je aanleg. Wij beloven dus
               niet dat ze kleiner worden, want dat kan niemand waarmaken. Dat is
-              meteen het meest gestelde ding op deze pagina uit de weg.
+              meteen het meest gestelde ding op deze pagina uit de weg. Wat je
+              wel ziet en wel kunt veranderen is de structuur van het oppervlak
+              eromheen.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

@@ -92,9 +92,9 @@ export default function DrogeHuidPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Droog gaat over vet. Uitgedroogd gaat over water. Overal wordt dat
-              als één lijn getekend, van vet naar droog, en dat klopt niet. Je
-              kunt een vette huid hebben die uitgedroogd is.
+              Droog gaat over vet. Uitgedroogd of vochtarm gaat over water.
+              Overal wordt dat als één lijn getekend, van vet naar droog, en dat
+              klopt niet. Je kunt een vette huid hebben die vochtarm is.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

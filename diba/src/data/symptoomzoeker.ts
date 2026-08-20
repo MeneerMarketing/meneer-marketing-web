@@ -149,6 +149,22 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     kenmerken: ["bultjes", "ruw", "droog"],
   },
   {
+    naam: "Doffe huid",
+    pad: "/huidproblemen/doffe-huid",
+    zin: "Een grauwe tint en weinig glans, zonder duidelijke vlekken.",
+    eersteVraag: "Waar komt het vandaan?",
+    groep: "behandelen",
+    kenmerken: ["ruw", "droog"],
+  },
+  {
+    naam: "Steelwratjes",
+    pad: "/huidproblemen/steelwratjes",
+    zin: "Zachte hangende velletjes in hals, oksel of lies.",
+    eersteVraag: "Hangt het aan een steeltje?",
+    groep: "behandelen",
+    kenmerken: ["bultjes"],
+  },
+  {
     naam: "Rosacea",
     pad: "/huidproblemen/rosacea",
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",

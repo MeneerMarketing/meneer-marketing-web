@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 434 regels.**
+**Totaal: 460 regels.**
 
 
 ## Voor Okan (17)
@@ -106,11 +106,11 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:122</sub>
+  <sub>src/app/sitemap.ts:124</sub>
 
-## Voor Rojda (417)
+## Voor Rojda (443)
 
-### MEDISCHE-CHECK-ROJDA · 417
+### MEDISCHE-CHECK-ROJDA · 443
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
@@ -478,6 +478,31 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/couperose.ts:165</sub>
 - Alcohol zet de vaten wijd open en kan een opvlamming uitlokken, maar het is niet de oorzaak van de aanleg. Dat hardnekkige verband zorgt er vooral voor dat mensen zich schamen voor iets waar ze weinig aan konden doen.
   <sub>src/data/couperose.ts:170</sub>
+
+**Inhoud: doffe-huid** (11)
+
+- De bovenste laag vernieuwt trager dan vroeger, waardoor er cellen blijven liggen die het licht verstrooien in plaats van weerkaatsen. Dit is de meest voorkomende oorzaak.
+  <sub>src/data/doffe-huid.ts:54</sub>
+- Een huid met te weinig water in de bovenste laag ligt niet glad, en een oneffen oppervlak oogt dof. Los van hoeveel talg je maakt.
+  <sub>src/data/doffe-huid.ts:67</sub>
+- Pigment dat ongelijkmatig verdeeld ligt. Je oog leest een ongelijke tint als vermoeid, ook al is er nergens een vlek aan te wijzen.
+  <sub>src/data/doffe-huid.ts:80</sub>
+- Doorbloeding en herstel lopen terug bij slaaptekort, roken en te weinig drinken, en dat zie je het eerst aan je gezicht.
+  <sub>src/data/doffe-huid.ts:93</sub>
+- [ Eerst uitzoeken of het om cellen, vocht, kleur of leefstijl gaat, want dat scheelt een traject, De vernieuwing van de bovenlaag op gang helpen, in een tempo dat je huid aankan, Eerlijk zeggen dat het effect van een gezichtsbehandeling op dofheid vaak tijdelijk is, Zonbescherming, want ongelijke...
+  <sub>src/data/doffe-huid.ts:133</sub>
+- [ Dagelijks scrubben. Je haalt de barrière weg, en een beschadigde barrière oogt doffer
+  <sub>src/data/doffe-huid.ts:137</sub>
+- [ Dagelijks scrubben. Je haalt de barrière weg, en een beschadigde barrière oogt doffer , Een abonnement verkopen voor iets dat met een gewoonte weggaat, Een vette huid uitdrogen om hem minder dof te maken. Die reageert met meer talg
+  <sub>src/data/doffe-huid.ts:139</sub>
+- Het effect van een behandeling op dofheid zakt na verloop van tijd. Dat is normaal en geen reden om steeds dieper te gaan. Wie die trap opgaat houdt een geïrriteerde huid over die juist doffer oogt.
+  <sub>src/data/doffe-huid.ts:154</sub>
+- In je slaap verlies je vocht via je huid en ligt de doorbloeding lager. In de loop van de ochtend trekt dat bij. Blijft het de hele dag, dan zit het niet in je nacht maar in je hoornlaag.
+  <sub>src/data/doffe-huid.ts:162</sub>
+- Bij dofheid is het effect vaak direct zichtbaar en meestal een aantal weken merkbaar. Dat is geen tekortkoming zolang je het weet: eens in de zoveel weken glans kopen is een legitieme keuze. Het wordt pas een probleem als je denkt een oorzaak te behandelen.
+  <sub>src/data/doffe-huid.ts:167</sub>
+- Als je structureel te weinig drinkt, ja. Boven een normale inname niet: extra water maakt je huid niet extra vochtig. Wat wel scheelt is wat je huid vasthoudt, en daar is met verzorging meer aan te doen dan met een fles.
+  <sub>src/data/doffe-huid.ts:172</sub>
 
 **Inhoud: droge-huid** (5)
 
@@ -994,10 +1019,43 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Wie zegt dat het definitief is, verkoopt iets anders dan een behandeling.
   <sub>src/data/snurken.ts:164</sub>
 
+**Inhoud: steelwratjes** (15)
+
+- Een goedaardig uitstulpinkje van huid en bindweefsel, meestal op plekken waar huid over huid schuurt. Onschuldig, en het gaat niet vanzelf weg.
+  <sub>src/data/steelwratjes.ts:53</sub>
+- Ook goedaardig, maar een ander weefsel en een andere aanpak. Het wordt vaak voor een moedervlek aangezien en is dat niet.
+  <sub>src/data/steelwratjes.ts:66</sub>
+- Eerst laten beoordelen. Verwijderen kan vaak wel, maar dat gaat anders dan bij een steeltje.
+  <sub>src/data/steelwratjes.ts:68</sub>
+- Een moedervlek en geen steelwratje. Die halen wij niet weg, ook niet als hij stoort: beoordelen en verwijderen hoort bij een arts.
+  <sub>src/data/steelwratjes.ts:79</sub>
+- Dat weten wij niet, en dat is het punt. Alles wat verandert hoort beoordeeld te worden vóórdat er iets mee gebeurt.
+  <sub>src/data/steelwratjes.ts:92</sub>
+- [ Elk plekje beoordelen voordat er iets mee gebeurt, ook als je precies weet wat je wil, Goedaardige steelwratjes weghalen, meestal in één afspraak, Per kwartier rekenen, zodat meerdere kleine plekjes tegelijk niet per stuk duurder worden, Doorsturen naar de huisarts bij alles wat verandert of ni...
+  <sub>src/data/steelwratjes.ts:132</sub>
+- [ Moedervlekken verwijderen. Die horen beoordeeld te worden en dat kunnen wij niet
+  <sub>src/data/steelwratjes.ts:136</sub>
+- [ Moedervlekken verwijderen. Die horen beoordeeld te worden en dat kunnen wij niet , Iets weghalen dat verandert. Dan is er niets meer over om te onderzoeken
+  <sub>src/data/steelwratjes.ts:137</sub>
+- [ Moedervlekken verwijderen. Die horen beoordeeld te worden en dat kunnen wij niet , Iets weghalen dat verandert. Dan is er niets meer over om te onderzoeken , Zelf afbinden met een draadje of afknippen met een nagelschaar. Dat gaat vaak lang goed en één keer niet, Beloven dat er nooit meer nieuw...
+  <sub>src/data/steelwratjes.ts:139</sub>
+- Ook niet als je zeker weet wat het is en er speciaal voor bent gekomen. Wat weg is kan niet meer bekeken worden, en dat is een fout die niet te herstellen valt. Het kost twee minuten om er eerst naar te kijken.
+  <sub>src/data/steelwratjes.ts:147</sub>
+- Een verheven moedervlek die stoort halen wij niet weg. Beoordelen en verwijderen van pigmentplekjes hoort bij een arts, en die kan het weefsel laten onderzoeken. Wij verwijzen daarvoor door.
+  <sub>src/data/steelwratjes.ts:152</sub>
+- Op die plekken schuurt huid over huid, en dat is de plek waar dit soort uitstulpinkjes ontstaan. Kleding, een ketting of een bh-bandje versnellen het. Aanleg speelt ook mee: bij sommige mensen komen ze met tientallen tegelijk.
+  <sub>src/data/steelwratjes.ts:160</sub>
+- Liever niet, en dat is geen omzetargument. Het gaat vaak lang goed en één keer niet, en die ene keer is een ontsteking in een hals of een litteken op een ooglid. Bovendien knip je dan iets weg dat niemand meer heeft bekeken.
+  <sub>src/data/steelwratjes.ts:165</sub>
+- Een verwijderd steelwratje komt niet terug, maar er kunnen nieuwe ontstaan op andere plekken. De aanleg en de wrijving veranderen niet door een behandeling.
+  <sub>src/data/steelwratjes.ts:170</sub>
+- Bij een klein steelwratje meestal een rood puntje dat in weken wegtrekt. Hoe groter de basis, hoe meer kans dat er iets zichtbaar blijft. Dat bespreken we vooraf per plekje en niet achteraf.
+  <sub>src/data/steelwratjes.ts:175</sub>
+
 **Inhoud: symptoomzoeker** (1)
 
 - Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag.
-  <sub>src/data/symptoomzoeker.ts:287</sub>
+  <sub>src/data/symptoomzoeker.ts:303</sub>
 
 **Inhoud: veroudering** (10)
 

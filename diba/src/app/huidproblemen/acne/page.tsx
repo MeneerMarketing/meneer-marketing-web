@@ -179,8 +179,9 @@ export default function AcnePage() {
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
               De kaaklijn wijst iets anders aan dan de T-zone. Bij wangen kan het
               van buiten komen, van je telefoon of je kussensloop, maar net zo
-              goed hormonaal zijn. Tik aan waar het bij jou zit, dan lezen we
-              mee. Je mag er meerdere kiezen.
+              goed hormonaal zijn. En acne op je rug of schouders is een zone op
+              zich, met een eigen oorzaak. Tik aan waar het bij jou zit, dan
+              lezen we mee. Je mag er meerdere kiezen.
             </p>
           </div>
 
