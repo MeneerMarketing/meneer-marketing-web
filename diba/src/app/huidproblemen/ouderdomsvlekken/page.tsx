@@ -22,7 +22,6 @@ import {
   PIGMENT_BEELDEN,
   VERANDERCHECK_STAPPEN,
 } from "@/data/ouderdomsvlekken";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -34,7 +33,6 @@ export const metadata: Metadata = {
   title: "Ouderdomsvlekken en zonnevlekken behandelen in Rotterdam",
   description:
     "Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want niet alles wat bruin is mag onder een laser.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/ouderdomsvlekken";

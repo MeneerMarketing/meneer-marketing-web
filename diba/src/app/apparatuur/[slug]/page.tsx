@@ -163,29 +163,29 @@ export default async function ApparaatPage({ params }: PageProps) {
                 bestaat staat hier, dus hij mag niet wegzakken onder de vouw. */}
             <div className="mt-auto rounded-[var(--r-lg)] bg-white p-7 pt-10 sm:p-9">
               <Label>Hierop draait</Label>
-            {behandelingen.length > 0 ? (
-              <ul className="mt-5 space-y-2">
-                {behandelingen.map((b) => (
-                  <li key={b.slug}>
-                    <Link
-                      href={`/behandelingen/${b.slug}`}
-                      className="-mx-4 flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] px-4 py-3 transition-colors hover:bg-[var(--g-050)]"
-                    >
-                      <span className="text-[16px] leading-6 font-medium text-[var(--t-strong)]">
-                        {b.naam}
-                      </span>
-                      <span className="shrink-0 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-                        {prijsTekst(b.prijs)}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)]">
-                Nog niet gekoppeld aan een behandeling op deze site.
-              </p>
-            )}
+              {behandelingen.length > 0 ? (
+                <ul className="mt-5 space-y-2">
+                  {behandelingen.map((b) => (
+                    <li key={b.slug}>
+                      <Link
+                        href={`/behandelingen/${b.slug}`}
+                        className="-mx-4 flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] px-4 py-3 transition-colors hover:bg-[var(--g-050)]"
+                      >
+                        <span className="text-[16px] leading-6 font-medium text-[var(--t-strong)]">
+                          {b.naam}
+                        </span>
+                        <span className="shrink-0 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
+                          {prijsTekst(b.prijs)}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)]">
+                  Nog niet gekoppeld aan een behandeling op deze site.
+                </p>
+              )}
 
               <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
                 Welke instelling er gekozen wordt hangt af van je huid, en dat
@@ -237,8 +237,7 @@ export default async function ApparaatPage({ params }: PageProps) {
         <div className="mx-auto">
           <Label>Wat het wel en niet kan</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
-            Even lang,{" "}
-            <span className="diba-accent">en dat is met opzet.</span>
+            Even lang, <span className="diba-accent">en dat is met opzet.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Een apparatuurpagina zonder deze rechterkolom is een folder van de

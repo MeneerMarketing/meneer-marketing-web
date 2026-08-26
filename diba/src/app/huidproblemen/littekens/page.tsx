@@ -21,7 +21,6 @@ import {
   LITTEKEN_WEL_NIET,
   LITTEKEN_WIJ_DOEN_NIET,
 } from "@/data/littekens";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -50,7 +49,6 @@ import {
 
 export const metadata: Metadata = {
   title: "Littekens en striae behandelen in Rotterdam",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/littekens";

@@ -124,12 +124,11 @@ export default function VergoedingenPage() {
           <div>
             <Label>Drie vragen, op volgorde</Label>
             <h2 className="diba-display-m mt-4">
-              En wat er gebeurt{" "}
-              <span className="diba-accent">bij nee.</span>
+              En wat er gebeurt <span className="diba-accent">bij nee.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Die nee-tak staat normaal nergens, en dat is precies de tak waar de
-              meeste mensen in terechtkomen.
+              Die nee-tak staat normaal nergens, en dat is precies de tak waar
+              de meeste mensen in terechtkomen.
             </p>
           </div>
 
@@ -141,9 +140,7 @@ export default function VergoedingenPage() {
               >
                 <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
                   <div>
-                    <p className="diba-label text-[var(--t-label)]">
-                      {s.stap}
-                    </p>
+                    <p className="diba-label text-[var(--t-label)]">{s.stap}</p>
                     <p className="mt-4 text-[28px] leading-[1.08] font-normal tracking-[-.04em] text-balance sm:text-[32px]">
                       {s.vraag}
                     </p>
@@ -231,8 +228,7 @@ export default function VergoedingenPage() {
           <div>
             <Label>Vier misverstanden</Label>
             <h2 className="diba-display-m mt-4">
-              De eerste{" "}
-              <span className="diba-accent">scheelt geld.</span>
+              De eerste <span className="diba-accent">scheelt geld.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Mensen stellen behandeling uit op grond van iets wat niet klopt.

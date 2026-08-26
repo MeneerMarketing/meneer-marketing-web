@@ -22,7 +22,6 @@ import {
   VOLGORDE,
 } from "@/data/acne-littekens";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -52,7 +51,6 @@ export const metadata: Metadata = {
   title: "Acnelittekens en acnevlekjes behandelen in Rotterdam",
   description:
     "Acnevlekjes zijn vaak geen litteken maar kleur. Met je vinger en schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/acne-littekens";

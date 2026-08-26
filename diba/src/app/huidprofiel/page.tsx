@@ -23,8 +23,7 @@ import { DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Je huidprofiel",
-  description:
-    `Bouw je huidprofiel op in ${telwoord(PROFIEL_ONDERDELEN)} stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.`,
+  description: `Bouw je huidprofiel op in ${telwoord(PROFIEL_ONDERDELEN)} stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.`,
 };
 
 export default function HuidprofielPage() {

@@ -22,7 +22,6 @@ import {
   INGEGROEID_WIJ_DOEN_NIET,
 } from "@/data/ingegroeide-haren";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -42,7 +41,6 @@ export const metadata: Metadata = {
   title: "Ingegroeide haren en scheerbultjes behandelen in Rotterdam",
   description:
     "Zit er een haar in het bultje, of niet? Dat bepaalt of ontharen bij jou iets oplevert. Met fel licht en een spiegel kom je zelf een heel eind.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/ingegroeide-haren";

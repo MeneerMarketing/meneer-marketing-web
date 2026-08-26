@@ -22,7 +22,6 @@ import {
   VEROUDERING_WEL_NIET,
   VEROUDERING_WIJ_DOEN_NIET,
 } from "@/data/veroudering";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -49,7 +48,6 @@ import {
 
 export const metadata: Metadata = {
   title: "Huidveroudering behandelen in Rotterdam",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/huidveroudering";

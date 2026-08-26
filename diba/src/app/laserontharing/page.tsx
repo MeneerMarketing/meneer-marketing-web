@@ -7,13 +7,13 @@ import LaserSessieBoog from "@/components/laser/LaserSessieBoog";
 import PillarNav from "@/components/pillar/PillarNav";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import { PincetHaar } from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
 import ReviewCard from "@/components/ui/ReviewCard";
 import SalonizedScorePanel from "@/components/ui/SalonizedScorePanel";
 import { FIGMA_INTENT_LASER } from "@/data/figma-home-images";
 import { LASER_LANDING_FAQ, LASER_USP_ROWS } from "@/data/laser-landing";
 import { reviewsForTopic } from "@/data/reviews";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 
@@ -50,7 +50,6 @@ export const metadata: Metadata = {
   title: "Laserontharing Rotterdam | GentleMax Pro",
   description:
     "Laserontharing met GentleMax Pro in Hillegersberg. Bereken je prijs per zone, veilig voor huidtype I tot VI.",
-  ...NOG_IN_AANBOUW,
 };
 
 const LASER_REVIEWS = reviewsForTopic("laser").slice(0, 3);
@@ -184,6 +183,7 @@ export default function LaserontharingPage() {
       >
         <div className="mx-auto">
           <SectieKop
+            icoon={PincetHaar}
             label="De zones"
             kop="Waar wil je"
             accent="ontharen?"

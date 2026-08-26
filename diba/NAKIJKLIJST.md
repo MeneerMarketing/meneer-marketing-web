@@ -1,6 +1,6 @@
 # Nakijklijst Diba Clinics
 
-*Automatisch gegenereerd op 21 augustus 2026. Draai `npm run nakijklijst` voor een verse versie.*
+*Automatisch gegenereerd op 27 augustus 2026. Draai `npm run nakijklijst` voor een verse versie.*
 
 Dit is alles wat er op de site staat en nog bevestigd moet worden. Het is met opzet
 ingevuld en niet leeggelaten: een lege pagina laat zich niet beoordelen en een site met
@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 460 regels.**
+**Totaal: 462 regels.**
 
 
 ## Voor Okan (17)
@@ -108,11 +108,18 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
   <sub>src/app/sitemap.ts:124</sub>
 
-## Voor Rojda (443)
+## Voor Rojda (445)
 
-### MEDISCHE-CHECK-ROJDA · 443
+### MEDISCHE-CHECK-ROJDA · 445
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
+
+**/privacybeleid** (2)
+
+- Wettelijk verplicht op grond van de WGBO (artikel 7:454 BW), gerekend vanaf de laatste wijziging in het dossier. Dit is geen termijn die wij korter mogen maken.
+  <sub>src/app/privacybeleid/page.tsx:118</sub>
+- Die horen bij het dossier en vallen onder dezelfde plicht. Fotos die u ons apart heeft toegestaan te gebruiken buiten uw dossier, verwijderen wij zodra u die toestemming intrekt.
+  <sub>src/app/privacybeleid/page.tsx:124</sub>
 
 **Inhoud: acne** (12)
 

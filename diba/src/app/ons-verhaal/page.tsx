@@ -51,33 +51,28 @@ const REGELS = [
   {
     kop: "Eerst meten, dan pas behandelen",
     zin: "Elk traject begint met een meting, ook als je precies weet wat je wil. Zonder nulpunt is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.",
-    kost:
-      "Een afspraak die geen behandeling is. Een deel van de mensen haakt daar af, want ze wilden vandaag geholpen worden en niet gemeten.",
+    kost: "Een afspraak die geen behandeling is. Een deel van de mensen haakt daar af, want ze wilden vandaag geholpen worden en niet gemeten.",
   },
   {
     kop: "Nee zeggen mag, en gebeurt",
     zin: "Past een behandeling niet bij je huid, bij je hersteltijd of bij het moment, dan hoor je dat. Ook als je er speciaal voor gekomen bent.",
-    kost:
-      "Omzet, direct en meetbaar. Elke nee is een behandeling die niet geboekt wordt, en er staat niets tegenover behalve dat het klopt.",
+    kost: "Omzet, direct en meetbaar. Elke nee is een behandeling die niet geboekt wordt, en er staat niets tegenover behalve dat het klopt.",
   },
   {
     kop: "Alle prijzen staan online",
     zin: "Per sessie, per zone, per variant, inclusief de duurste. Geen bedrag dat je pas hoort als je al op de stoel ligt.",
-    kost:
-      "Het onderhandelingsvoordeel. Wie zijn prijzen pas aan de balie noemt, noemt ze op het moment dat je het moeilijkst nee zegt. Dat werkt, en daarom doen zoveel klinieken het.",
+    kost: "Het onderhandelingsvoordeel. Wie zijn prijzen pas aan de balie noemt, noemt ze op het moment dat je het moeilijkst nee zegt. Dat werkt, en daarom doen zoveel klinieken het.",
     uitgelicht: true,
   },
   {
     kop: "Bij elke behandeling staat wat hij niet kan",
     zin: "Op elke behandelpagina en bij elk apparaat staat de grens erbij, even nadrukkelijk als wat het wel doet. Een peeling neemt geen rimpels weg, want hij komt daar niet.",
-    kost:
-      "De helft van je verkooptekst. Een pagina die alleen voordelen opsomt verkoopt beter; hij levert alleen teleurstelling op bij de tweede afspraak.",
+    kost: "De helft van je verkooptekst. Een pagina die alleen voordelen opsomt verkoopt beter; hij levert alleen teleurstelling op bij de tweede afspraak.",
   },
   {
     kop: "Geen belofte zonder getal",
     zin: "Geen resultaatgaranties, geen voor-en-na dat niet klopt, geen aantal sessies dat we niet kunnen onderbouwen. Wat we niet weten, zeggen we niet.",
-    kost:
-      "De grote woorden. Een site die wel durft te beloven leest spannender dan deze, en dat blijft zo.",
+    kost: "De grote woorden. Een site die wel durft te beloven leest spannender dan deze, en dat blijft zo.",
   },
 ];
 
@@ -246,16 +241,15 @@ export default function OnsVerhaalPage() {
           <div>
             <Label>Houd ons eraan</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Klopt er iets{" "}
-              <span className="diba-accent">niet?</span>
+              Klopt er iets <span className="diba-accent">niet?</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Kom je op deze site een belofte tegen zonder onderbouwing, een prijs
-              die niet klopt of een behandeling zonder grens erbij, zeg het dan.
-              Een lijst regels is pas iets waard als iemand er iets tegenin kan
-              brengen.
+              Kom je op deze site een belofte tegen zonder onderbouwing, een
+              prijs die niet klopt of een behandeling zonder grens erbij, zeg
+              het dan. Een lijst regels is pas iets waard als iemand er iets
+              tegenin kan brengen.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

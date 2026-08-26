@@ -212,21 +212,20 @@ export default function ContactPage() {
 
       {/* ── De ingangkiezer: de signatuur van deze pagina ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-
-      {/* Een contactpagina is adres, tijden en kanalen: allemaal tekst. Dit beeld laat zien
+        {/* Een contactpagina is adres, tijden en kanalen: allemaal tekst. Dit beeld laat zien
           waar die gegevens heen leiden, en dat is precies wat iemand wil weten die nog
           nooit binnen is geweest. */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
-        <div className="mx-auto">
-          <BeeldVignet
-            src="/images/shoot/ontvangst-koffie.jpg"
-            alt="Een client krijgt koffie aangereikt bij binnenkomst in de kliniek"
-            onderschrift="Bij binnenkomst in Hillegersberg"
-            sizes="(min-width: 1024px) 86vw, 92vw"
-            className="aspect-[16/9] lg:aspect-[21/9]"
-          />
-        </div>
-      </section>
+        <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+          <div className="mx-auto">
+            <BeeldVignet
+              src="/images/shoot/ontvangst-koffie.jpg"
+              alt="Een client krijgt koffie aangereikt bij binnenkomst in de kliniek"
+              onderschrift="Bij binnenkomst in Hillegersberg"
+              sizes="(min-width: 1024px) 86vw, 92vw"
+              className="aspect-[16/9] lg:aspect-[21/9]"
+            />
+          </div>
+        </section>
         <div className="mx-auto">
           <div>
             <Label>Welke vraag, welk kanaal</Label>
@@ -318,7 +317,9 @@ export default function ContactPage() {
                   {s.gebeurt}
                 </p>
                 <div className="mt-5 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4">
-                  <p className="diba-label text-[var(--t-label)]">Wat het kost</p>
+                  <p className="diba-label text-[var(--t-label)]">
+                    Wat het kost
+                  </p>
                   <p className="mt-1.5 text-[16px] leading-7 text-[var(--t-strong)]">
                     {s.kost}
                   </p>

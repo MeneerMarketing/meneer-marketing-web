@@ -162,26 +162,24 @@ export default function NazorgPage() {
 
       {/* ── Het rooster: de signatuur ── */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-
-      {/* Nazorg is een pagina vol roosters en termijnen. Dit is het moment waar die roosters
+        {/* Nazorg is een pagina vol roosters en termijnen. Dit is het moment waar die roosters
           over gaan: het meegeven en het uitleggen, aan het eind van de afspraak. */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
-        <div className="mx-auto">
-          <BeeldVignet
-            src="/images/shoot/nazorg-producten.jpg"
-            alt="Behandelaar geeft een verzorgingsproduct mee aan een client"
-            onderschrift="Wat je meekrijgt, en waarom"
-            sizes="(min-width: 1024px) 86vw, 92vw"
-            className="aspect-[16/9] lg:aspect-[21/9]"
-          />
-        </div>
-      </section>
+        <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+          <div className="mx-auto">
+            <BeeldVignet
+              src="/images/shoot/nazorg-producten.jpg"
+              alt="Behandelaar geeft een verzorgingsproduct mee aan een client"
+              onderschrift="Wat je meekrijgt, en waarom"
+              sizes="(min-width: 1024px) 86vw, 92vw"
+              className="aspect-[16/9] lg:aspect-[21/9]"
+            />
+          </div>
+        </section>
         <div className="mx-auto">
           <div>
             <Label>Zeven bezigheden, vijf behandelingen</Label>
             <h2 className="diba-display-m mt-4">
-              Wat mag{" "}
-              <span className="diba-accent">wanneer weer.</span>
+              Wat mag <span className="diba-accent">wanneer weer.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Zoek je behandeling in de kolommen en je vraag in de rijen. Klik

@@ -22,7 +22,6 @@ import {
   UITSTEEKSEL_BEELDEN,
 } from "@/data/steelwratjes";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -42,7 +41,6 @@ export const metadata: Metadata = {
   title: "Steelwratjes laten verwijderen in Rotterdam",
   description:
     "Een zacht velletje aan een steeltje in je hals of oksel is meestal onschuldig en in een afspraak weg. Maar niet alles wat uitsteekt is een steelwratje.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/steelwratjes";

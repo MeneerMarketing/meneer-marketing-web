@@ -80,12 +80,36 @@ export const DIBA_REACTIETIJDEN = {
   email: "Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller.",
 } as const;
 
-/** NAP voor footer/schema — canoniek adres, geen verzonnen telefoon/KvK */
+/**
+ * Het KvK-nummer en de rechtsvorm.
+ *
+ * Ontbraken, en zijn nodig zodra er een privacyverklaring en een klachtenregeling staan:
+ * daarin moet staan wie de verwerkingsverantwoordelijke is, en dat is de rechtspersoon en
+ * niet de handelsnaam.
+ *
+ * Op 21-08-2026 overgenomen uit hun eigen algemene voorwaarden op dibaclinics.nl, waar het
+ * als rechtspersoongegeven staat. Het telefoonnummer stond hierboven al en is ongewijzigd.
+ *
+ * Gemarkeerd omdat die site op dat moment gecompromitteerd was. De kans dat een aanvaller
+ * een KvK-nummer wijzigt is klein, maar klein is niet nul, en dit gegeven komt straks in
+ * een juridisch document te staan.
+ *
+ * [GEGEVEN-NODIG: bevestig KvK-nummer 88713709 en de rechtsvorm B.V., Okan]
+ */
+export const DIBA_KVK = "88713709";
+export const DIBA_LEGAL_NAME = "Diba Clinics B.V.";
+
+/** NAP voor footer/schema — canoniek adres. */
 export const DIBA_NAP = {
   name: DIBA_SITE.name,
+  legalName: DIBA_LEGAL_NAME,
   street: DIBA_ADDRESS.street,
   zip: DIBA_ADDRESS.postalCode,
   city: DIBA_ADDRESS.city,
+  phone: DIBA_TELEFOON,
+  phoneHref: DIBA_TELEFOON_HREF,
+  kvk: DIBA_KVK,
+  email: DIBA_EMAIL,
   whatsappHref: DIBA_WHATSAPP_URL,
 } as const;
 

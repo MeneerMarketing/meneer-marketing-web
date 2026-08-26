@@ -220,8 +220,7 @@ export default function WerkenBijPage() {
           <div>
             <Label>Waar je mee werkt</Label>
             <h2 className="diba-display-m mt-4">
-              Twee vakken{" "}
-              <span className="diba-accent">onder één dak.</span>
+              Twee vakken <span className="diba-accent">onder één dak.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Dat is geen indeling op papier. Bij acne en pigment zit er vaak

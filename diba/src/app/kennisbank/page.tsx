@@ -86,8 +86,7 @@ export default function KennisbankPage() {
               Alles wat hier wordt uitgelegd staat verspreid over{" "}
               {BESTEMMINGEN.length} huidprobleempagina&apos;s,{" "}
               {APPARATUUR.length} apparaatpagina&apos;s en{" "}
-              {BEHANDELINGEN.length}{" "}
-              behandelpagina&apos;s. Deze pagina brengt
+              {BEHANDELINGEN.length} behandelpagina&apos;s. Deze pagina brengt
               dat bij elkaar, geordend op de vraag die je stelt in plaats van op
               wat wij aanbieden.
             </p>
@@ -239,8 +238,8 @@ export default function KennisbankPage() {
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
               Elke pagina begint bij de vraag die er het vaakst over gesteld
-              wordt. Die vraag staat hieronder, zodat je ziet waar je terechtkomt
-              voordat je klikt.
+              wordt. Die vraag staat hieronder, zodat je ziet waar je
+              terechtkomt voordat je klikt.
             </p>
           </div>
 

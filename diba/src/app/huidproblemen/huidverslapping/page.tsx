@@ -23,7 +23,6 @@ import {
   ZWAARTEKRACHT_STAPPEN,
 } from "@/data/huidverslapping";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -43,7 +42,6 @@ export const metadata: Metadata = {
   title: "Huidverslapping behandelen in Rotterdam",
   description:
     "Wat je liggend ziet is de bovengrens van wat aanspannen kan bereiken. Met de zwaartekrachttest weet je vooraf of een behandeling bij jou iets oplevert.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/huidverslapping";

@@ -22,7 +22,6 @@ import {
   PORIE_BEELDEN,
 } from "@/data/onzuivere-huid";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -42,7 +41,6 @@ export const metadata: Metadata = {
   title: "Onzuivere huid en mee-eters behandelen in Rotterdam",
   description:
     "De meeste puntjes op je neus zijn geen mee-eters maar talgfilamenten, en die horen er te zijn. Met zijlicht zie je zelf welke van de twee je hebt.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/onzuivere-huid";

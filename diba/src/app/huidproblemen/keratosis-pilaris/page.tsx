@@ -21,7 +21,6 @@ import {
   SCHUURTEST_STAPPEN,
 } from "@/data/keratosis-pilaris";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -41,7 +40,6 @@ export const metadata: Metadata = {
   title: "Keratosis pilaris en kippenvelhuid in Rotterdam",
   description:
     "Ruwe bultjes op je bovenarmen die niet weggaan. Niet te genezen, wel te verzachten, en scrubben maakt het juist erger.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/keratosis-pilaris";

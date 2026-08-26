@@ -44,7 +44,8 @@ const COOKIES = [
     soort: "Noodzakelijk",
     altijd: true,
     wat: "Nodig om de site te laten werken. Hieronder valt het onthouden van de keuze die u op de cookiebalk maakt, want zonder dat zou de vraag bij elk bezoek terugkomen.",
-    wanneer: "Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.",
+    wanneer:
+      "Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.",
   },
   {
     soort: "Anonieme statistieken",
@@ -110,8 +111,7 @@ export default function CookiePage() {
           <div>
             <Label>Wat er precies staat</Label>
             <h2 className="diba-display-m mt-4">
-              Wat er laadt,{" "}
-              <span className="diba-accent">en wanneer.</span>
+              Wat er laadt, <span className="diba-accent">en wanneer.</span>
             </h2>
           </div>
 

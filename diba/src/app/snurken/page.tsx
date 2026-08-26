@@ -21,7 +21,6 @@ import {
   SNURKEN_WIJ_DOEN_NIET,
 } from "@/data/snurken";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -59,7 +58,6 @@ export const metadata: Metadata = {
   title: "Snurken behandelen met laser in Rotterdam",
   description:
     "Snurken begint zelden in je keel alleen. Eerst kijken waar het geluid vandaan komt, dan pas of NightLase bij jou iets oplevert.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/snurken";
@@ -105,15 +103,16 @@ export default function SnurkenPage() {
             <h1 className="diba-display-l mt-6">
               Snurken is geluid.
               <br />
-              <span className="diba-accent">De vraag is waar het ontstaat.</span>
+              <span className="diba-accent">
+                De vraag is waar het ontstaat.
+              </span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Er bestaat een laserbehandeling die het zachte gehemelte
-              aanspant, en daar zijn wij goed in. Maar hij werkt alleen als het
-              geluid daar ontstaat. Zit het in je neus, je tong of je kaakstand,
-              dan levert hij niets op, en dat hoor je liever nu dan na drie
-              sessies.
+              Er bestaat een laserbehandeling die het zachte gehemelte aanspant,
+              en daar zijn wij goed in. Maar hij werkt alleen als het geluid
+              daar ontstaat. Zit het in je neus, je tong of je kaakstand, dan
+              levert hij niets op, en dat hoor je liever nu dan na drie sessies.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

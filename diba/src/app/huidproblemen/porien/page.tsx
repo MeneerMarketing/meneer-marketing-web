@@ -21,7 +21,6 @@ import {
   PORIEN_WEL_NIET,
   PORIEN_WIJ_DOEN_NIET,
 } from "@/data/porien";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -45,7 +44,6 @@ import {
 
 export const metadata: Metadata = {
   title: "Poriën: wat er wel en niet aan te doen is",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/porien";

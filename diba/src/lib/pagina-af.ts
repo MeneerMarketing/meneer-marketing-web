@@ -48,15 +48,25 @@ export function isPaginaAf(content: unknown): boolean {
 /**
  * ── DE SCHAKELAAR ──
  *
- * Zolang de site niet live staat is `noindex` zinloos: er is geen domein waar Google
- * langskomt, dus er valt niets te beschermen. Besluit Yasin, 31-07-2026: eruit.
+ * Zolang de site niet live staat is `noindex` zinloos: er is geen bereikbaar domein, dus
+ * er valt niets af te schermen.
  *
- * Hij staat hier als één constante en niet verspreid over vijfendertig bestanden, want
- * op de dag dat het domein live gaat is dit wél weer nodig. Dan bestaan er pagina's met
- * `[MEDISCHE-CHECK-ROJDA]` erin en prijzen van nul euro, en die horen niet in de index.
+ * Besluit Yasin, 21-08-2026: de pagina's dragen hem niet meer. Tot die dag stond op
+ * tweeëntwintig pagina's `...NOG_IN_AANBOUW` in de metadata, en dat was een botte
+ * schakelaar: hij keek niet of een pagina af was, alleen of de site af was. Aanzetten
+ * betekende dus dat ook een volledig nagekeken pagina uit de index verdween.
  *
- * **Vóór livegang: zet dit op `true`.** Dan dragen alle onafgeronde pagina's weer
- * `noindex, follow` en meldt de sitemap ze niet aan. Verder hoeft er niets te wijzigen.
+ * WAT ER VOOR TERUGKOMT, EN WANNEER.
+ *
+ * De sitemap gebruikt `poortjeActief()` nog wel, samen met `isPaginaAf()`. Dat is de
+ * betere vorm: die kijkt naar de inhoud van een pagina en niet naar de stand van het
+ * project, waardoor een pagina vanzelf meedoet zodra zijn laatste vlag weg is.
+ *
+ * Gaat het domein live terwijl er nog vlaggen open staan, dan is dat de weg: zet
+ * `POORTJE_ACTIEF` op `true` en geef de pagina's
+ * `...robotsVoor(isPaginaAf(<de data van die pagina>))` mee. Per pagina, met zijn eigen
+ * inhoud als maatstaf. Dat is een half uur werk en het voorkomt dat afgeronde pagina's
+ * meegesleept worden.
  */
 const POORTJE_ACTIEF = false;
 
@@ -64,31 +74,3 @@ const POORTJE_ACTIEF = false;
 export function poortjeActief() {
   return POORTJE_ACTIEF;
 }
-
-/**
- * Metadata-fragment voor een pagina die nog niet af is.
- *
- * Spreid over `robots` zodat het samen met de rest van de metadata werkt:
- *   export const metadata = { title: "...", ...robotsVoor(isPaginaAf(content)) };
- */
-export function robotsVoor(af: boolean) {
-  return af ? {} : NOG_IN_AANBOUW;
-}
-
-/**
- * Metadata voor een pagina die nog niet af is. Spreid hem in het metadata-object:
- *
- *   export const metadata = { title: "Prijzen", ...NOG_IN_AANBOUW };
- *
- * Met het poortje uit is dit een leeg object en zetten de pagina's dus niets. Staat het
- * aan, dan is `follow: true` bewust: de pagina mag niet in de index, maar de links erop
- * mogen wel gevolgd worden zodat de rest van de site vindbaar blijft.
- *
- * Let op wat hier NIET staat: een `description`. Vijftien pagina's hadden
- * `description: "[COPY-NODIG]"` staan, en die tekst gaat zo de zoekresultaten in.
- * Zonder description stelt Google er zelf een samen uit de pagina — altijd beter
- * dan een redactievlag.
- */
-export const NOG_IN_AANBOUW = POORTJE_ACTIEF
-  ? ({ robots: { index: false, follow: true } } as const)
-  : ({} as const);

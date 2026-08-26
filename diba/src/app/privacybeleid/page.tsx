@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
+import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_ADDRESS,
@@ -34,13 +35,25 @@ import {
  *
  * De AVG-rechten staan er los bij, want die gelden ongeacht waar iets ligt.
  *
- * WAT IK NIET HEB INGEVULD.
+ * DE BEWAARTERMIJNEN STAAN ER SINDS 21-08-2026 WEL.
  *
- * De bewaartermijnen. Voor een medisch dossier gelden wettelijke termijnen, en of jullie
- * behandelingen daaronder vallen is een juridische vraag die per behandeling anders kan
- * liggen. Dat verzin ik niet. [BESLUIT-OKAN] samen met een jurist, plus de vraag of er een
- * apart e-mailadres voor privacyverzoeken komt; zolang dat er niet is wijst de pagina naar
- * het algemene adres en dat staat er dan ook zo.
+ * Ze stonden hier eerst als open besluit "samen met een jurist". Dat was te voorzichtig:
+ * de termijn voor een medisch dossier is geen afspraak maar wet. Artikel 7:454 BW (de
+ * WGBO) schrijft twintig jaar voor, gerekend vanaf de laatste wijziging in het dossier.
+ *
+ * Dat de WGBO hier geldt volgt uit hun eigen algemene voorwaarden, waarin Diba Clinics
+ * B.V. zichzelf omschrijft als hulpverlener die handelingen op het gebied van de
+ * geneeskunst verricht, en de overeenkomst expliciet een behandelingsovereenkomst in de
+ * zin van artikel 7:446 BW noemt. Wie dat opschrijft, valt onder de bewaarplicht.
+ *
+ * De termijn staat er daarom mét de reden erbij: twintig jaar is langer dan mensen
+ * verwachten, en het scheelt een boos gesprek als er meteen bij staat dat de kliniek er
+ * niet omheen mag. [MEDISCHE-CHECK-ROJDA] op deze passage, want het raakt de WGBO.
+ *
+ * WAT ER NOG WEL OPEN STAAT.
+ *
+ * Of er een apart e-mailadres voor privacyverzoeken komt; zolang dat er niet is wijst de
+ * pagina naar het algemene adres en dat staat er dan ook zo.
  *
  * De u-vorm mag hier: dit is een juridische pagina.
  *
@@ -88,6 +101,44 @@ const PLEKKEN = [
     wat: "Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen u heeft gehad en hoe uw huid reageerde.",
     heen: "Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die u behandelen kijken erin.",
     hier: false,
+  },
+] as const;
+
+/**
+ * Hoe lang iets blijft, en op grond waarvan.
+ *
+ * De grond staat er expliciet bij, want dat is het verschil tussen een kliniek die iets
+ * bewaart omdat het handig is en een die het moet.
+ */
+const TERMIJNEN = [
+  {
+    wat: "Uw behandeldossier",
+    hoelang: "Twintig jaar",
+    grond:
+      "Wettelijk verplicht op grond van de WGBO (artikel 7:454 BW), gerekend vanaf de laatste wijziging in het dossier. Dit is geen termijn die wij korter mogen maken. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    wat: "Foto's die bij een behandeling horen",
+    hoelang: "Twintig jaar",
+    grond:
+      "Die horen bij het dossier en vallen onder dezelfde plicht. Foto's die u ons apart heeft toegestaan te gebruiken buiten uw dossier, verwijderen wij zodra u die toestemming intrekt. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    wat: "Facturen en administratie",
+    hoelang: "Zeven jaar",
+    grond: "De fiscale bewaarplicht van de Belastingdienst.",
+  },
+  {
+    wat: "Wat u ons appt of mailt",
+    hoelang: "Zolang het gesprek loopt, daarna opgeruimd",
+    grond:
+      "Geen verplichting; wij bewaren het alleen zolang het ergens toe dient.",
+  },
+  {
+    wat: "Meetgegevens van deze website",
+    hoelang: "Maximaal veertien maanden",
+    grond:
+      "Alleen als u de cookiebalk heeft geaccepteerd. Weigert u, dan wordt er niets gemeten en is er dus niets te bewaren.",
   },
 ] as const;
 
@@ -178,8 +229,9 @@ export default function PrivacyPage() {
               >
                 {DIBA_EMAIL}
               </a>{" "}
-              of telefonisch naar {DIBA_TELEFOON}. Zet er even bij dat het om een
-              privacyverzoek gaat, dan komt het bij de juiste persoon terecht.
+              of telefonisch naar {DIBA_TELEFOON}. Zet er even bij dat het om
+              een privacyverzoek gaat, dan komt het bij de juiste persoon
+              terecht.
             </p>
           </div>
         </div>
@@ -195,8 +247,8 @@ export default function PrivacyPage() {
               <span className="diba-accent">wel terechtkomen.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Drie van de vier zijn niet deze website. Bij elke plek staat wat er
-              ligt en waar het heen gaat.
+              Drie van de vier zijn niet deze website. Bij elke plek staat wat
+              er ligt en waar het heen gaat.
             </p>
           </div>
 
@@ -242,6 +294,55 @@ export default function PrivacyPage() {
       </section>
 
       {/* ── Uw rechten ── */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <Label>Hoe lang het blijft</Label>
+          <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            Twintig jaar,{" "}
+            <span className="diba-accent">en dat is geen keuze van ons.</span>
+          </h2>
+          <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
+            Een dossier van een geneeskundige behandeling moet twintig jaar
+            bewaard blijven. Dat staat in de wet, en het is langer dan de meeste
+            mensen verwachten. Daarom staat er hieronder bij elk gegeven op
+            grond waarvan wij het bewaren.
+          </p>
+
+          <div className="mt-10 overflow-x-auto">
+            <table className="w-full min-w-[640px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-[var(--g-100)]">
+                  <th scope="col" className="diba-label pb-3 pr-6">
+                    Wat
+                  </th>
+                  <th scope="col" className="diba-label pb-3 pr-6">
+                    Hoe lang
+                  </th>
+                  <th scope="col" className="diba-label pb-3">
+                    Op grond waarvan
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {TERMIJNEN.map((t) => (
+                  <tr key={t.wat} className="border-b border-[var(--g-100)]">
+                    <td className="py-4 pr-6 align-top text-[15px] leading-7 font-medium">
+                      {t.wat}
+                    </td>
+                    <td className="py-4 pr-6 align-top text-[15px] leading-7 whitespace-nowrap text-[var(--t-body)]">
+                      {t.hoelang}
+                    </td>
+                    <td className="max-w-[52ch] py-4 align-top text-[15px] leading-7 text-[var(--t-body)]">
+                      {publicCopy(t.grond)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">

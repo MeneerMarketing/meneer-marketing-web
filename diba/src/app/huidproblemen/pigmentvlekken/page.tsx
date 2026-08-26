@@ -22,7 +22,6 @@ import {
   PIGMENT_WEL_NIET,
   PIGMENT_WIJ_DOEN_NIET,
 } from "@/data/pigment";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -48,7 +47,6 @@ import {
 
 export const metadata: Metadata = {
   title: "Pigmentvlekken en melasma behandelen in Rotterdam",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/pigmentvlekken";

@@ -22,7 +22,6 @@ import {
   DRUKPROEF_STAPPEN,
 } from "@/data/couperose";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -60,7 +59,6 @@ export const metadata: Metadata = {
   title: "Couperose behandelen in Rotterdam",
   description:
     "Rode vaatjes op je wangen of naast je neus. Met de drukproef zie je zelf of het couperose is of een rode gloed, en dat bepaalt wat helpt.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/couperose";

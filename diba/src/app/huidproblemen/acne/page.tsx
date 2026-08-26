@@ -12,7 +12,6 @@ import ProofBar from "@/components/ui/ProofBar";
 import { ACNE_FAQ, ACNE_WEL_NIET, ACNE_WIJ_DOEN_NIET } from "@/data/acne";
 import { FIGMA_KENNISBANK_ACNE } from "@/data/figma-home-images";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -50,7 +49,6 @@ import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
 
 export const metadata: Metadata = {
   title: "Acne behandelen in Rotterdam",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/acne";
@@ -177,10 +175,10 @@ export default function AcnePage() {
               </h2>
             </div>
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De kaaklijn wijst iets anders aan dan de T-zone. Bij wangen kan het
-              van buiten komen, van je telefoon of je kussensloop, maar net zo
-              goed hormonaal zijn. En acne op je rug of schouders is een zone op
-              zich, met een eigen oorzaak. Tik aan waar het bij jou zit, dan
+              De kaaklijn wijst iets anders aan dan de T-zone. Bij wangen kan
+              het van buiten komen, van je telefoon of je kussensloop, maar net
+              zo goed hormonaal zijn. En acne op je rug of schouders is een zone
+              op zich, met een eigen oorzaak. Tik aan waar het bij jou zit, dan
               lezen we mee. Je mag er meerdere kiezen.
             </p>
           </div>
@@ -353,7 +351,6 @@ export default function AcnePage() {
               </li>
             ))}
           </ul>
-
         </div>
       </section>
 
@@ -428,10 +425,7 @@ export default function AcnePage() {
 
           <div className="border-t border-[var(--g-100)]">
             {ACNE_FAQ.map((item) => (
-              <details
-                key={item.vraag}
-                className="group py-6"
-              >
+              <details key={item.vraag} className="group py-6">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
                   <span>{item.vraag}</span>
                   <span

@@ -190,7 +190,9 @@ export default function OverOnsPage() {
                   <p className="text-[36px] leading-none font-medium tracking-[-.05em] tabular-nums">
                     {c.waarde}
                   </p>
-                  <p className="diba-label diba-label-on-dark mt-2">{c.label}</p>
+                  <p className="diba-label diba-label-on-dark mt-2">
+                    {c.label}
+                  </p>
                   <p className="mt-5 text-[15px] leading-7 text-[var(--on-dark-body)]">
                     {c.zegt}
                   </p>
@@ -239,8 +241,7 @@ export default function OverOnsPage() {
           <div>
             <Label>Wat er in huis is</Label>
             <h2 className="diba-display-m mt-4">
-              Gereedschap,{" "}
-              <span className="diba-accent">geen belofte.</span>
+              Gereedschap, <span className="diba-accent">geen belofte.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben
@@ -312,9 +313,9 @@ export default function OverOnsPage() {
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               Waarom er hier eerst gemeten wordt, waarom prijzen openbaar staan
-              en waarom er bij elke behandeling staat wat hij niet kan: dat is een
-              ander verhaal dan een opsomming van wat er in huis is. Het staat op
-              een eigen pagina, in vijf regels waar we ons aan houden.
+              en waarom er bij elke behandeling staat wat hij niet kan: dat is
+              een ander verhaal dan een opsomming van wat er in huis is. Het
+              staat op een eigen pagina, in vijf regels waar we ons aan houden.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

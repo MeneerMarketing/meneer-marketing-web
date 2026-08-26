@@ -16,7 +16,6 @@ import {
   MOEDERVLEK_WEL_NIET,
   MOEDERVLEK_WIJ_DOEN_NIET,
 } from "@/data/moedervlekken";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
@@ -43,7 +42,6 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Moedervlekken: waar je op let en waar je heen gaat",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/moedervlekken";

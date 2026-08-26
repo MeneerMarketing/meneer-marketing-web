@@ -112,8 +112,7 @@ export default function GentleMaxProPage() {
           <div>
             <Label>755 of 1064 nanometer</Label>
             <h2 className="diba-display-m mt-4">
-              Welke laser{" "}
-              <span className="diba-accent">krijg jij?</span>
+              Welke laser <span className="diba-accent">krijg jij?</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Kies je huidtype en je ziet welke van de twee er dan gebruikt
@@ -152,7 +151,8 @@ export default function GentleMaxProPage() {
               <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
                 Een korte tik met iets kouds eromheen, herhaald over de zone.
                 Hoe het precies aanvoelt verschilt per plek: op een scheenbeen
-                is het scherper dan op een bovenbeen, omdat er minder tussen zit.
+                is het scherper dan op een bovenbeen, omdat er minder tussen
+                zit.
               </p>
             </div>
           </div>
@@ -217,8 +217,8 @@ export default function GentleMaxProPage() {
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               Deze pagina gaat over het apparaat. Welke zones er zijn, wat een
               sessie kost en hoeveel sessies er in een traject gaan, staat op de
-              behandelpagina. Daar reken je het zelf uit, per zone, zonder dat er
-              een bedrag achterblijft tot aan de balie.
+              behandelpagina. Daar reken je het zelf uit, per zone, zonder dat
+              er een bedrag achterblijft tot aan de balie.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

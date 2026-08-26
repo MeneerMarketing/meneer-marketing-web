@@ -220,8 +220,7 @@ export default function BehandelingenPage() {
           <div>
             <Label>Wat hier niet staat</Label>
             <h2 className="diba-display-m mt-4 max-w-[14ch]">
-              Welke de{" "}
-              <span className="diba-accent">beste is.</span>
+              Welke de <span className="diba-accent">beste is.</span>
             </h2>
             <DibaLeafMark
               aria-hidden="true"

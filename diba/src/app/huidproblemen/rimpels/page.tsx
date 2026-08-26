@@ -22,7 +22,6 @@ import {
   RIMPELS_WIJ_DOEN_NIET,
   BEWEEGTEST_STAPPEN,
 } from "@/data/rimpels";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -34,7 +33,6 @@ export const metadata: Metadata = {
   title: "Rimpels en fijne lijntjes behandelen in Rotterdam",
   description:
     "Beweegt de lijn mee of blijft hij staan? Dat verschil bepaalt volledig wat er zin heeft, en je maakt het zelf met een spiegel.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/rimpels";

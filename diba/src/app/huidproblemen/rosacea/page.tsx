@@ -21,7 +21,6 @@ import {
   ROSACEA_WEL_NIET,
   ROSACEA_WIJ_DOEN_NIET,
 } from "@/data/rosacea";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -51,7 +50,6 @@ import {
 
 export const metadata: Metadata = {
   title: "Rosacea en couperose behandelen in Rotterdam",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/rosacea";

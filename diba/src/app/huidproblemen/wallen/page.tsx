@@ -21,7 +21,6 @@ import {
   WALLEN_WIJ_DOEN_NIET,
 } from "@/data/wallen";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -49,7 +48,6 @@ export const metadata: Metadata = {
   title: "Wallen onder de ogen: vocht, vet of schaduw",
   description:
     "Wallen hebben drie oorzaken en maar een daarvan is met een huidbehandeling aan te pakken. Met de ochtendtest weet je zelf welke je hebt.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/wallen";

@@ -114,7 +114,6 @@ const HOE_VERWIJZEN = [
 ];
 
 export default function VerwijzersPage() {
-
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
       <SchemaMarkup
@@ -233,7 +232,9 @@ export default function VerwijzersPage() {
               <Label opDonker>Wie de behandeling doet</Label>
               <h2 className="diba-display-m mt-4">
                 Eén titel is{" "}
-                <span className="diba-accent-on-dark">wettelijk beschermd.</span>
+                <span className="diba-accent-on-dark">
+                  wettelijk beschermd.
+                </span>
               </h2>
               <p className="mt-6 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Voor een verwijzer is dat het verschil dat telt, en op de meeste
@@ -250,7 +251,9 @@ export default function VerwijzersPage() {
                       {v.label}
                     </p>
                     <span className="diba-label rounded-[var(--r-pill)] bg-white/15 px-3 py-1.5 text-[var(--on-dark-accent)]">
-                      {v.beschermd ? "Beschermde titel" : "Geen beschermde titel"}
+                      {v.beschermd
+                        ? "Beschermde titel"
+                        : "Geen beschermde titel"}
                     </span>
                   </div>
                   <p className="mt-2 max-w-[58ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
@@ -357,7 +360,8 @@ export default function VerwijzersPage() {
             <p className="mt-3 max-w-[74ch] text-[16px] leading-7 text-[var(--t-body)]">
               Of en hoe er na de meting wordt teruggekoppeld aan de verwijzer is
               nog niet vastgelegd, en daarom staat er geen belofte over. Belt of
-              mailt u gerust met de vraag; dan hoort u hoe het op dat moment gaat.
+              mailt u gerust met de vraag; dan hoort u hoe het op dat moment
+              gaat.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
               <a

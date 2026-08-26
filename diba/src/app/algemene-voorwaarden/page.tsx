@@ -79,7 +79,9 @@ export default function VoorwaardenPage() {
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Algemene voorwaarden</span>
+              <span className="text-[var(--t-muted)]">
+                Algemene voorwaarden
+              </span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
@@ -106,8 +108,8 @@ export default function VoorwaardenPage() {
               niets, en u hoeft geen reden te geven.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              Daarna wordt een deel van het tarief in rekening gebracht, omdat de
-              plek dan niet meer op te vullen is. Alle andere regels op deze
+              Daarna wordt een deel van het tarief in rekening gebracht, omdat
+              de plek dan niet meer op te vullen is. Alle andere regels op deze
               pagina zijn varianten op die ene.
             </p>
           </div>
@@ -120,8 +122,7 @@ export default function VoorwaardenPage() {
           <div>
             <Label>Acht situaties</Label>
             <h2 className="diba-display-m mt-4">
-              Wat het kost,{" "}
-              <span className="diba-accent">en waarom.</span>
+              Wat het kost, <span className="diba-accent">en waarom.</span>
             </h2>
           </div>
 
@@ -174,10 +175,7 @@ export default function VoorwaardenPage() {
               <Label opDonker>Wat altijd geldt</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
                 Drie dingen die{" "}
-                <span className="diba-accent-on-dark">
-                  {" "}
-                  nooit veranderen.
-                </span>
+                <span className="diba-accent-on-dark"> nooit veranderen.</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Dit zijn geen bepalingen maar toezeggingen. Ze staan hier zodat
@@ -222,8 +220,8 @@ export default function VoorwaardenPage() {
               niets aan heeft.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Ook de termijnen en bedragen op deze pagina zijn in deze versie nog
-              een voorstel. Wat er bij uw afspraak is afgesproken en op uw
+              Ook de termijnen en bedragen op deze pagina zijn in deze versie
+              nog een voorstel. Wat er bij uw afspraak is afgesproken en op uw
               bevestiging staat, gaat voor op wat hier staat.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">

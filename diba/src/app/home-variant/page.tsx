@@ -57,8 +57,8 @@ export default function HomeVariantPage() {
                   menu er in wit overheen.
                 </li>
                 <li>
-                  De foto toont de huidscan die samen bekeken wordt. Dat is
-                  waar de kop over gaat.
+                  De foto toont de huidscan die samen bekeken wordt. Dat is waar
+                  de kop over gaat.
                 </li>
                 <li>
                   De topbalk en de ruimte om het beeld staan op dezelfde tint,

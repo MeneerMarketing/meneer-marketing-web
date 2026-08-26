@@ -231,8 +231,7 @@ export default function DoelgroepHubPage() {
           <div>
             <Label>En de rest</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Sta je er niet{" "}
-              <span className="diba-accent">tussen?</span>
+              Sta je er niet <span className="diba-accent">tussen?</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

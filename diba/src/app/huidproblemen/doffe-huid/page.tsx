@@ -23,7 +23,6 @@ import {
   LICHTTEST_STAPPEN,
 } from "@/data/doffe-huid";
 import { publicCopy } from "@/lib/copy-flags";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -43,7 +42,6 @@ export const metadata: Metadata = {
   title: "Doffe huid: waar komt die grauwe tint vandaan",
   description:
     "Dof is licht dat verstrooit in plaats van weerkaatst. Vier oorzaken, en bij twee ervan is de beste behandeling een gewoonte en geen afspraak.",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/doffe-huid";

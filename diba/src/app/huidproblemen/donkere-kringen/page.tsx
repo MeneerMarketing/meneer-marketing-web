@@ -20,7 +20,6 @@ import {
   KRINGEN_WIJ_DOEN_NIET,
   UITKOMSTEN,
 } from "@/data/kringen";
-import { NOG_IN_AANBOUW } from "@/lib/pagina-af";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_PROOF_STRIP_ITEMS,
@@ -47,7 +46,6 @@ import {
 
 export const metadata: Metadata = {
   title: "Donkere kringen: welk type heb jij?",
-  ...NOG_IN_AANBOUW,
 };
 
 const PAD = "/huidproblemen/donkere-kringen";

@@ -83,8 +83,8 @@ export default function PcosPage() {
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               Wie met PCOS te maken heeft, heeft meestal al genoeg beloftes
-              gehoord. Hieronder staat per klacht wat we kunnen doen, wat we niet
-              kunnen doen en wanneer je ergens anders moet zijn.
+              gehoord. Hieronder staat per klacht wat we kunnen doen, wat we
+              niet kunnen doen en wanneer je ergens anders moet zijn.
             </p>
           </div>
 
@@ -96,8 +96,8 @@ export default function PcosPage() {
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
               Iets herkennen is niet hetzelfde als iets vaststellen. Die
-              vaststelling doet je huisarts of gynaecoloog, met onderzoek dat wij
-              niet doen en niet mogen doen.
+              vaststelling doet je huisarts of gynaecoloog, met onderzoek dat
+              wij niet doen en niet mogen doen.
             </p>
           </div>
         </div>
@@ -123,8 +123,7 @@ export default function PcosPage() {
           <div>
             <Label>Drie kolommen</Label>
             <h2 className="diba-display-m mt-4">
-              Wie doet{" "}
-              <span className="diba-accent">wat.</span>
+              Wie doet <span className="diba-accent">wat.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               De derde kolom is de eerlijkste, en die ontbreekt op vrijwel elke
@@ -167,8 +166,7 @@ export default function PcosPage() {
           <div>
             <Label>Vier huidklachten</Label>
             <h2 className="diba-display-m mt-4">
-              Wat we wel doen,{" "}
-              <span className="diba-accent">en wat niet.</span>
+              Wat we wel doen, <span className="diba-accent">en wat niet.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene
@@ -287,9 +285,9 @@ export default function PcosPage() {
               maand was.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de
-              intake. Niet omdat wij daar iets mee doen, maar omdat het uitmaakt
-              voor wat wij op welk moment aanraden.
+              Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij
+              de intake. Niet omdat wij daar iets mee doen, maar omdat het
+              uitmaakt voor wat wij op welk moment aanraden.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

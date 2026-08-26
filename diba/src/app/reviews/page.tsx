@@ -90,8 +90,8 @@ export default function ReviewsPage() {
               minder zegt dan het lijkt.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Lees je daarna alsnog door, dan lees je iets wat je kunt wegen. Dat
-              is meer waard dan een muur met vijven.
+              Lees je daarna alsnog door, dan lees je iets wat je kunt wegen.
+              Dat is meer waard dan een muur met vijven.
             </p>
           </div>
 
@@ -197,13 +197,12 @@ export default function ReviewsPage() {
           <div>
             <Label>{SALONIZED_REVIEWS.length} overgenomen quotes</Label>
             <h2 className="diba-display-m mt-4">
-              Zoek op wat{" "}
-              <span className="diba-accent">jij zelf hebt.</span>
+              Zoek op wat <span className="diba-accent">jij zelf hebt.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Sorteren op score heeft geen zin als alles vijf is, en zelf de
-              beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet. Dus
-              filter je zelf, met het aantal op de knop. Ook als dat aantal
+              beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet.
+              Dus filter je zelf, met het aantal op de knop. Ook als dat aantal
               tegenvalt.
             </p>
           </div>
@@ -220,8 +219,7 @@ export default function ReviewsPage() {
           <div>
             <Label>Wat hier niet staat</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Verzonnen{" "}
-              <span className="diba-accent">reviews.</span>
+              Verzonnen <span className="diba-accent">reviews.</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

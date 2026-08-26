@@ -374,8 +374,8 @@ export default function IntakePage() {
 
           <p className="mt-8 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Wat we niet doen: nabellen, een aanbod dat verloopt, of een korting
-            als je vandaag beslist. Die staan nergens op deze site en ze komen er
-            ook niet.
+            als je vandaag beslist. Die staan nergens op deze site en ze komen
+            er ook niet.
           </p>
         </div>
       </section>
