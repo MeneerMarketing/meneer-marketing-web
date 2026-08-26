@@ -12,6 +12,7 @@ import {
   WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
+import { PorieVocht } from "@/components/ui/HuidIcon";
 import ProofBar from "@/components/ui/ProofBar";
 import {
   DROGE_HUID_FAQ,
@@ -140,6 +141,7 @@ export default function DrogeHuidPage() {
       >
         <div className="mx-auto">
           <SectieKop
+            icoon={PorieVocht}
             label="De huidmatrix"
             // Twee gelijke helften eronder, dus de introzin volgt die indeling.
             raster="gelijk"

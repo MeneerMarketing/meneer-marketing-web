@@ -11,6 +11,7 @@ import {
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
+import { Haarzakje } from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import {
@@ -157,6 +158,7 @@ export default function Pagina() {
       >
         <div className="mx-auto">
           <SectieKop
+            icoon={Haarzakje}
             label="De haarcheck"
             raster="gelijk"
             kop="Fel licht,"

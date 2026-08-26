@@ -30,6 +30,7 @@ export function SectieKop({
   intro,
   opDonker = false,
   raster = "standaard",
+  icoon: Icoon,
 }: {
   label: string;
   kop: string;
@@ -45,6 +46,17 @@ export function SectieKop({
    * onderscheid stond de zin zesenveertig pixels naast de kaarten eronder.
    */
   raster?: "standaard" | "gelijk";
+  /**
+   * Het huidicoon boven het label.
+   *
+   * Alleen voor de sectie die het eigen onderzoek van een pagina draagt: de drukproef,
+   * de ochtendtest, de beweegtest. Die sectie is per pagina anders en verdient een eigen
+   * gezicht; de vaste secties eronder zijn overal hetzelfde en horen dat te blijven.
+   *
+   * Zet hem dus niet overal neer. Een icoon boven elke kop is geen accent meer maar
+   * behang, en dan zegt het niets meer over waar je bent.
+   */
+  icoon?: (p: { size?: number }) => React.ReactElement;
 }) {
   return (
     /* Eén gedeeld raster met de inhoud eronder. Stond op 0.85/1.15 met gap-6 terwijl de
@@ -56,6 +68,17 @@ export function SectieKop({
       }
     >
       <div>
+        {Icoon ? (
+          <span
+            className={`mb-5 flex h-14 w-14 items-center justify-center rounded-[var(--r-md)] ${
+              opDonker
+                ? "bg-white/12 text-[var(--on-dark)]"
+                : "bg-[var(--g-100)] text-[var(--g-700)]"
+            }`}
+          >
+            <Icoon size={34} />
+          </span>
+        ) : null}
         <Label opDonker={opDonker}>{label}</Label>
         <h2 className="diba-display-m mt-4 max-w-[18ch]">
           {kop}
