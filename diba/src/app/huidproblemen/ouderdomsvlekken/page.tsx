@@ -128,8 +128,8 @@ export default function Pagina() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-nordlys.jpg"
-              alt="Nordlys-behandeling met beschermbril in de behandelkamer"
+              src="/images/shoot/intent-pigment.jpg"
+              alt="Behandelaar beoordeelt pigment op de huid van een cliënt"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

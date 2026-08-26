@@ -126,8 +126,8 @@ export default function Pagina() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/kliniek-behandelkamer.jpg"
-              alt="Behandelaar werkt aan de huid van een client in de behandelkamer"
+              src="/images/shoot/eerlijk-advies-consult.jpg"
+              alt="Behandelaar en cliënt in gesprek tijdens een consult"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

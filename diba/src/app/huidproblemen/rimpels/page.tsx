@@ -129,8 +129,8 @@ export default function Pagina() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-fotona.jpg"
-              alt="Fotona-laserbehandeling in de behandelkamer, met oogbescherming"
+              src="/images/shoot/intent-veroudering.jpg"
+              alt="Cliënt tijdens een behandeling gericht op huidveroudering"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"
