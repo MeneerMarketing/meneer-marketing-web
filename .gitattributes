@@ -1,0 +1,27 @@
+# Regeleindes: één keer vastleggen in plaats van per machine laten raden.
+#
+# Zonder dit bestand bepaalt `core.autocrlf` per computer wat er op schijf staat. Op
+# Windows werd dat CRLF terwijl git LF opslaat, en dan meldt `git status` vierenzestig
+# bestanden als gewijzigd waarin nul tekens veranderd zijn. Dat is niet gevaarlijk, maar
+# het maakt wel onzichtbaar wat je écht hebt aangepast — precies de fout die hier op
+# 21-08-2026 gemaakt werd, toen drie van die spookwijzigingen werden aangezien voor het
+# werk van een andere sessie.
+#
+# `text=auto eol=lf`: git bepaalt zelf wat tekst is, en schrijft die overal met LF weg.
+# Dat is ook wat de buildserver en de meeste tooling verwachten.
+* text=auto eol=lf
+
+# Binair: nooit aanraken. Een JPEG waarin regeleindes worden "gecorrigeerd" is stuk.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.avif  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.mp4   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
