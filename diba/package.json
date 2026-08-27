@@ -11,7 +11,8 @@
     "start:lan": "next start --port 3011 --hostname 0.0.0.0",
     "nakijklijst": "node scripts/nakijklijst.mjs",
     "huisregels": "node scripts/controleer-huisregels.mjs",
-    "mobiel": "node scripts/controleer-mobiel.mjs"
+    "mobiel": "node scripts/controleer-mobiel.mjs",
+    "teksten": "node scripts/tekstexport.mjs"
   },
   "dependencies": {
     "next": "16.2.2",
