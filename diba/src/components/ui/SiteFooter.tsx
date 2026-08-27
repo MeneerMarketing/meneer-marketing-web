@@ -44,6 +44,9 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
           <Link prefetch={false} href="/cookiebeleid" className={footerLink}>
             Cookies
           </Link>
+          <Link prefetch={false} href="/klachten" className={footerLink}>
+            Klachten
+          </Link>
           {instagram ? (
             <a
               href={instagram}

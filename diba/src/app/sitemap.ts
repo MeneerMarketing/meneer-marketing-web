@@ -89,6 +89,7 @@ const STATISCH_IN_AANBOUW: readonly string[] = [
   "/verwijzers",
   "/kennisbank",
   "/privacybeleid",
+  "/klachten",
   "/cookiebeleid",
   "/algemene-voorwaarden",
   "/pcos",

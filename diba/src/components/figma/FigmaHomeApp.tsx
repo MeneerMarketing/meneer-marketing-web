@@ -22,9 +22,7 @@ import ProofBar from "@/components/ui/ProofBar";
 import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
 import MiniHuidscan from "@/components/ui/MiniHuidscan";
 import WerkwijzeStepsFlow from "@/components/ui/WerkwijzeStepsFlow";
-import {
-  FIGMA_TRAJECT_TESTIMONIAL,
-} from "@/data/figma-home-images";
+import { FIGMA_TRAJECT_TESTIMONIAL } from "@/data/figma-home-images";
 import { HOME_FAQ_ITEMS } from "@/data/home-faq";
 import { publicCopy } from "@/lib/copy-flags";
 import {
@@ -142,8 +140,8 @@ export default function FigmaHomeApp({
                 </h1>
 
                 <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies, openbare
-                  prijzen, en een nulmeting voordat we behandelen.
+                  Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies,
+                  openbare prijzen, en een nulmeting voordat we behandelen.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -683,6 +681,12 @@ export default function FigmaHomeApp({
             >
               Cookies
             </Link>
+            <Link
+              href="/klachten"
+              className="transition hover:text-[var(--g-700)]"
+            >
+              Klachten
+            </Link>
             {DIBA_INSTAGRAM_URL ? (
               <a
                 href={DIBA_INSTAGRAM_URL}
@@ -693,9 +697,7 @@ export default function FigmaHomeApp({
                 Instagram
               </a>
             ) : (
-              <span className="opacity-50">
-                Instagram
-              </span>
+              <span className="opacity-50">Instagram</span>
             )}
           </div>
           <div className="diba-label flex flex-col gap-5 text-[var(--t-muted)] sm:flex-row sm:items-center sm:justify-between">

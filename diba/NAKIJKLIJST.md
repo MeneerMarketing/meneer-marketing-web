@@ -11,12 +11,12 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 462 regels.**
+**Totaal: 464 regels.**
 
 
-## Voor Okan (17)
+## Voor Okan (19)
 
-### GEGEVEN-NODIG · 7
+### GEGEVEN-NODIG · 9
 
 Er staat een werkbare aanname. Bevestig hem of geef het juiste getal.
 
@@ -31,6 +31,13 @@ Er staat een werkbare aanname. Bevestig hem of geef het juiste getal.
 
 - Op de wateras vaak binnen twee weken, op de vetas veel langzamer omdat je daar tegen je aanleg in werkt. Reken op zes tot acht weken voordat je op die tweede as iets vaststelt. Dat verschil in tempo is meteen de beste test van waar je zat.
   <sub>src/data/droge-huid.ts:181</sub>
+
+**Inhoud: klachten** (2)
+
+- Kom je er met ons niet uit, of wil je liever niet rechtstreeks met de kliniek praten, dan is er een klachtenfunctionaris. Die staat los van de behandelaars, kost je niets, en helpt je je klacht helder te krijgen en een oplossing te zoeken. Hij of zij kiest geen partij en is er niet om ons te verd...
+  <sub>src/data/klachten.ts:60</sub>
+- Ben je het niet eens met ons oordeel, dan kun je naar de onafhankelijke geschilleninstantie waar wij bij zijn aangesloten. Die doet een bindende uitspraak en kan een schadevergoeding toekennen tot 25.000 euro. Je hoeft daar geen advocaat voor.
+  <sub>src/data/klachten.ts:76</sub>
 
 **Inhoud: kringen** (1)
 
@@ -106,7 +113,7 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 **Homepage** (1)
 
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
-  <sub>src/app/sitemap.ts:124</sub>
+  <sub>src/app/sitemap.ts:125</sub>
 
 ## Voor Rojda (445)
 
