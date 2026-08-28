@@ -79,9 +79,9 @@ export default function ResultatenPage() {
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              We tonen alleen resultaatfoto's van eigen klanten die daarvoor
+              We tonen alleen resultaatfoto&apos;s van eigen klanten die daarvoor
               toestemming hebben gegeven. Zolang geschikte beelden ontbreken,
-              plaatsen we geen voorbeeldfoto's van anderen.
+              plaatsen we geen voorbeeldfoto&apos;s van anderen.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               In plaats daarvan krijg je iets wat je aan drie foto&apos;s niet
@@ -262,8 +262,8 @@ export default function ResultatenPage() {
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              We tonen alleen voor- en nafoto's van eigen klanten die
-              toestemming hebben gegeven en waarbij de foto's onder
+              We tonen alleen voor- en nafoto&apos;s van eigen klanten die
+              toestemming hebben gegeven en waarbij de foto&apos;s onder
               vergelijkbare omstandigheden zijn gemaakt.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
