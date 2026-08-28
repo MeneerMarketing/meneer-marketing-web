@@ -291,10 +291,7 @@ export default function DrieKnoppen() {
         </div>
 
         {/* ── De uitkomst ── */}
-        <div
-          className="mt-8 pt-6"
-          aria-live="polite"
-        >
+        <div className="mt-8 pt-6" aria-live="polite">
           <Label>{`${telAan} van 3 aangepakt`}</Label>
           <h3 className="diba-card-title-lg mt-3">{uitkomst.kop}</h3>
           <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">

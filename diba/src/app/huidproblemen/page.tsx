@@ -181,9 +181,8 @@ export default function HuidproblemenPage() {
           </div>
           <div className="mt-8 flex flex-col justify-end lg:mt-0">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Welke pagina je ook las, het begint hetzelfde: kijken wat er is
-              voordat er iets gebeurt. Soms is de uitkomst dat we je niets
-              verkopen, en dat hoort erbij.
+              Iedere huidvraag begint met een beoordeling, waaruit ook kan
+              volgen dat we geen behandeling adviseren.
             </p>
             <div className="mt-7">
               <Button href="/intake" variant="primair-op-donker">

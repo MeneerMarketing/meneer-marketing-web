@@ -160,7 +160,7 @@ export default function Pagina() {
             raster="gelijk"
             kop="Steeltje, kleur,"
             accent="en of het onveranderd is."
-            intro="Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan trekken en niet knijpen: dat is precies wat mensen thuis doen en waar het misgaat."
+            intro="Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan trekken en niet knijpen: dat is wat mensen thuis doen en waar het misgaat."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">

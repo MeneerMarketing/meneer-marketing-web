@@ -58,7 +58,8 @@ export const UITSTEEKSEL_BEELDEN: readonly UitsteekselBeeld[] = [
   {
     id: "keratose",
     naam: "Een ruwe bruine bult",
-    klanttaal: "Een bruin plekje dat verheven aanvoelt, alsof het erop geplakt zit",
+    klanttaal:
+      "Een bruin plekje dat verheven aanvoelt, alsof het erop geplakt zit",
     vakterm: "seborroïsche keratose",
     zelfcheck:
       "Zit het met een breed vlak op de huid in plaats van aan een steeltje, en voelt het oppervlak korrelig of wasachtig?",

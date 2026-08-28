@@ -141,7 +141,10 @@ export default function Meeneemkaart() {
         </Link>
       </div>
 
-      <p aria-live="polite" className="mt-5 text-[14px] leading-6 text-[var(--g-900)]">
+      <p
+        aria-live="polite"
+        className="mt-5 text-[14px] leading-6 text-[var(--g-900)]"
+      >
         {gekopieerd
           ? "De tekst staat op je klembord. Er is niets verstuurd: dat doe jij zelf, als je wil."
           : "Je profiel blijft in deze browser staan en gaat uit zichzelf nergens heen. Kopiëren zet het op je klembord, meer niet."}

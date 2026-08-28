@@ -57,10 +57,7 @@ export default function Kleurwijzer() {
         ))}
       </div>
 
-      <div
-        className={`mt-10 ${RASTER_SECTIE}`}
-        aria-live="polite"
-      >
+      <div className={`mt-10 ${RASTER_SECTIE}`} aria-live="polite">
         {/* ── Wat die kleur betekent ── */}
         <div className="self-start rounded-[var(--r-md)] bg-white p-6 sm:p-8">
           <Label>Wat deze kleur betekent</Label>

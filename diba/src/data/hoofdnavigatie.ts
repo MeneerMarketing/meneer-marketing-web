@@ -156,7 +156,7 @@ const HUIDPROFIEL_BLOK: NavUitgelicht = {
   },
   foto: {
     src: "/images/shoot/apparaat-eve-m.jpg",
-    alt: "Behandelaar plaatst een cliënt in de Eve-M huidscanner",
+    alt: "Behandelaar plaatst een cliënt in de EVE-M huidscanner",
   },
 };
 
@@ -261,7 +261,7 @@ export const HOOFDNAV: readonly NavItem[] = [
         kop: "Meest gevraagd",
         items: [
           {
-            label: "Consult met Eve-M",
+            label: "Consult met EVE-M",
             href: "/behandelingen/huidanalyse",
             zin: kortZin("huidanalyse"),
           },

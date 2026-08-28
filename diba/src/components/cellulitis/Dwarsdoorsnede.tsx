@@ -116,8 +116,7 @@ function Doorsnede({ bouw, vet }: { bouw: Bouw["id"]; vet: number }) {
               const x = kol * 36 + (rij % 2 === 0 ? 4 : 22);
               /* De rijen verdelen zich over de laag, hoe dik die ook is. Bij een dunne
                  laag schuiven ze dus naar elkaar toe in plaats van door de spier heen. */
-              const y =
-                OPPERVLAK + ((spier - OPPERVLAK) * (rij * 2 + 1)) / 6;
+              const y = OPPERVLAK + ((spier - OPPERVLAK) * (rij * 2 + 1)) / 6;
               if (x > BREED) return null;
               return (
                 <rect
@@ -204,8 +203,8 @@ export default function Dwarsdoorsnede() {
           <p className="mt-4 max-w-[76ch] text-[15px] leading-7 text-[var(--t-body)]">
             Schuif hem van links naar rechts en kijk naar de bovenranden. Links
             worden de kuiltjes dieper, rechts blijft het vlak. Zet hem dan
-            helemaal naar links: het reliëf wordt vlakker en het patroon staat er
-            nog steeds, want de schotjes lopen nog waar ze liepen.
+            helemaal naar links: het reliëf wordt vlakker en het patroon staat
+            er nog steeds, want de schotjes lopen nog waar ze liepen.
           </p>
         </div>
       </div>

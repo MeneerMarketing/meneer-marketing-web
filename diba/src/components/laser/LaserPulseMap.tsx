@@ -55,9 +55,10 @@ const BAND: Record<Exclude<LaserZoneArea, "pakket">, [number, number]> = {
   onderlichaam: [262, 560],
 };
 
-const GEBIEDEN = LASER_ZONE_AREAS.filter(
-  (a) => a.id !== "pakket",
-) as readonly { id: Exclude<LaserZoneArea, "pakket">; label: string }[];
+const GEBIEDEN = LASER_ZONE_AREAS.filter((a) => a.id !== "pakket") as readonly {
+  id: Exclude<LaserZoneArea, "pakket">;
+  label: string;
+}[];
 
 export default function LaserPulseMap() {
   const [actief, setActief] =

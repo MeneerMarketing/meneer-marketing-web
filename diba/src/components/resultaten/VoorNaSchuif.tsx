@@ -64,7 +64,10 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
             >
               {/* Vaste breedte op de binnenkant, anders schaalt de foto mee met de
                   uitsnede en schuif je twee verschillende beelden langs elkaar. */}
-              <div className="relative h-full" style={{ width: `${(100 / stand) * 100}%` }}>
+              <div
+                className="relative h-full"
+                style={{ width: `${(100 / stand) * 100}%` }}
+              >
                 <Image
                   src={paar.voor!.src}
                   alt={paar.voor!.alt}
@@ -103,7 +106,15 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
               className="pointer-events-none absolute top-1/2 grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-700)] shadow-[0_4px_18px_rgba(23,55,42,.25)]"
               style={{ left: `${stand}%` }}
             >
-              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="M9 6 4 12l5 6M15 6l5 6-5 6" />
               </svg>
             </div>

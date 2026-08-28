@@ -86,7 +86,7 @@ export default function MeasurementBlock({
           />
           Nu
         </span>
-        <span className="ml-auto">Gemeten met Eve-M huidanalyse</span>
+        <span className="ml-auto">Gemeten met EVE-M huidanalyse</span>
       </p>
     </div>
   );

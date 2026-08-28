@@ -426,37 +426,37 @@ function Paneel({
             ) : null}
 
             <div className="flex flex-1 flex-col justify-center p-8 xl:p-10">
-            <p className="diba-label text-[var(--t-muted)]">
-              {item.uitgelicht.label}
-            </p>
-            <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-              {item.uitgelicht.kop}
-            </p>
-            <p className="mt-3 text-[14px] leading-6 text-[var(--t-body)]">
-              {item.uitgelicht.zin}
-            </p>
-            <Link
-              prefetch={false}
-              href={item.uitgelicht.href}
-              onClick={onSluit}
-              className="diba-label mt-7 inline-flex h-11 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-            >
-              {item.uitgelicht.knop}
-              <Pijl />
-            </Link>
-
-            {/* De tweede ingang. Bewust een tekstlink en geen tweede knop: twee knoppen
-                naast elkaar maken er een keuze van, en dan sta je alsnog stil. */}
-            {item.uitgelicht.tweede ? (
+              <p className="diba-label text-[var(--t-muted)]">
+                {item.uitgelicht.label}
+              </p>
+              <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+                {item.uitgelicht.kop}
+              </p>
+              <p className="mt-3 text-[14px] leading-6 text-[var(--t-body)]">
+                {item.uitgelicht.zin}
+              </p>
               <Link
                 prefetch={false}
-                href={item.uitgelicht.tweede.href}
+                href={item.uitgelicht.href}
                 onClick={onSluit}
-                className="mt-4 inline-flex w-fit text-[14px] leading-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="diba-label mt-7 inline-flex h-11 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                {item.uitgelicht.tweede.tekst}
+                {item.uitgelicht.knop}
+                <Pijl />
               </Link>
-            ) : null}
+
+              {/* De tweede ingang. Bewust een tekstlink en geen tweede knop: twee knoppen
+                naast elkaar maken er een keuze van, en dan sta je alsnog stil. */}
+              {item.uitgelicht.tweede ? (
+                <Link
+                  prefetch={false}
+                  href={item.uitgelicht.tweede.href}
+                  onClick={onSluit}
+                  className="mt-4 inline-flex w-fit text-[14px] leading-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                >
+                  {item.uitgelicht.tweede.tekst}
+                </Link>
+              ) : null}
             </div>
           </div>
         ) : null}

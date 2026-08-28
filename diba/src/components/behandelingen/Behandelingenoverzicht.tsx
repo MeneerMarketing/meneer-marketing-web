@@ -225,8 +225,8 @@ export default function Behandelingenoverzicht() {
         {heeftProfiel ? (
           <>
             De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat
-            over iets anders gaat. Waar de reden per behandeling verschilt, staat
-            hij op de kaart.{" "}
+            over iets anders gaat. Waar de reden per behandeling verschilt,
+            staat hij op de kaart.{" "}
             <Link
               href="/huidprofiel"
               className="text-[var(--g-700)] underline underline-offset-4"
@@ -298,7 +298,8 @@ export default function Behandelingenoverzicht() {
 
                     Bij een blokkade, te weinig hersteltijd of een treffer staat er wel iets
                     dat per behandeling verschilt, en dan hoort het er juist te staan. */}
-                {match && (ALGEMEEN[match.grond] === false || match.letOp.length > 0) ? (
+                {match &&
+                (ALGEMEEN[match.grond] === false || match.letOp.length > 0) ? (
                   <span
                     className={`mt-4 rounded-[var(--r-sm)] p-4 text-[13px] leading-5 ${
                       match.oordeel === "past-niet"

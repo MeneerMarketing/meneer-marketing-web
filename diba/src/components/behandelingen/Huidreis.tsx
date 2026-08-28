@@ -139,7 +139,8 @@ export default function Huidreis() {
               daarmee onleesbaar. */}
           {HUIDLAGEN.map((l) => {
             const g = GRENZEN[l.id];
-            const onderDeSonde = diepte > g.van + Math.min(6, (g.tot - g.van) / 2);
+            const onderDeSonde =
+              diepte > g.van + Math.min(6, (g.tot - g.van) / 2);
             return (
               <span
                 key={l.id}

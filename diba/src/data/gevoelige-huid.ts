@@ -113,7 +113,7 @@ export const BELASTING_TEKST: Record<
   { readonly kop: string; readonly tekst: string; readonly advies: string }
 > = {
   rustig: {
-    kop: "Je routine is niet de verdachte",
+    kop: "Soms ligt de oorzaak niet in je huidverzorging",
     tekst:
       "Wat je aankruist is op zichzelf niet veel. Als je huid tóch overal op reageert, dan zoeken we de oorzaak liever ergens anders dan in je badkamerkastje.",
     advies:

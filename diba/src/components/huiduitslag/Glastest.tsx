@@ -223,8 +223,8 @@ export default function Glastest() {
           />
           <p className="mt-4 max-w-[76ch] text-[15px] leading-7 text-[var(--t-body)]">
             Zet hem eerst helemaal naar links. Beide helften zijn dan niet uit
-            elkaar te houden, en precies daarom bestaat deze test. Druk het glas
-            dan aan en kijk wat er onder de rand gebeurt.
+            elkaar te houden, en daarom bestaat deze test. Druk het glas dan aan
+            en kijk wat er onder de rand gebeurt.
           </p>
         </div>
       </div>

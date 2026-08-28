@@ -239,7 +239,7 @@ export default function BehandelingenPage() {
               Ook je huidprofiel hierboven geeft geen advies. Het legt naast
               elkaar wat jij hebt ingevuld en wat een behandeling doet, en zegt
               waar dat wringt. Dat is iets anders dan een aanbeveling, en het is
-              met opzet iets anders.
+              bewust iets anders.
             </p>
             <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
               Wat bij jou past hoor je na de meting, van een mens. Soms is dat

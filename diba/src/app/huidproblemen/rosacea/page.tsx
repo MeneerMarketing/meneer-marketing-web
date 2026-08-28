@@ -283,7 +283,7 @@ export default function RosaceaPage() {
       <NulmetingAssen
         kop="Bij rosacea telt roodheid."
         alineas={[
-          "Roodheid is precies het soort ding waar je oog aan gewent raakt. Daarom meten we het: niet om je te overtuigen, maar zodat we het verschil kunnen zien op een dag dat jij vindt dat er niets veranderd is.",
+          "Roodheid is het soort ding waar je oog aan gewent raakt. Daarom meten we het: niet om je te overtuigen, maar zodat we het verschil kunnen zien op een dag dat jij vindt dat er niets veranderd is.",
           "We meten ook de zichtbare vaatjes afzonderlijk, want die reageren anders dan de basiskleur.",
         ]}
         assen={[

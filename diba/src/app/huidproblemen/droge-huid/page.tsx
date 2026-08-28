@@ -99,9 +99,9 @@ export default function DrogeHuidPage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Precies daar gaat het mis. Wie in het verkeerde vak zit, koopt
-              jarenlang producten die het andere probleem oplossen. Zet jezelf
-              hieronder eens neer.
+              Een verkeerde inschatting leidt gemakkelijk tot producten die niet
+              bij het probleem passen. De vragen hieronder helpen om het
+              verschil te herkennen.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

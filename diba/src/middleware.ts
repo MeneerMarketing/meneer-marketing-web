@@ -13,7 +13,9 @@ export async function middleware(request: NextRequest) {
   }
 
   const { pathname } = request.nextUrl;
-  if (PUBLIC_PATHS.some((p) => pathname === p || pathname.startsWith(`${p}/`))) {
+  if (
+    PUBLIC_PATHS.some((p) => pathname === p || pathname.startsWith(`${p}/`))
+  ) {
     return NextResponse.next();
   }
 

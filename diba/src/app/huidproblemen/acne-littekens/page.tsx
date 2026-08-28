@@ -250,7 +250,7 @@ export default function AcneLittekensPage() {
       <NulmetingAssen
         kop="Putjes zie je alleen in zijlicht."
         alineas={[
-          "Dat is de reden dat een foto van je telefoon hier niet volstaat en de spiegel in je badkamer ook niet: recht licht vult elk kuiltje op. De Eve-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
+          "Dat is de reden dat een foto van je telefoon hier niet volstaat en de spiegel in je badkamer ook niet: recht licht vult elk kuiltje op. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
           "Daarmee is het verschil later te zien in plaats van te geloven, en dat is bij dit huidprobleem extra belangrijk: het gaat om maanden, en je eigen gezicht zie je elke dag.",
         ]}
         assen={[

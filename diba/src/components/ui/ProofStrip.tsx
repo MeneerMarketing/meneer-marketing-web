@@ -78,7 +78,9 @@ export default function ProofStrip({
   const line = onDark ? "border-[#387849]" : "border-[var(--g-100)]";
   const numBase = onDark ? "text-[var(--g-025)]" : "text-[var(--g-900)]";
   const numHi = onDark ? "text-[var(--on-dark-btn)]" : "text-[var(--g-700)]";
-  const lab = onDark ? "text-[var(--on-dark-btn)] opacity-80" : "text-[var(--t-muted)]";
+  const lab = onDark
+    ? "text-[var(--on-dark-btn)] opacity-80"
+    : "text-[var(--t-muted)]";
 
   return (
     <dl

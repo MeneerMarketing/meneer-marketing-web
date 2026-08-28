@@ -59,7 +59,7 @@ const SOORTEN: readonly SoortOptie[] = LIJNSOORTEN.map((o) => ({
   uitgelicht: {
     label: o.binnenBereik ? "Hier zijn wij aan zet" : "Hier zijn wij het niet",
     tekst: o.binnenBereik
-      ? "Dit werkt op de huid, en dat is precies wat wij doen. Reken op een reeks over maanden en niet op een sessie."
+      ? "Dit werkt op de huid, en dat is wat wij doen. Reken op een reeks over maanden en niet op een sessie."
       : "Hiervoor is een injectable of een ingreep de gangbare route, en daar werken wij niet mee. Dan verwijzen we liever door.",
   },
 }));
@@ -233,7 +233,7 @@ export default function Pagina() {
       <NulmetingAssen
         kop="Je eigen gezicht is geen maat."
         alineas={[
-          "Bij lijnen gaat het om maanden, en in die maanden zie je jezelf elke dag. Daardoor merk je een geleidelijke verandering nauwelijks op, in beide richtingen. De Eve-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
+          "Bij lijnen gaat het om maanden, en in die maanden zie je jezelf elke dag. Daardoor merk je een geleidelijke verandering nauwelijks op, in beide richtingen. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
           "Dat maakt het verschil later zichtbaar in plaats van dat je het moet geloven. En het werkt ook andersom: blijkt er na een reeks weinig veranderd, dan is dat een reden om iets anders te doen en niet om door te gaan.",
         ]}
         assen={[

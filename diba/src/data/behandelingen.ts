@@ -221,16 +221,17 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     slug: "huidanalyse",
     foto: {
       src: "/images/shoot/beh-huidanalyse.jpg",
-      alt: "Cliënt in de Eve-M huidscanner, met de opname op het scherm ernaast",
+      alt: "Cliënt in de EVE-M huidscanner, met de opname op het scherm ernaast",
     },
-    naam: "Consult met Eve-M huidanalyse",
-    apparaat: "Eve-M",
+    naam: "Consult met eve-m huidanalyse",
+    apparaat: "EVE-M",
     categorie: "meting",
     kort: "De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt.",
     lagen: [],
     werking:
-      "De Eve-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd. Daarna volgt advies en een behandelplan, en de meting wordt herhaald om voortgang objectief zichtbaar te maken. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Geen. Je loopt hier weg zoals je binnenkwam.",
+      "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd. Daarna volgt advies en een behandelplan, en de meting wordt herhaald om voortgang objectief zichtbaar te maken. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Er is geen hersteltijd, omdat de huid tijdens deze afspraak niet wordt behandeld.",
     sessies: "Eén keer aan het begin, daarna bij elke controle opnieuw",
     prijs: 50,
     varianten: [
@@ -286,11 +287,12 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "HydraFacial",
     apparaat: "HydraFacial",
     categorie: "gezicht",
-    kort: "Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, geen hersteltijd.",
+    kort: "Reinigen, exfoliëren en hydrateren in één doorloop, met direct zichtbaar, geen hersteltijd.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
       "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van. [MEDISCHE-CHECK-ROJDA]",
-    herstel: "Geen. Je kunt er direct mee de deur uit.",
+    herstel:
+      "Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen.",
     sessies:
       "Los te doen, of maandelijks als onderhoud. Een startreeks is meestal drie tot zes. [MEDISCHE-CHECK-ROJDA]",
     prijs: 170,
@@ -321,7 +323,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       src: "/images/shoot/beh-oxygeneo.jpg",
       alt: "Behandelgel op de huid met het handstuk erop",
     },
-    naam: "OxyGeneo Glow",
+    naam: "Oxygeneo glow",
     apparaat: "OxyGeneo",
     categorie: "gezicht",
     kort: "Exfoliëren en zuurstof in de huid brengen, in één behandeling.",
@@ -610,7 +612,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     niet: [
       "Werkt niet in één sessie. Wat je na één keer ziet is zwelling en geen resultaat",
       "Haalt geen diepe of ingetrokken littekens helemaal weg [MEDISCHE-CHECK-ROJDA]",
-      "Past niet op een huid met actieve ontsteking. Dan gaat rust eerst",
+      "Bij actieve ontstekingen behandelen we eerst de ontsteking en niet direct de littekens of huidstructuur.",
     ],
     stappen: [
       {
@@ -651,7 +653,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "Skinboosters en mesotherapie",
     apparaat: "U225 intradermale injector",
     categorie: "injectie",
-    kort: "Werkzame stoffen precies op diepte, met een injector die niet met de hand meebeweegt.",
+    kort: "Werkzame stoffen op diepte, met een injector die niet met de hand meebeweegt.",
     lagen: ["lederhuid-boven"],
     werking:
       "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma. [MEDISCHE-CHECK-ROJDA]",
@@ -801,7 +803,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     werking:
       "Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen gecontroleerd verwarmd. Daardoor trekt het weefsel samen en gaat het minder meetrillen op de luchtstroom, en juist die trilling is het geluid dat snurken heet. Er wordt niet gesneden en er blijft niets achter. [MEDISCHE-CHECK-ROJDA]",
     herstel:
-      "Geen. Je eet en praat direct daarna gewoon; sommige mensen voelen een dag een licht schrapend gevoel in de keel. [MEDISCHE-CHECK-ROJDA]",
+      "Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
@@ -897,7 +899,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "Lumi 8 LED",
     apparaat: "Lumi 8",
     categorie: "laser",
-    kort: "LED-licht zonder naalden of zuren. Wordt meestal als toevoeging gedaan.",
+    kort: "Deze behandeling met LED-licht gebruikt geen naalden of zuren en wordt meestal als aanvulling ingezet.",
     lagen: ["opperhuid"],
     werking:
       "Een niet-invasief LED-toestel met rood, geel en bijna-infrarood licht, in een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes. [MEDISCHE-CHECK-ROJDA]",
@@ -911,7 +913,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Wisselt de pulsen af, zodat de huid niet aan het licht went",
     ],
     niet: [
-      "Doet weinig als losse behandeling. Dit is een toevoeging en zo verkopen we het ook",
+      "LED wordt meestal als aanvulling op een andere behandeling ingezet en minder vaak als losse behandeling geadviseerd.",
       "Verwijdert niets. Geen pigment, geen vaatjes, geen littekens",
       "Werkt niet in één keer. Licht is een prikkel die je herhaalt of het doet niets [MEDISCHE-CHECK-ROJDA]",
     ],
@@ -947,7 +949,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Pigmenttrajecten ──────────────────────────────────────────────────── */
   {
     slug: "cosmelan-dermamelan",
-    naam: "Cosmelan en Dermamelan",
+    naam: "Cosmelan en dermamelan",
     apparaat: "Mesoestetic",
     categorie: "pigment",
     kort: "Een traject van maanden tegen hyperpigmentatie en melasma. Geen losse behandeling.",
@@ -1009,7 +1011,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     niet: [
       "Haalt de oorzaak niet weg. Komt de verkleuring door scheren of wrijving, dan komt hij terug [MEDISCHE-CHECK-ROJDA]",
       "Maakt niets bleker dan je eigen huid. Egaler is het doel, niet lichter dan je bent",
-      "Past niet bij een huid die net onthaard of geïrriteerd is. Dan wachten we",
+      "Bij een pas onthaarde of geïrriteerde huid stellen we de behandeling uit totdat de huid is hersteld.",
     ],
     stappen: [
       {
@@ -1065,7 +1067,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Vermindert ingegroeide haren en irritatie van scheren",
     ],
     niet: [
-      "Werkt niet in één sessie, en dat is geen verkooptruc maar hoe haargroei werkt",
+      "Voor laserontharing zijn meerdere sessies nodig, omdat niet alle haren zich tegelijk in dezelfde groeifase bevinden.",
       "Doet niets aan pigment of textuur",
       "Is niet zonder risico bij een gebruinde huid [MEDISCHE-CHECK-ROJDA]",
     ],
@@ -1196,7 +1198,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "jongeren-acne-traject",
-    naam: "Jongeren Acne Traject",
+    naam: "Jongeren acne traject",
     categorie: "overig",
     kort: "Voor 18 jaar en jonger. Een begeleid programma van drie maanden.",
     lagen: ["hoornlaag", "opperhuid"],
@@ -1213,7 +1215,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     ],
     niet: [
       "Belooft geen schone huid binnen drie maanden [MEDISCHE-CHECK-ROJDA]",
-      "Is geen behandeling voor acne die littekens maakt. Dan gaat een arts voor [MEDISCHE-CHECK-ROJDA]",
+      "Bij ernstige acne met risico op littekens kan een beoordeling door de huisarts of dermatoloog nodig zijn. [MEDISCHE-CHECK-ROJDA]",
       "Gaat niet buiten je ouders om. Onder de achttien komt er iemand mee en tekenen zij mee",
     ],
     stappen: [
@@ -1382,7 +1384,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Levert een uitslag die je meeneemt, ook als je verder niets bij ons doet",
     ],
     niet: [
-      "Is geen allergietest en geen medische diagnose. Dat hoort bij een arts [MEDISCHE-CHECK-ROJDA]",
+      "Is geen allergietest en geen medische diagnose; daarvoor verwijzen we naar een arts [MEDISCHE-CHECK-ROJDA]",
       "Behandelt je huid niet. Er gebeurt hier niets aan je gezicht",
       "Geeft geen garantie dat je huid opknapt als je iets weglaat [MEDISCHE-CHECK-ROJDA]",
     ],

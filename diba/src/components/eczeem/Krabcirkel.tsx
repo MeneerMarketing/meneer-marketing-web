@@ -71,7 +71,10 @@ export default function Krabcirkel() {
             {/* Het lopende deel: een kwart ring die naar de gekozen schakel draait. */}
             <g
               className="transition-transform duration-500 ease-[var(--ease-diba)] motion-reduce:transition-none"
-              style={{ transform: `rotate(${actief * 90}deg)`, transformOrigin: "100px 100px" }}
+              style={{
+                transform: `rotate(${actief * 90}deg)`,
+                transformOrigin: "100px 100px",
+              }}
             >
               <path
                 d="M100 33a67 67 0 0 1 67 67h-10a57 57 0 0 0-57-57Z"

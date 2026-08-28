@@ -32,7 +32,7 @@ import {
 export const metadata: Metadata = {
   title: "Ouderdomsvlekken en zonnevlekken behandelen in Rotterdam",
   description:
-    "Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want niet alles wat bruin is mag onder een laser.",
+    "Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld",
 };
 
 const PAD = "/huidproblemen/ouderdomsvlekken";

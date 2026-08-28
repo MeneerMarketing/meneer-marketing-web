@@ -22,7 +22,8 @@ const VLAGGEN =
 export function bevatPlaceholders(waarde: unknown, diepte = 0): boolean {
   if (diepte > 12) return false;
   if (typeof waarde === "string") return VLAGGEN.test(waarde);
-  if (Array.isArray(waarde)) return waarde.some((v) => bevatPlaceholders(v, diepte + 1));
+  if (Array.isArray(waarde))
+    return waarde.some((v) => bevatPlaceholders(v, diepte + 1));
   if (waarde && typeof waarde === "object") {
     return Object.values(waarde).some((v) => bevatPlaceholders(v, diepte + 1));
   }

@@ -13,7 +13,8 @@ const fieldBase =
 
 const borders = {
   normal: "border-[var(--g-100)] focus:border-[var(--g-700)]",
-  error: "border-[var(--error)] focus:border-[var(--error)] focus:ring-[var(--error)]",
+  error:
+    "border-[var(--error)] focus:border-[var(--error)] focus:ring-[var(--error)]",
 };
 
 type BaseProps = {

@@ -1,7 +1,7 @@
 import { SCAN_ASSEN, type AsId } from "@/data/huidprofiel";
 
 /**
- * Het spinnenweb van de Eve-M-scan.
+ * Het spinnenweb van de EVE-M-scan.
  *
  * Zat eerst binnen in `MiniHuidscan` en kon daardoor nergens anders komen. Nu staat het
  * los, want de vorm moet op drie plekken terug te zien zijn: in de scan zelf, in het
@@ -13,7 +13,7 @@ import { SCAN_ASSEN, type AsId } from "@/data/huidprofiel";
  *   1. De gevulde vorm — wat jij vertelt.
  *   2. De gestippelde buitenring — wat er nog niet gemeten is.
  *
- * Dat gat blijft staan tot iemand echt onder de Eve-M heeft gelegen. "Wij gokken niet,
+ * Dat gat blijft staan tot iemand echt onder de EVE-M heeft gelegen. "Wij gokken niet,
  * wij meten" wordt een leugen op het moment dat een vragenlijstje een dichte vorm
  * teruggeeft alsof er iets gemeten is.
  */

@@ -46,7 +46,9 @@ export default function ReviewCard({
         </p>
       </blockquote>
       <figcaption className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
-        <span className="text-[13px] font-medium text-[var(--g-900)]">{name}</span>
+        <span className="text-[13px] font-medium text-[var(--g-900)]">
+          {name}
+        </span>
         <span
           aria-hidden="true"
           className="h-1 w-1 rounded-full bg-[var(--g-100)]"

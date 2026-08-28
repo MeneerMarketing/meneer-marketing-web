@@ -101,11 +101,11 @@ export default function Littekenklok() {
           </div>
 
           <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
-            De balk is geen meting maar een verhouding: hij laat zien hoe de ruimte om
-            iets te veranderen krimpt naarmate een litteken ouder wordt.
+            De balk is geen meting maar een verhouding: hij laat zien hoe de
+            ruimte om iets te veranderen krimpt naarmate een litteken ouder
+            wordt.
           </p>
         </div>
-
 
         {/* De schuifbalk. */}
         <div className="mt-7">
@@ -154,7 +154,6 @@ export default function Littekenklok() {
             ))}
           </div>
         </div>
-
       </div>
 
       {/* ── De lezing ── */}

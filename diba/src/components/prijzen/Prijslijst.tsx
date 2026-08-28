@@ -65,7 +65,6 @@ export default function Prijslijst() {
 
   return (
     <div>
-
       {/* De laserlijst geldt per persoon, dus die keuze staat er alleen als hij ertoe doet. */}
       {toontLaser ? (
         <div className="mt-5 flex flex-wrap items-center gap-3">

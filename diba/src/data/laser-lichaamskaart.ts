@@ -124,7 +124,11 @@ export const DELEN_PER_AANZICHT: Readonly<
  * opnieuw te vullen stopt elke rompzone precies in de oksel en in de liesplooi, en dat is
  * ook waar ze op een lichaam ophouden. Hun eigen zones komen daar weer overheen.
  */
-export const OVERTEKENEN: readonly Lichaamsdeel[] = ["armen", "benen", "voeten"];
+export const OVERTEKENEN: readonly Lichaamsdeel[] = [
+  "armen",
+  "benen",
+  "voeten",
+];
 
 export type ZoneVorm = {
   /** Welk lichaamsdeel de vorm bijsnijdt. Zo blijft een armzone binnen de arm. */
@@ -297,7 +301,9 @@ export const GEZICHT_TREKKEN = {
    * een hoofd. Stond hij eerder op 27, dan was er geen haar en werd het voorhoofd de hele
    * schedel: een pet in plaats van een zone.
    */
-  haarlijn: ["M121 20C101 20 82 27 72 45C68 53 65 62 63 72C70 52 92 42 121 42Z"],
+  haarlijn: [
+    "M121 20C101 20 82 27 72 45C68 53 65 62 63 72C70 52 92 42 121 42Z",
+  ],
 } as const;
 
 /**

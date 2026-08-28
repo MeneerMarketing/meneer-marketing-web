@@ -86,7 +86,11 @@ export default function Fotocheck() {
   const [open, setOpen] = useState<string | null>(null);
 
   const score = useMemo(
-    () => FOTOVARIABELEN.filter((v) => aan.has(v.id)).reduce((t, v) => t + v.gewicht, 0),
+    () =>
+      FOTOVARIABELEN.filter((v) => aan.has(v.id)).reduce(
+        (t, v) => t + v.gewicht,
+        0,
+      ),
     [aan],
   );
   const oordeel = fotooordeel(score);

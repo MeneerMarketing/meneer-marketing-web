@@ -169,9 +169,8 @@ export default function ReviewsPage() {
             </ul>
 
             <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--on-dark-accent)]">
-              Wat een review wél kan: laten zien hoe het eraan toegaat in de
-              kamer. Daar is hij het beste bewijs voor dat er bestaat, want daar
-              was de schrijver bij en jij nog niet.
+              Een review kan wel een goed beeld geven van de manier waarop
+              klanten worden ontvangen, geïnformeerd en behandeld.
             </p>
           </div>
         </div>

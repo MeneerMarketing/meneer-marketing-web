@@ -116,9 +116,7 @@ export default function WerkwijzeStepsFlow({
                       aan ? "werkwijze-vullen" : "w-0"
                     }`}
                     style={
-                      aan
-                        ? { animationDuration: `${DUUR_MS}ms` }
-                        : undefined
+                      aan ? { animationDuration: `${DUUR_MS}ms` } : undefined
                     }
                   />
                 </span>

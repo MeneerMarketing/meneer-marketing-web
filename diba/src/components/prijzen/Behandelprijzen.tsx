@@ -54,14 +54,14 @@ function metInhoud() {
 }
 
 /** Per grond: wat er onder de regel komt, en of het een grens is of een verschil. */
-const MERKTEKEN: Record<
-  MatchGrond,
-  { tekst: string; hard: boolean } | null
-> = {
+const MERKTEKEN: Record<MatchGrond, { tekst: string; hard: boolean } | null> = {
   blokkade: { tekst: "Kan bij jou nu niet", hard: true },
   herstel: { tekst: "Vraagt meer hersteltijd dan je aangaf", hard: true },
   "ander-doel": { tekst: "Voor iets anders dan jij zoekt", hard: false },
-  zijdelings: { tekst: "Doet er iets aan, maar is er niet voor gemaakt", hard: false },
+  zijdelings: {
+    tekst: "Doet er iets aan, maar is er niet voor gemaakt",
+    hard: false,
+  },
   raak: null,
   "geen-doel": null,
 };
@@ -194,7 +194,10 @@ function Regel({
                     <span className="text-[var(--t-body)]">
                       {v.naam}
                       {v.bij ? (
-                        <span className="text-[var(--t-muted)]"> · {v.bij}</span>
+                        <span className="text-[var(--t-muted)]">
+                          {" "}
+                          · {v.bij}
+                        </span>
                       ) : null}
                     </span>
                     <span className="text-[var(--t-strong)] tabular-nums">

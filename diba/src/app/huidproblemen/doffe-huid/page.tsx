@@ -242,7 +242,7 @@ export default function Pagina() {
       <NulmetingAssen
         kop="Glans is te meten."
         alineas={[
-          "Dat klinkt vreemd bij een klacht die geen vakterm heeft, en het is precies waarom het hier nuttig is: dof is een indruk, en indrukken schuiven mee met je humeur en het licht in de kamer. De Eve-M legt vast hoe je huid het licht terugkaatst, onder vast licht en vanuit een vaste hoek.",
+          "Dat klinkt vreemd bij een klacht die geen vakterm heeft, en het is waarom het hier nuttig is: dof is een indruk, en indrukken schuiven mee met je humeur en het licht in de kamer. De EVE-M legt vast hoe je huid het licht terugkaatst, onder vast licht en vanuit een vaste hoek.",
           "Daarmee is na een reeks te zien of er werkelijk iets is veranderd of dat je een goede week had. Bij dit huidprobleem is dat verschil groter dan bij welk ander ook.",
         ]}
         assen={[

@@ -188,9 +188,8 @@ export default async function ApparaatPage({ params }: PageProps) {
               )}
 
               <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
-                Welke instelling er gekozen wordt hangt af van je huid, en dat
-                bepaalt een mens na de meting. Niet dit apparaat en niet deze
-                pagina.
+                De behandelaar kiest de instellingen op basis van je huid, je
+                gezondheid, de behandelzone en het doel van de behandeling.
               </p>
             </div>
           </div>

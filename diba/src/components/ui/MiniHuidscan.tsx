@@ -309,7 +309,7 @@ export default function MiniHuidscan() {
       {/* Kop van de kaart */}
       <div className="flex items-center justify-between gap-4">
         <span className="diba-label diba-pill-active rounded-[var(--r-pill)] px-3 py-1.5">
-          Eve-M
+          EVE-M
         </span>
         <span className="diba-label text-[var(--t-muted)]">
           {fase === "resultaat" ? "Jouw profielschets" : "Mini-scan · 4 vragen"}
@@ -376,7 +376,7 @@ function Intro({ onStart, titelId }: { onStart: () => void; titelId: string }) {
     <div className="grid gap-6 sm:grid-cols-[1fr_auto] sm:items-center">
       <div>
         <h3 id={titelId} className="diba-card-title">
-          Doe de mini-scan.
+          Doe de mini-scan als je nog niet weet waar je moet beginnen
         </h3>
         <p className="mt-3 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
           Vier vragen, dertig seconden. Je krijgt een profielschets van wat jij
@@ -520,7 +520,7 @@ function Resultaat({
             <strong className="font-medium text-[var(--t-strong)]">
               Dit is wat jij ons vertelt, niet wat we gemeten hebben.
             </strong>{" "}
-            De Nulmeting met Eve-M legt hydratatie, pigment, poriën en structuur
+            De Nulmeting met EVE-M legt hydratatie, pigment, poriën en structuur
             objectief vast. Dan pas weten we het echt.
           </p>
         </div>

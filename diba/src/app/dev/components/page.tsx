@@ -177,7 +177,7 @@ export default function DevComponentsPage() {
           />
         </DevSection>
 
-        <DevSection title="Eve-M meting-blok">
+        <DevSection title="EVE-M meting-blok">
           <div className="max-w-2xl">
             <MeasurementBlock
               context="[COPY-NODIG: traject + meetmoment] [MEDISCHE-CHECK-ROJDA]"

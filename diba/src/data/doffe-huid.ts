@@ -72,7 +72,8 @@ export const DOF_BEELDEN: readonly DofBeeld[] = [
   {
     id: "pigment",
     naam: "Ongelijke kleur",
-    klanttaal: "Je huid oogt vlekkerig en daardoor vermoeid, ook zonder losse vlekken",
+    klanttaal:
+      "Je huid oogt vlekkerig en daardoor vermoeid, ook zonder losse vlekken",
     vakterm: "diffuse hyperpigmentatie",
     zelfcheck:
       "Zie je in de spiegel geen duidelijke vlekken maar wel een ongelijke tint, en valt het op foto's meer op dan in het echt?",
@@ -135,7 +136,7 @@ export const DOF_WEL_NIET = {
   ],
   niet: [
     "Dagelijks scrubben. Je haalt de barrière weg, en een beschadigde barrière oogt doffer [MEDISCHE-CHECK-ROJDA]",
-    "Een abonnement verkopen voor iets dat met een gewoonte weggaat",
+    "Een lang traject starten terwijl een aanpassing in verzorging of gewoonten voldoende kan zijn",
     "Een vette huid uitdrogen om hem minder dof te maken. Die reageert met meer talg [MEDISCHE-CHECK-ROJDA]",
     "Beloven dat glans blijft. Een gezichtsbehandeling geeft direct effect en dat effect zakt weer",
     "Steeds sterker peelen omdat het vorige effect wegtrok",

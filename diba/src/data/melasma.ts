@@ -34,7 +34,7 @@ export const LAGEN: readonly Laag[] = [
     naam: "Hoog in de huid",
     vakterm: "epidermaal melasma",
     onderDeLamp:
-      "De rand wordt scherper en de vlek lijkt donkerder dan in gewoon licht. Je ziet precies waar hij ophoudt.",
+      "De rand wordt scherper en de vlek lijkt donkerder dan in gewoon licht. Je ziet waar hij ophoudt.",
     watHetBetekent:
       "Het pigment zit in de bovenste laag. Dat is de laag die zichzelf vernieuwt, dus daar is iets aan te doen. [MEDISCHE-CHECK-ROJDA]",
     watMogelijkIs:

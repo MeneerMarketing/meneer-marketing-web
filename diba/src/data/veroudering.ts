@@ -59,8 +59,7 @@ export const PROEF = {
     beschut: "Bijna nul",
     blootgesteld: "Bijna allemaal",
   },
-  slot:
-    "En dat terwijl het gezicht meestal juist de meeste verzorging krijgt van de twee. De variabele die overblijft is niet je routine.",
+  slot: "En dat terwijl het gezicht meestal juist de meeste verzorging krijgt van de twee. De variabele die overblijft is niet je routine.",
 } as const;
 
 /* ── Wat begint wanneer ────────────────────────────────────────────────── */

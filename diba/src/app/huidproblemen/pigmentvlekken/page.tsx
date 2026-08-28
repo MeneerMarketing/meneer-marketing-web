@@ -202,9 +202,9 @@ export default function PigmentPage() {
               geheugen: elke onbeschermde zomer telt op bij de vorige.
             </p>
             <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dat klinkt somber, maar het is juist goed nieuws. Het betekent dat
-              de belangrijkste stap iets is dat je zelf doet, elke dag, en dat
-              wij er niets aan verdienen.
+              Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting
+              zijn bij pigment minstens zo belangrijk als de behandeling in de
+              kliniek.
             </p>
           </div>
 
@@ -265,14 +265,14 @@ export default function PigmentPage() {
       <WijZeggenNee
         kop="Soms is het antwoord"
         accent="kom in oktober terug."
-        intro="Tussen mei en augustus behandelen we pigment niet. Dat is de duidelijkste plek op deze site waar we onszelf omzet ontzeggen, en we doen het omdat het resultaat anders niet te houden is."
+        intro="In maanden met veel zon stellen we bepaalde pigmentbehandelingen uit. Welke periode veilig en verstandig is, hangt af van huidtype, blootstelling en de gekozen behandeling."
         punten={PIGMENT_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen
         kop="Bij pigment tellen drie assen."
         alineas={[
-          "De Eve-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt.",
+          "De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt.",
           "Dat is ook de eerlijkste manier om te zien of het werkt. Pigment verandert langzaam, en je oog raakt eraan gewend.",
         ]}
         assen={[

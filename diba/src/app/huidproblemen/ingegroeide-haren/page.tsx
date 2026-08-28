@@ -68,7 +68,7 @@ const SOORTEN: readonly SoortOptie[] = BULT_BEELDEN.map((o) => ({
       ? "Hier heeft ontharen zin"
       : "Hier verandert ontharen niets",
     tekst: o.binnenBereik
-      ? "Er zit een haar bij betrokken, en dat is precies waar licht op mikt. Reken op een reeks en niet op een sessie."
+      ? "Er zit een haar bij betrokken, en dat is waar licht op mikt. Reken op een reeks en niet op een sessie."
       : "Er zit geen haar in, of de zone is nu ontstoken. Ontharen doet hier niets, en beginnen zou een reeks verkopen zonder resultaat zijn.",
   },
 }));

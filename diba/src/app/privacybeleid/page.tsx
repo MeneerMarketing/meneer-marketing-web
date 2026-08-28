@@ -208,7 +208,7 @@ export default function PrivacyPage() {
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               Dat betekent niet dat er nergens gegevens van u zijn. Ze staan
-              alleen ergens anders, en hieronder staat precies waar.
+              alleen ergens anders, en hieronder staat waar.
             </p>
           </div>
 
@@ -406,7 +406,7 @@ export default function PrivacyPage() {
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
               Uw huidprofiel wordt bewust niet naar ons gestuurd. Dat is de plek
               waar de verleiding het grootst is om alvast een mailadres te
-              vragen, en precies daarom gebeurt het niet.
+              vragen, en daarom gebeurt het niet.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

@@ -74,7 +74,7 @@ export const ZONES: readonly Zone[] = [
 ];
 
 export const SILHOUET_SLOT =
-  "Vier plekken, één aandoening. Dat is de reden dat een crème de plek aanpakt en niet de oorzaak, en dat dit bij een dermatoloog hoort en niet bij een huidkliniek.";
+  "Psoriasis kan op verschillende plekken voorkomen Dat is de reden dat een crème de plek aanpakt en niet de oorzaak, en dat dit bij een dermatoloog hoort en niet bij een huidkliniek.";
 
 export const PSORIASIS_WEL_NIET = {
   wel: [

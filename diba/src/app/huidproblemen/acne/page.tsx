@@ -203,7 +203,7 @@ export default function AcnePage() {
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
               Acne is geen één ding. Het type bepaalt wat er wél helpt, en bij
               één van deze vijf bepaalt het dat je bij de arts hoort en niet bij
-              ons. Dat staat er dan ook.
+              ons.
             </p>
           </div>
 
@@ -366,7 +366,7 @@ export default function AcnePage() {
               Bij acne tellen vier assen.
             </h2>
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De Eve-M-meting legt je huid vast voordat we beginnen. Bij acne
+              De EVE-M-meting legt je huid vast voordat we beginnen. Bij acne
               zijn poriën, ontstekingen, roodheid en textuur de assen die
               tellen. Na acht tot twaalf weken meten we opnieuw en leggen we de
               twee naast elkaar.

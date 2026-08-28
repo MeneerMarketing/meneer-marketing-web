@@ -149,7 +149,7 @@ export const ACNE_LITTEKENS_WEL_NIET = {
     "Laseren of needlen in een huid met actieve ontstekingen. Dat verergert de acne en kan het litteken juist vastzetten [MEDISCHE-CHECK-ROJDA]",
     "Een pigmentvlek behandelen alsof het een litteken is. Het is een andere laag en een andere aanpak",
     "Beloven dat putjes helemaal verdwijnen. Minder diep en minder zichtbaar is realistisch, weg niet [MEDISCHE-CHECK-ROJDA]",
-    "Zelf uitknijpen, ook nu nog. Dat is precies hoe de meeste putjes zijn ontstaan",
+    "Zelf uitknijpen vergroot de kans op diepere ontstekingen, verkleuringen en littekens",
     "Beginnen op een gebruinde huid [MEDISCHE-CHECK-ROJDA]",
   ],
 } as const;

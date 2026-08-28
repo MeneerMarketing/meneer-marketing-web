@@ -308,9 +308,7 @@ export function NulmetingAssen({
         </div>
 
         <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-9 lg:h-full">
-          <p className="diba-label text-[var(--t-label)]">
-            Wat we hier meten
-          </p>
+          <p className="diba-label text-[var(--t-label)]">Wat we hier meten</p>
           <dl className="mt-6 space-y-6">
             {assen.map(([as, wat]) => (
               <div key={as}>

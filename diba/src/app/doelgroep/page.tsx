@@ -123,7 +123,7 @@ export default function DoelgroepHubPage() {
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/man-bij-de-scanner.jpg"
-            alt="Een man zit klaar bij de Eve-M huidscanner"
+            alt="Een man zit klaar bij de EVE-M huidscanner"
             onderschrift="Dezelfde meting, voor iedereen"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/10] lg:aspect-[2/1]"

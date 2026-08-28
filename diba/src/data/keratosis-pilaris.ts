@@ -69,7 +69,8 @@ export const KP_BEELDEN: readonly KpBeeld[] = [
   {
     id: "droog",
     naam: "Ruw door droogte",
-    klanttaal: "Een schrale, ruwe huid die 's winters erger is en 's zomers weg",
+    klanttaal:
+      "Een schrale, ruwe huid die 's winters erger is en 's zomers weg",
     vakterm: "xerosis",
     zelfcheck:
       "Voelt het ruw zonder dat je losse bultjes voelt, en verdwijnt het grotendeels als je een tijd goed insmeert?",
@@ -82,7 +83,8 @@ export const KP_BEELDEN: readonly KpBeeld[] = [
   {
     id: "haren",
     naam: "Bultjes met een haar erin",
-    klanttaal: "Bultjes op plekken die je scheert, met soms een donkere krul erin",
+    klanttaal:
+      "Bultjes op plekken die je scheert, met soms een donkere krul erin",
     vakterm: "pseudofolliculitis",
     zelfcheck:
       "Zitten de bultjes vooral op geschoren zones, en zie je bij fel licht een donkere lus onder het velletje?",
@@ -133,7 +135,7 @@ export const KP_WEL_NIET = {
   niet: [
     "Schuren. De propjes zitten rond het haarzakje en niet aan de oppervlakte; je maakt alleen de roodheid erger [MEDISCHE-CHECK-ROJDA]",
     "Uitknijpen of pulken. Daar houd je donkere vlekjes en soms kuiltjes aan over",
-    "Een kuur met een eindpunt verkopen. Dit vraagt onderhoud en geen zes sessies",
+    "Een kuur als definitieve oplossing presenteren Keratosis pilaris vraagt meestal om blijvende verzorging en onderhoud.",
     "Beloven dat de huid glad wordt. Soepeler en minder rood is realistisch [MEDISCHE-CHECK-ROJDA]",
     "Het behandelen als acne. Er zit geen ontsteking en geen bacterie in [MEDISCHE-CHECK-ROJDA]",
   ],

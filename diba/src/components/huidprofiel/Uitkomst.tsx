@@ -72,7 +72,8 @@ function groepeer(matches: readonly Match[]): readonly Afvalgroep[] {
     const r = publicCopy(m.reden);
     const bestaand = kaart.get(r);
     if (bestaand) bestaand.namen.push(m.behandeling.naam);
-    else kaart.set(r, { namen: [m.behandeling.naam], eerste: m.behandeling.slug });
+    else
+      kaart.set(r, { namen: [m.behandeling.naam], eerste: m.behandeling.slug });
   }
   return [...kaart.entries()]
     .map(([reden, v]) => ({ reden, namen: v.namen, eerste: v.eerste }))
@@ -200,8 +201,8 @@ export default function Uitkomst({ profiel }: Props) {
 
             {stand < PROFIEL_ONDERDELEN ? (
               <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
-                Je hebt {stand} van de {PROFIEL_ONDERDELEN} vragen ingevuld. Elke
-                vraag die je nog beantwoordt maakt deze uitkomst preciezer.
+                Je hebt {stand} van de {PROFIEL_ONDERDELEN} vragen ingevuld.
+                Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.
               </p>
             ) : null}
           </div>
@@ -352,9 +353,8 @@ export default function Uitkomst({ profiel }: Props) {
               Dit nu niet · {kanNiet.length}
             </p>
             <p className="text-[14px] leading-6 text-[var(--t-muted)]">
-              {groepen.length}{" "}
-              {groepen.length === 1 ? "reden" : "redenen"}, niet{" "}
-              {kanNiet.length} losse
+              {groepen.length} {groepen.length === 1 ? "reden" : "redenen"},
+              niet {kanNiet.length} losse
             </p>
           </div>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -472,7 +472,10 @@ export default function Uitkomst({ profiel }: Props) {
                 "Wat het kost",
                 nulmeting ? prijsTekst(nulmeting.prijs) : "Op aanvraag",
               ],
-              ["Hersteltijd", nulmeting ? publicCopy(nulmeting.herstel) : "Geen"],
+              [
+                "Hersteltijd",
+                nulmeting ? publicCopy(nulmeting.herstel) : "Geen",
+              ],
               ["Wat er gebeurt", "Meten en uitleggen, niet behandelen"],
               ["Daarna", "Je zit nergens aan vast"],
             ].map(([kop, waarde]) => (

@@ -45,7 +45,7 @@ export const BOLLETJE_BEELDEN: readonly BolletjeBeeld[] = [
     zelfcheck:
       "Is het wit of geelwit, niet rood, doet het geen pijn, en lukt het niet om er iets uit te knijpen?",
     watHetIs:
-      "Een piepklein cystje met keratine, ingesloten onder de opperhuid. Er zit geen opening naartoe, en dat is precies waarom knijpen niet werkt. [MEDISCHE-CHECK-ROJDA]",
+      "Een piepklein cystje met keratine, ingesloten onder de opperhuid. Er zit geen opening naartoe, en daarom knijpen niet werkt. [MEDISCHE-CHECK-ROJDA]",
     watWijDoen:
       "Openen met een steriele naald en de inhoud eruit lichten. Dat duurt per bolletje enkele seconden en er blijft niets van te zien. [MEDISCHE-CHECK-ROJDA]",
     binnenBereik: true,

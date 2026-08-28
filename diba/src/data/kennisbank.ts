@@ -124,7 +124,7 @@ export const KENNISBANK: readonly Kennisgroep[] = [
     id: "zelf-nakijken",
     tint: "zacht",
     kop: "Dingen die je zelf kunt nakijken",
-    zin: "Geen diagnose. Wel manieren om beter te kunnen omschrijven wat je ziet.",
+    zin: "De symptoomzoeker stelt geen diagnose, maar helpt je om beter te beschrijven wat je aan de huid ziet.",
     stukken: [
       {
         id: "glastest",

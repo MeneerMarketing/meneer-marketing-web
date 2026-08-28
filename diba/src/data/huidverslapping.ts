@@ -55,7 +55,8 @@ export const VERSLAPPING_BEELDEN: readonly VerslappingBeeld[] = [
   {
     id: "contour",
     naam: "De kaaklijn wordt vager",
-    klanttaal: "De grens tussen je kaak en je hals is minder scherp dan vroeger",
+    klanttaal:
+      "De grens tussen je kaak en je hals is minder scherp dan vroeger",
     vakterm: "verlies van definitie langs de mandibula",
     zelfcheck:
       "Kijk recht vooruit in de spiegel en daarna met je kin iets omhoog. Wordt de lijn dan wel weer scherp, dan gaat het om de huid en nog niet om volume eronder.",
@@ -127,13 +128,13 @@ export const VERSLAPPING_WEL_NIET = {
     "Eerst vaststellen of het om stevigheid gaat, om volume, of om huid die echt is losgelaten",
     "De diepere lagen aanspannen met laser, in een reeks met weken ertussen",
     "Een nulmeting, want verandering over maanden zie je in de spiegel niet en op een meting wel",
-    "Zonbescherming, want UV breekt precies de vezels af waar dit over gaat [MEDISCHE-CHECK-ROJDA]",
+    "Dagelijkse zonbescherming, omdat uv-straling collageen en elastine afbreekt [MEDISCHE-CHECK-ROJDA]",
     "Zeggen wanneer het verschil te klein wordt om de investering waard te zijn",
   ],
   niet: [
     "Chirurgie nabootsen. Wat is losgelaten wordt hier niet vastgezet [MEDISCHE-CHECK-ROJDA]",
     "Volume opvullen. Wij werken niet met fillers, en bij een smaller geworden gezicht is dat vaak wel het antwoord",
-    "Een reeks verkopen aan iemand bij wie de zwaartekrachttest nauwelijks verschil laat zien",
+    "Een behandelreeks starten terwijl de beoordeling laat zien dat weinig verbetering te verwachten is",
     "Resultaat beloven in weken. Collageenopbouw loopt over maanden [MEDISCHE-CHECK-ROJDA]",
     "Behandelen op een gebruinde huid [MEDISCHE-CHECK-ROJDA]",
   ],

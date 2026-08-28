@@ -35,7 +35,7 @@ export const STAPPEN: readonly Stap[] = [
   {
     id: "meting",
     tijd: "Het grootste deel",
-    naam: "De meting met Eve-M",
+    naam: "De meting met EVE-M",
     watErGebeurt:
       "Foto's onder vaste belichting en op vaste afstand, plus metingen van kleur, structuur en vocht. Het apparaat doet niets met je huid; het kijkt alleen. [MEDISCHE-CHECK-ROJDA]",
     nietNodig:

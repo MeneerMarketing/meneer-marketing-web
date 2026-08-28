@@ -67,7 +67,8 @@ export const PORIE_BEELDEN: readonly PorieBeeld[] = [
   {
     id: "gesloten",
     naam: "Bultjes zonder kopje",
-    klanttaal: "Kleine oneffenheden die je meer voelt dan ziet, vaak op je voorhoofd",
+    klanttaal:
+      "Kleine oneffenheden die je meer voelt dan ziet, vaak op je voorhoofd",
     vakterm: "gesloten comedo",
     zelfcheck:
       "Voelt je huid in zijlicht of onder je vingers hobbelig, terwijl er in de spiegel weinig te zien is en er geen rood bij zit?",

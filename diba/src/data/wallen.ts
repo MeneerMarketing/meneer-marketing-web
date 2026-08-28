@@ -112,7 +112,7 @@ export const WALLEN_WEL_NIET = {
   niet: [
     "Fillers onder het oog. Dat doen wij niet, en het is bij een echte wal ook zelden de oplossing",
     "Agressieve behandelingen op de dunste huid van je gezicht [MEDISCHE-CHECK-ROJDA]",
-    "Een crème verkopen tegen uitgezakt vet. Geen enkele crème verplaatst een vetkussen",
+    "Een crème adviseren tegen een vetkussen Een crème kan een uitgezakt vetkussen onder het oog niet verplaatsen.",
     "Beloven dat het weggaat als het van dag tot dag niet verandert",
   ],
 } as const;

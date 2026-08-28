@@ -126,8 +126,8 @@ export default function PcosPage() {
               Wie doet <span className="diba-accent">wat.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              De derde kolom is de eerlijkste, en die ontbreekt op vrijwel elke
-              kliniekwebsite. Daar staat wat niemand kan.
+              De derde kolom beschrijft wat met een huidbehandeling niet kan
+              worden opgelost.
             </p>
           </div>
 

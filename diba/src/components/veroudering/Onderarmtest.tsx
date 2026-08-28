@@ -49,7 +49,11 @@ export default function Onderarmtest() {
   const dagen = Math.round(leeftijd * 365.25).toLocaleString("nl-NL");
 
   const rijen = [
-    { wat: "Leeftijd", beschut: `${dagen} dagen`, blootgesteld: `${dagen} dagen` },
+    {
+      wat: "Leeftijd",
+      beschut: `${dagen} dagen`,
+      blootgesteld: `${dagen} dagen`,
+    },
     ...PROEF.gelijk.map((g) => ({
       wat: g.wat,
       beschut: g.waarde,
@@ -164,8 +168,8 @@ export default function Onderarmtest() {
 
       <p className="mt-8 max-w-[76ch] text-[17px] leading-8 text-[var(--t-strong)]">
         Allebei die stukken huid zijn precies even oud. Wat je op het ene extra
-        ziet is opgebouwd, niet meegegroeid. Dat is ook het enige goede nieuws op
-        deze pagina: aan opgebouwd zit een knop, aan meegegroeid niet.
+        ziet is opgebouwd, niet meegegroeid. Dat is ook het enige goede nieuws
+        op deze pagina: aan opgebouwd zit een knop, aan meegegroeid niet.
       </p>
     </div>
   );

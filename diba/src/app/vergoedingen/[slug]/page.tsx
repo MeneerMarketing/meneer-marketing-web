@@ -142,7 +142,7 @@ export default async function InsurerPage({ params }: PageProps) {
               staat gaat altijd voor op wat hier staat.
             </p>
             <p className="mt-3 text-[14px] leading-6 text-[var(--t-muted)]">
-              Bedragen en pakketnamen staan er met opzet niet bij.
+              Bedragen en pakketnamen staan er bewust niet bij.
             </p>
           </div>
         </div>

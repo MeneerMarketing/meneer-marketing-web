@@ -108,8 +108,8 @@ export default function LaserConfiguratorPage() {
               </p>
             ) : null}
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wil je het zeker weten, stel je vraag dan via WhatsApp. Dan krijg
-              je antwoord van een mens.
+              Als je twijfelt, kun je via WhatsApp een vraag stellen of een
+              intake plannen.
             </p>
           </div>
         </div>

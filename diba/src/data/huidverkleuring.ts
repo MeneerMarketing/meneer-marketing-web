@@ -148,7 +148,7 @@ export const KLEUR_UITLEG =
   "Waarom de kleur en niet de plaats: de kleur zegt iets over de laag waarin het zit. Pigment ligt anders dan bloedvaten, en dat bepaalt of iets reageert op behandeling. Een behandelaar kijkt daarom als eerste hiernaar, en jij kunt dat ook.";
 
 /**
- * Wat de kleur niet zegt.
+ * De kleur alleen is niet genoeg voor een beoordeling
  *
  * Deze pagina was de enige huidprobleempagina zonder tegenkolom. Overal elders staat naast
  * "wat het is" even nadrukkelijk wat het níet is, en juist hier is dat nodig: een pagina

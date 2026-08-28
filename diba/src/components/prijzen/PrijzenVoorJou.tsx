@@ -153,8 +153,8 @@ export default function PrijzenVoorJou() {
               regel scrol je naar eenentwintig prijzen zonder te weten dat de merktekens
               daar van jou zijn. */}
           <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
-            De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat
-            bij jou afviel, staat daar aangemerkt.
+            De volledige lijst staat er gewoon onder; er is niets weggefilterd.
+            Wat bij jou afviel, staat daar aangemerkt.
           </p>
         </div>
       ) : (

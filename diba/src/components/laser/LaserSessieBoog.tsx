@@ -27,7 +27,7 @@ export default function LaserSessieBoog() {
         Traject in beeld
       </p>
       <h3 className="mt-3 text-2xl tracking-[-.05em] sm:text-3xl">
-        Laser is een reeks, geen enkel moment.
+        Voor laserontharing zijn meestal meerdere sessies nodig
       </h3>
 
       <div className="relative mt-12">

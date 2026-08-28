@@ -131,7 +131,10 @@ export default function Reviewmuur() {
       </div>
 
       {/* Wat het filter opleverde, in woorden. Ook als dat weinig is. */}
-      <p aria-live="polite" className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
+      <p
+        aria-live="polite"
+        className="mt-6 text-[16px] leading-7 text-[var(--t-body)]"
+      >
         {gekozen === "alles" ? (
           <>
             Alle {zichtbaar.length} reviews die we van Salonized hebben
@@ -139,16 +142,15 @@ export default function Reviewmuur() {
           </>
         ) : zichtbaar.length < 5 ? (
           <>
-            {zichtbaar.length}{" "}
-            {zichtbaar.length === 1 ? "review" : "reviews"} over{" "}
-            {gekozenLabel.toLowerCase()}. Dat is te weinig om iets uit af te
-            leiden, en daarom staat het aantal op de knop en niet in de
+            {zichtbaar.length} {zichtbaar.length === 1 ? "review" : "reviews"}{" "}
+            over {gekozenLabel.toLowerCase()}. Dat is te weinig om iets uit af
+            te leiden, en daarom staat het aantal op de knop en niet in de
             kleine letters.
           </>
         ) : (
           <>
-            {zichtbaar.length} reviews waarin{" "}
-            {gekozenLabel.toLowerCase()} ter sprake komt.
+            {zichtbaar.length} reviews waarin {gekozenLabel.toLowerCase()} ter
+            sprake komt.
           </>
         )}
       </p>
@@ -156,10 +158,7 @@ export default function Reviewmuur() {
       {/* De muur. Kolommen zodat korte en lange quotes naast elkaar passen. */}
       <ul className="mt-8 gap-4 sm:columns-2 xl:columns-3 [&>li]:mb-4 [&>li]:break-inside-avoid">
         {zichtbaar.map((r) => (
-          <li
-            key={r.id}
-            className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
-          >
+          <li key={r.id} className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8">
             <Sterren />
             <blockquote className="mt-5 text-[16px] leading-7 text-[var(--t-strong)]">
               {r.quote}

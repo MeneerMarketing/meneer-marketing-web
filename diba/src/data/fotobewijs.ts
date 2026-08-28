@@ -16,8 +16,8 @@
  *
  * Dit zijn geen meningen. Standaardisatie van licht, afstand, hoek en tijdstip is de reden
  * dat klinische fotografie protocollen kent; zonder die standaardisatie meet je de foto en
- * niet de huid. De Eve-M op deze site doet in feite hetzelfde: vast licht, vaste afstand,
- * elke keer hetzelfde (zie `apparatuur.ts`, fasen van de Eve-M).
+ * niet de huid. De EVE-M op deze site doet in feite hetzelfde: vast licht, vaste afstand,
+ * elke keer hetzelfde (zie `apparatuur.ts`, fasen van de EVE-M).
  *
  * [MEDISCHE-CHECK-ROJDA] met name `zwelling` en `vocht`: daar staan uitspraken over hoe
  * een huid zich vlak na een behandeling gedraagt.

@@ -71,7 +71,13 @@ export default function AcneOnderDeHuid() {
           {/* De lederhuid kleurt mee als het ontstoken raakt: de reactie zit rondom de
               porie en niet erin. Vandaar een cirkel en geen vlak. */}
           {ontstoken ? (
-            <circle cx="200" cy="250" r="150" fill="var(--warn)" opacity="0.13" />
+            <circle
+              cx="200"
+              cy="250"
+              r="150"
+              fill="var(--warn)"
+              opacity="0.13"
+            />
           ) : null}
 
           {/* ── De porie ──
@@ -103,7 +109,14 @@ export default function AcneOnderDeHuid() {
 
           {/* ── De talgklier ── */}
           <ellipse cx="200" cy="330" rx="52" ry="34" fill="var(--g-300)" />
-          <ellipse cx="200" cy="330" rx="30" ry="19" fill="var(--g-400)" opacity="0.5" />
+          <ellipse
+            cx="200"
+            cy="330"
+            rx="30"
+            ry="19"
+            fill="var(--g-400)"
+            opacity="0.5"
+          />
 
           {/* De haarschacht: het kanaal waar het langs omhoog gaat. */}
           <path

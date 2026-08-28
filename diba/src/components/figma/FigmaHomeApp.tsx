@@ -215,7 +215,7 @@ export default function FigmaHomeApp({
               <span className="diba-accent-on-dark">Behandeling.</span>
             </h2>
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Met de Eve-M huidanalyse maken we een objectieve nulmeting. Zo
+              Met de EVE-M huidanalyse maken we een objectieve nulmeting. Zo
               zien we wat jouw huid nodig heeft en volgen we jouw voortgang in
               beeld.
             </p>
@@ -299,7 +299,7 @@ export default function FigmaHomeApp({
               <Close size={18} />
             </button>
             <span className="diba-label inline-block rounded-[var(--r-pill)] bg-[var(--g-050)] px-3 py-2">
-              Eve-M huidanalyse
+              EVE-M huidanalyse
             </span>
             <h3 id="scan-dialog-title" className="diba-card-title-lg mt-6">
               Jouw huid in kaart.

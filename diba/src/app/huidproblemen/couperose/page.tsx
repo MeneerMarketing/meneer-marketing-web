@@ -99,7 +99,10 @@ const COUPEROSE_OF_ROSACEA = [
     "Opvlammen",
     "Bij rosacea komt en gaat het in aanvallen. Losse vaatjes staan er elke dag hetzelfde bij.",
   ],
-  ["Branderig gevoel", "Hoort bij rosacea. Een verwijd vaatje voel je niet."],
+  [
+    "Branderig gevoel",
+    "Dit beeld kan bij rosacea passen; een verwijd vaatje is meestal niet voelbaar.",
+  ],
   [
     "Bultjes",
     "Rode bultjes zonder mee-eters wijzen op rosacea, en daar hoort een arts bij.",
@@ -311,7 +314,7 @@ export default function CouperosePage() {
       <NulmetingAssen
         kop="Vaatjes zijn te tellen."
         alineas={[
-          "Dat klinkt klein, maar het is de reden dat je bij dit huidprobleem niet hoeft te geloven dat het werkte. De Eve-M legt de vaatstructuur vast onder vast licht, vóór de eerste sessie.",
+          "Dat klinkt klein, maar het is de reden dat je bij dit huidprobleem niet hoeft te geloven dat het werkte. De EVE-M legt de vaatstructuur vast onder vast licht, vóór de eerste sessie.",
           "Na de reeks leggen we de twee beelden naast elkaar. Zie je zelf geen verschil, dan is dat het antwoord en gaan we niet door omdat er nog sessies in een pakket zaten.",
         ]}
         assen={[

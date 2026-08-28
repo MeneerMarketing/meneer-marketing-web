@@ -109,7 +109,7 @@ export const MOEDERVLEK_WEL_NIET = {
     "Eén keer per maand zelf kijken, het liefst op hetzelfde moment. Het gaat om verandering, en die zie je alleen als je een beeld in je hoofd hebt.",
     "Foto's maken van plekjes die je in de gaten houdt, van dichtbij en met iets ernaast voor de schaal.",
     "Ook kijken waar je niet vanzelf kijkt: je rug, je hoofdhuid, tussen je tenen en onder je nagels.",
-    "Bij twijfel naar de huisarts. Dat is geen overdreven reactie maar precies waar die voor is.",
+    "Bij twijfel naar de huisarts. Dat is geen overdreven reactie maar waar die voor is.",
     "Zonbescherming serieus nemen, want dit is het onderwerp waarbij het niet om je uiterlijk gaat.",
   ],
   niet: [

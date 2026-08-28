@@ -31,8 +31,7 @@
  */
 
 /** Kop links, inhoud rechts. Gebruik dit in `SectieKop` én in wat eronder staat. */
-export const RASTER_SECTIE =
-  "grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12";
+export const RASTER_SECTIE = "grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12";
 
 /**
  * Twee gelijke helften, voor een sectie die twee dingen náást elkaar zet.

@@ -273,7 +273,7 @@ export default function LittekensPage() {
       <NulmetingAssen
         kop="Bij littekens telt diepte."
         alineas={[
-          "Littekens veranderen in maanden, niet in weken, en je oog went eraan. De meting legt vast hoe diep en hoe uitgebreid het is, zodat het verschil later niet iets is dat je moet geloven.",
+          "Littekens veranderen langzaam. Daarom leggen we de beginsituatie vast en vergelijken we die na verloop van tijd met een nieuwe beoordeling.",
           "Bij striae meten we ook de kleur, want die vertelt in welke fase ze zitten en dus wat er nog mogelijk is.",
         ]}
         assen={[

@@ -109,9 +109,9 @@ export default function CellulitisPage() {
               gaan er ook geen bedenken.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Deze pagina staat er om te voorkomen dat je betaalt voor een
-              belofte die niemand kan waarmaken. Dat is het enige eerlijke
-              aanbod dat hier past.
+              Omdat cellulitis door de bouw van het bindweefsel ontstaat, zijn
+              de mogelijkheden van huidbehandelingen beperkt. We leggen daarom
+              duidelijk uit wat wel en niet realistisch is.
             </p>
           </div>
         </div>

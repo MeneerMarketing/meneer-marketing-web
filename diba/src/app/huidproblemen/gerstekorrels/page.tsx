@@ -179,7 +179,7 @@ export default function Pagina() {
             </p>
             <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Losse witte bolletjes zijn een ding op zich. Zie je daarnaast
-              verstopte porien, puistjes of een glimmende T-zone, dan gaat het
+              verstopte poriën, puistjes of een glimmende T-zone, dan gaat het
               om onzuiverheden en is de acnepagina de betere ingang.
             </p>
             <div className="mt-7">

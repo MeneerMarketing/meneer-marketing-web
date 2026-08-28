@@ -5,8 +5,8 @@ export { DIBA_CITAAT } from "./schema";
 export const DIBA_SITE_URL = "https://dibaclinics.nl";
 
 export const DIBA_SITE = {
-  name: "DIBA Clinics",
-  legalName: "DIBA Clinics B.V.",
+  name: "Diba Clinics",
+  legalName: "Diba Clinics B.V.",
   domain: "dibaclinics.nl",
   baseUrl: "https://dibaclinics.nl",
   locale: "nl-NL",
@@ -46,7 +46,8 @@ export const DIBA_SALONIZED_BOOKING_URL =
  * [GEGEVEN-NODIG: bevestiging van het profiel, Okan]
  */
 export const DIBA_INSTAGRAM_URL =
-  process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "https://www.instagram.com/dibaclinics/";
+  process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
+  "https://www.instagram.com/dibaclinics/";
 
 /**
  * Openingstijden.
@@ -75,9 +76,12 @@ export const DIBA_OPENINGSTIJDEN = [
 
 /** Hoe snel je antwoord krijgt, per kanaal. [GEGEVEN-NODIG: bevestiging, Okan] */
 export const DIBA_REACTIETIJDEN = {
-  telefoon: "Tijdens openingstijden direct. Staat er niemand vrij, dan bellen we dezelfde dag terug.",
-  whatsapp: "Meestal binnen een paar uur op een werkdag, en altijd binnen één werkdag.",
-  email: "Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller.",
+  telefoon:
+    "Tijdens openingstijden direct. Staat er niemand vrij, dan bellen we dezelfde dag terug.",
+  whatsapp:
+    "Meestal binnen een paar uur op een werkdag, en altijd binnen één werkdag.",
+  email:
+    "Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller.",
 } as const;
 
 /**
@@ -114,7 +118,8 @@ export const DIBA_NAP = {
 } as const;
 
 /** Publieke reviewbron — live op Salonized. */
-export const DIBA_SALONIZED_REVIEWS_URL = "https://dibaclinics.salonized.com/reviews";
+export const DIBA_SALONIZED_REVIEWS_URL =
+  "https://dibaclinics.salonized.com/reviews";
 
 /** Stand Salonized (aug 2026): 5,0 · 3.883 reviews. */
 export const DIBA_SALONIZED_RATING = 5.0;
@@ -171,7 +176,11 @@ export const DIBA_PROOF_STRIP_ITEMS: readonly ProofStripItem[] = [
 /** Figma homepage volgorde — stats bar onder hero */
 export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
   { value: DIBA_SALONIZED_REVIEW_COUNT, label: "Klantreviews" },
-  { value: AANTAL.behandelingen, suffix: "+", label: "Uitgevoerde behandelingen" },
+  {
+    value: AANTAL.behandelingen,
+    suffix: "+",
+    label: "Uitgevoerde behandelingen",
+  },
   { value: AANTAL.geholpenKlanten, suffix: "+", label: "Geholpen klanten" },
   { value: DIBA_PROOF.activeSince, label: "Vertrouwd sinds", isJaartal: true },
 ] as const;

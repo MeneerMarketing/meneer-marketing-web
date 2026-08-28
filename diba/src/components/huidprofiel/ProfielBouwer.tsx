@@ -296,7 +296,7 @@ export default function ProfielBouwer() {
           nummer={1}
           kop="Je scan"
           accent="als startpunt."
-          uitleg="Vier vragen over wat je ziet en voelt, en je krijgt je profielschets terug als spinnenweb. De open buitenrand blijft staan: dat is wat Eve-M er in de kliniek pas echt bij meet."
+          uitleg="Vier vragen over wat je ziet en voelt, en je krijgt je profielschets terug als spinnenweb. De open buitenrand blijft staan: dat is wat EVE-M er in de kliniek pas echt bij meet."
           klaar={profiel.scan !== null}
         >
           {profiel.scan ? (

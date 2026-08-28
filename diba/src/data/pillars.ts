@@ -34,34 +34,100 @@ export type Huidprobleem = {
 
 export const PILLARS: readonly Huidprobleem[] = [
   { slug: "acne", titel: "Acne: eerst begrijpen, dan *behandelen*" },
-  { slug: "acne-littekens", titel: "Acnelittekens: eerst begrijpen, dan *behandelen*" },
-  { slug: "onzuivere-huid", titel: "Onzuivere huid: eerst begrijpen, dan *behandelen*" },
-  { slug: "pigmentvlekken", titel: "Pigmentvlekken: eerst begrijpen, dan *behandelen*" },
-  { slug: "rosacea", titel: "Rosacea en couperose: eerst begrijpen, dan *behandelen*" },
+  {
+    slug: "acne-littekens",
+    titel: "Acnelittekens: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "onzuivere-huid",
+    titel: "Onzuivere huid: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "pigmentvlekken",
+    titel: "Pigmentvlekken: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "rosacea",
+    titel: "Rosacea en couperose: eerst begrijpen, dan *behandelen*",
+  },
   { slug: "couperose", titel: "Couperose: eerst begrijpen, dan *behandelen*" },
-  { slug: "huidveroudering", titel: "Huidveroudering: eerst begrijpen, dan *behandelen*" },
-  { slug: "rimpels", titel: "Rimpels en fijne lijntjes: eerst begrijpen, dan *behandelen*" },
-  { slug: "huidverslapping", titel: "Huidverslapping: eerst begrijpen, dan *behandelen*" },
-  { slug: "littekens", titel: "Littekens en striae: eerst begrijpen, dan *behandelen*" },
+  {
+    slug: "huidveroudering",
+    titel: "Huidveroudering: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "rimpels",
+    titel: "Rimpels en fijne lijntjes: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "huidverslapping",
+    titel: "Huidverslapping: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "littekens",
+    titel: "Littekens en striae: eerst begrijpen, dan *behandelen*",
+  },
   { slug: "striae", titel: "Striae: eerst begrijpen, dan *behandelen*" },
   { slug: "porien", titel: "Grove poriën: eerst begrijpen, dan *behandelen*" },
-  { slug: "ingegroeide-haren", titel: "Ingegroeide haren: eerst begrijpen, dan *behandelen*" },
-  { slug: "keratosis-pilaris", titel: "Keratosis pilaris: eerst begrijpen, dan *behandelen*" },
-  { slug: "steelwratjes", titel: "Steelwratjes: eerst begrijpen, dan *behandelen*" },
-  { slug: "droge-huid", titel: "Droge huid: eerst begrijpen, dan *behandelen*" },
-  { slug: "doffe-huid", titel: "Doffe huid: eerst begrijpen, dan *behandelen*" },
-  { slug: "gevoelige-huid", titel: "Gevoelige huid: eerst begrijpen, dan *behandelen*" },
+  {
+    slug: "ingegroeide-haren",
+    titel: "Ingegroeide haren: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "keratosis-pilaris",
+    titel: "Keratosis pilaris: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "steelwratjes",
+    titel: "Steelwratjes: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "droge-huid",
+    titel: "Droge huid: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "doffe-huid",
+    titel: "Doffe huid: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "gevoelige-huid",
+    titel: "Gevoelige huid: eerst begrijpen, dan *behandelen*",
+  },
   { slug: "melasma", titel: "Melasma: eerst begrijpen, dan *behandelen*" },
-  { slug: "ouderdomsvlekken", titel: "Ouderdomsvlekken: eerst begrijpen, dan *behandelen*" },
-  { slug: "gerstekorrels", titel: "Gerstekorrels en milia: eerst begrijpen, dan *behandelen*" },
-  { slug: "donkere-kringen", titel: "Donkere kringen: eerst begrijpen, dan *behandelen*" },
+  {
+    slug: "ouderdomsvlekken",
+    titel: "Ouderdomsvlekken: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "gerstekorrels",
+    titel: "Gerstekorrels en milia: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "donkere-kringen",
+    titel: "Donkere kringen: eerst begrijpen, dan *behandelen*",
+  },
   { slug: "wallen", titel: "Wallen: eerst begrijpen, dan *behandelen*" },
-  { slug: "huiduitslag", titel: "Huiduitslag: eerst begrijpen, dan *behandelen*" },
+  {
+    slug: "huiduitslag",
+    titel: "Huiduitslag: eerst begrijpen, dan *behandelen*",
+  },
   { slug: "eczeem", titel: "Eczeem: eerst begrijpen, dan *behandelen*" },
   { slug: "psoriasis", titel: "Psoriasis: eerst begrijpen, dan *behandelen*" },
   { slug: "keloiden", titel: "Keloiden: eerst begrijpen, dan *behandelen*" },
-  { slug: "huidkanker-naevi", titel: "Moedervlekken controleren: eerst begrijpen, dan *behandelen*" },
-  { slug: "cellulitis", titel: "Cellulitis: eerst begrijpen, dan *behandelen*" },
-  { slug: "huidverkleuring", titel: "Huidverkleuring: eerst begrijpen, dan *behandelen*" },
-  { slug: "symptoomzoeker", titel: "Iets anders aan je huid: eerst begrijpen, dan *behandelen*" },
+  {
+    slug: "huidkanker-naevi",
+    titel: "Moedervlekken controleren: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "cellulitis",
+    titel: "Cellulitis: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "huidverkleuring",
+    titel: "Huidverkleuring: eerst begrijpen, dan *behandelen*",
+  },
+  {
+    slug: "symptoomzoeker",
+    titel: "Iets anders aan je huid: eerst begrijpen, dan *behandelen*",
+  },
 ];

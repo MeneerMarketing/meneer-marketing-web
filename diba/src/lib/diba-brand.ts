@@ -24,4 +24,3 @@ export type DibaLogoVariant = "dark" | "white";
 export function dibaLogoSrc(variant: DibaLogoVariant): string {
   return variant === "white" ? DIBA_LOGO_WHITE : DIBA_LOGO_DARK;
 }
-

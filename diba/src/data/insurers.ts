@@ -69,7 +69,8 @@ export const INSURERS: readonly Insurer[] = [
   {
     slug: "menzis",
     name: "Menzis",
-    vergoedingenUrl: "https://www.menzis.nl/zorg-en-vergoedingen/d/dermatologie",
+    vergoedingenUrl:
+      "https://www.menzis.nl/zorg-en-vergoedingen/d/dermatologie",
     waarTeVinden:
       "Menzis werkt met vergoedingenwijzers: pdf-overzichten per jaar waarin per zorgsoort staat wat je pakket doet.",
     eigenaardigheid:
@@ -98,7 +99,8 @@ export const INSURERS: readonly Insurer[] = [
   {
     slug: "asr",
     name: "a.s.r.",
-    vergoedingenUrl: "https://www.asr.nl/verzekeringen/zorgverzekering/vergoedingen",
+    vergoedingenUrl:
+      "https://www.asr.nl/verzekeringen/zorgverzekering/vergoedingen",
     waarTeVinden:
       "a.s.r. heeft een vergoedingenvinder waarin je op behandeling zoekt, plus de polisvoorwaarden als pdf.",
     eigenaardigheid: null,

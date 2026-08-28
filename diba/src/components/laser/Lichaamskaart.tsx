@@ -89,10 +89,7 @@ const HUID = "var(--g-100)";
  * die de middenas raken lopen er in de data een paar pixels overheen, zodat de twee helften
  * elkaar overlappen en er geen haarlijn in het midden staat.
  */
-function Paar({
-  d,
-  ...rest
-}: { d: string } & React.SVGProps<SVGPathElement>) {
+function Paar({ d, ...rest }: { d: string } & React.SVGProps<SVGPathElement>) {
   return (
     <>
       <path d={d} {...rest} />
@@ -141,9 +138,7 @@ export default function Lichaamskaart({
   /* De zones in twee lagen: eerst wat op de romp ligt, dan wat op een ledemaat ligt, met
      het silhouet van dat ledemaat ertussen. Zie `OVERTEKENEN` in de kaartdata. */
   const opLedemaat = (id: string) =>
-    OVERTEKENEN.includes(
-      ZONE_VORMEN[id]?.[aanzicht]?.knipOp as Lichaamsdeel,
-    );
+    OVERTEKENEN.includes(ZONE_VORMEN[id]?.[aanzicht]?.knipOp as Lichaamsdeel);
   const opRomp = zichtbaar.filter((id) => !opLedemaat(id));
   const opLedematen = zichtbaar.filter(opLedemaat);
 

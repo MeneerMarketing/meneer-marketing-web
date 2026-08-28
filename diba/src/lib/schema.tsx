@@ -45,14 +45,14 @@ export function medicalClinicSchema(opts: {
     /* Openingstijden horen hier, niet alleen op de contactpagina: Google toont ze in het
        bedrijfspaneel en bij "nu open". Zonder dit veld stond er niets, en dan vult Google
        het zelf in met wat het ergens anders vindt. Eén bron: DIBA_OPENINGSTIJDEN. */
-    openingHoursSpecification: DIBA_OPENINGSTIJDEN.filter((d) => d.van && d.tot).map(
-      (d) => ({
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: `https://schema.org/${d.dag}`,
-        opens: d.van,
-        closes: d.tot,
-      }),
-    ),
+    openingHoursSpecification: DIBA_OPENINGSTIJDEN.filter(
+      (d) => d.van && d.tot,
+    ).map((d) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: `https://schema.org/${d.dag}`,
+      opens: d.van,
+      closes: d.tot,
+    })),
     ...(opts.sameAs?.length ? { sameAs: opts.sameAs } : {}),
   } as const;
 }
@@ -69,9 +69,7 @@ export function faqSchema(items: { question: string; answer: string }[]) {
   } as const;
 }
 
-export function breadcrumbSchema(
-  items: { name: string; url: string }[]
-) {
+export function breadcrumbSchema(items: { name: string; url: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

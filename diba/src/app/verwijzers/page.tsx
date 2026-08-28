@@ -237,9 +237,8 @@ export default function VerwijzersPage() {
                 </span>
               </h2>
               <p className="mt-6 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Voor een verwijzer is dat het verschil dat telt, en op de meeste
-                kliniekwebsites staat het nergens. Hier wel, inclusief wat níet
-                beschermd is.
+                Voor verwijzers vermelden we duidelijk welke functietitels en
+                registraties van toepassing zijn.
               </p>
             </div>
 

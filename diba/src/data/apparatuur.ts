@@ -121,7 +121,7 @@ export type Apparaat = {
     readonly verschil: string;
   }[];
 
-  /** Drie fasen van wat er gebeurt, in volgorde. [MEDISCHE-CHECK-ROJDA] */
+  /** Drie fasen van Zo verloopt de behandeling [MEDISCHE-CHECK-ROJDA] */
   readonly fasen: readonly { readonly kop: string; readonly zin: string }[];
 
   /**
@@ -140,12 +140,12 @@ export const APPARATUUR: readonly Apparaat[] = [
     slug: "eve-m",
     foto: {
       src: "/images/shoot/apparaat-eve-m.jpg",
-      alt: "Behandelaar plaatst een cliënt in de Eve-M huidscanner",
+      alt: "Behandelaar plaatst een cliënt in de EVE-M huidscanner",
     },
-    naam: "Eve-M",
+    naam: "EVE-M",
     categorie: "meten",
     kort: "De huidscanner waar elk traject mee begint. Meet, behandelt niet.",
-    wat: "De Eve-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar. [MEDISCHE-CHECK-ROJDA]",
+    wat: "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is",
       "Zien wat er onder de oppervlakte zit voordat het zichtbaar wordt",
@@ -186,7 +186,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     merk: "Fotona",
     categorie: "laser",
     kort: "Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase.",
-    wat: "Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit door de mondholte en van buitenaf over de huid. Elke behandeling op dit apparaat mikt op één ding, en dat is precies waarom er meerdere namen op staan. [MEDISCHE-CHECK-ROJDA]",
+    wat: "Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit door de mondholte en van buitenaf over de huid. Elke behandeling op dit apparaat mikt op één ding, en daarom er meerdere namen op staan. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Verslapping en volumeverlies aanpakken zonder injectables",
       "Gericht werken rond de ogen, de lippen of de kaaklijn",
@@ -415,7 +415,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       src: "/images/shoot/apparaat-hydrafacial.jpg",
       alt: "Het HydraFacial-handstuk op de huid, met het apparaat op de achtergrond",
     },
-    naam: "HydraFacial Syndeo",
+    naam: "Hydrafacial syndeo",
     merk: "HydraFacial",
     categorie: "overig",
     kort: "Reinigen, exfoliëren, poriën leegzuigen en voeden in één doorloop.",
@@ -672,7 +672,7 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "dermaplane-pro",
-    naam: "Dermaplane PRO",
+    naam: "Dermaplane pro",
     merk: "DermaplanePro",
     categorie: "overig",
     kort: "Een chirurgisch mesje onder 45 graden. Geen zuren, dus ook bij een gevoelige huid.",

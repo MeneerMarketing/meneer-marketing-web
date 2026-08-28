@@ -62,12 +62,12 @@ const VACATURES = [
  */
 const VERWACHTING = {
   wel: [
-    "Dat je durft te zeggen dat iets niet kan. Nee zeggen tegen een behandeling die niet past is hier geen gemiste omzet maar het werk.",
+    "Dat je duidelijk zegt wanneer een behandeling niet passend of niet veilig is. Goed advies kan ook betekenen dat je niet behandelt.",
     "Dat je meet voordat je begint, en dat je je instelling kunt uitleggen aan de klant en aan een collega.",
     "Dat je bijhoudt wat er in het vak verandert. Een diploma is een startpunt.",
   ],
   niet: [
-    "Verkopen. Niemand hier heeft een omzetdoel per klant en niemand wordt afgerekend op wat hij heeft weten aan te praten.",
+    "Advies geven Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.",
     "Alles alleen kunnen. Er zijn twee vakgebieden in huis juist omdat één invalshoek vaak niet genoeg is.",
     "Meteen alle apparatuur beheersen. Inwerken op een nieuw apparaat hoort erbij en daar is tijd voor.",
   ],

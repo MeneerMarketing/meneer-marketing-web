@@ -192,7 +192,7 @@ export const ACNE_TIJDLIJN = [
     tekst:
       "Nu zie je het ook op foto's, niet alleen in de spiegel op een goede dag. Dit is het moment waarop het verschil met de nulmeting hard wordt in plaats van een gevoel.",
     watWijDoen:
-      "Tweede meting met Eve-M. We leggen de twee naast elkaar en stellen het plan bij. Werkt het niet, dan zeggen we dat en stoppen we.",
+      "Tweede meting met EVE-M. We leggen de twee naast elkaar en stellen het plan bij. Werkt het niet, dan zeggen we dat en stoppen we.",
     isDip: false,
   },
   {

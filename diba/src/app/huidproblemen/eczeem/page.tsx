@@ -94,9 +94,9 @@ export default function EczeemPage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Eczeem hoort bij je huisarts. Wij kunnen op precies één punt van
-              die cirkel iets betekenen, en het is eerlijker om te laten zien
-              welk punt dat is dan om te doen alsof we de rest ook kunnen.
+              Eczeem hoort bij je huisarts. Wij kunnen op één punt van die
+              cirkel iets betekenen, en het is eerlijker om te laten zien welk
+              punt dat is dan om te doen alsof we de rest ook kunnen.
             </p>
 
             <div className="mt-9">

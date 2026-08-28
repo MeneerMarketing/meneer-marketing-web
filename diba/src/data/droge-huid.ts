@@ -127,7 +127,7 @@ export const VERWARRINGEN = [
 export const DROGE_HUID_WEL_NIET = {
   wel: [
     "Weten in welk kwadrant je zit voordat je iets koopt. Dat scheelt jaren aan producten die het verkeerde probleem oplossen.",
-    "Lauw douchen in plaats van heet, en korter. Dit is de goedkoopste stap op deze pagina en de meest overgeslagen.",
+    "Douche kort en met lauw water, omdat heet water de huid verder kan uitdrogen.",
     "Reinigen dat je huid niet piepschoon achterlaat. Piepschoon betekent dat er ook vet weg is dat je nodig had.",
     "Bij twijfel afbouwen: alles weg behalve reinigen en één verzorgend product, twee weken lang. Dan zie je wat het echt is.",
     "Accepteren dat de vetas grotendeels aanleg is en dat de wateras wél te sturen valt.",

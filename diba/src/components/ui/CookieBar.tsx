@@ -67,7 +67,10 @@ export default function CookieBar() {
         */}
         <p className="max-w-xl text-[13px] leading-snug text-[var(--t-body)] md:text-[14px] md:leading-relaxed">
           Cookies voor een werkende site en anonieme statistieken.
-          <span className="hidden sm:inline"> Geen advertentie-tracking.</span>{" "}
+          <span className="hidden sm:inline">
+            {" "}
+            Geen advertentie-tracking.
+          </span>{" "}
           <Link
             href="/cookiebeleid"
             className="text-[var(--g-700)] underline underline-offset-2 hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
