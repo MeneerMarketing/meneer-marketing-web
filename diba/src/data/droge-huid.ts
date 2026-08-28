@@ -110,7 +110,7 @@ export const VERWARRINGEN = [
   {
     vraag: "Mijn huid glimt én trekt. Kan dat?",
     antwoord:
-      "Ja, en dat is precies waarom deze twee assen los van elkaar staan. Een vette huid kan uitgedroogd zijn. Wie dan een matterende reiniger pakt, maakt het erger.",
+      "Ja, en daarom deze twee assen los van elkaar staan. Een vette huid kan uitgedroogd zijn. Wie dan een matterende reiniger pakt, maakt het erger.",
   },
   {
     vraag: "Het is 's winters veel erger. Is mijn huidtype veranderd?",

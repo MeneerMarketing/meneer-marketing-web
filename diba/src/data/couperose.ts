@@ -132,8 +132,8 @@ export const COUPEROSE_WEL_NIET = {
   ],
   niet: [
     "Stevig scrubben of borstelen. Het maakt de huid rood zonder één vaatje te sluiten",
-    "Hete douches en de sauna vlak na een behandeling. Warmte zet precies aan wat we net gesloten hebben",
-    "Camouflage als oplossing verkopen. Groene concealer werkt prima, maar het is make-up en geen behandeling",
+    "Hete douches en de sauna vlak na een vaatbehandeling, omdat warmte de roodheid opnieuw kan versterken",
+    "Camouflage als behandeling presenteren Groene concealer kan roodheid minder zichtbaar maken, maar behandelt de vaatjes of oorzaak niet.",
     "Een crème die belooft vaatjes te laten verdwijnen. Een verwijd vaatje zit onder de opperhuid en daar komt geen crème",
     "Beginnen op een gebruinde huid [MEDISCHE-CHECK-ROJDA]",
   ],

@@ -270,7 +270,7 @@ export default function PigmentPage() {
       />
 
       <NulmetingAssen
-        kop="Bij pigment tellen drie assen."
+        kop="Deze kenmerken volgen we bij pigment"
         alineas={[
           "De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt.",
           "Dat is ook de eerlijkste manier om te zien of het werkt. Pigment verandert langzaam, en je oog raakt eraan gewend.",

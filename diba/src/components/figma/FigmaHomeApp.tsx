@@ -124,35 +124,24 @@ export default function FigmaHomeApp({
                   Touch als merkteken, niet als losse zin. De slogan zelf staat al in de
                   topbalk en in de footer. */}
               <div className="flex flex-col justify-center py-16 lg:py-24">
-                <p className="diba-label flex items-center gap-2.5">
-                  <span
-                    className="h-2 w-2 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-400)]"
-                    aria-hidden="true"
-                  />
-                  Huidzorg die klopt
-                </p>
-
                 {/* max-w in ch: de kop breekt op de bedoelde plek en raakt de foto nooit. */}
-                <h1 className="diba-display-xl mt-6 max-w-[11ch]">
-                  Geen hypes.
+                <h1 className="diba-display-xl mt-6 max-w-[13ch]">
+                  Huidkliniek
                   <br />
-                  <span className="diba-accent">Wel huidzorg.</span>
+                  <span className="diba-accent">in Rotterdam</span>
                 </h1>
 
-                <p className="mt-7 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Diba Clinics in Hillegersberg, Rotterdam. Eerlijk advies,
-                  openbare prijzen, en een nulmeting voordat we behandelen.
+                <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
+                  Je hoeft vooraf niet te weten welke behandeling je nodig hebt.
+                  We luisteren naar waar je last van hebt, bekijken je huid en
+                  leggen duidelijk uit wat wel en niet zinvol is. Alle prijzen
+                  staan vooraf online.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
-                  <Button href="/intake">Start je intake (4 min)</Button>
-                  <Button
-                    href={DIBA_WHATSAPP_URL}
-                    variant="ghost"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Nog niet zeker? Stel je vraag
+                  <Button href="/intake">Plan een eerste afspraak</Button>
+                  <Button href="/behandelingen" variant="ghost">
+                    Bekijk de behandelingen
                   </Button>
                 </div>
               </div>
@@ -369,7 +358,7 @@ export default function FigmaHomeApp({
           <div className="rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:p-10">
             <Label>Eerlijk advies</Label>
             <h2 className="diba-card-title-lg mt-4">
-              Soms is niet behandelen óók het beste advies.
+              Als wachten of niet behandelen verstandiger is, zeggen we dat ook.
             </h2>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
               Wij behandelen niet om te behandelen. We adviseren wat past bij
@@ -524,7 +513,7 @@ export default function FigmaHomeApp({
               </span>
               <h3 className="diba-card-title-lg mt-28">Geen haast.</h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Er is ruimte voor je vragen, en voor twijfel.
+                Veelgestelde vragen
               </p>
             </div>
             {/* Een vlak en geen foto.
@@ -561,7 +550,9 @@ export default function FigmaHomeApp({
               </span>
               <h3 className="diba-card-title-lg mt-28">Heldere keuzes.</h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Over behandeling, kosten en wat je kunt verwachten.
+                Je krijgt uitleg over de mogelijkheden We vertellen welke
+                behandelingen mogelijk zijn, wat ze kosten en wat je ervan kunt
+                verwachten. Je hoeft niet direct te beslissen.
               </p>
               <Link
                 href="/prijzen"

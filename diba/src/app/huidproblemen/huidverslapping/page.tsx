@@ -110,7 +110,7 @@ export default function Pagina() {
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Verslapping is het enige huidprobleem dat verandert met de stand
-              van je hoofd. Wat er liggend strakker uitziet, is precies wat de
+              van je hoofd. Wat er liggend strakker uitziet, is wat de
               zwaartekracht overdag naar beneden trekt, en daarmee ongeveer het
               maximum van wat aanspannen kan bereiken.
             </p>

@@ -138,7 +138,7 @@ export default function MoedervlekkenPage() {
             label="De ABCDE-check"
             kop="Zes dingen"
             accent="om naar te kijken."
-            intro="Vijf letters die dermatologen gebruiken, plus een zesde die op de meeste sites ontbreekt. Deze check geeft geen uitslag en kan niets uitsluiten. Hij helpt je bepalen of je ermee naar de huisarts gaat, en dat is precies waar hij voor is."
+            intro="Vijf letters die dermatologen gebruiken, plus een zesde die op de meeste sites ontbreekt. Deze check geeft geen uitslag en kan niets uitsluiten. Hij helpt je bepalen of je ermee naar de huisarts gaat, en dat is waar hij voor is."
           />
           <AbcdeCheck />
         </div>

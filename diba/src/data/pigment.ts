@@ -42,7 +42,7 @@
  * moet weten dat een gemiddelde iets anders is dan een dag.
  */
 export const ZONJAAR_KANTTEKENING =
-  "Dit zijn maandgemiddelden en geen dagwaarden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is precies het moment waarop pigment ontstaat.";
+  "Dit zijn maandgemiddelden en geen dagwaarden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.";
 
 export type Maand = {
   readonly naam: string;

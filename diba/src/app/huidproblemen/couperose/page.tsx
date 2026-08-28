@@ -307,7 +307,7 @@ export default function CouperosePage() {
       <WijZeggenNee
         kop="Twee keer nee,"
         accent="en allebei om dezelfde reden."
-        intro="Licht op de verkeerde huid of op het verkeerde moment maakt roodheid erger. Dat is precies wat je hier niet komt halen."
+        intro="Licht op de verkeerde huid of op het verkeerde moment maakt roodheid erger. Dat is wat je hier niet komt halen."
         punten={COUPEROSE_WIJ_DOEN_NIET}
       />
 

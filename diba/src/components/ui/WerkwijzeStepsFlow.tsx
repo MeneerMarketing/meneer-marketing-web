@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { HOME_WERKWIJZE_STEPS } from "@/data/home-werkwijze";
 
 /**
- * De drie stappen naast "Eerst begrijpen. Dan behandelen."
+ * De drie stappen naast "We behandelen alleen als we denken dat het zinvol is"
  *
  * WAT ER MIS WAS, EN WAAROM HET ALS EEN SJABLOON OOGDE.
  *

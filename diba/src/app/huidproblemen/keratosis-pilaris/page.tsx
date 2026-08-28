@@ -106,10 +106,9 @@ export default function Pagina() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Kippenvelhuid, of keratosis pilaris, is grotendeels erfelijk,
-              onschuldig, en bij veel mensen wordt het met de jaren vanzelf
-              minder. Dat is geen mooi verkoopverhaal en het is wel het
-              eerlijke.
+              Keratosis pilaris is een onschuldige en vaak erfelijke
+              huidaandoening. De bultjes kunnen met de jaren minder worden, maar
+              verdwijnen niet bij iedereen vanzelf.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

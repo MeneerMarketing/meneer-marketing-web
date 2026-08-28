@@ -77,11 +77,11 @@ export const DOELWITTEN: Readonly<
   },
   hoornlaag: {
     naam: "De hoornlaag",
-    zin: "De buitenste laag dode cellen. Die laat los, de rest blijft zitten.",
+    zin: "De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidlagen worden niet op dezelfde manier behandeld.",
   },
   geen: {
     naam: "Niets",
-    zin: "Er wordt niets geraakt. Er wordt alleen gekeken.",
+    zin: "Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.",
   },
 };
 
@@ -471,7 +471,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "SkinPen CIT",
     merk: "SkinPen",
     categorie: "needling",
-    kort: "Medisch gecertificeerd microneedlen. Werkt op het bindweefsel.",
+    kort: "Deze medisch gecertificeerde microneedlingbehandeling werkt met gecontroleerde prikjes in de huid.",
     wat: "Met fijne naalden worden kanaaltjes tot in de bovenste lederhuid gemaakt. De huid reageert daarop met herstel en collageenaanmaak; dat herstel is het doel, de prikjes zijn de aanleiding. Daarom duurt het weken voor je iets ziet. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Littekens die door verlies van structuur zijn ontstaan",

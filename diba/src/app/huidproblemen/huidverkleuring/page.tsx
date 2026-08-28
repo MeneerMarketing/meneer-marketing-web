@@ -237,9 +237,8 @@ export default function HuidverkleuringPage() {
           </div>
           <div className="mt-8 flex flex-col justify-end lg:mt-0">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Twijfel je tussen twee kleuren, of speelt er meer tegelijk? Dan is
-              dat precies de reden om het te laten bekijken in plaats van er
-              zelf uit te komen.
+              Twijfel je tussen twee kleuren of spelen er meerdere veranderingen
+              tegelijk, laat de plek dan beoordelen.
             </p>
             <div className="mt-7">
               <Button

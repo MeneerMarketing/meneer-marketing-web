@@ -235,7 +235,7 @@ export default function Pagina() {
       <WijZeggenNee
         kop="Twee keer nee,"
         accent="en de tweede voorkomt een trap omhoog."
-        intro="Het effect van een behandeling op dofheid zakt na verloop van tijd. Steeds dieper gaan omdat het vorige effect wegtrok, is de snelste route naar een geirriteerde huid die juist doffer oogt."
+        intro="Het effect van een behandeling op dofheid zakt na verloop van tijd. Steeds dieper gaan omdat het vorige effect wegtrok, is de snelste route naar een geïrriteerde huid die juist doffer oogt."
         punten={DOF_WIJ_DOEN_NIET}
       />
 

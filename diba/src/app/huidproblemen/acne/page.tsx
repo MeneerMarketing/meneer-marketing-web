@@ -221,13 +221,13 @@ export default function AcnePage() {
             <div>
               <Label>Onder je huid</Label>
               <h2 className="diba-display-m mt-4 max-w-[18ch]">
-                Vier stadia, vier verschillende knoppen.
+                Acne verloopt in verschillende stadia
               </h2>
             </div>
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Bij elk stadium kun je iets anders doen. Dat is precies waarom
-              harder schrobben niet werkt: dat grijpt in op het tweede stadium
-              en maakt het vierde erger. Klik erdoor en kijk wat er verandert.
+              Bij elk stadium kun je iets anders doen. Daarom harder schrobben
+              niet werkt: dat grijpt in op het tweede stadium en maakt het
+              vierde erger. Klik erdoor en kijk wat er verandert.
             </p>
           </div>
 
@@ -336,8 +336,8 @@ export default function AcnePage() {
             <p className="max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Littekens behandelen op een huid die nog ontstoken is maakt het
               beeld slechter. Dat is de belangrijkste reden dat we soms nee
-              zeggen tegen een behandeling die je zelf al had uitgekozen. Dat
-              gesprek is niet leuk, en we voeren het liever nu dan achteraf.
+              zeggen tegen een behandeling die je zelf al had uitgekozen. We
+              leggen dit liever vooraf duidelijk uit.
             </p>
           </div>
 
@@ -363,7 +363,7 @@ export default function AcnePage() {
           <div>
             <Label>De Nulmeting</Label>
             <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Bij acne tellen vier assen.
+              Deze kenmerken volgen we bij acne
             </h2>
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
               De EVE-M-meting legt je huid vast voordat we beginnen. Bij acne
@@ -419,7 +419,7 @@ export default function AcnePage() {
           <div>
             <Label>Goed om te weten</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              De vragen die we het vaakst krijgen.
+              Veelgestelde vragen over acne
             </h2>
           </div>
 

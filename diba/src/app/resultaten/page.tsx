@@ -79,9 +79,9 @@ export default function ResultatenPage() {
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Ze komen er, van eigen klanten en met hun toestemming. Tot die
-              tijd zetten we hier geen beelden neer die niet van onze klanten
-              zijn, want dat is een leugen met een bijschrift eronder.
+              We tonen alleen resultaatfoto's van eigen klanten die daarvoor
+              toestemming hebben gegeven. Zolang geschikte beelden ontbreken,
+              plaatsen we geen voorbeeldfoto's van anderen.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               In plaats daarvan krijg je iets wat je aan drie foto&apos;s niet
@@ -187,9 +187,9 @@ export default function ResultatenPage() {
           </div>
           <div>
             <p className="max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]">
-              De huidscanner werkt met vast licht op een vaste afstand, elke
-              keer hetzelfde. Precies daarom is een meting van vandaag over drie
-              maanden nog vergelijkbaar, en een telefoonfoto niet.
+              De EVE-M gebruikt vaste opnameomstandigheden. Daardoor is een
+              latere meting beter vergelijkbaar dan een losse telefoonfoto onder
+              ander licht.
             </p>
             <p className="mt-4 max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]">
               Wat er dan uit komt zijn geen mooie plaatjes maar waardes:
@@ -262,15 +262,14 @@ export default function ResultatenPage() {
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Voor-en-na van eigen klanten die er toestemming voor gaven,
-              geschoten volgens het protocol hierboven. Ze komen onder deze
-              uitleg te staan en niet erboven, want zonder die uitleg is een
-              resultaatfoto alsnog een plaatje dat je maar moet geloven.
+              We tonen alleen voor- en nafoto's van eigen klanten die
+              toestemming hebben gegeven en waarbij de foto's onder
+              vergelijkbare omstandigheden zijn gemaakt.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
               Ben je klant en wil je dat jouw beelden meedoen, dan hoor je van
-              tevoren precies waar ze te zien zullen zijn en kun je die
-              toestemming op elk moment weer intrekken.
+              tevoren waar ze te zien zullen zijn en kun je die toestemming op
+              elk moment weer intrekken.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

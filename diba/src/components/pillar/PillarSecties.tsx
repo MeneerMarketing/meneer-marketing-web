@@ -348,7 +348,7 @@ export function PillarFaq({
         <div>
           <Label>Goed om te weten</Label>
           <h2 className="diba-display-m mt-4 max-w-[16ch]">
-            De vragen die we het vaakst krijgen.
+            Veelgestelde vragen over acne
           </h2>
         </div>
 

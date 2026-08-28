@@ -36,7 +36,7 @@ const GROEP_INFO = {
   "niet-beinvloedbaar": {
     kop: "Hier zit geen knop",
     toelichting:
-      "Dit kun je niet vermijden. Precies hier heeft behandelen zin.",
+      "Deze trigger kun je niet altijd vermijden. Een behandeling kan dan helpen om de klachten beter te beheersen.",
     kleur: "var(--warn)",
     vlak: "var(--warn-vlak)",
   },

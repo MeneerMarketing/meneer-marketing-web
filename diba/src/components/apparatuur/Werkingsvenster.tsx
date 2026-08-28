@@ -321,8 +321,8 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
         {/* [MEDISCHE-CHECK-ROJDA]: de dieptes en de fasen per apparaat. De vlag hoort in
             dit commentaar en niet in de zin eronder, want die zin lezen bezoekers wel. */}
         <p className="mt-4 text-[13px] leading-6 text-[var(--t-muted)]">
-          Schematisch. De verhoudingen kloppen niet op de millimeter en de
-          diepte hangt af van de instelling.
+          De afbeelding is schematisch. De werkelijke diepte hangt af van de
+          gekozen instelling.
         </p>
       </div>
 

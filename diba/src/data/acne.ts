@@ -209,7 +209,7 @@ export const ACNE_TIJDLIJN = [
 /** Wat wél en wat niet. De kruisjes zijn concreet, want daar zit de waarde. */
 export const ACNE_WEL_NIET = {
   wel: [
-    "Een nulmeting voordat we starten, zodat je later niet hoeft te geloven dat het werkte",
+    "Een nulmeting voordat we starten, zodat we later onder vergelijkbare omstandigheden kunnen meten",
     "Poriën reinigen en verhoorning aanpakken, in stappen die je huid aankan",
     "Ontsteking eerst omlaag, littekens daarna. Nooit tegelijk",
     "Zonbescherming, elke dag, ook in de winter. Dit voorkomt de donkere vlekken die na een puistje overblijven",

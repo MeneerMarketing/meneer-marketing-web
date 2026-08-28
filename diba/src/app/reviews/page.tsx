@@ -223,10 +223,8 @@ export default function ReviewsPage() {
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Alle quotes hierboven komen van de openbare Salonized-pagina en
-              zijn overgenomen in de volgorde waarin ze daar stonden. Ze zijn
-              niet door ons geselecteerd op inhoud en er is niets bijgeschreven.
-              Klopt er iets niet, dan is het bij de bron na te kijken.
+              De reviews komen van de openbare Salonized-pagina. Controleer bij
+              twijfel altijd de oorspronkelijke bron.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
               Het is wel een momentopname. Er komen er dagelijks bij, en die

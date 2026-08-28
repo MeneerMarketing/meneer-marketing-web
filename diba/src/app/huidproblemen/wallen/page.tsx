@@ -114,10 +114,9 @@ export default function WallenPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wallen hebben drie oorzaken: vocht, uitgezakt vet en schaduw door
-              een groef. Ze zien er hetzelfde uit en vragen om totaal
-              verschillende dingen. Bij precies een ervan kan een huidkliniek
-              iets betekenen.
+              Wallen kunnen samenhangen met vocht, een vetkussen of schaduw door
+              een groef. De oorzaak bepaalt of een huidbehandeling iets kan
+              toevoegen.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

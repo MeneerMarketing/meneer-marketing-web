@@ -153,8 +153,7 @@ export default function IntakePage() {
               ))}
             </dl>
             <p className="mt-6 text-[15px] leading-7 text-[var(--on-dark-body)]">
-              De meting staat los van de behandeling. Dat is geen formaliteit:
-              het is de reden dat het advies eerlijk kan zijn.
+              Wat kost Behandeling op advies?
             </p>
           </div>
         </div>

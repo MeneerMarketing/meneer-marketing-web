@@ -28,7 +28,7 @@ export const STAPPEN: readonly Stap[] = [
     tijd: "Eerste minuten",
     naam: "Aankomst en het gesprek",
     watErGebeurt:
-      "We vragen waar je last van hebt, sinds wanneer, wat je zelf al hebt geprobeerd en wat je verwacht. Dat laatste is de belangrijkste vraag van het hele uur, want daar blijkt uit of we hetzelfde voor ogen hebben.",
+      "We bespreken je huidvraag We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.",
     nietNodig:
       "Je hoeft je niet voor te bereiden op vaktermen. Zeg het in je eigen woorden; wij vertalen.",
   },
@@ -136,9 +136,9 @@ export const OOK_ALS_JE_STOPT: readonly { kop: string; zin: string }[] = [
 export const VOORBEREIDING = {
   altijd: [
     "Kom zonder make-up, of neem er rekening mee dat we het eraf halen. Een meting over foundation heen is geen meting.",
-    "Neem foto's mee van hoe het was op een slechte dag. Huid is zelden op zijn ergst op het moment van de afspraak.",
-    "Neem je verzorgingsproducten mee, of maak er thuis een foto van. De ingrediëntenlijst zegt meer dan de naam.",
-    "Weet welke medicatie je gebruikt, ook de pil en middelen die niets met je huid te maken lijken te hebben.",
+    "Neem foto's mee waarop te zien is hoe je huid eruitziet wanneer de klacht erger is.",
+    "Neem de producten die je thuis gebruikt mee of maak foto's van de verpakkingen.",
+    "Zorg dat je weet welke medicatie, supplementen en anticonceptie je gebruikt.",
   ],
   soms: [
     {
@@ -240,7 +240,7 @@ export const COMBINATIE_AFSPRAAK = {
   label: "Meest gekozen",
   kop: "Meten en meteen beginnen",
   minuten: 120,
-  zin: "De meting en de eerste behandeling in één afspraak. Twee uur, dus je hoeft niet twee keer te komen.",
+  zin: "Boek je eerste afspraak",
   voorwaarde:
-    "Of het kan hangt af van wat de meting laat zien. Blijkt dat behandelen nu niet verstandig is, dan gebeurt het niet en betaal je alleen de meting.",
+    "Als we behandelen, betaal je alleen de prijs van de behandeling. De intake wordt dan niet apart in rekening gebracht. Als er geen behandeling wordt uitgevoerd, betaal je 50 euro voor de intake.",
 } as const;

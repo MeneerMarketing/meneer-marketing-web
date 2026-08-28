@@ -169,9 +169,9 @@ export default async function InsurerPage({ params }: PageProps) {
                 </p>
               </div>
               <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
-                Dit is niet het bedrag maar de voorwaarde, en dat is met opzet:
-                een voorwaarde verandert veel minder vaak dan een maximum, en
-                het is meestal de reden dat een declaratie wordt afgewezen.
+                Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een
+                voorwaarde verandert veel minder vaak dan een maximum, en het is
+                meestal de reden dat een declaratie wordt afgewezen.
               </p>
             </div>
           </div>

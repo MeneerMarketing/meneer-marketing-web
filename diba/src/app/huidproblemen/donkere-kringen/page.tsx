@@ -170,7 +170,7 @@ export default function DonkereKringenPage() {
             label="De drie types"
             kop="Hetzelfde beeld,"
             accent="drie verschillende oorzaken."
-            intro="Voor wie de test wil overslaan of wil nalezen wat eruit kwam. Let op de middelste kolom: die verschilt per type en dat is precies waarom één behandeling voor alle drie niet bestaat."
+            intro="Voor wie de test wil overslaan of wil nalezen wat eruit kwam. Let op de middelste kolom: die verschilt per type en daarom één behandeling voor alle drie niet bestaat."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">

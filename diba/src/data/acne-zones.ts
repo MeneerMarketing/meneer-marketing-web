@@ -166,7 +166,7 @@ const NIETS: Lezing = {
   tekst:
     "Je kunt meerdere zones kiezen. Waar acne zit vertelt vaak meer over de oorzaak dan hoe het eruitziet.",
   eersteStap:
-    "Weet je het niet precies? Geen probleem. Tijdens de intake lopen we het samen na.",
+    "Als je het niet goed kunt aangeven, lopen we de zones tijdens de intake samen na.",
 };
 
 export function lees(gekozen: readonly ZoneId[]): Lezing {

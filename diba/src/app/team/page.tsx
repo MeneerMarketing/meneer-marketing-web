@@ -36,7 +36,7 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Ons team",
   description:
-    "Acht mensen: huidtherapeuten, orthomoleculair huidspecialisten en een praktijkmanager. Met wie je te maken krijgt, en welke titel wettelijk beschermd is.",
+    "Huidtherapeut De titel huidtherapeut is wettelijk beschermd. Vermeld per medewerker alleen een registratie of kwaliteitsregister als dit afzonderlijk is gecontroleerd.",
 };
 
 export default function TeamPage() {
@@ -290,9 +290,10 @@ export default function TeamPage() {
                 <span className="diba-accent">over wie hen hielp.</span>
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-                Niet door ons uitgekozen op inhoud: dit zijn de reviews waar de
-                naam van de behandelaar bij staat. Wie hier niet tussen staat is
-                daarom niet minder goed, alleen minder vaak bij naam genoemd.
+                Toon hier alleen reviews die rechtstreeks uit Salonized komen.
+                Laat de oorspronkelijke tekst staan en zorg dat de naam van een
+                medewerker alleen wordt getoond wanneer die naam ook in de
+                review of afspraak staat.
               </p>
             </div>
 

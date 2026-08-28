@@ -32,7 +32,7 @@ export const HOME_FAQ_ITEMS: readonly HomeFaqItem[] = [
   {
     id: "second-opinion",
 
-    question: "Kan ik ook alleen voor een second opinion komen?",
+    question: "Kan ik ook alleen een intake boeken?",
 
     answer:
       "Ja. We kijken onafhankelijk mee naar een plan dat je elders hebt gekregen. Ook als ons advies is om daar verder te gaan.",
@@ -41,7 +41,7 @@ export const HOME_FAQ_ITEMS: readonly HomeFaqItem[] = [
   {
     id: "huidanalyse",
 
-    question: "Is huidanalyse altijd nodig?",
+    question: "Is een huidanalyse altijd nodig?",
 
     highlight: "altijd",
 

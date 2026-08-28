@@ -82,9 +82,9 @@ export default function PrijzenPage() {
               Een voorspelling
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wat een sessie kost weten we. Hoeveel sessies jij nodig hebt niet,
-              want dat hangt af van je huid en van wat je wil bereiken. Wie dat
-              vooraf in een totaalbedrag giet, gokt met jouw geld.
+              De prijs per sessie is vooraf bekend. Hoeveel sessies nodig zijn,
+              kunnen we pas na de intake en tijdens het traject beter
+              inschatten.
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
               Daarom staan hier sessieprijzen en geen pakketten met een streep

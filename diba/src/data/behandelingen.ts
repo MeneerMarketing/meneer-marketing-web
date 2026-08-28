@@ -124,7 +124,7 @@ export const CATEGORIEEN = [
   {
     id: "injectie",
     label: "Skinboosters",
-    zin: "Werkzame stoffen precies op diepte brengen.",
+    zin: "Werkzame stoffen op diepte brengen.",
   },
   {
     id: "laser",
@@ -413,13 +413,13 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "CooLift Cryo Therapy",
     apparaat: "CooLifting",
     categorie: "gezicht",
-    kort: "Vijf minuten, koude CO2 onder hoge druk. Direct strakker aanvoelen.",
+    kort: "Bij CooLift wordt koude CO2 onder druk op de huid aangebracht. De behandeling duurt kort en kan de huid tijdelijk strakker laten aanvoelen.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
       "Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper. De behandeling duurt vijf minuten. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
     sessies:
-      "Los, vaak vlak voor een gelegenheid. Als kuur meestal vier tot zes. [MEDISCHE-CHECK-ROJDA]",
+      "De behandeling kan eenmalig worden gedaan of als kuur van meestal vier tot zes afspraken. [MEDISCHE-CHECK-ROJDA]",
     prijs: 75,
     wel: [
       "Laat je huid binnen vijf minuten strakker aanvoelen door de kou en de druk",
@@ -863,7 +863,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
-      "IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms precies wat je wil. [MEDISCHE-CHECK-ROJDA]",
+      "IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms wat je wil. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Meestal een paar uur rood. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks van drie tot zes, met vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
@@ -1200,7 +1200,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     slug: "jongeren-acne-traject",
     naam: "Jongeren acne traject",
     categorie: "overig",
-    kort: "Voor 18 jaar en jonger. Een begeleid programma van drie maanden.",
+    kort: "Dit begeleide programma van drie maanden is bedoeld voor jongeren tot en met 18 jaar.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
       "Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een medisch onderbouwd programma van drie maanden met begeleiding, opgezet voor jongeren van achttien jaar en jonger. [MEDISCHE-CHECK-ROJDA]",
@@ -1315,7 +1315,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     },
     naam: "Fibromen verwijderen",
     categorie: "overig",
-    kort: "Steelwratjes weghalen. Per kwartier gerekend, niet per stuk.",
+    kort: "We verwijderen steelwratjes en rekenen de behandeltijd per kwartier in plaats van per wratje.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
       "Fibromen zijn goedaardige huidaanhangsels die vaak in de hals, oksels of liezen zitten. Ze worden per behandelsessie weggenomen. [MEDISCHE-CHECK-ROJDA]",
@@ -1371,7 +1371,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     slug: "voedingsintolerantietest",
     naam: "Voedingsintolerantietest",
     categorie: "overig",
-    kort: "Een test die kijkt of voeding meespeelt. Geen huidbehandeling.",
+    kort: "Dit is een test en geen huidbehandeling",
     lagen: [],
     werking:
       "Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen behandeling van de huid zelf, maar soms een verklaring voor wat er op de huid gebeurt. [MEDISCHE-CHECK-ROJDA]",

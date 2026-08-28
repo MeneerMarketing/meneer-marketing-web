@@ -144,9 +144,8 @@ export default function ContactPage() {
             </address>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je kunt bellen, appen, mailen of langskomen. Welke van die vier
-              het snelst antwoord geeft hangt af van je vraag, en dat staat
-              hieronder gewoon uitgeschreven.
+              Je kunt ons bellen, een WhatsApp-bericht sturen of mailen. Voor
+              het maken van een afspraak is de online agenda meestal het snelst.
             </p>
           </div>
 
@@ -447,7 +446,7 @@ export default function ContactPage() {
                 ],
                 [
                   "Parkeren",
-                  "In de straten rondom staat betaald parkeren. Er is bijna altijd plek binnen een paar minuten lopen; kom je krap in de tijd, reken dan op vijf minuten extra.",
+                  "Parkeren In de straten rond de kliniek geldt betaald parkeren. Houd rekening met een paar minuten looptijd.",
                 ],
                 [
                   "Met het openbaar vervoer",

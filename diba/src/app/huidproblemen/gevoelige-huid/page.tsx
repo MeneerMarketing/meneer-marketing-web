@@ -164,7 +164,7 @@ export default function GevoeligeHuidPage() {
             label="Als het dat niet is"
             kop="Vier aandoeningen"
             accent="die zo beginnen."
-            intro="Een gevoelige huid is een klacht en geen diagnose. Deze vier beginnen alle vier met precies dezelfde zin, en ze vragen alle vier iets anders. Herken je er een, dan begint het verhaal daar."
+            intro="Een gevoelige huid is een klacht en geen diagnose. Deze vier beginnen alle vier met dezelfde zin, en ze vragen alle vier iets anders. Herken je er een, dan begint het verhaal daar."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2 lg:grid-cols-4">
@@ -205,7 +205,7 @@ export default function GevoeligeHuidPage() {
       <WijZeggenNee
         kop="Aftrekken levert ons"
         accent="niets op."
-        intro="Bij een gevoelige huid is het antwoord bijna altijd minder in plaats van meer, en dat is precies waarom je het van ons hoort en niet van een verkoopbalie."
+        intro="Bij een gevoelige huid is een eenvoudigere routine vaak verstandiger dan meer producten toevoegen."
         punten={GEVOELIG_WIJ_DOEN_NIET}
       />
 

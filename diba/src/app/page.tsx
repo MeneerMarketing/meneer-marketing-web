@@ -3,11 +3,12 @@ import FigmaHomeApp from "@/components/figma/FigmaHomeApp";
 import { HOME_FAQ_ITEMS } from "@/data/home-faq";
 import { publicCopy } from "@/lib/copy-flags";
 import { SchemaMarkup, faqSchema } from "@/lib/schema";
-import { DIBA_CITAAT, DIBA_SITE } from "@/lib/site";
+import { DIBA_SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `${DIBA_SITE.name} | Huidkliniek Rotterdam`,
-  description: DIBA_CITAAT,
+  title: `Huidkliniek Rotterdam | ${DIBA_SITE.name}`,
+  description:
+    "Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.",
 };
 
 /** Homepage = Figma Make export, wired aan DIBA-regels. */

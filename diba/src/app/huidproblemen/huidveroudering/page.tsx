@@ -116,8 +116,8 @@ export default function HuidverouderingPage() {
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Kijk naar de binnenkant van je bovenarm en dan naar je gezicht.
-              Twee stukken huid van precies dezelfde leeftijd, die er totaal
-              anders uitzien. Dat verschil is geen tijd.
+              Twee stukken huid van dezelfde leeftijd, die er totaal anders
+              uitzien. Dat verschil is geen tijd.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -242,7 +242,7 @@ export default function HuidverouderingPage() {
         kop="Veroudering vraagt om een beginpunt."
         alineas={[
           "Dit is het onderwerp waarbij je oog je het hardst voor de gek houdt. De verandering gaat over jaren en je kijkt elke dag in dezelfde spiegel, dus je ziet het verschil niet, in geen van beide richtingen.",
-          "Daarom leggen we vast waar we beginnen. Niet om een cijfer te hebben, maar zodat je over een half jaar kunt nakijken of er iets veranderde in plaats van dat je het moet geloven.",
+          "We leggen de beginsituatie vast, zodat we na verloop van tijd beter kunnen beoordelen of er iets is veranderd.",
         ]}
         assen={[
           ["Kleur", "Vlekken, egaliteit en verwijde vaatjes"],

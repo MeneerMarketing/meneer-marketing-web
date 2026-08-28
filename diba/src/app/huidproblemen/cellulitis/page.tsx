@@ -176,7 +176,7 @@ export default function CellulitisPage() {
       <WijZeggenNee
         kop="Hier valt niets"
         accent="te verkopen."
-        intro="Er bestaan apparaten die de huid tijdelijk strakker laten lijken door zwelling te verplaatsen. Dat is niet hetzelfde als minder kuiltjes, en dat verschil verkopen we niet weg."
+        intro="Sommige behandelingen laten de huid tijdelijk strakker lijken doordat vocht of zwelling verandert. Dat is niet hetzelfde als een blijvende verandering van de kuiltjes."
         punten={CELLULITIS_WIJ_DOEN_NIET}
       />
 

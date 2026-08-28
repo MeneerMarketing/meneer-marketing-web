@@ -223,7 +223,7 @@ export const VEROUDERING_SOORTEN = [
 
 export const VEROUDERING_WEL_NIET = {
   wel: [
-    "Dagelijks bescherming, ook in de winter en achter glas. Dit is de goedkoopste behandeling die bestaat en de enige die aan alle sporen tegelijk werkt.",
+    "Gebruik dagelijks zonbescherming, ook in de winter en wanneer je veel achter glas zit.",
     "Eén onderdeel tegelijk aanpakken en meten of het werkte, in plaats van een pakket kopen.",
     "Beginnen bij kleur en structuur, want daar zie je het snelst of de richting klopt.",
     "Je verwachting vooraf op tafel leggen. Als die niet haalbaar is, hoor je dat vóór je betaalt.",

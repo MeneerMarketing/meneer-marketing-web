@@ -45,7 +45,7 @@ const KWESTIES: readonly Kwestie[] = [
   {
     id: "roodheid-na-puistje",
     label: "Rode plek na een puistje",
-    zin: "Het puistje is weg, de rode of donkere vlek niet.",
+    zin: "Een rode of donkere vlek na een puistje kan in de maanden erna vanzelf lichter worden, vooral wanneer je de huid goed tegen zon beschermt.",
     wachtenKan: "vaak",
     korteConclusie:
       "Dit is meestal het geval waarin wachten wint. De verkleuring na een ontsteking trekt in de meeste huiden vanzelf weg; behandelen versnelt het hooguit en kan bij ongeduld juist prikkelen.",

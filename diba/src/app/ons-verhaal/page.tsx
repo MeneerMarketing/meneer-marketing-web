@@ -59,7 +59,7 @@ const REGELS = [
     kost: "Omzet, direct en meetbaar. Elke nee is een behandeling die niet geboekt wordt, en er staat niets tegenover behalve dat het klopt.",
   },
   {
-    kop: "Alle prijzen staan online",
+    kop: "knop: BEKIJK DE PRIJZEN",
     zin: "Per sessie, per zone, per variant, inclusief de duurste. Geen bedrag dat je pas hoort als je al op de stoel ligt.",
     kost: "Het onderhandelingsvoordeel. Wie zijn prijzen pas aan de balie noemt, noemt ze op het moment dat je het moeilijkst nee zegt. Dat werkt, en daarom doen zoveel klinieken het.",
     uitgelicht: true,

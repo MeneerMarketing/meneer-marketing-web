@@ -101,8 +101,8 @@ export const GERSTEKORRELS_WEL_NIET = {
   niet: [
     "Prikken in iets dat ontstoken is. Rond het oog is dat een risico dat nergens voor nodig is [MEDISCHE-CHECK-ROJDA]",
     "Zelf uitknijpen. Er zit geen opening in, dus je duwt alleen de huid eromheen kapot",
-    "Een crème verkopen tegen milia. Er is geen crème die een ingesloten cystje opent",
-    "Een reeks verkopen. Dit is bijna altijd een eenmalige behandeling",
+    "Een crème adviseren als verwijdering Een crème opent een ingesloten gerstekorrel niet.",
+    "Onnodig meerdere afspraken plannen Een gerstekorrel verwijderen is meestal een eenmalige behandeling.",
   ],
 } as const;
 
