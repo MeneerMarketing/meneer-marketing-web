@@ -138,7 +138,7 @@ export default function OnsVerbondPage() {
         </div>
       </section>
 
-      <PillarFaq items={VERBOND_FAQ} />
+      <PillarFaq items={VERBOND_FAQ} onderwerp="ons verbond" />
 
       {/* ── Slot ── */}
       {/* Tien weigeringen op een rij kan streng overkomen. Ze komen niet uit een reglement

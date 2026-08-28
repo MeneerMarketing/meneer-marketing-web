@@ -157,7 +157,7 @@ export default function MoedervlekkenPage() {
         punten={MOEDERVLEK_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={MOEDERVLEK_FAQ} />
+      <PillarFaq items={MOEDERVLEK_FAQ} onderwerp="moedervlekken" />
 
       {/* ── Afsluiting zonder afspraakknop ──
           Waar op elke andere pagina de intake staat, staat hier de huisarts. */}

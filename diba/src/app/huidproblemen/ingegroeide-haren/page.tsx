@@ -236,7 +236,7 @@ export default function Pagina() {
         punten={INGEGROEID_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={INGEGROEID_FAQ} />
+      <PillarFaq items={INGEGROEID_FAQ} onderwerp="ingegroeide haren" />
 
       <PillarCta
         kop="Eerst kijken."

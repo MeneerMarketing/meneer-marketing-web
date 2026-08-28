@@ -243,7 +243,7 @@ export default function Pagina() {
         ]}
       />
 
-      <PillarFaq items={RIMPELS_FAQ} />
+      <PillarFaq items={RIMPELS_FAQ} onderwerp="rimpels" />
 
       <PillarCta
         kop="Eerst meten."

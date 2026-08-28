@@ -235,7 +235,7 @@ export default function Pagina() {
         punten={KP_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={KP_FAQ} />
+      <PillarFaq items={KP_FAQ} onderwerp="keratosis pilaris" />
 
       <PillarCta
         kop="Eerst weten wat het is."

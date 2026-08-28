@@ -564,7 +564,7 @@ Iedere huidvraag begint met een beoordeling, waaruit ook kan volgen dat we geen 
 
 **Tabbladtitel:** Acne behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **BEGRIJP JE ACNE. BEHANDEL GERICHT.**
 
@@ -800,7 +800,7 @@ Behandelen wat er ligt terwijl de bron nog loopt is dweilen, en in een ontstoken
 
 > knop: NAAR DE ACNEPAGINA
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Wat hier het meeste oplevert is vaak niet een behandeling maar de juiste volgorde, en weten wat je voor je hebt.
 
@@ -862,7 +862,7 @@ Bruine plekken, ook de vlekken die je nu nog niet ziet
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over acnelittekens**
 
 Hoe weet ik of het een litteken is of alleen kleur? +
 
@@ -884,7 +884,7 @@ In Behandeling Nul stellen we vast of het littekenweefsel is of kleur. Soms is d
 
 **Tabbladtitel:** Cellulitis: geen vet, maar bouw | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **HET IS GEEN VET. HET IS BOUW.**
 
@@ -936,7 +936,7 @@ Alle vier worden ze gebruikt om iets te verkopen, en alle vier vallen ze om zodr
 
 - Het hoort bij overgewicht Slanke vrouwen hebben het net zo goed. Dat is meteen het duidelijkste bewijs dat het niet om de hoeveelheid vet gaat.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 De laatste regel links is de enige op deze hele site die niet over je huid gaat, en misschien de belangrijkste van deze pagina.
 
@@ -976,7 +976,7 @@ Sommige behandelingen laten de huid tijdelijk strakker lijken doordat vocht of z
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over cellulitis**
 
 Waarom hebben mannen dit bijna niet? +
 
@@ -1000,29 +1000,29 @@ Er staat op deze pagina geen knop om een afspraak te maken. Wil je wel iets aan 
 
 **Google-omschrijving:** Rode vaatjes op je wangen of naast je neus. Met de drukproef zie je zelf of het couperose is of een rode gloed, en dat bepaalt wat helpt.
 
-**EEN LIJNTJE BLIJFT STAAN. EEN GLOED TREKT WEG.**
+**RODE ADERTJES DIE NIET MEER WEGTREKKEN**
 
-Rode vaatjes op je wangen of naast je neus heten couperose. Een rode waas zonder losse lijntjes is iets anders, en vraagt om een andere aanpak. Met je eigen vinger zie je binnen twee seconden welke van de twee je hebt.
+Die dunne rode of paarse lijntjes op je wangen of naast je neus heten couperose. Een egale rode waas is iets anders en vraagt om een andere aanpak, al zitten ze vaak samen. Met je vinger zie je binnen een paar seconden waar je mee te maken hebt.
 
-En nee, je hoeft hier niets uit te leggen over hoe snel je rood wordt.
+Over hoe snel je rood wordt hoef je hier trouwens niets uit te leggen. Dat kennen we.
 
 > knop: DOE DE DRUKPROEF
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Twee seconden, en je weet het zelf.**
+**Zo zie je zelf waar je mee te maken hebt**
 
 Dit is geen diagnose en het vervangt geen meting. Het is wel het enige onderscheid dat je thuis kunt maken, en het bepaalt of licht bij jou iets oplevert of dat we eerst naar de triggers moeten kijken.
 
-- STAP 1 Druk zachtjes Leg een schone vinger op de rode plek en druk twee seconden aan. Niet hard; je hoeft de huid niet wit te maken.
+- STAP 1 Druk zachtjes Leg een schone vinger op de rode plek en druk er twee seconden op. Zachtjes is genoeg; de huid hoeft niet wit te worden.
 
-- STAP 2 Kijk terwijl je drukt Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Dat is het enige dat je hoeft te zien.
+- STAP 2 Kijk terwijl je drukt Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Meer hoef je niet te zien.
 
-- STAP 3 Laat los Komt het rood langzaam terug over het hele vlak, dan gaat het om een gloed. Was er een lijntje dat bleef staan, dan is dat een verwijd vaatje.
+- STAP 3 Laat los Komt het rood langzaam terug over het hele vlak, dan gaat het om een gloed. Bleef er een lijntje staan, dan kijk je naar een opgerekt vaatje.
 
 Zag je allebei? Dat is de meest voorkomende uitkomst, en geen tussenvorm die je zelf hoeft op te lossen. Hieronder staat wat elk van de twee vraagt.
 
-**Drie beelden, en ze vragen niet hetzelfde.**
+**Welk beeld herken je?**
 
 De uitslag van de drukproef bepaalt bij welk beeld je uitkomt. Bij één daarvan begint het bij licht, bij een ander juist niet, en dat verschil is het hele punt van deze pagina.
 
@@ -1034,17 +1034,17 @@ De uitslag van de drukproef bepaalt bij welk beeld je uitkomt. Bij één daarvan
 
 *WAT DE DRUKPROEF DOET*
 
-Het lijntje blijft zichtbaar terwijl je drukt. Je duwt het bloed er niet uit.
+Het lijntje blijft zichtbaar terwijl je drukt. Het bloed laat zich er niet uit duwen.
 
 *WAT HET BETEKENT*
 
-Een bloedvaatje dat blijvend verwijd is. Het gaat niet vanzelf dicht en trekt niet weg met een crème.
+Een bloedvaatje dat blijvend is opgerekt. Zo'n vaatje sluit zich uit zichzelf niet meer, en het zit onder de opperhuid, waar verzorgingsproducten niet komen.
 
 *WAT WIJ EERST DOEN*
 
-Dit is het beeld waar licht het meest oplevert. We leggen eerst vast hoeveel er zichtbaar is, zodat je het verschil later niet op ons woord hoeft te geloven.
+Hier levert licht het meeste op. We leggen eerst vast hoeveel er zichtbaar is, zodat je na een paar sessies het verschil kunt terugzien in plaats van moeten inschatten.
 
-Dit is geen gesprongen adertje. Er is niets gesprongen; het vaatje is opgerekt en blijft open staan.
+Veel mensen noemen dit een gesprongen adertje. Er is niets gesprongen: het vaatje is opgerekt en staat open. Dat klinkt als een detail, maar het scheelt in wat eraan te doen is.
 
 > knop: LAAT DIT BEELD BEKIJKEN
 
@@ -1074,41 +1074,41 @@ Opvlammingen na warmte of wijn, een branderig gevoel, bultjes zonder mee-eters: 
 
 > knop: NAAR DE ROSACEAPAGINA
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Bij couperose is de lijst korter dan bij de meeste huidproblemen, en dat is geen bescheidenheid. Er is één ding dat werkt op een vaatje dat al zichtbaar is, en er is veel dat er niets aan doet.
 
 **DIT WERKT**
 
-- Een nulmeting onder vast licht, zodat het aantal zichtbare vaatjes vóór en na te vergelijken is
+- Vooraf vastleggen hoeveel vaatjes er zichtbaar zijn, onder vast licht, zodat je het later kunt vergelijken
 
-- Gericht licht op de vaatjes die blijven staan bij druk, in meerdere sessies
+- Gericht licht op de vaatjes die bij druk blijven staan, verdeeld over meerdere sessies
 
-- Zonbescherming, elke dag. UV rekt vaatwanden op en is de belangrijkste reden dat er nieuwe bij komen
+- Elke dag zonbescherming. UV rekt vaatwanden verder op en is de belangrijkste reden dat er nieuwe bij komen
 
-- Uitzoeken wat de gloed aanzet, want zolang die doorgaat komen er nieuwe vaatjes bij
+- Uitzoeken waardoor de gloed opkomt, want zolang die blijft terugkomen ontstaan er nieuwe vaatjes
 
-- Eerlijk zeggen wanneer wij denken dat het bij één sessie blijft, en wanneer niet
+- Vooraf zeggen wanneer één sessie waarschijnlijk volstaat en wanneer je op een reeks moet rekenen
 
 **DIT RADEN WE AF**
 
-- Stevig scrubben of borstelen. Het maakt de huid rood zonder één vaatje te sluiten
+- Stevig scrubben of borstelen. Je huid wordt er roder van terwijl de vaatjes blijven zitten
 
-- Hete douches en de sauna vlak na een vaatbehandeling, omdat warmte de roodheid opnieuw kan versterken
+- Een hete douche of de sauna vlak na een vaatbehandeling, omdat warmte de roodheid opnieuw kan opwekken
 
-- Camouflage als behandeling presenteren Groene concealer kan roodheid minder zichtbaar maken, maar behandelt de vaatjes of oorzaak niet.
+- Camouflage als behandeling presenteren. Groene concealer maakt roodheid minder zichtbaar en laat de vaatjes zoals ze zijn
 
-- Een crème die belooft vaatjes te laten verdwijnen. Een verwijd vaatje zit onder de opperhuid en daar komt geen crème
+- Een crème die belooft vaatjes te laten verdwijnen. Een opgerekt vaatje ligt onder de opperhuid, buiten bereik van wat je erop smeert
 
 - Beginnen op een gebruinde huid
 
-**Twee keer nee, en allebei om dezelfde reden.**
+**Wanneer we liever nog even wachten**
 
 Licht op de verkeerde huid of op het verkeerde moment maakt roodheid erger. Dat is wat je hier niet komt halen.
 
-- Geen licht op een actief opvlammende huid Is je huid op dit moment warm, branderig en aan het opvlammen, dan wachten we tot het rustig is. Licht op een aangedane huid maakt de roodheid vaker erger dan beter.
+- We wachten tot je huid rustig is Voelt je huid warm en branderig en is hij op dit moment aan het opvlammen, dan stellen we de behandeling uit. Licht op een geprikkelde huid maakt de roodheid vaker erger dan beter, en dan ben je verder van huis dan toen je binnenkwam.
 
-- Geen aantal sessies zonder meting Hoeveel er nodig is hangt af van hoeveel er zichtbaar is en hoe diep het zit. Dat weten we na de nulmeting en niet ervoor.
+- Een aantal sessies noemen we pas na de meting Hoeveel er nodig is hangt af van hoeveel vaatjes er zichtbaar zijn en hoe diep ze liggen. Dat zien we bij de eerste afspraak, en daarna hoor je een reëel aantal in plaats van een schatting aan de telefoon.
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
@@ -1136,7 +1136,7 @@ Hoe snel je huid reageert, want dat bepaalt de instelling
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over couperose**
 
 Komen die vaatjes terug na de behandeling? +
 
@@ -1146,7 +1146,9 @@ Krijg ik dit van alcohol? +
 
 Kan ik make-up blijven gebruiken? +
 
-**Eerst tellen. Dan pas licht.**
+Wat kost een behandeling? +
+
+**We tellen eerst hoeveel er zichtbaar is**
 
 Behandeling Nul legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies er nodig zijn, en wij ook.
 
@@ -1214,7 +1216,7 @@ Een ongelijke tint leest je oog als vermoeid, ook zonder dat er ergens een duide
 
 > knop: NAAR PIGMENTVLEKKEN
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Bij dofheid is het effect vaak snel zichtbaar en ook weer tijdelijk. Dat is geen bezwaar zolang je het weet, en een probleem zodra iemand denkt een oorzaak af te kopen.
 
@@ -1276,7 +1278,7 @@ Hoe egaal de kleur is over het hele vlak
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over een doffe huid**
 
 Waarom ziet mijn huid er 's ochtends doffer uit? +
 
@@ -1298,7 +1300,7 @@ In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vo
 
 **Tabbladtitel:** Donkere kringen: welk type heb jij? | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **DRIE OORZAKEN. EÉN KUNNEN WIJ NIET.**
 
@@ -1338,7 +1340,7 @@ Voor wie de test wil overslaan of wil nalezen wat eruit kwam. Let op de middelst
 
 Kwam er pigment uit? Dan gelden dezelfde regels als voor pigment elders in je gezicht, inclusief het seizoen waarin je beter niet begint.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts kost de meeste mensen het meeste geld: een behandeling boeken voordat duidelijk is welk type ze hebben.
 
@@ -1402,7 +1404,7 @@ Hoe diep de overgang naar de wang ligt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over donkere kringen**
 
 Komt het echt niet door te weinig slaap? +
 
@@ -1428,7 +1430,7 @@ We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, da
 
 **Tabbladtitel:** Droge huid of uitgedroogde huid: wat is het verschil? | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **GEEN SCHAAL. TWEE ASSEN.**
 
@@ -1484,7 +1486,7 @@ Alle drie komen ze voort uit dezelfde denkfout: dat er één schaal is. Met twee
 
 Verdraagt je huid steeds minder producten en wordt hij snel rood? Dan is een droge huid vaak het gevolg en niet de oorzaak, en begint het verhaal ergens anders.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is de reflex die de meeste schade aanricht: meer erbij doen omdat het niet beter wordt.
 
@@ -1544,7 +1546,7 @@ Hoe snel dat vocht weer verdwijnt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over een droge huid**
 
 Wat is nou het verschil tussen droog en uitgedroogd? +
 
@@ -1568,7 +1570,7 @@ We meten vet en water apart, en vertellen je welke as bij jou beweegt. Zit je in
 
 **Tabbladtitel:** Eczeem: een cirkel, geen plek | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **GEEN PLEK. EEN CIRKEL.**
 
@@ -1618,7 +1620,7 @@ Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is
 
 - Psoriasis Dikkere, scherp begrensde plekken met zilverwitte schilfers, vaak op ellebogen, knieën en hoofdhuid, en meestal minder jeuk. NAAR PSORIASIS
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts kost de meeste tijd: wachten met de huisarts omdat je eerst zelf iets wilt proberen.
 
@@ -1658,7 +1660,7 @@ Dit is geen aandoening waar een huidkliniek over gaat. We kunnen de barrière on
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over eczeem**
 
 Kan ik met eczeem bij jullie terecht? +
 
@@ -1736,7 +1738,7 @@ Een steriele naald, enkele seconden per bolletje, en er blijft niets van te zien
 
 > knop: LAAT DIT BEKIJKEN
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste bultje is, is het in een afspraak klaar.
 
@@ -1770,7 +1772,7 @@ Het gaat hier om de dunste huid van je lichaam, op enkele millimeters van je oog
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over gerstekorrels**
 
 Waarom kan ik een milium niet uitdrukken? +
 
@@ -1792,7 +1794,7 @@ Bij milia is de afspraak kort en eenmalig. Blijkt het iets anders, dan hoor je d
 
 **Tabbladtitel:** Gevoelige huid: type of gevolg? | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **MEESTAL GEEN TYPE. MEESTAL EEN GEVOLG.**
 
@@ -1850,7 +1852,7 @@ Een gevoelige huid is een klacht en geen diagnose. Deze vier beginnen alle vier 
 
 Bij jeuk die je uit je slaap houdt, bij kloofjes of wondjes, bij plekken die niet weggaan of steeds terugkomen op dezelfde plaats. Dat is geen gevoelige huid meer en daar zijn wij niet de juiste plek voor.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is het hardnekkigste verhaal in de huidverzorging: dat prikken betekent dat het werkt.
 
@@ -1914,7 +1916,7 @@ Hoe gelijkmatig de bovenlaag ligt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over een gevoelige huid**
 
 Is een gevoelige huid iets waarmee je geboren wordt? +
 
@@ -1938,7 +1940,7 @@ We lopen je routine langs, meten hoe je barrière ervoor staat en zeggen wat eru
 
 **Tabbladtitel:** Moedervlekken: waar je op let en waar je heen gaat | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **HIERVOOR MOET JE NIET BIJ ONS ZIJN.**
 
@@ -1972,7 +1974,7 @@ Loop de punten hierboven langs. Wat je ook invult, de uitkomst van deze check is
 
 Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien wat een arts met een dermatoscoop wel ziet, en hij kan dus ook niets uitsluiten. Bij twijfel geldt altijd hetzelfde advies: laat het nakijken.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: een moedervlek laten weghalen buiten de zorg betekent dat er niets meer te onderzoeken valt.
 
@@ -2012,7 +2014,7 @@ Op de andere pagina's zeggen we nee omdat een behandeling te weinig oplevert. Hi
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over moedervlekken**
 
 Waarom staat deze pagina er dan überhaupt? +
 
@@ -2034,7 +2036,7 @@ Er staat op deze pagina expres nergens een knop om bij ons een afspraak te maken
 
 **Tabbladtitel:** Huiduitslag: bel je vandaag of morgen? | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **EÉN VRAAG TELT EERST: VANDAAG OF MORGEN.**
 
@@ -2118,7 +2120,7 @@ Dit is geen lijst om jezelf mee te diagnosticeren, en er staan bewust geen foto'
 
 - Een virus Uitslag samen met koorts of ziek zijn, vaak vrij plotseling en verspreid over het lichaam. WAAR JE HEEN GAAT Huisarts, en met spoed als iemand er ziek uitziet.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts maakt het werk van de arts moeilijker: zalf op onbekende uitslag verandert het beeld dat hij moet beoordelen.
 
@@ -2158,7 +2160,7 @@ Geen diagnose en ook geen geruststelling. Dat laatste klinkt onaardig en het is 
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over huiduitslag**
 
 Werkt de glastest altijd? +
 
@@ -2180,7 +2182,7 @@ Er staat op deze pagina geen knop om bij ons een afspraak te maken. Maak een fot
 
 **Tabbladtitel:** Huidverkleuring: welke kleur is het? | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **BEGIN BIJ DE KLEUR. DIE ZEGT HET MEESTE.**
 
@@ -2264,7 +2266,7 @@ Eén ding telt zwaarder dan de kleur
 
 Verandert een plek van vorm, kleur of grootte, jeukt of bloedt hij, of is hij er in korte tijd bij gekomen? Dan doet de kleur er niet toe en hoort hij bij de huisarts. Dat geldt voor bruin, rood, wit en blauw evengoed.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over huidverkleuring**
 
 Wat als ik meerdere kleuren tegelijk heb? +
 
@@ -2286,7 +2288,7 @@ Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laa
 
 **Tabbladtitel:** Huidveroudering behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **EVEN OUD. NIET HETZELFDE.**
 
@@ -2402,7 +2404,7 @@ Een lijn die alleen verschijnt als je lacht is geen veroudering. Die hoort bij e
 
 Gaat het je vooral om vlekken en niet om lijnen? Dan begint het verhaal ergens anders, want daar speelt het seizoen een grote rol in wanneer je moet beginnen.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 De eerste regel links is de goedkoopste behandeling op deze hele site, en de enige die aan alle vijf de sporen tegelijk werkt.
 
@@ -2464,7 +2466,7 @@ Waar ze staan en of ze in rust blijven
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over huidveroudering**
 
 Vanaf welke leeftijd is dit zinvol? +
 
@@ -2546,7 +2548,7 @@ Lijnen en verslapping komen samen voor maar zijn niet hetzelfde. Gaat het je om 
 
 > knop: NAAR RIMPELS EN FIJNE LIJNTJES
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Hier is geduld geen bijzaak. Collageen bouwt over maanden op, en dat is niet te versnellen door vaker te komen.
 
@@ -2608,7 +2610,7 @@ Het oppervlak, want dat verandert vaak eerder dan de vorm
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over huidverslapping**
 
 Is dit een alternatief voor een facelift? +
 
@@ -2686,7 +2688,7 @@ Gaat het je niet om de bultjes maar om het ontharen zelf, dan staan de zones, de
 
 > knop: NAAR LASERONTHARING
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strak scheren, pincetten en scrubben houden het probleem in stand.
 
@@ -2724,7 +2726,7 @@ Licht mikt op het pigment in de haarwortel. Dat werkt niet op elke huid en niet 
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over ingegroeide haren**
 
 Gaan ingegroeide haren weg van laserontharing? +
 
@@ -2746,7 +2748,7 @@ In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw 
 
 **Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **ROOD REAGEERT. WIT VEEL MINDER.**
 
@@ -2836,7 +2838,7 @@ Bijna niemand komt hier voor stap één. Toch bepaalt die of de rest zin heeft, 
 
 Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en pas daarna hier. Dat is geen omweg maar de kortste route naar minder littekens.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets om te vermijden: wachten tot het wit is.
 
@@ -2900,7 +2902,7 @@ Hoe groot het gebied is dat we behandelen
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over littekens**
 
 Gaan mijn littekens helemaal weg? +
 
@@ -2984,7 +2986,7 @@ Bultjes op geschoren zones met een donkere krul eronder zijn ingegroeide haren. 
 
 > knop: NAAR INGEGROEIDE HAREN
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Hier hoort onderhoud bij en geen kuur met een eindpunt. Dat is minder aantrekkelijk om te horen en het is wel hoe het werkt.
 
@@ -3022,7 +3024,7 @@ Er valt een reeks van zes te verkopen aan iemand die op gladde armen hoopt. Dat 
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over keratosis pilaris**
 
 Gaat kippenvelhuid ooit weg? +
 
@@ -3044,7 +3046,7 @@ Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldi
 
 **Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **ROOD REAGEERT. WIT VEEL MINDER.**
 
@@ -3134,7 +3136,7 @@ Bijna niemand komt hier voor stap één. Toch bepaalt die of de rest zin heeft, 
 
 Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en pas daarna hier. Dat is geen omweg maar de kortste route naar minder littekens.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets om te vermijden: wachten tot het wit is.
 
@@ -3198,7 +3200,7 @@ Hoe groot het gebied is dat we behandelen
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over littekens**
 
 Gaan mijn littekens helemaal weg? +
 
@@ -3226,7 +3228,7 @@ Bij een rood litteken of rode striae is dit het moment waarop het het meeste uit
 
 **Tabbladtitel:** Melasma behandelen in Rotterdam: eerst de diepte | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **NIET HOE DONKER. HOE DIEP.**
 
@@ -3282,7 +3284,7 @@ Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepa
 
 Bescherming is bij melasma geen advies naast de behandeling maar een deel van de behandeling zelf. Zonder dat werkt de rest niet, en dat is de reden dat we er hier zo lang over doorgaan.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is bij melasma de duurste fout die er is, en hij wordt gemaakt door klinieken en niet door klanten.
 
@@ -3348,7 +3350,7 @@ Welke gebieden meedoen en hoe groot ze zijn
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over melasma**
 
 Gaat melasma ooit helemaal weg? +
 
@@ -3374,7 +3376,7 @@ We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je 
 
 **Tabbladtitel:** Moedervlekken: waar je op let en waar je heen gaat | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **HIERVOOR MOET JE NIET BIJ ONS ZIJN.**
 
@@ -3408,7 +3410,7 @@ Loop de punten hierboven langs. Wat je ook invult, de uitkomst van deze check is
 
 Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien wat een arts met een dermatoscoop wel ziet, en hij kan dus ook niets uitsluiten. Bij twijfel geldt altijd hetzelfde advies: laat het nakijken.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: een moedervlek laten weghalen buiten de zorg betekent dat er niets meer te onderzoeken valt.
 
@@ -3448,7 +3450,7 @@ Op de andere pagina's zeggen we nee omdat een behandeling te weinig oplevert. Hi
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over moedervlekken**
 
 Waarom staat deze pagina er dan überhaupt? +
 
@@ -3526,7 +3528,7 @@ Regelmatig rode, pijnlijke puistjes die vlekjes achterlaten is acne, en dat vraa
 
 > knop: NAAR DE ACNEPAGINA
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reinigen levert bij een vette huid het omgekeerde op van wat je zoekt.
 
@@ -3564,7 +3566,7 @@ Er is een reeks te verkopen tegen iets dat bij een normale huid hoort. Dat is pr
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over een onzuivere huid**
 
 Waarom komen mee-eters op mijn neus altijd terug? +
 
@@ -3642,7 +3644,7 @@ Een egale, platte vlek op een plek die veel zon heeft gehad. Dit is het beeld wa
 
 > knop: LAAT DIT BEKIJKEN
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Bij pigment is zonbescherming geen advies achteraf maar onderdeel van de behandeling. Zonder dat komt het terug en is het geld weg.
 
@@ -3704,7 +3706,7 @@ Hoeveel de huid over de jaren te verwerken kreeg
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over ouderdomsvlekken**
 
 Zijn ouderdomsvlekken gevaarlijk? +
 
@@ -3726,7 +3728,7 @@ In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het p
 
 **Tabbladtitel:** Pigmentvlekken en melasma behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **BIJ PIGMENT TELT WANNEER, NIET WAT.**
 
@@ -3816,7 +3818,7 @@ Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting zijn bij pigme
 
 - Met bescherming én behandeling Dit is waar de meeste winst zit. Maar de volgorde is niet omkeerbaar: eerst het eerste.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Bij pigment is de rechterkolom belangrijker dan bij welke andere aandoening ook. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen.
 
@@ -3876,7 +3878,7 @@ Of er naast kleur ook oneffenheid meespeelt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over pigmentvlekken**
 
 Gaan mijn pigmentvlekken helemaal weg? +
 
@@ -3902,7 +3904,7 @@ De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen vo
 
 **Tabbladtitel:** Poriën: wat er wel en niet aan te doen is | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **KLEINER MAKEN KAN NIET.**
 
@@ -3962,7 +3964,7 @@ Dit is geen vuil en het komt niet doordat je je gezicht niet goed wast. Harder s
 
 Heb je er ook rode, ontstoken plekjes bij? Dan begint het verhaal daar, want werken aan poriën in een ontstoken huid is dweilen met de kraan open.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Vier van de vijf kruisjes rechts zijn dingen die mensen thuis doen in de overtuiging dat ze helpen. Ze kosten niets om te laten en dat is de goedkoopste winst op deze pagina.
 
@@ -4026,7 +4028,7 @@ Hoeveel het oppervlak weerkaatst
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over poriën**
 
 Kunnen mijn poriën echt niet kleiner? +
 
@@ -4052,7 +4054,7 @@ We kijken onder vast licht waar je naar kijkt, of het poriën zijn of iets ander
 
 **Tabbladtitel:** Psoriasis: meer dan huid | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **HET ZIT IN JE HUID. HET KOMT ER NIET VANDAAN.**
 
@@ -4092,7 +4094,7 @@ Dit wordt het vaakst aangezien voor hardnekkige roos. Het verschil zit in de dik
 
 Psoriasis kan op verschillende plekken voorkomen Dat is de reden dat een crème de plek aanpakt en niet de oorzaak, en dat dit bij een dermatoloog hoort en niet bij een huidkliniek.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het tweede vinkje links is de belangrijkste regel op deze pagina, en de enige waarbij uitstel je iets kost dat niet terugkomt.
 
@@ -4132,7 +4134,7 @@ Wij kunnen een plek verzachten en niets aan de oorzaak doen. Dan verkoop je sess
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over psoriasis**
 
 Is psoriasis besmettelijk? +
 
@@ -4210,7 +4212,7 @@ Dit werkt op de huid, en dat is wat wij doen. Reken op een reeks over maanden en
 
 > knop: LAAT DIT BEKIJKEN
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Bij lijnen zit de winst in de juiste keuze en in geduld. Collageen bouwt in maanden op, en dat is niet te versnellen door vaker te komen.
 
@@ -4272,7 +4274,7 @@ Wat er onder de oppervlakte al is opgebouwd
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over rimpels**
 
 Hoe weet ik of het een rimpel is of een droogtelijntje? +
 
@@ -4294,7 +4296,7 @@ Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmetin
 
 **Tabbladtitel:** Rosacea en couperose behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **ROSACEA GAAT NIET WEG. HET IS WEL TE STUREN.**
 
@@ -4394,7 +4396,7 @@ Dit gaat het vaakst mis, en het is niet onschuldig: rosacea behandelen als acne 
 
 Denk je na het lezen hiervan dat je toch acne hebt? Dan hoor je op de andere pagina, en dat is geen omweg maar de kortste route.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Bij rosacea is het eerste punt links gratis en levert het vaak het meest op. Dat is niet het antwoord dat een kliniek hoort te geven, maar het is wel het juiste.
 
@@ -4456,7 +4458,7 @@ Hoe prikkelbaar je huid op dit moment is
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over rosacea**
 
 Gaat mijn rosacea weg? +
 
@@ -4536,7 +4538,7 @@ Pigmentplekjes beoordelen en verwijderen hoort bij een arts, die het weefsel kan
 
 > knop: NAAR MOEDERVLEKKEN CONTROLEREN
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste plekje is, is het in een afspraak klaar.
 
@@ -4572,7 +4574,7 @@ Wat weg is kan niemand meer bekijken. Dat is de reden dat er hier eerst gekeken 
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over steelwratjes**
 
 Waarom krijg ik ze in mijn hals en oksels? +
 
@@ -4594,7 +4596,7 @@ Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. B
 
 **Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **ROOD REAGEERT. WIT VEEL MINDER.**
 
@@ -4684,7 +4686,7 @@ Bijna niemand komt hier voor stap één. Toch bepaalt die of de rest zin heeft, 
 
 Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en pas daarna hier. Dat is geen omweg maar de kortste route naar minder littekens.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets om te vermijden: wachten tot het wit is.
 
@@ -4748,7 +4750,7 @@ Hoe groot het gebied is dat we behandelen
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over littekens**
 
 Gaan mijn littekens helemaal weg? +
 
@@ -4776,7 +4778,7 @@ Bij een rood litteken of rode striae is dit het moment waarop het het meeste uit
 
 **Tabbladtitel:** Weet je niet hoe het heet? Begin hier | Diba Clinics
 
-**Google-omschrijving:** Google-omschrijving: Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
 
 **JIJ ZIET HET. WIJ HERKENNEN HET.**
 
@@ -4896,7 +4898,7 @@ Een wal is volume: er zit iets. Een donkere kring is kleur: pigment of vaatjes d
 
 > knop: NAAR DONKERE KRINGEN
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan als hoe voorzichtig het moet.
 
@@ -4932,7 +4934,7 @@ Dit zijn de gevallen waarin wij iemand wegsturen die met geld in de hand binnenk
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over wallen**
 
 Wat is het verschil tussen wallen en donkere kringen? +
 
@@ -9828,7 +9830,7 @@ Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tek
 
 - Word altijd goed en lief geholpen! En krijg het beste advies. Fleur 3 maanden geleden ADVIES & BEHANDELING
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over intake**
 
 Word ik hierna gebeld om alsnog iets af te nemen? +
 
@@ -10168,7 +10170,7 @@ Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet
 
 - “Ik blijf het telkens herhalen, maar ik ben al weer zo fijn geholpen door Iris! Laserbehandeling en geëindigd met een gezichtsbehandeling. Ben zo blij dat ik terecht ben gekomen bij Diba Clinics.” Darifa Laser & gezichtsbehandeling 2 MAANDEN GELEDEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen**
 
 Hoeveel sessies heb je nodig? +
 
@@ -10462,7 +10464,7 @@ Die staat er in de rechterkolom bij. Dat is meteen de reden dat deze lijst kort 
 
 - Wij tonen geen resultaat dat we niet onder hetzelfde licht hebben gemeten Geen voor-en-na met andere belichting, een andere hoek of andere make-up. Bij poriën, kringen en cellulitis is de lamp anders het hele resultaat. ZIE DE PORIËNPAGINA WAT DIT ONS KOST Onze foto's zijn minder spectaculair dan die van anderen. Dat is precies waarom je ze kunt geloven.
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over ons verbond**
 
 Waarom staat bij elke regel wat het jullie kost? +
 
@@ -10926,7 +10928,7 @@ Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een
 
 > knop: ALLES OVER NIGHTLASE
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mensen die hierover belt hoort van ons dat ze ergens anders moeten beginnen.
 
@@ -10962,7 +10964,7 @@ Dit zijn de twee momenten waarop wij een afspraak afzeggen die al gemaakt was. L
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen over snurken**
 
 Waar komt het geluid eigenlijk vandaan? +
 
@@ -11117,4 +11119,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_103 pagina's · 5130 tekstblokken · ongeveer 73.907 woorden._
+_103 pagina's · 5131 tekstblokken · ongeveer 74.015 woorden._

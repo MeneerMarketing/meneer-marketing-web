@@ -222,7 +222,7 @@ export default function GevoeligeHuidPage() {
         ]}
       />
 
-      <PillarFaq items={GEVOELIG_FAQ} />
+      <PillarFaq items={GEVOELIG_FAQ} onderwerp="een gevoelige huid" />
 
       <PillarCta
         kop="Eerst uitzoeken"

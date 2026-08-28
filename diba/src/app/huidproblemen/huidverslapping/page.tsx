@@ -252,7 +252,7 @@ export default function Pagina() {
         ]}
       />
 
-      <PillarFaq items={VERSLAPPING_FAQ} />
+      <PillarFaq items={VERSLAPPING_FAQ} onderwerp="huidverslapping" />
 
       <PillarCta
         kop="Eerst liggen."

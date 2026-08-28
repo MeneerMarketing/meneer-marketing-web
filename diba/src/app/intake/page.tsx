@@ -431,7 +431,7 @@ export default function IntakePage() {
         </div>
       </section>
 
-      <PillarFaq items={INTAKE_FAQ} />
+      <PillarFaq items={INTAKE_FAQ} onderwerp="intake" />
 
       {/* ── Slot ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">

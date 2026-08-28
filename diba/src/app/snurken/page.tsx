@@ -355,7 +355,7 @@ export default function SnurkenPage() {
         punten={SNURKEN_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={SNURKEN_FAQ} />
+      <PillarFaq items={SNURKEN_FAQ} onderwerp="snurken" />
 
       <PillarCta
         kop="Eerst luisteren."

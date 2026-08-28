@@ -180,7 +180,7 @@ export default function CellulitisPage() {
         punten={CELLULITIS_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={CELLULITIS_FAQ} />
+      <PillarFaq items={CELLULITIS_FAQ} onderwerp="cellulitis" />
 
       {/* ── Afsluiting zonder afspraakknop ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">

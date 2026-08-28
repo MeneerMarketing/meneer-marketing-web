@@ -232,7 +232,7 @@ export default function PorienPage() {
         ]}
       />
 
-      <PillarFaq items={PORIEN_FAQ} />
+      <PillarFaq items={PORIEN_FAQ} onderwerp="poriën" />
 
       <PillarCta
         kop="Minder zichtbaar"

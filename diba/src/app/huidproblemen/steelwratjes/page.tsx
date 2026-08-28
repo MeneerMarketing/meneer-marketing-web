@@ -238,7 +238,7 @@ export default function Pagina() {
         punten={STEELWRAT_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={STEELWRAT_FAQ} />
+      <PillarFaq items={STEELWRAT_FAQ} onderwerp="steelwratjes" />
 
       <PillarCta
         kop="Eerst kijken."

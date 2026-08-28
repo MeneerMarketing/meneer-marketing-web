@@ -252,7 +252,7 @@ export default function Pagina() {
         ]}
       />
 
-      <PillarFaq items={DOF_FAQ} />
+      <PillarFaq items={DOF_FAQ} onderwerp="een doffe huid" />
 
       <PillarCta
         kop="Eerst kijken waar het vandaan komt."

@@ -293,7 +293,7 @@ export default function RosaceaPage() {
         ]}
       />
 
-      <PillarFaq items={ROSACEA_FAQ} />
+      <PillarFaq items={ROSACEA_FAQ} onderwerp="rosacea" />
 
       <PillarCta
         kop="Eerst kijken."

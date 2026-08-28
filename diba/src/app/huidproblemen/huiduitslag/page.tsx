@@ -239,7 +239,7 @@ export default function HuiduitslagPage() {
         punten={UITSLAG_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={UITSLAG_FAQ} />
+      <PillarFaq items={UITSLAG_FAQ} onderwerp="huiduitslag" />
 
       {/* ── Afsluiting zonder afspraakknop ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">

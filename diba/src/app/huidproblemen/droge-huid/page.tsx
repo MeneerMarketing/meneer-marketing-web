@@ -219,7 +219,7 @@ export default function DrogeHuidPage() {
         ]}
       />
 
-      <PillarFaq items={DROGE_HUID_FAQ} />
+      <PillarFaq items={DROGE_HUID_FAQ} onderwerp="een droge huid" />
 
       <PillarCta
         kop="Eerst weten"

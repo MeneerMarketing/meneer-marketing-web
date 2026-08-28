@@ -242,7 +242,7 @@ export default function WallenPage() {
         punten={WALLEN_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={WALLEN_FAQ} />
+      <PillarFaq items={WALLEN_FAQ} onderwerp="wallen" />
 
       <PillarCta
         kop="Eerst kijken wat het is."

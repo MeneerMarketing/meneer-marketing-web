@@ -241,7 +241,7 @@ export default function DonkereKringenPage() {
         ]}
       />
 
-      <PillarFaq items={KRINGEN_FAQ} />
+      <PillarFaq items={KRINGEN_FAQ} onderwerp="donkere kringen" />
 
       <PillarCta
         kop="Eerst weten"

@@ -143,21 +143,21 @@ export default function CouperosePage() {
                 waar de hele pagina om draait, en je kunt hem nalezen voor je verder
                 scrolt. */}
             <h1 className="diba-display-l mt-6">
-              Een lijntje blijft staan.
+              Rode adertjes die
               <br />
-              <span className="diba-accent">Een gloed trekt weg.</span>
+              <span className="diba-accent">niet meer wegtrekken</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Rode vaatjes op je wangen of naast je neus heten couperose. Een
-              rode waas zonder losse lijntjes is iets anders, en vraagt om een
-              andere aanpak. Met je eigen vinger zie je binnen twee seconden
-              welke van de twee je hebt.
+              Die dunne rode of paarse lijntjes op je wangen of naast je neus
+              heten couperose. Een egale rode waas is iets anders en vraagt om
+              een andere aanpak, al zitten ze vaak samen. Met je vinger zie je
+              binnen een paar seconden waar je mee te maken hebt.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              En nee, je hoeft hier niets uit te leggen over hoe snel je rood
-              wordt.
+              Over hoe snel je rood wordt hoef je hier trouwens niets uit te
+              leggen. Dat kennen we.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -199,8 +199,8 @@ export default function CouperosePage() {
           <SectieKop
             label="De drukproef"
             raster="gelijk"
-            kop="Twee seconden,"
-            accent="en je weet het zelf."
+            kop="Zo zie je zelf"
+            accent="waar je mee te maken hebt"
             intro="Dit is geen diagnose en het vervangt geen meting. Het is wel het enige onderscheid dat je thuis kunt maken, en het bepaalt of licht bij jou iets oplevert of dat we eerst naar de triggers moeten kijken."
           />
 
@@ -237,8 +237,8 @@ export default function CouperosePage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Drie beelden,"
-            accent="en ze vragen niet hetzelfde."
+            kop="Welk beeld"
+            accent="herken je?"
             intro="De uitslag van de drukproef bepaalt bij welk beeld je uitkomt. Bij één daarvan begint het bij licht, bij een ander juist niet, en dat verschil is het hele punt van deze pagina."
           />
           <SoortKiezer
@@ -305,8 +305,8 @@ export default function CouperosePage() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en allebei om dezelfde reden."
+        kop="Wanneer we liever"
+        accent="nog even wachten"
         intro="Licht op de verkeerde huid of op het verkeerde moment maakt roodheid erger. Dat is wat je hier niet komt halen."
         punten={COUPEROSE_WIJ_DOEN_NIET}
       />
@@ -330,11 +330,11 @@ export default function CouperosePage() {
         ]}
       />
 
-      <PillarFaq items={COUPEROSE_FAQ} />
+      <PillarFaq items={COUPEROSE_FAQ} onderwerp="couperose" />
 
       <PillarCta
-        kop="Eerst tellen."
-        accent="Dan pas licht."
+        kop="We tellen eerst"
+        accent="hoeveel er zichtbaar is"
         tekst="Behandeling Nul legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies er nodig zijn, en wij ook."
         topic="couperose"
         whatsappHref={DIBA_WHATSAPP_URL}

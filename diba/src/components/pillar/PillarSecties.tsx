@@ -126,7 +126,7 @@ export function WelNiet({
       <div className="mx-auto">
         <SectieKop
           label="Zonder omwegen"
-          kop="Wat werkt. En wat niet."
+          kop="Wat helpt en wat we afraden"
           intro={
             intro ??
             "De rechterkolom is de nuttigste van de twee. Bij elk kruisje staat waarom, want “niet doen” zonder reden onthoudt niemand."
@@ -336,8 +336,11 @@ export function NulmetingAssen({
 
 export function PillarFaq({
   items,
+  onderwerp,
 }: {
   items: readonly { readonly vraag: string; readonly antwoord: string }[];
+  /** Het onderwerp in de kop. Zonder dit staat er alleen "Veelgestelde vragen". */
+  onderwerp?: string;
 }) {
   return (
     <section
@@ -348,7 +351,9 @@ export function PillarFaq({
         <div>
           <Label>Goed om te weten</Label>
           <h2 className="diba-display-m mt-4 max-w-[16ch]">
-            Veelgestelde vragen over acne
+            {onderwerp
+              ? `Veelgestelde vragen over ${onderwerp}`
+              : "Veelgestelde vragen"}
           </h2>
         </div>
 

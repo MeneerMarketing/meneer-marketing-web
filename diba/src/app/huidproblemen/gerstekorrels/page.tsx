@@ -224,7 +224,7 @@ export default function Pagina() {
         punten={GERSTEKORRELS_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={GERSTEKORRELS_FAQ} />
+      <PillarFaq items={GERSTEKORRELS_FAQ} onderwerp="gerstekorrels" />
 
       <PillarCta
         kop="Even laten kijken."

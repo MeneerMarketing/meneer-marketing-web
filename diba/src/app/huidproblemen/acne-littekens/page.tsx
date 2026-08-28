@@ -260,7 +260,7 @@ export default function AcneLittekensPage() {
         ]}
       />
 
-      <PillarFaq items={ACNE_LITTEKENS_FAQ} />
+      <PillarFaq items={ACNE_LITTEKENS_FAQ} onderwerp="acnelittekens" />
 
       <PillarCta
         kop="Eerst kijken wat het is."

@@ -242,7 +242,7 @@ export default function Pagina() {
         ]}
       />
 
-      <PillarFaq items={OUDERDOMSVLEKKEN_FAQ} />
+      <PillarFaq items={OUDERDOMSVLEKKEN_FAQ} onderwerp="ouderdomsvlekken" />
 
       <PillarCta
         kop="Eerst kijken."

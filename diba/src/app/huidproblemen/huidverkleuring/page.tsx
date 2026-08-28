@@ -222,7 +222,7 @@ export default function HuidverkleuringPage() {
         </div>
       </section>
 
-      <PillarFaq items={VERKLEURING_FAQ} />
+      <PillarFaq items={VERKLEURING_FAQ} onderwerp="huidverkleuring" />
 
       {/* ── Afsluiting ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">

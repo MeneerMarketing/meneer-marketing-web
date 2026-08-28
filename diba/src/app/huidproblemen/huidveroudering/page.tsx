@@ -251,7 +251,7 @@ export default function HuidverouderingPage() {
         ]}
       />
 
-      <PillarFaq items={VEROUDERING_FAQ} />
+      <PillarFaq items={VEROUDERING_FAQ} onderwerp="huidveroudering" />
 
       <PillarCta
         kop="Begin bij weten"

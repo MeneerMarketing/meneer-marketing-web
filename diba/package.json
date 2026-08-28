@@ -12,7 +12,8 @@
     "nakijklijst": "node scripts/nakijklijst.mjs",
     "huisregels": "node scripts/controleer-huisregels.mjs",
     "mobiel": "node scripts/controleer-mobiel.mjs",
-    "teksten": "node scripts/tekstexport.mjs"
+    "teksten": "node scripts/tekstexport.mjs",
+    "stijl": "node scripts/controleer-stijl.mjs"
   },
   "dependencies": {
     "next": "16.2.2",

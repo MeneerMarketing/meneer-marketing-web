@@ -236,7 +236,7 @@ export default function Pagina() {
         punten={ONZUIVER_WIJ_DOEN_NIET}
       />
 
-      <PillarFaq items={ONZUIVER_FAQ} />
+      <PillarFaq items={ONZUIVER_FAQ} onderwerp="een onzuivere huid" />
 
       <PillarCta
         kop="Eerst kijken wat het is."

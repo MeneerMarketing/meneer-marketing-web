@@ -236,7 +236,7 @@ export default function MelasmaPage() {
         ]}
       />
 
-      <PillarFaq items={MELASMA_FAQ} />
+      <PillarFaq items={MELASMA_FAQ} onderwerp="melasma" />
 
       <PillarCta
         kop="Eerst kijken."

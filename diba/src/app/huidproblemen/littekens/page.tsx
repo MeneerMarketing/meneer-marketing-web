@@ -283,7 +283,7 @@ export default function LittekensPage() {
         ]}
       />
 
-      <PillarFaq items={LITTEKEN_FAQ} />
+      <PillarFaq items={LITTEKEN_FAQ} onderwerp="littekens" />
 
       <PillarCta
         kop="Kom liever te vroeg."

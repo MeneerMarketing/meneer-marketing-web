@@ -285,7 +285,7 @@ export default function PigmentPage() {
         ]}
       />
 
-      <PillarFaq items={PIGMENT_FAQ} />
+      <PillarFaq items={PIGMENT_FAQ} onderwerp="pigmentvlekken" />
 
       <PillarCta
         kop="Meten kan altijd."
