@@ -131,11 +131,11 @@ export default function KlachtenPage() {
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw]">
         <div className="mx-auto rounded-[var(--r-md)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
           <Label opDonker>Wat je van ons mag verwachten</Label>
-          <h2 className="diba-display-m mt-4 max-w-[18ch]">
-            Een klacht kost je niets,
+          <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            Een klacht kost je niets
             <br />
             <span className="diba-accent-on-dark">
-              en verandert niets aan je behandeling.
+              en verandert niets aan je behandeling
             </span>
           </h2>
           <ul className="mt-9 grid gap-4 md:grid-cols-2">
@@ -158,9 +158,9 @@ export default function KlachtenPage() {
         <div className="mx-auto">
           <Label>Niet bij ons</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Drie plekken,
+            Waar je met iets anders
             <br />
-            <span className="diba-accent">en geen ervan doet hetzelfde.</span>
+            <span className="diba-accent">terechtkunt</span>
           </h2>
           <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
             Dit staat er omdat mensen anders wekenlang bij de verkeerde

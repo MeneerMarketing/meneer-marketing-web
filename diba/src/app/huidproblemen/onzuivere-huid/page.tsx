@@ -159,8 +159,8 @@ export default function Pagina() {
             icoon={VerstoptePorie}
             label="De korrelcheck"
             raster="gelijk"
-            kop="Zijlicht,"
-            accent="en vooral niet knijpen."
+            kop="Zo bekijk je"
+            accent="je poriën van dichtbij"
             intro="Dit is een herkenningshulp en geen diagnose. Het maakt wel het onderscheid tussen iets dat normaal is en iets dat behandeld kan worden, en dat scheelt mensen jaren vechten tegen hun eigen anatomie."
           />
 
@@ -190,8 +190,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier beelden"
-            kop="Twee horen erbij,"
-            accent="en twee kun je aanpakken."
+            kop="Wat er in een porie"
+            accent="kan zitten"
             intro="Verstopte poriën, mee-eters en onzuiverheden lopen in de volksmond door elkaar. Het verschil bepaalt of er iets te behandelen valt, of dat de beste behandeling is om ermee te stoppen."
           />
           <SoortKiezer
@@ -230,8 +230,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en de eerste bespaart je geld."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Er is een reeks te verkopen tegen iets dat bij een normale huid hoort. Dat is precies wat wij niet doen, en dat is meteen de nuttigste zin op deze pagina."
         punten={ONZUIVER_WIJ_DOEN_NIET}
       />
@@ -239,8 +239,8 @@ export default function Pagina() {
       <PillarFaq items={ONZUIVER_FAQ} onderwerp="een onzuivere huid" />
 
       <PillarCta
-        kop="Eerst kijken wat het is."
-        accent="Vaak is dat het advies."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken."
         topic="onzuivere-huid"
         whatsappHref={DIBA_WHATSAPP_URL}

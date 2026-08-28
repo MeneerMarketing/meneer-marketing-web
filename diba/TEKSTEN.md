@@ -60,7 +60,7 @@ Of je nu last hebt van acne, pigment, ongewenste haargroei of een huid die veran
 
 > knop: BESPREEK DIT MET ONS
 
-**Analyse. Inzicht. Behandeling.**
+**Zo verloopt een traject bij ons**
 
 Met de EVE-M huidanalyse maken we een objectieve nulmeting. Zo zien we wat jouw huid nodig heeft en volgen we jouw voortgang in beeld.
 
@@ -336,7 +336,7 @@ Hillegersberg ligt aan de noordkant van Rotterdam. Een kliniek in een woonwijk e
 
 > knop: ROUTE EN CONTACT
 
-**Wat ze zeggen, en wat niet.**
+**Wat klanten over ons schrijven**
 
 Elke kliniek zet haar cijfers boven aan de pagina. Bijna geen enkele zet erbij waar het getal ophoudt. Een getal zonder grens is een claim; met grens is het een gegeven.
 
@@ -392,7 +392,7 @@ Dat is makkelijk gezegd. Hier staat wiens hand dat is.
 
 Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag, en als je een voorkeur hebt kun je die gewoon noemen.
 
-**Twee vakken, en één ervan is wettelijk beschermd.**
+**Huidtherapeut of schoonheidsspecialist: het verschil**
 
 Dit staat op geen enkele kliniekwebsite en het is precies wat je hoort te weten voordat je op een stoel gaat zitten. Dus staat het er.
 
@@ -688,7 +688,7 @@ De rechterkolom is de nuttigste van de twee. Bij elk kruisje staat waarom, want 
 
 - Zelf uitknijpen. Je duwt de ontsteking dieper in plaats van eruit. Dit is de snelste route naar een litteken
 
-**Eerst rust. Dan littekens.**
+**Waarom we beginnen bij de ontsteking**
 
 Littekens behandelen op een huid die nog ontstoken is maakt het beeld slechter. Dat is de belangrijkste reden dat we soms nee zeggen tegen een behandeling die je zelf al had uitgekozen. We leggen dit liever vooraf duidelijk uit.
 
@@ -784,7 +784,7 @@ Er is geen weefsel verloren gegaan. Dat betekent een andere behandeling, en vaak
 
 > knop: LAAT DIT BEELD BEKIJKEN
 
-**Alles tegelijk kan niet, en dat is geen vertraging.**
+**De volgorde van behandelen**
 
 Elke stap hieronder is onmogelijk zolang de vorige niet klaar is. Dat is de reden dat een goede littekenbehandeling zelden begint op de dag dat je binnenkomt.
 
@@ -828,7 +828,7 @@ Wat hier het meeste oplevert is vaak niet een behandeling maar de juiste volgord
 
 - Beginnen op een gebruinde huid
 
-**Twee keer nee, en allebei kosten ze ons omzet.**
+**Wanneer we een behandeling afraden**
 
 Dit zijn de twee momenten waarop we een traject afhouden dat je zelf wilde boeken. Liever dat, dan een reeks die niets doet of het erger maakt.
 
@@ -872,7 +872,7 @@ Hoe lang moet ik wachten na mijn laatste puistje? +
 
 Kunnen putjes helemaal verdwijnen? +
 
-**Eerst kijken wat het is. Dan pas behandelen.**
+**Plan een intake bij Diba Clinics**
 
 In Behandeling Nul stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat.
 
@@ -1172,7 +1172,7 @@ Bij twee ervan kunnen wij iets. Bij de andere twee is de beste behandeling een g
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Een raam, en een halve draai.**
+**Zo bekijk je je huid bij daglicht**
 
 Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat maak je met een lamp en een hoek zichtbaar. Niet in de badkamer: licht van boven maakt elke huid vlak en verstopt juist wat je wil zien.
 
@@ -1182,7 +1182,7 @@ Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat maak je met een
 
 - STAP 3 Voel er dan overheen Blijft het mat en voelt het ruw, dan gaat het om opgehoopte cellen. Blijft het mat en voelt het glad, dan gaat het eerder om vocht of om kleur.
 
-**Twee kunnen wij aan, en twee liggen bij jou.**
+**Vier oorzaken van een doffe huid**
 
 Dat laatste is geen afschuiven. Een behandeling die tegen je slaap en je gewoontes in moet werken is weggegooid geld, en dat hoor je liever nu dan na drie afspraken.
 
@@ -1244,7 +1244,7 @@ Bij dofheid is het effect vaak snel zichtbaar en ook weer tijdelijk. Dat is geen
 
 - Steeds sterker peelen omdat het vorige effect wegtrok
 
-**Twee keer nee, en de tweede voorkomt een trap omhoog.**
+**Wanneer we een behandeling afraden**
 
 Het effect van een behandeling op dofheid zakt na verloop van tijd. Steeds dieper gaan omdat het vorige effect wegtrok, is de snelste route naar een geïrriteerde huid die juist doffer oogt.
 
@@ -1710,7 +1710,7 @@ Losse witte bolletjes zijn een ding op zich. Zie je daarnaast verstopte poriën,
 
 > knop: NAAR DE ACNEPAGINA
 
-**Ze lijken op elkaar, en dat is het probleem.**
+**Wit bolletje of ontstoken kliertje?**
 
 Dit is een herkenningshulp en geen diagnose. Het verschil tussen wit en hard aan de ene kant en rood en pijnlijk aan de andere is wel iets dat je zelf kunt zien, en het bepaalt of je hier moet zijn of bij je huisarts.
 
@@ -1762,7 +1762,7 @@ Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het he
 
 - Onnodig meerdere afspraken plannen Een gerstekorrel verwijderen is meestal een eenmalige behandeling.
 
-**Twee keer nee, en allebei rond het oog.**
+**Wanneer we een behandeling afraden**
 
 Het gaat hier om de dunste huid van je lichaam, op enkele millimeters van je oog. De grenzen zijn daarom strakker dan elders op deze site.
 
@@ -2346,7 +2346,7 @@ Fijne lijntjes, ongelijke kleur, verwijde vaatjes, ruwere structuur. Dit is tijd
 
 Allebei die stukken huid zijn precies even oud. Wat je op het ene extra ziet is opgebouwd, niet meegegroeid. Dat is ook het enige goede nieuws op deze pagina: aan opgebouwd zit een knop, aan meegegroeid niet.
 
-**Niet één proces, maar vijf tegelijk.**
+**Wat er bij veroudering in je huid verandert**
 
 Huidveroudering is geen schakelaar die op een leeftijd omgaat. Er lopen meerdere dingen naast elkaar, ze beginnen niet tegelijk en ze hebben niet dezelfde oorzaak. Kies een levensfase en kijk wat er dan speelt.
 
@@ -2504,7 +2504,7 @@ Dat is in twee richtingen eerlijk: het temt te hoge verwachtingen, en het laat z
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Staand, liggend, en dan het verschil.**
+**Zo test je zelf hoeveel er te winnen valt**
 
 Geen diagnose, wel de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is.
 
@@ -2576,7 +2576,7 @@ Hier is geduld geen bijzaak. Collageen bouwt over maanden op, en dat is niet te 
 
 - Behandelen op een gebruinde huid
 
-**Twee keer nee, en de eerste is de duurste.**
+**Wanneer we een behandeling afraden**
 
 Iemand die een facelift zoekt een reeks van drie verkopen is het makkelijkste geld op deze hele site. Precies daarom staat het hier.
 
@@ -2620,7 +2620,7 @@ Hoe lang houdt het resultaat aan? +
 
 Doet het pijn? +
 
-**Eerst liggen. Dan pas plannen.**
+**Plan een intake bij Diba Clinics**
 
 In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies.
 
@@ -2644,7 +2644,7 @@ En soms is het antwoord niet een behandeling maar anders scheren. Ook dat zeggen
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Fel licht, en vooral niet peuteren.**
+**Zo bekijk je een bultje van dichtbij**
 
 Dit is een herkenningshulp en geen diagnose. Het brengt je wel bij het onderscheid dat alles bepaalt, en het kost je een lamp en een spiegel.
 
@@ -2654,7 +2654,7 @@ Dit is een herkenningshulp en geen diagnose. Het brengt je wel bij het ondersche
 
 - STAP 3 Voel over een groter vlak Strijk met je hand over de hele zone. Voelt alles als schuurpapier, ook waar geen bultje zit, dan gaat het eerder om verhoorning dan om haren.
 
-**Ze zitten op dezelfde plek, en dat is verwarrend.**
+**Vier soorten bultjes na het scheren**
 
 Nek, bikinilijn, benen en kaaklijn zijn de zones waar deze vier allemaal voorkomen. Twee ervan hebben baat bij ontharen en twee niet.
 
@@ -2716,7 +2716,7 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strak scheren,
 
 - Beloven dat elk haartje weggaat. Lichte en grijze haren reageren nauwelijks op licht
 
-**Twee keer nee, en de tweede voorkomt een reeks voor niets.**
+**Wanneer we een behandeling afraden**
 
 Licht mikt op het pigment in de haarwortel. Dat werkt niet op elke huid en niet op elk haar, en dat stellen we vast voordat je iets afspreekt.
 
@@ -2736,7 +2736,7 @@ Mag ik blijven scheren tijdens het traject? +
 
 En die donkere vlekjes die overblijven? +
 
-**Eerst kijken. Dan pas ontharen.**
+**Plan een intake bij Diba Clinics**
 
 In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw huidtype en haarkleur geschikt zijn. Zo niet, dan hoor je dat voordat je iets afspreekt.
 
@@ -2796,7 +2796,7 @@ Meten en dan gericht behandelen. Bij rood en verheven werken we vaak eerst op de
 
 Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.
 
-**Vier beelden, en niet allemaal bij ons.**
+**Welke soort litteken herken je?**
 
 Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En bij striae is de kleur belangrijker dan de plek. Kies wat het dichtst bij jou komt.
 
@@ -2942,7 +2942,7 @@ En de meest gemaakte vergissing staat er meteen bij: schuren helpt niet. De prop
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Losse bultjes, of alleen ruw?**
+**Zo voel je het verschil met een droge huid**
 
 Dat is het verschil tussen verhoorning en een droge huid, en het bepaalt of hier iets te behandelen valt of dat je een tube nodig hebt en geen afspraak.
 
@@ -2952,7 +2952,7 @@ Dat is het verschil tussen verhoorning en een droge huid, en het bepaalt of hier
 
 - STAP 3 Denk aan het seizoen Is het in de winter duidelijk erger en in de zomer bijna weg? Dat past bij allebei, maar bij droogte verdwijnt het vrijwel helemaal en bij verhoorning blijft er altijd iets staan.
 
-**Ruw voelt allemaal hetzelfde, en dat is het niet.**
+**Vier beelden die ruw aanvoelen**
 
 Verhoorning, droogte en ingegroeide haren voelen onder je hand vrijwel gelijk. Waar het zit en of het aan twee kanten symmetrisch is, zegt meer dan hoe het aanvoelt.
 
@@ -3014,7 +3014,7 @@ Hier hoort onderhoud bij en geen kuur met een eindpunt. Dat is minder aantrekkel
 
 - Het behandelen als acne. Er zit geen ontsteking en geen bacterie in
 
-**Twee keer nee, en allebei gaan ze over verwachtingen.**
+**Wanneer we een behandeling afraden**
 
 Er valt een reeks van zes te verkopen aan iemand die op gladde armen hoopt. Dat is hoop verkopen en een teleurstelling leveren, en daar beginnen we niet aan.
 
@@ -3034,7 +3034,7 @@ Komt het door iets dat ik doe? +
 
 Waarom is het 's winters erger? +
 
-**Eerst weten wat het is. Dat scheelt al veel.**
+**Wat we eerst vaststellen**
 
 Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldig is en niet aan hen ligt. Wat er daarnaast te verzachten valt, bespreken we in hetzelfde gesprek.
 
@@ -3094,7 +3094,7 @@ Meten en dan gericht behandelen. Bij rood en verheven werken we vaak eerst op de
 
 Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.
 
-**Vier beelden, en niet allemaal bij ons.**
+**Welke soort litteken herken je?**
 
 Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En bij striae is de kleur belangrijker dan de plek. Kies wat het dichtst bij jou komt.
 
@@ -3364,7 +3364,7 @@ Hoe lang duurt het voor ik iets zie? +
 
 Wat kost dit? +
 
-**Eerst kijken. Dan pas beslissen.**
+**Plan een intake bij Diba Clinics**
 
 We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je dat en raden we behandelen af. Zit het hoog, dan weet je meteen wat er te halen valt en wat het vraagt.
 
@@ -3484,7 +3484,7 @@ Echte mee-eters zitten verspreid, zijn donkerder, en zitten er al maanden. Daar 
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zijlicht, en vooral niet knijpen.**
+**Zo bekijk je je poriën van dichtbij**
 
 Dit is een herkenningshulp en geen diagnose. Het maakt wel het onderscheid tussen iets dat normaal is en iets dat behandeld kan worden, en dat scheelt mensen jaren vechten tegen hun eigen anatomie.
 
@@ -3494,7 +3494,7 @@ Dit is een herkenningshulp en geen diagnose. Het maakt wel het onderscheid tusse
 
 - STAP 3 Voel met vlakke vingers Strijk zacht over je voorhoofd en kaaklijn. Voel je hobbeltjes zonder dat je iets ziet, dan zijn dat gesloten poriën. Niet knijpen: daar begint de ontsteking.
 
-**Twee horen erbij, en twee kun je aanpakken.**
+**Wat er in een porie kan zitten**
 
 Verstopte poriën, mee-eters en onzuiverheden lopen in de volksmond door elkaar. Het verschil bepaalt of er iets te behandelen valt, of dat de beste behandeling is om ermee te stoppen.
 
@@ -3556,7 +3556,7 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reini
 
 - Beloven dat poriën kleiner worden. Ze kunnen leeg zijn en daardoor minder opvallen; hun formaat ligt vast
 
-**Twee keer nee, en de eerste bespaart je geld.**
+**Wanneer we een behandeling afraden**
 
 Er is een reeks te verkopen tegen iets dat bij een normale huid hoort. Dat is precies wat wij niet doen, en dat is meteen de nuttigste zin op deze pagina.
 
@@ -3576,7 +3576,7 @@ Is een onzuivere huid hetzelfde als acne? +
 
 Moet ik mijn huid strenger reinigen? +
 
-**Eerst kijken wat het is. Vaak is dat het advies.**
+**Plan een intake bij Diba Clinics**
 
 In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken.
 
@@ -3616,7 +3616,7 @@ Een rafelige rand, ongelijke kleur, groei of jeuk: bij die dingen ga je naar de 
 
 > knop: NAAR DE ABCDE-CHECK
 
-**Een ervan behandelen wij, en drie niet meteen.**
+**Vier soorten bruine vlekken**
 
 Dit is een herkenningshulp en geen diagnose. Zit er iets bij dat verandert, dan is de rest van deze pagina niet aan de orde en ga je eerst naar de huisarts.
 
@@ -3672,7 +3672,7 @@ Bij pigment is zonbescherming geen advies achteraf maar onderdeel van de behande
 
 - Beginnen op een gebruinde huid
 
-**Twee keer nee, en de eerste is niet onderhandelbaar.**
+**Wanneer we een behandeling afraden**
 
 Een plek wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen. Dat is een fout die niet te herstellen is.
 
@@ -3716,7 +3716,7 @@ Waarom zie ik na de meting meer vlekken dan in de spiegel? +
 
 Kan dit ook op mijn handen? +
 
-**Eerst kijken. Dan pas licht.**
+**Plan een intake bij Diba Clinics**
 
 In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het pigment dat je zelf nog niet ziet. Daarna weet je wat er kan en wat er eerst ergens anders hoort.
 
@@ -3934,7 +3934,7 @@ Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn in elke 
 
 Gevuld, uitgerekt en glanzend. Dit is het beeld waarmee mensen naar binnen lopen en waarvan ze denken dat de porie zelf te groot is.
 
-**Vier beelden, en één is geen porie.**
+**Welke soort litteken herken je?**
 
 Het vierde beeld is het meest gemaakte misverstand van deze pagina en het kost mensen sessies aan de verkeerde behandeling. Kies wat het dichtst bij jou komt.
 
@@ -4004,7 +4004,7 @@ Dat staat nergens op deze site en het zal er ook niet komen. Wat we wel beloven 
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Onder hetzelfde licht, of het zegt niets.**
+**Waarom we onder vast licht meten**
 
 Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In strijklicht en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.
 
@@ -4146,7 +4146,7 @@ Mijn gewrichten zijn 's ochtends stijf. Hoort dat erbij? +
 
 Kan ik bij jullie wel voor iets anders terecht? +
 
-**Naar de huisarts, en die verwijst door.**
+**Wanneer je bij de huisarts hoort**
 
 Er staat op deze pagina geen knop om bij ons een afspraak te maken. Neem je nagels mee in dat gesprek en noem je gewrichten, ook als je er zelf weinig van vindt. Dat zijn de twee dingen die het vaakst worden overgeslagen.
 
@@ -4168,7 +4168,7 @@ Wij werken op de huid en niet op de spier. Dat betekent dat wij niet voor elke l
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Tien seconden, en je weet waar hij zit.**
+**Zo zie je of een lijn in je huid of je spier zit**
 
 Dit is geen diagnose maar het is wel het onderscheid dat alles bepaalt. Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen om iets totaal anders.
 
@@ -4240,7 +4240,7 @@ Bij lijnen zit de winst in de juiste keuze en in geduld. Collageen bouwt in maan
 
 - Beginnen op een gebruinde huid
 
-**Twee keer nee, en de eerste verrast mensen.**
+**Wanneer we een behandeling afraden**
 
 Dit zijn de gevallen waarin wij een behandeling afhouden die je zelf wilde boeken. In het ene geval omdat het niet ons vak is, in het andere omdat het niet nodig is.
 
@@ -4284,7 +4284,7 @@ Op welke leeftijd moet ik hiermee beginnen? +
 
 Hoe lang duurt het voor ik iets zie? +
 
-**Eerst meten. Dan pas beginnen.**
+**Wat een nulmeting oplevert**
 
 Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmeting legt vast waar je begon, zodat het verschil later te zien is in plaats van te geloven.
 
@@ -4310,7 +4310,7 @@ Zie je vooral losse adertjes en geen opvlammingen? Dan gaat het waarschijnlijk o
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Niet welke triggers, maar welke een knop hebben.**
+**Welke triggers je zelf kunt sturen**
 
 Dat wijn je rood maakt wist je al. De vraag die telt is hoeveel van jouw triggers je kunt beïnvloeden en hoeveel niet, want die verhouding bepaalt of gewoontes of behandelen het meeste oplevert. Tik aan wat je herkent.
 
@@ -4354,7 +4354,7 @@ Weet je het niet precies? Houd het twee weken bij. Dat levert meer op dan welke 
 
 Dit is geen diagnose en geen test. Het is een manier om je eigen patroon te zien voordat je hier binnenloopt, zodat het gesprek niet bij nul begint.
 
-**Vier beelden, en twee horen bij de arts.**
+**Welke soort litteken herken je?**
 
 Rosacea kent stadia die om een andere aanpak vragen. Bij twee ervan is ons antwoord dat je bij de dermatoloog hoort. Dat staat er dan ook, want dat is sneller dan eerst een traject bij ons.
 
@@ -4472,7 +4472,7 @@ Mag ik nog sporten? +
 
 Ik schaam me ervoor dat ik zo snel rood word. +
 
-**Eerst kijken. Dan pas iets aanraken.**
+**Plan een intake bij Diba Clinics**
 
 In de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in jouw geval realistisch is. Ook als dat betekent dat je bij de arts hoort.
 
@@ -4494,7 +4494,7 @@ Maar er hangt van alles aan een hals dat erop lijkt en het niet is. Daarom kijke
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Steeltje, kleur, en of het onveranderd is.**
+**Waar je zelf naar kunt kijken**
 
 Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan trekken en niet knijpen: dat is wat mensen thuis doen en waar het misgaat.
 
@@ -4504,7 +4504,7 @@ Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan
 
 - STAP 3 Denk terug Zat het er een half jaar geleden precies zo bij? Onveranderd is geruststellend. Groeit het, jeukt het of bloedt het, dan gaat het naar de huisarts en niet naar ons.
 
-**Een ervan halen wij weg, en drie niet zomaar.**
+**Vier soorten uitsteeksels**
 
 Ze zitten op dezelfde plekken en voelen bijna hetzelfde. Het verschil bepaalt of het hier in een kwartier klaar is of dat er eerst iemand anders naar hoort te kijken.
 
@@ -4564,7 +4564,7 @@ Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het he
 
 - Beloven dat er nooit meer nieuwe bij komen. De aanleg en de wrijving blijven
 
-**Twee keer nee, en allebei gaan over wat je daarna niet meer kunt.**
+**Wanneer we een behandeling afraden**
 
 Wat weg is kan niemand meer bekijken. Dat is de reden dat er hier eerst gekeken wordt en dat moedervlekken buiten deze deur blijven.
 
@@ -4584,7 +4584,7 @@ Komen ze terug? +
 
 Blijft er een litteken achter? +
 
-**Eerst kijken. Vaak is het zo klaar.**
+**Plan een intake bij Diba Clinics**
 
 Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. Blijkt er iets tussen te zitten dat beoordeeld moet worden, dan hoor je dat voordat we beginnen.
 
@@ -4644,7 +4644,7 @@ Meten en dan gericht behandelen. Bij rood en verheven werken we vaak eerst op de
 
 Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.
 
-**Vier beelden, en niet allemaal bij ons.**
+**Welke soort litteken herken je?**
 
 Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En bij striae is de kleur belangrijker dan de plek. Kies wat het dichtst bij jou komt.
 
@@ -4924,7 +4924,7 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 
 - Beloven dat het weggaat als het van dag tot dag niet verandert
 
-**Twee keer nee, en allebei kosten ze ons een klant.**
+**Wanneer we een behandeling afraden**
 
 Dit zijn de gevallen waarin wij iemand wegsturen die met geld in de hand binnenkomt. Liever dat, dan een reeks die niets verandert.
 
@@ -4942,7 +4942,7 @@ Helpt beter slapen? +
 
 Kan ik er zelf iets aan doen? +
 
-**Eerst kijken wat het is. Dan pas iets doen.**
+**Plan een intake bij Diba Clinics**
 
 In Behandeling Nul stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen.
 
@@ -5040,7 +5040,7 @@ Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter
 
 De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en de lijst schikt zich naar wat bij jou past.
 
-- RAAKT NIETS Consult met eve-m huidanalyse EVE-M De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt. Er is geen hersteltijd, omdat de huid tijdens deze afspraak niet wordt behandeld. € 50
+- RAAKT NIETS Consult met EVE-M huidanalyse EVE-M De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt. Er is geen hersteltijd, omdat de huid tijdens deze afspraak niet wordt behandeld. € 50
 
 - RAAKT NIETS NightLase Fotona TimeWalker Laser tegen snurken. Zonder operatie, zonder naalden, zonder beugel in je mond. Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel. Op aanvraag
 
@@ -5152,7 +5152,7 @@ Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en g
 
 - Afbouwen Een traject eindigt met wat je zelf volhoudt. Anders komt het terug en begint alles opnieuw.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5252,7 +5252,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Direct verder Geen roodheid om te verbergen, geen dag om vrij te nemen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5350,7 +5350,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5456,7 +5456,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Rood naar huis Eén tot drie dagen, alsof je te lang in de zon hebt gezeten. Make-up de eerste dag niet.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5550,7 +5550,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5628,7 +5628,7 @@ Fibromen zijn goedaardige huidaanhangsels die vaak in de hals, oksels of liezen 
 
 - Korstjes Die vallen er in dagen vanzelf af. Niet krabben, want dan wordt het wel een litteken.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5748,7 +5748,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Warm en rood Van een paar uur tot enkele dagen, afhankelijk van welke behandeling je kreeg.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5854,7 +5854,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Enkele dagen droog De huid schilfert licht en voelt gevoelig. Geen strakke kleding en geen sauna.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -5888,7 +5888,7 @@ Deze pagina vertelt wat happy intim doet. Of het bij jouw huid het juiste is, ha
 
 ### /behandelingen/huidanalyse
 
-**Tabbladtitel:** Consult met eve-m huidanalyse | Diba Clinics
+**Tabbladtitel:** Consult met EVE-M huidanalyse | Diba Clinics
 
 **Google-omschrijving:** De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt.
 
@@ -5944,7 +5944,7 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 - Samen kijken Je ziet hetzelfde scherm als wij, ook als het meevalt.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6042,7 +6042,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6118,7 +6118,7 @@ Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een me
 
 - Wat erna Je gaat naar huis met iets wat je zelf kunt volhouden. Dat is het echte doel.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6212,7 +6212,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6300,7 +6300,7 @@ Littekens van een operatie reageren anders dan littekens van acne: ze zijn lange
 
 - Vergelijken Foto's onder hetzelfde licht. Bij littekens maakt de lamp het verschil groter dan de behandeling.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6402,7 +6402,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Klaar Geen roodheid, geen wachttijd, geen instructies voor thuis.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6484,7 +6484,7 @@ Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen
 
 - Drie keer, met weken ertussen Het weefsel trekt tussen de sessies door aan. Na de derde weet je wat het bij jou doet.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6588,7 +6588,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6666,7 +6666,7 @@ Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoff
 
 - Meteen weer de deur uit Je huid is kort roze en dat trekt binnen een uur weg. Make-up mag dezelfde dag.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6780,7 +6780,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Neutraliseren en beschermen Daarna zon vermijden. Dat is geen advies maar een voorwaarde.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -6890,7 +6890,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Kort rood Soms kleine bultjes waar de naald ging. Meestal binnen een dag weg.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -7004,7 +7004,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Rust geven Daarna niets erop wat er niet op hoeft.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -7082,7 +7082,7 @@ Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen
 
 - Samen doornemen Wat er staat en wat het niet betekent. Dat tweede is bij dit soort tests het belangrijkste deel.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -7194,7 +7194,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Thuis doorgaan De producten horen bij het traject en staan in de prijs. Overslaan haalt de rest onderuit.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
 
@@ -7322,7 +7322,7 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 > knop: 1 APPARAAT Kou en druk Vaatjes prikkelen zonder ze te raken. Grijpt aan op bloedvaten
 
-- EVE-M De huidscanner waar elk traject mee begint. Meet, behandelt niet. Consult met eve-m huidanalyse
+- EVE-M De huidscanner waar elk traject mee begint. Meet, behandelt niet. Consult met EVE-M huidanalyse
 
 - FOTONA Fotona TimeWalker Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · NightLase
 
@@ -7394,7 +7394,7 @@ Het rood in bloed neemt bepaalde golflengtes op. Zo raak je een vaatje zonder de
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -7474,7 +7474,7 @@ Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -7554,7 +7554,7 @@ De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidla
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -7608,7 +7608,7 @@ De huidscanner waar elk traject mee begint. Meet, behandelt niet.
 
 De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar.
 
-- Consult met eve-m huidanalyse € 50
+- Consult met EVE-M huidanalyse € 50
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
@@ -7634,7 +7634,7 @@ Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -7702,7 +7702,7 @@ Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en gee
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -7788,7 +7788,7 @@ Het pigment in je huid en in de haarwortel. Neemt licht op en zet het om in warm
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -7864,7 +7864,7 @@ De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidla
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -7946,7 +7946,7 @@ Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -8028,7 +8028,7 @@ Het rood in bloed neemt bepaalde golflengtes op. Zo raak je een vaatje zonder de
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -8116,7 +8116,7 @@ De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidla
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -8204,7 +8204,7 @@ Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -8290,7 +8290,7 @@ Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
-**Even lang, en dat is met opzet.**
+**Wat een behandeling met je huid doet**
 
 Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
 
@@ -8360,13 +8360,13 @@ Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de 
 
 > knop: STEL JE HUIDPROFIEL SAMEN
 
-**Wat het kost, en wat je ervoor krijgt.**
+**Wat een behandeling kost**
 
 Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de hersteltijd is en wat het niet doet. Het bedrag blijft staan, ook dicht.
 
 Eerst kijken, nog niets doen.
 
-- Consult met eve-m huidanalyse De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt. € 50 ▾
+- Consult met EVE-M huidanalyse De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt. € 50 ▾
 
 Reinigen, hydrateren, oppervlakkig vernieuwen.
 
@@ -9090,7 +9090,7 @@ Tot 24 uur van tevoren afzeggen kost u niets, en u hoeft geen reden te geven.
 
 Daarna wordt een deel van het tarief in rekening gebracht, omdat de plek dan niet meer op te vullen is. Alle andere regels op deze pagina zijn varianten op die ene.
 
-**Wat het kost, en waarom.**
+**Wat een behandeling kost**
 
 - Je zegt op tijd af Tot 24 uur voor je afspraak kun je verzetten of afzeggen, telefonisch of per bericht. Je hoeft geen reden te geven. WAT HET KOST Niets. WAAROM DEZE REGEL Binnen 24 uur lukt het meestal nog om de plek aan iemand anders te geven. Daarbuiten niet, en dat is het enige verschil tussen deze regel en de volgende.
 
@@ -9198,7 +9198,7 @@ Lukt dat niet, dan is er een vaste route met termijnen en een onafhankelijke uit
 
 - STAP 4 · LEG HET VOOR AAN DE GESCHILLENINSTANTIE BINDENDE UITSPRAAK Onafhankelijk, bindend, en met de mogelijkheid tot een vergoeding. Ben je het niet eens met ons oordeel, dan kun je naar de onafhankelijke geschilleninstantie waar wij bij zijn aangesloten. Die doet een bindende uitspraak en kan een schadevergoeding toekennen tot 25.000 euro. Je hoeft daar geen advocaat voor.
 
-**Een klacht kost je niets, en verandert niets aan je behandeling.**
+**Een klacht kost je niets en verandert niets aan je behandeling**
 
 - Je klacht kost je niets. Niet het gesprek, niet de klachtenfunctionaris, en niet de geschilleninstantie.
 
@@ -9210,7 +9210,7 @@ Lukt dat niet, dan is er een vaste route met termijnen en een onafhankelijke uit
 
 - Wat er uit een klacht komt, veranderen we in de kliniek. Anders is het een formulier en geen les.
 
-**Drie plekken, en geen ervan doet hetzelfde.**
+**Waar je met iets anders terechtkunt**
 
 Dit staat er omdat mensen anders wekenlang bij de verkeerde instantie wachten. Bij elk staat er ook bij waarvoor je er juist níét moet zijn.
 
@@ -9250,7 +9250,7 @@ Drie van de vier zijn niet deze website. Bij elke plek staat wat er ligt en waar
 
 - UW DOSSIER In de kliniek Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen u heeft gehad en hoe uw huid reageerde. WAAR HET HEEN GAAT Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die u behandelen kijken erin.
 
-**Twintig jaar, en dat is geen keuze van ons.**
+**Hoe lang we je gegevens bewaren**
 
 Een dossier van een geneeskundige behandeling moet twintig jaar bewaard blijven. Dat staat in de wet, en het is langer dan de meeste mensen verwachten. Daarom staat er hieronder bij elk gegeven op grond waarvan wij het bewaren.
 
@@ -9261,6 +9261,8 @@ Een dossier van een geneeskundige behandeling moet twintig jaar bewaard blijven.
 *OP GROND WAARVAN*
 
 Uw behandeldossier
+
+Twintig jaar
 
 Wettelijk verplicht op grond van de WGBO (artikel 7:454 BW), gerekend vanaf de laatste wijziging in het dossier. Dit is geen termijn die wij korter mogen maken.
 
@@ -9780,7 +9782,7 @@ We bespreken je huidvraag We vragen waar je last van hebt, hoelang dit al speelt
 
 Je hoeft je niet voor te bereiden op vaktermen. Zeg het in je eigen woorden; wij vertalen.
 
-**Vier dingen altijd, en drie soms.**
+**Wat je meeneemt naar je afspraak**
 
 Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is het belangrijkste: een meting over foundation heen is geen meting.
 
@@ -10598,7 +10600,7 @@ DE UITLEG
 
 Zet een schakelaar om, dan staat hier wat die variabele met een foto doet en wat wij eraan doen zodra we onze eigen beelden publiceren.
 
-**Zo maken wij ze, of we maken ze niet.**
+**Hoe we resultaatfoto's maken**
 
 Zeven regels, één per variabele hierboven. Verschijnt er straks een beeld op deze site dat er niet aan voldoet, dan mag je ons daarop aanspreken.
 
@@ -10876,7 +10878,7 @@ Daarom begint deze pagina bij de bron en niet bij het apparaat.
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Een daarvan kunnen wij aan, en drie niet.**
+**Vier plekken waar snurken kan ontstaan**
 
 Dit is een wegwijzer en geen diagnose; het echte antwoord komt uit meekijken achter in je mond. Maar de herkenning hieronder brengt de meeste mensen al bij de juiste deur, en soms is dat niet de onze.
 
@@ -10954,7 +10956,7 @@ Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mense
 
 - Een neusspray of een beugel verkopen naast de behandeling. Dat is niet ons vak
 
-**Twee keer nee, en allebei voordat je betaalt.**
+**Wanneer we een behandeling afraden**
 
 Dit zijn de twee momenten waarop wij een afspraak afzeggen die al gemaakt was. Liever dat, dan een reeks die niets doet.
 
@@ -10978,7 +10980,7 @@ Blijft het weg? +
 
 Wat kost dit? +
 
-**Eerst luisteren. Dan pas laseren.**
+**Plan een intake bij Diba Clinics**
 
 In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je nachten. Daarna weet je of dit bij jou iets oplevert, en wij ook.
 
@@ -11080,7 +11082,7 @@ We zijn met 8, waarvan 5 huidtherapeuten. Er wordt gewerkt met laser, licht, nee
 
 Solliciteren gaat per mail naar info@dibaclinics.nl. Een cv is genoeg om mee te beginnen; de rest bespreken we.
 
-**Wat we van je vragen, en wat juist niet.**
+**Wat we van een nieuwe collega vragen**
 
 Elke vacature vraagt om een teamplayer met passie voor de huid. Wat een kliniek echt van je verwacht staat er nooit bij, en wat ze níet verwacht al helemaal niet. Op een site waar bij elke behandeling staat wat hij niet kan, hoort dat hier ook te staan.
 
@@ -11110,7 +11112,7 @@ Dat is geen indeling op papier. Bij acne en pigment zit er vaak een voedingskant
 
 > knop: BEKIJK DE APPARATUUR
 
-**Eén mail, en dan bellen we.**
+**Hoe je bij ons solliciteert**
 
 Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een uitgebreide motivatiebrief hoeft niet; we bellen liever en stellen onze vragen zelf. Loopt het daarna door, dan kom je een dagdeel meekijken voordat een van beiden iets tekent.
 
@@ -11119,4 +11121,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_103 pagina's · 5131 tekstblokken · ongeveer 74.015 woorden._
+_103 pagina's · 5132 tekstblokken · ongeveer 73.907 woorden._

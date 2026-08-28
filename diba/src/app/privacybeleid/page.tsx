@@ -298,8 +298,7 @@ export default function PrivacyPage() {
         <div className="mx-auto">
           <Label>Hoe lang het blijft</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Twintig jaar,{" "}
-            <span className="diba-accent">en dat is geen keuze van ons.</span>
+            Hoe lang we <span className="diba-accent">je gegevens bewaren</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Een dossier van een geneeskundige behandeling moet twintig jaar

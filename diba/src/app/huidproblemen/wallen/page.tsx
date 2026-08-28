@@ -236,8 +236,8 @@ export default function WallenPage() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en allebei kosten ze ons een klant."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Dit zijn de gevallen waarin wij iemand wegsturen die met geld in de hand binnenkomt. Liever dat, dan een reeks die niets verandert."
         punten={WALLEN_WIJ_DOEN_NIET}
       />
@@ -245,8 +245,8 @@ export default function WallenPage() {
       <PillarFaq items={WALLEN_FAQ} onderwerp="wallen" />
 
       <PillarCta
-        kop="Eerst kijken wat het is."
-        accent="Dan pas iets doen."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In Behandeling Nul stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen."
         topic="wallen"
         whatsappHref={DIBA_WHATSAPP_URL}

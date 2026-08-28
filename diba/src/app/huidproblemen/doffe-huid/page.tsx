@@ -158,8 +158,8 @@ export default function Pagina() {
             icoon={HuidGlans}
             label="De lichttest"
             raster="gelijk"
-            kop="Een raam,"
-            accent="en een halve draai."
+            kop="Zo bekijk je"
+            accent="je huid bij daglicht"
             intro="Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat maak je met een lamp en een hoek zichtbaar. Niet in de badkamer: licht van boven maakt elke huid vlak en verstopt juist wat je wil zien."
           />
 
@@ -189,8 +189,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier oorzaken"
-            kop="Twee kunnen wij aan,"
-            accent="en twee liggen bij jou."
+            kop="Vier oorzaken van"
+            accent="een doffe huid"
             intro="Dat laatste is geen afschuiven. Een behandeling die tegen je slaap en je gewoontes in moet werken is weggegooid geld, en dat hoor je liever nu dan na drie afspraken."
           />
           <SoortKiezer
@@ -233,8 +233,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en de tweede voorkomt een trap omhoog."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Het effect van een behandeling op dofheid zakt na verloop van tijd. Steeds dieper gaan omdat het vorige effect wegtrok, is de snelste route naar een geïrriteerde huid die juist doffer oogt."
         punten={DOF_WIJ_DOEN_NIET}
       />

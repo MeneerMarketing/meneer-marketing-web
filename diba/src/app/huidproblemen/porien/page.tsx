@@ -179,8 +179,8 @@ export default function PorienPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Vier beelden,"
-            accent="en één is geen porie."
+            kop="Welke soort litteken"
+            accent="herken je?"
             intro="Het vierde beeld is het meest gemaakte misverstand van deze pagina en het kost mensen sessies aan de verkeerde behandeling. Kies wat het dichtst bij jou komt."
           />
           <SoortKiezer
@@ -220,7 +220,7 @@ export default function PorienPage() {
       />
 
       <NulmetingAssen
-        kop="Onder hetzelfde licht, of het zegt niets."
+        kop="Waarom we onder vast licht meten"
         alineas={[
           "Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In strijklicht en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.",
           "Daarom leggen we ze vast onder dezelfde belichting en op dezelfde afstand. Dan is een verschil later echt een verschil en geen ander moment van de dag.",

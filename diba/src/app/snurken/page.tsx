@@ -158,8 +158,8 @@ export default function SnurkenPage() {
           <SectieKop
             label="Vier bronnen"
             raster="gelijk"
-            kop="Een daarvan kunnen wij aan,"
-            accent="en drie niet."
+            kop="Vier plekken waar"
+            accent="snurken kan ontstaan"
             intro="Dit is een wegwijzer en geen diagnose; het echte antwoord komt uit meekijken achter in je mond. Maar de herkenning hieronder brengt de meeste mensen al bij de juiste deur, en soms is dat niet de onze."
           />
 
@@ -349,8 +349,8 @@ export default function SnurkenPage() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en allebei voordat je betaalt."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Dit zijn de twee momenten waarop wij een afspraak afzeggen die al gemaakt was. Liever dat, dan een reeks die niets doet."
         punten={SNURKEN_WIJ_DOEN_NIET}
       />
@@ -358,8 +358,8 @@ export default function SnurkenPage() {
       <PillarFaq items={SNURKEN_FAQ} onderwerp="snurken" />
 
       <PillarCta
-        kop="Eerst luisteren."
-        accent="Dan pas laseren."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je nachten. Daarna weet je of dit bij jou iets oplevert, en wij ook."
         topic="snurken"
         whatsappHref={DIBA_WHATSAPP_URL}

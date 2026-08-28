@@ -171,8 +171,8 @@ export default function OverOnsPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Vier getallen</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Wat ze zeggen,{" "}
-                <span className="diba-accent-on-dark"> en wat niet.</span>
+                Wat klanten{" "}
+                <span className="diba-accent-on-dark">over ons schrijven</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Elke kliniek zet haar cijfers boven aan de pagina. Bijna geen

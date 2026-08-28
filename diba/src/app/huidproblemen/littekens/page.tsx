@@ -204,8 +204,8 @@ export default function LittekensPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Vier beelden,"
-            accent="en niet allemaal bij ons."
+            kop="Welke soort litteken"
+            accent="herken je?"
             intro="Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En bij striae is de kleur belangrijker dan de plek. Kies wat het dichtst bij jou komt."
           />
           <SoortKiezer

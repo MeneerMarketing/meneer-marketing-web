@@ -133,12 +133,9 @@ export default function ResultatenPage() {
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
               <Label opDonker>Waar je ons aan mag houden</Label>
-              <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Zo maken wij ze,{" "}
-                <span className="diba-accent-on-dark">
-                  {" "}
-                  of we maken ze niet.
-                </span>
+              <h2 className="diba-display-m mt-4 max-w-[22ch]">
+                Hoe we resultaatfoto&apos;s{" "}
+                <span className="diba-accent-on-dark">maken</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Zeven regels, één per variabele hierboven. Verschijnt er straks

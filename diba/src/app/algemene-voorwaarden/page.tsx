@@ -122,7 +122,7 @@ export default function VoorwaardenPage() {
           <div>
             <Label>Acht situaties</Label>
             <h2 className="diba-display-m mt-4">
-              Wat het kost, <span className="diba-accent">en waarom.</span>
+              Wat een behandeling <span className="diba-accent">kost</span>
             </h2>
           </div>
 

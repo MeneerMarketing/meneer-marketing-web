@@ -199,9 +199,9 @@ export default function FigmaHomeApp({
           <div>
             <Label opDonker>De Diba huidscan</Label>
             <h2 className="diba-display-l mt-5">
-              Analyse. Inzicht.
+              Zo verloopt
               <br />
-              <span className="diba-accent-on-dark">Behandeling.</span>
+              <span className="diba-accent-on-dark">een traject bij ons</span>
             </h2>
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
               Met de EVE-M huidanalyse maken we een objectieve nulmeting. Zo

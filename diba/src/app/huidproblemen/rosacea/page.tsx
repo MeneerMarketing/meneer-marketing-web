@@ -200,8 +200,8 @@ export default function RosaceaPage() {
             label="De triggersorteerder"
             // Twee gelijke helften eronder, dus de introzin volgt die indeling.
             raster="gelijk"
-            kop="Niet welke triggers,"
-            accent="maar welke een knop hebben."
+            kop="Welke triggers"
+            accent="je zelf kunt sturen"
             intro="Dat wijn je rood maakt wist je al. De vraag die telt is hoeveel van jouw triggers je kunt beïnvloeden en hoeveel niet, want die verhouding bepaalt of gewoontes of behandelen het meeste oplevert. Tik aan wat je herkent."
           />
           <Triggersorteerder />
@@ -216,8 +216,8 @@ export default function RosaceaPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Vier beelden,"
-            accent="en twee horen bij de arts."
+            kop="Welke soort litteken"
+            accent="herken je?"
             intro="Rosacea kent stadia die om een andere aanpak vragen. Bij twee ervan is ons antwoord dat je bij de dermatoloog hoort. Dat staat er dan ook, want dat is sneller dan eerst een traject bij ons."
           />
           <SoortKiezer
@@ -296,8 +296,8 @@ export default function RosaceaPage() {
       <PillarFaq items={ROSACEA_FAQ} onderwerp="rosacea" />
 
       <PillarCta
-        kop="Eerst kijken."
-        accent="Dan pas iets aanraken."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in jouw geval realistisch is. Ook als dat betekent dat je bij de arts hoort."
         topic="rosacea"
         whatsappHref={DIBA_WHATSAPP_URL}

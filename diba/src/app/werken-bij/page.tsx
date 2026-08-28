@@ -157,8 +157,10 @@ export default function WerkenBijPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Voordat je solliciteert</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Wat we van je vragen,{" "}
-                <span className="diba-accent-on-dark"> en wat juist niet.</span>
+                Wat we van{" "}
+                <span className="diba-accent-on-dark">
+                  een nieuwe collega vragen
+                </span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Elke vacature vraagt om een teamplayer met passie voor de huid.
@@ -270,9 +272,9 @@ export default function WerkenBijPage() {
           <div>
             <Label>Solliciteren</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Eén mail,
+              Hoe je bij ons
               <br />
-              <span className="diba-accent">en dan bellen we.</span>
+              <span className="diba-accent">solliciteert</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

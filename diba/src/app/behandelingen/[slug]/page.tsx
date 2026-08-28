@@ -416,8 +416,8 @@ export default async function BehandelingPage({ params }: PageProps) {
           <div className="mx-auto">
             <Label>Wat het wel en niet doet</Label>
             <h2 className="diba-display-m mt-4 max-w-[24ch]">
-              Even lang,{" "}
-              <span className="diba-accent">en dat is met opzet.</span>
+              Wat een behandeling{" "}
+              <span className="diba-accent">met je huid doet</span>
             </h2>
             <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
               Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar

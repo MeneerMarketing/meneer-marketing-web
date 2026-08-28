@@ -203,8 +203,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier beelden"
-            kop="Een ervan behandelen wij,"
-            accent="en drie niet meteen."
+            kop="Vier soorten"
+            accent="bruine vlekken"
             intro="Dit is een herkenningshulp en geen diagnose. Zit er iets bij dat verandert, dan is de rest van deze pagina niet aan de orde en ga je eerst naar de huisarts."
           />
           <SoortKiezer
@@ -223,8 +223,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en de eerste is niet onderhandelbaar."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Een plek wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen. Dat is een fout die niet te herstellen is."
         punten={OUDERDOMSVLEKKEN_WIJ_DOEN_NIET}
       />
@@ -245,8 +245,8 @@ export default function Pagina() {
       <PillarFaq items={OUDERDOMSVLEKKEN_FAQ} onderwerp="ouderdomsvlekken" />
 
       <PillarCta
-        kop="Eerst kijken."
-        accent="Dan pas licht."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het pigment dat je zelf nog niet ziet. Daarna weet je wat er kan en wat er eerst ergens anders hoort."
         topic="ouderdomsvlekken"
         whatsappHref={DIBA_WHATSAPP_URL}

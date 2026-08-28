@@ -191,8 +191,8 @@ export default function AcneLittekensPage() {
         <div className="mx-auto">
           <SectieKop
             label="De volgorde"
-            kop="Alles tegelijk kan niet,"
-            accent="en dat is geen vertraging."
+            kop="De volgorde"
+            accent="van behandelen"
             intro="Elke stap hieronder is onmogelijk zolang de vorige niet klaar is. Dat is de reden dat een goede littekenbehandeling zelden begint op de dag dat je binnenkomt."
           />
 
@@ -241,8 +241,8 @@ export default function AcneLittekensPage() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en allebei kosten ze ons omzet."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Dit zijn de twee momenten waarop we een traject afhouden dat je zelf wilde boeken. Liever dat, dan een reeks die niets doet of het erger maakt."
         punten={ACNE_LITTEKENS_WIJ_DOEN_NIET}
       />
@@ -263,8 +263,8 @@ export default function AcneLittekensPage() {
       <PillarFaq items={ACNE_LITTEKENS_FAQ} onderwerp="acnelittekens" />
 
       <PillarCta
-        kop="Eerst kijken wat het is."
-        accent="Dan pas behandelen."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In Behandeling Nul stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat."
         topic="acne-littekens"
         whatsappHref={DIBA_WHATSAPP_URL}

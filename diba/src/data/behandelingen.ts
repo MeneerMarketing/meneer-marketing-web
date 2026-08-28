@@ -223,7 +223,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       src: "/images/shoot/beh-huidanalyse.jpg",
       alt: "Cliënt in de EVE-M huidscanner, met de opname op het scherm ernaast",
     },
-    naam: "Consult met eve-m huidanalyse",
+    naam: "Consult met EVE-M huidanalyse",
     apparaat: "EVE-M",
     categorie: "meting",
     kort: "De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt.",

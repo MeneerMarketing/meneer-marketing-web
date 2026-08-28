@@ -156,9 +156,9 @@ export default function PsoriasisPage() {
         <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
-            Naar de huisarts,
+            Wanneer je bij
             <br />
-            <span className="diba-accent">en die verwijst door.</span>
+            <span className="diba-accent">de huisarts hoort</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Er staat op deze pagina geen knop om bij ons een afspraak te maken.

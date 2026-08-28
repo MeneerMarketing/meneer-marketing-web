@@ -159,8 +159,8 @@ export default function Pagina() {
             icoon={HuidStrakker}
             label="De zwaartekrachttest"
             raster="gelijk"
-            kop="Staand, liggend,"
-            accent="en dan het verschil."
+            kop="Zo test je zelf"
+            accent="hoeveel er te winnen valt"
             intro="Geen diagnose, wel de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is."
           />
 
@@ -227,8 +227,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en de eerste is de duurste."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Iemand die een facelift zoekt een reeks van drie verkopen is het makkelijkste geld op deze hele site. Precies daarom staat het hier."
         punten={VERSLAPPING_WIJ_DOEN_NIET}
       />
@@ -255,8 +255,8 @@ export default function Pagina() {
       <PillarFaq items={VERSLAPPING_FAQ} onderwerp="huidverslapping" />
 
       <PillarCta
-        kop="Eerst liggen."
-        accent="Dan pas plannen."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies."
         topic="huidverslapping"
         whatsappHref={DIBA_WHATSAPP_URL}

@@ -153,8 +153,8 @@ export default function Pagina() {
           <SectieKop
             label="De beweegtest"
             raster="gelijk"
-            kop="Tien seconden,"
-            accent="en je weet waar hij zit."
+            kop="Zo zie je of een lijn"
+            accent="in je huid of je spier zit"
             intro="Dit is geen diagnose maar het is wel het onderscheid dat alles bepaalt. Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen om iets totaal anders."
           />
 
@@ -224,8 +224,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en de eerste verrast mensen."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Dit zijn de gevallen waarin wij een behandeling afhouden die je zelf wilde boeken. In het ene geval omdat het niet ons vak is, in het andere omdat het niet nodig is."
         punten={RIMPELS_WIJ_DOEN_NIET}
       />
@@ -246,8 +246,8 @@ export default function Pagina() {
       <PillarFaq items={RIMPELS_FAQ} onderwerp="rimpels" />
 
       <PillarCta
-        kop="Eerst meten."
-        accent="Dan pas beginnen."
+        kop="Wat een nulmeting"
+        accent="oplevert"
         tekst="Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmeting legt vast waar je begon, zodat het verschil later te zien is in plaats van te geloven."
         topic="rimpels"
         whatsappHref={DIBA_WHATSAPP_URL}

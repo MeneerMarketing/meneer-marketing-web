@@ -1,25 +1,27 @@
 /**
- * Telt de schrijfpatronen die in SCHRIJFSTIJL.md zijn afgesproken als "doen we niet meer".
+ * Controleert de teksten tegen DIBA-COPY-STYLE-GUIDE.md.
  *
  * WAAROM DIT ER IS.
  *
  * Okan las in augustus 2026 alle teksten na en wees niet een pagina af maar een patroon:
- * koppen in twee helften met een komma, het geen-X-wel-Y-ritme, en losse zinnetjes met een
- * punt ertussen. Dat zat door honderd pagina's heen, en bij honderd pagina's is opletten
- * geen methode meer.
+ * losse kreten met punten ertussen, vaste tegenstellingen, en beloftes die harder klinken
+ * dan ze zijn. Dat zat door honderd pagina's heen, en bij honderd pagina's is opletten geen
+ * methode meer.
  *
- * Dit script vervangt het lezen niet. Een tekst kan aan alle regels hieronder voldoen en
- * nog steeds nergens over gaan. Wat het wel doet is voorkomen dat een patroon dat we eruit
- * hebben gehaald er stilletjes weer in kruipt, één pagina tegelijk.
+ * Dit vervangt het lezen niet. Een tekst kan aan alles hieronder voldoen en nog steeds
+ * nergens over gaan. Wat het wel doet is voorkomen dat een patroon dat we eruit hebben
+ * gehaald er stilletjes weer in kruipt, één nieuwe pagina tegelijk.
  *
  * Het leest TEKSTEN.md, dus draai eerst `npm run teksten`. Dat is met opzet: het gaat om
  * wat de bezoeker ziet en niet om wat er in de bronbestanden staat.
+ *
+ * De regels komen letterlijk uit de stijlgids. Staat er hier iets dat daar niet staat, dan
+ * is dit bestand voorgelopen en hoort het teruggedraaid; de gids is de bron.
  */
 import { readFileSync } from "fs";
 
 const md = readFileSync("TEKSTEN.md", "utf8").split(/\r?\n/);
 
-/* Per regel bijhouden op welke pagina hij staat, zodat een melding bruikbaar is. */
 const regels = [];
 let pad = "(nog geen pagina)";
 for (const r of md) {
@@ -34,80 +36,135 @@ for (const r of md) {
   regels.push({ pad, t });
 }
 
+/** Haalt de opmaak van de export weg zodat de test op de zin zelf werkt. */
+const kaal = (t) =>
+  t
+    .replace(/^\*\*(.+)\*\*$/, "$1")
+    .replace(/^> knop:\s*/, "")
+    .replace(/^[->*]\s*/, "")
+    .trim();
+
+/** Is dit een knoptekst? Die hebben hun eigen regels in de gids. */
+const isKnop = (t) => /^> knop:/.test(t);
+
 /**
- * De patronen.
+ * De regels.
  *
  * `grens` is het aantal waarboven het een tic wordt in plaats van een keuze. Nul betekent:
- * dit willen we nergens meer zien. De rest heeft ruimte, want één keer "geen" in een zin
- * is gewoon Nederlands.
+ * dit willen we nergens zien.
  */
-const PATRONEN = [
+const REGELS = [
   {
-    naam: "kop in twee helften met een komma",
-    uitleg: 'Bijvoorbeeld: "Twee seconden, en je weet het zelf."',
-    test: (r) => /^\*\*[^*]{3,45},\s+(en|maar|of)\b[^*]{3,55}\*\*$/.test(r),
+    naam: "losse kreten met punten ertussen",
+    bron: "Natuurlijk Nederlands",
+    uitleg: 'Zoals "Eerlijk. Deskundig. Menselijk." of "Analyse. Inzicht. Behandeling."',
+    test: (t) => /^([A-Z][a-zà-ÿ]{2,14}\.\s+){2,}[A-Z][a-zà-ÿ]{2,14}\.?$/.test(t),
     grens: 0,
   },
   {
     naam: "Eerst X. Dan Y.",
+    bron: "Natuurlijk Nederlands",
     uitleg: "Twee halve zinnen als slogan.",
-    test: (r) => /\bEerst\b[^.!?]{1,35}\.\s*(Dan|Daarna)\b/i.test(r),
+    test: (t) => /\bEerst\b[^.!?]{1,35}\.\s*(Dan|Daarna)\b/i.test(t),
     grens: 0,
   },
   {
-    naam: "losse woorden met punten ertussen",
-    uitleg: 'Bijvoorbeeld: "Eerlijk. Helder. Persoonlijk."',
-    test: (r) => /^\*?\*?([A-Z][a-zà-ÿ]{2,12}\.\s+){2,}[A-Z][a-zà-ÿ]{2,12}\.\*?\*?$/.test(r),
+    naam: "kop in twee helften met een komma",
+    bron: "Koppen",
+    uitleg: 'Zoals "Twee seconden, en je weet het zelf." Een kop vertelt waar het over gaat.',
+    test: (t, ruw) =>
+      /^\*\*[^*]{3,45},\s+(en|maar|of)\b[^*]{3,55}\*\*$/.test(ruw),
     grens: 0,
   },
   {
     naam: "geen X, wel Y",
-    uitleg: "Het contrast als vaste vorm.",
-    test: (r) => /\bgeen\b[^.!?]{0,45}[.,]\s*(wel|maar wel)\b/i.test(r),
+    bron: "Natuurlijk Nederlands",
+    uitleg: "De vaste tegenstelling.",
+    test: (t) => /\bgeen\b[^.!?]{0,45}[.,]\s*(wel|maar wel)\b/i.test(t),
     grens: 0,
   },
   {
-    naam: "zeggen dat we eerlijk zijn",
-    uitleg: "Als de tekst eerlijk is, merkt de lezer dat zelf.",
-    test: (r) => /\b(eerlijk gezegd|wij zijn eerlijk|omdat wij eerlijk)\b/i.test(r),
-    grens: 2,
-  },
-  {
-    naam: "superlatief of grote belofte",
-    uitleg: "beste versie, revolutionair, uniek, perfect.",
-    test: (r) =>
-      /\b(de beste versie|revolutionair|uniek(e)? aanpak|perfecte huid|gegarandeerd)\b/i.test(r),
+    naam: "beautycliché of grote belofte",
+    bron: "Woorden en claims die we vermijden",
+    uitleg: "ontdek, ervaar de kracht van, verwen jezelf, stralende huid, transformerend.",
+    test: (t) =>
+      /\b(ontdek|ervaar de kracht|verwen jezelf|stralende huid|transformerend|revolutionair|ultiem|de beste versie)\b/i.test(
+        t,
+      ),
     grens: 0,
   },
   {
-    naam: "druk zetten",
-    uitleg: "Korting, schaarste, tijdelijk aanbod.",
-    test: (r) =>
-      /\b(alleen deze maand|op=op|laatste plekken|nu met korting|tijdelijke actie|actie loopt|nog \d+ plekken)\b/i.test(r),
+    naam: "absolute claim",
+    bron: "Medische toon",
+    uitleg: "perfect, vlekkeloos, voor altijd, gegarandeerd, pijnloos, risicovrij.",
+    test: (t) =>
+      /\b(perfecte? huid|vlekkeloos|voor altijd|gegarandeerd resultaat|volledig pijnloos|risicovrij)\b/i.test(
+        t,
+      ),
+    grens: 0,
+  },
+  {
+    naam: "luxe of exclusief als verkoopargument",
+    bron: "Diba klinkt niet zo",
+    uitleg: "Diba is geen luxemerk.",
+    test: (t) => /\b(luxueus|exclusieve? (behandeling|ervaring)|premium ervaring)\b/i.test(t),
+    grens: 0,
+  },
+  {
+    naam: "knop zonder bestemming",
+    bron: "CTA's en knoppen",
+    uitleg: 'Zoals "Ontdek nu", "Klik hier", "Boek vandaag nog".',
+    test: (t, ruw) =>
+      isKnop(ruw) &&
+      /^(ontdek nu|klik hier|claim jouw plek|boek vandaag|mis het niet|nog maar enkele)/i.test(t),
+    grens: 0,
+  },
+  {
+    naam: "nep-urgentie",
+    bron: "CTA's en knoppen",
+    uitleg: "Schaarste of korting zonder controleerbare reden.",
+    test: (t) =>
+      /\b(alleen deze maand|op=op|laatste plekken|nu met korting|tijdelijke actie|nog \d+ plekken)\b/i.test(
+        t,
+      ),
+    grens: 0,
+  },
+  {
+    naam: "zichtbare redactievlag",
+    bron: "Medische toon en controle",
+    uitleg: "ROJDA-CHECK en soortgenoten horen nooit op het scherm.",
+    test: (t) => /\[(ROJDA-CHECK|MEDISCHE-CHECK|COPY-NODIG|PRIJS-NODIG|GEGEVEN-NODIG)/i.test(t),
+    grens: 0,
+  },
+  {
+    naam: "merknaam verkeerd geschreven",
+    bron: "Eindcontrole",
+    uitleg: "Het is Diba Clinics, niet DIBA Clinics.",
+    test: (t) => /\bDIBA\s+Clinics\b/.test(t),
     grens: 0,
   },
 ];
 
 const bevindingen = [];
-for (const p of PATRONEN) {
-  const raak = regels.filter((r) => p.test(r.t));
-  if (raak.length > p.grens) bevindingen.push({ p, raak });
+for (const r of REGELS) {
+  const raak = regels.filter((x) => r.test(kaal(x.t), x.t));
+  if (raak.length > r.grens) bevindingen.push({ r, raak });
 }
 
 /* "geen" telt apart: geen patroon maar een dichtheid. */
 const metGeen = regels.filter((r) => /\bgeen\b/i.test(r.t)).length;
 const aandeel = (metGeen / regels.length) * 100;
 
-console.log(`${regels.length} zichtbare tekstregels gecontroleerd.\n`);
+console.log(`${regels.length} zichtbare tekstregels, getoetst aan DIBA-COPY-STYLE-GUIDE.md\n`);
 
 if (!bevindingen.length) {
-  console.log("ok — geen van de afgesproken patronen gevonden.");
+  console.log("ok — geen van de regels uit de gids overtreden.");
 } else {
-  for (const { p, raak } of bevindingen) {
-    console.log(`${raak.length}x  ${p.naam}  (grens: ${p.grens})`);
-    console.log(`      ${p.uitleg}`);
-    for (const r of raak.slice(0, 4)) console.log(`      ${r.pad}  ${r.t.slice(0, 88)}`);
-    if (raak.length > 4) console.log(`      ... en nog ${raak.length - 4}`);
+  for (const { r, raak } of bevindingen) {
+    console.log(`${String(raak.length).padStart(4)}x  ${r.naam}   [${r.bron}]`);
+    console.log(`        ${r.uitleg}`);
+    for (const x of raak.slice(0, 3)) console.log(`        ${x.pad}  ${kaal(x.t).slice(0, 82)}`);
+    if (raak.length > 3) console.log(`        ... en nog ${raak.length - 3}`);
     console.log("");
   }
 }

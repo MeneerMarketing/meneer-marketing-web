@@ -283,8 +283,8 @@ export default function IntakePage() {
         <div className="mx-auto">
           <SectieKop
             label="Voorbereiden"
-            kop="Vier dingen altijd,"
-            accent="en drie soms."
+            kop="Wat je meeneemt"
+            accent="naar je afspraak"
             intro="Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is het belangrijkste: een meting over foundation heen is geen meting."
             raster="gelijk"
           />

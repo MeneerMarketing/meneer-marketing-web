@@ -155,8 +155,8 @@ export default function Pagina() {
           <SectieKop
             label="De schuurpapiertest"
             raster="gelijk"
-            kop="Losse bultjes,"
-            accent="of alleen ruw?"
+            kop="Zo voel je het verschil"
+            accent="met een droge huid"
             intro="Dat is het verschil tussen verhoorning en een droge huid, en het bepaalt of hier iets te behandelen valt of dat je een tube nodig hebt en geen afspraak."
           />
 
@@ -186,8 +186,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier beelden"
-            kop="Ruw voelt allemaal hetzelfde,"
-            accent="en dat is het niet."
+            kop="Vier beelden die"
+            accent="ruw aanvoelen"
             intro="Verhoorning, droogte en ingegroeide haren voelen onder je hand vrijwel gelijk. Waar het zit en of het aan twee kanten symmetrisch is, zegt meer dan hoe het aanvoelt."
           />
           <SoortKiezer
@@ -229,8 +229,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en allebei gaan ze over verwachtingen."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Er valt een reeks van zes te verkopen aan iemand die op gladde armen hoopt. Dat is hoop verkopen en een teleurstelling leveren, en daar beginnen we niet aan."
         punten={KP_WIJ_DOEN_NIET}
       />
@@ -238,8 +238,8 @@ export default function Pagina() {
       <PillarFaq items={KP_FAQ} onderwerp="keratosis pilaris" />
 
       <PillarCta
-        kop="Eerst weten wat het is."
-        accent="Dat scheelt al veel."
+        kop="Wat we eerst"
+        accent="vaststellen"
         tekst="Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldig is en niet aan hen ligt. Wat er daarnaast te verzachten valt, bespreken we in hetzelfde gesprek."
         topic="keratosis-pilaris"
         whatsappHref={DIBA_WHATSAPP_URL}

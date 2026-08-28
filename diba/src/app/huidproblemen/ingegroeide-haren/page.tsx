@@ -159,8 +159,8 @@ export default function Pagina() {
             icoon={Haarzakje}
             label="De haarcheck"
             raster="gelijk"
-            kop="Fel licht,"
-            accent="en vooral niet peuteren."
+            kop="Zo bekijk je"
+            accent="een bultje van dichtbij"
             intro="Dit is een herkenningshulp en geen diagnose. Het brengt je wel bij het onderscheid dat alles bepaalt, en het kost je een lamp en een spiegel."
           />
 
@@ -190,8 +190,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier bultjes"
-            kop="Ze zitten op dezelfde plek,"
-            accent="en dat is verwarrend."
+            kop="Vier soorten bultjes"
+            accent="na het scheren"
             intro="Nek, bikinilijn, benen en kaaklijn zijn de zones waar deze vier allemaal voorkomen. Twee ervan hebben baat bij ontharen en twee niet."
           />
           <SoortKiezer
@@ -230,8 +230,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en de tweede voorkomt een reeks voor niets."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Licht mikt op het pigment in de haarwortel. Dat werkt niet op elke huid en niet op elk haar, en dat stellen we vast voordat je iets afspreekt."
         punten={INGEGROEID_WIJ_DOEN_NIET}
       />
@@ -239,8 +239,8 @@ export default function Pagina() {
       <PillarFaq items={INGEGROEID_FAQ} onderwerp="ingegroeide haren" />
 
       <PillarCta
-        kop="Eerst kijken."
-        accent="Dan pas ontharen."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw huidtype en haarkleur geschikt zijn. Zo niet, dan hoor je dat voordat je iets afspreekt."
         topic="ingegroeide-haren"
         whatsappHref={DIBA_WHATSAPP_URL}

@@ -198,8 +198,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier bultjes"
-            kop="Ze lijken op elkaar,"
-            accent="en dat is het probleem."
+            kop="Wit bolletje of"
+            accent="ontstoken kliertje?"
             intro="Dit is een herkenningshulp en geen diagnose. Het verschil tussen wit en hard aan de ene kant en rood en pijnlijk aan de andere is wel iets dat je zelf kunt zien, en het bepaalt of je hier moet zijn of bij je huisarts."
           />
           <SoortKiezer
@@ -218,8 +218,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en allebei rond het oog."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Het gaat hier om de dunste huid van je lichaam, op enkele millimeters van je oog. De grenzen zijn daarom strakker dan elders op deze site."
         punten={GERSTEKORRELS_WIJ_DOEN_NIET}
       />

@@ -328,9 +328,9 @@ export default function AcnePage() {
             <div>
               <Label opDonker>Waar wij nee zeggen</Label>
               <h2 className="diba-display-m mt-4 max-w-[12ch]">
-                Eerst rust.
+                Waarom we beginnen
                 <br />
-                <span className="diba-accent-on-dark">Dan littekens.</span>
+                <span className="diba-accent-on-dark">bij de ontsteking</span>
               </h2>
             </div>
             <p className="max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">

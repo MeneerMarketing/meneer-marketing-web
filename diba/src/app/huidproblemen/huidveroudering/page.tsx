@@ -182,8 +182,8 @@ export default function HuidverouderingPage() {
         <div className="mx-auto">
           <SectieKop
             label="Vijf sporen"
-            kop="Niet één proces,"
-            accent="maar vijf tegelijk."
+            kop="Wat er bij veroudering"
+            accent="in je huid verandert"
             intro="Huidveroudering is geen schakelaar die op een leeftijd omgaat. Er lopen meerdere dingen naast elkaar, ze beginnen niet tegelijk en ze hebben niet dezelfde oorzaak. Kies een levensfase en kijk wat er dan speelt."
           />
           <WatBegintWanneer />

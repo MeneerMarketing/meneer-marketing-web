@@ -11,7 +11,7 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 464 regels.**
+**Totaal: 467 regels.**
 
 
 ## Voor Okan (19)
@@ -115,9 +115,9 @@ Tekst is geschreven. Akkoord nodig van wie erover gaat.
 - path === ? 1 : 0.7, })); /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde paginas. Ze werden hier gefilterd op een skelet vol dat op geen
   <sub>src/app/sitemap.ts:125</sub>
 
-## Voor Rojda (445)
+## Voor Rojda (448)
 
-### MEDISCHE-CHECK-ROJDA · 445
+### MEDISCHE-CHECK-ROJDA · 448
 
 Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 
@@ -274,7 +274,7 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/behandelingen.ts:389</sub>
 - Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper. De behandeling duurt...
   <sub>src/data/behandelingen.ts:419</sub>
-- Los, vaak vlak voor een gelegenheid. Als kuur meestal vier tot zes.
+- De behandeling kan eenmalig worden gedaan of als kuur van meestal vier tot zes afspraken.
   <sub>src/data/behandelingen.ts:422</sub>
 - [ Verandert niets aan je huid op de lange duur. Het effect is tijdelijk en dat is de hele afspraak
   <sub>src/data/behandelingen.ts:430</sub>
@@ -348,7 +348,7 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/behandelingen.ts:845</sub>
 - Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken.
   <sub>src/data/behandelingen.ts:850</sub>
-- IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms precies wat je wil.
+- IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms wat je wil.
   <sub>src/data/behandelingen.ts:866</sub>
 - Meestal een paar uur rood.
   <sub>src/data/behandelingen.ts:867</sub>
@@ -472,26 +472,32 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Het maakt de huid tijdelijk roder en iets voller, waardoor kuiltjes even minder opvallen. Dat is een uur later weg en het is geen verandering.
   <sub>src/data/cellulitis.ts:129</sub>
 
-**Inhoud: couperose** (9)
+**Inhoud: couperose** (12)
 
-- Een bloedvaatje dat blijvend verwijd is. Het gaat niet vanzelf dicht en trekt niet weg met een crème.
-  <sub>src/data/couperose.ts:61</sub>
-- Veel kleine vaatjes die tegelijk openstaan, meestal als reactie op warmte, inspanning of een trigger. Dit hoort eerder bij rosacea dan bij couperose.
+- Een bloedvaatje dat blijvend is opgerekt. Zon vaatje sluit zich uit zichzelf niet meer, en het zit onder de opperhuid, waar verzorgingsproducten niet komen.
+  <sub>src/data/couperose.ts:57</sub>
+- Veel kleine vaatjes die tegelijk openstaan, meestal als reactie op warmte, inspanning of iets wat je huid aanzet. Dit hoort eerder bij rosacea dan bij couperose.
+  <sub>src/data/couperose.ts:71</sub>
+- Een gloed is een ander mechanisme dan verwijde vaatjes, en het is ook geen voorstadium daarvan. Behandelen alsof het lijntjes zijn levert weinig op.
   <sub>src/data/couperose.ts:75</sub>
-- De combinatie die we het vaakst zien. De lijntjes en de gloed vragen elk om iets anders, en in die volgorde.
+- De combinatie die we het vaakst tegenkomen. De lijntjes en de gloed vragen elk om iets anders, en om een volgorde.
+  <sub>src/data/couperose.ts:85</sub>
+- Dit in één sessie wegwerken lukt niet, ook niet met een sterk apparaat. Reken op een reeks, met tijd ertussen om te zien wat er is veranderd.
   <sub>src/data/couperose.ts:89</sub>
-- [ Een nulmeting onder vast licht, zodat het aantal zichtbare vaatjes vóór en na te vergelijken is, Gericht licht op de vaatjes die blijven staan bij druk, in meerdere sessies, Zonbescherming, elke dag. UV rekt vaatwanden op en is de belangrijkste reden dat er nieuwe bij komen
-  <sub>src/data/couperose.ts:129</sub>
-- Stevig scrubben of borstelen. Het maakt de huid rood zonder één vaatje te sluiten, Hete douches en de sauna vlak na een behandeling. Warmte zet precies aan wat we net gesloten hebben, Camouflage als oplossing verkopen. Groene concealer werkt prima, maar het is make-up en geen behandeling, Een crè...
-  <sub>src/data/couperose.ts:138</sub>
-- Is je huid op dit moment warm, branderig en aan het opvlammen, dan wachten we tot het rustig is. Licht op een aangedane huid maakt de roodheid vaker erger dan beter.
-  <sub>src/data/couperose.ts:147</sub>
-- Een vaatje dat gesloten is, blijft dicht. Wat wél kan gebeuren is dat er nieuwe bij komen, want de aanleg en de triggers veranderen niet door een behandeling. Daarom besteden we net zoveel aandacht aan wat het aanzet als aan wat er nu zichtbaar is.
-  <sub>src/data/couperose.ts:160</sub>
-- Nee, al lopen ze vaak samen. Couperose zijn de zichtbare, blijvend verwijde vaatjes. Rosacea is een ontstekingsbeeld met opvlammingen, soms bultjes en een branderig gevoel. Je kunt de vaatjes hebben zonder rosacea, en rosacea zonder zichtbare vaatjes. Herken je meer dan de vaatjes alleen, lees da...
-  <sub>src/data/couperose.ts:165</sub>
-- Alcohol zet de vaten wijd open en kan een opvlamming uitlokken, maar het is niet de oorzaak van de aanleg. Dat hardnekkige verband zorgt er vooral voor dat mensen zich schamen voor iets waar ze weinig aan konden doen.
-  <sub>src/data/couperose.ts:170</sub>
+- [ Vooraf vastleggen hoeveel vaatjes er zichtbaar zijn, onder vast licht, zodat je het later kunt vergelijken, Gericht licht op de vaatjes die bij druk blijven staan, verdeeld over meerdere sessies, Elke dag zonbescherming. UV rekt vaatwanden verder op en is de belangrijkste reden dat er nieuwe bi...
+  <sub>src/data/couperose.ts:125</sub>
+- [ Stevig scrubben of borstelen. Je huid wordt er roder van terwijl de vaatjes blijven zitten, Een hete douche of de sauna vlak na een vaatbehandeling, omdat warmte de roodheid opnieuw kan opwekken
+  <sub>src/data/couperose.ts:131</sub>
+- Stevig scrubben of borstelen. Je huid wordt er roder van terwijl de vaatjes blijven zitten, Een hete douche of de sauna vlak na een vaatbehandeling, omdat warmte de roodheid opnieuw kan opwekken , Camouflage als behandeling presenteren. Groene concealer maakt roodheid minder zichtbaar en laat de ...
+  <sub>src/data/couperose.ts:134</sub>
+- Voelt je huid warm en branderig en is hij op dit moment aan het opvlammen, dan stellen we de behandeling uit. Licht op een geprikkelde huid maakt de roodheid vaker erger dan beter, en dan ben je verder van huis dan toen je binnenkwam.
+  <sub>src/data/couperose.ts:143</sub>
+- Een vaatje dat gesloten is, blijft dicht. Wat wel gebeurt, is dat er in de loop van de tijd nieuwe bij kunnen komen, want je aanleg en de dingen die je huid aanzetten veranderen niet door een behandeling. Daarom besteden we net zoveel aandacht aan wat de roodheid opwekt als aan wat er nu te zien is.
+  <sub>src/data/couperose.ts:156</sub>
+- Ze lopen vaak samen op, maar het is niet hetzelfde. Couperose zijn de zichtbare, blijvend opgerekte vaatjes. Rosacea is een ontstekingsbeeld met opvlammingen, soms bultjes en een branderig gevoel. Je kunt de vaatjes hebben zonder rosacea, en rosacea zonder zichtbare vaatjes. Herken je meer dan de...
+  <sub>src/data/couperose.ts:161</sub>
+- Alcohol zet de vaten wijd open en kan een opvlamming uitlokken, maar het verklaart de aanleg niet. Dat hardnekkige verband zorgt er vooral voor dat mensen zich schamen voor iets waar ze zelf weinig aan konden doen.
+  <sub>src/data/couperose.ts:166</sub>
 
 **Inhoud: doffe-huid** (11)
 

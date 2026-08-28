@@ -236,7 +236,8 @@ export default async function ApparaatPage({ params }: PageProps) {
         <div className="mx-auto">
           <Label>Wat het wel en niet kan</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
-            Even lang, <span className="diba-accent">en dat is met opzet.</span>
+            Wat een behandeling{" "}
+            <span className="diba-accent">met je huid doet</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Een apparatuurpagina zonder deze rechterkolom is een folder van de

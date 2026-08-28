@@ -121,8 +121,7 @@ export default function PrijzenPage() {
           <div>
             <Label>Per behandeling</Label>
             <h2 className="diba-display-m mt-4">
-              Wat het kost,{" "}
-              <span className="diba-accent">en wat je ervoor krijgt.</span>
+              Wat een behandeling <span className="diba-accent">kost</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Klap een behandeling open en je ziet hoe vaak je moet komen, hoe

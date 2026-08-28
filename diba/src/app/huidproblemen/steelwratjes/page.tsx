@@ -158,8 +158,8 @@ export default function Pagina() {
             icoon={HuidBultje}
             label="De steeltjescheck"
             raster="gelijk"
-            kop="Steeltje, kleur,"
-            accent="en of het onveranderd is."
+            kop="Waar je zelf"
+            accent="naar kunt kijken"
             intro="Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan trekken en niet knijpen: dat is wat mensen thuis doen en waar het misgaat."
           />
 
@@ -189,8 +189,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier uitsteeksels"
-            kop="Een ervan halen wij weg,"
-            accent="en drie niet zomaar."
+            kop="Vier soorten"
+            accent="uitsteeksels"
             intro="Ze zitten op dezelfde plekken en voelen bijna hetzelfde. Het verschil bepaalt of het hier in een kwartier klaar is of dat er eerst iemand anders naar hoort te kijken."
           />
           <SoortKiezer
@@ -232,8 +232,8 @@ export default function Pagina() {
       />
 
       <WijZeggenNee
-        kop="Twee keer nee,"
-        accent="en allebei gaan over wat je daarna niet meer kunt."
+        kop="Wanneer we een behandeling"
+        accent="afraden"
         intro="Wat weg is kan niemand meer bekijken. Dat is de reden dat er hier eerst gekeken wordt en dat moedervlekken buiten deze deur blijven."
         punten={STEELWRAT_WIJ_DOEN_NIET}
       />
@@ -241,8 +241,8 @@ export default function Pagina() {
       <PillarFaq items={STEELWRAT_FAQ} onderwerp="steelwratjes" />
 
       <PillarCta
-        kop="Eerst kijken."
-        accent="Vaak is het zo klaar."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. Blijkt er iets tussen te zitten dat beoordeeld moet worden, dan hoor je dat voordat we beginnen."
         topic="steelwratjes"
         whatsappHref={DIBA_WHATSAPP_URL}

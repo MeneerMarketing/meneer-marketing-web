@@ -239,8 +239,8 @@ export default function MelasmaPage() {
       <PillarFaq items={MELASMA_FAQ} onderwerp="melasma" />
 
       <PillarCta
-        kop="Eerst kijken."
-        accent="Dan pas beslissen."
+        kop="Plan een intake"
+        accent="bij Diba Clinics"
         tekst="We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je dat en raden we behandelen af. Zit het hoog, dan weet je meteen wat er te halen valt en wat het vraagt."
         topic="melasma"
         whatsappHref={DIBA_WHATSAPP_URL}
