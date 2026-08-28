@@ -132,9 +132,18 @@ export function HuidStrakker(props: HuidIconProps) {
       <path d="M1.5 20.2c7.5 0 14-2.6 22.5-2.6s15 2.6 22.5 2.6" />
       <path d="M1.5 25.4h45" />
       {/* De diepere lagen, in halfsteens verband zodat het weefsel oogt en geen liniaal. */}
-      <path d="M1.5 31h3.4M9.6 31h7M23.1 31h6.7M35.5 31h6.6M46.5 31h0" strokeWidth="2.2" />
-      <path d="M5.6 36.4h6.5M18.2 36.4h6.6M31 36.4h6.6M43.4 36.4h3.1" strokeWidth="2.2" />
-      <path d="M1.5 41.8h3.4M9.6 41.8h7M23.1 41.8h6.7M35.5 41.8h6.6" strokeWidth="2.2" />
+      <path
+        d="M1.5 31h3.4M9.6 31h7M23.1 31h6.7M35.5 31h6.6M46.5 31h0"
+        strokeWidth="2.2"
+      />
+      <path
+        d="M5.6 36.4h6.5M18.2 36.4h6.6M31 36.4h6.6M43.4 36.4h3.1"
+        strokeWidth="2.2"
+      />
+      <path
+        d="M1.5 41.8h3.4M9.6 41.8h7M23.1 41.8h6.7M35.5 41.8h6.6"
+        strokeWidth="2.2"
+      />
     </svg>
   );
 }
@@ -172,9 +181,18 @@ export function HuidGlans(props: HuidIconProps) {
       <path d="M1.5 25.2h45" />
       {/* De golf: een huid die licht in één richting terugkaatst in plaats van verstrooit. */}
       <path d="M1.5 29.6c3.8 0 3.8 3.6 7.5 3.6s3.8-3.6 7.5-3.6 3.8 3.6 7.5 3.6 3.8-3.6 7.5-3.6 3.8 3.6 7.5 3.6 3.8-3.6 7.5-3.6" />
-      <path d="M1.5 37.4h2.8M9.4 37.4h2.8M17.3 37.4h2.8M25.2 37.4h2.8M33.1 37.4h2.8M41 37.4h2.8" strokeWidth="2.2" />
-      <path d="M5.4 42h2.8M13.3 42h2.8M21.2 42h2.8M29.1 42h2.8M37 42h2.8" strokeWidth="2.2" />
-      <path d="M9.4 46.5h2.8M17.3 46.5h2.8M25.2 46.5h2.8M33.1 46.5h2.8" strokeWidth="2.2" />
+      <path
+        d="M1.5 37.4h2.8M9.4 37.4h2.8M17.3 37.4h2.8M25.2 37.4h2.8M33.1 37.4h2.8M41 37.4h2.8"
+        strokeWidth="2.2"
+      />
+      <path
+        d="M5.4 42h2.8M13.3 42h2.8M21.2 42h2.8M29.1 42h2.8M37 42h2.8"
+        strokeWidth="2.2"
+      />
+      <path
+        d="M9.4 46.5h2.8M17.3 46.5h2.8M25.2 46.5h2.8M33.1 46.5h2.8"
+        strokeWidth="2.2"
+      />
     </svg>
   );
 }
@@ -272,3 +290,292 @@ export const HUIDICONEN = {
 } as const;
 
 export type HuidIconNaam = keyof typeof HUIDICONEN;
+
+/* ══ De uitbreiding ══════════════════════════════════════════════════════
+   Acht iconen dekten zeven pagina's, en dat is te weinig om ergens een patroon te vormen:
+   op het raster van /huidproblemen staan achtentwintig kaarten. Hieronder de rest, in
+   dezelfde taal.
+
+   Waar de eerste acht een porie in doorsnede tonen, werken de meeste van deze op het
+   oppervlak: een huidlijn met daaronder de lagen, en daarop of daarin het ene ding dat dat
+   huidprobleem onderscheidt. Dat is dezelfde keuze als op de pagina's zelf, waar telkens
+   één waarneming het verschil maakt.                                                    */
+
+/** De huid van opzij, zonder porie. De ondergrond voor alles wat op het oppervlak speelt. */
+function Huidlijn({ y = 24 }: { y?: number }) {
+  return (
+    <>
+      <path d={`M1.5 ${y}h45`} />
+      <path
+        d={`M1.5 ${y + 6}h3.4M9.6 ${y + 6}h7M23.1 ${y + 6}h6.7M35.5 ${y + 6}h6.6`}
+        strokeWidth="2.2"
+      />
+      <path
+        d={`M5.6 ${y + 11.4}h6.5M18.2 ${y + 11.4}h6.6M31 ${y + 11.4}h6.6`}
+        strokeWidth="2.2"
+      />
+    </>
+  );
+}
+
+/** Een ontstoken porie: gevuld, met een koepel boven de huid. Voor acne. */
+export function AcneBult(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 24h14.2" />
+      <path d="M32.3 24h14.2" />
+      <path d="M15.7 24c1.4 3.4 1.4 7.6 0 10.6M32.3 24c-1.4 3.4-1.4 7.6 0 10.6" />
+      <path d="M15.7 34.6c2.8 4.2 13.8 4.2 16.6 0" />
+      <path d="M15.9 23.6a8.1 8.1 0 0 1 16.2 0" />
+      <circle cx="24" cy="30" r="3.2" fill="currentColor" stroke="none" />
+      <path d="M24 9.4v4M14.6 12.8l2.6 3M33.4 12.8l-2.6 3" />
+    </svg>
+  );
+}
+
+/** Een kuiltje in de huid. Voor acnelittekens. */
+export function HuidPutje(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 20h15.8c3.4 0 3.6 8.6 6.7 8.6s3.3-8.6 6.7-8.6h15.8" />
+      <Huidlijn y={33} />
+      <path d="M12.6 11.4 16 14.8M35.4 11.4 32 14.8" />
+    </svg>
+  );
+}
+
+/** Een vouw die blijft staan. Voor rimpels en fijne lijntjes. */
+export function HuidVouw(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 16h14.6c2.8 0 4 5.6 7.9 5.6s5.1-5.6 7.9-5.6h14.6" />
+      <path d="M1.5 25.4h45" />
+      <path
+        d="M1.5 32.6h3.4M9.6 32.6h7M23.1 32.6h6.7M35.5 32.6h6.6"
+        strokeWidth="2.2"
+      />
+      <path
+        d="M5.6 39.4h6.5M18.2 39.4h6.6M31 39.4h6.6M43.4 39.4h3.1"
+        strokeWidth="2.2"
+      />
+    </svg>
+  );
+}
+
+/** Een oog met een zwelling eronder. Voor wallen. */
+export function OogWal(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M4.5 18.5c5.4-6.4 13-9.6 19.5-9.6s14.1 3.2 19.5 9.6" />
+      <circle cx="24" cy="18.2" r="5.4" />
+      <path d="M8.6 27.4c4.4 8.6 26.4 8.6 30.8 0" />
+      <path d="M12.4 33.6c3.6 5.2 19.6 5.2 23.2 0" />
+    </svg>
+  );
+}
+
+/** Een oog met schaduw eronder. Voor donkere kringen. */
+export function OogSchaduw(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M4.5 18.5c5.4-6.4 13-9.6 19.5-9.6s14.1 3.2 19.5 9.6" />
+      <circle cx="24" cy="18.2" r="5.4" />
+      <path d="M9.8 26.6c4 7.4 24.4 7.4 28.4 0" strokeDasharray="3.2 3" />
+      <path d="M13.6 32.4c3.2 4.6 17.6 4.6 20.8 0" strokeDasharray="3.2 3" />
+      <path d="M17.4 38c2.2 2.8 11 2.8 13.2 0" strokeDasharray="3.2 3" />
+    </svg>
+  );
+}
+
+/** Eén platte vlek in de huid. Voor ouderdoms- en zonnevlekken. */
+export function HuidVlek(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M24 4.6v4.2M13.2 8.4l2.6 3.4M34.8 8.4l-2.6 3.4" />
+      <Huidlijn y={22} />
+      <ellipse
+        cx="24"
+        cy="22"
+        rx="8.6"
+        ry="3.4"
+        fill="currentColor"
+        stroke="none"
+      />
+    </svg>
+  );
+}
+
+/** Vlekken op twee dieptes: wat je ziet en wat er nog onder ligt. Voor pigmentvlekken. */
+export function PigmentDiepte(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 15h45" />
+      <ellipse
+        cx="14.6"
+        cy="15"
+        rx="5.4"
+        ry="2.6"
+        fill="currentColor"
+        stroke="none"
+      />
+      <ellipse
+        cx="33.4"
+        cy="15"
+        rx="4.2"
+        ry="2.2"
+        fill="currentColor"
+        stroke="none"
+      />
+      <path d="M1.5 27h45" />
+      <ellipse cx="22" cy="27" rx="6.2" ry="2.6" strokeDasharray="2.6 2.4" />
+      <ellipse cx="39" cy="27" rx="4.4" ry="2.2" strokeDasharray="2.6 2.4" />
+      <path
+        d="M1.5 38.6h3.4M9.6 38.6h7M23.1 38.6h6.7M35.5 38.6h6.6"
+        strokeWidth="2.2"
+      />
+    </svg>
+  );
+}
+
+/** Twee symmetrische vlakken op de wangen. Voor melasma. */
+export function MelasmaVlak(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M24 6.4c9.4 0 16.6 6.8 16.6 16.4 0 10.6-7.6 19-16.6 19S7.4 33.4 7.4 22.8C7.4 13.2 14.6 6.4 24 6.4Z" />
+      <path
+        d="M11.4 20c3.6-1.6 6.8-1.2 8.6 1.4 1.6 2.4 1 5.4-1.4 6.8-2.6 1.4-6.2.4-7.8-2.2"
+        strokeDasharray="3 2.6"
+      />
+      <path
+        d="M36.6 20c-3.6-1.6-6.8-1.2-8.6 1.4-1.6 2.4-1 5.4 1.4 6.8 2.6 1.4 6.2.4 7.8-2.2"
+        strokeDasharray="3 2.6"
+      />
+    </svg>
+  );
+}
+
+/** Een diffuse gloed zonder losse lijntjes. Voor rosacea. */
+export function HuidGloed(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M24 3.4v4.4M11.6 7.6l2.8 3.4M36.4 7.6l-2.8 3.4M3.6 17.4l4.2 1.4M44.4 17.4l-4.2 1.4" />
+      <path
+        d="M9.4 24.6c2.6-4 6.6-6 9.6-4.6 2.4 1.2 3 4 1.6 6.4-1.2 2-3.6 2.8-5.6 1.8"
+        strokeDasharray="3.4 2.8"
+      />
+      <path
+        d="M38.6 24.6c-2.6-4-6.6-6-9.6-4.6-2.4 1.2-3 4-1.6 6.4 1.2 2 3.6 2.8 5.6 1.8"
+        strokeDasharray="3.4 2.8"
+      />
+      <Huidlijn y={33} />
+    </svg>
+  );
+}
+
+/** Een vertakt vaatje dat blijft staan. Voor couperose. */
+export function VaatjeLijn(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 18h45" />
+      <path d="M9.4 18c3.6 1.4 5.2 4.4 6.6 7.6 1.2 2.8 2.8 5 5.6 6.2" />
+      <path d="M16 25.6c2.6-1.2 5-1 7.2.8" />
+      <path d="M32.4 18c-2.4 2.6-3 5.8-2.4 9.2.4 2.4 1.8 4.4 4 5.6" />
+      <path d="M30.4 24.4c2.4-.4 4.6.4 6.4 2.4" />
+      <path
+        d="M1.5 39h3.4M9.6 39h7M23.1 39h6.7M35.5 39h6.6"
+        strokeWidth="2.2"
+      />
+    </svg>
+  );
+}
+
+/** Een naad in de huid. Voor littekens en striae. */
+export function LittekenNaad(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 22h17.2" />
+      <path d="M29.2 22h17.3" />
+      <path d="M18.7 22c1.4 3 3.6 4.4 5.3 4.4s3.9-1.4 5.2-4.4" />
+      <path d="M15.6 14.4 20.4 19M32.4 14.4 27.6 19" />
+      <path d="M15.6 29.6 20.4 25M32.4 29.6 27.6 25" />
+      <Huidlijn y={36} />
+    </svg>
+  );
+}
+
+/** Een rij kleine ruwe bultjes. Voor keratosis pilaris. */
+export function RuweBultjes(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 24h3.6c2.4 0 2.6-4.6 5.4-4.6s3 4.6 5.4 4.6h1.4c2.4 0 2.6-4.6 5.4-4.6s3 4.6 5.4 4.6h1.4c2.4 0 2.6-4.6 5.4-4.6s3 4.6 5.4 4.6h1.4c2.4 0 2.6-4.6 5.4-4.6" />
+      <Huidlijn y={31} />
+    </svg>
+  );
+}
+
+/** Een barrière met gaten erin. Voor een gevoelige huid. */
+export function BarriereGat(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 20h8.4M16.4 20h6.2M29.2 20h5.6M41.4 20h5.1" />
+      <path d="M1.5 26.4h45" />
+      <path d="M13.2 14.6v-4.4M31.9 14.6v-4.4M37 15.6l2.4-3.6M11 15.6 8.6 12" />
+      <path
+        d="M1.5 34h3.4M9.6 34h7M23.1 34h6.7M35.5 34h6.6"
+        strokeWidth="2.2"
+      />
+      <path
+        d="M5.6 40.4h6.5M18.2 40.4h6.6M31 40.4h6.6M43.4 40.4h3.1"
+        strokeWidth="2.2"
+      />
+    </svg>
+  );
+}
+
+/** Schilfers die loslaten. Voor eczeem en schilferende beelden. */
+export function HuidSchilfer(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 24h6.8" />
+      <path d="M8.3 24c1.6-3.4 5.4-4.6 7.8-2.4" />
+      <path d="M16.1 21.6c2-3.2 6-3.8 8.2-1.2" />
+      <path d="M24.3 20.4c2.2-2.8 6-2.8 8 .4" />
+      <path d="M32.3 20.8c2-2.4 5.6-2 7.2 1" />
+      <path d="M39.5 21.8c1.6-1.6 4.4-1 5.4 1.2" />
+      <path d="M44.9 23h1.6" />
+      <Huidlijn y={30} />
+    </svg>
+  );
+}
+
+/** Een moedervlek onder een vergrootglas. Voor moedervlekken en controle. */
+export function MoedervlekLoep(props: HuidIconProps) {
+  return (
+    <svg {...svgProps(props)}>
+      <path d="M1.5 34h45" />
+      <ellipse
+        cx="12"
+        cy="34"
+        rx="4.4"
+        ry="2.2"
+        fill="currentColor"
+        stroke="none"
+      />
+      <ellipse
+        cx="38"
+        cy="34"
+        rx="3.4"
+        ry="1.8"
+        fill="currentColor"
+        stroke="none"
+      />
+      <circle cx="25" cy="20" r="10.4" />
+      <path d="M32.4 27.4 40 35" />
+      <ellipse cx="25" cy="20" rx="5" ry="3.6" strokeDasharray="2.8 2.6" />
+      <path
+        d="M1.5 42h3.4M9.6 42h7M23.1 42h6.7M35.5 42h6.6"
+        strokeWidth="2.2"
+      />
+    </svg>
+  );
+}
