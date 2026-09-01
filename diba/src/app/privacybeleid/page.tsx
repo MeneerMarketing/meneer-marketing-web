@@ -55,7 +55,9 @@ import {
  * Of er een apart e-mailadres voor privacyverzoeken komt; zolang dat er niet is wijst de
  * pagina naar het algemene adres en dat staat er dan ook zo.
  *
- * De u-vorm mag hier: dit is een juridische pagina.
+ * Hier stond eerst "u", omdat een juridische tekst er zo uitziet. Dat liet de toon precies
+ * omslaan waar iemand wil weten wat er met zijn gegevens gebeurt. De stijlgids kent hier
+ * geen uitzondering, dus staat er nu "je", zoals op de rest van de site.
  *
  * Eén donkergroen vlak: je rechten (§5).
  */
@@ -63,7 +65,7 @@ import {
 export const metadata: Metadata = {
   title: "Privacybeleid",
   description:
-    "Deze website verzamelt zelf niets. Waar uw gegevens wel terechtkomen, wat daar gebeurt en welke rechten u heeft.",
+    "Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.",
   robots: { index: true, follow: true },
 };
 
@@ -77,29 +79,29 @@ const PLEKKEN = [
   {
     plek: "Deze website",
     van: "Ons",
-    wat: "Twee dingen, en allebei blijven ze in uw eigen browser: de keuze die u op de cookiebalk maakt, en het huidprofiel als u dat invult. Dat profiel bestaat uit keuzes uit lijstjes, zonder naam, mailadres of foto.",
-    heen: "Nergens heen. Er is op deze site geen formulier en geen server die dit ontvangt. Wist u uw browsergegevens, dan is het weg.",
+    wat: "Twee dingen, en allebei blijven ze in je eigen browser: de keuze die je op de cookiebalk maakt, en het huidprofiel als je dat invult. Dat profiel bestaat uit keuzes uit lijstjes, zonder naam, mailadres of foto.",
+    heen: "Nergens heen. Er is op deze site geen formulier en geen server die dit ontvangt. Wis je je browsergegevens, dan is het weg.",
     hier: true,
   },
   {
     plek: "Salonized",
     van: "Boekingssysteem",
-    wat: "Uw afspraakgegevens en de contactgegevens die u bij het boeken invult. Ook de reviews die u achterlaat, want die worden daar verzameld.",
-    heen: "Naar Salonized als verwerker, voor het plannen van afspraken en het bijhouden van uw traject.",
+    wat: "Je afspraakgegevens en de contactgegevens die je bij het boeken invult. Ook de reviews die je achterlaat, want die worden daar verzameld.",
+    heen: "Naar Salonized als verwerker, voor het plannen van afspraken en het bijhouden van je traject.",
     hier: false,
   },
   {
     plek: "WhatsApp",
     van: "Berichtenverkeer",
-    wat: "Wat u ons stuurt, inclusief foto's als u die meestuurt bij een vraag over nazorg.",
-    heen: "Via WhatsApp, dat een eigen privacybeleid heeft waar wij niet over gaan. Wilt u iets gevoeligs delen, bel dan liever.",
+    wat: "Wat je ons stuurt, inclusief foto's als je die meestuurt bij een vraag over nazorg.",
+    heen: "Via WhatsApp, dat een eigen privacybeleid heeft waar wij niet over gaan. Wil je iets gevoeligs delen, bel dan liever.",
     hier: false,
   },
   {
     plek: "In de kliniek",
-    van: "Uw dossier",
-    wat: "Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen u heeft gehad en hoe uw huid reageerde.",
-    heen: "Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die u behandelen kijken erin.",
+    van: "Je dossier",
+    wat: "Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen je hebt gehad en hoe je huid reageerde.",
+    heen: "Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die je behandelen kijken erin.",
     hier: false,
   },
 ] as const;
@@ -112,7 +114,7 @@ const PLEKKEN = [
  */
 const TERMIJNEN = [
   {
-    wat: "Uw behandeldossier",
+    wat: "Je behandeldossier",
     hoelang: "Twintig jaar",
     grond:
       "Wettelijk verplicht op grond van de WGBO (artikel 7:454 BW), gerekend vanaf de laatste wijziging in het dossier. Dit is geen termijn die wij korter mogen maken. [MEDISCHE-CHECK-ROJDA]",
@@ -121,7 +123,7 @@ const TERMIJNEN = [
     wat: "Foto's die bij een behandeling horen",
     hoelang: "Twintig jaar",
     grond:
-      "Die horen bij het dossier en vallen onder dezelfde plicht. Foto's die u ons apart heeft toegestaan te gebruiken buiten uw dossier, verwijderen wij zodra u die toestemming intrekt. [MEDISCHE-CHECK-ROJDA]",
+      "Die horen bij het dossier en vallen onder dezelfde plicht. Foto's die je ons apart hebt toegestaan te gebruiken buiten je dossier, verwijderen wij zodra je die toestemming intrekt. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     wat: "Facturen en administratie",
@@ -129,7 +131,7 @@ const TERMIJNEN = [
     grond: "De fiscale bewaarplicht van de Belastingdienst.",
   },
   {
-    wat: "Wat u ons appt of mailt",
+    wat: "Wat je ons appt of mailt",
     hoelang: "Zolang het gesprek loopt, daarna opgeruimd",
     grond:
       "Geen verplichting; wij bewaren het alleen zolang het ergens toe dient.",
@@ -138,7 +140,7 @@ const TERMIJNEN = [
     wat: "Meetgegevens van deze website",
     hoelang: "Maximaal veertien maanden",
     grond:
-      "Alleen als u de cookiebalk heeft geaccepteerd. Weigert u, dan wordt er niets gemeten en is er dus niets te bewaren.",
+      "Alleen als je de cookiebalk hebt geaccepteerd. Weiger je, dan wordt er niets gemeten en is er dus niets te bewaren.",
   },
 ] as const;
 
@@ -146,7 +148,7 @@ const TERMIJNEN = [
 const RECHTEN = [
   {
     kop: "Inzien",
-    zin: "U mag opvragen welke gegevens er van u zijn en wat ermee gebeurt.",
+    zin: "Je mag opvragen welke gegevens er van je zijn en wat ermee gebeurt.",
   },
   {
     kop: "Corrigeren",
@@ -158,15 +160,15 @@ const RECHTEN = [
   },
   {
     kop: "Bezwaar maken",
-    zin: "Tegen een verwerking waar u het niet mee eens bent.",
+    zin: "Tegen een verwerking waar je het niet mee eens bent.",
   },
   {
     kop: "Meenemen",
-    zin: "Uw gegevens in een leesbaar bestand opvragen om ze ergens anders te gebruiken.",
+    zin: "Je gegevens in een leesbaar bestand opvragen om ze ergens anders te gebruiken.",
   },
   {
     kop: "Klagen",
-    zin: "Komt u er met ons niet uit, dan kunt u terecht bij de Autoriteit Persoonsgegevens. Dat recht heeft u altijd, ook zonder eerst bij ons te klagen.",
+    zin: "Kom je er met ons niet uit, dan kun je terecht bij de Autoriteit Persoonsgegevens. Dat recht heb je altijd, ook zonder eerst bij ons te klagen.",
   },
 ];
 
@@ -203,11 +205,11 @@ export default function PrivacyPage() {
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               Er staat geen enkel formulier op {DIBA_SITE.domain}. Geen
-              nieuwsbrief, geen contactformulier, geen veld waar u uw mailadres
+              nieuwsbrief, geen contactformulier, geen veld waar je je mailadres
               achterlaat. Er is dus ook niets dat naar ons toe gestuurd wordt.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Dat betekent niet dat er nergens gegevens van u zijn. Ze staan
+              Dat betekent niet dat er nergens gegevens van je zijn. Ze staan
               alleen ergens anders, en hieronder staat waar.
             </p>
           </div>
@@ -222,7 +224,7 @@ export default function PrivacyPage() {
               {DIBA_ADDRESS.postalCode} {DIBA_ADDRESS.city}
             </address>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              Vragen over uw gegevens gaan naar{" "}
+              Vragen over je gegevens gaan naar{" "}
               <a
                 href={`mailto:${DIBA_EMAIL}`}
                 className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
@@ -243,7 +245,7 @@ export default function PrivacyPage() {
           <div>
             <Label>Vier plekken</Label>
             <h2 className="diba-display-m mt-4">
-              Waar uw gegevens{" "}
+              Waar je gegevens{" "}
               <span className="diba-accent">wel terechtkomen.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -293,7 +295,7 @@ export default function PrivacyPage() {
         </div>
       </section>
 
-      {/* ── Uw rechten ── */}
+      {/* ── Je rechten ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Hoe lang het blijft</Label>
@@ -346,7 +348,7 @@ export default function PrivacyPage() {
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
-              <Label opDonker>Wat u kunt vragen</Label>
+              <Label opDonker>Wat je kunt vragen</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
                 Zes rechten,{" "}
                 <span className="diba-accent-on-dark">
@@ -355,7 +357,7 @@ export default function PrivacyPage() {
                 </span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
-                U hoeft niet uit te zoeken bij welke partij iets staat. Stel de
+                Je hoeft niet uit te zoeken bij welke partij iets staat. Stel de
                 vraag bij ons, dan zoeken wij het uit.
               </p>
             </div>
@@ -390,20 +392,20 @@ export default function PrivacyPage() {
           <div>
             <Label>Wat er niet gebeurt</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Geen profiel,
+              Wij bouwen geen profielen
               <br />
-              <span className="diba-accent">geen verkoop.</span>
+              <span className="diba-accent">en verkopen niets</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Er worden geen advertentieprofielen van u opgebouwd en er wordt
+              Er worden geen advertentieprofielen van je opgebouwd en er wordt
               niets doorverkocht of geruild. De enige meting op deze site is
-              anonieme statistiek, en die laadt pas nadat u daar akkoord voor
+              anonieme statistiek, en die laadt pas nadat je daar akkoord voor
               geeft; zonder akkoord worden die scripts niet ingeladen.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Uw huidprofiel wordt bewust niet naar ons gestuurd. Dat is de plek
+              Je huidprofiel wordt bewust niet naar ons gestuurd. Dat is de plek
               waar de verleiding het grootst is om alvast een mailadres te
               vragen, en daarom gebeurt het niet.
             </p>
@@ -412,7 +414,7 @@ export default function PrivacyPage() {
                 href="/cookiebeleid"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
               >
-                Beheer uw cookiekeuze
+                Beheer je cookiekeuze
               </Link>
               <a
                 href={DIBA_WHATSAPP_URL}
@@ -420,7 +422,7 @@ export default function PrivacyPage() {
                 rel="noopener noreferrer"
                 className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Of stel uw vraag via WhatsApp
+                Of stel je vraag via WhatsApp
               </a>
             </div>
             <p className="mt-8 text-[14px] leading-6 text-[var(--t-muted)]">

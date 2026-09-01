@@ -42,7 +42,9 @@ import {
  * pagina die er iets over beweert dat niet klopt. Het staat er ook zo op het scherm, want
  * een lezer die die paragraaf zoekt hoort te weten dat hij er nog niet is.
  *
- * De u-vorm mag hier: dit is een juridische pagina.
+ * Hier stond eerst "u", omdat een juridische tekst er zo uitziet. Dat liet de toon precies
+ * omslaan waar iemand wil weten wat er met zijn gegevens gebeurt. De stijlgids kent hier
+ * geen uitzondering, dus staat er nu "je", zoals op de rest van de site.
  *
  * Eén donkergroen vlak: wat altijd geldt (§5).
  */
@@ -50,7 +52,7 @@ import {
 export const metadata: Metadata = {
   title: "Algemene voorwaarden",
   description:
-    "Wat er gebeurt als u afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.",
+    "Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.",
   robots: { index: true, follow: true },
 };
 
@@ -91,9 +93,10 @@ export default function VoorwaardenPage() {
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              U komt hier waarschijnlijk omdat er iets aan de hand is. U moet
-              afzeggen, u bent te laat, of u heeft een bedrag gezien dat u niet
-              verwachtte. Daarom staan hieronder situaties en geen artikelen.
+              Je komt hier waarschijnlijk omdat er iets aan de hand is. Je moet
+              afzeggen, je bent te laat, of je hebt een bedrag gezien dat je
+              niet verwachtte. Daarom staan hieronder situaties en geen
+              artikelen.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               Bij elke situatie staat wat het kost en waarom de regel er is. Dat
@@ -104,8 +107,8 @@ export default function VoorwaardenPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
             <Label>De korte versie</Label>
             <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
-              Tot {AFSPRAKEN.annulerenUren} uur van tevoren afzeggen kost u
-              niets, en u hoeft geen reden te geven.
+              Tot {AFSPRAKEN.annulerenUren} uur van tevoren afzeggen kost je
+              niets, en je hoeft geen reden te geven.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
               Daarna wordt een deel van het tarief in rekening gebracht, omdat
@@ -179,7 +182,7 @@ export default function VoorwaardenPage() {
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Dit zijn geen bepalingen maar toezeggingen. Ze staan hier zodat
-                ze ook meetellen wanneer u de voorwaarden erbij pakt.
+                ze ook meetellen wanneer je de voorwaarden erbij pakt.
               </p>
             </div>
 
@@ -215,17 +218,17 @@ export default function VoorwaardenPage() {
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               Een paragraaf over aansprakelijkheid. Die formulering is juridisch
               werk en hoort van een jurist te komen, niet van ons. Zolang hij er
-              niet staat, doen we er ook geen halve uitspraak over: dan weet u
-              tenminste dat hij ontbreekt in plaats van dat u iets leest waar u
-              niets aan heeft.
+              niet staat, doen we er ook geen halve uitspraak over: dan weet je
+              tenminste dat hij ontbreekt in plaats van dat je iets leest waar
+              je niets aan heeft.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
               Ook de termijnen en bedragen op deze pagina zijn in deze versie
-              nog een voorstel. Wat er bij uw afspraak is afgesproken en op uw
+              nog een voorstel. Wat er bij je afspraak is afgesproken en op je
               bevestiging staat, gaat voor op wat hier staat.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Heeft u een vraag over deze voorwaarden, stel hem dan gewoon.{" "}
+              Heb je een vraag over deze voorwaarden, stel hem dan gewoon.{" "}
               {DIBA_NAP.name} is bereikbaar op {DIBA_TELEFOON} en via WhatsApp.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
