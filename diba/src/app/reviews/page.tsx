@@ -78,9 +78,9 @@ export default function ReviewsPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Allemaal vijf sterren.
+              Wat klanten
               <br />
-              <span className="diba-accent">Wees daar wantrouwig over.</span>
+              <span className="diba-accent">over ons schrijven</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

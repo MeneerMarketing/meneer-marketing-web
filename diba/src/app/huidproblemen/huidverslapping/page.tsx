@@ -103,9 +103,9 @@ export default function Pagina() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Ga even liggen.
+              Een vagere kaaklijn
               <br />
-              <span className="diba-accent">Dat is je bovengrens.</span>
+              <span className="diba-accent">en zakkende wangen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

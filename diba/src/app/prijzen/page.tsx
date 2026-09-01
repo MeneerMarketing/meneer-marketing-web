@@ -55,9 +55,9 @@ export default function PrijzenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[14ch]">
-              Alles staat er.
+              Alle prijzen
               <br />
-              <span className="diba-accent">Ook wat duur is.</span>
+              <span className="diba-accent">op één plek</span>
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">

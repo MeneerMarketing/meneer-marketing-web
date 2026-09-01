@@ -49,7 +49,9 @@ import {
  */
 
 export const metadata: Metadata = {
-  title: "Rosacea en couperose behandelen in Rotterdam",
+  title: "Rosacea behandelen in Rotterdam",
+  description:
+    "Rosacea is te sturen: minder opvlammingen en een rustiger basiskleur. Welke triggers je zelf in de hand hebt en wat een behandeling kan toevoegen.",
 };
 
 const PAD = "/huidproblemen/rosacea";
@@ -130,19 +132,21 @@ export default function RosaceaPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Rosacea gaat niet weg.
+              Een rode, gevoelige huid
               <br />
-              <span className="diba-accent">Het is wel te sturen.</span>
+              <span className="diba-accent">die steeds opvlamt</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              We beginnen liever met die zin dan dat je hem na vijf sessies van
-              ons hoort. Wat wél kan: minder opvlammingen, minder zichtbare
-              adertjes, een rustiger basiskleur.
+              Rosacea is een aandoening die blijft, en dat zeggen we liever nu
+              dan na vijf sessies. Wat er wel te bereiken valt is een rustiger
+              basiskleur, minder opvlammingen en minder zichtbare adertjes. Voor
+              veel mensen scheelt dat meer dan ze verwachten.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              En je hoeft hier niets uit te leggen over hoe snel je rood wordt.
+              Over hoe snel je rood wordt hoef je hier trouwens niets uit te
+              leggen. Dat kennen we.
             </p>
 
             {/* De andere kant van de kruisverwijzing. Zonder dit is de couperosepagina
@@ -216,7 +220,7 @@ export default function RosaceaPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Welke soort litteken"
+            kop="Welke vorm van rosacea"
             accent="herken je?"
             intro="Rosacea kent stadia die om een andere aanpak vragen. Bij twee ervan is ons antwoord dat je bij de dermatoloog hoort. Dat staat er dan ook, want dat is sneller dan eerst een traject bij ons."
           />

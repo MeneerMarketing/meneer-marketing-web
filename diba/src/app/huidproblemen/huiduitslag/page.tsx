@@ -85,9 +85,9 @@ export default function HuiduitslagPage() {
           </nav>
 
           <h1 className="diba-display-l mt-6 max-w-[18ch]">
-            Eén vraag telt eerst:
+            Huiduitslag, en wanneer
             <br />
-            <span className="diba-accent">vandaag of morgen.</span>
+            <span className="diba-accent">het haast heeft</span>
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">

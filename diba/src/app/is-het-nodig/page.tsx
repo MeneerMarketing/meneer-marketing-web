@@ -85,9 +85,9 @@ export default function IsHetNodigPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[13ch]">
-              Soms is het
+              Is een behandeling
               <br />
-              <span className="diba-accent">antwoord nee.</span>
+              <span className="diba-accent">in jouw geval nodig?</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

@@ -69,9 +69,9 @@ export default function ApparatuurPage() {
           </nav>
 
           <h1 className="diba-display-l mt-8 max-w-[16ch]">
-            {APPARATUUR.length} apparaten.
+            De apparatuur
             <br />
-            <span className="diba-accent">Geen van alle een belofte.</span>
+            <span className="diba-accent">in onze kliniek</span>
           </h1>
 
           <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">

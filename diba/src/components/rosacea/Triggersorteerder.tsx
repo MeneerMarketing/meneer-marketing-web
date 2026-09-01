@@ -27,16 +27,16 @@ import { publicCopy } from "@/lib/copy-flags";
 
 const GROEP_INFO = {
   beinvloedbaar: {
-    kop: "Hier zit een knop",
+    kop: "Hier heb je zelf invloed op",
     toelichting:
-      "Dit kun je zelf beïnvloeden. Dat is geen schuld, dat is een hefboom.",
+      "Aan deze triggers kun je iets veranderen, en dat levert vaak het meeste op.",
     kleur: "var(--g-700)",
     vlak: "var(--g-050)",
   },
   "niet-beinvloedbaar": {
-    kop: "Hier zit geen knop",
+    kop: "Hier ligt het buiten je hand",
     toelichting:
-      "Deze trigger kun je niet altijd vermijden. Een behandeling kan dan helpen om de klachten beter te beheersen.",
+      "Deze triggers zijn lastig te vermijden. Een behandeling kan dan helpen om de klachten beter te beheersen.",
     kleur: "var(--warn)",
     vlak: "var(--warn-vlak)",
   },

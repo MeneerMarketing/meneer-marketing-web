@@ -196,9 +196,9 @@ export default function PrivacyPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Deze website
+              Hoe we omgaan
               <br />
-              <span className="diba-accent">verzamelt niets.</span>
+              <span className="diba-accent">met je gegevens</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

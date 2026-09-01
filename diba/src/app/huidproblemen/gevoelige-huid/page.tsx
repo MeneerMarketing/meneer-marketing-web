@@ -91,9 +91,9 @@ export default function GevoeligeHuidPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Meestal geen type.
+              Een huid die
               <br />
-              <span className="diba-accent">Meestal een gevolg.</span>
+              <span className="diba-accent">snel reageert</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

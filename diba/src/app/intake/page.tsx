@@ -105,9 +105,9 @@ export default function IntakePage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[16ch]">
-              Eerst kijken.
+              Wat er in een
               <br />
-              <span className="diba-accent">Nog niets doen.</span>
+              <span className="diba-accent">intake gebeurt</span>
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">

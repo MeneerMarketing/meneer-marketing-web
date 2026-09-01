@@ -101,11 +101,9 @@ export default function SnurkenPage() {
             {/* De kop stelt de vraag die de hele pagina ordent. Niet "wij behandelen
                 snurken", want dat is pas het antwoord op de tweede vraag. */}
             <h1 className="diba-display-l mt-6">
-              Snurken is geluid.
+              Snurken dat je
               <br />
-              <span className="diba-accent">
-                De vraag is waar het ontstaat.
-              </span>
+              <span className="diba-accent">nachten verstoort</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

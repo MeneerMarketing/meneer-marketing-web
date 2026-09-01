@@ -114,9 +114,9 @@ export default function AcneLittekensPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Vaak is het geen litteken.
+              Wat er na acne
               <br />
-              <span className="diba-accent">Vaak is het kleur.</span>
+              <span className="diba-accent">op je huid achterblijft</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

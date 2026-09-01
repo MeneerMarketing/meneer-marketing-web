@@ -80,9 +80,9 @@ export default function TeamPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[14ch]">
-              {TEAM.length} mensen.
+              De mensen die
               <br />
-              <span className="diba-accent">Dat is het verschil.</span>
+              <span className="diba-accent">je huid behandelen</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

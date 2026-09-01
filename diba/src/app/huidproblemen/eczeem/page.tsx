@@ -81,9 +81,9 @@ export default function EczeemPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Geen plek.
+              Eczeem: jeuk die
               <br />
-              <span className="diba-accent">Een cirkel.</span>
+              <span className="diba-accent">blijft terugkomen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

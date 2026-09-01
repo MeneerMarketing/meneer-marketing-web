@@ -60,9 +60,9 @@ export default function HuidproblemenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Elk huidprobleem heeft
+              Kies het huidprobleem
               <br />
-              <span className="diba-accent">een eigen eerste vraag.</span>
+              <span className="diba-accent">waar je mee zit</span>
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">

@@ -69,9 +69,9 @@ export default function DoelgroepHubPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Vier groepen,
+              Voor wie onze
               <br />
-              <span className="diba-accent">één behandellijst.</span>
+              <span className="diba-accent">behandelingen zijn</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

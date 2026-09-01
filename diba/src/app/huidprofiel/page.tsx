@@ -62,11 +62,9 @@ export default function HuidprofielPage() {
           {/* Het aantal komt uit PROFIEL_ONDERDELEN en staat hier niet als woord:
               er kwam een negende vraag bij en de kop bleef "in acht stappen" staan. */}
           <h1 className="diba-display-l mt-8 max-w-[17ch]">
-            Je huid,
+            Stel je huidprofiel
             <br />
-            <span className="diba-accent">
-              in {telwoord(PROFIEL_ONDERDELEN)} stappen.
-            </span>
+            <span className="diba-accent">samen</span>
           </h1>
 
           <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">

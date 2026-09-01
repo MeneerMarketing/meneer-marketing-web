@@ -105,9 +105,9 @@ export default function OnsVerhaalPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[14ch]">
-              Vijf regels,
+              Vijf regels waar we
               <br />
-              <span className="diba-accent">en wat ze kosten.</span>
+              <span className="diba-accent">ons aan houden</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

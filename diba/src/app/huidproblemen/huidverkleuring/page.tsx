@@ -83,9 +83,9 @@ export default function HuidverkleuringPage() {
           </nav>
 
           <h1 className="diba-display-l mt-6 max-w-[16ch]">
-            Begin bij de kleur.
+            Verkleuringen
             <br />
-            <span className="diba-accent">Die zegt het meeste.</span>
+            <span className="diba-accent">op je huid</span>
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">

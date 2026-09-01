@@ -179,8 +179,8 @@ export default function PorienPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Welke soort litteken"
-            accent="herken je?"
+            kop="Wat je ziet als je"
+            accent="in de spiegel kijkt"
             intro="Het vierde beeld is het meest gemaakte misverstand van deze pagina en het kost mensen sessies aan de verkeerde behandeling. Kies wat het dichtst bij jou komt."
           />
           <SoortKiezer

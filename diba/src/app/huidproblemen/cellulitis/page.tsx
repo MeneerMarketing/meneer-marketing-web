@@ -79,9 +79,9 @@ export default function CellulitisPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Het is geen vet.
+              Waarom cellulitis
               <br />
-              <span className="diba-accent">Het is bouw.</span>
+              <span className="diba-accent">ontstaat</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

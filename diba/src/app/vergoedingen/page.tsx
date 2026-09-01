@@ -73,9 +73,9 @@ export default function VergoedingenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Je verzekeraar is
+              Vergoeding door
               <br />
-              <span className="diba-accent">niet de eerste vraag.</span>
+              <span className="diba-accent">je zorgverzekeraar</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

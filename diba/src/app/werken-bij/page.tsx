@@ -101,9 +101,9 @@ export default function WerkenBijPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Meten, uitleggen,
+              Werken bij
               <br />
-              <span className="diba-accent">en soms nee zeggen.</span>
+              <span className="diba-accent">Diba Clinics</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

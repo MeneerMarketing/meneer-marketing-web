@@ -88,9 +88,9 @@ export default function LaserontharingPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Je prijs vooraf.
+              Laserontharing
               <br />
-              <span className="diba-accent">Je huidtype meegenomen.</span>
+              <span className="diba-accent">in Rotterdam</span>
             </h1>
 
             <p className="mt-7 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
