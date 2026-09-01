@@ -288,8 +288,8 @@ export default function PigmentPage() {
       <PillarFaq items={PIGMENT_FAQ} onderwerp="pigmentvlekken" />
 
       <PillarCta
-        kop="Meten kan altijd."
-        accent="Behandelen niet."
+        kop="Waarom het seizoen"
+        accent="meetelt bij pigment"
         tekst="De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt."
         topic="pigment"
         whatsappHref={DIBA_WHATSAPP_URL}

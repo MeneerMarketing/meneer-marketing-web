@@ -525,7 +525,7 @@ export default async function BehandelingPage({ params }: PageProps) {
             <Label opDonker>Eerst meten</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
               Of dit bij jou past{" "}
-              <span className="diba-accent-on-dark">weten we nog niet.</span>
+              <span className="diba-accent-on-dark">bespreken we vooraf</span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Deze pagina vertelt wat {b.naam.toLowerCase()} doet. Of het bij

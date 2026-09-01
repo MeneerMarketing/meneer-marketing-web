@@ -172,9 +172,9 @@ export default function BehandelingenPage() {
             <div>
               <Label>Waarom diepte de kapstok is</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                Je kiest geen behandeling.
+                Kies op de diepte
                 <br />
-                <span className="diba-accent">Je kiest een diepte.</span>
+                <span className="diba-accent">waar het moet gebeuren</span>
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">

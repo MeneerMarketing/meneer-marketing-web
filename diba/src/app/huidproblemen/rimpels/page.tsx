@@ -231,7 +231,7 @@ export default function Pagina() {
       />
 
       <NulmetingAssen
-        kop="Je eigen gezicht is geen maat."
+        kop="Waarom we vooraf vastleggen"
         alineas={[
           "Bij lijnen gaat het om maanden, en in die maanden zie je jezelf elke dag. Daardoor merk je een geleidelijke verandering nauwelijks op, in beide richtingen. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
           "Dat maakt het verschil later zichtbaar in plaats van dat je het moet geloven. En het werkt ook andersom: blijkt er na een reeks weinig veranderd, dan is dat een reden om iets anders te doen en niet om door te gaan.",

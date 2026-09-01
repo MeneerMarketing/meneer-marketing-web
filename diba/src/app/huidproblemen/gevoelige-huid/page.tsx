@@ -210,7 +210,7 @@ export default function GevoeligeHuidPage() {
       />
 
       <NulmetingAssen
-        kop="Een gevoel is geen beginpunt."
+        kop="Waarom we eerst de oorzaak zoeken"
         alineas={[
           "Een gevoelige huid voelt de ene dag anders dan de andere, en achteraf weet niemand meer hoe het vorige maand was. Zonder vast beginpunt praat je dus over een herinnering.",
           "We leggen daarom vast hoe rood het is, hoe snel vocht verdwijnt en hoe de bovenlaag erbij ligt. Dan is de vraag over twee maanden niet of het beter voelt, maar of het beter is.",

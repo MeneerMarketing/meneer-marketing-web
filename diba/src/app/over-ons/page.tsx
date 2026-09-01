@@ -305,9 +305,9 @@ export default function OverOnsPage() {
           <div>
             <Label>Waarom zo</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Dit is wat we zijn.
+              Waar deze kliniek
               <br />
-              <span className="diba-accent">Niet waarom.</span>
+              <span className="diba-accent">voor staat</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

@@ -234,7 +234,7 @@ export default function Pagina() {
       />
 
       <NulmetingAssen
-        kop="Maanden zie je niet in de spiegel."
+        kop="Waarom we vooraf vastleggen"
         alineas={[
           "Verslapping verandert traag, en jij kijkt elke dag. Daardoor merk je vooruitgang net zo min op als achteruitgang. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek, voordat de eerste sessie plaatsvindt.",
           "Dat werkt twee kanten op. Het maakt verschil aantoonbaar, en het maakt ook zichtbaar wanneer er weinig verandert. Dat laatste is een reden om te stoppen of iets anders te doen, en niet om door te gaan omdat er nog sessies in een pakket zaten.",

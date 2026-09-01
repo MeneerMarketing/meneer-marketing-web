@@ -208,9 +208,9 @@ export default function ApparatuurPage() {
           <div>
             <Label>Verder</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Zoek niet op apparaat.
+              Zoek op wat je
               <br />
-              <span className="diba-accent">Zoek op wat je wil.</span>
+              <span className="diba-accent">wilt bereiken</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

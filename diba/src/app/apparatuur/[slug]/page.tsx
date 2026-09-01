@@ -214,8 +214,8 @@ export default async function ApparaatPage({ params }: PageProps) {
           <div>
             <Label>Hoe het werkt</Label>
             <h2 className="diba-display-m mt-4">
-              Niet wat het doet.{" "}
-              <span className="diba-accent">Hoe het het doet.</span>
+              Hoe dit apparaat{" "}
+              <span className="diba-accent">op de huid werkt</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[16px] leading-7 text-[var(--t-body)]">
               Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte.
@@ -364,9 +364,9 @@ export default async function ApparaatPage({ params }: PageProps) {
           <div>
             <Label>Beeld</Label>
             <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Het apparaat is
+              Wat het apparaat
               <br />
-              <span className="diba-accent">niet de behandeling.</span>
+              <span className="diba-accent">wel en niet bepaalt</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

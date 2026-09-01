@@ -151,9 +151,23 @@ for (const r of REGELS) {
   if (raak.length > r.grens) bevindingen.push({ r, raak });
 }
 
-/* "geen" telt apart: geen patroon maar een dichtheid. */
-const metGeen = regels.filter((r) => /\bgeen\b/i.test(r.t)).length;
-const aandeel = (metGeen / regels.length) * 100;
+/**
+ * Koppen die op een ontkenning staan.
+ *
+ * Eerst telde dit de dichtheid van het woord "geen" over alle tekst, met een drempel van
+ * vijf procent. Dat bleek het verkeerde te meten: op de behandelingenpagina is "Geen." de
+ * juiste waarde in de kolom hersteltijd, en "er is geen hersteltijd" is precies zo concreet
+ * als de gids vraagt. Die omlaag jagen maakt de tekst vager in plaats van beter.
+ *
+ * Wat wél een tic is, is de ontkenning als kopvorm: eerst zeggen wat iets niet is en de
+ * lezer laten wachten op wat het wel is. Daar gaat het hieronder over.
+ *
+ * De grens staat niet op nul. "Wij behandelen geen eczeem" en "Tien dingen die wij niet
+ * doen" zijn de eerlijkheid waar de gids om vraagt; die horen te blijven staan.
+ */
+const ontkenningskoppen = regels.filter(
+  (r) => /^\*\*[^*]+\*\*$/.test(r.t) && /\b(geen|niet|nooit)\b/i.test(r.t),
+);
 
 console.log(`${regels.length} zichtbare tekstregels, getoetst aan DIBA-COPY-STYLE-GUIDE.md\n`);
 
@@ -170,7 +184,8 @@ if (!bevindingen.length) {
 }
 
 console.log(
-  `"geen" staat op ${metGeen} regels (${aandeel.toFixed(1)}%). Boven de 5% wordt het een tic.`,
+  `${ontkenningskoppen.length} koppen staan op een ontkenning. Een deel daarvan hoort zo;` +
+    ` het gaat om de koppen die eerst zeggen wat iets niet is.`,
 );
 
 process.exitCode = bevindingen.length ? 1 : 0;

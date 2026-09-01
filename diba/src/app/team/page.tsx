@@ -341,9 +341,9 @@ export default function TeamPage() {
           <div>
             <Label>Bij wie kom je terecht</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Op je vraag,
+              We plannen op
               <br />
-              <span className="diba-accent">niet op de agenda.</span>
+              <span className="diba-accent">wat je nodig hebt</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

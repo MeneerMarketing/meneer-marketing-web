@@ -364,7 +364,7 @@ Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben de HydraFacia
 
 - 8 mensen Huidtherapeuten en orthomoleculair huidspecialisten. Bij welke titel wettelijk beschermd is, staat het erbij. NAAR HET TEAM ›
 
-**Dit is wat we zijn. Niet waarom.**
+**Waar deze kliniek voor staat**
 
 Waarom er hier eerst gemeten wordt, waarom prijzen openbaar staan en waarom er bij elke behandeling staat wat hij niet kan: dat is een ander verhaal dan een opsomming van wat er in huis is. Het staat op een eigen pagina, in vijf regels waar we ons aan houden.
 
@@ -438,7 +438,7 @@ Toon hier alleen reviews die rechtstreeks uit Salonized komen. Laat de oorspronk
 
 - Melanie HUIDTHERAPEUT 1 review noemt deze naam Gisteren heb ik opnieuw een SkinPen-behandeling gehad bij Melanie, en zoals altijd ging ik met een glimlach de deur uit. Ze is een oprecht professionele en betrokken huidtherapeut die duidelijk uitlegt wat ze doet en waarom. Ik kan Diba Clinics van harte aanbevelen. Neroush · 3 maanden geleden
 
-**Op je vraag, niet op de agenda.**
+**We plannen op wat je nodig hebt**
 
 Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment, dan zit er vaak een voedingskant aan en schuift er iemand aan die daarnaar kijkt. Gaat het over laser of needling, dan doet een huidtherapeut het. Heb je een voorkeur, zeg het bij het maken van de afspraak; dat kan gewoon.
 
@@ -660,7 +660,7 @@ De talgklier zit diep in de huid en maakt vet dat langs de haarschacht naar bove
 
 Aan de productie zelf doe je met crème weinig. Wat wél werkt is de afvoer verbeteren, zodat het niet blijft staan.
 
-**Wat werkt. En wat niet.**
+**Wat helpt en wat we afraden**
 
 De rechterkolom is de nuttigste van de twee. Bij elk kruisje staat waarom, want “niet doen” zonder reden onthoudt niemand.
 
@@ -988,7 +988,7 @@ Is het schadelijk? +
 
 Kan ik hiervoor bij jullie terecht? +
 
-**Niets, wat ons betreft. En dat is geen slecht nieuws.**
+**Waarom we hier niets aan doen**
 
 Er staat op deze pagina geen knop om een afspraak te maken. Wil je wel iets aan de kwaliteit van je huid doen, dan is dat een andere vraag met een ander antwoord, en daar kijken we graag naar mee.
 
@@ -1892,7 +1892,7 @@ Bij een gevoelige huid is een eenvoudigere routine vaak verstandiger dan meer pr
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Een gevoel is geen beginpunt.**
+**Waarom we eerst de oorzaak zoeken**
 
 Een gevoelige huid voelt de ene dag anders dan de andere, en achteraf weet niemand meer hoe het vorige maand was. Zonder vast beginpunt praat je dus over een herinnering.
 
@@ -2586,7 +2586,7 @@ Iemand die een facelift zoekt een reeks van drie verkopen is het makkelijkste ge
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Maanden zie je niet in de spiegel.**
+**Waarom we vooraf vastleggen**
 
 Verslapping verandert traag, en jij kijkt elke dag. Daardoor merk je vooruitgang net zo min op als achteruitgang. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek, voordat de eerste sessie plaatsvindt.
 
@@ -3890,7 +3890,7 @@ Mijn vlek ziet er anders uit dan de rest. Moet ik me zorgen maken? +
 
 Kan ik iets doen aan de vlekken op mijn handen? +
 
-**Meten kan altijd. Behandelen niet.**
+**Waarom het seizoen meetelt bij pigment**
 
 De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt.
 
@@ -4248,7 +4248,7 @@ Dit zijn de gevallen waarin wij een behandeling afhouden die je zelf wilde boeke
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Je eigen gezicht is geen maat.**
+**Waarom we vooraf vastleggen**
 
 Bij lijnen gaat het om maanden, en in die maanden zie je jezelf elke dag. Daardoor merk je een geleidelijke verandering nauwelijks op, in beide richtingen. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek.
 
@@ -4422,7 +4422,7 @@ Bij rosacea is het eerste punt links gratis en levert het vaak het meest op. Dat
 
 - Verwachten dat het weggaat. Rosacea is te beheersen, niet te genezen, en dat zeggen we liever nu
 
-**Beheersing is het doel. Genezing beloven we niet.**
+**Wat we bij rosacea kunnen bereiken**
 
 Rosacea is chronisch. Wij noemen beheersing daarom geen mislukking maar de eerlijke uitkomst, en je hoort dat vóór je iets betaalt in plaats van erna.
 
@@ -4974,7 +4974,7 @@ Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel be
 
 IN DE BEHANDELKAMER, HILLEGERSBERG
 
-**Je kiest geen behandeling. Je kiest een diepte.**
+**Kies op de diepte waar het moet gebeuren**
 
 Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder behandelingen er nog bij zijn. Daar zit alles in: wat het kost, hoe lang je rood bent en hoe vaak je terug moet.
 
@@ -5172,7 +5172,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Zit alles in de prijs?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat acnetraject doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5274,7 +5274,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Waarom staat er geen prijs bij?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat coolift cryo therapy doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5368,7 +5368,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - PIGMENTVLEKKEN
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat cosmelan en dermamelan doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5480,7 +5480,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Wat is het verschil met de SkinPen?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat dermapen 4 doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5568,7 +5568,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - HUIDVEROUDERING
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat dermaplaning doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5650,7 +5650,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Waarom per kwartier en niet per stuk?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat fibromen verwijderen doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5772,7 +5772,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Hoeveel sessies heb ik nodig?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat fotona timewalker doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5876,7 +5876,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Hoeveel sessies zijn er nodig?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat happy intim doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -5964,7 +5964,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Moet ik dit doen voordat ik iets anders kan?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat consult met eve-m huidanalyse doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6060,7 +6060,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - DROGE HUID
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat hydrafacial doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6140,7 +6140,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Moet mijn ouder mee?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat jongeren acne traject doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6230,7 +6230,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - OVER LASERONTHARING
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat laserontharing doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6322,7 +6322,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Hoeveel sessies?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat littekentherapie doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6424,7 +6424,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Kan ik alleen hiervoor komen?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat lumi 8 led doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6508,7 +6508,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Hoe lang houdt het aan?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat nightlase doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6606,7 +6606,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - PIGMENTVLEKKEN
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat nordlys ipl doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6690,7 +6690,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Kan dit bij een gevoelige huid?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat oxygeneo glow doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6800,7 +6800,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - PORIËN
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat medische peelings doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -6916,7 +6916,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Is het pijnlijk?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat skinboosters en mesotherapie doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -7024,7 +7024,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - PORIËN
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat skinpen microneedling doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -7106,7 +7106,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Wat als er niets uitkomt?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat voedingsintolerantietest doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -7216,7 +7216,7 @@ Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daaro
 
 - Waarom is het voor vrouwen duurder?
 
-**Of dit bij jou past weten we nog niet.**
+**Of dit bij jou past bespreken we vooraf**
 
 Deze pagina vertelt wat xl hair doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
@@ -7344,7 +7344,7 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 - SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC Peelinglijnen Geen apparaat maar vier merken, in drie niveaus van sterkte. Medische peelings · Cosmelan en dermamelan · Happy Intim
 
-**Zoek niet op apparaat. Zoek op wat je wil.**
+**Zoek op wat je wilt bereiken**
 
 Wie begint bij de techniek komt uit bij waar het meest over geschreven is. Dat is zelden hetzelfde als wat bij jouw huid past. Begin bij wat je wil veranderen, of laat het eerst meten.
 
@@ -7370,7 +7370,7 @@ Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7422,7 +7422,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Huidveroudering
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -7450,7 +7450,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 DERMAPEN 4 · DERMAPEN
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7504,7 +7504,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Huidveroudering
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -7530,7 +7530,7 @@ Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje onde
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7584,7 +7584,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Huidveroudering
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -7610,7 +7610,7 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7648,7 +7648,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 - Voorspellen wat een behandeling gaat opleveren
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -7678,7 +7678,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 FOTONA TIMEWALKER · FOTONA
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7736,7 +7736,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Littekens en striae
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -7764,7 +7764,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 GENTLE LASER PRO-U · CANDELA
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7812,7 +7812,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER LUMI 8-LED Bouwt geen warmte op en doet dus niets aan haar. Een andere categorie, geen zwakkere versie. NAAR DE LUMI 8-LED ›
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -7840,7 +7840,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 HYDRAFACIAL SYNDEO · HYDRAFACIAL
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7894,7 +7894,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Droge huid
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -7922,7 +7922,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 LUMI 8-LED · LUMI
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7976,7 +7976,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Rosacea
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -8004,7 +8004,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 NORDLYS · CANDELA
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -8060,7 +8060,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Pigmentvlekken
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -8092,7 +8092,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 PEELINGLIJNEN · SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -8152,7 +8152,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Huidverkleuring
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -8180,7 +8180,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 SKINPEN CIT · SKINPEN
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -8236,7 +8236,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Poriën
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -8266,7 +8266,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 U225 INTRADERMALE INJECTOR · U225
 
-**Niet wat het doet. Hoe het het doet.**
+**Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -8322,7 +8322,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 - Donkere kringen
 
-**Het apparaat is niet de behandeling.**
+**Wat het apparaat wel en niet bepaalt**
 
 Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
 
@@ -9844,7 +9844,7 @@ Wat gebeurt er met mijn foto's? +
 
 Ik weet niet eens waarvoor ik zou komen. +
 
-**Eén afspraak. Geen verplichting.**
+**Eén afspraak, zonder verplichting**
 
 Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wat je daarna doet, beslis je thuis.
 
@@ -10354,7 +10354,7 @@ Wat je in de kliniek te horen hebt gekregen. Deze termijnen zijn richtlijnen; ho
 
 Twijfel je, bel dan. Dat is altijd goedkoper dan afwachten.
 
-**Dit hoort niet onderaan te staan.**
+**Nazorg hoort vooraan te staan**
 
 De meeste nazorgpagina's zetten dit in de kleine lettertjes onder aan de bladzijde. Het is het enige deel waar haast bij kan zitten, dus staat het hier.
 
@@ -11119,4 +11119,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_103 pagina's · 5131 tekstblokken · ongeveer 73.905 woorden._
+_103 pagina's · 5131 tekstblokken · ongeveer 73.869 woorden._

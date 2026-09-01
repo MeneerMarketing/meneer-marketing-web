@@ -114,11 +114,8 @@ export default function NazorgPage() {
               <div>
                 <Label opDonker>Bel ons</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Dit hoort niet{" "}
-                  <span className="diba-accent-on-dark">
-                    {" "}
-                    onderaan te staan.
-                  </span>
+                  Nazorg hoort{" "}
+                  <span className="diba-accent-on-dark">vooraan te staan</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                   De meeste nazorgpagina&apos;s zetten dit in de kleine

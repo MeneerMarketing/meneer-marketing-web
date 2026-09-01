@@ -187,9 +187,9 @@ export default function CellulitisPage() {
         <div className="mx-auto">
           <Label>Wat er dan wel te doen valt</Label>
           <h2 className="diba-display-s mt-5 max-w-[24ch]">
-            Niets, wat ons betreft.
+            Waarom we hier
             <br />
-            <span className="diba-accent">En dat is geen slecht nieuws.</span>
+            <span className="diba-accent">niets aan doen</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Er staat op deze pagina geen knop om een afspraak te maken. Wil je

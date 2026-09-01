@@ -274,8 +274,8 @@ export default function RosaceaPage() {
       />
 
       <WijZeggenNee
-        kop="Beheersing is het doel."
-        accent="Genezing beloven we niet."
+        kop="Wat we bij rosacea"
+        accent="kunnen bereiken"
         intro="Rosacea is chronisch. Wij noemen beheersing daarom geen mislukking maar de eerlijke uitkomst, en je hoort dat vóór je iets betaalt in plaats van erna."
         punten={ROSACEA_WIJ_DOEN_NIET}
       />

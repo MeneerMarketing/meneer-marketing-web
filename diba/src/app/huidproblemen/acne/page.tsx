@@ -258,7 +258,7 @@ export default function AcnePage() {
             <div>
               <Label>Zonder omwegen</Label>
               <h2 className="diba-display-m mt-4 max-w-[14ch]">
-                Wat werkt. En wat niet.
+                Wat helpt en wat we afraden
               </h2>
             </div>
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">

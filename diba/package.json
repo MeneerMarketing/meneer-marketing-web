@@ -14,7 +14,8 @@
     "mobiel": "node scripts/controleer-mobiel.mjs",
     "teksten": "node scripts/tekstexport.mjs",
     "stijl": "node scripts/controleer-stijl.mjs",
-    "dev:meten": "next dev --port 3021 --hostname 0.0.0.0"
+    "dev:meten": "next dev --port 3021 --hostname 0.0.0.0",
+    "start:meten": "next start --port 3021"
   },
   "dependencies": {
     "next": "16.2.2",

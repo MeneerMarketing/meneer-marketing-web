@@ -439,9 +439,9 @@ export default function IntakePage() {
           <div>
             <Label opDonker>Behandeling nul</Label>
             <h2 className="diba-display-l mt-5 max-w-[15ch]">
-              Eén afspraak.
+              Eén afspraak,
               <br />
-              <span className="diba-accent-on-dark">Geen verplichting.</span>
+              <span className="diba-accent-on-dark">zonder verplichting</span>
             </h2>
           </div>
           <div className="mt-8 flex flex-col justify-end lg:mt-0">
