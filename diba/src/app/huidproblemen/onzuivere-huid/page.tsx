@@ -103,9 +103,9 @@ export default function Pagina() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Die puntjes op je neus
+              Mee-eters en
               <br />
-              <span className="diba-accent">zijn meestal normaal.</span>
+              <span className="diba-accent">een onzuivere huid</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

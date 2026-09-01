@@ -47,6 +47,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Pigmentvlekken en melasma behandelen in Rotterdam",
+  description:
+    "Bij pigmentvlekken telt het seizoen zwaarder dan de techniek. Waarom we in de zomer terughoudend zijn en wanneer we wel behandelen.",
 };
 
 const PAD = "/huidproblemen/pigmentvlekken";
@@ -106,9 +108,9 @@ export default function PigmentPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Bij pigment telt
+              Pigmentvlekken
               <br />
-              <span className="diba-accent">wanneer, niet wat.</span>
+              <span className="diba-accent">die je wil laten weggaan</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

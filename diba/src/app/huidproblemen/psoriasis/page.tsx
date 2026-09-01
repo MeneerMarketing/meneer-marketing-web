@@ -37,6 +37,8 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Psoriasis: meer dan huid",
+  description:
+    "Psoriasis komt uit je afweersysteem en laat zich in de huid zien. Wat dat betekent voor de behandeling, en wat wij er wel en niet bij doen.",
 };
 
 const PAD = "/huidproblemen/psoriasis";
@@ -79,9 +81,9 @@ export default function PsoriasisPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Het zit in je huid.
+              Psoriasis: rode plekken
               <br />
-              <span className="diba-accent">Het komt er niet vandaan.</span>
+              <span className="diba-accent">met witte schilfers</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -143,8 +145,8 @@ export default function PsoriasisPage() {
       />
 
       <WijZeggenNee
-        kop="Dit gaat niet"
-        accent="over de huid."
+        kop="Psoriasis begint"
+        accent="in je afweersysteem"
         intro="Wij kunnen een plek verzachten en niets aan de oorzaak doen. Dan verkoop je sessies aan iets dat blijft terugkomen, en dat doen we niet."
         punten={PSORIASIS_WIJ_DOEN_NIET}
       />

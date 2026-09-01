@@ -42,6 +42,8 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Huiduitslag: bel je vandaag of morgen?",
+  description:
+    "Huiduitslag is een symptoom met tientallen oorzaken. Hier staat wanneer het naar de huisarts moet en wanneer wij iets voor je kunnen doen.",
 };
 
 const PAD = "/huidproblemen/huiduitslag";

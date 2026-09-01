@@ -48,6 +48,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Huidveroudering behandelen in Rotterdam",
+  description:
+    "Het grootste deel van wat je huid ouder maakt komt niet door leeftijd maar door zon. Wat daarvan terug te draaien is en wat niet.",
 };
 
 const PAD = "/huidproblemen/huidveroudering";

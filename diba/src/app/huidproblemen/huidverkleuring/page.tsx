@@ -49,6 +49,8 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Huidverkleuring: welke kleur is het?",
+  description:
+    "Bruin, rood of wit: de kleur vertelt in welke laag de verkleuring zit en of er iets aan te doen valt. Zo vind je waar jij mee te maken hebt.",
 };
 
 const PAD = "/huidproblemen/huidverkleuring";

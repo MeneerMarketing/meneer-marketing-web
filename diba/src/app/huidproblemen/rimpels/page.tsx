@@ -96,9 +96,9 @@ export default function Pagina() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Beweegt de lijn mee?
+              Rimpels en
               <br />
-              <span className="diba-accent">Of blijft hij staan?</span>
+              <span className="diba-accent">fijne lijntjes</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

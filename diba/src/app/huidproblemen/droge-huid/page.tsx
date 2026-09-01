@@ -43,6 +43,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Droge huid of uitgedroogde huid: wat is het verschil?",
+  description:
+    "Een droge huid mist vet, een vochtarme huid mist water, en dat vraagt om iets anders. Hoe je het verschil ziet en wat er bij jou past.",
 };
 
 const PAD = "/huidproblemen/droge-huid";

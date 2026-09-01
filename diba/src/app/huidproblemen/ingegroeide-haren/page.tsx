@@ -103,9 +103,9 @@ export default function Pagina() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Zit er een haar in?
+              Ingegroeide haren
               <br />
-              <span className="diba-accent">Dat is de hele vraag.</span>
+              <span className="diba-accent">na scheren of harsen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

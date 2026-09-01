@@ -25,6 +25,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Weet je niet hoe het heet? Begin hier",
+  description:
+    "Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat. Bedoeld voor wie de naam nog niet weet.",
 };
 
 const PAD = "/huidproblemen/symptoomzoeker";
@@ -62,9 +64,9 @@ export default function SymptoomzoekerPage() {
               iemand wat hij niet kan; dit zegt wat wij wel kunnen. Zelfde belofte,
               andere kant op geschreven. */}
           <h1 className="diba-display-l mt-6 max-w-[17ch]">
-            Jij ziet het.
+            Zoek op wat
             <br />
-            <span className="diba-accent">Wij herkennen het.</span>
+            <span className="diba-accent">je op je huid ziet</span>
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">

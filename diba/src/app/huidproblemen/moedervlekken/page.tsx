@@ -42,6 +42,8 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Moedervlekken: waar je op let en waar je heen gaat",
+  description:
+    "Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.",
 };
 
 const PAD = "/huidproblemen/moedervlekken";
@@ -151,8 +153,8 @@ export default function MoedervlekkenPage() {
       />
 
       <WijZeggenNee
-        kop="Dit is geen bescheidenheid."
-        accent="Dit is een grens."
+        kop="Hier verwijzen we je"
+        accent="naar de dermatoloog"
         intro="Op de andere pagina's zeggen we nee omdat een behandeling te weinig oplevert. Hier zeggen we nee omdat de fout die je kunt maken niet terug te draaien is."
         punten={MOEDERVLEK_WIJ_DOEN_NIET}
       />

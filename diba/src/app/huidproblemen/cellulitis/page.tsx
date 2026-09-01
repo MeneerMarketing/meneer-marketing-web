@@ -36,6 +36,8 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cellulitis: geen vet, maar bouw",
+  description:
+    "Cellulitis komt door de bouw van je bindweefsel, niet door gewicht. Wat er wel en niet aan te veranderen valt, en welke behandelingen we ervoor doen.",
 };
 
 const PAD = "/huidproblemen/cellulitis";

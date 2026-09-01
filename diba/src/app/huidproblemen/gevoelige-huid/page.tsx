@@ -47,6 +47,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Gevoelige huid: type of gevolg?",
+  description:
+    "Een huid die opeens overal op reageert is zelden van aanleg veranderd. Wat er meestal bij is gekomen, en hoe je de barrière weer opbouwt.",
 };
 
 const PAD = "/huidproblemen/gevoelige-huid";

@@ -49,6 +49,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Littekens en striae behandelen in Rotterdam",
+  description:
+    "Bij littekens en striae bepaalt de leeftijd de uitkomst meer dan de techniek. Rood reageert goed, wit veel minder. Wat er in jouw geval mogelijk is.",
 };
 
 const PAD = "/huidproblemen/littekens";
@@ -134,9 +136,9 @@ export default function LittekensPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Rood reageert.
+              Littekens en striae
               <br />
-              <span className="diba-accent">Wit veel minder.</span>
+              <span className="diba-accent">die zichtbaar blijven</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

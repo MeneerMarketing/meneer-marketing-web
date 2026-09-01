@@ -44,6 +44,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Poriën: wat er wel en niet aan te doen is",
+  description:
+    "De doorsnede van een porie ligt vast in je aanleg. Wat je wel kunt veranderen is het oppervlak eromheen, en dat scheelt zichtbaar.",
 };
 
 const PAD = "/huidproblemen/porien";
@@ -104,9 +106,9 @@ export default function PorienPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Kleiner maken
+              Grote poriën
               <br />
-              <span className="diba-accent">kan niet.</span>
+              <span className="diba-accent">in je gezicht</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

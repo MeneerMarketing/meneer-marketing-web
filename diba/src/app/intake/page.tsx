@@ -267,8 +267,8 @@ export default function IntakePage() {
         <div className="mx-auto">
           <SectieKop
             label="Het uur, stap voor stap"
-            kop="Bij elke stap staat"
-            accent="wat je niet hoeft."
+            kop="Wat er in dat"
+            accent="uur gebeurt"
             intro="De meeste twijfel voor een intake gaat niet over de meting maar over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes."
           />
           <Uurtijdlijn />

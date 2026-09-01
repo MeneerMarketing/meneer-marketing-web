@@ -46,6 +46,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Donkere kringen: welk type heb jij?",
+  description:
+    "Donkere kringen hebben drie verschillende oorzaken die er hetzelfde uitzien. Hoe je ze uit elkaar houdt, en bij welke wij je niet verder helpen.",
 };
 
 const PAD = "/huidproblemen/donkere-kringen";

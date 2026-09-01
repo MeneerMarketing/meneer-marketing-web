@@ -38,6 +38,8 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Eczeem: een cirkel, geen plek",
+  description:
+    "Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij ernaast kunnen doen en waar onze grens ligt.",
 };
 
 const PAD = "/huidproblemen/eczeem";

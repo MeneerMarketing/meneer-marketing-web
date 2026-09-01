@@ -108,9 +108,9 @@ export default function WallenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Vocht zakt weg.
+              Wallen onder
               <br />
-              <span className="diba-accent">Vet blijft staan.</span>
+              <span className="diba-accent">je ogen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

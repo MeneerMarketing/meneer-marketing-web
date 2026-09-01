@@ -96,9 +96,9 @@ export default function Pagina() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Niet alles wat bruin is
+              Ouderdomsvlekken op
               <br />
-              <span className="diba-accent">mag onder een laser.</span>
+              <span className="diba-accent">je handen en gezicht</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

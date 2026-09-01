@@ -46,6 +46,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Melasma behandelen in Rotterdam: eerst de diepte",
+  description:
+    "Bij melasma bepaalt de diepte van het pigment wat mogelijk is, en die zie je in gewoon licht niet. Waarom we altijd met een UV-scan beginnen.",
 };
 
 const PAD = "/huidproblemen/melasma";
@@ -96,9 +98,9 @@ export default function MelasmaPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Niet hoe donker.
+              Melasma: vlekken
               <br />
-              <span className="diba-accent">Hoe diep.</span>
+              <span className="diba-accent">die steeds terugkomen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

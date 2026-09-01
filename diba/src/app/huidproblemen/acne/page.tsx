@@ -49,6 +49,8 @@ import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
 
 export const metadata: Metadata = {
   title: "Acne behandelen in Rotterdam",
+  description:
+    "Acne heeft niet één oorzaak en dus niet één behandeling. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.",
 };
 
 const PAD = "/huidproblemen/acne";
