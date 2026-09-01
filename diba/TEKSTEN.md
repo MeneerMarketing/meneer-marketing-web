@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 28 augustus 2026 · 103 pagina's
+Diba Clinics · gegenereerd op 1 september 2026 · 103 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -68,7 +68,7 @@ Met de EVE-M huidanalyse maken we een objectieve nulmeting. Zo zien we wat jouw 
 
 **Doe de mini-scan als je nog niet weet waar je moet beginnen**
 
-Vier vragen, dertig seconden. Je krijgt een profielschets van wat jij ons vertelt, en dus geen meting. Wel een goed begin.
+Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een eerste indruk.
 
 > knop: START DE MINI-SCAN
 
@@ -76,7 +76,7 @@ Elke huid wordt serieus genomen. Ook als je nog niet weet waar je moet beginnen.
 
 > knop: STEL JE VRAAG
 
-**Eerst begrijpen. Dan behandelen.**
+**Hoe een behandeling bij ons begint**
 
 - EERST Het gesprek Je vertelt wat je dwarszit en wat je al probeerde. Wij vragen door, ook naar wat je niet wilt. Stap 1 van 3
 
@@ -730,7 +730,7 @@ Ik heb vooral last van de vlekken die overblijven. +
 
 Wat kost dit? +
 
-**Eerst kijken. Dan pas plannen.**
+**Plan een intake bij Diba Clinics**
 
 In de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies we verwachten. Ook als het antwoord is dat je beter even wacht.
 
@@ -2506,7 +2506,7 @@ Dat is in twee richtingen eerlijk: het temt te hoge verwachtingen, en het laat z
 
 **Zo test je zelf hoeveel er te winnen valt**
 
-Geen diagnose, wel de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is.
+Dit is een herkenningshulp en tegelijk de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is.
 
 - STAP 1 Kijk staand Recht vooruit in de spiegel, gezicht in rust. Dit is hoe je eruitziet op de momenten waarop het je opvalt.
 
@@ -3758,9 +3758,9 @@ De staafhoogte is de gemiddelde UV-index in Nederland. Klik op een maand en je z
 
 > knop: JUL
 
-> knop: NU AUG
+> knop: AUG
 
-> knop: SEP
+> knop: NU SEP
 
 > knop: OKT
 
@@ -3768,15 +3768,13 @@ De staafhoogte is de gemiddelde UV-index in Nederland. Klik op een maand en je z
 
 > knop: DEC
 
-**Augustus**
+**September**
 
-Iets omlaag, maar de zomerschade is nu opgebouwd.
+De UV zakt. Dit is de maand waarin het pigment zijn donkerste stand laat zien.
 
-Nog niet. Wel een goed moment voor de nulmeting, zodat we in september kunnen starten.
+Vanaf nu wordt het interessant. Meten in september geeft het eerlijkste vertrekpunt van het jaar.
 
-We zeggen dit ook aan de telefoon. Je mag wel nu al de nulmeting doen, dan staan we in september klaar met een vertrekpunt.
-
-> knop: ALLEEN DE NULMETING DOEN
+> knop: PLAN JE NULMETING
 
 Dit zijn maandgemiddelden en geen dagwaarden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.
 
@@ -5092,7 +5090,7 @@ Ook je huidprofiel hierboven geeft geen advies. Het legt naast elkaar wat jij he
 
 Wat bij jou past hoor je na de meting, van een mens. Soms is dat geen van de vijf.
 
-**Eerst meten. Dan pas kiezen.**
+**Zo kies je een behandeling**
 
 In Behandeling Nul kijken we onder vast licht wat er bij jou aan de hand is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te beginnen.
 
@@ -9154,7 +9152,7 @@ Zolang er geen keuze is, laadt er niets. Onbekend telt hier als nee.
 
 Intrekken werkt vanaf nu en niet met terugwerkende kracht: wat er eerder gemeten is, blijft bij die diensten staan. Wil je dat ook verwijderd hebben, neem dan contact met ons op.
 
-**Wat er laadt, en wanneer.**
+**Welke cookies we gebruiken**
 
 - ALTIJD AAN Noodzakelijk Nodig om de site te laten werken. Hieronder valt het onthouden van de keuze die u op de cookiebalk maakt, want zonder dat zou de vraag bij elk bezoek terugkomen. WANNEER Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.
 
@@ -9512,7 +9510,7 @@ En hij is voor een deel van de mensen doorslaggevend, want dan heeft de hele beh
 
 - Een huid die net bruin is geworden Verse kleur in de bovenlaag verandert hoeveel licht die opneemt, en daarmee de veilige instelling. Daarom wordt er bij een pas gebruinde huid uitgesteld in plaats van voorzichtiger ingesteld.
 
-- Definitief in de zin van voor altijd Wat er is, wordt sterk verminderd. Wat er later nog bij komt, bijvoorbeeld door hormonale verandering, valt daar niet onder. Onderhoud hoort erbij en dat zeggen we liever vooraf dan achteraf.
+- Wat definitief hier wel en niet betekent Wat er is, wordt sterk verminderd. Wat er later nog bij komt, bijvoorbeeld door hormonale verandering, valt daar niet onder. Onderhoud hoort erbij en dat zeggen we liever vooraf dan achteraf.
 
 Twijfel je of jouw haar genoeg pigment heeft, dan is dat bij de intake in één blik te zien. Dat kost je een afspraak en geen traject.
 
@@ -9554,7 +9552,7 @@ Begin hier: vier vragen, ongeveer een minuut. Je krijgt je profielschets terug e
 
 **Doe de mini-scan als je nog niet weet waar je moet beginnen**
 
-Vier vragen, dertig seconden. Je krijgt een profielschets van wat jij ons vertelt, en dus geen meting. Wel een goed begin.
+Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een eerste indruk.
 
 > knop: START DE MINI-SCAN
 
@@ -9922,7 +9920,7 @@ Twijfel je nog, dan is een meting geen verplichting tot iets. Er wordt gekeken e
 
 **Google-omschrijving:** Alles wat op deze site wordt uitgelegd, geordend op de vraag die je stelt. Met de doorsnedes, testen en vergelijkers die verspreid over de site staan.
 
-**GEEN BLOG. WEL EEN REGISTER.**
+**ALLES WAT WE UITLEGGEN, OP ÉÉN PLEK**
 
 Alles wat hier wordt uitgelegd staat verspreid over 28 huidprobleempagina's, 12 apparaatpagina's en 22behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
 
@@ -10514,7 +10512,7 @@ De derde kolom beschrijft wat met een huidbehandeling niet kan worden opgelost.
 
 - NIET HIER Niemand, voorlopig Het zichtbare weghalen én weghouden zonder dat de oorzaak verandert. Dat kan geen enkele kliniek, hoe de folder ook geschreven is.
 
-**Wat we wel doen, en wat niet.**
+**Wat we bij PCOS kunnen doen**
 
 Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene zonder de andere is een verkooptekst.
 
@@ -11032,7 +11030,7 @@ KWALITEITSREGISTER PARAMEDICI
 
 Vrijwillig register met een cyclus van vijf jaar. Wie erin blijft staan toont per periode minstens 1600 werkuren aan, verspreid over minimaal 36 maanden, en 160 punten bijscholing.
 
-**Eerst meten. Dan pas een plan.**
+**Wat een nulmeting oplevert**
 
 Er wordt niet behandeld op een verwijzing alleen. Dat is geen formaliteit: het is de reden dat het advies dat uw patiënt meekrijgt eerlijk kan zijn.
 
@@ -11042,7 +11040,7 @@ Er wordt niet behandeld op een verwijzing alleen. Dat is geen formaliteit: het i
 
 - Soms het advies om niets te doen Blijkt uit de meting dat behandelen weinig oplevert of dat het moment verkeerd is, dan hoort uw patiënt dat. Dat gebeurt en het is geen uitzondering.
 
-**Geen portaal. Wel een telefoonnummer.**
+**Verwijzen gaat via de telefoon**
 
 Er is geen verwijzersportaal en geen digitaal formulier. Doen alsof die er zijn is erger dan het gewoon zeggen.
 
@@ -11121,4 +11119,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_103 pagina's · 5132 tekstblokken · ongeveer 73.907 woorden._
+_103 pagina's · 5131 tekstblokken · ongeveer 73.905 woorden._

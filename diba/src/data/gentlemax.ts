@@ -166,7 +166,7 @@ export const GRENZEN: readonly { kop: string; zin: string }[] = [
     zin: "Verse kleur in de bovenlaag verandert hoeveel licht die opneemt, en daarmee de veilige instelling. Daarom wordt er bij een pas gebruinde huid uitgesteld in plaats van voorzichtiger ingesteld.",
   },
   {
-    kop: "Definitief in de zin van voor altijd",
+    kop: "Wat definitief hier wel en niet betekent",
     zin: "Wat er is, wordt sterk verminderd. Wat er later nog bij komt, bijvoorbeeld door hormonale verandering, valt daar niet onder. Onderhoud hoort erbij en dat zeggen we liever vooraf dan achteraf.",
   },
 ];

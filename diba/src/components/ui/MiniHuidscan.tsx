@@ -379,8 +379,9 @@ function Intro({ onStart, titelId }: { onStart: () => void; titelId: string }) {
           Doe de mini-scan als je nog niet weet waar je moet beginnen
         </h3>
         <p className="mt-3 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-          Vier vragen, dertig seconden. Je krijgt een profielschets van wat jij
-          ons vertelt, en dus geen meting. Wel een goed begin.
+          Vier vragen, dertig seconden. Je krijgt een profielschets op basis van
+          wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een
+          eerste indruk.
         </p>
         <Button onClick={onStart} className="mt-6">
           Start de mini-scan

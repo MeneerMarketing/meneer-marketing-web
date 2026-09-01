@@ -161,7 +161,7 @@ export default function Pagina() {
             raster="gelijk"
             kop="Zo test je zelf"
             accent="hoeveel er te winnen valt"
-            intro="Geen diagnose, wel de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is."
+            intro="Dit is een herkenningshulp en tegelijk de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">

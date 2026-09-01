@@ -289,8 +289,7 @@ export default function VerwijzersPage() {
             <div className="shrink-0">
               <Label>Wat uw patiënt krijgt</Label>
               <h2 className="diba-display-m mt-4">
-                Eerst meten.{" "}
-                <span className="diba-accent">Dan pas een plan.</span>
+                Wat een nulmeting <span className="diba-accent">oplevert</span>
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -325,8 +324,8 @@ export default function VerwijzersPage() {
             <div className="shrink-0">
               <Label>Hoe u verwijst</Label>
               <h2 className="diba-display-m mt-4">
-                Geen portaal.{" "}
-                <span className="diba-accent">Wel een telefoonnummer.</span>
+                Verwijzen gaat{" "}
+                <span className="diba-accent">via de telefoon</span>
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">

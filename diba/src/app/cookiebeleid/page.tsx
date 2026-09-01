@@ -111,7 +111,7 @@ export default function CookiePage() {
           <div>
             <Label>Wat er precies staat</Label>
             <h2 className="diba-display-m mt-4">
-              Wat er laadt, <span className="diba-accent">en wanneer.</span>
+              Welke cookies <span className="diba-accent">we gebruiken</span>
             </h2>
           </div>
 

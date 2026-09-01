@@ -450,9 +450,9 @@ export default function AcnePage() {
           <div>
             <Label opDonker>Behandeling Nul</Label>
             <h2 className="diba-display-l mt-5">
-              Eerst kijken.
+              Plan een intake
               <br />
-              <span className="diba-accent-on-dark">Dan pas plannen.</span>
+              <span className="diba-accent-on-dark">bij Diba Clinics</span>
             </h2>
           </div>
           <div className="flex flex-col justify-end">

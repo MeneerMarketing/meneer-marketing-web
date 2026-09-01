@@ -318,9 +318,9 @@ export default function FigmaHomeApp({
             <div>
               <Label>Onze werkwijze</Label>
               <h2 className="diba-display-m mt-4">
-                Eerst begrijpen.
+                Hoe een behandeling
                 <br />
-                Dan behandelen.
+                bij ons begint
               </h2>
             </div>
             <WerkwijzeStepsFlow className="self-end" />

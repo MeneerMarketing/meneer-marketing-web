@@ -166,7 +166,7 @@ export default function PcosPage() {
           <div>
             <Label>Vier huidklachten</Label>
             <h2 className="diba-display-m mt-4">
-              Wat we wel doen, <span className="diba-accent">en wat niet.</span>
+              Wat we bij PCOS <span className="diba-accent">kunnen doen</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene

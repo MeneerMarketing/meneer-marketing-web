@@ -261,9 +261,9 @@ export default function BehandelingenPage() {
               <div>
                 <Label opDonker>Beginnen</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Eerst meten.
+                  Zo kies je
                   <br />
-                  <span className="diba-accent-on-dark">Dan pas kiezen.</span>
+                  <span className="diba-accent-on-dark">een behandeling</span>
                 </h2>
               </div>
 
