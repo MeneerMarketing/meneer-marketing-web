@@ -170,7 +170,7 @@ export default function AcneLittekensPage() {
           <SectieKop
             label="Vier beelden"
             raster="gelijk"
-            kop="Vier beelden, en"
+            kop="Vier beelden en"
             accent="wat elk ervan vraagt"
             intro="Dit is een herkenningshulp en geen diagnose; het echte antwoord komt uit de meting. Maar deze vier dekken vrijwel alles wat er na acne achterblijft, en bij drie ervan is ons advies iets anders dan waar je voor kwam."
           />

@@ -511,10 +511,20 @@ export default function FigmaHomeApp({
               <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-500)]">
                 <Pulse size={18} />
               </span>
-              <h3 className="diba-card-title-lg mt-28">Geen haast.</h3>
+              <h3 className="diba-card-title-lg mt-28">
+                Je beslist niet in de stoel
+              </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Veelgestelde vragen
+                Je krijgt het advies mee naar huis, met de prijs erbij. Wat je
+                daarna doet, bepaal je zelf.
               </p>
+              <Link
+                href="#vragen"
+                className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
+              >
+                Veelgestelde vragen
+                <ArrowUpRight size={13} />
+              </Link>
             </div>
             {/* Een vlak en geen foto.
 
@@ -532,9 +542,9 @@ export default function FigmaHomeApp({
                 Diba, Rotterdam
               </p>
               <p className="diba-card-title absolute bottom-7 left-7 z-10 text-[var(--on-dark)]">
-                Warm in gevoel.
+                Je vindt ons in
                 <br />
-                Scherp in kennis.
+                Hillegersberg.
               </p>
               <Link
                 href="/contact"
@@ -548,11 +558,13 @@ export default function FigmaHomeApp({
               <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-500)]">
                 <Sparkle size={18} />
               </span>
-              <h3 className="diba-card-title-lg mt-28">Heldere keuzes.</h3>
+              <h3 className="diba-card-title-lg mt-28">
+                Je weet vooraf wat het kost
+              </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Je krijgt uitleg over de mogelijkheden We vertellen welke
-                behandelingen mogelijk zijn, wat ze kosten en wat je ervan kunt
-                verwachten. Je hoeft niet direct te beslissen.
+                We vertellen welke behandelingen mogelijk zijn, wat ze kosten en
+                wat je ervan kunt verwachten. Ook als het antwoord is dat
+                afwachten verstandiger is.
               </p>
               <Link
                 href="/prijzen"
@@ -572,10 +584,13 @@ export default function FigmaHomeApp({
         <div className="mx-auto grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
           <div>
             <Label>Goed om te weten</Label>
-            <h2 className="diba-display-m mt-4">Eerst even dit.</h2>
+            <h2 className="diba-display-m mt-4" id="vragen">
+              Wat mensen het vaakst vragen
+            </h2>
             <p className="mt-6 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-              Duidelijkheid is een vorm van zorg. Daarom beantwoorden we de
-              vragen die het vaakst vooraf worden gesteld.
+              Dit zijn de vragen die het vaakst gesteld worden voordat iemand
+              een afspraak maakt. Staat die van jou er niet bij, bel of app ons
+              gerust.
             </p>
           </div>
           <div className="border-t border-[var(--g-100)]">
