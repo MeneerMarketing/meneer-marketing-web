@@ -73,9 +73,9 @@ export default function DitBehandelenWijNietPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[14ch]">
-              {WEIGERINGEN.length} keer nee,
+              Wat wij niet doen
               <br />
-              <span className="diba-accent">en waar dan wel.</span>
+              <span className="diba-accent">en waar je wel terechtkunt</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

@@ -98,9 +98,9 @@ export default function BehandelingenPage() {
           </nav>
 
           <h1 className="diba-display-l mt-8 max-w-[17ch]">
-            {BEHANDELINGEN.length} behandelingen.
+            Onze {BEHANDELINGEN.length} behandelingen
             <br />
-            <span className="diba-accent">Eén vraag: hoe diep?</span>
+            <span className="diba-accent">van licht tot diep</span>
           </h1>
 
           <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
@@ -198,9 +198,9 @@ export default function BehandelingenPage() {
         <div className="mx-auto">
           <Label>Alles op een rij</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            {BEHANDELINGEN.length} behandelingen.
+            Alle {BEHANDELINGEN.length} behandelingen
             <br />
-            <span className="diba-accent">Filter tot er twee overblijven.</span>
+            <span className="diba-accent">op een rij</span>
           </h2>
           <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
             Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat

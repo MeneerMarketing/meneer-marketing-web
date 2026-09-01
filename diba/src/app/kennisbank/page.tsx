@@ -270,8 +270,8 @@ export default function KennisbankPage() {
             <div>
               <Label opDonker>Waar dit toe dient</Label>
               <h2 className="diba-display-m mt-4">
-                Lezen is gratis.{" "}
-                <span className="diba-accent-on-dark">Gokken is duur.</span>
+                Zodat je een gesprek{" "}
+                <span className="diba-accent-on-dark">kunt voeren</span>
               </h2>
               <p className="mt-6 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Alles hierboven staat er zodat je een gesprek kunt voeren in

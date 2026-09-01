@@ -67,9 +67,9 @@ export default function LaserConfiguratorPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Wijs aan
+              Stel je eigen
               <br />
-              <span className="diba-accent">wat je wil.</span>
+              <span className="diba-accent">behandeling samen</span>
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">

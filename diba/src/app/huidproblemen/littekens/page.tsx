@@ -288,8 +288,8 @@ export default function LittekensPage() {
       <PillarFaq items={LITTEKEN_FAQ} onderwerp="littekens" />
 
       <PillarCta
-        kop="Kom liever te vroeg."
-        accent="Dan te laat."
+        kop="Jonge littekens"
+        accent="reageren het best"
         tekst="Bij een rood litteken of rode striae is dit het moment waarop het het meeste uitmaakt. Bij oude littekens rekenen we eerlijk voor of het genoeg oplevert."
         topic="littekens"
         whatsappHref={DIBA_WHATSAPP_URL}
