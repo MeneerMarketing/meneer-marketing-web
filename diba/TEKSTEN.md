@@ -290,13 +290,13 @@ Deze regels zijn geen bedachte kernwaarden. Het zijn de regels die de rest van d
 
 De prijzen staan openbaar omdat regel drie dat zegt. Bij elk apparaat staat wat het niet kan omdat regel vier dat zegt. Elke pagina is bewijs, of ze klopt niet.
 
-**knop: BEKIJK DE PRIJZEN**
+**Elke prijs staat op de site**
 
 Per sessie, per zone, per variant, inclusief de duurste. Geen bedrag dat je pas hoort als je al op de stoel ligt.
 
 WAT HET ONS KOST
 
-Het onderhandelingsvoordeel. Wie zijn prijzen pas aan de balie noemt, noemt ze op het moment dat je het moeilijkst nee zegt. Dat werkt, en daarom doen zoveel klinieken het.
+Het onderhandelingsvoordeel. Een bedrag dat pas aan de balie valt, valt op het moment dat je het moeilijkst nee zegt. Dat voordeel geven we weg, en dat merken we.
 
 > knop: KIJK ZELF, ALLES STAAT ER
 
@@ -1288,7 +1288,7 @@ Helpt meer water drinken? +
 
 Is dof hetzelfde als droog? +
 
-**Eerst kijken waar het vandaan komt. Soms is dat het advies.**
+**Uitzoeken welke van de vier het bij jou is**
 
 In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken.
 
@@ -1880,7 +1880,7 @@ Het eerste kruisje rechts is het hardnekkigste verhaal in de huidverzorging: dat
 
 - Aannemen dat het aanleg is voordat je de routine hebt uitgekleed. Bij veel mensen is de aanleg pas zichtbaar als de rest weg is.
 
-**Aftrekken levert ons niets op.**
+**Minder producten verdient ons niets**
 
 Bij een gevoelige huid is een eenvoudigere routine vaak verstandiger dan meer producten toevoegen.
 
@@ -2996,7 +2996,7 @@ Een woodlamp is een lamp met bijna alleen ultraviolet licht. Pigment dat hoog in
 
 **Melasma heeft een kraan. Die staat maar deels bij jou.**
 
-Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepalen hoe ver. Kijk naar de derde kolom: dat is het deel dat je zelf in de hand hebt.
+Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepalen hoe ver hij open staat. Kijk naar de derde kolom: dat is het deel dat je zelf in de hand hebt.
 
 - Zon De sterkste van de drie, en de enige die je volledig zelf in de hand hebt. Ook winterlicht en licht door een autoruit telt mee. ZELF IN DE HAND Volledig
 
@@ -3566,7 +3566,7 @@ Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van
 
 - Elke dag in de spiegel vergelijken. Pigment verandert in maanden, niet in dagen
 
-**Soms is het antwoord kom in oktober terug.**
+**Soms is het antwoord: kom in oktober terug**
 
 In maanden met veel zon stellen we bepaalde pigmentbehandelingen uit. Welke periode veilig en verstandig is, hangt af van huidtype, blootstelling en de gekozen behandeling.
 
@@ -4622,7 +4622,7 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE DIEPE LEDERHUID Laserontharing Gentle Laser Pro-U De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. Een paar uur rood, soms bultjes rond de haarzakjes. € 20
 
-**Welke de beste is.**
+**Waarom hier niet staat welke de beste is**
 
 Die vraag heeft geen antwoord zonder jouw huid erbij. Dieper is niet beter, duurder is niet beter, en nieuwer al helemaal niet. Een behandeling is passend of niet passend, en dat verschilt per persoon en per moment.
 
@@ -5548,7 +5548,7 @@ Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zi
 
 De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel, en soms is dat voorstel om even niets te doen.
 
-**Wat een behandeling met je huid doet**
+**Wat een meting je wel en niet vertelt**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
@@ -6780,7 +6780,7 @@ De uitslag bespreken we in een aparte afspraak, want een lijst met waardes zonde
 
 Wat een intolerantietest wel en niet kan zeggen hoor je in dat gesprek, en ook als het antwoord is dat je er in jouw geval weinig aan hebt.
 
-**Wat een behandeling met je huid doet**
+**Wat deze test wel en niet aantoont**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
@@ -7122,7 +7122,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Een traject vervangen
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7210,7 +7210,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Een huid die net iets anders heeft ondergaan
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7298,7 +7298,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Ontharen; de donshaartjes komen terug
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7340,7 +7340,7 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
-**Hoe dit apparaat op de huid werkt**
+**Hoe dit apparaat je huid in beeld brengt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
 
@@ -7464,7 +7464,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Eén sessie met blijvend resultaat; het is altijd een reeks
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7556,7 +7556,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Een gebruinde huid
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7640,7 +7640,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Haargroei
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7730,7 +7730,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Snelle zichtbare verandering; dit werkt over een reeks
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7820,7 +7820,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Elk huidtype
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -7916,7 +7916,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Vlak voor veel zon
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -8012,7 +8012,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Een huid met actieve ontsteking
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -8106,7 +8106,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Zwangerschap en borstvoeding
 
-**Wat er anders is dan de buren.**
+**Wat er anders is dan de andere apparaten hier**
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
@@ -10550,7 +10550,7 @@ Verandert dit verbond nog? +
 
 ELKE NEE BEGINT MET EEN GESPREK
 
-**Houd ons eraan aan wat hier staat.**
+**Houd ons aan wat hier staat**
 
 Merk je dat we ons hier niet aan houden, zeg het dan tegen degene die je behandelt of laat het ons weten. Een verbond dat je niet kunt aanspreken is een advertentie.
 
@@ -11193,4 +11193,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5164 tekstblokken · ongeveer 76.046 woorden._
+_107 pagina's · 5164 tekstblokken · ongeveer 76.076 woorden._

@@ -467,8 +467,10 @@ export default async function BehandelingPage({ params }: PageProps) {
           <div className="mx-auto">
             <Label>Wat het wel en niet doet</Label>
             <h2 className="diba-display-m mt-4 max-w-[24ch]">
-              Wat een behandeling{" "}
-              <span className="diba-accent">met je huid doet</span>
+              {b.welNietKop?.kop ?? "Wat een behandeling"}{" "}
+              <span className="diba-accent">
+                {b.welNietKop?.accent ?? "met je huid doet"}
+              </span>
             </h2>
             <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
               Links waar deze behandeling voor bedoeld is, rechts waar hij niets

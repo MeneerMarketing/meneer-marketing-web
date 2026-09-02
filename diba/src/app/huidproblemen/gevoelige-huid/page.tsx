@@ -207,8 +207,8 @@ export default function GevoeligeHuidPage() {
       />
 
       <WijZeggenNee
-        kop="Aftrekken levert ons"
-        accent="niets op."
+        kop="Minder producten"
+        accent="verdient ons niets"
         intro="Bij een gevoelige huid is een eenvoudigere routine vaak verstandiger dan meer producten toevoegen."
         punten={GEVOELIG_WIJ_DOEN_NIET}
       />

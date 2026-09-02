@@ -220,6 +220,16 @@ export type Behandeling = {
    */
   readonly inDeStoel?: readonly string[];
 
+  /**
+   * Een eigen kop boven de wel/niet-kolommen.
+   *
+   * Standaard staat daar "Wat een behandeling met je huid doet". Dat klopt bij twintig van
+   * de tweeëntwintig. Bij de huidanalyse spreekt het de pagina tegen — daar staat drie
+   * regels hoger dat er niets aan je huid gebeurt — en bij de intolerantietest ook, want
+   * dat is een bloedafname.
+   */
+  readonly welNietKop?: { readonly kop: string; readonly accent: string };
+
   readonly foto?: { readonly src: string; readonly alt: string };
   readonly faq?: readonly {
     readonly vraag: string;
@@ -231,6 +241,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Meten ─────────────────────────────────────────────────────────────── */
   {
     slug: "huidanalyse",
+    welNietKop: { kop: "Wat een meting", accent: "je wel en niet vertelt" },
     inDeStoel: [
       "Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zijn. De opnames zijn in een paar minuten klaar: gewoon licht, gepolariseerd licht en UV, achter elkaar door. Je merkt er niets van, want er raakt niets je huid.",
       "De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel, en soms is dat voorstel om even niets te doen.",
@@ -1481,6 +1492,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "voedingsintolerantietest",
+    welNietKop: { kop: "Wat deze test", accent: "wel en niet aantoont" },
     inDeStoel: [
       "Dit is geen huidbehandeling. Er wordt een klein beetje bloed afgenomen en dat gaat naar een laboratorium; in de kliniek zelf ben je binnen een kwartier klaar.",
       "De uitslag bespreken we in een aparte afspraak, want een lijst met waardes zonder uitleg leidt vooral tot onnodig schrappen in je eten.",

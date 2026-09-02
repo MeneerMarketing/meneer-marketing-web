@@ -267,8 +267,8 @@ export default function PigmentPage() {
       />
 
       <WijZeggenNee
-        kop="Soms is het antwoord"
-        accent="kom in oktober terug."
+        kop="Soms is het antwoord:"
+        accent="kom in oktober terug"
         intro="In maanden met veel zon stellen we bepaalde pigmentbehandelingen uit. Welke periode veilig en verstandig is, hangt af van huidtype, blootstelling en de gekozen behandeling."
         punten={PIGMENT_WIJ_DOEN_NIET}
       />

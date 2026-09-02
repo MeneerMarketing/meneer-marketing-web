@@ -221,8 +221,9 @@ export default function BehandelingenPage() {
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat hier niet staat</Label>
-            <h2 className="diba-display-m mt-4 max-w-[14ch]">
-              Welke de <span className="diba-accent">beste is.</span>
+            <h2 className="diba-display-m mt-4 max-w-[18ch]">
+              Waarom hier niet staat{" "}
+              <span className="diba-accent">welke de beste is</span>
             </h2>
             <DibaLeafMark
               aria-hidden="true"

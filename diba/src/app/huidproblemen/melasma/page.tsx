@@ -173,7 +173,7 @@ export default function MelasmaPage() {
             label="De drie kranen"
             kop="Melasma heeft een kraan."
             accent="Die staat maar deels bij jou."
-            intro="Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepalen hoe ver. Kijk naar de derde kolom: dat is het deel dat je zelf in de hand hebt."
+            intro="Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepalen hoe ver hij open staat. Kijk naar de derde kolom: dat is het deel dat je zelf in de hand hebt."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">

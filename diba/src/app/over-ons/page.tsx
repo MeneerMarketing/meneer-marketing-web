@@ -248,8 +248,8 @@ export default function OverOnsPage() {
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Een apparaatnaam zegt minder dan hij lijkt te zeggen. “Wij hebben
               de Fotona” klinkt als een belofte, alsof het apparaat het werk
-              doet en de kliniek alleen de stekker erin steekt. Het is
-              andersom: wat telt is de instelling en de hand die het vasthoudt.
+              doet en de kliniek alleen de stekker erin steekt. Het is andersom:
+              wat telt is de instelling en de hand die het vasthoudt.
             </p>
           </div>
 

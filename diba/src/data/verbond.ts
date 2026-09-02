@@ -122,7 +122,7 @@ export const VERBOND_INTRO =
   "Dit zijn geen huisregels maar weigeringen. Bij elke regel staat wat hij ons kost, want een belofte zonder prijs is geen belofte. Ze staan hier bij elkaar en ze staan ook los, op de pagina waar ze gelden.";
 
 export const VERBOND_SLOT = {
-  kop: "Houd ons eraan",
+  kop: "Houd ons aan",
   tekst:
     "Merk je dat we ons hier niet aan houden, zeg het dan tegen degene die je behandelt of laat het ons weten. Een verbond dat je niet kunt aanspreken is een advertentie. [BESLUIT-OKAN]",
 } as const;

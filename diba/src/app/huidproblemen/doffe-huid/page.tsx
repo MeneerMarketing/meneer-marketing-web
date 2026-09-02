@@ -257,8 +257,8 @@ export default function Pagina() {
       <PillarFaq items={DOF_FAQ} onderwerp="een doffe huid" />
 
       <PillarCta
-        kop="Eerst kijken waar het vandaan komt."
-        accent="Soms is dat het advies."
+        kop="Uitzoeken welke van"
+        accent="de vier het bij jou is"
         tekst="In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken."
         topic="doffe-huid"
         whatsappHref={DIBA_WHATSAPP_URL}

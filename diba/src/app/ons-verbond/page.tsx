@@ -164,7 +164,7 @@ export default function OnsVerbondPage() {
             <h2 className="diba-display-l mt-5 max-w-[14ch]">
               {VERBOND_SLOT.kop}
               <br />
-              <span className="diba-accent-on-dark">aan wat hier staat.</span>
+              <span className="diba-accent-on-dark">wat hier staat</span>
             </h2>
           </div>
           <div className="mt-8 flex flex-col justify-end lg:mt-0">

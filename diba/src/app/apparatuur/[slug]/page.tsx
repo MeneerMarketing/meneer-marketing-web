@@ -226,8 +226,10 @@ export default async function ApparaatPage({ params }: PageProps) {
           <div>
             <Label>Hoe het werkt</Label>
             <h2 className="diba-display-m mt-4">
-              Hoe dit apparaat{" "}
-              <span className="diba-accent">op de huid werkt</span>
+              {a.werkingKop?.kop ?? "Hoe dit apparaat"}{" "}
+              <span className="diba-accent">
+                {a.werkingKop?.accent ?? "op de huid werkt"}
+              </span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[16px] leading-7 text-[var(--t-body)]">
               Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte.
@@ -324,8 +326,8 @@ export default async function ApparaatPage({ params }: PageProps) {
             <div>
               <Label>Waarom dit apparaat</Label>
               <h2 className="diba-display-m mt-4">
-                Wat er anders is{" "}
-                <span className="diba-accent">dan de buren.</span>
+                Wat er anders is dan{" "}
+                <span className="diba-accent">de andere apparaten hier</span>
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
                 Meerdere apparaten hier doen op het oog hetzelfde. Welke je

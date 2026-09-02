@@ -147,11 +147,21 @@ export type Apparaat = {
    * draagt [MEDISCHE-CHECK-ROJDA], want dat is haar oordeel en niet dat van een brochure.
    */
   readonly techniek?: readonly string[];
+
+  /**
+   * Een eigen kop boven de doorsnedetekening.
+   *
+   * Standaard staat er "Hoe dit apparaat op de huid werkt". Dat klopt bij elf van de
+   * twaalf. De EVE-M werkt niet op de huid maar meet hem, en dat staat twee alinea's hoger
+   * ook zo; dan hoort de kop dat niet tegen te spreken.
+   */
+  readonly werkingKop?: { readonly kop: string; readonly accent: string };
 };
 
 export const APPARATUUR: readonly Apparaat[] = [
   {
     slug: "eve-m",
+    werkingKop: { kop: "Hoe dit apparaat", accent: "je huid in beeld brengt" },
     techniek: [
       "De EVE-M meet en behandelt niet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.",
       "Dat is de hele reden dat het ding er staat. Een telefoonfoto onder ander licht en vanaf een andere afstand is niet met een vorige te vergelijken, en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.",
