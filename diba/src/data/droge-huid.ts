@@ -72,7 +72,7 @@ export const KWADRANTEN: Record<Kwadrant["id"], Kwadrant> = {
     oorzaak:
       "De barrière lekt water én mist het vet om dat tegen te houden. Vaak is er een aanjager: koud weer, te warm douchen, of een routine die te stevig is geworden. [MEDISCHE-CHECK-ROJDA]",
     aanpak:
-      "Eerst afbouwen, dan opbouwen. Weglaten levert hier meer op dan toevoegen, en dat kost je niets.",
+      "Hier levert weglaten meer op dan toevoegen. Je routine kleiner maken kost je niets en geeft de barrière de ruimte om zich te herstellen.",
     urgentie: "let-op",
   },
 };

@@ -38,7 +38,8 @@ for (const r of md) {
   if (meta) {
     zoekresultaten.push({ pad, soort: meta[1], tekst: meta[2].trim() });
     /* De omschrijving gaat wél langs de gewone regels; hij is tenslotte gewoon een zin. */
-    if (meta[1] === "Google-omschrijving") regels.push({ pad, t: meta[2].trim() });
+    if (meta[1] === "Google-omschrijving")
+      regels.push({ pad, t: meta[2].trim() });
     continue;
   }
   regels.push({ pad, t });
@@ -65,21 +66,35 @@ const REGELS = [
   {
     naam: "losse kreten met punten ertussen",
     bron: "Natuurlijk Nederlands",
-    uitleg: 'Zoals "Eerlijk. Deskundig. Menselijk." of "Analyse. Inzicht. Behandeling."',
-    test: (t) => /^([A-Z][a-zà-ÿ]{2,14}\.\s+){2,}[A-Z][a-zà-ÿ]{2,14}\.?$/.test(t),
+    uitleg:
+      'Zoals "Eerlijk. Deskundig. Menselijk." of "Analyse. Inzicht. Behandeling."',
+    test: (t) =>
+      /^([A-Z][a-zà-ÿ]{2,14}\.\s+){2,}[A-Z][a-zà-ÿ]{2,14}\.?$/.test(t),
     grens: 0,
   },
   {
     naam: "Eerst X. Dan Y.",
     bron: "Natuurlijk Nederlands",
     uitleg: "Twee halve zinnen als slogan.",
-    test: (t) => /\bEerst\b[^.!?]{1,35}\.\s*(Dan|Daarna)\b/i.test(t),
+    /* Ook de komma-variant. "Eerst kijken, dan pas laseren." stond maanden op de
+       configuratorpagina en kwam er ongemerkt doorheen, omdat deze regel alleen naar een
+       punt zocht. Een regel die de helft van een patroon vangt is bijna erger dan geen
+       regel: hij geeft je het gevoel dat je gekeken hebt.
+
+       Maar niet elke zin met "eerst" en "daarna" is een slogan. "We werken vaak eerst op de
+       bloedvaten, daarna op de structuur" is gewoon Nederlands dat een volgorde beschrijft.
+       Het verschil zit in de lengte: een slogan is kort en staat op zichzelf, en zodra er
+       een zin omheen staat is het geen kreet meer. Vandaar de bovengrens. */
+    test: (t) =>
+      t.length <= 60 &&
+      /^[^.!?]*\bEerst\b[^.!?]{1,35}[.,]\s*(dan|daarna)\b/i.test(t),
     grens: 0,
   },
   {
     naam: "kop in twee helften met een komma",
     bron: "Koppen",
-    uitleg: 'Zoals "Twee seconden, en je weet het zelf." Een kop vertelt waar het over gaat.',
+    uitleg:
+      'Zoals "Twee seconden, en je weet het zelf." Een kop vertelt waar het over gaat.',
     test: (t, ruw) =>
       /^\*\*[^*]{3,45},\s+(en|maar|of)\b[^*]{3,55}\*\*$/.test(ruw),
     grens: 0,
@@ -94,7 +109,8 @@ const REGELS = [
   {
     naam: "beautycliché of grote belofte",
     bron: "Woorden en claims die we vermijden",
-    uitleg: "ontdek, ervaar de kracht van, verwen jezelf, stralende huid, transformerend.",
+    uitleg:
+      "ontdek, ervaar de kracht van, verwen jezelf, stralende huid, transformerend.",
     test: (t) =>
       /\b(ontdek|ervaar de kracht|verwen jezelf|stralende huid|transformerend|revolutionair|ultiem|de beste versie)\b/i.test(
         t,
@@ -104,7 +120,8 @@ const REGELS = [
   {
     naam: "absolute claim",
     bron: "Medische toon",
-    uitleg: "perfect, vlekkeloos, voor altijd, gegarandeerd, pijnloos, risicovrij.",
+    uitleg:
+      "perfect, vlekkeloos, voor altijd, gegarandeerd, pijnloos, risicovrij.",
     test: (t) =>
       /\b(perfecte? huid|vlekkeloos|voor altijd|gegarandeerd resultaat|volledig pijnloos|risicovrij)\b/i.test(
         t,
@@ -115,7 +132,10 @@ const REGELS = [
     naam: "luxe of exclusief als verkoopargument",
     bron: "Diba klinkt niet zo",
     uitleg: "Diba is geen luxemerk.",
-    test: (t) => /\b(luxueus|exclusieve? (behandeling|ervaring)|premium ervaring)\b/i.test(t),
+    test: (t) =>
+      /\b(luxueus|exclusieve? (behandeling|ervaring)|premium ervaring)\b/i.test(
+        t,
+      ),
     grens: 0,
   },
   {
@@ -124,7 +144,9 @@ const REGELS = [
     uitleg: 'Zoals "Ontdek nu", "Klik hier", "Boek vandaag nog".',
     test: (t, ruw) =>
       isKnop(ruw) &&
-      /^(ontdek nu|klik hier|claim jouw plek|boek vandaag|mis het niet|nog maar enkele)/i.test(t),
+      /^(ontdek nu|klik hier|claim jouw plek|boek vandaag|mis het niet|nog maar enkele)/i.test(
+        t,
+      ),
     grens: 0,
   },
   {
@@ -141,7 +163,10 @@ const REGELS = [
     naam: "zichtbare redactievlag",
     bron: "Medische toon en controle",
     uitleg: "ROJDA-CHECK en soortgenoten horen nooit op het scherm.",
-    test: (t) => /\[(ROJDA-CHECK|MEDISCHE-CHECK|COPY-NODIG|PRIJS-NODIG|GEGEVEN-NODIG)/i.test(t),
+    test: (t) =>
+      /\[(ROJDA-CHECK|MEDISCHE-CHECK|COPY-NODIG|PRIJS-NODIG|GEGEVEN-NODIG)/i.test(
+        t,
+      ),
     grens: 0,
   },
   {
@@ -163,7 +188,9 @@ const REGELS = [
       /\b(daarom staan|daarom staat|hier staat|deze pagina)\b[^.!?]{0,60}\b(eerlijk|volledig|compleet|niets weg)\b/i.test(
         t,
       ) ||
-      /\b(is geen eerlijkheid maar|een folder van de fabrikant|zonder omweg)\b/i.test(t),
+      /\b(is geen eerlijkheid maar|een folder van de fabrikant|zonder omweg)\b/i.test(
+        t,
+      ),
     grens: 0,
   },
   {
@@ -199,7 +226,9 @@ const ontkenningskoppen = regels.filter(
   (r) => /^\*\*[^*]+\*\*$/.test(r.t) && /\b(geen|niet|nooit)\b/i.test(r.t),
 );
 
-console.log(`${regels.length} zichtbare tekstregels, getoetst aan DIBA-COPY-STYLE-GUIDE.md\n`);
+console.log(
+  `${regels.length} zichtbare tekstregels, getoetst aan DIBA-COPY-STYLE-GUIDE.md\n`,
+);
 
 if (!bevindingen.length) {
   console.log("ok — geen van de regels uit de gids overtreden.");
@@ -207,7 +236,8 @@ if (!bevindingen.length) {
   for (const { r, raak } of bevindingen) {
     console.log(`${String(raak.length).padStart(4)}x  ${r.naam}   [${r.bron}]`);
     console.log(`        ${r.uitleg}`);
-    for (const x of raak.slice(0, 3)) console.log(`        ${x.pad}  ${kaal(x.t).slice(0, 82)}`);
+    for (const x of raak.slice(0, 3))
+      console.log(`        ${x.pad}  ${kaal(x.t).slice(0, 82)}`);
     if (raak.length > 3) console.log(`        ... en nog ${raak.length - 3}`);
     console.log("");
   }
@@ -226,15 +256,24 @@ const REDACTIETAAL =
 const metaFouten = [];
 for (const z of zoekresultaten) {
   if (z.soort !== "Google-omschrijving") continue;
-  if (REDACTIETAAL.test(z.tekst) || /\bVermeld per\b|\bals dit afzonderlijk is gecontroleerd\b/i.test(z.tekst))
+  if (
+    REDACTIETAAL.test(z.tekst) ||
+    /\bVermeld per\b|\bals dit afzonderlijk is gecontroleerd\b/i.test(z.tekst)
+  )
     metaFouten.push([z.pad, "leest als een notitie aan onszelf", z.tekst]);
   else if (z.tekst.length > 160)
-    metaFouten.push([z.pad, `${z.tekst.length} tekens; Google knipt rond 160 af`, z.tekst]);
+    metaFouten.push([
+      z.pad,
+      `${z.tekst.length} tekens; Google knipt rond 160 af`,
+      z.tekst,
+    ]);
 }
 
 const paginas = new Set(zoekresultaten.map((z) => z.pad));
 const metOmschrijving = new Set(
-  zoekresultaten.filter((z) => z.soort === "Google-omschrijving").map((z) => z.pad),
+  zoekresultaten
+    .filter((z) => z.soort === "Google-omschrijving")
+    .map((z) => z.pad),
 );
 const zonder = [...paginas].filter((p) => !metOmschrijving.has(p));
 
@@ -242,10 +281,13 @@ if (metaFouten.length || zonder.length) {
   console.log("\nWat Google laat zien:");
   for (const [p, waarom, tekst] of metaFouten)
     console.log(`  ${p}  ${waarom}\n        ${tekst.slice(0, 88)}`);
-  for (const p of zonder) console.log(`  ${p}  geen omschrijving; Google kiest er zelf een`);
+  for (const p of zonder)
+    console.log(`  ${p}  geen omschrijving; Google kiest er zelf een`);
   console.log("");
 } else {
-  console.log(`\n${metOmschrijving.size} pagina's hebben een eigen omschrijving, alle binnen de lengte.\n`);
+  console.log(
+    `\n${metOmschrijving.size} pagina's hebben een eigen omschrijving, alle binnen de lengte.\n`,
+  );
 }
 
 console.log(

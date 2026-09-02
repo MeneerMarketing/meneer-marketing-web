@@ -300,9 +300,9 @@ export default function LaserontharingPage() {
           <div>
             <Label opDonker>Volgende stap</Label>
             <h2 className="diba-display-m mt-5 max-w-[18ch]">
-              Eerst je opbouw,
+              Stel het samen
               <br />
-              <span className="diba-accent-on-dark">daarna pas een datum.</span>
+              <span className="diba-accent-on-dark">voordat je boekt</span>
             </h2>
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               In de configurator stel je zelf samen wat je wilt en zie je het

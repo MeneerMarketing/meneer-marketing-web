@@ -113,7 +113,7 @@ export default function PcosPage() {
           <BeeldVignet
             src="/images/shoot/behandelaar-op-bank.jpg"
             alt="Behandelaar zit op de behandelbank in een lege behandelkamer"
-            onderschrift="Eerst zitten, dan pas liggen"
+            onderschrift="De kamer waar het gesprek begint"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/10] lg:aspect-[2/1]"
           />

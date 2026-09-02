@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 2 september 2026 · 103 pagina's
+Diba Clinics · gegenereerd op 2 september 2026 · 107 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -304,7 +304,7 @@ WAT ER WEL EN NIET IN HUIS KOMT
 
 **Elk principe heeft een rekening.**
 
-- Eerst meten, dan pas behandelen Elk traject begint met een meting, ook als je precies weet wat je wil. Zonder nulpunt is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel. WAT HET ONS KOST Een afspraak die geen behandeling is. Een deel van de mensen haakt daar af, want ze wilden vandaag geholpen worden en niet gemeten.
+- Elk traject begint met een meting Elk traject begint met een meting, ook als je precies weet wat je wil. Zonder nulpunt is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel. WAT HET ONS KOST Een afspraak die geen behandeling is. Een deel van de mensen haakt daar af, want ze wilden vandaag geholpen worden en niet gemeten.
 
 - Nee zeggen mag, en gebeurt Past een behandeling niet bij je huid, bij je hersteltijd of bij het moment, dan hoor je dat. Ook als je er speciaal voor gekomen bent. WAT HET ONS KOST Omzet, direct en meetbaar. Elke nee is een behandeling die niet geboekt wordt, en er staat niets tegenover behalve dat het klopt.
 
@@ -450,7 +450,7 @@ Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment
 
 ### /huidproblemen
 
-**Tabbladtitel:** Huidproblemen: elk probleem zijn eigen eerste vraag | Diba Clinics
+**Tabbladtitel:** Huidproblemen behandelen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.
 
@@ -738,7 +738,7 @@ In de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies 
 
 ### /huidproblemen/acne-littekens
 
-**Tabbladtitel:** Acnelittekens en acnevlekjes behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Acnelittekens behandelen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Acnevlekjes zijn vaak geen litteken maar kleur. Met schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.
 
@@ -1428,7 +1428,7 @@ We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, da
 
 ### /huidproblemen/droge-huid
 
-**Tabbladtitel:** Droge huid of uitgedroogde huid: wat is het verschil? | Diba Clinics
+**Tabbladtitel:** Droge of vochtarme huid: het verschil | Diba Clinics
 
 **Google-omschrijving:** Een droge huid mist vet, een vochtarme huid mist water, en dat vraagt om iets anders. Hoe je het verschil ziet en wat er bij jou past.
 
@@ -1468,7 +1468,7 @@ De barrière lekt water én mist het vet om dat tegen te houden. Vaak is er een 
 
 *WAT ER DAN MOET GEBEUREN*
 
-Eerst afbouwen, dan opbouwen. Weglaten levert hier meer op dan toevoegen, en dat kost je niets.
+Hier levert weglaten meer op dan toevoegen. Je routine kleiner maken kost je niets en geeft de barrière de ruimte om zich te herstellen.
 
 > knop: LAAT METEN WAAR JE ECHT ZIT
 
@@ -1680,7 +1680,7 @@ Er staat op deze pagina bewust geen knop om bij ons een afspraak te maken. Heb j
 
 ### /huidproblemen/gerstekorrels
 
-**Tabbladtitel:** Gerstekorrels en milia: wit bolletje of ontsteking | Diba Clinics
+**Tabbladtitel:** Gerstekorrels en milia verwijderen | Diba Clinics
 
 **Google-omschrijving:** Een hard wit bolletje dat je niet kunt uitdrukken is een milium en in seconden weg. Een rood, pijnlijk bultje is iets anders en hoort bij de huisarts.
 
@@ -2534,7 +2534,7 @@ In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. 
 
 ### /huidproblemen/ingegroeide-haren
 
-**Tabbladtitel:** Ingegroeide haren en scheerbultjes behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Ingegroeide haren behandelen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Zit er een haar in het bultje, of niet? Dat bepaalt of ontharen bij jou iets oplevert. Met fel licht en een spiegel kom je zelf een heel eind.
 
@@ -2650,7 +2650,7 @@ In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw 
 
 ### /huidproblemen/keratosis-pilaris
 
-**Tabbladtitel:** Keratosis pilaris en kippenvelhuid in Rotterdam | Diba Clinics
+**Tabbladtitel:** Keratosis pilaris behandelen | Diba Clinics
 
 **Google-omschrijving:** Ruwe bultjes op je bovenarmen die niet weggaan. Niet te genezen, wel te verzachten, en scrubben maakt het juist erger.
 
@@ -2948,7 +2948,7 @@ Bij een rood litteken of rode striae is dit het moment waarop het het meeste uit
 
 ### /huidproblemen/melasma
 
-**Tabbladtitel:** Melasma behandelen in Rotterdam: eerst de diepte | Diba Clinics
+**Tabbladtitel:** Melasma behandelen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Bij melasma bepaalt de diepte van het pigment wat mogelijk is, en die zie je in gewoon licht niet. Waarom we altijd met een UV-scan beginnen.
 
@@ -3096,7 +3096,7 @@ We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je 
 
 ### /huidproblemen/moedervlekken
 
-**Tabbladtitel:** Moedervlekken: waar je op let en waar je heen gaat | Diba Clinics
+**Tabbladtitel:** Moedervlekken: waar je op moet letten | Diba Clinics
 
 **Google-omschrijving:** Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.
 
@@ -3192,7 +3192,7 @@ Er staat op deze pagina expres nergens een knop om bij ons een afspraak te maken
 
 ### /huidproblemen/onzuivere-huid
 
-**Tabbladtitel:** Onzuivere huid en mee-eters behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Onzuivere huid en mee-eters | Diba Clinics
 
 **Google-omschrijving:** De meeste puntjes op je neus zijn geen mee-eters maar talgfilamenten, en die horen er te zijn. Met zijlicht zie je zelf welke van de twee je hebt.
 
@@ -3308,7 +3308,7 @@ In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normal
 
 ### /huidproblemen/ouderdomsvlekken
 
-**Tabbladtitel:** Ouderdomsvlekken en zonnevlekken behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Ouderdomsvlekken behandelen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld
 
@@ -3448,7 +3448,7 @@ In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het p
 
 ### /huidproblemen/pigmentvlekken
 
-**Tabbladtitel:** Pigmentvlekken en melasma behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Pigmentvlekken behandelen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Bij pigmentvlekken telt het seizoen zwaarder dan de techniek. Waarom we in de zomer terughoudend zijn en wanneer we wel behandelen.
 
@@ -3874,7 +3874,7 @@ Er staat op deze pagina geen knop om bij ons een afspraak te maken. Neem je nage
 
 ### /huidproblemen/rimpels
 
-**Tabbladtitel:** Rimpels en fijne lijntjes behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Rimpels behandelen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Beweegt de lijn mee of blijft hij staan? Dat verschil bepaalt volledig wat er zin heeft, en je maakt het zelf met een spiegel.
 
@@ -4690,6 +4690,14 @@ Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en g
 
 - Afbouwen Een traject eindigt met wat je zelf volhoudt. Anders komt het terug en begint alles opnieuw.
 
+**Wat je ervan merkt in de stoel**
+
+Het traject begint met een meting en een gesprek, niet met een behandeling. Wat daaruit komt bepaalt de volgorde, en die volgorde is de kern: ontsteking eerst, littekens later, nooit tegelijk.
+
+Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en deels controle, en bij elke controle wordt er opnieuw gemeten onder dezelfde belichting.
+
+Tussen de afspraken door doe jij het meeste werk, met de producten en het schema dat je meekrijgt. Dat is geen bijzaak: het bepaalt of de sessies opleveren wat ze kunnen.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -4790,6 +4798,12 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Direct verder Geen roodheid om te verbergen, geen dag om vrij te nemen.
 
+**Wat je ervan merkt in de stoel**
+
+Vijf minuten, en het is vooral koud. De gasstroom komt onder druk uit een handstuk dat op tien centimeter van je gezicht blijft, en die kou is scherp en meteen weg zodra het handstuk verder gaat.
+
+Er komt geen naald aan te pas en er wordt niets weggehaald. Je kunt er direct mee de deur uit, en veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -4887,6 +4901,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 - Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. BLIJFT ONAANGEROERD
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat je ervan merkt in de stoel**
+
+De eerste afspraak duurt kort. Er gaat een masker op je gezicht dat je zelf mee naar huis neemt en er thuis afhaalt, na het aantal uren dat je meekrijgt. Dat aantal is geen richtlijn maar een afspraak.
+
+De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat schema volgen bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.
+
+Vervellen hoort erbij en dat is de fase waarin mensen afhaken. Daarom bespreken we vooraf wanneer je hiermee begint: niet vlak voor een vakantie en niet in een drukke periode.
 
 **Wat een behandeling met je huid doet**
 
@@ -4994,6 +5016,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Rood naar huis Eén tot drie dagen, alsof je te lang in de zon hebt gezeten. Make-up de eerste dag niet.
 
+**Wat je ervan merkt in de stoel**
+
+Hetzelfde verloop als bij de SkinPen: verdovende crème, een half uur wachten, en dan de pen in banen over de zone. De Dermapen werkt sneller, dus een vlak is eerder af.
+
+De diepte wordt per zone bijgesteld. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, en dat merk je: hoe dieper, hoe meer druk je voelt.
+
+Erna gelden dezelfde afspraken. Een tot drie dagen rood, de eerste dag met rust laten, en zonbescherming daarna niet overslaan.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -5088,6 +5118,12 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
 
+**Wat je ervan merkt in de stoel**
+
+Je huid wordt strak getrokken en het mesje gaat er onder een vaste hoek overheen, in korte halen. Het geluid is het gekste eraan: een zacht schrapen dat je in je kaak voelt meer dan op je huid. Pijn doet het niet.
+
+Vlak erna is je gezicht opvallend glad en neemt het crème makkelijker op. De donshaartjes komen terug zoals ze waren, dus wie het bevalt komt ongeveer maandelijks terug.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -5165,6 +5201,14 @@ Fibromen zijn goedaardige huidaanhangsels die vaak in de hals, oksels of liezen 
 - Weghalen Per plekje een korte handeling. Meerdere achter elkaar binnen hetzelfde kwartier.
 
 - Korstjes Die vallen er in dagen vanzelf af. Niet krabben, want dan wordt het wel een litteken.
+
+**Wat je ervan merkt in de stoel**
+
+Kort en gericht. Het steelwratje wordt verdoofd met een crème of een prikje en daarna verwijderd; het geheel duurt per plekje ongeveer een minuut.
+
+Er blijft een klein korstje achter dat er binnen een week tot tien dagen afgaat. Eraan zitten is de enige manier om er een litteken van te maken.
+
+We rekenen per kwartier en niet per plekje, dus meerdere in één afspraak is meestal voordeliger dan een paar keer terugkomen.
 
 **Wat een behandeling met je huid doet**
 
@@ -5286,6 +5330,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Warm en rood Van een paar uur tot enkele dagen, afhankelijk van welke behandeling je kreeg.
 
+**Wat je ervan merkt in de stoel**
+
+Je krijgt een beschermbril op en die blijft de hele behandeling op. Wat je voelt hangt af van de modus: bij de verwarmende stand is het een oplopende warmte die net voor het ongemakkelijke stopt, bij de andere korte tikjes.
+
+De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.
+
+Erna ben je meestal rood en warm, alsof je te lang in de zon hebt gezeten. Dat trekt in een paar uur tot een dag weg.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -5392,6 +5444,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Enkele dagen droog De huid schilfert licht en voelt gevoelig. Geen strakke kleding en geen sauna.
 
+**Wat je ervan merkt in de stoel**
+
+Een behandeling in een gebied waar je je kwetsbaar voelt, en daar wordt naar gehandeld. Je hoort vooraf precies wat er gebeurt en wat je aan- of uithoudt, en je kunt op elk moment zeggen dat het genoeg is.
+
+De behandeling zelf is een peeling: vloeistof erop, kort inwerken, eraf. Prikken hoort erbij, branden niet.
+
+Erna is de huid daar een paar dagen gevoeliger. Strakke kleding en sporten laat je die dagen even.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -5481,6 +5541,12 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 - Opname onder vast licht Zelfde lamp, zelfde afstand, zelfde stand. Dat maakt vergelijken mogelijk.
 
 - Samen kijken Je ziet hetzelfde scherm als wij, ook als het meevalt.
+
+**Wat je ervan merkt in de stoel**
+
+Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zijn. De opnames zijn in een paar minuten klaar: gewoon licht, gepolariseerd licht en UV, achter elkaar door. Je merkt er niets van, want er raakt niets je huid.
+
+De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel, en soms is dat voorstel om even niets te doen.
 
 **Wat een behandeling met je huid doet**
 
@@ -5580,6 +5646,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
 
+**Wat je ervan merkt in de stoel**
+
+Je ligt achterover en het mondstuk gaat in banen over je gezicht. Wat je voelt is vooral de zuiging: een licht trekkend gevoel dat rond je neus en kin sterker is dan op je wangen. Pijn hoort er niet bij; wel merk je duidelijk waar een porie vastzit.
+
+Tussendoor wisselt de behandelaar van tip en van vloeistof. De laatste stap voelt koeler dan de rest, omdat er dan serum in plaats van alleen zuiging op je huid komt.
+
+Erna ben je meteen klaar. Je huid is roze en voelt strak aan, en dat trekt binnen een uur weg. Make-up kan diezelfde dag, al is het zonde van het resultaat om er meteen overheen te gaan.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -5655,6 +5729,14 @@ Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een me
 - Drie maanden Een vast schema met controles ertussen, zodat er bijgestuurd wordt voordat het misloopt.
 
 - Wat erna Je gaat naar huis met iets wat je zelf kunt volhouden. Dat is het echte doel.
+
+**Wat je ervan merkt in de stoel**
+
+Hetzelfde traject, ingericht op een leven met school, sport en een bijbaan. De afspraken zijn korter en de thuisroutine is met opzet klein gehouden: drie stappen die je ook volhoudt als je te laat opstaat.
+
+Ouders mogen mee naar binnen en hoeven dat niet. Dat is aan jou en niet aan hen, en dat zeggen we ook zo.
+
+Bij de controles kijken we samen naar de meting van de vorige keer. Niet om te beoordelen of je je best hebt gedaan, maar om te zien of het plan klopt.
 
 **Wat een behandeling met je huid doet**
 
@@ -5750,6 +5832,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
 
+**Wat je ervan merkt in de stoel**
+
+De zone wordt geschoren als dat nog niet gebeurd is, want de laser moet bij de wortel kunnen en niet bij het haar erboven. Daarna gaat er een bril op en werkt de behandelaar de zone in banen af.
+
+Elke puls voelt als een warm tikje, met een koude stoot er direct omheen. Op je bovenlip en langs je bikinilijn voel je meer dan op je benen; dat is overal zo en het gaat snel voorbij.
+
+Erna is de zone een paar uur rood en warm. Sauna, sport en zon laat je die dag even, en zonbescherming hoort daarna bij het traject en niet erna.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -5837,6 +5927,14 @@ Littekens van een operatie reageren anders dan littekens van acne: ze zijn lange
 - De reeks Meestal meerdere sessies met weken ertussen, want het herstel doet het werk en niet de behandeling zelf.
 
 - Vergelijken Foto's onder hetzelfde licht. Bij littekens maakt de lamp het verschil groter dan de behandeling.
+
+**Wat je ervan merkt in de stoel**
+
+De eerste afspraak gaat vooral over kijken en meten. Hoe oud een litteken is en hoe het aanvoelt bepaalt wat er mogelijk is, en dat is een gesprek dat je niet in vijf minuten voert.
+
+De behandeling zelf hangt af van wat eruit komt, en dat verschilt per litteken. Wat overal geldt is dat het een reeks is en geen losse sessie, met tussenpozen die het weefsel de tijd geven.
+
+Bij een litteken na een operatie of keizersnede rekenen we naar lengte. Dat hoor je vooraf, in een bedrag en niet in een schatting.
 
 **Wat een behandeling met je huid doet**
 
@@ -5940,6 +6038,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Klaar Geen roodheid, geen wachttijd, geen instructies voor thuis.
 
+**Wat je ervan merkt in de stoel**
+
+Je ligt met je ogen dicht onder een paneel dat op een handbreedte van je gezicht hangt. Er is licht en er is verder niets: geen warmte, geen tinteling, geen geluid.
+
+De meeste mensen vinden het het rustigste kwartier van hun week. Het wordt vaak gecombineerd met een andere behandeling in dezelfde afspraak.
+
+Erna kun je direct door met je dag. Er is niets aan je huid gebeurd waar iets van hoeft te herstellen.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -6021,6 +6127,14 @@ Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen
 - Pulsen op het gehemelte In een vast patroon over het weefsel, in ongeveer een half uur. Je zit erbij en je bent bij kennis.
 
 - Drie keer, met weken ertussen Het weefsel trekt tussen de sessies door aan. Na de derde weet je wat het bij jou doet.
+
+**Wat je ervan merkt in de stoel**
+
+Deze behandeling gaat niet over je huid maar over je gehemelte. Je mond blijft open met een spreider, en de laser werkt achterin, in drie of vier doorgangen.
+
+Het is warm en het is even wennen, maar het doet geen pijn en er wordt niets gesneden. Verdoving is niet nodig en narcose al helemaal niet.
+
+Erna kun je gewoon eten en drinken. Sommige mensen hebben een dag een wat droge keel.
 
 **Wat een behandeling met je huid doet**
 
@@ -6126,6 +6240,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
 
+**Wat je ervan merkt in de stoel**
+
+Er gaat een koele gel op en daarna komt het handstuk op je huid. Elke flits voelt als een kort tikje met een elastiekje, en je ziet hem ook door je oogleden heen; daarom gaat er een bril op.
+
+Bij vaatjes en pigment is de reactie meteen te zien: een vaatje wordt donkerder, een pigmentvlek komt tijdelijk scherper naar voren. Dat hoort erbij en betekent niet dat het erger wordt.
+
+Erna ben je een paar uur rood. Pigment dat naar boven komt vervaagt in de dagen erna. Zonbescherming is hier geen advies maar onderdeel van de behandeling.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -6203,6 +6325,12 @@ Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoff
 - Losmaken en inbrengen De kop gaat over je huid en doet twee dingen tegelijk: de bovenste laag los, de stoffen erin.
 
 - Meteen weer de deur uit Je huid is kort roze en dat trekt binnen een uur weg. Make-up mag dezelfde dag.
+
+**Wat je ervan merkt in de stoel**
+
+Een klein handstuk gaat over je huid terwijl er een gel op ligt. De twee reageren met elkaar en dat bruist licht: je hoort het meer dan dat je het voelt. Het is een van de rustigste behandelingen die we doen.
+
+Erna is je huid roze en voelt hij zacht aan. Je kunt meteen door met je dag; er is niets waar je rekening mee hoeft te houden behalve zonbescherming, en die geldt sowieso.
 
 **Wat een behandeling met je huid doet**
 
@@ -6318,6 +6446,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Neutraliseren en beschermen Daarna zon vermijden. Dat is geen advies maar een voorwaarde.
 
+**Wat je ervan merkt in de stoel**
+
+De vloeistof gaat met een kwastje in lagen op je huid. Binnen een halve minuut begint het te prikken of te tintelen, en dat loopt op naarmate er lagen bij komen. De behandelaar kijkt naar je huid én naar de klok; dat samen bepaalt wanneer het eraf gaat.
+
+Prikken hoort erbij, branden niet. Zeg het dus als het die kant op gaat, want dat is precies het moment waarop er iets moet gebeuren.
+
+Wat erna komt hangt af van de sterkte. Bij een lichte peeling is je huid een dag wat rood en droog. Bij een sterkere ga je vervellen, en dan is de belangrijkste afspraak dat je er niet aan plukt.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -6427,6 +6563,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 - De injector De naald zit los van de spuit gemonteerd en beweegt dus niet met de hand mee. Dat is het hele voordeel van dit apparaat.
 
 - Kort rood Soms kleine bultjes waar de naald ging. Meestal binnen een dag weg.
+
+**Wat je ervan merkt in de stoel**
+
+Dit is een injectiebehandeling, dus er zijn prikjes. De injector zet ze snel achter elkaar en op een gelijke diepte, wat het gelijkmatiger maakt dan met de hand. Verdovende crème vooraf hoort erbij.
+
+Vlak erna zie je kleine bultjes op de plek van elke prik. Die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.
+
+Plan dit dus niet vlak voor iets waar je op de foto moet.
 
 **Wat een behandeling met je huid doet**
 
@@ -6542,6 +6686,14 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Rust geven Daarna niets erop wat er niet op hoeft.
 
+**Wat je ervan merkt in de stoel**
+
+Er gaat eerst een verdovende crème op, die een half uur moet intrekken. Daarna gaat de pen in banen over de zone. Wat je voelt is een trilling en een druk, het sterkst op je voorhoofd en rond je kaaklijn, waar de huid dun over bot ligt.
+
+Direct erna ben je rood, ongeveer als een stevige zonnegloed, en voelt je huid warm. Dat zakt in een tot drie dagen. De eerste vierentwintig uur laat je je huid met rust: geen make-up, geen sport, geen sauna.
+
+Wat je ziet komt niet die week. Bindweefsel bouwt zich over weken op, dus de vergelijking die telt is die met de meting van vóór de eerste sessie.
+
 **Wat een behandeling met je huid doet**
 
 Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
@@ -6619,6 +6771,14 @@ Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen
 - Wachten op de uitslag De uitslag komt van het laboratorium en niet uit de behandelkamer.
 
 - Samen doornemen Wat er staat en wat het niet betekent. Dat tweede is bij dit soort tests het belangrijkste deel.
+
+**Wat je ervan merkt in de stoel**
+
+Dit is geen huidbehandeling. Er wordt een klein beetje bloed afgenomen en dat gaat naar een laboratorium; in de kliniek zelf ben je binnen een kwartier klaar.
+
+De uitslag bespreken we in een aparte afspraak, want een lijst met waardes zonder uitleg leidt vooral tot onnodig schrappen in je eten.
+
+Wat een intolerantietest wel en niet kan zeggen hoor je in dat gesprek, en ook als het antwoord is dat je er in jouw geval weinig aan hebt.
 
 **Wat een behandeling met je huid doet**
 
@@ -6731,6 +6891,12 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 - De sessies Zes voor mannen, acht voor vrouwen, met weken ertussen. Dat aantal is het traject en geen richtprijs.
 
 - Thuis doorgaan De producten horen bij het traject en staan in de prijs. Overslaan haalt de rest onderuit.
+
+**Wat je ervan merkt in de stoel**
+
+Injecties in de hoofdhuid, met een injector die de diepte gelijk houdt. Het is een reeks prikjes die snel achter elkaar gaan; de hoofdhuid is gevoelig, en dat merk je vooral in de eerste minuut.
+
+Dit is een traject en geen losse sessie. Wat je ervan ziet komt over maanden, want haar groeit nu eenmaal niet sneller omdat je het graag wil.
 
 **Wat een behandeling met je huid doet**
 
@@ -8294,31 +8460,43 @@ a.s.r. heeft een vergoedingenvinder waarin je op behandeling zoekt, plus de poli
 
 > knop: NAAR A.S.R. ↗
 
-Deze verwijzing is gecontroleerd in augustus 2026. Wat daar staat gaat altijd voor op wat hier staat.
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Vier vragen die het antwoord opleveren.**
+**Waar het bij a.s.r. op vastloopt.**
 
-Bel je a.s.r., stel ze dan alle vier. Alleen naar het bedrag vragen levert een getal op waar je later niets aan blijkt te hebben.
+Bij a.s.r. zit de voorwaarde niet in de vergoedingenvinder maar in de polisvoorwaarden. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.
 
-- Moet de behandelaar geregistreerd zijn? Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.
+Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
-- Heb ik een verwijzing nodig, en van wie? Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.
+**Wat a.s.r. van ons vraagt**
 
-- Waar komt dit uit, en hoeveel is er nog over? Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.
+a.s.r. koppelt het recht op vergoeding aan de beroepsvereniging: de behandelaar moet aangesloten zijn bij een vereniging die zij erkennen. Welke dat zijn staat in de polisvoorwaarden en niet in de vergoedingenvinder.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.
+Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
 
-**Eén vraag komt hier nog vóór.**
+**Zo kom je bij jouw eigen bedrag**
 
-Namelijk of er een medische reden is. Zonder die reden wordt er door geen enkele verzekeraar iets vergoed, ook niet door a.s.r., en dan is de rest van deze pagina niet nodig. Voor het grootste deel van wat wij doen is dat het antwoord.
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.
+- STAP 1 Zoek de behandeling op in de vergoedingenvinder. Dat geeft je het overzicht per verzekering.
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.
+- STAP 2 Ga daarna naar de polisvoorwaarden als pdf, want de voorwaarde over de beroepsvereniging staat daar en niet in de vinder.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.
+- STAP 3 Weet je niet zeker of je behandelaar aan die eis voldoet, bel ons dan; wij weten bij welke vereniging we zijn aangesloten.
+
+**De vragen die er bij a.s.r. toe doen**
+
+Hieronder staat wat a.s.r. er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
+
+- Heb ik een verwijzing nodig? Dat staat niet in de vergoedingenvinder maar in de polisvoorwaarden, net als de eis over de beroepsvereniging. Vraag er bij het bellen expliciet naar; de vinder geeft je het bedrag en niet de voorwaarde.
+
+- Deel ik dit budget met iets anders? Dat verschilt per verzekering. a.s.r. zet de maxima in een apart overzicht naast de vergoedingenvinder, dus kijk daar en niet alleen bij de behandeling zelf.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+
+Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook a.s.r. niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -8360,7 +8538,7 @@ CZ heeft per behandeling een eigen pagina: huidbehandelingen, acnebehandeling en
 
 > knop: NAAR CZ ↗
 
-Deze verwijzing is gecontroleerd in augustus 2026. Wat daar staat gaat altijd voor op wat hier staat.
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
@@ -8370,27 +8548,33 @@ Omdat elke behandeling een eigen pagina en een eigen voorwaarde heeft, kan het a
 
 Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
-**Vier vragen die het antwoord opleveren.**
+**Wat CZ van ons vraagt**
 
-Bel je CZ, stel ze dan alle vier. Alleen naar het bedrag vragen levert een getal op waar je later niets aan blijkt te hebben.
+CZ noemt op de algemene pagina geen registratie-eis, maar de voorwaarde staat per behandeling in de polisvoorwaarden. Vraag er dus naar bij de behandeling die jij wil, en niet in het algemeen.
 
-- Moet de behandelaar geregistreerd zijn? Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.
+Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
 
-- Heb ik een verwijzing nodig, en van wie? Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.
+**Zo kom je bij jouw eigen bedrag**
 
-- Waar komt dit uit, en hoeveel is er nog over? Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.
+- STAP 1 Ga naar de pagina van jouw behandeling, dus acnebehandeling of gezichtsontharing, en niet naar de algemene pagina huidbehandelingen.
 
-**Eén vraag komt hier nog vóór.**
+- STAP 2 Log in op Mijn CZ of gebruik de app; je eigen bedrag staat er pas als CZ weet welk pakket je hebt.
 
-Namelijk of er een medische reden is. Zonder die reden wordt er door geen enkele verzekeraar iets vergoed, ook niet door CZ, en dan is de rest van deze pagina niet nodig. Voor het grootste deel van wat wij doen is dat het antwoord.
+- STAP 3 Staat er een voorwaarde bij over de behandelaar, bel ons dan even. Wij weten of we eraan voldoen en jij kunt dat niet zien.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.
+**De vragen die er bij CZ toe doen**
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.
+Hieronder staat wat CZ er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.
+- Heb ik een verwijzing nodig? Voor een behandeling bij de dermatoloog wel, en die loopt dan via de basisverzekering met eigen risico. Voor de huidtherapeut noemt CZ geen verwijzing op de algemene pagina; kijk op de pagina van jouw behandeling, want daar staan de voorwaarden.
+
+- Deel ik dit budget met iets anders? CZ zet acne, camouflagetherapie en gezichtsontharing elk op een eigen pagina met een eigen voorwaarde. Vraag daarom per behandeling na wat er nog over is; het antwoord voor acne hoeft niet te gelden voor ontharing.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+
+Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook CZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -8432,37 +8616,43 @@ Menzis werkt met vergoedingenwijzers: pdf-overzichten per jaar waarin per zorgso
 
 > knop: NAAR MENZIS ↗
 
-Deze verwijzing is gecontroleerd in augustus 2026. Wat daar staat gaat altijd voor op wat hier staat.
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
 **Waar het bij Menzis op vastloopt.**
 
-Menzis vraagt een verwijzing van je huisarts voor behandeling door een huidtherapeut. Regel die vóór de eerste afspraak, want achteraf lukt het bijna nooit meer.
+Bij Menzis draait het om het contract. Ga je naar een huidtherapeut die zij niet erkennen, dan schiet je zelf voor en krijg je hooguit een deel terug. Kijk dus eerst in hun Zorgvinder en pas daarna naar het bedrag.
 
 Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
-**Vier vragen die het antwoord opleveren.**
+**Wat Menzis van ons vraagt**
 
-Bel je Menzis, stel ze dan alle vier. Alleen naar het bedrag vragen levert een getal op waar je later niets aan blijkt te hebben.
+Menzis werkt met contracten. Je gaat naar een huidtherapeut die zij erkennen, en welke dat zijn staat in hun Zorgvinder. Bij een gecontracteerde behandelaar gaat de rekening rechtstreeks naar Menzis in plaats van naar jou.
 
-- Moet de behandelaar geregistreerd zijn? Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.
+Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
 
-- Heb ik een verwijzing nodig, en van wie? Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.
+**Zo kom je bij jouw eigen bedrag**
 
-- Waar komt dit uit, en hoeveel is er nog over? Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.
+- STAP 1 Zoek de behandeling op in de vergoedingenwijzer van het lopende jaar; Menzis werkt met pdf-overzichten per jaar en per pakket.
 
-**Eén vraag komt hier nog vóór.**
+- STAP 2 Kijk in de Zorgvinder of je behandelaar gecontracteerd is. Dat bepaalt of je zelf moet voorschieten.
 
-Namelijk of er een medische reden is. Zonder die reden wordt er door geen enkele verzekeraar iets vergoed, ook niet door Menzis, en dan is de rest van deze pagina niet nodig. Voor het grootste deel van wat wij doen is dat het antwoord.
+- STAP 3 Ga je via de aanvullende verzekering, houd dan rekening met een eigen bijdrage per behandeling naast het maximum.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.
+**De vragen die er bij Menzis toe doen**
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.
+Hieronder staat wat Menzis er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.
+- Heb ik een verwijzing nodig? Dat hangt af van waar het uit komt. Uit de basisverzekering wil Menzis een schriftelijke verwijzing van je huisarts of een medisch specialist. Komt het uit je aanvullende verzekering, dan is die verwijzing niet nodig.
+
+- Deel ik dit budget met iets anders? Ja. Het maximum uit de aanvullende verzekering geldt voor acnebehandeling en camouflagetherapie samen, producten inbegrepen. Reken er ook op dat er per behandeling een eigen bijdrage geldt naast dat maximum.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+
+Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook Menzis niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -8504,7 +8694,7 @@ ONVZ zet zijn vergoedingen per jaar en per pakket op een eigen pagina, met een l
 
 > knop: NAAR ONVZ ↗
 
-Deze verwijzing is gecontroleerd in augustus 2026. Wat daar staat gaat altijd voor op wat hier staat.
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
@@ -8514,27 +8704,33 @@ ONVZ hanteert bij acnebehandeling een leeftijdsgrens, en de basisverzekering ver
 
 Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
-**Vier vragen die het antwoord opleveren.**
+**Wat ONVZ van ons vraagt**
 
-Bel je ONVZ, stel ze dan alle vier. Alleen naar het bedrag vragen levert een getal op waar je later niets aan blijkt te hebben.
+Vanaf 1 januari 2026 wil ONVZ dat de huidtherapeut in het Kwaliteitsregister Paramedici staat. Voor dit jaar accepteren ze daarnaast nog een inschrijving bij de NVH, om behandelaars de tijd te geven die registratie rond te krijgen.
 
-- Moet de behandelaar geregistreerd zijn? Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.
+Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
 
-- Heb ik een verwijzing nodig, en van wie? Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.
+**Zo kom je bij jouw eigen bedrag**
 
-- Waar komt dit uit, en hoeveel is er nog over? Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.
+- STAP 1 Zoek de behandeling in de A-tot-Z-lijst van het jaar en het pakket dat jij hebt; ONVZ zet elke combinatie op een eigen pagina.
 
-**Eén vraag komt hier nog vóór.**
+- STAP 2 Let op de leeftijdsgrens. Bij acnebehandeling loopt de vergoeding tot 21 jaar, met uitzondering van het hoogste pakket.
 
-Namelijk of er een medische reden is. Zonder die reden wordt er door geen enkele verzekeraar iets vergoed, ook niet door ONVZ, en dan is de rest van deze pagina niet nodig. Voor het grootste deel van wat wij doen is dat het antwoord.
+- STAP 3 Kijk of er een voorschrift van een huidarts nodig is. ONVZ koppelt de behandeling bij de huidtherapeut aan de behandeling bij de arts.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.
+**De vragen die er bij ONVZ toe doen**
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.
+Hieronder staat wat ONVZ er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.
+- Heb ik een verwijzing nodig? ONVZ koppelt de behandeling bij de huidtherapeut aan de arts: de huidarts schrijft haar voor, en je blijft zo nodig ook daar onder behandeling. De basisverzekering vergoedt de huidtherapeut zelf niet.
+
+- Geldt er een leeftijdsgrens? Ja, en dat is bij ONVZ de voorwaarde die het vaakst in de weg zit. Bij acnebehandeling loopt de vergoeding tot 21 jaar; alleen het hoogste pakket vergoedt ook daarna. Controleer dit voordat je een traject inplant.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+
+Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook ONVZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -8576,7 +8772,7 @@ VGZ zet acne, ontharen en camouflagetherapie onder één noemer huidbehandelinge
 
 > knop: NAAR VGZ ↗
 
-Deze verwijzing is gecontroleerd in augustus 2026. Wat daar staat gaat altijd voor op wat hier staat.
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
@@ -8586,27 +8782,33 @@ Bij VGZ krijg je een budget per kalenderjaar dat je over acne, camouflage en ont
 
 Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
-**Vier vragen die het antwoord opleveren.**
+**Wat VGZ van ons vraagt**
 
-Bel je VGZ, stel ze dan alle vier. Alleen naar het bedrag vragen levert een getal op waar je later niets aan blijkt te hebben.
+VGZ noemt op de pagina over huidbehandelingen geen aparte registratie-eis voor de huidtherapeut. Wat er wel staat is dat een verwijzing van je huisarts nodig is als het via de dermatoloog loopt.
 
-- Moet de behandelaar geregistreerd zijn? Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.
+Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
 
-- Heb ik een verwijzing nodig, en van wie? Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.
+**Zo kom je bij jouw eigen bedrag**
 
-- Waar komt dit uit, en hoeveel is er nog over? Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.
+- STAP 1 Open de pagina huidbehandelingen; VGZ zet acne, camouflagetherapie en ontharen daar bij elkaar.
 
-**Eén vraag komt hier nog vóór.**
+- STAP 2 Log in op Mijn VGZ met je DigiD. Daar staat wat er in jouw pakket zit en wat je er dit jaar al van gebruikt hebt.
 
-Namelijk of er een medische reden is. Zonder die reden wordt er door geen enkele verzekeraar iets vergoed, ook niet door VGZ, en dan is de rest van deze pagina niet nodig. Voor het grootste deel van wat wij doen is dat het antwoord.
+- STAP 3 Let op dat tweede getal: het budget is gedeeld, dus wat je aan het een besteedt gaat van het ander af.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.
+**De vragen die er bij VGZ toe doen**
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.
+Hieronder staat wat VGZ er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.
+- Heb ik een verwijzing nodig? Loopt het via de dermatoloog, dan verwijst je huisarts je door. Voor de huidtherapeut uit de aanvullende verzekering noemt VGZ die eis niet apart; controleer het in je eigen polisvoorwaarden.
+
+- Deel ik dit budget met iets anders? Ja. VGZ zet acne, camouflagetherapie en ontharen onder één noemer huidbehandelingen met één budget per kalenderjaar. Wat je aan het een besteedt gaat van het ander af, dus vraag ook wat je er dit jaar al van gebruikt hebt.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+
+Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook VGZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -8648,7 +8850,7 @@ Zilveren Kruis heeft een aparte pagina per onderwerp en per jaartal. Let op dat 
 
 > knop: NAAR ZILVEREN KRUIS ↗
 
-Deze verwijzing is gecontroleerd in augustus 2026. Wat daar staat gaat altijd voor op wat hier staat.
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
@@ -8658,27 +8860,33 @@ Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, 
 
 Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
-**Vier vragen die het antwoord opleveren.**
+**Wat Zilveren Kruis van ons vraagt**
 
-Bel je Zilveren Kruis, stel ze dan alle vier. Alleen naar het bedrag vragen levert een getal op waar je later niets aan blijkt te hebben.
+Zilveren Kruis stelt de scherpste eis van deze zes. De huidtherapeut moet kwaliteitsgeregistreerd staan in het Kwaliteitsregister Paramedici én een geldige persoonlijke AGB-code hebben, en die code en de beroepsvereniging moeten op de factuur staan. Ontbreekt dat, dan wijzen ze af op de factuur en niet op de behandeling.
 
-- Moet de behandelaar geregistreerd zijn? Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.
+Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
 
-- Heb ik een verwijzing nodig, en van wie? Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.
+**Zo kom je bij jouw eigen bedrag**
 
-- Waar komt dit uit, en hoeveel is er nog over? Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.
+- STAP 1 Zoek de pagina van jouw behandeling en controleer bovenaan het jaartal; oude jaargangen blijven online staan en zien er hetzelfde uit.
 
-**Eén vraag komt hier nog vóór.**
+- STAP 2 Kijk of jouw pakket erbij staat, want de hoogte hangt af van welke aanvullende verzekering je hebt.
 
-Namelijk of er een medische reden is. Zonder die reden wordt er door geen enkele verzekeraar iets vergoed, ook niet door Zilveren Kruis, en dan is de rest van deze pagina niet nodig. Voor het grootste deel van wat wij doen is dat het antwoord.
+- STAP 3 Vraag ons om de AGB-code en de beroepsvereniging van je behandelaar voordat je declareert. Dan hoeft de factuur niet terug.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.
+**De vragen die er bij Zilveren Kruis toe doen**
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.
+Hieronder staat wat Zilveren Kruis er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.
+- Heb ik een verwijzing nodig? Op de recente pagina's van Zilveren Kruis staat dat je rechtstreeks naar een zorgverlener kunt. Oudere jaargangen noemden nog een verwijzing van de huisarts of specialist, dus controleer het jaartal bovenaan de pagina die je leest.
+
+- Deel ik dit budget met iets anders? Ja. Zilveren Kruis hanteert één maximum voor acnebehandeling en epilatie samen. Doe je allebei, dan is de vraag niet wat het maximum is maar wat je er dit jaar al van gebruikt hebt.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+
+Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook Zilveren Kruis niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -8962,7 +9170,7 @@ Een lijst met dingen die we niet doen is een disclaimer. Die dekt ons in en help
 
 Er zit verschil tussen die nee's, en dat verschil is het belangrijkste op deze pagina.
 
-- Dit hoort bij een arts 4
+- Dit hoort bij een arts 5
 
 - Dit doen wij niet 3
 
@@ -8977,6 +9185,8 @@ Niet omdat we er geen zin in hebben, maar omdat het buiten het vak van een huidt
 - Een moedervlek laten weghalen Wat weggehaald wordt hoort onderzocht te worden, en dat vraagt een arts en een laboratorium. Cosmetisch weglaseren maakt onderzoek achteraf onmogelijk. WAAR DAN WEL Je huisarts, of via een verwijzing een dermatoloog. WAT WIJ HIER WÉL BIJ DOEN Steelwratjes en fibromen halen we wel weg. Die worden vaak met moedervlekken verward terwijl het iets anders is: een steelwratje hangt aan een steeltje en zit los van de huid eronder. Twijfel je welke van de twee je hebt, laat het dan zien; dat kost je niets. FIBROMEN VERWIJDEREN ›
 
 - Medicatie op recept, zoals isotretinoïne Een huidtherapeut schrijft geen medicijnen voor. Bij zware acne is dat soms precies wat er nodig is, en dan is doorsturen het juiste advies. WAAR DAN WEL Je huisarts. Loopt er al een traject met isotretinoïne, meld dat hier dan wel: het bepaalt wat er de eerste maanden daarna kan. WAT WIJ HIER WÉL BIJ DOEN Het hele acnetraject naast de medicatie, mits de timing klopt. Veel mensen komen juist ná zo een kuur voor de littekens en de textuur die overblijven, en dat is precies waar wij voor zijn. Tijdens de kuur kijken we mee zonder te behandelen. WAT WE BIJ ACNE WEL DOEN ›
+
+- PCOS behandelen PCOS is een hormonale aandoening. Wij stellen die diagnose niet, behandelen die niet en nemen de oorzaak niet weg. Wat er op je huid van te zien is kunnen we wel aanpakken, en dat is iets anders. WAAR DAN WEL Je huisarts of gynaecoloog. Die stelt vast of er sprake van is en wat eraan te doen valt. WAT WIJ HIER WÉL BIJ DOEN De zichtbare gevolgen op je huid: overbeharing, acne en pigment. Wel met een eerlijke verwachting erbij, want zolang de hormonale oorzaak er is komen de klachten terug. Bij ontharing betekent dat onderhoud in plaats van een eindpunt. PCOS EN JE HUID, PER KLACHT ›
 
 - Eczeem of psoriasis behandelen Dat zijn aandoeningen met een medische behandeling, en die valt onder de huisarts of dermatoloog. WAAR DAN WEL Je huisarts voor de aandoening zelf. WAT WIJ HIER WÉL BIJ DOEN De huid eromheen. Een droge, beschadigde barrière scheurt sneller open en dat lokt nieuwe plekken uit, dus daar valt naast de behandeling van je arts wel degelijk winst te halen. Loopt er iets bij de dermatoloog, zeg dat dan; we stemmen erop af in plaats van eroverheen te werken. WAT ECZEEM MET JE HUID DOET ›
 
@@ -9069,6 +9279,238 @@ Sta je in geen van de vier groepen, dan geldt hiervan niets en is er ook niets e
 Dan verandert er niets aan hoe het hier gaat. Deze vier pagina's bestaan omdat er per groep iets te melden valt, en niet omdat de rest ergens anders terechtkan. Alles begint bij dezelfde meting, en wat daarna volgt hangt af van wat eruit komt.
 
 > knop: PLAN BEHANDELING NUL
+
+---
+
+### /doelgroep/bruiden
+
+**Tabbladtitel:** Bruiden | Diba Clinics
+
+**Google-omschrijving:** Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere planning.
+
+**HUID VOOR JE BRUILOFT**
+
+Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere planning.
+
+Het enige wat hier echt anders is, is dat er een datum staat. Alles daarna is terugrekenen, en dat is precies wat de meeste mensen te laat doen.
+
+> knop: PLAN JE NULMETING
+
+**Wat er anders is en wat hetzelfde blijft**
+
+Er bestaat geen aparte behandellijn voor deze groep. Wat er wél verschilt staat links: de aandachtspunten die bij jouw huid of situatie horen. Rechts staat even nadrukkelijk wat er precies hetzelfde blijft als bij iedereen.
+
+DIT IS ECHT ANDERS · 3
+
+- Je rekent terug vanaf één dag Een reeks duurt maanden en resultaat komt weken na de laatste sessie. Wie drie weken van tevoren begint, boekt de hersteltijd en niet het resultaat.
+
+- Niets nieuws in de laatste weken Een eerste reactie op een nieuw middel of een nieuwe behandeling wil je niet op de dag zelf ontdekken. De laatste weken zijn voor onderhoud van wat je al kent.
+
+- De zon telt mee Een gebruinde huid vlak voor de bruiloft beperkt wat er nog kan, en een net behandelde huid verdraagt de zon slechter. Vakantie en behandeling wringen vaker dan mensen verwachten.
+
+DIT IS PRECIES HETZELFDE · 3
+
+- Het zijn gewone behandelingen Dezelfde peelings, dezelfde needling, dezelfde prijzen. Er komt geen toeslag op omdat er een jurk in het spel is.
+
+- Het begint met meten Juist met een datum in zicht wil je weten waar je aan begint, en niet gokken met de weken die je nog hebt.
+
+- Nee blijft nee Is er te weinig tijd voor wat je wil, dan zeggen we dat. Een halve reeks proppen in te weinig weken geeft de hersteltijd zonder het resultaat.
+
+**Zeg dit erbij, dan scheelt dat een keer.**
+
+Dit zijn de dingen die anders pas aan de balie boven tafel komen, en dan is de afspraak al gepland.
+
+- De datum, meteen bij het eerste contact
+
+- Of er een vakantie of zonvakantie tussen zit, en wanneer
+
+- Of je al iets gebruikt of laat doen bij iemand anders
+
+**Dan hoor je gewoon bij de rest.**
+
+Deze vier pagina's bestaan omdat er per groep iets te melden is, en niet omdat de rest ergens anders terechtkan. Alles begint bij dezelfde meting.
+
+- Jongeren Acne in de puberteit is een fase, geen fout. Wat er nu telt is voorkomen dat er littekens van overblijven.
+
+- Mannen Dikkere huid, meer talg, en één dagelijkse prikkel die de rest niet heeft: scheren.
+
+- Huid van kleur Fitzpatrick I tot en met VI kan hier terecht. Je type bepaalt niet óf iets kan, maar met welke instelling.
+
+- Iets anders Speelt er bij jou iets wat hier niet tussen staat, stuur dan een bericht. Dan hoor je meteen of het hier kan.
+
+---
+
+### /doelgroep/huid-van-kleur
+
+**Tabbladtitel:** Huid van kleur | Diba Clinics
+
+**Google-omschrijving:** Fitzpatrick I tot en met VI kan hier terecht. Je type bepaalt niet óf iets kan, maar met welke instelling.
+
+**HUID VAN KLEUR**
+
+Fitzpatrick I tot en met VI kan hier terecht. Je type bepaalt niet óf iets kan, maar met welke instelling.
+
+Meer melanine betekent niet minder mogelijkheden. Het betekent dat er meer op het spel staat als iemand de instelling verkeerd kiest, en dat is precies waarom er eerst gemeten wordt.
+
+> knop: MAAK JE HUIDPROFIEL
+
+**Wat er anders is en wat hetzelfde blijft**
+
+Er bestaat geen aparte behandellijn voor deze groep. Wat er wél verschilt staat links: de aandachtspunten die bij jouw huid of situatie horen. Rechts staat even nadrukkelijk wat er precies hetzelfde blijft als bij iedereen.
+
+DIT IS ECHT ANDERS · 3
+
+- Een prikkel kan een vlek achterlaten Bij meer pigment in de huid kan elke ontsteking of te heftige behandeling een donkere plek achterlaten die langer blijft dan de oorzaak. Dat is de belangrijkste reden om voorzichtig te beginnen en op te bouwen.
+
+- Bij laser doet de golflengte ertoe Licht van 1064 nanometer dringt dieper door en wordt minder door de bovenste huidlaag opgenomen. Daarom heeft die golflengte de voorkeur bij donkerdere huidtypes, terwijl 755 nanometer sterker werkt bij de lichtere.
+
+- Littekens kunnen dikker worden De neiging tot keloïd komt vaker voor. Dat sluit behandelen niet uit, maar het is iets wat vooraf op tafel moet en niet achteraf.
+
+DIT IS PRECIES HETZELFDE · 3
+
+- De hele lijst staat open Er is geen aparte, kortere lijst voor donkere huid. Er is een andere volgorde en een voorzichtiger opbouw.
+
+- Dezelfde meting vooraf Je huidtype hoort vastgesteld te worden en niet ingeschat aan de balie. Dat is een van de dingen waar de nulmeting voor is.
+
+- Dezelfde eerlijkheid Kan iets bij jouw huid niet veilig, dan hoor je dat, en dan hoor je ook wat er wel kan.
+
+**Zeg dit erbij, dan scheelt dat een keer.**
+
+Dit zijn de dingen die anders pas aan de balie boven tafel komen, en dan is de afspraak al gepland.
+
+- Of je eerder een donkere vlek hebt gekregen na een wondje, een puistje of een behandeling
+
+- Of er in je familie littekens zijn die dik worden en doorgroeien
+
+- Of je huid nu gebruind is, en hoe lang geleden
+
+**Dan hoor je gewoon bij de rest.**
+
+Deze vier pagina's bestaan omdat er per groep iets te melden is, en niet omdat de rest ergens anders terechtkan. Alles begint bij dezelfde meting.
+
+- Jongeren Acne in de puberteit is een fase, geen fout. Wat er nu telt is voorkomen dat er littekens van overblijven.
+
+- Mannen Dikkere huid, meer talg, en één dagelijkse prikkel die de rest niet heeft: scheren.
+
+- Bruiden Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere planning.
+
+- Iets anders Speelt er bij jou iets wat hier niet tussen staat, stuur dan een bericht. Dan hoor je meteen of het hier kan.
+
+---
+
+### /doelgroep/jongeren
+
+**Tabbladtitel:** Jongeren | Diba Clinics
+
+**Google-omschrijving:** Acne in de puberteit is een fase, geen fout. Wat er nu telt is voorkomen dat er littekens van overblijven.
+
+**HUIDZORG VOOR JONGEREN**
+
+Acne in de puberteit is een fase, geen fout. Wat er nu telt is voorkomen dat er littekens van overblijven.
+
+Er is één ding dat op jouw leeftijd echt anders is, en dat is niet je huid maar de tijd. Wat je nu voorkomt hoef je later niet te herstellen.
+
+> knop: WAT ER BIJ ACNE GEBEURT
+
+**Wat er anders is en wat hetzelfde blijft**
+
+Er bestaat geen aparte behandellijn voor deze groep. Wat er wél verschilt staat links: de aandachtspunten die bij jouw huid of situatie horen. Rechts staat even nadrukkelijk wat er precies hetzelfde blijft als bij iedereen.
+
+DIT IS ECHT ANDERS · 3
+
+- Er is meer te winnen met vroeg beginnen Actieve ontstekingen kunnen putjes achterlaten, en die zijn later moeilijker en duurder aan te pakken dan de acne zelf. Dat is de reden om er nu iets aan te doen, en niet dat je huid nu al mooi moet zijn.
+
+- De aanjager is hormonaal In de puberteit maakt je huid meer talg aan. Dat is geen gevolg van slecht wassen of verkeerd eten, en een behandeling die daar niet op ingaat werkt maar half.
+
+- Onder de zestien beslist een ouder mee Tot je twaalfde beslissen je ouders, tussen twaalf en zestien beslissen jullie samen, en vanaf zestien beslis je zelf. Dat staat zo in de wet en niet in ons beleid.
+
+DIT IS PRECIES HETZELFDE · 3
+
+- Je huid werkt hetzelfde Dezelfde lagen, dezelfde reactie op een peeling of op needling. Er bestaat geen jongerenversie van een behandeling.
+
+- Je krijgt hetzelfde eerlijke antwoord Ook als dat is dat je beter even kunt wachten, of dat je bij de huisarts meer opschiet.
+
+- Dezelfde prijzen Wat een sessie kost staat op de prijzenpagina en verandert niet met je leeftijd.
+
+**Zeg dit erbij, dan scheelt dat een keer.**
+
+Dit zijn de dingen die anders pas aan de balie boven tafel komen, en dan is de afspraak al gepland.
+
+- Of je medicatie gebruikt voor je acne, en welke
+
+- Of er in je familie littekens zijn die dik worden en doorgroeien
+
+- Je leeftijd, zodat we weten wie er mee moet beslissen
+
+**Dan hoor je gewoon bij de rest.**
+
+Deze vier pagina's bestaan omdat er per groep iets te melden is, en niet omdat de rest ergens anders terechtkan. Alles begint bij dezelfde meting.
+
+- Mannen Dikkere huid, meer talg, en één dagelijkse prikkel die de rest niet heeft: scheren.
+
+- Huid van kleur Fitzpatrick I tot en met VI kan hier terecht. Je type bepaalt niet óf iets kan, maar met welke instelling.
+
+- Bruiden Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere planning.
+
+- Iets anders Speelt er bij jou iets wat hier niet tussen staat, stuur dan een bericht. Dan hoor je meteen of het hier kan.
+
+---
+
+### /doelgroep/mannen
+
+**Tabbladtitel:** Mannen | Diba Clinics
+
+**Google-omschrijving:** Dikkere huid, meer talg, en één dagelijkse prikkel die de rest niet heeft: scheren.
+
+**HUIDZORG VOOR MANNEN**
+
+Dikkere huid, meer talg, en één dagelijkse prikkel die de rest niet heeft: scheren.
+
+Wat er anders is aan een mannenhuid is met de vinger aan te wijzen, en het is korter dan een aparte behandellijn rechtvaardigt.
+
+> knop: HOE LASERONTHARING WERKT
+
+**Wat er anders is en wat hetzelfde blijft**
+
+Er bestaat geen aparte behandellijn voor deze groep. Wat er wél verschilt staat links: de aandachtspunten die bij jouw huid of situatie horen. Rechts staat even nadrukkelijk wat er precies hetzelfde blijft als bij iedereen.
+
+DIT IS ECHT ANDERS · 3
+
+- De huid is gemiddeld dikker en vetter Meer talgklieren en een stevigere structuur. Dat verandert de instelling van een behandeling, niet de behandeling zelf.
+
+- Scheren is een dagelijkse prikkel Elke dag de bovenste laag eraf halen is iets wat de meeste huiden niet meemaken. Dat telt mee bij het plannen van een peeling of laser in het baardgebied.
+
+- Ingegroeide haren in de baardlijn Bij krullend haar buigt de punt terug de huid in en ontstaat er een bultje dat op een puistje lijkt. De aanpak daarvan is een andere dan die van acne, en dat verschil is met het blote oog lastig te zien.
+
+DIT IS PRECIES HETZELFDE · 3
+
+- Pigment, roodheid en veroudering Die werken precies hetzelfde. Er is geen mannenversie van een pigmentvlek.
+
+- Dezelfde apparatuur en dezelfde instellingen De instelling volgt je huidtype en je haargroei, niet je geslacht.
+
+- Dezelfde volgorde Ook hier begint het met meten. Dat is geen formaliteit die je kunt overslaan omdat je haast hebt.
+
+**Zeg dit erbij, dan scheelt dat een keer.**
+
+Dit zijn de dingen die anders pas aan de balie boven tafel komen, en dan is de afspraak al gepland.
+
+- Hoe vaak je scheert en waarmee
+
+- Of je last hebt van ingegroeide haren, en waar
+
+- Of je buiten werkt of veel in de zon bent
+
+**Dan hoor je gewoon bij de rest.**
+
+Deze vier pagina's bestaan omdat er per groep iets te melden is, en niet omdat de rest ergens anders terechtkan. Alles begint bij dezelfde meting.
+
+- Jongeren Acne in de puberteit is een fase, geen fout. Wat er nu telt is voorkomen dat er littekens van overblijven.
+
+- Huid van kleur Fitzpatrick I tot en met VI kan hier terecht. Je type bepaalt niet óf iets kan, maar met welke instelling.
+
+- Bruiden Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere planning.
+
+- Iets anders Speelt er bij jou iets wat hier niet tussen staat, stuur dan een bericht. Dan hoor je meteen of het hier kan.
 
 ---
 
@@ -9812,7 +10254,7 @@ Wanneer zie je verschil? +
 
 Wat kost laserontharing? +
 
-**Eerst je opbouw, daarna pas een datum.**
+**Stel het samen voordat je boekt**
 
 In de configurator stel je zelf samen wat je wilt en zie je het bedrag per sessie. Je keuze staat daarna in de adresbalk, dus je kunt hem bewaren of doorsturen en er later op terugkomen.
 
@@ -9928,7 +10370,7 @@ Een pakket vervangt de losse zones die erin zitten. Die blijven aangewezen staan
 
 - Gelaat inclusief hals € 99
 
-**Zes types, allemaal te behandelen.**
+**Zes huidtypes en alle zes te behandelen**
 
 De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type bepaalt niet óf het kan, maar met welke instellingen. Weet je het niet, laat het dan open; we bepalen het in de intake.
 
@@ -9962,7 +10404,7 @@ Nog niets aangewezen. Kies links een zone op de tekening of in de lijst ernaast.
 
 Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan staat alles er nog als je terugkomt.
 
-**Eerst kijken, dan pas laseren.**
+**Wat hierna nog gecontroleerd wordt**
 
 Wat je hier samenstelt is een plan op papier. In Behandeling Nul kijken we of het klopt: je huidtype, je haargroei en of laseren bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat voordat je iets betaalt.
 
@@ -10132,7 +10574,7 @@ Op deze pagina staat geen zelftest en geen lijst waarmee je jezelf PCOS kunt aan
 
 Iets herkennen is niet hetzelfde als iets vaststellen. Die vaststelling doet je huisarts of gynaecoloog, met onderzoek dat wij niet doen en niet mogen doen.
 
-EERST ZITTEN, DAN PAS LIGGEN
+DE KAMER WAAR HET GESPREK BEGINT
 
 **Wie doet wat.**
 
@@ -10751,4 +11193,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_103 pagina's · 4959 tekstblokken · ongeveer 71.714 woorden._
+_107 pagina's · 5164 tekstblokken · ongeveer 76.026 woorden._

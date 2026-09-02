@@ -51,7 +51,7 @@ export const metadata: Metadata = zoekmachineVelden({
  */
 const REGELS = [
   {
-    kop: "Eerst meten, dan pas behandelen",
+    kop: "Elk traject begint met een meting",
     zin: "Elk traject begint met een meting, ook als je precies weet wat je wil. Zonder nulpunt is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.",
     kost: "Een afspraak die geen behandeling is. Een deel van de mensen haakt daar af, want ze wilden vandaag geholpen worden en niet gemeten.",
   },

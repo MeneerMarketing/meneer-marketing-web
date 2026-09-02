@@ -140,9 +140,11 @@ export default function LaserConfiguratorPage() {
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Daarna</Label>
             <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Eerst kijken,
+              Wat hierna
               <br />
-              <span className="diba-accent-on-dark">dan pas laseren.</span>
+              <span className="diba-accent-on-dark">
+                nog gecontroleerd wordt
+              </span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Wat je hier samenstelt is een plan op papier. In Behandeling Nul

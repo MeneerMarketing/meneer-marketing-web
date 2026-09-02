@@ -312,11 +312,11 @@ export default function Configurator() {
         {/* ── Huidtype ── */}
         <div className="mt-12">
           <Label>Je huidtype</Label>
-          <h3 className="diba-display-s mt-4 max-w-[20ch]">
-            Zes types,
+          <h2 className="diba-display-s mt-4 max-w-[20ch]">
+            Zes huidtypes
             <br />
-            <span className="diba-accent">allemaal te behandelen.</span>
-          </h3>
+            <span className="diba-accent">en alle zes te behandelen</span>
+          </h2>
           <p className="mt-4 max-w-[56ch] text-[15px] leading-7 text-[var(--t-body)]">
             De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type
             bepaalt niet óf het kan, maar met welke instellingen. Weet je het
