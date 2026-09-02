@@ -33,6 +33,28 @@ export type Insurer = {
   readonly name: string;
   /** Hun eigen pagina over vergoeding van huidbehandelingen. Geverifieerd, geen gok. */
   readonly vergoedingenUrl: string;
+
+  /**
+   * Hun logo, onder public/images/verzekeraars/.
+   *
+   * Opgehaald van hun eigen site in september 2026. Het staat er om te verwijzen naar de
+   * verzekeraar waar de pagina over gaat en niet om een samenwerking te suggereren; die is
+   * er niet, en dat staat ook op elke pagina.
+   *
+   * Zet deze logo's dus nergens onder een kop als "onze partners". Dan zegt het beeld iets
+   * anders dan de tekst, en het beeld wint.
+   */
+  readonly logo: string;
+
+  /**
+   * Hoeveel hoogte dit logo krijgt ten opzichte van de andere vijf.
+   *
+   * Zes logo's op één hoogte zetten klopt wiskundig en niet met het oog: een bijna vierkant
+   * merkteken oogt kleiner dan een woordmerk dat drie keer zo breed is, want het heeft veel
+   * minder oppervlak. Deze factoren zijn op het oog bepaald en niet uit de verhouding
+   * gerekend, want het gaat om wat even groot lijkt.
+   */
+  readonly logoSchaal: number;
   /** Hoe je daar bij je eigen bedrag komt. */
   readonly waarTeVinden: string;
   /**
@@ -82,6 +104,8 @@ export const INSURERS_GEZIEN_OP = "september 2026";
 export const INSURERS: readonly Insurer[] = [
   {
     slug: "cz",
+    logoSchaal: 1.3,
+    logo: "/images/verzekeraars/cz.svg",
     antwoorden: [
       {
         vraag: "Heb ik een verwijzing nodig?",
@@ -115,6 +139,8 @@ export const INSURERS: readonly Insurer[] = [
   },
   {
     slug: "vgz",
+    logoSchaal: 1.25,
+    logo: "/images/verzekeraars/vgz.svg",
     antwoorden: [
       {
         vraag: "Heb ik een verwijzing nodig?",
@@ -148,6 +174,8 @@ export const INSURERS: readonly Insurer[] = [
   },
   {
     slug: "menzis",
+    logoSchaal: 1,
+    logo: "/images/verzekeraars/menzis.svg",
     antwoorden: [
       {
         vraag: "Heb ik een verwijzing nodig?",
@@ -182,6 +210,8 @@ export const INSURERS: readonly Insurer[] = [
   },
   {
     slug: "zilveren-kruis",
+    logoSchaal: 1,
+    logo: "/images/verzekeraars/zilveren-kruis.svg",
     antwoorden: [
       {
         vraag: "Heb ik een verwijzing nodig?",
@@ -216,6 +246,8 @@ export const INSURERS: readonly Insurer[] = [
   },
   {
     slug: "onvz",
+    logoSchaal: 1.05,
+    logo: "/images/verzekeraars/onvz.svg",
     antwoorden: [
       {
         vraag: "Heb ik een verwijzing nodig?",
@@ -250,6 +282,8 @@ export const INSURERS: readonly Insurer[] = [
   },
   {
     slug: "asr",
+    logoSchaal: 1.15,
+    logo: "/images/verzekeraars/asr.svg",
     antwoorden: [
       {
         vraag: "Heb ik een verwijzing nodig?",

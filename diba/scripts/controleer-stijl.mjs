@@ -174,8 +174,15 @@ const REGELS = [
     bron: "Hoe Diba klinkt",
     uitleg:
       'De gids: "rustig en zelfverzekerd, zonder andere klinieken kleiner te maken." Onze prijslijst wordt niet duidelijker van een uitleg over waarom de rest die van hen verzwijgt.',
+    /* Ook zonder bepaling ervoor. "Klinieken laten dit graag in het midden" en "Klinieken
+       verkopen apparaatnamen" stonden er allebei nog, en de regel zag ze niet omdat hij
+       "de meeste", "andere" of "veel" verwachtte. Dat is juist de stelligste vorm: zonder
+       bepaling gaat het over allemaal. */
     test: (t) =>
       /\b(de meeste|andere|veel) (klinieken|salons|aanbieders)\b/i.test(t) ||
+      /\b(klinieken|salons|aanbieders)\s+(verkopen|laten|doen|beloven|zeggen|zetten|noemen|vergeten|rekenen)\b/i.test(
+        t,
+      ) ||
       /\b(elders|ergens anders) (wordt|krijg je|beloven ze)\b/i.test(t),
     grens: 0,
   },

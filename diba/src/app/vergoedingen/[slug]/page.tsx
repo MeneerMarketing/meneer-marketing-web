@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { INSURERS, INSURERS_GEZIEN_OP, insurerBySlug } from "@/data/insurers";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
+import VerzekeraarLogo from "@/components/vergoedingen/VerzekeraarLogo";
 import {
   DIBA_SITE_URL,
   DIBA_TELEFOON,
@@ -101,7 +102,14 @@ export default async function InsurerPage({ params }: PageProps) {
               <span className="text-[var(--t-muted)]">{insurer.name}</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <VerzekeraarLogo
+              verzekeraar={insurer}
+              hoogte={44}
+              breedte={120}
+              className="mt-6"
+            />
+
+            <h1 className="diba-display-l mt-5 max-w-[15ch]">
               {insurer.name}:
               <br />
               <span className="diba-accent">waar je het vindt.</span>

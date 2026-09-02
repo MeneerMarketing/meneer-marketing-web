@@ -7,6 +7,7 @@ import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { zoekmachineVelden } from "@/lib/seo";
+import VerzekeraarLogo from "@/components/vergoedingen/VerzekeraarLogo";
 
 /**
  * Vergoedingen.
@@ -184,8 +185,9 @@ export default function VergoedingenPage() {
                   <span className="diba-accent-on-dark"> niet kunnen.</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Klinieken laten dit graag in het midden, en dan is de
-                  teleurstelling voor jou. Dus staat het hier zwart op wit.
+                  Wie waarvoor aan de lat staat blijft vaak onduidelijk tot het
+                  misgaat, en dan is de teleurstelling voor jou. Dus staat het
+                  hier zwart op wit.
                 </p>
               </div>
 
@@ -286,9 +288,13 @@ export default function VergoedingenPage() {
               <li key={v.slug}>
                 <Link
                   href={`/vergoedingen/${v.slug}`}
-                  className="flex min-h-16 items-center rounded-[var(--r-lg)] bg-white px-6 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="flex min-h-20 items-center gap-4 rounded-[var(--r-lg)] bg-white px-6 py-4 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  {v.name}
+                  {/* Het logo op vaste hoogte in een vak van vaste breedte. De verhoudingen
+                      lopen van bijna vierkant tot drie keer zo breed als hoog; zonder dat
+                      vak zou elke kaart een andere tekstinspringing krijgen. */}
+                  <VerzekeraarLogo verzekeraar={v} hoogte={30} breedte={80} />
+                  <span>{v.name}</span>
                 </Link>
               </li>
             ))}

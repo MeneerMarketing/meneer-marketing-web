@@ -5,7 +5,8 @@
  *
  * WAAROM DEZE PAGINA'S BESTAAN, EN WAAROM ZE ANDERS ZIJN.
  *
- * Klinieken verkopen apparaatnamen. "Wij hebben de Fotona." Alsof het apparaat het werk
+ * Een apparaatnaam zegt minder dan hij lijkt te zeggen. "Wij hebben de Fotona" klinkt als
+ * een belofte, alsof het apparaat het werk
  * doet en de kliniek alleen de stekker erin steekt. Dat is precies andersom: een apparaat
  * is gereedschap, en wat telt is de instelling, de hand die het vasthoudt en of het bij
  * jouw huid past. Twee klinieken met hetzelfde apparaat geven niet hetzelfde resultaat.

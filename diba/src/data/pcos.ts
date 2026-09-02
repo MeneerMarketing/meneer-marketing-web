@@ -90,7 +90,8 @@ export const PCOS_KLACHTEN: readonly PcosKlacht[] = [
 /**
  * De taakverdeling in het kort.
  *
- * Drie kolommen, en de middelste is degene die klinieken weglaten.
+ * Drie kolommen, en de middelste is degene die er het vaakst tussenuit valt: wat wij niet
+ * kunnen. Juist die bepaalt of iemand met de goede verwachting binnenkomt.
  */
 export const PCOS_VERDELING = [
   {

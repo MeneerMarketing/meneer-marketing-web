@@ -246,10 +246,10 @@ export default function OverOnsPage() {
               Gereedschap, <span className="diba-accent">geen belofte.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben
-              de HydraFacial. Alsof het apparaat het werk doet en de kliniek
-              alleen de stekker erin steekt. Het is andersom: wat telt is de
-              instelling en de hand die het vasthoudt.
+              Een apparaatnaam zegt minder dan hij lijkt te zeggen. “Wij hebben
+              de Fotona” klinkt als een belofte, alsof het apparaat het werk
+              doet en de kliniek alleen de stekker erin steekt. Het is
+              andersom: wat telt is de instelling en de hand die het vasthoudt.
             </p>
           </div>
 

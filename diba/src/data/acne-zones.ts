@@ -124,7 +124,7 @@ const REGELS: readonly Regel[] = [
     lezing: {
       kop: "Alleen op je rug of schouders",
       tekst:
-        "Deze plek wordt vaak vergeten, ook door klinieken. Er zitten veel talgklieren, en zweet plus wrijving houden het in stand.",
+        "Deze plek blijft vaak buiten beeld, want je ziet hem zelf nauwelijks. Er zitten veel talgklieren, en zweet plus wrijving houden het in stand.",
       eersteStap:
         "We kijken naar sport, kleding en wat er na het zweten met je huid gebeurt. Behandelen kan, maar zonder die gewoontes verandert er weinig.",
     },

@@ -19,7 +19,8 @@
  * sessies.
  *
  * Dat is exact hetzelfde principe als de rest van de site: eerst meten, dan behandelen.
- * Hier is het alleen extra zichtbaar omdat de meeste aanbieders het omdraaien.
+ * Hier is het alleen extra zichtbaar, want bij snurken is de oorzaak minder makkelijk aan
+ * te wijzen dan bij een huidklacht.
  *
  * DE GRENS DIE ER MOET STAAN.
  *

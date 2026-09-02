@@ -356,7 +356,7 @@ NA AFLOOP, AAN DE WEISSENBRUCHLAAN
 
 **Gereedschap, geen belofte.**
 
-Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben de HydraFacial. Alsof het apparaat het werk doet en de kliniek alleen de stekker erin steekt. Het is andersom: wat telt is de instelling en de hand die het vasthoudt.
+Een apparaatnaam zegt minder dan hij lijkt te zeggen. “Wij hebben de Fotona” klinkt als een belofte, alsof het apparaat het werk doet en de kliniek alleen de stekker erin steekt. Het is andersom: wat telt is de instelling en de hand die het vasthoudt.
 
 - 12 apparaten Van meetapparatuur tot laser. Bij elk staat op deze site wat het níet kan. BEKIJK DE APPARATUUR ›
 
@@ -6940,7 +6940,7 @@ Deze pagina vertelt wat xl hair doet. Of het bij jouw huid het juiste is, hangt 
 
 **DE APPARATUUR IN ONZE KLINIEK**
 
-Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben de HydraFacial. Alsof het apparaat het werk doet en wij alleen de stekker erin steken.
+Een apparaatnaam zegt minder dan hij lijkt te zeggen. Wat het verschil maakt is wat er vooraf gemeten is en welke instelling daarbij hoort, en niet welk merk er op de kast staat.
 
 Het is andersom. Een apparaat is gereedschap. Wat telt is de instelling, de hand die het vasthoudt en of het bij jouw huid past. Daarom staat bij elk apparaat hieronder ook wat het níet kan.
 
@@ -8392,7 +8392,7 @@ Die nee-tak staat normaal nergens, en dat is precies de tak waar de meeste mense
 
 **Wat wij hierin niet kunnen.**
 
-Klinieken laten dit graag in het midden, en dan is de teleurstelling voor jou. Dus staat het hier zwart op wit.
+Wie waarvoor aan de lat staat blijft vaak onduidelijk tot het misgaat, en dan is de teleurstelling voor jou. Dus staat het hier zwart op wit.
 
 DAT DOEN WIJ
 
@@ -11193,4 +11193,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5164 tekstblokken · ongeveer 76.026 woorden._
+_107 pagina's · 5164 tekstblokken · ongeveer 76.046 woorden._

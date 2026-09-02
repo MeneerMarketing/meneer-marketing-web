@@ -94,8 +94,8 @@ export const MISVERSTANDEN: readonly { kop: string; zin: string }[] = [
 /**
  * Wat wij wel en niet doen rond vergoeding.
  *
- * Dit is de eerlijke afbakening. Klinieken laten hier graag in het midden wie waarvoor aan
- * de lat staat, en dan is de teleurstelling voor de klant.
+ * Dit is de eerlijke afbakening. Wie waarvoor aan de lat staat blijft vaak onduidelijk tot
+ * het misgaat, en dan is de teleurstelling voor de klant.
  */
 export const ONZE_ROL = {
   wel: [

@@ -14,9 +14,9 @@ import { zoekmachineVelden } from "@/lib/seo";
 /**
  * Het apparatuuroverzicht.
  *
- * Klinieken verkopen apparaatnamen. "Wij hebben de Fotona." Alsof het apparaat het werk
- * doet en de kliniek alleen de stekker erin steekt. Deze pagina begint dus met het
- * tegenovergestelde: een apparaat is gereedschap. Wat telt is de instelling, de hand die
+ * Een apparaatnaam zegt minder dan hij lijkt te zeggen. "Wij hebben de Fotona" klinkt als
+ * een belofte, alsof het apparaat het werk doet en de kliniek alleen de stekker erin steekt.
+ * Deze pagina begint dus met het tegenovergestelde: een apparaat is gereedschap. Wat telt is de instelling, de hand die
  * het vasthoudt en of het bij jouw huid past.
  *
  * Waarom de pagina er dan toch is: omdat mensen op merknamen zoeken, en omdat je bij elk
@@ -77,9 +77,9 @@ export default function ApparatuurPage() {
           </h1>
 
           <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben
-            de HydraFacial. Alsof het apparaat het werk doet en wij alleen de
-            stekker erin steken.
+            Een apparaatnaam zegt minder dan hij lijkt te zeggen. Wat het
+            verschil maakt is wat er vooraf gemeten is en welke instelling
+            daarbij hoort, en niet welk merk er op de kast staat.
           </p>
           <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
             Het is andersom. Een apparaat is gereedschap. Wat telt is de
