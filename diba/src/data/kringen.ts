@@ -4,7 +4,7 @@
  * De klinische waarheid die deze pagina eigen maakt: "donkere kringen" is geen aandoening
  * maar een uiterlijk kenmerk met drie verschillende oorzaken, en die vragen alle drie iets
  * anders. Eén ervan kan een huidkliniek helemaal niet oplossen en bij een tweede valt maar
- * de helft te halen. Wie dat niet vertelt verkoopt drie keer dezelfde behandeling aan drie
+ * de helft te halen. Dat niet vertellen levert drie keer dezelfde behandeling op bij drie
  * verschillende problemen.
  *
  * Vocht is bewust géén vierde type. Het veroorzaakt niets, het maakt de andere drie

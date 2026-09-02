@@ -177,7 +177,7 @@ export default function FigmaHomeApp({
                 <span className="diba-label absolute left-7 top-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
                   Hillegersberg, Rotterdam
                 </span>
-                <span className="diba-label absolute bottom-7 right-7 grid h-24 w-24 place-items-center rounded-[var(--r-pill)] border border-white/70 bg-[var(--g-700)]/90 text-center leading-4 text-white">
+                <span className="diba-label absolute bottom-7 right-7 grid h-24 w-24 place-items-center rounded-[var(--r-pill)] bg-[var(--g-700)] text-center leading-4 text-white">
                   Eerlijk
                   <br />
                   advies

@@ -50,7 +50,7 @@ export const LAGEN: readonly Laag[] = [
     watHetBetekent:
       "Er zit pigment in twee lagen tegelijk. Het bovenste deel reageert, het diepere deel blijft grotendeels staan. [MEDISCHE-CHECK-ROJDA]",
     watMogelijkIs:
-      "Reken op verbetering die je ziet en op een rest die blijft. Wie je hier een schone huid belooft, kijkt niet naar de diepte.",
+      "Reken op verbetering die je ziet en op een rest die blijft. Een schone huid beloven we niet, want de diepte van het pigment bepaalt wat er kan.",
     vooruitzicht: "matig",
   },
   {

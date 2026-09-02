@@ -214,7 +214,7 @@ export const PIGMENT_SOORTEN: readonly PigmentSoort[] = [
     oorzaak:
       "Hormonen plus UV plus warmte. Zwangerschap en de pil zijn bekende factoren, en zelfs warmte alleen kan het aanwakkeren. [MEDISCHE-CHECK-ROJDA]",
     realistisch:
-      "Bij melasma is beheersing realistischer dan verdwijning. Dat is geen tweede keus, dat is de eerlijke uitkomst. Wie je iets anders belooft, verkoopt je iets.",
+      "Bij melasma is beheersing realistischer dan verdwijning. Dat is geen tweede keus, dat is de eerlijke uitkomst. Iets anders beloven zou makkelijker verkopen en niet uitkomen.",
     aanpak:
       "Rustig, met veel bescherming, en met de verwachting dat het in de zomer terugkomt. We meten per seizoen in plaats van per sessie.",
   },

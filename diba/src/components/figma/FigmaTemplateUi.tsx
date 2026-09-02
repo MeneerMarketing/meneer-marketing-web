@@ -22,11 +22,11 @@ export function FigmaBreadcrumbs({ items }: { items: FigmaBreadcrumbItem[] }) {
             </span>
           ) : null}
           {item.href ? (
-            <Link href={item.href} className="transition hover:text-[#286943]">
+            <Link href={item.href} className="transition hover:text-[#434f3a]">
               {item.label}
             </Link>
           ) : (
-            <span className="text-[#286943]">{item.label}</span>
+            <span className="text-[#434f3a]">{item.label}</span>
           )}
         </span>
       ))}
@@ -47,7 +47,7 @@ export function FigmaCheckIcon() {
       <circle cx="9" cy="9" r="8.5" stroke="#5eae67" />
       <path
         d="M5.5 9l2.5 2.5 4.5-5"
-        stroke="#286943"
+        stroke="#434f3a"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -91,7 +91,7 @@ export function FigmaWelNietGrid({
 }: FigmaWelNietGridProps) {
   return (
     <div className="grid gap-4 md:grid-cols-2">
-      <div className="rounded-[1.5rem] border border-[#dce8d9] bg-white p-7 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
+      <div className="rounded-[1.5rem] border border-[#dce5d6] bg-white p-7 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
         <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[#5d9564]">
           {welLabel}
         </p>
@@ -99,7 +99,7 @@ export function FigmaWelNietGrid({
           {wel.map((item) => (
             <li
               key={item}
-              className="flex gap-3 text-[15px] leading-7 text-[#17372a]"
+              className="flex gap-3 text-[15px] leading-7 text-[#2c3426]"
             >
               <FigmaCheckIcon />
               {item}
@@ -107,7 +107,7 @@ export function FigmaWelNietGrid({
           ))}
         </ul>
       </div>
-      <div className="rounded-[1.5rem] bg-[#f2f7ef] p-7 sm:p-8">
+      <div className="rounded-[1.5rem] bg-[#f7faf5] p-7 sm:p-8">
         <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[#9a6b6b]">
           {nietLabel}
         </p>
@@ -164,11 +164,11 @@ export function FigmaFilterPills<T extends string>({
             onClick={() => onChange(item.id)}
             className={`min-h-10 rounded-full border px-5 text-[11px] font-semibold uppercase tracking-[.1em] transition
                         focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
-                        focus-visible:outline-[#286943]
+                        focus-visible:outline-[#434f3a]
                         ${
                           active
-                            ? "border-[#286943] bg-[#286943] text-white"
-                            : "border-[#dce8d9] bg-white text-[#17372a] hover:border-[#95c592]"
+                            ? "border-[#434f3a] bg-[#434f3a] text-white"
+                            : "border-[#dce5d6] bg-white text-[#2c3426] hover:border-[#a1af97]"
                         }`}
           >
             {item.label}

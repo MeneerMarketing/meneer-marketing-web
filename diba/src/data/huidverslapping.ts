@@ -21,7 +21,7 @@ import { kostenVraag } from "@/data/pillar-kosten";
  *
  * De grens met chirurgie. Wat werkelijk is losgelaten wordt door geen enkel apparaat
  * teruggezet, en die grens ligt niet bij een leeftijd maar bij hoeveel er overblijft als je
- * de huid met twee vingers omhoog duwt. Wie dat verzwijgt verkoopt een reeks van drie aan
+ * de huid met twee vingers omhoog duwt. Dat verzwijgen levert een reeks van drie op bij
  * iemand die een facelift zoekt.
  *
  * MEDISCH.

@@ -190,7 +190,13 @@ const REGELS = [
         t,
       ) ||
       /\b(elders|ergens anders) (wordt|krijg je|beloven ze)\b/i.test(t) ||
-      /\bwie\s+(dat\s+)?(belooft|zegt|beweert|garandeert|roept)\b/i.test(t) ||
+      /* Ook met woorden ertussen. "Wie je genezing belooft, verkoopt je iets" en "wie je
+         hier volledige verdwijning belooft" stonden op zes huidprobleempagina's, en de
+         regel zag ze niet omdat hij "wie" direct gevolgd door het werkwoord verwachtte.
+         Dat is dezelfde uitspraak, alleen langer. */
+      /\bwie\s+(\w+\s+){0,5}(belooft|zegt|beweert|garandeert|roept|verzwijgt|verkoopt)\b/i.test(
+        t,
+      ) ||
       /\b(iedereen|niemand)\s+die\s+dat\s+(zegt|belooft|beweert)\b/i.test(t),
     grens: 0,
   },

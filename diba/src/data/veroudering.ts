@@ -156,7 +156,7 @@ export const FASE_ADVIES: Record<
   "55": {
     kop: "Realistisch, en dat is niet hetzelfde als weinig",
     tekst:
-      "Kleur en structuur zijn nog goed te verbeteren. Volume niet, want dat doen wij niet. Wie je hier een strakke kaaklijn belooft met een huidbehandeling, verkoopt je iets.",
+      "Kleur en structuur zijn nog goed te verbeteren. Volume niet, want dat doen wij niet. Een strakke kaaklijn hoort bij volume, en dat is een andere behandeling dan de onze.",
   },
 };
 
@@ -252,7 +252,7 @@ export const VEROUDERING_WIJ_DOEN_NIET = [
   {
     titel: "Geen preventieve pakketten op je twintigste",
     tekst:
-      "Een gezonde huid van vijfentwintig heeft geen serie behandelingen nodig. Wie je die verkoopt, verkoopt je iets waar je nog niets aan hebt.",
+      "Een gezonde huid van vijfentwintig heeft geen serie behandelingen nodig. Wij verkopen die dus niet, ook niet als je erom vraagt: je hebt er op dat moment nog niets aan.",
   },
   {
     titel: "Geen behandeling in een huid die net veel zon had",

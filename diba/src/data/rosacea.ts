@@ -265,7 +265,7 @@ export const ROSACEA_WIJ_DOEN_NIET = [
   {
     titel: "Geen belofte dat het weggaat",
     tekst:
-      "Rosacea is een chronische aandoening. Beheersing is het doel en dat noemen wij geen mislukking. Wie je genezing belooft, verkoopt je iets. [MEDISCHE-CHECK-ROJDA]",
+      "Rosacea is een chronische aandoening. Beheersing is het doel en dat noemen wij geen mislukking. Genezing beloven we daarom niet. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     titel: "Geen acnebehandeling op rosacea",

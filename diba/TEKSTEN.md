@@ -2308,7 +2308,7 @@ De kleur is de eerste vraag en niet de laatste. Hij wijst de richting aan; wat e
 
 - Hoe erg het is Een lichte verkleuring kan hardnekkiger zijn dan een donkere. Wat er te doen valt hangt af van de laag waarin het zit, en dat zie je niet aan de intensiteit.
 
-- Of het weggaat Twee mensen met dezelfde kleur op dezelfde plek kunnen een heel ander verloop hebben. Wie op kleur alleen een uitkomst belooft, gokt.
+- Of het weggaat Twee mensen met dezelfde kleur op dezelfde plek kunnen een heel ander verloop hebben. Een uitkomst voorspellen op kleur alleen is gokken, en dat doen we niet.
 
 - Hoe lang het er al zit Vers en oud zien er vaak hetzelfde uit, terwijl dat verschil juist bepaalt wat er nog beweegt. Daarom vragen we ernaar en kijken we er niet alleen naar.
 
@@ -2502,7 +2502,7 @@ Een huidkliniek kan kleur en structuur verbeteren. Volume optillen kan hij niet,
 
 - Geen volume Wij behandelen huid. Injectables en volumeopbouw doen we niet, ook niet als je erom vraagt. Dat is geen bescheidenheid maar een grens: het hoort bij een arts.
 
-- Geen preventieve pakketten op je twintigste Een gezonde huid van vijfentwintig heeft geen serie behandelingen nodig. Wie je die verkoopt, verkoopt je iets waar je nog niets aan hebt.
+- Geen preventieve pakketten op je twintigste Een gezonde huid van vijfentwintig heeft geen serie behandelingen nodig. Wij verkopen die dus niet, ook niet als je erom vraagt: je hebt er op dat moment nog niets aan.
 
 - Geen behandeling in een huid die net veel zon had Direct na een zonvakantie behandelen geeft een grotere kans op nieuwe pigmentvlekken. Dan wachten we, ook als dat je afspraak verzet.
 
@@ -4452,7 +4452,7 @@ Bij rosacea is het eerste punt links gratis en levert het vaak het meest op. Dat
 
 Rosacea is chronisch. Wij noemen beheersing daarom geen mislukking maar de eerlijke uitkomst, en je hoort dat vóór je iets betaalt in plaats van erna.
 
-- Geen belofte dat het weggaat Rosacea is een chronische aandoening. Beheersing is het doel en dat noemen wij geen mislukking. Wie je genezing belooft, verkoopt je iets.
+- Geen belofte dat het weggaat Rosacea is een chronische aandoening. Beheersing is het doel en dat noemen wij geen mislukking. Genezing beloven we daarom niet.
 
 - Geen acnebehandeling op rosacea De twee lijken op elkaar en vragen het tegenovergestelde. Twijfelen we, dan behandelen we niet en verwijzen we door voor de diagnose.
 
@@ -11569,4 +11569,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5352 tekstblokken · ongeveer 83.076 woorden._
+_107 pagina's · 5352 tekstblokken · ongeveer 83.086 woorden._

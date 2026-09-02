@@ -106,7 +106,7 @@ export const LITTEKEN_FASES: readonly Fase[] = [
     watErGebeurt:
       "Wit, dun en definitief. Bij striae heet dit striae albae. Het weefsel mist pigmentcellen en heeft een andere structuur dan de huid eromheen. [MEDISCHE-CHECK-ROJDA]",
     watRealistischIs:
-      "Hier is het eerlijke antwoord dat we weinig kunnen beloven. De structuur is deels te verbeteren, de witte kleur vrijwel niet. Wie je hier volledige verdwijning belooft, verkoopt je iets.",
+      "Hier is het eerlijke antwoord dat we weinig kunnen beloven. De structuur is deels te verbeteren, de witte kleur vrijwel niet. Volledige verdwijning beloven we hier dus niet.",
     watWijDoen:
       "Meestal raden we het af, of we stellen een korte proef voor met een meetmoment erna. Dan zie je zelf of doorgaan zin heeft.",
     venster: "gesloten",

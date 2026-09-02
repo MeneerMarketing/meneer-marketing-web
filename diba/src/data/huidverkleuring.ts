@@ -167,7 +167,7 @@ export const KLEUR_ZEGT_NIET = [
   },
   {
     kop: "Of het weggaat",
-    zin: "Twee mensen met dezelfde kleur op dezelfde plek kunnen een heel ander verloop hebben. Wie op kleur alleen een uitkomst belooft, gokt.",
+    zin: "Twee mensen met dezelfde kleur op dezelfde plek kunnen een heel ander verloop hebben. Een uitkomst voorspellen op kleur alleen is gokken, en dat doen we niet.",
   },
   {
     kop: "Hoe lang het er al zit",
