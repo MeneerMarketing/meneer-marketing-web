@@ -142,6 +142,11 @@ const paden = [...new Set([...statisch, ...uitSitemap, ...uitOverzichten])]
  */
 async function haalTekst(pad) {
   await page.goto(BASIS + pad, { waitUntil: "networkidle" });
+
+  /* Een alias die doorverwijst hoort niet als eigen pagina in het document. */
+  const beland = new URL(page.url()).pathname.replace(/\/$/, "");
+  if (beland !== pad.replace(/\/$/, "").split("#")[0]) return null;
+
   return page.evaluate(() => {
     const titel = document.title;
     const omschrijving =
@@ -239,7 +244,10 @@ for (const hoofdstuk of HOOFDSTUKKEN) {
   regels.push(`## ${hoofdstuk.naam}`, "");
 
   for (const pad of lijst) {
-    const { titel, omschrijving, blokken } = await haalTekst(pad);
+    const gevonden = await haalTekst(pad);
+    /* null betekent: deze route verwijst door, de tekst staat al onder de bestemming. */
+    if (!gevonden) continue;
+    const { titel, omschrijving, blokken } = gevonden;
     aantalBlokken += blokken.length;
 
     regels.push(`### ${pad}`, "");

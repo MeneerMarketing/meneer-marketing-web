@@ -72,7 +72,7 @@ const REGELS = [
   {
     kop: "Geen belofte zonder getal",
     zin: "Geen resultaatgaranties, geen voor-en-na dat niet klopt, geen aantal sessies dat we niet kunnen onderbouwen. Wat we niet weten, zeggen we niet.",
-    kost: "De grote woorden. Een site die wel durft te beloven leest spannender dan deze, en dat blijft zo.",
+    kost: "De grote woorden. Een pagina vol stellige beloftes leest spannender dan deze, en dat blijft zo.",
   },
 ];
 

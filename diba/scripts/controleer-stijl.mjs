@@ -137,6 +137,28 @@ const REGELS = [
     grens: 0,
   },
   {
+    naam: "andere klinieken kleiner maken",
+    bron: "Hoe Diba klinkt",
+    uitleg:
+      'De gids: "rustig en zelfverzekerd, zonder andere klinieken kleiner te maken." Onze prijslijst wordt niet duidelijker van een uitleg over waarom de rest die van hen verzwijgt.',
+    test: (t) =>
+      /\b(de meeste|andere|veel) (klinieken|salons|aanbieders)\b/i.test(t) ||
+      /\b(elders|ergens anders) (wordt|krijg je|beloven ze)\b/i.test(t),
+    grens: 0,
+  },
+  {
+    naam: "de site die zichzelf prijst",
+    bron: "Hoe Diba klinkt",
+    uitleg:
+      "Uitleggen hoe eerlijk of volledig deze pagina is. Eerlijkheid toon je door te zeggen wat iets niet doet; het bewijs staat er dan al.",
+    test: (t) =>
+      /\b(daarom staan|daarom staat|hier staat|deze pagina)\b[^.!?]{0,60}\b(eerlijk|volledig|compleet|niets weg)\b/i.test(
+        t,
+      ) ||
+      /\b(is geen eerlijkheid maar|een folder van de fabrikant|zonder omweg)\b/i.test(t),
+    grens: 0,
+  },
+  {
     naam: "merknaam verkeerd geschreven",
     bron: "Eindcontrole",
     uitleg: "Het is Diba Clinics, niet DIBA Clinics.",

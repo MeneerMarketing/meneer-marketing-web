@@ -66,7 +66,7 @@ const GROEPEN: readonly {
     kop: "Waar niemand",
     accent: "iets aan kan.",
     intro:
-      "Dat staat er zo, met de uitleg waarom geen enkele crème of apparaat het weghaalt. Zodat je het elders herkent als het je toch wordt aangeboden.",
+      "Dat staat er zo, met de uitleg waarom geen enkele crème of apparaat het weghaalt. Dan weet je waar je aan toe bent voordat je ergens aan begint.",
   },
   {
     id: "wegwijzer",

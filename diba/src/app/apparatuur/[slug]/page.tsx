@@ -240,8 +240,8 @@ export default async function ApparaatPage({ params }: PageProps) {
             <span className="diba-accent">met je huid doet</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Een apparatuurpagina zonder deze rechterkolom is een folder van de
-            fabrikant. Daarom staan hier links en rechts evenveel regels.
+            Links waar dit apparaat voor gemaakt is, rechts waar het niets aan
+            doet.
           </p>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -290,9 +290,8 @@ export default async function ApparaatPage({ params }: PageProps) {
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
                 Meerdere apparaten hier doen op het oog hetzelfde. Welke je
-                krijgt hangt af van je huid en van wat er gemeten is, en niet
-                van welke naam het beste klinkt. Dit is het verschil, zonder
-                omweg.
+                krijgt hangt af van je huid en van wat er gemeten is. Hieronder
+                staat waarin ze van elkaar verschillen.
               </p>
             </div>
 
@@ -337,8 +336,8 @@ export default async function ApparaatPage({ params }: PageProps) {
                 <span className="diba-accent">dit apparaat bij past.</span>
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-                Passen is niet hetzelfde als oplossen. Op elke pagina hieronder
-                staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+                Op elke pagina hieronder staat ook wat er niet lukt bij dit
+                apparaat, en of wij die klacht behandelen.
               </p>
             </div>
 
@@ -372,8 +371,8 @@ export default async function ApparaatPage({ params }: PageProps) {
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               Twee klinieken met dit apparaat geven niet hetzelfde resultaat.
-              Het verschil zit in wat er vooraf gemeten is, welke instelling er
-              wordt gekozen en of iemand durft te zeggen dat het bij jou niet
+              Dat hangt af van wat er vooraf gemeten is, welke instelling
+              daarbij hoort en of iemand je vertelt wanneer het bij jou niet
               past.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">

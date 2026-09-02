@@ -420,8 +420,8 @@ export default async function BehandelingPage({ params }: PageProps) {
               <span className="diba-accent">met je huid doet</span>
             </h2>
             <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar
-              opmaak. Daarom staan hier links en rechts evenveel regels.
+              Links waar deze behandeling voor bedoeld is, rechts waar hij niets
+              aan doet.
             </p>
 
             <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">

@@ -61,10 +61,9 @@ export default function PrijzenPage() {
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De meeste klinieken zetten hun prijzen niet online, of alleen de
-              laagste met een sterretje erachter. Dat is geen toeval: een bedrag
-              dat je pas hoort als je al op de stoel ligt, is makkelijker te
-              verkopen.
+              Wat een behandeling kost hoor je liever voordat je een afspraak
+              maakt dan erna. Daarom staat het hier: elk tarief, per sessie en
+              per zone, zonder dat je ervoor hoeft te bellen.
             </p>
 
             <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
