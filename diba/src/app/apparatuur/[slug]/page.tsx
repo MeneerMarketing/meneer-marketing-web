@@ -228,6 +228,33 @@ export default async function ApparaatPage({ params }: PageProps) {
           <div className="mt-10">
             <Werkingsvenster apparaat={a} />
           </div>
+
+          {/* De techniek zelf.
+
+              Golflengte, pulsduur en werkingsprincipe staan in de brochure van de
+              fabrikant, dus er is geen reden ze hier weg te laten. Het is bovendien het
+              enige deel van deze pagina dat per apparaat echt verschilt: de tekening, de
+              legenda en de veiligheidszin zijn overal gelijk, en twaalf pagina's die verder
+              hetzelfde zeggen zitten elkaar in de weg. */}
+          {a.techniek?.length ? (
+            <div className="mt-16 border-t border-[var(--g-100)] pt-12">
+              <Label>De techniek</Label>
+              <h3 className="diba-display-s mt-4 max-w-[24ch]">
+                Wat de diepte{" "}
+                <span className="diba-accent">van dit apparaat bepaalt</span>
+              </h3>
+              <div className="mt-6 max-w-[68ch] space-y-4">
+                {a.techniek.map((alinea) => (
+                  <p
+                    key={alinea.slice(0, 40)}
+                    className="text-[16px] leading-7 text-[var(--t-body)]"
+                  >
+                    {publicCopy(alinea)}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ) : null}
         </div>
       </section>
 
