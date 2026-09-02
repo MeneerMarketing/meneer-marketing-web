@@ -370,40 +370,89 @@ export default async function BehandelingPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ── In de afspraak ── */}
-      {/* Zonder stappen staat er "Wat er gebeurt, in volgorde" met een lege lijst eronder. */}
-      {b.stappen?.length ? (
+      {/* ── In de afspraak ──
+
+          De sectie hing eerst aan `b.stappen`, en vijf behandelingen hebben die niet. Dat waren
+          precies de vijf dunste pagina's van de reeks. Nu draagt hij zichzelf zodra er iets
+          in te zetten valt: de stappen als die er zijn, en anders het verloop van de
+          afspraak. */}
+      {b.stappen?.length || b.inDeStoel?.length ? (
         <section
           id="afspraak"
           className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
         >
           <div className="mx-auto">
             <Label>In de afspraak</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Wat er gebeurt,
-              <br />
-              <span className="diba-accent">in volgorde.</span>
-            </h2>
+            {b.stappen?.length ? (
+              <h2 className="diba-display-m mt-4 max-w-[20ch]">
+                Wat er gebeurt,
+                <br />
+                <span className="diba-accent">in volgorde.</span>
+              </h2>
+            ) : null}
 
             {/* Geen "Stap 1, Stap 2, Stap 3" boven deze kaarten. De kop erboven zegt al
                 "in volgorde", de kaarten staan van links naar rechts, en het is een
                 genummerde lijst. Drie keer dezelfde mededeling, waarvan er twee alleen
                 als opmaak leesbaar zijn. */}
-            <ol className="mt-12 grid gap-4 md:grid-cols-3">
-              {(b.stappen ?? []).map((s) => (
-                <li
-                  key={s.kop}
-                  className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
-                >
-                  <p className="diba-card-title text-[var(--t-strong)]">
-                    {s.kop}
-                  </p>
-                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-                    {publicCopy(s.zin)}
-                  </p>
-                </li>
-              ))}
-            </ol>
+            {b.stappen?.length ? (
+              <ol className="mt-12 grid gap-4 md:grid-cols-3">
+                {b.stappen.map((s) => (
+                  <li
+                    key={s.kop}
+                    className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+                  >
+                    <p className="diba-card-title text-[var(--t-strong)]">
+                      {s.kop}
+                    </p>
+                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                      {publicCopy(s.zin)}
+                    </p>
+                  </li>
+                ))}
+              </ol>
+            ) : null}
+
+            {/* Hoe het voelt.
+
+                De drie kaarten hierboven vertellen wat het apparaat doet, en dat staat ook
+                op de apparatuurpagina. Dit is het deel dat alleen hier hoort: wat jij ervan
+                merkt, en wat je erna wel en niet kunt. Dat is de vraag waarmee iemand op
+                deze pagina komt. */}
+            {b.inDeStoel?.length ? (
+              <div
+                className={`grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 ${
+                  b.stappen?.length ? "mt-14" : "mt-4"
+                }`}
+              >
+                <div>
+                  {b.stappen?.length ? (
+                    <>
+                      <Label>Hoe het voelt</Label>
+                      <h3 className="diba-display-s mt-4 max-w-[18ch]">
+                        Wat je ervan{" "}
+                        <span className="diba-accent">merkt in de stoel</span>
+                      </h3>
+                    </>
+                  ) : (
+                    <h2 className="diba-display-m max-w-[18ch]">
+                      Wat je ervan{" "}
+                      <span className="diba-accent">merkt in de stoel</span>
+                    </h2>
+                  )}
+                </div>
+                <div className="max-w-[64ch] space-y-4">
+                  {b.inDeStoel.map((alinea) => (
+                    <p
+                      key={alinea.slice(0, 40)}
+                      className="text-[16px] leading-7 text-[var(--t-body)]"
+                    >
+                      {publicCopy(alinea)}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ) : null}
           </div>
         </section>
       ) : null}

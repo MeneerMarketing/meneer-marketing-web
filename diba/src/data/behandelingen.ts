@@ -208,6 +208,18 @@ export type Behandeling = {
    * foto: een willekeurige behandelfoto onder een specifieke naam wekt de indruk dat je
    * ziet wat je krijgt, en dat is dan niet waar.
    */
+  /**
+   * Hoe de afspraak zelf verloopt, vanuit de stoel.
+   *
+   * De rest van deze pagina gaat over wat het apparaat doet; dit gaat over wat jij meemaakt.
+   * Dat is wat iemand wil weten die twijfelt of hij een afspraak maakt, en het is bovendien
+   * het enige deel dat een behandelpagina onderscheidt van de apparatuurpagina ernaast.
+   *
+   * De gebruikelijke gang van zaken, niet het protocol van deze kliniek.
+   * [MEDISCHE-CHECK-ROJDA]
+   */
+  readonly inDeStoel?: readonly string[];
+
   readonly foto?: { readonly src: string; readonly alt: string };
   readonly faq?: readonly {
     readonly vraag: string;
@@ -219,6 +231,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Meten ─────────────────────────────────────────────────────────────── */
   {
     slug: "huidanalyse",
+    inDeStoel: [
+      "Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zijn. De opnames zijn in een paar minuten klaar: gewoon licht, gepolariseerd licht en UV, achter elkaar door. Je merkt er niets van, want er raakt niets je huid.",
+      "De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel, en soms is dat voorstel om even niets te doen.",
+    ],
     foto: {
       src: "/images/shoot/beh-huidanalyse.jpg",
       alt: "Cliënt in de EVE-M huidscanner, met de opname op het scherm ernaast",
@@ -280,6 +296,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Gezichtsbehandelingen ─────────────────────────────────────────────── */
   {
     slug: "hydrafacial",
+    inDeStoel: [
+      "Je ligt achterover en het mondstuk gaat in banen over je gezicht. Wat je voelt is vooral de zuiging: een licht trekkend gevoel dat rond je neus en kin sterker is dan op je wangen. Pijn hoort er niet bij; wel merk je duidelijk waar een porie vastzit.",
+      "Tussendoor wisselt de behandelaar van tip en van vloeistof. De laatste stap voelt koeler dan de rest, omdat er dan serum in plaats van alleen zuiging op je huid komt.",
+      "Erna ben je meteen klaar. Je huid is roze en voelt strak aan, en dat trekt binnen een uur weg. Make-up kan diezelfde dag, al is het zonde van het resultaat om er meteen overheen te gaan.",
+    ],
     foto: {
       src: "/images/shoot/beh-hydrafacial.jpg",
       alt: "HydraFacial-behandeling in uitvoering bij Diba Clinics",
@@ -319,6 +340,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "oxygeneo",
+    inDeStoel: [
+      "Een klein handstuk gaat over je huid terwijl er een gel op ligt. De twee reageren met elkaar en dat bruist licht: je hoort het meer dan dat je het voelt. Het is een van de rustigste behandelingen die we doen.",
+      "Erna is je huid roze en voelt hij zacht aan. Je kunt meteen door met je dag; er is niets waar je rekening mee hoeft te houden behalve zonbescherming, en die geldt sowieso.",
+    ],
     foto: {
       src: "/images/shoot/beh-oxygeneo.jpg",
       alt: "Behandelgel op de huid met het handstuk erop",
@@ -378,6 +403,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "dermaplaning",
+    inDeStoel: [
+      "Je huid wordt strak getrokken en het mesje gaat er onder een vaste hoek overheen, in korte halen. Het geluid is het gekste eraan: een zacht schrapen dat je in je kaak voelt meer dan op je huid. Pijn doet het niet.",
+      "Vlak erna is je gezicht opvallend glad en neemt het crème makkelijker op. De donshaartjes komen terug zoals ze waren, dus wie het bevalt komt ongeveer maandelijks terug.",
+    ],
     naam: "Dermaplaning",
     categorie: "gezicht",
     kort: "Dode huidcellen en donshaartjes weg met een mesje. Geen zuren, dus ook bij een gevoelige huid.",
@@ -406,6 +435,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "coolift",
+    inDeStoel: [
+      "Vijf minuten, en het is vooral koud. De gasstroom komt onder druk uit een handstuk dat op tien centimeter van je gezicht blijft, en die kou is scherp en meteen weg zodra het handstuk verder gaat.",
+      "Er komt geen naald aan te pas en er wordt niets weggehaald. Je kunt er direct mee de deur uit, en veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.",
+    ],
     foto: {
       src: "/images/shoot/beh-lichaam.jpg",
       alt: "Een lichaamsbehandeling met een gekoeld handstuk",
@@ -466,6 +499,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Peelings ──────────────────────────────────────────────────────────── */
   {
     slug: "peelings",
+    inDeStoel: [
+      "De vloeistof gaat met een kwastje in lagen op je huid. Binnen een halve minuut begint het te prikken of te tintelen, en dat loopt op naarmate er lagen bij komen. De behandelaar kijkt naar je huid én naar de klok; dat samen bepaalt wanneer het eraf gaat.",
+      "Prikken hoort erbij, branden niet. Zeg het dus als het die kant op gaat, want dat is precies het moment waarop er iets moet gebeuren.",
+      "Wat erna komt hangt af van de sterkte. Bij een lichte peeling is je huid een dag wat rood en droog. Bij een sterkere ga je vervellen, en dan is de belangrijkste afspraak dat je er niet aan plukt. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-peeling.jpg",
       alt: "Een peeling wordt met een wattenstaafje op het voorhoofd aangebracht",
@@ -524,6 +562,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Microneedling ─────────────────────────────────────────────────────── */
   {
     slug: "skinpen",
+    inDeStoel: [
+      "Er gaat eerst een verdovende crème op, die een half uur moet intrekken. Daarna gaat de pen in banen over de zone. Wat je voelt is een trilling en een druk, het sterkst op je voorhoofd en rond je kaaklijn, waar de huid dun over bot ligt.",
+      "Direct erna ben je rood, ongeveer als een stevige zonnegloed, en voelt je huid warm. Dat zakt in een tot drie dagen. De eerste vierentwintig uur laat je je huid met rust: geen make-up, geen sport, geen sauna.",
+      "Wat je ziet komt niet die week. Bindweefsel bouwt zich over weken op, dus de vergelijking die telt is die met de meting van vóór de eerste sessie. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-skinpen.jpg",
       alt: "Microneedling met de SkinPen op het voorhoofd",
@@ -579,6 +622,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "dermapen-4",
+    inDeStoel: [
+      "Hetzelfde verloop als bij de SkinPen: verdovende crème, een half uur wachten, en dan de pen in banen over de zone. De Dermapen werkt sneller, dus een vlak is eerder af.",
+      "De diepte wordt per zone bijgesteld. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, en dat merk je: hoe dieper, hoe meer druk je voelt.",
+      "Erna gelden dezelfde afspraken. Een tot drie dagen rood, de eerste dag met rust laten, en zonbescherming daarna niet overslaan. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-dermapen.jpg",
       alt: "Behandeling met de Dermapen 4 bij een cliënt",
@@ -646,6 +694,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Skinboosters ──────────────────────────────────────────────────────── */
   {
     slug: "skinboosters",
+    inDeStoel: [
+      "Dit is een injectiebehandeling, dus er zijn prikjes. De injector zet ze snel achter elkaar en op een gelijke diepte, wat het gelijkmatiger maakt dan met de hand. Verdovende crème vooraf hoort erbij.",
+      "Vlak erna zie je kleine bultjes op de plek van elke prik. Die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.",
+      "Plan dit dus niet vlak voor iets waar je op de foto moet. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-skinbooster.jpg",
       alt: "Een skinbooster wordt onder het oog ingebracht",
@@ -716,6 +769,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Laser en licht ────────────────────────────────────────────────────── */
   {
     slug: "fotona",
+    inDeStoel: [
+      "Je krijgt een beschermbril op en die blijft de hele behandeling op. Wat je voelt hangt af van de modus: bij de verwarmende stand is het een oplopende warmte die net voor het ongemakkelijke stopt, bij de andere korte tikjes.",
+      "De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.",
+      "Erna ben je meestal rood en warm, alsof je te lang in de zon hebt gezeten. Dat trekt in een paar uur tot een dag weg. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-fotona.jpg",
       alt: "Fotona-laserbehandeling met oogbescherming",
@@ -795,6 +853,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
      benoemen, en die grens staat in "niet": snurken is niet hetzelfde als slaapapneu. */
   {
     slug: "nightlase",
+    inDeStoel: [
+      "Deze behandeling gaat niet over je huid maar over je gehemelte. Je mond blijft open met een spreider, en de laser werkt achterin, in drie of vier doorgangen.",
+      "Het is warm en het is even wennen, maar het doet geen pijn en er wordt niets gesneden. Verdoving is niet nodig en narcose al helemaal niet.",
+      "Erna kun je gewoon eten en drinken. Sommige mensen hebben een dag een wat droge keel. [MEDISCHE-CHECK-ROJDA]",
+    ],
     naam: "NightLase",
     apparaat: "Fotona TimeWalker",
     categorie: "overig",
@@ -853,6 +916,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "nordlys-ipl",
+    inDeStoel: [
+      "Er gaat een koele gel op en daarna komt het handstuk op je huid. Elke flits voelt als een kort tikje met een elastiekje, en je ziet hem ook door je oogleden heen; daarom gaat er een bril op.",
+      "Bij vaatjes en pigment is de reactie meteen te zien: een vaatje wordt donkerder, een pigmentvlek komt tijdelijk scherper naar voren. Dat hoort erbij en betekent niet dat het erger wordt.",
+      "Erna ben je een paar uur rood. Pigment dat naar boven komt vervaagt in de dagen erna. Zonbescherming is hier geen advies maar onderdeel van de behandeling. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-nordlys.jpg",
       alt: "Nordlys IPL-behandeling met beschermbril",
@@ -892,6 +960,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "lumi-8-led",
+    inDeStoel: [
+      "Je ligt met je ogen dicht onder een paneel dat op een handbreedte van je gezicht hangt. Er is licht en er is verder niets: geen warmte, geen tinteling, geen geluid.",
+      "De meeste mensen vinden het het rustigste kwartier van hun week. Het wordt vaak gecombineerd met een andere behandeling in dezelfde afspraak.",
+      "Erna kun je direct door met je dag. Er is niets aan je huid gebeurd waar iets van hoeft te herstellen.",
+    ],
     foto: {
       src: "/images/shoot/beh-led-masker.jpg",
       alt: "Een LED-masker met rood licht op het gezicht",
@@ -949,6 +1022,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Pigmenttrajecten ──────────────────────────────────────────────────── */
   {
     slug: "cosmelan-dermamelan",
+    inDeStoel: [
+      "De eerste afspraak duurt kort. Er gaat een masker op je gezicht dat je zelf mee naar huis neemt en er thuis afhaalt, na het aantal uren dat je meekrijgt. Dat aantal is geen richtlijn maar een afspraak.",
+      "De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat schema volgen bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.",
+      "Vervellen hoort erbij en dat is de fase waarin mensen afhaken. Daarom bespreken we vooraf wanneer je hiermee begint: niet vlak voor een vakantie en niet in een drukke periode. [MEDISCHE-CHECK-ROJDA]",
+    ],
     naam: "Cosmelan en dermamelan",
     apparaat: "Mesoestetic",
     categorie: "pigment",
@@ -983,6 +1061,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "happy-intim",
+    inDeStoel: [
+      "Een behandeling in een gebied waar je je kwetsbaar voelt, en daar wordt naar gehandeld. Je hoort vooraf precies wat er gebeurt en wat je aan- of uithoudt, en je kunt op elk moment zeggen dat het genoeg is.",
+      "De behandeling zelf is een peeling: vloeistof erop, kort inwerken, eraf. Prikken hoort erbij, branden niet.",
+      "Erna is de huid daar een paar dagen gevoeliger. Strakke kleding en sporten laat je die dagen even. [MEDISCHE-CHECK-ROJDA]",
+    ],
     naam: "Happy Intim",
     apparaat: "Happy Intim®",
     categorie: "pigment",
@@ -1045,6 +1128,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Laserontharing ────────────────────────────────────────────────────── */
   {
     slug: "laserontharing",
+    inDeStoel: [
+      "De zone wordt geschoren als dat nog niet gebeurd is, want de laser moet bij de wortel kunnen en niet bij het haar erboven. Daarna gaat er een bril op en werkt de behandelaar de zone in banen af.",
+      "Elke puls voelt als een warm tikje, met een koude stoot er direct omheen. Op je bovenlip en langs je bikinilijn voel je meer dan op je benen; dat is overal zo en het gaat snel voorbij.",
+      "Erna is de zone een paar uur rood en warm. Sauna, sport en zon laat je die dag even, en zonbescherming hoort daarna bij het traject en niet erna. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/apparaat-gentle-laser.jpg",
       alt: "Laserontharing van de oksel met beschermbrillen",
@@ -1081,6 +1169,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Overig ────────────────────────────────────────────────────────────── */
   {
     slug: "xl-hair",
+    inDeStoel: [
+      "Injecties in de hoofdhuid, met een injector die de diepte gelijk houdt. Het is een reeks prikjes die snel achter elkaar gaan; de hoofdhuid is gevoelig, en dat merk je vooral in de eerste minuut.",
+      "Dit is een traject en geen losse sessie. Wat je ervan ziet komt over maanden, want haar groeit nu eenmaal niet sneller omdat je het graag wil. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-xl-hair.jpg",
       alt: "De XL Hair-behandeling wordt toegelicht bij een cliënt",
@@ -1142,6 +1234,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "acne-traject",
+    inDeStoel: [
+      "Het traject begint met een meting en een gesprek, niet met een behandeling. Wat daaruit komt bepaalt de volgorde, en die volgorde is de kern: ontsteking eerst, littekens later, nooit tegelijk.",
+      "Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en deels controle, en bij elke controle wordt er opnieuw gemeten onder dezelfde belichting.",
+      "Tussen de afspraken door doe jij het meeste werk, met de producten en het schema dat je meekrijgt. Dat is geen bijzaak: het bepaalt of de sessies opleveren wat ze kunnen. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-acne-traject.jpg",
       alt: "Behandelproducten bij een cliënt met acne",
@@ -1198,6 +1295,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "jongeren-acne-traject",
+    inDeStoel: [
+      "Hetzelfde traject, ingericht op een leven met school, sport en een bijbaan. De afspraken zijn korter en de thuisroutine is met opzet klein gehouden: drie stappen die je ook volhoudt als je te laat opstaat.",
+      "Ouders mogen mee naar binnen en hoeven dat niet. Dat is aan jou en niet aan hen, en dat zeggen we ook zo.",
+      "Bij de controles kijken we samen naar de meting van de vorige keer. Niet om te beoordelen of je je best hebt gedaan, maar om te zien of het plan klopt. [MEDISCHE-CHECK-ROJDA]",
+    ],
     naam: "Jongeren acne traject",
     categorie: "overig",
     kort: "Dit begeleide programma van drie maanden is bedoeld voor jongeren tot en met 18 jaar.",
@@ -1248,6 +1350,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "littekentherapie",
+    inDeStoel: [
+      "De eerste afspraak gaat vooral over kijken en meten. Hoe oud een litteken is en hoe het aanvoelt bepaalt wat er mogelijk is, en dat is een gesprek dat je niet in vijf minuten voert.",
+      "De behandeling zelf hangt af van wat eruit komt, en dat verschilt per litteken. Wat overal geldt is dat het een reeks is en geen losse sessie, met tussenpozen die het weefsel de tijd geven.",
+      "Bij een litteken na een operatie of keizersnede rekenen we naar lengte. Dat hoor je vooraf, in een bedrag en niet in een schatting. [MEDISCHE-CHECK-ROJDA]",
+    ],
     naam: "Littekentherapie",
     categorie: "overig",
     kort: "Voor littekens na een operatie of keizersnede. Prijs naar lengte van het litteken.",
@@ -1309,6 +1416,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "fibromen",
+    inDeStoel: [
+      "Kort en gericht. Het steelwratje wordt verdoofd met een crème of een prikje en daarna verwijderd; het geheel duurt per plekje ongeveer een minuut.",
+      "Er blijft een klein korstje achter dat er binnen een week tot tien dagen afgaat. Eraan zitten is de enige manier om er een litteken van te maken.",
+      "We rekenen per kwartier en niet per plekje, dus meerdere in één afspraak is meestal voordeliger dan een paar keer terugkomen. [MEDISCHE-CHECK-ROJDA]",
+    ],
     foto: {
       src: "/images/shoot/beh-fibromen.jpg",
       alt: "Een fibroom wordt verwijderd naast de neus",
@@ -1369,6 +1481,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "voedingsintolerantietest",
+    inDeStoel: [
+      "Dit is geen huidbehandeling. Er wordt een klein beetje bloed afgenomen en dat gaat naar een laboratorium; in de kliniek zelf ben je binnen een kwartier klaar.",
+      "De uitslag bespreken we in een aparte afspraak, want een lijst met waardes zonder uitleg leidt vooral tot onnodig schrappen in je eten.",
+      "Wat een intolerantietest wel en niet kan zeggen hoor je in dat gesprek, en ook als het antwoord is dat je er in jouw geval weinig aan hebt. [MEDISCHE-CHECK-ROJDA]",
+    ],
     naam: "Voedingsintolerantietest",
     categorie: "overig",
     kort: "Dit is een test en geen huidbehandeling",
