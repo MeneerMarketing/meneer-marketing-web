@@ -449,7 +449,7 @@ export function PillarCta({
             variant="primair-op-donker"
             className="mt-8 w-fit"
           >
-            Start je intake (4 min)
+            Plan Behandeling Nul
           </Button>
           <a
             href={whatsappHref}

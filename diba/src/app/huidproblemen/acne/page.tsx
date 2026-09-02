@@ -134,7 +134,7 @@ export default function AcnePage() {
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake?topic=acne">Start je intake (4 min)</Button>
+              <Button href="/intake?topic=acne">Plan Behandeling Nul</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -470,7 +470,7 @@ export default function AcnePage() {
               variant="primair-op-donker"
               className="mt-8 w-fit"
             >
-              Start je intake (4 min)
+              Plan Behandeling Nul
             </Button>
             <a
               href={DIBA_WHATSAPP_URL}

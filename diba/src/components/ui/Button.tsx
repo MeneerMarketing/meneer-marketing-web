@@ -10,7 +10,7 @@ import { ArrowUpRight } from "@/components/ui/Icon";
  * de gewone primaire knop is daar onzichtbaar.
  *
  * 48px hoog = touch-target (§13). Labels zeggen exact wat er gebeurt en worden door
- * de aanroeper bepaald: "Start je intake (4 min)", nooit "Verstuur" of "Ontdek".
+ * de aanroeper bepaald: "Plan Behandeling Nul", nooit "Verstuur" of "Ontdek".
  */
 
 type Variant =

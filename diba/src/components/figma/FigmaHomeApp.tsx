@@ -303,7 +303,7 @@ export default function FigmaHomeApp({
               onClick={() => setScanOpen(false)}
               className="mt-7"
             >
-              Start je intake (4 min)
+              Plan Behandeling Nul
             </Button>
           </div>
         </div>
@@ -640,7 +640,7 @@ export default function FigmaHomeApp({
               variant="primair-op-donker"
               className="mt-8 w-fit"
             >
-              Start je intake (4 min)
+              Plan Behandeling Nul
             </Button>
             <a
               href={DIBA_WHATSAPP_URL}

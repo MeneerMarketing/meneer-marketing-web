@@ -29,7 +29,7 @@ import {
  *
  * WAT ER HIERVOOR STOND EN WAAROM DAT WEG MOEST.
  *
- * Drie dingen, en geen van drieën een opmaakkwestie:
+ * Drie dingen, en geen van drieÃ«n een opmaakkwestie:
  *
  * 1. Telefoon en e-mail stonden als "[GEGEVEN-NODIG]" en waren daarmee leeg, terwijl ze
  *    allebei gewoon in `site.ts` staan en op dibaclinics.nl. Een contactpagina zonder
@@ -39,7 +39,13 @@ import {
  *    naar handelt, dus het staat er niet meer. [GEGEVEN-NODIG: de route, Okan]
  * 3. "Behandeling Nul. Gratis, 4 minuten." Behandeling Nul is de meting in de kliniek en
  *    die staat op de prijslijst voor vijftig euro. Gratis en vier minuten is de online
- *    intake, en dat is iets anders. Die twee stonden op drie pagina's door elkaar.
+ *    intake, en dat is iets anders. Die twee stonden op drie pagina’s door elkaar.
+ *
+ *    Inmiddels rechtgezet: de knop "Start je intake (4 min)" stond op negen plekken en
+ *    linkte overal naar /intake, de pagina die zegt dat het maximaal zestig minuten duurt
+ *    en vijftig euro kost. Hij heet nu overal "Plan Behandeling Nul", zodat de knop en de
+ *    bestemming hetzelfde zeggen.
+ *
  *    [BESLUIT-OKAN: hoe die twee heten, want nu heten ze allebei het begin]
  *
  * De signatuur van deze pagina is de ingangkiezer: welke vraag hoort bij welk kanaal, en
@@ -50,7 +56,7 @@ import {
  * Deze pagina vertelde waar je je vraag kwijt kunt en niet wat er gebeurt als je hem
  * stelt. Terwijl een groot deel van het verkeer op een contactpagina van een kliniek
  * bestaat uit twee mensen: iemand die moet afzeggen en iemand die in de file staat. Die
- * zoeken het telefoonnummer omdat ze iets willen wéten, en dat antwoord stond alleen op
+ * zoeken het telefoonnummer omdat ze iets willen wÃ©ten, en dat antwoord stond alleen op
  * de algemene voorwaarden, in de u-vorm, tussen de juridische tekst.
  *
  * Diezelfde vier situaties staan hier nu wel, uit dezelfde bron. Ze waren al in de
@@ -68,7 +74,7 @@ import {
  * tijden kloppen: binnen openingstijden staat niet elk uur een therapeut vrij.
  * [GEGEVEN-NODIG: bevestiging van de openingstijden, Okan]
  *
- * Eén donkergroen vlak: het blok over wat er niet op afstand kan (§5).
+ * EÃ©n donkergroen vlak: het blok over wat er niet op afstand kan (Â§5).
  */
 
 export const metadata: Metadata = zoekmachineVelden({
@@ -118,7 +124,7 @@ export default function ContactPage() {
         ])}
       />
 
-      {/* ── Hero: het adres, en meteen de drie manieren ── */}
+      {/* ââ Hero: het adres, en meteen de drie manieren ââ */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
@@ -195,7 +201,7 @@ export default function ContactPage() {
             </ul>
 
             {/* Stond op een haarlijn, en zei bovendien dat openingstijden hier niet
-                staan terwijl er verderop een sectie over gaat. Twee antwoorden op één
+                staan terwijl er verderop een sectie over gaat. Twee antwoorden op Ã©Ã©n
                 vraag op dezelfde pagina; nu verwijst hij ernaar. */}
             <p className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-[14px] leading-6 text-[var(--t-muted)]">
               Onze openingstijden en de agenda staan verderop.{" "}
@@ -211,7 +217,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── De ingangkiezer: de signatuur van deze pagina ── */}
+      {/* ââ De ingangkiezer: de signatuur van deze pagina ââ */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         {/* Een contactpagina is adres, tijden en kanalen: allemaal tekst. Dit beeld laat zien
           waar die gegevens heen leiden, en dat is precies wat iemand wil weten die nog
@@ -248,7 +254,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── Wat er op afstand niet kan ── */}
+      {/* ââ Wat er op afstand niet kan ââ */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
@@ -286,7 +292,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── Afzeggen, te laat, niet komen ──
+      {/* ââ Afzeggen, te laat, niet komen ââ
           De twee grootste redenen dat iemand een contactpagina opzoekt: hij moet afzeggen
           of hij staat in de file. Het antwoord stond alleen op de algemene voorwaarden, in
           de u-vorm tussen de juridische tekst. Zelfde bron, hier in gewone taal. */}
@@ -345,10 +351,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── Wanneer we open zijn ──
+      {/* ââ Wanneer we open zijn ââ
           De openingstijden staan nergens in de data en ook niet in het bedrijfsschema. Ik
           verzin ze niet: dit is het soort gegeven waar iemand op afreist. Wat hier staat is
-          wat wél waar is, namelijk dat de agenda toont wanneer er plek is. */}
+          wat wÃ©l waar is, namelijk dat de agenda toont wanneer er plek is. */}
       <section
         id="agenda"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
@@ -403,7 +409,7 @@ export default function ContactPage() {
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
               >
                 Bekijk de agenda
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">â</span>
               </Link>
               <a
                 href={DIBA_TELEFOON_HREF}
@@ -416,7 +422,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── Route ── */}
+      {/* ââ Route ââ */}
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
@@ -483,7 +489,7 @@ export default function ContactPage() {
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
               >
                 Open in Google Maps
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">â</span>
               </Link>
               <Link
                 href="/intake"

@@ -142,7 +142,7 @@ Is een huidanalyse altijd nodig?
 
 Plan een intake in onze kliniek in Hillegersberg. We nemen de tijd voor jouw vragen, huidanalyse en een duidelijk behandelvoorstel.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -246,7 +246,7 @@ Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kun
 
 Kom je liever langs zonder afspraak, bel dan eerst. We willen je geen rit voor niets laten maken.
 
-> knop: BEKIJK DE AGENDA ↗
+> knop: BEKIJK DE AGENDA Â
 
 **Aan de Weissenbruchlaan.**
 
@@ -270,7 +270,7 @@ Stallen kan voor de deur. Vanuit het centrum ben je er in ongeveer twintig minut
 
 Twijfel je over de route, kijk dan even in Maps: dat weet actueler dan deze pagina waar er gewerkt wordt.
 
-> knop: OPEN IN GOOGLE MAPS ↗
+> knop: OPEN IN GOOGLE MAPS Â
 
 ---
 
@@ -574,7 +574,7 @@ De meeste mensen stellen deze afspraak twee jaar uit. Snappen we.
 
 Zit je vooral met wat er is achtergebleven? Dan begint het bij acnelittekens, want dat is vaak helemaal geen litteken.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
@@ -876,7 +876,7 @@ Kunnen putjes helemaal verdwijnen? +
 
 In Behandeling Nul stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -1152,7 +1152,7 @@ Wat kost een behandeling? +
 
 Behandeling Nul legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies er nodig zijn, en wij ook.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -1292,7 +1292,7 @@ Is dof hetzelfde als droog? +
 
 In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -1422,7 +1422,7 @@ Wat kost dit? +
 
 We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, dan hoor je dat en houdt het op. Blijkt het pigment, dan weet je meteen wat er mogelijk is.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -1562,7 +1562,7 @@ Wat kost dit? +
 
 We meten vet en water apart, en vertellen je welke as bij jou beweegt. Zit je in balans, dan is ons advies om niets te doen en houdt het daar op.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -1786,7 +1786,7 @@ Hoeveel kunnen er in een keer? +
 
 Bij milia is de afspraak kort en eenmalig. Blijkt het iets anders, dan hoor je dat meteen en sturen we je door in plaats van dat we het proberen.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -1932,7 +1932,7 @@ Wat kost dit? +
 
 We lopen je routine langs, meten hoe je barrière ervoor staat en zeggen wat eruit kan. Vaak is dat het hele advies, en dan is de behandeling dat je twee weken minder doet.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -2388,7 +2388,7 @@ Wat kost dit? +
 
 We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en welk deel niet. Daarna beslis jij of je iets wilt doen, en wat.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -2528,7 +2528,7 @@ Doet het pijn? +
 
 In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -2644,7 +2644,7 @@ En die donkere vlekjes die overblijven? +
 
 In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw huidtype en haarkleur geschikt zijn. Zo niet, dan hoor je dat voordat je iets afspreekt.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -2760,7 +2760,7 @@ Waarom is het 's winters erger? +
 
 Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldig is en niet aan hen ligt. Wat er daarnaast te verzachten valt, bespreken we in hetzelfde gesprek.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -2942,7 +2942,7 @@ Wat kost dit? +
 
 Bij een rood litteken of rode striae is dit het moment waarop het het meeste uitmaakt. Bij oude littekens rekenen we eerlijk voor of het genoeg oplevert.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -3090,7 +3090,7 @@ Wat kost dit? +
 
 We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je dat en raden we behandelen af. Zit het hoog, dan weet je meteen wat er te halen valt en wat het vraagt.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -3302,7 +3302,7 @@ Moet ik mijn huid strenger reinigen? +
 
 In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -3442,7 +3442,7 @@ Kan dit ook op mijn handen? +
 
 In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het pigment dat je zelf nog niet ziet. Daarna weet je wat er kan en wat er eerst ergens anders hoort.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -3616,7 +3616,7 @@ Kan ik iets doen aan de vlekken op mijn handen? +
 
 De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -3766,7 +3766,7 @@ Wat kost dit? +
 
 We kijken onder vast licht waar je naar kijkt, of het poriën zijn of iets anders, en wat er in jouw geval realistisch aan te veranderen valt.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -4008,7 +4008,7 @@ Hoe lang duurt het voor ik iets zie? +
 
 Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmeting legt vast waar je begon, zodat het verschil later te zien is in plaats van te geloven.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -4070,7 +4070,7 @@ Kies alles wat je herkent. Het gaat ons niet om het aantal, maar om de verhoudin
 
 Weet je het niet precies? Houd het twee weken bij. Dat levert meer op dan welke test dan ook.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 Dit is geen diagnose en geen test. Het is een manier om je eigen patroon te zien voordat je hier binnenloopt, zodat het gesprek niet bij nul begint.
 
@@ -4308,7 +4308,7 @@ Blijft er een litteken achter? +
 
 Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. Blijkt er iets tussen te zitten dat beoordeeld moet worden, dan hoor je dat voordat we beginnen.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -4484,7 +4484,7 @@ Kan ik er zelf iets aan doen? +
 
 In Behandeling Nul stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -11058,7 +11058,7 @@ Wat kost dit? +
 
 In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je nachten. Daarna weet je of dit bij jou iets oplevert, en wij ook.
 
-> knop: START JE INTAKE (4 MIN)
+> knop: PLAN BEHANDELING NUL
 
 ---
 
@@ -11195,4 +11195,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5165 tekstblokken · ongeveer 76.122 woorden._
+_107 pagina's · 5165 tekstblokken · ongeveer 76.074 woorden._
