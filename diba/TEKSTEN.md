@@ -30,7 +30,25 @@ De kop- en voettekst staan op elke pagina hetzelfde en zijn hier weggelaten.
 
 MIJN DIBA
 
+Straks je huid op één plek
+
+- Je metingen naast elkaar, van de eerste tot de laatste
+
+- Je foto's onder hetzelfde licht, dus echt vergelijkbaar
+
+- Je plan, je afspraken en wat er nog komt
+
+Nog in aanbouw. We bouwen eerst de zorg, dan pas het portaal.
+
 NL
+
+- Nederlands
+
+- English STRAKS
+
+- Español STRAKS
+
+- Français STRAKS
 
 > knop: AFSPRAAK MAKEN
 
@@ -132,11 +150,19 @@ Dit zijn de vragen die het vaakst gesteld worden voordat iemand een afspraak maa
 
 Moet ik al weten welke behandeling ik wil?
 
+Nee. Je komt juist voor advies. We kijken samen wat voor jouw huid en doel passend is.
+
 Wat kost een eerste afspraak?
+
+Je ontvangt vooraf duidelijke informatie over de intake en eventuele behandelopties. Geen verrassingen achteraf.
 
 Kan ik ook alleen een intake boeken?
 
+Ja. We kijken onafhankelijk mee naar een plan dat je elders hebt gekregen. Ook als ons advies is om daar verder te gaan.
+
 Is een huidanalyse altijd nodig?
+
+Niet altijd. Wanneer een huidscan waarde toevoegt, leggen we uit wat we meten en waarom.
 
 **Kom zoals je bent. Wij kijken met je mee.**
 
@@ -566,7 +592,7 @@ Iedere huidvraag begint met een beoordeling, waaruit ook kan volgen dat we geen 
 
 **Google-omschrijving:** Acne heeft niet één oorzaak en dus niet één behandeling. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.
 
-**PUISTJES DIE STEEDS TERUGKOMEN**
+**ACNE DIE STEEDS TERUGKOMT**
 
 Acne heeft niet één oorzaak en daarom ook niet één standaardbehandeling. We kijken naar jouw huid, de vorm en ernst van de acne en factoren die daarop van invloed zijn. Zo bepalen we welke aanpak bij jouw huid past.
 
@@ -716,19 +742,35 @@ Dat is niet om je te overtuigen. Het is zodat we het kunnen zien als iets niet w
 
 Kom ik hier van mijn acne af? +
 
+Bij de meeste mensen is acne goed te beheersen. Bij sommigen blijft het terugkomen, bijvoorbeeld door hormonen. We zeggen vooraf wat we in jouw geval realistisch vinden, en we meten of het werkt. Beheersing is soms het eerlijke doel, en dat is geen tweede keus.
+
 Hoeveel sessies heb ik nodig? +
+
+Dat hangt af van het type acne en hoe lang het speelt. Na de nulmeting krijg je een aantal en een prijs, geen open einde.
 
 Ik heb al alles geprobeerd. Waarom zou dit werken? +
 
+Eerlijk gezegd weten we dat nog niet. Daarom beginnen we met meten in plaats van behandelen. Als wij denken dat het bij ons niet gaat lukken, zeggen we dat liever nu dan na zes sessies.
+
 Mag ik make-up blijven gebruiken? +
+
+Ja. We kijken wel samen naar wat je gebruikt, want een paar veelgebruikte producten houden het beeld in stand zonder dat je het merkt.
 
 Kan ik komen als ik onder behandeling ben bij een dermatoloog? +
 
+Dat kan, en het is vaak juist verstandig. Vertel het ons wel, dan stemmen we af wat veilig combineert met je medicatie.
+
 Helpt het als ik anders ga eten? +
+
+Soms wel. We werken samen met een laboratorium en kunnen een voedingsintolerantietest doen; komt daar iets uit, dan heeft je voeding aanpassen ook echt effect. Zonder die test blijft het gokken, en dan gaan we je hier geen dieet aanpraten.
 
 Ik heb vooral last van de vlekken die overblijven. +
 
+Dat zijn meestal geen littekens maar pigmentvlekken. Zonbescherming voorkomt dat ze donkerder worden en dat er nieuwe bij komen, maar het laat een vlek die er al zit niet verdwijnen; daar zijn behandelingen voor nodig. Zit er een kuiltje in de huid, dan is het wél een litteken en kijken we ernaar zodra de huid rustig is.
+
 Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
@@ -866,11 +908,19 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Hoe weet ik of het een litteken is of alleen kleur? +
 
+Met je vinger en met licht van opzij. Voel je een kuiltje of een randje, en zie je een schaduw als het licht schuin valt, dan is er weefsel verloren gegaan. Voelt het glad en zie je alleen kleur, dan is het rood of pigment en geen litteken.
+
 Gaan acnelittekens vanzelf weg? +
+
+Rode en bruine plekken deels wel, in maanden. Kuiltjes niet: die zitten er over jaren nog net zo. Dat onderscheid bepaalt of afwachten verstandig is of juist zonde van de tijd.
 
 Hoe lang moet ik wachten na mijn laatste puistje? +
 
+Er is geen vaste termijn; het gaat erom dat er geen nieuwe ontstekingen meer bij komen en dat de huid rustig is. Bij de meting kijken we daarnaar, en soms is het antwoord dat we over een paar maanden opnieuw kijken.
+
 Kunnen putjes helemaal verdwijnen? +
+
+Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van meerdere sessies. Wie belooft dat je huid weer glad wordt, meet niet en heeft je huid niet gezien.
 
 **Plan een intake bij Diba Clinics**
 
@@ -980,13 +1030,23 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Waarom hebben mannen dit bijna niet? +
 
+Door de richting van de bindweefselschotjes. Bij mannen kruisen ze elkaar, bij vrouwen staan ze overwegend rechtop. Dezelfde hoeveelheid vet geeft dan een heel ander oppervlak.
+
 Ik ben slank en heb het toch. Hoe kan dat? +
+
+Omdat het niet over de hoeveelheid vet gaat maar over hoe het eronder is opgedeeld. Dat is precies waarom slank zijn geen bescherming biedt.
 
 Helpt drooggeborsteld of masseren? +
 
+Het maakt de huid tijdelijk roder en iets voller, waardoor kuiltjes even minder opvallen. Dat is een uur later weg en het is geen verandering.
+
 Is het schadelijk? +
 
+Nee. Het is geen ziekte en er is medisch gezien niets aan de hand.
+
 Kan ik hiervoor bij jullie terecht? +
+
+Nee, en dat is de reden dat deze pagina bestaat. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetzelfde antwoord als hierboven.
 
 **Waarom we hier niets aan doen**
 
@@ -1140,13 +1200,23 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Komen die vaatjes terug na de behandeling? +
 
+Een vaatje dat gesloten is, blijft dicht. Wat wel gebeurt, is dat er in de loop van de tijd nieuwe bij kunnen komen, want je aanleg en de dingen die je huid aanzetten veranderen niet door een behandeling. Daarom besteden we net zoveel aandacht aan wat de roodheid opwekt als aan wat er nu te zien is.
+
 Is couperose hetzelfde als rosacea? +
+
+Ze lopen vaak samen op, maar het is niet hetzelfde. Couperose zijn de zichtbare, blijvend opgerekte vaatjes. Rosacea is een ontstekingsbeeld met opvlammingen, soms bultjes en een branderig gevoel. Je kunt de vaatjes hebben zonder rosacea, en rosacea zonder zichtbare vaatjes. Herken je meer dan de lijntjes alleen, lees dan verder op de rosaceapagina.
 
 Krijg ik dit van alcohol? +
 
+Alcohol zet de vaten wijd open en kan een opvlamming uitlokken, maar het verklaart de aanleg niet. Dat hardnekkige verband zorgt er vooral voor dat mensen zich schamen voor iets waar ze zelf weinig aan konden doen.
+
 Kan ik make-up blijven gebruiken? +
 
+Ja, ook tussen de sessies door. We vragen alleen om je huid schoon te laten op de dag van de behandeling zelf.
+
 Wat kost een behandeling? +
+
+Een behandeling van vaatjes met de Nordlys begint bij 75 euro voor een klein gebied. Wat het bij jou wordt, hangt af van hoe groot het gebied is en hoeveel sessies er nodig zijn; dat hoor je na de eerste afspraak. Alle tarieven staan op de prijzenpagina.
 
 **We tellen eerst hoeveel er zichtbaar is**
 
@@ -1282,11 +1352,19 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Waarom ziet mijn huid er 's ochtends doffer uit? +
 
+In je slaap verlies je vocht via je huid en ligt de doorbloeding lager. In de loop van de ochtend trekt dat bij. Blijft het de hele dag, dan zit het niet in je nacht maar in je hoornlaag.
+
 Hoe lang blijft het effect van een gezichtsbehandeling? +
+
+Bij dofheid is het effect vaak direct zichtbaar en meestal een aantal weken merkbaar. Dat is geen tekortkoming zolang je het weet: eens in de zoveel weken glans kopen is een legitieme keuze. Het wordt pas een probleem als je denkt een oorzaak te behandelen.
 
 Helpt meer water drinken? +
 
+Als je structureel te weinig drinkt, ja. Boven een normale inname niet: extra water maakt je huid niet extra vochtig. Wat wel scheelt is wat je huid vasthoudt, en daar is met verzorging meer aan te doen dan met een fles.
+
 Is dof hetzelfde als droog? +
+
+Nee. Droog gaat over te weinig vet, uitgedroogd over te weinig water, en dof over hoe je huid licht terugkaatst. Je kunt een vette huid hebben die dof is. Op de pagina over een droge huid staat dat onderscheid uitgewerkt.
 
 **Uitzoeken welke van de vier het bij jou is**
 
@@ -1408,15 +1486,27 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Komt het echt niet door te weinig slaap? +
 
+Slaaptekort veroorzaakt geen van de drie types. Het maakt wel dat je gezicht vochtiger en bleker is, waardoor bestaande kringen sterker opvallen. Uitslapen laat ze dus tijdelijk meevallen zonder dat er iets veranderd is.
+
 Mijn moeder heeft ze ook. Is dat toeval? +
+
+Waarschijnlijk niet. Zowel de vorm van de oogkas als de neiging tot pigment op deze plek zit in de familie. Dat verandert niets aan wat er mogelijk is, maar het verklaart wel waarom ze er al vroeg waren.
 
 Ik heb een donkere huid. Verandert dat iets? +
 
+Ja. Pigment onder het oog komt vaker voor bij een donkere huid, en tegelijk is de kans op ongewenste verkleuring na een te stevige behandeling daar groter. Rustiger werken is dan geen voorzichtigheid maar noodzaak.
+
 Helpt een oogcrème? +
+
+Bij pigment kan verzorging meehelpen, bij schaduw doet die niets. Dat is precies waarom het loont om eerst te weten welk type je hebt in plaats van iets te kopen.
 
 Hoeveel sessies heb ik nodig? +
 
+Meestal drie tot zes, met vier tot zes weken ertussen, en dat hoor je pas na de meting omdat het van de oorzaak afhangt. Bij pigment werken we onder het oog bewust in kleinere stappen, dus reken op meer sessies dan bij dezelfde vlek op je wang.
+
 Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Eerst weten welk type je hebt.**
 
@@ -1550,13 +1640,23 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Wat is nou het verschil tussen droog en uitgedroogd? +
 
+Droog gaat over vet en is grotendeels aanleg. Uitgedroogd gaat over water en is een toestand die komt en gaat. Ze voelen allebei ongemakkelijk en vragen het tegenovergestelde, en dat is de reden dat mensen jarenlang het verkeerde kopen.
+
 Helpt veel water drinken? +
+
+Voor je lichaam wel, voor de bovenste huidlaag nauwelijks. Die haalt zijn vocht vooral uit wat je erop doet en uit hoe goed je barrière lekkage tegenhoudt.
 
 Ik heb ook rode plekjes en jeuk. Hoort dat hierbij? +
 
+Kan, maar bij aanhoudende jeuk, kloofjes of plekken die niet weggaan hoort een huisarts mee te kijken. Dan kan het eczeem zijn, en dat vraagt iets anders dan een droge huid.
+
 Hoe snel merk ik verschil? +
 
+Op de wateras vaak binnen twee weken, op de vetas veel langzamer omdat je daar tegen je aanleg in werkt. Reken op zes tot acht weken voordat je op die tweede as iets vaststelt. Dat verschil in tempo is meteen de beste test van waar je zat.
+
 Wat kost dit? +
+
+De meting kost vijftig euro en dat is meteen het hele consult. Wat er daarna volgt hangt af van wat eruit komt en staat per behandeling op de prijzenpagina. Blijkt uit de meting dat je in balans zit, dan is ons advies om niets te doen en houdt het daar op.
 
 **Eerst weten in welk vak je zit.**
 
@@ -1664,13 +1764,23 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Kan ik met eczeem bij jullie terecht? +
 
+Voor het eczeem zelf niet, dat gaat naar de huisarts. Voor de huid eromheen soms wel, als die rustig is en je iets anders wilt aanpakken. We kijken dan of het verstandig is en zeggen het als het dat niet is.
+
 Gaat eczeem ooit over? +
+
+Bij kinderen verdwijnt het vaak grotendeels. Bij volwassenen gaat het meestal in periodes, met rustige tijden en opvlammingen. Dat betekent niet dat er niets aan te doen is, wel dat het beheerd wordt.
 
 Is het besmettelijk? +
 
+Nee. Eczeem is niet overdraagbaar.
+
 Waarom is het 's nachts erger? +
 
+Je bent overdag afgeleid en 's avonds niet, en de huid is dan ook warmer. Daar komt bij dat je in je slaap krabt zonder het te merken.
+
 Helpt zonlicht? +
+
+Bij sommige mensen wel en bij anderen niet, en verbranden maakt het altijd erger. Lichttherapie bestaat als behandeling maar die hoort bij de dermatoloog en niet bij een huidkliniek.
 
 **Naar je huisarts. Wij zijn hooguit een schakel.**
 
@@ -1776,11 +1886,19 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Waarom kan ik een milium niet uitdrukken? +
 
+Omdat er geen opening naartoe is. Een mee-eter heeft een poriegang naar buiten; een milium zit volledig ingesloten onder een laagje huid. Knijpen beschadigt daarom alleen het weefsel eromheen.
+
 Doet het pijn om ze te laten verwijderen? +
+
+Je voelt een prikje per bolletje, vergelijkbaar met een splinter eruit halen. Er is geen verdoving nodig en je kunt daarna gewoon weg.
 
 Komen ze terug? +
 
+De behandelde bolletjes niet. Wel kunnen er nieuwe ontstaan, en dan kijken we of er een aanleiding is: bij sommige mensen is dat een te rijke oogcrème, bij anderen jarenlange zonschade.
+
 Hoeveel kunnen er in een keer? +
+
+Meestal alles wat er zit, in een afspraak. Zijn het er veel, dan spreiden we het soms om de huid rust te geven. Dat hoor je vooraf en niet halverwege.
 
 **Even laten kijken. Vaak is het zo klaar.**
 
@@ -1920,13 +2038,23 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Is een gevoelige huid iets waarmee je geboren wordt? +
 
+Soms, maar lang niet altijd. Veel mensen krijgen het pas na jaren, en dan is er meestal iets veranderd in wat ze gebruiken of hoe vaak. Aanleg wordt vaak pas zichtbaar als de rest is weggehaald.
+
 Mijn huid prikt van bijna alles. Wat nu? +
+
+Terug naar het minimum, twee weken. Reinigen en één verzorgend product, verder niets. Als het dan rustiger wordt was het de stapel; blijft het gelijk, dan zoeken we het ergens anders.
 
 Betekent prikken dat het werkt? +
 
+Nee. Dat is een hardnekkig verhaal en het klopt niet. Een lichte tinteling bij bepaalde stoffen kan normaal zijn, maar branden en aanhoudend prikken zijn een signaal om te stoppen.
+
 Kan ik met een gevoelige huid wel behandeld worden? +
 
+Meestal wel, alleen rustiger en in kleinere stappen. Wat niet kan is behandelen terwijl je huid op dat moment geïrriteerd is, want dan reageert hij feller en levert het minder op.
+
 Wat kost dit? +
+
+De meting kost vijftig euro. Wat daarna volgt staat per behandeling op de prijzenpagina, en bij een gevoelige huid begint dat vaker met minder doen dan met meer. Als de uitkomst is dat je twee weken moet afbouwen, dan hoor je dat in het consult en kost het je verder niets.
 
 **Eerst uitzoeken wat er aanstaat.**
 
@@ -2068,13 +2196,23 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Werkt de glastest altijd? +
 
+Nee, en dat is belangrijk. Hij sluit niets uit: uitslag die wél wegdrukt kan alsnog ernstig zijn, en op een donkere huid is het verschil moeilijker te zien. Kijk dan ook naar de binnenkant van de oogleden of de mond en vertrouw vooral op hoe ziek iemand is.
+
 Mijn uitslag jeukt hevig maar ik voel me verder goed. +
+
+Dan is er meestal geen haast, en blijft het wel een vraag voor de huisarts. Bij zwelling van lippen, tong of keel of bij benauwdheid geldt dat niet en bel je direct.
 
 Kan het van een nieuw product komen? +
 
+Dat kan, zeker als de plek de vorm heeft van waar het product zat. Stop ermee, bewaar de verpakking en neem die mee naar je afspraak.
+
 Waarom staat hier geen lijst met foto's? +
 
+Omdat je daarmee gaat zoeken naar de foto die het meest op jou lijkt, en dat is precies de verkeerde manier. Uitslag ziet er bij iedereen anders uit, en op een donkere huid vaak heel anders dan op de foto's die je online vindt.
+
 Kan ik hiervoor bij jullie terecht? +
+
+Nee. Er staat op deze pagina geen knop om een afspraak te maken en dat is geen omissie.
 
 **Naar je huisarts. Bij twijfel vandaag nog.**
 
@@ -2174,11 +2312,19 @@ Verandert een plek van vorm, kleur of grootte, jeukt of bloedt hij, of is hij er
 
 Wat als ik meerdere kleuren tegelijk heb? +
 
+Dat komt vaak voor en het betekent meestal dat er meer dan één ding speelt. Begin bij de kleur die je het meest stoort; de rest komt in het gesprek vanzelf aan bod.
+
 Ik weet niet goed welke kleur het is. +
+
+Kijk bij daglicht en niet onder een lamp, en houd je onderarm ernaast als vergelijking. Twijfel je tussen bruin en rood, druk er dan even op: rood verbleekt onder druk, bruin niet.
 
 Is verkleuring gevaarlijk? +
 
+Meestal niet, en er zijn uitzonderingen die er wel toe doen. Een plek die verandert van vorm, kleur of grootte hoort bij de huisarts, en dat geldt voor elke kleur.
+
 Waarom staat er geen prijs op deze pagina? +
+
+Omdat hier niets te koop is. Dit is een wegwijzer; de prijzen staan bij de behandeling die er uiteindelijk bij hoort.
 
 **Kom gewoon langs. Wij kijken mee.**
 
@@ -2194,7 +2340,7 @@ Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laa
 
 **Google-omschrijving:** Het grootste deel van wat je huid ouder maakt komt niet door leeftijd maar door zon. Wat daarvan terug te draaien is en wat niet.
 
-**HOE JE HUID VERANDERT MET DE JAREN**
+**HOE JE HUID VEROUDERT MET DE JAREN**
 
 Kijk naar de binnenkant van je bovenarm en dan naar je gezicht. Twee stukken huid van dezelfde leeftijd, die er totaal anders uitzien. Dat verschil is geen tijd.
 
@@ -2374,15 +2520,27 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Vanaf welke leeftijd is dit zinvol? +
 
+Er is geen leeftijd waarop het begint. Er is wel een moment waarop meten zinvol wordt, en dat is zodra je iets wilt veranderen. Zonder beginpunt weet je later niet of het werkte.
+
 Kan ik zonschade van vroeger nog terugdraaien? +
+
+Deels. Kleur en structuur zijn goed te verbeteren, en dat is precies wat mensen in de spiegel als 'ouder' benoemen. Wat weg is aan volume komt niet terug, en dat zeggen we liever nu dan na vier sessies.
 
 Waarom beginnen jullie niet meteen met laser? +
 
+Omdat we eerst willen weten waar we naar kijken. Dezelfde lijn kan uitdroging zijn of ingesleten zonschade, en dat vraagt iets anders. De meting kost je één afspraak en bespaart meestal meer.
+
 Mijn huid is donker. Geldt dit ook voor mij? +
+
+Ja, maar anders. Een donkere huid vertoont minder snel lijntjes en meer pigmentverschuiving, en reageert feller op te agressieve behandeling. De instellingen en de volgorde zijn daarom anders.
 
 Hoe lang houdt het resultaat aan? +
 
+Zolang de oorzaak niet doorloopt. Zonder bescherming bouwt de zonschade gewoon verder en dan zie je hetzelfde terugkomen; met bescherming houden mensen het meestal een tot twee jaar vol voordat er onderhoud nodig is. Dat is een ervaringsgetal en geen meting, en zo staat het er dan ook.
+
 Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Begin bij weten wat er speelt.**
 
@@ -2398,7 +2556,7 @@ We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en 
 
 **Google-omschrijving:** Wat je liggend ziet is de bovengrens van wat aanspannen kan bereiken. Met de zwaartekrachttest weet je vooraf of een behandeling bij jou iets oplevert.
 
-**EEN VAGERE KAAKLIJN EN ZAKKENDE WANGEN**
+**EEN VERSLAPTE KAAKLIJN EN ZAKKENDE WANGEN**
 
 Verslapping is het enige huidprobleem dat verandert met de stand van je hoofd. Wat er liggend strakker uitziet, is wat de zwaartekracht overdag naar beneden trekt, en daarmee ongeveer het maximum van wat aanspannen kan bereiken.
 
@@ -2518,11 +2676,19 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Is dit een alternatief voor een facelift? +
 
+Nee, en iedereen die dat zegt verkoopt iets. Aanspannen van de huid en het verwijderen van weefsel zijn twee verschillende dingen. Wat wij doen werkt in het stadium daarvoor, en op het moment dat dat stadium voorbij is zeggen we dat.
+
 Vanaf welke leeftijd heeft dit zin? +
+
+Leeftijd zegt hier weinig; de zwaartekrachttest zegt meer. Zie je liggend duidelijk verschil met staand, dan valt er iets te winnen. Is dat verschil er nauwelijks, dan is er nog niets om aan te spannen of juist te veel om aan te pakken.
 
 Hoe lang houdt het resultaat aan? +
 
+Het proces zelf gaat door, dus het is geen eindpunt maar een verschuiving. Hoe lang dat merkbaar blijft verschilt sterk per persoon; we spreken vooraf af wanneer we opnieuw meten in plaats van dat we een getal noemen.
+
 Doet het pijn? +
+
+Je voelt warmte en soms korte prikjes. De meeste mensen omschrijven het als goed te doen, en er is geen verdoving nodig. Wat je erna merkt hangt af van de behandeling en staat op de behandelpagina.
 
 **Plan een intake bij Diba Clinics**
 
@@ -2634,11 +2800,19 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Gaan ingegroeide haren weg van laserontharing? +
 
+Bij het merendeel wel, en om een logische reden: waar geen haar groeit kan ook niets ingroeien. Het gaat geleidelijk, over een reeks sessies, en het werkt alleen als het haar donker genoeg is om licht op te vangen.
+
 Waarom krijg ik ze vooral in mijn nek en bikinilijn? +
+
+Daar groeit het haar vaker krullend en ligt de haarzak schuiner, waardoor een teruggroeiend haar sneller de huid weer in gaat. Kleding die wrijft en strak scheren maken het erger.
 
 Mag ik blijven scheren tijdens het traject? +
 
+Scheren mag en moet zelfs: de zone hoort kort te zijn op de dag van de behandeling. Wat niet mag is epileren, harsen of een epilator, want dan trek je precies de wortel weg waar het licht op mikt.
+
 En die donkere vlekjes die overblijven? +
+
+Dat is pigment en geen litteken. Zolang er nieuwe bultjes bij komen heeft behandelen weinig zin, want dan komen er ook nieuwe vlekjes bij. Eerst de oorzaak, dan de kleur.
 
 **Plan een intake bij Diba Clinics**
 
@@ -2750,11 +2924,19 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Gaat kippenvelhuid ooit weg? +
 
+Genezen kan niet, maar bij veel mensen wordt het met de jaren vanzelf minder, vaak vanaf een jaar of dertig. In de tussentijd is het beeld wel te verzachten. Dat is geen mooi verhaal, en het is wel het eerlijke.
+
 Waarom werkt scrubben niet? +
+
+Omdat de verhoorning rond het haarzakje zit en niet op de oppervlakte. Je schuurt dus over de bultjes heen in plaats van erin. Wat je wel bereikt is meer roodheid en een beschadigde barrière.
 
 Komt het door iets dat ik doe? +
 
+Nee. Het is grotendeels erfelijk en het heeft niets te maken met hygiëne, voeding of hoe je je huid verzorgt. Dat is voor veel mensen de nuttigste zin op deze pagina.
+
 Waarom is het 's winters erger? +
+
+Koude lucht en binnenverwarming drogen de huid uit, en een drogere huid maakt de verhoorning zichtbaarder en ruwer. Bij bijna iedereen is het in de zomer minder. Dat is het seizoen en geen terugval.
 
 **Wat we eerst vaststellen**
 
@@ -2926,17 +3108,31 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Gaan mijn littekens helemaal weg? +
 
+Nee. Een litteken is blijvend weefsel; wat we doen is het minder opvallend maken. Bij verse littekens is dat verschil groot, bij oude klein. We zeggen vooraf in welke categorie het jouwe valt.
+
 Ik heb striae van de zwangerschap. Kan ik nu al komen? +
+
+Komen kan altijd, meten ook. Behandelen doen we liever na de borstvoeding. Zijn je striae nog rood, dan is het wel het beste moment om het gesprek te voeren, want dat venster sluit.
 
 Waarom moet mijn acne eerst rustig zijn? +
 
+Omdat behandelen in een ontstoken huid nieuwe littekens kan geven. Je zou dan betalen om er meer bij te krijgen. Dat is de reden dat we soms nee zeggen tegen iemand die er speciaal voor komt.
+
 Werken die littekencrèmes uit de drogist? +
+
+Bij verse littekens kan siliconen iets doen, vooral bij verheven littekens. Bij witte striae en oude littekens niet. De prijs zegt daar niets over.
 
 Ik schaam me voor mijn striae bij het zwemmen. +
 
+Dat horen we vaak, en het is een echte reden om te komen. We gaan alleen niet doen alsof we ze kunnen wegtoveren. Wat we wel doen is eerlijk zeggen hoeveel verschil er in jouw geval te verwachten is.
+
 Hoeveel sessies heb ik nodig? +
 
+Dat hangt af van de leeftijd van het litteken en het type. Na de meting krijg je een aantal en een prijs, en een moment waarop we opnieuw kijken of het werkt.
+
 Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Jonge littekens reageren het best**
 
@@ -3076,15 +3272,27 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Gaat melasma ooit helemaal weg? +
 
+Meestal niet uit zichzelf, en behandelen maakt het lichter zonder het weg te nemen. Na een zwangerschap trekt het soms grotendeels weg; dat is dan het hormonale deel dat wegvalt en niet iets wat een behandeling deed.
+
 Waarom is dit anders dan gewone pigmentvlekken? +
+
+Een zonvlek zit er en blijft er. Melasma heeft een kraan die open- en dichtgaat, en die kraan staat deels buiten je macht. Dezelfde behandeling geeft daarom een ander resultaat.
 
 Ik ben zwanger. Kan ik nu iets doen? +
 
+Beschermen wel, behandelen niet. We wachten tot na de zwangerschap en de borstvoeding, ook omdat een deel dan vanzelf terugloopt.
+
 Ik heb een donkere huid. Verandert dat iets? +
+
+Ja, in twee richtingen. Melasma komt vaker voor, en de kans dat een te stevige behandeling juist meer pigment achterlaat is groter. Rustiger werken is dan geen voorzichtigheid maar noodzaak.
 
 Hoe lang duurt het voor ik iets zie? +
 
+De eerste verandering zie je meestal na twee tot drie maanden. Reken dus op maanden en niet op weken, en op onderhoud daarna. Dat laatste is geen bijzaak maar het grootste deel van het werk.
+
 Wat kost dit? +
+
+De meting kost vijftig euro; de trajecten daarna staan met hun tarief op de prijzenpagina. Blijkt uit de meting dat het pigment diep zit, dan raden we behandelen af en houdt het daar op.
 
 **Plan een intake bij Diba Clinics**
 
@@ -3100,7 +3308,7 @@ We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je 
 
 **Google-omschrijving:** Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.
 
-**HIERVOOR MOET JE NIET BIJ ONS ZIJN.**
+**MOEDERVLEKKEN: HIERVOOR MOET JE NIET BIJ ONS ZIJN**
 
 Wij beoordelen geen moedervlekken en we verwijderen ze niet. Dat hoort bij je huisarts of een dermatoloog, want daar hebben ze de apparatuur en de opleiding waar dit om vraagt.
 
@@ -3176,13 +3384,23 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Waarom staat deze pagina er dan überhaupt? +
 
+Omdat mensen ons dit vragen tijdens een behandeling, en omdat je bij ons op de behandelstoel ligt met je huid in beeld. Wij willen dat je weet waar je op let en waar je heen moet, ook al zijn wij het niet.
+
 Kan ik bij jullie een moedervlek laten weghalen? +
+
+Nee. Niet bij een verdacht plekje en ook niet bij eentje waar je alleen maar vanaf wilt. Dat gaat naar de huisarts, die kan het zelf doen of doorverwijzen.
 
 Ik heb een behandeling gepland en er zit een moedervlek in het gebied. +
 
+Dan dekken we die af. Dat kost een halve minuut en het scheelt dat een arts later nog kan beoordelen wat er zit.
+
 Krijg ik nieuwe moedervlekken van zonnen? +
 
+Zonlicht speelt een rol bij het ontstaan van nieuwe plekjes en bij het risico op huidkanker. Hoe groot die rol precies is verschilt per persoon en dat is niet iets waar wij een getal aan hangen.
+
 Hoe vaak moet ik zelf kijken? +
+
+Eén keer per maand is een veelgebruikt advies en vooral praktisch: vaak genoeg om verandering op te merken, zeldzaam genoeg om vol te houden. Vraag je huisarts wat in jouw geval verstandig is.
 
 **Naar je huisarts. Daar houdt het bij ons op.**
 
@@ -3292,11 +3510,19 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Waarom komen mee-eters op mijn neus altijd terug? +
 
+Omdat het in de meeste gevallen geen mee-eters zijn maar talgfilamenten. Die horen in een werkende porie thuis en vullen zich binnen enkele weken opnieuw. Dat is geen falen van je verzorging; het is hoe een porie werkt.
+
 Werken poriestrips? +
+
+Ze halen er iets uit, en dat voelt bevredigend. Wat eruit komt is meestal normale porie-inhoud, die terugkomt, en het lostrekken rekt de porie-opening op. Dus: kortstondig zichtbaar effect, op de lange duur geen winst.
 
 Is een onzuivere huid hetzelfde als acne? +
 
+Nee, en dat onderscheid is niet cosmetisch. Bij onzuiverheden gaat het om verstopping zonder veel ontsteking; bij acne is de ontsteking het probleem. De aanpak en de volgorde zijn anders.
+
 Moet ik mijn huid strenger reinigen? +
+
+Bijna nooit. Wie een vette huid streng behandelt houdt een uitgedroogde huid over die meer talg maakt, en dan is het beeld na een maand slechter in plaats van beter.
 
 **Plan een intake bij Diba Clinics**
 
@@ -3432,11 +3658,19 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Zijn ouderdomsvlekken gevaarlijk? +
 
+Een gewone zonnevlek is onschuldig. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is de eerste vraag hier niet hoe je ervan afkomt maar of het is wat je denkt.
+
 Komen ze terug na de behandeling? +
+
+De behandelde vlek komt niet terug, maar er kunnen nieuwe bij komen zolang je huid zon blijft vangen. Dat is de reden dat zonbescherming hier geen advies achteraf is maar onderdeel van de behandeling.
 
 Waarom zie ik na de meting meer vlekken dan in de spiegel? +
 
+Omdat pigment dieper in de huid begint dan waar je het ziet. De meting maakt zichtbaar wat er al ligt, en dat is soms confronterend. Het is ook nuttig: het verklaart waarom er zonder bescherming steeds nieuwe bij lijken te komen.
+
 Kan dit ook op mijn handen? +
+
+Ja, en dat is vaak de plek waar mensen het het eerst storend vinden. De huid daar is dunner en herstelt langzamer, dus we gaan er voorzichtiger te werk dan in het gezicht.
 
 **Plan een intake bij Diba Clinics**
 
@@ -3602,15 +3836,27 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Gaan mijn pigmentvlekken helemaal weg? +
 
+Bij zonschade vaak grotendeels. Bij melasma is beheersing realistischer dan verdwijning, en dat zeggen we liever nu dan na vijf sessies. Welke van de twee je hebt, bepaalt dus het antwoord.
+
 Waarom mag ik in de zomer niet starten? +
+
+Omdat je dan vier maanden tegen de zon in werkt. Pigmentcellen die net zijn aangepakt reageren extra fel op UV. Je betaalt dan voor een resultaat dat je in september kwijt bent.
 
 Helpt zonnebrand echt zo veel? +
 
+Bij pigment is het het belangrijkste dat je doet, meer dan welke behandeling ook. Dat is geen verkooppraatje, want we verdienen er niets aan.
+
 Ik heb een donkere huid. Kan ik behandeld worden? +
+
+Ja, en het vraagt een andere aanpak. Bij huidtype IV tot VI is de kans op nieuwe pigmentvlekken door de behandeling zelf groter, dus gaan we voorzichtiger en trager. Dat bespreken we vooraf.
 
 Mijn vlek ziet er anders uit dan de rest. Moet ik me zorgen maken? +
 
+Een vlek die verandert van vorm of kleur, of die bloedt, hoort bij de huisarts en niet bij ons. Dat is geen paniekverhaal maar de juiste route. We kijken er wel naar en verwijzen door als dat nodig is.
+
 Kan ik iets doen aan de vlekken op mijn handen? +
+
+Ja, en handen zijn eerlijk gezegd het vervelendste gebied: ze krijgen de meeste zon en je vergeet ze het vaakst. Behandelen kan, volhouden met bescherming is het echte werk.
 
 **Waarom het seizoen meetelt bij pigment**
 
@@ -3752,15 +3998,27 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Kunnen mijn poriën echt niet kleiner? +
 
+De opening zelf niet blijvend, nee. Dat hangt samen met de talgklier eronder en met je aanleg. Wat wel verandert is hoe zichtbaar ze zijn, en dat is uiteindelijk wat je in de spiegel ziet.
+
 Waarom komen zwarte puntjes steeds terug? +
+
+Omdat de porie blijft doen wat hij hoort te doen: talg produceren. Leegmaken is dus onderhoud en geen oplossing. De vraag die telt is hoe snel het teruggaat, en daar valt wel iets aan te sturen.
 
 Helpt stomen? +
 
+Niet om poriën te openen, want daar zit geen spiertje. Warmte maakt talg wel vloeibaarder, waardoor leegmaken makkelijker gaat. Dat is iets anders dan wat er meestal beloofd wordt.
+
 Ik heb ook acne. Waar begin ik? +
+
+Bij de acne. Zolang er ontsteking is, is werken aan poriën dweilen met de kraan open, en behandelen in een ontstoken huid geeft meer kans op littekens.
 
 Werken poriënstrips? +
 
+Voor even. Je trekt het bovenste stukje van de prop mee en het ziet er direct beter uit. De porie vult zich daarna gewoon weer, en bij vaak gebruik raakt de huid eromheen geïrriteerd.
+
 Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Minder zichtbaar is wel te doen.**
 
@@ -3858,13 +4116,23 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Is psoriasis besmettelijk? +
 
+Nee. Het is een aandoening van je eigen afweersysteem en niet overdraagbaar, ook niet bij aanraking.
+
 Waarom hoort dit niet bij een huidkliniek? +
+
+Omdat de oorzaak niet in de huid zit. Wij kunnen een plek verzachten en niets aan de oorzaak doen, en dan verkoop je sessies aan iets dat blijft terugkomen.
 
 Ik heb alleen putjes in mijn nagels. Telt dat? +
 
+Dat is genoeg reden om het te laten bekijken. Nagelafwijkingen zijn vaak het eerste of enige teken en worden bijna altijd voor schimmel aangezien.
+
 Mijn gewrichten zijn 's ochtends stijf. Hoort dat erbij? +
 
+Dat kan, en het is het onderdeel waarmee je niet moet wachten. Ochtendstijfheid die langer dan een halfuur duurt hoort besproken te worden, ook als je huidplekken klein zijn.
+
 Kan ik bij jullie wel voor iets anders terecht? +
+
+Als je huid op dat moment rustig is en het gaat om een ander onderwerp, dan kijken we mee. We behandelen niet over plekken heen en we zeggen het als we het niet verstandig vinden.
 
 **Wanneer je bij de huisarts hoort**
 
@@ -3998,11 +4266,19 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Hoe weet ik of het een rimpel is of een droogtelijntje? +
 
+Kijk een week lang op verschillende momenten. Een droogtelijntje verandert met de dag, het seizoen en je verzorging; een echte rimpel staat er elke ochtend hetzelfde bij.
+
 Doen jullie botox? +
+
+Nee. Wij werken op de huid en niet op de spier. Voor een lijn die alleen zichtbaar is bij beweging is een injectable vaak de logische route, en dan verwijzen we je liever door dan dat we je een reeks verkopen die daar weinig aan verandert.
 
 Op welke leeftijd moet ik hiermee beginnen? +
 
+Er is geen leeftijd. Wat er wel toe doet is of er iets te winnen valt: bij een huid die nog stevig is levert een reeks weinig op, en dan is zonbescherming de hele behandeling.
+
 Hoe lang duurt het voor ik iets zie? +
+
+Collageenopbouw is een kwestie van maanden en niet van weken. Daarom meten we vooraf: over die termijn is je eigen indruk geen betrouwbare maat.
 
 **Wat een nulmeting oplevert**
 
@@ -4018,7 +4294,7 @@ Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmetin
 
 **Google-omschrijving:** Rosacea is te sturen: minder opvlammingen en een rustiger basiskleur. Welke triggers je zelf in de hand hebt en wat een behandeling kan toevoegen.
 
-**EEN RODE, GEVOELIGE HUID DIE STEEDS OPVLAMT**
+**ROSACEA: EEN HUID DIE STEEDS OPVLAMT**
 
 Rosacea is een aandoening die blijft, en dat zeggen we liever nu dan na vijf sessies. Wat er wel te bereiken valt is een rustiger basiskleur, minder opvlammingen en minder zichtbare adertjes. Voor veel mensen scheelt dat meer dan ze verwachten.
 
@@ -4182,15 +4458,27 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Gaat mijn rosacea weg? +
 
+Nee. Rosacea is chronisch en dat is de eerlijke start van dit gesprek. Wat wél kan: minder opvlammingen, minder zichtbare adertjes en een rustiger basiskleur. Bij de meeste mensen is dat een groot verschil in hoe ze zich voelen.
+
 Hoe weet ik of het rosacea is en niet acne? +
+
+Het snelste onderscheid: bij acne zitten er mee-eters, bij rosacea niet. Rosacea zit ook meer in het midden van je gezicht en gaat samen met blozen. Zeker weten doe je het pas na een beoordeling.
 
 Moet ik stoppen met wijn en pittig eten? +
 
+Dat is jouw keuze, niet ons voorschrift. We vertellen je wel wat het doet, en dan bepaal jij wat je ervoor over hebt. Bij sommige mensen scheelt het veel, bij andere weinig.
+
 Helpt laser tegen de adertjes? +
+
+Bij zichtbare vaatjes levert behandeling doorgaans het meeste op van alles wat we doen. Nieuwe vaatjes kunnen wel ontstaan zolang de triggers doorgaan, dus onderhoud hoort erbij.
 
 Mag ik nog sporten? +
 
+Ja. Stoppen met sporten is geen advies dat wij geven. We kijken naar timing, koeling en wat je erna doet.
+
 Ik schaam me ervoor dat ik zo snel rood word. +
+
+Dat horen we vaak, en het is de reden dat mensen jaren wachten. Je hoeft hier niets uit te leggen. We kijken naar je huid en niet naar je gedrag.
 
 **Plan een intake bij Diba Clinics**
 
@@ -4298,11 +4586,19 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Waarom krijg ik ze in mijn hals en oksels? +
 
+Op die plekken schuurt huid over huid, en dat is de plek waar dit soort uitstulpinkjes ontstaan. Kleding, een ketting of een bh-bandje versnellen het. Aanleg speelt ook mee: bij sommige mensen komen ze met tientallen tegelijk.
+
 Mag ik ze zelf afbinden? +
+
+Liever niet, en dat is geen omzetargument. Het gaat vaak lang goed en één keer niet, en die ene keer is een ontsteking in een hals of een litteken op een ooglid. Bovendien knip je dan iets weg dat niemand meer heeft bekeken.
 
 Komen ze terug? +
 
+Een verwijderd steelwratje komt niet terug, maar er kunnen nieuwe ontstaan op andere plekken. De aanleg en de wrijving veranderen niet door een behandeling.
+
 Blijft er een litteken achter? +
+
+Bij een klein steelwratje meestal een rood puntje dat in weken wegtrekt. Hoe groter de basis, hoe meer kans dat er iets zichtbaar blijft. Dat bespreken we vooraf per plekje en niet achteraf.
 
 **Plan een intake bij Diba Clinics**
 
@@ -4476,9 +4772,15 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Wat is het verschil tussen wallen en donkere kringen? +
 
+Een wal is volume: er zit iets, of het nu vocht of vet is. Een donkere kring is kleur: pigment of doorschijnende vaatjes in een dunne huid. Ze komen vaak samen voor en vragen om verschillende dingen. Gaat het bij jou vooral om kleur, lees dan verder op de pagina over donkere kringen.
+
 Helpt beter slapen? +
 
+Bij vocht scheelt het, net als minder zout en minder alcohol voor het slapen. Bij vet of schaduw verandert er niets van, hoe goed je ook slaapt. Dat is precies waarom we eerst willen weten wat je hebt.
+
 Kan ik er zelf iets aan doen? +
+
+Met je hoofd iets hoger slapen en koelen in de ochtend helpt tegen vocht, tijdelijk. Wrijven in je ogen is het enige dat je echt moet laten: de huid daar is de dunste van je lichaam en rekt makkelijk op.
 
 **Plan een intake bij Diba Clinics**
 
@@ -4716,9 +5018,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Hoe lang duurt het traject?
+- Hoe lang duurt het traject? Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die marge valt hangt af van het type acne en van hoe je huid reageert, en dat hoor je na de meting.
 
-- Zit alles in de prijs?
+- Zit alles in de prijs? In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de prijzenpagina.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -4824,9 +5126,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Hoe lang houdt het aan?
+- Hoe lang houdt het aan? Een dag tot enkele dagen, en dat verschilt per huid. Wie iets blijvends wil, zit bij dit apparaat verkeerd en dat zeggen we liever nu dan achteraf.
 
-- Waarom staat er geen prijs bij?
+- Waarom staat er geen prijs bij? Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpagina en niet pas aan de balie.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5046,9 +5348,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Wanneer zie ik er iets van?
+- Wanneer zie ik er iets van? Niet meteen. Collageenopbouw kost weken, dus wat je na de eerste sessie ziet is herstel en niet resultaat. Daarom meten we vooraf: anders vergelijk je met een herinnering.
 
-- Wat is het verschil met de SkinPen?
+- Wat is het verschil met de SkinPen? Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5230,9 +5532,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Is het pijnlijk?
+- Is het pijnlijk? Kort en scherp per plekje, en het is snel voorbij. Bij grotere of gevoelige plekken verdoven we.
 
-- Waarom per kwartier en niet per stuk?
+- Waarom per kwartier en niet per stuk? Omdat het aantal minder uitmaakt dan de tijd. Wie er twintig kleine heeft, betaalt anders het twintigvoudige voor hetzelfde kwartier werk.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5360,9 +5662,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Waarom lopen de prijzen zo uiteen?
+- Waarom lopen de prijzen zo uiteen? Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een laserpeel is iets anders dan een volledige 4D, en dat staat per regel apart.
 
-- Hoeveel sessies heb ik nodig?
+- Hoeveel sessies heb ik nodig? Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we niet kunnen onderbouwen.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5472,9 +5774,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Is dit gênant?
+- Is dit gênant? Het is een behandeling zoals elke andere en de deur gaat dicht. Wat er wél anders is: je bepaalt zelf hoeveel je vertelt over waarom je komt.
 
-- Hoeveel sessies zijn er nodig?
+- Hoeveel sessies zijn er nodig? Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5568,7 +5870,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Moet ik dit doen voordat ik iets anders kan?
+- Moet ik dit doen voordat ik iets anders kan? Ja. Niet omdat het moet van ons, maar omdat een plan zonder beginmeting niet te controleren is. Je weet dan over drie maanden niet of het gewerkt heeft.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5758,9 +6060,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Waarom staat er geen prijs?
+- Waarom staat er geen prijs? Het traject van drie maanden staat als één bedrag op de prijzenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie.
 
-- Moet mijn ouder mee?
+- Moet mijn ouder mee? Ja. Onder de achttien is toestemming van een ouder of verzorger nodig, en bij de intake willen we die er ook bij hebben.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5956,9 +6258,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Mijn litteken is tien jaar oud. Heeft het nog zin?
+- Mijn litteken is tien jaar oud. Heeft het nog zin? Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting.
 
-- Hoeveel sessies?
+- Hoeveel sessies? Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6066,9 +6368,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Waarom is dit zo goedkoop?
+- Waarom is dit zo goedkoop? Omdat het weinig tijd kost en meestal aan iets anders wordt toegevoegd. Een lage prijs betekent hier ook een bescheiden effect, en dat hoort erbij.
 
-- Kan ik alleen hiervoor komen?
+- Kan ik alleen hiervoor komen? Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het als toevoeging tot zijn recht komt.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6156,11 +6458,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Doet het pijn?
+- Doet het pijn? Je voelt warmte achter in je mond en dat is het. Er is geen verdoving nodig en er wordt niets gesneden.
 
-- Werkt het ook bij slaapapneu?
+- Werkt het ook bij slaapapneu? Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Wij starten dan niet.
 
-- Hoe lang houdt het aan?
+- Hoe lang houdt het aan? Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6354,9 +6656,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Hoe lang zie ik er iets van?
+- Hoe lang zie ik er iets van? Dagen, geen weken. Dit is een opfrisser en geen kuur, en dat is precies waarom hij vaak vlak voor iets gepland wordt.
 
-- Kan dit bij een gevoelige huid?
+- Kan dit bij een gevoelige huid? Meestal wel, en dat bepalen we in de intake en niet op deze pagina. Bij actieve rosacea of ontstoken acne kijken we eerst naar de rust in je huid.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6596,9 +6898,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Waarom een kuur van drie?
+- Waarom een kuur van drie? Omdat de huid tussen de sessies door het werk doet. Eén sessie is één prikkel en daar bouwt een huid niets van op.
 
-- Is het pijnlijk?
+- Is het pijnlijk? Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevoeliger dan op de wang.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6802,9 +7104,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Wordt dit vergoed?
+- Wordt dit vergoed? Dat verschilt per verzekeraar en per polis. Kijk bij vergoedingen wat er over jouw verzekeraar bekend is, en ga uit van wat je polis zegt en niet van wat wij zeggen.
 
-- Wat als er niets uitkomt?
+- Wat als er niets uitkomt? Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haalt hem wel van je lijstje met vermoedens af.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6918,9 +7220,9 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 **Wat mensen hierover vragen.**
 
-- Wanneer zie ik verschil?
+- Wanneer zie ik verschil? Niet binnen weken. Haar groeit in cycli en die laten zich niet opjagen, dus dit traject wordt in maanden gemeten.
 
-- Waarom is het voor vrouwen duurder?
+- Waarom is het voor vrouwen duurder? Omdat er acht sessies in zitten in plaats van zes. Het verschil zit in het aantal en niet in het tarief.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -9910,15 +10212,27 @@ Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tek
 
 Word ik hierna gebeld om alsnog iets af te nemen? +
 
+Nee. Je hoort van ons als je zelf iets afspreekt of als je een vraag stelt. Er is geen belronde en er is geen aanbod dat verloopt.
+
 Wat als de uitkomst is dat ik niets moet doen? +
+
+Dan zeggen we dat en houdt het daar op. Dat komt vaker voor dan je denkt, en het is de reden dat de meting los staat van de behandeling.
 
 Kan ik meteen een behandeling krijgen? +
 
+Nee, en dat is met opzet. Behandelen zonder beginpunt betekent dat je later niet kunt nagaan of het werkte. Bovendien beslis je dan onder druk van het moment.
+
 Moet ik voor elke klacht apart komen? +
+
+Nee. In één afspraak kijken we naar je hele huid, ook naar dingen waar je niet voor kwam. Vaak blijkt dat wat je stoort en wat er speelt niet hetzelfde zijn.
 
 Wat gebeurt er met mijn foto's? +
 
+Die blijven in je eigen dossier als beginpunt. Ze worden niet gebruikt op onze site of in advertenties tenzij je daar apart en schriftelijk toestemming voor geeft, en die kun je altijd intrekken.
+
 Ik weet niet eens waarvoor ik zou komen. +
+
+Dat is een prima reden om te komen. De symptoomzoeker helpt je een richting te vinden, en anders begint het gesprek gewoon met kijken.
 
 **Eén afspraak, zonder verplichting**
 
@@ -10250,11 +10564,19 @@ Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet
 
 Hoeveel sessies heb je nodig? +
 
+Dat hangt af van de zone, je haartype en je hormoonbalans. Reken op een reeks met weken ertussen, want één sessie raakt alleen de haren die op dat moment groeien. In de intake hoor je wat er bij jou realistisch is.
+
 Is laser veilig voor een donkere huid? +
+
+De Gentle Laser Pro-U werkt op Fitzpatrick I tot en met VI. Je huidtype bepaalt niet óf het kan, maar met welke energie en koeling er gewerkt wordt. Dat wordt per type afgestemd.
 
 Wanneer zie je verschil? +
 
+Na de eerste sessies merken de meeste mensen dat het grovere haar minder wordt. Volledige reductie vraagt de hele reeks; tussentijds stoppen levert het resultaat van een halve reeks op en niet de helft van het resultaat.
+
 Wat kost laserontharing? +
+
+Dat hangt af van de zones die je kiest en van welke tarievenlijst er geldt: voor dezelfde zone verschilt het bedrag tussen dames en heren. In de configurator wijs je je zones aan en zie je de opbouw meteen staan, met alle bedragen erbij.
 
 **Stel het samen voordat je boekt**
 
@@ -10544,11 +10866,19 @@ Die staat er in de rechterkolom bij. Dat is meteen de reden dat deze lijst kort 
 
 Waarom staat bij elke regel wat het jullie kost? +
 
+Omdat een belofte pas iets waard is als hij ergens pijn doet. Iedereen kan opschrijven dat hij eerlijk is; de vraag is wat je ervoor opgeeft.
+
 Wat als een behandelaar hiervan afwijkt? +
+
+Dan mag je dat ter plekke zeggen, en dan gaat de behandeling niet door. Deze regels staan boven het gesprek in de behandelkamer en niet eronder.
 
 Geldt dit ook als ik er zelf om vraag? +
 
+Ja, en bij verschillende regels is dat precies het geval: mensen vragen om een behandeling waarvan wij weten dat hij te weinig oplevert. Het antwoord blijft hetzelfde.
+
 Verandert dit verbond nog? +
+
+Komt er iets bij, dan komt het erbij. Wat er staat halen we er niet af zonder het te vermelden.
 
 ELKE NEE BEGINT MET EEN GESPREK
 
@@ -11044,15 +11374,27 @@ DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 Waar komt het geluid eigenlijk vandaan? +
 
+Van weefsel dat meetrilt op je ademhaling. In je slaap ontspannen de spieren in je keel, waardoor het zachte gehemelte en de huig gaan wapperen op de luchtstroom. Hoe nauwer de doorgang, hoe harder het geluid.
+
 Is snurken hetzelfde als slaapapneu? +
+
+Nee. Snurken is geluid; slaapapneu is dat je ademhaling tijdens de slaap kortdurend stopt. Ze komen vaak samen voor, en daarom vragen wij er altijd naar. Is er een vermoeden, dan hoort er eerst slaaponderzoek bij en beginnen wij niet.
 
 Moet ik voor NightLase onder narcose? +
 
+Nee, en er wordt ook niet gesneden. Je zit erbij, je bent bij kennis en je gaat er daarna zelf vandaan.
+
 Hoeveel sessies heb ik nodig? +
+
+Meestal drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op; na de eerste sessie is er zelden al iets te horen.
 
 Blijft het weg? +
 
+Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Wie zegt dat het definitief is, verkoopt iets anders dan een behandeling.
+
 Wat kost dit? +
+
+Het tarief voor NightLase staat op de prijzenpagina zodra het vastligt.
 
 **Plan een intake bij Diba Clinics**
 
@@ -11195,4 +11537,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5165 tekstblokken · ongeveer 76.074 woorden._
+_107 pagina's · 5336 tekstblokken · ongeveer 82.430 woorden._

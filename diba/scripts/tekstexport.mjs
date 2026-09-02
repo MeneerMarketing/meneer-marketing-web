@@ -140,6 +140,13 @@ const paden = [...new Set([...statisch, ...uitSitemap, ...uitOverzichten])]
  * een lijst met uitzonderingen bijgehouden hoeft te worden. De bewijsstrip staat wél in
  * main en wordt op inhoud herkend, want die vier getallen zijn op elke pagina gelijk.
  */
+/**
+ * Haalt de zichtbare tekst van één pagina op.
+ *
+ * "Zichtbaar" is hier letterlijk bedoeld en dat was een valkuil: innerText geeft alleen wat
+ * er staat te renderen, dus alles in een dichtgeklapte details bleef buiten het document.
+ * Daarom wordt hieronder eerst alles opengeklapt.
+ */
 async function haalTekst(pad) {
   await page.goto(BASIS + pad, { waitUntil: "networkidle" });
 
@@ -163,6 +170,14 @@ async function haalTekst(pad) {
     )) {
       weg.remove();
     }
+
+    /* Alles openklappen voordat we lezen.
+
+       De veelgestelde vragen staan in dichtgeklapte details-elementen, en innerText geeft
+       alleen wat er te renderen staat. Daardoor stonden ruim honderdvijftig antwoorden niet
+       in dit document: precies de plek waar de concrete dingen staan, zoals wat het kost en
+       hoeveel sessies er nodig zijn. */
+    for (const d of hoofd.querySelectorAll("details")) d.open = true;
 
     const blokken = [];
     const gezien = new Set();
