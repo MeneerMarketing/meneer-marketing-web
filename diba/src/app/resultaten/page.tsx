@@ -177,9 +177,9 @@ export default function ResultatenPage() {
           <div>
             <Label>Wat wel meetbaar is</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Getallen liegen
+              Meten onder
               <br />
-              <span className="diba-accent">minder dan licht.</span>
+              <span className="diba-accent">hetzelfde licht</span>
             </h2>
           </div>
           <div>

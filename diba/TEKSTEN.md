@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 1 september 2026 · 103 pagina's
+Diba Clinics · gegenereerd op 2 september 2026 · 103 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -106,17 +106,17 @@ Een mooie huid is zelden één moment. Daarom bekijken we samen wat er speelt, w
 
 Van de eerste kop thee tot je nazorg: we hebben aandacht voor de hele ervaring.
 
-**Geen haast.**
+**Je beslist niet in de stoel**
 
-Veelgestelde vragen
+Je krijgt het advies mee naar huis, met de prijs erbij. Wat je daarna doet, bepaal je zelf.
 
 DIBA, ROTTERDAM
 
-Warm in gevoel. Scherp in kennis.
+Je vindt ons in Hillegersberg.
 
-**Heldere keuzes.**
+**Je weet vooraf wat het kost**
 
-Je krijgt uitleg over de mogelijkheden We vertellen welke behandelingen mogelijk zijn, wat ze kosten en wat je ervan kunt verwachten. Je hoeft niet direct te beslissen.
+We vertellen welke behandelingen mogelijk zijn, wat ze kosten en wat je ervan kunt verwachten. Ook als het antwoord is dat afwachten verstandiger is.
 
 **Eerlijke huidkennis.**
 
@@ -126,9 +126,9 @@ Je krijgt uitleg over de mogelijkheden We vertellen welke behandelingen mogelijk
 
 > knop: LASERONTHARING Laserontharing uitgelegd Veiligheid, huidtype, zones en wat je per sessie kunt verwachten. LEES MEER
 
-**Eerst even dit.**
+**Wat mensen het vaakst vragen**
 
-Duidelijkheid is een vorm van zorg. Daarom beantwoorden we de vragen die het vaakst vooraf worden gesteld.
+Dit zijn de vragen die het vaakst gesteld worden voordat iemand een afspraak maakt. Staat die van jou er niet bij, bel of app ons gerust.
 
 Moet ik al weten welke behandeling ik wil?
 
@@ -280,7 +280,7 @@ Twijfel je over de route, kijk dan even in Maps: dat weet actueler dan deze pagi
 
 **Google-omschrijving:** Vijf regels waar deze kliniek zich aan houdt, met bij elke regel wat hij ons kost. Een principe zonder prijs is een slogan.
 
-**VIJF REGELS, EN WAT ZE KOSTEN.**
+**VIJF REGELS WAAR WE ONS AAN HOUDEN**
 
 Elke kliniek zegt eerlijk te zijn. Bijna geen enkele zet erbij wat die eerlijkheid haar kost, en zonder die prijs is een principe een slogan.
 
@@ -310,7 +310,7 @@ WAT ER WEL EN NIET IN HUIS KOMT
 
 - Bij elke behandeling staat wat hij niet kan Op elke behandelpagina en bij elk apparaat staat de grens erbij, even nadrukkelijk als wat het wel doet. Een peeling neemt geen rimpels weg, want hij komt daar niet. WAT HET ONS KOST De helft van je verkooptekst. Een pagina die alleen voordelen opsomt verkoopt beter; hij levert alleen teleurstelling op bij de tweede afspraak.
 
-- Geen belofte zonder getal Geen resultaatgaranties, geen voor-en-na dat niet klopt, geen aantal sessies dat we niet kunnen onderbouwen. Wat we niet weten, zeggen we niet. WAT HET ONS KOST De grote woorden. Een site die wel durft te beloven leest spannender dan deze, en dat blijft zo.
+- Geen belofte zonder getal Geen resultaatgaranties, geen voor-en-na dat niet klopt, geen aantal sessies dat we niet kunnen onderbouwen. Wat we niet weten, zeggen we niet. WAT HET ONS KOST De grote woorden. Een pagina vol stellige beloftes leest spannender dan deze, en dat blijft zo.
 
 **Klopt er iets niet?**
 
@@ -378,7 +378,7 @@ Waarom er hier eerst gemeten wordt, waarom prijzen openbaar staan en waarom er b
 
 **Google-omschrijving:** Huidtherapeut De titel huidtherapeut is wettelijk beschermd. Vermeld per medewerker alleen een registratie of kwaliteitsregister als dit afzonderlijk is gecontroleerd.
 
-**8 MENSEN. DAT IS HET VERSCHIL.**
+**DE MENSEN DIE JE HUID BEHANDELEN**
 
 Bij elk apparaat op deze site staat dezelfde zin: twee klinieken met hetzelfde apparaat geven niet hetzelfde resultaat, want wat telt is de instelling en de hand die het vasthoudt.
 
@@ -454,7 +454,7 @@ Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment
 
 **Google-omschrijving:** Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.
 
-**ELK HUIDPROBLEEM HEEFT EEN EIGEN EERSTE VRAAG.**
+**KIES HET HUIDPROBLEEM WAAR JE MEE ZIT**
 
 Bij acne telt wáár het zit, want de plek zegt iets over de oorzaak. Bij pigment telt welk seizoen het is. Bij littekens telt hoe oud ze zijn, en bij melasma hoe diep het pigment ligt.
 
@@ -530,7 +530,7 @@ Deze pagina's hebben geen afspraakknop. Ze staan er omdat mensen ons dit vragen 
 
 **Waar niemand iets aan kan.**
 
-Dat staat er zo, met de uitleg waarom geen enkele crème of apparaat het weghaalt. Zodat je het elders herkent als het je toch wordt aangeboden.
+Dat staat er zo, met de uitleg waarom geen enkele crème of apparaat het weghaalt. Dan weet je waar je aan toe bent voordat je ergens aan begint.
 
 - Cellulitis Gaat dit over vet of over bouw?
 
@@ -546,7 +546,7 @@ Twee wegwijzers die sorteren op kleur of op wat je voelt, in plaats van op een n
 
 - Wat is het eigenlijk Uitgelegd zoals we het in de behandelkamer zouden zeggen, met de vakterm ernaast en niet ervoor.
 
-- Wat werkt en wat niet Twee kolommen naast elkaar. De rechterkolom staat er even groot bij als de linker.
+- Wat werkt en wat niet Links wat we doen, rechts wat we afraden, en bij allebei waarom.
 
 - Waar wij nee zeggen Elke pagina heeft er een. Soms omdat het te weinig oplevert, soms omdat het niet aan ons is.
 
@@ -564,9 +564,9 @@ Iedere huidvraag begint met een beoordeling, waaruit ook kan volgen dat we geen 
 
 **Tabbladtitel:** Acne behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Acne heeft niet één oorzaak en dus niet één behandeling. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.
 
-**BEGRIJP JE ACNE. BEHANDEL GERICHT.**
+**PUISTJES DIE STEEDS TERUGKOMEN**
 
 Acne heeft niet één oorzaak en daarom ook niet één standaardbehandeling. We kijken naar jouw huid, de vorm en ernst van de acne en factoren die daarop van invloed zijn. Zo bepalen we welke aanpak bij jouw huid past.
 
@@ -662,7 +662,7 @@ Aan de productie zelf doe je met crème weinig. Wat wél werkt is de afvoer verb
 
 **Wat helpt en wat we afraden**
 
-De rechterkolom is de nuttigste van de twee. Bij elk kruisje staat waarom, want “niet doen” zonder reden onthoudt niemand.
+Links wat we bij acne doen, rechts wat we afraden. Bij elk punt staat waarom, want een “niet doen” zonder reden onthoudt niemand.
 
 **DIT WERKT**
 
@@ -742,7 +742,7 @@ In de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies 
 
 **Google-omschrijving:** Acnevlekjes zijn vaak geen litteken maar kleur. Met je vinger en schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.
 
-**VAAK IS HET GEEN LITTEKEN. VAAK IS HET KLEUR.**
+**WAT ER NA ACNE OP JE HUID ACHTERBLIJFT**
 
 Wat er na de puistjes achterbleef heet acnelittekens of acnevlekjes, en meestal is het geen van beide letterlijk. Een rood vlekje, een bruine vlek en een kuiltje zien er op een foto bijna hetzelfde uit. Ze vragen om drie verschillende behandelingen, en twee ervan trekken deels vanzelf weg.
 
@@ -752,7 +752,7 @@ Met je vinger en licht van opzij kom je zelf een heel eind.
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Drie ervan zijn geen litteken.**
+**Vier beelden en wat elk ervan vraagt**
 
 Dit is een herkenningshulp en geen diagnose; het echte antwoord komt uit de meting. Maar deze vier dekken vrijwel alles wat er na acne achterblijft, en bij drie ervan is ons advies iets anders dan waar je voor kwam.
 
@@ -884,9 +884,9 @@ In Behandeling Nul stellen we vast of het littekenweefsel is of kleur. Soms is d
 
 **Tabbladtitel:** Cellulitis: geen vet, maar bouw | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Cellulitis komt door de bouw van je bindweefsel, niet door gewicht. Wat er wel en niet aan te veranderen valt, en welke behandelingen we ervoor doen.
 
-**HET IS GEEN VET. HET IS BOUW.**
+**WAAROM CELLULITIS ONTSTAAT**
 
 Onder je huid lopen bindweefselschotjes. Bij vrouwen staan die overwegend rechtop, bij mannen kruisen ze elkaar. Dat ene verschil bepaalt of hetzelfde vet een glad oppervlak geeft of een patroon van kuiltjes.
 
@@ -968,7 +968,7 @@ De laatste regel links is de enige op deze hele site die niet over je huid gaat,
 
 Sommige behandelingen laten de huid tijdelijk strakker lijken doordat vocht of zwelling verandert. Dat is niet hetzelfde als een blijvende verandering van de kuiltjes.
 
-- Wij behandelen geen cellulitis We hebben er geen behandeling voor en we gaan er ook geen bedenken. Wat je hier leest is precies wat we in de kliniek zouden zeggen.
+- Wij behandelen geen cellulitis We hebben er geen behandeling voor en we gaan er ook geen bedenken. Kom je ervoor langs, dan hoor je hetzelfde als wat hier staat.
 
 - Geen apparaat dat het wegneemt Er bestaan apparaten die tijdelijk zwelling verplaatsen en de huid strakker laten lijken. Dat is niet hetzelfde als minder kuiltjes, en wij verkopen dat verschil niet weg.
 
@@ -1162,7 +1162,7 @@ Behandeling Nul legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies
 
 **Google-omschrijving:** Dof is licht dat verstrooit in plaats van weerkaatst. Vier oorzaken, en bij twee ervan is de beste behandeling een gewoonte en geen afspraak.
 
-**DOF IS GEEN AANDOENING. HET IS EEN GEVOLG.**
+**EEN VALE HUID ZONDER GLANS**
 
 Er bestaat geen vakterm voor, en toch zie je het: een huid die het licht niet meer terugkaatst. Dat heeft vier verschillende oorzaken, en die vragen om vier verschillende dingen.
 
@@ -1300,9 +1300,9 @@ In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vo
 
 **Tabbladtitel:** Donkere kringen: welk type heb jij? | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Donkere kringen hebben drie verschillende oorzaken die er hetzelfde uitzien. Hoe je ze uit elkaar houdt, en bij welke wij je niet verder helpen.
 
-**DRIE OORZAKEN. EÉN KUNNEN WIJ NIET.**
+**DONKERE KRINGEN ONDER JE OGEN**
 
 Donkere kringen zijn geen aandoening maar een uiterlijk kenmerk met drie verschillende oorzaken. Ze zien er hetzelfde uit en vragen alle drie iets anders, en bij één ervan is de eerlijke uitkomst dat wij je niet verder helpen.
 
@@ -1430,9 +1430,9 @@ We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, da
 
 **Tabbladtitel:** Droge huid of uitgedroogde huid: wat is het verschil? | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Een droge huid mist vet, een vochtarme huid mist water, en dat vraagt om iets anders. Hoe je het verschil ziet en wat er bij jou past.
 
-**GEEN SCHAAL. TWEE ASSEN.**
+**EEN DROGE OF VOCHTARME HUID**
 
 Droog gaat over vet. Uitgedroogd of vochtarm gaat over water. Overal wordt dat als één lijn getekend, van vet naar droog, en dat klopt niet. Je kunt een vette huid hebben die vochtarm is.
 
@@ -1570,9 +1570,9 @@ We meten vet en water apart, en vertellen je welke as bij jou beweegt. Zit je in
 
 **Tabbladtitel:** Eczeem: een cirkel, geen plek | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij ernaast kunnen doen en waar onze grens ligt.
 
-**GEEN PLEK. EEN CIRKEL.**
+**ECZEEM: JEUK DIE BLIJFT TERUGKOMEN**
 
 Jeuk geeft krabben, krabben breekt je barrière, een kapotte barrière laat meer prikkels door, en die geven weer jeuk. Wie alleen naar de plek kijkt, behandelt één punt van een lus die daarna gewoon doordraait.
 
@@ -1684,7 +1684,7 @@ Er staat op deze pagina bewust geen knop om bij ons een afspraak te maken. Heb j
 
 **Google-omschrijving:** Een hard wit bolletje dat je niet kunt uitdrukken is een milium en in seconden weg. Een rood, pijnlijk bultje is iets anders en hoort bij de huisarts.
 
-**WIT EN HARD? OF ROOD EN PIJNLIJK?**
+**GERSTEKORRELS EN WITTE BULTJES**
 
 Gerstekorrel betekent in de volksmond en in de spreekkamer twee verschillende dingen. Wat mensen meestal bedoelen is een milium: een hard wit bolletje dat er maanden zit, geen pijn doet en niet uit te knijpen is. Dat is in seconden weg.
 
@@ -1794,9 +1794,9 @@ Bij milia is de afspraak kort en eenmalig. Blijkt het iets anders, dan hoor je d
 
 **Tabbladtitel:** Gevoelige huid: type of gevolg? | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Een huid die opeens overal op reageert is zelden van aanleg veranderd. Wat er meestal bij is gekomen, en hoe je de barrière weer opbouwt.
 
-**MEESTAL GEEN TYPE. MEESTAL EEN GEVOLG.**
+**EEN HUID DIE SNEL REAGEERT**
 
 Een huid die jarenlang alles verdroeg en het opeens niet meer doet, is zelden veranderd van aanleg. Er is meestal iets bij gekomen, en daarna nog iets, en alles werkt op dezelfde barrière.
 
@@ -1936,109 +1936,13 @@ We lopen je routine langs, meten hoe je barrière ervoor staat en zeggen wat eru
 
 ---
 
-### /huidproblemen/huidkanker-naevi
-
-**Tabbladtitel:** Moedervlekken: waar je op let en waar je heen gaat | Diba Clinics
-
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
-
-**HIERVOOR MOET JE NIET BIJ ONS ZIJN.**
-
-Wij beoordelen geen moedervlekken en we verwijderen ze niet. Dat hoort bij je huisarts of een dermatoloog, want daar hebben ze de apparatuur en de opleiding waar dit om vraagt.
-
-Wat we wel doen is je vertellen waar je op let. Je ligt bij ons op de stoel met je huid in beeld, dus je stelt de vraag toch. Dan liever een goed antwoord dan een ontwijkend.
-
-> knop: LOOP DE ABCDE-CHECK LANGS
-
-Verandert er iets aan een plekje, dan ga je naar de huisarts. Niet naar een kliniek, niet naar een app, en niet naar ons.
-
-Dat kost je een consult. Het alternatief is een oordeel van iemand die het niet mag geven, en dat is het niet waard.
-
-**Zes dingen om naar te kijken.**
-
-Vijf letters die dermatologen gebruiken, plus een zesde die op de meeste sites ontbreekt. Deze check geeft geen uitslag en kan niets uitsluiten. Hij helpt je bepalen of je ermee naar de huisarts gaat, en dat is waar hij voor is.
-
-- A · ASYMMETRIE Vouw het plekje in gedachten dubbel. Passen de twee helften op elkaar? De helften lijken op elkaar De ene helft is duidelijk anders dan de andere Een rustige moedervlek groeit gelijkmatig uit één punt en is daardoor meestal ongeveer symmetrisch.
-
-- B · BEGRENZING Kijk naar de rand. Is die glad en duidelijk, of rafelig en vaag? Een gladde, duidelijke rand Rafelig, hoekig of uitlopend in de huid De overgang naar de gewone huid zegt iets over hoe de vlek zich gedraagt aan de randen.
-
-- C · KLEUR Heeft het plekje één kleur, of meerdere tinten door elkaar? Overal ongeveer dezelfde kleur Meerdere tinten, of zwart, rood of wit erin Verschillende kleuren binnen één plekje zijn een van de bekendste redenen om het te laten nakijken.
-
-- D · DOORSNEDE Is het plekje groter dan een gum op een potlood, ongeveer zes millimeter? Kleiner dan ongeveer zes millimeter Groter dan ongeveer zes millimeter Grootte op zichzelf zegt weinig. Het telt vooral mee naast de andere punten, en een klein plekje dat verandert is belangrijker dan een groot plekje dat al jaren hetzelfde is.
-
-- E · EVOLUTIE Is er de afgelopen maanden iets veranderd aan vorm, kleur, grootte of gevoel? Denk ook aan jeuk, bloeden of een korstje dat niet weggaat. Zover ik weet niets veranderd Ja, er is iets veranderd Dit is het belangrijkste punt van de vijf. Verandering weegt zwaarder dan hoe het plekje eruitziet, ook als de andere vier je niets opvallends laten zien.
-
-- HET LELIJKE EENDJE Leg dit plekje naast je andere moedervlekken. Lijkt het op de rest, of valt het eruit? Het lijkt op mijn andere plekjes Het wijkt duidelijk af van de rest De moedervlekken van één persoon lijken meestal op elkaar. Eentje die er duidelijk uitspringt is daarom de moeite van het nakijken waard, ook als hij op zichzelf niets bijzonders lijkt.
-
-Loop de punten hierboven langs. Wat je ook invult, de uitkomst van deze check is nooit een oordeel over jouw plekje: hij helpt je alleen te bepalen of je ermee naar de huisarts gaat.
-
-Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien wat een arts met een dermatoscoop wel ziet, en hij kan dus ook niets uitsluiten. Bij twijfel geldt altijd hetzelfde advies: laat het nakijken.
-
-**Wat helpt en wat we afraden**
-
-Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: een moedervlek laten weghalen buiten de zorg betekent dat er niets meer te onderzoeken valt.
-
-**DIT WERKT**
-
-- Eén keer per maand zelf kijken, het liefst op hetzelfde moment. Het gaat om verandering, en die zie je alleen als je een beeld in je hoofd hebt.
-
-- Foto's maken van plekjes die je in de gaten houdt, van dichtbij en met iets ernaast voor de schaal.
-
-- Ook kijken waar je niet vanzelf kijkt: je rug, je hoofdhuid, tussen je tenen en onder je nagels.
-
-- Bij twijfel naar de huisarts. Dat is geen overdreven reactie maar waar die voor is.
-
-- Zonbescherming serieus nemen, want dit is het onderwerp waarbij het niet om je uiterlijk gaat.
-
-**DIT RADEN WE AF**
-
-- Een moedervlek laten weghalen bij een schoonheidssalon of huidkliniek. Wat weg is kan niet meer onderzocht worden.
-
-- Zelf wegbranden of wegvriezen met iets uit de winkel. Hetzelfde bezwaar, met meer schade.
-
-- Wachten tot het pijn doet. De meeste verdachte plekjes doen nergens pijn.
-
-- Afgaan op een foto-app of een oordeel van internet. Ook wij kunnen dat niet en dat zeggen we liever.
-
-- Denken dat het alleen om je gezicht gaat. Plekjes op rug, benen en voetzolen worden het vaakst over het hoofd gezien.
-
-**Dit is geen bescheidenheid. Dit is een grens.**
-
-Op de andere pagina's zeggen we nee omdat een behandeling te weinig oplevert. Hier zeggen we nee omdat de fout die je kunt maken niet terug te draaien is.
-
-- Wij beoordelen geen moedervlekken We kijken niet mee, we geven geen mening en we stellen niemand gerust. Daar is een dermatoscoop voor nodig en een opleiding die wij niet hebben.
-
-- Wij verwijderen geen moedervlekken Ook niet als je er alleen maar vanaf wilt omdat hij in de weg zit. Wat weg is kan niet meer onderzocht worden, en dat risico is niet aan ons om te nemen.
-
-- Wij laseren niet over een moedervlek heen Bij elke behandeling dekken we moedervlekken af. Licht op pigment kan het beeld veranderen, en dan is het latere oordeel van een arts minder betrouwbaar.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
-**Veelgestelde vragen over moedervlekken**
-
-Waarom staat deze pagina er dan überhaupt? +
-
-Kan ik bij jullie een moedervlek laten weghalen? +
-
-Ik heb een behandeling gepland en er zit een moedervlek in het gebied. +
-
-Krijg ik nieuwe moedervlekken van zonnen? +
-
-Hoe vaak moet ik zelf kijken? +
-
-**Naar je huisarts. Daar houdt het bij ons op.**
-
-Er staat op deze pagina expres nergens een knop om bij ons een afspraak te maken. Kom je voor iets anders en zit er een moedervlek in het gebied, dan dekken we die af en gaan we verder. Kom je voor de moedervlek zelf, dan sturen we je door voordat je bent gaan zitten.
-
----
-
 ### /huidproblemen/huiduitslag
 
 **Tabbladtitel:** Huiduitslag: bel je vandaag of morgen? | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Huiduitslag is een symptoom met tientallen oorzaken. Hier staat wanneer het naar de huisarts moet en wanneer wij iets voor je kunnen doen.
 
-**EÉN VRAAG TELT EERST: VANDAAG OF MORGEN.**
+**HUIDUITSLAG, EN WANNEER HET HAAST HEEFT**
 
 Huiduitslag is geen aandoening maar een symptoom, met tientallen oorzaken die uiteenlopen van onschuldig tot spoedeisend. Wij stellen daar geen diagnose over en we stellen je ook niet gerust, want dat zou meewegen in of je belt.
 
@@ -2182,9 +2086,9 @@ Er staat op deze pagina geen knop om bij ons een afspraak te maken. Maak een fot
 
 **Tabbladtitel:** Huidverkleuring: welke kleur is het? | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Bruin, rood of wit: de kleur vertelt in welke laag de verkleuring zit en of er iets aan te doen valt. Zo vind je waar jij mee te maken hebt.
 
-**BEGIN BIJ DE KLEUR. DIE ZEGT HET MEESTE.**
+**VERKLEURINGEN OP JE HUID**
 
 Verkleuring is een verzamelwoord. Bruin is iets anders dan rood, en wit is weer een heel ander verhaal. De kleur vertelt in welke laag het zit, en daarmee of er iets aan te doen valt.
 
@@ -2288,9 +2192,9 @@ Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laa
 
 **Tabbladtitel:** Huidveroudering behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Het grootste deel van wat je huid ouder maakt komt niet door leeftijd maar door zon. Wat daarvan terug te draaien is en wat niet.
 
-**EVEN OUD. NIET HETZELFDE.**
+**HOE JE HUID VERANDERT MET DE JAREN**
 
 Kijk naar de binnenkant van je bovenarm en dan naar je gezicht. Twee stukken huid van dezelfde leeftijd, die er totaal anders uitzien. Dat verschil is geen tijd.
 
@@ -2494,7 +2398,7 @@ We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en 
 
 **Google-omschrijving:** Wat je liggend ziet is de bovengrens van wat aanspannen kan bereiken. Met de zwaartekrachttest weet je vooraf of een behandeling bij jou iets oplevert.
 
-**GA EVEN LIGGEN. DAT IS JE BOVENGRENS.**
+**EEN VAGERE KAAKLIJN EN ZAKKENDE WANGEN**
 
 Verslapping is het enige huidprobleem dat verandert met de stand van je hoofd. Wat er liggend strakker uitziet, is wat de zwaartekracht overdag naar beneden trekt, en daarmee ongeveer het maximum van wat aanspannen kan bereiken.
 
@@ -2634,7 +2538,7 @@ In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. 
 
 **Google-omschrijving:** Zit er een haar in het bultje, of niet? Dat bepaalt of ontharen bij jou iets oplevert. Met fel licht en een spiegel kom je zelf een heel eind.
 
-**ZIT ER EEN HAAR IN? DAT IS DE HELE VRAAG.**
+**INGEGROEIDE HAREN NA SCHEREN OF HARSEN**
 
 Bultjes in je nek, bikinilijn of benen lijken op elkaar en zijn het niet. Zit er een haar in, dan is ontharen de logische route: waar geen haar groeit kan ook niets ingroeien. Zit er geen haar in, dan verandert ontharen er niets aan.
 
@@ -2744,195 +2648,13 @@ In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw 
 
 ---
 
-### /huidproblemen/keloiden
-
-**Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
-
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
-
-**ROOD REAGEERT. WIT VEEL MINDER.**
-
-De leeftijd van een litteken bepaalt de uitkomst meer dan de techniek. Dat geldt net zo goed voor striae. Daarom begint deze pagina met de vraag hoe lang je het al hebt.
-
-Bij oude, witte littekens is ons antwoord vaak dat het niet genoeg oplevert. Liever nu dan na vier sessies.
-
-> knop: ZET DE LITTEKENKLOK
-
-> knop: LIEVER EERST EEN VRAAG STELLEN
-
-**Hoe oud het is, bepaalt wat er kan.**
-
-Schuif naar hoe lang je het al hebt. De kleur in de tekening verandert mee, en het antwoord wordt eerlijker naarmate je verder komt. Littekens en striae volgen dezelfde as.
-
-Dit is de periode waarin je het meest kunt beïnvloeden.
-
-De balk is geen meting maar een verhouding: hij laat zien hoe de ruimte om iets te veranderen krimpt naarmate een litteken ouder wordt.
-
-> knop: NET ONTSTAAN
-
-> knop: 3 TOT 12 MAANDEN
-
-> knop: 1 TOT 3 JAAR
-
-> knop: 3 TOT 5 JAAR
-
-> knop: OUDER DAN 5 JAAR
-
-**3 tot 12 maanden**
-
-*WAT ER DAN IN JE HUID GEBEURT*
-
-Het collageen wordt herschikt. Het litteken kan in deze periode nog alle kanten op: platter en lichter, of juist dikker als de aanmaak doorschiet.
-
-*WAT REALISTISCH IS*
-
-Dit is het venster. Hier is de meeste winst te halen, bij zowel littekens als bij rode striae. Wie hier komt, komt op het juiste moment.
-
-*WAT WIJ ZOUDEN DOEN*
-
-Meten en dan gericht behandelen. Bij rood en verheven werken we vaak eerst op de bloedvaten, daarna op de structuur.
-
-> knop: LAAT DIT BEKIJKEN
-
-Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.
-
-**Welke soort litteken herken je?**
-
-Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En bij striae is de kleur belangrijker dan de plek. Kies wat het dichtst bij jou komt.
-
-- Kuiltjes in de huid Putjes die je vooral ziet bij zijlicht
-
-- Verheven, stevige littekens Een bult of streng die boven de huid uitsteekt
-
-- Rode of paarse striae Strepen die er nieuw uitzien en nog rood zijn
-
-- Witte striae Strepen die al lang wit en dun zijn
-
-*WAT JE ZIET*
-
-Kleine indeukingen, vaak op de wangen en slapen. Ze vallen op bij strijklicht en veel minder recht van voren.
-
-*WAT HET BETEKENT*
-
-Er is weefsel verloren gegaan tijdens de genezing. De huid eromheen is normaal.
-
-*WAT WIJ EERST DOEN*
-
-Dit type reageert het beste van alle littekens. We werken op de rand van het kuiltje, niet op de bodem.
-
-Dit zijn geen grote poriën. Een porie is rond en heeft een opening; een kuiltje heeft dat niet.
-
-> knop: LAAT DIT BEELD BEKIJKEN
-
-**De stap die iedereen wil overslaan.**
-
-Bijna niemand komt hier voor stap één. Toch bepaalt die of de rest zin heeft, want littekens behandelen in een ontstoken huid levert nieuwe littekens op.
-
-- Eerst rustig Zolang er nog actieve acne of ontsteking is, maak je er littekens bij in plaats van weg. Dit is de stap die mensen willen overslaan.
-
-- Dan meten We leggen vast hoe diep en hoe uitgebreid het is. Littekens veranderen traag, dus zonder meting is later niet te zien of het werkte.
-
-- Dan behandelen Gericht, met een afgesproken aantal sessies en een moment waarop we opnieuw kijken. Werkt het niet, dan stoppen we.
-
-- En dan beschermen Een behandeld litteken is tijdelijk gevoeliger voor zon. Zonder bescherming ruil je een litteken in voor een vlek.
-
-Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en pas daarna hier. Dat is geen omweg maar de kortste route naar minder littekens.
-
-**Wat helpt en wat we afraden**
-
-Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets om te vermijden: wachten tot het wit is.
-
-**DIT WERKT**
-
-- Bij een vers litteken: uit de zon, elke dag, een jaar lang. Dit is de goedkoopste behandeling die bestaat
-
-- Op tijd komen. Rood en jong reageert beter dan wit en oud, en dat scheelt meer dan de keuze van de behandeling
-
-- Eerst de acne of het onderliggende probleem rustig krijgen, dan pas het litteken
-
-- Meten voordat we starten, want littekens veranderen traag en je oog went eraan
-
-- Bij striae in de zwangerschap: wachten tot na de borstvoeding en dan meten
-
-**DIT RADEN WE AF**
-
-- Wachten tot het wit is. Dat is de meest gemaakte fout, en hij is niet terug te draaien
-
-- Littekens behandelen terwijl de acne nog actief is. Dan maak je er nieuwe bij
-
-- Crèmes die beloven dat witte striae verdwijnen. Dat gebeurt niet, ongeacht de prijs
-
-- Zonnebank om het verschil weg te camoufleren. Litteken weefsel wordt niet bruin, dus het verschil wordt juist groter
-
-- Zelf schuren of prikken. Je maakt een nieuwe wond op de plek van de oude
-
-**Te vroeg is net zo verkeerd als te laat.**
-
-Bij een vers litteken behandelen we niet, en bij witte striae beloven we niets. Allebei die momenten voelen als een gemiste kans, en allebei zijn ze de reden dat je hier later niet teleurgesteld staat.
-
-- Geen behandeling op een vers litteken In de eerste maanden doen we niets. Behandelen in die fase verstoort de genezing en kan het litteken juist dikker maken. Je krijgt advies mee en een afspraak over drie maanden.
-
-- Geen belofte bij witte striae Witte striae en oude littekens verdwijnen niet. Structuur verbeteren kan, kleur terugbrengen niet. Dat zeggen we vóór je iets betaalt.
-
-- Geen keloïd bij ons Keloïd hoort bij de dermatoloog. Behandelen wij dat, dan is de kans op verergering reëel, en dat risico nemen we niet.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
-**Bij littekens telt diepte.**
-
-Littekens veranderen langzaam. Daarom leggen we de beginsituatie vast en vergelijken we die na verloop van tijd met een nieuwe beoordeling.
-
-Bij striae meten we ook de kleur, want die vertelt in welke fase ze zitten en dus wat er nog mogelijk is.
-
-> knop: MEER OVER DE NULMETING
-
-WAT WE HIER METEN
-
-*Textuur*
-
-Hoe diep de kuiltjes zijn en hoe uitgebreid
-
-*Kleur*
-
-Rood, roze of wit: dat bepaalt de fase
-
-*Oppervlak*
-
-Hoe groot het gebied is dat we behandelen
-
-Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
-
-**Veelgestelde vragen over littekens**
-
-Gaan mijn littekens helemaal weg? +
-
-Ik heb striae van de zwangerschap. Kan ik nu al komen? +
-
-Waarom moet mijn acne eerst rustig zijn? +
-
-Werken die littekencrèmes uit de drogist? +
-
-Ik schaam me voor mijn striae bij het zwemmen. +
-
-Hoeveel sessies heb ik nodig? +
-
-Wat kost dit? +
-
-**Kom liever te vroeg. Dan te laat.**
-
-Bij een rood litteken of rode striae is dit het moment waarop het het meeste uitmaakt. Bij oude littekens rekenen we eerlijk voor of het genoeg oplevert.
-
-> knop: START JE INTAKE (4 MIN)
-
----
-
 ### /huidproblemen/keratosis-pilaris
 
 **Tabbladtitel:** Keratosis pilaris en kippenvelhuid in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Ruwe bultjes op je bovenarmen die niet weggaan. Niet te genezen, wel te verzachten, en scrubben maakt het juist erger.
 
-**NIET TE GENEZEN. WEL TE VERZACHTEN.**
+**RUWE BULTJES OP JE BOVENARMEN**
 
 Keratosis pilaris is een onschuldige en vaak erfelijke huidaandoening. De bultjes kunnen met de jaren minder worden, maar verdwijnen niet bij iedereen vanzelf.
 
@@ -3046,9 +2768,9 @@ Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldi
 
 **Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Bij littekens en striae bepaalt de leeftijd de uitkomst meer dan de techniek. Rood reageert goed, wit veel minder. Wat er in jouw geval mogelijk is.
 
-**ROOD REAGEERT. WIT VEEL MINDER.**
+**LITTEKENS EN STRIAE DIE ZICHTBAAR BLIJVEN**
 
 De leeftijd van een litteken bepaalt de uitkomst meer dan de techniek. Dat geldt net zo goed voor striae. Daarom begint deze pagina met de vraag hoe lang je het al hebt.
 
@@ -3216,7 +2938,7 @@ Hoeveel sessies heb ik nodig? +
 
 Wat kost dit? +
 
-**Kom liever te vroeg. Dan te laat.**
+**Jonge littekens reageren het best**
 
 Bij een rood litteken of rode striae is dit het moment waarop het het meeste uitmaakt. Bij oude littekens rekenen we eerlijk voor of het genoeg oplevert.
 
@@ -3228,9 +2950,9 @@ Bij een rood litteken of rode striae is dit het moment waarop het het meeste uit
 
 **Tabbladtitel:** Melasma behandelen in Rotterdam: eerst de diepte | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Bij melasma bepaalt de diepte van het pigment wat mogelijk is, en die zie je in gewoon licht niet. Waarom we altijd met een UV-scan beginnen.
 
-**NIET HOE DONKER. HOE DIEP.**
+**MELASMA: VLEKKEN DIE STEEDS TERUGKOMEN**
 
 Bij melasma bepaalt de diepte van het pigment wat er mogelijk is, en die zie je in gewoon licht niet. Twee vlekken die er identiek uitzien kunnen totaal anders reageren.
 
@@ -3376,7 +3098,7 @@ We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je 
 
 **Tabbladtitel:** Moedervlekken: waar je op let en waar je heen gaat | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.
 
 **HIERVOOR MOET JE NIET BIJ ONS ZIJN.**
 
@@ -3438,7 +3160,7 @@ Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: een 
 
 - Denken dat het alleen om je gezicht gaat. Plekjes op rug, benen en voetzolen worden het vaakst over het hoofd gezien.
 
-**Dit is geen bescheidenheid. Dit is een grens.**
+**Hier verwijzen we je naar de dermatoloog**
 
 Op de andere pagina's zeggen we nee omdat een behandeling te weinig oplevert. Hier zeggen we nee omdat de fout die je kunt maken niet terug te draaien is.
 
@@ -3474,7 +3196,7 @@ Er staat op deze pagina expres nergens een knop om bij ons een afspraak te maken
 
 **Google-omschrijving:** De meeste puntjes op je neus zijn geen mee-eters maar talgfilamenten, en die horen er te zijn. Met zijlicht zie je zelf welke van de twee je hebt.
 
-**DIE PUNTJES OP JE NEUS ZIJN MEESTAL NORMAAL.**
+**MEE-ETERS EN EEN ONZUIVERE HUID**
 
 In vrijwel elke porie zit een grijs stipje, en dat is geen mee-eter maar de gewone inhoud van een werkende porie. Iedereen heeft ze, ze zijn binnen weken terug, en een halve industrie van poriestrips bestaat bij de gratie van die verwarring.
 
@@ -3590,7 +3312,7 @@ In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normal
 
 **Google-omschrijving:** Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld
 
-**NIET ALLES WAT BRUIN IS MAG ONDER EEN LASER.**
+**OUDERDOMSVLEKKEN OP JE HANDEN EN GEZICHT**
 
 Ouderdomsvlekken en zonnevlekken zijn onschuldig en goed te behandelen. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is onze eerste vraag niet hoe je ervan afkomt, maar of het is wat je denkt.
 
@@ -3728,9 +3450,9 @@ In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het p
 
 **Tabbladtitel:** Pigmentvlekken en melasma behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Bij pigmentvlekken telt het seizoen zwaarder dan de techniek. Waarom we in de zomer terughoudend zijn en wanneer we wel behandelen.
 
-**BIJ PIGMENT TELT WANNEER, NIET WAT.**
+**PIGMENTVLEKKEN DIE JE WIL LATEN WEGGAAN**
 
 De beste behandeling in juni doet minder dan een matige behandeling in oktober. Daarom begint deze pagina niet met techniek maar met de kalender.
 
@@ -3818,7 +3540,7 @@ Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting zijn bij pigme
 
 **Wat helpt en wat we afraden**
 
-Bij pigment is de rechterkolom belangrijker dan bij welke andere aandoening ook. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen.
+Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen.
 
 **DIT WERKT**
 
@@ -3902,9 +3624,9 @@ De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen vo
 
 **Tabbladtitel:** Poriën: wat er wel en niet aan te doen is | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** De doorsnede van een porie ligt vast in je aanleg. Wat je wel kunt veranderen is het oppervlak eromheen, en dat scheelt zichtbaar.
 
-**KLEINER MAKEN KAN NIET.**
+**GROTE PORIËN IN JE GEZICHT**
 
 De doorsnede van een porie ligt vast in je aanleg. Wij beloven dus niet dat ze kleiner worden, want dat kan niemand waarmaken. Dat is meteen het meest gestelde ding op deze pagina uit de weg. Wat je wel ziet en wel kunt veranderen is de structuur van het oppervlak eromheen.
 
@@ -3932,7 +3654,7 @@ Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn in elke 
 
 Gevuld, uitgerekt en glanzend. Dit is het beeld waarmee mensen naar binnen lopen en waarvan ze denken dat de porie zelf te groot is.
 
-**Welke soort litteken herken je?**
+**Wat je ziet als je in de spiegel kijkt**
 
 Het vierde beeld is het meest gemaakte misverstand van deze pagina en het kost mensen sessies aan de verkeerde behandeling. Kies wat het dichtst bij jou komt.
 
@@ -4052,9 +3774,9 @@ We kijken onder vast licht waar je naar kijkt, of het poriën zijn of iets ander
 
 **Tabbladtitel:** Psoriasis: meer dan huid | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Psoriasis komt uit je afweersysteem en laat zich in de huid zien. Wat dat betekent voor de behandeling, en wat wij er wel en niet bij doen.
 
-**HET ZIT IN JE HUID. HET KOMT ER NIET VANDAAN.**
+**PSORIASIS: RODE PLEKKEN MET WITTE SCHILFERS**
 
 Psoriasis is een aandoening van je afweersysteem die zich in de huid laat zien. Dat verschil is niet academisch: het verklaart waarom een crème de plek aanpakt en niet de oorzaak.
 
@@ -4120,7 +3842,7 @@ Het tweede vinkje links is de belangrijkste regel op deze pagina, en de enige wa
 
 - Aannemen dat het besmettelijk is of dat het aan hygiëne ligt. Geen van beide klopt.
 
-**Dit gaat niet over de huid.**
+**Psoriasis begint in je afweersysteem**
 
 Wij kunnen een plek verzachten en niets aan de oorzaak doen. Dan verkoop je sessies aan iets dat blijft terugkomen, en dat doen we niet.
 
@@ -4156,7 +3878,7 @@ Er staat op deze pagina geen knop om bij ons een afspraak te maken. Neem je nage
 
 **Google-omschrijving:** Beweegt de lijn mee of blijft hij staan? Dat verschil bepaalt volledig wat er zin heeft, en je maakt het zelf met een spiegel.
 
-**BEWEEGT DE LIJN MEE? OF BLIJFT HIJ STAAN?**
+**RIMPELS EN FIJNE LIJNTJES**
 
 Ontspan je gezicht en kijk in de spiegel. Verdwijnt de lijn, dan zit hij in de spier. Staat hij er nog, dan zit hij in je huid. Dat onderscheid bepaalt volledig wat er zin heeft, en het kost je tien seconden.
 
@@ -4292,15 +4014,15 @@ Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmetin
 
 ### /huidproblemen/rosacea
 
-**Tabbladtitel:** Rosacea en couperose behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Rosacea behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Rosacea is te sturen: minder opvlammingen en een rustiger basiskleur. Welke triggers je zelf in de hand hebt en wat een behandeling kan toevoegen.
 
-**ROSACEA GAAT NIET WEG. HET IS WEL TE STUREN.**
+**EEN RODE, GEVOELIGE HUID DIE STEEDS OPVLAMT**
 
-We beginnen liever met die zin dan dat je hem na vijf sessies van ons hoort. Wat wél kan: minder opvlammingen, minder zichtbare adertjes, een rustiger basiskleur.
+Rosacea is een aandoening die blijft, en dat zeggen we liever nu dan na vijf sessies. Wat er wel te bereiken valt is een rustiger basiskleur, minder opvlammingen en minder zichtbare adertjes. Voor veel mensen scheelt dat meer dan ze verwachten.
 
-En je hoeft hier niets uit te leggen over hoe snel je rood wordt.
+Over hoe snel je rood wordt hoef je hier trouwens niets uit te leggen. Dat kennen we.
 
 Zie je vooral losse adertjes en geen opvlammingen? Dan gaat het waarschijnlijk om couperose, en daar staat de drukproef waarmee je dat zelf nagaat.
 
@@ -4332,15 +4054,15 @@ Dat wijn je rood maakt wist je al. De vraag die telt is hoeveel van jouw trigger
 
 > knop: INSPANNING
 
-**HIER ZIT EEN KNOP**
+**HIER HEB JE ZELF INVLOED OP**
 
-Dit kun je zelf beïnvloeden. Dat is geen schuld, dat is een hefboom.
+Aan deze triggers kun je iets veranderen, en dat levert vaak het meeste op.
 
 - Nog niets in deze groep.
 
-**HIER ZIT GEEN KNOP**
+**HIER LIGT HET BUITEN JE HAND**
 
-Deze trigger kun je niet altijd vermijden. Een behandeling kan dan helpen om de klachten beter te beheersen.
+Deze triggers zijn lastig te vermijden. Een behandeling kan dan helpen om de klachten beter te beheersen.
 
 **Tik aan wat jou rood maakt**
 
@@ -4352,7 +4074,7 @@ Weet je het niet precies? Houd het twee weken bij. Dat levert meer op dan welke 
 
 Dit is geen diagnose en geen test. Het is een manier om je eigen patroon te zien voordat je hier binnenloopt, zodat het gesprek niet bij nul begint.
 
-**Welke soort litteken herken je?**
+**Welke vorm van rosacea herken je?**
 
 Rosacea kent stadia die om een andere aanpak vragen. Bij twee ervan is ons antwoord dat je bij de dermatoloog hoort. Dat staat er dan ook, want dat is sneller dan eerst een traject bij ons.
 
@@ -4482,7 +4204,7 @@ In de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in 
 
 **Google-omschrijving:** Een zacht velletje aan een steeltje in je hals of oksel is meestal onschuldig en in een afspraak weg. Maar niet alles wat uitsteekt is een steelwratje.
 
-**HANGT HET AAN EEN STEELTJE? DAT IS DE EERSTE VRAAG.**
+**STEELWRATJES LATEN VERWIJDEREN**
 
 Een zacht, huidkleurig velletje aan een smal steeltje in je hals, oksel of lies is een fibroom. Onschuldig, het gaat niet vanzelf weg, en het is meestal in een afspraak verholpen.
 
@@ -4590,195 +4312,13 @@ Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. B
 
 ---
 
-### /huidproblemen/striae
-
-**Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
-
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
-
-**ROOD REAGEERT. WIT VEEL MINDER.**
-
-De leeftijd van een litteken bepaalt de uitkomst meer dan de techniek. Dat geldt net zo goed voor striae. Daarom begint deze pagina met de vraag hoe lang je het al hebt.
-
-Bij oude, witte littekens is ons antwoord vaak dat het niet genoeg oplevert. Liever nu dan na vier sessies.
-
-> knop: ZET DE LITTEKENKLOK
-
-> knop: LIEVER EERST EEN VRAAG STELLEN
-
-**Hoe oud het is, bepaalt wat er kan.**
-
-Schuif naar hoe lang je het al hebt. De kleur in de tekening verandert mee, en het antwoord wordt eerlijker naarmate je verder komt. Littekens en striae volgen dezelfde as.
-
-Dit is de periode waarin je het meest kunt beïnvloeden.
-
-De balk is geen meting maar een verhouding: hij laat zien hoe de ruimte om iets te veranderen krimpt naarmate een litteken ouder wordt.
-
-> knop: NET ONTSTAAN
-
-> knop: 3 TOT 12 MAANDEN
-
-> knop: 1 TOT 3 JAAR
-
-> knop: 3 TOT 5 JAAR
-
-> knop: OUDER DAN 5 JAAR
-
-**3 tot 12 maanden**
-
-*WAT ER DAN IN JE HUID GEBEURT*
-
-Het collageen wordt herschikt. Het litteken kan in deze periode nog alle kanten op: platter en lichter, of juist dikker als de aanmaak doorschiet.
-
-*WAT REALISTISCH IS*
-
-Dit is het venster. Hier is de meeste winst te halen, bij zowel littekens als bij rode striae. Wie hier komt, komt op het juiste moment.
-
-*WAT WIJ ZOUDEN DOEN*
-
-Meten en dan gericht behandelen. Bij rood en verheven werken we vaak eerst op de bloedvaten, daarna op de structuur.
-
-> knop: LAAT DIT BEKIJKEN
-
-Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.
-
-**Welke soort litteken herken je?**
-
-Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En bij striae is de kleur belangrijker dan de plek. Kies wat het dichtst bij jou komt.
-
-- Kuiltjes in de huid Putjes die je vooral ziet bij zijlicht
-
-- Verheven, stevige littekens Een bult of streng die boven de huid uitsteekt
-
-- Rode of paarse striae Strepen die er nieuw uitzien en nog rood zijn
-
-- Witte striae Strepen die al lang wit en dun zijn
-
-*WAT JE ZIET*
-
-Kleine indeukingen, vaak op de wangen en slapen. Ze vallen op bij strijklicht en veel minder recht van voren.
-
-*WAT HET BETEKENT*
-
-Er is weefsel verloren gegaan tijdens de genezing. De huid eromheen is normaal.
-
-*WAT WIJ EERST DOEN*
-
-Dit type reageert het beste van alle littekens. We werken op de rand van het kuiltje, niet op de bodem.
-
-Dit zijn geen grote poriën. Een porie is rond en heeft een opening; een kuiltje heeft dat niet.
-
-> knop: LAAT DIT BEELD BEKIJKEN
-
-**De stap die iedereen wil overslaan.**
-
-Bijna niemand komt hier voor stap één. Toch bepaalt die of de rest zin heeft, want littekens behandelen in een ontstoken huid levert nieuwe littekens op.
-
-- Eerst rustig Zolang er nog actieve acne of ontsteking is, maak je er littekens bij in plaats van weg. Dit is de stap die mensen willen overslaan.
-
-- Dan meten We leggen vast hoe diep en hoe uitgebreid het is. Littekens veranderen traag, dus zonder meting is later niet te zien of het werkte.
-
-- Dan behandelen Gericht, met een afgesproken aantal sessies en een moment waarop we opnieuw kijken. Werkt het niet, dan stoppen we.
-
-- En dan beschermen Een behandeld litteken is tijdelijk gevoeliger voor zon. Zonder bescherming ruil je een litteken in voor een vlek.
-
-Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en pas daarna hier. Dat is geen omweg maar de kortste route naar minder littekens.
-
-**Wat helpt en wat we afraden**
-
-Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets om te vermijden: wachten tot het wit is.
-
-**DIT WERKT**
-
-- Bij een vers litteken: uit de zon, elke dag, een jaar lang. Dit is de goedkoopste behandeling die bestaat
-
-- Op tijd komen. Rood en jong reageert beter dan wit en oud, en dat scheelt meer dan de keuze van de behandeling
-
-- Eerst de acne of het onderliggende probleem rustig krijgen, dan pas het litteken
-
-- Meten voordat we starten, want littekens veranderen traag en je oog went eraan
-
-- Bij striae in de zwangerschap: wachten tot na de borstvoeding en dan meten
-
-**DIT RADEN WE AF**
-
-- Wachten tot het wit is. Dat is de meest gemaakte fout, en hij is niet terug te draaien
-
-- Littekens behandelen terwijl de acne nog actief is. Dan maak je er nieuwe bij
-
-- Crèmes die beloven dat witte striae verdwijnen. Dat gebeurt niet, ongeacht de prijs
-
-- Zonnebank om het verschil weg te camoufleren. Litteken weefsel wordt niet bruin, dus het verschil wordt juist groter
-
-- Zelf schuren of prikken. Je maakt een nieuwe wond op de plek van de oude
-
-**Te vroeg is net zo verkeerd als te laat.**
-
-Bij een vers litteken behandelen we niet, en bij witte striae beloven we niets. Allebei die momenten voelen als een gemiste kans, en allebei zijn ze de reden dat je hier later niet teleurgesteld staat.
-
-- Geen behandeling op een vers litteken In de eerste maanden doen we niets. Behandelen in die fase verstoort de genezing en kan het litteken juist dikker maken. Je krijgt advies mee en een afspraak over drie maanden.
-
-- Geen belofte bij witte striae Witte striae en oude littekens verdwijnen niet. Structuur verbeteren kan, kleur terugbrengen niet. Dat zeggen we vóór je iets betaalt.
-
-- Geen keloïd bij ons Keloïd hoort bij de dermatoloog. Behandelen wij dat, dan is de kans op verergering reëel, en dat risico nemen we niet.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
-**Bij littekens telt diepte.**
-
-Littekens veranderen langzaam. Daarom leggen we de beginsituatie vast en vergelijken we die na verloop van tijd met een nieuwe beoordeling.
-
-Bij striae meten we ook de kleur, want die vertelt in welke fase ze zitten en dus wat er nog mogelijk is.
-
-> knop: MEER OVER DE NULMETING
-
-WAT WE HIER METEN
-
-*Textuur*
-
-Hoe diep de kuiltjes zijn en hoe uitgebreid
-
-*Kleur*
-
-Rood, roze of wit: dat bepaalt de fase
-
-*Oppervlak*
-
-Hoe groot het gebied is dat we behandelen
-
-Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
-
-**Veelgestelde vragen over littekens**
-
-Gaan mijn littekens helemaal weg? +
-
-Ik heb striae van de zwangerschap. Kan ik nu al komen? +
-
-Waarom moet mijn acne eerst rustig zijn? +
-
-Werken die littekencrèmes uit de drogist? +
-
-Ik schaam me voor mijn striae bij het zwemmen. +
-
-Hoeveel sessies heb ik nodig? +
-
-Wat kost dit? +
-
-**Kom liever te vroeg. Dan te laat.**
-
-Bij een rood litteken of rode striae is dit het moment waarop het het meeste uitmaakt. Bij oude littekens rekenen we eerlijk voor of het genoeg oplevert.
-
-> knop: START JE INTAKE (4 MIN)
-
----
-
 ### /huidproblemen/symptoomzoeker
 
 **Tabbladtitel:** Weet je niet hoe het heet? Begin hier | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat. Bedoeld voor wie de naam nog niet weet.
 
-**JIJ ZIET HET. WIJ HERKENNEN HET.**
+**ZOEK OP WAT JE OP JE HUID ZIET**
 
 De meeste mensen komen hier binnen met wat ze zien en niet met een naam. Daarom staat er hieronder geen enkele vakterm: je kruist aan wat er speelt en wij zoeken de pagina erbij.
 
@@ -4844,7 +4384,7 @@ Niet alles past in een lijst, en sommige dingen spelen tegelijk. Dat is geen pro
 
 **Google-omschrijving:** Wallen hebben drie oorzaken en maar een daarvan is met een huidbehandeling aan te pakken. Met de ochtendtest weet je zelf welke je hebt.
 
-**VOCHT ZAKT WEG. VET BLIJFT STAAN.**
+**WALLEN ONDER JE OGEN**
 
 Wallen kunnen samenhangen met vocht, een vetkussen of schaduw door een groef. De oorzaak bepaalt of een huidbehandeling iets kan toevoegen.
 
@@ -4956,7 +4496,7 @@ In Behandeling Nul stellen we vast of het vocht, vet of schaduw is. Bij twee van
 
 **Google-omschrijving:** Vijf behandelingen en drie vragen om te weten welke bij je past. Je huidprofiel blijft in je eigen browser staan.
 
-**22 BEHANDELINGEN. EÉN VRAAG: HOE DIEP?**
+**ONZE 22 BEHANDELINGEN VAN LICHT TOT DIEP**
 
 Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel bereikt. Waar een behandeling aankomt bepaalt de rest: wat het kost, hoe lang je rood bent en hoe vaak je terug moet.
 
@@ -5006,7 +4546,7 @@ Waar je pigment zit en waar nieuwe huidcellen vandaan komen.
 
 En nog 9 andere.
 
-**22 behandelingen. Filter tot er twee overblijven.**
+**Alle 22 behandelingen op een rij**
 
 Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter staat nergens anders, terwijl het vaak het meest bepaalt.
 
@@ -5152,7 +4692,7 @@ Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en g
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Volgt het verloop van acne in plaats van er één moment uit te pikken
 
@@ -5252,7 +4792,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Laat je huid binnen vijf minuten strakker aanvoelen door de kou en de druk
 
@@ -5350,7 +4890,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Pakt hardnekkig pigment aan waar losse behandelingen op stuklopen
 
@@ -5456,7 +4996,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Maakt kanaaltjes in de huid die je eigen herstel op gang brengen
 
@@ -5550,7 +5090,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Geeft direct een gladde, egale huid
 
@@ -5628,7 +5168,7 @@ Fibromen zijn goedaardige huidaanhangsels die vaak in de hals, oksels of liezen 
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Haalt goedaardige steelwratjes weg, meestal in hals, oksels of liezen
 
@@ -5748,7 +5288,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt in meerdere richtingen: van binnenuit via de mond en van buitenaf op de huid
 
@@ -5854,7 +5394,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Maakt donkerder geworden huid in de intieme zone of oksels lichter en egaler
 
@@ -5944,7 +5484,7 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Legt vast wat er nu is, op een manier die over maanden nog vergelijkbaar is
 
@@ -6042,7 +5582,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Maakt de huid meteen schoner, gladder en frisser
 
@@ -6118,7 +5658,7 @@ Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een me
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is opgezet voor achttien jaar en jonger, met een programma van drie maanden
 
@@ -6212,7 +5752,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt op haargroei op vrijwel elke zone
 
@@ -6300,7 +5840,7 @@ Littekens van een operatie reageren anders dan littekens van acne: ze zijn lange
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens
 
@@ -6402,7 +5942,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt zonder naalden, zuren of hersteltijd
 
@@ -6484,7 +6024,7 @@ Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt zonder snijden, zonder naalden en zonder iets dat je 's nachts in moet doen
 
@@ -6588,7 +6128,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Behandelt een groot vlak in korte tijd
 
@@ -6666,7 +6206,7 @@ Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoff
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Maakt de bovenste laag los en brengt in dezelfde beweging werkzame stoffen in
 
@@ -6780,7 +6320,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Maakt oppervlakkige verkleuring lichter
 
@@ -6890,7 +6430,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Brengt werkzame stoffen ín de huid in plaats van erop
 
@@ -7004,7 +6544,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt op littekens die door verlies van structuur zijn ontstaan
 
@@ -7082,7 +6622,7 @@ Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Brengt in kaart op welke voedingsmiddelen je lichaam reageert
 
@@ -7194,7 +6734,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Zes voordelen met één nadeeltje eronder is geen eerlijkheid maar opmaak. Daarom staan hier links en rechts evenveel regels.
+Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Richt zich op de haarzakjes en de doorbloeding van de hoofdhuid
 
@@ -7232,7 +6772,7 @@ Deze pagina vertelt wat xl hair doet. Of het bij jouw huid het juiste is, hangt 
 
 **Google-omschrijving:** Welke apparaten er in de kliniek staan, wat erop draait en wat ze niet kunnen. Een apparaat is gereedschap, geen belofte.
 
-**12 APPARATEN. GEEN VAN ALLE EEN BELOFTE.**
+**DE APPARATUUR IN ONZE KLINIEK**
 
 Klinieken verkopen apparaatnamen. Wij hebben de Fotona, wij hebben de HydraFacial. Alsof het apparaat het werk doet en wij alleen de stekker erin steken.
 
@@ -7394,7 +6934,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Een huid die er binnen een paar minuten strakker uit moet zien
 
@@ -7410,7 +6950,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER LUMI 8-LED Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk. NAAR DE LUMI 8-LED ›
 
@@ -7418,13 +6958,13 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Huidveroudering
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -7474,7 +7014,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Acnelittekens en grove poriën
 
@@ -7490,7 +7030,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER SkinPen CIT Doet hetzelfde: kanaaltjes maken zodat je huid zelf herstelt. Het verschil zit in het apparaat en niet in het principe, en welke van de twee past hangt af van je huid en de zone. NAAR DE SKINPEN CIT ›
 
@@ -7498,7 +7038,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Littekens en striae
 
@@ -7506,7 +7046,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -7554,7 +7094,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Een direct gladde, egale huid
 
@@ -7570,7 +7110,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Peelinglijnen Lost de bovenste laag chemisch op. Dermaplaning schraapt hem af, en dat scheelt zowel in gevoel als in hersteltijd. NAAR DE PEELINGLIJNEN ›
 
@@ -7578,7 +7118,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Droge huid
 
@@ -7586,7 +7126,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -7634,7 +7174,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is
 
@@ -7650,7 +7190,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -7702,7 +7242,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Verslapping en volumeverlies aanpakken zonder injectables
 
@@ -7720,7 +7260,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Gentle Laser Pro-U Mikt op melanine en dus op de haarwortel. De Fotona mikt op water en dus op weefsel: een ander doelwit met een ander gevolg. NAAR DE GENTLE LASER PRO-U ›
 
@@ -7730,7 +7270,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Huidveroudering
 
@@ -7738,7 +7278,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -7788,7 +7328,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Haargroei op vrijwel elke zone van het lichaam
 
@@ -7804,7 +7344,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Fotona TimeWalker Mikt op water en werkt op weefsel. Deze laser mikt op melanine, en dat is waarom hij de haarwortel raakt en de huid eromheen niet. NAAR DE FOTONA TIMEWALKER ›
 
@@ -7814,7 +7354,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -7864,7 +7404,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Een huid die er meteen frisser uit moet zien
 
@@ -7880,7 +7420,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Peelinglijnen Gaat dieper en vraagt hersteltijd. De HydraFacial blijft in de hoornlaag, en daar loop je zo weer mee de deur uit. NAAR DE PEELINGLIJNEN ›
 
@@ -7888,7 +7428,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Poriën
 
@@ -7896,7 +7436,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -7946,7 +7486,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Roodheid en rosacea kalmeren
 
@@ -7962,7 +7502,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Nordlys Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 doet geen van beide, en heeft daarom ook geen hersteltijd. NAAR DE NORDLYS ›
 
@@ -7972,13 +7512,13 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Rosacea
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -8028,7 +7568,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Roodheid en zichtbare vaatjes in het gelaat
 
@@ -8044,7 +7584,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Fotona TimeWalker Eén golflengte per stand, tot diep in de lederhuid. De Nordlys werkt breder en oppervlakkiger, en dat past bij vaatjes en pigment die vlak onder de huid zitten. NAAR DE FOTONA TIMEWALKER ›
 
@@ -8054,7 +7594,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Rosacea
 
@@ -8062,7 +7602,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -8116,7 +7656,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Oppervlakkige verkleuring lichter maken
 
@@ -8132,7 +7672,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Dermaplane pro Schraapt de bovenste laag af met een mesje. Een peeling lost hem op, en kan afhankelijk van de lijn dieper komen. NAAR DE DERMAPLANE PRO ›
 
@@ -8140,7 +7680,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Acne
 
@@ -8154,7 +7694,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -8204,7 +7744,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Littekens die door verlies van structuur zijn ontstaan
 
@@ -8220,7 +7760,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER Dermapen 4 Doet hetzelfde: kanaaltjes maken zodat je huid zelf herstelt. Het verschil zit in het apparaat en niet in het principe, en welke van de twee past hangt af van je huid en de zone. NAAR DE DERMAPEN 4 ›
 
@@ -8228,7 +7768,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Littekens en striae
 
@@ -8238,7 +7778,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -8290,7 +7830,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat een behandeling met je huid doet**
 
-Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Daarom staan hier links en rechts evenveel regels.
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Fijne lijnen en verslapping
 
@@ -8306,7 +7846,7 @@ Een apparatuurpagina zonder deze rechterkolom is een folder van de fabrikant. Da
 
 **Wat er anders is dan de buren.**
 
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is, en niet van welke naam het beste klinkt. Dit is het verschil, zonder omweg.
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
 - TEGENOVER SkinPen CIT Prikt om de huid te prikkelen en laat niets achter. De U225 brengt er juist iets in. NAAR DE SKINPEN CIT ›
 
@@ -8314,7 +7854,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er niet lukt, en of wij het überhaupt behandelen.
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 - Huidveroudering
 
@@ -8324,7 +7864,7 @@ Passen is niet hetzelfde als oplossen. Op elke pagina hieronder staat ook wat er
 
 **Wat het apparaat wel en niet bepaalt**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat het bij jou niet past.
+Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
 
 > knop: PLAN BEHANDELING NUL
 
@@ -8340,9 +7880,9 @@ Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Het verschil zit
 
 **Google-omschrijving:** Alle prijzen op één pagina. Geen sterretjes, geen bedragen die pas aan de balie compleet worden.
 
-**ALLES STAAT ER. OOK WAT DUUR IS.**
+**ALLE PRIJZEN OP ÉÉN PLEK**
 
-De meeste klinieken zetten hun prijzen niet online, of alleen de laagste met een sterretje erachter. Dat is geen toeval: een bedrag dat je pas hoort als je al op de stoel ligt, is makkelijker te verkopen.
+Wat een behandeling kost hoor je liever voordat je een afspraak maakt dan erna. Daarom staat het hier: elk tarief, per sessie en per zone, zonder dat je ervoor hoeft te bellen.
 
 Hier staat het gewoon. Per sessie, per zone, inclusief wat een pakket vervangt. Je kunt het vergelijken voordat je een afspraak maakt, en dat is precies de bedoeling.
 
@@ -8357,8 +7897,6 @@ De lijst hieronder is lang. Die van jou is dat niet.
 Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.
 
 > knop: STEL JE HUIDPROFIEL SAMEN
-
-**Wat een behandeling kost**
 
 Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de hersteltijd is en wat het niet doet. Het bedrag blijft staan, ook dicht.
 
@@ -8568,7 +8106,7 @@ Wijs je zones aan op een tekening en zie meteen wat je opbouw wordt, inclusief w
 
 **Google-omschrijving:** Of er iets vergoed wordt hangt niet af van je verzekeraar maar van de vraag of er een medische reden is. Drie vragen, en wat er gebeurt als het antwoord nee is.
 
-**JE VERZEKERAAR IS NIET DE EERSTE VRAAG.**
+**VERGOEDING DOOR JE ZORGVERZEKERAAR**
 
 Voor het grootste deel van wat wij doen is het antwoord bij elke verzekeraar hetzelfde: er wordt niets vergoed. Dat is geen strengheid van jouw polis, het is hoe het stelsel is opgezet. Cosmetische zorg valt erbuiten.
 
@@ -9076,15 +8614,15 @@ Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want
 
 **Tabbladtitel:** Algemene voorwaarden | Diba Clinics
 
-**Google-omschrijving:** Wat er gebeurt als u afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.
+**Google-omschrijving:** Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.
 
-**WAT ER GEBEURT ALS ER IETS IS.**
+**DE AFSPRAKEN DIE VOOR IEDEREEN GELDEN**
 
-U komt hier waarschijnlijk omdat er iets aan de hand is. U moet afzeggen, u bent te laat, of u heeft een bedrag gezien dat u niet verwachtte. Daarom staan hieronder situaties en geen artikelen.
+Je komt hier waarschijnlijk omdat er iets aan de hand is. Je moet afzeggen, je bent te laat, of je hebt een bedrag gezien dat je niet verwachtte. Daarom staan hieronder situaties en geen artikelen.
 
 Bij elke situatie staat wat het kost en waarom de regel er is. Dat laatste is het verschil tussen een voorwaarde en een boete.
 
-Tot 24 uur van tevoren afzeggen kost u niets, en u hoeft geen reden te geven.
+Tot 24 uur van tevoren afzeggen kost je niets, en je hoeft geen reden te geven.
 
 Daarna wordt een deel van het tarief in rekening gebracht, omdat de plek dan niet meer op te vullen is. Alle andere regels op deze pagina zijn varianten op die ene.
 
@@ -9108,7 +8646,7 @@ Daarna wordt een deel van het tarief in rekening gebracht, omdat de plek dan nie
 
 **Drie dingen die nooit veranderen.**
 
-Dit zijn geen bepalingen maar toezeggingen. Ze staan hier zodat ze ook meetellen wanneer u de voorwaarden erbij pakt.
+Dit zijn geen bepalingen maar toezeggingen. Ze staan hier zodat ze ook meetellen wanneer je de voorwaarden erbij pakt.
 
 - De prijs op de site is de prijs Alle tarieven staan openbaar, per sessie en per variant. Er bestaan geen kortingen, actiecodes of tijdelijke aanbiedingen, dus er is ook nooit een moment waarop je te vroeg of te laat was.
 
@@ -9118,11 +8656,11 @@ Dit zijn geen bepalingen maar toezeggingen. Ze staan hier zodat ze ook meetellen
 
 **Wat hier nog niet staat.**
 
-Een paragraaf over aansprakelijkheid. Die formulering is juridisch werk en hoort van een jurist te komen, niet van ons. Zolang hij er niet staat, doen we er ook geen halve uitspraak over: dan weet u tenminste dat hij ontbreekt in plaats van dat u iets leest waar u niets aan heeft.
+Een paragraaf over aansprakelijkheid. Die formulering is juridisch werk en hoort van een jurist te komen, niet van ons. Zolang hij er niet staat, doen we er ook geen halve uitspraak over: dan weet je tenminste dat hij ontbreekt in plaats van dat je iets leest waar je niets aan heeft.
 
-Ook de termijnen en bedragen op deze pagina zijn in deze versie nog een voorstel. Wat er bij uw afspraak is afgesproken en op uw bevestiging staat, gaat voor op wat hier staat.
+Ook de termijnen en bedragen op deze pagina zijn in deze versie nog een voorstel. Wat er bij je afspraak is afgesproken en op je bevestiging staat, gaat voor op wat hier staat.
 
-Heeft u een vraag over deze voorwaarden, stel hem dan gewoon. Diba Clinics is bereikbaar op 010-2038423 en via WhatsApp.
+Heb je een vraag over deze voorwaarden, stel hem dan gewoon. Diba Clinics is bereikbaar op 010-2038423 en via WhatsApp.
 
 > knop: BEL 010-2038423
 
@@ -9134,13 +8672,13 @@ Zie ook het privacybeleid en het cookiebeleid.
 
 **Tabbladtitel:** Cookiebeleid | Diba Clinics
 
-**Google-omschrijving:** Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe u uw keuze op elk moment kunt wijzigen. Geen advertentie-tracking.
+**Google-omschrijving:** Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe je je keuze op elk moment kunt wijzigen. Geen advertentie-tracking.
 
-**TWEE SOORTEN, EN ÉÉN KEUZE.**
+**WELKE COOKIES WE GEBRUIKEN**
 
-De ene soort is nodig om de site te laten werken. De andere is anonieme statistiek, en die laadt alleen als u daar akkoord voor geeft. Advertentie-tracking staat er niet op.
+De ene soort is nodig om de site te laten werken. De andere is anonieme statistiek, en die laadt alleen als je daar akkoord voor geeft. Advertentie-tracking staat er niet op.
 
-Uw keuze kunt u op elk moment wijzigen, hiernaast. Niet door browsergegevens te wissen, gewoon met een knop.
+Je keuze kun je op elk moment wijzigen, hiernaast. Niet door browsergegevens te wissen, gewoon met een knop.
 
 JOUW KEUZE
 
@@ -9152,23 +8690,21 @@ Zolang er geen keuze is, laadt er niets. Onbekend telt hier als nee.
 
 Intrekken werkt vanaf nu en niet met terugwerkende kracht: wat er eerder gemeten is, blijft bij die diensten staan. Wil je dat ook verwijderd hebben, neem dan contact met ons op.
 
-**Welke cookies we gebruiken**
+- ALTIJD AAN Noodzakelijk Nodig om de site te laten werken. Hieronder valt het onthouden van de keuze die je op de cookiebalk maakt, want zonder dat zou de vraag bij elk bezoek terugkomen. WANNEER Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.
 
-- ALTIJD AAN Noodzakelijk Nodig om de site te laten werken. Hieronder valt het onthouden van de keuze die u op de cookiebalk maakt, want zonder dat zou de vraag bij elk bezoek terugkomen. WANNEER Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.
-
-- ALLEEN MET AKKOORD Anonieme statistieken Google Analytics 4, met een verkort IP-adres, en Microsoft Clarity. Daarmee zien we welke pagina's mensen helpen en waar ze vastlopen. Er worden geen advertentieprofielen opgebouwd en er wordt niets doorverkocht. WANNEER Alleen na uw akkoord. Zolang dat er niet is, worden deze scripts niet ingeladen; ze staan dus niet uit maar zijn er niet.
+- ALLEEN MET AKKOORD Anonieme statistieken Google Analytics 4, met een verkort IP-adres, en Microsoft Clarity. Daarmee zien we welke pagina's mensen helpen en waar ze vastlopen. Er worden geen advertentieprofielen opgebouwd en er wordt niets doorverkocht. WANNEER Alleen na je akkoord. Zolang dat er niet is, worden deze scripts niet ingeladen; ze staan dus niet uit maar zijn er niet.
 
 **Per browser, op dit apparaat.**
 
-Uw keuze wordt lokaal in deze browser opgeslagen en gaat niet mee naar onze servers. Gebruikt u een ander apparaat of een andere browser, dan wordt de vraag daar opnieuw gesteld, want daar weten we het antwoord niet.
+Je keuze wordt lokaal in deze browser opgeslagen en gaat niet mee naar onze servers. Gebruik je een ander apparaat of een andere browser, dan wordt de vraag daar opnieuw gesteld, want daar weten we het antwoord niet.
 
-Weigert u, dan verdwijnt de balk ook. Een balk die blijft terugkomen tot u ja zegt is geen keuze maar aandrang.
+Weiger je, dan verdwijnt de balk ook. Een balk die blijft terugkomen tot je ja zegt is geen keuze maar aandrang.
 
-Trekt u uw toestemming later in, dan stopt het laden vanaf dat moment. Wat er in de sessies daarvoor gemeten is, blijft bij die diensten staan; wilt u dat ook verwijderd hebben, neem dan contact op.
+Trek je je toestemming later in, dan stopt het laden vanaf dat moment. Wat er in de sessies daarvoor gemeten is, blijft bij die diensten staan; wil je dat ook verwijderd hebben, neem dan contact op.
 
 **Stel ze gewoon.**
 
-Heeft u een vraag over wat er van u wordt vastgelegd, of wilt u gegevens laten verwijderen, stuur dan een bericht. In het privacybeleid staat wat er verder met persoonsgegevens gebeurt en welke rechten u heeft.
+Heb je een vraag over wat er van je wordt vastgelegd, of wil je gegevens laten verwijderen, stuur dan een bericht. In het privacybeleid staat wat er verder met persoonsgegevens gebeurt en welke rechten je hebt.
 
 > knop: STUUR EEN BERICHT
 
@@ -9226,27 +8762,27 @@ Deze regeling geldt voor Diba Clinics B.V., Weissenbruchlaan 166, 3054 LS Rotter
 
 **Tabbladtitel:** Privacybeleid | Diba Clinics
 
-**Google-omschrijving:** Deze website verzamelt zelf niets. Waar uw gegevens wel terechtkomen, wat daar gebeurt en welke rechten u heeft.
+**Google-omschrijving:** Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.
 
-**DEZE WEBSITE VERZAMELT NIETS.**
+**HOE WE OMGAAN MET JE GEGEVENS**
 
-Er staat geen enkel formulier op dibaclinics.nl. Geen nieuwsbrief, geen contactformulier, geen veld waar u uw mailadres achterlaat. Er is dus ook niets dat naar ons toe gestuurd wordt.
+Er staat geen enkel formulier op dibaclinics.nl. Geen nieuwsbrief, geen contactformulier, geen veld waar je je mailadres achterlaat. Er is dus ook niets dat naar ons toe gestuurd wordt.
 
-Dat betekent niet dat er nergens gegevens van u zijn. Ze staan alleen ergens anders, en hieronder staat waar.
+Dat betekent niet dat er nergens gegevens van je zijn. Ze staan alleen ergens anders, en hieronder staat waar.
 
-Vragen over uw gegevens gaan naar info@dibaclinics.nl of telefonisch naar 010-2038423. Zet er even bij dat het om een privacyverzoek gaat, dan komt het bij de juiste persoon terecht.
+Vragen over je gegevens gaan naar info@dibaclinics.nl of telefonisch naar 010-2038423. Zet er even bij dat het om een privacyverzoek gaat, dan komt het bij de juiste persoon terecht.
 
-**Waar uw gegevens wel terechtkomen.**
+**Waar je gegevens wel terechtkomen.**
 
 Drie van de vier zijn niet deze website. Bij elke plek staat wat er ligt en waar het heen gaat.
 
-- ONS Deze website Twee dingen, en allebei blijven ze in uw eigen browser: de keuze die u op de cookiebalk maakt, en het huidprofiel als u dat invult. Dat profiel bestaat uit keuzes uit lijstjes, zonder naam, mailadres of foto. WAAR HET HEEN GAAT Nergens heen. Er is op deze site geen formulier en geen server die dit ontvangt. Wist u uw browsergegevens, dan is het weg.
+- ONS Deze website Twee dingen, en allebei blijven ze in je eigen browser: de keuze die je op de cookiebalk maakt, en het huidprofiel als je dat invult. Dat profiel bestaat uit keuzes uit lijstjes, zonder naam, mailadres of foto. WAAR HET HEEN GAAT Nergens heen. Er is op deze site geen formulier en geen server die dit ontvangt. Wis je je browsergegevens, dan is het weg.
 
-- BOEKINGSSYSTEEM Salonized Uw afspraakgegevens en de contactgegevens die u bij het boeken invult. Ook de reviews die u achterlaat, want die worden daar verzameld. WAAR HET HEEN GAAT Naar Salonized als verwerker, voor het plannen van afspraken en het bijhouden van uw traject.
+- BOEKINGSSYSTEEM Salonized Je afspraakgegevens en de contactgegevens die je bij het boeken invult. Ook de reviews die je achterlaat, want die worden daar verzameld. WAAR HET HEEN GAAT Naar Salonized als verwerker, voor het plannen van afspraken en het bijhouden van je traject.
 
-- BERICHTENVERKEER WhatsApp Wat u ons stuurt, inclusief foto's als u die meestuurt bij een vraag over nazorg. WAAR HET HEEN GAAT Via WhatsApp, dat een eigen privacybeleid heeft waar wij niet over gaan. Wilt u iets gevoeligs delen, bel dan liever.
+- BERICHTENVERKEER WhatsApp Wat je ons stuurt, inclusief foto's als je die meestuurt bij een vraag over nazorg. WAAR HET HEEN GAAT Via WhatsApp, dat een eigen privacybeleid heeft waar wij niet over gaan. Wil je iets gevoeligs delen, bel dan liever.
 
-- UW DOSSIER In de kliniek Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen u heeft gehad en hoe uw huid reageerde. WAAR HET HEEN GAAT Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die u behandelen kijken erin.
+- JE DOSSIER In de kliniek Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen je hebt gehad en hoe je huid reageerde. WAAR HET HEEN GAAT Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die je behandelen kijken erin.
 
 **Hoe lang we je gegevens bewaren**
 
@@ -9258,7 +8794,7 @@ Een dossier van een geneeskundige behandeling moet twintig jaar bewaard blijven.
 
 *OP GROND WAARVAN*
 
-Uw behandeldossier
+Je behandeldossier
 
 Twintig jaar
 
@@ -9266,7 +8802,7 @@ Wettelijk verplicht op grond van de WGBO (artikel 7:454 BW), gerekend vanaf de l
 
 Foto's die bij een behandeling horen
 
-Die horen bij het dossier en vallen onder dezelfde plicht. Foto's die u ons apart heeft toegestaan te gebruiken buiten uw dossier, verwijderen wij zodra u die toestemming intrekt.
+Die horen bij het dossier en vallen onder dezelfde plicht. Foto's die je ons apart hebt toegestaan te gebruiken buiten je dossier, verwijderen wij zodra je die toestemming intrekt.
 
 Facturen en administratie
 
@@ -9274,7 +8810,7 @@ Zeven jaar
 
 De fiscale bewaarplicht van de Belastingdienst.
 
-Wat u ons appt of mailt
+Wat je ons appt of mailt
 
 Zolang het gesprek loopt, daarna opgeruimd
 
@@ -9284,33 +8820,33 @@ Meetgegevens van deze website
 
 Maximaal veertien maanden
 
-Alleen als u de cookiebalk heeft geaccepteerd. Weigert u, dan wordt er niets gemeten en is er dus niets te bewaren.
+Alleen als je de cookiebalk hebt geaccepteerd. Weiger je, dan wordt er niets gemeten en is er dus niets te bewaren.
 
 **Zes rechten, ongeacht waar iets ligt.**
 
-U hoeft niet uit te zoeken bij welke partij iets staat. Stel de vraag bij ons, dan zoeken wij het uit.
+Je hoeft niet uit te zoeken bij welke partij iets staat. Stel de vraag bij ons, dan zoeken wij het uit.
 
-- Inzien U mag opvragen welke gegevens er van u zijn en wat ermee gebeurt.
+- Inzien Je mag opvragen welke gegevens er van je zijn en wat ermee gebeurt.
 
 - Corrigeren Klopt er iets niet, dan laten we het aanpassen.
 
 - Laten verwijderen Waar de wet dat toelaat. Voor delen van een behandeldossier gelden wettelijke bewaartermijnen; dat leggen we dan uit in plaats van er omheen te praten.
 
-- Bezwaar maken Tegen een verwerking waar u het niet mee eens bent.
+- Bezwaar maken Tegen een verwerking waar je het niet mee eens bent.
 
-- Meenemen Uw gegevens in een leesbaar bestand opvragen om ze ergens anders te gebruiken.
+- Meenemen Je gegevens in een leesbaar bestand opvragen om ze ergens anders te gebruiken.
 
-- Klagen Komt u er met ons niet uit, dan kunt u terecht bij de Autoriteit Persoonsgegevens. Dat recht heeft u altijd, ook zonder eerst bij ons te klagen.
+- Klagen Kom je er met ons niet uit, dan kun je terecht bij de Autoriteit Persoonsgegevens. Dat recht heb je altijd, ook zonder eerst bij ons te klagen.
 
 > knop: DIEN EEN VERZOEK IN
 
-**Geen profiel, geen verkoop.**
+**Wij bouwen geen profielen en verkopen niets**
 
-Er worden geen advertentieprofielen van u opgebouwd en er wordt niets doorverkocht of geruild. De enige meting op deze site is anonieme statistiek, en die laadt pas nadat u daar akkoord voor geeft; zonder akkoord worden die scripts niet ingeladen.
+Er worden geen advertentieprofielen van je opgebouwd en er wordt niets doorverkocht of geruild. De enige meting op deze site is anonieme statistiek, en die laadt pas nadat je daar akkoord voor geeft; zonder akkoord worden die scripts niet ingeladen.
 
-Uw huidprofiel wordt bewust niet naar ons gestuurd. Dat is de plek waar de verleiding het grootst is om alvast een mailadres te vragen, en daarom gebeurt het niet.
+Je huidprofiel wordt bewust niet naar ons gestuurd. Dat is de plek waar de verleiding het grootst is om alvast een mailadres te vragen, en daarom gebeurt het niet.
 
-> knop: BEHEER UW COOKIEKEUZE
+> knop: BEHEER JE COOKIEKEUZE
 
 Liever bellen? Dat kan op 010-2038423. Zie ook de algemene voorwaarden.
 
@@ -9324,7 +8860,7 @@ Liever bellen? Dat kan op 010-2038423. Zie ook de algemene voorwaarden.
 
 **Google-omschrijving:** Wat hier niet gebeurt en waar je dan wel terechtkunt. Drie soorten nee: bij een arts, niet in ons aanbod, of nu even niet.
 
-**11 KEER NEE, EN WAAR DAN WEL.**
+**WAT WIJ NIET DOEN EN WAAR JE WEL TERECHTKUNT**
 
 Een lijst met dingen die we niet doen is een disclaimer. Die dekt ons in en helpt jou niet. Dus staat bij elke regel hieronder ook waar je wél terechtkunt.
 
@@ -9382,7 +8918,7 @@ Deze lijst is niet uitputtend en dat gaat hij ook nooit worden. Twijfel je of ie
 
 **Google-omschrijving:** Vier groepen met per stuk iets dat je beter vooraf kunt weten. Geen aparte behandellijnen: dezelfde lijst, een andere volgorde.
 
-**VIER GROEPEN, ÉÉN BEHANDELLIJST.**
+**VOOR WIE ONZE BEHANDELINGEN ZIJN**
 
 Een site die je in hokjes indeelt, suggereert dat er vier soorten huidzorg bestaan. Die zijn er niet. Wat er wel is, is per groep iets dat je beter vooraf kunt weten.
 
@@ -9500,9 +9036,9 @@ WAT JE GAAT VOELEN
 
 Een korte tik met iets kouds eromheen, herhaald over de zone. Hoe het precies aanvoelt verschilt per plek: op een scheenbeen is het scherper dan op een bovenbeen, omdat er minder tussen zit.
 
-**De eerste hiervan staat nergens in een folder.**
+**Waarvoor deze laser niets doet**
 
-En hij is voor een deel van de mensen doorslaggevend, want dan heeft de hele behandeling geen zin. Dat hoor je liever nu dan na de eerste sessie.
+De eerste hieronder is voor een deel van de mensen doorslaggevend, want dan heeft de hele behandeling geen zin. Dat hoor je liever nu dan na de eerste sessie.
 
 - Grijs, wit en rood haar De laser mikt op pigment. Zit er geen pigment in de haar, dan is er niets om op aan te grijpen en gebeurt er niets. Dat geldt ook voor heel licht blond. Geen instelling ter wereld verandert daar iets aan.
 
@@ -9528,7 +9064,7 @@ Deze pagina gaat over het apparaat. Welke zones er zijn, wat een sessie kost en 
 
 **Google-omschrijving:** Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.
 
-**JE HUID, IN NEGEN STAPPEN.**
+**STEL JE HUIDPROFIEL SAMEN**
 
 De meeste vragen hieronder gaan niet over wat je wil, maar over wat er kán. Retinol, zwangerschap, een gebruinde huid, medicatie. Dat komt in een kliniek meestal pas aan de balie boven tafel, en dan gaat de afspraak niet door.
 
@@ -9712,7 +9248,7 @@ Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij hebt ingevuld
 
 **Google-omschrijving:** Wat er in de intake gebeurt, wat het kost, wat je niet hoeft, en wat je overhoudt als je daarna nooit meer terugkomt.
 
-**EERST KIJKEN. NOG NIETS DOEN.**
+**WAT ER IN EEN INTAKE GEBEURT**
 
 Behandeling Nul is een afspraak waarin niet behandeld wordt. We meten je huid onder vaste belichting, laten zien wat we zien en vertellen wat er realistisch mogelijk is. Meer niet.
 
@@ -9762,7 +9298,7 @@ In 9 stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, z
 
 > knop: STEL JE HUIDPROFIEL SAMEN
 
-**Bij elke stap staat wat je niet hoeft.**
+**Wat er in dat uur gebeurt**
 
 De meeste twijfel voor een intake gaat niet over de meting maar over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes.
 
@@ -9858,7 +9394,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **Google-omschrijving:** De vraag die een kliniek zelden stelt. Wat er gebeurt als je niets doet, naast wat er gebeurt als je behandelt, over twaalf maanden.
 
-**SOMS IS HET ANTWOORD NEE.**
+**IS EEN BEHANDELING IN JOUW GEVAL NODIG?**
 
 Dit is de vraag die een kliniek zelden stelt, om een reden die niet zo ingewikkeld is: wij verdienen aan het antwoord ja. Dus stellen we hem hier zelf, en niet met een slag om de arm.
 
@@ -10036,7 +9572,7 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 - Huidverkleuring Welke kleur heeft het?
 
-**Lezen is gratis. Gokken is duur.**
+**Zodat je een gesprek kunt voeren**
 
 Alles hierboven staat er zodat je een gesprek kunt voeren in plaats van een aanbod te moeten geloven. Ook als dat gesprek ergens anders plaatsvindt.
 
@@ -10052,7 +9588,7 @@ Het register telt nu 18 onderdelen. Het groeit mee met de site: elke nieuwe pagi
 
 **Google-omschrijving:** Laserontharing met GentleMax Pro in Hillegersberg. Bereken je prijs per zone, veilig voor huidtype I tot VI.
 
-**JE PRIJS VOORAF. JE HUIDTYPE MEEGENOMEN.**
+**LASERONTHARING IN ROTTERDAM**
 
 Laserontharing wordt bijna overal per zone verkocht zonder dat je vooraf weet wat het bij jou wordt. Hier kies je je zones, zie je meteen je opbouw, en staat erbij wat een pakket vervangt.
 
@@ -10196,7 +9732,7 @@ In de configurator stel je zelf samen wat je wilt en zie je het bedrag per sessi
 
 **Google-omschrijving:** Wijs je zones aan, zie wat er in een pakket zit en wat er los overblijft. Geen bedrag dat je pas aan de balie hoort.
 
-**WIJS AAN WAT JE WIL.**
+**STEL JE EIGEN BEHANDELING SAMEN**
 
 De meeste twijfel over laserontharing gaat niet over of het werkt, maar over waar een zone begint en ophoudt en wat je straks aan de balie hoort. Daarom wijs je het hier aan in plaats van dat je het opzoekt.
 
@@ -10618,7 +10154,7 @@ Zeven regels, één per variabele hierboven. Verschijnt er straks een beeld op d
 
 Bij elk beeld komen bovendien de gegevens te staan die je nodig hebt om het te wegen: welke behandeling, hoeveel sessies, hoeveel weken ertussen, welk huidtype en hoeveel weken na de laatste sessie de nafoto gemaakt is.
 
-**Getallen liegen minder dan licht.**
+**Meten onder hetzelfde licht**
 
 De EVE-M gebruikt vaste opnameomstandigheden. Daardoor is een latere meting beter vergelijkbaar dan een losse telefoonfoto onder ander licht.
 
@@ -10694,7 +10230,7 @@ DRIE MAANDEN BEGELEIDING MET CONTROLES
 
 **Google-omschrijving:** 3.883 reviews op Salonized, gemiddeld een 5,0. Wat dat wel zegt en wat niet, met de quotes zelf erbij.
 
-**ALLEMAAL VIJF STERREN. WEES DAAR WANTROUWIG OVER.**
+**WAT KLANTEN OVER ONS SCHRIJVEN**
 
 3.883 reviews op Salonized, gemiddeld een 5,0. Op elke andere site is dat het verkoopargument. Hier staat er meteen bij waarom zo een cijfer minder zegt dan het lijkt.
 
@@ -10866,7 +10402,7 @@ Het is wel een momentopname. Er komen er dagelijks bij, en die staan daar eerder
 
 **Google-omschrijving:** Snurken begint zelden in je keel alleen. Eerst kijken waar het geluid vandaan komt, dan pas of NightLase bij jou iets oplevert.
 
-**SNURKEN IS GELUID. DE VRAAG IS WAAR HET ONTSTAAT.**
+**SNURKEN DAT JE NACHTEN VERSTOORT**
 
 Er bestaat een laserbehandeling die het zachte gehemelte aanspant, en daar zijn wij goed in. Maar hij werkt alleen als het geluid daar ontstaat. Zit het in je neus, je tong of je kaakstand, dan levert hij niets op, en dat hoor je liever nu dan na drie sessies.
 
@@ -11070,7 +10606,7 @@ Of en hoe er na de meting wordt teruggekoppeld aan de verwijzer is nog niet vast
 
 **Google-omschrijving:** Twee vacatures: allround schoonheidsspecialist of huidtherapeut, en een open sollicitatie. Waar je mee werkt en wat we van je verwachten.
 
-**METEN, UITLEGGEN, EN SOMS NEE ZEGGEN.**
+**WERKEN BIJ DIBA CLINICS**
 
 We zijn met 8, waarvan 5 huidtherapeuten. Er wordt gewerkt met laser, licht, needling en peelings, en elk traject begint met een meting. Dat laatste is geen slogan maar de volgorde waarin het hier gaat.
 
@@ -11119,4 +10655,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_103 pagina's · 5131 tekstblokken · ongeveer 73.869 woorden._
+_103 pagina's · 4911 tekstblokken · ongeveer 70.235 woorden._
