@@ -22,6 +22,7 @@ import {
   GEVOELIG_WIJ_DOEN_NIET,
 } from "@/data/gevoelige-huid";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -45,11 +46,12 @@ import {
  * Twee donkergroene vlakken, niet meer (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Gevoelige huid: type of gevolg?",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/gevoelige-huid",
+  titel: "Gevoelige huid: type of gevolg?",
+  omschrijving:
     "Een huid die opeens overal op reageert is zelden van aanleg veranderd. Wat er meestal bij is gekomen, en hoe je de barrière weer opbouwt.",
-};
+});
 
 const PAD = "/huidproblemen/gevoelige-huid";
 

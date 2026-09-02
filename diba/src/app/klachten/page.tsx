@@ -4,6 +4,7 @@ import Label from "@/components/ui/Label";
 import { ANDERE_WEGEN, KLACHT_HOUDING, KLACHT_STAPPEN } from "@/data/klachten";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_EMAIL,
   DIBA_NAP,
@@ -32,11 +33,12 @@ import {
  * tegenhouden, en ze staan daarom vooraan en achteraan.
  */
 
-export const metadata: Metadata = {
-  title: "Een klacht of iets dat niet goed ging",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/klachten",
+  titel: "Een klacht of iets dat niet goed ging",
+  omschrijving:
     "Wat je kunt doen als een behandeling of een gesprek niet ging zoals het hoorde. Van één gesprek tot een bindende uitspraak.",
-};
+});
 
 const PAD = "/klachten";
 

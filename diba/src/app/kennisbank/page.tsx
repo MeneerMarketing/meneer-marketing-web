@@ -9,6 +9,7 @@ import { KENNISBANK } from "@/data/kennisbank";
 import { BESTEMMINGEN } from "@/data/symptoomzoeker";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * De kennisbank.
@@ -41,11 +42,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * beweert niet.
  */
 
-export const metadata: Metadata = {
-  title: "Kennisbank",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/kennisbank",
+  titel: "Kennisbank",
+  omschrijving:
     "Alles wat op deze site wordt uitgelegd, geordend op de vraag die je stelt. Met de doorsnedes, testen en vergelijkers die verspreid over de site staan.",
-};
+});
 
 export default function KennisbankPage() {
   const aantalStukken = KENNISBANK.reduce((n, g) => n + g.stukken.length, 0);

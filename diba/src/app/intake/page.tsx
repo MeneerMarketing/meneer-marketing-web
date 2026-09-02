@@ -21,6 +21,7 @@ import { SALONIZED_REVIEWS } from "@/data/salonized-reviews";
 import { RASTER_GELIJK } from "@/lib/raster";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SALONIZED_BOOKING_URL,
@@ -46,11 +47,12 @@ import {
  * Twee donkergroene vlakken, niet meer (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Behandeling Nul: de intake",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/intake",
+  titel: "Behandeling Nul: de intake",
+  omschrijving:
     "Wat er in de intake gebeurt, wat het kost, wat je niet hoeft, en wat je overhoudt als je daarna nooit meer terugkomt.",
-};
+});
 
 /**
  * De feiten naast de kop.

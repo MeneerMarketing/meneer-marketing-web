@@ -6,6 +6,7 @@ import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import { PROFIEL_ONDERDELEN, telwoord } from "@/data/huidprofiel";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * /huidprofiel — je huid in negen stappen.
@@ -21,10 +22,11 @@ import { DIBA_SITE_URL } from "@/lib/site";
  * Eén donkergroen vlak op deze pagina: het meldblok in de uitkomst (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Je huidprofiel",
-  description: `Bouw je huidprofiel op in ${telwoord(PROFIEL_ONDERDELEN)} stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.`,
-};
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidprofiel",
+  titel: "Je huidprofiel",
+  omschrijving: `Bouw je huidprofiel op in ${telwoord(PROFIEL_ONDERDELEN)} stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.`,
+});
 
 export default function HuidprofielPage() {
   return (

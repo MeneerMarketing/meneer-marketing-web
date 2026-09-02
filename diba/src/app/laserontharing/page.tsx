@@ -16,6 +16,7 @@ import { LASER_LANDING_FAQ, LASER_USP_ROWS } from "@/data/laser-landing";
 import { reviewsForTopic } from "@/data/reviews";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Laserontharing — de grootste commerciële pagina van de site.
@@ -46,11 +47,12 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
  * Eén donkergroen vlak: de afsluiter (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Laserontharing Rotterdam | GentleMax Pro",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/laserontharing",
+  titel: "Laserontharing Rotterdam | GentleMax Pro",
+  omschrijving:
     "Laserontharing met GentleMax Pro in Hillegersberg. Bereken je prijs per zone, veilig voor huidtype I tot VI.",
-};
+});
 
 const LASER_REVIEWS = reviewsForTopic("laser").slice(0, 3);
 

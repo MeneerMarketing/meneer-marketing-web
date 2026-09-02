@@ -10,6 +10,7 @@ import {
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Reviews.
@@ -43,10 +44,11 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
  * Eén donkergroen vlak: wat vijf sterren niet zegt (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Reviews",
-  description: `${SALONIZED_REVIEW_SUMMARY.countFormatted} reviews op Salonized, gemiddeld een ${SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}. Wat dat wel zegt en wat niet, met de quotes zelf erbij.`,
-};
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/reviews",
+  titel: "Reviews",
+  omschrijving: `${SALONIZED_REVIEW_SUMMARY.countFormatted} reviews op Salonized, gemiddeld een ${SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}. Wat dat wel zegt en wat niet, met de quotes zelf erbij.`,
+});
 
 export default function ReviewsPage() {
   const gemiddeld = SALONIZED_REVIEW_SUMMARY.rating

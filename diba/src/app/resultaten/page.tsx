@@ -7,6 +7,7 @@ import Label from "@/components/ui/Label";
 import { FOTOVARIABELEN } from "@/data/fotobewijs";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Resultaten.
@@ -41,11 +42,12 @@ import { DIBA_SITE_URL } from "@/lib/site";
  * Eén donkergroen vlak: het protocol (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Resultaten",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/resultaten",
+  titel: "Resultaten",
+  omschrijving:
     "Waarom je vrijwel geen voor-en-na-foto kunt vertrouwen, en wanneer wel. Met een check waarmee je elk resultaatbeeld zelf beoordeelt.",
-};
+});
 
 export default function ResultatenPage() {
   return (

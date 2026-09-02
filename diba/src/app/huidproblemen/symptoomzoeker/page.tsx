@@ -6,6 +6,7 @@ import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -23,11 +24,12 @@ import {
  * en geen NulmetingAssen: hij sorteert, en dan ben je ergens anders.
  */
 
-export const metadata: Metadata = {
-  title: "Weet je niet hoe het heet? Begin hier",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/symptoomzoeker",
+  titel: "Weet je niet hoe het heet? Begin hier",
+  omschrijving:
     "Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat. Bedoeld voor wie de naam nog niet weet.",
-};
+});
 
 const PAD = "/huidproblemen/symptoomzoeker";
 

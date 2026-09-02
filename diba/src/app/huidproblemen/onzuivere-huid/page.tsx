@@ -23,6 +23,7 @@ import {
 } from "@/data/onzuivere-huid";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -37,11 +38,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Onzuivere huid en mee-eters behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/onzuivere-huid",
+  titel: "Onzuivere huid en mee-eters behandelen in Rotterdam",
+  omschrijving:
     "De meeste puntjes op je neus zijn geen mee-eters maar talgfilamenten, en die horen er te zijn. Met zijlicht zie je zelf welke van de twee je hebt.",
-};
+});
 
 const PAD = "/huidproblemen/onzuivere-huid";
 

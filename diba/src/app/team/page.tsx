@@ -7,6 +7,7 @@ import { reviewsVoorTeamlid } from "@/data/team-reviews";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * De teampagina.
@@ -33,11 +34,12 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
  * Eén donkergroen vlak: het blok over de twee titels (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Ons team",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/team",
+  titel: "Ons team",
+  omschrijving:
     "De acht mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.",
-};
+});
 
 export default function TeamPage() {
   const perVak = VAKGEBIEDEN.map((v) => ({

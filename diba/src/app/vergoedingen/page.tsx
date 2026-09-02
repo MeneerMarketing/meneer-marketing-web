@@ -6,6 +6,7 @@ import { MISVERSTANDEN, ONZE_ROL, ROUTE } from "@/data/vergoeding-route";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Vergoedingen.
@@ -41,11 +42,12 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
  * Eén donkergroen vlak: wat wij wel en niet doen (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Vergoedingen",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/vergoedingen",
+  titel: "Vergoedingen",
+  omschrijving:
     "Of er iets vergoed wordt hangt niet af van je verzekeraar maar van de vraag of er een medische reden is. Drie vragen, en wat er gebeurt als het antwoord nee is.",
-};
+});
 
 export default function VergoedingenPage() {
   return (

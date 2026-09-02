@@ -6,6 +6,7 @@ import { DOELGROEPEN } from "@/data/doelgroep";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * De hub voor de vier doelgroepen.
@@ -35,11 +36,12 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
  * enige op deze pagina waar iemand iets mee móet.
  */
 
-export const metadata: Metadata = {
-  title: "Voor wie",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/doelgroep",
+  titel: "Voor wie",
+  omschrijving:
     "Vier groepen met per stuk iets dat je beter vooraf kunt weten. Geen aparte behandellijnen: dezelfde lijst, een andere volgorde.",
-};
+});
 
 export default function DoelgroepHubPage() {
   const totaalAnders = DOELGROEPEN.reduce((n, d) => n + d.anders.length, 0);

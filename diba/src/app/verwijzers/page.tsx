@@ -7,6 +7,7 @@ import { APPARATUUR } from "@/data/apparatuur";
 import { KWALITEITSREGISTER, TEAM, VAKGEBIEDEN } from "@/data/team";
 import { WEIGER_SOORTEN } from "@/data/weigeren";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
@@ -62,11 +63,12 @@ import {
  * Eén donkergroen vlak: het blok over wie de behandeling uitvoert (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Voor verwijzers",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/verwijzers",
+  titel: "Voor verwijzers",
+  omschrijving:
     "Voor huisartsen en andere zorgverleners die willen doorverwijzen. Waar de grens ligt, wie de behandeling uitvoert en hoe u verwijst.",
-};
+});
 
 /**
  * Wat een patiënt hier als eerste krijgt.

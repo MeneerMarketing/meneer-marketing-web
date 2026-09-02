@@ -22,6 +22,7 @@ import {
   LITTEKEN_WIJ_DOEN_NIET,
 } from "@/data/littekens";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -47,11 +48,12 @@ import {
  * COPY: concept; medische beweringen gemarkeerd voor Rojda. Staat op noindex.
  */
 
-export const metadata: Metadata = {
-  title: "Littekens en striae behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/littekens",
+  titel: "Littekens en striae behandelen in Rotterdam",
+  omschrijving:
     "Bij littekens en striae bepaalt de leeftijd de uitkomst meer dan de techniek. Rood reageert goed, wit veel minder. Wat er in jouw geval mogelijk is.",
-};
+});
 
 const PAD = "/huidproblemen/littekens";
 

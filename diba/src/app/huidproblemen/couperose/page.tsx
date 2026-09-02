@@ -23,6 +23,7 @@ import {
 } from "@/data/couperose";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -55,11 +56,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Couperose behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/couperose",
+  titel: "Couperose behandelen in Rotterdam",
+  omschrijving:
     "Rode vaatjes op je wangen of naast je neus. Met de drukproef zie je zelf of het couperose is of een rode gloed, en dat bepaalt wat helpt.",
-};
+});
 
 const PAD = "/huidproblemen/couperose";
 

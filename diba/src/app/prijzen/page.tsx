@@ -7,6 +7,7 @@ import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * De prijzenpagina.
@@ -23,11 +24,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * anders leest hij als een offerte.
  */
 
-export const metadata: Metadata = {
-  title: "Prijzen",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/prijzen",
+  titel: "Prijzen",
+  omschrijving:
     "Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt.",
-};
+});
 
 export default function PrijzenPage() {
   return (

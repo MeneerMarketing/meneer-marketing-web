@@ -22,6 +22,7 @@ import {
 } from "@/data/huiduitslag";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Huiduitslag — veertiende eigen pagina, en de vierde zonder afspraakknop.
@@ -40,11 +41,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * MEDISCH: ELKE regel op deze pagina langs Rojda, inclusief de alarmsignalen zelf.
  */
 
-export const metadata: Metadata = {
-  title: "Huiduitslag: bel je vandaag of morgen?",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/huiduitslag",
+  titel: "Huiduitslag: bel je vandaag of morgen?",
+  omschrijving:
     "Huiduitslag is een symptoom met tientallen oorzaken. Hier staat wanneer het naar de huisarts moet en wanneer wij iets voor je kunnen doen.",
-};
+});
 
 const PAD = "/huidproblemen/huiduitslag";
 

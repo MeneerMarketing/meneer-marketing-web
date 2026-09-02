@@ -22,6 +22,7 @@ import {
 } from "@/data/wallen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -44,11 +45,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Wallen onder de ogen: vocht, vet of schaduw",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/wallen",
+  titel: "Wallen onder de ogen: vocht, vet of schaduw",
+  omschrijving:
     "Wallen hebben drie oorzaken en maar een daarvan is met een huidbehandeling aan te pakken. Met de ochtendtest weet je zelf welke je hebt.",
-};
+});
 
 const PAD = "/huidproblemen/wallen";
 

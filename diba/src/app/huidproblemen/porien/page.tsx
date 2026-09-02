@@ -22,6 +22,7 @@ import {
   PORIEN_WIJ_DOEN_NIET,
 } from "@/data/porien";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -42,11 +43,12 @@ import {
  * Twee donkergroene vlakken, niet meer (§5). Staat op noindex tot Rojda en de prijzen.
  */
 
-export const metadata: Metadata = {
-  title: "Poriën: wat er wel en niet aan te doen is",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/porien",
+  titel: "Poriën: wat er wel en niet aan te doen is",
+  omschrijving:
     "De doorsnede van een porie ligt vast in je aanleg. Wat je wel kunt veranderen is het oppervlak eromheen, en dat scheelt zichtbaar.",
-};
+});
 
 const PAD = "/huidproblemen/porien";
 

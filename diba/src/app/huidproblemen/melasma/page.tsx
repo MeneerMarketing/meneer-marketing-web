@@ -22,6 +22,7 @@ import {
   MELASMA_WIJ_DOEN_NIET,
 } from "@/data/melasma";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -44,11 +45,12 @@ import {
  * binnen zijn eigen tekening; dat is geen sectievlak maar het licht zelf.
  */
 
-export const metadata: Metadata = {
-  title: "Melasma behandelen in Rotterdam: eerst de diepte",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/melasma",
+  titel: "Melasma behandelen in Rotterdam: eerst de diepte",
+  omschrijving:
     "Bij melasma bepaalt de diepte van het pigment wat mogelijk is, en die zie je in gewoon licht niet. Waarom we altijd met een UV-scan beginnen.",
-};
+});
 
 const PAD = "/huidproblemen/melasma";
 

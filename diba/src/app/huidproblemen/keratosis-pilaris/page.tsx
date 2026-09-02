@@ -22,6 +22,7 @@ import {
 } from "@/data/keratosis-pilaris";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -36,11 +37,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Keratosis pilaris en kippenvelhuid in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/keratosis-pilaris",
+  titel: "Keratosis pilaris en kippenvelhuid in Rotterdam",
+  omschrijving:
     "Ruwe bultjes op je bovenarmen die niet weggaan. Niet te genezen, wel te verzachten, en scrubben maakt het juist erger.",
-};
+});
 
 const PAD = "/huidproblemen/keratosis-pilaris";
 

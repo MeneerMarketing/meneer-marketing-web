@@ -22,6 +22,7 @@ import {
 } from "@/data/droge-huid";
 import { FIGMA_INTENT_VEROUDERING } from "@/data/figma-home-images";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -41,11 +42,12 @@ import {
  * Twee donkergroene vlakken, niet meer (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Droge huid of uitgedroogde huid: wat is het verschil?",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/droge-huid",
+  titel: "Droge huid of uitgedroogde huid: wat is het verschil?",
+  omschrijving:
     "Een droge huid mist vet, een vochtarme huid mist water, en dat vraagt om iets anders. Hoe je het verschil ziet en wat er bij jou past.",
-};
+});
 
 const PAD = "/huidproblemen/droge-huid";
 

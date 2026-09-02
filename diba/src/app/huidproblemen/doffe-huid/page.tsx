@@ -24,6 +24,7 @@ import {
 } from "@/data/doffe-huid";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -38,11 +39,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Doffe huid: waar komt die grauwe tint vandaan",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/doffe-huid",
+  titel: "Doffe huid: waar komt die grauwe tint vandaan",
+  omschrijving:
     "Dof is licht dat verstrooit in plaats van weerkaatst. Vier oorzaken, en bij twee ervan is de beste behandeling een gewoonte en geen afspraak.",
-};
+});
 
 const PAD = "/huidproblemen/doffe-huid";
 

@@ -5,6 +5,7 @@ import { PCOS_KLACHTEN, PCOS_VERDELING } from "@/data/pcos";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * PCOS en de huid.
@@ -38,11 +39,12 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
  * Eén donkergroen vlak: wanneer je eerst ergens anders moet zijn (§5).
  */
 
-export const metadata: Metadata = {
-  title: "PCOS en huid",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/pcos",
+  titel: "PCOS en huid",
+  omschrijving:
     "Wat een huidkliniek bij PCOS wel kan doen, wat niet, en wanneer je eerst bij de huisarts hoort te zijn. Een taakverdeling, geen behandelaanbod.",
-};
+});
 
 export default function PcosPage() {
   const metArts = PCOS_KLACHTEN.filter((k) => k.arts !== null);

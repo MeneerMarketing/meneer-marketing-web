@@ -23,6 +23,7 @@ import {
 } from "@/data/steelwratjes";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -37,11 +38,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Steelwratjes laten verwijderen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/steelwratjes",
+  titel: "Steelwratjes laten verwijderen in Rotterdam",
+  omschrijving:
     "Een zacht velletje aan een steeltje in je hals of oksel is meestal onschuldig en in een afspraak weg. Maar niet alles wat uitsteekt is een steelwratje.",
-};
+});
 
 const PAD = "/huidproblemen/steelwratjes";
 

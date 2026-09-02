@@ -18,6 +18,7 @@ import {
 } from "@/data/psoriasis";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Psoriasis — dertiende eigen pagina, en de derde zonder afspraakknop.
@@ -35,11 +36,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * MEDISCH: alles op deze pagina langs Rojda voordat het online mag.
  */
 
-export const metadata: Metadata = {
-  title: "Psoriasis: meer dan huid",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/psoriasis",
+  titel: "Psoriasis: meer dan huid",
+  omschrijving:
     "Psoriasis komt uit je afweersysteem en laat zich in de huid zien. Wat dat betekent voor de behandeling, en wat wij er wel en niet bij doen.",
-};
+});
 
 const PAD = "/huidproblemen/psoriasis";
 

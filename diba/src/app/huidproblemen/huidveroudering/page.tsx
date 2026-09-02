@@ -23,6 +23,7 @@ import {
   VEROUDERING_WIJ_DOEN_NIET,
 } from "@/data/veroudering";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -46,11 +47,12 @@ import {
  * als belofte. Staat op noindex tot Rojda en de prijzen er zijn.
  */
 
-export const metadata: Metadata = {
-  title: "Huidveroudering behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/huidveroudering",
+  titel: "Huidveroudering behandelen in Rotterdam",
+  omschrijving:
     "Het grootste deel van wat je huid ouder maakt komt niet door leeftijd maar door zon. Wat daarvan terug te draaien is en wat niet.",
-};
+});
 
 const PAD = "/huidproblemen/huidveroudering";
 

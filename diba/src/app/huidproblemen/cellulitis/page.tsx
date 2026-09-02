@@ -19,6 +19,7 @@ import {
 } from "@/data/cellulitis";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Cellulitis — vijftiende eigen pagina, en de vijfde zonder afspraakknop.
@@ -34,11 +35,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * Eén donkergroen vlak (§5 staat er twee toe; het tweede is normaal de intake).
  */
 
-export const metadata: Metadata = {
-  title: "Cellulitis: geen vet, maar bouw",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/cellulitis",
+  titel: "Cellulitis: geen vet, maar bouw",
+  omschrijving:
     "Cellulitis komt door de bouw van je bindweefsel, niet door gewicht. Wat er wel en niet aan te veranderen valt, en welke behandelingen we ervoor doen.",
-};
+});
 
 const PAD = "/huidproblemen/cellulitis";
 

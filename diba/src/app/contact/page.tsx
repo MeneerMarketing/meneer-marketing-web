@@ -5,6 +5,7 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { SITUATIES } from "@/data/voorwaarden";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
@@ -70,10 +71,11 @@ import {
  * Eén donkergroen vlak: het blok over wat er niet op afstand kan (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Contact en route",
-  description: `Diba Clinics staat aan de ${DIBA_ADDRESS.street} in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Bellen, appen of mailen: hier staat welke vraag waar thuishoort.`,
-};
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/contact",
+  titel: "Contact en route",
+  omschrijving: `Diba Clinics staat aan de ${DIBA_ADDRESS.street} in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Bellen, appen of mailen: hier staat welke vraag waar thuishoort.`,
+});
 
 const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   `${DIBA_ADDRESS.street}, ${DIBA_ADDRESS.postalCode} ${DIBA_ADDRESS.city}`,

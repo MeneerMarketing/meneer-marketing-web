@@ -8,6 +8,7 @@ import { GRENZEN, KOELING } from "@/data/gentlemax";
 // samen met één string.
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * GentleMax Pro.
@@ -39,11 +40,12 @@ import { DIBA_SITE_URL } from "@/lib/site";
  * Twee donkergroene vlakken: het venster (in het component) en de grenzen (§5).
  */
 
-export const metadata: Metadata = {
-  title: "GentleMax Pro",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/gentlemax-pro",
+  titel: "GentleMax Pro",
+  omschrijving:
     "Twee lasers in één apparaat: 755 nm en 1064 nm. Welke van de twee je krijgt hangt af van je huidtype, en dat is een veiligheidskeuze en geen detail.",
-};
+});
 
 export default function GentleMaxProPage() {
   return (

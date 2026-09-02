@@ -6,6 +6,7 @@ import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import Raster from "@/components/huidproblemen/Raster";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -28,11 +29,12 @@ import {
  * Twee donkergroene vlakken, niet meer (§5): de zoeker bovenaan en de intake onderaan.
  */
 
-export const metadata: Metadata = {
-  title: "Huidproblemen: elk probleem zijn eigen eerste vraag",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen",
+  titel: "Huidproblemen: elk probleem zijn eigen eerste vraag",
+  omschrijving:
     "Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.",
-};
+});
 
 export default function HuidproblemenPage() {
   return (

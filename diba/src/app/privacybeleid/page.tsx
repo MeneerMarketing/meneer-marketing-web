@@ -3,6 +3,7 @@ import Link from "next/link";
 import Label from "@/components/ui/Label";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
@@ -62,12 +63,15 @@ import {
  * Eén donkergroen vlak: je rechten (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Privacybeleid",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/privacybeleid",
+  titel: "Privacybeleid",
+  omschrijving:
     "Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.",
-  robots: { index: true, follow: true },
-};
+  extra: {
+    robots: { index: true, follow: true },
+  },
+});
 
 /**
  * Waar gegevens terechtkomen.

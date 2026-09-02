@@ -6,6 +6,7 @@ import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
 import { TEAM } from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_PROOF,
@@ -42,10 +43,11 @@ import {
  * Eén donkergroen vlak: wat de cijfers niet zeggen (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Over ons",
-  description: `Diba Clinics in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Actief sinds ${DIBA_PROOF.activeSince}, ${TEAM.length} mensen, ${APPARATUUR.length} apparaten. En wat die cijfers niet zeggen.`,
-};
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/over-ons",
+  titel: "Over ons",
+  omschrijving: `Diba Clinics in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Actief sinds ${DIBA_PROOF.activeSince}, ${TEAM.length} mensen, ${APPARATUUR.length} apparaten. En wat die cijfers niet zeggen.`,
+});
 
 /**
  * De cijfers, en wat ze niet zeggen.

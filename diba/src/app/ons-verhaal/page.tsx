@@ -4,6 +4,7 @@ import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF, DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Ons verhaal.
@@ -32,11 +33,12 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
  * Eén donkergroen vlak: de regel die het meeste kost (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Ons verhaal",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/ons-verhaal",
+  titel: "Ons verhaal",
+  omschrijving:
     "Vijf regels waar deze kliniek zich aan houdt, en bij elke regel wat die ons kost. Ook als dat een behandeling is die we niet doen.",
-};
+});
 
 /**
  * De vijf regels.

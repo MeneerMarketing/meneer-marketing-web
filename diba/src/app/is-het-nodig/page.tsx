@@ -4,6 +4,7 @@ import Wachtweegschaal from "@/components/isnodig/Wachtweegschaal";
 import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Is het nodig?
@@ -31,11 +32,12 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
  * Eén donkergroen vlak: de drie momenten waarop wachten iets kost (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Is het nodig?",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/is-het-nodig",
+  titel: "Is het nodig?",
+  omschrijving:
     "Wat er over twaalf maanden gebeurt als je niets doet, naast wat er gebeurt als je wel behandelt. Zodat je de twee naast elkaar ziet.",
-};
+});
 
 /**
  * Wanneer wachten wél iets kost.

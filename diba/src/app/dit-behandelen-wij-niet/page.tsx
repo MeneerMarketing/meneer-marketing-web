@@ -6,6 +6,7 @@ import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Dit behandelen wij niet.
@@ -31,11 +32,12 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
  * (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Dit behandelen wij niet",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/dit-behandelen-wij-niet",
+  titel: "Dit behandelen wij niet",
+  omschrijving:
     "Wat hier niet gebeurt en waar je dan wel terechtkunt. Drie soorten nee: bij een arts, niet in ons aanbod, of nu even niet.",
-};
+});
 
 export default function DitBehandelenWijNietPage() {
   const perSoort = WEIGER_SOORTEN.map((s) => ({

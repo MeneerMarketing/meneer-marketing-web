@@ -7,6 +7,7 @@ import ProofBar from "@/components/ui/ProofBar";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { VOORLOPIGE_PRIJZEN } from "@/data/laser-zones";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * De laserconfigurator.
@@ -24,11 +25,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * de afsluiter onderaan. Niet meer (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Stel je laserbehandeling samen",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/laserontharing/configurator",
+  titel: "Stel je laserbehandeling samen",
+  omschrijving:
     "Wijs je zones aan, zie wat er in een pakket zit en wat er los overblijft. Geen bedrag dat je pas aan de balie hoort.",
-};
+});
 
 export default function LaserConfiguratorPage() {
   return (

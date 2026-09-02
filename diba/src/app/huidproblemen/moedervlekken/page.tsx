@@ -18,6 +18,7 @@ import {
 } from "@/data/moedervlekken";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Moedervlekken — achtste eigen pagina, en de enige zonder afspraakknop.
@@ -40,11 +41,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * criteria zelf. Staat tot die tijd op noindex.
  */
 
-export const metadata: Metadata = {
-  title: "Moedervlekken: waar je op let en waar je heen gaat",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/moedervlekken",
+  titel: "Moedervlekken: waar je op let en waar je heen gaat",
+  omschrijving:
     "Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.",
-};
+});
 
 const PAD = "/huidproblemen/moedervlekken";
 

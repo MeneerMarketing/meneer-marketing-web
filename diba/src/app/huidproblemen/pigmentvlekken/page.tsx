@@ -23,6 +23,7 @@ import {
   PIGMENT_WIJ_DOEN_NIET,
 } from "@/data/pigment";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -45,11 +46,12 @@ import {
  * COPY: concept; medische beweringen gemarkeerd voor Rojda. Staat op noindex.
  */
 
-export const metadata: Metadata = {
-  title: "Pigmentvlekken en melasma behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/pigmentvlekken",
+  titel: "Pigmentvlekken en melasma behandelen in Rotterdam",
+  omschrijving:
     "Bij pigmentvlekken telt het seizoen zwaarder dan de techniek. Waarom we in de zomer terughoudend zijn en wanneer we wel behandelen.",
-};
+});
 
 const PAD = "/huidproblemen/pigmentvlekken";
 

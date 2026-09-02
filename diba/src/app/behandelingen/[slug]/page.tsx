@@ -16,6 +16,7 @@ import {
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SALONIZED_BOOKING_URL,
@@ -62,10 +63,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const b = behandelingVoorSlug(slug);
   if (!b) return {};
-  return {
-    title: b.naam,
-    description: publicCopy(b.kort),
-  };
+  return zoekmachineVelden({
+    pad: `/behandelingen/${b.slug}`,
+    titel: b.naam,
+    omschrijving: publicCopy(b.kort),
+  });
 }
 
 const ANKERS = [

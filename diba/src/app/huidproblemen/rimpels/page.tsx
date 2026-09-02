@@ -23,17 +23,19 @@ import {
   BEWEEGTEST_STAPPEN,
 } from "@/data/rimpels";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Rimpels en fijne lijntjes behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/rimpels",
+  titel: "Rimpels en fijne lijntjes behandelen in Rotterdam",
+  omschrijving:
     "Beweegt de lijn mee of blijft hij staan? Dat verschil bepaalt volledig wat er zin heeft, en je maakt het zelf met een spiegel.",
-};
+});
 
 const PAD = "/huidproblemen/rimpels";
 

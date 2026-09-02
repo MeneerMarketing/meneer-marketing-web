@@ -22,6 +22,7 @@ import {
 } from "@/data/snurken";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -54,11 +55,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Snurken behandelen met laser in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/snurken",
+  titel: "Snurken behandelen met laser in Rotterdam",
+  omschrijving:
     "Snurken begint zelden in je keel alleen. Eerst kijken waar het geluid vandaan komt, dan pas of NightLase bij jou iets oplevert.",
-};
+});
 
 const PAD = "/snurken";
 

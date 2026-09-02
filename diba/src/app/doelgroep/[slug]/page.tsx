@@ -6,6 +6,7 @@ import { DOELGROEPEN, doelgroepBySlug } from "@/data/doelgroep";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * De doelgroeppagina's.
@@ -41,7 +42,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const d = doelgroepBySlug(slug);
   if (!d) return {};
-  return { title: d.meta, description: publicCopy(d.korteOmschrijving) };
+  return zoekmachineVelden({
+    pad: `/doelgroep/${d.slug}`,
+    titel: d.meta,
+    omschrijving: publicCopy(d.korteOmschrijving),
+  });
 }
 
 /** "Huidzorg voor *mannen*" wordt een kop met het accentwoord in groen. */

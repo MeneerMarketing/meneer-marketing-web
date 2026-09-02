@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { TEAM, VAKGEBIEDEN } from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_EMAIL, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Werken bij Diba.
@@ -31,11 +32,12 @@ import { DIBA_EMAIL, DIBA_SITE_URL } from "@/lib/site";
  * Eén donkergroen vlak: het blok over wat we verwachten (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Werken bij Diba",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/werken-bij",
+  titel: "Werken bij Diba",
+  omschrijving:
     "Twee vacatures: allround schoonheidsspecialist of huidtherapeut, en een open sollicitatie. Waar je mee werkt en wat we van je verwachten.",
-};
+});
 
 /** De twee vacatures zoals de kliniek ze publiceert. */
 const VACATURES = [

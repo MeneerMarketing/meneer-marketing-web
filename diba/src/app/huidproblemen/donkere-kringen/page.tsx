@@ -21,6 +21,7 @@ import {
   UITKOMSTEN,
 } from "@/data/kringen";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -44,11 +45,12 @@ import {
  * Twee donkergroene vlakken, niet meer (§5). Staat op noindex tot Rojda en de prijzen.
  */
 
-export const metadata: Metadata = {
-  title: "Donkere kringen: welk type heb jij?",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/donkere-kringen",
+  titel: "Donkere kringen: welk type heb jij?",
+  omschrijving:
     "Donkere kringen hebben drie verschillende oorzaken die er hetzelfde uitzien. Hoe je ze uit elkaar houdt, en bij welke wij je niet verder helpen.",
-};
+});
 
 const PAD = "/huidproblemen/donkere-kringen";
 

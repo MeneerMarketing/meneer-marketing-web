@@ -23,6 +23,7 @@ import {
 } from "@/data/ingegroeide-haren";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -37,11 +38,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Ingegroeide haren en scheerbultjes behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/ingegroeide-haren",
+  titel: "Ingegroeide haren en scheerbultjes behandelen in Rotterdam",
+  omschrijving:
     "Zit er een haar in het bultje, of niet? Dat bepaalt of ontharen bij jou iets oplevert. Met fel licht en een spiegel kom je zelf een heel eind.",
-};
+});
 
 const PAD = "/huidproblemen/ingegroeide-haren";
 

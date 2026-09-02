@@ -19,6 +19,7 @@ import {
 } from "@/data/eczeem";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Eczeem — twaalfde eigen pagina, en de tweede zonder afspraakknop.
@@ -36,11 +37,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * MEDISCH: alles op deze pagina langs Rojda voordat het online mag.
  */
 
-export const metadata: Metadata = {
-  title: "Eczeem: een cirkel, geen plek",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/eczeem",
+  titel: "Eczeem: een cirkel, geen plek",
+  omschrijving:
     "Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij ernaast kunnen doen en waar onze grens ligt.",
-};
+});
 
 const PAD = "/huidproblemen/eczeem";
 

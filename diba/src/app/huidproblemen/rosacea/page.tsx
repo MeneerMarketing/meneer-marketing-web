@@ -22,6 +22,7 @@ import {
   ROSACEA_WIJ_DOEN_NIET,
 } from "@/data/rosacea";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -48,11 +49,12 @@ import {
  * COPY: concept; medische beweringen gemarkeerd voor Rojda. Staat op noindex.
  */
 
-export const metadata: Metadata = {
-  title: "Rosacea behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/rosacea",
+  titel: "Rosacea behandelen in Rotterdam",
+  omschrijving:
     "Rosacea is te sturen: minder opvlammingen en een rustiger basiskleur. Welke triggers je zelf in de hand hebt en wat een behandeling kan toevoegen.",
-};
+});
 
 const PAD = "/huidproblemen/rosacea";
 

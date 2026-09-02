@@ -9,6 +9,7 @@ import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * De apparatuurpagina's.
@@ -56,10 +57,21 @@ export async function generateMetadata({
      Google een signaal dat er twee keer hetzelfde staat. Het zijn juist twee verschillende
      pagina's: wat de behandeling met je huid doet tegenover wat het apparaat is. Dat
      verschil hoort dan ook in de titel te staan. */
-  return {
-    title: `${a.naam}: het apparaat`,
-    description: publicCopy(a.kort),
-  };
+  return zoekmachineVelden({
+    pad: `/apparatuur/${a.slug}`,
+    titel: `${a.naam}: het apparaat`,
+    omschrijving: publicCopy(a.kort),
+    /* Waar we een eigen opname van het apparaat hebben, deelt die beter dan het
+       algemene beeld: je herkent het ding uit de behandelkamer. */
+    ...(a.foto
+      ? {
+          beeld: {
+            url: a.foto.src.replace("/shoot/", "/og/"),
+            alt: a.foto.alt,
+          },
+        }
+      : {}),
+  });
 }
 
 export default async function ApparaatPage({ params }: PageProps) {

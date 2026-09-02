@@ -7,6 +7,7 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { BEHANDELINGEN } from "@/data/behandelingen";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_SALONIZED_RATING,
   DIBA_SALONIZED_REVIEWS_URL,
@@ -40,11 +41,12 @@ import {
  * pagina licht blijft.
  */
 
-export const metadata: Metadata = {
-  title: "Behandelingen",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/behandelingen",
+  titel: "Behandelingen",
+  omschrijving:
     "Vijf behandelingen en drie vragen om te weten welke bij je past. Je huidprofiel blijft in je eigen browser staan.",
-};
+});
 
 const TROTS = [
   {

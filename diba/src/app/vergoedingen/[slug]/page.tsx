@@ -10,6 +10,7 @@ import {
 } from "@/data/insurers";
 import { ROUTE } from "@/data/vergoeding-route";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_SITE_URL,
   DIBA_TELEFOON,
@@ -60,10 +61,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const insurer = insurerBySlug(slug);
   if (!insurer) return { title: "Vergoedingen" };
-  return {
-    title: `Vergoeding ${insurer.name}`,
-    description: `Waar je bij ${insurer.name} vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.`,
-  };
+  return zoekmachineVelden({
+    pad: `/vergoedingen/${insurer.slug}`,
+    titel: `Vergoeding ${insurer.name}`,
+    omschrijving: `Waar je bij ${insurer.name} vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.`,
+  });
 }
 
 export default async function InsurerPage({ params }: PageProps) {

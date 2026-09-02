@@ -14,6 +14,7 @@ import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Ons verbond — tien weigeringen.
@@ -31,11 +32,12 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
  * primaire stap per scherm" — waar een klant niets aan heeft.
  */
 
-export const metadata: Metadata = {
-  title: "Ons verbond: tien dingen die wij niet doen",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/ons-verbond",
+  titel: "Ons verbond: tien dingen die wij niet doen",
+  omschrijving:
     "Tien weigeringen, met bij elke regel wat hij ons kost en waar je hem in de praktijk terugziet.",
-};
+});
 
 export default function OnsVerbondPage() {
   return (

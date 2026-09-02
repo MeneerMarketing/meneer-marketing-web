@@ -6,6 +6,7 @@ import Label from "@/components/ui/Label";
 import { NAZORG } from "@/data/nazorg";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_SITE_URL,
   DIBA_TELEFOON,
@@ -44,11 +45,12 @@ import {
  * Eén donkergroen vlak: wanneer je moet bellen (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Nazorg",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/nazorg",
+  titel: "Nazorg",
+  omschrijving:
     "Mag ik morgen sporten, wanneer mag die retinol weer? Per behandeling een rooster met vanaf wanneer alles weer mag, en waarom.",
-};
+});
 
 export default function NazorgPage() {
   return (

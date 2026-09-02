@@ -19,6 +19,7 @@ import {
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Acne — eigen pagina, geen generiek pillar-sjabloon.
@@ -47,11 +48,12 @@ import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
  * pagina staat op noindex tot die check en de prijzen er zijn.
  */
 
-export const metadata: Metadata = {
-  title: "Acne behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/acne",
+  titel: "Acne behandelen in Rotterdam",
+  omschrijving:
     "Acne heeft niet één oorzaak en dus niet één behandeling. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.",
-};
+});
 
 const PAD = "/huidproblemen/acne";
 

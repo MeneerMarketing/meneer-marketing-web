@@ -4,12 +4,14 @@ import { HOME_FAQ_ITEMS } from "@/data/home-faq";
 import { publicCopy } from "@/lib/copy-flags";
 import { SchemaMarkup, faqSchema } from "@/lib/schema";
 import { DIBA_SITE } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: `Huidkliniek Rotterdam | ${DIBA_SITE.name}`,
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/",
+  titel: `Huidkliniek Rotterdam | ${DIBA_SITE.name}`,
+  omschrijving:
     "Huidkliniek in Hillegersberg, Rotterdam. Advies over huidverbetering en laserontharing, en wat in jouw situatie wel of niet zinvol is.",
-};
+});
 
 /** Homepage = Figma Make export, wired aan DIBA-regels. */
 export default function HomePage() {

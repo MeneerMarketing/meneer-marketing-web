@@ -3,6 +3,7 @@ import Link from "next/link";
 import Label from "@/components/ui/Label";
 import { AFSPRAKEN, SITUATIES, VAST } from "@/data/voorwaarden";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_NAP,
   DIBA_SITE_URL,
@@ -49,12 +50,15 @@ import {
  * Eén donkergroen vlak: wat altijd geldt (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Algemene voorwaarden",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/algemene-voorwaarden",
+  titel: "Algemene voorwaarden",
+  omschrijving:
     "Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.",
-  robots: { index: true, follow: true },
-};
+  extra: {
+    robots: { index: true, follow: true },
+  },
+});
 
 export default function VoorwaardenPage() {
   return (

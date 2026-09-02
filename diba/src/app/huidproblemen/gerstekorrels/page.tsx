@@ -22,17 +22,19 @@ import {
   AFSPRAAK_STAPPEN,
 } from "@/data/gerstekorrels";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Gerstekorrels en milia: wit bolletje of ontsteking",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/gerstekorrels",
+  titel: "Gerstekorrels en milia: wit bolletje of ontsteking",
+  omschrijving:
     "Een hard wit bolletje dat je niet kunt uitdrukken is een milium en in seconden weg. Een rood, pijnlijk bultje is iets anders en hoort bij de huisarts.",
-};
+});
 
 const PAD = "/huidproblemen/gerstekorrels";
 

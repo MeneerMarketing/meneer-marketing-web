@@ -4,6 +4,7 @@ import Toestemmingschakelaar from "@/components/consent/Toestemmingschakelaar";
 import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Cookiebeleid.
@@ -38,12 +39,15 @@ import { DIBA_SITE, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
  * naar WhatsApp en dat staat er dan ook zo.
  */
 
-export const metadata: Metadata = {
-  title: "Cookiebeleid",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/cookiebeleid",
+  titel: "Cookiebeleid",
+  omschrijving:
     "Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe je je keuze op elk moment kunt wijzigen. Geen advertentie-tracking.",
-  robots: { index: true, follow: true },
-};
+  extra: {
+    robots: { index: true, follow: true },
+  },
+});
 
 const COOKIES = [
   {

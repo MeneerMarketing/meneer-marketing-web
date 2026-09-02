@@ -23,17 +23,19 @@ import {
   VERANDERCHECK_STAPPEN,
 } from "@/data/ouderdomsvlekken";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Ouderdomsvlekken en zonnevlekken behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/ouderdomsvlekken",
+  titel: "Ouderdomsvlekken en zonnevlekken behandelen in Rotterdam",
+  omschrijving:
     "Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld",
-};
+});
 
 const PAD = "/huidproblemen/ouderdomsvlekken";
 

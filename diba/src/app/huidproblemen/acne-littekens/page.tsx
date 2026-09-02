@@ -23,6 +23,7 @@ import {
 } from "@/data/acne-littekens";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -47,11 +48,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Acnelittekens en acnevlekjes behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/acne-littekens",
+  titel: "Acnelittekens en acnevlekjes behandelen in Rotterdam",
+  omschrijving:
     "Acnevlekjes zijn vaak geen litteken maar kleur. Met schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.",
-};
+});
 
 const PAD = "/huidproblemen/acne-littekens";
 

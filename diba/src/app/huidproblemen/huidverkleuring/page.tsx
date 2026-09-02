@@ -14,6 +14,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Huidverkleuring — een wegwijzer en geen aandoeningspagina.
@@ -47,11 +48,12 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
  * gaan over het sorteren zelf, en dat is wat deze pagina is.
  */
 
-export const metadata: Metadata = {
-  title: "Huidverkleuring: welke kleur is het?",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/huidverkleuring",
+  titel: "Huidverkleuring: welke kleur is het?",
+  omschrijving:
     "Bruin, rood of wit: de kleur vertelt in welke laag de verkleuring zit en of er iets aan te doen valt. Zo vind je waar jij mee te maken hebt.",
-};
+});
 
 const PAD = "/huidproblemen/huidverkleuring";
 

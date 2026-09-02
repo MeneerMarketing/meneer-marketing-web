@@ -9,6 +9,7 @@ import { behandelingVoorSlug } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
 
 /**
  * Het apparatuuroverzicht.
@@ -25,11 +26,12 @@ import { DIBA_SITE_URL } from "@/lib/site";
  * Eén donkergroen vlak: de stelling bovenaan (§5).
  */
 
-export const metadata: Metadata = {
-  title: "Onze apparatuur",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/apparatuur",
+  titel: "Onze apparatuur",
+  omschrijving:
     "Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.",
-};
+});
 
 export default function ApparatuurPage() {
   const perCategorie = APPARAAT_CATEGORIEEN.map((c) => ({

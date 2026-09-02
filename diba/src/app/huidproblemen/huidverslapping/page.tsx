@@ -24,6 +24,7 @@ import {
 } from "@/data/huidverslapping";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE_URL,
@@ -38,11 +39,12 @@ import {
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
-export const metadata: Metadata = {
-  title: "Huidverslapping behandelen in Rotterdam",
-  description:
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/huidverslapping",
+  titel: "Huidverslapping behandelen in Rotterdam",
+  omschrijving:
     "Wat je liggend ziet is de bovengrens van wat aanspannen kan bereiken. Met de zwaartekrachttest weet je vooraf of een behandeling bij jou iets oplevert.",
-};
+});
 
 const PAD = "/huidproblemen/huidverslapping";
 
