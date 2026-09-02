@@ -34,7 +34,7 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Is het nodig?",
   description:
-    "De vraag die een kliniek zelden stelt. Wat er gebeurt als je niets doet, naast wat er gebeurt als je behandelt, over twaalf maanden.",
+    "Wat er over twaalf maanden gebeurt als je niets doet, naast wat er gebeurt als je wel behandelt. Zodat je de twee naast elkaar ziet.",
 };
 
 /**

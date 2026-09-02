@@ -24,7 +24,7 @@ De kop- en voettekst staan op elke pagina hetzelfde en zijn hier weggelaten.
 
 **Tabbladtitel:** Huidkliniek Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Huidkliniek in Hillegersberg, Rotterdam. Advies over huidverbetering en laserontharing, en wat in jouw situatie wel of niet zinvol is.
 
 > knop: 5,0 gebaseerd op 3.883 reviews
 
@@ -278,7 +278,7 @@ Twijfel je over de route, kijk dan even in Maps: dat weet actueler dan deze pagi
 
 **Tabbladtitel:** Ons verhaal | Diba Clinics
 
-**Google-omschrijving:** Vijf regels waar deze kliniek zich aan houdt, met bij elke regel wat hij ons kost. Een principe zonder prijs is een slogan.
+**Google-omschrijving:** Vijf regels waar deze kliniek zich aan houdt, en bij elke regel wat die ons kost. Ook als dat een behandeling is die we niet doen.
 
 **VIJF REGELS WAAR WE ONS AAN HOUDEN**
 
@@ -376,7 +376,7 @@ Waarom er hier eerst gemeten wordt, waarom prijzen openbaar staan en waarom er b
 
 **Tabbladtitel:** Ons team | Diba Clinics
 
-**Google-omschrijving:** Huidtherapeut De titel huidtherapeut is wettelijk beschermd. Vermeld per medewerker alleen een registratie of kwaliteitsregister als dit afzonderlijk is gecontroleerd.
+**Google-omschrijving:** De acht mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.
 
 **DE MENSEN DIE JE HUID BEHANDELEN**
 
@@ -740,7 +740,7 @@ In de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies 
 
 **Tabbladtitel:** Acnelittekens en acnevlekjes behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Acnevlekjes zijn vaak geen litteken maar kleur. Met je vinger en schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.
+**Google-omschrijving:** Acnevlekjes zijn vaak geen litteken maar kleur. Met schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.
 
 **WAT ER NA ACNE OP JE HUID ACHTERBLIJFT**
 
@@ -6770,7 +6770,7 @@ Deze pagina vertelt wat xl hair doet. Of het bij jouw huid het juiste is, hangt 
 
 **Tabbladtitel:** Onze apparatuur | Diba Clinics
 
-**Google-omschrijving:** Welke apparaten er in de kliniek staan, wat erop draait en wat ze niet kunnen. Een apparaat is gereedschap, geen belofte.
+**Google-omschrijving:** Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.
 
 **DE APPARATUUR IN ONZE KLINIEK**
 
@@ -6932,6 +6932,14 @@ Het rood in bloed neemt bepaalde golflengtes op. Zo raak je een vaatje zonder de
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud, en dat is niet toevallig: kou en druk zijn hier de twee werkzame delen.
+
+De koude gasstroom laat de vaatjes eerst samentrekken en daarna weer verwijden. De druk brengt het vernevelde serum tegen de opperhuid aan. De fabrikant noemt die twee cryoforese en baroforese.
+
+Er komt geen naald aan te pas en er wordt niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7011,6 +7019,14 @@ Bindweefsel
 Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+**Wat de diepte van dit apparaat bepaalt**
+
+Dezelfde techniek als de SkinPen, met een ander motorontwerp. De Dermapen 4 haalt tot 1920 prikken per seconde en heeft hetzelfde diepteberereik van 0,25 tot 3,0 millimeter, in stappen instelbaar per zone van je gezicht.
+
+Het verschil dat je merkt zit in de snelheid waarmee een vlak wordt afgewerkt en in de standen die de fabrikant heeft voorgeprogrammeerd, waaronder een litteken-instelling die op de maximale diepte werkt.
+
+Welke van de twee pennen je krijgt hangt niet af van welke beter is, maar van de zone, de diepte die daar past en wat er bij de meting uitkwam.
 
 **Wat een behandeling met je huid doet**
 
@@ -7092,6 +7108,14 @@ De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidla
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+Dit is het eenvoudigste wat er in de kliniek staat: een steriel mesje dat onder een vaste hoek over een strak getrokken huid gaat. Er komt geen stroom, licht of warmte aan te pas.
+
+Wat eraf gaat zijn dode cellen uit de hoornlaag en de fijne donshaartjes die daarin vastzitten. Wat blijft is levende huid, want het mesje snijdt niet maar schraapt over het oppervlak.
+
+Het donshaar groeit terug zoals het was: even fijn en even licht. Scheren verandert de haarschacht niet, alleen het uiteinde, en een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7172,6 +7196,14 @@ Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+De EVE-M meet en behandelt niet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.
+
+Dat is de hele reden dat het ding er staat. Een telefoonfoto onder ander licht en vanaf een andere afstand is niet met een vorige te vergelijken, en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.
+
+Naast gewoon licht wordt er ook onder UV opgenomen. Pigment dat dieper in de huid zit is in gewoon licht nauwelijks te zien en onder UV wel, en juist die diepte bepaalt wat er mogelijk is.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7239,6 +7271,14 @@ Water
 Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+**Wat de diepte van dit apparaat bepaalt**
+
+De TimeWalker draagt twee lasers in één kast. Een Er:YAG op 2940 nanometer, die vrijwel volledig door water wordt opgenomen en daardoor aan de oppervlakte blijft. En een Nd:YAG op 1064 nanometer, die veel minder door water wordt tegengehouden en dus dieper komt.
+
+Het bijzondere zit in de manier waarop Fotona de Er:YAG aanstuurt. In SMOOTH-modus komt de energie in een reeks trage pulsen in plaats van één harde, waardoor het weefsel opwarmt zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verdampen en verwarmen, en het is de reden dat er bij deze modus geen open huid ontstaat.
+
+Dezelfde SMOOTH-modus zit achter NightLase, waarbij het zachte gehemelte wordt behandeld in plaats van de huid van je gezicht. De laser is dezelfde; alleen de plek en de instelling verschillen.
 
 **Wat een behandeling met je huid doet**
 
@@ -7326,6 +7366,14 @@ Het pigment in je huid en in de haarwortel. Neemt licht op en zet het om in warm
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+De Gentle-serie van Candela werkt met een alexandrietlaser op 755 nanometer. Die golflengte wordt sterk opgenomen door melanine, het pigment dat een haar zijn kleur geeft. Daardoor loopt de energie langs de haarschacht naar de wortel en blijft de huid eromheen relatief onberoerd.
+
+De pulsduur is instelbaar van een kwart milliseconde tot honderd milliseconden, en de spotgrootte van 6 tot 18 millimeter. Dat zijn de twee knoppen die ertoe doen: een dikke, donkere haar vraagt iets anders dan een fijne, en een grote spot komt dieper dan een kleine.
+
+Wat dit apparaat onderscheidt is de koeling. Candela spuit met de Dynamic Cooling Device een stoot cryogeen op de huid, milliseconden voor en na de puls. De opperhuid koelt daardoor terug terwijl de haarwortel de warmte vasthoudt. Dat is de reden dat er met deze laser hogere energie mogelijk is dan zonder die koeling verantwoord zou zijn.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7401,6 +7449,14 @@ De hoornlaag
 De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidlagen worden niet op dezelfde manier behandeld.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+**Wat de diepte van dit apparaat bepaalt**
+
+Het werkzame deel is het mondstuk, niet de kast. In de tip zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over de huid: losgemaakte cellen en poriëninhoud gaan mee naar buiten, door een zijkanaal naar een opvangbak, terwijl er via hetzelfde kanaal serum naar binnen gaat.
+
+Dat is het hele idee achter de naam Vortex-Fusion: reinigen, losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang, met één hand, zonder van instrument te wisselen.
+
+De tips zijn wegwerpartikelen en er zijn verschillende soorten, met een grovere of fijnere spiraal. Welke er gebruikt wordt hangt af van je huid en het doel van de behandeling.
 
 **Wat een behandeling met je huid doet**
 
@@ -7484,6 +7540,14 @@ Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+LED is geen laser en geen warmtebron. Er komt licht van één kleur uit, op lage sterkte, en het wordt door de huid opgenomen zonder dat er iets wordt verdampt of losgemaakt. Je voelt er niets van en er is geen hersteltijd, want er is ook geen schade om van te herstellen.
+
+De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft aan de oppervlakte, rood komt iets dieper, en infrarood komt het verst omdat het het minst door de huid wordt tegengehouden.
+
+Wat LED daarmee doet is het onderwerp van veel onderzoek en weinig zekerheid. Wij zetten het in naast een andere behandeling en niet als vervanging ervan.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7565,6 +7629,14 @@ Bloedvaten
 Het rood in bloed neemt bepaalde golflengtes op. Zo raak je een vaatje zonder de huid eromheen.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+**Wat de diepte van dit apparaat bepaalt**
+
+De Nordlys van Candela is geen laser maar IPL: intens gepulst licht. Een laser zendt één golflengte uit, IPL een band. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.
+
+Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek. welke applicators hier in de kast liggen.
+
+Op hetzelfde platform kan ook een Nd:YAG op 1064 nanometer draaien, en fractionele lasers op 1550 en 1940 nanometer. Die komen dieper dan het IPL-licht en doen ander werk.
 
 **Wat een behandeling met je huid doet**
 
@@ -7654,6 +7726,14 @@ De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidla
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+Een peeling is geen apparaat maar een vloeistof, en wat hij doet hangt af van drie dingen: welk zuur erin zit, hoe geconcentreerd het is en hoe zuur het mengsel als geheel is. Die drie samen bepalen hoe diep het komt.
+
+Fruitzuren blijven in de hoornlaag en spoelen er na een paar minuten weer af. Salicylzuur lost op in vet en komt daardoor de porie in, waar water-oplosbare zuren niet komen. Sterkere mengsels gaan tot in de opperhuid en soms daaronder, en die vragen voorbereiding en hersteltijd.
+
+Welke lijn en welke sterkte er bij jou past hangt af van je huidtype, van wat je op dit moment gebruikt en van het seizoen.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7742,6 +7822,14 @@ Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+Een microneedling-pen zet een cartridge met naalden in een snelle op-en-neerbeweging. De SkinPen heeft er veertien, en de diepte is instelbaar van een kwart millimeter tot drie millimeter. Dat bereik loopt van net door de hoornlaag tot in het bindweefsel.
+
+De diepte is de enige instelling die er echt toe doet, want die bepaalt in welke laag het kanaaltje eindigt. Ondiep raakt de opperhuid en heelt binnen een dag; drie millimeter komt in de laag waar bindweefsel wordt aangemaakt en vraagt langer.
+
+De cartridges zijn steriel en voor eenmalig gebruik. Dat is bij microneedling geen detail: de naalden gaan door de huidbarrière heen, en dat is precies waar die barrière voor bedoeld was.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7828,6 +7916,14 @@ Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
+**Wat de diepte van dit apparaat bepaalt**
+
+De U225 is een injector, geen laser en geen apparaat dat op de huid werkt. Een luchtdruksysteem duwt een instelbare hoeveelheid vloeistof door een fijne naald, op een diepte tussen één en tien millimeter, tot acht keer per seconde.
+
+Wat hem onderscheidt van met de hand injecteren is dat alleen de naald beweegt en de spuit stilstaat. Daardoor trilt er minder en is de diepte van prik tot prik gelijk, ook als er een paar honderd achter elkaar gaan.
+
+Wat er in de spuit zit bepaalt de behandeling, niet het apparaat. Dat kan een skinbooster zijn of een mesotherapie-mengsel, en die keuze hoort bij de behandelaar.
+
 **Wat een behandeling met je huid doet**
 
 Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
@@ -7878,7 +7974,7 @@ Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van
 
 **Tabbladtitel:** Prijzen | Diba Clinics
 
-**Google-omschrijving:** Alle prijzen op één pagina. Geen sterretjes, geen bedragen die pas aan de balie compleet worden.
+**Google-omschrijving:** Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt.
 
 **ALLE PRIJZEN OP ÉÉN PLEK**
 
@@ -9392,7 +9488,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **Tabbladtitel:** Is het nodig? | Diba Clinics
 
-**Google-omschrijving:** De vraag die een kliniek zelden stelt. Wat er gebeurt als je niets doet, naast wat er gebeurt als je behandelt, over twaalf maanden.
+**Google-omschrijving:** Wat er over twaalf maanden gebeurt als je niets doet, naast wat er gebeurt als je wel behandelt. Zodat je de twee naast elkaar ziet.
 
 **IS EEN BEHANDELING IN JOUW GEVAL NODIG?**
 
@@ -10086,7 +10182,7 @@ Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet
 
 **Tabbladtitel:** Resultaten | Diba Clinics
 
-**Google-omschrijving:** Waarom je vrijwel geen enkele voor-en-na-foto kunt vertrouwen, en onder welke voorwaarden dat wel kan. Met een check waarmee je elk resultaatbeeld zelf beoordeelt.
+**Google-omschrijving:** Waarom je vrijwel geen voor-en-na-foto kunt vertrouwen, en wanneer wel. Met een check waarmee je elk resultaatbeeld zelf beoordeelt.
 
 **HIER STAAN NOG GEEN VOOR-EN-NA-FOTO'S.**
 
@@ -10655,4 +10751,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_103 pagina's · 4911 tekstblokken · ongeveer 70.235 woorden._
+_103 pagina's · 4959 tekstblokken · ongeveer 71.714 woorden._

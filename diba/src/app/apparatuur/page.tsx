@@ -28,7 +28,7 @@ import { DIBA_SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Onze apparatuur",
   description:
-    "Welke apparaten er in de kliniek staan, wat erop draait en wat ze niet kunnen. Een apparaat is gereedschap, geen belofte.",
+    "Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.",
 };
 
 export default function ApparatuurPage() {

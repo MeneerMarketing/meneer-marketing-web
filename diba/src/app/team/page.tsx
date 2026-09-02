@@ -36,7 +36,7 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Ons team",
   description:
-    "Huidtherapeut De titel huidtherapeut is wettelijk beschermd. Vermeld per medewerker alleen een registratie of kwaliteitsregister als dit afzonderlijk is gecontroleerd.",
+    "De acht mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.",
 };
 
 export default function TeamPage() {

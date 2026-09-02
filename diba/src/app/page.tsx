@@ -8,7 +8,7 @@ import { DIBA_SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: `Huidkliniek Rotterdam | ${DIBA_SITE.name}`,
   description:
-    "Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat in jouw situatie wel of niet zinvol is.",
+    "Huidkliniek in Hillegersberg, Rotterdam. Advies over huidverbetering en laserontharing, en wat in jouw situatie wel of niet zinvol is.",
 };
 
 /** Homepage = Figma Make export, wired aan DIBA-regels. */

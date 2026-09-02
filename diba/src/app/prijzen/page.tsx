@@ -26,7 +26,7 @@ import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Prijzen",
   description:
-    "Alle prijzen op één pagina. Geen sterretjes, geen bedragen die pas aan de balie compleet worden.",
+    "Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt.",
 };
 
 export default function PrijzenPage() {

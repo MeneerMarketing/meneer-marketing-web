@@ -44,7 +44,7 @@ import { DIBA_SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Resultaten",
   description:
-    "Waarom je vrijwel geen enkele voor-en-na-foto kunt vertrouwen, en onder welke voorwaarden dat wel kan. Met een check waarmee je elk resultaatbeeld zelf beoordeelt.",
+    "Waarom je vrijwel geen voor-en-na-foto kunt vertrouwen, en wanneer wel. Met een check waarmee je elk resultaatbeeld zelf beoordeelt.",
 };
 
 export default function ResultatenPage() {

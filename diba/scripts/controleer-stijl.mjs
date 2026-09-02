@@ -23,6 +23,8 @@ import { readFileSync } from "fs";
 const md = readFileSync("TEKSTEN.md", "utf8").split(/\r?\n/);
 
 const regels = [];
+/** Wat Google toont: de tabbladtitel en de omschrijving, per pagina. */
+const zoekresultaten = [];
 let pad = "(nog geen pagina)";
 for (const r of md) {
   const t = r.trim();
@@ -31,8 +33,14 @@ for (const r of md) {
     continue;
   }
   if (!t || t === "---" || t.startsWith("#") || t.startsWith("_")) continue;
-  /* De twee regels die de export zelf toevoegt zijn geen paginatekst. */
-  if (/^\*\*(Tabbladtitel|Google-omschrijving):\*\*/.test(t)) continue;
+  /* Titel en omschrijving zijn geen paginatekst, maar wel het eerste wat iemand ziet. */
+  const meta = t.match(/^\*\*(Tabbladtitel|Google-omschrijving):\*\* (.*)$/);
+  if (meta) {
+    zoekresultaten.push({ pad, soort: meta[1], tekst: meta[2].trim() });
+    /* De omschrijving gaat wél langs de gewone regels; hij is tenslotte gewoon een zin. */
+    if (meta[1] === "Google-omschrijving") regels.push({ pad, t: meta[2].trim() });
+    continue;
+  }
   regels.push({ pad, t });
 }
 
@@ -205,9 +213,44 @@ if (!bevindingen.length) {
   }
 }
 
+/**
+ * Wat Google laat zien.
+ *
+ * Drie dingen kunnen hier misgaan zonder dat iemand het merkt, want deze twee zinnen staan
+ * nergens op de pagina zelf: een notitie aan onszelf die als omschrijving is blijven staan,
+ * een pagina die er helemaal geen heeft, en een omschrijving die Google afknipt.
+ */
+const REDACTIETAAL =
+  /^(Vermeld|Zet erbij|Controleer|Vul aan|Nog invullen|Aanvullen|Check|TODO|Placeholder)\b/i;
+
+const metaFouten = [];
+for (const z of zoekresultaten) {
+  if (z.soort !== "Google-omschrijving") continue;
+  if (REDACTIETAAL.test(z.tekst) || /\bVermeld per\b|\bals dit afzonderlijk is gecontroleerd\b/i.test(z.tekst))
+    metaFouten.push([z.pad, "leest als een notitie aan onszelf", z.tekst]);
+  else if (z.tekst.length > 160)
+    metaFouten.push([z.pad, `${z.tekst.length} tekens; Google knipt rond 160 af`, z.tekst]);
+}
+
+const paginas = new Set(zoekresultaten.map((z) => z.pad));
+const metOmschrijving = new Set(
+  zoekresultaten.filter((z) => z.soort === "Google-omschrijving").map((z) => z.pad),
+);
+const zonder = [...paginas].filter((p) => !metOmschrijving.has(p));
+
+if (metaFouten.length || zonder.length) {
+  console.log("\nWat Google laat zien:");
+  for (const [p, waarom, tekst] of metaFouten)
+    console.log(`  ${p}  ${waarom}\n        ${tekst.slice(0, 88)}`);
+  for (const p of zonder) console.log(`  ${p}  geen omschrijving; Google kiest er zelf een`);
+  console.log("");
+} else {
+  console.log(`\n${metOmschrijving.size} pagina's hebben een eigen omschrijving, alle binnen de lengte.\n`);
+}
+
 console.log(
   `${ontkenningskoppen.length} koppen staan op een ontkenning. Een deel daarvan hoort zo;` +
     ` het gaat om de koppen die eerst zeggen wat iets niet is.`,
 );
 
-process.exitCode = bevindingen.length ? 1 : 0;
+process.exitCode = bevindingen.length || metaFouten.length ? 1 : 0;

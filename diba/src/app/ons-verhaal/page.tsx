@@ -35,7 +35,7 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
 export const metadata: Metadata = {
   title: "Ons verhaal",
   description:
-    "Vijf regels waar deze kliniek zich aan houdt, met bij elke regel wat hij ons kost. Een principe zonder prijs is een slogan.",
+    "Vijf regels waar deze kliniek zich aan houdt, en bij elke regel wat die ons kost. Ook als dat een behandeling is die we niet doen.",
 };
 
 /**
