@@ -177,13 +177,21 @@ const REGELS = [
     /* Ook zonder bepaling ervoor. "Klinieken laten dit graag in het midden" en "Klinieken
        verkopen apparaatnamen" stonden er allebei nog, en de regel zag ze niet omdat hij
        "de meeste", "andere" of "veel" verwachtte. Dat is juist de stelligste vorm: zonder
-       bepaling gaat het over allemaal. */
+       bepaling gaat het over allemaal.
+
+       En de vorm zonder het woord "kliniek" erin. "Wie belooft dat je huid weer glad wordt,
+       meet niet" en "iedereen die dat zegt verkoopt iets" zeggen precies hetzelfde over
+       precies dezelfde mensen, alleen met een onbepaald voornaamwoord ervoor. Die stonden
+       drie keer in de antwoorden op veelgestelde vragen, en die antwoorden zaten tot
+       september 2026 niet eens in de export. */
     test: (t) =>
       /\b(de meeste|andere|veel) (klinieken|salons|aanbieders)\b/i.test(t) ||
       /\b(klinieken|salons|aanbieders)\s+(verkopen|laten|doen|beloven|zeggen|zetten|noemen|vergeten|rekenen)\b/i.test(
         t,
       ) ||
-      /\b(elders|ergens anders) (wordt|krijg je|beloven ze)\b/i.test(t),
+      /\b(elders|ergens anders) (wordt|krijg je|beloven ze)\b/i.test(t) ||
+      /\bwie\s+(dat\s+)?(belooft|zegt|beweert|garandeert|roept)\b/i.test(t) ||
+      /\b(iedereen|niemand)\s+die\s+dat\s+(zegt|belooft|beweert)\b/i.test(t),
     grens: 0,
   },
   {

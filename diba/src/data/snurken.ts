@@ -162,7 +162,7 @@ export const SNURKEN_FAQ = [
   {
     vraag: "Blijft het weg?",
     antwoord:
-      "Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Wie zegt dat het definitief is, verkoopt iets anders dan een behandeling. [MEDISCHE-CHECK-ROJDA]",
+      "Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Definitief noemen we het daarom niet, en je hoort vooraf dat er een herhaling bij hoort. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Wat kost dit?",

@@ -159,7 +159,7 @@ export const VERSLAPPING_FAQ = [
   {
     vraag: "Is dit een alternatief voor een facelift?",
     antwoord:
-      "Nee, en iedereen die dat zegt verkoopt iets. Aanspannen van de huid en het verwijderen van weefsel zijn twee verschillende dingen. Wat wij doen werkt in het stadium daarvoor, en op het moment dat dat stadium voorbij is zeggen we dat. [MEDISCHE-CHECK-ROJDA]",
+      "Nee. Aanspannen van de huid en het verwijderen van weefsel zijn twee verschillende dingen, en wij doen alleen het eerste. Wat wij doen werkt in het stadium daarvoor, en op het moment dat dat stadium voorbij is zeggen we dat. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Vanaf welke leeftijd heeft dit zin?",

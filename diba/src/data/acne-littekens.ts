@@ -186,6 +186,6 @@ export const ACNE_LITTEKENS_FAQ = [
   {
     vraag: "Kunnen putjes helemaal verdwijnen?",
     antwoord:
-      "Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van meerdere sessies. Wie belooft dat je huid weer glad wordt, meet niet en heeft je huid niet gezien. [MEDISCHE-CHECK-ROJDA]",
+      "Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van meerdere sessies. Wij beloven geen gladde huid, want dat kunnen we voor de meting niet weten en erna meestal ook niet. [MEDISCHE-CHECK-ROJDA]",
   },
 ];

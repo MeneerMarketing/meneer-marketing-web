@@ -920,7 +920,7 @@ Er is geen vaste termijn; het gaat erom dat er geen nieuwe ontstekingen meer bij
 
 Kunnen putjes helemaal verdwijnen? +
 
-Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van meerdere sessies. Wie belooft dat je huid weer glad wordt, meet niet en heeft je huid niet gezien.
+Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van meerdere sessies. Wij beloven geen gladde huid, want dat kunnen we voor de meting niet weten en erna meestal ook niet.
 
 **Plan een intake bij Diba Clinics**
 
@@ -2688,7 +2688,7 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Is dit een alternatief voor een facelift? +
 
-Nee, en iedereen die dat zegt verkoopt iets. Aanspannen van de huid en het verwijderen van weefsel zijn twee verschillende dingen. Wat wij doen werkt in het stadium daarvoor, en op het moment dat dat stadium voorbij is zeggen we dat.
+Nee. Aanspannen van de huid en het verwijderen van weefsel zijn twee verschillende dingen, en wij doen alleen het eerste. Wat wij doen werkt in het stadium daarvoor, en op het moment dat dat stadium voorbij is zeggen we dat.
 
 Vanaf welke leeftijd heeft dit zin? +
 
@@ -11422,7 +11422,7 @@ Meestal drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks 
 
 Blijft het weg? +
 
-Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Wie zegt dat het definitief is, verkoopt iets anders dan een behandeling.
+Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Definitief noemen we het daarom niet, en je hoort vooraf dat er een herhaling bij hoort.
 
 Wat kost dit? +
 
@@ -11569,4 +11569,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5352 tekstblokken · ongeveer 83.070 woorden._
+_107 pagina's · 5352 tekstblokken · ongeveer 83.076 woorden._
