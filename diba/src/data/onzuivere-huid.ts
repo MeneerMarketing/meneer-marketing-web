@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de pagina over een onzuivere huid en mee-eters.
  *
@@ -173,4 +175,5 @@ export const ONZUIVER_FAQ = [
     antwoord:
       "Bijna nooit. Wie een vette huid streng behandelt houdt een uitgedroogde huid over die meer talg maakt, en dan is het beeld na een maand slechter in plaats van beter. [MEDISCHE-CHECK-ROJDA]",
   },
+  kostenVraag(),
 ];

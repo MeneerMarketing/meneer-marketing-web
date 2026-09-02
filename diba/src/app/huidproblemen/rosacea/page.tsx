@@ -134,7 +134,7 @@ export default function RosaceaPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Een rode, gevoelige huid
+              Rosacea: een huid
               <br />
               <span className="diba-accent">die steeds opvlamt</span>
             </h1>

@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de rosacea- en couperosepagina.
  *
@@ -308,4 +310,5 @@ export const ROSACEA_FAQ = [
     antwoord:
       "Dat horen we vaak, en het is de reden dat mensen jaren wachten. Je hoeft hier niets uit te leggen. We kijken naar je huid en niet naar je gedrag.",
   },
+  kostenVraag(),
 ] as const;

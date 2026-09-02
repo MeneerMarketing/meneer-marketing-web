@@ -105,7 +105,7 @@ export default function Pagina() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Een vagere kaaklijn
+              Een verslapte kaaklijn
               <br />
               <span className="diba-accent">en zakkende wangen</span>
             </h1>

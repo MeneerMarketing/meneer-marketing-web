@@ -104,9 +104,9 @@ export default function AcnePage() {
                 ("Acne is niet vies. Het is ontsteking.") ontkende eerst een verwijt
                 voordat hij iets beloofde; deze begint bij wat je komt halen. */}
             <h1 className="diba-display-l mt-6">
-              Puistjes die steeds
+              Acne die steeds
               <br />
-              <span className="diba-accent">terugkomen</span>
+              <span className="diba-accent">terugkomt</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

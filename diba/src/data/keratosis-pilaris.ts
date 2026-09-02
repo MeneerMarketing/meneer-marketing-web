@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de pagina over keratosis pilaris, ofwel kippenvelhuid.
  *
@@ -175,4 +177,5 @@ export const KP_FAQ = [
     antwoord:
       "Koude lucht en binnenverwarming drogen de huid uit, en een drogere huid maakt de verhoorning zichtbaarder en ruwer. Bij bijna iedereen is het in de zomer minder. Dat is het seizoen en geen terugval. [MEDISCHE-CHECK-ROJDA]",
   },
+  kostenVraag(),
 ];

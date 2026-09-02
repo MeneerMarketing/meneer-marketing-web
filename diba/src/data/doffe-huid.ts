@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de pagina over een doffe huid.
  *
@@ -177,4 +179,5 @@ export const DOF_FAQ = [
     antwoord:
       "Nee. Droog gaat over te weinig vet, uitgedroogd over te weinig water, en dof over hoe je huid licht terugkaatst. Je kunt een vette huid hebben die dof is. Op de pagina over een droge huid staat dat onderscheid uitgewerkt.",
   },
+  kostenVraag(),
 ];

@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de pagina over gerstekorrels en milia.
  *
@@ -140,6 +142,7 @@ export const GERSTEKORRELS_FAQ = [
     antwoord:
       "Meestal alles wat er zit, in een afspraak. Zijn het er veel, dan spreiden we het soms om de huid rust te geven. Dat hoor je vooraf en niet halverwege. [MEDISCHE-CHECK-ROJDA]",
   },
+  kostenVraag(),
 ];
 
 /**

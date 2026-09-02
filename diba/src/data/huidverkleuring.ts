@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de pagina over huidverkleuring.
  *
@@ -200,4 +202,5 @@ export const VERKLEURING_FAQ = [
     antwoord:
       "Omdat hier niets te koop is. Dit is een wegwijzer; de prijzen staan bij de behandeling die er uiteindelijk bij hoort.",
   },
+  kostenVraag(),
 ] as const;

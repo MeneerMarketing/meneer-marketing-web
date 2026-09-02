@@ -90,9 +90,9 @@ export default function MoedervlekkenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Hiervoor moet je
+              Moedervlekken: hiervoor
               <br />
-              <span className="diba-accent">niet bij ons zijn.</span>
+              <span className="diba-accent">moet je niet bij ons zijn</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

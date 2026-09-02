@@ -1366,6 +1366,10 @@ Is dof hetzelfde als droog? +
 
 Nee. Droog gaat over te weinig vet, uitgedroogd over te weinig water, en dof over hoe je huid licht terugkaatst. Je kunt een vette huid hebben die dof is. Op de pagina over een droge huid staat dat onderscheid uitgewerkt.
 
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+
 **Uitzoeken welke van de vier het bij jou is**
 
 In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken.
@@ -1900,6 +1904,10 @@ Hoeveel kunnen er in een keer? +
 
 Meestal alles wat er zit, in een afspraak. Zijn het er veel, dan spreiden we het soms om de huid rust te geven. Dat hoor je vooraf en niet halverwege.
 
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+
 **Even laten kijken. Vaak is het zo klaar.**
 
 Bij milia is de afspraak kort en eenmalig. Blijkt het iets anders, dan hoor je dat meteen en sturen we je door in plaats van dat we het proberen.
@@ -2326,6 +2334,10 @@ Waarom staat er geen prijs op deze pagina? +
 
 Omdat hier niets te koop is. Dit is een wegwijzer; de prijzen staan bij de behandeling die er uiteindelijk bij hoort.
 
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+
 **Kom gewoon langs. Wij kijken mee.**
 
 Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laat de plek dan beoordelen.
@@ -2690,6 +2702,10 @@ Doet het pijn? +
 
 Je voelt warmte en soms korte prikjes. De meeste mensen omschrijven het als goed te doen, en er is geen verdoving nodig. Wat je erna merkt hangt af van de behandeling en staat op de behandelpagina.
 
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+
 **Plan een intake bij Diba Clinics**
 
 In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies.
@@ -2937,6 +2953,10 @@ Nee. Het is grotendeels erfelijk en het heeft niets te maken met hygiëne, voedi
 Waarom is het 's winters erger? +
 
 Koude lucht en binnenverwarming drogen de huid uit, en een drogere huid maakt de verhoorning zichtbaarder en ruwer. Bij bijna iedereen is het in de zomer minder. Dat is het seizoen en geen terugval.
+
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Wat we eerst vaststellen**
 
@@ -3524,6 +3544,10 @@ Moet ik mijn huid strenger reinigen? +
 
 Bijna nooit. Wie een vette huid streng behandelt houdt een uitgedroogde huid over die meer talg maakt, en dan is het beeld na een maand slechter in plaats van beter.
 
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+
 **Plan een intake bij Diba Clinics**
 
 In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken.
@@ -3671,6 +3695,10 @@ Omdat pigment dieper in de huid begint dan waar je het ziet. De meting maakt zic
 Kan dit ook op mijn handen? +
 
 Ja, en dat is vaak de plek waar mensen het het eerst storend vinden. De huid daar is dunner en herstelt langzamer, dus we gaan er voorzichtiger te werk dan in het gezicht.
+
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
@@ -4479,6 +4507,10 @@ Ja. Stoppen met sporten is geen advies dat wij geven. We kijken naar timing, koe
 Ik schaam me ervoor dat ik zo snel rood word. +
 
 Dat horen we vaak, en het is de reden dat mensen jaren wachten. Je hoeft hier niets uit te leggen. We kijken naar je huid en niet naar je gedrag.
+
+Wat kost dit? +
+
+Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
@@ -11537,4 +11569,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5336 tekstblokken · ongeveer 82.430 woorden._
+_107 pagina's · 5352 tekstblokken · ongeveer 83.070 woorden._

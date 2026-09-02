@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de pagina over huidverslapping.
  *
@@ -174,4 +176,5 @@ export const VERSLAPPING_FAQ = [
     antwoord:
       "Je voelt warmte en soms korte prikjes. De meeste mensen omschrijven het als goed te doen, en er is geen verdoving nodig. Wat je erna merkt hangt af van de behandeling en staat op de behandelpagina. [MEDISCHE-CHECK-ROJDA]",
   },
+  kostenVraag(),
 ];

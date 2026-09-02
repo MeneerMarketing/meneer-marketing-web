@@ -1,3 +1,5 @@
+import { kostenVraag } from "@/data/pillar-kosten";
+
 /**
  * Inhoud van de pagina over ouderdomsvlekken en zonnevlekken.
  *
@@ -144,6 +146,7 @@ export const OUDERDOMSVLEKKEN_FAQ = [
     antwoord:
       "Ja, en dat is vaak de plek waar mensen het het eerst storend vinden. De huid daar is dunner en herstelt langzamer, dus we gaan er voorzichtiger te werk dan in het gezicht. [MEDISCHE-CHECK-ROJDA]",
   },
+  kostenVraag(),
 ];
 
 /**
