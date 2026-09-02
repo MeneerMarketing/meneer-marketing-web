@@ -297,6 +297,39 @@ if (metaFouten.length || zonder.length) {
   );
 }
 
+/**
+ * Hoe oud de cijfers zijn.
+ *
+ * De gids: "Gebruik alleen cijfers die op de publicatiedatum zijn gecontroleerd", en in de
+ * eindcontrole "Zijn reviews, prijzen, teamgegevens en cijfers actueel?".
+ *
+ * Het reviewaantal loopt op en de klantaantallen ook. Een getal dat een jaar achterloopt is
+ * erger dan geen getal, want het staat er met de stelligheid van een feit. Een half jaar is
+ * de grens: lang genoeg om niet elke maand te zeuren, kort genoeg om niet met de cijfers van
+ * vorig jaar live te staan.
+ */
+const site = readFileSync("src/lib/site.ts", "utf8");
+const gecontroleerd = site.match(/CIJFERS_GECONTROLEERD_OP = "(\d{4}-\d{2}-\d{2})"/);
+let cijfersVerouderd = false;
+
+if (!gecontroleerd) {
+  console.log("\nGeen CIJFERS_GECONTROLEERD_OP in site.ts; datum van de cijfers onbekend.\n");
+  cijfersVerouderd = true;
+} else {
+  const maanden =
+    (Date.now() - new Date(gecontroleerd[1]).getTime()) / (1000 * 60 * 60 * 24 * 30.44);
+  if (maanden > 6) {
+    console.log(
+      `\nDe cijfers zijn voor het laatst nagekeken op ${gecontroleerd[1]}, ` +
+        `${Math.round(maanden)} maanden geleden. Reviewaantal, klantaantallen, prijzen en\n` +
+        "teamgegevens opnieuw controleren, en daarna CIJFERS_GECONTROLEERD_OP bijwerken.\n",
+    );
+    cijfersVerouderd = true;
+  } else {
+    console.log(`\nCijfers nagekeken op ${gecontroleerd[1]}.\n`);
+  }
+}
+
 console.log(
   `${ontkenningskoppen.length} koppen staan op een ontkenning. Een deel daarvan hoort zo;` +
     ` het gaat om de koppen die eerst zeggen wat iets niet is.`,

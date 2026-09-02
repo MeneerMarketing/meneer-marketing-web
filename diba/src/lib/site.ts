@@ -121,7 +121,23 @@ export const DIBA_NAP = {
 export const DIBA_SALONIZED_REVIEWS_URL =
   "https://dibaclinics.salonized.com/reviews";
 
-/** Stand Salonized (aug 2026): 5,0 · 3.883 reviews. */
+/**
+ * Wanneer de cijfers op deze pagina voor het laatst zijn nagekeken.
+ *
+ * De gids vraagt hier twee keer om: gebruik alleen cijfers die op de publicatiedatum zijn
+ * gecontroleerd, en kijk vóór publicatie opnieuw naar reviews, klantaantallen, prijzen en
+ * teamgegevens.
+ *
+ * Het reviewaantal loopt op, dus dit veroudert vanzelf. Een getal dat maanden achterloopt is
+ * erger dan geen getal, want het staat er met de stelligheid van een feit. `npm run stijl`
+ * klaagt zodra deze datum ouder is dan een half jaar.
+ *
+ * Werk hem bij zodra je de cijfers hierboven hebt nagekeken, ook als er niets veranderd is.
+ * Dat "niets veranderd" is namelijk de uitkomst van de controle en niet het overslaan ervan.
+ */
+export const CIJFERS_GECONTROLEERD_OP = "2026-08-01";
+
+/** Stand Salonized, zie CIJFERS_GECONTROLEERD_OP: 5,0 · 3.883 reviews. */
 export const DIBA_SALONIZED_RATING = 5.0;
 export const DIBA_SALONIZED_REVIEW_COUNT = 3883;
 
