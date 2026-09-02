@@ -131,16 +131,16 @@ export default async function DoelgroepPage({ params }: PageProps) {
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
-            <Label>Twee kolommen</Label>
+            <Label>Het verschil</Label>
             <h2 className="diba-display-m mt-4">
-              Wat er anders is,{" "}
-              <span className="diba-accent">en wat niet.</span>
+              Wat er anders is{" "}
+              <span className="diba-accent">en wat hetzelfde blijft</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              De meeste pagina&apos;s voor een doelgroep doen alsof er een
-              aparte behandellijn bestaat. Die bestaat niet. Wat er wél
-              verschilt staat links, en rechts staat even nadrukkelijk wat er
-              hetzelfde blijft.
+              Er bestaat geen aparte behandellijn voor deze groep. Wat er wél
+              verschilt staat links: de aandachtspunten die bij jouw huid of
+              situatie horen. Rechts staat even nadrukkelijk wat er precies
+              hetzelfde blijft als bij iedereen.
             </p>
           </div>
 

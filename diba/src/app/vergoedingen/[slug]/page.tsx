@@ -2,13 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Label from "@/components/ui/Label";
-import {
-  ALTIJD_VRAGEN,
-  INSURERS,
-  INSURERS_GEZIEN_OP,
-  insurerBySlug,
-} from "@/data/insurers";
-import { ROUTE } from "@/data/vergoeding-route";
+import { INSURERS, INSURERS_GEZIEN_OP, insurerBySlug } from "@/data/insurers";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -180,6 +174,74 @@ export default async function InsurerPage({ params }: PageProps) {
         </section>
       ) : null}
 
+      {/* ── Wat zij van de behandelaar eisen ──
+
+          De belangrijkste sectie van deze pagina, en niet alleen omdat hij per verzekeraar
+          verschilt. Het is het enige hier waar wij het antwoord op hebben en de bezoeker
+          niet: of onze therapeut in het Kwaliteitsregister staat kan hij nergens opzoeken. */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <Label>De behandelaar</Label>
+            <h2 className="diba-display-m mt-4 max-w-[18ch]">
+              Wat {insurer.name}
+              <br />
+              <span className="diba-accent">van ons vraagt</span>
+            </h2>
+          </div>
+          <div className="max-w-[60ch]">
+            <p className="text-[17px] leading-8 text-[var(--t-body)]">
+              {insurer.eisAanBehandelaar}
+            </p>
+            <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
+              Dit is het deel waar jij niets aan kunt controleren en wij wel.
+              Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis
+              voldoen.
+            </p>
+            <Link
+              href="/contact"
+              className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              Stel die vraag even
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── De weg naar je eigen bedrag ── */}
+      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div>
+            <Label>Zelf opzoeken</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              Zo kom je bij{" "}
+              <span className="diba-accent">jouw eigen bedrag</span>
+            </h2>
+            <p className="mt-6 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
+              Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij
+              kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet
+              alleen jij, achter je eigen inlog.
+            </p>
+          </div>
+
+          <ol className="mt-10 grid gap-4 md:grid-cols-3">
+            {insurer.zoVindJeHet.map((stap, i) => (
+              <li
+                key={stap}
+                className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
+              >
+                <span className="diba-label text-[var(--t-label)]">
+                  Stap {i + 1}
+                </span>
+                <p className="mt-4 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
+                  {stap}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* ── De vier vragen ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
@@ -187,16 +249,15 @@ export default async function InsurerPage({ params }: PageProps) {
             <div className="max-w-[62ch]">
               <Label opDonker>Wat je ze moet vragen</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Vier vragen{" "}
+                De vragen die er{" "}
                 <span className="diba-accent-on-dark">
-                  {" "}
-                  die het antwoord opleveren.
+                  bij {insurer.name} toe doen
                 </span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Bel je {insurer.name}, stel ze dan alle vier. Alleen naar het
-                bedrag vragen levert een getal op waar je later niets aan blijkt
-                te hebben.
+                Hieronder staat wat {insurer.name} er zelf over publiceert. Neem
+                het mee als je belt en vraag het na voor jouw polis: wat voor
+                het ene pakket geldt, hoeft voor het andere niet te gelden.
               </p>
             </div>
 
@@ -204,14 +265,14 @@ export default async function InsurerPage({ params }: PageProps) {
                 cijfer erboven suggereert een stappenplan dat er niet is. De vraag zelf
                 is de kop. */}
             <ul className="mt-12 grid gap-4 md:grid-cols-2">
-              {ALTIJD_VRAGEN.map((v) => (
+              {insurer.antwoorden.map((v) => (
                 <li
-                  key={v.kop}
+                  key={v.vraag}
                   className="rounded-[var(--r-lg)] bg-[var(--g-800)] p-7 sm:p-8"
                 >
-                  <p className="text-[17px] leading-7 font-medium">{v.kop}</p>
+                  <p className="text-[17px] leading-7 font-medium">{v.vraag}</p>
                   <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
-                    {v.zin}
+                    {v.antwoord}
                   </p>
                 </li>
               ))}
@@ -220,42 +281,25 @@ export default async function InsurerPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ── Eerst de hoofdvraag ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto">
-          <div>
-            <Label>Voordat je belt</Label>
-            <h2 className="diba-display-m mt-4">
-              Eén vraag komt <span className="diba-accent">hier nog vóór.</span>
-            </h2>
-            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Namelijk of er een medische reden is. Zonder die reden wordt er
-              door geen enkele verzekeraar iets vergoed, ook niet door{" "}
-              {insurer.name}, en dan is de rest van deze pagina niet nodig. Voor
-              het grootste deel van wat wij doen is dat het antwoord.
-            </p>
-          </div>
+      {/* ── Eerst de hoofdvraag ──
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-3">
-            {ROUTE.map((s) => (
-              <li
-                key={s.vraag}
-                className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
-              >
-                <p className="diba-label text-[var(--t-label)]">{s.stap}</p>
-                <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-                  {s.vraag}
-                </p>
-                <p className="mt-4 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
-                  {s.zin}
-                </p>
-              </li>
-            ))}
-          </ul>
-
+          Hier stond de hele route uitgeschreven: drie kaarten met tweehonderdvijftig
+          woorden over de vraag of er een medische reden is. Die vraag is niet
+          verzekeraar-specifiek — hij geldt voor alle zes — en het hele verhaal staat al op
+          /vergoedingen. Zes keer dezelfde tekst onder zes koppen is de doorslagpagina die
+          de huisregels verbieden, en de link naar het origineel stond er al onder. */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto max-w-[62ch]">
+          <Label>Voordat je belt</Label>
+          <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+            Eén vraag komt hier nog vóór: of er een medische reden is. Zonder
+            die reden vergoedt geen enkele verzekeraar iets, ook {insurer.name}{" "}
+            niet, en voor het grootste deel van wat wij doen is dat het
+            antwoord.
+          </p>
           <Link
             href="/vergoedingen"
-            className="diba-label mt-8 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
           >
             De hele route, met wat er gebeurt als het antwoord nee is
           </Link>
