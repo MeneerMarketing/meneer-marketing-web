@@ -1,165 +1,128 @@
+import { readdirSync, readFileSync } from "fs";
+import { join, relative, sep } from "path";
 import type { MetadataRoute } from "next";
 import { INSURERS } from "@/data/insurers";
-import { PILLARS } from "@/data/pillars";
+import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
-import { isPaginaAf, poortjeActief } from "@/lib/pagina-af";
+import { DOELGROEPEN } from "@/data/doelgroep";
 import { DIBA_SITE_URL } from "@/lib/site";
 
 /**
- * Alleen afgeronde pagina's worden bij Google aangemeld (DIBA-RULES §2 en §15).
+ * De sitemap leidt zichzelf af uit de routes.
  *
- * De sitemap meldde eerder alle ~66 routes aan, waarvan het grootste deel nog uit
- * placeholders bestond. Voor een nieuw domein is dat de slechtst mogelijke start.
+ * WAT ER MIS WAS.
  *
- * Twee mechanismen, allebei nodig:
- * - Datagedreven routes (huidproblemen, behandelingen, vergoedingen) worden
- *   automatisch gefilterd op redactievlaggen. Die controleren zichzelf.
- * - Statische routes staan hieronder met de hand, want hun inhoud zit verspreid over
- *   template, data en pagina. Standaard staat een route dus NIET in de sitemap.
- *   Zet hem er pas bij als de pagina echt af is; dat is een bewuste handeling.
+ * Hier stond een lijst die met de hand werd bijgehouden: `STATISCH_GEREED` met één route
+ * erin (de homepage) en `STATISCH_IN_AANBOUW` met zestig routes die "nog niet af" waren.
+ * Het idee erachter was goed — meld niets bij Google aan wat nog uit placeholders bestaat —
+ * maar de uitkomst was dat de sitemap 23 van de 103 pagina's noemde, en dat de rijkste
+ * pagina's van de site er allemaal buiten vielen. Elke huidprobleempagina, alle apparatuur,
+ * alle prijzen.
+ *
+ * Belangrijker: dat gat beschermde niemand meer. De noindex is er in augustus 2026 op
+ * verzoek afgehaald, dus Google vindt deze pagina's toch, via de navigatie en de interne
+ * links. Ze buiten de sitemap houden vertraagde alleen het ontdekken en gooide de
+ * lastmod-signalen weg. Een handrem die niet remt.
+ *
+ * HOE HET NU WERKT.
+ *
+ * De lijst komt uit de app-map zelf. Elke map met een page.tsx is een route, behalve:
+ * - routes die alleen doorverwijzen (die hebben een canonical naar hun bestemming);
+ * - /dev en de andere werkroutes;
+ * - dynamische segmenten, want die worden hieronder uit de data uitgeklapt.
+ *
+ * Daarmee kan de sitemap niet meer achterlopen op de site: een nieuwe pagina staat er
+ * vanzelf in. Vergeten is geen optie meer, en dat was het bij een handmatige lijst wel.
+ *
+ * Dit draait tijdens `next build` in Node, dus `fs` mag hier.
  */
-const STATISCH_GEREED: readonly string[] = [
-  "", // homepage
-];
+
+const APP = join(process.cwd(), "src", "app");
+
+/** Routes die bestaan maar niet in een sitemap horen. */
+const OVERSLAAN = /^\/(dev|preview-login|home-variant)(\/|$)/;
+
+/** Alle statische routes met een eigen pagina, gevonden in de app-map. */
+function statischeRoutes(): string[] {
+  const uit: string[] = [];
+
+  const loop = (map: string) => {
+    for (const item of readdirSync(map, { withFileTypes: true })) {
+      const pad = join(map, item.name);
+      if (item.isDirectory()) {
+        loop(pad);
+        continue;
+      }
+      if (item.name !== "page.tsx") continue;
+
+      const rel = relative(APP, map).split(sep).join("/");
+      const route = rel === "" ? "/" : `/${rel}`;
+
+      /* Een dynamisch segment levert geen eigen URL op; die komen uit de data. */
+      if (route.includes("[")) continue;
+      if (OVERSLAAN.test(route)) continue;
+
+      /* Een route die alleen doorverwijst is geen bestemming. Hij mag bestaan voor oude
+         links, maar in de sitemap zou hij Google naar een 308 sturen. */
+      const bron = readFileSync(pad, "utf8");
+      if (/permanentRedirect\(|\bredirect\(/.test(bron)) continue;
+
+      uit.push(route);
+    }
+  };
+
+  loop(APP);
+  return uit.sort();
+}
 
 /**
- * Routes die bestaan maar nog niet af zijn. Hier alleen genoteerd zodat zichtbaar is
- * wat er nog wacht. Zolang het poortje uit staat (zie lib/pagina-af.ts) dragen ze géén
- * noindex; deze lijst is dan puur de werkvoorraad.
+ * Hoe belangrijk een pagina is ten opzichte van de rest van deze site.
+ *
+ * Google gebruikt `priority` alleen binnen één domein, om te wegen waar hij zijn
+ * crawlbudget aan besteedt. De volgorde volgt waarvoor mensen komen: eerst de klacht
+ * waarmee ze zoeken, dan de behandeling, dan de rest.
  */
-const STATISCH_IN_AANBOUW: readonly string[] = [
-  "/huidproblemen",
-  // Huidproblemen met een eigen, uitgebouwde pagina. Ze staan hier los genoteerd
-  // omdat ze niet meer via PILLARS lopen: die filter kijkt naar de data, en deze
-  // pagina's hebben hun eigen inhoud. Ze blijven uit de sitemap tot Rojda de
-  // medische inhoud heeft nagelopen en de prijzen erin staan.
-  "/huidproblemen/acne",
-  "/huidproblemen/acne-littekens",
-  "/huidproblemen/onzuivere-huid",
-  "/huidproblemen/doffe-huid",
-  "/huidproblemen/steelwratjes",
-  "/huidproblemen/keratosis-pilaris",
-  "/huidproblemen/pigmentvlekken",
-  "/huidproblemen/rosacea",
-  "/huidproblemen/rimpels",
-  "/huidproblemen/huidverslapping",
-  "/huidproblemen/ingegroeide-haren",
-  "/huidproblemen/wallen",
-  "/huidproblemen/ouderdomsvlekken",
-  "/huidproblemen/gerstekorrels",
-  "/huidproblemen/couperose",
-  "/huidproblemen/littekens",
-  "/huidproblemen/huidveroudering",
-  "/huidproblemen/porien",
-  "/huidproblemen/donkere-kringen",
-  "/huidproblemen/moedervlekken",
-  "/huidproblemen/melasma",
-  "/huidproblemen/droge-huid",
-  "/huidproblemen/gevoelige-huid",
-  "/huidproblemen/eczeem",
-  "/huidproblemen/psoriasis",
-  "/huidproblemen/huiduitslag",
-  "/huidproblemen/cellulitis",
-  "/huidproblemen/huidverkleuring",
-  "/huidproblemen/symptoomzoeker",
-  "/behandelingen",
-  // De apparatuurreeks en het huidprofiel stonden hier niet, ook niet als werkvoorraad.
-  // Ze bestonden dus wel op de site maar in geen enkele lijst, en daardoor kon niemand
-  // zien dat er nog een besluit over openstond. Aanmelden bij Google gebeurt pas als de
-  // foto's van de apparaten er zijn en Rojda de dieptes heeft nagelopen. [BESLUIT-OKAN]
-  "/apparatuur",
-  "/huidprofiel",
-  "/team",
-  "/ons-verbond",
-  "/is-het-nodig",
-  "/intake",
-  "/over-ons",
-  "/ons-verhaal",
-  "/contact",
-  "/prijzen",
-  "/vergoedingen",
-  "/reviews",
-  "/resultaten",
-  "/nazorg",
-  "/laserontharing",
-  "/laserontharing/configurator",
-  "/dit-behandelen-wij-niet",
-  "/doelgroep",
-  "/werken-bij",
-  "/verwijzers",
-  "/kennisbank",
-  "/privacybeleid",
-  "/klachten",
-  "/cookiebeleid",
-  "/algemene-voorwaarden",
-  "/pcos",
-  "/snurken",
-  "/gentlemax-pro",
-  "/doelgroep/jongeren",
-  "/doelgroep/mannen",
-  "/doelgroep/huid-van-kleur",
-  "/doelgroep/bruiden",
-];
+function gewicht(route: string): number {
+  if (route === "/") return 1;
+  if (route.startsWith("/huidproblemen/")) return 0.9;
+  if (route === "/huidproblemen" || route === "/behandelingen") return 0.85;
+  if (route.startsWith("/behandelingen/")) return 0.8;
+  if (route === "/prijzen" || route === "/contact" || route === "/laserontharing") return 0.8;
+  if (route.startsWith("/apparatuur")) return 0.6;
+  if (route.startsWith("/vergoedingen")) return 0.6;
+  if (route.startsWith("/doelgroep")) return 0.6;
+  /* De juridische pagina's horen erin te staan maar hoeven niet vaak nagelopen. */
+  if (/^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten)$/.test(route)) return 0.3;
+  return 0.7;
+}
 
-/** Voor gebruik in tests en in de dev-overzichten. */
-export const SITEMAP_STATUS = {
-  gereed: STATISCH_GEREED,
-  inAanbouw: STATISCH_IN_AANBOUW,
-} as const;
+/** Hoe vaak de inhoud verandert. Een prijslijst vaker dan de algemene voorwaarden. */
+function frequentie(route: string): "weekly" | "monthly" | "yearly" {
+  if (route === "/" || route === "/prijzen" || route === "/reviews") return "weekly";
+  if (/^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten|werken-bij)$/.test(route))
+    return "yearly";
+  return "monthly";
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const nu = new Date();
 
-  // Dezelfde schakelaar als bij de metadata (zie lib/pagina-af.ts). Met het poortje uit
-  // meldt de sitemap alles aan; staat hij aan, dan blijven onafgeronde routes eruit.
-  const gereed = (content: unknown) => !poortjeActief() || isPaginaAf(content);
+  const routes = [
+    ...statischeRoutes(),
+    ...BEHANDELINGEN.map((b) => `/behandelingen/${b.slug}`),
+    ...APPARATUUR.map((a) => `/apparatuur/${a.slug}`),
+    ...INSURERS.map((i) => `/vergoedingen/${i.slug}`),
+    ...DOELGROEPEN.map((d) => `/doelgroep/${d.slug}`),
+  ];
 
-  const statisch: MetadataRoute.Sitemap = STATISCH_GEREED.map((path) => ({
-    url: `${DIBA_SITE_URL}${path}`,
-    lastModified: now,
-    changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : 0.7,
+  /* Een slug kan zowel een eigen page.tsx als een record in de data hebben. Dan staat hij
+     er twee keer in, en een dubbele URL in een sitemap is een fout. */
+  const uniek = [...new Set(routes)].sort();
+
+  return uniek.map((route) => ({
+    url: `${DIBA_SITE_URL}${route === "/" ? "" : route}`,
+    lastModified: nu,
+    changeFrequency: frequentie(route),
+    priority: gewicht(route),
   }));
-
-  /* De huidproblemen zijn geen datagedreven route meer maar twintig met de hand gebouwde
-     pagina's. Ze werden hier gefilterd op een skelet vol "[COPY-NODIG]" dat op geen
-     enkele pagina meer terechtkwam, waardoor er nooit één van in de sitemap belandde
-     terwijl het de rijkste pagina's van de site zijn. Zie de toelichting in pillars.ts.
-
-     Nu volgen ze dezelfde weg als elke andere statische route: ze staan hieronder pas in
-     de sitemap als iemand ze bewust in STATISCH_GEREED zet. */
-  const pillars: MetadataRoute.Sitemap = PILLARS.filter((p) =>
-    STATISCH_GEREED.includes(`/huidproblemen/${p.slug}`),
-  ).map((p) => ({
-    url: `${DIBA_SITE_URL}/huidproblemen/${p.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
-
-  const behandelingen: MetadataRoute.Sitemap = BEHANDELINGEN.filter(gereed).map(
-    (b) => ({
-      url: `${DIBA_SITE_URL}/behandelingen/${b.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    }),
-  );
-
-  // Vergoedingen staan bewust op de handrem. De automatische check keek ze door,
-  // want een record `{slug, name}` bevat geen redactievlaggen — maar de pagina's
-  // renderden 37 woorden met lege kopjes ("Wat vergoed wordt" zonder inhoud).
-  // Zet dit op true zodra insurers.ts per verzekeraar echte tekst bevat.
-  const VERGOEDINGEN_GEREED = false;
-
-  const vergoedingen: MetadataRoute.Sitemap = VERGOEDINGEN_GEREED
-    ? INSURERS.filter(gereed).map((i) => ({
-        url: `${DIBA_SITE_URL}/vergoedingen/${i.slug}`,
-        lastModified: now,
-        changeFrequency: "monthly" as const,
-        priority: 0.6,
-      }))
-    : [];
-
-  return [...statisch, ...pillars, ...behandelingen, ...vergoedingen];
 }

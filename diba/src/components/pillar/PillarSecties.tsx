@@ -3,6 +3,7 @@ import Button from "@/components/ui/Button";
 import { ArrowUpRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
 import { publicCopy } from "@/lib/copy-flags";
+import { faqSchema, SchemaMarkup } from "@/lib/schema";
 import {
   RASTER_GELIJK,
   RASTER_SECTIE,
@@ -334,6 +335,25 @@ export function NulmetingAssen({
 
 /* ── Veelgestelde vragen ───────────────────────────────────────────────── */
 
+/**
+ * De vragenlijst, met het bijbehorende FAQPage-schema erin.
+ *
+ * WAAROM DAT SCHEMA HIER STAAT EN NIET OP DE PAGINA.
+ *
+ * Eenendertig pagina's tonen deze lijst en precies één ervan meldde hem ook aan bij Google.
+ * Dat is de soort fout die een handmatige lijst altijd maakt: je bouwt de pagina, de vragen
+ * staan er, het ziet er af uit, en het schema vergeet je omdat het onzichtbaar is.
+ *
+ * Nu hoort het bij de component. Wie de vragen toont, meldt ze ook aan, en er is geen stap
+ * meer om over te slaan.
+ *
+ * Wat het oplevert: Google kan de vragen uitklapbaar onder het zoekresultaat tonen. Dat is
+ * meer ruimte op de pagina en, belangrijker, iemand met een vraag ziet het antwoord al
+ * voordat hij klikt. Dat scheelt een teleurstelde klik.
+ *
+ * De antwoorden gaan door publicCopy heen, net als op het scherm: een redactievlag hoort
+ * niet in het schema terecht te komen dat wij zelf bij Google aanmelden.
+ */
 export function PillarFaq({
   items,
   onderwerp,
@@ -347,6 +367,17 @@ export function PillarFaq({
       id="vragen"
       className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
+      {items.length > 0 ? (
+        <SchemaMarkup
+          data={faqSchema(
+            items.map((i) => ({
+              question: i.vraag,
+              answer: publicCopy(i.antwoord),
+            })),
+          )}
+        />
+      ) : null}
+
       <div className="mx-auto grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
         <div>
           <Label>Goed om te weten</Label>
