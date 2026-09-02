@@ -9796,9 +9796,9 @@ Je hoeft aan het eind niets af te spreken. Soms is het advies zelfs om niets te 
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-*DUUR*
+*GERESERVEERD*
 
-60 minuten
+Max. 60 minuten
 
 *KOSTEN*
 
@@ -9818,9 +9818,9 @@ HETZELFDE SCHERM, TEGELIJK
 
 Allebei beginnen ze met dezelfde meting.
 
-60 minuten meten, uitleg en een plan. Er gebeurt niets aan je huid, en je zit nergens aan vast.
+We reserveren er 60 minuten voor: meten, uitleg en een plan. Er gebeurt niets aan je huid, en je zit nergens aan vast.
 
-60 MINUTEN
+MAX. 60 MINUTEN
 
 Meten en meteen beginnen
 
@@ -9828,7 +9828,9 @@ Boek je eerste afspraak
 
 Als we behandelen, betaal je alleen de prijs van de behandeling. De intake wordt dan niet apart in rekening gebracht. Als er geen behandeling wordt uitgevoerd, betaal je 50 euro voor de intake.
 
-120 MINUTEN
+Of dat kan hangt af van wat de meting laat zien, van eventuele contra-indicaties, van de tijd die er die dag is en van wat jij wil. Blijkt behandelen op dat moment niet verstandig, dan doen we het niet.
+
+MAX. 120 MINUTEN
 
 Neem je huidprofiel mee
 
@@ -11193,4 +11195,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5164 tekstblokken · ongeveer 76.076 woorden._
+_107 pagina's · 5165 tekstblokken · ongeveer 76.122 woorden._

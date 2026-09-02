@@ -65,7 +65,9 @@ export const metadata: Metadata = zoekmachineVelden({
 function intakeFeiten() {
   const nul = behandelingVoorSlug("huidanalyse");
   return [
-    { label: "Duur", waarde: `${INTAKE_MINUTEN} minuten` },
+    /* "Gereserveerd" en niet "duur": de gids wil de tijd als maximum. Wie na veertig
+       minuten klaar is en een uur verwachtte, denkt dat hij is afgeraffeld. */
+    { label: "Gereserveerd", waarde: `Max. ${INTAKE_MINUTEN} minuten` },
     {
       label: "Kosten",
       waarde: nul ? prijsTekst(nul.prijs) : "Op aanvraag",
@@ -203,11 +205,12 @@ export default function IntakePage() {
                 Behandeling Nul
               </p>
               <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-                {INTAKE_MINUTEN} minuten meten, uitleg en een plan. Er gebeurt
-                niets aan je huid, en je zit nergens aan vast.
+                We reserveren er {INTAKE_MINUTEN} minuten voor: meten, uitleg en
+                een plan. Er gebeurt niets aan je huid, en je zit nergens aan
+                vast.
               </p>
               <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
-                {INTAKE_MINUTEN} minuten
+                Max. {INTAKE_MINUTEN} minuten
               </p>
             </div>
 
@@ -222,8 +225,11 @@ export default function IntakePage() {
               <p className="mt-4 text-[15px] leading-7 text-[var(--warn-text)]">
                 {publicCopy(COMBINATIE_AFSPRAAK.voorwaarde)}
               </p>
+              <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                {publicCopy(COMBINATIE_AFSPRAAK.voorbehoud)}
+              </p>
               <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
-                {COMBINATIE_AFSPRAAK.minuten} minuten
+                Max. {COMBINATIE_AFSPRAAK.minuten} minuten
               </p>
             </div>
           </div>

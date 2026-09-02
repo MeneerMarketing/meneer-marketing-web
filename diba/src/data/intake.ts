@@ -243,4 +243,19 @@ export const COMBINATIE_AFSPRAAK = {
   zin: "Boek je eerste afspraak",
   voorwaarde:
     "Als we behandelen, betaal je alleen de prijs van de behandeling. De intake wordt dan niet apart in rekening gebracht. Als er geen behandeling wordt uitgevoerd, betaal je 50 euro voor de intake.",
+
+  /**
+   * Waarom het niet altijd doorgaat.
+   *
+   * De gids: "Zeg niet dat een behandeling altijd direct kan doorgaan. Dat hangt af van de
+   * beoordeling, contra-indicaties, beschikbare tijd en keuze van de klant."
+   *
+   * De kop van deze kaart is een toezegging ("Meten en meteen beginnen", met "Meest
+   * gekozen" erboven) en de zin eronder ging over geld. De voorwaarde zat wel in dat "als"
+   * en werd nergens genoemd. Nu staat hij er, met de vier redenen uit de gids.
+   *
+   * [MEDISCHE-CHECK-ROJDA] of deze vier de lading dekken.
+   */
+  voorbehoud:
+    "Of dat kan hangt af van wat de meting laat zien, van eventuele contra-indicaties, van de tijd die er die dag is en van wat jij wil. Blijkt behandelen op dat moment niet verstandig, dan doen we het niet.",
 } as const;
