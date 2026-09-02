@@ -40,7 +40,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/ingegroeide-haren",
-  titel: "Ingegroeide haren en scheerbultjes behandelen in Rotterdam",
+  titel: "Ingegroeide haren behandelen in Rotterdam",
   omschrijving:
     "Zit er een haar in het bultje, of niet? Dat bepaalt of ontharen bij jou iets oplevert. Met fel licht en een spiegel kom je zelf een heel eind.",
 });

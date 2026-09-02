@@ -121,6 +121,18 @@ export const WEIGERINGEN: readonly Weigering[] = [
     link: { label: "Wat we bij acne wel doen", href: "/huidproblemen/acne" },
   },
   {
+    id: "pcos",
+    soort: "arts",
+    wat: "PCOS behandelen",
+    waarom:
+      "PCOS is een hormonale aandoening. Wij stellen die diagnose niet, behandelen die niet en nemen de oorzaak niet weg. Wat er op je huid van te zien is kunnen we wel aanpakken, en dat is iets anders. [MEDISCHE-CHECK-ROJDA]",
+    waarheen:
+      "Je huisarts of gynaecoloog. Die stelt vast of er sprake van is en wat eraan te doen valt.",
+    watWel:
+      "De zichtbare gevolgen op je huid: overbeharing, acne en pigment. Wel met een eerlijke verwachting erbij, want zolang de hormonale oorzaak er is komen de klachten terug. Bij ontharing betekent dat onderhoud in plaats van een eindpunt. [MEDISCHE-CHECK-ROJDA]",
+    link: { label: "PCOS en je huid, per klacht", href: "/pcos" },
+  },
+  {
     id: "eczeem-psoriasis",
     soort: "arts",
     wat: "Eczeem of psoriasis behandelen",

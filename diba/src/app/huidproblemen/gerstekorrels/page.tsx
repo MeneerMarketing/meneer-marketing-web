@@ -31,7 +31,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/gerstekorrels",
-  titel: "Gerstekorrels en milia: wit bolletje of ontsteking",
+  titel: "Gerstekorrels en milia verwijderen",
   omschrijving:
     "Een hard wit bolletje dat je niet kunt uitdrukken is een milium en in seconden weg. Een rood, pijnlijk bultje is iets anders en hoort bij de huisarts.",
 });

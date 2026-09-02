@@ -40,7 +40,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/onzuivere-huid",
-  titel: "Onzuivere huid en mee-eters behandelen in Rotterdam",
+  titel: "Onzuivere huid en mee-eters",
   omschrijving:
     "De meeste puntjes op je neus zijn geen mee-eters maar talgfilamenten, en die horen er te zijn. Met zijlicht zie je zelf welke van de twee je hebt.",
 });

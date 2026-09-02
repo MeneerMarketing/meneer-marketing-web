@@ -48,7 +48,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/pigmentvlekken",
-  titel: "Pigmentvlekken en melasma behandelen in Rotterdam",
+  titel: "Pigmentvlekken behandelen in Rotterdam",
   omschrijving:
     "Bij pigmentvlekken telt het seizoen zwaarder dan de techniek. Waarom we in de zomer terughoudend zijn en wanneer we wel behandelen.",
 });

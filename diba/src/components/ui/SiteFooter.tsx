@@ -30,6 +30,9 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
           <Link prefetch={false} href="/kennisbank" className={footerLink}>
             Kennisbank
           </Link>
+          <Link prefetch={false} href="/nazorg" className={footerLink}>
+            Nazorg
+          </Link>
           <Link prefetch={false} href="/contact" className={footerLink}>
             Contact
           </Link>
@@ -46,6 +49,9 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
           </Link>
           <Link prefetch={false} href="/klachten" className={footerLink}>
             Klachten
+          </Link>
+          <Link prefetch={false} href="/werken-bij" className={footerLink}>
+            Werken bij Diba
           </Link>
           {instagram ? (
             <a

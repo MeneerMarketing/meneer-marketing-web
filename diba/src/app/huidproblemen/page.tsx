@@ -31,7 +31,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen",
-  titel: "Huidproblemen: elk probleem zijn eigen eerste vraag",
+  titel: "Huidproblemen behandelen in Rotterdam",
   omschrijving:
     "Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.",
 });

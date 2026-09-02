@@ -32,7 +32,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/rimpels",
-  titel: "Rimpels en fijne lijntjes behandelen in Rotterdam",
+  titel: "Rimpels behandelen in Rotterdam",
   omschrijving:
     "Beweegt de lijn mee of blijft hij staan? Dat verschil bepaalt volledig wat er zin heeft, en je maakt het zelf met een spiegel.",
 });

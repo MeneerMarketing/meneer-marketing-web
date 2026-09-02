@@ -47,7 +47,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/melasma",
-  titel: "Melasma behandelen in Rotterdam: eerst de diepte",
+  titel: "Melasma behandelen in Rotterdam",
   omschrijving:
     "Bij melasma bepaalt de diepte van het pigment wat mogelijk is, en die zie je in gewoon licht niet. Waarom we altijd met een UV-scan beginnen.",
 });

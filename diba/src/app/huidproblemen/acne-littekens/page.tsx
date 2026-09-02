@@ -50,7 +50,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/acne-littekens",
-  titel: "Acnelittekens en acnevlekjes behandelen in Rotterdam",
+  titel: "Acnelittekens behandelen in Rotterdam",
   omschrijving:
     "Acnevlekjes zijn vaak geen litteken maar kleur. Met schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.",
 });

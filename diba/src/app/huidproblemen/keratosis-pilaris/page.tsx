@@ -39,7 +39,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/keratosis-pilaris",
-  titel: "Keratosis pilaris en kippenvelhuid in Rotterdam",
+  titel: "Keratosis pilaris behandelen",
   omschrijving:
     "Ruwe bultjes op je bovenarmen die niet weggaan. Niet te genezen, wel te verzachten, en scrubben maakt het juist erger.",
 });

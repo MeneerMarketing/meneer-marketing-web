@@ -32,7 +32,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/ouderdomsvlekken",
-  titel: "Ouderdomsvlekken en zonnevlekken behandelen in Rotterdam",
+  titel: "Ouderdomsvlekken behandelen in Rotterdam",
   omschrijving:
     "Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld",
 });

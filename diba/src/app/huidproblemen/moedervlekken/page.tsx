@@ -43,7 +43,7 @@ import { zoekmachineVelden } from "@/lib/seo";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/moedervlekken",
-  titel: "Moedervlekken: waar je op let en waar je heen gaat",
+  titel: "Moedervlekken: waar je op moet letten",
   omschrijving:
     "Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.",
 });
