@@ -261,7 +261,7 @@ export default function PigmentPage() {
       <WelNiet
         wel={PIGMENT_WEL_NIET.wel}
         niet={PIGMENT_WEL_NIET.niet}
-        intro="Bij pigment is de rechterkolom belangrijker dan bij welke andere aandoening ook. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen."
+        intro="Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen."
       />
 
       <WijZeggenNee

@@ -147,7 +147,7 @@ export default function HuidproblemenPage() {
               ],
               [
                 "Wat werkt en wat niet",
-                "Twee kolommen naast elkaar. De rechterkolom staat er even groot bij als de linker.",
+                "Links wat we doen, rechts wat we afraden, en bij allebei waarom.",
               ],
               [
                 "Waar wij nee zeggen",

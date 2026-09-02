@@ -166,16 +166,13 @@ export default function GentleMaxProPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>Wat dit apparaat niet kan</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                De eerste hiervan{" "}
-                <span className="diba-accent-on-dark">
-                  {" "}
-                  staat nergens in een folder.
-                </span>
+                Waarvoor deze laser{" "}
+                <span className="diba-accent-on-dark">niets doet</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
-                En hij is voor een deel van de mensen doorslaggevend, want dan
-                heeft de hele behandeling geen zin. Dat hoor je liever nu dan na
-                de eerste sessie.
+                De eerste hieronder is voor een deel van de mensen
+                doorslaggevend, want dan heeft de hele behandeling geen zin. Dat
+                hoor je liever nu dan na de eerste sessie.
               </p>
             </div>
 

@@ -129,7 +129,7 @@ export function WelNiet({
           kop="Wat helpt en wat we afraden"
           intro={
             intro ??
-            "De rechterkolom is de nuttigste van de twee. Bij elk kruisje staat waarom, want “niet doen” zonder reden onthoudt niemand."
+            "Bij elk punt staat waarom, want een “niet doen” zonder reden onthoudt niemand."
           }
           raster="gelijk"
         />

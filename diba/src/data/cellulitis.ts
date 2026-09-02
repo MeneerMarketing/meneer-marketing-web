@@ -98,7 +98,7 @@ export const CELLULITIS_WIJ_DOEN_NIET = [
   {
     titel: "Wij behandelen geen cellulitis",
     tekst:
-      "We hebben er geen behandeling voor en we gaan er ook geen bedenken. Wat je hier leest is precies wat we in de kliniek zouden zeggen.",
+      "We hebben er geen behandeling voor en we gaan er ook geen bedenken. Kom je ervoor langs, dan hoor je hetzelfde als wat hier staat.",
   },
   {
     titel: "Geen apparaat dat het wegneemt",

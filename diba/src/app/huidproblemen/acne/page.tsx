@@ -264,8 +264,8 @@ export default function AcnePage() {
               </h2>
             </div>
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De rechterkolom is de nuttigste van de twee. Bij elk kruisje staat
-              waarom, want “niet doen” zonder reden onthoudt niemand.
+              Links wat we bij acne doen, rechts wat we afraden. Bij elk punt
+              staat waarom, want een “niet doen” zonder reden onthoudt niemand.
             </p>
           </div>
 
