@@ -8,19 +8,13 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import DrieKnoppen from "@/components/porien/DrieKnoppen";
 import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_ACNE } from "@/data/figma-home-images";
-import {
-  PORIEN_FAQ,
-  PORIEN_SOORTEN,
-  PORIEN_WEL_NIET,
-  PORIEN_WIJ_DOEN_NIET,
-} from "@/data/porien";
+import { PORIEN_FAQ, PORIEN_SOORTEN, PORIEN_WEL_NIET } from "@/data/porien";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -56,7 +50,6 @@ const ANKERS = [
   { id: "knoppen", label: "Wat kun je veranderen" },
   { id: "welke", label: "Wat je ziet" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -214,13 +207,6 @@ export default function PorienPage() {
         wel={PORIEN_WEL_NIET.wel}
         niet={PORIEN_WEL_NIET.niet}
         intro="Vier van de vijf kruisjes rechts zijn dingen die mensen thuis doen in de overtuiging dat ze helpen. Ze kosten niets om te laten en dat is de goedkoopste winst op deze pagina."
-      />
-
-      <WijZeggenNee
-        kop="Wij beloven"
-        accent="geen kleinere poriën."
-        intro="Dat staat nergens op deze site en het zal er ook niet komen. Wat we wel beloven is dat ze minder opvallen, en dat kunnen we naast elkaar leggen onder hetzelfde licht."
-        punten={PORIEN_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

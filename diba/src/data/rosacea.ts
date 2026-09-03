@@ -270,7 +270,7 @@ export const ROSACEA_WIJ_DOEN_NIET = [
   {
     titel: "Geen acnebehandeling op rosacea",
     tekst:
-      "De twee lijken op elkaar en vragen het tegenovergestelde. Twijfelen we, dan behandelen we niet en verwijzen we door voor de diagnose.",
+      "De twee lijken op elkaar en vragen het tegenovergestelde. Twijfelen we, dan overleggen we eerst met je huisarts en verwijzen we door voor de diagnose.",
   },
   {
     titel: "Geen behandeling tijdens een opvlamming",

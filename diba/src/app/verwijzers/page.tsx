@@ -28,7 +28,7 @@ import {
  * anders weten, en vond dat nergens bij elkaar: wie voert het uit en met welke titel, waar
  * ligt de grens van wat hier gebeurt, wat krijgt mijn patiënt te horen, en hoe verwijs ik.
  *
- * Die informatie stond wel op de site, maar verspreid over /team, /dit-behandelen-wij-niet,
+ * Die informatie stond wel op de site, maar verspreid over /team, /ons-verbond,
  * /vergoedingen en /apparatuur. Voor een verwijzer die tien minuten heeft is dat hetzelfde
  * als niet aanwezig.
  *
@@ -169,10 +169,10 @@ export default function VerwijzersPage() {
                 Overleg vooraf: {DIBA_TELEFOON}
               </a>
               <Link
-                href="/dit-behandelen-wij-niet"
+                href="/ons-verbond"
                 className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Wat wij niet behandelen
+                Waar onze grens ligt
               </Link>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function VerwijzersPage() {
               ))}
             </ul>
             <Link
-              href="/dit-behandelen-wij-niet"
+              href="/ons-verbond"
               className="diba-label mt-6 inline-block text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
             >
               De volledige lijst
@@ -393,9 +393,9 @@ export default function VerwijzersPage() {
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                href: "/dit-behandelen-wij-niet",
-                kop: "Wat wij niet behandelen",
-                zin: "Per klacht de reden, en waar het dan wel thuishoort.",
+                href: "/behandelingen",
+                kop: "Wat wij behandelen",
+                zin: "Alle behandelingen, met wat ze doen en wat ze kosten.",
               },
               {
                 href: "/apparatuur",

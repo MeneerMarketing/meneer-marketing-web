@@ -62,7 +62,7 @@ const ANKERS = [
   { id: "welke", label: "Welk type" },
   { id: "onderhuid", label: "Onder je huid" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
+  { id: "nee", label: "Onze volgorde" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -322,7 +322,7 @@ export default function AcnePage() {
         </div>
       </section>
 
-      {/* ── Donkergroen 1 van 2: waar wij nee zeggen ───────────────────── */}
+      {/* ── Donkergroen 1 van 2: de volgorde waarin we bij acne werken ─── */}
       <section
         id="nee"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
@@ -330,7 +330,7 @@ export default function AcnePage() {
         <div className="mx-auto">
           <div className={RASTER_SECTIEKOP}>
             <div>
-              <Label opDonker>Waar wij nee zeggen</Label>
+              <Label opDonker>Onze volgorde</Label>
               <h2 className="diba-display-m mt-4 max-w-[12ch]">
                 Waarom we beginnen
                 <br />
@@ -339,9 +339,9 @@ export default function AcnePage() {
             </div>
             <p className="max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Littekens behandelen op een huid die nog ontstoken is maakt het
-              beeld slechter. Dat is de belangrijkste reden dat we soms nee
-              zeggen tegen een behandeling die je zelf al had uitgekozen. We
-              leggen dit liever vooraf duidelijk uit.
+              beeld slechter. Daarom brengen we eerst de ontsteking tot rust en
+              pakken we daarna de littekens aan. Die volgorde levert meer op dan
+              allebei tegelijk proberen.
             </p>
           </div>
 

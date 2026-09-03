@@ -152,8 +152,8 @@ export default function HuidproblemenPage() {
                 "Links wat we doen, rechts wat we afraden, en bij allebei waarom.",
               ],
               [
-                "Waar wij nee zeggen",
-                "Elke pagina heeft er een. Soms omdat het te weinig oplevert, soms omdat het niet aan ons is.",
+                "Wat wij eraan doen",
+                "Welke behandeling erbij past, hoeveel sessies dat vraagt en wat het kost.",
               ],
               [
                 "Hoe we het meten",

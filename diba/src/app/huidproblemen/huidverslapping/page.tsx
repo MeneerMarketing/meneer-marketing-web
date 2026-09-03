@@ -8,7 +8,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -19,7 +18,6 @@ import {
   VERSLAPPING_BEELDEN,
   VERSLAPPING_FAQ,
   VERSLAPPING_WEL_NIET,
-  VERSLAPPING_WIJ_DOEN_NIET,
   ZWAARTEKRACHT_STAPPEN,
 } from "@/data/huidverslapping";
 import { publicCopy } from "@/lib/copy-flags";
@@ -52,7 +50,6 @@ const ANKERS = [
   { id: "test", label: "De zwaartekrachttest" },
   { id: "welke", label: "Welk stadium" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -226,13 +223,6 @@ export default function Pagina() {
         wel={VERSLAPPING_WEL_NIET.wel}
         niet={VERSLAPPING_WEL_NIET.niet}
         intro="Hier is geduld geen bijzaak. Collageen bouwt over maanden op, en dat is niet te versnellen door vaker te komen."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Iemand die een facelift zoekt een reeks van drie verkopen is het makkelijkste geld op deze hele site. Precies daarom staat het hier."
-        punten={VERSLAPPING_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

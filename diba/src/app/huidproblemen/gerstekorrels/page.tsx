@@ -7,7 +7,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -18,7 +17,6 @@ import {
   BOLLETJE_BEELDEN,
   GERSTEKORRELS_FAQ,
   GERSTEKORRELS_WEL_NIET,
-  GERSTEKORRELS_WIJ_DOEN_NIET,
   AFSPRAAK_STAPPEN,
 } from "@/data/gerstekorrels";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -42,7 +40,6 @@ const ANKERS = [
   { id: "afspraak", label: "Wat er gebeurt" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -217,13 +214,6 @@ export default function Pagina() {
         wel={GERSTEKORRELS_WEL_NIET.wel}
         niet={GERSTEKORRELS_WEL_NIET.niet}
         intro="Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste bultje is, is het in een afspraak klaar."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Het gaat hier om de dunste huid van je lichaam, op enkele millimeters van je oog. De grenzen zijn daarom strakker dan elders op deze site."
-        punten={GERSTEKORRELS_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={GERSTEKORRELS_FAQ} onderwerp="gerstekorrels" />

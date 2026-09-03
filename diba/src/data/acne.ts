@@ -227,17 +227,17 @@ export const ACNE_WEL_NIET = {
 /** Waar wij nee zeggen. Dit is een merkregel, geen disclaimer (A7). */
 export const ACNE_WIJ_DOEN_NIET = [
   {
-    titel: "Geen littekenbehandeling op een ontstoken huid",
+    titel: "Eerst de ontsteking, dan het litteken",
     tekst:
       "Laseren of needlen in actieve acne verergert de ontsteking en kan het litteken juist vastzetten. We wachten tot de huid rustig is, ook als dat langer duurt dan je hoopte. [MEDISCHE-CHECK-ROJDA]",
   },
   {
-    titel: "Geen advies over medicatie",
+    titel: "Medicatie loopt via je arts, en wij stemmen af",
     tekst:
       "Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.",
   },
   {
-    titel: "Geen traject zonder einddatum",
+    titel: "Een traject met een einddatum",
     tekst:
       "Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw meten. Blijkt het niet te werken, dan stoppen we en zeggen we dat in plaats van door te gaan.",
   },

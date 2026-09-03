@@ -8,7 +8,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -19,7 +18,6 @@ import {
   LIJNSOORTEN,
   RIMPELS_FAQ,
   RIMPELS_WEL_NIET,
-  RIMPELS_WIJ_DOEN_NIET,
   BEWEEGTEST_STAPPEN,
 } from "@/data/rimpels";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -43,7 +41,6 @@ const ANKERS = [
   { id: "test", label: "De beweegtest" },
   { id: "welke", label: "Welke lijn heb je" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -223,13 +220,6 @@ export default function Pagina() {
         wel={RIMPELS_WEL_NIET.wel}
         niet={RIMPELS_WEL_NIET.niet}
         intro="Bij lijnen zit de winst in de juiste keuze en in geduld. Collageen bouwt in maanden op, en dat is niet te versnellen door vaker te komen."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Dit zijn de gevallen waarin wij een behandeling afhouden die je zelf wilde boeken. In het ene geval omdat het niet ons vak is, in het andere omdat het niet nodig is."
-        punten={RIMPELS_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

@@ -326,12 +326,6 @@ export default function OverOnsPage() {
               >
                 Lees ons verhaal
               </Link>
-              <Link
-                href="/is-het-nodig"
-                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-              >
-                Of: is behandelen wel nodig?
-              </Link>
             </div>
           </div>
         </div>

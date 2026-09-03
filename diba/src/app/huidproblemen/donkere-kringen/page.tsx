@@ -9,17 +9,11 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
-import {
-  KRINGEN_FAQ,
-  KRINGEN_WEL_NIET,
-  KRINGEN_WIJ_DOEN_NIET,
-  UITKOMSTEN,
-} from "@/data/kringen";
+import { KRINGEN_FAQ, KRINGEN_WEL_NIET, UITKOMSTEN } from "@/data/kringen";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -58,7 +52,6 @@ const ANKERS = [
   { id: "test", label: "Doe de spiegeltest" },
   { id: "types", label: "De drie types" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -223,13 +216,6 @@ export default function DonkereKringenPage() {
         wel={KRINGEN_WEL_NIET.wel}
         niet={KRINGEN_WEL_NIET.niet}
         intro="Het eerste kruisje rechts kost de meeste mensen het meeste geld: een behandeling boeken voordat duidelijk is welk type ze hebben."
-      />
-
-      <WijZeggenNee
-        kop="Soms is het antwoord"
-        accent="dat wij je niet helpen."
-        intro="Als de test uitwijst dat het schaduw is, sturen we je weg zonder behandeling. Dat is geen bescheidenheid maar rekenwerk: een huidbehandeling maakt een holte niet ondieper, dus zou je betalen voor niets."
-        punten={KRINGEN_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

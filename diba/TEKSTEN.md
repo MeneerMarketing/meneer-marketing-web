@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 3 september 2026 · 107 pagina's
+Diba Clinics · gegenereerd op 3 september 2026 · 105 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -726,13 +726,13 @@ Links wat we bij acne doen, rechts wat we afraden. Bij elk punt staat waarom, wa
 
 **Waarom we beginnen bij de ontsteking**
 
-Littekens behandelen op een huid die nog ontstoken is maakt het beeld slechter. Dat is de belangrijkste reden dat we soms nee zeggen tegen een behandeling die je zelf al had uitgekozen. We leggen dit liever vooraf duidelijk uit.
+Littekens behandelen op een huid die nog ontstoken is maakt het beeld slechter. Daarom brengen we eerst de ontsteking tot rust en pakken we daarna de littekens aan. Die volgorde levert meer op dan allebei tegelijk proberen.
 
-- Geen littekenbehandeling op een ontstoken huid Laseren of needlen in actieve acne verergert de ontsteking en kan het litteken juist vastzetten. We wachten tot de huid rustig is, ook als dat langer duurt dan je hoopte.
+- Eerst de ontsteking, dan het litteken Laseren of needlen in actieve acne verergert de ontsteking en kan het litteken juist vastzetten. We wachten tot de huid rustig is, ook als dat langer duurt dan je hoopte.
 
-- Geen advies over medicatie Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.
+- Medicatie loopt via je arts, en wij stemmen af Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.
 
-- Geen traject zonder einddatum Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw meten. Blijkt het niet te werken, dan stoppen we en zeggen we dat in plaats van door te gaan.
+- Een traject met een einddatum Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw meten. Blijkt het niet te werken, dan stoppen we en zeggen we dat in plaats van door te gaan.
 
 **Deze kenmerken volgen we bij acne**
 
@@ -880,16 +880,6 @@ Wat hier het meeste oplevert is vaak niet een behandeling maar de juiste volgord
 
 - Beginnen op een gebruinde huid
 
-**Wanneer we een behandeling afraden**
-
-Dit zijn de twee momenten waarop we een traject afhouden dat je zelf wilde boeken. Liever dat, dan een reeks die niets doet of het erger maakt.
-
-- Geen littekenbehandeling op een actieve huid Komen er nog nieuwe ontstoken plekjes bij, dan behandelen we die eerst. Needlen of laseren in actieve acne verergert de ontsteking en kan het litteken vastzetten. Dat kost je maanden in plaats van dat het ze scheelt.
-
-- Geen reeks voor iets dat vanzelf weggaat Is het rood en glad, dan is de kans groot dat het over een paar maanden weg is. Dan zeggen we dat, ook als je hier zat om iets te boeken. Blijft het staan, dan kun je altijd terugkomen.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Putjes zie je alleen in zijlicht.**
 
 Dat is de reden dat een foto van je telefoon hier niet volstaat en de spiegel in je badkamer ook niet: recht licht vult elk kuiltje op. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek.
@@ -1023,18 +1013,6 @@ De laatste regel links is de enige op deze hele site die niet over je huid gaat,
 - Jezelf vergelijken met foto's uit advertenties. Die zijn gemaakt met licht dat elk reliëf wegneemt.
 
 - Denken dat het aan jou ligt. Dat is de enige regel op deze pagina die niet over je huid gaat.
-
-**Hier valt niets te verkopen.**
-
-Sommige behandelingen laten de huid tijdelijk strakker lijken doordat vocht of zwelling verandert. Dat is niet hetzelfde als een blijvende verandering van de kuiltjes.
-
-- Wij behandelen geen cellulitis We hebben er geen behandeling voor en we gaan er ook geen bedenken. Kom je ervoor langs, dan hoor je hetzelfde als wat hier staat.
-
-- Geen apparaat dat het wegneemt Er bestaan apparaten die tijdelijk zwelling verplaatsen en de huid strakker laten lijken. Dat is niet hetzelfde als minder kuiltjes, en wij verkopen dat verschil niet weg.
-
-- Geen voor-en-na met ander licht Bij dit onderwerp is de belichting het hele resultaat. Wie een foto laat zien met vlak licht ernaast, laat je een lamp zien en geen behandeling.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Veelgestelde vragen over cellulitis**
 
@@ -1171,16 +1149,6 @@ Bij couperose is de lijst korter dan bij de meeste huidproblemen, en dat is geen
 - Een crème die belooft vaatjes te laten verdwijnen. Een opgerekt vaatje ligt onder de opperhuid, buiten bereik van wat je erop smeert
 
 - Beginnen op een gebruinde huid
-
-**Wanneer we liever nog even wachten**
-
-Licht op de verkeerde huid of op het verkeerde moment maakt roodheid erger. Dat is wat je hier niet komt halen.
-
-- We wachten tot je huid rustig is Voelt je huid warm en branderig en is hij op dit moment aan het opvlammen, dan stellen we de behandeling uit. Licht op een geprikkelde huid maakt de roodheid vaker erger dan beter, en dan ben je verder van huis dan toen je binnenkwam.
-
-- Een aantal sessies noemen we pas na de meting Hoeveel er nodig is hangt af van hoeveel vaatjes er zichtbaar zijn en hoe diep ze liggen. Dat zien we bij de eerste afspraak, en daarna hoor je een reëel aantal in plaats van een schatting aan de telefoon.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Vaatjes zijn te tellen.**
 
@@ -1324,16 +1292,6 @@ Bij dofheid is het effect vaak snel zichtbaar en ook weer tijdelijk. Dat is geen
 
 - Steeds sterker peelen omdat het vorige effect wegtrok
 
-**Wanneer we een behandeling afraden**
-
-Het effect van een behandeling op dofheid zakt na verloop van tijd. Steeds dieper gaan omdat het vorige effect wegtrok, is de snelste route naar een geïrriteerde huid die juist doffer oogt.
-
-- Geen reeks tegen een slechte maand Is de tint duidelijk erger na weken van slecht slapen en beter na een vakantie, dan is er geen huidprobleem maar een periode. Wij benoemen dat liever dan dat we er een traject tegenover zetten dat tegen je gewoontes in moet werken.
-
-- Geen sterkere peeling omdat het effect wegtrok Het effect van een behandeling op dofheid zakt na verloop van tijd. Dat is normaal en geen reden om steeds dieper te gaan. Wie die trap opgaat houdt een geïrriteerde huid over die juist doffer oogt.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Glans is te meten.**
 
 Dat klinkt vreemd bij een klacht die geen vakterm heeft, en het is waarom het hier nuttig is: dof is een indruk, en indrukken schuiven mee met je humeur en het licht in de kamer. De EVE-M legt vast hoe je huid het licht terugkaatst, onder vast licht en vanuit een vaste hoek.
@@ -1459,18 +1417,6 @@ Het eerste kruisje rechts kost de meeste mensen het meeste geld: een behandeling
 - Concealer als maatstaf nemen. Die dekt kleur af en verandert niets aan een schaduw.
 
 - Op internet gevonden hoeveelheden vitamine K of cafeïne aanhouden. Daar is voor deze plek geen betrouwbaar bewijs voor.
-
-**Soms is het antwoord dat wij je niet helpen.**
-
-Als de test uitwijst dat het schaduw is, sturen we je weg zonder behandeling. Dat is geen bescheidenheid maar rekenwerk: een huidbehandeling maakt een holte niet ondieper, dus zou je betalen voor niets.
-
-- Geen behandeling bij schaduw Als de test uitwijst dat het schaduw is, sturen we je weg zonder behandeling. Een huidkliniek verandert de vorm van je oogkas niet en doet er dus beter aan dat te zeggen.
-
-- Geen agressieve technieken onder het oog De huid daar is de dunste van je lichaam. We gaan er trager te werk dan elders, ook als dat betekent dat je meer sessies nodig hebt.
-
-- Geen belofte van uitgerust Wij behandelen kleur, geen vermoeidheid. Als je er moe uitziet omdat je moe bent, is dat geen huidprobleem en zeggen we dat gewoon.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Onder het oog telt het licht dubbel.**
 
@@ -1618,18 +1564,6 @@ Het eerste kruisje rechts is de reflex die de meeste schade aanricht: meer erbij
 
 - Een behandeling boeken terwijl je barrière kapot is. Dan reageert je huid feller en levert dezelfde behandeling minder op.
 
-**Weglaten is hier vaker de behandeling.**
-
-Bij een droge huid is de winst meestal te halen door dingen te schrappen, en daar valt voor ons weinig aan te verdienen. Dat is precies waarom je het van ons hoort.
-
-- Geen behandeling op een kapotte barrière Is je huid geïrriteerd, dan sturen we je eerst twee weken naar huis met minder in plaats van meer. Dat kost ons een afspraak en het scheelt jou een teleurstelling.
-
-- Geen productlijst van een meter Wij verkopen geen routine met acht stappen. Bij een droge huid is weglaten meestal de behandeling, en daar valt weinig aan te verdienen.
-
-- Geen behandeling als je in balans zit Zit je in het rustige kwadrant, dan is ons advies om niets te doen. Dat komt vaker voor dan je denkt.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Twee assen, dus twee metingen.**
 
 Je huid voelt de ene dag anders dan de andere, en daarom is een gevoel geen goed beginpunt. We meten daarom allebei de assen los van elkaar in plaats van te vragen of je huid droog aanvoelt.
@@ -1762,18 +1696,6 @@ Het eerste kruisje rechts kost de meeste tijd: wachten met de huisarts omdat je 
 
 - Een cosmetische behandeling boeken op actief eczeem. Daar wordt het erger van en wij doen het dus niet.
 
-**Wij behandelen geen eczeem.**
-
-Dit is geen aandoening waar een huidkliniek over gaat. We kunnen de barrière ondersteunen als het rustig is, en dat is ook alles. De rest hoort bij een arts.
-
-- Wij behandelen geen eczeem Eczeem is een aandoening met een medische behandeling, en die hoort bij je huisarts of een dermatoloog. Wij nemen die rol niet over en gaan er ook geen mening over geven.
-
-- Geen behandeling op actieve plekken Is het op dit moment actief, dan behandelen we niet in dat gebied. Een geïrriteerde huid reageert feller en het resultaat is slechter.
-
-- Geen uitspraken over jouw medicatie Wat je smeert of slikt is tussen jou en je arts. We zullen je nooit aanraden ergens mee te stoppen of te minderen.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Veelgestelde vragen over eczeem**
 
 Kan ik met eczeem bij jullie terecht? +
@@ -1885,16 +1807,6 @@ Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het he
 - Een crème adviseren als verwijdering Een crème opent een ingesloten gerstekorrel niet.
 
 - Onnodig meerdere afspraken plannen Een gerstekorrel verwijderen is meestal een eenmalige behandeling.
-
-**Wanneer we een behandeling afraden**
-
-Het gaat hier om de dunste huid van je lichaam, op enkele millimeters van je oog. De grenzen zijn daarom strakker dan elders op deze site.
-
-- Niets rond het oog dat rood of pijnlijk is Een ontstoken kliertje aan de ooglidrand hoort bij de huisarts, en gaat vaak vanzelf over. Wij prikken daar niet in; de kans op verergering is klein maar de plek is te belangrijk om die kans te nemen.
-
-- Geen behandeling van iets dat we niet herkennen Is het geen milium en geen mee-eter, dan gaan we niet raden. Dan kijkt eerst iemand anders ernaar, ook als je er speciaal voor gekomen bent.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Veelgestelde vragen over gerstekorrels**
 
@@ -2015,18 +1927,6 @@ Het eerste kruisje rechts is het hardnekkigste verhaal in de huidverzorging: dat
 - Je huid met scrubben opruimen als hij al geïrriteerd is.
 
 - Aannemen dat het aanleg is voordat je de routine hebt uitgekleed. Bij veel mensen is de aanleg pas zichtbaar als de rest weg is.
-
-**Minder producten verdient ons niets**
-
-Bij een gevoelige huid is een eenvoudigere routine vaak verstandiger dan meer producten toevoegen.
-
-- Geen behandeling op een geïrriteerde huid Kom je binnen met een huid die overal op reageert, dan behandelen we niet. Je gaat naar huis met minder in plaats van meer, en over twee weken kijken we opnieuw.
-
-- Geen routine van acht stappen Wij verkopen geen schema waarin nog vier producten bij komen. Bij een gevoelige huid is aftrekken bijna altijd de behandeling.
-
-- Geen allergietesten Vermoed je een echte allergie, dan hoort dat bij de huisarts of een dermatoloog. Wij kunnen dat niet vaststellen en gaan het dus ook niet proberen.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Waarom we eerst de oorzaak zoeken**
 
@@ -2197,18 +2097,6 @@ Het eerste kruisje rechts maakt het werk van de arts moeilijker: zalf op onbeken
 - Een cosmetische behandeling boeken zolang er onbegrepen uitslag is.
 
 - Krabben, ook al is het moeilijk. Krabben maakt het beeld onduidelijker en de huid kwetsbaarder.
-
-**Wij stellen hier niets vast.**
-
-Geen diagnose en ook geen geruststelling. Dat laatste klinkt onaardig en het is het tegenovergestelde: wat wij zeggen zou meewegen in of je belt, en die verantwoordelijkheid hoort bij een arts.
-
-- Wij stellen geen diagnose bij uitslag Huiduitslag is een symptoom met tientallen oorzaken, waarvan een deel spoedeisend is. Daar hoort een arts naar te kijken en niet een huidkliniek.
-
-- Wij geven geen geruststelling Ook niet als het er onschuldig uitziet. Wat wij zeggen zou meewegen in of je belt, en die verantwoordelijkheid nemen we niet.
-
-- Geen behandeling op onbegrepen uitslag Zolang niet duidelijk is wat het is, behandelen we het gebied niet. Ook niet als je voor iets anders komt.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Veelgestelde vragen over huiduitslag**
 
@@ -2504,20 +2392,6 @@ De eerste regel links is de goedkoopste behandeling op deze hele site, en de eni
 
 - Denken dat een dure crème hetzelfde doet als bescherming. Dat is de duurste manier om niets te doen.
 
-**Wij verkopen geen jaren terug.**
-
-Een huidkliniek kan kleur en structuur verbeteren. Volume optillen kan hij niet, en een leeftijd beloven al helemaal niet. Dat is geen bescheidenheid maar de grens van wat er te meten valt.
-
-- Geen jaren terug Wij zeggen niet hoeveel jaar jonger je eruit gaat zien, want dat is niet te meten en dus niet te beloven. We laten je zien wat er in kleur en structuur veranderde, met de meting ernaast.
-
-- Geen volume Wij behandelen huid. Injectables en volumeopbouw doen we niet, ook niet als je erom vraagt. Dat is geen bescheidenheid maar een grens: het hoort bij een arts.
-
-- Geen preventieve pakketten op je twintigste Een gezonde huid van vijfentwintig heeft geen serie behandelingen nodig. Wij verkopen die dus niet, ook niet als je erom vraagt: je hebt er op dat moment nog niets aan.
-
-- Geen behandeling in een huid die net veel zon had Direct na een zonvakantie behandelen geeft een grotere kans op nieuwe pigmentvlekken. Dan wachten we, ook als dat je afspraak verzet.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Veroudering vraagt om een beginpunt.**
 
 Dit is het onderwerp waarbij je oog je het hardst voor de gek houdt. De verandering gaat over jaren en je kijkt elke dag in dezelfde spiegel, dus je ziet het verschil niet, in geen van beide richtingen.
@@ -2660,16 +2534,6 @@ Hier is geduld geen bijzaak. Collageen bouwt over maanden op, en dat is niet te 
 
 - Behandelen op een gebruinde huid
 
-**Wanneer we een behandeling afraden**
-
-Iemand die een facelift zoekt een reeks van drie verkopen is het makkelijkste geld op deze hele site. Precies daarom staat het hier.
-
-- Geen apparaat tegen huid die is losgelaten Kun je een plooi vastpakken die blijft hangen, dan gaat het om weefsel dat verwijderd of verplaatst moet worden. Dat is chirurgie. Een reeks van drie verkopen aan iemand die een lift zoekt is het duurste nee dat wij kunnen uitstellen.
-
-- Geen traject zonder meting vooraf Verandering over maanden is met het blote oog niet te beoordelen, in beide richtingen. Zonder nulmeting kunnen wij niet aantonen dat het werkte en jij niet nagaan of het geld goed besteed was.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Waarom we vooraf vastleggen**
 
 Verslapping verandert traag, en jij kijkt elke dag. Daardoor merk je vooruitgang net zo min op als achteruitgang. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek, voordat de eerste sessie plaatsvindt.
@@ -2734,7 +2598,7 @@ In het huidconsult doen we de zwaartekrachttest samen en meten we wat er nu is. 
 
 Bultjes in je nek, bikinilijn of benen lijken op elkaar en zijn het niet. Zit er een haar in, dan is ontharen de logische route: waar geen haar groeit kan ook niets ingroeien. Zit er geen haar in, dan verandert ontharen er niets aan.
 
-En soms is het antwoord niet een behandeling maar anders scheren. Ook dat zeggen we, al kost het ons een klant.
+Soms lost een andere scheertechniek het al op, en dat hoor je dan van ons. Blijft het terugkomen, dan haalt laserontharing de haar bij de wortel weg en houdt het op. Ook dat zeggen we, al kost het ons een klant.
 
 > knop: DOE DE HAARCHECK
 
@@ -2811,16 +2675,6 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strak scheren,
 - Behandelen op een gebruinde huid
 
 - Beloven dat elk haartje weggaat. Lichte en grijze haren reageren nauwelijks op licht
-
-**Wanneer we een behandeling afraden**
-
-Licht mikt op het pigment in de haarwortel. Dat werkt niet op elke huid en niet op elk haar, en dat stellen we vast voordat je iets afspreekt.
-
-- Geen laser op wat nu ontstoken is Rode, warme bultjes met een puskopje laten we eerst tot rust komen. Licht op een ontstoken haarzakje verergert de ontsteking en vergroot de kans op een blijvende vlek. Komt het steeds terug, dan kijkt er eerst een huisarts naar.
-
-- Geen traject als je haar er niet geschikt voor is Licht mikt op het pigment in de haarwortel. Blond, rood of grijs haar bevat daar te weinig van, en dan werkt het niet, hoeveel sessies je ook neemt. Dat stellen we vast voordat je iets afspreekt en niet erna.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Veelgestelde vragen over ingegroeide haren**
 
@@ -2935,16 +2789,6 @@ Hier hoort onderhoud bij en geen kuur met een eindpunt. Dat is minder aantrekkel
 - Beloven dat de huid glad wordt. Soepeler en minder rood is realistisch
 
 - Het behandelen als acne. Er zit geen ontsteking en geen bacterie in
-
-**Wanneer we een behandeling afraden**
-
-Er valt een reeks van zes te verkopen aan iemand die op gladde armen hoopt. Dat is hoop verkopen en een teleurstelling leveren, en daar beginnen we niet aan.
-
-- Geen kuur met een belofte van gladde huid Keratosis pilaris is grotendeels erfelijk en niet te genezen. Wat wij kunnen is de huid soepeler en de roodheid minder maken, met onderhoud erbij. Wie hier een reeks van zes tegenover zet verkoopt hoop en levert een teleurstelling.
-
-- Geen behandeling als het gewoon droogte is Verdwijnt het grotendeels als je een paar weken goed insmeert, dan was het geen verhoorning. Dan is er niets te behandelen en heb je een tube nodig en geen afspraak.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Veelgestelde vragen over keratosis pilaris**
 
@@ -3098,18 +2942,6 @@ Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets 
 
 - Zelf schuren of prikken. Je maakt een nieuwe wond op de plek van de oude
 
-**Te vroeg is net zo verkeerd als te laat.**
-
-Bij een vers litteken behandelen we niet, en bij witte striae beloven we niets. Allebei die momenten voelen als een gemiste kans, en allebei zijn ze de reden dat je hier later niet teleurgesteld staat.
-
-- Geen behandeling op een vers litteken In de eerste maanden doen we niets. Behandelen in die fase verstoort de genezing en kan het litteken juist dikker maken. Je krijgt advies mee en een afspraak over drie maanden.
-
-- Geen belofte bij witte striae Witte striae en oude littekens verdwijnen niet. Structuur verbeteren kan, kleur terugbrengen niet. Dat zeggen we vóór je iets betaalt.
-
-- Geen keloïd bij ons Keloïd hoort bij de dermatoloog. Behandelen wij dat, dan is de kans op verergering reëel, en dat risico nemen we niet.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Bij littekens telt diepte.**
 
 Littekens veranderen langzaam. Daarom leggen we de beginsituatie vast en vergelijken we die na verloop van tijd met een nieuwe beoordeling.
@@ -3260,20 +3092,6 @@ Het eerste kruisje rechts is bij melasma de duurste fout die er is, en hij wordt
 
 - Zelf bleekmiddelen bestellen die je hier niet zonder recept krijgt. Die zijn er niet voor niets aan banden gelegd.
 
-**Hier brengt harder werken je verder van huis.**
-
-Bij elke andere aandoening op deze site geldt: meer vermogen, meer resultaat. Bij melasma niet. Een te stevige behandeling geeft hier vaak méér pigment, en dat is een bekend en pijnlijk patroon.
-
-- Geen belofte van weg Melasma verdwijnt niet, het wordt beheerd. Wij zeggen lichter en rustiger, en we zeggen erbij dat het terugkomt zodra de aanjagers weer aanstaan.
-
-- Geen behandeling in de zomer We beginnen liever in het najaar. Dat kost je een paar maanden wachten en het scheelt een behandeling die tegen de zon in werkt.
-
-- Geen zware laser op melasma Hoe verleidelijk ook, agressief werken geeft hier vaak meer pigment in plaats van minder. Dat is bij melasma een bekend en pijnlijk patroon.
-
-- Geen behandeling bij diep pigment Zit het onder de laag die zich vernieuwt, dan raden we het af. Je betaalt dan voor sessies waarvan we vooraf weten dat ze weinig gaan doen.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Meten gaat hier over diepte.**
 
 Bij gewone pigmentvlekken meten we hoe donker en hoe groot. Bij melasma is de eerste vraag hoe diep het zit, want dat bepaalt of de rest van de meting er nog toe doet.
@@ -3340,17 +3158,17 @@ We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je 
 
 **EEN MOEDERVLEK DIE STOORT KAN WEG**
 
-Zit hij in de weg bij het scheren, blijft hij haken achter je kraag of vind je hem gewoon lelijk: dat is een goede reden om hem weg te laten halen. We kijken er eerst samen naar, en dan hoor je wat er kan.
+Zit hij in de weg bij het scheren, blijft hij haken achter je kraag of vind je hem gewoon lelijk: dan kijken we ernaar. Onze huidtherapeut beoordeelt het plekje, en na verwijzing van je arts coaguleren we het waar dat kan.
 
-Eén ding gaat altijd voor: verandert er iets aan een plekje, dan laat je het eerst door een arts beoordelen. Blijkt het goedaardig, dan halen we het daarna hier weg.
+De verwijzing is geen formaliteit: alleen een arts kan weefsel laten onderzoeken, en dat kan achteraf niet meer. Met die verwijzing in de hand doen wij de rest.
 
 > knop: PLAN EEN HUIDCONSULT
 
 > knop: EERST DE ABCDE-CHECK
 
-Verandert er iets aan een plekje? Dan kijkt daar eerst een arts naar, en pas daarna halen wij iets weg.
+Wij beoordelen het plekje en coaguleren het na verwijzing van je arts.
 
-Dat kost je één consult bij de huisarts. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap in dit hele onderwerp die je later niet kunt inhalen.
+Coaguleren is wegnemen met warmte, in een korte handeling per plekje. De verwijzing halen kost je een consult bij je huisarts; daarna kun je bij ons terecht.
 
 **Zes dingen om naar te kijken.**
 
@@ -3404,11 +3222,11 @@ Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: iets
 
 Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie stappen die aan een behandeling voorafgaan, en de eerste is de enige op deze site die je later niet kunt inhalen.
 
-- Een plekje dat verandert gaat eerst langs een arts Verandert de vorm, de kleur, de grootte of het gevoel, dan laten we het eerst beoordelen door je huisarts of een dermatoloog. Niet omdat we je wegsturen, maar omdat weefsel dat weg is niet meer onderzocht kan worden. Blijkt het goedaardig, dan halen we het hier alsnog weg.
+- We beoordelen het plekje Onze huidtherapeut kijkt naar vorm, kleur, begrenzing en of er iets aan verandert. Je hoort meteen wat we zien en wat de vervolgstap is.
 
-- We kijken altijd eerst, ook als je zeker weet wat het is Elk plekje wordt bekeken voordat er iets mee gebeurt. Dat kost een paar minuten en het is de enige stap die je later niet kunt inhalen.
+- Coaguleren gaat na verwijzing van je arts Met een verwijzing in de hand nemen we het plekje weg met warmte, in een korte handeling. Die volgorde staat vast: alleen een arts kan weefsel laten onderzoeken, en dat kan achteraf niet meer.
 
-- Bij een behandeling in de buurt dekken we ze af Laseren we vlakbij, dan gaat er een dekje over een moedervlek die blijft zitten. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.
+- Ligt er een moedervlek in het behandelgebied, dan dekken we die af Laseren we vlakbij, dan gaat er een dekje overheen. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
@@ -3536,16 +3354,6 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reini
 
 - Beloven dat poriën kleiner worden. Ze kunnen leeg zijn en daardoor minder opvallen; hun formaat ligt vast
 
-**Wanneer we een behandeling afraden**
-
-Er is een reeks te verkopen tegen iets dat bij een normale huid hoort. Dat is precies wat wij niet doen, en dat is meteen de nuttigste zin op deze pagina.
-
-- Geen behandeling tegen talgfilamenten Ze horen bij een werkende porie en ze komen terug, hoe grondig je ook te werk gaat. Wij verkopen daar geen reeks voor. Wat we wel doen is uitleggen waarom je neus er over drie weken weer zo uitziet, zodat je stopt met een gevecht dat niet te winnen is.
-
-- Geen onzuiverheidstraject bij echte acne Komen er regelmatig ontstoken plekken bij, dan is dit de verkeerde pagina en het verkeerde traject. Dan gaat het over acne, met een eigen aanpak en een eigen volgorde.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Veelgestelde vragen over een onzuivere huid**
 
 Waarom komen mee-eters op mijn neus altijd terug? +
@@ -3663,16 +3471,6 @@ Bij pigment is zonbescherming geen advies achteraf maar onderdeel van de behande
 - Behandelen in de zomer zonder afspraken over zon. Dan is het weggegooid geld
 
 - Beginnen op een gebruinde huid
-
-**Wanneer we een behandeling afraden**
-
-Een plek wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen. Dat is een fout die niet te herstellen is.
-
-- Geen laser op een plek die verandert Groeit iets, verschiet het van kleur, of heeft het een rafelige rand? Dan gaat het eerst naar de huisarts. Wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen, en dat is een fout die niet te herstellen is.
-
-- Geen pigmentbehandeling zonder afspraken over zon Ga je binnen een paar weken naar de zon of op wintersport, dan starten we niet. Dat is geen formaliteit: pigment komt na blootstelling terug en dan heb je voor niets betaald.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Onder UV zie je wat er nog komt.**
 
@@ -3848,18 +3646,6 @@ Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van
 
 - Elke dag in de spiegel vergelijken. Pigment verandert in maanden, niet in dagen
 
-**Soms is het antwoord: kom in oktober terug**
-
-In maanden met veel zon stellen we bepaalde pigmentbehandelingen uit. Welke periode veilig en verstandig is, hangt af van huidtype, blootstelling en de gekozen behandeling.
-
-- Geen pigmentbehandeling in de zomer Tussen mei en augustus behandelen we pigment niet, hoe graag je ook wilt. Het resultaat is dan niet te houden. We meten wel, zodat we in september klaarstaan.
-
-- Geen belofte dat melasma weggaat Bij melasma is beheersing het doel. Wij noemen dat geen mislukking maar de eerlijke uitkomst, en je hoort het vóór je iets betaalt.
-
-- Geen behandeling zonder onderscheid Zonschade en melasma lijken op elkaar en vragen het tegenovergestelde. Weten we het niet zeker, dan behandelen we nog niet.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Deze kenmerken volgen we bij pigment**
 
 De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt.
@@ -4006,18 +3792,6 @@ Vier van de vijf kruisjes rechts zijn dingen die mensen thuis doen in de overtui
 
 - Een behandeling boeken op belofte van kleinere poriën. Vraag wat er dan precies verandert.
 
-**Wij beloven geen kleinere poriën.**
-
-Dat staat nergens op deze site en het zal er ook niet komen. Wat we wel beloven is dat ze minder opvallen, en dat kunnen we naast elkaar leggen onder hetzelfde licht.
-
-- Geen kleinere poriën Wij beloven het niet en we schrijven het nergens. Wat we wel beloven is dat ze minder opvallen, en dat kunnen we met een foto onder hetzelfde licht laten zien.
-
-- Geen behandeling zonder onderscheid Eerst vaststellen of het poriën zijn of littekenkuiltjes. Dat lijkt een detail en het is het verschil tussen wel en niet werken.
-
-- Geen abonnement op leegmaken Een porie vult zich weer, dus eindeloos blijven leeghalen is een abonnement en geen behandeling. We kijken liever naar hoe snel het teruggaat.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Waarom we onder vast licht meten**
 
 Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In strijklicht en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.
@@ -4148,18 +3922,6 @@ Het tweede vinkje links is de belangrijkste regel op deze pagina, en de enige wa
 
 - Aannemen dat het besmettelijk is of dat het aan hygiëne ligt. Geen van beide klopt.
 
-**Psoriasis begint in je afweersysteem**
-
-Wij kunnen een plek verzachten en niets aan de oorzaak doen. Dan verkoop je sessies aan iets dat blijft terugkomen, en dat doen we niet.
-
-- Wij behandelen geen psoriasis Dit is een aandoening van het afweersysteem. De behandeling daarvan hoort bij een dermatoloog, en die rol nemen wij niet over.
-
-- Geen laser of peeling op plekken Beschadiging van de huid kan op die plek juist een nieuwe plek uitlokken. Dat is een bekend patroon en het is voor ons een harde grens.
-
-- Geen uitspraken over jouw medicatie Wat je gebruikt is tussen jou en je arts. Wij zullen nooit adviseren ergens mee te stoppen of te minderen.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Veelgestelde vragen over psoriasis**
 
 Is psoriasis besmettelijk? +
@@ -4275,16 +4037,6 @@ Bij lijnen zit de winst in de juiste keuze en in geduld. Collageen bouwt in maan
 - Losgelaten huid behandelen alsof het verslapping is. Dat is chirurgie
 
 - Beginnen op een gebruinde huid
-
-**Wanneer we een behandeling afraden**
-
-Dit zijn de gevallen waarin wij een behandeling afhouden die je zelf wilde boeken. In het ene geval omdat het niet ons vak is, in het andere omdat het niet nodig is.
-
-- Geen injectables, ook niet als je erom vraagt Botox en fillers horen niet bij wat wij doen. Bij een zuivere mimieklijn is dat vaak wél het antwoord, en dan zeggen we dat in plaats van je iets anders aan te bieden dat minder past.
-
-- Geen reeks voor een droge huid Zijn het fijne streepjes die per dag verschillen, dan is het vocht en geen verlies van structuur. Dat is met verzorging op te lossen en niet met een apparaat.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Waarom we vooraf vastleggen**
 
@@ -4468,18 +4220,6 @@ Bij rosacea is het eerste punt links gratis en levert het vaak het meest op. Dat
 
 - Verwachten dat het weggaat. Rosacea is te beheersen, niet te genezen, en dat zeggen we liever nu
 
-**Wat we bij rosacea kunnen bereiken**
-
-Rosacea is chronisch. Wij noemen beheersing daarom geen mislukking maar de eerlijke uitkomst, en je hoort dat vóór je iets betaalt in plaats van erna.
-
-- Geen belofte dat het weggaat Rosacea is een chronische aandoening. Beheersing is het doel en dat noemen wij geen mislukking. Genezing beloven we daarom niet.
-
-- Geen acnebehandeling op rosacea De twee lijken op elkaar en vragen het tegenovergestelde. Twijfelen we, dan behandelen we niet en verwijzen we door voor de diagnose.
-
-- Geen behandeling tijdens een opvlamming Bij een actieve opvlamming wachten we. Behandelen in die fase geeft meer roodheid in plaats van minder, ook als je er speciaal voor kwam.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Bij rosacea telt roodheid.**
 
 Roodheid is het soort ding waar je oog aan gewent raakt. Daarom meten we het: niet om je te overtuigen, maar zodat we het verschil kunnen zien op een dag dat jij vindt dat er niets veranderd is.
@@ -4623,16 +4363,6 @@ Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het he
 - Zelf afbinden met een draadje of afknippen met een nagelschaar. Dat gaat vaak lang goed en één keer niet
 
 - Beloven dat er nooit meer nieuwe bij komen. De aanleg en de wrijving blijven
-
-**Wanneer we een behandeling afraden**
-
-Wat weg is kan niemand meer bekijken. Dat is de reden dat er hier eerst gekeken wordt en dat moedervlekken buiten deze deur blijven.
-
-- Niets weghalen dat niet beoordeeld is Ook niet als je zeker weet wat het is en er speciaal voor bent gekomen. Wat weg is kan niet meer bekeken worden, en dat is een fout die niet te herstellen valt. Het kost twee minuten om er eerst naar te kijken.
-
-- Niets weghalen dat verandert Een moedervlek die stoort halen we weg. Verandert er iets aan de vorm, de kleur of het gevoel, dan gaat hij eerst langs je huisarts: die kan weefsel laten onderzoeken en dat kan achteraf niet meer.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Veelgestelde vragen over steelwratjes**
 
@@ -4809,16 +4539,6 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 - Een crème adviseren tegen een vetkussen Een crème kan een uitgezakt vetkussen onder het oog niet verplaatsen.
 
 - Beloven dat het weggaat als het van dag tot dag niet verandert
-
-**Wanneer we een behandeling afraden**
-
-Dit zijn de gevallen waarin wij iemand wegsturen die met geld in de hand binnenkomt. Liever dat, dan een reeks die niets verandert.
-
-- Geen behandeling voor uitgezakt vet Zit de bolling er 's ochtends en 's avonds hetzelfde bij, dan gaat het om het vetkussen achter je oog. Daar is een ingreep voor, en die hoort bij een cosmetisch arts of oogarts. Wij zouden je een reeks verkopen die niets verandert.
-
-- Geen fillers in de traandal Wij werken niet met injectables in dit gebied. Dat is een keuze en geen tekort: het is een lastige plek waar te veel of te ondiep spuiten jarenlang zichtbaar blijft.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
 **Veelgestelde vragen over wallen**
 
@@ -9074,7 +8794,11 @@ Wijs je zones aan op een tekening en zie meteen wat je opbouw wordt, inclusief w
 
 Is er een medische reden voor je klacht, dan is er een route. Huidtherapie zit bij de meeste verzekeraars in het aanvullende pakket, en dan gaat het verder over jouw polis: welk pakket je hebt, welk maximum eraan hangt en of je huisarts een verwijzing moet schrijven.
 
-Gaat het om een cosmetische wens, dan betaal je die zelf. Dat is in heel Nederland zo: het stelsel maakt die knip, jouw polis en deze kliniek staan daarbuiten. Welke van de twee het is hangt aan de klacht en niet aan de behandeling. Dezelfde laser is in het ene geval medisch en in het andere cosmetisch, en daarom begint het bij de meting.
+- Gecontracteerd bij alle zorgverzekeraars Je hoeft niet uit te zoeken of wij bij jouw verzekeraar aangesloten zijn. Dat zijn we, bij allemaal.
+
+- Kwaliteitsregister Paramedici Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.
+
+- Aangesloten bij ANBOS De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiene en klachtafhandeling.
 
 Voorwaarden en maxima veranderen per jaar en per pakket.
 
@@ -9870,66 +9594,6 @@ Liever bellen? Dat kan op 010-2038423. Zie ook de algemene voorwaarden.
 
 ## Overig
 
-### /dit-behandelen-wij-niet
-
-**Tabbladtitel:** Dit behandelen wij niet | Diba Clinics
-
-**Google-omschrijving:** Wat hier niet gebeurt en waar je dan wel terechtkunt. Drie soorten nee: bij een arts, niet in ons aanbod, of nu even niet.
-
-**WAT WIJ NIET DOEN EN WAAR JE WEL TERECHTKUNT**
-
-Een lijst met dingen die we niet doen is een disclaimer. Die dekt ons in en helpt jou niet. Dus staat bij elke regel hieronder ook waar je wél terechtkunt.
-
-Er zit verschil tussen die nee's, en dat verschil is het belangrijkste op deze pagina.
-
-- Dit hoort bij een arts 5
-
-- Dit doen wij niet 3
-
-- Dit kan nu even niet 4
-
-Alleen bij de eerste groep kan haast zitten. De andere twee zijn een kwestie van waar of wanneer.
-
-Niet omdat we er geen zin in hebben, maar omdat het buiten het vak van een huidtherapeut valt. Hier stuurt een goede kliniek je weg.
-
-- Een moedervlek of plek die verandert Verandering van vorm, kleur, grootte of gevoel hoort beoordeeld te worden door iemand die ook weefsel kan laten onderzoeken. Wij kunnen kijken; we kunnen niet uitsluiten. WAAR DAN WEL Je huisarts. Die beoordeelt en verwijst zo nodig door naar een dermatoloog. Wacht daar niet mee tot een afspraak hier uitkomt. WAAR JE OP LET BIJ EEN MOEDERVLEK ›
-
-- Een plekje weghalen dat verandert Wat weggehaald wordt hoort onderzocht te worden, en dat vraagt een arts en een laboratorium. Cosmetisch weglaseren maakt onderzoek achteraf onmogelijk. WAAR DAN WEL Je huisarts, of via een verwijzing een dermatoloog. WAT WIJ HIER WÉL BIJ DOEN Een moedervlek die niet verandert halen we wel weg, net als steelwratjes en fibromen. Het gaat hier alleen om plekjes waar iets aan verandert. Twijfel je, laat het dan zien; dat kost je niets. FIBROMEN VERWIJDEREN ›
-
-- Medicatie op recept, zoals isotretinoïne Een huidtherapeut schrijft geen medicijnen voor. Bij zware acne is dat soms precies wat er nodig is, en dan is doorsturen het juiste advies. WAAR DAN WEL Je huisarts. Loopt er al een traject met isotretinoïne, meld dat hier dan wel: het bepaalt wat er de eerste maanden daarna kan. WAT WIJ HIER WÉL BIJ DOEN Het hele acnetraject naast de medicatie, mits de timing klopt. Veel mensen komen juist ná zo een kuur voor de littekens en de textuur die overblijven, en dat is precies waar wij voor zijn. Tijdens de kuur kijken we mee zonder te behandelen. WAT WE BIJ ACNE WEL DOEN ›
-
-- PCOS behandelen PCOS is een hormonale aandoening. Wij stellen die diagnose niet, behandelen die niet en nemen de oorzaak niet weg. Wat er op je huid van te zien is kunnen we wel aanpakken, en dat is iets anders. WAAR DAN WEL Je huisarts of gynaecoloog. Die stelt vast of er sprake van is en wat eraan te doen valt. WAT WIJ HIER WÉL BIJ DOEN De zichtbare gevolgen op je huid: overbeharing, acne en pigment. Wel met een eerlijke verwachting erbij, want zolang de hormonale oorzaak er is komen de klachten terug. Bij ontharing betekent dat onderhoud in plaats van een eindpunt. PCOS EN JE HUID, PER KLACHT ›
-
-- Eczeem of psoriasis behandelen Dat zijn aandoeningen met een medische behandeling, en die valt onder de huisarts of dermatoloog. WAAR DAN WEL Je huisarts voor de aandoening zelf. WAT WIJ HIER WÉL BIJ DOEN De huid eromheen. Een droge, beschadigde barrière scheurt sneller open en dat lokt nieuwe plekken uit, dus daar valt naast de behandeling van je arts wel degelijk winst te halen. Loopt er iets bij de dermatoloog, zeg dat dan; we stemmen erop af in plaats van eroverheen te werken. WAT ECZEEM MET JE HUID DOET ›
-
-Het bestaat en er zijn plekken die het goed doen. Wij bieden het alleen niet aan, en dan is doorverwijzen eerlijker dan iets erbij verzinnen.
-
-- Botox en fillers Wij werken aan de huid zelf: de structuur, de kleur en wat eronder zit. Volume en spierwerking zijn een ander vak. WAAR DAN WEL Een kliniek die injectables als hoofdvak heeft, bij voorkeur met een arts die ze zet. WAT WIJ HIER WÉL BIJ DOEN Aan de kwaliteit van de huid zelf werken we wel: structuur, kleur, stevigheid en fijne lijntjes. Dat is een ander resultaat dan volume terugbrengen, en voor een deel van de mensen die voor fillers komen is het precies wat ze eigenlijk zochten. WAT WE BIJ VERSLAPPING WÉL DOEN ›
-
-- Permanente make-up en tatoeages Dat is pigment aanbrengen. Wij zijn er om het weg te krijgen. WAAR DAN WEL Een gespecialiseerde PMU-studio.
-
-- Draadliften en chirurgie Alles wat door de huid heen gaat om iets op te hangen of weg te snijden is chirurgie, en dat is artsenwerk. WAAR DAN WEL Een cosmetisch arts of plastisch chirurg.
-
-Bijna altijd tijdelijk. Er staat bij hoe lang, zodat je weet wanneer je wél kunt komen.
-
-- Laser op een gebruinde huid Licht mikt op pigment. Zit er verse kleur in je huid van zon of zonnebank, dan neemt die het licht op en gaat de energie naar de verkeerde plek. WAAR DAN WEL Kom terug als je huid haar eigen kleur terug heeft. Hoeveel weken dat duurt hoor je in de intake, want dat verschilt per huid. WAT WIJ HIER WÉL BIJ DOEN De meting kan nu gewoon, en behandelingen die niet met licht werken meestal ook. Dan staat je nulpunt vast en kun je beginnen zodra je kleur eruit is, in plaats van dan pas aan de wachtlijst te denken. HOE LASERONTHARING WERKT ›
-
-- Behandelen vlak voor een zonvakantie Een net behandelde huid is gevoeliger voor zon, en dat is precies de periode waarin je hem niet uit de zon houdt. WAAR DAN WEL Plan het erna. Of plan het ruim ervoor, zodat je huid tot rust is voordat je vertrekt. WAT WIJ HIER WÉL BIJ DOEN De meting en het advies kunnen wel, en dat is juist voor vertrek nuttig: je weet dan waar je op moet letten in de zon. Terug van vakantie begin je met een vertrekpunt dat er al ligt.
-
-- Een deel van de lijst tijdens zwangerschap of borstvoeding Voor een aantal behandelingen ontbreekt het onderzoek om te kunnen zeggen dat het veilig is. Dan is niet doen de enige verdedigbare keuze. WAAR DAN WEL Er blijft genoeg over dat wel kan, zoals dermaplaning en een rustige gezichtsbehandeling. Zeg het bij het maken van de afspraak, dan kiezen we daaruit. ZET HET IN JE HUIDPROFIEL ›
-
-- Behandelen zonder dat duidelijk is waarvoor Zonder meting en zonder doel is elke behandeling een gok, en dan is achteraf niet vast te stellen of er iets is veranderd. WAAR DAN WEL Begin met de meting. Komt daar niets uit wat behandeling vraagt, dan hoor je dat en heb je vijftig euro besteed in plaats van een traject. WAT ER IN EEN HUIDCONSULT GEBEURT ›
-
-NEE ZEGGEN IS OOK OVERLEGGEN
-
-**Vraag het gewoon even.**
-
-Deze lijst is niet uitputtend en dat gaat hij ook nooit worden. Twijfel je of iets hier kan, stuur dan een bericht. Als het antwoord nee is hoor je dat meteen, met erbij waar je dan wel moet zijn. Dat scheelt jou een afspraak die niet doorgaat.
-
-> knop: STEL JE VRAAG ↗
-
----
-
 ### /doelgroep
 
 **Tabbladtitel:** Voor wie | Diba Clinics
@@ -10316,7 +9980,7 @@ Deze pagina gaat over het apparaat. Welke zones er zijn, wat een sessie kost en 
 
 **STEL JE HUIDPROFIEL SAMEN**
 
-De meeste vragen hieronder gaan niet over wat je wil, maar over wat er kán. Retinol, zwangerschap, een gebruinde huid, medicatie. Dat komt in een kliniek meestal pas aan de balie boven tafel, en dan gaat de afspraak niet door.
+De vragen hieronder gaan over wat je huid nu aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: precies de dingen die bepalen welke behandeling meteen kan en welke beter een paar weken later valt.
 
 Hier weet je het vooraf. En je profiel loopt mee: op de behandelingenpagina staat daarna bovenaan wat bij je past, en bij de rest waarom niet.
 
@@ -10548,7 +10212,7 @@ MAX. 120 MINUTEN
 
 Neem je huidprofiel mee
 
-In 9 stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: precies de dingen die anders pas aan de balie boven tafel komen, en dan gaat de afspraak niet door.
+In 9 stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: met die antwoorden staat je behandeling al klaar als je binnenkomt.
 
 > knop: STEL JE HUIDPROFIEL SAMEN
 
@@ -10658,68 +10322,6 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 ---
 
-### /is-het-nodig
-
-**Tabbladtitel:** Is het nodig? | Diba Clinics
-
-**Google-omschrijving:** Wat er over twaalf maanden gebeurt als je niets doet, naast wat er gebeurt als je wel behandelt. Zodat je de twee naast elkaar ziet.
-
-**IS EEN BEHANDELING IN JOUW GEVAL NODIG?**
-
-Dit is de vraag die een kliniek zelden stelt, om een reden die niet zo ingewikkeld is: wij verdienen aan het antwoord ja. Dus stellen we hem hier zelf, en niet met een slag om de arm.
-
-Bij een deel van wat mensen hier brengen is niets doen het betere spoor. Hieronder staat bij welke, en waarom.
-
-Niets doen is ook een behandelplan.
-
-Alleen staat het nergens op een prijslijst, en daarom wordt het zelden voorgesteld. Het kost niets, het heeft geen hersteltijd en bij een aantal dingen is het de beste uitkomst die er is.
-
-**Wat er gebeurt als je niets doet.**
-
-Kies waar het bij jou over gaat. Links staat het verloop zonder behandeling, rechts met. Bij sommige dingen lopen die twee bijna gelijk op, en dan is de vraag niet of het werkt maar of het de moeite waard is.
-
-- RODE PLEK NA EEN PUISTJE
-
-- PIGMENTVLEKKEN DOOR DE ZON
-
-- ACNE DIE NU ACTIEF IS
-
-- EERSTE FIJNE LIJNTJES
-
-- ONGEWENSTE HAARGROEI
-
-Een rode of donkere vlek na een puistje kan in de maanden erna vanzelf lichter worden, vooral wanneer je de huid goed tegen zon beschermt.
-
-Dit is meestal het geval waarin wachten wint. De verkleuring na een ontsteking trekt in de meeste huiden vanzelf weg; behandelen versnelt het hooguit en kan bij ongeduld juist prikkelen.
-
-- Nu Een rode of bruine vlek waar het puistje zat. Hetzelfde beeld. Er valt op dit moment weinig te versnellen.
-
-- Na 3 maanden Vaak duidelijk lichter, zeker als je de zon eraf houdt. Iets sneller lichter, met de kosten en de hersteltijd erbij.
-
-- Na 12 maanden In veel gevallen niet meer te zien. Vergelijkbaar eindpunt, eerder bereikt.
-
-Dit is een algemeen beloop en geen voorspelling voor jouw huid. Er wordt hier niets bewaard en er komt geen advies uit. Wat er bij jou speelt blijkt uit een meting, en dat gesprek voeren we liever dan dat een pagina het voor je invult.
-
-> knop: MAAK JE HUIDPROFIEL
-
-**Drie keer kost wachten wél iets.**
-
-Een pagina die alleen zegt dat je vaak kunt wachten is net zo eenzijdig als een pagina die alleen behandelingen aanprijst. Dit zijn de gevallen waarin uitstellen duurder wordt.
-
-- Als er nu schade ontstaat Actieve ontstekingen kunnen putjes en littekens achterlaten. Die zijn later moeilijker en duurder aan te pakken dan de ontsteking zelf. Dat is een reden om niet te wachten, en het is een andere reden dan een mooiere huid.
-
-- Als je niet weet wat het is Wachten met behandelen is prima. Wachten met kijken is iets anders. Een plek die verandert van vorm, kleur of grootte hoort door een arts bekeken te worden, en daar is geen kliniek voor nodig maar een huisarts.
-
-- Als het je dagelijks bezighoudt Er bestaat geen meetlat voor hoeveel last genoeg last is. Merk je dat je je erop verkijkt in de spiegel, foto's ontwijkt of je kleding erop aanpast, dan is dat op zichzelf een reden om er iets aan te doen.
-
-**Meten kan ook zonder behandelen.**
-
-Twijfel je nog, dan is een meting geen verplichting tot iets. Er wordt gekeken en uitgelegd, en je gaat naar huis met wat eruit kwam. Komt daar uit dat wachten bij jou het verstandigst is, dan hoor je dat ook. Dat is geen mislukte afspraak maar een antwoord.
-
-> knop: PLAN EEN HUIDCONSULT
-
----
-
 ### /kennisbank
 
 **Tabbladtitel:** Kennisbank | Diba Clinics
@@ -10741,8 +10343,6 @@ Twee ingangen, afhankelijk van of je al een naam hebt voor wat je ziet.
 - IK WEET NIET HOE HET HEET De symptoomzoeker Kruis aan wat je ziet en wat je voelt, in gewone woorden. Aan het eind sta je op de pagina die erbij hoort. BEKIJKEN
 
 - IK WEET HET WEL, EN NU Je huidprofiel Negen stappen over je huid, je routine en wat je al probeerde. De site onthoudt je antwoorden en je neemt ze mee naar de intake. BEKIJKEN
-
-- MOET DIT EIGENLIJK WEL BEHANDELD WORDEN De wachtweegschaal Wat er gebeurt als je niets doet, naast wat er gebeurt als je wel behandelt. De vraag die een kliniek zelden zelf stelt. BEKIJKEN
 
 Doorsnedes en schema's, geen foto's. Het probleem zit onder de oppervlakte en daar kijkt een foto niet.
 
@@ -10779,8 +10379,6 @@ Ook bij een andere kliniek. Dit deel is niet geschreven om jou hier te houden.
 - KLOPT DIT VOOR-EN-NA-BEELD WEL De fotocheck Zeven dingen die een resultaatfoto kunnen laten liegen: licht, hoek, afstand, houding en meer. BEKIJKEN
 
 - WAAR MAG IK JULLIE AAN HOUDEN Ons verbond Tien dingen die wij niet doen, met bij elke regel wat hij ons kost. Een belofte zonder prijs is een slogan. BEKIJKEN
-
-- WAT STUREN JULLIE WEG Dit behandelen wij niet Per klacht de reden waarom het hier niet gebeurt, en waar het dan wel thuishoort. BEKIJKEN
 
 **28 pagina's, elk met een eigen vraag.**
 
@@ -10846,7 +10444,7 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 Alles hierboven staat er zodat je een gesprek kunt voeren in plaats van een aanbod te moeten geloven. Ook als dat gesprek ergens anders plaatsvindt.
 
-Het register telt nu 18 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
+Het register telt nu 16 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -11350,7 +10948,7 @@ Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene zonder de ande
 
 Een huidkliniek ziet soms iets eerder dan er een diagnose bestaat. Dan is de juiste stap niet een traject aanbieden maar zeggen waar je wel moet zijn.
 
-> knop: WAT WE NOG MEER NIET DOEN
+> knop: BEKIJK WAT WE WEL BEHANDELEN
 
 - Acne langs de kaaklijn en in de hals Bij pijnlijke knobbels onder de huid of littekens die blijven, hoort een arts mee te kijken. Daar bestaat medicatie voor en die kunnen wij niet geven.
 
@@ -11758,16 +11356,6 @@ Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mense
 
 - Een neusspray of een beugel verkopen naast de behandeling. Dat is niet ons vak
 
-**Wanneer we een behandeling afraden**
-
-Dit zijn de twee momenten waarop wij een afspraak afzeggen die al gemaakt was. Liever dat, dan een reeks die niets doet.
-
-- Geen behandeling bij een vermoeden van slaapapneu Zijn er ademstops, of ben je overdag ongewoon slaperig, dan sturen we je naar de huisarts voor slaaponderzoek. Snurken zachter maken terwijl er ademstops onder zitten is het alarm uitzetten en het probleem laten staan.
-
-- Geen reeks als het geluid ergens anders zit Komt het uit je neus, je tong of je kaakstand, dan doet een laser op het gehemelte daar weinig aan. Dan zeggen we dat, ook als je er al voor zat.
-
-DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
-
 **Veelgestelde vragen over snurken**
 
 Waar komt het geluid eigenlijk vandaan? +
@@ -11870,7 +11458,7 @@ Of en hoe er na de meting wordt teruggekoppeld aan de verwijzer is nog niet vast
 
 **Wat er verder te controleren valt.**
 
-- Wat wij niet behandelen Per klacht de reden, en waar het dan wel thuishoort.
+- Wat wij behandelen Alle behandelingen, met wat ze doen en wat ze kosten.
 
 - De 12 apparaten Wat er staat, tot welke diepte het komt en wat het niet kan.
 
@@ -11935,4 +11523,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5535 tekstblokken · ongeveer 86.318 woorden._
+_105 pagina's · 5337 tekstblokken · ongeveer 81.015 woorden._

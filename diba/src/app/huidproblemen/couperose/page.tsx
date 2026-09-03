@@ -8,7 +8,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -18,7 +17,6 @@ import {
   COUPEROSE_BEELDEN,
   COUPEROSE_FAQ,
   COUPEROSE_WEL_NIET,
-  COUPEROSE_WIJ_DOEN_NIET,
   DRUKPROEF_STAPPEN,
 } from "@/data/couperose";
 import { publicCopy } from "@/lib/copy-flags";
@@ -70,7 +68,6 @@ const ANKERS = [
   { id: "welke", label: "Welk beeld" },
   { id: "rosacea", label: "Of is het rosacea" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -304,13 +301,6 @@ export default function CouperosePage() {
         wel={COUPEROSE_WEL_NIET.wel}
         niet={COUPEROSE_WEL_NIET.niet}
         intro="Bij couperose is de lijst korter dan bij de meeste huidproblemen, en dat is geen bescheidenheid. Er is één ding dat werkt op een vaatje dat al zichtbaar is, en er is veel dat er niets aan doet."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we liever"
-        accent="nog even wachten"
-        intro="Licht op de verkeerde huid of op het verkeerde moment maakt roodheid erger. Dat is wat je hier niet komt halen."
-        punten={COUPEROSE_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

@@ -6,17 +6,11 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import {
-  ECZEEM_FAQ,
-  ECZEEM_WEL_NIET,
-  ECZEEM_WIJ_DOEN_NIET,
-  VERWAR_NIET,
-} from "@/data/eczeem";
+import { ECZEEM_FAQ, ECZEEM_WEL_NIET, VERWAR_NIET } from "@/data/eczeem";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -50,7 +44,6 @@ const ANKERS = [
   { id: "cirkel", label: "De krabcirkel" },
   { id: "verwar", label: "Of is het iets anders" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waarom niet bij ons" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -178,13 +171,6 @@ export default function EczeemPage() {
         wel={ECZEEM_WEL_NIET.wel}
         niet={ECZEEM_WEL_NIET.niet}
         intro="Het eerste kruisje rechts kost de meeste tijd: wachten met de huisarts omdat je eerst zelf iets wilt proberen."
-      />
-
-      <WijZeggenNee
-        kop="Wij behandelen"
-        accent="geen eczeem."
-        intro="Dit is geen aandoening waar een huidkliniek over gaat. We kunnen de barrière ondersteunen als het rustig is, en dat is ook alles. De rest hoort bij een arts."
-        punten={ECZEEM_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={ECZEEM_FAQ} onderwerp="eczeem" />

@@ -133,19 +133,19 @@ export const MOEDERVLEK_WEL_NIET = {
 
 export const MOEDERVLEK_VOORWAARDEN = [
   {
-    titel: "Een plekje dat verandert gaat eerst langs een arts",
+    titel: "We beoordelen het plekje",
     tekst:
-      "Verandert de vorm, de kleur, de grootte of het gevoel, dan laten we het eerst beoordelen door je huisarts of een dermatoloog. Niet omdat we je wegsturen, maar omdat weefsel dat weg is niet meer onderzocht kan worden. Blijkt het goedaardig, dan halen we het hier alsnog weg. [MEDISCHE-CHECK-ROJDA]",
+      "Onze huidtherapeut kijkt naar vorm, kleur, begrenzing en of er iets aan verandert. Je hoort meteen wat we zien en wat de vervolgstap is.",
   },
   {
-    titel: "We kijken altijd eerst, ook als je zeker weet wat het is",
+    titel: "Coaguleren gaat na verwijzing van je arts",
     tekst:
-      "Elk plekje wordt bekeken voordat er iets mee gebeurt. Dat kost een paar minuten en het is de enige stap die je later niet kunt inhalen. [MEDISCHE-CHECK-ROJDA]",
+      "Met een verwijzing in de hand nemen we het plekje weg met warmte, in een korte handeling. Die volgorde staat vast: alleen een arts kan weefsel laten onderzoeken, en dat kan achteraf niet meer.",
   },
   {
-    titel: "Bij een behandeling in de buurt dekken we ze af",
+    titel: "Ligt er een moedervlek in het behandelgebied, dan dekken we die af",
     tekst:
-      "Laseren we vlakbij, dan gaat er een dekje over een moedervlek die blijft zitten. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.",
+      "Laseren we vlakbij, dan gaat er een dekje overheen. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.",
   },
 ] as const;
 

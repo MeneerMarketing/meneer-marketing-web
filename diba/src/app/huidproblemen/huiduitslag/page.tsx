@@ -6,7 +6,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
@@ -18,7 +17,6 @@ import {
   OORZAKEN,
   UITSLAG_FAQ,
   UITSLAG_WEL_NIET,
-  UITSLAG_WIJ_DOEN_NIET,
 } from "@/data/huiduitslag";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
@@ -55,7 +53,6 @@ const ANKERS = [
   { id: "glastest", label: "De glastest" },
   { id: "oorzaken", label: "Gewone oorzaken" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waarom niet bij ons" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -234,13 +231,6 @@ export default function HuiduitslagPage() {
         wel={UITSLAG_WEL_NIET.wel}
         niet={UITSLAG_WEL_NIET.niet}
         intro="Het eerste kruisje rechts maakt het werk van de arts moeilijker: zalf op onbekende uitslag verandert het beeld dat hij moet beoordelen."
-      />
-
-      <WijZeggenNee
-        kop="Wij stellen hier"
-        accent="niets vast."
-        intro="Geen diagnose en ook geen geruststelling. Dat laatste klinkt onaardig en het is het tegenovergestelde: wat wij zeggen zou meewegen in of je belt, en die verantwoordelijkheid hoort bij een arts."
-        punten={UITSLAG_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={UITSLAG_FAQ} onderwerp="huiduitslag" />

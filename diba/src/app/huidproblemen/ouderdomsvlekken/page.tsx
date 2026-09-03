@@ -8,7 +8,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -18,7 +17,6 @@ import { publicCopy } from "@/lib/copy-flags";
 import {
   OUDERDOMSVLEKKEN_FAQ,
   OUDERDOMSVLEKKEN_WEL_NIET,
-  OUDERDOMSVLEKKEN_WIJ_DOEN_NIET,
   PIGMENT_BEELDEN,
   VERANDERCHECK_STAPPEN,
 } from "@/data/ouderdomsvlekken";
@@ -43,7 +41,6 @@ const ANKERS = [
   { id: "check", label: "De verandercheck" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -222,13 +219,6 @@ export default function Pagina() {
         wel={OUDERDOMSVLEKKEN_WEL_NIET.wel}
         niet={OUDERDOMSVLEKKEN_WEL_NIET.niet}
         intro="Bij pigment is zonbescherming geen advies achteraf maar onderdeel van de behandeling. Zonder dat komt het terug en is het geld weg."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Een plek wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen. Dat is een fout die niet te herstellen is."
-        punten={OUDERDOMSVLEKKEN_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

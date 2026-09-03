@@ -7,7 +7,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -18,7 +17,6 @@ import {
   WAL_OORZAKEN,
   WALLEN_FAQ,
   WALLEN_WEL_NIET,
-  WALLEN_WIJ_DOEN_NIET,
 } from "@/data/wallen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -58,7 +56,6 @@ const ANKERS = [
   { id: "test", label: "De ochtendtest" },
   { id: "welke", label: "Vocht, vet of schaduw" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -235,13 +232,6 @@ export default function WallenPage() {
         wel={WALLEN_WEL_NIET.wel}
         niet={WALLEN_WEL_NIET.niet}
         intro="De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan als hoe voorzichtig het moet."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Dit zijn de gevallen waarin wij iemand wegsturen die met geld in de hand binnenkomt. Liever dat, dan een reeks die niets verandert."
-        punten={WALLEN_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={WALLEN_FAQ} onderwerp="wallen" />

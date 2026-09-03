@@ -9,18 +9,12 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
-import {
-  AANJAGERS,
-  MELASMA_FAQ,
-  MELASMA_WEL_NIET,
-  MELASMA_WIJ_DOEN_NIET,
-} from "@/data/melasma";
+import { AANJAGERS, MELASMA_FAQ, MELASMA_WEL_NIET } from "@/data/melasma";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -58,7 +52,6 @@ const ANKERS = [
   { id: "diepte", label: "Hoe diep zit het" },
   { id: "kranen", label: "De drie kranen" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -218,13 +211,6 @@ export default function MelasmaPage() {
         wel={MELASMA_WEL_NIET.wel}
         niet={MELASMA_WEL_NIET.niet}
         intro="Het eerste kruisje rechts is bij melasma de duurste fout die er is, en hij wordt gemaakt door klinieken en niet door klanten."
-      />
-
-      <WijZeggenNee
-        kop="Hier brengt harder werken"
-        accent="je verder van huis."
-        intro="Bij elke andere aandoening op deze site geldt: meer vermogen, meer resultaat. Bij melasma niet. Een te stevige behandeling geeft hier vaak méér pigment, en dat is een bekend en pijnlijk patroon."
-        punten={MELASMA_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

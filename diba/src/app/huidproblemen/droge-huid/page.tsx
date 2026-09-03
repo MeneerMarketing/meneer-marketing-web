@@ -9,7 +9,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import { PorieVocht } from "@/components/ui/HuidIcon";
@@ -17,7 +16,6 @@ import ProofBar from "@/components/ui/ProofBar";
 import {
   DROGE_HUID_FAQ,
   DROGE_HUID_WEL_NIET,
-  DROGE_HUID_WIJ_DOEN_NIET,
   VERWARRINGEN,
 } from "@/data/droge-huid";
 import { FIGMA_INTENT_VEROUDERING } from "@/data/figma-home-images";
@@ -55,7 +53,6 @@ const ANKERS = [
   { id: "matrix", label: "Waar zit jij" },
   { id: "verwarring", label: "Wat mensen verwarren" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -201,13 +198,6 @@ export default function DrogeHuidPage() {
         wel={DROGE_HUID_WEL_NIET.wel}
         niet={DROGE_HUID_WEL_NIET.niet}
         intro="Het eerste kruisje rechts is de reflex die de meeste schade aanricht: meer erbij doen omdat het niet beter wordt."
-      />
-
-      <WijZeggenNee
-        kop="Weglaten is hier"
-        accent="vaker de behandeling."
-        intro="Bij een droge huid is de winst meestal te halen door dingen te schrappen, en daar valt voor ons weinig aan te verdienen. Dat is precies waarom je het van ons hoort."
-        punten={DROGE_HUID_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

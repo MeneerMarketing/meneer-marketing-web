@@ -75,13 +75,6 @@ export const KENNISBANK: readonly Kennisgroep[] = [
         zin: "Negen stappen over je huid, je routine en wat je al probeerde. De site onthoudt je antwoorden en je neemt ze mee naar de intake.",
         href: "/huidprofiel",
       },
-      {
-        id: "isnodig",
-        vraag: "Moet dit eigenlijk wel behandeld worden",
-        naam: "De wachtweegschaal",
-        zin: "Wat er gebeurt als je niets doet, naast wat er gebeurt als je wel behandelt. De vraag die een kliniek zelden zelf stelt.",
-        href: "/is-het-nodig",
-      },
     ],
   },
   {
@@ -211,13 +204,6 @@ export const KENNISBANK: readonly Kennisgroep[] = [
         naam: "Ons verbond",
         zin: "Tien dingen die wij niet doen, met bij elke regel wat hij ons kost. Een belofte zonder prijs is een slogan.",
         href: "/ons-verbond",
-      },
-      {
-        id: "niet",
-        vraag: "Wat sturen jullie weg",
-        naam: "Dit behandelen wij niet",
-        zin: "Per klacht de reden waarom het hier niet gebeurt, en waar het dan wel thuishoort.",
-        href: "/dit-behandelen-wij-niet",
       },
     ],
   },

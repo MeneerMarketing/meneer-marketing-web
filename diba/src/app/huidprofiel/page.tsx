@@ -70,10 +70,10 @@ export default function HuidprofielPage() {
           </h1>
 
           <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            De meeste vragen hieronder gaan niet over wat je wil, maar over wat
-            er kán. Retinol, zwangerschap, een gebruinde huid, medicatie. Dat
-            komt in een kliniek meestal pas aan de balie boven tafel, en dan
-            gaat de afspraak niet door.
+            De vragen hieronder gaan over wat je huid nu aankan. Retinol,
+            zwangerschap, een gebruinde huid, medicatie: precies de dingen die
+            bepalen welke behandeling meteen kan en welke beter een paar weken
+            later valt.
           </p>
           <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
             Hier weet je het vooraf. En je profiel loopt mee: op de

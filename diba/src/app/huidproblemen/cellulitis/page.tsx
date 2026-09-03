@@ -6,7 +6,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
@@ -15,7 +14,6 @@ import {
   CELLULITIS_FAQ,
   CELLULITIS_MYTHES,
   CELLULITIS_WEL_NIET,
-  CELLULITIS_WIJ_DOEN_NIET,
 } from "@/data/cellulitis";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
@@ -48,7 +46,6 @@ const ANKERS = [
   { id: "doorsnede", label: "Wat het echt is" },
   { id: "mythes", label: "Vier mythes" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waarom niet bij ons" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -175,13 +172,6 @@ export default function CellulitisPage() {
         wel={CELLULITIS_WEL_NIET.wel}
         niet={CELLULITIS_WEL_NIET.niet}
         intro="De laatste regel links is de enige op deze hele site die niet over je huid gaat, en misschien de belangrijkste van deze pagina."
-      />
-
-      <WijZeggenNee
-        kop="Hier valt niets"
-        accent="te verkopen."
-        intro="Sommige behandelingen laten de huid tijdelijk strakker lijken doordat vocht of zwelling verandert. Dat is niet hetzelfde als een blijvende verandering van de kuiltjes."
-        punten={CELLULITIS_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={CELLULITIS_FAQ} onderwerp="cellulitis" />

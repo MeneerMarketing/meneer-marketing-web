@@ -7,7 +7,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
@@ -18,7 +17,6 @@ import {
   SNURKBRONNEN,
   SNURKEN_FAQ,
   SNURKEN_WEL_NIET,
-  SNURKEN_WIJ_DOEN_NIET,
 } from "@/data/snurken";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -69,7 +67,6 @@ const ANKERS = [
   { id: "alarm", label: "Wanneer eerst een arts" },
   { id: "behandeling", label: "Wat wij doen" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -346,13 +343,6 @@ export default function SnurkenPage() {
         wel={SNURKEN_WEL_NIET.wel}
         niet={SNURKEN_WEL_NIET.niet}
         intro="Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mensen die hierover belt hoort van ons dat ze ergens anders moeten beginnen."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Dit zijn de twee momenten waarop wij een afspraak afzeggen die al gemaakt was. Liever dat, dan een reeks die niets doet."
-        punten={SNURKEN_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={SNURKEN_FAQ} onderwerp="snurken" />

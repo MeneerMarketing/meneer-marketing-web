@@ -99,7 +99,7 @@ const KOLOMMEN: readonly {
       { label: "Je eerste afspraak", href: "/intake" },
       { label: "Nazorg", href: "/nazorg" },
       { label: "Kennisbank", href: "/kennisbank" },
-      { label: "Wat wij niet doen", href: "/dit-behandelen-wij-niet" },
+      { label: "Ons verbond", href: "/ons-verbond" },
       { label: "Voor verwijzers", href: "/verwijzers" },
     ],
   },

@@ -5,17 +5,12 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Silhouet from "@/components/psoriasis/Silhouet";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import {
-  PSORIASIS_FAQ,
-  PSORIASIS_WEL_NIET,
-  PSORIASIS_WIJ_DOEN_NIET,
-} from "@/data/psoriasis";
+import { PSORIASIS_FAQ, PSORIASIS_WEL_NIET } from "@/data/psoriasis";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -48,7 +43,6 @@ const PAD = "/huidproblemen/psoriasis";
 const ANKERS = [
   { id: "silhouet", label: "Waar het zit" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waarom niet bij ons" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -144,13 +138,6 @@ export default function PsoriasisPage() {
         wel={PSORIASIS_WEL_NIET.wel}
         niet={PSORIASIS_WEL_NIET.niet}
         intro="Het tweede vinkje links is de belangrijkste regel op deze pagina, en de enige waarbij uitstel je iets kost dat niet terugkomt."
-      />
-
-      <WijZeggenNee
-        kop="Psoriasis begint"
-        accent="in je afweersysteem"
-        intro="Wij kunnen een plek verzachten en niets aan de oorzaak doen. Dan verkoop je sessies aan iets dat blijft terugkomen, en dat doen we niet."
-        punten={PSORIASIS_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={PSORIASIS_FAQ} onderwerp="psoriasis" />

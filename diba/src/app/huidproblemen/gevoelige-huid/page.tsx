@@ -9,7 +9,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
@@ -19,7 +18,6 @@ import {
   ANDERE_OORZAKEN,
   GEVOELIG_FAQ,
   GEVOELIG_WEL_NIET,
-  GEVOELIG_WIJ_DOEN_NIET,
 } from "@/data/gevoelige-huid";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -59,7 +57,6 @@ const ANKERS = [
   { id: "teller", label: "Wat staat er aan" },
   { id: "anders", label: "Als het dat niet is" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -204,13 +201,6 @@ export default function GevoeligeHuidPage() {
         wel={GEVOELIG_WEL_NIET.wel}
         niet={GEVOELIG_WEL_NIET.niet}
         intro="Het eerste kruisje rechts is het hardnekkigste verhaal in de huidverzorging: dat prikken betekent dat het werkt."
-      />
-
-      <WijZeggenNee
-        kop="Minder producten"
-        accent="verdient ons niets"
-        intro="Bij een gevoelige huid is een eenvoudigere routine vaak verstandiger dan meer producten toevoegen."
-        punten={GEVOELIG_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

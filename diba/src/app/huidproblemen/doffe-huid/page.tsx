@@ -8,7 +8,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -19,7 +18,6 @@ import {
   DOF_BEELDEN,
   DOF_FAQ,
   DOF_WEL_NIET,
-  DOF_WIJ_DOEN_NIET,
   LICHTTEST_STAPPEN,
 } from "@/data/doffe-huid";
 import { publicCopy } from "@/lib/copy-flags";
@@ -52,7 +50,6 @@ const ANKERS = [
   { id: "test", label: "De lichttest" },
   { id: "welke", label: "Waar komt het vandaan" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -232,13 +229,6 @@ export default function Pagina() {
         wel={DOF_WEL_NIET.wel}
         niet={DOF_WEL_NIET.niet}
         intro="Bij dofheid is het effect vaak snel zichtbaar en ook weer tijdelijk. Dat is geen bezwaar zolang je het weet, en een probleem zodra iemand denkt een oorzaak af te kopen."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Het effect van een behandeling op dofheid zakt na verloop van tijd. Steeds dieper gaan omdat het vorige effect wegtrok, is de snelste route naar een geïrriteerde huid die juist doffer oogt."
-        punten={DOF_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

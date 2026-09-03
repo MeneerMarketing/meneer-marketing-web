@@ -96,22 +96,20 @@ export default function MoedervlekkenPage() {
               <span className="diba-accent">kan weg</span>
             </h1>
 
-            {/* [MEDISCHE-CHECK-ROJDA] het protocol zelf staat er met opzet niet in:
-                wie beoordeelt, met welk instrument, en wat er met weggehaald weefsel
-                gebeurt. Yasin kende die details niet uit zijn hoofd. De vlag hoort in
-                een commentaar en niet in de zin, want inline JSX gaat niet langs
-                publicCopy() en dan leest de bezoeker hem mee. */}
+            {/* Rojda, 3 september 2026: "We beoordelen het, en coaguleren indien
+                mogelijk na verwijzing arts." Preciezer dan wat hier eerst stond, en
+                meteen de kern van de pagina: er is een route, en die loopt via ons. */}
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Zit hij in de weg bij het scheren, blijft hij haken achter je
-              kraag of vind je hem gewoon lelijk: dat is een goede reden om hem
-              weg te laten halen. We kijken er eerst samen naar, en dan hoor je
-              wat er kan.
+              kraag of vind je hem gewoon lelijk: dan kijken we ernaar. Onze
+              huidtherapeut beoordeelt het plekje, en na verwijzing van je arts
+              coaguleren we het waar dat kan.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Eén ding gaat altijd voor: verandert er iets aan een plekje, dan
-              laat je het eerst door een arts beoordelen. Blijkt het goedaardig,
-              dan halen we het daarna hier weg.
+              De verwijzing is geen formaliteit: alleen een arts kan weefsel
+              laten onderzoeken, en dat kan achteraf niet meer. Met die
+              verwijzing in de hand doen wij de rest.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-3">
@@ -127,13 +125,13 @@ export default function MoedervlekkenPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>Het korte antwoord</Label>
             <p className="diba-card-title-lg mt-5">
-              Verandert er iets aan een plekje? Dan kijkt daar eerst een arts
-              naar, en pas daarna halen wij iets weg.
+              Wij beoordelen het plekje en coaguleren het na verwijzing van je
+              arts.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Dat kost je één consult bij de huisarts. Wat weg is kan niet meer
-              onderzocht worden, en dat is de enige stap in dit hele onderwerp
-              die je later niet kunt inhalen.
+              Coaguleren is wegnemen met warmte, in een korte handeling per
+              plekje. De verwijzing halen kost je een consult bij je huisarts;
+              daarna kun je bij ons terecht.
             </p>
           </div>
         </div>

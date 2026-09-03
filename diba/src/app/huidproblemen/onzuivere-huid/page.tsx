@@ -7,7 +7,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -18,7 +17,6 @@ import {
   KORRELCHECK_STAPPEN,
   ONZUIVER_FAQ,
   ONZUIVER_WEL_NIET,
-  ONZUIVER_WIJ_DOEN_NIET,
   PORIE_BEELDEN,
 } from "@/data/onzuivere-huid";
 import { publicCopy } from "@/lib/copy-flags";
@@ -51,7 +49,6 @@ const ANKERS = [
   { id: "check", label: "De korrelcheck" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -229,13 +226,6 @@ export default function Pagina() {
         wel={ONZUIVER_WEL_NIET.wel}
         niet={ONZUIVER_WEL_NIET.niet}
         intro="De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reinigen levert bij een vette huid het omgekeerde op van wat je zoekt."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Er is een reeks te verkopen tegen iets dat bij een normale huid hoort. Dat is precies wat wij niet doen, en dat is meteen de nuttigste zin op deze pagina."
-        punten={ONZUIVER_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={ONZUIVER_FAQ} onderwerp="een onzuivere huid" />

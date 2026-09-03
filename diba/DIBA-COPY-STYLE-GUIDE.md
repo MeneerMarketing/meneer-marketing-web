@@ -8,6 +8,45 @@
 
 ---
 
+## Wat Rojda en Yasin op 3 september 2026 hebben vastgesteld
+
+Rojda las de hele site en concludeerde: "Alles is wat wij niet kunnen. Niks is wat wij wel
+kunnen. Zo kan de site echt niet online." Dat is de aanleiding voor de vier regels hieronder.
+Ze gaan boven alles wat er verderop in deze gids staat.
+
+**1. Eerlijkheid staat nooit boven de commerciele functie van de pagina.**
+Benoem medische grenzen duidelijk, maar zet centraal waarmee Diba wel kan helpen. Een
+beperking mag nooit een reden worden om de bezoeker weg te sturen als er binnen Diba een
+veilige en passende mogelijkheid is. Een pagina die eindigt bij iemand anders is alleen
+juist als er bij Diba echt niets kan.
+
+**2. Niet elke pagina krijgt dezelfde onderdelen.**
+"Wat we afraden", "waar wij nee zeggen" en het verbond horen niet standaard op elke
+pagina. Kies per behandeling wat nodig is. De behandeling zelf en de reden om voor Diba te
+kiezen krijgen de meeste ruimte. Wie overal hetzelfde blok plakt, bouwt een sjabloon en
+geen pagina.
+
+**3. Rustig, deskundig en uitnodigend.**
+Het klinkt als een ervaren behandelaar die duidelijk uitlegt wat Diba kan doen. De tekst is
+commercieel, maar voelt niet als reclame.
+
+**4. Vakkundig, en toch te volgen.**
+Rojda: professioneel, met autoriteit, in medische en huidtherapeutische taal, maar zo dat
+een consument het begrijpt. Gebruik de vakterm en leg hem uit; laat hem niet weg en zet er
+ook geen tweede alinea omheen.
+
+### Wat hier concreet uit volgt
+
+- Zinnen als "soms behandelen we niet" en "soms heeft boeken geen zin" staan alleen nog in
+  Ons Verbond. Nergens anders.
+- Diba is gecontracteerd bij alle zorgverzekeraars, de therapeuten staan in het
+  Kwaliteitsregister Paramedici en zijn aangesloten bij ANBOS. Dat zijn sterke punten en
+  die horen zichtbaar te zijn.
+- Ga niet dieper dan nodig. Rojda over de tweede alinea van /vergoedingen: te diep, te
+  ingewikkeld. Duidelijk is iets anders dan volledig.
+
+---
+
 ## De Diba-stijl in één zin
 
 Diba schrijft zoals een ervaren behandelaar met een klant praat: rustig, duidelijk en deskundig, met aandacht voor wat iemand wil en zonder meer te beloven dan verantwoord is.

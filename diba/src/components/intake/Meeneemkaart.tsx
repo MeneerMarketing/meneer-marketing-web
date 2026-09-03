@@ -71,8 +71,8 @@ export default function Meeneemkaart() {
         <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
           In {PROFIEL_ONDERDELEN} stappen leg je vast wat je wil veranderen en
           wat je huid aankan. Retinol, zwangerschap, een gebruinde huid,
-          medicatie: precies de dingen die anders pas aan de balie boven tafel
-          komen, en dan gaat de afspraak niet door.
+          medicatie: met die antwoorden staat je behandeling al klaar als je
+          binnenkomt.
         </p>
         <Link
           href="/huidprofiel"

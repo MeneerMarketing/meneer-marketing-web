@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FigmaCheckIcon } from "@/components/figma/FigmaTemplateUi";
 import Label from "@/components/ui/Label";
 import { INSURERS } from "@/data/insurers";
 import { MISVERSTANDEN, ONZE_ROL, ROUTE } from "@/data/vergoeding-route";
+import { ERKENNINGEN } from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
@@ -88,14 +90,25 @@ export default function VergoedingenPage() {
               hebt, welk maximum eraan hangt en of je huisarts een verwijzing
               moet schrijven.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Gaat het om een cosmetische wens, dan betaal je die zelf. Dat is
-              in heel Nederland zo: het stelsel maakt die knip, jouw polis en
-              deze kliniek staan daarbuiten. Welke van de twee het is hangt aan
-              de klacht en niet aan de behandeling. Dezelfde laser is in het ene
-              geval medisch en in het andere cosmetisch, en daarom begint het
-              bij de meting.
-            </p>
+
+            {/* Rojda: "Ik zie juist al onze sterke punten niet terug." Dit is er een van,
+                en op deze pagina is het geen keurmerkplaatje maar het antwoord op de vraag
+                die iemand hier komt stellen: mag ik hierheen met mijn polis. */}
+            <ul className="mt-8 space-y-3">
+              {ERKENNINGEN.map((e) => (
+                <li key={e.naam} className="flex gap-3">
+                  <FigmaCheckIcon />
+                  <span className="max-w-[48ch]">
+                    <strong className="block text-[16px] font-medium leading-7 text-[var(--t-strong)]">
+                      {e.naam}
+                    </strong>
+                    <span className="mt-0.5 block text-[15px] leading-7 text-[var(--t-body)]">
+                      {e.zin}
+                    </span>
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">

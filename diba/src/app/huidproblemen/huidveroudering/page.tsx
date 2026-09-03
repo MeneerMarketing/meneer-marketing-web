@@ -8,7 +8,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -20,7 +19,6 @@ import {
   VEROUDERING_FAQ,
   VEROUDERING_SOORTEN,
   VEROUDERING_WEL_NIET,
-  VEROUDERING_WIJ_DOEN_NIET,
 } from "@/data/veroudering";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -61,7 +59,6 @@ const ANKERS = [
   { id: "wanneer", label: "Wat begint wanneer" },
   { id: "welke", label: "Wat je ziet" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -233,13 +230,6 @@ export default function HuidverouderingPage() {
         wel={VEROUDERING_WEL_NIET.wel}
         niet={VEROUDERING_WEL_NIET.niet}
         intro="De eerste regel links is de goedkoopste behandeling op deze hele site, en de enige die aan alle vijf de sporen tegelijk werkt."
-      />
-
-      <WijZeggenNee
-        kop="Wij verkopen"
-        accent="geen jaren terug."
-        intro="Een huidkliniek kan kleur en structuur verbeteren. Volume optillen kan hij niet, en een leeftijd beloven al helemaal niet. Dat is geen bescheidenheid maar de grens van wat er te meten valt."
-        punten={VEROUDERING_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

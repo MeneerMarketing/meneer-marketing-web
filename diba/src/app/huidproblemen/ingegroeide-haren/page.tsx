@@ -7,7 +7,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -19,7 +18,6 @@ import {
   HAARCHECK_STAPPEN,
   INGEGROEID_FAQ,
   INGEGROEID_WEL_NIET,
-  INGEGROEID_WIJ_DOEN_NIET,
 } from "@/data/ingegroeide-haren";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -51,7 +49,6 @@ const ANKERS = [
   { id: "check", label: "De haarcheck" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -118,8 +115,10 @@ export default function Pagina() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              En soms is het antwoord niet een behandeling maar anders scheren.
-              Ook dat zeggen we, al kost het ons een klant.
+              Soms lost een andere scheertechniek het al op, en dat hoor je dan
+              van ons. Blijft het terugkomen, dan haalt laserontharing de haar
+              bij de wortel weg en houdt het op. Ook dat zeggen we, al kost het
+              ons een klant.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -229,13 +228,6 @@ export default function Pagina() {
         wel={INGEGROEID_WEL_NIET.wel}
         niet={INGEGROEID_WEL_NIET.niet}
         intro="De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strak scheren, pincetten en scrubben houden het probleem in stand."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Licht mikt op het pigment in de haarwortel. Dat werkt niet op elke huid en niet op elk haar, en dat stellen we vast voordat je iets afspreekt."
-        punten={INGEGROEID_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={INGEGROEID_FAQ} onderwerp="ingegroeide haren" />

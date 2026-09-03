@@ -188,6 +188,39 @@ export const VAKGEBIEDEN: readonly {
  * Wat we níet doen is namen koppelen aan een registratie die we niet hebben gecontroleerd.
  * [GEGEVEN-NODIG: wie van het team staat er in het KP, met registratienummer]
  */
+/**
+ * Waar Diba bij aangesloten is.
+ *
+ * WAAROM DIT ER PAS NU STAAT.
+ *
+ * Rojda las de site op 3 september 2026 en schreef: "Ik zie juist al onze sterke punten
+ * niet terug." Ze noemde er drie, en geen van drieen stond ergens op de site: Diba is
+ * gecontracteerd bij alle zorgverzekeraars, de therapeuten staan in het Kwaliteitsregister
+ * Paramedici, en de kliniek is aangesloten bij ANBOS.
+ *
+ * Dat zijn geen keurmerkplaatjes maar het antwoord op de vraag die iemand op de
+ * vergoedingenpagina stelt: mag ik hierheen met mijn polis. Die pagina begon met uitleggen
+ * wat er niet vergoed wordt terwijl dit het echte nieuws is.
+ *
+ * [BESLUIT-OKAN] Rojda noemde ook "skin". Ik weet niet welk register of keurmerk dat
+ * precies is en verzin geen aansluiting die ik niet kan controleren; zodra de volledige
+ * naam er is, hoort hij in deze lijst.
+ */
+export const ERKENNINGEN = [
+  {
+    naam: "Gecontracteerd bij alle zorgverzekeraars",
+    zin: "Je hoeft niet uit te zoeken of wij bij jouw verzekeraar aangesloten zijn. Dat zijn we, bij allemaal.",
+  },
+  {
+    naam: "Kwaliteitsregister Paramedici",
+    zin: "Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.",
+  },
+  {
+    naam: "Aangesloten bij ANBOS",
+    zin: "De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiene en klachtafhandeling.",
+  },
+] as const;
+
 export const KWALITEITSREGISTER = {
   naam: "Kwaliteitsregister Paramedici",
   url: "https://www.kwaliteitsregisterparamedici.nl/beroep/huidtherapeut",

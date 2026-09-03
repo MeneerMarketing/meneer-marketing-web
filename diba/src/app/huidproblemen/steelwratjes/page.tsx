@@ -7,7 +7,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -18,7 +17,6 @@ import {
   STEELTJESCHECK_STAPPEN,
   STEELWRAT_FAQ,
   STEELWRAT_WEL_NIET,
-  STEELWRAT_WIJ_DOEN_NIET,
   UITSTEEKSEL_BEELDEN,
 } from "@/data/steelwratjes";
 import { publicCopy } from "@/lib/copy-flags";
@@ -51,7 +49,6 @@ const ANKERS = [
   { id: "check", label: "De steeltjescheck" },
   { id: "welke", label: "Wat hangt er" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -231,13 +228,6 @@ export default function Pagina() {
         wel={STEELWRAT_WEL_NIET.wel}
         niet={STEELWRAT_WEL_NIET.niet}
         intro="Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste plekje is, is het in een afspraak klaar."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Wat weg is kan niemand meer bekijken. Dat is de reden dat er hier eerst gekeken wordt en dat moedervlekken buiten deze deur blijven."
-        punten={STEELWRAT_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={STEELWRAT_FAQ} onderwerp="steelwratjes" />

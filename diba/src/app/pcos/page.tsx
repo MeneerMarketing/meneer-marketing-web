@@ -243,10 +243,10 @@ export default function PcosPage() {
                   zeggen waar je wel moet zijn.
                 </p>
                 <Link
-                  href="/dit-behandelen-wij-niet"
+                  href="/behandelingen"
                   className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white"
                 >
-                  Wat we nog meer niet doen
+                  Bekijk wat we wel behandelen
                 </Link>
               </div>
 

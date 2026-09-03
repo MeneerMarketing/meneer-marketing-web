@@ -129,7 +129,7 @@ export const ECZEEM_WIJ_DOEN_NIET = [
   {
     titel: "Geen behandeling op actieve plekken",
     tekst:
-      "Is het op dit moment actief, dan behandelen we niet in dat gebied. Een geïrriteerde huid reageert feller en het resultaat is slechter.",
+      "Is het op dit moment actief, dan werken we eerst aan de barrière en pakken we het gebied zelf aan zodra het rustig is. Een geïrriteerde huid reageert feller en het resultaat is slechter.",
   },
   {
     titel: "Geen uitspraken over jouw medicatie",

@@ -8,7 +8,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -17,7 +16,6 @@ import ProofBar from "@/components/ui/ProofBar";
 import {
   ACNE_LITTEKENS_FAQ,
   ACNE_LITTEKENS_WEL_NIET,
-  ACNE_LITTEKENS_WIJ_DOEN_NIET,
   NA_ACNE_BEELDEN,
   VOLGORDE,
 } from "@/data/acne-littekens";
@@ -61,7 +59,6 @@ const ANKERS = [
   { id: "welke", label: "Wat heb je" },
   { id: "volgorde", label: "De volgorde" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -240,13 +237,6 @@ export default function AcneLittekensPage() {
         wel={ACNE_LITTEKENS_WEL_NIET.wel}
         niet={ACNE_LITTEKENS_WEL_NIET.niet}
         intro="Wat hier het meeste oplevert is vaak niet een behandeling maar de juiste volgorde, en weten wat je voor je hebt."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Dit zijn de twee momenten waarop we een traject afhouden dat je zelf wilde boeken. Liever dat, dan een reeks die niets doet of het erger maakt."
-        punten={ACNE_LITTEKENS_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

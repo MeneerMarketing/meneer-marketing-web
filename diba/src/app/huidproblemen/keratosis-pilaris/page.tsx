@@ -7,7 +7,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -17,7 +16,6 @@ import {
   KP_BEELDEN,
   KP_FAQ,
   KP_WEL_NIET,
-  KP_WIJ_DOEN_NIET,
   SCHUURTEST_STAPPEN,
 } from "@/data/keratosis-pilaris";
 import { publicCopy } from "@/lib/copy-flags";
@@ -50,7 +48,6 @@ const ANKERS = [
   { id: "check", label: "De schuurpapiertest" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -228,13 +225,6 @@ export default function Pagina() {
         wel={KP_WEL_NIET.wel}
         niet={KP_WEL_NIET.niet}
         intro="Hier hoort onderhoud bij en geen kuur met een eindpunt. Dat is minder aantrekkelijk om te horen en het is wel hoe het werkt."
-      />
-
-      <WijZeggenNee
-        kop="Wanneer we een behandeling"
-        accent="afraden"
-        intro="Er valt een reeks van zes te verkopen aan iemand die op gladde armen hoopt. Dat is hoop verkopen en een teleurstelling leveren, en daar beginnen we niet aan."
-        punten={KP_WIJ_DOEN_NIET}
       />
 
       <PillarFaq items={KP_FAQ} onderwerp="keratosis pilaris" />

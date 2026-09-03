@@ -8,19 +8,13 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Triggersorteerder from "@/components/rosacea/Triggersorteerder";
 import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
-import {
-  ROSACEA_FAQ,
-  ROSACEA_SOORTEN,
-  ROSACEA_WEL_NIET,
-  ROSACEA_WIJ_DOEN_NIET,
-} from "@/data/rosacea";
+import { ROSACEA_FAQ, ROSACEA_SOORTEN, ROSACEA_WEL_NIET } from "@/data/rosacea";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -63,7 +57,6 @@ const ANKERS = [
   { id: "welke", label: "Welk beeld" },
   { id: "acne", label: "Rosacea of acne" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -277,13 +270,6 @@ export default function RosaceaPage() {
         wel={ROSACEA_WEL_NIET.wel}
         niet={ROSACEA_WEL_NIET.niet}
         intro="Bij rosacea is het eerste punt links gratis en levert het vaak het meest op. Dat is niet het antwoord dat een kliniek hoort te geven, maar het is wel het juiste."
-      />
-
-      <WijZeggenNee
-        kop="Wat we bij rosacea"
-        accent="kunnen bereiken"
-        intro="Rosacea is chronisch. Wij noemen beheersing daarom geen mislukking maar de eerlijke uitkomst, en je hoort dat vóór je iets betaalt in plaats van erna."
-        punten={ROSACEA_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

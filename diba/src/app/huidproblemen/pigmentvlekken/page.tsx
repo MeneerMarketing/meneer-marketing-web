@@ -9,19 +9,13 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_KENNISBANK_PIGMENT } from "@/data/figma-home-images";
-import {
-  PIGMENT_FAQ,
-  PIGMENT_SOORTEN,
-  PIGMENT_WEL_NIET,
-  PIGMENT_WIJ_DOEN_NIET,
-} from "@/data/pigment";
+import { PIGMENT_FAQ, PIGMENT_SOORTEN, PIGMENT_WEL_NIET } from "@/data/pigment";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -59,7 +53,6 @@ const ANKERS = [
   { id: "wanneer", label: "Wanneer starten" },
   { id: "welke", label: "Welk pigment" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -264,13 +257,6 @@ export default function PigmentPage() {
         wel={PIGMENT_WEL_NIET.wel}
         niet={PIGMENT_WEL_NIET.niet}
         intro="Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen."
-      />
-
-      <WijZeggenNee
-        kop="Soms is het antwoord:"
-        accent="kom in oktober terug"
-        intro="In maanden met veel zon stellen we bepaalde pigmentbehandelingen uit. Welke periode veilig en verstandig is, hangt af van huidtype, blootstelling en de gekozen behandeling."
-        punten={PIGMENT_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen

@@ -377,17 +377,7 @@ export const HOOFDNAV: readonly NavItem[] = [
             href: "/ons-verbond",
             zin: "Wat wij beloven en wat niet",
           },
-          {
-            label: "Dit behandelen wij niet",
-            href: "/dit-behandelen-wij-niet",
-            zin: "Drie soorten nee, en waar dan wel",
-          },
-          {
-            label: "Is het wel nodig",
-            href: "/is-het-nodig",
-            zin: "Wat er gebeurt als je niets doet",
-            binnenkort: true,
-          },
+
           {
             label: "Nazorg",
             href: "/nazorg",

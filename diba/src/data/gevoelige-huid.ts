@@ -196,7 +196,7 @@ export const GEVOELIG_WIJ_DOEN_NIET = [
   {
     titel: "Geen behandeling op een geïrriteerde huid",
     tekst:
-      "Kom je binnen met een huid die overal op reageert, dan behandelen we niet. Je gaat naar huis met minder in plaats van meer, en over twee weken kijken we opnieuw.",
+      "Kom je binnen met een huid die overal op reageert, dan beginnen we met rust brengen. Je gaat naar huis met minder in plaats van meer, en over twee weken kijken we opnieuw.",
   },
   {
     titel: "Geen routine van acht stappen",

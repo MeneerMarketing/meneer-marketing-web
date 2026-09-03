@@ -9,7 +9,6 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
-  WijZeggenNee,
 } from "@/components/pillar/PillarSecties";
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
@@ -19,7 +18,6 @@ import {
   LITTEKEN_FAQ,
   LITTEKEN_SOORTEN,
   LITTEKEN_WEL_NIET,
-  LITTEKEN_WIJ_DOEN_NIET,
 } from "@/data/littekens";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -62,7 +60,6 @@ const ANKERS = [
   { id: "welke", label: "Welk type" },
   { id: "volgorde", label: "De volgorde" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waar wij nee zeggen" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
@@ -265,13 +262,6 @@ export default function LittekensPage() {
         wel={LITTEKEN_WEL_NIET.wel}
         niet={LITTEKEN_WEL_NIET.niet}
         intro="Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets om te vermijden: wachten tot het wit is."
-      />
-
-      <WijZeggenNee
-        kop="Te vroeg is net zo"
-        accent="verkeerd als te laat."
-        intro="Bij een vers litteken behandelen we niet, en bij witte striae beloven we niets. Allebei die momenten voelen als een gemiste kans, en allebei zijn ze de reden dat je hier later niet teleurgesteld staat."
-        punten={LITTEKEN_WIJ_DOEN_NIET}
       />
 
       <NulmetingAssen
