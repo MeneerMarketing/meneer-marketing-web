@@ -87,9 +87,8 @@ export default function FigmaVoorJouSection() {
             <h2 className="diba-display-s mt-4">Waar wil je hulp bij?</h2>
           </div>
           <p className="max-w-xl self-end text-[15px] leading-7 text-[var(--t-body)]">
-            Kies waar je voor komt. Op elke pagina staat wat de klacht is, welke
-            behandelingen erbij horen, hoeveel sessies dat gemiddeld vraagt en
-            wat het kost.
+            Kies waar je voor komt. Op elke pagina lees je wat de klacht
+            inhoudt, welke behandelingen erbij horen en wat ze kosten.
           </p>
         </div>
 

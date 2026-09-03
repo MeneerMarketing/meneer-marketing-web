@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 3 september 2026 · 105 pagina's
+Diba Clinics · gegenereerd op 4 september 2026 · 105 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -38,7 +38,7 @@ Straks je huid op één plek
 
 - Je plan, je afspraken en wat er nog komt
 
-Nog in aanbouw. We bouwen eerst de zorg, dan pas het portaal.
+Dit portaal is nog in ontwikkeling.
 
 NL
 
@@ -54,31 +54,31 @@ NL
 
 **HUIDKLINIEK IN ROTTERDAM**
 
-Bij ons zit een behandelaar tegenover je die je huid beoordeelt met een getraind oog. Zij luistert naar je klacht, kijkt wat er aan de hand is en vertelt je wat er mogelijk is, met de prijs erbij. Boek je een afspraak met behandeling, dan kan die in dezelfde afspraak volgen.
+Diba Clinics is een huidkliniek in Rotterdam. Bij ons kun je terecht voor huidverbetering, laserontharing en de behandeling van huidklachten. We beginnen met een intake: je vertelt wat je wilt bereiken, wij bekijken je huid en samen kiezen we de behandeling die daarbij past.
 
 > knop: BEKIJK DE BEHANDELINGEN
 
 **Waar wil je hulp bij?**
 
-Kies waar je voor komt. Op elke pagina staat wat de klacht is, welke behandelingen erbij horen, hoeveel sessies dat gemiddeld vraagt en wat het kost.
+Kies waar je voor komt. Op elke pagina lees je wat de klacht inhoudt, welke behandelingen erbij horen en wat ze kosten.
 
-> knop: Acne & onzuiverheden Mee-eters en ontstekingen, behandeld in de volgorde die bij jouw huid past.
+> knop: Acne & onzuiverheden Behandelingen voor mee-eters, puistjes en een onrustige huid.
 
-> knop: Pigment & melasma Onder UV-licht wordt pigment zichtbaar dat in gewoon licht lastig te zien is.
+> knop: Pigment & melasma Behandelingen voor pigmentvlekken en melasma, passend bij je huidtype.
 
-> knop: Laserontharing Met alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.
+> knop: Laserontharing Ontharen met laser, per zone of als pakket, voor dames en heren.
 
-> knop: Littekens & textuur Microneedling en laser wekken nieuwe collageenaanmaak op in littekenweefsel.
+> knop: Littekens & textuur Behandelingen die littekens en een ongelijke huidstructuur verzachten.
 
-> knop: Huidveroudering Collageenopbouw en huidvernieuwing bij fijne lijnen en beginnende verslapping.
+> knop: Huidveroudering Behandelingen voor fijne lijnen, rimpels en een slappere huid.
 
-> knop: Lichaam & huid Ontharing, littekens en huidverbetering op rug, benen, oksels en bikinilijn.
+> knop: Lichaam & huid Huidbehandelingen en ontharing voor rug, benen, oksels en bikinilijn.
 
 > knop: BESPREEK DIT MET ONS
 
 **Zo verloopt een traject bij ons**
 
-De huidtherapeut beoordeelt je huid van dichtbij en onder UV-licht, waarmee ook pigment zichtbaar wordt dat je in de spiegel nog niet ziet. Daaruit volgt het behandelplan. Na acht weken beoordeelt zij opnieuw, onder dezelfde omstandigheden, zodat vooruitgang meetbaar is en geen kwestie van geheugen.
+Tijdens de intake bespreken we je klacht en bekijkt de behandelaar je huid. Helpt een huidanalyse daarbij, dan maken we opnames van je huid, ook onder UV-licht. Zo kun je later zien of er iets veranderd is. Niet elke behandeling vraagt om zo’n analyse.
 
 > knop: WAT GEBEURT ER IN EEN HUIDANALYSE?
 
@@ -94,15 +94,15 @@ Nog geen idee waar te beginnen? Stel je vraag, dan kijken we samen welke richtin
 
 **Hoe een behandeling bij ons begint**
 
-- EERST Het gesprek Je vertelt wat je dwarszit en wat je al hebt geprobeerd. De huidtherapeut vraagt door en luistert. Stap 1 van 3
+- EERST Het gesprek Je vertelt wat je klacht is, wat je wilt bereiken en wat je zelf al hebt geprobeerd. Stap 1 van 3
 
-- DAARNA Het onderzoek Zij beoordeelt je huid van dichtbij en legt hem waar dat helpt vast in beeld, ook onder UV. Stap 2 van 3
+- DAARNA Het onderzoek De behandelaar bekijkt je huid en maakt waar dat helpt opnames, ook onder UV-licht. Stap 2 van 3
 
-- TOT SLOT Het voorstel Je hoort welke behandeling past, hoeveel sessies dat vraagt en wat het per keer gaat kosten. Stap 3 van 3
+- TOT SLOT Het voorstel Je hoort welke behandeling past, hoeveel afspraken dat vraagt en wat het gaat kosten. Stap 3 van 3
 
 **Behandeld door huidtherapeuten**
 
-Er werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecialisten. Huidtherapeut is een beschermde titel: een hbo-bacheloropleiding met inschrijving in het Kwaliteitsregister Paramedici. Wie jou behandelt, hoor je bij het maken van de afspraak.
+Bij Diba werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecialisten. Huidtherapeut is een beschermde titel: daarvoor volg je een hbo-opleiding en sta je ingeschreven in het Kwaliteitsregister Paramedici.
 
 - Kwaliteitsregister Paramedici Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.
 
@@ -114,25 +114,25 @@ Er werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecia
 
 **Hoeveel afspraken je nodig hebt.**
 
-Dat verschilt per klacht en per behandeling. Sommige zijn met een afspraak klaar, andere vragen een reeks met weken ertussen. Je hoort in het consult wat er voor jou nodig is en wat het kost, zodat je weet waar je aan begint.
+Dat verschilt per klacht en per behandeling. Sommige behandelingen zijn na een afspraak klaar, andere doe je in een reeks met een paar weken ertussen. In de intake hoor je wat er in jouw geval nodig is.
 
 **Wat we vastleggen.**
 
-- PIGMENT Ook wat onder UV zichtbaar wordt en dieper zit.
+- PIGMENT Onder UV-licht wordt pigment zichtbaar dat je met het oog lastig ziet.
 
-- ROODHEID Waar het zit, hoe fel, en of het meebeweegt.
+- ROODHEID We leggen vast waar de roodheid zit en hoe uitgesproken die is.
 
-- TEXTUUR Poriën, oneffenheden en hoe de huid het licht breekt.
+- TEXTUUR Poriën en oneffenheden komen op de opnames goed naar voren.
 
-De opnames gaan onder hetzelfde licht en vanaf dezelfde afstand. Leggen we later opnieuw vast, dan is de vergelijking eerlijk.
+De opnames worden onder hetzelfde licht en vanaf dezelfde afstand gemaakt. Zo kun je ze later goed met elkaar vergelijken.
 
 **Wat je van een afspraak kunt verwachten.**
 
-Van de voorbereiding tot de nazorg-instructies die je mee naar huis krijgt.
+Je leest hier wat je voor de afspraak moet weten en wat je na afloop meekrijgt.
 
-**Jij bepaalt wanneer we beginnen**
+**Je beslist zelf**
 
-Kies je het huidconsult, dan gaat het advies met de prijs erbij mee naar huis. Boek je een behandeling op advies, dan hoor je eerst wat we voorstellen en wat het kost, en pas daarna gaan we door.
+Voordat we behandelen weet je wat we voorstellen en wat het kost. Wil je erover nadenken, dan krijg je het advies mee naar huis.
 
 DIBA CLINICS
 
@@ -140,7 +140,7 @@ Je vindt ons in Rotterdam.
 
 **Je weet vooraf wat het kost**
 
-Alle tarieven staan online: per sessie, per zone of per kwartier, afhankelijk van de behandeling. In het consult hoor je wat jouw plan gaat kosten voordat je beslist.
+Alle tarieven staan op deze site: per behandeling, per zone of per kwartier. In de intake hoor je wat jouw behandeling gaat kosten voordat je iets afspreekt.
 
 **Uitleg per klacht.**
 
@@ -170,19 +170,9 @@ Is een huidanalyse altijd nodig?
 
 Niet altijd. Wanneer een huidscan waarde toevoegt, leggen we uit wat we meten en waarom.
 
-**Twee manieren om te beginnen**
+**Plan een intake bij ons in Rotterdam.**
 
-Allebei beginnen ze met een gesprek en een beoordeling van je huid. Het verschil zit in wat er daarna gebeurt.
-
-MEEST GEKOZEN
-
-**Afspraak met behandeling**
-
-We reserveren maximaal twee uur. Blijkt behandelen die dag verantwoord en wil jij dat, dan gebeurt het meteen. De intakekosten vervallen dan.
-
-**Alleen intake en behandeladvies**
-
-Maximaal zestig minuten, 50 euro. Je gaat naar huis met een advies en de prijzen die erbij horen.
+Voor een intake met behandeling reserveren we maximaal twee uur. Behandelen we die dag, dan betaal je alleen de behandeling. Wil je alleen advies, dan duurt de afspraak maximaal een uur en kost hij 50 euro.
 
 Huidkliniek in Rotterdam. Behandelingen voor acne, pigment, littekens, huidverbetering en ongewenste haargroei.
 
@@ -11529,4 +11519,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5340 tekstblokken · ongeveer 81.060 woorden._
+_105 pagina's · 5335 tekstblokken · ongeveer 80.981 woorden._

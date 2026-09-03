@@ -427,5 +427,5 @@ export const MIJN_DIBA = {
     "Je foto's onder hetzelfde licht, dus echt vergelijkbaar",
     "Je plan, je afspraken en wat er nog komt",
   ],
-  voetnoot: "Nog in aanbouw. We bouwen eerst de zorg, dan pas het portaal.",
+  voetnoot: "Dit portaal is nog in ontwikkeling.",
 } as const;

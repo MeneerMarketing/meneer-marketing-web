@@ -32,16 +32,16 @@ export const HOME_WERKWIJZE_STEPS: readonly WerkwijzeStep[] = [
   {
     id: "gesprek",
     title: "Het gesprek",
-    body: "Je vertelt wat je dwarszit en wat je al hebt geprobeerd. De huidtherapeut vraagt door en luistert.",
+    body: "Je vertelt wat je klacht is, wat je wilt bereiken en wat je zelf al hebt geprobeerd.",
   },
   {
     id: "meting",
     title: "Het onderzoek",
-    body: "Zij beoordeelt je huid van dichtbij en legt hem waar dat helpt vast in beeld, ook onder UV.",
+    body: "De behandelaar bekijkt je huid en maakt waar dat helpt opnames, ook onder UV-licht.",
   },
   {
     id: "voorstel",
     title: "Het voorstel",
-    body: "Je hoort welke behandeling past, hoeveel sessies dat vraagt en wat het per keer gaat kosten.",
+    body: "Je hoort welke behandeling past, hoeveel afspraken dat vraagt en wat het gaat kosten.",
   },
 ] as const;
