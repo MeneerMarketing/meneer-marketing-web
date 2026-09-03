@@ -106,7 +106,7 @@ Er werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecia
 
 - Kwaliteitsregister Paramedici Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.
 
-- Contracten met zorgverzekeraars Of jouw behandeling vergoed wordt, hangt af van je klacht en je aanvullende pakket. [BESLUIT-OKAN]
+- Contracten met zorgverzekeraars Of jouw behandeling vergoed wordt, hangt af van je klacht en je aanvullende pakket.
 
 - Aangesloten bij ANBOS De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiëne en klachtafhandeling.
 
@@ -116,7 +116,7 @@ Er werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecia
 
 Dat verschilt per klacht en per behandeling. Sommige zijn met een afspraak klaar, andere vragen een reeks met weken ertussen. Je hoort in het consult wat er voor jou nodig is en wat het kost, zodat je weet waar je aan begint.
 
-**Wat we beoordelen.**
+**Wat we vastleggen.**
 
 - PIGMENT Ook wat onder UV zichtbaar wordt en dieper zit.
 
@@ -11529,4 +11529,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5340 tekstblokken · ongeveer 81.061 woorden._
+_105 pagina's · 5340 tekstblokken · ongeveer 81.060 woorden._

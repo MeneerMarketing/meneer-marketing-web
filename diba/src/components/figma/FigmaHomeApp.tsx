@@ -54,9 +54,14 @@ const EERLIJK_ADVIES_PUNTEN = [
       "Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.",
   },
   {
+    /* [BESLUIT-OKAN] Okan: "gecontracteerd bij alle zorgverzekeraars" alleen gebruiken
+       als het aantoonbaar is en jaarlijks nagekeken wordt. Tot die tijd staat er wat er
+       zeker klopt: er zijn contracten, en of jouw behandeling vergoed wordt hangt af van
+       je klacht en je pakket. De vlag hoort hier en niet in de zin: deze lijst gaat niet
+       langs publicCopy(), dus een vlag in de tekst leest de bezoeker mee. */
     titel: "Contracten met zorgverzekeraars",
     tekst:
-      "Of jouw behandeling vergoed wordt, hangt af van je klacht en je aanvullende pakket. [BESLUIT-OKAN]",
+      "Of jouw behandeling vergoed wordt, hangt af van je klacht en je aanvullende pakket.",
   },
   {
     titel: "Aangesloten bij ANBOS",
@@ -451,7 +456,7 @@ export default function FigmaHomeApp({
               <h3 className="diba-display-s mt-16 max-w-lg">
                 Wat we
                 <br />
-                beoordelen.
+                vastleggen.
               </h3>
               {/* Hier stonden drie verzonnen cijfers: "Hydratatie +18%" met een balkje
                   op tweeënzeventig procent. Mooi, en het betekende niets — het getal kwam
