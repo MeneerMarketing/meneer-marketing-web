@@ -123,27 +123,41 @@ export default function HeroVariant() {
               op de SE op 4,07 steken tegen de eis van 4,5. Vanaf lg staat de tekst laag
               genoeg en gaat de laag uit (`lg:bg-none`), want daar is verduisteren alleen
               verlies. */}
-          <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[var(--g-900)]/88 via-[var(--g-900)]/74 via-88% to-transparent px-5 pt-28 pb-8 sm:px-8 sm:pb-10 lg:bg-none lg:px-10 lg:pt-0 lg:pb-14">
+          <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[var(--g-900)]/88 via-[var(--g-900)]/74 via-88% to-transparent px-5 pt-20 pb-8 sm:px-8 sm:pt-28 sm:pb-10 lg:bg-none lg:px-10 lg:pt-0 lg:pb-14">
             <div className="max-w-[46ch]">
               <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
-                Huidkliniek
-                <br />
-                <span className="diba-accent-on-dark">in Rotterdam</span>
+                <span className="lg:hidden">
+                  Eerst meten.
+                  <br />
+                  <span className="diba-accent-on-dark">Daarna advies.</span>
+                </span>
+                <span className="hidden lg:inline">
+                  Eerst meten.
+                  <br />
+                  <span className="diba-accent-on-dark">Daarna pas ingrijpen.</span>
+                </span>
               </h1>
 
-              <p className="mt-5 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Je hoeft vooraf niet te weten welke behandeling je nodig hebt.
-                We luisteren naar waar je last van hebt, bekijken je huid en
-                leggen duidelijk uit wat wel en niet zinvol is. Alle prijzen
-                staan vooraf online.
+              <p className="mt-4 max-w-[46ch] text-[15px] leading-[1.65] text-[var(--on-dark-body)] sm:mt-5 sm:text-[16px] sm:leading-7">
+                <span className="lg:hidden">
+                  We meten je huid onder vast licht. Je hoort direct wat zinvol
+                  is, en ook wanneer wachten slimmer is.
+                </span>
+                <span className="hidden lg:inline">
+                  Je hoeft vooraf niet te weten welke behandeling past. We
+                  luisteren, meten je huid en leggen uit wat wel en niet zinvol
+                  is. Alle prijzen staan vooraf online.
+                </span>
               </p>
 
-              <div className="mt-8 flex flex-wrap items-center gap-3">
+              <div className="mt-6 flex flex-wrap items-center gap-2.5 sm:mt-8 sm:gap-3">
                 <Button href="/intake" variant="primair-op-donker">
-                  Plan een eerste afspraak
+                  <span className="lg:hidden">Plan intake</span>
+                  <span className="hidden lg:inline">Plan een eerste afspraak</span>
                 </Button>
                 <Button href="/behandelingen" variant="secundair-op-donker">
-                  Bekijk de behandelingen
+                  <span className="lg:hidden">Behandelingen</span>
+                  <span className="hidden lg:inline">Bekijk de behandelingen</span>
                 </Button>
               </div>
             </div>
