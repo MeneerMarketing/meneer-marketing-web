@@ -194,7 +194,7 @@ export const VAKGEBIEDEN: readonly {
  * WAAROM DIT ER PAS NU STAAT.
  *
  * Rojda las de site op 3 september 2026 en schreef: "Ik zie juist al onze sterke punten
- * niet terug." Ze noemde er drie, en geen van drieen stond ergens op de site: Diba is
+ * niet terug." Ze noemde er drie, en geen van drieën stond ergens op de site: Diba is
  * gecontracteerd bij alle zorgverzekeraars, de therapeuten staan in het Kwaliteitsregister
  * Paramedici, en de kliniek is aangesloten bij ANBOS.
  *
@@ -217,7 +217,7 @@ export const ERKENNINGEN = [
   },
   {
     naam: "Aangesloten bij ANBOS",
-    zin: "De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiene en klachtafhandeling.",
+    zin: "De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiëne en klachtafhandeling.",
   },
 ] as const;
 

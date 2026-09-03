@@ -36,26 +36,32 @@ import {
 import { DIBA_HOME_PROOF_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
 
 /**
- * De drie punten onder "Eerlijk advies". Concepttekst, overgenomen uit het ontwerp.
+ * De drie punten onder "Behandeld door huidtherapeuten".
  *
- * Eén ding bewust anders dan het ontwerp: daar staat bij kosten "Geen verrassingen
- * achteraf — tarieven staan openbaar." Gedachtestreepjes zijn verboden in copy (§10),
- * dus dat is een punt geworden.
+ * WAT HIER STOND.
+ *
+ * Drie beloftes over onze houding: altijd een doel, vooraf de prijs, ook het rustige
+ * advies. Allemaal waar, en geen ervan na te kijken. Rojda las de site en schreef: "Ik zie
+ * juist al onze sterke punten niet terug." Ze noemde er drie, en die stonden nergens op
+ * deze pagina terwijl ze precies het verschil zijn met de kliniek om de hoek.
+ *
+ * Feiten dus, in plaats van eigenschappen. Wie ze wil controleren kan dat.
  */
 const EERLIJK_ADVIES_PUNTEN = [
   {
-    titel: "Altijd een doel",
+    titel: "Kwaliteitsregister Paramedici",
     tekst:
-      "We beginnen met een huidmeting en een plan dat je mee naar huis krijgt.",
+      "Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.",
   },
   {
-    titel: "Vooraf de prijs",
+    titel: "Gecontracteerd bij alle zorgverzekeraars",
     tekst:
-      "Je weet wat het kost voordat je gaat liggen. Alle tarieven staan online.",
+      "Je hoeft niet uit te zoeken of wij bij jouw verzekeraar zijn aangesloten. Dat zijn we, bij allemaal.",
   },
   {
-    titel: "Ook het rustige advies",
-    tekst: "Heeft je huid eerst rust nodig, dan hoor je dat van ons.",
+    titel: "Aangesloten bij ANBOS",
+    tekst:
+      "De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiëne en klachtafhandeling.",
   },
 ] as const;
 
@@ -130,10 +136,11 @@ export default function FigmaHomeApp({
                 </h1>
 
                 <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Kom met je klacht, dan zoeken wij de behandeling erbij. We
-                  luisteren, meten je huid en leggen uit wat er in jouw geval
-                  mogelijk is en wat dat oplevert. Alle prijzen staan vooraf
-                  online.
+                  Onze huidtherapeuten behandelen acne, pigmentvlekken,
+                  littekens, couperose en ongewenste haargroei. Elk traject
+                  begint met een huidanalyse: we brengen je huid in kaart met de
+                  EVE-M-scanner en bepalen daarmee welke behandeling bij jouw
+                  huidtype past. Alle tarieven staan vooraf online.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -202,9 +209,11 @@ export default function FigmaHomeApp({
               <span className="diba-accent-on-dark">een traject bij ons</span>
             </h2>
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Met de EVE-M huidanalyse maken we een objectieve nulmeting. Zo
-              zien we wat jouw huid nodig heeft en volgen we jouw voortgang in
-              beeld.
+              De EVE-M-scanner fotografeert je huid onder vaste belichting en
+              meet pigment, roodheid, poriegrootte en vochtgehalte. Onder
+              UV-licht wordt zichtbaar wat er dieper in de huid zit. Die
+              nulmeting bepaalt het behandelplan, en na acht weken meten we
+              opnieuw met dezelfde instellingen.
             </p>
             {/* items-center en niet items-start. De wikkel is `w-fit`, dus precies zo
                 breed als de knop; met links uitlijnen begon de link daaronder aan de
@@ -248,9 +257,9 @@ export default function FigmaHomeApp({
             <DibaIcon variant="wit" size={52} />
             <p className="max-w-xl text-sm leading-6 text-[var(--on-dark-body)]">
               <strong className="font-medium text-[var(--on-dark)]">
-                Elke huid wordt serieus genomen.
+                Nog geen idee waar te beginnen?
               </strong>{" "}
-              Ook als je nog niet weet waar je moet beginnen.
+              Stel je vraag, dan kijken we samen welke richting past.
             </p>
           </div>
           <a
@@ -292,9 +301,9 @@ export default function FigmaHomeApp({
               Jouw huid in kaart.
             </h3>
             <p className="mt-5 max-w-md leading-7 text-[var(--t-body)]">
-              Tijdens je intake bekijken we onder meer hydratatie, pigment,
-              poriën en huidstructuur. De huidscan geeft ons een objectieve
-              start. Jouw wensen blijven altijd leidend.
+              De scanner meet pigment, roodheid, poriegrootte, vochtgehalte en
+              huidstructuur, in gewoon licht en onder UV. Je ziet de opnames
+              direct op het scherm en we lopen ze samen door.
             </p>
             <Button
               href="/intake"
@@ -354,14 +363,14 @@ export default function FigmaHomeApp({
           </div>
 
           <div className="rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:p-10">
-            <Label>Eerlijk advies</Label>
+            <Label>De behandelaars</Label>
             <h2 className="diba-card-title-lg mt-4">
-              We zeggen je eerlijk wat je huid nu nodig heeft.
+              Behandeld door huidtherapeuten
             </h2>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Soms is dat een behandeling, soms is dat tijd. Elke behandeling
-              heeft hier een reden die je zelf kunt navertellen: passend bij
-              jouw huid, jouw doel en jouw veiligheid.
+              Huidtherapeut is een beschermde titel: een hbo-bacheloropleiding
+              en inschrijving in het Kwaliteitsregister Paramedici. Bij laser en
+              needling staat er altijd een huidtherapeut aan je stoel.
             </p>
 
             <ul className="mt-6 space-y-2.5">
@@ -416,15 +425,15 @@ export default function FigmaHomeApp({
               niet dat ze even hoog beginnen, maar dat ze samen één regel vormen. */}
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
             <div className="shrink-0">
-              <Label>Niet zomaar een afspraak</Label>
+              <Label>Het traject</Label>
               <h2 className="diba-display-m mt-4 lg:whitespace-nowrap">
-                Een traject dat met je meebeweegt.
+                Een reeks sessies, met een hermeting.
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Een mooie huid is zelden één moment. Daarom bekijken we samen wat
-              er speelt, wat haalbaar is en hoe we jouw voortgang kunnen volgen,
-              zonder dat je vastzit aan een pakket.
+              De meeste huidklachten vragen een reeks van vier tot acht sessies,
+              met twee tot zes weken ertussen. Na acht weken meten we opnieuw en
+              leggen we de opnames naast elkaar. Je betaalt per sessie.
             </p>
           </div>
           <div className="mt-14 grid gap-4 lg:grid-cols-[1.05fr_.95fr]">
@@ -436,9 +445,9 @@ export default function FigmaHomeApp({
                 <DibaIcon variant="groen" size={38} />
               </div>
               <h3 className="diba-display-s mt-16 max-w-lg">
-                Zie wat je huid
+                Wat de scanner
                 <br />
-                je vertelt.
+                meet.
               </h3>
               {/* Hier stonden drie verzonnen cijfers: "Hydratatie +18%" met een balkje
                   op tweeënzeventig procent. Mooi, en het betekende niets — het getal kwam
@@ -510,12 +519,12 @@ export default function FigmaHomeApp({
             <div>
               <Label>In de kliniek</Label>
               <h2 className="diba-display-m mt-4">
-                Een groene pauze in je dag.
+                Wat je van een afspraak kunt verwachten.
               </h2>
             </div>
             <p className="max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-              Van de eerste kop thee tot je nazorg: we hebben aandacht voor de
-              hele ervaring.
+              Van de voorbereiding tot de nazorg-instructies die je mee naar
+              huis krijgt.
             </p>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-[.75fr_1.25fr_.75fr]">
@@ -576,9 +585,9 @@ export default function FigmaHomeApp({
                 Je weet vooraf wat het kost
               </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                We vertellen welke behandelingen mogelijk zijn, wat ze kosten en
-                wat je ervan kunt verwachten. Ook als het antwoord is dat
-                afwachten verstandiger is.
+                Elke behandeling heeft een tarief per sessie, en dat staat
+                online. In het consult hoor je hoeveel sessies jouw klacht
+                gemiddeld vraagt, zodat je weet waar je aan begint.
               </p>
               <Link
                 href="/prijzen"

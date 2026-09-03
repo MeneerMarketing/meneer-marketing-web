@@ -24,7 +24,8 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     id: "acne",
     icoon: "verstopte-porie",
     title: "Acne & onzuiverheden",
-    subtitle: "Rust in je huid, met een plan dat past.",
+    subtitle:
+      "Mee-eters en ontstekingen, aangepakt op de oorzaak en niet alleen op de puist.",
     href: "/huidproblemen/acne",
     image: FIGMA_INTENT_ACNE.src,
     imageAlt: FIGMA_INTENT_ACNE.alt,
@@ -33,7 +34,8 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     id: "pigment",
     icoon: "huid-glans",
     title: "Pigment & melasma",
-    subtitle: "Eerst meten hoe diep het zit, dan pas behandelen.",
+    subtitle:
+      "Onder UV-licht meten we hoe diep het pigment zit. Dat bepaalt de behandeling.",
     href: "/huidproblemen/pigmentvlekken",
     image: FIGMA_INTENT_PIGMENT.src,
     imageAlt: FIGMA_INTENT_PIGMENT.alt,
@@ -42,7 +44,8 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     id: "laser",
     icoon: "haarzakje",
     title: "Laserontharing",
-    subtitle: "Veilig, helder en afgestemd op jouw huidtype.",
+    subtitle:
+      "Alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.",
     href: "/laserontharing",
     image: FIGMA_INTENT_LASER.src,
     imageAlt: FIGMA_INTENT_LASER.alt,
@@ -51,7 +54,8 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     id: "littekens",
     icoon: "huid-bultje",
     title: "Littekens & textuur",
-    subtitle: "Werk stap voor stap aan herstel en structuur.",
+    subtitle:
+      "Microneedling en laser wekken nieuwe collageenaanmaak op in ingezonken littekens.",
     href: "/huidproblemen/littekens",
     image: FIGMA_INTENT_LITTEKENS.src,
     imageAlt: FIGMA_INTENT_LITTEKENS.alt,
@@ -60,7 +64,8 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     id: "veroudering",
     icoon: "huid-strakker",
     title: "Huidveroudering",
-    subtitle: "Frisser worden en jezelf blijven herkennen.",
+    subtitle:
+      "Collageenopbouw en huidvernieuwing bij fijne lijnen en verslapping.",
     href: "/huidproblemen/huidveroudering",
     image: FIGMA_INTENT_VEROUDERING.src,
     imageAlt: FIGMA_INTENT_VEROUDERING.alt,
@@ -69,7 +74,8 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     id: "lichaam",
     icoon: "porie-vocht",
     title: "Lichaam & huid",
-    subtitle: "Ook je lichaam verdient gerichte huidzorg.",
+    subtitle:
+      "Ontharing, littekens en huidverbetering op rug, benen, oksels en bikinilijn.",
     href: "/huidproblemen/cellulitis",
     image: FIGMA_INTENT_LICHAAM.src,
     imageAlt: FIGMA_INTENT_LICHAAM.alt,

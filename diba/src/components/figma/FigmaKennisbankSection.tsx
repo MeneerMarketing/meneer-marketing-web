@@ -20,7 +20,7 @@ export default function FigmaKennisbankSection({
         <div className="flex flex-wrap items-end justify-between gap-5">
           <div>
             <Label>Diba kennisbank</Label>
-            <h2 className="diba-display-m mt-4">Eerlijke huidkennis.</h2>
+            <h2 className="diba-display-m mt-4">Uitleg per klacht.</h2>
           </div>
           {/* Wees hier naar het huidprobleemoverzicht, terwijl de kop "Diba kennisbank"
               belooft. Nu naar de kennisbank zelf, die sinds vandaag bestaat. */}

@@ -17,8 +17,9 @@ export const HOME_KENNISBANK_ARTICLES: readonly KennisbankArticle[] = [
   {
     id: "acne",
     tag: "Acne & huidzorg",
-    title: "Acne zonder TikTok-hypes",
-    summary: "Wat er werkelijk helpt bij acne, en in welke volgorde.",
+    title: "Acne: wat wanneer werkt",
+    summary:
+      "Van comedonen tot ontstekingen: welke behandeling bij welk stadium hoort.",
     href: "/huidproblemen/acne",
     image: FIGMA_KENNISBANK_ACNE,
   },

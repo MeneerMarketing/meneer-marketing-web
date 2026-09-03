@@ -54,7 +54,7 @@ NL
 
 **HUIDKLINIEK IN ROTTERDAM**
 
-Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je huid en leggen uit wat er in jouw geval mogelijk is en wat dat oplevert. Alle prijzen staan vooraf online.
+Onze huidtherapeuten behandelen acne, pigmentvlekken, littekens, couperose en ongewenste haargroei. Elk traject begint met een huidanalyse: we brengen je huid in kaart met de EVE-M-scanner en bepalen daarmee welke behandeling bij jouw huidtype past. Alle tarieven staan vooraf online.
 
 > knop: PLAN EEN EERSTE AFSPRAAK
 
@@ -62,25 +62,25 @@ Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je h
 
 **Waar wil je hulp bij?**
 
-Of je nu last hebt van acne, pigment, ongewenste haargroei of een huid die veranderd voelt: we beginnen bij wat jouw huid écht nodig heeft.
+Kies waar je voor komt. Op elke pagina staat wat de klacht is, welke behandelingen erbij horen, hoeveel sessies dat gemiddeld vraagt en wat het kost.
 
-> knop: Acne & onzuiverheden Rust in je huid, met een plan dat past.
+> knop: Acne & onzuiverheden Mee-eters en ontstekingen, aangepakt op de oorzaak en niet alleen op de puist.
 
-> knop: Pigment & melasma Eerst meten hoe diep het zit, dan pas behandelen.
+> knop: Pigment & melasma Onder UV-licht meten we hoe diep het pigment zit. Dat bepaalt de behandeling.
 
-> knop: Laserontharing Veilig, helder en afgestemd op jouw huidtype.
+> knop: Laserontharing Alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.
 
-> knop: Littekens & textuur Werk stap voor stap aan herstel en structuur.
+> knop: Littekens & textuur Microneedling en laser wekken nieuwe collageenaanmaak op in ingezonken littekens.
 
-> knop: Huidveroudering Frisser worden en jezelf blijven herkennen.
+> knop: Huidveroudering Collageenopbouw en huidvernieuwing bij fijne lijnen en verslapping.
 
-> knop: Lichaam & huid Ook je lichaam verdient gerichte huidzorg.
+> knop: Lichaam & huid Ontharing, littekens en huidverbetering op rug, benen, oksels en bikinilijn.
 
 > knop: BESPREEK DIT MET ONS
 
 **Zo verloopt een traject bij ons**
 
-Met de EVE-M huidanalyse maken we een objectieve nulmeting. Zo zien we wat jouw huid nodig heeft en volgen we jouw voortgang in beeld.
+De EVE-M-scanner fotografeert je huid onder vaste belichting en meet pigment, roodheid, poriegrootte en vochtgehalte. Onder UV-licht wordt zichtbaar wat er dieper in de huid zit. Die nulmeting bepaalt het behandelplan, en na acht weken meten we opnieuw met dezelfde instellingen.
 
 > knop: HOE WERKT DE HUIDSCAN?
 
@@ -90,7 +90,7 @@ Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je ze
 
 > knop: START DE MINI-SCAN
 
-Elke huid wordt serieus genomen. Ook als je nog niet weet waar je moet beginnen.
+Nog geen idee waar te beginnen? Stel je vraag, dan kijken we samen welke richting past.
 
 > knop: STEL JE VRAAG
 
@@ -102,23 +102,23 @@ Elke huid wordt serieus genomen. Ook als je nog niet weet waar je moet beginnen.
 
 - TOT SLOT Het voorstel Wat er kan, wat het kost en wat je kunt verwachten. Daarna beslis jij, in je eigen tempo. Stap 3 van 3
 
-**We zeggen je eerlijk wat je huid nu nodig heeft.**
+**Behandeld door huidtherapeuten**
 
-Soms is dat een behandeling, soms is dat tijd. Elke behandeling heeft hier een reden die je zelf kunt navertellen: passend bij jouw huid, jouw doel en jouw veiligheid.
+Huidtherapeut is een beschermde titel: een hbo-bacheloropleiding en inschrijving in het Kwaliteitsregister Paramedici. Bij laser en needling staat er altijd een huidtherapeut aan je stoel.
 
-- Altijd een doel We beginnen met een huidmeting en een plan dat je mee naar huis krijgt.
+- Kwaliteitsregister Paramedici Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.
 
-- Vooraf de prijs Je weet wat het kost voordat je gaat liggen. Alle tarieven staan online.
+- Gecontracteerd bij alle zorgverzekeraars Je hoeft niet uit te zoeken of wij bij jouw verzekeraar zijn aangesloten. Dat zijn we, bij allemaal.
 
-- Ook het rustige advies Heeft je huid eerst rust nodig, dan hoor je dat van ons.
+- Aangesloten bij ANBOS De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiëne en klachtafhandeling.
 
 > knop: ZO WERKT EEN EERSTE AFSPRAAK
 
-**Een traject dat met je meebeweegt.**
+**Een reeks sessies, met een hermeting.**
 
-Een mooie huid is zelden één moment. Daarom bekijken we samen wat er speelt, wat haalbaar is en hoe we jouw voortgang kunnen volgen, zonder dat je vastzit aan een pakket.
+De meeste huidklachten vragen een reeks van vier tot acht sessies, met twee tot zes weken ertussen. Na acht weken meten we opnieuw en leggen we de opnames naast elkaar. Je betaalt per sessie.
 
-**Zie wat je huid je vertelt.**
+**Wat de scanner meet.**
 
 - PIGMENT Ook wat onder UV zichtbaar wordt en dieper zit.
 
@@ -128,9 +128,9 @@ Een mooie huid is zelden één moment. Daarom bekijken we samen wat er speelt, w
 
 Elke meting gaat onder hetzelfde licht en vanaf dezelfde afstand, zodat je die van vandaag naast die van acht weken geleden kunt leggen.
 
-**Een groene pauze in je dag.**
+**Wat je van een afspraak kunt verwachten.**
 
-Van de eerste kop thee tot je nazorg: we hebben aandacht voor de hele ervaring.
+Van de voorbereiding tot de nazorg-instructies die je mee naar huis krijgt.
 
 **Jij bepaalt wanneer we beginnen**
 
@@ -142,11 +142,11 @@ Je vindt ons in Rotterdam.
 
 **Je weet vooraf wat het kost**
 
-We vertellen welke behandelingen mogelijk zijn, wat ze kosten en wat je ervan kunt verwachten. Ook als het antwoord is dat afwachten verstandiger is.
+Elke behandeling heeft een tarief per sessie, en dat staat online. In het consult hoor je hoeveel sessies jouw klacht gemiddeld vraagt, zodat je weet waar je aan begint.
 
-**Eerlijke huidkennis.**
+**Uitleg per klacht.**
 
-> knop: ACNE & HUIDZORG Acne zonder TikTok-hypes Wat er werkelijk helpt bij acne, en in welke volgorde. LEES MEER
+> knop: ACNE & HUIDZORG Acne: wat wanneer werkt Van comedonen tot ontstekingen: welke behandeling bij welk stadium hoort. LEES MEER
 
 > knop: PIGMENT & MELASMA Pigment: een realistisch plan Waarom geduld en bescherming net zo belangrijk zijn als behandeling. LEES MEER
 
@@ -390,15 +390,15 @@ De reviews staan op Salonized en worden daar verzameld, niet door ons. We kunnen
 
 NA AFLOOP, AAN DE WEISSENBRUCHLAAN
 
-**Gereedschap, geen belofte.**
+**Onze apparatuur en het team.**
 
-Een apparaatnaam zegt minder dan hij lijkt te zeggen. “Wij hebben de Fotona” klinkt als een belofte, alsof het apparaat het werk doet en de kliniek alleen de stekker erin steekt. Het is andersom: wat telt is de instelling en de hand die het vasthoudt.
+Een laser doet het werk niet alleen. Welke golflengte, welke pulsduur en welke energie er bij jouw huidtype horen, bepaalt de huidtherapeut aan de hand van de meting. Hieronder staat waar we mee werken en wie ermee werkt.
 
-- 12 apparaten Van meetapparatuur tot laser. Bij elk staat op deze site wat het níet kan. BEKIJK DE APPARATUUR ›
+- 12 apparaten Van huidscanner tot alexandrietlaser. Per apparaat staat welke techniek erin zit en waarvoor hij is. BEKIJK DE APPARATUUR ›
 
-- 22 behandelingen Allemaal met de prijs erbij, per sessie en per variant. Geen bedragen die pas aan de balie compleet worden. NAAR DE PRIJZEN ›
+- 22 behandelingen Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
 
-- 8 mensen Huidtherapeuten en orthomoleculair huidspecialisten. Bij welke titel wettelijk beschermd is, staat het erbij. NAAR HET TEAM ›
+- 8 mensen Huidtherapeuten met een hbo-bachelor en inschrijving in het Kwaliteitsregister Paramedici, plus orthomoleculair huidspecialisten. NAAR HET TEAM ›
 
 **Waar deze kliniek voor staat**
 
@@ -584,7 +584,7 @@ Twee wegwijzers die sorteren op kleur of op wat je voelt, in plaats van op een n
 
 - Wat werkt en wat niet Links wat we doen, rechts wat we afraden, en bij allebei waarom.
 
-- Waar wij nee zeggen Elke pagina heeft er een. Soms omdat het te weinig oplevert, soms omdat het niet aan ons is.
+- Wat wij eraan doen Welke behandeling erbij past, hoeveel sessies dat vraagt en wat het kost.
 
 - Hoe we het meten Zonder beginpunt is een verschil later iets dat je moet geloven. Daarom leggen we vast waar we starten.
 
@@ -8798,7 +8798,7 @@ Is er een medische reden voor je klacht, dan is er een route. Huidtherapie zit b
 
 - Kwaliteitsregister Paramedici Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.
 
-- Aangesloten bij ANBOS De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiene en klachtafhandeling.
+- Aangesloten bij ANBOS De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiëne en klachtafhandeling.
 
 Voorwaarden en maxima veranderen per jaar en per pakket.
 
@@ -11523,4 +11523,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5337 tekstblokken · ongeveer 81.015 woorden._
+_105 pagina's · 5337 tekstblokken · ongeveer 81.043 woorden._

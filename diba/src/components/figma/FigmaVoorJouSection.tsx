@@ -87,9 +87,9 @@ export default function FigmaVoorJouSection() {
             <h2 className="diba-display-s mt-4">Waar wil je hulp bij?</h2>
           </div>
           <p className="max-w-xl self-end text-[15px] leading-7 text-[var(--t-body)]">
-            Of je nu last hebt van acne, pigment, ongewenste haargroei of een
-            huid die veranderd voelt: we beginnen bij wat jouw huid écht nodig
-            heeft.
+            Kies waar je voor komt. Op elke pagina staat wat de klacht is, welke
+            behandelingen erbij horen, hoeveel sessies dat gemiddeld vraagt en
+            wat het kost.
           </p>
         </div>
 

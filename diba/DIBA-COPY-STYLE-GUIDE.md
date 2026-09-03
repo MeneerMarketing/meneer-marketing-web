@@ -14,7 +14,7 @@ Rojda las de hele site en concludeerde: "Alles is wat wij niet kunnen. Niks is w
 kunnen. Zo kan de site echt niet online." Dat is de aanleiding voor de vier regels hieronder.
 Ze gaan boven alles wat er verderop in deze gids staat.
 
-**1. Eerlijkheid staat nooit boven de commerciele functie van de pagina.**
+**1. Eerlijkheid staat nooit boven de commerciële functie van de pagina.**
 Benoem medische grenzen duidelijk, maar zet centraal waarmee Diba wel kan helpen. Een
 beperking mag nooit een reden worden om de bezoeker weg te sturen als er binnen Diba een
 veilige en passende mogelijkheid is. Een pagina die eindigt bij iemand anders is alleen

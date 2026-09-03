@@ -243,13 +243,13 @@ export default function OverOnsPage() {
           <div>
             <Label>Wat er in huis is</Label>
             <h2 className="diba-display-m mt-4">
-              Gereedschap, <span className="diba-accent">geen belofte.</span>
+              Onze <span className="diba-accent">apparatuur en het team.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Een apparaatnaam zegt minder dan hij lijkt te zeggen. “Wij hebben
-              de Fotona” klinkt als een belofte, alsof het apparaat het werk
-              doet en de kliniek alleen de stekker erin steekt. Het is andersom:
-              wat telt is de instelling en de hand die het vasthoudt.
+              Een laser doet het werk niet alleen. Welke golflengte, welke
+              pulsduur en welke energie er bij jouw huidtype horen, bepaalt de
+              huidtherapeut aan de hand van de meting. Hieronder staat waar we
+              mee werken en wie ermee werkt.
             </p>
           </div>
 
@@ -258,21 +258,21 @@ export default function OverOnsPage() {
               {
                 getal: String(APPARATUUR.length),
                 kop: "apparaten",
-                zin: "Van meetapparatuur tot laser. Bij elk staat op deze site wat het níet kan.",
+                zin: "Van huidscanner tot alexandrietlaser. Per apparaat staat welke techniek erin zit en waarvoor hij is.",
                 href: "/apparatuur",
                 link: "Bekijk de apparatuur",
               },
               {
                 getal: String(BEHANDELINGEN.length),
                 kop: "behandelingen",
-                zin: "Allemaal met de prijs erbij, per sessie en per variant. Geen bedragen die pas aan de balie compleet worden.",
+                zin: "Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt.",
                 href: "/prijzen",
                 link: "Naar de prijzen",
               },
               {
                 getal: String(TEAM.length),
                 kop: "mensen",
-                zin: "Huidtherapeuten en orthomoleculair huidspecialisten. Bij welke titel wettelijk beschermd is, staat het erbij.",
+                zin: "Huidtherapeuten met een hbo-bachelor en inschrijving in het Kwaliteitsregister Paramedici, plus orthomoleculair huidspecialisten.",
                 href: "/team",
                 link: "Naar het team",
               },
