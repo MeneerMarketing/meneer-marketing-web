@@ -141,11 +141,9 @@ export default function FigmaHomeApp({
                 </h1>
 
                 <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Diba Clinics is een huidkliniek in Rotterdam. Bij ons kun je
-                  terecht voor huidverbetering, laserontharing en de behandeling
-                  van huidklachten. We beginnen met een intake: je vertelt wat
-                  je wilt bereiken, wij bekijken je huid en samen kiezen we de
-                  behandeling die daarbij past.
+                  Bij Diba werken huidtherapeuten en huidspecialisten. We
+                  behandelen huidklachten en verzorgen huidverbetering en
+                  laserontharing. In de intake kijken we wat bij jou past.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -215,9 +213,9 @@ export default function FigmaHomeApp({
             </h2>
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
               Tijdens de intake bespreken we je klacht en bekijkt de behandelaar
-              je huid. Helpt een huidanalyse daarbij, dan maken we opnames van
-              je huid, ook onder UV-licht. Zo kun je later zien of er iets
-              veranderd is. Niet elke behandeling vraagt om zo’n analyse.
+              je huid. Helpt een huidanalyse daarbij, dan maken we opnames met
+              de EVE-M. Zo kun je later zien of er iets veranderd is. Niet elke
+              behandeling vraagt om zo’n analyse.
             </p>
             {/* items-center en niet items-start. De wikkel is `w-fit`, dus precies zo
                 breed als de knop; met links uitlijnen begon de link daaronder aan de
