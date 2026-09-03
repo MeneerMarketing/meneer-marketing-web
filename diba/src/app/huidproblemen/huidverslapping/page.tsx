@@ -259,7 +259,7 @@ export default function Pagina() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies."
+        tekst="In het huidconsult doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies."
         topic="huidverslapping"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

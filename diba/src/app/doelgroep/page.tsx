@@ -248,7 +248,7 @@ export default function DoelgroepHubPage() {
                 href="/intake"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
               >
-                Plan Behandeling Nul
+                Plan een huidconsult
               </Link>
               <a
                 href={DIBA_WHATSAPP_URL}

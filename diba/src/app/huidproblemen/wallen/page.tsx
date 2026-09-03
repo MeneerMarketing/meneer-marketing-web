@@ -249,7 +249,7 @@ export default function WallenPage() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="In Behandeling Nul stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen."
+        tekst="In het huidconsult stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen."
         topic="wallen"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

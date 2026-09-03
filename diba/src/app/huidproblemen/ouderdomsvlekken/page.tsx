@@ -249,7 +249,7 @@ export default function Pagina() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het pigment dat je zelf nog niet ziet. Daarna weet je wat er kan en wat er eerst ergens anders hoort."
+        tekst="In het huidconsult beoordelen we de plekken en meten we onder UV-licht ook het pigment dat je zelf nog niet ziet. Daarna weet je wat er kan en wat er eerst ergens anders hoort."
         topic="ouderdomsvlekken"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

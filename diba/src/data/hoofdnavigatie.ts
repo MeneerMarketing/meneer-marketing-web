@@ -121,7 +121,7 @@ function uitGroep(groep: Groep): readonly NavLink[] {
  * - Huidproblemen: je weet nog niet hoe het heet. Dus de symptoomzoeker, met het
  *   huidprofiel als tweede stap.
  * - Behandelingen: je weet wat er speelt en zoekt wat erbij past. Dus het huidprofiel, met
- *   Behandeling Nul als tweede stap.
+ *   Het huidconsult als tweede stap.
  * - Over Diba: je kijkt naar ons en niet naar je huid. Dus wat klanten schrijven, want dat
  *   is het enige oordeel dat niet van onszelf komt.
  *
@@ -151,7 +151,7 @@ const HUIDPROFIEL_BLOK: NavUitgelicht = {
   href: "/huidprofiel",
   knop: "Vul het in",
   tweede: {
-    tekst: "Liever eerst meten? Naar Behandeling Nul",
+    tekst: "Liever eerst meten? Naar het huidconsult",
     href: "/intake",
   },
   foto: {
@@ -236,7 +236,7 @@ export const HOOFDNAV: readonly NavItem[] = [
         kop: "Begin hier",
         items: [
           {
-            label: "Behandeling Nul",
+            label: "Het huidconsult",
             href: "/intake",
             zin: "De afspraak waarin niet behandeld wordt",
           },

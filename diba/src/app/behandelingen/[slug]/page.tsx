@@ -239,7 +239,7 @@ export default async function BehandelingPage({ params }: PageProps) {
               href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Plan Behandeling Nul
+              Plan een huidconsult
             </Link>
             <Link
               href="/behandelingen"
@@ -563,7 +563,7 @@ export default async function BehandelingPage({ params }: PageProps) {
               href="/intake"
               className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Wat er in Behandeling Nul gebeurt
+              Wat er in een huidconsult gebeurt
             </Link>
           </div>
         </div>

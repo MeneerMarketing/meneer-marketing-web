@@ -147,7 +147,7 @@ export default function LaserConfiguratorPage() {
               </span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wat je hier samenstelt is een plan op papier. In Behandeling Nul
+              Wat je hier samenstelt is een plan op papier. In het huidconsult
               kijken we of het klopt: je huidtype, je haargroei en of laseren
               bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat
               voordat je iets betaalt.

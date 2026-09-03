@@ -92,7 +92,7 @@ export default function DevComponentsPage() {
 
         <DevSection title="Knoppen">
           <div className="flex max-w-md flex-col items-start gap-3">
-            <span className={figmaBtnPrimary}>Plan Behandeling Nul ↗</span>
+            <span className={figmaBtnPrimary}>Plan een huidconsult ↗</span>
             <span className={figmaBtnMint}>Bekijk alle prijzen ↗</span>
             <Link
               href="/contact"

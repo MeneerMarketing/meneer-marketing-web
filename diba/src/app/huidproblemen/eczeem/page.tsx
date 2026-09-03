@@ -41,7 +41,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/eczeem",
   titel: "Eczeem: een cirkel, geen plek",
   omschrijving:
-    "Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij ernaast kunnen doen en waar onze grens ligt.",
+    "Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij daarnaast doen, en hoe we dat samen afstemmen.",
 });
 
 const PAD = "/huidproblemen/eczeem";

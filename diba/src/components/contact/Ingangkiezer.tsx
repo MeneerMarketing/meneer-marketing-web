@@ -112,7 +112,7 @@ const KANALEN = {
   },
   afspraak: {
     label: "Online plannen",
-    actie: "Plan Behandeling Nul",
+    actie: "Plan een huidconsult",
     href: "/intake",
     extern: false,
     hoeSnel:

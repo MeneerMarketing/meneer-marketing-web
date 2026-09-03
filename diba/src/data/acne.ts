@@ -86,7 +86,7 @@ export const ACNE_TYPES: readonly AcneType[] = [
     watHetBetekent:
       "Het patroon in de tijd wijst op een hormonale factor. Huidbehandeling verbetert het beeld, maar de oorzaak ligt vaak dieper. [MEDISCHE-CHECK-ROJDA]",
     watWijEersteDoen:
-      "We vragen door over je cyclus, de pil en eventuele PCOS. Huidzorg en medisch traject lopen hier naast elkaar, niet in plaats van elkaar.",
+      "We vragen door over je cyclus, de pil en eventuele PCOS. Huidzorg en een medisch traject versterken elkaar hier, en we stemmen graag af met je huisarts.",
     verwarMetNiet:
       "Hormonale acne is niet voorbehouden aan tieners. We zien het net zo vaak bij mensen van dertig en veertig.",
   },
@@ -234,7 +234,7 @@ export const ACNE_WIJ_DOEN_NIET = [
   {
     titel: "Geen advies over medicatie",
     tekst:
-      "Antibiotica, de pil en isotretinoïne horen bij je huisarts of dermatoloog. Wij werken ernaast en stemmen af, nooit in plaats daarvan.",
+      "Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.",
   },
   {
     titel: "Geen traject zonder einddatum",

@@ -433,7 +433,7 @@ export function PillarCta({
     <section className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
       <div className="mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
         <div>
-          <Label opDonker>Behandeling Nul</Label>
+          <Label opDonker>Huidconsult</Label>
           <h2 className="diba-display-l mt-5">
             {kop}
             <br />
@@ -449,7 +449,7 @@ export function PillarCta({
             variant="primair-op-donker"
             className="mt-8 w-fit"
           >
-            Plan Behandeling Nul
+            Plan een huidconsult
           </Button>
           <a
             href={whatsappHref}

@@ -18,7 +18,7 @@ import { DIBA_WHATSAPP_URL } from "@/lib/site";
  *
  * HET GAT DAT DIT DICHT.
  *
- * Je kon een huidprofiel opbouwen dat klopte, en dan klikte je op "plan Behandeling Nul"
+ * Je kon een huidprofiel opbouwen dat klopte, en dan klikte je op "plan een huidconsult"
  * en kwam je op /intake, waar een algemene uitleg stond die niets van jou wist. Twee losse
  * dingen dus, terwijl het één keten hoort te zijn. Wie hier binnenloopt met zijn
  * contra-indicaties al op tafel, scheelt de therapeut de helft van het uitvraagwerk.

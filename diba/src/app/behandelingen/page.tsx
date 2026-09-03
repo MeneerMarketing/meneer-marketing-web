@@ -272,7 +272,7 @@ export default function BehandelingenPage() {
 
               <div>
                 <p className="max-w-[50ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  In Behandeling Nul kijken we onder vast licht wat er bij jou
+                  In het huidconsult kijken we onder vast licht wat er bij jou
                   aan de hand is. Neem je huidprofiel mee: dan hoef je het
                   gesprek niet bij nul te beginnen.
                 </p>
@@ -281,7 +281,7 @@ export default function BehandelingenPage() {
                     href="/intake"
                     className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
-                    Plan Behandeling Nul
+                    Plan een huidconsult
                   </Link>
                   <Link
                     href="/huidproblemen"

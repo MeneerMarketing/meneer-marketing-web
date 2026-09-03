@@ -37,13 +37,13 @@ import {
  * 2. "Tram 4 of 8 richting Kralingse Zoom." Kralingse Zoom ligt aan de andere kant van
  *    de stad; de kliniek staat in Hillegersberg. Dat is verzonnen reisadvies waar iemand
  *    naar handelt, dus het staat er niet meer. [GEGEVEN-NODIG: de route, Okan]
- * 3. "Behandeling Nul. Gratis, 4 minuten." Behandeling Nul is de meting in de kliniek en
+ * 3. "Het huidconsult. Gratis, 4 minuten." Het huidconsult is de meting in de kliniek en
  *    die staat op de prijslijst voor vijftig euro. Gratis en vier minuten is de online
  *    intake, en dat is iets anders. Die twee stonden op drie pagina’s door elkaar.
  *
  *    Inmiddels rechtgezet: de knop "Start je intake (4 min)" stond op negen plekken en
  *    linkte overal naar /intake, de pagina die zegt dat het maximaal zestig minuten duurt
- *    en vijftig euro kost. Hij heet nu overal "Plan Behandeling Nul", zodat de knop en de
+ *    en vijftig euro kost. Hij heet nu overal "Plan een huidconsult", zodat de knop en de
  *    bestemming hetzelfde zeggen.
  *
  *    [BESLUIT-OKAN: hoe die twee heten, want nu heten ze allebei het begin]

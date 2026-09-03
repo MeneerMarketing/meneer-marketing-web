@@ -1,5 +1,5 @@
 /**
- * Behandeling Nul: de intake.
+ * Het huidconsult.
  *
  * Dit is de pagina waar elke knop op de site naartoe wijst, en dus de pagina waar de meeste
  * twijfel zit. Die twijfel gaat zelden over de meting. Hij gaat over de vraag of je straks
@@ -218,7 +218,7 @@ export const INTAKE_FAQ = [
  *
  * WAAROM DIT HIER STAAT EN NIET STILLETJES IN DE TEKST HIERBOVEN IS VERWERKT.
  *
- * Okan zegt dat dit in de praktijk de meest gekozen afspraak is: Behandeling Nul plus een
+ * Okan zegt dat dit in de praktijk de meest gekozen afspraak is: Het huidconsult plus een
  * eerste behandeling, samen 120 minuten. Op de site stond daar niets over. Sterker nog:
  * hierboven staat "Behandeling deze afspraak: Nee" en de hele pagina is gebouwd op één uur
  * meten zonder behandelen.
@@ -227,7 +227,7 @@ export const INTAKE_FAQ = [
  * afspraak nergens genoemd wordt, kiest niemand hem bewust; en als de pagina zegt dat er
  * niet behandeld wordt terwijl dat meestal wel gebeurt, klopt de belofte niet meer.
  *
- * Daarom staat het er nu als een tweede, expliciete keuze naast Behandeling Nul, met de
+ * Daarom staat het er nu als een tweede, expliciete keuze naast het huidconsult, met de
  * volgorde intact: eerst meten, dan pas behandelen, en alleen als de meting dat toelaat.
  * Dat laatste is geen slag om de arm maar de kern van wat deze kliniek belooft.
  *

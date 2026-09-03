@@ -443,7 +443,7 @@ export default async function ApparaatPage({ params }: PageProps) {
                     href="/intake"
                     className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
                   >
-                    Wat er in Behandeling Nul gebeurt
+                    Wat er in een huidconsult gebeurt
                   </Link>
                   <Link
                     href="/apparatuur"

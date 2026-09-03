@@ -229,7 +229,7 @@ export default function AcneZoneKaart() {
           >
             {gekozen.length
               ? "Neem dit mee naar de intake"
-              : "Plan Behandeling Nul"}
+              : "Plan een huidconsult"}
           </Button>
           {/* Wees hier naar #tijdlijn, en die sectie bestaat niet meer sinds de
               tijdlijn "eerst even slechter" eruit is gehaald. Een link naar een anker

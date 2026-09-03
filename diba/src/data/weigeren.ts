@@ -221,6 +221,6 @@ export const WEIGERINGEN: readonly Weigering[] = [
       "Zonder meting en zonder doel is elke behandeling een gok, en dan is achteraf niet vast te stellen of er iets is veranderd.",
     waarheen:
       "Begin met de meting. Komt daar niets uit wat behandeling vraagt, dan hoor je dat en heb je vijftig euro besteed in plaats van een traject.",
-    link: { label: "Wat er in Behandeling Nul gebeurt", href: "/intake" },
+    link: { label: "Wat er in een huidconsult gebeurt", href: "/intake" },
   },
 ];

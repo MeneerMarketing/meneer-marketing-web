@@ -337,7 +337,7 @@ export default function CouperosePage() {
       <PillarCta
         kop="We tellen eerst"
         accent="hoeveel er zichtbaar is"
-        tekst="Behandeling Nul legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies er nodig zijn, en wij ook."
+        tekst="Het huidconsult legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies er nodig zijn, en wij ook."
         topic="couperose"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

@@ -259,7 +259,7 @@ export default function Pagina() {
       <PillarCta
         kop="Uitzoeken welke van"
         accent="de vier het bij jou is"
-        tekst="In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken."
+        tekst="In het huidconsult zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken."
         topic="doffe-huid"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

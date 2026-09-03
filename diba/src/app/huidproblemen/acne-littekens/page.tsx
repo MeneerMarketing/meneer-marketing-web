@@ -267,7 +267,7 @@ export default function AcneLittekensPage() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="In Behandeling Nul stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat."
+        tekst="In het huidconsult stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat."
         topic="acne-littekens"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

@@ -438,7 +438,7 @@ export default function Uitkomst({ profiel }: Props) {
           <div>
             <p className="diba-label text-[var(--g-800)]">De volgende stap</p>
             <h3 className="diba-display-s mt-4 max-w-[16ch]">
-              Behandeling Nul.{" "}
+              Het huidconsult.{" "}
               <span className="diba-accent"> Meten, niet behandelen.</span>
             </h3>
             <p className="mt-6 max-w-[52ch] text-[16px] leading-8 text-[var(--g-900)]">
@@ -453,7 +453,7 @@ export default function Uitkomst({ profiel }: Props) {
                 href="/intake"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-7 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Plan Behandeling Nul
+                Plan een huidconsult
               </Link>
               <Link
                 href="/behandelingen/huidanalyse"

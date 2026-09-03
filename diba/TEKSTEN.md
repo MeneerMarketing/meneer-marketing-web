@@ -134,7 +134,7 @@ Van de eerste kop thee tot je nazorg: we hebben aandacht voor de hele ervaring.
 
 **Jij bepaalt wanneer we beginnen**
 
-Kies je Behandeling Nul, dan gaat het advies met de prijs erbij mee naar huis. Boek je een behandeling op advies, dan hoor je eerst wat we voorstellen en wat het kost, en pas daarna gaan we door.
+Kies je het huidconsult, dan gaat het advies met de prijs erbij mee naar huis. Boek je een behandeling op advies, dan hoor je eerst wat we voorstellen en wat het kost, en pas daarna gaan we door.
 
 DIBA CLINICS
 
@@ -166,7 +166,7 @@ Een intake kost 50 euro en duurt maximaal een halfuur. Behandelen we dezelfde af
 
 Kan ik ook alleen een intake boeken?
 
-Ja. Behandeling Nul is precies dat: meten, uitleg en een plan dat je mee naar huis krijgt. Je beslist daarna zelf of en wanneer je verdergaat.
+Ja. Het huidconsult is precies dat: meten, uitleg en een plan dat je mee naar huis krijgt. Je beslist daarna zelf of en wanneer je verdergaat.
 
 Is een huidanalyse altijd nodig?
 
@@ -176,7 +176,7 @@ Niet altijd. Wanneer een huidscan waarde toevoegt, leggen we uit wat we meten en
 
 Plan een intake in onze kliniek in Rotterdam. We nemen de tijd voor jouw vragen, je huidmeting en een behandelvoorstel dat je zelf kunt navertellen.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 Huidkliniek in Rotterdam. We meten je huid voordat we iets voorstellen, en zeggen het ook als afwachten verstandiger is.
 
@@ -226,7 +226,7 @@ Elk traject begint met een meting, dus dat is ook de afspraak die je maakt. Wat 
 
 WANNEER JE ANTWOORD HEBT Meteen. Je kiest zelf een moment en de bevestiging komt direct binnen.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Vier dingen doen we niet op afstand.**
 
@@ -478,7 +478,7 @@ Toon hier alleen reviews die rechtstreeks uit Salonized komen. Laat de oorspronk
 
 Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment, dan zit er vaak een voedingskant aan en schuift er iemand aan die daarnaar kijkt. Gaat het over laser of needling, dan doet een huidtherapeut het. Heb je een voorkeur, zeg het bij het maken van de afspraak; dat kan gewoon.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -610,7 +610,7 @@ De meeste mensen stellen deze afspraak twee jaar uit. Snappen we.
 
 Zit je vooral met wat er is achtergebleven? Dan begint het bij acnelittekens, want dat is vaak helemaal geen litteken.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
@@ -730,7 +730,7 @@ Littekens behandelen op een huid die nog ontstoken is maakt het beeld slechter. 
 
 - Geen littekenbehandeling op een ontstoken huid Laseren of needlen in actieve acne verergert de ontsteking en kan het litteken juist vastzetten. We wachten tot de huid rustig is, ook als dat langer duurt dan je hoopte.
 
-- Geen advies over medicatie Antibiotica, de pil en isotretinoïne horen bij je huisarts of dermatoloog. Wij werken ernaast en stemmen af, nooit in plaats daarvan.
+- Geen advies over medicatie Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.
 
 - Geen traject zonder einddatum Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw meten. Blijkt het niet te werken, dan stoppen we en zeggen we dat in plaats van door te gaan.
 
@@ -934,9 +934,9 @@ Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van me
 
 **Plan een intake bij Diba Clinics**
 
-In Behandeling Nul stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat.
+In het huidconsult stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -1230,9 +1230,9 @@ Een behandeling van vaatjes met de Nordlys begint bij 75 euro voor een klein geb
 
 **We tellen eerst hoeveel er zichtbaar is**
 
-Behandeling Nul legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies er nodig zijn, en wij ook.
+Het huidconsult legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies er nodig zijn, en wij ook.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -1382,9 +1382,9 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 **Uitzoeken welke van de vier het bij jou is**
 
-In Behandeling Nul zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken.
+In het huidconsult zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -1526,7 +1526,7 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, dan hoor je dat en houdt het op. Blijkt het pigment, dan weet je meteen wat er mogelijk is.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -1676,7 +1676,7 @@ De meting kost vijftig euro en dat is meteen het hele consult. Wat er daarna vol
 
 We meten vet en water apart, en vertellen je welke as bij jou beweegt. Zit je in balans, dan is ons advies om niets te doen en houdt het daar op.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -1684,7 +1684,7 @@ We meten vet en water apart, en vertellen je welke as bij jou beweegt. Zit je in
 
 **Tabbladtitel:** Eczeem: een cirkel, geen plek | Diba Clinics
 
-**Google-omschrijving:** Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij ernaast kunnen doen en waar onze grens ligt.
+**Google-omschrijving:** Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij daarnaast doen, en hoe we dat samen afstemmen.
 
 **ECZEEM: JEUK DIE BLIJFT TERUGKOMEN**
 
@@ -1922,7 +1922,7 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 Bij milia is de afspraak kort en eenmalig. Blijkt het iets anders, dan hoor je dat meteen en sturen we je door in plaats van dat we het proberen.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -2078,7 +2078,7 @@ De meting kost vijftig euro. Wat daarna volgt staat per behandeling op de prijze
 
 We lopen je routine langs, meten hoe je barrière ervoor staat en zeggen wat eruit kan. Vaak is dat het hele advies, en dan is de behandeling dat je twee weken minder doet.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -2568,7 +2568,7 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en welk deel niet. Daarna beslis jij of je iets wilt doen, en wat.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -2718,9 +2718,9 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 **Plan een intake bij Diba Clinics**
 
-In Behandeling Nul doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies.
+In het huidconsult doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -2844,7 +2844,7 @@ Dat is pigment en geen litteken. Zolang er nieuwe bultjes bij komen heeft behand
 
 In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw huidtype en haarkleur geschikt zijn. Zo niet, dan hoor je dat voordat je iets afspreekt.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -2972,7 +2972,7 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldig is en niet aan hen ligt. Wat er daarnaast te verzachten valt, bespreken we in hetzelfde gesprek.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -3168,7 +3168,7 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 Bij een rood litteken of rode striae is dit het moment waarop het het meeste uitmaakt. Bij oude littekens rekenen we eerlijk voor of het genoeg oplevert.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -3328,7 +3328,7 @@ De meting kost vijftig euro; de trajecten daarna staan met hun tarief op de prij
 
 We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je dat en raden we behandelen af. Zit het hoog, dan weet je meteen wat er te halen valt en wat het vraagt.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -3560,9 +3560,9 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 **Plan een intake bij Diba Clinics**
 
-In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken.
+In het huidconsult kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -3712,9 +3712,9 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 **Plan een intake bij Diba Clinics**
 
-In Behandeling Nul beoordelen we de plekken en meten we onder UV-licht ook het pigment dat je zelf nog niet ziet. Daarna weet je wat er kan en wat er eerst ergens anders hoort.
+In het huidconsult beoordelen we de plekken en meten we onder UV-licht ook het pigment dat je zelf nog niet ziet. Daarna weet je wat er kan en wat er eerst ergens anders hoort.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -3900,7 +3900,7 @@ Ja, en handen zijn eerlijk gezegd het vervelendste gebied: ze krijgen de meeste 
 
 De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -4062,7 +4062,7 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 We kijken onder vast licht waar je naar kijkt, of het poriën zijn of iets anders, en wat er in jouw geval realistisch aan te veranderen valt.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -4322,7 +4322,7 @@ Collageenopbouw is een kwestie van maanden en niet van weken. Daarom meten we vo
 
 Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmeting legt vast waar je begon, zodat het verschil later te zien is in plaats van te geloven.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -4384,7 +4384,7 @@ Kies alles wat je herkent. Het gaat ons niet om het aantal, maar om de verhoudin
 
 Weet je het niet precies? Houd het twee weken bij. Dat levert meer op dan welke test dan ook.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 Dit is geen diagnose en geen test. Het is een manier om je eigen patroon te zien voordat je hier binnenloopt, zodat het gesprek niet bij nul begint.
 
@@ -4646,7 +4646,7 @@ Bij een klein steelwratje meestal een rood puntje dat in weken wegtrekt. Hoe gro
 
 Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. Blijkt er iets tussen te zitten dat beoordeeld moet worden, dan hoor je dat voordat we beginnen.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -4826,9 +4826,9 @@ Met je hoofd iets hoger slapen en koelen in de ochtend helpt tegen vocht, tijdel
 
 **Plan een intake bij Diba Clinics**
 
-In Behandeling Nul stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen.
+In het huidconsult stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -4976,9 +4976,9 @@ Wat bij jou past hoor je na de meting, van een mens. Soms is dat geen van de vij
 
 **Zo kies je een behandeling**
 
-In Behandeling Nul kijken we onder vast licht wat er bij jou aan de hand is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te beginnen.
+In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te beginnen.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: OF BEGIN BIJ JE HUIDPROBLEEM
 
@@ -5012,7 +5012,7 @@ Een traject van drie tot zes maanden, met een controle om de vier tot zes weken.
 
 Een begeleid traject voor acne, met producten en controles.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5072,7 +5072,7 @@ In het tarief zitten de behandelingen in de kliniek, de controles en de producte
 
 Deze pagina vertelt wat acnetraject doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5106,7 +5106,7 @@ Bij CooLift wordt koude CO2 onder druk op de huid aangebracht. De behandeling du
 
 Draait op CooLift Cryo Therapy
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5184,7 +5184,7 @@ Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpag
 
 Deze pagina vertelt wat coolift cryo therapy doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5222,7 +5222,7 @@ Een traject van maanden tegen hyperpigmentatie en melasma. Geen losse behandelin
 
 Draait op Peelinglijnen
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5286,7 +5286,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Deze pagina vertelt wat cosmelan en dermamelan doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5328,7 +5328,7 @@ Microneedling met trillende naaldjes. Zelfde principe, ander apparaat.
 
 Draait op Dermapen 4
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5410,7 +5410,7 @@ Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je pa
 
 Deze pagina vertelt wat dermapen 4 doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5442,7 +5442,7 @@ Dode huidcellen en donshaartjes weg met een mesje. Geen zuren, dus ook bij een g
 
 Draait op Dermaplane pro
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5504,7 +5504,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Deze pagina vertelt wat dermaplaning doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5536,7 +5536,7 @@ Meestal één keer
 
 We verwijderen steelwratjes en rekenen de behandeltijd per kwartier in plaats van per wratje.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5598,7 +5598,7 @@ Omdat het aantal minder uitmaakt dan de tijd. Wie er twintig kleine heeft, betaa
 
 Deze pagina vertelt wat fibromen verwijderen doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5650,7 +5650,7 @@ Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D
 
 Draait op Fotona TimeWalker
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5732,7 +5732,7 @@ Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we ni
 
 Deze pagina vertelt wat fotona timewalker doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5768,7 +5768,7 @@ Peelings die pigment in de intieme zone en oksels lichter en egaler maken.
 
 Draait op Peelinglijnen
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -5848,7 +5848,7 @@ Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom
 
 Deze pagina vertelt wat happy intim doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5888,7 +5888,7 @@ De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt.
 
 Draait op EVE-M
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waarom er niets gebeurt**
 
@@ -5944,7 +5944,7 @@ Ja. Niet omdat het moet van ons, maar omdat een plan zonder beginmeting niet te 
 
 Deze pagina vertelt wat consult met eve-m huidanalyse doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -5984,7 +5984,7 @@ Reinigen, exfoliëren en hydrateren in één doorloop, met direct zichtbaar, gee
 
 Draait op Hydrafacial syndeo
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6048,7 +6048,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Deze pagina vertelt wat hydrafacial doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6078,7 +6078,7 @@ Drie maanden met begeleiding
 
 Dit begeleide programma van drie maanden is bedoeld voor jongeren tot en met 18 jaar.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6140,7 +6140,7 @@ Ja. Onder de achttien is toestemming van een ouder of verzorger nodig, en bij de
 
 Deze pagina vertelt wat jongeren acne traject doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6174,7 +6174,7 @@ De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren.
 
 Draait op Gentle Laser Pro-U
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6238,7 +6238,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Deze pagina vertelt wat laserontharing doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6280,7 +6280,7 @@ Meestal een reeks van drie tot zes, met vier tot zes weken ertussen.
 
 Voor littekens na een operatie of keizersnede. Prijs naar lengte van het litteken.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6342,7 +6342,7 @@ Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litt
 
 Deze pagina vertelt wat littekentherapie doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6376,7 +6376,7 @@ Deze behandeling met LED-licht gebruikt geen naalden of zuren en wordt meestal a
 
 Draait op LUMI 8-LED
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6456,7 +6456,7 @@ Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het a
 
 Deze pagina vertelt wat lumi 8 led doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6488,7 +6488,7 @@ Laser tegen snurken. Zonder operatie, zonder naalden, zonder beugel in je mond.
 
 Draait op Fotona TimeWalker
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waarom er niets gebeurt**
 
@@ -6554,7 +6554,7 @@ Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer 
 
 Deze pagina vertelt wat nightlase doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6596,7 +6596,7 @@ Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd.
 
 Draait op Nordlys
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6660,7 +6660,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Deze pagina vertelt wat nordlys ipl doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6692,7 +6692,7 @@ Los, of als onderhoud elke vier tot zes weken.
 
 Exfoliëren en zuurstof in de huid brengen, in één behandeling.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6754,7 +6754,7 @@ Meestal wel, en dat bepalen we in de intake en niet op deze pagina. Bij actieve 
 
 Deze pagina vertelt wat oxygeneo glow doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6798,7 +6798,7 @@ Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt
 
 Draait op Peelinglijnen
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -6872,7 +6872,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Deze pagina vertelt wat medische peelings doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -6916,7 +6916,7 @@ Werkzame stoffen op diepte, met een injector die niet met de hand meebeweegt.
 
 Draait op U225 intradermale injector
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -7000,7 +7000,7 @@ Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevo
 
 Deze pagina vertelt wat skinboosters en mesotherapie doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -7042,7 +7042,7 @@ Medisch gecertificeerd microneedlen. Werkt langzaam, op de laag waar structuur z
 
 Draait op SkinPen CIT
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -7116,7 +7116,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Deze pagina vertelt wat skinpen microneedling doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -7146,7 +7146,7 @@ Eén keer
 
 Dit is een test en geen huidbehandeling
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waarom er niets gebeurt**
 
@@ -7210,7 +7210,7 @@ Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haa
 
 Deze pagina vertelt wat voedingsintolerantietest doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -7252,7 +7252,7 @@ Tegen haaruitval en dunner wordend haar. Een traject van maanden, geen losse ses
 
 Draait op U225 intradermale injector
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 **Waar het aankomt**
 
@@ -7330,7 +7330,7 @@ Omdat er acht sessies in zitten in plaats van zes. Het verschil zit in het aanta
 
 Deze pagina vertelt wat xl hair doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 ---
 
@@ -7354,7 +7354,7 @@ Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen 
 
 Daarom begint elk traject hier met een meting en niet met een apparaat.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 DE NORDLYS, ZOALS HIJ BIJ ONS STAAT
 
@@ -7562,7 +7562,7 @@ Kort. Dit is een opfrisser en geen traject, en zo bieden we het ook aan.
 
 Twee klinieken met dezelfde CooLift Cryo Therapy geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -7676,7 +7676,7 @@ Een tot drie dagen, ongeveer als een stevige zonnegloed. De eerste vierentwintig
 
 Twee klinieken met dezelfde Dermapen 4 geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -7788,7 +7788,7 @@ Omdat de laag dode cellen eraf is die er anders tussen zit. Dat effect is tijdel
 
 Twee klinieken met dezelfde Dermaplane pro geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -7884,7 +7884,7 @@ Nee. Een meting is geen diagnose; dat is werk voor een arts. Wat je krijgt is wa
 
 Twee klinieken met dezelfde EVE-M geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8004,7 +8004,7 @@ Warmte, oplopend, die net voor het ongemakkelijke stopt. De behandelaar vraagt e
 
 Twee klinieken met dezelfde Fotona TimeWalker geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8112,7 +8112,7 @@ De instelling bepaalt dat, niet het apparaat alleen. Bij meer pigment in de huid
 
 Twee klinieken met dezelfde Gentle Laser Pro-U geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8226,7 +8226,7 @@ Vaak wel, want er komen geen zuren aan te pas en het blijft aan de oppervlakte. 
 
 Twee klinieken met dezelfde Hydrafacial syndeo geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8340,7 +8340,7 @@ Nee, want er is geen schade om van te herstellen. Je kunt er direct mee de deur 
 
 Twee klinieken met dezelfde LUMI 8-LED geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8456,7 +8456,7 @@ IPL werkt over een groot vlak en dat is juist zijn sterke kant. Of het bij jouw 
 
 Twee klinieken met dezelfde Nordlys geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8580,7 +8580,7 @@ Bij pigment liever niet, en bij de sterkere lijnen ook niet. Zon na een peeling 
 
 Twee klinieken met dezelfde Peelinglijnen geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8696,7 +8696,7 @@ Er gaat vooraf een verdovende crème op die een half uur intrekt. Wat je daarna 
 
 Twee klinieken met dezelfde SkinPen CIT geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -8814,7 +8814,7 @@ Vlak erna zie je kleine bultjes op de plek van elke prik; die zakken doorgaans b
 
 Twee klinieken met dezelfde U225 intradermale injector geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
 
-> knop: WAT ER IN BEHANDELING NUL GEBEURT
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
 > knop: ALLE APPARATUUR
 
@@ -9908,7 +9908,7 @@ Bijna altijd tijdelijk. Er staat bij hoe lang, zodat je weet wanneer je wél kun
 
 - Een deel van de lijst tijdens zwangerschap of borstvoeding Voor een aantal behandelingen ontbreekt het onderzoek om te kunnen zeggen dat het veilig is. Dan is niet doen de enige verdedigbare keuze. WAAR DAN WEL Er blijft genoeg over dat wel kan, zoals dermaplaning en een rustige gezichtsbehandeling. Zeg het bij het maken van de afspraak, dan kiezen we daaruit. ZET HET IN JE HUIDPROFIEL ›
 
-- Behandelen zonder dat duidelijk is waarvoor Zonder meting en zonder doel is elke behandeling een gok, en dan is achteraf niet vast te stellen of er iets is veranderd. WAAR DAN WEL Begin met de meting. Komt daar niets uit wat behandeling vraagt, dan hoor je dat en heb je vijftig euro besteed in plaats van een traject. WAT ER IN BEHANDELING NUL GEBEURT ›
+- Behandelen zonder dat duidelijk is waarvoor Zonder meting en zonder doel is elke behandeling een gok, en dan is achteraf niet vast te stellen of er iets is veranderd. WAAR DAN WEL Begin met de meting. Komt daar niets uit wat behandeling vraagt, dan hoor je dat en heb je vijftig euro besteed in plaats van een traject. WAT ER IN EEN HUIDCONSULT GEBEURT ›
 
 NEE ZEGGEN IS OOK OVERLEGGEN
 
@@ -9980,7 +9980,7 @@ Sta je in geen van de vier groepen, dan geldt hiervan niets en is er ook niets e
 
 Dan verandert er niets aan hoe het hier gaat. Deze vier pagina's bestaan omdat er per groep iets te melden valt, en niet omdat de rest ergens anders terechtkan. Alles begint bij dezelfde meting, en wat daarna volgt hangt af van wat eruit komt.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -10484,17 +10484,17 @@ Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij hebt ingevuld
 
 ### /intake
 
-**Tabbladtitel:** Behandeling Nul: de intake | Diba Clinics
+**Tabbladtitel:** Het huidconsult | Diba Clinics
 
 **Google-omschrijving:** Wat er in de intake gebeurt, wat het kost, wat je niet hoeft, en wat je overhoudt als je daarna nooit meer terugkomt.
 
 **WAT ER IN EEN INTAKE GEBEURT**
 
-Behandeling Nul is een afspraak waarin niet behandeld wordt. We meten je huid onder vaste belichting, laten zien wat we zien en vertellen wat er realistisch mogelijk is. Meer niet.
+Het huidconsult is een afspraak waarin niet behandeld wordt. We meten je huid onder vaste belichting, laten zien wat we zien en vertellen wat er realistisch mogelijk is. Meer niet.
 
 Je hoeft aan het eind niets af te spreken. Soms is het advies zelfs om niets te doen, en dan houdt het daar op.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
@@ -10706,7 +10706,7 @@ Een pagina die alleen zegt dat je vaak kunt wachten is net zo eenzijdig als een 
 
 Twijfel je nog, dan is een meting geen verplichting tot iets. Er wordt gekeken en uitgelegd, en je gaat naar huis met wat eruit kwam. Komt daar uit dat wachten bij jou het verstandigst is, dan hoor je dat ook. Dat is geen mislukte afspraak maar een antwoord.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -10838,7 +10838,7 @@ Alles hierboven staat er zodat je een gesprek kunt voeren in plaats van een aanb
 
 Het register telt nu 18 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -11128,7 +11128,7 @@ Wijs een zone aan, dan staat het bedrag hier.
 
 Nog niets aangewezen. Kies links een zone op de tekening of in de lijst ernaast.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: VRAAG STELLEN
 
@@ -11136,7 +11136,7 @@ Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan staat alles er
 
 **Wat hierna nog gecontroleerd wordt**
 
-Wat je hier samenstelt is een plan op papier. In Behandeling Nul kijken we of het klopt: je huidtype, je haargroei en of laseren bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat voordat je iets betaalt.
+Wat je hier samenstelt is een plan op papier. In het huidconsult kijken we of het klopt: je huidtype, je haargroei en of laseren bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat voordat je iets betaalt.
 
 > knop: WAT ER IN DE INTAKE GEBEURT
 
@@ -11362,7 +11362,7 @@ Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet
 
 **Tabbladtitel:** Resultaten | Diba Clinics
 
-**Google-omschrijving:** Waarom je vrijwel geen voor-en-na-foto kunt vertrouwen, en wanneer wel. Met een check waarmee je elk resultaatbeeld zelf beoordeelt.
+**Google-omschrijving:** Dezelfde huid ziet er onder ander licht anders uit. Zeven vragen waarmee je zelf ziet of een voor-en-na-foto iets zegt over de behandeling.
 
 **HIER STAAN NOG GEEN VOOR-EN-NA-FOTO'S.**
 
@@ -11374,41 +11374,23 @@ Verplaats de lamp en je verplaatst elke schaduw, terwijl de huid geen millimeter
 
 Textuur zie je alleen doordat er schaduw in zit. Dat is de reden dat licht op deze lijst dubbel weegt, en dat klinische fotografie er protocollen voor kent.
 
-**Beoordeel zelf elk resultaatbeeld.**
+**Klopt die voor-en-na-foto die je net zag?**
 
-Dit werkt op elke kliniekwebsite, ook die van de buren en straks op die van ons. Zet aan wat er tussen de voorfoto en de nafoto gelijk is gehouden, en kijk wat het oordeel doet.
+Dezelfde huid ziet er onder ander licht heel anders uit. Daarom zegt bijna geen enkele voor-en-na-foto op internet iets over de behandeling. Dit zijn de zeven vragen waarmee je dat zelf ziet. Ze werken bij elke kliniek, en straks ook bij ons.
 
-VINK AAN WAT GELIJK IS GEHOUDEN
+- 01 WEEGT HET ZWAARST Dezelfde lichtrichting Dit is de grootste. Licht dat van opzij scheert legt een schaduw in elke porie, rimpel en oneffenheid. Recht van voren vult diezelfde schaduwen op en dan is de structuur weg. Je ziet textuur alleen doordat er schaduw in zit. Verplaats de lamp en je verplaatst de schaduw, terwijl de huid geen millimeter veranderd is. BIJ ONS Dezelfde lamp op dezelfde plek, bij beide foto's. Geen raamlicht, want dat is nooit twee keer hetzelfde.
 
-Alles staat uit, want dat is wat je van een willekeurige foto weet. Zet aan wat je zeker weet, en kijk wat er overblijft.
+- 02 WEEGT HET ZWAARST Dezelfde hoek en afstand Een kin iets omhoog strakt de kaaklijn. Een halve stap dichterbij met een telefoon maakt de neus groter en de wangen smaller. Een korte lens dichtbij vergroot wat het dichtst bij de camera zit. Twee foto's van verschillende afstand zijn twee verschillende gezichten. BIJ ONS Vaste afstand, vaste hoogte, hoofd in dezelfde stand. Bij de huidscan gebeurt dat automatisch.
 
-- ✓ Dezelfde lichtrichting WEEGT DUBBEL
+- 03 WEEGT HET ZWAARST Niet alleen de beste eruit Een perfect protocol zegt nog steeds niets als je drie geslaagde trajecten publiceert en de rest niet. Bij elke behandeling reageert een deel van de mensen beter dan gemiddeld en een deel minder. Wie alleen de bovenkant laat zien, laat de behandeling er beter uitzien dan hij is. BIJ ONS Bij elk beeld komt te staan hoeveel mensen zo'n traject deden en hoe dit geval zich daartoe verhoudt.
 
-- ✓ Dezelfde hoek en afstand WEEGT DUBBEL
+- 04 Even lang na de behandeling Vlak na een behandeling die de huid prikkelt zit er tijdelijk wat vocht in het weefsel. Dat vult fijne lijntjes op, en het verdwijnt binnen een paar dagen. Wat je dan op de foto ziet is de zwelling en niet het resultaat. Een nafoto die te vroeg genomen is, laat iets zien wat over een week niet meer bestaat. BIJ ONS De nafoto komt pas als de huid rustig is, en er staat bij hoeveel weken na de laatste sessie hij gemaakt is.
 
-- ✓ Niet alleen de beste eruit WEEGT DUBBEL
+- 05 Geen make-up, geen filter Foundation is letterlijk een laagje dat structuur verbergt. En veel telefoons verzachten de huid uit zichzelf, zonder dat je daarom gevraagd hebt. Beide effecten lijken op precies wat een huidbehandeling zou moeten doen. Daarom zijn ze op een resultaatfoto niet van elkaar te onderscheiden. BIJ ONS Schone huid op beide foto's, en geen bewerking behalve bijsnijden.
 
-- ✓ Even lang na de behandeling
+- 06 Dezelfde staat van de huid Een net verzorgde huid weerkaatst het licht gelijkmatiger en oogt daardoor gladder. Een huid die net gereinigd en gehydrateerd is fotografeert beter dan dezelfde huid aan het eind van de dag. Vocht in de bovenste laag verandert hoe het oppervlak licht terugkaatst. Dat is een echt effect, maar het houdt uren aan en geen maanden. BIJ ONS Beide foto's op hetzelfde punt in de routine, en bij voorkeur op hetzelfde tijdstip van de dag.
 
-- ✓ Geen make-up, geen filter
-
-- ✓ Dezelfde staat van de huid
-
-- ✓ Vergelijkbaar moment
-
-> knop: BEGIN OPNIEUW
-
-HET OORDEEL
-
-Deze foto's zeggen niets
-
-Zo goed als alles wat je ziet kan uit de fotografie komen. Dit is de stand waarin de meeste voor-en-na-beelden op internet gemaakt zijn.
-
-0 van 10 punten twijfel weggenomen
-
-DE UITLEG
-
-Zet een schakelaar om, dan staat hier wat die variabele met een foto doet en wat wij eraan doen zodra we onze eigen beelden publiceren.
+- 07 Vergelijkbaar moment Roodheid na een warme douche of na het sporten, of een huid die meeloopt met de cyclus: dat verschilt van dag tot dag meer dan sommige behandelingen in maanden doen. Als de dagvariatie groter is dan het effect dat je wil laten zien, zegt één foto per moment niets. BIJ ONS Rustig moment, geen sport of hitte vooraf, en de datum staat erbij.
 
 **Hoe we resultaatfoto's maken**
 
@@ -11806,7 +11788,7 @@ Het tarief voor NightLase staat op de prijzenpagina zodra het vastligt.
 
 In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je nachten. Daarna weet je of dit bij jou iets oplevert, en wij ook.
 
-> knop: PLAN BEHANDELING NUL
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -11943,4 +11925,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5539 tekstblokken · ongeveer 85.794 woorden._
+_107 pagina's · 5530 tekstblokken · ongeveer 86.202 woorden._

@@ -243,7 +243,7 @@ export default function Pagina() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="In Behandeling Nul kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken."
+        tekst="In het huidconsult kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken."
         topic="onzuivere-huid"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

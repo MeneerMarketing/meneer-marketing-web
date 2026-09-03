@@ -35,7 +35,7 @@ export const HOME_FAQ_ITEMS: readonly HomeFaqItem[] = [
     question: "Kan ik ook alleen een intake boeken?",
 
     answer:
-      "Ja. Behandeling Nul is precies dat: meten, uitleg en een plan dat je mee naar huis krijgt. Je beslist daarna zelf of en wanneer je verdergaat.",
+      "Ja. Het huidconsult is precies dat: meten, uitleg en een plan dat je mee naar huis krijgt. Je beslist daarna zelf of en wanneer je verdergaat.",
   },
 
   {

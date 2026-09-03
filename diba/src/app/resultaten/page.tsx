@@ -46,7 +46,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/resultaten",
   titel: "Resultaten",
   omschrijving:
-    "Waarom je vrijwel geen voor-en-na-foto kunt vertrouwen, en wanneer wel. Met een check waarmee je elk resultaatbeeld zelf beoordeelt.",
+    "Dezelfde huid ziet er onder ander licht anders uit. Zeven vragen waarmee je zelf ziet of een voor-en-na-foto iets zegt over de behandeling.",
 });
 
 export default function ResultatenPage() {
@@ -111,15 +111,20 @@ export default function ResultatenPage() {
       <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
-            <Label>Zeven variabelen</Label>
-            <h2 className="diba-display-m mt-4">
-              Beoordeel zelf{" "}
-              <span className="diba-accent">elk resultaatbeeld.</span>
+            <Label>Zeven vragen</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              {/* Zonder nowrap breekt de regel na "voor-en-" en staat "na-foto"
+                  eronder. Een koppelteken is een breekpunt voor de browser, maar in
+                  een samenstelling als deze leest dat als twee woorden. */}
+              Klopt die{" "}
+              <span className="whitespace-nowrap">voor-en-na-foto</span>{" "}
+              <span className="diba-accent">die je net zag?</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Dit werkt op elke kliniekwebsite, ook die van de buren en straks
-              op die van ons. Zet aan wat er tussen de voorfoto en de nafoto
-              gelijk is gehouden, en kijk wat het oordeel doet.
+              Dezelfde huid ziet er onder ander licht heel anders uit. Daarom
+              zegt bijna geen enkele voor-en-na-foto op internet iets over de
+              behandeling. Dit zijn de zeven vragen waarmee je dat zelf ziet. Ze
+              werken bij elke kliniek, en straks ook bij ons.
             </p>
           </div>
 

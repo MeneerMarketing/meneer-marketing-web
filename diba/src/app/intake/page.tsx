@@ -31,7 +31,7 @@ import {
 } from "@/lib/site";
 
 /**
- * Behandeling Nul — de intake.
+ * Het huidconsult — de intake.
  *
  * Hier wijst elke knop op de site naartoe, dus dit is de pagina waar de meeste twijfel
  * zit. Die twijfel gaat zelden over de meting; hij gaat over de vraag of je straks met een
@@ -50,7 +50,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/intake",
-  titel: "Behandeling Nul: de intake",
+  titel: "Het huidconsult",
   omschrijving:
     "Wat er in de intake gebeurt, wat het kost, wat je niet hoeft, en wat je overhoudt als je daarna nooit meer terugkomt.",
 });
@@ -90,7 +90,7 @@ export default function IntakePage() {
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: DIBA_SITE_URL },
-          { name: "Behandeling Nul", url: `${DIBA_SITE_URL}/intake` },
+          { name: "Het huidconsult", url: `${DIBA_SITE_URL}/intake` },
         ])}
       />
 
@@ -106,7 +106,7 @@ export default function IntakePage() {
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Behandeling Nul</span>
+              <span className="text-[var(--t-muted)]">Huidconsult</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[16ch]">
@@ -116,7 +116,7 @@ export default function IntakePage() {
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Behandeling Nul is een afspraak waarin niet behandeld wordt. We
+              Het huidconsult is een afspraak waarin niet behandeld wordt. We
               meten je huid onder vaste belichting, laten zien wat we zien en
               vertellen wat er realistisch mogelijk is. Meer niet.
             </p>
@@ -128,7 +128,7 @@ export default function IntakePage() {
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Button href={DIBA_SALONIZED_BOOKING_URL || "/contact"}>
-                Plan Behandeling Nul
+                Plan een huidconsult
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
@@ -176,7 +176,7 @@ export default function IntakePage() {
           volgorde. De losse meting staat links omdat dat de afspraak is die deze pagina
           uitlegt; de combinatie rechts, met de voorwaarde erbij. Die voorwaarde is geen
           kleine lettertjes maar het verschil tussen de twee. */}
-      {/* Dit is letterlijk wat Behandeling Nul is: samen naar dezelfde meting kijken. Het
+      {/* Dit is letterlijk wat het huidconsult is: samen naar dezelfde meting kijken. Het
           beeld staat ook op de homepage, en dat is hier geen herhaling maar bevestiging. */}
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
@@ -203,7 +203,7 @@ export default function IntakePage() {
             <div className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-9">
               <Label>Alleen meten</Label>
               <p className="diba-card-title-lg mt-4 text-[var(--t-strong)]">
-                Behandeling Nul
+                Het huidconsult
               </p>
               <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
                 We reserveren er {INTAKE_MINUTEN} minuten voor: meten, uitleg en
@@ -248,7 +248,7 @@ export default function IntakePage() {
 
       {/* ── Je huidprofiel meenemen ──
           Hier hield de keten op. Je kon op /huidprofiel een profiel opbouwen dat klopte,
-          op "plan Behandeling Nul" klikken, en dan kwam je hier op een algemene uitleg die
+          op "plan een huidconsult" klikken, en dan kwam je hier op een algemene uitleg die
           niets van je wist. Deze kaart maakt er één ding van: wat je meeneemt staat er, en
           je kopieert het zelf. Versturen doen wij niet, want het profiel hoort in jouw
           browser te blijven. */}
@@ -477,7 +477,7 @@ export default function IntakePage() {
                 href={DIBA_SALONIZED_BOOKING_URL || "/contact"}
                 variant="primair-op-donker"
               >
-                Plan Behandeling Nul
+                Plan een huidconsult
               </Button>
               <Button href="/ons-verbond" variant="secundair-op-donker">
                 Lees ons verbond

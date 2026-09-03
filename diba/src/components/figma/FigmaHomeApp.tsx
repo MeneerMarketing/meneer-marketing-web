@@ -301,7 +301,7 @@ export default function FigmaHomeApp({
               onClick={() => setScanOpen(false)}
               className="mt-7"
             >
-              Plan Behandeling Nul
+              Plan een huidconsult
             </Button>
           </div>
         </div>
@@ -527,7 +527,7 @@ export default function FigmaHomeApp({
                 Jij bepaalt wanneer we beginnen
               </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Kies je Behandeling Nul, dan gaat het advies met de prijs erbij
+                Kies je het huidconsult, dan gaat het advies met de prijs erbij
                 mee naar huis. Boek je een behandeling op advies, dan hoor je
                 eerst wat we voorstellen en wat het kost, en pas daarna gaan we
                 door.
@@ -655,7 +655,7 @@ export default function FigmaHomeApp({
               variant="primair-op-donker"
               className="mt-8 w-fit"
             >
-              Plan Behandeling Nul
+              Plan een huidconsult
             </Button>
             <a
               href={DIBA_WHATSAPP_URL}

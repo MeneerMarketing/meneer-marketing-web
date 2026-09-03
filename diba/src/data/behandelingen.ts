@@ -291,7 +291,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       },
     ],
     bijProblemen: [
-      { label: "Behandeling Nul", href: "/intake" },
+      { label: "Huidconsult", href: "/intake" },
       { label: "Alle huidproblemen", href: "/huidproblemen" },
     ],
     faq: [

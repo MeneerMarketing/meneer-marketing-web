@@ -184,7 +184,7 @@ export default function Triggersorteerder() {
           >
             {gekozen.length
               ? "Neem dit mee naar de intake"
-              : "Plan Behandeling Nul"}
+              : "Plan een huidconsult"}
           </Button>
         </div>
       </div>
