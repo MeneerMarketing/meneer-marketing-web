@@ -206,9 +206,9 @@ export default function IntakePage() {
                 Het huidconsult
               </p>
               <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-                We reserveren er {INTAKE_MINUTEN} minuten voor: meten, uitleg en
-                een plan dat je mee naar huis krijgt. Aan je huid gebeurt deze
-                afspraak nog niets.
+                We reserveren er maximaal {INTAKE_MINUTEN} minuten voor: het
+                gesprek, de beoordeling van je huid en een advies dat je mee
+                naar huis krijgt. Aan je huid gebeurt deze afspraak nog niets.
               </p>
               {/* De prijs stond op deze kaart nergens, terwijl "wat kost het" een van de
                   negen vragen uit de gids is en dit de pagina is waar iemand boekt.
@@ -216,8 +216,8 @@ export default function IntakePage() {
                   geboekt wordt, of alleen in dezelfde afspraak. De zin hieronder klopt in
                   allebei de gevallen; het antwoord bepaalt of hij scherper kan. */}
               <p className="mt-4 text-[16px] leading-7 text-[var(--warn-text)]">
-                Hij kost 50 euro. Volgt er een behandeling, dan vervalt dat
-                bedrag en betaal je alleen de behandeling.
+                Hij kost 50 euro. Kies je voor de afspraak waarin ook behandeld
+                kan worden, dan vervalt dat bedrag zodra we behandelen.
               </p>
               <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
                 Max. {INTAKE_MINUTEN} minuten
@@ -284,7 +284,7 @@ export default function IntakePage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="Het halfuur, stap voor stap"
+            label="Het uur, stap voor stap"
             kop="Wat er in dat"
             accent="uur gebeurt"
             intro="De meeste twijfel voor een intake gaat niet over de meting maar over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes."

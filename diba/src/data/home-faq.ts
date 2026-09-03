@@ -26,7 +26,7 @@ export const HOME_FAQ_ITEMS: readonly HomeFaqItem[] = [
     question: "Wat kost een eerste afspraak?",
 
     answer:
-      "Een intake kost 50 euro en duurt maximaal een halfuur. Behandelen we dezelfde afspraak, dan betaal je alleen de behandeling en vervalt dat bedrag. Je hoort de prijs dus voordat je beslist.",
+      "Alleen een intake met behandeladvies kost 50 euro en duurt maximaal een uur. Boek je de afspraak waarin ook behandeld kan worden, dan reserveren we maximaal twee uur en vervalt dat bedrag zodra we behandelen.",
   },
 
   {

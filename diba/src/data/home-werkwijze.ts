@@ -37,7 +37,7 @@ export const HOME_WERKWIJZE_STEPS: readonly WerkwijzeStep[] = [
   {
     id: "meting",
     title: "Het onderzoek",
-    body: "Zij beoordeelt je huid van dichtbij en onder UV-licht, en legt de beginsituatie vast in beeld.",
+    body: "Zij beoordeelt je huid van dichtbij en legt hem waar dat helpt vast in beeld, ook onder UV.",
   },
   {
     id: "voorstel",

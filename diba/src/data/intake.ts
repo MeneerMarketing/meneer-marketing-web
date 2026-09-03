@@ -73,17 +73,17 @@ export const STAPPEN: readonly Stap[] = [
 /**
  * Hoe lang de afspraak duurt.
  *
- * Stond als "[GEGEVEN-NODIG] minuten" en werd daardoor een leeg vakje op de plek waar de
- * bezoeker het hardst kijkt, terwijl de grootste sectie van de pagina een uur beweerde.
- * Twee plekken die hetzelfde zeiden en elkaar niet kenden, waarvan er één zweeg.
+ * Een getal dat de hele pagina voedt: verandert deze regel, dan loopt de rest mee.
  *
- * Nu één getal dat beide voedt: verandert deze regel, dan loopt de hele pagina mee.
+ * Stond op zestig, ging op 3 september 2026 naar dertig op aanwijzing van Yasin, en staat
+ * er nu weer op zestig omdat Okan diezelfde avond de twee producten uitschreef: "Alleen
+ * intake en behandeladvies: maximaal zestig minuten en € 50." Dat komt overeen met wat
+ * er in DIBA-COPY-STYLE-GUIDE.md staat.
  *
- * Stond op zestig; Yasin gaf op 3 september 2026 door dat het een halfuur is. De stappen
- * hieronder dragen geen minuutmerken maar woorden ("eerste minuten", "het grootste deel"),
- * dus die lopen mee. Alleen de sectiekop noemde een uur en is meeverhuisd.
+ * [BESLUIT-OKAN] Yasin en Okan noemden verschillende tijden. Zestig staat er nu; klopt
+ * dertig toch, dan verandert alleen deze regel.
  */
-export const INTAKE_MINUTEN = 30;
+export const INTAKE_MINUTEN = 60;
 
 /**
  * De vier feiten naast de kop.

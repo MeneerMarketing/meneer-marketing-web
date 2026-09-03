@@ -54,9 +54,7 @@ NL
 
 **HUIDKLINIEK IN ROTTERDAM**
 
-Bij ons zit een huidtherapeut tegenover je. Dat is een beschermd beroep: vier jaar hbo, ingeschreven in het Kwaliteitsregister Paramedici, en je komt ze net zo goed in ziekenhuizen tegen. Zij zoekt uit waar je klacht vandaan komt en behandelt de oorzaak. In het eerste consult hoor je wat er speelt, wat eraan te doen is en wat dat kost.
-
-> knop: PLAN EEN EERSTE AFSPRAAK
+Bij ons zit een behandelaar tegenover je die je huid beoordeelt met een getraind oog. Zij luistert naar je klacht, kijkt wat er aan de hand is en vertelt je wat er mogelijk is, met de prijs erbij. Boek je een afspraak met behandeling, dan kan die in dezelfde afspraak volgen.
 
 > knop: BEKIJK DE BEHANDELINGEN
 
@@ -64,9 +62,9 @@ Bij ons zit een huidtherapeut tegenover je. Dat is een beschermd beroep: vier ja
 
 Kies waar je voor komt. Op elke pagina staat wat de klacht is, welke behandelingen erbij horen, hoeveel sessies dat gemiddeld vraagt en wat het kost.
 
-> knop: Acne & onzuiverheden Mee-eters en ontstekingen, aangepakt bij de oorzaak en in de juiste volgorde.
+> knop: Acne & onzuiverheden Mee-eters en ontstekingen, behandeld in de volgorde die bij jouw huid past.
 
-> knop: Pigment & melasma Onder UV-licht zien we hoe diep het pigment zit, en dat bepaalt de aanpak.
+> knop: Pigment & melasma Onder UV-licht wordt pigment zichtbaar dat in gewoon licht lastig te zien is.
 
 > knop: Laserontharing Met alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.
 
@@ -98,25 +96,25 @@ Nog geen idee waar te beginnen? Stel je vraag, dan kijken we samen welke richtin
 
 - EERST Het gesprek Je vertelt wat je dwarszit en wat je al hebt geprobeerd. De huidtherapeut vraagt door en luistert. Stap 1 van 3
 
-- DAARNA Het onderzoek Zij beoordeelt je huid van dichtbij en onder UV-licht, en legt de beginsituatie vast in beeld. Stap 2 van 3
+- DAARNA Het onderzoek Zij beoordeelt je huid van dichtbij en legt hem waar dat helpt vast in beeld, ook onder UV. Stap 2 van 3
 
 - TOT SLOT Het voorstel Je hoort welke behandeling past, hoeveel sessies dat vraagt en wat het per keer gaat kosten. Stap 3 van 3
 
 **Behandeld door huidtherapeuten**
 
-Huidtherapeut is een beschermde titel: een hbo-bacheloropleiding en inschrijving in het Kwaliteitsregister Paramedici. Bij laser en needling staat er altijd een huidtherapeut aan je stoel.
+Er werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecialisten. Huidtherapeut is een beschermde titel: een hbo-bacheloropleiding met inschrijving in het Kwaliteitsregister Paramedici. Wie jou behandelt, hoor je bij het maken van de afspraak.
 
 - Kwaliteitsregister Paramedici Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.
 
-- Gecontracteerd bij alle zorgverzekeraars Je hoeft niet uit te zoeken of wij bij jouw verzekeraar zijn aangesloten. Dat zijn we, bij allemaal.
+- Contracten met zorgverzekeraars Of jouw behandeling vergoed wordt, hangt af van je klacht en je aanvullende pakket. [BESLUIT-OKAN]
 
 - Aangesloten bij ANBOS De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiëne en klachtafhandeling.
 
 > knop: ZO WERKT EEN EERSTE AFSPRAAK
 
-**Een reeks sessies, met een hermeting.**
+**Hoeveel afspraken je nodig hebt.**
 
-De meeste huidklachten vragen een reeks van vier tot acht sessies, met twee tot zes weken ertussen. Na acht weken meten we opnieuw en leggen we de opnames naast elkaar. Je betaalt per sessie.
+Dat verschilt per klacht en per behandeling. Sommige zijn met een afspraak klaar, andere vragen een reeks met weken ertussen. Je hoort in het consult wat er voor jou nodig is en wat het kost, zodat je weet waar je aan begint.
 
 **Wat we beoordelen.**
 
@@ -126,7 +124,7 @@ De meeste huidklachten vragen een reeks van vier tot acht sessies, met twee tot 
 
 - TEXTUUR Poriën, oneffenheden en hoe de huid het licht breekt.
 
-Elke meting gaat onder hetzelfde licht en vanaf dezelfde afstand, zodat je die van vandaag naast die van acht weken geleden kunt leggen.
+De opnames gaan onder hetzelfde licht en vanaf dezelfde afstand. Leggen we later opnieuw vast, dan is de vergelijking eerlijk.
 
 **Wat je van een afspraak kunt verwachten.**
 
@@ -142,7 +140,7 @@ Je vindt ons in Rotterdam.
 
 **Je weet vooraf wat het kost**
 
-Elke behandeling heeft een tarief per sessie, en dat staat online. In het consult hoor je hoeveel sessies jouw klacht gemiddeld vraagt, zodat je weet waar je aan begint.
+Alle tarieven staan online: per sessie, per zone of per kwartier, afhankelijk van de behandeling. In het consult hoor je wat jouw plan gaat kosten voordat je beslist.
 
 **Uitleg per klacht.**
 
@@ -162,7 +160,7 @@ Nee. Je komt juist voor advies. We kijken samen wat voor jouw huid en doel passe
 
 Wat kost een eerste afspraak?
 
-Een intake kost 50 euro en duurt maximaal een halfuur. Behandelen we dezelfde afspraak, dan betaal je alleen de behandeling en vervalt dat bedrag. Je hoort de prijs dus voordat je beslist.
+Alleen een intake met behandeladvies kost 50 euro en duurt maximaal een uur. Boek je de afspraak waarin ook behandeld kan worden, dan reserveren we maximaal twee uur en vervalt dat bedrag zodra we behandelen.
 
 Kan ik ook alleen een intake boeken?
 
@@ -172,13 +170,21 @@ Is een huidanalyse altijd nodig?
 
 Niet altijd. Wanneer een huidscan waarde toevoegt, leggen we uit wat we meten en waarom.
 
-**Kom zoals je bent. Wij kijken met je mee.**
+**Twee manieren om te beginnen**
 
-Plan een intake in onze kliniek in Rotterdam. We nemen de tijd voor jouw vragen, je huidmeting en een behandelvoorstel dat je zelf kunt navertellen.
+Allebei beginnen ze met een gesprek en een beoordeling van je huid. Het verschil zit in wat er daarna gebeurt.
 
-> knop: PLAN EEN HUIDCONSULT
+MEEST GEKOZEN
 
-Huidkliniek in Rotterdam. We meten je huid voordat we iets voorstellen, en zeggen het ook als afwachten verstandiger is.
+**Afspraak met behandeling**
+
+We reserveren maximaal twee uur. Blijkt behandelen die dag verantwoord en wil jij dat, dan gebeurt het meteen. De intakekosten vervallen dan.
+
+**Alleen intake en behandeladvies**
+
+Maximaal zestig minuten, 50 euro. Je gaat naar huis met een advies en de prijzen die erbij horen.
+
+Huidkliniek in Rotterdam. Behandelingen voor acne, pigment, littekens, huidverbetering en ongewenste haargroei.
 
 ---
 
@@ -10174,7 +10180,7 @@ Je hoeft aan het eind niets af te spreken. Soms is het advies zelfs om niets te 
 
 *GERESERVEERD*
 
-Max. 30 minuten
+Max. 60 minuten
 
 *KOSTEN*
 
@@ -10194,11 +10200,11 @@ HETZELFDE SCHERM, TEGELIJK
 
 Allebei beginnen ze met dezelfde meting.
 
-We reserveren er 30 minuten voor: meten, uitleg en een plan dat je mee naar huis krijgt. Aan je huid gebeurt deze afspraak nog niets.
+We reserveren er maximaal 60 minuten voor: het gesprek, de beoordeling van je huid en een advies dat je mee naar huis krijgt. Aan je huid gebeurt deze afspraak nog niets.
 
-Hij kost 50 euro. Volgt er een behandeling, dan vervalt dat bedrag en betaal je alleen de behandeling.
+Hij kost 50 euro. Kies je voor de afspraak waarin ook behandeld kan worden, dan vervalt dat bedrag zodra we behandelen.
 
-MAX. 30 MINUTEN
+MAX. 60 MINUTEN
 
 Meten en meteen beginnen
 
@@ -11523,4 +11529,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5337 tekstblokken · ongeveer 81.026 woorden._
+_105 pagina's · 5340 tekstblokken · ongeveer 81.061 woorden._

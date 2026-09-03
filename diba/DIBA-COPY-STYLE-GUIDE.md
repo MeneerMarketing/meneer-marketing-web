@@ -50,6 +50,21 @@ niet. Dezelfde kennis werkt beter als "waar de huidtherapeut naar kijkt". Dat ce
 behandelaar, het is uniek voor deze site, en de bezoeker krijgt geen huiswerk dat hij fout
 kan doen.
 
+**8. Concreet, maar geen schijnprecisie.**
+Gebruik vaste aantallen, termijnen en werkwijzen alleen wanneer die echt voor alle genoemde
+behandelingen gelden. "Elk traject begint met een huidanalyse", "de meeste huidklachten
+vragen vier tot acht sessies" en "elke behandeling heeft een tarief per sessie" klinken
+precies en zijn alle drie onwaar: steelwratjes gaan per kwartier, laserontharing per zone
+of pakket, en lang niet elke afspraak begint met een scan. Schrijf waar nodig "afhankelijk
+van je huid en behandeling", zonder terug te vallen in vaagheid.
+
+**9. De behandelaar staat centraal, niet de apparatuur.**
+Een apparaat meet, fotografeert of ondersteunt. Het trekt geen conclusies en bepaalt geen
+behandelplan. De behandelaar luistert naar de klant, beoordeelt de huid met een getraind
+oog, verzamelt de relevante informatie en beslist of een aanvullende huidanalyse waarde
+heeft. De EVE-M kan kenmerken vastleggen en veranderingen later helpen vergelijken; niet
+iedere klant of behandeling heeft er een nodig.
+
 ### Wat hier concreet uit volgt
 
 - Zinnen als "soms behandelen we niet" en "soms heeft boeken geen zin" staan alleen nog in

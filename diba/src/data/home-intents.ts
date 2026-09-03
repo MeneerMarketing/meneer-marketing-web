@@ -25,7 +25,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     icoon: "verstopte-porie",
     title: "Acne & onzuiverheden",
     subtitle:
-      "Mee-eters en ontstekingen, aangepakt bij de oorzaak en in de juiste volgorde.",
+      "Mee-eters en ontstekingen, behandeld in de volgorde die bij jouw huid past.",
     href: "/huidproblemen/acne",
     image: FIGMA_INTENT_ACNE.src,
     imageAlt: FIGMA_INTENT_ACNE.alt,
@@ -35,7 +35,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     icoon: "huid-glans",
     title: "Pigment & melasma",
     subtitle:
-      "Onder UV-licht zien we hoe diep het pigment zit, en dat bepaalt de aanpak.",
+      "Onder UV-licht wordt pigment zichtbaar dat in gewoon licht lastig te zien is.",
     href: "/huidproblemen/pigmentvlekken",
     image: FIGMA_INTENT_PIGMENT.src,
     imageAlt: FIGMA_INTENT_PIGMENT.alt,

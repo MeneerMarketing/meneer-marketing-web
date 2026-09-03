@@ -134,9 +134,8 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
               className="h-9 w-9 text-[var(--g-700)]"
             />
             <p className="mt-5 max-w-[26ch] text-[13px] leading-6 text-[var(--t-body)]">
-              Huidkliniek in {DIBA_SITE.neighborhood}. We meten je huid voordat
-              we iets voorstellen, en zeggen het ook als afwachten verstandiger
-              is.
+              Huidkliniek in {DIBA_SITE.neighborhood}. Behandelingen voor acne,
+              pigment, littekens, huidverbetering en ongewenste haargroei.
             </p>
           </div>
 

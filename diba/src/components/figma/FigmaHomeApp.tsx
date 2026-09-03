@@ -54,9 +54,9 @@ const EERLIJK_ADVIES_PUNTEN = [
       "Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.",
   },
   {
-    titel: "Gecontracteerd bij alle zorgverzekeraars",
+    titel: "Contracten met zorgverzekeraars",
     tekst:
-      "Je hoeft niet uit te zoeken of wij bij jouw verzekeraar zijn aangesloten. Dat zijn we, bij allemaal.",
+      "Of jouw behandeling vergoed wordt, hangt af van je klacht en je aanvullende pakket. [BESLUIT-OKAN]",
   },
   {
     titel: "Aangesloten bij ANBOS",
@@ -136,16 +136,15 @@ export default function FigmaHomeApp({
                 </h1>
 
                 <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Bij ons zit een huidtherapeut tegenover je. Dat is een
-                  beschermd beroep: vier jaar hbo, ingeschreven in het
-                  Kwaliteitsregister Paramedici, en je komt ze net zo goed in
-                  ziekenhuizen tegen. Zij zoekt uit waar je klacht vandaan komt
-                  en behandelt de oorzaak. In het eerste consult hoor je wat er
-                  speelt, wat eraan te doen is en wat dat kost.
+                  Bij ons zit een behandelaar tegenover je die je huid
+                  beoordeelt met een getraind oog. Zij luistert naar je klacht,
+                  kijkt wat er aan de hand is en vertelt je wat er mogelijk is,
+                  met de prijs erbij. Boek je een afspraak met behandeling, dan
+                  kan die in dezelfde afspraak volgen.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
-                  <Button href="/intake">Plan een eerste afspraak</Button>
+                  <Button href="/intake">Afspraak maken</Button>
                   <Button href="/behandelingen" variant="ghost">
                     Bekijk de behandelingen
                   </Button>
@@ -370,9 +369,11 @@ export default function FigmaHomeApp({
               Behandeld door huidtherapeuten
             </h2>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Huidtherapeut is een beschermde titel: een hbo-bacheloropleiding
-              en inschrijving in het Kwaliteitsregister Paramedici. Bij laser en
-              needling staat er altijd een huidtherapeut aan je stoel.
+              Er werken huidtherapeuten, orthomoleculair huidspecialisten en
+              schoonheidsspecialisten. Huidtherapeut is een beschermde titel:
+              een hbo-bacheloropleiding met inschrijving in het
+              Kwaliteitsregister Paramedici. Wie jou behandelt, hoor je bij het
+              maken van de afspraak.
             </p>
 
             <ul className="mt-6 space-y-2.5">
@@ -429,13 +430,14 @@ export default function FigmaHomeApp({
             <div className="shrink-0">
               <Label>Het traject</Label>
               <h2 className="diba-display-m mt-4 lg:whitespace-nowrap">
-                Een reeks sessies, met een hermeting.
+                Hoeveel afspraken je nodig hebt.
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De meeste huidklachten vragen een reeks van vier tot acht sessies,
-              met twee tot zes weken ertussen. Na acht weken meten we opnieuw en
-              leggen we de opnames naast elkaar. Je betaalt per sessie.
+              Dat verschilt per klacht en per behandeling. Sommige zijn met een
+              afspraak klaar, andere vragen een reeks met weken ertussen. Je
+              hoort in het consult wat er voor jou nodig is en wat het kost,
+              zodat je weet waar je aan begint.
             </p>
           </div>
           <div className="mt-14 grid gap-4 lg:grid-cols-[1.05fr_.95fr]">
@@ -489,9 +491,8 @@ export default function FigmaHomeApp({
                 ))}
               </ul>
               <p className="mt-5 text-[13px] leading-6 text-[var(--t-muted)]">
-                Elke meting gaat onder hetzelfde licht en vanaf dezelfde
-                afstand, zodat je die van vandaag naast die van acht weken
-                geleden kunt leggen.
+                De opnames gaan onder hetzelfde licht en vanaf dezelfde afstand.
+                Leggen we later opnieuw vast, dan is de vergelijking eerlijk.
               </p>
             </div>
             <div className="relative min-h-[410px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-300)]">
@@ -587,9 +588,9 @@ export default function FigmaHomeApp({
                 Je weet vooraf wat het kost
               </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Elke behandeling heeft een tarief per sessie, en dat staat
-                online. In het consult hoor je hoeveel sessies jouw klacht
-                gemiddeld vraagt, zodat je weet waar je aan begint.
+                Alle tarieven staan online: per sessie, per zone of per
+                kwartier, afhankelijk van de behandeling. In het consult hoor je
+                wat jouw plan gaat kosten voordat je beslist.
               </p>
               <Link
                 href="/prijzen"
@@ -650,32 +651,60 @@ export default function FigmaHomeApp({
           <div className="relative">
             <Label opDonker>Jouw eerste afspraak</Label>
             <h2 className="diba-display-l mt-5">
-              Kom zoals je bent.
+              Twee manieren
               <br />
-              Wij kijken met je mee.
+              <span className="diba-accent-on-dark">om te beginnen</span>
             </h2>
-          </div>
-          <div className="relative flex flex-col justify-end">
-            <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Plan een intake in onze kliniek in Rotterdam. We nemen de tijd
-              voor jouw vragen, je huidmeting en een behandelvoorstel dat je
-              zelf kunt navertellen.
+            <p className="mt-6 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Allebei beginnen ze met een gesprek en een beoordeling van je
+              huid. Het verschil zit in wat er daarna gebeurt.
             </p>
-            <Button
-              href="/intake"
-              variant="primair-op-donker"
-              className="mt-8 w-fit"
-            >
-              Plan een huidconsult
-            </Button>
-            <a
-              href={DIBA_WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="diba-label diba-label-on-dark mt-4 underline underline-offset-4"
-            >
-              Nog niet zeker? Stel je vraag
-            </a>
+          </div>
+
+          <div className="relative flex flex-col justify-end gap-4">
+            {/* De twee producten, met de tijd en het bedrag erbij. Dit is wat iemand wil
+                weten voordat hij klikt, en het stond nergens op deze pagina. */}
+            <div className="rounded-[var(--r-md)] bg-white/10 p-6 sm:p-7">
+              <p className="diba-label text-[var(--on-dark-accent)]">
+                Meest gekozen
+              </p>
+              <h3 className="diba-card-title mt-3 text-[var(--on-dark)]">
+                Afspraak met behandeling
+              </h3>
+              <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
+                We reserveren maximaal twee uur. Blijkt behandelen die dag
+                verantwoord en wil jij dat, dan gebeurt het meteen. De
+                intakekosten vervallen dan.
+              </p>
+            </div>
+
+            <div className="rounded-[var(--r-md)] border border-white/20 p-6 sm:p-7">
+              <h3 className="diba-card-title text-[var(--on-dark)]">
+                Alleen intake en behandeladvies
+              </h3>
+              <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
+                Maximaal zestig minuten, 50 euro. Je gaat naar huis met een
+                advies en de prijzen die erbij horen.
+              </p>
+            </div>
+
+            <div className="mt-2 flex flex-wrap items-center gap-x-6 gap-y-3">
+              <Button
+                href="/intake"
+                variant="primair-op-donker"
+                className="w-fit"
+              >
+                Afspraak maken
+              </Button>
+              <a
+                href={DIBA_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="diba-label diba-label-on-dark underline underline-offset-4"
+              >
+                Nog niet zeker? Stel je vraag
+              </a>
+            </div>
           </div>
         </div>
       </section>
