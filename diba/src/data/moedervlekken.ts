@@ -1,18 +1,28 @@
 /**
  * Inhoud van de pagina over moedervlekken.
  *
- * Dit is de enige pagina op de site waar élke uitkomst buiten de kliniek eindigt. Wij
- * beoordelen geen moedervlekken en verwijderen ze niet, want dat hoort bij de huisarts of
- * de dermatoloog. Een huidkliniek die dat wel doet neemt een beslissing waar ze niet voor
- * opgeleid is, en de fout die daarbij gemaakt kan worden is niet terug te draaien.
+ * WAT HIER STOND.
  *
- * De ABCDE-check hieronder is voorlichting en geen diagnose. Daarom is hij zo gebouwd dat
- * hij nooit geruststelt: bij nul opvallende punten is de uitkomst nog steeds dat een
- * zelfcheck geen arts vervangt. Er is geen antwoordcombinatie die "het is niets" zegt, en
- * er staat op geen enkel punt een knop naar onze intake.
+ * Deze pagina was de enige op de site zonder afspraakknop: "hiervoor moet je niet bij ons
+ * zijn". De redenering was dat beoordelen en verwijderen bij een arts hoort. Yasin
+ * (3 september 2026): Diba behandelt dit gewoon, dus dat klopte niet.
+ *
+ * WAT ER BLIJFT STAAN.
+ *
+ * Eén voorwaarde, en die is geen verkoopgrens: een plekje dat verandert gaat eerst langs
+ * een arts. Weefsel dat weg is kan niet meer onderzocht worden, en dat is de enige stap in
+ * dit hele onderwerp die je later niet kunt inhalen. Blijkt het goedaardig, dan halen we
+ * het hier alsnog weg.
+ *
+ * De ABCDE-check hieronder is voorlichting en geen diagnose. Hij is zo gebouwd dat hij
+ * nooit geruststelt: bij nul opvallende punten is de uitkomst nog steeds dat een zelfcheck
+ * geen arts vervangt. Die eigenschap is met opzet niet aangepast — hij staat nu vóór een
+ * behandeling in plaats van in plaats van een behandeling, en dan is hij nog nuttiger.
  *
  * COPY-STATUS: concept. Elk medisch punt moet langs Rojda voordat dit online mag, ook de
- * criteria zelf. Geen cijfers over hoe vaak iets voorkomt of hoe groot een kans is.
+ * criteria zelf. Yasin kende de details van het protocol niet uit zijn hoofd, dus alles
+ * wat over de gang van zaken gaat draagt [MEDISCHE-CHECK-ROJDA]: wie beoordeelt, met welk
+ * instrument, en wat er met weggehaald weefsel gebeurt.
  */
 
 export type Criterium = {
@@ -113,29 +123,29 @@ export const MOEDERVLEK_WEL_NIET = {
     "Zonbescherming serieus nemen, want dit is het onderwerp waarbij het niet om je uiterlijk gaat.",
   ],
   niet: [
-    "Een moedervlek laten weghalen bij een schoonheidssalon of huidkliniek. Wat weg is kan niet meer onderzocht worden.",
+    "Iets laten weghalen dat verandert, waar dan ook. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap die je niet kunt inhalen.",
     "Zelf wegbranden of wegvriezen met iets uit de winkel. Hetzelfde bezwaar, met meer schade.",
     "Wachten tot het pijn doet. De meeste verdachte plekjes doen nergens pijn.",
-    "Afgaan op een foto-app of een oordeel van internet. Ook wij kunnen dat niet en dat zeggen we liever.",
+    "Afgaan op een foto-app of een oordeel van internet. Een scherm ziet geen diepte en geen verandering.",
     "Denken dat het alleen om je gezicht gaat. Plekjes op rug, benen en voetzolen worden het vaakst over het hoofd gezien. [MEDISCHE-CHECK-ROJDA]",
   ],
 } as const;
 
-export const MOEDERVLEK_WIJ_DOEN_NIET = [
+export const MOEDERVLEK_VOORWAARDEN = [
   {
-    titel: "Wij beoordelen geen moedervlekken",
+    titel: "Een plekje dat verandert gaat eerst langs een arts",
     tekst:
-      "We kijken niet mee, we geven geen mening en we stellen niemand gerust. Daar is een dermatoscoop voor nodig en een opleiding die wij niet hebben.",
+      "Verandert de vorm, de kleur, de grootte of het gevoel, dan laten we het eerst beoordelen door je huisarts of een dermatoloog. Niet omdat we je wegsturen, maar omdat weefsel dat weg is niet meer onderzocht kan worden. Blijkt het goedaardig, dan halen we het hier alsnog weg. [MEDISCHE-CHECK-ROJDA]",
   },
   {
-    titel: "Wij verwijderen geen moedervlekken",
+    titel: "We kijken altijd eerst, ook als je zeker weet wat het is",
     tekst:
-      "Ook niet als je er alleen maar vanaf wilt omdat hij in de weg zit. Wat weg is kan niet meer onderzocht worden, en dat risico is niet aan ons om te nemen.",
+      "Elk plekje wordt bekeken voordat er iets mee gebeurt. Dat kost een paar minuten en het is de enige stap die je later niet kunt inhalen. [MEDISCHE-CHECK-ROJDA]",
   },
   {
-    titel: "Wij laseren niet over een moedervlek heen",
+    titel: "Bij een behandeling in de buurt dekken we ze af",
     tekst:
-      "Bij elke behandeling dekken we moedervlekken af. Licht op pigment kan het beeld veranderen, en dan is het latere oordeel van een arts minder betrouwbaar. [MEDISCHE-CHECK-ROJDA]",
+      "Laseren we vlakbij, dan gaat er een dekje over een moedervlek die blijft zitten. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.",
   },
 ] as const;
 

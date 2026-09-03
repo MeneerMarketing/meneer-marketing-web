@@ -13,39 +13,40 @@ import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import {
   MOEDERVLEK_FAQ,
+  MOEDERVLEK_VOORWAARDEN,
   MOEDERVLEK_WEL_NIET,
-  MOEDERVLEK_WIJ_DOEN_NIET,
 } from "@/data/moedervlekken";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
- * Moedervlekken — achtste eigen pagina, en de enige zonder afspraakknop.
+ * Moedervlekken.
  *
- * Elke andere pagina eindigt bij ons. Deze eindigt bij de huisarts, in elke uitkomst en
- * op elke plek. Wij beoordelen geen moedervlekken en verwijderen ze niet: daar is een
- * dermatoscoop voor nodig en een opleiding die een huidkliniek niet heeft, en de fout die
- * je hier kunt maken is niet terug te draaien.
+ * WAT HIER STOND.
  *
- * Daarom staan er drie dingen bewust níet op deze pagina: geen PillarCta, geen
- * NulmetingAssen en geen enkele link naar /intake. Een pagina die zegt "hier zijn wij het
- * niet" en er dan toch een afspraakknop onder zet, zegt het niet. Dat is dezelfde regel
- * als bij de uitkomst "schaduw" op de kringenpagina, hier doorgetrokken naar de hele
- * pagina.
+ * De enige pagina zonder afspraakknop, met als kop "hiervoor moet je niet bij ons zijn".
+ * Bewust zo gebouwd: geen PillarCta, geen link naar de intake, en een afsluiting die je
+ * naar de huisarts stuurde. Yasin (3 september 2026): Diba behandelt dit gewoon.
  *
- * Eén donkergroen vlak (§5 staat er twee toe; het tweede is normaal de intake, en die
- * hoort hier niet).
+ * WAT ER NU STAAT.
+ *
+ * Een gewone behandelpagina, met één voorwaarde die blijft: verandert er iets aan het
+ * plekje, dan kijkt eerst een arts. Dat is geen afbakening maar de reden dat een melanoom
+ * op tijd gevonden wordt, en het is ook precies waarom de ABCDE-check hieronder blijft
+ * staan. Die stond er om je weg te sturen; hij staat er nu om samen te kijken voordat er
+ * iets weggehaald wordt, en dat is een betere plek voor hem.
  *
  * MEDISCH: alles op deze pagina moet langs Rojda voordat het online mag, inclusief de
- * criteria zelf. Staat tot die tijd op noindex.
+ * criteria. Het protocol zelf staat er met opzet niet in — wie beoordeelt, met welk
+ * instrument en wat er met weggehaald weefsel gebeurt is een [MEDISCHE-CHECK-ROJDA].
  */
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/moedervlekken",
-  titel: "Moedervlekken: waar je op moet letten",
+  titel: "Moedervlekken weghalen",
   omschrijving:
-    "Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.",
+    "Een moedervlek die stoort kan weg. Wat er eerst gebeurt, waar we op letten en waarom een plekje dat verandert eerst langs een arts gaat.",
 });
 
 const PAD = "/huidproblemen/moedervlekken";
@@ -53,7 +54,7 @@ const PAD = "/huidproblemen/moedervlekken";
 const ANKERS = [
   { id: "check", label: "De ABCDE-check" },
   { id: "wel-niet", label: "Wat helpt" },
-  { id: "nee", label: "Waarom niet bij ons" },
+  { id: "voorwaarden", label: "Wat er eerst gebeurt" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
@@ -90,25 +91,29 @@ export default function MoedervlekkenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Moedervlekken: hiervoor
+              Een moedervlek die stoort
               <br />
-              <span className="diba-accent">moet je niet bij ons zijn</span>
+              <span className="diba-accent">kan weg</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wij beoordelen geen moedervlekken en we verwijderen ze niet. Dat
-              hoort bij je huisarts of een dermatoloog, want daar hebben ze de
-              apparatuur en de opleiding waar dit om vraagt.
+              Zit hij in de weg bij het scheren, blijft hij haken achter je
+              kraag of vind je hem gewoon lelijk: dat is een goede reden om hem
+              weg te laten halen. We kijken er eerst samen naar, en dan hoor je
+              wat er kan. [MEDISCHE-CHECK-ROJDA]
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wat we wel doen is je vertellen waar je op let. Je ligt bij ons op
-              de stoel met je huid in beeld, dus je stelt de vraag toch. Dan
-              liever een goed antwoord dan een ontwijkend.
+              E' + chr(0xe9) + 'n ding gaat altijd voor: verandert er iets aan
+              een plekje, dan laat je het eerst door een arts beoordelen. Blijkt
+              het goedaardig, dan halen we het daarna hier weg.
             </p>
 
-            <div className="mt-9">
-              <Button href="#check">Loop de ABCDE-check langs</Button>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Button href="/intake">Plan een huidconsult</Button>
+              <Button href="#check" variant="secundair">
+                Eerst de ABCDE-check
+              </Button>
             </div>
           </div>
 
@@ -117,12 +122,13 @@ export default function MoedervlekkenPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
             <Label opDonker>Het korte antwoord</Label>
             <p className="diba-card-title-lg mt-5">
-              Verandert er iets aan een plekje, dan ga je naar de huisarts. Niet
-              naar een kliniek, niet naar een app, en niet naar ons.
+              Verandert er iets aan een plekje? Dan kijkt daar eerst een arts
+              naar, en pas daarna halen wij iets weg.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Dat kost je een consult. Het alternatief is een oordeel van iemand
-              die het niet mag geven, en dat is het niet waard.
+              Dat kost je ' + chr(0xe9) + 'en consult bij de huisarts. Wat weg
+              is kan niet meer onderzocht worden, en dat is de enige stap in dit
+              hele onderwerp die je later niet kunt inhalen.
             </p>
           </div>
         </div>
@@ -142,7 +148,7 @@ export default function MoedervlekkenPage() {
             label="De ABCDE-check"
             kop="Zes dingen"
             accent="om naar te kijken."
-            intro="Vijf letters die dermatologen gebruiken, plus een zesde die op de meeste sites ontbreekt. Deze check geeft geen uitslag en kan niets uitsluiten. Hij helpt je bepalen of je ermee naar de huisarts gaat, en dat is waar hij voor is."
+            intro="Vijf letters die dermatologen gebruiken, plus een zesde die op de meeste sites ontbreekt. Loop hem langs voordat je een afspraak maakt. Hij geeft geen uitslag en kan niets uitsluiten; hij helpt je bepalen of er eerst een arts naar moet kijken."
           />
           <AbcdeCheck />
         </div>
@@ -151,49 +157,78 @@ export default function MoedervlekkenPage() {
       <WelNiet
         wel={MOEDERVLEK_WEL_NIET.wel}
         niet={MOEDERVLEK_WEL_NIET.niet}
-        intro="Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: een moedervlek laten weghalen buiten de zorg betekent dat er niets meer te onderzoeken valt."
+        intro="Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: iets laten weghalen dat verandert, betekent dat er niets meer te onderzoeken valt."
       />
 
       <WijZeggenNee
-        kop="Hier verwijzen we je"
-        accent="naar de dermatoloog"
-        intro="Op de andere pagina's zeggen we nee omdat een behandeling te weinig oplevert. Hier zeggen we nee omdat de fout die je kunt maken niet terug te draaien is."
-        punten={MOEDERVLEK_WIJ_DOEN_NIET}
+        kop="Wat er eerst gebeurt"
+        accent="voordat er iets weggaat"
+        intro="Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie stappen die aan een behandeling voorafgaan, en de eerste is de enige op deze site die je later niet kunt inhalen."
+        punten={MOEDERVLEK_VOORWAARDEN}
       />
 
       <PillarFaq items={MOEDERVLEK_FAQ} onderwerp="moedervlekken" />
 
-      {/* ── Afsluiting zonder afspraakknop ──
-          Waar op elke andere pagina de intake staat, staat hier de huisarts. */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
-        <div className="mx-auto">
-          <Label>Waar je wel heen gaat</Label>
-          <h2 className="diba-display-s mt-5 max-w-[20ch]">
-            Naar je huisarts.
-            <br />
-            <span className="diba-accent">Daar houdt het bij ons op.</span>
-          </h2>
-          <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina expres nergens een knop om bij ons een
-            afspraak te maken. Kom je voor iets anders en zit er een moedervlek
-            in het gebied, dan dekken we die af en gaan we verder. Kom je voor
-            de moedervlek zelf, dan sturen we je door voordat je bent gaan
-            zitten.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
-            <Link
-              href="/huidproblemen/pigmentvlekken"
-              className="diba-label text-[var(--g-700)] underline underline-offset-4"
-            >
-              Ik zoek eigenlijk iets over pigmentvlekken
-            </Link>
-            <Link
-              href="/ons-verbond"
-              className="diba-label text-[var(--g-700)] underline underline-offset-4"
-            >
-              Lees waar wij nog meer nee op zeggen
-            </Link>
+      {/* ── Afsluiting ──
+
+          Hier stond "Naar je huisarts. Daar houdt het bij ons op." — de enige afsluiting op
+          de site zonder afspraakknop. Nu staat er wat er gebeurt als je komt, in de
+          volgorde waarin het gebeurt. De huisarts is niet weg: hij staat in stap één, waar
+          hij thuishoort. */}
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+        <div className="mx-auto lg:grid lg:grid-cols-[1.1fr_.9fr] lg:gap-16">
+          <div>
+            <Label opDonker>Hoe het gaat</Label>
+            <h2 className="diba-display-m mt-4 max-w-[18ch]">
+              Eerst kijken,{" "}
+              <span className="diba-accent-on-dark">dan pas weghalen</span>
+            </h2>
+            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Kom je voor iets anders en zit er een moedervlek in het gebied,
+              dan dekken we die af en gaan we verder. Kom je voor de moedervlek
+              zelf, dan begint het met kijken.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <Link
+                href="/intake"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
+              >
+                Plan een huidconsult
+              </Link>
+              <Link
+                href="/huidproblemen/pigmentvlekken"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/25 px-6 text-[var(--on-dark)] transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
+              >
+                Ik zoek pigmentvlekken
+              </Link>
+            </div>
           </div>
+
+          <ol className="mt-12 space-y-6 border-t border-white/15 pt-8 lg:mt-0 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0">
+            {[
+              [
+                "Verandert het?",
+                "Dan eerst je huisarts. Die kan weefsel laten onderzoeken en wij niet.",
+              ],
+              [
+                "Verandert het niet?",
+                "Dan kijken we er samen naar en hoor je wat er kan en wat het kost.",
+              ],
+              [
+                "Weghalen",
+                "Een korte handeling per plekje. Daarna een korstje dat vanzelf loslaat.",
+              ],
+            ].map(([kop, uitleg]) => (
+              <li key={kop}>
+                <h3 className="diba-label text-[var(--on-dark-accent)]">
+                  {kop}
+                </h3>
+                <p className="mt-2 max-w-[38ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
+                  {uitleg}
+                </p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
     </main>
