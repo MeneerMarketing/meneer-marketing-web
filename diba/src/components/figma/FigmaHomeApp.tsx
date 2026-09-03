@@ -136,11 +136,12 @@ export default function FigmaHomeApp({
                 </h1>
 
                 <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Onze huidtherapeuten behandelen acne, pigmentvlekken,
-                  littekens, couperose en ongewenste haargroei. Elk traject
-                  begint met een huidanalyse: we brengen je huid in kaart met de
-                  EVE-M-scanner en bepalen daarmee welke behandeling bij jouw
-                  huidtype past. Alle tarieven staan vooraf online.
+                  Bij ons zit een huidtherapeut tegenover je. Dat is een
+                  beschermd beroep: vier jaar hbo, ingeschreven in het
+                  Kwaliteitsregister Paramedici, en je komt ze net zo goed in
+                  ziekenhuizen tegen. Zij zoekt uit waar je klacht vandaan komt
+                  en behandelt de oorzaak. In het eerste consult hoor je wat er
+                  speelt, wat eraan te doen is en wat dat kost.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -202,18 +203,18 @@ export default function FigmaHomeApp({
       >
         <div className="mx-auto grid gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
-            <Label opDonker>De Diba huidscan</Label>
+            <Label opDonker>De huidanalyse</Label>
             <h2 className="diba-display-l mt-5">
               Zo verloopt
               <br />
               <span className="diba-accent-on-dark">een traject bij ons</span>
             </h2>
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
-              De EVE-M-scanner fotografeert je huid onder vaste belichting en
-              meet pigment, roodheid, poriegrootte en vochtgehalte. Onder
-              UV-licht wordt zichtbaar wat er dieper in de huid zit. Die
-              nulmeting bepaalt het behandelplan, en na acht weken meten we
-              opnieuw met dezelfde instellingen.
+              De huidtherapeut beoordeelt je huid van dichtbij en onder
+              UV-licht, waarmee ook pigment zichtbaar wordt dat je in de spiegel
+              nog niet ziet. Daaruit volgt het behandelplan. Na acht weken
+              beoordeelt zij opnieuw, onder dezelfde omstandigheden, zodat
+              vooruitgang meetbaar is en geen kwestie van geheugen.
             </p>
             {/* items-center en niet items-start. De wikkel is `w-fit`, dus precies zo
                 breed als de knop; met links uitlijnen begon de link daaronder aan de
@@ -226,7 +227,7 @@ export default function FigmaHomeApp({
                 variant="secundair-op-donker"
                 onClick={() => setScanOpen(true)}
               >
-                Hoe werkt de huidscan?
+                Wat gebeurt er in een huidanalyse?
               </Button>
               <Link
                 href="/behandelingen/huidanalyse"
@@ -295,15 +296,16 @@ export default function FigmaHomeApp({
               <Close size={18} />
             </button>
             <span className="diba-label inline-block rounded-[var(--r-pill)] bg-[var(--g-050)] px-3 py-2">
-              EVE-M huidanalyse
+              De huidanalyse
             </span>
             <h3 id="scan-dialog-title" className="diba-card-title-lg mt-6">
               Jouw huid in kaart.
             </h3>
             <p className="mt-5 max-w-md leading-7 text-[var(--t-body)]">
-              De scanner meet pigment, roodheid, poriegrootte, vochtgehalte en
-              huidstructuur, in gewoon licht en onder UV. Je ziet de opnames
-              direct op het scherm en we lopen ze samen door.
+              De huidtherapeut beoordeelt pigment, roodheid, poriegrootte,
+              vochtgehalte en huidstructuur, in gewoon licht en onder UV. Je
+              ziet de opnames direct op het scherm en jullie lopen ze samen
+              door.
             </p>
             <Button
               href="/intake"
@@ -445,9 +447,9 @@ export default function FigmaHomeApp({
                 <DibaIcon variant="groen" size={38} />
               </div>
               <h3 className="diba-display-s mt-16 max-w-lg">
-                Wat de scanner
+                Wat we
                 <br />
-                meet.
+                beoordelen.
               </h3>
               {/* Hier stonden drie verzonnen cijfers: "Hydratatie +18%" met een balkje
                   op tweeënzeventig procent. Mooi, en het betekende niets — het getal kwam

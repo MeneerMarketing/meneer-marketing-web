@@ -54,7 +54,7 @@ NL
 
 **HUIDKLINIEK IN ROTTERDAM**
 
-Onze huidtherapeuten behandelen acne, pigmentvlekken, littekens, couperose en ongewenste haargroei. Elk traject begint met een huidanalyse: we brengen je huid in kaart met de EVE-M-scanner en bepalen daarmee welke behandeling bij jouw huidtype past. Alle tarieven staan vooraf online.
+Bij ons zit een huidtherapeut tegenover je. Dat is een beschermd beroep: vier jaar hbo, ingeschreven in het Kwaliteitsregister Paramedici, en je komt ze net zo goed in ziekenhuizen tegen. Zij zoekt uit waar je klacht vandaan komt en behandelt de oorzaak. In het eerste consult hoor je wat er speelt, wat eraan te doen is en wat dat kost.
 
 > knop: PLAN EEN EERSTE AFSPRAAK
 
@@ -64,15 +64,15 @@ Onze huidtherapeuten behandelen acne, pigmentvlekken, littekens, couperose en on
 
 Kies waar je voor komt. Op elke pagina staat wat de klacht is, welke behandelingen erbij horen, hoeveel sessies dat gemiddeld vraagt en wat het kost.
 
-> knop: Acne & onzuiverheden Mee-eters en ontstekingen, aangepakt op de oorzaak en niet alleen op de puist.
+> knop: Acne & onzuiverheden Mee-eters en ontstekingen, aangepakt bij de oorzaak en in de juiste volgorde.
 
-> knop: Pigment & melasma Onder UV-licht meten we hoe diep het pigment zit. Dat bepaalt de behandeling.
+> knop: Pigment & melasma Onder UV-licht zien we hoe diep het pigment zit, en dat bepaalt de aanpak.
 
-> knop: Laserontharing Alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.
+> knop: Laserontharing Met alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.
 
-> knop: Littekens & textuur Microneedling en laser wekken nieuwe collageenaanmaak op in ingezonken littekens.
+> knop: Littekens & textuur Microneedling en laser wekken nieuwe collageenaanmaak op in littekenweefsel.
 
-> knop: Huidveroudering Collageenopbouw en huidvernieuwing bij fijne lijnen en verslapping.
+> knop: Huidveroudering Collageenopbouw en huidvernieuwing bij fijne lijnen en beginnende verslapping.
 
 > knop: Lichaam & huid Ontharing, littekens en huidverbetering op rug, benen, oksels en bikinilijn.
 
@@ -80,9 +80,9 @@ Kies waar je voor komt. Op elke pagina staat wat de klacht is, welke behandeling
 
 **Zo verloopt een traject bij ons**
 
-De EVE-M-scanner fotografeert je huid onder vaste belichting en meet pigment, roodheid, poriegrootte en vochtgehalte. Onder UV-licht wordt zichtbaar wat er dieper in de huid zit. Die nulmeting bepaalt het behandelplan, en na acht weken meten we opnieuw met dezelfde instellingen.
+De huidtherapeut beoordeelt je huid van dichtbij en onder UV-licht, waarmee ook pigment zichtbaar wordt dat je in de spiegel nog niet ziet. Daaruit volgt het behandelplan. Na acht weken beoordeelt zij opnieuw, onder dezelfde omstandigheden, zodat vooruitgang meetbaar is en geen kwestie van geheugen.
 
-> knop: HOE WERKT DE HUIDSCAN?
+> knop: WAT GEBEURT ER IN EEN HUIDANALYSE?
 
 **Doe de mini-scan als je nog niet weet waar je moet beginnen**
 
@@ -96,11 +96,11 @@ Nog geen idee waar te beginnen? Stel je vraag, dan kijken we samen welke richtin
 
 **Hoe een behandeling bij ons begint**
 
-- EERST Het gesprek Je vertelt wat je dwarszit en wat je al probeerde. Wij vragen door, ook naar wat je niet wilt. Stap 1 van 3
+- EERST Het gesprek Je vertelt wat je dwarszit en wat je al hebt geprobeerd. De huidtherapeut vraagt door en luistert. Stap 1 van 3
 
-- DAARNA De meting De meting doen we in een professioneel huidanalysesysteem, zodat verschil later ook echt verschil is. Stap 2 van 3
+- DAARNA Het onderzoek Zij beoordeelt je huid van dichtbij en onder UV-licht, en legt de beginsituatie vast in beeld. Stap 2 van 3
 
-- TOT SLOT Het voorstel Wat er kan, wat het kost en wat je kunt verwachten. Daarna beslis jij, in je eigen tempo. Stap 3 van 3
+- TOT SLOT Het voorstel Je hoort welke behandeling past, hoeveel sessies dat vraagt en wat het per keer gaat kosten. Stap 3 van 3
 
 **Behandeld door huidtherapeuten**
 
@@ -118,7 +118,7 @@ Huidtherapeut is een beschermde titel: een hbo-bacheloropleiding en inschrijving
 
 De meeste huidklachten vragen een reeks van vier tot acht sessies, met twee tot zes weken ertussen. Na acht weken meten we opnieuw en leggen we de opnames naast elkaar. Je betaalt per sessie.
 
-**Wat de scanner meet.**
+**Wat we beoordelen.**
 
 - PIGMENT Ook wat onder UV zichtbaar wordt en dieper zit.
 
@@ -2718,15 +2718,15 @@ En de meest gemaakte vergissing staat er meteen bij: schuren helpt niet. De prop
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zo voel je het verschil met een droge huid**
+**Waar de huidtherapeut naar kijkt**
 
-Dat is het verschil tussen verhoorning en een droge huid, en het bepaalt of hier iets te behandelen valt of dat je een tube nodig hebt en geen afspraak.
+Verhoorning en een droge huid lijken op elkaar en vragen een andere behandeling. Dit zijn de drie dingen waaraan de huidtherapeut ze uit elkaar houdt.
 
-- STAP 1 Strijk met vlakke hand Over de buitenkant van je bovenarm, zonder druk. Voel je losse bultjes onder je hand, of alleen een ruw oppervlak? Dat is het verschil tussen verhoorning en droogte.
+- 01 Hoe de bultjes aanvoelen Verhoorning voelt als fijn schuurpapier en zit vast in de porie. Droogte voelt ruw, maar laat zich wegwrijven.
 
-- STAP 2 Kijk of het aan twee kanten zit Keratosis pilaris is bijna altijd symmetrisch: links en rechts ongeveer gelijk. Zit het maar aan een kant of alleen op geschoren zones, dan is het waarschijnlijk iets anders.
+- 02 Of het aan beide kanten zit Keratosis pilaris is vrijwel altijd symmetrisch. Zit het aan een kant of op geschoren zones, dan is het iets anders.
 
-- STAP 3 Denk aan het seizoen Is het in de winter duidelijk erger en in de zomer bijna weg? Dat past bij allebei, maar bij droogte verdwijnt het vrijwel helemaal en bij verhoorning blijft er altijd iets staan.
+- 03 Hoe het door het jaar loopt In de winter duidelijker en in de zomer rustiger past bij verhoorning. Bij droogte verdwijnt het ’s zomers vrijwel.
 
 **Vier beelden die ruw aanvoelen**
 
@@ -11523,4 +11523,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5337 tekstblokken · ongeveer 81.043 woorden._
+_105 pagina's · 5337 tekstblokken · ongeveer 81.026 woorden._

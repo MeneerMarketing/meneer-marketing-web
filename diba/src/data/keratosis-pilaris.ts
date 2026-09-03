@@ -105,24 +105,24 @@ export const KP_BEELDEN: readonly KpBeeld[] = [
  * belangrijkste advies bevatten: niet schuren. De verhoorning zit rond het haarzakje en
  * niet aan de oppervlakte, dus schuren maakt de roodheid erger zonder een bultje te raken.
  */
-export const SCHUURTEST_STAPPEN: readonly {
+export const CONSULT_BEOORDELING: readonly {
   readonly kop: string;
   readonly tekst: string;
 }[] = [
   {
-    kop: "Strijk met vlakke hand",
+    kop: "Hoe de bultjes aanvoelen",
     tekst:
-      "Over de buitenkant van je bovenarm, zonder druk. Voel je losse bultjes onder je hand, of alleen een ruw oppervlak? Dat is het verschil tussen verhoorning en droogte.",
+      "Verhoorning voelt als fijn schuurpapier en zit vast in de porie. Droogte voelt ruw, maar laat zich wegwrijven.",
   },
   {
-    kop: "Kijk of het aan twee kanten zit",
+    kop: "Of het aan beide kanten zit",
     tekst:
-      "Keratosis pilaris is bijna altijd symmetrisch: links en rechts ongeveer gelijk. Zit het maar aan een kant of alleen op geschoren zones, dan is het waarschijnlijk iets anders.",
+      "Keratosis pilaris is vrijwel altijd symmetrisch. Zit het aan een kant of op geschoren zones, dan is het iets anders.",
   },
   {
-    kop: "Denk aan het seizoen",
+    kop: "Hoe het door het jaar loopt",
     tekst:
-      "Is het in de winter duidelijk erger en in de zomer bijna weg? Dat past bij allebei, maar bij droogte verdwijnt het vrijwel helemaal en bij verhoorning blijft er altijd iets staan.",
+      "In de winter duidelijker en in de zomer rustiger past bij verhoorning. Bij droogte verdwijnt het ’s zomers vrijwel.",
   },
 ];
 

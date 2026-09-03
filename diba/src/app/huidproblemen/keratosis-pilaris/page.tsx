@@ -16,7 +16,7 @@ import {
   KP_BEELDEN,
   KP_FAQ,
   KP_WEL_NIET,
-  SCHUURTEST_STAPPEN,
+  CONSULT_BEOORDELING,
 } from "@/data/keratosis-pilaris";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -45,7 +45,7 @@ export const metadata: Metadata = zoekmachineVelden({
 const PAD = "/huidproblemen/keratosis-pilaris";
 
 const ANKERS = [
-  { id: "check", label: "De schuurpapiertest" },
+  { id: "check", label: "In het consult" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "vragen", label: "Vragen" },
@@ -152,21 +152,21 @@ export default function Pagina() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De schuurpapiertest"
+            label="In het consult"
             raster="gelijk"
-            kop="Zo voel je het verschil"
-            accent="met een droge huid"
-            intro="Dat is het verschil tussen verhoorning en een droge huid, en het bepaalt of hier iets te behandelen valt of dat je een tube nodig hebt en geen afspraak."
+            kop="Waar de huidtherapeut"
+            accent="naar kijkt"
+            intro="Verhoorning en een droge huid lijken op elkaar en vragen een andere behandeling. Dit zijn de drie dingen waaraan de huidtherapeut ze uit elkaar houdt."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
-            {SCHUURTEST_STAPPEN.map((stap, i) => (
+            {CONSULT_BEOORDELING.map((stap, i) => (
               <li
                 key={stap.kop}
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <span className="diba-label text-[var(--g-700)]">
-                  Stap {i + 1}
+                  {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="diba-card-title mt-3">{stap.kop}</h3>
                 <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">

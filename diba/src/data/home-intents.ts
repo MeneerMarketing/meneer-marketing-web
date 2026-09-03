@@ -25,7 +25,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     icoon: "verstopte-porie",
     title: "Acne & onzuiverheden",
     subtitle:
-      "Mee-eters en ontstekingen, aangepakt op de oorzaak en niet alleen op de puist.",
+      "Mee-eters en ontstekingen, aangepakt bij de oorzaak en in de juiste volgorde.",
     href: "/huidproblemen/acne",
     image: FIGMA_INTENT_ACNE.src,
     imageAlt: FIGMA_INTENT_ACNE.alt,
@@ -35,7 +35,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     icoon: "huid-glans",
     title: "Pigment & melasma",
     subtitle:
-      "Onder UV-licht meten we hoe diep het pigment zit. Dat bepaalt de behandeling.",
+      "Onder UV-licht zien we hoe diep het pigment zit, en dat bepaalt de aanpak.",
     href: "/huidproblemen/pigmentvlekken",
     image: FIGMA_INTENT_PIGMENT.src,
     imageAlt: FIGMA_INTENT_PIGMENT.alt,
@@ -45,7 +45,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     icoon: "haarzakje",
     title: "Laserontharing",
     subtitle:
-      "Alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.",
+      "Met alexandriet- en Nd:YAG-laser, ingesteld op jouw huidtype en haarkleur.",
     href: "/laserontharing",
     image: FIGMA_INTENT_LASER.src,
     imageAlt: FIGMA_INTENT_LASER.alt,
@@ -55,7 +55,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     icoon: "huid-bultje",
     title: "Littekens & textuur",
     subtitle:
-      "Microneedling en laser wekken nieuwe collageenaanmaak op in ingezonken littekens.",
+      "Microneedling en laser wekken nieuwe collageenaanmaak op in littekenweefsel.",
     href: "/huidproblemen/littekens",
     image: FIGMA_INTENT_LITTEKENS.src,
     imageAlt: FIGMA_INTENT_LITTEKENS.alt,
@@ -65,7 +65,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     icoon: "huid-strakker",
     title: "Huidveroudering",
     subtitle:
-      "Collageenopbouw en huidvernieuwing bij fijne lijnen en verslapping.",
+      "Collageenopbouw en huidvernieuwing bij fijne lijnen en beginnende verslapping.",
     href: "/huidproblemen/huidveroudering",
     image: FIGMA_INTENT_VEROUDERING.src,
     imageAlt: FIGMA_INTENT_VEROUDERING.alt,

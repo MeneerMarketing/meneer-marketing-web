@@ -429,8 +429,11 @@ export function PillarCta({
   topic: string;
   whatsappHref: string;
 }) {
+  /* mt-16 en niet nul. Dit blok had alleen mx en mb, dus het plakte tegen de sectie
+     erboven: een groen vlak dat direct op een mintvlak begon, met een zichtbare naad
+     ertussen. Nu draagt het blok zijn eigen bovenruimte, op elke pagina hetzelfde. */
   return (
-    <section className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+    <section className="mx-5 mb-5 mt-16 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 lg:mt-20 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
       <div className="mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
         <div>
           <Label opDonker>Huidconsult</Label>

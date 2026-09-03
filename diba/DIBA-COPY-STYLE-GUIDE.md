@@ -35,6 +35,21 @@ Rojda: professioneel, met autoriteit, in medische en huidtherapeutische taal, ma
 een consument het begrijpt. Gebruik de vakterm en leg hem uit; laat hem niet weg en zet er
 ook geen tweede alinea omheen.
 
+**5. Kaarten die naast elkaar staan, schrijf je even lang.**
+Drie kaarten op een rij met teksten van 89, 103 en 89 tekens geven drie ongelijke kaarten,
+en dat oogt slordig. Houd de spreiding binnen een tiental tekens. Dat is geen tellerij om
+het tellen: het is de goedkoopste manier om een raster strak te krijgen.
+
+**6. Het apparaat is het verhaal niet.**
+Okan: de EVE-M is gereedschap. Schrijf over de huidtherapeut die ermee werkt, niet over het
+apparaat. Het woord "scanner" gebruiken we niet; het heet een huidanalyse.
+
+**7. Geen zelftests.**
+Yasin en Rojda over de schuurpapiertest, de spiegeltest en de zes andere: die willen we
+niet. Dezelfde kennis werkt beter als "waar de huidtherapeut naar kijkt". Dat centreert de
+behandelaar, het is uniek voor deze site, en de bezoeker krijgt geen huiswerk dat hij fout
+kan doen.
+
 ### Wat hier concreet uit volgt
 
 - Zinnen als "soms behandelen we niet" en "soms heeft boeken geen zin" staan alleen nog in
