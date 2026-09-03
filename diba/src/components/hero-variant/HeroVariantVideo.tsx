@@ -1,29 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FIGMA_HOME_PORTRAIT_WIDE } from "@/data/figma-home-images";
-import { DIBA_HERO_VIDEO_ID } from "@/lib/site";
-
-function heroVideoEmbedUrl(videoId: string): string {
-  const url = new URL(`https://www.youtube-nocookie.com/embed/${videoId}`);
-  url.searchParams.set("autoplay", "1");
-  url.searchParams.set("mute", "1");
-  url.searchParams.set("loop", "1");
-  url.searchParams.set("playlist", videoId);
-  url.searchParams.set("controls", "0");
-  url.searchParams.set("rel", "0");
-  url.searchParams.set("modestbranding", "1");
-  url.searchParams.set("playsinline", "1");
-  url.searchParams.set("iv_load_policy", "3");
-  return url.toString();
-}
+import { DIBA_HERO_VIDEO_SRC } from "@/lib/site";
 
 /**
  * Achtergrondvideo voor de hero-variant. Stil, geluidloos, decoratief.
  * Bij prefers-reduced-motion valt hij terug op de shootfoto.
  */
 export default function HeroVariantVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
@@ -34,6 +21,12 @@ export default function HeroVariantVideo() {
     return () => mq.removeEventListener("change", update);
   }, []);
 
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!showVideo || !video) return;
+    void video.play().catch(() => {});
+  }, [showVideo]);
+
   return (
     <>
       <Image
@@ -43,19 +36,23 @@ export default function HeroVariantVideo() {
         priority
         quality={92}
         sizes="100vw"
-        className="object-cover object-left-top"
+        className="object-cover object-center"
       />
 
       {showVideo ? (
-        <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-          <iframe
-            src={heroVideoEmbedUrl(DIBA_HERO_VIDEO_ID)}
-            title=""
-            tabIndex={-1}
-            allow="autoplay; encrypted-media; picture-in-picture"
-            className="pointer-events-none absolute top-1/2 left-1/2 h-[56.25vw] min-h-full w-[177.78vh] min-w-full -translate-x-1/2 -translate-y-1/2 border-0"
-          />
-        </div>
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+          tabIndex={-1}
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        >
+          <source src={DIBA_HERO_VIDEO_SRC} type="video/mp4" />
+        </video>
       ) : null}
     </>
   );

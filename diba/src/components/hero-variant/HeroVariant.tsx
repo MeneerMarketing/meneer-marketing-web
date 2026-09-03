@@ -1,9 +1,7 @@
-import Link from "next/link";
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
 import HeroVariantVideo from "@/components/hero-variant/HeroVariantVideo";
-import Label from "@/components/ui/Label";
-import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
+import Button from "@/components/ui/Button";
 
 /**
  * Hero-variant — topbalk boven, daaronder één beeldvlak met de navigatie eróver.
@@ -36,7 +34,8 @@ import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
  * kop onder de adresbalk.
  *
  * Dit is de homepage-hero: schermvullend beeld met navigatie erover. De achtergrond is een
- * geluidloze YouTube-loop; bij prefers-reduced-motion valt hij terug op de shootfoto.
+ * geluidloze videoloop; bij prefers-reduced-motion valt hij terug op de shootfoto.
+ * De copy komt van de vorige homepage-kolom, niet van de oude variant-kop.
  * Topbalk en HoofdNav mee, want in dit ontwerp zweven die binnen het beeld in plaats van
  * erboven te staan.
  */
@@ -126,61 +125,26 @@ export default function HeroVariant() {
               verlies. */}
           <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-[var(--g-900)]/88 via-[var(--g-900)]/74 via-88% to-transparent px-5 pt-28 pb-8 sm:px-8 sm:pb-10 lg:bg-none lg:px-10 lg:pt-0 lg:pb-14">
             <div className="max-w-[46ch]">
-              <Label opDonker>Behandeling nul</Label>
-
-              {/* Onder 360px stapt de kop terug naar 36px. Op 48px past "Wij gokken niet."
-                  niet in een kolom van 280px en breekt hij over drie regels, wat de tweede
-                  regel van het rijm losscheurt. Dit staat hier en niet op .diba-display-l:
-                  die schaal komt uit het ontwerp en geldt voor de hele site. */}
-              <h1 className="diba-display-l mt-4 text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
-                Wij gokken niet.
+              <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
+                Huidkliniek
                 <br />
-                <span className="diba-accent-on-dark">Wij meten.</span>
+                <span className="diba-accent-on-dark">in Rotterdam</span>
               </h1>
 
-              <p className="mt-5 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Elke behandeling begint met een meting onder vast licht. Daarna
-                hoor je wat er realistisch mogelijk is, en soms is dat niets.
+              <p className="mt-5 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                Je hoeft vooraf niet te weten welke behandeling je nodig hebt.
+                We luisteren naar waar je last van hebt, bekijken je huid en
+                leggen duidelijk uit wat wel en niet zinvol is. Alle prijzen
+                staan vooraf online.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Link
-                  href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
-                  className="diba-label inline-flex h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Plan Behandeling Nul
-                  <svg
-                    viewBox="0 0 16 16"
-                    className="h-3 w-3"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" />
-                  </svg>
-                </Link>
-
-                <Link
-                  href="/huidproblemen"
-                  className="diba-label inline-flex h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Onze huidproblemen
-                  <svg
-                    viewBox="0 0 16 16"
-                    className="h-3 w-3"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" />
-                  </svg>
-                </Link>
+                <Button href="/intake" variant="primair-op-donker">
+                  Plan een eerste afspraak
+                </Button>
+                <Button href="/behandelingen" variant="secundair-op-donker">
+                  Bekijk de behandelingen
+                </Button>
               </div>
             </div>
           </div>

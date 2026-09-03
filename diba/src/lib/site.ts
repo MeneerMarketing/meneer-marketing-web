@@ -49,8 +49,8 @@ export const DIBA_INSTAGRAM_URL =
   process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
   "https://www.instagram.com/dibaclinics/";
 
-/** Hero-achtergrondvideo op de homepage (YouTube, geluidloos, decoratief). */
-export const DIBA_HERO_VIDEO_ID = "D9s0f7lGa8Y";
+/** Hero-achtergrondvideo op de homepage (geluidloos, decoratief). */
+export const DIBA_HERO_VIDEO_SRC = "/videos/hero-hydrafacial.mp4";
 
 /**
  * Openingstijden.
