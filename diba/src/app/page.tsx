@@ -13,7 +13,7 @@ export const metadata: Metadata = zoekmachineVelden({
     "Huidkliniek in Hillegersberg, Rotterdam. Advies over huidverbetering en laserontharing, en wat in jouw situatie wel of niet zinvol is.",
 });
 
-/** Homepage = Figma Make export, wired aan DIBA-regels. */
+/** Homepage = hero-variant met achtergrondvideo + Figma-secties. */
 export default function HomePage() {
   return (
     <>
@@ -25,7 +25,7 @@ export default function HomePage() {
           })),
         )}
       />
-      <FigmaHomeApp />
+      <FigmaHomeApp heroVariant />
     </>
   );
 }

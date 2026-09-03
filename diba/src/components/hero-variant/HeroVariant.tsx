@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
+import HeroVariantVideo from "@/components/hero-variant/HeroVariantVideo";
 import Label from "@/components/ui/Label";
-import { FIGMA_HOME_PORTRAIT_WIDE } from "@/data/figma-home-images";
 import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
 
 /**
@@ -36,9 +35,8 @@ import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
  * Hoogte in `svh` en niet in `vh`: op iOS is 100vh groter dan wat je ziet, en dan valt de
  * kop onder de adresbalk.
  *
- * Dit blijft een variant en geen vervanging. Hij staat op /home-variant naast de
- * bestaande homepage, zodat er iets te kiezen valt in plaats van iets te slikken; de
- * homepage houdt zijn eigen hero tot die keuze gemaakt is. HeroVariant brengt zijn eigen
+ * Dit is de homepage-hero: schermvullend beeld met navigatie erover. De achtergrond is een
+ * geluidloze YouTube-loop; bij prefers-reduced-motion valt hij terug op de shootfoto.
  * Topbalk en HoofdNav mee, want in dit ontwerp zweven die binnen het beeld in plaats van
  * erboven te staan.
  */
@@ -88,15 +86,7 @@ export default function HeroVariant() {
               staande opnamen uit de shoot zijn allemaal 1334x2000 web-exports. Een
               1:2-uitsnede daaruit is 1000 pixels breed, terwijl een telefoon met
               pixeldichtheid 3 er 1125 vraagt. Dat kost dus zichtbaar scherpte. */}
-          <Image
-            src={FIGMA_HOME_PORTRAIT_WIDE.src}
-            alt={FIGMA_HOME_PORTRAIT_WIDE.alt}
-            fill
-            priority
-            quality={92}
-            sizes="100vw"
-            className="object-cover object-left-top"
-          />
+          <HeroVariantVideo />
 
           {/* Leesbaarheid, geen sfeer. Boven voor de navigatie, onder voor de kop.
 
