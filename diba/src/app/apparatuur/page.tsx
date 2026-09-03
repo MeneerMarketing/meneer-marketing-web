@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Dieptevergelijker from "@/components/apparatuur/Dieptevergelijker";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
@@ -34,10 +35,23 @@ export const metadata: Metadata = zoekmachineVelden({
 });
 
 export default function ApparatuurPage() {
-  const perCategorie = APPARAAT_CATEGORIEEN.map((c) => ({
-    ...c,
-    items: APPARATUUR.filter((a) => a.categorie === c.id),
-  })).filter((c) => c.items.length > 0);
+  /**
+   * Alle apparaten in één rij-volgorde, gesorteerd op categorie.
+   *
+   * Hiervoor stond er een raster per categorie. Zeven categorieën met 1, 4, 2, 1, 2, 1 en 1
+   * apparaat, elk in een raster van drie kolommen: vijf van de zeven rasters hadden dus een
+   * halve of driekwart lege rij. Dat is wat de pagina onaf deed lijken — niet de inhoud maar
+   * de gaten.
+   *
+   * Twaalf kaarten achter elkaar vullen vier hele rijen. De categorie is niet weg: die staat
+   * nu op de kaart zelf, en filteren kan al in de dieptesectie hierboven.
+   */
+  const apparaten = APPARAAT_CATEGORIEEN.flatMap((c) =>
+    APPARATUUR.filter((a) => a.categorie === c.id).map((a) => ({
+      apparaat: a,
+      categorie: c.label,
+    })),
+  );
 
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
@@ -167,40 +181,72 @@ export default function ApparatuurPage() {
 
       {/* ── De apparaten ── */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto space-y-16">
-          {perCategorie.map((c) => (
-            <div key={c.id}>
-              <Label>{c.label}</Label>
-              <ul className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {c.items.map((a) => (
-                  <li key={a.slug}>
-                    <Link
-                      href={`/apparatuur/${a.slug}`}
-                      className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-7"
-                    >
-                      {a.merk ? (
-                        <span className="diba-label text-[var(--t-muted)]">
-                          {a.merk}
-                        </span>
-                      ) : null}
-                      <span className="diba-card-title mt-2 text-[var(--t-strong)]">
-                        {a.naam}
+        <div className="mx-auto">
+          <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {apparaten.map(({ apparaat: a, categorie }) => (
+              <li key={a.slug}>
+                <Link
+                  href={`/apparatuur/${a.slug}`}
+                  className="group flex h-full flex-col overflow-hidden rounded-[var(--r-md)] bg-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                >
+                  {/* De foto van het apparaat zoals het bij ons staat.
+
+                      Deze lagen al in de repo en waren op deze pagina nergens te zien:
+                      twaalf apparaten als tekstregels, terwijl er van tien een foto is. Dat
+                      is de tweede reden dat het overzicht half aanvoelde — je leest namen
+                      die je niet kent en ziet niet wat je voor je hebt.
+
+                      Waar nog geen foto is blijft het vlak mintgroen met het merkteken: geen
+                      persfoto van de fabrikant erbij verzinnen. Een foto van een ander
+                      exemplaar is erger dan geen foto. */}
+                  <span className="relative block aspect-[16/10] overflow-hidden bg-[var(--g-075)]">
+                    {a.foto ? (
+                      <Image
+                        src={a.foto.src}
+                        alt={a.foto.alt}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                        sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 100vw"
+                      />
+                    ) : (
+                      <span
+                        aria-hidden="true"
+                        className="absolute inset-0 grid place-items-center text-[var(--g-300)]"
+                      >
+                        <DibaLeafMark className="h-10 w-10" />
                       </span>
-                      <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
-                        {publicCopy(a.kort)}
+                    )}
+
+                    {/* De categorie hoort bij het apparaat en niet bij een kop erboven.
+                        Op de foto kost hij geen regel in de tekst. */}
+                    <span className="diba-label absolute left-4 top-4 rounded-[var(--r-pill)] bg-white/90 px-3 py-1.5 text-[var(--g-700)] backdrop-blur-sm">
+                      {categorie}
+                    </span>
+                  </span>
+
+                  <span className="flex flex-1 flex-col p-6 sm:p-7">
+                    {a.merk ? (
+                      <span className="diba-label text-[var(--t-muted)]">
+                        {a.merk}
                       </span>
-                      <span className="mt-6 pt-4 text-[13px] leading-5 text-[var(--t-muted)]">
-                        {a.behandelingen
-                          .map((s) => behandelingVoorSlug(s)?.naam)
-                          .filter(Boolean)
-                          .join(" · ")}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                    ) : null}
+                    <span className="diba-card-title mt-2 text-[var(--t-strong)]">
+                      {a.naam}
+                    </span>
+                    <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
+                      {publicCopy(a.kort)}
+                    </span>
+                    <span className="mt-6 border-t border-[var(--g-100)] pt-4 text-[13px] leading-5 text-[var(--t-muted)]">
+                      {a.behandelingen
+                        .map((s) => behandelingVoorSlug(s)?.naam)
+                        .filter(Boolean)
+                        .join(" · ")}
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

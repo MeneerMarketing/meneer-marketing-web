@@ -3,6 +3,7 @@ import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
 import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
+import { PillarFaq } from "@/components/pillar/PillarSecties";
 import Label from "@/components/ui/Label";
 import { APPARATUUR, apparaatVoorSlug } from "@/data/apparatuur";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
@@ -398,37 +399,89 @@ export default async function ApparaatPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      {/* ── Afsluiter ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div>
-            <Label>Beeld</Label>
-            <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Wat het apparaat
-              <br />
-              <span className="diba-accent">wel en niet bepaalt</span>
-            </h2>
-          </div>
-          <div className="max-w-[58ch]">
-            <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Twee klinieken met dit apparaat geven niet hetzelfde resultaat.
-              Dat hangt af van wat er vooraf gemeten is, welke instelling
-              daarbij hoort en of iemand je vertelt wanneer het bij jou niet
-              past.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link
-                href="/intake"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
-              >
-                Plan Behandeling Nul
-              </Link>
-              <Link
-                href="/apparatuur"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
-              >
-                Alle apparatuur
-              </Link>
+      {/* ── Vragen ──
+
+          Deze ontbraken. De behandelpagina's hebben een vragenlijst en deze niet, en dat is
+          precies waarom ze half aanvoelen: je leest wat het apparaat is en tot hoe diep het
+          komt, en dan houdt het op. De vragen die je op dat moment hebt — waarom dit ding en
+          niet dat andere, wat de instelling uitmaakt — staan er dan niet.
+
+          PillarFaq, zodat de indeling dezelfde is als overal en de vragen ook bij Google
+          worden aangemeld. */}
+      {a.vragen?.length ? (
+        <PillarFaq items={a.vragen} onderwerp={`de ${a.naam}`} />
+      ) : null}
+
+      {/* ── Afsluiter ──
+
+          Dit was een losse alinea met twee knoppen eronder: de pagina hield gewoon op. De
+          behandelpagina's sluiten af met een blok dat het onderwerp terugbrengt naar de
+          meting, en die afsluiter is hier eigenlijk nog nodiger. Iemand die op een
+          apparaatnaam zoekt, zoekt op het apparaat — terwijl het apparaat het minst
+          bepalende deel van de uitkomst is. Dat is het enige wat hier nog gezegd moet
+          worden, en het verdient een blok en geen voetnoot. */}
+      <section className="px-5 pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
+        <div className="mx-auto">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
+            <div className="lg:grid lg:grid-cols-[1.18fr_.82fr] lg:gap-14">
+              <div>
+                <Label opDonker>Eerst meten</Label>
+                <h2 className="diba-display-m mt-4 max-w-[20ch]">
+                  Het apparaat is{" "}
+                  <span className="diba-accent-on-dark">
+                    niet wat het verschil maakt
+                  </span>
+                </h2>
+                <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                  Twee klinieken met dezelfde {a.naam} geven niet hetzelfde
+                  resultaat. Wat telt is wat er vooraf gemeten is, welke
+                  instelling daarbij hoort, en of iemand het zegt wanneer dit
+                  bij jou niet past.
+                </p>
+                <div className="mt-8 flex flex-wrap items-center gap-3">
+                  <Link
+                    href="/intake"
+                    className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
+                  >
+                    Wat er in Behandeling Nul gebeurt
+                  </Link>
+                  <Link
+                    href="/apparatuur"
+                    className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/25 px-6 text-[var(--on-dark)] transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
+                  >
+                    Alle apparatuur
+                  </Link>
+                </div>
+              </div>
+
+              {/* De drie dingen die wél het verschil maken, in de volgorde waarin ze
+                  gebeuren. Dit is geen opsomming van diensten maar het antwoord op de
+                  vraag die de kop stelt — zonder dit is de kop een bewering. */}
+              <ul className="mt-12 space-y-6 border-t border-white/15 pt-8 lg:mt-0 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0">
+                {[
+                  [
+                    "De meting",
+                    "Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.",
+                  ],
+                  [
+                    "De instelling",
+                    "Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.",
+                  ],
+                  [
+                    "Het eerlijke nee",
+                    "Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.",
+                  ],
+                ].map(([kop, uitleg]) => (
+                  <li key={kop}>
+                    <h3 className="diba-label text-[var(--on-dark-accent)]">
+                      {kop}
+                    </h3>
+                    <p className="mt-2 max-w-[38ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
+                      {uitleg}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

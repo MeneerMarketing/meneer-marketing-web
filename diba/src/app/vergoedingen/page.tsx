@@ -47,7 +47,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/vergoedingen",
   titel: "Vergoedingen",
   omschrijving:
-    "Of er iets vergoed wordt hangt niet af van je verzekeraar maar van de vraag of er een medische reden is. Drie vragen, en wat er gebeurt als het antwoord nee is.",
+    "Is er een medische reden voor je klacht, dan is er een route naar vergoeding. Drie vragen op volgorde, en bij elke vraag waar je aan toe bent.",
 });
 
 export default function VergoedingenPage() {
@@ -82,26 +82,31 @@ export default function VergoedingenPage() {
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Voor het grootste deel van wat wij doen is het antwoord bij elke
-              verzekeraar hetzelfde: er wordt niets vergoed. Dat is geen
-              strengheid van jouw polis, het is hoe het stelsel is opgezet.
-              Cosmetische zorg valt erbuiten.
+              Is er een medische reden voor je klacht, dan is er een route.
+              Huidtherapie zit bij de meeste verzekeraars in het aanvullende
+              pakket, en dan gaat het verder over jouw polis: welk pakket je
+              hebt, welk maximum eraan hangt en of je huisarts een verwijzing
+              moet schrijven.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              De vraag die er wel toe doet komt eerder, en gaat niet over de
-              behandeling maar over de klacht.
+              Gaat het om een cosmetische wens, dan betaal je die zelf. Dat is
+              in heel Nederland zo: het stelsel maakt die knip, jouw polis en
+              deze kliniek staan daarbuiten. Welke van de twee het is hangt aan
+              de klacht en niet aan de behandeling. Dezelfde laser is in het ene
+              geval medisch en in het andere cosmetisch, en daarom begint het
+              bij de meting.
             </p>
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
-            <Label>Waarom hier geen bedragen staan</Label>
+            <Label>Waar je het bedrag vindt</Label>
             <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
               Voorwaarden en maxima veranderen per jaar en per pakket.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              Een bedrag op een website is binnen twaalf maanden onjuist, en bij
-              geld is onjuist erger dan afwezig. Wat niet verandert is hoe het
-              werkt, en dat staat er wel.
+              Jouw actuele bedrag staat dus in je eigen polis, en daar klopt het
+              ook echt. Wat op deze pagina staat is hoe het werkt, en dat blijft
+              van jaar tot jaar hetzelfde.
             </p>
           </div>
         </div>
@@ -127,11 +132,12 @@ export default function VergoedingenPage() {
           <div>
             <Label>Drie vragen, op volgorde</Label>
             <h2 className="diba-display-m mt-4">
-              En wat er gebeurt <span className="diba-accent">bij nee.</span>
+              Zo loopt de route <span className="diba-accent">naar ja.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Die nee-tak staat normaal nergens, en dat is precies de tak waar
-              de meeste mensen in terechtkomen.
+              Bij elke vraag staat waar je aan toe bent, ook als het antwoord de
+              andere kant op valt. Die helft laten de meeste sites weg, en dat
+              is precies de helft waar je iets aan hebt.
             </p>
           </div>
 
@@ -154,13 +160,15 @@ export default function VergoedingenPage() {
 
                   <div className="grid gap-3 sm:grid-cols-2">
                     <div className="rounded-[var(--r-md)] bg-[var(--g-200)] p-6">
-                      <p className="diba-label text-[var(--g-900)]">Bij nee</p>
+                      <p className="diba-label text-[var(--g-900)]">Bij ja</p>
                       <p className="mt-3 text-[15px] leading-7 text-[var(--g-900)]">
                         {s.nee}
                       </p>
                     </div>
                     <div className="rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
-                      <p className="diba-label text-[var(--t-label)]">Bij ja</p>
+                      <p className="diba-label text-[var(--t-label)]">
+                        Bij nee
+                      </p>
                       <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                         {s.ja}
                       </p>
@@ -181,19 +189,19 @@ export default function VergoedingenPage() {
               <div>
                 <Label opDonker>Wie staat waarvoor aan de lat</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Wat wij hierin
-                  <span className="diba-accent-on-dark"> niet kunnen.</span>
+                  Samen krijg je het
+                  <span className="diba-accent-on-dark"> rond.</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Wie waarvoor aan de lat staat blijft vaak onduidelijk tot het
-                  misgaat, en dan is de teleurstelling voor jou. Dus staat het
-                  hier zwart op wit.
+                  Een vergoeding komt rond als beide kanten hun deel doen. Hier
+                  staat welk deel van ons is en welk deel van jou, zodat je het
+                  vooraf weet en niet pas als de rekening er ligt.
                 </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[var(--r-md)] bg-white/10 p-6 sm:p-7">
-                  <p className="diba-label diba-label-on-dark">Dat doen wij</p>
+                  <p className="diba-label diba-label-on-dark">Dit doen wij</p>
                   <ul className="mt-4 space-y-3">
                     {ONZE_ROL.wel.map((r) => (
                       <li
@@ -206,14 +214,16 @@ export default function VergoedingenPage() {
                   </ul>
                 </div>
                 <div className="rounded-[var(--r-md)] bg-white/10 p-6 sm:p-7">
-                  <p className="diba-label diba-label-on-dark">
-                    Dat doen wij niet
-                  </p>
+                  <p className="diba-label diba-label-on-dark">Dit doe jij</p>
                   <ul className="mt-4 space-y-3">
-                    {ONZE_ROL.niet.map((r) => (
+                    {ONZE_ROL.jij.map((r) => (
+                      /* Zelfde kleur als de linkerkolom. Het accentgroen zat hier omdat dit
+                         de niet-lijst was en dus apart moest springen; nu zijn het twee
+                         helften van dezelfde taak en horen ze er gelijk uit te zien. Het
+                         scheelt ook contrast: 5,14 om 4,55 op dit vlak. */
                       <li
                         key={r}
-                        className="text-[15px] leading-7 text-[var(--on-dark-accent)]"
+                        className="text-[15px] leading-7 text-[var(--on-dark-body)]"
                       >
                         {r}
                       </li>

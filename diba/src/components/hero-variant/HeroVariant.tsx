@@ -127,37 +127,45 @@ export default function HeroVariant() {
             <div className="max-w-[46ch]">
               <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
                 <span className="lg:hidden">
-                  Eerst meten.
+                  We meten je huid
                   <br />
-                  <span className="diba-accent-on-dark">Daarna advies.</span>
+                  <span className="diba-accent-on-dark">
+                    voordat we adviseren
+                  </span>
                 </span>
                 <span className="hidden lg:inline">
-                  Eerst meten.
+                  We meten je huid
                   <br />
-                  <span className="diba-accent-on-dark">Daarna pas ingrijpen.</span>
+                  <span className="diba-accent-on-dark">
+                    voordat we iets voorstellen
+                  </span>
                 </span>
               </h1>
 
               <p className="mt-4 max-w-[46ch] text-[15px] leading-[1.65] text-[var(--on-dark-body)] sm:mt-5 sm:text-[16px] sm:leading-7">
                 <span className="lg:hidden">
-                  We meten je huid onder vast licht. Je hoort direct wat zinvol
-                  is, en ook wanneer wachten slimmer is.
+                  We meten je huid onder vast licht. Je hoort direct wat er
+                  mogelijk is, en wanneer wachten je meer oplevert.
                 </span>
                 <span className="hidden lg:inline">
-                  Je hoeft vooraf niet te weten welke behandeling past. We
-                  luisteren, meten je huid en leggen uit wat wel en niet zinvol
-                  is. Alle prijzen staan vooraf online.
+                  Kom met je klacht, dan zoeken wij de behandeling erbij. We
+                  luisteren, meten je huid en leggen uit wat er in jouw geval
+                  mogelijk is. Alle prijzen staan vooraf online.
                 </span>
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-2.5 sm:mt-8 sm:gap-3">
                 <Button href="/intake" variant="primair-op-donker">
                   <span className="lg:hidden">Plan intake</span>
-                  <span className="hidden lg:inline">Plan een eerste afspraak</span>
+                  <span className="hidden lg:inline">
+                    Plan een eerste afspraak
+                  </span>
                 </Button>
                 <Button href="/behandelingen" variant="secundair-op-donker">
                   <span className="lg:hidden">Behandelingen</span>
-                  <span className="hidden lg:inline">Bekijk de behandelingen</span>
+                  <span className="hidden lg:inline">
+                    Bekijk de behandelingen
+                  </span>
                 </Button>
               </div>
             </div>

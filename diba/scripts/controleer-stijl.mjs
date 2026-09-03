@@ -215,6 +215,19 @@ const REGELS = [
     grens: 0,
   },
   {
+    naam: "halve zin na een weggehaalde redactievlag",
+    bron: "Eindcontrole",
+    uitleg:
+      'Een vlag middenin een zin laat bij het strippen de staart staan. Op de Nordlys-pagina stond zo maandenlang "melanine in een vlek. welke applicators hier in de kast liggen." Zet de notitie ín de vlag: [GEGEVEN-NODIG: ...].',
+    /* Een zin die begint met een kleine letter is in het Nederlands vrijwel altijd stuk.
+       De uitzondering zit vóór de punt en niet erna: bij een afkorting als "a.s.r." hoort de
+       punt bij het woord en gaat de zin gewoon door. Vandaar een terugblik in plaats van
+       een vooruitblik — mijn eerste poging keek naar het woord ná de punt en vond daar
+       natuurlijk nooit de afkorting. */
+    test: (t) => /(?<!\ba\.s\.r)(?<![A-Za-z])[.!?]\s+[a-z]/.test(t),
+    grens: 0,
+  },
+  {
     naam: "merknaam verkeerd geschreven",
     bron: "Eindcontrole",
     uitleg: "Het is Diba Clinics, niet DIBA Clinics.",
@@ -348,5 +361,70 @@ console.log(
   `${ontkenningskoppen.length} koppen staan op een ontkenning. Een deel daarvan hoort zo;` +
     ` het gaat om de koppen die eerst zeggen wat iets niet is.`,
 );
+
+/* ── Hoe vaak de site iets ontkent ──────────────────────────────────────────────────────
+ *
+ * WAAROM DIT GETELD WORDT.
+ *
+ * Yasin las de vergoedingenpagina en dacht na de eerste alinea dat er niets vergoed wordt.
+ * Die alinea was waar en netjes bedoeld, maar hij deed de deur dicht voordat iemand binnen
+ * was. Zo ging het op meer plekken: elke zin apart verdedigbaar, bij elkaar een site die
+ * vooral opsomt wat er allemaal niet gebeurt.
+ *
+ * Dat is geen fout die je per zin vindt — je vindt hem alleen als je telt. Vandaar een maat
+ * in plaats van een regel.
+ *
+ * WAT DE GRENS BETEKENT.
+ *
+ * Vijfentwintig ontkenningen per duizend woorden is de sitebrede stand van augustus 2026, en
+ * dat was te veel. De herschreven homepage zit op 9 en vergoedingen op 12. Twintig is dus
+ * ruim, en een pagina die eroverheen gaat is niet per se fout: de pagina over wat we niet
+ * behandelen hóórt hoog te staan. Het is een vraag, geen afkeuring — daarom telt dit niet
+ * mee in de exitcode.
+ *
+ * De eerlijkheid mag hier nooit voor wijken. "Als wachten verstandiger is, zeggen we dat" is
+ * waarom mensen hier komen. De vraag is alleen of de zin van de kant staat waar hij open is:
+ * "wij behandelen niet om te behandelen" en "elke behandeling heeft hier een reden die je
+ * zelf kunt navertellen" zeggen hetzelfde, en alleen de tweede laat zien wat je krijgt.
+ */
+const ONTKENNING = /\b(niet|geen|nooit|niets|nergens|zonder|noch)\b/gi;
+
+const GRENS_PER_1000 = 20;
+
+const perPagina = new Map();
+for (const r of regels) {
+  const v = perPagina.get(r.pad) ?? { woorden: 0, ontkenningen: 0 };
+  v.woorden += kaal(r.t).split(/\s+/).filter(Boolean).length;
+  v.ontkenningen += (kaal(r.t).match(ONTKENNING) ?? []).length;
+  perPagina.set(r.pad, v);
+}
+
+let totaalW = 0;
+let totaalO = 0;
+const teVaak = [];
+for (const [pad, v] of perPagina) {
+  totaalW += v.woorden;
+  totaalO += v.ontkenningen;
+  /* Onder de honderdvijftig woorden zegt een verhouding niets: één zin kantelt hem. */
+  if (v.woorden < 150) continue;
+  const per1000 = Math.round((v.ontkenningen / v.woorden) * 1000);
+  if (per1000 > GRENS_PER_1000) teVaak.push({ pad, per1000, ...v });
+}
+teVaak.sort((a, b) => b.per1000 - a.per1000);
+
+console.log(
+  `
+Ontkenningen: ${Math.round((totaalO / totaalW) * 1000)} per 1000 woorden sitebreed ` +
+    `(grens per pagina: ${GRENS_PER_1000}).`,
+);
+if (teVaak.length) {
+  console.log(
+    `${teVaak.length} pagina's zeggen vaker wat er niet kan dan wat er wel kan. ` +
+      "Dezelfde inhoud, van de kant waar hij open staat:",
+  );
+  for (const p of teVaak.slice(0, 12))
+    console.log(`  ${String(p.per1000).padStart(3)} per 1000  ${p.pad}`);
+  if (teVaak.length > 12) console.log(`  en nog ${teVaak.length - 12}.`);
+}
 
 process.exitCode = bevindingen.length || metaFouten.length ? 1 : 0;

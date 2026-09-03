@@ -149,6 +149,18 @@ export type Apparaat = {
   readonly techniek?: readonly string[];
 
   /**
+   * De vragen die mensen over dít apparaat stellen.
+   *
+   * Niet dezelfde als op de behandelpagina: daar gaat het over de afspraak, hier over het
+   * apparaat. Waarom dit ding en niet dat andere, wat de instelling uitmaakt, en wat het
+   * niet kan. Dat is de vraag van iemand die op een apparaatnaam heeft gezocht.
+   */
+  readonly vragen?: readonly {
+    readonly vraag: string;
+    readonly antwoord: string;
+  }[];
+
+  /**
    * Een eigen kop boven de doorsnedetekening.
    *
    * Standaard staat er "Hoe dit apparaat op de huid werkt". Dat klopt bij elf van de
@@ -161,6 +173,28 @@ export type Apparaat = {
 export const APPARATUUR: readonly Apparaat[] = [
   {
     slug: "eve-m",
+    vragen: [
+      {
+        vraag: "Wat doet dit apparaat met mijn huid?",
+        antwoord:
+          "Niets. Het meet en behandelt niet. Je gezicht komt in een vaste houder, de belichting komt uit het apparaat zelf, en er raakt niets je huid.",
+      },
+      {
+        vraag: "Waarom niet gewoon een foto met de telefoon?",
+        antwoord:
+          "Omdat die niet met een vorige te vergelijken is. Andere afstand, ander licht, andere hoek — en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.",
+      },
+      {
+        vraag: "Wat zie ik onder UV dat ik anders niet zie?",
+        antwoord:
+          "Pigment dat dieper in de huid zit. In gewoon licht is dat nauwelijks zichtbaar, en juist die diepte bepaalt wat er mogelijk is. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Krijg ik een diagnose?",
+        antwoord:
+          "Nee. Een meting is geen diagnose; dat is werk voor een arts. Wat je krijgt is wat er gemeten is en wat dat betekent voor wat er kan.",
+      },
+    ],
     werkingKop: { kop: "Hoe dit apparaat", accent: "je huid in beeld brengt" },
     techniek: [
       "De EVE-M meet en behandelt niet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.",
@@ -207,6 +241,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "fotona",
+    vragen: [
+      {
+        vraag: "Waarom zitten er twee lasers in één apparaat?",
+        antwoord:
+          "Omdat ze iets anders doen. De Er:YAG op 2940 nanometer wordt bijna volledig door water opgenomen en blijft daardoor aan de oppervlakte; de Nd:YAG op 1064 nanometer komt veel dieper. Samen dekken ze een bereik dat één laser niet haalt.",
+      },
+      {
+        vraag: "Wat is SMOOTH-modus?",
+        antwoord:
+          "Een manier om de Er:YAG aan te sturen waarbij de energie in een reeks trage pulsen komt in plaats van één harde. Het weefsel warmt dan op zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verwarmen en verdampen. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Is dit hetzelfde apparaat als bij NightLase?",
+        antwoord:
+          "Ja, en dezelfde modus. Alleen de plek verschilt: bij NightLase gaat het over het zachte gehemelte en niet over de huid van je gezicht.",
+      },
+      {
+        vraag: "Voel ik er iets van?",
+        antwoord:
+          "Warmte, oplopend, die net voor het ongemakkelijke stopt. De behandelaar vraagt er tijdens de sessie naar, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.",
+      },
+    ],
     techniek: [
       "De TimeWalker draagt twee lasers in één kast. Een Er:YAG op 2940 nanometer, die vrijwel volledig door water wordt opgenomen en daardoor aan de oppervlakte blijft. En een Nd:YAG op 1064 nanometer, die veel minder door water wordt tegengehouden en dus dieper komt.",
       "Het bijzondere zit in de manier waarop Fotona de Er:YAG aanstuurt. In SMOOTH-modus komt de energie in een reeks trage pulsen in plaats van één harde, waardoor het weefsel opwarmt zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verdampen en verwarmen, en het is de reden dat er bij deze modus geen open huid ontstaat. [MEDISCHE-CHECK-ROJDA]",
@@ -271,6 +327,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "gentle-laser-pro-u",
+    vragen: [
+      {
+        vraag: "Waarom deze laser en niet de Nordlys?",
+        antwoord:
+          "De alexandriet op 755 nanometer wordt sterk opgenomen door het pigment in een haar, en dat maakt hem gericht op de haarwortel. De Nordlys werkt met een band in plaats van één golflengte en is daardoor breder maar minder precies op haar. Welke je krijgt hangt af van je huidtype en de zone. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat doet die koeling precies?",
+        antwoord:
+          "Vlak voor en na elke puls spuit het apparaat een stoot cryogeen op je huid. Daardoor koelt de bovenste laag terug terwijl de warmte in de haarwortel blijft zitten. Je voelt het als een koude tik om de warme puls heen.",
+      },
+      {
+        vraag: "Waarom voelt het op mijn bovenlip anders dan op mijn benen?",
+        antwoord:
+          "De spotgrootte en de pulsduur worden per zone gekozen, en de huid is niet overal even dik of even gevoelig. Op een kleine, gevoelige zone gaat de behandelaar met een andere instelling te werk dan op een groot vlak. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Kan dit bij een donkere huid?",
+        antwoord:
+          "De instelling bepaalt dat, niet het apparaat alleen. Bij meer pigment in de huid is de marge kleiner, en dat is precies waarom er vooraf gemeten wordt. Blijkt het niet verantwoord, dan doen we het niet. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
     techniek: [
       "De Gentle-serie van Candela werkt met een alexandrietlaser op 755 nanometer. Die golflengte wordt sterk opgenomen door melanine, het pigment dat een haar zijn kleur geeft. Daardoor loopt de energie langs de haarschacht naar de wortel en blijft de huid eromheen relatief onberoerd.",
       "De pulsduur is instelbaar van een kwart milliseconde tot honderd milliseconden, en de spotgrootte van 6 tot 18 millimeter. Dat zijn de twee knoppen die ertoe doen: een dikke, donkere haar vraagt iets anders dan een fijne, en een grote spot komt dieper dan een kleine.",
@@ -334,9 +412,31 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "nordlys-ipl",
+    vragen: [
+      {
+        vraag: "Is IPL hetzelfde als laser?",
+        antwoord:
+          "Nee. Een laser zendt één golflengte uit, IPL een band. Die band raakt daardoor meerdere dingen tegelijk — roodheid, vaatjes en oppervlakkig pigment — en komt gemiddeld minder diep.",
+      },
+      {
+        vraag: "Waarom wordt een vlek eerst donkerder?",
+        antwoord:
+          "Dat hoort erbij. Het pigment komt naar de oppervlakte voordat het vervaagt, en dat duurt een aantal dagen. Het betekent niet dat het erger wordt. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat bepaalt welke applicator ik krijg?",
+        antwoord:
+          "Het doelwit. Voor pigment wordt een andere band gekozen dan voor haargroei, en dat is de hele reden dat er meerdere zijn. De behandelaar kiest hem na de meting.",
+      },
+      {
+        vraag: "Kan dit ook op mijn benen of rug?",
+        antwoord:
+          "IPL werkt over een groot vlak en dat is juist zijn sterke kant. Of het bij jouw klacht past hangt af van wat er zit en hoe diep. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
     techniek: [
       "De Nordlys van Candela is geen laser maar IPL: intens gepulst licht. Een laser zendt één golflengte uit, IPL een band. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.",
-      "Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek. [GEGEVEN-NODIG] welke applicators hier in de kast liggen.",
+      "Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek. [GEGEVEN-NODIG: welke applicators hier in de kast liggen, Okan]",
       "Op hetzelfde platform kan ook een Nd:YAG op 1064 nanometer draaien, en fractionele lasers op 1550 en 1940 nanometer. Die komen dieper dan het IPL-licht en doen ander werk.",
     ],
     foto: {
@@ -397,6 +497,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "lumi-8",
+    vragen: [
+      {
+        vraag: "Voel ik hier iets van?",
+        antwoord:
+          "Nee. Er komt licht van één kleur op lage sterkte, zonder warmte en zonder dat er iets wordt weggehaald. De meeste mensen vinden het het rustigste kwartier van hun week.",
+      },
+      {
+        vraag: "Waarom verschillende kleuren?",
+        antwoord:
+          "Elke kleur komt tot een andere diepte. Blauw blijft aan de oppervlakte, rood komt iets verder en nabij-infrarood het verst, omdat dat het minst door de huid wordt tegengehouden.",
+      },
+      {
+        vraag: "Werkt dit op zichzelf?",
+        antwoord:
+          "Wij zetten het naast een andere behandeling in en niet als vervanging ervan. Wat LED precies doet is onderwerp van veel onderzoek en weinig zekerheid, en dat zeggen we er liever bij. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Is er hersteltijd?",
+        antwoord:
+          "Nee, want er is geen schade om van te herstellen. Je kunt er direct mee de deur uit.",
+      },
+    ],
     techniek: [
       "LED is geen laser en geen warmtebron. Er komt licht van één kleur uit, op lage sterkte, en het wordt door de huid opgenomen zonder dat er iets wordt verdampt of losgemaakt. Je voelt er niets van en er is geen hersteltijd, want er is ook geen schade om van te herstellen.",
       "De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft aan de oppervlakte, rood komt iets dieper, en infrarood komt het verst omdat het het minst door de huid wordt tegengehouden.",
@@ -460,6 +582,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "hydrafacial-syndeo",
+    vragen: [
+      {
+        vraag: "Wat maakt dit anders dan een gewone gezichtsbehandeling?",
+        antwoord:
+          "De combinatie in één beweging. In het mondstuk zit een spiraal waar tegelijk onderdruk op staat en vloeistof doorheen loopt: losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang.",
+      },
+      {
+        vraag: "Blijft het resultaat?",
+        antwoord:
+          "Nee, dit is onderhoud. Het werkt in de hoornlaag, en die vernieuwt zichzelf. Dat is geen tekortkoming zolang je het weet. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Waarom zijn er verschillende tips?",
+        antwoord:
+          "Ze verschillen in hoe grof de spiraal is. Welke er gebruikt wordt hangt af van je huid en van het doel; de tips zijn wegwerpartikelen en gaan per behandeling.",
+      },
+      {
+        vraag: "Kan dit bij een gevoelige huid?",
+        antwoord:
+          "Vaak wel, want er komen geen zuren aan te pas en het blijft aan de oppervlakte. Of het bij jou past bepaalt de meting. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
     techniek: [
       "Het werkzame deel is het mondstuk, niet de kast. In de tip zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over de huid: losgemaakte cellen en poriëninhoud gaan mee naar buiten, door een zijkanaal naar een opvangbak, terwijl er via hetzelfde kanaal serum naar binnen gaat.",
       "Dat is het hele idee achter de naam Vortex-Fusion: reinigen, losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang, met één hand, zonder van instrument te wisselen.",
@@ -518,6 +662,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "skinpen-cit",
+    vragen: [
+      {
+        vraag: "Wat is het verschil met de Dermapen?",
+        antwoord:
+          "Het motorontwerp en het aantal naalden. De SkinPen heeft er veertien en werkt iets bedaarder; de Dermapen haalt meer prikken per seconde. Het diepteberereik is bij allebei 0,25 tot 3 millimeter.",
+      },
+      {
+        vraag: "Waarom is de diepte zo belangrijk?",
+        antwoord:
+          "Omdat die bepaalt in welke laag het kanaaltje eindigt. Ondiep raakt de opperhuid en heelt binnen een dag; drie millimeter komt in het bindweefsel en vraagt langer. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Zijn de naalden per persoon?",
+        antwoord:
+          "Ja. De cartridges zijn steriel en voor eenmalig gebruik. Bij microneedling is dat geen detail: de naalden gaan door de huidbarrière heen, en daar was die barrière voor.",
+      },
+      {
+        vraag: "Doet het pijn?",
+        antwoord:
+          "Er gaat vooraf een verdovende crème op die een half uur intrekt. Wat je daarna voelt is een trilling en druk, het sterkst waar de huid dun over bot ligt.",
+      },
+    ],
     techniek: [
       "Een microneedling-pen zet een cartridge met naalden in een snelle op-en-neerbeweging. De SkinPen heeft er veertien, en de diepte is instelbaar van een kwart millimeter tot drie millimeter. Dat bereik loopt van net door de hoornlaag tot in het bindweefsel.",
       "De diepte is de enige instelling die er echt toe doet, want die bepaalt in welke laag het kanaaltje eindigt. Ondiep raakt de opperhuid en heelt binnen een dag; drie millimeter komt in de laag waar bindweefsel wordt aangemaakt en vraagt langer. [MEDISCHE-CHECK-ROJDA]",
@@ -576,6 +742,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "dermapen-4",
+    vragen: [
+      {
+        vraag: "Waarom deze pen en niet de SkinPen?",
+        antwoord:
+          "Dat hangt af van de zone en de diepte die daar past, niet van welke beter is. De Dermapen werkt sneller een vlak af en heeft voorgeprogrammeerde standen, waaronder een litteken-instelling op de maximale diepte. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat betekent 1920 prikken per seconde?",
+        antwoord:
+          "Dat het apparaat een vlak snel afwerkt met kleine, gelijke kanaaltjes. Sneller is hier niet dieper: de diepte stel je apart in.",
+      },
+      {
+        vraag: "Wordt de diepte per zone aangepast?",
+        antwoord:
+          "Ja. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, want daar ligt de huid dun over bot. Dat merk je ook: hoe dieper, hoe meer druk.",
+      },
+      {
+        vraag: "Hoe lang ben ik rood?",
+        antwoord:
+          "Een tot drie dagen, ongeveer als een stevige zonnegloed. De eerste vierentwintig uur laat je je huid met rust. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
     techniek: [
       "Dezelfde techniek als de SkinPen, met een ander motorontwerp. De Dermapen 4 haalt tot 1920 prikken per seconde en heeft hetzelfde diepteberereik van 0,25 tot 3,0 millimeter, in stappen instelbaar per zone van je gezicht.",
       "Het verschil dat je merkt zit in de snelheid waarmee een vlak wordt afgewerkt en in de standen die de fabrikant heeft voorgeprogrammeerd, waaronder een litteken-instelling die op de maximale diepte werkt.",
@@ -634,6 +822,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "u225",
+    vragen: [
+      {
+        vraag: "Wat doet dit apparaat precies?",
+        antwoord:
+          "Het brengt vloeistof op een ingestelde diepte in de huid, tussen één en tien millimeter, tot acht keer per seconde. Het is een injector en geen apparaat dat op de huid werkt.",
+      },
+      {
+        vraag: "Waarom niet gewoon met de hand injecteren?",
+        antwoord:
+          "Omdat alleen de naald beweegt en de spuit stilstaat. Daardoor trilt er minder en is de diepte van prik tot prik gelijk, ook als er een paar honderd achter elkaar gaan.",
+      },
+      {
+        vraag: "Wat zit er in de spuit?",
+        antwoord:
+          "Dat bepaalt de behandeling en niet het apparaat. Het kan een skinbooster zijn of een mesotherapie-mengsel, en die keuze hoort bij de behandelaar. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Zie ik er daarna uit alsof ik geprikt ben?",
+        antwoord:
+          "Vlak erna zie je kleine bultjes op de plek van elke prik; die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.",
+      },
+    ],
     techniek: [
       "De U225 is een injector, geen laser en geen apparaat dat op de huid werkt. Een luchtdruksysteem duwt een instelbare hoeveelheid vloeistof door een fijne naald, op een diepte tussen één en tien millimeter, tot acht keer per seconde.",
       "Wat hem onderscheidt van met de hand injecteren is dat alleen de naald beweegt en de spuit stilstaat. Daardoor trilt er minder en is de diepte van prik tot prik gelijk, ook als er een paar honderd achter elkaar gaan.",
@@ -692,6 +902,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "coolifting",
+    vragen: [
+      {
+        vraag: "Wat gebeurt er met mijn huid?",
+        antwoord:
+          "Er wordt koolzuurgas onder hoge druk over je huid geblazen met daarin een fijn verneveld serum. De gasstroom is koud, en kou en druk zijn hier de twee werkzame delen.",
+      },
+      {
+        vraag: "Komt er een naald aan te pas?",
+        antwoord:
+          "Nee. Er wordt niets ingebracht en niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan.",
+      },
+      {
+        vraag: "Hoe lang duurt het?",
+        antwoord:
+          "Een paar minuten. Veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.",
+      },
+      {
+        vraag: "Hoe lang houdt het aan?",
+        antwoord:
+          "Kort. Dit is een opfrisser en geen traject, en zo bieden we het ook aan. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
     techniek: [
       "De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud, en dat is niet toevallig: kou en druk zijn hier de twee werkzame delen.",
       "De koude gasstroom laat de vaatjes eerst samentrekken en daarna weer verwijden. De druk brengt het vernevelde serum tegen de opperhuid aan. De fabrikant noemt die twee cryoforese en baroforese.",
@@ -746,6 +978,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "dermaplane-pro",
+    vragen: [
+      {
+        vraag: "Wordt mijn haar dikker terug?",
+        antwoord:
+          "Nee. Scheren verandert de haarschacht niet, alleen het uiteinde. Een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is; dat is het hele verhaal.",
+      },
+      {
+        vraag: "Snijdt het mesje in mijn huid?",
+        antwoord:
+          "Nee, het schraapt over het oppervlak onder een vaste hoek. Wat eraf gaat zijn dode cellen uit de hoornlaag en de donshaartjes die daarin vastzitten.",
+      },
+      {
+        vraag: "Kan dit bij een gevoelige huid?",
+        antwoord:
+          "Vaak wel, want er komen geen zuren aan te pas. Bij actieve ontstekingen of een beschadigde barrière doen we het niet. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Waarom neemt mijn crème daarna beter op?",
+        antwoord:
+          "Omdat de laag dode cellen eraf is die er anders tussen zit. Dat effect is tijdelijk en duurt zolang die laag zich niet heeft hersteld.",
+      },
+    ],
     techniek: [
       "Dit is het eenvoudigste wat er in de kliniek staat: een steriel mesje dat onder een vaste hoek over een strak getrokken huid gaat. Er komt geen stroom, licht of warmte aan te pas.",
       "Wat eraf gaat zijn dode cellen uit de hoornlaag en de fijne donshaartjes die daarin vastzitten. Wat blijft is levende huid, want het mesje snijdt niet maar schraapt over het oppervlak.",
@@ -800,6 +1054,28 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "peelinglijnen",
+    vragen: [
+      {
+        vraag: "Waarom staat hier geen apparaat?",
+        antwoord:
+          "Omdat een peeling er geen is. Dit is een vloeistof, en wat hij doet hangt af van het zuur, de concentratie en de zuurgraad van het mengsel.",
+      },
+      {
+        vraag: "Wat bepaalt hoe diep een peeling komt?",
+        antwoord:
+          "Die drie samen. Fruitzuren blijven in de hoornlaag, salicylzuur lost op in vet en komt daardoor de porie in, en sterkere mengsels gaan tot in de opperhuid.",
+      },
+      {
+        vraag: "Ga ik vervellen?",
+        antwoord:
+          "Bij een lichte peeling meestal niet, bij een sterkere wel. Dat hoor je vooraf, want het bepaalt wanneer je dit het beste inplant. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Kan dit in de zomer?",
+        antwoord:
+          "Bij pigment liever niet, en bij de sterkere lijnen ook niet. Zon na een peeling is precies de combinatie die het resultaat kost. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
     techniek: [
       "Een peeling is geen apparaat maar een vloeistof, en wat hij doet hangt af van drie dingen: welk zuur erin zit, hoe geconcentreerd het is en hoe zuur het mengsel als geheel is. Die drie samen bepalen hoe diep het komt.",
       "Fruitzuren blijven in de hoornlaag en spoelen er na een paar minuten weer af. Salicylzuur lost op in vet en komt daardoor de porie in, waar water-oplosbare zuren niet komen. Sterkere mengsels gaan tot in de opperhuid en soms daaronder, en die vragen voorbereiding en hersteltijd.",

@@ -46,14 +46,14 @@ export const ROUTE: readonly Stap[] = [
     stap: "Eerste vraag",
     vraag: "Is er een medische reden?",
     zin: "Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch.",
-    nee: "Dan wordt er niets vergoed, door geen enkele verzekeraar. Dat is geen strengheid van jouw polis maar hoe het stelsel is opgezet: cosmetische zorg valt er buiten. Voor het grootste deel van wat wij doen is dit het antwoord.",
-    ja: "Dan gaat het verder naar de volgende vraag. Of er een medische reden is, bepaalt een arts en niet wij.",
+    nee: "Dan valt het onder cosmetische zorg en betaal je het zelf. Dat geldt bij elke kliniek en elke verzekeraar, want zo is het stelsel opgezet.",
+    ja: "Dan ga je door naar de tweede vraag. Of er een medische reden is, bepaalt een arts.",
   },
   {
     stap: "Tweede vraag",
     vraag: "Zit het in je aanvullende verzekering?",
-    zin: "Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.",
-    nee: "Dan betaal je zelf. Dat kan ook een prima keuze zijn, maar dan weet je het vooraf en niet achteraf.",
+    zin: "Huidtherapie zit bij de meeste verzekeraars in het aanvullende pakket en niet in de basis. Wat er precies in zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar.",
+    nee: "Dan betaal je het zelf, en dat kan een prima keuze zijn. Je weet het alleen vooraf, met de prijs erbij.",
     ja: "Kijk dan meteen naar het maximum per jaar en of er een verwijzing van je huisarts nodig is. Dat laatste wordt het vaakst over het hoofd gezien.",
   },
   {
@@ -61,7 +61,7 @@ export const ROUTE: readonly Stap[] = [
     vraag: "Is er een verwijzing nodig?",
     zin: "Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint.",
     nee: "Dan kun je rechtstreeks terecht. Meld bij de intake wel dat je een vergoeding verwacht, dan wordt er meteen gekeken of alles klopt.",
-    ja: "Regel die eerst. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit, en dan sta je met een rekening die niet meer terug te draaien is.",
+    ja: "Regel die dan eerst, vóór je afspraak. Achteraf een verwijzing opsturen accepteren verzekeraars zelden, en die rekening blijft dan staan.",
   },
 ];
 
@@ -83,19 +83,30 @@ export const MISVERSTANDEN: readonly { kop: string; zin: string }[] = [
   },
   {
     kop: "Dat regelt de kliniek wel voor me",
-    zin: "Wij kunnen je vertellen wat er gedaan is en wat het kost. Of jouw polis het dekt kunnen wij niet zien en niet toezeggen. Dat gesprek voer je met je verzekeraar.",
+    zin: "Wij zetten op je factuur wat er precies gedaan is, zodat je die kunt indienen. Wat jouw polis dekt staat alleen in jouw polis, en dat gesprek voer je met je verzekeraar. Weet je niet waar je moet kijken, vraag het ons dan bij de intake.",
   },
   {
     kop: "Ik hoor het later wel",
-    zin: "Achteraf iets rechtzetten lukt bijna nooit. Een verwijzing of een akkoord moet er zijn voordat de behandeling begint, anders is het antwoord nee en blijft het nee.",
+    zin: "Een verwijzing of een akkoord telt alleen als het er is vóórdat de behandeling begint. Regel je het van tevoren, dan is het meestal een kwestie van één belletje naar je huisarts.",
   },
 ];
 
 /**
- * Wat wij wel en niet doen rond vergoeding.
+ * De taakverdeling rond een vergoeding.
  *
- * Dit is de eerlijke afbakening. Wie waarvoor aan de lat staat blijft vaak onduidelijk tot
- * het misgaat, en dan is de teleurstelling voor de klant.
+ * DIT WAS EEN LIJST MET ONZE BEPERKINGEN.
+ *
+ * "Zien wat er in jouw polis staat", "toezeggen dat iets vergoed wordt": waar, maar het
+ * leverde een donker vlak op met de kop "Wat wij hierin niet kunnen" en daaronder vier keer
+ * wat er hier misgaat. Dat is de laatste indruk die je van een kliniek wilt geven aan iemand
+ * die uitzoekt of hij het kan betalen.
+ *
+ * Dezelfde afbakening staat er nu als taakverdeling: ons deel en jouw deel. Voor de lezer is
+ * dat bovendien bruikbaarder, want hij weet nu wat hem te doen staat in plaats van wat wij
+ * laten liggen.
+ *
+ * De grens is niet weg. Dat wij geen dekking kunnen toezeggen staat een sectie verder bij de
+ * misverstanden, en daar staat hij scherper dan hier: het is precies wat mensen aannemen.
  */
 export const ONZE_ROL = {
   wel: [
@@ -103,10 +114,9 @@ export const ONZE_ROL = {
     "Op je factuur zetten wat er precies gedaan is, zodat je die kunt indienen",
     "Bij de intake zeggen als we denken dat er een medische route bestaat die je nog niet gelopen hebt",
   ],
-  niet: [
-    "Zien wat er in jouw polis staat",
-    "Toezeggen dat iets vergoed wordt",
-    "Een verwijzing schrijven, want dat doet je huisarts",
-    "Rechtstreeks bij je verzekeraar declareren",
+  jij: [
+    "Je polisvoorwaarden nakijken op huidtherapie, of ons vragen waar je moet zoeken",
+    "Bij je huisarts een verwijzing halen als je pakket die eist",
+    "De factuur na afloop bij je verzekeraar indienen",
   ],
 } as const;

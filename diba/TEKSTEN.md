@@ -24,7 +24,7 @@ De kop- en voettekst staan op elke pagina hetzelfde en zijn hier weggelaten.
 
 **Tabbladtitel:** Huidkliniek Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Huidkliniek in Hillegersberg, Rotterdam. Advies over huidverbetering en laserontharing, en wat in jouw situatie wel of niet zinvol is.
+**Google-omschrijving:** Huidkliniek in Hillegersberg, Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.
 
 > knop: 5,0 gebaseerd op 3.883 reviews
 
@@ -52,9 +52,9 @@ NL
 
 > knop: AFSPRAAK MAKEN
 
-**HUIDKLINIEK IN ROTTERDAM**
+**WE METEN JE HUID VOORDAT WE IETS VOORSTELLEN**
 
-Je hoeft vooraf niet te weten welke behandeling je nodig hebt. We luisteren naar waar je last van hebt, bekijken je huid en leggen duidelijk uit wat wel en niet zinvol is. Alle prijzen staan vooraf online.
+Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je huid en leggen uit wat er in jouw geval mogelijk is. Alle prijzen staan vooraf online.
 
 > knop: PLAN EEN EERSTE AFSPRAAK
 
@@ -66,13 +66,13 @@ Of je nu last hebt van acne, pigment, ongewenste haargroei of een huid die veran
 
 > knop: Acne & onzuiverheden Rust in je huid, met een plan dat past.
 
-> knop: Pigment & melasma Behandel met kennis, niet met beloftes.
+> knop: Pigment & melasma Eerst meten hoe diep het zit, dan pas behandelen.
 
 > knop: Laserontharing Veilig, helder en afgestemd op jouw huidtype.
 
 > knop: Littekens & textuur Werk stap voor stap aan herstel en structuur.
 
-> knop: Huidveroudering Frisser zonder dat je jezelf kwijtraakt.
+> knop: Huidveroudering Frisser worden en jezelf blijven herkennen.
 
 > knop: Lichaam & huid Ook je lichaam verdient gerichte huidzorg.
 
@@ -102,15 +102,15 @@ Elke huid wordt serieus genomen. Ook als je nog niet weet waar je moet beginnen.
 
 - TOT SLOT Het voorstel Wat er kan, wat het kost en wat je kunt verwachten. Daarna beslis jij, in je eigen tempo. Stap 3 van 3
 
-**Als wachten of niet behandelen verstandiger is, zeggen we dat ook.**
+**We zeggen je eerlijk wat je huid nu nodig heeft.**
 
-Wij behandelen niet om te behandelen. We adviseren wat past bij jouw huid, jouw doel en jouw veiligheid.
+Soms is dat een behandeling, soms is dat tijd. Elke behandeling heeft hier een reden die je zelf kunt navertellen: passend bij jouw huid, jouw doel en jouw veiligheid.
 
-- Geen behandeling zonder doel We starten altijd met een huidmeting en een helder plan.
+- Altijd een doel We beginnen met een huidmeting en een plan dat je mee naar huis krijgt.
 
-- Transparant over kosten Geen verrassingen achteraf. Tarieven staan openbaar.
+- Vooraf de prijs Je weet wat het kost voordat je gaat liggen. Alle tarieven staan online.
 
-- Soms is wachten het beste We zeggen het als een behandeling nu niet het juiste moment is.
+- Ook het rustige advies Heeft je huid eerst rust nodig, dan hoor je dat van ons.
 
 > knop: VRAAG EEN SECOND OPINION
 
@@ -124,7 +124,7 @@ Een mooie huid is zelden één moment. Daarom bekijken we samen wat er speelt, w
 
 Van de eerste kop thee tot je nazorg: we hebben aandacht voor de hele ervaring.
 
-**Je beslist niet in de stoel**
+**Je beslist thuis, in alle rust**
 
 Je krijgt het advies mee naar huis, met de prijs erbij. Wat je daarna doet, bepaal je zelf.
 
@@ -138,7 +138,7 @@ We vertellen welke behandelingen mogelijk zijn, wat ze kosten en wat je ervan ku
 
 **Eerlijke huidkennis.**
 
-> knop: ACNE & HUIDZORG Acne zonder TikTok-hypes Wat helpt je huid wel, en wat kun je beter laten? LEES MEER
+> knop: ACNE & HUIDZORG Acne zonder TikTok-hypes Wat er werkelijk helpt bij acne, en in welke volgorde. LEES MEER
 
 > knop: PIGMENT & MELASMA Pigment: een realistisch plan Waarom geduld en bescherming net zo belangrijk zijn als behandeling. LEES MEER
 
@@ -154,7 +154,7 @@ Nee. Je komt juist voor advies. We kijken samen wat voor jouw huid en doel passe
 
 Wat kost een eerste afspraak?
 
-Je ontvangt vooraf duidelijke informatie over de intake en eventuele behandelopties. Geen verrassingen achteraf.
+Een intake kost 50 euro en duurt maximaal een uur. Behandelen we dezelfde afspraak, dan betaal je alleen de behandeling en vervalt dat bedrag. Je hoort de prijs dus voordat je beslist.
 
 Kan ik ook alleen een intake boeken?
 
@@ -169,6 +169,8 @@ Niet altijd. Wanneer een huidscan waarde toevoegt, leggen we uit wat we meten en
 Plan een intake in onze kliniek in Hillegersberg. We nemen de tijd voor jouw vragen, huidanalyse en een duidelijk behandelvoorstel.
 
 > knop: PLAN BEHANDELING NUL
+
+Huidkliniek in Hillegersberg. We meten je huid voordat we iets voorstellen, en zeggen het ook als afwachten verstandiger is.
 
 ---
 
@@ -5048,11 +5050,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt niet als de producten thuis blijven liggen. Het grootste deel van dit traject gebeurt buiten de kliniek
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over acnetraject**
 
-- Hoe lang duurt het traject? Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die marge valt hangt af van het type acne en van hoe je huid reageert, en dat hoor je na de meting.
+Hoe lang duurt het traject? +
 
-- Zit alles in de prijs? In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de prijzenpagina.
+Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die marge valt hangt af van het type acne en van hoe je huid reageert, en dat hoor je na de meting.
+
+Zit alles in de prijs? +
+
+In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de prijzenpagina.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5156,11 +5162,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - HUIDVEROUDERING
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over coolift cryo therapy**
 
-- Hoe lang houdt het aan? Een dag tot enkele dagen, en dat verschilt per huid. Wie iets blijvends wil, zit bij dit apparaat verkeerd en dat zeggen we liever nu dan achteraf.
+Hoe lang houdt het aan? +
 
-- Waarom staat er geen prijs bij? Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpagina en niet pas aan de balie.
+Een dag tot enkele dagen, en dat verschilt per huid. Wie iets blijvends wil, zit bij dit apparaat verkeerd en dat zeggen we liever nu dan achteraf.
+
+Waarom staat er geen prijs bij? +
+
+Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpagina en niet pas aan de balie.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5378,11 +5388,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - HUIDVEROUDERING
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over dermapen 4**
 
-- Wanneer zie ik er iets van? Niet meteen. Collageenopbouw kost weken, dus wat je na de eerste sessie ziet is herstel en niet resultaat. Daarom meten we vooraf: anders vergelijk je met een herinnering.
+Wanneer zie ik er iets van? +
 
-- Wat is het verschil met de SkinPen? Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.
+Niet meteen. Collageenopbouw kost weken, dus wat je na de eerste sessie ziet is herstel en niet resultaat. Daarom meten we vooraf: anders vergelijk je met een herinnering.
+
+Wat is het verschil met de SkinPen? +
+
+Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5562,11 +5576,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - MOEDERVLEKKEN EN PLEKJES
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over fibromen verwijderen**
 
-- Is het pijnlijk? Kort en scherp per plekje, en het is snel voorbij. Bij grotere of gevoelige plekken verdoven we.
+Is het pijnlijk? +
 
-- Waarom per kwartier en niet per stuk? Omdat het aantal minder uitmaakt dan de tijd. Wie er twintig kleine heeft, betaalt anders het twintigvoudige voor hetzelfde kwartier werk.
+Kort en scherp per plekje, en het is snel voorbij. Bij grotere of gevoelige plekken verdoven we.
+
+Waarom per kwartier en niet per stuk? +
+
+Omdat het aantal minder uitmaakt dan de tijd. Wie er twintig kleine heeft, betaalt anders het twintigvoudige voor hetzelfde kwartier werk.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5692,11 +5710,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - LITTEKENS EN STRIAE
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over fotona timewalker**
 
-- Waarom lopen de prijzen zo uiteen? Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een laserpeel is iets anders dan een volledige 4D, en dat staat per regel apart.
+Waarom lopen de prijzen zo uiteen? +
 
-- Hoeveel sessies heb ik nodig? Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we niet kunnen onderbouwen.
+Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een laserpeel is iets anders dan een volledige 4D, en dat staat per regel apart.
+
+Hoeveel sessies heb ik nodig? +
+
+Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we niet kunnen onderbouwen.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5804,11 +5826,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - HUIDVERKLEURING
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over happy intim**
 
-- Is dit gênant? Het is een behandeling zoals elke andere en de deur gaat dicht. Wat er wél anders is: je bepaalt zelf hoeveel je vertelt over waarom je komt.
+Is dit gênant? +
 
-- Hoeveel sessies zijn er nodig? Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs.
+Het is een behandeling zoals elke andere en de deur gaat dicht. Wat er wél anders is: je bepaalt zelf hoeveel je vertelt over waarom je komt.
+
+Hoeveel sessies zijn er nodig? +
+
+Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5900,9 +5926,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ALLE HUIDPROBLEMEN
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over consult met eve-m huidanalyse**
 
-- Moet ik dit doen voordat ik iets anders kan? Ja. Niet omdat het moet van ons, maar omdat een plan zonder beginmeting niet te controleren is. Je weet dan over drie maanden niet of het gewerkt heeft.
+Moet ik dit doen voordat ik iets anders kan? +
+
+Ja. Niet omdat het moet van ons, maar omdat een plan zonder beginmeting niet te controleren is. Je weet dan over drie maanden niet of het gewerkt heeft.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6090,11 +6118,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ACNE
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over jongeren acne traject**
 
-- Waarom staat er geen prijs? Het traject van drie maanden staat als één bedrag op de prijzenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie.
+Waarom staat er geen prijs? +
 
-- Moet mijn ouder mee? Ja. Onder de achttien is toestemming van een ouder of verzorger nodig, en bij de intake willen we die er ook bij hebben.
+Het traject van drie maanden staat als één bedrag op de prijzenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie.
+
+Moet mijn ouder mee? +
+
+Ja. Onder de achttien is toestemming van een ouder of verzorger nodig, en bij de intake willen we die er ook bij hebben.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6288,11 +6320,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - LITTEKENS EN STRIAE
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over littekentherapie**
 
-- Mijn litteken is tien jaar oud. Heeft het nog zin? Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting.
+Mijn litteken is tien jaar oud. Heeft het nog zin? +
 
-- Hoeveel sessies? Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.
+Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting.
+
+Hoeveel sessies? +
+
+Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6398,11 +6434,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ROSACEA
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over lumi 8 led**
 
-- Waarom is dit zo goedkoop? Omdat het weinig tijd kost en meestal aan iets anders wordt toegevoegd. Een lage prijs betekent hier ook een bescheiden effect, en dat hoort erbij.
+Waarom is dit zo goedkoop? +
 
-- Kan ik alleen hiervoor komen? Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het als toevoeging tot zijn recht komt.
+Omdat het weinig tijd kost en meestal aan iets anders wordt toegevoegd. Een lage prijs betekent hier ook een bescheiden effect, en dat hoort erbij.
+
+Kan ik alleen hiervoor komen? +
+
+Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het als toevoeging tot zijn recht komt.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6488,13 +6528,19 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - SNURKEN
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over nightlase**
 
-- Doet het pijn? Je voelt warmte achter in je mond en dat is het. Er is geen verdoving nodig en er wordt niets gesneden.
+Doet het pijn? +
 
-- Werkt het ook bij slaapapneu? Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Wij starten dan niet.
+Je voelt warmte achter in je mond en dat is het. Er is geen verdoving nodig en er wordt niets gesneden.
 
-- Hoe lang houdt het aan? Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken.
+Werkt het ook bij slaapapneu? +
+
+Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Wij starten dan niet.
+
+Hoe lang houdt het aan? +
+
+Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6686,11 +6732,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - GROVE PORIËN
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over oxygeneo glow**
 
-- Hoe lang zie ik er iets van? Dagen, geen weken. Dit is een opfrisser en geen kuur, en dat is precies waarom hij vaak vlak voor iets gepland wordt.
+Hoe lang zie ik er iets van? +
 
-- Kan dit bij een gevoelige huid? Meestal wel, en dat bepalen we in de intake en niet op deze pagina. Bij actieve rosacea of ontstoken acne kijken we eerst naar de rust in je huid.
+Dagen, geen weken. Dit is een opfrisser en geen kuur, en dat is precies waarom hij vaak vlak voor iets gepland wordt.
+
+Kan dit bij een gevoelige huid? +
+
+Meestal wel, en dat bepalen we in de intake en niet op deze pagina. Bij actieve rosacea of ontstoken acne kijken we eerst naar de rust in je huid.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -6928,11 +6978,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - DONKERE KRINGEN
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over skinboosters en mesotherapie**
 
-- Waarom een kuur van drie? Omdat de huid tussen de sessies door het werk doet. Eén sessie is één prikkel en daar bouwt een huid niets van op.
+Waarom een kuur van drie? +
 
-- Is het pijnlijk? Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevoeliger dan op de wang.
+Omdat de huid tussen de sessies door het werk doet. Eén sessie is één prikkel en daar bouwt een huid niets van op.
+
+Is het pijnlijk? +
+
+Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevoeliger dan op de wang.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -7134,11 +7188,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ROSACEA
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over voedingsintolerantietest**
 
-- Wordt dit vergoed? Dat verschilt per verzekeraar en per polis. Kijk bij vergoedingen wat er over jouw verzekeraar bekend is, en ga uit van wat je polis zegt en niet van wat wij zeggen.
+Wordt dit vergoed? +
 
-- Wat als er niets uitkomt? Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haalt hem wel van je lijstje met vermoedens af.
+Dat verschilt per verzekeraar en per polis. Kijk bij vergoedingen wat er over jouw verzekeraar bekend is, en ga uit van wat je polis zegt en niet van wat wij zeggen.
+
+Wat als er niets uitkomt? +
+
+Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haalt hem wel van je lijstje met vermoedens af.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -7250,11 +7308,15 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ALLE HUIDPROBLEMEN
 
-**Wat mensen hierover vragen.**
+**Veelgestelde vragen over xl hair**
 
-- Wanneer zie ik verschil? Niet binnen weken. Haar groeit in cycli en die laten zich niet opjagen, dus dit traject wordt in maanden gemeten.
+Wanneer zie ik verschil? +
 
-- Waarom is het voor vrouwen duurder? Omdat er acht sessies in zitten in plaats van zes. Het verschil zit in het aantal en niet in het tarief.
+Niet binnen weken. Haar groeit in cycli en die laten zich niet opjagen, dus dit traject wordt in maanden gemeten.
+
+Waarom is het voor vrouwen duurder? +
+
+Omdat er acht sessies in zitten in plaats van zes. Het verschil zit in het aantal en niet in het tarief.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -7360,29 +7422,29 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 > knop: 1 APPARAAT Kou en druk Vaatjes prikkelen zonder ze te raken. Grijpt aan op bloedvaten
 
-- EVE-M De huidscanner waar elk traject mee begint. Meet, behandelt niet. Consult met EVE-M huidanalyse
+- METEN EVE-M De huidscanner waar elk traject mee begint. Meet, behandelt niet. Consult met EVE-M huidanalyse
 
-- FOTONA Fotona TimeWalker Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · NightLase
+- LASER FOTONA Fotona TimeWalker Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · NightLase
 
-- CANDELA Gentle Laser Pro-U De laser voor ontharing. Mikt op het pigment in de haarwortel. Laserontharing
+- LASER CANDELA Gentle Laser Pro-U De laser voor ontharing. Mikt op het pigment in de haarwortel. Laserontharing
 
-- CANDELA Nordlys IPL: een bereik aan golflengtes in plaats van één. Breed en ondiep. Nordlys IPL
+- LICHT CANDELA Nordlys IPL: een bereik aan golflengtes in plaats van één. Breed en ondiep. Nordlys IPL
 
-- LUMI LUMI 8-LED LED zonder naalden of zuren. Rood, geel en bijna-infrarood in een pulscyclus. Lumi 8 LED
+- LICHT LUMI LUMI 8-LED LED zonder naalden of zuren. Rood, geel en bijna-infrarood in een pulscyclus. Lumi 8 LED
 
-- SKINPEN SkinPen CIT Deze medisch gecertificeerde microneedlingbehandeling werkt met gecontroleerde prikjes in de huid. SkinPen Microneedling
+- MICRONEEDLING SKINPEN SkinPen CIT Deze medisch gecertificeerde microneedlingbehandeling werkt met gecontroleerde prikjes in de huid. SkinPen Microneedling
 
-- DERMAPEN Dermapen 4 Microneedling met trillende naaldjes. Zelfde principe, ander apparaat. Dermapen 4
+- MICRONEEDLING DERMAPEN Dermapen 4 Microneedling met trillende naaldjes. Zelfde principe, ander apparaat. Dermapen 4
 
-- U225 U225 intradermale injector Brengt werkzame stoffen in de huid in plaats van erop, automatisch en regelmatig. Skinboosters en mesotherapie · XL Hair
+- INJECTIE U225 U225 intradermale injector Brengt werkzame stoffen in de huid in plaats van erop, automatisch en regelmatig. Skinboosters en mesotherapie · XL Hair
 
-- HYDRAFACIAL Hydrafacial syndeo Reinigen, exfoliëren, poriën leegzuigen en voeden in één doorloop. HydraFacial
+- OVERIG HYDRAFACIAL Hydrafacial syndeo Reinigen, exfoliëren, poriën leegzuigen en voeden in één doorloop. HydraFacial
 
-- COOLIFTING CooLift Cryo Therapy CO2 van min twintig graden onder hoge druk. Vijf minuten, direct effect. CooLift Cryo Therapy
+- OVERIG COOLIFTING CooLift Cryo Therapy CO2 van min twintig graden onder hoge druk. Vijf minuten, direct effect. CooLift Cryo Therapy
 
-- DERMAPLANEPRO Dermaplane pro Een chirurgisch mesje onder 45 graden. Geen zuren, dus ook bij een gevoelige huid. Dermaplaning
+- OVERIG DERMAPLANEPRO Dermaplane pro Een chirurgisch mesje onder 45 graden. Geen zuren, dus ook bij een gevoelige huid. Dermaplaning
 
-- SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC Peelinglijnen Geen apparaat maar vier merken, in drie niveaus van sterkte. Medische peelings · Cosmelan en dermamelan · Happy Intim
+- OVERIG SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC Peelinglijnen Geen apparaat maar vier merken, in drie niveaus van sterkte. Medische peelings · Cosmelan en dermamelan · Happy Intim
 
 **Zoek op wat je wilt bereiken**
 
@@ -7470,13 +7532,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de CooLift Cryo Therapy**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Wat gebeurt er met mijn huid? +
 
-> knop: PLAN BEHANDELING NUL
+Er wordt koolzuurgas onder hoge druk over je huid geblazen met daarin een fijn verneveld serum. De gasstroom is koud, en kou en druk zijn hier de twee werkzame delen.
+
+Komt er een naald aan te pas? +
+
+Nee. Er wordt niets ingebracht en niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan.
+
+Hoe lang duurt het? +
+
+Een paar minuten. Veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.
+
+Hoe lang houdt het aan? +
+
+Kort. Dit is een opfrisser en geen traject, en zo bieden we het ook aan.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde CooLift Cryo Therapy geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -7560,13 +7646,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de Dermapen 4**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Waarom deze pen en niet de SkinPen? +
 
-> knop: PLAN BEHANDELING NUL
+Dat hangt af van de zone en de diepte die daar past, niet van welke beter is. De Dermapen werkt sneller een vlak af en heeft voorgeprogrammeerde standen, waaronder een litteken-instelling op de maximale diepte.
+
+Wat betekent 1920 prikken per seconde? +
+
+Dat het apparaat een vlak snel afwerkt met kleine, gelijke kanaaltjes. Sneller is hier niet dieper: de diepte stel je apart in.
+
+Wordt de diepte per zone aangepast? +
+
+Ja. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, want daar ligt de huid dun over bot. Dat merk je ook: hoe dieper, hoe meer druk.
+
+Hoe lang ben ik rood? +
+
+Een tot drie dagen, ongeveer als een stevige zonnegloed. De eerste vierentwintig uur laat je je huid met rust.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde Dermapen 4 geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -7648,13 +7758,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de Dermaplane pro**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Wordt mijn haar dikker terug? +
 
-> knop: PLAN BEHANDELING NUL
+Nee. Scheren verandert de haarschacht niet, alleen het uiteinde. Een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is; dat is het hele verhaal.
+
+Snijdt het mesje in mijn huid? +
+
+Nee, het schraapt over het oppervlak onder een vaste hoek. Wat eraf gaat zijn dode cellen uit de hoornlaag en de donshaartjes die daarin vastzitten.
+
+Kan dit bij een gevoelige huid? +
+
+Vaak wel, want er komen geen zuren aan te pas. Bij actieve ontstekingen of een beschadigde barrière doen we het niet.
+
+Waarom neemt mijn crème daarna beter op? +
+
+Omdat de laag dode cellen eraf is die er anders tussen zit. Dat effect is tijdelijk en duurt zolang die laag zich niet heeft hersteld.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde Dermaplane pro geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -7720,13 +7854,37 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Voorspellen wat een behandeling gaat opleveren
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de EVE-M**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Wat doet dit apparaat met mijn huid? +
 
-> knop: PLAN BEHANDELING NUL
+Niets. Het meet en behandelt niet. Je gezicht komt in een vaste houder, de belichting komt uit het apparaat zelf, en er raakt niets je huid.
+
+Waarom niet gewoon een foto met de telefoon? +
+
+Omdat die niet met een vorige te vergelijken is. Andere afstand, ander licht, andere hoek — en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.
+
+Wat zie ik onder UV dat ik anders niet zie? +
+
+Pigment dat dieper in de huid zit. In gewoon licht is dat nauwelijks zichtbaar, en juist die diepte bepaalt wat er mogelijk is.
+
+Krijg ik een diagnose? +
+
+Nee. Een meting is geen diagnose; dat is werk voor een arts. Wat je krijgt is wat er gemeten is en wat dat betekent voor wat er kan.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde EVE-M geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -7816,13 +7974,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Littekens en striae
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de Fotona TimeWalker**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Waarom zitten er twee lasers in één apparaat? +
 
-> knop: PLAN BEHANDELING NUL
+Omdat ze iets anders doen. De Er:YAG op 2940 nanometer wordt bijna volledig door water opgenomen en blijft daardoor aan de oppervlakte; de Nd:YAG op 1064 nanometer komt veel dieper. Samen dekken ze een bereik dat één laser niet haalt.
+
+Wat is SMOOTH-modus? +
+
+Een manier om de Er:YAG aan te sturen waarbij de energie in een reeks trage pulsen komt in plaats van één harde. Het weefsel warmt dan op zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verwarmen en verdampen.
+
+Is dit hetzelfde apparaat als bij NightLase? +
+
+Ja, en dezelfde modus. Alleen de plek verschilt: bij NightLase gaat het over het zachte gehemelte en niet over de huid van je gezicht.
+
+Voel ik er iets van? +
+
+Warmte, oplopend, die net voor het ongemakkelijke stopt. De behandelaar vraagt er tijdens de sessie naar, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde Fotona TimeWalker geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -7900,13 +8082,37 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER LUMI 8-LED Bouwt geen warmte op en doet dus niets aan haar. Een andere categorie, geen zwakkere versie. NAAR DE LUMI 8-LED ›
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de Gentle Laser Pro-U**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Waarom deze laser en niet de Nordlys? +
 
-> knop: PLAN BEHANDELING NUL
+De alexandriet op 755 nanometer wordt sterk opgenomen door het pigment in een haar, en dat maakt hem gericht op de haarwortel. De Nordlys werkt met een band in plaats van één golflengte en is daardoor breder maar minder precies op haar. Welke je krijgt hangt af van je huidtype en de zone.
+
+Wat doet die koeling precies? +
+
+Vlak voor en na elke puls spuit het apparaat een stoot cryogeen op je huid. Daardoor koelt de bovenste laag terug terwijl de warmte in de haarwortel blijft zitten. Je voelt het als een koude tik om de warme puls heen.
+
+Waarom voelt het op mijn bovenlip anders dan op mijn benen? +
+
+De spotgrootte en de pulsduur worden per zone gekozen, en de huid is niet overal even dik of even gevoelig. Op een kleine, gevoelige zone gaat de behandelaar met een andere instelling te werk dan op een groot vlak.
+
+Kan dit bij een donkere huid? +
+
+De instelling bepaalt dat, niet het apparaat alleen. Bij meer pigment in de huid is de marge kleiner, en dat is precies waarom er vooraf gemeten wordt. Blijkt het niet verantwoord, dan doen we het niet.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde Gentle Laser Pro-U geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -7990,13 +8196,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Droge huid
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de Hydrafacial syndeo**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Wat maakt dit anders dan een gewone gezichtsbehandeling? +
 
-> knop: PLAN BEHANDELING NUL
+De combinatie in één beweging. In het mondstuk zit een spiraal waar tegelijk onderdruk op staat en vloeistof doorheen loopt: losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang.
+
+Blijft het resultaat? +
+
+Nee, dit is onderhoud. Het werkt in de hoornlaag, en die vernieuwt zichzelf. Dat is geen tekortkoming zolang je het weet.
+
+Waarom zijn er verschillende tips? +
+
+Ze verschillen in hoe grof de spiraal is. Welke er gebruikt wordt hangt af van je huid en van het doel; de tips zijn wegwerpartikelen en gaan per behandeling.
+
+Kan dit bij een gevoelige huid? +
+
+Vaak wel, want er komen geen zuren aan te pas en het blijft aan de oppervlakte. Of het bij jou past bepaalt de meting.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde Hydrafacial syndeo geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -8080,13 +8310,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Rosacea
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de LUMI 8-LED**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Voel ik hier iets van? +
 
-> knop: PLAN BEHANDELING NUL
+Nee. Er komt licht van één kleur op lage sterkte, zonder warmte en zonder dat er iets wordt weggehaald. De meeste mensen vinden het het rustigste kwartier van hun week.
+
+Waarom verschillende kleuren? +
+
+Elke kleur komt tot een andere diepte. Blauw blijft aan de oppervlakte, rood komt iets verder en nabij-infrarood het verst, omdat dat het minst door de huid wordt tegengehouden.
+
+Werkt dit op zichzelf? +
+
+Wij zetten het naast een andere behandeling in en niet als vervanging ervan. Wat LED precies doet is onderwerp van veel onderzoek en weinig zekerheid, en dat zeggen we er liever bij.
+
+Is er hersteltijd? +
+
+Nee, want er is geen schade om van te herstellen. Je kunt er direct mee de deur uit.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde LUMI 8-LED geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -8134,7 +8388,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 De Nordlys van Candela is geen laser maar IPL: intens gepulst licht. Een laser zendt één golflengte uit, IPL een band. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.
 
-Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek. welke applicators hier in de kast liggen.
+Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek.
 
 Op hetzelfde platform kan ook een Nd:YAG op 1064 nanometer draaien, en fractionele lasers op 1550 en 1940 nanometer. Die komen dieper dan het IPL-licht en doen ander werk.
 
@@ -8172,13 +8426,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Pigmentvlekken
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de Nordlys**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Is IPL hetzelfde als laser? +
 
-> knop: PLAN BEHANDELING NUL
+Nee. Een laser zendt één golflengte uit, IPL een band. Die band raakt daardoor meerdere dingen tegelijk — roodheid, vaatjes en oppervlakkig pigment — en komt gemiddeld minder diep.
+
+Waarom wordt een vlek eerst donkerder? +
+
+Dat hoort erbij. Het pigment komt naar de oppervlakte voordat het vervaagt, en dat duurt een aantal dagen. Het betekent niet dat het erger wordt.
+
+Wat bepaalt welke applicator ik krijg? +
+
+Het doelwit. Voor pigment wordt een andere band gekozen dan voor haargroei, en dat is de hele reden dat er meerdere zijn. De behandelaar kiest hem na de meting.
+
+Kan dit ook op mijn benen of rug? +
+
+IPL werkt over een groot vlak en dat is juist zijn sterke kant. Of het bij jouw klacht past hangt af van wat er zit en hoe diep.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde Nordlys geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -8272,13 +8550,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidverkleuring
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de Peelinglijnen**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Waarom staat hier geen apparaat? +
 
-> knop: PLAN BEHANDELING NUL
+Omdat een peeling er geen is. Dit is een vloeistof, en wat hij doet hangt af van het zuur, de concentratie en de zuurgraad van het mengsel.
+
+Wat bepaalt hoe diep een peeling komt? +
+
+Die drie samen. Fruitzuren blijven in de hoornlaag, salicylzuur lost op in vet en komt daardoor de porie in, en sterkere mengsels gaan tot in de opperhuid.
+
+Ga ik vervellen? +
+
+Bij een lichte peeling meestal niet, bij een sterkere wel. Dat hoor je vooraf, want het bepaalt wanneer je dit het beste inplant.
+
+Kan dit in de zomer? +
+
+Bij pigment liever niet, en bij de sterkere lijnen ook niet. Zon na een peeling is precies de combinatie die het resultaat kost.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde Peelinglijnen geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -8364,13 +8666,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Poriën
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de SkinPen CIT**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Wat is het verschil met de Dermapen? +
 
-> knop: PLAN BEHANDELING NUL
+Het motorontwerp en het aantal naalden. De SkinPen heeft er veertien en werkt iets bedaarder; de Dermapen haalt meer prikken per seconde. Het diepteberereik is bij allebei 0,25 tot 3 millimeter.
+
+Waarom is de diepte zo belangrijk? +
+
+Omdat die bepaalt in welke laag het kanaaltje eindigt. Ondiep raakt de opperhuid en heelt binnen een dag; drie millimeter komt in het bindweefsel en vraagt langer.
+
+Zijn de naalden per persoon? +
+
+Ja. De cartridges zijn steriel en voor eenmalig gebruik. Bij microneedling is dat geen detail: de naalden gaan door de huidbarrière heen, en daar was die barrière voor.
+
+Doet het pijn? +
+
+Er gaat vooraf een verdovende crème op die een half uur intrekt. Wat je daarna voelt is een trilling en druk, het sterkst waar de huid dun over bot ligt.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde SkinPen CIT geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -8458,13 +8784,37 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Donkere kringen
 
-**Wat het apparaat wel en niet bepaalt**
+**Veelgestelde vragen over de U225 intradermale injector**
 
-Twee klinieken met dit apparaat geven niet hetzelfde resultaat. Dat hangt af van wat er vooraf gemeten is, welke instelling daarbij hoort en of iemand je vertelt wanneer het bij jou niet past.
+Wat doet dit apparaat precies? +
 
-> knop: PLAN BEHANDELING NUL
+Het brengt vloeistof op een ingestelde diepte in de huid, tussen één en tien millimeter, tot acht keer per seconde. Het is een injector en geen apparaat dat op de huid werkt.
+
+Waarom niet gewoon met de hand injecteren? +
+
+Omdat alleen de naald beweegt en de spuit stilstaat. Daardoor trilt er minder en is de diepte van prik tot prik gelijk, ook als er een paar honderd achter elkaar gaan.
+
+Wat zit er in de spuit? +
+
+Dat bepaalt de behandeling en niet het apparaat. Het kan een skinbooster zijn of een mesotherapie-mengsel, en die keuze hoort bij de behandelaar.
+
+Zie ik er daarna uit alsof ik geprikt ben? +
+
+Vlak erna zie je kleine bultjes op de plek van elke prik; die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.
+
+**Het apparaat is niet wat het verschil maakt**
+
+Twee klinieken met dezelfde U225 intradermale injector geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+
+> knop: WAT ER IN BEHANDELING NUL GEBEURT
 
 > knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -8700,35 +9050,35 @@ Wijs je zones aan op een tekening en zie meteen wat je opbouw wordt, inclusief w
 
 **Tabbladtitel:** Vergoedingen | Diba Clinics
 
-**Google-omschrijving:** Of er iets vergoed wordt hangt niet af van je verzekeraar maar van de vraag of er een medische reden is. Drie vragen, en wat er gebeurt als het antwoord nee is.
+**Google-omschrijving:** Is er een medische reden voor je klacht, dan is er een route naar vergoeding. Drie vragen op volgorde, en bij elke vraag waar je aan toe bent.
 
 **VERGOEDING DOOR JE ZORGVERZEKERAAR**
 
-Voor het grootste deel van wat wij doen is het antwoord bij elke verzekeraar hetzelfde: er wordt niets vergoed. Dat is geen strengheid van jouw polis, het is hoe het stelsel is opgezet. Cosmetische zorg valt erbuiten.
+Is er een medische reden voor je klacht, dan is er een route. Huidtherapie zit bij de meeste verzekeraars in het aanvullende pakket, en dan gaat het verder over jouw polis: welk pakket je hebt, welk maximum eraan hangt en of je huisarts een verwijzing moet schrijven.
 
-De vraag die er wel toe doet komt eerder, en gaat niet over de behandeling maar over de klacht.
+Gaat het om een cosmetische wens, dan betaal je die zelf. Dat is in heel Nederland zo: het stelsel maakt die knip, jouw polis en deze kliniek staan daarbuiten. Welke van de twee het is hangt aan de klacht en niet aan de behandeling. Dezelfde laser is in het ene geval medisch en in het andere cosmetisch, en daarom begint het bij de meting.
 
 Voorwaarden en maxima veranderen per jaar en per pakket.
 
-Een bedrag op een website is binnen twaalf maanden onjuist, en bij geld is onjuist erger dan afwezig. Wat niet verandert is hoe het werkt, en dat staat er wel.
+Jouw actuele bedrag staat dus in je eigen polis, en daar klopt het ook echt. Wat op deze pagina staat is hoe het werkt, en dat blijft van jaar tot jaar hetzelfde.
 
 AAN DE BALIE, NA AFLOOP
 
-**En wat er gebeurt bij nee.**
+**Zo loopt de route naar ja.**
 
-Die nee-tak staat normaal nergens, en dat is precies de tak waar de meeste mensen in terechtkomen.
+Bij elke vraag staat waar je aan toe bent, ook als het antwoord de andere kant op valt. Die helft laten de meeste sites weg, en dat is precies de helft waar je iets aan hebt.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch. BIJ NEE Dan wordt er niets vergoed, door geen enkele verzekeraar. Dat is geen strengheid van jouw polis maar hoe het stelsel is opgezet: cosmetische zorg valt er buiten. Voor het grootste deel van wat wij doen is dit het antwoord. BIJ JA Dan gaat het verder naar de volgende vraag. Of er een medische reden is, bepaalt een arts en niet wij.
+- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch. BIJ JA Dan valt het onder cosmetische zorg en betaal je het zelf. Dat geldt bij elke kliniek en elke verzekeraar, want zo is het stelsel opgezet. BIJ NEE Dan ga je door naar de tweede vraag. Of er een medische reden is, bepaalt een arts.
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie valt bij de meeste mensen niet onder de basisverzekering maar onder het aanvullende pakket. Wat daarin zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar. BIJ NEE Dan betaal je zelf. Dat kan ook een prima keuze zijn, maar dan weet je het vooraf en niet achteraf. BIJ JA Kijk dan meteen naar het maximum per jaar en of er een verwijzing van je huisarts nodig is. Dat laatste wordt het vaakst over het hoofd gezien.
+- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie zit bij de meeste verzekeraars in het aanvullende pakket en niet in de basis. Wat er precies in zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar. BIJ JA Dan betaal je het zelf, en dat kan een prima keuze zijn. Je weet het alleen vooraf, met de prijs erbij. BIJ NEE Kijk dan meteen naar het maximum per jaar en of er een verwijzing van je huisarts nodig is. Dat laatste wordt het vaakst over het hoofd gezien.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint. BIJ NEE Dan kun je rechtstreeks terecht. Meld bij de intake wel dat je een vergoeding verwacht, dan wordt er meteen gekeken of alles klopt. BIJ JA Regel die eerst. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit, en dan sta je met een rekening die niet meer terug te draaien is.
+- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint. BIJ JA Dan kun je rechtstreeks terecht. Meld bij de intake wel dat je een vergoeding verwacht, dan wordt er meteen gekeken of alles klopt. BIJ NEE Regel die dan eerst, vóór je afspraak. Achteraf een verwijzing opsturen accepteren verzekeraars zelden, en die rekening blijft dan staan.
 
-**Wat wij hierin niet kunnen.**
+**Samen krijg je het rond.**
 
-Wie waarvoor aan de lat staat blijft vaak onduidelijk tot het misgaat, en dan is de teleurstelling voor jou. Dus staat het hier zwart op wit.
+Een vergoeding komt rond als beide kanten hun deel doen. Hier staat welk deel van ons is en welk deel van jou, zodat je het vooraf weet en niet pas als de rekening er ligt.
 
-DAT DOEN WIJ
+DIT DOEN WIJ
 
 - Vertellen wat een behandeling kost, vooraf en compleet
 
@@ -8736,15 +9086,13 @@ DAT DOEN WIJ
 
 - Bij de intake zeggen als we denken dat er een medische route bestaat die je nog niet gelopen hebt
 
-DAT DOEN WIJ NIET
+DIT DOE JIJ
 
-- Zien wat er in jouw polis staat
+- Je polisvoorwaarden nakijken op huidtherapie, of ons vragen waar je moet zoeken
 
-- Toezeggen dat iets vergoed wordt
+- Bij je huisarts een verwijzing halen als je pakket die eist
 
-- Een verwijzing schrijven, want dat doet je huisarts
-
-- Rechtstreeks bij je verzekeraar declareren
+- De factuur na afloop bij je verzekeraar indienen
 
 **De eerste scheelt geld.**
 
@@ -8754,9 +9102,9 @@ Mensen stellen behandeling uit op grond van iets wat niet klopt. Daarom staat di
 
 - WAT MENSEN DENKEN Mijn verzekeraar vergoedt huidtherapie, dus dit ook Vergoeding hangt aan de klacht en aan wie de behandeling uitvoert, niet aan de naam van de behandeling. Twee mensen met dezelfde afspraak kunnen een verschillend antwoord krijgen.
 
-- WAT MENSEN DENKEN Dat regelt de kliniek wel voor me Wij kunnen je vertellen wat er gedaan is en wat het kost. Of jouw polis het dekt kunnen wij niet zien en niet toezeggen. Dat gesprek voer je met je verzekeraar.
+- WAT MENSEN DENKEN Dat regelt de kliniek wel voor me Wij zetten op je factuur wat er precies gedaan is, zodat je die kunt indienen. Wat jouw polis dekt staat alleen in jouw polis, en dat gesprek voer je met je verzekeraar. Weet je niet waar je moet kijken, vraag het ons dan bij de intake.
 
-- WAT MENSEN DENKEN Ik hoor het later wel Achteraf iets rechtzetten lukt bijna nooit. Een verwijzing of een akkoord moet er zijn voordat de behandeling begint, anders is het antwoord nee en blijft het nee.
+- WAT MENSEN DENKEN Ik hoor het later wel Een verwijzing of een akkoord telt alleen als het er is vóórdat de behandeling begint. Regel je het van tevoren, dan is het meestal een kwestie van één belletje naar je huisarts.
 
 **Kwam je door alle drie de vragen?**
 
@@ -11569,4 +11917,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5352 tekstblokken · ongeveer 83.086 woorden._
+_107 pagina's · 5526 tekstblokken · ongeveer 85.705 woorden._

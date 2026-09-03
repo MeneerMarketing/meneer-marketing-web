@@ -101,7 +101,11 @@ const OVERZICHTEN = [
 ];
 const uitOverzichten = [];
 for (const { pad, voorvoegsel } of OVERZICHTEN) {
-  await page.goto(`${BASIS}${pad}`, { waitUntil: "networkidle" });
+  /* Geen networkidle: sinds de homepage een achtergrondvideo heeft wordt het netwerk
+     nooit stil en liep dit script in een time-out. domcontentloaded plus een korte
+     wachttijd is genoeg, want we lezen tekst en geen media. */
+  await page.goto(`${BASIS}${pad}`, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(400);
   uitOverzichten.push(
     ...(await page.evaluate(
       (v) =>
@@ -148,7 +152,8 @@ const paden = [...new Set([...statisch, ...uitSitemap, ...uitOverzichten])]
  * Daarom wordt hieronder eerst alles opengeklapt.
  */
 async function haalTekst(pad) {
-  await page.goto(BASIS + pad, { waitUntil: "networkidle" });
+  await page.goto(BASIS + pad, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(400);
 
   /* Een alias die doorverwijst hoort niet als eigen pagina in het document. */
   const beland = new URL(page.url()).pathname.replace(/\/$/, "");

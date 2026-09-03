@@ -43,16 +43,18 @@ import { DIBA_HOME_PROOF_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
  */
 const EERLIJK_ADVIES_PUNTEN = [
   {
-    titel: "Geen behandeling zonder doel",
-    tekst: "We starten altijd met een huidmeting en een helder plan.",
+    titel: "Altijd een doel",
+    tekst:
+      "We beginnen met een huidmeting en een plan dat je mee naar huis krijgt.",
   },
   {
-    titel: "Transparant over kosten",
-    tekst: "Geen verrassingen achteraf. Tarieven staan openbaar.",
+    titel: "Vooraf de prijs",
+    tekst:
+      "Je weet wat het kost voordat je gaat liggen. Alle tarieven staan online.",
   },
   {
-    titel: "Soms is wachten het beste",
-    tekst: "We zeggen het als een behandeling nu niet het juiste moment is.",
+    titel: "Ook het rustige advies",
+    tekst: "Heeft je huid eerst rust nodig, dan hoor je dat van ons.",
   },
 ] as const;
 
@@ -127,10 +129,10 @@ export default function FigmaHomeApp({
                 </h1>
 
                 <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Je hoeft vooraf niet te weten welke behandeling je nodig hebt.
-                  We luisteren naar waar je last van hebt, bekijken je huid en
-                  leggen duidelijk uit wat wel en niet zinvol is. Alle prijzen
-                  staan vooraf online.
+                  Kom met je klacht, dan zoeken wij de behandeling erbij. We
+                  luisteren, meten je huid en leggen uit wat er in jouw geval
+                  mogelijk is en wat dat oplevert. Alle prijzen staan vooraf
+                  online.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -353,10 +355,11 @@ export default function FigmaHomeApp({
           <div className="rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:p-10">
             <Label>Eerlijk advies</Label>
             <h2 className="diba-card-title-lg mt-4">
-              Als wachten of niet behandelen verstandiger is, zeggen we dat ook.
+              We zeggen je eerlijk wat je huid nu nodig heeft.
             </h2>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Wij behandelen niet om te behandelen. We adviseren wat past bij
+              Soms is dat een behandeling, soms is dat tijd. Elke behandeling
+              heeft hier een reden die je zelf kunt navertellen: passend bij
               jouw huid, jouw doel en jouw veiligheid.
             </p>
 
@@ -507,7 +510,7 @@ export default function FigmaHomeApp({
                 <Pulse size={18} />
               </span>
               <h3 className="diba-card-title-lg mt-28">
-                Je beslist niet in de stoel
+                Je beslist thuis, in alle rust
               </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
                 Je krijgt het advies mee naar huis, met de prijs erbij. Wat je

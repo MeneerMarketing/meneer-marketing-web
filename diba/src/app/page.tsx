@@ -10,7 +10,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/",
   titel: `Huidkliniek Rotterdam | ${DIBA_SITE.name}`,
   omschrijving:
-    "Huidkliniek in Hillegersberg, Rotterdam. Advies over huidverbetering en laserontharing, en wat in jouw situatie wel of niet zinvol is.",
+    "Huidkliniek in Hillegersberg, Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.",
 });
 
 /** Homepage = hero-variant met achtergrondvideo + Figma-secties. */

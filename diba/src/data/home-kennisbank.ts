@@ -18,7 +18,7 @@ export const HOME_KENNISBANK_ARTICLES: readonly KennisbankArticle[] = [
     id: "acne",
     tag: "Acne & huidzorg",
     title: "Acne zonder TikTok-hypes",
-    summary: "Wat helpt je huid wel, en wat kun je beter laten?",
+    summary: "Wat er werkelijk helpt bij acne, en in welke volgorde.",
     href: "/huidproblemen/acne",
     image: FIGMA_KENNISBANK_ACNE,
   },
