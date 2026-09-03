@@ -57,7 +57,7 @@ const TROTS = [
     getal: DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL"),
     bij: "reviews",
   },
-  { getal: "2017", bij: "open in Hillegersberg" },
+  { getal: "2017", bij: "open in Rotterdam" },
 ] as const;
 
 export default function BehandelingenPage() {
@@ -161,7 +161,7 @@ export default function BehandelingenPage() {
           <BeeldVignet
             src="/images/shoot/kliniek-behandelkamer.jpg"
             alt="Behandelaar werkt aan de huid van een client in de behandelkamer"
-            onderschrift="In de behandelkamer, Hillegersberg"
+            onderschrift="In de behandelkamer"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/9] lg:aspect-[21/9]"
           />

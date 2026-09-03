@@ -11,7 +11,7 @@
 import { DIBA_OPENINGSTIJDEN } from "@/lib/site";
 
 export const DIBA_CITAAT =
-  "Diba Clinics is een huidkliniek in Hillegersberg, Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.";
+  "Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.";
 
 type Nap = {
   name: string;

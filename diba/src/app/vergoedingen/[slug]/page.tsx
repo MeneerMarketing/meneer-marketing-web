@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BelOfApp from "@/components/ui/BelOfApp";
 import Label from "@/components/ui/Label";
 import { INSURERS, INSURERS_GEZIEN_OP, insurerBySlug } from "@/data/insurers";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -202,16 +203,10 @@ export default async function InsurerPage({ params }: PageProps) {
               {insurer.eisAanBehandelaar}
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              Dit is het deel waar jij niets aan kunt controleren en wij wel.
-              Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis
-              voldoen.
+              Dit is het deel dat wij voor je kunnen nakijken. Vraag het even
+              voordat je boekt, dan zeggen we of we aan deze eis voldoen.
             </p>
-            <Link
-              href="/contact"
-              className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-            >
-              Stel die vraag even
-            </Link>
+            <BelOfApp className="mt-6" />
           </div>
         </div>
       </section>

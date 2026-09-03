@@ -156,9 +156,9 @@ export default function VerwijzersPage() {
             </p>
 
             <p className="mt-4 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
-              {DIBA_SITE.name} zit in {DIBA_SITE.neighborhood},{" "}
-              {DIBA_ADDRESS.city}. Er werken {TEAM.length} mensen, van wie een
-              deel een wettelijk beschermde titel draagt.
+              {DIBA_SITE.name} zit in {DIBA_ADDRESS.city}. Er werken{" "}
+              {TEAM.length} mensen, van wie een deel een wettelijk beschermde
+              titel draagt.
             </p>
 
             <div className="mt-auto flex flex-wrap items-center gap-x-6 gap-y-4 pt-10">

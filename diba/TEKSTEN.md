@@ -24,7 +24,7 @@ De kop- en voettekst staan op elke pagina hetzelfde en zijn hier weggelaten.
 
 **Tabbladtitel:** Huidkliniek Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Huidkliniek in Hillegersberg, Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.
+**Google-omschrijving:** Huidkliniek in Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.
 
 > knop: 5,0 gebaseerd op 3.883 reviews
 
@@ -52,9 +52,9 @@ NL
 
 > knop: AFSPRAAK MAKEN
 
-**WE METEN JE HUID VOORDAT WE IETS VOORSTELLEN**
+**HUIDKLINIEK IN ROTTERDAM**
 
-Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je huid en leggen uit wat er in jouw geval mogelijk is. Alle prijzen staan vooraf online.
+Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je huid en leggen uit wat er in jouw geval mogelijk is en wat dat oplevert. Alle prijzen staan vooraf online.
 
 > knop: PLAN EEN EERSTE AFSPRAAK
 
@@ -112,7 +112,7 @@ Soms is dat een behandeling, soms is dat tijd. Elke behandeling heeft hier een r
 
 - Ook het rustige advies Heeft je huid eerst rust nodig, dan hoor je dat van ons.
 
-> knop: VRAAG EEN SECOND OPINION
+> knop: ZO WERKT EEN EERSTE AFSPRAAK
 
 **Een traject dat met je meebeweegt.**
 
@@ -120,17 +120,25 @@ Een mooie huid is zelden één moment. Daarom bekijken we samen wat er speelt, w
 
 **Zie wat je huid je vertelt.**
 
+- PIGMENT Ook wat onder UV zichtbaar wordt en dieper zit.
+
+- ROODHEID Waar het zit, hoe fel, en of het meebeweegt.
+
+- TEXTUUR Poriën, oneffenheden en hoe de huid het licht breekt.
+
+Elke meting gaat onder hetzelfde licht en vanaf dezelfde afstand, zodat je die van vandaag naast die van acht weken geleden kunt leggen.
+
 **Een groene pauze in je dag.**
 
 Van de eerste kop thee tot je nazorg: we hebben aandacht voor de hele ervaring.
 
-**Je beslist thuis, in alle rust**
+**Jij bepaalt wanneer we beginnen**
 
-Je krijgt het advies mee naar huis, met de prijs erbij. Wat je daarna doet, bepaal je zelf.
+Kies je Behandeling Nul, dan gaat het advies met de prijs erbij mee naar huis. Boek je een behandeling op advies, dan hoor je eerst wat we voorstellen en wat het kost, en pas daarna gaan we door.
 
-DIBA, ROTTERDAM
+DIBA CLINICS
 
-Je vindt ons in Hillegersberg.
+Je vindt ons in Rotterdam.
 
 **Je weet vooraf wat het kost**
 
@@ -146,7 +154,7 @@ We vertellen welke behandelingen mogelijk zijn, wat ze kosten en wat je ervan ku
 
 **Wat mensen het vaakst vragen**
 
-Dit zijn de vragen die het vaakst gesteld worden voordat iemand een afspraak maakt. Staat die van jou er niet bij, bel of app ons gerust.
+Dit zijn de vragen die het vaakst gesteld worden voordat iemand een afspraak maakt. Staat die van jou er niet bij, bel ons of app ons.
 
 Moet ik al weten welke behandeling ik wil?
 
@@ -154,11 +162,11 @@ Nee. Je komt juist voor advies. We kijken samen wat voor jouw huid en doel passe
 
 Wat kost een eerste afspraak?
 
-Een intake kost 50 euro en duurt maximaal een uur. Behandelen we dezelfde afspraak, dan betaal je alleen de behandeling en vervalt dat bedrag. Je hoort de prijs dus voordat je beslist.
+Een intake kost 50 euro en duurt maximaal een halfuur. Behandelen we dezelfde afspraak, dan betaal je alleen de behandeling en vervalt dat bedrag. Je hoort de prijs dus voordat je beslist.
 
 Kan ik ook alleen een intake boeken?
 
-Ja. We kijken onafhankelijk mee naar een plan dat je elders hebt gekregen. Ook als ons advies is om daar verder te gaan.
+Ja. Behandeling Nul is precies dat: meten, uitleg en een plan dat je mee naar huis krijgt. Je beslist daarna zelf of en wanneer je verdergaat.
 
 Is een huidanalyse altijd nodig?
 
@@ -166,11 +174,11 @@ Niet altijd. Wanneer een huidscan waarde toevoegt, leggen we uit wat we meten en
 
 **Kom zoals je bent. Wij kijken met je mee.**
 
-Plan een intake in onze kliniek in Hillegersberg. We nemen de tijd voor jouw vragen, huidanalyse en een duidelijk behandelvoorstel.
+Plan een intake in onze kliniek in Rotterdam. We nemen de tijd voor jouw vragen, je huidmeting en een behandelvoorstel dat je zelf kunt navertellen.
 
 > knop: PLAN BEHANDELING NUL
 
-Huidkliniek in Hillegersberg. We meten je huid voordat we iets voorstellen, en zeggen het ook als afwachten verstandiger is.
+Huidkliniek in Rotterdam. We meten je huid voordat we iets voorstellen, en zeggen het ook als afwachten verstandiger is.
 
 ---
 
@@ -178,9 +186,9 @@ Huidkliniek in Hillegersberg. We meten je huid voordat we iets voorstellen, en z
 
 **Tabbladtitel:** Contact en route | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics staat aan de Weissenbruchlaan 166 in Hillegersberg, Rotterdam. Bellen, appen of mailen: hier staat welke vraag waar thuishoort.
+**Google-omschrijving:** Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam, Rotterdam. Bellen, appen of mailen: hier staat welke vraag waar thuishoort.
 
-**HILLEGERSBERG, ROTTERDAM.**
+**WEISSENBRUCHLAAN 166, ROTTERDAM.**
 
 Je kunt ons bellen, een WhatsApp-bericht sturen of mailen. Voor het maken van een afspraak is de online agenda meestal het snelst.
 
@@ -192,7 +200,7 @@ Je kunt ons bellen, een WhatsApp-bericht sturen of mailen. Voor het maken van ee
 
 Onze openingstijden en de agenda staan verderop. Bekijk ze, en bellen kan tijdens die tijden altijd.
 
-BIJ BINNENKOMST IN HILLEGERSBERG
+BIJ BINNENKOMST
 
 **Niet elk kanaal past bij elke vraag.**
 
@@ -278,7 +286,7 @@ Kom je liever langs zonder afspraak, bel dan eerst. We willen je geen rit voor n
 
 **Aan de Weissenbruchlaan.**
 
-De kliniek zit in Hillegersberg, aan de noordkant van Rotterdam. Een woonwijk, dus geen parkeergarage om de hoek en ook geen drukte.
+De kliniek zit aan de noordkant van Rotterdam, in een woonwijk. Rustig dus, en je parkeert in de straat in plaats van in een garage.
 
 *MET DE AUTO*
 
@@ -352,15 +360,15 @@ Kom je op deze site een belofte tegen zonder onderbouwing, een prijs die niet kl
 
 **Tabbladtitel:** Over ons | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics in Hillegersberg, Rotterdam. Actief sinds 2017, 8 mensen, 12 apparaten. En wat die cijfers niet zeggen.
+**Google-omschrijving:** Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 8 mensen, 12 apparaten. En wat die cijfers niet zeggen.
 
-**EEN HUIDKLINIEK IN HILLEGERSBERG.**
+**EEN HUIDKLINIEK IN ROTTERDAM.**
 
 Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 12 apparaten en 22 behandelingen waarvan de prijzen allemaal openbaar zijn.
 
 Dat is wat er te zeggen valt zonder het over passie te hebben.
 
-Hillegersberg ligt aan de noordkant van Rotterdam. Een kliniek in een woonwijk en niet in een winkelstraat, en dat is te merken aan het tempo.
+We zitten aan de noordkant van Rotterdam, in een woonwijk en niet in een winkelstraat. Dat is te merken aan het tempo.
 
 > knop: ROUTE EN CONTACT
 
@@ -4844,11 +4852,11 @@ Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel be
 
 - 3.883 reviews
 
-- 2017 open in Hillegersberg
+- 2017 open in Rotterdam
 
 - LEES ZE ZELF
 
-IN DE BEHANDELKAMER, HILLEGERSBERG
+IN DE BEHANDELKAMER
 
 **Kies op de diepte waar het moet gebeuren**
 
@@ -9156,7 +9164,11 @@ Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde vera
 
 a.s.r. koppelt het recht op vergoeding aan de beroepsvereniging: de behandelaar moet aangesloten zijn bij een vereniging die zij erkennen. Welke dat zijn staat in de polisvoorwaarden en niet in de vergoedingenvinder.
 
-Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
 
 **Zo kom je bij jouw eigen bedrag**
 
@@ -9185,8 +9197,6 @@ Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden v
 Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt a.s.r. om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
 
 Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
-
-> knop: BEL 010-2038423
 
 **Zit je niet bij a.s.r.?**
 
@@ -9234,7 +9244,11 @@ Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde vera
 
 CZ noemt op de algemene pagina geen registratie-eis, maar de voorwaarde staat per behandeling in de polisvoorwaarden. Vraag er dus naar bij de behandeling die jij wil, en niet in het algemeen.
 
-Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
 
 **Zo kom je bij jouw eigen bedrag**
 
@@ -9263,8 +9277,6 @@ Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden v
 Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt CZ om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
 
 Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
-
-> knop: BEL 010-2038423
 
 **Zit je niet bij CZ?**
 
@@ -9312,7 +9324,11 @@ Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde vera
 
 Menzis werkt met contracten. Je gaat naar een huidtherapeut die zij erkennen, en welke dat zijn staat in hun Zorgvinder. Bij een gecontracteerde behandelaar gaat de rekening rechtstreeks naar Menzis in plaats van naar jou.
 
-Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
 
 **Zo kom je bij jouw eigen bedrag**
 
@@ -9341,8 +9357,6 @@ Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden v
 Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt Menzis om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
 
 Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
-
-> knop: BEL 010-2038423
 
 **Zit je niet bij Menzis?**
 
@@ -9390,7 +9404,11 @@ Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde vera
 
 Vanaf 1 januari 2026 wil ONVZ dat de huidtherapeut in het Kwaliteitsregister Paramedici staat. Voor dit jaar accepteren ze daarnaast nog een inschrijving bij de NVH, om behandelaars de tijd te geven die registratie rond te krijgen.
 
-Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
 
 **Zo kom je bij jouw eigen bedrag**
 
@@ -9419,8 +9437,6 @@ Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden v
 Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt ONVZ om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
 
 Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
-
-> knop: BEL 010-2038423
 
 **Zit je niet bij ONVZ?**
 
@@ -9468,7 +9484,11 @@ Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde vera
 
 VGZ noemt op de pagina over huidbehandelingen geen aparte registratie-eis voor de huidtherapeut. Wat er wel staat is dat een verwijzing van je huisarts nodig is als het via de dermatoloog loopt.
 
-Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
 
 **Zo kom je bij jouw eigen bedrag**
 
@@ -9497,8 +9517,6 @@ Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden v
 Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt VGZ om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
 
 Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
-
-> knop: BEL 010-2038423
 
 **Zit je niet bij VGZ?**
 
@@ -9546,7 +9564,11 @@ Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde vera
 
 Zilveren Kruis stelt de scherpste eis van deze zes. De huidtherapeut moet kwaliteitsgeregistreerd staan in het Kwaliteitsregister Paramedici én een geldige persoonlijke AGB-code hebben, en die code en de beroepsvereniging moeten op de factuur staan. Ontbreekt dat, dan wijzen ze af op de factuur en niet op de behandeling.
 
-Dit is het deel waar jij niets aan kunt controleren en wij wel. Bel of app ons voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
 
 **Zo kom je bij jouw eigen bedrag**
 
@@ -9575,8 +9597,6 @@ Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden v
 Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt Zilveren Kruis om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
 
 Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
-
-> knop: BEL 010-2038423
 
 **Zit je niet bij Zilveren Kruis?**
 
@@ -10480,7 +10500,7 @@ Je hoeft aan het eind niets af te spreken. Soms is het advies zelfs om niets te 
 
 *GERESERVEERD*
 
-Max. 60 minuten
+Max. 30 minuten
 
 *KOSTEN*
 
@@ -10500,9 +10520,11 @@ HETZELFDE SCHERM, TEGELIJK
 
 Allebei beginnen ze met dezelfde meting.
 
-We reserveren er 60 minuten voor: meten, uitleg en een plan. Er gebeurt niets aan je huid, en je zit nergens aan vast.
+We reserveren er 30 minuten voor: meten, uitleg en een plan dat je mee naar huis krijgt. Aan je huid gebeurt deze afspraak nog niets.
 
-MAX. 60 MINUTEN
+Hij kost 50 euro. Volgt er een behandeling, dan vervalt dat bedrag en betaal je alleen de behandeling.
+
+MAX. 30 MINUTEN
 
 Meten en meteen beginnen
 
@@ -10554,7 +10576,11 @@ Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is 
 
 - Kom je voor acne Stop niet met wat je van je arts gebruikt. We willen juist zien hoe je huid eruitziet mét wat je nu doet.
 
-- Is je huid nu geïrriteerd Bel of app even. Dan is uitstellen vaak zinvoller dan komen, en dat scheelt je een afspraak die weinig oplevert.
+- Is je huid nu geïrriteerd Laat het ons even weten voor je komt. Uitstellen is dan vaak zinvoller, en dat scheelt je een afspraak die weinig oplevert.
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
 
 Weet je nog niet waarvoor je komt? Dat is geen bezwaar, en de zoeker helpt je een richting te vinden voordat je hier bent.
 
@@ -10820,7 +10846,7 @@ Het register telt nu 18 onderdelen. Het groeit mee met de site: elke nieuwe pagi
 
 **Tabbladtitel:** Laserontharing Rotterdam | GentleMax Pro | Diba Clinics
 
-**Google-omschrijving:** Laserontharing met GentleMax Pro in Hillegersberg. Bereken je prijs per zone, veilig voor huidtype I tot VI.
+**Google-omschrijving:** Laserontharing met GentleMax Pro in Rotterdam. Bereken je prijs per zone, veilig voor huidtype I tot VI.
 
 **LASERONTHARING IN ROTTERDAM**
 
@@ -10832,7 +10858,7 @@ Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af van je huidtype en
 
 > knop: 5,0 · 3.883 REVIEWS ↗
 
-HILLEGERSBERG · ROTTERDAM
+ROTTERDAM
 
 Rustig in de stoel. Scherp in de instelling.
 
@@ -11794,7 +11820,7 @@ In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je na
 
 Deze pagina is voor huisartsen, praktijkondersteuners, dermatologen en andere zorgverleners die overwegen een patiënt hierheen te sturen. Hij begint met waar de grens ligt, want dat is de vraag die uw verwijzing bruikbaar maakt.
 
-Diba Clinics zit in Hillegersberg, Rotterdam. Er werken 8 mensen, van wie een deel een wettelijk beschermde titel draagt.
+Diba Clinics zit in Rotterdam. Er werken 8 mensen, van wie een deel een wettelijk beschermde titel draagt.
 
 > knop: OVERLEG VOORAF: 010-2038423
 
@@ -11917,4 +11943,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5526 tekstblokken · ongeveer 85.705 woorden._
+_107 pagina's · 5539 tekstblokken · ongeveer 85.794 woorden._

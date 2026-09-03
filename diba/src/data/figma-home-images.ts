@@ -62,7 +62,7 @@ export const FIGMA_HOME_PORTRAIT_WIDE = {
 /** In de kliniek — twee behandelaars tussen twee afspraken door. */
 export const FIGMA_HOME_CLINIC = {
   src: shoot("kliniek-team"),
-  alt: "Twee behandelaars van Diba Clinics in gesprek in de kliniek in Hillegersberg",
+  alt: "Twee behandelaars van Diba Clinics in gesprek in de kliniek in Rotterdam",
 } as const satisfies Beeld;
 
 /**

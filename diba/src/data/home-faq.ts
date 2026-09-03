@@ -26,16 +26,16 @@ export const HOME_FAQ_ITEMS: readonly HomeFaqItem[] = [
     question: "Wat kost een eerste afspraak?",
 
     answer:
-      "Een intake kost 50 euro en duurt maximaal een uur. Behandelen we dezelfde afspraak, dan betaal je alleen de behandeling en vervalt dat bedrag. Je hoort de prijs dus voordat je beslist.",
+      "Een intake kost 50 euro en duurt maximaal een halfuur. Behandelen we dezelfde afspraak, dan betaal je alleen de behandeling en vervalt dat bedrag. Je hoort de prijs dus voordat je beslist.",
   },
 
   {
-    id: "second-opinion",
+    id: "alleen-intake",
 
     question: "Kan ik ook alleen een intake boeken?",
 
     answer:
-      "Ja. We kijken onafhankelijk mee naar een plan dat je elders hebt gekregen. Ook als ons advies is om daar verder te gaan.",
+      "Ja. Behandeling Nul is precies dat: meten, uitleg en een plan dat je mee naar huis krijgt. Je beslist daarna zelf of en wanneer je verdergaat.",
   },
 
   {

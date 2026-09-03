@@ -17,6 +17,7 @@ import {
   Pulse,
   Sparkle,
 } from "@/components/ui/Icon";
+import { BelOfAppInline } from "@/components/ui/BelOfApp";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
@@ -172,7 +173,7 @@ export default function FigmaHomeApp({
                     elkaar in beeld. Dit label zegt nu waar de foto over gaat in plaats van
                     de kop na te praten. */}
                 <span className="diba-label absolute left-7 top-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-                  Hillegersberg, Rotterdam
+                  Rotterdam
                 </span>
                 <span className="diba-label absolute bottom-7 right-7 grid h-24 w-24 place-items-center rounded-[var(--r-pill)] bg-[var(--g-700)] text-center leading-4 text-white">
                   Eerlijk
@@ -385,12 +386,8 @@ export default function FigmaHomeApp({
               ))}
             </ul>
 
-            <Button
-              href="/intake?topic=second-opinion"
-              variant="secundair"
-              className="mt-7"
-            >
-              Vraag een second opinion
+            <Button href="/intake" variant="secundair" className="mt-7">
+              Zo werkt een eerste afspraak
             </Button>
           </div>
         </div>
@@ -443,31 +440,48 @@ export default function FigmaHomeApp({
                 <br />
                 je vertelt.
               </h3>
-              <div className="mt-12 grid grid-cols-3 gap-3">
+              {/* Hier stonden drie verzonnen cijfers: "Hydratatie +18%" met een balkje
+                  op tweeënzeventig procent. Mooi, en het betekende niets — het getal kwam
+                  nergens vandaan en het portaal waar het uit zou moeten komen bestaat nog
+                  niet. Op een site die belooft dat er echt gemeten wordt is dat de ene
+                  plek waar je geen cijfer mag verzinnen.
+
+                  Wat er nu staat is wel waar: de assen die de scanner leest, en waarom
+                  twee metingen naast elkaar iets zeggen. Geen getallen dus, want die zijn
+                  van jou en die krijg je in de kliniek. */}
+              <ul className="mt-12 grid gap-3 sm:grid-cols-3">
                 {[
-                  { label: "Hydratatie", value: "+18%", width: "72%" },
-                  { label: "Textuur", value: "Rustiger", width: "63%" },
-                  { label: "Jouw plan", value: "Helder", width: "88%" },
-                ].map((metric) => (
-                  <div
-                    key={metric.label}
+                  {
+                    label: "Pigment",
+                    zin: "Ook wat onder UV zichtbaar wordt en dieper zit.",
+                  },
+                  {
+                    label: "Roodheid",
+                    zin: "Waar het zit, hoe fel, en of het meebeweegt.",
+                  },
+                  {
+                    label: "Textuur",
+                    zin: "Poriën, oneffenheden en hoe de huid het licht breekt.",
+                  },
+                ].map((as) => (
+                  <li
+                    key={as.label}
                     className="rounded-[var(--r-sm)] bg-white p-4"
                   >
                     <span className="diba-label text-[var(--t-muted)]">
-                      {metric.label}
+                      {as.label}
                     </span>
-                    <strong className="mt-4 block text-2xl tracking-[-.06em] text-[var(--g-600)] tabular-nums">
-                      {metric.value}
-                    </strong>
-                    <i className="mt-3 block h-1.5 w-full rounded-[var(--r-pill)] bg-[var(--g-100)]">
-                      <i
-                        className="block h-full rounded-[var(--r-pill)] bg-[var(--g-400)]"
-                        style={{ width: metric.width }}
-                      />
-                    </i>
-                  </div>
+                    <span className="mt-3 block text-[13px] leading-6 text-[var(--t-body)]">
+                      {as.zin}
+                    </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
+              <p className="mt-5 text-[13px] leading-6 text-[var(--t-muted)]">
+                Elke meting gaat onder hetzelfde licht en vanaf dezelfde
+                afstand, zodat je die van vandaag naast die van acht weken
+                geleden kunt leggen.
+              </p>
             </div>
             <div className="relative min-h-[410px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-300)]">
               <Image
@@ -510,11 +524,13 @@ export default function FigmaHomeApp({
                 <Pulse size={18} />
               </span>
               <h3 className="diba-card-title-lg mt-28">
-                Je beslist thuis, in alle rust
+                Jij bepaalt wanneer we beginnen
               </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Je krijgt het advies mee naar huis, met de prijs erbij. Wat je
-                daarna doet, bepaal je zelf.
+                Kies je Behandeling Nul, dan gaat het advies met de prijs erbij
+                mee naar huis. Boek je een behandeling op advies, dan hoor je
+                eerst wat we voorstellen en wat het kost, en pas daarna gaan we
+                door.
               </p>
               <Link
                 href="#vragen"
@@ -537,12 +553,12 @@ export default function FigmaHomeApp({
             <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-700)]">
               <FigmaSoftAccent variant="clinic" className="z-10" />
               <p className="diba-label absolute left-7 top-7 z-10 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-                Diba, Rotterdam
+                Diba Clinics
               </p>
               <p className="diba-card-title absolute bottom-7 left-7 z-10 text-[var(--on-dark)]">
                 Je vindt ons in
                 <br />
-                Hillegersberg.
+                Rotterdam.
               </p>
               <Link
                 href="/contact"
@@ -587,8 +603,8 @@ export default function FigmaHomeApp({
             </h2>
             <p className="mt-6 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
               Dit zijn de vragen die het vaakst gesteld worden voordat iemand
-              een afspraak maakt. Staat die van jou er niet bij, bel of app ons
-              gerust.
+              een afspraak maakt. Staat die van jou er niet bij,{" "}
+              <BelOfAppInline />.
             </p>
           </div>
           <div className="border-t border-[var(--g-100)]">
@@ -630,8 +646,9 @@ export default function FigmaHomeApp({
           </div>
           <div className="relative flex flex-col justify-end">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Plan een intake in onze kliniek in Hillegersberg. We nemen de tijd
-              voor jouw vragen, huidanalyse en een duidelijk behandelvoorstel.
+              Plan een intake in onze kliniek in Rotterdam. We nemen de tijd
+              voor jouw vragen, je huidmeting en een behandelvoorstel dat je
+              zelf kunt navertellen.
             </p>
             <Button
               href="/intake"

@@ -87,19 +87,32 @@ function gewicht(route: string): number {
   if (route.startsWith("/huidproblemen/")) return 0.9;
   if (route === "/huidproblemen" || route === "/behandelingen") return 0.85;
   if (route.startsWith("/behandelingen/")) return 0.8;
-  if (route === "/prijzen" || route === "/contact" || route === "/laserontharing") return 0.8;
+  if (
+    route === "/prijzen" ||
+    route === "/contact" ||
+    route === "/laserontharing"
+  )
+    return 0.8;
   if (route.startsWith("/apparatuur")) return 0.6;
   if (route.startsWith("/vergoedingen")) return 0.6;
   if (route.startsWith("/doelgroep")) return 0.6;
   /* De juridische pagina's horen erin te staan maar hoeven niet vaak nagelopen. */
-  if (/^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten)$/.test(route)) return 0.3;
+  if (
+    /^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten)$/.test(route)
+  )
+    return 0.3;
   return 0.7;
 }
 
 /** Hoe vaak de inhoud verandert. Een prijslijst vaker dan de algemene voorwaarden. */
 function frequentie(route: string): "weekly" | "monthly" | "yearly" {
-  if (route === "/" || route === "/prijzen" || route === "/reviews") return "weekly";
-  if (/^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten|werken-bij)$/.test(route))
+  if (route === "/" || route === "/prijzen" || route === "/reviews")
+    return "weekly";
+  if (
+    /^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten|werken-bij)$/.test(
+      route,
+    )
+  )
     return "yearly";
   return "monthly";
 }

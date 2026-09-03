@@ -69,7 +69,9 @@ export type ZoekmachineVelden = {
  * laag over waarin hij zelf gedefinieerd is. Dan zou er "Diba Clinics | Diba Clinics" staan.
  */
 function metMerknaam(titel: string): string {
-  return titel.includes(DIBA_SITE.name) ? titel : `${titel} | ${DIBA_SITE.name}`;
+  return titel.includes(DIBA_SITE.name)
+    ? titel
+    : `${titel} | ${DIBA_SITE.name}`;
 }
 
 export function zoekmachineVelden({

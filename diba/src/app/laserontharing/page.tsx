@@ -51,7 +51,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/laserontharing",
   titel: "Laserontharing Rotterdam | GentleMax Pro",
   omschrijving:
-    "Laserontharing met GentleMax Pro in Hillegersberg. Bereken je prijs per zone, veilig voor huidtype I tot VI.",
+    "Laserontharing met GentleMax Pro in Rotterdam. Bereken je prijs per zone, veilig voor huidtype I tot VI.",
 });
 
 const LASER_REVIEWS = reviewsForTopic("laser").slice(0, 3);
@@ -131,7 +131,7 @@ export default function LaserontharingPage() {
               aria-hidden="true"
             />
             <p className="diba-label absolute top-7 left-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-              Hillegersberg · Rotterdam
+              Rotterdam
             </p>
             <p className="diba-card-title-lg absolute bottom-7 left-7 max-w-xs text-white drop-shadow-[0_2px_12px_rgba(15,45,28,.35)]">
               Rustig in de stoel.

@@ -140,7 +140,7 @@ export default function ContactPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[14ch]">
-              {DIBA_SITE.neighborhood},
+              {DIBA_ADDRESS.street},
               <br />
               <span className="diba-accent">{DIBA_ADDRESS.city}.</span>
             </h1>
@@ -227,7 +227,7 @@ export default function ContactPage() {
             <BeeldVignet
               src="/images/shoot/ontvangst-koffie.jpg"
               alt="Een client krijgt koffie aangereikt bij binnenkomst in de kliniek"
-              onderschrift="Bij binnenkomst in Hillegersberg"
+              onderschrift="Bij binnenkomst"
               sizes="(min-width: 1024px) 86vw, 92vw"
               className="aspect-[16/9] lg:aspect-[21/9]"
             />
@@ -435,9 +435,9 @@ export default function ContactPage() {
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              De kliniek zit in {DIBA_SITE.neighborhood}, aan de noordkant van{" "}
-              {DIBA_ADDRESS.city}. Een woonwijk, dus geen parkeergarage om de
-              hoek en ook geen drukte.
+              De kliniek zit aan de noordkant van {DIBA_ADDRESS.city}, in een
+              woonwijk. Rustig dus, en je parkeert in de straat in plaats van in
+              een garage.
             </p>
 
             {/* Concreet, want een routebeschrijving die alleen zegt "goed bereikbaar" is

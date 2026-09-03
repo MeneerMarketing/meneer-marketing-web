@@ -11,7 +11,11 @@ export const DIBA_SITE = {
   baseUrl: "https://dibaclinics.nl",
   locale: "nl-NL",
   area: "Rotterdam",
-  neighborhood: "Hillegersberg",
+  /* Stond op "Hillegersberg". Yasin (3 september 2026): dat leest alsof we in een andere
+     stad zitten. De wijk klopt, maar hij zegt niets tegen iemand die Rotterdam zoekt, en
+     op de plekken waar de ligging er wél toe doet staat die nu uitgeschreven: noordkant,
+     woonwijk, parkeren in de straat. */
+  neighborhood: "Rotterdam",
 } as const;
 
 export const DIBA_ADDRESS = {

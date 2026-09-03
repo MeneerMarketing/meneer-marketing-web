@@ -122,7 +122,7 @@ export default function OverOnsPage() {
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
               Een huidkliniek
               <br />
-              <span className="diba-accent">in Hillegersberg.</span>
+              <span className="diba-accent">in Rotterdam.</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
@@ -144,9 +144,9 @@ export default function OverOnsPage() {
               {DIBA_ADDRESS.postalCode} {DIBA_ADDRESS.city}
             </address>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              {DIBA_SITE.neighborhood} ligt aan de noordkant van{" "}
-              {DIBA_ADDRESS.city}. Een kliniek in een woonwijk en niet in een
-              winkelstraat, en dat is te merken aan het tempo.
+              We zitten aan de noordkant van {DIBA_ADDRESS.city}, in een
+              woonwijk en niet in een winkelstraat. Dat is te merken aan het
+              tempo.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

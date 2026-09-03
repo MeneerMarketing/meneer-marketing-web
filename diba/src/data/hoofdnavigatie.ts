@@ -335,7 +335,7 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Over ons",
             href: "/over-ons",
-            zin: "De kliniek in Hillegersberg",
+            zin: "De kliniek in Rotterdam",
             binnenkort: true,
           },
           {

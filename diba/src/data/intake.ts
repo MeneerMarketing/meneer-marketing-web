@@ -74,14 +74,16 @@ export const STAPPEN: readonly Stap[] = [
  * Hoe lang de afspraak duurt.
  *
  * Stond als "[GEGEVEN-NODIG] minuten" en werd daardoor een leeg vakje op de plek waar de
- * bezoeker het hardst kijkt. Tegelijk heet de grootste sectie van de pagina "het uur, stap
- * voor stap" en is de tijdlijn op een uur gebouwd. Twee plekken die hetzelfde beweren en
- * elkaar niet kenden, waarvan er één zweeg.
+ * bezoeker het hardst kijkt, terwijl de grootste sectie van de pagina een uur beweerde.
+ * Twee plekken die hetzelfde zeiden en elkaar niet kenden, waarvan er één zweeg.
  *
- * Nu één getal dat beide voedt. [BESLUIT-OKAN] of zestig minuten klopt met wat er in de
- * agenda staat; klopt het niet, dan verandert deze regel en loopt de hele pagina mee.
+ * Nu één getal dat beide voedt: verandert deze regel, dan loopt de hele pagina mee.
+ *
+ * Stond op zestig; Yasin gaf op 3 september 2026 door dat het een halfuur is. De stappen
+ * hieronder dragen geen minuutmerken maar woorden ("eerste minuten", "het grootste deel"),
+ * dus die lopen mee. Alleen de sectiekop noemde een uur en is meeverhuisd.
  */
-export const INTAKE_MINUTEN = 60;
+export const INTAKE_MINUTEN = 30;
 
 /**
  * De vier feiten naast de kop.
@@ -151,7 +153,7 @@ export const VOORBEREIDING = {
     },
     {
       wanneer: "Is je huid nu geïrriteerd",
-      wat: "Bel of app even. Dan is uitstellen vaak zinvoller dan komen, en dat scheelt je een afspraak die weinig oplevert.",
+      wat: "Laat het ons even weten voor je komt. Uitstellen is dan vaak zinvoller, en dat scheelt je een afspraak die weinig oplevert.",
     },
   ],
 } as const;

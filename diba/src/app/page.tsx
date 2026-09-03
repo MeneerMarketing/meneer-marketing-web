@@ -10,10 +10,10 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/",
   titel: `Huidkliniek Rotterdam | ${DIBA_SITE.name}`,
   omschrijving:
-    "Huidkliniek in Hillegersberg, Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.",
+    "Huidkliniek in Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.",
 });
 
-/** Homepage = hero-variant met achtergrondvideo + Figma-secties. */
+/** Homepage = de Figma-hero met de Figma-secties. */
 export default function HomePage() {
   return (
     <>
@@ -25,7 +25,7 @@ export default function HomePage() {
           })),
         )}
       />
-      <FigmaHomeApp heroVariant />
+      <FigmaHomeApp />
     </>
   );
 }
