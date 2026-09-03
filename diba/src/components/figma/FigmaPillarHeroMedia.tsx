@@ -28,7 +28,7 @@ export default function FigmaPillarHeroMedia({
   const image = resolveImage(src, alt);
 
   return (
-    <div className="relative min-h-[400px] overflow-hidden rounded-bl-[6rem] bg-[#c9d3c0] sm:min-h-[440px] lg:min-h-[480px] lg:rounded-bl-[10rem]">
+    <div className="relative min-h-[400px] overflow-hidden rounded-bl-[6rem] bg-[#cbe5bf] sm:min-h-[440px] lg:min-h-[480px] lg:rounded-bl-[10rem]">
       <Image
         src={image.src}
         alt={image.alt}

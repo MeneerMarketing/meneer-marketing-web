@@ -13,7 +13,7 @@ export const figmaBody = "text-[15px] leading-7 text-[#5f7765]";
 
 export const figmaCardRadius = "rounded-[2rem]";
 
-export const figmaCardSoft = "rounded-[1.5rem] bg-[#f7faf5]";
+export const figmaCardSoft = "rounded-[1.5rem] bg-[#f2f7ef]";
 
 export const figmaCardWhite =
-  "rounded-[1.5rem] border border-[#dce5d6] bg-white shadow-[0_8px_32px_rgba(15,45,28,.04)]";
+  "rounded-[1.5rem] border border-[#dce8d9] bg-white shadow-[0_8px_32px_rgba(15,45,28,.04)]";

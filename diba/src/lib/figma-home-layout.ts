@@ -6,7 +6,7 @@ import {
 } from "@/data/figma-home-images";
 
 export const figmaHomeShell =
-  "figma-home min-h-screen overflow-x-clip bg-[#fdfefd] text-[#2c3426] selection:bg-[#b5df9d]";
+  "figma-home min-h-screen overflow-x-clip bg-[#fcfdfb] text-[#17372a] selection:bg-[#b5df9d]";
 
 export const figmaContainer = "mx-auto px-5 sm:px-9 lg:px-[7.5vw]";
 
@@ -21,10 +21,10 @@ export const figmaCardRadius = "rounded-[2rem]";
 export const figmaSectionY = "py-20 lg:py-28";
 
 export const figmaBtnPrimary =
-  "rounded-full bg-[#434f3a] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-white transition hover:-translate-y-0.5 hover:bg-[#3a4432]";
+  "rounded-full bg-[#286943] px-6 py-4 text-[11px] font-medium uppercase tracking-[.13em] text-white transition hover:-translate-y-0.5 hover:bg-[#174e31]";
 
 export const figmaBtnMint =
-  "rounded-full bg-[#e8efe4] px-6 py-4 text-[11px] font-semibold uppercase tracking-[.13em] text-[#434f3a]";
+  "rounded-full bg-[#e5f3df] px-6 py-4 text-[11px] font-semibold uppercase tracking-[.13em] text-[#286943]";
 
 export const figmaLabel =
   "text-[10px] font-medium uppercase tracking-[.15em] text-[#5d9564]";
