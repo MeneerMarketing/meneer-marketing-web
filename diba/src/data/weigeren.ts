@@ -100,12 +100,12 @@ export const WEIGERINGEN: readonly Weigering[] = [
   {
     id: "weghalen-moedervlek",
     soort: "arts",
-    wat: "Een moedervlek laten weghalen",
+    wat: "Een plekje weghalen dat verandert",
     waarom:
       "Wat weggehaald wordt hoort onderzocht te worden, en dat vraagt een arts en een laboratorium. Cosmetisch weglaseren maakt onderzoek achteraf onmogelijk.",
     waarheen: "Je huisarts, of via een verwijzing een dermatoloog.",
     watWel:
-      "Steelwratjes en fibromen halen we wel weg. Die worden vaak met moedervlekken verward terwijl het iets anders is: een steelwratje hangt aan een steeltje en zit los van de huid eronder. Twijfel je welke van de twee je hebt, laat het dan zien; dat kost je niets.",
+      "Een moedervlek die niet verandert halen we wel weg, net als steelwratjes en fibromen. Het gaat hier alleen om plekjes waar iets aan verandert. Twijfel je, laat het dan zien; dat kost je niets.",
     link: { label: "Fibromen verwijderen", href: "/behandelingen/fibromen" },
   },
   {

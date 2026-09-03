@@ -134,7 +134,7 @@ export const STEELWRAT_WEL_NIET = {
     "Uitleggen waarom ze op die plekken zitten, want dan snap je waarom er nieuwe bij komen",
   ],
   niet: [
-    "Moedervlekken verwijderen. Die horen beoordeeld te worden en dat kunnen wij niet [MEDISCHE-CHECK-ROJDA]",
+    "Iets weghalen dat verandert. Dat hoort eerst door een arts beoordeeld te worden [MEDISCHE-CHECK-ROJDA]",
     "Iets weghalen dat verandert. Dan is er niets meer over om te onderzoeken [MEDISCHE-CHECK-ROJDA]",
     "Zelf afbinden met een draadje of afknippen met een nagelschaar. Dat gaat vaak lang goed en één keer niet",
     "Beloven dat er nooit meer nieuwe bij komen. De aanleg en de wrijving blijven [MEDISCHE-CHECK-ROJDA]",
@@ -148,9 +148,9 @@ export const STEELWRAT_WIJ_DOEN_NIET = [
       "Ook niet als je zeker weet wat het is en er speciaal voor bent gekomen. Wat weg is kan niet meer bekeken worden, en dat is een fout die niet te herstellen valt. Het kost twee minuten om er eerst naar te kijken. [MEDISCHE-CHECK-ROJDA]",
   },
   {
-    titel: "Geen moedervlekken",
+    titel: "Niets weghalen dat verandert",
     tekst:
-      "Een verheven moedervlek die stoort halen wij niet weg. Beoordelen en verwijderen van pigmentplekjes hoort bij een arts, en die kan het weefsel laten onderzoeken. Wij verwijzen daarvoor door. [MEDISCHE-CHECK-ROJDA]",
+      "Een moedervlek die stoort halen we weg. Verandert er iets aan de vorm, de kleur of het gevoel, dan gaat hij eerst langs je huisarts: die kan weefsel laten onderzoeken en dat kan achteraf niet meer. [MEDISCHE-CHECK-ROJDA]",
   },
 ];
 

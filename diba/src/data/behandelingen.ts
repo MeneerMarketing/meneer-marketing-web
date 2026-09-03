@@ -1452,7 +1452,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Is in één afspraak klaar bij de meeste mensen",
     ],
     niet: [
-      "Beoordeelt geen moedervlekken of plekjes die veranderen. Dat hoort bij de huisarts of dermatoloog [MEDISCHE-CHECK-ROJDA]",
+      "Gaat niet over plekjes die veranderen. Die laat je eerst door je huisarts of dermatoloog beoordelen [MEDISCHE-CHECK-ROJDA]",
       "Voorkomt niet dat er nieuwe komen. Wie ze aanmaakt, blijft ze aanmaken",
       "Is geen behandeling zonder spoor. Er blijft een klein plekje dat langzaam vervaagt [MEDISCHE-CHECK-ROJDA]",
     ],

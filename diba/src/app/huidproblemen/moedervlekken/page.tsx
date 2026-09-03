@@ -96,17 +96,22 @@ export default function MoedervlekkenPage() {
               <span className="diba-accent">kan weg</span>
             </h1>
 
+            {/* [MEDISCHE-CHECK-ROJDA] het protocol zelf staat er met opzet niet in:
+                wie beoordeelt, met welk instrument, en wat er met weggehaald weefsel
+                gebeurt. Yasin kende die details niet uit zijn hoofd. De vlag hoort in
+                een commentaar en niet in de zin, want inline JSX gaat niet langs
+                publicCopy() en dan leest de bezoeker hem mee. */}
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Zit hij in de weg bij het scheren, blijft hij haken achter je
               kraag of vind je hem gewoon lelijk: dat is een goede reden om hem
               weg te laten halen. We kijken er eerst samen naar, en dan hoor je
-              wat er kan. [MEDISCHE-CHECK-ROJDA]
+              wat er kan.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              E' + chr(0xe9) + 'n ding gaat altijd voor: verandert er iets aan
-              een plekje, dan laat je het eerst door een arts beoordelen. Blijkt
-              het goedaardig, dan halen we het daarna hier weg.
+              Eén ding gaat altijd voor: verandert er iets aan een plekje, dan
+              laat je het eerst door een arts beoordelen. Blijkt het goedaardig,
+              dan halen we het daarna hier weg.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-3">
@@ -126,9 +131,9 @@ export default function MoedervlekkenPage() {
               naar, en pas daarna halen wij iets weg.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Dat kost je ' + chr(0xe9) + 'en consult bij de huisarts. Wat weg
-              is kan niet meer onderzocht worden, en dat is de enige stap in dit
-              hele onderwerp die je later niet kunt inhalen.
+              Dat kost je één consult bij de huisarts. Wat weg is kan niet meer
+              onderzocht worden, en dat is de enige stap in dit hele onderwerp
+              die je later niet kunt inhalen.
             </p>
           </div>
         </div>
@@ -180,8 +185,7 @@ export default function MoedervlekkenPage() {
           <div>
             <Label opDonker>Hoe het gaat</Label>
             <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Eerst kijken,{" "}
-              <span className="diba-accent-on-dark">dan pas weghalen</span>
+              Het begint met <span className="diba-accent-on-dark">kijken</span>
             </h2>
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Kom je voor iets anders en zit er een moedervlek in het gebied,

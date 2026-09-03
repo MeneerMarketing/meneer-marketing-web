@@ -48,7 +48,7 @@ export const WEIGERINGEN: readonly Weigering[] = [
   {
     regel: "Wij behandelen niet wat bij een arts hoort",
     uitleg:
-      "Moedervlekken, eczeem, psoriasis en onbegrepen uitslag gaan naar de huisarts of de dermatoloog. Die pagina's hebben bij ons niet eens een afspraakknop.",
+      "Eczeem, psoriasis en onbegrepen uitslag gaan naar de huisarts of de dermatoloog. Die pagina's hebben bij ons niet eens een afspraakknop, en we werken samen met de arts die het wel behandelt.",
     kost: "Vier onderwerpen waarop veel wordt gezocht leveren ons niets op. We schrijven er wel uitgebreid over.",
     zieOok: {
       tekst: "Zie de moedervlekkenpagina",
@@ -56,10 +56,10 @@ export const WEIGERINGEN: readonly Weigering[] = [
     },
   },
   {
-    regel: "Wij beoordelen geen moedervlekken en verwijderen ze niet",
+    regel: "Wij halen niets weg dat verandert",
     uitleg:
-      "Ook niet als je er alleen maar vanaf wilt. Wat weg is kan niet meer onderzocht worden, en dat risico is niet aan ons om te nemen. Bij elke behandeling dekken we ze af.",
-    kost: "Een veelgevraagde ingreep die wij principieel niet doen, en waarvoor we mensen dus wegsturen.",
+      "Een moedervlek die je stoort halen we weg. Maar verandert er iets aan de vorm, de kleur, de grootte of het gevoel, dan gaat hij eerst langs je huisarts. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap in dit onderwerp die je later niet kunt inhalen.",
+    kost: "Een afspraak die soms weken later valt, en een klant die intussen bij een ander terechtkan die niet vraagt.",
     zieOok: {
       tekst: "Zie de ABCDE-check",
       pad: "/huidproblemen/moedervlekken#check",

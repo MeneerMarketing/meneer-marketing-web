@@ -3334,25 +3334,27 @@ We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je 
 
 ### /huidproblemen/moedervlekken
 
-**Tabbladtitel:** Moedervlekken: waar je op moet letten | Diba Clinics
+**Tabbladtitel:** Moedervlekken weghalen | Diba Clinics
 
-**Google-omschrijving:** Wij beoordelen en verwijderen geen moedervlekken. Hier staat waarom niet, waar je er wel mee terechtkunt en waar je zelf op kunt letten.
+**Google-omschrijving:** Een moedervlek die stoort kan weg. Wat er eerst gebeurt, waar we op letten en waarom een plekje dat verandert eerst langs een arts gaat.
 
-**MOEDERVLEKKEN: HIERVOOR MOET JE NIET BIJ ONS ZIJN**
+**EEN MOEDERVLEK DIE STOORT KAN WEG**
 
-Wij beoordelen geen moedervlekken en we verwijderen ze niet. Dat hoort bij je huisarts of een dermatoloog, want daar hebben ze de apparatuur en de opleiding waar dit om vraagt.
+Zit hij in de weg bij het scheren, blijft hij haken achter je kraag of vind je hem gewoon lelijk: dat is een goede reden om hem weg te laten halen. We kijken er eerst samen naar, en dan hoor je wat er kan.
 
-Wat we wel doen is je vertellen waar je op let. Je ligt bij ons op de stoel met je huid in beeld, dus je stelt de vraag toch. Dan liever een goed antwoord dan een ontwijkend.
+Eén ding gaat altijd voor: verandert er iets aan een plekje, dan laat je het eerst door een arts beoordelen. Blijkt het goedaardig, dan halen we het daarna hier weg.
 
-> knop: LOOP DE ABCDE-CHECK LANGS
+> knop: PLAN EEN HUIDCONSULT
 
-Verandert er iets aan een plekje, dan ga je naar de huisarts. Niet naar een kliniek, niet naar een app, en niet naar ons.
+> knop: EERST DE ABCDE-CHECK
 
-Dat kost je een consult. Het alternatief is een oordeel van iemand die het niet mag geven, en dat is het niet waard.
+Verandert er iets aan een plekje? Dan kijkt daar eerst een arts naar, en pas daarna halen wij iets weg.
+
+Dat kost je één consult bij de huisarts. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap in dit hele onderwerp die je later niet kunt inhalen.
 
 **Zes dingen om naar te kijken.**
 
-Vijf letters die dermatologen gebruiken, plus een zesde die op de meeste sites ontbreekt. Deze check geeft geen uitslag en kan niets uitsluiten. Hij helpt je bepalen of je ermee naar de huisarts gaat, en dat is waar hij voor is.
+Vijf letters die dermatologen gebruiken, plus een zesde die op de meeste sites ontbreekt. Loop hem langs voordat je een afspraak maakt. Hij geeft geen uitslag en kan niets uitsluiten; hij helpt je bepalen of er eerst een arts naar moet kijken.
 
 - A · ASYMMETRIE Vouw het plekje in gedachten dubbel. Passen de twee helften op elkaar? De helften lijken op elkaar De ene helft is duidelijk anders dan de andere Een rustige moedervlek groeit gelijkmatig uit één punt en is daardoor meestal ongeveer symmetrisch.
 
@@ -3372,7 +3374,7 @@ Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien wat een 
 
 **Wat helpt en wat we afraden**
 
-Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: een moedervlek laten weghalen buiten de zorg betekent dat er niets meer te onderzoeken valt.
+Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: iets laten weghalen dat verandert, betekent dat er niets meer te onderzoeken valt.
 
 **DIT WERKT**
 
@@ -3388,25 +3390,25 @@ Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: een 
 
 **DIT RADEN WE AF**
 
-- Een moedervlek laten weghalen bij een schoonheidssalon of huidkliniek. Wat weg is kan niet meer onderzocht worden.
+- Iets laten weghalen dat verandert, waar dan ook. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap die je niet kunt inhalen.
 
 - Zelf wegbranden of wegvriezen met iets uit de winkel. Hetzelfde bezwaar, met meer schade.
 
 - Wachten tot het pijn doet. De meeste verdachte plekjes doen nergens pijn.
 
-- Afgaan op een foto-app of een oordeel van internet. Ook wij kunnen dat niet en dat zeggen we liever.
+- Afgaan op een foto-app of een oordeel van internet. Een scherm ziet geen diepte en geen verandering.
 
 - Denken dat het alleen om je gezicht gaat. Plekjes op rug, benen en voetzolen worden het vaakst over het hoofd gezien.
 
-**Hier verwijzen we je naar de dermatoloog**
+**Wat er eerst gebeurt voordat er iets weggaat**
 
-Op de andere pagina's zeggen we nee omdat een behandeling te weinig oplevert. Hier zeggen we nee omdat de fout die je kunt maken niet terug te draaien is.
+Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie stappen die aan een behandeling voorafgaan, en de eerste is de enige op deze site die je later niet kunt inhalen.
 
-- Wij beoordelen geen moedervlekken We kijken niet mee, we geven geen mening en we stellen niemand gerust. Daar is een dermatoscoop voor nodig en een opleiding die wij niet hebben.
+- Een plekje dat verandert gaat eerst langs een arts Verandert de vorm, de kleur, de grootte of het gevoel, dan laten we het eerst beoordelen door je huisarts of een dermatoloog. Niet omdat we je wegsturen, maar omdat weefsel dat weg is niet meer onderzocht kan worden. Blijkt het goedaardig, dan halen we het hier alsnog weg.
 
-- Wij verwijderen geen moedervlekken Ook niet als je er alleen maar vanaf wilt omdat hij in de weg zit. Wat weg is kan niet meer onderzocht worden, en dat risico is niet aan ons om te nemen.
+- We kijken altijd eerst, ook als je zeker weet wat het is Elk plekje wordt bekeken voordat er iets mee gebeurt. Dat kost een paar minuten en het is de enige stap die je later niet kunt inhalen.
 
-- Wij laseren niet over een moedervlek heen Bij elke behandeling dekken we moedervlekken af. Licht op pigment kan het beeld veranderen, en dan is het latere oordeel van een arts minder betrouwbaar.
+- Bij een behandeling in de buurt dekken we ze af Laseren we vlakbij, dan gaat er een dekje over een moedervlek die blijft zitten. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
@@ -3432,9 +3434,17 @@ Hoe vaak moet ik zelf kijken? +
 
 Eén keer per maand is een veelgebruikt advies en vooral praktisch: vaak genoeg om verandering op te merken, zeldzaam genoeg om vol te houden. Vraag je huisarts wat in jouw geval verstandig is.
 
-**Naar je huisarts. Daar houdt het bij ons op.**
+**Het begint met kijken**
 
-Er staat op deze pagina expres nergens een knop om bij ons een afspraak te maken. Kom je voor iets anders en zit er een moedervlek in het gebied, dan dekken we die af en gaan we verder. Kom je voor de moedervlek zelf, dan sturen we je door voordat je bent gaan zitten.
+Kom je voor iets anders en zit er een moedervlek in het gebied, dan dekken we die af en gaan we verder. Kom je voor de moedervlek zelf, dan begint het met kijken.
+
+> knop: IK ZOEK PIGMENTVLEKKEN
+
+- VERANDERT HET? Dan eerst je huisarts. Die kan weefsel laten onderzoeken en wij niet.
+
+- VERANDERT HET NIET? Dan kijken we er samen naar en hoor je wat er kan en wat het kost.
+
+- WEGHALEN Een korte handeling per plekje. Daarna een korstje dat vanzelf loslaat.
 
 ---
 
@@ -4606,7 +4616,7 @@ Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het he
 
 **DIT RADEN WE AF**
 
-- Moedervlekken verwijderen. Die horen beoordeeld te worden en dat kunnen wij niet
+- Iets weghalen dat verandert. Dat hoort eerst door een arts beoordeeld te worden
 
 - Iets weghalen dat verandert. Dan is er niets meer over om te onderzoeken
 
@@ -4620,7 +4630,7 @@ Wat weg is kan niemand meer bekijken. Dat is de reden dat er hier eerst gekeken 
 
 - Niets weghalen dat niet beoordeeld is Ook niet als je zeker weet wat het is en er speciaal voor bent gekomen. Wat weg is kan niet meer bekeken worden, en dat is een fout die niet te herstellen valt. Het kost twee minuten om er eerst naar te kijken.
 
-- Geen moedervlekken Een verheven moedervlek die stoort halen wij niet weg. Beoordelen en verwijderen van pigmentplekjes hoort bij een arts, en die kan het weefsel laten onderzoeken. Wij verwijzen daarvoor door.
+- Niets weghalen dat verandert Een moedervlek die stoort halen we weg. Verandert er iets aan de vorm, de kleur of het gevoel, dan gaat hij eerst langs je huisarts: die kan weefsel laten onderzoeken en dat kan achteraf niet meer.
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
@@ -5576,7 +5586,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is in één afspraak klaar bij de meeste mensen
 
-- Beoordeelt geen moedervlekken of plekjes die veranderen. Dat hoort bij de huisarts of dermatoloog
+- Gaat niet over plekjes die veranderen. Die laat je eerst door je huisarts of dermatoloog beoordelen
 
 - Voorkomt niet dat er nieuwe komen. Wie ze aanmaakt, blijft ze aanmaken
 
@@ -9884,7 +9894,7 @@ Niet omdat we er geen zin in hebben, maar omdat het buiten het vak van een huidt
 
 - Een moedervlek of plek die verandert Verandering van vorm, kleur, grootte of gevoel hoort beoordeeld te worden door iemand die ook weefsel kan laten onderzoeken. Wij kunnen kijken; we kunnen niet uitsluiten. WAAR DAN WEL Je huisarts. Die beoordeelt en verwijst zo nodig door naar een dermatoloog. Wacht daar niet mee tot een afspraak hier uitkomt. WAAR JE OP LET BIJ EEN MOEDERVLEK ›
 
-- Een moedervlek laten weghalen Wat weggehaald wordt hoort onderzocht te worden, en dat vraagt een arts en een laboratorium. Cosmetisch weglaseren maakt onderzoek achteraf onmogelijk. WAAR DAN WEL Je huisarts, of via een verwijzing een dermatoloog. WAT WIJ HIER WÉL BIJ DOEN Steelwratjes en fibromen halen we wel weg. Die worden vaak met moedervlekken verward terwijl het iets anders is: een steelwratje hangt aan een steeltje en zit los van de huid eronder. Twijfel je welke van de twee je hebt, laat het dan zien; dat kost je niets. FIBROMEN VERWIJDEREN ›
+- Een plekje weghalen dat verandert Wat weggehaald wordt hoort onderzocht te worden, en dat vraagt een arts en een laboratorium. Cosmetisch weglaseren maakt onderzoek achteraf onmogelijk. WAAR DAN WEL Je huisarts, of via een verwijzing een dermatoloog. WAT WIJ HIER WÉL BIJ DOEN Een moedervlek die niet verandert halen we wel weg, net als steelwratjes en fibromen. Het gaat hier alleen om plekjes waar iets aan verandert. Twijfel je, laat het dan zien; dat kost je niets. FIBROMEN VERWIJDEREN ›
 
 - Medicatie op recept, zoals isotretinoïne Een huidtherapeut schrijft geen medicijnen voor. Bij zware acne is dat soms precies wat er nodig is, en dan is doorsturen het juiste advies. WAAR DAN WEL Je huisarts. Loopt er al een traject met isotretinoïne, meld dat hier dan wel: het bepaalt wat er de eerste maanden daarna kan. WAT WIJ HIER WÉL BIJ DOEN Het hele acnetraject naast de medicatie, mits de timing klopt. Veel mensen komen juist ná zo een kuur voor de littekens en de textuur die overblijven, en dat is precies waar wij voor zijn. Tijdens de kuur kijken we mee zonder te behandelen. WAT WE BIJ ACNE WEL DOEN ›
 
@@ -11252,9 +11262,9 @@ Die staat er in de rechterkolom bij. Dat is meteen de reden dat deze lijst kort 
 
 - Wij verkopen niets waarvan we weten dat het te weinig oplevert Bij een wit litteken van tien jaar oud, bij diep pigment, bij schaduw onder je ogen: dan rekenen we het voor en raden we het af. Ook als je erom vraagt. ZIE DE LITTEKENKLOK WAT DIT ONS KOST Een deel van de mensen dat binnenkomt gaat weg zonder afspraak. Dat is geen omzet die we mislopen, dat is de bedoeling.
 
-- Wij behandelen niet wat bij een arts hoort Moedervlekken, eczeem, psoriasis en onbegrepen uitslag gaan naar de huisarts of de dermatoloog. Die pagina's hebben bij ons niet eens een afspraakknop. ZIE DE MOEDERVLEKKENPAGINA WAT DIT ONS KOST Vier onderwerpen waarop veel wordt gezocht leveren ons niets op. We schrijven er wel uitgebreid over.
+- Wij behandelen niet wat bij een arts hoort Eczeem, psoriasis en onbegrepen uitslag gaan naar de huisarts of de dermatoloog. Die pagina's hebben bij ons niet eens een afspraakknop, en we werken samen met de arts die het wel behandelt. ZIE DE MOEDERVLEKKENPAGINA WAT DIT ONS KOST Vier onderwerpen waarop veel wordt gezocht leveren ons niets op. We schrijven er wel uitgebreid over.
 
-- Wij beoordelen geen moedervlekken en verwijderen ze niet Ook niet als je er alleen maar vanaf wilt. Wat weg is kan niet meer onderzocht worden, en dat risico is niet aan ons om te nemen. Bij elke behandeling dekken we ze af. ZIE DE ABCDE-CHECK WAT DIT ONS KOST Een veelgevraagde ingreep die wij principieel niet doen, en waarvoor we mensen dus wegsturen.
+- Wij halen niets weg dat verandert Een moedervlek die je stoort halen we weg. Maar verandert er iets aan de vorm, de kleur, de grootte of het gevoel, dan gaat hij eerst langs je huisarts. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap in dit onderwerp die je later niet kunt inhalen. ZIE DE ABCDE-CHECK WAT DIT ONS KOST Een afspraak die soms weken later valt, en een klant die intussen bij een ander terechtkan die niet vraagt.
 
 - Wij behandelen niet op een huid die daar niet klaar voor is Actieve acne, een kapotte barrière, een geïrriteerde huid of een verse zonvakantie: dan gaat de afspraak niet door. Je gaat naar huis met minder in plaats van meer. ZIE DE STAPELTELLER WAT DIT ONS KOST Verzette afspraken, gaten in de agenda, en soms een teleurgestelde klant die er klaar voor dacht te zijn.
 
@@ -11925,4 +11935,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5530 tekstblokken · ongeveer 86.202 woorden._
+_107 pagina's · 5535 tekstblokken · ongeveer 86.318 woorden._
