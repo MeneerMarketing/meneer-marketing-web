@@ -50,7 +50,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/littekens",
   titel: "Littekens en striae behandelen in Rotterdam",
   omschrijving:
-    "Bij littekens en striae bepaalt de leeftijd de uitkomst meer dan de techniek. Rood reageert goed, wit veel minder. Wat er in jouw geval mogelijk is.",
+    "Littekens en striae behandelen met needling en laser. Rode littekens reageren doorgaans goed, witte veel minder. Wat er in jouw geval mogelijk is.",
 });
 
 const PAD = "/huidproblemen/littekens";
@@ -141,14 +141,10 @@ export default function LittekensPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De leeftijd van een litteken bepaalt de uitkomst meer dan de
-              techniek. Dat geldt net zo goed voor striae. Daarom begint deze
-              pagina met de vraag hoe lang je het al hebt.
-            </p>
-
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Bij oude, witte littekens is ons antwoord vaak dat het niet genoeg
-              oplevert. Liever nu dan na vier sessies.
+              Bij littekens en striae bepaalt de leeftijd wat er mogelijk is.
+              Rode en paarse littekens reageren doorgaans goed op behandeling,
+              witte veel minder. In de intake kijken we hoe oud het litteken is
+              en welke behandeling erbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

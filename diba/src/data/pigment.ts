@@ -202,7 +202,7 @@ export const PIGMENT_SOORTEN: readonly PigmentSoort[] = [
     realistisch:
       "Hier valt vaak het meeste te winnen. Dit type reageert doorgaans goed en komt minder snel terug dan melasma, zolang je de zon buiten houdt.",
     aanpak:
-      "Meten, gericht behandelen, en daarna bescherming als onderhoud. Zonder dat laatste zijn we volgend jaar weer terug bij af.",
+      "We stellen het type vast, behandelen gericht en houden het daarna bij met zonbescherming. Zonder dat laatste komt het terug.",
   },
   {
     id: "melasma",
@@ -236,11 +236,11 @@ export const PIGMENT_SOORTEN: readonly PigmentSoort[] = [
 
 export const PIGMENT_WEL_NIET = {
   wel: [
-    "Elke dag zonbescherming, ook op een grijze dag. Dit is bij pigment de behandeling, niet de bijzaak",
+    "Elke dag zonbescherming, ook op een grijze dag. Bij pigment is dat het belangrijkste onderdeel",
     "Starten in het najaar, zodat je maanden met lage UV vóór je hebt",
     "Meten per seizoen, want pigment beweegt met het jaar mee",
     "Onderscheid maken tussen zonschade en melasma vóór de eerste behandeling",
-    "Een pet of hoed. Onelegant, maar hij doet meer dan de meeste crèmes",
+    "Een pet of hoed. Die houdt meer zon tegen dan welke crème ook",
   ],
   niet: [
     "Beginnen in mei of juni. Je behandelt dan vier maanden tegen de zon in en dat kost je het resultaat",
@@ -265,7 +265,7 @@ export const PIGMENT_WIJ_DOEN_NIET = [
   {
     titel: "Geen behandeling zonder onderscheid",
     tekst:
-      "Zonschade en melasma lijken op elkaar en vragen het tegenovergestelde. Weten we het niet zeker, dan behandelen we nog niet.",
+      "Zonschade en melasma lijken op elkaar en vragen een andere aanpak. Weten we het niet zeker, dan behandelen we nog niet.",
   },
 ] as const;
 

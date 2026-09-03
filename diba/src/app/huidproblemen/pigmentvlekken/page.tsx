@@ -44,7 +44,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/pigmentvlekken",
   titel: "Pigmentvlekken behandelen in Rotterdam",
   omschrijving:
-    "Bij pigmentvlekken telt het seizoen zwaarder dan de techniek. Waarom we in de zomer terughoudend zijn en wanneer we wel behandelen.",
+    "Pigmentvlekken behandelen met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek, je huidtype en het seizoen.",
 });
 
 const PAD = "/huidproblemen/pigmentvlekken";
@@ -105,17 +105,18 @@ export default function PigmentPage() {
             <h1 className="diba-display-l mt-6">
               Pigmentvlekken
               <br />
-              <span className="diba-accent">die je wil laten weggaan</span>
+              <span className="diba-accent">behandelen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De beste behandeling in juni doet minder dan een matige
-              behandeling in oktober. Daarom begint deze pagina niet met
-              techniek maar met de kalender.
+              We behandelen pigmentvlekken met laser, IPL en peelings. Welke
+              aanpak past, hangt af van het type vlek en van je huidtype. Dat
+              stellen we in de intake samen vast.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Ja, dat betekent dat we je soms wegsturen tot na de zomer.
+              Het seizoen telt mee. Met weinig zon houdt het resultaat beter
+              stand, dus in het najaar en de winter zit je het beste.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -174,7 +175,7 @@ export default function PigmentPage() {
             label="Herkenning"
             kop="Drie soorten pigment,"
             accent="drie andere uitkomsten."
-            intro="Zonschade en melasma lijken op elkaar en vragen het tegenovergestelde. Dat onderscheid maken vóór de eerste behandeling scheelt je maanden en geld. Kies het patroon dat het dichtst bij jou komt."
+            intro="Zonschade en melasma lijken op elkaar, maar vragen een andere behandeling. Welk type je hebt, stellen we vast voordat we beginnen. Kies het patroon dat het dichtst bij jou komt."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -191,12 +192,12 @@ export default function PigmentPage() {
           <div>
             <Label>Waarom het terugkomt</Label>
             <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Je huid onthoudt elke zomer.
+              Waarom pigment terugkomt
             </h2>
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Pigmentcellen die één keer ontregeld zijn geraakt, reageren de
-              volgende keer sneller. Daarom is pigment een aandoening met een
-              geheugen: elke onbeschermde zomer telt op bij de vorige.
+              Pigmentcellen die eenmaal ontregeld zijn, reageren de volgende
+              keer sneller op zonlicht. Elke onbeschermde zomer telt daardoor op
+              bij de vorige.
             </p>
             <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
               Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting
@@ -217,7 +218,7 @@ export default function PigmentPage() {
               ],
               [
                 "Met bescherming én behandeling",
-                "Dit is waar de meeste winst zit. Maar de volgorde is niet omkeerbaar: eerst het eerste.",
+                "Hier zit de meeste winst. Begin wel met de bescherming, want zonder dat houdt het resultaat niet stand.",
               ],
             ].map(([kop, tekst], i) => (
               <li
@@ -256,7 +257,7 @@ export default function PigmentPage() {
       <WelNiet
         wel={PIGMENT_WEL_NIET.wel}
         niet={PIGMENT_WEL_NIET.niet}
-        intro="Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen."
+        intro="Bij pigment gaat het vaak mis door te vroeg beginnen, niet door te weinig behandelen."
       />
 
       <NulmetingAssen

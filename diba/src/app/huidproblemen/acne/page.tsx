@@ -52,7 +52,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/acne",
   titel: "Acne behandelen in Rotterdam",
   omschrijving:
-    "Acne heeft niet één oorzaak en dus niet één behandeling. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.",
+    "Acne behandelen met peelings, needling en laser. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.",
 });
 
 const PAD = "/huidproblemen/acne";
@@ -110,14 +110,10 @@ export default function AcnePage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Acne heeft niet één oorzaak en daarom ook niet één
-              standaardbehandeling. We kijken naar jouw huid, de vorm en ernst
-              van de acne en factoren die daarop van invloed zijn. Zo bepalen we
-              welke aanpak bij jouw huid past.
-            </p>
-
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De meeste mensen stellen deze afspraak twee jaar uit. Snappen we.
+              Acne kent verschillende vormen, en elke vorm vraagt een andere
+              aanpak. We stellen eerst vast waar het bij jou om gaat en
+              behandelen daarop, met peelings, needling, laser of een
+              combinatie.
             </p>
 
             {/* Kruisverwijzing naar wat er ná de acne overblijft. Wie hier komt voor de

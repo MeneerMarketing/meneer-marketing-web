@@ -598,9 +598,7 @@ Iedere huidvraag begint met een beoordeling, waaruit ook kan volgen dat we geen 
 
 **ACNE DIE STEEDS TERUGKOMT**
 
-Acne heeft niet één oorzaak en daarom ook niet één standaardbehandeling. We kijken naar jouw huid, de vorm en ernst van de acne en factoren die daarop van invloed zijn. Zo bepalen we welke aanpak bij jouw huid past.
-
-De meeste mensen stellen deze afspraak twee jaar uit. Snappen we.
+Acne kent verschillende vormen, en elke vorm vraagt een andere aanpak. We stellen eerst vast waar het bij jou om gaat en behandelen daarop, met peelings, needling, laser of een combinatie.
 
 Zit je vooral met wat er is achtergebleven? Dan begint het bij acnelittekens, want dat is vaak helemaal geen litteken.
 
@@ -2822,9 +2820,7 @@ Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldi
 
 **LITTEKENS EN STRIAE DIE ZICHTBAAR BLIJVEN**
 
-De leeftijd van een litteken bepaalt de uitkomst meer dan de techniek. Dat geldt net zo goed voor striae. Daarom begint deze pagina met de vraag hoe lang je het al hebt.
-
-Bij oude, witte littekens is ons antwoord vaak dat het niet genoeg oplevert. Liever nu dan na vier sessies.
+Bij littekens en striae bepaalt de leeftijd wat er mogelijk is. Rode en paarse littekens reageren doorgaans goed op behandeling, witte veel minder. In de intake kijken we hoe oud het litteken is en welke behandeling erbij past.
 
 > knop: ZET DE LITTEKENKLOK
 
@@ -3524,13 +3520,13 @@ In het huidconsult beoordelen we de plekken en meten we onder UV-licht ook het p
 
 **Tabbladtitel:** Pigmentvlekken behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Bij pigmentvlekken telt het seizoen zwaarder dan de techniek. Waarom we in de zomer terughoudend zijn en wanneer we wel behandelen.
+**Google-omschrijving:** Pigmentvlekken behandelen met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek, je huidtype en het seizoen.
 
-**PIGMENTVLEKKEN DIE JE WIL LATEN WEGGAAN**
+**PIGMENTVLEKKEN BEHANDELEN**
 
-De beste behandeling in juni doet minder dan een matige behandeling in oktober. Daarom begint deze pagina niet met techniek maar met de kalender.
+We behandelen pigmentvlekken met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek en van je huidtype. Dat stellen we in de intake samen vast.
 
-Ja, dat betekent dat we je soms wegsturen tot na de zomer.
+Het seizoen telt mee. Met weinig zon houdt het resultaat beter stand, dus in het najaar en de winter zit je het beste.
 
 > knop: BEKIJK HET ZONJAAR
 
@@ -3576,7 +3572,7 @@ Dit zijn maandgemiddelden. Op een heldere zomerdag ligt de zonkracht in Nederlan
 
 **Drie soorten pigment, drie andere uitkomsten.**
 
-Zonschade en melasma lijken op elkaar en vragen het tegenovergestelde. Dat onderscheid maken vóór de eerste behandeling scheelt je maanden en geld. Kies het patroon dat het dichtst bij jou komt.
+Zonschade en melasma lijken op elkaar, maar vragen een andere behandeling. Welk type je hebt, stellen we vast voordat we beginnen. Kies het patroon dat het dichtst bij jou komt.
 
 - Losse, scherp begrensde vlekken Bruine vlekjes met een duidelijke rand, vooral waar de zon komt
 
@@ -3594,15 +3590,15 @@ Opgetelde UV-belasting over jaren. Elke vlek is een plek waar pigmentcellen zijn
 
 *WAT WIJ EERST DOEN*
 
-Meten, gericht behandelen, en daarna bescherming als onderhoud. Zonder dat laatste zijn we volgend jaar weer terug bij af.
+We stellen het type vast, behandelen gericht en houden het daarna bij met zonbescherming. Zonder dat laatste komt het terug.
 
 Hier valt vaak het meeste te winnen. Dit type reageert doorgaans goed en komt minder snel terug dan melasma, zolang je de zon buiten houdt.
 
 > knop: LAAT DIT PATROON BEKIJKEN
 
-**Je huid onthoudt elke zomer.**
+**Waarom pigment terugkomt**
 
-Pigmentcellen die één keer ontregeld zijn geraakt, reageren de volgende keer sneller. Daarom is pigment een aandoening met een geheugen: elke onbeschermde zomer telt op bij de vorige.
+Pigmentcellen die eenmaal ontregeld zijn, reageren de volgende keer sneller op zonlicht. Elke onbeschermde zomer telt daardoor op bij de vorige.
 
 Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting zijn bij pigment minstens zo belangrijk als de behandeling in de kliniek.
 
@@ -3610,15 +3606,15 @@ Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting zijn bij pigme
 
 - Met bescherming Het pigment dat er is kan lichter worden, en er komt weinig nieuw bij.
 
-- Met bescherming én behandeling Dit is waar de meeste winst zit. Maar de volgorde is niet omkeerbaar: eerst het eerste.
+- Met bescherming én behandeling Hier zit de meeste winst. Begin wel met de bescherming, want zonder dat houdt het resultaat niet stand.
 
 **Wat helpt en wat we afraden**
 
-Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van te weinig behandelen maar van te vroeg beginnen.
+Bij pigment gaat het vaak mis door te vroeg beginnen, niet door te weinig behandelen.
 
 **DIT WERKT**
 
-- Elke dag zonbescherming, ook op een grijze dag. Dit is bij pigment de behandeling, niet de bijzaak
+- Elke dag zonbescherming, ook op een grijze dag. Bij pigment is dat het belangrijkste onderdeel
 
 - Starten in het najaar, zodat je maanden met lage UV vóór je hebt
 
@@ -3626,7 +3622,7 @@ Bij pigment doet de rechterkolom het meeste werk. De meeste schade komt niet van
 
 - Onderscheid maken tussen zonschade en melasma vóór de eerste behandeling
 
-- Een pet of hoed. Onelegant, maar hij doet meer dan de meeste crèmes
+- Een pet of hoed. Die houdt meer zon tegen dan welke crème ook
 
 **DIT RADEN WE AF**
 
@@ -4090,9 +4086,7 @@ Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmetin
 
 **ROSACEA: EEN HUID DIE STEEDS OPVLAMT**
 
-Rosacea is een aandoening die blijft, en dat zeggen we liever nu dan na vijf sessies. Wat er wel te bereiken valt is een rustiger basiskleur, minder opvlammingen en minder zichtbare adertjes. Voor veel mensen scheelt dat meer dan ze verwachten.
-
-Over hoe snel je rood wordt hoef je hier trouwens niets uit te leggen. Dat kennen we.
+Rosacea is een chronische aandoening die je goed kunt sturen. Met behandeling en de juiste verzorging krijg je een rustiger basiskleur, minder opvlammingen en minder zichtbare adertjes.
 
 Zie je vooral losse adertjes en geen opvlammingen? Dan gaat het waarschijnlijk om couperose, en daar staat de drukproef waarmee je dat zelf nagaat.
 
@@ -11517,4 +11511,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5334 tekstblokken · ongeveer 80.585 woorden._
+_105 pagina's · 5331 tekstblokken · ongeveer 80.518 woorden._

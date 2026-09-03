@@ -133,15 +133,9 @@ export default function RosaceaPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Rosacea is een aandoening die blijft, en dat zeggen we liever nu
-              dan na vijf sessies. Wat er wel te bereiken valt is een rustiger
-              basiskleur, minder opvlammingen en minder zichtbare adertjes. Voor
-              veel mensen scheelt dat meer dan ze verwachten.
-            </p>
-
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Over hoe snel je rood wordt hoef je hier trouwens niets uit te
-              leggen. Dat kennen we.
+              Rosacea is een chronische aandoening die je goed kunt sturen. Met
+              behandeling en de juiste verzorging krijg je een rustiger
+              basiskleur, minder opvlammingen en minder zichtbare adertjes.
             </p>
 
             {/* De andere kant van de kruisverwijzing. Zonder dit is de couperosepagina
