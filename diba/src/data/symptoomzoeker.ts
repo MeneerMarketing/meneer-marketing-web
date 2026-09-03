@@ -1,3 +1,5 @@
+import type { HuidIconNaam } from "@/components/ui/HuidIcon";
+
 /**
  * De symptoomzoeker.
  *
@@ -61,12 +63,22 @@ export type Bestemming = {
    */
   readonly eersteVraag: string;
   readonly groep: Groep;
+
+  /**
+   * Het icoon uit de set, als sleutel uit HUIDICONEN.
+   *
+   * De sleutel beschrijft wat je op het icoon ziet en niet de aandoening, want één icoon
+   * draagt meerdere problemen: alles wat om een verstopte porie draait krijgt dezelfde
+   * porie. Twee kaarten met hetzelfde icoon zeggen dan iets — dit zijn verwante dingen.
+   */
+  readonly icoon: HuidIconNaam;
   readonly kenmerken: readonly string[];
 };
 
 export const BESTEMMINGEN: readonly Bestemming[] = [
   {
     naam: "Acne",
+    icoon: "verstopte-porie",
     pad: "/huidproblemen/acne",
     zin: "Waar het zit op je gezicht zegt iets over waar het vandaan komt.",
     eersteVraag: "Waar op je gezicht zit het?",
@@ -78,6 +90,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
        de eerste die iemand intikt, ook als hij nog actieve acne heeft; de pagina zelf
        stuurt hem dan door. */
     naam: "Acnelittekens",
+    icoon: "huid-bultje",
     pad: "/huidproblemen/acne-littekens",
     zin: "Wat er na de puistjes achterbleef: kuiltjes, rood of pigment.",
     eersteVraag: "Litteken of kleur?",
@@ -86,6 +99,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Rimpels en fijne lijntjes",
+    icoon: "huid-strakker",
     pad: "/huidproblemen/rimpels",
     zin: "Lijnen die blijven staan als je gezicht in rust is.",
     eersteVraag: "Beweegt de lijn mee?",
@@ -94,6 +108,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Wallen",
+    icoon: "huid-strakker",
     pad: "/huidproblemen/wallen",
     zin: "Volume onder je ogen: vocht, vet of een schaduw.",
     eersteVraag: "Is het 's avonds minder?",
@@ -102,6 +117,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Ouderdomsvlekken",
+    icoon: "huid-glans",
     pad: "/huidproblemen/ouderdomsvlekken",
     zin: "Platte bruine plekken op handen, slapen of decollete.",
     eersteVraag: "Is de plek veranderd?",
@@ -110,6 +126,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Gerstekorrels en milia",
+    icoon: "verstopte-porie",
     pad: "/huidproblemen/gerstekorrels",
     zin: "Harde witte bolletjes die je niet kunt uitdrukken.",
     eersteVraag: "Wit en hard, of rood en pijnlijk?",
@@ -118,6 +135,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Huidverslapping",
+    icoon: "huid-strakker",
     pad: "/huidproblemen/huidverslapping",
     zin: "Een vagere kaaklijn en wangen die zakken.",
     eersteVraag: "Wat zie je liggend?",
@@ -126,6 +144,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Ingegroeide haren",
+    icoon: "haarzakje",
     pad: "/huidproblemen/ingegroeide-haren",
     zin: "Bultjes na het scheren, met een haar die niet naar buiten komt.",
     eersteVraag: "Zit er een haar in?",
@@ -134,6 +153,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Onzuivere huid en mee-eters",
+    icoon: "verstopte-porie",
     pad: "/huidproblemen/onzuivere-huid",
     zin: "Verstopte porien en af en toe een puistje, zonder echte acne.",
     eersteVraag: "Mee-eter of gewoon een porie?",
@@ -142,6 +162,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Keratosis pilaris",
+    icoon: "huid-bultje",
     pad: "/huidproblemen/keratosis-pilaris",
     zin: "Kippenvelhuid: ruwe bultjes op bovenarmen of dijen.",
     eersteVraag: "Losse bultjes of alleen ruw?",
@@ -150,6 +171,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Doffe huid",
+    icoon: "huid-glans",
     pad: "/huidproblemen/doffe-huid",
     zin: "Een grauwe tint en weinig glans, zonder duidelijke vlekken.",
     eersteVraag: "Waar komt het vandaan?",
@@ -158,6 +180,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Steelwratjes",
+    icoon: "huid-bultje",
     pad: "/huidproblemen/steelwratjes",
     zin: "Zachte hangende velletjes in hals, oksel of lies.",
     eersteVraag: "Hangt het aan een steeltje?",
@@ -166,6 +189,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Rosacea",
+    icoon: "huid-glans",
     pad: "/huidproblemen/rosacea",
     zin: "Roodheid die blijft, met opvlammingen na warmte of inspanning.",
     eersteVraag: "Wat zet het aan?",
@@ -177,6 +201,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
        gebruikt dit woord en niet dat andere; wie meer herkent dan vaatjes wordt op de
        couperosepagina zelf doorgestuurd. */
     naam: "Couperose",
+    icoon: "huid-glans",
     pad: "/huidproblemen/couperose",
     zin: "Zichtbare adertjes die blijven staan als je erop drukt.",
     eersteVraag: "Losse vaatjes of een gloed?",
@@ -185,6 +210,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Pigmentvlekken",
+    icoon: "huid-glans",
     pad: "/huidproblemen/pigmentvlekken",
     zin: "Bruine plekjes van opgebouwde zon, en het seizoen bepaalt wanneer je begint.",
     eersteVraag: "Welk seizoen is het?",
@@ -193,6 +219,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Melasma",
+    icoon: "huid-glans",
     pad: "/huidproblemen/melasma",
     zin: "Grotere bruine vlakken met een hormonale kant. De diepte bepaalt alles.",
     eersteVraag: "Hoe diep zit het pigment?",
@@ -201,6 +228,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Littekens en striae",
+    icoon: "huid-bultje",
     pad: "/huidproblemen/littekens",
     zin: "Hoe oud het is bepaalt meer dan welke techniek dan ook.",
     eersteVraag: "Hoe oud is het litteken?",
@@ -209,6 +237,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Huidveroudering",
+    icoon: "huid-strakker",
     pad: "/huidproblemen/huidveroudering",
     zin: "Wat komt door tijd en wat komt door zon, en alleen op dat tweede zit een knop.",
     eersteVraag: "Is dit tijd of is dit zon?",
@@ -217,6 +246,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Poriën",
+    icoon: "verstopte-porie",
     pad: "/huidproblemen/porien",
     zin: "Kleiner maken kan niet. Minder zichtbaar wel, en dat scheelt meer dan je denkt.",
     eersteVraag: "Wat valt er eigenlijk te veranderen?",
@@ -225,6 +255,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Droge huid",
+    icoon: "porie-vocht",
     pad: "/huidproblemen/droge-huid",
     zin: "Droog en uitgedroogd zijn twee losse assen, en daar gaat het meestal mis.",
     eersteVraag: "Mist er vet of mist er water?",
@@ -233,6 +264,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Gevoelige huid",
+    icoon: "porie-vocht",
     pad: "/huidproblemen/gevoelige-huid",
     zin: "Meestal geen huidtype maar een routine die is volgestapeld.",
     eersteVraag: "Wat staat er allemaal aan?",
@@ -241,6 +273,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Donkere kringen",
+    icoon: "huid-glans",
     pad: "/huidproblemen/donkere-kringen",
     zin: "Drie oorzaken die er hetzelfde uitzien, en bij één kunnen wij niets.",
     eersteVraag: "Is het kleur of is het schaduw?",
@@ -249,6 +282,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Eczeem",
+    icoon: "porie-vocht",
     pad: "/huidproblemen/eczeem",
     zin: "Een cirkel en geen plek. Hoort bij de huisarts, en die heeft er behandeling voor.",
     eersteVraag: "Waar valt de cirkel te breken?",
@@ -257,6 +291,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Psoriasis",
+    icoon: "porie-vocht",
     pad: "/huidproblemen/psoriasis",
     zin: "Meer dan huid. Let vooral op je nagels en je gewrichten.",
     eersteVraag: "Zitten je nagels en gewrichten er ook bij?",
@@ -265,6 +300,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Huiduitslag",
+    icoon: "cremepotje",
     pad: "/huidproblemen/huiduitslag",
     zin: "Eerst de vraag of je vandaag belt of morgen. Doe de glastest.",
     eersteVraag: "Bel je vandaag of morgen?",
@@ -273,6 +309,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Cellulitis",
+    icoon: "huid-bultje",
     pad: "/huidproblemen/cellulitis",
     zin: "Geen vet maar bouw. Wij behandelen het niet en leggen uit waarom niemand dat kan.",
     eersteVraag: "Gaat dit over vet of over bouw?",
@@ -281,6 +318,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Moedervlekken",
+    icoon: "pincet-haar",
     pad: "/huidproblemen/moedervlekken",
     zin: "Hiervoor moet je niet bij ons zijn. Wel staat hier waar je op let.",
     eersteVraag: "Is er iets veranderd?",
@@ -289,6 +327,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
   },
   {
     naam: "Huidverkleuring",
+    icoon: "huid-glans",
     pad: "/huidproblemen/huidverkleuring",
     zin: "Weet je niet hoe je het noemt? Begin dan bij de kleur.",
     eersteVraag: "Welke kleur heeft het?",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Label from "@/components/ui/Label";
+import HuidIcon, { type HuidIconNaam } from "@/components/ui/HuidIcon";
 import { BESTEMMINGEN, type Groep } from "@/data/symptoomzoeker";
 
 /**
@@ -27,6 +28,9 @@ const ZOEKER = {
   zin: "Kruis aan wat je ziet en voelt, in gewone woorden.",
   eersteVraag: "Wat zie je precies?",
   groep: "wegwijzer" as Groep,
+  /* Het crèmepotje: het enige icoon uit de set dat geen huidbeeld toont maar een handeling.
+     Past bij een hulpmiddel en niet bij een aandoening. */
+  icoon: "cremepotje" as HuidIconNaam,
 };
 
 const GROEPEN: readonly {
@@ -142,13 +146,21 @@ export default function Raster() {
                     href={b.pad}
                     className="group block h-full rounded-[var(--r-lg)] bg-[var(--g-050)] p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-[var(--g-100)] hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:p-7"
                   >
+                    {/* Het icoon uit de set, en bij hover de pijl. Zo draagt de plek
+                        allebei: rustend zegt hij wat voor soort probleem dit is, en zodra
+                        je erop staat dat er iets gebeurt als je klikt. */}
                     <span
                       aria-hidden="true"
-                      className="flex h-9 w-9 items-center justify-center rounded-[var(--r-pill)] bg-white transition-colors group-hover:bg-[var(--g-700)]"
+                      className="relative flex h-11 w-11 items-center justify-center rounded-[var(--r-pill)] bg-white transition-colors duration-300 group-hover:bg-[var(--g-700)]"
                     >
+                      <HuidIcon
+                        naam={b.icoon}
+                        size={26}
+                        className="text-[var(--g-700)] transition-all duration-300 group-hover:scale-90 group-hover:opacity-0 group-hover:text-white"
+                      />
                       <svg
                         viewBox="0 0 16 16"
-                        className="h-3.5 w-3.5 text-[var(--g-700)] transition-colors group-hover:text-white"
+                        className="absolute h-3.5 w-3.5 scale-75 text-white opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"

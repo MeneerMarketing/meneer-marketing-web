@@ -3,21 +3,37 @@
 import Image from "next/image";
 import { useState } from "react";
 import Button from "@/components/ui/Button";
-import { ArrowUpRight } from "@/components/ui/Icon";
+import HuidIcon, { type HuidIconNaam } from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
 import { HOME_INTENTS, type HomeIntent } from "@/data/home-intents";
 
-function IntentArrow({ active }: { active: boolean }) {
+/**
+ * Het rondje op de kaart, met het icoon uit de set erin.
+ *
+ * Hier zat een pijl. Op één knop zegt een pijl iets; op zes kaarten waaruit je kiest zegt
+ * hij zes keer hetzelfde. Het icoon zegt wél waar de kaart over gaat, en dat zie je voordat
+ * je de titel leest.
+ *
+ * Het rondje zelf blijft: dat is het anker van de kaart, en het wisselt van kleur zodra je
+ * de kaart kiest.
+ */
+function IntentIcoon({
+  naam,
+  active,
+}: {
+  naam: HuidIconNaam;
+  active: boolean;
+}) {
   return (
     <span
-      className={`inline-grid h-9 w-9 place-items-center rounded-[var(--r-pill)] ${
+      className={`inline-grid h-12 w-12 place-items-center rounded-[var(--r-pill)] transition-colors ${
         active
           ? "bg-[var(--on-dark-accent)] text-[var(--g-700)]"
-          : "bg-white text-[var(--g-500)]"
+          : "bg-white text-[var(--g-700)]"
       }`}
       aria-hidden="true"
     >
-      <ArrowUpRight size={16} />
+      <HuidIcon naam={naam} size={28} />
     </span>
   );
 }
@@ -42,7 +58,7 @@ function IntentCard({
           : "bg-[var(--g-025)] hover:-translate-y-1 hover:bg-[var(--g-050)]"
       } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
     >
-      <IntentArrow active={active} />
+      <IntentIcoon naam={intent.icoon} active={active} />
       <h3 className="diba-card-title mt-10 sm:mt-12">{intent.title}</h3>
       <p
         className={`mt-3 text-sm leading-6 ${

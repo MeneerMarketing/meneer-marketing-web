@@ -1,3 +1,4 @@
+import type { HuidIconNaam } from "@/components/ui/HuidIcon";
 import {
   FIGMA_INTENT_ACNE,
   FIGMA_INTENT_LASER,
@@ -9,6 +10,8 @@ import {
 
 export type HomeIntent = {
   readonly id: string;
+  /** Het icoon uit de set. Zie HUIDICONEN in components/ui/HuidIcon. */
+  readonly icoon: HuidIconNaam;
   readonly title: string;
   readonly subtitle: string;
   readonly href: string;
@@ -19,6 +22,7 @@ export type HomeIntent = {
 export const HOME_INTENTS: readonly HomeIntent[] = [
   {
     id: "acne",
+    icoon: "verstopte-porie",
     title: "Acne & onzuiverheden",
     subtitle: "Rust in je huid, met een plan dat past.",
     href: "/huidproblemen/acne",
@@ -27,6 +31,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
   },
   {
     id: "pigment",
+    icoon: "huid-glans",
     title: "Pigment & melasma",
     subtitle: "Behandel met kennis, niet met beloftes.",
     href: "/huidproblemen/pigmentvlekken",
@@ -35,6 +40,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
   },
   {
     id: "laser",
+    icoon: "haarzakje",
     title: "Laserontharing",
     subtitle: "Veilig, helder en afgestemd op jouw huidtype.",
     href: "/laserontharing",
@@ -43,6 +49,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
   },
   {
     id: "littekens",
+    icoon: "huid-bultje",
     title: "Littekens & textuur",
     subtitle: "Werk stap voor stap aan herstel en structuur.",
     href: "/huidproblemen/littekens",
@@ -51,6 +58,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
   },
   {
     id: "veroudering",
+    icoon: "huid-strakker",
     title: "Huidveroudering",
     subtitle: "Frisser zonder dat je jezelf kwijtraakt.",
     href: "/huidproblemen/huidveroudering",
@@ -59,6 +67,7 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
   },
   {
     id: "lichaam",
+    icoon: "porie-vocht",
     title: "Lichaam & huid",
     subtitle: "Ook je lichaam verdient gerichte huidzorg.",
     href: "/huidproblemen/cellulitis",
