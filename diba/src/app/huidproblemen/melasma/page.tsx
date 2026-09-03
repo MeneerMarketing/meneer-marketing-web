@@ -43,7 +43,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/melasma",
   titel: "Melasma behandelen in Rotterdam",
   omschrijving:
-    "Bij melasma bepaalt de diepte van het pigment wat mogelijk is, en die zie je in gewoon licht niet. Waarom we altijd met een UV-scan beginnen.",
+    "Melasma behandelen met peelings, verzorging en zonbescherming. Hoe diep het pigment zit bepaalt wat mogelijk is, en dat zien we onder UV-scan beginnen.",
 });
 
 const PAD = "/huidproblemen/melasma";
@@ -99,15 +99,15 @@ export default function MelasmaPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Bij melasma bepaalt de diepte van het pigment wat er mogelijk is,
-              en die zie je in gewoon licht niet. Twee vlekken die er identiek
-              uitzien kunnen totaal anders reageren.
+              Melasma behandelen we met peelings, gerichte verzorging en
+              zonbescherming. Hoe diep het pigment zit, bepaalt wat er mogelijk
+              is, en dat zie je in gewoon licht niet.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Daarom begint het hier met kijken en niet met behandelen. Zit het
-              diep, dan raden we het af, want dit is de enige aandoening waarbij
-              harder werken je verder van huis brengt.
+              Daarom kijken we eerst onder UV-licht. Zit het pigment diep, dan
+              richten we ons op beheersen: minder opvlammingen en een rustiger
+              beeld.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

@@ -468,11 +468,11 @@ export default function FigmaHomeApp({
                   },
                   {
                     label: "Roodheid",
-                    zin: "We leggen vast waar de roodheid zit en hoe uitgesproken die is.",
+                    zin: "We leggen vast waar de roodheid zit en hoe fel die op dat moment is.",
                   },
                   {
                     label: "Textuur",
-                    zin: "Poriën en oneffenheden komen op de opnames goed naar voren.",
+                    zin: "Poriën, oneffenheden en de structuur van je huid komen goed naar voren.",
                   },
                 ].map((as) => (
                   <li

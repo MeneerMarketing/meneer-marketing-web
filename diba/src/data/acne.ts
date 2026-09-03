@@ -232,7 +232,7 @@ export const ACNE_WIJ_DOEN_NIET = [
       "Laseren of needlen in actieve acne verergert de ontsteking en kan het litteken juist vastzetten. We wachten tot de huid rustig is, ook als dat langer duurt dan je hoopte. [MEDISCHE-CHECK-ROJDA]",
   },
   {
-    titel: "Medicatie loopt via je arts, en wij stemmen af",
+    titel: "Medicatie loopt via je arts",
     tekst:
       "Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.",
   },

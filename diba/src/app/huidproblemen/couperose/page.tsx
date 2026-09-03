@@ -58,7 +58,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/couperose",
   titel: "Couperose behandelen in Rotterdam",
   omschrijving:
-    "Rode vaatjes op je wangen of naast je neus. Met de drukproef zie je zelf of het couperose is of een rode gloed, en dat bepaalt wat helpt.",
+    "Couperose behandelen met IPL en laser. Rode vaatjes op je wangen of naast je neus, hoe je ze herkent en wat een behandeling kost.",
 });
 
 const PAD = "/huidproblemen/couperose";
@@ -155,8 +155,9 @@ export default function CouperosePage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Over hoe snel je rood wordt hoef je hier trouwens niets uit te
-              leggen. Dat kennen we.
+              We behandelen couperose met IPL en laser. Meestal zijn er een paar
+              sessies nodig; in de intake hoor je hoeveel dat er in jouw geval
+              zijn.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

@@ -327,7 +327,7 @@ export default function AcnePage() {
           <div className={RASTER_SECTIEKOP}>
             <div>
               <Label opDonker>Onze volgorde</Label>
-              <h2 className="diba-display-m mt-4 max-w-[12ch]">
+              <h2 className="diba-display-m mt-4 max-w-[19ch]">
                 Waarom we beginnen
                 <br />
                 <span className="diba-accent-on-dark">bij de ontsteking</span>

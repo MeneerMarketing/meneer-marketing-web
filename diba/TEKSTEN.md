@@ -120,9 +120,9 @@ Dat verschilt per klacht en per behandeling. In de intake hoor je wat er in jouw
 
 - PIGMENT Onder UV-licht wordt pigment zichtbaar dat je met het oog lastig ziet.
 
-- ROODHEID We leggen vast waar de roodheid zit en hoe uitgesproken die is.
+- ROODHEID We leggen vast waar de roodheid zit en hoe fel die op dat moment is.
 
-- TEXTUUR Poriën en oneffenheden komen op de opnames goed naar voren.
+- TEXTUUR Poriën, oneffenheden en de structuur van je huid komen goed naar voren.
 
 **Wat je van een afspraak kunt verwachten.**
 
@@ -594,7 +594,7 @@ Iedere huidvraag begint met een beoordeling, waaruit ook kan volgen dat we geen 
 
 **Tabbladtitel:** Acne behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Acne heeft niet één oorzaak en dus niet één behandeling. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.
+**Google-omschrijving:** Acne behandelen met peelings, needling en laser. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.
 
 **ACNE DIE STEEDS TERUGKOMT**
 
@@ -722,7 +722,7 @@ Littekens behandelen op een huid die nog ontstoken is maakt het beeld slechter. 
 
 - Eerst de ontsteking, dan het litteken Laseren of needlen in actieve acne verergert de ontsteking en kan het litteken juist vastzetten. We wachten tot de huid rustig is, ook als dat langer duurt dan je hoopte.
 
-- Medicatie loopt via je arts, en wij stemmen af Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.
+- Medicatie loopt via je arts Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.
 
 - Een traject met een einddatum Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw meten. Blijkt het niet te werken, dan stoppen we en zeggen we dat in plaats van door te gaan.
 
@@ -1038,13 +1038,13 @@ Er staat op deze pagina geen knop om een afspraak te maken. Wil je wel iets aan 
 
 **Tabbladtitel:** Couperose behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Rode vaatjes op je wangen of naast je neus. Met de drukproef zie je zelf of het couperose is of een rode gloed, en dat bepaalt wat helpt.
+**Google-omschrijving:** Couperose behandelen met IPL en laser. Rode vaatjes op je wangen of naast je neus, hoe je ze herkent en wat een behandeling kost.
 
 **RODE ADERTJES DIE NIET MEER WEGTREKKEN**
 
 Die dunne rode of paarse lijntjes op je wangen of naast je neus heten couperose. Een egale rode waas is iets anders en vraagt om een andere aanpak, al zitten ze vaak samen. Met je vinger zie je binnen een paar seconden waar je mee te maken hebt.
 
-Over hoe snel je rood wordt hoef je hier trouwens niets uit te leggen. Dat kennen we.
+We behandelen couperose met IPL en laser. Meestal zijn er een paar sessies nodig; in de intake hoor je hoeveel dat er in jouw geval zijn.
 
 > knop: DOE DE DRUKPROEF
 
@@ -2240,13 +2240,13 @@ Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laa
 
 **Tabbladtitel:** Huidveroudering behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Het grootste deel van wat je huid ouder maakt komt niet door leeftijd maar door zon. Wat daarvan terug te draaien is en wat niet.
+**Google-omschrijving:** Huidveroudering behandelen met peelings, needling en laser. Het meeste komt door zon en niet door leeftijd, en juist dat is aan te pakken.
 
 **HOE JE HUID VEROUDERT MET DE JAREN**
 
-Kijk naar de binnenkant van je bovenarm en dan naar je gezicht. Twee stukken huid van dezelfde leeftijd, die er totaal anders uitzien. Dat verschil is geen tijd.
+Het grootste deel van wat je huid ouder maakt, komt door zonlicht en niet door je leeftijd. Dat deel is goed te behandelen, met peelings, needling en laser.
 
-Deze pagina scheidt wat door de tijd komt van wat door de zon komt. Alleen op dat tweede deel zit een knop, en dat is meer dan de meeste mensen denken.
+In de intake stellen we vast wat bij jou door de zon komt en wat bij je leeftijd hoort, en welke behandeling daarbij past.
 
 > knop: DOE DE ONDERARMTEST
 
@@ -2442,13 +2442,13 @@ We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en 
 
 **Tabbladtitel:** Huidverslapping behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Wat je liggend ziet is de bovengrens van wat aanspannen kan bereiken. Met de zwaartekrachttest weet je vooraf of een behandeling bij jou iets oplevert.
+**Google-omschrijving:** Huidverslapping behandelen met needling en laser, die de aanmaak van collageen op gang brengen. Wat er realistisch te winnen valt.
 
 **EEN VERSLAPTE KAAKLIJN EN ZAKKENDE WANGEN**
 
-Verslapping is het enige huidprobleem dat verandert met de stand van je hoofd. Wat er liggend strakker uitziet, is wat de zwaartekracht overdag naar beneden trekt, en daarmee ongeveer het maximum van wat aanspannen kan bereiken.
+Een zakkende kaaklijn en wangen behandelen we met technieken die de aanmaak van collageen op gang brengen, zoals needling en laser. Dat geeft steviger weefsel en een vastere lijn.
 
-Dat is in twee richtingen eerlijk: het temt te hoge verwachtingen, en het laat zien wanneer er wel degelijk iets te winnen valt.
+Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. In de intake kijken we daarnaar en bespreken we wat realistisch is.
 
 > knop: DOE DE ZWAARTEKRACHTTEST
 
@@ -2816,7 +2816,7 @@ Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldi
 
 **Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Bij littekens en striae bepaalt de leeftijd de uitkomst meer dan de techniek. Rood reageert goed, wit veel minder. Wat er in jouw geval mogelijk is.
+**Google-omschrijving:** Littekens en striae behandelen met needling en laser. Rode littekens reageren doorgaans goed, witte veel minder. Wat er in jouw geval mogelijk is.
 
 **LITTEKENS EN STRIAE DIE ZICHTBAAR BLIJVEN**
 
@@ -2998,13 +2998,13 @@ Bij een rood litteken of rode striae is dit het moment waarop het het meeste uit
 
 **Tabbladtitel:** Melasma behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Bij melasma bepaalt de diepte van het pigment wat mogelijk is, en die zie je in gewoon licht niet. Waarom we altijd met een UV-scan beginnen.
+**Google-omschrijving:** Melasma behandelen met peelings, verzorging en zonbescherming. Hoe diep het pigment zit bepaalt wat mogelijk is, en dat zien we onder UV-scan beginnen.
 
 **MELASMA: VLEKKEN DIE STEEDS TERUGKOMEN**
 
-Bij melasma bepaalt de diepte van het pigment wat er mogelijk is, en die zie je in gewoon licht niet. Twee vlekken die er identiek uitzien kunnen totaal anders reageren.
+Melasma behandelen we met peelings, gerichte verzorging en zonbescherming. Hoe diep het pigment zit, bepaalt wat er mogelijk is, en dat zie je in gewoon licht niet.
 
-Daarom begint het hier met kijken en niet met behandelen. Zit het diep, dan raden we het af, want dit is de enige aandoening waarbij harder werken je verder van huis brengt.
+Daarom kijken we eerst onder UV-licht. Zit het pigment diep, dan richten we ons op beheersen: minder opvlammingen en een rustiger beeld.
 
 > knop: PAK DE LAMP
 
@@ -11511,4 +11511,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5331 tekstblokken · ongeveer 80.518 woorden._
+_105 pagina's · 5331 tekstblokken · ongeveer 80.503 woorden._

@@ -41,7 +41,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/huidverslapping",
   titel: "Huidverslapping behandelen in Rotterdam",
   omschrijving:
-    "Wat je liggend ziet is de bovengrens van wat aanspannen kan bereiken. Met de zwaartekrachttest weet je vooraf of een behandeling bij jou iets oplevert.",
+    "Huidverslapping behandelen met needling en laser, die de aanmaak van collageen op gang brengen. Wat er realistisch te winnen valt.",
 });
 
 const PAD = "/huidproblemen/huidverslapping";
@@ -108,15 +108,15 @@ export default function Pagina() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Verslapping is het enige huidprobleem dat verandert met de stand
-              van je hoofd. Wat er liggend strakker uitziet, is wat de
-              zwaartekracht overdag naar beneden trekt, en daarmee ongeveer het
-              maximum van wat aanspannen kan bereiken.
+              Een zakkende kaaklijn en wangen behandelen we met technieken die
+              de aanmaak van collageen op gang brengen, zoals needling en laser.
+              Dat geeft steviger weefsel en een vastere lijn.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dat is in twee richtingen eerlijk: het temt te hoge verwachtingen,
-              en het laat zien wanneer er wel degelijk iets te winnen valt.
+              Wat er liggend strakker uitziet, geeft ongeveer aan wat er te
+              winnen valt. In de intake kijken we daarnaar en bespreken we wat
+              realistisch is.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

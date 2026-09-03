@@ -49,7 +49,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/huidveroudering",
   titel: "Huidveroudering behandelen in Rotterdam",
   omschrijving:
-    "Het grootste deel van wat je huid ouder maakt komt niet door leeftijd maar door zon. Wat daarvan terug te draaien is en wat niet.",
+    "Huidveroudering behandelen met peelings, needling en laser. Het meeste komt door zon en niet door leeftijd, en juist dat is aan te pakken.",
 });
 
 const PAD = "/huidproblemen/huidveroudering";
@@ -116,15 +116,14 @@ export default function HuidverouderingPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Kijk naar de binnenkant van je bovenarm en dan naar je gezicht.
-              Twee stukken huid van dezelfde leeftijd, die er totaal anders
-              uitzien. Dat verschil is geen tijd.
+              Het grootste deel van wat je huid ouder maakt, komt door zonlicht
+              en niet door je leeftijd. Dat deel is goed te behandelen, met
+              peelings, needling en laser.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Deze pagina scheidt wat door de tijd komt van wat door de zon
-              komt. Alleen op dat tweede deel zit een knop, en dat is meer dan
-              de meeste mensen denken.
+              In de intake stellen we vast wat bij jou door de zon komt en wat
+              bij je leeftijd hoort, en welke behandeling daarbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
