@@ -7,6 +7,7 @@ import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
 import Variantkiezer from "@/components/behandelingen/Variantkiezer";
 import Label from "@/components/ui/Label";
 import { apparatenVoorBehandeling } from "@/data/apparatuur";
+import { PillarFaq } from "@/components/pillar/PillarSecties";
 import ProofBar from "@/components/ui/ProofBar";
 import {
   BEHANDELINGEN,
@@ -526,53 +527,25 @@ export default async function BehandelingPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      {/* ── Vragen ── */}
-      {/* Een vragenkop zonder vragen. */}
-      {b.faq?.length ? (
-        <section
-          id="vragen"
-          className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
-        >
-          <div className="mx-auto">
-            <Label>Vragen</Label>
-            <h2 className="diba-display-m mt-4 max-w-[20ch]">
-              Wat mensen
-              <br />
-              <span className="diba-accent">hierover vragen.</span>
-            </h2>
+      {/* ── Vragen ──
 
-            <ul className="mt-10 max-w-[64ch] divide-y divide-[var(--g-100)]">
-              {(b.faq ?? []).map((v) => (
-                <li key={v.vraag}>
-                  <details className="group py-5">
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[17px] leading-7 font-medium text-[var(--t-strong)] [&::-webkit-details-marker]:hidden">
-                      {v.vraag}
-                      <svg
-                        viewBox="0 0 12 12"
-                        className="h-3 w-3 shrink-0 text-[var(--t-muted)] transition-transform group-open:rotate-180"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M2.5 4.5 6 8l3.5-3.5" />
-                      </svg>
-                    </summary>
-                    <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
-                      {publicCopy(v.antwoord)}
-                    </p>
-                  </details>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+          Hier stond een eigen opmaak: kop bovenaan over de volle breedte, daaronder de
+          vragen in een kolom van 64 tekens tegen de linkerrand. Op een breed scherm is dat
+          een smal strookje met een half leeg vlak ernaast, terwijl elke andere sectie op
+          deze site kop links en inhoud rechts zet.
+
+          Het was bovendien een tweede kopie van PillarFaq, die datzelfde doet mét de
+          indeling van de rest en de vragen ook aanmeldt bij Google. Dat laatste deden deze
+          pagina's dus niet. */}
+      {b.faq?.length ? (
+        <PillarFaq items={b.faq} onderwerp={b.naam.toLowerCase()} />
       ) : null}
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+      {/* Geen onderruimte hier: de voettekst brengt die mee. Stond dit er wel, dan
+          telde het op tot honderdvierenveertig pixels tussen het groene vlak en de eerste
+          lijn van de voettekst, en dat is te veel. */}
+      <section className="px-5 pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Eerst meten</Label>

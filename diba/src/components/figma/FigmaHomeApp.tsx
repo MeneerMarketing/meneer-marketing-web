@@ -17,6 +17,7 @@ import {
   Pulse,
   Sparkle,
 } from "@/components/ui/Icon";
+import SiteFooter from "@/components/ui/SiteFooter";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
@@ -31,11 +32,7 @@ import {
   FIGMA_HERO_PORTRAIT,
   FIGMA_HERO_PORTRAIT_ALT,
 } from "@/lib/figma-home-layout";
-import {
-  DIBA_HOME_PROOF_ITEMS,
-  DIBA_INSTAGRAM_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_HOME_PROOF_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
 
 /**
  * De drie punten onder "Eerlijk advies". Concepttekst, overgenomen uit het ontwerp.
@@ -72,8 +69,6 @@ export default function FigmaHomeApp({
   heroVariant?: boolean;
 }) {
   const [scanOpen, setScanOpen] = useState(false);
-
-  const year = new Date().getFullYear();
 
   useEffect(() => {
     if (!scanOpen) return;
@@ -654,64 +649,13 @@ export default function FigmaHomeApp({
         </div>
       </section>
 
-      <footer className="mx-auto px-5 pb-10 sm:px-9 lg:px-[7.5vw]">
-        <div className="flex flex-col gap-6 border-t border-[var(--g-100)] pt-7">
-          <div className="diba-label flex flex-wrap gap-x-8 gap-y-3 text-[var(--t-muted)]">
-            <Link
-              href="/huidproblemen"
-              className="transition hover:text-[var(--g-700)]"
-            >
-              Huidproblemen
-            </Link>
-            <Link
-              href="/prijzen"
-              className="transition hover:text-[var(--g-700)]"
-            >
-              Prijzen
-            </Link>
-            <Link
-              href="/contact"
-              className="transition hover:text-[var(--g-700)]"
-            >
-              Contact
-            </Link>
-            <Link
-              href="/privacybeleid"
-              className="transition hover:text-[var(--g-700)]"
-            >
-              Privacy
-            </Link>
-            <Link
-              href="/cookiebeleid"
-              className="transition hover:text-[var(--g-700)]"
-            >
-              Cookies
-            </Link>
-            <Link
-              href="/klachten"
-              className="transition hover:text-[var(--g-700)]"
-            >
-              Klachten
-            </Link>
-            {DIBA_INSTAGRAM_URL ? (
-              <a
-                href={DIBA_INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition hover:text-[var(--g-700)]"
-              >
-                Instagram
-              </a>
-            ) : (
-              <span className="opacity-50">Instagram</span>
-            )}
-          </div>
-          <div className="diba-label flex flex-col gap-5 text-[var(--t-muted)] sm:flex-row sm:items-center sm:justify-between">
-            <span>© {year} Diba Clinics</span>
-            <span>Weissenbruchlaan 166 · Rotterdam · Hillegersberg</span>
-          </div>
-        </div>
-      </footer>
+      {/* De gedeelde voettekst.
+
+          Hier stond een eigen kopie: dezelfde platte rij links die ook in SiteFooter
+          stond, apart onderhouden. Toen die voettekst vier kolommen kreeg, veranderde
+          de homepage niet mee — en dat is precies de pagina waar de meeste mensen
+          binnenkomen. Eén voettekst voor de hele site, dus. */}
+      <SiteFooter />
     </main>
   );
 }

@@ -119,9 +119,11 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
   const instagram = instagramHref ?? DIBA_INSTAGRAM_URL;
 
   return (
-    /* pt-20 in plaats van pt-4. Het blok erboven is donkergroen en heeft lucht nodig,
-       anders leest het als één geheel met de voettekst. */
-    <footer className={`${figmaInnerContainer} pb-12 pt-20 lg:pt-28`}>
+    /* De ruimte boven de voettekst zit hier en niet in de sectie erboven, zodat het op
+       elke pagina hetzelfde is. Eerst was het vier pixels en plakte de voettekst aan het
+       groene vlak; toen achtentwintig en was het te veel. Twintig is de maat waarop het
+       twee dingen zijn zonder dat er een gat valt. */
+    <footer className={`${figmaInnerContainer} pb-12 pt-16 lg:pt-20`}>
       <div className="mx-auto border-t border-[var(--g-100)] pt-12 lg:pt-14">
         <div className="grid gap-10 lg:grid-cols-[1fr_2.6fr] lg:gap-16">
           {/* Het merk, met het blad uit de huisstijl. Kort: de voettekst is om verder te
