@@ -54,7 +54,7 @@ NL
 
 **HUIDKLINIEK IN ROTTERDAM**
 
-Bij Diba werken huidtherapeuten en huidspecialisten. We behandelen huidklachten en verzorgen huidverbetering en laserontharing. In de intake kijken we wat bij jou past.
+Sinds 2017 helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens en ongewenst haar. In de intake hoor je wat er bij jou mogelijk is.
 
 > knop: BEKIJK DE BEHANDELINGEN
 
@@ -114,7 +114,7 @@ Bij Diba werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheids
 
 **Hoeveel afspraken je nodig hebt.**
 
-Dat verschilt per klacht en per behandeling. Sommige behandelingen zijn na een afspraak klaar, andere doe je in een reeks met een paar weken ertussen. In de intake hoor je wat er in jouw geval nodig is.
+Dat verschilt per klacht en per behandeling. In de intake hoor je wat er in jouw geval nodig is.
 
 **Wat we vastleggen.**
 
@@ -124,23 +124,21 @@ Dat verschilt per klacht en per behandeling. Sommige behandelingen zijn na een a
 
 - TEXTUUR Poriën en oneffenheden komen op de opnames goed naar voren.
 
-De opnames worden onder hetzelfde licht en vanaf dezelfde afstand gemaakt. Zo kun je ze later goed met elkaar vergelijken.
-
 **Wat je van een afspraak kunt verwachten.**
 
 Je leest hier wat je voor de afspraak moet weten en wat je na afloop meekrijgt.
 
-**Je beslist zelf**
+**Ervaren behandelaars**
 
-Voordat we behandelen weet je wat we voorstellen en wat het kost. Wil je erover nadenken, dan krijg je het advies mee naar huis.
+We werken sinds 2017 en hebben ruim 55.000 behandelingen gedaan. Die ervaring hoor je terug in het advies dat je krijgt.
 
 DIBA CLINICS
 
-Je vindt ons in Rotterdam.
+Je vindt ons in Rotterdam
 
-**Je weet vooraf wat het kost**
+**Een resultaat met een verwachting**
 
-Alle tarieven staan op deze site: per behandeling, per zone of per kwartier. In de intake hoor je wat jouw behandeling gaat kosten voordat je iets afspreekt.
+Je hoort vooraf wat er haalbaar is, hoeveel afspraken dat vraagt en wat het kost. Alle tarieven staan op deze site.
 
 **Uitleg per klacht.**
 
@@ -11519,4 +11517,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5335 tekstblokken · ongeveer 80.943 woorden._
+_105 pagina's · 5334 tekstblokken · ongeveer 80.897 woorden._

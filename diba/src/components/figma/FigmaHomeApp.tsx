@@ -141,9 +141,9 @@ export default function FigmaHomeApp({
                 </h1>
 
                 <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Bij Diba werken huidtherapeuten en huidspecialisten. We
-                  behandelen huidklachten en verzorgen huidverbetering en
-                  laserontharing. In de intake kijken we wat bij jou past.
+                  Sinds 2017 helpen onze huidtherapeuten en specialisten je met
+                  acne, pigment, littekens en ongewenst haar. In de intake hoor
+                  je wat er bij jou mogelijk is.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -434,10 +434,8 @@ export default function FigmaHomeApp({
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dat verschilt per klacht en per behandeling. Sommige behandelingen
-              zijn na een afspraak klaar, andere doe je in een reeks met een
-              paar weken ertussen. In de intake hoor je wat er in jouw geval
-              nodig is.
+              Dat verschilt per klacht en per behandeling. In de intake hoor je
+              wat er in jouw geval nodig is.
             </p>
           </div>
           <div className="mt-14 grid gap-4 lg:grid-cols-[1.05fr_.95fr]">
@@ -490,10 +488,6 @@ export default function FigmaHomeApp({
                   </li>
                 ))}
               </ul>
-              <p className="mt-5 text-[13px] leading-6 text-[var(--t-muted)]">
-                De opnames worden onder hetzelfde licht en vanaf dezelfde
-                afstand gemaakt. Zo kun je ze later goed met elkaar vergelijken.
-              </p>
             </div>
             <div className="relative min-h-[410px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-300)]">
               <Image
@@ -535,11 +529,10 @@ export default function FigmaHomeApp({
               <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-500)]">
                 <Pulse size={18} />
               </span>
-              <h3 className="diba-card-title-lg mt-28">Je beslist zelf</h3>
+              <h3 className="diba-card-title-lg mt-28">Ervaren behandelaars</h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Voordat we behandelen weet je wat we voorstellen en wat het
-                kost. Wil je erover nadenken, dan krijg je het advies mee naar
-                huis.
+                We werken sinds 2017 en hebben ruim 55.000 behandelingen gedaan.
+                Die ervaring hoor je terug in het advies dat je krijgt.
               </p>
               <Link
                 href="#vragen"
@@ -564,10 +557,9 @@ export default function FigmaHomeApp({
               <p className="diba-label absolute left-7 top-7 z-10 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
                 Diba Clinics
               </p>
-              <p className="diba-card-title absolute bottom-7 left-7 z-10 text-[var(--on-dark)]">
-                Je vindt ons in
-                <br />
-                Rotterdam.
+              <p className="diba-display-s absolute bottom-8 left-7 z-10 max-w-[12ch] text-[var(--on-dark)]">
+                Je vindt ons in{" "}
+                <span className="diba-accent-on-dark">Rotterdam</span>
               </p>
               <Link
                 href="/contact"
@@ -582,12 +574,11 @@ export default function FigmaHomeApp({
                 <Sparkle size={18} />
               </span>
               <h3 className="diba-card-title-lg mt-28">
-                Je weet vooraf wat het kost
+                Een resultaat met een verwachting
               </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Alle tarieven staan op deze site: per behandeling, per zone of
-                per kwartier. In de intake hoor je wat jouw behandeling gaat
-                kosten voordat je iets afspreekt.
+                Je hoort vooraf wat er haalbaar is, hoeveel afspraken dat vraagt
+                en wat het kost. Alle tarieven staan op deze site.
               </p>
               <Link
                 href="/prijzen"
