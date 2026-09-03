@@ -99,7 +99,7 @@ export default function WerkwijzeStepsFlow({
                   {stap.title}
                 </span>
 
-                <span className="mt-3 block text-[14px] leading-6 text-[var(--t-body)]">
+                <span className="mb-6 mt-3 block text-[14px] leading-6 text-[var(--t-body)]">
                   {stap.body}
                 </span>
 

@@ -43,7 +43,7 @@ export const BOUW: Record<Bouw["id"], Bouw> = {
     watErGebeurt:
       "De schotjes lopen schuin en kruisen elkaar, waardoor het vet in kleinere kamers ligt en er geen enkel punt is dat de huid sterk naar beneden trekt. [MEDISCHE-CHECK-ROJDA]",
     gevolg:
-      "Dezelfde hoeveelheid vet geeft dan nauwelijks reliëf. Dat is de reden dat mannen hier zelden mee zitten, en het bewijs dat het niet om het vet gaat.",
+      "Dezelfde hoeveelheid vet geeft dan nauwelijks reliëf. Daarom komt het bij mannen veel minder voor, en dat laat zien dat het niet om het vet gaat.",
   },
 };
 
@@ -90,7 +90,7 @@ export const CELLULITIS_WEL_NIET = {
     "Drainerende kuren of thee kopen op het verhaal van afvalstoffen.",
     "Fors afvallen met dit als doel. Het reliëf wordt vlakker en het patroon blijft, en soms wordt het juist duidelijker.",
     "Jezelf vergelijken met foto's uit advertenties. Die zijn gemaakt met licht dat elk reliëf wegneemt.",
-    "Denken dat het aan jou ligt. Dat is de enige regel op deze pagina die niet over je huid gaat.",
+    "Denken dat het aan jou ligt. Cellulitis hangt samen met de bouw van je onderhuid en niet met je inzet.",
   ],
 } as const;
 
@@ -103,7 +103,7 @@ export const CELLULITIS_WIJ_DOEN_NIET = [
   {
     titel: "Geen apparaat dat het wegneemt",
     tekst:
-      "Er bestaan apparaten die tijdelijk zwelling verplaatsen en de huid strakker laten lijken. Dat is niet hetzelfde als minder kuiltjes, en wij verkopen dat verschil niet weg.",
+      "Er bestaan apparaten die tijdelijk zwelling verplaatsen en de huid strakker laten lijken. Dat werkt anders dan minder kuiltjes, en wij verkopen dat verschil niet weg.",
   },
   {
     titel: "Geen voor-en-na met ander licht",
@@ -121,7 +121,7 @@ export const CELLULITIS_FAQ = [
   {
     vraag: "Ik ben slank en heb het toch. Hoe kan dat?",
     antwoord:
-      "Omdat het niet over de hoeveelheid vet gaat maar over hoe het eronder is opgedeeld. Dat is precies waarom slank zijn geen bescherming biedt.",
+      "Omdat het gaat over hoe het vet eronder is opgedeeld en niet over de hoeveelheid. Daarom betekent slank zijn geen bescherming biedt.",
   },
   {
     vraag: "Helpt drooggeborsteld of masseren?",
@@ -136,6 +136,6 @@ export const CELLULITIS_FAQ = [
   {
     vraag: "Kan ik hiervoor bij jullie terecht?",
     antwoord:
-      "Nee, en dat is de reden dat deze pagina bestaat. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetzelfde antwoord als hierboven.",
+      "Nee. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetzelfde antwoord als hierboven.",
   },
 ] as const;

@@ -120,7 +120,7 @@ export function leesTriggers(gekozen: readonly string[]): Lezing {
     return {
       kop: "Tik aan wat jou rood maakt",
       tekst:
-        "Kies alles wat je herkent. Het gaat ons niet om het aantal, maar om de verhouding: hoeveel van jouw triggers kun je zelf beïnvloeden?",
+        "Kies alles wat je herkent. Het gaat om de verhouding: hoeveel van jouw triggers kun je zelf beïnvloeden?",
       waarDeKnopZit:
         "Weet je het niet precies? Houd het twee weken bij. Dat levert meer op dan welke test dan ook.",
     };
@@ -164,7 +164,7 @@ export function leesTriggers(gekozen: readonly string[]): Lezing {
   }
 
   return {
-    kop: "Een gemengd patroon, en dat is het meest voorkomende",
+    kop: "Een gemengd patroon, het meest voorkomend",
     tekst: `Je hebt ${beinvloedbaar} trigger${beinvloedbaar === 1 ? "" : "s"} met een knop en ${rest} zonder. Dan werkt één ding alleen niet: gewoontes halen de pieken eraf, behandelen verlaagt de basis.`,
     waarDeKnopZit:
       "Twee sporen naast elkaar. Eerst de beïnvloedbare triggers eruit halen, daarna meten hoeveel roodheid er overblijft. Dat overblijvende deel is wat we behandelen.",
@@ -226,7 +226,7 @@ export const ROSACEA_SOORTEN: readonly RosaceaSoort[] = [
     aanpak:
       "We verwijzen door en stemmen af. Behandelen wij dit als acne, dan wordt het erger, dus dat doen we niet.",
     verwarring:
-      "Geen mee-eters betekent bijna altijd: geen acne. Dat is het snelste onderscheid dat je zelf kunt maken.",
+      "Zonder mee-eters gaat het bijna nooit om acne. Dat is het snelste onderscheid dat je zelf kunt maken.",
   },
   {
     id: "verdikking",
@@ -238,7 +238,7 @@ export const ROSACEA_SOORTEN: readonly RosaceaSoort[] = [
     watHetBetekent:
       "Een gevorderd stadium waarbij bindweefsel is toegenomen. Dit hoort bij de dermatoloog. [MEDISCHE-CHECK-ROJDA]",
     aanpak:
-      "Hier verwijzen we door. Dat is niet omdat we het niet willen, maar omdat de juiste behandeling buiten onze praktijk ligt.",
+      "Hier verwijzen we door, omdat de juiste behandeling buiten onze praktijk ligt.",
     verwarring:
       "Dit heeft niets met alcohol te maken, hoe hardnekkig dat verhaal ook is. Dat vooroordeel zit veel mensen jaren in de weg. [MEDISCHE-CHECK-ROJDA]",
   },
@@ -283,7 +283,7 @@ export const ROSACEA_FAQ = [
   {
     vraag: "Gaat mijn rosacea weg?",
     antwoord:
-      "Nee. Rosacea is chronisch en dat is de eerlijke start van dit gesprek. Wat wél kan: minder opvlammingen, minder zichtbare adertjes en een rustiger basiskleur. Bij de meeste mensen is dat een groot verschil in hoe ze zich voelen. [MEDISCHE-CHECK-ROJDA]",
+      "Nee, rosacea is chronisch. Wat wél kan: minder opvlammingen, minder zichtbare adertjes en een rustiger basiskleur. Bij de meeste mensen is dat een groot verschil in hoe ze zich voelen. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Hoe weet ik of het rosacea is en niet acne?",

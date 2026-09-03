@@ -141,7 +141,7 @@ export const FASE_ADVIES: Record<
   "20": {
     kop: "Hier valt het meeste te winnen en het kost bijna niets",
     tekst:
-      "Op deze leeftijd is een behandeling zelden nodig. Wat je nu dagelijks doet aan bescherming bepaalt hoe je huid er over twintig jaar uitziet, en dat is geen verkooppraatje maar de reden dat je nog geen klant bij ons hoeft te zijn.",
+      "Op deze leeftijd is een behandeling meestal niet nodig. Dagelijkse bescherming bepaalt hoe je huid er over twintig jaar uitziet, en dat is geen verkooppraatje maar de reden dat je nog geen klant bij ons hoeft te zijn.",
   },
   "30": {
     kop: "Nu wordt meten zinvol",
@@ -154,7 +154,7 @@ export const FASE_ADVIES: Record<
       "Meerdere sporen lopen tegelijk. Alles tegelijk aanpakken werkt niet en is duur. We beginnen bij het onderdeel dat het snelst reageert en meten of het klopt.",
   },
   "55": {
-    kop: "Realistisch, en dat is niet hetzelfde als weinig",
+    kop: "Wat er realistisch mogelijk is",
     tekst:
       "Kleur en structuur zijn nog goed te verbeteren. Volume niet, want dat doen wij niet. Een strakke kaaklijn hoort bij volume, en dat is een andere behandeling dan de onze.",
   },
@@ -203,7 +203,7 @@ export const VEROUDERING_SOORTEN = [
     aanpak:
       "Dit reageert goed, maar alleen met bescherming erbij. Zonder dat komt het terug en dan heb je betaald voor niets.",
     verwarring:
-      "Een plekje dat verandert van vorm, kleur of grootte hoort niet bij ons maar bij de huisarts of dermatoloog. Altijd.",
+      "Een plekje dat verandert van vorm, kleur of grootte laat je eerst beoordelen door je huisarts of dermatoloog.",
   },
   {
     id: "verslapping",
@@ -234,7 +234,7 @@ export const VEROUDERING_WEL_NIET = {
     "Een behandelpakket kopen zonder nulmeting. Dan is achteraf niet vast te stellen of het iets deed.",
     "Meerdere agressieve behandelingen kort na elkaar. Een geïrriteerde huid maakt méér pigment aan, geen minder.",
     "Sturen op een leeftijd in plaats van op een huid. Twee mensen van vijftig hebben zelden hetzelfde nodig.",
-    "Denken dat een dure crème hetzelfde doet als bescherming. Dat is de duurste manier om niets te doen.",
+    "Denken dat een dure crème zonbescherming vervangt. Een crème met SPF doet dat werk, een dagcrème zonder niet.",
   ],
 } as const;
 
@@ -242,12 +242,12 @@ export const VEROUDERING_WIJ_DOEN_NIET = [
   {
     titel: "Geen jaren terug",
     tekst:
-      "Wij zeggen niet hoeveel jaar jonger je eruit gaat zien, want dat is niet te meten en dus niet te beloven. We laten je zien wat er in kleur en structuur veranderde, met de meting ernaast.",
+      "Hoeveel jaar jonger je eruitziet valt niet te meten, dus dat zeggen we ook niet. We laten je zien wat er in kleur en structuur veranderde, met de meting ernaast.",
   },
   {
     titel: "Geen volume",
     tekst:
-      "Wij behandelen huid. Injectables en volumeopbouw doen we niet, ook niet als je erom vraagt. Dat is geen bescheidenheid maar een grens: het hoort bij een arts.",
+      "Wij behandelen huid. Injectables en volumeopbouw doen we niet. Dat is een andere discipline maar een grens: het hoort bij een arts.",
   },
   {
     titel: "Geen preventieve pakketten op je twintigste",
@@ -270,7 +270,7 @@ export const VEROUDERING_FAQ = [
   {
     vraag: "Kan ik zonschade van vroeger nog terugdraaien?",
     antwoord:
-      "Deels. Kleur en structuur zijn goed te verbeteren, en dat is precies wat mensen in de spiegel als 'ouder' benoemen. Wat weg is aan volume komt niet terug, en dat zeggen we liever nu dan na vier sessies.",
+      "Deels. Kleur en structuur zijn goed te verbeteren, en dat is meestal wat mensen in de spiegel opvalt. Wat weg is aan volume komt niet terug, en dat zeggen we liever nu dan na vier sessies.",
   },
   {
     vraag: "Waarom beginnen jullie niet meteen met laser?",

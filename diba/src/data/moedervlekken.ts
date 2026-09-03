@@ -99,7 +99,7 @@ export const LELIJK_EENDJE = {
 export const UITKOMST_GEEN = {
   kop: "Ook nu geldt: dit is geen uitslag",
   tekst:
-    "Je gaf op geen enkel punt iets opvallends aan. Dat is geen geruststelling die wij mogen geven, want een zelfcheck kan niet zien wat een arts met een dermatoscoop wel ziet. Blijf kijken, en ga langs zodra er iets verandert.",
+    "Je gaf op geen enkel punt iets opvallends aan. Dat is nog geen geruststelling, want een zelfcheck kan niet zien wat een arts met een dermatoscoop wel ziet. Blijf kijken, en ga langs zodra er iets verandert.",
   advies:
     "Twijfel je alsnog, of blijft het knagen? Ga dan gewoon. Dat kost een consult en het scheelt maanden piekeren.",
 } as const;
@@ -119,11 +119,11 @@ export const MOEDERVLEK_WEL_NIET = {
     "Eén keer per maand zelf kijken, het liefst op hetzelfde moment. Het gaat om verandering, en die zie je alleen als je een beeld in je hoofd hebt.",
     "Foto's maken van plekjes die je in de gaten houdt, van dichtbij en met iets ernaast voor de schaal.",
     "Ook kijken waar je niet vanzelf kijkt: je rug, je hoofdhuid, tussen je tenen en onder je nagels.",
-    "Bij twijfel naar de huisarts. Dat is geen overdreven reactie maar waar die voor is.",
+    "Bij twijfel naar de huisarts. Daar is die spreekuur voor.",
     "Zonbescherming serieus nemen, want dit is het onderwerp waarbij het niet om je uiterlijk gaat.",
   ],
   niet: [
-    "Iets laten weghalen dat verandert, waar dan ook. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap die je niet kunt inhalen.",
+    "Iets laten weghalen dat verandert, waar dan ook. Wat weg is kan niet meer onderzocht worden. Dat is de enige stap die je niet kunt inhalen.",
     "Zelf wegbranden of wegvriezen met iets uit de winkel. Hetzelfde bezwaar, met meer schade.",
     "Wachten tot het pijn doet. De meeste verdachte plekjes doen nergens pijn.",
     "Afgaan op een foto-app of een oordeel van internet. Een scherm ziet geen diepte en geen verandering.",

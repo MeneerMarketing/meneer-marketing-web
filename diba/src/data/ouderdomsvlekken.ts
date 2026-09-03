@@ -88,7 +88,7 @@ export const PIGMENT_BEELDEN: readonly PigmentBeeld[] = [
     zelfcheck:
       "Is de plek de afgelopen maanden anders geworden: groter, donkerder, ongelijk van kleur, of met een rafelige rand?",
     watHetIs:
-      "Dat weten wij niet, en dat is precies het punt. Alles wat verandert hoort beoordeeld te worden voordat er iets mee gebeurt. [MEDISCHE-CHECK-ROJDA]",
+      "Dat kunnen wij niet beoordelen. Alles wat verandert hoort bekeken te worden voordat er iets mee gebeurt. [MEDISCHE-CHECK-ROJDA]",
     watWijDoen:
       "Wij behandelen dit niet en we laseren het zeker niet weg. Je gaat eerst naar de huisarts, ook als het waarschijnlijk niets is.",
     binnenBereik: false,
@@ -121,7 +121,7 @@ export const OUDERDOMSVLEKKEN_WIJ_DOEN_NIET = [
   {
     titel: "Geen pigmentbehandeling zonder afspraken over zon",
     tekst:
-      "Ga je binnen een paar weken naar de zon of op wintersport, dan starten we niet. Dat is geen formaliteit: pigment komt na blootstelling terug en dan heb je voor niets betaald. [MEDISCHE-CHECK-ROJDA]",
+      "Ga je binnen een paar weken naar de zon of op wintersport, dan wachten we daarmee. Pigment komt na blootstelling terug en dan heb je voor niets betaald. [MEDISCHE-CHECK-ROJDA]",
   },
 ];
 
@@ -129,12 +129,12 @@ export const OUDERDOMSVLEKKEN_FAQ = [
   {
     vraag: "Zijn ouderdomsvlekken gevaarlijk?",
     antwoord:
-      "Een gewone zonnevlek is onschuldig. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is de eerste vraag hier niet hoe je ervan afkomt maar of het is wat je denkt. [MEDISCHE-CHECK-ROJDA]",
+      "Een gewone zonnevlek is onschuldig. Andere plekjes lijken er in het begin op, en die zijn niet onschuldig altijd. Daarom is de eerste vraag hier niet hoe je ervan afkomt maar of het is wat je denkt. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Komen ze terug na de behandeling?",
     antwoord:
-      "De behandelde vlek komt niet terug, maar er kunnen nieuwe bij komen zolang je huid zon blijft vangen. Dat is de reden dat zonbescherming hier geen advies achteraf is maar onderdeel van de behandeling. [MEDISCHE-CHECK-ROJDA]",
+      "De behandelde vlek komt niet terug, maar er kunnen nieuwe bij komen zolang je huid zon blijft vangen. Daarom is het advies dat zonbescherming hier geen advies achteraf is maar onderdeel van de behandeling. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Waarom zie ik na de meting meer vlekken dan in de spiegel?",

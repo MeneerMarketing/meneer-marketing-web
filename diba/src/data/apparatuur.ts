@@ -198,7 +198,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     werkingKop: { kop: "Hoe dit apparaat", accent: "je huid in beeld brengt" },
     techniek: [
       "De EVE-M meet en behandelt niet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.",
-      "Dat is de hele reden dat het ding er staat. Een telefoonfoto onder ander licht en vanaf een andere afstand is niet met een vorige te vergelijken, en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.",
+      "Een telefoonfoto onder ander licht en vanaf een andere afstand kun je niet met een vorige vergelijken. Na acht weken weet je dan nog steeds niet of er iets veranderd is.",
       "Naast gewoon licht wordt er ook onder UV opgenomen. Pigment dat dieper in de huid zit is in gewoon licht nauwelijks te zien en onder UV wel, en juist die diepte bepaalt wat er mogelijk is. [MEDISCHE-CHECK-ROJDA]",
     ],
     foto: {
@@ -227,7 +227,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     fasen: [
       {
         kop: "Licht erop",
-        zin: "Vast licht vanaf een vaste afstand, elke keer hetzelfde. Dat is wat vergelijken mogelijk maakt.",
+        zin: "Vast licht en een vaste afstand, elke keer hetzelfde, zodat opnames vergelijkbaar blijven.",
       },
       {
         kop: "Doorkijken",
@@ -250,7 +250,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Wat is SMOOTH-modus?",
         antwoord:
-          "Een manier om de Er:YAG aan te sturen waarbij de energie in een reeks trage pulsen komt in plaats van één harde. Het weefsel warmt dan op zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verwarmen en verdampen. [MEDISCHE-CHECK-ROJDA]",
+          "Een manier om de Er:YAG aan te sturen waarbij de energie in een reeks trage pulsen komt in plaats van één harde. Het weefsel warmt daardoor op zonder dat de opperhuid wordt weggenomen: het wordt verwarmd en niet verdampt. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Is dit hetzelfde apparaat als bij NightLase?",
@@ -260,7 +260,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Voel ik er iets van?",
         antwoord:
-          "Warmte, oplopend, die net voor het ongemakkelijke stopt. De behandelaar vraagt er tijdens de sessie naar, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.",
+          "Je voelt warmte die langzaam oploopt. De behandelaar vraagt er tijdens de sessie naar en stelt het apparaat bij op jouw antwoord.",
       },
     ],
     techniek: [
@@ -281,7 +281,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       "Verslapping en volumeverlies aanpakken zonder injectables",
       "Gericht werken rond de ogen, de lippen of de kaaklijn",
       "Laserpeel en fractionele behandeling van de huid",
-      "Snurken aanpakken met NightLase, en dat is het enige waarvoor dit apparaat niet op de huid werkt",
+      "Snurken behandelen met NightLase, de enige toepassing waarbij dit apparaat op het gehemelte werkt",
     ],
     nietVoor: [
       "Haargroei. Daar staat een ander apparaat voor",
@@ -346,7 +346,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Kan dit bij een donkere huid?",
         antwoord:
-          "De instelling bepaalt dat, niet het apparaat alleen. Bij meer pigment in de huid is de marge kleiner, en dat is precies waarom er vooraf gemeten wordt. Blijkt het niet verantwoord, dan doen we het niet. [MEDISCHE-CHECK-ROJDA]",
+          "Dat hangt af van de instelling. Bij meer pigment in de huid is de marge kleiner, dus beoordeelt de behandelaar het vooraf. Is het niet verantwoord, dan doen we het niet. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
     techniek: [
@@ -426,7 +426,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Wat bepaalt welke applicator ik krijg?",
         antwoord:
-          "Het doelwit. Voor pigment wordt een andere band gekozen dan voor haargroei, en dat is de hele reden dat er meerdere zijn. De behandelaar kiest hem na de meting.",
+          "Waar de behandeling op gericht is. Voor pigment kiest de behandelaar een andere band dan voor haargroei; daarom zijn er meerdere.",
       },
       {
         vraag: "Kan dit ook op mijn benen of rug?",
@@ -591,7 +591,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Blijft het resultaat?",
         antwoord:
-          "Nee, dit is onderhoud. Het werkt in de hoornlaag, en die vernieuwt zichzelf. Dat is geen tekortkoming zolang je het weet. [MEDISCHE-CHECK-ROJDA]",
+          "Nee, dit is een onderhoudsbehandeling. Hij werkt in de hoornlaag en die vernieuwt zichzelf, dus het effect is tijdelijk. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Waarom zijn er verschillende tips?",
@@ -606,7 +606,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     ],
     techniek: [
       "Het werkzame deel is het mondstuk, niet de kast. In de tip zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over de huid: losgemaakte cellen en poriëninhoud gaan mee naar buiten, door een zijkanaal naar een opvangbak, terwijl er via hetzelfde kanaal serum naar binnen gaat.",
-      "Dat is het hele idee achter de naam Vortex-Fusion: reinigen, losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang, met één hand, zonder van instrument te wisselen.",
+      "Dat heet Vortex-Fusion: reinigen, losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang, met één hand.",
       "De tips zijn wegwerpartikelen en er zijn verschillende soorten, met een grovere of fijnere spiraal. Welke er gebruikt wordt hangt af van je huid en het doel van de behandeling.",
     ],
     foto: {
@@ -687,7 +687,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     techniek: [
       "Een microneedling-pen zet een cartridge met naalden in een snelle op-en-neerbeweging. De SkinPen heeft er veertien, en de diepte is instelbaar van een kwart millimeter tot drie millimeter. Dat bereik loopt van net door de hoornlaag tot in het bindweefsel.",
       "De diepte is de enige instelling die er echt toe doet, want die bepaalt in welke laag het kanaaltje eindigt. Ondiep raakt de opperhuid en heelt binnen een dag; drie millimeter komt in de laag waar bindweefsel wordt aangemaakt en vraagt langer. [MEDISCHE-CHECK-ROJDA]",
-      "De cartridges zijn steriel en voor eenmalig gebruik. Dat is bij microneedling geen detail: de naalden gaan door de huidbarrière heen, en dat is precies waar die barrière voor bedoeld was.",
+      "De cartridges zijn steriel en voor eenmalig gebruik. Bij microneedling gaan de naalden door de huidbarrière heen, dus dat luistert nauw.",
     ],
     foto: {
       src: "/images/shoot/apparaat-skinpen.jpg",
@@ -925,7 +925,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       },
     ],
     techniek: [
-      "De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud, en dat is niet toevallig: kou en druk zijn hier de twee werkzame delen.",
+      "De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud. Kou en druk zijn hier de twee werkzame onderdelen.",
       "De koude gasstroom laat de vaatjes eerst samentrekken en daarna weer verwijden. De druk brengt het vernevelde serum tegen de opperhuid aan. De fabrikant noemt die twee cryoforese en baroforese.",
       "Er komt geen naald aan te pas en er wordt niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan. [MEDISCHE-CHECK-ROJDA]",
     ],
@@ -956,7 +956,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       },
       {
         kop: "En weer open",
-        zin: "Zodra de kou wegtrekt zetten ze weer uit. Dat is de prikkel.",
+        zin: "Zodra de kou wegtrekt zetten ze weer uit, en die wisseling is de prikkel.",
       },
       {
         kop: "Stoffen mee",
@@ -982,7 +982,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Wordt mijn haar dikker terug?",
         antwoord:
-          "Nee. Scheren verandert de haarschacht niet, alleen het uiteinde. Een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is; dat is het hele verhaal.",
+          "Nee. Scheren verandert de haarschacht niet, alleen het uiteinde. Een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is.",
       },
       {
         vraag: "Snijdt het mesje in mijn huid?",
@@ -1089,7 +1089,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     merk: "Skin Tech Pharma, Image Skincare, ADO, Mesoestetic",
     categorie: "overig",
     kort: "Geen apparaat maar vier merken, in drie niveaus van sterkte.",
-    wat: "De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van je huid van dat moment, niet van wat er het sterkst is. De inwerktijd is het middel: te lang is niet beter maar schadelijker. [MEDISCHE-CHECK-ROJDA]",
+    wat: "De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Oppervlakkige verkleuring lichter maken",
       "Ruwheid en een doffe textuur",
@@ -1112,7 +1112,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       },
       {
         kop: "Inwerktijd",
-        zin: "De tijd is het middel. Te lang is niet beter maar schadelijker.",
+        zin: "De inwerktijd wordt op je huid afgemeten. Langer laten zitten geeft geen beter resultaat.",
       },
       {
         kop: "Vervellen",

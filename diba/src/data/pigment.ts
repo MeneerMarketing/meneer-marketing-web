@@ -42,7 +42,7 @@
  * moet weten dat een gemiddelde iets anders is dan een dag.
  */
 export const ZONJAAR_KANTTEKENING =
-  "Dit zijn maandgemiddelden en geen dagwaarden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.";
+  "Dit zijn maandgemiddelden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.";
 
 export type Maand = {
   readonly naam: string;
@@ -65,7 +65,7 @@ export const ZONJAAR: readonly Maand[] = [
     watGebeurt:
       "Nauwelijks UV. Pigment dat in de zomer opkwam is nu op zijn lichtst.",
     startAdvies:
-      "Uitstekend moment. Je hebt vier maanden voordat de zon weer meedoet, en dat is precies wat een pigmenttraject nodig heeft.",
+      "Uitstekend moment. Je hebt vier maanden voordat de zon weer sterker wordt, en dat is genoeg tijd voor een pigmenttraject.",
     start: "goed",
   },
   {
@@ -152,7 +152,7 @@ export const ZONJAAR: readonly Maand[] = [
     watGebeurt:
       "Laag genoeg om te behandelen zonder dat de zon het werk ongedaan maakt.",
     startAdvies:
-      "Het beste startmoment. Je hebt vijf maanden met lage UV vóór je, en dat is precies genoeg.",
+      "Het beste startmoment. Je hebt vijf maanden met lage UV voor de boeg.",
     start: "goed",
   },
   {
@@ -214,7 +214,7 @@ export const PIGMENT_SOORTEN: readonly PigmentSoort[] = [
     oorzaak:
       "Hormonen plus UV plus warmte. Zwangerschap en de pil zijn bekende factoren, en zelfs warmte alleen kan het aanwakkeren. [MEDISCHE-CHECK-ROJDA]",
     realistisch:
-      "Bij melasma is beheersing realistischer dan verdwijning. Dat is geen tweede keus, dat is de eerlijke uitkomst. Iets anders beloven zou makkelijker verkopen en niet uitkomen.",
+      "Bij melasma is het doel beheersen en niet laten verdwijnen. Iets anders beloven zou makkelijker verkopen en niet uitkomen.",
     aanpak:
       "Rustig, met veel bescherming, en met de verwachting dat het in de zomer terugkomt. We meten per seizoen in plaats van per sessie.",
   },
@@ -283,7 +283,7 @@ export const PIGMENT_FAQ = [
   {
     vraag: "Helpt zonnebrand echt zo veel?",
     antwoord:
-      "Bij pigment is het het belangrijkste dat je doet, meer dan welke behandeling ook. Dat is geen verkooppraatje, want we verdienen er niets aan. [MEDISCHE-CHECK-ROJDA]",
+      "Bij pigment levert dagelijkse bescherming meer op dan welke behandeling ook, en we verdienen er niets aan. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Ik heb een donkere huid. Kan ik behandeld worden?",
@@ -293,7 +293,7 @@ export const PIGMENT_FAQ = [
   {
     vraag: "Mijn vlek ziet er anders uit dan de rest. Moet ik me zorgen maken?",
     antwoord:
-      "Een vlek die verandert van vorm of kleur, of die bloedt, hoort bij de huisarts en niet bij ons. Dat is geen paniekverhaal maar de juiste route. We kijken er wel naar en verwijzen door als dat nodig is. [MEDISCHE-CHECK-ROJDA]",
+      "Een vlek die verandert van vorm of kleur, of die bloedt, laat je beoordelen door je huisarts. Dat is geen paniekverhaal maar de juiste route. We kijken er wel naar en verwijzen door als dat nodig is. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Kan ik iets doen aan de vlekken op mijn handen?",

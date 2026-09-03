@@ -296,7 +296,7 @@ export default function ProfielBouwer() {
           nummer={1}
           kop="Je scan"
           accent="als startpunt."
-          uitleg="Vier vragen over wat je ziet en voelt, en je krijgt je profielschets terug als spinnenweb. De open buitenrand blijft staan: dat is wat EVE-M er in de kliniek pas echt bij meet."
+          uitleg="Vier vragen over wat je ziet en voelt. Je krijgt je profielschets terug als spinnenweb, waarvan de open buitenrand blijft staan: dat is wat EVE-M er in de kliniek pas echt bij meet."
           klaar={profiel.scan !== null}
         >
           {profiel.scan ? (
@@ -380,7 +380,7 @@ export default function ProfielBouwer() {
         </Vraag>
 
         {/* ── 3. Leeftijd ──
-            Twee vakjes, en dat is geen luiheid: er zijn twee acnetrajecten en het enige
+            Twee vakjes: er zijn twee acnetrajecten, en het enige
             verschil is de leeftijd. Zonder deze vraag kreeg een veertigjarige het
             jongerentraject aangeraden en een zestienjarige het volwassentraject, allebei
             zonder dat er iets zichtbaar misging. Meer banden vragen zou betekenen dat we
@@ -493,7 +493,7 @@ export default function ProfielBouwer() {
           nummer={7}
           kop="Hoe snel"
           accent="reageert hij?"
-          uitleg="Bij een huid die snel geïrriteerd raakt wordt met een lagere sterkte begonnen. Dat is geen beperking maar een startpunt."
+          uitleg="Bij een huid die snel geïrriteerd raakt begint de behandelaar met een lagere sterkte. Dat is een startpunt."
           klaar={profiel.gevoeligheid !== null}
         >
           <Keuzes
@@ -560,7 +560,7 @@ export default function ProfielBouwer() {
             1. Je huid, teruggelezen in gewone zinnen. Eerst herkenning.
             2. Wat er bij je past, mét de reden. De reden stond er eerder niet in,
                terwijl die al berekend werd.
-            3. Wat deze acht antwoorden níet kunnen beslissen. Dat is het enige
+            3. Wat deze acht antwoorden niet kunnen beslissen. Dat is het enige
                eerlijke argument voor een afspraak, en het is een sterker argument
                dan welke korting ook.
             4. Wat er dan gebeurt, wat het kost en hoe lang het duurt. De

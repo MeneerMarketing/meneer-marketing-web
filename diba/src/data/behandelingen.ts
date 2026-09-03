@@ -398,7 +398,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Hoe lang zie ik er iets van?",
         antwoord:
-          "Dagen, geen weken. Dit is een opfrisser en geen kuur, en dat is precies waarom hij vaak vlak voor iets gepland wordt. [MEDISCHE-CHECK-ROJDA]",
+          "Het effect houdt dagen aan, geen weken. Veel mensen plannen deze behandeling daarom vlak voor een gelegenheid. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Kan dit bij een gevoelige huid?",
@@ -471,14 +471,14 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Kan direct voor een afspraak of gelegenheid, want er is niets aan je te zien",
     ],
     niet: [
-      "Verandert niets aan je huid op de lange duur. Het effect is tijdelijk en dat is de hele afspraak [MEDISCHE-CHECK-ROJDA]",
+      "Werkt tijdelijk en verandert je huid niet blijvend [MEDISCHE-CHECK-ROJDA]",
       "Maakt geen collageen aan zoals naalden of laser dat doen",
       "Doet niets aan pigment, littekens of rimpels die er al zijn",
     ],
     stappen: [
       {
         kop: "Vijf minuten",
-        zin: "Korter dan de tijd die je kwijt bent aan parkeren. Dat is geen verkooppraatje maar de hele behandelduur.",
+        zin: "De behandeling duurt een paar minuten, van begin tot eind.",
       },
       {
         kop: "Koude straal",
@@ -512,7 +512,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     slug: "peelings",
     inDeStoel: [
       "De vloeistof gaat met een kwastje in lagen op je huid. Binnen een halve minuut begint het te prikken of te tintelen, en dat loopt op naarmate er lagen bij komen. De behandelaar kijkt naar je huid én naar de klok; dat samen bepaalt wanneer het eraf gaat.",
-      "Prikken hoort erbij, branden niet. Zeg het dus als het die kant op gaat, want dat is precies het moment waarop er iets moet gebeuren.",
+      "Prikken hoort erbij, branden niet. Zeg het dus meteen als het gaat branden, dan past de behandelaar de instelling aan.",
       "Wat erna komt hangt af van de sterkte. Bij een lichte peeling is je huid een dag wat rood en droog. Bij een sterkere ga je vervellen, en dan is de belangrijkste afspraak dat je er niet aan plukt. [MEDISCHE-CHECK-ROJDA]",
     ],
     foto: {
@@ -555,11 +555,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       },
       {
         kop: "Aanbrengen en tijd bewaken",
-        zin: "De inwerktijd is het middel. Te lang is niet beter maar schadelijker.",
+        zin: "De inwerktijd wordt afgemeten op je huid. Langer laten zitten geeft geen beter resultaat.",
       },
       {
         kop: "Neutraliseren en beschermen",
-        zin: "Daarna zon vermijden. Dat is geen advies maar een voorwaarde. [MEDISCHE-CHECK-ROJDA]",
+        zin: "Vermijd de zon in de weken erna, en gebruik dagelijks SPF 50. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
     bijProblemen: [
@@ -751,11 +751,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     stappen: [
       {
         kop: "Kiezen welke booster",
-        zin: "Voor fijne lijnen of voor pigment. Dat is niet dezelfde vloeistof en niet hetzelfde doel.",
+        zin: "Voor fijne lijnen of voor pigment. Elk doel vraagt een ander mengsel.",
       },
       {
         kop: "De injector",
-        zin: "De naald zit los van de spuit gemonteerd en beweegt dus niet met de hand mee. Dat is het hele voordeel van dit apparaat.",
+        zin: "De naald zit los van de spuit gemonteerd en beweegt niet met de hand mee. Daardoor is elke prik even diep.",
       },
       {
         kop: "Kort rood",
@@ -782,7 +782,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     slug: "fotona",
     inDeStoel: [
       "Je krijgt een beschermbril op en die blijft de hele behandeling op. Wat je voelt hangt af van de modus: bij de verwarmende stand is het een oplopende warmte die net voor het ongemakkelijke stopt, bij de andere korte tikjes.",
-      "De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.",
+      "De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt. Met jouw antwoord stelt zij het apparaat bij.",
       "Erna ben je meestal rood en warm, alsof je te lang in de zon hebt gezeten. Dat trekt in een paar uur tot een dag weg. [MEDISCHE-CHECK-ROJDA]",
     ],
     foto: {
@@ -865,7 +865,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   {
     slug: "nightlase",
     inDeStoel: [
-      "Deze behandeling gaat niet over je huid maar over je gehemelte. Je mond blijft open met een spreider, en de laser werkt achterin, in drie of vier doorgangen.",
+      "Deze behandeling werkt op je gehemelte en niet op je huid. Je mond blijft open met een spreider en de laser gaat er in drie of vier doorgangen overheen.",
       "Het is warm en het is even wennen, maar het doet geen pijn en er wordt niets gesneden. Verdoving is niet nodig en narcose al helemaal niet.",
       "Erna kun je gewoon eten en drinken. Sommige mensen hebben een dag een wat droge keel. [MEDISCHE-CHECK-ROJDA]",
     ],
@@ -911,7 +911,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Doet het pijn?",
         antwoord:
-          "Je voelt warmte achter in je mond en dat is het. Er is geen verdoving nodig en er wordt niets gesneden. [MEDISCHE-CHECK-ROJDA]",
+          "Je voelt warmte achter in je mond. Er komt geen verdoving aan te pas en er wordt niets gesneden. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Werkt het ook bij slaapapneu?",
@@ -1036,7 +1036,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     inDeStoel: [
       "De eerste afspraak duurt kort. Er gaat een masker op je gezicht dat je zelf mee naar huis neemt en er thuis afhaalt, na het aantal uren dat je meekrijgt. Dat aantal is geen richtlijn maar een afspraak.",
       "De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat schema volgen bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.",
-      "Vervellen hoort erbij en dat is de fase waarin mensen afhaken. Daarom bespreken we vooraf wanneer je hiermee begint: niet vlak voor een vakantie en niet in een drukke periode. [MEDISCHE-CHECK-ROJDA]",
+      "Na een paar dagen ga je vervellen. We spreken daarom vooraf af wanneer je begint, zodat het niet samenvalt met een vakantie of een drukke week. [MEDISCHE-CHECK-ROJDA]",
     ],
     naam: "Cosmelan en dermamelan",
     apparaat: "Mesoestetic",
@@ -1248,7 +1248,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     inDeStoel: [
       "Het traject begint met een meting en een gesprek, niet met een behandeling. Wat daaruit komt bepaalt de volgorde, en die volgorde is de kern: ontsteking eerst, littekens later, nooit tegelijk.",
       "Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en deels controle, en bij elke controle wordt er opnieuw gemeten onder dezelfde belichting.",
-      "Tussen de afspraken door doe jij het meeste werk, met de producten en het schema dat je meekrijgt. Dat is geen bijzaak: het bepaalt of de sessies opleveren wat ze kunnen. [MEDISCHE-CHECK-ROJDA]",
+      "Tussen de afspraken door verzorg je je huid zelf, met de producten en het schema die je meekrijgt. Dat bepaalt voor een groot deel het resultaat. [MEDISCHE-CHECK-ROJDA]",
     ],
     foto: {
       src: "/images/shoot/beh-acne-traject.jpg",
@@ -1279,7 +1279,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     stappen: [
       {
         kop: "Meting vooraf",
-        zin: "Waar het zit, welk type en hoe je huid er nu aan toe is. Dat is het vertrekpunt.",
+        zin: "We kijken waar het zit, om welk type het gaat en hoe je huid er nu voor staat.",
       },
       {
         kop: "Behandelen en bijsturen",
@@ -1342,7 +1342,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       },
       {
         kop: "Wat erna",
-        zin: "Je gaat naar huis met iets wat je zelf kunt volhouden. Dat is het echte doel.",
+        zin: "Je gaat naar huis met een verzorgingsschema dat je zelf kunt volhouden.",
       },
     ],
     faq: [
@@ -1540,7 +1540,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Wat als er niets uitkomt?",
         antwoord:
-          "Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haalt hem wel van je lijstje met vermoedens af. [MEDISCHE-CHECK-ROJDA]",
+          "Ook dat is een bruikbare uitkomst: je weet dan dat je verder moet zoeken dan je voeding. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
     bijProblemen: [

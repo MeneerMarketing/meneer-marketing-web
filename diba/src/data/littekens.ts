@@ -157,7 +157,7 @@ export const LITTEKEN_SOORTEN = [
     aanpak:
       "Bij keloïd verwijzen we door. Bij hypertrofisch kijken we mee, vaak in overleg met je arts.",
     verwarring:
-      "Keloïd komt vaker voor bij een donkere huid, en dat is geen kwestie van slechte verzorging maar van aanleg.",
+      "Keloïd komt vaker voor bij een donkere huid. Dat hangt samen met aanleg en niet met verzorging.",
   },
   {
     id: "striae-rood",
@@ -184,7 +184,7 @@ export const LITTEKEN_SOORTEN = [
     aanpak:
       "Hier is ons antwoord vaak dat de winst beperkt is. We laten dat zien met de meting in plaats van dat je het moet geloven.",
     verwarring:
-      "Crèmes die witte striae beloven weg te halen, doen dat niet. Dat is geen mening maar wat de meting laat zien.",
+      "Crèmes die beloven witte striae weg te halen, doen dat niet. Dat zie je ook terug in de metingen.",
   },
 ] as const;
 
@@ -197,7 +197,7 @@ export const LITTEKEN_WEL_NIET = {
     "Bij striae in de zwangerschap: wachten tot na de borstvoeding en dan meten",
   ],
   niet: [
-    "Wachten tot het wit is. Dat is de meest gemaakte fout, en hij is niet terug te draaien",
+    "Wachten tot het wit is. Dat is de meest gemaakte fout, en dan is er weinig meer aan te doen",
     "Littekens behandelen terwijl de acne nog actief is. Dan maak je er nieuwe bij",
     "Crèmes die beloven dat witte striae verdwijnen. Dat gebeurt niet, ongeacht de prijs",
     "Zonnebank om het verschil weg te camoufleren. Litteken weefsel wordt niet bruin, dus het verschil wordt juist groter",
@@ -237,7 +237,7 @@ export const LITTEKEN_FAQ = [
   {
     vraag: "Waarom moet mijn acne eerst rustig zijn?",
     antwoord:
-      "Omdat behandelen in een ontstoken huid nieuwe littekens kan geven. Je zou dan betalen om er meer bij te krijgen. Dat is de reden dat we soms nee zeggen tegen iemand die er speciaal voor komt.",
+      "Omdat behandelen in een ontstoken huid nieuwe littekens kan geven. Je betaalt dan voor een behandeling die het beeld slechter maakt. Dat is de reden dat we soms nee zeggen tegen iemand die er speciaal voor komt.",
   },
   {
     vraag: "Werken die littekencrèmes uit de drogist?",

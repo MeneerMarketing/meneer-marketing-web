@@ -120,7 +120,7 @@ export const INSURERS: readonly Insurer[] = [
       {
         vraag: "Gaat dit van mijn eigen risico af?",
         antwoord:
-          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.",
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
       },
     ],
     eisAanBehandelaar:
@@ -155,7 +155,7 @@ export const INSURERS: readonly Insurer[] = [
       {
         vraag: "Gaat dit van mijn eigen risico af?",
         antwoord:
-          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.",
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
       },
     ],
     eisAanBehandelaar:
@@ -190,7 +190,7 @@ export const INSURERS: readonly Insurer[] = [
       {
         vraag: "Gaat dit van mijn eigen risico af?",
         antwoord:
-          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.",
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
       },
     ],
     eisAanBehandelaar:
@@ -221,12 +221,12 @@ export const INSURERS: readonly Insurer[] = [
       {
         vraag: "Deel ik dit budget met iets anders?",
         antwoord:
-          "Ja. Zilveren Kruis hanteert één maximum voor acnebehandeling en epilatie samen. Doe je allebei, dan is de vraag niet wat het maximum is maar wat je er dit jaar al van gebruikt hebt.",
+          "Ja. Zilveren Kruis hanteert één maximum voor acnebehandeling en epilatie samen. Doe je allebei, kijk dan hoeveel je dit jaar al van dat maximum hebt gebruikt.",
       },
       {
         vraag: "Gaat dit van mijn eigen risico af?",
         antwoord:
-          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.",
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
       },
     ],
     eisAanBehandelaar:
@@ -242,7 +242,7 @@ export const INSURERS: readonly Insurer[] = [
     waarTeVinden:
       "Zilveren Kruis heeft een aparte pagina per onderwerp en per jaartal. Let op dat je naar het huidige jaar kijkt; oude jaargangen blijven online staan.",
     eigenaardigheid:
-      "Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus niet alleen naar het bedrag maar ook of wij aan die eis voldoen.",
+      "Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus ook even of wij aan die eis voldoen.",
   },
   {
     slug: "onvz",
@@ -262,7 +262,7 @@ export const INSURERS: readonly Insurer[] = [
       {
         vraag: "Gaat dit van mijn eigen risico af?",
         antwoord:
-          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.",
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
       },
     ],
     eisAanBehandelaar:
@@ -288,7 +288,7 @@ export const INSURERS: readonly Insurer[] = [
       {
         vraag: "Heb ik een verwijzing nodig?",
         antwoord:
-          "Dat staat niet in de vergoedingenvinder maar in de polisvoorwaarden, net als de eis over de beroepsvereniging. Vraag er bij het bellen expliciet naar; de vinder geeft je het bedrag en niet de voorwaarde.",
+          "Dat staat in de polisvoorwaarden en niet in de vergoedingenvinder, net als de eis over de beroepsvereniging. Vraag er bij het bellen expliciet naar; de vinder geeft je het bedrag en niet de voorwaarde.",
       },
       {
         vraag: "Deel ik dit budget met iets anders?",
@@ -298,7 +298,7 @@ export const INSURERS: readonly Insurer[] = [
       {
         vraag: "Gaat dit van mijn eigen risico af?",
         antwoord:
-          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.",
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
       },
     ],
     eisAanBehandelaar:
@@ -314,7 +314,7 @@ export const INSURERS: readonly Insurer[] = [
     waarTeVinden:
       "a.s.r. heeft een vergoedingenvinder waarin je op behandeling zoekt, plus de polisvoorwaarden als pdf.",
     eigenaardigheid:
-      "Bij a.s.r. zit de voorwaarde niet in de vergoedingenvinder maar in de polisvoorwaarden. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.",
+      "Bij a.s.r. staat de voorwaarde in de polisvoorwaarden en niet in de vergoedingenvinder. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.",
   },
 ];
 

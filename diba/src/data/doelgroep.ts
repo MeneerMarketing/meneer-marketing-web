@@ -42,15 +42,15 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
     korteOmschrijving:
       "Acne in de puberteit is een fase, geen fout. Wat er nu telt is voorkomen dat er littekens van overblijven.",
     kernzin:
-      "Er is één ding dat op jouw leeftijd echt anders is, en dat is niet je huid maar de tijd. Wat je nu voorkomt hoef je later niet te herstellen.",
+      "Op jouw leeftijd werkt de tijd in je voordeel: wat je nu voorkomt, hoef je later niet te herstellen.",
     anders: [
       {
         kop: "Er is meer te winnen met vroeg beginnen",
-        zin: "Actieve ontstekingen kunnen putjes achterlaten, en die zijn later moeilijker en duurder aan te pakken dan de acne zelf. Dat is de reden om er nu iets aan te doen, en niet dat je huid nu al mooi moet zijn.",
+        zin: "Actieve ontstekingen kunnen putjes achterlaten. Die zijn later moeilijker en duurder te behandelen dan de acne zelf, en daarom pak je het nu aan.",
       },
       {
         kop: "De aanjager is hormonaal",
-        zin: "In de puberteit maakt je huid meer talg aan. Dat is geen gevolg van slecht wassen of verkeerd eten, en een behandeling die daar niet op ingaat werkt maar half.",
+        zin: "In de puberteit maakt je huid meer talg aan. Dat komt door hormonen, en daar stemmen we de behandeling op af.",
       },
       {
         kop: "Onder de zestien beslist een ouder mee",
@@ -111,7 +111,7 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
       },
       {
         kop: "Dezelfde volgorde",
-        zin: "Ook hier begint het met meten. Dat is geen formaliteit die je kunt overslaan omdat je haast hebt.",
+        zin: "Ook hier begint het met een beoordeling van je huid, ook als je haast hebt.",
       },
     ],
     melden: [
@@ -128,11 +128,11 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
     korteOmschrijving:
       "Fitzpatrick I tot en met VI kan hier terecht. Je type bepaalt niet óf iets kan, maar met welke instelling.",
     kernzin:
-      "Meer melanine betekent niet minder mogelijkheden. Het betekent dat er meer op het spel staat als iemand de instelling verkeerd kiest, en dat is precies waarom er eerst gemeten wordt.",
+      "Meer melanine geeft evenveel mogelijkheden, maar de instelling luistert nauwer, en dat is precies waarom er eerst gemeten wordt.",
     anders: [
       {
         kop: "Een prikkel kan een vlek achterlaten",
-        zin: "Bij meer pigment in de huid kan elke ontsteking of te heftige behandeling een donkere plek achterlaten die langer blijft dan de oorzaak. Dat is de belangrijkste reden om voorzichtig te beginnen en op te bouwen.",
+        zin: "Bij meer pigment kan een ontsteking of een te heftige behandeling een donkere plek achterlaten die lang blijft zitten. Daarom werken we voorzichtig te beginnen en op te bouwen.",
       },
       {
         kop: "Bij laser doet de golflengte ertoe",
@@ -140,7 +140,7 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
       },
       {
         kop: "Littekens kunnen dikker worden",
-        zin: "De neiging tot keloïd komt vaker voor. Dat sluit behandelen niet uit, maar het is iets wat vooraf op tafel moet en niet achteraf.",
+        zin: "De neiging tot keloïd komt vaker voor. Behandelen kan meestal wel, en we bespreken het vooraf met je.",
       },
     ],
     nietAnders: [
@@ -171,7 +171,7 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
     korteOmschrijving:
       "Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere planning.",
     kernzin:
-      "Het enige wat hier echt anders is, is dat er een datum staat. Alles daarna is terugrekenen, en dat is precies wat de meeste mensen te laat doen.",
+      "Hier staat een datum vast, en daar reken je vanaf terug. Veel mensen beginnen daar te laat mee.",
     anders: [
       {
         kop: "Je rekent terug vanaf één dag",

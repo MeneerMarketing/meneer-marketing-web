@@ -287,7 +287,7 @@ export default function IntakePage() {
             label="Het uur, stap voor stap"
             kop="Wat er in dat"
             accent="uur gebeurt"
-            intro="De meeste twijfel voor een intake gaat niet over de meting maar over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes."
+            intro="De meeste twijfel voor een intake gaat over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes."
           />
           <Uurtijdlijn />
         </div>
@@ -345,7 +345,7 @@ export default function IntakePage() {
 
               <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
                 <p className="max-w-[54ch] text-[15px] leading-7 text-[var(--t-body)]">
-                  Weet je nog niet waarvoor je komt? Dat is geen bezwaar, en de
+                  Weet je nog niet waarvoor je komt? Dat hoeft ook niet, en de
                   zoeker helpt je een richting te vinden voordat je hier bent.
                 </p>
                 <Link
@@ -361,7 +361,7 @@ export default function IntakePage() {
       </section>
 
       {/* ── Wat je overhoudt als je stopt ──
-          De drempel bij een intake is niet het bedrag maar het vermoeden dat het de ingang
+          De drempel bij een intake is meestal het vermoeden dat het de ingang
           van een traject is. Schaarste en kortingen mogen hier niet en werken bij een
           medische keuze averechts; het risico wegnemen werkt wel. Dus staat hier wat de
           afspraak oplevert als je daarna nooit meer terugkomt. */}
@@ -374,7 +374,7 @@ export default function IntakePage() {
             label="Als je hierna niets doet"
             kop="Wat je dan nog steeds"
             accent="meeneemt."
-            intro="De meeste twijfel gaat niet over het bedrag maar over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt."
+            intro="De meeste twijfel gaat over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt."
             raster="gelijk"
           />
 

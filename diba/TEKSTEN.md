@@ -960,7 +960,7 @@ KOMT VOORAL VOOR BIJ MANNEN
 
 De schotjes lopen schuin en kruisen elkaar, waardoor het vet in kleinere kamers ligt en er geen enkel punt is dat de huid sterk naar beneden trekt.
 
-Dezelfde hoeveelheid vet geeft dan nauwelijks reliëf. Dat is de reden dat mannen hier zelden mee zitten, en het bewijs dat het niet om het vet gaat.
+Dezelfde hoeveelheid vet geeft dan nauwelijks reliëf. Daarom komt het bij mannen veel minder voor, en dat laat zien dat het niet om het vet gaat.
 
 Schuif hem van links naar rechts en kijk naar de bovenranden. Links worden de kuiltjes dieper, rechts blijft het vlak. Zet hem dan helemaal naar links: het reliëf wordt vlakker en het patroon staat er nog steeds, want de schotjes lopen nog waar ze liepen.
 
@@ -1006,7 +1006,7 @@ De laatste regel links is de enige op deze hele site die niet over je huid gaat,
 
 - Jezelf vergelijken met foto's uit advertenties. Die zijn gemaakt met licht dat elk reliëf wegneemt.
 
-- Denken dat het aan jou ligt. Dat is de enige regel op deze pagina die niet over je huid gaat.
+- Denken dat het aan jou ligt. Cellulitis hangt samen met de bouw van je onderhuid en niet met je inzet.
 
 **Veelgestelde vragen over cellulitis**
 
@@ -1016,7 +1016,7 @@ Door de richting van de bindweefselschotjes. Bij mannen kruisen ze elkaar, bij v
 
 Ik ben slank en heb het toch. Hoe kan dat? +
 
-Omdat het niet over de hoeveelheid vet gaat maar over hoe het eronder is opgedeeld. Dat is precies waarom slank zijn geen bescherming biedt.
+Omdat het gaat over hoe het vet eronder is opgedeeld en niet over de hoeveelheid. Daarom betekent slank zijn geen bescherming biedt.
 
 Helpt drooggeborsteld of masseren? +
 
@@ -1028,7 +1028,7 @@ Nee. Het is geen ziekte en er is medisch gezien niets aan de hand.
 
 Kan ik hiervoor bij jullie terecht? +
 
-Nee, en dat is de reden dat deze pagina bestaat. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetzelfde antwoord als hierboven.
+Nee. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetzelfde antwoord als hierboven.
 
 **Waarom we hier niets aan doen**
 
@@ -2384,7 +2384,7 @@ De eerste regel links is de goedkoopste behandeling op deze hele site, en de eni
 
 - Sturen op een leeftijd in plaats van op een huid. Twee mensen van vijftig hebben zelden hetzelfde nodig.
 
-- Denken dat een dure crème hetzelfde doet als bescherming. Dat is de duurste manier om niets te doen.
+- Denken dat een dure crème zonbescherming vervangt. Een crème met SPF doet dat werk, een dagcrème zonder niet.
 
 **Veroudering vraagt om een beginpunt.**
 
@@ -2414,7 +2414,7 @@ Er is geen leeftijd waarop het begint. Er is wel een moment waarop meten zinvol 
 
 Kan ik zonschade van vroeger nog terugdraaien? +
 
-Deels. Kleur en structuur zijn goed te verbeteren, en dat is precies wat mensen in de spiegel als 'ouder' benoemen. Wat weg is aan volume komt niet terug, en dat zeggen we liever nu dan na vier sessies.
+Deels. Kleur en structuur zijn goed te verbeteren, en dat is meestal wat mensen in de spiegel opvalt. Wat weg is aan volume komt niet terug, en dat zeggen we liever nu dan na vier sessies.
 
 Waarom beginnen jullie niet meteen met laser? +
 
@@ -2926,7 +2926,7 @@ Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets 
 
 **DIT RADEN WE AF**
 
-- Wachten tot het wit is. Dat is de meest gemaakte fout, en hij is niet terug te draaien
+- Wachten tot het wit is. Dat is de meest gemaakte fout, en dan is er weinig meer aan te doen
 
 - Littekens behandelen terwijl de acne nog actief is. Dan maak je er nieuwe bij
 
@@ -2972,7 +2972,7 @@ Komen kan altijd, meten ook. Behandelen doen we liever na de borstvoeding. Zijn 
 
 Waarom moet mijn acne eerst rustig zijn? +
 
-Omdat behandelen in een ontstoken huid nieuwe littekens kan geven. Je zou dan betalen om er meer bij te krijgen. Dat is de reden dat we soms nee zeggen tegen iemand die er speciaal voor komt.
+Omdat behandelen in een ontstoken huid nieuwe littekens kan geven. Je betaalt dan voor een behandeling die het beeld slechter maakt. Dat is de reden dat we soms nee zeggen tegen iemand die er speciaal voor komt.
 
 Werken die littekencrèmes uit de drogist? +
 
@@ -3196,13 +3196,13 @@ Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: iets
 
 - Ook kijken waar je niet vanzelf kijkt: je rug, je hoofdhuid, tussen je tenen en onder je nagels.
 
-- Bij twijfel naar de huisarts. Dat is geen overdreven reactie maar waar die voor is.
+- Bij twijfel naar de huisarts. Daar is die spreekuur voor.
 
 - Zonbescherming serieus nemen, want dit is het onderwerp waarbij het niet om je uiterlijk gaat.
 
 **DIT RADEN WE AF**
 
-- Iets laten weghalen dat verandert, waar dan ook. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap die je niet kunt inhalen.
+- Iets laten weghalen dat verandert, waar dan ook. Wat weg is kan niet meer onderzocht worden. Dat is de enige stap die je niet kunt inhalen.
 
 - Zelf wegbranden of wegvriezen met iets uit de winkel. Hetzelfde bezwaar, met meer schade.
 
@@ -3494,11 +3494,11 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Zijn ouderdomsvlekken gevaarlijk? +
 
-Een gewone zonnevlek is onschuldig. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is de eerste vraag hier niet hoe je ervan afkomt maar of het is wat je denkt.
+Een gewone zonnevlek is onschuldig. Andere plekjes lijken er in het begin op, en die zijn niet onschuldig altijd. Daarom is de eerste vraag hier niet hoe je ervan afkomt maar of het is wat je denkt.
 
 Komen ze terug na de behandeling? +
 
-De behandelde vlek komt niet terug, maar er kunnen nieuwe bij komen zolang je huid zon blijft vangen. Dat is de reden dat zonbescherming hier geen advies achteraf is maar onderdeel van de behandeling.
+De behandelde vlek komt niet terug, maar er kunnen nieuwe bij komen zolang je huid zon blijft vangen. Daarom is het advies dat zonbescherming hier geen advies achteraf is maar onderdeel van de behandeling.
 
 Waarom zie ik na de meting meer vlekken dan in de spiegel? +
 
@@ -3572,7 +3572,7 @@ Vanaf nu wordt het interessant. Meten in september geeft het eerlijkste vertrekp
 
 > knop: PLAN JE NULMETING
 
-Dit zijn maandgemiddelden en geen dagwaarden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.
+Dit zijn maandgemiddelden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.
 
 **Drie soorten pigment, drie andere uitkomsten.**
 
@@ -3672,7 +3672,7 @@ Omdat je dan vier maanden tegen de zon in werkt. Pigmentcellen die net zijn aang
 
 Helpt zonnebrand echt zo veel? +
 
-Bij pigment is het het belangrijkste dat je doet, meer dan welke behandeling ook. Dat is geen verkooppraatje, want we verdienen er niets aan.
+Bij pigment levert dagelijkse bescherming meer op dan welke behandeling ook, en we verdienen er niets aan.
 
 Ik heb een donkere huid. Kan ik behandeld worden? +
 
@@ -3680,7 +3680,7 @@ Ja, en het vraagt een andere aanpak. Bij huidtype IV tot VI is de kans op nieuwe
 
 Mijn vlek ziet er anders uit dan de rest. Moet ik me zorgen maken? +
 
-Een vlek die verandert van vorm of kleur, of die bloedt, hoort bij de huisarts en niet bij ons. Dat is geen paniekverhaal maar de juiste route. We kijken er wel naar en verwijzen door als dat nodig is.
+Een vlek die verandert van vorm of kleur, of die bloedt, laat je beoordelen door je huisarts. Dat is geen paniekverhaal maar de juiste route. We kijken er wel naar en verwijzen door als dat nodig is.
 
 Kan ik iets doen aan de vlekken op mijn handen? +
 
@@ -4136,7 +4136,7 @@ Deze triggers zijn lastig te vermijden. Een behandeling kan dan helpen om de kla
 
 **Tik aan wat jou rood maakt**
 
-Kies alles wat je herkent. Het gaat ons niet om het aantal, maar om de verhouding: hoeveel van jouw triggers kun je zelf beïnvloeden?
+Kies alles wat je herkent. Het gaat om de verhouding: hoeveel van jouw triggers kun je zelf beïnvloeden?
 
 Weet je het niet precies? Houd het twee weken bij. Dat levert meer op dan welke test dan ook.
 
@@ -4240,7 +4240,7 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 Gaat mijn rosacea weg? +
 
-Nee. Rosacea is chronisch en dat is de eerlijke start van dit gesprek. Wat wél kan: minder opvlammingen, minder zichtbare adertjes en een rustiger basiskleur. Bij de meeste mensen is dat een groot verschil in hoe ze zich voelen.
+Nee, rosacea is chronisch. Wat wél kan: minder opvlammingen, minder zichtbare adertjes en een rustiger basiskleur. Bij de meeste mensen is dat een groot verschil in hoe ze zich voelen.
 
 Hoe weet ik of het rosacea is en niet acne? +
 
@@ -4752,7 +4752,7 @@ Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en g
 
 **Wat er gebeurt, in volgorde.**
 
-- Meting vooraf Waar het zit, welk type en hoe je huid er nu aan toe is. Dat is het vertrekpunt.
+- Meting vooraf We kijken waar het zit, om welk type het gaat en hoe je huid er nu voor staat.
 
 - Behandelen en bijsturen Sessies in de kliniek met producten thuis, en bij elke controle kijken of het schema klopt.
 
@@ -4764,7 +4764,7 @@ Het traject begint met een meting en een gesprek, niet met een behandeling. Wat 
 
 Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en deels controle, en bij elke controle wordt er opnieuw gemeten onder dezelfde belichting.
 
-Tussen de afspraken door doe jij het meeste werk, met de producten en het schema dat je meekrijgt. Dat is geen bijzaak: het bepaalt of de sessies opleveren wat ze kunnen.
+Tussen de afspraken door verzorg je je huid zelf, met de producten en het schema die je meekrijgt. Dat bepaalt voor een groot deel het resultaat.
 
 **Wat een behandeling met je huid doet**
 
@@ -4842,7 +4842,7 @@ WAT ER GEBEURT
 
 - 1 Min twintig graden CO2 onder hoge druk raakt de huid. De vaatjes trekken samen.
 
-- 2 En weer open Zodra de kou wegtrekt zetten ze weer uit. Dat is de prikkel.
+- 2 En weer open Zodra de kou wegtrekt zetten ze weer uit, en die wisseling is de prikkel.
 
 - 3 Stoffen mee De druk brengt hyaluronzuur en peptiden mee naar binnen.
 
@@ -4864,7 +4864,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat er gebeurt, in volgorde.**
 
-- Vijf minuten Korter dan de tijd die je kwijt bent aan parkeren. Dat is geen verkooppraatje maar de hele behandelduur.
+- Vijf minuten De behandeling duurt een paar minuten, van begin tot eind.
 
 - Koude straal De CO2 komt er onder druk uit en dat voelt koud en stevig. Onaangenaam is het niet, verrassend wel.
 
@@ -4886,7 +4886,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Kan direct voor een afspraak of gelegenheid, want er is niets aan je te zien
 
-- Verandert niets aan je huid op de lange duur. Het effect is tijdelijk en dat is de hele afspraak
+- Werkt tijdelijk en verandert je huid niet blijvend
 
 - Maakt geen collageen aan zoals naalden of laser dat doen
 
@@ -4958,7 +4958,7 @@ WAT ER GEBEURT
 
 - 1 Sterkte kiezen Drie niveaus. Welke er past hangt af van je huid van vandaag.
 
-- 2 Inwerktijd De tijd is het middel. Te lang is niet beter maar schadelijker.
+- 2 Inwerktijd De inwerktijd wordt op je huid afgemeten. Langer laten zitten geeft geen beter resultaat.
 
 - 3 Vervellen De losgemaakte laag komt er in dagen af en wordt sneller vervangen.
 
@@ -4984,7 +4984,7 @@ De eerste afspraak duurt kort. Er gaat een masker op je gezicht dat je zelf mee 
 
 De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat schema volgen bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.
 
-Vervellen hoort erbij en dat is de fase waarin mensen afhaken. Daarom bespreken we vooraf wanneer je hiermee begint: niet vlak voor een vakantie en niet in een drukke periode.
+Na een paar dagen ga je vervellen. We spreken daarom vooraf af wanneer je begint, zodat het niet samenvalt met een vakantie of een drukke week.
 
 **Wat een behandeling met je huid doet**
 
@@ -5418,7 +5418,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 Je krijgt een beschermbril op en die blijft de hele behandeling op. Wat je voelt hangt af van de modus: bij de verwarmende stand is het een oplopende warmte die net voor het ongemakkelijke stopt, bij de andere korte tikjes.
 
-De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.
+De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt. Met jouw antwoord stelt zij het apparaat bij.
 
 Erna ben je meestal rood en warm, alsof je te lang in de zon hebt gezeten. Dat trekt in een paar uur tot een dag weg.
 
@@ -5504,7 +5504,7 @@ WAT ER GEBEURT
 
 - 1 Sterkte kiezen Drie niveaus. Welke er past hangt af van je huid van vandaag.
 
-- 2 Inwerktijd De tijd is het middel. Te lang is niet beter maar schadelijker.
+- 2 Inwerktijd De inwerktijd wordt op je huid afgemeten. Langer laten zitten geeft geen beter resultaat.
 
 - 3 Vervellen De losgemaakte laag komt er in dagen af en wordt sneller vervangen.
 
@@ -5822,7 +5822,7 @@ Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een me
 
 - Drie maanden Een vast schema met controles ertussen, zodat er bijgestuurd wordt voordat het misloopt.
 
-- Wat erna Je gaat naar huis met iets wat je zelf kunt volhouden. Dat is het echte doel.
+- Wat erna Je gaat naar huis met een verzorgingsschema dat je zelf kunt volhouden.
 
 **Wat je ervan merkt in de stoel**
 
@@ -6236,7 +6236,7 @@ Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen
 
 **Wat je ervan merkt in de stoel**
 
-Deze behandeling gaat niet over je huid maar over je gehemelte. Je mond blijft open met een spreider, en de laser werkt achterin, in drie of vier doorgangen.
+Deze behandeling werkt op je gehemelte en niet op je huid. Je mond blijft open met een spreider en de laser gaat er in drie of vier doorgangen overheen.
 
 Het is warm en het is even wennen, maar het doet geen pijn en er wordt niets gesneden. Verdoving is niet nodig en narcose al helemaal niet.
 
@@ -6264,7 +6264,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Doet het pijn? +
 
-Je voelt warmte achter in je mond en dat is het. Er is geen verdoving nodig en er wordt niets gesneden.
+Je voelt warmte achter in je mond. Er komt geen verdoving aan te pas en er wordt niets gesneden.
 
 Werkt het ook bij slaapapneu? +
 
@@ -6468,7 +6468,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Hoe lang zie ik er iets van? +
 
-Dagen, geen weken. Dit is een opfrisser en geen kuur, en dat is precies waarom hij vaak vlak voor iets gepland wordt.
+Het effect houdt dagen aan, geen weken. Veel mensen plannen deze behandeling daarom vlak voor een gelegenheid.
 
 Kan dit bij een gevoelige huid? +
 
@@ -6534,7 +6534,7 @@ WAT ER GEBEURT
 
 - 1 Sterkte kiezen Drie niveaus. Welke er past hangt af van je huid van vandaag.
 
-- 2 Inwerktijd De tijd is het middel. Te lang is niet beter maar schadelijker.
+- 2 Inwerktijd De inwerktijd wordt op je huid afgemeten. Langer laten zitten geeft geen beter resultaat.
 
 - 3 Vervellen De losgemaakte laag komt er in dagen af en wordt sneller vervangen.
 
@@ -6558,15 +6558,15 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Huid beoordelen De sterkte wordt op je huid van vandaag gekozen.
 
-- Aanbrengen en tijd bewaken De inwerktijd is het middel. Te lang is niet beter maar schadelijker.
+- Aanbrengen en tijd bewaken De inwerktijd wordt afgemeten op je huid. Langer laten zitten geeft geen beter resultaat.
 
-- Neutraliseren en beschermen Daarna zon vermijden. Dat is geen advies maar een voorwaarde.
+- Neutraliseren en beschermen Vermijd de zon in de weken erna, en gebruik dagelijks SPF 50.
 
 **Wat je ervan merkt in de stoel**
 
 De vloeistof gaat met een kwastje in lagen op je huid. Binnen een halve minuut begint het te prikken of te tintelen, en dat loopt op naarmate er lagen bij komen. De behandelaar kijkt naar je huid én naar de klok; dat samen bepaalt wanneer het eraf gaat.
 
-Prikken hoort erbij, branden niet. Zeg het dus als het die kant op gaat, want dat is precies het moment waarop er iets moet gebeuren.
+Prikken hoort erbij, branden niet. Zeg het dus meteen als het gaat branden, dan past de behandelaar de instelling aan.
 
 Wat erna komt hangt af van de sterkte. Bij een lichte peeling is je huid een dag wat rood en droog. Bij een sterkere ga je vervellen, en dan is de belangrijkste afspraak dat je er niet aan plukt.
 
@@ -6674,9 +6674,9 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat er gebeurt, in volgorde.**
 
-- Kiezen welke booster Voor fijne lijnen of voor pigment. Dat is niet dezelfde vloeistof en niet hetzelfde doel.
+- Kiezen welke booster Voor fijne lijnen of voor pigment. Elk doel vraagt een ander mengsel.
 
-- De injector De naald zit los van de spuit gemonteerd en beweegt dus niet met de hand mee. Dat is het hele voordeel van dit apparaat.
+- De injector De naald zit los van de spuit gemonteerd en beweegt niet met de hand mee. Daardoor is elke prik even diep.
 
 - Kort rood Soms kleine bultjes waar de naald ging. Meestal binnen een dag weg.
 
@@ -6928,7 +6928,7 @@ Dat verschilt per verzekeraar en per polis. Kijk bij vergoedingen wat er over jo
 
 Wat als er niets uitkomt? +
 
-Dan is dat ook een uitkomst. Het sluit voeding als factor niet uit, maar het haalt hem wel van je lijstje met vermoedens af.
+Ook dat is een bruikbare uitkomst: je weet dan dat je verder moet zoeken dan je voeding.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -7214,7 +7214,7 @@ WAT ER GEBEURT
 
 - 1 Min twintig graden CO2 onder hoge druk raakt de huid. De vaatjes trekken samen.
 
-- 2 En weer open Zodra de kou wegtrekt zetten ze weer uit. Dat is de prikkel.
+- 2 En weer open Zodra de kou wegtrekt zetten ze weer uit, en die wisseling is de prikkel.
 
 - 3 Stoffen mee De druk brengt hyaluronzuur en peptiden mee naar binnen.
 
@@ -7228,7 +7228,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat de diepte van dit apparaat bepaalt**
 
-De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud, en dat is niet toevallig: kou en druk zijn hier de twee werkzame delen.
+De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud. Kou en druk zijn hier de twee werkzame onderdelen.
 
 De koude gasstroom laat de vaatjes eerst samentrekken en daarna weer verwijden. De druk brengt het vernevelde serum tegen de opperhuid aan. De fabrikant noemt die twee cryoforese en baroforese.
 
@@ -7494,7 +7494,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 Wordt mijn haar dikker terug? +
 
-Nee. Scheren verandert de haarschacht niet, alleen het uiteinde. Een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is; dat is het hele verhaal.
+Nee. Scheren verandert de haarschacht niet, alleen het uiteinde. Een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is.
 
 Snijdt het mesje in mijn huid? +
 
@@ -7548,7 +7548,7 @@ De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen inste
 
 WAT ER GEBEURT
 
-- 1 Licht erop Vast licht vanaf een vaste afstand, elke keer hetzelfde. Dat is wat vergelijken mogelijk maakt.
+- 1 Licht erop Vast licht en een vaste afstand, elke keer hetzelfde, zodat opnames vergelijkbaar blijven.
 
 - 2 Doorkijken De camera leest verschillende lagen uit: pigment, vocht, poriën, structuur.
 
@@ -7566,7 +7566,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 De EVE-M meet en behandelt niet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.
 
-Dat is de hele reden dat het ding er staat. Een telefoonfoto onder ander licht en vanaf een andere afstand is niet met een vorige te vergelijken, en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.
+Een telefoonfoto onder ander licht en vanaf een andere afstand kun je niet met een vorige vergelijken. Na acht weken weet je dan nog steeds niet of er iets veranderd is.
 
 Naast gewoon licht wordt er ook onder UV opgenomen. Pigment dat dieper in de huid zit is in gewoon licht nauwelijks te zien en onder UV wel, en juist die diepte bepaalt wat er mogelijk is.
 
@@ -7680,7 +7680,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Laserpeel en fractionele behandeling van de huid
 
-- Snurken aanpakken met NightLase, en dat is het enige waarvoor dit apparaat niet op de huid werkt
+- Snurken behandelen met NightLase, de enige toepassing waarbij dit apparaat op het gehemelte werkt
 
 - Haargroei. Daar staat een ander apparaat voor
 
@@ -7714,7 +7714,7 @@ Omdat ze iets anders doen. De Er:YAG op 2940 nanometer wordt bijna volledig door
 
 Wat is SMOOTH-modus? +
 
-Een manier om de Er:YAG aan te sturen waarbij de energie in een reeks trage pulsen komt in plaats van één harde. Het weefsel warmt dan op zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verwarmen en verdampen.
+Een manier om de Er:YAG aan te sturen waarbij de energie in een reeks trage pulsen komt in plaats van één harde. Het weefsel warmt daardoor op zonder dat de opperhuid wordt weggenomen: het wordt verwarmd en niet verdampt.
 
 Is dit hetzelfde apparaat als bij NightLase? +
 
@@ -7722,7 +7722,7 @@ Ja, en dezelfde modus. Alleen de plek verschilt: bij NightLase gaat het over het
 
 Voel ik er iets van? +
 
-Warmte, oplopend, die net voor het ongemakkelijke stopt. De behandelaar vraagt er tijdens de sessie naar, en dat is geen beleefdheid: jouw antwoord stuurt de instelling.
+Je voelt warmte die langzaam oploopt. De behandelaar vraagt er tijdens de sessie naar en stelt het apparaat bij op jouw antwoord.
 
 **Het apparaat is niet wat het verschil maakt**
 
@@ -7830,7 +7830,7 @@ De spotgrootte en de pulsduur worden per zone gekozen, en de huid is niet overal
 
 Kan dit bij een donkere huid? +
 
-De instelling bepaalt dat, niet het apparaat alleen. Bij meer pigment in de huid is de marge kleiner, en dat is precies waarom er vooraf gemeten wordt. Blijkt het niet verantwoord, dan doen we het niet.
+Dat hangt af van de instelling. Bij meer pigment in de huid is de marge kleiner, dus beoordeelt de behandelaar het vooraf. Is het niet verantwoord, dan doen we het niet.
 
 **Het apparaat is niet wat het verschil maakt**
 
@@ -7892,7 +7892,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 Het werkzame deel is het mondstuk, niet de kast. In de tip zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over de huid: losgemaakte cellen en poriëninhoud gaan mee naar buiten, door een zijkanaal naar een opvangbak, terwijl er via hetzelfde kanaal serum naar binnen gaat.
 
-Dat is het hele idee achter de naam Vortex-Fusion: reinigen, losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang, met één hand, zonder van instrument te wisselen.
+Dat heet Vortex-Fusion: reinigen, losmaken, wegzuigen en inbrengen gebeuren in dezelfde doorgang, met één hand.
 
 De tips zijn wegwerpartikelen en er zijn verschillende soorten, met een grovere of fijnere spiraal. Welke er gebruikt wordt hangt af van je huid en het doel van de behandeling.
 
@@ -7936,7 +7936,7 @@ De combinatie in één beweging. In het mondstuk zit een spiraal waar tegelijk o
 
 Blijft het resultaat? +
 
-Nee, dit is onderhoud. Het werkt in de hoornlaag, en die vernieuwt zichzelf. Dat is geen tekortkoming zolang je het weet.
+Nee, dit is een onderhoudsbehandeling. Hij werkt in de hoornlaag en die vernieuwt zichzelf, dus het effect is tijdelijk.
 
 Waarom zijn er verschillende tips? +
 
@@ -8170,7 +8170,7 @@ Dat hoort erbij. Het pigment komt naar de oppervlakte voordat het vervaagt, en d
 
 Wat bepaalt welke applicator ik krijg? +
 
-Het doelwit. Voor pigment wordt een andere band gekozen dan voor haargroei, en dat is de hele reden dat er meerdere zijn. De behandelaar kiest hem na de meting.
+Waar de behandeling op gericht is. Voor pigment kiest de behandelaar een andere band dan voor haargroei; daarom zijn er meerdere.
 
 Kan dit ook op mijn benen of rug? +
 
@@ -8202,7 +8202,7 @@ Twee klinieken met dezelfde Nordlys geven niet hetzelfde resultaat. Wat telt is 
 
 Geen apparaat maar vier merken, in drie niveaus van sterkte.
 
-De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van je huid van dat moment, niet van wat er het sterkst is. De inwerktijd is het middel: te lang is niet beter maar schadelijker.
+De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker.
 
 - Medische peelings € 140
 
@@ -8224,7 +8224,7 @@ WAT ER GEBEURT
 
 - 1 Sterkte kiezen Drie niveaus. Welke er past hangt af van je huid van vandaag.
 
-- 2 Inwerktijd De tijd is het middel. Te lang is niet beter maar schadelijker.
+- 2 Inwerktijd De inwerktijd wordt op je huid afgemeten. Langer laten zitten geeft geen beter resultaat.
 
 - 3 Vervellen De losgemaakte laag komt er in dagen af en wordt sneller vervangen.
 
@@ -8362,7 +8362,7 @@ Een microneedling-pen zet een cartridge met naalden in een snelle op-en-neerbewe
 
 De diepte is de enige instelling die er echt toe doet, want die bepaalt in welke laag het kanaaltje eindigt. Ondiep raakt de opperhuid en heelt binnen een dag; drie millimeter komt in de laag waar bindweefsel wordt aangemaakt en vraagt langer.
 
-De cartridges zijn steriel en voor eenmalig gebruik. Dat is bij microneedling geen detail: de naalden gaan door de huidbarrière heen, en dat is precies waar die barrière voor bedoeld was.
+De cartridges zijn steriel en voor eenmalig gebruik. Bij microneedling gaan de naalden door de huidbarrière heen, dus dat luistert nauw.
 
 **Wat een behandeling met je huid doet**
 
@@ -8884,7 +8884,7 @@ Bedragen en pakketnamen staan er bewust niet bij.
 
 **Waar het bij a.s.r. op vastloopt.**
 
-Bij a.s.r. zit de voorwaarde niet in de vergoedingenvinder maar in de polisvoorwaarden. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.
+Bij a.s.r. staat de voorwaarde in de polisvoorwaarden en niet in de vergoedingenvinder. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.
 
 Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
@@ -8912,11 +8912,11 @@ Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het nie
 
 Hieronder staat wat a.s.r. er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
 
-- Heb ik een verwijzing nodig? Dat staat niet in de vergoedingenvinder maar in de polisvoorwaarden, net als de eis over de beroepsvereniging. Vraag er bij het bellen expliciet naar; de vinder geeft je het bedrag en niet de voorwaarde.
+- Heb ik een verwijzing nodig? Dat staat in de polisvoorwaarden en niet in de vergoedingenvinder, net als de eis over de beroepsvereniging. Vraag er bij het bellen expliciet naar; de vinder geeft je het bedrag en niet de voorwaarde.
 
 - Deel ik dit budget met iets anders? Dat verschilt per verzekering. a.s.r. zet de maxima in een apart overzicht naast de vergoedingenvinder, dus kijk daar en niet alleen bij de behandeling zelf.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
 Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook a.s.r. niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
@@ -8996,7 +8996,7 @@ Hieronder staat wat CZ er zelf over publiceert. Neem het mee als je belt en vraa
 
 - Deel ik dit budget met iets anders? CZ zet acne, camouflagetherapie en gezichtsontharing elk op een eigen pagina met een eigen voorwaarde. Vraag daarom per behandeling na wat er nog over is; het antwoord voor acne hoeft niet te gelden voor ontharing.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
 Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook CZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
@@ -9076,7 +9076,7 @@ Hieronder staat wat Menzis er zelf over publiceert. Neem het mee als je belt en 
 
 - Deel ik dit budget met iets anders? Ja. Het maximum uit de aanvullende verzekering geldt voor acnebehandeling en camouflagetherapie samen, producten inbegrepen. Reken er ook op dat er per behandeling een eigen bijdrage geldt naast dat maximum.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
 Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook Menzis niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
@@ -9156,7 +9156,7 @@ Hieronder staat wat ONVZ er zelf over publiceert. Neem het mee als je belt en vr
 
 - Geldt er een leeftijdsgrens? Ja, en dat is bij ONVZ de voorwaarde die het vaakst in de weg zit. Bij acnebehandeling loopt de vergoeding tot 21 jaar; alleen het hoogste pakket vergoedt ook daarna. Controleer dit voordat je een traject inplant.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
 Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook ONVZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
@@ -9236,7 +9236,7 @@ Hieronder staat wat VGZ er zelf over publiceert. Neem het mee als je belt en vra
 
 - Deel ik dit budget met iets anders? Ja. VGZ zet acne, camouflagetherapie en ontharen onder één noemer huidbehandelingen met één budget per kalenderjaar. Wat je aan het een besteedt gaat van het ander af, dus vraag ook wat je er dit jaar al van gebruikt hebt.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
 Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook VGZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
@@ -9284,7 +9284,7 @@ Bedragen en pakketnamen staan er bewust niet bij.
 
 **Waar het bij Zilveren Kruis op vastloopt.**
 
-Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus niet alleen naar het bedrag maar ook of wij aan die eis voldoen.
+Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus ook even of wij aan die eis voldoen.
 
 Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
 
@@ -9314,9 +9314,9 @@ Hieronder staat wat Zilveren Kruis er zelf over publiceert. Neem het mee als je 
 
 - Heb ik een verwijzing nodig? Op de recente pagina's van Zilveren Kruis staat dat je rechtstreeks naar een zorgverlener kunt. Oudere jaargangen noemden nog een verwijzing van de huisarts of specialist, dus controleer het jaartal bovenaan de pagina die je leest.
 
-- Deel ik dit budget met iets anders? Ja. Zilveren Kruis hanteert één maximum voor acnebehandeling en epilatie samen. Doe je allebei, dan is de vraag niet wat het maximum is maar wat je er dit jaar al van gebruikt hebt.
+- Deel ik dit budget met iets anders? Ja. Zilveren Kruis hanteert één maximum voor acnebehandeling en epilatie samen. Doe je allebei, kijk dan hoeveel je dit jaar al van dat maximum hebt gebruikt.
 
-- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering en dat is geen keuze van je verzekeraar maar wet. Dit is het misverstand waar mensen zorg om uitstellen.
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
 Eén vraag komt hier nog vóór: of er een medische reden is. Zonder die reden vergoedt geen enkele verzekeraar iets, ook Zilveren Kruis niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
@@ -9662,7 +9662,7 @@ Dan verandert er niets aan hoe het hier gaat. Deze vier pagina's bestaan omdat e
 
 Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere planning.
 
-Het enige wat hier echt anders is, is dat er een datum staat. Alles daarna is terugrekenen, en dat is precies wat de meeste mensen te laat doen.
+Hier staat een datum vast, en daar reken je vanaf terug. Veel mensen beginnen daar te laat mee.
 
 > knop: PLAN JE NULMETING
 
@@ -9720,7 +9720,7 @@ Deze vier pagina's bestaan omdat er per groep iets te melden is, en niet omdat d
 
 Fitzpatrick I tot en met VI kan hier terecht. Je type bepaalt niet óf iets kan, maar met welke instelling.
 
-Meer melanine betekent niet minder mogelijkheden. Het betekent dat er meer op het spel staat als iemand de instelling verkeerd kiest, en dat is precies waarom er eerst gemeten wordt.
+Meer melanine geeft evenveel mogelijkheden, maar de instelling luistert nauwer, en dat is precies waarom er eerst gemeten wordt.
 
 > knop: MAAK JE HUIDPROFIEL
 
@@ -9730,11 +9730,11 @@ Er bestaat geen aparte behandellijn voor deze groep. Wat er wél verschilt staat
 
 DIT IS ECHT ANDERS · 3
 
-- Een prikkel kan een vlek achterlaten Bij meer pigment in de huid kan elke ontsteking of te heftige behandeling een donkere plek achterlaten die langer blijft dan de oorzaak. Dat is de belangrijkste reden om voorzichtig te beginnen en op te bouwen.
+- Een prikkel kan een vlek achterlaten Bij meer pigment kan een ontsteking of een te heftige behandeling een donkere plek achterlaten die lang blijft zitten. Daarom werken we voorzichtig te beginnen en op te bouwen.
 
 - Bij laser doet de golflengte ertoe Licht van 1064 nanometer dringt dieper door en wordt minder door de bovenste huidlaag opgenomen. Daarom heeft die golflengte de voorkeur bij donkerdere huidtypes, terwijl 755 nanometer sterker werkt bij de lichtere.
 
-- Littekens kunnen dikker worden De neiging tot keloïd komt vaker voor. Dat sluit behandelen niet uit, maar het is iets wat vooraf op tafel moet en niet achteraf.
+- Littekens kunnen dikker worden De neiging tot keloïd komt vaker voor. Behandelen kan meestal wel, en we bespreken het vooraf met je.
 
 DIT IS PRECIES HETZELFDE · 3
 
@@ -9778,7 +9778,7 @@ Deze vier pagina's bestaan omdat er per groep iets te melden is, en niet omdat d
 
 Acne in de puberteit is een fase, geen fout. Wat er nu telt is voorkomen dat er littekens van overblijven.
 
-Er is één ding dat op jouw leeftijd echt anders is, en dat is niet je huid maar de tijd. Wat je nu voorkomt hoef je later niet te herstellen.
+Op jouw leeftijd werkt de tijd in je voordeel: wat je nu voorkomt, hoef je later niet te herstellen.
 
 > knop: WAT ER BIJ ACNE GEBEURT
 
@@ -9788,9 +9788,9 @@ Er bestaat geen aparte behandellijn voor deze groep. Wat er wél verschilt staat
 
 DIT IS ECHT ANDERS · 3
 
-- Er is meer te winnen met vroeg beginnen Actieve ontstekingen kunnen putjes achterlaten, en die zijn later moeilijker en duurder aan te pakken dan de acne zelf. Dat is de reden om er nu iets aan te doen, en niet dat je huid nu al mooi moet zijn.
+- Er is meer te winnen met vroeg beginnen Actieve ontstekingen kunnen putjes achterlaten. Die zijn later moeilijker en duurder te behandelen dan de acne zelf, en daarom pak je het nu aan.
 
-- De aanjager is hormonaal In de puberteit maakt je huid meer talg aan. Dat is geen gevolg van slecht wassen of verkeerd eten, en een behandeling die daar niet op ingaat werkt maar half.
+- De aanjager is hormonaal In de puberteit maakt je huid meer talg aan. Dat komt door hormonen, en daar stemmen we de behandeling op af.
 
 - Onder de zestien beslist een ouder mee Tot je twaalfde beslissen je ouders, tussen twaalf en zestien beslissen jullie samen, en vanaf zestien beslis je zelf. Dat staat zo in de wet en niet in ons beleid.
 
@@ -9858,7 +9858,7 @@ DIT IS PRECIES HETZELFDE · 3
 
 - Dezelfde apparatuur en dezelfde instellingen De instelling volgt je huidtype en je haargroei, niet je geslacht.
 
-- Dezelfde volgorde Ook hier begint het met meten. Dat is geen formaliteit die je kunt overslaan omdat je haast hebt.
+- Dezelfde volgorde Ook hier begint het met een beoordeling van je huid, ook als je haast hebt.
 
 **Zeg dit erbij, dan scheelt dat een keer.**
 
@@ -9990,7 +9990,7 @@ Vier vragen over je doel, je huid en hoeveel hersteltijd je hebt. Hiermee kunnen
 
 **Je scan als startpunt.**
 
-Vier vragen over wat je ziet en voelt, en je krijgt je profielschets terug als spinnenweb. De open buitenrand blijft staan: dat is wat EVE-M er in de kliniek pas echt bij meet.
+Vier vragen over wat je ziet en voelt. Je krijgt je profielschets terug als spinnenweb, waarvan de open buitenrand blijft staan: dat is wat EVE-M er in de kliniek pas echt bij meet.
 
 Begin hier: vier vragen, ongeveer een minuut. Je krijgt je profielschets terug en twee van de vragen hieronder staan daarna meteen goed.
 
@@ -10086,7 +10086,7 @@ Dit stuurt vooral de voorbereiding thuis, en dat is bij een droge huid belangrij
 
 **Hoe snel reageert hij?**
 
-Bij een huid die snel geïrriteerd raakt wordt met een lagere sterkte begonnen. Dat is geen beperking maar een startpunt.
+Bij een huid die snel geïrriteerd raakt begint de behandelaar met een lagere sterkte. Dat is een startpunt.
 
 > knop: Verdraagt veel Ik kan bijna alles gebruiken
 
@@ -10212,7 +10212,7 @@ In 9 stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, z
 
 **Wat er in dat uur gebeurt**
 
-De meeste twijfel voor een intake gaat niet over de meting maar over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes.
+De meeste twijfel voor een intake gaat over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes.
 
 - EERSTE MINUTEN Aankomst en het gesprek
 
@@ -10250,11 +10250,11 @@ Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is 
 
 > knop: APP ONS
 
-Weet je nog niet waarvoor je komt? Dat is geen bezwaar, en de zoeker helpt je een richting te vinden voordat je hier bent.
+Weet je nog niet waarvoor je komt? Dat hoeft ook niet, en de zoeker helpt je een richting te vinden voordat je hier bent.
 
 **Wat je dan nog steeds meeneemt.**
 
-De meeste twijfel gaat niet over het bedrag maar over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt.
+De meeste twijfel gaat over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt.
 
 - Een nulpunt dat van jou is Je meting blijft bewaard als beginpunt. Ga je later ergens anders heen, dan heb je iets om mee te vergelijken dat niet van een telefooncamera komt.
 
@@ -11517,4 +11517,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5334 tekstblokken · ongeveer 80.897 woorden._
+_105 pagina's · 5334 tekstblokken · ongeveer 80.585 woorden._

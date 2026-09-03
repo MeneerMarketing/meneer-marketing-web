@@ -74,7 +74,7 @@ export const ACNE_TYPES: readonly AcneType[] = [
     watWijEersteDoen:
       "Een eerlijk gesprek. We overleggen met je huisarts of dermatoloog vóórdat we iets doen, en soms is ons advies om bij ons nog niet te starten.",
     verwarMetNiet:
-      "Dit is niet ernstiger omdat je iets fout doet. Bij deze vorm speelt je afweer diep in de huid, en dat is geen kwestie van beter reinigen.",
+      "Bij deze vorm speelt je afweer diep in de huid. Dat komt niet doordat je iets fout doet en het is geen kwestie van beter reinigen.",
   },
   {
     id: "hormonaal",
@@ -157,7 +157,7 @@ export const ACNE_STADIA: readonly Stadium[] = [
     naam: "Ontsteking",
     merkbaar: "Rood, verheven, gevoelig. Dit is wat je in de spiegel ziet.",
     uitleg:
-      "Je afweer ruimt op. De roodheid en de zwelling zijn niet de infectie zelf, maar jouw reactie erop. Daarom is een puistje warm.",
+      "Je afweer ruimt op. De roodheid en de zwelling komen van jouw afweerreactie en niet van de bacterie zelf. Daarom is een puistje warm.",
     ingrijpen:
       "Nu is rust het doel. Alles wat prikkelt verlengt deze fase. Uitknijpen duwt de ontsteking dieper en dat is de kortste route naar een litteken.",
   },
