@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarFaq,
@@ -136,6 +137,10 @@ export default function PsoriasisPage() {
         niet={PSORIASIS_WEL_NIET.niet}
         intro="Gewrichtsklachten laat je op tijd beoordelen. Uitstel kost daar schade die niet meer terugkomt."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/psoriasis" />
 
       <PillarFaq items={PSORIASIS_FAQ} onderwerp="psoriasis" />
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Kleurwijzer from "@/components/huidverkleuring/Kleurwijzer";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
@@ -225,6 +226,10 @@ export default function HuidverkleuringPage() {
           </div>
         </div>
       </section>
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/huidverkleuring" />
 
       <PillarFaq items={VERKLEURING_FAQ} onderwerp="huidverkleuring" />
 

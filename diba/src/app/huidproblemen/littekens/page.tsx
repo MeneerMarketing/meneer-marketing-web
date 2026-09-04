@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Littekenklok from "@/components/littekens/Littekenklok";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   HuidanalyseAssen,
@@ -277,6 +278,10 @@ export default function LittekensPage() {
           ["Oppervlak", "Hoe groot het gebied is dat we behandelen"],
         ]}
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/littekens" />
 
       <PillarFaq items={LITTEKEN_FAQ} onderwerp="littekens" />
 

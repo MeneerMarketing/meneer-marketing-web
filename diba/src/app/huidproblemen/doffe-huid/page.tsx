@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   HuidanalyseAssen,
@@ -240,6 +241,10 @@ export default function Pagina() {
           ["Gelijkmatigheid", "Hoe egaal de kleur is over het hele vlak"],
         ]}
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/doffe-huid" />
 
       <PillarFaq items={DOF_FAQ} onderwerp="een doffe huid" />
 

@@ -17,7 +17,8 @@
     "stijl": "node scripts/controleer-stijl.mjs",
     "dev:meten": "next dev --port 3021 --hostname 0.0.0.0",
     "start:meten": "next start --port 3021",
-    "beeld": "node scripts/controleer-beeld.mjs"
+    "beeld": "node scripts/controleer-beeld.mjs",
+    "links": "node scripts/controleer-links.mjs"
   },
   "dependencies": {
     "next": "16.2.2",

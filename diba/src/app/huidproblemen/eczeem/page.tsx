@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Krabcirkel from "@/components/eczeem/Krabcirkel";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarFaq,
@@ -170,6 +171,10 @@ export default function EczeemPage() {
         niet={ECZEEM_WEL_NIET.niet}
         intro="Wachten met de huisarts omdat je eerst zelf iets wilt proberen, kost meestal de meeste tijd."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/eczeem" />
 
       <PillarFaq items={ECZEEM_FAQ} onderwerp="eczeem" />
 

@@ -362,6 +362,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Poriën", href: "/huidproblemen/porien" },
       { label: "Droge huid", href: "/huidproblemen/droge-huid" },
+
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
+      { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
     ],
     duurMinuten: 60,
   },
@@ -429,6 +432,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Droge huid", href: "/huidproblemen/droge-huid" },
       { label: "Grove poriën", href: "/huidproblemen/porien" },
+
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
     ],
     duurMinuten: 60,
   },
@@ -465,6 +470,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Droge huid", href: "/huidproblemen/droge-huid" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
     ],
     duurMinuten: 45,
   },
@@ -531,6 +538,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     ],
     bijProblemen: [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+
+      { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
     ],
     duurMinuten: 20,
   },
@@ -598,6 +607,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Acne", href: "/huidproblemen/acne" },
       { label: "Pigmentvlekken", href: "/huidproblemen/pigmentvlekken" },
       { label: "Poriën", href: "/huidproblemen/porien" },
+
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
+      { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
+      { label: "Ouderdomsvlekken", href: "/huidproblemen/ouderdomsvlekken" },
     ],
     duurMinuten: 45,
   },
@@ -664,6 +677,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Poriën", href: "/huidproblemen/porien" },
+
+      { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
+      { label: "Striae", href: "/huidproblemen/striae" },
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
     ],
     duurMinuten: 75,
   },
@@ -702,6 +719,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+
+      { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
+      { label: "Striae", href: "/huidproblemen/striae" },
     ],
     wel: [
       "Maakt kanaaltjes in de huid die je eigen herstel op gang brengen [MEDISCHE-CHECK-ROJDA]",
@@ -781,6 +802,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Melasma", href: "/huidproblemen/melasma" },
       { label: "Donkere kringen", href: "/huidproblemen/donkere-kringen" },
+
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
     ],
     wel: [
       "Brengt werkzame stoffen ín de huid in plaats van erop",
@@ -863,6 +886,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
+
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
+      { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
     ],
     wel: [
       "Werkt in meerdere richtingen: van binnenuit via de mond en van buitenaf op de huid",
@@ -1022,6 +1048,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Rosacea", href: "/huidproblemen/rosacea" },
       { label: "Pigmentvlekken", href: "/huidproblemen/pigmentvlekken" },
+
+      { label: "Couperose", href: "/huidproblemen/couperose" },
+      { label: "Ouderdomsvlekken", href: "/huidproblemen/ouderdomsvlekken" },
     ],
     duurMinuten: 45,
   },
@@ -1253,6 +1282,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Alle zones en prijzen", href: "/laserontharing/configurator" },
       { label: "Over laserontharing", href: "/laserontharing" },
+
+      { label: "Ingegroeide haren", href: "/huidproblemen/ingegroeide-haren" },
     ],
     duurMinuten: 30,
   },
@@ -1349,7 +1380,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een traject van drie tot zes maanden, met een controle om de vier tot zes weken. [MEDISCHE-CHECK-ROJDA]",
     prijs: 570,
-    bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
+    bijProblemen: [
+      { label: "Acne", href: "/huidproblemen/acne" },
+      { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
+    ],
     wel: [
       "Volgt het verloop van acne in plaats van er één moment uit te pikken",
       "Combineert behandelingen in de kliniek met producten en controles thuis",
@@ -1474,6 +1508,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     ],
     bijProblemen: [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
+
+      { label: "Keloiden", href: "/huidproblemen/keloiden" },
     ],
     wel: [
       "Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens [MEDISCHE-CHECK-ROJDA]",
@@ -1579,6 +1615,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
         label: "Moedervlekken en plekjes",
         href: "/huidproblemen/moedervlekken",
       },
+
+      { label: "Steelwratjes", href: "/huidproblemen/steelwratjes" },
     ],
     duurMinuten: 15,
   },

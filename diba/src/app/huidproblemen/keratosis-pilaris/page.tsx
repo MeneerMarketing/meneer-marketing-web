@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarCta,
@@ -223,6 +224,10 @@ export default function Pagina() {
         niet={KP_WEL_NIET.niet}
         intro="Dit is een aandoening waar onderhoud bij hoort. Met een reeks behandelingen en de juiste verzorging houd je het rustig."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/keratosis-pilaris" />
 
       <PillarFaq items={KP_FAQ} onderwerp="keratosis pilaris" />
 

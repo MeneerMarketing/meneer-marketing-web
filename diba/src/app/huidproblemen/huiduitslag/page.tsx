@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Glastest from "@/components/huiduitslag/Glastest";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarFaq,
@@ -232,6 +233,10 @@ export default function HuiduitslagPage() {
         niet={UITSLAG_WEL_NIET.niet}
         intro="Zalf op onbekende uitslag verandert het beeld dat de arts moet beoordelen."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/huiduitslag" />
 
       <PillarFaq items={UITSLAG_FAQ} onderwerp="huiduitslag" />
 

@@ -8,10 +8,11 @@ import {
   SectieKop,
   WelNiet,
 } from "@/components/pillar/PillarSecties";
+import BeeldVignet from "@/components/ui/BeeldVignet";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { behandelingVoorSlug } from "@/data/behandelingen";
+import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import {
   ALARMSIGNALEN,
   SNURKBRONNEN,
@@ -329,10 +330,62 @@ export default function SnurkenPage() {
                 ))}
               </dl>
 
-              <div className="mt-10">
-                <Button href="/behandelingen/nightlase">
-                  Alles over NightLase
-                </Button>
+              {/* De koppeling met zoveel woorden.
+
+                  Hier stond alleen een knop "Alles over NightLase". Wie op snurken
+                  binnenkomt weet dan nog steeds niet dat NightLase de behandeling is die
+                  wij hiervoor doen; hij ziet een merknaam en een link.
+
+                  Twee even hoge kolommen, dezelfde opbouw als op de behandelpagina zelf.
+                  De foto is er ook dezelfde: wie beide pagina's ziet, herkent dat het
+                  over hetzelfde gaat. */}
+              <div className="mt-12 grid gap-4 lg:grid-cols-2 lg:items-stretch">
+                {nightlase.fotoInDeStoel ? (
+                  <BeeldVignet
+                    src={nightlase.fotoInDeStoel.src}
+                    alt={nightlase.fotoInDeStoel.alt}
+                    onderschrift="NightLase, aan het zachte gehemelte"
+                    sizes="(min-width: 1024px) 46vw, 92vw"
+                    className="aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:min-h-[460px]"
+                  />
+                ) : null}
+
+                <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10 lg:p-12">
+                  <Label opDonker>De behandeling bij snurken</Label>
+                  <h3 className="diba-display-s mt-4 max-w-[18ch]">
+                    Snurken behandelen we{" "}
+                    <span className="diba-accent-on-dark">met NightLase</span>
+                  </h3>
+                  <p className="mt-6 max-w-[50ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                    {publicCopy(nightlase.kort)}
+                  </p>
+
+                  <dl className="mt-8 divide-y divide-white/15 border-t border-white/15">
+                    {(
+                      [
+                        ["Hoe lang", `${nightlase.duurMinuten} minuten`],
+                        ["Per sessie", prijsTekst(nightlase.prijs)],
+                      ] as const
+                    ).map(([kop, waarde]) => (
+                      <div
+                        key={kop}
+                        className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3"
+                      >
+                        <dt className="diba-label diba-label-on-dark">{kop}</dt>
+                        <dd className="text-[16px] leading-7 text-[var(--on-dark-accent)]">
+                          {waarde}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+
+                  <Link
+                    href="/behandelingen/nightlase"
+                    className="diba-label mt-8 inline-flex min-h-12 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    Alles over NightLase
+                  </Link>
+                </div>
               </div>
             </>
           ) : null}

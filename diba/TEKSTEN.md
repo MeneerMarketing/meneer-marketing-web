@@ -774,6 +774,16 @@ Wat kost dit? +
 
 Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
+**Wat we hiervoor inzetten**
+
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
+- Acnetraject € 570 Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. WAT HET INHOUDT
+
+- Jongeren acne traject € 450 Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. WAT HET INHOUDT
+
+- Voedingsintolerantietest € 300 Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. WAT HET INHOUDT
+
 **Plan een intake bij Diba Clinics**
 
 Tijdens de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies we verwachten. Ook als het antwoord is dat je beter even wacht.
@@ -895,6 +905,12 @@ De vaatreactie die na een ontsteking achterblijft
 Bruine plekken, ook de vlekken die je nu nog niet ziet
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
+
+**Wat we hiervoor inzetten**
+
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
+
+- Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
 
 **Veelgestelde vragen**
 
@@ -1164,6 +1180,12 @@ Hoe snel je huid reageert, want dat bepaalt de instelling
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- Nordlys IPL € 75 Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. WAT HET INHOUDT OP DE NORDLYS
+
+- LED-therapie € 30 Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. WAT HET INHOUDT OP DE PRECISION PHOTONIC SYSTEM
+
 **Veelgestelde vragen**
 
 Komen die vaatjes terug na de behandeling? +
@@ -1306,6 +1328,16 @@ Hoe egaal de kleur is over het hele vlak
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT OP DE HYDRAFACIAL SYNDEO
+
+- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT
+
+- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT OP DE DERMAPLANE PRO
+
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
 **Veelgestelde vragen**
 
 Waarom ziet mijn huid er 's ochtends doffer uit? +
@@ -1429,6 +1461,10 @@ Hoe sterk het vaatnetwerk eronder meetelt
 Hoe diep de overgang naar de wang ligt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
+
+**Wat we hiervoor inzetten**
+
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT OP DE U225 INTRADERMALE INJECTOR
 
 **Veelgestelde vragen**
 
@@ -1569,6 +1605,14 @@ Hoeveel vocht er in de bovenste laag zit
 Hoe snel dat vocht weer verdwijnt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
+
+**Wat we hiervoor inzetten**
+
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT OP DE HYDRAFACIAL SYNDEO
+
+- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT
+
+- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT OP DE DERMAPLANE PRO
 
 **Veelgestelde vragen**
 
@@ -1936,6 +1980,10 @@ Hoe gelijkmatig de bovenlaag ligt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- LED-therapie € 30 Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. WAT HET INHOUDT OP DE PRECISION PHOTONIC SYSTEM
+
 **Veelgestelde vragen**
 
 Is een gevoelige huid iets waarmee je geboren wordt? +
@@ -2196,6 +2244,10 @@ Eén ding telt zwaarder dan de kleur
 
 Verandert een plek van vorm, kleur of grootte, jeukt of bloedt hij, of is hij er in korte tijd bij gekomen? Dan doet de kleur er niet toe en hoort hij bij de huisarts. Dat geldt voor bruin, rood, wit en blauw evengoed.
 
+**Wat we hiervoor inzetten**
+
+- Happy Intim € 175 Peelings die pigment in de intieme zone en oksels lichter en egaler maken. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
 **Veelgestelde vragen**
 
 Wat als ik meerdere kleuren tegelijk heb? +
@@ -2396,6 +2448,20 @@ Waar ze staan en of ze in rust blijven
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT OP DE DERMAPLANE PRO
+
+- CooLift Cryo Therapy € 75 Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. WAT HET INHOUDT OP DE COOLIFT CRYO THERAPY
+
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
+
+- Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
+
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT OP DE U225 INTRADERMALE INJECTOR
+
+- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
 **Veelgestelde vragen**
 
 Vanaf welke leeftijd is dit zinvol? +
@@ -2542,6 +2608,12 @@ Het oppervlak, want dat verandert vaak eerder dan de vorm
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- CooLift Cryo Therapy € 75 Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. WAT HET INHOUDT OP DE COOLIFT CRYO THERAPY
+
+- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
 **Veelgestelde vragen**
 
 Is dit een alternatief voor een facelift? +
@@ -2660,6 +2732,10 @@ Strak scheren, pincetten en scrubben houden het probleem in stand. Ermee stoppen
 
 - Beloven dat elk haartje weggaat. Lichte en grijze haren reageren nauwelijks op licht
 
+**Wat we hiervoor inzetten**
+
+- Laserontharing € 20 De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. WAT HET INHOUDT OP DE GENTLE LASER PRO-U
+
 **Veelgestelde vragen**
 
 Gaan ingegroeide haren weg van laserontharing? +
@@ -2743,6 +2819,10 @@ Bij keloid telt de aanleg zwaarder dan de verzorging. Wat je wel in de hand hebt
 - Wachten tot het vanzelf overgaat. Een keloid doet dat meestal niet
 
 - Een nieuwe piercing of tatoeage op een plek waar eerder keloid ontstond
+
+**Wat we hiervoor inzetten**
+
+- Littekentherapie € 100 Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. WAT HET INHOUDT
 
 **Veelgestelde vragen**
 
@@ -3034,6 +3114,16 @@ Hoe groot het gebied is dat we behandelen
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
+
+- Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
+
+- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Littekentherapie € 100 Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. WAT HET INHOUDT
+
 **Veelgestelde vragen**
 
 Gaan mijn littekens helemaal weg? +
@@ -3178,6 +3268,12 @@ Welke gebieden meedoen en hoe groot ze zijn
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT OP DE U225 INTRADERMALE INJECTOR
+
+- Cosmelan en dermamelan € 550 Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
 **Veelgestelde vragen**
 
 Gaat melasma ooit helemaal weg? +
@@ -3289,6 +3385,10 @@ Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie 
 - We dekken moedervlekken af Laseren we vlakbij, dan gaat er een dekje overheen. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
+
+**Wat we hiervoor inzetten**
+
+- Fibromen verwijderen € 30 Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. WAT HET INHOUDT
 
 **Veelgestelde vragen**
 
@@ -3413,6 +3513,14 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reini
 - Zelf uitknijpen. Een gesloten porie wordt zo een ontsteking, en een ontsteking wordt zo een vlek
 
 - Beloven dat poriën kleiner worden. Ze kunnen leeg zijn en daardoor minder opvallen; hun formaat ligt vast
+
+**Wat we hiervoor inzetten**
+
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT OP DE HYDRAFACIAL SYNDEO
+
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
+- Acnetraject € 570 Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. WAT HET INHOUDT
 
 **Veelgestelde vragen**
 
@@ -3553,6 +3661,12 @@ Wat er dieper ligt en later doorkomt
 Hoeveel de huid over de jaren te verwerken kreeg
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
+
+**Wat we hiervoor inzetten**
+
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
+- Nordlys IPL € 75 Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. WAT HET INHOUDT OP DE NORDLYS
 
 **Veelgestelde vragen**
 
@@ -3724,6 +3838,14 @@ Of er naast kleur ook oneffenheid meespeelt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
+- Nordlys IPL € 75 Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. WAT HET INHOUDT OP DE NORDLYS
+
+- Cosmelan en dermamelan € 550 Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
 **Veelgestelde vragen**
 
 Gaan mijn pigmentvlekken helemaal weg? +
@@ -3873,6 +3995,16 @@ Hoeveel poriën een donkere kern hebben
 Hoeveel het oppervlak weerkaatst
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
+
+**Wat we hiervoor inzetten**
+
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT OP DE HYDRAFACIAL SYNDEO
+
+- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT
+
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
 
 **Veelgestelde vragen**
 
@@ -4118,6 +4250,16 @@ Wat er onder de oppervlakte al is opgebouwd
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
+
+- Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
+
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT OP DE U225 INTRADERMALE INJECTOR
+
+- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
 **Veelgestelde vragen**
 
 Hoe weet ik of het een rimpel is of een droogtelijntje? +
@@ -4296,6 +4438,14 @@ Hoe prikkelbaar je huid op dit moment is
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
+**Wat we hiervoor inzetten**
+
+- Nordlys IPL € 75 Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. WAT HET INHOUDT OP DE NORDLYS
+
+- LED-therapie € 30 Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. WAT HET INHOUDT OP DE PRECISION PHOTONIC SYSTEM
+
+- Voedingsintolerantietest € 300 Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. WAT HET INHOUDT
+
 **Veelgestelde vragen**
 
 Gaat mijn rosacea weg? +
@@ -4418,6 +4568,10 @@ Bij een steelwratje is het antwoord meestal kort: als het het juiste plekje is, 
 
 - Beloven dat er nooit meer nieuwe bij komen. De aanleg en de wrijving blijven
 
+**Wat we hiervoor inzetten**
+
+- Fibromen verwijderen € 30 Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. WAT HET INHOUDT
+
 **Veelgestelde vragen**
 
 Waarom krijg ik ze in mijn hals en oksels? +
@@ -4501,6 +4655,12 @@ Bij striae telt het moment zwaarder dan de techniek. Wie begint zolang ze nog ro
 - Zonnebank of zon op verse striae. Het verschil in kleur wordt daar groter van
 
 - Elke week in de spiegel vergelijken. Striae veranderen in maanden, niet in weken
+
+**Wat we hiervoor inzetten**
+
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
+
+- Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
 
 **Veelgestelde vragen**
 
@@ -4926,6 +5086,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - Het grootste deel gebeurt thuis, dus de producten horen bij het traject
 
+- ONZUIVERE HUID
+
 **Veelgestelde vragen**
 
 Hoe lang duurt het traject? +
@@ -5037,6 +5199,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - Voor pigment of littekens die er al zitten past laser of needling
 
 - HUIDVEROUDERING
+
+- HUIDVERSLAPPING
 
 **Veelgestelde vragen**
 
@@ -5266,6 +5430,10 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - HUIDVEROUDERING
 
+- ACNELITTEKENS
+
+- RIMPELS
+
 **Veelgestelde vragen**
 
 Wanneer zie ik er iets van? +
@@ -5372,6 +5540,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - HUIDVEROUDERING
 
+- DOFFE HUID
+
 **Begin met een huidanalyse**
 
 De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
@@ -5455,6 +5625,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - Er blijft een klein plekje achter dat langzaam vervaagt
 
 - MOEDERVLEKKEN EN PLEKJES
+
+- STEELWRATJES
 
 **Veelgestelde vragen**
 
@@ -5589,6 +5761,10 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - HUIDVEROUDERING
 
 - LITTEKENS EN STRIAE
+
+- RIMPELS
+
+- HUIDVERSLAPPING
 
 **Veelgestelde vragen**
 
@@ -5916,6 +6092,10 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - DROGE HUID
 
+- DOFFE HUID
+
+- ONZUIVERE HUID
+
 **Begin met een huidanalyse**
 
 De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
@@ -6105,6 +6285,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - ALLE ZONES EN PRIJZEN
 
 - OVER LASERONTHARING
+
+- INGEGROEIDE HAREN
 
 **Begin met een huidanalyse**
 
@@ -6326,6 +6508,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - LITTEKENS EN STRIAE
 
+- KELOIDEN
+
 **Veelgestelde vragen**
 
 Mijn litteken is tien jaar oud. Heeft het nog zin? +
@@ -6540,6 +6724,10 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - PIGMENTVLEKKEN
 
+- COUPEROSE
+
+- OUDERDOMSVLEKKEN
+
 **Begin met een huidanalyse**
 
 De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
@@ -6623,6 +6811,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - DROGE HUID
 
 - GROVE PORIËN
+
+- DOFFE HUID
 
 **Veelgestelde vragen**
 
@@ -6752,6 +6942,12 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - PORIËN
 
+- DOFFE HUID
+
+- ONZUIVERE HUID
+
+- OUDERDOMSVLEKKEN
+
 **Begin met een huidanalyse**
 
 De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
@@ -6869,6 +7065,8 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - MELASMA
 
 - DONKERE KRINGEN
+
+- RIMPELS
 
 **Veelgestelde vragen**
 
@@ -6995,6 +7193,10 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - HUIDVEROUDERING
 
 - PORIËN
+
+- ACNELITTEKENS
+
+- RIMPELS
 
 **Begin met een huidanalyse**
 
@@ -7426,6 +7628,8 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
+- Huidverslapping
+
 **Veelgestelde vragen**
 
 Wat gebeurt er met mijn huid? +
@@ -7540,6 +7744,10 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
+- Rimpels
+
+- Striae
+
 **Veelgestelde vragen**
 
 Waarom deze pen en niet de SkinPen? +
@@ -7651,6 +7859,8 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 - Droge huid
 
 - Huidveroudering
+
+- Doffe huid
 
 **Veelgestelde vragen**
 
@@ -7868,6 +8078,10 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Littekens en striae
 
+- Rimpels
+
+- Huidverslapping
+
 **Veelgestelde vragen**
 
 Waarom zitten er twee lasers in één apparaat? +
@@ -7975,6 +8189,10 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 - TEGENOVER Nordlys Is geen laser maar een lamp met een bundel golflengtes. Dat werkt minder gericht op de haarwortel en komt minder diep. NAAR DE NORDLYS ›
 
 - TEGENOVER Precision Photonic System Werkt met licht op de huid zelf. Deze laser werkt op de haarwortel: twee verschillende doelen. NAAR DE PRECISION PHOTONIC SYSTEM ›
+
+**De problemen waar dit apparaat bij past.**
+
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
 
 **Veelgestelde vragen**
 
@@ -8089,6 +8307,10 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 - Poriën
 
 - Droge huid
+
+- Doffe huid
+
+- Onzuivere huid
 
 **Veelgestelde vragen**
 
@@ -8205,6 +8427,10 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 - Rosacea
 
 - Pigmentvlekken
+
+- Couperose
+
+- Ouderdomsvlekken
 
 **Veelgestelde vragen**
 
@@ -8325,6 +8551,12 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 - Pigmentvlekken
 
 - Poriën
+
+- Doffe huid
+
+- Onzuivere huid
+
+- Ouderdomsvlekken
 
 - Melasma
 
@@ -8570,6 +8802,12 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Poriën
 
+- Acnelittekens
+
+- Striae
+
+- Rimpels
+
 **Veelgestelde vragen**
 
 Wat is het verschil met de Dermapen? +
@@ -8687,6 +8925,8 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 - Melasma
 
 - Donkere kringen
+
+- Rimpels
 
 **Veelgestelde vragen**
 
@@ -11500,6 +11740,18 @@ Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die 
 
 Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel.
 
+NIGHTLASE, AAN HET ZACHTE GEHEMELTE
+
+**Snurken behandelen we met NightLase**
+
+Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel.
+
+30 minuten
+
+*PER SESSIE*
+
+Op aanvraag
+
 > knop: ALLES OVER NIGHTLASE
 
 **Wat helpt en wat we afraden**
@@ -11801,4 +12053,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_106 pagina's · 5464 tekstblokken · ongeveer 81.350 woorden._
+_106 pagina's · 5590 tekstblokken · ongeveer 82.870 woorden._

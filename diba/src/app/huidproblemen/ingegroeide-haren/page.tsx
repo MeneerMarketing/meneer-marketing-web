@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarCta,
@@ -225,6 +226,10 @@ export default function Pagina() {
         niet={INGEGROEID_WEL_NIET.niet}
         intro="Strak scheren, pincetten en scrubben houden het probleem in stand. Ermee stoppen levert vaak meer op dan er iets bij doen."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/ingegroeide-haren" />
 
       <PillarFaq items={INGEGROEID_FAQ} onderwerp="ingegroeide haren" />
 

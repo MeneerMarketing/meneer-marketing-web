@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Dwarsdoorsnede from "@/components/cellulitis/Dwarsdoorsnede";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarFaq,
@@ -172,6 +173,10 @@ export default function CellulitisPage() {
         niet={CELLULITIS_WEL_NIET.niet}
         intro="Cellulitis hangt samen met de bouw van je onderhuid. Dat het bij jou zichtbaar is, zegt niets over hoe je leeft."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/cellulitis" />
 
       <PillarFaq items={CELLULITIS_FAQ} onderwerp="cellulitis" />
 

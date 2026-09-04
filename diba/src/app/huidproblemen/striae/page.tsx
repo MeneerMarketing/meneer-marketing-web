@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarCta,
@@ -207,6 +208,10 @@ export default function StriaePage() {
         niet={STRIAE_WEL_NIET.niet}
         intro="Bij striae telt het moment zwaarder dan de techniek. Wie begint zolang ze nog rood zijn, houdt de meeste ruimte over."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/striae" />
 
       <PillarFaq items={STRIAE_FAQ} onderwerp="striae" />
 

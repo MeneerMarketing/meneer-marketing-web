@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Spiegeltest from "@/components/kringen/Spiegeltest";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   HuidanalyseAssen,
@@ -236,6 +237,10 @@ export default function DonkereKringenPage() {
           ["Schaduw", "Hoe diep de overgang naar de wang ligt"],
         ]}
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/donkere-kringen" />
 
       <PillarFaq items={KRINGEN_FAQ} onderwerp="donkere kringen" />
 

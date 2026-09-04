@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarCta,
@@ -213,6 +214,10 @@ export default function Pagina() {
         niet={GERSTEKORRELS_WEL_NIET.niet}
         intro="Bij milia is het antwoord meestal kort: als het het juiste bultje is, is het in een afspraak klaar."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/gerstekorrels" />
 
       <PillarFaq items={GERSTEKORRELS_FAQ} onderwerp="gerstekorrels" />
 

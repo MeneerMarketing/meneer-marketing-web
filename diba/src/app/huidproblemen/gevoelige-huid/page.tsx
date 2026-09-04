@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Stapelteller from "@/components/gevoelige-huid/Stapelteller";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   HuidanalyseAssen,
@@ -215,6 +216,10 @@ export default function GevoeligeHuidPage() {
           ["Structuur", "Hoe gelijkmatig de bovenlaag ligt"],
         ]}
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/gevoelige-huid" />
 
       <PillarFaq items={GEVOELIG_FAQ} onderwerp="een gevoelige huid" />
 

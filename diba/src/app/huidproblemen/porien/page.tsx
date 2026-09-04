@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   HuidanalyseAssen,
@@ -219,6 +220,10 @@ export default function PorienPage() {
           ["Glans", "Hoeveel het oppervlak weerkaatst"],
         ]}
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/porien" />
 
       <PillarFaq items={PORIEN_FAQ} onderwerp="poriën" />
 

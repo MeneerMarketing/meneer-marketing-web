@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AbcdeCheck from "@/components/moedervlekken/AbcdeCheck";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarFaq,
@@ -169,6 +170,10 @@ export default function MoedervlekkenPage() {
         intro="Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie stappen die aan een behandeling voorafgaan, en de eerste is de enige op deze site die je later niet kunt inhalen."
         punten={MOEDERVLEK_VOORWAARDEN}
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/moedervlekken" />
 
       <PillarFaq items={MOEDERVLEK_FAQ} onderwerp="moedervlekken" />
 

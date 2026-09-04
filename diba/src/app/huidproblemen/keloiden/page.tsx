@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   PillarCta,
@@ -210,6 +211,10 @@ export default function KeloidenPage() {
         niet={KELOID_WEL_NIET.niet}
         intro="Bij keloid telt de aanleg zwaarder dan de verzorging. Wat je wel in de hand hebt, is hoe vroeg er iemand naar kijkt."
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/keloiden" />
 
       <PillarFaq items={KELOID_FAQ} onderwerp="keloid" />
 

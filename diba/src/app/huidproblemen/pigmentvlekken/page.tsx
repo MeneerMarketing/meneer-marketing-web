@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import HetZonjaar from "@/components/pigment/HetZonjaar";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   HuidanalyseAssen,
@@ -275,6 +276,10 @@ export default function PigmentPage() {
           ["Textuur", "Of er naast kleur ook oneffenheid meespeelt"],
         ]}
       />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/pigmentvlekken" />
 
       <PillarFaq items={PIGMENT_FAQ} onderwerp="pigmentvlekken" />
 

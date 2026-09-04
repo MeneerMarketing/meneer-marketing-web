@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import AcneOnderDeHuid from "@/components/acne/AcneOnderDeHuid";
 import PillarNav from "@/components/pillar/PillarNav";
 import AcneTypeKiezer from "@/components/acne/AcneTypeKiezer";
@@ -445,6 +446,9 @@ export default function AcnePage() {
       </section>
 
       {/* ── Donkergroen 2 van 2: de volgende stap ─────────────────────── */}
+      {/* Welke behandelingen bij acne horen, en op welk apparaat ze draaien. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/acne" />
+
       <section className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
           <div>
