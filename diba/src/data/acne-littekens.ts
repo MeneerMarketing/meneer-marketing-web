@@ -133,7 +133,7 @@ export const VOLGORDE: readonly {
   {
     kop: "Pas dan de putjes",
     tekst:
-      "Wat overblijft is littekenweefsel, en dat is het enige waar een reeks behandelingen op de lange termijn iets aan verandert.",
+      "Wat overblijft is littekenweefsel. Dat is het enige type waar een reeks behandelingen op de lange termijn echt iets aan verandert.",
   },
 ];
 

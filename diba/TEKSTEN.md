@@ -784,21 +784,21 @@ In de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies 
 
 **Tabbladtitel:** Acnelittekens behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Acnevlekjes zijn vaak geen litteken maar kleur. Met schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.
+**Google-omschrijving:** Acnelittekens behandelen met peelings, microneedling en laser. Het verschil tussen een kuiltje, een rood vlekje en pigment.
 
 **WAT ER NA ACNE OP JE HUID ACHTERBLIJFT**
 
-Wat er na de puistjes achterbleef heet acnelittekens of acnevlekjes, en meestal is het geen van beide letterlijk. Een rood vlekje, een bruine vlek en een kuiltje zien er op een foto bijna hetzelfde uit. Ze vragen om drie verschillende behandelingen, en twee ervan trekken deels vanzelf weg.
+Wat er na acne achterblijft, is meestal een rood vlekje, een bruine vlek of een kuiltje. Ze lijken op elkaar en vragen een andere behandeling: peelings bij verkleuring, microneedling en laser bij kuiltjes.
 
-Met je vinger en licht van opzij kom je zelf een heel eind.
+In de intake stellen we onder strijklicht vast om welke van de drie het gaat.
 
-> knop: KIJK WAT JIJ HEBT
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
 **Vier beelden en wat elk ervan vraagt**
 
-Dit is een herkenningshulp en geen diagnose; het echte antwoord komt uit de meting. Maar deze vier dekken vrijwel alles wat er na acne achterblijft, en bij drie ervan is ons advies iets anders dan waar je voor kwam.
+Deze vier dekken vrijwel alles wat er na acne achterblijft. Welke het bij jou is, stelt de huidtherapeut in de intake vast.
 
 - Er zit nog actieve acne Er komen nog steeds nieuwe puistjes bij
 
@@ -830,13 +830,13 @@ Er is geen weefsel verloren gegaan. Dat betekent een andere behandeling, en vaak
 
 **De volgorde van behandelen**
 
-Elke stap hieronder is onmogelijk zolang de vorige niet klaar is. Dat is de reden dat een goede littekenbehandeling zelden begint op de dag dat je binnenkomt.
+Elke stap vraagt dat de vorige klaar is. Daarom begint een littekentraject zelden meteen met de laser.
 
 - STAP 1 Eerst de ontsteking Zolang er nieuwe puistjes bij komen, komen er nieuwe plekken bij. Elke littekenbehandeling in een ontstoken huid maakt de ontsteking bovendien erger.
 
 - STAP 2 Dan de kleur laten zakken Rood en bruin trekken deels vanzelf weg. Wat je na een half jaar nog ziet, is pas wat er echt zit; daarvoor behandel je iets dat toch was verdwenen.
 
-- STAP 3 Pas dan de putjes Wat overblijft is littekenweefsel, en dat is het enige waar een reeks behandelingen op de lange termijn iets aan verandert.
+- STAP 3 Pas dan de putjes Wat overblijft is littekenweefsel. Dat is het enige type waar een reeks behandelingen op de lange termijn echt iets aan verandert.
 
 Dan begint het bij de acne en niet bij de littekens.
 
@@ -846,7 +846,7 @@ Behandelen wat er ligt terwijl de bron nog loopt is dweilen, en in een ontstoken
 
 **Wat helpt en wat we afraden**
 
-Wat hier het meeste oplevert is vaak niet een behandeling maar de juiste volgorde, en weten wat je voor je hebt.
+De juiste volgorde levert hier vaak meer op dan de zwaarste behandeling.
 
 **DIT WERKT**
 
@@ -917,8 +917,6 @@ Nee. Wat wel kan is ze ondieper en minder zichtbaar maken, over een reeks van me
 **Plan een intake bij Diba Clinics**
 
 In het huidconsult stellen we vast of het littekenweefsel is of kleur. Soms is de uitkomst dat je een half jaar niets hoeft te doen, en dan zeggen we dat.
-
-> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -1468,21 +1466,21 @@ We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, da
 
 **Tabbladtitel:** Droge of vochtarme huid: het verschil | Diba Clinics
 
-**Google-omschrijving:** Een droge huid mist vet, een vochtarme huid mist water, en dat vraagt om iets anders. Hoe je het verschil ziet en wat er bij jou past.
+**Google-omschrijving:** Een droge of vochtarme huid behandelen met hydraterende behandelingen. Het verschil tussen te weinig vet en te weinig water.
 
 **EEN DROGE OF VOCHTARME HUID**
 
-Droog gaat over vet. Uitgedroogd of vochtarm gaat over water. Overal wordt dat als één lijn getekend, van vet naar droog, en dat klopt niet. Je kunt een vette huid hebben die vochtarm is.
+Een droge huid maakt te weinig vet aan, een vochtarme huid houdt te weinig water vast. Dat zijn twee verschillende dingen, en je kunt ze allebei tegelijk hebben.
 
-Een verkeerde inschatting leidt gemakkelijk tot producten die niet bij het probleem passen. De vragen hieronder helpen om het verschil te herkennen.
+We behandelen beide met hydraterende behandelingen en een verzorgingsschema. In de intake stellen we vast welke van de twee bij jou speelt.
 
-> knop: ZET JEZELF IN DE MATRIX
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zet jezelf neer in het vlak.**
+**Vet en vocht**
 
-Naar links en rechts gaat over vet, naar boven en beneden over water. Sleep het punt naar waar jij denkt te zitten en kijk wat er dan zou moeten gebeuren. Merk op dat de twee richtingen los van elkaar bewegen.
+Vet en vocht zijn twee losse assen. De huidtherapeut beoordeelt ze allebei, want een vette huid kan tegelijk vochtarm zijn.
 
 *VET*
 
@@ -1514,7 +1512,7 @@ Twijfel je tussen twee vakken? Kijk naar het seizoen. De wateras beweegt mee met
 
 **Dit horen we het vaakst.**
 
-Alle drie komen ze voort uit dezelfde denkfout: dat er één schaal is. Met twee assen in je hoofd vallen ze meteen op hun plek.
+Alle drie komen ze voort uit het idee dat vet en vocht op één schaal liggen. Dat is niet zo.
 
 - Mijn huid glimt én trekt. Kan dat? Ja, en daarom deze twee assen los van elkaar staan. Een vette huid kan uitgedroogd zijn. Wie dan een matterende reiniger pakt, maakt het erger.
 
@@ -1526,7 +1524,7 @@ Verdraagt je huid steeds minder producten en wordt hij snel rood? Dan is een dro
 
 **Wat helpt en wat we afraden**
 
-Het eerste kruisje rechts is de reflex die de meeste schade aanricht: meer erbij doen omdat het niet beter wordt.
+Meer producten gebruiken omdat het niet beter wordt, richt de meeste schade aan.
 
 **DIT WERKT**
 
@@ -1597,8 +1595,6 @@ De meting kost vijftig euro en dat is meteen het hele consult. Wat er daarna vol
 **Eerst weten in welk vak je zit.**
 
 We meten vet en water apart, en vertellen je welke as bij jou beweegt. Zit je in balans, dan is ons advies om niets te doen en houdt het daar op.
-
-> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -1830,21 +1826,21 @@ Bij milia is de afspraak kort en eenmalig. Blijkt het iets anders, dan hoor je d
 
 **Tabbladtitel:** Gevoelige huid: type of gevolg? | Diba Clinics
 
-**Google-omschrijving:** Een huid die opeens overal op reageert is zelden van aanleg veranderd. Wat er meestal bij is gekomen, en hoe je de barrière weer opbouwt.
+**Google-omschrijving:** Een gevoelige huid tot rust brengen met milde behandelingen en een verzorgingsschema dat je huid aankan.
 
 **EEN HUID DIE SNEL REAGEERT**
 
-Een huid die jarenlang alles verdroeg en het opeens niet meer doet, is zelden veranderd van aanleg. Er is meestal iets bij gekomen, en daarna nog iets, en alles werkt op dezelfde barrière.
+Een huid die snel reageert, heeft meestal een verzwakte huidbarrière. We brengen die tot rust met milde behandelingen en een verzorgingsschema dat je huid aankan.
 
-Je ziet dat niet, omdat je het per product bekijkt en niet bij elkaar optelt. Hieronder tellen we het wel op.
+In de intake lopen we je huidverzorging langs. Vaak zitten er meerdere prikkelende producten in die samen te veel worden.
 
-> knop: TEL JE ROUTINE OP
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Vink aan wat je nu gebruikt.**
+**Wat we doornemen**
 
-Elk van deze dingen kan op zichzelf prima zijn. Het gaat om wat er samen op dezelfde barrière werkt, en om de combinaties die op dezelfde dag botsen.
+We lopen je verzorging langs. Elk product kan op zichzelf prima zijn; het gaat om wat er samen op dezelfde barrière werkt.
 
 - Retinol of vitamine A Ook in lage sterkte en ook als het maar twee keer per week is
 
@@ -1876,21 +1872,21 @@ Kijk hieronder of een van de aandoeningen je bekend voorkomt. Zo ja, dan begint 
 
 **Vier aandoeningen die zo beginnen.**
 
-Een gevoelige huid is een klacht en geen diagnose. Deze vier beginnen alle vier met dezelfde zin, en ze vragen alle vier iets anders. Herken je er een, dan begint het verhaal daar.
+Een gevoelige huid is een klacht en geen diagnose. Deze vier aandoeningen beginnen vaak op dezelfde manier en vragen elk iets anders.
 
-- Rosacea Blijvende roodheid op wangen en neus, opvlammingen na warmte, alcohol of inspanning, en soms bultjes zonder mee-eters. NAAR DE ROSACEAPAGINA
+- Rosacea Blijvende roodheid op wangen en neus, opvlammingen na warmte of alcohol, soms bultjes zonder mee-eters. NAAR DE ROSACEAPAGINA
 
 - Eczeem Jeuk die voorop staat, droge schilferende plekken die terugkomen op dezelfde plaatsen, soms kloofjes. NAAR DE ECZEEMPAGINA
 
 - Contactallergie De reactie komt op een afgebakende plek en begint uren tot dagen na contact, vaak met een duidelijke vorm. NAAR HUIDUITSLAG
 
-- Een uitgedroogde barrière Trekkerig na het wassen, prikkende producten die vroeger prima waren, en het is 's winters erger. NAAR DE DROGE HUID
+- Een uitgedroogde barrière Een trekkerig gevoel na het wassen, producten die prikken terwijl ze vroeger prima waren, en 's winters erger. NAAR DE DROGE HUID
 
 Bij jeuk die je uit je slaap houdt, bij kloofjes of wondjes, bij plekken die niet weggaan of steeds terugkomen op dezelfde plaats. Dat is geen gevoelige huid meer en daar zijn wij niet de juiste plek voor.
 
 **Wat helpt en wat we afraden**
 
-Het eerste kruisje rechts is het hardnekkigste verhaal in de huidverzorging: dat prikken betekent dat het werkt.
+Prikken betekent niet dat een product werkt. Dat is het hardnekkigste misverstand in de huidverzorging.
 
 **DIT WERKT**
 
@@ -1966,21 +1962,19 @@ De meting kost vijftig euro. Wat daarna volgt staat per behandeling op de prijze
 
 We lopen je routine langs, meten hoe je barrière ervoor staat en zeggen wat eruit kan. Vaak is dat het hele advies, en dan is de behandeling dat je twee weken minder doet.
 
-> knop: PLAN EEN HUIDCONSULT
-
 ---
 
 ### /huidproblemen/huiduitslag
 
 **Tabbladtitel:** Huiduitslag: bel je vandaag of morgen? | Diba Clinics
 
-**Google-omschrijving:** Huiduitslag is een symptoom met tientallen oorzaken. Hier staat wanneer het naar de huisarts moet en wanneer wij iets voor je kunnen doen.
+**Google-omschrijving:** Huiduitslag is een symptoom met tientallen oorzaken. Wanneer je vandaag nog belt, en welke soorten het vaakst voorkomen.
 
 **HUIDUITSLAG, EN WANNEER HET HAAST HEEFT**
 
-Huiduitslag is geen aandoening maar een symptoom, met tientallen oorzaken die uiteenlopen van onschuldig tot spoedeisend. Wij stellen daar geen diagnose over en we stellen je ook niet gerust, want dat zou meewegen in of je belt.
+Huiduitslag is een symptoom en geen aandoening. De oorzaken lopen uiteen van onschuldig tot spoedeisend, en een diagnose hoort bij je huisarts.
 
-Wat we wel doen is de test uitleggen die artsen zelf gebruiken om haast van geen haast te onderscheiden. Hij kost tien seconden en bijna niemand kent hem.
+Op deze pagina staan de signalen waarbij je vandaag nog belt, en de veelvoorkomende soorten uitslag met wat eraan te doen is.
 
 > knop: KIJK EERST NAAR DE ALARMSIGNALEN
 
@@ -2012,7 +2006,7 @@ De huisartsenpost
 
 112
 
-**Drukken de vlekken weg of blijven ze staan?**
+**De glastest**
 
 Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Hieronder staan beide uitkomsten naast elkaar, zodat je herkent welke je ziet in plaats van moet raden.
 
@@ -2048,19 +2042,19 @@ Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars d
 
 **Vier die veel voorkomen.**
 
-Dit is geen lijst om jezelf mee te diagnosticeren, en er staan bewust geen foto's bij. Het helpt je vertellen wat je ziet, en de laatste kolom zegt waar je ermee heen gaat.
+Deze vier komen het vaakst voor. Ze helpen je beschrijven wat je ziet, en dat maakt het gesprek met de huisarts korter.
 
 - Contactreactie Een afgebakende plek met een duidelijke vorm, precies waar iets je huid raakte. Begint uren tot dagen erna. WAAR JE HEEN GAAT Huisarts, en die kan allergietesten aanvragen als dat nodig is.
 
 - Eczeem Jeuk staat voorop, droge schilferende plekken die steeds op dezelfde plaats terugkomen. WAAR JE HEEN GAAT Huisarts. Er bestaat behandeling voor en die begint daar. NAAR DE ECZEEMPAGINA
 
-- Netelroos Verheven, jeukende bulten die van plaats veranderen en binnen een dag weer weg zijn, om elders terug te komen. WAAR JE HEEN GAAT Huisarts. Bij zwelling van lippen, tong of keel of bij benauwdheid direct bellen.
+- Netelroos Verheven, jeukende bulten die van plaats veranderen en binnen een dag weer weg zijn, om elders terug te komen. WAAR JE HEEN GAAT Huisarts. Bij zwelling van lippen of keel: bel 112.
 
-- Een virus Uitslag samen met koorts of ziek zijn, vaak vrij plotseling en verspreid over het lichaam. WAAR JE HEEN GAAT Huisarts, en met spoed als iemand er ziek uitziet.
+- Een virus Uitslag samen met koorts of ziek zijn, vaak vrij plotseling en verspreid over het lichaam. WAAR JE HEEN GAAT Huisarts, en met spoed als iemand er ziek bij uitziet.
 
 **Wat helpt en wat we afraden**
 
-Het eerste kruisje rechts maakt het werk van de arts moeilijker: zalf op onbekende uitslag verandert het beeld dat hij moet beoordelen.
+Zalf op onbekende uitslag verandert het beeld dat de arts moet beoordelen.
 
 **DIT WERKT**
 
@@ -11503,4 +11497,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5327 tekstblokken · ongeveer 80.011 woorden._
+_105 pagina's · 5324 tekstblokken · ongeveer 79.827 woorden._

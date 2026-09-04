@@ -44,7 +44,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/droge-huid",
   titel: "Droge of vochtarme huid: het verschil",
   omschrijving:
-    "Een droge huid mist vet, een vochtarme huid mist water, en dat vraagt om iets anders. Hoe je het verschil ziet en wat er bij jou past.",
+    "Een droge of vochtarme huid behandelen met hydraterende behandelingen. Het verschil tussen te weinig vet en te weinig water.",
 });
 
 const PAD = "/huidproblemen/droge-huid";
@@ -94,19 +94,19 @@ export default function DrogeHuidPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Droog gaat over vet. Uitgedroogd of vochtarm gaat over water.
-              Overal wordt dat als één lijn getekend, van vet naar droog, en dat
-              klopt niet. Je kunt een vette huid hebben die vochtarm is.
+              Een droge huid maakt te weinig vet aan, een vochtarme huid houdt
+              te weinig water vast. Dat zijn twee verschillende dingen, en je
+              kunt ze allebei tegelijk hebben.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Een verkeerde inschatting leidt gemakkelijk tot producten die niet
-              bij het probleem passen. De vragen hieronder helpen om het
-              verschil te herkennen.
+              We behandelen beide met hydraterende behandelingen en een
+              verzorgingsschema. In de intake stellen we vast welke van de twee
+              bij jou speelt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#matrix">Zet jezelf in de matrix</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -143,12 +143,12 @@ export default function DrogeHuidPage() {
         <div className="mx-auto">
           <SectieKop
             icoon={PorieVocht}
-            label="De huidmatrix"
+            label="Twee assen"
             // Twee gelijke helften eronder, dus de introzin volgt die indeling.
             raster="gelijk"
-            kop="Zet jezelf neer"
-            accent="in het vlak."
-            intro="Naar links en rechts gaat over vet, naar boven en beneden over water. Sleep het punt naar waar jij denkt te zitten en kijk wat er dan zou moeten gebeuren. Merk op dat de twee richtingen los van elkaar bewegen."
+            kop="Vet en"
+            accent="vocht"
+            intro="Vet en vocht zijn twee losse assen. De huidtherapeut beoordeelt ze allebei, want een vette huid kan tegelijk vochtarm zijn."
           />
           <Huidmatrix />
         </div>
@@ -164,7 +164,7 @@ export default function DrogeHuidPage() {
             label="Drie misverstanden"
             kop="Dit horen we"
             accent="het vaakst."
-            intro="Alle drie komen ze voort uit dezelfde denkfout: dat er één schaal is. Met twee assen in je hoofd vallen ze meteen op hun plek."
+            intro="Alle drie komen ze voort uit het idee dat vet en vocht op één schaal liggen. Dat is niet zo."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
@@ -197,7 +197,7 @@ export default function DrogeHuidPage() {
       <WelNiet
         wel={DROGE_HUID_WEL_NIET.wel}
         niet={DROGE_HUID_WEL_NIET.niet}
-        intro="Het eerste kruisje rechts is de reflex die de meeste schade aanricht: meer erbij doen omdat het niet beter wordt."
+        intro="Meer producten gebruiken omdat het niet beter wordt, richt de meeste schade aan."
       />
 
       <NulmetingAssen

@@ -145,7 +145,7 @@ export const ANDERE_OORZAKEN = [
     id: "rosacea",
     naam: "Rosacea",
     herken:
-      "Blijvende roodheid op wangen en neus, opvlammingen na warmte, alcohol of inspanning, en soms bultjes zonder mee-eters.",
+      "Blijvende roodheid op wangen en neus, opvlammingen na warmte of alcohol, soms bultjes zonder mee-eters.",
     pad: "/huidproblemen/rosacea",
     link: "Naar de rosaceapagina",
   },
@@ -169,7 +169,7 @@ export const ANDERE_OORZAKEN = [
     id: "barriere",
     naam: "Een uitgedroogde barrière",
     herken:
-      "Trekkerig na het wassen, prikkende producten die vroeger prima waren, en het is 's winters erger.",
+      "Een trekkerig gevoel na het wassen, producten die prikken terwijl ze vroeger prima waren, en 's winters erger.",
     pad: "/huidproblemen/droge-huid",
     link: "Naar de droge huid",
   },

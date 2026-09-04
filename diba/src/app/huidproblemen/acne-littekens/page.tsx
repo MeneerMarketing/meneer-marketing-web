@@ -50,7 +50,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/acne-littekens",
   titel: "Acnelittekens behandelen in Rotterdam",
   omschrijving:
-    "Acnevlekjes zijn vaak geen litteken maar kleur. Met schuin licht stel je zelf vast of het een putje is, roodheid of pigment, en dat bepaalt wat helpt.",
+    "Acnelittekens behandelen met peelings, microneedling en laser. Het verschil tussen een kuiltje, een rood vlekje en pigment.",
 });
 
 const PAD = "/huidproblemen/acne-littekens";
@@ -119,19 +119,19 @@ export default function AcneLittekensPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wat er na de puistjes achterbleef heet acnelittekens of
-              acnevlekjes, en meestal is het geen van beide letterlijk. Een rood
-              vlekje, een bruine vlek en een kuiltje zien er op een foto bijna
-              hetzelfde uit. Ze vragen om drie verschillende behandelingen, en
-              twee ervan trekken deels vanzelf weg.
+              Wat er na acne achterblijft, is meestal een rood vlekje, een
+              bruine vlek of een kuiltje. Ze lijken op elkaar en vragen een
+              andere behandeling: peelings bij verkleuring, microneedling en
+              laser bij kuiltjes.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Met je vinger en licht van opzij kom je zelf een heel eind.
+              In de intake stellen we onder strijklicht vast om welke van de
+              drie het gaat.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#welke">Kijk wat jij hebt</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -171,7 +171,7 @@ export default function AcneLittekensPage() {
             raster="gelijk"
             kop="Vier beelden en"
             accent="wat elk ervan vraagt"
-            intro="Dit is een herkenningshulp en geen diagnose; het echte antwoord komt uit de meting. Maar deze vier dekken vrijwel alles wat er na acne achterblijft, en bij drie ervan is ons advies iets anders dan waar je voor kwam."
+            intro="Deze vier dekken vrijwel alles wat er na acne achterblijft. Welke het bij jou is, stelt de huidtherapeut in de intake vast."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -192,7 +192,7 @@ export default function AcneLittekensPage() {
             label="De volgorde"
             kop="De volgorde"
             accent="van behandelen"
-            intro="Elke stap hieronder is onmogelijk zolang de vorige niet klaar is. Dat is de reden dat een goede littekenbehandeling zelden begint op de dag dat je binnenkomt."
+            intro="Elke stap vraagt dat de vorige klaar is. Daarom begint een littekentraject zelden meteen met de laser."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -205,7 +205,9 @@ export default function AcneLittekensPage() {
                   Stap {i + 1}
                 </span>
                 <h3 className="diba-card-title mt-3">{stap.kop}</h3>
-                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken en niet
+                      van de lengte, dus reserveren we de ruimte in plaats van tekens te tellen. */}
+                <p className="mt-3 min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(stap.tekst)}
                 </p>
               </li>
@@ -236,7 +238,7 @@ export default function AcneLittekensPage() {
       <WelNiet
         wel={ACNE_LITTEKENS_WEL_NIET.wel}
         niet={ACNE_LITTEKENS_WEL_NIET.niet}
-        intro="Wat hier het meeste oplevert is vaak niet een behandeling maar de juiste volgorde, en weten wat je voor je hebt."
+        intro="De juiste volgorde levert hier vaak meer op dan de zwaarste behandeling."
       />
 
       <NulmetingAssen

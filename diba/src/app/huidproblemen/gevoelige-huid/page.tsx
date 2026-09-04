@@ -48,7 +48,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/gevoelige-huid",
   titel: "Gevoelige huid: type of gevolg?",
   omschrijving:
-    "Een huid die opeens overal op reageert is zelden van aanleg veranderd. Wat er meestal bij is gekomen, en hoe je de barrière weer opbouwt.",
+    "Een gevoelige huid tot rust brengen met milde behandelingen en een verzorgingsschema dat je huid aankan.",
 });
 
 const PAD = "/huidproblemen/gevoelige-huid";
@@ -98,18 +98,18 @@ export default function GevoeligeHuidPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Een huid die jarenlang alles verdroeg en het opeens niet meer
-              doet, is zelden veranderd van aanleg. Er is meestal iets bij
-              gekomen, en daarna nog iets, en alles werkt op dezelfde barrière.
+              Een huid die snel reageert, heeft meestal een verzwakte
+              huidbarrière. We brengen die tot rust met milde behandelingen en
+              een verzorgingsschema dat je huid aankan.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je ziet dat niet, omdat je het per product bekijkt en niet bij
-              elkaar optelt. Hieronder tellen we het wel op.
+              In de intake lopen we je huidverzorging langs. Vaak zitten er
+              meerdere prikkelende producten in die samen te veel worden.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#teller">Tel je routine op</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -146,10 +146,10 @@ export default function GevoeligeHuidPage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De stapelteller"
-            kop="Vink aan wat je"
-            accent="nu gebruikt."
-            intro="Elk van deze dingen kan op zichzelf prima zijn. Het gaat om wat er samen op dezelfde barrière werkt, en om de combinaties die op dezelfde dag botsen."
+            label="In het consult"
+            kop="Wat we"
+            accent="doornemen"
+            intro="We lopen je verzorging langs. Elk product kan op zichzelf prima zijn; het gaat om wat er samen op dezelfde barrière werkt."
           />
           <Stapelteller />
         </div>
@@ -165,7 +165,7 @@ export default function GevoeligeHuidPage() {
             label="Als het dat niet is"
             kop="Vier aandoeningen"
             accent="die zo beginnen."
-            intro="Een gevoelige huid is een klacht en geen diagnose. Deze vier beginnen alle vier met dezelfde zin, en ze vragen alle vier iets anders. Herken je er een, dan begint het verhaal daar."
+            intro="Een gevoelige huid is een klacht en geen diagnose. Deze vier aandoeningen beginnen vaak op dezelfde manier en vragen elk iets anders."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2 lg:grid-cols-4">
@@ -200,7 +200,7 @@ export default function GevoeligeHuidPage() {
       <WelNiet
         wel={GEVOELIG_WEL_NIET.wel}
         niet={GEVOELIG_WEL_NIET.niet}
-        intro="Het eerste kruisje rechts is het hardnekkigste verhaal in de huidverzorging: dat prikken betekent dat het werkt."
+        intro="Prikken betekent niet dat een product werkt. Dat is het hardnekkigste misverstand in de huidverzorging."
       />
 
       <NulmetingAssen

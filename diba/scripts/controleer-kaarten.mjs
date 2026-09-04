@@ -71,6 +71,18 @@ const meet = () => {
     });
     if (teksten.some((t) => !t)) continue;
 
+    /* Blokken die met flex-grow worden uitgerekt zijn al even hoog; het aantal regels
+       tekst binnen dat blok verschilt dan wel, maar dat zie je niet. Op /gevoelige-huid
+       staan vier kaarten van 211 pixels met alinea's van 84, en toch meldde deze meter
+       daar een verschil. Dat is een fout in de meter en niet in de pagina. */
+    const uitgerekt = teksten.every(
+      (t) => parseFloat(getComputedStyle(t).flexGrow) > 0,
+    );
+    const hoogtes = kaarten.map((c) =>
+      Math.round(c.getBoundingClientRect().height),
+    );
+    if (uitgerekt && new Set(hoogtes).size === 1) continue;
+
     const rs = teksten.map(regels);
     if (new Set(rs).size === 1) continue;
 

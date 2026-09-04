@@ -43,7 +43,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/huiduitslag",
   titel: "Huiduitslag: bel je vandaag of morgen?",
   omschrijving:
-    "Huiduitslag is een symptoom met tientallen oorzaken. Hier staat wanneer het naar de huisarts moet en wanneer wij iets voor je kunnen doen.",
+    "Huiduitslag is een symptoom met tientallen oorzaken. Wanneer je vandaag nog belt, en welke soorten het vaakst voorkomen.",
 });
 
 const PAD = "/huidproblemen/huiduitslag";
@@ -92,16 +92,14 @@ export default function HuiduitslagPage() {
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Huiduitslag is geen aandoening maar een symptoom, met tientallen
-            oorzaken die uiteenlopen van onschuldig tot spoedeisend. Wij stellen
-            daar geen diagnose over en we stellen je ook niet gerust, want dat
-            zou meewegen in of je belt.
+            Huiduitslag is een symptoom en geen aandoening. De oorzaken lopen
+            uiteen van onschuldig tot spoedeisend, en een diagnose hoort bij je
+            huisarts.
           </p>
 
           <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Wat we wel doen is de test uitleggen die artsen zelf gebruiken om
-            haast van geen haast te onderscheiden. Hij kost tien seconden en
-            bijna niemand kent hem.
+            Op deze pagina staan de signalen waarbij je vandaag nog belt, en de
+            veelvoorkomende soorten uitslag met wat eraan te doen is.
           </p>
 
           <div className="mt-9">
@@ -176,11 +174,11 @@ export default function HuiduitslagPage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De glastest"
+            label="Een snelle controle"
             // Twee gelijke helften eronder, dus de introzin volgt die indeling.
             raster="gelijk"
-            kop="Drukken de vlekken weg"
-            accent="of blijven ze staan?"
+            kop="De"
+            accent="glastest"
             intro="Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Hieronder staan beide uitkomsten naast elkaar, zodat je herkent welke je ziet in plaats van moet raden."
           />
           <Glastest />
@@ -197,7 +195,7 @@ export default function HuiduitslagPage() {
             label="Gewone oorzaken"
             kop="Vier die veel"
             accent="voorkomen."
-            intro="Dit is geen lijst om jezelf mee te diagnosticeren, en er staan bewust geen foto's bij. Het helpt je vertellen wat je ziet, en de laatste kolom zegt waar je ermee heen gaat."
+            intro="Deze vier komen het vaakst voor. Ze helpen je beschrijven wat je ziet, en dat maakt het gesprek met de huisarts korter."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2 lg:grid-cols-4">
@@ -210,7 +208,9 @@ export default function HuiduitslagPage() {
                 <p className="diba-label mt-5 text-[var(--t-muted)]">
                   Waar je heen gaat
                 </p>
-                <p className="mt-1.5 text-[15px] leading-6 text-[var(--t-body)]">
+                {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken en niet
+                      van de lengte, dus reserveren we de ruimte in plaats van tekens te tellen. */}
+                <p className="mt-1.5 min-h-[3lh] text-[15px] leading-6 text-[var(--t-body)]">
                   {o.waarheen.replace(/\[[^\]]+\]/g, "").trim()}
                 </p>
                 {"pad" in o && o.pad ? (
@@ -230,7 +230,7 @@ export default function HuiduitslagPage() {
       <WelNiet
         wel={UITSLAG_WEL_NIET.wel}
         niet={UITSLAG_WEL_NIET.niet}
-        intro="Het eerste kruisje rechts maakt het werk van de arts moeilijker: zalf op onbekende uitslag verandert het beeld dat hij moet beoordelen."
+        intro="Zalf op onbekende uitslag verandert het beeld dat de arts moet beoordelen."
       />
 
       <PillarFaq items={UITSLAG_FAQ} onderwerp="huiduitslag" />

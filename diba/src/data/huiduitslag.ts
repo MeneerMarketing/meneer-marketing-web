@@ -111,13 +111,13 @@ export const OORZAKEN = [
     herken:
       "Verheven, jeukende bulten die van plaats veranderen en binnen een dag weer weg zijn, om elders terug te komen.",
     waarheen:
-      "Huisarts. Bij zwelling van lippen, tong of keel of bij benauwdheid direct bellen. [MEDISCHE-CHECK-ROJDA]",
+      "Huisarts. Bij zwelling van lippen of keel: bel 112. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     naam: "Een virus",
     herken:
       "Uitslag samen met koorts of ziek zijn, vaak vrij plotseling en verspreid over het lichaam.",
-    waarheen: "Huisarts, en met spoed als iemand er ziek uitziet.",
+    waarheen: "Huisarts, en met spoed als iemand er ziek bij uitziet.",
   },
 ] as const;
 
