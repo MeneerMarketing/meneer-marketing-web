@@ -55,7 +55,13 @@ export type Werkwijze =
  * weten waar je op mikt. [MEDISCHE-CHECK-ROJDA]
  */
 export type Doelwit =
-  "melanine" | "bloedvat" | "water" | "bindweefsel" | "hoornlaag" | "geen";
+  | "melanine"
+  | "bloedvat"
+  | "water"
+  | "bindweefsel"
+  | "hoornlaag"
+  | "licht"
+  | "geen";
 
 export const DOELWITTEN: Readonly<
   Record<Doelwit, { readonly naam: string; readonly zin: string }>
@@ -80,9 +86,13 @@ export const DOELWITTEN: Readonly<
     naam: "De hoornlaag",
     zin: "De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidlagen worden niet op dezelfde manier behandeld.",
   },
+  licht: {
+    naam: "De huid zelf",
+    zin: "Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.",
+  },
   geen: {
-    naam: "Niets",
-    zin: "Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.",
+    naam: "Meet en fotografeert",
+    zin: "De EVE-M legt vast hoe je huid er vandaag uitziet en meet wat eronder zit. Er raakt niets je huid.",
   },
 };
 
@@ -546,7 +556,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     behandelingen: ["lumi-8-led"],
 
     werkwijze: "licht",
-    doelwit: "geen",
+    doelwit: "licht",
     diepte: 25,
     fasen: [
       {

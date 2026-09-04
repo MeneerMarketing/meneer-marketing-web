@@ -308,45 +308,45 @@ Twijfel je over de route, kijk dan even in Maps: dat weet actueler dan deze pagi
 
 **Tabbladtitel:** Ons verhaal | Diba Clinics
 
-**Google-omschrijving:** Vijf regels waar deze kliniek zich aan houdt, en bij elke regel wat die ons kost. Ook als dat een behandeling is die we niet doen.
+**Google-omschrijving:** Huidkliniek in Rotterdam sinds 2017. Geregistreerde huidtherapeuten, een traject dat begint met een huidanalyse en prijzen die op de site staan.
 
-**VIJF REGELS WAAR WE ONS AAN HOUDEN**
+**EEN HUIDKLINIEK IN ROTTERDAM**
 
-Elke kliniek zegt eerlijk te zijn. Bijna geen enkele zet erbij wat die eerlijkheid haar kost, en zonder die prijs is een principe een slogan.
+Sinds 2017 helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens, huidverbetering en ongewenst haar.
 
-Hieronder staan de vijf regels waar we ons sinds 2017 aan houden, met bij elke regel wat we ervoor inleveren.
+Hieronder staat hoe we werken: waar een traject begint, wat het kost en waar onze behandelaars voor staan.
 
-Deze regels zijn geen bedachte kernwaarden. Het zijn de regels die de rest van deze site al afdwingt.
+Elke afspraak begint met een huidanalyse, en daaruit volgt het behandelplan.
 
-De prijzen staan openbaar omdat regel drie dat zegt. Bij elk apparaat staat wat het niet kan omdat regel vier dat zegt. Elke pagina is bewijs, of ze klopt niet.
+De prijzen staan per sessie op de site, dus je weet voordat je komt wat het kost. Bij elke behandeling lees je hoeveel sessies erbij horen.
 
 **Elke prijs staat op de site**
 
-Per sessie, per zone, per variant, inclusief de duurste. Geen bedrag dat je pas hoort als je al op de stoel ligt.
+Per sessie, per zone, per variant, inclusief de duurste. Je weet voordat je komt waar je aan toe bent.
 
-WAT HET ONS KOST
+WAT DAT VOOR JOU BETEKENT
 
-Het onderhandelingsvoordeel. Een bedrag dat pas aan de balie valt, valt op het moment dat je het moeilijkst nee zegt. Dat voordeel geven we weg, en dat merken we.
+Je kunt thuis rustig vergelijken en beslissen, in plaats van aan de balie op het moment dat het het lastigst is.
 
 > knop: KIJK ZELF, ALLES STAAT ER
 
 WAT ER WEL EN NIET IN HUIS KOMT
 
-**Elk principe heeft een rekening.**
+**Waar wij voor staan**
 
-- Elk traject begint met een meting Elk traject begint met een meting, ook als je precies weet wat je wil. Zonder nulpunt is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel. WAT HET ONS KOST Een afspraak die geen behandeling is. Een deel van de mensen haakt daar af, want ze wilden vandaag geholpen worden en niet gemeten.
+- Sinds 2017 in Rotterdam Diba Clinics is in 2017 begonnen als huidkliniek in Rotterdam. Onze huidtherapeuten en specialisten behandelen acne, pigment, littekens, huidverbetering en ongewenst haar. WAT DAT VOOR JOU BETEKENT Een team dat elke dag met dezelfde huidklachten werkt, en apparatuur waar het in de praktijk mee is ingeregeld.
 
-- Nee zeggen mag, en gebeurt Past een behandeling niet bij je huid, bij je hersteltijd of bij het moment, dan hoor je dat. Ook als je er speciaal voor gekomen bent. WAT HET ONS KOST Omzet, direct en meetbaar. Elke nee is een behandeling die niet geboekt wordt, en er staat niets tegenover behalve dat het klopt.
+- Elk traject begint met een huidanalyse De behandelaar bekijkt je huid en meet met de EVE-M wat er onder de oppervlakte speelt: pigment, vocht, poriën en structuur. Daaruit volgt het behandelplan. WAT DAT VOOR JOU BETEKENT Je ziet zelf waar de adviezen vandaan komen, en bij een volgende afspraak leggen we de opnames naast elkaar.
 
-- Bij elke behandeling staat wat hij niet kan Op elke behandelpagina en bij elk apparaat staat de grens erbij, even nadrukkelijk als wat het wel doet. Een peeling neemt geen rimpels weg, want hij komt daar niet. WAT HET ONS KOST De helft van je verkooptekst. Een pagina die alleen voordelen opsomt verkoopt beter; hij levert alleen teleurstelling op bij de tweede afspraak.
+- Huidtherapeuten met een registratie Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici, en de kliniek is aangesloten bij ANBOS. Beide vragen bij- en nascholing. WAT DAT VOOR JOU BETEKENT Veel aanvullende pakketten stellen die inschrijving als eis voordat ze een behandeling vergoeden.
 
-- Geen belofte zonder getal Geen resultaatgaranties, geen voor-en-na dat niet klopt, geen aantal sessies dat we niet kunnen onderbouwen. Wat we niet weten, zeggen we niet. WAT HET ONS KOST De grote woorden. Een pagina vol stellige beloftes leest spannender dan deze, en dat blijft zo.
+- Contracten met zorgverzekeraars Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket. WAT DAT VOOR JOU BETEKENT In de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.
 
-**Klopt er iets niet?**
+**Begin met een huidanalyse**
 
-Kom je op deze site een belofte tegen zonder onderbouwing, een prijs die niet klopt of een behandeling zonder grens erbij, zeg het dan. Een lijst regels is pas iets waard als iemand er iets tegenin kan brengen.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
-> knop: LAAT HET WETEN
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -6272,9 +6272,9 @@ WAT ER GEBEURT
 
 GRIJPT AAN OP
 
-Niets
+De huid zelf
 
-Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.
+Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
@@ -7268,7 +7268,7 @@ TOT HOE DIEP
 
 - Peelinglijnen Grijpt aan op de hoornlaag 24
 
-- LUMI 8-LED Geen specifiek doelwit 25
+- LUMI 8-LED Grijpt aan op de huid zelf 25
 
 - Nordlys Grijpt aan op bloedvaten 45
 
@@ -7296,7 +7296,7 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 > knop: 1 APPARAAT Meten Kijken zonder iets te veranderen.
 
-> knop: 4 APPARATEN Licht en laser Energie die door één ding wordt opgenomen. Grijpt aan op water, melanine, bloedvaten
+> knop: 4 APPARATEN Licht en laser Energie die door één ding wordt opgenomen. Grijpt aan op water, melanine, bloedvaten, de huid zelf
 
 > knop: 2 APPARATEN Naalden Herstel uitlokken met kleine kanaaltjes. Grijpt aan op bindweefsel
 
@@ -7710,9 +7710,9 @@ WAT ER GEBEURT
 
 GRIJPT AAN OP
 
-Niets
+Meet en fotografeert
 
-Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.
+De EVE-M legt vast hoe je huid er vandaag uitziet en meet wat eronder zit. Er raakt niets je huid.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
@@ -8150,9 +8150,9 @@ WAT ER GEBEURT
 
 GRIJPT AAN OP
 
-Niets
+De huid zelf
 
-Tijdens de huidanalyse wordt de huid alleen bekeken en niet behandeld.
+Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.
 
 Loopt vanzelf door. Klik een stap om zelf te sturen.
 
@@ -11675,4 +11675,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5405 tekstblokken · ongeveer 80.645 woorden._
+_105 pagina's · 5405 tekstblokken · ongeveer 80.623 woorden._
