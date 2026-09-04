@@ -239,6 +239,19 @@ export type Behandeling = {
    * daar de helft van zijn onderwerp verliezen.
    */
   readonly fotoInDeStoel?: { readonly src: string; readonly alt: string };
+  /**
+   * Behandelingen die hierbij horen, met per stuk de reden.
+   *
+   * Fotona 4D bestaat uit vier andere behandelingen die elk een eigen pagina hebben. Zonder
+   * dit veld zijn dat vijf losse pagina's die toevallig op hetzelfde apparaat draaien.
+   *
+   * De reden is het punt: een rijtje namen zegt niets, "de eerste van de vier stappen"
+   * zegt waarom je zou klikken.
+   */
+  readonly verwant?: readonly {
+    readonly slug: string;
+    readonly waarom: string;
+  }[];
   readonly faq?: readonly {
     readonly vraag: string;
     readonly antwoord: string;
@@ -946,10 +959,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "Fotona TimeWalker",
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
-    kort: "Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift.",
+    kort: "Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel.",
     lagen: ["opperhuid", "lederhuid-boven", "lederhuid-diep"],
     werking:
-      "Naarmate de huid veroudert wordt die slapper en minder elastisch. De Fotona TimeWalker pakt dat aan met verschillende gespecialiseerde laserbehandelingen die elk op één probleem mikken: 4D Lift voor een complete lifting van binnen én buiten, VectorLift voor de wenkbrauw- en oogregio, SmoothEye voor de oogcontour en LipLase voor lipvolume. [MEDISCHE-CHECK-ROJDA]",
+      "De Fotona TimeWalker is geen behandeling maar een platform: twee lasertypen in een kast, waarmee vijftien verschillende behandelingen te doen zijn. Wat je krijgt hangt af van de instelling, de puls en de zone, en dat maakt het verschil tussen een lichte peeling en een complete gezichtsbehandeling. Fotona 4D is daarvan de bekendste: vier behandelingen in een sessie, van binnenuit door de wang tot een afsluitende peeling. Hieronder staat welke er zijn en waar elk voor bedoeld is. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. [MEDISCHE-CHECK-ROJDA]",
     sessies:
@@ -1019,6 +1032,989 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
      Dit is bovendien de enige behandeling op de site die niet cosmetisch is en niet over
      de huid gaat. Dat maakt hem geen buitenbeentje maar wel een die zijn eigen grens moet
      benoemen, en die grens staat in "niet": snurken is niet hetzelfde als slaapapneu. */
+  {
+    slug: "fotona-4d",
+    verwant: [
+      {
+        slug: "smoothliftin",
+        waarom: "De eerste van de vier stappen, van binnenuit door de wang.",
+      },
+      {
+        slug: "frac3",
+        waarom:
+          "De tweede stap: fractioneel op de diepte, gericht op onregelmatigheden.",
+      },
+      {
+        slug: "piano",
+        waarom: "De derde stap: vlakke, diepe verwarming voor versteviging.",
+      },
+      {
+        slug: "superficial-peel",
+        waarom: "De afsluitende stap: een lichte laserpeeling voor gladheid.",
+      },
+      {
+        slug: "fotona-4d-men",
+        waarom: "Hetzelfde protocol, ingesteld op een dikkere huid.",
+      },
+    ],
+    inDeStoel: [
+      "Je krijgt een beschermbril op die de hele behandeling op blijft. De eerste stap gebeurt in je mond: er komt een handstuk tegen de binnenkant van je wang en dat voelt warm.",
+      "Daarna werkt de behandelaar aan de buitenkant. De verwarmende stand loopt op tot net voor het ongemakkelijke, en zij vraagt tijdens de sessie hoe warm het aanvoelt. De laatste stap voelt als korte tikjes. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    naam: "Fotona 4D",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling.",
+    lagen: ["opperhuid", "lederhuid-boven", "lederhuid-diep"],
+    werking:
+      "Fotona 4D is geen losse behandeling maar een protocol van vier lagen die in dezelfde sessie op elkaar volgen. Het begint van binnenuit met SmoothLiftin door de wangslijmvlies, daarna gaat FRAC3 op de diepte, PIANO verwarmt het weefsel vlak en gelijkmatig, en SupErficial sluit af met een lichte laserpeeling. Elke stap raakt een andere diepte, en samen pakken ze verslapping, textuur en kleur in een keer aan. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een paar uur tot een dag rood en warm, alsof je te lang in de zon hebt gezeten. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Los te doen of als kuur van drie, met vier tot zes weken ertussen. Wat er bij jou past hoor je tijdens de intake. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 370,
+    bijProblemen: [
+      { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+      { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
+    ],
+    wel: [
+      "Werkt in vier diepten tegelijk: van het slijmvlies tot de bovenste huidlaag",
+      "Pakt verslapping, textuur en kleur in dezelfde sessie aan",
+      "Vraagt geen naalden en geen snijden",
+    ],
+    niet: [
+      "Voor losgelaten huid is chirurgie het antwoord [MEDISCHE-CHECK-ROJDA]",
+      "Hoeveel je huid opbouwt verschilt per persoon, dus we leggen het verloop vast",
+      "Dit is een reeks, dus je plant de sessies achter elkaar in",
+    ],
+    stappen: [
+      {
+        kop: "Van binnenuit",
+        zin: "SmoothLiftin verwarmt het weefsel door de wang, waar de huid van buitenaf niet bij te komen is.",
+      },
+      {
+        kop: "Op diepte",
+        zin: "FRAC3 en PIANO werken in de lederhuid: de eerste gericht op onregelmatigheden, de tweede als gelijkmatige warmte. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        kop: "Afsluitend",
+        zin: "SupErficial haalt met een lichte laserpeeling de bovenste laag eraf, wat de huid gladder maakt.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Waarom heet het 4D?",
+        antwoord:
+          "Omdat er vier behandelingen in een sessie op elkaar volgen, elk op een andere diepte. Van het slijmvlies aan de binnenkant tot de bovenste huidlaag.",
+      },
+      {
+        vraag: "Kan ik ook een van de vier los doen?",
+        antwoord:
+          "Ja. SmoothLiftin, FRAC3, PIANO en SupErficial hebben elk een eigen pagina en zijn los te boeken. Welke bij jou past hoor je tijdens de intake.",
+      },
+      {
+        vraag: "Wanneer zie ik er iets van?",
+        antwoord:
+          "Direct na de sessie ziet de huid er voller uit door de warmte, maar dat is nog geen resultaat. De opbouw van collageen kost weken; het verschil bouwt zich over de reeks op. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    duurMinuten: 90,
+  },
+  {
+    slug: "fotona-4d-men",
+    verwant: [
+      {
+        slug: "fotona-4d",
+        waarom: "Hetzelfde protocol met de standaardinstellingen.",
+      },
+      {
+        slug: "laserontharing",
+        waarom: "Voor wie de baardlijn wil laten behandelen.",
+      },
+    ],
+    inDeStoel: [
+      "Het verloop is hetzelfde als bij de standaardbehandeling: een bril op, eerst van binnenuit door de wang, daarna van buitenaf.",
+      "Wat je merkt is dat de warmte iets verder oploopt. Dat is de bedoeling: een dikkere huid heeft meer nodig om dezelfde diepte te bereiken.",
+    ],
+    naam: "Fotona 4D Men",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid.",
+    lagen: ["opperhuid", "lederhuid-boven", "lederhuid-diep"],
+    werking:
+      "De mannenhuid is gemiddeld dikker, bevat meer collageen en heeft meer talgklieren en haarfollikels. Daardoor reageert hij anders op warmte en vraagt hij andere instellingen dan de standaardinstelling. Fotona 4D Men doorloopt dezelfde vier stappen, maar met een aangepast energieniveau en een aangepaste opbouw. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een paar uur tot een dag rood en warm. Bij een baard let de behandelaar extra op de zones rond de haargroei. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Los te doen of als kuur van drie, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+      { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
+    ],
+    wel: [
+      "Volgt hetzelfde protocol van vier, met instellingen voor een dikkere huid",
+      "Werkt op de kaaklijn, de hals en de nasolabiale plooien",
+      "Vraagt geen naalden en geen snijden",
+    ],
+    niet: [
+      "Voor losgelaten huid is chirurgie het antwoord [MEDISCHE-CHECK-ROJDA]",
+      "Bij een volle baard beoordeelt de behandelaar eerst welke zones kunnen [MEDISCHE-CHECK-ROJDA]",
+      "Dit is een reeks, dus je plant de sessies achter elkaar in",
+    ],
+    stappen: [
+      {
+        kop: "Instellen op je huid",
+        zin: "De behandelaar meet je huidtype en stelt de energie daarop af; lichter doet hier te weinig. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        kop: "Dezelfde vier stappen",
+        zin: "SmoothLiftin, FRAC3, PIANO en SupErficial volgen op elkaar, net als bij de standaardbehandeling.",
+      },
+      {
+        kop: "Rond de baard",
+        zin: "Zones met stevige haargroei vragen aandacht, want haar neemt de energie anders op dan huid.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Waarom een aparte behandeling voor mannen?",
+        antwoord:
+          "Omdat de huid gemiddeld dikker is en meer talgklieren en haarfollikels heeft. Met dezelfde instelling bereik je dan niet dezelfde diepte. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Kan het met een baard?",
+        antwoord:
+          "Meestal wel, en de behandelaar beoordeelt vooraf welke zones geschikt zijn. Haar neemt de energie anders op dan huid.",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van de zones die we behandelen en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 90,
+  },
+  {
+    slug: "smoothliftin",
+    verwant: [
+      {
+        slug: "fotona-4d",
+        waarom:
+          "De complete behandeling waar dit de eerste van vier stappen in is.",
+      },
+      {
+        slug: "smootheye",
+        waarom: "Voor de oogcontour, waar SmoothLiftin niet bij komt.",
+      },
+    ],
+    inDeStoel: [
+      "Je ligt achterover met je mond open en het handstuk gaat tegen de binnenkant van je wang. Wat je voelt is warmte die oploopt, en de behandelaar vraagt tussendoor hoe warm het aanvoelt.",
+      "Erna is er aan de buitenkant niets te zien. Je kunt gewoon eten en drinken; sommige mensen vinden het de eerste uren wat droog aanvoelen in de mond.",
+    ],
+    naam: "SmoothLiftin",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Collageenstimulatie van binnenuit, door het slijmvlies van je wang.",
+    lagen: ["lederhuid-boven"],
+    werking:
+      "Bij SmoothLiftin werkt de laser vanaf de binnenkant van je mond. Het slijmvlies van de wang ligt vlak tegen het weefsel rond je mond en je nasolabiale plooien aan, en van die kant is die zone te bereiken zonder dat de buitenste huidlaag wordt geraakt. De warmte trekt bestaand collageen samen en zet de aanmaak van nieuw collageen in gang. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Geen. Je gaat er direct mee de deur uit en er is aan de buitenkant niets te zien.",
+    sessies:
+      "Meestal een reeks, met enkele weken ertussen. Ook los te doen als onderdeel van Fotona 4D. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
+    ],
+    wel: [
+      "Bereikt het middengezicht vanaf de binnenkant, waar de huid van buiten niet bij komt",
+      "Laat de buitenste huidlaag onaangeroerd, dus er is geen hersteltijd",
+      "Werkt op de nasolabiale plooien en het mondgebied",
+    ],
+    niet: [
+      "Voor de oogcontour is SmoothEye de behandeling",
+      "Voor structuur en poriën aan de buitenkant kies je FRAC3 of SupErficial",
+      "Dit is een reeks, dus je plant de sessies achter elkaar in",
+    ],
+    stappen: [
+      {
+        kop: "Mond open",
+        zin: "Het handstuk gaat tegen de binnenkant van je wang. Je krijgt een beschermbril op, ook al werkt de laser binnen.",
+      },
+      {
+        kop: "Warmte in banen",
+        zin: "De behandelaar gaat in banen over het slijmvlies. Het voelt warm en de warmte loopt op tot net voor het ongemakkelijke.",
+      },
+      {
+        kop: "Direct door",
+        zin: "Er is aan de buitenkant niets te zien, dus je gaat meteen door met je dag.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Werkt een laser in je mond echt op je huid?",
+        antwoord:
+          "Het slijmvlies ligt vlak tegen het weefsel van je middengezicht aan. De warmte komt daardoor bij de laag waar collageen zit, zonder dat de buitenste huidlaag geraakt wordt. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Doet het pijn?",
+        antwoord:
+          "Het is warm en het is even wennen, maar het doet geen pijn. Er komt geen verdoving aan te pas.",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 30,
+  },
+  {
+    slug: "frac3",
+    verwant: [
+      {
+        slug: "fotona-4d",
+        waarom:
+          "De complete behandeling waar dit de tweede van vier stappen in is.",
+      },
+      {
+        slug: "fotona-resurfacing",
+        waarom: "Gaat verder op structuur en poriën, met meer hersteltijd.",
+      },
+    ],
+    inDeStoel: [
+      "Elke puls voelt als een kort, scherp tikje, alsof er een elastiekje tegen je huid schiet. Op de wang is dat goed te doen; boven de lip en langs de neus merk je het duidelijker.",
+      "Erna ben je rood en warm. In de dagen die volgen kan de huid fijn korrelig aanvoelen en licht schilferen; dat is de oude bovenlaag die eraf komt. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    naam: "FRAC3",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden.",
+    lagen: ["opperhuid", "lederhuid-boven", "lederhuid-diep"],
+    werking:
+      "FRAC3 werkt fractioneel: de energie gaat niet als een vlak over de huid maar in eilandjes, waardoor er intact weefsel tussen blijft staan dat het herstel op gang helpt. De pulsen zoeken vanzelf de plekken op waar meer pigment of meer bloed zit, dus de onregelmatigheden krijgen meer energie dan de rustige huid eromheen. Daarmee komt het bij structuur, poriën, roodheid en ongelijke kleur. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een tot enkele dagen rood, soms met een fijne korrelige structuur die eraf schilfert. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Meestal een reeks van drie tot vier, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Poriën", href: "/huidproblemen/porien" },
+      { label: "Littekens en striae", href: "/huidproblemen/littekens" },
+      { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
+    ],
+    wel: [
+      "Werkt op structuur, poriën en ongelijke kleur in dezelfde sessie",
+      "Zoekt vanzelf de onregelmatigheden op en spaart de rustige huid",
+      "Is onderdeel van Fotona 4D en ook los te doen",
+    ],
+    niet: [
+      "Voor verslapping van binnenuit is SmoothLiftin de stap",
+      "Voor alleen een frisse huid zonder hersteltijd kies je SupErficial",
+      "Vlak voor veel zon plannen we het niet in [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Koelen en beschermen",
+        zin: "Je krijgt een beschermbril op en de huid wordt gekoeld voordat de eerste puls komt.",
+      },
+      {
+        kop: "In eilandjes",
+        zin: "De laser gaat in banen over de zone. Elke puls raakt kleine eilandjes en laat de huid ertussen intact.",
+      },
+      {
+        kop: "Rood erna",
+        zin: "De huid is een tot enkele dagen rood en voelt warm. Zonbescherming hoort er de weken erna bij. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Wat betekent fractioneel?",
+        antwoord:
+          "Dat de energie in eilandjes de huid in gaat in plaats van als een vlak. Het weefsel dat ertussen intact blijft, helpt het herstel op gang en dat scheelt hersteltijd.",
+      },
+      {
+        vraag: "Hoeveel sessies heb ik nodig?",
+        antwoord:
+          "Meestal drie tot vier, met vier tot zes weken ertussen. Hoeveel het er bij jou zijn hangt af van je huid en van wat er speelt. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van de zone en het aantal sessies, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 45,
+  },
+  {
+    slug: "piano",
+    verwant: [
+      {
+        slug: "fotona-4d",
+        waarom:
+          "De complete behandeling waar dit de derde van vier stappen in is.",
+      },
+      {
+        slug: "vectorlift",
+        waarom: "Dezelfde gedachte, maar gericht op voorhoofd en wenkbrauw.",
+      },
+    ],
+    inDeStoel: [
+      "Wat je voelt is een oplopende warmte die net voor het ongemakkelijke stopt. De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt en stelt het apparaat op jouw antwoord bij.",
+      "Erna voelt de huid warm en ziet hij er wat voller uit. Dat is de warmte en nog geen resultaat; de opbouw komt over de weken erna.",
+    ],
+    naam: "PIANO skin tightening",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals.",
+    lagen: ["lederhuid-boven", "lederhuid-diep"],
+    werking:
+      "PIANO is een lange, trage puls die het weefsel over een groot oppervlak gelijkmatig verwarmt in plaats van punt voor punt. Daardoor komt de warmte dieper en blijft de bovenste huidlaag koel. Bestaand collageen trekt samen en de aanmaak van nieuw collageen komt op gang, wat de huid steviger maakt. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Geen tot een paar uur lichte roodheid. Je gaat er meestal direct mee de deur uit.",
+    sessies:
+      "Een reeks van drie tot vier, met vier tot zes weken ertussen. Ook onderdeel van Fotona 4D. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
+      { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
+    ],
+    wel: [
+      "Verwarmt gelijkmatig over een groot oppervlak in plaats van punt voor punt",
+      "Werkt op de kaaklijn, de hals en de wangen",
+      "Laat de bovenste huidlaag koel, dus er is nauwelijks hersteltijd",
+    ],
+    niet: [
+      "Voor losgelaten huid is chirurgie het antwoord [MEDISCHE-CHECK-ROJDA]",
+      "Voor poriën en structuur kies je FRAC3 of SupErficial",
+      "Dit is een reeks; van een enkele sessie zie je weinig",
+    ],
+    stappen: [
+      {
+        kop: "Bril op",
+        zin: "Je krijgt een beschermbril op en de behandelaar brengt een dunne laag gel aan.",
+      },
+      {
+        kop: "Warmte in banen",
+        zin: "Het handstuk gaat in rustige banen over de zone. De warmte loopt op en blijft daar even hangen.",
+      },
+      {
+        kop: "Direct door",
+        zin: "De huid is hooguit licht roze. Meestal ga je er direct mee de deur uit.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Waarom voelt dit anders dan andere laser?",
+        antwoord:
+          "Omdat de puls lang en traag is in plaats van kort en scherp. Je voelt geen tikjes maar een warmte die oploopt.",
+      },
+      {
+        vraag: "Zie ik er meteen iets van?",
+        antwoord:
+          "De huid ziet er direct na de sessie voller uit door de warmte. Het echte verschil komt uit de collageenopbouw, en die kost weken. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van de zone en het aantal sessies, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 45,
+  },
+  {
+    slug: "superficial-peel",
+    verwant: [
+      {
+        slug: "fotona-4d",
+        waarom:
+          "De complete behandeling waar dit de laatste van vier stappen in is.",
+      },
+      {
+        slug: "peelings",
+        waarom:
+          "Hetzelfde doel met een chemisch middel in plaats van met licht.",
+      },
+    ],
+    inDeStoel: [
+      "Elke puls voelt als een korte warme tik. Het gaat snel en de meeste mensen vinden het goed te doen.",
+      "Erna is je huid roze en voelt hij strak aan. Dat trekt binnen een paar uur weg en de dag erna is je huid zichtbaar gladder.",
+    ],
+    naam: "SupErficial laserpeel",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Een oppervlakkige laserpeeling voor een gladdere huid en meer glans.",
+    lagen: ["hoornlaag", "opperhuid"],
+    werking:
+      "SupErficial haalt met korte pulsen een dunne laag van de hoornlaag af. Dat is dezelfde gedachte als bij een chemische peeling, maar dan met licht in plaats van met zuur: er komt geen middel op je huid dat moet inwerken en de diepte is per puls te sturen. De huid eronder komt sneller aan de beurt, wat hem gladder maakt en het licht beter laat weerkaatsen. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een paar uur licht rood. Make-up kan meestal de volgende dag weer.",
+    sessies:
+      "Los te doen als opfrisser of als reeks. Ook de laatste stap van Fotona 4D. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
+      { label: "Poriën", href: "/huidproblemen/porien" },
+    ],
+    wel: [
+      "Maakt de huid meteen gladder en laat het licht beter weerkaatsen",
+      "Werkt zonder zuren, dus de diepte is per puls te sturen",
+      "Is de afsluitende stap van Fotona 4D en ook los te doen",
+    ],
+    niet: [
+      "Blijft in de bovenste lagen; voor structuur dieper kies je FRAC3",
+      "Voor verslapping is PIANO of SmoothLiftin de stap",
+      "Het resultaat houd je bij met herhaling",
+    ],
+    stappen: [
+      {
+        kop: "Schoon en beschermd",
+        zin: "Make-up eraf en een beschermbril op. De huid wordt kort gekoeld.",
+      },
+      {
+        kop: "Laag voor laag",
+        zin: "De behandelaar gaat in banen over je gezicht en bepaalt per zone hoe diep de peeling gaat.",
+      },
+      {
+        kop: "Direct door",
+        zin: "De huid is een paar uur licht rood. Zonbescherming hoort er de dagen erna bij.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Wat is het verschil met een chemische peeling?",
+        antwoord:
+          "Bij een chemische peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per puls in.",
+      },
+      {
+        vraag: "Kan dit vlak voor een gelegenheid?",
+        antwoord:
+          "Reken op een paar uur roodheid. Een dag ervoor is meestal goed te doen; diezelfde dag is krap.",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van de zone en of je het los doet of als onderdeel van 4D. Dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 30,
+  },
+  {
+    slug: "smootheye",
+    verwant: [
+      {
+        slug: "vectorlift",
+        waarom: "Werkt boven de wenkbrauw, waar SmoothEye eronder werkt.",
+      },
+      {
+        slug: "fotona-4d",
+        waarom: "De complete gezichtsbehandeling op hetzelfde apparaat.",
+      },
+    ],
+    inDeStoel: [
+      "De oogschelpen zijn even wennen en voelen koel. Zodra ze zitten zie je niets meer, en dat duurt de hele behandeling.",
+      "Wat je voelt is een warmte die oploopt rond je oog. De behandelaar vraagt tussendoor hoe warm het is en stelt daarop bij.",
+    ],
+    naam: "SmoothEye",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes.",
+    lagen: ["opperhuid", "lederhuid-boven"],
+    werking:
+      "De huid rond je ogen is de dunste van je gezicht en verslapt daardoor als eerste. SmoothEye verwarmt die zone met een lange, trage puls waarbij de bovenste laag koel blijft. Bestaand collageen trekt samen en er komt nieuwe aanmaak op gang, wat de fijne lijntjes minder scherp maakt en het ooglid iets steviger. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een paar uur licht rood rond de ogen. Je gaat er meestal direct mee de deur uit.",
+    sessies:
+      "Een reeks van drie tot vier, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 150,
+    bijProblemen: [
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
+      { label: "Wallen", href: "/huidproblemen/wallen" },
+    ],
+    wel: [
+      "Werkt op de dunne huid rond de ogen, waar veel behandelingen niet mogen komen",
+      "Maakt kraaienpootjes en fijne lijntjes minder scherp [MEDISCHE-CHECK-ROJDA]",
+      "Vraagt geen naalden en geen hersteltijd",
+    ],
+    niet: [
+      "Voor donkere kringen door pigment of vaatjes kies je een andere behandeling",
+      "Voor een echt ooglidoverschot is dit te licht; dat is chirurgie [MEDISCHE-CHECK-ROJDA]",
+      "Dit is een reeks; van een enkele sessie zie je weinig",
+    ],
+    stappen: [
+      {
+        kop: "Ogen beschermd",
+        zin: "Er komen metalen oogschelpen onder je oogleden. Die blijven de hele behandeling zitten.",
+      },
+      {
+        kop: "Warmte rond het oog",
+        zin: "Het handstuk gaat in rustige banen over de oogcontour. De warmte loopt op en blijft daar even hangen.",
+      },
+      {
+        kop: "Direct door",
+        zin: "De huid is een paar uur licht roze. Make-up kan meestal diezelfde dag weer.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Is het veilig zo dicht bij je ogen?",
+        antwoord:
+          "Ja, met de metalen oogschelpen die eronder gaan. Die schermen het oog volledig af en blijven de hele behandeling zitten. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Helpt dit tegen donkere kringen?",
+        antwoord:
+          "Meestal niet. Kringen komen van pigment, van doorschijnende vaatjes of van schaduw, en dat vraagt een andere aanpak. Wat het bij jou is stellen we tijdens de intake vast.",
+      },
+      {
+        vraag: "Hoeveel sessies heb ik nodig?",
+        antwoord:
+          "Meestal drie tot vier, met enkele weken ertussen. Daarna houd je het bij met een sessie af en toe. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    duurMinuten: 30,
+  },
+  {
+    slug: "liplase",
+    verwant: [
+      {
+        slug: "fotona-4d",
+        waarom: "De complete gezichtsbehandeling op hetzelfde apparaat.",
+      },
+      {
+        slug: "smoothliftin",
+        waarom: "Werkt ook van binnenuit, maar op het middengezicht.",
+      },
+    ],
+    inDeStoel: [
+      "Het handstuk komt eerst tegen de binnenkant van je lip en daarna aan de buitenkant. Wat je voelt is warmte, geen prikken.",
+      "Direct erna zijn je lippen wat gezwollen en voelen ze warm. Dat trekt binnen enkele uren weg; bij sommige mensen duurt het tot de volgende dag. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    naam: "LipLase",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Vollere en gladdere lippen zonder filler, met laser van binnen en buiten.",
+    lagen: ["opperhuid", "lederhuid-boven"],
+    werking:
+      "LipLase verwarmt het weefsel van je lippen en de rand eromheen, zowel van de binnenkant als van buiten. De warmte zet de aanmaak van collageen in gang, waardoor de lip wat voller wordt en de lijntjes eromheen minder scherp. Het gaat om je eigen weefsel dat opbouwt, dus het verschil is subtieler dan bij een filler en het bouwt zich op over de reeks. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Enkele uren gezwollen lippen, soms tot een dag. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Een reeks van drie, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 150,
+    bijProblemen: [{ label: "Rimpels", href: "/huidproblemen/rimpels" }],
+    wel: [
+      "Werkt met je eigen weefsel, dus zonder dat er iets ingebracht wordt",
+      "Maakt de lijntjes rond de lip minder scherp [MEDISCHE-CHECK-ROJDA]",
+      "Vraagt geen naalden",
+    ],
+    niet: [
+      "Voor duidelijk meer volume is een filler het middel en niet dit",
+      "Het verschil is subtiel en bouwt zich op over de reeks",
+      "Bij een actieve koortslip stellen we de behandeling uit [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Van binnenuit",
+        zin: "Het handstuk gaat eerst tegen de binnenkant van je lip. Dat voelt warm.",
+      },
+      {
+        kop: "En van buiten",
+        zin: "Daarna werkt de behandelaar aan de buitenkant, over de lip en de rand eromheen.",
+      },
+      {
+        kop: "Even gezwollen",
+        zin: "De lippen zijn enkele uren wat gezwollen. Dat trekt vanzelf weg.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Is dit hetzelfde als een filler?",
+        antwoord:
+          "Nee. Bij een filler wordt er iets ingebracht en is het volume er meteen. Hier bouwt je eigen weefsel op, dus het verschil is subtieler en het komt over de reeks.",
+      },
+      {
+        vraag: "Doet het pijn?",
+        antwoord:
+          "Het is warm en even wennen, maar het doet geen pijn. Er komt geen verdoving aan te pas.",
+      },
+      {
+        vraag: "Hoe lang houdt het aan?",
+        antwoord:
+          "Dat verschilt per persoon. Het gaat om opgebouwd collageen, en dat neemt na verloop van tijd weer af; de meeste mensen komen periodiek terug. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    duurMinuten: 30,
+  },
+  {
+    slug: "vectorlift",
+    verwant: [
+      {
+        slug: "smootheye",
+        waarom: "Werkt op de oogcontour, direct onder de zone van VectorLift.",
+      },
+      {
+        slug: "fotona-4d",
+        waarom: "De complete gezichtsbehandeling op hetzelfde apparaat.",
+      },
+    ],
+    inDeStoel: [
+      "Wat je voelt is een oplopende warmte op je voorhoofd. Het is geen prikken maar warmte die blijft hangen.",
+      "Erna voelt de huid warm en strak. Dat trekt binnen een paar uur weg.",
+    ],
+    naam: "VectorLift",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden.",
+    lagen: ["lederhuid-boven", "lederhuid-diep"],
+    werking:
+      "VectorLift verwarmt het weefsel van je voorhoofd en de zone boven je wenkbrauw in vaste banen. Doordat collageen samentrekt en er nieuwe aanmaak op gang komt, komt de wenkbrauw iets omhoog te liggen en wordt het voorhoofd steviger. Het gaat om millimeters en om je eigen weefsel, niet om een chirurgische lift. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een paar uur licht rood op het voorhoofd. Je gaat er direct mee de deur uit.",
+    sessies:
+      "Een reeks van drie tot vier, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 150,
+    bijProblemen: [
+      { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
+    ],
+    wel: [
+      "Tilt de wenkbrauwlijn iets op met je eigen weefsel [MEDISCHE-CHECK-ROJDA]",
+      "Maakt het voorhoofd steviger zonder naalden of snijden",
+      "Is goed te combineren met SmoothEye op de oogcontour",
+    ],
+    niet: [
+      "Dit is geen chirurgische wenkbrauwlift; het gaat om millimeters [MEDISCHE-CHECK-ROJDA]",
+      "Voor fronsrimpels door spierbeweging is dit niet het middel",
+      "Dit is een reeks; van een enkele sessie zie je weinig",
+    ],
+    stappen: [
+      {
+        kop: "Bril op",
+        zin: "Je krijgt een beschermbril op en de behandelaar bepaalt de banen op je voorhoofd.",
+      },
+      {
+        kop: "Warmte in lijnen",
+        zin: "Het handstuk gaat in vaste banen over het voorhoofd en boven de wenkbrauw.",
+      },
+      {
+        kop: "Direct door",
+        zin: "De huid is een paar uur licht roze. Make-up kan diezelfde dag weer.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Hoeveel gaat mijn wenkbrauw omhoog?",
+        antwoord:
+          "Het gaat om millimeters. Dit is geen chirurgische lift; wat je opbouwt is je eigen collageen, en hoeveel dat is verschilt per persoon. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Kan ik dit combineren met SmoothEye?",
+        antwoord:
+          "Ja, die twee sluiten op elkaar aan: VectorLift werkt boven de wenkbrauw en SmoothEye op de oogcontour eronder.",
+      },
+      {
+        vraag: "Hoe lang houdt het aan?",
+        antwoord:
+          "Dat verschilt per persoon en het is niet blijvend. De meeste mensen komen periodiek terug om het bij te houden. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    duurMinuten: 30,
+  },
+  {
+    slug: "fotona-acne-control",
+    verwant: [
+      {
+        slug: "acne-traject",
+        waarom: "Het traject waar deze sessie meestal onderdeel van is.",
+      },
+      {
+        slug: "fotona-scar-repair",
+        waarom: "Voor littekens die al zijn ontstaan.",
+      },
+    ],
+    inDeStoel: [
+      "Je krijgt een beschermbril op en de behandelaar gaat met korte pulsen over de aangedane zones. Op ontstoken plekken voel je het duidelijker dan op de rustige huid.",
+      "Erna ben je een paar uur rood. Bij actieve ontstekingen kan de huid de eerste dag wat geprikkeld aanvoelen; dat hoort erbij. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    naam: "Fotona Acne Control",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Laser bij actieve acne, gericht op de ontsteking en de talgklier.",
+    lagen: ["opperhuid", "lederhuid-boven"],
+    werking:
+      "Bij actieve acne mikt de laser op twee dingen tegelijk: de ontsteking in de huid en de talgklier die hem voedt. De warmte remt de activiteit van de klier en werkt op de bacterie die bij acne een rol speelt. Het is geen vervanging van een acnetraject maar een stap erbinnen, want acne heeft een verloop en vraagt om meer dan een sessie. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een paar uur rood. Bij actieve ontstekingen kan de huid de eerste dag wat geprikkeld aanvoelen. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Meestal een reeks binnen een acnetraject, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Acne", href: "/huidproblemen/acne" },
+      { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
+    ],
+    wel: [
+      "Werkt op de ontsteking en op de talgklier tegelijk [MEDISCHE-CHECK-ROJDA]",
+      "Is te combineren met de peelings en producten uit het acnetraject",
+      "Vraagt geen naalden en geen zuren op de huid",
+    ],
+    niet: [
+      "Vervangt het acnetraject niet; het is een stap daarbinnen",
+      "Bij zware of littekenvormende acne kijkt eerst een arts mee [MEDISCHE-CHECK-ROJDA]",
+      "Voor littekens die al zijn ontstaan kies je Fotona Scar Repair",
+    ],
+    stappen: [
+      {
+        kop: "Beoordelen",
+        zin: "De huidtherapeut bekijkt of het om actieve ontstekingen gaat en welke zones aan de beurt zijn.",
+      },
+      {
+        kop: "Laser op de zone",
+        zin: "Het handstuk gaat over de aangedane plekken. Je voelt korte warme tikjes.",
+      },
+      {
+        kop: "Verder in het traject",
+        zin: "De sessie staat zelden op zichzelf; hij past binnen het acnetraject met de producten en controles.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Is dit genoeg om van mijn acne af te komen?",
+        antwoord:
+          "Zelden. Acne heeft een verloop en vraagt om een traject met behandelingen, producten en controles. Deze laser is daar een stap in en geen vervanging van.",
+      },
+      {
+        vraag: "Kan het bij ontstoken acne?",
+        antwoord:
+          "Ja, en daar is het juist voor bedoeld. De huidtherapeut beoordeelt vooraf welke zones geschikt zijn. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van of je het los doet of binnen een acnetraject, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 30,
+  },
+  {
+    slug: "fotona-scar-repair",
+    verwant: [
+      {
+        slug: "littekentherapie",
+        waarom: "Voor littekens na een operatie of keizersnede.",
+      },
+      {
+        slug: "skinpen",
+        waarom: "Microneedling op dezelfde littekens, vaak in combinatie.",
+      },
+    ],
+    inDeStoel: [
+      "Elke puls voelt als een kort, scherp tikje. Op littekenweefsel voel je vaak minder dan op de huid eromheen, want de zenuwen lopen daar anders.",
+      "Erna is de zone rood en warm. Hoe lang dat duurt hangt af van de diepte waarop is gewerkt; reken op een tot enkele dagen. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    naam: "Fotona Scar Repair",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Laser op littekens: acnelittekens, operatielittekens en striae.",
+    lagen: ["opperhuid", "lederhuid-boven", "lederhuid-diep"],
+    werking:
+      "Een litteken is weefsel dat anders is opgebouwd dan de huid eromheen: strakker, met vezels die in een andere richting lopen. De laser brengt in dat weefsel gecontroleerde warmte aan, waarna het herstel de vezels opnieuw ordent. Daardoor wordt het litteken vlakker en minder rood, en sluit het beter aan bij de huid eromheen. Weg gaat het niet. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een tot enkele dagen rood, afhankelijk van de diepte en de zone. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Meestal drie tot zes, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
+      { label: "Littekens en striae", href: "/huidproblemen/littekens" },
+      { label: "Striae", href: "/huidproblemen/striae" },
+    ],
+    wel: [
+      "Werkt op acnelittekens, operatielittekens en striae",
+      "Maakt het litteken vlakker en minder rood [MEDISCHE-CHECK-ROJDA]",
+      "Is te combineren met microneedling in hetzelfde traject",
+    ],
+    niet: [
+      "Een litteken is blijvend weefsel; het wordt rustiger, niet weg [MEDISCHE-CHECK-ROJDA]",
+      "Een litteken dat nog geneest laten we eerst met rust",
+      "Bij een keloid loopt de behandeling via je arts [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Beoordelen",
+        zin: "De huidtherapeut kijkt hoe oud het litteken is, hoe diep het zit en welke kant het op loopt. Dat bepaalt de instelling. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        kop: "Laser op het litteken",
+        zin: "De pulsen gaan gericht over het litteken en een stukje van de huid eromheen.",
+      },
+      {
+        kop: "Herstel doet het werk",
+        zin: "In de weken erna ordent het weefsel zich opnieuw. Daarom zitten er vier tot zes weken tussen de sessies.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Gaat mijn litteken helemaal weg?",
+        antwoord:
+          "Nee. Een litteken is blijvend weefsel. Wat er wel gebeurt is dat het vlakker en minder rood wordt en beter aansluit bij de huid eromheen. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Hoe oud mag een litteken zijn?",
+        antwoord:
+          "Een litteken dat nog aan het genezen is laten we eerst met rust. Daarna geldt: hoe jonger, hoe meer er te winnen valt, maar ook bij oude littekens is er vaak iets te doen. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van de lengte van het litteken en het aantal sessies, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 45,
+  },
+  {
+    slug: "fotona-resurfacing",
+    verwant: [
+      {
+        slug: "frac3",
+        waarom: "Werkt fractioneel op de diepte, met minder hersteltijd.",
+      },
+      {
+        slug: "superficial-peel",
+        waarom: "De lichte variant, zonder noemenswaardige hersteltijd.",
+      },
+    ],
+    inDeStoel: [
+      "Elke puls voelt als een korte warme tik. Hoe dieper de instelling, hoe duidelijker je het merkt; de behandelaar vraagt tussendoor hoe het gaat.",
+      "Erna is je huid rood en warm, en in de dagen die volgen komt de oude bovenlaag eraf. Niet krabben en niet schrobben; dat is precies waar een vlek van blijft. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    naam: "Fotona Resurfacing",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid.",
+    lagen: ["hoornlaag", "opperhuid", "lederhuid-boven"],
+    werking:
+      "Resurfacing haalt gecontroleerd een deel van de bovenste huidlaag weg en verwarmt de laag eronder. De huid vernieuwt zich daarna sneller dan hij uit zichzelf zou doen, en dat maakt poriën minder opvallend en de structuur gelijkmatiger. Hoe diep dat gaat bepaalt de behandelaar per zone, en die diepte bepaalt ook hoeveel hersteltijd je nodig hebt. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Van een paar uur tot enkele dagen, afhankelijk van de gekozen diepte. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Een reeks van drie tot vier, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Poriën", href: "/huidproblemen/porien" },
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
+      { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
+    ],
+    wel: [
+      "Maakt poriën minder opvallend en de structuur gelijkmatiger [MEDISCHE-CHECK-ROJDA]",
+      "De diepte is per zone in te stellen, dus ook lichter uit te voeren",
+      "Werkt zonder zuren op de huid",
+    ],
+    niet: [
+      "Voor verslapping is PIANO of SmoothLiftin de stap",
+      "Hoe dieper de instelling, hoe meer hersteltijd je nodig hebt",
+      "Vlak voor veel zon plannen we het niet in [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Diepte kiezen",
+        zin: "De huidtherapeut bepaalt per zone hoe diep het gaat, op je huid en op je hersteltijd. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        kop: "Laag voor laag",
+        zin: "De laser gaat in banen over de zone en haalt gecontroleerd een deel van de bovenlaag weg.",
+      },
+      {
+        kop: "Herstel",
+        zin: "De huid is rood en vernieuwt zich in de dagen erna. Zonbescherming hoort er de weken daarna bij. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Hoeveel hersteltijd heb ik nodig?",
+        antwoord:
+          "Dat hangt af van de diepte. Licht uitgevoerd ben je een paar uur rood; dieper reken je op enkele dagen. Dat spreken we vooraf af, zodat het niet samenvalt met iets belangrijks. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat is het verschil met een chemische peeling?",
+        antwoord:
+          "Bij een peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per zone in.",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van de zone en de diepte, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 45,
+  },
+  {
+    slug: "hairestart",
+    verwant: [
+      { slug: "xl-hair", waarom: "Het traject waar deze sessies in passen." },
+    ],
+    inDeStoel: [
+      "Je zit rechtop en de behandelaar gaat in banen over je hoofdhuid. Wat je voelt is warmte die per baan even oploopt.",
+      "Erna kun je direct door met je dag en je haar gewoon wassen. Er is niets aan je te zien.",
+    ],
+    naam: "HAIRestart",
+    apparaat: "Fotona 4D TimeWalker",
+    categorie: "laser",
+    kort: "Laser op de hoofdhuid bij beginnende haarverdunning.",
+    lagen: ["opperhuid", "lederhuid-boven"],
+    werking:
+      "HAIRestart werkt op de hoofdhuid met warmte die de doorbloeding en de activiteit rond de haarzakjes stimuleert. Het richt zich op zakjes die er nog zijn maar minder actief; waar het zakje verdwenen is, valt er niets meer te starten. Daarom telt het moment: hoe eerder er naar gekeken wordt, hoe meer er te behouden valt. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Geen. Je kunt er direct mee de deur uit en je haar gewoon wassen.",
+    sessies:
+      "Een traject over meerdere maanden, want haar groeit in cycli. Het aantal hoor je tijdens de intake. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    wel: [
+      "Richt zich op haarzakjes die nog aanwezig zijn maar minder actief [MEDISCHE-CHECK-ROJDA]",
+      "Werkt zonder naalden en zonder hersteltijd",
+      "Is te combineren met het XL Hair-traject",
+    ],
+    niet: [
+      "Waar het haarzakje weg is, komt geen haar terug [MEDISCHE-CHECK-ROJDA]",
+      "Heeft de haaruitval een medische oorzaak, dan hoort dat bij een arts",
+      "Reken op maanden; haar groeit in cycli en die laten zich niet opjagen",
+    ],
+    stappen: [
+      {
+        kop: "Hoofdhuid beoordelen",
+        zin: "De huidtherapeut kijkt waar het dunner wordt en sinds wanneer. Dat is het vertrekpunt. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        kop: "Laser over de zone",
+        zin: "Het handstuk gaat in banen over de hoofdhuid. Je voelt warmte, geen prikken.",
+      },
+      {
+        kop: "Over de maanden",
+        zin: "Het traject loopt door over meerdere maanden, want haargroei volgt cycli.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Werkt dit bij kale plekken?",
+        antwoord:
+          "Nee. Waar het haarzakje verdwenen is valt er niets te starten. Dit richt zich op zakjes die er nog zijn maar minder actief zijn geworden. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wanneer zie ik verschil?",
+        antwoord:
+          "Reken op maanden. Haar groeit in cycli en dit traject volgt die cycli. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van de duur van het traject, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
+      },
+    ],
+    duurMinuten: 30,
+  },
   {
     slug: "nightlase",
     fotoInDeStoel: {

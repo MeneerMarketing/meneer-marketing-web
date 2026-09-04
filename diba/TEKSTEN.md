@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 4 september 2026 · 107 pagina's
+Diba Clinics · gegenereerd op 4 september 2026 · 120 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -358,7 +358,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **EEN HUIDKLINIEK IN ROTTERDAM.**
 
-Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 12 apparaten en 23 behandelingen waarvan de prijzen allemaal openbaar zijn.
+Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 12 apparaten en 36 behandelingen waarvan de prijzen allemaal openbaar zijn.
 
 Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici en de kliniek is aangesloten bij ANBOS.
 
@@ -390,7 +390,7 @@ Een laser doet het werk niet alleen. Welke golflengte, welke pulsduur en welke e
 
 - 12 apparaten Van huidscanner tot alexandrietlaser. Per apparaat staat welke techniek erin zit en waarvoor hij is. BEKIJK DE APPARATUUR ›
 
-- 23 behandelingen Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
+- 36 behandelingen Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
 
 - 8 mensen Huidtherapeuten met een hbo-bachelor en inschrijving in het Kwaliteitsregister Paramedici, plus orthomoleculair huidspecialisten. NAAR HET TEAM ›
 
@@ -778,6 +778,8 @@ Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijden
 
 - Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
 
+- Fotona Acne Control Op aanvraag Laser bij actieve acne, gericht op de ontsteking en de talgklier. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
 - Acnetraject € 570 Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. WAT HET INHOUDT
 
 - Jongeren acne traject € 450 Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. WAT HET INHOUDT
@@ -911,6 +913,12 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 - SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
+
+- FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona Scar Repair Op aanvraag Laser op littekens: acnelittekens, operatielittekens en striae. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona Resurfacing Op aanvraag Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 **Veelgestelde vragen**
 
@@ -1335,6 +1343,10 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 - Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT OP DE DERMAPLANE PRO
 
 - Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
+- SupErficial laserpeel Op aanvraag Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona Resurfacing Op aanvraag Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 **Veelgestelde vragen**
 
@@ -2458,7 +2470,13 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT OP DE U225 INTRADERMALE INJECTOR
 
-- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona 4D € 370 Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona 4D Men Op aanvraag Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- PIANO skin tightening Op aanvraag Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 **Veelgestelde vragen**
 
@@ -2608,7 +2626,17 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - CooLift Cryo Therapy € 75 Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. WAT HET INHOUDT OP DE COOLIFT CRYO THERAPY
 
-- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona 4D € 370 Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona 4D Men Op aanvraag Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- SmoothLiftin Op aanvraag Collageenstimulatie van binnenuit, door het slijmvlies van je wang. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- PIANO skin tightening Op aanvraag Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- VectorLift € 150 Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 **Veelgestelde vragen**
 
@@ -3116,7 +3144,11 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
 
-- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona Scar Repair Op aanvraag Laser op littekens: acnelittekens, operatielittekens en striae. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 - Littekentherapie € 100 Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. WAT HET INHOUDT
 
@@ -3515,6 +3547,8 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reini
 - HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT OP DE HYDRAFACIAL SYNDEO
 
 - Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT OP DE PEELINGLIJNEN
+
+- Fotona Acne Control Op aanvraag Laser bij actieve acne, gericht op de ontsteking en de talgklier. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 - Acnetraject € 570 Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. WAT HET INHOUDT
 
@@ -4002,6 +4036,12 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
 
+- FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- SupErficial laserpeel Op aanvraag Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona Resurfacing Op aanvraag Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
 **Veelgestelde vragen**
 
 Kunnen mijn poriën echt niet kleiner? +
@@ -4256,7 +4296,17 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - RRS Eyes Op aanvraag Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
 
-- Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- Fotona 4D € 370 Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- SmoothLiftin Op aanvraag Collageenstimulatie van binnenuit, door het slijmvlies van je wang. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- SmoothEye € 150 Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- LipLase € 150 Vollere en gladdere lippen zonder filler, met laser van binnen en buiten. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
+- VectorLift € 150 Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 **Veelgestelde vragen**
 
@@ -4660,6 +4710,8 @@ Bij striae telt het moment zwaarder dan de techniek. Wie begint zolang ze nog ro
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
 
+- Fotona Scar Repair Op aanvraag Laser op littekens: acnelittekens, operatielittekens en striae. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
 **Veelgestelde vragen**
 
 Gaan striae ooit helemaal weg? +
@@ -4842,6 +4894,8 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 
 - RRS Eyes Op aanvraag Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
 
+- SmoothEye € 150 Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
+
 **Veelgestelde vragen**
 
 Wat is het verschil tussen wallen en donkere kringen? +
@@ -4870,7 +4924,7 @@ In het huidconsult stellen we vast of het vocht, vet of schaduw is. Bij twee van
 
 **Google-omschrijving:** Vijf behandelingen en drie vragen om te weten welke bij je past. Je huidprofiel blijft in je eigen browser staan.
 
-**ONZE 23 BEHANDELINGEN VAN LICHT TOT DIEP**
+**ONZE 36 BEHANDELINGEN VAN LICHT TOT DIEP**
 
 Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel bereikt. Waar een behandeling aankomt bepaalt de rest: wat het kost, hoe lang je rood bent en hoe vaak je terug moet.
 
@@ -4904,7 +4958,7 @@ JE BENT NU IN DE
 
 Waar je pigment zit en waar nieuwe huidcellen vandaan komen.
 
-16 VAN ONZE BEHANDELINGEN KOMEN HIER
+26 VAN ONZE BEHANDELINGEN KOMEN HIER
 
 - HydraFacial Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
 
@@ -4918,13 +4972,13 @@ Waar je pigment zit en waar nieuwe huidcellen vandaan komen.
 
 - Dermapen 4 Eén tot drie dagen rood. € 180
 
-En nog 10 andere.
+En nog 20 andere.
 
-**Alle 23 behandelingen op een rij**
+**Alle 36 behandelingen op een rij**
 
 Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter staat nergens anders, terwijl het vaak het meest bepaalt.
 
-> knop: ALLES 23
+> knop: ALLES 36
 
 > knop: METEN 1
 
@@ -4936,7 +4990,7 @@ Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter
 
 > knop: SKINBOOSTERS 2
 
-> knop: LASER EN LICHT 3
+> knop: LASER EN LICHT 16
 
 > knop: PIGMENTTRAJECTEN 2
 
@@ -4968,6 +5022,8 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE OPPERHUID Medische peelings Mesoestetic, Dermaceutic, Image Skincare, Skin Tech Pharma Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. € 140
 
+- TOT IN DE OPPERHUID SupErficial laserpeel Fotona 4D TimeWalker Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. Een paar uur licht rood. Make-up kan meestal de volgende dag weer. Op aanvraag
+
 - TOT IN DE OPPERHUID LED-therapie Precision Photonic System Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. Geen. € 30
 
 - TOT IN DE OPPERHUID Cosmelan en dermamelan Mesoestetic Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming. € 550
@@ -4988,13 +5044,37 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE BOVENSTE LEDERHUID RRS Eyes Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. Kleine bultjes die binnen een dag wegtrekken. Blauwe plekjes komen voor rond de ogen. Op aanvraag
 
+- TOT IN DE BOVENSTE LEDERHUID SmoothLiftin Fotona 4D TimeWalker Collageenstimulatie van binnenuit, door het slijmvlies van je wang. Geen. Je gaat er direct mee de deur uit en er is aan de buitenkant niets te zien. Op aanvraag
+
+- TOT IN DE BOVENSTE LEDERHUID SmoothEye Fotona 4D TimeWalker Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. Een paar uur licht rood rond de ogen. Je gaat er meestal direct mee de deur uit. € 150
+
+- TOT IN DE BOVENSTE LEDERHUID LipLase Fotona 4D TimeWalker Vollere en gladdere lippen zonder filler, met laser van binnen en buiten. Enkele uren gezwollen lippen, soms tot een dag. € 150
+
+- TOT IN DE BOVENSTE LEDERHUID Fotona Acne Control Fotona 4D TimeWalker Laser bij actieve acne, gericht op de ontsteking en de talgklier. Een paar uur rood. Bij actieve ontstekingen kan de huid de eerste dag wat geprikkeld aanvoelen. Op aanvraag
+
+- TOT IN DE BOVENSTE LEDERHUID Fotona Resurfacing Fotona 4D TimeWalker Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. Van een paar uur tot enkele dagen, afhankelijk van de gekozen diepte. Op aanvraag
+
+- TOT IN DE BOVENSTE LEDERHUID HAIRestart Fotona 4D TimeWalker Laser op de hoofdhuid bij beginnende haarverdunning. Geen. Je kunt er direct mee de deur uit en je haar gewoon wassen. Op aanvraag
+
 - TOT IN DE BOVENSTE LEDERHUID Nordlys IPL Nordlys Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. Meestal een paar uur rood. € 75
 
 - TOT IN DE BOVENSTE LEDERHUID XL Hair U225 mesotherapie Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. Kort gevoelige hoofdhuid. € 800
 
 - TOT IN DE BOVENSTE LEDERHUID Littekentherapie Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. Wisselt per techniek. € 100
 
-- TOT IN DE DIEPE LEDERHUID Fotona TimeWalker Fotona 4D TimeWalker Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. € 150
+- TOT IN DE DIEPE LEDERHUID Fotona TimeWalker Fotona 4D TimeWalker Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. € 150
+
+- TOT IN DE DIEPE LEDERHUID Fotona 4D Fotona 4D TimeWalker Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. Een paar uur tot een dag rood en warm, alsof je te lang in de zon hebt gezeten. € 370
+
+- TOT IN DE DIEPE LEDERHUID Fotona 4D Men Fotona 4D TimeWalker Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. Een paar uur tot een dag rood en warm. Bij een baard let de behandelaar extra op de zones rond de haargroei. Op aanvraag
+
+- TOT IN DE DIEPE LEDERHUID FRAC3 Fotona 4D TimeWalker Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. Een tot enkele dagen rood, soms met een fijne korrelige structuur die eraf schilfert. Op aanvraag
+
+- TOT IN DE DIEPE LEDERHUID PIANO skin tightening Fotona 4D TimeWalker Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. Geen tot een paar uur lichte roodheid. Je gaat er meestal direct mee de deur uit. Op aanvraag
+
+- TOT IN DE DIEPE LEDERHUID VectorLift Fotona 4D TimeWalker Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. Een paar uur licht rood op het voorhoofd. Je gaat er direct mee de deur uit. € 150
+
+- TOT IN DE DIEPE LEDERHUID Fotona Scar Repair Fotona 4D TimeWalker Laser op littekens: acnelittekens, operatielittekens en striae. Een tot enkele dagen rood, afhankelijk van de diepte en de zone. Op aanvraag
 
 - TOT IN DE DIEPE LEDERHUID Laserontharing Gentle Laser Pro-U De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. Een paar uur rood, soms bultjes rond de haarzakjes. € 20
 
@@ -5654,7 +5734,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **Tabbladtitel:** Fotona TimeWalker | Diba Clinics
 
-**Google-omschrijving:** Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift.
+**Google-omschrijving:** Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel.
 
 **FOTONA TIMEWALKER**
 
@@ -5694,7 +5774,7 @@ Los of als kuur van drie, met vier tot zes weken ertussen.
 
 > knop: Fotona 4D kuur van drie € 995
 
-Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift.
+Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel.
 
 Draait op Fotona TimeWalker
 
@@ -5702,7 +5782,7 @@ Draait op Fotona TimeWalker
 
 **Waar het aankomt**
 
-Naarmate de huid veroudert wordt die slapper en minder elastisch. De Fotona TimeWalker pakt dat aan met verschillende gespecialiseerde laserbehandelingen die elk op één probleem mikken: 4D Lift voor een complete lifting van binnen én buiten, VectorLift voor de wenkbrauw- en oogregio, SmoothEye voor de oogcontour en LipLase voor lipvolume.
+De Fotona TimeWalker is geen behandeling maar een platform: twee lasertypen in een kast, waarmee vijftien verschillende behandelingen te doen zijn. Wat je krijgt hangt af van de instelling, de puls en de zone, en dat maakt het verschil tussen een lichte peeling en een complete gezichtsbehandeling. Fotona 4D is daarvan de bekendste: vier behandelingen in een sessie, van binnenuit door de wang tot een afsluitende peeling. Hieronder staat welke er zijn en waar elk voor bedoeld is.
 
 De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
 
@@ -5779,6 +5859,866 @@ Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een 
 Hoeveel sessies heb ik nodig? +
 
 Dat hoor je na de meting. Het aantal hangt af van je huid en van het gebied, en dat stelt de behandelaar dan vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/fotona-4d
+
+**Tabbladtitel:** Fotona 4D | Diba Clinics
+
+**Google-omschrijving:** Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling.
+
+**FOTONA 4D**
+
+*HOE DIEP*
+
+Diepe lederhuid
+
+*HOE LANG*
+
+90 minuten
+
+*HERSTEL*
+
+Een paar uur tot een dag rood en warm, alsof je te lang in de zon hebt gezeten.
+
+*HOE VAAK*
+
+Los te doen of als kuur van drie, met vier tot zes weken ertussen. Wat er bij jou past hoor je tijdens de intake.
+
+Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+Fotona 4D is geen losse behandeling maar een protocol van vier lagen die in dezelfde sessie op elkaar volgen. Het begint van binnenuit met SmoothLiftin door de wangslijmvlies, daarna gaat FRAC3 op de diepte, PIANO verwarmt het weefsel vlak en gelijkmatig, en SupErficial sluit af met een lichte laserpeeling. Elke stap raakt een andere diepte, en samen pakken ze verslapping, textuur en kleur in een keer aan.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
+
+**Wat er gebeurt, in volgorde.**
+
+- Van binnenuit SmoothLiftin verwarmt het weefsel door de wang, waar de huid van buitenaf niet bij te komen is.
+
+- Op diepte FRAC3 en PIANO werken in de lederhuid: de eerste gericht op onregelmatigheden, de tweede als gelijkmatige warmte.
+
+- Afsluitend SupErficial haalt met een lichte laserpeeling de bovenste laag eraf, wat de huid gladder maakt.
+
+**Wat je ervan merkt in de stoel**
+
+Je krijgt een beschermbril op die de hele behandeling op blijft. De eerste stap gebeurt in je mond: er komt een handstuk tegen de binnenkant van je wang en dat voelt warm.
+
+Daarna werkt de behandelaar aan de buitenkant. De verwarmende stand loopt op tot net voor het ongemakkelijke, en zij vraagt tijdens de sessie hoe warm het aanvoelt. De laatste stap voelt als korte tikjes.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Werkt in vier diepten tegelijk: van het slijmvlies tot de bovenste huidlaag
+
+- Pakt verslapping, textuur en kleur in dezelfde sessie aan
+
+- Vraagt geen naalden en geen snijden
+
+- Voor losgelaten huid is chirurgie het antwoord
+
+- Hoeveel je huid opbouwt verschilt per persoon, dus we leggen het verloop vast
+
+- Dit is een reeks, dus je plant de sessies achter elkaar in
+
+- HUIDVEROUDERING
+
+- HUIDVERSLAPPING
+
+- RIMPELS
+
+**Wat er bij aansluit**
+
+- SmoothLiftin Op aanvraag De eerste van de vier stappen, van binnenuit door de wang. WAT HET INHOUDT
+
+- FRAC3 Op aanvraag De tweede stap: fractioneel op de diepte, gericht op onregelmatigheden. WAT HET INHOUDT
+
+- PIANO skin tightening Op aanvraag De derde stap: vlakke, diepe verwarming voor versteviging. WAT HET INHOUDT
+
+- SupErficial laserpeel Op aanvraag De afsluitende stap: een lichte laserpeeling voor gladheid. WAT HET INHOUDT
+
+- Fotona 4D Men Op aanvraag Hetzelfde protocol, ingesteld op een dikkere huid. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Waarom heet het 4D? +
+
+Omdat er vier behandelingen in een sessie op elkaar volgen, elk op een andere diepte. Van het slijmvlies aan de binnenkant tot de bovenste huidlaag.
+
+Kan ik ook een van de vier los doen? +
+
+Ja. SmoothLiftin, FRAC3, PIANO en SupErficial hebben elk een eigen pagina en zijn los te boeken. Welke bij jou past hoor je tijdens de intake.
+
+Wanneer zie ik er iets van? +
+
+Direct na de sessie ziet de huid er voller uit door de warmte, maar dat is nog geen resultaat. De opbouw van collageen kost weken; het verschil bouwt zich over de reeks op.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/fotona-4d-men
+
+**Tabbladtitel:** Fotona 4D Men | Diba Clinics
+
+**Google-omschrijving:** Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid.
+
+**FOTONA 4D MEN**
+
+*HOE DIEP*
+
+Diepe lederhuid
+
+*HOE LANG*
+
+90 minuten
+
+*HERSTEL*
+
+Een paar uur tot een dag rood en warm. Bij een baard let de behandelaar extra op de zones rond de haargroei.
+
+*HOE VAAK*
+
+Los te doen of als kuur van drie, met vier tot zes weken ertussen.
+
+Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+De mannenhuid is gemiddeld dikker, bevat meer collageen en heeft meer talgklieren en haarfollikels. Daardoor reageert hij anders op warmte en vraagt hij andere instellingen dan de standaardinstelling. Fotona 4D Men doorloopt dezelfde vier stappen, maar met een aangepast energieniveau en een aangepaste opbouw.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
+
+**Wat er gebeurt, in volgorde.**
+
+- Instellen op je huid De behandelaar meet je huidtype en stelt de energie daarop af; lichter doet hier te weinig.
+
+- Dezelfde vier stappen SmoothLiftin, FRAC3, PIANO en SupErficial volgen op elkaar, net als bij de standaardbehandeling.
+
+- Rond de baard Zones met stevige haargroei vragen aandacht, want haar neemt de energie anders op dan huid.
+
+**Wat je ervan merkt in de stoel**
+
+Het verloop is hetzelfde als bij de standaardbehandeling: een bril op, eerst van binnenuit door de wang, daarna van buitenaf.
+
+Wat je merkt is dat de warmte iets verder oploopt. Dat is de bedoeling: een dikkere huid heeft meer nodig om dezelfde diepte te bereiken.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Volgt hetzelfde protocol van vier, met instellingen voor een dikkere huid
+
+- Werkt op de kaaklijn, de hals en de nasolabiale plooien
+
+- Vraagt geen naalden en geen snijden
+
+- Voor losgelaten huid is chirurgie het antwoord
+
+- Bij een volle baard beoordeelt de behandelaar eerst welke zones kunnen
+
+- Dit is een reeks, dus je plant de sessies achter elkaar in
+
+- HUIDVEROUDERING
+
+- HUIDVERSLAPPING
+
+**Wat er bij aansluit**
+
+- Fotona 4D € 370 Hetzelfde protocol met de standaardinstellingen. WAT HET INHOUDT
+
+- Laserontharing € 20 Voor wie de baardlijn wil laten behandelen. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Waarom een aparte behandeling voor mannen? +
+
+Omdat de huid gemiddeld dikker is en meer talgklieren en haarfollikels heeft. Met dezelfde instelling bereik je dan niet dezelfde diepte.
+
+Kan het met een baard? +
+
+Meestal wel, en de behandelaar beoordeelt vooraf welke zones geschikt zijn. Haar neemt de energie anders op dan huid.
+
+Wat kost het? +
+
+Dat hangt af van de zones die we behandelen en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/fotona-acne-control
+
+**Tabbladtitel:** Fotona Acne Control | Diba Clinics
+
+**Google-omschrijving:** Laser bij actieve acne, gericht op de ontsteking en de talgklier.
+
+**FOTONA ACNE CONTROL**
+
+*HOE DIEP*
+
+Bovenste lederhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Een paar uur rood. Bij actieve ontstekingen kan de huid de eerste dag wat geprikkeld aanvoelen.
+
+*HOE VAAK*
+
+Meestal een reeks binnen een acnetraject, met enkele weken ertussen.
+
+Laser bij actieve acne, gericht op de ontsteking en de talgklier.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+Bij actieve acne mikt de laser op twee dingen tegelijk: de ontsteking in de huid en de talgklier die hem voedt. De warmte remt de activiteit van de klier en werkt op de bacterie die bij acne een rol speelt. Het is geen vervanging van een acnetraject maar een stap erbinnen, want acne heeft een verloop en vraagt om meer dan een sessie.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Beoordelen De huidtherapeut bekijkt of het om actieve ontstekingen gaat en welke zones aan de beurt zijn.
+
+- Laser op de zone Het handstuk gaat over de aangedane plekken. Je voelt korte warme tikjes.
+
+- Verder in het traject De sessie staat zelden op zichzelf; hij past binnen het acnetraject met de producten en controles.
+
+**Wat je ervan merkt in de stoel**
+
+Je krijgt een beschermbril op en de behandelaar gaat met korte pulsen over de aangedane zones. Op ontstoken plekken voel je het duidelijker dan op de rustige huid.
+
+Erna ben je een paar uur rood. Bij actieve ontstekingen kan de huid de eerste dag wat geprikkeld aanvoelen; dat hoort erbij.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Werkt op de ontsteking en op de talgklier tegelijk
+
+- Is te combineren met de peelings en producten uit het acnetraject
+
+- Vraagt geen naalden en geen zuren op de huid
+
+- Vervangt het acnetraject niet; het is een stap daarbinnen
+
+- Bij zware of littekenvormende acne kijkt eerst een arts mee
+
+- Voor littekens die al zijn ontstaan kies je Fotona Scar Repair
+
+- ACNE
+
+- ONZUIVERE HUID
+
+**Wat er bij aansluit**
+
+- Acnetraject € 570 Het traject waar deze sessie meestal onderdeel van is. WAT HET INHOUDT
+
+- Fotona Scar Repair Op aanvraag Voor littekens die al zijn ontstaan. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Is dit genoeg om van mijn acne af te komen? +
+
+Zelden. Acne heeft een verloop en vraagt om een traject met behandelingen, producten en controles. Deze laser is daar een stap in en geen vervanging van.
+
+Kan het bij ontstoken acne? +
+
+Ja, en daar is het juist voor bedoeld. De huidtherapeut beoordeelt vooraf welke zones geschikt zijn.
+
+Wat kost het? +
+
+Dat hangt af van of je het los doet of binnen een acnetraject, en dat stellen we tijdens de intake vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/fotona-resurfacing
+
+**Tabbladtitel:** Fotona Resurfacing | Diba Clinics
+
+**Google-omschrijving:** Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid.
+
+**FOTONA RESURFACING**
+
+*HOE DIEP*
+
+Bovenste lederhuid
+
+*HOE LANG*
+
+45 minuten
+
+*HERSTEL*
+
+Van een paar uur tot enkele dagen, afhankelijk van de gekozen diepte.
+
+*HOE VAAK*
+
+Een reeks van drie tot vier, met vier tot zes weken ertussen.
+
+Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+Resurfacing haalt gecontroleerd een deel van de bovenste huidlaag weg en verwarmt de laag eronder. De huid vernieuwt zich daarna sneller dan hij uit zichzelf zou doen, en dat maakt poriën minder opvallend en de structuur gelijkmatiger. Hoe diep dat gaat bepaalt de behandelaar per zone, en die diepte bepaalt ook hoeveel hersteltijd je nodig hebt.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. HIER WERKT HET
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Diepte kiezen De huidtherapeut bepaalt per zone hoe diep het gaat, op je huid en op je hersteltijd.
+
+- Laag voor laag De laser gaat in banen over de zone en haalt gecontroleerd een deel van de bovenlaag weg.
+
+- Herstel De huid is rood en vernieuwt zich in de dagen erna. Zonbescherming hoort er de weken daarna bij.
+
+**Wat je ervan merkt in de stoel**
+
+Elke puls voelt als een korte warme tik. Hoe dieper de instelling, hoe duidelijker je het merkt; de behandelaar vraagt tussendoor hoe het gaat.
+
+Erna is je huid rood en warm, en in de dagen die volgen komt de oude bovenlaag eraf. Niet krabben en niet schrobben; dat is precies waar een vlek van blijft.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Maakt poriën minder opvallend en de structuur gelijkmatiger
+
+- De diepte is per zone in te stellen, dus ook lichter uit te voeren
+
+- Werkt zonder zuren op de huid
+
+- Voor verslapping is PIANO of SmoothLiftin de stap
+
+- Hoe dieper de instelling, hoe meer hersteltijd je nodig hebt
+
+- Vlak voor veel zon plannen we het niet in
+
+- PORIËN
+
+- DOFFE HUID
+
+- ACNELITTEKENS
+
+**Wat er bij aansluit**
+
+- FRAC3 Op aanvraag Werkt fractioneel op de diepte, met minder hersteltijd. WAT HET INHOUDT
+
+- SupErficial laserpeel Op aanvraag De lichte variant, zonder noemenswaardige hersteltijd. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Hoeveel hersteltijd heb ik nodig? +
+
+Dat hangt af van de diepte. Licht uitgevoerd ben je een paar uur rood; dieper reken je op enkele dagen. Dat spreken we vooraf af, zodat het niet samenvalt met iets belangrijks.
+
+Wat is het verschil met een chemische peeling? +
+
+Bij een peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per zone in.
+
+Wat kost het? +
+
+Dat hangt af van de zone en de diepte, en dat stellen we tijdens de intake vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/fotona-scar-repair
+
+**Tabbladtitel:** Fotona Scar Repair | Diba Clinics
+
+**Google-omschrijving:** Laser op littekens: acnelittekens, operatielittekens en striae.
+
+**FOTONA SCAR REPAIR**
+
+*HOE DIEP*
+
+Diepe lederhuid
+
+*HOE LANG*
+
+45 minuten
+
+*HERSTEL*
+
+Een tot enkele dagen rood, afhankelijk van de diepte en de zone.
+
+*HOE VAAK*
+
+Meestal drie tot zes, met vier tot zes weken ertussen.
+
+Laser op littekens: acnelittekens, operatielittekens en striae.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+Een litteken is weefsel dat anders is opgebouwd dan de huid eromheen: strakker, met vezels die in een andere richting lopen. De laser brengt in dat weefsel gecontroleerde warmte aan, waarna het herstel de vezels opnieuw ordent. Daardoor wordt het litteken vlakker en minder rood, en sluit het beter aan bij de huid eromheen. Weg gaat het niet.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
+
+**Wat er gebeurt, in volgorde.**
+
+- Beoordelen De huidtherapeut kijkt hoe oud het litteken is, hoe diep het zit en welke kant het op loopt. Dat bepaalt de instelling.
+
+- Laser op het litteken De pulsen gaan gericht over het litteken en een stukje van de huid eromheen.
+
+- Herstel doet het werk In de weken erna ordent het weefsel zich opnieuw. Daarom zitten er vier tot zes weken tussen de sessies.
+
+**Wat je ervan merkt in de stoel**
+
+Elke puls voelt als een kort, scherp tikje. Op littekenweefsel voel je vaak minder dan op de huid eromheen, want de zenuwen lopen daar anders.
+
+Erna is de zone rood en warm. Hoe lang dat duurt hangt af van de diepte waarop is gewerkt; reken op een tot enkele dagen.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Werkt op acnelittekens, operatielittekens en striae
+
+- Maakt het litteken vlakker en minder rood
+
+- Is te combineren met microneedling in hetzelfde traject
+
+- Een litteken is blijvend weefsel; het wordt rustiger, niet weg
+
+- Een litteken dat nog geneest laten we eerst met rust
+
+- Bij een keloid loopt de behandeling via je arts
+
+- ACNELITTEKENS
+
+- LITTEKENS EN STRIAE
+
+**Wat er bij aansluit**
+
+- Littekentherapie € 100 Voor littekens na een operatie of keizersnede. WAT HET INHOUDT
+
+- SkinPen Microneedling € 180 Microneedling op dezelfde littekens, vaak in combinatie. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Gaat mijn litteken helemaal weg? +
+
+Nee. Een litteken is blijvend weefsel. Wat er wel gebeurt is dat het vlakker en minder rood wordt en beter aansluit bij de huid eromheen.
+
+Hoe oud mag een litteken zijn? +
+
+Een litteken dat nog aan het genezen is laten we eerst met rust. Daarna geldt: hoe jonger, hoe meer er te winnen valt, maar ook bij oude littekens is er vaak iets te doen.
+
+Wat kost het? +
+
+Dat hangt af van de lengte van het litteken en het aantal sessies, en dat stellen we tijdens de intake vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/frac3
+
+**Tabbladtitel:** FRAC3 | Diba Clinics
+
+**Google-omschrijving:** Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden.
+
+**FRAC3**
+
+*HOE DIEP*
+
+Diepe lederhuid
+
+*HOE LANG*
+
+45 minuten
+
+*HERSTEL*
+
+Een tot enkele dagen rood, soms met een fijne korrelige structuur die eraf schilfert.
+
+*HOE VAAK*
+
+Meestal een reeks van drie tot vier, met vier tot zes weken ertussen.
+
+Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+FRAC3 werkt fractioneel: de energie gaat niet als een vlak over de huid maar in eilandjes, waardoor er intact weefsel tussen blijft staan dat het herstel op gang helpt. De pulsen zoeken vanzelf de plekken op waar meer pigment of meer bloed zit, dus de onregelmatigheden krijgen meer energie dan de rustige huid eromheen. Daarmee komt het bij structuur, poriën, roodheid en ongelijke kleur.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
+
+**Wat er gebeurt, in volgorde.**
+
+- Koelen en beschermen Je krijgt een beschermbril op en de huid wordt gekoeld voordat de eerste puls komt.
+
+- In eilandjes De laser gaat in banen over de zone. Elke puls raakt kleine eilandjes en laat de huid ertussen intact.
+
+- Rood erna De huid is een tot enkele dagen rood en voelt warm. Zonbescherming hoort er de weken erna bij.
+
+**Wat je ervan merkt in de stoel**
+
+Elke puls voelt als een kort, scherp tikje, alsof er een elastiekje tegen je huid schiet. Op de wang is dat goed te doen; boven de lip en langs de neus merk je het duidelijker.
+
+Erna ben je rood en warm. In de dagen die volgen kan de huid fijn korrelig aanvoelen en licht schilferen; dat is de oude bovenlaag die eraf komt.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Werkt op structuur, poriën en ongelijke kleur in dezelfde sessie
+
+- Zoekt vanzelf de onregelmatigheden op en spaart de rustige huid
+
+- Is onderdeel van Fotona 4D en ook los te doen
+
+- Voor verslapping van binnenuit is SmoothLiftin de stap
+
+- Voor alleen een frisse huid zonder hersteltijd kies je SupErficial
+
+- Vlak voor veel zon plannen we het niet in
+
+- PORIËN
+
+- LITTEKENS EN STRIAE
+
+- ACNELITTEKENS
+
+**Wat er bij aansluit**
+
+- Fotona 4D € 370 De complete behandeling waar dit de tweede van vier stappen in is. WAT HET INHOUDT
+
+- Fotona Resurfacing Op aanvraag Gaat verder op structuur en poriën, met meer hersteltijd. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Wat betekent fractioneel? +
+
+Dat de energie in eilandjes de huid in gaat in plaats van als een vlak. Het weefsel dat ertussen intact blijft, helpt het herstel op gang en dat scheelt hersteltijd.
+
+Hoeveel sessies heb ik nodig? +
+
+Meestal drie tot vier, met vier tot zes weken ertussen. Hoeveel het er bij jou zijn hangt af van je huid en van wat er speelt.
+
+Wat kost het? +
+
+Dat hangt af van de zone en het aantal sessies, en dat stellen we tijdens de intake vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/hairestart
+
+**Tabbladtitel:** HAIRestart | Diba Clinics
+
+**Google-omschrijving:** Laser op de hoofdhuid bij beginnende haarverdunning.
+
+**HAIRESTART**
+
+*HOE DIEP*
+
+Bovenste lederhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Geen. Je kunt er direct mee de deur uit en je haar gewoon wassen.
+
+*HOE VAAK*
+
+Een traject over meerdere maanden, want haar groeit in cycli. Het aantal hoor je tijdens de intake.
+
+Laser op de hoofdhuid bij beginnende haarverdunning.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+HAIRestart werkt op de hoofdhuid met warmte die de doorbloeding en de activiteit rond de haarzakjes stimuleert. Het richt zich op zakjes die er nog zijn maar minder actief; waar het zakje verdwenen is, valt er niets meer te starten. Daarom telt het moment: hoe eerder er naar gekeken wordt, hoe meer er te behouden valt.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Hoofdhuid beoordelen De huidtherapeut kijkt waar het dunner wordt en sinds wanneer. Dat is het vertrekpunt.
+
+- Laser over de zone Het handstuk gaat in banen over de hoofdhuid. Je voelt warmte, geen prikken.
+
+- Over de maanden Het traject loopt door over meerdere maanden, want haargroei volgt cycli.
+
+**Wat je ervan merkt in de stoel**
+
+Je zit rechtop en de behandelaar gaat in banen over je hoofdhuid. Wat je voelt is warmte die per baan even oploopt.
+
+Erna kun je direct door met je dag en je haar gewoon wassen. Er is niets aan je te zien.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Richt zich op haarzakjes die nog aanwezig zijn maar minder actief
+
+- Werkt zonder naalden en zonder hersteltijd
+
+- Is te combineren met het XL Hair-traject
+
+- Waar het haarzakje weg is, komt geen haar terug
+
+- Heeft de haaruitval een medische oorzaak, dan hoort dat bij een arts
+
+- Reken op maanden; haar groeit in cycli en die laten zich niet opjagen
+
+**Wat er bij aansluit**
+
+- XL Hair € 800 Het traject waar deze sessies in passen. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Werkt dit bij kale plekken? +
+
+Nee. Waar het haarzakje verdwenen is valt er niets te starten. Dit richt zich op zakjes die er nog zijn maar minder actief zijn geworden.
+
+Wanneer zie ik verschil? +
+
+Reken op maanden. Haar groeit in cycli en dit traject volgt die cycli.
+
+Wat kost het? +
+
+Dat hangt af van de duur van het traject, en dat stellen we tijdens de intake vast.
 
 **Begin met een huidanalyse**
 
@@ -6426,6 +7366,126 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ---
 
+### /behandelingen/liplase
+
+**Tabbladtitel:** LipLase | Diba Clinics
+
+**Google-omschrijving:** Vollere en gladdere lippen zonder filler, met laser van binnen en buiten.
+
+**LIPLASE**
+
+*HOE DIEP*
+
+Bovenste lederhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Enkele uren gezwollen lippen, soms tot een dag.
+
+*HOE VAAK*
+
+Een reeks van drie, met enkele weken ertussen.
+
+Vollere en gladdere lippen zonder filler, met laser van binnen en buiten.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+LipLase verwarmt het weefsel van je lippen en de rand eromheen, zowel van de binnenkant als van buiten. De warmte zet de aanmaak van collageen in gang, waardoor de lip wat voller wordt en de lijntjes eromheen minder scherp. Het gaat om je eigen weefsel dat opbouwt, dus het verschil is subtieler dan bij een filler en het bouwt zich op over de reeks.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Van binnenuit Het handstuk gaat eerst tegen de binnenkant van je lip. Dat voelt warm.
+
+- En van buiten Daarna werkt de behandelaar aan de buitenkant, over de lip en de rand eromheen.
+
+- Even gezwollen De lippen zijn enkele uren wat gezwollen. Dat trekt vanzelf weg.
+
+**Wat je ervan merkt in de stoel**
+
+Het handstuk komt eerst tegen de binnenkant van je lip en daarna aan de buitenkant. Wat je voelt is warmte, geen prikken.
+
+Direct erna zijn je lippen wat gezwollen en voelen ze warm. Dat trekt binnen enkele uren weg; bij sommige mensen duurt het tot de volgende dag.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Werkt met je eigen weefsel, dus zonder dat er iets ingebracht wordt
+
+- Maakt de lijntjes rond de lip minder scherp
+
+- Vraagt geen naalden
+
+- Voor duidelijk meer volume is een filler het middel en niet dit
+
+- Het verschil is subtiel en bouwt zich op over de reeks
+
+- Bij een actieve koortslip stellen we de behandeling uit
+
+- RIMPELS
+
+**Wat er bij aansluit**
+
+- Fotona 4D € 370 De complete gezichtsbehandeling op hetzelfde apparaat. WAT HET INHOUDT
+
+- SmoothLiftin Op aanvraag Werkt ook van binnenuit, maar op het middengezicht. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Is dit hetzelfde als een filler? +
+
+Nee. Bij een filler wordt er iets ingebracht en is het volume er meteen. Hier bouwt je eigen weefsel op, dus het verschil is subtieler en het komt over de reeks.
+
+Doet het pijn? +
+
+Het is warm en even wennen, maar het doet geen pijn. Er komt geen verdoving aan te pas.
+
+Hoe lang houdt het aan? +
+
+Dat verschilt per persoon. Het gaat om opgebouwd collageen, en dat neemt na verloop van tijd weer af; de meeste mensen komen periodiek terug.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
 ### /behandelingen/littekentherapie
 
 **Tabbladtitel:** Littekentherapie | Diba Clinics
@@ -6960,6 +8020,128 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ---
 
+### /behandelingen/piano
+
+**Tabbladtitel:** PIANO skin tightening | Diba Clinics
+
+**Google-omschrijving:** Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals.
+
+**PIANO SKIN TIGHTENING**
+
+*HOE DIEP*
+
+Diepe lederhuid
+
+*HOE LANG*
+
+45 minuten
+
+*HERSTEL*
+
+Geen tot een paar uur lichte roodheid. Je gaat er meestal direct mee de deur uit.
+
+*HOE VAAK*
+
+Een reeks van drie tot vier, met vier tot zes weken ertussen. Ook onderdeel van Fotona 4D.
+
+Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+PIANO is een lange, trage puls die het weefsel over een groot oppervlak gelijkmatig verwarmt in plaats van punt voor punt. Daardoor komt de warmte dieper en blijft de bovenste huidlaag koel. Bestaand collageen trekt samen en de aanmaak van nieuw collageen komt op gang, wat de huid steviger maakt.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. GAAT ER DOORHEEN
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
+
+**Wat er gebeurt, in volgorde.**
+
+- Bril op Je krijgt een beschermbril op en de behandelaar brengt een dunne laag gel aan.
+
+- Warmte in banen Het handstuk gaat in rustige banen over de zone. De warmte loopt op en blijft daar even hangen.
+
+- Direct door De huid is hooguit licht roze. Meestal ga je er direct mee de deur uit.
+
+**Wat je ervan merkt in de stoel**
+
+Wat je voelt is een oplopende warmte die net voor het ongemakkelijke stopt. De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt en stelt het apparaat op jouw antwoord bij.
+
+Erna voelt de huid warm en ziet hij er wat voller uit. Dat is de warmte en nog geen resultaat; de opbouw komt over de weken erna.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Verwarmt gelijkmatig over een groot oppervlak in plaats van punt voor punt
+
+- Werkt op de kaaklijn, de hals en de wangen
+
+- Laat de bovenste huidlaag koel, dus er is nauwelijks hersteltijd
+
+- Voor losgelaten huid is chirurgie het antwoord
+
+- Voor poriën en structuur kies je FRAC3 of SupErficial
+
+- Dit is een reeks; van een enkele sessie zie je weinig
+
+- HUIDVERSLAPPING
+
+- HUIDVEROUDERING
+
+**Wat er bij aansluit**
+
+- Fotona 4D € 370 De complete behandeling waar dit de derde van vier stappen in is. WAT HET INHOUDT
+
+- VectorLift € 150 Dezelfde gedachte, maar gericht op voorhoofd en wenkbrauw. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Waarom voelt dit anders dan andere laser? +
+
+Omdat de puls lang en traag is in plaats van kort en scherp. Je voelt geen tikjes maar een warmte die oploopt.
+
+Zie ik er meteen iets van? +
+
+De huid ziet er direct na de sessie voller uit door de warmte. Het echte verschil komt uit de collageenopbouw, en die kost weken.
+
+Wat kost het? +
+
+Dat hangt af van de zone en het aantal sessies, en dat stellen we tijdens de intake vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
 ### /behandelingen/rrs-eyes
 
 **Tabbladtitel:** RRS Eyes | Diba Clinics
@@ -7316,6 +8498,494 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ---
 
+### /behandelingen/smootheye
+
+**Tabbladtitel:** SmoothEye | Diba Clinics
+
+**Google-omschrijving:** Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes.
+
+**SMOOTHEYE**
+
+*HOE DIEP*
+
+Bovenste lederhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Een paar uur licht rood rond de ogen. Je gaat er meestal direct mee de deur uit.
+
+*HOE VAAK*
+
+Een reeks van drie tot vier, met enkele weken ertussen.
+
+Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+De huid rond je ogen is de dunste van je gezicht en verslapt daardoor als eerste. SmoothEye verwarmt die zone met een lange, trage puls waarbij de bovenste laag koel blijft. Bestaand collageen trekt samen en er komt nieuwe aanmaak op gang, wat de fijne lijntjes minder scherp maakt en het ooglid iets steviger.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Ogen beschermd Er komen metalen oogschelpen onder je oogleden. Die blijven de hele behandeling zitten.
+
+- Warmte rond het oog Het handstuk gaat in rustige banen over de oogcontour. De warmte loopt op en blijft daar even hangen.
+
+- Direct door De huid is een paar uur licht roze. Make-up kan meestal diezelfde dag weer.
+
+**Wat je ervan merkt in de stoel**
+
+De oogschelpen zijn even wennen en voelen koel. Zodra ze zitten zie je niets meer, en dat duurt de hele behandeling.
+
+Wat je voelt is een warmte die oploopt rond je oog. De behandelaar vraagt tussendoor hoe warm het is en stelt daarop bij.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Werkt op de dunne huid rond de ogen, waar veel behandelingen niet mogen komen
+
+- Maakt kraaienpootjes en fijne lijntjes minder scherp
+
+- Vraagt geen naalden en geen hersteltijd
+
+- Voor donkere kringen door pigment of vaatjes kies je een andere behandeling
+
+- Voor een echt ooglidoverschot is dit te licht; dat is chirurgie
+
+- Dit is een reeks; van een enkele sessie zie je weinig
+
+- RIMPELS
+
+- WALLEN
+
+**Wat er bij aansluit**
+
+- VectorLift € 150 Werkt boven de wenkbrauw, waar SmoothEye eronder werkt. WAT HET INHOUDT
+
+- Fotona 4D € 370 De complete gezichtsbehandeling op hetzelfde apparaat. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Is het veilig zo dicht bij je ogen? +
+
+Ja, met de metalen oogschelpen die eronder gaan. Die schermen het oog volledig af en blijven de hele behandeling zitten.
+
+Helpt dit tegen donkere kringen? +
+
+Meestal niet. Kringen komen van pigment, van doorschijnende vaatjes of van schaduw, en dat vraagt een andere aanpak. Wat het bij jou is stellen we tijdens de intake vast.
+
+Hoeveel sessies heb ik nodig? +
+
+Meestal drie tot vier, met enkele weken ertussen. Daarna houd je het bij met een sessie af en toe.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/smoothliftin
+
+**Tabbladtitel:** SmoothLiftin | Diba Clinics
+
+**Google-omschrijving:** Collageenstimulatie van binnenuit, door het slijmvlies van je wang.
+
+**SMOOTHLIFTIN**
+
+*HOE DIEP*
+
+Bovenste lederhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Geen. Je gaat er direct mee de deur uit en er is aan de buitenkant niets te zien.
+
+*HOE VAAK*
+
+Meestal een reeks, met enkele weken ertussen. Ook los te doen als onderdeel van Fotona 4D.
+
+Collageenstimulatie van binnenuit, door het slijmvlies van je wang.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+Bij SmoothLiftin werkt de laser vanaf de binnenkant van je mond. Het slijmvlies van de wang ligt vlak tegen het weefsel rond je mond en je nasolabiale plooien aan, en van die kant is die zone te bereiken zonder dat de buitenste huidlaag wordt geraakt. De warmte trekt bestaand collageen samen en zet de aanmaak van nieuw collageen in gang.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. GAAT ER DOORHEEN
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Mond open Het handstuk gaat tegen de binnenkant van je wang. Je krijgt een beschermbril op, ook al werkt de laser binnen.
+
+- Warmte in banen De behandelaar gaat in banen over het slijmvlies. Het voelt warm en de warmte loopt op tot net voor het ongemakkelijke.
+
+- Direct door Er is aan de buitenkant niets te zien, dus je gaat meteen door met je dag.
+
+**Wat je ervan merkt in de stoel**
+
+Je ligt achterover met je mond open en het handstuk gaat tegen de binnenkant van je wang. Wat je voelt is warmte die oploopt, en de behandelaar vraagt tussendoor hoe warm het aanvoelt.
+
+Erna is er aan de buitenkant niets te zien. Je kunt gewoon eten en drinken; sommige mensen vinden het de eerste uren wat droog aanvoelen in de mond.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Bereikt het middengezicht vanaf de binnenkant, waar de huid van buiten niet bij komt
+
+- Laat de buitenste huidlaag onaangeroerd, dus er is geen hersteltijd
+
+- Werkt op de nasolabiale plooien en het mondgebied
+
+- Voor de oogcontour is SmoothEye de behandeling
+
+- Voor structuur en poriën aan de buitenkant kies je FRAC3 of SupErficial
+
+- Dit is een reeks, dus je plant de sessies achter elkaar in
+
+- HUIDVERSLAPPING
+
+- RIMPELS
+
+**Wat er bij aansluit**
+
+- Fotona 4D € 370 De complete behandeling waar dit de eerste van vier stappen in is. WAT HET INHOUDT
+
+- SmoothEye € 150 Voor de oogcontour, waar SmoothLiftin niet bij komt. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Werkt een laser in je mond echt op je huid? +
+
+Het slijmvlies ligt vlak tegen het weefsel van je middengezicht aan. De warmte komt daardoor bij de laag waar collageen zit, zonder dat de buitenste huidlaag geraakt wordt.
+
+Doet het pijn? +
+
+Het is warm en het is even wennen, maar het doet geen pijn. Er komt geen verdoving aan te pas.
+
+Wat kost het? +
+
+Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/superficial-peel
+
+**Tabbladtitel:** SupErficial laserpeel | Diba Clinics
+
+**Google-omschrijving:** Een oppervlakkige laserpeeling voor een gladdere huid en meer glans.
+
+**SUPERFICIAL LASERPEEL**
+
+*HOE DIEP*
+
+Opperhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Een paar uur licht rood. Make-up kan meestal de volgende dag weer.
+
+*HOE VAAK*
+
+Los te doen als opfrisser of als reeks. Ook de laatste stap van Fotona 4D.
+
+Een oppervlakkige laserpeeling voor een gladdere huid en meer glans.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+SupErficial haalt met korte pulsen een dunne laag van de hoornlaag af. Dat is dezelfde gedachte als bij een chemische peeling, maar dan met licht in plaats van met zuur: er komt geen middel op je huid dat moet inwerken en de diepte is per puls te sturen. De huid eronder komt sneller aan de beurt, wat hem gladder maakt en het licht beter laat weerkaatsen.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. HIER WERKT HET
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. BLIJFT ONAANGEROERD
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Schoon en beschermd Make-up eraf en een beschermbril op. De huid wordt kort gekoeld.
+
+- Laag voor laag De behandelaar gaat in banen over je gezicht en bepaalt per zone hoe diep de peeling gaat.
+
+- Direct door De huid is een paar uur licht rood. Zonbescherming hoort er de dagen erna bij.
+
+**Wat je ervan merkt in de stoel**
+
+Elke puls voelt als een korte warme tik. Het gaat snel en de meeste mensen vinden het goed te doen.
+
+Erna is je huid roze en voelt hij strak aan. Dat trekt binnen een paar uur weg en de dag erna is je huid zichtbaar gladder.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Maakt de huid meteen gladder en laat het licht beter weerkaatsen
+
+- Werkt zonder zuren, dus de diepte is per puls te sturen
+
+- Is de afsluitende stap van Fotona 4D en ook los te doen
+
+- Blijft in de bovenste lagen; voor structuur dieper kies je FRAC3
+
+- Voor verslapping is PIANO of SmoothLiftin de stap
+
+- Het resultaat houd je bij met herhaling
+
+- DOFFE HUID
+
+- PORIËN
+
+**Wat er bij aansluit**
+
+- Fotona 4D € 370 De complete behandeling waar dit de laatste van vier stappen in is. WAT HET INHOUDT
+
+- Medische peelings € 140 Hetzelfde doel met een chemisch middel in plaats van met licht. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Wat is het verschil met een chemische peeling? +
+
+Bij een chemische peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per puls in.
+
+Kan dit vlak voor een gelegenheid? +
+
+Reken op een paar uur roodheid. Een dag ervoor is meestal goed te doen; diezelfde dag is krap.
+
+Wat kost het? +
+
+Dat hangt af van de zone en of je het los doet of als onderdeel van 4D. Dat stellen we tijdens de intake vast.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/vectorlift
+
+**Tabbladtitel:** VectorLift | Diba Clinics
+
+**Google-omschrijving:** Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden.
+
+**VECTORLIFT**
+
+*HOE DIEP*
+
+Diepe lederhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Een paar uur licht rood op het voorhoofd. Je gaat er direct mee de deur uit.
+
+*HOE VAAK*
+
+Een reeks van drie tot vier, met enkele weken ertussen.
+
+Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden.
+
+Draait op Fotona TimeWalker
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+VectorLift verwarmt het weefsel van je voorhoofd en de zone boven je wenkbrauw in vaste banen. Doordat collageen samentrekt en er nieuwe aanmaak op gang komt, komt de wenkbrauw iets omhoog te liggen en wordt het voorhoofd steviger. Het gaat om millimeters en om je eigen weefsel, niet om een chirurgische lift.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+
+- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+
+- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+
+GRIJPT AAN OP
+
+Water
+
+Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. GAAT ER DOORHEEN
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. HIER WERKT HET
+
+**Wat er gebeurt, in volgorde.**
+
+- Bril op Je krijgt een beschermbril op en de behandelaar bepaalt de banen op je voorhoofd.
+
+- Warmte in lijnen Het handstuk gaat in vaste banen over het voorhoofd en boven de wenkbrauw.
+
+- Direct door De huid is een paar uur licht roze. Make-up kan diezelfde dag weer.
+
+**Wat je ervan merkt in de stoel**
+
+Wat je voelt is een oplopende warmte op je voorhoofd. Het is geen prikken maar warmte die blijft hangen.
+
+Erna voelt de huid warm en strak. Dat trekt binnen een paar uur weg.
+
+**Waar deze behandeling voor bedoeld is**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Tilt de wenkbrauwlijn iets op met je eigen weefsel
+
+- Maakt het voorhoofd steviger zonder naalden of snijden
+
+- Is goed te combineren met SmoothEye op de oogcontour
+
+- Dit is geen chirurgische wenkbrauwlift; het gaat om millimeters
+
+- Voor fronsrimpels door spierbeweging is dit niet het middel
+
+- Dit is een reeks; van een enkele sessie zie je weinig
+
+- HUIDVERSLAPPING
+
+- RIMPELS
+
+**Wat er bij aansluit**
+
+- SmoothEye € 150 Werkt op de oogcontour, direct onder de zone van VectorLift. WAT HET INHOUDT
+
+- Fotona 4D € 370 De complete gezichtsbehandeling op hetzelfde apparaat. WAT HET INHOUDT
+
+**Veelgestelde vragen**
+
+Hoeveel gaat mijn wenkbrauw omhoog? +
+
+Het gaat om millimeters. Dit is geen chirurgische lift; wat je opbouwt is je eigen collageen, en hoeveel dat is verschilt per persoon.
+
+Kan ik dit combineren met SmoothEye? +
+
+Ja, die twee sluiten op elkaar aan: VectorLift werkt boven de wenkbrauw en SmoothEye op de oogcontour eronder.
+
+Hoe lang houdt het aan? +
+
+Dat verschilt per persoon en het is niet blijvend. De meeste mensen komen periodiek terug om het bij te houden.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
 ### /behandelingen/voedingsintolerantietest
 
 **Tabbladtitel:** Voedingsintolerantietest | Diba Clinics
@@ -7628,7 +9298,7 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 - METEN EVE-M Het apparaat waarmee de huidtherapeut je huid vastlegt en meet, onder licht dat elke keer hetzelfde is. Consult met EVE-M huidanalyse
 
-- LASER FOTONA Fotona TimeWalker Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · NightLase
+- LASER FOTONA Fotona TimeWalker Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · Fotona 4D · Fotona 4D Men · SmoothLiftin · FRAC3 · PIANO skin tightening · SupErficial laserpeel · SmoothEye · LipLase · VectorLift · Fotona Acne Control · Fotona Scar Repair · Fotona Resurfacing · HAIRestart · NightLase
 
 - LASER CANDELA Gentle Laser Pro-U De laser die we voor ontharing gebruiken. Hij mikt op het pigment in de haarwortel, en de huid eromheen wordt gekoeld. Laserontharing
 
@@ -8116,6 +9786,32 @@ Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit
 
 - Fotona TimeWalker € 150
 
+- Fotona 4D € 370
+
+- Fotona 4D Men Op aanvraag
+
+- SmoothLiftin Op aanvraag
+
+- FRAC3 Op aanvraag
+
+- PIANO skin tightening Op aanvraag
+
+- SupErficial laserpeel Op aanvraag
+
+- SmoothEye € 150
+
+- LipLase € 150
+
+- VectorLift € 150
+
+- Fotona Acne Control Op aanvraag
+
+- Fotona Scar Repair Op aanvraag
+
+- Fotona Resurfacing Op aanvraag
+
+- HAIRestart Op aanvraag
+
 - NightLase Op aanvraag
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
@@ -8191,6 +9887,18 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 - Rimpels
 
 - Huidverslapping
+
+- Poriën
+
+- Acnelittekens
+
+- Doffe huid
+
+- Wallen
+
+- Onzuivere huid
+
+- Striae
 
 **Veelgestelde vragen**
 
@@ -9132,7 +10840,33 @@ Werkzame stoffen op diepte brengen.
 
 Mikken op kleur, vaten of structuur.
 
-- Fotona TimeWalker Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. € 150 ▾
+- Fotona TimeWalker Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. € 150 ▾
+
+- Fotona 4D Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. € 370 ▾
+
+- Fotona 4D Men Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. Na de meting ▾
+
+- SmoothLiftin Collageenstimulatie van binnenuit, door het slijmvlies van je wang. Na de meting ▾
+
+- FRAC3 Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. Na de meting ▾
+
+- PIANO skin tightening Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. Na de meting ▾
+
+- SupErficial laserpeel Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. Na de meting ▾
+
+- SmoothEye Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. € 150 ▾
+
+- LipLase Vollere en gladdere lippen zonder filler, met laser van binnen en buiten. € 150 ▾
+
+- VectorLift Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. € 150 ▾
+
+- Fotona Acne Control Laser bij actieve acne, gericht op de ontsteking en de talgklier. Na de meting ▾
+
+- Fotona Scar Repair Laser op littekens: acnelittekens, operatielittekens en striae. Na de meting ▾
+
+- Fotona Resurfacing Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. Na de meting ▾
+
+- HAIRestart Laser op de hoofdhuid bij beginnende haarverdunning. Na de meting ▾
 
 - Nordlys IPL Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. € 75 ▾
 
@@ -10850,7 +12584,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **ALLES WAT WE UITLEGGEN**
 
-Alles wat hier wordt uitgelegd staat verspreid over 30 huidprobleempagina's, 12 apparaatpagina's en 23behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
+Alles wat hier wordt uitgelegd staat verspreid over 30 huidprobleempagina's, 12 apparaatpagina's en 36behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
 
 De doorsnedes, testen en vergelijkers staan er los bij. Die zijn het meeste werk en tegelijk het slechtst vindbaar, want ze staan halverwege een pagina waar je niet komt als je er niet naar zoekt.
 
@@ -12175,4 +13909,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5647 tekstblokken · ongeveer 83.876 woorden._
+_120 pagina's · 6462 tekstblokken · ongeveer 93.841 woorden._

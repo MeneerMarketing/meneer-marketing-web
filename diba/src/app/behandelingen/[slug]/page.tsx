@@ -13,6 +13,7 @@ import {
   BEHANDELINGEN,
   HUIDLAGEN,
   behandelingVoorSlug,
+  prijsTekst,
   diepteVanLagen,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
@@ -86,6 +87,22 @@ export default async function BehandelingPage({ params }: PageProps) {
   /* De koppeling loopt twee kanten op: hier het apparaat, en op de apparatuurpagina de
      behandelingen die erop draaien. Beide uit dezelfde tabel. */
   const apparaten = apparatenVoorBehandeling(b.slug);
+
+  /* De verwante behandelingen, met hun record erbij. Een slug die nergens bij hoort valt
+     stil weg in plaats van een lege kaart op te leveren. */
+  const verwanten = (b.verwant ?? [])
+    .map(({ slug: s, waarom }) => ({
+      behandeling: behandelingVoorSlug(s),
+      waarom,
+    }))
+    .filter(
+      (
+        x,
+      ): x is {
+        behandeling: NonNullable<typeof x.behandeling>;
+        waarom: string;
+      } => Boolean(x.behandeling),
+    );
 
   /* De diepste laag die geraakt wordt, en op welke plek die in de rij staat. Dat tweede
      bepaalt welke lagen erboven gepasseerd worden om er te komen. */
@@ -561,6 +578,49 @@ export default async function BehandelingPage({ params }: PageProps) {
                 ))}
               </ul>
             </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Hoort hierbij ──
+
+          Fotona 4D bestaat uit vier andere behandelingen die elk een eigen pagina hebben.
+          Zonder dit blok zijn dat vijf losse pagina's die toevallig op hetzelfde apparaat
+          draaien, en moet de bezoeker zelf bedenken dat SmoothLiftin de eerste stap is.
+
+          De reden per behandeling is het punt: een rijtje namen zegt niets. */}
+      {verwanten.length > 0 ? (
+        <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+          <div className="mx-auto">
+            <Label>Hoort hierbij</Label>
+            <h2 className="diba-display-m mt-4 max-w-[22ch]">
+              Wat er <span className="diba-accent">bij aansluit</span>
+            </h2>
+
+            <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {verwanten.map(({ behandeling: v, waarom }) => (
+                <li
+                  key={v.slug}
+                  className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+                >
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                    <h3 className="diba-card-title">{v.naam}</h3>
+                    <span className="text-[15px] leading-6 text-[var(--t-muted)] tabular-nums">
+                      {prijsTekst(v.prijs)}
+                    </span>
+                  </div>
+                  <p className="mt-3 min-h-[3lh] grow text-[15px] leading-7 text-[var(--t-body)]">
+                    {waarom}
+                  </p>
+                  <Link
+                    href={`/behandelingen/${v.slug}`}
+                    className="diba-label mt-5 border-t border-[var(--g-100)] pt-5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                  >
+                    Wat het inhoudt
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       ) : null}

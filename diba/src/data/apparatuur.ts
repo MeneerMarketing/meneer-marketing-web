@@ -300,7 +300,26 @@ export const APPARATUUR: readonly Apparaat[] = [
       "Werken op een gebruinde huid [MEDISCHE-CHECK-ROJDA]",
       "Eén sessie met blijvend resultaat; het is altijd een reeks",
     ],
-    behandelingen: ["fotona", "nightlase"],
+    /* Alle behandelingen die op dit apparaat draaien. Dit veld voedt zowel
+       "Hierop draait" hier als "Draait op" op elke behandelpagina, dus beide
+       richtingen komen uit dezelfde bron. */
+    behandelingen: [
+      "fotona",
+      "fotona-4d",
+      "fotona-4d-men",
+      "smoothliftin",
+      "frac3",
+      "piano",
+      "superficial-peel",
+      "smootheye",
+      "liplase",
+      "vectorlift",
+      "fotona-acne-control",
+      "fotona-scar-repair",
+      "fotona-resurfacing",
+      "hairestart",
+      "nightlase",
+    ],
 
     werkwijze: "licht",
     doelwit: "water",
