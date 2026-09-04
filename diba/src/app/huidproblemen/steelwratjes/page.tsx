@@ -40,7 +40,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/steelwratjes",
   titel: "Steelwratjes laten verwijderen in Rotterdam",
   omschrijving:
-    "Een zacht velletje aan een steeltje in je hals of oksel is meestal onschuldig en in een afspraak weg. Maar niet alles wat uitsteekt is een steelwratje.",
+    "Steelwratjes laten verwijderen, meestal in een afspraak. We rekenen per kwartier en niet per wratje.",
 });
 
 const PAD = "/huidproblemen/steelwratjes";
@@ -114,12 +114,13 @@ export default function Pagina() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Maar er hangt van alles aan een hals dat erop lijkt en het niet
-              is. Daarom kijken we eerst, ook als je precies weet wat je wil.
+              We rekenen per kwartier en niet per wratje, dus meerdere in een
+              afspraak is meestal voordeliger. De huidtherapeut beoordeelt eerst
+              elk plekje, want er hangt van alles aan een hals dat erop lijkt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#check">Doe de steeltjescheck</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -155,11 +156,11 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             icoon={HuidBultje}
-            label="De steeltjescheck"
+            label="In het consult"
             raster="gelijk"
-            kop="Waar je zelf"
-            accent="naar kunt kijken"
-            intro="Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan trekken en niet knijpen: dat is wat mensen thuis doen en waar het misgaat."
+            kop="Waar we"
+            accent="naar kijken"
+            intro="De huidtherapeut beoordeelt de vorm, de kleur en of het plekje aan een steeltje hangt. Dat bepaalt of het hier weg kan."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -190,7 +191,7 @@ export default function Pagina() {
             label="Vier uitsteeksels"
             kop="Vier soorten"
             accent="uitsteeksels"
-            intro="Ze zitten op dezelfde plekken en voelen bijna hetzelfde. Het verschil bepaalt of het hier in een kwartier klaar is of dat er eerst iemand anders naar hoort te kijken."
+            intro="Ze zitten op dezelfde plekken en voelen bijna hetzelfde. Het verschil bepaalt of het hier in een kwartier klaar is."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -227,7 +228,7 @@ export default function Pagina() {
       <WelNiet
         wel={STEELWRAT_WEL_NIET.wel}
         niet={STEELWRAT_WEL_NIET.niet}
-        intro="Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste plekje is, is het in een afspraak klaar."
+        intro="Bij een steelwratje is het antwoord meestal kort: als het het juiste plekje is, is het in een afspraak klaar."
       />
 
       <PillarFaq items={STEELWRAT_FAQ} onderwerp="steelwratjes" />

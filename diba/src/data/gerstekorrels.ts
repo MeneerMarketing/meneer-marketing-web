@@ -160,7 +160,7 @@ export const AFSPRAAK_STAPPEN: readonly {
   {
     kop: "Eerst kijken, met vergroting",
     tekst:
-      "We bekijken elk bolletje van dichtbij. Zit er iets tussen dat geen milium is, dan hoor je dat nu en niet halverwege.",
+      "De huidtherapeut bekijkt elk bolletje van dichtbij. Zit er iets tussen dat geen milium is, dan hoor je dat meteen en niet halverwege.",
   },
   {
     kop: "Een prikje per bolletje",

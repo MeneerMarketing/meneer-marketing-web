@@ -156,11 +156,11 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             icoon={HuidStrakker}
-            label="De zwaartekrachttest"
+            label="In het consult"
             raster="gelijk"
-            kop="Zo test je zelf"
-            accent="hoeveel er te winnen valt"
-            intro="Dit is een herkenningshulp en tegelijk de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is."
+            kop="Wat er te"
+            accent="winnen valt"
+            intro="De behandelaar bekijkt je huid staand en liggend. Het verschil tussen die twee beelden geeft aan wat een behandeling kan opleveren."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">

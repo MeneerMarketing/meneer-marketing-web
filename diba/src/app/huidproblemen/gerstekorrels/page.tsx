@@ -31,7 +31,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/gerstekorrels",
   titel: "Gerstekorrels en milia verwijderen",
   omschrijving:
-    "Een hard wit bolletje dat je niet kunt uitdrukken is een milium en in seconden weg. Een rood, pijnlijk bultje is iets anders en hoort bij de huisarts.",
+    "Milia en gerstekorrels laten weghalen. Een hard wit bolletje is in seconden weg; rood en pijnlijk hoort bij je huisarts.",
 });
 
 const PAD = "/huidproblemen/gerstekorrels";
@@ -106,8 +106,9 @@ export default function Pagina() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Is het rood, warm en pijnlijk, dan is het een ontsteking en dan
-              hoort het bij de huisarts. Wij prikken daar niet in.
+              Een milium halen we weg met een fijne naald, in een paar seconden
+              per bolletje. Is het rood, warm en pijnlijk, dan gaat het om een
+              ontsteking en hoort het bij je huisarts.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -151,7 +152,7 @@ export default function Pagina() {
             raster="gelijk"
             kop="Hoe we milia"
             accent="weghalen"
-            intro="De drempel bij milia is zelden de prijs en bijna altijd dat beeld. Daar omheen praten maakt het niet kleiner, dus staat hier gewoon wat er gebeurt en hoe lang het duurt."
+            intro="Een fijne naald opent het bolletje en de inhoud komt eruit. Per milium duurt dat een paar seconden, en er blijft geen wondje."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -199,7 +200,7 @@ export default function Pagina() {
             label="Vier bultjes"
             kop="Wit bolletje of"
             accent="ontstoken kliertje?"
-            intro="Dit is een herkenningshulp en geen diagnose. Het verschil tussen wit en hard aan de ene kant en rood en pijnlijk aan de andere is wel iets dat je zelf kunt zien, en het bepaalt of je hier moet zijn of bij je huisarts."
+            intro="Wit en hard aan de ene kant, rood en pijnlijk aan de andere: dat verschil bepaalt of het hier weg kan of naar de huisarts gaat."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -213,7 +214,7 @@ export default function Pagina() {
       <WelNiet
         wel={GERSTEKORRELS_WEL_NIET.wel}
         niet={GERSTEKORRELS_WEL_NIET.niet}
-        intro="Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste bultje is, is het in een afspraak klaar."
+        intro="Bij milia is het antwoord meestal kort: als het het juiste bultje is, is het in een afspraak klaar."
       />
 
       <PillarFaq items={GERSTEKORRELS_FAQ} onderwerp="gerstekorrels" />

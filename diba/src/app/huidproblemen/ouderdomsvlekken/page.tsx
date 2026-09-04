@@ -149,11 +149,11 @@ export default function Pagina() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De verandercheck"
+            label="In het consult"
             raster="gelijk"
-            kop="Een foto met een datum"
-            accent="verslaat je geheugen."
-            intro="Dit zegt niet wat een plek is; dat kan niemand vanaf een foto. Het zegt wel of er iets verandert, en dat is het enige dat bepaalt of je eerst ergens anders moet zijn."
+            kop="Waar we"
+            accent="naar kijken"
+            intro="De behandelaar beoordeelt vorm, rand en kleur, en legt de plek vast in beeld. Zo is later te zien of er iets is veranderd."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">

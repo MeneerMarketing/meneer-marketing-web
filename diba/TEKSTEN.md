@@ -1712,13 +1712,13 @@ Er staat op deze pagina bewust geen knop om bij ons een afspraak te maken. Heb j
 
 **Tabbladtitel:** Gerstekorrels en milia verwijderen | Diba Clinics
 
-**Google-omschrijving:** Een hard wit bolletje dat je niet kunt uitdrukken is een milium en in seconden weg. Een rood, pijnlijk bultje is iets anders en hoort bij de huisarts.
+**Google-omschrijving:** Milia en gerstekorrels laten weghalen. Een hard wit bolletje is in seconden weg; rood en pijnlijk hoort bij je huisarts.
 
 **GERSTEKORRELS EN WITTE BULTJES**
 
 Gerstekorrel betekent in de volksmond en in de spreekkamer twee verschillende dingen. Wat mensen meestal bedoelen is een milium: een hard wit bolletje dat er maanden zit, geen pijn doet en niet uit te knijpen is. Dat is in seconden weg.
 
-Is het rood, warm en pijnlijk, dan is het een ontsteking en dan hoort het bij de huisarts. Wij prikken daar niet in.
+Een milium halen we weg met een fijne naald, in een paar seconden per bolletje. Is het rood, warm en pijnlijk, dan gaat het om een ontsteking en hoort het bij je huisarts.
 
 > knop: KIJK WAT JIJ HEBT
 
@@ -1726,9 +1726,9 @@ Is het rood, warm en pijnlijk, dan is het een ontsteking en dan hoort het bij de
 
 **Hoe we milia weghalen**
 
-De drempel bij milia is zelden de prijs en bijna altijd dat beeld. Daar omheen praten maakt het niet kleiner, dus staat hier gewoon wat er gebeurt en hoe lang het duurt.
+Een fijne naald opent het bolletje en de inhoud komt eruit. Per milium duurt dat een paar seconden, en er blijft geen wondje.
 
-- STAP 1 Eerst kijken, met vergroting We bekijken elk bolletje van dichtbij. Zit er iets tussen dat geen milium is, dan hoor je dat nu en niet halverwege.
+- STAP 1 Eerst kijken, met vergroting De huidtherapeut bekijkt elk bolletje van dichtbij. Zit er iets tussen dat geen milium is, dan hoor je dat meteen en niet halverwege.
 
 - STAP 2 Een prikje per bolletje De huid erboven wordt met een steriele naald geopend en de inhoud eruit gelicht. Per bolletje enkele seconden, en je voelt een prikje zoals bij een splinter.
 
@@ -1742,7 +1742,7 @@ Losse witte bolletjes zijn een ding op zich. Zie je daarnaast verstopte poriën,
 
 **Wit bolletje of ontstoken kliertje?**
 
-Dit is een herkenningshulp en geen diagnose. Het verschil tussen wit en hard aan de ene kant en rood en pijnlijk aan de andere is wel iets dat je zelf kunt zien, en het bepaalt of je hier moet zijn of bij je huisarts.
+Wit en hard aan de ene kant, rood en pijnlijk aan de andere: dat verschil bepaalt of het hier weg kan of naar de huisarts gaat.
 
 - Hard wit bolletje Een wit korreltje onder je oog of op je wang dat er al maanden zit
 
@@ -1770,7 +1770,7 @@ Een steriele naald, enkele seconden per bolletje, en er blijft niets van te zien
 
 **Wat helpt en wat we afraden**
 
-Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste bultje is, is het in een afspraak klaar.
+Bij milia is het antwoord meestal kort: als het het juiste bultje is, is het in een afspraak klaar.
 
 **DIT WERKT**
 
@@ -2242,9 +2242,9 @@ In de intake stellen we vast wat bij jou door de zon komt en wat bij je leeftijd
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Twee stukken huid, één verschil.**
+**Zon of leeftijd**
 
-De binnenkant van je bovenarm zag vrijwel nooit zon, je gezicht kwam elke dag buiten. Dezelfde persoon, dezelfde genen, dezelfde leeftijd tot op de dag. Zet hieronder je eigen leeftijd erin en tel hoeveel regels er verschillen.
+De behandelaar vergelijkt een stuk huid dat weinig zon zag met je gezicht. Dat verschil laat zien welk deel door zonschade komt.
 
 Twee stukken huid van dezelfde persoon. Zet je eigen leeftijd erin en kijk hoeveel regels er verschillen.
 
@@ -2261,6 +2261,8 @@ Leeftijd
 12.784 dagen
 
 Genen
+
+Dezelfde persoon
 
 Voeding en slaap
 
@@ -2444,9 +2446,9 @@ Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. In de
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zo test je zelf hoeveel er te winnen valt**
+**Wat er te winnen valt**
 
-Dit is een herkenningshulp en tegelijk de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is.
+De behandelaar bekijkt je huid staand en liggend. Het verschil tussen die twee beelden geeft aan wat een behandeling kan opleveren.
 
 - STAP 1 Kijk staand Recht vooruit in de spiegel, met je gezicht in rust. Zo zie je eruit op de momenten waarop het je opvalt, en dat is waar we vanaf rekenen.
 
@@ -2574,21 +2576,21 @@ In het huidconsult doen we de zwaartekrachttest samen en meten we wat er nu is. 
 
 **Tabbladtitel:** Ingegroeide haren behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Zit er een haar in het bultje, of niet? Dat bepaalt of ontharen bij jou iets oplevert. Met fel licht en een spiegel kom je zelf een heel eind.
+**Google-omschrijving:** Ingegroeide haren behandelen met laserontharing. Zit er een haar in het bultje, dan pakt ontharen het bij de wortel aan.
 
 **INGEGROEIDE HAREN NA SCHEREN OF HARSEN**
 
 Bultjes in je nek, bikinilijn of benen lijken op elkaar en zijn het niet. Zit er een haar in, dan is ontharen de logische route: waar geen haar groeit kan ook niets ingroeien. Zit er geen haar in, dan verandert ontharen er niets aan.
 
-Soms lost een andere scheertechniek het al op, en dat hoor je dan van ons. Blijft het terugkomen, dan haalt laserontharing de haar bij de wortel weg en houdt het op. Ook dat zeggen we, al kost het ons een klant.
+Blijft het terugkomen, dan is laserontharing de oplossing die het bij de wortel aanpakt. Soms helpt een andere scheertechniek al, en dat hoor je dan ook van ons.
 
 > knop: DOE DE HAARCHECK
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zo bekijk je een bultje van dichtbij**
+**Waar we naar kijken**
 
-Dit is een herkenningshulp en geen diagnose. Het brengt je wel bij het onderscheid dat alles bepaalt, en het kost je een lamp en een spiegel.
+De huidtherapeut kijkt onder vergroting of er een haar in het bultje zit. Dat onderscheid bepaalt of ontharen zin heeft of niet.
 
 - STAP 1 Fel licht, geen vingers Ga bij een raam of onder een lamp staan en kijk van dichtbij. Niet knijpen en niet peuteren; daar begint het litteken dat straks langer blijft dan het bultje.
 
@@ -2598,7 +2600,7 @@ Dit is een herkenningshulp en geen diagnose. Het brengt je wel bij het ondersche
 
 **Vier soorten bultjes na het scheren**
 
-Nek, bikinilijn, benen en kaaklijn zijn de zones waar deze vier allemaal voorkomen. Twee ervan hebben baat bij ontharen en twee niet.
+Nek, bikinilijn, benen en kaaklijn zijn de zones waar deze vier voorkomen. Twee ervan hebben baat bij ontharen en twee niet.
 
 - Een haar die niet naar buiten komt Een bultje met een donkere krul erin die je er niet uit krijgt
 
@@ -2632,7 +2634,7 @@ Gaat het je niet om de bultjes maar om het ontharen zelf, dan staan de zones, de
 
 **Wat helpt en wat we afraden**
 
-De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strak scheren, pincetten en scrubben houden het probleem in stand.
+Strak scheren, pincetten en scrubben houden het probleem in stand. Ermee stoppen levert vaak meer op dan er iets bij doen.
 
 **DIT WERKT**
 
@@ -2688,13 +2690,13 @@ In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw 
 
 **Tabbladtitel:** Keratosis pilaris behandelen | Diba Clinics
 
-**Google-omschrijving:** Ruwe bultjes op je bovenarmen die niet weggaan. Niet te genezen, wel te verzachten, en scrubben maakt het juist erger.
+**Google-omschrijving:** Keratosis pilaris behandelen met peelings en gerichte verzorging die de verhoorning rond het haarzakje oplost.
 
 **RUWE BULTJES OP JE BOVENARMEN**
 
 Keratosis pilaris is een onschuldige en vaak erfelijke huidaandoening. De bultjes kunnen met de jaren minder worden, maar verdwijnen niet bij iedereen vanzelf.
 
-En de meest gemaakte vergissing staat er meteen bij: schuren helpt niet. De propjes zitten rond het haarzakje en niet aan de oppervlakte.
+We behandelen het met peelings en gerichte verzorging die de verhoorning oplost. Schuren werkt hier niet: de propjes zitten rond het haarzakje en niet aan de oppervlakte.
 
 > knop: DOE DE SCHUURPAPIERTEST
 
@@ -2712,7 +2714,7 @@ Verhoorning en een droge huid lijken op elkaar en vragen een andere behandeling.
 
 **Vier beelden die ruw aanvoelen**
 
-Verhoorning, droogte en ingegroeide haren voelen onder je hand vrijwel gelijk. Waar het zit en of het aan twee kanten symmetrisch is, zegt meer dan hoe het aanvoelt.
+Verhoorning, droogte en ingegroeide haren voelen onder je hand bijna gelijk. Waar het zit en of het symmetrisch is, maakt het verschil.
 
 - Ruwe bultjes op je bovenarmen Kippenvel dat niet weggaat, ook niet als je het warm hebt
 
@@ -2746,7 +2748,7 @@ Bultjes op geschoren zones met een donkere krul eronder zijn ingegroeide haren. 
 
 **Wat helpt en wat we afraden**
 
-Hier hoort onderhoud bij en geen kuur met een eindpunt. Dat is minder aantrekkelijk om te horen en het is wel hoe het werkt.
+Dit is een aandoening waar onderhoud bij hoort. Met een reeks behandelingen en de juiste verzorging houd je het rustig.
 
 **DIT WERKT**
 
@@ -3378,9 +3380,9 @@ Verandert een plek van vorm of kleur, dan gaat hij eerst naar de huisarts. Ook a
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Een foto met een datum verslaat je geheugen.**
+**Waar we naar kijken**
 
-Dit zegt niet wat een plek is; dat kan niemand vanaf een foto. Het zegt wel of er iets verandert, en dat is het enige dat bepaalt of je eerst ergens anders moet zijn.
+De behandelaar beoordeelt vorm, rand en kleur, en legt de plek vast in beeld. Zo is later te zien of er iets is veranderd.
 
 - STAP 1 Maak een foto met iets ernaast Leg een muntje of je vingertop naast de plek en fotografeer recht van boven, bij daglicht. Zonder maatstaf is elke vergelijking later giswerk.
 
@@ -3944,9 +3946,9 @@ Wij werken op de huid en niet op de spier. Dat betekent dat wij niet voor elke l
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zo zie je of een lijn in je huid of je spier zit**
+**Huid of spier**
 
-Dit is geen diagnose maar het is wel het onderscheid dat alles bepaalt. Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen om iets totaal anders.
+Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen iets anders. De behandelaar kijkt in rust en in beweging.
 
 - STAP 1 Ontspan alles Ga voor de spiegel staan en laat je gezicht helemaal los. Niet lachen, niet fronsen, ook niet een beetje. Dat laatste is lastiger dan het klinkt.
 
@@ -4258,23 +4260,23 @@ In de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in 
 
 **Tabbladtitel:** Steelwratjes laten verwijderen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Een zacht velletje aan een steeltje in je hals of oksel is meestal onschuldig en in een afspraak weg. Maar niet alles wat uitsteekt is een steelwratje.
+**Google-omschrijving:** Steelwratjes laten verwijderen, meestal in een afspraak. We rekenen per kwartier en niet per wratje.
 
 **STEELWRATJES LATEN VERWIJDEREN**
 
 Een zacht, huidkleurig velletje aan een smal steeltje in je hals, oksel of lies is een fibroom. Onschuldig, het gaat niet vanzelf weg, en het is meestal in een afspraak verholpen.
 
-Maar er hangt van alles aan een hals dat erop lijkt en het niet is. Daarom kijken we eerst, ook als je precies weet wat je wil.
+We rekenen per kwartier en niet per wratje, dus meerdere in een afspraak is meestal voordeliger. De huidtherapeut beoordeelt eerst elk plekje, want er hangt van alles aan een hals dat erop lijkt.
 
-> knop: DOE DE STEELTJESCHECK
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Waar je zelf naar kunt kijken**
+**Waar we naar kijken**
 
-Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan trekken en niet knijpen: dat is wat mensen thuis doen en waar het misgaat.
+De huidtherapeut beoordeelt de vorm, de kleur en of het plekje aan een steeltje hangt. Dat bepaalt of het hier weg kan.
 
-- STAP 1 Kijk of er een steeltje is Hangt het los aan een smaller stukje huid, of zit het met een breed vlak vast? Een steeltje wijst op een fibroom; een breed vlak op iets anders.
+- STAP 1 Kijk of er een steeltje is Hangt het los aan een smaller stukje huid, of zit het met een breed vlak vast? Een steeltje wijst op een fibroom, een breed vlak eerder op iets anders dat we apart bekijken.
 
 - STAP 2 Kijk naar de kleur Huidkleurig of lichtbruin en overal gelijk is gewoon. Ongelijk bruin, zwart, of meerdere kleuren door elkaar is een reden om er eerst iemand anders naar te laten kijken.
 
@@ -4282,7 +4284,7 @@ Drie waarnemingen die bepalen of dit hier thuishoort of bij een arts. Niet eraan
 
 **Vier soorten uitsteeksels**
 
-Ze zitten op dezelfde plekken en voelen bijna hetzelfde. Het verschil bepaalt of het hier in een kwartier klaar is of dat er eerst iemand anders naar hoort te kijken.
+Ze zitten op dezelfde plekken en voelen bijna hetzelfde. Het verschil bepaalt of het hier in een kwartier klaar is.
 
 - Een velletje aan een steeltje Een zacht hangend velletje in je hals, oksel of lies
 
@@ -4316,7 +4318,7 @@ Pigmentplekjes beoordelen en verwijderen hoort bij een arts, die het weefsel kan
 
 **Wat helpt en wat we afraden**
 
-Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het het juiste plekje is, is het in een afspraak klaar.
+Bij een steelwratje is het antwoord meestal kort: als het het juiste plekje is, is het in een afspraak klaar.
 
 **DIT WERKT**
 
@@ -4361,8 +4363,6 @@ Bij een klein steelwratje meestal een rood puntje dat in weken wegtrekt. Hoe gro
 **Plan een intake bij Diba Clinics**
 
 Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. Blijkt er iets tussen te zitten dat beoordeeld moet worden, dan hoor je dat voordat we beginnen.
-
-> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -11497,4 +11497,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5324 tekstblokken · ongeveer 79.991 woorden._
+_105 pagina's · 5324 tekstblokken · ongeveer 79.864 woorden._

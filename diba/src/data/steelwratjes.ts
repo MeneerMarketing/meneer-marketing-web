@@ -111,7 +111,7 @@ export const STEELTJESCHECK_STAPPEN: readonly {
   {
     kop: "Kijk of er een steeltje is",
     tekst:
-      "Hangt het los aan een smaller stukje huid, of zit het met een breed vlak vast? Een steeltje wijst op een fibroom; een breed vlak op iets anders.",
+      "Hangt het los aan een smaller stukje huid, of zit het met een breed vlak vast? Een steeltje wijst op een fibroom, een breed vlak eerder op iets anders dat we apart bekijken.",
   },
   {
     kop: "Kijk naar de kleur",

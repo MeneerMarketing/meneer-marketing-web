@@ -39,7 +39,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/keratosis-pilaris",
   titel: "Keratosis pilaris behandelen",
   omschrijving:
-    "Ruwe bultjes op je bovenarmen die niet weggaan. Niet te genezen, wel te verzachten, en scrubben maakt het juist erger.",
+    "Keratosis pilaris behandelen met peelings en gerichte verzorging die de verhoorning rond het haarzakje oplost.",
 });
 
 const PAD = "/huidproblemen/keratosis-pilaris";
@@ -111,9 +111,9 @@ export default function Pagina() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              En de meest gemaakte vergissing staat er meteen bij: schuren helpt
-              niet. De propjes zitten rond het haarzakje en niet aan de
-              oppervlakte.
+              We behandelen het met peelings en gerichte verzorging die de
+              verhoorning oplost. Schuren werkt hier niet: de propjes zitten
+              rond het haarzakje en niet aan de oppervlakte.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -184,7 +184,7 @@ export default function Pagina() {
             label="Vier beelden"
             kop="Vier beelden die"
             accent="ruw aanvoelen"
-            intro="Verhoorning, droogte en ingegroeide haren voelen onder je hand vrijwel gelijk. Waar het zit en of het aan twee kanten symmetrisch is, zegt meer dan hoe het aanvoelt."
+            intro="Verhoorning, droogte en ingegroeide haren voelen onder je hand bijna gelijk. Waar het zit en of het symmetrisch is, maakt het verschil."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -221,7 +221,7 @@ export default function Pagina() {
       <WelNiet
         wel={KP_WEL_NIET.wel}
         niet={KP_WEL_NIET.niet}
-        intro="Hier hoort onderhoud bij en geen kuur met een eindpunt. Dat is minder aantrekkelijk om te horen en het is wel hoe het werkt."
+        intro="Dit is een aandoening waar onderhoud bij hoort. Met een reeks behandelingen en de juiste verzorging houd je het rustig."
       />
 
       <PillarFaq items={KP_FAQ} onderwerp="keratosis pilaris" />

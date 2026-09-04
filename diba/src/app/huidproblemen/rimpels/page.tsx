@@ -150,11 +150,11 @@ export default function Pagina() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De beweegtest"
+            label="In het consult"
             raster="gelijk"
-            kop="Zo zie je of een lijn"
-            accent="in je huid of je spier zit"
-            intro="Dit is geen diagnose maar het is wel het onderscheid dat alles bepaalt. Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen om iets totaal anders."
+            kop="Huid of"
+            accent="spier"
+            intro="Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen iets anders. De behandelaar kijkt in rust en in beweging."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">

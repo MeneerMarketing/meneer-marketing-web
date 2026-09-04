@@ -40,7 +40,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/ingegroeide-haren",
   titel: "Ingegroeide haren behandelen in Rotterdam",
   omschrijving:
-    "Zit er een haar in het bultje, of niet? Dat bepaalt of ontharen bij jou iets oplevert. Met fel licht en een spiegel kom je zelf een heel eind.",
+    "Ingegroeide haren behandelen met laserontharing. Zit er een haar in het bultje, dan pakt ontharen het bij de wortel aan.",
 });
 
 const PAD = "/huidproblemen/ingegroeide-haren";
@@ -115,10 +115,9 @@ export default function Pagina() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Soms lost een andere scheertechniek het al op, en dat hoor je dan
-              van ons. Blijft het terugkomen, dan haalt laserontharing de haar
-              bij de wortel weg en houdt het op. Ook dat zeggen we, al kost het
-              ons een klant.
+              Blijft het terugkomen, dan is laserontharing de oplossing die het
+              bij de wortel aanpakt. Soms helpt een andere scheertechniek al, en
+              dat hoor je dan ook van ons.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -158,11 +157,11 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             icoon={Haarzakje}
-            label="De haarcheck"
+            label="In het consult"
             raster="gelijk"
-            kop="Zo bekijk je"
-            accent="een bultje van dichtbij"
-            intro="Dit is een herkenningshulp en geen diagnose. Het brengt je wel bij het onderscheid dat alles bepaalt, en het kost je een lamp en een spiegel."
+            kop="Waar we"
+            accent="naar kijken"
+            intro="De huidtherapeut kijkt onder vergroting of er een haar in het bultje zit. Dat onderscheid bepaalt of ontharen zin heeft of niet."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -193,7 +192,7 @@ export default function Pagina() {
             label="Vier bultjes"
             kop="Vier soorten bultjes"
             accent="na het scheren"
-            intro="Nek, bikinilijn, benen en kaaklijn zijn de zones waar deze vier allemaal voorkomen. Twee ervan hebben baat bij ontharen en twee niet."
+            intro="Nek, bikinilijn, benen en kaaklijn zijn de zones waar deze vier voorkomen. Twee ervan hebben baat bij ontharen en twee niet."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -227,7 +226,7 @@ export default function Pagina() {
       <WelNiet
         wel={INGEGROEID_WEL_NIET.wel}
         niet={INGEGROEID_WEL_NIET.niet}
-        intro="De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strak scheren, pincetten en scrubben houden het probleem in stand."
+        intro="Strak scheren, pincetten en scrubben houden het probleem in stand. Ermee stoppen levert vaak meer op dan er iets bij doen."
       />
 
       <PillarFaq items={INGEGROEID_FAQ} onderwerp="ingegroeide haren" />
