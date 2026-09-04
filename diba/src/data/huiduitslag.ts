@@ -4,7 +4,7 @@
  * Huiduitslag is geen aandoening maar een symptoom met tientallen oorzaken, van onschuldig
  * tot spoedeisend. Een huidkliniek hoort daar niets over te beweren. Wat wij wél kunnen
  * doen is uitleggen welke test artsen zelf gebruiken om die twee uit elkaar te houden, en
- * dat is de glastest.
+ * dat is de vraag of iemand er ziek bij is.
  *
  * Vlekjes die niet wegdrukken onder glas kunnen wijzen op bloeding in de huid, en dat is
  * in combinatie met ziek zijn een reden om meteen te bellen. Dat is precies het soort
@@ -53,7 +53,7 @@ export const GLASTEST: Record<Uitkomst["id"], Uitkomst> = {
 export const GLASTEST_UITLEG =
   "Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Deze test is geen diagnose en sluit niets uit: een uitslag die wél wegdrukt kan nog steeds ernstig zijn. Hij helpt je alleen inschatten of je vandaag belt of dat het tot een gewone afspraak kan wachten. [MEDISCHE-CHECK-ROJDA]";
 
-/** Alarmsignalen die losstaan van de glastest. Eén ervan is genoeg. */
+/** Alarmsignalen die losstaan van hoe de uitslag eruitziet. Eén ervan is genoeg. */
 export const ALARM = [
   "Koorts, rillingen of je voelt je snel zieker worden",
   "De uitslag breidt zich binnen uren duidelijk uit",
@@ -64,7 +64,7 @@ export const ALARM = [
 ] as const;
 
 export const ALARM_SLOT =
-  "Herken je hier iets van, dan telt de glastest niet meer. Bellen gaat dan voor. [MEDISCHE-CHECK-ROJDA]";
+  "Herken je hier iets van, dan is bellen het enige goede antwoord. Hoe de uitslag eruitziet weegt dan niet meer mee. [MEDISCHE-CHECK-ROJDA]";
 
 /**
  * Waar je dan naartoe belt.
@@ -75,7 +75,7 @@ export const ALARM_SLOT =
  * een nummer.
  *
  * De verdeling hieronder is niet nieuw; hij staat woordelijk al bij de uitkomst van de
- * glastest. Maar wie waarheen belt is een medische keuze en geen redactionele, dus moet
+ * uitslag. Maar wie waarheen belt is een medische keuze en geen redactionele, dus moet
  * juist deze indeling langs Rojda voordat de pagina live gaat. Dat geldt in het bijzonder
  * voor de derde regel: nu hangt 112 aan het tijdstip, en de vraag is of dat klopt of dat
  * hij aan de toestand van de persoon hoort te hangen. [MEDISCHE-CHECK-ROJDA]
@@ -123,7 +123,7 @@ export const OORZAKEN = [
 
 export const UITSLAG_WEL_NIET = {
   wel: [
-    "De glastest doen als er rode vlekjes zijn. Het kost je tien seconden en het scheelt of je vandaag belt of morgen.",
+    "Letten op hoe ziek iemand zich voelt. Dat weegt zwaarder dan hoe de uitslag eruitziet, en het bepaalt of je vandaag belt of morgen. [MEDISCHE-CHECK-ROJDA]",
     "Een foto maken bij het begin. Uitslag verandert snel en de arts ziet zelden de eerste dag.",
     "Opschrijven wanneer het begon en wat eraan voorafging: nieuw product, nieuw medicijn, iets gegeten, ergens gelopen.",
     "Neem bij twijfel contact op met de huisarts of huisartsenpost. Zij kunnen beoordelen hoe snel je gezien moet worden.",
@@ -158,9 +158,9 @@ export const UITSLAG_WIJ_DOEN_NIET = [
 
 export const UITSLAG_FAQ = [
   {
-    vraag: "Werkt de glastest altijd?",
+    vraag: "Kan ik aan de uitslag zien of het ernstig is?",
     antwoord:
-      "Nee, en dat is belangrijk. Hij sluit niets uit: uitslag die wél wegdrukt kan alsnog ernstig zijn, en op een donkere huid is het verschil moeilijker te zien. Kijk dan ook naar de binnenkant van de oogleden of de mond en vertrouw vooral op hoe ziek iemand is. [MEDISCHE-CHECK-ROJDA]",
+      "Niet betrouwbaar. Uitslag die er onschuldig uitziet kan alsnog ernstig zijn, en op een donkere huid is het verschil sowieso moeilijk te zien. Hoe ziek iemand zich voelt weegt zwaarder: koorts, sufheid, nekpijn of benauwdheid zijn redenen om direct te bellen. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Mijn uitslag jeukt hevig maar ik voel me verder goed.",
@@ -183,3 +183,37 @@ export const UITSLAG_FAQ = [
       "Bij onbegrepen uitslag stelt je huisarts eerst de diagnose. Weet je eenmaal wat het is, dan kun je bij ons terecht voor het herstel van je huidbarrière, in overleg met je arts.",
   },
 ] as const;
+
+/**
+ * Hoe een uitslag zich gedraagt.
+ *
+ * Hier stond de glastest. Yasin, 5 september: geen tests meer, en hij begreep hem niet. Dat
+ * tweede weegt het zwaarst; een uitblinker die uitleg nodig heeft doet zijn werk niet.
+ *
+ * Het veiligheidssignaal dat die test gaf blijft staan, want deze pagina heeft er een eigen
+ * sectie voor: "Wanneer je nu belt" staat er direct boven.
+ *
+ * Wat hier nu staat is iets anders dan de sectie eronder over oorzaken. Het gedrag van een
+ * uitslag is de eerste vraag die een behandelaar stelt, en het is in tien seconden te lezen.
+ */
+export const UITSLAG_GEDRAG: readonly {
+  readonly kop: string;
+  readonly zin: string;
+}[] = [
+  {
+    kop: "Binnen uren weg",
+    zin: "Bulten die opkomen en binnen een dag verdwijnen, soms elders terug. Dat patroon hoort bij galbulten, en dan telt wat eraan voorafging. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    kop: "Weken hetzelfde",
+    zin: "Plekken die blijven staan en langzaam veranderen. Dat wijst eerder op iets met de huidbarrière dan op een reactie van dat moment. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    kop: "Precies waar iets raakte",
+    zin: "Een scherpe rand die de vorm volgt van een bandje, een sieraad of een boord. De vorm verraadt dan de oorzaak, en die is meestal contact. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    kop: "Vanaf een plek naar buiten",
+    zin: "Begonnen op een punt en van daaruit uitgebreid. Dat verloop hoort bij een andere groep oorzaken dan iets wat overal tegelijk opkwam. [MEDISCHE-CHECK-ROJDA]",
+  },
+];

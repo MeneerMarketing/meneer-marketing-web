@@ -323,7 +323,7 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Huiduitslag",
     icoon: "cremepotje",
     pad: "/huidproblemen/huiduitslag",
-    zin: "Eerst de vraag of je vandaag belt of morgen. Doe de glastest.",
+    zin: "Eerst de vraag of je vandaag belt of morgen.",
     eersteVraag: "Bel je vandaag of morgen?",
     groep: "doorverwijzen",
     kenmerken: ["rood", "jeuk", "ziek"],

@@ -83,7 +83,7 @@ export const KLEUREN: readonly Kleur[] = [
       {
         naam: "Huiduitslag",
         wanneer:
-          "Plotseling opgekomen, verspreid, of samen met ziek zijn. Doe dan eerst de glastest.",
+          "Plotseling opgekomen, verspreid, of samen met ziek zijn. Bel dan eerst je huisarts.",
         pad: "/huidproblemen/huiduitslag",
       },
       {

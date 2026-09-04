@@ -962,31 +962,17 @@ Wij behandelen dit niet. We hebben er geen behandeling voor en we gaan er ook ge
 
 Omdat cellulitis door de bouw van het bindweefsel ontstaat, zijn de mogelijkheden van huidbehandelingen beperkt. We leggen daarom duidelijk uit wat wel en niet realistisch is.
 
-**Zelfde vet, ander oppervlak.**
+**Het zit niet in het vet maar in de verpakking**
 
-Twee doorsnedes naast elkaar met evenveel vet. Het verschil zit in de stand van de bindweefselschotjes eronder.
+Vier dingen die verklaren waarom het ontstaat, waarom mannen het zelden hebben en waar wel iets aan te doen valt.
 
-KOMT VOORAL VOOR BIJ VROUWEN
+- Het zit in de verpakking Onder je huid loopt bindweefsel dat het vet in vakjes houdt. Bij vrouwen staan die schotjes rechtop, dus duwt het vet ertussen omhoog en krijg je kuiltjes.
 
-**Schotjes rechtop**
+- Bij mannen kruislings Daar lopen dezelfde schotjes schuin door elkaar, als een net. Vet kan er niet in kolommen doorheen, en daarom zie je het bij mannen zelden.
 
-De bindweefselschotjes lopen loodrecht van de huid naar de spierlaag. Het vet daartussen kan alleen omhoog, en de schotjes houden de huid op hun aanhechting vast.
+- Negen van de tien Zoveel volwassen vrouwen hebben het in enige mate, ongeacht maat of leeftijd. Het is een bouwkenmerk en geen aandoening.
 
-Zo ontstaat het patroon van bolletjes met kuiltjes ertussen. Het is een kwestie van hoe je in elkaar zit, niet van hoeveel vet er zit.
-
-KOMT VOORAL VOOR BIJ MANNEN
-
-**Schotjes kruislings**
-
-De schotjes lopen schuin en kruisen elkaar, waardoor het vet in kleinere kamers ligt en er geen enkel punt is dat de huid sterk naar beneden trekt.
-
-Dezelfde hoeveelheid vet geeft dan nauwelijks reliëf. Daarom komt het bij mannen veel minder voor, en dat laat zien dat het niet om het vet gaat.
-
-Schuif hem van links naar rechts en kijk naar de bovenranden. Links worden de kuiltjes dieper, rechts blijft het vlak. Zet hem dan helemaal naar links: het reliëf wordt vlakker en het patroon staat er nog steeds, want de schotjes lopen nog waar ze liepen.
-
-Minder vet maakt de bolletjes kleiner, dus het reliëf wordt vlakker. Het patroon zelf blijft, want de schotjes lopen nog steeds waar ze liepen. Bij fors afvallen wordt het soms zelfs duidelijker zichtbaar doordat de huid losser komt te zitten.
-
-Het lichte vlak is vet, het vlak eromheen is bindweefsel en de groene balk onderin is spier. De bovenrand van dat middelste vlak is het oppervlak dat je in de spiegel ziet. Wat tussen de vetkamers zit, zijn de schotjes.
+- Waar wel iets aan te doen is De schotjes veranderen niet, de huid erboven wel. Steviger en beter doorbloede huid maakt het reliëf minder scherp, en dat is waar wij aan werken.
 
 **Vier misverstanden**
 
@@ -1086,7 +1072,7 @@ Zag je allebei? Dat is de meest voorkomende uitkomst, en geen tussenvorm die je 
 
 **Welk beeld herken je?**
 
-De uitslag van de drukproef bepaalt bij welk beeld je uitkomt. Bij één daarvan begint het bij licht, bij een ander juist niet, en dat verschil is het hele punt van deze pagina.
+Wat de huidtherapeut ziet bepaalt bij welk beeld je uitkomt. Bij één daarvan begint het bij licht, bij een ander juist niet, en dat verschil is het hele punt van deze pagina.
 
 - Losse rode lijntjes Dunne rode of paarse draadjes op je wangen of naast je neus
 
@@ -1094,7 +1080,7 @@ De uitslag van de drukproef bepaalt bij welk beeld je uitkomt. Bij één daarvan
 
 - Allebei door elkaar Een rode ondergrond met daarin een paar duidelijke lijntjes
 
-*WAT DE DRUKTEST LAAT ZIEN*
+*ONDER LICHTE DRUK*
 
 Het lijntje blijft zichtbaar terwijl je drukt. Het bloed laat zich er niet uit duwen.
 
@@ -1114,9 +1100,9 @@ Veel mensen noemen dit een gesprongen adertje. Er is niets gesprongen: het vaatj
 
 Ze lopen vaak samen en worden daarom door elkaar gehaald, ook door ons vak. Vier verschillen die je zelf kunt nagaan voordat je iets boekt.
 
-*De drukproef*
+*Onder lichte druk*
 
-Blijft een lijntje staan, dan is het couperose. Trekt alles weg, dan is het een gloed.
+Blijft er een lijntje staan, dan is het couperose. Trekt alles weg, dan is het een gloed.
 
 *Opvlammen*
 
@@ -2044,7 +2030,7 @@ Op deze pagina staan de signalen waarbij je vandaag nog belt, en de veelvoorkome
 
 - Uitslag bij een baby, of bij iemand met een verminderde afweer
 
-Herken je hier iets van, dan telt de glastest niet meer. Bellen gaat dan voor.
+Herken je hier iets van, dan is bellen het enige goede antwoord. Hoe de uitslag eruitziet weegt dan niet meer mee.
 
 *Binnen kantooruren*
 
@@ -2058,39 +2044,17 @@ De huisartsenpost
 
 112
 
-**De glastest**
+**Hoe een uitslag zich gedraagt**
 
-Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Hieronder staan beide uitkomsten naast elkaar, zodat je herkent welke je ziet in plaats van moet raden.
+Niet wat je ziet maar wat het doet, zegt het meeste. Dit is ook de eerste vraag die je krijgt, bij ons en bij de huisarts.
 
-DEZE VERBLEKEN ONDER HET GLAS
+- Binnen uren weg Bulten die opkomen en binnen een dag verdwijnen, soms elders terug. Dat patroon hoort bij galbulten, en dan telt wat eraan voorafging.
 
-DEZE BLIJVEN STAAN
+- Weken hetzelfde Plekken die blijven staan en langzaam veranderen. Dat wijst eerder op iets met de huidbarrière dan op een reactie van dat moment.
 
-Zet hem eerst helemaal naar links. Beide helften zijn dan niet uit elkaar te houden, en daarom bestaat deze test. Druk het glas dan aan en kijk wat er onder de rand gebeurt.
+- Precies waar iets raakte Een scherpe rand die de vorm volgt van een bandje, een sieraad of een boord. De vorm verraadt dan de oorzaak, en die is meestal contact.
 
-**De vlekken verbleken**
-
-*WAT JE ZIET*
-
-Onder de druk van het glas wordt de rode kleur lichter of verdwijnt hij, en zodra je loslaat komt hij terug.
-
-*WAT DAT KAN BETEKENEN*
-
-De kleur komt van bloed dat nog in de vaatjes zit. Dat past bij veel gewone oorzaken, van een allergische reactie tot een virus.
-
-*WAT JE DAN DOET*
-
-Dit haalt de haast eraf en niet de vraag. Uitslag die blijft, terugkomt of gepaard gaat met klachten hoort nog steeds bij je huisarts.
-
-**De vlekken blijven staan**
-
-De vlekjes veranderen niet onder het glas. Ze blijven even donker, alsof ze in de huid zitten in plaats van erin te stromen.
-
-Dat kan betekenen dat er bloed buiten de vaatjes zit. In combinatie met ziek zijn, koorts, sufheid, nekpijn of snelle verspreiding is dat een reden om niet af te wachten.
-
-Bel vandaag je huisarts of de huisartsenpost, en buiten die tijden 112 bij een zieke indruk. Wacht niet tot morgen om te kijken of het overgaat.
-
-Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Deze test is geen diagnose en sluit niets uit: een uitslag die wél wegdrukt kan nog steeds ernstig zijn. Hij helpt je alleen inschatten of je vandaag belt of dat het tot een gewone afspraak kan wachten.
+- Vanaf een plek naar buiten Begonnen op een punt en van daaruit uitgebreid. Dat verloop hoort bij een andere groep oorzaken dan iets wat overal tegelijk opkwam.
 
 **Vier die veel voorkomen.**
 
@@ -2110,7 +2074,7 @@ Zalf op onbekende uitslag verandert het beeld dat de arts moet beoordelen.
 
 **DIT WERKT**
 
-- De glastest doen als er rode vlekjes zijn. Het kost je tien seconden en het scheelt of je vandaag belt of morgen.
+- Letten op hoe ziek iemand zich voelt. Dat weegt zwaarder dan hoe de uitslag eruitziet, en het bepaalt of je vandaag belt of morgen.
 
 - Een foto maken bij het begin. Uitslag verandert snel en de arts ziet zelden de eerste dag.
 
@@ -2134,9 +2098,9 @@ Zalf op onbekende uitslag verandert het beeld dat de arts moet beoordelen.
 
 **Veelgestelde vragen**
 
-Werkt de glastest altijd? +
+Kan ik aan de uitslag zien of het ernstig is? +
 
-Nee, en dat is belangrijk. Hij sluit niets uit: uitslag die wél wegdrukt kan alsnog ernstig zijn, en op een donkere huid is het verschil moeilijker te zien. Kijk dan ook naar de binnenkant van de oogleden of de mond en vertrouw vooral op hoe ziek iemand is.
+Niet betrouwbaar. Uitslag die er onschuldig uitziet kan alsnog ernstig zijn, en op een donkere huid is het verschil sowieso moeilijk te zien. Hoe ziek iemand zich voelt weegt zwaarder: koorts, sufheid, nekpijn of benauwdheid zijn redenen om direct te bellen.
 
 Mijn uitslag jeukt hevig maar ik voel me verder goed. +
 
@@ -2212,7 +2176,7 @@ Komt het op en gaat het weer weg, of staat het er altijd?
 
 - Acne Rode plekjes met bultjes of puistjes erin, die komen en gaan.
 
-- Huiduitslag Plotseling opgekomen, verspreid, of samen met ziek zijn. Doe dan eerst de glastest.
+- Huiduitslag Plotseling opgekomen, verspreid, of samen met ziek zijn. Bel dan eerst je huisarts.
 
 - Littekens Eén rode streep of plek op de plaats van een oude wond of van striae.
 
@@ -12162,23 +12126,11 @@ Doorsnedes en schema's, geen foto's. Het probleem zit onder de oppervlakte en da
 
 - WAAROM WERKT HARDER SCHROBBEN NIET Onder je huid Eén porie die je door vier stadia heen ziet dichtslibben. Bij elk stadium zit een andere knop. BEKIJKEN
 
-- WAAROM KUILTJES EN GEEN VET De dwarsdoorsnede Twee doorsnedes naast elkaar met dezelfde hoeveelheid vet, en het verschil zit in de richting van het bindweefsel. BEKIJKEN
+- WAAROM KUILTJES EN GEEN VET Waarom het geen vet is Vier feiten over de richting van het bindweefsel, waarom mannen het zelden hebben en waar wel iets aan te doen valt. BEKIJKEN
 
 - IS MIJN HUID DROOG OF VOCHTARM De huidmatrix Twee assen in plaats van één schaal: water en vet. Dat verschil bepaalt wat er wel en niet helpt. BEKIJKEN
 
 - HOEVEEL IS ZON EN HOEVEEL IS LEEFTIJD De onderarmtest Een proef die je zelf kunt doen: de binnenkant van je onderarm tegen de buitenkant, met alles gelijk behalve de zon. BEKIJKEN
-
-De symptoomzoeker stelt geen diagnose, maar helpt je om beter te beschrijven wat je aan de huid ziet.
-
-- TREKT DEZE UITSLAG WEG ALS IK EROP DRUK De glastest Wat het betekent als vlekjes wegtrekken onder druk en wat het betekent als ze blijven staan. BEKIJKEN
-
-- IS HET KLEUR OF IS HET SCHADUW De spiegeltest Twee handelingen voor de spiegel die het verschil laten zien tussen pigment, vaatjes en een holte. BEKIJKEN
-
-- WAT ZEGT DE KLEUR VAN EEN VLEK De kleurwijzer Bruin, rood, wit of grijs: welke kleur bij welke oorzaak past en wat dat betekent voor de behandeling. BEKIJKEN
-
-- WAAR REAGEERT MIJN ROSACEA OP De triggersorteerder Sorteer wat jou opvalt van vaak naar zelden, zodat je bij de intake iets concreters hebt dan een gevoel. BEKIJKEN
-
-- GEBRUIK IK TE VEEL TEGELIJK De stapelteller Tel op wat er in je routine zit en zie waar het gaat stapelen. Bij een gevoelige huid is dat vaker de oorzaak dan een product. BEKIJKEN
 
 Niet wat een apparaat doet, maar hoe het zijn werk doet en tot hoe diep het komt.
 
@@ -12262,7 +12214,7 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 Alles hierboven staat er zodat je een gesprek kunt voeren in plaats van een aanbod te moeten geloven. Ook als dat gesprek ergens anders plaatsvindt.
 
-Het register telt nu 16 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
+Het register telt nu 11 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -13469,4 +13421,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_118 pagina's · 6250 tekstblokken · ongeveer 91.384 woorden._
+_118 pagina's · 6226 tekstblokken · ongeveer 90.959 woorden._

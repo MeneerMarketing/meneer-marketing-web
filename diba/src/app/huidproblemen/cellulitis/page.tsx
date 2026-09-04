@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Dwarsdoorsnede from "@/components/cellulitis/Dwarsdoorsnede";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -15,7 +14,9 @@ import {
   CELLULITIS_FAQ,
   CELLULITIS_MYTHES,
   CELLULITIS_WEL_NIET,
+  CELLULITIS_FEITEN,
 } from "@/data/cellulitis";
+import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -128,15 +129,34 @@ export default function CellulitisPage() {
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
+          {/* Hier stond een dwarsdoorsnede met twee tekeningen. Yasin, 5 september: te
+              zweverig. Hij heeft gelijk dat het veel vraagt om een doorsnede te lezen voor
+              een punt dat in een zin past.
+
+              Dat punt blijft, want het is het interessantste van deze pagina: het zit niet
+              in het vet maar in de richting van het bindweefsel eromheen. */}
           <SectieKop
-            label="De dwarsdoorsnede"
-            // Twee gelijke helften eronder, dus de introzin volgt die indeling.
+            label="Wat het echt is"
             raster="gelijk"
-            kop="Zelfde vet,"
-            accent="ander oppervlak."
-            intro="Twee doorsnedes naast elkaar met evenveel vet. Het verschil zit in de stand van de bindweefselschotjes eronder."
+            kop="Het zit niet in het vet"
+            accent="maar in de verpakking"
+            intro="Vier dingen die verklaren waarom het ontstaat, waarom mannen het zelden hebben en waar wel iets aan te doen valt."
           />
-          <Dwarsdoorsnede />
+
+          <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {CELLULITIS_FEITEN.map((f) => (
+              <li
+                key={f.kop}
+                className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <h3 className="diba-card-title">{f.kop}</h3>
+                {/* Zes regelhoogtes, zodat de vier kaarten in een rij gelijk blijven. */}
+                <p className="mt-3 min-h-[6lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(f.zin)}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Glastest from "@/components/huiduitslag/Glastest";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -18,7 +17,9 @@ import {
   OORZAKEN,
   UITSLAG_FAQ,
   UITSLAG_WEL_NIET,
+  UITSLAG_GEDRAG,
 } from "@/data/huiduitslag";
+import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -30,9 +31,10 @@ import { zoekmachineVelden } from "@/lib/seo";
  * spoedeisend is. Een huidkliniek hoort daar niets over te beweren, ook geen
  * geruststelling: wat wij zeggen zou meewegen in of iemand belt.
  *
- * Wat we wél kunnen doen is de glastest uitleggen. Die kost tien seconden, artsen
- * gebruiken hem zelf, en bijna niemand kent hem. Dat is het soort informatie dat een
- * behandeling nooit verkoopt.
+ * Wat we wél kunnen doen is uitleggen hoe een uitslag zich gedraagt. Of hij binnen uren
+ * wegtrekt of weken blijft staan is de eerste vraag die een arts stelt, en het is iets wat
+ * je kunt lezen zonder er iets voor te doen. Dat is het soort informatie dat een behandeling
+ * nooit verkoopt.
  *
  * De alarmsignalen staan bewust vóór de rest en niet onderaan, en ze staan op donkergroen
  * zodat ze het eerste zijn dat je ziet als je scrollt.
@@ -51,7 +53,7 @@ const PAD = "/huidproblemen/huiduitslag";
 
 const ANKERS = [
   { id: "alarm", label: "Wanneer je nu belt" },
-  { id: "glastest", label: "De glastest" },
+  { id: "gedrag", label: "Het patroon" },
   { id: "oorzaken", label: "Gewone oorzaken" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "vragen", label: "Vragen" },
@@ -168,21 +170,45 @@ export default function HuiduitslagPage() {
         </div>
       </section>
 
-      {/* ── De glastest: de uitblinker ── */}
+      {/* ── Hoe een uitslag zich gedraagt ──
+
+          Hier stond de glastest. Yasin, 5 september: geen tests meer, en hij begreep hem
+          niet. Dat tweede weegt het zwaarst; een uitblinker die uitleg nodig heeft doet
+          zijn werk niet.
+
+          Het veiligheidssignaal dat die test gaf blijft staan: "Wanneer je nu belt" is een
+          eigen sectie en die staat hierboven.
+
+          Dit is iets anders dan de sectie eronder over oorzaken. Het gedrag van een uitslag
+          is de eerste vraag die een behandelaar stelt, en het is in tien seconden te lezen
+          zonder dat je er iets voor hoeft te doen. */}
       <section
-        id="glastest"
+        id="gedrag"
         className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
-            label="Een snelle controle"
-            // Twee gelijke helften eronder, dus de introzin volgt die indeling.
+            label="Het patroon"
             raster="gelijk"
-            kop="De"
-            accent="glastest"
-            intro="Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Hieronder staan beide uitkomsten naast elkaar, zodat je herkent welke je ziet in plaats van moet raden."
+            kop="Hoe een uitslag"
+            accent="zich gedraagt"
+            intro="Niet wat je ziet maar wat het doet, zegt het meeste. Dit is ook de eerste vraag die je krijgt, bij ons en bij de huisarts."
           />
-          <Glastest />
+
+          <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {UITSLAG_GEDRAG.map((g) => (
+              <li
+                key={g.kop}
+                className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <h3 className="diba-card-title">{g.kop}</h3>
+                {/* Zes regelhoogtes, zodat de vier kaarten in een rij gelijk blijven. */}
+                <p className="mt-3 min-h-[6lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(g.zin)}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

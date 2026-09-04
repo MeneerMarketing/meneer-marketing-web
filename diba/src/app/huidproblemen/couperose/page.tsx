@@ -79,7 +79,7 @@ const SOORTEN: readonly SoortOptie[] = COUPEROSE_BEELDEN.map((b) => ({
   klanttaal: b.klanttaal,
   vakterm: b.vakterm,
   velden: [
-    ["Wat de druktest laat zien", b.drukproef],
+    ["Onder lichte druk", b.drukproef],
     ["Wat het betekent", b.watHetBetekent],
     ["Wat wij eerst doen", b.aanpak],
   ] as const,
@@ -89,11 +89,11 @@ const SOORTEN: readonly SoortOptie[] = COUPEROSE_BEELDEN.map((b) => ({
   },
 }));
 
-/** Het onderscheid dat mensen het vaakst zelf al kunnen maken. */
+/** Het onderscheid dat de huidtherapeut als eerste maakt. */
 const COUPEROSE_OF_ROSACEA = [
   [
-    "De drukproef",
-    "Blijft een lijntje staan, dan is het couperose. Trekt alles weg, dan is het een gloed.",
+    "Onder lichte druk",
+    "Blijft er een lijntje staan, dan is het couperose. Trekt alles weg, dan is het een gloed.",
   ],
   [
     "Opvlammen",
@@ -236,7 +236,7 @@ export default function CouperosePage() {
             label="Herkenning"
             kop="Welk beeld"
             accent="herken je?"
-            intro="De uitslag van de drukproef bepaalt bij welk beeld je uitkomt. Bij één daarvan begint het bij licht, bij een ander juist niet, en dat verschil is het hele punt van deze pagina."
+            intro="Wat de huidtherapeut ziet bepaalt bij welk beeld je uitkomt. Bij één daarvan begint het bij licht, bij een ander juist niet, en dat verschil is het hele punt van deze pagina."
           />
           <SoortKiezer
             opties={SOORTEN}

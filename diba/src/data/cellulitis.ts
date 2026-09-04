@@ -139,3 +139,38 @@ export const CELLULITIS_FAQ = [
       "Nee. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetzelfde antwoord als hierboven.",
   },
 ] as const;
+
+/**
+ * Wat cellulitis werkelijk is, in vier feiten.
+ *
+ * Hier stond een dwarsdoorsnede: twee tekeningen met evenveel vet en een verschil in de
+ * stand van de bindweefselschotjes. Yasin, 5 september: te zweverig. Hij heeft gelijk dat
+ * het veel vraagt om een doorsnede te lezen voor een punt dat in een zin past.
+ *
+ * Dat punt blijft, want het is het interessantste van de pagina: het zit niet in het vet maar
+ * in de richting van het bindweefsel eromheen.
+ *
+ * De vier mythes verderop gaan over afvalstoffen, bewegen, cremes en overgewicht. Die komen
+ * hier dus niet terug.
+ */
+export const CELLULITIS_FEITEN: readonly {
+  readonly kop: string;
+  readonly zin: string;
+}[] = [
+  {
+    kop: "Het zit in de verpakking",
+    zin: "Onder je huid loopt bindweefsel dat het vet in vakjes houdt. Bij vrouwen staan die schotjes rechtop, dus duwt het vet ertussen omhoog en krijg je kuiltjes. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    kop: "Bij mannen kruislings",
+    zin: "Daar lopen dezelfde schotjes schuin door elkaar, als een net. Vet kan er niet in kolommen doorheen, en daarom zie je het bij mannen zelden. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    kop: "Negen van de tien",
+    zin: "Zoveel volwassen vrouwen hebben het in enige mate, ongeacht maat of leeftijd. Het is een bouwkenmerk en geen aandoening. [MEDISCHE-CHECK-ROJDA]",
+  },
+  {
+    kop: "Waar wel iets aan te doen is",
+    zin: "De schotjes veranderen niet, de huid erboven wel. Steviger en beter doorbloede huid maakt het reliëf minder scherp, en dat is waar wij aan werken.",
+  },
+];

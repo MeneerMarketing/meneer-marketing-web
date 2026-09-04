@@ -14,9 +14,13 @@
  * eenentwintig behandelpagina's heeft die precies dat doen.
  *
  * Het echte probleem is niet dat er te weinig staat maar dat het niet te vinden is. Er
- * staan vijfentwintig eigen tools verspreid over de site: een doorsnede die je door de vier
- * acnestadia klikt, een glastest, een golflengtevenster, een dieptevergelijker. Wie er niet
- * toevallig op de goede pagina belandt, ziet er geen enkele van.
+ * staan eigen uitlegstukken verspreid over de site: een doorsnede die je door de vier
+ * acnestadia klikt, een golflengtevenster, een dieptevergelijker. Wie er niet toevallig op
+ * de goede pagina belandt, ziet er geen enkele van.
+ *
+ * Het blok "Dingen die je zelf kunt nakijken" stond hier ook. Dat is weg: de tests waar het
+ * naar wees bestaan niet meer, en het was de laatste plek op de site die de bezoeker
+ * huiswerk aanbood in plaats van hem uit te nodigen.
  *
  * Deze index is dus de kennisbank: geordend op de vraag die je stelt en niet op de
  * behandeling die wij verkopen.
@@ -93,8 +97,8 @@ export const KENNISBANK: readonly Kennisgroep[] = [
       {
         id: "cellulitis",
         vraag: "Waarom kuiltjes en geen vet",
-        naam: "De dwarsdoorsnede",
-        zin: "Twee doorsnedes naast elkaar met dezelfde hoeveelheid vet, en het verschil zit in de richting van het bindweefsel.",
+        naam: "Waarom het geen vet is",
+        zin: "Vier feiten over de richting van het bindweefsel, waarom mannen het zelden hebben en waar wel iets aan te doen valt.",
         href: "/huidproblemen/cellulitis",
       },
       {
@@ -110,49 +114,6 @@ export const KENNISBANK: readonly Kennisgroep[] = [
         naam: "De onderarmtest",
         zin: "Een proef die je zelf kunt doen: de binnenkant van je onderarm tegen de buitenkant, met alles gelijk behalve de zon.",
         href: "/huidproblemen/huidveroudering",
-      },
-    ],
-  },
-  {
-    id: "zelf-nakijken",
-    tint: "zacht",
-    kop: "Dingen die je zelf kunt nakijken",
-    zin: "De symptoomzoeker stelt geen diagnose, maar helpt je om beter te beschrijven wat je aan de huid ziet.",
-    stukken: [
-      {
-        id: "glastest",
-        vraag: "Trekt deze uitslag weg als ik erop druk",
-        naam: "De glastest",
-        zin: "Wat het betekent als vlekjes wegtrekken onder druk en wat het betekent als ze blijven staan.",
-        href: "/huidproblemen/huiduitslag",
-      },
-      {
-        id: "spiegeltest",
-        vraag: "Is het kleur of is het schaduw",
-        naam: "De spiegeltest",
-        zin: "Twee handelingen voor de spiegel die het verschil laten zien tussen pigment, vaatjes en een holte.",
-        href: "/huidproblemen/donkere-kringen",
-      },
-      {
-        id: "kleurwijzer",
-        vraag: "Wat zegt de kleur van een vlek",
-        naam: "De kleurwijzer",
-        zin: "Bruin, rood, wit of grijs: welke kleur bij welke oorzaak past en wat dat betekent voor de behandeling.",
-        href: "/huidproblemen/huidverkleuring",
-      },
-      {
-        id: "triggers",
-        vraag: "Waar reageert mijn rosacea op",
-        naam: "De triggersorteerder",
-        zin: "Sorteer wat jou opvalt van vaak naar zelden, zodat je bij de intake iets concreters hebt dan een gevoel.",
-        href: "/huidproblemen/rosacea",
-      },
-      {
-        id: "stapelteller",
-        vraag: "Gebruik ik te veel tegelijk",
-        naam: "De stapelteller",
-        zin: "Tel op wat er in je routine zit en zie waar het gaat stapelen. Bij een gevoelige huid is dat vaker de oorzaak dan een product.",
-        href: "/huidproblemen/gevoelige-huid",
       },
     ],
   },
