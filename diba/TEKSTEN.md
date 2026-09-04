@@ -534,7 +534,9 @@ Elk met een eigen pagina die begint bij de vraag die bij dat probleem het zwaars
 
 - Melasma Hoe diep zit het pigment?
 
-- Littekens en striae Hoe oud is het litteken?
+- Littekens Hoe oud is het litteken?
+
+- Striae Zijn ze nog rood of al wit?
 
 - Huidveroudering Is dit tijd of is dit zon?
 
@@ -549,6 +551,8 @@ Elk met een eigen pagina die begint bij de vraag die bij dat probleem het zwaars
 **Wat bij een arts hoort.**
 
 Deze pagina's hebben geen afspraakknop. Ze staan er omdat mensen ons dit vragen terwijl ze bij ons op de stoel liggen, en dan is een goed antwoord beter dan een ontwijkend.
+
+- Keloid en verdikte littekens Groeit het over de wondrand heen?
 
 - Eczeem Waar valt de cirkel te breken?
 
@@ -2686,6 +2690,92 @@ In het eerste gesprek stellen we vast of er haren bij betrokken zijn en of jouw 
 
 ---
 
+### /huidproblemen/keloiden
+
+**Tabbladtitel:** Keloid en verdikte littekens in Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Het verschil tussen een keloid en een verdikt litteken, wat wij behandelen en wat via je arts loopt.
+
+**KELOID EN VERDIKTE LITTEKENS**
+
+Een verdikt litteken dat binnen de wondranden blijft, behandelen we met microneedling en laser. Daarmee wordt het vlakker en minder rood.
+
+Groeit het over de wondrand heen, dan is het een keloid en loopt de behandeling via je arts. Wij beoordelen mee en stemmen af, want een te stevige prikkel maakt een keloid groter.
+
+> knop: PLAN EEN HUIDCONSULT
+
+> knop: LIEVER EERST EEN VRAAG STELLEN
+
+**Waar we naar kijken**
+
+Het verschil tussen een keloid en een verdikt litteken zie je aan drie dingen. Die bepalen ook wie de behandeling doet.
+
+- Of het over de wondrand heen groeit Een hypertrofisch litteken blijft binnen de oorspronkelijke wond. Een keloid groeit eroverheen, de gezonde huid in.
+
+- Hoe oud het is en wat het doet Een hypertrofisch litteken wordt na maanden tot een jaar vaak vlakker. Een keloid blijft of groeit door, en dat verschil telt.
+
+- Waar het zit en of het jeukt Borstbeen, schouders en oorlellen zijn de plekken waar keloid het vaakst ontstaat. Jeuk en pijn horen erbij en zeggen iets over de activiteit.
+
+**Binnen of over de rand**
+
+Ze lijken op elkaar en vragen een andere route. Het verschil zit in de vraag of het weefsel binnen de oorspronkelijke wond blijft.
+
+- VERHOOGD EN ROOD, MAAR NIET GROTER DAN HET LITTEKEN ZELF Verdikt litteken binnen de wondrand HYPERTROFISCH LITTEKEN De aanmaak van collageen is doorgeschoten tijdens de genezing, maar het weefsel blijft binnen de grenzen van de oorspronkelijke wond. Dit behandelen we, met microneedling en laser die het weefsel gelijkmatiger maken. Vaak in overleg met je arts. Vlakker en minder rood is haalbaar. Hoeveel en in hoeveel afspraken, hoor je na de beoordeling.
+
+- GROEIT DOOR TOT BUITEN HET OORSPRONKELIJKE WONDJE Litteken dat over de rand heen groeit KELOID Het weefsel groeit over de wondranden heen, de gezonde huid in. Keloid komt vaker voor bij een donkere huid; dat hangt samen met aanleg. Hier loopt de behandeling via je arts of dermatoloog. Wij beoordelen mee en stemmen af, want een te stevige prikkel maakt een keloid groter. Met een verwijzing kijken we wat er naast de medische behandeling mogelijk is.
+
+**Wat helpt en wat we afraden**
+
+Bij keloid telt de aanleg zwaarder dan de verzorging. Wat je wel in de hand hebt, is hoe vroeg er iemand naar kijkt.
+
+**DIT WERKT**
+
+- Een nieuw litteken beschermen tegen zon en spanning, zeker het eerste jaar
+
+- Bij aanleg voor keloid dat vooraf melden bij elke ingreep, ook bij een piercing
+
+- Laten beoordelen zodra het verhoogd blijft of begint te groeien
+
+- Jeuk en pijn benoemen, want die zeggen iets over hoe actief het weefsel is
+
+**DIT RADEN WE AF**
+
+- Zelf krabben, knijpen of er een pleister strak overheen trekken
+
+- Een keloid laten behandelen zonder dat een arts ernaar heeft gekeken
+
+- Wachten tot het vanzelf overgaat. Een keloid doet dat meestal niet
+
+- Een nieuwe piercing of tatoeage op een plek waar eerder keloid ontstond
+
+**Veelgestelde vragen**
+
+Wat is het verschil met een gewoon dik litteken? +
+
+Een hypertrofisch litteken blijft binnen de oorspronkelijke wond en wordt na verloop van tijd vaak vlakker. Een keloid groeit eroverheen en blijft.
+
+Behandelen jullie keloid? +
+
+De behandeling van een keloid loopt via je arts of dermatoloog. Wij beoordelen mee en stemmen af over wat er daarnaast mogelijk is, want een te stevige prikkel maakt een keloid groter.
+
+Waarom krijg ik ze en anderen niet? +
+
+Aanleg speelt de grootste rol, en keloid komt vaker voor bij een donkere huid. Het zegt niets over hoe je een wond hebt verzorgd.
+
+Kan ik nog een piercing of tatoeage nemen? +
+
+Op een plek waar eerder keloid ontstond is dat af te raden. Bespreek het met je arts voordat je iets laat zetten.
+
+Komt het terug na behandeling? +
+
+Bij keloid is de kans daarop reeel, en dat is precies waarom het bij een arts hoort. Wat de kans is in jouw geval, hoor je daar.
+
+**Plan een intake bij Diba Clinics**
+
+De behandelaar stelt vast of het om een verdikt litteken of om een keloid gaat, en wat daar in jouw geval bij past. Bij een keloid overleggen we met je arts.
+
+---
+
 ### /huidproblemen/keratosis-pilaris
 
 **Tabbladtitel:** Keratosis pilaris behandelen | Diba Clinics
@@ -4361,6 +4451,94 @@ Bij een klein steelwratje meestal een rood puntje dat in weken wegtrekt. Hoe gro
 **Plan een intake bij Diba Clinics**
 
 Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. Blijkt er iets tussen te zitten dat beoordeeld moet worden, dan hoor je dat voordat we beginnen.
+
+---
+
+### /huidproblemen/striae
+
+**Tabbladtitel:** Striae behandelen in Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Striae behandelen met microneedling en laser. Rode striae reageren het best, bij witte werken we op de structuur.
+
+**STRIAE BEHANDELEN**
+
+Striae behandelen we met microneedling en laser, die de aanmaak van collageen in het gescheurde bindweefsel op gang brengen. Zo worden ze vlakker en minder zichtbaar.
+
+Het stadium bepaalt wat er haalbaar is. Rode en paarse striae reageren het beste; bij witte werken we op de structuur. In de intake stelt de behandelaar vast waar jij staat.
+
+> knop: PLAN EEN HUIDCONSULT
+
+> knop: LIEVER EERST EEN VRAAG STELLEN
+
+**Waar we naar kijken**
+
+Kleur, ouderdom en reliëf bepalen samen wat er te halen valt. De behandelaar loopt die drie langs voordat er een plan komt.
+
+- De kleur Rood of paars betekent dat er nog doorbloeding in zit en dat het weefsel jong is. Wit betekent dat het is uitgerijpt.
+
+- Hoe lang ze er zitten De behandelaar vraagt sinds wanneer je ze hebt. Bij striae na een zwangerschap of groeispurt is dat meestal goed te dateren.
+
+- Het reliëf Liggen ze gelijk met de huid of zijn ze ingezonken? Dat bepaalt of we op kleur werken of op structuur.
+
+**Rood of wit**
+
+Striae doorlopen twee fasen. Welke van de twee je hebt, bepaalt wat een behandeling oplevert en hoe snel je erbij moet zijn.
+
+- NOG ROOD OF PAARS, MEESTAL RECENT ONTSTAAN Rode of paarse striae STRIAE RUBRAE De huid is uitgerekt en het bindweefsel eronder is gescheurd. De rode kleur komt van de bloedvaten die er nog doorheen lopen. Microneedling en laser brengen de aanmaak van collageen op gang in het weefsel dat nog reageert. Dit is het stadium waarin de meeste winst zit. Bij rode striae is er ruimte voor verbetering van kleur en structuur. Hoeveel, hoor je na de beoordeling.
+
+- WIT OF ZILVERACHTIG, VAAK AL JAREN AANWEZIG Witte striae STRIAE ALBAE Het weefsel is uitgerijpt. Er lopen geen actieve bloedvaten meer doorheen en er zitten minder pigmentcellen in dan in de huid eromheen. Microneedling verbetert de structuur en maakt de striae minder voelbaar. De kleur terugbrengen lukt niet. Bij witte striae werken we op structuur en niet op kleur. Dat hoor je vooraf, zodat je weet waar je aan begint.
+
+**Wat helpt en wat we afraden**
+
+Bij striae telt het moment zwaarder dan de techniek. Wie begint zolang ze nog rood zijn, houdt de meeste ruimte over.
+
+**DIT WERKT**
+
+- Beginnen zolang ze nog rood of paars zijn, want dan zit er nog wat te winnen
+
+- Bij striae in de zwangerschap wachten tot na de borstvoeding, en dan laten beoordelen
+
+- De huid soepel houden met een verzorging die je volhoudt
+
+- Een reeks afspreken met een moment waarop we opnieuw kijken
+
+- Zonbescherming op de plek, want vers weefsel verkleurt sneller
+
+**DIT RADEN WE AF**
+
+- Wachten tot ze wit zijn. Dat is het moment waarop er het minst overblijft
+
+- Crèmes die beloven dat witte striae verdwijnen. Dat gebeurt niet, ongeacht de prijs
+
+- Zonnebank of zon op verse striae. Het verschil in kleur wordt daar groter van
+
+- Elke week in de spiegel vergelijken. Striae veranderen in maanden, niet in weken
+
+**Veelgestelde vragen**
+
+Gaan striae ooit helemaal weg? +
+
+Nee. Wat wel kan, is dat ze minder opvallen: minder rood, vlakker en minder voelbaar. Bij rode striae is er meer te halen dan bij witte.
+
+Waarom heb ik ze en mijn zus niet? +
+
+Aanleg speelt de grootste rol. Hoe snel je huid rekt en hoeveel elastine erin zit, verschilt per persoon. Striae komen ook voor bij mensen die nooit zijn aangekomen.
+
+Kan ik behandelen tijdens de zwangerschap? +
+
+Nee. We wachten tot na de bevalling en de borstvoeding, en beoordelen dan opnieuw. Vaak zijn ze op dat moment ook al lichter geworden.
+
+Hoeveel afspraken heb ik nodig? +
+
+Dat hangt af van het stadium en van hoe groot het gebied is. In de intake hoor je wat er in jouw geval nodig is en wat het kost.
+
+Helpt een crème? +
+
+Een goede verzorging houdt de huid soepel en dat is nuttig. Striae zelf zitten in de laag eronder, en daar komt een crème niet.
+
+**Plan een intake bij Diba Clinics**
+
+De behandelaar beoordeelt in welk stadium je striae zijn en wat een reeks in jouw geval kan opleveren. Je hoort meteen hoeveel afspraken dat vraagt en wat het kost.
 
 ---
 
@@ -10302,7 +10480,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **ALLES WAT WE UITLEGGEN**
 
-Alles wat hier wordt uitgelegd staat verspreid over 28 huidprobleempagina's, 12 apparaatpagina's en 22behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
+Alles wat hier wordt uitgelegd staat verspreid over 30 huidprobleempagina's, 12 apparaatpagina's en 22behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
 
 De doorsnedes, testen en vergelijkers staan er los bij. Die zijn het meeste werk en tegelijk het slechtst vindbaar, want ze staan halverwege een pagina waar je niet komt als je er niet naar zoekt.
 
@@ -10352,7 +10530,7 @@ Ook bij een andere kliniek. Dit deel is niet geschreven om jou hier te houden.
 
 - WAAR MAG IK JULLIE AAN HOUDEN Ons verbond Tien dingen die wij niet doen, met bij elke regel wat hij ons kost. Een belofte zonder prijs is een slogan. BEKIJKEN
 
-**28 pagina's, elk met een eigen vraag.**
+**30 pagina's, elk met een eigen vraag.**
 
 Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag staat hieronder, zodat je ziet waar je terechtkomt voordat je klikt.
 
@@ -10388,7 +10566,11 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 - Melasma Hoe diep zit het pigment?
 
-- Littekens en striae Hoe oud is het litteken?
+- Littekens Hoe oud is het litteken?
+
+- Striae Zijn ze nog rood of al wit?
+
+- Keloid en verdikte littekens Groeit het over de wondrand heen?
 
 - Huidveroudering Is dit tijd of is dit zon?
 
@@ -11495,4 +11677,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5323 tekstblokken · ongeveer 79.566 woorden._
+_105 pagina's · 5406 tekstblokken · ongeveer 80.962 woorden._

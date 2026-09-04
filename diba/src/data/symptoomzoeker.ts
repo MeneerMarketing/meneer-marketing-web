@@ -227,13 +227,34 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     kenmerken: ["bruine-vlek"],
   },
   {
-    naam: "Littekens en striae",
+    naam: "Littekens",
     icoon: "huid-bultje",
     pad: "/huidproblemen/littekens",
-    zin: "Hoe oud het is bepaalt meer dan welke techniek dan ook.",
+    zin: "Hoe oud een litteken is, bepaalt meer dan welke techniek dan ook.",
     eersteVraag: "Hoe oud is het litteken?",
     groep: "behandelen",
-    kenmerken: ["strepen", "kuiltjes", "witte-vlek"],
+    kenmerken: ["strepen", "kuiltjes"],
+  },
+  {
+    /* Striae en keloid hadden geen eigen bestemming omdat ze naar de littekenpagina
+       doorverwezen. Sinds ze een eigen pagina hebben horen ze hier ook los te staan:
+       wie striae intikt zoekt niet op littekens. */
+    naam: "Striae",
+    icoon: "huid-strakker",
+    pad: "/huidproblemen/striae",
+    zin: "Rode striae reageren het best; bij witte werken we op de structuur.",
+    eersteVraag: "Zijn ze nog rood of al wit?",
+    groep: "behandelen",
+    kenmerken: ["strepen", "witte-vlek"],
+  },
+  {
+    naam: "Keloid en verdikte littekens",
+    icoon: "huid-bultje",
+    pad: "/huidproblemen/keloiden",
+    zin: "Blijft het binnen de wondrand of groeit het eroverheen?",
+    eersteVraag: "Groeit het over de wondrand heen?",
+    groep: "doorverwijzen",
+    kenmerken: ["strepen", "bultjes"],
   },
   {
     naam: "Huidveroudering",
