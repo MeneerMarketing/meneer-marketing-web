@@ -319,7 +319,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "HydraFacial",
     apparaat: "HydraFacial",
     categorie: "gezicht",
-    kort: "Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd.",
+    kort: "Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
       "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het werkt op de bovenste lagen, en juist daarom zie je het resultaat direct en heb je geen hersteltijd. [MEDISCHE-CHECK-ROJDA]",
@@ -585,7 +585,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "SkinPen Microneedling",
     apparaat: "SkinPen CIT",
     categorie: "needling",
-    kort: "Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit.",
+    kort: "Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
       "Met fijne naalden worden heel veel kleine kanaaltjes tot in de bovenste lederhuid gemaakt. Daar zit het bindweefsel, en de huid reageert daarop met herstel en collageenaanmaak. Dat herstel is het doel; de prikjes zelf zijn de aanleiding. Het resultaat bouwt zich daarom over weken op. [MEDISCHE-CHECK-ROJDA]",
@@ -976,11 +976,14 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "De sessie loopt op een vaste tijd. Meestal plannen we hem aansluitend op een andere behandeling, terwijl je toch al ligt, en dan is het het rustigste deel van de afspraak.",
       "Erna ga je direct door met je dag. Er is geen roodheid om te verbergen en er zijn geen instructies voor thuis.",
     ],
-    /* [BEELD-NODIG] Zelfde foto als op de apparatuurpagina. Zie de toelichting daar. */
+    foto: {
+      src: "/images/shoot/beh-led-therapie.jpg",
+      alt: "LED-therapie met rood licht op het gezicht, in de behandelkamer",
+    },
     naam: "LED-therapie",
     apparaat: "Precision Photonic System",
     categorie: "laser",
-    kort: "Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren.",
+    kort: "Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren.",
     lagen: ["opperhuid"],
     werking:
       "Bij LED-therapie neemt de huid licht op van een bepaalde golflengte. Dat licht wordt opgenomen door de mitochondriën in je cellen, de onderdelen die energie leveren, waarna er meer energie beschikbaar is voor herstel en aanmaak. Die werking heet fotobiomodulatie. Er wordt niets verwarmd en niets weggehaald, en juist daarom is er geen hersteltijd. [MEDISCHE-CHECK-ROJDA]",

@@ -543,16 +543,10 @@ export const APPARATUUR: readonly Apparaat[] = [
       "De huid blijft intact, dus er is niets dat hoeft te herstellen: geen roodheid, geen wachttijd en geen instructies voor thuis. Juist daarom past het direct na een behandeling die de huid wél prikkelt, zoals microneedling of een peeling.",
       "Het werkt cumulatief. Eén sessie is één prikkel; het verschil ontstaat over een reeks, met een paar dagen tot een week ertussen. De behandelaar kiest de golflengte en de tijd op basis van wat er uit de huidanalyse kwam. [MEDISCHE-CHECK-ROJDA]",
     ],
-    /* [BEELD-NODIG] De foto van Yasin: de behandelaar die de boog boven het gezicht
-       instelt, met het Skin Complete-logo in beeld. Zodra hij op
-       public/images/shoot/apparaat-precision-photonic-system.jpg staat, kan dit blok
-       terug:
-         foto: {
-           src: "/images/shoot/apparaat-precision-photonic-system.jpg",
-           alt: "Behandelaar stelt het Precision Photonic System in boven het gezicht van een client",
-         },
-       Tot die tijd geen foto, want het oude Lumi-beeld onder een Skin Complete-onderschrift
-       is erger dan een leeg vlak. */
+    foto: {
+      src: "/images/shoot/apparaat-precision-photonic-system.jpg",
+      alt: "Behandelaar bedient het Precision Photonic System boven het gezicht van een client",
+    },
     naam: "Precision Photonic System",
     merk: "Skin Complete",
     merkUrl: "https://skincomplete.eu",

@@ -358,9 +358,9 @@ function Paneel({
       style={{ animation: "diba-paneel-in .28s var(--ease-diba) both" }}
     >
       <div className="grid grid-cols-12">
-        <div className="col-span-9 p-8 xl:p-10">
+        <div className="col-span-9 p-6 2xl:p-10">
           <div
-            className="grid gap-x-10 gap-y-10"
+            className="grid gap-x-6 gap-y-10 2xl:gap-x-10"
             style={{ gridTemplateColumns: `repeat(${banen}, minmax(0, 1fr))` }}
           >
             {kolommen.map((kolom) => (
@@ -380,11 +380,17 @@ function Paneel({
                         onClick={onSluit}
                         className="group -mx-3 block rounded-[var(--r-sm)] px-3 py-2 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                       >
-                        <span className="block text-[15px] leading-6 font-medium text-[var(--t-strong)]">
+                        {/* `truncate` op allebei de regels: een titel of zin die
+                            omvalt naar een tweede regel duwt alles eronder scheef, en
+                            hoe breed een kolom is hangt af van het aantal kolommen in
+                            dit paneel en van de schermbreedte. De teksten zijn zo
+                            gekozen dat er in de praktijk niets wordt afgekapt; dit is
+                            de vangnetregel voor het smalste geval. */}
+                        <span className="block truncate text-[15px] leading-6 font-medium text-[var(--t-strong)]">
                           {l.label}
                         </span>
                         {l.zin ? (
-                          <span className="mt-0.5 block text-[13px] leading-5 text-[var(--t-muted)]">
+                          <span className="mt-0.5 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
                             {l.zin}
                           </span>
                         ) : null}

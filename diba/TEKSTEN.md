@@ -512,23 +512,23 @@ Elk met een eigen pagina die begint bij de vraag die bij dat probleem het zwaars
 
 - Ouderdomsvlekken Is de plek veranderd?
 
-- Gerstekorrels en milia Wit en hard, of rood en pijnlijk?
+- Gerstekorrels en milia Wit en hard of rood?
 
 - Huidverslapping Wat zie je liggend?
 
 - Ingegroeide haren Zit er een haar in?
 
-- Onzuivere huid en mee-eters Mee-eter of gewoon een porie?
+- Onzuivere huid Mee-eter of porie?
 
-- Keratosis pilaris Losse bultjes of alleen ruw?
+- Keratosis pilaris Bultjes of ruw?
 
 - Doffe huid Waar komt het vandaan?
 
-- Steelwratjes Hangt het aan een steeltje?
+- Steelwratjes Aan een steeltje?
 
 - Rosacea Wat zet het aan?
 
-- Couperose Losse vaatjes of een gloed?
+- Couperose Vaatjes of gloed?
 
 - Pigmentvlekken Welk seizoen is het?
 
@@ -540,23 +540,23 @@ Elk met een eigen pagina die begint bij de vraag die bij dat probleem het zwaars
 
 - Huidveroudering Is dit tijd of is dit zon?
 
-- Poriën Wat valt er eigenlijk te veranderen?
+- Poriën Wat valt er te doen?
 
-- Droge huid Mist er vet of mist er water?
+- Droge huid Vet of water?
 
 - Gevoelige huid Wat staat er allemaal aan?
 
-- Donkere kringen Is het kleur of is het schaduw?
+- Donkere kringen Kleur of schaduw?
 
 **Wat bij een arts hoort.**
 
 Deze pagina's hebben geen afspraakknop. Ze staan er omdat mensen ons dit vragen terwijl ze bij ons op de stoel liggen, en dan is een goed antwoord beter dan een ontwijkend.
 
-- Keloid en verdikte littekens Groeit het over de wondrand heen?
+- Keloïden Over de wondrand heen?
 
-- Eczeem Waar valt de cirkel te breken?
+- Eczeem Waar breekt de cirkel?
 
-- Psoriasis Zitten je nagels en gewrichten er ook bij?
+- Psoriasis Ook je nagels erbij?
 
 - Huiduitslag Bel je vandaag of morgen?
 
@@ -566,7 +566,7 @@ Deze pagina's hebben geen afspraakknop. Ze staan er omdat mensen ons dit vragen 
 
 Dat staat er zo, met de uitleg waarom geen enkele crème of apparaat het weghaalt. Dan weet je waar je aan toe bent voordat je ergens aan begint.
 
-- Cellulitis Gaat dit over vet of over bouw?
+- Cellulitis Vet of bouw?
 
 **Begin dan bij wat je ziet.**
 
@@ -4808,7 +4808,7 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE HOORNLAAG Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. Geen. € 150
 
-- TOT IN DE OPPERHUID HydraFacial HydraFacial Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd. Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
+- TOT IN DE OPPERHUID HydraFacial HydraFacial Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
 
 - TOT IN DE OPPERHUID Oxygeneo glow OxyGeneo Exfoliëren en zuurstof in de huid brengen, in één behandeling. Geen. € 150
 
@@ -4816,7 +4816,7 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE OPPERHUID Medische peelings Mesoestetic, Dermaceutic, Image Skincare, Skin Tech Pharma Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. € 140
 
-- TOT IN DE OPPERHUID LED-therapie Precision Photonic System Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren. Geen. € 30
+- TOT IN DE OPPERHUID LED-therapie Precision Photonic System Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. Geen. € 30
 
 - TOT IN DE OPPERHUID Cosmelan en dermamelan Mesoestetic Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming. € 550
 
@@ -4828,7 +4828,7 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE OPPERHUID Fibromen verwijderen Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. Kleine korstjes die in dagen verdwijnen. € 30
 
-- TOT IN DE BOVENSTE LEDERHUID SkinPen Microneedling SkinPen CIT Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit. Eén tot drie dagen rood, als een stevige zonnegloed. € 180
+- TOT IN DE BOVENSTE LEDERHUID SkinPen Microneedling SkinPen CIT Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. Eén tot drie dagen rood, als een stevige zonnegloed. € 180
 
 - TOT IN DE BOVENSTE LEDERHUID Dermapen 4 Dermapen 4 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. Eén tot drie dagen rood. € 180
 
@@ -5830,7 +5830,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **Tabbladtitel:** HydraFacial | Diba Clinics
 
-**Google-omschrijving:** Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd.
+**Google-omschrijving:** Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd.
 
 **HYDRAFACIAL**
 
@@ -5858,7 +5858,7 @@ Los te doen, of maandelijks als onderhoud. Een startreeks is meestal drie tot ze
 
 > knop: Platinum € 220
 
-Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd.
+Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd.
 
 Draait op Hydrafacial syndeo
 
@@ -6124,9 +6124,11 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **Tabbladtitel:** LED-therapie | Diba Clinics
 
-**Google-omschrijving:** Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren.
+**Google-omschrijving:** Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren.
 
 **LED-THERAPIE**
+
+LED-THERAPIE · PRECISION PHOTONIC SYSTEM
 
 *HOE DIEP*
 
@@ -6144,7 +6146,7 @@ Geen.
 
 Meestal aansluitend op een andere behandeling. Als losse reeks bij roodheid, met een paar dagen tot een week ertussen.
 
-Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren.
+Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren.
 
 Draait op Precision Photonic System
 
@@ -6896,7 +6898,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **Tabbladtitel:** SkinPen Microneedling | Diba Clinics
 
-**Google-omschrijving:** Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit.
+**Google-omschrijving:** Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit.
 
 **SKINPEN MICRONEEDLING**
 
@@ -6926,7 +6928,7 @@ Een reeks van drie tot zes, met vier tot zes weken ertussen.
 
 > knop: Rug € 255
 
-Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit.
+Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit.
 
 Draait op SkinPen CIT
 
@@ -8382,6 +8384,8 @@ Het LED-systeem van Skin Complete waar wij mee werken. Het licht wordt door de h
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
+PRECISION PHOTONIC SYSTEM · SKIN COMPLETE
+
 **Hoe dit apparaat op de huid werkt**
 
 Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
@@ -8756,7 +8760,7 @@ Eerst kijken, nog niets doen.
 
 Reinigen, hydrateren, oppervlakkig vernieuwen.
 
-- HydraFacial Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd. € 170 ▾
+- HydraFacial Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. € 170 ▾
 
 - Oxygeneo glow Exfoliëren en zuurstof in de huid brengen, in één behandeling. € 150 ▾
 
@@ -8770,7 +8774,7 @@ De bovenlaag sneller laten vernieuwen.
 
 Herstel op gang brengen in het bindweefsel.
 
-- SkinPen Microneedling Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit. € 180 ▾
+- SkinPen Microneedling Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. € 180 ▾
 
 - Dermapen 4 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. € 180 ▾
 
@@ -8784,7 +8788,7 @@ Mikken op kleur, vaten of structuur.
 
 - Nordlys IPL Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. € 75 ▾
 
-- LED-therapie Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren. € 30 ▾
+- LED-therapie Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. € 30 ▾
 
 Maanden werk aan hardnekkig pigment.
 
@@ -10562,23 +10566,23 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 - Ouderdomsvlekken Is de plek veranderd?
 
-- Gerstekorrels en milia Wit en hard, of rood en pijnlijk?
+- Gerstekorrels en milia Wit en hard of rood?
 
 - Huidverslapping Wat zie je liggend?
 
 - Ingegroeide haren Zit er een haar in?
 
-- Onzuivere huid en mee-eters Mee-eter of gewoon een porie?
+- Onzuivere huid Mee-eter of porie?
 
-- Keratosis pilaris Losse bultjes of alleen ruw?
+- Keratosis pilaris Bultjes of ruw?
 
 - Doffe huid Waar komt het vandaan?
 
-- Steelwratjes Hangt het aan een steeltje?
+- Steelwratjes Aan een steeltje?
 
 - Rosacea Wat zet het aan?
 
-- Couperose Losse vaatjes of een gloed?
+- Couperose Vaatjes of gloed?
 
 - Pigmentvlekken Welk seizoen is het?
 
@@ -10588,25 +10592,25 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 - Striae Zijn ze nog rood of al wit?
 
-- Keloid en verdikte littekens Groeit het over de wondrand heen?
+- Keloïden Over de wondrand heen?
 
 - Huidveroudering Is dit tijd of is dit zon?
 
-- Poriën Wat valt er eigenlijk te veranderen?
+- Poriën Wat valt er te doen?
 
-- Droge huid Mist er vet of mist er water?
+- Droge huid Vet of water?
 
 - Gevoelige huid Wat staat er allemaal aan?
 
-- Donkere kringen Is het kleur of is het schaduw?
+- Donkere kringen Kleur of schaduw?
 
-- Eczeem Waar valt de cirkel te breken?
+- Eczeem Waar breekt de cirkel?
 
-- Psoriasis Zitten je nagels en gewrichten er ook bij?
+- Psoriasis Ook je nagels erbij?
 
 - Huiduitslag Bel je vandaag of morgen?
 
-- Cellulitis Gaat dit over vet of over bouw?
+- Cellulitis Vet of bouw?
 
 - Moedervlekken Is er iets veranderd?
 
@@ -11695,4 +11699,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5415 tekstblokken · ongeveer 80.979 woorden._
+_105 pagina's · 5417 tekstblokken · ongeveer 80.909 woorden._

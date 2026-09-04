@@ -187,18 +187,18 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Symptoomzoeker",
             href: "/huidproblemen/symptoomzoeker",
-            zin: "Kruis aan wat je ziet en voelt, zonder vakterm",
+            zin: "Kruis aan wat je ziet",
           },
           {
             label: "Kennisbank",
             href: "/kennisbank",
-            zin: "Alles wat hier uitgelegd staat, op één plek",
+            zin: "Alle uitleg op een plek",
           },
         ],
       },
       { kop: "Wij behandelen dit", items: uitGroep("behandelen"), breed: true },
       {
-        kop: "Hier hoort een arts bij",
+        kop: "Samen met je arts",
         items: [...uitGroep("doorverwijzen"), ...uitGroep("niet")],
       },
       {
@@ -216,12 +216,12 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Snurken",
             href: "/snurken",
-            zin: "Waar het geluid ontstaat bepaalt of wij iets kunnen",
+            zin: "Waar het geluid ontstaat",
           },
           {
             label: "PCOS",
             href: "/pcos",
-            zin: "Wat er van binnenuit meespeelt bij je huid",
+            zin: "Van binnenuit bekeken",
           },
         ],
       },
@@ -238,7 +238,7 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Het huidconsult",
             href: "/intake",
-            zin: "De afspraak waarin niet behandeld wordt",
+            zin: "Meten, uitleg en een plan op maat",
           },
           {
             label: "Je huidprofiel",
@@ -253,7 +253,7 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Onze apparatuur",
             href: "/apparatuur",
-            zin: "Wat er staat, en wat het niet kan",
+            zin: "Welk apparaat waarvoor wordt ingezet",
           },
         ],
       },
@@ -289,6 +289,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "Nordlys IPL",
             href: "/behandelingen/nordlys-ipl",
             zin: kortZin("nordlys-ipl"),
+          },
+          {
+            label: "LED-therapie",
+            href: "/behandelingen/led-therapie",
+            zin: kortZin("led-therapie"),
           },
         ],
       },
