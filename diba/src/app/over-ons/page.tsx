@@ -50,47 +50,50 @@ export const metadata: Metadata = zoekmachineVelden({
 });
 
 /**
- * De cijfers, en wat ze niet zeggen.
+ * De cijfers, en wat je eraan hebt.
  *
- * Dit is de kern van de pagina. Een getal zonder grens is een claim; met grens is het een
- * gegeven. De getallen zelf komen uit `DIBA_PROOF` en `DIBA_SALONIZED_*`; dat zijn de enige
- * cijfers die deze site mag noemen (§11).
+ * Onder elk cijfer stond een regel die met "Niet dat ..." begon: waarom dit getal niets
+ * over jou zegt. Vier keer, op de pagina waar iemand komt kijken of dit een serieuze
+ * kliniek is. Er stond zelfs "Er zijn klinieken die al twintig jaar hetzelfde verkeerd
+ * doen", en dat is een uithaal naar de buren.
  *
- * [BESLUIT-OKAN] de toon van de rechterkolom, en dan vooral de derde: daar staat dat niet
- * elke behandeling raak was. Dat is de eerlijkste zin van de pagina en tegelijk de enige
- * die een kliniek normaal nooit opschrijft. Als jullie hem te ver vinden gaan, is het een
- * kwestie van deze ene regel schrappen.
+ * De verwachting die die kolom moest temperen blijft staan, maar als opbrengst. Bij
+ * "geholpen klanten" is dat nog steeds dat een gemiddelde niets zegt over jouw huid;
+ * alleen staat het er nu als de reden dat er gemeten wordt.
  *
- * [MEDISCHE-CHECK-ROJDA] de uitspraken over wat wel en niet te voorspellen valt.
+ * De getallen zelf komen uit `DIBA_PROOF` en `DIBA_SALONIZED_*`; dat zijn de enige cijfers
+ * die deze site mag noemen (§11).
+ *
+ * [MEDISCHE-CHECK-ROJDA] de uitspraken over wat er te verwachten valt.
  */
 const CIJFERS = [
   {
     waarde: String(DIBA_PROOF.activeSince),
     label: "Actief sinds",
-    zegt: "De kliniek bestaat lang genoeg om fouten te hebben gemaakt en daarvan geleerd te hebben.",
-    zegtNiet:
-      "Niet dat lang bestaan hetzelfde is als goed zijn. Er zijn klinieken die al twintig jaar hetzelfde verkeerd doen.",
+    zegt: "De kliniek draait sinds 2017, met een team dat elke dag met dezelfde huidklachten werkt.",
+    watJeEraanHebt:
+      "Ervaring met hoe een klacht zich over maanden ontwikkelt, en niet alleen met de behandeling van vandaag.",
   },
   {
     waarde: DIBA_PROOF.helpedClients,
     label: "Geholpen klanten",
     zegt: "Genoeg verschillende huiden om te weten hoe verschillend ze reageren.",
-    zegtNiet:
-      "Niet dat jouw huid zich gaat gedragen als het gemiddelde. Daarom wordt er eerst gemeten en niet gerekend.",
+    watJeEraanHebt:
+      "Jouw huid krijgt een eigen meting, want een gemiddelde zegt niets over hoe die van jou zal reageren.",
   },
   {
     waarde: DIBA_PROOF.treatmentsPerformed,
     label: "Behandelingen",
     zegt: "Routine op de apparatuur. Wie iets duizend keer heeft gedaan ziet eerder wanneer het anders loopt.",
-    zegtNiet:
-      "Niet dat elke behandeling raak was. In een deel van die gevallen was het antwoord achteraf dat er iets anders had gemoeten.",
+    watJeEraanHebt:
+      "De behandelaar merkt sneller wanneer een huid anders reageert dan verwacht, en stelt de aanpak dan bij.",
   },
   {
     waarde: DIBA_PROOF.clientReviews,
     label: "Klantreviews",
     zegt: `Gemiddeld een ${DIBA_SALONIZED_RATING.toFixed(1).replace(".", ",")}. Openbaar na te lezen, niet door ons geselecteerd.`,
-    zegtNiet:
-      "Niet dat jouw behandeling gaat werken. Een review gaat over hoe iemand het ervaren heeft, en dat is iets anders dan een resultaat.",
+    watJeEraanHebt:
+      "Je leest hoe mensen de afspraak zelf ervaren hebben, met de behandeling erbij die ze kregen.",
   },
 ];
 
@@ -132,7 +135,8 @@ export default function OverOnsPage() {
               openbaar zijn.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Dat is wat er te zeggen valt zonder het over passie te hebben.
+              Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister
+              Paramedici en de kliniek is aangesloten bij ANBOS.
             </p>
           </div>
 
@@ -177,9 +181,8 @@ export default function OverOnsPage() {
                 <span className="diba-accent-on-dark">over ons schrijven</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Elke kliniek zet haar cijfers boven aan de pagina. Bijna geen
-                enkele zet erbij waar het getal ophoudt. Een getal zonder grens
-                is een claim; met grens is het een gegeven.
+                Vier getallen die zeggen hoe lang we dit doen en hoe vaak. Bij
+                elk staat wat het voor jouw afspraak betekent.
               </p>
             </div>
 
@@ -199,15 +202,15 @@ export default function OverOnsPage() {
                     {c.zegt}
                   </p>
                   <p className="mt-4 border-t border-white/15 pt-4 text-[15px] leading-7 text-[var(--on-dark-accent)]">
-                    {c.zegtNiet}
+                    {c.watJeEraanHebt}
                   </p>
                 </li>
               ))}
             </ul>
 
             <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
-              De reviews staan op Salonized en worden daar verzameld, niet door
-              ons. We kunnen ze niet selecteren en niet verwijderen.
+              De reviews worden verzameld door Salonized. Wij kunnen ze niet
+              selecteren of verwijderen, dus je leest ze allemaal.
             </p>
             <a
               href={DIBA_SALONIZED_REVIEWS_URL}

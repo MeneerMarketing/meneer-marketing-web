@@ -136,9 +136,9 @@ export default function TeamPage() {
                   <span className="diba-accent-on-dark">opleiding</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Dit staat op geen enkele kliniekwebsite en het is precies wat
-                  je hoort te weten voordat je op een stoel gaat zitten. Dus
-                  staat het er.
+                  Wie je huid behandelt en wie meekijkt naar wat er van
+                  binnenuit meespeelt, zijn twee verschillende opleidingen. Zo
+                  weet je wie er bij welke vraag naast je staat.
                 </p>
               </div>
 
@@ -152,17 +152,17 @@ export default function TeamPage() {
                       <span className="text-[18px] leading-7 font-medium">
                         {v.label}
                       </span>
-                      <span
-                        className={`diba-label rounded-[var(--r-pill)] px-3 py-1 ${
-                          v.beschermd
-                            ? "bg-[var(--on-dark-btn)] text-[var(--on-dark-btn-text)]"
-                            : "bg-white/15 text-[var(--on-dark-body)]"
-                        }`}
-                      >
-                        {v.beschermd
-                          ? "Beschermde titel"
-                          : "Geen beschermde titel"}
-                      </span>
+                      {/* De badge alleen waar er iets te tonen valt.
+
+                          Hij stond ook onder de twee titels die niet beschermd zijn, met
+                          "Geen beschermde titel" erin. Een keurmerk dat "geen" zegt leest
+                          als een waarschuwing bij je eigen mensen, en het feit staat een
+                          regel lager alsnog. */}
+                      {v.beschermd ? (
+                        <span className="diba-label rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-3 py-1 text-[var(--on-dark-btn-text)]">
+                          Beschermde titel
+                        </span>
+                      ) : null}
                     </p>
                     <p className="mt-2 max-w-[54ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
                       {publicCopy(v.wat)}

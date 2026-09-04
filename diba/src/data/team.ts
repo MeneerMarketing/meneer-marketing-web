@@ -71,7 +71,7 @@ export const TEAM: readonly Teamlid[] = [
     naam: "Okan",
     functie: "Praktijkmanager",
     vak: "praktijk",
-    bio: "Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit. Hij behandelt niet en dat is precies zijn functie.",
+    bio: "Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit.",
   },
   {
     slug: "demi",
@@ -159,7 +159,7 @@ export const VAKGEBIEDEN: readonly {
     beschermd: true,
     wat: "Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af.",
     opleiding:
-      "Hbo-bachelor huidtherapie, te volgen aan de Haagse Hogeschool of Hogeschool Utrecht. De titel is beschermd in artikel 34 van de Wet BIG: zonder dat diploma mag je jezelf geen huidtherapeut noemen.",
+      "Hbo-bachelor huidtherapie, aan de Haagse Hogeschool of Hogeschool Utrecht. De titel is beschermd in artikel 34 van de Wet BIG, en onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici.",
   },
   {
     id: "orthomoleculair",
@@ -167,14 +167,15 @@ export const VAKGEBIEDEN: readonly {
     beschermd: false,
     wat: "Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.",
     opleiding:
-      "Deze titel staat niet in de Wet BIG en is dus niet wettelijk beschermd. Dat zeggen we erbij omdat je dat hoort te weten, niet omdat het iets zegt over wat iemand kan.",
+      "Een aanvullende opleiding naast de huidtherapie, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.",
   },
   {
     id: "praktijk",
     label: "Praktijkmanager",
     beschermd: false,
-    wat: "Regelt de agenda, de gang van zaken en alles eromheen. Behandelt niet.",
-    opleiding: "Geen behandelend beroep, dus geen behandeltitel.",
+    wat: "Regelt de agenda, de afspraken en de gang van zaken in de kliniek.",
+    opleiding:
+      "Een organiserende functie. Het behandelen doen de therapeuten; hier kom je terecht voor je afspraak of je factuur.",
   },
 ];
 

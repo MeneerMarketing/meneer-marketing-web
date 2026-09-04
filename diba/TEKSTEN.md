@@ -360,7 +360,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 12 apparaten en 22 behandelingen waarvan de prijzen allemaal openbaar zijn.
 
-Dat is wat er te zeggen valt zonder het over passie te hebben.
+Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici en de kliniek is aangesloten bij ANBOS.
 
 We zitten aan de noordkant van Rotterdam, in een woonwijk en niet in een winkelstraat. Dat is te merken aan het tempo.
 
@@ -368,17 +368,17 @@ We zitten aan de noordkant van Rotterdam, in een woonwijk en niet in een winkels
 
 **Wat klanten over ons schrijven**
 
-Elke kliniek zet haar cijfers boven aan de pagina. Bijna geen enkele zet erbij waar het getal ophoudt. Een getal zonder grens is een claim; met grens is het een gegeven.
+Vier getallen die zeggen hoe lang we dit doen en hoe vaak. Bij elk staat wat het voor jouw afspraak betekent.
 
-- 2017 ACTIEF SINDS De kliniek bestaat lang genoeg om fouten te hebben gemaakt en daarvan geleerd te hebben. Niet dat lang bestaan hetzelfde is als goed zijn. Er zijn klinieken die al twintig jaar hetzelfde verkeerd doen.
+- 2017 ACTIEF SINDS De kliniek draait sinds 2017, met een team dat elke dag met dezelfde huidklachten werkt. Ervaring met hoe een klacht zich over maanden ontwikkelt, en niet alleen met de behandeling van vandaag.
 
-- 10.000+ GEHOLPEN KLANTEN Genoeg verschillende huiden om te weten hoe verschillend ze reageren. Niet dat jouw huid zich gaat gedragen als het gemiddelde. Daarom wordt er eerst gemeten en niet gerekend.
+- 10.000+ GEHOLPEN KLANTEN Genoeg verschillende huiden om te weten hoe verschillend ze reageren. Jouw huid krijgt een eigen meting, want een gemiddelde zegt niets over hoe die van jou zal reageren.
 
-- 55.000+ BEHANDELINGEN Routine op de apparatuur. Wie iets duizend keer heeft gedaan ziet eerder wanneer het anders loopt. Niet dat elke behandeling raak was. In een deel van die gevallen was het antwoord achteraf dat er iets anders had gemoeten.
+- 55.000+ BEHANDELINGEN Routine op de apparatuur. Wie iets duizend keer heeft gedaan ziet eerder wanneer het anders loopt. De behandelaar merkt sneller wanneer een huid anders reageert dan verwacht, en stelt de aanpak dan bij.
 
-- 3.883 KLANTREVIEWS Gemiddeld een 5,0. Openbaar na te lezen, niet door ons geselecteerd. Niet dat jouw behandeling gaat werken. Een review gaat over hoe iemand het ervaren heeft, en dat is iets anders dan een resultaat.
+- 3.883 KLANTREVIEWS Gemiddeld een 5,0. Openbaar na te lezen, niet door ons geselecteerd. Je leest hoe mensen de afspraak zelf ervaren hebben, met de behandeling erbij die ze kregen.
 
-De reviews staan op Salonized en worden daar verzameld, niet door ons. We kunnen ze niet selecteren en niet verwijderen.
+De reviews worden verzameld door Salonized. Wij kunnen ze niet selecteren of verwijderen, dus je leest ze allemaal.
 
 > knop: LEES ZE BIJ DE BRON ↗
 
@@ -424,13 +424,13 @@ Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag, en als je een v
 
 **Het verschil in opleiding**
 
-Dit staat op geen enkele kliniekwebsite en het is precies wat je hoort te weten voordat je op een stoel gaat zitten. Dus staat het er.
+Wie je huid behandelt en wie meekijkt naar wat er van binnenuit meespeelt, zijn twee verschillende opleidingen. Zo weet je wie er bij welke vraag naast je staat.
 
-- Huidtherapeut BESCHERMDE TITEL Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af. Hbo-bachelor huidtherapie, te volgen aan de Haagse Hogeschool of Hogeschool Utrecht. De titel is beschermd in artikel 34 van de Wet BIG: zonder dat diploma mag je jezelf geen huidtherapeut noemen.
+- Huidtherapeut BESCHERMDE TITEL Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af. Hbo-bachelor huidtherapie, aan de Haagse Hogeschool of Hogeschool Utrecht. De titel is beschermd in artikel 34 van de Wet BIG, en onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici.
 
-- Orthomoleculair huidspecialist GEEN BESCHERMDE TITEL Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal. Deze titel staat niet in de Wet BIG en is dus niet wettelijk beschermd. Dat zeggen we erbij omdat je dat hoort te weten, niet omdat het iets zegt over wat iemand kan.
+- Orthomoleculair huidspecialist Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal. Een aanvullende opleiding naast de huidtherapie, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.
 
-- Praktijkmanager GEEN BESCHERMDE TITEL Regelt de agenda, de gang van zaken en alles eromheen. Behandelt niet. Geen behandelend beroep, dus geen behandeltitel.
+- Praktijkmanager Regelt de agenda, de afspraken en de gang van zaken in de kliniek. Een organiserende functie. Het behandelen doen de therapeuten; hier kom je terecht voor je afspraak of je factuur.
 
 - Andres HUIDTHERAPEUT Andres is huidtherapeut en werkt vooral met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en hij zegt het ook als een behandeling bij jouw huid minder oplevert dan je hoopt.
 
@@ -446,7 +446,7 @@ Dit staat op geen enkele kliniekwebsite en het is precies wat je hoort te weten 
 
 - Demi ORTHOMOLECULAIR HUIDSPECIALIST Demi werkt als orthomoleculair huidspecialist en kijkt daarbij naar wat er van binnenuit meespeelt. Bij haar begint een afspraak vaker met vragen dan met een apparaat, en dat is geen omweg: bij een deel van de huidklachten zit de aanjager niet in de huid.
 
-- Okan PRAKTIJKMANAGER Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit. Hij behandelt niet en dat is precies zijn functie.
+- Okan PRAKTIJKMANAGER Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit.
 
 Een diploma is geen eindpunt.
 
@@ -11604,7 +11604,7 @@ Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acn
 
 Praktijkmanager
 
-Regelt de agenda, de gang van zaken en alles eromheen. Behandelt niet.
+Regelt de agenda, de afspraken en de gang van zaken in de kliniek.
 
 KWALITEITSREGISTER PARAMEDICI
 
@@ -11686,7 +11686,7 @@ Dat is geen indeling op papier. Bij acne en pigment zit er vaak een voedingskant
 
 - Orthomoleculair huidspecialist Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.
 
-- Praktijkmanager Regelt de agenda, de gang van zaken en alles eromheen. Behandelt niet.
+- Praktijkmanager Regelt de agenda, de afspraken en de gang van zaken in de kliniek.
 
 > knop: BEKIJK DE APPARATUUR
 
@@ -11699,4 +11699,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5417 tekstblokken · ongeveer 80.909 woorden._
+_105 pagina's · 5417 tekstblokken · ongeveer 80.879 woorden._
