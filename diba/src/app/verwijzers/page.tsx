@@ -245,17 +245,19 @@ export default function VerwijzersPage() {
             </div>
 
             <div className="space-y-6">
-              {VAKGEBIEDEN.map((v) => (
+              {VAKGEBIEDEN.filter((v) => v.behandelend).map((v) => (
                 <div key={v.id}>
                   <div className="flex flex-wrap items-center gap-3">
                     <p className="diba-card-title text-[var(--on-dark)]">
                       {v.label}
                     </p>
-                    <span className="diba-label rounded-[var(--r-pill)] bg-white/15 px-3 py-1.5 text-[var(--on-dark-accent)]">
-                      {v.beschermd
-                        ? "Beschermde titel"
-                        : "Geen beschermde titel"}
-                    </span>
+                    {/* Alleen waar er iets te tonen valt; het feit dat de andere titel
+                        niet beschermd is staat een regel lager in de tekst. */}
+                    {v.beschermd ? (
+                      <span className="diba-label rounded-[var(--r-pill)] bg-white/15 px-3 py-1.5 text-[var(--on-dark-accent)]">
+                        Beschermde titel
+                      </span>
+                    ) : null}
                   </div>
                   <p className="mt-2 max-w-[58ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
                     {v.wat}

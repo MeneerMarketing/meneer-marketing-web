@@ -100,21 +100,25 @@ export default function TeamPage() {
           {/* De samenstelling in cijfers, want dat is wat je er als klant aan hebt. */}
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
             <Label>Waar het team uit bestaat</Label>
+            {/* Alleen de behandelende vakken. De praktijkmanager stond hier als derde
+                regel tussen, en dat maakt van een organiserende functie een vakgebied. */}
             <dl className="mt-6 space-y-1">
-              {perVak.map((v) => (
-                <div
-                  key={v.id}
-                  className="-mx-4 flex min-h-14 items-center justify-between gap-4 rounded-[var(--r-md)] px-4"
-                >
-                  <dt className="text-[16px] leading-6 text-[var(--t-body)]">
-                    {v.label}
-                    {v.leden.length > 1 ? "en" : ""}
-                  </dt>
-                  <dd className="text-[24px] leading-none font-medium text-[var(--t-strong)] tabular-nums">
-                    {v.leden.length}
-                  </dd>
-                </div>
-              ))}
+              {perVak
+                .filter((v) => v.behandelend)
+                .map((v) => (
+                  <div
+                    key={v.id}
+                    className="-mx-4 flex min-h-14 items-center justify-between gap-4 rounded-[var(--r-md)] px-4"
+                  >
+                    <dt className="text-[16px] leading-6 text-[var(--t-body)]">
+                      {v.label}
+                      {v.leden.length > 1 ? "en" : ""}
+                    </dt>
+                    <dd className="text-[24px] leading-none font-medium text-[var(--t-strong)] tabular-nums">
+                      {v.leden.length}
+                    </dd>
+                  </div>
+                ))}
             </dl>
             <p className="mt-6 border-t border-[var(--g-050)] pt-5 text-[14px] leading-6 text-[var(--t-muted)]">
               Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag,
@@ -143,7 +147,7 @@ export default function TeamPage() {
               </div>
 
               <ul className="space-y-5">
-                {VAKGEBIEDEN.map((v) => (
+                {VAKGEBIEDEN.filter((v) => v.behandelend).map((v) => (
                   <li
                     key={v.id}
                     className="border-b border-white/15 pb-5 last:border-b-0 last:pb-0"

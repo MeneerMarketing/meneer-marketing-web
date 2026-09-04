@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Woodlamp from "@/components/melasma/Woodlamp";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
   NulmetingAssen,
@@ -14,7 +13,14 @@ import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
-import { AANJAGERS, MELASMA_FAQ, MELASMA_WEL_NIET } from "@/data/melasma";
+import {
+  AANJAGERS,
+  MELASMA_FAQ,
+  MELASMA_WEL_NIET,
+  VERSCHIL,
+  WETENSWAARD,
+} from "@/data/melasma";
+import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -49,7 +55,7 @@ export const metadata: Metadata = zoekmachineVelden({
 const PAD = "/huidproblemen/melasma";
 
 const ANKERS = [
-  { id: "diepte", label: "Hoe diep zit het" },
+  { id: "herkennen", label: "Melasma of zonvlek" },
   { id: "kranen", label: "De drie kranen" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "meten", label: "Hoe we meten" },
@@ -138,19 +144,68 @@ export default function MelasmaPage() {
 
       <PillarNav ankers={ANKERS} />
 
-      {/* ── De woodlamp: de uitblinker ─────────────────────────────────── */}
+      {/* ── Melasma of een zonvlek ─────────────────────────────────────── */}
+      {/* Hier stond een woodlamp waarin je zelf drie dieptes kon aanklikken. Dat is werk
+          voor de behandelaar en niet voor de bezoeker. Wat er nu staat is de vraag die
+          iemand met een vlek in de spiegel echt heeft, in tien seconden te scannen. */}
       <section
-        id="diepte"
+        id="herkennen"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
-            label="De woodlamp"
-            kop="Wat de woodlamp"
-            accent="laat zien"
-            intro="Onder ultraviolet licht springt oppervlakkig pigment eruit en blijft dieper pigment juist vlak. Zo schat de behandelaar in wat er mogelijk is."
+            label="Melasma of zonvlek"
+            kop="Hoe je het"
+            accent="herkent"
+            intro="Ze lijken op elkaar en vragen een andere aanpak. Het verschil zit in het patroon, de plek en hoe de vlek zich door het jaar heen gedraagt."
           />
-          <Woodlamp />
+
+          <div className="mt-12 grid gap-4 lg:grid-cols-2">
+            {(
+              [
+                { titel: "Melasma", veld: "melasma" },
+                { titel: "Een zonvlek", veld: "zonvlek" },
+              ] as const
+            ).map((kolom) => (
+              <div
+                key={kolom.titel}
+                className="rounded-[var(--r-md)] bg-white p-7 sm:p-9"
+              >
+                <Label>{kolom.titel}</Label>
+                <ul className="mt-6 space-y-5">
+                  {VERSCHIL.map((v) => (
+                    <li
+                      key={v.kenmerk}
+                      className="border-b border-[var(--g-100)] pb-5 last:border-b-0 last:pb-0"
+                    >
+                      <p className="diba-label text-[var(--t-muted)]">
+                        {v.kenmerk}
+                      </p>
+                      {/* Twee regelhoogtes gereserveerd, zodat links en rechts op
+                          dezelfde hoogte blijven staan. */}
+                      <p className="mt-2 min-h-[2lh] text-[15px] leading-7 text-[var(--t-body)]">
+                        {publicCopy(v[kolom.veld])}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <ul className="mt-4 grid gap-4 md:grid-cols-3">
+            {WETENSWAARD.map((w) => (
+              <li
+                key={w.kop}
+                className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <h3 className="diba-card-title">{w.kop}</h3>
+                <p className="mt-3 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(w.zin)}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

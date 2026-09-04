@@ -236,7 +236,7 @@ export default function WerkenBijPage() {
           </div>
 
           <ul className="mt-10 grid gap-4 md:grid-cols-3">
-            {VAKGEBIEDEN.map((v) => (
+            {VAKGEBIEDEN.filter((v) => v.behandelend).map((v) => (
               <li
                 key={v.id}
                 className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"

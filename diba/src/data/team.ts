@@ -150,6 +150,18 @@ export const VAKGEBIEDEN: readonly {
   readonly id: Vakgebied;
   readonly label: string;
   readonly beschermd: boolean;
+  /**
+   * Of dit een behandelend vak is.
+   *
+   * De praktijkmanager stond hier naast de huidtherapeut en de orthomoleculair
+   * huidspecialist, en deze lijst wordt op drie plekken als beroepenlijst gebruikt: het
+   * titelblok op /team, de rollen op /werken-bij en de registraties op /verwijzers. Een
+   * organiserende functie hoort daar niet tussen; op /werken-bij staat het zelfs als iets
+   * waar je op kunt solliciteren.
+   *
+   * Okan blijft wel gewoon in het team: `perVak` op /team loopt over alle vakgebieden.
+   */
+  readonly behandelend: boolean;
   readonly wat: string;
   readonly opleiding: string;
 }[] = [
@@ -157,6 +169,7 @@ export const VAKGEBIEDEN: readonly {
     id: "huidtherapie",
     label: "Huidtherapeut",
     beschermd: true,
+    behandelend: true,
     wat: "Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af.",
     opleiding:
       "Hbo-bachelor huidtherapie, aan de Haagse Hogeschool of Hogeschool Utrecht. De titel is beschermd in artikel 34 van de Wet BIG, en onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici.",
@@ -165,6 +178,7 @@ export const VAKGEBIEDEN: readonly {
     id: "orthomoleculair",
     label: "Orthomoleculair huidspecialist",
     beschermd: false,
+    behandelend: true,
     wat: "Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.",
     opleiding:
       "Een aanvullende opleiding naast de huidtherapie, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.",
@@ -173,6 +187,7 @@ export const VAKGEBIEDEN: readonly {
     id: "praktijk",
     label: "Praktijkmanager",
     beschermd: false,
+    behandelend: false,
     wat: "Regelt de agenda, de afspraken en de gang van zaken in de kliniek.",
     opleiding:
       "Een organiserende functie. Het behandelen doen de therapeuten; hier kom je terecht voor je afspraak of je factuur.",

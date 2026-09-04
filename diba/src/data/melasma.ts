@@ -16,59 +16,72 @@
  * geen uitspraken over hoe vaak melasma terugkomt: dat weten we niet in cijfers (A7).
  */
 
-export type Laag = {
-  readonly id: "epidermaal" | "gemengd" | "dermaal";
-  readonly naam: string;
-  readonly vakterm: string;
-  /** Wat de lamp laat zien als je erboven staat. */
-  readonly onderDeLamp: string;
-  readonly watHetBetekent: string;
-  readonly watMogelijkIs: string;
-  /** Stuurt de toon van het antwoord en de knop. */
-  readonly vooruitzicht: "goed" | "matig" | "beperkt";
-};
+/* ── Melasma of een zonvlek ────────────────────────────────────────────── */
 
-export const LAGEN: readonly Laag[] = [
+/**
+ * De vraag die iemand met een vlek in de spiegel echt heeft.
+ *
+ * Hier stond een woodlamp-tool waarin je zelf drie dieptes kon aanklikken. Dat is werk voor
+ * de behandelaar en niet voor de bezoeker, hetzelfde bezwaar als bij de zelftests die van
+ * de andere huidprobleempagina's af gingen.
+ *
+ * Vier kenmerken, twee kolommen, in tien seconden te scannen.
+ *
+ * [MEDISCHE-CHECK-ROJDA] het onderscheid zelf en de vier kenmerken.
+ */
+export const VERSCHIL: readonly {
+  readonly kenmerk: string;
+  readonly melasma: string;
+  readonly zonvlek: string;
+}[] = [
   {
-    id: "epidermaal",
-    naam: "Hoog in de huid",
-    vakterm: "epidermaal melasma",
-    onderDeLamp:
-      "De rand wordt scherper en de vlek lijkt donkerder dan in gewoon licht. Je ziet waar hij ophoudt.",
-    watHetBetekent:
-      "Het pigment zit in de bovenste laag. Dat is de laag die zichzelf vernieuwt, dus daar is iets aan te doen. [MEDISCHE-CHECK-ROJDA]",
-    watMogelijkIs:
-      "Dit is het gunstigste beeld. Verwacht duidelijk lichter worden, en verwacht dat het terugkomt zodra de bescherming wegvalt.",
-    vooruitzicht: "goed",
+    kenmerk: "Het patroon",
+    melasma: "Vlakken met vage randen, links en rechts meestal even veel.",
+    zonvlek: "Losse vlekjes met een scherpe rand, willekeurig verdeeld.",
   },
   {
-    id: "gemengd",
-    naam: "Deels diep",
-    vakterm: "gemengd melasma",
-    onderDeLamp:
-      "Een deel van de vlek springt eruit, een ander deel blijft juist vaag. Dat verschil zie je alleen onder de lamp.",
-    watHetBetekent:
-      "Er zit pigment in twee lagen tegelijk. Het bovenste deel reageert, het diepere deel blijft grotendeels staan. [MEDISCHE-CHECK-ROJDA]",
-    watMogelijkIs:
-      "Reken op verbetering die je ziet en op een rest die blijft. Een schone huid beloven we niet, want de diepte van het pigment bepaalt wat er kan.",
-    vooruitzicht: "matig",
+    kenmerk: "De plek",
+    melasma: "Wangen, voorhoofd, boven de lip en langs de kaaklijn.",
+    zonvlek: "Waar de zon jarenlang op stond: gezicht, handen, decollete.",
   },
   {
-    id: "dermaal",
-    naam: "Diep in de huid",
-    vakterm: "dermaal melasma",
-    onderDeLamp:
-      "De vlek wordt onder de lamp niet duidelijker. De rand blijft vaag en het contrast neemt niet toe.",
-    watHetBetekent:
-      "Het pigment ligt onder de laag die zich vernieuwt. Daar kom je met een oppervlakkige behandeling niet bij, en dieper gaan maakt de kans op méér pigment groter. [MEDISCHE-CHECK-ROJDA]",
-    watMogelijkIs:
-      "Hier zeggen we meestal nee tegen behandelen. Het levert te weinig op en het risico weegt niet op tegen de winst. Dat is een vervelend antwoord en het is wel het eerlijke.",
-    vooruitzicht: "beperkt",
+    kenmerk: "Het verloop",
+    melasma: "Wordt donkerder in de zomer en lichter in de winter.",
+    zonvlek: "Blijft zoals hij is, en er komen er langzaam bij.",
   },
-] as const;
+  {
+    kenmerk: "De aanjager",
+    melasma:
+      "Hormonen, zon en warmte samen. Vaak begonnen tijdens een zwangerschap.",
+    zonvlek: "Opgetelde zonuren over de jaren, zonder hormonale kant.",
+  },
+];
 
-export const LAMP_UITLEG =
-  "Een woodlamp is een lamp met bijna alleen ultraviolet licht. Pigment dat hoog in de huid zit kaatst dat anders terug dan pigment dat dieper ligt, waardoor het contrast toeneemt of juist niet. Het is geen apparaat dat iets behandelt: het laat alleen zien waar je naar kijkt.";
+/**
+ * Drie dingen die de meeste mensen met melasma nog niet weten.
+ *
+ * De diepte staat in het derde, want dat is bij melasma waar het op aankomt en het was het
+ * enige uit de oude tool dat de bezoeker echt aanging.
+ *
+ * [MEDISCHE-CHECK-ROJDA] alle drie.
+ */
+export const WETENSWAARD: readonly {
+  readonly kop: string;
+  readonly zin: string;
+}[] = [
+  {
+    kop: "Ook achter glas",
+    zin: "UVA komt door een autoruit en door je raam heen. Ook binnen en op een grijze dag loopt pigment gewoon door.",
+  },
+  {
+    kop: "Warmte telt ook mee",
+    zin: "Het gaat niet alleen om UV. Een hete keuken, een sauna of een fohn dicht op je gezicht wakkert melasma net zo goed aan.",
+  },
+  {
+    kop: "De diepte bepaalt het tempo",
+    zin: "Pigment hoog in de huid wordt sneller lichter. Zit het dieper, dan vraagt het meer sessies en meer geduld.",
+  },
+];
 
 /* ── De drie kranen ────────────────────────────────────────────────────── */
 

@@ -418,8 +418,6 @@ Dat is makkelijk gezegd. Hier staat wiens hand dat is.
 
 *Orthomoleculair huidspecialisten*
 
-*Praktijkmanager*
-
 Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag, en als je een voorkeur hebt kun je die gewoon noemen.
 
 **Het verschil in opleiding**
@@ -429,8 +427,6 @@ Wie je huid behandelt en wie meekijkt naar wat er van binnenuit meespeelt, zijn 
 - Huidtherapeut BESCHERMDE TITEL Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af. Hbo-bachelor huidtherapie, aan de Haagse Hogeschool of Hogeschool Utrecht. De titel is beschermd in artikel 34 van de Wet BIG, en onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici.
 
 - Orthomoleculair huidspecialist Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal. Een aanvullende opleiding naast de huidtherapie, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.
-
-- Praktijkmanager Regelt de agenda, de afspraken en de gang van zaken in de kliniek. Een organiserende functie. Het behandelen doen de therapeuten; hier kom je terecht voor je afspraak of je factuur.
 
 - Andres HUIDTHERAPEUT Andres is huidtherapeut en werkt vooral met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en hij zegt het ook als een behandeling bij jouw huid minder oplevert dan je hoopt.
 
@@ -3092,37 +3088,31 @@ Daarom kijken we eerst onder UV-licht. Zit het pigment diep, dan richten we ons 
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Wat de woodlamp laat zien**
+**Hoe je het herkent**
 
-Onder ultraviolet licht springt oppervlakkig pigment eruit en blijft dieper pigment juist vlak. Zo schat de behandelaar in wat er mogelijk is.
+Ze lijken op elkaar en vragen een andere aanpak. Het verschil zit in het patroon, de plek en hoe de vlek zich door het jaar heen gedraagt.
 
-Beweeg de lamp over de vlek om het verschil te zien. In gewoon licht lijkt alles gelijk; onder UV-licht niet.
+- HET PATROON Vlakken met vage randen, links en rechts meestal even veel.
 
-> knop: HOOG IN DE HUID
+- DE PLEK Wangen, voorhoofd, boven de lip en langs de kaaklijn.
 
-> knop: DEELS DIEP
+- HET VERLOOP Wordt donkerder in de zomer en lichter in de winter.
 
-> knop: DIEP IN DE HUID
+- DE AANJAGER Hormonen, zon en warmte samen. Vaak begonnen tijdens een zwangerschap.
 
-**Hoog in de huid**
+- HET PATROON Losse vlekjes met een scherpe rand, willekeurig verdeeld.
 
-EPIDERMAAL MELASMA
+- DE PLEK Waar de zon jarenlang op stond: gezicht, handen, decollete.
 
-*WAT JE ONDER DE LAMP ZIET*
+- HET VERLOOP Blijft zoals hij is, en er komen er langzaam bij.
 
-De rand wordt scherper en de vlek lijkt donkerder dan in gewoon licht. Je ziet waar hij ophoudt.
+- DE AANJAGER Opgetelde zonuren over de jaren, zonder hormonale kant.
 
-*WAT DAT BETEKENT*
+- Ook achter glas UVA komt door een autoruit en door je raam heen. Ook binnen en op een grijze dag loopt pigment gewoon door.
 
-Het pigment zit in de bovenste laag. Dat is de laag die zichzelf vernieuwt, dus daar is iets aan te doen.
+- Warmte telt ook mee Het gaat niet alleen om UV. Een hete keuken, een sauna of een fohn dicht op je gezicht wakkert melasma net zo goed aan.
 
-*WAT ER MOGELIJK IS*
-
-Dit is het gunstigste beeld. Verwacht duidelijk lichter worden, en verwacht dat het terugkomt zodra de bescherming wegvalt.
-
-> knop: LAAT DE DIEPTE METEN
-
-Een woodlamp is een lamp met bijna alleen ultraviolet licht. Pigment dat hoog in de huid zit kaatst dat anders terug dan pigment dat dieper ligt, waardoor het contrast toeneemt of juist niet. Het is geen apparaat dat iets behandelt: het laat alleen zien waar je naar kijkt.
+- De diepte bepaalt het tempo Pigment hoog in de huid wordt sneller lichter. Zit het dieper, dan vraagt het meer sessies en meer geduld.
 
 **Drie dingen die melasma sturen**
 
@@ -11602,10 +11592,6 @@ Orthomoleculair huidspecialist
 
 Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.
 
-Praktijkmanager
-
-Regelt de agenda, de afspraken en de gang van zaken in de kliniek.
-
 KWALITEITSREGISTER PARAMEDICI
 
 Vrijwillig register met een cyclus van vijf jaar. Wie erin blijft staan toont per periode minstens 1600 werkuren aan, verspreid over minimaal 36 maanden, en 160 punten bijscholing.
@@ -11686,8 +11672,6 @@ Dat is geen indeling op papier. Bij acne en pigment zit er vaak een voedingskant
 
 - Orthomoleculair huidspecialist Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.
 
-- Praktijkmanager Regelt de agenda, de afspraken en de gang van zaken in de kliniek.
-
 > knop: BEKIJK DE APPARATUUR
 
 **Hoe je bij ons solliciteert**
@@ -11699,4 +11683,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5417 tekstblokken · ongeveer 80.879 woorden._
+_105 pagina's · 5409 tekstblokken · ongeveer 80.830 woorden._
