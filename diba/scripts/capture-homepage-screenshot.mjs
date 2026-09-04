@@ -11,7 +11,9 @@ async function capture() {
   await mkdir(outDir, { recursive: true });
   const browser = await chromium.launch();
 
-  const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+  const page = await browser.newPage({
+    viewport: { width: 1440, height: 900 },
+  });
   await page.goto(url, { waitUntil: "networkidle" });
   await page.waitForTimeout(800);
   await page.screenshot({

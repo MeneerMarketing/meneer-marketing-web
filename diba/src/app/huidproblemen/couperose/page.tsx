@@ -142,9 +142,7 @@ export default function CouperosePage() {
                 waar de hele pagina om draait, en je kunt hem nalezen voor je verder
                 scrolt. */}
             <h1 className="diba-display-l mt-6">
-              Couperose
-              <br />
-              <span className="diba-accent">behandelen</span>
+              Couperose <span className="diba-accent">behandelen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

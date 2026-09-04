@@ -61,10 +61,8 @@ export default function HuidproblemenPage() {
               <span className="text-[var(--t-muted)]">Huidproblemen</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Alle
-              <br />
-              <span className="diba-accent">huidproblemen</span>
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
+              Alle <span className="diba-accent">huidproblemen</span>
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">

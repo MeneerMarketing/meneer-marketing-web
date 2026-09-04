@@ -109,7 +109,7 @@ export default function IntakePage() {
               <span className="text-[var(--t-muted)]">Huidconsult</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[16ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Wat er in een
               <br />
               <span className="diba-accent">intake gebeurt</span>

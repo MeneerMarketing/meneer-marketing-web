@@ -81,7 +81,7 @@ export default function TeamPage() {
               <span className="text-[var(--t-muted)]">Team</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[14ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               De mensen die
               <br />
               <span className="diba-accent">je huid behandelen</span>

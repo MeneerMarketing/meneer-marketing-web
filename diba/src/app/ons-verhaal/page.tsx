@@ -106,7 +106,7 @@ export default function OnsVerhaalPage() {
               <span className="text-[var(--t-muted)]">Ons verhaal</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[14ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Vijf regels waar we
               <br />
               <span className="diba-accent">ons aan houden</span>

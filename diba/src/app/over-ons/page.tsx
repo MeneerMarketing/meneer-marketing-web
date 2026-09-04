@@ -119,7 +119,7 @@ export default function OverOnsPage() {
               <span className="text-[var(--t-muted)]">Over ons</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Een huidkliniek
               <br />
               <span className="diba-accent">in Rotterdam.</span>

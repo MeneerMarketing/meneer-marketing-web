@@ -124,12 +124,60 @@ const meetKoppen = () => {
         tekst: k.textContent.trim().replace(/\s+/g, " "),
       });
     }
+
+    /* En de andere kant op: een kop van twee woorden die toch over twee regels staat.
+       "Drie oorzaken" werd "Drie" met "oorzaken" eronder, en dat leest als een kop die
+       is afgekapt. Onder de zestien tekens hoort hij op een regel; daarboven is de kolombreedte de reden en niet de kop. */
+    const tekst = k.textContent.trim().replace(/\s+/g, " ");
+    /* Alleen sectiekoppen. Een kaarttitel in een smalle kolom mag over twee regels;
+       daar is de kolom de reden en niet de kop. */
+    if (regels === 2 && tekst.length <= 16 && k.tagName !== "H3") {
+      uit.push({ regels, tag: k.tagName, tekst, kort: true });
+    }
+  }
+  return uit;
+};
+
+/**
+ * Introzinnen naast een sectiekop die maar één regel vullen.
+ *
+ * Yasin over "De drie oorzaken naast elkaar, met per soort wat eraan te doen is": die zin
+ * hangt als los vliegwerk naast een kop van twee regels. Twee regels is de maat; dan
+ * staat er een alinea in plaats van een onderschrift.
+ *
+ * Alleen de intro's naast een sectiekop, want die staan in een eigen kolom. Lopende tekst
+ * elders mag kort zijn.
+ */
+const meetIntros = () => {
+  const uit = [];
+  for (const k of document.querySelectorAll("h1, h2")) {
+    const rij = k.parentElement?.parentElement;
+    if (!rij) continue;
+    const p = rij.querySelector(":scope > p");
+    if (!p || p.textContent.trim().length < 15) continue;
+
+    /* Een intro staat naast of vlak onder de kop. Een alinea die verderop staat, na een
+       lijst bijvoorbeeld, is een voetnoot en geen intro. Op /contact haalde deze meter zo
+       de zin onder de opsomming binnen. */
+    const dk = k.getBoundingClientRect();
+    const dp = p.getBoundingClientRect();
+    if (dp.top - dk.top > 140) continue;
+    const lh = parseFloat(getComputedStyle(p).lineHeight);
+    if (!lh) continue;
+    const regels = Math.round(p.getBoundingClientRect().height / lh);
+    if (regels === 1) {
+      uit.push({
+        tekst: p.textContent.trim().replace(/\s+/g, " "),
+        bij: k.textContent.trim().replace(/\s+/g, " ").slice(0, 40),
+      });
+    }
   }
   return uit;
 };
 
 let scheve = 0;
 let lange = 0;
+let losse = 0;
 const perPagina = [];
 
 for (const pad of paden) {
@@ -137,10 +185,12 @@ for (const pad of paden) {
   await page.waitForTimeout(400);
   const rijen = await page.evaluate(meet);
   const koppen = await page.evaluate(meetKoppen);
-  if (rijen.length || koppen.length) {
-    perPagina.push({ pad, rijen, koppen });
+  const intros = await page.evaluate(meetIntros);
+  if (rijen.length || koppen.length || intros.length) {
+    perPagina.push({ pad, rijen, koppen, intros });
     scheve += rijen.length;
     lange += koppen.length;
+    losse += intros.length;
   }
 }
 
@@ -148,29 +198,38 @@ await browser.close();
 
 console.log(`\n${paden.length} pagina's nagemeten op 1280 pixels breed.\n`);
 
-if (!scheve && !lange) {
+if (!scheve && !lange && !losse) {
   console.log(
-    "ok — kaartrijen even lang, en geen kop over meer dan twee regels.\n",
+    "ok — kaartrijen even lang, koppen binnen twee regels, intro's minstens twee.\n",
   );
   process.exit(0);
 }
 
 console.log(
-  `${scheve} kaartrijen staan scheef en ${lange} koppen lopen over meer dan twee regels.\n`,
+  `${scheve} scheve kaartrijen, ${lange} koppen buiten de twee regels,` +
+    ` ${losse} intro's van maar een regel.\n`,
 );
 
-for (const { pad, rijen, koppen } of perPagina) {
+for (const { pad, rijen, koppen, intros } of perPagina) {
   console.log(pad);
   for (const rij of rijen) {
     console.log(`  kaartrij, regels ${rij.regels.join(" / ")}`);
     for (const t of rij.teksten) {
       console.log(
-        `    ${String(t.length).padStart(3)} tekens  ${t.slice(0, 72)}`,
+        `    ${String(t.length).padStart(3)} tekens  ${t.slice(0, 70)}`,
       );
     }
   }
   for (const k of koppen) {
-    console.log(`  ${k.tag} over ${k.regels} regels: ${k.tekst.slice(0, 72)}`);
+    const wat = k.kort
+      ? `${k.tag} kort maar op twee regels`
+      : `${k.tag} over ${k.regels} regels`;
+    console.log(`  ${wat}: ${k.tekst.slice(0, 66)}`);
+  }
+  for (const i of intros) {
+    console.log(
+      `  intro van een regel bij "${i.bij}": ${i.tekst.slice(0, 60)}`,
+    );
   }
   console.log("");
 }

@@ -129,8 +129,10 @@ export default function Raster() {
               <div>
                 <Label>{g.label}</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
+                  {/* Voorwaardelijk breken, net als in SectieKop: een korte kop hoort
+                      op een regel, een lange mag afbreken op de bedoelde plek. */}
                   {g.kop}
-                  <br />
+                  {(g.kop + " " + g.accent).length > 24 ? <br /> : " "}
                   <span className="diba-accent">{g.accent}</span>
                 </h2>
               </div>

@@ -58,8 +58,7 @@ const VLAG = /\[(COPY|PRIJS|BEELD|GEGEVEN|MEDISCHE|BESLUIT)-[A-Z-]*[^\]]*\]/g;
  * Wat overblijft is de u in kleine letters, want productnamen schrijven hem groot, plus
  * de u aan het begin van een zin als er een gewoon woord achteraan komt.
  */
-const U_VORM =
-  /(^|[\s(])u(?=[\s.,;:!?)])|\buw\b|(?:^|[.!?"]\s+)U\s+[a-z]/gu;
+const U_VORM = /(^|[\s(])u(?=[\s.,;:!?)])|\buw\b|(?:^|[.!?"]\s+)U\s+[a-z]/gu;
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });

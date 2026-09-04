@@ -73,7 +73,7 @@ export default function PcosPage() {
               <span className="text-[var(--t-muted)]">PCOS</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               PCOS behandelen
               <br />
               <span className="diba-accent">wij niet.</span>

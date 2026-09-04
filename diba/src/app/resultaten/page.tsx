@@ -74,7 +74,7 @@ export default function ResultatenPage() {
               <span className="text-[var(--t-muted)]">Resultaten</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Hier staan nog geen
               <br />
               <span className="diba-accent">voor-en-na-foto&apos;s.</span>

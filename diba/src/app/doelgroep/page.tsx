@@ -70,7 +70,7 @@ export default function DoelgroepHubPage() {
               <span className="text-[var(--t-muted)]">Voor wie</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Voor wie onze
               <br />
               <span className="diba-accent">behandelingen zijn</span>

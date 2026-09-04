@@ -90,10 +90,8 @@ export default function VoorwaardenPage() {
               </span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              Algemene
-              <br />
-              <span className="diba-accent">voorwaarden</span>
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
+              Algemene <span className="diba-accent">voorwaarden</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

@@ -91,7 +91,7 @@ export default function CookiePage() {
               <span className="text-[var(--t-muted)]">Cookiebeleid</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Welke cookies
               <br />
               <span className="diba-accent">we gebruiken</span>
@@ -190,9 +190,7 @@ export default function CookiePage() {
           <div>
             <Label>Vragen hierover</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Stel ze
-              <br />
-              <span className="diba-accent">gewoon.</span>
+              Stel ze <span className="diba-accent">gewoon.</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

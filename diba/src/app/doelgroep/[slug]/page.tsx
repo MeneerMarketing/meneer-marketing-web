@@ -53,7 +53,7 @@ export async function generateMetadata({
 function Sterkop({ tekst }: { tekst: string }) {
   const delen = tekst.split("*");
   return (
-    <h1 className="diba-display-l mt-6 max-w-[15ch]">
+    <h1 className="diba-display-l mt-6 max-w-[21ch]">
       {delen.map((d, i) =>
         i % 2 === 1 ? (
           <span key={i} className="diba-accent">

@@ -336,15 +336,20 @@ if (metaFouten.length || zonder.length) {
  * vorig jaar live te staan.
  */
 const site = readFileSync("src/lib/site.ts", "utf8");
-const gecontroleerd = site.match(/CIJFERS_GECONTROLEERD_OP = "(\d{4}-\d{2}-\d{2})"/);
+const gecontroleerd = site.match(
+  /CIJFERS_GECONTROLEERD_OP = "(\d{4}-\d{2}-\d{2})"/,
+);
 let cijfersVerouderd = false;
 
 if (!gecontroleerd) {
-  console.log("\nGeen CIJFERS_GECONTROLEERD_OP in site.ts; datum van de cijfers onbekend.\n");
+  console.log(
+    "\nGeen CIJFERS_GECONTROLEERD_OP in site.ts; datum van de cijfers onbekend.\n",
+  );
   cijfersVerouderd = true;
 } else {
   const maanden =
-    (Date.now() - new Date(gecontroleerd[1]).getTime()) / (1000 * 60 * 60 * 24 * 30.44);
+    (Date.now() - new Date(gecontroleerd[1]).getTime()) /
+    (1000 * 60 * 60 * 24 * 30.44);
   if (maanden > 6) {
     console.log(
       `\nDe cijfers zijn voor het laatst nagekeken op ${gecontroleerd[1]}, ` +

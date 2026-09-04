@@ -18,11 +18,15 @@ async function capture() {
 
   for (const { name, path: pagePath } of pages) {
     {
-      const page = await browser.newPage({ viewport: { width: 380, height: 812 } });
+      const page = await browser.newPage({
+        viewport: { width: 380, height: 812 },
+      });
       await page.goto(`${base}${pagePath}`, { waitUntil: "networkidle" });
       await page.waitForTimeout(500);
       if (name === "acne-pillar") {
-        await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+        await page.evaluate(() =>
+          window.scrollTo(0, document.body.scrollHeight),
+        );
         await page.waitForTimeout(400);
       }
       await page.screenshot({
@@ -33,7 +37,9 @@ async function capture() {
     }
 
     {
-      const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+      const page = await browser.newPage({
+        viewport: { width: 1440, height: 900 },
+      });
       await page.goto(`${base}${pagePath}`, { waitUntil: "networkidle" });
       await page.waitForTimeout(500);
       await page.screenshot({

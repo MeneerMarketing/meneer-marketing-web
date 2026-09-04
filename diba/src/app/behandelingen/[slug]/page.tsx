@@ -135,7 +135,7 @@ export default async function BehandelingPage({ params }: PageProps) {
             <span className="text-[var(--t-muted)]">{b.naam}</span>
           </nav>
 
-          <h1 className="diba-display-l mt-6 max-w-[16ch]">{b.naam}</h1>
+          <h1 className="diba-display-l mt-6 max-w-[21ch]">{b.naam}</h1>
 
           {/* ── De rij: wat je ziet, naast wat je moet weten ── */}
           <div

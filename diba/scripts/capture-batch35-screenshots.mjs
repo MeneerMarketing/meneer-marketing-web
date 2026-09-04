@@ -12,7 +12,9 @@ async function capture() {
   const browser = await chromium.launch();
 
   {
-    const page = await browser.newPage({ viewport: { width: 380, height: 812 } });
+    const page = await browser.newPage({
+      viewport: { width: 380, height: 812 },
+    });
     await page.goto(url, { waitUntil: "networkidle" });
     await page.waitForTimeout(500);
     await page.screenshot({
@@ -23,7 +25,9 @@ async function capture() {
   }
 
   {
-    const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+    });
     await page.goto(url, { waitUntil: "networkidle" });
     await page.waitForTimeout(500);
     await page.screenshot({

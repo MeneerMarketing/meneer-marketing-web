@@ -86,7 +86,7 @@ export default function HuidverkleuringPage() {
             <span className="text-[var(--t-muted)]">Huidverkleuring</span>
           </nav>
 
-          <h1 className="diba-display-l mt-6 max-w-[16ch]">
+          <h1 className="diba-display-l mt-6 max-w-[21ch]">
             Verkleuringen
             <br />
             <span className="diba-accent">op je huid</span>

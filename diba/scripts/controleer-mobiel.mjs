@@ -95,7 +95,10 @@ for (const { pad, voorvoegsel } of OVERZICHTEN) {
 const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
   .map(
     (m) =>
-      "/" + relative(join(process.cwd(), "src", "app"), m).split(sep).join("/"),
+      "/" +
+      relative(join(process.cwd(), "src", "app"), m)
+        .split(sep)
+        .join("/"),
   )
   .map((p) => (p === "/." ? "/" : p))
   .filter((p) => !p.includes("[") && !p.includes("("));
@@ -129,7 +132,10 @@ const METEN = ({ TIKDOEL, LETTER, TUSSENRUIMTE }) => {
      attribuut en niet de eigenschap. */
   const omschrijf = (el) =>
     String(
-      el.innerText || el.getAttribute("aria-label") || el.getAttribute("class") || "",
+      el.innerText ||
+        el.getAttribute("aria-label") ||
+        el.getAttribute("class") ||
+        "",
     )
       .replace(/\s+/g, " ")
       .trim()
@@ -151,8 +157,11 @@ const METEN = ({ TIKDOEL, LETTER, TUSSENRUIMTE }) => {
       ouder = ouder.parentElement;
     }
     if (!ouder) return false;
-    if (!/^(P|LI|DD|DT|TD|BLOCKQUOTE|FIGCAPTION)$/.test(ouder.tagName)) return false;
-    return (ouder.innerText || "").trim().length > el.innerText.trim().length + 8;
+    if (!/^(P|LI|DD|DT|TD|BLOCKQUOTE|FIGCAPTION)$/.test(ouder.tagName))
+      return false;
+    return (
+      (ouder.innerText || "").trim().length > el.innerText.trim().length + 8
+    );
   };
 
   /* data-essentiele-maat: daar bepaalt de voorstelling de maat van het doel.
@@ -215,7 +224,9 @@ const METEN = ({ TIKDOEL, LETTER, TUSSENRUIMTE }) => {
       if (!zelfdeRegel) continue;
       const gat = b.left > a.left ? b.left - a.right : a.left - b.right;
       if (gat >= 0 && gat < TUSSENRUIMTE) {
-        dichtbij.push(`${Math.round(gat)}px tussen "${omschrijf(doelen[i])}" en "${omschrijf(doelen[j])}"`);
+        dichtbij.push(
+          `${Math.round(gat)}px tussen "${omschrijf(doelen[i])}" en "${omschrijf(doelen[j])}"`,
+        );
       }
     }
   }
@@ -244,7 +255,8 @@ const METEN = ({ TIKDOEL, LETTER, TUSSENRUIMTE }) => {
      uitgevallen. */
   const isLabel = (el) => {
     const s = getComputedStyle(el);
-    if (s.textTransform === "uppercase" && parseFloat(s.letterSpacing) > 0) return true;
+    if (s.textTransform === "uppercase" && parseFloat(s.letterSpacing) > 0)
+      return true;
     /* Een telling of een typenummer is geen zin maar een teken: de 10 in een badge, de 56
        naast de reviews, de II van een huidtype. Die lees je als symbool en niet als tekst,
        en ze staan altijd naast iets dat wel op leesmaat staat. */
@@ -294,7 +306,10 @@ const METEN = ({ TIKDOEL, LETTER, TUSSENRUIMTE }) => {
       })
     )
       continue;
-    if (el.scrollHeight > el.clientHeight + 2 && el.innerText.trim().length > 0) {
+    if (
+      el.scrollHeight > el.clientHeight + 2 &&
+      el.innerText.trim().length > 0
+    ) {
       afgeknipt.push(
         `${el.scrollHeight - el.clientHeight}px weg bij "${omschrijf(el)}"`,
       );
@@ -355,8 +370,12 @@ if (bevindingen.length) {
     if (!perSoort.has(soort)) perSoort.set(soort, []);
     perSoort.get(soort).push(b);
   }
-  console.error(`${bevindingen.length} bevinding(en) op ${paden.length} pagina's\n`);
-  for (const [soort, lijst] of [...perSoort].sort((a, b) => b[1].length - a[1].length)) {
+  console.error(
+    `${bevindingen.length} bevinding(en) op ${paden.length} pagina's\n`,
+  );
+  for (const [soort, lijst] of [...perSoort].sort(
+    (a, b) => b[1].length - a[1].length,
+  )) {
     console.error(`── ${soort} (${lijst.length})`);
     /* Standaard twaalf per soort, want dezelfde fout op veertig pagina's lees je niet
        veertig keer. ALLES=1 zet de rem eraf als je wil weten of het er echt veertig

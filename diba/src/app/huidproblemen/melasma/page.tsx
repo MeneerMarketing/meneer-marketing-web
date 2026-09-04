@@ -93,9 +93,7 @@ export default function MelasmaPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Melasma
-              <br />
-              <span className="diba-accent">behandelen</span>
+              Melasma <span className="diba-accent">behandelen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

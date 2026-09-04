@@ -28,7 +28,9 @@ const slugs = await page.evaluate(() =>
 let metVarianten = 0;
 
 for (const slug of slugs) {
-  await page.goto(`${BASIS}/behandelingen/${slug}`, { waitUntil: "networkidle" });
+  await page.goto(`${BASIS}/behandelingen/${slug}`, {
+    waitUntil: "networkidle",
+  });
 
   const groep = page.getByRole("group", { name: "Kies een variant" });
   if ((await groep.count()) === 0) continue;
@@ -36,7 +38,11 @@ for (const slug of slugs) {
 
   const knoppen = groep.getByRole("button");
   const aantal = await knoppen.count();
-  const prijs = page.locator("dl").locator("xpath=..").locator(".diba-card-title").last();
+  const prijs = page
+    .locator("dl")
+    .locator("xpath=..")
+    .locator(".diba-card-title")
+    .last();
 
   for (let i = 0; i < aantal; i++) {
     await knoppen.nth(i).click();
@@ -74,7 +80,9 @@ for (const slug of slugs) {
 
 // Geen vlaggen op het scherm, op geen enkele behandelpagina.
 for (const slug of slugs.slice(0, 8)) {
-  await page.goto(`${BASIS}/behandelingen/${slug}`, { waitUntil: "domcontentloaded" });
+  await page.goto(`${BASIS}/behandelingen/${slug}`, {
+    waitUntil: "domcontentloaded",
+  });
   const tekst = await page.locator("main").innerText();
   const vlaggen = tekst.match(/\[[A-Z-]+\]/g);
   if (vlaggen) problemen.push(`${slug}: vlag zichtbaar ${vlaggen.join(", ")}`);
@@ -86,4 +94,6 @@ if (problemen.length) {
   console.error("PROBLEMEN:\n" + problemen.map((p) => ` - ${p}`).join("\n"));
   process.exit(1);
 }
-console.log(`ok — ${slugs.length} behandelingen, ${metVarianten} met een variantkiezer`);
+console.log(
+  `ok — ${slugs.length} behandelingen, ${metVarianten} met een variantkiezer`,
+);

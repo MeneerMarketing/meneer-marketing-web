@@ -32,7 +32,9 @@ for (const [slug, mechaniek] of PROEF) {
 
   const venster = page.locator("svg[aria-label*='Doorsnede']").first();
   await venster.waitFor();
-  const kaart = page.locator("svg[aria-label*='Doorsnede']").locator("xpath=../..");
+  const kaart = page
+    .locator("svg[aria-label*='Doorsnede']")
+    .locator("xpath=../..");
 
   // Vlaggen mogen nooit op het scherm staan.
   const tekst = await page.locator("main").innerText();
@@ -41,19 +43,23 @@ for (const [slug, mechaniek] of PROEF) {
 
   const stappen = page.locator("ol li button");
   const aantal = await stappen.count();
-  if (aantal !== 3) problemen.push(`${slug}: ${aantal} stappen in plaats van 3`);
+  if (aantal !== 3)
+    problemen.push(`${slug}: ${aantal} stappen in plaats van 3`);
 
   for (let i = 0; i < aantal; i++) {
     await stappen.nth(i).click();
     await page.waitForTimeout(1100);
-    await kaart.screenshot({ path: `${UIT}/${mechaniek}-${slug}-stap${i + 1}.png` });
+    await kaart.screenshot({
+      path: `${UIT}/${mechaniek}-${slug}-stap${i + 1}.png`,
+    });
   }
 
   // Na een klik moet het uit zichzelf stil blijven staan.
   const voor = await venster.getAttribute("aria-label");
   await page.waitForTimeout(4200);
   const na = await venster.getAttribute("aria-label");
-  if (voor !== na) problemen.push(`${slug}: loopt door na een klik (${voor} → ${na})`);
+  if (voor !== na)
+    problemen.push(`${slug}: loopt door na een klik (${voor} → ${na})`);
 }
 
 // Het overzicht: filteren en de as.
@@ -61,16 +67,21 @@ await page.goto(`${BASIS}/apparatuur`, { waitUntil: "networkidle" });
 const as = page.locator("main section").nth(2);
 await as.screenshot({ path: `${UIT}/overzicht-as.png` });
 
-const chips = page.getByRole("group", { name: "Filter op mechaniek" }).getByRole("button");
+const chips = page
+  .getByRole("group", { name: "Filter op mechaniek" })
+  .getByRole("button");
 await chips.nth(2).click();
 await page.waitForTimeout(600);
 await as.screenshot({ path: `${UIT}/overzicht-as-gefilterd.png` });
 
-const rijenNa = await page.locator("main ul li a[href^='/apparatuur/']").count();
+const rijenNa = await page
+  .locator("main ul li a[href^='/apparatuur/']")
+  .count();
 if (rijenNa === 0) problemen.push("overzicht: filter laat niets over");
 
 const breed = await page.evaluate(
-  () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  () =>
+    document.documentElement.scrollWidth - document.documentElement.clientWidth,
 );
 if (breed > 0) problemen.push(`overzicht: ${breed}px horizontale overloop`);
 

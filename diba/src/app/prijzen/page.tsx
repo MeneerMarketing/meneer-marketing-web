@@ -56,7 +56,7 @@ export default function PrijzenPage() {
               <span className="text-[var(--t-muted)]">Prijzen</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[14ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Alle prijzen
               <br />
               <span className="diba-accent">op één plek</span>

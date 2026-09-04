@@ -801,8 +801,10 @@ body:has(.figma-home) {
   }
 
   @media (min-width: 640px) {
+    /* Zelfde reden als bij display-m hieronder: 72 pixels past bij 1280 niet in een
+       tweekolomskop, waardoor koppen van twintig tekens afbreken. */
     .diba-display-l {
-      font-size: 4.5rem;
+      font-size: 3.5rem;
     }
 
     /* Stond hier op 3.75rem, dus een sprong van 36 naar 60 pixels op 640 breed. In een
@@ -817,6 +819,10 @@ body:has(.figma-home) {
   }
 
   @media (min-width: 1536px) {
+    .diba-display-l {
+      font-size: 4.5rem;
+    }
+
     .diba-display-m {
       font-size: 3.75rem;
     }

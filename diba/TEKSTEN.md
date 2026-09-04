@@ -1368,7 +1368,7 @@ Licht van boven maakt van elke holte een donkere plek. Verdwijnt de kring bij li
 
 **Drie oorzaken**
 
-De drie oorzaken naast elkaar, met per soort wat eraan te doen is.
+De drie oorzaken naast elkaar, met per soort wat je ziet, waar het vandaan komt en wat er in de kliniek aan te doen is.
 
 - Dit is pigment PERI-ORBITALE HYPERPIGMENTATIE Er zit meer kleur in de huid onder je oog. Dat kan erfelijk zijn, kan volgen op eczeem of op wrijven, en komt vaker voor bij een donkere huid. DIT BEHANDELEN WIJ
 
@@ -7134,29 +7134,29 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 > knop: 1 APPARAAT Kou en druk Vaatjes prikkelen zonder ze te raken. Grijpt aan op bloedvaten
 
-- METEN EVE-M De huidscanner waar elk traject mee begint. Meet, behandelt niet. Consult met EVE-M huidanalyse
+- METEN EVE-M De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets. Consult met EVE-M huidanalyse
 
-- LASER FOTONA Fotona TimeWalker Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · NightLase
+- LASER FOTONA Fotona TimeWalker Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · NightLase
 
-- LASER CANDELA Gentle Laser Pro-U De laser voor ontharing. Mikt op het pigment in de haarwortel. Laserontharing
+- LASER CANDELA Gentle Laser Pro-U De laser die we voor ontharing gebruiken. Hij mikt op het pigment in de haarwortel, en de huid eromheen wordt gekoeld. Laserontharing
 
-- LICHT CANDELA Nordlys IPL: een bereik aan golflengtes in plaats van één. Breed en ondiep. Nordlys IPL
+- LICHT CANDELA Nordlys IPL werkt met een bereik aan golflengtes in plaats van één. Daardoor is hij breed inzetbaar en komt hij minder diep dan een laser. Nordlys IPL
 
-- LICHT LUMI LUMI 8-LED LED zonder naalden of zuren. Rood, geel en bijna-infrarood in een pulscyclus. Lumi 8 LED
+- LICHT LUMI LUMI 8-LED LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid. Lumi 8 LED
 
 - MICRONEEDLING SKINPEN SkinPen CIT Deze medisch gecertificeerde microneedlingbehandeling werkt met gecontroleerde prikjes in de huid. SkinPen Microneedling
 
-- MICRONEEDLING DERMAPEN Dermapen 4 Microneedling met trillende naaldjes. Zelfde principe, ander apparaat. Dermapen 4
+- MICRONEEDLING DERMAPEN Dermapen 4 Microneedling met trillende naaldjes. Hetzelfde principe als de SkinPen, met een ander motorontwerp en meer prikken per seconde. Dermapen 4
 
 - INJECTIE U225 U225 intradermale injector Brengt werkzame stoffen in de huid in plaats van erop, automatisch en regelmatig. Skinboosters en mesotherapie · XL Hair
 
-- OVERIG HYDRAFACIAL Hydrafacial syndeo Reinigen, exfoliëren, poriën leegzuigen en voeden in één doorloop. HydraFacial
+- OVERIG HYDRAFACIAL Hydrafacial syndeo Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren hier in één doorgang, met hetzelfde handstuk. HydraFacial
 
-- OVERIG COOLIFTING CooLift Cryo Therapy CO2 van min twintig graden onder hoge druk. Vijf minuten, direct effect. CooLift Cryo Therapy
+- OVERIG COOLIFTING CooLift Cryo Therapy Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten. CooLift Cryo Therapy
 
 - OVERIG DERMAPLANEPRO Dermaplane pro Een chirurgisch mesje onder 45 graden. Geen zuren, dus ook bij een gevoelige huid. Dermaplaning
 
-- OVERIG SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC Peelinglijnen Geen apparaat maar vier merken, in drie niveaus van sterkte. Medische peelings · Cosmelan en dermamelan · Happy Intim
+- OVERIG SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC Peelinglijnen Geen apparaat maar vier merken peelings, in drie niveaus van sterkte. Welke er past, hangt af van je huid op dat moment. Medische peelings · Cosmelan en dermamelan · Happy Intim
 
 **Zoek op wat je wilt bereiken**
 
@@ -7172,11 +7172,11 @@ Wie begint bij de techniek komt uit bij waar het meest over geschreven is. Dat i
 
 **Tabbladtitel:** CooLift Cryo Therapy: het apparaat | Diba Clinics
 
-**Google-omschrijving:** CO2 van min twintig graden onder hoge druk. Vijf minuten, direct effect.
+**Google-omschrijving:** Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten.
 
 **COOLIFT CRYO THERAPY**
 
-CO2 van min twintig graden onder hoge druk. Vijf minuten, direct effect.
+Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten.
 
 Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper.
 
@@ -7282,11 +7282,11 @@ Twee klinieken met dezelfde CooLift Cryo Therapy geven niet hetzelfde resultaat.
 
 **Tabbladtitel:** Dermapen 4: het apparaat | Diba Clinics
 
-**Google-omschrijving:** Microneedling met trillende naaldjes. Zelfde principe, ander apparaat.
+**Google-omschrijving:** Microneedling met trillende naaldjes. Hetzelfde principe als de SkinPen, met een ander motorontwerp en meer prikken per seconde.
 
 **DERMAPEN 4**
 
-Microneedling met trillende naaldjes. Zelfde principe, ander apparaat.
+Microneedling met trillende naaldjes. Hetzelfde principe als de SkinPen, met een ander motorontwerp en meer prikken per seconde.
 
 Een microneedlingapparaat dat met minuscule, trillende naaldjes microscopisch kleine kanaaltjes in de huid maakt om het natuurlijke herstelproces te stimuleren. Dat stimuleert de collageenaanmaak, waardoor de huid steviger, gladder en egaler wordt.
 
@@ -7508,11 +7508,11 @@ Twee klinieken met dezelfde Dermaplane pro geven niet hetzelfde resultaat. Wat t
 
 **Tabbladtitel:** EVE-M: het apparaat | Diba Clinics
 
-**Google-omschrijving:** De huidscanner waar elk traject mee begint. Meet, behandelt niet.
+**Google-omschrijving:** De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets.
 
 **EVE-M**
 
-De huidscanner waar elk traject mee begint. Meet, behandelt niet.
+De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets.
 
 De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar.
 
@@ -7604,11 +7604,11 @@ Twee klinieken met dezelfde EVE-M geven niet hetzelfde resultaat. Wat telt is wa
 
 **Tabbladtitel:** Fotona TimeWalker: het apparaat | Diba Clinics
 
-**Google-omschrijving:** Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase.
+**Google-omschrijving:** Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase.
 
 **FOTONA TIMEWALKER**
 
-Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase.
+Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase.
 
 Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit door de mondholte en van buitenaf over de huid. Elke behandeling op dit apparaat mikt op één ding, en daarom er meerdere namen op staan.
 
@@ -7724,11 +7724,11 @@ Twee klinieken met dezelfde Fotona TimeWalker geven niet hetzelfde resultaat. Wa
 
 **Tabbladtitel:** Gentle Laser Pro-U: het apparaat | Diba Clinics
 
-**Google-omschrijving:** De laser voor ontharing. Mikt op het pigment in de haarwortel.
+**Google-omschrijving:** De laser die we voor ontharing gebruiken. Hij mikt op het pigment in de haarwortel, en de huid eromheen wordt gekoeld.
 
 **GENTLE LASER PRO-U**
 
-De laser voor ontharing. Mikt op het pigment in de haarwortel.
+De laser die we voor ontharing gebruiken. Hij mikt op het pigment in de haarwortel, en de huid eromheen wordt gekoeld.
 
 Een laser die ongewenste haargroei bij de kern aanpakt, ingegroeide haren en irritatie vermindert en zorgt voor een langdurig gladde en rustige huid. Wat de energie opneemt warmt op, de rest niet.
 
@@ -7832,11 +7832,11 @@ Twee klinieken met dezelfde Gentle Laser Pro-U geven niet hetzelfde resultaat. W
 
 **Tabbladtitel:** Hydrafacial syndeo: het apparaat | Diba Clinics
 
-**Google-omschrijving:** Reinigen, exfoliëren, poriën leegzuigen en voeden in één doorloop.
+**Google-omschrijving:** Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren hier in één doorgang, met hetzelfde handstuk.
 
 **HYDRAFACIAL SYNDEO**
 
-Reinigen, exfoliëren, poriën leegzuigen en voeden in één doorloop.
+Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren hier in één doorgang, met hetzelfde handstuk.
 
 Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van.
 
@@ -7946,11 +7946,11 @@ Twee klinieken met dezelfde Hydrafacial syndeo geven niet hetzelfde resultaat. W
 
 **Tabbladtitel:** LUMI 8-LED: het apparaat | Diba Clinics
 
-**Google-omschrijving:** LED zonder naalden of zuren. Rood, geel en bijna-infrarood in een pulscyclus.
+**Google-omschrijving:** LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.
 
 **LUMI 8-LED**
 
-LED zonder naalden of zuren. Rood, geel en bijna-infrarood in een pulscyclus.
+LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.
 
 Een niet-invasief LED-toestel dat werkt met een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went, wat bij een constante dosis wel gebeurt. Wordt meestal als toevoeging bij een andere behandeling gedaan.
 
@@ -8060,11 +8060,11 @@ Twee klinieken met dezelfde LUMI 8-LED geven niet hetzelfde resultaat. Wat telt 
 
 **Tabbladtitel:** Nordlys: het apparaat | Diba Clinics
 
-**Google-omschrijving:** IPL: een bereik aan golflengtes in plaats van één. Breed en ondiep.
+**Google-omschrijving:** IPL werkt met een bereik aan golflengtes in plaats van één. Daardoor is hij breed inzetbaar en komt hij minder diep dan een laser.
 
 **NORDLYS**
 
-IPL: een bereik aan golflengtes in plaats van één. Breed en ondiep.
+IPL werkt met een bereik aan golflengtes in plaats van één. Daardoor is hij breed inzetbaar en komt hij minder diep dan een laser.
 
 IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser.
 
@@ -8176,11 +8176,11 @@ Twee klinieken met dezelfde Nordlys geven niet hetzelfde resultaat. Wat telt is 
 
 **Tabbladtitel:** Peelinglijnen: het apparaat | Diba Clinics
 
-**Google-omschrijving:** Geen apparaat maar vier merken, in drie niveaus van sterkte.
+**Google-omschrijving:** Geen apparaat maar vier merken peelings, in drie niveaus van sterkte. Welke er past, hangt af van je huid op dat moment.
 
 **PEELINGLIJNEN**
 
-Geen apparaat maar vier merken, in drie niveaus van sterkte.
+Geen apparaat maar vier merken peelings, in drie niveaus van sterkte. Welke er past, hangt af van je huid op dat moment.
 
 De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker.
 
@@ -11497,4 +11497,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5324 tekstblokken · ongeveer 79.827 woorden._
+_105 pagina's · 5324 tekstblokken · ongeveer 79.991 woorden._

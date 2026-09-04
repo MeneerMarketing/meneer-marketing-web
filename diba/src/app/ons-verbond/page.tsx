@@ -63,7 +63,7 @@ export default function OnsVerbondPage() {
             <span className="text-[var(--t-muted)]">Ons verbond</span>
           </nav>
 
-          <h1 className="diba-display-l mt-6 max-w-[16ch]">
+          <h1 className="diba-display-l mt-6 max-w-[21ch]">
             Tien dingen
             <br />
             <span className="diba-accent">die wij niet doen.</span>

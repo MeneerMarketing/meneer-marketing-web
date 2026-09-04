@@ -89,7 +89,7 @@ export default function LaserontharingPage() {
               <span className="text-[var(--t-muted)]">Laserontharing</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Laserontharing
               <br />
               <span className="diba-accent">in Rotterdam</span>

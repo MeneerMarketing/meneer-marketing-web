@@ -77,7 +77,7 @@ export default function NazorgPage() {
               <span className="text-[var(--t-muted)]">Nazorg</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[14ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Mag ik morgen
               <br />
               <span className="diba-accent">weer sporten?</span>

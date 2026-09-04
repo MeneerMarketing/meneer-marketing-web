@@ -84,11 +84,15 @@ export function SectieKop({
         {/* 18ch kneep de kop af, en met de accentregel eronder kwam je dan op drie
             regels uit. Drieendertig sectiekoppen op de site hadden dat. 26ch laat de
             eerste regel heel, en de kolom is er breed genoeg voor. */}
+        {/* De regelafbreking tussen kop en accent stond er altijd, ook bij een kop van
+            twee woorden. "Drie oorzaken" werd dan "Drie" met "oorzaken" eronder, en dat
+            oogt als een kop die is afgekapt. Onder de twintig tekens passen ze samen op
+            een regel en laten we de browser het breken bepalen. */}
         <h2 className="diba-display-m mt-4 max-w-[26ch]">
           {kop}
           {accent ? (
             <>
-              <br />
+              {(kop + " " + accent).length > 24 ? <br /> : " "}
               <span
                 className={opDonker ? "diba-accent-on-dark" : "diba-accent"}
               >
@@ -444,9 +448,7 @@ export function PillarCta({
         <div>
           <Label opDonker>Huidconsult</Label>
           <h2 className="diba-display-l mt-5">
-            {kop}
-            <br />
-            <span className="diba-accent-on-dark">{accent}</span>
+            {kop} <span className="diba-accent-on-dark">{accent}</span>
           </h2>
         </div>
         <div className="flex flex-col justify-end">

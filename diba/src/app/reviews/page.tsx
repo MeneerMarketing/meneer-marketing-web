@@ -79,7 +79,7 @@ export default function ReviewsPage() {
               <span className="text-[var(--t-muted)]">Reviews</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Wat klanten
               <br />
               <span className="diba-accent">over ons schrijven</span>

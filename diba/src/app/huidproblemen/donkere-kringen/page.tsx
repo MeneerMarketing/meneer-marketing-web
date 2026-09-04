@@ -169,7 +169,7 @@ export default function DonkereKringenPage() {
             label="De drie types"
             kop="Drie"
             accent="oorzaken"
-            intro="De drie oorzaken naast elkaar, met per soort wat eraan te doen is."
+            intro="De drie oorzaken naast elkaar, met per soort wat je ziet, waar het vandaan komt en wat er in de kliniek aan te doen is."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">

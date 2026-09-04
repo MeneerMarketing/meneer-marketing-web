@@ -58,16 +58,25 @@ const BASIS = process.env.BASIS ?? "http://localhost:3010";
 const HOOFDSTUKKEN = [
   {
     naam: "De ingang",
-    test: (p) => ["/", "/over-ons", "/ons-verhaal", "/team", "/contact"].includes(p),
+    test: (p) =>
+      ["/", "/over-ons", "/ons-verhaal", "/team", "/contact"].includes(p),
   },
   { naam: "Huidproblemen", test: (p) => p.startsWith("/huidproblemen") },
   { naam: "Behandelingen", test: (p) => p.startsWith("/behandelingen") },
   { naam: "Apparatuur", test: (p) => p.startsWith("/apparatuur") },
-  { naam: "Prijzen en vergoeding", test: (p) => p.startsWith("/prijzen") || p.startsWith("/vergoedingen") },
+  {
+    naam: "Prijzen en vergoeding",
+    test: (p) => p.startsWith("/prijzen") || p.startsWith("/vergoedingen"),
+  },
   {
     naam: "Juridisch en formeel",
     test: (p) =>
-      ["/algemene-voorwaarden", "/privacybeleid", "/cookiebeleid", "/klachten"].includes(p),
+      [
+        "/algemene-voorwaarden",
+        "/privacybeleid",
+        "/cookiebeleid",
+        "/klachten",
+      ].includes(p),
   },
   { naam: "Overig", test: () => true },
 ];
@@ -120,7 +129,10 @@ for (const { pad, voorvoegsel } of OVERZICHTEN) {
 const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
   .map(
     (m) =>
-      "/" + relative(join(process.cwd(), "src", "app"), m).split(sep).join("/"),
+      "/" +
+      relative(join(process.cwd(), "src", "app"), m)
+        .split(sep)
+        .join("/"),
   )
   .map((p) => (p === "/." ? "/" : p))
   .filter((p) => !p.includes("[") && !p.includes("("));
@@ -195,7 +207,11 @@ async function haalTekst(pad) {
 
       /* De bewijsstrip: staat op vrijwel elke pagina met dezelfde vier getallen. */
       if (/^(2017|10\.000\+|55\.000\+|3\.883)$/.test(tekst)) continue;
-      if (/^(ACTIEF SINDS|GEHOLPEN KLANTEN|BEHANDELINGEN|KLANTREVIEWS)$/i.test(tekst))
+      if (
+        /^(ACTIEF SINDS|GEHOLPEN KLANTEN|BEHANDELINGEN|KLANTREVIEWS)$/i.test(
+          tekst,
+        )
+      )
         continue;
       if (gezien.has(tekst)) continue;
 
@@ -272,7 +288,8 @@ for (const hoofdstuk of HOOFDSTUKKEN) {
 
     regels.push(`### ${pad}`, "");
     regels.push(`**Tabbladtitel:** ${titel}`, "");
-    if (omschrijving) regels.push(`**Google-omschrijving:** ${omschrijving}`, "");
+    if (omschrijving)
+      regels.push(`**Google-omschrijving:** ${omschrijving}`, "");
 
     if (!blokken.length) {
       regels.push("_Geen tekst gevonden op deze pagina._", "");

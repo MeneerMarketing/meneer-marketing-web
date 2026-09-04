@@ -142,7 +142,7 @@ export default function ContactPage() {
             {/* Het adres stond in de displaymaat en liep over drie regels: de straatnaam
                 past daar niet op een regel. Het adres staat er hieronder toch al, dus de
                 kop mag zeggen waar de pagina over gaat. */}
-            <h1 className="diba-display-l mt-6 max-w-[14ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Contact en <span className="diba-accent">route</span>
             </h1>
 

@@ -77,9 +77,7 @@ export default function PsoriasisPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Psoriasis en
-              <br />
-              <span className="diba-accent">je huid</span>
+              Psoriasis en <span className="diba-accent">je huid</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

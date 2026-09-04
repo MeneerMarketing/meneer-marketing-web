@@ -27,7 +27,10 @@ import { join, relative, sep } from "node:path";
  * publiceert dus geen leeg veld maar een verzonnen getal.
  */
 
-const WORTEL = new URL("..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
+const WORTEL = new URL("..", import.meta.url).pathname.replace(
+  /^\/([A-Za-z]:)/,
+  "$1",
+);
 const BRON = join(WORTEL, "src");
 const UIT = join(WORTEL, "NAKIJKLIJST.md");
 
@@ -194,7 +197,9 @@ for (const [eigenaar, vlaggen] of Object.entries(perEigenaar).sort()) {
     for (const [ond, rs] of Object.entries(perOnderwerp).sort()) {
       md += `\n**${ond}** (${rs.length})\n\n`;
       for (const r of rs) {
-        md += r.zin ? `- ${r.zin}\n  <sub>${r.bestand}</sub>\n` : `- <sub>${r.bestand}</sub>\n`;
+        md += r.zin
+          ? `- ${r.zin}\n  <sub>${r.bestand}</sub>\n`
+          : `- <sub>${r.bestand}</sub>\n`;
       }
     }
   }

@@ -207,7 +207,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     },
     naam: "EVE-M",
     categorie: "meten",
-    kort: "De huidscanner waar elk traject mee begint. Meet, behandelt niet.",
+    kort: "De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets.",
     wat: "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is",
@@ -275,7 +275,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Fotona TimeWalker",
     merk: "Fotona",
     categorie: "laser",
-    kort: "Laser die op meerdere dieptes werkt. Draagt 4D, SmoothEye, LipLase, VectorLift en NightLase.",
+    kort: "Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase.",
     wat: "Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit door de mondholte en van buitenaf over de huid. Elke behandeling op dit apparaat mikt op één ding, en daarom er meerdere namen op staan. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Verslapping en volumeverlies aanpakken zonder injectables",
@@ -361,7 +361,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Gentle Laser Pro-U",
     merk: "Candela",
     categorie: "laser",
-    kort: "De laser voor ontharing. Mikt op het pigment in de haarwortel.",
+    kort: "De laser die we voor ontharing gebruiken. Hij mikt op het pigment in de haarwortel, en de huid eromheen wordt gekoeld.",
     wat: "Een laser die ongewenste haargroei bij de kern aanpakt, ingegroeide haren en irritatie vermindert en zorgt voor een langdurig gladde en rustige huid. Wat de energie opneemt warmt op, de rest niet. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Haargroei op vrijwel elke zone van het lichaam",
@@ -446,7 +446,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Nordlys",
     merk: "Candela",
     categorie: "licht",
-    kort: "IPL: een bereik aan golflengtes in plaats van één. Breed en ondiep.",
+    kort: "IPL werkt met een bereik aan golflengtes in plaats van één. Daardoor is hij breed inzetbaar en komt hij minder diep dan een laser.",
     wat: "IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Roodheid en zichtbare vaatjes in het gelaat",
@@ -531,7 +531,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "LUMI 8-LED",
     merk: "Lumi",
     categorie: "licht",
-    kort: "LED zonder naalden of zuren. Rood, geel en bijna-infrarood in een pulscyclus.",
+    kort: "LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.",
     wat: "Een niet-invasief LED-toestel dat werkt met een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went, wat bij een constante dosis wel gebeurt. Wordt meestal als toevoeging bij een andere behandeling gedaan. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Roodheid en rosacea kalmeren",
@@ -616,7 +616,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Hydrafacial syndeo",
     merk: "HydraFacial",
     categorie: "overig",
-    kort: "Reinigen, exfoliëren, poriën leegzuigen en voeden in één doorloop.",
+    kort: "Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren hier in één doorgang, met hetzelfde handstuk.",
     wat: "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Een huid die er meteen frisser uit moet zien",
@@ -776,7 +776,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Dermapen 4",
     merk: "Dermapen",
     categorie: "needling",
-    kort: "Microneedling met trillende naaldjes. Zelfde principe, ander apparaat.",
+    kort: "Microneedling met trillende naaldjes. Hetzelfde principe als de SkinPen, met een ander motorontwerp en meer prikken per seconde.",
     wat: "Een microneedlingapparaat dat met minuscule, trillende naaldjes microscopisch kleine kanaaltjes in de huid maakt om het natuurlijke herstelproces te stimuleren. Dat stimuleert de collageenaanmaak, waardoor de huid steviger, gladder en egaler wordt. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Acnelittekens en grove poriën",
@@ -932,7 +932,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "CooLift Cryo Therapy",
     merk: "CooLifting",
     categorie: "overig",
-    kort: "CO2 van min twintig graden onder hoge druk. Vijf minuten, direct effect.",
+    kort: "Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten.",
     wat: "Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Een huid die er binnen een paar minuten strakker uit moet zien",
@@ -1088,7 +1088,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Peelinglijnen",
     merk: "Skin Tech Pharma, Image Skincare, ADO, Mesoestetic",
     categorie: "overig",
-    kort: "Geen apparaat maar vier merken, in drie niveaus van sterkte.",
+    kort: "Geen apparaat maar vier merken peelings, in drie niveaus van sterkte. Welke er past, hangt af van je huid op dat moment.",
     wat: "De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Oppervlakkige verkleuring lichter maken",

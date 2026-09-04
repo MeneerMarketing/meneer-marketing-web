@@ -19,7 +19,9 @@ const problemen = [];
 
 await page.goto(BASIS + PAD, { waitUntil: "networkidle" });
 
-const lijstKnoppen = page.getByRole("group", { name: "Prijslijst" }).getByRole("button");
+const lijstKnoppen = page
+  .getByRole("group", { name: "Prijslijst" })
+  .getByRole("button");
 if ((await lijstKnoppen.count()) !== 2) {
   problemen.push("prijslijstkeuze ontbreekt of heeft niet twee knoppen");
 }
@@ -44,7 +46,8 @@ async function naarGezicht() {
 }
 
 const damesRegels = await zoneRegels();
-if (damesRegels.length === 0) problemen.push("geen zones zichtbaar op de damespagina");
+if (damesRegels.length === 0)
+  problemen.push("geen zones zichtbaar op de damespagina");
 
 await naarGezicht();
 const damesGezicht = await zoneRegels();
@@ -63,14 +66,18 @@ const herenVoorhoofd = herenGezicht.find((r) => r.startsWith("Voorhoofd"));
 if (!damesVoorhoofd || !herenVoorhoofd) {
   problemen.push("voorhoofd staat niet op beide lijsten");
 } else if (damesVoorhoofd === herenVoorhoofd) {
-  problemen.push(`voorhoofd kost op beide lijsten hetzelfde: ${damesVoorhoofd}`);
+  problemen.push(
+    `voorhoofd kost op beide lijsten hetzelfde: ${damesVoorhoofd}`,
+  );
 }
 
 // Heren hebben geen benen of bikinilijn op hun tarievenlijst.
 const herenTekst = herenRegels.join(" ");
 for (const verboden of ["Bikinilijn", "Onderbenen", "Bovenbenen"]) {
   if (herenTekst.includes(verboden)) {
-    problemen.push(`${verboden} staat op de herenlijst maar niet in de tarieven`);
+    problemen.push(
+      `${verboden} staat op de herenlijst maar niet in de tarieven`,
+    );
   }
 }
 
@@ -94,7 +101,9 @@ const naWissel = await page.locator("aside").innerText();
 if (naWissel.includes("€") && !/€\s?0|Nog niet/.test(naWissel)) {
   const subtotaal = naWissel.match(/€\s?[\d.]+/);
   if (subtotaal && subtotaal[0].replace(/\D/g, "") !== "0") {
-    problemen.push(`na wisselen van lijst staat er nog een bedrag: ${subtotaal[0]}`);
+    problemen.push(
+      `na wisselen van lijst staat er nog een bedrag: ${subtotaal[0]}`,
+    );
   }
 }
 
@@ -114,13 +123,20 @@ if ((await pakketKnop.count()) > 0) {
   await pakketKnop.click();
   await page.waitForTimeout(300);
   const opbouw = await page.locator("aside").innerText();
-  if (!/Pakket A/i.test(opbouw)) problemen.push("pakket A komt niet in de opbouw");
+  if (!/Pakket A/i.test(opbouw))
+    problemen.push("pakket A komt niet in de opbouw");
 }
 
-await page.screenshot({ path: `${UIT}/configurator-dames.png`, fullPage: false });
+await page.screenshot({
+  path: `${UIT}/configurator-dames.png`,
+  fullPage: false,
+});
 await lijstKnoppen.nth(1).click();
 await page.waitForTimeout(500);
-await page.screenshot({ path: `${UIT}/configurator-heren.png`, fullPage: false });
+await page.screenshot({
+  path: `${UIT}/configurator-heren.png`,
+  fullPage: false,
+});
 
 await browser.close();
 
