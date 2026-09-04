@@ -924,13 +924,13 @@ In het huidconsult stellen we vast of het littekenweefsel is of kleur. Soms is d
 
 **Tabbladtitel:** Cellulitis: geen vet, maar bouw | Diba Clinics
 
-**Google-omschrijving:** Cellulitis komt door de bouw van je bindweefsel, niet door gewicht. Wat er wel en niet aan te veranderen valt, en welke behandelingen we ervoor doen.
+**Google-omschrijving:** Cellulitis behandelen met technieken die de doorbloeding en de stevigheid van het bindweefsel verbeteren. Wat er haalbaar is.
 
 **WAAROM CELLULITIS ONTSTAAT**
 
-Onder je huid lopen bindweefselschotjes. Bij vrouwen staan die overwegend rechtop, bij mannen kruisen ze elkaar. Dat ene verschil bepaalt of hetzelfde vet een glad oppervlak geeft of een patroon van kuiltjes.
+Cellulitis ontstaat doordat de bindweefselschotjes onder je huid bij vrouwen overwegend rechtop staan. Hetzelfde vet geeft daardoor een patroon van kuiltjes in plaats van een glad oppervlak.
 
-Daarmee valt alles op zijn plek: waarom slanke vrouwen het ook hebben, waarom sporten het niet weghaalt, en waarom niemand het kan verwijderen.
+We behandelen het met technieken die de doorbloeding en de stevigheid van het bindweefsel verbeteren. In de intake bespreken we wat er in jouw geval haalbaar is.
 
 > knop: KIJK ONDER DE HUID
 
@@ -940,7 +940,7 @@ Omdat cellulitis door de bouw van het bindweefsel ontstaat, zijn de mogelijkhede
 
 **Zelfde vet, ander oppervlak.**
 
-Twee doorsnedes naast elkaar, met één schuif die er in allebei evenveel vet in stopt. Links staan de bindweefselschotjes rechtop, rechts kruisen ze. Kijk naar de bovenranden: dat is het oppervlak dat je in de spiegel ziet.
+Twee doorsnedes naast elkaar met evenveel vet. Het verschil zit in de stand van de bindweefselschotjes eronder.
 
 KOMT VOORAL VOOR BIJ VROUWEN
 
@@ -964,9 +964,9 @@ Minder vet maakt de bolletjes kleiner, dus het reliëf wordt vlakker. Het patroo
 
 Het lichte vlak is vet, het vlak eromheen is bindweefsel en de groene balk onderin is spier. De bovenrand van dat middelste vlak is het oppervlak dat je in de spiegel ziet. Wat tussen de vetkamers zit, zijn de schotjes.
 
-**Vier dingen die je vast gehoord hebt.**
+**Vier misverstanden**
 
-Alle vier worden ze gebruikt om iets te verkopen, en alle vier vallen ze om zodra je weet dat het om de bouw gaat en niet om het vet.
+Alle vier vallen ze om zodra je weet dat cellulitis over de bouw van je onderhuid gaat en niet over je gewicht.
 
 - Het komt door afvalstoffen Er is geen ophoping van gifstoffen bij betrokken. Dat verhaal wordt gebruikt om drainerende behandelingen en thee te verkopen.
 
@@ -978,7 +978,7 @@ Alle vier worden ze gebruikt om iets te verkopen, en alle vier vallen ze om zodr
 
 **Wat helpt en wat we afraden**
 
-De laatste regel links is de enige op deze hele site die niet over je huid gaat, en misschien de belangrijkste van deze pagina.
+Cellulitis hangt samen met de bouw van je onderhuid. Dat het bij jou zichtbaar is, zegt niets over hoe je leeft.
 
 **DIT WERKT**
 
@@ -1602,13 +1602,13 @@ We meten vet en water apart, en vertellen je welke as bij jou beweegt. Zit je in
 
 **Tabbladtitel:** Eczeem: een cirkel, geen plek | Diba Clinics
 
-**Google-omschrijving:** Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij daarnaast doen, en hoe we dat samen afstemmen.
+**Google-omschrijving:** Bij eczeem werken we aan je huidbarrière, naast de behandeling van je huisarts. Hoe die kringloop van jeuk en krabben werkt.
 
 **ECZEEM: JEUK DIE BLIJFT TERUGKOMEN**
 
-Jeuk geeft krabben, krabben breekt je barrière, een kapotte barrière laat meer prikkels door, en die geven weer jeuk. Wie alleen naar de plek kijkt, behandelt één punt van een lus die daarna gewoon doordraait.
+Eczeem is een kringloop: jeuk geeft krabben, krabben breekt je huidbarrière, en een kapotte barrière laat meer prikkels door.
 
-Eczeem hoort bij je huisarts. Wij kunnen op één punt van die cirkel iets betekenen, en het is eerlijker om te laten zien welk punt dat is dan om te doen alsof we de rest ook kunnen.
+Wij werken aan die barrière, met behandelingen en verzorging die hem herstellen. De medicatie loopt via je huisarts, en we stemmen onze aanpak daarop af.
 
 > knop: BEKIJK DE CIRKEL
 
@@ -1618,7 +1618,7 @@ Er bestaat behandeling voor, en die begint daar. Hoe langer de cirkel draait, ho
 
 **De vier schakels**
 
-Elk punt in deze lus houdt de volgende in stand. Tik ze aan en kijk wie hem kan doorbreken. Bij drie van de vier zijn wij dat niet.
+Elk punt in deze kringloop houdt de volgende in stand. Wij werken aan de barrière, want dat is de schakel die we kunnen herstellen.
 
 DRAAIT DOOR TOT JE HEM BREEKT
 
@@ -1644,7 +1644,7 @@ Twee van de vier punten liggen buiten onze deur, en dat is geen bescheidenheid m
 
 **Drie dingen die hierop lijken.**
 
-Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is. Deze drie zien er verwant uit en vragen alle drie iets anders.
+Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is. Deze drie lijken erop en vragen iets anders.
 
 - Een uitgedroogde huid Trekkerig en ruw, maar zonder de jeuk die je uit je slaap houdt en zonder plekken die steeds op dezelfde plaats terugkomen. NAAR DE DROGE HUID
 
@@ -1654,7 +1654,7 @@ Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is
 
 **Wat helpt en wat we afraden**
 
-Het eerste kruisje rechts kost de meeste tijd: wachten met de huisarts omdat je eerst zelf iets wilt proberen.
+Wachten met de huisarts omdat je eerst zelf iets wilt proberen, kost meestal de meeste tijd.
 
 **DIT WERKT**
 
@@ -3684,21 +3684,21 @@ De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen vo
 
 **Tabbladtitel:** Poriën: wat er wel en niet aan te doen is | Diba Clinics
 
-**Google-omschrijving:** De doorsnede van een porie ligt vast in je aanleg. Wat je wel kunt veranderen is het oppervlak eromheen, en dat scheelt zichtbaar.
+**Google-omschrijving:** Grote poriën minder zichtbaar maken met peelings, microneedling en HydraFacial. Wat de huid eromheen bepaalt.
 
 **GROTE PORIËN IN JE GEZICHT**
 
-De doorsnede van een porie ligt vast in je aanleg. Wij beloven dus niet dat ze kleiner worden, want dat kan niemand waarmaken. Dat is meteen het meest gestelde ding op deze pagina uit de weg. Wat je wel ziet en wel kunt veranderen is de structuur van het oppervlak eromheen.
+De doorsnede van een porie ligt vast in je aanleg, maar hoe opvallend ze zijn hangt af van de huid eromheen. Daar valt veel aan te doen.
 
-Er zijn wel drie dingen die je echt kunt veranderen, en samen schelen die zoveel dat de meeste mensen denken dat hun poriën kleiner zijn geworden. Hieronder mag je ze zelf aanzetten.
+Met peelings, microneedling en een HydraFacial maken we de poriën leeg en de huid eromheen gladder. Samen zorgt dat ervoor dat ze een stuk minder opvallen.
 
 > knop: ZET DE DRIE KNOPPEN AAN
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zet ze aan en kijk wat er gebeurt.**
+**Drie dingen die poriën zichtbaar maken**
 
-Drie dingen bepalen hoe zichtbaar een porie is, en die kun je alle drie beïnvloeden. Er is ook een vierde knop. Die doet het niet, en dat is geen storing.
+Drie dingen bepalen hoe zichtbaar een porie is, en die zijn alle drie te beïnvloeden met behandeling en verzorging.
 
 Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn in elke stand precies even groot.
 
@@ -3714,9 +3714,9 @@ Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn in elke 
 
 Gevuld, uitgerekt en glanzend. Dit is het beeld waarmee mensen naar binnen lopen en waarvan ze denken dat de porie zelf te groot is.
 
-**Wat je ziet als je in de spiegel kijkt**
+**Vier beelden**
 
-Het vierde beeld is het meest gemaakte misverstand van deze pagina en het kost mensen sessies aan de verkeerde behandeling. Kies wat het dichtst bij jou komt.
+Het vierde beeld wordt het vaakst verward met grote poriën, en dat kost mensen sessies aan de verkeerde behandeling.
 
 - Zwarte puntjes Kleine donkere stipjes, vooral op de neus
 
@@ -3746,7 +3746,7 @@ Heb je er ook rode, ontstoken plekjes bij? Dan begint het verhaal daar, want wer
 
 **Wat helpt en wat we afraden**
 
-Vier van de vijf kruisjes rechts zijn dingen die mensen thuis doen in de overtuiging dat ze helpen. Ze kosten niets om te laten en dat is de goedkoopste winst op deze pagina.
+Vier van deze gewoontes doen mensen thuis in de overtuiging dat ze helpen. Ermee stoppen kost niets en scheelt vaak het meest.
 
 **DIT WERKT**
 
@@ -3834,13 +3834,13 @@ We kijken onder vast licht waar je naar kijkt, of het poriën zijn of iets ander
 
 **Tabbladtitel:** Psoriasis: meer dan huid | Diba Clinics
 
-**Google-omschrijving:** Psoriasis komt uit je afweersysteem en laat zich in de huid zien. Wat dat betekent voor de behandeling, en wat wij er wel en niet bij doen.
+**Google-omschrijving:** Psoriasis komt uit je afweersysteem. Wat je huisarts doet, en wat wij daarnaast aan je huidbarrière kunnen doen.
 
 **PSORIASIS EN JE HUID**
 
-Psoriasis is een aandoening van je afweersysteem die zich in de huid laat zien. Dat verschil is niet academisch: het verklaart waarom een crème de plek aanpakt en niet de oorzaak.
+Psoriasis is een aandoening van je afweersysteem die zich in de huid laat zien. De behandeling loopt via je huisarts of dermatoloog, en wij werken daarnaast aan je huidbarrière.
 
-Het verklaart ook waarom je nagels en je gewrichten erbij horen. Die worden het vaakst gemist, en bij gewrichten kost dat je iets dat niet terugkomt.
+Ook je nagels en gewrichten kunnen meedoen. Vooral bij gewrichten is het belangrijk dat er op tijd naar gekeken wordt.
 
 > knop: BEKIJK WAAR HET ZIT
 
@@ -3848,17 +3848,15 @@ Stijve gewrichten in de ochtend, gezwollen vingers of tenen, of rugpijn die bete
 
 Schade aan een gewricht is blijvend. Dit is het enige onderdeel waar op tijd zijn echt iets verandert.
 
-**Vier plekken, één aandoening.**
+**Vier plekken**
 
-Ze spelen niet altijd tegelijk op en ze horen wel bij elkaar. Twee ervan worden bijna altijd voor iets anders aangezien: nagels voor schimmel, en de hoofdhuid voor hardnekkige roos.
+Ze spelen niet altijd tegelijk op maar horen wel bij elkaar. Nagels en gewrichten worden het vaakst voor iets anders aangezien.
 
 - VAN BOVEN NAAR BENEDEN Ze horen bij dezelfde aandoening, ook als ze niet tegelijk opspelen.
 
 - Hoofdhuid
 
 - Ellebogen en knieën
-
-- Nagels
 
 - Gewrichten NIET MEE WACHTEN
 
@@ -3876,7 +3874,7 @@ Psoriasis kan op verschillende plekken voorkomen Dat is de reden dat een crème 
 
 **Wat helpt en wat we afraden**
 
-Het tweede vinkje links is de belangrijkste regel op deze pagina, en de enige waarbij uitstel je iets kost dat niet terugkomt.
+Gewrichtsklachten laat je op tijd beoordelen. Uitstel kost daar schade die niet meer terugkomt.
 
 **DIT WERKT**
 
@@ -11497,4 +11495,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5324 tekstblokken · ongeveer 79.864 woorden._
+_105 pagina's · 5323 tekstblokken · ongeveer 79.692 woorden._

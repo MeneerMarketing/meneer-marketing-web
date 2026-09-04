@@ -37,7 +37,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/cellulitis",
   titel: "Cellulitis: geen vet, maar bouw",
   omschrijving:
-    "Cellulitis komt door de bouw van je bindweefsel, niet door gewicht. Wat er wel en niet aan te veranderen valt, en welke behandelingen we ervoor doen.",
+    "Cellulitis behandelen met technieken die de doorbloeding en de stevigheid van het bindweefsel verbeteren. Wat er haalbaar is.",
 });
 
 const PAD = "/huidproblemen/cellulitis";
@@ -86,16 +86,15 @@ export default function CellulitisPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Onder je huid lopen bindweefselschotjes. Bij vrouwen staan die
-              overwegend rechtop, bij mannen kruisen ze elkaar. Dat ene verschil
-              bepaalt of hetzelfde vet een glad oppervlak geeft of een patroon
-              van kuiltjes.
+              Cellulitis ontstaat doordat de bindweefselschotjes onder je huid
+              bij vrouwen overwegend rechtop staan. Hetzelfde vet geeft daardoor
+              een patroon van kuiltjes in plaats van een glad oppervlak.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Daarmee valt alles op zijn plek: waarom slanke vrouwen het ook
-              hebben, waarom sporten het niet weghaalt, en waarom niemand het
-              kan verwijderen.
+              We behandelen het met technieken die de doorbloeding en de
+              stevigheid van het bindweefsel verbeteren. In de intake bespreken
+              we wat er in jouw geval haalbaar is.
             </p>
 
             <div className="mt-9">
@@ -134,7 +133,7 @@ export default function CellulitisPage() {
             raster="gelijk"
             kop="Zelfde vet,"
             accent="ander oppervlak."
-            intro="Twee doorsnedes naast elkaar, met één schuif die er in allebei evenveel vet in stopt. Links staan de bindweefselschotjes rechtop, rechts kruisen ze. Kijk naar de bovenranden: dat is het oppervlak dat je in de spiegel ziet."
+            intro="Twee doorsnedes naast elkaar met evenveel vet. Het verschil zit in de stand van de bindweefselschotjes eronder."
           />
           <Dwarsdoorsnede />
         </div>
@@ -148,9 +147,9 @@ export default function CellulitisPage() {
         <div className="mx-auto">
           <SectieKop
             label="Vier mythes"
-            kop="Vier dingen die"
-            accent="je vast gehoord hebt."
-            intro="Alle vier worden ze gebruikt om iets te verkopen, en alle vier vallen ze om zodra je weet dat het om de bouw gaat en niet om het vet."
+            kop="Vier"
+            accent="misverstanden"
+            intro="Alle vier vallen ze om zodra je weet dat cellulitis over de bouw van je onderhuid gaat en niet over je gewicht."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2">
@@ -171,7 +170,7 @@ export default function CellulitisPage() {
       <WelNiet
         wel={CELLULITIS_WEL_NIET.wel}
         niet={CELLULITIS_WEL_NIET.niet}
-        intro="De laatste regel links is de enige op deze hele site die niet over je huid gaat, en misschien de belangrijkste van deze pagina."
+        intro="Cellulitis hangt samen met de bouw van je onderhuid. Dat het bij jou zichtbaar is, zegt niets over hoe je leeft."
       />
 
       <PillarFaq items={CELLULITIS_FAQ} onderwerp="cellulitis" />

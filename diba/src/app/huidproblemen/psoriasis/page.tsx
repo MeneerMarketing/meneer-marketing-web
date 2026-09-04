@@ -35,7 +35,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/psoriasis",
   titel: "Psoriasis: meer dan huid",
   omschrijving:
-    "Psoriasis komt uit je afweersysteem en laat zich in de huid zien. Wat dat betekent voor de behandeling, en wat wij er wel en niet bij doen.",
+    "Psoriasis komt uit je afweersysteem. Wat je huisarts doet, en wat wij daarnaast aan je huidbarrière kunnen doen.",
 });
 
 const PAD = "/huidproblemen/psoriasis";
@@ -82,14 +82,13 @@ export default function PsoriasisPage() {
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Psoriasis is een aandoening van je afweersysteem die zich in de
-              huid laat zien. Dat verschil is niet academisch: het verklaart
-              waarom een crème de plek aanpakt en niet de oorzaak.
+              huid laat zien. De behandeling loopt via je huisarts of
+              dermatoloog, en wij werken daarnaast aan je huidbarrière.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Het verklaart ook waarom je nagels en je gewrichten erbij horen.
-              Die worden het vaakst gemist, en bij gewrichten kost dat je iets
-              dat niet terugkomt.
+              Ook je nagels en gewrichten kunnen meedoen. Vooral bij gewrichten
+              is het belangrijk dat er op tijd naar gekeken wordt.
             </p>
 
             <div className="mt-9">
@@ -124,9 +123,9 @@ export default function PsoriasisPage() {
         <div className="mx-auto">
           <SectieKop
             label="Meer dan huid"
-            kop="Vier plekken,"
-            accent="één aandoening."
-            intro="Ze spelen niet altijd tegelijk op en ze horen wel bij elkaar. Twee ervan worden bijna altijd voor iets anders aangezien: nagels voor schimmel, en de hoofdhuid voor hardnekkige roos."
+            kop="Vier"
+            accent="plekken"
+            intro="Ze spelen niet altijd tegelijk op maar horen wel bij elkaar. Nagels en gewrichten worden het vaakst voor iets anders aangezien."
           />
           <Silhouet />
         </div>
@@ -135,7 +134,7 @@ export default function PsoriasisPage() {
       <WelNiet
         wel={PSORIASIS_WEL_NIET.wel}
         niet={PSORIASIS_WEL_NIET.niet}
-        intro="Het tweede vinkje links is de belangrijkste regel op deze pagina, en de enige waarbij uitstel je iets kost dat niet terugkomt."
+        intro="Gewrichtsklachten laat je op tijd beoordelen. Uitstel kost daar schade die niet meer terugkomt."
       />
 
       <PillarFaq items={PSORIASIS_FAQ} onderwerp="psoriasis" />

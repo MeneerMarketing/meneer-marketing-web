@@ -35,7 +35,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/eczeem",
   titel: "Eczeem: een cirkel, geen plek",
   omschrijving:
-    "Eczeem is een lus van jeuk, krabben en een kapotte barrière. Wat je huisarts doet, wat wij daarnaast doen, en hoe we dat samen afstemmen.",
+    "Bij eczeem werken we aan je huidbarrière, naast de behandeling van je huisarts. Hoe die kringloop van jeuk en krabben werkt.",
 });
 
 const PAD = "/huidproblemen/eczeem";
@@ -84,16 +84,14 @@ export default function EczeemPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Jeuk geeft krabben, krabben breekt je barrière, een kapotte
-              barrière laat meer prikkels door, en die geven weer jeuk. Wie
-              alleen naar de plek kijkt, behandelt één punt van een lus die
-              daarna gewoon doordraait.
+              Eczeem is een kringloop: jeuk geeft krabben, krabben breekt je
+              huidbarrière, en een kapotte barrière laat meer prikkels door.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Eczeem hoort bij je huisarts. Wij kunnen op één punt van die
-              cirkel iets betekenen, en het is eerlijker om te laten zien welk
-              punt dat is dan om te doen alsof we de rest ook kunnen.
+              Wij werken aan die barrière, met behandelingen en verzorging die
+              hem herstellen. De medicatie loopt via je huisarts, en we stemmen
+              onze aanpak daarop af.
             </p>
 
             <div className="mt-9">
@@ -129,7 +127,7 @@ export default function EczeemPage() {
             label="De krabcirkel"
             kop="De vier"
             accent="schakels"
-            intro="Elk punt in deze lus houdt de volgende in stand. Tik ze aan en kijk wie hem kan doorbreken. Bij drie van de vier zijn wij dat niet."
+            intro="Elk punt in deze kringloop houdt de volgende in stand. Wij werken aan de barrière, want dat is de schakel die we kunnen herstellen."
           />
           <Krabcirkel />
         </div>
@@ -145,7 +143,7 @@ export default function EczeemPage() {
             label="Of is het iets anders"
             kop="Drie dingen die"
             accent="hierop lijken."
-            intro="Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is. Deze drie zien er verwant uit en vragen alle drie iets anders."
+            intro="Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is. Deze drie lijken erop en vragen iets anders."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
@@ -170,7 +168,7 @@ export default function EczeemPage() {
       <WelNiet
         wel={ECZEEM_WEL_NIET.wel}
         niet={ECZEEM_WEL_NIET.niet}
-        intro="Het eerste kruisje rechts kost de meeste tijd: wachten met de huisarts omdat je eerst zelf iets wilt proberen."
+        intro="Wachten met de huisarts omdat je eerst zelf iets wilt proberen, kost meestal de meeste tijd."
       />
 
       <PillarFaq items={ECZEEM_FAQ} onderwerp="eczeem" />

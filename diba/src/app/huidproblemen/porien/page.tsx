@@ -41,7 +41,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/porien",
   titel: "Poriën: wat er wel en niet aan te doen is",
   omschrijving:
-    "De doorsnede van een porie ligt vast in je aanleg. Wat je wel kunt veranderen is het oppervlak eromheen, en dat scheelt zichtbaar.",
+    "Grote poriën minder zichtbaar maken met peelings, microneedling en HydraFacial. Wat de huid eromheen bepaalt.",
 });
 
 const PAD = "/huidproblemen/porien";
@@ -107,17 +107,15 @@ export default function PorienPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De doorsnede van een porie ligt vast in je aanleg. Wij beloven dus
-              niet dat ze kleiner worden, want dat kan niemand waarmaken. Dat is
-              meteen het meest gestelde ding op deze pagina uit de weg. Wat je
-              wel ziet en wel kunt veranderen is de structuur van het oppervlak
-              eromheen.
+              De doorsnede van een porie ligt vast in je aanleg, maar hoe
+              opvallend ze zijn hangt af van de huid eromheen. Daar valt veel
+              aan te doen.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Er zijn wel drie dingen die je echt kunt veranderen, en samen
-              schelen die zoveel dat de meeste mensen denken dat hun poriën
-              kleiner zijn geworden. Hieronder mag je ze zelf aanzetten.
+              Met peelings, microneedling en een HydraFacial maken we de poriën
+              leeg en de huid eromheen gladder. Samen zorgt dat ervoor dat ze
+              een stuk minder opvallen.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -159,10 +157,10 @@ export default function PorienPage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="Drie knoppen"
-            kop="Zet ze aan"
-            accent="en kijk wat er gebeurt."
-            intro="Drie dingen bepalen hoe zichtbaar een porie is, en die kun je alle drie beïnvloeden. Er is ook een vierde knop. Die doet het niet, en dat is geen storing."
+            label="Wat het bepaalt"
+            kop="Drie dingen die"
+            accent="poriën zichtbaar maken"
+            intro="Drie dingen bepalen hoe zichtbaar een porie is, en die zijn alle drie te beïnvloeden met behandeling en verzorging."
           />
           <DrieKnoppen />
         </div>
@@ -176,9 +174,9 @@ export default function PorienPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Wat je ziet als je"
-            accent="in de spiegel kijkt"
-            intro="Het vierde beeld is het meest gemaakte misverstand van deze pagina en het kost mensen sessies aan de verkeerde behandeling. Kies wat het dichtst bij jou komt."
+            kop="Vier"
+            accent="beelden"
+            intro="Het vierde beeld wordt het vaakst verward met grote poriën, en dat kost mensen sessies aan de verkeerde behandeling."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -206,7 +204,7 @@ export default function PorienPage() {
       <WelNiet
         wel={PORIEN_WEL_NIET.wel}
         niet={PORIEN_WEL_NIET.niet}
-        intro="Vier van de vijf kruisjes rechts zijn dingen die mensen thuis doen in de overtuiging dat ze helpen. Ze kosten niets om te laten en dat is de goedkoopste winst op deze pagina."
+        intro="Vier van deze gewoontes doen mensen thuis in de overtuiging dat ze helpen. Ermee stoppen kost niets en scheelt vaak het meest."
       />
 
       <NulmetingAssen
