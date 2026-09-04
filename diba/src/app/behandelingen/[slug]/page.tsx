@@ -425,47 +425,66 @@ export default async function BehandelingPage({ params }: PageProps) {
                 deze pagina komt. */}
             {b.inDeStoel?.length ? (
               <div
-                className={`grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 ${
-                  b.stappen?.length ? "mt-14" : "mt-4"
-                }`}
+                className={`grid gap-4 lg:items-stretch ${
+                  b.fotoInDeStoel ? "lg:grid-cols-2" : ""
+                } ${b.stappen?.length ? "mt-14" : "mt-4"}`}
               >
-                <div>
+                {/* Links de foto, rechts het groene vlak, allebei even hoog.
+
+                    De foto stond eerst onder de kop in een smalle kolom met de tekst
+                    ernaast. Bij Nordlys was die foto bijna achthonderd pixels hoog en de
+                    tekst tweehonderd, dus stond er rechts zeshonderd pixels wit.
+
+                    `lg:items-stretch` met `lg:aspect-auto` laat de kortste van de twee
+                    meegroeien met de langste, wie dat ook is. Dezelfde opbouw als de hero
+                    bovenaan deze pagina, dus het leest als een herhaling. */}
+                {b.fotoInDeStoel ? (
+                  <BeeldVignet
+                    src={b.fotoInDeStoel.src}
+                    alt={b.fotoInDeStoel.alt}
+                    sizes="(min-width: 1024px) 46vw, 92vw"
+                    className="aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:min-h-[520px]"
+                  />
+                ) : null}
+
+                <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10 lg:p-12">
+                  <Label opDonker>Hoe het voelt</Label>
                   {b.stappen?.length ? (
-                    <>
-                      <Label>Hoe het voelt</Label>
-                      <h3 className="diba-display-s mt-4 max-w-[18ch]">
-                        Wat je ervan{" "}
-                        <span className="diba-accent">merkt in de stoel</span>
-                      </h3>
-                    </>
-                  ) : (
-                    <h2 className="diba-display-m max-w-[18ch]">
+                    <h3 className="diba-display-s mt-4 max-w-[18ch]">
                       Wat je ervan{" "}
-                      <span className="diba-accent">merkt in de stoel</span>
+                      <span className="diba-accent-on-dark">
+                        merkt in de stoel
+                      </span>
+                    </h3>
+                  ) : (
+                    <h2 className="diba-display-m mt-4 max-w-[18ch]">
+                      Wat je ervan{" "}
+                      <span className="diba-accent-on-dark">
+                        merkt in de stoel
+                      </span>
                     </h2>
                   )}
 
-                  {/* Onder de kop bleef deze kolom leeg, en hoe langer de tekst rechts
-                      hoe meer wit hier. Een staande foto vult dat, en die past hier ook
-                      echt: een smalle kolom en een liggende foto gaan niet samen. */}
-                  {b.fotoInDeStoel ? (
-                    <BeeldVignet
-                      src={b.fotoInDeStoel.src}
-                      alt={b.fotoInDeStoel.alt}
-                      sizes="(min-width: 1024px) 38vw, 92vw"
-                      className="mt-8 aspect-[3/4]"
-                    />
-                  ) : null}
-                </div>
-                <div className="max-w-[64ch] space-y-4">
-                  {b.inDeStoel.map((alinea) => (
-                    <p
-                      key={alinea.slice(0, 40)}
-                      className="text-[16px] leading-7 text-[var(--t-body)]"
-                    >
-                      {publicCopy(alinea)}
-                    </p>
-                  ))}
+                  <div className="mt-6 max-w-[52ch] space-y-4">
+                    {b.inDeStoel.map((alinea) => (
+                      <p
+                        key={alinea.slice(0, 40)}
+                        className="text-[16px] leading-7 text-[var(--on-dark-body)]"
+                      >
+                        {publicCopy(alinea)}
+                      </p>
+                    ))}
+                  </div>
+
+                  {/* Deze knop staat er niet om het vlak te vullen. Iemand heeft net
+                      gelezen hoe de behandeling voelt, en dat is het moment waarop de
+                      vraag "en nu" komt. */}
+                  <Link
+                    href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+                    className="diba-label mt-8 inline-flex min-h-12 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    Plan een huidconsult
+                  </Link>
                 </div>
               </div>
             ) : null}
