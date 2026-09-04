@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -130,15 +129,48 @@ export default function SnurkenPage() {
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
-            <Image
-              src="/images/shoot/beh-fotona.jpg"
-              alt="Fotona-laserbehandeling in de behandelkamer, met oogbescherming"
-              fill
-              priority
-              sizes="(min-width: 1024px) 44vw, 100vw"
-              className="object-cover object-center"
-            />
+          {/* Hier stond een foto van een Fotona-gezichtsbehandeling. Die draait op
+              hetzelfde apparaat als NightLase, maar wat je ziet is een huidbehandeling en
+              iemand die op snurken zoekt herkent daar niets in. De enige foto die er wel
+              over gaat staat verderop bij de kruisverwijzing, en twee keer dezelfde foto
+              op een pagina is geen opbouw.
+
+              De gegevens komen uit de behandelingentabel, dus ze kunnen niet uit de pas
+              lopen met /behandelingen/nightlase. */}
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
+            <Label opDonker>In het kort</Label>
+            <p className="diba-card-title-lg mt-4 max-w-[24ch]">
+              Laser op het zachte gehemelte, zonder snijden of beugel.
+            </p>
+
+            {nightlase ? (
+              <dl className="mt-8 divide-y divide-white/15 border-t border-white/15">
+                {(
+                  [
+                    ["Hoe lang", `${nightlase.duurMinuten} minuten`],
+                    ["Hoe vaak", nightlase.sessies],
+                    ["Herstel", nightlase.herstel],
+                  ] as const
+                ).map(([kop, waarde]) => (
+                  <div
+                    key={kop}
+                    className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4"
+                  >
+                    <dt className="diba-label diba-label-on-dark shrink-0">
+                      {kop}
+                    </dt>
+                    <dd className="max-w-[30ch] text-right text-[15px] leading-7 text-[var(--on-dark-accent)]">
+                      {publicCopy(waarde)}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            ) : null}
+
+            <p className="mt-6 text-[14px] leading-6 text-[var(--on-dark-body)]">
+              Of dit bij jou werkt hangt af van waar het geluid ontstaat. Dat
+              stellen we tijdens de intake vast.
+            </p>
           </div>
         </div>
       </section>

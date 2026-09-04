@@ -846,6 +846,89 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
 
   /* ── Laser en licht ────────────────────────────────────────────────────── */
   {
+    slug: "rrs-eyes",
+    inDeStoel: [
+      "Je ligt achterover en de behandelaar zet met een fijne naald een reeks kleine depots onder en naast je oog. Elke prik voelt als een korte tik; het gebied rond de ogen is gevoeliger dan de wang, dus daar merk je het meer.",
+      "Na afloop staan er kleine bultjes op de plek van elke prik. Dat hoort erbij en het is de vloeistof die nog niet is opgenomen; binnen een paar uur tot een dag zijn ze weg. [MEDISCHE-CHECK-ROJDA]",
+      "Je kunt daarna gewoon door met je dag. Blauwe plekjes komen voor rond de ogen, dus plan het niet vlak voor iets waar je op de foto moet.",
+    ],
+    foto: {
+      src: "/images/shoot/beh-rrs-eyes.jpg",
+      alt: "Een RRS Eyes-injectie bij de ooghoek",
+    },
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-rrs-eyes.jpg",
+      alt: "De behandelaar zet een depot onder het oog tijdens een RRS Eyes-behandeling",
+    },
+    naam: "RRS Eyes",
+    categorie: "injectie",
+    kort: "Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik.",
+    lagen: ["opperhuid", "lederhuid-boven"],
+    werking:
+      "Bij mesotherapie worden werkzame stoffen in de huid gebracht in plaats van erop. RRS Eyes is een mengsel dat op de oogcontour is afgestemd, met onder meer hyaluronzuur, vitaminen en aminozuren, en wordt in kleine depots onder en naast het oog gezet. De huid daar is dun, dus de behandelaar werkt met minder volume en op een geringere diepte dan op de wang. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Kleine bultjes die binnen een dag wegtrekken. Blauwe plekjes komen voor rond de ogen. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Een reeks, met een paar weken ertussen, daarna onderhoud. Het aantal hoor je tijdens de intake. [GEGEVEN-NODIG: aantal sessies per reeks]",
+    prijs: 0,
+    bijProblemen: [
+      { label: "Donkere kringen", href: "/huidproblemen/donkere-kringen" },
+      { label: "Wallen", href: "/huidproblemen/wallen" },
+      { label: "Rimpels", href: "/huidproblemen/rimpels" },
+    ],
+    wel: [
+      "Werkt op de oogcontour zelf, waar een crème niet diep genoeg komt",
+      "Brengt vocht en werkzame stoffen ín de huid in plaats van erop",
+      "Is te combineren met een behandeling op de rest van je gezicht",
+    ],
+    niet: [
+      "Voor volume onder het oog is een filler het middel en niet dit",
+      "Komt de schaduw van je botstructuur, dan verandert kleur weinig [MEDISCHE-CHECK-ROJDA]",
+      "Dit is een reeks, dus je plant de sessies achter elkaar in",
+    ],
+    welNietKop: {
+      kop: "Waar dit rond het oog",
+      accent: "wel en niet bij helpt",
+    },
+    stappen: [
+      {
+        kop: "Eerst kijken",
+        zin: "Donkere kringen komen van pigment, van doorschijnende vaatjes of van schaduw. Wat het bij jou is bepaalt of dit iets oplevert.",
+      },
+      {
+        kop: "Kleine depots",
+        zin: "Met een fijne naald zet de behandelaar het mengsel onder en naast het oog, in een reeks kleine porties.",
+      },
+      {
+        kop: "Direct door",
+        zin: "De bultjes trekken binnen een dag weg. Make-up laat je die dag liever nog even zitten.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Is het pijnlijk?",
+        antwoord:
+          "Het voelt als een reeks korte prikjes. Rond de ogen is de huid dunner dan op de wang, dus daar merk je het duidelijker dan bij een behandeling op je gezicht.",
+      },
+      {
+        vraag: "Waarom staan er bultjes na afloop?",
+        antwoord:
+          "Dat is de vloeistof die nog niet is opgenomen. Ze trekken binnen een paar uur tot een dag weg. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Helpt dit tegen donkere kringen?",
+        antwoord:
+          "Dat hangt af van waar de kleur vandaan komt. Bij pigment en bij een dunne huid met doorschijnende vaatjes valt er iets te doen; komt de donkerte van schaduw door je botstructuur, dan verandert er weinig. Dat stellen we vast tijdens de intake. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Wat kost het?",
+        antwoord:
+          "Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt. [PRIJS-NODIG: tarief per sessie]",
+      },
+    ],
+    duurMinuten: 30,
+  },
+  {
     slug: "fotona",
     fotoInDeStoel: {
       src: "/images/shoot/stoel-fotona.jpg",

@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 4 september 2026 · 106 pagina's
+Diba Clinics · gegenereerd op 4 september 2026 · 107 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -358,7 +358,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **EEN HUIDKLINIEK IN ROTTERDAM.**
 
-Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 12 apparaten en 22 behandelingen waarvan de prijzen allemaal openbaar zijn.
+Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 12 apparaten en 23 behandelingen waarvan de prijzen allemaal openbaar zijn.
 
 Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici en de kliniek is aangesloten bij ANBOS.
 
@@ -390,7 +390,7 @@ Een laser doet het werk niet alleen. Welke golflengte, welke pulsduur en welke e
 
 - 12 apparaten Van huidscanner tot alexandrietlaser. Per apparaat staat welke techniek erin zit en waarvoor hij is. BEKIJK DE APPARATUUR ›
 
-- 22 behandelingen Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
+- 23 behandelingen Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
 
 - 8 mensen Huidtherapeuten met een hbo-bachelor en inschrijving in het Kwaliteitsregister Paramedici, plus orthomoleculair huidspecialisten. NAAR HET TEAM ›
 
@@ -1465,6 +1465,8 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 **Wat we hiervoor inzetten**
 
 - Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT OP DE U225 INTRADERMALE INJECTOR
+
+- RRS Eyes Op aanvraag Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
 
 **Veelgestelde vragen**
 
@@ -4258,6 +4260,8 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT OP DE U225 INTRADERMALE INJECTOR
 
+- RRS Eyes Op aanvraag Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
+
 - Fotona TimeWalker € 150 Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
 **Veelgestelde vragen**
@@ -4840,6 +4844,10 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 
 - Beloven dat het weggaat als het van dag tot dag niet verandert
 
+**Wat we hiervoor inzetten**
+
+- RRS Eyes Op aanvraag Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
+
 **Veelgestelde vragen**
 
 Wat is het verschil tussen wallen en donkere kringen? +
@@ -4868,7 +4876,7 @@ In het huidconsult stellen we vast of het vocht, vet of schaduw is. Bij twee van
 
 **Google-omschrijving:** Vijf behandelingen en drie vragen om te weten welke bij je past. Je huidprofiel blijft in je eigen browser staan.
 
-**ONZE 22 BEHANDELINGEN VAN LICHT TOT DIEP**
+**ONZE 23 BEHANDELINGEN VAN LICHT TOT DIEP**
 
 Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel bereikt. Waar een behandeling aankomt bepaalt de rest: wat het kost, hoe lang je rood bent en hoe vaak je terug moet.
 
@@ -4902,7 +4910,7 @@ JE BENT NU IN DE
 
 Waar je pigment zit en waar nieuwe huidcellen vandaan komen.
 
-15 VAN ONZE BEHANDELINGEN KOMEN HIER
+16 VAN ONZE BEHANDELINGEN KOMEN HIER
 
 - HydraFacial Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
 
@@ -4916,13 +4924,13 @@ Waar je pigment zit en waar nieuwe huidcellen vandaan komen.
 
 - Dermapen 4 Eén tot drie dagen rood. € 180
 
-En nog 9 andere.
+En nog 10 andere.
 
-**Alle 22 behandelingen op een rij**
+**Alle 23 behandelingen op een rij**
 
 Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter staat nergens anders, terwijl het vaak het meest bepaalt.
 
-> knop: ALLES 22
+> knop: ALLES 23
 
 > knop: METEN 1
 
@@ -4932,7 +4940,7 @@ Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter
 
 > knop: MICRONEEDLING 2
 
-> knop: SKINBOOSTERS 1
+> knop: SKINBOOSTERS 2
 
 > knop: LASER EN LICHT 3
 
@@ -4983,6 +4991,8 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 - TOT IN DE BOVENSTE LEDERHUID Dermapen 4 Dermapen 4 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. Eén tot drie dagen rood. € 180
 
 - TOT IN DE BOVENSTE LEDERHUID Skinboosters en mesotherapie U225 intradermale injector Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. Kort rood en soms kleine bultjes, meestal binnen een dag weg. € 175
+
+- TOT IN DE BOVENSTE LEDERHUID RRS Eyes Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. Kleine bultjes die binnen een dag wegtrekken. Blauwe plekjes komen voor rond de ogen. Op aanvraag
 
 - TOT IN DE BOVENSTE LEDERHUID Nordlys IPL Nordlys Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. Meestal een paar uur rood. € 75
 
@@ -6947,6 +6957,112 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - ONZUIVERE HUID
 
 - OUDERDOMSVLEKKEN
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
+### /behandelingen/rrs-eyes
+
+**Tabbladtitel:** RRS Eyes | Diba Clinics
+
+**Google-omschrijving:** Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik.
+
+**RRS EYES**
+
+RRS EYES
+
+*HOE DIEP*
+
+Bovenste lederhuid
+
+*HOE LANG*
+
+30 minuten
+
+*HERSTEL*
+
+Kleine bultjes die binnen een dag wegtrekken. Blauwe plekjes komen voor rond de ogen.
+
+*HOE VAAK*
+
+Een reeks, met een paar weken ertussen, daarna onderhoud. Het aantal hoor je tijdens de intake.
+
+Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik.
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+Bij mesotherapie worden werkzame stoffen in de huid gebracht in plaats van erop. RRS Eyes is een mengsel dat op de oogcontour is afgestemd, met onder meer hyaluronzuur, vitaminen en aminozuren, en wordt in kleine depots onder en naast het oog gezet. De huid daar is dun, dus de behandelaar werkt met minder volume en op een geringere diepte dan op de wang.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. HIER WERKT HET
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- Eerst kijken Donkere kringen komen van pigment, van doorschijnende vaatjes of van schaduw. Wat het bij jou is bepaalt of dit iets oplevert.
+
+- Kleine depots Met een fijne naald zet de behandelaar het mengsel onder en naast het oog, in een reeks kleine porties.
+
+- Direct door De bultjes trekken binnen een dag weg. Make-up laat je die dag liever nog even zitten.
+
+**Wat je ervan merkt in de stoel**
+
+Je ligt achterover en de behandelaar zet met een fijne naald een reeks kleine depots onder en naast je oog. Elke prik voelt als een korte tik; het gebied rond de ogen is gevoeliger dan de wang, dus daar merk je het meer.
+
+Na afloop staan er kleine bultjes op de plek van elke prik. Dat hoort erbij en het is de vloeistof die nog niet is opgenomen; binnen een paar uur tot een dag zijn ze weg.
+
+Je kunt daarna gewoon door met je dag. Blauwe plekjes komen voor rond de ogen, dus plan het niet vlak voor iets waar je op de foto moet.
+
+**Waar dit rond het oog wel en niet bij helpt**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Werkt op de oogcontour zelf, waar een crème niet diep genoeg komt
+
+- Brengt vocht en werkzame stoffen ín de huid in plaats van erop
+
+- Is te combineren met een behandeling op de rest van je gezicht
+
+- Voor volume onder het oog is een filler het middel en niet dit
+
+- Komt de schaduw van je botstructuur, dan verandert kleur weinig
+
+- Dit is een reeks, dus je plant de sessies achter elkaar in
+
+- DONKERE KRINGEN
+
+- WALLEN
+
+- RIMPELS
+
+**Veelgestelde vragen**
+
+Is het pijnlijk? +
+
+Het voelt als een reeks korte prikjes. Rond de ogen is de huid dunner dan op de wang, dus daar merk je het duidelijker dan bij een behandeling op je gezicht.
+
+Waarom staan er bultjes na afloop? +
+
+Dat is de vloeistof die nog niet is opgenomen. Ze trekken binnen een paar uur tot een dag weg.
+
+Helpt dit tegen donkere kringen? +
+
+Dat hangt af van waar de kleur vandaan komt. Bij pigment en bij een dunne huid met doorschijnende vaatjes valt er iets te doen; komt de donkerte van schaduw door je botstructuur, dan verandert er weinig. Dat stellen we vast tijdens de intake.
+
+Wat kost het? +
+
+Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt.
 
 **Begin met een huidanalyse**
 
@@ -9018,6 +9134,8 @@ Werkzame stoffen op diepte brengen.
 
 - Skinboosters en mesotherapie Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. € 175 ▾
 
+- RRS Eyes Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. Na de meting ▾
+
 Mikken op kleur, vaten of structuur.
 
 - Fotona TimeWalker Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. € 150 ▾
@@ -10738,7 +10856,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **ALLES WAT WE UITLEGGEN**
 
-Alles wat hier wordt uitgelegd staat verspreid over 30 huidprobleempagina's, 12 apparaatpagina's en 22behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
+Alles wat hier wordt uitgelegd staat verspreid over 30 huidprobleempagina's, 12 apparaatpagina's en 23behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
 
 De doorsnedes, testen en vergelijkers staan er los bij. Die zijn het meeste werk en tegelijk het slechtst vindbaar, want ze staan halverwege een pagina waar je niet komt als je er niet naar zoekt.
 
@@ -11690,6 +11808,22 @@ Daarom begint deze pagina bij de bron en niet bij het apparaat.
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
+Laser op het zachte gehemelte, zonder snijden of beugel.
+
+*HOE LANG*
+
+30 minuten
+
+*HOE VAAK*
+
+Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij.
+
+*HERSTEL*
+
+Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel.
+
+Of dit bij jou werkt hangt af van waar het geluid ontstaat. Dat stellen we tijdens de intake vast.
+
 **Vier plekken waar snurken kan ontstaan**
 
 Dit is een wegwijzer en geen diagnose; het echte antwoord komt uit meekijken achter in je mond. Maar de herkenning hieronder brengt de meeste mensen al bij de juiste deur, en soms is dat niet de onze.
@@ -11734,19 +11868,13 @@ Als het geluid uit je zachte gehemelte komt, is dit wat we kunnen doen. Geen sni
 
 *HOE LANG JE EROVER DOET*
 
-Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij.
-
 *WAT JE ERNA MERKT*
-
-Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel.
 
 NIGHTLASE, AAN HET ZACHTE GEHEMELTE
 
 **Snurken behandelen we met NightLase**
 
 Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel.
-
-30 minuten
 
 *PER SESSIE*
 
@@ -12053,4 +12181,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_106 pagina's · 5590 tekstblokken · ongeveer 82.870 woorden._
+_107 pagina's · 5650 tekstblokken · ongeveer 83.703 woorden._
