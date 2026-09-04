@@ -159,6 +159,19 @@ export default async function ApparaatPage({ params }: PageProps) {
             <div className="mt-8">
               {a.merk ? <Label>{a.merk}</Label> : null}
               <h1 className="diba-display-l mt-3 max-w-[16ch]">{a.naam}</h1>
+              {/* Alleen waar de fabrikant een eigen site heeft. Extern, dus in een
+                  nieuw tabblad; de bezoeker is hier nog niet klaar. */}
+              {a.merk && a.merkUrl ? (
+                <a
+                  href={a.merkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="diba-label mt-4 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                >
+                  Meer over dit apparaat bij {a.merk}
+                  <span aria-hidden="true">›</span>
+                </a>
+              ) : null}
             </div>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">

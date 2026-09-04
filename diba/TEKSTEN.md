@@ -4816,7 +4816,7 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE OPPERHUID Medische peelings Mesoestetic, Dermaceutic, Image Skincare, Skin Tech Pharma Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. € 140
 
-- TOT IN DE OPPERHUID Lumi 8 LED Lumi 8 LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling. Geen. € 30
+- TOT IN DE OPPERHUID LED-therapie Precision Photonic System Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren. Geen. € 30
 
 - TOT IN DE OPPERHUID Cosmelan en dermamelan Mesoestetic Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming. € 550
 
@@ -6120,6 +6120,130 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ---
 
+### /behandelingen/led-therapie
+
+**Tabbladtitel:** LED-therapie | Diba Clinics
+
+**Google-omschrijving:** Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren.
+
+**LED-THERAPIE**
+
+*HOE DIEP*
+
+Opperhuid
+
+*HOE LANG*
+
+20 minuten
+
+*HERSTEL*
+
+Geen.
+
+*HOE VAAK*
+
+Meestal aansluitend op een andere behandeling. Als losse reeks bij roodheid, met een paar dagen tot een week ertussen.
+
+Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren.
+
+Draait op Precision Photonic System
+
+> knop: PLAN EEN HUIDCONSULT
+
+**Waar het aankomt**
+
+Bij LED-therapie neemt de huid licht op van een bepaalde golflengte. Dat licht wordt opgenomen door de mitochondriën in je cellen, de onderdelen die energie leveren, waarna er meer energie beschikbaar is voor herstel en aanmaak. Die werking heet fotobiomodulatie. Er wordt niets verwarmd en niets weggehaald, en juist daarom is er geen hersteltijd.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Golflengte gekozen De behandelaar stelt de kleur in die bij je huid en het doel van de sessie hoort.
+
+- 2 Onder de boog Je krijgt een bril op en het paneel hangt op een handbreedte boven je gezicht.
+
+- 3 Vaste tijd De sessie loopt op een ingestelde tijd; daarna ga je direct door met je dag.
+
+GRIJPT AAN OP
+
+De huid zelf
+
+Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
+
+- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
+
+- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. BLIJFT ONAANGEROERD
+
+- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
+
+**Wat er gebeurt, in volgorde.**
+
+- De kleur gekozen Blauw blijft aan de oppervlakte, rood komt in de lederhuid en infrarood komt het verst. De behandelaar kiest wat past.
+
+- Onder de boog Ogen dicht, bril op, licht aan. Het paneel hangt op een handbreedte boven je gezicht en de tijd staat vooraf ingesteld.
+
+- Direct door Geen roodheid, geen wachttijd en geen instructies voor thuis. Make-up mag diezelfde dag weer.
+
+**Wat je ervan merkt in de stoel**
+
+Je krijgt een bril op en ligt met je ogen dicht. Het paneel hangt op een handbreedte boven je gezicht en geeft licht in de kleur die de behandelaar heeft ingesteld. Er is licht en verder weinig: geen prik, geen tinteling, hooguit milde warmte.
+
+De sessie loopt op een vaste tijd. Meestal plannen we hem aansluitend op een andere behandeling, terwijl je toch al ligt, en dan is het het rustigste deel van de afspraak.
+
+Erna ga je direct door met je dag. Er is geen roodheid om te verbergen en er zijn geen instructies voor thuis.
+
+**Waar licht wel en niet bij helpt**
+
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
+
+- Maakt roodheid en rosacea rustiger
+
+- Ondersteunt het herstel na needling of een peeling
+
+- Komt bovenop een behandeling zonder extra hersteltijd
+
+- Voor pigment of haargroei kies je laser of IPL
+
+- Voor structuur en littekens werkt microneedling dieper
+
+- Licht werkt door herhaling, dus je plant een reeks
+
+- ROSACEA
+
+- ROODHEID
+
+- GEVOELIGE HUID
+
+**Veelgestelde vragen**
+
+Waarom is dit zo goedkoop? +
+
+Omdat de behandeling kort is en er geen materiaal bij opgaat. Vaak plannen we hem aansluitend op iets anders, terwijl je toch al ligt.
+
+Kan ik alleen hiervoor komen? +
+
+Ja, dat kan. Bij roodheid of rosacea plannen mensen het ook als losse reeks, omdat het licht dan het werk doet.
+
+Wat merk ik ervan tijdens de sessie? +
+
+Weinig. Er komt licht op lage sterkte en hooguit voel je milde warmte. Je ogen blijven dicht en je krijgt een bril op.
+
+Op welk apparaat gebeurt dit? +
+
+Op het Precision Photonic System van Skin Complete. Welke golflengte en welke tijd erbij horen, bepaalt de behandelaar na de huidanalyse.
+
+**Begin met een huidanalyse**
+
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+---
+
 ### /behandelingen/littekentherapie
 
 **Tabbladtitel:** Littekentherapie | Diba Clinics
@@ -6215,120 +6339,6 @@ Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en 
 Hoeveel sessies? +
 
 Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.
-
-**Begin met een huidanalyse**
-
-De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
-
-> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
-
----
-
-### /behandelingen/lumi-8-led
-
-**Tabbladtitel:** Lumi 8 LED | Diba Clinics
-
-**Google-omschrijving:** LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling.
-
-**LUMI 8 LED**
-
-LUMI 8 LED · LUMI 8
-
-*HOE DIEP*
-
-Opperhuid
-
-*HOE LANG*
-
-20 minuten
-
-*HERSTEL*
-
-Geen.
-
-*HOE VAAK*
-
-Meestal als toevoeging bij een andere behandeling
-
-LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling.
-
-Draait op LUMI 8-LED
-
-> knop: PLAN EEN HUIDCONSULT
-
-**Waar het aankomt**
-
-Rood, geel en bijna-infrarood licht brengen de huid tot rust en ondersteunen het herstel. De pulsen wisselen elkaar af, zodat de huid niet aan het licht went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes.
-
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
-
-WAT ER GEBEURT
-
-- 1 Drie kleuren Rood, geel en bijna-infrarood licht, zonder warmte en zonder naalden.
-
-- 2 Wisselende puls De pulscyclus varieert, zodat de huid niet went aan de dosis.
-
-- 3 Geen hersteltijd Je kunt direct door met je dag, zonder roodheid of wachttijd.
-
-GRIJPT AAN OP
-
-De huid zelf
-
-Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. GAAT ER DOORHEEN
-
-- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
-
-- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. BLIJFT ONAANGEROERD
-
-- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
-
-**Wat er gebeurt, in volgorde.**
-
-- Na de hoofdbehandeling Meestal aansluitend, terwijl je toch al ligt.
-
-- Onder de lamp Ogen dicht, licht aan. Je voelt er niets van, hooguit lichte warmte.
-
-- Klaar Geen roodheid, geen wachttijd, geen instructies voor thuis.
-
-**Wat je ervan merkt in de stoel**
-
-Je ligt met je ogen dicht onder een paneel dat op een handbreedte van je gezicht hangt. Er is licht en er is verder niets: geen warmte, geen tinteling, geen geluid.
-
-De meeste mensen vinden het het rustigste kwartier van hun week. Het wordt vaak gecombineerd met een andere behandeling in dezelfde afspraak.
-
-Erna kun je direct door met je dag. Er is niets aan je huid gebeurd waar iets van hoeft te herstellen.
-
-**Waar deze behandeling voor bedoeld is**
-
-Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
-
-- Werkt zonder naalden, zuren of hersteltijd
-
-- Wordt ingezet bij roodheid, rosacea en fijne lijntjes
-
-- Wisselt de pulsen af, zodat de huid niet aan het licht went
-
-- LED versterkt een andere behandeling en vervangt die niet
-
-- Voor pigment, vaatjes of littekens kies je laser of needling
-
-- Licht werkt door herhaling, dus je plant meerdere sessies
-
-- ROSACEA
-
-**Veelgestelde vragen**
-
-Waarom is dit zo goedkoop? +
-
-Omdat de behandeling kort is en er geen materiaal bij opgaat. Vaak plannen we hem aansluitend op iets anders, terwijl je toch al ligt.
-
-Kan ik alleen hiervoor komen? +
-
-Ja, dat kan. Bij roodheid of rosacea plannen mensen het ook als losse reeks, omdat het licht dan het werk doet.
 
 **Begin met een huidanalyse**
 
@@ -7268,7 +7278,7 @@ TOT HOE DIEP
 
 - Peelinglijnen Grijpt aan op de hoornlaag 24
 
-- LUMI 8-LED Grijpt aan op de huid zelf 25
+- Precision Photonic System Grijpt aan op de huid zelf 25
 
 - Nordlys Grijpt aan op bloedvaten 45
 
@@ -7316,7 +7326,7 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 - LICHT CANDELA Nordlys IPL werkt met een bereik aan golflengtes in plaats van één. Daardoor is hij breed inzetbaar en komt hij minder diep dan een laser. Nordlys IPL
 
-- LICHT LUMI LUMI 8-LED LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid. Lumi 8 LED
+- LICHT SKIN COMPLETE Precision Photonic System LED-licht in meerdere golflengtes, elk met een eigen diepte in de huid. Zonder naalden, zuren of hersteltijd. LED-therapie
 
 - MICRONEEDLING SKINPEN SkinPen CIT Deze medisch gecertificeerde microneedlingbehandeling werkt met gecontroleerde prikjes in de huid. SkinPen Microneedling
 
@@ -7408,7 +7418,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
-- TEGENOVER LUMI 8-LED Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk. NAAR DE LUMI 8-LED ›
+- TEGENOVER Precision Photonic System Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk. NAAR DE PRECISION PHOTONIC SYSTEM ›
 
 - TEGENOVER U225 intradermale injector Brengt stoffen in de huid met een naald. De CooLifting doet dat met kou en druk, en werkt op de bovenste lagen. NAAR DE U225 INTRADERMALE INJECTOR ›
 
@@ -7850,7 +7860,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Nordlys Stuurt een bundel golflengtes tegelijk en komt minder diep. De Fotona werkt met één golflengte per stand en gaat door tot in de diepe lederhuid. NAAR DE NORDLYS ›
 
-- TEGENOVER LUMI 8-LED Werkt met licht dat de huid opneemt om tot rust te komen. De Fotona werkt met warmte die weefsel aanzet tot opbouw. NAAR DE LUMI 8-LED ›
+- TEGENOVER Precision Photonic System Werkt met licht dat de huid opneemt om tot rust te komen. De Fotona werkt met warmte die weefsel aanzet tot opbouw. NAAR DE PRECISION PHOTONIC SYSTEM ›
 
 **De problemen waar dit apparaat bij past.**
 
@@ -7966,7 +7976,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Nordlys Is geen laser maar een lamp met een bundel golflengtes. Dat werkt minder gericht op de haarwortel en komt minder diep. NAAR DE NORDLYS ›
 
-- TEGENOVER LUMI 8-LED Werkt met licht op de huid zelf. Deze laser werkt op de haarwortel: twee verschillende doelen. NAAR DE LUMI 8-LED ›
+- TEGENOVER Precision Photonic System Werkt met licht op de huid zelf. Deze laser werkt op de haarwortel: twee verschillende doelen. NAAR DE PRECISION PHOTONIC SYSTEM ›
 
 **Veelgestelde vragen**
 
@@ -8116,120 +8126,6 @@ Dezelfde Hydrafacial syndeo levert in twee klinieken een ander resultaat. Wat te
 
 ---
 
-### /apparatuur/lumi-8
-
-**Tabbladtitel:** LUMI 8-LED: het apparaat | Diba Clinics
-
-**Google-omschrijving:** LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.
-
-**LUMI 8-LED**
-
-LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.
-
-Een LED-toestel dat werkt met een wisselende pulscyclus. Doordat de dosis varieert blijft de huid op het licht reageren, wat bij een constante dosis afvlakt. Wordt meestal als toevoeging bij een andere behandeling gedaan.
-
-- Lumi 8 LED € 30
-
-De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
-
-LUMI 8-LED · LUMI
-
-**Hoe dit apparaat op de huid werkt**
-
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
-
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
-
-WAT ER GEBEURT
-
-- 1 Drie kleuren Rood, geel en bijna-infrarood licht, zonder warmte en zonder naalden.
-
-- 2 Wisselende puls De pulscyclus varieert, zodat de huid niet went aan de dosis.
-
-- 3 Geen hersteltijd Je kunt direct door met je dag, zonder roodheid of wachttijd.
-
-GRIJPT AAN OP
-
-De huid zelf
-
-Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
-
-LED werkt anders dan een laser: licht van één kleur op lage sterkte, dat de huid opneemt. Er wordt niets verdampt of losgemaakt. Je voelt er weinig van en er is geen hersteltijd; je gaat meteen door met je dag.
-
-De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft aan de oppervlakte, rood komt iets dieper, en infrarood komt het verst omdat het het minst door de huid wordt tegengehouden.
-
-Wij zetten LED in naast een andere behandeling, waar het de huid tot rust brengt en het herstel ondersteunt.
-
-**Wat een behandeling met je huid doet**
-
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
-
-- Roodheid en rosacea kalmeren
-
-- Fijne lijntjes en diepere rimpels
-
-- Toevoegen aan een behandeling zonder extra hersteltijd
-
-- Op zichzelf een traject vervangen
-
-- Pigment of haargroei
-
-- Snelle zichtbare verandering; dit werkt over een reeks
-
-**Wat er anders is dan de andere apparaten hier**
-
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
-
-- TEGENOVER Nordlys Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 werkt met licht dat de huid opneemt, en heeft daarom geen hersteltijd. NAAR DE NORDLYS ›
-
-- TEGENOVER Fotona TimeWalker Breekt weefsel af om herstel uit te lokken. De Lumi 8 werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt. NAAR DE FOTONA TIMEWALKER ›
-
-- TEGENOVER CooLift Cryo Therapy Werkt ook zonder naalden en zonder hersteltijd, maar met kou en druk in plaats van licht. NAAR DE COOLIFT CRYO THERAPY ›
-
-**De problemen waar dit apparaat bij past.**
-
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Rosacea
-
-**Veelgestelde vragen**
-
-Voel ik hier iets van? +
-
-Nee. Er komt licht van één kleur op lage sterkte, zonder warmte en zonder dat er iets wordt weggehaald. De meeste mensen vinden het het rustigste kwartier van hun week.
-
-Waarom verschillende kleuren? +
-
-Elke kleur komt tot een andere diepte. Blauw blijft aan de oppervlakte, rood komt iets verder en nabij-infrarood het verst, omdat dat het minst door de huid wordt tegengehouden.
-
-Werkt dit op zichzelf? +
-
-Wij zetten het naast een andere behandeling in, waar het de huid tot rust brengt en het herstel ondersteunt.
-
-Is er hersteltijd? +
-
-Nee. Je kunt er direct mee de deur uit en gewoon doorgaan met je dag.
-
-**Het verschil zit in de hand die het bedient**
-
-Dezelfde LUMI 8-LED levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
-
-> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
-
-> knop: ALLE APPARATUUR
-
-- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
-
-- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
-
-- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
-
----
-
 ### /apparatuur/nordlys-ipl
 
 **Tabbladtitel:** Nordlys: het apparaat | Diba Clinics
@@ -8302,7 +8198,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Gentle Laser Pro-U Eén golflengte, gericht op de haarwortel. Daar is de Nordlys minder geschikt voor, en op roodheid juist wel. NAAR DE GENTLE LASER PRO-U ›
 
-- TEGENOVER LUMI 8-LED Werkt met licht dat de huid kalmeert. De Nordlys mikt op het rood in bloed en werkt daarvoor met warmte. NAAR DE LUMI 8-LED ›
+- TEGENOVER Precision Photonic System Werkt met licht dat de huid kalmeert. De Nordlys mikt op het rood in bloed en werkt daarvoor met warmte. NAAR DE PRECISION PHOTONIC SYSTEM ›
 
 **De problemen waar dit apparaat bij past.**
 
@@ -8457,6 +8353,128 @@ Bij pigment liever niet, en bij de sterkere lijnen ook niet. Zon na een peeling 
 **Het verschil zit in de hand die het bedient**
 
 Dezelfde Peelinglijnen levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
+
+> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
+
+> knop: ALLE APPARATUUR
+
+- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
+
+- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
+
+- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
+
+---
+
+### /apparatuur/precision-photonic-system
+
+**Tabbladtitel:** Precision Photonic System: het apparaat | Diba Clinics
+
+**Google-omschrijving:** LED-licht in meerdere golflengtes, elk met een eigen diepte in de huid. Zonder naalden, zuren of hersteltijd.
+
+**PRECISION PHOTONIC SYSTEM**
+
+LED-licht in meerdere golflengtes, elk met een eigen diepte in de huid. Zonder naalden, zuren of hersteltijd.
+
+Het LED-systeem van Skin Complete waar wij mee werken. Het licht wordt door de huid opgenomen en ondersteunt daar het herstel; de behandelaar kiest de golflengte en de tijd op basis van de huidanalyse. Meestal aansluitend op een andere behandeling, en bij roodheid of rosacea ook als losse reeks.
+
+- LED-therapie € 30
+
+De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
+
+**Hoe dit apparaat op de huid werkt**
+
+Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+
+De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+
+WAT ER GEBEURT
+
+- 1 Golflengte gekozen De behandelaar stelt de kleur in die bij je huid en het doel van de sessie hoort.
+
+- 2 Onder de boog Je krijgt een bril op en het paneel hangt op een handbreedte boven je gezicht.
+
+- 3 Vaste tijd De sessie loopt op een ingestelde tijd; daarna ga je direct door met je dag.
+
+GRIJPT AAN OP
+
+De huid zelf
+
+Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.
+
+Loopt vanzelf door. Klik een stap om zelf te sturen.
+
+**Wat de diepte van dit apparaat bepaalt**
+
+LED werkt anders dan een laser of IPL. Die verwarmen een doelwit in de huid, pigment of een vaatje of water, en het resultaat komt uit het herstel dat daarop volgt. LED verwarmt niets: het licht wordt door de huid opgenomen en doet zijn werk in de cel zelf.
+
+In elke cel zitten mitochondriën, de onderdelen die energie leveren. Licht van bepaalde golflengtes wordt daar opgenomen, waarna de cel meer energie beschikbaar heeft voor herstel en aanmaak. Die werking heet fotobiomodulatie.
+
+De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft in de bovenste lagen en wordt ingezet bij onzuiverheden. Rood komt tot in de lederhuid, waar het bindweefsel zit. Nabij-infrarood komt het verst, omdat die golflengte het minst door de huid wordt tegengehouden.
+
+De huid blijft intact, dus er is niets dat hoeft te herstellen: geen roodheid, geen wachttijd en geen instructies voor thuis. Juist daarom past het direct na een behandeling die de huid wél prikkelt, zoals microneedling of een peeling.
+
+Het werkt cumulatief. Eén sessie is één prikkel; het verschil ontstaat over een reeks, met een paar dagen tot een week ertussen. De behandelaar kiest de golflengte en de tijd op basis van wat er uit de huidanalyse kwam.
+
+**Wat een behandeling met je huid doet**
+
+Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+
+- Roodheid en rosacea rustiger maken
+
+- Het herstel na needling of een peeling ondersteunen
+
+- Toevoegen aan een behandeling zonder extra hersteltijd
+
+- Voor pigment of haargroei kies je laser of IPL
+
+- Voor structuur en littekens werkt microneedling dieper
+
+- Licht werkt door herhaling, dus je plant een reeks
+
+**Wat er anders is dan de andere apparaten hier**
+
+Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
+
+- TEGENOVER Nordlys Mikt op de vaatjes zelf en werkt met warmte. Het Precision Photonic System werkt met licht dat de huid opneemt, en heeft daarom geen hersteltijd. NAAR DE NORDLYS ›
+
+- TEGENOVER Fotona TimeWalker Breekt weefsel af om herstel uit te lokken. LED werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt. NAAR DE FOTONA TIMEWALKER ›
+
+- TEGENOVER CooLift Cryo Therapy Werkt ook zonder naalden en zonder hersteltijd, maar met kou en druk in plaats van licht. NAAR DE COOLIFT CRYO THERAPY ›
+
+**De problemen waar dit apparaat bij past.**
+
+Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+
+- Rosacea
+
+- Gevoelige huid
+
+**Veelgestelde vragen**
+
+Voel ik hier iets van? +
+
+Weinig. Er komt licht op lage sterkte en hooguit merk je milde warmte. De meeste mensen vinden het het rustigste kwartier van hun week.
+
+Waarom verschillende kleuren? +
+
+Elke golflengte komt tot een andere diepte. Blauw blijft in de bovenste lagen, rood komt tot in de lederhuid en nabij-infrarood komt het verst, omdat die kleur het minst door de huid wordt tegengehouden.
+
+Werkt dit op zichzelf? +
+
+Bij roodheid en rosacea plannen mensen het als losse reeks. Verder zetten we het in naast een andere behandeling, waar het de huid tot rust brengt en het herstel ondersteunt.
+
+Is er hersteltijd? +
+
+Nee. Je gaat er direct mee de deur uit en gewoon door met je dag.
+
+Hoe vaak moet ik komen? +
+
+Licht werkt cumulatief, dus het verschil ontstaat over een reeks met een paar dagen tot een week ertussen. Hoeveel sessies dat zijn hoor je na de huidanalyse.
+
+**Het verschil zit in de hand die het bedient**
+
+Dezelfde Precision Photonic System levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -8766,7 +8784,7 @@ Mikken op kleur, vaten of structuur.
 
 - Nordlys IPL Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. € 75 ▾
 
-- Lumi 8 LED LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling. € 30 ▾
+- LED-therapie Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren. € 30 ▾
 
 Maanden werk aan hardnekkig pigment.
 
@@ -11675,4 +11693,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5405 tekstblokken · ongeveer 80.623 woorden._
+_105 pagina's · 5414 tekstblokken · ongeveer 80.972 woorden._

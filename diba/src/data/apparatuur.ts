@@ -101,6 +101,8 @@ export type Apparaat = {
   readonly naam: string;
   /** Fabrikant of merk. Leeg als het geen apparaat maar een productlijn is. */
   readonly merk?: string;
+  /** Site van de fabrikant, als die er is. Opent in een nieuw tabblad. */
+  readonly merkUrl?: string;
   readonly categorie: ApparaatCategorie;
   readonly kort: string;
   readonly wat: string;
@@ -329,7 +331,7 @@ export const APPARATUUR: readonly Apparaat[] = [
           "Stuurt een bundel golflengtes tegelijk en komt minder diep. De Fotona werkt met één golflengte per stand en gaat door tot in de diepe lederhuid.",
       },
       {
-        apparaat: "lumi-8",
+        apparaat: "precision-photonic-system",
         verschil:
           "Werkt met licht dat de huid opneemt om tot rust te komen. De Fotona werkt met warmte die weefsel aanzet tot opbouw.",
       },
@@ -414,7 +416,7 @@ export const APPARATUUR: readonly Apparaat[] = [
           "Is geen laser maar een lamp met een bundel golflengtes. Dat werkt minder gericht op de haarwortel en komt minder diep.",
       },
       {
-        apparaat: "lumi-8",
+        apparaat: "precision-photonic-system",
         verschil:
           "Werkt met licht op de huid zelf. Deze laser werkt op de haarwortel: twee verschillende doelen.",
       },
@@ -499,89 +501,103 @@ export const APPARATUUR: readonly Apparaat[] = [
           "Eén golflengte, gericht op de haarwortel. Daar is de Nordlys minder geschikt voor, en op roodheid juist wel.",
       },
       {
-        apparaat: "lumi-8",
+        apparaat: "precision-photonic-system",
         verschil:
           "Werkt met licht dat de huid kalmeert. De Nordlys mikt op het rood in bloed en werkt daarvoor met warmte.",
       },
     ],
   },
   {
-    slug: "lumi-8",
+    slug: "precision-photonic-system",
     vragen: [
       {
         vraag: "Voel ik hier iets van?",
         antwoord:
-          "Nee. Er komt licht van één kleur op lage sterkte, zonder warmte en zonder dat er iets wordt weggehaald. De meeste mensen vinden het het rustigste kwartier van hun week.",
+          "Weinig. Er komt licht op lage sterkte en hooguit merk je milde warmte. De meeste mensen vinden het het rustigste kwartier van hun week.",
       },
       {
         vraag: "Waarom verschillende kleuren?",
         antwoord:
-          "Elke kleur komt tot een andere diepte. Blauw blijft aan de oppervlakte, rood komt iets verder en nabij-infrarood het verst, omdat dat het minst door de huid wordt tegengehouden.",
+          "Elke golflengte komt tot een andere diepte. Blauw blijft in de bovenste lagen, rood komt tot in de lederhuid en nabij-infrarood komt het verst, omdat die kleur het minst door de huid wordt tegengehouden. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Werkt dit op zichzelf?",
         antwoord:
-          "Wij zetten het naast een andere behandeling in, waar het de huid tot rust brengt en het herstel ondersteunt. [MEDISCHE-CHECK-ROJDA]",
+          "Bij roodheid en rosacea plannen mensen het als losse reeks. Verder zetten we het in naast een andere behandeling, waar het de huid tot rust brengt en het herstel ondersteunt. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Is er hersteltijd?",
         antwoord:
-          "Nee. Je kunt er direct mee de deur uit en gewoon doorgaan met je dag.",
+          "Nee. Je gaat er direct mee de deur uit en gewoon door met je dag.",
+      },
+      {
+        vraag: "Hoe vaak moet ik komen?",
+        antwoord:
+          "Licht werkt cumulatief, dus het verschil ontstaat over een reeks met een paar dagen tot een week ertussen. Hoeveel sessies dat zijn hoor je na de huidanalyse. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
     techniek: [
-      "LED werkt anders dan een laser: licht van één kleur op lage sterkte, dat de huid opneemt. Er wordt niets verdampt of losgemaakt. Je voelt er weinig van en er is geen hersteltijd; je gaat meteen door met je dag.",
-      "De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft aan de oppervlakte, rood komt iets dieper, en infrarood komt het verst omdat het het minst door de huid wordt tegengehouden.",
-      "Wij zetten LED in naast een andere behandeling, waar het de huid tot rust brengt en het herstel ondersteunt. [MEDISCHE-CHECK-ROJDA]",
+      "LED werkt anders dan een laser of IPL. Die verwarmen een doelwit in de huid, pigment of een vaatje of water, en het resultaat komt uit het herstel dat daarop volgt. LED verwarmt niets: het licht wordt door de huid opgenomen en doet zijn werk in de cel zelf.",
+      "In elke cel zitten mitochondriën, de onderdelen die energie leveren. Licht van bepaalde golflengtes wordt daar opgenomen, waarna de cel meer energie beschikbaar heeft voor herstel en aanmaak. Die werking heet fotobiomodulatie. [MEDISCHE-CHECK-ROJDA]",
+      "De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft in de bovenste lagen en wordt ingezet bij onzuiverheden. Rood komt tot in de lederhuid, waar het bindweefsel zit. Nabij-infrarood komt het verst, omdat die golflengte het minst door de huid wordt tegengehouden. [MEDISCHE-CHECK-ROJDA]",
+      "De huid blijft intact, dus er is niets dat hoeft te herstellen: geen roodheid, geen wachttijd en geen instructies voor thuis. Juist daarom past het direct na een behandeling die de huid wél prikkelt, zoals microneedling of een peeling.",
+      "Het werkt cumulatief. Eén sessie is één prikkel; het verschil ontstaat over een reeks, met een paar dagen tot een week ertussen. De behandelaar kiest de golflengte en de tijd op basis van wat er uit de huidanalyse kwam. [MEDISCHE-CHECK-ROJDA]",
     ],
-    foto: {
-      src: "/images/shoot/apparaat-lumi8.jpg",
-      alt: "Het Lumi-8 LED-paneel boven het gezicht van een cliënt",
-    },
-    naam: "LUMI 8-LED",
-    merk: "Lumi",
+    /* [BEELD-NODIG] De foto van Yasin: de behandelaar die de boog boven het gezicht
+       instelt, met het Skin Complete-logo in beeld. Zodra hij op
+       public/images/shoot/apparaat-precision-photonic-system.jpg staat, kan dit blok
+       terug:
+         foto: {
+           src: "/images/shoot/apparaat-precision-photonic-system.jpg",
+           alt: "Behandelaar stelt het Precision Photonic System in boven het gezicht van een client",
+         },
+       Tot die tijd geen foto, want het oude Lumi-beeld onder een Skin Complete-onderschrift
+       is erger dan een leeg vlak. */
+    naam: "Precision Photonic System",
+    merk: "Skin Complete",
+    merkUrl: "https://skincomplete.eu",
     categorie: "licht",
-    kort: "LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.",
-    wat: "Een LED-toestel dat werkt met een wisselende pulscyclus. Doordat de dosis varieert blijft de huid op het licht reageren, wat bij een constante dosis afvlakt. Wordt meestal als toevoeging bij een andere behandeling gedaan. [MEDISCHE-CHECK-ROJDA]",
+    kort: "LED-licht in meerdere golflengtes, elk met een eigen diepte in de huid. Zonder naalden, zuren of hersteltijd.",
+    wat: "Het LED-systeem van Skin Complete waar wij mee werken. Het licht wordt door de huid opgenomen en ondersteunt daar het herstel; de behandelaar kiest de golflengte en de tijd op basis van de huidanalyse. Meestal aansluitend op een andere behandeling, en bij roodheid of rosacea ook als losse reeks. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
-      "Roodheid en rosacea kalmeren",
-      "Fijne lijntjes en diepere rimpels",
+      "Roodheid en rosacea rustiger maken [MEDISCHE-CHECK-ROJDA]",
+      "Het herstel na needling of een peeling ondersteunen",
       "Toevoegen aan een behandeling zonder extra hersteltijd",
     ],
     nietVoor: [
-      "Op zichzelf een traject vervangen",
-      "Pigment of haargroei",
-      "Snelle zichtbare verandering; dit werkt over een reeks",
+      "Voor pigment of haargroei kies je laser of IPL",
+      "Voor structuur en littekens werkt microneedling dieper",
+      "Licht werkt door herhaling, dus je plant een reeks",
     ],
-    behandelingen: ["lumi-8-led"],
+    behandelingen: ["led-therapie"],
 
     werkwijze: "licht",
     doelwit: "licht",
     diepte: 25,
     fasen: [
       {
-        kop: "Drie kleuren",
-        zin: "Rood, geel en bijna-infrarood licht, zonder warmte en zonder naalden.",
+        kop: "Golflengte gekozen",
+        zin: "De behandelaar stelt de kleur in die bij je huid en het doel van de sessie hoort.",
       },
       {
-        kop: "Wisselende puls",
-        zin: "De pulscyclus varieert, zodat de huid niet went aan de dosis.",
+        kop: "Onder de boog",
+        zin: "Je krijgt een bril op en het paneel hangt op een handbreedte boven je gezicht.",
       },
       {
-        kop: "Geen hersteltijd",
-        zin: "Je kunt direct door met je dag, zonder roodheid of wachttijd.",
+        kop: "Vaste tijd",
+        zin: "De sessie loopt op een ingestelde tijd; daarna ga je direct door met je dag.",
       },
     ],
     verschilMet: [
       {
         apparaat: "nordlys-ipl",
         verschil:
-          "Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 werkt met licht dat de huid opneemt, en heeft daarom geen hersteltijd.",
+          "Mikt op de vaatjes zelf en werkt met warmte. Het Precision Photonic System werkt met licht dat de huid opneemt, en heeft daarom geen hersteltijd.",
       },
       {
         apparaat: "fotona",
         verschil:
-          "Breekt weefsel af om herstel uit te lokken. De Lumi 8 werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt.",
+          "Breekt weefsel af om herstel uit te lokken. LED werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt.",
       },
       {
         apparaat: "coolifting",
@@ -975,7 +991,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     ],
     verschilMet: [
       {
-        apparaat: "lumi-8",
+        apparaat: "precision-photonic-system",
         verschil:
           "Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk.",
       },

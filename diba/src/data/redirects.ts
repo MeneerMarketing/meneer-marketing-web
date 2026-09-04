@@ -17,4 +17,15 @@ export const LEGACY_REDIRECTS: readonly {
     source: "/laserontharing/prijzen",
     destination: "/laserontharing/configurator",
   },
+  /* De Lumi 8 staat niet meer in de kliniek; het LED-werk gebeurt nu op het Precision
+     Photonic System van Skin Complete. De behandeling heet daarbij naar wat het is en
+     niet naar de kast waar het op draait. */
+  {
+    source: "/apparatuur/lumi-8",
+    destination: "/apparatuur/precision-photonic-system",
+  },
+  {
+    source: "/behandelingen/lumi-8-led",
+    destination: "/behandelingen/led-therapie",
+  },
 ] as const;

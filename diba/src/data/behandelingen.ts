@@ -970,49 +970,52 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     duurMinuten: 45,
   },
   {
-    slug: "lumi-8-led",
+    slug: "led-therapie",
     inDeStoel: [
-      "Je ligt met je ogen dicht onder een paneel dat op een handbreedte van je gezicht hangt. Er is licht en er is verder niets: geen warmte, geen tinteling, geen geluid.",
-      "De meeste mensen vinden het het rustigste kwartier van hun week. Het wordt vaak gecombineerd met een andere behandeling in dezelfde afspraak.",
-      "Erna kun je direct door met je dag. Er is niets aan je huid gebeurd waar iets van hoeft te herstellen.",
+      "Je krijgt een bril op en ligt met je ogen dicht. Het paneel hangt op een handbreedte boven je gezicht en geeft licht in de kleur die de behandelaar heeft ingesteld. Er is licht en verder weinig: geen prik, geen tinteling, hooguit milde warmte.",
+      "De sessie loopt op een vaste tijd. Meestal plannen we hem aansluitend op een andere behandeling, terwijl je toch al ligt, en dan is het het rustigste deel van de afspraak.",
+      "Erna ga je direct door met je dag. Er is geen roodheid om te verbergen en er zijn geen instructies voor thuis.",
     ],
-    foto: {
-      src: "/images/shoot/beh-led-masker.jpg",
-      alt: "Een LED-masker met rood licht op het gezicht",
-    },
-    naam: "Lumi 8 LED",
-    apparaat: "Lumi 8",
+    /* [BEELD-NODIG] Zelfde foto als op de apparatuurpagina. Zie de toelichting daar. */
+    naam: "LED-therapie",
+    apparaat: "Precision Photonic System",
     categorie: "laser",
-    kort: "LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling.",
+    kort: "Licht in meerdere golflengtes dat de huid rustiger maakt en het herstel ondersteunt. Zonder naalden of zuren.",
     lagen: ["opperhuid"],
     werking:
-      "Rood, geel en bijna-infrarood licht brengen de huid tot rust en ondersteunen het herstel. De pulsen wisselen elkaar af, zodat de huid niet aan het licht went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes. [MEDISCHE-CHECK-ROJDA]",
+      "Bij LED-therapie neemt de huid licht op van een bepaalde golflengte. Dat licht wordt opgenomen door de mitochondriën in je cellen, de onderdelen die energie leveren, waarna er meer energie beschikbaar is voor herstel en aanmaak. Die werking heet fotobiomodulatie. Er wordt niets verwarmd en niets weggehaald, en juist daarom is er geen hersteltijd. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
-    sessies: "Meestal als toevoeging bij een andere behandeling",
+    sessies:
+      "Meestal aansluitend op een andere behandeling. Als losse reeks bij roodheid, met een paar dagen tot een week ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 30,
-    bijProblemen: [{ label: "Rosacea", href: "/huidproblemen/rosacea" }],
+    bijProblemen: [
+      { label: "Rosacea", href: "/huidproblemen/rosacea" },
+      { label: "Roodheid", href: "/huidproblemen/couperose" },
+      { label: "Gevoelige huid", href: "/huidproblemen/gevoelige-huid" },
+    ],
     wel: [
-      "Werkt zonder naalden, zuren of hersteltijd",
-      "Wordt ingezet bij roodheid, rosacea en fijne lijntjes [MEDISCHE-CHECK-ROJDA]",
-      "Wisselt de pulsen af, zodat de huid niet aan het licht went",
+      "Maakt roodheid en rosacea rustiger [MEDISCHE-CHECK-ROJDA]",
+      "Ondersteunt het herstel na needling of een peeling",
+      "Komt bovenop een behandeling zonder extra hersteltijd",
     ],
     niet: [
-      "LED versterkt een andere behandeling en vervangt die niet",
-      "Voor pigment, vaatjes of littekens kies je laser of needling",
-      "Licht werkt door herhaling, dus je plant meerdere sessies [MEDISCHE-CHECK-ROJDA]",
+      "Voor pigment of haargroei kies je laser of IPL",
+      "Voor structuur en littekens werkt microneedling dieper",
+      "Licht werkt door herhaling, dus je plant een reeks",
     ],
+    welNietKop: { kop: "Waar licht", accent: "wel en niet bij helpt" },
     stappen: [
       {
-        kop: "Na de hoofdbehandeling",
-        zin: "Meestal aansluitend, terwijl je toch al ligt.",
+        kop: "De kleur gekozen",
+        zin: "Blauw blijft aan de oppervlakte, rood komt in de lederhuid en infrarood komt het verst. De behandelaar kiest wat past. [MEDISCHE-CHECK-ROJDA]",
       },
       {
-        kop: "Onder de lamp",
-        zin: "Ogen dicht, licht aan. Je voelt er niets van, hooguit lichte warmte.",
+        kop: "Onder de boog",
+        zin: "Ogen dicht, bril op, licht aan. Het paneel hangt op een handbreedte boven je gezicht en de tijd staat vooraf ingesteld.",
       },
       {
-        kop: "Klaar",
-        zin: "Geen roodheid, geen wachttijd, geen instructies voor thuis.",
+        kop: "Direct door",
+        zin: "Geen roodheid, geen wachttijd en geen instructies voor thuis. Make-up mag diezelfde dag weer.",
       },
     ],
     faq: [
@@ -1025,6 +1028,16 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
         vraag: "Kan ik alleen hiervoor komen?",
         antwoord:
           "Ja, dat kan. Bij roodheid of rosacea plannen mensen het ook als losse reeks, omdat het licht dan het werk doet.",
+      },
+      {
+        vraag: "Wat merk ik ervan tijdens de sessie?",
+        antwoord:
+          "Weinig. Er komt licht op lage sterkte en hooguit voel je milde warmte. Je ogen blijven dicht en je krijgt een bril op.",
+      },
+      {
+        vraag: "Op welk apparaat gebeurt dit?",
+        antwoord:
+          "Op het Precision Photonic System van Skin Complete. Welke golflengte en welke tijd erbij horen, bepaalt de behandelaar na de huidanalyse.",
       },
     ],
     duurMinuten: 20,
