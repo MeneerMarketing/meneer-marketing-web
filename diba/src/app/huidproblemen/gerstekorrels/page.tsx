@@ -109,7 +109,7 @@ export default function Pagina() {
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Een milium halen we weg met een fijne naald, in een paar seconden
               per bolletje. Is het rood, warm en pijnlijk, dan gaat het om een
-              ontsteking en hoort het bij je huisarts.
+              ontsteking; kom dan langs, want de aanpak is dan een andere.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

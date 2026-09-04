@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState, type CSSProperties } from "react";
+import Link from "next/link";
 import Label from "@/components/ui/Label";
 import { ONDERARM, PROEF } from "@/data/veroudering";
 import { publicCopy } from "@/lib/copy-flags";
@@ -63,11 +64,24 @@ export default function Onderarmtest() {
 
   return (
     <div className="mt-12">
+      {/* De clou staat vooraan.
+
+          Okan, 4 september: de informatie is waardevol maar het duurt te lang voor je
+          begrijpt waar het heen gaat, en de conclusie stond onderaan in een gewone alinea.
+          Dat is een bewijsvoering, en die leest niemand op een website.
+
+          Nu eerst de uitkomst in het formaat van een kop. De tabel eronder is daarmee geen
+          puzzel meer maar onderbouwing, en die mag je overslaan. */}
       <div className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8">
-        <Label>Het enige experiment met een controlegroep</Label>
-        <p className="mt-3 max-w-[70ch] text-[17px] leading-8 text-[var(--t-body)]">
-          Twee stukken huid van dezelfde persoon. Zet je eigen leeftijd erin en
-          kijk hoeveel regels er verschillen.
+        <Label>Zon of leeftijd</Label>
+        <p className="diba-display-s mt-4 max-w-[26ch]">
+          Je binnenarm is even oud als je gezicht.{" "}
+          <span className="diba-accent">Toch ziet hij er jonger uit.</span>
+        </p>
+        <p className="mt-5 max-w-[70ch] text-[17px] leading-8 text-[var(--t-body)]">
+          Alles wat je op je gezicht extra ziet, is er dus bij gekomen en niet
+          meegegroeid. Dat is het deel waar een behandeling iets aan doet. Zet
+          je leeftijd hieronder in en zie hoe de twee zich verhouden.
         </p>
 
         <div className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5">
@@ -166,11 +180,24 @@ export default function Onderarmtest() {
         ))}
       </div>
 
-      <p className="mt-8 max-w-[76ch] text-[17px] leading-8 text-[var(--t-strong)]">
-        Allebei die stukken huid zijn precies even oud. Wat je op het ene extra
-        ziet is opgebouwd, niet meegegroeid. Dat is ook het enige goede nieuws
-        op deze pagina: aan opgebouwd zit een knop, aan meegegroeid niet.
-      </p>
+      {/* De afsluiter stond hier als gewone alinea en zakte weg. Als groen vlak is
+          hij het antwoord op de vraag die de tabel oproept: en nu. */}
+      <div className="mt-8 rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
+        <p className="diba-card-title-lg max-w-[34ch]">
+          Aan opgebouwd zit een knop. Aan meegegroeid niet.
+        </p>
+        <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+          Het deel dat door de zon is opgebouwd, is het deel dat we kunnen
+          behandelen. Tijdens de intake stelt de huidtherapeut vast hoe groot
+          dat deel bij jou is, en welke behandeling daarbij past.
+        </p>
+        <Link
+          href="/intake"
+          className="diba-label mt-7 inline-flex min-h-12 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        >
+          Plan een huidconsult
+        </Link>
+      </div>
     </div>
   );
 }

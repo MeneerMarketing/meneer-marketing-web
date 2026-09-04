@@ -137,7 +137,7 @@ export const LITTEKEN_SOORTEN = [
     klanttaal: "Putjes die je vooral ziet bij zijlicht",
     vakterm: "atrofische littekens",
     watJeZiet:
-      "Kleine indeukingen, vaak op de wangen en slapen. Ze vallen op bij strijklicht en veel minder recht van voren.",
+      "Kleine indeukingen, vaak op de wangen en slapen. Ze vallen op bij licht van opzij en veel minder recht van voren.",
     watHetBetekent:
       "Er is weefsel verloren gegaan tijdens de genezing. De huid eromheen is normaal. [MEDISCHE-CHECK-ROJDA]",
     aanpak:

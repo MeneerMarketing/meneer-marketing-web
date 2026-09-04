@@ -118,13 +118,29 @@ export default function HuidverouderingPage() {
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Het grootste deel van wat je huid ouder maakt, komt door zonlicht
-              en niet door je leeftijd. Dat deel is goed te behandelen, met
-              peelings, needling en laser.
+              en niet door je leeftijd. Juist dat deel is goed te behandelen. De
+              huidtherapeut kiest uit medische peelings, microneedling met de{" "}
+              <Link
+                href="/behandelingen/skinpen"
+                className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                SkinPen
+              </Link>
+              , fractionele laser op de{" "}
+              <Link
+                href="/apparatuur/fotona"
+                className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Fotona
+              </Link>
+              , IPL bij pigment en vaatjes, en mesotherapie.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Tijdens de intake stellen we vast wat bij jou door de zon komt en
-              wat bij je leeftijd hoort, en welke behandeling daarbij past.
+              Wat het bij jou wordt hangt af van je huid en van wat er precies
+              speelt; meestal is het een combinatie over een aantal maanden.
+              Tijdens de intake stelt de huidtherapeut vast wat door de zon komt
+              en wat bij je leeftijd hoort.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

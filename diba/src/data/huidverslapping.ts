@@ -109,19 +109,19 @@ export const ZWAARTEKRACHT_STAPPEN: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Kijk staand",
+    kop: "Staand beoordeeld",
     tekst:
-      "Recht vooruit in de spiegel, met je gezicht in rust. Zo zie je eruit op de momenten waarop het je opvalt, en dat is waar we vanaf rekenen.",
+      "De huidtherapeut bekijkt je gezicht rechtop en in rust. Dat is hoe je eruitziet op de momenten waarop het je zelf opvalt, en daar rekenen we vanaf.",
   },
   {
-    kop: "Kijk liggend",
+    kop: "Liggend vergeleken",
     tekst:
-      "Ga op je rug liggen met een spiegel boven je, of maak een foto. Wat nu strakker oogt, trekt de zwaartekracht overdag naar beneden.",
+      "Daarna hetzelfde gezicht liggend, waar de zwaartekracht geen grip heeft. Het verschil tussen die twee beelden laat zien wat er aan stevigheid te winnen valt.",
   },
   {
-    kop: "Vergelijk de twee",
+    kop: "Vastgelegd in beeld",
     tekst:
-      "Het verschil tussen die twee beelden geeft ongeveer aan wat er te winnen valt. Is er nauwelijks verschil, dan levert een behandeling weinig op.",
+      "Beide opnames leggen we onder vaste belichting vast. Bij een volgende afspraak zetten we ze naast elkaar, zodat je de verandering ziet in plaats van inschat.",
   },
 ];
 

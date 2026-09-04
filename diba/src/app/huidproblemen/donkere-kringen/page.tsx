@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Spiegeltest from "@/components/kringen/Spiegeltest";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -14,7 +13,13 @@ import {
 import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
-import { KRINGEN_FAQ, KRINGEN_WEL_NIET, UITKOMSTEN } from "@/data/kringen";
+import {
+  KRINGEN_BEOORDELING,
+  KRINGEN_FAQ,
+  KRINGEN_WEL_NIET,
+  UITKOMSTEN,
+} from "@/data/kringen";
+import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -154,9 +159,25 @@ export default function DonkereKringenPage() {
             label="In het consult"
             kop="Waar we"
             accent="naar kijken"
-            intro="De huidtherapeut beoordeelt of je naar kleur kijkt of naar schaduw, en of het pigment is of doorschijnende vaatjes."
+            intro="Onder het oog telt het licht dubbel: een lamp van boven maakt van elke holte een donkere plek. Daarom beoordelen we het onder vaste belichting."
           />
-          <Spiegeltest />
+
+          {/* Hier stond een test met drie vragen die je thuis voor een raam moest doen.
+              Okan: dat moeten mensen niet zelf uitzoeken, daarvoor komen ze hier. Wat de
+              huidtherapeut beoordeelt staat er nu, en waarom je dat thuis niet ziet. */}
+          <ul className="mt-12 grid gap-4 md:grid-cols-3">
+            {KRINGEN_BEOORDELING.map((stap) => (
+              <li
+                key={stap.kop}
+                className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <h3 className="diba-card-title">{stap.kop}</h3>
+                <p className="mt-3 min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(stap.tekst)}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

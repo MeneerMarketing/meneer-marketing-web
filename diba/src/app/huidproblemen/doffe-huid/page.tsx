@@ -103,20 +103,23 @@ export default function Pagina() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Een vale huid
+              Een doffe huid
               <br />
               <span className="diba-accent">zonder glans</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Een doffe huid kaatst het licht minder terug. Dat komt meestal
-              door een opeenhoping van dode huidcellen of door te weinig vocht.
-              Beide behandelen we, met peelings, HydraFacial of microneedling.
+              door een opeenhoping van dode huidcellen, door te weinig vocht of
+              door een combinatie daarvan. De huidtherapeut heeft er meerdere
+              behandelingen voor: medische peelings, HydraFacial, OxyGeneo,
+              dermaplaning en microneedling.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Tijdens de intake stellen we vast waar het bij jou vandaan komt,
-              en welke behandeling daarbij past.
+              Welke daarvan het wordt verschilt per persoon, want geen huid is
+              hetzelfde. Tijdens de intake stelt de huidtherapeut vast waar het
+              bij jou vandaan komt en stelt daar de aanpak op af.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

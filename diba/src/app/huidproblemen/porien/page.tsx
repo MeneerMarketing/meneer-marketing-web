@@ -211,7 +211,7 @@ export default function PorienPage() {
       <HuidanalyseAssen
         kop="Waarom we onder vast licht meten"
         alineas={[
-          "Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In strijklicht en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.",
+          "Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In licht dat van opzij valt en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.",
           "Daarom leggen we ze vast onder dezelfde belichting en op dezelfde afstand. Dan is een verschil later echt een verschil en geen ander moment van de dag.",
         ]}
         assen={[

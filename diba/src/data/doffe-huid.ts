@@ -112,19 +112,19 @@ export const LICHTTEST_STAPPEN: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Ga bij een raam staan",
+    kop: "Bij daglicht",
     tekst:
-      "Daglicht van opzij, geen lamp boven je hoofd. Badkamerverlichting valt van boven en maakt elke huid even vlak; dat is precies wat je nu niet wil.",
+      "De huidtherapeut beoordeelt je huid bij daglicht van opzij. Onder een lamp van boven lijkt elke huid even vlak, en dan zie je juist niet waar het licht verstrooit.",
   },
   {
-    kop: "Draai langzaam je hoofd",
+    kop: "Onder vergroting",
     tekst:
-      "Kijk naar je jukbeen terwijl je draait. Zie je op één punt een aaneengesloten glans meeschuiven, of blijft het overal even mat?",
+      "Met vergroting is te zien of er een aaneengesloten glans over je jukbeen loopt of dat het overal even mat blijft. Dat onderscheid bepaalt de richting.",
   },
   {
-    kop: "Voel er dan overheen",
+    kop: "Meten met de EVE-M",
     tekst:
-      "Blijft het mat en voelt het ruw, dan gaat het om opgehoopte cellen. Blijft het mat en voelt het glad, dan gaat het eerder om vocht of om kleur.",
+      "De meting laat zien of het om opgehoopte cellen gaat, om vochttekort of om kleur. Op die uitkomst kiest de huidtherapeut de behandeling.",
   },
 ];
 

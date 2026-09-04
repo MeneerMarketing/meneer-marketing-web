@@ -125,9 +125,9 @@ export default function RosaceaPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Rosacea is een chronische aandoening die je goed kunt sturen. Met
-              behandeling en de juiste verzorging krijg je een rustiger
-              basiskleur, minder opvlammingen en minder zichtbare adertjes.
+              Rosacea is een chronische aandoening die goed te sturen is. Met de
+              juiste behandelingen en verzorging wordt je basiskleur rustiger,
+              vlam je minder vaak op en worden de adertjes minder zichtbaar.
             </p>
 
             {/* De andere kant van de kruisverwijzing. Zonder dit is de couperosepagina
@@ -142,7 +142,8 @@ export default function RosaceaPage() {
               >
                 couperose
               </Link>
-              , en daar staat de drukproef waarmee je dat zelf nagaat.
+              . Ze zitten vaak samen; de huidtherapeut beoordeelt onder
+              vergroting wat er bij jou speelt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

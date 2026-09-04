@@ -47,7 +47,7 @@ export const metadata: Metadata = zoekmachineVelden({
 const PAD = "/huidproblemen/ingegroeide-haren";
 
 const ANKERS = [
-  { id: "check", label: "De haarcheck" },
+  { id: "check", label: "In het consult" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "vragen", label: "Vragen" },

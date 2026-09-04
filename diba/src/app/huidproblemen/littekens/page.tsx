@@ -51,7 +51,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/littekens",
   titel: "Littekens en striae behandelen in Rotterdam",
   omschrijving:
-    "Littekens en striae behandelen met needling en laser. Rode littekens reageren doorgaans goed, witte veel minder. Wat er in jouw geval mogelijk is.",
+    "Littekens en striae behandelen met microneedling en laser. Rode littekens reageren doorgaans het beste; bij witte richten we ons op de structuur.",
 });
 
 const PAD = "/huidproblemen/littekens";
@@ -143,9 +143,10 @@ export default function LittekensPage() {
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Bij littekens en striae bepaalt de leeftijd wat er mogelijk is.
-              Rode en paarse littekens reageren doorgaans goed op behandeling,
-              witte veel minder. Tijdens de intake kijken we hoe oud het
-              litteken is en welke behandeling erbij past.
+              Rode en paarse littekens reageren doorgaans het beste; bij witte
+              littekens richten we ons op de structuur en het reliëf. Tijdens de
+              intake beoordeelt de huidtherapeut in welk stadium het zit en
+              welke behandeling daarbij hoort.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

@@ -48,7 +48,7 @@ export const metadata: Metadata = zoekmachineVelden({
 const PAD = "/huidproblemen/huidverslapping";
 
 const ANKERS = [
-  { id: "test", label: "De zwaartekrachttest" },
+  { id: "test", label: "In het consult" },
   { id: "welke", label: "Welk stadium" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "meten", label: "Hoe we meten" },
@@ -110,14 +110,15 @@ export default function Pagina() {
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Een zakkende kaaklijn en wangen behandelen we met technieken die
-              de aanmaak van collageen op gang brengen, zoals needling en laser.
-              Dat geeft steviger weefsel en een vastere lijn.
+              de aanmaak van collageen op gang brengen: microneedling met de
+              SkinPen of de Dermapen 4, fractionele laser met de Fotona, en
+              radiofrequentie. Dat geeft steviger weefsel en een vastere lijn.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wat er liggend strakker uitziet, geeft ongeveer aan wat er te
-              winnen valt. Tijdens de intake kijken we daarnaar en bespreken we
-              wat realistisch is.
+              Welke techniek bij jou past hangt af van je huid en van het
+              stadium waarin de verslapping zit. Dat stelt de huidtherapeut
+              tijdens de intake vast, en meestal is het een combinatie.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

@@ -104,19 +104,19 @@ export const HAARCHECK_STAPPEN: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Fel licht, geen vingers",
+    kop: "Onder vergroting",
     tekst:
-      "Ga bij een raam of onder een lamp staan en kijk van dichtbij. Niet knijpen en niet peuteren; daar begint het litteken dat straks langer blijft dan het bultje.",
+      "De huidtherapeut kijkt met vergroting of er een haar in het bultje zit. Dat onderscheid bepaalt of ontharen zin heeft of dat het om iets anders gaat.",
   },
   {
-    kop: "Zoek de krul",
+    kop: "De lus of de punt",
     tekst:
-      "Zie je onder het velletje een donkere lus of punt? Dan zit er een haar in en gaat het om ingroei. Zie je niets donkers, dan is het iets anders.",
+      "Zit er onder het velletje een donkere lus of punt, dan gaat het om ingroei. Is daar niets van te zien, dan kijken we verder naar wat het wel is.",
   },
   {
-    kop: "Voel over een groter vlak",
+    kop: "Over een groter vlak",
     tekst:
-      "Strijk met je hand over de hele zone. Voelt alles als schuurpapier, ook waar geen bultje zit, dan gaat het eerder om verhoorning dan om haren.",
+      "Daarna beoordelen we de hele zone. Zit het op een plek of over een groter gebied, want dat bepaalt of je een zone laat behandelen of een enkel plekje.",
   },
 ];
 

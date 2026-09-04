@@ -65,7 +65,7 @@ export const metadata: Metadata = zoekmachineVelden({
 const PAD = "/huidproblemen/couperose";
 
 const ANKERS = [
-  { id: "drukproef", label: "De drukproef" },
+  { id: "drukproef", label: "In het consult" },
   { id: "welke", label: "Welk beeld" },
   { id: "rosacea", label: "Of is het rosacea" },
   { id: "wel-niet", label: "Wat helpt" },
@@ -79,7 +79,7 @@ const SOORTEN: readonly SoortOptie[] = COUPEROSE_BEELDEN.map((b) => ({
   klanttaal: b.klanttaal,
   vakterm: b.vakterm,
   velden: [
-    ["Wat de drukproef doet", b.drukproef],
+    ["Wat de druktest laat zien", b.drukproef],
     ["Wat het betekent", b.watHetBetekent],
     ["Wat wij eerst doen", b.aanpak],
   ] as const,
@@ -149,18 +149,19 @@ export default function CouperosePage() {
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Die dunne rode of paarse lijntjes op je wangen of naast je neus
               heten couperose. Een egale rode waas is iets anders en vraagt om
-              een andere aanpak, al zitten ze vaak samen. Met je vinger zie je
-              binnen een paar seconden waar je mee te maken hebt.
+              een andere aanpak, al zitten ze vaak samen. De huidtherapeut
+              beoordeelt onder vergroting welke van de twee het bij jou is.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              We behandelen couperose met IPL en laser. Meestal zijn er een paar
-              sessies nodig; tijdens de intake hoor je hoeveel dat er in jouw
-              geval zijn.
+              We behandelen couperose met de Nordlys IPL en met laser. Onze
+              huidtherapeuten werken hier dagelijks mee en stellen het apparaat
+              af op jouw huidtype en op de vaatjes die er zitten. Hoeveel
+              sessies dat vraagt hoor je tijdens de intake.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#drukproef">Doe de drukproef</Button>
+              <Button href="#drukproef">Wat we in het consult bekijken</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -196,11 +197,11 @@ export default function CouperosePage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De drukproef"
+            label="In het consult"
             raster="gelijk"
-            kop="Zo zie je zelf"
-            accent="waar je mee te maken hebt"
-            intro="Dit is geen diagnose en het vervangt geen meting. Het is wel het enige onderscheid dat je thuis kunt maken, en het bepaalt of licht bij jou iets oplevert of dat we eerst naar de triggers moeten kijken."
+            kop="Vaatjes of"
+            accent="roodheid"
+            intro="Couperose en rosacea lopen met het blote oog door elkaar en vragen een andere aanpak. Zo stelt de huidtherapeut vast waar je mee te maken hebt."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">

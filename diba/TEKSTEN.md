@@ -800,7 +800,7 @@ Tijdens de intake meten we je huid, bespreken we het type en hoor je hoeveel ses
 
 Wat er na acne achterblijft, is meestal een rood vlekje, een bruine vlek of een kuiltje. Ze lijken op elkaar en vragen een andere behandeling: peelings bij verkleuring, microneedling en laser bij kuiltjes.
 
-Tijdens de intake stellen we onder strijklicht vast om welke van de drie het gaat.
+Tijdens de intake beoordeelt de huidtherapeut het onder licht dat van opzij valt. Alleen zo zie je of er een kuiltje in zit of dat het om kleur gaat.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -1056,23 +1056,23 @@ De kuiltjes zelf komen uit de bouw van je onderhuid. Aan de stevigheid en de doo
 
 **COUPEROSE BEHANDELEN**
 
-Die dunne rode of paarse lijntjes op je wangen of naast je neus heten couperose. Een egale rode waas is iets anders en vraagt om een andere aanpak, al zitten ze vaak samen. Met je vinger zie je binnen een paar seconden waar je mee te maken hebt.
+Die dunne rode of paarse lijntjes op je wangen of naast je neus heten couperose. Een egale rode waas is iets anders en vraagt om een andere aanpak, al zitten ze vaak samen. De huidtherapeut beoordeelt onder vergroting welke van de twee het bij jou is.
 
-We behandelen couperose met IPL en laser. Meestal zijn er een paar sessies nodig; tijdens de intake hoor je hoeveel dat er in jouw geval zijn.
+We behandelen couperose met de Nordlys IPL en met laser. Onze huidtherapeuten werken hier dagelijks mee en stellen het apparaat af op jouw huidtype en op de vaatjes die er zitten. Hoeveel sessies dat vraagt hoor je tijdens de intake.
 
-> knop: DOE DE DRUKPROEF
+> knop: WAT WE IN HET CONSULT BEKIJKEN
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zo zie je zelf waar je mee te maken hebt**
+**Vaatjes of roodheid**
 
-Dit is geen diagnose en het vervangt geen meting. Het is wel het enige onderscheid dat je thuis kunt maken, en het bepaalt of licht bij jou iets oplevert of dat we eerst naar de triggers moeten kijken.
+Couperose en rosacea lopen met het blote oog door elkaar en vragen een andere aanpak. Zo stelt de huidtherapeut vast waar je mee te maken hebt.
 
-- Druk zachtjes Leg een schone vinger op de rode plek en druk er twee seconden op. Zachtjes is genoeg; de huid hoeft niet wit te worden.
+- Onder vergroting De huidtherapeut bekijkt de rode plek vergroot. Losse, vertakte lijntjes zien er anders uit dan een egale waas, en met het blote oog lopen die twee door elkaar.
 
-- Kijk terwijl je drukt Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Dat verschil zegt om welke van de twee het gaat.
+- Met lichte druk Een korte druk op de plek laat zien of het rood wegtrekt of dat er een lijntje blijft staan. Dat verschil bepaalt of het om vaatjes gaat of om roodheid in de huid zelf.
 
-- Laat los Komt het rood terug over het hele vlak, dan is het een gloed. Bleef er een lijntje staan, dan is het een vaatje.
+- Vastgelegd in beeld De opname gaat onder vaste belichting, zodat we bij een volgende afspraak kunnen vergelijken. Roodheid wisselt per dag, dus zonder vast licht meet je vooral het weer.
 
 Zag je allebei? Dat is de meest voorkomende uitkomst, en geen tussenvorm die je zelf hoeft op te lossen. Hieronder staat wat elk van de twee vraagt.
 
@@ -1086,7 +1086,7 @@ De uitslag van de drukproef bepaalt bij welk beeld je uitkomt. Bij één daarvan
 
 - Allebei door elkaar Een rode ondergrond met daarin een paar duidelijke lijntjes
 
-*WAT DE DRUKPROEF DOET*
+*WAT DE DRUKTEST LAAT ZIEN*
 
 Het lijntje blijft zichtbaar terwijl je drukt. Het bloed laat zich er niet uit duwen.
 
@@ -1170,8 +1170,6 @@ WAT WE HIER METEN
 
 Hoeveel zichtbare lijntjes er zijn en hoe ze lopen
 
-*Roodheid*
-
 De basiskleur van de huid, los van de losse vaatjes
 
 *Gevoeligheid*
@@ -1222,11 +1220,11 @@ Het huidconsult legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies
 
 **Google-omschrijving:** Een doffe huid behandelen met peelings, HydraFacial en microneedling. Waar dofheid vandaan komt en wat eraan te doen is.
 
-**EEN VALE HUID ZONDER GLANS**
+**EEN DOFFE HUID ZONDER GLANS**
 
-Een doffe huid kaatst het licht minder terug. Dat komt meestal door een opeenhoping van dode huidcellen of door te weinig vocht. Beide behandelen we, met peelings, HydraFacial of microneedling.
+Een doffe huid kaatst het licht minder terug. Dat komt meestal door een opeenhoping van dode huidcellen, door te weinig vocht of door een combinatie daarvan. De huidtherapeut heeft er meerdere behandelingen voor: medische peelings, HydraFacial, OxyGeneo, dermaplaning en microneedling.
 
-Tijdens de intake stellen we vast waar het bij jou vandaan komt, en welke behandeling daarbij past.
+Welke daarvan het wordt verschilt per persoon, want geen huid is hetzelfde. Tijdens de intake stelt de huidtherapeut vast waar het bij jou vandaan komt en stelt daar de aanpak op af.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -1236,11 +1234,11 @@ Tijdens de intake stellen we vast waar het bij jou vandaan komt, en welke behand
 
 De huidtherapeut beoordeelt je huid bij daglicht en onder vergroting. Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat zie je alleen onder de juiste hoek.
 
-- Ga bij een raam staan Daglicht van opzij, geen lamp boven je hoofd. Badkamerverlichting valt van boven en maakt elke huid even vlak; dat is precies wat je nu niet wil.
+- Bij daglicht De huidtherapeut beoordeelt je huid bij daglicht van opzij. Onder een lamp van boven lijkt elke huid even vlak, en dan zie je juist niet waar het licht verstrooit.
 
-- Draai langzaam je hoofd Kijk naar je jukbeen terwijl je draait. Zie je op één punt een aaneengesloten glans meeschuiven, of blijft het overal even mat?
+- Onder vergroting Met vergroting is te zien of er een aaneengesloten glans over je jukbeen loopt of dat het overal even mat blijft. Dat onderscheid bepaalt de richting.
 
-- Voel er dan overheen Blijft het mat en voelt het ruw, dan gaat het om opgehoopte cellen. Blijft het mat en voelt het glad, dan gaat het eerder om vocht of om kleur.
+- Meten met de EVE-M De meting laat zien of het om opgehoopte cellen gaat, om vochttekort of om kleur. Op die uitkomst kiest de huidtherapeut de behandeling.
 
 **Vier oorzaken van dofheid**
 
@@ -1384,19 +1382,13 @@ Tijdens de intake stellen we vast om welke van de drie het gaat en wat daarbij p
 
 **Waar we naar kijken**
 
-De huidtherapeut beoordeelt of je naar kleur kijkt of naar schaduw, en of het pigment is of doorschijnende vaatjes.
+Onder het oog telt het licht dubbel: een lamp van boven maakt van elke holte een donkere plek. Daarom beoordelen we het onder vaste belichting.
 
-Je hebt hier alleen een spiegel of je telefoon voor nodig. De test kost je twee minuten en bepaalt of behandelen in jouw geval zin heeft.
+- Kleur of schaduw Onder vaste belichting van voren valt een schaduw weg en blijft kleur staan. Thuis lukt dat niet: een lamp aan het plafond maakt van elke holte een donkere plek.
 
-**Licht recht van voren**
+- Pigment of vaatjes Onder vergroting is te zien of de donkerte in de huid zelf zit of dat je door een dunne huid heen naar de vaatjes eronder kijkt. Die twee vragen een andere behandeling.
 
-Ga voor een raam staan met het daglicht recht in je gezicht, en kijk dan in je telefoon. Vergelijk dat met hoe het eruitziet onder een lamp aan het plafond.
-
-- Veel lichter of weg Onder de lamp duidelijk donkerder dan bij het raam
-
-- Blijft ongeveer gelijk Het maakt weinig uit waar het licht vandaan komt
-
-Licht van boven maakt van elke holte een donkere plek. Verdwijnt de kring bij licht van voren, dan kijk je naar een schaduw en niet naar een kleur.
+- Vastgelegd in beeld De opname gaat onder dezelfde belichting als bij een volgende afspraak. Zo zie je het verschil naast elkaar in plaats van dat je het achteraf moet inschatten.
 
 **Drie oorzaken**
 
@@ -1447,8 +1439,6 @@ Daarom leggen we dit gebied vast met vaste belichting en op vaste afstand. Pas d
 > knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
-
-*Kleur*
 
 Hoeveel pigment er in de huid zelf zit
 
@@ -1764,7 +1754,7 @@ De diagnose en de medicatie lopen via je huisarts. Wij werken daarnaast aan je h
 
 Gerstekorrel betekent in de volksmond en in de spreekkamer twee verschillende dingen. Wat mensen meestal bedoelen is een milium: een hard wit bolletje dat er maanden zit, geen pijn doet en niet uit te knijpen is. Dat is in seconden weg.
 
-Een milium halen we weg met een fijne naald, in een paar seconden per bolletje. Is het rood, warm en pijnlijk, dan gaat het om een ontsteking en hoort het bij je huisarts.
+Een milium halen we weg met een fijne naald, in een paar seconden per bolletje. Is het rood, warm en pijnlijk, dan gaat het om een ontsteking; kom dan langs, want de aanpak is dan een andere.
 
 > knop: KIJK WAT JIJ HEBT
 
@@ -2288,9 +2278,9 @@ Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laa
 
 **HUIDVEROUDERING BEHANDELEN**
 
-Het grootste deel van wat je huid ouder maakt, komt door zonlicht en niet door je leeftijd. Dat deel is goed te behandelen, met peelings, needling en laser.
+Het grootste deel van wat je huid ouder maakt, komt door zonlicht en niet door je leeftijd. Juist dat deel is goed te behandelen. De huidtherapeut kiest uit medische peelings, microneedling met de SkinPen, fractionele laser op de Fotona, IPL bij pigment en vaatjes, en mesotherapie.
 
-Tijdens de intake stellen we vast wat bij jou door de zon komt en wat bij je leeftijd hoort, en welke behandeling daarbij past.
+Wat het bij jou wordt hangt af van je huid en van wat er precies speelt; meestal is het een combinatie over een aantal maanden. Tijdens de intake stelt de huidtherapeut vast wat door de zon komt en wat bij je leeftijd hoort.
 
 > knop: DOE DE ONDERARMTEST
 
@@ -2300,7 +2290,9 @@ Tijdens de intake stellen we vast wat bij jou door de zon komt en wat bij je lee
 
 De behandelaar vergelijkt een stuk huid dat weinig zon zag met je gezicht. Dat verschil laat zien welk deel door zonschade komt.
 
-Twee stukken huid van dezelfde persoon. Zet je eigen leeftijd erin en kijk hoeveel regels er verschillen.
+Je binnenarm is even oud als je gezicht. Toch ziet hij er jonger uit.
+
+Alles wat je op je gezicht extra ziet, is er dus bij gekomen en niet meegegroeid. Dat is het deel waar een behandeling iets aan doet. Zet je leeftijd hieronder in en zie hoe de twee zich verhouden.
 
 35 jaar
 
@@ -2342,7 +2334,11 @@ Elke dag zon, ook in de winter
 
 Fijne lijntjes, ongelijke kleur, verwijde vaatjes, ruwere structuur. Dit is tijd plus tienduizenden uren UV.
 
-Allebei die stukken huid zijn precies even oud. Wat je op het ene extra ziet is opgebouwd, niet meegegroeid. Dat is ook het enige goede nieuws op deze pagina: aan opgebouwd zit een knop, aan meegegroeid niet.
+Aan opgebouwd zit een knop. Aan meegegroeid niet.
+
+Het deel dat door de zon is opgebouwd, is het deel dat we kunnen behandelen. Tijdens de intake stelt de huidtherapeut vast hoe groot dat deel bij jou is, en welke behandeling daarbij past.
+
+> knop: PLAN EEN HUIDCONSULT
 
 **Wat er bij veroudering in je huid verandert**
 
@@ -2494,8 +2490,6 @@ Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijden
 
 We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en welk deel niet. Daarna beslis jij of je iets wilt doen, en wat.
 
-> knop: PLAN EEN HUIDCONSULT
-
 ---
 
 ### /huidproblemen/huidverslapping
@@ -2506,9 +2500,9 @@ We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en 
 
 **EEN VERSLAPTE KAAKLIJN EN ZAKKENDE WANGEN**
 
-Een zakkende kaaklijn en wangen behandelen we met technieken die de aanmaak van collageen op gang brengen, zoals needling en laser. Dat geeft steviger weefsel en een vastere lijn.
+Een zakkende kaaklijn en wangen behandelen we met technieken die de aanmaak van collageen op gang brengen: microneedling met de SkinPen of de Dermapen 4, fractionele laser met de Fotona, en radiofrequentie. Dat geeft steviger weefsel en een vastere lijn.
 
-Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. Tijdens de intake kijken we daarnaar en bespreken we wat realistisch is.
+Welke techniek bij jou past hangt af van je huid en van het stadium waarin de verslapping zit. Dat stelt de huidtherapeut tijdens de intake vast, en meestal is het een combinatie.
 
 > knop: DOE DE ZWAARTEKRACHTTEST
 
@@ -2518,11 +2512,11 @@ Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. Tijde
 
 De behandelaar bekijkt je huid staand en liggend. Het verschil tussen die twee beelden geeft aan wat een behandeling kan opleveren.
 
-- Kijk staand Recht vooruit in de spiegel, met je gezicht in rust. Zo zie je eruit op de momenten waarop het je opvalt, en dat is waar we vanaf rekenen.
+- Staand beoordeeld De huidtherapeut bekijkt je gezicht rechtop en in rust. Dat is hoe je eruitziet op de momenten waarop het je zelf opvalt, en daar rekenen we vanaf.
 
-- Kijk liggend Ga op je rug liggen met een spiegel boven je, of maak een foto. Wat nu strakker oogt, trekt de zwaartekracht overdag naar beneden.
+- Liggend vergeleken Daarna hetzelfde gezicht liggend, waar de zwaartekracht geen grip heeft. Het verschil tussen die twee beelden laat zien wat er aan stevigheid te winnen valt.
 
-- Vergelijk de twee Het verschil tussen die twee beelden geeft ongeveer aan wat er te winnen valt. Is er nauwelijks verschil, dan levert een behandeling weinig op.
+- Vastgelegd in beeld Beide opnames leggen we onder vaste belichting vast. Bij een volgende afspraak zetten we ze naast elkaar, zodat je de verandering ziet in plaats van inschat.
 
 **De vier stadia**
 
@@ -2666,11 +2660,11 @@ Blijft het terugkomen, dan is laserontharing de oplossing die het bij de wortel 
 
 De huidtherapeut kijkt onder vergroting of er een haar in het bultje zit. Dat onderscheid bepaalt of ontharen zin heeft of niet.
 
-- Fel licht, geen vingers Ga bij een raam of onder een lamp staan en kijk van dichtbij. Niet knijpen en niet peuteren; daar begint het litteken dat straks langer blijft dan het bultje.
+- Onder vergroting De huidtherapeut kijkt met vergroting of er een haar in het bultje zit. Dat onderscheid bepaalt of ontharen zin heeft of dat het om iets anders gaat.
 
-- Zoek de krul Zie je onder het velletje een donkere lus of punt? Dan zit er een haar in en gaat het om ingroei. Zie je niets donkers, dan is het iets anders.
+- De lus of de punt Zit er onder het velletje een donkere lus of punt, dan gaat het om ingroei. Is daar niets van te zien, dan kijken we verder naar wat het wel is.
 
-- Voel over een groter vlak Strijk met je hand over de hele zone. Voelt alles als schuurpapier, ook waar geen bultje zit, dan gaat het eerder om verhoorning dan om haren.
+- Over een groter vlak Daarna beoordelen we de hele zone. Zit het op een plek of over een groter gebied, want dat bepaalt of je een zone laat behandelen of een enkel plekje.
 
 **Vier soorten bultjes na het scheren**
 
@@ -2866,7 +2860,7 @@ Keratosis pilaris is een onschuldige en vaak erfelijke huidaandoening. De bultje
 
 We behandelen het met peelings en gerichte verzorging die de verhoorning oplost. Schuren werkt hier niet: de propjes zitten rond het haarzakje en niet aan de oppervlakte.
 
-> knop: DOE DE SCHUURPAPIERTEST
+> knop: WAT WE IN HET CONSULT BEKIJKEN
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
@@ -2976,11 +2970,11 @@ Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldi
 
 **Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Littekens en striae behandelen met needling en laser. Rode littekens reageren doorgaans goed, witte veel minder. Wat er in jouw geval mogelijk is.
+**Google-omschrijving:** Littekens en striae behandelen met microneedling en laser. Rode littekens reageren doorgaans het beste; bij witte richten we ons op de structuur.
 
 **LITTEKENS EN STRIAE DIE ZICHTBAAR BLIJVEN**
 
-Bij littekens en striae bepaalt de leeftijd wat er mogelijk is. Rode en paarse littekens reageren doorgaans goed op behandeling, witte veel minder. Tijdens de intake kijken we hoe oud het litteken is en welke behandeling erbij past.
+Bij littekens en striae bepaalt de leeftijd wat er mogelijk is. Rode en paarse littekens reageren doorgaans het beste; bij witte littekens richten we ons op de structuur en het reliëf. Tijdens de intake beoordeelt de huidtherapeut in welk stadium het zit en welke behandeling daarbij hoort.
 
 > knop: ZET DE LITTEKENKLOK
 
@@ -3036,7 +3030,7 @@ Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En
 
 *WAT JE ZIET*
 
-Kleine indeukingen, vaak op de wangen en slapen. Ze vallen op bij strijklicht en veel minder recht van voren.
+Kleine indeukingen, vaak op de wangen en slapen. Ze vallen op bij licht van opzij en veel minder recht van voren.
 
 *WAT HET BETEKENT*
 
@@ -3448,7 +3442,7 @@ Tijdens de intake kijken we mee onder vergroting en stellen we vast om welk type
 
 De huidtherapeut kijkt onder vergroting naar je poriën en beoordeelt of het om normale porie-inhoud gaat of om echte mee-eters.
 
-- Het licht van opzij De huidtherapeut beoordeelt je huid in strijklicht. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.
+- Het licht van opzij De huidtherapeut beoordeelt je huid met licht dat van opzij valt. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.
 
 - De verdeling over je huid Zit er in vrijwel elke porie een grijs stipje, dan is dat normale porie-inhoud. Zitten ze verspreid en donkerder, dan zijn het mee-eters.
 
@@ -3960,7 +3954,7 @@ Vier van deze gewoontes doen mensen thuis in de overtuiging dat ze helpen. Ermee
 
 - Weten of je naar poriën kijkt of naar kuiltjes. Dat verschil bepaalt de hele aanpak.
 
-- Foto's onder hetzelfde licht vergelijken. Poriën zien er in strijklicht altijd erger uit.
+- Foto's onder hetzelfde licht vergelijken. Poriën zien er onder licht van opzij altijd erger uit.
 
 **DIT RADEN WE AF**
 
@@ -3976,7 +3970,7 @@ Vier van deze gewoontes doen mensen thuis in de overtuiging dat ze helpen. Ermee
 
 **Waarom we onder vast licht meten**
 
-Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In strijklicht en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.
+Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In licht dat van opzij valt en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.
 
 Daarom leggen we ze vast onder dezelfde belichting en op dezelfde afstand. Dan is een verschil later echt een verschil en geen ander moment van de dag.
 
@@ -4298,9 +4292,9 @@ Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De huidanal
 
 **ROSACEA: EEN HUID DIE STEEDS OPVLAMT**
 
-Rosacea is een chronische aandoening die je goed kunt sturen. Met behandeling en de juiste verzorging krijg je een rustiger basiskleur, minder opvlammingen en minder zichtbare adertjes.
+Rosacea is een chronische aandoening die goed te sturen is. Met de juiste behandelingen en verzorging wordt je basiskleur rustiger, vlam je minder vaak op en worden de adertjes minder zichtbaar.
 
-Zie je vooral losse adertjes en geen opvlammingen? Dan gaat het waarschijnlijk om couperose, en daar staat de drukproef waarmee je dat zelf nagaat.
+Zie je vooral losse adertjes en geen opvlammingen? Dan gaat het waarschijnlijk om couperose. Ze zitten vaak samen; de huidtherapeut beoordeelt onder vergroting wat er bij jou speelt.
 
 > knop: SORTEER JOUW TRIGGERS
 
@@ -12181,4 +12175,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_107 pagina's · 5650 tekstblokken · ongeveer 83.703 woorden._
+_107 pagina's · 5647 tekstblokken · ongeveer 83.876 woorden._

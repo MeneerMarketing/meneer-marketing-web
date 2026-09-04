@@ -110,7 +110,7 @@ export const KORRELCHECK_STAPPEN: readonly {
   {
     kop: "Het licht van opzij",
     tekst:
-      "De huidtherapeut beoordeelt je huid in strijklicht. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.",
+      "De huidtherapeut beoordeelt je huid met licht dat van opzij valt. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.",
   },
   {
     kop: "De verdeling over je huid",

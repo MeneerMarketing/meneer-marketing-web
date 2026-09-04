@@ -102,19 +102,19 @@ export const DRUKPROEF_STAPPEN: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Druk zachtjes",
+    kop: "Onder vergroting",
     tekst:
-      "Leg een schone vinger op de rode plek en druk er twee seconden op. Zachtjes is genoeg; de huid hoeft niet wit te worden.",
+      "De huidtherapeut bekijkt de rode plek vergroot. Losse, vertakte lijntjes zien er anders uit dan een egale waas, en met het blote oog lopen die twee door elkaar.",
   },
   {
-    kop: "Kijk terwijl je drukt",
+    kop: "Met lichte druk",
     tekst:
-      "Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Dat verschil zegt om welke van de twee het gaat.",
+      "Een korte druk op de plek laat zien of het rood wegtrekt of dat er een lijntje blijft staan. Dat verschil bepaalt of het om vaatjes gaat of om roodheid in de huid zelf.",
   },
   {
-    kop: "Laat los",
+    kop: "Vastgelegd in beeld",
     tekst:
-      "Komt het rood terug over het hele vlak, dan is het een gloed. Bleef er een lijntje staan, dan is het een vaatje.",
+      "De opname gaat onder vaste belichting, zodat we bij een volgende afspraak kunnen vergelijken. Roodheid wisselt per dag, dus zonder vast licht meet je vooral het weer.",
   },
 ];
 

@@ -219,3 +219,31 @@ export const KRINGEN_FAQ = [
   },
   kostenVraag(),
 ] as const;
+
+/**
+ * Wat de huidtherapeut onder het oog beoordeelt.
+ *
+ * Hier stond een test met drie vragen voor thuis. Okan, 4 september: mensen moeten dat niet
+ * zelf uitzoeken, daarvoor komen ze hier. Bovendien is de vraag die de test stelde precies
+ * de vraag die je met een spiegel en een plafondlamp níét kunt beantwoorden.
+ */
+export const KRINGEN_BEOORDELING: readonly {
+  readonly kop: string;
+  readonly tekst: string;
+}[] = [
+  {
+    kop: "Kleur of schaduw",
+    tekst:
+      "Onder vaste belichting van voren valt een schaduw weg en blijft kleur staan. Thuis lukt dat niet: een lamp aan het plafond maakt van elke holte een donkere plek.",
+  },
+  {
+    kop: "Pigment of vaatjes",
+    tekst:
+      "Onder vergroting is te zien of de donkerte in de huid zelf zit of dat je door een dunne huid heen naar de vaatjes eronder kijkt. Die twee vragen een andere behandeling.",
+  },
+  {
+    kop: "Vastgelegd in beeld",
+    tekst:
+      "De opname gaat onder dezelfde belichting als bij een volgende afspraak. Zo zie je het verschil naast elkaar in plaats van dat je het achteraf moet inschatten.",
+  },
+];

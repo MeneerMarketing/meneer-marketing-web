@@ -151,7 +151,7 @@ export const PORIEN_WEL_NIET = {
     "Consequent en mild reinigen. Twee keer per dag rustig werkt beter dan één keer per week grondig.",
     "Werken aan de stevigheid van de huid rondom, want die bepaalt de vorm van de opening.",
     "Weten of je naar poriën kijkt of naar kuiltjes. Dat verschil bepaalt de hele aanpak.",
-    "Foto's onder hetzelfde licht vergelijken. Poriën zien er in strijklicht altijd erger uit.",
+    "Foto's onder hetzelfde licht vergelijken. Poriën zien er onder licht van opzij altijd erger uit.",
   ],
   niet: [
     "Uitknijpen. Je maakt de opening wijder en de kans op een vlekje of littekentje groter.",

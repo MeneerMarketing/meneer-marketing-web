@@ -118,7 +118,7 @@ export default function Pagina() {
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#check">Doe de schuurpapiertest</Button>
+              <Button href="#check">Wat we in het consult bekijken</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
