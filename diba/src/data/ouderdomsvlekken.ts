@@ -163,18 +163,18 @@ export const VERANDERCHECK_STAPPEN: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Maak een foto met iets ernaast",
+    kop: "Vorm, rand en kleur",
     tekst:
-      "Leg een muntje of je vingertop naast de plek en fotografeer recht van boven, bij daglicht. Zonder maatstaf is elke vergelijking later giswerk.",
+      "De behandelaar beoordeelt of de plek gelijkmatig van kleur is en of de rand scherp begrensd loopt. Dat onderscheidt een zonvlek van iets anders.",
   },
   {
-    kop: "Zet er een datum bij",
+    kop: "Onder UV-licht",
     tekst:
-      "In je fotomap of in een notitie. Dit is de stap die mensen overslaan, en precies de stap waardoor de vergelijking later iets waard is.",
+      "Daaronder wordt zichtbaar hoeveel pigment er dieper in de huid zit. Dat bepaalt met hoeveel sessies je rekening moet houden.",
   },
   {
-    kop: "Kijk over drie maanden opnieuw",
+    kop: "Vastgelegd in beeld",
     tekst:
-      "Zelfde licht, zelfde hoek, zelfde maatstaf. Is er niets veranderd, dan weet je dat. Is er wel iets veranderd, dan ga je naar de huisarts en niet naar ons.",
+      "We fotograferen de plek onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.",
   },
 ];

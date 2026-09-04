@@ -836,11 +836,11 @@ Er is geen weefsel verloren gegaan. Dat betekent een andere behandeling, en vaak
 
 Elke stap vraagt dat de vorige klaar is. Daarom begint een littekentraject zelden meteen met de laser.
 
-- STAP 1 Eerst de ontsteking Zolang er nieuwe puistjes bij komen, komen er nieuwe plekken bij. Elke littekenbehandeling in een ontstoken huid maakt de ontsteking bovendien erger.
+- Eerst de ontsteking Zolang er nieuwe puistjes bij komen, komen er nieuwe plekken bij. Elke littekenbehandeling in een ontstoken huid maakt de ontsteking bovendien erger.
 
-- STAP 2 Dan de kleur laten zakken Rood en bruin trekken deels vanzelf weg. Wat je na een half jaar nog ziet, is pas wat er echt zit; daarvoor behandel je iets dat toch was verdwenen.
+- Dan de kleur laten zakken Rood en bruin trekken deels vanzelf weg. Wat je na een half jaar nog ziet, is pas wat er echt zit; daarvoor behandel je iets dat toch was verdwenen.
 
-- STAP 3 Pas dan de putjes Wat overblijft is littekenweefsel. Dat is het enige type waar een reeks behandelingen op de lange termijn echt iets aan verandert.
+- Pas dan de putjes Wat overblijft is littekenweefsel. Dat is het enige type waar een reeks behandelingen op de lange termijn echt iets aan verandert.
 
 Dan begint het bij de acne en niet bij de littekens.
 
@@ -1030,9 +1030,9 @@ Kan ik hiervoor bij jullie terecht? +
 
 Nee. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetzelfde antwoord als hierboven.
 
-**Waarom we hier niets aan doen**
+**Aan de huid eromheen**
 
-Er staat op deze pagina geen knop om een afspraak te maken. Wil je wel iets aan de kwaliteit van je huid doen, dan is dat een andere vraag met een ander antwoord, en daar kijken we graag naar mee.
+De kuiltjes zelf komen uit de bouw van je onderhuid. Aan de stevigheid en de doorbloeding van de huid erboven valt wel te werken, en dat maakt het beeld rustiger. In de intake bespreken we wat er in jouw geval haalbaar is.
 
 ---
 
@@ -1056,11 +1056,11 @@ We behandelen couperose met IPL en laser. Meestal zijn er een paar sessies nodig
 
 Dit is geen diagnose en het vervangt geen meting. Het is wel het enige onderscheid dat je thuis kunt maken, en het bepaalt of licht bij jou iets oplevert of dat we eerst naar de triggers moeten kijken.
 
-- STAP 1 Druk zachtjes Leg een schone vinger op de rode plek en druk er twee seconden op. Zachtjes is genoeg; de huid hoeft niet wit te worden.
+- Druk zachtjes Leg een schone vinger op de rode plek en druk er twee seconden op. Zachtjes is genoeg; de huid hoeft niet wit te worden.
 
-- STAP 2 Kijk terwijl je drukt Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Dat verschil zegt om welke van de twee het gaat.
+- Kijk terwijl je drukt Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Dat verschil zegt om welke van de twee het gaat.
 
-- STAP 3 Laat los Komt het rood terug over het hele vlak, dan is het een gloed. Bleef er een lijntje staan, dan is het een vaatje.
+- Laat los Komt het rood terug over het hele vlak, dan is het een gloed. Bleef er een lijntje staan, dan is het een vaatje.
 
 Zag je allebei? Dat is de meest voorkomende uitkomst, en geen tussenvorm die je zelf hoeft op te lossen. Hieronder staat wat elk van de twee vraagt.
 
@@ -1218,11 +1218,11 @@ In de intake stellen we vast waar het bij jou vandaan komt, en welke behandeling
 
 De huidtherapeut beoordeelt je huid bij daglicht en onder vergroting. Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat zie je alleen onder de juiste hoek.
 
-- STAP 1 Ga bij een raam staan Daglicht van opzij, geen lamp boven je hoofd. Badkamerverlichting valt van boven en maakt elke huid even vlak; dat is precies wat je nu niet wil.
+- Ga bij een raam staan Daglicht van opzij, geen lamp boven je hoofd. Badkamerverlichting valt van boven en maakt elke huid even vlak; dat is precies wat je nu niet wil.
 
-- STAP 2 Draai langzaam je hoofd Kijk naar je jukbeen terwijl je draait. Zie je op één punt een aaneengesloten glans meeschuiven, of blijft het overal even mat?
+- Draai langzaam je hoofd Kijk naar je jukbeen terwijl je draait. Zie je op één punt een aaneengesloten glans meeschuiven, of blijft het overal even mat?
 
-- STAP 3 Voel er dan overheen Blijft het mat en voelt het ruw, dan gaat het om opgehoopte cellen. Blijft het mat en voelt het glad, dan gaat het eerder om vocht of om kleur.
+- Voel er dan overheen Blijft het mat en voelt het ruw, dan gaat het om opgehoopte cellen. Blijft het mat en voelt het glad, dan gaat het eerder om vocht of om kleur.
 
 **Vier oorzaken van dofheid**
 
@@ -1706,9 +1706,9 @@ Helpt zonlicht? +
 
 Bij sommige mensen wel en bij anderen niet, en verbranden maakt het altijd erger. Lichttherapie bestaat als behandeling maar die hoort bij de dermatoloog en niet bij een huidkliniek.
 
-**Naar je huisarts. Wij zijn hooguit een schakel.**
+**Samen met je huisarts**
 
-Er staat op deze pagina bewust geen knop om bij ons een afspraak te maken. Heb je naast eczeem iets anders waar je wél iets aan wilt doen, en is je huid op dat moment rustig, dan kijken we graag mee. Anders sturen we je door.
+De diagnose en de medicatie lopen via je huisarts. Wij werken daarnaast aan je huidbarrière, met behandelingen en verzorging die hem herstellen. Is je huid op dat moment rustig, dan kunnen we beginnen.
 
 ---
 
@@ -1732,11 +1732,11 @@ Een milium halen we weg met een fijne naald, in een paar seconden per bolletje. 
 
 Een fijne naald opent het bolletje en de inhoud komt eruit. Per milium duurt dat een paar seconden, en er blijft geen wondje.
 
-- STAP 1 Eerst kijken, met vergroting De huidtherapeut bekijkt elk bolletje van dichtbij. Zit er iets tussen dat geen milium is, dan hoor je dat meteen en niet halverwege.
+- Eerst kijken, met vergroting De huidtherapeut bekijkt elk bolletje van dichtbij. Zit er iets tussen dat geen milium is, dan hoor je dat meteen en niet halverwege.
 
-- STAP 2 Een prikje per bolletje De huid erboven wordt met een steriele naald geopend en de inhoud eruit gelicht. Per bolletje enkele seconden, en je voelt een prikje zoals bij een splinter.
+- Een prikje per bolletje De huid erboven wordt met een steriele naald geopend en de inhoud eruit gelicht. Per bolletje enkele seconden, en je voelt een prikje zoals bij een splinter.
 
-- STAP 3 Klaar, en je kunt weg Er is geen verdoving, geen pleister en geen hersteltijd. Soms is er een paar uur een rood puntje te zien, en daarna niets meer.
+- Klaar, en je kunt weg Er is geen verdoving, geen pleister en geen hersteltijd. Soms is er een paar uur een rood puntje te zien, en daarna niets meer.
 
 Dan is dit maar de helft van je verhaal.
 
@@ -2104,11 +2104,11 @@ Omdat je daarmee gaat zoeken naar de foto die het meest op jou lijkt, en dat is 
 
 Kan ik hiervoor bij jullie terecht? +
 
-Nee. Er staat op deze pagina geen knop om een afspraak te maken en dat is geen omissie.
+Bij onbegrepen uitslag stelt je huisarts eerst de diagnose. Weet je eenmaal wat het is, dan kun je bij ons terecht voor het herstel van je huidbarrière, in overleg met je arts.
 
 **Naar je huisarts. Bij twijfel vandaag nog.**
 
-Er staat op deze pagina geen knop om bij ons een afspraak te maken. Maak een foto bij het begin en noteer wat eraan voorafging; dat is het meest bruikbare dat je kunt meenemen.
+Bij onbegrepen uitslag hoort een arts de diagnose te stellen. Weet je eenmaal wat het is, dan kunnen wij daarnaast aan je huidbarrière werken, in overleg met je arts.
 
 ---
 
@@ -2454,11 +2454,11 @@ Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. In de
 
 De behandelaar bekijkt je huid staand en liggend. Het verschil tussen die twee beelden geeft aan wat een behandeling kan opleveren.
 
-- STAP 1 Kijk staand Recht vooruit in de spiegel, met je gezicht in rust. Zo zie je eruit op de momenten waarop het je opvalt, en dat is waar we vanaf rekenen.
+- Kijk staand Recht vooruit in de spiegel, met je gezicht in rust. Zo zie je eruit op de momenten waarop het je opvalt, en dat is waar we vanaf rekenen.
 
-- STAP 2 Kijk liggend Ga op je rug liggen met een spiegel boven je, of maak een foto. Wat nu strakker oogt, trekt de zwaartekracht overdag naar beneden.
+- Kijk liggend Ga op je rug liggen met een spiegel boven je, of maak een foto. Wat nu strakker oogt, trekt de zwaartekracht overdag naar beneden.
 
-- STAP 3 Vergelijk de twee Het verschil tussen die twee beelden geeft ongeveer aan wat er te winnen valt. Is er nauwelijks verschil, dan levert een behandeling weinig op.
+- Vergelijk de twee Het verschil tussen die twee beelden geeft ongeveer aan wat er te winnen valt. Is er nauwelijks verschil, dan levert een behandeling weinig op.
 
 **De vier stadia**
 
@@ -2596,11 +2596,11 @@ Blijft het terugkomen, dan is laserontharing de oplossing die het bij de wortel 
 
 De huidtherapeut kijkt onder vergroting of er een haar in het bultje zit. Dat onderscheid bepaalt of ontharen zin heeft of niet.
 
-- STAP 1 Fel licht, geen vingers Ga bij een raam of onder een lamp staan en kijk van dichtbij. Niet knijpen en niet peuteren; daar begint het litteken dat straks langer blijft dan het bultje.
+- Fel licht, geen vingers Ga bij een raam of onder een lamp staan en kijk van dichtbij. Niet knijpen en niet peuteren; daar begint het litteken dat straks langer blijft dan het bultje.
 
-- STAP 2 Zoek de krul Zie je onder het velletje een donkere lus of punt? Dan zit er een haar in en gaat het om ingroei. Zie je niets donkers, dan is het iets anders.
+- Zoek de krul Zie je onder het velletje een donkere lus of punt? Dan zit er een haar in en gaat het om ingroei. Zie je niets donkers, dan is het iets anders.
 
-- STAP 3 Voel over een groter vlak Strijk met je hand over de hele zone. Voelt alles als schuurpapier, ook waar geen bultje zit, dan gaat het eerder om verhoorning dan om haren.
+- Voel over een groter vlak Strijk met je hand over de hele zone. Voelt alles als schuurpapier, ook waar geen bultje zit, dan gaat het eerder om verhoorning dan om haren.
 
 **Vier soorten bultjes na het scheren**
 
@@ -3088,15 +3088,15 @@ Melasma behandelen we met peelings, gerichte verzorging en zonbescherming. Hoe d
 
 Daarom kijken we eerst onder UV-licht. Zit het pigment diep, dan richten we ons op beheersen: minder opvlammingen en een rustiger beeld.
 
-> knop: PAK DE LAMP
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Wat je in gewoon licht niet kunt zien.**
+**Wat de woodlamp laat zien**
 
-Dit is het gereedschap waarmee een dermatoloog de diepte inschat. Onder ultraviolet licht springt pigment dat hoog zit eruit, en pigment dat dieper ligt juist niet. Sleep de lamp over de vlek en kijk wat er verandert.
+Onder ultraviolet licht springt oppervlakkig pigment eruit en blijft dieper pigment juist vlak. Zo schat de behandelaar in wat er mogelijk is.
 
-Sleep de lamp over de vlek. In gewoon licht ziet alles er hetzelfde uit; onder de lamp niet.
+Beweeg de lamp over de vlek om het verschil te zien. In gewoon licht lijkt alles gelijk; onder UV-licht niet.
 
 > knop: HOOG IN DE HUID
 
@@ -3217,8 +3217,6 @@ De meting kost vijftig euro; de trajecten daarna staan met hun tarief op de prij
 **Plan een intake bij Diba Clinics**
 
 We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je dat en raden we behandelen af. Zit het hoog, dan weet je meteen wat er te halen valt en wat het vraagt.
-
-> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -3358,11 +3356,11 @@ In de intake kijken we mee onder vergroting en stellen we vast om welk type onzu
 
 De huidtherapeut kijkt onder vergroting naar je poriën en beoordeelt of het om normale porie-inhoud gaat of om echte mee-eters.
 
-- STAP 1 Het licht van opzij De huidtherapeut beoordeelt je huid in strijklicht. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.
+- Het licht van opzij De huidtherapeut beoordeelt je huid in strijklicht. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.
 
-- STAP 2 De verdeling over je huid Zit er in vrijwel elke porie een grijs stipje, dan is dat normale porie-inhoud. Zitten ze verspreid en donkerder, dan zijn het mee-eters.
+- De verdeling over je huid Zit er in vrijwel elke porie een grijs stipje, dan is dat normale porie-inhoud. Zitten ze verspreid en donkerder, dan zijn het mee-eters.
 
-- STAP 3 Wat je voelt maar niet ziet Hobbeltjes op je voorhoofd en kaaklijn die je wel voelt maar niet ziet, zijn gesloten poriën. Die vragen een andere aanpak.
+- Wat je voelt maar niet ziet Hobbeltjes op je voorhoofd en kaaklijn die je wel voelt maar niet ziet, zijn gesloten poriën. Die vragen een andere aanpak.
 
 **Wat er in een porie kan zitten**
 
@@ -3474,15 +3472,15 @@ De behandelaar beoordeelt eerst elke plek. Verandert er iets aan de vorm of de k
 
 De behandelaar beoordeelt vorm, rand en kleur, en legt de plek vast in beeld. Zo is later te zien of er iets is veranderd.
 
-- STAP 1 Maak een foto met iets ernaast Leg een muntje of je vingertop naast de plek en fotografeer recht van boven, bij daglicht. Zonder maatstaf is elke vergelijking later giswerk.
+- Vorm, rand en kleur De behandelaar beoordeelt of de plek gelijkmatig van kleur is en of de rand scherp begrensd loopt. Dat onderscheidt een zonvlek van iets anders.
 
-- STAP 2 Zet er een datum bij In je fotomap of in een notitie. Dit is de stap die mensen overslaan, en precies de stap waardoor de vergelijking later iets waard is.
+- Onder UV-licht Daaronder wordt zichtbaar hoeveel pigment er dieper in de huid zit. Dat bepaalt met hoeveel sessies je rekening moet houden.
 
-- STAP 3 Kijk over drie maanden opnieuw Zelfde licht, zelfde hoek, zelfde maatstaf. Is er niets veranderd, dan weet je dat. Is er wel iets veranderd, dan ga je naar de huisarts en niet naar ons.
+- Vastgelegd in beeld We fotograferen de plek onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.
 
-Dan hoort daar eerst iemand anders naar te kijken.
+Dan kijkt eerst een arts, en daarna behandelen wij.
 
-Een rafelige rand, ongelijke kleur, groei of jeuk: bij die dingen ga je naar de huisarts. Wij behandelen niets waarvan niet vaststaat wat het is.
+Een rafelige rand, ongelijke kleur, groei of jeuk zijn redenen om het eerst te laten beoordelen. Is het goedaardig, dan halen we de plek daarna hier weg.
 
 > knop: NAAR DE ABCDE-CHECK
 
@@ -4014,7 +4012,7 @@ Als je huid op dat moment rustig is en het gaat om een ander onderwerp, dan kijk
 
 **Wanneer je bij de huisarts hoort**
 
-Er staat op deze pagina geen knop om bij ons een afspraak te maken. Neem je nagels mee in dat gesprek en noem je gewrichten, ook als je er zelf weinig van vindt. Dat zijn de twee dingen die het vaakst worden overgeslagen.
+Noem je nagels en je gewrichten in dat gesprek, ook als je er zelf weinig van merkt. Die twee worden het vaakst overgeslagen. Naast de behandeling van je arts werken wij aan je huidbarrière.
 
 ---
 
@@ -4038,11 +4036,11 @@ Een lijn kan in je huid zitten of in de spier eronder. De behandelaar stelt vast
 
 Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen iets anders. De behandelaar kijkt in rust en in beweging.
 
-- STAP 1 Ontspan alles Ga voor de spiegel staan en laat je gezicht helemaal los. Niet lachen, niet fronsen, ook niet een beetje. Dat laatste is lastiger dan het klinkt.
+- Ontspan alles Ga voor de spiegel staan en laat je gezicht helemaal los. Niet lachen, niet fronsen, ook niet een beetje. Dat laatste is lastiger dan het klinkt.
 
-- STAP 2 Kijk waar de lijn nog staat Welke lijnen zijn verdwenen nu je gezicht in rust is, en welke staan er nog? Alleen dat verschil telt; hoe diep ze zijn doet er nu even niet toe.
+- Kijk waar de lijn nog staat Welke lijnen zijn verdwenen nu je gezicht in rust is, en welke staan er nog? Alleen dat verschil telt; hoe diep ze zijn doet er nu even niet toe.
 
-- STAP 3 Trek dan een gezicht Lach breed, frons, trek je wenkbrauwen op. De lijnen die er alleen nu zijn, zitten in de spier. De lijnen die er ook in rust waren, zitten in je huid.
+- Trek dan een gezicht Lach breed, frons, trek je wenkbrauwen op. De lijnen die er alleen nu zijn, zitten in de spier. De lijnen die er ook in rust waren, zitten in je huid.
 
 Dan kijk je breder dan deze pagina.
 
@@ -4364,11 +4362,11 @@ We rekenen per kwartier en niet per wratje, dus meerdere in een afspraak is mees
 
 De huidtherapeut beoordeelt de vorm, de kleur en of het plekje aan een steeltje hangt. Dat bepaalt of het hier weg kan.
 
-- STAP 1 Kijk of er een steeltje is Hangt het los aan een smaller stukje huid, of zit het met een breed vlak vast? Een steeltje wijst op een fibroom, een breed vlak eerder op iets anders dat we apart bekijken.
+- Kijk of er een steeltje is Hangt het los aan een smaller stukje huid, of zit het met een breed vlak vast? Een steeltje wijst op een fibroom, een breed vlak eerder op iets anders dat we apart bekijken.
 
-- STAP 2 Kijk naar de kleur Huidkleurig of lichtbruin en overal gelijk is gewoon. Ongelijk bruin, zwart, of meerdere kleuren door elkaar is een reden om er eerst iemand anders naar te laten kijken.
+- Kijk naar de kleur Huidkleurig of lichtbruin en overal gelijk is gewoon. Ongelijk bruin, zwart, of meerdere kleuren door elkaar is een reden om er eerst iemand anders naar te laten kijken.
 
-- STAP 3 Denk terug Zat het er een half jaar geleden precies zo bij? Onveranderd is geruststellend. Groeit het, jeukt het of bloedt het, dan gaat het naar de huisarts en niet naar ons.
+- Denk terug Zat het er een half jaar geleden precies zo bij? Onveranderd is geruststellend. Groeit het, jeukt het of bloedt het, dan gaat het naar de huisarts en niet naar ons.
 
 **Vier soorten uitsteeksels**
 
@@ -4628,11 +4626,11 @@ In de intake stellen we vast waar het bij jou vandaan komt.
 
 De huidtherapeut kijkt naar de stand van de huid onder je oog, naar het verloop over de dag en naar de dikte van de huid ter plaatse.
 
-- STAP 1 Het verloop over de dag Vocht zakt in de loop van de dag weg, een vetkussen en een groef blijven gelijk. Daar begint de beoordeling mee.
+- Het verloop over de dag Vocht zakt in de loop van de dag weg, een vetkussen en een groef blijven gelijk. Daar begint de beoordeling mee.
 
-- STAP 2 De dikte van de huid Onder je oog is de huid het dunst van je lichaam. Hoe dun precies, bepaalt wat een behandeling kan toevoegen.
+- De dikte van de huid Onder je oog is de huid het dunst van je lichaam. Hoe dun precies, bepaalt wat een behandeling kan toevoegen.
 
-- STAP 3 De stand van het bot eronder Ligt de oogkas dieper, dan valt er schaduw. Dat ziet eruit als een wal en vraagt iets anders dan vocht.
+- De stand van het bot eronder Ligt de oogkas dieper, dan valt er schaduw. Dat ziet eruit als een wal en vraagt iets anders dan vocht.
 
 **Drie oorzaken**
 
@@ -11677,4 +11675,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5406 tekstblokken · ongeveer 80.962 woorden._
+_105 pagina's · 5405 tekstblokken · ongeveer 80.846 woorden._

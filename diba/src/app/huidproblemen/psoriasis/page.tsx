@@ -149,10 +149,9 @@ export default function PsoriasisPage() {
             <span className="diba-accent">de huisarts hoort</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina geen knop om bij ons een afspraak te maken.
-            Neem je nagels mee in dat gesprek en noem je gewrichten, ook als je
-            er zelf weinig van vindt. Dat zijn de twee dingen die het vaakst
-            worden overgeslagen.
+            Noem je nagels en je gewrichten in dat gesprek, ook als je er zelf
+            weinig van merkt. Die twee worden het vaakst overgeslagen. Naast de
+            behandeling van je arts werken wij aan je huidbarrière.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

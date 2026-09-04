@@ -157,14 +157,11 @@ export default function Pagina() {
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
-            {BEWEEGTEST_STAPPEN.map((stap, i) => (
+            {BEWEEGTEST_STAPPEN.map((stap) => (
               <li
                 key={stap.kop}
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
-                <span className="diba-label text-[var(--g-700)]">
-                  Stap {i + 1}
-                </span>
                 <h3 className="diba-card-title mt-3">{stap.kop}</h3>
                 <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(stap.tekst)}

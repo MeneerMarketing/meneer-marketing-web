@@ -197,8 +197,8 @@ export default function Woodlamp() {
         </div>
 
         <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
-          Sleep de lamp over de vlek. In gewoon licht ziet alles er hetzelfde
-          uit; onder de lamp niet.
+          Beweeg de lamp over de vlek om het verschil te zien. In gewoon licht
+          lijkt alles gelijk; onder UV-licht niet.
         </p>
 
         {/* Slepen is nooit de enige weg. */}

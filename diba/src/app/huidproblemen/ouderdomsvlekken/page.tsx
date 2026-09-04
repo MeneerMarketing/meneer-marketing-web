@@ -156,14 +156,11 @@ export default function Pagina() {
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
-            {VERANDERCHECK_STAPPEN.map((stap, i) => (
+            {VERANDERCHECK_STAPPEN.map((stap) => (
               <li
                 key={stap.kop}
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
-                <span className="diba-label text-[var(--g-700)]">
-                  Stap {i + 1}
-                </span>
                 <h3 className="diba-card-title mt-3">{stap.kop}</h3>
                 <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(stap.tekst)}
@@ -173,14 +170,14 @@ export default function Pagina() {
           </ol>
 
           <div className="mt-10 rounded-[var(--r-md)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9">
-            <Label opDonker>Twijfel je over een plek?</Label>
+            <Label opDonker>Verandert de plek?</Label>
             <p className="diba-card-title-lg mt-4 max-w-[36ch]">
-              Dan hoort daar eerst iemand anders naar te kijken.
+              Dan kijkt eerst een arts, en daarna behandelen wij.
             </p>
             <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Een rafelige rand, ongelijke kleur, groei of jeuk: bij die dingen
-              ga je naar de huisarts. Wij behandelen niets waarvan niet
-              vaststaat wat het is.
+              Een rafelige rand, ongelijke kleur, groei of jeuk zijn redenen om
+              het eerst te laten beoordelen. Is het goedaardig, dan halen we de
+              plek daarna hier weg.
             </p>
             <div className="mt-7">
               <Button

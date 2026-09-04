@@ -109,7 +109,7 @@ export default function MelasmaPage() {
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#diepte">Pak de lamp</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -146,9 +146,9 @@ export default function MelasmaPage() {
         <div className="mx-auto">
           <SectieKop
             label="De woodlamp"
-            kop="Wat je in gewoon licht"
-            accent="niet kunt zien."
-            intro="Dit is het gereedschap waarmee een dermatoloog de diepte inschat. Onder ultraviolet licht springt pigment dat hoog zit eruit, en pigment dat dieper ligt juist niet. Sleep de lamp over de vlek en kijk wat er verandert."
+            kop="Wat de woodlamp"
+            accent="laat zien"
+            intro="Onder ultraviolet licht springt oppervlakkig pigment eruit en blijft dieper pigment juist vlak. Zo schat de behandelaar in wat er mogelijk is."
           />
           <Woodlamp />
         </div>

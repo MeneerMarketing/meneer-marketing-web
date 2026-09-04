@@ -180,6 +180,6 @@ export const UITSLAG_FAQ = [
   {
     vraag: "Kan ik hiervoor bij jullie terecht?",
     antwoord:
-      "Nee. Er staat op deze pagina geen knop om een afspraak te maken en dat is geen omissie.",
+      "Bij onbegrepen uitslag stelt je huisarts eerst de diagnose. Weet je eenmaal wat het is, dan kun je bij ons terecht voor het herstel van je huidbarrière, in overleg met je arts.",
   },
 ] as const;

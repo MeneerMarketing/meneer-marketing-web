@@ -178,16 +178,15 @@ export default function CellulitisPage() {
       {/* ── Afsluiting zonder afspraakknop ── */}
       <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto">
-          <Label>Wat er dan wel te doen valt</Label>
+          <Label>Wat we kunnen doen</Label>
           <h2 className="diba-display-s mt-5 max-w-[24ch]">
-            Waarom we hier
-            <br />
-            <span className="diba-accent">niets aan doen</span>
+            Aan de huid <span className="diba-accent">eromheen</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina geen knop om een afspraak te maken. Wil je
-            wel iets aan de kwaliteit van je huid doen, dan is dat een andere
-            vraag met een ander antwoord, en daar kijken we graag naar mee.
+            De kuiltjes zelf komen uit de bouw van je onderhuid. Aan de
+            stevigheid en de doorbloeding van de huid erboven valt wel te
+            werken, en dat maakt het beeld rustiger. In de intake bespreken we
+            wat er in jouw geval haalbaar is.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

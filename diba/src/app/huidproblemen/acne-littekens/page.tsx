@@ -196,14 +196,11 @@ export default function AcneLittekensPage() {
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
-            {VOLGORDE.map((stap, i) => (
+            {VOLGORDE.map((stap) => (
               <li
                 key={stap.kop}
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
-                <span className="diba-label text-[var(--g-700)]">
-                  Stap {i + 1}
-                </span>
                 <h3 className="diba-card-title mt-3">{stap.kop}</h3>
                 {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken en niet
                       van de lengte, dus reserveren we de ruimte in plaats van tekens te tellen. */}

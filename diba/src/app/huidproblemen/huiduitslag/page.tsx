@@ -245,9 +245,9 @@ export default function HuiduitslagPage() {
             <span className="diba-accent">Bij twijfel vandaag nog.</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina geen knop om bij ons een afspraak te maken.
-            Maak een foto bij het begin en noteer wat eraan voorafging; dat is
-            het meest bruikbare dat je kunt meenemen.
+            Bij onbegrepen uitslag hoort een arts de diagnose te stellen. Weet
+            je eenmaal wat het is, dan kunnen wij daarnaast aan je huidbarrière
+            werken, in overleg met je arts.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

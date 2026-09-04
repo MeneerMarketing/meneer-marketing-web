@@ -178,15 +178,13 @@ export default function EczeemPage() {
         <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
-            Naar je huisarts.
-            <br />
-            <span className="diba-accent">Wij zijn hooguit een schakel.</span>
+            Samen met <span className="diba-accent">je huisarts</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Er staat op deze pagina bewust geen knop om bij ons een afspraak te
-            maken. Heb je naast eczeem iets anders waar je wél iets aan wilt
-            doen, en is je huid op dat moment rustig, dan kijken we graag mee.
-            Anders sturen we je door.
+            De diagnose en de medicatie lopen via je huisarts. Wij werken
+            daarnaast aan je huidbarrière, met behandelingen en verzorging die
+            hem herstellen. Is je huid op dat moment rustig, dan kunnen we
+            beginnen.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link
