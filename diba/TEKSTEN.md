@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 4 september 2026 · 105 pagina's
+Diba Clinics · gegenereerd op 4 september 2026 · 106 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -11556,6 +11556,118 @@ In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je na
 
 ---
 
+### /vacatures/huidtherapeut
+
+**Tabbladtitel:** Vacature huidtherapeut Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen en peelings, in een team van acht. Parttime of fulltime.
+
+**VACATURE HUIDTHERAPEUT IN ROTTERDAM**
+
+Diba Clinics is een huidkliniek in Rotterdam-Noord. We behandelen acne, pigment, littekens, huidverbetering en ongewenste haargroei, en we werken sinds 2017 met een vast team van acht.
+
+We zoeken een huidtherapeut die zelfstandig een spreekuur draait: meten, een behandelplan opstellen en dat plan zelf uitvoeren op de apparatuur die er staat.
+
+> knop: SOLLICITEER OP DEZE FUNCTIE
+
+> knop: EERST EEN VRAAG STELLEN
+
+Liever bellen? Dat kan op 010-2038423.
+
+Huidtherapeut
+
+*DIENSTVERBAND*
+
+Parttime of fulltime
+
+*UREN*
+
+24 tot 38 uur, in overleg
+
+*LOCATIE*
+
+Weissenbruchlaan 166, 3054 LS Rotterdam. Geplaatst op 4 september 2026.
+
+**Wat je doet**
+
+Je draait een eigen spreekuur: je meet, je stelt het plan op en je voert het zelf uit. Vier onderdelen die elke week terugkomen.
+
+- Meten en beoordelen Elk traject begint met een huidanalyse op de EVE-M. Je beoordeelt wat je ziet, legt het vast onder vaste belichting en bespreekt de uitkomst met de client.
+
+- Een plan dat klopt Je stelt vast welke behandeling erbij past, in welke volgorde en over hoeveel sessies. Contra-indicaties beoordeel je zelf en je legt uit waarom iets wel of niet kan.
+
+- Zelf behandelen Laser, IPL, microneedling, peelings en mesotherapie. Je stelt de apparatuur in op het huidtype en de zone, en je stuurt bij op wat de huid tussentijds doet.
+
+- Het traject bewaken Bij elke controle leg je de opnames naast elkaar. Levert een aanpak te weinig op, dan verander je hem in plaats van hem uit te zitten.
+
+TUSSEN TWEE AFSPRAKEN DOOR
+
+**Wat we vragen en bieden**
+
+Links de eisen die er echt toe doen, rechts wat daar bij Diba tegenover staat. Beide lijsten zijn even lang, met opzet.
+
+- Een afgeronde hbo-bachelor Huidtherapie (Haagse Hogeschool of Hogeschool Utrecht)
+
+- Ingeschreven in het Kwaliteitsregister Paramedici, of daar op korte termijn aan kunnen voldoen
+
+- Ervaring met laser, IPL of microneedling, of de bereidheid je daarop in te werken
+
+- Je kunt uitleggen wat je doet in gewone taal, ook als het antwoord tegenvalt
+
+- Beschikbaar op minimaal twee avonden per maand, want dinsdag en donderdag lopen door tot 21:00
+
+- Een vaste plek in een team van acht, met huidtherapeuten en orthomoleculair huidspecialisten naast elkaar
+
+- Apparatuur die er staat en werkt: Fotona TimeWalker, Nordlys IPL, Gentle Laser Pro-U, SkinPen, Dermapen 4, U225 en de EVE-M
+
+- Tijd voor een intake van een uur, want daar begint elk traject mee
+
+- Ruimte voor bij- en nascholing, ook omdat het Kwaliteitsregister die punten vraagt
+
+- Een kliniek in Rotterdam-Noord met parkeergelegenheid in de straat
+
+**Van mail tot meeloopdag**
+
+Drie stappen, en je weet vooraf wat er komt. Er zit geen assessment in en geen ronde met vijf mensen aan tafel.
+
+- Je stuurt iets Een mail naar info@dibaclinics.nl met je cv. Een motivatiebrief hoeft niet; een paar regels over waar je nu werkt en wat je zoekt is genoeg.
+
+- We bellen Binnen een week hoor je iets. Dat gesprek duurt een kwartier en gaat over wat je nu doet en wat je hier zou willen doen.
+
+- Je loopt een dag mee Je draait mee in de kliniek, ziet de apparatuur en spreekt het team. Daarna weet je allebei genoeg om iets te vinden.
+
+**Veelgestelde vragen**
+
+Kan ik solliciteren als starter? +
+
+Ja. Een diploma huidtherapie is de eis; ervaring met specifieke apparatuur is dat niet. Je wordt ingewerkt op de toestellen die je nog niet kent.
+
+Werk ik met een eigen agenda? +
+
+Je draait een eigen spreekuur en ziet je eigen clienten terug bij de controles. De agenda wordt door de praktijkmanager gepland.
+
+Hoeveel uur is er beschikbaar? +
+
+24 tot 38 uur, in overleg. Dinsdag en donderdag lopen door tot 21:00 en zaterdag tot 16:00, dus avonden en zaterdagen horen bij het rooster.
+
+Zit er een salarisindicatie bij? +
+
+Die bespreken we in het eerste gesprek, samen met de uren en de startdatum.
+
+Waar zit de kliniek precies? +
+
+Aan de Weissenbruchlaan 166, 3054 LS Rotterdam, in Rotterdam-Noord. Met de auto sta je in de straat en met het openbaar vervoer ben je vanaf Rotterdam Centraal in een klein half uur binnen.
+
+**Stuur je cv, de rest bespreken we**
+
+Een motivatiebrief hoeft niet. Een paar regels over waar je nu werkt en wat je zoekt is genoeg, en binnen een week hoor je iets.
+
+> knop: MAIL JE SOLLICITATIE
+
+> knop: STEL EEN VRAAG VIA WHATSAPP
+
+---
+
 ### /verwijzers
 
 **Tabbladtitel:** Voor verwijzers | Diba Clinics
@@ -11640,7 +11752,7 @@ Of en hoe er na de meting wordt teruggekoppeld aan de verwijzer is nog niet vast
 
 We zijn met 8, waarvan 5 huidtherapeuten. Er wordt gewerkt met laser, licht, needling en peelings, en elk traject begint met een meting. Dat laatste is geen slogan maar de volgorde waarin het hier gaat.
 
-- Allround schoonheidsspecialist of huidtherapeut Je doet metingen, je behandelt en je legt uit waarom iets wel of niet kan. De apparatuur staat er; wat telt is wat jij ermee doet. ›
+- Huidtherapeut Je draait een eigen spreekuur: meten, het plan opstellen en het zelf uitvoeren. De apparatuur staat er; wat telt is wat jij ermee doet. ›
 
 - Open sollicitatie Staat jouw vak er niet bij en denk je dat het hier past, stuur dan gewoon iets. Er wordt naar gekeken. ›
 
@@ -11678,9 +11790,9 @@ Dat is geen indeling op papier. Bij acne en pigment zit er vaak een voedingskant
 
 Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een uitgebreide motivatiebrief hoeft niet; we bellen liever en stellen onze vragen zelf. Loopt het daarna door, dan kom je een dagdeel meekijken voordat een van beiden iets tekent.
 
-> knop: SOLLICITEER OP DEZE FUNCTIE
+> knop: BEKIJK DE VACATURE
 
 ---
 
 
-_105 pagina's · 5409 tekstblokken · ongeveer 80.830 woorden._
+_106 pagina's · 5461 tekstblokken · ongeveer 81.527 woorden._

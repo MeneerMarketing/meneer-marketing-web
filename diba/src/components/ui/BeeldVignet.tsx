@@ -21,12 +21,30 @@ import Image from "next/image";
  * hoort te benoemen wat je ziet, zodat een bezoeker het apparaat of de behandeling
  * herkent, en niet iets te beweren wat de foto niet laat zien.
  */
+/**
+ * Waar in de foto het kader gaat staan.
+ *
+ * Bij `object-cover` valt er altijd iets buiten beeld. Staat de foto in een breder kader
+ * dan hij zelf is, dan gaat dat van boven en onder af, en bij een foto van mensen is dat de
+ * verkeerde helft: onderaan staat vloer, bovenaan staat het gezicht.
+ *
+ * Vandaar dit brandpunt. Standaard blijft `center`, zoals het altijd was.
+ */
+export type Brandpunt = "boven" | "midden" | "onder";
+
+const BRANDPUNT: Record<Brandpunt, string> = {
+  boven: "object-top",
+  midden: "object-center",
+  onder: "object-bottom",
+};
+
 export default function BeeldVignet({
   src,
   alt,
   onderschrift,
   sizes,
   priority = false,
+  brandpunt = "midden",
   className = "",
 }: {
   src: string;
@@ -35,6 +53,8 @@ export default function BeeldVignet({
   onderschrift?: string;
   sizes: string;
   priority?: boolean;
+  /** Welk deel van de foto in beeld blijft als er bijgesneden wordt. */
+  brandpunt?: Brandpunt;
   className?: string;
 }) {
   return (
@@ -47,7 +67,7 @@ export default function BeeldVignet({
         fill
         priority={priority}
         sizes={sizes}
-        className="object-cover object-center"
+        className={`object-cover ${BRANDPUNT[brandpunt]}`}
       />
 
       {onderschrift ? (

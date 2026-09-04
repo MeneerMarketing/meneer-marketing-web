@@ -43,9 +43,13 @@ export const metadata: Metadata = zoekmachineVelden({
 const VACATURES = [
   {
     slug: "huidtherapeut",
-    titel: "Allround schoonheidsspecialist of huidtherapeut",
-    zin: "Je doet metingen, je behandelt en je legt uit waarom iets wel of niet kan. De apparatuur staat er; wat telt is wat jij ermee doet.",
-    onderwerp: "Sollicitatie allround schoonheidsspecialist of huidtherapeut",
+    titel: "Huidtherapeut",
+    zin: "Je draait een eigen spreekuur: meten, het plan opstellen en het zelf uitvoeren. De apparatuur staat er; wat telt is wat jij ermee doet.",
+    onderwerp: "Sollicitatie huidtherapeut",
+    /* Deze functie heeft sinds vandaag een eigen pagina met JobPosting-structuurdata,
+       zodat hij in Google for Jobs kan komen. Zonder interne link vindt een zoekmachine
+       hem alleen via de sitemap, en dat weegt lichter. */
+    pad: "/vacatures/huidtherapeut",
   },
   {
     slug: "open",
@@ -123,7 +127,10 @@ export default function WerkenBijPage() {
               {VACATURES.map((v) => (
                 <li key={v.slug}>
                   <a
-                    href={`mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`}
+                    href={
+                      v.pad ??
+                      `mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`
+                    }
                     className="-mx-4 flex min-h-14 items-start justify-between gap-4 rounded-[var(--r-md)] px-4 py-4 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
                     <span>
@@ -214,6 +221,7 @@ export default function WerkenBijPage() {
             alt="Twee behandelaars met koffie in de gang van de kliniek"
             onderschrift="Tussen twee afspraken door"
             sizes="(min-width: 1024px) 86vw, 92vw"
+            brandpunt="boven"
             className="aspect-[16/10] lg:aspect-[2/1]"
           />
         </div>
@@ -290,16 +298,17 @@ export default function WerkenBijPage() {
               {VACATURES.map((v, i) => (
                 <a
                   key={v.slug}
-                  href={`mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`}
+                  href={
+                    v.pad ??
+                    `mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`
+                  }
                   className={
                     i === 0
                       ? "diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
                       : "diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
                   }
                 >
-                  {i === 0
-                    ? "Solliciteer op deze functie"
-                    : "Open sollicitatie sturen"}
+                  {i === 0 ? "Bekijk de vacature" : "Open sollicitatie sturen"}
                 </a>
               ))}
             </div>
