@@ -249,6 +249,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Meten ─────────────────────────────────────────────────────────────── */
   {
     slug: "huidanalyse",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-huidanalyse.jpg",
+      alt: "De opname van de huidscan op het scherm",
+    },
     welNietKop: { kop: "Wat een meting", accent: "je vertelt" },
     inDeStoel: [
       "Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zijn. De opnames zijn in een paar minuten klaar: gewoon licht, gepolariseerd licht en UV, achter elkaar door. Je merkt er niets van, want er raakt niets je huid.",
@@ -315,6 +319,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Gezichtsbehandelingen ─────────────────────────────────────────────── */
   {
     slug: "hydrafacial",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-hydrafacial.jpg",
+      alt: "Het HydraFacial-mondstuk gaat over de wang",
+    },
     inDeStoel: [
       "Je ligt achterover en het mondstuk gaat in banen over je gezicht. Wat je voelt is vooral de zuiging: een licht trekkend gevoel dat rond je neus en kin sterker is dan op je wangen. Pijn hoort er niet bij; wel merk je duidelijk waar een porie vastzit.",
       "Tussendoor wisselt de behandelaar van tip en van vloeistof. De laatste stap voelt koeler dan de rest, omdat er dan serum in plaats van alleen zuiging op je huid komt.",
@@ -359,6 +367,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "oxygeneo",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-oxygeneo.jpg",
+      alt: "De OxyGeneo-kop werkt over de huid",
+    },
     inDeStoel: [
       "Een klein handstuk gaat over je huid terwijl er een gel op ligt. De twee reageren met elkaar en dat bruist licht: je hoort het meer dan dat je het voelt. Het is een van de rustigste behandelingen die we doen.",
       "Erna is je huid roze en voelt hij zacht aan. Je kunt meteen door met je dag; er is niets waar je rekening mee hoeft te houden behalve zonbescherming, en die geldt sowieso.",
@@ -422,6 +434,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "dermaplaning",
+    foto: {
+      src: "/images/shoot/beh-dermaplaning.jpg",
+      alt: "Dermaplaning met een chirurgisch mesje over de wang",
+    },
     inDeStoel: [
       "Je huid wordt strak getrokken en het mesje gaat er onder een vaste hoek overheen, in korte halen. Het geluid is het gekste eraan: een zacht schrapen dat je in je kaak voelt meer dan op je huid. Pijn doet het niet.",
       "Vlak erna is je gezicht opvallend glad en neemt het crème makkelijker op. De donshaartjes komen terug zoals ze waren, dus wie het bevalt komt ongeveer maandelijks terug.",
@@ -454,6 +470,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "coolift",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-coolift.jpg",
+      alt: "De CooLift-kop brengt koude CO2 op de huid",
+    },
     inDeStoel: [
       "Vijf minuten, en het is vooral koud. De gasstroom komt onder druk uit een handstuk dat op tien centimeter van je gezicht blijft, en die kou is scherp en meteen weg zodra het handstuk verder gaat.",
       "Er komt geen naald aan te pas en er wordt niets weggehaald. Je kunt er direct mee de deur uit, en veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.",
@@ -518,6 +538,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Peelings ──────────────────────────────────────────────────────────── */
   {
     slug: "peelings",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-peeling.jpg",
+      alt: "Een flacon peeling boven een client op de behandelbank",
+    },
     inDeStoel: [
       "De vloeistof gaat met een kwastje in lagen op je huid. Binnen een halve minuut begint het te prikken of te tintelen, en dat loopt op naarmate er lagen bij komen. De behandelaar kijkt naar je huid én naar de klok; dat samen bepaalt wanneer het eraf gaat.",
       "Prikken hoort erbij, branden niet. Zeg het dus meteen als het gaat branden, dan past de behandelaar de instelling aan.",
@@ -581,6 +605,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Microneedling ─────────────────────────────────────────────────────── */
   {
     slug: "skinpen",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-skinpen.jpg",
+      alt: "Microneedling met de SkinPen in de behandelkamer",
+    },
     inDeStoel: [
       "Er gaat eerst een verdovende crème op, die een half uur moet intrekken. Daarna gaat de pen in banen over de zone. Wat je voelt is een trilling en een druk, het sterkst op je voorhoofd en rond je kaaklijn, waar de huid dun over bot ligt.",
       "Direct erna ben je rood, ongeveer als een stevige zonnegloed, en voelt je huid warm. Dat zakt in een tot drie dagen. De eerste vierentwintig uur laat je je huid met rust: geen make-up, geen sport, geen sauna.",
@@ -641,6 +669,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "dermapen-4",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-dermapen.jpg",
+      alt: "Het handstuk van de Dermapen 4 op de huid",
+    },
     inDeStoel: [
       "Hetzelfde verloop als bij de SkinPen: verdovende crème, een half uur wachten, en dan de pen in banen over de zone. De Dermapen werkt sneller, dus een vlak is eerder af.",
       "De diepte wordt per zone bijgesteld. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, en dat merk je: hoe dieper, hoe meer druk je voelt.",
@@ -713,6 +745,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Skinboosters ──────────────────────────────────────────────────────── */
   {
     slug: "skinboosters",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-skinboosters.jpg",
+      alt: "Ampullen en injector klaargelegd voor de behandeling",
+    },
     inDeStoel: [
       "Dit is een injectiebehandeling, dus er zijn prikjes. De injector zet ze snel achter elkaar en op een gelijke diepte, wat het gelijkmatiger maakt dan met de hand. Verdovende crème vooraf hoort erbij.",
       "Vlak erna zie je kleine bultjes op de plek van elke prik. Die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.",
@@ -788,6 +824,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Laser en licht ────────────────────────────────────────────────────── */
   {
     slug: "fotona",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-fotona.jpg",
+      alt: "Een Fotona-behandeling langs de kaaklijn",
+    },
     inDeStoel: [
       "Je krijgt een beschermbril op en die blijft de hele behandeling op. Wat je voelt hangt af van de modus: bij de verwarmende stand is het een oplopende warmte die net voor het ongemakkelijke stopt, bij de andere korte tikjes.",
       "De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt. Met jouw antwoord stelt zij het apparaat bij.",
@@ -1061,6 +1101,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Pigmenttrajecten ──────────────────────────────────────────────────── */
   {
     slug: "cosmelan-dermamelan",
+    foto: {
+      src: "/images/shoot/beh-cosmelan-masker.jpg",
+      alt: "Het Cosmelan-masker wordt op het gezicht aangebracht",
+    },
     inDeStoel: [
       "De eerste afspraak duurt kort. Er gaat een masker op je gezicht dat je zelf mee naar huis neemt en er thuis afhaalt, na het aantal uren dat je meekrijgt. Dat aantal is geen richtlijn maar een afspraak.",
       "De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat schema volgen bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.",
@@ -1167,6 +1211,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   /* ── Laserontharing ────────────────────────────────────────────────────── */
   {
     slug: "laserontharing",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-laserontharing.jpg",
+      alt: "Laserontharing met oogbescherming op",
+    },
     inDeStoel: [
       "De zone wordt geschoren als dat nog niet gebeurd is, want de laser moet bij de wortel kunnen en niet bij het haar erboven. Daarna gaat er een bril op en werkt de behandelaar de zone in banen af.",
       "Elke puls voelt als een warm tikje, met een koude stoot er direct omheen. Op je bovenlip en langs je bikinilijn voel je meer dan op je benen; dat is overal zo en het gaat snel voorbij.",
@@ -1273,6 +1321,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "acne-traject",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-acne-traject.jpg",
+      alt: "Een behandeling bij actieve acne",
+    },
     inDeStoel: [
       "Het traject begint met een meting en een gesprek, niet met een behandeling. Wat daaruit komt bepaalt de volgorde, en die volgorde is de kern: ontsteking eerst, littekens later, nooit tegelijk.",
       "Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en deels controle, en bij elke controle wordt er opnieuw gemeten onder dezelfde belichting.",
@@ -1334,6 +1386,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "jongeren-acne-traject",
+    foto: {
+      src: "/images/shoot/beh-jongeren-acne.jpg",
+      alt: "Producten uit het jongerentraject bij een client met acne",
+    },
     inDeStoel: [
       "Hetzelfde traject, ingericht op een leven met school, sport en een bijbaan. De afspraken zijn korter en de thuisroutine is met opzet klein gehouden: drie stappen die je ook volhoudt als je te laat opstaat.",
       "Je ouders mogen mee naar binnen, en je mag het gesprek ook alleen doen. Dat kies je zelf.",
@@ -1455,6 +1511,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "fibromen",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-fibromen.jpg",
+      alt: "Een fibroom wordt met een fijn handstuk weggenomen",
+    },
     inDeStoel: [
       "Kort en gericht. Het steelwratje wordt verdoofd met een crème of een prikje en daarna verwijderd; het geheel duurt per plekje ongeveer een minuut.",
       "Er blijft een klein korstje achter dat er binnen een week tot tien dagen afgaat. Eraan zitten is de enige manier om er een litteken van te maken.",

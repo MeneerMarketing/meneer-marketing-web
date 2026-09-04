@@ -922,6 +922,10 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "coolifting",
+    foto: {
+      src: "/images/shoot/apparaat-coolifting.jpg",
+      alt: "De CooLifting-kop in gebruik op de huid",
+    },
     vragen: [
       {
         vraag: "Wat gebeurt er met mijn huid?",

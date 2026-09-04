@@ -5064,6 +5064,8 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **COSMELAN EN DERMAMELAN**
 
+COSMELAN EN DERMAMELAN · MESOESTETIC
+
 *HOE DIEP*
 
 Opperhuid
@@ -5289,6 +5291,8 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 **Google-omschrijving:** Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid.
 
 **DERMAPLANING**
+
+DERMAPLANING
 
 *HOE DIEP*
 
@@ -5928,6 +5932,8 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **JONGEREN ACNE TRAJECT**
 
+JONGEREN ACNE TRAJECT
+
 *HOE DIEP*
 
 Opperhuid
@@ -5991,8 +5997,6 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 - Bij ernstige acne met kans op littekens kijkt eerst een arts mee
 
 - Onder de achttien komt er iemand mee en tekenen je ouders mee
-
-- ACNE
 
 **Veelgestelde vragen**
 
@@ -7359,6 +7363,8 @@ Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten
 - CooLift Cryo Therapy € 75
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
+
+COOLIFT CRYO THERAPY · COOLIFTING
 
 **Hoe dit apparaat op de huid werkt**
 
@@ -11795,4 +11801,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_106 pagina's · 5461 tekstblokken · ongeveer 81.337 woorden._
+_106 pagina's · 5464 tekstblokken · ongeveer 81.350 woorden._
