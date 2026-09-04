@@ -39,8 +39,17 @@ import { DIBA_SITE_URL } from "@/lib/site";
 
 const APP = join(process.cwd(), "src", "app");
 
-/** Routes die bestaan maar niet in een sitemap horen. */
-const OVERSLAAN = /^\/(dev|preview-login|home-variant)(\/|$)/;
+/**
+ * Routes die bestaan maar niet in een sitemap horen.
+ *
+ * Naast de werkroutes staan hier de twee pagina's die tijdelijk dichtstaan (Yasin,
+ * 5 september 2026): /resultaten en de laserconfigurator. Hun adres verwijst door, en een
+ * sitemap die naar een doorverwijzing wijst is een fout die Search Console meldt.
+ *
+ * Zodra ze weer opengaan: hier weghalen en de twee regels in redirects.ts.
+ */
+const OVERSLAAN =
+  /^\/(dev|preview-login|home-variant|resultaten|laserontharing\/configurator)(\/|$)/;
 
 /** Alle statische routes met een eigen pagina, gevonden in de app-map. */
 function statischeRoutes(): string[] {

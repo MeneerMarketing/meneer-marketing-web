@@ -173,10 +173,10 @@ export default function PrijzenPage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                href="/laserontharing/configurator"
+                href="/laserontharing"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Naar de configurator
+                Alles over laserontharing
               </Link>
               <Link
                 href="/behandelingen"

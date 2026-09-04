@@ -307,11 +307,6 @@ export const HOOFDNAV: readonly NavItem[] = [
             binnenkort: true,
           },
           {
-            label: "Zones en prijzen",
-            href: "/laserontharing/configurator",
-            zin: "Stel je eigen combinatie samen",
-          },
-          {
             label: "Gentle Laser Pro-U",
             href: "/gentlemax-pro",
             zin: "Het apparaat waar we mee werken",
@@ -321,14 +316,6 @@ export const HOOFDNAV: readonly NavItem[] = [
       },
     ],
     uitgelicht: HUIDPROFIEL_BLOK,
-  },
-  {
-    label: "Resultaten",
-    href: "/resultaten",
-  },
-  {
-    label: "Prijzen",
-    href: "/prijzen",
   },
   {
     label: "Over Diba",

@@ -2289,7 +2289,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Bij een gebruinde huid plannen we het later in [MEDISCHE-CHECK-ROJDA]",
     ],
     bijProblemen: [
-      { label: "Alle zones en prijzen", href: "/laserontharing/configurator" },
       { label: "Over laserontharing", href: "/laserontharing" },
 
       { label: "Ingegroeide haren", href: "/huidproblemen/ingegroeide-haren" },

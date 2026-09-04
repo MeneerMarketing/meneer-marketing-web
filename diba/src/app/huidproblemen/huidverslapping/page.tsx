@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -246,6 +247,14 @@ export default function Pagina() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/huidverslapping" />
+
+      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
+          als er te weinig reviews over zijn; zie het component. */}
+      <ReviewsBijOnderwerp
+        onderwerp="huidveroudering"
+        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over behandelingen die op stevigheid werken."
+        achtergrond="zacht"
+      />
 
       <PillarFaq items={VERSLAPPING_FAQ} onderwerp="huidverslapping" />
 

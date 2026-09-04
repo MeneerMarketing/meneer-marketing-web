@@ -1062,7 +1062,7 @@ We behandelen couperose met de Nordlys IPL en met laser. Onze huidtherapeuten we
 
 Couperose en rosacea lopen met het blote oog door elkaar en vragen een andere aanpak. Zo stelt de huidtherapeut vast waar je mee te maken hebt.
 
-- Onder vergroting De huidtherapeut bekijkt de rode plek vergroot. Losse, vertakte lijntjes zien er anders uit dan een egale waas, en met het blote oog lopen die twee door elkaar.
+- Onder vergroting De huidtherapeut bekijkt de rode plek vergroot. Losse, vertakte lijntjes zien er heel anders uit dan een egale waas, en met het blote oog lopen die twee makkelijk door elkaar.
 
 - Met lichte druk Een korte druk op de plek laat zien of het rood wegtrekt of dat er een lijntje blijft staan. Dat verschil bepaalt of het om vaatjes gaat of om roodheid in de huid zelf.
 
@@ -1177,6 +1177,16 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 - Nordlys IPL € 75 Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. WAT HET INHOUDT OP DE NORDLYS
 
 - LED-therapie € 30 Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. WAT HET INHOUDT OP DE PRECISION PHOTONIC SYSTEM
+
+**Wat anderen erover zeggen.**
+
+Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over roodheid en zichtbare vaatjes.
+
+- “Ik (en mijn huid) zijn altijd weer blij om Iris te zien! Ook heel fijn dat met deze hittegolf de kliniek heerlijk koel was!” Gulcicek Behandeling bij Iris ONGEVEER EEN MAAND GELEDEN
+
+- “Ik had een behandeling op advies. Iris is super lief en heel bekwaam. Ik voelde me meteen op mijn gemak! Heel tevreden nu al.” Rahime Behandeling bij Iris 4 MAANDEN GELEDEN
+
+- “Als het om mijn huid gaat dan vertrouw ik niemand, behalve Diba! Al meer dan 7/8 jaar klant. Het voelt zo fijn om om de 2 maanden een gezichtsbehandeling te nemen. Dankjewel lieve Iris en team Diba.” Yasemin Gezichtsbehandeling bij Iris 4 MAANDEN GELEDEN
 
 **Veelgestelde vragen**
 
@@ -2440,6 +2450,16 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - PIANO skin tightening Op aanvraag Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
+**Wat anderen erover zeggen.**
+
+Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over trajecten die maanden lopen, dus let op wat er over het verloop wordt gezegd.
+
+- “Ik heb een skin behandeling gehad, en de dame heeft me zo goed geholpen! Ze vertelde alles in stappen uit wat ze deed, en omdat ik een zeer gevoelige huid heb, was ze extra voorzichtig! Helemaal tevreden!” Gladys Skinbehandeling 6 DAGEN GELEDEN
+
+- “Na een lange tijd heb ik weer een behandeling gehad bij Rojda. Het was weer een fijne ervaring. Samen met Rojda hebben we gekeken welke behandeling het beste bij mij past. Ik heb genoten van een heerlijke Hydrafacial in combinatie met een peeling.” Kajin Hydrafacial & peeling ONGEVEER EEN MAAND GELEDEN
+
+- “I had a wonderful experience with Andre. He took the time to explain everything thoroughly, answered all of my questions, and made me feel completely at ease. I felt that he performed the SkinPen treatment with great precision and care.” Maroula SkinPen ONGEVEER EEN MAAND GELEDEN
+
 **Veelgestelde vragen**
 
 Vanaf welke leeftijd is dit zinvol? +
@@ -2598,6 +2618,16 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - VectorLift € 150 Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
+**Wat anderen erover zeggen.**
+
+Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over behandelingen die op stevigheid werken.
+
+- “Ik heb een skin behandeling gehad, en de dame heeft me zo goed geholpen! Ze vertelde alles in stappen uit wat ze deed, en omdat ik een zeer gevoelige huid heb, was ze extra voorzichtig! Helemaal tevreden!” Gladys Skinbehandeling 6 DAGEN GELEDEN
+
+- “Na een lange tijd heb ik weer een behandeling gehad bij Rojda. Het was weer een fijne ervaring. Samen met Rojda hebben we gekeken welke behandeling het beste bij mij past. Ik heb genoten van een heerlijke Hydrafacial in combinatie met een peeling.” Kajin Hydrafacial & peeling ONGEVEER EEN MAAND GELEDEN
+
+- “I had a wonderful experience with Andre. He took the time to explain everything thoroughly, answered all of my questions, and made me feel completely at ease. I felt that he performed the SkinPen treatment with great precision and care.” Maroula SkinPen ONGEVEER EEN MAAND GELEDEN
+
 **Veelgestelde vragen**
 
 Is dit een alternatief voor een facelift? +
@@ -2719,6 +2749,16 @@ Strak scheren, pincetten en scrubben houden het probleem in stand. Ermee stoppen
 **Wat we hiervoor inzetten**
 
 - Laserontharing € 20 De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. WAT HET INHOUDT OP DE GENTLE LASER PRO-U
+
+**Wat anderen erover zeggen.**
+
+Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over laserontharing, want dat is wat ingroei stopt.
+
+- “Zoals altijd goed geholpen met de laser!” Manisha Laserontharing ONGEVEER 2 MAANDEN GELEDEN
+
+- “Ik had vandaag een laserafspraak bij Demi. Het ging lekker vlot en ik voel me erg op m'n gemak bij haar. Ik ben erg tevreden met m'n resultaat tot nu toe en ik zie duidelijke vooruitgangen! Erg gastvrij, professioneel en alles ook mooi en netjes ingericht.” Jasemine Laserontharing bij Demi 2 MAANDEN GELEDEN
+
+- “Ik blijf het telkens herhalen, maar ik ben al weer zo fijn geholpen door Iris! Laserbehandeling en geëindigd met een gezichtsbehandeling. Ben zo blij dat ik terecht ben gekomen bij Diba Clinics.” Darifa Laser & gezichtsbehandeling 2 MAANDEN GELEDEN
 
 **Veelgestelde vragen**
 
@@ -4268,6 +4308,16 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - VectorLift € 150 Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
+**Wat anderen erover zeggen.**
+
+Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Bij lijnen gaat het om maanden, en dat hoor je terug in wat mensen schrijven.
+
+- “Ik heb een skin behandeling gehad, en de dame heeft me zo goed geholpen! Ze vertelde alles in stappen uit wat ze deed, en omdat ik een zeer gevoelige huid heb, was ze extra voorzichtig! Helemaal tevreden!” Gladys Skinbehandeling 6 DAGEN GELEDEN
+
+- “Na een lange tijd heb ik weer een behandeling gehad bij Rojda. Het was weer een fijne ervaring. Samen met Rojda hebben we gekeken welke behandeling het beste bij mij past. Ik heb genoten van een heerlijke Hydrafacial in combinatie met een peeling.” Kajin Hydrafacial & peeling ONGEVEER EEN MAAND GELEDEN
+
+- “I had a wonderful experience with Andre. He took the time to explain everything thoroughly, answered all of my questions, and made me feel completely at ease. I felt that he performed the SkinPen treatment with great precision and care.” Maroula SkinPen ONGEVEER EEN MAAND GELEDEN
+
 **Veelgestelde vragen**
 
 Hoe weet ik of het een rimpel is of een droogtelijntje? +
@@ -4453,6 +4503,16 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 - LED-therapie € 30 Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. WAT HET INHOUDT OP DE PRECISION PHOTONIC SYSTEM
 
 - Voedingsintolerantietest € 300 Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. WAT HET INHOUDT
+
+**Wat anderen erover zeggen.**
+
+Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over roodheid, en daar telt vooral wat er na een paar sessies overblijft.
+
+- “Ik (en mijn huid) zijn altijd weer blij om Iris te zien! Ook heel fijn dat met deze hittegolf de kliniek heerlijk koel was!” Gulcicek Behandeling bij Iris ONGEVEER EEN MAAND GELEDEN
+
+- “Ik had een behandeling op advies. Iris is super lief en heel bekwaam. Ik voelde me meteen op mijn gemak! Heel tevreden nu al.” Rahime Behandeling bij Iris 4 MAANDEN GELEDEN
+
+- “Als het om mijn huid gaat dan vertrouw ik niemand, behalve Diba! Al meer dan 7/8 jaar klant. Het voelt zo fijn om om de 2 maanden een gezichtsbehandeling te nemen. Dankjewel lieve Iris en team Diba.” Yasemin Gezichtsbehandeling bij Iris 4 MAANDEN GELEDEN
 
 **Veelgestelde vragen**
 
@@ -7070,8 +7130,6 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - Bij een gebruinde huid plannen we het later in
 
-- ALLE ZONES EN PRIJZEN
-
 - OVER LASERONTHARING
 
 - INGEGROEIDE HAREN
@@ -9186,7 +9244,7 @@ DERMAPEN 4 · DERMAPEN
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Littekens en striae Dermapen 4 € 180 OVER LITTEKENS EN STRIAE
 
@@ -9208,7 +9266,7 @@ Welke van de twee pennen je krijgt hangt niet af van welke beter is, maar van de
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Acnelittekens en grove poriën
 
@@ -9232,7 +9290,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -9286,7 +9344,7 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Droge huid Dermaplaning € 150 OVER DROGE HUID
 
@@ -9304,7 +9362,7 @@ Het donshaar groeit terug zoals het was: even fijn en even licht. Scheren verand
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Een direct gladde, egale huid
 
@@ -9328,7 +9386,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -9390,7 +9448,7 @@ Naast gewoon licht wordt er ook onder UV opgenomen. Pigment dat dieper in de hui
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is
 
@@ -9486,7 +9544,7 @@ FOTONA TIMEWALKER · FOTONA
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Huidveroudering Fotona TimeWalker € 150 Fotona 4D € 370 Fotona 4D Men Op aanvraag PIANO skin tightening Op aanvraag OVER HUIDVEROUDERING
 
@@ -9520,7 +9578,7 @@ Dezelfde SMOOTH-modus zit achter NightLase, waarbij het zachte gehemelte wordt b
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Verslapping en volumeverlies aanpakken zonder injectables
 
@@ -9548,7 +9606,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -9604,7 +9662,7 @@ GENTLE LASER PRO-U · CANDELA
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Ingegroeide haren Laserontharing € 20 OVER INGEGROEIDE HAREN
 
@@ -9618,7 +9676,7 @@ Wat dit apparaat onderscheidt is de koeling. Candela spuit met de Dynamic Coolin
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Haargroei op vrijwel elke zone van het lichaam
 
@@ -9644,7 +9702,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -9700,7 +9758,7 @@ HYDRAFACIAL SYNDEO · HYDRAFACIAL
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Poriën HydraFacial € 170 OVER PORIËN
 
@@ -9720,7 +9778,7 @@ De tips zijn wegwerpartikelen en er zijn verschillende soorten, met een grovere 
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Een huid die er meteen frisser uit moet zien
 
@@ -9744,7 +9802,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -9800,7 +9858,7 @@ NORDLYS · CANDELA
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Rosacea Nordlys IPL € 75 OVER ROSACEA
 
@@ -9820,7 +9878,7 @@ Op hetzelfde platform kan ook een Nd:YAG op 1064 nanometer draaien, en fractione
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Roodheid en zichtbare vaatjes in het gelaat
 
@@ -9846,7 +9904,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -9900,13 +9958,13 @@ De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoe
 
 - Happy Intim € 175
 
-De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
+De behandelaar kiest de lijn, de sterkte en de inwerktijd op basis van je huid, je gezondheid, de zone en het doel van de behandeling.
 
 PEELINGLIJNEN · SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Acne Medische peelings € 140 OVER ACNE
 
@@ -9924,7 +9982,7 @@ Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt
 
 - Huidverkleuring Happy Intim € 175 OVER HUIDVERKLEURING
 
-**Wat dit apparaat precies doet**
+**Wat deze productlijn precies doet**
 
 Een peeling is geen apparaat maar een vloeistof, en wat hij doet hangt af van drie dingen: welk zuur erin zit, hoe geconcentreerd het is en hoe zuur het mengsel als geheel is. Die drie samen bepalen hoe diep het komt.
 
@@ -9932,9 +9990,9 @@ Fruitzuren blijven in de hoornlaag en spoelen er na een paar minuten weer af. Sa
 
 Welke lijn en welke sterkte er bij jou past hangt af van je huidtype, van wat je op dit moment gebruikt en van het seizoen.
 
-**Waar dit apparaat voor bedoeld is**
+**Waar deze productlijn voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar deze productlijn voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Oppervlakkige verkleuring lichter maken
 
@@ -9956,9 +10014,9 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Hydrafacial syndeo Werkt met een milde zuur- en zuigcombinatie zonder hersteltijd. Een peeling gaat verder en vraagt er dus ook meer voor terug. NAAR DE HYDRAFACIAL SYNDEO ›
 
-**De problemen waar dit apparaat bij past.**
+**De problemen waar deze productlijn bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar deze productlijn niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -10014,7 +10072,7 @@ PRECISION PHOTONIC SYSTEM · SKIN COMPLETE
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Rosacea LED-therapie € 30 OVER ROSACEA
 
@@ -10036,7 +10094,7 @@ Het werkt cumulatief. Eén sessie is één prikkel; het verschil ontstaat over e
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Roodheid en rosacea rustiger maken
 
@@ -10060,7 +10118,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -10120,7 +10178,7 @@ SKINPEN CIT · SKINPEN
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Littekens en striae SkinPen Microneedling € 180 OVER LITTEKENS EN STRIAE
 
@@ -10144,7 +10202,7 @@ De cartridges zijn steriel en voor eenmalig gebruik. Bij microneedling gaan de n
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Littekens die door verlies van structuur zijn ontstaan
 
@@ -10168,7 +10226,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -10226,7 +10284,7 @@ U225 INTRADERMALE INJECTOR · U225
 
 **Welke klachten we hiermee behandelen**
 
-Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
+Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
 - Huidveroudering Skinboosters en mesotherapie € 175 OVER HUIDVEROUDERING
 
@@ -10246,7 +10304,7 @@ Wat er in de spuit zit bepaalt de behandeling, niet het apparaat. Dat kan een sk
 
 **Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer iets anders meer voor je doet.
 
 - Fijne lijnen en verslapping
 
@@ -10270,7 +10328,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 **De problemen waar dit apparaat bij past.**
 
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
+Op elke pagina hieronder staat ook waar dit apparaat niet voor is, en of wij die klacht wel behandelen.
 
 **Veelgestelde vragen**
 
@@ -10554,7 +10612,7 @@ GEEN STERRETJES Er staan hier geen voetnoten met voorwaarden en geen bedragen di
 
 Wijs je zones aan op een tekening en zie meteen wat je opbouw wordt, inclusief wat een pakket vervangt. Je keuze staat daarna in de adresbalk, dus je kunt hem bewaren of doorsturen.
 
-> knop: NAAR DE CONFIGURATOR
+> knop: ALLES OVER LASERONTHARING
 
 > knop: WAT DE BEHANDELINGEN DOEN
 
@@ -11744,7 +11802,7 @@ Twijfel je of jouw haar genoeg pigment heeft, dan is dat bij de intake in één 
 
 Deze pagina gaat over het apparaat. Welke zones er zijn, wat een sessie kost en hoeveel sessies er in een traject gaan, staat op de behandelpagina. Daar reken je het zelf uit, per zone, zonder dat er een bedrag achterblijft tot aan de balie.
 
-> knop: BEREKEN JE LASERPRIJS
+> knop: BEKIJK DE TARIEVEN PER ZONE
 
 ---
 
@@ -12118,31 +12176,7 @@ EERST BEGRIJPEN WAAR HET ZIT
 
 Twee ingangen, afhankelijk van of je al een naam hebt voor wat je ziet.
 
-- IK WEET NIET HOE HET HEET De symptoomzoeker Kruis aan wat je ziet en wat je voelt, in gewone woorden. Aan het eind sta je op de pagina die erbij hoort. BEKIJKEN
-
-- IK WEET HET WEL, EN NU Je huidprofiel Negen stappen over je huid, je routine en wat je al probeerde. De site onthoudt je antwoorden en je neemt ze mee naar de intake. BEKIJKEN
-
-Doorsnedes en schema's, geen foto's. Het probleem zit onder de oppervlakte en daar kijkt een foto niet.
-
-- WAAROM WERKT HARDER SCHROBBEN NIET Onder je huid Eén porie die je door vier stadia heen ziet dichtslibben. Bij elk stadium zit een andere knop. BEKIJKEN
-
-- WAAROM KUILTJES EN GEEN VET Waarom het geen vet is Vier feiten over de richting van het bindweefsel, waarom mannen het zelden hebben en waar wel iets aan te doen valt. BEKIJKEN
-
-- IS MIJN HUID DROOG OF VOCHTARM De huidmatrix Twee assen in plaats van één schaal: water en vet. Dat verschil bepaalt wat er wel en niet helpt. BEKIJKEN
-
-- HOEVEEL IS ZON EN HOEVEEL IS LEEFTIJD De onderarmtest Een proef die je zelf kunt doen: de binnenkant van je onderarm tegen de buitenkant, met alles gelijk behalve de zon. BEKIJKEN
-
-Niet wat een apparaat doet, maar hoe het zijn werk doet en tot hoe diep het komt.
-
-- WELK APPARAAT KOMT HOE DIEP De dieptevergelijker Alle twaalf apparaten op één schaal, in dezelfde doorsnede, zodat je ze naast elkaar kunt leggen. BEKIJKEN
-
-- WAAROM RAAKT LASER WEL HET HAAR EN NIET DE HUID Het golflengtevenster Welke golflengte door welke stof wordt opgenomen, en waarom dat per huidtype anders uitpakt. BEKIJKEN
-
-- WAT KOST MIJN COMBINATIE ZONES De zoneconfigurator Stel je eigen combinatie samen en zie het bedrag meelopen. Geen offerte op aanvraag. BEKIJKEN
-
 Ook bij een andere kliniek. Dit deel is niet geschreven om jou hier te houden.
-
-- KLOPT DIT VOOR-EN-NA-BEELD WEL De fotocheck Zeven dingen die een resultaatfoto kunnen laten liegen: licht, hoek, afstand, houding en meer. BEKIJKEN
 
 - WAAR MAG IK JULLIE AAN HOUDEN Ons verbond Tien dingen die wij niet doen, met bij elke regel wat hij ons kost. Een belofte zonder prijs is een slogan. BEKIJKEN
 
@@ -12214,7 +12248,7 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 Alles hierboven staat er zodat je een gesprek kunt voeren in plaats van een aanbod te moeten geloven. Ook als dat gesprek ergens anders plaatsvindt.
 
-Het register telt nu 11 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
+Het register telt nu 1 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -12232,7 +12266,7 @@ Laserontharing wordt bijna overal per zone verkocht zonder dat je vooraf weet wa
 
 Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af van je huidtype en de zone, en dat hoor je na de meting in plaats van nu.
 
-> knop: BEREKEN JE LASERPRIJS ›
+> knop: BEKIJK DE TARIEVEN PER ZONE ›
 
 > knop: 5,0 · 3.883 REVIEWS ↗
 
@@ -12294,7 +12328,7 @@ In de configurator zie je meteen wat je opbouw wordt, inclusief wat een pakket v
 
 - Gehele gelaat
 
-> knop: OPEN DE CONFIGURATOR ›
+> knop: BEKIJK DE TARIEVEN ›
 
 **Fitzpatrick I tot en met VI.**
 
@@ -12313,26 +12347,6 @@ HUIDTYPE TYPE III
 De Gentle Laser Pro-U werkt op Fitzpatrick I tot en met VI. In de configurator kies je je type; de energie en de koeling worden daarop afgestemd.
 
 De GentleMax Pro heeft twee golflengtes, en welke van de twee je krijgt hangt hiervan af. Dat is de enige technische keuze op deze site die rechtstreeks over veiligheid gaat. Zo werkt dat.
-
-**Waarom het een reeks is.**
-
-Een haar is alleen te raken als hij in zijn groeifase zit, en dat doen ze niet allemaal tegelijk. Daarom werkt één sessie nooit en zit er tussen twee sessies weken. Dit is hoe zo'n reeks eruitziet.
-
-TRAJECT IN BEELD
-
-**Voor laserontharing zijn meestal meerdere sessies nodig**
-
-SESSIE 1
-
-Intake + huidtype + eerste sessie
-
-> knop: START
-
-> knop: OPBOUW
-
-> knop: VERSCHIL
-
-> knop: ONDERHOUD
 
 **Wat anderen erover zeggen.**
 
@@ -12366,157 +12380,9 @@ Dat hangt af van de zones die je kiest en van welke tarievenlijst er geldt: voor
 
 In de configurator stel je zelf samen wat je wilt en zie je het bedrag per sessie. Je keuze staat daarna in de adresbalk, dus je kunt hem bewaren of doorsturen en er later op terugkomen.
 
-> knop: NAAR DE CONFIGURATOR ›
+> knop: PLAN EEN HUIDCONSULT ›
 
 > knop: EERST JE VRAAG STELLEN ↗
-
----
-
-### /laserontharing/configurator
-
-**Tabbladtitel:** Stel je laserbehandeling samen | Diba Clinics
-
-**Google-omschrijving:** Wijs je zones aan, zie wat er in een pakket zit en wat er los overblijft. Geen bedrag dat je pas aan de balie hoort.
-
-**STEL JE EIGEN BEHANDELING SAMEN**
-
-De meeste twijfel over laserontharing gaat niet over of het werkt, maar over waar een zone begint en ophoudt en wat je straks aan de balie hoort. Daarom wijs je het hier aan in plaats van dat je het opzoekt.
-
-Je zit nergens aan vast. Dit is een berekening en geen boeking.
-
-Dit is de prijs per sessie, niet van je traject
-
-De tarieven hieronder staan zo op de prijslijst van de kliniek. Wat er niet op staat is hoeveel sessies jij nodig hebt, en dat is nou juist het getal waar je totaal van afhangt. Dat hoor je tijdens de intake, na de meting.
-
-Als je twijfelt, kun je via WhatsApp een vraag stellen of een intake plannen.
-
-De kliniek hanteert twee tarievenlijsten. Voor dezelfde zone verschilt het bedrag, en niet elke zone staat op beide lijsten.
-
-> knop: DAMES
-
-> knop: HEREN
-
-> knop: VOORKANT
-
-> knop: ACHTERKANT
-
-> knop: GEZICHT
-
-- Borsten € 95
-
-- Buik € 95
-
-- Bikinilijn groot € 130
-
-- Bovenbenen € 110
-
-- Onderbenen € 110
-
-- Gehele armen € 150
-
-- Oksels € 50
-
-Niet elke regel heeft een eigen plek op de tekening. Deze staan wel op de lijst en zijn hier net zo goed te kiezen.
-
-GELAAT
-
-- Haarlijn Nog niet bekend
-
-- Bakkebaard € 40
-
-- Onderkin € 45
-
-- Hals € 60
-
-- Nek € 55
-
-- Bovenlip + kin € 60
-
-- Kin + onderkin € 70
-
-- Wangen + bakkebaard € 75
-
-- Onderkin + hals € 85
-
-- Gehele gezicht € 125
-
-BOVENLICHAAM
-
-- Bovenarmen € 90
-
-- Onderarmen € 90
-
-- Tussen de borsten € 30
-
-- Rond de tepels € 60
-
-- Navelstrook € 30
-
-- Schouders € 90
-
-- Onderrug € 100
-
-ONDERLICHAAM
-
-- Gehele benen € 200
-
-- Bilnaad € 80
-
-- Bikinilijn klein € 80
-
-Een pakket vervangt de losse zones die erin zitten. Die blijven aangewezen staan op de tekening, maar tellen niet nog een keer mee.
-
-- Pakket A: oksels en bikinilijn groot € 75
-
-- Pakket B: oksels, gehele armen en bikinilijn groot € 125
-
-- Pakket C: oksels, gehele armen en gehele benen € 175
-
-- Pakket D: oksels, gehele benen en bikinilijn groot € 175
-
-- Pakket E: full body zonder gezicht € 349
-
-- Gelaat inclusief hals € 99
-
-**Zes huidtypes en alle zes te behandelen**
-
-De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type bepaalt niet óf het kan, maar met welke instellingen. Weet je het niet, laat het dan open; we bepalen het tijdens de intake.
-
-- Type I Zeer licht, verbrandt snel
-
-- Type II Licht, verbrandt gemakkelijk
-
-- Type III Licht tot medium
-
-- Type IV Medium tot olijf
-
-- Type V Donker olijf tot bruin
-
-- Type VI Donker bruin tot zwart
-
-Laserontharing gaat per reeks, niet per keer
-
-Eén sessie raakt alleen de haren die op dat moment groeien. Dat is nooit alles tegelijk, en daarom is één behandeling geen halve behandeling maar geen behandeling.
-
-Hoeveel sessies je nodig hebt hangt af van de zone, je huidtype en je haargroei. Dat hoor je tijdens de intake, en niet ervoor.
-
-Nog leeg
-
-Wijs een zone aan, dan staat het bedrag hier.
-
-Nog niets aangewezen. Kies links een zone op de tekening of in de lijst ernaast.
-
-> knop: PLAN EEN HUIDCONSULT
-
-> knop: VRAAG STELLEN
-
-Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan staat alles er nog als je terugkomt.
-
-**Wat hierna nog gecontroleerd wordt**
-
-Wat je hier samenstelt is een plan op papier. In het huidconsult kijken we of het klopt: je huidtype, je haargroei en of laseren bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat voordat je iets betaalt.
-
-> knop: WAT ER TIJDENS DE INTAKE GEBEURT
 
 ---
 
@@ -12733,130 +12599,6 @@ Een traject begint met een meting, en bij PCOS is dat extra zinvol: je huid bewe
 Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet omdat wij daar iets mee doen, maar omdat het uitmaakt voor wat wij op welk moment aanraden.
 
 > knop: START JE INTAKE
-
----
-
-### /resultaten
-
-**Tabbladtitel:** Resultaten | Diba Clinics
-
-**Google-omschrijving:** Dezelfde huid ziet er onder ander licht anders uit. Zeven vragen waarmee je zelf ziet of een voor-en-na-foto iets zegt over de behandeling.
-
-**HIER STAAN NOG GEEN VOOR-EN-NA-FOTO'S.**
-
-We tonen alleen resultaatfoto's van eigen klanten die daarvoor toestemming hebben gegeven. Zolang geschikte beelden ontbreken, plaatsen we geen voorbeeldfoto's van anderen.
-
-In plaats daarvan krijg je iets wat je aan drie foto's niet hebt: de reden waarom je vrijwel geen enkel voor-en-na-beeld op internet kunt vertrouwen.
-
-Verplaats de lamp en je verplaatst elke schaduw, terwijl de huid geen millimeter veranderd is.
-
-Textuur zie je alleen doordat er schaduw in zit. Dat is de reden dat licht op deze lijst dubbel weegt, en dat klinische fotografie er protocollen voor kent.
-
-**Klopt die voor-en-na-foto die je net zag?**
-
-Dezelfde huid ziet er onder ander licht heel anders uit. Daarom zegt bijna geen enkele voor-en-na-foto op internet iets over de behandeling. Dit zijn de zeven vragen waarmee je dat zelf ziet. Ze werken bij elke kliniek, en straks ook bij ons.
-
-- WEEGT HET ZWAARST Dezelfde lichtrichting Dit is de grootste. Licht dat van opzij scheert legt een schaduw in elke porie, rimpel en oneffenheid. Recht van voren vult diezelfde schaduwen op en dan is de structuur weg. Je ziet textuur alleen doordat er schaduw in zit. Verplaats de lamp en je verplaatst de schaduw, terwijl de huid geen millimeter veranderd is. BIJ ONS Dezelfde lamp op dezelfde plek, bij beide foto's. Geen raamlicht, want dat is nooit twee keer hetzelfde.
-
-- WEEGT HET ZWAARST Dezelfde hoek en afstand Een kin iets omhoog strakt de kaaklijn. Een halve stap dichterbij met een telefoon maakt de neus groter en de wangen smaller. Een korte lens dichtbij vergroot wat het dichtst bij de camera zit. Twee foto's van verschillende afstand zijn twee verschillende gezichten. BIJ ONS Vaste afstand, vaste hoogte, hoofd in dezelfde stand. Bij de huidscan gebeurt dat automatisch.
-
-- WEEGT HET ZWAARST Niet alleen de beste eruit Een perfect protocol zegt nog steeds niets als je drie geslaagde trajecten publiceert en de rest niet. Bij elke behandeling reageert een deel van de mensen beter dan gemiddeld en een deel minder. Wie alleen de bovenkant laat zien, laat de behandeling er beter uitzien dan hij is. BIJ ONS Bij elk beeld komt te staan hoeveel mensen zo'n traject deden en hoe dit geval zich daartoe verhoudt.
-
-- Even lang na de behandeling Vlak na een behandeling die de huid prikkelt zit er tijdelijk wat vocht in het weefsel. Dat vult fijne lijntjes op, en het verdwijnt binnen een paar dagen. Wat je dan op de foto ziet is de zwelling en niet het resultaat. Een nafoto die te vroeg genomen is, laat iets zien wat over een week niet meer bestaat. BIJ ONS De nafoto komt pas als de huid rustig is, en er staat bij hoeveel weken na de laatste sessie hij gemaakt is.
-
-- Geen make-up, geen filter Foundation is letterlijk een laagje dat structuur verbergt. En veel telefoons verzachten de huid uit zichzelf, zonder dat je daarom gevraagd hebt. Beide effecten lijken op precies wat een huidbehandeling zou moeten doen. Daarom zijn ze op een resultaatfoto niet van elkaar te onderscheiden. BIJ ONS Schone huid op beide foto's, en geen bewerking behalve bijsnijden.
-
-- Dezelfde staat van de huid Een net verzorgde huid weerkaatst het licht gelijkmatiger en oogt daardoor gladder. Een huid die net gereinigd en gehydrateerd is fotografeert beter dan dezelfde huid aan het eind van de dag. Vocht in de bovenste laag verandert hoe het oppervlak licht terugkaatst. Dat is een echt effect, maar het houdt uren aan en geen maanden. BIJ ONS Beide foto's op hetzelfde punt in de routine, en bij voorkeur op hetzelfde tijdstip van de dag.
-
-- Vergelijkbaar moment Roodheid na een warme douche of na het sporten, of een huid die meeloopt met de cyclus: dat verschilt van dag tot dag meer dan sommige behandelingen in maanden doen. Als de dagvariatie groter is dan het effect dat je wil laten zien, zegt één foto per moment niets. BIJ ONS Rustig moment, geen sport of hitte vooraf, en de datum staat erbij.
-
-**Hoe we resultaatfoto's maken**
-
-Zeven regels, één per variabele hierboven. Verschijnt er straks een beeld op deze site dat er niet aan voldoet, dan mag je ons daarop aanspreken.
-
-- Dezelfde lichtrichting Dezelfde lamp op dezelfde plek, bij beide foto's. Geen raamlicht, want dat is nooit twee keer hetzelfde.
-
-- Dezelfde hoek en afstand Vaste afstand, vaste hoogte, hoofd in dezelfde stand. Bij de huidscan gebeurt dat automatisch.
-
-- Niet alleen de beste eruit Bij elk beeld komt te staan hoeveel mensen zo'n traject deden en hoe dit geval zich daartoe verhoudt.
-
-- Even lang na de behandeling De nafoto komt pas als de huid rustig is, en er staat bij hoeveel weken na de laatste sessie hij gemaakt is.
-
-- Geen make-up, geen filter Schone huid op beide foto's, en geen bewerking behalve bijsnijden.
-
-- Dezelfde staat van de huid Beide foto's op hetzelfde punt in de routine, en bij voorkeur op hetzelfde tijdstip van de dag.
-
-- Vergelijkbaar moment Rustig moment, geen sport of hitte vooraf, en de datum staat erbij.
-
-Bij elk beeld komen bovendien de gegevens te staan die je nodig hebt om het te wegen: welke behandeling, hoeveel sessies, hoeveel weken ertussen, welk huidtype en hoeveel weken na de laatste sessie de nafoto gemaakt is.
-
-**Meten onder hetzelfde licht**
-
-De EVE-M gebruikt vaste opnameomstandigheden. Daardoor is een latere meting beter vergelijkbaar dan een losse telefoonfoto onder ander licht.
-
-Wat er dan uit komt zijn geen mooie plaatjes maar waardes: pigment, vocht, poriestructuur, tekenen van veroudering. Jouw eigen vertrekpunt, en het enige eerlijke vergelijkingsmateriaal dat er bestaat.
-
-- Jouw eigen vertrekpunt Je vergelijkt met je eigen huid van drie maanden geleden, niet met iemand anders.
-
-- Dezelfde omstandigheden Vast licht, vaste afstand. De variabelen hierboven liggen allemaal vast.
-
-- Ook wat niet werkte Een meting die geen verbetering laat zien is even bruikbaar. Dan gaan we iets anders proberen.
-
-- Geen voorspelling De scan legt vast wat er nu is. Wat een behandeling gaat opleveren, kan hij niet zeggen.
-
-> knop: ZO WERKT DE HUIDSCAN
-
-**Zodra ze er zijn, staan ze hieronder.**
-
-We tonen alleen voor- en nafoto's van eigen klanten die toestemming hebben gegeven en waarbij de foto's onder vergelijkbare omstandigheden zijn gemaakt.
-
-Ben je klant en wil je dat jouw beelden meedoen, dan hoor je van tevoren waar ze te zien zullen zijn en kun je die toestemming op elk moment weer intrekken.
-
-> knop: NEEM CONTACT OP
-
-Schuif over een beeld om het verschil te zien. Bij elk paar staat wat ervoor nodig was.
-
-NOG GEEN BEELD
-
-Acnetraject
-
-ZES SESSIES OVER VIER MAANDEN
-
-Huidtype III
-
-Pigment en melasma
-
-COSMELAN, TRAJECT VAN ZES MAANDEN
-
-Huidtype IV
-
-Littekentherapie
-
-VIER SESSIES MICRONEEDLING OVER VIJF MAANDEN
-
-Roodheid en vaatjes
-
-DRIE SESSIES NORDLYS IPL OVER TIEN WEKEN
-
-Huidtextuur en poriën
-
-VIER SESSIES SKINPEN OVER DRIE MAANDEN
-
-Verslapping en fijne lijnen
-
-FOTONA 4D, DRIE SESSIES OVER DRIE MAANDEN
-
-Laserontharing onderbenen
-
-ACHT SESSIES OVER VEERTIEN MAANDEN
-
-Droge en gevoelige huid
-
-DRIE MAANDEN MET AANGEPASTE VERZORGING
-
-Jongerentraject acne
-
-DRIE MAANDEN BEGELEIDING MET CONTROLES
 
 ---
 
@@ -13421,4 +13163,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_118 pagina's · 6226 tekstblokken · ongeveer 90.959 woorden._
+_118 pagina's · 6105 tekstblokken · ongeveer 89.723 woorden._

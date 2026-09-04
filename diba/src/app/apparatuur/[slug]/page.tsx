@@ -97,6 +97,11 @@ export default async function ApparaatPage({ params }: PageProps) {
   ];
 
   /* De apparaten waar dit apparaat het meest op lijkt, met de naam erbij. */
+
+  /* De peelinglijnen staan tussen de apparatuur omdat mensen ze daar zoeken, maar
+     een peeling is een vloeistof en geen kast. Het sjabloon zei negen keer "dit
+     apparaat"; dat woord komt nu uit het record. */
+  const woord = a.soort === "productlijn" ? "deze productlijn" : "dit apparaat";
   const buren = (a.verschilMet ?? [])
     .map((v) => ({ ...v, ander: apparaatVoorSlug(v.apparaat) }))
     .filter((v): v is typeof v & { ander: NonNullable<typeof v.ander> } =>
@@ -168,7 +173,7 @@ export default async function ApparaatPage({ params }: PageProps) {
                   rel="noopener noreferrer"
                   className="diba-label mt-4 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
                 >
-                  Meer over dit apparaat bij {a.merk}
+                  Meer over {woord} bij {a.merk}
                   <span aria-hidden="true">›</span>
                 </a>
               ) : null}
@@ -214,8 +219,9 @@ export default async function ApparaatPage({ params }: PageProps) {
               )}
 
               <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
-                De behandelaar kiest de instellingen op basis van je huid, je
-                gezondheid, de behandelzone en het doel van de behandeling.
+                {a.soort === "productlijn"
+                  ? "De behandelaar kiest de lijn, de sterkte en de inwerktijd op basis van je huid, je gezondheid, de zone en het doel van de behandeling."
+                  : "De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling."}
               </p>
             </div>
           </div>
@@ -261,8 +267,7 @@ export default async function ApparaatPage({ params }: PageProps) {
             <div>
               <Label>De techniek</Label>
               <h2 className="diba-display-m mt-4 max-w-[24ch]">
-                Wat dit apparaat{" "}
-                <span className="diba-accent">precies doet</span>
+                Wat {woord} <span className="diba-accent">precies doet</span>
               </h2>
               <div className="mt-6 max-w-[68ch] space-y-4">
                 {a.techniek.map((alinea) => (
@@ -284,12 +289,11 @@ export default async function ApparaatPage({ params }: PageProps) {
         <div className="mx-auto">
           <Label>Waar het voor is</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
-            Waar dit apparaat{" "}
-            <span className="diba-accent">voor bedoeld is</span>
+            Waar {woord} <span className="diba-accent">voor bedoeld is</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Links waar dit apparaat voor gemaakt is, rechts wanneer een ander
-            apparaat meer voor je doet.
+            Links waar {woord} voor gemaakt is, rechts wanneer iets anders meer
+            voor je doet.
           </p>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -331,7 +335,7 @@ export default async function ApparaatPage({ params }: PageProps) {
         <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
             <div>
-              <Label>Waarom dit apparaat</Label>
+              <Label>Waarom {woord}</Label>
               <h2 className="diba-display-m mt-4">
                 Wat er anders is dan{" "}
                 <span className="diba-accent">de andere apparaten hier</span>
@@ -384,11 +388,11 @@ export default async function ApparaatPage({ params }: PageProps) {
               <Label>Waar het bij helpt</Label>
               <h2 className="diba-display-m mt-4">
                 De problemen waar{" "}
-                <span className="diba-accent">dit apparaat bij past.</span>
+                <span className="diba-accent">{woord} bij past.</span>
               </h2>
               <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-                Op elke pagina hieronder staat ook wat er niet lukt bij dit
-                apparaat, en of wij die klacht behandelen.
+                Op elke pagina hieronder staat ook waar {woord} niet voor is, en
+                of wij die klacht wel behandelen.
               </p>
             </div>
 

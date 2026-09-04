@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -264,6 +265,14 @@ export default function HuidverouderingPage() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/huidveroudering" />
+
+      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
+          als er te weinig reviews over zijn; zie het component. */}
+      <ReviewsBijOnderwerp
+        onderwerp="huidveroudering"
+        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over trajecten die maanden lopen, dus let op wat er over het verloop wordt gezegd."
+        achtergrond="zacht"
+      />
 
       <PillarFaq items={VEROUDERING_FAQ} onderwerp="huidveroudering" />
 

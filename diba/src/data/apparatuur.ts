@@ -99,8 +99,18 @@ export const DOELWITTEN: Readonly<
 export type Apparaat = {
   readonly slug: string;
   readonly naam: string;
-  /** Fabrikant of merk. Leeg als het geen apparaat maar een productlijn is. */
+  /** Fabrikant of merk. */
   readonly merk?: string;
+  /**
+   * Of dit een apparaat is of een productlijn.
+   *
+   * De peelinglijnen staan tussen de apparatuur omdat mensen ze daar zoeken, maar een
+   * peeling is een vloeistof: hij hangt aan een merk en een sterkte en niet aan een kast.
+   * Het sjabloon zei negen keer "dit apparaat", en dat klopte daar dus niet.
+   *
+   * Standaard "apparaat", zodat de andere tien pagina's blijven zoals ze waren.
+   */
+  readonly soort?: "apparaat" | "productlijn";
   /** Site van de fabrikant, als die er is. Opent in een nieuw tabblad. */
   readonly merkUrl?: string;
   readonly categorie: ApparaatCategorie;
@@ -1012,6 +1022,7 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "peelinglijnen",
+    soort: "productlijn",
     vragen: [
       {
         vraag: "Waarom staat hier geen apparaat?",

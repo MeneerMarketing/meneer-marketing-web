@@ -104,7 +104,7 @@ export const DRUKPROEF_STAPPEN: readonly {
   {
     kop: "Onder vergroting",
     tekst:
-      "De huidtherapeut bekijkt de rode plek vergroot. Losse, vertakte lijntjes zien er anders uit dan een egale waas, en met het blote oog lopen die twee door elkaar.",
+      "De huidtherapeut bekijkt de rode plek vergroot. Losse, vertakte lijntjes zien er heel anders uit dan een egale waas, en met het blote oog lopen die twee makkelijk door elkaar.",
   },
   {
     kop: "Met lichte druk",

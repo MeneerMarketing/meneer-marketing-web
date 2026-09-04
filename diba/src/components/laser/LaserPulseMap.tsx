@@ -170,10 +170,10 @@ export default function LaserPulseMap() {
         </ul>
 
         <Link
-          href="/laserontharing/configurator"
+          href="/prijzen"
           className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
-          Open de configurator
+          Bekijk de tarieven
           <span aria-hidden="true">›</span>
         </Link>
       </div>

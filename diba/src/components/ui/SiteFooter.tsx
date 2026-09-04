@@ -1,5 +1,5 @@
 import Link from "next/link";
-import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import DibaLogo from "@/components/ui/DibaLogo";
 import {
   DIBA_ADDRESS,
   DIBA_INSTAGRAM_URL,
@@ -87,7 +87,6 @@ const KOLOMMEN: readonly {
       { label: "Over ons", href: "/over-ons" },
       { label: "Ons verhaal", href: "/ons-verhaal" },
       { label: "Het team", href: "/team" },
-      { label: "Resultaten", href: "/resultaten" },
       { label: "Reviews", href: "/reviews" },
       { label: "Werken bij Diba", href: "/werken-bij" },
     ],
@@ -126,13 +125,11 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
     <footer className={`${figmaInnerContainer} pb-12 pt-16 lg:pt-20`}>
       <div className="mx-auto border-t border-[var(--g-100)] pt-12 lg:pt-14">
         <div className="grid gap-10 lg:grid-cols-[1fr_2.6fr] lg:gap-16">
-          {/* Het merk, met het blad uit de huisstijl. Kort: de voettekst is om verder te
-              komen, niet om nog een keer te vertellen wie we zijn. */}
+          {/* Het merk. Hier stond alleen het blad; dat is het merkteken en niet het
+              logo, en wie onderaan een pagina belandt hoort de naam te zien. Verder is de
+              voettekst om verder te komen en niet om nog eens te vertellen wie we zijn. */}
           <div>
-            <DibaLeafMark
-              aria-hidden="true"
-              className="h-9 w-9 text-[var(--g-700)]"
-            />
+            <DibaLogo />
             <p className="mt-5 max-w-[26ch] text-[13px] leading-6 text-[var(--t-body)]">
               Huidkliniek in {DIBA_SITE.neighborhood}. Behandelingen voor acne,
               pigment, littekens, huidverbetering en ongewenste haargroei.

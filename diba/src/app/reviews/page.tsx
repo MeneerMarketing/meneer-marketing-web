@@ -242,12 +242,6 @@ export default function ReviewsPage() {
                 Lees ze allemaal bij de bron
                 <span aria-hidden="true">↗</span>
               </a>
-              <Link
-                href="/resultaten"
-                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-              >
-                Of: waarom voor-en-na-foto&apos;s niets bewijzen
-              </Link>
             </div>
           </div>
         </div>

@@ -1,19 +1,17 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import LaserHuidtypeRing from "@/components/laser/LaserHuidtypeRing";
 import LaserPulseMap from "@/components/laser/LaserPulseMap";
-import LaserSessieBoog from "@/components/laser/LaserSessieBoog";
 import PillarNav from "@/components/pillar/PillarNav";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { PincetHaar } from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
-import ReviewCard from "@/components/ui/ReviewCard";
 import SalonizedScorePanel from "@/components/ui/SalonizedScorePanel";
 import { FIGMA_INTENT_LASER } from "@/data/figma-home-images";
 import { LASER_LANDING_FAQ, LASER_USP_ROWS } from "@/data/laser-landing";
-import { reviewsForTopic } from "@/data/reviews";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -53,8 +51,6 @@ export const metadata: Metadata = zoekmachineVelden({
   omschrijving:
     "Laserontharing met GentleMax Pro in Rotterdam. Bereken je prijs per zone, veilig voor huidtype I tot VI.",
 });
-
-const LASER_REVIEWS = reviewsForTopic("laser").slice(0, 3);
 
 const ANKERS = [
   { id: "zones", label: "Waar je wilt ontharen" },
@@ -108,10 +104,10 @@ export default function LaserontharingPage() {
 
             <div className="mt-9 flex flex-wrap items-center gap-6">
               <Link
-                href="/laserontharing/configurator"
+                href="/prijzen"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Bereken je laserprijs
+                Bekijk de tarieven per zone
                 <span aria-hidden="true">›</span>
               </Link>
               <SalonizedScorePanel variant="compact" />
@@ -227,61 +223,12 @@ export default function LaserontharingPage() {
         </div>
       </section>
 
-      {/* ── Sessies ── */}
-      <section
-        id="sessies"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
-      >
-        <div className="mx-auto">
-          <SectieKop
-            label="Het verloop"
-            kop="Waarom het"
-            accent="een reeks is."
-            intro="Een haar is alleen te raken als hij in zijn groeifase zit, en dat doen ze niet allemaal tegelijk. Daarom werkt één sessie nooit en zit er tussen twee sessies weken. Dit is hoe zo'n reeks eruitziet."
-          />
-          <div className="mt-12 lg:max-w-4xl">
-            <LaserSessieBoog />
-          </div>
-        </div>
-      </section>
-
-      {/* ── Reviews ── */}
-      {LASER_REVIEWS.length > 0 ? (
-        <section
-          id="reviews"
-          className="scroll-mt-[var(--anker-offset)] bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
-        >
-          <div className="mx-auto">
-            <SectieKop
-              label="Reviews"
-              kop="Wat anderen"
-              accent="erover zeggen."
-              intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet bij staat is een voor-en-na, want bij ontharing verandert vooral het licht op de foto en niet wat je ziet."
-              raster="gelijk"
-            />
-            <ul className="mt-12 grid gap-4 md:grid-cols-3 md:items-start">
-              {LASER_REVIEWS.map((r) => (
-                <li key={r.id}>
-                  <ReviewCard
-                    quote={r.quote}
-                    name={r.name}
-                    treatment={r.treatment}
-                    stars={r.stars}
-                    relativeDate={r.relativeDate}
-                  />
-                </li>
-              ))}
-            </ul>
-            <Link
-              href="/resultaten"
-              className="diba-label mt-8 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-            >
-              Alle reviews en resultaten
-              <span aria-hidden="true">›</span>
-            </Link>
-          </div>
-        </section>
-      ) : null}
+      {/* Het reviewblok is nu een component, zodat de huidprobleempagina's hem ook
+          kunnen gebruiken met reviews over hun eigen onderwerp. */}
+      <ReviewsBijOnderwerp
+        onderwerp="laser"
+        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet bij staat is een voor-en-na, want bij ontharing verandert vooral het licht op de foto en niet wat je ziet."
+      />
 
       {/* ── Vragen ──
           Stond hier als eigen implementatie met haarlijnen, naast de PillarFaq die de
@@ -312,10 +259,10 @@ export default function LaserontharingPage() {
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <Link
-              href="/laserontharing/configurator"
+              href="/intake"
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Naar de configurator
+              Plan een huidconsult
               <span aria-hidden="true">›</span>
             </Link>
             <a

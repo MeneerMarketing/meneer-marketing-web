@@ -70,9 +70,8 @@ export default function HuidproblemenBijApparaat({
           <span className="diba-accent">hiermee behandelen</span>
         </h2>
         <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-          Per klacht staat erbij welke behandeling op dit apparaat daarvoor
-          wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de
-          intake vast.
+          Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke
+          bij jou past, stelt de huidtherapeut tijdens de intake vast.
         </p>
 
         <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">

@@ -221,10 +221,10 @@ export default function GentleMaxProPage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
-                href="/laserontharing/configurator"
+                href="/prijzen"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
               >
-                Bereken je laserprijs
+                Bekijk de tarieven per zone
               </Link>
               <Link
                 href="/laserontharing"

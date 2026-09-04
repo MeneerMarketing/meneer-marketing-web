@@ -53,6 +53,12 @@ const meet = () => {
     );
     if (kaarten.length < 3) continue;
 
+    /* `items-start` is de auteur die zegt: deze hoogtes verschillen met opzet. Zo staan de
+       reviewkaarten, waar een citaat van twee regels naast een van zes hoort te kunnen
+       zonder dat er een gat in de korte valt. */
+    const uitlijning = getComputedStyle(groep).alignItems;
+    if (uitlijning === "start" || uitlijning === "flex-start") continue;
+
     /* Alleen echte rijen: zelfde bovenkant, zelfde breedte. */
     const eerste = kaarten[0].getBoundingClientRect();
     const opEenRij = kaarten.every((c) => {

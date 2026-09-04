@@ -1,6 +1,10 @@
 /**
  * DIBA ReviewCard — referentie batch 1 (DIBA-RULES.md §8)
- * Crème kaart · Fraunces-italic quote · naam + behandeling + sterren klein.
+ * Crème kaart · quote in het gewone lettertype · naam, behandeling en sterren klein.
+ *
+ * De quote stond in Fraunces cursief. Yasin, 5 september: geen cursief op deze site.
+ * Een citaat heeft de aanhalingstekens al; schuinschrift eroverheen maakt het niet meer
+ * citaat maar wel slechter leesbaar, en het botst met de rest van de pagina.
  * Server component, geen client-JS. Sterren als inline SVG (geen icon-library).
  * Content komt uit echte reviews (review-mining, fase 2) — nooit verzonnen quotes.
  */
@@ -41,7 +45,7 @@ export default function ReviewCard({
   return (
     <figure className="rounded-[var(--r-lg)] bg-white p-6 shadow-[var(--shadow-float)] sm:p-8">
       <blockquote>
-        <p className="text-lg leading-relaxed text-[var(--g-900)] [font-family:var(--font-accent)] italic font-light md:text-xl">
+        <p className="text-[17px] leading-8 text-[var(--g-900)] md:text-[18px]">
           &ldquo;{quote}&rdquo;
         </p>
       </blockquote>
