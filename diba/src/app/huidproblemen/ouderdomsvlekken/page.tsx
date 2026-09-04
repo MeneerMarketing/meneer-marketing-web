@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -217,7 +217,7 @@ export default function Pagina() {
         intro="Bij pigment is zonbescherming geen advies achteraf maar onderdeel van de behandeling. Zonder dat komt het terug en is het geld weg."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Onder UV zie je wat er nog komt."
         alineas={[
           "Pigment begint dieper in de huid dan waar je het ziet. Onder UV-licht wordt zichtbaar wat er al ligt en aan de oppervlakte nog niet doorkomt, en dat is vaak meer dan mensen verwachten.",

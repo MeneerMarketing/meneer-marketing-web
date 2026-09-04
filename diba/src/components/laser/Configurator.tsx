@@ -68,7 +68,7 @@ const OVER_DE_REEKS = {
   kop: "Laserontharing gaat per reeks, niet per keer",
   regels: [
     "Eén sessie raakt alleen de haren die op dat moment groeien. Dat is nooit alles tegelijk, en daarom is één behandeling geen halve behandeling maar geen behandeling.",
-    "Hoeveel sessies je nodig hebt hangt af van de zone, je huidtype en je haargroei. Dat hoor je in de intake, en niet ervoor.",
+    "Hoeveel sessies je nodig hebt hangt af van de zone, je huidtype en je haargroei. Dat hoor je tijdens de intake, en niet ervoor.",
   ],
 } as const;
 
@@ -320,7 +320,7 @@ export default function Configurator() {
           <p className="mt-4 max-w-[56ch] text-[15px] leading-7 text-[var(--t-body)]">
             De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type
             bepaalt niet óf het kan, maar met welke instellingen. Weet je het
-            niet, laat het dan open; we bepalen het in de intake.
+            niet, laat het dan open; we bepalen het tijdens de intake.
           </p>
           <ul className="mt-6 grid gap-2 sm:grid-cols-2">
             {FITZPATRICK_TYPES.map((t) => {
@@ -384,7 +384,7 @@ export default function Configurator() {
               ? "Wijs een zone aan, dan staat het bedrag hier."
               : opbouw.hasMissingPrices
                 ? "Voor een deel van je keuze is nog geen tarief bekend. De opbouw klopt al wel."
-                : "Prijs per sessie. Het aantal sessies hoor je in de intake."}
+                : "Prijs per sessie. Het aantal sessies hoor je tijdens de intake."}
           </p>
 
           {/* Hangt aan de vlag in de data, niet aan een los stukje tekst. Zolang daar

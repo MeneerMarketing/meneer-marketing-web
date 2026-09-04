@@ -129,7 +129,7 @@ export const VERSLAPPING_WEL_NIET = {
   wel: [
     "Eerst vaststellen of het om stevigheid gaat, om volume, of om huid die echt is losgelaten",
     "De diepere lagen aanspannen met laser, in een reeks met weken ertussen",
-    "Een nulmeting, want verandering over maanden zie je in de spiegel niet en op een meting wel",
+    "Een huidanalyse, want verandering over maanden zie je in de spiegel niet en op een meting wel",
     "Dagelijkse zonbescherming, omdat uv-straling collageen en elastine afbreekt [MEDISCHE-CHECK-ROJDA]",
     "Zeggen wanneer het verschil te klein wordt om de investering waard te zijn",
   ],
@@ -151,7 +151,7 @@ export const VERSLAPPING_WIJ_DOEN_NIET = [
   {
     titel: "Geen traject zonder meting vooraf",
     tekst:
-      "Verandering over maanden is met het blote oog niet te beoordelen, in beide richtingen. Zonder nulmeting kunnen wij niet aantonen dat het werkte en jij niet nagaan of het geld goed besteed was.",
+      "Verandering over maanden is met het blote oog niet te beoordelen, in beide richtingen. Zonder huidanalyse kunnen wij niet aantonen dat het werkte en jij niet nagaan of het geld goed besteed was.",
   },
 ];
 

@@ -77,7 +77,7 @@ export default function MeasurementBlock({
             aria-hidden="true"
             className="h-[6px] w-[18px] rounded-[3px] bg-[var(--g-300)]"
           />
-          Nulmeting
+          Huidanalyse
         </span>
         <span className="inline-flex items-center gap-2">
           <span

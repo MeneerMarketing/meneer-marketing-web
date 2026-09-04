@@ -221,7 +221,7 @@ export default function WerkenBijPage() {
             alt="Twee behandelaars met koffie in de gang van de kliniek"
             onderschrift="Tussen twee afspraken door"
             sizes="(min-width: 1024px) 86vw, 92vw"
-            brandpunt="boven"
+            brandpunt={12}
             className="aspect-[16/10] lg:aspect-[2/1]"
           />
         </div>

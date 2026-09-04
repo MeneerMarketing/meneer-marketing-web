@@ -103,7 +103,7 @@ export default function Uitkomst({ profiel }: Props) {
   const melden = meldPunten(profiel);
   const samenvatting = profielSamenvatting(profiel);
   const onbekend = nogNietGemeten(profiel);
-  const nulmeting = behandelingVoorSlug("huidanalyse");
+  const huidanalyse = behandelingVoorSlug("huidanalyse");
 
   /* Je antwoorden als losse regels. Alleen wat je hebt ingevuld: lege regels tonen
      maakt de lijst langer en zegt niets. */
@@ -149,7 +149,7 @@ export default function Uitkomst({ profiel }: Props) {
     return (
       <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
         Vul hierboven iets in, dan staat hier meteen je profiel, wat erbij past
-        en wat je in de intake moet melden.
+        en wat je tijdens de intake moet melden.
       </p>
     );
   }
@@ -213,7 +213,7 @@ export default function Uitkomst({ profiel }: Props) {
       {melden.length > 0 ? (
         <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-9 lg:p-11">
           <p className="diba-label text-[var(--t-label)]">
-            Meld dit in de intake · {melden.length}
+            Meld dit tijdens de intake · {melden.length}
           </p>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Dit zijn dingen die in de praktijk pas aan de balie boven tafel
@@ -279,7 +279,7 @@ export default function Uitkomst({ profiel }: Props) {
                     <span>
                       {publicCopy(
                         m.behandeling.sessies,
-                        "Aantal sessies volgt in de intake",
+                        "Aantal sessies volgt tijdens de intake",
                       )}
                     </span>
                   </span>
@@ -470,11 +470,11 @@ export default function Uitkomst({ profiel }: Props) {
             {[
               [
                 "Wat het kost",
-                nulmeting ? prijsTekst(nulmeting.prijs) : "Op aanvraag",
+                huidanalyse ? prijsTekst(huidanalyse.prijs) : "Op aanvraag",
               ],
               [
                 "Hersteltijd",
-                nulmeting ? publicCopy(nulmeting.herstel) : "Geen",
+                huidanalyse ? publicCopy(huidanalyse.herstel) : "Geen",
               ],
               ["Wat er gebeurt", "Meten en uitleggen, niet behandelen"],
               ["Daarna", "Je zit nergens aan vast"],

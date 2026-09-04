@@ -99,7 +99,7 @@ export const RIMPELS_WEL_NIET = {
     "Eerst de beweegtest, want een dynamische lijn en een statische lijn vragen om iets anders",
     "Collageenopbouw op gang brengen, in een reeks over maanden en niet in een sessie",
     "Zonbescherming, elke dag. Dit is verreweg de grootste factor in hoe snel er nieuwe lijnen bij komen [MEDISCHE-CHECK-ROJDA]",
-    "Een nulmeting, want bij dit huidprobleem gaat het om maanden en je ziet je eigen gezicht elke dag",
+    "Een huidanalyse, want bij dit huidprobleem gaat het om maanden en je ziet je eigen gezicht elke dag",
     "Zeggen wanneer verzorging meer oplevert dan een behandeling",
   ],
   niet: [

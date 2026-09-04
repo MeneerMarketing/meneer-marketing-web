@@ -21,30 +21,13 @@ import Image from "next/image";
  * hoort te benoemen wat je ziet, zodat een bezoeker het apparaat of de behandeling
  * herkent, en niet iets te beweren wat de foto niet laat zien.
  */
-/**
- * Waar in de foto het kader gaat staan.
- *
- * Bij `object-cover` valt er altijd iets buiten beeld. Staat de foto in een breder kader
- * dan hij zelf is, dan gaat dat van boven en onder af, en bij een foto van mensen is dat de
- * verkeerde helft: onderaan staat vloer, bovenaan staat het gezicht.
- *
- * Vandaar dit brandpunt. Standaard blijft `center`, zoals het altijd was.
- */
-export type Brandpunt = "boven" | "midden" | "onder";
-
-const BRANDPUNT: Record<Brandpunt, string> = {
-  boven: "object-top",
-  midden: "object-center",
-  onder: "object-bottom",
-};
-
 export default function BeeldVignet({
   src,
   alt,
   onderschrift,
   sizes,
   priority = false,
-  brandpunt = "midden",
+  brandpunt = 50,
   className = "",
 }: {
   src: string;
@@ -53,8 +36,20 @@ export default function BeeldVignet({
   onderschrift?: string;
   sizes: string;
   priority?: boolean;
-  /** Welk deel van de foto in beeld blijft als er bijgesneden wordt. */
-  brandpunt?: Brandpunt;
+  /**
+   * Waar het kader in de foto komt te staan, verticaal, in procenten. 0 is bovenaan,
+   * 50 het midden, 100 onderaan.
+   *
+   * Bij `cover` valt er altijd iets buiten beeld, en bij een foto van mensen is dat vaak
+   * de verkeerde helft: onderaan staat vloer, bovenaan staat het gezicht. Drie standen
+   * bleken te grof; op een staande foto in een liggend kader zit het bruikbare bereik
+   * tussen 10 en 25.
+   *
+   * Rekenen kan: valt er (1 - zichtbaar) van de hoogte weg, dan begint het venster op dat
+   * deel maal dit percentage. Zit het gezicht op 0,15 van boven en zie je een derde van de
+   * foto, dan is 0,15 / 0,67 = 22 het hoogste dat het hoofd nog heel laat.
+   */
+  brandpunt?: number;
   className?: string;
 }) {
   return (
@@ -67,7 +62,11 @@ export default function BeeldVignet({
         fill
         priority={priority}
         sizes={sizes}
-        className={`object-cover ${BRANDPUNT[brandpunt]}`}
+        className="object-cover"
+        /* Een klassenaam met een berekende waarde bestaat niet op het moment dat Tailwind
+           de stylesheet bouwt, dus dit hoort hier. Het is ook een waarde per foto en geen
+           ontwerpkeuze die je hergebruikt. */
+        style={{ objectPosition: `50% ${brandpunt}%` }}
       />
 
       {onderschrift ? (

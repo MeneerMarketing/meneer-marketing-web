@@ -22,7 +22,7 @@ import { useReducedMotion } from "@/lib/use-reduced-motion";
  *   1. Wat jij vertelt — een ingevulde vorm, jouw profiel.
  *   2. Wat gemeten is — een lege, gestippelde ring met het label "nog niet gemeten".
  *
- * Dat gat is de hele boodschap. Het maakt de stap naar De Nulmeting vanzelfsprekend
+ * Dat gat is de hele boodschap. Het maakt de stap naar de huidanalyse vanzelfsprekend
  * in plaats van opdringerig, en het houdt zich aan A7: geen belofte zonder cijfer.
  *
  * Geen dependencies: SVG + CSS-transities. Respecteert prefers-reduced-motion (§9).
@@ -521,8 +521,8 @@ function Resultaat({
             <strong className="font-medium text-[var(--t-strong)]">
               Dit is wat jij ons vertelt, niet wat we gemeten hebben.
             </strong>{" "}
-            De Nulmeting met EVE-M legt hydratatie, pigment, poriën en structuur
-            objectief vast. Dan pas weten we het echt.
+            De huidanalyse met EVE-M legt hydratatie, pigment, poriën en
+            structuur objectief vast. Dan pas weten we het echt.
           </p>
         </div>
 
@@ -536,7 +536,7 @@ function Resultaat({
           <Button
             href={`/intake${focus?.onderwerp ? `?topic=${focus.onderwerp}` : ""}`}
           >
-            Plan De Nulmeting
+            Plan een huidconsult
           </Button>
           <a
             href="/huidprofiel"

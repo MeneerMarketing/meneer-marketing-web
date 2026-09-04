@@ -4,7 +4,7 @@ import Link from "next/link";
 import Littekenklok from "@/components/littekens/Littekenklok";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -143,8 +143,8 @@ export default function LittekensPage() {
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Bij littekens en striae bepaalt de leeftijd wat er mogelijk is.
               Rode en paarse littekens reageren doorgaans goed op behandeling,
-              witte veel minder. In de intake kijken we hoe oud het litteken is
-              en welke behandeling erbij past.
+              witte veel minder. Tijdens de intake kijken we hoe oud het
+              litteken is en welke behandeling erbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -265,7 +265,7 @@ export default function LittekensPage() {
         intro="Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets om te vermijden: wachten tot het wit is."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Bij littekens telt diepte."
         alineas={[
           "Littekens veranderen langzaam. Daarom leggen we de beginsituatie vast en vergelijken we die na verloop van tijd met een nieuwe beoordeling.",

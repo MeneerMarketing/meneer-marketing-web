@@ -111,7 +111,7 @@ export const PRICE_SECTIONS: readonly PriceSection[] = [
     id: "huid",
     category: "huid",
     caption: "Huidbehandelingen",
-    zin: "Prijs per sessie. Hoeveel sessies je nodig hebt hangt af van je huid en hoor je in de intake.",
+    zin: "Prijs per sessie. Hoeveel sessies je nodig hebt hangt af van je huid en hoor je tijdens de intake.",
     rows: huidbehandelingen.map((b) => ({ name: b.naam, single: b.prijs })),
   },
   {

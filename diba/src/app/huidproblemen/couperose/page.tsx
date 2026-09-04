@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -154,8 +154,8 @@ export default function CouperosePage() {
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               We behandelen couperose met IPL en laser. Meestal zijn er een paar
-              sessies nodig; in de intake hoor je hoeveel dat er in jouw geval
-              zijn.
+              sessies nodig; tijdens de intake hoor je hoeveel dat er in jouw
+              geval zijn.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -299,7 +299,7 @@ export default function CouperosePage() {
         intro="Bij couperose is de lijst korter dan bij de meeste huidproblemen, en dat is geen bescheidenheid. Er is één ding dat werkt op een vaatje dat al zichtbaar is, en er is veel dat er niets aan doet."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Vaatjes zijn te tellen."
         alineas={[
           "Dat klinkt klein, maar het is de reden dat je bij dit huidprobleem niet hoeft te geloven dat het werkte. De EVE-M legt de vaatstructuur vast onder vast licht, vóór de eerste sessie.",

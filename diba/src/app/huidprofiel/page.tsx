@@ -25,7 +25,7 @@ import { zoekmachineVelden } from "@/lib/seo";
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidprofiel",
   titel: "Je huidprofiel",
-  omschrijving: `Bouw je huidprofiel op in ${telwoord(PROFIEL_ONDERDELEN)} stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.`,
+  omschrijving: `Bouw je huidprofiel op in ${telwoord(PROFIEL_ONDERDELEN)} stappen. Wat past, wat niet past en wat je tijdens de intake moet melden. Blijft in je eigen browser.`,
 });
 
 export default function HuidprofielPage() {
@@ -93,7 +93,7 @@ export default function HuidprofielPage() {
             alt="Behandelaar loopt door de kliniek met een tablet"
             onderschrift="Wat jij invult, zien wij bij de intake"
             sizes="(min-width: 1024px) 86vw, 92vw"
-            brandpunt="boven"
+            brandpunt={14}
             className="aspect-[16/10] lg:aspect-[2/1]"
           />
         </div>

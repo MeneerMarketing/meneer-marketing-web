@@ -4,7 +4,7 @@ import Link from "next/link";
 import Huidmatrix from "@/components/droge-huid/Huidmatrix";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -101,8 +101,8 @@ export default function DrogeHuidPage() {
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               We behandelen beide met hydraterende behandelingen en een
-              verzorgingsschema. In de intake stellen we vast welke van de twee
-              bij jou speelt.
+              verzorgingsschema. Tijdens de intake stellen we vast welke van de
+              twee bij jou speelt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -200,7 +200,7 @@ export default function DrogeHuidPage() {
         intro="Meer producten gebruiken omdat het niet beter wordt, richt de meeste schade aan."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Twee assen, dus twee metingen."
         alineas={[
           "Je huid voelt de ene dag anders dan de andere, en daarom is een gevoel geen goed beginpunt. We meten daarom allebei de assen los van elkaar in plaats van te vragen of je huid droog aanvoelt.",

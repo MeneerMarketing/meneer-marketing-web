@@ -142,7 +142,7 @@ export const ACNE_LITTEKENS_WEL_NIET = {
     "Eerst vaststellen of het littekenweefsel is of kleur, want dat scheelt vaak een heel traject",
     "Wachten tot de acne rustig is voordat er iets aan de littekens gebeurt",
     "Zonbescherming, elke dag. Bij bruine vlekken is dit geen aanvulling maar de kern [MEDISCHE-CHECK-ROJDA]",
-    "Een nulmeting in zijlicht, want in recht licht zie je putjes nauwelijks",
+    "Een huidanalyse in zijlicht, want in recht licht zie je putjes nauwelijks",
     "Zeggen wanneer afwachten meer oplevert dan behandelen, ook als je hier zat voor een behandeling",
   ],
   niet: [

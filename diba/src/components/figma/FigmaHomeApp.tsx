@@ -142,8 +142,8 @@ export default function FigmaHomeApp({
 
                 <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
                   Sinds 2017 helpen onze huidtherapeuten en specialisten je met
-                  acne, pigment, littekens en ongewenst haar. In de intake hoor
-                  je wat er bij jou mogelijk is.
+                  acne, pigment, littekens en ongewenst haar. Tijdens de intake
+                  hoor je wat er bij jou mogelijk is.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -234,7 +234,7 @@ export default function FigmaHomeApp({
                 href="/behandelingen/huidanalyse"
                 className="diba-label diba-label-on-dark inline-flex items-center gap-1.5 underline underline-offset-4"
               >
-                Meer over De Nulmeting
+                Meer over de huidanalyse
                 <ArrowUpRight size={13} />
               </Link>
             </div>
@@ -434,8 +434,8 @@ export default function FigmaHomeApp({
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dat verschilt per klacht en per behandeling. In de intake hoor je
-              wat er in jouw geval nodig is.
+              Dat verschilt per klacht en per behandeling. Tijdens de intake
+              hoor je wat er in jouw geval nodig is.
             </p>
           </div>
           <div className="mt-14 grid gap-4 lg:grid-cols-[1.05fr_.95fr]">

@@ -354,14 +354,14 @@ export default function AcnePage() {
         </div>
       </section>
 
-      {/* ── De Nulmeting bij acne ─────────────────────────────────────── */}
+      {/* ── De huidanalyse bij acne ─────────────────────────────────────── */}
       <section
         id="meten"
         className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
           <div>
-            <Label>De Nulmeting</Label>
+            <Label>De huidanalyse</Label>
             <h2 className="diba-display-m mt-4 max-w-[18ch]">
               Deze kenmerken volgen we bij acne
             </h2>
@@ -380,7 +380,7 @@ export default function AcnePage() {
               variant="secundair"
               className="mt-8"
             >
-              Meer over De Nulmeting
+              Meer over de huidanalyse
             </Button>
           </div>
 
@@ -457,8 +457,8 @@ export default function AcnePage() {
           </div>
           <div className="flex flex-col justify-end">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              In de intake meten we je huid, bespreken we het type en hoor je
-              hoeveel sessies we verwachten. Ook als het antwoord is dat je
+              Tijdens de intake meten we je huid, bespreken we het type en hoor
+              je hoeveel sessies we verwachten. Ook als het antwoord is dat je
               beter even wacht.
             </p>
             <Button

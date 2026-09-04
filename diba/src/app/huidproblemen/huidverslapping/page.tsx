@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -115,8 +115,8 @@ export default function Pagina() {
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Wat er liggend strakker uitziet, geeft ongeveer aan wat er te
-              winnen valt. In de intake kijken we daarnaar en bespreken we wat
-              realistisch is.
+              winnen valt. Tijdens de intake kijken we daarnaar en bespreken we
+              wat realistisch is.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -222,7 +222,7 @@ export default function Pagina() {
         intro="Hier is geduld geen bijzaak. Collageen bouwt over maanden op, en dat is niet te versnellen door vaker te komen."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Waarom we vooraf vastleggen"
         alineas={[
           "Verslapping verandert traag, en jij kijkt elke dag. Daardoor merk je vooruitgang net zo min op als achteruitgang. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek, voordat de eerste sessie plaatsvindt.",

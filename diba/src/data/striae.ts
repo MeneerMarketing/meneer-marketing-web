@@ -113,7 +113,7 @@ export const STRIAE_FAQ: readonly {
   {
     vraag: "Hoeveel afspraken heb ik nodig?",
     antwoord:
-      "Dat hangt af van het stadium en van hoe groot het gebied is. In de intake hoor je wat er in jouw geval nodig is en wat het kost.",
+      "Dat hangt af van het stadium en van hoe groot het gebied is. Tijdens de intake hoor je wat er in jouw geval nodig is en wat het kost.",
   },
   {
     vraag: "Helpt een crème?",

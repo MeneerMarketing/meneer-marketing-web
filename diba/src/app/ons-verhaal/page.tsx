@@ -83,7 +83,7 @@ const REGELS = [
     kop: "Contracten met zorgverzekeraars",
     zin: "Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket.",
     betekent:
-      "In de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.",
+      "Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.",
   },
 ];
 

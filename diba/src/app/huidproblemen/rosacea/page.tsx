@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -257,7 +257,7 @@ export default function RosaceaPage() {
         intro="Bij rosacea is het eerste punt links gratis en levert het vaak het meest op. Dat is niet het antwoord dat een kliniek hoort te geven, maar het is wel het juiste."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Bij rosacea telt roodheid."
         alineas={[
           "Roodheid is het soort ding waar je oog aan gewent raakt. Daarom meten we het: niet om je te overtuigen, maar zodat we het verschil kunnen zien op een dag dat jij vindt dat er niets veranderd is.",
@@ -275,7 +275,7 @@ export default function RosaceaPage() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="In de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in jouw geval realistisch is. Ook als dat betekent dat je bij de arts hoort."
+        tekst="Tijdens de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in jouw geval realistisch is. Ook als dat betekent dat je bij de arts hoort."
         topic="rosacea"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

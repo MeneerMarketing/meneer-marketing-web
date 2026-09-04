@@ -4,7 +4,7 @@ import Link from "next/link";
 import HetZonjaar from "@/components/pigment/HetZonjaar";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -111,7 +111,7 @@ export default function PigmentPage() {
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               We behandelen pigmentvlekken met laser, IPL en peelings. Welke
               aanpak past, hangt af van het type vlek en van je huidtype. Dat
-              stellen we in de intake samen vast.
+              stellen we tijdens de intake samen vast.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -260,7 +260,7 @@ export default function PigmentPage() {
         intro="Bij pigment gaat het vaak mis door te vroeg beginnen, niet door te weinig behandelen."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Deze kenmerken volgen we bij pigment"
         alineas={[
           "De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt.",
@@ -281,7 +281,7 @@ export default function PigmentPage() {
       <PillarCta
         kop="Waarom het seizoen"
         accent="meetelt bij pigment"
-        tekst="De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt."
+        tekst="De huidanalyse kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt."
         topic="pigment"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

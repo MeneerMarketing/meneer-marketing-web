@@ -79,7 +79,7 @@ export const metadata: Metadata = zoekmachineVelden({
 const WAT_JE_PATIENT_KRIJGT = [
   {
     kop: "Een meting onder vast licht",
-    zin: "Elke eerste afspraak begint met een objectieve huidanalyse: zelfde licht, zelfde hoek, zelfde instellingen. Die opname blijft het nulpunt waar volgende afspraken tegen afgezet worden.",
+    zin: "Elke eerste afspraak begint met een objectieve huidanalyse: zelfde licht, zelfde hoek, zelfde instellingen. Die opname blijft het vertrekpunt waar volgende afspraken tegen afgezet worden.",
   },
   {
     kop: "Een plan met een grens erin",
@@ -291,9 +291,9 @@ export default function VerwijzersPage() {
         <div className="mx-auto">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
             <div className="shrink-0">
-              <Label>Wat uw patiënt krijgt</Label>
+              <Label>Na de huidanalyse</Label>
               <h2 className="diba-display-m mt-4">
-                Wat een nulmeting <span className="diba-accent">oplevert</span>
+                Wat uw patiënt <span className="diba-accent">meekrijgt</span>
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">

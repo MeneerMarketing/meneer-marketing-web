@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -114,8 +114,8 @@ export default function Pagina() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In de intake stellen we vast waar het bij jou vandaan komt, en
-              welke behandeling daarbij past.
+              Tijdens de intake stellen we vast waar het bij jou vandaan komt,
+              en welke behandeling daarbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -228,7 +228,7 @@ export default function Pagina() {
         intro="Bij dofheid is het effect vaak snel zichtbaar en houdt het een aantal weken aan. Daarom wordt deze behandeling vaak herhaald."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Glans is te meten."
         alineas={[
           "Dat klinkt vreemd bij een klacht die geen vakterm heeft, en het is waarom het hier nuttig is: dof is een indruk, en indrukken schuiven mee met je humeur en het licht in de kamer. De EVE-M legt vast hoe je huid het licht terugkaatst, onder vast licht en vanuit een vaste hoek.",

@@ -116,7 +116,7 @@ export const INTAKE_FEITEN_VAST = [
  */
 export const OOK_ALS_JE_STOPT: readonly { kop: string; zin: string }[] = [
   {
-    kop: "Een nulpunt dat van jou is",
+    kop: "Een vertrekpunt dat van jou is",
     zin: "Je meting blijft bewaard als beginpunt onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.",
   },
   {

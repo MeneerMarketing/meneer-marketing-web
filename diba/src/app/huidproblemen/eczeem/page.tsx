@@ -20,7 +20,7 @@ import { zoekmachineVelden } from "@/lib/seo";
  *
  * Eczeem is een aandoening met een medische behandeling en die hoort bij de huisarts of
  * de dermatoloog. Net als bij moedervlekken staat er daarom geen PillarCta, geen
- * NulmetingAssen en geen link naar /intake in de pagina zelf.
+ * HuidanalyseAssen en geen link naar /intake in de pagina zelf.
  *
  * Het verschil met de moedervlekkenpagina is dat er hier wél één punt is waar wij iets
  * kunnen: de barrière ondersteunen. Dat staat in de cirkel op zijn plek en niet groter

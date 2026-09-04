@@ -21,22 +21,26 @@ import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
  * lopen zodra het tarief verandert. Nu komt het bedrag uit de behandelingentabel en staat
  * de zin één keer.
  *
- * WAT ER MET OPZET NIET IN STAAT.
+ * WAT ER EERST FOUT AAN WAS.
  *
- * Een prijs voor de behandeling van dít probleem. Die hangt af van wat er uit de meting
- * komt, en een bedrag noemen dat we niet kunnen waarmaken is precies wat /ons-verhaal
- * verbiedt. In plaats daarvan wijst het antwoord naar de prijslijst, waar alles staat.
+ * Het antwoord begon met "Het begint bij de huidanalyse: 50 euro, en daar zit geen
+ * behandeling in", en legde daarna uit waarom we geen bedrag noemen. Yasin: dat klopt niet.
+ * Wat het kost hangt af van de behandeling, dat wordt tijdens de intake duidelijk, en die
+ * 50 euro gaat er weer af zodra je een behandeling neemt.
+ *
+ * Dat laatste stond nergens, terwijl het het enige is wat de drempel wegneemt: de intake
+ * kost je niets als je daarna behandeld wordt.
  */
 export function kostenVraag(): { vraag: string; antwoord: string } {
-  const nul = behandelingVoorSlug("huidanalyse");
-  const bedrag = nul ? prijsTekst(nul.prijs) : "een vast bedrag";
+  const intake = behandelingVoorSlug("huidanalyse");
+  const bedrag = intake ? prijsTekst(intake.prijs) : "een vast bedrag";
 
   return {
     vraag: "Wat kost dit?",
     antwoord:
-      `Het begint bij de nulmeting: ${bedrag}, en daar zit geen behandeling in. ` +
-      "Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. " +
-      "Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. " +
-      "Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.",
+      "Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. " +
+      `De intake kost ${bedrag}; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. ` +
+      "Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. " +
+      "Alle tarieven per behandeling staan openbaar op de prijzenpagina.",
   };
 }

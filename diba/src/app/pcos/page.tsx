@@ -281,8 +281,8 @@ export default function PcosPage() {
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               Een traject begint met een meting, en bij PCOS is dat extra
-              zinvol: je huid beweegt mee met periodes, dus zonder nulpunt is
-              later niet te zien of iets werkte of dat het gewoon een rustige
+              zinvol: je huid beweegt mee met periodes, dus zonder vertrekpunt
+              is later niet te zien of iets werkte of dat het gewoon een rustige
               maand was.
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">

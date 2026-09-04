@@ -172,7 +172,7 @@ export default function Prijslijst() {
         <span className="mt-2 block">
           Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas
           aan de balie compleet worden. Wat je hier ziet is wat een sessie kost.
-          Hoeveel sessies je nodig hebt hoor je in de intake, en dat getal
+          Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal
           bepaalt je totaal meer dan het tarief hiernaast.
         </span>
       </p>

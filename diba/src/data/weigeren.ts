@@ -187,9 +187,9 @@ export const WEIGERINGEN: readonly Weigering[] = [
     waarom:
       "Licht mikt op pigment. Zit er verse kleur in je huid van zon of zonnebank, dan neemt die het licht op en gaat de energie naar de verkeerde plek.",
     waarheen:
-      "Kom terug als je huid haar eigen kleur terug heeft. Hoeveel weken dat duurt hoor je in de intake, want dat verschilt per huid.",
+      "Kom terug als je huid haar eigen kleur terug heeft. Hoeveel weken dat duurt hoor je tijdens de intake, want dat verschilt per huid.",
     watWel:
-      "De meting kan nu gewoon, en behandelingen die niet met licht werken meestal ook. Dan staat je nulpunt vast en kun je beginnen zodra je kleur eruit is, in plaats van dan pas aan de wachtlijst te denken.",
+      "De meting kan nu gewoon, en behandelingen die niet met licht werken meestal ook. Dan staat je vertrekpunt vast en kun je beginnen zodra je kleur eruit is, in plaats van dan pas aan de wachtlijst te denken.",
     link: { label: "Hoe laserontharing werkt", href: "/laserontharing" },
   },
   {

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -218,7 +218,7 @@ export default function Pagina() {
         intro="Bij lijnen zit de winst in de juiste keuze en in geduld. Collageen bouwt in maanden op, en dat is niet te versnellen door vaker te komen."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Waarom we vooraf vastleggen"
         alineas={[
           "Bij lijnen gaat het om maanden, en in die maanden zie je jezelf elke dag. Daardoor merk je een geleidelijke verandering nauwelijks op, in beide richtingen. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
@@ -234,9 +234,9 @@ export default function Pagina() {
       <PillarFaq items={RIMPELS_FAQ} onderwerp="rimpels" />
 
       <PillarCta
-        kop="Wat een nulmeting"
-        accent="oplevert"
-        tekst="Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmeting legt vast waar je begon, zodat het verschil later te zien is in plaats van te geloven."
+        kop="Zie je vooruitgang"
+        accent="in plaats van te gokken"
+        tekst="Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De huidanalyse legt onder vaste belichting vast waar je begon, zodat je bij een volgende afspraak het verschil naast elkaar ziet."
         topic="rimpels"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

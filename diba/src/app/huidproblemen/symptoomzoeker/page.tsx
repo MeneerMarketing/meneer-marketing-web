@@ -21,7 +21,7 @@ import {
  * je denkt te hebben maar wat je ziet en voelt, in gewone woorden.
  *
  * Net als de kleurwijzer verkoopt hij niets en heeft hij geen WelNiet, geen WijZeggenNee
- * en geen NulmetingAssen: hij sorteert, en dan ben je ergens anders.
+ * en geen HuidanalyseAssen: hij sorteert, en dan ben je ergens anders.
  */
 
 export const metadata: Metadata = zoekmachineVelden({
@@ -132,7 +132,7 @@ export default function SymptoomzoekerPage() {
             </p>
             <div className="mt-7">
               <Button href="/intake?topic=onbekend" variant="primair-op-donker">
-                Plan de nulmeting
+                Plan een huidconsult
               </Button>
             </div>
           </div>

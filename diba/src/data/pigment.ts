@@ -132,7 +132,7 @@ export const ZONJAAR: readonly Maand[] = [
     uv: 4.6,
     watGebeurt: "Iets omlaag, maar de zomerschade is nu opgebouwd.",
     startAdvies:
-      "Nog niet. Wel een goed moment voor de nulmeting, zodat we in september kunnen starten.",
+      "Nog niet. Wel een goed moment voor de huidanalyse, zodat we in september kunnen starten.",
     start: "liever-niet",
   },
   {

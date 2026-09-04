@@ -199,7 +199,7 @@ export default function HetZonjaar() {
 
           {maand.start === "liever-niet" ? (
             <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
-              We zeggen dit ook aan de telefoon. Je mag wel nu al de nulmeting
+              We zeggen dit ook aan de telefoon. Je mag wel nu al de huidanalyse
               doen, dan staan we in september klaar met een vertrekpunt.
             </p>
           ) : null}
@@ -210,8 +210,8 @@ export default function HetZonjaar() {
             className="mt-6"
           >
             {maand.start === "liever-niet"
-              ? "Alleen de nulmeting doen"
-              : "Plan je nulmeting"}
+              ? "Alleen de huidanalyse doen"
+              : "Plan je huidconsult"}
           </Button>
         </div>
       </div>

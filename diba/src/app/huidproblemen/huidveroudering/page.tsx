@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -122,8 +122,8 @@ export default function HuidverouderingPage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In de intake stellen we vast wat bij jou door de zon komt en wat
-              bij je leeftijd hoort, en welke behandeling daarbij past.
+              Tijdens de intake stellen we vast wat bij jou door de zon komt en
+              wat bij je leeftijd hoort, en welke behandeling daarbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -231,7 +231,7 @@ export default function HuidverouderingPage() {
         intro="De eerste regel links is de goedkoopste behandeling op deze hele site, en de enige die aan alle vijf de sporen tegelijk werkt."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Veroudering vraagt om een beginpunt."
         alineas={[
           "Dit is het onderwerp waarbij je oog je het hardst voor de gek houdt. De verandering gaat over jaren en je kijkt elke dag in dezelfde spiegel, dus je ziet het verschil niet, in geen van beide richtingen.",

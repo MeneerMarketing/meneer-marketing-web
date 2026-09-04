@@ -118,7 +118,7 @@ export default function WallenPage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In de intake stellen we vast waar het bij jou vandaan komt.
+              Tijdens de intake stellen we vast waar het bij jou vandaan komt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

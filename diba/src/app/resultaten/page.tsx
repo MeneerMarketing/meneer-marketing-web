@@ -198,14 +198,14 @@ export default function ResultatenPage() {
             <p className="mt-4 max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]">
               Wat er dan uit komt zijn geen mooie plaatjes maar waardes:
               pigment, vocht, poriestructuur, tekenen van veroudering. Jouw
-              eigen nulpunt, en het enige eerlijke vergelijkingsmateriaal dat er
-              bestaat.
+              eigen vertrekpunt, en het enige eerlijke vergelijkingsmateriaal
+              dat er bestaat.
             </p>
 
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
                 {
-                  kop: "Jouw eigen nulpunt",
+                  kop: "Jouw eigen vertrekpunt",
                   zin: "Je vergelijkt met je eigen huid van drie maanden geleden, niet met iemand anders.",
                 },
                 {

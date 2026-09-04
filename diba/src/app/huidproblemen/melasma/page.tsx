@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -266,7 +266,7 @@ export default function MelasmaPage() {
         intro="Het eerste kruisje rechts is bij melasma de duurste fout die er is, en hij wordt gemaakt door klinieken en niet door klanten."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Meten gaat hier over diepte."
         alineas={[
           "Bij gewone pigmentvlekken meten we hoe donker en hoe groot. Bij melasma is de eerste vraag hoe diep het zit, want dat bepaalt of de rest van de meting er nog toe doet.",

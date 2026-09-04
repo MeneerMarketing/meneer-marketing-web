@@ -474,7 +474,7 @@ const BLOKKADES: readonly {
   readonly slugs: readonly string[];
   readonly reden: string;
   /**
-   * Hoort dit thuis in "meld dit in de intake"?
+   * Hoort dit thuis in "meld dit tijdens de intake"?
    *
    * Standaard wel: bijna elke blokkade is iets wat de therapeut moet weten. De
    * leeftijdsregels niet, want die zijn geen bijzonderheid maar een routering. Die stonden
@@ -558,7 +558,7 @@ const LET_OP: readonly {
       p.gebruikt.includes("retinol") || p.gebruikt.includes("zuren"),
     slugs: ["peelings", "skinpen", "dermapen-4", "fotona", "happy-intim"],
     tekst:
-      "Je gebruikt retinol of zuren. Die moet je tijdig pauzeren; hoe lang hoor je in de intake.",
+      "Je gebruikt retinol of zuren. Die moet je tijdig pauzeren; hoe lang hoor je tijdens de intake.",
   },
   {
     wanneer: (p) => p.gebruikt.includes("benzoyl"),
@@ -840,13 +840,13 @@ export function waaromNiets(p: Huidprofiel): GeenMatch | null {
     soort: "niets-in-aanbod",
     kop: "Hier ligt het antwoord niet",
     zin: "Voor wat jij wil veranderen heeft deze kliniek geen behandeling die er volledig op mikt.",
-    wat: "Dat is geen afwijzing maar een doorverwijzing. In de intake kijken we mee waar je wel terechtkunt, en dat kost je niets.",
+    wat: "Dat is geen afwijzing maar een doorverwijzing. Tijdens de intake kijken we mee waar je wel terechtkunt, en dat kost je niets.",
     danWel: [],
   };
 }
 
 /**
- * Alles wat je in de intake moet melden, ongeacht welke behandeling het wordt.
+ * Alles wat je tijdens de intake moet melden, ongeacht welke behandeling het wordt.
  *
  * Dit is de lijst die deze pagina het meest waard maakt: hij bestaat uit dingen die in de
  * praktijk pas aan de balie boven tafel komen, en dan een afspraak kosten.
@@ -1111,7 +1111,7 @@ export function nogNietGemeten(p: Huidprofiel): readonly string[] {
     "Je vochtwaarde en de staat van je barrière, gemeten in plaats van gevoeld. Een huid die trekkerig aanvoelt is niet altijd een droge huid.",
   );
   punten.push(
-    "Een nulpunt. Zonder meting van vandaag is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.",
+    "Een vertrekpunt. Zonder meting van vandaag is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.",
   );
 
   return punten;
@@ -1125,5 +1125,5 @@ export function huidtypeKanttekening(t: FitzpatrickId | null): string | null {
   if (t === "I" || t === "II") {
     return "Bij jouw huidtype is de huid gevoeliger voor zon na een behandeling. Dat is geen beperking maar wel een afspraak over wat je erna doet.";
   }
-  return "Bij jouw huidtype is er ruimte in de instellingen. Wat er precies gekozen wordt hoor je in de intake.";
+  return "Bij jouw huidtype is er ruimte in de instellingen. Wat er precies gekozen wordt hoor je tijdens de intake.";
 }

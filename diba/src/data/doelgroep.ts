@@ -150,7 +150,7 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
       },
       {
         kop: "Dezelfde meting vooraf",
-        zin: "Je huidtype hoort vastgesteld te worden en niet ingeschat aan de balie. Dat is een van de dingen waar de nulmeting voor is.",
+        zin: "Je huidtype hoort vastgesteld te worden en niet ingeschat aan de balie. Dat is een van de dingen waar de huidanalyse voor is.",
       },
       {
         kop: "Dezelfde eerlijkheid",
@@ -205,7 +205,7 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
       "Of er een vakantie of zonvakantie tussen zit, en wanneer",
       "Of je al iets gebruikt of laat doen bij iemand anders",
     ],
-    begin: { label: "Plan je nulmeting", href: "/intake" },
+    begin: { label: "Plan je huidconsult", href: "/intake" },
   },
 ];
 

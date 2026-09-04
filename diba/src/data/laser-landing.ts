@@ -22,7 +22,7 @@ export const LASER_LANDING_FAQ = [
     id: "laser-faq-1",
     question: "Hoeveel sessies heb je nodig?",
     answer:
-      "Dat hangt af van de zone, je haartype en je hormoonbalans. Reken op een reeks met weken ertussen, want één sessie raakt alleen de haren die op dat moment groeien. In de intake hoor je wat er bij jou realistisch is.",
+      "Dat hangt af van de zone, je haartype en je hormoonbalans. Reken op een reeks met weken ertussen, want één sessie raakt alleen de haren die op dat moment groeien. Tijdens de intake hoor je wat er bij jou realistisch is.",
   },
   {
     id: "laser-faq-2",

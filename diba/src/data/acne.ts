@@ -190,7 +190,7 @@ export const ACNE_TIJDLIJN = [
     periode: "Week 8 – 12",
     kop: "Zichtbaar verschil",
     tekst:
-      "Nu zie je het ook op foto's, niet alleen in de spiegel op een goede dag. Dit is het moment waarop het verschil met de nulmeting hard wordt in plaats van een gevoel.",
+      "Nu zie je het ook op foto's, niet alleen in de spiegel op een goede dag. Dit is het moment waarop het verschil met de huidanalyse hard wordt in plaats van een gevoel.",
     watWijDoen:
       "Tweede meting met EVE-M. We leggen de twee naast elkaar en stellen het plan bij. Werkt het niet, dan zeggen we dat en stoppen we.",
     isDip: false,
@@ -209,7 +209,7 @@ export const ACNE_TIJDLIJN = [
 /** Wat wél en wat niet. De kruisjes zijn concreet, want daar zit de waarde. */
 export const ACNE_WEL_NIET = {
   wel: [
-    "Een nulmeting voordat we starten, zodat we later onder vergelijkbare omstandigheden kunnen meten",
+    "Een huidanalyse voordat we starten, zodat we later onder vergelijkbare omstandigheden kunnen meten",
     "Poriën reinigen en verhoorning aanpakken, in stappen die je huid aankan",
     "Ontsteking eerst omlaag, littekens daarna. Nooit tegelijk",
     "Zonbescherming, elke dag, ook in de winter. Dit voorkomt de donkere vlekken die na een puistje overblijven",
@@ -255,7 +255,7 @@ export const ACNE_FAQ = [
        en die staat nu onderaan met het bedrag uit de behandelingentabel. */
     vraag: "Hoeveel sessies heb ik nodig?",
     antwoord:
-      "Dat hangt af van het type acne en hoe lang het speelt. Na de nulmeting krijg je een aantal en een prijs, geen open einde.",
+      "Dat hangt af van het type acne en hoe lang het speelt. Na de huidanalyse krijg je een aantal en een prijs, geen open einde.",
   },
   {
     vraag: "Ik heb al alles geprobeerd. Waarom zou dit werken?",

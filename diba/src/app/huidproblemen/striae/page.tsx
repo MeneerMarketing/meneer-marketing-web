@@ -96,8 +96,8 @@ export default function StriaePage() {
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Het stadium bepaalt wat er haalbaar is. Rode en paarse striae
-              reageren het beste; bij witte werken we op de structuur. In de
-              intake stelt de behandelaar vast waar jij staat.
+              reageren het beste; bij witte werken we op de structuur. Tijdens
+              de intake stelt de behandelaar vast waar jij staat.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

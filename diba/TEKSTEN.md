@@ -54,7 +54,7 @@ NL
 
 **HUIDKLINIEK IN ROTTERDAM**
 
-Sinds 2017 helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens en ongewenst haar. In de intake hoor je wat er bij jou mogelijk is.
+Sinds 2017 helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens en ongewenst haar. Tijdens de intake hoor je wat er bij jou mogelijk is.
 
 > knop: BEKIJK DE BEHANDELINGEN
 
@@ -114,7 +114,7 @@ Bij Diba werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheids
 
 **Hoeveel afspraken je nodig hebt.**
 
-Dat verschilt per klacht en per behandeling. In de intake hoor je wat er in jouw geval nodig is.
+Dat verschilt per klacht en per behandeling. Tijdens de intake hoor je wat er in jouw geval nodig is.
 
 **Wat we vastleggen.**
 
@@ -340,7 +340,7 @@ WAT ER WEL EN NIET IN HUIS KOMT
 
 - Huidtherapeuten met een registratie Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici, en de kliniek is aangesloten bij ANBOS. Beide vragen bij- en nascholing. WAT DAT VOOR JOU BETEKENT Veel aanvullende pakketten stellen die inschrijving als eis voordat ze een behandeling vergoeden.
 
-- Contracten met zorgverzekeraars Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket. WAT DAT VOOR JOU BETEKENT In de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.
+- Contracten met zorgverzekeraars Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket. WAT DAT VOOR JOU BETEKENT Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.
 
 **Begin met een huidanalyse**
 
@@ -586,7 +586,7 @@ Twee wegwijzers die sorteren op kleur of op wat je voelt, in plaats van op een n
 
 Iedere huidvraag begint met een beoordeling, waaruit ook kan volgen dat we geen behandeling adviseren.
 
-> knop: PLAN DE NULMETING
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -694,7 +694,7 @@ Links wat we bij acne doen, rechts wat we afraden. Bij elk punt staat waarom, wa
 
 **DIT WERKT**
 
-- Een nulmeting voordat we starten, zodat we later onder vergelijkbare omstandigheden kunnen meten
+- Een huidanalyse voordat we starten, zodat we later onder vergelijkbare omstandigheden kunnen meten
 
 - Poriën reinigen en verhoorning aanpakken, in stappen die je huid aankan
 
@@ -732,7 +732,7 @@ De EVE-M-meting legt je huid vast voordat we beginnen. Bij acne zijn poriën, on
 
 Dat is niet om je te overtuigen. Het is zodat we het kunnen zien als iets niet werkt, en dan iets anders kunnen doen.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 - Poriën Grootte en dichtheid, gemeten in plaats van geschat
 
@@ -748,7 +748,7 @@ Bij de meeste mensen is acne goed te beheersen. Bij sommigen blijft het terugkom
 
 Hoeveel sessies heb ik nodig? +
 
-Dat hangt af van het type acne en hoe lang het speelt. Na de nulmeting krijg je een aantal en een prijs, geen open einde.
+Dat hangt af van het type acne en hoe lang het speelt. Na de huidanalyse krijg je een aantal en een prijs, geen open einde.
 
 Ik heb al alles geprobeerd. Waarom zou dit werken? +
 
@@ -772,11 +772,11 @@ Dat zijn meestal geen littekens maar pigmentvlekken. Zonbescherming voorkomt dat
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
-In de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies we verwachten. Ook als het antwoord is dat je beter even wacht.
+Tijdens de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies we verwachten. Ook als het antwoord is dat je beter even wacht.
 
 ---
 
@@ -790,7 +790,7 @@ In de intake meten we je huid, bespreken we het type en hoor je hoeveel sessies 
 
 Wat er na acne achterblijft, is meestal een rood vlekje, een bruine vlek of een kuiltje. Ze lijken op elkaar en vragen een andere behandeling: peelings bij verkleuring, microneedling en laser bij kuiltjes.
 
-In de intake stellen we onder strijklicht vast om welke van de drie het gaat.
+Tijdens de intake stellen we onder strijklicht vast om welke van de drie het gaat.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -798,7 +798,7 @@ In de intake stellen we onder strijklicht vast om welke van de drie het gaat.
 
 **Vier beelden en wat elk ervan vraagt**
 
-Deze vier dekken vrijwel alles wat er na acne achterblijft. Welke het bij jou is, stelt de huidtherapeut in de intake vast.
+Deze vier dekken vrijwel alles wat er na acne achterblijft. Welke het bij jou is, stelt de huidtherapeut tijdens de intake vast.
 
 - Er zit nog actieve acne Er komen nog steeds nieuwe puistjes bij
 
@@ -856,7 +856,7 @@ De juiste volgorde levert hier vaak meer op dan de zwaarste behandeling.
 
 - Zonbescherming, elke dag. Bij bruine vlekken is dit geen aanvulling maar de kern
 
-- Een nulmeting in zijlicht, want in recht licht zie je putjes nauwelijks
+- Een huidanalyse in zijlicht, want in recht licht zie je putjes nauwelijks
 
 - Zeggen wanneer afwachten meer oplevert dan behandelen, ook als je hier zat voor een behandeling
 
@@ -878,7 +878,7 @@ Dat is de reden dat een foto van je telefoon hier niet volstaat en de spiegel in
 
 Daarmee is het verschil later te zien in plaats van te geloven, en dat is bij dit huidprobleem extra belangrijk: het gaat om maanden, en je eigen gezicht zie je elke dag.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -930,7 +930,7 @@ In het huidconsult stellen we vast of het littekenweefsel is of kleur. Soms is d
 
 Cellulitis ontstaat doordat de bindweefselschotjes onder je huid bij vrouwen overwegend rechtop staan. Hetzelfde vet geeft daardoor een patroon van kuiltjes in plaats van een glad oppervlak.
 
-We behandelen het met technieken die de doorbloeding en de stevigheid van het bindweefsel verbeteren. In de intake bespreken we wat er in jouw geval haalbaar is.
+We behandelen het met technieken die de doorbloeding en de stevigheid van het bindweefsel verbeteren. Tijdens de intake bespreken we wat er in jouw geval haalbaar is.
 
 > knop: KIJK ONDER DE HUID
 
@@ -1028,7 +1028,7 @@ Nee. Kom je voor iets anders en wil je hier iets over vragen, dan krijg je hetze
 
 **Aan de huid eromheen**
 
-De kuiltjes zelf komen uit de bouw van je onderhuid. Aan de stevigheid en de doorbloeding van de huid erboven valt wel te werken, en dat maakt het beeld rustiger. In de intake bespreken we wat er in jouw geval haalbaar is.
+De kuiltjes zelf komen uit de bouw van je onderhuid. Aan de stevigheid en de doorbloeding van de huid erboven valt wel te werken, en dat maakt het beeld rustiger. Tijdens de intake bespreken we wat er in jouw geval haalbaar is.
 
 ---
 
@@ -1042,7 +1042,7 @@ De kuiltjes zelf komen uit de bouw van je onderhuid. Aan de stevigheid en de doo
 
 Die dunne rode of paarse lijntjes op je wangen of naast je neus heten couperose. Een egale rode waas is iets anders en vraagt om een andere aanpak, al zitten ze vaak samen. Met je vinger zie je binnen een paar seconden waar je mee te maken hebt.
 
-We behandelen couperose met IPL en laser. Meestal zijn er een paar sessies nodig; in de intake hoor je hoeveel dat er in jouw geval zijn.
+We behandelen couperose met IPL en laser. Meestal zijn er een paar sessies nodig; tijdens de intake hoor je hoeveel dat er in jouw geval zijn.
 
 > knop: DOE DE DRUKPROEF
 
@@ -1146,7 +1146,7 @@ Dat klinkt klein, maar het is de reden dat je bij dit huidprobleem niet hoeft te
 
 Na de reeks leggen we de twee beelden naast elkaar. Zie je zelf geen verschil, dan is dat het antwoord en gaan we niet door omdat er nog sessies in een pakket zaten.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -1204,7 +1204,7 @@ Het huidconsult legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies
 
 Een doffe huid kaatst het licht minder terug. Dat komt meestal door een opeenhoping van dode huidcellen of door te weinig vocht. Beide behandelen we, met peelings, HydraFacial of microneedling.
 
-In de intake stellen we vast waar het bij jou vandaan komt, en welke behandeling daarbij past.
+Tijdens de intake stellen we vast waar het bij jou vandaan komt, en welke behandeling daarbij past.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -1288,7 +1288,7 @@ Dat klinkt vreemd bij een klacht die geen vakterm heeft, en het is waarom het hi
 
 Daarmee is na een reeks te zien of er werkelijk iets is veranderd of dat je een goede week had. Bij dit huidprobleem is dat verschil groter dan bij welk ander ook.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -1326,7 +1326,7 @@ Nee. Droog gaat over te weinig vet, uitgedroogd over te weinig water, en dof ove
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Uitzoeken welke van de vier het bij jou is**
 
@@ -1344,7 +1344,7 @@ In het huidconsult zoeken we uit welke van de vier het bij jou is. Blijkt het vo
 
 Donkere kringen hebben drie mogelijke oorzaken: pigment, doorschijnende vaatjes of schaduw door een groef. Pigment behandelen we met peelings en gerichte verzorging.
 
-In de intake stellen we vast om welke van de drie het gaat en wat daarbij past.
+Tijdens de intake stellen we vast om welke van de drie het gaat en wat daarbij past.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -1412,7 +1412,7 @@ Geen enkel gebied is zo gevoelig voor de stand van een lamp als dit. Licht van b
 
 Daarom leggen we dit gebied vast met vaste belichting en op vaste afstand. Pas dan is een verschil later een verschil, en geen ander moment van de dag.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -1454,7 +1454,7 @@ Meestal drie tot zes, met vier tot zes weken ertussen, en dat hoor je pas na de 
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Eerst weten welk type je hebt.**
 
@@ -1472,7 +1472,7 @@ We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, da
 
 Een droge huid maakt te weinig vet aan, een vochtarme huid houdt te weinig water vast. Dat zijn twee verschillende dingen, en je kunt ze allebei tegelijk hebben.
 
-We behandelen beide met hydraterende behandelingen en een verzorgingsschema. In de intake stellen we vast welke van de twee bij jou speelt.
+We behandelen beide met hydraterende behandelingen en een verzorgingsschema. Tijdens de intake stellen we vast welke van de twee bij jou speelt.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -1556,7 +1556,7 @@ Je huid voelt de ene dag anders dan de andere, en daarom is een gevoel geen goed
 
 Dat maakt ook zichtbaar welke as beweegt zodra je iets verandert. Meestal is dat de wateras binnen enkele weken, en dat vertelt je meteen waar je zat.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -1812,7 +1812,7 @@ Meestal alles wat er zit, in een afspraak. Zijn het er veel, dan spreiden we het
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Even laten kijken. Vaak is het zo klaar.**
 
@@ -1832,7 +1832,7 @@ Bij milia is de afspraak kort en eenmalig. Blijkt het iets anders, dan hoor je d
 
 Een huid die snel reageert, heeft meestal een verzwakte huidbarrière. We brengen die tot rust met milde behandelingen en een verzorgingsschema dat je huid aankan.
 
-In de intake lopen we je huidverzorging langs. Vaak zitten er meerdere prikkelende producten in die samen te veel worden.
+Tijdens de intake lopen we je huidverzorging langs. Vaak zitten er meerdere prikkelende producten in die samen te veel worden.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -1918,7 +1918,7 @@ Een gevoelige huid voelt de ene dag anders dan de andere, en achteraf weet niema
 
 We leggen daarom vast hoe rood het is, hoe snel vocht verdwijnt en hoe de bovenlaag erbij ligt. Dan is de vraag over twee maanden niet of het beter voelt, maar of het beter is.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -2216,13 +2216,13 @@ Omdat hier niets te koop is. Dit is een wegwijzer; de prijzen staan bij de behan
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Kom gewoon langs. Wij kijken mee.**
 
 Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laat de plek dan beoordelen.
 
-> knop: PLAN DE NULMETING
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -2236,7 +2236,7 @@ Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laa
 
 Het grootste deel van wat je huid ouder maakt, komt door zonlicht en niet door je leeftijd. Dat deel is goed te behandelen, met peelings, needling en laser.
 
-In de intake stellen we vast wat bij jou door de zon komt en wat bij je leeftijd hoort, en welke behandeling daarbij past.
+Tijdens de intake stellen we vast wat bij jou door de zon komt en wat bij je leeftijd hoort, en welke behandeling daarbij past.
 
 > knop: DOE DE ONDERARMTEST
 
@@ -2314,7 +2314,7 @@ Huidveroudering is geen schakelaar die op een leeftijd omgaat. Er lopen meerdere
 
 **Nu wordt meten zinvol**
 
-De eerste zonschade wordt zichtbaar terwijl er nog niets vastligt. Een nulmeting nu geeft je een vergelijkingspunt, zodat je later weet of iets werkte of dat je het je verbeeldde.
+De eerste zonschade wordt zichtbaar terwijl er nog niets vastligt. Een huidanalyse nu geeft je een vergelijkingspunt, zodat je later weet of iets werkte of dat je het je verbeeldde.
 
 Tel de okeren balkjes. Dat is het deel van wat je ziet dat door zon komt, en daarmee het deel waar vandaag nog iets aan te doen valt. De groene balkjes lopen door wat je ook kiest.
 
@@ -2368,7 +2368,7 @@ De eerste regel links is de goedkoopste behandeling op deze hele site, en de eni
 
 - Wachten tot het je echt begint te storen. De sporen die je nu niet ziet lopen al wel.
 
-- Een behandelpakket kopen zonder nulmeting. Dan is achteraf niet vast te stellen of het iets deed.
+- Een behandelpakket kopen zonder huidanalyse. Dan is achteraf niet vast te stellen of het iets deed.
 
 - Meerdere agressieve behandelingen kort na elkaar. Een geïrriteerde huid maakt méér pigment aan, geen minder.
 
@@ -2382,7 +2382,7 @@ Dit is het onderwerp waarbij je oog je het hardst voor de gek houdt. De verander
 
 We leggen de beginsituatie vast, zodat we na verloop van tijd beter kunnen beoordelen of er iets is veranderd.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -2420,7 +2420,7 @@ Zolang de oorzaak niet doorloopt. Zonder bescherming bouwt de zonschade gewoon v
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Begin bij weten wat er speelt.**
 
@@ -2440,7 +2440,7 @@ We meten kleur, structuur en lijnen, en vertellen je welk deel door zon komt en 
 
 Een zakkende kaaklijn en wangen behandelen we met technieken die de aanmaak van collageen op gang brengen, zoals needling en laser. Dat geeft steviger weefsel en een vastere lijn.
 
-Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. In de intake kijken we daarnaar en bespreken we wat realistisch is.
+Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. Tijdens de intake kijken we daarnaar en bespreken we wat realistisch is.
 
 > knop: DOE DE ZWAARTEKRACHTTEST
 
@@ -2500,7 +2500,7 @@ Hier is geduld geen bijzaak. Collageen bouwt over maanden op, en dat is niet te 
 
 - De diepere lagen aanspannen met laser, in een reeks met weken ertussen
 
-- Een nulmeting, want verandering over maanden zie je in de spiegel niet en op een meting wel
+- Een huidanalyse, want verandering over maanden zie je in de spiegel niet en op een meting wel
 
 - Dagelijkse zonbescherming, omdat uv-straling collageen en elastine afbreekt
 
@@ -2524,7 +2524,7 @@ Verslapping verandert traag, en jij kijkt elke dag. Daardoor merk je vooruitgang
 
 Dat werkt twee kanten op. Het maakt verschil aantoonbaar, en het maakt ook zichtbaar wanneer er weinig verandert. Dat laatste is een reden om te stoppen of iets anders te doen, en niet om door te gaan omdat er nog sessies in een pakket zaten.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -2562,7 +2562,7 @@ Je voelt warmte en soms korte prikjes. De meeste mensen omschrijven het als goed
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
@@ -2880,7 +2880,7 @@ Koude lucht en binnenverwarming drogen de huid uit, en een drogere huid maakt de
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Wat we eerst vaststellen**
 
@@ -2898,7 +2898,7 @@ Voor de meeste mensen is de nuttigste uitkomst dat het een naam heeft, onschuldi
 
 **LITTEKENS EN STRIAE DIE ZICHTBAAR BLIJVEN**
 
-Bij littekens en striae bepaalt de leeftijd wat er mogelijk is. Rode en paarse littekens reageren doorgaans goed op behandeling, witte veel minder. In de intake kijken we hoe oud het litteken is en welke behandeling erbij past.
+Bij littekens en striae bepaalt de leeftijd wat er mogelijk is. Rode en paarse littekens reageren doorgaans goed op behandeling, witte veel minder. Tijdens de intake kijken we hoe oud het litteken is en welke behandeling erbij past.
 
 > knop: ZET DE LITTEKENKLOK
 
@@ -3016,7 +3016,7 @@ Littekens veranderen langzaam. Daarom leggen we de beginsituatie vast en vergeli
 
 Bij striae meten we ook de kleur, want die vertelt in welke fase ze zitten en dus wat er nog mogelijk is.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -3062,7 +3062,7 @@ Dat hangt af van de leeftijd van het litteken en het type. Na de meting krijg je
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Jonge littekens reageren het best**
 
@@ -3160,7 +3160,7 @@ Bij gewone pigmentvlekken meten we hoe donker en hoe groot. Bij melasma is de ee
 
 Daarnaast leggen we vast wat je aanjagers zijn. Melasma dat lichter wordt terwijl de kraan openstaat, is een resultaat dat niet blijft, en dat wil je vooraf weten.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -3336,7 +3336,7 @@ Kom je voor iets anders en zit er een moedervlek in het gebied, dan dekken we di
 
 Mee-eters en verstopte poriën behandelen we met een HydraFacial, peelings en gerichte verzorging. Zo maken we de poriën leeg en houden we ze rustiger.
 
-In de intake kijken we mee onder vergroting en stellen we vast om welk type onzuiverheid het gaat.
+Tijdens de intake kijken we mee onder vergroting en stellen we vast om welk type onzuiverheid het gaat.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -3434,7 +3434,7 @@ Bijna nooit. Wie een vette huid streng behandelt houdt een uitgedroogde huid ove
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
@@ -3510,7 +3510,7 @@ Bij pigment is zonbescherming geen advies achteraf maar onderdeel van de behande
 
 - Eerst beoordelen of een plek onschuldig is, en bij twijfel doorsturen in plaats van behandelen
 
-- Een nulmeting onder UV-licht, want daar zie je pigment dat er al zit en nog niet zichtbaar is
+- Een huidanalyse onder UV-licht, want daar zie je pigment dat er al zit en nog niet zichtbaar is
 
 - Zonbescherming, elke dag en het hele jaar. Zonder dat komen de vlekken terug en werkt de rest niet
 
@@ -3536,7 +3536,7 @@ Pigment begint dieper in de huid dan waar je het ziet. Onder UV-licht wordt zich
 
 Confronterend, en nuttig: het verklaart waarom er zonder zonbescherming steeds nieuwe vlekken bij lijken te komen. Ze kwamen er niet bij; ze waren er al.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -3574,7 +3574,7 @@ Ja, en dat is vaak de plek waar mensen het het eerst storend vinden. De huid daa
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
@@ -3592,7 +3592,7 @@ In het huidconsult beoordelen we de plekken en meten we onder UV-licht ook het p
 
 **PIGMENTVLEKKEN BEHANDELEN**
 
-We behandelen pigmentvlekken met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek en van je huidtype. Dat stellen we in de intake samen vast.
+We behandelen pigmentvlekken met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek en van je huidtype. Dat stellen we tijdens de intake samen vast.
 
 Het seizoen telt mee. Met weinig zon houdt het resultaat beter stand, dus in het najaar en de winter zit je het beste.
 
@@ -3634,7 +3634,7 @@ De UV zakt. Dit is de maand waarin het pigment zijn donkerste stand laat zien.
 
 Vanaf nu wordt het interessant. Meten in september geeft het eerlijkste vertrekpunt van het jaar.
 
-> knop: PLAN JE NULMETING
+> knop: PLAN JE HUIDCONSULT
 
 Dit zijn maandgemiddelden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.
 
@@ -3710,7 +3710,7 @@ De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we
 
 Dat is ook de eerlijkste manier om te zien of het werkt. Pigment verandert langzaam, en je oog raakt eraan gewend.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -3752,7 +3752,7 @@ Ja, en handen zijn eerlijk gezegd het vervelendste gebied: ze krijgen de meeste 
 
 **Waarom het seizoen meetelt bij pigment**
 
-De nulmeting kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt.
+De huidanalyse kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -3856,7 +3856,7 @@ Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In st
 
 Daarom leggen we ze vast onder dezelfde belichting en op dezelfde afstand. Dan is een verschil later echt een verschil en geen ander moment van de dag.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -3898,7 +3898,7 @@ Voor even. Je trekt het bovenste stukje van de prop mee en het ziet er direct be
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Minder zichtbaar is wel te doen.**
 
@@ -4078,7 +4078,7 @@ Bij lijnen zit de winst in de juiste keuze en in geduld. Collageen bouwt in maan
 
 - Zonbescherming, elke dag. Dit is verreweg de grootste factor in hoe snel er nieuwe lijnen bij komen
 
-- Een nulmeting, want bij dit huidprobleem gaat het om maanden en je ziet je eigen gezicht elke dag
+- Een huidanalyse, want bij dit huidprobleem gaat het om maanden en je ziet je eigen gezicht elke dag
 
 - Zeggen wanneer verzorging meer oplevert dan een behandeling
 
@@ -4100,7 +4100,7 @@ Bij lijnen gaat het om maanden, en in die maanden zie je jezelf elke dag. Daardo
 
 Dat maakt het verschil later zichtbaar in plaats van dat je het moet geloven. En het werkt ook andersom: blijkt er na een reeks weinig veranderd, dan is dat een reden om iets anders te doen en niet om door te gaan.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -4136,9 +4136,9 @@ Hoe lang duurt het voor ik iets zie? +
 
 Collageenopbouw is een kwestie van maanden en niet van weken. Daarom meten we vooraf: over die termijn is je eigen indruk geen betrouwbare maat.
 
-**Wat een nulmeting oplevert**
+**Zie je vooruitgang in plaats van te gokken**
 
-Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De nulmeting legt vast waar je begon, zodat het verschil later te zien is in plaats van te geloven.
+Bij lijnen gaat het om maanden, en je eigen gezicht zie je elke dag. De huidanalyse legt onder vaste belichting vast waar je begon, zodat je bij een volgende afspraak het verschil naast elkaar ziet.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -4280,7 +4280,7 @@ Roodheid is het soort ding waar je oog aan gewent raakt. Daarom meten we het: ni
 
 We meten ook de zichtbare vaatjes afzonderlijk, want die reageren anders dan de basiskleur.
 
-> knop: MEER OVER DE NULMETING
+> knop: MEER OVER DE HUIDANALYSE
 
 WAT WE HIER METEN
 
@@ -4324,11 +4324,11 @@ Dat horen we vaak, en het is de reden dat mensen jaren wachten. Je hoeft hier ni
 
 Wat kost dit? +
 
-Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat naar huis met wat er gemeten is en wat dat betekent, ook als het antwoord is dat je niets hoeft te doen. Wat een traject daarna kost hangt af van wat er uit die meting komt; een bedrag noemen voordat we gekeken hebben zou een slag in de lucht zijn. Alle tarieven per behandeling staan wel gewoon openbaar op de prijzenpagina.
+Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. De intake kost € 50; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. Alle tarieven per behandeling staan openbaar op de prijzenpagina.
 
 **Plan een intake bij Diba Clinics**
 
-In de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in jouw geval realistisch is. Ook als dat betekent dat je bij de arts hoort.
+Tijdens de intake meten we je roodheid, lopen we je triggers na en hoor je wat er in jouw geval realistisch is. Ook als dat betekent dat je bij de arts hoort.
 
 ---
 
@@ -4452,7 +4452,7 @@ Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. B
 
 Striae behandelen we met microneedling en laser, die de aanmaak van collageen in het gescheurde bindweefsel op gang brengen. Zo worden ze vlakker en minder zichtbaar.
 
-Het stadium bepaalt wat er haalbaar is. Rode en paarse striae reageren het beste; bij witte werken we op de structuur. In de intake stelt de behandelaar vast waar jij staat.
+Het stadium bepaalt wat er haalbaar is. Rode en paarse striae reageren het beste; bij witte werken we op de structuur. Tijdens de intake stelt de behandelaar vast waar jij staat.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -4518,7 +4518,7 @@ Nee. We wachten tot na de bevalling en de borstvoeding, en beoordelen dan opnieu
 
 Hoeveel afspraken heb ik nodig? +
 
-Dat hangt af van het stadium en van hoe groot het gebied is. In de intake hoor je wat er in jouw geval nodig is en wat het kost.
+Dat hangt af van het stadium en van hoe groot het gebied is. Tijdens de intake hoor je wat er in jouw geval nodig is en wat het kost.
 
 Helpt een crème? +
 
@@ -4592,7 +4592,7 @@ Kruis aan wat er speelt. Je mag er meerdere kiezen, en de lijst rechts schuift m
 
 Niet alles past in een lijst, en sommige dingen spelen tegelijk. Dat is geen probleem: dan begint het met kijken en meten in plaats van met kiezen.
 
-> knop: PLAN DE NULMETING
+> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -4606,7 +4606,7 @@ Niet alles past in een lijst, en sommige dingen spelen tegelijk. Dat is geen pro
 
 Wallen komen door vocht, een vetkussen of schaduw door een groef. Bij vocht en bij een dunne huid rond de ogen kunnen we iets doen, met gerichte verzorging en behandelingen die de huid steviger maken.
 
-In de intake stellen we vast waar het bij jou vandaan komt.
+Tijdens de intake stellen we vast waar het bij jou vandaan komt.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -5144,7 +5144,7 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - Zon brengt pigment terug, dus bescherming blijft onderdeel van het plan
 
-- Of het bij jou past, stelt de behandelaar in de intake vast
+- Of het bij jou past, stelt de behandelaar tijdens de intake vast
 
 - MELASMA
 
@@ -5272,7 +5272,7 @@ Na een paar weken. Collageenopbouw kost tijd, dus wat je vlak na de eerste sessi
 
 Wat is het verschil met de SkinPen? +
 
-Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.
+Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we tijdens de intake.
 
 **Begin met een huidanalyse**
 
@@ -6628,7 +6628,7 @@ Het effect houdt dagen aan, geen weken. Veel mensen plannen deze behandeling daa
 
 Kan dit bij een gevoelige huid? +
 
-Meestal wel. De behandelaar beoordeelt dat in de intake; bij actieve rosacea of ontstoken acne brengen we eerst je huid tot rust.
+Meestal wel. De behandelaar beoordeelt dat tijdens de intake; bij actieve rosacea of ontstoken acne brengen we eerst je huid tot rust.
 
 **Begin met een huidanalyse**
 
@@ -8932,7 +8932,7 @@ Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een 
 
 € 99
 
-GEEN STERRETJES Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je in de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.
+GEEN STERRETJES Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.
 
 **Voor laser stel je het zelf samen.**
 
@@ -9808,7 +9808,7 @@ Deze regels bepalen soms of een behandeling doorgaat, of welke instelling erbij 
 
 - Of je al iets gebruikt of laat doen bij iemand anders
 
-Sta je in geen van de vier groepen, dan geldt hiervan niets en is er ook niets extra's te melden. Wat er altijd toe doet, hoor je in de intake.
+Sta je in geen van de vier groepen, dan geldt hiervan niets en is er ook niets extra's te melden. Wat er altijd toe doet, hoor je tijdens de intake.
 
 **Sta je er niet tussen?**
 
@@ -9830,7 +9830,7 @@ Er bestaat geen bruidsbehandeling. Het is dezelfde lijst, met een strakkere plan
 
 Hier staat een datum vast, en daar reken je vanaf terug. Veel mensen beginnen daar te laat mee.
 
-> knop: PLAN JE NULMETING
+> knop: PLAN JE HUIDCONSULT
 
 **Wat er anders is en wat hetzelfde blijft**
 
@@ -9906,7 +9906,7 @@ DIT IS PRECIES HETZELFDE · 3
 
 - De hele lijst staat open Er is geen aparte, kortere lijst voor donkere huid. Er is een andere volgorde en een voorzichtiger opbouw.
 
-- Dezelfde meting vooraf Je huidtype hoort vastgesteld te worden en niet ingeschat aan de balie. Dat is een van de dingen waar de nulmeting voor is.
+- Dezelfde meting vooraf Je huidtype hoort vastgesteld te worden en niet ingeschat aan de balie. Dat is een van de dingen waar de huidanalyse voor is.
 
 - Dezelfde eerlijkheid Kan iets bij jouw huid niet veilig, dan hoor je dat, en dan hoor je ook wat er wel kan.
 
@@ -10136,7 +10136,7 @@ Deze pagina gaat over het apparaat. Welke zones er zijn, wat een sessie kost en 
 
 **Tabbladtitel:** Je huidprofiel | Diba Clinics
 
-**Google-omschrijving:** Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je in de intake moet melden. Blijft in je eigen browser.
+**Google-omschrijving:** Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je tijdens de intake moet melden. Blijft in je eigen browser.
 
 **STEL JE HUIDPROFIEL SAMEN**
 
@@ -10310,7 +10310,7 @@ JE UITKOMST
 
 **Wat dit betekent voor jouw huid.**
 
-Vul hierboven iets in, dan staat hier meteen je profiel, wat erbij past en wat je in de intake moet melden.
+Vul hierboven iets in, dan staat hier meteen je profiel, wat erbij past en wat je tijdens de intake moet melden.
 
 Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij hebt ingevuld en wat een behandeling doet, en zegt waar dat wringt. Wat er bij jou past bepaalt een mens, na de meting. Je profiel blijft in deze browser staan: geen account, geen mailadres, niets dat naar ons toe gaat.
 
@@ -10424,7 +10424,7 @@ Weet je nog niet waarvoor je komt? Dat hoeft ook niet, en de zoeker helpt je een
 
 Deze afspraak levert vier dingen op die van jou zijn, ook als je er verder niets mee doet. Ze staan los van wat je daarna besluit.
 
-- Een nulpunt dat van jou is Je meting blijft bewaard als beginpunt onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.
+- Een vertrekpunt dat van jou is Je meting blijft bewaard als beginpunt onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.
 
 - Een gerichte keuze Je weet welke behandelingen bij jouw huid horen en welke niet. Dat scheelt vaak honderden euro's en een paar maanden aan iets dat toch niets ging doen.
 
@@ -10744,7 +10744,7 @@ Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet
 
 Hoeveel sessies heb je nodig? +
 
-Dat hangt af van de zone, je haartype en je hormoonbalans. Reken op een reeks met weken ertussen, want één sessie raakt alleen de haren die op dat moment groeien. In de intake hoor je wat er bij jou realistisch is.
+Dat hangt af van de zone, je haartype en je hormoonbalans. Reken op een reeks met weken ertussen, want één sessie raakt alleen de haren die op dat moment groeien. Tijdens de intake hoor je wat er bij jou realistisch is.
 
 Is laser veilig voor een donkere huid? +
 
@@ -10782,7 +10782,7 @@ Je zit nergens aan vast. Dit is een berekening en geen boeking.
 
 Dit is de prijs per sessie, niet van je traject
 
-De tarieven hieronder staan zo op de prijslijst van de kliniek. Wat er niet op staat is hoeveel sessies jij nodig hebt, en dat is nou juist het getal waar je totaal van afhangt. Dat hoor je in de intake, na de meting.
+De tarieven hieronder staan zo op de prijslijst van de kliniek. Wat er niet op staat is hoeveel sessies jij nodig hebt, en dat is nou juist het getal waar je totaal van afhangt. Dat hoor je tijdens de intake, na de meting.
 
 Als je twijfelt, kun je via WhatsApp een vraag stellen of een intake plannen.
 
@@ -10876,7 +10876,7 @@ Een pakket vervangt de losse zones die erin zitten. Die blijven aangewezen staan
 
 **Zes huidtypes en alle zes te behandelen**
 
-De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type bepaalt niet óf het kan, maar met welke instellingen. Weet je het niet, laat het dan open; we bepalen het in de intake.
+De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type bepaalt niet óf het kan, maar met welke instellingen. Weet je het niet, laat het dan open; we bepalen het tijdens de intake.
 
 - Type I Zeer licht, verbrandt snel
 
@@ -10894,7 +10894,7 @@ Laserontharing gaat per reeks, niet per keer
 
 Eén sessie raakt alleen de haren die op dat moment groeien. Dat is nooit alles tegelijk, en daarom is één behandeling geen halve behandeling maar geen behandeling.
 
-Hoeveel sessies je nodig hebt hangt af van de zone, je huidtype en je haargroei. Dat hoor je in de intake, en niet ervoor.
+Hoeveel sessies je nodig hebt hangt af van de zone, je huidtype en je haargroei. Dat hoor je tijdens de intake, en niet ervoor.
 
 Nog leeg
 
@@ -10912,7 +10912,7 @@ Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan staat alles er
 
 Wat je hier samenstelt is een plan op papier. In het huidconsult kijken we of het klopt: je huidtype, je haargroei en of laseren bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat voordat je iets betaalt.
 
-> knop: WAT ER IN DE INTAKE GEBEURT
+> knop: WAT ER TIJDENS DE INTAKE GEBEURT
 
 ---
 
@@ -11124,7 +11124,7 @@ Een huidkliniek ziet soms iets eerder dan er een diagnose bestaat. Dan is de jui
 
 **Dan weten we eerst wat er is.**
 
-Een traject begint met een meting, en bij PCOS is dat extra zinvol: je huid beweegt mee met periodes, dus zonder nulpunt is later niet te zien of iets werkte of dat het gewoon een rustige maand was.
+Een traject begint met een meting, en bij PCOS is dat extra zinvol: je huid beweegt mee met periodes, dus zonder vertrekpunt is later niet te zien of iets werkte of dat het gewoon een rustige maand was.
 
 Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet omdat wij daar iets mee doen, maar omdat het uitmaakt voor wat wij op welk moment aanraden.
 
@@ -11190,9 +11190,9 @@ Bij elk beeld komen bovendien de gegevens te staan die je nodig hebt om het te w
 
 De EVE-M gebruikt vaste opnameomstandigheden. Daardoor is een latere meting beter vergelijkbaar dan een losse telefoonfoto onder ander licht.
 
-Wat er dan uit komt zijn geen mooie plaatjes maar waardes: pigment, vocht, poriestructuur, tekenen van veroudering. Jouw eigen nulpunt, en het enige eerlijke vergelijkingsmateriaal dat er bestaat.
+Wat er dan uit komt zijn geen mooie plaatjes maar waardes: pigment, vocht, poriestructuur, tekenen van veroudering. Jouw eigen vertrekpunt, en het enige eerlijke vergelijkingsmateriaal dat er bestaat.
 
-- Jouw eigen nulpunt Je vergelijkt met je eigen huid van drie maanden geleden, niet met iemand anders.
+- Jouw eigen vertrekpunt Je vergelijkt met je eigen huid van drie maanden geleden, niet met iemand anders.
 
 - Dezelfde omstandigheden Vast licht, vaste afstand. De variabelen hierboven liggen allemaal vast.
 
@@ -11708,11 +11708,11 @@ KWALITEITSREGISTER PARAMEDICI
 
 Vrijwillig register met een cyclus van vijf jaar. Wie erin blijft staan toont per periode minstens 1600 werkuren aan, verspreid over minimaal 36 maanden, en 160 punten bijscholing.
 
-**Wat een nulmeting oplevert**
+**Wat uw patiënt meekrijgt**
 
 Er wordt niet behandeld op een verwijzing alleen. Dat is geen formaliteit: het is de reden dat het advies dat uw patiënt meekrijgt eerlijk kan zijn.
 
-- Een meting onder vast licht Elke eerste afspraak begint met een objectieve huidanalyse: zelfde licht, zelfde hoek, zelfde instellingen. Die opname blijft het nulpunt waar volgende afspraken tegen afgezet worden.
+- Een meting onder vast licht Elke eerste afspraak begint met een objectieve huidanalyse: zelfde licht, zelfde hoek, zelfde instellingen. Die opname blijft het vertrekpunt waar volgende afspraken tegen afgezet worden.
 
 - Een plan met een grens erin Wat er kan, hoeveel sessies dat vraagt en wat het niet gaat doen. Bij elke behandeling op deze site staat de grens er even nadrukkelijk bij als de werking.
 
@@ -11795,4 +11795,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_106 pagina's · 5461 tekstblokken · ongeveer 81.527 woorden._
+_106 pagina's · 5461 tekstblokken · ongeveer 81.338 woorden._

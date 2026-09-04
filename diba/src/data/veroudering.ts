@@ -146,7 +146,7 @@ export const FASE_ADVIES: Record<
   "30": {
     kop: "Nu wordt meten zinvol",
     tekst:
-      "De eerste zonschade wordt zichtbaar terwijl er nog niets vastligt. Een nulmeting nu geeft je een vergelijkingspunt, zodat je later weet of iets werkte of dat je het je verbeeldde.",
+      "De eerste zonschade wordt zichtbaar terwijl er nog niets vastligt. Een huidanalyse nu geeft je een vergelijkingspunt, zodat je later weet of iets werkte of dat je het je verbeeldde.",
   },
   "40": {
     kop: "Hier is de volgorde belangrijker dan de techniek",
@@ -231,7 +231,7 @@ export const VEROUDERING_WEL_NIET = {
   ],
   niet: [
     "Wachten tot het je echt begint te storen. De sporen die je nu niet ziet lopen al wel.",
-    "Een behandelpakket kopen zonder nulmeting. Dan is achteraf niet vast te stellen of het iets deed.",
+    "Een behandelpakket kopen zonder huidanalyse. Dan is achteraf niet vast te stellen of het iets deed.",
     "Meerdere agressieve behandelingen kort na elkaar. Een geïrriteerde huid maakt méér pigment aan, geen minder.",
     "Sturen op een leeftijd in plaats van op een huid. Twee mensen van vijftig hebben zelden hetzelfde nodig.",
     "Denken dat een dure crème zonbescherming vervangt. Een crème met SPF doet dat werk, een dagcrème zonder niet.",

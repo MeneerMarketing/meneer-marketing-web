@@ -188,7 +188,7 @@ export default function HuidproblemenPage() {
             </p>
             <div className="mt-7">
               <Button href="/intake" variant="primair-op-donker">
-                Plan de nulmeting
+                Plan een huidconsult
               </Button>
             </div>
           </div>

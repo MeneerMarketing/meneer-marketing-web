@@ -100,8 +100,8 @@ export default function LaserConfiguratorPage() {
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
               De tarieven hieronder staan zo op de prijslijst van de kliniek.
               Wat er niet op staat is hoeveel sessies jij nodig hebt, en dat is
-              nou juist het getal waar je totaal van afhangt. Dat hoor je in de
-              intake, na de meting.
+              nou juist het getal waar je totaal van afhangt. Dat hoor je
+              tijdens de intake, na de meting.
             </p>
             {VOORLOPIGE_PRIJZEN ? (
               <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
@@ -156,7 +156,7 @@ export default function LaserConfiguratorPage() {
               href="/intake"
               className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Wat er in de intake gebeurt
+              Wat er tijdens de intake gebeurt
             </Link>
           </div>
         </div>

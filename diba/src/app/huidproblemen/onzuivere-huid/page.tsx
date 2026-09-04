@@ -114,8 +114,8 @@ export default function Pagina() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In de intake kijken we mee onder vergroting en stellen we vast om
-              welk type onzuiverheid het gaat.
+              Tijdens de intake kijken we mee onder vergroting en stellen we
+              vast om welk type onzuiverheid het gaat.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">

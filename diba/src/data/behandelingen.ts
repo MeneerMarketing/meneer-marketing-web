@@ -403,7 +403,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Kan dit bij een gevoelige huid?",
         antwoord:
-          "Meestal wel. De behandelaar beoordeelt dat in de intake; bij actieve rosacea of ontstoken acne brengen we eerst je huid tot rust. [MEDISCHE-CHECK-ROJDA]",
+          "Meestal wel. De behandelaar beoordeelt dat tijdens de intake; bij actieve rosacea of ontstoken acne brengen we eerst je huid tot rust. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
     bijProblemen: [
@@ -696,7 +696,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Wat is het verschil met de SkinPen?",
         antwoord:
-          "Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.",
+          "Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we tijdens de intake.",
       },
     ],
     duurMinuten: 75,
@@ -1073,7 +1073,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     niet: [
       "Het thuiswerk hoort erbij; zonder dat deel loopt het traject vast",
       "Zon brengt pigment terug, dus bescherming blijft onderdeel van het plan",
-      "Of het bij jou past, stelt de behandelaar in de intake vast [MEDISCHE-CHECK-ROJDA]",
+      "Of het bij jou past, stelt de behandelaar tijdens de intake vast [MEDISCHE-CHECK-ROJDA]",
     ],
     bijProblemen: [
       { label: "Melasma", href: "/huidproblemen/melasma" },

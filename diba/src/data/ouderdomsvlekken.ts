@@ -98,7 +98,7 @@ export const PIGMENT_BEELDEN: readonly PigmentBeeld[] = [
 export const OUDERDOMSVLEKKEN_WEL_NIET = {
   wel: [
     "Eerst beoordelen of een plek onschuldig is, en bij twijfel doorsturen in plaats van behandelen",
-    "Een nulmeting onder UV-licht, want daar zie je pigment dat er al zit en nog niet zichtbaar is",
+    "Een huidanalyse onder UV-licht, want daar zie je pigment dat er al zit en nog niet zichtbaar is",
     "Zonbescherming, elke dag en het hele jaar. Zonder dat komen de vlekken terug en werkt de rest niet [MEDISCHE-CHECK-ROJDA]",
     "Licht op platte, egale vlekken, in een reeks met tijd ertussen",
     "Eerlijk zeggen dat er nieuwe bij kunnen komen zolang je in de zon komt",

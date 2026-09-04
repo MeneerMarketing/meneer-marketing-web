@@ -23,7 +23,7 @@ import { zoekmachineVelden } from "@/lib/seo";
  * precies de vraag die een behandelaar als eerste stelt: welke kleur. Die zegt iets over
  * de laag waarin het zit, en dus over wat er mogelijk is.
  *
- * Daarom heeft deze pagina geen WelNiet, geen WijZeggenNee en geen NulmetingAssen: dat
+ * Daarom heeft deze pagina geen WelNiet, geen WijZeggenNee en geen HuidanalyseAssen: dat
  * zou tekst zijn over een aandoening die hier niet bestaat. Hij sorteert, en dan ben je
  * ergens anders. Dat is ook de reden dat hij kort is; een langere versie zou een dunne
  * doorslagpagina worden van de vier waar hij naartoe wijst.
@@ -249,7 +249,7 @@ export default function HuidverkleuringPage() {
                 href="/intake?topic=huidverkleuring"
                 variant="primair-op-donker"
               >
-                Plan de nulmeting
+                Plan een huidconsult
               </Button>
             </div>
           </div>

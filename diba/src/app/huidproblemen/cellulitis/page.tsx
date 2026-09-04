@@ -93,8 +93,8 @@ export default function CellulitisPage() {
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               We behandelen het met technieken die de doorbloeding en de
-              stevigheid van het bindweefsel verbeteren. In de intake bespreken
-              we wat er in jouw geval haalbaar is.
+              stevigheid van het bindweefsel verbeteren. Tijdens de intake
+              bespreken we wat er in jouw geval haalbaar is.
             </p>
 
             <div className="mt-9">
@@ -185,8 +185,8 @@ export default function CellulitisPage() {
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             De kuiltjes zelf komen uit de bouw van je onderhuid. Aan de
             stevigheid en de doorbloeding van de huid erboven valt wel te
-            werken, en dat maakt het beeld rustiger. In de intake bespreken we
-            wat er in jouw geval haalbaar is.
+            werken, en dat maakt het beeld rustiger. Tijdens de intake bespreken
+            we wat er in jouw geval haalbaar is.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
             <Link

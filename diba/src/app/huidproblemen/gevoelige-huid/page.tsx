@@ -4,7 +4,7 @@ import Link from "next/link";
 import Stapelteller from "@/components/gevoelige-huid/Stapelteller";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -104,7 +104,7 @@ export default function GevoeligeHuidPage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In de intake lopen we je huidverzorging langs. Vaak zitten er
+              Tijdens de intake lopen we je huidverzorging langs. Vaak zitten er
               meerdere prikkelende producten in die samen te veel worden.
             </p>
 
@@ -203,7 +203,7 @@ export default function GevoeligeHuidPage() {
         intro="Prikken betekent niet dat een product werkt. Dat is het hardnekkigste misverstand in de huidverzorging."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Waarom we eerst de oorzaak zoeken"
         alineas={[
           "Een gevoelige huid voelt de ene dag anders dan de andere, en achteraf weet niemand meer hoe het vorige maand was. Zonder vast beginpunt praat je dus over een herinnering.",

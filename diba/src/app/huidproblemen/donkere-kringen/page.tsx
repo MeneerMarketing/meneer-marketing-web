@@ -4,7 +4,7 @@ import Link from "next/link";
 import Spiegeltest from "@/components/kringen/Spiegeltest";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -108,8 +108,8 @@ export default function DonkereKringenPage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In de intake stellen we vast om welke van de drie het gaat en wat
-              daarbij past.
+              Tijdens de intake stellen we vast om welke van de drie het gaat en
+              wat daarbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -224,7 +224,7 @@ export default function DonkereKringenPage() {
         intro="Behandelen voordat duidelijk is om welke van de drie het gaat, kost de meeste mensen het meeste geld."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Onder het oog telt het licht dubbel."
         alineas={[
           "Geen enkel gebied is zo gevoelig voor de stand van een lamp als dit. Licht van boven maakt van elke holte een donkere plek, en dan meet je vooral je verlichting in plaats van je huid.",

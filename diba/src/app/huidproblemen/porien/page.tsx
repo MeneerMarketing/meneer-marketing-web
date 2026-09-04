@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -207,7 +207,7 @@ export default function PorienPage() {
         intro="Vier van deze gewoontes doen mensen thuis in de overtuiging dat ze helpen. Ermee stoppen kost niets en scheelt vaak het meest."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Waarom we onder vast licht meten"
         alineas={[
           "Poriën zijn het gevoeligst van alle onderwerpen voor hoe je ernaar kijkt. In strijklicht en van dichtbij ziet iedereen ze, in gewoon daglicht bijna niemand. Zonder vaste opstelling meet je dus vooral je lamp.",

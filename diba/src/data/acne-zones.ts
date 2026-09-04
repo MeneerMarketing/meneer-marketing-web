@@ -148,7 +148,7 @@ const VERSPREID: Lezing = {
   tekst:
     "Als het overal zit, kijken we niet naar losse plekken maar naar de huidbarrière als geheel. Dat verandert de aanpak: rustiger opbouwen, minder tegelijk.",
   eersteStap:
-    "Een nulmeting eerst. Bij verspreide acne is meten belangrijker dan bij een enkele zone, omdat je het verschil anders niet ziet.",
+    "Een huidanalyse eerst. Bij verspreide acne is meten belangrijker dan bij een enkele zone, omdat je het verschil anders niet ziet.",
 };
 
 /** Als er precies één zone aan staat waar geen eigen regel voor is. */
@@ -191,6 +191,6 @@ export function lees(gekozen: readonly ZoneId[]): Lezing {
     tekst:
       "Je acne zit in meerdere zones die elk iets anders kunnen betekenen. Dat komt vaak voor en het is geen slecht teken; het betekent alleen dat we beter moeten kijken voordat we iets doen.",
     eersteStap:
-      "De nulmeting maakt dit concreet. Daarna weten we welke zone het meeste aandacht vraagt.",
+      "De huidanalyse maakt dit concreet. Daarna weten we welke zone het meeste aandacht vraagt.",
   };
 }

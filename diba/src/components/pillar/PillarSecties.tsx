@@ -269,9 +269,9 @@ export function WijZeggenNee({
   );
 }
 
-/* ── De Nulmeting, met de assen die bij deze aandoening tellen ─────────── */
+/* ── De huidanalyse, met de assen die bij deze aandoening tellen ─────────── */
 
-export function NulmetingAssen({
+export function HuidanalyseAssen({
   kop,
   alineas,
   assen,
@@ -296,7 +296,7 @@ export function NulmetingAssen({
             tekst ernaast. */}
       <div className={`mx-auto ${RASTER_SECTIE}`}>
         <div>
-          <Label>De Nulmeting</Label>
+          <Label>De huidanalyse</Label>
           <h2 className="diba-display-m mt-4 max-w-[18ch]">{kop}</h2>
           {alineas.map((a) => (
             <p
@@ -311,7 +311,7 @@ export function NulmetingAssen({
             variant="secundair"
             className="mt-8"
           >
-            Meer over De Nulmeting
+            Meer over de huidanalyse
           </Button>
         </div>
 

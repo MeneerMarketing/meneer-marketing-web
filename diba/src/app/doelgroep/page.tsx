@@ -221,8 +221,8 @@ export default function DoelgroepHubPage() {
 
           <p className="mt-8 max-w-[70ch] text-[15px] leading-7 text-[var(--t-muted)]">
             Sta je in geen van de vier groepen, dan geldt hiervan niets en is er
-            ook niets extra&apos;s te melden. Wat er altijd toe doet, hoor je in
-            de intake.
+            ook niets extra&apos;s te melden. Wat er altijd toe doet, hoor je
+            tijdens de intake.
           </p>
         </div>
       </section>

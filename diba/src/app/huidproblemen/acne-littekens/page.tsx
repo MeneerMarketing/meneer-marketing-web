@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
-  NulmetingAssen,
+  HuidanalyseAssen,
   PillarCta,
   PillarFaq,
   SectieKop,
@@ -126,8 +126,8 @@ export default function AcneLittekensPage() {
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In de intake stellen we onder strijklicht vast om welke van de
-              drie het gaat.
+              Tijdens de intake stellen we onder strijklicht vast om welke van
+              de drie het gaat.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -171,7 +171,7 @@ export default function AcneLittekensPage() {
             raster="gelijk"
             kop="Vier beelden en"
             accent="wat elk ervan vraagt"
-            intro="Deze vier dekken vrijwel alles wat er na acne achterblijft. Welke het bij jou is, stelt de huidtherapeut in de intake vast."
+            intro="Deze vier dekken vrijwel alles wat er na acne achterblijft. Welke het bij jou is, stelt de huidtherapeut tijdens de intake vast."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -238,7 +238,7 @@ export default function AcneLittekensPage() {
         intro="De juiste volgorde levert hier vaak meer op dan de zwaarste behandeling."
       />
 
-      <NulmetingAssen
+      <HuidanalyseAssen
         kop="Putjes zie je alleen in zijlicht."
         alineas={[
           "Dat is de reden dat een foto van je telefoon hier niet volstaat en de spiegel in je badkamer ook niet: recht licht vult elk kuiltje op. De EVE-M legt je huid vast onder vast licht en vanuit een vaste hoek.",
