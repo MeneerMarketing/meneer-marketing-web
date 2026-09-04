@@ -912,6 +912,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
      benoemen, en die grens staat in "niet": snurken is niet hetzelfde als slaapapneu. */
   {
     slug: "nightlase",
+    fotoInDeStoel: {
+      src: "/images/shoot/stoel-nightlase.jpg",
+      alt: "Het laserhandstuk wordt achter in de mond gebracht tijdens een NightLase-behandeling",
+    },
     inDeStoel: [
       "Deze behandeling werkt op je gehemelte en niet op je huid. Je mond blijft open met een spreider en de laser gaat er in drie of vier doorgangen overheen.",
       "Het is warm en het is even wennen, maar het doet geen pijn. Er komt geen mes en geen verdoving aan te pas.",
