@@ -32,12 +32,12 @@ export const HOME_WERKWIJZE_STEPS: readonly WerkwijzeStep[] = [
   {
     id: "gesprek",
     title: "Het gesprek",
-    body: "Je vertelt wat je klacht is en wat je wilt bereiken.",
+    body: "Je vertelt ons wat je klacht is en wat je wilt bereiken.",
   },
   {
     id: "meting",
     title: "Het onderzoek",
-    body: "De behandelaar bekijkt je huid en maakt zo nodig opnames.",
+    body: "De behandelaar bekijkt je huid en maakt zo nodig foto’s.",
   },
   {
     id: "voorstel",

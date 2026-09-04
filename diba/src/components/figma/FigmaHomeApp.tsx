@@ -464,15 +464,15 @@ export default function FigmaHomeApp({
                 {[
                   {
                     label: "Pigment",
-                    zin: "Onder UV-licht wordt pigment zichtbaar dat je met het oog lastig ziet.",
+                    zin: "Onder UV-licht wordt pigment zichtbaar dat je zelf niet ziet.",
                   },
                   {
                     label: "Roodheid",
-                    zin: "We leggen vast waar de roodheid zit en hoe fel die op dat moment is.",
+                    zin: "We leggen vast waar de roodheid zit en hoe fel die nu is.",
                   },
                   {
                     label: "Textuur",
-                    zin: "Poriën, oneffenheden en de structuur van je huid komen goed naar voren.",
+                    zin: "Hoe glad of oneffen je huid is, en waar dat het meest opvalt.",
                   },
                 ].map((as) => (
                   <li

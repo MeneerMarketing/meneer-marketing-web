@@ -386,11 +386,11 @@ export default function AcnePage() {
 
           <ul className="grid gap-3 sm:grid-cols-3">
             {[
+              ["Poriën", "Grootte en dichtheid, gemeten in plaats van geschat"],
               [
-                "Poriën",
-                "Grootte en dichtheid, objectief gemeten in plaats van geschat",
+                "Roodheid",
+                "Hoeveel actieve ontsteking er zichtbaar is en waar",
               ],
-              ["Roodheid", "Hoeveel actieve ontsteking er zichtbaar is"],
               [
                 "Textuur",
                 "Oneffenheid, en of er littekens beginnen te ontstaan",

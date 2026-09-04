@@ -79,19 +79,10 @@ const SOORTEN: readonly SoortOptie[] = ROSACEA_SOORTEN.map((s) => ({
 
 /** Het onderscheid dat het vaakst misgaat, en dat je zelf kunt maken. */
 const ACNE_OF_ROSACEA = [
-  [
-    "Mee-eters",
-    "Bij acne wel. Bij rosacea niet. Dit is het snelste onderscheid.",
-  ],
-  [
-    "Waar het zit",
-    "Acne ook op kaaklijn en voorhoofdsrand. Rosacea vooral in het midden.",
-  ],
-  ["Blozen", "Bij rosacea hoort opvlammen erbij. Bij acne niet."],
-  [
-    "Wat scrubben doet",
-    "Bij acne soms iets. Bij rosacea maakt het het aantoonbaar erger.",
-  ],
+  ["Mee-eters", "Bij acne wel, bij rosacea niet. Het snelste verschil."],
+  ["Waar het zit", "Acne op kaaklijn en voorhoofd, rosacea in het midden."],
+  ["Blozen", "Bij rosacea hoort opvlammen erbij, bij acne niet."],
+  ["Wat scrubben doet", "Bij acne soms iets. Bij rosacea maakt het het erger."],
 ] as const;
 
 export default function RosaceaPage() {

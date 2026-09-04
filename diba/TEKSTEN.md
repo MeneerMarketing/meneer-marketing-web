@@ -94,9 +94,9 @@ Nog geen idee waar te beginnen? Stel je vraag, dan kijken we samen welke richtin
 
 **Hoe een behandeling bij ons begint**
 
-- EERST Het gesprek Je vertelt wat je klacht is en wat je wilt bereiken. Stap 1 van 3
+- EERST Het gesprek Je vertelt ons wat je klacht is en wat je wilt bereiken. Stap 1 van 3
 
-- DAARNA Het onderzoek De behandelaar bekijkt je huid en maakt zo nodig opnames. Stap 2 van 3
+- DAARNA Het onderzoek De behandelaar bekijkt je huid en maakt zo nodig foto’s. Stap 2 van 3
 
 - TOT SLOT Het voorstel Je hoort welke behandeling past en wat die gaat kosten. Stap 3 van 3
 
@@ -118,11 +118,11 @@ Dat verschilt per klacht en per behandeling. In de intake hoor je wat er in jouw
 
 **Wat we vastleggen.**
 
-- PIGMENT Onder UV-licht wordt pigment zichtbaar dat je met het oog lastig ziet.
+- PIGMENT Onder UV-licht wordt pigment zichtbaar dat je zelf niet ziet.
 
-- ROODHEID We leggen vast waar de roodheid zit en hoe fel die op dat moment is.
+- ROODHEID We leggen vast waar de roodheid zit en hoe fel die nu is.
 
-- TEXTUUR Poriën, oneffenheden en de structuur van je huid komen goed naar voren.
+- TEXTUUR Hoe glad of oneffen je huid is, en waar dat het meest opvalt.
 
 **Wat je van een afspraak kunt verwachten.**
 
@@ -720,11 +720,11 @@ Links wat we bij acne doen, rechts wat we afraden. Bij elk punt staat waarom, wa
 
 Littekens behandelen op een huid die nog ontstoken is maakt het beeld slechter. Daarom brengen we eerst de ontsteking tot rust en pakken we daarna de littekens aan. Die volgorde levert meer op dan allebei tegelijk proberen.
 
-- Eerst de ontsteking, dan het litteken Laseren of needlen in actieve acne verergert de ontsteking en kan het litteken juist vastzetten. We wachten tot de huid rustig is, ook als dat langer duurt dan je hoopte.
+- Eerst de ontsteking, dan het litteken Laseren of needlen in actieve acne verergert de ontsteking en kan een litteken vastzetten. We wachten tot de huid rustig is voor we beginnen.
 
-- Medicatie loopt via je arts Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij werken daarmee samen: jouw behandeling hier wordt afgestemd op wat je slikt, en andersom denken we mee over wat de arts ziet.
+- Medicatie loopt via je arts Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij stemmen onze behandeling daarop af, en denken mee over wat de arts ziet.
 
-- Een traject met een einddatum Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw meten. Blijkt het niet te werken, dan stoppen we en zeggen we dat in plaats van door te gaan.
+- Een traject met een einddatum Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw kijken. Werkt het niet, dan stoppen we en zeggen we dat.
 
 **Deze kenmerken volgen we bij acne**
 
@@ -734,9 +734,9 @@ Dat is niet om je te overtuigen. Het is zodat we het kunnen zien als iets niet w
 
 > knop: MEER OVER DE NULMETING
 
-- Poriën Grootte en dichtheid, objectief gemeten in plaats van geschat
+- Poriën Grootte en dichtheid, gemeten in plaats van geschat
 
-- Roodheid Hoeveel actieve ontsteking er zichtbaar is
+- Roodheid Hoeveel actieve ontsteking er zichtbaar is en waar
 
 - Textuur Oneffenheid, en of er littekens beginnen te ontstaan
 
@@ -1056,9 +1056,9 @@ Dit is geen diagnose en het vervangt geen meting. Het is wel het enige ondersche
 
 - STAP 1 Druk zachtjes Leg een schone vinger op de rode plek en druk er twee seconden op. Zachtjes is genoeg; de huid hoeft niet wit te worden.
 
-- STAP 2 Kijk terwijl je drukt Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Meer hoef je niet te zien.
+- STAP 2 Kijk terwijl je drukt Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Dat verschil zegt om welke van de twee het gaat.
 
-- STAP 3 Laat los Komt het rood langzaam terug over het hele vlak, dan gaat het om een gloed. Bleef er een lijntje staan, dan kijk je naar een opgerekt vaatje.
+- STAP 3 Laat los Komt het rood terug over het hele vlak, dan is het een gloed. Bleef er een lijntje staan, dan is het een vaatje.
 
 Zag je allebei? Dat is de meest voorkomende uitkomst, en geen tussenvorm die je zelf hoeft op te lossen. Hieronder staat wat elk van de twee vraagt.
 
@@ -2458,11 +2458,11 @@ Wat er liggend strakker uitziet, geeft ongeveer aan wat er te winnen valt. In de
 
 Dit is een herkenningshulp en tegelijk de eerlijkste voorspelling die er bestaat. Verder terug dan liggend gaat aanspannen niet, dus wat je daar ziet is de bovenkant van wat er mogelijk is.
 
-- STAP 1 Kijk staand Recht vooruit in de spiegel, gezicht in rust. Dit is hoe je eruitziet op de momenten waarop het je opvalt.
+- STAP 1 Kijk staand Recht vooruit in de spiegel, met je gezicht in rust. Zo zie je eruit op de momenten waarop het je opvalt, en dat is waar we vanaf rekenen.
 
-- STAP 2 Kijk liggend Ga op je rug liggen met een spiegel boven je, of maak een foto. Alles wat nu strakker oogt, is precies wat de zwaartekracht overdag naar beneden trekt.
+- STAP 2 Kijk liggend Ga op je rug liggen met een spiegel boven je, of maak een foto. Wat nu strakker oogt, trekt de zwaartekracht overdag naar beneden.
 
-- STAP 3 Vergelijk de twee Het verschil tussen die twee beelden is ongeveer de bovengrens van wat aanspannen kan bereiken. Is er nauwelijks verschil, dan valt er met een apparaat weinig te winnen.
+- STAP 3 Vergelijk de twee Het verschil tussen die twee beelden geeft ongeveer aan wat er te winnen valt. Is er nauwelijks verschil, dan levert een behandeling weinig op.
 
 **Bij twee valt er iets te winnen, bij twee ligt het elders.**
 
@@ -2898,9 +2898,9 @@ Bijna niemand komt hier voor stap één. Toch bepaalt die of de rest zin heeft, 
 
 - Dan meten We leggen vast hoe diep en hoe uitgebreid het is. Littekens veranderen traag, dus zonder meting is later niet te zien of het werkte.
 
-- Dan behandelen Gericht, met een afgesproken aantal sessies en een moment waarop we opnieuw kijken. Werkt het niet, dan stoppen we.
+- Dan behandelen Gericht behandelen, met een afgesproken aantal sessies en een moment waarop we opnieuw kijken. Werkt het niet, dan stoppen we ermee.
 
-- En dan beschermen Een behandeld litteken is tijdelijk gevoeliger voor zon. Zonder bescherming ruil je een litteken in voor een vlek.
+- En dan beschermen Een behandeld litteken blijft een tijd lang gevoeliger voor de zon. Zonder bescherming ruil je het litteken in voor een donkere vlek.
 
 Heb je nog actieve acne? Dan hoort stap één op de acnepagina, en pas daarna hier. Dat is geen omweg maar de kortste route naar minder littekens.
 
@@ -4170,13 +4170,13 @@ Dit is geen gevoelige huid door verkeerde producten. Het is een vaatreactie, en 
 
 Dit gaat het vaakst mis, en het is niet onschuldig: rosacea behandelen als acne maakt het erger. Vier verschillen die je zelf kunt nagaan.
 
-- Mee-eters Bij acne wel. Bij rosacea niet. Dit is het snelste onderscheid.
+- Mee-eters Bij acne wel, bij rosacea niet. Het snelste verschil.
 
-- Waar het zit Acne ook op kaaklijn en voorhoofdsrand. Rosacea vooral in het midden.
+- Waar het zit Acne op kaaklijn en voorhoofd, rosacea in het midden.
 
-- Blozen Bij rosacea hoort opvlammen erbij. Bij acne niet.
+- Blozen Bij rosacea hoort opvlammen erbij, bij acne niet.
 
-- Wat scrubben doet Bij acne soms iets. Bij rosacea maakt het het aantoonbaar erger.
+- Wat scrubben doet Bij acne soms iets. Bij rosacea maakt het het erger.
 
 Denk je na het lezen hiervan dat je toch acne hebt? Dan hoor je op de andere pagina, en dat is geen omweg maar de kortste route.
 
@@ -11511,4 +11511,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5331 tekstblokken · ongeveer 80.503 woorden._
+_105 pagina's · 5331 tekstblokken · ongeveer 80.480 woorden._

@@ -111,17 +111,17 @@ export const ZWAARTEKRACHT_STAPPEN: readonly {
   {
     kop: "Kijk staand",
     tekst:
-      "Recht vooruit in de spiegel, gezicht in rust. Dit is hoe je eruitziet op de momenten waarop het je opvalt.",
+      "Recht vooruit in de spiegel, met je gezicht in rust. Zo zie je eruit op de momenten waarop het je opvalt, en dat is waar we vanaf rekenen.",
   },
   {
     kop: "Kijk liggend",
     tekst:
-      "Ga op je rug liggen met een spiegel boven je, of maak een foto. Alles wat nu strakker oogt, is precies wat de zwaartekracht overdag naar beneden trekt.",
+      "Ga op je rug liggen met een spiegel boven je, of maak een foto. Wat nu strakker oogt, trekt de zwaartekracht overdag naar beneden.",
   },
   {
     kop: "Vergelijk de twee",
     tekst:
-      "Het verschil tussen die twee beelden is ongeveer de bovengrens van wat aanspannen kan bereiken. Is er nauwelijks verschil, dan valt er met een apparaat weinig te winnen.",
+      "Het verschil tussen die twee beelden geeft ongeveer aan wat er te winnen valt. Is er nauwelijks verschil, dan levert een behandeling weinig op.",
   },
 ];
 

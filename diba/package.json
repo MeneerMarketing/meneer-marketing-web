@@ -13,6 +13,7 @@
     "huisregels": "node scripts/controleer-huisregels.mjs",
     "mobiel": "node scripts/controleer-mobiel.mjs",
     "teksten": "node scripts/tekstexport.mjs",
+    "kaarten": "node scripts/controleer-kaarten.mjs",
     "stijl": "node scripts/controleer-stijl.mjs",
     "dev:meten": "next dev --port 3021 --hostname 0.0.0.0",
     "start:meten": "next start --port 3021"

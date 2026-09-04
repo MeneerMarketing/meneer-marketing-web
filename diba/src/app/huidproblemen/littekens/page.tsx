@@ -95,12 +95,12 @@ const VOLGORDE = [
   {
     stap: "Dan behandelen",
     tekst:
-      "Gericht, met een afgesproken aantal sessies en een moment waarop we opnieuw kijken. Werkt het niet, dan stoppen we.",
+      "Gericht behandelen, met een afgesproken aantal sessies en een moment waarop we opnieuw kijken. Werkt het niet, dan stoppen we ermee.",
   },
   {
     stap: "En dan beschermen",
     tekst:
-      "Een behandeld litteken is tijdelijk gevoeliger voor zon. Zonder bescherming ruil je een litteken in voor een vlek.",
+      "Een behandeld litteken blijft een tijd lang gevoeliger voor de zon. Zonder bescherming ruil je het litteken in voor een donkere vlek.",
   },
 ] as const;
 
@@ -231,7 +231,12 @@ export default function LittekensPage() {
             {VOLGORDE.map((v) => (
               <li key={v.stap} className="bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{v.stap}</h3>
-                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
+                {/* min-h in lh: vijf regelhoogtes gereserveerd. Vier kaarten van
+                    exact 132 tekens gaven 5, 5, 5 en 4 regels — het verschil zat op een
+                    woordgrens en niet in de lengte, dus tekens tellen loste het niet op.
+                    Deze maat schaalt mee met de regelhoogte en groeit vanzelf mee als de
+                    tekst op een smal scherm meer regels nodig heeft. */}
+                <p className="mt-3 min-h-[5lh] text-sm leading-6 text-[var(--t-body)]">
                   {v.tekst}
                 </p>
               </li>

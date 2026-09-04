@@ -109,12 +109,12 @@ export const DRUKPROEF_STAPPEN: readonly {
   {
     kop: "Kijk terwijl je drukt",
     tekst:
-      "Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Meer hoef je niet te zien.",
+      "Verdwijnt het rood onder je vinger, of blijft er een lijntje staan? Dat verschil zegt om welke van de twee het gaat.",
   },
   {
     kop: "Laat los",
     tekst:
-      "Komt het rood langzaam terug over het hele vlak, dan gaat het om een gloed. Bleef er een lijntje staan, dan kijk je naar een opgerekt vaatje.",
+      "Komt het rood terug over het hele vlak, dan is het een gloed. Bleef er een lijntje staan, dan is het een vaatje.",
   },
 ];
 
