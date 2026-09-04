@@ -217,11 +217,10 @@ export default function WerkenBijPage() {
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/team-gang-koffie.jpg"
-            alt="Twee behandelaars met koffie in de gang van de kliniek"
+            src="/images/shoot/team-koffie-gang.jpg"
+            alt="Twee behandelaars met koffie in de kliniek"
             onderschrift="Tussen twee afspraken door"
             sizes="(min-width: 1024px) 86vw, 92vw"
-            brandpunt={12}
             className="aspect-[16/10] lg:aspect-[2/1]"
           />
         </div>

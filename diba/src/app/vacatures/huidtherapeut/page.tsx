@@ -281,11 +281,10 @@ export default function VacatureHuidtherapeutPage() {
       <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/team-gang-koffie.jpg"
-            alt="Twee huidtherapeuten met koffie in de gang van Diba Clinics in Rotterdam"
+            src="/images/shoot/team-koffie-gang.jpg"
+            alt="Twee huidtherapeuten met koffie in de kliniek van Diba Clinics in Rotterdam"
             onderschrift="Tussen twee afspraken door"
             sizes="(min-width: 1024px) 86vw, 92vw"
-            brandpunt={12}
             className="aspect-[16/10] lg:aspect-[2/1]"
           />
         </div>

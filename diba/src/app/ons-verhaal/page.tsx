@@ -192,7 +192,7 @@ export default function OnsVerhaalPage() {
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/producten-overleg.jpg"
+            src="/images/shoot/team-producten-overleg.jpg"
             alt="Twee behandelaars bekijken samen een verpakking in de kliniek"
             onderschrift="Wat er wel en niet in huis komt"
             sizes="(min-width: 1024px) 86vw, 92vw"

@@ -231,6 +231,14 @@ export type Behandeling = {
   readonly welNietKop?: { readonly kop: string; readonly accent: string };
 
   readonly foto?: { readonly src: string; readonly alt: string };
+  /**
+   * Een staande foto naast "Wat je ervan merkt in de stoel".
+   *
+   * Die sectie is een raster van twee kolommen waarvan de linker alleen een kop draagt en
+   * daaronder leeg blijft. Een smalle kolom vraagt om een staande foto; een liggende zou
+   * daar de helft van zijn onderwerp verliezen.
+   */
+  readonly fotoInDeStoel?: { readonly src: string; readonly alt: string };
   readonly faq?: readonly {
     readonly vraag: string;
     readonly antwoord: string;
@@ -927,6 +935,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   },
   {
     slug: "nordlys-ipl",
+    fotoInDeStoel: {
+      src: "/images/shoot/beh-nordlys-in-de-stoel.jpg",
+      alt: "Behandeling met de Nordlys, met beschermbril op",
+    },
     inDeStoel: [
       "Er gaat een koele gel op en daarna komt het handstuk op je huid. Elke flits voelt als een kort tikje met een elastiekje, en je ziet hem ook door je oogleden heen; daarom gaat er een bril op.",
       "Bij vaatjes en pigment is de reactie meteen te zien: een vaatje wordt donkerder, een pigmentvlek komt tijdelijk scherper naar voren. Dat hoort erbij en betekent niet dat het erger wordt.",
@@ -1267,8 +1279,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Tussen de afspraken door verzorg je je huid zelf, met de producten en het schema die je meekrijgt. Dat bepaalt voor een groot deel het resultaat. [MEDISCHE-CHECK-ROJDA]",
     ],
     foto: {
-      src: "/images/shoot/beh-acne-traject.jpg",
-      alt: "Behandelproducten bij een cliënt met acne",
+      src: "/images/shoot/beh-acne-verzorging.jpg",
+      alt: "Huidtherapeut brengt een verzorgingsproduct aan tijdens een acnebehandeling",
     },
     naam: "Acnetraject",
     apparaat: "Blemiderm",

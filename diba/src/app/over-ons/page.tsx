@@ -232,9 +232,9 @@ export default function OverOnsPage() {
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/ontvangst-vertrek.jpg"
-            alt="Een client verlaat de kliniek met een tas van Diba Clinics"
-            onderschrift="Na afloop, aan de Weissenbruchlaan"
+            src="/images/shoot/behandelkamer-overzicht.jpg"
+            alt="Behandelaar en client in een behandelkamer van Diba Clinics"
+            onderschrift="Waar het werk gebeurt"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/10] lg:aspect-[21/9]"
           />

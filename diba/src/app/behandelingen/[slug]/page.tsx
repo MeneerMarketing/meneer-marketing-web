@@ -444,6 +444,18 @@ export default async function BehandelingPage({ params }: PageProps) {
                       <span className="diba-accent">merkt in de stoel</span>
                     </h2>
                   )}
+
+                  {/* Onder de kop bleef deze kolom leeg, en hoe langer de tekst rechts
+                      hoe meer wit hier. Een staande foto vult dat, en die past hier ook
+                      echt: een smalle kolom en een liggende foto gaan niet samen. */}
+                  {b.fotoInDeStoel ? (
+                    <BeeldVignet
+                      src={b.fotoInDeStoel.src}
+                      alt={b.fotoInDeStoel.alt}
+                      sizes="(min-width: 1024px) 38vw, 92vw"
+                      className="mt-8 aspect-[3/4]"
+                    />
+                  ) : null}
                 </div>
                 <div className="max-w-[64ch] space-y-4">
                   {b.inDeStoel.map((alinea) => (

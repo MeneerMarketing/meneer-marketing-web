@@ -110,8 +110,8 @@ export default function PcosPage() {
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/behandelaar-op-bank.jpg"
-            alt="Behandelaar zit op de behandelbank in een lege behandelkamer"
+            src="/images/shoot/gesprek-in-de-kamer.jpg"
+            alt="Behandelaar in gesprek met een client in de behandelkamer"
             onderschrift="De kamer waar het gesprek begint"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/10] lg:aspect-[2/1]"

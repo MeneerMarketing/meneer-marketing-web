@@ -151,8 +151,8 @@ export default function LaserontharingPage() {
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw]">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/detail-laserbril.jpg"
-            alt="Een laserbeschermbril op een opgevouwen handdoek in de behandelkamer"
+            src="/images/shoot/laser-met-bril.jpg"
+            alt="Laserontharing met beschermbril, uitgevoerd door een huidtherapeut"
             onderschrift="Beschermbril, voor jou en voor ons"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/9] lg:aspect-[21/9]"

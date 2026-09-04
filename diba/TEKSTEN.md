@@ -382,7 +382,7 @@ De reviews worden verzameld door Salonized. Wij kunnen ze niet selecteren of ver
 
 > knop: LEES ZE BIJ DE BRON ↗
 
-NA AFLOOP, AAN DE WEISSENBRUCHLAAN
+WAAR HET WERK GEBEURT
 
 **Onze apparatuur en het team.**
 
@@ -11795,4 +11795,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_106 pagina's · 5461 tekstblokken · ongeveer 81.338 woorden._
+_106 pagina's · 5461 tekstblokken · ongeveer 81.337 woorden._

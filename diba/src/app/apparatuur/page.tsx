@@ -147,8 +147,8 @@ export default function ApparatuurPage() {
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/kliniek-nordlys-staand.jpg"
-            alt="Behandelaar naast de Nordlys in de behandelkamer van Diba Clinics"
+            src="/images/shoot/kliniek-nordlys-behandeling.jpg"
+            alt="Huidtherapeut behandelt een client met de Nordlys in de behandelkamer"
             onderschrift="De Nordlys, zoals hij bij ons staat"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/9] lg:aspect-[21/9]"

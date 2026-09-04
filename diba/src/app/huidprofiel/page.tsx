@@ -89,11 +89,10 @@ export default function HuidprofielPage() {
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/behandelaar-met-tablet.jpg"
-            alt="Behandelaar loopt door de kliniek met een tablet"
+            src="/images/shoot/huidscan-op-tablet.jpg"
+            alt="Behandelaar laat de uitkomst van een huidscan zien op een tablet"
             onderschrift="Wat jij invult, zien wij bij de intake"
             sizes="(min-width: 1024px) 86vw, 92vw"
-            brandpunt={14}
             className="aspect-[16/10] lg:aspect-[2/1]"
           />
         </div>

@@ -124,8 +124,8 @@ export default function DoelgroepHubPage() {
       <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
-            src="/images/shoot/man-bij-de-scanner.jpg"
-            alt="Een man zit klaar bij de EVE-M huidscanner"
+            src="/images/shoot/eve-m-in-gebruik.jpg"
+            alt="Huidtherapeut plaatst een client in de EVE-M huidscanner"
             onderschrift="Dezelfde meting, voor iedereen"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/10] lg:aspect-[2/1]"
