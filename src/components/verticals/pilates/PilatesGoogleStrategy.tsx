@@ -11,17 +11,17 @@ const STEPS = [
     packageName: "Studio Edition",
     priceHint: "€89/m",
     title: "Pilates [jouw stad]",
-    body: "De kernzoekterm waar het geld zit. SEO-injectie zit erin, website live binnen vijf werkdagen.",
+    body: "Je complete studio-site: lessen, over ons, contact en locatie. SEO-injectie op je kernzoekterm. Live binnen vijf werkdagen.",
     bullets: [] as string[],
-    pages: ["Homepage", "Pilates [stad]"],
+    pages: ["Lessen", "Over ons", "Contact", "Locatie"],
     height: "lg:h-[260px]",
   },
   {
     id: "growth",
     packageName: "Local Growth",
     priceHint: "€179/m",
-    title: "Meer zoektermen, meer pagina's",
-    body: "Reformer, Mat, Private, prijzen en locatie krijgen een eigen pagina. Elke maand bijsturen.",
+    title: "Extra landingspagina's per zoekterm",
+    body: "Reformer, mat, private, prijzen en locatie krijgen elk een eigen SEO-pagina. Bovenop je basissite. Elke maand bijsturen.",
     bullets: [] as string[],
     pages: ["Reformer", "Mat", "Private", "Prijzen", "Locatie"],
     height: "lg:h-[340px]",
@@ -114,8 +114,8 @@ export function PilatesGoogleStrategy() {
                       aria-pressed={selected}
                       className={
                         selected
-                          ? `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-white/20 bg-white/[0.1] p-5 text-left shadow-[0_20px_50px_-28px_rgba(0,0,0,0.55)] transition sm:p-6`
-                          : `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-white/10 bg-white/[0.03] p-5 text-left transition hover:bg-white/[0.06] sm:p-6`
+                          ? `${step.height} relative flex w-full flex-col overflow-hidden rounded-t-3xl border border-b-0 border-white/20 bg-white/[0.1] p-5 pt-6 text-left shadow-[0_20px_50px_-28px_rgba(0,0,0,0.55)] transition sm:p-6 sm:pt-7`
+                          : `${step.height} relative flex w-full flex-col overflow-hidden rounded-t-3xl border border-b-0 border-white/10 bg-white/[0.03] p-5 pt-6 text-left transition hover:bg-white/[0.06] sm:p-6 sm:pt-7`
                       }
                       initial={false}
                       animate={reduce ? undefined : { y: selected ? -6 : 0 }}
@@ -144,7 +144,7 @@ export function PilatesGoogleStrategy() {
                       </p>
 
                       {step.bullets.length > 0 ? (
-                        <ul className="mt-3 space-y-1.5">
+                        <ul className="mt-3 flex-1 space-y-1.5">
                           {step.bullets.map((item) => (
                             <li
                               key={item}
@@ -158,9 +158,11 @@ export function PilatesGoogleStrategy() {
                             </li>
                           ))}
                         </ul>
-                      ) : null}
+                      ) : (
+                        <div className="hidden flex-1 lg:block" aria-hidden />
+                      )}
 
-                      <div className="mt-4 flex flex-wrap gap-1.5">
+                      <div className="mt-4 flex flex-wrap gap-1.5 lg:mt-auto lg:pt-4">
                         {step.pages.map((page) => (
                           <span
                             key={page}

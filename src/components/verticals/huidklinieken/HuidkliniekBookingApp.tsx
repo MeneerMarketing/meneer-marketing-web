@@ -31,18 +31,18 @@ const PHONE_BY_ROUTE: Record<
   }
 > = {
   existing: {
-    badge: "Gekoppeld",
-    title: "Jouw huidige systeem",
+    badge: "Salonized",
+    title: "Salonized · jouw agenda",
     slots: [
       { t: "09:30", n: "Intake", status: "Open" },
       { t: "11:00", n: "Consult", status: "Open" },
       { t: "16:30", n: "Nazorg", status: "1 plek" },
     ],
     cta: "Boek via je systeem",
-    notes: ["Agenda blijft waar die is", "Patiënten merken geen verhuizing"],
+    notes: ["Salonized blijft je agenda", "Intake vanaf je site"],
   },
   "branded-app": {
-    badge: "Jouw app",
+    badge: "Salonized app",
     title: "Vandaag in de agenda",
     slots: [
       { t: "09:30", n: "Intake", status: "Open" },
@@ -53,8 +53,8 @@ const PHONE_BY_ROUTE: Record<
     notes: ["Jouw logo op het icoon", "Pushmelding als een plek vrijkomt"],
   },
   custom: {
-    badge: "Maatwerk",
-    title: "Intake aanvragen",
+    badge: "Signature",
+    title: "Eigen boekingssysteem",
     slots: [
       { t: "Kies", n: "Behandeling", status: "✓" },
       { t: "Kies", n: "Moment", status: "Nu" },
@@ -77,7 +77,7 @@ export function HuidkliniekBookingApp({
   const seen = useRef<Set<string>>(new Set());
   const reduce = useReducedMotion();
   const defaultId: RouteId =
-    routes.find((r) => r.id === "branded-app")?.id ?? routes[0]!.id;
+    routes.find((r) => r.id === "existing")?.id ?? routes[0]!.id;
   const [activeId, setActiveId] = useState<RouteId>(defaultId);
   const phone = PHONE_BY_ROUTE[activeId] ?? PHONE_BY_ROUTE["branded-app"]!;
 

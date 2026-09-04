@@ -1,0 +1,368 @@
+{
+  "milestone": "M9.9.6",
+  "version": "FINAL_HUMAN_SHOWCASE_REVIEW_V1",
+  "startedAt": "2026-08-17T01:37:19.371Z",
+  "finishedAt": "2026-08-17T01:37:20.419Z",
+  "scope": {
+    "domains": [
+      "cleanmastershop.nl",
+      "nordinahome.nl",
+      "oceancross.nl"
+    ],
+    "excluded": [
+      "trvlmore.nl",
+      "near-misses",
+      "cro-only"
+    ]
+  },
+  "cleanmasterReview": {
+    "pdpVerification": {
+      "productUrl": "https://www.cleanmastershop.nl/product/handzeep-de-luxe/",
+      "productTitle": "Handzeep de Luxe geparfumeerd, 6x1000m",
+      "heroPrice": 60.24,
+      "priceConfidence": "HIGH",
+      "pageEntityType": "PRODUCT_DETAIL",
+      "captureHealth": "VALID_CONTENT",
+      "pdpValid": true
+    },
+    "screenshots": {
+      "homepage-desktop-1440x1000": "m9.9.4-screenshots/cleanmastershop-nl-homepage-desktop-1440x1000.png",
+      "pdp-desktop-1440x1000": "m9.9.4-screenshots/cleanmastershop-nl-pdp-desktop-1440x1000.png",
+      "pdp-mobile-390x844": "m9.9.4-screenshots/cleanmastershop-nl-pdp-mobile-390x844.png"
+    },
+    "humanVisualReview": {
+      "currentHomepage": "Homepage oogt functioneel en template-achtig, niet premium editorial. Schaal oogt professioneel genoeg om serieus te benaderen. Visueel niveau homepage past bij een zwakkere PDP.",
+      "currentPdp": "Basic template-driven layout with minimal art direction. Plain product image against white background, generic typography hierarchy, standard yellow CTA button, no visual storytelling or premium presentation. Functional",
+      "pdpDetail": {
+        "templateVsCustom": "Standaard template / theme-layout",
+        "hierarchy": "Zwakke typografie-hiërarchie, generieke fonts",
+        "gallery": "Basic gallery, weinig zoom/lifestyle of editorial diepte",
+        "buyblock": "Plain buyblock, standaard CTA, weinig visual anchor",
+        "typography": "Zwakke typografie-hiërarchie, generieke fonts",
+        "spacing": "Spacing functioneel, weinig ritme",
+        "trust": "Trust/social proof voelt dated of onderbelicht",
+        "storytelling": "Weinig product storytelling of lifestyle context",
+        "sections": "Sections standaard ecommerce-blocks",
+        "mobile": "Mobile gap hoog: mobile buy experience heeft zichtbare ruimte",
+        "summary": "Basic template-driven layout with minimal art direction. Plain product image against white background, generic typography hierarchy, standard yellow CTA button, no visual storytelling or premium presentation. Functional"
+      },
+      "whyCvqScore": "CVQ 38 uit cached vision op geldige capture. Band: band=WEAK, template=true. Impression: CLEARLY_UNDERDESIGNED."
+    },
+    "beforeAfterObvious": "YES_STRONG",
+    "businessCheck": {
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "ownershipConfidence": 65,
+      "ownershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "cleanmaster_domain_private_label_candidate"
+      ],
+      "companyScale": 78,
+      "catalogEstimate": null,
+      "catalogFocus": 32,
+      "externalBrandBreadth": 0,
+      "businessMaturity": 30,
+      "wouldApproach": "YES",
+      "approachNote": "Professionele mid-market shop met eigen merk-signalen. Benaderbaar."
+    },
+    "materialCheck": {
+      "classification": "EXCELLENT_MATERIAL",
+      "breakdown": {
+        "productPhotography": "Productfoto's bruikbaar als basis",
+        "lifestylePhotography": "Enige lifestyle potentie",
+        "brandAssets": "Content/brand assets rijk genoeg",
+        "productInformation": "Specs en productinfo aanwezig",
+        "benefitsFeatures": "Benefits/features te herwerken",
+        "reviewsProof": "Proof/trust kan visueel sterker",
+        "technicalContent": "Technische content bruikbaar"
+      },
+      "materialFeasibility": 98,
+      "assetQuality": 82,
+      "contentAvailable": 97
+    },
+    "redesignPotential": [
+      "Editorial hero + product storytelling boven de fold",
+      "Premium gallery met zoom, lifestyle shots en betere hiërarchie",
+      "Custom buyblock met sterkere CTA en variant-presentatie",
+      "Typografie-systeem en spacing die premium DTC voelen",
+      "Trust/social proof blocks met betere visual hierarchy"
+    ],
+    "businessRisk": "Private label / cross-domain product match: merkpositionering kan diffuus zijn.",
+    "engineSignals": {
+      "currentVisualQuality": 38,
+      "visualGap": 56,
+      "purchaseGap": 66,
+      "mobileGap": 57,
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "validatedVisualSalesFit": 82,
+      "note": "Hulpsignalen, geen automatische eindbeslissing."
+    },
+    "visualFitScore": 85.4
+  },
+  "nordinahomeReview": {
+    "pdpVerification": {
+      "productUrl": "https://nordinahome.nl/product/premium-kantoorstoel/",
+      "productTitle": "Kantoorstoel",
+      "heroPrice": 119,
+      "priceConfidence": "HIGH",
+      "pageEntityType": "PRODUCT_DETAIL",
+      "captureHealth": "VALID_CONTENT",
+      "pdpValid": true
+    },
+    "screenshots": {
+      "homepage-desktop-1440x1000": "m9.9.4-screenshots/nordinahome-nl-homepage-desktop-1440x1000.png",
+      "pdp-desktop-1440x1000": "m9.9.4-screenshots/nordinahome-nl-pdp-desktop-1440x1000.png",
+      "pdp-mobile-390x844": "m9.9.4-screenshots/nordinahome-nl-pdp-mobile-390x844.png"
+    },
+    "humanVisualReview": {
+      "currentHomepage": "Homepage oogt functioneel en template-achtig, niet premium editorial. Schaal oogt professioneel genoeg om serieus te benaderen.",
+      "currentPdp": "Generic template layout with functional but uninspired design. Plain gray background, basic product gallery, standard Shopify-style buyblock layout. Typography is serviceable but not distinctive. Product image lacks life",
+      "pdpDetail": {
+        "templateVsCustom": "Standaard template / theme-layout",
+        "hierarchy": "Zwakke typografie-hiërarchie, generieke fonts",
+        "gallery": "Basic gallery, weinig zoom/lifestyle of editorial diepte",
+        "buyblock": "Plain buyblock, standaard CTA, weinig visual anchor",
+        "typography": "Zwakke typografie-hiërarchie, generieke fonts",
+        "spacing": "Spacing functioneel, weinig ritme",
+        "trust": "Trust-elementen aanwezig maar niet sterk designed",
+        "storytelling": "Content aanwezig, art direction blijft dun",
+        "sections": "Sections standaard ecommerce-blocks",
+        "mobile": "Mobile layout functioneel, premium mobile polish ontbreekt",
+        "summary": "Generic template layout with functional but uninspired design. Plain gray background, basic product gallery, standard Shopify-style buyblock layout. Typography is serviceable but not distinctive. Product image lacks life"
+      },
+      "whyCvqScore": "CVQ 52 uit cached vision op geldige capture. Band: band=MODERATE, template=true. Impression: BASIC_BUT_ACCEPTABLE."
+    },
+    "beforeAfterObvious": "MAYBE",
+    "businessCheck": {
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "ownershipConfidence": 82,
+      "ownershipEvidence": [
+        "own_brand_signal_75",
+        "product_brand_matches_domain"
+      ],
+      "companyScale": 92,
+      "catalogEstimate": null,
+      "catalogFocus": 50,
+      "externalBrandBreadth": 0,
+      "businessMaturity": 43,
+      "wouldApproach": "YES",
+      "approachNote": "Professionele mid-market shop met eigen merk-signalen. Benaderbaar."
+    },
+    "materialCheck": {
+      "classification": "EXCELLENT_MATERIAL",
+      "breakdown": {
+        "productPhotography": "Productfoto's bruikbaar als basis",
+        "lifestylePhotography": "Enige lifestyle potentie",
+        "brandAssets": "Content/brand assets rijk genoeg",
+        "productInformation": "Specs en productinfo aanwezig",
+        "benefitsFeatures": "Benefits/features te herwerken",
+        "reviewsProof": "Reviews/proof niet prominent",
+        "technicalContent": "Technische content bruikbaar"
+      },
+      "materialFeasibility": 97,
+      "assetQuality": 90,
+      "contentAvailable": 100
+    },
+    "redesignPotential": [
+      "Editorial hero + product storytelling boven de fold",
+      "Premium gallery met zoom, lifestyle shots en betere hiërarchie",
+      "Custom buyblock met sterkere CTA en variant-presentatie",
+      "Typografie-systeem en spacing die premium DTC voelen"
+    ],
+    "businessRisk": "Commercieel product (handzeep/kantoorstoel/camping) niet altijd sexy als eerste showcase.",
+    "engineSignals": {
+      "currentVisualQuality": 52,
+      "visualGap": 31,
+      "purchaseGap": 41,
+      "mobileGap": 41,
+      "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+      "validatedVisualSalesFit": 76,
+      "note": "Hulpsignalen, geen automatische eindbeslissing."
+    },
+    "visualFitScore": 44.300000000000004
+  },
+  "oceancrossReview": {
+    "pdpVerification": {
+      "productUrl": "https://oceancross.nl/product/kampeerstoel-compact/?srsltid=AfmBOoqKqFPdoA20r9T9Ta0AlTltKIV_f8iyyiL6orrPRcMSDD9yfw27",
+      "productTitle": "Kampeersoel | Compact",
+      "heroPrice": 85,
+      "priceConfidence": "HIGH",
+      "pageEntityType": "PRODUCT_DETAIL",
+      "captureHealth": "VALID_CONTENT",
+      "pdpValid": true
+    },
+    "screenshots": {
+      "homepage-desktop-1440x1000": "m9.9.4-screenshots/oceancross-nl-homepage-desktop-1440x1000.png",
+      "pdp-desktop-1440x1000": "m9.9.4-screenshots/oceancross-nl-pdp-desktop-1440x1000.png",
+      "pdp-mobile-390x844": "m9.9.4-screenshots/oceancross-nl-pdp-mobile-390x844.png"
+    },
+    "humanVisualReview": {
+      "currentHomepage": "Homepage oogt functioneel en template-achtig, niet premium editorial. Schaal oogt professioneel genoeg om serieus te benaderen. Visueel niveau homepage past bij een zwakkere PDP.",
+      "currentPdp": "Basic template layout with weak typography hierarchy, generic product gallery without zoom/lightbox finesse, plain buyblock with no visual anchor or premium styling. Social share buttons feel dated (flat icons). Product",
+      "pdpDetail": {
+        "templateVsCustom": "Standaard template / theme-layout",
+        "hierarchy": "Zwakke typografie-hiërarchie, generieke fonts",
+        "gallery": "Basic gallery, weinig zoom/lifestyle of editorial diepte",
+        "buyblock": "Plain buyblock, standaard CTA, weinig visual anchor",
+        "typography": "Zwakke typografie-hiërarchie, generieke fonts",
+        "spacing": "Spacing vlak en utilitair",
+        "trust": "Trust/social proof voelt dated of onderbelicht",
+        "storytelling": "Content aanwezig, art direction blijft dun",
+        "sections": "Section design basic, weinig premium modules",
+        "mobile": "Mobile layout functioneel, premium mobile polish ontbreekt",
+        "summary": "Basic template layout with weak typography hierarchy, generic product gallery without zoom/lightbox finesse, plain buyblock with no visual anchor or premium styling. Social share buttons feel dated (flat icons). Product"
+      },
+      "whyCvqScore": "CVQ 42 uit cached vision op geldige capture. Band: band=WEAK, template=true. Impression: CLEARLY_UNDERDESIGNED."
+    },
+    "beforeAfterObvious": "YES",
+    "businessCheck": {
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "ownershipConfidence": 59,
+      "ownershipEvidence": [
+        "own_brand_signal_55"
+      ],
+      "companyScale": 74,
+      "catalogEstimate": null,
+      "catalogFocus": 50,
+      "externalBrandBreadth": 0,
+      "businessMaturity": 37,
+      "wouldApproach": "MAYBE",
+      "approachNote": "Past qua schaal, maar ownership of focus vraagt extra check."
+    },
+    "materialCheck": {
+      "classification": "GOOD_MATERIAL",
+      "breakdown": {
+        "productPhotography": "Productfoto's basic, lifestyle ontbreekt",
+        "lifestylePhotography": "Weinig lifestyle beelden zichtbaar",
+        "brandAssets": "Content/brand assets rijk genoeg",
+        "productInformation": "Specs en productinfo aanwezig",
+        "benefitsFeatures": "Benefits/features te herwerken",
+        "reviewsProof": "Proof/trust kan visueel sterker",
+        "technicalContent": "Technische content bruikbaar"
+      },
+      "materialFeasibility": 84,
+      "assetQuality": 68,
+      "contentAvailable": 89
+    },
+    "redesignPotential": [
+      "Premium gallery met zoom, lifestyle shots en betere hiërarchie",
+      "Custom buyblock met sterkere CTA en variant-presentatie",
+      "Typografie-systeem en spacing die premium DTC voelen",
+      "Trust/social proof blocks met betere visual hierarchy"
+    ],
+    "businessRisk": "Ownership confidence onder 60%: eigen merk niet hard genoeg bevestigd.",
+    "engineSignals": {
+      "currentVisualQuality": 42,
+      "visualGap": 36,
+      "purchaseGap": 61,
+      "mobileGap": 42,
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "validatedVisualSalesFit": 75,
+      "note": "Hulpsignalen, geen automatische eindbeslissing."
+    },
+    "visualFitScore": 63.3
+  },
+  "sideBySide": {
+    "columns": [
+      "cleanmastershop.nl",
+      "nordinahome.nl",
+      "oceancross.nl"
+    ],
+    "rows": {
+      "cleanmastershop.nl": {
+        "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+        "ownershipConfidence": 65,
+        "companyScale": 78,
+        "catalogFocus": 32,
+        "businessMaturity": 30,
+        "currentVisualQuality": 38,
+        "visualGap": 56,
+        "purchaseGap": 66,
+        "mobileGap": 57,
+        "materialQuality": "EXCELLENT_MATERIAL",
+        "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+        "beforeAfterObvious": "YES_STRONG",
+        "biggestRisk": "Private label / cross-domain product match: merkpositionering kan diffuus zijn.",
+        "finalClassification": "AUDIT_NEXT"
+      },
+      "nordinahome.nl": {
+        "businessModel": "MOSTLY_OWN_BRAND",
+        "ownershipConfidence": 82,
+        "companyScale": 92,
+        "catalogFocus": 50,
+        "businessMaturity": 43,
+        "currentVisualQuality": 52,
+        "visualGap": 31,
+        "purchaseGap": 41,
+        "mobileGap": 41,
+        "materialQuality": "EXCELLENT_MATERIAL",
+        "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+        "beforeAfterObvious": "MAYBE",
+        "biggestRisk": "Commercieel product (handzeep/kantoorstoel/camping) niet altijd sexy als eerste showcase.",
+        "finalClassification": "KEEP_AS_BACKUP"
+      },
+      "oceancross.nl": {
+        "businessModel": "MOSTLY_OWN_BRAND",
+        "ownershipConfidence": 59,
+        "companyScale": 74,
+        "catalogFocus": 50,
+        "businessMaturity": 37,
+        "currentVisualQuality": 42,
+        "visualGap": 36,
+        "purchaseGap": 61,
+        "mobileGap": 42,
+        "materialQuality": "GOOD_MATERIAL",
+        "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+        "beforeAfterObvious": "YES",
+        "biggestRisk": "Ownership confidence onder 60%: eigen merk niet hard genoeg bevestigd.",
+        "finalClassification": "KEEP_AS_BACKUP"
+      }
+    }
+  },
+  "auditNext": {
+    "domain": "cleanmastershop.nl",
+    "classification": "AUDIT_NEXT",
+    "reason": "Sterkste before/after + business fit voor handmatige eindreview"
+  },
+  "classifications": [
+    {
+      "domain": "cleanmastershop.nl",
+      "classification": "AUDIT_NEXT",
+      "reason": "Sterkste before/after + business fit voor handmatige eindreview"
+    },
+    {
+      "domain": "nordinahome.nl",
+      "classification": "KEEP_AS_BACKUP",
+      "reason": "Valide backup tot handmatige eindselectie"
+    },
+    {
+      "domain": "oceancross.nl",
+      "classification": "KEEP_AS_BACKUP",
+      "reason": "Valide backup tot handmatige eindselectie"
+    }
+  ],
+  "noCurrentShowcaseWinner": false,
+  "nextStepAdvice": "STOP. Bekijk screenshots handmatig. Geen CRO tot expliciete goedkeuring.",
+  "screenshotPaths": {
+    "cleanmastershop.nl": {
+      "homepage-desktop-1440x1000": "m9.9.4-screenshots/cleanmastershop-nl-homepage-desktop-1440x1000.png",
+      "pdp-desktop-1440x1000": "m9.9.4-screenshots/cleanmastershop-nl-pdp-desktop-1440x1000.png",
+      "pdp-mobile-390x844": "m9.9.4-screenshots/cleanmastershop-nl-pdp-mobile-390x844.png"
+    },
+    "nordinahome.nl": {
+      "homepage-desktop-1440x1000": "m9.9.4-screenshots/nordinahome-nl-homepage-desktop-1440x1000.png",
+      "pdp-desktop-1440x1000": "m9.9.4-screenshots/nordinahome-nl-pdp-desktop-1440x1000.png",
+      "pdp-mobile-390x844": "m9.9.4-screenshots/nordinahome-nl-pdp-mobile-390x844.png"
+    },
+    "oceancross.nl": {
+      "homepage-desktop-1440x1000": "m9.9.4-screenshots/oceancross-nl-homepage-desktop-1440x1000.png",
+      "pdp-desktop-1440x1000": "m9.9.4-screenshots/oceancross-nl-pdp-desktop-1440x1000.png",
+      "pdp-mobile-390x844": "m9.9.4-screenshots/oceancross-nl-pdp-mobile-390x844.png"
+    }
+  },
+  "cost": {
+    "dataForSeo": 0,
+    "anthropic": 0,
+    "localScreenshotsOnlyIfMissing": true
+  }
+}

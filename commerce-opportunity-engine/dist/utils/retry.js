@@ -1,0 +1,32 @@
+function defaultIsRetryable(error) {
+    if (error instanceof Error) {
+        const message = error.message.toLowerCase();
+        return (message.includes("timeout") ||
+            message.includes("econnreset") ||
+            message.includes("econnaborted") ||
+            message.includes("503") ||
+            message.includes("502") ||
+            message.includes("429"));
+    }
+    return false;
+}
+export async function withRetry(fn, options) {
+    const isRetryable = options.isRetryable ?? defaultIsRetryable;
+    let attempt = 0;
+    let delay = options.delayMs;
+    while (attempt < options.maxAttempts) {
+        try {
+            return await fn();
+        }
+        catch (error) {
+            attempt += 1;
+            if (attempt >= options.maxAttempts || !isRetryable(error)) {
+                throw error;
+            }
+            await new Promise((resolve) => setTimeout(resolve, delay));
+            delay *= options.backoffFactor;
+        }
+    }
+    throw new Error("Retry loop exited unexpectedly");
+}
+//# sourceMappingURL=retry.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"retailerScaleScorer.d.ts","sourceRoot":"","sources":["../../../src/services/crawler/retailerScaleScorer.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,oBAAoB,EAAE,MAAM,wBAAwB,CAAC;AAEnE;;;GAGG;AACH,wBAAgB,yBAAyB,CAAC,KAAK,EAAE;IAC/C,OAAO,EAAE,oBAAoB,CAAC;IAC9B,gBAAgB,CAAC,EAAE,oBAAoB,EAAE,CAAC;IAC1C,YAAY,EAAE,MAAM,CAAC;CACtB,GAAG,MAAM,CAkDT"}

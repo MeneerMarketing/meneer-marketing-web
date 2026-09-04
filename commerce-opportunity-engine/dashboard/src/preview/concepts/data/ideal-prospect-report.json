@@ -1,0 +1,856 @@
+{
+  "milestone": "M9.3",
+  "mode": "IDEAL_PROSPECT_DISCOVERY",
+  "generatedAt": "2026-08-13T18:59:18.539Z",
+  "discovery": {
+    "keywords": [
+      {
+        "keyword": "beste topper matras",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 96
+      },
+      {
+        "keyword": "beste matras zijslaper",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 92
+      },
+      {
+        "keyword": "beste matras",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 91
+      },
+      {
+        "keyword": "traagschuim matras 90x200",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 90
+      },
+      {
+        "keyword": "kat automatische voerbak",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 90
+      },
+      {
+        "keyword": "y-tuig kleine hond",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 89
+      },
+      {
+        "keyword": "honden y-tuig",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 89
+      },
+      {
+        "keyword": "y tuig voor hond",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 88
+      },
+      {
+        "keyword": "hulphonden tuig",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 87
+      },
+      {
+        "keyword": "voerbak hond op standaard",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 86
+      },
+      {
+        "keyword": "la roche posay niacinamide serum",
+        "category": "BEAUTY_SKINCARE",
+        "intent": "PRODUCT_BRANDED",
+        "priority": 86
+      },
+      {
+        "keyword": "la roche-posay retinol b3 serum",
+        "category": "BEAUTY_SKINCARE",
+        "intent": "PRODUCT_BRANDED",
+        "priority": 85
+      },
+      {
+        "keyword": "hoofdkussen zijslaper",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 85
+      },
+      {
+        "keyword": "silvana hoofdkussen",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 84
+      },
+      {
+        "keyword": "ergonomisch hoofdkussen",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 84
+      },
+      {
+        "keyword": "zijde slaapmasker",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 84
+      },
+      {
+        "keyword": "kattenmand muurbevestiging",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 84
+      },
+      {
+        "keyword": "la roche posay vitamine c serum",
+        "category": "BEAUTY_SKINCARE",
+        "intent": "PRODUCT_BRANDED",
+        "priority": 84
+      },
+      {
+        "keyword": "la roche posay vitamin c serum",
+        "category": "BEAUTY_SKINCARE",
+        "intent": "PRODUCT_BRANDED",
+        "priority": 84
+      },
+      {
+        "keyword": "hunter hondentuig",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 84
+      },
+      {
+        "keyword": "hondentuig welkoop",
+        "category": "PETS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 83
+      },
+      {
+        "keyword": "beste nek massage apparaat",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 83
+      },
+      {
+        "keyword": "shiatsu massage apparaat",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 81
+      },
+      {
+        "keyword": "onderrug massage apparaat",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 81
+      },
+      {
+        "keyword": "benen massage apparaat",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 81
+      },
+      {
+        "keyword": "luchtbevochtiger slaapkamer",
+        "category": "HOME_LIVING",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 81
+      },
+      {
+        "keyword": "jysk hoofdkussen",
+        "category": "SLEEP",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 81
+      },
+      {
+        "keyword": "infrarood massage matras",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 81
+      },
+      {
+        "keyword": "gewichten kopen",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 80
+      },
+      {
+        "keyword": "extra large yoga mat",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 79
+      },
+      {
+        "keyword": "decathlon fitness mat",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 78
+      },
+      {
+        "keyword": "fitness mat decathlon",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 78
+      },
+      {
+        "keyword": "massage infrarood",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 77
+      },
+      {
+        "keyword": "fitness apparatuur",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 77
+      },
+      {
+        "keyword": "infrarood massage",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 77
+      },
+      {
+        "keyword": "verstelbare dumbbells 24 kg",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 76
+      },
+      {
+        "keyword": "5 kg gewichten",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 76
+      },
+      {
+        "keyword": "massagekussen infrarood",
+        "category": "WELLNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 76
+      },
+      {
+        "keyword": "verstelbare dumbbells",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 76
+      },
+      {
+        "keyword": "verstelbare gewichten",
+        "category": "FITNESS",
+        "intent": "NON_BRANDED_PRODUCT",
+        "priority": 76
+      }
+    ],
+    "keywordGenCost": 0.048,
+    "byCategory": {
+      "SLEEP": 9,
+      "PETS": 9,
+      "BEAUTY_SKINCARE": 4,
+      "WELLNESS": 8,
+      "HOME_LIVING": 1,
+      "FITNESS": 9
+    },
+    "serpCost": 0.16000000000000011,
+    "uniqueAdvertisers": 66,
+    "discoveredBrandCount": 66,
+    "existingPoolDomains": 101
+  },
+  "prequalification": {
+    "scored": 33,
+    "rejected": 20,
+    "top20": [
+      {
+        "domain": "quiesco.nl",
+        "preScore": 80,
+        "pdpWeakness": 48,
+        "deepDiveProxy": 96
+      },
+      {
+        "domain": "dogsen.nl",
+        "preScore": 79,
+        "pdpWeakness": 62,
+        "deepDiveProxy": 83
+      },
+      {
+        "domain": "nordichigh.nl",
+        "preScore": 76,
+        "pdpWeakness": 52,
+        "deepDiveProxy": 89
+      },
+      {
+        "domain": "lovelance.nl",
+        "preScore": 61,
+        "pdpWeakness": 38,
+        "deepDiveProxy": 49
+      },
+      {
+        "domain": "welkoop.nl",
+        "preScore": 58,
+        "pdpWeakness": 52,
+        "deepDiveProxy": 74
+      },
+      {
+        "domain": "coolblue.nl",
+        "preScore": 53,
+        "pdpWeakness": 100,
+        "deepDiveProxy": 83
+      },
+      {
+        "domain": "anwb.nl",
+        "preScore": 53,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 74
+      },
+      {
+        "domain": "hovawartenzo.nl",
+        "preScore": 52,
+        "pdpWeakness": 62,
+        "deepDiveProxy": 78
+      },
+      {
+        "domain": "praktischhond.com",
+        "preScore": 51,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 60
+      },
+      {
+        "domain": "zoomalia.nl",
+        "preScore": 50,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 65
+      },
+      {
+        "domain": "sportbay.nl",
+        "preScore": 50,
+        "pdpWeakness": 66,
+        "deepDiveProxy": 78
+      },
+      {
+        "domain": "bolusso.nl",
+        "preScore": 47,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 53
+      },
+      {
+        "domain": "brekz.nl",
+        "preScore": 46,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 72
+      },
+      {
+        "domain": "dibozoo.nl",
+        "preScore": 46,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 72
+      },
+      {
+        "domain": "viata.nl",
+        "preScore": 43,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 60
+      },
+      {
+        "domain": "home24.nl",
+        "preScore": 41,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 65
+      },
+      {
+        "domain": "wolterswonen.nl",
+        "preScore": 38,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 60
+      },
+      {
+        "domain": "orangeshop.eu",
+        "preScore": 36,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 60
+      },
+      {
+        "domain": "betersport.nl",
+        "preScore": 36,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 60
+      },
+      {
+        "domain": "gorillagrip.nl",
+        "preScore": 36,
+        "pdpWeakness": 50,
+        "deepDiveProxy": 60
+      }
+    ]
+  },
+  "audits": [
+    {
+      "domain": "quiesco.nl",
+      "skipped": false,
+      "currentPdpQuality": 64,
+      "transformation": 64,
+      "auditConfidence": 100,
+      "cost": 0.039705000000000004
+    },
+    {
+      "domain": "dogsen.nl",
+      "skipped": false,
+      "currentPdpQuality": 67,
+      "transformation": 63,
+      "auditConfidence": 100,
+      "cost": 0.042384000000000005
+    },
+    {
+      "domain": "nordichigh.nl",
+      "skipped": false,
+      "currentPdpQuality": 59,
+      "transformation": 74,
+      "auditConfidence": 100,
+      "cost": 0.04732499999999999
+    },
+    {
+      "domain": "lovelance.nl",
+      "skipped": false,
+      "currentPdpQuality": 68,
+      "transformation": 63,
+      "auditConfidence": 100,
+      "cost": 0.040788000000000005
+    },
+    {
+      "domain": "welkoop.nl",
+      "skipped": false,
+      "currentPdpQuality": 0,
+      "transformation": 80,
+      "auditConfidence": 0,
+      "cost": 0
+    },
+    {
+      "domain": "coolblue.nl",
+      "skipped": false,
+      "currentPdpQuality": 64,
+      "transformation": 42,
+      "auditConfidence": 92,
+      "cost": 0.043029
+    },
+    {
+      "domain": "hovawartenzo.nl",
+      "skipped": false,
+      "currentPdpQuality": 33,
+      "transformation": 81,
+      "auditConfidence": 100,
+      "cost": 0.036537
+    },
+    {
+      "domain": "sportbay.nl",
+      "skipped": false,
+      "currentPdpQuality": 26,
+      "transformation": 82,
+      "auditConfidence": 100,
+      "cost": 0.040944
+    }
+  ],
+  "trueSalesRanking": {
+    "top10": [
+      {
+        "domain": "quiesco.nl",
+        "conceptId": "07caf60b-53f6-4a75-8a41-44d06cff1db7",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "SHOPIFY",
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogFocus": 88,
+        "catalogSize": 80,
+        "heroProduct": "QUIESCO® HOOFDKUSSEN",
+        "productPrice": 139,
+        "adsStatus": "confirmed_advertiser",
+        "currentPdpQuality": 64,
+        "transformation": 64,
+        "assetReadiness": 78,
+        "deepDiveFit": 100,
+        "economicFit": 100,
+        "salesFit": 84,
+        "scoreConfidence": 100,
+        "croDataSource": "AUDITED",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "insufficient_transformation"
+        ],
+        "idealPreScore": 80,
+        "source": "M93_NEW"
+      },
+      {
+        "domain": "tensfact.com",
+        "conceptId": "42cc76e8-9e57-48e9-ac27-7533bc09a2a0",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "SHOPIFY",
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogFocus": 88,
+        "catalogSize": 80,
+        "heroProduct": "Automatische kattenvoerbak met HD camera en app voor 2 katten",
+        "productPrice": 79.95,
+        "adsStatus": "confirmed_advertiser",
+        "currentPdpQuality": 68,
+        "transformation": 65,
+        "assetReadiness": 78,
+        "deepDiveFit": 100,
+        "economicFit": 100,
+        "salesFit": 70,
+        "scoreConfidence": 98,
+        "croDataSource": "AUDITED",
+        "engineeringFixture": true,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "current_pdp_too_strong",
+          "insufficient_transformation",
+          "insufficient_sales_fit"
+        ],
+        "idealPreScore": null,
+        "source": "EXISTING_POOL"
+      },
+      {
+        "domain": "nordichigh.nl",
+        "conceptId": "d3ed2b7b-f927-4f2f-9510-bbf88eaebda6",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "SHOPIFY",
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogFocus": 80,
+        "catalogSize": 250,
+        "heroProduct": "Infrarood Saunadeken Pro 3-zone",
+        "productPrice": 499,
+        "adsStatus": "confirmed_advertiser",
+        "currentPdpQuality": 59,
+        "transformation": 74,
+        "assetReadiness": 78,
+        "deepDiveFit": 100,
+        "economicFit": 100,
+        "salesFit": 63,
+        "scoreConfidence": 100,
+        "croDataSource": "AUDITED",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "insufficient_sales_fit"
+        ],
+        "idealPreScore": 76,
+        "source": "M93_NEW"
+      },
+      {
+        "domain": "auveyaskin.com",
+        "conceptId": "8b530e4c-fe38-421d-af70-461297937285",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "SHOPIFY",
+        "commerceModel": "SPECIALIST_RESELLER",
+        "catalogFocus": 88,
+        "catalogSize": 80,
+        "heroProduct": "Auveya® Led Masker White",
+        "productPrice": 199.99,
+        "adsStatus": "none",
+        "currentPdpQuality": 66,
+        "transformation": 63,
+        "assetReadiness": 78,
+        "deepDiveFit": 100,
+        "economicFit": 97,
+        "salesFit": 62,
+        "scoreConfidence": 100,
+        "croDataSource": "AUDITED",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "current_pdp_too_strong",
+          "insufficient_transformation",
+          "insufficient_sales_fit",
+          "missing_ads_signal"
+        ],
+        "idealPreScore": null,
+        "source": "EXISTING_POOL"
+      },
+      {
+        "domain": "huidproducten.nl",
+        "conceptId": "187c20e5-ad80-4cb6-bb58-f03823454666",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "SHOPIFY",
+        "commerceModel": "SPECIALIST_RESELLER",
+        "catalogFocus": 70,
+        "catalogSize": 250,
+        "heroProduct": "La Roche-Posay Lipikar Baume AP+Max",
+        "productPrice": 28.5,
+        "adsStatus": "confirmed_advertiser",
+        "currentPdpQuality": 62,
+        "transformation": 62,
+        "assetReadiness": 78,
+        "deepDiveFit": 100,
+        "economicFit": 85,
+        "salesFit": 62,
+        "scoreConfidence": 100,
+        "croDataSource": "AUDITED",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "insufficient_transformation",
+          "insufficient_sales_fit"
+        ],
+        "idealPreScore": null,
+        "source": "EXISTING_POOL"
+      },
+      {
+        "domain": "currentbody.nl",
+        "conceptId": "defd2cdb-3122-4c17-baba-ecf164564423",
+        "category": "BRAND",
+        "platform": "SHOPIFY",
+        "commerceModel": "DTC_OWN_BRAND",
+        "catalogFocus": 100,
+        "catalogSize": 60,
+        "heroProduct": "CurrentBody Skin LED Roodlicht Therapie Gezichtsmasker",
+        "productPrice": 449.99,
+        "adsStatus": "confirmed_exact_paid",
+        "currentPdpQuality": 85,
+        "transformation": 41,
+        "assetReadiness": 79,
+        "deepDiveFit": 100,
+        "economicFit": 100,
+        "salesFit": 50,
+        "scoreConfidence": 80,
+        "croDataSource": "AUDITED",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "current_pdp_too_strong",
+          "insufficient_transformation",
+          "insufficient_sales_fit"
+        ],
+        "idealPreScore": null,
+        "source": "EXISTING_POOL"
+      },
+      {
+        "domain": "fitnessdigital.nl",
+        "conceptId": "9743337a-919e-4ebe-9207-5d19d50c5524",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "UNKNOWN",
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogFocus": 70,
+        "catalogSize": 800,
+        "heroProduct": "Montage na levering - standaard krachtapparatuur",
+        "productPrice": 349,
+        "adsStatus": "none",
+        "currentPdpQuality": null,
+        "transformation": 59,
+        "assetReadiness": 63,
+        "deepDiveFit": 86,
+        "economicFit": 84,
+        "salesFit": 47,
+        "scoreConfidence": 28,
+        "croDataSource": "MISSING",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "cro_not_audited",
+          "insufficient_audit_confidence",
+          "insufficient_sales_confidence",
+          "insufficient_transformation",
+          "insufficient_assets",
+          "insufficient_sales_fit",
+          "missing_ads_signal"
+        ],
+        "idealPreScore": null,
+        "source": "M93_NEW"
+      },
+      {
+        "domain": "k-skincare.nl",
+        "conceptId": "88731ad0-7461-46ef-966b-881204fe8454",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "SHOPIFY",
+        "commerceModel": "SPECIALIST_RESELLER",
+        "catalogFocus": 70,
+        "catalogSize": 800,
+        "heroProduct": "Collagen Jelly Cream",
+        "productPrice": 19.95,
+        "adsStatus": "confirmed_advertiser",
+        "currentPdpQuality": null,
+        "transformation": 61,
+        "assetReadiness": 65,
+        "deepDiveFit": 89,
+        "economicFit": 75,
+        "salesFit": 45,
+        "scoreConfidence": 28,
+        "croDataSource": "MISSING",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "cro_not_audited",
+          "insufficient_audit_confidence",
+          "insufficient_sales_confidence",
+          "insufficient_transformation",
+          "insufficient_sales_fit"
+        ],
+        "idealPreScore": null,
+        "source": "EXISTING_POOL"
+      },
+      {
+        "domain": "asos.com",
+        "conceptId": "51fb80af-ef34-4705-8800-72339de6dbdb",
+        "category": "NON_ECOMMERCE",
+        "platform": "UNKNOWN",
+        "commerceModel": "UNKNOWN",
+        "catalogFocus": 68,
+        "catalogSize": 10,
+        "heroProduct": "StylPro LED Wavelength Mask",
+        "productPrice": null,
+        "adsStatus": "confirmed_exact_paid",
+        "currentPdpQuality": null,
+        "transformation": 40,
+        "assetReadiness": 27,
+        "deepDiveFit": 88,
+        "economicFit": 66,
+        "salesFit": 42,
+        "scoreConfidence": 28,
+        "croDataSource": "MISSING",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "cro_not_audited",
+          "insufficient_audit_confidence",
+          "insufficient_sales_confidence",
+          "insufficient_transformation",
+          "insufficient_assets",
+          "insufficient_sales_fit"
+        ],
+        "idealPreScore": null,
+        "source": "EXISTING_POOL"
+      },
+      {
+        "domain": "apotheekendrogist.nl",
+        "conceptId": "ebdec816-34bb-4fb8-b6e2-1a60a7eb2a37",
+        "category": "SPECIALIST_WEBSHOP",
+        "platform": "SHOPIFY",
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogFocus": 70,
+        "catalogSize": 800,
+        "heroProduct": "Service Apotheek Multivitamine volwassenen 60st",
+        "productPrice": 7.01,
+        "adsStatus": "none",
+        "currentPdpQuality": null,
+        "transformation": 59,
+        "assetReadiness": 78,
+        "deepDiveFit": 100,
+        "economicFit": 61,
+        "salesFit": 35,
+        "scoreConfidence": 28,
+        "croDataSource": "MISSING",
+        "engineeringFixture": false,
+        "contrastGatePass": false,
+        "contrastBlocked": [
+          "cro_not_audited",
+          "insufficient_audit_confidence",
+          "insufficient_sales_confidence",
+          "insufficient_transformation",
+          "insufficient_sales_fit",
+          "missing_ads_signal"
+        ],
+        "idealPreScore": null,
+        "source": "M93_NEW"
+      }
+    ],
+    "designTarget": {
+      "recommended": null,
+      "runnerUps": [
+        {
+          "domain": "quiesco.nl",
+          "conceptId": "07caf60b-53f6-4a75-8a41-44d06cff1db7",
+          "category": "SPECIALIST_WEBSHOP",
+          "platform": "SHOPIFY",
+          "commerceModel": "MOSTLY_OWN_BRAND",
+          "catalogFocus": 88,
+          "catalogSize": 80,
+          "heroProduct": "QUIESCO® HOOFDKUSSEN",
+          "productPrice": 139,
+          "adsStatus": "confirmed_advertiser",
+          "currentPdpQuality": 64,
+          "transformation": 64,
+          "assetReadiness": 78,
+          "deepDiveFit": 100,
+          "economicFit": 100,
+          "salesFit": 84,
+          "scoreConfidence": 100,
+          "croDataSource": "AUDITED",
+          "engineeringFixture": false,
+          "contrastGatePass": false,
+          "contrastBlocked": [
+            "insufficient_transformation"
+          ],
+          "idealPreScore": 80,
+          "source": "M93_NEW"
+        },
+        {
+          "domain": "tensfact.com",
+          "conceptId": "42cc76e8-9e57-48e9-ac27-7533bc09a2a0",
+          "category": "SPECIALIST_WEBSHOP",
+          "platform": "SHOPIFY",
+          "commerceModel": "MOSTLY_OWN_BRAND",
+          "catalogFocus": 88,
+          "catalogSize": 80,
+          "heroProduct": "Automatische kattenvoerbak met HD camera en app voor 2 katten",
+          "productPrice": 79.95,
+          "adsStatus": "confirmed_advertiser",
+          "currentPdpQuality": 68,
+          "transformation": 65,
+          "assetReadiness": 78,
+          "deepDiveFit": 100,
+          "economicFit": 100,
+          "salesFit": 70,
+          "scoreConfidence": 98,
+          "croDataSource": "AUDITED",
+          "engineeringFixture": true,
+          "contrastGatePass": false,
+          "contrastBlocked": [
+            "current_pdp_too_strong",
+            "insufficient_transformation",
+            "insufficient_sales_fit"
+          ],
+          "idealPreScore": null,
+          "source": "EXISTING_POOL"
+        },
+        {
+          "domain": "nordichigh.nl",
+          "conceptId": "d3ed2b7b-f927-4f2f-9510-bbf88eaebda6",
+          "category": "SPECIALIST_WEBSHOP",
+          "platform": "SHOPIFY",
+          "commerceModel": "MOSTLY_OWN_BRAND",
+          "catalogFocus": 80,
+          "catalogSize": 250,
+          "heroProduct": "Infrarood Saunadeken Pro 3-zone",
+          "productPrice": 499,
+          "adsStatus": "confirmed_advertiser",
+          "currentPdpQuality": 59,
+          "transformation": 74,
+          "assetReadiness": 78,
+          "deepDiveFit": 100,
+          "economicFit": 100,
+          "salesFit": 63,
+          "scoreConfidence": 100,
+          "croDataSource": "AUDITED",
+          "engineeringFixture": false,
+          "contrastGatePass": false,
+          "contrastBlocked": [
+            "insufficient_sales_fit"
+          ],
+          "idealPreScore": 76,
+          "source": "M93_NEW"
+        }
+      ],
+      "why": [
+        "no_candidate_passed_strong_contrast_gate"
+      ],
+      "note": "Best audited non-fixture: quiesco.nl sales=84 blocked=insufficient_transformation"
+    }
+  },
+  "costs": {
+    "dataforseo": 0.23200000000000015,
+    "anthropic": 0.29071199999999997,
+    "dataforseoCap": 0.4,
+    "anthropicCap": 0.3,
+    "keywordGenCost": 0.048,
+    "transparencyCost": 0.024000000000000007
+  }
+}

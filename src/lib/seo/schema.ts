@@ -191,6 +191,7 @@ export function serviceJsonLd(input: {
   description: string;
   path: string;
   areaServed?: string | { "@type": "City"; name: string };
+  serviceType?: string;
 }): JsonLdObject {
   return {
     "@context": "https://schema.org",
@@ -200,6 +201,7 @@ export function serviceJsonLd(input: {
     provider: orgRef(),
     areaServed: input.areaServed ?? "NL",
     url: absoluteUrl(input.path),
+    ...(input.serviceType ? { serviceType: input.serviceType } : {}),
   };
 }
 
@@ -397,6 +399,7 @@ export function webPageJsonLd(input: {
   description: string;
   path: string;
   dateModified?: string;
+  datePublished?: string;
 }): JsonLdObject {
   return {
     "@context": "https://schema.org",
@@ -405,6 +408,7 @@ export function webPageJsonLd(input: {
     description: input.description,
     url: absoluteUrl(input.path),
     inLanguage: "nl-NL",
+    ...(input.datePublished ? { datePublished: input.datePublished } : {}),
     dateModified: input.dateModified ?? "2026-08-07",
     isPartOf: websiteRef(),
     publisher: orgRef(),

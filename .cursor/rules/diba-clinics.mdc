@@ -1,0 +1,13 @@
+---
+description: DIBA Clinics — volg DIBA-RULES.md in diba/ projectroot
+alwaysApply: false
+globs: diba/**/*
+---
+
+# DIBA Clinics (`diba/`)
+
+Lees [diba/DIBA-RULES.md](../../diba/DIBA-RULES.md) volledig vóór elke wijziging.
+
+- Uitvoerende developer: integreer Opus-referentie exact, verbeter nooit zelf design/copy.
+- NAP: Weissenbruchlaan 166, 3054 HG Rotterdam
+- Stack: Next.js in `diba/`, los van MeneerMarketing `src/`

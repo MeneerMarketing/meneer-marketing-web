@@ -74,7 +74,7 @@ export async function generateMetadata({
 const ANKERS = [
   { id: "werking", label: "Wat het doet" },
   { id: "afspraak", label: "In de afspraak" },
-  { id: "grenzen", label: "Wat het niet doet" },
+  { id: "grenzen", label: "Waar het voor is" },
   { id: "vragen", label: "Vragen" },
 ];
 
@@ -279,7 +279,7 @@ export default async function BehandelingPage({ params }: PageProps) {
         <div className="mx-auto">
           <Label>Wat het doet</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            {diepsteLaag ? "Waar het aankomt" : "Waarom er niets gebeurt"}
+            {diepsteLaag ? "Waar het aankomt" : "Wat het oplevert"}
           </h2>
           <p className="mt-6 max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
             {publicCopy(b.werking)}
@@ -406,7 +406,10 @@ export default async function BehandelingPage({ params }: PageProps) {
                     <p className="diba-card-title text-[var(--t-strong)]">
                       {s.kop}
                     </p>
-                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                    {/* Drie regelhoogtes gereserveerd. Even lange teksten geven niet
+                        vanzelf even hoge kaarten, want dat hangt af van waar de woorden
+                        breken; in lh schaalt het bovendien mee met de lettergrootte. */}
+                    <p className="mt-3 min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
                       {publicCopy(s.zin)}
                     </p>
                   </li>
@@ -459,28 +462,32 @@ export default async function BehandelingPage({ params }: PageProps) {
       ) : null}
 
       {/* ── Wel en niet ── */}
-      {/* Zonder wel en niet blijft alleen de belofte over dat links en rechts evenveel regels hebben. */}
+      {/* `wel` en `niet` heten nog zo in de data, maar `niet` draagt sinds vandaag de
+          route: waarom deze behandeling het niet is, en welke het dan wel is. Een grens
+          zonder vervolg stuurt iemand de deur uit; met vervolg is het een verwijzing.
+
+          Links en rechts hebben evenveel regels, dat blijft. */}
       {b.wel?.length || b.niet?.length ? (
         <section
           id="grenzen"
           className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
         >
           <div className="mx-auto">
-            <Label>Wat het wel en niet doet</Label>
+            <Label>Waar het voor is</Label>
             <h2 className="diba-display-m mt-4 max-w-[24ch]">
-              {b.welNietKop?.kop ?? "Wat een behandeling"}{" "}
+              {b.welNietKop?.kop ?? "Waar deze behandeling"}{" "}
               <span className="diba-accent">
-                {b.welNietKop?.accent ?? "met je huid doet"}
+                {b.welNietKop?.accent ?? "voor bedoeld is"}
               </span>
             </h2>
             <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Links waar deze behandeling voor bedoeld is, rechts waar hij niets
-              aan doet.
+              Links waar deze behandeling goed werkt, rechts wanneer een andere
+              behandeling meer voor je doet.
             </p>
 
             <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
               <div>
-                <Label>Hier doet het iets aan</Label>
+                <Label>Hier werkt het goed bij</Label>
                 <ul className="mt-5 space-y-3">
                   {(b.wel ?? []).map((w) => (
                     <li
@@ -494,7 +501,7 @@ export default async function BehandelingPage({ params }: PageProps) {
               </div>
 
               <div>
-                <Label>Hier niet</Label>
+                <Label>Hiervoor kies je iets anders</Label>
                 <ul className="mt-5 space-y-3">
                   {(b.niet ?? []).map((n) => (
                     <li

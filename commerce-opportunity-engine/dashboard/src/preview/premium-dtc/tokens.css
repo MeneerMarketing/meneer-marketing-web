@@ -1,0 +1,348 @@
+/**
+ * PREMIUM_DTC_A — art direction tokens (M9.1.2).
+ * Neutral premium base (90%) + prospect brand accent (10%).
+ * Prospect overrides land on .pdtc-root as inline CSS variables.
+ */
+
+.pdtc-root {
+  /* Ink & surfaces */
+  --pdtc-ink: #0d0d0f;
+  --pdtc-ink-2: #26272b;
+  --pdtc-muted: #6b6c72;
+  --pdtc-muted-2: #9a9ba1;
+  --pdtc-line: rgba(13, 13, 15, 0.14);
+  --pdtc-hair: rgba(13, 13, 15, 0.08);
+  --pdtc-paper: #ffffff;
+  --pdtc-surface: #f6f5f3;
+  --pdtc-surface-2: #eceae6;
+  --pdtc-dark: #0c0c0e;
+  --pdtc-dark-2: #16171a;
+  --pdtc-cream: #faf9f7;
+
+  /* Brand accent — replaced per prospect (Tensfact orange) */
+  --pdtc-brand: #ff4b00;
+  --pdtc-brand-ink: #ffffff;
+
+  /* Type scale */
+  --fs-display-xl: clamp(38px, 4.4vw, 66px);
+  --fs-display-lg: clamp(29px, 3.3vw, 48px);
+  --fs-h2: clamp(25px, 2.5vw, 36px);
+  --fs-h3: clamp(17px, 1.25vw, 21px);
+  --fs-body-lg: clamp(16px, 1.02vw, 18px);
+  --fs-body: 15px;
+  --fs-meta: 13px;
+  --fs-micro: 12px;
+  --fs-eyebrow: 10.5px;
+  --fs-price: clamp(27px, 2.2vw, 34px);
+
+  --lh-display: 1.02;
+  --lh-heading: 1.1;
+  --lh-body: 1.62;
+
+  --tr-display: -0.035em;
+  --tr-heading: -0.02em;
+  --tr-eyebrow: 0.2em;
+
+  /* Restrained radius system — editorial sections stay square */
+  --r-control: 3px;
+  --r-media: 4px;
+  --r-gallery: 26px;
+  --r-gallery-thumb: 14px;
+  --r-gallery-thumb: 14px;
+  --r-pill: 999px;
+
+  /* One shadow, used only for floating commerce chrome */
+  --shadow-bar: 0 14px 44px -26px rgba(0, 0, 0, 0.6);
+
+  /* Layout */
+  --pdtc-max: 1440px;
+  --pdtc-pad-x: 32px;
+  --sp-section: clamp(76px, 7vw, 132px);
+  --sp-section-tight: clamp(44px, 4vw, 72px);
+  --gap-buy: clamp(36px, 4vw, 72px);
+  /* Gallery sticky offset — header scrolls away, small viewport breathing room */
+  --pdtc-buy-sticky-top: 20px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.42s;
+
+  --font-ui: var(--font-pdtc-ui), "Inter", system-ui, sans-serif;
+  --font-display: var(--font-pdtc-display), "Archivo", system-ui, sans-serif;
+  /* Shop chrome reads calmer in a humanist grotesque than in the display face */
+  --font-nav: var(--font-pdtc-nav), "DM Sans", system-ui, sans-serif;
+
+  /* Header surface: off-white paper, warm hairline */
+  --pdtc-header-bg: #ffffff;
+  --pdtc-header-rail: #f4f2ef;
+  --pdtc-header-line: rgba(122, 108, 94, 0.14);
+  /* Promo band — volle merkkleur (Tensfact-oranje uit logo) */
+  --pdtc-promo-bg: var(--pdtc-brand);
+  --pdtc-promo-ink: #ffffff;
+
+  color: var(--pdtc-ink);
+  background: var(--pdtc-paper);
+  font-family: var(--font-ui);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 1500px) {
+  .pdtc-root {
+    --pdtc-pad-x: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pdtc-root {
+    --pdtc-pad-x: 18px;
+    --sp-section: clamp(52px, 9vw, 76px);
+    --sp-section-tight: 36px;
+    --gap-buy: 0px;
+  }
+}
+
+.pdtc-root *,
+.pdtc-root *::before,
+.pdtc-root *::after {
+  box-sizing: border-box;
+}
+
+.pdtc-root img,
+.pdtc-root video {
+  max-width: 100%;
+}
+
+.pdtc-container {
+  width: 100%;
+  max-width: var(--pdtc-max);
+  margin: 0 auto;
+  padding-left: var(--pdtc-pad-x);
+  padding-right: var(--pdtc-pad-x);
+}
+
+.pdtc-section {
+  padding: var(--sp-section) 0;
+}
+
+.pdtc-section--tight {
+  padding: var(--sp-section-tight) 0;
+}
+
+.pdtc-section--surface {
+  background: var(--pdtc-surface);
+}
+
+.pdtc-section--dark {
+  background: var(--pdtc-dark);
+  color: var(--pdtc-cream);
+}
+
+/* ——— Type primitives ——— */
+.pdtc-eyebrow {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--pdtc-muted-2);
+  margin: 0 0 18px;
+}
+
+.pdtc-eyebrow--brand {
+  color: var(--pdtc-brand);
+}
+
+.pdtc-display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display-lg);
+  font-weight: 600;
+  line-height: var(--lh-display);
+  letter-spacing: var(--tr-display);
+  margin: 0;
+  color: inherit;
+}
+
+.pdtc-display--xl {
+  font-size: var(--fs-display-xl);
+}
+
+.pdtc-h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: 600;
+  line-height: var(--lh-heading);
+  letter-spacing: var(--tr-heading);
+  margin: 0;
+  color: inherit;
+}
+
+.pdtc-h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.pdtc-body-lg {
+  font-size: var(--fs-body-lg);
+  line-height: 1.58;
+  color: var(--pdtc-muted);
+  margin: 0;
+  max-width: 52ch;
+  font-weight: 400;
+}
+
+.pdtc-body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--pdtc-muted);
+  margin: 0;
+  max-width: 58ch;
+}
+
+.pdtc-micro {
+  font-size: var(--fs-micro);
+  line-height: 1.5;
+  color: var(--pdtc-muted);
+  margin: 0;
+}
+
+/* ——— One CTA system: black primary, orange micro-detail ——— */
+.pdtc-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 0 26px;
+  border: 0;
+  border-radius: var(--r-control);
+  background: var(--pdtc-ink);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background var(--dur) var(--ease), color 0.2s ease;
+}
+
+.pdtc-cta::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--pdtc-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur) var(--ease);
+}
+
+.pdtc-cta:hover {
+  background: var(--pdtc-ink-2);
+}
+
+.pdtc-cta:hover::after {
+  transform: scaleX(1);
+}
+
+.pdtc-cta:hover .pdtc-cta-arrow {
+  transform: translateX(4px);
+}
+
+.pdtc-cta-arrow {
+  display: inline-flex;
+  transition: transform var(--dur) var(--ease);
+  color: var(--pdtc-brand);
+}
+
+.pdtc-cta--block {
+  width: 100%;
+}
+
+.pdtc-cta--light {
+  background: #fff;
+  color: var(--pdtc-ink);
+}
+
+.pdtc-cta--light:hover {
+  background: #f0efec;
+}
+
+/* Shop CTA — Cloudpillo-style orange pill */
+.pdtc-cta--shop {
+  min-height: 58px;
+  border-radius: var(--r-pill);
+  background: var(--pdtc-brand);
+  font-family: var(--font-nav);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.pdtc-cta--shop::after {
+  display: none;
+}
+
+.pdtc-cta--shop:hover {
+  background: color-mix(in srgb, var(--pdtc-brand) 88%, #000);
+}
+
+.pdtc-cta--shop.is-disabled,
+.pdtc-cta--shop[disabled] {
+  background: var(--pdtc-muted-2);
+}
+
+.pdtc-cta[disabled],
+.pdtc-cta.is-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pdtc-cta[disabled]::after,
+.pdtc-cta.is-disabled::after {
+  display: none;
+}
+
+/* Text link CTA for editorial sections */
+.pdtc-linkcta {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--pdtc-line);
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color var(--dur) var(--ease);
+}
+
+.pdtc-linkcta:hover {
+  border-color: var(--pdtc-brand);
+}
+
+.pdtc-linkcta:hover .pdtc-cta-arrow {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pdtc-root *,
+  .pdtc-root *::before,
+  .pdtc-root *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

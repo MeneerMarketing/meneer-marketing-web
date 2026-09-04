@@ -1,0 +1,550 @@
+import { createAdminClient } from "@/lib/supabase/admin";
+import { writeActivity } from "@/lib/repositories/lge";
+import { formatErrorMessage } from "@/lib/errors";
+import { buildPreviewSlug } from "@/lib/previewSlug";
+import { normalizeEmail } from "@/lib/text";
+import type { StudioData, StudioImage, TemplateVariant } from "@/types/studio";
+import { analyzeWebsite } from "./websiteIntelligence";
+import { pickAndPersistBestEmail, syncBusinessEmailRecord } from "@/services/enrichment/emailSyncService";
+import { evaluateEmailConfidence } from "@/services/email/emailConfidenceService";
+import { extractBrand, enrichBrandFromLogo } from "./brandExtractor";
+import { extractServices } from "./serviceExtractor";
+import { extractSkinClinicServices } from "./skinClinicServiceExtractor";
+import { extractImages } from "./imageExtractor";
+import { harvestRenderedImages } from "./renderedImageHarvest";
+import { resolveBrandLogoFromWebsite } from "./resolveBrandLogo";
+import { selectTemplate } from "./templateSelector";
+import { generateContent } from "./contentGenerator";
+import { personalizeSeo } from "./seoPersonalizer";
+import {
+  mapHarvestedCandidatesToStudioImages,
+  mergeImageCandidates,
+} from "@/lib/mapPreviewImages";
+import { buildConceptSkinConcerns } from "@/lib/clinicPreviewFallbacks";
+
+export interface GeneratePreviewResult {
+  ok: boolean;
+  businessId: string;
+  previewId?: string;
+  slug?: string;
+  variant?: TemplateVariant;
+  confidence?: number;
+  anthropic_cost_usd: number;
+  images_selected: number;
+  services: string[];
+  seo?: { primary: string; secondary: string[] };
+  brand?: {
+    logo: boolean;
+    primary_color: string;
+    secondary_color: string;
+    accent_color: string;
+    confidence: number;
+  };
+  status: string;
+  error?: string;
+  previewUrl?: string;
+}
+
+
+function buildStudioData(input: {
+  businessId: string;
+  slug: string;
+  studioName: string;
+  city: string;
+  country: string;
+  brand: ReturnType<typeof extractBrand>;
+  content: Awaited<ReturnType<typeof generateContent>>["content"];
+  servicesPrimary: string;
+  phone: string | null;
+  email: string | null;
+  address: string | null;
+  postal: string | null;
+  booking: string | null;
+  instagram: string | null;
+  rating: number | null;
+  reviewCount: number | null;
+  images: StudioImage[];
+  seo: ReturnType<typeof personalizeSeo>;
+  verticalSlug?: string;
+  skinConcerns?: StudioData["skin_concerns"];
+}): StudioData {
+  return {
+    id: input.businessId,
+    slug: input.slug,
+    studio_name: input.studioName,
+    city: input.city,
+    country: input.country,
+    logo: input.brand.logo_url,
+    primary_color: input.brand.primary_color,
+    secondary_color: input.brand.secondary_color,
+    accent_color: input.brand.accent_color,
+    tagline: input.content.tagline || input.content.hero_subtitle,
+    description: input.content.description || input.content.intro_text,
+    primary_service: input.servicesPrimary,
+    services: input.content.service_cards.map((s, i) => ({
+      id: `svc-${i}`,
+      name: s.name,
+      description: s.description,
+      highlight: s.highlight,
+    })),
+    phone: input.phone ?? "",
+    email: normalizeEmail(input.email) ?? "",
+    address: input.address ?? "",
+    postal_code: input.postal ?? "",
+    booking_url: input.booking ?? (input.phone ? `tel:${input.phone.replace(/\s/g, "")}` : "#contact"),
+    instagram_url: input.instagram ?? "",
+    review_rating: input.rating ?? 0,
+    review_count: input.reviewCount ?? 0,
+    team: [],
+    images: input.images,
+    memberships: [],
+    reviews: input.content.reviews.map((r, i) => ({
+      id: `rev-${i}`,
+      author: r.author,
+      rating: r.rating,
+      text: r.text,
+    })),
+    faqs: input.content.faq.map((f, i) => ({
+      id: `faq-${i}`,
+      question: f.question,
+      answer: f.answer,
+    })),
+    benefits: input.content.benefits.map((b, i) => ({
+      id: `ben-${i}`,
+      title: b.title,
+      description: b.description,
+    })),
+    primary_seo_keyword: input.seo.primary_keyword,
+    secondary_seo_keywords: input.seo.secondary_keywords,
+    opening_hours: "",
+    founded_year: 0,
+    vertical_slug: input.verticalSlug,
+    skin_concerns: input.skinConcerns ?? [],
+  };
+}
+
+export async function generateBusinessPreview(
+  businessId: string,
+  options?: { forceTemplate?: TemplateVariant; allowDemo?: boolean }
+): Promise<GeneratePreviewResult> {
+  const client = createAdminClient();
+  const maxAnthropic = Number(process.env.PREVIEW_MAX_ANTHROPIC_COST_PER_RUN ?? 0.25);
+  let anthropicCost = 0;
+
+  const { data: business, error } = await client
+    .from("businesses")
+    .select("*, cities:city_id(id,name,slug,country_code)")
+    .eq("id", businessId)
+    .single();
+
+  if (error || !business) {
+    return {
+      ok: false,
+      businessId,
+      anthropic_cost_usd: 0,
+      images_selected: 0,
+      services: [],
+      status: "FAILED",
+      error: "Business niet gevonden",
+    };
+  }
+
+  const city = business.cities as { id: string; name: string; slug: string; country_code: string };
+  const gates: string[] = [];
+  if (business.is_demo && !options?.allowDemo) gates.push("DEMO record");
+  if (business.qualification_status !== "QUALIFIED") gates.push("niet QUALIFIED");
+  if (business.lead_eligible === false) gates.push("niet lead_eligible");
+  if (business.is_chain) gates.push("keten");
+  if (/permanently_closed|closed_forever/i.test(String(business.google_status ?? ""))) {
+    gates.push("permanent gesloten");
+  }
+  if (!business.website_url) gates.push("geen website");
+
+  if (gates.length) {
+    return {
+      ok: false,
+      businessId,
+      anthropic_cost_usd: 0,
+      images_selected: 0,
+      services: [],
+      status: "FAILED",
+      error: `Preview geweigerd: ${gates.join(", ")}`,
+    };
+  }
+
+  await client
+    .from("businesses")
+    .update({
+      preview_status: "ANALYZING",
+      lead_status: business.lead_status === "DISCOVERED" ? "PREVIEW_GENERATING" : business.lead_status,
+      last_activity_at: new Date().toISOString(),
+    })
+    .eq("id", businessId);
+
+  await writeActivity(client, {
+    business_id: businessId,
+    activity_type: "PREVIEW_ANALYSIS_STARTED",
+    title: `Preview analyse gestart · ${business.studio_name}`,
+    description: city?.name ?? "",
+  });
+
+  try {
+    const intelligence = await analyzeWebsite(business.website_url as string);
+    await client
+      .from("businesses")
+      .update({ website_intelligence: intelligence, preview_status: "GENERATING" })
+      .eq("id", businessId);
+
+    if (!(business.email as string | null) && intelligence.emails[0]) {
+      const confidence = await evaluateEmailConfidence({
+        email: intelligence.emails[0],
+        businessDomain:
+          (business.normalized_domain as string | null) ?? (business.domain as string | null),
+        source: "website_intelligence",
+      });
+      await syncBusinessEmailRecord({
+        client,
+        businessId,
+        studioName: business.studio_name as string,
+        email: intelligence.emails[0],
+        source: "website_intelligence",
+        confidence,
+      });
+    } else if (!(business.email as string | null)) {
+      const { enrichBusinessEmailFromWebsite } = await import(
+        "@/services/enrichment/enrichBusinessEmail"
+      );
+      await enrichBusinessEmailFromWebsite(client, {
+        businessId,
+        websiteUrl: business.website_url as string,
+        domain: (business.normalized_domain as string | null) ?? (business.domain as string | null),
+        studioName: business.studio_name as string,
+      });
+    }
+
+    const { data: verticalRow } = await client
+      .from("verticals")
+      .select("slug")
+      .eq("id", business.vertical_id)
+      .maybeSingle();
+    const verticalSlug = (verticalRow?.slug as string) ?? "pilates";
+
+    let brand = extractBrand(
+        intelligence,
+        (business.google_logo_url as string | null) ?? (business.logo as string | null)
+      );
+    brand = await resolveBrandLogoFromWebsite(
+      brand,
+      business.website_url as string,
+      intelligence,
+    );
+    brand = await enrichBrandFromLogo(brand);
+    await writeActivity(client, {
+      business_id: businessId,
+      activity_type: "BRANDING_EXTRACTED",
+      title: `Branding geëxtraheerd · confidence ${Math.round(brand.confidence * 100)}%`,
+      description: `${brand.primary_color} / ${brand.accent_color} · logo ${brand.logo_source ?? "tekst"}`,
+      metadata: brand as unknown as Record<string, unknown>,
+    });
+
+    const serviceResult =
+      verticalSlug === "skin-clinics"
+        ? extractSkinClinicServices(intelligence)
+        : extractServices(intelligence);
+    await writeActivity(client, {
+      business_id: businessId,
+      activity_type: "SERVICES_EXTRACTED",
+      title: `Services geëxtraheerd · ${serviceResult.services.length}`,
+      description: serviceResult.services.map((s) => s.service_name).join(", "),
+    });
+
+    let imageCandidates = extractImages(intelligence, {
+      google_main_image: business.google_main_image_url as string | null,
+      google_logo: business.google_logo_url as string | null,
+    });
+
+    const harvestUrls = [
+      intelligence.base_url,
+      ...intelligence.pages.slice(0, 5).map((page) => page.url),
+    ].filter((url, index, all) => all.indexOf(url) === index);
+
+    const renderedHarvest = await harvestRenderedImages({
+      pageUrls: harvestUrls,
+      maxPages: 4,
+    });
+    imageCandidates = mergeImageCandidates(imageCandidates, renderedHarvest.candidates);
+
+    let template = selectTemplate({
+      brand,
+      services: serviceResult.services,
+      images: imageCandidates,
+      intelligence,
+      primaryService: serviceResult.primary_service,
+    });
+    if (options?.forceTemplate) {
+      template = {
+        variant: options.forceTemplate,
+        confidence: 1,
+        reasoning: `Handmatig gekozen: ${options.forceTemplate}`,
+      };
+    }
+
+    await writeActivity(client, {
+      business_id: businessId,
+      activity_type: "TEMPLATE_SELECTED",
+      title: `Template · ${template.variant}`,
+      description: template.reasoning,
+      metadata: { confidence: template.confidence },
+    });
+
+    await writeActivity(client, {
+      business_id: businessId,
+      activity_type: "PREVIEW_GENERATION_STARTED",
+      title: `Copy generatie gestart · ${business.studio_name}`,
+    });
+
+    const contentResult = await generateContent({
+      studioName: business.studio_name as string,
+      city: city.name,
+      country: (business.country as string) || "Nederland",
+      address: business.address as string | null,
+      phone: business.phone as string | null,
+      primaryService: serviceResult.primary_service,
+      services: serviceResult.services,
+      brand,
+      template,
+      intelligence,
+      rating: (business.google_rating as number | null) ?? (business.review_rating as number | null),
+      reviewCount:
+        (business.google_review_count as number | null) ?? (business.review_count as number | null),
+      maxCostRemaining: maxAnthropic - anthropicCost,
+      verticalSlug,
+    });
+    anthropicCost += contentResult.anthropic_cost_usd;
+
+    const seo = personalizeSeo({
+      studioName: business.studio_name as string,
+      city: city.name,
+      primaryService: serviceResult.primary_service,
+      services: serviceResult.services,
+    });
+
+    const studioImages = mapHarvestedCandidatesToStudioImages(
+      imageCandidates,
+      business.studio_name as string,
+      verticalSlug,
+    );
+    const previewSlug = buildPreviewSlug(
+      business.studio_name as string,
+      city.slug as string,
+    );
+
+    const skinConcerns =
+      verticalSlug === "skin-clinics" ? buildConceptSkinConcerns() : [];
+
+    const studioSnapshot = buildStudioData({
+      businessId,
+      slug: previewSlug,
+      studioName: business.studio_name as string,
+      city: city.name,
+      country: (business.country as string) || "Nederland",
+      brand,
+      content: contentResult.content,
+      servicesPrimary: serviceResult.primary_service,
+      phone: (business.phone as string | null) ?? intelligence.phones[0] ?? null,
+      email: (business.email as string | null) ?? intelligence.emails[0] ?? null,
+      address: business.address as string | null,
+      postal: business.postal_code as string | null,
+      booking: business.booking_url as string | null,
+      instagram:
+        (business.instagram_url as string | null) ?? intelligence.socials.instagram ?? null,
+      rating: (business.google_rating as number | null) ?? (business.review_rating as number | null),
+      reviewCount:
+        (business.google_review_count as number | null) ?? (business.review_count as number | null),
+      images: studioImages,
+      seo,
+      verticalSlug,
+      skinConcerns,
+    });
+
+    const { data: templateRow, error: templateError } = await client
+      .from("templates")
+      .select("id, variant")
+      .eq("variant", template.variant)
+      .eq("vertical_id", business.vertical_id)
+      .maybeSingle();
+
+    if (templateError || !templateRow) {
+      throw new Error(
+        templateError?.message ??
+          `Template ${template.variant} ontbreekt in DB voor ${verticalSlug}`,
+      );
+    }
+
+    const generationMetadata = {
+      anthropic_cost_usd: anthropicCost,
+      model: contentResult.model,
+      used_claude: contentResult.used_claude,
+      pages_crawled: intelligence.pages.length,
+      crawl_errors: intelligence.errors,
+      generated_at: new Date().toISOString(),
+    };
+
+    // Archive previous previews for this business (één publieke slug per studio).
+    await client
+      .from("previews")
+      .update({ status: "ARCHIVED", updated_at: new Date().toISOString() })
+      .eq("business_id", businessId)
+      .in("status", ["READY", "DRAFT", "GENERATING"]);
+
+    const previewPayload = {
+      business_id: businessId,
+      template_id: templateRow.id,
+      slug: previewSlug,
+      template_variant: template.variant,
+      status: "READY",
+      published_at: new Date().toISOString(),
+      generated_at: new Date().toISOString(),
+      brand_profile_snapshot: brand,
+      content_snapshot: contentResult.content,
+      services_snapshot: serviceResult.services,
+      images_snapshot: imageCandidates,
+      seo_snapshot: seo,
+      studio_snapshot: studioSnapshot,
+      generation_metadata: generationMetadata,
+      template_selection_confidence: template.confidence,
+      template_selection_reasoning: template.reasoning,
+      updated_at: new Date().toISOString(),
+    };
+
+    const { data: existingPreview } = await client
+      .from("previews")
+      .select("id")
+      .eq("slug", previewSlug)
+      .maybeSingle();
+
+    const previewWrite = existingPreview?.id
+      ? await client
+          .from("previews")
+          .update(previewPayload)
+          .eq("id", existingPreview.id)
+          .select("id, slug")
+          .single()
+      : await client.from("previews").insert(previewPayload).select("id, slug").single();
+
+    const preview = previewWrite.data;
+    const previewError = previewWrite.error;
+
+    if (previewError) {
+      throw new Error(formatErrorMessage(previewError));
+    }
+    if (!preview) {
+      throw new Error("Preview opslaan mislukt: geen record terug");
+    }
+
+    const seoPayload = {
+      business_id: businessId,
+      vertical_id: business.vertical_id,
+      city_id: business.city_id,
+      primary_keyword: seo.primary_keyword,
+      secondary_keywords: seo.secondary_keywords,
+      status: "MEDIUM",
+      seo_title: seo.seo_title,
+      meta_description: seo.meta_description,
+      h1_recommendation: seo.h1_recommendation,
+      notes: "Gegenereerd tijdens preview pipeline (geen keyword API)",
+      updated_at: new Date().toISOString(),
+    };
+    const { data: existingSeo } = await client
+      .from("seo_opportunities")
+      .select("id")
+      .eq("business_id", businessId)
+      .maybeSingle();
+    if (existingSeo?.id) {
+      await client.from("seo_opportunities").update(seoPayload).eq("id", existingSeo.id);
+    } else {
+      await client.from("seo_opportunities").insert(seoPayload);
+    }
+
+    await client
+      .from("businesses")
+      .update({
+        brand_profile: brand,
+        selected_template_id: templateRow.id,
+        template_selection_confidence: template.confidence,
+        template_selection_reasoning: template.reasoning,
+        primary_color: brand.primary_color,
+        secondary_color: brand.secondary_color,
+        accent_color: brand.accent_color,
+        logo: brand.logo_url,
+        tagline: studioSnapshot.tagline,
+        description: studioSnapshot.description,
+        primary_service: serviceResult.primary_service,
+        services: studioSnapshot.services,
+        images: studioSnapshot.images,
+        benefits: studioSnapshot.benefits,
+        faqs: studioSnapshot.faqs,
+        reviews: studioSnapshot.reviews,
+        primary_seo_keyword: seo.primary_keyword,
+        secondary_seo_keywords: seo.secondary_keywords,
+        preview_status: "READY",
+        lead_status: "PREVIEW_READY",
+        email: studioSnapshot.email || business.email,
+        phone: studioSnapshot.phone || business.phone,
+        instagram_url: studioSnapshot.instagram_url || business.instagram_url,
+        last_activity_at: new Date().toISOString(),
+      })
+      .eq("id", businessId);
+
+    await writeActivity(client, {
+      business_id: businessId,
+      activity_type: existingPreview?.id ? "PREVIEW_REGENERATED" : "PREVIEW_CREATED",
+      title: `Preview klaar · ${previewSlug}`,
+      description: `${template.variant} · $${anthropicCost.toFixed(4)} · ${studioImages.length} beelden · ${renderedHarvest.pages_rendered} pagina's gerenderd`,
+      metadata: { preview_id: preview.id, slug: preview.slug },
+    });
+
+    return {
+      ok: true,
+      businessId,
+      previewId: preview.id as string,
+      slug: preview.slug as string,
+      variant: template.variant,
+      confidence: template.confidence,
+      anthropic_cost_usd: anthropicCost,
+      images_selected: studioImages.length,
+      services: serviceResult.services.map((s) => s.service_name),
+      seo: { primary: seo.primary_keyword, secondary: seo.secondary_keywords },
+      brand: {
+        logo: Boolean(brand.logo_url),
+        primary_color: brand.primary_color,
+        secondary_color: brand.secondary_color,
+        accent_color: brand.accent_color,
+        confidence: brand.confidence,
+      },
+      status: "READY",
+      previewUrl: `/preview/${preview.slug}`,
+    };
+  } catch (err) {
+    const message = formatErrorMessage(err);
+    await client
+      .from("businesses")
+      .update({ preview_status: "FAILED", last_activity_at: new Date().toISOString() })
+      .eq("id", businessId);
+    await writeActivity(client, {
+      business_id: businessId,
+      activity_type: "PREVIEW_FAILED",
+      title: `Preview mislukt · ${business.studio_name}`,
+      description: message,
+    });
+    return {
+      ok: false,
+      businessId,
+      anthropic_cost_usd: anthropicCost,
+      images_selected: 0,
+      services: [],
+      status: "FAILED",
+      error: message,
+    };
+  }
+}

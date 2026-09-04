@@ -1,0 +1,220 @@
+/* Concept preview chrome — not part of shopfront */
+
+.pdtc-concept-mark {
+  position: fixed;
+  top: 10px;
+  left: 12px;
+  z-index: 95;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(28, 25, 23, 0.88);
+  color: #fafaf9;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+.pdtc-concept-mark em {
+  font-style: normal;
+  opacity: 0.65;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pdtc-rationale-fab {
+  position: fixed;
+  right: 16px;
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  z-index: 55;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 16px;
+  background: #1c1917;
+  color: #fafaf9;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(28, 25, 23, 0.25);
+}
+
+.pdtc-rationale-fab.is-prospect {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  opacity: 0.55;
+  box-shadow: none;
+  background: rgba(28, 25, 23, 0.55);
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  right: 12px;
+  z-index: 40;
+}
+
+.pdtc-rationale-fab.is-prospect:hover {
+  opacity: 0.9;
+}
+
+.pdtc-rationale-fab-ico {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pdtc-rationale-fab:hover {
+  transform: translateY(-1px);
+}
+
+.pdtc-rationale-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+}
+
+.pdtc-rationale-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(22, 24, 29, 0.4);
+  cursor: pointer;
+}
+
+.pdtc-rationale-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(92vw, 420px);
+  background: #fafaf9;
+  padding: 28px 22px;
+  box-shadow: -16px 0 40px rgba(22, 24, 29, 0.14);
+  overflow-y: auto;
+}
+
+.pdtc-rationale-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.pdtc-rationale-eyebrow {
+  margin: 0 0 6px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #78716c;
+}
+
+.pdtc-rationale-head h2 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: #1c1917;
+}
+
+.pdtc-rationale-sub {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #57534e;
+}
+
+.pdtc-rationale-close {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(28, 25, 23, 0.06);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.pdtc-rationale-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.pdtc-rationale-list li {
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(28, 25, 23, 0.08);
+}
+
+.pdtc-rationale-list strong {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+  color: #1c1917;
+}
+
+.pdtc-rationale-list p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #57534e;
+}
+
+.pdtc-internal-tools {
+  position: fixed;
+  left: 12px;
+  bottom: calc(14px + env(safe-area-inset-bottom));
+  z-index: 93;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: min(70vw, 420px);
+}
+
+.pdtc-internal-tools a {
+  font-size: 11px;
+  color: #57534e;
+  background: rgba(250, 250, 249, 0.92);
+  border: 1px solid rgba(28, 25, 23, 0.1);
+  border-radius: 999px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.pdtc-internal-tools a:hover {
+  color: #1c1917;
+}
+
+.pdtc-feature-layout.is-sequence {
+  grid-template-columns: 1fr;
+}
+
+.pdtc-benefits--large-media-statement .pdtc-benefits-aside {
+  min-height: 280px;
+}
+
+@media (max-width: 991px) {
+  .pdtc-concept-mark {
+    top: 10px;
+    bottom: auto;
+    left: 10px;
+  }
+  .pdtc-rationale-fab:not(.is-prospect) {
+    bottom: calc(18px + env(safe-area-inset-bottom));
+  }
+  .pdtc-rationale-fab.is-prospect {
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    transition: bottom 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  /* Step above the purchase bar only while that bar is on screen */
+  body.pdtc-bar-on .pdtc-rationale-fab.is-prospect {
+    bottom: calc(76px + env(safe-area-inset-bottom));
+  }
+  .pdtc-internal-tools {
+    display: none;
+  }
+}

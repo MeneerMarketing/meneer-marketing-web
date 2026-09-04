@@ -1,0 +1,59 @@
+{
+  "milestone": "M9.1.2 — Premium art direction + signature commerce UX",
+  "previewLifecycle": "INTERNAL_PREVIEW",
+  "templateVersion": "0.3.0-internal",
+  "conceptId": "42cc76e8-9e57-48e9-ac27-7533bc09a2a0",
+  "previewUrl": "/preview/concept/42cc76e8-9e57-48e9-ac27-7533bc09a2a0",
+  "internalReviewUrl": "/preview/concept/42cc76e8-9e57-48e9-ac27-7533bc09a2a0?review=1",
+  "typography": {
+    "display": "Archivo",
+    "ui": "Inter",
+    "scale": [
+      "display-xl",
+      "display-lg",
+      "h2",
+      "h3",
+      "body-lg",
+      "body",
+      "meta",
+      "micro",
+      "eyebrow",
+      "price"
+    ]
+  },
+  "ctaSystem": {
+    "primary": "black, orange underline + arrow on hover",
+    "final": "white on dark, orange arrow",
+    "header": "no add-to-cart button at rest"
+  },
+  "brandAccent": "#ff4b00",
+  "navigation": {
+    "source": "SOURCE_CONTENT",
+    "labels": ["Automatische Voerbakken", "Drinkfontein & Accessoires", "Dierenmanden"]
+  },
+  "sections": [
+    "HERO_BUY_BLOCK",
+    "TRUST_BAR",
+    "BENEFIT_GRID (editorial intro)",
+    "FEATURE_DEEP_DIVE (signature experience)",
+    "PRODUCT_STORY (full-bleed editorial)",
+    "TECH_SPECS (facts band + uncropped media band)",
+    "PROBLEM_SOLUTION (dark typographic moment)",
+    "FAQ",
+    "FINAL_PURCHASE",
+    "STICKY_ATC (desktop top bar / mobile bottom bar)"
+  ],
+  "assetPolicy": {
+    "rule": "No asset is captioned with a feature unless the source links them",
+    "evidenceCheck": "PDP has no <img> DOM nodes; images come from embedded JSON, so no image↔feature context exists",
+    "bleedBackgrounds": "photographic assets only",
+    "productGraphics": "shown whole (contain), never cropped"
+  },
+  "cost": { "DataForSEO": 0, "Anthropic": 0 },
+  "screenshots": {
+    "dir": "commerce-opportunity-engine/m9.1-screenshots",
+    "audit": "commerce-opportunity-engine/m9.1-screenshots/audit"
+  },
+  "status": "INTERNAL_PREVIEW",
+  "outreach": "none"
+}

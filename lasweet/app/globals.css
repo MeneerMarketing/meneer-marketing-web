@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/*
+ * Lá Sweet by Ela - brand tokens
+ * Primair: #6F0313 (bordeaux). Secundair: licht steenbeige (zacht, niet goud).
+ * Vormsysteem: boog (arch) voor hero-beeld, pill voor knoppen, 24px voor kaarten.
+ */
+
+@theme {
+  --color-cream: #f8f4ec;
+  --color-parchment: #f0ebe3;
+  --color-ink: #44392b;
+  --color-ink-soft: #7a6e5c;
+  --color-matcha: #6f0313;
+  --color-matcha-deep: #4a020d;
+  --color-matcha-mist: #f4e8ea;
+  --color-beige: #e5ddd4;
+  --color-beige-deep: #8a7f74;
+  --color-beige-mist: #f7f4ef;
+  --color-berry: #e5ddd4;
+}
+
+@theme inline {
+  --font-display: var(--font-dm-sans);
+  --font-logo: var(--font-bodoni);
+  --font-sans: var(--font-instrument);
+}
+
+.font-display {
+  font-optical-sizing: auto;
+}
+
+/* Nooit cursief: browser zet <em> standaard schuin */
+em {
+  font-style: normal;
+}
+
+::selection {
+  background: var(--color-matcha);
+  color: var(--color-cream);
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtiele verticale strepen, zoals op de menukaart van de zaak */
+.stripe-bg {
+  background-color: var(--color-parchment);
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-parchment) 0px,
+    var(--color-parchment) 44px,
+    #f4eee0 44px,
+    #f4eee0 88px
+  );
+}
+
+/* Gestreepte luifel, zoals het "Come in, we're open"-bord van de zaak */
+.awning-stripes {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-parchment) 0px,
+    var(--color-parchment) 22px,
+    var(--color-cream) 22px,
+    var(--color-cream) 44px
+  );
+}
+
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-x 40s linear infinite;
+  will-change: transform;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 22s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .spin-slow {
+    animation: none;
+  }
+}

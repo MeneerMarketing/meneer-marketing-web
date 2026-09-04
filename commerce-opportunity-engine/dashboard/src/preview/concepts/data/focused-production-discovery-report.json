@@ -1,0 +1,1850 @@
+{
+  "milestone": "M9.3.3",
+  "version": "FOCUSED_PRODUCTION_DISCOVERY_V1",
+  "runId": "3ba6271c-ed37-4570-bacc-95cd57170a9b",
+  "startedAt": "2026-08-14T17:31:22.915Z",
+  "finishedAt": "2026-08-14T17:40:41.395Z",
+  "classifier": {
+    "version": "v2.4-breadth-aware",
+    "scanned": 0,
+    "correctedThisPass": 0,
+    "correctedTotal": 47,
+    "revertedExclusions": 0,
+    "revertedDomains": [],
+    "flaggedForRecrawl": 0,
+    "gateRegression": "20/20",
+    "classifierRegression": "6/6",
+    "regressionCases": [
+      {
+        "label": "Internationaal specialistmerk: één niche, veel landversies",
+        "verdict": "SPECIALIST_WEBSHOP",
+        "passed": true,
+        "internationalPresenceScore": 100,
+        "retailerBreadthScore": 18
+      },
+      {
+        "label": "DTC merk met veel locales en smalle catalogus",
+        "verdict": "SPECIALIST_WEBSHOP",
+        "passed": true,
+        "internationalPresenceScore": 100,
+        "retailerBreadthScore": 0
+      },
+      {
+        "label": "Cross-category elektronicaketen met vestigingen",
+        "verdict": "MASS_RETAILER",
+        "passed": true,
+        "internationalPresenceScore": 25,
+        "retailerBreadthScore": 100
+      },
+      {
+        "label": "Grote cross-category sportretailer",
+        "verdict": "MASS_RETAILER",
+        "passed": true,
+        "internationalPresenceScore": 67,
+        "retailerBreadthScore": 100
+      },
+      {
+        "label": "Nederlandse focused specialist zonder internationale schaal",
+        "verdict": "SPECIALIST_WEBSHOP",
+        "passed": true,
+        "internationalPresenceScore": 8,
+        "retailerBreadthScore": 0
+      },
+      {
+        "label": "Breed assortiment zonder internationale schaal blijft mass retail",
+        "verdict": "MASS_RETAILER",
+        "passed": true,
+        "internationalPresenceScore": 8,
+        "retailerBreadthScore": 100
+      }
+    ]
+  },
+  "discovery": {
+    "branches": [
+      {
+        "archetypeId": "SLEEP_COMFORT",
+        "families": [
+          "ergonomic_pillows",
+          "premium_mattress_systems"
+        ],
+        "evidence": "M9.3.2: 51,5% prospect yield, beide families leverden APPROVED keywords met quality 59 en 64."
+      },
+      {
+        "archetypeId": "PET_TECH",
+        "families": [
+          "smart_litter_doors"
+        ],
+        "evidence": "M9.3.2: alleen de kattenbak-familie kwam in de buurt (MARGINAL, quality 31). Trackers en voerbakken waren retailer-gedomineerd."
+      }
+    ],
+    "parkedFamilies": [
+      {
+        "familyId": "sleep_tech",
+        "reason": "wake-up lights zijn elektronicaretail: 58% retailers"
+      },
+      {
+        "familyId": "pet_trackers",
+        "reason": "GPS trackers: 63% retailers en vergelijkers"
+      },
+      {
+        "familyId": "automatic_feeders",
+        "reason": "voerbakken: 59% retailers"
+      }
+    ],
+    "keywordsGenerated": 47,
+    "keywordsRejected": [
+      {
+        "keyword": "kussen op maat slaaphouding",
+        "familyId": "ergonomic_pillows",
+        "reason": "past in geen enkele productfamilie",
+        "source": "family_seed"
+      },
+      {
+        "keyword": "beste hoofdkussen zijslaper",
+        "familyId": "ergonomic_pillows",
+        "reason": "family_reject_token:beste",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "beste kussen zijslaper",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "beste hoofdkussen",
+        "familyId": "ergonomic_pillows",
+        "reason": "family_reject_token:beste",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "cozy kleurboek",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen nekpijn",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "hoofdkussen action",
+        "familyId": "ergonomic_pillows",
+        "reason": "family_reject_token:action",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "nekklachten kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "swiss sense kussen nekklachten",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "cozy kleurplaat",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen vulling",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "silvana hoofdkussen",
+        "familyId": "ergonomic_pillows",
+        "reason": "merkproduct trekt resellers: \"silvana\"",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "jysk traagschuim kussen",
+        "familyId": "ergonomic_pillows",
+        "reason": "family_reject_token:jysk",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen voor zijslapers",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "silvana traagschuim kussen",
+        "familyId": "ergonomic_pillows",
+        "reason": "merkproduct trekt resellers: \"silvana\"",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "tempur hoofdkussen",
+        "familyId": "ergonomic_pillows",
+        "reason": "merkproduct trekt resellers: \"tempur\"",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "karwei kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen karwei",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "opblaasbaar kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "hoofdkussen hema",
+        "familyId": "ergonomic_pillows",
+        "reason": "family_reject_token:hema",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "jysk hoofdkussen",
+        "familyId": "ergonomic_pillows",
+        "reason": "family_reject_token:jysk",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "rond kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen 45x45",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "auping kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen bruin",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen ligbed",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "tuinstoel met kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "blauw kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "koel kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "ligbed met kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kleurplaat cozy",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "lende kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "donzen kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "latex kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "gepersonaliseerde kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "hangstoel kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "butterfly kussen",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kleurboek cozy",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      },
+      {
+        "keyword": "kussen voor buikslaper",
+        "familyId": null,
+        "reason": "outside_active_families",
+        "source": "dataforseo_ideas"
+      }
+    ],
+    "keywordsTested": 20,
+    "keywordsApproved": 5,
+    "keywordsNotTested": [
+      "traagschuim hoofdkussen",
+      "wellpur traagschuim kussen",
+      "traagschuim kussen mline",
+      "hoofdkussen kopen",
+      "goed hoofdkussen",
+      "sissel hoofdkussen",
+      "dons hoofdkussen",
+      "hoofdkussen van cozysense",
+      "latex hoofdkussen",
+      "hoofdkussen stevig",
+      "kapok hoofdkussen",
+      "ganzendons hoofdkussen",
+      "hoofdkussen wol",
+      "hoofdkussen buikslaper",
+      "hoofdkussen kind",
+      "zacht hoofdkussen",
+      "hoofdkussen maten",
+      "hoofdkussen maat",
+      "maat hoofdkussen",
+      "bamboe hoofdkussen",
+      "kussenslopen hoofdkussen",
+      "hoofdkussen aanbieding",
+      "hoofdkussen hard",
+      "hoofdkussen latex",
+      "dik hoofdkussen",
+      "sleepmed traagschuim kussen",
+      "hoofdkussen formaat"
+    ],
+    "rawAdvertisers": 208,
+    "uniqueAdvertisers": 104,
+    "shoppingSellersResolved": 121,
+    "shoppingSellersUnresolved": 15,
+    "skippedForBudget": []
+  },
+  "keywords": [
+    {
+      "keyword": "ergonomisch hoofdkussen nekklachten",
+      "keywordId": "06a2409d-e32d-4a10-b452-6229b79b8401",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "family_seed",
+      "archetypeFit": 74,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "prospectingValue": 76,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 21,
+      "reason": "57% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 14,
+      "prospectEligible": 4,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "anwb.nl",
+        "bol.com",
+        "amazon.nl",
+        "ergokussens.nl",
+        "probrace.nl",
+        "quiesco.nl",
+        "bigshopper.nl",
+        "bcc.nl",
+        "swisssense.nl",
+        "ikea.com",
+        "shoparize.com",
+        "quincs.nl",
+        "dorsoo.com",
+        "priceradar.nl"
+      ],
+      "recoveredSellers": 9,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "matras op maat elektrisch bed",
+      "keywordId": "31cab3c9-bed7-4153-a76e-2b46308c111c",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "seed": "pocketvering matras zijslaper",
+      "generationSource": "family_seed",
+      "archetypeFit": 70,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 52,
+      "reason": null,
+      "rawAdvertisers": 14,
+      "prospectEligible": 8,
+      "approvedForDiscovery": true,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "morgenn.com",
+        "mattsleeps.com",
+        "swisssense.nl",
+        "grootbedden.nl",
+        "matrassenfabriekzwanenburg.nl",
+        "emma.nl",
+        "iboxspring.nl",
+        "zaansebedden.nl",
+        "schuimrubber.nl",
+        "kokbedden.nl",
+        "erkendmatras.nl",
+        "sleepfast.nl",
+        "boschbedding.nl"
+      ],
+      "recoveredSellers": 12,
+      "unresolvedSellers": [
+        "Matrasconcurrent",
+        "Kameo Sleep",
+        "totaalBED",
+        "Sgaap"
+      ]
+    },
+    {
+      "keyword": "automatische kattenbak app",
+      "keywordId": "7d6f2594-4b79-4b05-916c-0406823fcb24",
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "seed": "zelfreinigende kattenbak",
+      "generationSource": "family_seed",
+      "archetypeFit": 91,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 89,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 22,
+      "reason": "slechts 2 van 11 advertisers is merk of specialist",
+      "rawAdvertisers": 11,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "dierenapotheek.nl",
+        "bol.com",
+        "amazon.nl",
+        "kattoilet.nl",
+        "praxis.nl",
+        "pawiso.nl",
+        "kattenlaan.com",
+        "bestegeprijsd.nl",
+        "katdootje.nl",
+        "catlink.com",
+        "mediamarkt.nl"
+      ],
+      "recoveredSellers": 7,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "traagschuim kussen zijslaper",
+      "keywordId": "201514f4-8256-44e3-b149-0d127cca4927",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "family_seed",
+      "archetypeFit": 71,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 23,
+      "reason": "55% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 11,
+      "prospectEligible": 3,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "amazon.nl",
+        "dekbed-discounter.nl",
+        "ergokussens.nl",
+        "decathlon.nl",
+        "jysk.nl",
+        "bigshopper.nl",
+        "quincs.nl",
+        "sidepillow.nl",
+        "priceradar.nl",
+        "retoertje.nl"
+      ],
+      "recoveredSellers": 6,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "pocketvering matras zijslaper",
+      "keywordId": "df58f636-dbbb-4ed4-b686-8ea3fe4eeda0",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "seed": "pocketvering matras zijslaper",
+      "generationSource": "family_seed",
+      "archetypeFit": 67,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "prospectingValue": 70,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 59,
+      "reason": null,
+      "rawAdvertisers": 12,
+      "prospectEligible": 8,
+      "approvedForDiscovery": true,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "mline.nl",
+        "lidl.nl",
+        "kokbedden.nl",
+        "mattsleeps.com",
+        "swisssense.nl",
+        "boonstrabedden.nl",
+        "slaaploods.nl",
+        "beddenreus.nl",
+        "maanmatras.com",
+        "droommatras.nl",
+        "matrasfactory.nl"
+      ],
+      "recoveredSellers": 9,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "zelfreinigende kattenbak",
+      "keywordId": "cf4bd29f-a96c-46c5-a5df-f00d0e1c8c96",
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "seed": "zelfreinigende kattenbak",
+      "generationSource": "family_seed",
+      "archetypeFit": 88,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 87,
+      "searchVolume": null,
+      "status": "MARGINAL",
+      "serpQualityScore": 33,
+      "reason": "kwaliteitsscore 33 onder de 34, landschap te gemengd",
+      "rawAdvertisers": 14,
+      "prospectEligible": 6,
+      "approvedForDiscovery": true,
+      "cost": 0.004,
+      "domains": [
+        "kattoilet.nl",
+        "mediamarkt.nl",
+        "amazon.nl",
+        "bol.com",
+        "vergelijk.nl",
+        "welkekattenbak.nl",
+        "kieskeurig.nl",
+        "nuvona.eu",
+        "retoertje.nl",
+        "praxis.nl",
+        "bcc.nl",
+        "petree.nl",
+        "cat-elite.com",
+        "revoloo.nl"
+      ],
+      "recoveredSellers": 7,
+      "unresolvedSellers": [
+        "Viervoeter"
+      ]
+    },
+    {
+      "keyword": "nekkussen bij hernia nek",
+      "keywordId": "f32a7a46-33ed-4c59-81ee-417cecd31bdd",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "family_seed",
+      "archetypeFit": 71,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": null,
+      "status": "NO_SAMPLE",
+      "serpQualityScore": 0,
+      "reason": "geen advertisers in sample",
+      "rawAdvertisers": 0,
+      "prospectEligible": 0,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "traagschuim matras rugklachten",
+      "keywordId": "a5d3dfbd-14df-4f36-997c-82e49a3f146c",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "seed": "pocketvering matras zijslaper",
+      "generationSource": "family_seed",
+      "archetypeFit": 67,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "prospectingValue": 70,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 25,
+      "reason": "slechts 2 van 10 advertisers is merk of specialist",
+      "rawAdvertisers": 10,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "praxis.nl",
+        "lidl.nl",
+        "bol.com",
+        "mline.nl",
+        "amazon.nl",
+        "matrassenmaker.nl",
+        "thuiszorgwinkel.nl",
+        "schuimrubber.nl",
+        "bedopmaat.nl",
+        "ikea.com"
+      ],
+      "recoveredSellers": 3,
+      "unresolvedSellers": [
+        "Royal Health Foam",
+        "Nederlands Slaapcentrum",
+        "Slaapwelwinkel"
+      ]
+    },
+    {
+      "keyword": "zelfreinigende kattenbak grote kat",
+      "keywordId": "0efa34c3-798a-44ce-afec-c16a3e2d0b80",
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "seed": "zelfreinigende kattenbak",
+      "generationSource": "family_seed",
+      "archetypeFit": 88,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 87,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 15,
+      "reason": "60% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 10,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "kattoilet.nl",
+        "joybuy.nl",
+        "amazon.nl",
+        "vergelijkeven.nl",
+        "welkekattenbak.nl",
+        "shoparize.com",
+        "mediamarkt.nl",
+        "catlink.com",
+        "bcc.nl"
+      ],
+      "recoveredSellers": 4,
+      "unresolvedSellers": [
+        "Viervoeter"
+      ]
+    },
+    {
+      "keyword": "hoofdkussen verstelbare hoogte",
+      "keywordId": "6bf42507-4712-4643-b2ef-d18b78763fa2",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "family_seed",
+      "archetypeFit": 71,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 9,
+      "reason": "64% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 14,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "kruidvat.nl",
+        "amazon.nl",
+        "kieskeurig.nl",
+        "droommatras.nl",
+        "vergelijkeven.nl",
+        "lidl.nl",
+        "swisssense.nl",
+        "priceradar.nl",
+        "ribbi.nl",
+        "bigshopper.nl",
+        "ellasleeps.com",
+        "tommyteleshopping.com",
+        "kokbedden.nl"
+      ],
+      "recoveredSellers": 7,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "hybride matras pocketvering traagschuim",
+      "keywordId": "275c8420-4454-4aaf-b0cd-68cfd6e8b3d9",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "seed": "pocketvering matras zijslaper",
+      "generationSource": "family_seed",
+      "archetypeFit": 67,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 70,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 19,
+      "reason": "slechts 2 van 19 advertisers is merk of specialist",
+      "rawAdvertisers": 19,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "habitat-design.com",
+        "bol.com",
+        "rattantree.com",
+        "vente-unique.nl",
+        "praxis.nl",
+        "shop.vtwonen.nl",
+        "beslist.nl",
+        "laredoute.nl",
+        "beddencenter.nl",
+        "lidl.nl",
+        "mattsleeps.com",
+        "habitat.nl",
+        "beddenbriljant.nl",
+        "emma.nl",
+        "dreambedden.nl",
+        "ikea.com",
+        "beddenreus.nl",
+        "boxspringsnederland.nl",
+        "maisons.com"
+      ],
+      "recoveredSellers": 9,
+      "unresolvedSellers": [
+        "Kings and queens bedcollection",
+        "MM Furniture Group B.V."
+      ]
+    },
+    {
+      "keyword": "slimme kattenbak gewichtsmeting",
+      "keywordId": "bdb8cca6-b160-48c1-8590-40396e941322",
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "seed": "zelfreinigende kattenbak",
+      "generationSource": "family_seed",
+      "archetypeFit": 88,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 87,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 50,
+      "reason": null,
+      "rawAdvertisers": 13,
+      "prospectEligible": 7,
+      "approvedForDiscovery": true,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "kieskeurig.nl",
+        "kattoilet.nl",
+        "altijddier.nl",
+        "joybuy.nl",
+        "welhof.com",
+        "jcpets.com",
+        "petspride.nl",
+        "vantol.nl",
+        "innova-essentials.com",
+        "sediaxl.nl",
+        "cat-elite.com",
+        "mediamarkt.nl"
+      ],
+      "recoveredSellers": 8,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "orthopedisch kussen schouderklachten",
+      "keywordId": "7d90d04b-45e2-4d63-9550-408fd23103b3",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "family_seed",
+      "archetypeFit": 71,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": null,
+      "status": "MARGINAL",
+      "serpQualityScore": 24,
+      "reason": "specialist ratio 25% onder de 40% drempel",
+      "rawAdvertisers": 8,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "probrace.nl",
+        "amazon.nl",
+        "bcc.nl",
+        "comfycentre.com",
+        "lunelva.com",
+        "bigshopper.nl",
+        "medipreventie.nl"
+      ],
+      "recoveredSellers": 5,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "matras zwaar gewicht ondersteuning",
+      "keywordId": "d92b3684-767e-4cf0-a10b-4dbaf6ff143a",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "seed": "pocketvering matras zijslaper",
+      "generationSource": "family_seed",
+      "archetypeFit": 67,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 70,
+      "searchVolume": null,
+      "status": "NO_SAMPLE",
+      "serpQualityScore": 0,
+      "reason": "geen advertisers in sample",
+      "rawAdvertisers": 0,
+      "prospectEligible": 0,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "zelfreinigende kattenbak stil",
+      "keywordId": "289ff503-c51d-4508-a251-b591c7d92ffd",
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "seed": "zelfreinigende kattenbak",
+      "generationSource": "family_seed",
+      "archetypeFit": 88,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 87,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 31,
+      "reason": "57% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 14,
+      "prospectEligible": 6,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "kattoilet.nl",
+        "beslist.nl",
+        "amazon.nl",
+        "vergelijk.nl",
+        "petree.nl",
+        "bcc.nl",
+        "nuvona.eu",
+        "retoertje.nl",
+        "petsplace.nl",
+        "mediamarkt.nl",
+        "priceradar.nl",
+        "petspride.nl",
+        "revoloo.nl"
+      ],
+      "recoveredSellers": 9,
+      "unresolvedSellers": [
+        "Viervoeter"
+      ]
+    },
+    {
+      "keyword": "hoofdkussen",
+      "keywordId": "cc9731c0-c459-4d01-ba3f-1f4526f43153",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "dataforseo_ideas",
+      "archetypeFit": 71,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": 9900,
+      "status": "RETAILER_DOMINATED",
+      "serpQualityScore": 10,
+      "reason": "44% retailers in de sample",
+      "rawAdvertisers": 16,
+      "prospectEligible": 1,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "hema.nl",
+        "lidl.nl",
+        "kruidvat.nl",
+        "bol.com",
+        "beslist.nl",
+        "meubelo.nl",
+        "vergelijk.nl",
+        "swisssense.nl",
+        "cloudpillo.com",
+        "wehkamp.nl",
+        "eijerkamp.nl",
+        "kwantum.nl",
+        "megabed.nl",
+        "thehappybed.com",
+        "supersales.nl",
+        "ikea.com"
+      ],
+      "recoveredSellers": 9,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "boxspring op maat kopen",
+      "keywordId": "8cd07e82-65e1-4c20-a027-a615e2c571ec",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "seed": "pocketvering matras zijslaper",
+      "generationSource": "family_seed",
+      "archetypeFit": 65,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 69,
+      "searchVolume": null,
+      "status": "MARGINAL",
+      "serpQualityScore": 28,
+      "reason": "specialist ratio 29% onder de 40% drempel",
+      "rawAdvertisers": 7,
+      "prospectEligible": 2,
+      "approvedForDiscovery": true,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "makro.nl",
+        "beddenbriljant.nl",
+        "swisssense.nl",
+        "ikea.com",
+        "matrassenfabriekzwanenburg.nl",
+        "matrasconcurrent.nl"
+      ],
+      "recoveredSellers": 6,
+      "unresolvedSellers": [
+        "DER Bedding"
+      ]
+    },
+    {
+      "keyword": "hoofdkussen zijslaper",
+      "keywordId": "2c5e3dd7-60cf-4144-b838-18e945160b3b",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "dataforseo_ideas",
+      "archetypeFit": 71,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": 1900,
+      "status": "NO_SAMPLE",
+      "serpQualityScore": 0,
+      "reason": "geen advertisers in sample",
+      "rawAdvertisers": 0,
+      "prospectEligible": 0,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "traagschuim kussen",
+      "keywordId": "14aee99a-7ad6-4ede-9282-ff958fbd1a4d",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "dataforseo_ideas",
+      "archetypeFit": 71,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": 1900,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 27,
+      "reason": "slechts 2 van 13 advertisers is merk of specialist",
+      "rawAdvertisers": 13,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "ergokussens.nl",
+        "kruidvat.nl",
+        "vidaxl.nl",
+        "bol.com",
+        "matrassenfdm.nl",
+        "amazon.nl",
+        "dekbed-discounter.nl",
+        "jysk.nl",
+        "dreambedden.nl",
+        "medipreventie.nl",
+        "bestlife.nl",
+        "litalente.com",
+        "quincs.nl"
+      ],
+      "recoveredSellers": 6,
+      "unresolvedSellers": [
+        "Weids Wonen & Slapen",
+        "Royal Health Foam"
+      ]
+    },
+    {
+      "keyword": "cloudpillo hoofdkussen",
+      "keywordId": "8c10823e-57f4-4f0c-ab47-915191d4e8f9",
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "seed": "ergonomisch hoofdkussen nekklachten",
+      "generationSource": "dataforseo_ideas",
+      "archetypeFit": 71,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 73,
+      "searchVolume": 720,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 0,
+      "reason": "75% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 8,
+      "prospectEligible": 0,
+      "approvedForDiscovery": false,
+      "cost": 0.004,
+      "domains": [
+        "bol.com",
+        "amazon.nl",
+        "cloudpillo.com",
+        "silvanonest.com",
+        "supersales.nl",
+        "priceradar.nl",
+        "marktplaats.nl",
+        "shoparize.com"
+      ],
+      "recoveredSellers": 5,
+      "unresolvedSellers": []
+    }
+  ],
+  "funnel": {
+    "raw_advertisers": 208,
+    "prospect_eligible": 32,
+    "ecommerce_specialists": 31,
+    "focused_catalog": 13,
+    "own_brand": 12,
+    "strong_hero": 12,
+    "strong_prospect": 13
+  },
+  "funnelYieldPercent": {
+    "prospectYield": 30.8,
+    "specialistYield": 29.8,
+    "strongProspectYield": 12.5
+  },
+  "excludedRetailers": [
+    {
+      "domain": "matrassenfabriekzwanenburg.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "emma.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "kokbedden.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "lidl.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "mediamarkt.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "vergelijk.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "welkekattenbak.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "kieskeurig.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "praxis.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "bcc.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "makro.nl",
+      "prospectClass": "GENERAL_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "ikea.com",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "sediaxl.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    }
+  ],
+  "topProspects": [
+    {
+      "domain": "petree.nl",
+      "siteUrl": "https://petree.nl",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "zelfreinigende kattenbak",
+      "allKeywords": [
+        "zelfreinigende kattenbak",
+        "zelfreinigende kattenbak stil"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 27,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "27 productlinks geteld op de listing",
+        "27 producten: binnen de sweet spot voor een deep-dive PDP",
+        "smalle categoriestructuur"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 65,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Petree Cube Zelfreinigende Kattenbak Automatische Kattenbak Bedienen via de App",
+      "heroProductUrl": "https://petree.nl/products/petree-cube-zelfreinigende-kattenbak-black-edition",
+      "heroPrice": 249,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 82,
+      "currentPdpWeaknessProxy": 70,
+      "idealProspectPreScore": 78,
+      "preScoreEvidence": [
+        "eigen-merk signaal 65",
+        "SHOPIFY: goed te verbouwen platform",
+        "huidige PDP laat veel liggen",
+        "duidelijk heroproduct gevonden",
+        "27 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "nuvona.eu",
+      "siteUrl": "https://nuvona.eu",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "zelfreinigende kattenbak",
+      "allKeywords": [
+        "zelfreinigende kattenbak",
+        "zelfreinigende kattenbak stil"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 8,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "listing meldt 8 producten",
+        "8 producten: binnen de sweet spot voor een deep-dive PDP",
+        "smalle categoriestructuur"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 75,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Nuvona Zelfreinigende Kattenbak",
+      "heroProductUrl": "https://nuvona.eu",
+      "heroPrice": 179.95,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [
+        {
+          "title": "Ton zelfreinigende kattenbak",
+          "url": "https://nuvona.eu/products/nuvona-zelfreinigende-kattenbak-kopie",
+          "price": 69.95
+        }
+      ],
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 82,
+      "currentPdpWeaknessProxy": 48,
+      "idealProspectPreScore": 77,
+      "preScoreEvidence": [
+        "eigen-merk signaal 75",
+        "SHOPIFY: goed te verbouwen platform",
+        "duidelijk heroproduct gevonden",
+        "8 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "kattoilet.nl",
+      "siteUrl": "https://kattoilet.nl",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "zelfreinigende kattenbak",
+      "allKeywords": [
+        "zelfreinigende kattenbak",
+        "zelfreinigende kattenbak grote kat",
+        "slimme kattenbak gewichtsmeting",
+        "zelfreinigende kattenbak stil"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 38,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "listing meldt 38 producten",
+        "38 producten: binnen de sweet spot voor een deep-dive PDP"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 75,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "zelfreinigende kattenbak grote kat",
+          "slimme kattenbak gewichtsmeting",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": null
+      },
+      "heroProduct": "Zelfreinigende kattenbak Automatische kattenbak",
+      "heroProductUrl": "https://kattoilet.nl/products/zelfreinigende-kattenbak-wop-voordeel-set-automatisch",
+      "heroPrice": 179,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [
+        {
+          "title": "Wop Zelfreinigende kattenbak XXL set",
+          "url": "https://kattoilet.nl",
+          "price": 199
+        }
+      ],
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 79,
+      "currentPdpWeaknessProxy": 52,
+      "idealProspectPreScore": 74,
+      "preScoreEvidence": [
+        "eigen-merk signaal 75",
+        "SHOPIFY: goed te verbouwen platform",
+        "duidelijk heroproduct gevonden",
+        "38 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "cat-elite.com",
+      "siteUrl": "https://cat-elite.com",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "zelfreinigende kattenbak",
+      "allKeywords": [
+        "zelfreinigende kattenbak",
+        "slimme kattenbak gewichtsmeting"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 50,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "listing meldt 50 producten",
+        "50 producten: binnen de sweet spot voor een deep-dive PDP",
+        "122 categorielinks wijst op een brede winkel"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 75,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "slimme kattenbak gewichtsmeting"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Cat Elite Ease Automatische Kattenbak Zelfreinigend",
+      "heroProductUrl": "https://cat-elite.com/collections/onze-favorieten/products/ease-kattenbak",
+      "heroPrice": 189.95,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 75,
+      "currentPdpWeaknessProxy": 56,
+      "idealProspectPreScore": 70,
+      "preScoreEvidence": [
+        "eigen-merk signaal 75",
+        "SHOPIFY: goed te verbouwen platform",
+        "duidelijk heroproduct gevonden",
+        "50 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "erkendmatras.nl",
+      "siteUrl": "https://erkendmatras.nl",
+      "branch": "SLEEP_COMFORT",
+      "branchLabel": "Sleep & Comfort",
+      "sourceKeyword": "matras op maat elektrisch bed",
+      "allKeywords": [
+        "matras op maat elektrisch bed"
+      ],
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "platform": "UNKNOWN",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 17,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "17 productlinks geteld op de listing",
+        "17 producten: binnen de sweet spot voor een deep-dive PDP",
+        "smalle categoriestructuur"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 75,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "matras op maat elektrisch bed"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "200 x 210 Elektrische Boxspring met Matras Korting",
+      "heroProductUrl": "https://erkendmatras.nl/product/boxspring-extra-leverancier",
+      "heroPrice": 1895,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 81,
+      "currentPdpWeaknessProxy": 42,
+      "idealProspectPreScore": 69,
+      "preScoreEvidence": [
+        "eigen-merk signaal 75",
+        "17 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "revoloo.nl",
+      "siteUrl": "https://revoloo.nl",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "zelfreinigende kattenbak",
+      "allKeywords": [
+        "zelfreinigende kattenbak",
+        "zelfreinigende kattenbak stil"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 41,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "listing meldt 41 producten",
+        "41 producten: binnen de sweet spot voor een deep-dive PDP"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 50,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Revo-loo One Automatische Kattenbak Zelfreinigend Elektrische & Zelfreinigende Robot",
+      "heroProductUrl": "https://revoloo.nl",
+      "heroPrice": 244,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 79,
+      "currentPdpWeaknessProxy": null,
+      "idealProspectPreScore": 69,
+      "preScoreEvidence": [
+        "eigen-merk signaal 50",
+        "SHOPIFY: goed te verbouwen platform",
+        "duidelijk heroproduct gevonden",
+        "41 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "innova-essentials.com",
+      "siteUrl": "https://innova-essentials.com",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "slimme kattenbak gewichtsmeting",
+      "allKeywords": [
+        "slimme kattenbak gewichtsmeting"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 21,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "listing meldt 21 producten",
+        "21 producten: binnen de sweet spot voor een deep-dive PDP",
+        "49 categorielinks wijst op een brede winkel"
+      ],
+      "retailerBreadthScore": 18,
+      "internationalPresenceScore": 42,
+      "ownBrandSignal": 90,
+      "ownBrandEvidence": [
+        "merknaam in page title",
+        "eigen merknaam 13x op de homepage",
+        "eigen-merk taal in de copy"
+      ],
+      "googleAdsEvidence": {
+        "keywords": [
+          "slimme kattenbak gewichtsmeting"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Innova LitterBox Pro",
+      "heroProductUrl": "https://innova-essentials.com/products/innova%C2%AE-litterbox-pro-automatische-kattenbak-xxl-82l-zelfreinigende-kattenbak-inclusief-app-met-kattenbakmat-en-5-rollen-opvangzakjes",
+      "heroPrice": 279,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 74,
+      "currentPdpWeaknessProxy": 42,
+      "idealProspectPreScore": 69,
+      "preScoreEvidence": [
+        "eigen-merk signaal 90",
+        "SHOPIFY: goed te verbouwen platform",
+        "21 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "iboxspring.nl",
+      "siteUrl": "https://iboxspring.nl",
+      "branch": "SLEEP_COMFORT",
+      "branchLabel": "Sleep & Comfort",
+      "sourceKeyword": "matras op maat elektrisch bed",
+      "allKeywords": [
+        "matras op maat elektrisch bed"
+      ],
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 26,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "26 productlinks geteld op de listing",
+        "26 producten: binnen de sweet spot voor een deep-dive PDP",
+        "43 categorielinks wijst op een brede winkel"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 55,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "matras op maat elektrisch bed"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "iPremium Elektrische Boxspring – Complete Set met Ergonomische 7-Zone Matrassen + Gratis Split-Topmatras - 140 x 200 / Antraciet / Vlak",
+      "heroProductUrl": "https://iboxspring.nl/collections/boxsprings/products/elektrische-boxspring-ipremium-complete-set",
+      "heroPrice": 1490,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 74,
+      "currentPdpWeaknessProxy": 66,
+      "idealProspectPreScore": 67,
+      "preScoreEvidence": [
+        "eigen-merk signaal 55",
+        "SHOPIFY: goed te verbouwen platform",
+        "huidige PDP laat veel liggen",
+        "26 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "retoertje.nl",
+      "siteUrl": "https://retoertje.nl",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "zelfreinigende kattenbak",
+      "allKeywords": [
+        "zelfreinigende kattenbak",
+        "zelfreinigende kattenbak stil"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "UNKNOWN",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 25,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "listing meldt 25 producten",
+        "25 producten: binnen de sweet spot voor een deep-dive PDP",
+        "smalle categoriestructuur"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 55,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "PetSafe Scoopfree Zelfreinigende kattenbak met kap",
+      "heroProductUrl": "https://retoertje.nl",
+      "heroPrice": 154.83,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 82,
+      "currentPdpWeaknessProxy": null,
+      "idealProspectPreScore": 67,
+      "preScoreEvidence": [
+        "eigen-merk signaal 55",
+        "duidelijk heroproduct gevonden",
+        "25 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "maanmatras.com",
+      "siteUrl": "https://maanmatras.com",
+      "branch": "SLEEP_COMFORT",
+      "branchLabel": "Sleep & Comfort",
+      "sourceKeyword": "pocketvering matras zijslaper",
+      "allKeywords": [
+        "pocketvering matras zijslaper"
+      ],
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 47,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "47 productlinks geteld op de listing",
+        "47 producten: binnen de sweet spot voor een deep-dive PDP"
+      ],
+      "retailerBreadthScore": 18,
+      "internationalPresenceScore": 25,
+      "ownBrandSignal": 40,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "pocketvering matras zijslaper"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Matras Pocketvering Matras 25 cm Dik",
+      "heroProductUrl": "https://maanmatras.com/products/maan-matras-pocketvering",
+      "heroPrice": 119.95,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 79,
+      "currentPdpWeaknessProxy": 38,
+      "idealProspectPreScore": 65,
+      "preScoreEvidence": [
+        "SHOPIFY: goed te verbouwen platform",
+        "duidelijk heroproduct gevonden",
+        "47 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "jcpets.com",
+      "siteUrl": "https://jcpets.com",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "slimme kattenbak gewichtsmeting",
+      "allKeywords": [
+        "slimme kattenbak gewichtsmeting"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 168,
+      "catalogFocusScore": 55,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "168 productlinks geteld op de listing",
+        "168 producten: breder dan ideaal, nog werkbaar"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 55,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "slimme kattenbak gewichtsmeting"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Draadloze Drinkfontein",
+      "heroProductUrl": "https://www.jcpets.com/",
+      "heroPrice": 59.95,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [
+        {
+          "title": "JC Pets Automatische Kattenbak– Zelfreinigend",
+          "url": "https://www.jcpets.com/products/automatische-kattenbak",
+          "price": 249
+        }
+      ],
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 74,
+      "currentPdpWeaknessProxy": 52,
+      "idealProspectPreScore": 65,
+      "preScoreEvidence": [
+        "eigen-merk signaal 55",
+        "SHOPIFY: goed te verbouwen platform",
+        "duidelijk heroproduct gevonden"
+      ]
+    },
+    {
+      "domain": "grootbedden.nl",
+      "siteUrl": "https://grootbedden.nl",
+      "branch": "SLEEP_COMFORT",
+      "branchLabel": "Sleep & Comfort",
+      "sourceKeyword": "matras op maat elektrisch bed",
+      "allKeywords": [
+        "matras op maat elektrisch bed"
+      ],
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "platform": "UNKNOWN",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 15,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "listing meldt 15 producten",
+        "15 producten: binnen de sweet spot voor een deep-dive PDP"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 60,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "matras op maat elektrisch bed"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Electro Overbetuwe",
+      "heroProductUrl": "https://grootbedden.nl",
+      "heroPrice": 1950,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 77,
+      "currentPdpWeaknessProxy": null,
+      "idealProspectPreScore": 63,
+      "preScoreEvidence": [
+        "eigen-merk signaal 60",
+        "15 producten: precies de sweet spot"
+      ]
+    },
+    {
+      "domain": "petspride.nl",
+      "siteUrl": "https://petspride.nl",
+      "branch": "PET_TECH",
+      "branchLabel": "Pet Tech",
+      "sourceKeyword": "slimme kattenbak gewichtsmeting",
+      "allKeywords": [
+        "slimme kattenbak gewichtsmeting",
+        "zelfreinigende kattenbak stil"
+      ],
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "ECOMMERCE",
+      "estimatedCatalogSize": 32,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogEvidence": [
+        "32 productlinks geteld op de listing",
+        "32 producten: binnen de sweet spot voor een deep-dive PDP",
+        "48 categorielinks wijst op een brede winkel"
+      ],
+      "retailerBreadthScore": null,
+      "internationalPresenceScore": null,
+      "ownBrandSignal": 50,
+      "ownBrandEvidence": [],
+      "googleAdsEvidence": {
+        "keywords": [
+          "slimme kattenbak gewichtsmeting",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "heroProduct": "Slimme zelfreinigende kattenbak",
+      "heroProductUrl": "https://www.petspride.nl/collections/bestsellers/products/slimme-zelfreinigende-kattenbak-houtlook-preorder",
+      "heroPrice": 299.95,
+      "heroCurrency": "EUR",
+      "additionalHeroes": [],
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 75,
+      "currentPdpWeaknessProxy": 38,
+      "idealProspectPreScore": 62,
+      "preScoreEvidence": [
+        "eigen-merk signaal 50",
+        "SHOPIFY: goed te verbouwen platform",
+        "duidelijk heroproduct gevonden",
+        "32 producten: precies de sweet spot"
+      ]
+    }
+  ],
+  "cost": {
+    "dataForSeo": 0.204,
+    "dataForSeoCap": 0.2,
+    "keywordIdeas": 0.03,
+    "serp": 0.08,
+    "anthropic": 0,
+    "costPerStrongProspect": 0.0157,
+    "lightChecks": 11,
+    "catalogChecks": 30,
+    "heroResolutions": 18
+  },
+  "downstream": {
+    "croAudits": 0,
+    "conceptBriefs": 0,
+    "previews": 0,
+    "contactDiscovery": 0,
+    "outreach": 0
+  }
+}

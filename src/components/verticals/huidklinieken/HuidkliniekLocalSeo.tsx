@@ -18,17 +18,22 @@ const RESULT_COPY: Record<number, { title: string; snippet: string }> = {
   0: {
     title: "Jouw kliniek · huidkliniek in het centrum",
     snippet:
-      "Behandelingen, tarieven en een intake die je in twee tikken boekt. Precies wat iemand met deze zoekvraag zoekt.",
+      "Behandelingen, tarieven en Salonized-intake in twee tikken. Precies wat iemand met deze zoekvraag zoekt.",
   },
   1: {
-    title: "Huidverbetering · behandelingen & aanpak",
+    title: "Donkere kringen · behandeling & apparatuur",
     snippet:
-      "Eigen pagina voor huidverbetering, met protocol, verwachting en wat je kunt verwachten bij een eerste consult.",
+      "Landingspagina per huidprobleem. Jouw laser of peel gekoppeld aan het klachtbeeld, met lokale SEO.",
   },
   2: {
-    title: "Intake plannen · nieuwe patiënten",
+    title: "Acne behandeling · intake plannen",
     snippet:
-      "Directe afspraakroute vanaf Google. Zonder omweg via een contactformulier dat niemand invult.",
+      "Symptoom + stad + behandeling op één pagina. Direct door naar Salonized, zonder omweg via een contactformulier.",
+  },
+  3: {
+    title: "Laser huidverbetering · shop & nazorg",
+    snippet:
+      "Growth Partner: behandeling boeken én homecare kopen in dezelfde merkbeleving.",
   },
 };
 
@@ -65,9 +70,9 @@ export function HuidkliniekLocalSeo() {
               </span>
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Zoektermen als huidkliniek plus jouw stad, cosmetische kliniek en
-              laserontharing. Zo ziet het eruit als je huidkliniek website
-              meewerkt in plaats van tegenwerkt.
+              Huidkliniek plus stad is stap één. Local Growth pakt huidproblemen:
+              acne, pigment, roodheid gekoppeld aan jouw apparatuur. Zo ziet het
+              eruit als je site meewerkt in plaats of tegenwerkt.
             </p>
           </div>
         </Reveal>
@@ -211,16 +216,16 @@ export function HuidkliniekLocalSeo() {
           <div className="mt-10 grid gap-3 sm:grid-cols-3">
             {[
               {
-                title: "Techniek die meewerkt",
-                text: "Snelheid, schema, interne linking en een structuur die Google snapt.",
+                title: "Huidproblemen-landings",
+                text: "Acne, pigment, roodheid gekoppeld aan jouw apparatuur en behandeling.",
               },
               {
                 title: "Maps en profiel",
                 text: "Google Business Profile, categorieën, foto's en reviews op orde.",
               },
               {
-                title: "Blijven bijsturen",
-                text: "Search Console, rank tracking en maandelijkse aanpassingen bij Growth.",
+                title: "Shop + bijsturen",
+                text: "Growth Partner: Shopify homecare plus maandelijkse SEO- en ads-sturing.",
               },
             ].map((item) => (
               <div
@@ -238,8 +243,8 @@ export function HuidkliniekLocalSeo() {
           </div>
 
           <p className="mt-5 text-center text-sm leading-relaxed text-slate-500">
-            Bij Clinic Edition zit de injectie op huidkliniek [jouw stad]. Meer
-            over{" "}
+            Bij Clinic Edition zit de injectie op huidkliniek [jouw stad]. Local
+            Growth voegt huidproblemen-landings toe. Meer over{" "}
             <Link
               href="/diensten/local-seo"
               className="font-bold text-slate-900 underline decoration-[#FF5722]/40 underline-offset-2 hover:text-[#FF5722]"

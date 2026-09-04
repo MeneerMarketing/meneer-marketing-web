@@ -1,0 +1,1350 @@
+{
+  "milestone": "M9.3.4",
+  "runId": "f551700a-6e73-45f7-b626-bbbdd69b6a95",
+  "startedAt": "2026-08-14T18:28:38.477Z",
+  "finishedAt": "2026-08-14T18:29:14.841Z",
+  "preselection": {
+    "poolSize": 18,
+    "poolSources": [
+      "focused-production-discovery-report.json",
+      "focused-production-discovery-report.pass1.json"
+    ],
+    "maxAudits": 6,
+    "selected": 8,
+    "formula": "gewogen som van de M9.3.3 signalen minus penalties voor reseller-breedte, te grote catalogus, zwak materiaal, lage productwaarde en ketengedrag",
+    "candidates": [
+      {
+        "rank": 1,
+        "domain": "petree.nl",
+        "preselectionScore": 85,
+        "idealPreScore": 78,
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogBand": "ideaal",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 78",
+          "mostly own brand",
+          "catalogus 27 (ideaal)",
+          "hero Petree Cube Zelfreinigende Kattenbak Automatische Kattenbak Bedienen via de App €249",
+          "assets 100",
+          "deep-dive 82"
+        ],
+        "components": {
+          "idealPreScore": 78,
+          "ownBrandSignal": 65,
+          "catalogFocus": 92,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 92,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 82,
+          "googleAdsEvidence": 71,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 2,
+        "domain": "nuvona.eu",
+        "preselectionScore": 84,
+        "idealPreScore": 77,
+        "commerceModel": "DTC_OWN_BRAND",
+        "catalogBand": "ideaal",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 77",
+          "dtc own brand",
+          "catalogus 8 (ideaal)",
+          "hero Nuvona Zelfreinigende Kattenbak €179.95",
+          "assets 100",
+          "deep-dive 82"
+        ],
+        "components": {
+          "idealPreScore": 77,
+          "ownBrandSignal": 75,
+          "catalogFocus": 92,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 82,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 82,
+          "googleAdsEvidence": 53,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 3,
+        "domain": "kattoilet.nl",
+        "preselectionScore": 83,
+        "idealPreScore": 74,
+        "commerceModel": "DTC_OWN_BRAND",
+        "catalogBand": "sterk",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 74",
+          "dtc own brand",
+          "catalogus 38 (sterk)",
+          "hero Zelfreinigende kattenbak Automatische kattenbak €179",
+          "assets 100",
+          "deep-dive 79"
+        ],
+        "components": {
+          "idealPreScore": 74,
+          "ownBrandSignal": 75,
+          "catalogFocus": 80,
+          "catalogSweetSpot": 90,
+          "heroProductValue": 82,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 79,
+          "googleAdsEvidence": 100,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 4,
+        "domain": "erkendmatras.nl",
+        "preselectionScore": 81,
+        "idealPreScore": 69,
+        "commerceModel": "DTC_OWN_BRAND",
+        "catalogBand": "ideaal",
+        "heroFromReport": false,
+        "selected": false,
+        "skipReason": "hero zonder betrouwbare product-URL",
+        "penalties": [],
+        "reasons": [
+          "pre-score 69",
+          "dtc own brand",
+          "catalogus 17 (ideaal)",
+          "hero 200 x 210 Elektrische Boxspring met Matras Korting €1895",
+          "assets 90",
+          "deep-dive 81"
+        ],
+        "components": {
+          "idealPreScore": 69,
+          "ownBrandSignal": 75,
+          "catalogFocus": 92,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 100,
+          "assetReadinessProxy": 90,
+          "deepDiveFitProxy": 81,
+          "googleAdsEvidence": 53,
+          "platformFit": 45
+        }
+      },
+      {
+        "rank": 5,
+        "domain": "cellavi.nl",
+        "preselectionScore": 81,
+        "idealPreScore": 74,
+        "commerceModel": "DTC_OWN_BRAND",
+        "catalogBand": "sterk",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 74",
+          "dtc own brand",
+          "catalogus 32 (sterk)",
+          "hero Cellavi Kattenbak Zelfreinigend– Automatische Kattenbak – XXL – Voor Grote Katten €194.99",
+          "assets 100",
+          "deep-dive 79"
+        ],
+        "components": {
+          "idealPreScore": 74,
+          "ownBrandSignal": 75,
+          "catalogFocus": 80,
+          "catalogSweetSpot": 90,
+          "heroProductValue": 82,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 79,
+          "googleAdsEvidence": 53,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 6,
+        "domain": "quincs.nl",
+        "preselectionScore": 81,
+        "idealPreScore": 74,
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogBand": "ideaal",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 74",
+          "mostly own brand",
+          "catalogus 22 (ideaal)",
+          "hero Quincs ergonomisch hoofdkussen vlinderkussen hoofdkussen nekklachten orthopedisch kussen €59.95",
+          "assets 100",
+          "deep-dive 81"
+        ],
+        "components": {
+          "idealPreScore": 74,
+          "ownBrandSignal": 65,
+          "catalogFocus": 92,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 66,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 81,
+          "googleAdsEvidence": 71,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 7,
+        "domain": "kameosleep.nl",
+        "preselectionScore": 81,
+        "idealPreScore": 72,
+        "commerceModel": "MIXED",
+        "catalogBand": "ideaal",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 72",
+          "mixed",
+          "catalogus 21 (ideaal)",
+          "hero Kameo Flex aanpasbaar Matras €339.5",
+          "assets 100",
+          "deep-dive 81"
+        ],
+        "components": {
+          "idealPreScore": 72,
+          "ownBrandSignal": 50,
+          "catalogFocus": 92,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 92,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 81,
+          "googleAdsEvidence": 71,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 8,
+        "domain": "innova-essentials.com",
+        "preselectionScore": 80,
+        "idealPreScore": 69,
+        "commerceModel": "DTC_OWN_BRAND",
+        "catalogBand": "ideaal",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 69",
+          "dtc own brand",
+          "catalogus 21 (ideaal)",
+          "hero Innova LitterBox Pro €279",
+          "assets 90",
+          "deep-dive 74"
+        ],
+        "components": {
+          "idealPreScore": 69,
+          "ownBrandSignal": 90,
+          "catalogFocus": 62,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 92,
+          "assetReadinessProxy": 90,
+          "deepDiveFitProxy": 74,
+          "googleAdsEvidence": 53,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 9,
+        "domain": "cat-elite.com",
+        "preselectionScore": 79,
+        "idealPreScore": 70,
+        "commerceModel": "DTC_OWN_BRAND",
+        "catalogBand": "sterk",
+        "heroFromReport": true,
+        "selected": true,
+        "skipReason": null,
+        "penalties": [],
+        "reasons": [
+          "pre-score 70",
+          "dtc own brand",
+          "catalogus 50 (sterk)",
+          "hero Cat Elite Ease Automatische Kattenbak Zelfreinigend €189.95",
+          "assets 100",
+          "deep-dive 75"
+        ],
+        "components": {
+          "idealPreScore": 70,
+          "ownBrandSignal": 75,
+          "catalogFocus": 62,
+          "catalogSweetSpot": 90,
+          "heroProductValue": 82,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 75,
+          "googleAdsEvidence": 71,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 10,
+        "domain": "iboxspring.nl",
+        "preselectionScore": 75,
+        "idealPreScore": 67,
+        "commerceModel": "MIXED",
+        "catalogBand": "ideaal",
+        "heroFromReport": true,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [],
+        "reasons": [
+          "pre-score 67",
+          "mixed",
+          "catalogus 26 (ideaal)",
+          "hero iPremium Elektrische Boxspring – Complete Set met Ergonomische 7-Zone Matrassen + Gratis Split-Topmatras - 140 x 200 / Antraciet / Vlak €1490",
+          "assets 90",
+          "deep-dive 74"
+        ],
+        "components": {
+          "idealPreScore": 67,
+          "ownBrandSignal": 55,
+          "catalogFocus": 62,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 100,
+          "assetReadinessProxy": 90,
+          "deepDiveFitProxy": 74,
+          "googleAdsEvidence": 53,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 11,
+        "domain": "petspride.nl",
+        "preselectionScore": 74,
+        "idealPreScore": 62,
+        "commerceModel": "MIXED",
+        "catalogBand": "sterk",
+        "heroFromReport": true,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [],
+        "reasons": [
+          "pre-score 62",
+          "mixed",
+          "catalogus 32 (sterk)",
+          "hero Slimme zelfreinigende kattenbak €299.95",
+          "assets 100",
+          "deep-dive 75"
+        ],
+        "components": {
+          "idealPreScore": 62,
+          "ownBrandSignal": 50,
+          "catalogFocus": 62,
+          "catalogSweetSpot": 90,
+          "heroProductValue": 92,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 75,
+          "googleAdsEvidence": 71,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 12,
+        "domain": "maanmatras.com",
+        "preselectionScore": 56,
+        "idealPreScore": 65,
+        "commerceModel": "SPECIALIST_RESELLER",
+        "catalogBand": "sterk",
+        "heroFromReport": true,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [
+          {
+            "reason": "reseller-heavy (eigen merk 40)",
+            "points": 18
+          }
+        ],
+        "reasons": [
+          "pre-score 65",
+          "specialist reseller",
+          "catalogus 47 (sterk)",
+          "hero Matras Pocketvering Matras 25 cm Dik €119.95",
+          "assets 100",
+          "deep-dive 79"
+        ],
+        "components": {
+          "idealPreScore": 65,
+          "ownBrandSignal": 40,
+          "catalogFocus": 80,
+          "catalogSweetSpot": 90,
+          "heroProductValue": 82,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 79,
+          "googleAdsEvidence": 53,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 13,
+        "domain": "jcpets.com",
+        "preselectionScore": 48,
+        "idealPreScore": 65,
+        "commerceModel": "MIXED",
+        "catalogBand": "te breed",
+        "heroFromReport": false,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [
+          {
+            "reason": "catalogus te groot (168)",
+            "points": 16
+          }
+        ],
+        "reasons": [
+          "pre-score 65",
+          "mixed",
+          "catalogus 168 (te breed)",
+          "hero Draadloze Drinkfontein €59.95",
+          "assets 100",
+          "deep-dive 74"
+        ],
+        "components": {
+          "idealPreScore": 65,
+          "ownBrandSignal": 55,
+          "catalogFocus": 55,
+          "catalogSweetSpot": 30,
+          "heroProductValue": 66,
+          "assetReadinessProxy": 100,
+          "deepDiveFitProxy": 74,
+          "googleAdsEvidence": 53,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 14,
+        "domain": "revoloo.nl",
+        "preselectionScore": 44,
+        "idealPreScore": 69,
+        "commerceModel": "MIXED",
+        "catalogBand": "sterk",
+        "heroFromReport": false,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [
+          {
+            "reason": "te weinig materiaal (asset readiness 0)",
+            "points": 22
+          }
+        ],
+        "reasons": [
+          "pre-score 69",
+          "mixed",
+          "catalogus 41 (sterk)",
+          "hero Revo-loo One Automatische Kattenbak Zelfreinigend Elektrische & Zelfreinigende Robot €244",
+          "assets ?",
+          "deep-dive 79"
+        ],
+        "components": {
+          "idealPreScore": 69,
+          "ownBrandSignal": 50,
+          "catalogFocus": 80,
+          "catalogSweetSpot": 90,
+          "heroProductValue": 92,
+          "assetReadinessProxy": 0,
+          "deepDiveFitProxy": 79,
+          "googleAdsEvidence": 71,
+          "platformFit": 100
+        }
+      },
+      {
+        "rank": 15,
+        "domain": "retoertje.nl",
+        "preselectionScore": 44,
+        "idealPreScore": 67,
+        "commerceModel": "MIXED",
+        "catalogBand": "ideaal",
+        "heroFromReport": false,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [
+          {
+            "reason": "te weinig materiaal (asset readiness 0)",
+            "points": 22
+          }
+        ],
+        "reasons": [
+          "pre-score 67",
+          "mixed",
+          "catalogus 25 (ideaal)",
+          "hero PetSafe Scoopfree Zelfreinigende kattenbak met kap €154.83",
+          "assets ?",
+          "deep-dive 82"
+        ],
+        "components": {
+          "idealPreScore": 67,
+          "ownBrandSignal": 55,
+          "catalogFocus": 92,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 82,
+          "assetReadinessProxy": 0,
+          "deepDiveFitProxy": 82,
+          "googleAdsEvidence": 71,
+          "platformFit": 45
+        }
+      },
+      {
+        "rank": 16,
+        "domain": "grootbedden.nl",
+        "preselectionScore": 43,
+        "idealPreScore": 63,
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogBand": "ideaal",
+        "heroFromReport": false,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [
+          {
+            "reason": "te weinig materiaal (asset readiness 0)",
+            "points": 22
+          }
+        ],
+        "reasons": [
+          "pre-score 63",
+          "mostly own brand",
+          "catalogus 15 (ideaal)",
+          "hero Electro Overbetuwe €1950",
+          "assets ?",
+          "deep-dive 77"
+        ],
+        "components": {
+          "idealPreScore": 63,
+          "ownBrandSignal": 60,
+          "catalogFocus": 80,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 100,
+          "assetReadinessProxy": 0,
+          "deepDiveFitProxy": 77,
+          "googleAdsEvidence": 53,
+          "platformFit": 45
+        }
+      },
+      {
+        "rank": 17,
+        "domain": "comfycentre.com",
+        "preselectionScore": 43,
+        "idealPreScore": 71,
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "catalogBand": "ideaal",
+        "heroFromReport": false,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [
+          {
+            "reason": "te weinig materiaal (asset readiness 0)",
+            "points": 22
+          }
+        ],
+        "reasons": [
+          "pre-score 71",
+          "mostly own brand",
+          "catalogus 23 (ideaal)",
+          "hero ComfyCentre Hoofdkussen Traagschuim Kussen Tegen Nekpijn en €59.95",
+          "assets ?",
+          "deep-dive 78"
+        ],
+        "components": {
+          "idealPreScore": 71,
+          "ownBrandSignal": 65,
+          "catalogFocus": 80,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 66,
+          "assetReadinessProxy": 0,
+          "deepDiveFitProxy": 78,
+          "googleAdsEvidence": 53,
+          "platformFit": 82
+        }
+      },
+      {
+        "rank": 18,
+        "domain": "dierenapotheek.nl",
+        "preselectionScore": 25,
+        "idealPreScore": 72,
+        "commerceModel": "MIXED",
+        "catalogBand": "ideaal",
+        "heroFromReport": false,
+        "selected": false,
+        "skipReason": "buiten de audit-limiet",
+        "penalties": [
+          {
+            "reason": "te weinig materiaal (asset readiness 0)",
+            "points": 22
+          },
+          {
+            "reason": "lage productwaarde (€19.95)",
+            "points": 14
+          }
+        ],
+        "reasons": [
+          "pre-score 72",
+          "mixed",
+          "catalogus 8 (ideaal)",
+          "hero PETLUX - Automatische kattenbak V2 - met App €19.95",
+          "assets ?",
+          "deep-dive 81"
+        ],
+        "components": {
+          "idealPreScore": 72,
+          "ownBrandSignal": 55,
+          "catalogFocus": 92,
+          "catalogSweetSpot": 96,
+          "heroProductValue": 22,
+          "assetReadinessProxy": 0,
+          "deepDiveFitProxy": 81,
+          "googleAdsEvidence": 53,
+          "platformFit": 82
+        }
+      }
+    ]
+  },
+  "audits": [
+    {
+      "domain": "petree.nl",
+      "rank": 1,
+      "preselectionScore": 85,
+      "branch": "Pet Tech",
+      "family": "Zelfreinigende en slimme kattenbakken",
+      "category": "Pet Tech · Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "catalogEstimate": 27,
+      "catalogFocus": 92,
+      "heroProduct": "Petree Cube Zelfreinigende Kattenbak Automatische Kattenbak Bedienen via de App",
+      "heroUrl": "https://petree.nl/products/petree-cube-zelfreinigende-kattenbak-black-edition",
+      "heroPrice": 249,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "auditOutcome": "AUDITED",
+      "auditSkipReason": null,
+      "pageHealth": "HEALTHY",
+      "currentPdpQuality": 58,
+      "visualQuality": 78,
+      "buyblockQuality": 38,
+      "storytellingQuality": 75,
+      "mediaQuality": 68,
+      "deepDiveQuality": 82,
+      "mobileQuality": 32,
+      "assetReadiness": 81,
+      "commercialSignal": 75,
+      "transformation": 91,
+      "contrastRoom": 40,
+      "contrastCapability": 78,
+      "conceptContrast": 38,
+      "contrastBand": "LAAG",
+      "contrastCeiling": "visueel al sterk",
+      "deepDiveFit": 100,
+      "economicFit": 100,
+      "salesFit": 72,
+      "trueSalesDesignScore": 65,
+      "confidence": 92,
+      "auditConfidence": 92,
+      "gatePassed": false,
+      "gateBlockers": [
+        "concept contrast te laag (38 < 62)"
+      ],
+      "gateWarnings": [
+        "volwassenheid niet gemeten (nog geen qualification pass)"
+      ],
+      "leaks": [
+        {
+          "severity": "CRITICAL",
+          "title": "Intrusive popup blocks critical product information above fold",
+          "evidence": "On both mobile and desktop, a full-screen compatibility check popup ('Past de Petree Cube v2 bij jouw kat?') appears immediately, completely hiding the product, price, and buy button. Users cannot access core purchase information without closing or completing the quiz."
+        },
+        {
+          "severity": "CRITICAL",
+          "title": "No visible price or primary CTA above the fold on mobile",
+          "evidence": "Mobile screenshot shows popup covering entire viewport. Behind it, the product title is visible but no price indicator or 'Add to Cart' button can be seen. Price only appears as '€279,-' with strikethrough '€399,-' below the popup, requiring scroll after dismissal."
+        },
+        {
+          "severity": "HIGH",
+          "title": "Primary CTA text is unclear and non-actionable",
+          "evidence": "The extracted primary CTA reads 'Vandaag besteld? Morgen in huis! caret-down' — this is a shipping USP, not a purchase button. Actual buy button appears to be further down. The 'Bespaar €120' badge is visible but not the main action trigger."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Missing review count and star rating in buy block",
+          "evidence": "Structured data shows 'reviews': null, 'rating': null in ABOVE_THE_FOLD. While reviews exist lower on page, there's no visible star rating or review count near product title/price on mobile or desktop first screen."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Promotional urgency lacks context and credibility",
+          "evidence": "Countdown timer shows '04u 12m 32s' with 'Summer Sale - Tot €150 korting' but no clear end date, stock indicator, or reason for urgency. 'Preorder-batch 21% beschikbaar' visible on desktop but not explained in context."
+        }
+      ],
+      "anthropicCost": 0.053601
+    },
+    {
+      "domain": "nuvona.eu",
+      "rank": 2,
+      "preselectionScore": 84,
+      "branch": "Pet Tech",
+      "family": "Zelfreinigende en slimme kattenbakken",
+      "category": "Pet Tech · Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "commerceModel": "DTC_OWN_BRAND",
+      "catalogEstimate": 8,
+      "catalogFocus": 92,
+      "heroProduct": "Nuvona Zelfreinigende Kattenbak",
+      "heroUrl": "https://nuvona.eu/products/nuvona-zelfreinigende-kattenbak-kopie",
+      "heroPrice": 179.95,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "auditOutcome": "AUDITED",
+      "auditSkipReason": null,
+      "pageHealth": "HEALTHY",
+      "currentPdpQuality": 60,
+      "visualQuality": 72,
+      "buyblockQuality": 65,
+      "storytellingQuality": 48,
+      "mediaQuality": 52,
+      "deepDiveQuality": 58,
+      "mobileQuality": 62,
+      "assetReadiness": 65,
+      "commercialSignal": 75,
+      "transformation": 91,
+      "contrastRoom": 38,
+      "contrastCapability": 74,
+      "conceptContrast": 41,
+      "contrastBand": "LAAG",
+      "contrastCeiling": null,
+      "deepDiveFit": 100,
+      "economicFit": 100,
+      "salesFit": 71,
+      "trueSalesDesignScore": 66,
+      "confidence": 92,
+      "auditConfidence": 92,
+      "gatePassed": false,
+      "gateBlockers": [
+        "concept contrast te laag (41 < 62)"
+      ],
+      "gateWarnings": [
+        "volwassenheid niet gemeten (nog geen qualification pass)"
+      ],
+      "leaks": [
+        {
+          "severity": "HIGH",
+          "title": "No product reviews or star rating displayed",
+          "evidence": "Data shows 'reviews': null, 'rating': null in ATF. JSON mentions 'klanten' and 'ervaring' in testimonials but no visible star rating or review count in screenshots"
+        },
+        {
+          "severity": "HIGH",
+          "title": "Critical product information hidden below fold",
+          "evidence": "Above fold only shows product image, title, price and quantity selector. Key selling points (app connectivity, sensor safety, automatic cleaning cycle) only mentioned in FAQ section further down"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Weak CTA copy lacks urgency or value",
+          "evidence": "Primary CTA reads 'Toevoegen aan winkelwagen' - generic add to cart. Discount badge shows 'Bespaar €119,05' but no time limitation or stock scarcity mentioned"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Missing lifestyle context and usage demonstration",
+          "evidence": "Product gallery shows 6 product-only images (white background studio shots). No images of cats using it, size comparison with regular litter box, or home environment integration"
+        },
+        {
+          "severity": "LOW",
+          "title": "Vague shipping threshold creates confusion",
+          "evidence": "Trust badge states 'Gratis verzending vanaf €25' but product costs €179.95. This creates unnecessary cognitive load - is shipping free or not for THIS product?"
+        }
+      ],
+      "anthropicCost": 0.042243
+    },
+    {
+      "domain": "kattoilet.nl",
+      "rank": 3,
+      "preselectionScore": 83,
+      "branch": "Pet Tech",
+      "family": "Zelfreinigende en slimme kattenbakken",
+      "category": "Pet Tech · Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "commerceModel": "DTC_OWN_BRAND",
+      "catalogEstimate": 38,
+      "catalogFocus": 80,
+      "heroProduct": "Zelfreinigende kattenbak Automatische kattenbak",
+      "heroUrl": "https://kattoilet.nl/products/zelfreinigende-kattenbak-wop-voordeel-set-automatisch",
+      "heroPrice": 179,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "zelfreinigende kattenbak grote kat",
+          "slimme kattenbak gewichtsmeting",
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": null
+      },
+      "auditOutcome": "AUDITED",
+      "auditSkipReason": null,
+      "pageHealth": "HEALTHY",
+      "currentPdpQuality": 50,
+      "visualQuality": 52,
+      "buyblockQuality": 48,
+      "storytellingQuality": 42,
+      "mediaQuality": 46,
+      "deepDiveQuality": 58,
+      "mobileQuality": 35,
+      "assetReadiness": 69,
+      "commercialSignal": 72,
+      "transformation": 97,
+      "contrastRoom": 51,
+      "contrastCapability": 73,
+      "conceptContrast": 46,
+      "contrastBand": "GEMIDDELD",
+      "contrastCeiling": null,
+      "deepDiveFit": 100,
+      "economicFit": 100,
+      "salesFit": 73,
+      "trueSalesDesignScore": 69,
+      "confidence": 92,
+      "auditConfidence": 92,
+      "gatePassed": false,
+      "gateBlockers": [
+        "concept contrast te laag (46 < 62)"
+      ],
+      "gateWarnings": [
+        "volwassenheid niet gemeten (nog geen qualification pass)"
+      ],
+      "leaks": [
+        {
+          "severity": "CRITICAL",
+          "title": "Price completely hidden on mobile above fold",
+          "evidence": "Mobile screenshot shows product image, title, and CTA visible but no price whatsoever in first viewport. Desktop shows €199,00 EUR with €349,00 strikethrough, but mobile user cannot see pricing without scrolling"
+        },
+        {
+          "severity": "HIGH",
+          "title": "Generic CTA lacks urgency despite promotional context",
+          "evidence": "CTA reads 'Aan winkelwagen toevoegen' (mobile) and 'Aan winkelwagen toevoegen' (desktop green button). Page has 'EXTRA KORTING!', 'BEST SELLER', 'ZOMER SALE', 'Nu op voorraad!' signals but CTA is completely neutral"
+        },
+        {
+          "severity": "HIGH",
+          "title": "Weak product storytelling and benefit communication",
+          "evidence": "Subtitle is promotional ('VOORDEEL set van NL & BE. Morgen in huis...') but doesn't explain what makes this self-cleaning litter box better. No visible feature bullets, benefit list, or problem-solution framing above fold. Desktop shows 'ZELFREINIGENDE KATTENBAK XXL' headline but storytelling starts below fold"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Trust badges lack context and hierarchy",
+          "evidence": "Trust elements mentioned: 'gratis verzending', '30 dagen', 'garantie', 'klantenservice', 'trustpilot'. Desktop shows 'Reviews: Uitstekend' accordion but no visible star rating or review count in buyblock. Mobile shows fragmented trust signals in delivery text"
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Product imagery lacks educational/lifestyle context",
+          "evidence": "Product media shows complete set bundle with accessories (litter, mat, waste bin, tofu litter bags) but all images appear to be packshot/studio style. No visible lifestyle imagery, size demonstration, or 'how it works' visual storytelling in gallery"
+        }
+      ],
+      "anthropicCost": 0.0438
+    },
+    {
+      "domain": "cellavi.nl",
+      "rank": 5,
+      "preselectionScore": 81,
+      "branch": "Pet Tech",
+      "family": "Zelfreinigende en slimme kattenbakken",
+      "category": "Pet Tech · Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "commerceModel": "DTC_OWN_BRAND",
+      "catalogEstimate": 32,
+      "catalogFocus": 80,
+      "heroProduct": "Cellavi Kattenbak Zelfreinigend– Automatische Kattenbak – XXL – Voor Grote Katten",
+      "heroUrl": "https://cellavi.nl/products/cellavi-kattenbak-zelfreinigend-automatische-kattenbak-xxl-voor-grote-katten-met-app-en-touchscreen-65l",
+      "heroPrice": 194.99,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak stil"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "auditOutcome": "AUDITED",
+      "auditSkipReason": null,
+      "pageHealth": "HEALTHY",
+      "currentPdpQuality": 73,
+      "visualQuality": 72,
+      "buyblockQuality": 68,
+      "storytellingQuality": 78,
+      "mediaQuality": 75,
+      "deepDiveQuality": 70,
+      "mobileQuality": 62,
+      "assetReadiness": 81,
+      "commercialSignal": 75,
+      "transformation": 47,
+      "contrastRoom": 28,
+      "contrastCapability": 78,
+      "conceptContrast": 33,
+      "contrastBand": "LAAG",
+      "contrastCeiling": null,
+      "deepDiveFit": 100,
+      "economicFit": 100,
+      "salesFit": 48,
+      "trueSalesDesignScore": 56,
+      "confidence": 92,
+      "auditConfidence": 92,
+      "gatePassed": false,
+      "gateBlockers": [
+        "huidige PDP te sterk (73 > 70)",
+        "transformatie te laag (47 < 70)",
+        "concept contrast te laag (33 < 62)"
+      ],
+      "gateWarnings": [
+        "volwassenheid niet gemeten (nog geen qualification pass)"
+      ],
+      "leaks": [
+        {
+          "severity": "CRITICAL",
+          "title": "Critically low social proof volume (1 review for €194 product)",
+          "evidence": "5-star rating shown but only '1 beoordeling' visible on mobile and desktop. High-ticket product (€194.99) with premium positioning but minimal customer validation."
+        },
+        {
+          "severity": "HIGH",
+          "title": "Mobile first viewport lacks price/CTA visibility",
+          "evidence": "On mobile (390px), user sees announcement bar, large hero image, and gallery thumbnails. Price (€194.99) and CTA appear below the fold after scrolling past full product image and breadcrumb."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Missing price anchoring and value justification for premium product",
+          "evidence": "€194.99 shown with -22% discount (was €249.99), but no context on savings over time (cat litter reduction, time saved), competitor comparison, or ROI framing for this premium category."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Weak call-to-action language for high-ticket considered purchase",
+          "evidence": "Desktop CTA is 'IN WINKELWAGEN' in yellow/gold button. Mobile shows 'In winkelwagen'. Generic ecommerce language for €195 product requiring significant consideration and trust-building."
+        },
+        {
+          "severity": "LOW",
+          "title": "Desktop buyblock lacks urgency and scarcity signals",
+          "evidence": "Desktop shows price, 3 USPs, payment badges, delivery info, but no stock indicator, limited-time discount countdown, or purchase momentum signals. Static presentation for discounted premium product."
+        }
+      ],
+      "anthropicCost": 0.043737
+    },
+    {
+      "domain": "quincs.nl",
+      "rank": 6,
+      "preselectionScore": 81,
+      "branch": "Sleep & Comfort",
+      "family": "Ergonomische kussens",
+      "category": "Sleep & Comfort · Ergonomische kussens",
+      "platform": "SHOPIFY",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "catalogEstimate": 22,
+      "catalogFocus": 92,
+      "heroProduct": "Quincs ergonomisch hoofdkussen vlinderkussen hoofdkussen nekklachten orthopedisch kussen",
+      "heroUrl": "https://quincs.nl/products/quincs-vlinderkussen",
+      "heroPrice": 59.95,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "orthopedisch kussen schouderklachten",
+          "hoofdkussen zijslaper"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "auditOutcome": "SKIPPED_PAGE_HEALTH",
+      "auditSkipReason": "pagina niet leesbaar",
+      "pageHealth": null,
+      "currentPdpQuality": null,
+      "visualQuality": null,
+      "buyblockQuality": null,
+      "storytellingQuality": null,
+      "mediaQuality": null,
+      "deepDiveQuality": null,
+      "mobileQuality": null,
+      "assetReadiness": null,
+      "commercialSignal": null,
+      "transformation": null,
+      "contrastRoom": null,
+      "contrastCapability": null,
+      "conceptContrast": null,
+      "contrastBand": null,
+      "contrastCeiling": null,
+      "deepDiveFit": null,
+      "economicFit": null,
+      "salesFit": null,
+      "trueSalesDesignScore": null,
+      "confidence": null,
+      "auditConfidence": null,
+      "gatePassed": false,
+      "gateBlockers": [],
+      "gateWarnings": [],
+      "leaks": [],
+      "anthropicCost": 0
+    },
+    {
+      "domain": "kameosleep.nl",
+      "rank": 7,
+      "preselectionScore": 81,
+      "branch": "Sleep & Comfort",
+      "family": "Premium matrassystemen",
+      "category": "Sleep & Comfort · Premium matrassystemen",
+      "platform": "SHOPIFY",
+      "commerceModel": "MIXED",
+      "catalogEstimate": 21,
+      "catalogFocus": 92,
+      "heroProduct": "Kameo Flex aanpasbaar Matras",
+      "heroUrl": "https://www.kameosleep.nl/products/kameo-flex-matras",
+      "heroPrice": 339.5,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "pocketvering matras zijslaper",
+          "hoofdkussen zijslaper"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "auditOutcome": "SKIPPED_PAGE_HEALTH",
+      "auditSkipReason": "pagina niet leesbaar",
+      "pageHealth": null,
+      "currentPdpQuality": null,
+      "visualQuality": null,
+      "buyblockQuality": null,
+      "storytellingQuality": null,
+      "mediaQuality": null,
+      "deepDiveQuality": null,
+      "mobileQuality": null,
+      "assetReadiness": null,
+      "commercialSignal": null,
+      "transformation": null,
+      "contrastRoom": null,
+      "contrastCapability": null,
+      "conceptContrast": null,
+      "contrastBand": null,
+      "contrastCeiling": null,
+      "deepDiveFit": null,
+      "economicFit": null,
+      "salesFit": null,
+      "trueSalesDesignScore": null,
+      "confidence": null,
+      "auditConfidence": null,
+      "gatePassed": false,
+      "gateBlockers": [],
+      "gateWarnings": [],
+      "leaks": [],
+      "anthropicCost": 0
+    },
+    {
+      "domain": "innova-essentials.com",
+      "rank": 8,
+      "preselectionScore": 80,
+      "branch": "Pet Tech",
+      "family": "Zelfreinigende en slimme kattenbakken",
+      "category": "Pet Tech · Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "commerceModel": "DTC_OWN_BRAND",
+      "catalogEstimate": 21,
+      "catalogFocus": 62,
+      "heroProduct": "Innova LitterBox Pro",
+      "heroUrl": "https://innova-essentials.com/products/innova%C2%AE-litterbox-pro-automatische-kattenbak-xxl-82l-zelfreinigende-kattenbak-inclusief-app-met-kattenbakmat-en-5-rollen-opvangzakjes",
+      "heroPrice": 279,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "slimme kattenbak gewichtsmeting"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "auditOutcome": "SKIPPED_PAGE_HEALTH",
+      "auditSkipReason": "pagina niet leesbaar",
+      "pageHealth": null,
+      "currentPdpQuality": null,
+      "visualQuality": null,
+      "buyblockQuality": null,
+      "storytellingQuality": null,
+      "mediaQuality": null,
+      "deepDiveQuality": null,
+      "mobileQuality": null,
+      "assetReadiness": null,
+      "commercialSignal": null,
+      "transformation": null,
+      "contrastRoom": null,
+      "contrastCapability": null,
+      "conceptContrast": null,
+      "contrastBand": null,
+      "contrastCeiling": null,
+      "deepDiveFit": null,
+      "economicFit": null,
+      "salesFit": null,
+      "trueSalesDesignScore": null,
+      "confidence": null,
+      "auditConfidence": null,
+      "gatePassed": false,
+      "gateBlockers": [],
+      "gateWarnings": [],
+      "leaks": [],
+      "anthropicCost": 0
+    },
+    {
+      "domain": "cat-elite.com",
+      "rank": 9,
+      "preselectionScore": 79,
+      "branch": "Pet Tech",
+      "family": "Zelfreinigende en slimme kattenbakken",
+      "category": "Pet Tech · Zelfreinigende en slimme kattenbakken",
+      "platform": "SHOPIFY",
+      "commerceModel": "DTC_OWN_BRAND",
+      "catalogEstimate": 50,
+      "catalogFocus": 62,
+      "heroProduct": "Cat Elite Ease Automatische Kattenbak Zelfreinigend",
+      "heroUrl": "https://cat-elite.com/collections/onze-favorieten/products/ease-kattenbak",
+      "heroPrice": 189.95,
+      "heroSource": "shopping_ad",
+      "adsEvidence": {
+        "keywords": [
+          "zelfreinigende kattenbak",
+          "slimme kattenbak gewichtsmeting"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "auditOutcome": "SKIPPED_PAGE_HEALTH",
+      "auditSkipReason": "pagina niet leesbaar",
+      "pageHealth": null,
+      "currentPdpQuality": null,
+      "visualQuality": null,
+      "buyblockQuality": null,
+      "storytellingQuality": null,
+      "mediaQuality": null,
+      "deepDiveQuality": null,
+      "mobileQuality": null,
+      "assetReadiness": null,
+      "commercialSignal": null,
+      "transformation": null,
+      "contrastRoom": null,
+      "contrastCapability": null,
+      "conceptContrast": null,
+      "contrastBand": null,
+      "contrastCeiling": null,
+      "deepDiveFit": null,
+      "economicFit": null,
+      "salesFit": null,
+      "trueSalesDesignScore": null,
+      "confidence": null,
+      "auditConfidence": null,
+      "gatePassed": false,
+      "gateBlockers": [],
+      "gateWarnings": [],
+      "leaks": [],
+      "anthropicCost": 0
+    }
+  ],
+  "topThree": [
+    {
+      "domain": "kattoilet.nl",
+      "trueSalesDesignScore": 69,
+      "rationale": {
+        "business": [
+          "Pet Tech · Zelfreinigende en slimme kattenbakken, gevonden via betaalde plaatsingen op zelfreinigende kattenbak, zelfreinigende kattenbak grote kat, slimme kattenbak gewichtsmeting.",
+          "SPECIALIST_WEBSHOP op SHOPIFY, commerce model dtc own brand, eigen-merksignaal 75.",
+          "Catalogus 38 producten met focus 80: klein genoeg om één hero product het werk te laten doen.",
+          "Ze betalen zelf voor verkeer naar deze categorie, dus elke procent conversie op de productpagina is direct geld."
+        ],
+        "product": [
+          "Hero product: Zelfreinigende kattenbak Automatische kattenbak (EUR 179).",
+          "Prijspunt 179 vraagt om uitleg en bewijs, precies waar een deep-dive pagina rendeert.",
+          "Materiaal om mee te bouwen: asset readiness 69, deep-dive fit 100."
+        ],
+        "pdpProblems": [
+          "Huidige PDP-kwaliteit 50 (matig).",
+          "mobiel kopen 35 (zwak).",
+          "productverhaal 42 (zwak).",
+          "beeldgebruik 46 (matig).",
+          "koopblok 48 (matig).",
+          "visueel ontwerp 52 (matig).",
+          "verdieping 58 (matig).",
+          "CRITICAL: Price completely hidden on mobile above fold — Mobile screenshot shows product image, title, and CTA visible but no price whatsoever in first viewport. Desktop shows €199,00 EUR with €349,00 strikethrough, but mobile user cannot see pricing without scrolling",
+          "HIGH: Generic CTA lacks urgency despite promotional context — CTA reads 'Aan winkelwagen toevoegen' (mobile) and 'Aan winkelwagen toevoegen' (desktop green button). Page has 'EXTRA KORTING!', 'BEST SELLER', 'ZOMER SALE', 'Nu op voorraad!' signals but CTA is completely neutral",
+          "HIGH: Weak product storytelling and benefit communication — Subtitle is promotional ('VOORDEEL set van NL & BE. Morgen in huis...') but doesn't explain what makes this self-cleaning litter box better. No visible feature bullets, benefit list, or problem-solution framing above fold. Desktop shows 'ZELFREINIGENDE KATTENBAK XXL' headline but storytelling starts below fold",
+          "MEDIUM: Trust badges lack context and hierarchy — Trust elements mentioned: 'gratis verzending', '30 dagen', 'garantie', 'klantenservice', 'trustpilot'. Desktop shows 'Reviews: Uitstekend' accordion but no visible star rating or review count in buyblock. Mobile shows fragmented trust signals in delivery text"
+        ],
+        "ourImprovements": [
+          "mobiel als hoofdscherm: prijs en CTA in het eerste beeld, sticky koopbalk, informatiedichtheid teruggebracht",
+          "productverhaal in lagen: waarom dit product bestaat, voor wie het is, welke bezwaren het wegneemt",
+          "beeld buiten de galerij inzetten: lifestyle, detailshots bij features, beeld dat de claim bewijst in plaats van herhaalt",
+          "koopblok opnieuw opbouwen: duidelijke propositie boven de vouw, prijs en varianten zonder zoeken, één dominante CTA met trust ernaast",
+          "Behouden wat al werkt: Strong promotional signaling and offer packaging, Comprehensive set bundling increases perceived value, Multi-layered objection handling infrastructure."
+        ],
+        "beforeAfter": [
+          "Ruimte 51 · materiaal 73 · concept contrast 46.",
+          "Transformatiepotentieel 97, sales fit 73, economische fit 100.",
+          "Ruimte is de beperkende factor: de huidige pagina doet al te veel goed om een verrassende before/after te maken."
+        ]
+      },
+      "screenshots": {
+        "desktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\kattoilet-nl-current-desktop-1440x1000.png",
+        "desktopFull": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\kattoilet-nl-current-desktop-full.png",
+        "mobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\kattoilet-nl-current-mobile-390x844.png"
+      }
+    },
+    {
+      "domain": "nuvona.eu",
+      "trueSalesDesignScore": 66,
+      "rationale": {
+        "business": [
+          "Pet Tech · Zelfreinigende en slimme kattenbakken, gevonden via betaalde plaatsingen op zelfreinigende kattenbak stil.",
+          "SPECIALIST_WEBSHOP op SHOPIFY, commerce model dtc own brand, eigen-merksignaal 75.",
+          "Catalogus 8 producten met focus 92: klein genoeg om één hero product het werk te laten doen.",
+          "Ze betalen zelf voor verkeer naar deze categorie, dus elke procent conversie op de productpagina is direct geld."
+        ],
+        "product": [
+          "Hero product: Nuvona Zelfreinigende Kattenbak (EUR 179.95).",
+          "Prijspunt 179.95 vraagt om uitleg en bewijs, precies waar een deep-dive pagina rendeert.",
+          "Materiaal om mee te bouwen: asset readiness 65, deep-dive fit 100."
+        ],
+        "pdpProblems": [
+          "Huidige PDP-kwaliteit 60 (redelijk).",
+          "productverhaal 48 (matig).",
+          "beeldgebruik 52 (matig).",
+          "verdieping 58 (matig).",
+          "HIGH: No product reviews or star rating displayed — Data shows 'reviews': null, 'rating': null in ATF. JSON mentions 'klanten' and 'ervaring' in testimonials but no visible star rating or review count in screenshots",
+          "HIGH: Critical product information hidden below fold — Above fold only shows product image, title, price and quantity selector. Key selling points (app connectivity, sensor safety, automatic cleaning cycle) only mentioned in FAQ section further down",
+          "MEDIUM: Weak CTA copy lacks urgency or value — Primary CTA reads 'Toevoegen aan winkelwagen' - generic add to cart. Discount badge shows 'Bespaar €119,05' but no time limitation or stock scarcity mentioned",
+          "MEDIUM: Missing lifestyle context and usage demonstration — Product gallery shows 6 product-only images (white background studio shots). No images of cats using it, size comparison with regular litter box, or home environment integration"
+        ],
+        "ourImprovements": [
+          "productverhaal in lagen: waarom dit product bestaat, voor wie het is, welke bezwaren het wegneemt",
+          "beeld buiten de galerij inzetten: lifestyle, detailshots bij features, beeld dat de claim bewijst in plaats van herhaalt",
+          "verdiepingsblok: hoe het werkt, specificaties, materialen, vergelijking en FAQ met herhaalde koopmomenten",
+          "Behouden wat al werkt: Strong price anchoring with clear discount visualization, Clean, professional brand identity and product photography, Comprehensive FAQ addressing safety concerns."
+        ],
+        "beforeAfter": [
+          "Ruimte 38 · materiaal 74 · concept contrast 41.",
+          "Transformatiepotentieel 91, sales fit 71, economische fit 100.",
+          "Ruimte is de beperkende factor: de huidige pagina doet al te veel goed om een verrassende before/after te maken."
+        ]
+      },
+      "screenshots": {
+        "desktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\nuvona-eu-current-desktop-1440x1000.png",
+        "desktopFull": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\nuvona-eu-current-desktop-full.png",
+        "mobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\nuvona-eu-current-mobile-390x844.png"
+      }
+    },
+    {
+      "domain": "petree.nl",
+      "trueSalesDesignScore": 65,
+      "rationale": {
+        "business": [
+          "Pet Tech · Zelfreinigende en slimme kattenbakken, gevonden via betaalde plaatsingen op zelfreinigende kattenbak, zelfreinigende kattenbak stil.",
+          "SPECIALIST_WEBSHOP op SHOPIFY, commerce model mostly own brand, eigen-merksignaal 65.",
+          "Catalogus 27 producten met focus 92: klein genoeg om één hero product het werk te laten doen.",
+          "Ze betalen zelf voor verkeer naar deze categorie, dus elke procent conversie op de productpagina is direct geld."
+        ],
+        "product": [
+          "Hero product: Petree Cube Zelfreinigende Kattenbak Automatische Kattenbak Bedienen via de App (EUR 249).",
+          "Prijspunt 249 vraagt om uitleg en bewijs, precies waar een deep-dive pagina rendeert.",
+          "Materiaal om mee te bouwen: asset readiness 81, deep-dive fit 100."
+        ],
+        "pdpProblems": [
+          "Huidige PDP-kwaliteit 58 (matig).",
+          "mobiel kopen 32 (zwak).",
+          "koopblok 38 (zwak).",
+          "CRITICAL: Intrusive popup blocks critical product information above fold — On both mobile and desktop, a full-screen compatibility check popup ('Past de Petree Cube v2 bij jouw kat?') appears immediately, completely hiding the product, price, and buy button. Users cannot access core purchase information without closing or completing the quiz.",
+          "CRITICAL: No visible price or primary CTA above the fold on mobile — Mobile screenshot shows popup covering entire viewport. Behind it, the product title is visible but no price indicator or 'Add to Cart' button can be seen. Price only appears as '€279,-' with strikethrough '€399,-' below the popup, requiring scroll after dismissal.",
+          "HIGH: Primary CTA text is unclear and non-actionable — The extracted primary CTA reads 'Vandaag besteld? Morgen in huis! caret-down' — this is a shipping USP, not a purchase button. Actual buy button appears to be further down. The 'Bespaar €120' badge is visible but not the main action trigger.",
+          "MEDIUM: Missing review count and star rating in buy block — Structured data shows 'reviews': null, 'rating': null in ABOVE_THE_FOLD. While reviews exist lower on page, there's no visible star rating or review count near product title/price on mobile or desktop first screen."
+        ],
+        "ourImprovements": [
+          "mobiel als hoofdscherm: prijs en CTA in het eerste beeld, sticky koopbalk, informatiedichtheid teruggebracht",
+          "koopblok opnieuw opbouwen: duidelijke propositie boven de vouw, prijs en varianten zonder zoeken, één dominante CTA met trust ernaast",
+          "Behouden wat al werkt: Exceptional FAQ and objection handling, Strong trust signals and risk reversal, Premium visual design and brand coherence."
+        ],
+        "beforeAfter": [
+          "Ruimte 40 · materiaal 78 · concept contrast 38.",
+          "Transformatiepotentieel 91, sales fit 72, economische fit 100.",
+          "Ruimte is de beperkende factor: de huidige pagina doet al te veel goed om een verrassende before/after te maken."
+        ]
+      },
+      "screenshots": {
+        "desktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\petree-nl-current-desktop-1440x1000.png",
+        "desktopFull": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\petree-nl-current-desktop-full.png",
+        "mobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.3.4-screenshots\\petree-nl-current-mobile-390x844.png"
+      }
+    }
+  ],
+  "designTarget": null,
+  "designTargetGate": {
+    "preferredMaxCurrentPdpQuality": 60,
+    "hardMaxCurrentPdpQuality": 70,
+    "minTransformation": 70,
+    "minConceptContrast": 62,
+    "minAssetReadiness": 65,
+    "minDeepDiveFit": 70,
+    "minBusinessMaturity": 40,
+    "minAuditConfidence": 55,
+    "requireCommercialProof": true,
+    "requireFocusedBusiness": true,
+    "blockedBusinessTypes": [
+      "MASS_RETAILER",
+      "GENERAL_RETAILER",
+      "MARKETPLACE",
+      "COMPARISON_SITE"
+    ]
+  },
+  "trueSalesDesignFormula": "true_sales_design = 0.40*concept_contrast + 0.32*outreach_concept_fit + 0.18*project_economic_fit + 0.10*measurement_confidence. Transformation en deep-dive fit zitten al in contrast en sales fit, dus die tellen niet nog een keer mee.",
+  "regression": [
+    {
+      "domain": "currentbody.nl",
+      "businessType": "UNKNOWN",
+      "status": "BRIEF_READY",
+      "conceptContrast": 20,
+      "contrastBand": "GEEN_CONTRAST",
+      "contrastCeiling": "PDP zeer sterk",
+      "transformation": 41,
+      "assetReadiness": 79,
+      "designTargetEligible": false,
+      "note": "te weinig contrast voor een overtuigende before/after"
+    },
+    {
+      "domain": "tensfact.com",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "status": "BRIEF_READY",
+      "conceptContrast": 37,
+      "contrastBand": "LAAG",
+      "contrastCeiling": null,
+      "transformation": 65,
+      "assetReadiness": 78,
+      "designTargetEligible": false,
+      "note": "te weinig contrast voor een overtuigende before/after"
+    }
+  ],
+  "cost": {
+    "anthropic": 0,
+    "anthropicCap": 0.22,
+    "underlyingAuditCost": 0.1834,
+    "dataForSeo": 0,
+    "auditsRun": 4,
+    "auditAttempts": 8,
+    "costPerAudit": 0
+  }
+}

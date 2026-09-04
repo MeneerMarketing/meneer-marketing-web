@@ -1,0 +1,839 @@
+{
+  "milestone": "M9.4.1",
+  "version": "HIGH_TICKET_DESIGN_VALIDATION_V1",
+  "runId": "08cb1083-9a49-4430-bd8b-91e54b4b76dd",
+  "startedAt": "2026-08-14T23:28:13.479Z",
+  "finishedAt": "2026-08-14T23:31:21.155Z",
+  "primary": {
+    "domain": "vitalwave.nl",
+    "targetVerification": {
+      "targetConfidence": 100,
+      "aligned": true,
+      "evidence": [
+        "één keyword-token: haargroei",
+        "familie overlap: haargroei",
+        "hero URL uit advertentie-landing",
+        "productpagina URL bevestigd",
+        "haar/LED-therapie thema consistent"
+      ],
+      "keywordUsed": "led haargroei helm thuis"
+    },
+    "highTicketFit": 82,
+    "estimatedContrastCeiling": 69
+  },
+  "challenger": {
+    "domain": "hottublifestyle.nl",
+    "selectionReason": "revigurize.nl niet gekwalificeerd, fallback hottublifestyle.nl",
+    "qualification": {
+      "domain": "revigurize.nl",
+      "qualified": false,
+      "blockers": [
+        "catalogusomvang niet geverifieerd",
+        "catalog focus 50 < 55",
+        "catalogus te breed (null)"
+      ],
+      "evidence": [
+        "hero PDP URL geverifieerd",
+        "volwassenheid nog niet gemeten, geen harde reject",
+        "heroproduct 850 euro: premium ticket",
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 1 zoekopdracht(en)"
+      ],
+      "businessMaturity": null,
+      "estimatedCatalogSize": null,
+      "catalogFocusScore": 50,
+      "catalogVerified": false,
+      "ownBrandSignal": 75,
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 75,
+      "currentPdpWeaknessProxy": 52,
+      "highTicketFocusedFitScore": 65,
+      "estimatedContrastCeiling": 70,
+      "companyScaleFit": 84,
+      "heroProductUrl": "https://revigurize.nl/products/active-hair-cap"
+    }
+  },
+  "qualification": {
+    "domain": "revigurize.nl",
+    "qualified": false,
+    "blockers": [
+      "catalogusomvang niet geverifieerd",
+      "catalog focus 50 < 55",
+      "catalogus te breed (null)"
+    ],
+    "evidence": [
+      "hero PDP URL geverifieerd",
+      "volwassenheid nog niet gemeten, geen harde reject",
+      "heroproduct 850 euro: premium ticket",
+      "eigen-merksignaal 75",
+      "betaalde plaatsingen op 1 zoekopdracht(en)"
+    ],
+    "businessMaturity": null,
+    "estimatedCatalogSize": null,
+    "catalogFocusScore": 50,
+    "catalogVerified": false,
+    "ownBrandSignal": 75,
+    "platform": "SHOPIFY",
+    "businessType": "SPECIALIST_WEBSHOP",
+    "commerceModel": "DTC_OWN_BRAND",
+    "assetReadinessProxy": 100,
+    "deepDivePdpFitProxy": 75,
+    "currentPdpWeaknessProxy": 52,
+    "highTicketFocusedFitScore": 65,
+    "estimatedContrastCeiling": 70,
+    "companyScaleFit": 84,
+    "heroProductUrl": "https://revigurize.nl/products/active-hair-cap"
+  },
+  "audits": [
+    {
+      "role": "PRIMARY",
+      "domain": "vitalwave.nl",
+      "record": {
+        "domain": "vitalwave.nl",
+        "siteUrl": "https://vitalwave.nl",
+        "branch": "HAIR_SCALP_TECH",
+        "branchLabel": "Hair & Scalp Tech",
+        "sourceKeyword": "led haargroei helm thuis",
+        "allKeywords": [
+          "led haargroei helm thuis"
+        ],
+        "familyId": "laser_hair_growth",
+        "familyLabel": "Laser- en LED-haargroei",
+        "platform": "SHOPIFY",
+        "businessType": "SPECIALIST_WEBSHOP",
+        "commerceModel": "DTC_OWN_BRAND",
+        "estimatedCatalogSize": 26,
+        "catalogFocusScore": 92,
+        "catalogVerified": true,
+        "catalogEvidence": [
+          "heroproduct 325 euro: hoge productwaarde",
+          "eigen-merksignaal 75",
+          "26 producten: ideaal",
+          "betaalde plaatsingen op 1 zoekopdracht(en)",
+          "geen ketensignalen",
+          "homepage toont nauwelijks producten"
+        ],
+        "retailerBreadthScore": null,
+        "internationalPresenceScore": null,
+        "ownBrandSignal": 75,
+        "ownBrandEvidence": [],
+        "googleAdsEvidence": {
+          "keywords": [
+            "led haargroei helm thuis"
+          ],
+          "landingUrls": [],
+          "sellerResolution": "probe_verified"
+        },
+        "heroProduct": "Rood licht therapie pet Voor stimuleren van haargroei Red light therapy cap",
+        "heroProductUrl": "https://www.vitalwave.nl/products/vitalwave-rood-licht-therapie-pet",
+        "heroPrice": 325,
+        "heroCurrency": "EUR",
+        "additionalHeroes": [],
+        "assetReadinessProxy": 100,
+        "deepDivePdpFitProxy": 87,
+        "currentPdpWeaknessProxy": 48,
+        "idealProspectPreScore": 82,
+        "preScoreEvidence": [
+          "heroproduct 325 euro: hoge productwaarde",
+          "eigen-merksignaal 75",
+          "26 producten: ideaal",
+          "betaalde plaatsingen op 1 zoekopdracht(en)",
+          "geen ketensignalen",
+          "homepage toont nauwelijks producten",
+          "26 producten: overzichtelijk merk",
+          "eigen merk (75)"
+        ]
+      },
+      "preselection": {
+        "record": {
+          "domain": "vitalwave.nl",
+          "siteUrl": "https://vitalwave.nl",
+          "branch": "HAIR_SCALP_TECH",
+          "branchLabel": "Hair & Scalp Tech",
+          "sourceKeyword": "led haargroei helm thuis",
+          "allKeywords": [
+            "led haargroei helm thuis"
+          ],
+          "familyId": "laser_hair_growth",
+          "familyLabel": "Laser- en LED-haargroei",
+          "platform": "SHOPIFY",
+          "businessType": "SPECIALIST_WEBSHOP",
+          "commerceModel": "DTC_OWN_BRAND",
+          "estimatedCatalogSize": 26,
+          "catalogFocusScore": 92,
+          "catalogVerified": true,
+          "catalogEvidence": [
+            "heroproduct 325 euro: hoge productwaarde",
+            "eigen-merksignaal 75",
+            "26 producten: ideaal",
+            "betaalde plaatsingen op 1 zoekopdracht(en)",
+            "geen ketensignalen",
+            "homepage toont nauwelijks producten"
+          ],
+          "retailerBreadthScore": null,
+          "internationalPresenceScore": null,
+          "ownBrandSignal": 75,
+          "ownBrandEvidence": [],
+          "googleAdsEvidence": {
+            "keywords": [
+              "led haargroei helm thuis"
+            ],
+            "landingUrls": [],
+            "sellerResolution": "probe_verified"
+          },
+          "heroProduct": "Rood licht therapie pet Voor stimuleren van haargroei Red light therapy cap",
+          "heroProductUrl": "https://www.vitalwave.nl/products/vitalwave-rood-licht-therapie-pet",
+          "heroPrice": 325,
+          "heroCurrency": "EUR",
+          "additionalHeroes": [],
+          "assetReadinessProxy": 100,
+          "deepDivePdpFitProxy": 87,
+          "currentPdpWeaknessProxy": 48,
+          "idealProspectPreScore": 82,
+          "preScoreEvidence": [
+            "heroproduct 325 euro: hoge productwaarde",
+            "eigen-merksignaal 75",
+            "26 producten: ideaal",
+            "betaalde plaatsingen op 1 zoekopdracht(en)",
+            "geen ketensignalen",
+            "homepage toont nauwelijks producten",
+            "26 producten: overzichtelijk merk",
+            "eigen merk (75)"
+          ]
+        },
+        "rank": 1,
+        "preselectionScore": 82,
+        "components": {},
+        "penalties": [],
+        "reasons": [
+          "heroproduct 325 euro: hoge productwaarde",
+          "eigen-merksignaal 75",
+          "26 producten: ideaal",
+          "betaalde plaatsingen op 1 zoekopdracht(en)",
+          "geen ketensignalen"
+        ],
+        "derivedCommerceModel": "DTC_OWN_BRAND",
+        "catalogBandLabel": "geverifieerd",
+        "heroUrlFromReport": true,
+        "excluded": false,
+        "selected": true,
+        "skipReason": null
+      },
+      "hero": {
+        "title": "Rood licht therapie pet Voor stimuleren van haargroei Red light therapy cap",
+        "url": "https://www.vitalwave.nl/products/vitalwave-rood-licht-therapie-pet",
+        "brand": null,
+        "price": 325,
+        "currency": "EUR",
+        "heroScore": 61,
+        "heroConfidence": 48,
+        "evidence": [
+          "paid_or_confirmed_commercial_target",
+          "keyword_title_overlap",
+          "price_in_strong_concept_band"
+        ],
+        "source": "shopping_ad"
+      },
+      "brand": {
+        "id": "ecbbf55a-d44b-4a2a-936d-0f90788cb46e",
+        "name": "Vitalwave",
+        "normalized_domain": "vitalwave.nl",
+        "platform": "SHOPIFY",
+        "business_type": "SPECIALIST_WEBSHOP",
+        "business_maturity_score": null,
+        "retailer_scale_score": 12,
+        "confirmed_google_advertiser": false,
+        "transparency_confirmed": false,
+        "manual_excluded": false
+      },
+      "targetVerification": {
+        "targetConfidence": 100,
+        "aligned": true,
+        "evidence": [
+          "één keyword-token: haargroei",
+          "familie overlap: haargroei",
+          "hero URL uit advertentie-landing",
+          "productpagina URL bevestigd",
+          "haar/LED-therapie thema consistent"
+        ],
+        "keywordUsed": "led haargroei helm thuis"
+      },
+      "qualification": null,
+      "auditOutcome": "AUDITED",
+      "auditSkipReason": null,
+      "pageHealth": "COMPLETED",
+      "currentPdpQuality": 62,
+      "subScores": {
+        "buyblock": 42,
+        "visual": 68,
+        "storytelling": 75,
+        "media": 60,
+        "deepDive": 70,
+        "mobile": 38
+      },
+      "conceptContrast": 44,
+      "transformation": 81,
+      "deepDiveFit": 100,
+      "economicFit": 100,
+      "salesFit": 71,
+      "trueSalesDesignScore": 68,
+      "measurementConfidence": 92,
+      "gate": {
+        "passed": false,
+        "blockers": [
+          "concept contrast te laag (44 < 62)"
+        ],
+        "warnings": [
+          "PDP boven de voorkeursgrens (62 > 60)",
+          "volwassenheid niet gemeten (nog geen qualification pass)"
+        ]
+      },
+      "designInterventionOpportunity": 73,
+      "conceptAssetFeasibility": 73,
+      "assetInventory": {
+        "packshots": true,
+        "lifestyle": true,
+        "detailImagery": true,
+        "technologyImagery": true,
+        "video": false,
+        "reviewsProof": false,
+        "specifications": false,
+        "benefits": false,
+        "faq": false,
+        "brandIdentity": false
+      },
+      "interventionMap": [
+        {
+          "current": "huidige buyblock",
+          "problem": "weinig productcontext of zwakke hiërarchie rond prijs en CTA (score 42)",
+          "premiumDtcOpportunity": "premium conversion buyblock met duidelijke propositie en trust naast de CTA",
+          "source": "subscore buyblock"
+        },
+        {
+          "current": "zwakke mobile purchase hierarchy",
+          "problem": "CTA en productbegrip te laat op mobiel (score 38)",
+          "premiumDtcOpportunity": "mobile-first conversion sequence met sticky koopmoment",
+          "source": "subscore mobile"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "Out-of-stock product still accepting add-to-cart signals: Product shows 'Uitverkocht' (out of stock) in shipping field, yet the page remains fully active with CTA 'Aan winkelwagen toevoegen' visible in structured data and likely on page",
+          "premiumDtcOpportunity": "Implement out-of-stock protocol: disable CTA, show 'Op voorraad' messaging clearly, add email waitlist/notify functionality, recommend alternative products, or temporarily hide from paid campaigns",
+          "source": "leak CRITICAL"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "No price visible above the fold on mobile: Mobile screenshot shows product title and star rating, but price (€325) appears below first scroll. Price is null in ABOVE_THE_FOLD extraction",
+          "premiumDtcOpportunity": "Reposition buy block on mobile: title → rating → price → free shipping → CTA within first 844px viewport. Consider sticky buy block for high-ticket items",
+          "source": "leak HIGH"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "Weak CTA copy and no urgency mechanism: Primary CTA is generic 'Aan winkelwagen toevoegen'. No stock counter, no promotion timer, no bundle incentive visible in buy block despite 'bundle' and 'korting %' detected in promotion fields",
+          "premiumDtcOpportunity": "Replace with benefit-driven CTA like 'Start met haargroei stimulatie' or 'Bestel met 60 dagen retourrecht'. Add visible countdown for any active discount, show stock status if limited, highlight bundle value",
+          "source": "leak MEDIUM"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "No benefits or USPs visible above fold on mobile: Benefits array is empty in ABOVE_THE_FOLD. Desktop shows checkmark bullets (✓ Bewezen effectief, ✓ One size fits all, ✓ Diepwerkend licht) but mobile first screen only shows image, title, and truncated subtitle",
+          "premiumDtcOpportunity": "Add 2-3 icon-based benefit bullets directly under product title on mobile (e.g. '120 LED's | 660+830nm | Wetenschappelijk bewezen'). Use visual hierarchy to compress vertical space",
+          "source": "leak MEDIUM"
+        },
+        {
+          "current": "wat al werkt",
+          "problem": "niet weggooien",
+          "premiumDtcOpportunity": "behouden en versterken: Strong trust infrastructure and objection handling, Technical product storytelling with scientific credibility, Multi-format social proof and visual evidence",
+          "source": "audit strengths"
+        }
+      ],
+      "visualSummary": {
+        "alreadyGood": [
+          "Strong trust infrastructure and objection handling",
+          "Technical product storytelling with scientific credibility",
+          "Multi-format social proof and visual evidence"
+        ],
+        "clearlyWeak": [
+          "buyblock 42",
+          "mobile 38",
+          "CRITICAL: Out-of-stock product still accepting add-to-cart signals",
+          "HIGH: No price visible above the fold on mobile",
+          "MEDIUM: Weak CTA copy and no urgency mechanism"
+        ],
+        "wowMoment": [
+          "premium conversion buyblock met duidelijke propositie en trust naast de CTA",
+          "mobile-first conversion sequence met sticky koopmoment"
+        ]
+      },
+      "leaks": [
+        {
+          "title": "Out-of-stock product still accepting add-to-cart signals",
+          "evidence": "Product shows 'Uitverkocht' (out of stock) in shipping field, yet the page remains fully active with CTA 'Aan winkelwagen toevoegen' visible in structured data and likely on page",
+          "severity": "CRITICAL",
+          "why_it_matters": "Visitors clicking from ads or organic search to an unavailable product creates immediate bounce and frustration. No waitlist, no alternative, no next step = abandoned session and wasted traffic cost",
+          "recommended_fix": "Implement out-of-stock protocol: disable CTA, show 'Op voorraad' messaging clearly, add email waitlist/notify functionality, recommend alternative products, or temporarily hide from paid campaigns"
+        },
+        {
+          "title": "No price visible above the fold on mobile",
+          "evidence": "Mobile screenshot shows product title and star rating, but price (€325) appears below first scroll. Price is null in ABOVE_THE_FOLD extraction",
+          "severity": "HIGH",
+          "why_it_matters": "For a €325 premium health device, price anchoring and transparency in first viewport builds trust and qualifies visitors immediately. Current layout forces scroll for core purchase decision data",
+          "recommended_fix": "Reposition buy block on mobile: title → rating → price → free shipping → CTA within first 844px viewport. Consider sticky buy block for high-ticket items"
+        },
+        {
+          "title": "Weak CTA copy and no urgency mechanism",
+          "evidence": "Primary CTA is generic 'Aan winkelwagen toevoegen'. No stock counter, no promotion timer, no bundle incentive visible in buy block despite 'bundle' and 'korting %' detected in promotion fields",
+          "severity": "MEDIUM",
+          "why_it_matters": "€325 purchase requires stronger motivation than default Shopify CTA. Detected promotion signals aren't leveraged in the critical conversion moment",
+          "recommended_fix": "Replace with benefit-driven CTA like 'Start met haargroei stimulatie' or 'Bestel met 60 dagen retourrecht'. Add visible countdown for any active discount, show stock status if limited, highlight bundle value"
+        },
+        {
+          "title": "No benefits or USPs visible above fold on mobile",
+          "evidence": "Benefits array is empty in ABOVE_THE_FOLD. Desktop shows checkmark bullets (✓ Bewezen effectief, ✓ One size fits all, ✓ Diepwerkend licht) but mobile first screen only shows image, title, and truncated subtitle",
+          "severity": "MEDIUM",
+          "why_it_matters": "High-consideration health product needs immediate value communication. Visitors must scroll to discover why this €325 cap works, reducing impulse confidence and increasing cognitive load",
+          "recommended_fix": "Add 2-3 icon-based benefit bullets directly under product title on mobile (e.g. '120 LED's | 660+830nm | Wetenschappelijk bewezen'). Use visual hierarchy to compress vertical space"
+        },
+        {
+          "title": "Weak desktop buy block hierarchy and CTA prominence",
+          "evidence": "Desktop screenshot shows quantity selector ('Aantal' field) and stock status ('Op voorraad' green dot) but CTA button is not visible in viewport. Trust elements (Trustpilot 4.7/5, free shipping) appear below fold",
+          "severity": "MEDIUM",
+          "why_it_matters": "Even on desktop, the primary conversion action is buried. High-ticket items need visible, contrasting CTA with supporting trust signals in immediate view to reduce purchase anxiety",
+          "recommended_fix": "Redesign desktop buy block with fixed/sticky right column: Price → Trust badges → Benefits → CTA → Guarantee/Shipping. Use high-contrast color for CTA (brand red). Move Trustpilot score directly under price"
+        }
+      ],
+      "strengths": [
+        {
+          "title": "Strong trust infrastructure and objection handling",
+          "evidence": "2-year guarantee, 60-day free returns, free shipping NL/BE, Trustpilot 4.7/5 rating, multiple payment options (iDEAL, PayPal, Klarna, Bancontact, Apple Pay), 'gratis verzending/retour/garantie' trust badges"
+        },
+        {
+          "title": "Technical product storytelling with scientific credibility",
+          "evidence": "Specific technical specs in description (120 LEDs, 660nm & 830nm wavelengths, 1:1 ratio), timer & pulse function mentioned, 'wetenschappelijk bewezen golflengtes', detailed explanation of mechanism (blood flow, follicle activation)"
+        },
+        {
+          "title": "Multi-format social proof and visual evidence",
+          "evidence": "Star rating with review count (2 beoordelingen visible), before/after imagery detected, UGC signals (Instagram/TikTok), testimonials present, Trustpilot integration with specific 4.7/5 score"
+        }
+      ],
+      "anthropicCost": 0.040644,
+      "screenshots": {
+        "homepageDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\vitalwave-nl-homepage-desktop-1440x1000.png",
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\vitalwave-nl-pdp-desktop-1440x1000.png",
+        "pdpDesktopFull": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\vitalwave-nl-pdp-desktop-full.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\vitalwave-nl-pdp-mobile-390x844.png"
+      },
+      "showcasePreferred": false
+    },
+    {
+      "role": "CHALLENGER",
+      "domain": "hottublifestyle.nl",
+      "record": {
+        "domain": "hottublifestyle.nl",
+        "siteUrl": "https://hottublifestyle.nl",
+        "branch": "HOME_WELLNESS_TECH",
+        "branchLabel": "Home Wellness Tech",
+        "sourceKeyword": "hottub op maat systeem",
+        "allKeywords": [
+          "hottub op maat systeem"
+        ],
+        "familyId": "home_spa_systems",
+        "familyLabel": "Thuis spa- en wellnesssystemen",
+        "platform": "SHOPIFY",
+        "businessType": "SPECIALIST_WEBSHOP",
+        "commerceModel": "MOSTLY_OWN_BRAND",
+        "estimatedCatalogSize": 45,
+        "catalogFocusScore": 80,
+        "catalogVerified": true,
+        "catalogEvidence": [
+          "heroproduct 1645 euro: premium ticket",
+          "eigen-merksignaal 60",
+          "45 producten: ideaal",
+          "betaalde plaatsingen op 1 zoekopdracht(en)",
+          "geen ketensignalen",
+          "homepage toont nauwelijks producten"
+        ],
+        "retailerBreadthScore": null,
+        "internationalPresenceScore": null,
+        "ownBrandSignal": 60,
+        "ownBrandEvidence": [],
+        "googleAdsEvidence": {
+          "keywords": [
+            "hottub op maat systeem"
+          ],
+          "landingUrls": [],
+          "sellerResolution": "probe_verified"
+        },
+        "heroProduct": "Hottub kopen | Zelfbouw Tøbbe Hottub Ø 175 cm voor maatwerk ontspanning",
+        "heroProductUrl": "https://www.hottublifestyle.nl/products/tobbe-hottub",
+        "heroPrice": 1645,
+        "heroCurrency": "EUR",
+        "additionalHeroes": [],
+        "assetReadinessProxy": 90,
+        "deepDivePdpFitProxy": 80,
+        "currentPdpWeaknessProxy": 56,
+        "idealProspectPreScore": 79,
+        "preScoreEvidence": [
+          "heroproduct 1645 euro: premium ticket",
+          "eigen-merksignaal 60",
+          "45 producten: ideaal",
+          "betaalde plaatsingen op 1 zoekopdracht(en)",
+          "geen ketensignalen",
+          "homepage toont nauwelijks producten",
+          "45 producten: overzichtelijk merk",
+          "eigen merk (60)"
+        ]
+      },
+      "preselection": {
+        "record": {
+          "domain": "hottublifestyle.nl",
+          "siteUrl": "https://hottublifestyle.nl",
+          "branch": "HOME_WELLNESS_TECH",
+          "branchLabel": "Home Wellness Tech",
+          "sourceKeyword": "hottub op maat systeem",
+          "allKeywords": [
+            "hottub op maat systeem"
+          ],
+          "familyId": "home_spa_systems",
+          "familyLabel": "Thuis spa- en wellnesssystemen",
+          "platform": "SHOPIFY",
+          "businessType": "SPECIALIST_WEBSHOP",
+          "commerceModel": "MOSTLY_OWN_BRAND",
+          "estimatedCatalogSize": 45,
+          "catalogFocusScore": 80,
+          "catalogVerified": true,
+          "catalogEvidence": [
+            "heroproduct 1645 euro: premium ticket",
+            "eigen-merksignaal 60",
+            "45 producten: ideaal",
+            "betaalde plaatsingen op 1 zoekopdracht(en)",
+            "geen ketensignalen",
+            "homepage toont nauwelijks producten"
+          ],
+          "retailerBreadthScore": null,
+          "internationalPresenceScore": null,
+          "ownBrandSignal": 60,
+          "ownBrandEvidence": [],
+          "googleAdsEvidence": {
+            "keywords": [
+              "hottub op maat systeem"
+            ],
+            "landingUrls": [],
+            "sellerResolution": "probe_verified"
+          },
+          "heroProduct": "Hottub kopen | Zelfbouw Tøbbe Hottub Ø 175 cm voor maatwerk ontspanning",
+          "heroProductUrl": "https://www.hottublifestyle.nl/products/tobbe-hottub",
+          "heroPrice": 1645,
+          "heroCurrency": "EUR",
+          "additionalHeroes": [],
+          "assetReadinessProxy": 90,
+          "deepDivePdpFitProxy": 80,
+          "currentPdpWeaknessProxy": 56,
+          "idealProspectPreScore": 79,
+          "preScoreEvidence": [
+            "heroproduct 1645 euro: premium ticket",
+            "eigen-merksignaal 60",
+            "45 producten: ideaal",
+            "betaalde plaatsingen op 1 zoekopdracht(en)",
+            "geen ketensignalen",
+            "homepage toont nauwelijks producten",
+            "45 producten: overzichtelijk merk",
+            "eigen merk (60)"
+          ]
+        },
+        "rank": 3,
+        "preselectionScore": 79,
+        "components": {},
+        "penalties": [],
+        "reasons": [
+          "heroproduct 1645 euro: premium ticket",
+          "eigen-merksignaal 60",
+          "45 producten: ideaal",
+          "betaalde plaatsingen op 1 zoekopdracht(en)",
+          "geen ketensignalen"
+        ],
+        "derivedCommerceModel": "MOSTLY_OWN_BRAND",
+        "catalogBandLabel": "geverifieerd",
+        "heroUrlFromReport": true,
+        "excluded": false,
+        "selected": true,
+        "skipReason": null
+      },
+      "hero": {
+        "title": "Hottub kopen | Zelfbouw Tøbbe Hottub Ø 175 cm voor maatwerk ontspanning",
+        "url": "https://www.hottublifestyle.nl/products/tobbe-hottub",
+        "brand": null,
+        "price": 1645,
+        "currency": "EUR",
+        "heroScore": 55,
+        "heroConfidence": 48,
+        "evidence": [
+          "paid_or_confirmed_commercial_target",
+          "keyword_title_overlap",
+          "price_present"
+        ],
+        "source": "shopping_ad"
+      },
+      "brand": {
+        "id": "6fdf47dd-d14a-4b26-b612-f7f534d0325f",
+        "name": "Hottub Lifestyle",
+        "normalized_domain": "hottublifestyle.nl",
+        "platform": "SHOPIFY",
+        "business_type": "SPECIALIST_WEBSHOP",
+        "business_maturity_score": null,
+        "retailer_scale_score": 15,
+        "confirmed_google_advertiser": false,
+        "transparency_confirmed": false,
+        "manual_excluded": false
+      },
+      "targetVerification": null,
+      "qualification": {
+        "domain": "revigurize.nl",
+        "qualified": false,
+        "blockers": [
+          "catalogusomvang niet geverifieerd",
+          "catalog focus 50 < 55",
+          "catalogus te breed (null)"
+        ],
+        "evidence": [
+          "hero PDP URL geverifieerd",
+          "volwassenheid nog niet gemeten, geen harde reject",
+          "heroproduct 850 euro: premium ticket",
+          "eigen-merksignaal 75",
+          "betaalde plaatsingen op 1 zoekopdracht(en)"
+        ],
+        "businessMaturity": null,
+        "estimatedCatalogSize": null,
+        "catalogFocusScore": 50,
+        "catalogVerified": false,
+        "ownBrandSignal": 75,
+        "platform": "SHOPIFY",
+        "businessType": "SPECIALIST_WEBSHOP",
+        "commerceModel": "DTC_OWN_BRAND",
+        "assetReadinessProxy": 100,
+        "deepDivePdpFitProxy": 75,
+        "currentPdpWeaknessProxy": 52,
+        "highTicketFocusedFitScore": 65,
+        "estimatedContrastCeiling": 70,
+        "companyScaleFit": 84,
+        "heroProductUrl": "https://revigurize.nl/products/active-hair-cap"
+      },
+      "auditOutcome": "AUDITED",
+      "auditSkipReason": null,
+      "pageHealth": "COMPLETED",
+      "currentPdpQuality": 51,
+      "subScores": {
+        "buyblock": 45,
+        "visual": 60,
+        "storytelling": 35,
+        "media": 65,
+        "deepDive": 50,
+        "mobile": 40
+      },
+      "conceptContrast": 52,
+      "transformation": 100,
+      "deepDiveFit": 100,
+      "economicFit": 92,
+      "salesFit": 72,
+      "trueSalesDesignScore": 70,
+      "measurementConfidence": 92,
+      "gate": {
+        "passed": false,
+        "blockers": [
+          "concept contrast te laag (52 < 62)"
+        ],
+        "warnings": [
+          "volwassenheid niet gemeten (nog geen qualification pass)"
+        ]
+      },
+      "designInterventionOpportunity": 76,
+      "conceptAssetFeasibility": 63,
+      "assetInventory": {
+        "packshots": true,
+        "lifestyle": true,
+        "detailImagery": true,
+        "technologyImagery": true,
+        "video": false,
+        "reviewsProof": false,
+        "specifications": false,
+        "benefits": false,
+        "faq": true,
+        "brandIdentity": false
+      },
+      "interventionMap": [
+        {
+          "current": "huidige buyblock",
+          "problem": "weinig productcontext of zwakke hiërarchie rond prijs en CTA (score 45)",
+          "premiumDtcOpportunity": "premium conversion buyblock met duidelijke propositie en trust naast de CTA",
+          "source": "subscore buyblock"
+        },
+        {
+          "current": "losse technische tekst",
+          "problem": "informatie niet visueel verteld, bezwaren blijven abstract (score 35)",
+          "premiumDtcOpportunity": "feature- en benefit-verhaal in lagen met echte copy uit de site",
+          "source": "subscore storytelling"
+        },
+        {
+          "current": "zwakke mobile purchase hierarchy",
+          "problem": "CTA en productbegrip te laat op mobiel (score 40)",
+          "premiumDtcOpportunity": "mobile-first conversion sequence met sticky koopmoment",
+          "source": "subscore mobile"
+        },
+        {
+          "current": "dunne verdieping",
+          "problem": "specificaties en uitleg niet uitgewerkt als verkoopargument (score 50)",
+          "premiumDtcOpportunity": "deep-dive blok met specs, FAQ en proof uit bestaande content",
+          "source": "subscore deepDive"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "Critical: No price visible above the fold on mobile: Mobile viewport shows product title, breadcrumb, and large hero image, but price (€2.595,00 EUR) only appears after scrolling. Desktop shows price immediately in right sidebar.",
+          "premiumDtcOpportunity": "Restructure mobile first viewport to show product title, price, and key trust signals (9.7 rating, gratis verzending) before hero image, or use sticky price bar. Consider condensed hero height (60-70vh max) to allow price visibility.",
+          "source": "leak CRITICAL"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "Weak product value proposition and benefit communication: Subtitle is technical spec dump: 'Witte glasfiber kuip 175 cm diameter 110 cm hoog 1000 L water 4/6 persoons 30kw hottubkachel...'. No emotional benefit, lifestyle positioning, or unique selling proposition in first viewport.",
+          "premiumDtcOpportunity": "Lead with benefit-driven headline: 'Authentieke houtgestookte hottub voor 4-6 personen – Klaar in 2 uur, jarenlang genieten'. Move specs to expandable section. Add lifestyle copy above configurator emphasizing relaxation, family moments, year-round use.",
+          "source": "leak HIGH"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "Configurator overwhelm without guidance or price transparency: Desktop shows 7 stacked blue accordion sections ('Kleur kuip', 'Hout voor frame omlijsting', 'Kachelupgrade naar groot model', etc.) with no preview of total price impact, no recommended configuration, no 'most popular' indicators.",
+          "premiumDtcOpportunity": "Add live price calculator showing running total as options selected. Mark popular configurations ('Meest gekozen'). Provide 3 preset packages (Basis/Comfort/Premium) as starting points. Add tooltip education per option explaining value/necessity.",
+          "source": "leak HIGH"
+        },
+        {
+          "current": "geobserveerde paginafout",
+          "problem": "Generic CTA lacks urgency and product context: Primary CTA is standard 'In winkelwagen' button. No stock indication, lead time transparency, or seasonal urgency messaging despite 'Bestel snel' text buried in delivery block.",
+          "premiumDtcOpportunity": "Context-specific CTA: 'Configureer & bestel (levertijd 6-8 weken)' or 'Reserveer jouw Tøbbe hottub'. Add stock/production status above button. If seasonal demand exists, add urgency: 'Bestel nu voor zomerlevering'.",
+          "source": "leak MEDIUM"
+        },
+        {
+          "current": "wat al werkt",
+          "problem": "niet weggooien",
+          "premiumDtcOpportunity": "behouden en versterken: Strong third-party trust signals and social proof, High-quality lifestyle photography establishing context, Comprehensive product configurability for personalization",
+          "source": "audit strengths"
+        }
+      ],
+      "visualSummary": {
+        "alreadyGood": [
+          "Strong third-party trust signals and social proof",
+          "High-quality lifestyle photography establishing context",
+          "Comprehensive product configurability for personalization"
+        ],
+        "clearlyWeak": [
+          "buyblock 45",
+          "storytelling 35",
+          "deepDive 50",
+          "mobile 40",
+          "CRITICAL: Critical: No price visible above the fold on mobile",
+          "HIGH: Weak product value proposition and benefit communication",
+          "HIGH: Configurator overwhelm without guidance or price transparency"
+        ],
+        "wowMoment": [
+          "premium conversion buyblock met duidelijke propositie en trust naast de CTA",
+          "feature- en benefit-verhaal in lagen met echte copy uit de site"
+        ]
+      },
+      "leaks": [
+        {
+          "title": "Critical: No price visible above the fold on mobile",
+          "evidence": "Mobile viewport shows product title, breadcrumb, and large hero image, but price (€2.595,00 EUR) only appears after scrolling. Desktop shows price immediately in right sidebar.",
+          "severity": "CRITICAL",
+          "why_it_matters": "For a €2.595 product, price visibility establishes context and filters serious buyers immediately. Mobile users must scroll past full-screen hero image to discover pricing, creating unnecessary friction at the most critical decision point.",
+          "recommended_fix": "Restructure mobile first viewport to show product title, price, and key trust signals (9.7 rating, gratis verzending) before hero image, or use sticky price bar. Consider condensed hero height (60-70vh max) to allow price visibility."
+        },
+        {
+          "title": "Weak product value proposition and benefit communication",
+          "evidence": "Subtitle is technical spec dump: 'Witte glasfiber kuip 175 cm diameter 110 cm hoog 1000 L water 4/6 persoons 30kw hottubkachel...'. No emotional benefit, lifestyle positioning, or unique selling proposition in first viewport.",
+          "severity": "HIGH",
+          "why_it_matters": "€2.595 is a significant investment requiring emotional justification. Specs without context don't answer 'why this hottub' or differentiate from competitors. Buyers need aspiration before specification.",
+          "recommended_fix": "Lead with benefit-driven headline: 'Authentieke houtgestookte hottub voor 4-6 personen – Klaar in 2 uur, jarenlang genieten'. Move specs to expandable section. Add lifestyle copy above configurator emphasizing relaxation, family moments, year-round use."
+        },
+        {
+          "title": "Configurator overwhelm without guidance or price transparency",
+          "evidence": "Desktop shows 7 stacked blue accordion sections ('Kleur kuip', 'Hout voor frame omlijsting', 'Kachelupgrade naar groot model', etc.) with no preview of total price impact, no recommended configuration, no 'most popular' indicators.",
+          "severity": "HIGH",
+          "why_it_matters": "Complex configurators without guidance create decision paralysis. Buyers don't know which upgrades matter or total cost until final step. For first-time hottub buyers, this technical complexity without education is a major abandonment risk.",
+          "recommended_fix": "Add live price calculator showing running total as options selected. Mark popular configurations ('Meest gekozen'). Provide 3 preset packages (Basis/Comfort/Premium) as starting points. Add tooltip education per option explaining value/necessity."
+        },
+        {
+          "title": "Generic CTA lacks urgency and product context",
+          "evidence": "Primary CTA is standard 'In winkelwagen' button. No stock indication, lead time transparency, or seasonal urgency messaging despite 'Bestel snel' text buried in delivery block.",
+          "severity": "MEDIUM",
+          "why_it_matters": "For a €2.595 custom-configured product with likely long lead times, generic cart language doesn't address purchase anxiety. No indication if this is make-to-order, stock availability, or delivery timeline reduces conversion confidence.",
+          "recommended_fix": "Context-specific CTA: 'Configureer & bestel (levertijd 6-8 weken)' or 'Reserveer jouw Tøbbe hottub'. Add stock/production status above button. If seasonal demand exists, add urgency: 'Bestel nu voor zomerlevering'."
+        },
+        {
+          "title": "Weak mobile purchase journey and information hierarchy",
+          "evidence": "Mobile loads with WebwinkelKeur modal overlay, followed by nav, breadcrumb, full-screen lifestyle image, then title. No immediate product context, benefits, or trust signals in first interaction. Configurator options not visible in mobile screenshot.",
+          "severity": "MEDIUM",
+          "why_it_matters": "Mobile users face 3-4 scrolls before understanding product value or seeing price. For high-ticket items, this creates early abandonment. Critical conversion elements (price, social proof, unique value) are fragmented across scroll depth.",
+          "recommended_fix": "Redesign mobile first screen: condensed hero (50% height), title + price + 9.7 rating in unified block, 3 key benefits as icons, then CTA. Move configurator to sticky bottom bar or secondary step to reduce cognitive load in discovery phase."
+        }
+      ],
+      "strengths": [
+        {
+          "title": "Strong third-party trust signals and social proof",
+          "evidence": "Prominent 9.7 WebwinkelKeur rating with 14 reviews displayed in header modal, trust badges for 'gratis verzending', 'garantie', and 'veilig betalen'. Testimonials and Instagram UGC referenced in page data."
+        },
+        {
+          "title": "High-quality lifestyle photography establishing context",
+          "evidence": "Hero image shows product in realistic garden setting with wood storage, demonstrating scale, installation context, and aspirational lifestyle. Professional photography quality supports premium €2.595 price point."
+        },
+        {
+          "title": "Comprehensive product configurability for personalization",
+          "evidence": "Desktop reveals extensive customization options across 7+ categories (color, wood frame, heater upgrade, cover, filter system), allowing buyers to tailor product to exact needs – strong for considered purchase category."
+        }
+      ],
+      "anthropicCost": 0.043044,
+      "screenshots": {
+        "homepageDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\hottublifestyle-nl-homepage-desktop-1440x1000.png",
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\hottublifestyle-nl-pdp-desktop-1440x1000.png",
+        "pdpDesktopFull": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\hottublifestyle-nl-pdp-desktop-full.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4.1-screenshots\\hottublifestyle-nl-pdp-mobile-390x844.png"
+      },
+      "showcasePreferred": false
+    }
+  ],
+  "finalRecommendation": {
+    "verdict": "NO_TARGET",
+    "recommendedDomain": null,
+    "showcasePreferred": false,
+    "rationale": [
+      "geen kandidaat haalt contrast 62 (max 52)"
+    ]
+  },
+  "designTargetGate": {
+    "preferredMaxCurrentPdpQuality": 60,
+    "hardMaxCurrentPdpQuality": 70,
+    "minTransformation": 70,
+    "minConceptContrast": 62,
+    "minAssetReadiness": 65,
+    "minDeepDiveFit": 70,
+    "minBusinessMaturity": 40,
+    "minAuditConfidence": 55,
+    "requireCommercialProof": true,
+    "requireFocusedBusiness": true,
+    "blockedBusinessTypes": [
+      "MASS_RETAILER",
+      "GENERAL_RETAILER",
+      "MARKETPLACE",
+      "COMPARISON_SITE"
+    ]
+  },
+  "showcaseContrast": {
+    "hardMin": 62,
+    "preferredMin": 65
+  },
+  "trueSalesDesignFormula": "true_sales_design = 0.40*concept_contrast + 0.32*outreach_concept_fit + 0.18*project_economic_fit + 0.10*measurement_confidence. Transformation en deep-dive fit zitten al in contrast en sales fit, dus die tellen niet nog een keer mee.",
+  "cost": {
+    "anthropic": 0.083688,
+    "anthropicCap": 0.12,
+    "dataForSeo": 0,
+    "auditsRun": 2
+  }
+}

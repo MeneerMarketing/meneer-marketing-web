@@ -1,0 +1,83 @@
+{
+  "hits": [
+    {
+      "re": "/10\\.?000\\+?[^.|]{0,40}/gi",
+      "samples": [
+        "10.000+ Blije huisdieren en baasjes :root { --C",
+        "10.000+ tevreden klanten "
+      ]
+    },
+    {
+      "re": "/tevreden klanten[^.|]{0,40}/gi",
+      "samples": [
+        "tevreden klanten "
+      ]
+    },
+    {
+      "re": "/ster{1,5}/gi",
+      "samples": [
+        "ster"
+      ]
+    },
+    {
+      "re": "/Klarna[^.|]{0,60}/gi",
+      "samples": [
+        "Klarna ✓Snel & Veilig betalen ✓10",
+        "Klarna Productbeschrijving Wat is de beste automatische voerbak vo",
+        "Klarna [data-id=\"gaGl-YJH5x\"]",
+        "Klarna!✔ 14 dagen bedenktijd Contact Contact e-mail: info@tensdesi"
+      ]
+    },
+    {
+      "re": "/Gratis verzending[^.|]{0,60}/gi",
+      "samples": [
+        "Gratis verzending vanaf €25 ✓Achteraf Betalen met Klarna ✓Snel & Veilig betal",
+        "Gratis verzending 🚚 Gratis verzending binnen 1-2 werkdagenDirect na je beste",
+        "gratis verzending bij bestellingen vanaf €25",
+        "gratis verzending bij bestellingen vanaf €50",
+        "gratis verzending bij bestellingen vanaf €50! "
+      ]
+    },
+    {
+      "re": "/Retour[^.|]{0,80}/gi",
+      "samples": [
+        "Retourneren 🔄 RetournerenWil je iets retourneren? Geen probleem, je hebt daar 14 dage",
+        "Retourbeleid Retour aanmelden Servicevoorwaarden Garantie & Klachtenregeling Terugbeta"
+      ]
+    },
+    {
+      "re": "/op voorraad|voorraad/gi",
+      "samples": [
+        "voorraad"
+      ]
+    },
+    {
+      "re": "/€\\s?\\d+[.,]\\d{2}/g",
+      "samples": [
+        "€0,00",
+        "€79,95",
+        "€109,95",
+        "€82,95",
+        "€56,95",
+        "€63,00",
+        "€57,95",
+        "€64,95"
+      ]
+    }
+  ],
+  "productSnippet": {
+    "type": "Product",
+    "name": "Automatische kattenvoerbak met HD camera en app voor 2 katten",
+    "offers": {
+      "@type": "Offer",
+      "availability": "http://schema.org/InStock",
+      "price": 79.95,
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2026-08-12",
+      "url": "https://tensfact.com/products/tensfact-automatische-voerbak-voor-kat-of-hond-met-hd-camera?variant=54287939404100"
+    }
+  },
+  "annCandidates": [],
+  "h1": "Automatische kattenvoerbak met HD camera en app voor 2 katten",
+  "desc": "Automatische voerbak voor kat of kleine hond met HD camera, app bediening, nachtzicht en voerschema. Gratis verzending in Nederland."
+}

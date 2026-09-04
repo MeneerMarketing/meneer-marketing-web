@@ -113,7 +113,22 @@ export async function persistInboundSubmission(
     throw new Error(error?.message ?? "Inbound opslaan mislukt");
   }
 
-  return data as InboundSubmissionRow;
+  const row = data as InboundSubmissionRow;
+
+  try {
+    const { applySmartStopOnInbound } = await import("@/lib/lge/smart-stop-inbound");
+    await applySmartStopOnInbound({
+      businessId: row.business_id,
+      email: row.email,
+      campaignRef: row.campaign_ref,
+      submissionId: row.id,
+      source: row.source,
+    });
+  } catch (smartStopErr) {
+    console.error("[inbound-store] smart stop", smartStopErr);
+  }
+
+  return row;
 }
 
 export async function getInboundSubmission(

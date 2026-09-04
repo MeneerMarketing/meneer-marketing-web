@@ -1,0 +1,485 @@
+{
+  "meta": {
+    "conceptId": "42cc76e8-9e57-48e9-ac27-7533bc09a2a0",
+    "briefId": "34161ae4-5901-4c93-8b62-6e76160f2eb5",
+    "brandSlug": "tensfact-com",
+    "productSlug": "automatische-kattenvoerbak-met-hd-camera-en-app-voor-2-katten",
+    "previewSlug": "concept/tensfact-com/automatische-kattenvoerbak-met-hd-camera-en-app-voor-2-katte",
+    "previewLifecycle": "INTERNAL_PREVIEW",
+    "templateFamily": "PREMIUM_DTC",
+    "templateId": "premium_dtc_a",
+    "templateVersion": "0.3.0-internal",
+    "domain": "tensfact.com",
+    "productUrl": "https://tensfact.com/products/tensfact-automatische-voerbak-voor-kat-of-hond-met-hd-camera",
+    "generatedAt": "2026-08-13T15:33:41.209Z",
+    "omittedSections": [
+      {
+        "section": "PROBLEM_SOLUTION_MEDIA",
+        "reason": "No second photographic asset without baked-in marketing text; section stays typographic"
+      },
+      {
+        "section": "HOW_TO_USE",
+        "reason": "No explicit how-to steps in source"
+      }
+    ],
+    "sectionVariants": {
+      "PRODUCT_STORY": "EDITORIAL_STORY"
+    },
+    "themeReport": {
+      "usedFallback": false,
+      "fallbackReason": null,
+      "sourceColors": [
+        "#28a745",
+        "#f2f2f2",
+        "#ffffff",
+        "#fcfaf7",
+        "#000000",
+        "#1a1a1a",
+        "#5f5f5f",
+        "#0f7326",
+        "#2e413d",
+        "#142b26",
+        "#c0c6c5",
+        "#ffe5da"
+      ],
+      "brandAccent": "#ff4b00"
+    },
+    "crawlPages": [
+      "https://tensfact.com/products/tensfact-automatische-voerbak-voor-kat-of-hond-met-hd-camera",
+      "https://tensfact.com/"
+    ],
+    "navSource": "SOURCE_CONTENT",
+    "rationale": [
+      {
+        "title": "KOOPMOMENT",
+        "body": "Prijs, korting en drie kernvoordelen staan direct boven de CTA. Betaalinformatie volgt als reassurance, niet als ruis."
+      },
+      {
+        "title": "SIGNATURE",
+        "body": "De feature experience laat één groot productbeeld meebewegen met de functie die je aanwijst. Dat vervangt de standaard feature-kaarten."
+      },
+      {
+        "title": "ART DIRECTION",
+        "body": "Zwart als premium basis, het oranje van het merk alleen als accent op prijs, actieve states en markers."
+      },
+      {
+        "title": "MOBIEL",
+        "body": "Titel, prijs en CTA komen binnen één scroll in beeld. De koopbalk verschijnt pas nadat de primaire CTA voorbij is."
+      }
+    ],
+    "currentScreenshots": [],
+    "assetUsage": [
+      {
+        "section": "HERO_BUY_BLOCK",
+        "assets": [
+          "https://tensfact.com/cdn/shop/files/Full_HD_Feeder.png",
+          "https://tensfact.com/cdn/shop/files/18_a1651e63-fe05-42a3-b5d9-840bd05b22c3.png",
+          "https://tensfact.com/cdn/shop/files/15_f15fec19-82ba-401c-97ad-42633452560b.png",
+          "https://tensfact.com/cdn/shop/files/16.png",
+          "https://tensfact.com/cdn/shop/files/13_e09780f0-da6f-426b-a175-217feffcc870.png",
+          "https://tensfact.com/cdn/shop/files/14.png",
+          "https://tensfact.com/cdn/shop/files/Vergelijkingstabel_Pro_XL_-_Full_HD.png",
+          "https://tensfact.com/cdn/shop/files/3.png"
+        ]
+      },
+      {
+        "section": "FEATURE_DEEP_DIVE",
+        "assets": [
+          "https://tensfact.com/cdn/shop/files/Full_HD_Feeder.png"
+        ]
+      },
+      {
+        "section": "PRODUCT_STORY",
+        "assets": [
+          "https://tensfact.com/cdn/shop/files/18_a1651e63-fe05-42a3-b5d9-840bd05b22c3.png"
+        ]
+      },
+      {
+        "section": "TECH_SPECS",
+        "assets": [
+          "https://tensfact.com/cdn/shop/files/15_f15fec19-82ba-401c-97ad-42633452560b.png",
+          "https://tensfact.com/cdn/shop/files/16.png",
+          "https://tensfact.com/cdn/shop/files/13_e09780f0-da6f-426b-a175-217feffcc870.png"
+        ]
+      },
+      {
+        "section": "PROBLEM_SOLUTION",
+        "assets": []
+      },
+      {
+        "section": "FINAL_PURCHASE",
+        "assets": [
+          "https://tensfact.com/cdn/shop/files/Full_HD_Feeder.png"
+        ]
+      }
+    ]
+  },
+  "model": {
+    "theme": {
+      "ink": "#111111",
+      "accent": "#000000",
+      "accentSoft": "#ff4b00",
+      "surface": "#f7f6f4",
+      "surfaceAlt": "#f1f0ee",
+      "cream": "#fafaf9",
+      "logoUrl": "https://tensfact.com/cdn/shop/files/logo_for_white_background-01_1_cf0633ca-1f47-4414-8daa-659b80c4e51e.png",
+      "logoAlt": "Tensfact"
+    },
+    "chrome": {
+      "brandName": "Tensfact",
+      "logoUrl": "https://tensfact.com/cdn/shop/files/logo_for_white_background-01_1_cf0633ca-1f47-4414-8daa-659b80c4e51e.png",
+      "logoAlt": "Tensfact",
+      "navLinks": [
+        {
+          "label": "Automatische Voerbakken",
+          "href": "#pdtc-top"
+        },
+        {
+          "label": "Drinkfontein & Accessoires",
+          "href": "#pdtc-top"
+        },
+        {
+          "label": "Dierenmanden",
+          "href": "#pdtc-top"
+        }
+      ],
+      "announcements": [
+        {
+          "text": "Gratis verzending vanaf €25 · Achteraf betalen met Klarna · 14 dagen bedenktijd"
+        }
+      ],
+      "cartCount": 0,
+      "accountLabel": "Account",
+      "footerTagline": "Automatisch voeren, meekijken en bedienen vanuit de app.",
+      "footerColumns": [
+        {
+          "title": "Shop",
+          "links": [
+            {
+              "label": "Automatische kattenvoerbak met HD camera",
+              "href": "#pdtc-buy-area"
+            },
+            {
+              "label": "Het systeem",
+              "href": "#pdtc-features-title"
+            }
+          ]
+        },
+        {
+          "title": "Service",
+          "links": [
+            {
+              "label": "Veelgestelde vragen",
+              "href": "#pdtc-faq"
+            }
+          ]
+        },
+        {
+          "title": "Voorwaarden",
+          "facts": [
+            "Gratis verzending vanaf €25",
+            "Achteraf betalen met Klarna",
+            "14 dagen bedenktijd"
+          ]
+        }
+      ],
+      "legalNote": "© 2026 Tensfact"
+    },
+    "product": {
+      "brandName": "Tensfact",
+      "title": "Automatische kattenvoerbak met HD camera",
+      "subline": "Automatisch voeren, meekijken en bedienen vanuit de app.",
+      "priceLabel": "€ 79,95",
+      "compareAtLabel": "€ 109,95",
+      "discountLabel": "Je bespaart 27%",
+      "currencyNote": null,
+      "klarnaLabel": "3× € 26,65 met Klarna",
+      "ctaLabel": "In winkelwagen",
+      "inStock": true,
+      "media": [
+        {
+          "id": "img-1",
+          "src": "https://tensfact.com/cdn/shop/files/Full_HD_Feeder.png",
+          "alt": "og:image",
+          "kind": "image",
+          "mediaKind": "packshot",
+          "claim": null
+        },
+        {
+          "id": "img-2",
+          "src": "https://tensfact.com/cdn/shop/files/18_a1651e63-fe05-42a3-b5d9-840bd05b22c3.png",
+          "alt": "og:image",
+          "kind": "image",
+          "mediaKind": "other",
+          "claim": null
+        },
+        {
+          "id": "img-3",
+          "src": "https://tensfact.com/cdn/shop/files/15_f15fec19-82ba-401c-97ad-42633452560b.png",
+          "alt": "og:image",
+          "kind": "image",
+          "mediaKind": "other",
+          "claim": null
+        },
+        {
+          "id": "img-4",
+          "src": "https://tensfact.com/cdn/shop/files/16.png",
+          "alt": "Automatische voerbak: Nooit meer stress over voedertijd! Tensfact.com",
+          "kind": "image",
+          "mediaKind": "use_case",
+          "claim": null
+        },
+        {
+          "id": "img-5",
+          "src": "https://tensfact.com/cdn/shop/files/13_e09780f0-da6f-426b-a175-217feffcc870.png",
+          "alt": "Automatische voerbak: Nooit meer stress over voedertijd! Tensfact.com",
+          "kind": "image",
+          "mediaKind": "use_case",
+          "claim": null
+        },
+        {
+          "id": "img-6",
+          "src": "https://tensfact.com/cdn/shop/files/14.png",
+          "alt": "Automatische voerbak: Nooit meer stress over voedertijd! Tensfact.com",
+          "kind": "image",
+          "mediaKind": "use_case",
+          "claim": null
+        },
+        {
+          "id": "img-7",
+          "src": "https://tensfact.com/cdn/shop/files/Vergelijkingstabel_Pro_XL_-_Full_HD.png",
+          "alt": "Automatische voerbak: Nooit meer stress over voedertijd! Tensfact.com",
+          "kind": "image",
+          "mediaKind": "comparison",
+          "claim": null
+        },
+        {
+          "id": "img-8",
+          "src": "https://tensfact.com/cdn/shop/files/3.png",
+          "alt": "Automatische voerbak: Een slimme oplossing voor voedertijd! Tensfact.com",
+          "kind": "image",
+          "mediaKind": "use_case",
+          "claim": null
+        }
+      ],
+      "trustItems": [
+        {
+          "label": "Gratis verzending vanaf €25",
+          "source": "SOURCE_CONTENT"
+        },
+        {
+          "label": "Achteraf betalen met Klarna",
+          "source": "SOURCE_CONTENT"
+        },
+        {
+          "label": "14 dagen bedenktijd",
+          "source": "SOURCE_CONTENT"
+        }
+      ],
+      "uspPills": [],
+      "buyBenefits": [
+        {
+          "title": "Voeren op schema",
+          "body": "Stel maaltijden en porties in via de app, zodat voedertijden automatisch lopen."
+        },
+        {
+          "title": "Full HD camera",
+          "body": "Kijk via de app mee terwijl je huisdier eet, ook wanneer je niet thuis bent."
+        },
+        {
+          "title": "Nachtzicht",
+          "body": "Infrarood nachtzicht zodat je ook in het donker kunt meekijken."
+        },
+        {
+          "title": "Voor twee katten",
+          "body": "Dubbele RVS kommen, geschikt om twee katten tegelijk te voeren."
+        },
+        {
+          "title": "App-bediening",
+          "body": "Bedien voerschema en camera vanaf je telefoon."
+        }
+      ],
+      "socialProofLabel": "10.000+ tevreden klanten",
+      "reassureItems": [
+        "Gratis verzending vanaf €25",
+        "Achteraf betalen met Klarna",
+        "14 dagen bedenktijd"
+      ],
+      "paymentMethods": [
+        "ideal",
+        "klarna"
+      ],
+      "offerCard": null,
+      "miniFaqs": [],
+      "rating": null,
+      "reviewCount": null,
+      "ratingNote": null,
+      "ratingHref": null,
+      "deliveryCutoffHour": 23,
+      "deliveryCutoffMinute": 0
+    },
+    "content": {
+      "benefitsKicker": "Het product",
+      "benefitsTitle": "Voeren op schema. Met zicht op de kom.",
+      "benefitsLead": "Je stelt de voertijden en porties in via de app. De camera laat zien wat er bij de kom gebeurt.",
+      "introStat": {
+        "value": "10.000+",
+        "label": "tevreden klanten"
+      },
+      "introFacts": [
+        "Gratis verzending vanaf €25",
+        "Achteraf betalen met Klarna",
+        "14 dagen bedenktijd"
+      ],
+      "benefits": [],
+      "featuresKicker": "Het systeem",
+      "featuresTitle": "Wat de voerbak voor je doet",
+      "featuresLead": "Loop de functies langs en bekijk het product van dichtbij.",
+      "features": [
+        {
+          "title": "Voeren op schema",
+          "body": "Stel maaltijden en porties in via de app, zodat voedertijden automatisch lopen.",
+          "accent": "#ff4b00",
+          "image": null,
+          "source": "DERIVED_COPY"
+        },
+        {
+          "title": "Full HD camera",
+          "body": "Kijk via de app mee terwijl je huisdier eet, ook wanneer je niet thuis bent.",
+          "accent": "#ff4b00",
+          "image": null,
+          "source": "DERIVED_COPY"
+        },
+        {
+          "title": "Nachtzicht",
+          "body": "Infrarood nachtzicht zodat je ook in het donker kunt meekijken.",
+          "accent": "#ff4b00",
+          "image": null,
+          "source": "DERIVED_COPY"
+        }
+      ],
+      "detailKicker": "Details",
+      "detailTitle": "Details die je dagelijks merkt",
+      "detailItems": [
+        {
+          "title": "Voor twee katten",
+          "body": "Dubbele RVS kommen, geschikt om twee katten tegelijk te voeren.",
+          "accent": "#ff4b00",
+          "image": null,
+          "source": "DERIVED_COPY"
+        },
+        {
+          "title": "App-bediening",
+          "body": "Bedien voerschema en camera vanaf je telefoon.",
+          "accent": "#ff4b00",
+          "image": null,
+          "source": "DERIVED_COPY"
+        }
+      ],
+      "detailMedia": [
+        "https://tensfact.com/cdn/shop/files/15_f15fec19-82ba-401c-97ad-42633452560b.png",
+        "https://tensfact.com/cdn/shop/files/16.png",
+        "https://tensfact.com/cdn/shop/files/13_e09780f0-da6f-426b-a175-217feffcc870.png"
+      ],
+      "featureCanvas": "https://tensfact.com/cdn/shop/files/Full_HD_Feeder.png",
+      "story": {
+        "kicker": "Voerschema",
+        "title": "Voeding op jouw schema, ook als je er niet bent.",
+        "body": "De voerbak verdeelt de maaltijden volgens het schema dat jij instelt. Tijden en porties pas je aan in de app op je telefoon. Via de camera zie je wat er bij de kom gebeurt.",
+        "ctaLabel": "Naar het koopblok",
+        "backgroundImage": "https://tensfact.com/cdn/shop/files/18_a1651e63-fe05-42a3-b5d9-840bd05b22c3.png",
+        "mediaFit": "contain",
+        "source": "DERIVED_COPY"
+      },
+      "secondaryStory": {
+        "kicker": "Full HD camera",
+        "title": "Meekijken terwijl zij eten.",
+        "body": "Kijk via de app mee terwijl je huisdier eet, ook wanneer je niet thuis bent.",
+        "backgroundImage": null,
+        "source": "DERIVED_COPY"
+      },
+      "immersiveMeta": [
+        "Full HD camera",
+        "Nachtzicht",
+        "App-bediening"
+      ],
+      "howSteps": [],
+      "reviews": [],
+      "faqs": [
+        {
+          "question": "Wat is de beste automatische voerbak voor katten?",
+          "answer": "De Tensfact automatische voerbak met camera is een van de beste keuzes voor katten dankzij app bediening, HD camera en RVS kommen.",
+          "source": "SOURCE_CONTENT"
+        },
+        {
+          "question": "Werkt de camera ook in het donker?",
+          "answer": "Ja, dankzij infrarood nachtzicht kun je ook in het donker meekijken.",
+          "source": "SOURCE_CONTENT"
+        },
+        {
+          "question": "Kan ik twee katten tegelijk voeren?",
+          "answer": "Ja, de dubbele RVS kommen maken voeren van twee katten tegelijk mogelijk.",
+          "source": "SOURCE_CONTENT"
+        },
+        {
+          "question": "Hoeveel voer past er in de voerbak?",
+          "answer": "De inhoud is vier liter, goed voor vijfentwintig tot dertig dagen voer voor een volwassen kat.",
+          "source": "SOURCE_CONTENT"
+        }
+      ],
+      "faqLead": "Vragen die klanten stellen voordat ze bestellen.",
+      "finalKicker": "Bestellen",
+      "finalTitle": "Automatische kattenvoerbak met HD camera",
+      "finalBody": "Automatisch voeren, meekijken en bedienen vanuit de app.",
+      "finalCtaLabel": "Bestel nu",
+      "finalImage": "https://tensfact.com/cdn/shop/files/Full_HD_Feeder.png",
+      "finalReassure": [
+        "Gratis verzending vanaf €25",
+        "Achteraf betalen met Klarna",
+        "14 dagen bedenktijd"
+      ]
+    },
+    "sectionPlan": [
+      {
+        "section": "HERO_BUY_BLOCK",
+        "content_source": "SOURCE_CONTENT"
+      },
+      {
+        "section": "TRUST_BAR",
+        "content_source": "SOURCE_CONTENT"
+      },
+      {
+        "section": "BENEFIT_GRID",
+        "content_source": "DERIVED_COPY"
+      },
+      {
+        "section": "FEATURE_DEEP_DIVE",
+        "content_source": "DERIVED_COPY"
+      },
+      {
+        "section": "PRODUCT_STORY",
+        "content_source": "DERIVED_COPY"
+      },
+      {
+        "section": "TECH_SPECS",
+        "content_source": "DERIVED_COPY"
+      },
+      {
+        "section": "PROBLEM_SOLUTION",
+        "content_source": "DERIVED_COPY"
+      },
+      {
+        "section": "FAQ",
+        "content_source": "SOURCE_CONTENT"
+      },
+      {
+        "section": "FINAL_PURCHASE",
+        "content_source": "DERIVED_COPY"
+      },
+      {
+        "section": "STICKY_ATC",
+        "content_source": "DERIVED_COPY"
+      }
+    ]
+  }
+}

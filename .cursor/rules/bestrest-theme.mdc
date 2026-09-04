@@ -1,0 +1,47 @@
+---
+description: BestRest Shopify theme — iconen, legal pages, PDP specs, live push
+globs: bestrest-theme/**/*
+alwaysApply: false
+---
+
+# BestRest (`bestrest-theme/`)
+
+Live theme: **BestRest Skeleton** `#202224533841` · store `best-rest-5422.myshopify.com`  
+Push: `shopify theme push --store best-rest-5422.myshopify.com --theme 202224533841 --allow-live --only <files>`
+
+Niet mixen met `shopify/` (Skin Complete) of `shopify-theme-bestrest/`.
+
+## UI-iconen (`br-ui-icon`)
+
+**Altijd** via [snippets/br-ui-icon.liquid](bestrest-theme/snippets/br-ui-icon.liquid). Nooit losse `<img>` of `background-image` op icon-assets.
+
+- CSS-basis: [assets/br-ui-icons.css](bestrest-theme/assets/br-ui-icons.css) — `object-fit: contain`, default `--br-ui-inset: 0.16`.
+- Oranje vierkante tegels (zakelijk USP, contact): `--br-ui-inset: 0.22` (staat in CSS op `.br-zk__usp-ico`).
+- `tone: 'light'` alleen op donkere/oranje achtergrond (wit via filter).
+- PNG's komen uit sheets: [data/slice-br-ui-icons.mjs](bestrest-theme/data/slice-br-ui-icons.mjs). Na sheet-wijziging: `cd bestrest-theme/data && node slice-br-ui-icons.mjs`. Script faalt als icon tegen rand plakt.
+- Symptoom “ingezoomd / afgesneden”: eerst PNG's opnieuw slicen, niet alleen CSS tweaken.
+
+## Legal / service pages
+
+- Template: [templates/page.br-legal.json](bestrest-theme/templates/page.br-legal.json) (suffix `br-legal` op alle 5 pages)
+- **Alles in één render:** [snippets/br-legal-shell.liquid](bestrest-theme/snippets/br-legal-shell.liquid) detecteert `page.handle` / policy zelf en rendert body
+- Unieke body per type (`terms|shipping|refund|privacy|klachten`): [snippets/br-legal-body.liquid](bestrest-theme/snippets/br-legal-body.liquid)
+- **Nooit** type zetten via apart `{% render 'br-legal-init' %}`: Liquid `render` isoleert assigns → elke pagina viel terug op voorwaarden
+- Section: [sections/page-legal.liquid](bestrest-theme/sections/page-legal.liquid). Fallback op default template: [snippets/br-legal-fallback.liquid](bestrest-theme/snippets/br-legal-fallback.liquid)
+- Geen identieke highlight/facts-blokken op elke pagina. Geen aparte `br-legal-hero` sectie.
+
+## PDP-specificaties
+
+Elke `profile_key` in [snippets/br-product-master.liquid](bestrest-theme/snippets/br-product-master.liquid) **moet** een case hebben in [snippets/br-pdp-specs-fallback.liquid](bestrest-theme/snippets/br-pdp-specs-fallback.liquid). Anders valt PDP terug op generieke specs.
+
+## WhatsApp FAB
+
+Alleen rond icoon, geen peek-bubble of uitklaptekst: [snippets/br-whatsapp-fab.liquid](bestrest-theme/snippets/br-whatsapp-fab.liquid).
+
+## Copy
+
+Informeel **jij/je**. Geen em-dash, geen genummerde stappen in UI. Positief formuleren.
+
+## Upload-checklist
+
+Bij live push: gewijzigde bestanden als markdown-links vanaf repo-root (zie AGENTS.md regel 5).

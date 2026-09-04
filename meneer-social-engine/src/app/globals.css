@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --mm-bg: #f3f7fb;
+  --mm-surface: #e8f0f8;
+  --mm-text: #0f172a;
+  --mm-muted: #64748b;
+  --mm-accent: #c2410c;
+  --mm-accent-bold: #ff5722;
+  --mm-footer: #0c1222;
+}
+
+@theme inline {
+  --color-mm-bg: var(--mm-bg);
+  --color-mm-surface: var(--mm-surface);
+  --color-mm-text: var(--mm-text);
+  --color-mm-muted: var(--mm-muted);
+  --color-mm-accent: var(--mm-accent);
+  --color-mm-accent-bold: var(--mm-accent-bold);
+  --color-mm-footer: var(--mm-footer);
+  --font-sans: var(--font-plus-jakarta);
+}
+
+body {
+  background: var(--mm-bg);
+  color: var(--mm-text);
+}

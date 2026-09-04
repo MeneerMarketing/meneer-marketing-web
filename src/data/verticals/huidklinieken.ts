@@ -11,15 +11,18 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
   verticalNamePlural: "Huidklinieken",
   themeAccent: "#FF5722",
   seo: {
-    title: "Huidkliniek online: site, Maps & intake | Meneer Marketing",
+    title: "Huidkliniek website laten maken | SEO & marketing | Meneer Marketing",
     description:
-      "Custom website voor je huidkliniek, lokale SEO en een pad van Google naar intake. Clinic Edition vanaf €89/m, launch tijdelijk €0. Eén partner per stad.",
+      "Huidkliniek website laten maken? Site from scratch, Salonized, hosting inbegrepen. Local Growth met huidproblemen-SEO. Growth Partner met Shopify. Clinic Edition vanaf €89/m, launch tijdelijk €0.",
     keywords: [
       "huidkliniek website",
+      "huidkliniek website laten maken",
       "cosmetische kliniek marketing",
+      "website cosmetische kliniek",
       "lokale seo huidkliniek",
       "google business huidkliniek",
-      "website cosmetische kliniek",
+      "salonized koppeling website",
+      "shopify kliniek webshop",
       "intake boeken website kliniek",
     ],
   },
@@ -42,20 +45,21 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
       {
         id: "studio-edition",
         name: "Clinic Edition",
-        eyebrow: "Digitale voordeur",
-        tagline: "De digitale voordeur van je kliniek. Rustig, helder, klaar om te boeken.",
-        ladderLabel: "Kliniek-site",
+        eyebrow: "Instap die voelt als premium",
+        tagline: "Je kliniek digitaal. Salonized erop. Eindelijk op niveau.",
+        ladderLabel: "Website + Salonized",
         monthly: { amount: 89, unit: "eur", cadence: "monthly" },
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
         ctaLabel: "Ik wil Clinic Edition",
         inclusions: [
           "Website live binnen 5 werkdagen",
           "SEO-injectie op huidkliniek [jouw stad]",
-          "Eén van de high-end Clinic Editions",
+          "Website designed around jouw kliniek en branding",
           "Aangepast aan naam, logo en huisstijl",
           "Mobiel geoptimaliseerd (daar boeken de meeste intakes)",
           "Behandelingen, team, tarieven, contact en locatie",
-          "Afspraakkoppeling met bestaand systeem (waar technisch redelijk)",
+          "Salonized-koppeling (agenda-licentie van Salonized apart)",
+          "Intake en consult direct vanaf je site naar je agenda",
           "Technische SEO + schema + tracking-basis",
           "Domeinnaam, hosting, beveiliging en technisch onderhoud",
           "Kleine sitewijzigingen in je abonnement (teksten, tarieven, foto's)",
@@ -65,46 +69,52 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
       {
         id: "local-growth",
         name: "Local Growth",
-        eyebrow: "Maps & stad",
+        eyebrow: "Meest gekozen",
         tagline:
-          "Zichtbaar op huidkliniek + stad, behandelingen en Maps. Elke maand bijgestuurd.",
-        ladderLabel: "Site + lokale vindbaarheid",
+          "Huidproblemen, apparatuur en behandeling. Landings + SEO die intakes opleveren.",
+        ladderLabel: "Website + huidproblemen SEO",
         recommended: true,
         monthly: { amount: 179, unit: "eur", cadence: "monthly" },
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
         ctaLabel: "Local Growth is mijn ding",
         inclusions: [
-          "Alles uit Clinic Edition",
-          "Meerdere landingspagina's (behandelingen, huidverbetering, …)",
-          "SEO op bredere lokale zoektermen, niet alleen huidkliniek [stad]",
+          "Alles uit Clinic Edition (hosting, domein, Salonized, onderhoud)",
+          "Landingspagina's per huidprobleem (acne, pigment, roodheid, …)",
+          "Elk probleem gekoppeld aan jouw apparatuur en behandeling",
+          "SEO op symptoom + behandeling + [jouw stad]",
+          "Pagina's voor laser, peelings, injectables waar relevant",
           "Actieve lokale SEO + maandelijkse bijsturing",
           "Google Business Profile-optimalisatie",
           "Keywordstrategie, Search Console en rank tracking",
           "SEO-dashboard / rapportage",
           "Lokale concurrentieanalyse",
+          "Maandelijkse rank- en Maps-bijsturing",
           "Stadsexclusiviteit binnen dit programma",
         ],
       },
       {
         id: "growth-partner",
         name: "Growth Partner",
-        eyebrow: "Agenda vullen",
+        eyebrow: "Shop, ads, influencers",
         tagline:
-          "Organisch blijft lopen. Google Ads, Meta Ads en creators vullen de agenda sneller.",
-        ladderLabel: "Vindbaarheid + ads",
+          "Huidproblemen-SEO blijft lopen. Shopify shop, Google Ads, Meta Ads en creators erbovenop.",
+        ladderLabel: "Complete groei + shop",
         monthly: { amount: 399, unit: "eur", cadence: "monthly" },
         setup: { amount: 295, unit: "eur", cadence: "one_time" },
         ctaLabel: "Praat over Growth Partner",
         inclusions: [
-          "Alles uit Local Growth",
+          "Alles uit Local Growth (hosting, huidproblemen-landings, SEO)",
+          "Shopify shop setup + koppeling aan je site (Shopify-plan apart)",
+          "Homecare, serums en retail naast je behandelingen",
+          "Productpagina's, collecties en merkstijl in lijn met je kliniek",
+          "Koppeling shop → behandeling → Salonized-intake",
           "Google Ads-beheer (advertentiebudget niet inbegrepen)",
           "Meta Ads waar bereik en retargeting het verschil maken",
-          "Campagne-landingspagina's die direct naar intake leiden",
+          "Campagne-landingspagina's die naar shop of intake leiden",
           "Influencer-matches en collabs die bij jouw kliniek passen",
           "Creator-boosts: content die klikt én boekt",
-          "Conversion tracking op intake en herhaalafspraak",
-          "Advertenties gekoppeld aan relevante behandelingen",
-          "Booking funnel-analyse + CRO",
+          "Conversion tracking op shop, intake en herhaalafspraak",
+          "Funnel-analyse shop → behandeling + CRO",
           "Retargeting / aanvullende campagnes waar relevant",
           "Maandelijkse groeianalyse",
         ],
@@ -113,7 +123,7 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
     signatureCustom: {
       name: "Signature Custom",
       heading: "Alles op maat, vanaf nul.",
-      lead: "Past je kliniek niet in een vakje? Dan bouw ik een complete from-scratch site. Eigen art direction, UX en architectuur.",
+      lead: "Past je kliniek niet in een vakje? Dan bouw ik site, eigen boekingssysteem en flows from scratch. Jouw proces, jouw UX. Hosting en beheer regel je daarna zelf of los bij me.",
       fromPrice: {
         amount: 2950,
         unit: "eur",
@@ -121,9 +131,10 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
         prefix: "Vanaf",
       },
       bullets: [
+        "Eigen boekingssysteem from scratch",
         "Volledig unieke art direction",
         "Custom UX en componentarchitectuur",
-        "Bijzondere koppelingen en funnels",
+        "Shop, portaal of CRM-koppeling waar nodig",
         "Multi-location en complexe klinieken",
         "SEO en Growth daarna optioneel erbij",
       ],
@@ -166,18 +177,19 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
   bookingRoutes: [
     {
       id: "existing",
-      title: "Bestaand systeem koppelen",
-      lead: "Heb je al een agenda of patiëntensysteem dat werkt? Mooi. Dan koppel ik intake, consult en herhaalafspraken netjes aan de nieuwe site.",
+      title: "Salonized of bestaand systeem",
+      lead: "Voor Clinic Edition en Local Growth koppel ik je site aan Salonized, Treatwell of wat jij al gebruikt. Intake blijft in je vertrouwde agenda.",
       bullets: [
-        "Intake en consult",
-        "Herhaalafspraken",
-        "Zit in Clinic Edition waar technisch redelijk",
+        "Salonized, Treatwell of vergelijkbaar",
+        "Intake en consult vanaf je site",
+        "Standaard in Clinic Edition en Local Growth",
       ],
+      providerExample: "Salonized",
     },
     {
       id: "branded-app",
       title: "Branded kliniek-app",
-      lead: "Een professionele route via geschikte kliniek-software. Jouw logo, jouw huisstijl, zonder custom-app-prijskaartje.",
+      lead: "Salonized (of vergelijkbaar) met jouw logo en huisstijl. Professioneel, zonder custom-app-prijskaartje.",
       bullets: [
         "App met jouw logo en huisstijl",
         "Agenda, boeken, herinneringen",
@@ -186,20 +198,22 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
       ],
       priceNote:
         "Meneer Marketing setup vanaf €395 eenmalig. Softwarelicentie van de provider apart.",
+      providerExample: "Salonized",
     },
     {
       id: "custom",
-      title: "Volledig maatwerk",
-      lead: "Voor klinieken met bijzondere processen: custom funnel, portaal of app. Alleen als de scope dat echt vraagt.",
+      title: "Signature · eigen boekingssysteem",
+      lead: "Alleen bij Signature Custom: ik bouw je booking funnel from scratch. Voor klinieken met eigen proces, meerdere locaties of bijzondere intake-flows.",
       bullets: [
-        "Custom booking funnel vanaf €750",
-        "Custom app / klantomgeving vanaf €4.950 of op aanvraag",
-        "Alleen wanneer scope dat echt vraagt",
+        "Custom booking funnel from scratch",
+        "Eigen regels, eigen stappen, eigen UX",
+        "Koppeling met shop, portaal of CRM mogelijk",
+        "Scope en prijs op maat in Signature",
       ],
     },
   ],
   bookingProviderNote:
-    "Externe softwareprijzen hardcode ik bewust niet. Die wijzigen. Ik kies wat bij budget en kliniek past, niet automatisch het duurste.",
+    "Salonized- en Shopify-licenties betaal je rechtstreeks aan de provider. Ik regel de koppeling en setup. Hosting, domein en onderhoud zitten in je abonnement (twv. €25/m).",
   flowPhases: [
     {
       id: "found",
@@ -255,7 +269,7 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
     {
       question: "Wat als we al een agenda of patiëntensysteem hebben?",
       answer:
-        "Dan houd je dat. Waar het technisch redelijk is, koppel ik de site aan intake, consult en herhaalafspraak. Zo blijft de boeking in jullie bestaande flow.",
+        "Dan houd je dat. In Clinic Edition en Local Growth koppel ik standaard aan Salonized of wat jij al gebruikt. Intake en consult lopen vanaf je site naar je bestaande agenda.",
     },
     {
       question: "Schrijf jij teksten die medische claims claimen?",
@@ -281,7 +295,27 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
       question:
         "Wanneer kies ik Local Growth of Growth Partner in plaats van alleen Clinic Edition?",
       answer:
-        "Clinic Edition zet site + basisinjectie op huidkliniek [jouw stad]. Local Growth trekt bredere lokale zoektermen, Maps en maandelijkse sturing. Growth Partner voegt Google Ads, Meta Ads en creator-werk toe; mediabudget blijft apart.",
+        "Clinic Edition zet site + Salonized + basis op huidkliniek [jouw stad]. Local Growth voegt huidproblemen-landings toe: acne, pigment, roodheid gekoppeld aan jouw apparatuur, met SEO per probleem. Growth Partner voegt daar een Shopify shop voor homecare en Google Ads, Meta Ads en creators bovenop; mediabudget blijft apart.",
+    },
+    {
+      question: "Wat zijn die huidproblemen-landings precies?",
+      answer:
+        "Pagina's per klacht of huidprobleem die mensen echt zoeken. Acne, donkere kringen, roodheid, pigment. Elke pagina koppelt het probleem aan jouw behandeling en apparatuur, met lokale SEO. Zo land je op intentie, niet alleen op huidkliniek [stad].",
+    },
+    {
+      question: "Zit een webshop in Growth Partner?",
+      answer:
+        "Ja. Ik bouw en koppel een Shopify shop aan je site: homecare, serums, retail naast je behandelingen. Producten, collecties en checkout in lijn met je kliniek. Advertentiebudget voor Google en Meta blijft apart.",
+    },
+    {
+      question: "Zit hosting en domein in het abonnement?",
+      answer:
+        "Ja. Domeinnaam, hosting, beveiliging en technisch onderhoud zitten in Clinic Edition en blijven in Local Growth en Growth Partner. Dat is twv. €25 per maand, inbegrepen in je maandbedrag. Kleine sitewijzigingen ook.",
+    },
+    {
+      question: "Wanneer kies ik Signature Custom?",
+      answer:
+        "Als Salonized of standaard koppelingen niet passen. Dan bouw ik site én eigen boekingssysteem from scratch. Multi-locatie, eigen intake-flow of shop op maat. SEO en Growth kun je daarna los bij me regelen.",
     },
   ],
   howItWorks: [
@@ -295,7 +329,7 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
     },
     {
       title: "Site, Maps en intake-route",
-      body: "Jouw content erin, lokale structuur scherp, knop naar afspraak die klopt.",
+      body: "Salonized-koppeling, lokale structuur scherp, knop naar afspraak die klopt.",
     },
     {
       title: "Live in circa 5 werkdagen",
@@ -303,24 +337,24 @@ export const HUIDKLINIEKEN_VERTICAL: VerticalLandingConfig = {
     },
     {
       title: "Groeien op jouw tempo",
-      body: "Local Growth voor meer zoektermen en Maps. Growth Partner plus Google Ads, Meta Ads en creators.",
+      body: "Local Growth voor huidproblemen-landings en Maps. Growth Partner plus Shopify, Google Ads, Meta Ads en creators.",
     },
   ],
   localSeoExamples: {
     queries: [
       "huidkliniek Utrecht",
-      "cosmetische kliniek Utrecht",
-      "laserontharing Utrecht",
-      "huidverbetering Utrecht",
+      "donkere kringen behandeling Utrecht",
+      "acne behandeling Utrecht",
+      "laser huidverbetering Utrecht",
     ],
     pages: [
       "Homepage",
-      "Behandelingen",
-      "Huidverbetering",
+      "Huidkliniek [stad]",
+      "Donkere kringen",
+      "Acne & huidproblemen",
+      "Apparatuur & behandeling",
       "Intake / consult",
-      "Prijzen",
-      "Team / kliniek",
-      "FAQ",
+      "Shop homecare",
     ],
   },
 };

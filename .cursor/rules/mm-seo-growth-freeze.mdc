@@ -1,0 +1,18 @@
+---
+description: MeneerMarketing /zoeken SEO growth freeze — geen nieuwe landings tot consolidatie
+globs: src/data/seo-landings/**/*,src/lib/seo-landings*.ts,src/app/zoeken/**/*
+alwaysApply: false
+---
+
+# `/zoeken/` growth freeze (actief)
+
+Geen nieuwe SEO-landings toevoegen:
+
+- Geen nieuwe files in `src/data/seo-landings/pages/`
+- Geen nieuwe steden in `city-registry.ts`
+- Geen nieuwe city clones in `locations*.ts`
+- Geen “batch 6” of uitbreiding van city-trio bases
+
+Wel toegestaan: prunen, noindex, 301/canonical, page-weight fixes, copy uniek maken op bestaande hubs.
+
+Bron: `src/data/seo-landings/growth-freeze.ts` (runtime ceiling-assert).

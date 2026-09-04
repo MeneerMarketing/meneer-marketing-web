@@ -165,7 +165,7 @@ export const VERANDERCHECK_STAPPEN: readonly {
   {
     kop: "Vorm, rand en kleur",
     tekst:
-      "De behandelaar beoordeelt of de plek gelijkmatig van kleur is en of de rand scherp begrensd loopt. Dat onderscheidt een zonvlek van iets anders.",
+      "De behandelaar kijkt of de kleur gelijkmatig is en of de rand scherp loopt. Dat onderscheidt een zonvlek van iets anders.",
   },
   {
     kop: "Onder UV-licht",

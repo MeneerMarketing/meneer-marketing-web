@@ -10,42 +10,48 @@ const STEPS = [
     id: "studio",
     packageName: "Clinic Edition",
     priceHint: "€89/m",
-    title: "Huidkliniek [jouw stad]",
-    body: "De kernzoekterm waar het geld zit. SEO-injectie zit erin, website live binnen vijf werkdagen.",
+    title: "Huidkliniek [jouw stad] + Salonized",
+    body: "Site from scratch, Salonized-koppeling voor intake. SEO-injectie op huidkliniek [stad], live binnen vijf werkdagen.",
     bullets: [] as string[],
-    pages: ["Homepage", "Huidkliniek [stad]"],
+    pages: ["Homepage", "Huidkliniek [stad]", "Salonized boeken"],
     height: "lg:h-[260px]",
   },
   {
     id: "growth",
     packageName: "Local Growth",
     priceHint: "€179/m",
-    title: "Meer zoektermen, meer pagina's",
-    body: "Behandelingen, huidverbetering, intake, prijzen en locatie krijgen een eigen pagina. Elke maand bijsturen.",
+    title: "Huidproblemen + apparatuur + SEO",
+    body: "Landings per klacht: acne, pigment, roodheid. Gekoppeld aan jouw behandeling en apparatuur. Symptoom + stad in Google.",
     bullets: [] as string[],
-    pages: ["Behandelingen", "Huidverbetering", "Intake", "Prijzen", "Locatie"],
+    pages: [
+      "Donkere kringen",
+      "Acne",
+      "Apparatuur",
+      "Laser",
+      "Intake",
+    ],
     height: "lg:h-[340px]",
   },
   {
     id: "partner",
     packageName: "Growth Partner",
     priceHint: "€399/m",
-    title: "SEO, Ads én influencers. Hard groeien.",
-    body: "Alles van Local Growth, plus de kanalen die écht volume brengen. Organisch blijft lopen, betaald en creators zetten er vaart achter.",
+    title: "Shopify shop + SEO + ads",
+    body: "Alles uit Local Growth, plus Shopify voor homecare en Google Ads, Meta Ads en creators. Shop-plan en advertentiebudget apart.",
     bullets: [
-      "Google Ads-beheer op behandelingen en intakes",
+      "Shopify shop (homecare, serums, retail)",
+      "Google Ads op behandelingen en producten",
       "Meta Ads waar bereik en retargeting tellen",
-      "Campagne-landingspagina's die direct laten boeken",
-      "Influencer-matches en collabs die bij jouw kliniek passen",
-      "Boosts via creators: content die echt klikt en boekt",
-      "Funnel-analyse, CRO en maandelijkse groeianalyse",
+      "Campagne-landings naar shop of intake",
+      "Influencer-matches die bij jouw kliniek passen",
+      "Funnel-analyse shop → behandeling + CRO",
     ],
     pages: [
+      "Shopify",
       "Google Ads",
       "Meta Ads",
-      "Influencers",
       "Landings",
-      "Retargeting",
+      "Shop → intake",
       "CRO",
     ],
     height: "lg:h-[520px]",
@@ -113,8 +119,8 @@ export function HuidkliniekGoogleStrategy() {
                       aria-pressed={selected}
                       className={
                         selected
-                          ? `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-white/20 bg-white/[0.1] p-5 text-left shadow-[0_20px_50px_-28px_rgba(0,0,0,0.55)] transition sm:p-6`
-                          : `${step.height} relative flex w-full flex-col justify-end overflow-hidden rounded-t-3xl border border-b-0 border-white/10 bg-white/[0.03] p-5 text-left transition hover:bg-white/[0.06] sm:p-6`
+                          ? `${step.height} relative flex w-full flex-col overflow-hidden rounded-t-3xl border border-b-0 border-white/20 bg-white/[0.1] p-5 pt-6 text-left shadow-[0_20px_50px_-28px_rgba(0,0,0,0.55)] transition sm:p-6 sm:pt-7`
+                          : `${step.height} relative flex w-full flex-col overflow-hidden rounded-t-3xl border border-b-0 border-white/10 bg-white/[0.03] p-5 pt-6 text-left transition hover:bg-white/[0.06] sm:p-6 sm:pt-7`
                       }
                       initial={false}
                       animate={reduce ? undefined : { y: selected ? -6 : 0 }}
@@ -143,7 +149,7 @@ export function HuidkliniekGoogleStrategy() {
                       </p>
 
                       {step.bullets.length > 0 ? (
-                        <ul className="mt-3 space-y-1.5">
+                        <ul className="mt-3 flex-1 space-y-1.5">
                           {step.bullets.map((item) => (
                             <li
                               key={item}
@@ -157,9 +163,11 @@ export function HuidkliniekGoogleStrategy() {
                             </li>
                           ))}
                         </ul>
-                      ) : null}
+                      ) : (
+                        <div className="hidden flex-1 lg:block" aria-hidden />
+                      )}
 
-                      <div className="mt-4 flex flex-wrap gap-1.5">
+                      <div className="mt-4 flex flex-wrap gap-1.5 lg:mt-auto lg:pt-4">
                         {step.pages.map((page) => (
                           <span
                             key={page}

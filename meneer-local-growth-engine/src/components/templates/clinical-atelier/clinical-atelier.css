@@ -1,0 +1,221 @@
+.clinical-atelier-root {
+  --atelier-warm-white: #faf9f7;
+  --atelier-off-white: #f5f3f0;
+  --atelier-light-grey: #ecebe8;
+  --atelier-cool-mist: #e9eef0;
+  --atelier-charcoal: #292825;
+  --atelier-soft-black: #181817;
+  --atelier-muted: #716f6a;
+  --atelier-border: #dedcd8;
+  --atelier-primary: #2e5b8a;
+  --atelier-primary-dark: #1a3a5c;
+  --atelier-primary-light: #c2d4e8;
+  --atelier-primary-canvas: #ebf0f7;
+  --atelier-primary-medium: #5b84b1;
+  --atelier-warm-accent: #a88670;
+
+  font-family: var(--font-atelier-sans), ui-sans-serif, system-ui, sans-serif;
+  background-color: var(--atelier-warm-white);
+  color: var(--atelier-charcoal);
+  scrollbar-width: none;
+}
+
+.clinical-atelier-root::-webkit-scrollbar {
+  display: none;
+}
+
+.clinical-atelier-root section,
+.clinical-atelier-root footer {
+  scroll-margin-top: 96px;
+}
+
+/* Fallback utilities: atelier kleuren werken alleen als Tailwind ze genereert.
+   Deze scoped regels garanderen contrast op donkere én lichte vlakken. */
+.clinical-atelier-root .text-warm-white {
+  color: var(--atelier-warm-white);
+}
+
+.clinical-atelier-root .text-soft-black {
+  color: var(--atelier-soft-black);
+}
+
+.clinical-atelier-root .text-charcoal {
+  color: var(--atelier-charcoal);
+}
+
+.clinical-atelier-root .text-muted-text {
+  color: var(--atelier-muted);
+}
+
+.clinical-atelier-root .text-primary {
+  color: var(--atelier-primary);
+}
+
+.clinical-atelier-root .bg-warm-white {
+  background-color: var(--atelier-warm-white);
+}
+
+.clinical-atelier-root .bg-off-white {
+  background-color: var(--atelier-off-white);
+}
+
+.clinical-atelier-root .bg-light-grey {
+  background-color: var(--atelier-light-grey);
+}
+
+.clinical-atelier-root .bg-cool-mist {
+  background-color: var(--atelier-cool-mist);
+}
+
+.clinical-atelier-root .bg-charcoal {
+  background-color: var(--atelier-charcoal);
+}
+
+.clinical-atelier-root .bg-soft-black {
+  background-color: var(--atelier-soft-black);
+}
+
+.clinical-atelier-root .bg-primary {
+  background-color: var(--atelier-primary);
+}
+
+.clinical-atelier-root .bg-primary-canvas {
+  background-color: var(--atelier-primary-canvas);
+}
+
+.clinical-atelier-root .border-border-subtle {
+  border-color: var(--atelier-border);
+}
+
+.clinical-atelier-root .border-primary {
+  border-color: var(--atelier-primary);
+}
+
+.clinical-atelier-root .hover\:bg-primary-dark:hover {
+  background-color: var(--atelier-primary-dark);
+}
+
+.clinical-atelier-root .hover\:bg-soft-black:hover {
+  background-color: var(--atelier-soft-black);
+}
+
+.clinical-atelier-root .hover\:text-primary:hover {
+  color: var(--atelier-primary);
+}
+
+.clinical-atelier-root .hover\:text-charcoal:hover {
+  color: var(--atelier-charcoal);
+}
+
+.clinical-atelier-root .hover\:text-warm-white:hover {
+  color: var(--atelier-warm-white);
+}
+
+.clinical-atelier-root .hover\:border-primary:hover {
+  border-color: var(--atelier-primary);
+}
+
+.clinical-atelier-root .hover\:border-soft-black:hover {
+  border-color: var(--atelier-soft-black);
+}
+
+.clinical-atelier-root .group:hover .group-hover\:text-primary {
+  color: var(--atelier-primary);
+}
+
+.clinical-atelier-root .group:hover .group-hover\:border-primary\/50 {
+  border-color: color-mix(in srgb, var(--atelier-primary) 50%, transparent);
+}
+
+.clinical-atelier-root .hover\:bg-off-white\/60:hover {
+  background-color: color-mix(in srgb, var(--atelier-off-white) 60%, transparent);
+}
+
+.clinical-atelier-root .text-muted-text\/70 {
+  color: color-mix(in srgb, var(--atelier-muted) 70%, transparent);
+}
+
+.clinical-atelier-root .text-charcoal\/75 {
+  color: color-mix(in srgb, var(--atelier-charcoal) 75%, transparent);
+}
+
+.clinical-atelier-root .bg-primary\/\[0\.03\] {
+  background-color: color-mix(in srgb, var(--atelier-primary) 3%, transparent);
+}
+
+.clinical-atelier-root .hover\:bg-primary\/\[0\.03\]:hover {
+  background-color: color-mix(in srgb, var(--atelier-primary) 3%, transparent);
+}
+
+/* Donkere secties: forceer lichte tekst als utility faalt */
+.clinical-atelier-root .atelier-on-dark,
+.clinical-atelier-root .atelier-on-dark h1,
+.clinical-atelier-root .atelier-on-dark h2,
+.clinical-atelier-root .atelier-on-dark h3,
+.clinical-atelier-root .atelier-on-dark p,
+.clinical-atelier-root .atelier-on-dark span {
+  color: var(--atelier-warm-white);
+}
+
+@keyframes atelier-fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes atelier-hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes atelier-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.clinical-atelier-root .anim-fade-up {
+  opacity: 0;
+  animation: atelier-fade-slide-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.clinical-atelier-root .anim-fade-up-1 {
+  animation-delay: 0.15s;
+}
+
+.clinical-atelier-root .anim-fade-up-2 {
+  animation-delay: 0.3s;
+}
+
+.clinical-atelier-root .anim-fade-up-3 {
+  animation-delay: 0.48s;
+}
+
+.clinical-atelier-root .anim-fade-up-4 {
+  animation-delay: 0.62s;
+}
+
+.clinical-atelier-root .hero-img-zoom {
+  animation: atelier-hero-zoom 10s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clinical-atelier-root .anim-fade-up,
+  .clinical-atelier-root .hero-img-zoom {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

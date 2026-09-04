@@ -16,10 +16,12 @@ const cfg = HUIDKLINIEKEN_VERTICAL;
 const launchPromo = getActiveLaunchPromo(cfg.pricing);
 const caseStudy = cfg.caseStudy;
 
-const PROOF_POINTS = [
-  "Huidkliniek website from scratch",
-  "SEO op huidkliniek + jouw stad",
-  "Kliniek marketing die boekt",
+const PROOF_POINTS = ["From scratch", "Salonized erop", "5 dagen live"] as const;
+
+const TRUST_POINTS = [
+  "€89/m ex. btw",
+  "Hosting incl.",
+  "Opzegbaar per maand",
 ] as const;
 
 export function HuidkliniekHero() {
@@ -47,7 +49,7 @@ export function HuidkliniekHero() {
         aria-hidden
       />
 
-      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-x-16 lg:px-8 lg:py-20">
+      <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-x-14 lg:px-8 lg:py-20">
         <Reveal className="min-w-0">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/5 py-1 pl-1 pr-3 ring-1 ring-white/10">
@@ -57,29 +59,28 @@ export function HuidkliniekHero() {
               </span>
             </span>
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-orange-200/80 sm:text-[11px]">
-              Voor huidklinieken &amp; cosmetische klinieken
+              Voor huidklinieken
             </span>
           </div>
 
-          <h1 className="mt-6 text-[1.65rem] font-extrabold leading-[1.08] tracking-tighter sm:text-[2.2rem] lg:text-[2.65rem] lg:leading-[1.06]">
+          <h1 className="mt-5 text-[clamp(1.55rem,4.2vw,2.55rem)] font-extrabold leading-[1.08] tracking-tighter">
             <span className="block text-white">Huidkliniek website.</span>
-            <span className="mt-1 block text-[#FF8A5B] sm:mt-1.5">
-              Jij wint die zoekopdracht.
+            <span className="mt-1 block text-[#FF8A5B]">
+              Premium. Jouw stijl. Intakes die boeken.
             </span>
           </h1>
 
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
-            Huidkliniek website laten maken? Zoekopdrachten als huidkliniek plus jouw stad,
-            cosmetische kliniek of laserontharing laten je links liggen als je site traag of
-            generiek voelt. Ik bouw from scratch, pak lokale SEO en kliniek marketing aan, en
-            stuur alles op nieuwe intakes die blijven hangen.
+          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-slate-300 sm:text-base">
+            Ik ben Meneer Marketing. Ik bouw high-end kliniekwebsites in jouw stijl, koppel
+            Salonized, en maak alles technisch perfect. Jij krijgt één aanspreekpunt. Patiënten
+            krijgen een site waar ze vertrouwen en direct intake plannen.
           </p>
 
-          <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+          <ul className="mt-5 grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-3">
             {PROOF_POINTS.map((point) => (
               <li
                 key={point}
-                className="inline-flex items-center gap-2 text-[12px] font-semibold text-slate-200 sm:text-[13px]"
+                className="inline-flex items-center justify-start gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-3 py-2 text-[12px] font-bold text-slate-100 sm:justify-center sm:px-2 sm:text-[11px] lg:text-[12px]"
               >
                 <span className="size-1.5 shrink-0 rounded-full bg-[#FF5722]" aria-hidden />
                 {point}
@@ -87,7 +88,7 @@ export function HuidkliniekHero() {
             ))}
           </ul>
 
-          <div className="mt-8 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
+          <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:items-center">
             <Magnetic strength={10} radius={160}>
               <a
                 href="#aanvraag"
@@ -98,9 +99,9 @@ export function HuidkliniekHero() {
                     package: "studio-edition",
                   });
                 }}
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-7 py-4 text-sm font-bold tracking-tight text-white shadow-[0_18px_44px_-14px_rgba(255,87,34,0.75)] transition hover:-translate-y-0.5 hover:bg-[#ff6a3d] sm:w-auto sm:text-base"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5722] px-6 py-3.5 text-sm font-bold tracking-tight text-white shadow-[0_18px_44px_-14px_rgba(255,87,34,0.75)] transition hover:-translate-y-0.5 hover:bg-[#ff6a3d] sm:w-auto sm:px-7 sm:py-4"
               >
-                Ik wil gelijk beginnen
+                Start intake
                 <ArrowUpRight
                   className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden
@@ -114,63 +115,67 @@ export function HuidkliniekHero() {
                   location: "hero_contact",
                 })
               }
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-4 text-sm font-bold tracking-tight text-white backdrop-blur-sm transition hover:border-white/45 hover:bg-white/10 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-6 py-3.5 text-sm font-bold tracking-tight text-white backdrop-blur-sm transition hover:border-white/45 hover:bg-white/10 sm:w-auto sm:py-4"
             >
               <MessageCircle className="size-4" aria-hidden />
-              Eerst even sparren
+              Even sparren
             </a>
           </div>
 
-          <p className="mt-4 text-[11px] text-slate-400 sm:text-xs">
-            Live binnen 5 werkdagen · vanaf €89 per maand ex. btw · maandelijks opzegbaar
-            {launchPromo ? ` · ${launchPromo.badge.toLowerCase()}` : ""}
-          </p>
+          <ul className="mt-4 grid grid-cols-1 gap-1.5 sm:grid-cols-3 sm:gap-2 lg:flex lg:flex-nowrap lg:items-center lg:gap-x-4">
+            {TRUST_POINTS.map((point) => (
+              <li key={point} className="text-[11px] font-medium text-slate-400 sm:text-xs">
+                {point}
+              </li>
+            ))}
+            {launchPromo ? (
+              <li className="text-[11px] font-bold text-[#FF8A5B] sm:text-xs">
+                {launchPromo.badge}
+              </li>
+            ) : null}
+          </ul>
 
           <Link
             href="/over"
-            className="group mt-8 flex items-start gap-3.5 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition hover:border-[#FF5722]/45 hover:bg-white/[0.07]"
+            className="group mt-6 flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-3.5 transition hover:border-[#FF5722]/45 hover:bg-white/[0.07] sm:mt-7"
           >
-            <InteractiveLogo className="size-10 shrink-0" interactive={false} />
+            <InteractiveLogo className="size-9 shrink-0" interactive={false} />
             <span className="min-w-0 flex-1">
-              <span className="block text-[10px] font-bold uppercase tracking-[0.18em] text-orange-200/70">
-                Wie dit voor je bouwt
+              <span className="block text-[10px] font-bold uppercase tracking-[0.16em] text-orange-200/70">
+                Wie ik ben
               </span>
-              <span className="mt-1 block text-[13px] font-semibold leading-snug text-slate-200">
-                Eén vast aanspreekpunt. Ik bouw je site, ik regel je Google, en ik neem
-                zelf op als je belt.
-              </span>
-              <span className="mt-2 inline-flex items-center gap-1.5 text-[12px] font-bold text-[#FF8A5B]">
-                Lees wie ik ben
-                <ArrowRight
-                  className="size-3.5 transition group-hover:translate-x-0.5"
-                  aria-hidden
-                />
+              <span className="mt-0.5 block text-[13px] font-semibold leading-snug text-slate-200">
+                Eén persoon. Site, Google, Salonized. Ik neem zelf op als je belt.
               </span>
             </span>
+            <ArrowRight
+              className="size-4 shrink-0 text-[#FF8A5B] transition group-hover:translate-x-0.5"
+              aria-hidden
+            />
           </Link>
         </Reveal>
 
         <Reveal delay={0.1} className="min-w-0 lg:justify-self-end">
-          <HuidkliniekHeroSearchStory />
+          <div className="mx-auto w-full max-w-[430px]">
+            <HuidkliniekHeroSearchStory />
 
-          <p className="mt-5 text-center text-[12px] leading-relaxed text-slate-400 lg:text-left">
-            Zo ziet het eruit als het klopt.
-            {caseStudy.enabled ? (
-              <>
-                {" "}
-                Dit draait live bij{" "}
-                <Link
-                  href={caseStudy.href}
-                  className="font-bold text-white underline decoration-white/30 underline-offset-2 transition hover:decoration-[#FF5722]"
-                >
-                  {caseStudy.client} in {caseStudy.city}
-                </Link>
-                .
-              </>
-            ) : (
-              " Clinical-grade design, lokale SEO en intake zonder omweg."
-            )}
-          </p>
+            <p className="mt-4 w-full text-center text-[12px] leading-relaxed text-slate-400 lg:text-left">
+              Zo ziet het eruit: gevonden, vertrouwd, geboekt.
+              {caseStudy.enabled ? (
+                <>
+                  {" "}
+                  Live bij{" "}
+                  <Link
+                    href={caseStudy.href}
+                    className="font-bold text-slate-200 underline decoration-white/25 underline-offset-2 transition hover:text-white hover:decoration-[#FF5722]"
+                  >
+                    {caseStudy.client}
+                  </Link>
+                  .
+                </>
+              ) : null}
+            </p>
+          </div>
         </Reveal>
       </div>
     </header>

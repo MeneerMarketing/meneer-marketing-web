@@ -1,0 +1,1 @@
+{"version":3,"file":"ecommerceDetector.d.ts","sourceRoot":"","sources":["../../../src/services/crawler/ecommerceDetector.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EACV,wBAAwB,EACxB,oBAAoB,EACpB,uBAAuB,EACxB,MAAM,wBAAwB,CAAC;AAEhC,wBAAgB,eAAe,CAC7B,OAAO,EAAE,oBAAoB,EAC7B,QAAQ,EAAE,uBAAuB,EACjC,gBAAgB,GAAE,oBAAoB,EAAO,GAC5C,wBAAwB,CA+E1B"}

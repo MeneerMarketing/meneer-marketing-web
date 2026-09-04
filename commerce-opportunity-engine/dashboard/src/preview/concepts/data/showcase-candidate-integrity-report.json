@@ -1,0 +1,1699 @@
+{
+  "milestone": "M9.9.3",
+  "version": "SHOWCASE_CANDIDATE_INTEGRITY_V2",
+  "sourceReport": "reports/visual-underdesigned-focused-brand-report.json",
+  "startedAt": "2026-08-16T21:20:26.592Z",
+  "finishedAt": "2026-08-16T21:21:06.435Z",
+  "funnelConsistency": {
+    "m992_reported": {
+      "business_qualified": 7,
+      "showcase_design_candidates": 9
+    },
+    "root_cause": "M9.9.2 SHOWCASE_DESIGN counted visual redesign opportunity without requiring businessQualified. Visual signals can exceed business-qualified upstream pool.",
+    "semantic_fix": {
+      "visual_only_tier": "VISUAL_SHOWCASE_SIGNAL",
+      "sales_tier": "SHOWCASE_SALES_CANDIDATE",
+      "rule": "SHOWCASE_SALES_CANDIDATE requires VISUAL_SHOWCASE_SIGNAL + businessQualified + PRODUCT_DETAIL + ownership gates"
+    },
+    "recomputed_on_m992_pool": {
+      "visual_showcase_signals": 3,
+      "business_qualified_in_showcase_pool": 7,
+      "showcase_sales_candidates_after_integrity": 1
+    },
+    "visually_weak_screened_count": 18,
+    "all_screened_with_showcase_lead_type": 9
+  },
+  "entityValidation": [
+    {
+      "domain": "designkranenshop.nl",
+      "productUrl": "https://www.designkranenshop.nl/c/accessoires/keuken-accessoire-rails.html",
+      "pageEntityType": "CATEGORY",
+      "validPdp": false,
+      "rejectReason": "category_or_listing_path",
+      "evidence": [
+        "category_listing_path"
+      ]
+    },
+    {
+      "domain": "mandemakers.nl",
+      "productUrl": "https://www.mandemakers.nl/keukenstijlen/design-keukens/",
+      "pageEntityType": "GUIDE",
+      "validPdp": false,
+      "rejectReason": "service_or_guide_path",
+      "evidence": [
+        "guide_or_showroom_path"
+      ]
+    },
+    {
+      "domain": "cleanmastershop.nl",
+      "productUrl": "https://www.cleanmastershop.nl/product/handzeep-de-luxe/",
+      "pageEntityType": "PRODUCT_DETAIL",
+      "validPdp": true,
+      "rejectReason": null,
+      "evidence": [
+        "product_url_with_price"
+      ]
+    },
+    {
+      "domain": "deens.nl",
+      "productUrl": "https://www.deens.nl/nl/keukenaccessoires/",
+      "pageEntityType": "PRODUCT_LISTING",
+      "validPdp": false,
+      "rejectReason": "category_or_listing_path",
+      "evidence": [
+        "category_listing_path"
+      ]
+    },
+    {
+      "domain": "neduma.nl",
+      "productUrl": "https://neduma.nl/handverzorging/404-euro-handzeep-de-luxe",
+      "pageEntityType": "OTHER",
+      "validPdp": false,
+      "rejectReason": "insufficient_single_product_evidence",
+      "evidence": [
+        "weak_pdp_evidence"
+      ]
+    },
+    {
+      "domain": "puurmieke.nl",
+      "productUrl": "https://www.puurmieke.nl/verzorging/lichaamsverzorging/deodorant/",
+      "pageEntityType": "PRODUCT_LISTING",
+      "validPdp": false,
+      "rejectReason": "category_or_listing_path",
+      "evidence": [
+        "category_listing_path"
+      ]
+    },
+    {
+      "domain": "skins.nl",
+      "productUrl": "https://www.skins.nl/aesop/handzeep/",
+      "pageEntityType": "OTHER",
+      "validPdp": false,
+      "rejectReason": "insufficient_single_product_evidence",
+      "evidence": [
+        "weak_pdp_evidence"
+      ]
+    },
+    {
+      "domain": "theorientalshop.nl",
+      "productUrl": "https://www.theorientalshop.nl/product/tokyo-design-studio-patch-magnet-soba/",
+      "pageEntityType": "PRODUCT_DETAIL",
+      "validPdp": true,
+      "rejectReason": null,
+      "evidence": [
+        "product_url_with_price"
+      ]
+    },
+    {
+      "domain": "swissvax-shop.nl",
+      "productUrl": "https://swissvax-shop.nl/products/swissvax-hand-soap",
+      "pageEntityType": "PRODUCT_DETAIL",
+      "validPdp": true,
+      "rejectReason": null,
+      "evidence": [
+        "product_url_with_price"
+      ]
+    }
+  ],
+  "crossDomainProductMatches": [
+    {
+      "domain": "designkranenshop.nl",
+      "match": "NONE",
+      "peers": [],
+      "evidence": []
+    },
+    {
+      "domain": "mandemakers.nl",
+      "match": "NONE",
+      "peers": [],
+      "evidence": []
+    },
+    {
+      "domain": "cleanmastershop.nl",
+      "match": "LIKELY",
+      "peers": [
+        "neduma.nl"
+      ],
+      "evidence": [
+        "title_similarity_1.00"
+      ]
+    },
+    {
+      "domain": "deens.nl",
+      "match": "NONE",
+      "peers": [],
+      "evidence": []
+    },
+    {
+      "domain": "neduma.nl",
+      "match": "LIKELY",
+      "peers": [
+        "cleanmastershop.nl"
+      ],
+      "evidence": [
+        "title_similarity_1.00"
+      ]
+    },
+    {
+      "domain": "puurmieke.nl",
+      "match": "NONE",
+      "peers": [],
+      "evidence": []
+    },
+    {
+      "domain": "skins.nl",
+      "match": "NONE",
+      "peers": [],
+      "evidence": []
+    },
+    {
+      "domain": "theorientalshop.nl",
+      "match": "NONE",
+      "peers": [],
+      "evidence": []
+    },
+    {
+      "domain": "swissvax-shop.nl",
+      "match": "NONE",
+      "peers": [],
+      "evidence": []
+    }
+  ],
+  "businessModelOwnBrand": [
+    {
+      "domain": "designkranenshop.nl",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 58,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_50"
+      ],
+      "productBrand": null,
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      }
+    },
+    {
+      "domain": "mandemakers.nl",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 64,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_75"
+      ],
+      "productBrand": null,
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      }
+    },
+    {
+      "domain": "cleanmastershop.nl",
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "brandOwnershipConfidence": 65,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "cleanmaster_domain_private_label_candidate"
+      ],
+      "productBrand": null,
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      }
+    },
+    {
+      "domain": "deens.nl",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 59,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55"
+      ],
+      "productBrand": null,
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      }
+    },
+    {
+      "domain": "neduma.nl",
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "brandOwnershipConfidence": 35,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "generic_distributed_sku_on_non_brand_domain",
+        "neduma_generic_euro_line_product"
+      ],
+      "productBrand": null,
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      }
+    },
+    {
+      "domain": "puurmieke.nl",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 59,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55"
+      ],
+      "productBrand": null,
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      }
+    },
+    {
+      "domain": "skins.nl",
+      "businessModel": "FOCUSED_SPECIALIST_RESELLER",
+      "brandOwnershipConfidence": 37,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "external_brand_in_title_aesop"
+      ],
+      "productBrand": null,
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      }
+    },
+    {
+      "domain": "theorientalshop.nl",
+      "businessModel": "FOCUSED_SPECIALIST_RESELLER",
+      "brandOwnershipConfidence": 26,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_60",
+        "product_brand_tokyo design studio_external_to_domain",
+        "external_brand_in_title_tokyo design studio"
+      ],
+      "productBrand": "Tokyo Design Studio",
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      }
+    },
+    {
+      "domain": "swissvax-shop.nl",
+      "businessModel": "MANUFACTURER_DTC",
+      "brandOwnershipConfidence": 92,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "product_brand_matches_domain",
+        "swissvax_brand_domain_alignment"
+      ],
+      "productBrand": "Swissvax",
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      }
+    }
+  ],
+  "companyScaleCatalog": [
+    {
+      "domain": "designkranenshop.nl",
+      "companyScaleFit": {
+        "value": 68,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 36,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      }
+    },
+    {
+      "domain": "mandemakers.nl",
+      "companyScaleFit": {
+        "value": 36,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 44,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      }
+    },
+    {
+      "domain": "cleanmastershop.nl",
+      "companyScaleFit": {
+        "value": 78,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 30,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 32,
+        "provenance": "MEASURED"
+      }
+    },
+    {
+      "domain": "deens.nl",
+      "companyScaleFit": {
+        "value": 84,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 38,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      }
+    },
+    {
+      "domain": "neduma.nl",
+      "companyScaleFit": {
+        "value": 74,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 39,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      }
+    },
+    {
+      "domain": "puurmieke.nl",
+      "companyScaleFit": {
+        "value": 46,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 34,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      }
+    },
+    {
+      "domain": "skins.nl",
+      "companyScaleFit": {
+        "value": 52,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 36,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      }
+    },
+    {
+      "domain": "theorientalshop.nl",
+      "companyScaleFit": {
+        "value": 84,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 39,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      }
+    },
+    {
+      "domain": "swissvax-shop.nl",
+      "companyScaleFit": {
+        "value": 86,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 31,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": 57,
+        "provenance": "MEASURED"
+      },
+      "catalogFocus": {
+        "value": 62,
+        "provenance": "MEASURED"
+      }
+    }
+  ],
+  "showcaseSignalReview": [
+    {
+      "domain": "designkranenshop.nl",
+      "productUrl": "https://www.designkranenshop.nl/c/accessoires/keuken-accessoire-rails.html",
+      "productTitle": "Categorie",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": false,
+      "businessQualified": true,
+      "pageEntityType": "CATEGORY",
+      "pageEntityEvidence": [
+        "category_listing_path"
+      ],
+      "pageEntityRejectReason": "category_or_listing_path",
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 58,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_50"
+      ],
+      "companyScaleFit": {
+        "value": 68,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 36,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 75,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 38,
+      "visualGap": 60,
+      "purchaseGap": 93,
+      "mobileGap": 62,
+      "assetQuality": 90,
+      "contentAvailable": 97,
+      "materialFeasibility": 100,
+      "validatedVisualSalesFit": 82,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "not_product_detail"
+      ],
+      "showcaseRejectLabel": "CATEGORY",
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/designkranenshop-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/designkranenshop-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/designkranenshop-nl-pdp-mobile-390x844.png"
+      },
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 50,
+      "productIdentity": {
+        "domain": "designkranenshop.nl",
+        "productUrl": "https://www.designkranenshop.nl/c/accessoires/keuken-accessoire-rails.html",
+        "normalizedTitle": "categorie",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": null,
+        "descriptionSnippet": null
+      }
+    },
+    {
+      "domain": "mandemakers.nl",
+      "productUrl": "https://www.mandemakers.nl/keukenstijlen/design-keukens/",
+      "productTitle": "Design keukens",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": false,
+      "businessQualified": false,
+      "pageEntityType": "GUIDE",
+      "pageEntityEvidence": [
+        "guide_or_showroom_path"
+      ],
+      "pageEntityRejectReason": "service_or_guide_path",
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 64,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_75"
+      ],
+      "companyScaleFit": {
+        "value": 36,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 44,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 399,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 15,
+      "visualGap": 25,
+      "purchaseGap": 92,
+      "mobileGap": 86,
+      "assetQuality": 90,
+      "contentAvailable": 100,
+      "materialFeasibility": 81,
+      "validatedVisualSalesFit": 80,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "not_product_detail",
+        "business_not_qualified"
+      ],
+      "showcaseRejectLabel": "CATEGORY; BUSINESS NOT QUALIFIED",
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/mandemakers-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/mandemakers-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/mandemakers-nl-pdp-mobile-390x844.png"
+      },
+      "purchaseMode": "SHOWROOM_ASSISTED",
+      "ownBrandSignal": 75,
+      "productIdentity": {
+        "domain": "mandemakers.nl",
+        "productUrl": "https://www.mandemakers.nl/keukenstijlen/design-keukens/",
+        "normalizedTitle": "design keukens",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": null,
+        "descriptionSnippet": null
+      }
+    },
+    {
+      "domain": "cleanmastershop.nl",
+      "productUrl": "https://www.cleanmastershop.nl/product/handzeep-de-luxe/",
+      "productTitle": "Handzeep de Luxe geparfumeerd, 6x1000m",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": true,
+      "businessQualified": true,
+      "pageEntityType": "PRODUCT_DETAIL",
+      "pageEntityEvidence": [
+        "product_url_with_price"
+      ],
+      "pageEntityRejectReason": null,
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "brandOwnershipConfidence": 65,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "cleanmaster_domain_private_label_candidate"
+      ],
+      "companyScaleFit": {
+        "value": 78,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 30,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 32,
+        "provenance": "MEASURED"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 60.24,
+      "crossDomainProductMatch": "LIKELY",
+      "crossDomainPeers": [
+        "neduma.nl"
+      ],
+      "crossDomainEvidence": [
+        "title_similarity_1.00"
+      ],
+      "currentVisualQualityScore": 42,
+      "visualGap": 56,
+      "purchaseGap": 66,
+      "mobileGap": 57,
+      "assetQuality": 82,
+      "contentAvailable": 97,
+      "materialFeasibility": 98,
+      "validatedVisualSalesFit": 81,
+      "showcaseSalesCandidate": true,
+      "showcaseRejectFailures": [],
+      "showcaseRejectLabel": null,
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/cleanmastershop-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/cleanmastershop-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/cleanmastershop-nl-pdp-mobile-390x844.png"
+      },
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "cleanmastershop.nl",
+        "productUrl": "https://www.cleanmastershop.nl/product/handzeep-de-luxe/",
+        "normalizedTitle": "handzeep de luxe geparfumeerd 6x1000m",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "https://www.cleanmastershop.nl/wp-content/uploads/2017/10/euro-products-handzeep-geparfumeerd-p52801-6-flaco.jpg",
+        "descriptionSnippet": "Handzeep de Luxe geparfumeerd, 6 x 1000 ml\r\nZeer prettig ruikende milde handzeep voor dagelijks gebruik.\r\nHandzeep geschikt voor onderstaande systeemdispensers.\r\nZie gerelateerde d"
+      }
+    },
+    {
+      "domain": "deens.nl",
+      "productUrl": "https://www.deens.nl/nl/keukenaccessoires/",
+      "productTitle": "KEUKENACCESSOIRES",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": false,
+      "businessQualified": true,
+      "pageEntityType": "PRODUCT_LISTING",
+      "pageEntityEvidence": [
+        "category_listing_path"
+      ],
+      "pageEntityRejectReason": "category_or_listing_path",
+      "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 59,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55"
+      ],
+      "companyScaleFit": {
+        "value": 84,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 38,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 15,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 52,
+      "visualGap": 65,
+      "purchaseGap": 71,
+      "mobileGap": 60,
+      "assetQuality": 76,
+      "contentAvailable": 95,
+      "materialFeasibility": 95,
+      "validatedVisualSalesFit": 75,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "not_product_detail"
+      ],
+      "showcaseRejectLabel": "CATEGORY",
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/deens-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/deens-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/deens-nl-pdp-mobile-390x844.png"
+      },
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "deens.nl",
+        "productUrl": "https://www.deens.nl/nl/keukenaccessoires/",
+        "normalizedTitle": "keukenaccessoires",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": null,
+        "descriptionSnippet": "Ontdek hier de leukste keukenhulpstukken en servies van Scandinavisch design. ✓Gratis verzonden vanaf €50,- ✓Gemakkelijk besteld en snel verzonden!"
+      }
+    },
+    {
+      "domain": "neduma.nl",
+      "productUrl": "https://neduma.nl/handverzorging/404-euro-handzeep-de-luxe",
+      "productTitle": "Euro Handzeep de Luxe",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": false,
+      "businessQualified": true,
+      "pageEntityType": "OTHER",
+      "pageEntityEvidence": [
+        "weak_pdp_evidence"
+      ],
+      "pageEntityRejectReason": "insufficient_single_product_evidence",
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "brandOwnershipConfidence": 35,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "generic_distributed_sku_on_non_brand_domain",
+        "neduma_generic_euro_line_product"
+      ],
+      "companyScaleFit": {
+        "value": 74,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 39,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 67.74,
+      "crossDomainProductMatch": "LIKELY",
+      "crossDomainPeers": [
+        "cleanmastershop.nl"
+      ],
+      "crossDomainEvidence": [
+        "title_similarity_1.00"
+      ],
+      "currentVisualQualityScore": 42,
+      "visualGap": 55,
+      "purchaseGap": 77,
+      "mobileGap": 63,
+      "assetQuality": 68,
+      "contentAvailable": 83,
+      "materialFeasibility": 66,
+      "validatedVisualSalesFit": 71,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "not_product_detail",
+        "insufficient_own_brand_evidence"
+      ],
+      "showcaseRejectLabel": "CATEGORY; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/neduma-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/neduma-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/neduma-nl-pdp-mobile-390x844.png"
+      },
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "neduma.nl",
+        "productUrl": "https://neduma.nl/handverzorging/404-euro-handzeep-de-luxe",
+        "normalizedTitle": "euro handzeep de luxe",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "https://neduma.nl/518-large_default/euro-handzeep-de-luxe.jpg",
+        "descriptionSnippet": null
+      }
+    },
+    {
+      "domain": "puurmieke.nl",
+      "productUrl": "https://www.puurmieke.nl/verzorging/lichaamsverzorging/deodorant/",
+      "productTitle": "Deodorant Online Bestellen",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": false,
+      "businessQualified": true,
+      "pageEntityType": "PRODUCT_LISTING",
+      "pageEntityEvidence": [
+        "category_listing_path"
+      ],
+      "pageEntityRejectReason": "category_or_listing_path",
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "MOSTLY_OWN_BRAND",
+      "brandOwnershipConfidence": 59,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55"
+      ],
+      "companyScaleFit": {
+        "value": 46,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 34,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 55,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 42,
+      "visualGap": 47,
+      "purchaseGap": 61,
+      "mobileGap": 54,
+      "assetQuality": 90,
+      "contentAvailable": 100,
+      "materialFeasibility": 97,
+      "validatedVisualSalesFit": 75,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "not_product_detail"
+      ],
+      "showcaseRejectLabel": "CATEGORY",
+      "screenshots": null,
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "puurmieke.nl",
+        "productUrl": "https://www.puurmieke.nl/verzorging/lichaamsverzorging/deodorant/",
+        "normalizedTitle": "deodorant online bestellen",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": null,
+        "descriptionSnippet": "Deodorant bestellen bij Puur Mieke. De webshop met meer dan 2000 pure producten. ✓Voor 22:00 besteld = Morgen in huis ✓Gratis verzending > €50,-"
+      }
+    },
+    {
+      "domain": "skins.nl",
+      "productUrl": "https://www.skins.nl/aesop/handzeep/",
+      "productTitle": "Aesop Handzeep",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": false,
+      "businessQualified": true,
+      "pageEntityType": "OTHER",
+      "pageEntityEvidence": [
+        "weak_pdp_evidence"
+      ],
+      "pageEntityRejectReason": "insufficient_single_product_evidence",
+      "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+      "businessModel": "FOCUSED_SPECIALIST_RESELLER",
+      "brandOwnershipConfidence": 37,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "external_brand_in_title_aesop"
+      ],
+      "companyScaleFit": {
+        "value": 52,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 36,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 39,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 52,
+      "visualGap": 50,
+      "purchaseGap": 79,
+      "mobileGap": 64,
+      "assetQuality": 90,
+      "contentAvailable": 100,
+      "materialFeasibility": 97,
+      "validatedVisualSalesFit": 61,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "not_product_detail",
+        "focused_specialist_reseller",
+        "insufficient_own_brand_evidence"
+      ],
+      "showcaseRejectLabel": "CATEGORY; EXTERNAL BRAND; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "screenshots": null,
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "skins.nl",
+        "productUrl": "https://www.skins.nl/aesop/handzeep/",
+        "normalizedTitle": "aesop handzeep",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "https://www.skins.nl/media/84/64/2a/1714545997/Skins_Social.png?ts=1731936484",
+        "descriptionSnippet": "Aesop Handzeep kopen? Exclusieve handverzorging van Skins ✓ Shop de grote collectie handverzorging ✓ Gratis verzending v.a. €50 ✓ Free gift boven €120"
+      }
+    },
+    {
+      "domain": "theorientalshop.nl",
+      "productUrl": "https://www.theorientalshop.nl/product/tokyo-design-studio-patch-magnet-soba/",
+      "productTitle": "Magnetische Soba Patch - Tokyo Design Studio - Decoratieve Keukenaccessoire",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": true,
+      "businessQualified": true,
+      "pageEntityType": "PRODUCT_DETAIL",
+      "pageEntityEvidence": [
+        "product_url_with_price"
+      ],
+      "pageEntityRejectReason": null,
+      "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+      "businessModel": "FOCUSED_SPECIALIST_RESELLER",
+      "brandOwnershipConfidence": 26,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_60",
+        "product_brand_tokyo design studio_external_to_domain",
+        "external_brand_in_title_tokyo design studio"
+      ],
+      "companyScaleFit": {
+        "value": 84,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 39,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      },
+      "productBrand": "Tokyo Design Studio",
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 11.95,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 48,
+      "visualGap": 31,
+      "purchaseGap": 55,
+      "mobileGap": 49,
+      "assetQuality": 90,
+      "contentAvailable": 100,
+      "materialFeasibility": 81,
+      "validatedVisualSalesFit": 58,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "focused_specialist_reseller",
+        "insufficient_own_brand_evidence"
+      ],
+      "showcaseRejectLabel": "EXTERNAL BRAND; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "screenshots": null,
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 60,
+      "productIdentity": {
+        "domain": "theorientalshop.nl",
+        "productUrl": "https://www.theorientalshop.nl/product/tokyo-design-studio-patch-magnet-soba/",
+        "normalizedTitle": "magnetische soba patch tokyo design studio decoratieve keukenaccessoire",
+        "productBrand": "Tokyo Design Studio",
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "https://www.theorientalshop.nl/wp-content/uploads/2024/10/33118.jpg",
+        "descriptionSnippet": "Unieke, magnetische Soba Patch van Tokyo Design Studio, ideaal voor het decoreren van metalen oppervlakken zoals koelkasten en whiteboards."
+      }
+    },
+    {
+      "domain": "swissvax-shop.nl",
+      "productUrl": "https://swissvax-shop.nl/products/swissvax-hand-soap",
+      "productTitle": "Swissvax handzeep 250 ml – luxe handzeep voor de garage",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": true,
+      "businessQualified": false,
+      "pageEntityType": "PRODUCT_DETAIL",
+      "pageEntityEvidence": [
+        "product_url_with_price"
+      ],
+      "pageEntityRejectReason": null,
+      "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+      "businessModel": "MANUFACTURER_DTC",
+      "brandOwnershipConfidence": 92,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "product_brand_matches_domain",
+        "swissvax_brand_domain_alignment"
+      ],
+      "companyScaleFit": {
+        "value": 86,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 31,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": 57,
+        "provenance": "MEASURED"
+      },
+      "catalogFocus": {
+        "value": 62,
+        "provenance": "MEASURED"
+      },
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      },
+      "productBrand": "Swissvax",
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 46,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 52,
+      "visualGap": 19,
+      "purchaseGap": 50,
+      "mobileGap": 39,
+      "assetQuality": 90,
+      "contentAvailable": 100,
+      "materialFeasibility": 83,
+      "validatedVisualSalesFit": 76,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "business_not_qualified"
+      ],
+      "showcaseRejectLabel": "BUSINESS NOT QUALIFIED",
+      "screenshots": null,
+      "purchaseMode": "SHOWROOM_ASSISTED",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "swissvax-shop.nl",
+        "productUrl": "https://swissvax-shop.nl/products/swissvax-hand-soap",
+        "normalizedTitle": "swissvax handzeep 250 ml luxe handzeep voor de garage",
+        "productBrand": "Swissvax",
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "http://swissvax-shop.nl/cdn/shop/files/Handsoap250mlSE1999421_1200x1200.png?v=1771488073",
+        "descriptionSnippet": "Hand Soap – Luxe handzeep voor garage en showroomMeer dan gewone zeep: Hand Soap met iconische geur voor de privébadkamer, exclusieve garage of showroom.Swissvax Hand Soap reinigt "
+      }
+    }
+  ],
+  "rejectedShowcaseSignals": [
+    {
+      "domain": "designkranenshop.nl",
+      "visualSignal": false,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "CATEGORY",
+      "failures": [
+        "not_product_detail"
+      ],
+      "pageEntityType": "CATEGORY"
+    },
+    {
+      "domain": "mandemakers.nl",
+      "visualSignal": false,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "CATEGORY; BUSINESS NOT QUALIFIED",
+      "failures": [
+        "not_product_detail",
+        "business_not_qualified"
+      ],
+      "pageEntityType": "GUIDE"
+    },
+    {
+      "domain": "deens.nl",
+      "visualSignal": false,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "CATEGORY",
+      "failures": [
+        "not_product_detail"
+      ],
+      "pageEntityType": "PRODUCT_LISTING"
+    },
+    {
+      "domain": "neduma.nl",
+      "visualSignal": false,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "CATEGORY; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "failures": [
+        "not_product_detail",
+        "insufficient_own_brand_evidence"
+      ],
+      "pageEntityType": "OTHER"
+    },
+    {
+      "domain": "puurmieke.nl",
+      "visualSignal": false,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "CATEGORY",
+      "failures": [
+        "not_product_detail"
+      ],
+      "pageEntityType": "PRODUCT_LISTING"
+    },
+    {
+      "domain": "skins.nl",
+      "visualSignal": false,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "CATEGORY; EXTERNAL BRAND; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "failures": [
+        "not_product_detail",
+        "focused_specialist_reseller",
+        "insufficient_own_brand_evidence"
+      ],
+      "pageEntityType": "OTHER"
+    },
+    {
+      "domain": "theorientalshop.nl",
+      "visualSignal": true,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "EXTERNAL BRAND; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "failures": [
+        "focused_specialist_reseller",
+        "insufficient_own_brand_evidence"
+      ],
+      "pageEntityType": "PRODUCT_DETAIL"
+    },
+    {
+      "domain": "swissvax-shop.nl",
+      "visualSignal": true,
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "rejectReason": "BUSINESS NOT QUALIFIED",
+      "failures": [
+        "business_not_qualified"
+      ],
+      "pageEntityType": "PRODUCT_DETAIL"
+    }
+  ],
+  "validatedShowcaseProspects": [
+    {
+      "domain": "cleanmastershop.nl",
+      "productUrl": "https://www.cleanmastershop.nl/product/handzeep-de-luxe/",
+      "pageEntityType": "PRODUCT_DETAIL",
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "brandOwnershipConfidence": 65,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "cleanmaster_domain_private_label_candidate"
+      ],
+      "companyScaleFit": {
+        "value": 78,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 30,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 32,
+        "provenance": "MEASURED"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "product": "Handzeep de Luxe geparfumeerd, 6x1000m",
+      "price": 60.24,
+      "productBrand": null,
+      "heroRelevance": "discovered_pdp",
+      "crossDomainMatchStatus": "LIKELY",
+      "cvq": 42,
+      "visualGap": 56,
+      "purchaseGap": 66,
+      "mobileGap": 57,
+      "assets": 82,
+      "content": 97,
+      "materialFeasibility": 98,
+      "validatedVisualSalesFit": 81,
+      "whyGoodMeneerProspect": "cleanmastershop.nl is a focused ecommerce shop with focused private label brand signals (65% ownership confidence). The PDP reads clearly underdesigned, so a visual rebuild would be legible in outreach. Visual gap 56 with material feasibility 98 gives enough assets to design from. Scale fit 78 keeps this in small/mid professional territory, not mass retail.",
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/cleanmastershop-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/cleanmastershop-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/cleanmastershop-nl-pdp-mobile-390x844.png"
+      }
+    }
+  ],
+  "regressionReviews": {
+    "cleanmaster": {
+      "domain": "cleanmastershop.nl",
+      "productUrl": "https://www.cleanmastershop.nl/product/handzeep-de-luxe/",
+      "productTitle": "Handzeep de Luxe geparfumeerd, 6x1000m",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": true,
+      "businessQualified": true,
+      "pageEntityType": "PRODUCT_DETAIL",
+      "pageEntityEvidence": [
+        "product_url_with_price"
+      ],
+      "pageEntityRejectReason": null,
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "brandOwnershipConfidence": 65,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "cleanmaster_domain_private_label_candidate"
+      ],
+      "companyScaleFit": {
+        "value": 78,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 30,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 32,
+        "provenance": "MEASURED"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 60.24,
+      "crossDomainProductMatch": "LIKELY",
+      "crossDomainPeers": [
+        "neduma.nl"
+      ],
+      "crossDomainEvidence": [
+        "title_similarity_1.00"
+      ],
+      "currentVisualQualityScore": 42,
+      "visualGap": 56,
+      "purchaseGap": 66,
+      "mobileGap": 57,
+      "assetQuality": 82,
+      "contentAvailable": 97,
+      "materialFeasibility": 98,
+      "validatedVisualSalesFit": 81,
+      "showcaseSalesCandidate": true,
+      "showcaseRejectFailures": [],
+      "showcaseRejectLabel": null,
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/cleanmastershop-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/cleanmastershop-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/cleanmastershop-nl-pdp-mobile-390x844.png"
+      },
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "cleanmastershop.nl",
+        "productUrl": "https://www.cleanmastershop.nl/product/handzeep-de-luxe/",
+        "normalizedTitle": "handzeep de luxe geparfumeerd 6x1000m",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "https://www.cleanmastershop.nl/wp-content/uploads/2017/10/euro-products-handzeep-geparfumeerd-p52801-6-flaco.jpg",
+        "descriptionSnippet": "Handzeep de Luxe geparfumeerd, 6 x 1000 ml\r\nZeer prettig ruikende milde handzeep voor dagelijks gebruik.\r\nHandzeep geschikt voor onderstaande systeemdispensers.\r\nZie gerelateerde d"
+      }
+    },
+    "neduma": {
+      "domain": "neduma.nl",
+      "productUrl": "https://neduma.nl/handverzorging/404-euro-handzeep-de-luxe",
+      "productTitle": "Euro Handzeep de Luxe",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": false,
+      "businessQualified": true,
+      "pageEntityType": "OTHER",
+      "pageEntityEvidence": [
+        "weak_pdp_evidence"
+      ],
+      "pageEntityRejectReason": "insufficient_single_product_evidence",
+      "currentSiteImpression": "CLEARLY_UNDERDESIGNED",
+      "businessModel": "FOCUSED_PRIVATE_LABEL_BRAND",
+      "brandOwnershipConfidence": 35,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "cross_domain_likely_same_product",
+        "generic_distributed_sku_on_non_brand_domain",
+        "neduma_generic_euro_line_product"
+      ],
+      "companyScaleFit": {
+        "value": 74,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 39,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 0,
+        "provenance": "UNKNOWN"
+      },
+      "productBrand": null,
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 67.74,
+      "crossDomainProductMatch": "LIKELY",
+      "crossDomainPeers": [
+        "cleanmastershop.nl"
+      ],
+      "crossDomainEvidence": [
+        "title_similarity_1.00"
+      ],
+      "currentVisualQualityScore": 42,
+      "visualGap": 55,
+      "purchaseGap": 77,
+      "mobileGap": 63,
+      "assetQuality": 68,
+      "contentAvailable": 83,
+      "materialFeasibility": 66,
+      "validatedVisualSalesFit": 71,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "not_product_detail",
+        "insufficient_own_brand_evidence"
+      ],
+      "showcaseRejectLabel": "CATEGORY; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "screenshots": {
+        "homepage-desktop-1440x1000": "m9.9.2-screenshots/neduma-nl-homepage-desktop-1440x1000.png",
+        "pdp-desktop-1440x1000": "m9.9.2-screenshots/neduma-nl-pdp-desktop-1440x1000.png",
+        "pdp-mobile-390x844": "m9.9.2-screenshots/neduma-nl-pdp-mobile-390x844.png"
+      },
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "neduma.nl",
+        "productUrl": "https://neduma.nl/handverzorging/404-euro-handzeep-de-luxe",
+        "normalizedTitle": "euro handzeep de luxe",
+        "productBrand": null,
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "https://neduma.nl/518-large_default/euro-handzeep-de-luxe.jpg",
+        "descriptionSnippet": null
+      }
+    },
+    "cleanmasterVsNeduma": {
+      "verdict": "LIKELY_SAME_PRODUCT",
+      "similarity": 1,
+      "evidence": [
+        "title_similarity_1.00"
+      ]
+    },
+    "swissvax": {
+      "domain": "swissvax-shop.nl",
+      "productUrl": "https://swissvax-shop.nl/products/swissvax-hand-soap",
+      "productTitle": "Swissvax handzeep 250 ml – luxe handzeep voor de garage",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": true,
+      "businessQualified": false,
+      "pageEntityType": "PRODUCT_DETAIL",
+      "pageEntityEvidence": [
+        "product_url_with_price"
+      ],
+      "pageEntityRejectReason": null,
+      "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+      "businessModel": "MANUFACTURER_DTC",
+      "brandOwnershipConfidence": 92,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_55",
+        "product_brand_matches_domain",
+        "swissvax_brand_domain_alignment"
+      ],
+      "companyScaleFit": {
+        "value": 86,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 31,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": 57,
+        "provenance": "MEASURED"
+      },
+      "catalogFocus": {
+        "value": 62,
+        "provenance": "MEASURED"
+      },
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      },
+      "productBrand": "Swissvax",
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 46,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 52,
+      "visualGap": 19,
+      "purchaseGap": 50,
+      "mobileGap": 39,
+      "assetQuality": 90,
+      "contentAvailable": 100,
+      "materialFeasibility": 83,
+      "validatedVisualSalesFit": 76,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "business_not_qualified"
+      ],
+      "showcaseRejectLabel": "BUSINESS NOT QUALIFIED",
+      "screenshots": null,
+      "purchaseMode": "SHOWROOM_ASSISTED",
+      "ownBrandSignal": 55,
+      "productIdentity": {
+        "domain": "swissvax-shop.nl",
+        "productUrl": "https://swissvax-shop.nl/products/swissvax-hand-soap",
+        "normalizedTitle": "swissvax handzeep 250 ml luxe handzeep voor de garage",
+        "productBrand": "Swissvax",
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "http://swissvax-shop.nl/cdn/shop/files/Handsoap250mlSE1999421_1200x1200.png?v=1771488073",
+        "descriptionSnippet": "Hand Soap – Luxe handzeep voor garage en showroomMeer dan gewone zeep: Hand Soap met iconische geur voor de privébadkamer, exclusieve garage of showroom.Swissvax Hand Soap reinigt "
+      }
+    },
+    "theorientalshop": {
+      "domain": "theorientalshop.nl",
+      "productUrl": "https://www.theorientalshop.nl/product/tokyo-design-studio-patch-magnet-soba/",
+      "productTitle": "Magnetische Soba Patch - Tokyo Design Studio - Decoratieve Keukenaccessoire",
+      "m992BusinessModel": "MOSTLY_OWN_BRAND",
+      "visualRedesignOpportunityType": "VISUAL_REDESIGN_OPPORTUNITY",
+      "m992LeadType": "SHOWCASE_DESIGN",
+      "visualShowcaseSignal": true,
+      "businessQualified": true,
+      "pageEntityType": "PRODUCT_DETAIL",
+      "pageEntityEvidence": [
+        "product_url_with_price"
+      ],
+      "pageEntityRejectReason": null,
+      "currentSiteImpression": "BASIC_BUT_ACCEPTABLE",
+      "businessModel": "FOCUSED_SPECIALIST_RESELLER",
+      "brandOwnershipConfidence": 26,
+      "brandOwnershipEvidence": [
+        "own_brand_signal_60",
+        "product_brand_tokyo design studio_external_to_domain",
+        "external_brand_in_title_tokyo design studio"
+      ],
+      "companyScaleFit": {
+        "value": 84,
+        "provenance": "MEASURED"
+      },
+      "businessMaturityScore": {
+        "value": 39,
+        "provenance": "MEASURED"
+      },
+      "catalogEstimate": {
+        "value": null,
+        "provenance": "UNKNOWN"
+      },
+      "catalogFocus": {
+        "value": 50,
+        "provenance": "DEFAULT"
+      },
+      "externalBrandBreadth": {
+        "value": 25,
+        "provenance": "INFERRED"
+      },
+      "productBrand": "Tokyo Design Studio",
+      "sku": null,
+      "gtin": null,
+      "manufacturer": "",
+      "heroPrice": 11.95,
+      "crossDomainProductMatch": "NONE",
+      "crossDomainPeers": [],
+      "crossDomainEvidence": [],
+      "currentVisualQualityScore": 48,
+      "visualGap": 31,
+      "purchaseGap": 55,
+      "mobileGap": 49,
+      "assetQuality": 90,
+      "contentAvailable": 100,
+      "materialFeasibility": 81,
+      "validatedVisualSalesFit": 58,
+      "showcaseSalesCandidate": false,
+      "showcaseRejectFailures": [
+        "focused_specialist_reseller",
+        "insufficient_own_brand_evidence"
+      ],
+      "showcaseRejectLabel": "EXTERNAL BRAND; INSUFFICIENT OWN-BRAND EVIDENCE",
+      "screenshots": null,
+      "purchaseMode": "DIRECT_ECOMMERCE",
+      "ownBrandSignal": 60,
+      "productIdentity": {
+        "domain": "theorientalshop.nl",
+        "productUrl": "https://www.theorientalshop.nl/product/tokyo-design-studio-patch-magnet-soba/",
+        "normalizedTitle": "magnetische soba patch tokyo design studio decoratieve keukenaccessoire",
+        "productBrand": "Tokyo Design Studio",
+        "sku": null,
+        "gtin": null,
+        "manufacturer": "",
+        "primaryImageUrl": "https://www.theorientalshop.nl/wp-content/uploads/2024/10/33118.jpg",
+        "descriptionSnippet": "Unieke, magnetische Soba Patch van Tokyo Design Studio, ideaal voor het decoreren van metalen oppervlakken zoals koelkasten en whiteboards."
+      }
+    }
+  },
+  "screenshots": {
+    "dir": "m9.9.2-screenshots",
+    "note": "Reused M9.9.2 captures for finalists only"
+  },
+  "cost": {
+    "dataforseo": 0,
+    "anthropic": 0,
+    "note": "Integrity pass only; no SERP or vision"
+  }
+}

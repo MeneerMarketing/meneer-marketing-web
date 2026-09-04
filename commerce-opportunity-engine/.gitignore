@@ -1,0 +1,5 @@
+fixtures/
+.env
+*.log
+.DS_Store
+m9.1-screenshots/

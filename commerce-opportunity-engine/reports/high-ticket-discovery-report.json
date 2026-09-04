@@ -1,0 +1,2728 @@
+{
+  "milestone": "M9.4",
+  "version": "HIGH_TICKET_FOCUSED_DISCOVERY_V1",
+  "profileVersion": "HIGH_TICKET_FOCUSED_BRAND_V1",
+  "runId": "267c313c-6815-4afc-b8e7-34558715bd8b",
+  "startedAt": "2026-08-14T20:11:15.362Z",
+  "finishedAt": "2026-08-14T20:17:23.792Z",
+  "discovery": {
+    "branches": [
+      {
+        "archetypeId": "BEAUTY_DEVICES",
+        "families": [
+          "led_masks",
+          "microneedling_devices",
+          "ipl_hair_removal"
+        ],
+        "evidence": "Devices met hoge prijs, veel techniek en zichtbaar resultaat. Bewezen archetype uit M9.3.1."
+      },
+      {
+        "archetypeId": "SKINCARE_DEVICES",
+        "families": [
+          "microcurrent",
+          "cleansing_devices"
+        ],
+        "evidence": "Microcurrent en RF: apparaten die uitleg vragen, geen losse verzorging."
+      },
+      {
+        "archetypeId": "HAIR_SCALP_TECH",
+        "families": [
+          "laser_hair_growth",
+          "scalp_treatment_devices"
+        ],
+        "evidence": "Haargroeitechniek is high-ticket met sterke voor/na logica en weinig ketenaanbod."
+      },
+      {
+        "archetypeId": "WELLNESS_DEVICES",
+        "families": [
+          "compression_therapy",
+          "red_light_therapy",
+          "sauna_ice_bath"
+        ],
+        "evidence": "Herstel- en lichttherapie: specialistische merken, prijzen ver boven het commodity-punt."
+      },
+      {
+        "archetypeId": "HOME_WELLNESS_TECH",
+        "families": [
+          "home_spa_systems",
+          "water_air_treatment"
+        ],
+        "evidence": "Installaties met echte consideration, verkocht door specialisten in plaats van ketens."
+      },
+      {
+        "archetypeId": "PERSONAL_CARE_TECH",
+        "families": [
+          "oral_care_devices"
+        ],
+        "evidence": "Smalle testfamilie: alleen devices, om te zien of er merken achter zitten."
+      },
+      {
+        "archetypeId": "NICHE_CONSUMER_TECH",
+        "families": [
+          "single_purpose_devices"
+        ],
+        "evidence": "Kleine verkenning van single-purpose devices buiten de elektronicaretail."
+      }
+    ],
+    "parkedArchetypes": [
+      {
+        "archetypeId": "SLEEP_COMFORT",
+        "reason": "Een eerste design target hier zou een directe BestRest-concurrent zijn. Data blijft bewaard."
+      },
+      {
+        "archetypeId": "PET_TECH",
+        "reason": "M9.3.4: vier audits leverden contrast 33-46. De pagina's zijn te verzorgd voor een before/after."
+      }
+    ],
+    "keywordsGenerated": 39,
+    "keywordsRejected": [],
+    "keywordsTested": 20,
+    "keywordsApproved": 11,
+    "keywordsNotTested": [
+      "rood licht masker huid",
+      "microneedling pen thuis",
+      "dermapen apparaat",
+      "ipl ontharing thuis",
+      "laser ontharing apparaat",
+      "microcurrent apparaat gezicht",
+      "radiofrequentie apparaat gezicht",
+      "reinigingsapparaat gezicht",
+      "hydradermabrasie apparaat thuis",
+      "laserkam haaruitval apparaat",
+      "microneedling hoofdhuid apparaat",
+      "compressie laarzen herstel",
+      "lymfedrainage apparaat thuis",
+      "rood licht therapie paneel",
+      "red light therapy lamp",
+      "ijsbad kopen herstel",
+      "sauna blanket kopen",
+      "infrarood cabine thuis specialist",
+      "vacuum sealer professioneel thuisgebruik"
+    ],
+    "rawAdvertisers": 178,
+    "uniqueAdvertisers": 123,
+    "shoppingSellersResolved": 75,
+    "shoppingSellersUnresolved": 0,
+    "skippedForBudget": []
+  },
+  "keywords": [
+    {
+      "keyword": "ultrasoon spatel huid",
+      "keywordId": "7975695b-806c-4cf3-8451-0894bbbbbe4c",
+      "archetypeId": "SKINCARE_DEVICES",
+      "familyId": "cleansing_devices",
+      "familyLabel": "Reinigings- en huidverzorgingsapparaten",
+      "seed": "reinigingsapparaat gezicht",
+      "generationSource": "family_seed",
+      "archetypeFit": 80,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 81,
+      "searchVolume": null,
+      "status": "COMPARISON_DOMINATED",
+      "serpQualityScore": 3,
+      "reason": "50% vergelijkers in de sample",
+      "rawAdvertisers": 4,
+      "prospectEligible": 1,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "bigshopper.nl",
+        "notino.nl",
+        "kieskeurig.nl",
+        "coolmania.com"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "hottub op maat systeem",
+      "keywordId": "b31c539b-7489-4d9e-b369-e851a8c6ecd8",
+      "archetypeId": "HOME_WELLNESS_TECH",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "seed": "infrarood cabine thuis specialist",
+      "generationSource": "family_seed",
+      "archetypeFit": 93,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 91,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 68,
+      "reason": null,
+      "rawAdvertisers": 9,
+      "prospectEligible": 8,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "tuinhuisjes.eu",
+        "hottublifestyle.nl",
+        "drentsehottub.nl",
+        "scandichottubs.nl",
+        "jetdirect.nl",
+        "horizoncabins.nl",
+        "hottubspa.nl",
+        "hottubhouten.nl",
+        "fieldtubs.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "waterontharder zonder zout systeem",
+      "keywordId": "143aa1aa-e3e7-486f-b761-1056c81e15b4",
+      "archetypeId": "HOME_WELLNESS_TECH",
+      "familyId": "water_air_treatment",
+      "familyLabel": "Water- en luchtbehandeling specialist",
+      "seed": "waterontharder zonder zout systeem",
+      "generationSource": "family_seed",
+      "archetypeFit": 84,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 84,
+      "searchVolume": null,
+      "status": "MARGINAL",
+      "serpQualityScore": 23,
+      "reason": "specialist ratio 33% onder de 40% drempel",
+      "rawAdvertisers": 9,
+      "prospectEligible": 3,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "calconditioner.nl",
+        "waterontharder.com",
+        "vergelijkeven.nl",
+        "warmteservice.nl",
+        "gamma.nl",
+        "parelwater.nl",
+        "vergelijk.nl",
+        "sanispecials.nl",
+        "waterontharders.eu"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "monddouche waterflosser professioneel",
+      "keywordId": "f51982a4-4f4c-4693-9b92-0249dc618d8c",
+      "archetypeId": "PERSONAL_CARE_TECH",
+      "familyId": "oral_care_devices",
+      "familyLabel": "Premium mondverzorging",
+      "seed": "monddouche waterflosser professioneel",
+      "generationSource": "family_seed",
+      "archetypeFit": 80,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 81,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 63,
+      "reason": null,
+      "rawAdvertisers": 9,
+      "prospectEligible": 7,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "maxict.nl",
+        "bcc.nl",
+        "tandenborstel.com",
+        "basiqdental.nl",
+        "kieskeurig.nl",
+        "tandenborsteloutlet.nl",
+        "hulpmiddelenspecialist.nl",
+        "demondzorgzaak.nl",
+        "tandartswereld.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "led haargroei helm thuis",
+      "keywordId": "8e7e5d2b-ea1c-4967-a175-a6361d4147e2",
+      "archetypeId": "HAIR_SCALP_TECH",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "seed": "laserhelm haargroei",
+      "generationSource": "family_seed",
+      "archetypeFit": 91,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 89,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 68,
+      "reason": null,
+      "rawAdvertisers": 5,
+      "prospectEligible": 4,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "bioskin.com",
+        "currentbody.nl",
+        "vitalwave.nl",
+        "tester.be",
+        "kicentrum.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "stoomcabine thuis systeem",
+      "keywordId": "5032664a-64f5-411a-9124-29c4e6ebcdb6",
+      "archetypeId": "HOME_WELLNESS_TECH",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "seed": "infrarood cabine thuis specialist",
+      "generationSource": "family_seed",
+      "archetypeFit": 90,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 89,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 46,
+      "reason": null,
+      "rawAdvertisers": 11,
+      "prospectEligible": 6,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "hosel.nl",
+        "douchezaak.nl",
+        "odomi.nl",
+        "deschouwwitgoed.nl",
+        "sanitairkamer.nl",
+        "emall.com",
+        "eurooutletcenter.nl",
+        "elektro.com",
+        "expert.nl",
+        "dehanzewitgoed.nl",
+        "homedeluxe.de"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "tandsteen verwijderaar ultrasoon apparaat",
+      "keywordId": "cbf784a1-6e64-49e4-b52f-434aabdadafc",
+      "archetypeId": "PERSONAL_CARE_TECH",
+      "familyId": "oral_care_devices",
+      "familyLabel": "Premium mondverzorging",
+      "seed": "monddouche waterflosser professioneel",
+      "generationSource": "family_seed",
+      "archetypeFit": 77,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 78,
+      "searchVolume": null,
+      "status": "MARGINAL",
+      "serpQualityScore": 57,
+      "reason": "sample van 3 advertisers is te klein voor een hard oordeel",
+      "rawAdvertisers": 3,
+      "prospectEligible": 2,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "sonicdental.co",
+        "meddent.nl",
+        "wisebuy24.com"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "vacumeermachine professioneel thuisgebruik",
+      "keywordId": "e7a4be6c-86a2-4db3-a6af-ccc6242fbf99",
+      "archetypeId": "NICHE_CONSUMER_TECH",
+      "familyId": "single_purpose_devices",
+      "familyLabel": "Specialistische single-purpose devices",
+      "seed": "vacumeermachine professioneel thuisgebruik",
+      "generationSource": "family_seed",
+      "archetypeFit": 79,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 80,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 44,
+      "reason": null,
+      "rawAdvertisers": 18,
+      "prospectEligible": 10,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "makro.nl",
+        "vergelijk.nl",
+        "coolblue.nl",
+        "beslist.nl",
+        "horecacentrumbrabant.nl",
+        "admhoreca.nl",
+        "nisbets.nl",
+        "horecavoordeelshop.nl",
+        "hanosshop.com",
+        "horecarama.nl",
+        "gooshoreca.nl",
+        "kitchenbrothers.nl",
+        "horecastyle.nl",
+        "chefstore.nl",
+        "horecagemak.nl",
+        "bcc.nl",
+        "allpax.nl",
+        "ckcleaning.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "laserhelm haargroei",
+      "keywordId": "7cbdea9b-06fe-4588-96c9-9cc21e720a8f",
+      "archetypeId": "HAIR_SCALP_TECH",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "seed": "laserhelm haargroei",
+      "generationSource": "family_seed",
+      "archetypeFit": 91,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 89,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 64,
+      "reason": null,
+      "rawAdvertisers": 8,
+      "prospectEligible": 6,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "hairgivers.nl",
+        "currentbody.nl",
+        "tester.be",
+        "hairmax.nl",
+        "revigurize.nl",
+        "bioskin.com",
+        "rehairsystem.com",
+        "ebay.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "hoofdhuid apparaat behandeling thuis",
+      "keywordId": "d1e2ed78-4f90-40eb-a931-8d651b8d463e",
+      "archetypeId": "HAIR_SCALP_TECH",
+      "familyId": "scalp_treatment_devices",
+      "familyLabel": "Hoofdhuidbehandeling apparaten",
+      "seed": "hoofdhuid apparaat behandeling thuis",
+      "generationSource": "family_seed",
+      "archetypeFit": 87,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 86,
+      "searchVolume": null,
+      "status": "COMPARISON_DOMINATED",
+      "serpQualityScore": 8,
+      "reason": "50% vergelijkers in de sample",
+      "rawAdvertisers": 6,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "bigshopper.nl",
+        "freyara.com",
+        "kruidvat.nl",
+        "beslist.nl",
+        "luxury4you.nl",
+        "shoparize.com"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "sous vide systeem professioneel thuis",
+      "keywordId": "ef717c9e-e03b-4bb5-89ad-529014202d78",
+      "archetypeId": "NICHE_CONSUMER_TECH",
+      "familyId": "single_purpose_devices",
+      "familyLabel": "Specialistische single-purpose devices",
+      "seed": "vacumeermachine professioneel thuisgebruik",
+      "generationSource": "family_seed",
+      "archetypeFit": 82,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 82,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 57,
+      "reason": null,
+      "rawAdvertisers": 20,
+      "prospectEligible": 14,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "eu.typhur.com",
+        "makro.nl",
+        "kieskeurig.nl",
+        "chefstore.nl",
+        "coozina.com",
+        "beslist.nl",
+        "sousvidekenner.nl",
+        "hiperchef.com",
+        "horecatraders.com",
+        "horecastyle.nl",
+        "maxima.com",
+        "marmelot.com",
+        "horecagrootkeukenshop.nl",
+        "kitchenshop.eu",
+        "ferplast.com",
+        "xxlhoreca.com",
+        "mk2shop.com",
+        "kookexpert.nl",
+        "horecakeuze.nl",
+        "horecarama.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "infrarood paneel herstel",
+      "keywordId": "aa45c2e0-58c8-44c8-8a7f-598b593eb47a",
+      "archetypeId": "WELLNESS_DEVICES",
+      "familyId": "red_light_therapy",
+      "familyLabel": "Rood licht therapie panelen",
+      "seed": "rood licht therapie paneel",
+      "generationSource": "family_seed",
+      "archetypeFit": 82,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "prospectingValue": 82,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 12,
+      "reason": "67% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 6,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "ledmegastore.nl",
+        "priceradar.nl",
+        "praxis.nl",
+        "ledmegastore.be",
+        "bigshopper.nl",
+        "bcc.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "osmose waterfilter systeem huis",
+      "keywordId": "937109b6-a6ae-443a-8970-07b651fc3789",
+      "archetypeId": "HOME_WELLNESS_TECH",
+      "familyId": "water_air_treatment",
+      "familyLabel": "Water- en luchtbehandeling specialist",
+      "seed": "waterontharder zonder zout systeem",
+      "generationSource": "family_seed",
+      "archetypeFit": 84,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 84,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 71,
+      "reason": null,
+      "rawAdvertisers": 8,
+      "prospectEligible": 7,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "detailschuur.nl",
+        "naturewater.eu",
+        "waterfilterexpert.nl",
+        "vevor.nl",
+        "osmoseapparaat.nl",
+        "waterdropfilter.eu",
+        "hydrotense.eu",
+        "bigshopper.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "led masker gezicht",
+      "keywordId": "755fbb55-3e46-4769-aa9c-5bde9ade066b",
+      "archetypeId": "BEAUTY_DEVICES",
+      "familyId": "led_masks",
+      "familyLabel": "LED-maskers",
+      "seed": "led masker gezicht",
+      "generationSource": "family_seed",
+      "archetypeFit": 97,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 94,
+      "searchVolume": 1000,
+      "status": "RETAILER_DOMINATED",
+      "serpQualityScore": 12,
+      "reason": "50% retailers in de sample",
+      "rawAdvertisers": 8,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "etos.nl",
+        "currentbody.nl",
+        "kruidvat.nl",
+        "coolblue.nl",
+        "douglas.nl",
+        "kieskeurig.nl",
+        "silkyplanet.com",
+        "bigshopper.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "led lichttherapie masker",
+      "keywordId": "6575d24a-e596-4d4f-90ce-cd053802798b",
+      "archetypeId": "BEAUTY_DEVICES",
+      "familyId": "led_masks",
+      "familyLabel": "LED-maskers",
+      "seed": "led masker gezicht",
+      "generationSource": "family_seed",
+      "archetypeFit": 97,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 94,
+      "searchVolume": null,
+      "status": "RETAILER_DOMINATED",
+      "serpQualityScore": 18,
+      "reason": "44% retailers in de sample",
+      "rawAdvertisers": 9,
+      "prospectEligible": 3,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "currentbody.nl",
+        "kieskeurig.nl",
+        "kruidvat.nl",
+        "mediamarkt.nl",
+        "silkyplanet.com",
+        "bigshopper.nl",
+        "douglas.nl",
+        "supersales.nl",
+        "freyara.com"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "lifting apparaat huid",
+      "keywordId": "81cf9f46-ae4b-4cda-ba44-d260a18b9fdf",
+      "archetypeId": "SKINCARE_DEVICES",
+      "familyId": "microcurrent",
+      "familyLabel": "Microcurrent & lifting devices",
+      "seed": "microcurrent apparaat gezicht",
+      "generationSource": "family_seed",
+      "archetypeFit": 86,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 85,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 31,
+      "reason": "50% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 6,
+      "prospectEligible": 3,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "currentbody.nl",
+        "silkyplanet.com",
+        "bcc.nl",
+        "freyara.com",
+        "kruidvat.nl",
+        "vergelijkeven.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "derma roller professioneel",
+      "keywordId": "71e3981b-71e1-43ad-b8b3-cd999e045e8b",
+      "archetypeId": "BEAUTY_DEVICES",
+      "familyId": "microneedling_devices",
+      "familyLabel": "Microneedling & derma devices",
+      "seed": "microneedling pen thuis",
+      "generationSource": "family_seed",
+      "archetypeFit": 98,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 95,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 39,
+      "reason": null,
+      "rawAdvertisers": 13,
+      "prospectEligible": 6,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "mediconline.nl",
+        "douglas.nl",
+        "dermacare.nl",
+        "kruidvat.nl",
+        "bioskin.com",
+        "johnbeerens.com",
+        "ebay.nl",
+        "layzinskin.com",
+        "andries.nl",
+        "makeup.com",
+        "notino.nl",
+        "neofollics.com",
+        "kappers.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "infrarood sauna thuis",
+      "keywordId": "9fca42b9-0bf8-42ab-b21a-e1d4eb167c4e",
+      "archetypeId": "WELLNESS_DEVICES",
+      "familyId": "sauna_ice_bath",
+      "familyLabel": "Infraroodsauna & ijsbad",
+      "seed": "infrarood sauna thuis",
+      "generationSource": "family_seed",
+      "archetypeFit": 84,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "prospectingValue": 84,
+      "searchVolume": null,
+      "status": "APPROVED",
+      "serpQualityScore": 55,
+      "reason": null,
+      "rawAdvertisers": 13,
+      "prospectEligible": 9,
+      "approvedForDiscovery": true,
+      "cost": 0,
+      "domains": [
+        "saunakoning.nl",
+        "hornbach.nl",
+        "bricoandpool.com",
+        "fonteyn.nl",
+        "dezomerspecialist.nl",
+        "vergelijk.nl",
+        "vevor.nl",
+        "bigshopper.nl",
+        "vazquezsupplements.nl",
+        "albert.com",
+        "quirumed.com",
+        "sunspabenelux.nl",
+        "supersauna.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "ipl apparaat ontharen",
+      "keywordId": "2049363d-1cac-4f97-84a6-6eb3e34bf929",
+      "archetypeId": "BEAUTY_DEVICES",
+      "familyId": "ipl_hair_removal",
+      "familyLabel": "IPL ontharing",
+      "seed": "ipl apparaat ontharen",
+      "generationSource": "family_seed",
+      "archetypeFit": 93,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 91,
+      "searchVolume": null,
+      "status": "RETAILER_DOMINATED",
+      "serpQualityScore": 0,
+      "reason": "43% retailers in de sample",
+      "rawAdvertisers": 7,
+      "prospectEligible": 1,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "beslist.nl",
+        "coolblue.nl",
+        "mediamarkt.nl",
+        "silkyplanet.com",
+        "bigshopper.nl",
+        "supersales.nl",
+        "priceradar.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    },
+    {
+      "keyword": "compressietherapie benen apparaat",
+      "keywordId": "20e97b71-2008-43d9-8d7f-787ad5c3339f",
+      "archetypeId": "WELLNESS_DEVICES",
+      "familyId": "compression_therapy",
+      "familyLabel": "Compressietherapie",
+      "seed": "compressie laarzen herstel",
+      "generationSource": "family_seed",
+      "archetypeFit": 82,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "prospectingValue": 82,
+      "searchVolume": null,
+      "status": "LOW_SPECIALIST_YIELD",
+      "serpQualityScore": 16,
+      "reason": "67% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "rawAdvertisers": 6,
+      "prospectEligible": 2,
+      "approvedForDiscovery": false,
+      "cost": 0,
+      "domains": [
+        "coolblue.nl",
+        "bigshopper.nl",
+        "fysiosupplies.nl",
+        "quirumed.com",
+        "vergelijk.nl",
+        "bcc.nl"
+      ],
+      "recoveredSellers": 0,
+      "unresolvedSellers": []
+    }
+  ],
+  "funnel": {
+    "raw_advertisers": 178,
+    "prospect_eligible": 71,
+    "ecommerce_specialists": 68,
+    "compact_catalog": 20,
+    "own_brand": 16,
+    "high_ticket_hero": 9,
+    "serious_candidate": 16
+  },
+  "funnelYieldPercent": {
+    "prospectYield": 57.7,
+    "specialistYield": 55.3,
+    "seriousCandidateYield": 13
+  },
+  "excludedRetailers": [
+    {
+      "domain": "tuinhuisjes.eu",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "bcc.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "kieskeurig.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "tester.be",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "douchezaak.nl",
+      "prospectClass": "GENERAL_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "odomi.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "emall.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "elektro.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "expert.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "mass_retail_operator"
+    },
+    {
+      "domain": "wisebuy24.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "makro.nl",
+      "prospectClass": "GENERAL_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "vergelijk.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "coolblue.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "beslist.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "hanosshop.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "gooshoreca.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "allpax.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "ebay.nl",
+      "prospectClass": "MARKETPLACE",
+      "reason": "marketplace_signal"
+    },
+    {
+      "domain": "eu.typhur.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "coozina.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "hiperchef.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "ferplast.com",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "mass_retail_scale"
+    },
+    {
+      "domain": "bigshopper.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "douglas.nl",
+      "prospectClass": "GENERAL_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "kruidvat.nl",
+      "prospectClass": "GENERAL_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "andries.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "makeup.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "notino.nl",
+      "prospectClass": "GENERAL_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "kappers.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    },
+    {
+      "domain": "hornbach.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type"
+    },
+    {
+      "domain": "albert.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce"
+    }
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "domain": "vitalwave.nl",
+      "siteUrl": "https://vitalwave.nl",
+      "heroProductUrl": "https://www.vitalwave.nl/products/vitalwave-rood-licht-therapie-pet",
+      "heroUrlSource": "ad_landing",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 26,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 75,
+      "heroProduct": "Rood licht therapie pet Voor stimuleren van haargroei Red light therapy cap",
+      "heroPrice": 325,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "led haargroei helm thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 87,
+      "currentPdpWeaknessProxy": 48,
+      "estimatedContrastCeiling": 69,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 69: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 82,
+      "evidence": [
+        "heroproduct 325 euro: hoge productwaarde",
+        "eigen-merksignaal 75",
+        "26 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "26 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 2,
+      "domain": "hairmax.nl",
+      "siteUrl": "https://hairmax.nl",
+      "heroProductUrl": "https://hairmax.nl/products/actonis-18-dual-action-lasercomb-eu",
+      "heroUrlSource": "catalog_flagship",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 22,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "ACTONIS™ 18 DUAL ACTION LASERCOMB",
+      "heroPrice": 499.99,
+      "heroCurrency": "EUR",
+      "heroScore": 82,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "laserhelm haargroei"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 85,
+      "currentPdpWeaknessProxy": 38,
+      "estimatedContrastCeiling": 62,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 62: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 81,
+      "evidence": [
+        "heroproduct 500 euro: hoge productwaarde",
+        "eigen-merksignaal 60",
+        "22 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "22 producten: overzichtelijk merk",
+        "eigen merk (60)",
+        "advertentie kon niet naar een productpagina worden herleid, productpagina uit de catalogus getoond: ACTONIS™ 18 DUAL ACTION LASERCOMB"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 3,
+      "domain": "hottublifestyle.nl",
+      "siteUrl": "https://hottublifestyle.nl",
+      "heroProductUrl": "https://www.hottublifestyle.nl/products/tobbe-hottub",
+      "heroUrlSource": "ad_landing",
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "Hottub kopen | Zelfbouw Tøbbe Hottub Ø 175 cm voor maatwerk ontspanning",
+      "heroPrice": 1645,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 80,
+      "currentPdpWeaknessProxy": 56,
+      "estimatedContrastCeiling": 70,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 70: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 79,
+      "evidence": [
+        "heroproduct 1645 euro: premium ticket",
+        "eigen-merksignaal 60",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk",
+        "eigen merk (60)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 4,
+      "domain": "horizoncabins.nl",
+      "siteUrl": "https://horizoncabins.nl",
+      "heroProductUrl": "https://horizoncabins.nl/products/uppsala-thermohout-hottub-met-geintegreerde-houtkachel-massagejets-led-verlichting-bubbelsysteem-en-vrije-kleurkeuze",
+      "heroUrlSource": "ad_landing",
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 87,
+      "catalogFocusScore": 55,
+      "catalogVerified": true,
+      "catalogBandLabel": "bruikbaar",
+      "ownBrandSignal": 75,
+      "heroProduct": "Eclipse Compleet -2 Persoons Hottub – Luxe Houtgestookte Hottub met Hydrojets",
+      "heroPrice": 2245,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 74,
+      "currentPdpWeaknessProxy": 52,
+      "estimatedContrastCeiling": 68,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 68: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 77,
+      "evidence": [
+        "heroproduct 2245 euro: premium ticket",
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "87 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 5,
+      "domain": "rehairsystem.com",
+      "siteUrl": "https://rehairsystem.com",
+      "heroProductUrl": "https://rehairsystem.com/products/rehair®-laser-hair-growth-lightweight-band-lllt-laser-hair-band-for-hair-loss",
+      "heroUrlSource": "catalog_flagship",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "ReHair Laser Haargroeipet",
+      "heroPrice": 345,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "laserhelm haargroei"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 79,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 73,
+      "evidence": [
+        "heroproduct 345 euro: hoge productwaarde",
+        "eigen-merksignaal 60",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk",
+        "eigen merk (60)",
+        "advertentie kon niet naar een productpagina worden herleid, productpagina uit de catalogus getoond: ReHair® Laser Hair Growth Band| Smart Sensor LLLT Laser Hair Band for Hair Loss Receding Hairline"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 6,
+      "domain": "hottubhouten.nl",
+      "siteUrl": "https://hottubhouten.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "WOOCOMMERCE",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 57,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 24,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "Inbouw Hottub voor Terras en Tuin – TimberIN InGround Comfort",
+      "heroPrice": 1900,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 83,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 72,
+      "evidence": [
+        "heroproduct 1900 euro: premium ticket",
+        "eigen-merksignaal 60",
+        "24 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "retailschaal 55: te groot voor deze opdracht",
+        "homepage toont nauwelijks producten",
+        "24 producten: overzichtelijk merk",
+        "eigen merk (60)"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 7,
+      "domain": "horecakeuze.nl",
+      "siteUrl": "https://horecakeuze.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "NICHE_CONSUMER_TECH",
+      "branchLabel": "Niche Consumer Tech",
+      "familyId": "single_purpose_devices",
+      "familyLabel": "Specialistische single-purpose devices",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MIXED",
+      "companyScaleFit": 64,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 24,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 55,
+      "heroProduct": "Hendi Sous-vide stick 80",
+      "heroPrice": 403.75,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "sous vide systeem professioneel thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 75,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 71,
+      "evidence": [
+        "heroproduct 404 euro: hoge productwaarde",
+        "eigen-merksignaal 55",
+        "24 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "24 producten: overzichtelijk merk"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 8,
+      "domain": "bricoandpool.com",
+      "siteUrl": "https://bricoandpool.com",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "WELLNESS_DEVICES",
+      "branchLabel": "Wellness Devices",
+      "familyId": "sauna_ice_bath",
+      "familyLabel": "Infraroodsauna & ijsbad",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MIXED",
+      "companyScaleFit": 64,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 36,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 55,
+      "heroProduct": "Infraroodsauna voor thuis, voor 2 personen, met 5 panelen, Bluetooth en digitale bediening",
+      "heroPrice": 1049,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "infrarood sauna thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 73,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 71,
+      "evidence": [
+        "heroproduct 1049 euro: premium ticket",
+        "eigen-merksignaal 55",
+        "36 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "36 producten: overzichtelijk merk"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 9,
+      "domain": "fonteyn.nl",
+      "siteUrl": "https://fonteyn.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "WELLNESS_DEVICES",
+      "branchLabel": "Wellness Devices",
+      "familyId": "sauna_ice_bath",
+      "familyLabel": "Infraroodsauna & ijsbad",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MIXED",
+      "companyScaleFit": 64,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 55,
+      "heroProduct": "Fonteyn Rose 2 Infrarood Sauna",
+      "heroPrice": 1099,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "infrarood sauna thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": null
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 73,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 71,
+      "evidence": [
+        "heroproduct 1099 euro: premium ticket",
+        "eigen-merksignaal 55",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 10,
+      "domain": "dermacare.nl",
+      "siteUrl": "https://dermacare.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "BEAUTY_DEVICES",
+      "branchLabel": "Beauty Devices",
+      "familyId": "microneedling_devices",
+      "familyLabel": "Microneedling & derma devices",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 32,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 75,
+      "heroProduct": "Dermaroller– Homeroller HC902",
+      "heroPrice": 64.55,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "LOW",
+      "priceBandLabel": "lage productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "derma roller professioneel"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 84,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 66,
+      "evidence": [
+        "eigen-merksignaal 75",
+        "32 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "32 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 11,
+      "domain": "revigurize.nl",
+      "siteUrl": "https://revigurize.nl",
+      "heroProductUrl": "https://revigurize.nl/products/active-hair-cap",
+      "heroUrlSource": "ad_landing",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": null,
+      "catalogFocusScore": 50,
+      "catalogVerified": false,
+      "catalogBandLabel": "onbekend",
+      "ownBrandSignal": 75,
+      "heroProduct": "Revigurize Active Hair Cap - Lasertherapie (LLLT) tegen haaruitval",
+      "heroPrice": 850,
+      "heroCurrency": "EUR",
+      "heroScore": 45,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "laserhelm haargroei"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 75,
+      "currentPdpWeaknessProxy": 52,
+      "estimatedContrastCeiling": 70,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 70: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 64,
+      "evidence": [
+        "heroproduct 850 euro: premium ticket",
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "eigen merk (75)"
+      ],
+      "penalties": [
+        {
+          "reason": "catalogusomvang niet geverifieerd",
+          "points": 8
+        }
+      ],
+      "screenshots": null
+    },
+    {
+      "rank": 12,
+      "domain": "sonicdental.co",
+      "siteUrl": "https://sonicdental.co",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "PERSONAL_CARE_TECH",
+      "branchLabel": "Personal Care Tech",
+      "familyId": "oral_care_devices",
+      "familyLabel": "Premium mondverzorging",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 34,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "Sonic Spa Pro ultrasone & UV-C reiniger voor Gebitsaligners/Retainers",
+      "heroPrice": 69.95,
+      "heroCurrency": "EUR",
+      "heroScore": 45,
+      "priceBand": "LOW",
+      "priceBandLabel": "lage productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "tandsteen verwijderaar ultrasoon apparaat"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 79,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 63,
+      "evidence": [
+        "eigen-merksignaal 60",
+        "34 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "34 producten: overzichtelijk merk",
+        "eigen merk (60)"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 13,
+      "domain": "bioskin.com",
+      "siteUrl": "https://bioskin.com",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "UNKNOWN",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": null,
+      "catalogFocusScore": 50,
+      "catalogVerified": false,
+      "catalogBandLabel": "onbekend",
+      "ownBrandSignal": 75,
+      "heroProduct": "Hair Boom AIR WONTEC Laserhelm voor haargroei - Helm voor haargroei",
+      "heroPrice": 1451.8,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "led haargroei helm thuis",
+          "laserhelm haargroei",
+          "derma roller professioneel"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 76,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 59,
+      "evidence": [
+        "heroproduct 1452 euro: premium ticket",
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 3 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "eigen merk (75)"
+      ],
+      "penalties": [
+        {
+          "reason": "catalogusomvang niet geverifieerd",
+          "points": 8
+        }
+      ],
+      "screenshots": null
+    },
+    {
+      "rank": 14,
+      "domain": "kicentrum.nl",
+      "siteUrl": "https://kicentrum.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "WOOCOMMERCE",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": null,
+      "catalogFocusScore": 50,
+      "catalogVerified": false,
+      "catalogBandLabel": "onbekend",
+      "ownBrandSignal": 75,
+      "heroProduct": "GlowTherapie Haargroei Helm - Roodlicht therapie - Kicentrum.nl",
+      "heroPrice": 699.99,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "led haargroei helm thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": null
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 76,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 59,
+      "evidence": [
+        "heroproduct 700 euro: premium ticket",
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "eigen merk (75)"
+      ],
+      "penalties": [
+        {
+          "reason": "catalogusomvang niet geverifieerd",
+          "points": 8
+        }
+      ],
+      "screenshots": null
+    },
+    {
+      "rank": 15,
+      "domain": "hosel.nl",
+      "siteUrl": "https://hosel.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 78,
+      "catalogFocusScore": 37,
+      "catalogVerified": true,
+      "catalogBandLabel": "bruikbaar",
+      "ownBrandSignal": 75,
+      "heroProduct": null,
+      "heroPrice": null,
+      "heroCurrency": null,
+      "heroScore": null,
+      "priceBand": "UNKNOWN",
+      "priceBandLabel": "prijs onbekend",
+      "googleAdsEvidence": {
+        "keywords": [
+          "stoomcabine thuis systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 65,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 58,
+      "evidence": [
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "78 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 16,
+      "domain": "johnbeerens.com",
+      "siteUrl": "https://johnbeerens.com",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "BEAUTY_DEVICES",
+      "branchLabel": "Beauty Devices",
+      "familyId": "microneedling_devices",
+      "familyLabel": "Microneedling & derma devices",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MIXED",
+      "companyScaleFit": 64,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 56,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "bruikbaar",
+      "ownBrandSignal": 45,
+      "heroProduct": "White Lotus Sensitive Skin Microneedling Roller",
+      "heroPrice": 58,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "LOW",
+      "priceBandLabel": "lage productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "derma roller professioneel"
+        ],
+        "landingUrls": [],
+        "sellerResolution": null
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 84,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 58,
+      "evidence": [
+        "eigen-merksignaal 45",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "56 producten: overzichtelijk merk"
+      ],
+      "penalties": [],
+      "screenshots": null
+    }
+  ],
+  "ranked": [
+    {
+      "rank": 1,
+      "domain": "vitalwave.nl",
+      "siteUrl": "https://vitalwave.nl",
+      "heroProductUrl": "https://www.vitalwave.nl/products/vitalwave-rood-licht-therapie-pet",
+      "heroUrlSource": "ad_landing",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 26,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 75,
+      "heroProduct": "Rood licht therapie pet Voor stimuleren van haargroei Red light therapy cap",
+      "heroPrice": 325,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "led haargroei helm thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 87,
+      "currentPdpWeaknessProxy": 48,
+      "estimatedContrastCeiling": 69,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 69: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 82,
+      "evidence": [
+        "heroproduct 325 euro: hoge productwaarde",
+        "eigen-merksignaal 75",
+        "26 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "26 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 2,
+      "domain": "hairmax.nl",
+      "siteUrl": "https://hairmax.nl",
+      "heroProductUrl": "https://hairmax.nl/products/actonis-18-dual-action-lasercomb-eu",
+      "heroUrlSource": "catalog_flagship",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 22,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "ACTONIS™ 18 DUAL ACTION LASERCOMB",
+      "heroPrice": 499.99,
+      "heroCurrency": "EUR",
+      "heroScore": 82,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "laserhelm haargroei"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 85,
+      "currentPdpWeaknessProxy": 38,
+      "estimatedContrastCeiling": 62,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 62: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 81,
+      "evidence": [
+        "heroproduct 500 euro: hoge productwaarde",
+        "eigen-merksignaal 60",
+        "22 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "22 producten: overzichtelijk merk",
+        "eigen merk (60)",
+        "advertentie kon niet naar een productpagina worden herleid, productpagina uit de catalogus getoond: ACTONIS™ 18 DUAL ACTION LASERCOMB"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 3,
+      "domain": "hottublifestyle.nl",
+      "siteUrl": "https://hottublifestyle.nl",
+      "heroProductUrl": "https://www.hottublifestyle.nl/products/tobbe-hottub",
+      "heroUrlSource": "ad_landing",
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "Hottub kopen | Zelfbouw Tøbbe Hottub Ø 175 cm voor maatwerk ontspanning",
+      "heroPrice": 1645,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 80,
+      "currentPdpWeaknessProxy": 56,
+      "estimatedContrastCeiling": 70,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 70: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 79,
+      "evidence": [
+        "heroproduct 1645 euro: premium ticket",
+        "eigen-merksignaal 60",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk",
+        "eigen merk (60)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 4,
+      "domain": "horizoncabins.nl",
+      "siteUrl": "https://horizoncabins.nl",
+      "heroProductUrl": "https://horizoncabins.nl/products/uppsala-thermohout-hottub-met-geintegreerde-houtkachel-massagejets-led-verlichting-bubbelsysteem-en-vrije-kleurkeuze",
+      "heroUrlSource": "ad_landing",
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 87,
+      "catalogFocusScore": 55,
+      "catalogVerified": true,
+      "catalogBandLabel": "bruikbaar",
+      "ownBrandSignal": 75,
+      "heroProduct": "Eclipse Compleet -2 Persoons Hottub – Luxe Houtgestookte Hottub met Hydrojets",
+      "heroPrice": 2245,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 74,
+      "currentPdpWeaknessProxy": 52,
+      "estimatedContrastCeiling": 68,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 68: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 77,
+      "evidence": [
+        "heroproduct 2245 euro: premium ticket",
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "87 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 5,
+      "domain": "rehairsystem.com",
+      "siteUrl": "https://rehairsystem.com",
+      "heroProductUrl": "https://rehairsystem.com/products/rehair®-laser-hair-growth-lightweight-band-lllt-laser-hair-band-for-hair-loss",
+      "heroUrlSource": "catalog_flagship",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "ReHair Laser Haargroeipet",
+      "heroPrice": 345,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "laserhelm haargroei"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 79,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 73,
+      "evidence": [
+        "heroproduct 345 euro: hoge productwaarde",
+        "eigen-merksignaal 60",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk",
+        "eigen merk (60)",
+        "advertentie kon niet naar een productpagina worden herleid, productpagina uit de catalogus getoond: ReHair® Laser Hair Growth Band| Smart Sensor LLLT Laser Hair Band for Hair Loss Receding Hairline"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 6,
+      "domain": "hottubhouten.nl",
+      "siteUrl": "https://hottubhouten.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "WOOCOMMERCE",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 57,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 24,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "Inbouw Hottub voor Terras en Tuin – TimberIN InGround Comfort",
+      "heroPrice": 1900,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 83,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 72,
+      "evidence": [
+        "heroproduct 1900 euro: premium ticket",
+        "eigen-merksignaal 60",
+        "24 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "retailschaal 55: te groot voor deze opdracht",
+        "homepage toont nauwelijks producten",
+        "24 producten: overzichtelijk merk",
+        "eigen merk (60)"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 7,
+      "domain": "horecakeuze.nl",
+      "siteUrl": "https://horecakeuze.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "NICHE_CONSUMER_TECH",
+      "branchLabel": "Niche Consumer Tech",
+      "familyId": "single_purpose_devices",
+      "familyLabel": "Specialistische single-purpose devices",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MIXED",
+      "companyScaleFit": 64,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 24,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 55,
+      "heroProduct": "Hendi Sous-vide stick 80",
+      "heroPrice": 403.75,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "sous vide systeem professioneel thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 75,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 71,
+      "evidence": [
+        "heroproduct 404 euro: hoge productwaarde",
+        "eigen-merksignaal 55",
+        "24 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "24 producten: overzichtelijk merk"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 8,
+      "domain": "bricoandpool.com",
+      "siteUrl": "https://bricoandpool.com",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "WELLNESS_DEVICES",
+      "branchLabel": "Wellness Devices",
+      "familyId": "sauna_ice_bath",
+      "familyLabel": "Infraroodsauna & ijsbad",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MIXED",
+      "companyScaleFit": 64,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 36,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 55,
+      "heroProduct": "Infraroodsauna voor thuis, voor 2 personen, met 5 panelen, Bluetooth en digitale bediening",
+      "heroPrice": 1049,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "infrarood sauna thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 73,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 71,
+      "evidence": [
+        "heroproduct 1049 euro: premium ticket",
+        "eigen-merksignaal 55",
+        "36 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "36 producten: overzichtelijk merk"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 9,
+      "domain": "fonteyn.nl",
+      "siteUrl": "https://fonteyn.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "WELLNESS_DEVICES",
+      "branchLabel": "Wellness Devices",
+      "familyId": "sauna_ice_bath",
+      "familyLabel": "Infraroodsauna & ijsbad",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MIXED",
+      "companyScaleFit": 64,
+      "companyScaleBand": "MID_BRAND",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 55,
+      "heroProduct": "Fonteyn Rose 2 Infrarood Sauna",
+      "heroPrice": 1099,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "infrarood sauna thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": null
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 73,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 71,
+      "evidence": [
+        "heroproduct 1099 euro: premium ticket",
+        "eigen-merksignaal 55",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk"
+      ],
+      "penalties": [],
+      "screenshots": null
+    },
+    {
+      "rank": 10,
+      "domain": "dermacare.nl",
+      "siteUrl": "https://dermacare.nl",
+      "heroProductUrl": null,
+      "heroUrlSource": null,
+      "branch": "BEAUTY_DEVICES",
+      "branchLabel": "Beauty Devices",
+      "familyId": "microneedling_devices",
+      "familyLabel": "Microneedling & derma devices",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 32,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 75,
+      "heroProduct": "Dermaroller– Homeroller HC902",
+      "heroPrice": 64.55,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "LOW",
+      "priceBandLabel": "lage productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "derma roller professioneel"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 84,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 66,
+      "evidence": [
+        "eigen-merksignaal 75",
+        "32 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "32 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": null
+    }
+  ],
+  "manualReview": [
+    {
+      "rank": 1,
+      "domain": "vitalwave.nl",
+      "siteUrl": "https://vitalwave.nl",
+      "heroProductUrl": "https://www.vitalwave.nl/products/vitalwave-rood-licht-therapie-pet",
+      "heroUrlSource": "ad_landing",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 26,
+      "catalogFocusScore": 92,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 75,
+      "heroProduct": "Rood licht therapie pet Voor stimuleren van haargroei Red light therapy cap",
+      "heroPrice": 325,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "led haargroei helm thuis"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 87,
+      "currentPdpWeaknessProxy": 48,
+      "estimatedContrastCeiling": 69,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 69: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 82,
+      "evidence": [
+        "heroproduct 325 euro: hoge productwaarde",
+        "eigen-merksignaal 75",
+        "26 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "26 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\vitalwave-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 2,
+      "domain": "hairmax.nl",
+      "siteUrl": "https://hairmax.nl",
+      "heroProductUrl": "https://hairmax.nl/products/actonis-18-dual-action-lasercomb-eu",
+      "heroUrlSource": "catalog_flagship",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 22,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "ACTONIS™ 18 DUAL ACTION LASERCOMB",
+      "heroPrice": 499.99,
+      "heroCurrency": "EUR",
+      "heroScore": 82,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "laserhelm haargroei"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 100,
+      "deepDivePdpFitProxy": 85,
+      "currentPdpWeaknessProxy": 38,
+      "estimatedContrastCeiling": 62,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 62: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 81,
+      "evidence": [
+        "heroproduct 500 euro: hoge productwaarde",
+        "eigen-merksignaal 60",
+        "22 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "22 producten: overzichtelijk merk",
+        "eigen merk (60)",
+        "advertentie kon niet naar een productpagina worden herleid, productpagina uit de catalogus getoond: ACTONIS™ 18 DUAL ACTION LASERCOMB"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hairmax-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 3,
+      "domain": "hottublifestyle.nl",
+      "siteUrl": "https://hottublifestyle.nl",
+      "heroProductUrl": "https://www.hottublifestyle.nl/products/tobbe-hottub",
+      "heroUrlSource": "ad_landing",
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 80,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "Hottub kopen | Zelfbouw Tøbbe Hottub Ø 175 cm voor maatwerk ontspanning",
+      "heroPrice": 1645,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 80,
+      "currentPdpWeaknessProxy": 56,
+      "estimatedContrastCeiling": 70,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 70: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 79,
+      "evidence": [
+        "heroproduct 1645 euro: premium ticket",
+        "eigen-merksignaal 60",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk",
+        "eigen merk (60)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\hottublifestyle-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 4,
+      "domain": "horizoncabins.nl",
+      "siteUrl": "https://horizoncabins.nl",
+      "heroProductUrl": "https://horizoncabins.nl/products/uppsala-thermohout-hottub-met-geintegreerde-houtkachel-massagejets-led-verlichting-bubbelsysteem-en-vrije-kleurkeuze",
+      "heroUrlSource": "ad_landing",
+      "branch": "HOME_WELLNESS_TECH",
+      "branchLabel": "Home Wellness Tech",
+      "familyId": "home_spa_systems",
+      "familyLabel": "Thuis spa- en wellnesssystemen",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "DTC_OWN_BRAND",
+      "companyScaleFit": 80,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 87,
+      "catalogFocusScore": 55,
+      "catalogVerified": true,
+      "catalogBandLabel": "bruikbaar",
+      "ownBrandSignal": 75,
+      "heroProduct": "Eclipse Compleet -2 Persoons Hottub – Luxe Houtgestookte Hottub met Hydrojets",
+      "heroPrice": 2245,
+      "heroCurrency": "EUR",
+      "heroScore": 55,
+      "priceBand": "PREMIUM",
+      "priceBandLabel": "premium ticket",
+      "googleAdsEvidence": {
+        "keywords": [
+          "hottub op maat systeem"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": 90,
+      "deepDivePdpFitProxy": 74,
+      "currentPdpWeaknessProxy": 52,
+      "estimatedContrastCeiling": 68,
+      "contrastCeilingEvidence": [
+        "prijspunt rechtvaardigt een uitgebreide pagina",
+        "plafond 68: haalt de design target drempel"
+      ],
+      "highTicketFocusedFitScore": 77,
+      "evidence": [
+        "heroproduct 2245 euro: premium ticket",
+        "eigen-merksignaal 75",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "geen ketensignalen",
+        "homepage toont nauwelijks producten",
+        "87 producten: overzichtelijk merk",
+        "eigen merk (75)"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\horizoncabins-nl-homepage-1440x1000.png"
+      }
+    },
+    {
+      "rank": 5,
+      "domain": "rehairsystem.com",
+      "siteUrl": "https://rehairsystem.com",
+      "heroProductUrl": "https://rehairsystem.com/products/rehair®-laser-hair-growth-lightweight-band-lllt-laser-hair-band-for-hair-loss",
+      "heroUrlSource": "catalog_flagship",
+      "branch": "HAIR_SCALP_TECH",
+      "branchLabel": "Hair & Scalp Tech",
+      "familyId": "laser_hair_growth",
+      "familyLabel": "Laser- en LED-haargroei",
+      "platform": "SHOPIFY",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "commerceModel": "MOSTLY_OWN_BRAND",
+      "companyScaleFit": 72,
+      "companyScaleBand": "SMALL_SPECIALIST",
+      "businessMaturity": null,
+      "estimatedCatalogSize": 45,
+      "catalogFocusScore": 62,
+      "catalogVerified": true,
+      "catalogBandLabel": "ideaal",
+      "ownBrandSignal": 60,
+      "heroProduct": "ReHair Laser Haargroeipet",
+      "heroPrice": 345,
+      "heroCurrency": "EUR",
+      "heroScore": 61,
+      "priceBand": "HIGH",
+      "priceBandLabel": "hoge productwaarde",
+      "googleAdsEvidence": {
+        "keywords": [
+          "laserhelm haargroei"
+        ],
+        "landingUrls": [],
+        "sellerResolution": "probe_verified"
+      },
+      "assetReadinessProxy": null,
+      "deepDivePdpFitProxy": 79,
+      "currentPdpWeaknessProxy": null,
+      "estimatedContrastCeiling": 55,
+      "contrastCeilingEvidence": [
+        "huidige pagina niet gemeten, schatting blijft neutraal"
+      ],
+      "highTicketFocusedFitScore": 73,
+      "evidence": [
+        "heroproduct 345 euro: hoge productwaarde",
+        "eigen-merksignaal 60",
+        "45 producten: ideaal",
+        "betaalde plaatsingen op 1 zoekopdracht(en)",
+        "homepage toont nauwelijks producten",
+        "45 producten: overzichtelijk merk",
+        "eigen merk (60)",
+        "advertentie kon niet naar een productpagina worden herleid, productpagina uit de catalogus getoond: ReHair® Laser Hair Growth Band| Smart Sensor LLLT Laser Hair Band for Hair Loss Receding Hairline"
+      ],
+      "penalties": [],
+      "screenshots": {
+        "pdpDesktop": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-pdp-desktop-1440x1000.png",
+        "pdpMobile": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-pdp-mobile-390x844.png",
+        "homepage": "C:\\Users\\Flexdesigns\\agentroom\\meneer-marketing-web\\commerce-opportunity-engine\\m9.4-screenshots\\rehairsystem-com-homepage-1440x1000.png"
+      }
+    }
+  ],
+  "cost": {
+    "dataForSeo": 0.126,
+    "dataForSeoCap": 0.2,
+    "keywordIdeas": 0,
+    "serp": 0,
+    "anthropic": 0,
+    "costPerCandidate": 0.0079,
+    "lightChecks": 3,
+    "catalogChecks": 68,
+    "heroResolutions": 45
+  },
+  "downstream": {
+    "croAudits": 0,
+    "conceptBriefs": 0,
+    "previews": 0,
+    "contactDiscovery": 0,
+    "outreach": 0
+  }
+}

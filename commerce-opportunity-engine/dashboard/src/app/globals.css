@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --mm-bg: #f3f7fb;
+  --mm-surface: #e8f0f8;
+  --mm-surface-elevated: #ffffff;
+  --mm-border: #d0dce8;
+  --mm-text: #0f172a;
+  --mm-muted: #64748b;
+  --mm-sky: #0ea5e9;
+  --mm-sky-deep: #0284c7;
+  --mm-sky-subtle: #e0f2fe;
+  --mm-accent: #c2410c;
+  --mm-accent-hover: #9a3412;
+  --mm-accent-subtle: #ffedd5;
+  --mm-brand: #ff5722;
+  --mm-footer-bg: #0c1222;
+  --mm-footer-muted: #94a3b8;
+  --mm-shadow-card: 0 1px 2px rgb(15 23 42 / 0.04),
+    0 8px 24px rgb(15 23 42 / 0.06);
+  --mm-shadow-float: 0 4px 6px rgb(15 23 42 / 0.04),
+    0 18px 40px rgb(14 165 233 / 0.08);
+}
+
+@theme inline {
+  --color-mm-bg: var(--mm-bg);
+  --color-mm-surface: var(--mm-surface);
+  --color-mm-surface-elevated: var(--mm-surface-elevated);
+  --color-mm-border: var(--mm-border);
+  --color-mm-text: var(--mm-text);
+  --color-mm-muted: var(--mm-muted);
+  --color-mm-sky: var(--mm-sky);
+  --color-mm-sky-deep: var(--mm-sky-deep);
+  --color-mm-sky-subtle: var(--mm-sky-subtle);
+  --color-mm-accent: var(--mm-accent);
+  --color-mm-accent-hover: var(--mm-accent-hover);
+  --color-mm-accent-subtle: var(--mm-accent-subtle);
+  --color-mm-brand: var(--mm-brand);
+  --color-mm-footer-bg: var(--mm-footer-bg);
+  --color-mm-footer-muted: var(--mm-footer-muted);
+  --font-sans: var(--font-plus-jakarta);
+  --shadow-mm-card: var(--mm-shadow-card);
+  --shadow-mm-float: var(--mm-shadow-float);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--mm-bg);
+  color: var(--mm-text);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--mm-sky-subtle);
+}
+
+:focus-visible {
+  outline: 2px solid var(--mm-sky-deep);
+  outline-offset: 2px;
+}
+
+.mm-grid-bg {
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}

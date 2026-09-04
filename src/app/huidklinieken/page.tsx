@@ -40,6 +40,9 @@ export default async function HuidkliniekenPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const rawRef = Array.isArray(params.ref) ? params.ref[0] : params.ref;
   const { ref, personalization } = await resolveCampaignRef(rawRef);
+  const checkout = Array.isArray(params.checkout)
+    ? params.checkout[0]
+    : params.checkout;
   const rawPayment = Array.isArray(params.payment)
     ? params.payment[0]
     : params.payment;
@@ -51,6 +54,21 @@ export default async function HuidkliniekenPage({ searchParams }: PageProps) {
     redirect(
       `/huidklinieken/bedankt?betaald=1&submission=${encodeURIComponent(submissionId)}`,
     );
+  }
+
+  if (checkout === "bedankt" && rawPayment && rawPayment !== "pending") {
+    const bedanktParams = new URLSearchParams({
+      betaald: "1",
+      mollie: rawPayment,
+      status: "pending",
+      pay: "0",
+      launch: "0",
+      pakket: "unsure",
+    });
+    if (submissionId) {
+      bedanktParams.set("submission", submissionId);
+    }
+    redirect(`/huidklinieken/bedankt?${bedanktParams.toString()}`);
   }
 
   return (

@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# dependencies (geen leading slash: ook nested projecten zoals overkapping-gids/)
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -13,8 +13,8 @@
 # testing
 /coverage
 
-# next.js
-/.next/
+# next.js (ook nested apps)
+.next/
 /out/
 
 # production
@@ -36,6 +36,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+.env.vercel.*
 
 # typescript
 *.tsbuildinfo
@@ -45,7 +46,12 @@ yarn-error.log*
 /shopify-theme-bestrest/
 /docs/
 /_dev-theme-pull/
+/_live-check/
 /_live-check2/
+/_live-check3/
+
+# Lokale dumps van theme-pulls, screenshots, upscale-tools. Blijven op schijf, niet in Git.
+.tmp-*/
 /documentatie-*.html
 /logboek-*
 /scripts/patch-homepage*.js
@@ -55,8 +61,13 @@ yarn-error.log*
 
 # Lokale taakbestanden, niet voor GitHub
 /tasks/
+# Lokaal factuurtool (IBAN, klantgegevens) — nooit mee deployen of pushen
+/local/meneer-invoicing/
 # Lokale KliniekOS-projecten — nooit mee deployen naar meneermarketing.nl
 /kliniekos*/
 /kliniekos-*/
+# Parked local apps, niet dit GitHub-repo
+/overkapping-gids/
 
 .vercel
+/bestrest-theme/

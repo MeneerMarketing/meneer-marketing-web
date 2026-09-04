@@ -1,0 +1,1469 @@
+{
+  "milestone": "M9.3.2",
+  "version": "PROSPECT_CALIBRATION_V1",
+  "runId": "79d69fd7-2739-4da8-bc77-20ace759f5c8",
+  "startedAt": "2026-08-13T22:59:14.560Z",
+  "finishedAt": "2026-08-13T22:59:21.130Z",
+  "classifier": {
+    "version": "v2.3-prospect-aware",
+    "scanned": 0,
+    "corrected": 48,
+    "flaggedForRecrawl": 0,
+    "unchanged": 0,
+    "corrections": [
+      {
+        "domain": "bcc.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: bcc"
+      },
+      {
+        "domain": "petsplace.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: pets place"
+      },
+      {
+        "domain": "kieskeurig.nl",
+        "from": null,
+        "to": "COMPARISON_SITE",
+        "reason": "Geen betrouwbare ecommerce signalen op de website."
+      },
+      {
+        "domain": "vergelijkeven.nl",
+        "from": null,
+        "to": "COMPARISON_SITE",
+        "reason": "structureel domeinoordeel: vergelijk"
+      },
+      {
+        "domain": "beslist.nl",
+        "from": null,
+        "to": "COMPARISON_SITE",
+        "reason": "Geen betrouwbare ecommerce signalen op de website."
+      },
+      {
+        "domain": "vergelijk.nl",
+        "from": null,
+        "to": "COMPARISON_SITE",
+        "reason": "Domain name 'vergelijk' means 'compare' in Dutch. Title explicitly mentions price/product/store comparison. Meta describes helping with purchase decisions. Site aggregates 1102 local stores + 526 web shops with 16190508 products. No cart/checkout indicates non-transactional comparison model. Compare mentions (1) aligns with comparison functionality."
+      },
+      {
+        "domain": "bol.com",
+        "from": null,
+        "to": "MARKETPLACE",
+        "reason": "meerdere productverticals; bekend marketplace domein; ecommerce aanwezig"
+      },
+      {
+        "domain": "ubuy.co.nl",
+        "from": null,
+        "to": "MARKETPLACE",
+        "reason": "structureel domeinoordeel: ubuy"
+      },
+      {
+        "domain": "amazon.nl",
+        "from": null,
+        "to": "MARKETPLACE",
+        "reason": "Geen betrouwbare ecommerce signalen op de website."
+      },
+      {
+        "domain": "iciparisxl.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: iciparisxl"
+      },
+      {
+        "domain": "lidl.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: lidl"
+      },
+      {
+        "domain": "zooplus.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: zooplus"
+      },
+      {
+        "domain": "petree.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "125 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "notino.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: notino"
+      },
+      {
+        "domain": "kruidvat.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: kruidvat"
+      },
+      {
+        "domain": "zoomalia.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "adverteert breed: 2 archetype-categorieën, 6 keywords"
+      },
+      {
+        "domain": "coolblue.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: coolblue"
+      },
+      {
+        "domain": "swiftvein.com",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "84 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "bigshopper.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "23 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "currentbody.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "23 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "gamma.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: gamma"
+      },
+      {
+        "domain": "coolshop.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "adverteert breed: 3 archetype-categorieën, 4 keywords"
+      },
+      {
+        "domain": "etos.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: etos"
+      },
+      {
+        "domain": "douglas.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: douglas"
+      },
+      {
+        "domain": "lightinthebox.com",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "20 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "philips.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "Investor relations naast een zakelijke divisie: corporate onderneming, geen webshop-prospect"
+      },
+      {
+        "domain": "decathlon.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: decathlon"
+      },
+      {
+        "domain": "mijnhuidonline.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "adverteert breed: 2 archetype-categorieën, 8 keywords"
+      },
+      {
+        "domain": "fitnessdigital.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "19 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "home24.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: home24"
+      },
+      {
+        "domain": "promofarma.com",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: promofarma"
+      },
+      {
+        "domain": "welkoop.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: welkoop"
+      },
+      {
+        "domain": "anwb.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "retailer_scale_score=70"
+      },
+      {
+        "domain": "lookfantastic.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: lookfantastic"
+      },
+      {
+        "domain": "hema.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: hema"
+      },
+      {
+        "domain": "lyko.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "adverteert breed: 1 archetype-categorieën, 7 keywords"
+      },
+      {
+        "domain": "hornbach.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: hornbach"
+      },
+      {
+        "domain": "viata.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: viata"
+      },
+      {
+        "domain": "mediamarkt.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: mediamarkt"
+      },
+      {
+        "domain": "asos.com",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: asos"
+      },
+      {
+        "domain": "leenbakker.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: leenbakker"
+      },
+      {
+        "domain": "vente-unique.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: vente-unique"
+      },
+      {
+        "domain": "karwei.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: karwei"
+      },
+      {
+        "domain": "praxis.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: praxis"
+      },
+      {
+        "domain": "ikea.com",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "structureel domeinoordeel: ikea"
+      },
+      {
+        "domain": "primeanimalz.com",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "547 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "jcpets.com",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "63 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "spirepets.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "36 landversies in hreflang: internationale operator, geen NL-specialist"
+      },
+      {
+        "domain": "fysiosupplies.nl",
+        "from": null,
+        "to": "MASS_RETAILER",
+        "reason": "17 landversies in hreflang: internationale operator, geen NL-specialist"
+      }
+    ],
+    "regression": "20/20"
+  },
+  "keywordSelection": {
+    "seeded": 13,
+    "preGateSkipped": [],
+    "selected": [
+      {
+        "keyword": "zelfreinigende kattenbak",
+        "archetypeId": "PET_TECH",
+        "familyId": "smart_litter_doors",
+        "archetypeFit": 88,
+        "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT"
+      },
+      {
+        "keyword": "gps tracker hond abonnement",
+        "archetypeId": "PET_TECH",
+        "familyId": "pet_trackers",
+        "archetypeFit": 86,
+        "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT"
+      },
+      {
+        "keyword": "automatische voerbak kat camera",
+        "archetypeId": "PET_TECH",
+        "familyId": "automatic_feeders",
+        "archetypeFit": 84,
+        "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT"
+      },
+      {
+        "keyword": "wake up light lichtwekker",
+        "archetypeId": "SLEEP_COMFORT",
+        "familyId": "sleep_tech",
+        "archetypeFit": 81,
+        "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT"
+      },
+      {
+        "keyword": "ergonomisch hoofdkussen nekklachten",
+        "archetypeId": "SLEEP_COMFORT",
+        "familyId": "ergonomic_pillows",
+        "archetypeFit": 74,
+        "preGateClass": "PROBLEM_SOLUTION_PRODUCT"
+      },
+      {
+        "keyword": "pocketvering matras zijslaper",
+        "archetypeId": "SLEEP_COMFORT",
+        "familyId": "premium_mattress_systems",
+        "archetypeFit": 67,
+        "preGateClass": "PROBLEM_SOLUTION_PRODUCT"
+      }
+    ],
+    "skippedForBudget": []
+  },
+  "branchResults": [
+    {
+      "archetypeId": "SLEEP_COMFORT",
+      "label": "Sleep & Comfort",
+      "keywordsTested": 3,
+      "approvedKeywords": 2,
+      "marginalKeywords": 0,
+      "rawAdvertisers": 36,
+      "uniqueAdvertisers": 33,
+      "prospectEligible": 17,
+      "nicheBrands": 0,
+      "specialists": 16,
+      "retailersExcluded": 11,
+      "comparisonExcluded": 3,
+      "marketplacesExcluded": 0,
+      "specialistYieldPercent": 48.5,
+      "prospectYieldPercent": 51.5,
+      "cost": 0,
+      "costPerProspectEligible": 0,
+      "unresolvedShoppingSellers": 4,
+      "verdict": "PROMISING",
+      "bestFamily": "Premium matrassystemen",
+      "worstFamily": "Slaaptechnologie"
+    },
+    {
+      "archetypeId": "PET_TECH",
+      "label": "Pet Tech",
+      "keywordsTested": 3,
+      "approvedKeywords": 0,
+      "marginalKeywords": 1,
+      "rawAdvertisers": 39,
+      "uniqueAdvertisers": 29,
+      "prospectEligible": 11,
+      "nicheBrands": 0,
+      "specialists": 11,
+      "retailersExcluded": 11,
+      "comparisonExcluded": 5,
+      "marketplacesExcluded": 0,
+      "specialistYieldPercent": 37.9,
+      "prospectYieldPercent": 37.9,
+      "cost": 0,
+      "costPerProspectEligible": 0,
+      "unresolvedShoppingSellers": 3,
+      "verdict": "WEAK",
+      "bestFamily": "Slimme kattenbakken & luiken",
+      "worstFamily": "Automatische voer- en drinksystemen"
+    },
+    {
+      "archetypeId": "BEAUTY_DEVICES",
+      "label": "Beauty Devices",
+      "keywordsTested": 3,
+      "approvedKeywords": 0,
+      "marginalKeywords": 0,
+      "rawAdvertisers": 11,
+      "uniqueAdvertisers": 7,
+      "prospectEligible": 1,
+      "nicheBrands": 0,
+      "specialists": 1,
+      "retailersExcluded": 5,
+      "comparisonExcluded": 1,
+      "marketplacesExcluded": 0,
+      "specialistYieldPercent": 14.3,
+      "prospectYieldPercent": 14.3,
+      "cost": 0,
+      "costPerProspectEligible": 0,
+      "unresolvedShoppingSellers": 0,
+      "verdict": "REJECT",
+      "bestFamily": "Microneedling & derma devices",
+      "worstFamily": "IPL ontharing"
+    },
+    {
+      "archetypeId": "SKINCARE_DEVICES",
+      "label": "Skincare Devices",
+      "keywordsTested": 3,
+      "approvedKeywords": 0,
+      "marginalKeywords": 0,
+      "rawAdvertisers": 10,
+      "uniqueAdvertisers": 9,
+      "prospectEligible": 0,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailersExcluded": 6,
+      "comparisonExcluded": 2,
+      "marketplacesExcluded": 0,
+      "specialistYieldPercent": 0,
+      "prospectYieldPercent": 0,
+      "cost": 0,
+      "costPerProspectEligible": null,
+      "unresolvedShoppingSellers": 0,
+      "verdict": "REJECT",
+      "bestFamily": "Microcurrent & lifting devices",
+      "worstFamily": "Reinigings- en huidverzorgingsapparaten"
+    },
+    {
+      "archetypeId": "WELLNESS_DEVICES",
+      "label": "Wellness Devices",
+      "keywordsTested": 3,
+      "approvedKeywords": 0,
+      "marginalKeywords": 0,
+      "rawAdvertisers": 2,
+      "uniqueAdvertisers": 2,
+      "prospectEligible": 0,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailersExcluded": 1,
+      "comparisonExcluded": 1,
+      "marketplacesExcluded": 0,
+      "specialistYieldPercent": 0,
+      "prospectYieldPercent": 0,
+      "cost": 0,
+      "costPerProspectEligible": null,
+      "unresolvedShoppingSellers": 0,
+      "verdict": "REJECT",
+      "bestFamily": "Rood licht therapie panelen",
+      "worstFamily": "Compressietherapie"
+    }
+  ],
+  "keywordResults": [
+    {
+      "keyword": "zelfreinigende kattenbak",
+      "keywordId": "cf4bd29f-a96c-46c5-a5df-f00d0e1c8c96",
+      "archetypeId": "PET_TECH",
+      "archetypeLabel": "Pet Tech",
+      "familyId": "smart_litter_doors",
+      "familyLabel": "Slimme kattenbakken & luiken",
+      "archetypeFit": 88,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "rawAdvertisers": 14,
+      "uniqueAdvertisers": 14,
+      "nicheBrands": 0,
+      "specialists": 6,
+      "retailers": 4,
+      "comparison": 3,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 6,
+      "serpQualityScore": 31,
+      "status": "MARGINAL",
+      "reason": "kwaliteitsscore 31 onder de 34, landschap te gemengd",
+      "evidence": [
+        "mediamarkt.nl",
+        "beslist.nl",
+        "welkekattenbak.nl",
+        "praxis.nl",
+        "kieskeurig.nl",
+        "petree.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "kattoilet.nl",
+        "mediamarkt.nl",
+        "beslist.nl",
+        "nuvona.eu",
+        "welkekattenbak.nl",
+        "retoertje.nl",
+        "praxis.nl",
+        "cellavi.nl",
+        "kieskeurig.nl",
+        "petree.nl",
+        "petsplace.nl",
+        "vergelijk.nl",
+        "cat-elite.com",
+        "revoloo.nl"
+      ],
+      "unresolvedShoppingSellers": [
+        "Viervoeter"
+      ]
+    },
+    {
+      "keyword": "gps tracker hond abonnement",
+      "keywordId": "ebbeeb26-c753-4f20-b9d6-69b283fc7f3b",
+      "archetypeId": "PET_TECH",
+      "archetypeLabel": "Pet Tech",
+      "familyId": "pet_trackers",
+      "familyLabel": "GPS trackers voor huisdieren",
+      "archetypeFit": 86,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "rawAdvertisers": 8,
+      "uniqueAdvertisers": 8,
+      "nicheBrands": 0,
+      "specialists": 2,
+      "retailers": 3,
+      "comparison": 2,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 2,
+      "serpQualityScore": 15,
+      "status": "LOW_SPECIALIST_YIELD",
+      "reason": "63% retailers, marketplaces en vergelijkers, geen enkele partij dominant",
+      "evidence": [
+        "weenect.com",
+        "kieskeurig.nl",
+        "petsplace.nl",
+        "zooplus.nl",
+        "bcc.nl",
+        "vergelijk.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "weenect.com",
+        "dierenoppasamersfoort.nl",
+        "kieskeurig.nl",
+        "petsplace.nl",
+        "zooplus.nl",
+        "bcc.nl",
+        "vergelijk.nl",
+        "dogcompany.nl"
+      ],
+      "unresolvedShoppingSellers": [
+        "M.J. Kloosterman"
+      ]
+    },
+    {
+      "keyword": "automatische voerbak kat camera",
+      "keywordId": "2b5ec5a5-dd68-496e-9363-2253af68f6d8",
+      "archetypeId": "PET_TECH",
+      "archetypeLabel": "Pet Tech",
+      "familyId": "automatic_feeders",
+      "familyLabel": "Automatische voer- en drinksystemen",
+      "archetypeFit": 84,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "rawAdvertisers": 17,
+      "uniqueAdvertisers": 17,
+      "nicheBrands": 0,
+      "specialists": 3,
+      "retailers": 10,
+      "comparison": 4,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 3,
+      "serpQualityScore": 9,
+      "status": "RETAILER_DOMINATED",
+      "reason": "59% retailers in de sample",
+      "evidence": [
+        "beslist.nl",
+        "vergelijk.nl",
+        "zooplus.nl",
+        "welkoop.nl",
+        "jcpets.com",
+        "petsplace.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "dierapotheker.nl",
+        "beslist.nl",
+        "vergelijk.nl",
+        "zooplus.nl",
+        "welkoop.nl",
+        "jcpets.com",
+        "petsplace.nl",
+        "mediamarkt.nl",
+        "spirepets.nl",
+        "philips.nl",
+        "shoparize.com",
+        "zedar.eu",
+        "primeanimalz.com",
+        "123led.nl",
+        "praxis.nl",
+        "bcc.nl",
+        "priceradar.nl"
+      ],
+      "unresolvedShoppingSellers": [
+        "Viervoeter"
+      ]
+    },
+    {
+      "keyword": "wake up light lichtwekker",
+      "keywordId": "315c090a-a1c7-4a7b-b0f7-e6c252d0e330",
+      "archetypeId": "SLEEP_COMFORT",
+      "archetypeLabel": "Sleep & Comfort",
+      "familyId": "sleep_tech",
+      "familyLabel": "Slaaptechnologie",
+      "archetypeFit": 81,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "rawAdvertisers": 12,
+      "uniqueAdvertisers": 12,
+      "nicheBrands": 0,
+      "specialists": 2,
+      "retailers": 7,
+      "comparison": 3,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 2,
+      "serpQualityScore": 8,
+      "status": "RETAILER_DOMINATED",
+      "reason": "58% retailers in de sample",
+      "evidence": [
+        "coolblue.nl",
+        "mediamarkt.nl",
+        "lidl.nl",
+        "kieskeurig.nl",
+        "bcc.nl",
+        "bigshopper.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "coolblue.nl",
+        "mediamarkt.nl",
+        "lidl.nl",
+        "kieskeurig.nl",
+        "supersales.nl",
+        "swisssense.nl",
+        "bcc.nl",
+        "bigshopper.nl",
+        "philips.nl",
+        "bestegeprijsd.nl",
+        "priceradar.nl",
+        "swiftvein.com"
+      ],
+      "unresolvedShoppingSellers": [
+        "Tweakers",
+        "Poiesz"
+      ]
+    },
+    {
+      "keyword": "ergonomisch hoofdkussen nekklachten",
+      "keywordId": "06a2409d-e32d-4a10-b452-6229b79b8401",
+      "archetypeId": "SLEEP_COMFORT",
+      "archetypeLabel": "Sleep & Comfort",
+      "familyId": "ergonomic_pillows",
+      "familyLabel": "Ergonomische kussens",
+      "archetypeFit": 74,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "rawAdvertisers": 13,
+      "uniqueAdvertisers": 13,
+      "nicheBrands": 0,
+      "specialists": 9,
+      "retailers": 3,
+      "comparison": 0,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 9,
+      "serpQualityScore": 59,
+      "status": "APPROVED",
+      "reason": null,
+      "evidence": [
+        "fysiosupplies.nl",
+        "kruidvat.nl",
+        "dorsoo.com",
+        "ikea.com"
+      ],
+      "cost": 0,
+      "domains": [
+        "probrace.nl",
+        "fysiosupplies.nl",
+        "slome.nl",
+        "vandyckshop.nl",
+        "kruidvat.nl",
+        "dorsoo.com",
+        "ikea.com",
+        "swisssense.nl",
+        "quiesco.nl",
+        "quincs.nl",
+        "fittershape.nl",
+        "lifetec-premium.nl",
+        "smeenkbedden.nl"
+      ],
+      "unresolvedShoppingSellers": [
+        "Royal Health Foam",
+        "MM Furniture Group B.V."
+      ]
+    },
+    {
+      "keyword": "pocketvering matras zijslaper",
+      "keywordId": "df58f636-dbbb-4ed4-b686-8ea3fe4eeda0",
+      "archetypeId": "SLEEP_COMFORT",
+      "archetypeLabel": "Sleep & Comfort",
+      "familyId": "premium_mattress_systems",
+      "familyLabel": "Premium matrassystemen",
+      "archetypeFit": 67,
+      "preGateClass": "PROBLEM_SOLUTION_PRODUCT",
+      "rawAdvertisers": 11,
+      "uniqueAdvertisers": 11,
+      "nicheBrands": 0,
+      "specialists": 8,
+      "retailers": 1,
+      "comparison": 0,
+      "marketplaces": 0,
+      "unknown": 1,
+      "prospectEligible": 8,
+      "serpQualityScore": 64,
+      "status": "APPROVED",
+      "reason": null,
+      "evidence": [
+        "songmics.nl",
+        "lidl.nl",
+        "kokbedden.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "mline.nl",
+        "songmics.nl",
+        "lidl.nl",
+        "kokbedden.nl",
+        "boonstrabedden.nl",
+        "slaaploods.nl",
+        "mattsleeps.com",
+        "droommatras.nl",
+        "swisssense.nl",
+        "matrasfactory.nl",
+        "beddenreus.nl"
+      ],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "rood licht therapie paneel",
+      "keywordId": "959dd66e-7269-4ad4-b12b-345d7e90ebff",
+      "archetypeId": "WELLNESS_DEVICES",
+      "archetypeLabel": "Wellness Devices",
+      "familyId": "red_light_therapy",
+      "familyLabel": "Rood licht therapie panelen",
+      "archetypeFit": 85,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "rawAdvertisers": 0,
+      "uniqueAdvertisers": 0,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 0,
+      "comparison": 0,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "NO_SAMPLE",
+      "reason": "geen advertisers in sample",
+      "evidence": [],
+      "cost": 0,
+      "domains": [],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "infrarood sauna thuis",
+      "keywordId": "9fca42b9-0bf8-42ab-b21a-e1d4eb167c4e",
+      "archetypeId": "WELLNESS_DEVICES",
+      "archetypeLabel": "Wellness Devices",
+      "familyId": "sauna_ice_bath",
+      "familyLabel": "Infraroodsauna & ijsbad",
+      "archetypeFit": 84,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "rawAdvertisers": 0,
+      "uniqueAdvertisers": 0,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 0,
+      "comparison": 0,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "NO_SAMPLE",
+      "reason": "geen advertisers in sample",
+      "evidence": [],
+      "cost": 0,
+      "domains": [],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "compressietherapie benen apparaat",
+      "keywordId": "20e97b71-2008-43d9-8d7f-787ad5c3339f",
+      "archetypeId": "WELLNESS_DEVICES",
+      "archetypeLabel": "Wellness Devices",
+      "familyId": "compression_therapy",
+      "familyLabel": "Compressietherapie",
+      "archetypeFit": 82,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "rawAdvertisers": 2,
+      "uniqueAdvertisers": 2,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 1,
+      "comparison": 1,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "RETAILER_DOMINATED",
+      "reason": "100% retailers, marketplaces en vergelijkers, vooral retailers (50%)",
+      "evidence": [
+        "coolblue.nl",
+        "vergelijk.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "coolblue.nl",
+        "vergelijk.nl"
+      ],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "derma roller professioneel",
+      "keywordId": "71e3981b-71e1-43ad-b8b3-cd999e045e8b",
+      "archetypeId": "BEAUTY_DEVICES",
+      "archetypeLabel": "Beauty Devices",
+      "familyId": "microneedling_devices",
+      "familyLabel": "Microneedling & derma devices",
+      "archetypeFit": 98,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "rawAdvertisers": 4,
+      "uniqueAdvertisers": 4,
+      "nicheBrands": 0,
+      "specialists": 1,
+      "retailers": 3,
+      "comparison": 0,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 1,
+      "serpQualityScore": 21,
+      "status": "RETAILER_DOMINATED",
+      "reason": "75% retailers, marketplaces en vergelijkers, vooral retailers (75%)",
+      "evidence": [
+        "douglas.nl",
+        "kruidvat.nl",
+        "notino.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "douglas.nl",
+        "kruidvat.nl",
+        "notino.nl",
+        "layzinskin.com"
+      ],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "led lichttherapie masker",
+      "keywordId": "6575d24a-e596-4d4f-90ce-cd053802798b",
+      "archetypeId": "BEAUTY_DEVICES",
+      "archetypeLabel": "Beauty Devices",
+      "familyId": "led_masks",
+      "familyLabel": "LED-maskers",
+      "archetypeFit": 97,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "rawAdvertisers": 3,
+      "uniqueAdvertisers": 3,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 2,
+      "comparison": 1,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "RETAILER_DOMINATED",
+      "reason": "100% retailers, marketplaces en vergelijkers, vooral retailers (67%)",
+      "evidence": [
+        "kruidvat.nl",
+        "decathlon.nl",
+        "kieskeurig.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "kruidvat.nl",
+        "decathlon.nl",
+        "kieskeurig.nl"
+      ],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "laser ontharing apparaat",
+      "keywordId": "ce1c8cd4-a421-46df-9782-1ca01da2a61c",
+      "archetypeId": "BEAUTY_DEVICES",
+      "archetypeLabel": "Beauty Devices",
+      "familyId": "ipl_hair_removal",
+      "familyLabel": "IPL ontharing",
+      "archetypeFit": 93,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "rawAdvertisers": 4,
+      "uniqueAdvertisers": 4,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 3,
+      "comparison": 1,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "RETAILER_DOMINATED",
+      "reason": "100% retailers, marketplaces en vergelijkers, vooral retailers (75%)",
+      "evidence": [
+        "douglas.nl",
+        "coolblue.nl",
+        "kieskeurig.nl",
+        "kruidvat.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "douglas.nl",
+        "coolblue.nl",
+        "kieskeurig.nl",
+        "kruidvat.nl"
+      ],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "radiofrequentie apparaat gezicht",
+      "keywordId": "11d16eef-6ada-4237-a175-aa80339a808a",
+      "archetypeId": "SKINCARE_DEVICES",
+      "archetypeLabel": "Skincare Devices",
+      "familyId": "microcurrent",
+      "familyLabel": "Microcurrent & lifting devices",
+      "archetypeFit": 86,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "rawAdvertisers": 4,
+      "uniqueAdvertisers": 4,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 3,
+      "comparison": 0,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "RETAILER_DOMINATED",
+      "reason": "75% retailers, marketplaces en vergelijkers, vooral retailers (75%)",
+      "evidence": [
+        "currentbody.nl",
+        "idealderm.com",
+        "promofarma.com",
+        "fitnessdigital.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "currentbody.nl",
+        "idealderm.com",
+        "promofarma.com",
+        "fitnessdigital.nl"
+      ],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "hydradermabrasie apparaat thuis",
+      "keywordId": "92f7de28-cec2-4288-826e-65f79c0aa05c",
+      "archetypeId": "SKINCARE_DEVICES",
+      "archetypeLabel": "Skincare Devices",
+      "familyId": "cleansing_devices",
+      "familyLabel": "Reinigings- en huidverzorgingsapparaten",
+      "archetypeFit": 80,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "rawAdvertisers": 2,
+      "uniqueAdvertisers": 2,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 2,
+      "comparison": 0,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "RETAILER_DOMINATED",
+      "reason": "100% retailers, marketplaces en vergelijkers, vooral retailers (100%)",
+      "evidence": [
+        "douglas.nl",
+        "mediamarkt.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "douglas.nl",
+        "mediamarkt.nl"
+      ],
+      "unresolvedShoppingSellers": []
+    },
+    {
+      "keyword": "microcurrent apparaat gezicht",
+      "keywordId": "aaf797f6-2649-459f-b4dd-840d67cb2e26",
+      "archetypeId": "SKINCARE_DEVICES",
+      "archetypeLabel": "Skincare Devices",
+      "familyId": "microcurrent",
+      "familyLabel": "Microcurrent & lifting devices",
+      "archetypeFit": 86,
+      "preGateClass": "HIGH_CONSIDERATION_PRODUCT",
+      "rawAdvertisers": 4,
+      "uniqueAdvertisers": 4,
+      "nicheBrands": 0,
+      "specialists": 0,
+      "retailers": 2,
+      "comparison": 2,
+      "marketplaces": 0,
+      "unknown": 0,
+      "prospectEligible": 0,
+      "serpQualityScore": 0,
+      "status": "RETAILER_DOMINATED",
+      "reason": "100% retailers, marketplaces en vergelijkers, vooral retailers (50%)",
+      "evidence": [
+        "douglas.nl",
+        "vergelijk.nl",
+        "lightinthebox.com",
+        "beslist.nl"
+      ],
+      "cost": 0,
+      "domains": [
+        "douglas.nl",
+        "vergelijk.nl",
+        "lightinthebox.com",
+        "beslist.nl"
+      ],
+      "unresolvedShoppingSellers": []
+    }
+  ],
+  "bestDomains": [
+    {
+      "domain": "kattoilet.nl",
+      "brandId": "085388bf-b6f6-4c01-9810-27acfe89e722",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 0,
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "keywords": [
+        "zelfreinigende kattenbak"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "nuvona.eu",
+      "brandId": "d40137d1-5492-4e67-8d87-8c6cc58e17ad",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 0,
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "keywords": [
+        "zelfreinigende kattenbak"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "cellavi.nl",
+      "brandId": "bfa5da07-fa16-4c65-ac18-67c65994e4ea",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 15,
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "keywords": [
+        "zelfreinigende kattenbak"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "cat-elite.com",
+      "brandId": "4322fba8-3e71-4fd6-ad48-09c96aa890e3",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 31,
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "keywords": [
+        "zelfreinigende kattenbak"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "dierapotheker.nl",
+      "brandId": "0d9f6203-a0e9-47be-b9c3-3e443bbc71a0",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "UNKNOWN",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 12,
+      "archetypeId": "PET_TECH",
+      "familyId": "automatic_feeders",
+      "keywords": [
+        "automatische voerbak kat camera"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "quiesco.nl",
+      "brandId": "dec50560-7e7d-47f8-88db-070e3cad1bbc",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 8,
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "keywords": [
+        "ergonomisch hoofdkussen nekklachten"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "lifetec-premium.nl",
+      "brandId": "d533cdba-def0-4469-a9c9-324b36d8bf94",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 21,
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "keywords": [
+        "ergonomisch hoofdkussen nekklachten"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "slaaploods.nl",
+      "brandId": "d9038441-98e7-4c0f-af3e-1c358d7898f1",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "MAGENTO",
+      "isEcommerce": true,
+      "ownBrandSignal": 75,
+      "retailerScaleScore": 0,
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "keywords": [
+        "pocketvering matras zijslaper"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "dogcompany.nl",
+      "brandId": "2a9273d1-02e5-4590-bb10-9bef7aead9e1",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "WOOCOMMERCE",
+      "isEcommerce": true,
+      "ownBrandSignal": 65,
+      "retailerScaleScore": 0,
+      "archetypeId": "PET_TECH",
+      "familyId": "pet_trackers",
+      "keywords": [
+        "gps tracker hond abonnement"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "zedar.eu",
+      "brandId": "01c66fd2-c937-4140-ba47-b93566dc9052",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 65,
+      "retailerScaleScore": 15,
+      "archetypeId": "PET_TECH",
+      "familyId": "automatic_feeders",
+      "keywords": [
+        "automatische voerbak kat camera"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "quincs.nl",
+      "brandId": "91f84f9b-cb48-4854-b198-4abe7e1dbac3",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": 65,
+      "retailerScaleScore": 0,
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "ergonomic_pillows",
+      "keywords": [
+        "ergonomisch hoofdkussen nekklachten"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "droommatras.nl",
+      "brandId": "d55dfa95-dd78-4b30-8197-2ff9f484f3bb",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "WOOCOMMERCE",
+      "isEcommerce": true,
+      "ownBrandSignal": 60,
+      "retailerScaleScore": 0,
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "keywords": [
+        "pocketvering matras zijslaper"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "matrasfactory.nl",
+      "brandId": "dab7dbd0-e3ec-4321-8a66-39116cd7ae03",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "MAGENTO",
+      "isEcommerce": true,
+      "ownBrandSignal": 60,
+      "retailerScaleScore": 0,
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "premium_mattress_systems",
+      "keywords": [
+        "pocketvering matras zijslaper"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "retoertje.nl",
+      "brandId": "6d005e6b-c3c2-483c-b94d-10cf4229e08d",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "UNKNOWN",
+      "isEcommerce": true,
+      "ownBrandSignal": 55,
+      "retailerScaleScore": 35,
+      "archetypeId": "PET_TECH",
+      "familyId": "smart_litter_doors",
+      "keywords": [
+        "zelfreinigende kattenbak"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "supersales.nl",
+      "brandId": "8dd98dde-e5ad-4284-8979-46a649f241a1",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "UNKNOWN",
+      "isEcommerce": true,
+      "ownBrandSignal": 55,
+      "retailerScaleScore": 40,
+      "archetypeId": "SLEEP_COMFORT",
+      "familyId": "sleep_tech",
+      "keywords": [
+        "wake up light lichtwekker"
+      ],
+      "checked": false
+    },
+    {
+      "domain": "layzinskin.com",
+      "brandId": "87938292-b27a-4bd0-afd2-f0623711fe09",
+      "businessType": "SPECIALIST_WEBSHOP",
+      "platform": "SHOPIFY",
+      "isEcommerce": true,
+      "ownBrandSignal": null,
+      "retailerScaleScore": 14,
+      "archetypeId": "BEAUTY_DEVICES",
+      "familyId": "microneedling_devices",
+      "keywords": [
+        "derma roller professioneel"
+      ],
+      "checked": false
+    }
+  ],
+  "rejectedLandscape": [
+    {
+      "domain": "mediamarkt.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "beslist.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type",
+      "businessType": "COMPARISON_SITE"
+    },
+    {
+      "domain": "welkekattenbak.nl",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce",
+      "businessType": "NON_ECOMMERCE"
+    },
+    {
+      "domain": "praxis.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "kieskeurig.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type",
+      "businessType": "COMPARISON_SITE"
+    },
+    {
+      "domain": "petree.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "petsplace.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "vergelijk.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "excluded_business_type",
+      "businessType": "COMPARISON_SITE"
+    },
+    {
+      "domain": "weenect.com",
+      "prospectClass": "NON_COMMERCE",
+      "reason": "non_ecommerce",
+      "businessType": "NON_ECOMMERCE"
+    },
+    {
+      "domain": "zooplus.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "bcc.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "welkoop.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "jcpets.com",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "spirepets.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "philips.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "shoparize.com",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "comparison_site_signal",
+      "businessType": "NON_ECOMMERCE"
+    },
+    {
+      "domain": "primeanimalz.com",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "priceradar.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "comparison_site_signal",
+      "businessType": "SPECIALIST_WEBSHOP"
+    },
+    {
+      "domain": "coolblue.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "lidl.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "bigshopper.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "bestegeprijsd.nl",
+      "prospectClass": "COMPARISON_SITE",
+      "reason": "comparison_site_signal",
+      "businessType": "NON_ECOMMERCE"
+    },
+    {
+      "domain": "swiftvein.com",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "fysiosupplies.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "excluded_business_type",
+      "businessType": "MASS_RETAILER"
+    },
+    {
+      "domain": "slome.nl",
+      "prospectClass": "MASS_RETAILER",
+      "reason": "mass_retail_scale",
+      "businessType": "SPECIALIST_WEBSHOP"
+    }
+  ],
+  "sellerRecovery": {
+    "recovered": 41,
+    "stillUnresolved": 7
+  },
+  "cost": {
+    "dataForSeo": 0.108,
+    "dataForSeoCap": 0.12,
+    "anthropic": 0,
+    "lightChecks": 1
+  },
+  "downstream": {
+    "croAudits": 0,
+    "conceptRecomputes": 0,
+    "previews": 0,
+    "contactDiscovery": 0,
+    "outreach": 0
+  }
+}

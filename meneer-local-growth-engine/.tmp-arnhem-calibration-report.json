@@ -1,0 +1,364 @@
+{
+  "generated_at": "2026-08-14T19:33:10.386Z",
+  "city": "Arnhem",
+  "selection": {
+    "named": {
+      "Pilates Studio Arnhem": "c64df247-18c1-4621-9fd1-ebd041f31689",
+      "Pitonyasa": "19a984fb-5215-4799-9a96-076e98b06302",
+      "House of Somatics": "3fe1b0a2-d418-47ee-a815-f05df6529ea9",
+      "Infinitum Pilates": "a562dd0b-3e17-45c0-8935-358dede447c8"
+    },
+    "fifth_preselect": null,
+    "business_ids": [
+      "c64df247-18c1-4621-9fd1-ebd041f31689",
+      "19a984fb-5215-4799-9a96-076e98b06302",
+      "3fe1b0a2-d418-47ee-a815-f05df6529ea9",
+      "a562dd0b-3e17-45c0-8935-358dede447c8"
+    ]
+  },
+  "costs": {
+    "anthropic_calls": 3,
+    "total_anthropic_usd": 0.019486999999999997,
+    "total_screenshots": 6,
+    "per_business": [
+      {
+        "studio": "Pilates Studio Arnhem",
+        "anthropic_cost": 0.006563,
+        "model": "claude-haiku-4-5-20251001",
+        "visual_source": "CLAUDE_VISION",
+        "screenshots": 2,
+        "screenshot_error": null
+      },
+      {
+        "studio": "Pilates Studio Pitonyasa",
+        "anthropic_cost": 0.006052999999999999,
+        "model": "claude-haiku-4-5-20251001",
+        "visual_source": "CLAUDE_VISION",
+        "screenshots": 2,
+        "screenshot_error": null
+      },
+      {
+        "studio": "House of Somatics",
+        "anthropic_cost": 0.006871,
+        "model": "claude-haiku-4-5-20251001",
+        "visual_source": "CLAUDE_VISION",
+        "screenshots": 2,
+        "screenshot_error": null
+      },
+      {
+        "studio": "Infinitum Pilates",
+        "anthropic_cost": 0,
+        "model": null,
+        "visual_source": "DETERMINISTIC_FALLBACK",
+        "screenshots": 0,
+        "screenshot_error": null
+      }
+    ]
+  },
+  "evaluated": [
+    {
+      "business_id": "c64df247-18c1-4621-9fd1-ebd041f31689",
+      "studio_name": "Pilates Studio Arnhem",
+      "domain_fixture": false,
+      "website_quality": 65,
+      "website_opportunity": 68,
+      "business_quality": 87,
+      "seo_opportunity": 58,
+      "visual_quality": 62,
+      "modernity": 68,
+      "mobile": null,
+      "brand_potential": 74,
+      "booking_ux": 35,
+      "presentation_gap": 78,
+      "redesign_impact": 82,
+      "visual_confidence": 88,
+      "transformation_score": 64,
+      "prospect_type": "WEBSITE_TRANSFORMATION",
+      "prospect_type_reason": "Sterk bedrijf met een website die duidelijk beter kan. · Business quality 87 · website kwaliteit 65 · website opportunity 68 · merkmateriaal 74 · transformation score 64",
+      "preview_eligible": true,
+      "preview_eligibility_reason": "Voldoet aan alle voorwaarden voor een persoonlijke website-preview.",
+      "gates_failed": [],
+      "visual_source": "CLAUDE_VISION",
+      "visual_model": "claude-haiku-4-5-20251001",
+      "anthropic_cost": 0.006563,
+      "screenshots_captured": 2,
+      "screenshot_error": null,
+      "visual": {
+        "visual_quality_score": 62,
+        "modernity_score": 65,
+        "mobile_presentation_score": 58,
+        "brand_potential_score": 72,
+        "booking_ux_score": 48,
+        "business_presentation_gap_score": 78,
+        "redesign_impact_score": 82,
+        "visual_transformation_fit": "VERY_HIGH",
+        "reason_positive": [
+          "Authentieke eigen fotografie van team en studio (6 afbeeldingen, allemaal eigen materiaal)",
+          "Duidelijk herkenbare merkidentiteit met elegant logo en oranje accentkleur",
+          "Perfecte 5-sterrenreputatie (14 reviews) toont sterke service-kwaliteit",
+          "Responsive design aanwezig, navigatie bereikbaar op mobiel",
+          "Welkomstbericht en kernboodschap duidelijk gepositioneerd"
+        ],
+        "reason_negative": [
+          "Grijze navigatiebalk oogt gedateerd en breekt visuele hiërarchie",
+          "Extreem veel witte ruimte onder hero en welkomstbericht; pagina voelt leeg",
+          "Geen zichtbare call-to-action voor proefles of boeken (booking in nav, niet prominent)",
+          "Mobiel: navigatie verspringt naar twee regels, logo en titel staan ongebalanceerd",
+          "Typografie ongebruikelijk (zeer lichte gewichten), contrast zwak op grijze achtergrond",
+          "Geen zichtbare lesschema, tarieven, docentenprofielen of service-details op homepage"
+        ],
+        "confidence": 88
+      }
+    },
+    {
+      "business_id": "19a984fb-5215-4799-9a96-076e98b06302",
+      "studio_name": "Pilates Studio Pitonyasa",
+      "domain_fixture": false,
+      "website_quality": 50,
+      "website_opportunity": 76,
+      "business_quality": 75,
+      "seo_opportunity": 59,
+      "visual_quality": 52,
+      "modernity": 36,
+      "mobile": null,
+      "brand_potential": 82,
+      "booking_ux": 100,
+      "presentation_gap": 72,
+      "redesign_impact": 78,
+      "visual_confidence": 88,
+      "transformation_score": 72,
+      "prospect_type": "WEBSITE_TRANSFORMATION",
+      "prospect_type_reason": "Sterk bedrijf met een website die duidelijk beter kan. · Business quality 75 · website kwaliteit 50 · website opportunity 76 · merkmateriaal 82 · transformation score 72",
+      "preview_eligible": true,
+      "preview_eligibility_reason": "Voldoet aan alle voorwaarden voor een persoonlijke website-preview.",
+      "gates_failed": [],
+      "visual_source": "CLAUDE_VISION",
+      "visual_model": "claude-haiku-4-5-20251001",
+      "anthropic_cost": 0.006052999999999999,
+      "screenshots_captured": 2,
+      "screenshot_error": null,
+      "visual": {
+        "visual_quality_score": 52,
+        "modernity_score": 38,
+        "mobile_presentation_score": 48,
+        "brand_potential_score": 61,
+        "booking_ux_score": 28,
+        "business_presentation_gap_score": 72,
+        "redesign_impact_score": 78,
+        "visual_transformation_fit": "VERY_HIGH",
+        "reason_positive": [
+          "Logo en eigen studiofoto's aanwezig; basis merkmateriaal beschikbaar",
+          "Responsive design technisch aanwezig (meta tags, moderne CSS)",
+          "Duidelijke navigatiestructuur met relevante menu-items",
+          "Inhoud over lessoorten en voordelen van Pilates aanwezig",
+          "Reformer-apparatuur zichtbaar op afbeelding"
+        ],
+        "reason_negative": [
+          "WordPress-platform verouderd (deterministic score 48); geen moderne website builder",
+          "Visuele hiërarchie zwak: grote witte vlakken, ongestructureerde tekstblokken",
+          "Mobiel: navigatie afgekapt, tekst niet optimaal gelezen, spacing inconsistent",
+          "Geen duidelijke call-to-action voor proefles of boeken; geen booking-integratie",
+          "Typografie basaal (Open Sans), geen premium lettertype-strategie",
+          "Beeldgebruik minimaal (4 eigen foto's op 6 totaal); veel lege ruimte"
+        ],
+        "confidence": 88
+      }
+    },
+    {
+      "business_id": "3fe1b0a2-d418-47ee-a815-f05df6529ea9",
+      "studio_name": "House of Somatics",
+      "domain_fixture": false,
+      "website_quality": 69,
+      "website_opportunity": 56,
+      "business_quality": 81,
+      "seo_opportunity": null,
+      "visual_quality": 68,
+      "modernity": 75,
+      "mobile": null,
+      "brand_potential": 59,
+      "booking_ux": 58,
+      "presentation_gap": 72,
+      "redesign_impact": 78,
+      "visual_confidence": 78,
+      "transformation_score": 60,
+      "prospect_type": "WEBSITE_TRANSFORMATION",
+      "prospect_type_reason": "Sterk bedrijf met een website die duidelijk beter kan. · Business quality 81 · website kwaliteit 69 · website opportunity 56 · merkmateriaal 59 · transformation score 60",
+      "preview_eligible": true,
+      "preview_eligibility_reason": "Voldoet aan alle voorwaarden voor een persoonlijke website-preview.",
+      "gates_failed": [],
+      "visual_source": "CLAUDE_VISION",
+      "visual_model": "claude-haiku-4-5-20251001",
+      "anthropic_cost": 0.006871,
+      "screenshots_captured": 2,
+      "screenshot_error": null,
+      "visual": {
+        "visual_quality_score": 68,
+        "modernity_score": 72,
+        "mobile_presentation_score": 64,
+        "brand_potential_score": 55,
+        "booking_ux_score": 45,
+        "business_presentation_gap_score": 72,
+        "redesign_impact_score": 78,
+        "visual_transformation_fit": "HIGH",
+        "reason_positive": [
+          "Sterke hero met authentieke studiobeelden en instructeur",
+          "Duidelijke merkidentiteit met warme, aardse kleurpalet (#4A4238, #A89680)",
+          "Moderne typografie en spacing in hero-sectie",
+          "Responsive navigatie aanwezig op mobiel",
+          "Duidelijke call-to-action 'BOEK JOUW PROEFLES' zichtbaar",
+          "Wix Studio platform biedt goede basis voor redesign"
+        ],
+        "reason_negative": [
+          "Slechts 2 afbeeldingen totaal; geen eigen studiofotografie buiten hero",
+          "0% beschrijvende alt-teksten; SEO en toegankelijkheid zwak",
+          "Boekingsplatform (bsport) niet zichtbaar in navigatie; verborgen CTA",
+          "Geen zichtbare lessenrooster of aanboddetails onder hero",
+          "Mobiele presentatie: grote witte ruimte onder CTA, pagina voelt onvolledig",
+          "Geen team- of reformer-detailfoto's; visuele inhoud zeer beperkt"
+        ],
+        "confidence": 78
+      }
+    },
+    {
+      "business_id": "a562dd0b-3e17-45c0-8935-358dede447c8",
+      "studio_name": "Infinitum Pilates",
+      "domain_fixture": false,
+      "website_quality": 88,
+      "website_opportunity": 12,
+      "business_quality": 93,
+      "seo_opportunity": 70,
+      "visual_quality": 88,
+      "modernity": 100,
+      "mobile": null,
+      "brand_potential": 93,
+      "booking_ux": 45,
+      "presentation_gap": 45,
+      "redesign_impact": 32,
+      "visual_confidence": 30,
+      "transformation_score": 57,
+      "prospect_type": "NOT_ELIGIBLE",
+      "prospect_type_reason": "Niet geschikt: gevestigd in Oosterbeek, buiten deze stad. In de eigen stad zou dit GROWTH_ONLY zijn: Sterk bedrijf, maar de huidige website (kwaliteit 88) zit boven de drempel voor onze redesign-campagne. SEO opportunity 70 blijft commercieel interessant.",
+      "preview_eligible": false,
+      "preview_eligibility_reason": "Geen preview: gevestigd in Oosterbeek, buiten deze stad.",
+      "gates_failed": [
+        "not_eligible"
+      ],
+      "visual_source": "DETERMINISTIC_FALLBACK",
+      "visual_model": null,
+      "anthropic_cost": 0,
+      "screenshots_captured": 0,
+      "screenshot_error": null,
+      "visual": {
+        "visual_quality_score": 88,
+        "modernity_score": 100,
+        "mobile_presentation_score": 100,
+        "brand_potential_score": 93,
+        "booking_ux_score": 55,
+        "business_presentation_gap_score": 45,
+        "redesign_impact_score": 32,
+        "visual_transformation_fit": "LOW",
+        "reason_positive": [
+          "Modern platform: Webflow",
+          "CSS custom properties (moderne stijlarchitectuur)",
+          "Flexbox/grid layout",
+          "Fluid typografie / aspect-ratio"
+        ],
+        "reason_negative": [
+          "Boekknop ontbreekt in de hoofdnavigatie",
+          "Extern boekingsplatform (bsport) zonder duidelijke funnel",
+          "Geen structured data"
+        ],
+        "confidence": 30
+      }
+    }
+  ],
+  "ranking": {
+    "city_id": "b1000000-0000-4000-8000-000000000001",
+    "city_name": "Arnhem",
+    "vertical_id": "a1000000-0000-4000-8000-000000000001",
+    "candidates": [
+      {
+        "business_id": "19a984fb-5215-4799-9a96-076e98b06302",
+        "studio_name": "Pilates Studio Pitonyasa",
+        "transformation_score": 72,
+        "transformation_city_rank": 1,
+        "preview_eligible": true,
+        "contactability": 60,
+        "margin": 2,
+        "winner_confidence": 73,
+        "is_primary": false
+      },
+      {
+        "business_id": "dfed1de5-aae9-4f18-b59b-770bc7123970",
+        "studio_name": "SCULPT Power Pilates",
+        "transformation_score": 70,
+        "transformation_city_rank": 2,
+        "preview_eligible": true,
+        "contactability": 60,
+        "margin": null,
+        "winner_confidence": 73,
+        "is_primary": false
+      },
+      {
+        "business_id": "c64df247-18c1-4621-9fd1-ebd041f31689",
+        "studio_name": "Pilates Studio Arnhem",
+        "transformation_score": 64,
+        "transformation_city_rank": 3,
+        "preview_eligible": true,
+        "contactability": 60,
+        "margin": null,
+        "winner_confidence": 72,
+        "is_primary": false
+      },
+      {
+        "business_id": "6c478a4d-ee30-4e1c-8dcc-c3c00fea13fa",
+        "studio_name": "Pilates in paradise",
+        "transformation_score": 64,
+        "transformation_city_rank": 4,
+        "preview_eligible": true,
+        "contactability": 60,
+        "margin": null,
+        "winner_confidence": 70,
+        "is_primary": false
+      },
+      {
+        "business_id": "3fe1b0a2-d418-47ee-a815-f05df6529ea9",
+        "studio_name": "House of Somatics",
+        "transformation_score": 60,
+        "transformation_city_rank": 5,
+        "preview_eligible": true,
+        "contactability": 92,
+        "margin": null,
+        "winner_confidence": 74,
+        "is_primary": false
+      },
+      {
+        "business_id": "44ba1c6b-a96d-42f7-aef0-871b9fca553f",
+        "studio_name": "Mind and Body Plan - Fysiotherapie, Ademtherapie, Yoga & Pilates",
+        "transformation_score": 59,
+        "transformation_city_rank": 6,
+        "preview_eligible": false,
+        "contactability": 60,
+        "margin": null,
+        "winner_confidence": 59,
+        "is_primary": false
+      }
+    ],
+    "primary_candidate_id": null,
+    "primary_candidate_name": null,
+    "winner_confidence": null,
+    "selection_reason": "Geen redesign-winner: margin_too_thin.",
+    "gates_failed": [
+      "margin_too_thin"
+    ],
+    "totals": {
+      "website_transformation": 6,
+      "growth_only": 1,
+      "weak_business": 1,
+      "not_eligible": 17,
+      "unknown": 0,
+      "discovered": 25,
+      "qualified": 16
+    }
+  }
+}

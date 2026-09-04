@@ -1,0 +1,461 @@
+{
+  "milestone": "M9.3.4",
+  "finishedAt": "2026-08-14T02:35:15.937Z",
+  "thresholds": {
+    "designTarget": 62,
+    "outreach": 48
+  },
+  "regression": {
+    "passed": 7,
+    "total": 7,
+    "cases": [
+      {
+        "label": "Internationaal premium merk met al volwassen PDP",
+        "score": 22,
+        "band": "GEEN_CONTRAST",
+        "confidence": 83,
+        "designTarget": false,
+        "passed": true,
+        "detail": "huidige vormgeving al premium (88) · eigen merk: volledige verhaallijn mogelijk · genoeg broncontent voor een echte verdieping · 900 reviews om mee te overtuigen · plafond: al high-end",
+        "ceilingApplied": "al high-end"
+      },
+      {
+        "label": "Volwassen merk met generieke standaardtemplate",
+        "score": 71,
+        "band": "HOOG",
+        "confidence": 83,
+        "designTarget": true,
+        "passed": true,
+        "detail": "product wordt nauwelijks uitgelegd (32) · geen echte verdieping op de pagina (28) · eigen merk: volledige verhaallijn mogelijk · genoeg broncontent voor een echte verdieping · 40 reviews om mee te overtuigen",
+        "ceilingApplied": null
+      },
+      {
+        "label": "Mooi vormgegeven site met dunne productuitleg",
+        "score": 38,
+        "band": "LAAG",
+        "confidence": 83,
+        "designTarget": false,
+        "passed": true,
+        "detail": "huidige vormgeving al premium (84) · product wordt nauwelijks uitgelegd (38) · geen echte verdieping op de pagina (34) · eigen merk: volledige verhaallijn mogelijk · genoeg broncontent voor een echte verdieping · 40 reviews om mee te overtuigen · plafond: visueel al sterk",
+        "ceilingApplied": "visueel al sterk"
+      },
+      {
+        "label": "Zwakke pagina zonder bruikbaar beeldmateriaal",
+        "score": 31,
+        "band": "LAAG",
+        "confidence": 83,
+        "designTarget": false,
+        "passed": true,
+        "detail": "product wordt nauwelijks uitgelegd (24) · geen echte verdieping op de pagina (20) · te weinig materiaal voor een premium versie (22) · eigen merk: volledige verhaallijn mogelijk · nauwelijks broncontent om mee te bouwen",
+        "ceilingApplied": null
+      },
+      {
+        "label": "Wederverkoper met matige pagina en breed assortiment",
+        "score": 31,
+        "band": "LAAG",
+        "confidence": 83,
+        "designTarget": false,
+        "passed": true,
+        "detail": "product wordt nauwelijks uitgelegd (40) · geen echte verdieping op de pagina (36) · wederverkoper: het product is niet van henzelf · genoeg broncontent voor een echte verdieping · 40 reviews om mee te overtuigen",
+        "ceilingApplied": null
+      },
+      {
+        "label": "Sterk merk zonder CRO-audit",
+        "score": 54,
+        "band": "GEMIDDELD",
+        "confidence": 24,
+        "designTarget": false,
+        "passed": true,
+        "detail": "eigen merk: volledige verhaallijn mogelijk · genoeg broncontent voor een echte verdieping · 40 reviews om mee te overtuigen",
+        "ceilingApplied": null
+      },
+      {
+        "label": "Eigen merk met verouderde pagina en rijke assets",
+        "score": 77,
+        "band": "HOOG",
+        "confidence": 83,
+        "designTarget": true,
+        "passed": true,
+        "detail": "product wordt nauwelijks uitgelegd (30) · geen echte verdieping op de pagina (26) · eigen merk: volledige verhaallijn mogelijk · genoeg broncontent voor een echte verdieping · 320 reviews om mee te overtuigen",
+        "ceilingApplied": null
+      }
+    ]
+  },
+  "scored": 13,
+  "persisted": 13,
+  "bandCounts": {
+    "LAAG": 9,
+    "GEEN_CONTRAST": 3,
+    "GEMIDDELD": 1
+  },
+  "designTargetEligible": 0,
+  "newlyBlocked": [
+    {
+      "domain": "tensfact.com",
+      "conceptId": "42cc76e8-9e57-48e9-ac27-7533bc09a2a0",
+      "band": "LAAG",
+      "contrast": 37,
+      "confidence": 86,
+      "ceiling": null,
+      "roomScore": 32,
+      "capabilityScore": 79,
+      "currentPdpQuality": 68,
+      "transformation": 65,
+      "salesFit": 69,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": true,
+      "blockedReasons": [
+        "insufficient_concept_contrast:37:LAAG"
+      ],
+      "evidence": [
+        "eigen merk: volledige verhaallijn mogelijk",
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "domain": "apotheekendrogist.nl",
+      "conceptId": "ebdec816-34bb-4fb8-b6e2-1a60a7eb2a37",
+      "band": "GEMIDDELD",
+      "contrast": 48,
+      "confidence": 24,
+      "ceiling": null,
+      "roomScore": 48,
+      "capabilityScore": 70,
+      "currentPdpQuality": null,
+      "transformation": 59,
+      "salesFit": 34,
+      "croDataSource": "MISSING",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "status_not_BRIEF_READY:CONCEPT_CANDIDATE",
+        "insufficient_outreach_concept_fit",
+        "cro_not_audited_insufficient_proxy_confidence"
+      ],
+      "evidence": [
+        "eigen merk: volledige verhaallijn mogelijk",
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "k-skincare.nl",
+      "conceptId": "88731ad0-7461-46ef-966b-881204fe8454",
+      "band": "LAAG",
+      "contrast": 39,
+      "confidence": 24,
+      "ceiling": null,
+      "roomScore": 48,
+      "capabilityScore": 64,
+      "currentPdpQuality": null,
+      "transformation": 61,
+      "salesFit": 43,
+      "croDataSource": "MISSING",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "insufficient_concept_contrast:39:LAAG",
+        "insufficient_outreach_concept_fit",
+        "cro_not_audited_insufficient_proxy_confidence"
+      ],
+      "evidence": []
+    },
+    {
+      "domain": "nordichigh.nl",
+      "conceptId": "d3ed2b7b-f927-4f2f-9510-bbf88eaebda6",
+      "band": "LAAG",
+      "contrast": 39,
+      "confidence": 88,
+      "ceiling": null,
+      "roomScore": 35,
+      "capabilityScore": 76,
+      "currentPdpQuality": 59,
+      "transformation": 74,
+      "salesFit": 60,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "status_not_BRIEF_READY:CONCEPT_CANDIDATE",
+        "insufficient_concept_contrast:39:LAAG",
+        "insufficient_outreach_concept_fit"
+      ],
+      "evidence": [
+        "eigen merk: volledige verhaallijn mogelijk",
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "huidproducten.nl",
+      "conceptId": "187c20e5-ad80-4cb6-bb58-f03823454666",
+      "band": "LAAG",
+      "contrast": 39,
+      "confidence": 88,
+      "ceiling": null,
+      "roomScore": 39,
+      "capabilityScore": 67,
+      "currentPdpQuality": 62,
+      "transformation": 62,
+      "salesFit": 61,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "insufficient_concept_contrast:39:LAAG",
+        "insufficient_outreach_concept_fit"
+      ],
+      "evidence": [
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "tensfact.com",
+      "conceptId": "42cc76e8-9e57-48e9-ac27-7533bc09a2a0",
+      "band": "LAAG",
+      "contrast": 37,
+      "confidence": 86,
+      "ceiling": null,
+      "roomScore": 32,
+      "capabilityScore": 79,
+      "currentPdpQuality": 68,
+      "transformation": 65,
+      "salesFit": 69,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": true,
+      "blockedReasons": [
+        "insufficient_concept_contrast:37:LAAG"
+      ],
+      "evidence": [
+        "eigen merk: volledige verhaallijn mogelijk",
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "quiesco.nl",
+      "conceptId": "07caf60b-53f6-4a75-8a41-44d06cff1db7",
+      "band": "LAAG",
+      "contrast": 37,
+      "confidence": 88,
+      "ceiling": null,
+      "roomScore": 33,
+      "capabilityScore": 77,
+      "currentPdpQuality": 64,
+      "transformation": 64,
+      "salesFit": 82,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "status_not_BRIEF_READY:CONCEPT_CANDIDATE",
+        "insufficient_concept_contrast:37:LAAG"
+      ],
+      "evidence": [
+        "eigen merk: volledige verhaallijn mogelijk",
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "bankhoesdiscounter.nl",
+      "conceptId": "7d265656-4d6f-40dd-b802-72955c2d4ba8",
+      "band": "LAAG",
+      "contrast": 37,
+      "confidence": 88,
+      "ceiling": null,
+      "roomScore": 33,
+      "capabilityScore": 76,
+      "currentPdpQuality": 68,
+      "transformation": 64,
+      "salesFit": 33,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "insufficient_concept_contrast:37:LAAG",
+        "insufficient_outreach_concept_fit"
+      ],
+      "evidence": [
+        "eigen merk: volledige verhaallijn mogelijk",
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "boozyshop.nl",
+      "conceptId": "8361208f-ecd8-414a-b2bf-63baa89bc40f",
+      "band": "LAAG",
+      "contrast": 35,
+      "confidence": 86,
+      "ceiling": null,
+      "roomScore": 33,
+      "capabilityScore": 70,
+      "currentPdpQuality": 67,
+      "transformation": 71,
+      "salesFit": 26,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "manual_excluded",
+        "status_not_BRIEF_READY:CONCEPT_CANDIDATE",
+        "insufficient_concept_contrast:35:LAAG",
+        "insufficient_outreach_concept_fit"
+      ],
+      "evidence": [
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "fitnessdigital.nl",
+      "conceptId": "9743337a-919e-4ebe-9207-5d19d50c5524",
+      "band": "LAAG",
+      "contrast": 31,
+      "confidence": 24,
+      "ceiling": null,
+      "roomScore": 48,
+      "capabilityScore": 68,
+      "currentPdpQuality": null,
+      "transformation": 59,
+      "salesFit": 43,
+      "croDataSource": "MISSING",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "status_not_BRIEF_READY:CONCEPT_CANDIDATE",
+        "insufficient_concept_contrast:31:LAAG",
+        "insufficient_outreach_concept_fit",
+        "cro_not_audited_insufficient_proxy_confidence"
+      ],
+      "evidence": [
+        "eigen merk: volledige verhaallijn mogelijk",
+        "nauwelijks broncontent om mee te bouwen"
+      ]
+    },
+    {
+      "domain": "auveyaskin.com",
+      "conceptId": "8b530e4c-fe38-421d-af70-461297937285",
+      "band": "LAAG",
+      "contrast": 30,
+      "confidence": 88,
+      "ceiling": null,
+      "roomScore": 28,
+      "capabilityScore": 70,
+      "currentPdpQuality": 66,
+      "transformation": 63,
+      "salesFit": 60,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "insufficient_concept_contrast:30:LAAG",
+        "insufficient_outreach_concept_fit"
+      ],
+      "evidence": [
+        "huidige vormgeving al premium (80)",
+        "genoeg broncontent voor een echte verdieping"
+      ]
+    },
+    {
+      "domain": "currentbody.nl",
+      "conceptId": "defd2cdb-3122-4c17-baba-ecf164564423",
+      "band": "GEEN_CONTRAST",
+      "contrast": 20,
+      "confidence": 82,
+      "ceiling": "PDP zeer sterk",
+      "roomScore": 14,
+      "capabilityScore": 91,
+      "currentPdpQuality": 85,
+      "transformation": 41,
+      "salesFit": 48,
+      "croDataSource": "AUDITED",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "insufficient_transformation",
+        "insufficient_concept_contrast:20:GEEN_CONTRAST",
+        "insufficient_outreach_concept_fit"
+      ],
+      "evidence": [
+        "huidige vormgeving al premium (85)",
+        "eigen merk: volledige verhaallijn mogelijk",
+        "genoeg broncontent voor een echte verdieping",
+        "4173 reviews om mee te overtuigen",
+        "plafond: PDP zeer sterk"
+      ]
+    },
+    {
+      "domain": "asos.com",
+      "conceptId": "51fb80af-ef34-4705-8800-72339de6dbdb",
+      "band": "GEEN_CONTRAST",
+      "contrast": 18,
+      "confidence": 24,
+      "ceiling": null,
+      "roomScore": 48,
+      "capabilityScore": 43,
+      "currentPdpQuality": null,
+      "transformation": 40,
+      "salesFit": 38,
+      "croDataSource": "MISSING",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "status_not_BRIEF_READY:CONCEPT_CANDIDATE",
+        "insufficient_asset_readiness",
+        "insufficient_transformation",
+        "insufficient_concept_contrast:18:GEEN_CONTRAST",
+        "insufficient_outreach_concept_fit",
+        "cro_not_audited_insufficient_proxy_confidence"
+      ],
+      "evidence": [
+        "te weinig materiaal voor een premium versie (27)",
+        "nauwelijks broncontent om mee te bouwen"
+      ]
+    },
+    {
+      "domain": "haarshop.nl",
+      "conceptId": "49a63435-cf17-4ba9-8f37-d55f758d62ec",
+      "band": "GEEN_CONTRAST",
+      "contrast": 3,
+      "confidence": 24,
+      "ceiling": null,
+      "roomScore": 48,
+      "capabilityScore": 49,
+      "currentPdpQuality": null,
+      "transformation": 16,
+      "salesFit": 5,
+      "croDataSource": "MISSING",
+      "designTargetEligible": false,
+      "outreachEligible": false,
+      "blockedOnContrastOnly": false,
+      "blockedReasons": [
+        "manual_excluded",
+        "status_not_BRIEF_READY:CONCEPT_CANDIDATE",
+        "page_health_not_usable",
+        "insufficient_asset_readiness",
+        "insufficient_transformation",
+        "insufficient_concept_contrast:3:GEEN_CONTRAST",
+        "insufficient_outreach_concept_fit",
+        "cro_not_audited_insufficient_proxy_confidence"
+      ],
+      "evidence": [
+        "te weinig materiaal voor een premium versie (32)",
+        "huidige pagina technisch stuk: before/after wordt ongeloofwaardig",
+        "nauwelijks broncontent om mee te bouwen"
+      ]
+    }
+  ]
+}

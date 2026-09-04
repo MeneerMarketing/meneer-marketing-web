@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Complete — Warranty &amp; Service Guide | Precision Photonic System</title>
+  <style>
+    :root {
+      --ink: #16181D;
+      --cacao: #2C2217;
+      --gray: #71747B;
+      --grey: #F4F5F6;
+      --line: rgba(22,24,29,0.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.6;
+      font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .cover {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 64px;
+      background: linear-gradient(165deg, #1F180F 0%, #2C2217 55%, #3A2E22 100%);
+      color: #fff;
+      page-break-after: always;
+    }
+    .cover-brand {
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: rgba(255,255,255,0.55);
+    }
+    .cover h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      max-width: 620px;
+    }
+    .cover-product {
+      display: block;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.62);
+      margin-bottom: 20px;
+    }
+    .cover-sub {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.72);
+      max-width: 520px;
+      margin-bottom: 56px;
+    }
+    .cover-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px 32px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      width: 100%;
+      max-width: 720px;
+    }
+    .cover-stat { text-align: center; }
+    .cover-stat strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .cover-stat span {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.5);
+    }
+    .cover-footer {
+      position: absolute;
+      bottom: 64px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .doc {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 56px 56px 72px;
+      text-align: left;
+    }
+    .section { margin-bottom: 48px; page-break-inside: avoid; text-align: left; }
+    .page-sheet { page-break-after: always; break-after: page; }
+    .page-sheet:last-of-type { page-break-after: auto; break-after: auto; }
+
+    .kicker {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--gray);
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--cacao);
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--cacao);
+    }
+    h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 20px 0 10px;
+    }
+    h3:first-of-type { margin-top: 0; }
+    p { color: var(--gray); margin-bottom: 12px; font-size: 13px; line-height: 1.68; }
+    p strong { color: var(--ink); font-weight: 600; }
+
+    .intro-box {
+      background: var(--grey);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+    }
+    .intro-box dl { display: grid; gap: 14px; }
+    .intro-box dt {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gray);
+      margin-bottom: 3px;
+    }
+    .intro-box dd { font-size: 13px; color: var(--ink); margin: 0; line-height: 1.55; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card {
+      background: var(--grey);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+    .card h3 { margin-top: 0; font-size: 12px; }
+    .card p { margin-bottom: 0; font-size: 12px; line-height: 1.6; }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 0;
+    }
+    .check-list li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 12px;
+      color: var(--ink);
+      margin-bottom: 10px;
+      break-inside: avoid;
+      line-height: 1.5;
+    }
+    .check-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+      color: var(--cacao);
+    }
+
+    .exclude-list {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 0;
+    }
+    .exclude-list li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 12px;
+      color: var(--ink);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .exclude-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--cacao);
+      font-weight: 700;
+    }
+
+    .prose-block {
+      background: var(--grey);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px 32px;
+    }
+    .prose-block p:last-child { margin-bottom: 0; }
+
+    .note-box {
+      margin-top: 20px;
+      padding: 18px 22px;
+      border-left: 3px solid var(--cacao);
+      background: var(--grey);
+      font-size: 12px;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+    .note-box strong { color: var(--ink); }
+
+    .contact-card {
+      background: var(--grey);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+    .contact-card p {
+      margin-bottom: 6px;
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .contact-card p:last-child { margin-bottom: 0; }
+
+    .doc-footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gray);
+    }
+
+    @media print {
+      @page { margin: 18mm 16mm; }
+      @page :first { margin: 0; }
+      body { font-size: 11px; }
+      .cover { min-height: auto; height: 100vh; padding: 96px 64px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .doc { padding: 0; max-width: 100%; }
+      .section { margin-bottom: 0; }
+      .page-sheet { page-break-after: always; break-after: page; }
+      .page-sheet:last-of-type { page-break-after: auto; break-after: auto; }
+      .section { page-break-inside: avoid; }
+      .cover, .note-box, .intro-box, .card, .prose-block {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="cover page-sheet">
+    <span class="cover-brand">Skin Complete</span>
+    <h1>Warranty &amp; Service Guide</h1>
+    <span class="cover-product">Precision Photonic System&trade;</span>
+    <p class="cover-sub">Garantie, service, onderhoud en technische ondersteuning voor het Precision Photonic System&trade; van Skin Complete B.V.</p>
+    <div class="cover-meta">
+      <div class="cover-stat"><strong>2</strong><span>jaar garantie</span></div>
+      <div class="cover-stat"><strong>48u</strong><span>reactietermijn</span></div>
+      <div class="cover-stat"><strong>72u</strong><span>vervangend systeem</span></div>
+      <div class="cover-stat"><strong>Pro</strong><span>partner service</span></div>
+    </div>
+    <p class="cover-footer">Confidentieel &middot; Professioneel gebruik &middot; Skin Complete B.V.</p>
+  </section>
+
+  <div class="doc">
+
+    <section class="section page-sheet">
+      <span class="kicker">Documentoverzicht</span>
+      <h2>Garantie &amp; service in het kort</h2>
+      <div class="intro-box">
+        <dl>
+          <div>
+            <dt>Product</dt>
+            <dd>Precision Photonic System&trade;</dd>
+          </div>
+          <div>
+            <dt>Standaard garantie</dt>
+            <dd>1 jaar vanaf leverdatum</dd>
+          </div>
+          <div>
+            <dt>Samenwerking Haagse Hogeschool</dt>
+            <dd>Verlengde garantieperiode van 2 jaar vanaf leverdatum</dd>
+          </div>
+          <div>
+            <dt>Reikwijdte</dt>
+            <dd>Het geleverde systeem en de bijbehorende originele onderdelen</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>Doel van dit document</h3>
+          <p>Dit document beschrijft de garantievoorwaarden, serviceverlening, onderhoudsrichtlijnen en technische ondersteuning voor het Precision Photonic System&trade; van Skin Complete B.V.</p>
+        </div>
+        <div class="card">
+          <h3>Samenwerkingspartner</h3>
+          <p>De Haagse Hogeschool is voor Skin Complete een belangrijke onderwijs- en samenwerkingspartner. Binnen deze samenwerking beoordelen wij service en garantie vanuit continuïteit van het onderwijs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-sheet">
+      <span class="kicker">Garantie</span>
+      <h2>Garantieperiode</h2>
+      <p>Op het Precision Photonic System&trade; geldt standaard een garantieperiode van één jaar, gerekend vanaf de leverdatum.</p>
+      <p>Omdat de Haagse Hogeschool een opleidingsinstituut en samenwerkingspartner is, bieden wij binnen deze samenwerking een verlengde garantieperiode van twee jaar, gerekend vanaf de leverdatum.</p>
+      <p>De garantie is van toepassing op het geleverde systeem en de bijbehorende originele onderdelen.</p>
+
+      <h3>Wat valt onder de garantie?</h3>
+      <p>De garantie is van toepassing op:</p>
+      <ul class="check-list">
+        <li>Fabricagefouten</li>
+        <li>Materiaalgebreken</li>
+        <li>Technische defecten die bij normaal en correct gebruik ontstaan</li>
+        <li>Defecten aan onderdelen die niet zijn veroorzaakt door onjuist gebruik of externe schade</li>
+      </ul>
+      <p style="margin-top:18px;">Wanneer een defect onder de garantie valt, zorgt Skin Complete kosteloos voor reparatie of, wanneer reparatie niet mogelijk of niet wenselijk is, vervanging van het systeem of het betreffende onderdeel. Skin Complete bepaalt na technische beoordeling welke oplossing het meest passend is.</p>
+    </section>
+
+    <section class="section page-sheet">
+      <span class="kicker">Garantie</span>
+      <h2>Wat valt niet standaard onder de garantie?</h2>
+      <p>De standaardgarantie is in beginsel niet van toepassing op schade of defecten die zijn ontstaan door:</p>
+      <ul class="exclude-list">
+        <li>Vallen, stoten of andere fysieke beschadiging</li>
+        <li>Vocht- of waterschade</li>
+        <li>Onjuist of onzorgvuldig gebruik</li>
+        <li>Gebruik in strijd met de gebruikershandleiding of veiligheidsinstructies</li>
+        <li>Gebruik van niet-goedgekeurde accessoires of onderdelen</li>
+        <li>Aanpassingen, demontage of reparaties door derden</li>
+        <li>Normale slijtage of cosmetische gebruikssporen</li>
+        <li>Verlies, diefstal of opzettelijke beschadiging</li>
+      </ul>
+      <div class="note-box">
+        <p><strong>Samenwerking Haagse Hogeschool:</strong> omdat de Haagse Hogeschool voor Skin Complete een samenwerkingspartner is, beoordelen wij ook situaties die niet volledig binnen de standaardgarantie vallen altijd vanuit service en samenwerking. Ons uitgangspunt is om tot een passende oplossing te komen zonder dat de Haagse Hogeschool onnodig wordt belast.</p>
+      </div>
+
+      <h3>Garantie na reparatie of vervanging</h3>
+      <p>Een reparatie of vervanging zorgt niet automatisch voor een volledig nieuwe garantieperiode. De oorspronkelijke garantieperiode blijft in beginsel van toepassing. Wanneer een specifiek onderdeel wordt vervangen, kan Skin Complete voor dit onderdeel afzonderlijk een aanvullende garantietermijn afspreken. De serviceafspraken zoals beschreven in dit document blijven gedurende de samenwerking van kracht.</p>
+    </section>
+
+    <section class="section page-sheet">
+      <span class="kicker">Melden</span>
+      <h2>Technisch probleem melden</h2>
+      <p>Technische problemen kunnen worden gemeld via:</p>
+      <div class="contact-card">
+        <p><strong>E-mail:</strong> office@skincomplete.eu</p>
+        <p><strong>Telefoon:</strong> 06 39 18 12 77</p>
+      </div>
+
+      <h3>Gegevens bij melding</h3>
+      <p>Bij een melding ontvangen wij graag:</p>
+      <ul class="check-list">
+        <li>De naam van de organisatie</li>
+        <li>De naam en contactgegevens van de contactpersoon</li>
+        <li>Een korte omschrijving van het probleem</li>
+        <li>Indien mogelijk foto&rsquo;s of videobeelden waarop het probleem zichtbaar is</li>
+        <li>Informatie over het moment en de omstandigheden waarin het probleem is ontstaan</li>
+      </ul>
+      <p style="margin-top:18px;">Skin Complete streeft ernaar om binnen 48 uur na ontvangst van de melding inhoudelijk te reageren. Deze reactietermijn geldt op werkdagen.</p>
+      <div class="note-box">
+        <p>Bij twijfel over de werking of veiligheid van het systeem altijd eerst contact opnemen met Skin Complete voordat het systeem wordt geopend, aangepast, verzonden of door een externe partij wordt onderzocht.</p>
+      </div>
+    </section>
+
+    <section class="section page-sheet">
+      <span class="kicker">Service</span>
+      <h2>Technische beoordeling en afhandeling</h2>
+      <p>Wanneer zich een technisch probleem voordoet, neemt Skin Complete de begeleiding van de afhandeling op zich.</p>
+      <p>Na ontvangst van de melding beoordelen wij het probleem eerst op afstand. Indien nodig vragen wij om aanvullende informatie, foto&rsquo;s of videobeelden. Wanneer het probleem niet op afstand kan worden opgelost, zorgen wij voor verdere technische beoordeling.</p>
+      <p>Ons uitgangspunt is dat de continuïteit van het onderwijs en het gebruik van het systeem zo min mogelijk worden onderbroken.</p>
+      <p>Afhankelijk van de situatie zorgt Skin Complete voor een passende oplossing, zoals:</p>
+      <ul class="check-list">
+        <li>Ondersteuning op afstand</li>
+        <li>Reparatie van het systeem of een onderdeel</li>
+        <li>Vervanging van een defect onderdeel</li>
+        <li>Vervanging van het systeem wanneer reparatie niet mogelijk of niet wenselijk is</li>
+      </ul>
+
+      <h3>Kosten en service binnen de samenwerking</h3>
+      <p>De Haagse Hogeschool is voor Skin Complete een belangrijke onderwijs- en samenwerkingspartner. Daarom neemt Skin Complete technische ondersteuning, reparatie en eventuele vervanging gedurende de samenwerking voor haar rekening, ook wanneer een probleem niet volledig binnen de standaardgarantievoorwaarden valt.</p>
+      <p>Skin Complete beoordeelt iedere situatie afzonderlijk en zoekt altijd naar een passende oplossing waarbij de Haagse Hogeschool zo min mogelijk wordt belast. Bij verlies, diefstal, opzettelijke beschadiging of ernstige schade door gebruik in strijd met de veiligheidsinstructies, wordt de afhandeling afzonderlijk beoordeeld en afgestemd.</p>
+    </section>
+
+    <section class="section page-sheet">
+      <span class="kicker">Continuïteit</span>
+      <h2>Vervangend systeem en onderhoud</h2>
+      <h3>Vervangend systeem</h3>
+      <p>Wanneer het Precision Photonic System&trade; tijdelijk niet kan worden gebruikt en het probleem niet binnen een redelijke termijn kan worden opgelost, streeft Skin Complete ernaar om een tijdelijk of definitief vervangend systeem beschikbaar te stellen binnen 72 uur.</p>
+      <p>Hiermee willen wij voorkomen dat lessen, demonstraties of andere onderwijsactiviteiten onnodig worden onderbroken. De beschikbaarheid en levertijd van een vervangend systeem worden altijd in overleg afgestemd.</p>
+
+      <h3>Onderhoud</h3>
+      <p>Het Precision Photonic System&trade; vereist geen periodiek technisch onderhoud door een externe onderhoudspartij.</p>
+      <p>Voor veilig en duurzaam gebruik adviseren wij om:</p>
+      <ul class="check-list">
+        <li>Het systeem volgens de gebruikershandleiding te gebruiken</li>
+        <li>Het systeem na gebruik op de voorgeschreven wijze te reinigen</li>
+        <li>Het systeem droog, schoon en veilig op te bergen</li>
+        <li>Beschadigingen of onregelmatigheden tijdig aan Skin Complete te melden</li>
+        <li>Uitsluitend de meegeleverde of door Skin Complete goedgekeurde onderdelen en accessoires te gebruiken</li>
+        <li>Het systeem niet te gebruiken wanneer kabels, aansluitingen of onderdelen zichtbaar beschadigd zijn</li>
+      </ul>
+      <p style="margin-top:18px;">Skin Complete geeft tijdens de training uitleg over het dagelijkse onderhoud, de reiniging en de controle van het systeem.</p>
+    </section>
+
+    <section class="section page-sheet">
+      <span class="kicker">Ondersteuning</span>
+      <h2>Technische ondersteuning en training</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Technische ondersteuning</h3>
+          <p style="margin-bottom:12px;">Skin Complete blijft gedurende de samenwerking het vaste aanspreekpunt voor technische en praktische ondersteuning.</p>
+          <ul class="check-list">
+            <li>Vragen over bediening, instellingen en programma&rsquo;s</li>
+            <li>Technische storingen en foutmeldingen</li>
+            <li>Vakinhoudelijke vragen</li>
+            <li>Reiniging en dagelijks onderhoud</li>
+            <li>Veilig en correct gebruik</li>
+            <li>Controle van onderdelen</li>
+            <li>Reparatie of vervanging</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Training bij aanvang</h3>
+          <p style="margin-bottom:12px;">Bij aanvang van de samenwerking verzorgt Skin Complete op locatie een uitgebreide training door één of twee trainers.</p>
+          <ul class="check-list">
+            <li>Basisprincipes van LED-therapie</li>
+            <li>Werking van de verschillende golflengtes</li>
+            <li>Indicaties en contra-indicaties</li>
+            <li>Veiligheidsrichtlijnen</li>
+            <li>Bediening van het systeem</li>
+            <li>Reiniging en dagelijks onderhoud</li>
+            <li>Praktische toepassing binnen het onderwijs</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:20px;">Technische ondersteuning wordt in eerste instantie telefonisch, per e-mail of via een videogesprek aangeboden. Indien nodig wordt een passende vervolgstap georganiseerd.</p>
+      <p>De Haagse Hogeschool ontvangt daarnaast een handboek met inhoudelijke en praktische informatie over LED-therapie en het gebruik van het Precision Photonic System&trade;. Indien gewenst kan een afzonderlijke training voor docenten worden georganiseerd. Ook kan Skin Complete in overleg bijdragen aan bijscholing, open dagen en andere relevante onderwijsactiviteiten.</p>
+
+      <h3>Verantwoordelijkheid van de gebruiker</h3>
+      <p>De gebruiker is verantwoordelijk voor correct gebruik, naleving van de gebruikershandleiding en veiligheidsrichtlijnen, zorgvuldige reiniging en opslag, controle vóór gebruik, gebruik door voldoende geïnstrueerde studenten, docenten en medewerkers, het tijdig melden van schade, storingen of onregelmatigheden, en het buiten gebruik stellen van het systeem wanneer veilig gebruik niet kan worden gegarandeerd.</p>
+    </section>
+
+    <section class="section page-sheet">
+      <span class="kicker">Contact</span>
+      <h2>Gezamenlijk uitgangspunt</h2>
+      <div class="prose-block">
+        <p>Skin Complete vindt het belangrijk dat de Haagse Hogeschool het Precision Photonic System&trade; veilig, duurzaam en zonder onnodige technische of financiële zorgen kan inzetten.</p>
+        <p>Bij vragen, storingen of beschadigingen zoeken wij daarom altijd eerst gezamenlijk naar een praktische en passende oplossing. Ons uitgangspunt is een langdurige samenwerking waarin ondersteuning, bereikbaarheid, continuïteit en kennisoverdracht centraal staan.</p>
+      </div>
+
+      <h3>Contactgegevens</h3>
+      <div class="contact-card">
+        <p><strong>Skin Complete B.V.</strong></p>
+        <p><strong>E-mail:</strong> office@skincomplete.eu</p>
+        <p><strong>Telefoon:</strong> 06 39 18 12 77</p>
+      </div>
+      <div class="note-box">
+        <p>Bij technische vragen of problemen verzoeken wij altijd eerst contact op te nemen met Skin Complete voordat het systeem wordt geopend, aangepast, verzonden of door een externe partij wordt onderzocht.</p>
+      </div>
+    </section>
+
+    <footer class="doc-footer">
+      <span>Skin Complete B.V.</span>
+      <span>Warranty &amp; Service Guide &middot; Precision Photonic System</span>
+    </footer>
+
+  </div>
+</body>
+</html>

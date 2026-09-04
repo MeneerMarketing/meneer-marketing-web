@@ -277,8 +277,8 @@ export function HuidkliniekCompleteFlow() {
         <Reveal delay={0.16}>
           <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-slate-400 lg:mt-16">
             Je koopt geen losse website. Je koopt een commercieel systeem rond
-            je agenda. Local Growth en Growth Partner pakken vindbaarheid en
-            Google Ads erbij.
+            je agenda. Local Growth voegt huidproblemen-SEO toe. Growth Partner
+            voegt Shopify en Google Ads erbij.
           </p>
         </Reveal>
       </div>

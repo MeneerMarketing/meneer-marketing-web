@@ -1,8 +1,12 @@
+import { PaymentStatus, SequenceType } from "@mollie/api-client";
 import { NextRequest, NextResponse } from "next/server";
 
-import { getMolliePayment, isMollieConfigured } from "@/lib/mollie/client";
 import { updateCommercePaymentFromMollie } from "@/lib/lge/inbound-store";
 import { isLgeSupabaseConfigured } from "@/lib/lge/supabase-admin";
+import { getMolliePayment, isMollieConfigured } from "@/lib/mollie/client";
+import { getMollieClient } from "@/lib/mollie/client";
+import { ensureLgeSubscriptionAfterFirstPayment } from "@/lib/mollie/subscription";
+import { sendCheckoutConfirmationMailForPayment } from "@/lib/mollie/send-checkout-confirmation-mail";
 
 function mapMollieStatus(status: string): string {
   switch (status) {
@@ -19,30 +23,67 @@ function mapMollieStatus(status: string): string {
 }
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  if (!isMollieConfigured() || !isLgeSupabaseConfigured()) {
-    return new NextResponse("Not configured", { status: 503 });
+  if (!isMollieConfigured()) {
+    return NextResponse.json({ ok: false }, { status: 503 });
   }
 
   try {
     const form = await req.formData();
     const paymentId = form.get("id");
-    if (typeof paymentId !== "string" || !paymentId.trim()) {
-      return new NextResponse("Missing id", { status: 400 });
+
+    if (typeof paymentId !== "string" || paymentId.trim().length === 0) {
+      return NextResponse.json({ ok: false }, { status: 400 });
     }
 
-    const payment = await getMolliePayment(paymentId.trim());
-    const status = mapMollieStatus(payment.status);
+    const trimmedId = paymentId.trim();
+    const mollie = getMollieClient();
+    const payment = await mollie.payments.get(trimmedId);
 
-    await updateCommercePaymentFromMollie({
-      molliePaymentId: payment.id,
-      status,
-      paidAt: payment.paidAt,
-      paymentMethod: payment.method,
-    });
+    if (payment.status === PaymentStatus.paid) {
+      console.info("[mollie/webhook] paid", {
+        id: payment.id,
+        amount: payment.amount,
+        metadata: payment.metadata,
+        customerId: payment.customerId,
+        sequenceType: payment.sequenceType,
+      });
 
-    return new NextResponse("OK", { status: 200 });
+      if (payment.sequenceType === SequenceType.first) {
+        await ensureLgeSubscriptionAfterFirstPayment(payment);
+      }
+
+      try {
+        await sendCheckoutConfirmationMailForPayment(payment);
+      } catch (mailErr) {
+        console.error("[mollie/webhook] confirmation mail", mailErr);
+      }
+    }
+
+    if (
+      payment.status === PaymentStatus.failed ||
+      payment.status === PaymentStatus.canceled ||
+      payment.status === PaymentStatus.expired
+    ) {
+      console.warn("[mollie/webhook] terminal", {
+        id: payment.id,
+        status: payment.status,
+        metadata: payment.metadata,
+      });
+    }
+
+    if (isLgeSupabaseConfigured()) {
+      const legacyPayment = await getMolliePayment(trimmedId);
+      await updateCommercePaymentFromMollie({
+        molliePaymentId: legacyPayment.id,
+        status: mapMollieStatus(legacyPayment.status),
+        paidAt: legacyPayment.paidAt,
+        paymentMethod: legacyPayment.method,
+      });
+    }
+
+    return NextResponse.json({ ok: true }, { status: 200 });
   } catch (err) {
-    console.error("[Mollie webhook]", err);
-    return new NextResponse("Error", { status: 500 });
+    console.error("[mollie/webhook]", err);
+    return NextResponse.json({ ok: false }, { status: 500 });
   }
 }

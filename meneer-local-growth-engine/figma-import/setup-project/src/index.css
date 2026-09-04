@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --color-warm-white: #FAF9F7;
+  --color-off-white: #F5F3F0;
+  --color-light-grey: #ECEBE8;
+  --color-cool-mist: #E9EEF0;
+  --color-charcoal: #292825;
+  --color-soft-black: #181817;
+  --color-muted-text: #716F6A;
+  --color-border-subtle: #DEDCD8;
+  --color-primary: #2E5B8A;
+  --color-primary-dark: #1A3A5C;
+  --color-primary-light: #C2D4E8;
+  --color-primary-canvas: #EBF0F7;
+  --color-primary-medium: #5B84B1;
+  --color-warm-accent: #A88670;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.anim-fade-up {
+  opacity: 0;
+  animation: fadeSlideUp 0.7s cubic-bezier(0.22,1,0.36,1) forwards;
+}
+.anim-fade-up-1 { animation-delay: 0.15s; }
+.anim-fade-up-2 { animation-delay: 0.30s; }
+.anim-fade-up-3 { animation-delay: 0.48s; }
+.anim-fade-up-4 { animation-delay: 0.62s; }
+
+.hero-img-zoom {
+  animation: heroZoom 10s ease-in-out infinite alternate;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}

@@ -3472,7 +3472,7 @@ De behandelaar beoordeelt eerst elke plek. Verandert er iets aan de vorm of de k
 
 De behandelaar beoordeelt vorm, rand en kleur, en legt de plek vast in beeld. Zo is later te zien of er iets is veranderd.
 
-- Vorm, rand en kleur De behandelaar beoordeelt of de plek gelijkmatig van kleur is en of de rand scherp begrensd loopt. Dat onderscheidt een zonvlek van iets anders.
+- Vorm, rand en kleur De behandelaar kijkt of de kleur gelijkmatig is en of de rand scherp loopt. Dat onderscheidt een zonvlek van iets anders.
 
 - Onder UV-licht Daaronder wordt zichtbaar hoeveel pigment er dieper in de huid zit. Dat bepaalt met hoeveel sessies je rekening moet houden.
 
@@ -4800,45 +4800,45 @@ Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter
 
 De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en de lijst schikt zich naar wat bij jou past.
 
-- RAAKT NIETS Consult met EVE-M huidanalyse EVE-M De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt. Er is geen hersteltijd, omdat de huid tijdens deze afspraak niet wordt behandeld. € 50
+- RAAKT NIETS Consult met EVE-M huidanalyse EVE-M De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. Je gaat meteen door met je dag. Wil je in dezelfde afspraak behandeld worden, dan reserveren we daar tijd voor. € 50
 
-- RAAKT NIETS NightLase Fotona TimeWalker Laser tegen snurken. Zonder operatie, zonder naalden, zonder beugel in je mond. Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel. Op aanvraag
+- RAAKT NIETS NightLase Fotona TimeWalker Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel. Op aanvraag
 
-- RAAKT NIETS Voedingsintolerantietest Dit is een test en geen huidbehandeling Geen. € 300
+- RAAKT NIETS Voedingsintolerantietest Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen. € 300
 
-- TOT IN DE HOORNLAAG Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Geen zuren, dus ook bij een gevoelige huid. Geen. € 150
+- TOT IN DE HOORNLAAG Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. Geen. € 150
 
-- TOT IN DE OPPERHUID HydraFacial HydraFacial Reinigen, exfoliëren en hydrateren in één doorloop, met direct zichtbaar, geen hersteltijd. Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
+- TOT IN DE OPPERHUID HydraFacial HydraFacial Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd. Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
 
 - TOT IN DE OPPERHUID Oxygeneo glow OxyGeneo Exfoliëren en zuurstof in de huid brengen, in één behandeling. Geen. € 150
 
-- TOT IN DE OPPERHUID CooLift Cryo Therapy CooLifting Bij CooLift wordt koude CO2 onder druk op de huid aangebracht. De behandeling duurt kort en kan de huid tijdelijk strakker laten aanvoelen. Geen. € 75
+- TOT IN DE OPPERHUID CooLift Cryo Therapy CooLifting Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. Geen. € 75
 
 - TOT IN DE OPPERHUID Medische peelings Mesoestetic, Dermaceutic, Image Skincare, Skin Tech Pharma Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. € 140
 
-- TOT IN DE OPPERHUID Lumi 8 LED Lumi 8 Deze behandeling met LED-licht gebruikt geen naalden of zuren en wordt meestal als aanvulling ingezet. Geen. € 30
+- TOT IN DE OPPERHUID Lumi 8 LED Lumi 8 LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling. Geen. € 30
 
-- TOT IN DE OPPERHUID Cosmelan en dermamelan Mesoestetic Een traject van maanden tegen hyperpigmentatie en melasma. Geen losse behandeling. Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming. € 550
+- TOT IN DE OPPERHUID Cosmelan en dermamelan Mesoestetic Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming. € 550
 
 - TOT IN DE OPPERHUID Happy Intim Happy Intim® Peelings die pigment in de intieme zone en oksels lichter en egaler maken. Enkele dagen droog en gevoelig. € 175
 
-- TOT IN DE OPPERHUID Acnetraject Blemiderm Een begeleid traject voor acne, met producten en controles. Wisselt per fase van het traject. € 570
+- TOT IN DE OPPERHUID Acnetraject Blemiderm Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. Wisselt per fase van het traject. € 570
 
-- TOT IN DE OPPERHUID Jongeren acne traject Dit begeleide programma van drie maanden is bedoeld voor jongeren tot en met 18 jaar. Wisselt per fase van het traject. € 450
+- TOT IN DE OPPERHUID Jongeren acne traject Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. Wisselt per fase van het traject. € 450
 
-- TOT IN DE OPPERHUID Fibromen verwijderen We verwijderen steelwratjes en rekenen de behandeltijd per kwartier in plaats van per wratje. Kleine korstjes die in dagen verdwijnen. € 30
+- TOT IN DE OPPERHUID Fibromen verwijderen Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. Kleine korstjes die in dagen verdwijnen. € 30
 
-- TOT IN DE BOVENSTE LEDERHUID SkinPen Microneedling SkinPen CIT Medisch gecertificeerd microneedlen. Werkt langzaam, op de laag waar structuur zit. Eén tot drie dagen rood, als een stevige zonnegloed. € 180
+- TOT IN DE BOVENSTE LEDERHUID SkinPen Microneedling SkinPen CIT Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit. Eén tot drie dagen rood, als een stevige zonnegloed. € 180
 
-- TOT IN DE BOVENSTE LEDERHUID Dermapen 4 Dermapen 4 Microneedling met trillende naaldjes. Zelfde principe, ander apparaat. Eén tot drie dagen rood. € 180
+- TOT IN DE BOVENSTE LEDERHUID Dermapen 4 Dermapen 4 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. Eén tot drie dagen rood. € 180
 
-- TOT IN DE BOVENSTE LEDERHUID Skinboosters en mesotherapie U225 intradermale injector Werkzame stoffen op diepte, met een injector die niet met de hand meebeweegt. Kort rood en soms kleine bultjes, meestal binnen een dag weg. € 175
+- TOT IN DE BOVENSTE LEDERHUID Skinboosters en mesotherapie U225 intradermale injector Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. Kort rood en soms kleine bultjes, meestal binnen een dag weg. € 175
 
 - TOT IN DE BOVENSTE LEDERHUID Nordlys IPL Nordlys Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. Meestal een paar uur rood. € 75
 
-- TOT IN DE BOVENSTE LEDERHUID XL Hair U225 mesotherapie Tegen haaruitval en dunner wordend haar. Een traject van maanden, geen losse sessie. Kort gevoelige hoofdhuid. € 800
+- TOT IN DE BOVENSTE LEDERHUID XL Hair U225 mesotherapie Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. Kort gevoelige hoofdhuid. € 800
 
-- TOT IN DE BOVENSTE LEDERHUID Littekentherapie Voor littekens na een operatie of keizersnede. Prijs naar lengte van het litteken. Wisselt per techniek. € 100
+- TOT IN DE BOVENSTE LEDERHUID Littekentherapie Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. Wisselt per techniek. € 100
 
 - TOT IN DE DIEPE LEDERHUID Fotona TimeWalker Fotona 4D TimeWalker Laser die van binnenuit en van buitenaf werkt. Van laserpeel tot een complete 4D-lift. Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. € 150
 
@@ -4866,7 +4866,7 @@ In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Nee
 
 **Tabbladtitel:** Acnetraject | Diba Clinics
 
-**Google-omschrijving:** Een begeleid traject voor acne, met producten en controles.
+**Google-omschrijving:** Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis.
 
 **ACNETRAJECT**
 
@@ -4888,7 +4888,7 @@ Wisselt per fase van het traject.
 
 Een traject van drie tot zes maanden, met een controle om de vier tot zes weken.
 
-Een begeleid traject voor acne, met producten en controles.
+Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -4920,9 +4920,9 @@ Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en d
 
 Tussen de afspraken door verzorg je je huid zelf, met de producten en het schema die je meekrijgt. Dat bepaalt voor een groot deel het resultaat.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Volgt het verloop van acne in plaats van er één moment uit te pikken
 
@@ -4930,11 +4930,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Legt bij elke controle vast wat er veranderd is, zodat je niet op je geheugen vergelijkt
 
-- Is geen kuur met een einddatum die we vooraf beloven
+- Acne heeft een verloop, dus een einddatum spreken we niet vooraf af
 
-- Vervangt geen behandeling door een arts. Bij zware of littekenvormende acne hoor je daar eerst
+- Bij zware of littekenvormende acne kijkt eerst een arts mee
 
-- Werkt niet als de producten thuis blijven liggen. Het grootste deel van dit traject gebeurt buiten de kliniek
+- Het grootste deel gebeurt thuis, dus de producten horen bij het traject
 
 **Veelgestelde vragen**
 
@@ -4958,7 +4958,7 @@ Deze pagina vertelt wat acnetraject doet. Of het bij jouw huid het juiste is, ha
 
 **Tabbladtitel:** CooLift Cryo Therapy | Diba Clinics
 
-**Google-omschrijving:** Bij CooLift wordt koude CO2 onder druk op de huid aangebracht. De behandeling duurt kort en kan de huid tijdelijk strakker laten aanvoelen.
+**Google-omschrijving:** Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door.
 
 **COOLIFT CRYO THERAPY**
 
@@ -4980,7 +4980,7 @@ Geen.
 
 De behandeling kan eenmalig worden gedaan of als kuur van meestal vier tot zes afspraken.
 
-Bij CooLift wordt koude CO2 onder druk op de huid aangebracht. De behandeling duurt kort en kan de huid tijdelijk strakker laten aanvoelen.
+Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door.
 
 Draait op CooLift Cryo Therapy
 
@@ -5020,7 +5020,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Vijf minuten De behandeling duurt een paar minuten, van begin tot eind.
 
-- Koude straal De CO2 komt er onder druk uit en dat voelt koud en stevig. Onaangenaam is het niet, verrassend wel.
+- Koude straal De CO2 komt er onder druk uit en dat voelt koud en stevig. Het is even wennen, maar goed te doen.
 
 - Direct verder Geen roodheid om te verbergen, geen dag om vrij te nemen.
 
@@ -5030,9 +5030,9 @@ Vijf minuten, en het is vooral koud. De gasstroom komt onder druk uit een handst
 
 Er komt geen naald aan te pas en er wordt niets weggehaald. Je kunt er direct mee de deur uit, en veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Laat je huid binnen vijf minuten strakker aanvoelen door de kou en de druk
 
@@ -5040,11 +5040,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Kan direct voor een afspraak of gelegenheid, want er is niets aan je te zien
 
-- Werkt tijdelijk en verandert je huid niet blijvend
+- Het effect houdt dagen aan; voor opbouw kies je microneedling
 
-- Maakt geen collageen aan zoals naalden of laser dat doen
+- Voor aanmaak van collageen zijn naalden of laser het gereedschap
 
-- Doet niets aan pigment, littekens of rimpels die er al zijn
+- Voor pigment of littekens die er al zitten past laser of needling
 
 - HUIDVEROUDERING
 
@@ -5070,7 +5070,7 @@ Deze pagina vertelt wat coolift cryo therapy doet. Of het bij jouw huid het juis
 
 **Tabbladtitel:** Cosmelan en dermamelan | Diba Clinics
 
-**Google-omschrijving:** Een traject van maanden tegen hyperpigmentatie en melasma. Geen losse behandeling.
+**Google-omschrijving:** Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis.
 
 **COSMELAN EN DERMAMELAN**
 
@@ -5096,7 +5096,7 @@ Eén traject van ongeveer zes maanden
 
 > knop: Dermamelan Intimate € 550
 
-Een traject van maanden tegen hyperpigmentatie en melasma. Geen losse behandeling.
+Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis.
 
 Draait op Peelinglijnen
 
@@ -5140,9 +5140,9 @@ De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat
 
 Na een paar dagen ga je vervellen. We spreken daarom vooraf af wanneer je begint, zodat het niet samenvalt met een vakantie of een drukke week.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Pakt hardnekkig pigment aan waar losse behandelingen op stuklopen
 
@@ -5150,11 +5150,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt op melasma, dat bekendstaat als het lastigste soort pigment om rustig te krijgen
 
-- Is geen losse behandeling. Zonder het thuiswerk werkt het niet
+- Het thuiswerk hoort erbij; zonder dat deel loopt het traject vast
 
-- Geeft geen garantie dat pigment wegblijft; zon brengt het terug
+- Zon brengt pigment terug, dus bescherming blijft onderdeel van het plan
 
-- Is niet geschikt voor iedereen
+- Of het bij jou past, stelt de behandelaar in de intake vast
 
 - MELASMA
 
@@ -5172,7 +5172,7 @@ Deze pagina vertelt wat cosmelan en dermamelan doet. Of het bij jouw huid het ju
 
 **Tabbladtitel:** Dermapen 4 | Diba Clinics
 
-**Google-omschrijving:** Microneedling met trillende naaldjes. Zelfde principe, ander apparaat.
+**Google-omschrijving:** Microneedling met trillende naaldjes, die gelijkmatig door de huid komen.
 
 **DERMAPEN 4**
 
@@ -5202,7 +5202,7 @@ Een reeks van drie tot zes, met vier tot zes weken ertussen.
 
 > knop: Rug € 255
 
-Microneedling met trillende naaldjes. Zelfde principe, ander apparaat.
+Microneedling met trillende naaldjes, die gelijkmatig door de huid komen.
 
 Draait op Dermapen 4
 
@@ -5254,9 +5254,9 @@ De diepte wordt per zone bijgesteld. Rond je ogen en op je voorhoofd gaat hij on
 
 Erna gelden dezelfde afspraken. Een tot drie dagen rood, de eerste dag met rust laten, en zonbescherming daarna niet overslaan.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Maakt kanaaltjes in de huid die je eigen herstel op gang brengen
 
@@ -5264,11 +5264,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Komt met trillende naaldjes gelijkmatiger door de huid dan met een rollende beweging
 
-- Werkt niet in één sessie. Wat je na één keer ziet is zwelling en geen resultaat
+- Wat je na een keer ziet is zwelling; het resultaat komt over de reeks
 
-- Haalt geen diepe of ingetrokken littekens helemaal weg
+- Diepe of ingetrokken littekens vragen een combinatie met laser
 
-- Bij actieve ontstekingen behandelen we eerst de ontsteking en niet direct de littekens of huidstructuur.
+- Bij actieve ontstekingen behandelen we eerst de ontsteking en daarna de structuur
 
 - LITTEKENS EN STRIAE
 
@@ -5296,7 +5296,7 @@ Deze pagina vertelt wat dermapen 4 doet. Of het bij jouw huid het juiste is, han
 
 **Tabbladtitel:** Dermaplaning | Diba Clinics
 
-**Google-omschrijving:** Dode huidcellen en donshaartjes weg met een mesje. Geen zuren, dus ook bij een gevoelige huid.
+**Google-omschrijving:** Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid.
 
 **DERMAPLANING**
 
@@ -5316,7 +5316,7 @@ Geen.
 
 Los, of elke vier tot zes weken als onderhoud.
 
-Dode huidcellen en donshaartjes weg met een mesje. Geen zuren, dus ook bij een gevoelige huid.
+Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid.
 
 Draait op Dermaplane pro
 
@@ -5358,9 +5358,9 @@ Je huid wordt strak getrokken en het mesje gaat er onder een vaste hoek overheen
 
 Vlak erna is je gezicht opvallend glad en neemt het crème makkelijker op. De donshaartjes komen terug zoals ze waren, dus wie het bevalt komt ongeveer maandelijks terug.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Geeft direct een gladde, egale huid
 
@@ -5368,11 +5368,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is te combineren met bijna elke andere behandeling
 
-- Werkt alleen op de buitenste laag
+- Werkt op de buitenste laag; dieper komt microneedling
 
-- Doet niets aan pigment of littekens dieper in de huid
+- Voor pigment of littekens dieper in de huid kies je laser
 
-- Is geen ontharing; de donshaartjes komen terug
+- De donshaartjes groeien terug; blijvend weg is laserontharing
 
 - DROGE HUID
 
@@ -5390,7 +5390,7 @@ Deze pagina vertelt wat dermaplaning doet. Of het bij jouw huid het juiste is, h
 
 **Tabbladtitel:** Fibromen verwijderen | Diba Clinics
 
-**Google-omschrijving:** We verwijderen steelwratjes en rekenen de behandeltijd per kwartier in plaats van per wratje.
+**Google-omschrijving:** Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier.
 
 **FIBROMEN VERWIJDEREN**
 
@@ -5412,7 +5412,7 @@ Kleine korstjes die in dagen verdwijnen.
 
 Meestal één keer
 
-We verwijderen steelwratjes en rekenen de behandeltijd per kwartier in plaats van per wratje.
+Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -5430,7 +5430,7 @@ Fibromen zijn goedaardige huidaanhangsels die vaak in de hals, oksels of liezen 
 
 **Wat er gebeurt, in volgorde.**
 
-- Eerst kijken Is het een fibroom en geen ander plekje. Twijfelen we, dan sturen we je door en behandelen we niet.
+- Eerst kijken Of het een fibroom is. Twijfelen we, dan laten we het eerst door een arts beoordelen.
 
 - Weghalen Per plekje een korte handeling. Meerdere achter elkaar binnen hetzelfde kwartier.
 
@@ -5444,9 +5444,9 @@ Er blijft een klein korstje achter dat er binnen een week tot tien dagen afgaat.
 
 We rekenen per kwartier en niet per plekje, dus meerdere in één afspraak is meestal voordeliger dan een paar keer terugkomen.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Haalt goedaardige steelwratjes weg, meestal in hals, oksels of liezen
 
@@ -5454,11 +5454,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is in één afspraak klaar bij de meeste mensen
 
-- Gaat niet over plekjes die veranderen. Die laat je eerst door je huisarts of dermatoloog beoordelen
+- Verandert een plekje, dan beoordeelt eerst een arts of dermatoloog
 
-- Voorkomt niet dat er nieuwe komen. Wie ze aanmaakt, blijft ze aanmaken
+- Wie ze aanmaakt blijft ze aanmaken, dus er kunnen nieuwe bij komen
 
-- Is geen behandeling zonder spoor. Er blijft een klein plekje dat langzaam vervaagt
+- Er blijft een klein plekje achter dat langzaam vervaagt
 
 - MOEDERVLEKKEN EN PLEKJES
 
@@ -5562,7 +5562,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat er gebeurt, in volgorde.**
 
-- Vaststellen wat je krijgt 4D, VectorLift, SmoothEye of LipLase zijn verschillende behandelingen op hetzelfde apparaat. Die keuze valt in de intake.
+- Vaststellen wat je krijgt 4D, VectorLift, SmoothEye en LipLase draaien op hetzelfde apparaat. Welke bij jou past, kiest de behandelaar.
 
 - Laag voor laag Bij de 4D wordt er in meerdere doorgangen gewerkt, elk op een andere diepte.
 
@@ -5576,9 +5576,9 @@ De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt. Met jouw antwoord
 
 Erna ben je meestal rood en warm, alsof je te lang in de zon hebt gezeten. Dat trekt in een paar uur tot een dag weg.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Werkt in meerdere richtingen: van binnenuit via de mond en van buitenaf op de huid
 
@@ -5586,11 +5586,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Kan zonder naalden en zonder snijden
 
-- Vervangt geen chirurgie. Wat losgelaten huid is, wordt hier niet vastgezet
+- Voor losgelaten huid is chirurgie het antwoord
 
-- Geeft geen vaste uitkomst. Hoeveel je huid opbouwt hangt van je huid af en niet van het apparaat
+- Hoeveel je huid opbouwt verschilt per persoon, dus we leggen het verloop vast
 
-- Is niet één behandeling. De naam Fotona zegt nog niets over wat je krijgt; de instelling en de zone doen dat
+- Fotona is het apparaat; welke behandeling erop past bepaalt de behandelaar
 
 - HUIDVEROUDERING
 
@@ -5604,7 +5604,7 @@ Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een 
 
 Hoeveel sessies heb ik nodig? +
 
-Dat hoor je na de meting. Wat we niet doen is vooraf een aantal noemen dat we niet kunnen onderbouwen.
+Dat hoor je na de meting. Het aantal hangt af van je huid en van het gebied, en dat stelt de behandelaar dan vast.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5694,9 +5694,9 @@ De behandeling zelf is een peeling: vloeistof erop, kort inwerken, eraf. Prikken
 
 Erna is de huid daar een paar dagen gevoeliger. Strakke kleding en sporten laat je die dagen even.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Maakt donkerder geworden huid in de intieme zone of oksels lichter en egaler
 
@@ -5704,11 +5704,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Kan als kuur, inclusief een crème voor thuis
 
-- Haalt de oorzaak niet weg. Komt de verkleuring door scheren of wrijving, dan komt hij terug
+- Komt de verkleuring door scheren of wrijving, dan blijft die oorzaak staan
 
-- Maakt niets bleker dan je eigen huid. Egaler is het doel, niet lichter dan je bent
+- Het doel is een egale kleur, dus je huid wordt niet lichter dan hij van zichzelf is
 
-- Bij een pas onthaarde of geïrriteerde huid stellen we de behandeling uit totdat de huid is hersteld.
+- Bij een pas onthaarde huid wachten we tot die hersteld is
 
 - HUIDVERKLEURING
 
@@ -5734,7 +5734,7 @@ Deze pagina vertelt wat happy intim doet. Of het bij jouw huid het juiste is, ha
 
 **Tabbladtitel:** Consult met EVE-M huidanalyse | Diba Clinics
 
-**Google-omschrijving:** De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt.
+**Google-omschrijving:** De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt.
 
 **CONSULT MET EVE-M HUIDANALYSE**
 
@@ -5750,7 +5750,7 @@ Raakt niets
 
 *HERSTEL*
 
-Er is geen hersteltijd, omdat de huid tijdens deze afspraak niet wordt behandeld.
+Je gaat meteen door met je dag. Wil je in dezelfde afspraak behandeld worden, dan reserveren we daar tijd voor.
 
 *HOE VAAK*
 
@@ -5762,13 +5762,13 @@ Eén keer aan het begin, daarna bij elke controle opnieuw
 
 > knop: Consult laserontharen € 50
 
-De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt.
+De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt.
 
 Draait op EVE-M
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom er niets gebeurt**
+**Wat het oplevert**
 
 De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd. Daarna volgt advies en een behandelplan, en de meting wordt herhaald om voortgang objectief zichtbaar te maken.
 
@@ -5782,7 +5782,7 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 **Wat er gebeurt, in volgorde.**
 
-- Schoon gezicht Make-up eraf. Een meting over foundation heen is geen meting.
+- Schoon gezicht Kom zonder make-up. Foundation zit tussen de camera en je huid in.
 
 - Opname onder vast licht Zelfde lamp, zelfde afstand, zelfde stand. Dat maakt vergelijken mogelijk.
 
@@ -5792,11 +5792,11 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zijn. De opnames zijn in een paar minuten klaar: gewoon licht, gepolariseerd licht en UV, achter elkaar door. Je merkt er niets van, want er raakt niets je huid.
 
-De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel, en soms is dat voorstel om even niets te doen.
+De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel: welke behandelingen erbij passen, in welke volgorde en over hoeveel tijd.
 
-**Wat een meting je wel en niet vertelt**
+**Wat een meting je vertelt**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Legt vast wat er nu is, op een manier die over maanden nog vergelijkbaar is
 
@@ -5804,11 +5804,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Geeft de basis waar een behandelplan op gebouwd wordt
 
-- Stelt geen diagnose. Dat doet een arts
+- Voor de diagnose van een plek of aandoening kijkt eerst een arts mee
 
-- Verandert niets aan je huid, ook niet een klein beetje
+- Wil je in dezelfde afspraak behandeld worden, plan dan intake met behandeling
 
-- Voorspelt geen resultaat. Een meting is een startpunt, geen belofte
+- Verandering aan je huid begint bij de behandeling die eruit volgt
 
 - ALLE HUIDPROBLEMEN
 
@@ -5816,7 +5816,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Moet ik dit doen voordat ik iets anders kan? +
 
-Ja. Niet omdat het moet van ons, maar omdat een plan zonder beginmeting niet te controleren is. Je weet dan over drie maanden niet of het gewerkt heeft.
+Ja, elk traject begint hiermee. De meting is het vertrekpunt waar we het resultaat later mee vergelijken, zodat je over drie maanden ziet wat er veranderd is.
 
 **Of dit bij jou past bespreken we vooraf**
 
@@ -5830,7 +5830,7 @@ Deze pagina vertelt wat consult met eve-m huidanalyse doet. Of het bij jouw huid
 
 **Tabbladtitel:** HydraFacial | Diba Clinics
 
-**Google-omschrijving:** Reinigen, exfoliëren en hydrateren in één doorloop, met direct zichtbaar, geen hersteltijd.
+**Google-omschrijving:** Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd.
 
 **HYDRAFACIAL**
 
@@ -5858,7 +5858,7 @@ Los te doen, of maandelijks als onderhoud. Een startreeks is meestal drie tot ze
 
 > knop: Platinum € 220
 
-Reinigen, exfoliëren en hydrateren in één doorloop, met direct zichtbaar, geen hersteltijd.
+Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd.
 
 Draait op Hydrafacial syndeo
 
@@ -5902,9 +5902,9 @@ Tussendoor wisselt de behandelaar van tip en van vloeistof. De laatste stap voel
 
 Erna ben je meteen klaar. Je huid is roze en voelt strak aan, en dat trekt binnen een uur weg. Make-up kan diezelfde dag, al is het zonde van het resultaat om er meteen overheen te gaan.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Maakt de huid meteen schoner, gladder en frisser
 
@@ -5912,11 +5912,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is te combineren met een peeling of microneedling
 
-- Bereikt geen littekens of pigment dat dieper zit
+- Voor littekens of pigment dieper in de huid past microneedling beter
 
-- Houdt niet vanzelf aan; het is onderhoud, geen behandeltraject
+- Voor blijvend verschil in structuur wordt het een reeks behandelingen
 
-- Doet niets aan haargroei
+- Bij actieve acne begin je met het acnetraject
 
 - PORIËN
 
@@ -5934,7 +5934,7 @@ Deze pagina vertelt wat hydrafacial doet. Of het bij jouw huid het juiste is, ha
 
 **Tabbladtitel:** Jongeren acne traject | Diba Clinics
 
-**Google-omschrijving:** Dit begeleide programma van drie maanden is bedoeld voor jongeren tot en met 18 jaar.
+**Google-omschrijving:** Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar.
 
 **JONGEREN ACNE TRAJECT**
 
@@ -5954,7 +5954,7 @@ Wisselt per fase van het traject.
 
 Drie maanden met begeleiding
 
-Dit begeleide programma van drie maanden is bedoeld voor jongeren tot en met 18 jaar.
+Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -5982,13 +5982,13 @@ Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een me
 
 Hetzelfde traject, ingericht op een leven met school, sport en een bijbaan. De afspraken zijn korter en de thuisroutine is met opzet klein gehouden: drie stappen die je ook volhoudt als je te laat opstaat.
 
-Ouders mogen mee naar binnen en hoeven dat niet. Dat is aan jou en niet aan hen, en dat zeggen we ook zo.
+Je ouders mogen mee naar binnen, en je mag het gesprek ook alleen doen. Dat kies je zelf.
 
 Bij de controles kijken we samen naar de meting van de vorige keer. Niet om te beoordelen of je je best hebt gedaan, maar om te zien of het plan klopt.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Is opgezet voor achttien jaar en jonger, met een programma van drie maanden
 
@@ -5996,11 +5996,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Neemt de huid serieus zonder er een probleem van te maken dat groter is dan het is
 
-- Belooft geen schone huid binnen drie maanden
+- Hoe je huid er na drie maanden bij staat, verschilt per persoon
 
-- Bij ernstige acne met risico op littekens kan een beoordeling door de huisarts of dermatoloog nodig zijn.
+- Bij ernstige acne met kans op littekens kijkt eerst een arts mee
 
-- Gaat niet buiten je ouders om. Onder de achttien komt er iemand mee en tekenen zij mee
+- Onder de achttien komt er iemand mee en tekenen je ouders mee
 
 - ACNE
 
@@ -6092,9 +6092,9 @@ Elke puls voelt als een warm tikje, met een koude stoot er direct omheen. Op je 
 
 Erna is de zone een paar uur rood en warm. Sauna, sport en zon laat je die dag even, en zonbescherming hoort daarna bij het traject en niet erna.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Werkt op haargroei op vrijwel elke zone
 
@@ -6102,11 +6102,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Vermindert ingegroeide haren en irritatie van scheren
 
-- Voor laserontharing zijn meerdere sessies nodig, omdat niet alle haren zich tegelijk in dezelfde groeifase bevinden.
+- Haren groeien in fasen, dus er zijn meerdere sessies nodig
 
-- Doet niets aan pigment of textuur
+- Voor pigment of textuur kies je IPL
 
-- Is niet zonder risico bij een gebruinde huid
+- Bij een gebruinde huid plannen we het later in
 
 - ALLE ZONES EN PRIJZEN
 
@@ -6124,7 +6124,7 @@ Deze pagina vertelt wat laserontharing doet. Of het bij jouw huid het juiste is,
 
 **Tabbladtitel:** Littekentherapie | Diba Clinics
 
-**Google-omschrijving:** Voor littekens na een operatie of keizersnede. Prijs naar lengte van het litteken.
+**Google-omschrijving:** Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken.
 
 **LITTEKENTHERAPIE**
 
@@ -6156,7 +6156,7 @@ Meestal een reeks van drie tot zes, met vier tot zes weken ertussen.
 
 > knop: Buikwandcorrectie € 200
 
-Voor littekens na een operatie of keizersnede. Prijs naar lengte van het litteken.
+Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -6188,9 +6188,9 @@ De behandeling zelf hangt af van wat eruit komt, en dat verschilt per litteken. 
 
 Bij een litteken na een operatie of keizersnede rekenen we naar lengte. Dat hoor je vooraf, in een bedrag en niet in een schatting.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Is afgestemd op littekens van een operatie of keizersnede, die anders reageren dan acnelittekens
 
@@ -6198,11 +6198,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Kijkt eerst naar de leeftijd van het litteken, want dat bepaalt wat er nog te winnen valt
 
-- Laat geen litteken verdwijnen. Een litteken is blijvend weefsel en dat verandert niet
+- Een litteken is blijvend weefsel; het wordt vlakker en rustiger
 
-- Werkt niet op een litteken dat nog aan het genezen is. Daar wachten we op
+- Een litteken dat nog geneest laten we eerst met rust, daarna beginnen we
 
-- Geeft geen voorspelling vooraf. Hoeveel een litteken opschuift verschilt per persoon en per plek
+- Hoeveel het opschuift verschilt per persoon, dus we leggen het verloop vast
 
 - LITTEKENS EN STRIAE
 
@@ -6228,7 +6228,7 @@ Deze pagina vertelt wat littekentherapie doet. Of het bij jouw huid het juiste i
 
 **Tabbladtitel:** Lumi 8 LED | Diba Clinics
 
-**Google-omschrijving:** Deze behandeling met LED-licht gebruikt geen naalden of zuren en wordt meestal als aanvulling ingezet.
+**Google-omschrijving:** LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling.
 
 **LUMI 8 LED**
 
@@ -6250,7 +6250,7 @@ Geen.
 
 Meestal als toevoeging bij een andere behandeling
 
-Deze behandeling met LED-licht gebruikt geen naalden of zuren en wordt meestal als aanvulling ingezet.
+LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling.
 
 Draait op LUMI 8-LED
 
@@ -6302,9 +6302,9 @@ De meeste mensen vinden het het rustigste kwartier van hun week. Het wordt vaak 
 
 Erna kun je direct door met je dag. Er is niets aan je huid gebeurd waar iets van hoeft te herstellen.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Werkt zonder naalden, zuren of hersteltijd
 
@@ -6312,11 +6312,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Wisselt de pulsen af, zodat de huid niet aan het licht went
 
-- LED wordt meestal als aanvulling op een andere behandeling ingezet en minder vaak als losse behandeling geadviseerd.
+- LED versterkt een andere behandeling en vervangt die niet
 
-- Verwijdert niets. Geen pigment, geen vaatjes, geen littekens
+- Voor pigment, vaatjes of littekens kies je laser of needling
 
-- Werkt niet in één keer. Licht is een prikkel die je herhaalt of het doet niets
+- Licht werkt door herhaling, dus je plant meerdere sessies
 
 - ROSACEA
 
@@ -6342,7 +6342,7 @@ Deze pagina vertelt wat lumi 8 led doet. Of het bij jouw huid het juiste is, han
 
 **Tabbladtitel:** NightLase | Diba Clinics
 
-**Google-omschrijving:** Laser tegen snurken. Zonder operatie, zonder naalden, zonder beugel in je mond.
+**Google-omschrijving:** Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel.
 
 **NIGHTLASE**
 
@@ -6362,13 +6362,13 @@ Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een
 
 Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij.
 
-Laser tegen snurken. Zonder operatie, zonder naalden, zonder beugel in je mond.
+Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel.
 
 Draait op Fotona TimeWalker
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom er niets gebeurt**
+**Wat het oplevert**
 
 Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen gecontroleerd verwarmd. Daardoor trekt het weefsel samen en gaat het minder meetrillen op de luchtstroom, en juist die trilling is het geluid dat snurken heet. Er wordt niet gesneden en er blijft niets achter.
 
@@ -6392,13 +6392,13 @@ Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen
 
 Deze behandeling werkt op je gehemelte en niet op je huid. Je mond blijft open met een spreider en de laser gaat er in drie of vier doorgangen overheen.
 
-Het is warm en het is even wennen, maar het doet geen pijn en er wordt niets gesneden. Verdoving is niet nodig en narcose al helemaal niet.
+Het is warm en het is even wennen, maar het doet geen pijn. Er komt geen mes en geen verdoving aan te pas.
 
 Erna kun je gewoon eten en drinken. Sommige mensen hebben een dag een wat droge keel.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Werkt zonder snijden, zonder naalden en zonder iets dat je 's nachts in moet doen
 
@@ -6406,11 +6406,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is te herhalen als het effect terugloopt
 
-- Is geen behandeling voor slaapapneu. Bij ademstops hoort eerst slaaponderzoek, en dat regelt een arts en niet wij
+- Bij ademstops hoort eerst slaaponderzoek via een arts
 
-- Geeft geen blijvend resultaat. Het weefsel geeft na verloop van tijd weer mee
+- Het weefsel geeft na verloop van tijd mee, dus je herhaalt het
 
-- Werkt niet als het geluid ergens anders vandaan komt dan het zachte gehemelte
+- Komt het geluid ergens anders vandaan, dan kijkt een arts mee
 
 - SNURKEN
 
@@ -6514,9 +6514,9 @@ Bij vaatjes en pigment is de reactie meteen te zien: een vaatje wordt donkerder,
 
 Erna ben je een paar uur rood. Pigment dat naar boven komt vervaagt in de dagen erna. Zonbescherming is hier geen advies maar onderdeel van de behandeling.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Behandelt een groot vlak in korte tijd
 
@@ -6524,11 +6524,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Is een goede keuze als het doel breed is en niet één plekje
 
-- Is minder precies dan een laser met één golflengte
+- Voor een enkel plekje is een laser met een golflengte preciezer
 
-- Bereikt niet wat diep zit
+- Voor pigment of vaatjes die dieper zitten kies je laser
 
-- Is niet voor elk huidtype geschikt
+- Bij een donkerder huidtype kijken we naar een alternatief
 
 - ROSACEA
 
@@ -6598,9 +6598,9 @@ Een klein handstuk gaat over je huid terwijl er een gel op ligt. De twee reagere
 
 Erna is je huid roze en voelt hij zacht aan. Je kunt meteen door met je dag; er is niets waar je rekening mee hoeft te houden behalve zonbescherming, en die geldt sowieso.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Maakt de bovenste laag los en brengt in dezelfde beweging werkzame stoffen in
 
@@ -6608,11 +6608,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Past vlak voor een gelegenheid, want er is geen dag waarop je binnen moet blijven
 
-- Komt niet dieper dan de bovenste lagen. Wat in de lederhuid speelt blijft daar
+- Voor wat in de lederhuid speelt kies je microneedling of laser
 
-- Haalt geen littekens, diepe rimpels of pigment weg. Daar is dit niet het gereedschap voor
+- Voor littekens, diepe rimpels of pigment past een andere behandeling
 
-- Houdt niet vanzelf aan. Eén keer glow is één keer glow, geen verandering in je huid
+- Voor blijvend verschil plan je een reeks in plaats van een losse keer
 
 - DROGE HUID
 
@@ -6724,9 +6724,9 @@ Prikken hoort erbij, branden niet. Zeg het dus meteen als het gaat branden, dan 
 
 Wat erna komt hangt af van de sterkte. Bij een lichte peeling is je huid een dag wat rood en droog. Bij een sterkere ga je vervellen, en dan is de belangrijkste afspraak dat je er niet aan plukt.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Maakt oppervlakkige verkleuring lichter
 
@@ -6734,11 +6734,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Helpt bij verstopte poriën doordat de bovenlaag sneller vernieuwt
 
-- Bereikt geen littekens die dieper zitten dan de opperhuid
+- Voor littekens dieper dan de opperhuid kies je microneedling
 
-- Doet niets aan haargroei
+- Bij hardnekkig pigment is Cosmelan het zwaardere traject
 
-- Houdt niet vanzelf aan. Stop je, dan komt de oude situatie terug
+- Het resultaat houd je bij met herhaling, anders komt de oude situatie terug
 
 - ACNE
 
@@ -6758,7 +6758,7 @@ Deze pagina vertelt wat medische peelings doet. Of het bij jouw huid het juiste 
 
 **Tabbladtitel:** Skinboosters en mesotherapie | Diba Clinics
 
-**Google-omschrijving:** Werkzame stoffen op diepte, met een injector die niet met de hand meebeweegt.
+**Google-omschrijving:** Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik.
 
 **SKINBOOSTERS EN MESOTHERAPIE**
 
@@ -6790,7 +6790,7 @@ Vaak een kuur van drie, met twee tot vier weken ertussen.
 
 > knop: RRS Eyes kuur van drie € 350
 
-Werkzame stoffen op diepte, met een injector die niet met de hand meebeweegt.
+Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik.
 
 Draait op U225 intradermale injector
 
@@ -6842,9 +6842,9 @@ Vlak erna zie je kleine bultjes op de plek van elke prik. Die zakken doorgaans b
 
 Plan dit dus niet vlak voor iets waar je op de foto moet.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Brengt werkzame stoffen ín de huid in plaats van erop
 
@@ -6852,11 +6852,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Heeft een aparte booster voor pigment, zonneschade en melasma
 
-- Is geen filler. Er wordt niets opgevuld en er verandert niets aan je vorm
+- Voor volume of vorm is een filler het middel en niet dit
 
-- Werkt niet na één keer. Dit is een kuur en zo staat hij ook geprijsd
+- Dit is een kuur, dus je plant de sessies achter elkaar in
 
-- Doet niets aan huid die vooral zon nodig heeft te mijden. Zonder bescherming loopt pigment gewoon door
+- Zonder zonbescherming loopt pigment door, ook tijdens de kuur
 
 - HUIDVEROUDERING
 
@@ -6886,7 +6886,7 @@ Deze pagina vertelt wat skinboosters en mesotherapie doet. Of het bij jouw huid 
 
 **Tabbladtitel:** SkinPen Microneedling | Diba Clinics
 
-**Google-omschrijving:** Medisch gecertificeerd microneedlen. Werkt langzaam, op de laag waar structuur zit.
+**Google-omschrijving:** Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit.
 
 **SKINPEN MICRONEEDLING**
 
@@ -6916,7 +6916,7 @@ Een reeks van drie tot zes, met vier tot zes weken ertussen.
 
 > knop: Rug € 255
 
-Medisch gecertificeerd microneedlen. Werkt langzaam, op de laag waar structuur zit.
+Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit.
 
 Draait op SkinPen CIT
 
@@ -6958,7 +6958,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 - Behandelen per zone De diepte wordt per zone gekozen. Rond de ogen is de huid dunner.
 
-- Rust geven Daarna niets erop wat er niet op hoeft.
+- Rust geven Daarna alleen de producten die de behandelaar meegeeft.
 
 **Wat je ervan merkt in de stoel**
 
@@ -6968,9 +6968,9 @@ Direct erna ben je rood, ongeveer als een stevige zonnegloed, en voelt je huid w
 
 Wat je ziet komt niet die week. Bindweefsel bouwt zich over weken op, dus de vergelijking die telt is die met de meting van vóór de eerste sessie.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Werkt op littekens die door verlies van structuur zijn ontstaan
 
@@ -6978,11 +6978,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Bereikt de laag waar een peeling niet komt
 
-- Doet niets aan kleur op zichzelf
+- Voor kleur en pigment kies je laser of IPL
 
-- Werkt niet in één keer; een enkele sessie is geen halve behandeling maar geen behandeling
+- Een enkele sessie is te weinig; dit werkt in een reeks
 
-- Is niet geschikt bij actieve ontsteking
+- Bij een actieve ontsteking behandelen we die eerst
 
 - LITTEKENS EN STRIAE
 
@@ -7002,7 +7002,7 @@ Deze pagina vertelt wat skinpen microneedling doet. Of het bij jouw huid het jui
 
 **Tabbladtitel:** Voedingsintolerantietest | Diba Clinics
 
-**Google-omschrijving:** Dit is een test en geen huidbehandeling
+**Google-omschrijving:** Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert.
 
 **VOEDINGSINTOLERANTIETEST**
 
@@ -7022,11 +7022,11 @@ Geen.
 
 Eén keer
 
-Dit is een test en geen huidbehandeling
+Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert.
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom er niets gebeurt**
+**Wat het oplevert**
 
 Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen behandeling van de huid zelf, maar soms een verklaring voor wat er op de huid gebeurt.
 
@@ -7044,7 +7044,7 @@ Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen
 
 - Wachten op de uitslag De uitslag komt van het laboratorium en niet uit de behandelkamer.
 
-- Samen doornemen Wat er staat en wat het niet betekent. Dat tweede is bij dit soort tests het belangrijkste deel.
+- Samen doornemen Wat er in de uitslag staat en wat je ermee kunt. Daar gaat het gesprek over.
 
 **Wat je ervan merkt in de stoel**
 
@@ -7054,9 +7054,9 @@ De uitslag bespreken we in een aparte afspraak, want een lijst met waardes zonde
 
 Wat een intolerantietest wel en niet kan zeggen hoor je in dat gesprek, en ook als het antwoord is dat je er in jouw geval weinig aan hebt.
 
-**Wat deze test wel en niet aantoont**
+**Wat deze test aantoont**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Brengt in kaart op welke voedingsmiddelen je lichaam reageert
 
@@ -7064,11 +7064,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Levert een uitslag die je meeneemt, ook als je verder niets bij ons doet
 
-- Is geen allergietest en geen medische diagnose; daarvoor verwijzen we naar een arts
+- Voor een allergietest of een diagnose ben je bij een arts
 
-- Behandelt je huid niet. Er gebeurt hier niets aan je gezicht
+- Aan je huid zelf gebeurt hier niets; dat is een aparte afspraak
 
-- Geeft geen garantie dat je huid opknapt als je iets weglaat
+- Of je huid opknapt van weglaten, verschilt per persoon
 
 - ACNE
 
@@ -7096,7 +7096,7 @@ Deze pagina vertelt wat voedingsintolerantietest doet. Of het bij jouw huid het 
 
 **Tabbladtitel:** XL Hair | Diba Clinics
 
-**Google-omschrijving:** Tegen haaruitval en dunner wordend haar. Een traject van maanden, geen losse sessie.
+**Google-omschrijving:** Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid.
 
 **XL HAIR**
 
@@ -7126,7 +7126,7 @@ Zes sessies voor mannen, acht voor vrouwen
 
 > knop: Vrouwen, acht behandelingen plus Hair Restart € 1.300
 
-Tegen haaruitval en dunner wordend haar. Een traject van maanden, geen losse sessie.
+Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid.
 
 Draait op U225 intradermale injector
 
@@ -7174,11 +7174,11 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 Injecties in de hoofdhuid, met een injector die de diepte gelijk houdt. Het is een reeks prikjes die snel achter elkaar gaan; de hoofdhuid is gevoelig, en dat merk je vooral in de eerste minuut.
 
-Dit is een traject en geen losse sessie. Wat je ervan ziet komt over maanden, want haar groeit nu eenmaal niet sneller omdat je het graag wil.
+Dit is een traject en geen losse sessie. Haar groeit in cycli, dus het resultaat bouwt zich over maanden op.
 
-**Wat een behandeling met je huid doet**
+**Waar deze behandeling voor bedoeld is**
 
-Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
+Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
 
 - Richt zich op de haarzakjes en de doorbloeding van de hoofdhuid
 
@@ -7186,11 +7186,11 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Wordt afgestemd op je hoofdhuid en niet op een standaardschema
 
-- Brengt geen haar terug op plekken waar het zakje weg is
+- Waar het haarzakje weg is, komt geen haar terug
 
-- Is geen behandeling voor haaruitval met een medische oorzaak. Dat hoort bij een arts
+- Heeft de haaruitval een medische oorzaak, dan hoort dat bij een arts
 
-- Werkt niet als je stopt. Wat je hier opbouwt houd je bij of je verliest het weer
+- Wat je opbouwt houd je bij, anders loopt het weer terug
 
 - ALLE HUIDPROBLEMEN
 
@@ -7198,7 +7198,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 Wanneer zie ik verschil? +
 
-Niet binnen weken. Haar groeit in cycli en die laten zich niet opjagen, dus dit traject wordt in maanden gemeten.
+Reken op maanden. Haar groeit in cycli, en dit traject volgt die cycli.
 
 Waarom is het voor vrouwen duurder? +
 
@@ -8734,17 +8734,17 @@ Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de herstel
 
 Eerst kijken, nog niets doen.
 
-- Consult met EVE-M huidanalyse De nulmeting. De enige afspraak waarbij er niets aan je huid gebeurt. € 50 ▾
+- Consult met EVE-M huidanalyse De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. € 50 ▾
 
 Reinigen, hydrateren, oppervlakkig vernieuwen.
 
-- HydraFacial Reinigen, exfoliëren en hydrateren in één doorloop, met direct zichtbaar, geen hersteltijd. € 170 ▾
+- HydraFacial Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd. € 170 ▾
 
 - Oxygeneo glow Exfoliëren en zuurstof in de huid brengen, in één behandeling. € 150 ▾
 
-- Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Geen zuren, dus ook bij een gevoelige huid. € 150 ▾
+- Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. € 150 ▾
 
-- CooLift Cryo Therapy Bij CooLift wordt koude CO2 onder druk op de huid aangebracht. De behandeling duurt kort en kan de huid tijdelijk strakker laten aanvoelen. € 75 ▾
+- CooLift Cryo Therapy Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. € 75 ▾
 
 De bovenlaag sneller laten vernieuwen.
 
@@ -8752,13 +8752,13 @@ De bovenlaag sneller laten vernieuwen.
 
 Herstel op gang brengen in het bindweefsel.
 
-- SkinPen Microneedling Medisch gecertificeerd microneedlen. Werkt langzaam, op de laag waar structuur zit. € 180 ▾
+- SkinPen Microneedling Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit. € 180 ▾
 
-- Dermapen 4 Microneedling met trillende naaldjes. Zelfde principe, ander apparaat. € 180 ▾
+- Dermapen 4 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. € 180 ▾
 
 Werkzame stoffen op diepte brengen.
 
-- Skinboosters en mesotherapie Werkzame stoffen op diepte, met een injector die niet met de hand meebeweegt. € 175 ▾
+- Skinboosters en mesotherapie Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. € 175 ▾
 
 Mikken op kleur, vaten of structuur.
 
@@ -8766,11 +8766,11 @@ Mikken op kleur, vaten of structuur.
 
 - Nordlys IPL Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. € 75 ▾
 
-- Lumi 8 LED Deze behandeling met LED-licht gebruikt geen naalden of zuren en wordt meestal als aanvulling ingezet. € 30 ▾
+- Lumi 8 LED LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling. € 30 ▾
 
 Maanden werk aan hardnekkig pigment.
 
-- Cosmelan en dermamelan Een traject van maanden tegen hyperpigmentatie en melasma. Geen losse behandeling. € 550 ▾
+- Cosmelan en dermamelan Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. € 550 ▾
 
 - Happy Intim Peelings die pigment in de intieme zone en oksels lichter en egaler maken. € 175 ▾
 
@@ -8780,19 +8780,19 @@ De haarwortel uitschakelen.
 
 Wat er verder in de kliniek gebeurt.
 
-- NightLase Laser tegen snurken. Zonder operatie, zonder naalden, zonder beugel in je mond. Na de meting ▾
+- NightLase Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Na de meting ▾
 
-- XL Hair Tegen haaruitval en dunner wordend haar. Een traject van maanden, geen losse sessie. € 800 ▾
+- XL Hair Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. € 800 ▾
 
-- Acnetraject Een begeleid traject voor acne, met producten en controles. € 570 ▾
+- Acnetraject Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. € 570 ▾
 
-- Jongeren acne traject Dit begeleide programma van drie maanden is bedoeld voor jongeren tot en met 18 jaar. € 450 ▾
+- Jongeren acne traject Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. € 450 ▾
 
-- Littekentherapie Voor littekens na een operatie of keizersnede. Prijs naar lengte van het litteken. € 100 ▾
+- Littekentherapie Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. € 100 ▾
 
-- Fibromen verwijderen We verwijderen steelwratjes en rekenen de behandeltijd per kwartier in plaats van per wratje. € 30 ▾
+- Fibromen verwijderen Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. € 30 ▾
 
-- Voedingsintolerantietest Dit is een test en geen huidbehandeling € 300 ▾
+- Voedingsintolerantietest Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. € 300 ▾
 
 **Elke zone, met het tarief erbij.**
 
@@ -11675,4 +11675,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5405 tekstblokken · ongeveer 80.846 woorden._
+_105 pagina's · 5405 tekstblokken · ongeveer 80.830 woorden._

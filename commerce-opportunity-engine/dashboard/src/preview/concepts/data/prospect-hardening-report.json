@@ -1,0 +1,2936 @@
+{
+  "milestone": "M9.3.1",
+  "mode": "PROSPECT_FIRST_HARDENING",
+  "generatedAt": "2026-08-13T19:54:17.886Z",
+  "archetypeVersion": "IDEAL_PRODUCT_ARCHETYPES_V1",
+  "costs": {
+    "dataforseo": 0,
+    "anthropic": 0
+  },
+  "runWindow": "2026-08-13T18:50:00Z",
+  "summary": {
+    "rawDomains": 66,
+    "prospectEligible": 38,
+    "excluded": 28,
+    "excludedTooLatePreviously": 15,
+    "keywordsAnalyzed": 34,
+    "keywordsApprovedUnderNewLogic": 0,
+    "keywordsRejectedUnderNewLogic": 34,
+    "specialistYieldPercent": 58
+  },
+  "costReview": {
+    "serpCostPerKeyword": 0.004,
+    "totalSerpCost": 0.136,
+    "wastedSerpCost": 0.136,
+    "wastedSharePercent": 100,
+    "costPerUsefulProspect": 0.004,
+    "projectedCostPerUsefulProspect": null
+  },
+  "branches": {
+    "budgetShares": {
+      "BEAUTY_DEVICES": 0.191,
+      "SKINCARE_DEVICES": 0.128,
+      "WELLNESS_DEVICES": 0.149,
+      "RECOVERY_PRODUCTS": 0.106,
+      "SLEEP_COMFORT": 0.149,
+      "PET_TECH": 0.106,
+      "PREMIUM_PET": 0.085,
+      "NICHE_HOME_COMFORT": 0.085
+    },
+    "stats": [
+      {
+        "id": "BEAUTY_DEVICES",
+        "label": "Beauty Devices",
+        "enabled": true,
+        "keywordCategory": "BEAUTY_SKINCARE",
+        "budgetShare": 0.18,
+        "families": [
+          {
+            "id": "led_masks",
+            "label": "LED-maskers",
+            "seeds": [
+              "led masker gezicht",
+              "led lichttherapie masker",
+              "rood licht masker huid"
+            ]
+          },
+          {
+            "id": "microneedling_devices",
+            "label": "Microneedling & derma devices",
+            "seeds": [
+              "microneedling pen thuis",
+              "dermapen apparaat",
+              "derma roller professioneel"
+            ]
+          },
+          {
+            "id": "ipl_hair_removal",
+            "label": "IPL ontharing",
+            "seeds": [
+              "ipl apparaat ontharen",
+              "ipl ontharing thuis",
+              "laser ontharing apparaat"
+            ]
+          }
+        ],
+        "keywordsInRun": 0,
+        "keywordsApproved": 0,
+        "advertisersSampled": 0,
+        "specialistsFound": 0,
+        "specialistYield": 0,
+        "spend": 0,
+        "costPerPrequalifiedProspect": null,
+        "notes": "Hoge uitleg-behoefte, veel techniek, sterke hero-product logica."
+      },
+      {
+        "id": "SKINCARE_DEVICES",
+        "label": "Skincare Devices",
+        "enabled": true,
+        "keywordCategory": "BEAUTY_SKINCARE",
+        "budgetShare": 0.12,
+        "families": [
+          {
+            "id": "microcurrent",
+            "label": "Microcurrent & lifting devices",
+            "seeds": [
+              "microcurrent apparaat gezicht",
+              "lifting apparaat huid",
+              "radiofrequentie apparaat gezicht"
+            ]
+          },
+          {
+            "id": "cleansing_devices",
+            "label": "Reinigings- en huidverzorgingsapparaten",
+            "seeds": [
+              "reinigingsapparaat gezicht",
+              "ultrasoon spatel huid",
+              "hydradermabrasie apparaat thuis"
+            ]
+          }
+        ],
+        "keywordsInRun": 0,
+        "keywordsApproved": 0,
+        "advertisersSampled": 0,
+        "specialistsFound": 0,
+        "specialistYield": 0,
+        "spend": 0,
+        "costPerPrequalifiedProspect": null,
+        "notes": "Alleen devices. Losse serums en crèmes zijn reseller-terrein."
+      },
+      {
+        "id": "WELLNESS_DEVICES",
+        "label": "Wellness Devices",
+        "enabled": true,
+        "keywordCategory": "WELLNESS",
+        "budgetShare": 0.14,
+        "families": [
+          {
+            "id": "compression_therapy",
+            "label": "Compressietherapie",
+            "seeds": [
+              "compressie laarzen herstel",
+              "compressietherapie benen apparaat",
+              "lymfedrainage apparaat thuis"
+            ]
+          },
+          {
+            "id": "red_light_therapy",
+            "label": "Rood licht therapie panelen",
+            "seeds": [
+              "rood licht therapie paneel",
+              "infrarood paneel herstel",
+              "red light therapy lamp"
+            ]
+          },
+          {
+            "id": "sauna_ice_bath",
+            "label": "Infraroodsauna & ijsbad",
+            "seeds": [
+              "infrarood sauna thuis",
+              "ijsbad kopen herstel",
+              "sauna blanket kopen"
+            ]
+          }
+        ],
+        "keywordsInRun": 0,
+        "keywordsApproved": 0,
+        "advertisersSampled": 0,
+        "specialistsFound": 0,
+        "specialistYield": 0,
+        "spend": 0,
+        "costPerPrequalifiedProspect": null,
+        "notes": "Massagekussens en losse massage-apparaten zijn retailer-terrein, niet opnemen."
+      },
+      {
+        "id": "RECOVERY_PRODUCTS",
+        "label": "Recovery Products",
+        "enabled": true,
+        "keywordCategory": "WELLNESS",
+        "budgetShare": 0.1,
+        "families": [
+          {
+            "id": "percussion_therapy",
+            "label": "Massage guns & percussion",
+            "seeds": [
+              "massage gun professioneel",
+              "percussie massage apparaat sporters"
+            ]
+          },
+          {
+            "id": "recovery_wearables",
+            "label": "Herstel wearables",
+            "seeds": [
+              "herstel wearable slaap",
+              "ems apparaat spieren herstel"
+            ]
+          }
+        ],
+        "keywordsInRun": 0,
+        "keywordsApproved": 0,
+        "advertisersSampled": 0,
+        "specialistsFound": 0,
+        "specialistYield": 0,
+        "spend": 0,
+        "costPerPrequalifiedProspect": null,
+        "notes": "Alleen premium/specialistische recovery, geen commodity massagekussens."
+      },
+      {
+        "id": "SLEEP_COMFORT",
+        "label": "Sleep & Comfort",
+        "enabled": true,
+        "keywordCategory": "SLEEP",
+        "budgetShare": 0.14,
+        "families": [
+          {
+            "id": "ergonomic_pillows",
+            "label": "Ergonomische kussens",
+            "seeds": [
+              "ergonomisch hoofdkussen nekklachten",
+              "traagschuim kussen zijslaper"
+            ]
+          },
+          {
+            "id": "premium_mattress_systems",
+            "label": "Premium matrassystemen",
+            "seeds": [
+              "boxspring op maat kopen",
+              "pocketvering matras zijslaper"
+            ]
+          },
+          {
+            "id": "sleep_tech",
+            "label": "Slaaptechnologie",
+            "seeds": [
+              "slaaptracker kopen",
+              "wake up light lichtwekker",
+              "cooling topper actief"
+            ]
+          }
+        ],
+        "keywordsInRun": 2,
+        "keywordsApproved": 0,
+        "advertisersSampled": 11,
+        "specialistsFound": 2,
+        "specialistYield": 18,
+        "spend": 0.008,
+        "costPerPrequalifiedProspect": 0.004,
+        "notes": "Matras/kussen alleen met specialistische modifier, nooit generieke categorie."
+      },
+      {
+        "id": "PET_TECH",
+        "label": "Pet Tech",
+        "enabled": true,
+        "keywordCategory": "PETS",
+        "budgetShare": 0.1,
+        "families": [
+          {
+            "id": "automatic_feeders",
+            "label": "Automatische voer- en drinksystemen",
+            "seeds": [
+              "automatische voerbak kat camera",
+              "drinkfontein kat filter"
+            ]
+          },
+          {
+            "id": "smart_litter_doors",
+            "label": "Slimme kattenbakken & luiken",
+            "seeds": [
+              "zelfreinigende kattenbak",
+              "kattenluik met chip"
+            ]
+          },
+          {
+            "id": "pet_trackers",
+            "label": "GPS trackers voor huisdieren",
+            "seeds": [
+              "gps tracker hond abonnement",
+              "gps halsband kat"
+            ]
+          }
+        ],
+        "keywordsInRun": 1,
+        "keywordsApproved": 0,
+        "advertisersSampled": 7,
+        "specialistsFound": 1,
+        "specialistYield": 14,
+        "spend": 0.004,
+        "costPerPrequalifiedProspect": 0.004,
+        "notes": "Techniek plus uitleg, sterke deep-dive PDP logica."
+      },
+      {
+        "id": "PREMIUM_PET",
+        "label": "Premium Pet",
+        "enabled": true,
+        "keywordCategory": "PETS",
+        "budgetShare": 0.08,
+        "families": [
+          {
+            "id": "specialist_harnesses",
+            "label": "Specialistische tuigen",
+            "seeds": [
+              "y-tuig kleine hond anti trek",
+              "hulphonden tuig op maat"
+            ]
+          },
+          {
+            "id": "design_pet_furniture",
+            "label": "Design huisdiermeubels",
+            "seeds": [
+              "design hondenmand hout",
+              "kattenmeubel muurbevestiging design"
+            ]
+          }
+        ],
+        "keywordsInRun": 4,
+        "keywordsApproved": 0,
+        "advertisersSampled": 20,
+        "specialistsFound": 8,
+        "specialistYield": 40,
+        "spend": 0.016,
+        "costPerPrequalifiedProspect": 0.002,
+        "notes": "Alleen specialistisch en design, geen voer of commodity accessoires."
+      },
+      {
+        "id": "NICHE_HOME_COMFORT",
+        "label": "Niche Home Comfort",
+        "enabled": true,
+        "keywordCategory": "HOME_LIVING",
+        "budgetShare": 0.08,
+        "families": [
+          {
+            "id": "ergonomic_workspace",
+            "label": "Ergonomische werkplek",
+            "seeds": [
+              "ergonomische bureaustoel rugklachten",
+              "zit sta bureau elektrisch op maat"
+            ]
+          }
+        ],
+        "keywordsInRun": 0,
+        "keywordsApproved": 0,
+        "advertisersSampled": 0,
+        "specialistsFound": 0,
+        "specialistYield": 0,
+        "spend": 0,
+        "costPerPrequalifiedProspect": null,
+        "notes": "Luchtreiniging is bewust weggelaten: in M9.3 waren coolblue, mediamarkt en kruidvat daar dominant."
+      },
+      {
+        "id": "FITNESS_SPECIALIST",
+        "label": "Fitness / Equipment",
+        "enabled": false,
+        "keywordCategory": "FITNESS",
+        "budgetShare": 0.06,
+        "families": [
+          {
+            "id": "specialist_home_gym",
+            "label": "Specialistische home gym systemen",
+            "seeds": [
+              "smart home gym systeem",
+              "krachtstation op maat thuis"
+            ]
+          }
+        ],
+        "keywordsInRun": 0,
+        "keywordsApproved": 0,
+        "advertisersSampled": 0,
+        "specialistsFound": 0,
+        "specialistYield": 0,
+        "spend": 0,
+        "costPerPrequalifiedProspect": null,
+        "notes": "Uit op basis van M9.3 regressie: dumbbells, gewichten en matten zijn commodity en retailer-gedomineerd."
+      }
+    ]
+  },
+  "categories": [
+    {
+      "category": "PETS",
+      "keywords": 8,
+      "advertisers": 43,
+      "specialists": 15,
+      "specialistYield": 35,
+      "approvedUnderNewLogic": 0,
+      "spend": 0.032
+    },
+    {
+      "category": "SLEEP",
+      "keywords": 7,
+      "advertisers": 29,
+      "specialists": 9,
+      "specialistYield": 31,
+      "approvedUnderNewLogic": 0,
+      "spend": 0.028
+    },
+    {
+      "category": "BEAUTY_SKINCARE",
+      "keywords": 4,
+      "advertisers": 16,
+      "specialists": 5,
+      "specialistYield": 31,
+      "approvedUnderNewLogic": 0,
+      "spend": 0.016
+    },
+    {
+      "category": "FITNESS",
+      "keywords": 8,
+      "advertisers": 40,
+      "specialists": 10,
+      "specialistYield": 25,
+      "approvedUnderNewLogic": 0,
+      "spend": 0.032
+    },
+    {
+      "category": "WELLNESS",
+      "keywords": 6,
+      "advertisers": 29,
+      "specialists": 6,
+      "specialistYield": 21,
+      "approvedUnderNewLogic": 0,
+      "spend": 0.024
+    },
+    {
+      "category": "HOME_LIVING",
+      "keywords": 1,
+      "advertisers": 7,
+      "specialists": 0,
+      "specialistYield": 0,
+      "approvedUnderNewLogic": 0,
+      "spend": 0.004
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "zijde slaapmasker",
+      "category": "SLEEP",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 720,
+      "cpc": 1.5,
+      "commercialIntent": 90,
+      "prospectingValue": 4,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 3,
+      "brandsSpecialists": 2,
+      "retailers": 0,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 48,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "infshop.nl",
+        "zijdendekbed.nl",
+        "anwb.nl"
+      ]
+    },
+    {
+      "keyword": "la roche posay vitamine c serum",
+      "category": "BEAUTY_SKINCARE",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 260,
+      "cpc": 0.91,
+      "commercialIntent": 70,
+      "prospectingValue": 7,
+      "preGateClass": "PRODUCT_BRANDED_RESELLER",
+      "preGateAccepted": false,
+      "preGateReason": "merkproduct trekt resellers: \"la roche posay\"",
+      "advertisersSampled": 5,
+      "brandsSpecialists": 3,
+      "retailers": 1,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 46,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "merkproduct trekt resellers: \"la roche posay\"",
+      "previousIntent": "PRODUCT_BRANDED",
+      "previousProspectingValue": 85,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "apotheekendrogist.nl",
+        "douglas.nl",
+        "haarimport.nl",
+        "mijnhuidonline.nl",
+        "hellodrogist.nl"
+      ]
+    },
+    {
+      "keyword": "beste matras",
+      "category": "SLEEP",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 2400,
+      "cpc": 5.85,
+      "commercialIntent": 100,
+      "prospectingValue": 4,
+      "preGateClass": "REVIEW_RESEARCH",
+      "preGateAccepted": false,
+      "preGateReason": "research-modifier: \"beste\"",
+      "advertisersSampled": 3,
+      "brandsSpecialists": 1,
+      "retailers": 1,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 22,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "research-modifier: \"beste\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "lidl.nl",
+        "tempur.nl",
+        "mline.nl"
+      ]
+    },
+    {
+      "keyword": "infrarood massage",
+      "category": "WELLNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 70,
+      "cpc": 2.03,
+      "commercialIntent": 70,
+      "prospectingValue": 4,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 6,
+      "brandsSpecialists": 3,
+      "retailers": 2,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 16,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "kruidvat.nl",
+        "decathlon.nl",
+        "kieskeurig.nl",
+        "orangeshop.eu",
+        "nordichigh.nl",
+        "thuiszorgwebshop.nl"
+      ]
+    },
+    {
+      "keyword": "silvana hoofdkussen",
+      "category": "SLEEP",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 1900,
+      "cpc": 1.65,
+      "commercialIntent": 90,
+      "prospectingValue": 4,
+      "preGateClass": "PRODUCT_BRANDED_RESELLER",
+      "preGateAccepted": false,
+      "preGateReason": "merkproduct trekt resellers: \"silvana\"",
+      "advertisersSampled": 5,
+      "brandsSpecialists": 2,
+      "retailers": 0,
+      "comparison": 2,
+      "marketplaces": 0,
+      "prospectSerpQuality": 15,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "merkproduct trekt resellers: \"silvana\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "matrasshop.com",
+        "beslist.nl",
+        "bedbedbed.nl",
+        "vergelijk.nl",
+        "wolterswonen.nl"
+      ]
+    },
+    {
+      "keyword": "5 kg gewichten",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 7,
+      "searchVolume": 390,
+      "cpc": 0.49,
+      "commercialIntent": 60,
+      "prospectingValue": 2,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 2,
+      "retailers": 1,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 15,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "decathlon.nl",
+        "gorillagrip.nl",
+        "apuls24.nl",
+        "beslist.nl"
+      ]
+    },
+    {
+      "keyword": "honden y-tuig",
+      "category": "PETS",
+      "archetype": "Premium Pet",
+      "family": "Specialistische tuigen",
+      "archetypeFit": 74,
+      "searchVolume": 170,
+      "cpc": 0.58,
+      "commercialIntent": 60,
+      "prospectingValue": 83,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "preGateAccepted": true,
+      "preGateReason": null,
+      "advertisersSampled": 6,
+      "brandsSpecialists": 3,
+      "retailers": 1,
+      "comparison": 2,
+      "marketplaces": 0,
+      "prospectSerpQuality": 14,
+      "status": "LOW_SPECIALIST_YIELD",
+      "stopReason": "prospect SERP quality 14 onder drempel 45",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "kieskeurig.nl",
+        "vergelijkeven.nl",
+        "dibozoo.nl",
+        "welkoop.nl",
+        "dogsen.nl",
+        "hovawartenzo.nl"
+      ]
+    },
+    {
+      "keyword": "y tuig voor hond",
+      "category": "PETS",
+      "archetype": "Premium Pet",
+      "family": "Specialistische tuigen",
+      "archetypeFit": 74,
+      "searchVolume": 10,
+      "cpc": 0.84,
+      "commercialIntent": 50,
+      "prospectingValue": 81,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "preGateAccepted": true,
+      "preGateReason": null,
+      "advertisersSampled": 6,
+      "brandsSpecialists": 3,
+      "retailers": 1,
+      "comparison": 2,
+      "marketplaces": 0,
+      "prospectSerpQuality": 14,
+      "status": "LOW_SPECIALIST_YIELD",
+      "stopReason": "prospect SERP quality 14 onder drempel 45",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "verenadierenartikelen.nl",
+        "kieskeurig.nl",
+        "dogsen.nl",
+        "vergelijkeven.nl",
+        "lovelance.nl",
+        "welkoop.nl"
+      ]
+    },
+    {
+      "keyword": "la roche posay vitamin c serum",
+      "category": "BEAUTY_SKINCARE",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 260,
+      "cpc": 1.11,
+      "commercialIntent": 70,
+      "prospectingValue": 7,
+      "preGateClass": "PRODUCT_BRANDED_RESELLER",
+      "preGateAccepted": false,
+      "preGateReason": "merkproduct trekt resellers: \"la roche posay\"",
+      "advertisersSampled": 6,
+      "brandsSpecialists": 2,
+      "retailers": 3,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 10,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "merkproduct trekt resellers: \"la roche posay\"",
+      "previousIntent": "PRODUCT_BRANDED",
+      "previousProspectingValue": 85,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "haarimport.nl",
+        "mijnhuidonline.nl",
+        "douglas.nl",
+        "apotheekendrogist.nl",
+        "viata.nl",
+        "promofarma.com"
+      ]
+    },
+    {
+      "keyword": "voerbak hond op standaard",
+      "category": "PETS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 590,
+      "cpc": 0.58,
+      "commercialIntent": 70,
+      "prospectingValue": 7,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 7,
+      "brandsSpecialists": 3,
+      "retailers": 1,
+      "comparison": 2,
+      "marketplaces": 0,
+      "prospectSerpQuality": 9,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "zooplus.nl",
+        "agrishop.nl",
+        "beslist.nl",
+        "nodoubtdeal.com",
+        "brekz.nl",
+        "kieskeurig.nl"
+      ]
+    },
+    {
+      "keyword": "hoofdkussen zijslaper",
+      "category": "SLEEP",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 1900,
+      "cpc": 1.96,
+      "commercialIntent": 90,
+      "prospectingValue": 4,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 5,
+      "brandsSpecialists": 2,
+      "retailers": 3,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 6,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "kruidvat.nl",
+        "dekbed-discounter.nl",
+        "lidl.nl",
+        "smulderstextiel.nl",
+        "hema.nl"
+      ]
+    },
+    {
+      "keyword": "hondentuig welkoop",
+      "category": "PETS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 140,
+      "cpc": 0.28,
+      "commercialIntent": 50,
+      "prospectingValue": 4,
+      "preGateClass": "RETAILER_BRANDED",
+      "preGateAccepted": false,
+      "preGateReason": "retailer in keyword: \"welkoop\"",
+      "advertisersSampled": 5,
+      "brandsSpecialists": 2,
+      "retailers": 3,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 6,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "retailer in keyword: \"welkoop\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "lidl.nl",
+        "decathlon.nl",
+        "medpets.nl",
+        "welovehunter.com",
+        "welkoop.nl"
+      ]
+    },
+    {
+      "keyword": "verstelbare dumbbells",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 0,
+      "searchVolume": 5400,
+      "cpc": 1.02,
+      "commercialIntent": 90,
+      "prospectingValue": 0,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 9,
+      "brandsSpecialists": 4,
+      "retailers": 2,
+      "comparison": 3,
+      "marketplaces": 0,
+      "prospectSerpQuality": 6,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "decathlon.nl",
+        "lidl.nl",
+        "ivol.nl",
+        "betersport.nl",
+        "vergelijkeven.nl",
+        "beslist.nl"
+      ]
+    },
+    {
+      "keyword": "la roche posay niacinamide serum",
+      "category": "BEAUTY_SKINCARE",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 70,
+      "cpc": 0.41,
+      "commercialIntent": 50,
+      "prospectingValue": 7,
+      "preGateClass": "PRODUCT_BRANDED_RESELLER",
+      "preGateAccepted": false,
+      "preGateReason": "merkproduct trekt resellers: \"la roche posay\"",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 0,
+      "retailers": 4,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "merkproduct trekt resellers: \"la roche posay\"",
+      "previousIntent": "PRODUCT_BRANDED",
+      "previousProspectingValue": 94,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "viata.nl",
+        "notino.nl",
+        "lookfantastic.nl",
+        "ubuy.co.nl"
+      ]
+    },
+    {
+      "keyword": "la roche-posay retinol b3 serum",
+      "category": "BEAUTY_SKINCARE",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 880,
+      "cpc": 0.99,
+      "commercialIntent": 80,
+      "prospectingValue": 7,
+      "preGateClass": "PRODUCT_BRANDED_RESELLER",
+      "preGateAccepted": false,
+      "preGateReason": "merkproduct trekt resellers: \"la roche-posay\"",
+      "advertisersSampled": 1,
+      "brandsSpecialists": 0,
+      "retailers": 1,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "merkproduct trekt resellers: \"la roche-posay\"",
+      "previousIntent": "PRODUCT_BRANDED",
+      "previousProspectingValue": 85,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "promofarma.com"
+      ]
+    },
+    {
+      "keyword": "kattenmand muurbevestiging",
+      "category": "PETS",
+      "archetype": "Premium Pet",
+      "family": "Design huisdiermeubels",
+      "archetypeFit": 72,
+      "searchVolume": 140,
+      "cpc": 0.63,
+      "commercialIntent": 60,
+      "prospectingValue": 82,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "preGateAccepted": true,
+      "preGateReason": null,
+      "advertisersSampled": 7,
+      "brandsSpecialists": 2,
+      "retailers": 2,
+      "comparison": 2,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "LOW_SPECIALIST_YIELD",
+      "stopReason": "prospect SERP quality 0 onder drempel 45",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "beslist.nl",
+        "vergelijkeven.nl",
+        "agrishop.nl",
+        "zooplus.nl",
+        "home24.nl",
+        "praktischhond.com"
+      ]
+    },
+    {
+      "keyword": "hunter hondentuig",
+      "category": "PETS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 390,
+      "cpc": 0.53,
+      "commercialIntent": 60,
+      "prospectingValue": 4,
+      "preGateClass": "PRODUCT_BRANDED_RESELLER",
+      "preGateAccepted": false,
+      "preGateReason": "merkproduct trekt resellers: \"hunter\"",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 1,
+      "retailers": 1,
+      "comparison": 2,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "merkproduct trekt resellers: \"hunter\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "welovehunter.com",
+        "beslist.nl",
+        "vergelijk.nl",
+        "zooplus.nl"
+      ]
+    },
+    {
+      "keyword": "onderrug massage apparaat",
+      "category": "WELLNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 170,
+      "cpc": 0.62,
+      "commercialIntent": 60,
+      "prospectingValue": 7,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 2,
+      "brandsSpecialists": 0,
+      "retailers": 2,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "kruidvat.nl",
+        "coolblue.nl"
+      ]
+    },
+    {
+      "keyword": "benen massage apparaat",
+      "category": "WELLNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 320,
+      "cpc": 0.45,
+      "commercialIntent": 60,
+      "prospectingValue": 7,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 0,
+      "retailers": 3,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "coolblue.nl",
+        "lidl.nl",
+        "kruidvat.nl",
+        "vergelijk.nl"
+      ]
+    },
+    {
+      "keyword": "luchtbevochtiger slaapkamer",
+      "category": "HOME_LIVING",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 1900,
+      "cpc": 0.9,
+      "commercialIntent": 80,
+      "prospectingValue": 4,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 7,
+      "brandsSpecialists": 0,
+      "retailers": 4,
+      "comparison": 3,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "coolblue.nl",
+        "mediamarkt.nl",
+        "kieskeurig.nl",
+        "beslist.nl",
+        "kruidvat.nl",
+        "hornbach.nl"
+      ]
+    },
+    {
+      "keyword": "gewichten kopen",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 0,
+      "searchVolume": 1600,
+      "cpc": 0.71,
+      "commercialIntent": 70,
+      "prospectingValue": 0,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 3,
+      "brandsSpecialists": 0,
+      "retailers": 2,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "decathlon.nl",
+        "kruidvat.nl",
+        "beslist.nl"
+      ]
+    },
+    {
+      "keyword": "infrarood massage matras",
+      "category": "WELLNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 50,
+      "cpc": 0.52,
+      "commercialIntent": 50,
+      "prospectingValue": 7,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 1,
+      "retailers": 2,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "nordichigh.nl",
+        "kieskeurig.nl",
+        "kruidvat.nl",
+        "decathlon.nl"
+      ]
+    },
+    {
+      "keyword": "decathlon fitness mat",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 7,
+      "searchVolume": 170,
+      "cpc": 0.17,
+      "commercialIntent": 50,
+      "prospectingValue": 2,
+      "preGateClass": "RETAILER_BRANDED",
+      "preGateAccepted": false,
+      "preGateReason": "retailer in keyword: \"decathlon\"",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 0,
+      "retailers": 1,
+      "comparison": 3,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "retailer in keyword: \"decathlon\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "beslist.nl",
+        "decathlon.nl",
+        "vergelijk.nl",
+        "kieskeurig.nl"
+      ]
+    },
+    {
+      "keyword": "beste topper matras",
+      "category": "SLEEP",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 1300,
+      "cpc": 3.95,
+      "commercialIntent": 90,
+      "prospectingValue": 7,
+      "preGateClass": "REVIEW_RESEARCH",
+      "preGateAccepted": false,
+      "preGateReason": "research-modifier: \"beste\"",
+      "advertisersSampled": 2,
+      "brandsSpecialists": 0,
+      "retailers": 1,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "research-modifier: \"beste\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "kieskeurig.nl",
+        "lidl.nl"
+      ]
+    },
+    {
+      "keyword": "traagschuim matras 90x200",
+      "category": "SLEEP",
+      "archetype": "Sleep & Comfort",
+      "family": "Premium matrassystemen",
+      "archetypeFit": 67,
+      "searchVolume": 260,
+      "cpc": 2.01,
+      "commercialIntent": 80,
+      "prospectingValue": 82,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "preGateAccepted": true,
+      "preGateReason": null,
+      "advertisersSampled": 6,
+      "brandsSpecialists": 1,
+      "retailers": 4,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "RETAILER_DOMINATED",
+      "stopReason": "83% retailers, marketplaces en vergelijkers",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "matrasdirect.nl",
+        "vergelijkeven.nl",
+        "metalenbed.nl",
+        "vente-unique.nl",
+        "praxis.nl",
+        "lidl.nl"
+      ]
+    },
+    {
+      "keyword": "kat automatische voerbak",
+      "category": "PETS",
+      "archetype": "Pet Tech",
+      "family": "Automatische voer- en drinksystemen",
+      "archetypeFit": 84,
+      "searchVolume": 110,
+      "cpc": 1.37,
+      "commercialIntent": 70,
+      "prospectingValue": 93,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "preGateAccepted": true,
+      "preGateReason": null,
+      "advertisersSampled": 7,
+      "brandsSpecialists": 1,
+      "retailers": 2,
+      "comparison": 4,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "COMPARISON_DOMINATED",
+      "stopReason": "57% vergelijkers in de sample",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "vergelijk.nl",
+        "mediamarkt.nl",
+        "zooplus.nl",
+        "beslist.nl",
+        "kattenluiken.nl",
+        "vergelijkeven.nl"
+      ]
+    },
+    {
+      "keyword": "hulphonden tuig",
+      "category": "PETS",
+      "archetype": "Premium Pet",
+      "family": "Specialistische tuigen",
+      "archetypeFit": 74,
+      "searchVolume": 170,
+      "cpc": 0.42,
+      "commercialIntent": 60,
+      "prospectingValue": 83,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "preGateAccepted": true,
+      "preGateReason": null,
+      "advertisersSampled": 1,
+      "brandsSpecialists": 0,
+      "retailers": 1,
+      "comparison": 0,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "RETAILER_DOMINATED",
+      "stopReason": "100% retailers, marketplaces en vergelijkers",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "zooplus.nl"
+      ]
+    },
+    {
+      "keyword": "extra large yoga mat",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 7,
+      "searchVolume": 10,
+      "cpc": 0.41,
+      "commercialIntent": 40,
+      "prospectingValue": 2,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 3,
+      "brandsSpecialists": 0,
+      "retailers": 1,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "decathlon.nl",
+        "nodoubtdeal.com",
+        "beslist.nl"
+      ]
+    },
+    {
+      "keyword": "fitness mat decathlon",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 7,
+      "searchVolume": 170,
+      "cpc": 0.17,
+      "commercialIntent": 50,
+      "prospectingValue": 2,
+      "preGateClass": "RETAILER_BRANDED",
+      "preGateAccepted": false,
+      "preGateReason": "retailer in keyword: \"decathlon\"",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 0,
+      "retailers": 1,
+      "comparison": 3,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "retailer in keyword: \"decathlon\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "decathlon.nl",
+        "vergelijk.nl",
+        "kieskeurig.nl",
+        "beslist.nl"
+      ]
+    },
+    {
+      "keyword": "fitness apparatuur",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 0,
+      "searchVolume": 2900,
+      "cpc": 1.65,
+      "commercialIntent": 100,
+      "prospectingValue": 0,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 8,
+      "brandsSpecialists": 3,
+      "retailers": 2,
+      "comparison": 3,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "fitshop.nl",
+        "decathlon.nl",
+        "fitnessdigital.nl",
+        "betersport.nl",
+        "kieskeurig.nl",
+        "beslist.nl"
+      ]
+    },
+    {
+      "keyword": "massagekussen infrarood",
+      "category": "WELLNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 13,
+      "searchVolume": 110,
+      "cpc": 0.47,
+      "commercialIntent": 60,
+      "prospectingValue": 4,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 9,
+      "brandsSpecialists": 2,
+      "retailers": 3,
+      "comparison": 4,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "kruidvat.nl",
+        "vergelijkeven.nl",
+        "decathlon.nl",
+        "orangeshop.eu",
+        "beslist.nl",
+        "kieskeurig.nl"
+      ]
+    },
+    {
+      "keyword": "verstelbare gewichten",
+      "category": "FITNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 0,
+      "searchVolume": 210,
+      "cpc": 0.71,
+      "commercialIntent": 60,
+      "prospectingValue": 0,
+      "preGateClass": "GENERIC_CATEGORY",
+      "preGateAccepted": false,
+      "preGateReason": "past in geen enkele productfamilie",
+      "advertisersSampled": 5,
+      "brandsSpecialists": 1,
+      "retailers": 1,
+      "comparison": 3,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "past in geen enkele productfamilie",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "vergelijkeven.nl",
+        "decathlon.nl",
+        "kieskeurig.nl",
+        "betersport.nl",
+        "vergelijk.nl"
+      ]
+    },
+    {
+      "keyword": "ergonomisch hoofdkussen",
+      "category": "SLEEP",
+      "archetype": "Sleep & Comfort",
+      "family": "Ergonomische kussens",
+      "archetypeFit": 74,
+      "searchVolume": 590,
+      "cpc": 1.59,
+      "commercialIntent": 90,
+      "prospectingValue": 89,
+      "preGateClass": "NON_BRANDED_SPECIFIC_PRODUCT",
+      "preGateAccepted": true,
+      "preGateReason": null,
+      "advertisersSampled": 5,
+      "brandsSpecialists": 1,
+      "retailers": 2,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "RETAILER_DOMINATED",
+      "stopReason": "60% retailers, marketplaces en vergelijkers",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "lidl.nl",
+        "kieskeurig.nl",
+        "kruidvat.nl",
+        "anwb.nl",
+        "quiesco.nl"
+      ]
+    },
+    {
+      "keyword": "beste nek massage apparaat",
+      "category": "WELLNESS",
+      "archetype": null,
+      "family": null,
+      "archetypeFit": 22,
+      "searchVolume": 320,
+      "cpc": 0.68,
+      "commercialIntent": 60,
+      "prospectingValue": 7,
+      "preGateClass": "REVIEW_RESEARCH",
+      "preGateAccepted": false,
+      "preGateReason": "research-modifier: \"beste\"",
+      "advertisersSampled": 4,
+      "brandsSpecialists": 0,
+      "retailers": 3,
+      "comparison": 1,
+      "marketplaces": 0,
+      "prospectSerpQuality": 0,
+      "status": "PRE_GATE_REJECTED",
+      "stopReason": "research-modifier: \"beste\"",
+      "previousIntent": "NON_BRANDED_PRODUCT",
+      "previousProspectingValue": 100,
+      "wouldRunDiscovery": false,
+      "exampleAdvertisers": [
+        "beslist.nl",
+        "kruidvat.nl",
+        "decathlon.nl",
+        "mediamarkt.nl"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "domain": "smulderstextiel.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "antoniodesignoribus.com",
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "NON_COMMERCE",
+      "eligible": false,
+      "reason": "non_ecommerce",
+      "evidence": [
+        "geen webshop gedetecteerd"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "agrishop.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "kruidvat.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 4,
+      "keywordSpread": 10,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "lidl.nl",
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"lidl\""
+      ],
+      "categorySpread": 4,
+      "keywordSpread": 8,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "zooplus.nl",
+      "previousBusinessType": "UNKNOWN",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"zooplus\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 5,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "wolterswonen.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "nordichigh.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "notino.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "hellodrogist.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "thuiszorgwebshop.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "beslist.nl",
+      "previousBusinessType": "COMPARISON_SITE",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "COMPARISON_SITE",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=COMPARISON_SITE"
+      ],
+      "categorySpread": 5,
+      "keywordSpread": 15,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "orangeshop.eu",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "mijnhuidonline.nl",
+      "previousBusinessType": "UNKNOWN",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "UNKNOWN",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als UNKNOWN"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "fitnesskoerier.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "anwb.nl",
+      "previousBusinessType": "SERVICE_BUSINESS",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_scale",
+      "evidence": [
+        "retailer_scale_score=70"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "praktischhond.com",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "betersport.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 3,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "gorillagrip.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "apuls24.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "douglas.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "verenadierenartikelen.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "vergelijkeven.nl",
+      "previousBusinessType": "UNKNOWN",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "COMPARISON_SITE",
+      "eligible": false,
+      "reason": "comparison_site_signal",
+      "evidence": [
+        "vergelijker-signaal in domein: \"vergelijk\""
+      ],
+      "categorySpread": 5,
+      "keywordSpread": 9,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "decathlon.nl",
+      "previousBusinessType": "SERVICE_BUSINESS",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"decathlon\""
+      ],
+      "categorySpread": 3,
+      "keywordSpread": 13,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "zijdendekbed.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "matrasshop.com",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "bedbedbed.nl",
+      "previousBusinessType": "UNKNOWN",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "UNKNOWN",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als UNKNOWN"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "fitshop.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "ivol.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "zoomalia.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "fitnessdigital.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "nodoubtdeal.com",
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "NON_COMMERCE",
+      "eligible": false,
+      "reason": "non_ecommerce",
+      "evidence": [
+        "geen webshop gedetecteerd"
+      ],
+      "categorySpread": 2,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "vergelijk.nl",
+      "previousBusinessType": "COMPARISON_SITE",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "COMPARISON_SITE",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=COMPARISON_SITE"
+      ],
+      "categorySpread": 4,
+      "keywordSpread": 9,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "home24.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"home24\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "apotheekendrogist.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "hema.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "promofarma.com",
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"promofarma\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "welkoop.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"welkoop\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 3,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "coolblue.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"coolblue\""
+      ],
+      "categorySpread": 2,
+      "keywordSpread": 3,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "mediamarkt.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"mediamarkt\""
+      ],
+      "categorySpread": 3,
+      "keywordSpread": 4,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "haarimport.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "lookfantastic.nl",
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"lookfantastic\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "kieskeurig.nl",
+      "previousBusinessType": "COMPARISON_SITE",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "COMPARISON_SITE",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=COMPARISON_SITE"
+      ],
+      "categorySpread": 5,
+      "keywordSpread": 15,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "ubuy.co.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "viata.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"viata\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "dekbed-discounter.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "UNKNOWN",
+      "eligible": false,
+      "reason": "manual_excluded",
+      "evidence": [
+        "manueel uitgesloten"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "brekz.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "dibozoo.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "infshop.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "hornbach.nl",
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"hornbach\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "fitwinkel.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "medpets.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "welovehunter.com",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "matrasdirect.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "praxis.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"praxis\""
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "mline.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "tempur.nl",
+      "previousBusinessType": "UNKNOWN",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "UNKNOWN",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als UNKNOWN"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "vente-unique.nl",
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "GENERAL_RETAILER",
+      "eligible": false,
+      "reason": "excluded_business_type",
+      "evidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "dogsen.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 2,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "kattenluiken.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "sportbay.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "bolusso.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "metalenbed.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "hovawartenzo.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "lovelance.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "quiesco.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 1,
+      "keywordSpread": 1,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "tensfact.com",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 0,
+      "keywordSpread": 0,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "auveyaskin.com",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 0,
+      "keywordSpread": 0,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "huidproducten.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 0,
+      "keywordSpread": 0,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "currentbody.nl",
+      "previousBusinessType": "BRAND",
+      "previousEligibility": "LEAD_ELIGIBLE",
+      "prospectClass": "NICHE_BRAND",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als NICHE_BRAND"
+      ],
+      "categorySpread": 0,
+      "keywordSpread": 0,
+      "previouslyPrequalified": false
+    },
+    {
+      "domain": "k-skincare.nl",
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "SPECIALIST",
+      "eligible": true,
+      "reason": null,
+      "evidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "categorySpread": 0,
+      "keywordSpread": 0,
+      "previouslyPrequalified": true
+    },
+    {
+      "domain": "asos.com",
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "prospectClass": "MASS_RETAILER",
+      "eligible": false,
+      "reason": "mass_retail_operator",
+      "evidence": [
+        "bekende ketenretailer: \"asos\""
+      ],
+      "categorySpread": 0,
+      "keywordSpread": 0,
+      "previouslyPrequalified": false
+    }
+  ],
+  "existingPool": {
+    "judged": 6,
+    "excluded": 1
+  },
+  "rootCause": [
+    {
+      "domain": "decathlon.nl",
+      "producedByKeywords": [
+        "hondentuig welkoop",
+        "gewichten kopen",
+        "decathlon fitness mat",
+        "extra large yoga mat",
+        "fitness mat decathlon",
+        "infrarood massage",
+        "fitness apparatuur",
+        "5 kg gewichten",
+        "massagekussen infrarood",
+        "verstelbare dumbbells",
+        "verstelbare gewichten",
+        "beste nek massage apparaat",
+        "infrarood massage matras"
+      ],
+      "previousBusinessType": "SERVICE_BUSINESS",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "newProspectClass": "MASS_RETAILER",
+      "newReason": "mass_retail_operator",
+      "newEvidence": [
+        "bekende ketenretailer: \"decathlon\""
+      ],
+      "keywordsNowBlocked": 13,
+      "keywordsTotal": 13
+    },
+    {
+      "domain": "kruidvat.nl",
+      "producedByKeywords": [
+        "hoofdkussen zijslaper",
+        "onderrug massage apparaat",
+        "gewichten kopen",
+        "infrarood massage",
+        "massagekussen infrarood",
+        "ergonomisch hoofdkussen",
+        "beste nek massage apparaat",
+        "luchtbevochtiger slaapkamer",
+        "benen massage apparaat",
+        "infrarood massage matras"
+      ],
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "newProspectClass": "GENERAL_RETAILER",
+      "newReason": "excluded_business_type",
+      "newEvidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "keywordsNowBlocked": 10,
+      "keywordsTotal": 10
+    },
+    {
+      "domain": "beslist.nl",
+      "producedByKeywords": [
+        "voerbak hond op standaard",
+        "kattenmand muurbevestiging",
+        "hunter hondentuig",
+        "decathlon fitness mat",
+        "kat automatische voerbak",
+        "fitness mat decathlon",
+        "fitness apparatuur",
+        "massagekussen infrarood",
+        "verstelbare dumbbells",
+        "silvana hoofdkussen",
+        "beste nek massage apparaat",
+        "luchtbevochtiger slaapkamer",
+        "gewichten kopen",
+        "extra large yoga mat",
+        "5 kg gewichten"
+      ],
+      "previousBusinessType": "COMPARISON_SITE",
+      "previousEligibility": "EXCLUDED",
+      "newProspectClass": "COMPARISON_SITE",
+      "newReason": "excluded_business_type",
+      "newEvidence": [
+        "business_type=COMPARISON_SITE"
+      ],
+      "keywordsNowBlocked": 15,
+      "keywordsTotal": 15
+    },
+    {
+      "domain": "vergelijk.nl",
+      "producedByKeywords": [
+        "kat automatische voerbak",
+        "decathlon fitness mat",
+        "fitness mat decathlon",
+        "fitness apparatuur",
+        "verstelbare gewichten",
+        "silvana hoofdkussen",
+        "hunter hondentuig",
+        "benen massage apparaat",
+        "massagekussen infrarood"
+      ],
+      "previousBusinessType": "COMPARISON_SITE",
+      "previousEligibility": "EXCLUDED",
+      "newProspectClass": "COMPARISON_SITE",
+      "newReason": "excluded_business_type",
+      "newEvidence": [
+        "business_type=COMPARISON_SITE"
+      ],
+      "keywordsNowBlocked": 9,
+      "keywordsTotal": 9
+    },
+    {
+      "domain": "vergelijkeven.nl",
+      "producedByKeywords": [
+        "kattenmand muurbevestiging",
+        "traagschuim matras 90x200",
+        "honden y-tuig",
+        "y tuig voor hond",
+        "massagekussen infrarood",
+        "verstelbare dumbbells",
+        "verstelbare gewichten",
+        "luchtbevochtiger slaapkamer",
+        "kat automatische voerbak"
+      ],
+      "previousBusinessType": "UNKNOWN",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "newProspectClass": "COMPARISON_SITE",
+      "newReason": "comparison_site_signal",
+      "newEvidence": [
+        "vergelijker-signaal in domein: \"vergelijk\""
+      ],
+      "keywordsNowBlocked": 9,
+      "keywordsTotal": 9
+    },
+    {
+      "domain": "kieskeurig.nl",
+      "producedByKeywords": [
+        "voerbak hond op standaard",
+        "beste topper matras",
+        "honden y-tuig",
+        "y tuig voor hond",
+        "fitness mat decathlon",
+        "infrarood massage",
+        "fitness apparatuur",
+        "massagekussen infrarood",
+        "verstelbare gewichten",
+        "ergonomisch hoofdkussen",
+        "luchtbevochtiger slaapkamer",
+        "infrarood massage matras",
+        "kat automatische voerbak",
+        "decathlon fitness mat",
+        "verstelbare dumbbells"
+      ],
+      "previousBusinessType": "COMPARISON_SITE",
+      "previousEligibility": "EXCLUDED",
+      "newProspectClass": "COMPARISON_SITE",
+      "newReason": "excluded_business_type",
+      "newEvidence": [
+        "business_type=COMPARISON_SITE"
+      ],
+      "keywordsNowBlocked": 15,
+      "keywordsTotal": 15
+    },
+    {
+      "domain": "lidl.nl",
+      "producedByKeywords": [
+        "hondentuig welkoop",
+        "beste topper matras",
+        "beste matras",
+        "hoofdkussen zijslaper",
+        "verstelbare dumbbells",
+        "ergonomisch hoofdkussen",
+        "benen massage apparaat",
+        "traagschuim matras 90x200"
+      ],
+      "previousBusinessType": "NON_ECOMMERCE",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "newProspectClass": "MASS_RETAILER",
+      "newReason": "mass_retail_operator",
+      "newEvidence": [
+        "bekende ketenretailer: \"lidl\""
+      ],
+      "keywordsNowBlocked": 8,
+      "keywordsTotal": 8
+    },
+    {
+      "domain": "douglas.nl",
+      "producedByKeywords": [
+        "la roche posay vitamine c serum",
+        "la roche posay vitamin c serum"
+      ],
+      "previousBusinessType": "GENERAL_RETAILER",
+      "previousEligibility": "EXCLUDED",
+      "newProspectClass": "GENERAL_RETAILER",
+      "newReason": "excluded_business_type",
+      "newEvidence": [
+        "business_type=GENERAL_RETAILER"
+      ],
+      "keywordsNowBlocked": 2,
+      "keywordsTotal": 2
+    },
+    {
+      "domain": "zooplus.nl",
+      "producedByKeywords": [
+        "voerbak hond op standaard",
+        "kat automatische voerbak",
+        "hulphonden tuig",
+        "kattenmand muurbevestiging",
+        "hunter hondentuig"
+      ],
+      "previousBusinessType": "UNKNOWN",
+      "previousEligibility": "PENDING_QUALIFICATION",
+      "newProspectClass": "MASS_RETAILER",
+      "newReason": "mass_retail_operator",
+      "newEvidence": [
+        "bekende ketenretailer: \"zooplus\""
+      ],
+      "keywordsNowBlocked": 5,
+      "keywordsTotal": 5
+    },
+    {
+      "domain": "betersport.nl",
+      "producedByKeywords": [
+        "fitness apparatuur",
+        "verstelbare dumbbells",
+        "verstelbare gewichten"
+      ],
+      "previousBusinessType": "SPECIALIST_WEBSHOP",
+      "previousEligibility": "EXCLUDED",
+      "newProspectClass": "SPECIALIST",
+      "newReason": null,
+      "newEvidence": [
+        "prospect eligible als SPECIALIST"
+      ],
+      "keywordsNowBlocked": 3,
+      "keywordsTotal": 3
+    }
+  ],
+  "unmatchedKeywords": [
+    "zijde slaapmasker",
+    "la roche posay vitamine c serum",
+    "beste matras",
+    "infrarood massage",
+    "silvana hoofdkussen",
+    "5 kg gewichten",
+    "la roche posay vitamin c serum",
+    "voerbak hond op standaard",
+    "hoofdkussen zijslaper",
+    "hondentuig welkoop",
+    "verstelbare dumbbells",
+    "la roche posay niacinamide serum",
+    "la roche-posay retinol b3 serum",
+    "hunter hondentuig",
+    "onderrug massage apparaat",
+    "benen massage apparaat",
+    "luchtbevochtiger slaapkamer",
+    "gewichten kopen",
+    "infrarood massage matras",
+    "decathlon fitness mat",
+    "beste topper matras",
+    "extra large yoga mat",
+    "fitness mat decathlon",
+    "fitness apparatuur",
+    "massagekussen infrarood",
+    "verstelbare gewichten",
+    "beste nek massage apparaat"
+  ],
+  "regression": {
+    "total": 18,
+    "passed": 18,
+    "failed": 0,
+    "results": [
+      {
+        "domain": "decathlon.nl",
+        "expectEligible": false,
+        "expectReason": "mass_retail_operator",
+        "actualEligible": false,
+        "actualReason": "mass_retail_operator",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "kruidvat.nl",
+        "expectEligible": false,
+        "expectReason": "excluded_business_type",
+        "actualEligible": false,
+        "actualReason": "excluded_business_type",
+        "prospectClass": "GENERAL_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "douglas.nl",
+        "expectEligible": false,
+        "expectReason": "excluded_business_type",
+        "actualEligible": false,
+        "actualReason": "excluded_business_type",
+        "prospectClass": "GENERAL_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "lidl.nl",
+        "expectEligible": false,
+        "expectReason": "mass_retail_operator",
+        "actualEligible": false,
+        "actualReason": "mass_retail_operator",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "welkoop.nl",
+        "expectEligible": false,
+        "expectReason": "mass_retail_operator",
+        "actualEligible": false,
+        "actualReason": "mass_retail_operator",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "coolblue.nl",
+        "expectEligible": false,
+        "expectReason": "mass_retail_operator",
+        "actualEligible": false,
+        "actualReason": "mass_retail_operator",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "beslist.nl",
+        "expectEligible": false,
+        "expectReason": "excluded_business_type",
+        "actualEligible": false,
+        "actualReason": "excluded_business_type",
+        "prospectClass": "COMPARISON_SITE",
+        "pass": true
+      },
+      {
+        "domain": "vergelijk.nl",
+        "expectEligible": false,
+        "expectReason": "excluded_business_type",
+        "actualEligible": false,
+        "actualReason": "excluded_business_type",
+        "prospectClass": "COMPARISON_SITE",
+        "pass": true
+      },
+      {
+        "domain": "kieskeurig.nl",
+        "expectEligible": false,
+        "expectReason": "excluded_business_type",
+        "actualEligible": false,
+        "actualReason": "excluded_business_type",
+        "prospectClass": "COMPARISON_SITE",
+        "pass": true
+      },
+      {
+        "domain": "vergelijkeven.nl",
+        "expectEligible": false,
+        "expectReason": "comparison_site_signal",
+        "actualEligible": false,
+        "actualReason": "comparison_site_signal",
+        "prospectClass": "COMPARISON_SITE",
+        "pass": true
+      },
+      {
+        "domain": "zooplus.nl",
+        "expectEligible": false,
+        "expectReason": "mass_retail_operator",
+        "actualEligible": false,
+        "actualReason": "mass_retail_operator",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "bol.com",
+        "expectEligible": false,
+        "expectReason": "blacklisted_domain",
+        "actualEligible": false,
+        "actualReason": "blacklisted_domain",
+        "prospectClass": "MARKETPLACE",
+        "pass": true
+      },
+      {
+        "domain": "mediamarkt.nl",
+        "expectEligible": false,
+        "expectReason": "mass_retail_operator",
+        "actualEligible": false,
+        "actualReason": "mass_retail_operator",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "asos.com",
+        "expectEligible": false,
+        "expectReason": "mass_retail_operator",
+        "actualEligible": false,
+        "actualReason": "mass_retail_operator",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      },
+      {
+        "domain": "dogsen.nl",
+        "expectEligible": true,
+        "expectReason": null,
+        "actualEligible": true,
+        "actualReason": null,
+        "prospectClass": "SPECIALIST",
+        "pass": true
+      },
+      {
+        "domain": "quiesco.nl",
+        "expectEligible": true,
+        "expectReason": null,
+        "actualEligible": true,
+        "actualReason": null,
+        "prospectClass": "SPECIALIST",
+        "pass": true
+      },
+      {
+        "domain": "nordichigh.nl",
+        "expectEligible": true,
+        "expectReason": null,
+        "actualEligible": true,
+        "actualReason": null,
+        "prospectClass": "SPECIALIST",
+        "pass": true
+      },
+      {
+        "domain": "onbekendespecialist.nl",
+        "expectEligible": false,
+        "expectReason": "mass_retail_breadth",
+        "actualEligible": false,
+        "actualReason": "mass_retail_breadth",
+        "prospectClass": "MASS_RETAILER",
+        "pass": true
+      }
+    ]
+  }
+}
