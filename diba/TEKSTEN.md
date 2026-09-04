@@ -10326,13 +10326,13 @@ Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij hebt ingevuld
 
 **Tabbladtitel:** Het huidconsult | Diba Clinics
 
-**Google-omschrijving:** Wat er in de intake gebeurt, wat het kost, wat je niet hoeft, en wat je overhoudt als je daarna nooit meer terugkomt.
+**Google-omschrijving:** Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.
 
 **WAT ER IN EEN INTAKE GEBEURT**
 
-Het huidconsult is een afspraak waarin niet behandeld wordt. We meten je huid onder vaste belichting, laten zien wat we zien en vertellen wat er realistisch mogelijk is. Meer niet.
+De behandelaar bekijkt je huid en meet met de EVE-M onder vaste belichting. Je kijkt mee op het scherm en hoort wat er bij jou mogelijk is, in welke volgorde en over hoeveel sessies.
 
-Je hoeft aan het eind niets af te spreken. Soms is het advies zelfs om niets te doen, en dan houdt het daar op.
+Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten. Je beslist in je eigen tijd wat je daarna doet.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -10359,6 +10359,8 @@ Wat kost Behandeling op advies?
 HETZELFDE SCHERM, TEGELIJK
 
 Allebei beginnen ze met dezelfde meting.
+
+Het huidconsult
 
 We reserveren er maximaal 60 minuten voor: het gesprek, de beoordeling van je huid en een advies dat je mee naar huis krijgt. Aan je huid gebeurt deze afspraak nog niets.
 
@@ -10402,9 +10404,9 @@ Je hoeft je niet voor te bereiden op vaktermen. Zeg het in je eigen woorden; wij
 
 **Wat je meeneemt naar je afspraak**
 
-Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is het belangrijkste: een meting over foundation heen is geen meting.
+Twee kleine dingen, en ze bepalen of de meting klopt. Het eerste punt links telt het zwaarst: foundation zit tussen de camera en je huid in.
 
-- Kom zonder make-up, of neem er rekening mee dat we het eraf halen. Een meting over foundation heen is geen meting.
+- Kom zonder make-up, of reken erop dat we het eraf halen. Foundation zit tussen de camera en je huid in.
 
 - Neem foto's mee waarop te zien is hoe je huid eruitziet wanneer de klacht erger is.
 
@@ -10424,19 +10426,19 @@ Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is 
 
 Weet je nog niet waarvoor je komt? Dat hoeft ook niet, en de zoeker helpt je een richting te vinden voordat je hier bent.
 
-**Wat je dan nog steeds meeneemt.**
+**Wat je na dit uur in handen hebt**
 
-De meeste twijfel gaat over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt.
+Deze afspraak levert vier dingen op die van jou zijn, ook als je er verder niets mee doet. Ze staan los van wat je daarna besluit.
 
-- Een nulpunt dat van jou is Je meting blijft bewaard als beginpunt. Ga je later ergens anders heen, dan heb je iets om mee te vergelijken dat niet van een telefooncamera komt.
+- Een nulpunt dat van jou is Je meting blijft bewaard als beginpunt onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.
 
-- Weten wat je niet moet doen Vaak is de winst dat er iets afvalt. Een behandeling die je overwoog en die op jouw huid niets gaat doen, is een besparing van honderden euro's en een paar maanden.
+- Een gerichte keuze Je weet welke behandelingen bij jouw huid horen en welke niet. Dat scheelt vaak honderden euro's en een paar maanden aan iets dat toch niets ging doen.
 
-- Je routine doorgelicht We kijken naar wat je nu thuis gebruikt en naar de ingrediëntenlijst, niet naar de naam op de verpakking. Soms zit daar het hele antwoord.
+- Je routine doorgelicht We kijken naar wat je nu thuis gebruikt en lezen de ingrediëntenlijst, niet de naam op de verpakking. Soms zit daar het hele antwoord al.
 
-- Een advies dat nee mag zijn Soms is het advies om niets te doen, of om eerst iets af te bouwen en over twee weken opnieuw te kijken. Dat hoor je dan ook, en het kost je niets extra.
+- Een advies op maat Soms is het advies om eerst iets af te bouwen en over twee weken opnieuw te kijken. Wat er bij jouw huid past hoor je zoals het is, zonder extra kosten.
 
-Wat we niet doen: nabellen, een aanbod dat verloopt, of een korting als je vandaag beslist. Die staan nergens op deze site en ze komen er ook niet.
+Je beslist in je eigen tijd. Er volgt geen belronde, geen aanbod dat verloopt en geen korting die vandaag afloopt: wat je hoort in de afspraak geldt ook volgende maand nog.
 
 **Wat ze zeiden over het consult zelf.**
 
@@ -10466,7 +10468,7 @@ Dan zeggen we dat en houdt het daar op. Dat komt vaker voor dan je denkt, en het
 
 Kan ik meteen een behandeling krijgen? +
 
-Nee, en dat is met opzet. Behandelen zonder beginpunt betekent dat je later niet kunt nagaan of het werkte. Bovendien beslis je dan onder druk van het moment.
+Ja. Plan je intake met behandeling, dan reserveren we daar tijd voor en vervallen de intakekosten. We meten eerst, zodat je later kunt nagaan wat het gedaan heeft.
 
 Moet ik voor elke klacht apart komen? +
 
@@ -11078,41 +11080,41 @@ Merk je dat we ons hier niet aan houden, zeg het dan tegen degene die je behande
 
 **Tabbladtitel:** PCOS en huid | Diba Clinics
 
-**Google-omschrijving:** Wat een huidkliniek bij PCOS wel kan doen, wat niet, en wanneer je eerst bij de huisarts hoort te zijn. Een taakverdeling, geen behandelaanbod.
+**Google-omschrijving:** De huidklachten bij PCOS: ongewenste haargroei, acne langs de kaaklijn en dunner wordend haar. Wat wij behandelen en wat via je arts loopt.
 
-**PCOS BEHANDELEN WIJ NIET.**
+**PCOS EN JE HUID**
 
-Wat we wel kunnen is werken aan wat je erdoor op je huid ziet. Dat is iets anders, en dat verschil is het hele punt van deze pagina.
+De diagnose stelt je huisarts of gynaecoloog. De huidklachten die erbij horen behandelen wij: ongewenste haargroei, acne langs de kaaklijn, dunner wordend hoofdhaar en donkere plekken in huidplooien.
 
-Wie met PCOS te maken heeft, heeft meestal al genoeg beloftes gehoord. Hieronder staat per klacht wat we kunnen doen, wat we niet kunnen doen en wanneer je ergens anders moet zijn.
+Hieronder staat per klacht wat er mogelijk is, waar je op moet rekenen en waar je arts aan zet is.
 
-Op deze pagina staat geen zelftest en geen lijst waarmee je jezelf PCOS kunt aanmeten.
+PCOS wordt vastgesteld door je huisarts of gynaecoloog, met bloedonderzoek en echo.
 
-Iets herkennen is niet hetzelfde als iets vaststellen. Die vaststelling doet je huisarts of gynaecoloog, met onderzoek dat wij niet doen en niet mogen doen.
+Weet je eenmaal wat er speelt, dan werken wij aan de huidklachten die erbij horen. Die twee lopen vaak naast elkaar: je arts kijkt naar de oorzaak, wij naar wat je ziet.
 
 DE KAMER WAAR HET GESPREK BEGINT
 
 **Wie doet wat.**
 
-De derde kolom beschrijft wat met een huidbehandeling niet kan worden opgelost.
+Je arts werkt aan de oorzaak, wij aan wat je ziet. De derde kolom zegt waarom die twee elkaar nodig hebben.
 
 - NIET HIER De huisarts of gynaecoloog Vaststellen of er sprake is van PCOS, onderzoek doen, en behandelen wat er onderliggend speelt. Alles wat met hormonen, medicatie en bloedwaardes te maken heeft.
 
 - HIER Wij De zichtbare gevolgen op je huid: haargroei, acne, littekenvorming. Wat je in de spiegel ziet, niet wat eronder ligt.
 
-- NIET HIER Niemand, voorlopig Het zichtbare weghalen én weghouden zonder dat de oorzaak verandert. Dat kan geen enkele kliniek, hoe de folder ook geschreven is.
+- NIET HIER Samen Zolang de oorzaak meespeelt, blijft de huid meebewegen. Daarom werkt een behandeling het best naast de begeleiding van je arts, en houd je het resultaat bij met onderhoud.
 
 **Wat we bij PCOS kunnen doen**
 
 Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene zonder de andere is een verkooptekst.
 
-- Ongewenste haargroei in een mannelijk patroon Grover en donkerder haar op plekken waar je het niet gewend bent: kin, kaaklijn, hals, borst of buik. Vaak het gevolg waar mensen zich het meest voor terugtrekken. ZO WERKT LASERONTHARING › WAT WIJ DOEN Laserontharing werkt hier, en meestal goed. Het haar is grof en donker en dat is precies waar de laser op aangrijpt. WAT WIJ NIET DOEN Wij nemen de prikkel niet weg die dat haar laat groeien. Er zullen nieuwe haren blijven komen, dus dit wordt onderhoud en geen eindpunt. Reken op meer sessies dan het standaardtraject en op periodiek terugkomen daarna.
+- Ongewenste haargroei in een mannelijk patroon Grover en donkerder haar op plekken waar je het niet gewend bent: kin, kaaklijn, hals, borst of buik. Vaak het gevolg waar mensen zich het meest voor terugtrekken. ZO WERKT LASERONTHARING › WAT WIJ DOEN Laserontharing werkt hier, en meestal goed. Het haar is grof en donker en dat is precies waar de laser op aangrijpt. WAAR JE OP MOET REKENEN Wij nemen de prikkel niet weg die dat haar laat groeien. Er zullen nieuwe haren blijven komen, dus dit wordt onderhoud en geen eindpunt. Reken op meer sessies dan het standaardtraject en op periodiek terugkomen daarna.
 
-- Acne langs de kaaklijn en in de hals Diepere, gevoelige puistjes die langer blijven zitten dan gewone acne, vaak laag in het gezicht en op de hals. Ze komen en gaan met periodes. MEER OVER ACNE › WAT WIJ DOEN De huid rustiger krijgen, ontstoken plekken aanpakken en littekenvorming beperken. Dat is echt werk en het scheelt merkbaar. WAT WIJ NIET DOEN De oorzaak wegnemen. Zolang die er is, beweegt je huid mee. Een traject dat in maart aanslaat kan in september weer opspelen, en dat is geen mislukt traject maar een aandoening die er nog is.
+- Acne langs de kaaklijn en in de hals Diepere, gevoelige puistjes die langer blijven zitten dan gewone acne, vaak laag in het gezicht en op de hals. Ze komen en gaan met periodes. MEER OVER ACNE › WAT WIJ DOEN De huid rustiger krijgen, ontstoken plekken aanpakken en littekenvorming beperken. Dat is echt werk en het scheelt merkbaar. WAAR JE OP MOET REKENEN De oorzaak wegnemen. Zolang die er is, beweegt je huid mee. Een traject dat in maart aanslaat kan in september weer opspelen, en dat is geen mislukt traject maar een aandoening die er nog is.
 
-- Dunner wordend hoofdhaar Minder volume, een breder wordende scheiding, meer haar in de borstel. Anders dan de haargroei elders is dit een verlies en geen overschot. WAT WIJ DOEN Meekijken en vastleggen wat we zien, zodat er over maanden iets te vergelijken valt. WAT WIJ NIET DOEN Behandelen. Haarverlies bij PCOS is een hormonale kwestie en daar is bij ons geen behandeling voor. Wie je iets anders vertelt, verkoopt je iets.
+- Dunner wordend hoofdhaar Minder volume, een breder wordende scheiding, meer haar in de borstel. Anders dan de haargroei elders is dit een verlies en geen overschot. WAT WIJ DOEN Meekijken en vastleggen wat we zien, zodat er over maanden iets te vergelijken valt. WAAR JE OP MOET REKENEN Behandelen. Haarverlies bij PCOS is een hormonale kwestie en daar is bij ons geen behandeling voor. Wie je iets anders vertelt, verkoopt je iets.
 
-- Donkere, fluweelachtige plekken in huidplooien In de hals, oksels of liezen: een donkerdere verkleuring die zacht aanvoelt en niet weggaat met wassen. Het is geen vuil en geen pigmentvlek. WAT WIJ DOEN Hier doen we niets aan, en dat is met opzet. WAT WIJ NIET DOEN Wegwerken. Deze verkleuring is een signaal en geen cosmetisch probleem, en er overheen behandelen maakt het signaal alleen onzichtbaar.
+- Donkere, fluweelachtige plekken in huidplooien In de hals, oksels of liezen: een donkerdere verkleuring die zacht aanvoelt en niet weggaat met wassen. Het is geen vuil en geen pigmentvlek. WAT WIJ DOEN Hier doen we niets aan, en dat is met opzet. WAAR JE OP MOET REKENEN Wegwerken. Deze verkleuring is een signaal en geen cosmetisch probleem, en er overheen behandelen maakt het signaal alleen onzichtbaar.
 
 **Soms sturen we je juist weg.**
 
@@ -11693,4 +11695,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5414 tekstblokken · ongeveer 80.972 woorden._
+_105 pagina's · 5415 tekstblokken · ongeveer 80.974 woorden._

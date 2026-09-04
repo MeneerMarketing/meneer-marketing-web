@@ -117,19 +117,19 @@ export const INTAKE_FEITEN_VAST = [
 export const OOK_ALS_JE_STOPT: readonly { kop: string; zin: string }[] = [
   {
     kop: "Een nulpunt dat van jou is",
-    zin: "Je meting blijft bewaard als beginpunt. Ga je later ergens anders heen, dan heb je iets om mee te vergelijken dat niet van een telefooncamera komt.",
+    zin: "Je meting blijft bewaard als beginpunt onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.",
   },
   {
-    kop: "Weten wat je niet moet doen",
-    zin: "Vaak is de winst dat er iets afvalt. Een behandeling die je overwoog en die op jouw huid niets gaat doen, is een besparing van honderden euro's en een paar maanden.",
+    kop: "Een gerichte keuze",
+    zin: "Je weet welke behandelingen bij jouw huid horen en welke niet. Dat scheelt vaak honderden euro's en een paar maanden aan iets dat toch niets ging doen.",
   },
   {
     kop: "Je routine doorgelicht",
-    zin: "We kijken naar wat je nu thuis gebruikt en naar de ingrediëntenlijst, niet naar de naam op de verpakking. Soms zit daar het hele antwoord.",
+    zin: "We kijken naar wat je nu thuis gebruikt en lezen de ingrediëntenlijst, niet de naam op de verpakking. Soms zit daar het hele antwoord al.",
   },
   {
-    kop: "Een advies dat nee mag zijn",
-    zin: "Soms is het advies om niets te doen, of om eerst iets af te bouwen en over twee weken opnieuw te kijken. Dat hoor je dan ook, en het kost je niets extra.",
+    kop: "Een advies op maat",
+    zin: "Soms is het advies om eerst iets af te bouwen en over twee weken opnieuw te kijken. Wat er bij jouw huid past hoor je zoals het is, zonder extra kosten.",
   },
 ];
 
@@ -137,7 +137,7 @@ export const OOK_ALS_JE_STOPT: readonly { kop: string; zin: string }[] = [
 
 export const VOORBEREIDING = {
   altijd: [
-    "Kom zonder make-up, of neem er rekening mee dat we het eraf halen. Een meting over foundation heen is geen meting.",
+    "Kom zonder make-up, of reken erop dat we het eraf halen. Foundation zit tussen de camera en je huid in.",
     "Neem foto's mee waarop te zien is hoe je huid eruitziet wanneer de klacht erger is.",
     "Neem de producten die je thuis gebruikt mee of maak foto's van de verpakkingen.",
     "Zorg dat je weet welke medicatie, supplementen en anticonceptie je gebruikt.",
@@ -194,7 +194,7 @@ export const INTAKE_FAQ = [
   {
     vraag: "Kan ik meteen een behandeling krijgen?",
     antwoord:
-      "Nee, en dat is met opzet. Behandelen zonder beginpunt betekent dat je later niet kunt nagaan of het werkte. Bovendien beslis je dan onder druk van het moment.",
+      "Ja. Plan je intake met behandeling, dan reserveren we daar tijd voor en vervallen de intakekosten. We meten eerst, zodat je later kunt nagaan wat het gedaan heeft.",
   },
   {
     vraag: "Moet ik voor elke klacht apart komen?",

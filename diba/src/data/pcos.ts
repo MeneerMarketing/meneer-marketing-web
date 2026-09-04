@@ -105,8 +105,8 @@ export const PCOS_VERDELING = [
     hier: true,
   },
   {
-    wie: "Niemand, voorlopig",
-    wat: "Het zichtbare weghalen én weghouden zonder dat de oorzaak verandert. Dat kan geen enkele kliniek, hoe de folder ook geschreven is.",
+    wie: "Samen",
+    wat: "Zolang de oorzaak meespeelt, blijft de huid meebewegen. Daarom werkt een behandeling het best naast de begeleiding van je arts, en houd je het resultaat bij met onderhoud.",
     hier: false,
   },
 ] as const;

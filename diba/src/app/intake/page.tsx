@@ -52,7 +52,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/intake",
   titel: "Het huidconsult",
   omschrijving:
-    "Wat er in de intake gebeurt, wat het kost, wat je niet hoeft, en wat je overhoudt als je daarna nooit meer terugkomt.",
+    "Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.",
 });
 
 /**
@@ -116,14 +116,14 @@ export default function IntakePage() {
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Het huidconsult is een afspraak waarin niet behandeld wordt. We
-              meten je huid onder vaste belichting, laten zien wat we zien en
-              vertellen wat er realistisch mogelijk is. Meer niet.
+              De behandelaar bekijkt je huid en meet met de EVE-M onder vaste
+              belichting. Je kijkt mee op het scherm en hoort wat er bij jou
+              mogelijk is, in welke volgorde en over hoeveel sessies.
             </p>
 
             <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je hoeft aan het eind niets af te spreken. Soms is het advies
-              zelfs om niets te doen, en dan houdt het daar op.
+              Word je in dezelfde afspraak behandeld, dan vervallen de
+              intakekosten. Je beslist in je eigen tijd wat je daarna doet.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -303,7 +303,7 @@ export default function IntakePage() {
             label="Voorbereiden"
             kop="Wat je meeneemt"
             accent="naar je afspraak"
-            intro="Niets ingewikkelds, en het scheelt of de meting klopt. Het eerste punt links is het belangrijkste: een meting over foundation heen is geen meting."
+            intro="Twee kleine dingen, en ze bepalen of de meting klopt. Het eerste punt links telt het zwaarst: foundation zit tussen de camera en je huid in."
             raster="gelijk"
           />
 
@@ -371,10 +371,10 @@ export default function IntakePage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="Als je hierna niets doet"
-            kop="Wat je dan nog steeds"
-            accent="meeneemt."
-            intro="De meeste twijfel gaat over de vraag of dit de ingang van een traject is. Dat is het niet, en dit is wat de afspraak oplevert als je daarna nooit meer terugkomt."
+            label="Wat je meeneemt"
+            kop="Wat je na dit uur"
+            accent="in handen hebt"
+            intro="Deze afspraak levert vier dingen op die van jou zijn, ook als je er verder niets mee doet. Ze staan los van wat je daarna besluit."
             raster="gelijk"
           />
 
@@ -395,9 +395,9 @@ export default function IntakePage() {
           </ul>
 
           <p className="mt-8 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Wat we niet doen: nabellen, een aanbod dat verloopt, of een korting
-            als je vandaag beslist. Die staan nergens op deze site en ze komen
-            er ook niet.
+            Je beslist in je eigen tijd. Er volgt geen belronde, geen aanbod dat
+            verloopt en geen korting die vandaag afloopt: wat je hoort in de
+            afspraak geldt ook volgende maand nog.
           </p>
         </div>
       </section>

@@ -43,7 +43,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/pcos",
   titel: "PCOS en huid",
   omschrijving:
-    "Wat een huidkliniek bij PCOS wel kan doen, wat niet, en wanneer je eerst bij de huisarts hoort te zijn. Een taakverdeling, geen behandelaanbod.",
+    "De huidklachten bij PCOS: ongewenste haargroei, acne langs de kaaklijn en dunner wordend haar. Wat wij behandelen en wat via je arts loopt.",
 });
 
 export default function PcosPage() {
@@ -74,32 +74,33 @@ export default function PcosPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              PCOS behandelen
+              PCOS en
               <br />
-              <span className="diba-accent">wij niet.</span>
+              <span className="diba-accent">je huid</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Wat we wel kunnen is werken aan wat je erdoor op je huid ziet. Dat
-              is iets anders, en dat verschil is het hele punt van deze pagina.
+              De diagnose stelt je huisarts of gynaecoloog. De huidklachten die
+              erbij horen behandelen wij: ongewenste haargroei, acne langs de
+              kaaklijn, dunner wordend hoofdhaar en donkere plekken in
+              huidplooien.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Wie met PCOS te maken heeft, heeft meestal al genoeg beloftes
-              gehoord. Hieronder staat per klacht wat we kunnen doen, wat we
-              niet kunnen doen en wanneer je ergens anders moet zijn.
+              Hieronder staat per klacht wat er mogelijk is, waar je op moet
+              rekenen en waar je arts aan zet is.
             </p>
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
-            <Label>Vooraf, en het staat er niet klein</Label>
+            <Label>Eerst de diagnose</Label>
             <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
-              Op deze pagina staat geen zelftest en geen lijst waarmee je jezelf
-              PCOS kunt aanmeten.
+              PCOS wordt vastgesteld door je huisarts of gynaecoloog, met
+              bloedonderzoek en echo.
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              Iets herkennen is niet hetzelfde als iets vaststellen. Die
-              vaststelling doet je huisarts of gynaecoloog, met onderzoek dat
-              wij niet doen en niet mogen doen.
+              Weet je eenmaal wat er speelt, dan werken wij aan de huidklachten
+              die erbij horen. Die twee lopen vaak naast elkaar: je arts kijkt
+              naar de oorzaak, wij naar wat je ziet.
             </p>
           </div>
         </div>
@@ -128,8 +129,8 @@ export default function PcosPage() {
               Wie doet <span className="diba-accent">wat.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              De derde kolom beschrijft wat met een huidbehandeling niet kan
-              worden opgelost.
+              Je arts werkt aan de oorzaak, wij aan wat je ziet. De derde kolom
+              zegt waarom die twee elkaar nodig hebben.
             </p>
           </div>
 
@@ -212,7 +213,7 @@ export default function PcosPage() {
                     </div>
                     <div className="rounded-[var(--r-md)] bg-[var(--g-025)] p-6">
                       <p className="diba-label text-[var(--t-label)]">
-                        Wat wij niet doen
+                        Waar je op moet rekenen
                       </p>
                       <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                         {k.nietWij}
