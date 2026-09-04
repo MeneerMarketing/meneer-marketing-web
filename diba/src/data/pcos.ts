@@ -101,7 +101,7 @@ export const PCOS_VERDELING = [
   },
   {
     wie: "Wij",
-    wat: "De zichtbare gevolgen op je huid: haargroei, acne, littekenvorming. Wat je in de spiegel ziet, niet wat eronder ligt.",
+    wat: "De huidklachten die je ziet: ongewenste haargroei, acne langs de kaaklijn, dunner wordend hoofdhaar en donkere plekken in huidplooien. Elk met een eigen aanpak.",
     hier: true,
   },
   {

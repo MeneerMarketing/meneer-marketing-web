@@ -11100,7 +11100,7 @@ Je arts werkt aan de oorzaak, wij aan wat je ziet. De derde kolom zegt waarom di
 
 - NIET HIER De huisarts of gynaecoloog Vaststellen of er sprake is van PCOS, onderzoek doen, en behandelen wat er onderliggend speelt. Alles wat met hormonen, medicatie en bloedwaardes te maken heeft.
 
-- HIER Wij De zichtbare gevolgen op je huid: haargroei, acne, littekenvorming. Wat je in de spiegel ziet, niet wat eronder ligt.
+- HIER Wij De huidklachten die je ziet: ongewenste haargroei, acne langs de kaaklijn, dunner wordend hoofdhaar en donkere plekken in huidplooien. Elk met een eigen aanpak.
 
 - NIET HIER Samen Zolang de oorzaak meespeelt, blijft de huid meebewegen. Daarom werkt een behandeling het best naast de begeleiding van je arts, en houd je het resultaat bij met onderhoud.
 
@@ -11695,4 +11695,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5415 tekstblokken · ongeveer 80.974 woorden._
+_105 pagina's · 5415 tekstblokken · ongeveer 80.979 woorden._

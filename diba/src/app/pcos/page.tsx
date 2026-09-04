@@ -74,9 +74,7 @@ export default function PcosPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              PCOS en
-              <br />
-              <span className="diba-accent">je huid</span>
+              PCOS en <span className="diba-accent">je huid</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
