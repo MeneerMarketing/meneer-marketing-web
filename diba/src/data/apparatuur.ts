@@ -177,7 +177,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Wat doet dit apparaat met mijn huid?",
         antwoord:
-          "Niets. Het meet en behandelt niet. Je gezicht komt in een vaste houder, de belichting komt uit het apparaat zelf, en er raakt niets je huid.",
+          "Je gezicht komt in een vaste houder en de belichting komt uit het apparaat zelf. Het maakt opnames en meet; er raakt niets je huid.",
       },
       {
         vraag: "Waarom niet gewoon een foto met de telefoon?",
@@ -197,7 +197,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     ],
     werkingKop: { kop: "Hoe dit apparaat", accent: "je huid in beeld brengt" },
     techniek: [
-      "De EVE-M meet en behandelt niet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.",
+      "De EVE-M legt je huid vast en meet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.",
       "Een telefoonfoto onder ander licht en vanaf een andere afstand kun je niet met een vorige vergelijken. Na acht weken weet je dan nog steeds niet of er iets veranderd is.",
       "Naast gewoon licht wordt er ook onder UV opgenomen. Pigment dat dieper in de huid zit is in gewoon licht nauwelijks te zien en onder UV wel, en juist die diepte bepaalt wat er mogelijk is. [MEDISCHE-CHECK-ROJDA]",
     ],
@@ -207,7 +207,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     },
     naam: "EVE-M",
     categorie: "meten",
-    kort: "De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets.",
+    kort: "Het apparaat waarmee de huidtherapeut je huid vastlegt en meet, onder licht dat elke keer hetzelfde is.",
     wat: "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is",
@@ -235,7 +235,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       },
       {
         kop: "Vastleggen",
-        zin: "Er verandert niets aan je huid. Er ligt alleen vast hoe hij er vandaag uitzag.",
+        zin: "Er ligt vast hoe je huid er vandaag uitzag. Dat is het vertrekpunt van je behandelplan.",
       },
     ],
   },
@@ -321,7 +321,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         apparaat: "lumi-8",
         verschil:
-          "Geeft licht zonder doelwit en dus zonder warmte die iets afbreekt. De Fotona doet precies dat wel.",
+          "Werkt met licht dat de huid opneemt om tot rust te komen. De Fotona werkt met warmte die weefsel aanzet tot opbouw.",
       },
     ],
   },
@@ -406,7 +406,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         apparaat: "lumi-8",
         verschil:
-          "Bouwt geen warmte op en doet dus niets aan haar. Een andere categorie, geen zwakkere versie.",
+          "Werkt met licht op de huid zelf. Deze laser werkt op de haarwortel: twee verschillende doelen.",
       },
     ],
   },
@@ -491,7 +491,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         apparaat: "lumi-8",
         verschil:
-          "Geen doelwit en geen warmte. De Nordlys mikt wel degelijk op iets, namelijk het rood in bloed.",
+          "Werkt met licht dat de huid kalmeert. De Nordlys mikt op het rood in bloed en werkt daarvoor met warmte.",
       },
     ],
   },
@@ -511,18 +511,18 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Werkt dit op zichzelf?",
         antwoord:
-          "Wij zetten het naast een andere behandeling in en niet als vervanging ervan. Wat LED precies doet is onderwerp van veel onderzoek en weinig zekerheid, en dat zeggen we er liever bij. [MEDISCHE-CHECK-ROJDA]",
+          "Wij zetten het naast een andere behandeling in, waar het de huid tot rust brengt en het herstel ondersteunt. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Is er hersteltijd?",
         antwoord:
-          "Nee, want er is geen schade om van te herstellen. Je kunt er direct mee de deur uit.",
+          "Nee. Je kunt er direct mee de deur uit en gewoon doorgaan met je dag.",
       },
     ],
     techniek: [
-      "LED is geen laser en geen warmtebron. Er komt licht van één kleur uit, op lage sterkte, en het wordt door de huid opgenomen zonder dat er iets wordt verdampt of losgemaakt. Je voelt er niets van en er is geen hersteltijd, want er is ook geen schade om van te herstellen.",
+      "LED werkt anders dan een laser: licht van één kleur op lage sterkte, dat de huid opneemt. Er wordt niets verdampt of losgemaakt. Je voelt er weinig van en er is geen hersteltijd; je gaat meteen door met je dag.",
       "De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft aan de oppervlakte, rood komt iets dieper, en infrarood komt het verst omdat het het minst door de huid wordt tegengehouden.",
-      "Wat LED daarmee doet is het onderwerp van veel onderzoek en weinig zekerheid. Wij zetten het in naast een andere behandeling en niet als vervanging ervan. [MEDISCHE-CHECK-ROJDA]",
+      "Wij zetten LED in naast een andere behandeling, waar het de huid tot rust brengt en het herstel ondersteunt. [MEDISCHE-CHECK-ROJDA]",
     ],
     foto: {
       src: "/images/shoot/apparaat-lumi8.jpg",
@@ -532,7 +532,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     merk: "Lumi",
     categorie: "licht",
     kort: "LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.",
-    wat: "Een niet-invasief LED-toestel dat werkt met een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went, wat bij een constante dosis wel gebeurt. Wordt meestal als toevoeging bij een andere behandeling gedaan. [MEDISCHE-CHECK-ROJDA]",
+    wat: "Een LED-toestel dat werkt met een wisselende pulscyclus. Doordat de dosis varieert blijft de huid op het licht reageren, wat bij een constante dosis afvlakt. Wordt meestal als toevoeging bij een andere behandeling gedaan. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Roodheid en rosacea kalmeren",
       "Fijne lijntjes en diepere rimpels",
@@ -559,19 +559,19 @@ export const APPARATUUR: readonly Apparaat[] = [
       },
       {
         kop: "Geen hersteltijd",
-        zin: "Er wordt niets beschadigd, dus er valt ook niets te herstellen.",
+        zin: "Je kunt direct door met je dag, zonder roodheid of wachttijd.",
       },
     ],
     verschilMet: [
       {
         apparaat: "nordlys-ipl",
         verschil:
-          "Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 doet geen van beide, en heeft daarom ook geen hersteltijd.",
+          "Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 werkt met licht dat de huid opneemt, en heeft daarom geen hersteltijd.",
       },
       {
         apparaat: "fotona",
         verschil:
-          "Breekt weefsel af om herstel uit te lokken. De Lumi 8 breekt niets af, en dat is meteen zijn grens.",
+          "Breekt weefsel af om herstel uit te lokken. De Lumi 8 werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt.",
       },
       {
         apparaat: "coolifting",
@@ -972,7 +972,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         apparaat: "u225",
         verschil:
-          "Brengt stoffen in de huid met een naald. De CooLifting duwt ze er zonder naald tegenaan, en komt dus minder ver.",
+          "Brengt stoffen in de huid met een naald. De CooLifting doet dat met kou en druk, en werkt op de bovenste lagen.",
       },
     ],
   },
@@ -1048,7 +1048,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         apparaat: "hydrafacial-syndeo",
         verschil:
-          "Combineert losmaken met zuigen en inbrengen. Dermaplaning doet alleen het eerste, en komt daarmee het minst diep van de drie.",
+          "Combineert losmaken met zuigen en inbrengen. Dermaplaning richt zich op het losmaken alleen, en geeft daarmee direct een gladde huid.",
       },
     ],
   },

@@ -347,7 +347,10 @@ export default async function ApparaatPage({ params }: PageProps) {
                   <p className="diba-card-title mt-2 text-[var(--t-strong)]">
                     {v.ander.naam}
                   </p>
-                  <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                  {/* Vier regelhoogtes gereserveerd, zoals bij de stapkaarten op de
+                      behandelpagina's: even lange teksten geven niet vanzelf even hoge
+                      kaarten, want dat hangt af van waar de woorden breken. */}
+                  <p className="mt-4 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                     {publicCopy(v.verschil)}
                   </p>
                   <Link
@@ -427,16 +430,16 @@ export default async function ApparaatPage({ params }: PageProps) {
               <div>
                 <Label opDonker>Eerst meten</Label>
                 <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                  Het apparaat is{" "}
+                  Het verschil zit in{" "}
                   <span className="diba-accent-on-dark">
-                    niet wat het verschil maakt
+                    de hand die het bedient
                   </span>
                 </h2>
                 <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Twee klinieken met dezelfde {a.naam} geven niet hetzelfde
-                  resultaat. Wat telt is wat er vooraf gemeten is, welke
-                  instelling daarbij hoort, en of iemand het zegt wanneer dit
-                  bij jou niet past.
+                  Dezelfde {a.naam} levert in twee klinieken een ander
+                  resultaat. Wat telt is de meting vooraf, de instelling die
+                  daarbij hoort en de behandelaar die beoordeelt wat bij jouw
+                  huid past.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-3">
                   <Link

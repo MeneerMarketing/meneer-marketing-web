@@ -6268,7 +6268,7 @@ WAT ER GEBEURT
 
 - 2 Wisselende puls De pulscyclus varieert, zodat de huid niet went aan de dosis.
 
-- 3 Geen hersteltijd Er wordt niets beschadigd, dus er valt ook niets te herstellen.
+- 3 Geen hersteltijd Je kunt direct door met je dag, zonder roodheid of wachttijd.
 
 GRIJPT AAN OP
 
@@ -7308,7 +7308,7 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 > knop: 1 APPARAAT Kou en druk Vaatjes prikkelen zonder ze te raken. Grijpt aan op bloedvaten
 
-- METEN EVE-M De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets. Consult met EVE-M huidanalyse
+- METEN EVE-M Het apparaat waarmee de huidtherapeut je huid vastlegt en meet, onder licht dat elke keer hetzelfde is. Consult met EVE-M huidanalyse
 
 - LASER FOTONA Fotona TimeWalker Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · NightLase
 
@@ -7410,7 +7410,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER LUMI 8-LED Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk. NAAR DE LUMI 8-LED ›
 
-- TEGENOVER U225 intradermale injector Brengt stoffen in de huid met een naald. De CooLifting duwt ze er zonder naald tegenaan, en komt dus minder ver. NAAR DE U225 INTRADERMALE INJECTOR ›
+- TEGENOVER U225 intradermale injector Brengt stoffen in de huid met een naald. De CooLifting doet dat met kou en druk, en werkt op de bovenste lagen. NAAR DE U225 INTRADERMALE INJECTOR ›
 
 **De problemen waar dit apparaat bij past.**
 
@@ -7436,9 +7436,9 @@ Hoe lang houdt het aan? +
 
 Kort. Dit is een opfrisser en geen traject, en zo bieden we het ook aan.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde CooLift Cryo Therapy geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde CooLift Cryo Therapy levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -7550,9 +7550,9 @@ Hoe lang ben ik rood? +
 
 Een tot drie dagen, ongeveer als een stevige zonnegloed. De eerste vierentwintig uur laat je je huid met rust.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde Dermapen 4 geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde Dermapen 4 levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -7634,7 +7634,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Peelinglijnen Lost de bovenste laag chemisch op. Dermaplaning schraapt hem af, en dat scheelt zowel in gevoel als in hersteltijd. NAAR DE PEELINGLIJNEN ›
 
-- TEGENOVER Hydrafacial syndeo Combineert losmaken met zuigen en inbrengen. Dermaplaning doet alleen het eerste, en komt daarmee het minst diep van de drie. NAAR DE HYDRAFACIAL SYNDEO ›
+- TEGENOVER Hydrafacial syndeo Combineert losmaken met zuigen en inbrengen. Dermaplaning richt zich op het losmaken alleen, en geeft daarmee direct een gladde huid. NAAR DE HYDRAFACIAL SYNDEO ›
 
 **De problemen waar dit apparaat bij past.**
 
@@ -7662,9 +7662,9 @@ Waarom neemt mijn crème daarna beter op? +
 
 Omdat de laag dode cellen eraf is die er anders tussen zit. Dat effect is tijdelijk en duurt zolang die laag zich niet heeft hersteld.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde Dermaplane pro geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde Dermaplane pro levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -7682,11 +7682,11 @@ Twee klinieken met dezelfde Dermaplane pro geven niet hetzelfde resultaat. Wat t
 
 **Tabbladtitel:** EVE-M: het apparaat | Diba Clinics
 
-**Google-omschrijving:** De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets.
+**Google-omschrijving:** Het apparaat waarmee de huidtherapeut je huid vastlegt en meet, onder licht dat elke keer hetzelfde is.
 
 **EVE-M**
 
-De huidscanner die de huidtherapeut gebruikt om je huid vast te leggen. Hij meet en fotografeert, en behandelt zelf niets.
+Het apparaat waarmee de huidtherapeut je huid vastlegt en meet, onder licht dat elke keer hetzelfde is.
 
 De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar.
 
@@ -7706,7 +7706,7 @@ WAT ER GEBEURT
 
 - 2 Doorkijken De camera leest verschillende lagen uit: pigment, vocht, poriën, structuur.
 
-- 3 Vastleggen Er verandert niets aan je huid. Er ligt alleen vast hoe hij er vandaag uitzag.
+- 3 Vastleggen Er ligt vast hoe je huid er vandaag uitzag. Dat is het vertrekpunt van je behandelplan.
 
 GRIJPT AAN OP
 
@@ -7718,7 +7718,7 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat de diepte van dit apparaat bepaalt**
 
-De EVE-M meet en behandelt niet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.
+De EVE-M legt je huid vast en meet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.
 
 Een telefoonfoto onder ander licht en vanaf een andere afstand kun je niet met een vorige vergelijken. Na acht weken weet je dan nog steeds niet of er iets veranderd is.
 
@@ -7744,7 +7744,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 Wat doet dit apparaat met mijn huid? +
 
-Niets. Het meet en behandelt niet. Je gezicht komt in een vaste houder, de belichting komt uit het apparaat zelf, en er raakt niets je huid.
+Je gezicht komt in een vaste houder en de belichting komt uit het apparaat zelf. Het maakt opnames en meet; er raakt niets je huid.
 
 Waarom niet gewoon een foto met de telefoon? +
 
@@ -7758,9 +7758,9 @@ Krijg ik een diagnose? +
 
 Nee. Een meting is geen diagnose; dat is werk voor een arts. Wat je krijgt is wat er gemeten is en wat dat betekent voor wat er kan.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde EVE-M geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde EVE-M levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -7850,7 +7850,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Nordlys Stuurt een bundel golflengtes tegelijk en komt minder diep. De Fotona werkt met één golflengte per stand en gaat door tot in de diepe lederhuid. NAAR DE NORDLYS ›
 
-- TEGENOVER LUMI 8-LED Geeft licht zonder doelwit en dus zonder warmte die iets afbreekt. De Fotona doet precies dat wel. NAAR DE LUMI 8-LED ›
+- TEGENOVER LUMI 8-LED Werkt met licht dat de huid opneemt om tot rust te komen. De Fotona werkt met warmte die weefsel aanzet tot opbouw. NAAR DE LUMI 8-LED ›
 
 **De problemen waar dit apparaat bij past.**
 
@@ -7878,9 +7878,9 @@ Voel ik er iets van? +
 
 Je voelt warmte die langzaam oploopt. De behandelaar vraagt er tijdens de sessie naar en stelt het apparaat bij op jouw antwoord.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde Fotona TimeWalker geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde Fotona TimeWalker levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -7966,7 +7966,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Nordlys Is geen laser maar een lamp met een bundel golflengtes. Dat werkt minder gericht op de haarwortel en komt minder diep. NAAR DE NORDLYS ›
 
-- TEGENOVER LUMI 8-LED Bouwt geen warmte op en doet dus niets aan haar. Een andere categorie, geen zwakkere versie. NAAR DE LUMI 8-LED ›
+- TEGENOVER LUMI 8-LED Werkt met licht op de huid zelf. Deze laser werkt op de haarwortel: twee verschillende doelen. NAAR DE LUMI 8-LED ›
 
 **Veelgestelde vragen**
 
@@ -7986,9 +7986,9 @@ Kan dit bij een donkere huid? +
 
 Dat hangt af van de instelling. Bij meer pigment in de huid is de marge kleiner, dus beoordeelt de behandelaar het vooraf. Is het niet verantwoord, dan doen we het niet.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde Gentle Laser Pro-U geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde Gentle Laser Pro-U levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -8100,9 +8100,9 @@ Kan dit bij een gevoelige huid? +
 
 Vaak wel, want er komen geen zuren aan te pas en het blijft aan de oppervlakte. Of het bij jou past bepaalt de meting.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde Hydrafacial syndeo geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde Hydrafacial syndeo levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -8126,7 +8126,7 @@ Twee klinieken met dezelfde Hydrafacial syndeo geven niet hetzelfde resultaat. W
 
 LED-licht zonder naalden of zuren. Rood, geel en bijna-infrarood licht komen in een vaste pulscyclus op de huid.
 
-Een niet-invasief LED-toestel dat werkt met een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went, wat bij een constante dosis wel gebeurt. Wordt meestal als toevoeging bij een andere behandeling gedaan.
+Een LED-toestel dat werkt met een wisselende pulscyclus. Doordat de dosis varieert blijft de huid op het licht reageren, wat bij een constante dosis afvlakt. Wordt meestal als toevoeging bij een andere behandeling gedaan.
 
 - Lumi 8 LED € 30
 
@@ -8146,7 +8146,7 @@ WAT ER GEBEURT
 
 - 2 Wisselende puls De pulscyclus varieert, zodat de huid niet went aan de dosis.
 
-- 3 Geen hersteltijd Er wordt niets beschadigd, dus er valt ook niets te herstellen.
+- 3 Geen hersteltijd Je kunt direct door met je dag, zonder roodheid of wachttijd.
 
 GRIJPT AAN OP
 
@@ -8158,11 +8158,11 @@ Loopt vanzelf door. Klik een stap om zelf te sturen.
 
 **Wat de diepte van dit apparaat bepaalt**
 
-LED is geen laser en geen warmtebron. Er komt licht van één kleur uit, op lage sterkte, en het wordt door de huid opgenomen zonder dat er iets wordt verdampt of losgemaakt. Je voelt er niets van en er is geen hersteltijd, want er is ook geen schade om van te herstellen.
+LED werkt anders dan een laser: licht van één kleur op lage sterkte, dat de huid opneemt. Er wordt niets verdampt of losgemaakt. Je voelt er weinig van en er is geen hersteltijd; je gaat meteen door met je dag.
 
 De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft aan de oppervlakte, rood komt iets dieper, en infrarood komt het verst omdat het het minst door de huid wordt tegengehouden.
 
-Wat LED daarmee doet is het onderwerp van veel onderzoek en weinig zekerheid. Wij zetten het in naast een andere behandeling en niet als vervanging ervan.
+Wij zetten LED in naast een andere behandeling, waar het de huid tot rust brengt en het herstel ondersteunt.
 
 **Wat een behandeling met je huid doet**
 
@@ -8184,9 +8184,9 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
 
-- TEGENOVER Nordlys Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 doet geen van beide, en heeft daarom ook geen hersteltijd. NAAR DE NORDLYS ›
+- TEGENOVER Nordlys Mikt op de vaatjes zelf en werkt met warmte. De Lumi 8 werkt met licht dat de huid opneemt, en heeft daarom geen hersteltijd. NAAR DE NORDLYS ›
 
-- TEGENOVER Fotona TimeWalker Breekt weefsel af om herstel uit te lokken. De Lumi 8 breekt niets af, en dat is meteen zijn grens. NAAR DE FOTONA TIMEWALKER ›
+- TEGENOVER Fotona TimeWalker Breekt weefsel af om herstel uit te lokken. De Lumi 8 werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt. NAAR DE FOTONA TIMEWALKER ›
 
 - TEGENOVER CooLift Cryo Therapy Werkt ook zonder naalden en zonder hersteltijd, maar met kou en druk in plaats van licht. NAAR DE COOLIFT CRYO THERAPY ›
 
@@ -8208,15 +8208,15 @@ Elke kleur komt tot een andere diepte. Blauw blijft aan de oppervlakte, rood kom
 
 Werkt dit op zichzelf? +
 
-Wij zetten het naast een andere behandeling in en niet als vervanging ervan. Wat LED precies doet is onderwerp van veel onderzoek en weinig zekerheid, en dat zeggen we er liever bij.
+Wij zetten het naast een andere behandeling in, waar het de huid tot rust brengt en het herstel ondersteunt.
 
 Is er hersteltijd? +
 
-Nee, want er is geen schade om van te herstellen. Je kunt er direct mee de deur uit.
+Nee. Je kunt er direct mee de deur uit en gewoon doorgaan met je dag.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde LUMI 8-LED geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde LUMI 8-LED levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -8302,7 +8302,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Gentle Laser Pro-U Eén golflengte, gericht op de haarwortel. Daar is de Nordlys minder geschikt voor, en op roodheid juist wel. NAAR DE GENTLE LASER PRO-U ›
 
-- TEGENOVER LUMI 8-LED Geen doelwit en geen warmte. De Nordlys mikt wel degelijk op iets, namelijk het rood in bloed. NAAR DE LUMI 8-LED ›
+- TEGENOVER LUMI 8-LED Werkt met licht dat de huid kalmeert. De Nordlys mikt op het rood in bloed en werkt daarvoor met warmte. NAAR DE LUMI 8-LED ›
 
 **De problemen waar dit apparaat bij past.**
 
@@ -8330,9 +8330,9 @@ Kan dit ook op mijn benen of rug? +
 
 IPL werkt over een groot vlak en dat is juist zijn sterke kant. Of het bij jouw klacht past hangt af van wat er zit en hoe diep.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde Nordlys geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde Nordlys levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -8454,9 +8454,9 @@ Kan dit in de zomer? +
 
 Bij pigment liever niet, en bij de sterkere lijnen ook niet. Zon na een peeling is precies de combinatie die het resultaat kost.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde Peelinglijnen geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde Peelinglijnen levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -8570,9 +8570,9 @@ Doet het pijn? +
 
 Er gaat vooraf een verdovende crème op die een half uur intrekt. Wat je daarna voelt is een trilling en druk, het sterkst waar de huid dun over bot ligt.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde SkinPen CIT geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde SkinPen CIT levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -8688,9 +8688,9 @@ Zie ik er daarna uit alsof ik geprikt ben? +
 
 Vlak erna zie je kleine bultjes op de plek van elke prik; die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.
 
-**Het apparaat is niet wat het verschil maakt**
+**Het verschil zit in de hand die het bedient**
 
-Twee klinieken met dezelfde U225 intradermale injector geven niet hetzelfde resultaat. Wat telt is wat er vooraf gemeten is, welke instelling daarbij hoort, en of iemand het zegt wanneer dit bij jou niet past.
+Dezelfde U225 intradermale injector levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -11675,4 +11675,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5405 tekstblokken · ongeveer 80.685 woorden._
+_105 pagina's · 5405 tekstblokken · ongeveer 80.645 woorden._
