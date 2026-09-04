@@ -28,4 +28,13 @@ export const LEGACY_REDIRECTS: readonly {
     source: "/behandelingen/lumi-8-led",
     destination: "/behandelingen/led-therapie",
   },
+  /* CooLift Cryo Therapy staat niet meer in de kliniek (Yasin, 5 september 2026). Wie de
+     pagina nog in zijn geschiedenis heeft of via Google binnenkomt hoort niet op een 404
+     te landen. CooLift bracht werkzame stoffen in de huid met kou en druk; de skinboosters
+     doen dat met een naald, en dat is de dichtstbijzijnde behandeling die we wel hebben. */
+  {
+    source: "/behandelingen/coolift",
+    destination: "/behandelingen/skinboosters",
+  },
+  { source: "/apparatuur/coolifting", destination: "/apparatuur/u225" },
 ] as const;

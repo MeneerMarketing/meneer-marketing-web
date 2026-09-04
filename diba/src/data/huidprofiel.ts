@@ -409,7 +409,6 @@ const DOELMATRIX: Record<string, Partial<Record<DoelId, "vol" | "deels">>> = {
      identiek terug. Daarom bewust géén koppeling met het haar-doel; die zou een
      verwachting wekken die de behandeling niet waarmaakt. */
   dermaplaning: { textuur: "deels" },
-  coolift: { lijntjes: "deels" },
   peelings: { kleur: "vol", acne: "vol", textuur: "deels", lijntjes: "deels" },
   /* Microneedling mikt op de laag waar structuur zit; acnelittekens vallen daarom onder
      textuur. Actieve, ontstoken acne staat er bewust niet bij. */
@@ -437,7 +436,6 @@ const HERSTELVRAAG: Record<string, HerstelId> = {
   hydrafacial: "geen",
   oxygeneo: "geen",
   dermaplaning: "geen",
-  coolift: "geen",
   "led-therapie": "geen",
   voedingsintolerantietest: "geen",
   skinboosters: "dag",

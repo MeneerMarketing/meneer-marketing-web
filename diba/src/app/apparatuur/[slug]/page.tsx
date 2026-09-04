@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
-import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
+import HuidproblemenBijApparaat from "@/components/apparatuur/HuidproblemenBijApparaat";
 import { PillarFaq } from "@/components/pillar/PillarSecties";
 import Label from "@/components/ui/Label";
 import { APPARATUUR, apparaatVoorSlug } from "@/data/apparatuur";
@@ -234,29 +234,22 @@ export default async function ApparaatPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* ── Het mechaniek ── */}
+      {/* ── Waarvoor we het inzetten ──
+
+          Hier stond een doorsnede van de huid met een animatie die liet zien tot welke laag
+          het apparaat komt. Yasin, 5 september: de site legt te veel nadruk op diepte, en
+          dit moet een huidproblemensectie worden.
+
+          Hij heeft gelijk dat het de verkeerde vraag beantwoordde. Wie op een
+          apparatuurpagina belandt vraagt zich niet af tot hoeveel millimeter het komt, maar
+          of het iets doet aan wat hij in de spiegel ziet.
+
+          Het Werkingsvenster bestaat nog en staat nog op de behandelpagina's, waar de
+          diepte wel het onderscheid met de buurbehandeling is. */}
+      <HuidproblemenBijApparaat apparaat={a} />
+
       <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
         <div className="mx-auto">
-          <div>
-            <Label>Hoe het werkt</Label>
-            <h2 className="diba-display-m mt-4">
-              {a.werkingKop?.kop ?? "Hoe dit apparaat"}{" "}
-              <span className="diba-accent">
-                {a.werkingKop?.accent ?? "op de huid werkt"}
-              </span>
-            </h2>
-            <p className="max-w-[62ch] mt-6 text-[16px] leading-7 text-[var(--t-body)]">
-              Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte.
-              Dat is meteen ook de grens van wat het kan. Hieronder zie je die
-              grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je
-              ze naast elkaar kunt leggen.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <Werkingsvenster apparaat={a} />
-          </div>
-
           {/* De techniek zelf.
 
               Golflengte, pulsduur en werkingsprincipe staan in de brochure van de
@@ -265,12 +258,12 @@ export default async function ApparaatPage({ params }: PageProps) {
               legenda en de veiligheidszin zijn overal gelijk, en twaalf pagina's die verder
               hetzelfde zeggen zitten elkaar in de weg. */}
           {a.techniek?.length ? (
-            <div className="mt-16 border-t border-[var(--g-100)] pt-12">
+            <div>
               <Label>De techniek</Label>
-              <h3 className="diba-display-s mt-4 max-w-[24ch]">
-                Wat de diepte{" "}
-                <span className="diba-accent">van dit apparaat bepaalt</span>
-              </h3>
+              <h2 className="diba-display-m mt-4 max-w-[24ch]">
+                Wat dit apparaat{" "}
+                <span className="diba-accent">precies doet</span>
+              </h2>
               <div className="mt-6 max-w-[68ch] space-y-4">
                 {a.techniek.map((alinea) => (
                   <p
@@ -289,19 +282,19 @@ export default async function ApparaatPage({ params }: PageProps) {
       {/* ── Waarvoor en waarvoor niet ── */}
       <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <Label>Wat het wel en niet kan</Label>
+          <Label>Waar het voor is</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
-            Wat een behandeling{" "}
-            <span className="diba-accent">met je huid doet</span>
+            Waar dit apparaat{" "}
+            <span className="diba-accent">voor bedoeld is</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Links waar dit apparaat voor gemaakt is, rechts waar het niets aan
-            doet.
+            Links waar dit apparaat voor gemaakt is, rechts wanneer een ander
+            apparaat meer voor je doet.
           </p>
 
           <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <Label>Hiervoor is het gemaakt</Label>
+              <Label>Hier werkt het goed bij</Label>
               <ul className="mt-5 space-y-3">
                 {a.waarvoor.map((w) => (
                   <li
@@ -314,7 +307,7 @@ export default async function ApparaatPage({ params }: PageProps) {
               </ul>
             </div>
             <div>
-              <Label>Hiervoor niet</Label>
+              <Label>Hiervoor kies je iets anders</Label>
               <ul className="mt-5 space-y-3">
                 {a.nietVoor.map((n) => (
                   <li

@@ -612,11 +612,6 @@ export const APPARATUUR: readonly Apparaat[] = [
         verschil:
           "Breekt weefsel af om herstel uit te lokken. LED werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt.",
       },
-      {
-        apparaat: "coolifting",
-        verschil:
-          "Werkt ook zonder naalden en zonder hersteltijd, maar met kou en druk in plaats van licht.",
-      },
     ],
   },
   {
@@ -936,86 +931,6 @@ export const APPARATUUR: readonly Apparaat[] = [
         apparaat: "dermapen-4",
         verschil:
           "Zelfde onderscheid: prikkel tegenover toediening. Wie stoffen op diepte wil, komt bij de U225 uit.",
-      },
-    ],
-  },
-  {
-    slug: "coolifting",
-    foto: {
-      src: "/images/shoot/apparaat-coolifting.jpg",
-      alt: "De CooLifting-kop in gebruik op de huid",
-    },
-    vragen: [
-      {
-        vraag: "Wat gebeurt er met mijn huid?",
-        antwoord:
-          "Er wordt koolzuurgas onder hoge druk over je huid geblazen met daarin een fijn verneveld serum. De gasstroom is koud, en kou en druk zijn hier de twee werkzame delen.",
-      },
-      {
-        vraag: "Komt er een naald aan te pas?",
-        antwoord:
-          "Nee. Er wordt niets ingebracht en niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan.",
-      },
-      {
-        vraag: "Hoe lang duurt het?",
-        antwoord:
-          "Een paar minuten. Veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.",
-      },
-      {
-        vraag: "Hoe lang houdt het aan?",
-        antwoord:
-          "Kort. Dit is een opfrisser en geen traject, en zo bieden we het ook aan. [MEDISCHE-CHECK-ROJDA]",
-      },
-    ],
-    techniek: [
-      "De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud. Kou en druk zijn hier de twee werkzame onderdelen.",
-      "De koude gasstroom laat de vaatjes eerst samentrekken en daarna weer verwijden. De druk brengt het vernevelde serum tegen de opperhuid aan. De fabrikant noemt die twee cryoforese en baroforese.",
-      "Er komt geen naald aan te pas en er wordt niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan. [MEDISCHE-CHECK-ROJDA]",
-    ],
-    naam: "CooLift Cryo Therapy",
-    merk: "CooLifting",
-    categorie: "overig",
-    kort: "Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten.",
-    wat: "Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper. [MEDISCHE-CHECK-ROJDA]",
-    waarvoor: [
-      "Een huid die er binnen een paar minuten strakker uit moet zien",
-      "Vlak voor een gelegenheid, zonder hersteltijd",
-      "Combineren met een andere behandeling",
-    ],
-    nietVoor: [
-      "Blijvend resultaat",
-      "Littekens of pigment",
-      "Een traject vervangen",
-    ],
-    behandelingen: ["coolift"],
-
-    werkwijze: "kou",
-    doelwit: "bloedvat",
-    diepte: 22,
-    fasen: [
-      {
-        kop: "Min twintig graden",
-        zin: "CO2 onder hoge druk raakt de huid. De vaatjes trekken samen.",
-      },
-      {
-        kop: "En weer open",
-        zin: "Zodra de kou wegtrekt zetten ze weer uit, en die wisseling is de prikkel.",
-      },
-      {
-        kop: "Stoffen mee",
-        zin: "De druk brengt hyaluronzuur en peptiden mee naar binnen.",
-      },
-    ],
-    verschilMet: [
-      {
-        apparaat: "precision-photonic-system",
-        verschil:
-          "Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk.",
-      },
-      {
-        apparaat: "u225",
-        verschil:
-          "Brengt stoffen in de huid met een naald. De CooLifting doet dat met kou en druk, en werkt op de bovenste lagen.",
       },
     ],
   },

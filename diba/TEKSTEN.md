@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 5 september 2026 · 120 pagina's
+Diba Clinics · gegenereerd op 5 september 2026 · 118 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -354,11 +354,11 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **Tabbladtitel:** Over ons | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 8 mensen, 12 apparaten. En wat die cijfers niet zeggen.
+**Google-omschrijving:** Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 8 mensen, 11 apparaten. En wat die cijfers niet zeggen.
 
 **EEN HUIDKLINIEK IN ROTTERDAM.**
 
-Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 12 apparaten en 36 behandelingen waarvan de prijzen allemaal openbaar zijn.
+Sinds 2017, aan de Weissenbruchlaan 166. Met 8 mensen, 11 apparaten en 35 behandelingen waarvan de prijzen allemaal openbaar zijn.
 
 Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici en de kliniek is aangesloten bij ANBOS.
 
@@ -388,9 +388,9 @@ WAAR HET WERK GEBEURT
 
 Een laser doet het werk niet alleen. Welke golflengte, welke pulsduur en welke energie er bij jouw huidtype horen, bepaalt de huidtherapeut aan de hand van de meting. Hieronder staat waar we mee werken en wie ermee werkt.
 
-- 12 apparaten Van huidscanner tot alexandrietlaser. Per apparaat staat welke techniek erin zit en waarvoor hij is. BEKIJK DE APPARATUUR ›
+- 11 apparaten Van huidscanner tot alexandrietlaser. Per apparaat staat welke techniek erin zit en waarvoor hij is. BEKIJK DE APPARATUUR ›
 
-- 36 behandelingen Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
+- 35 behandelingen Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
 
 - 8 mensen Huidtherapeuten met een hbo-bachelor en inschrijving in het Kwaliteitsregister Paramedici, plus orthomoleculair huidspecialisten. NAAR HET TEAM ›
 
@@ -2462,8 +2462,6 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 - Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT OP DE DERMAPLANE PRO
 
-- CooLift Cryo Therapy € 75 Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. WAT HET INHOUDT OP DE COOLIFT CRYO THERAPY
-
 - SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT OP DE SKINPEN CIT
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT OP DE DERMAPEN 4
@@ -2623,8 +2621,6 @@ Het oppervlak, want dat verandert vaak eerder dan de vorm
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
 **Wat we hiervoor inzetten**
-
-- CooLift Cryo Therapy € 75 Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. WAT HET INHOUDT OP DE COOLIFT CRYO THERAPY
 
 - Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT OP DE FOTONA TIMEWALKER
 
@@ -4924,7 +4920,7 @@ In het huidconsult stellen we vast of het vocht, vet of schaduw is. Bij twee van
 
 **Google-omschrijving:** Vijf behandelingen en drie vragen om te weten welke bij je past. Je huidprofiel blijft in je eigen browser staan.
 
-**ONZE 36 BEHANDELINGEN VAN LICHT TOT DIEP**
+**ONZE 35 BEHANDELINGEN VAN LICHT TOT DIEP**
 
 Van een peeling die aan de oppervlakte blijft tot een laser die de haarwortel bereikt. Waar een behandeling aankomt bepaalt de rest: wat het kost, hoe lang je rood bent en hoe vaak je terug moet.
 
@@ -4958,13 +4954,11 @@ JE BENT NU IN DE
 
 Waar je pigment zit en waar nieuwe huidcellen vandaan komen.
 
-26 VAN ONZE BEHANDELINGEN KOMEN HIER
+25 VAN ONZE BEHANDELINGEN KOMEN HIER
 
 - HydraFacial Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
 
 - Oxygeneo glow Geen. € 150
-
-- CooLift Cryo Therapy Geen. € 75
 
 - Medische peelings Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. € 140
 
@@ -4972,17 +4966,19 @@ Waar je pigment zit en waar nieuwe huidcellen vandaan komen.
 
 - Dermapen 4 Eén tot drie dagen rood. € 180
 
-En nog 20 andere.
+- RRS Eyes Kleine bultjes die binnen een dag wegtrekken. Blauwe plekjes komen voor rond de ogen. Op aanvraag
 
-**Alle 36 behandelingen op een rij**
+En nog 19 andere.
+
+**Alle 35 behandelingen op een rij**
 
 Filter op waar het voor is, en op hoeveel hersteltijd je hebt. Dat tweede filter staat nergens anders, terwijl het vaak het meest bepaalt.
 
-> knop: ALLES 36
+> knop: ALLES 35
 
 > knop: METEN 1
 
-> knop: GEZICHTSBEHANDELINGEN 4
+> knop: GEZICHTSBEHANDELINGEN 3
 
 > knop: PEELINGS 1
 
@@ -5017,8 +5013,6 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 - TOT IN DE OPPERHUID HydraFacial HydraFacial Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen. € 170
 
 - TOT IN DE OPPERHUID Oxygeneo glow OxyGeneo Exfoliëren en zuurstof in de huid brengen, in één behandeling. Geen. € 150
-
-- TOT IN DE OPPERHUID CooLift Cryo Therapy CooLifting Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. Geen. € 75
 
 - TOT IN DE OPPERHUID Medische peelings Mesoestetic, Dermaceutic, Image Skincare, Skin Tech Pharma Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. € 140
 
@@ -5181,120 +5175,6 @@ Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die 
 Zit alles in de prijs? +
 
 In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de prijzenpagina.
-
-**Begin met een huidanalyse**
-
-De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
-
-> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
-
----
-
-### /behandelingen/coolift
-
-**Tabbladtitel:** CooLift Cryo Therapy | Diba Clinics
-
-**Google-omschrijving:** Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door.
-
-**COOLIFT CRYO THERAPY**
-
-COOLIFT CRYO THERAPY · COOLIFTING
-
-*HOE DIEP*
-
-Opperhuid
-
-*HOE LANG*
-
-20 minuten
-
-*HERSTEL*
-
-Geen.
-
-*HOE VAAK*
-
-De behandeling kan eenmalig worden gedaan of als kuur van meestal vier tot zes afspraken.
-
-Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door.
-
-Draait op CooLift Cryo Therapy
-
-> knop: PLAN EEN HUIDCONSULT
-
-**Waar het aankomt**
-
-Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper. De behandeling duurt vijf minuten.
-
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
-
-WAT ER GEBEURT
-
-- 1 Min twintig graden CO2 onder hoge druk raakt de huid. De vaatjes trekken samen.
-
-- 2 En weer open Zodra de kou wegtrekt zetten ze weer uit, en die wisseling is de prikkel.
-
-- 3 Stoffen mee De druk brengt hyaluronzuur en peptiden mee naar binnen.
-
-GRIJPT AAN OP
-
-Bloedvaten
-
-Het rood in bloed neemt bepaalde golflengtes op. Zo raak je een vaatje zonder de huid eromheen.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-- Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. HIER WERKT HET
-
-- Opperhuid Waar je pigment zit en waar nieuwe huidcellen vandaan komen. HIER WERKT HET
-
-- Bovenste lederhuid Hier begint het bindweefsel. Wat je hier raakt, herstelt met opbouw. BLIJFT ONAANGEROERD
-
-- Diepe lederhuid Haarwortels, vaten en de stevigheid van je huid. Diep werken vraagt om een reden. BLIJFT ONAANGEROERD
-
-**Wat er gebeurt, in volgorde.**
-
-- Vijf minuten De behandeling duurt een paar minuten, van begin tot eind.
-
-- Koude straal De CO2 komt er onder druk uit en dat voelt koud en stevig. Het is even wennen, maar goed te doen.
-
-- Direct verder Geen roodheid om te verbergen, geen dag om vrij te nemen.
-
-**Wat je ervan merkt in de stoel**
-
-Vijf minuten, en het is vooral koud. De gasstroom komt onder druk uit een handstuk dat op tien centimeter van je gezicht blijft, en die kou is scherp en meteen weg zodra het handstuk verder gaat.
-
-Er komt geen naald aan te pas en er wordt niets weggehaald. Je kunt er direct mee de deur uit, en veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.
-
-**Waar deze behandeling voor bedoeld is**
-
-Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling meer voor je doet.
-
-- Laat je huid binnen vijf minuten strakker aanvoelen door de kou en de druk
-
-- Brengt werkzame stoffen mee naar binnen zonder dat er een naald aan te pas komt
-
-- Kan direct voor een afspraak of gelegenheid, want er is niets aan je te zien
-
-- Het effect houdt dagen aan; voor opbouw kies je microneedling
-
-- Voor aanmaak van collageen zijn naalden of laser het gereedschap
-
-- Voor pigment of littekens die er al zitten past laser of needling
-
-- HUIDVEROUDERING
-
-- HUIDVERSLAPPING
-
-**Veelgestelde vragen**
-
-Hoe lang houdt het aan? +
-
-Een dag tot enkele dagen, en dat verschilt per huid. Voor blijvende opbouw kies je microneedling of laser; CooLift is er voor het moment zelf.
-
-Wanneer plan ik dit het beste? +
-
-Vlak voor een gelegenheid. Het effect is er meteen, er is niets aan je te zien en je kunt direct door met je dag.
 
 **Begin met een huidanalyse**
 
@@ -9224,11 +9104,11 @@ Daarom begint elk traject hier met een meting en niet met een apparaat.
 
 DE NORDLYS, ZOALS HIJ BIJ ONS STAAT
 
-**12 apparaten, één schaal.**
+**11 apparaten, één schaal.**
 
 Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij daar niet komt, en dat is hieronder te zien in plaats van te geloven.
 
-> knop: ALLES 12
+> knop: ALLES 11
 
 > knop: METEN 1
 
@@ -9242,17 +9122,13 @@ Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en 
 
 > knop: ZUIGING 1
 
-> knop: KOU EN DRUK 1
-
-12 APPARATEN
+11 APPARATEN
 
 TOT HOE DIEP
 
 - Dermaplane pro Grijpt aan op de hoornlaag 10
 
 - Hydrafacial syndeo Grijpt aan op de hoornlaag 18
-
-- CooLift Cryo Therapy Grijpt aan op bloedvaten 22
 
 - Peelinglijnen Grijpt aan op de hoornlaag 24
 
@@ -9294,8 +9170,6 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 > knop: 1 APPARAAT Zuiging Losmaken en wegtrekken. Grijpt aan op de hoornlaag
 
-> knop: 1 APPARAAT Kou en druk Vaatjes prikkelen zonder ze te raken. Grijpt aan op bloedvaten
-
 - METEN EVE-M Het apparaat waarmee de huidtherapeut je huid vastlegt en meet, onder licht dat elke keer hetzelfde is. Consult met EVE-M huidanalyse
 
 - LASER FOTONA Fotona TimeWalker Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase. Fotona TimeWalker · Fotona 4D · Fotona 4D Men · SmoothLiftin · FRAC3 · PIANO skin tightening · SupErficial laserpeel · SmoothEye · LipLase · VectorLift · Fotona Acne Control · Fotona Scar Repair · Fotona Resurfacing · HAIRestart · NightLase
@@ -9314,8 +9188,6 @@ Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt
 
 - OVERIG HYDRAFACIAL Hydrafacial syndeo Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren hier in één doorgang, met hetzelfde handstuk. HydraFacial
 
-- OVERIG COOLIFTING CooLift Cryo Therapy Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten. CooLift Cryo Therapy
-
 - OVERIG DERMAPLANEPRO Dermaplane pro Een chirurgisch mesje onder 45 graden. Geen zuren, dus ook bij een gevoelige huid. Dermaplaning
 
 - OVERIG SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC Peelinglijnen Geen apparaat maar vier merken peelings, in drie niveaus van sterkte. Welke er past, hangt af van je huid op dat moment. Medische peelings · Cosmelan en dermamelan · Happy Intim
@@ -9327,120 +9199,6 @@ Wie begint bij de techniek komt uit bij waar het meest over geschreven is. Dat i
 > knop: ALLE BEHANDELINGEN
 
 > knop: MAAK JE HUIDPROFIEL
-
----
-
-### /apparatuur/coolifting
-
-**Tabbladtitel:** CooLift Cryo Therapy: het apparaat | Diba Clinics
-
-**Google-omschrijving:** Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten.
-
-**COOLIFT CRYO THERAPY**
-
-Koolzuurgas van min twintig graden wordt onder hoge druk over de huid geblazen. De behandeling duurt een paar minuten.
-
-Een CO2-straal van min twintig graden wordt onder hoge druk op de huid geschoten, samen met een hoge concentratie werkzame stoffen zoals hyaluronzuur en peptiden. De kou laat de vaatjes samentrekken en daarna weer uitzetten; de combinatie met de druk brengt de stoffen dieper.
-
-- CooLift Cryo Therapy € 75
-
-De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
-
-COOLIFT CRYO THERAPY · COOLIFTING
-
-**Hoe dit apparaat op de huid werkt**
-
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
-
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
-
-WAT ER GEBEURT
-
-- 1 Min twintig graden CO2 onder hoge druk raakt de huid. De vaatjes trekken samen.
-
-- 2 En weer open Zodra de kou wegtrekt zetten ze weer uit, en die wisseling is de prikkel.
-
-- 3 Stoffen mee De druk brengt hyaluronzuur en peptiden mee naar binnen.
-
-GRIJPT AAN OP
-
-Bloedvaten
-
-Het rood in bloed neemt bepaalde golflengtes op. Zo raak je een vaatje zonder de huid eromheen.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
-
-De CooLifting-gun blaast koolzuurgas onder hoge druk over de huid, met daarin een fijn verneveld serum met hyaluronzuur. De gasstroom is koud. Kou en druk zijn hier de twee werkzame onderdelen.
-
-De koude gasstroom laat de vaatjes eerst samentrekken en daarna weer verwijden. De druk brengt het vernevelde serum tegen de opperhuid aan. De fabrikant noemt die twee cryoforese en baroforese.
-
-Er komt geen naald aan te pas en er wordt niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan.
-
-**Wat een behandeling met je huid doet**
-
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
-
-- Een huid die er binnen een paar minuten strakker uit moet zien
-
-- Vlak voor een gelegenheid, zonder hersteltijd
-
-- Combineren met een andere behandeling
-
-- Blijvend resultaat
-
-- Littekens of pigment
-
-- Een traject vervangen
-
-**Wat er anders is dan de andere apparaten hier**
-
-Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van je huid en van wat er gemeten is. Hieronder staat waarin ze van elkaar verschillen.
-
-- TEGENOVER Precision Photonic System Werkt ook zonder naalden en zonder hersteltijd, maar met licht in plaats van kou en druk. NAAR DE PRECISION PHOTONIC SYSTEM ›
-
-- TEGENOVER U225 intradermale injector Brengt stoffen in de huid met een naald. De CooLifting doet dat met kou en druk, en werkt op de bovenste lagen. NAAR DE U225 INTRADERMALE INJECTOR ›
-
-**De problemen waar dit apparaat bij past.**
-
-Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Huidveroudering
-
-- Huidverslapping
-
-**Veelgestelde vragen**
-
-Wat gebeurt er met mijn huid? +
-
-Er wordt koolzuurgas onder hoge druk over je huid geblazen met daarin een fijn verneveld serum. De gasstroom is koud, en kou en druk zijn hier de twee werkzame delen.
-
-Komt er een naald aan te pas? +
-
-Nee. Er wordt niets ingebracht en niets weggehaald. Het blijft aan de oppervlakte, en dat is meteen de grens van wat het kan.
-
-Hoe lang duurt het? +
-
-Een paar minuten. Veel mensen plannen het daarom vlak voor iets waar ze goed op willen staan.
-
-Hoe lang houdt het aan? +
-
-Kort. Dit is een opfrisser en geen traject, en zo bieden we het ook aan.
-
-**Het verschil zit in de hand die het bedient**
-
-Dezelfde CooLift Cryo Therapy levert in twee klinieken een ander resultaat. Wat telt is de meting vooraf, de instelling die daarbij hoort en de behandelaar die beoordeelt wat bij jouw huid past.
-
-> knop: WAT ER IN EEN HUIDCONSULT GEBEURT
-
-> knop: ALLE APPARATUUR
-
-- DE METING Onder UV en in normaal licht, zodat je weet wat er zit en hoe diep.
-
-- DE INSTELLING Sterkte, diepte en pulsduur worden op jouw huid gekozen, niet op een standaard.
-
-- HET EERLIJKE NEE Past dit niet bij wat er bij jou aan de hand is, dan zeggen we dat.
 
 ---
 
@@ -9462,29 +9220,21 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 DERMAPEN 4 · DERMAPEN
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Littekens en striae Dermapen 4 € 180 OVER LITTEKENS EN STRIAE
 
-WAT ER GEBEURT
+- Huidveroudering Dermapen 4 € 180 OVER HUIDVEROUDERING
 
-- 1 Diepte per zone Rond de ogen is de huid dunner dan op de wang. De instelling gaat mee.
+- Acnelittekens Dermapen 4 € 180 OVER ACNELITTEKENS
 
-- 2 Trillende naalden De naaldjes bewegen verticaal, wat het weefsel minder scheurt dan slepen.
+- Rimpels Dermapen 4 € 180 OVER RIMPELS
 
-- 3 Collageen daarna De aanmaak komt op gang in de dagen erna, niet tijdens de behandeling.
+- Striae Dermapen 4 € 180 OVER STRIAE
 
-GRIJPT AAN OP
-
-Bindweefsel
-
-Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 Dezelfde techniek als de SkinPen, met een ander motorontwerp. De Dermapen 4 haalt tot 1920 prikken per seconde en heeft hetzelfde diepteberereik van 0,25 tot 3,0 millimeter, in stappen instelbaar per zone van je gezicht.
 
@@ -9492,9 +9242,9 @@ Het verschil dat je merkt zit in de snelheid waarmee een vlak wordt afgewerkt en
 
 Welke van de twee pennen je krijgt hangt niet af van welke beter is, maar van de zone, de diepte die daar past en wat er bij de meting uitkwam.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Acnelittekens en grove poriën
 
@@ -9519,14 +9269,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Littekens en striae
-
-- Huidveroudering
-
-- Rimpels
-
-- Striae
 
 **Veelgestelde vragen**
 
@@ -9578,29 +9320,17 @@ Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje onde
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Droge huid Dermaplaning € 150 OVER DROGE HUID
 
-WAT ER GEBEURT
+- Huidveroudering Dermaplaning € 150 OVER HUIDVEROUDERING
 
-- 1 Vijfenveertig graden Het mesje staat schuin en schraapt niet maar glijdt.
+- Doffe huid Dermaplaning € 150 OVER DOFFE HUID
 
-- 2 Dood eraf Dode cellen en donshaartjes komen los. Levende huid blijft.
-
-- 3 Geen zuur Er komt geen chemie aan te pas, dus ook een gevoelige huid verdraagt het.
-
-GRIJPT AAN OP
-
-De hoornlaag
-
-De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidlagen worden niet op dezelfde manier behandeld.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 Dit is het eenvoudigste wat er in de kliniek staat: een steriel mesje dat onder een vaste hoek over een strak getrokken huid gaat. Er komt geen stroom, licht of warmte aan te pas.
 
@@ -9608,9 +9338,9 @@ Wat eraf gaat zijn dode cellen uit de hoornlaag en de fijne donshaartjes die daa
 
 Het donshaar groeit terug zoals het was: even fijn en even licht. Scheren verandert de haarschacht niet, alleen het uiteinde, en een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Een direct gladde, egale huid
 
@@ -9635,12 +9365,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Droge huid
-
-- Huidveroudering
-
-- Doffe huid
 
 **Veelgestelde vragen**
 
@@ -9692,29 +9416,7 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling.
 
-**Hoe dit apparaat je huid in beeld brengt**
-
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
-
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
-
-WAT ER GEBEURT
-
-- 1 Licht erop Vast licht en een vaste afstand, elke keer hetzelfde, zodat opnames vergelijkbaar blijven.
-
-- 2 Doorkijken De camera leest verschillende lagen uit: pigment, vocht, poriën, structuur.
-
-- 3 Vastleggen Er ligt vast hoe je huid er vandaag uitzag. Dat is het vertrekpunt van je behandelplan.
-
-GRIJPT AAN OP
-
-Meet en fotografeert
-
-De EVE-M legt vast hoe je huid er vandaag uitziet en meet wat eronder zit. Er raakt niets je huid.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 De EVE-M legt je huid vast en meet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf en niet uit de kamer.
 
@@ -9722,9 +9424,9 @@ Een telefoonfoto onder ander licht en vanaf een andere afstand kun je niet met e
 
 Naast gewoon licht wordt er ook onder UV opgenomen. Pigment dat dieper in de huid zit is in gewoon licht nauwelijks te zien en onder UV wel, en juist die diepte bepaalt wat er mogelijk is.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is
 
@@ -9818,29 +9520,33 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 FOTONA TIMEWALKER · FOTONA
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Huidveroudering Fotona TimeWalker € 150 Fotona 4D € 370 Fotona 4D Men Op aanvraag PIANO skin tightening Op aanvraag OVER HUIDVEROUDERING
 
-WAT ER GEBEURT
+- Littekens en striae Fotona TimeWalker € 150 FRAC3 Op aanvraag Fotona Scar Repair Op aanvraag OVER LITTEKENS EN STRIAE
 
-- 1 Puls omlaag Het licht mikt op water in het weefsel en niet op kleur. Daarom werkt het ook waar niets bruin is.
+- Rimpels Fotona TimeWalker € 150 Fotona 4D € 370 SmoothLiftin Op aanvraag SmoothEye € 150 LipLase € 150 VectorLift € 150 OVER RIMPELS
 
-- 2 Warmte op diepte Het weefsel warmt gecontroleerd op, precies zo diep als de instelling toelaat.
+- Huidverslapping Fotona TimeWalker € 150 Fotona 4D € 370 Fotona 4D Men Op aanvraag SmoothLiftin Op aanvraag PIANO skin tightening Op aanvraag VectorLift € 150 OVER HUIDVERSLAPPING
 
-- 3 Weken herstel De opbouw komt daarna. Wat je die dag ziet is zwelling, geen resultaat.
+- Poriën FRAC3 Op aanvraag SupErficial laserpeel Op aanvraag Fotona Resurfacing Op aanvraag OVER PORIËN
 
-GRIJPT AAN OP
+- Acnelittekens FRAC3 Op aanvraag Fotona Scar Repair Op aanvraag Fotona Resurfacing Op aanvraag OVER ACNELITTEKENS
 
-Water
+- Doffe huid SupErficial laserpeel Op aanvraag Fotona Resurfacing Op aanvraag OVER DOFFE HUID
 
-Elke huidcel bestaat grotendeels uit water. Wie daarop mikt raakt weefsel en geen kleur.
+- Wallen SmoothEye € 150 OVER WALLEN
 
-Loopt vanzelf door. Klik een stap om zelf te sturen.
+- Acne Fotona Acne Control Op aanvraag OVER ACNE
 
-**Wat de diepte van dit apparaat bepaalt**
+- Onzuivere huid Fotona Acne Control Op aanvraag OVER ONZUIVERE HUID
+
+- Striae Fotona Scar Repair Op aanvraag OVER STRIAE
+
+**Wat dit apparaat precies doet**
 
 De TimeWalker draagt twee lasers in één kast. Een Er:YAG op 2940 nanometer, die vrijwel volledig door water wordt opgenomen en daardoor aan de oppervlakte blijft. En een Nd:YAG op 1064 nanometer, die veel minder door water wordt tegengehouden en dus dieper komt.
 
@@ -9848,9 +9554,9 @@ Het bijzondere zit in de manier waarop Fotona de Er:YAG aanstuurt. In SMOOTH-mod
 
 Dezelfde SMOOTH-modus zit achter NightLase, waarbij het zachte gehemelte wordt behandeld in plaats van de huid van je gezicht. De laser is dezelfde; alleen de plek en de instelling verschillen.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Verslapping en volumeverlies aanpakken zonder injectables
 
@@ -9879,26 +9585,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Huidveroudering
-
-- Littekens en striae
-
-- Rimpels
-
-- Huidverslapping
-
-- Poriën
-
-- Acnelittekens
-
-- Doffe huid
-
-- Wallen
-
-- Onzuivere huid
-
-- Striae
 
 **Veelgestelde vragen**
 
@@ -9952,29 +9638,13 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 GENTLE LASER PRO-U · CANDELA
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Ingegroeide haren Laserontharing € 20 OVER INGEGROEIDE HAREN
 
-WAT ER GEBEURT
-
-- 1 Koeling eerst De bovenlaag wordt gekoeld zodat het licht dieper kan zonder daar schade te doen.
-
-- 2 Eén golflengte Het licht wordt opgenomen door het pigment in de haarwortel en door bijna niets anders.
-
-- 3 Alleen wat groeit Alleen haren die op dat moment groeien worden geraakt. Daarom is het altijd een reeks.
-
-GRIJPT AAN OP
-
-Melanine
-
-Het pigment in je huid en in de haarwortel. Neemt licht op en zet het om in warmte.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 De Gentle-serie van Candela werkt met een alexandrietlaser op 755 nanometer. Die golflengte wordt sterk opgenomen door melanine, het pigment dat een haar zijn kleur geeft. Daardoor loopt de energie langs de haarschacht naar de wortel en blijft de huid eromheen relatief onberoerd.
 
@@ -9982,9 +9652,9 @@ De pulsduur is instelbaar van een kwart milliseconde tot honderd milliseconden, 
 
 Wat dit apparaat onderscheidt is de koeling. Candela spuit met de Dynamic Cooling Device een stoot cryogeen op de huid, milliseconden voor en na de puls. De opperhuid koelt daardoor terug terwijl de haarwortel de warmte vasthoudt. Dat is de reden dat er met deze laser hogere energie mogelijk is dan zonder die koeling verantwoord zou zijn.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Haargroei op vrijwel elke zone van het lichaam
 
@@ -10064,29 +9734,19 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 HYDRAFACIAL SYNDEO · HYDRAFACIAL
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Poriën HydraFacial € 170 OVER PORIËN
 
-WAT ER GEBEURT
+- Droge huid HydraFacial € 170 OVER DROGE HUID
 
-- 1 Losmaken Een vloeistof maakt de verbinding tussen de buitenste cellen los.
+- Doffe huid HydraFacial € 170 OVER DOFFE HUID
 
-- 2 Wegzuigen Een wervelend mondstuk trekt losgekomen cellen en poriënvulling weg.
+- Onzuivere huid HydraFacial € 170 OVER ONZUIVERE HUID
 
-- 3 Terugbrengen Daarna gaan er werkzame stoffen in dezelfde beweging weer in.
-
-GRIJPT AAN OP
-
-De hoornlaag
-
-De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidlagen worden niet op dezelfde manier behandeld.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 Het werkzame deel is het mondstuk, niet de kast. In de tip zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over de huid: losgemaakte cellen en poriëninhoud gaan mee naar buiten, door een zijkanaal naar een opvangbak, terwijl er via hetzelfde kanaal serum naar binnen gaat.
 
@@ -10094,9 +9754,9 @@ Dat heet Vortex-Fusion: reinigen, losmaken, wegzuigen en inbrengen gebeuren in d
 
 De tips zijn wegwerpartikelen en er zijn verschillende soorten, met een grovere of fijnere spiraal. Welke er gebruikt wordt hangt af van je huid en het doel van de behandeling.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Een huid die er meteen frisser uit moet zien
 
@@ -10121,14 +9781,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Poriën
-
-- Droge huid
-
-- Doffe huid
-
-- Onzuivere huid
 
 **Veelgestelde vragen**
 
@@ -10182,29 +9834,19 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 NORDLYS · CANDELA
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Rosacea Nordlys IPL € 75 OVER ROSACEA
 
-WAT ER GEBEURT
+- Pigmentvlekken Nordlys IPL € 75 OVER PIGMENTVLEKKEN
 
-- 1 Filter kiezen Niet één golflengte maar een bereik, met een filter dat het grofste eruit haalt.
+- Couperose Nordlys IPL € 75 OVER COUPEROSE
 
-- 2 Breed raken Roodheid, vaatjes en oppervlakkig pigment nemen het licht tegelijk op.
+- Ouderdomsvlekken Nordlys IPL € 75 OVER OUDERDOMSVLEKKEN
 
-- 3 Ondiep blijven Gemiddeld komt het minder diep dan een laser. Dat is soms precies wat je wil.
-
-GRIJPT AAN OP
-
-Bloedvaten
-
-Het rood in bloed neemt bepaalde golflengtes op. Zo raak je een vaatje zonder de huid eromheen.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 De Nordlys van Candela is geen laser maar IPL: intens gepulst licht. Een laser zendt één golflengte uit, IPL een band. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.
 
@@ -10212,9 +9854,9 @@ Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerde
 
 Op hetzelfde platform kan ook een Nd:YAG op 1064 nanometer draaien, en fractionele lasers op 1550 en 1940 nanometer. Die komen dieper dan het IPL-licht en doen ander werk.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Roodheid en zichtbare vaatjes in het gelaat
 
@@ -10241,14 +9883,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Rosacea
-
-- Pigmentvlekken
-
-- Couperose
-
-- Ouderdomsvlekken
 
 **Veelgestelde vragen**
 
@@ -10306,29 +9940,27 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 PEELINGLIJNEN · SKIN TECH PHARMA, IMAGE SKINCARE, ADO, MESOESTETIC
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Acne Medische peelings € 140 OVER ACNE
 
-WAT ER GEBEURT
+- Pigmentvlekken Medische peelings € 140 Cosmelan en dermamelan € 550 OVER PIGMENTVLEKKEN
 
-- 1 Sterkte kiezen Drie niveaus. Welke er past hangt af van je huid van vandaag.
+- Poriën Medische peelings € 140 OVER PORIËN
 
-- 2 Inwerktijd De inwerktijd wordt op je huid afgemeten. Langer laten zitten geeft geen beter resultaat.
+- Doffe huid Medische peelings € 140 OVER DOFFE HUID
 
-- 3 Vervellen De losgemaakte laag komt er in dagen af en wordt sneller vervangen.
+- Onzuivere huid Medische peelings € 140 OVER ONZUIVERE HUID
 
-GRIJPT AAN OP
+- Ouderdomsvlekken Medische peelings € 140 OVER OUDERDOMSVLEKKEN
 
-De hoornlaag
+- Melasma Cosmelan en dermamelan € 550 OVER MELASMA
 
-De behandeling werkt op de buitenste laag met dode huidcellen; de diepere huidlagen worden niet op dezelfde manier behandeld.
+- Huidverkleuring Happy Intim € 175 OVER HUIDVERKLEURING
 
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 Een peeling is geen apparaat maar een vloeistof, en wat hij doet hangt af van drie dingen: welk zuur erin zit, hoe geconcentreerd het is en hoe zuur het mengsel als geheel is. Die drie samen bepalen hoe diep het komt.
 
@@ -10336,9 +9968,9 @@ Fruitzuren blijven in de hoornlaag en spoelen er na een paar minuten weer af. Sa
 
 Welke lijn en welke sterkte er bij jou past hangt af van je huidtype, van wat je op dit moment gebruikt en van het seizoen.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Oppervlakkige verkleuring lichter maken
 
@@ -10363,22 +9995,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Acne
-
-- Pigmentvlekken
-
-- Poriën
-
-- Doffe huid
-
-- Onzuivere huid
-
-- Ouderdomsvlekken
-
-- Melasma
-
-- Huidverkleuring
 
 **Veelgestelde vragen**
 
@@ -10432,29 +10048,17 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 PRECISION PHOTONIC SYSTEM · SKIN COMPLETE
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Rosacea LED-therapie € 30 OVER ROSACEA
 
-WAT ER GEBEURT
+- Roodheid LED-therapie € 30 OVER ROODHEID
 
-- 1 Golflengte gekozen De behandelaar stelt de kleur in die bij je huid en het doel van de sessie hoort.
+- Gevoelige huid LED-therapie € 30 OVER GEVOELIGE HUID
 
-- 2 Onder de boog Je krijgt een bril op en het paneel hangt op een handbreedte boven je gezicht.
-
-- 3 Vaste tijd De sessie loopt op een ingestelde tijd; daarna ga je direct door met je dag.
-
-GRIJPT AAN OP
-
-De huid zelf
-
-Het licht wordt door de huid opgenomen en ondersteunt daar het herstel. Er is geen los bestanddeel waar het op mikt, zoals bij een laser.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 LED werkt anders dan een laser of IPL. Die verwarmen een doelwit in de huid, pigment of een vaatje of water, en het resultaat komt uit het herstel dat daarop volgt. LED verwarmt niets: het licht wordt door de huid opgenomen en doet zijn werk in de cel zelf.
 
@@ -10466,9 +10070,9 @@ De huid blijft intact, dus er is niets dat hoeft te herstellen: geen roodheid, g
 
 Het werkt cumulatief. Eén sessie is één prikkel; het verschil ontstaat over een reeks, met een paar dagen tot een week ertussen. De behandelaar kiest de golflengte en de tijd op basis van wat er uit de huidanalyse kwam.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Roodheid en rosacea rustiger maken
 
@@ -10490,15 +10094,9 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER Fotona TimeWalker Breekt weefsel af om herstel uit te lokken. LED werkt zachter: licht dat de huid kalmeert en het herstel ondersteunt. NAAR DE FOTONA TIMEWALKER ›
 
-- TEGENOVER CooLift Cryo Therapy Werkt ook zonder naalden en zonder hersteltijd, maar met kou en druk in plaats van licht. NAAR DE COOLIFT CRYO THERAPY ›
-
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Rosacea
-
-- Gevoelige huid
 
 **Veelgestelde vragen**
 
@@ -10556,29 +10154,23 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 SKINPEN CIT · SKINPEN
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Littekens en striae SkinPen Microneedling € 180 OVER LITTEKENS EN STRIAE
 
-WAT ER GEBEURT
+- Huidveroudering SkinPen Microneedling € 180 OVER HUIDVEROUDERING
 
-- 1 Verdoven Een crème krijgt de tijd. Dat wachten hoort erbij en wordt niet overgeslagen.
+- Poriën SkinPen Microneedling € 180 OVER PORIËN
 
-- 2 Kanaaltjes Fijne naalden maken duizenden kleine kanaaltjes tot in de bovenste lederhuid.
+- Acnelittekens SkinPen Microneedling € 180 OVER ACNELITTEKENS
 
-- 3 Herstel is het werk De prikjes zijn de aanleiding. Wat je ziet komt weken later, van de opbouw.
+- Striae SkinPen Microneedling € 180 OVER STRIAE
 
-GRIJPT AAN OP
+- Rimpels SkinPen Microneedling € 180 OVER RIMPELS
 
-Bindweefsel
-
-Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 Een microneedling-pen zet een cartridge met naalden in een snelle op-en-neerbeweging. De SkinPen heeft er veertien, en de diepte is instelbaar van een kwart millimeter tot drie millimeter. Dat bereik loopt van net door de hoornlaag tot in het bindweefsel.
 
@@ -10586,9 +10178,9 @@ De diepte is de enige instelling die er echt toe doet, want die bepaalt in welke
 
 De cartridges zijn steriel en voor eenmalig gebruik. Bij microneedling gaan de naalden door de huidbarrière heen, dus dat luistert nauw.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Littekens die door verlies van structuur zijn ontstaan
 
@@ -10613,18 +10205,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Littekens en striae
-
-- Huidveroudering
-
-- Poriën
-
-- Acnelittekens
-
-- Striae
-
-- Rimpels
 
 **Veelgestelde vragen**
 
@@ -10680,29 +10260,19 @@ De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de beh
 
 U225 INTRADERMALE INJECTOR · U225
 
-**Hoe dit apparaat op de huid werkt**
+**Welke klachten we hiermee behandelen**
 
-Elk apparaat grijpt ergens op aan en komt tot een bepaalde diepte. Dat is meteen ook de grens van wat het kan. Hieronder zie je die grens, in dezelfde doorsnede als bij elk ander apparaat, zodat je ze naast elkaar kunt leggen.
+Per klacht staat erbij welke behandeling op dit apparaat daarvoor wordt gebruikt. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.
 
-De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
+- Huidveroudering Skinboosters en mesotherapie € 175 OVER HUIDVEROUDERING
 
-WAT ER GEBEURT
+- Melasma Skinboosters en mesotherapie € 175 OVER MELASMA
 
-- 1 Vaste diepte De naald zit los van de spuit gemonteerd, wat de precisie van elke prik verbetert.
+- Donkere kringen Skinboosters en mesotherapie € 175 OVER DONKERE KRINGEN
 
-- 2 Automatisch tempo Toediening gebeurt regelmatig en niet op gevoel van de hand.
+- Rimpels Skinboosters en mesotherapie € 175 OVER RIMPELS
 
-- 3 Verspreiden Het middel verdeelt zich in de laag waar het werk moet gebeuren.
-
-GRIJPT AAN OP
-
-Bindweefsel
-
-Het draagvlak van je huid. Wat je hier prikkelt, herstelt met opbouw.
-
-Loopt vanzelf door. Klik een stap om zelf te sturen.
-
-**Wat de diepte van dit apparaat bepaalt**
+**Wat dit apparaat precies doet**
 
 De U225 is een injector, geen laser en geen apparaat dat op de huid werkt. Een luchtdruksysteem duwt een instelbare hoeveelheid vloeistof door een fijne naald, op een diepte tussen één en tien millimeter, tot acht keer per seconde.
 
@@ -10710,9 +10280,9 @@ Wat hem onderscheidt van met de hand injecteren is dat alleen de naald beweegt e
 
 Wat er in de spuit zit bepaalt de behandeling, niet het apparaat. Dat kan een skinbooster zijn of een mesotherapie-mengsel, en die keuze hoort bij de behandelaar.
 
-**Wat een behandeling met je huid doet**
+**Waar dit apparaat voor bedoeld is**
 
-Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
+Links waar dit apparaat voor gemaakt is, rechts wanneer een ander apparaat meer voor je doet.
 
 - Fijne lijnen en verslapping
 
@@ -10737,14 +10307,6 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 **De problemen waar dit apparaat bij past.**
 
 Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij die klacht behandelen.
-
-- Huidveroudering
-
-- Melasma
-
-- Donkere kringen
-
-- Rimpels
 
 **Veelgestelde vragen**
 
@@ -10819,8 +10381,6 @@ Reinigen, hydrateren, oppervlakkig vernieuwen.
 - Oxygeneo glow Exfoliëren en zuurstof in de huid brengen, in één behandeling. € 150
 
 - Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. € 150
-
-- CooLift Cryo Therapy Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. € 75
 
 De bovenlaag sneller laten vernieuwen.
 
@@ -12584,7 +12144,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **ALLES WAT WE UITLEGGEN**
 
-Alles wat hier wordt uitgelegd staat verspreid over 30 huidprobleempagina's, 12 apparaatpagina's en 36behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
+Alles wat hier wordt uitgelegd staat verspreid over 30 huidprobleempagina's, 11 apparaatpagina's en 35behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
 
 De doorsnedes, testen en vergelijkers staan er los bij. Die zijn het meeste werk en tegelijk het slechtst vindbaar, want ze staan halverwege een pagina waar je niet komt als je er niet naar zoekt.
 
@@ -13848,7 +13408,7 @@ Of en hoe er na de meting wordt teruggekoppeld aan de verwijzer is nog niet vast
 
 - Wat wij behandelen Alle behandelingen, met wat ze doen en wat ze kosten.
 
-- De 12 apparaten Wat er staat, tot welke diepte het komt en wat het niet kan.
+- De 11 apparaten Wat er staat, tot welke diepte het komt en wat het niet kan.
 
 - Vergoeding Waarom de verzekeraar niet de eerste vraag is, en wanneer een verwijzing nodig is.
 
@@ -13909,4 +13469,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_120 pagina's · 6462 tekstblokken · ongeveer 93.805 woorden._
+_118 pagina's · 6250 tekstblokken · ongeveer 91.384 woorden._
