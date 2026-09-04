@@ -110,9 +110,9 @@ export default function HuidverouderingPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Hoe je huid
+              Huidveroudering
               <br />
-              <span className="diba-accent">veroudert met de jaren</span>
+              <span className="diba-accent">behandelen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -198,8 +198,8 @@ export default function HuidverouderingPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Vier dingen die mensen"
-            accent="veroudering noemen."
+            kop="Wat mensen"
+            accent="veroudering noemen"
             intro="Drie ervan behandelen we. Bij de vierde zeggen we nee, en dat staat er met dezelfde nadruk bij. Kies wat het dichtst bij jou komt."
           />
           <SoortKiezer

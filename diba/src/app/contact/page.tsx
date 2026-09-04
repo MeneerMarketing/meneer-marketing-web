@@ -139,10 +139,11 @@ export default function ContactPage() {
               <span className="text-[var(--t-muted)]">Contact</span>
             </nav>
 
+            {/* Het adres stond in de displaymaat en liep over drie regels: de straatnaam
+                past daar niet op een regel. Het adres staat er hieronder toch al, dus de
+                kop mag zeggen waar de pagina over gaat. */}
             <h1 className="diba-display-l mt-6 max-w-[14ch]">
-              {DIBA_ADDRESS.street},
-              <br />
-              <span className="diba-accent">{DIBA_ADDRESS.city}.</span>
+              Contact en <span className="diba-accent">route</span>
             </h1>
 
             <address className="mt-7 text-[20px] leading-8 not-italic text-[var(--t-strong)]">

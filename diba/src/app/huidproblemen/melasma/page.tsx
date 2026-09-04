@@ -93,9 +93,9 @@ export default function MelasmaPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Melasma: vlekken
+              Melasma
               <br />
-              <span className="diba-accent">die steeds terugkomen</span>
+              <span className="diba-accent">behandelen</span>
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -163,9 +163,9 @@ export default function MelasmaPage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De drie kranen"
-            kop="Melasma heeft een kraan."
-            accent="Die staat maar deels bij jou."
+            label="Wat het aanwakkert"
+            kop="Drie dingen die"
+            accent="melasma sturen"
             intro="Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepalen hoe ver hij open staat. Kijk naar de derde kolom: dat is het deel dat je zelf in de hand hebt."
           />
 

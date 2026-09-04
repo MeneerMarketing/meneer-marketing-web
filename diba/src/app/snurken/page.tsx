@@ -283,8 +283,8 @@ export default function SnurkenPage() {
         <div className="mx-auto">
           <SectieKop
             label="NightLase"
-            kop="Warmte op het gehemelte,"
-            accent="drie keer, met weken ertussen."
+            kop="Zo werkt"
+            accent="NightLase"
             intro="Als het geluid uit je zachte gehemelte komt, is dit wat we kunnen doen. Geen snijden, geen naalden, en niets dat je 's nachts in moet doen."
           />
 

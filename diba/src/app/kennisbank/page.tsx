@@ -79,8 +79,7 @@ export default function KennisbankPage() {
             <div className="mt-8">
               <Label>Diba kennisbank</Label>
               <h1 className="diba-display-l mt-4">
-                Alles wat we uitleggen,{" "}
-                <span className="diba-accent">op één plek</span>
+                Alles wat we <span className="diba-accent">uitleggen</span>
               </h1>
             </div>
 

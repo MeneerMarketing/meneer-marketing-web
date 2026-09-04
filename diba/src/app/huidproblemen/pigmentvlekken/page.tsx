@@ -173,8 +173,8 @@ export default function PigmentPage() {
         <div className="mx-auto">
           <SectieKop
             label="Herkenning"
-            kop="Drie soorten pigment,"
-            accent="drie andere uitkomsten."
+            kop="Drie soorten"
+            accent="pigment"
             intro="Zonschade en melasma lijken op elkaar, maar vragen een andere behandeling. Welk type je hebt, stellen we vast voordat we beginnen. Kies het patroon dat het dichtst bij jou komt."
           />
           <SoortKiezer

@@ -805,11 +805,21 @@ body:has(.figma-home) {
       font-size: 4.5rem;
     }
 
+    /* Stond hier op 3.75rem, dus een sprong van 36 naar 60 pixels op 640 breed. In een
+       tweekolomssectie krijgt de kop bij 1280 zo'n 490 pixels, en daar past 60 pixels niet
+       in: drieendertig sectiekoppen liepen daardoor over drie regels terwijl er twee de
+       maat zijn. Nu een tussenstap, en de grote maat pas als er ook ruimte voor is. */
     .diba-display-m {
-      font-size: 3.75rem;
+      font-size: 3rem;
     }
     /* Kaartkoppen schalen bewust NIET mee: in het ontwerp staan ze op een vaste
        24px respectievelijk 30px, zonder sm:-variant. */
+  }
+
+  @media (min-width: 1536px) {
+    .diba-display-m {
+      font-size: 3.75rem;
+    }
   }
 
   /* Het accentdeel van een kop: altijd de belofte die Diba waarmaakt, nooit

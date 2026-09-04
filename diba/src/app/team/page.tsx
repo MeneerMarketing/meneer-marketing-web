@@ -132,8 +132,8 @@ export default function TeamPage() {
               <div>
                 <Label opDonker>Wat een titel betekent</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Huidtherapeut of schoonheidsspecialist:{" "}
-                  <span className="diba-accent-on-dark">het verschil</span>
+                  Het verschil in{" "}
+                  <span className="diba-accent-on-dark">opleiding</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                   Dit staat op geen enkele kliniekwebsite en het is precies wat

@@ -143,7 +143,7 @@ export const MOEDERVLEK_VOORWAARDEN = [
       "Met een verwijzing in de hand nemen we het plekje weg met warmte, in een korte handeling. Die volgorde staat vast: alleen een arts kan weefsel laten onderzoeken, en dat kan achteraf niet meer.",
   },
   {
-    titel: "Ligt er een moedervlek in het behandelgebied, dan dekken we die af",
+    titel: "We dekken moedervlekken af",
     tekst:
       "Laseren we vlakbij, dan gaat er een dekje overheen. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.",
   },

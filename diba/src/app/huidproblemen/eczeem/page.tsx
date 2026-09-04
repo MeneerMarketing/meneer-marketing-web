@@ -127,8 +127,8 @@ export default function EczeemPage() {
         <div className="mx-auto">
           <SectieKop
             label="De krabcirkel"
-            kop="Vier schakels,"
-            accent="vier manieren om te breken."
+            kop="De vier"
+            accent="schakels"
             intro="Elk punt in deze lus houdt de volgende in stand. Tik ze aan en kijk wie hem kan doorbreken. Bij drie van de vier zijn wij dat niet."
           />
           <Krabcirkel />

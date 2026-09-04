@@ -165,8 +165,8 @@ export default function DonkereKringenPage() {
         <div className="mx-auto">
           <SectieKop
             label="De drie types"
-            kop="Hetzelfde beeld,"
-            accent="drie verschillende oorzaken."
+            kop="Drie"
+            accent="oorzaken"
             intro="Voor wie de test wil overslaan of wil nalezen wat eruit kwam. Let op de middelste kolom: die verschilt per type en daarom één behandeling voor alle drie niet bestaat."
           />
 

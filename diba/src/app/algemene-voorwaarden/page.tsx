@@ -91,9 +91,9 @@ export default function VoorwaardenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[15ch]">
-              De afspraken die
+              Algemene
               <br />
-              <span className="diba-accent">voor iedereen gelden</span>
+              <span className="diba-accent">voorwaarden</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">

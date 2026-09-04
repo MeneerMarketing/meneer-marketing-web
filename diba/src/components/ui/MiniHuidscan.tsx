@@ -376,12 +376,12 @@ function Intro({ onStart, titelId }: { onStart: () => void; titelId: string }) {
     <div className="grid gap-6 sm:grid-cols-[1fr_auto] sm:items-center">
       <div>
         <h3 id={titelId} className="diba-card-title">
-          Doe de mini-scan als je nog niet weet waar je moet beginnen
+          Doe de mini-scan
         </h3>
         <p className="mt-3 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-          Vier vragen, dertig seconden. Je krijgt een profielschets op basis van
-          wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een
-          eerste indruk.
+          Weet je nog niet waar te beginnen? Vier vragen, dertig seconden. Je
+          krijgt een profielschets op basis van wat je zelf aangeeft. Een meting
+          doen we in de kliniek; dit is een eerste indruk.
         </p>
         <Button onClick={onStart} className="mt-6">
           Start de mini-scan

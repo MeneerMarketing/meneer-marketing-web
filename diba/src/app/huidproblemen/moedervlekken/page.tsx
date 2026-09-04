@@ -91,9 +91,9 @@ export default function MoedervlekkenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              Een moedervlek die stoort
+              Moedervlekken
               <br />
-              <span className="diba-accent">kan weg</span>
+              <span className="diba-accent">weghalen</span>
             </h1>
 
             {/* Rojda, 3 september 2026: "We beoordelen het, en coaguleren indien
@@ -164,8 +164,8 @@ export default function MoedervlekkenPage() {
       />
 
       <WijZeggenNee
-        kop="Wat er eerst gebeurt"
-        accent="voordat er iets weggaat"
+        kop="Voordat we"
+        accent="iets weghalen"
         intro="Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie stappen die aan een behandeling voorafgaan, en de eerste is de enige op deze site die je later niet kunt inhalen."
         punten={MOEDERVLEK_VOORWAARDEN}
       />

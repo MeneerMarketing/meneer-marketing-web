@@ -134,11 +134,9 @@ export default function KlachtenPage() {
         <div className="mx-auto rounded-[var(--r-md)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
           <Label opDonker>Wat je van ons mag verwachten</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Een klacht kost je niets
+            Wat een klacht
             <br />
-            <span className="diba-accent-on-dark">
-              en verandert niets aan je behandeling
-            </span>
+            <span className="diba-accent-on-dark">je oplevert</span>
           </h2>
           <ul className="mt-9 grid gap-4 md:grid-cols-2">
             {KLACHT_HOUDING.map((z) => (

@@ -160,15 +160,12 @@ export default function Pagina() {
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
-            {CONSULT_BEOORDELING.map((stap, i) => (
+            {CONSULT_BEOORDELING.map((stap) => (
               <li
                 key={stap.kop}
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
-                <span className="diba-label text-[var(--g-700)]">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="diba-card-title mt-3">{stap.kop}</h3>
+                <h3 className="diba-card-title">{stap.kop}</h3>
                 <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(stap.tekst)}
                 </p>

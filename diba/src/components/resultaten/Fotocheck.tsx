@@ -32,15 +32,12 @@ import { FOTOVARIABELEN } from "@/data/fotobewijs";
 export default function Fotocheck() {
   return (
     <ol className="grid gap-3 md:grid-cols-2">
-      {FOTOVARIABELEN.map((v, i) => (
+      {FOTOVARIABELEN.map((v) => (
         <li
           key={v.id}
           className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-6 sm:p-7"
         >
           <div className="flex items-baseline gap-3">
-            <span className="diba-label text-[var(--t-muted)] tabular-nums">
-              {String(i + 1).padStart(2, "0")}
-            </span>
             {/* De drie zwaarste. Eerst was dit een verborgen vermenigvuldiging in de
                 score; een zin die zegt welke het meeste doen is even waar en veel
                 bruikbaarder. */}

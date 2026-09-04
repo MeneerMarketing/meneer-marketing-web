@@ -396,9 +396,7 @@ export default function PrivacyPage() {
           <div>
             <Label>Wat er niet gebeurt</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Wij bouwen geen profielen
-              <br />
-              <span className="diba-accent">en verkopen niets</span>
+              Wat we met <span className="diba-accent">je gegevens doen</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

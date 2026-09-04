@@ -81,7 +81,10 @@ export function SectieKop({
           </span>
         ) : null}
         <Label opDonker={opDonker}>{label}</Label>
-        <h2 className="diba-display-m mt-4 max-w-[18ch]">
+        {/* 18ch kneep de kop af, en met de accentregel eronder kwam je dan op drie
+            regels uit. Drieendertig sectiekoppen op de site hadden dat. 26ch laat de
+            eerste regel heel, en de kolom is er breed genoeg voor. */}
+        <h2 className="diba-display-m mt-4 max-w-[26ch]">
           {kop}
           {accent ? (
             <>
@@ -379,12 +382,15 @@ export function PillarFaq({
       ) : null}
 
       <div className="mx-auto grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
+        {/* Het onderwerp stond in de kop, en daardoor liep "Veelgestelde vragen over de
+            U225 intradermale injector" over vijf regels in een kolom van zestien tekens.
+            Vijftien pagina's hadden dat probleem. Het onderwerp staat nu in het label
+            erboven, waar het in kleine kapitalen op een regel past, en de kop is overal
+            dezelfde twee woorden. */}
         <div>
-          <Label>Goed om te weten</Label>
+          <Label>{onderwerp ? `Over ${onderwerp}` : "Goed om te weten"}</Label>
           <h2 className="diba-display-m mt-4 max-w-[16ch]">
-            {onderwerp
-              ? `Veelgestelde vragen over ${onderwerp}`
-              : "Veelgestelde vragen"}
+            Veelgestelde vragen
           </h2>
         </div>
 

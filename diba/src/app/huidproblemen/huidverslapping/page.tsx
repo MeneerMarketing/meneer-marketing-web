@@ -189,8 +189,8 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier stadia"
-            kop="Bij twee valt er iets te winnen,"
-            accent="bij twee ligt het elders."
+            kop="De vier"
+            accent="stadia"
             intro="Verslapping, volumeverlies en losgelaten huid worden door elkaar gehaald en vragen om drie verschillende dingen. Alleen het eerste is ons vak."
           />
           <SoortKiezer

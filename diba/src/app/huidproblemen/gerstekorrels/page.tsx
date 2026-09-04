@@ -149,8 +149,8 @@ export default function Pagina() {
           <SectieKop
             label="In de behandelkamer"
             raster="gelijk"
-            kop="Een naald naast je oog."
-            accent="Daar mag je tegenop zien."
+            kop="Hoe we milia"
+            accent="weghalen"
             intro="De drempel bij milia is zelden de prijs en bijna altijd dat beeld. Daar omheen praten maakt het niet kleiner, dus staat hier gewoon wat er gebeurt en hoe lang het duurt."
           />
 

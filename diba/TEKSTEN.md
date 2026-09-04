@@ -82,9 +82,9 @@ Tijdens de intake bespreken we je klacht en bekijkt de behandelaar je huid. Help
 
 > knop: WAT GEBEURT ER IN EEN HUIDANALYSE?
 
-**Doe de mini-scan als je nog niet weet waar je moet beginnen**
+**Doe de mini-scan**
 
-Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een eerste indruk.
+Weet je nog niet waar te beginnen? Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een eerste indruk.
 
 > knop: START DE MINI-SCAN
 
@@ -182,7 +182,7 @@ Huidkliniek in Rotterdam. Behandelingen voor acne, pigment, littekens, huidverbe
 
 **Google-omschrijving:** Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam, Rotterdam. Bellen, appen of mailen: hier staat welke vraag waar thuishoort.
 
-**WEISSENBRUCHLAAN 166, ROTTERDAM.**
+**CONTACT EN ROUTE**
 
 Je kunt ons bellen, een WhatsApp-bericht sturen of mailen. Voor het maken van een afspraak is de online agenda meestal het snelst.
 
@@ -422,7 +422,7 @@ Dat is makkelijk gezegd. Hier staat wiens hand dat is.
 
 Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag, en als je een voorkeur hebt kun je die gewoon noemen.
 
-**Huidtherapeut of schoonheidsspecialist: het verschil**
+**Het verschil in opleiding**
 
 Dit staat op geen enkele kliniekwebsite en het is precies wat je hoort te weten voordat je op een stoel gaat zitten. Dus staat het er.
 
@@ -484,7 +484,7 @@ Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment
 
 **Google-omschrijving:** Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.
 
-**KIES HET HUIDPROBLEEM WAAR JE MEE ZIT**
+**ALLE HUIDPROBLEMEN**
 
 Bij acne telt wáár het zit, want de plek zegt iets over de oorzaak. Bij pigment telt welk seizoen het is. Bij littekens telt hoe oud ze zijn, en bij melasma hoe diep het pigment ligt.
 
@@ -896,7 +896,7 @@ Bruine plekken, ook de vlekken die je nu nog niet ziet
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over acnelittekens**
+**Veelgestelde vragen**
 
 Hoe weet ik of het een litteken is of alleen kleur? +
 
@@ -1006,7 +1006,7 @@ De laatste regel links is de enige op deze hele site die niet over je huid gaat,
 
 - Denken dat het aan jou ligt. Cellulitis hangt samen met de bouw van je onderhuid en niet met je inzet.
 
-**Veelgestelde vragen over cellulitis**
+**Veelgestelde vragen**
 
 Waarom hebben mannen dit bijna niet? +
 
@@ -1040,7 +1040,7 @@ Er staat op deze pagina geen knop om een afspraak te maken. Wil je wel iets aan 
 
 **Google-omschrijving:** Couperose behandelen met IPL en laser. Rode vaatjes op je wangen of naast je neus, hoe je ze herkent en wat een behandeling kost.
 
-**RODE ADERTJES DIE NIET MEER WEGTREKKEN**
+**COUPEROSE BEHANDELEN**
 
 Die dunne rode of paarse lijntjes op je wangen of naast je neus heten couperose. Een egale rode waas is iets anders en vraagt om een andere aanpak, al zitten ze vaak samen. Met je vinger zie je binnen een paar seconden waar je mee te maken hebt.
 
@@ -1166,7 +1166,7 @@ Hoe snel je huid reageert, want dat bepaalt de instelling
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over couperose**
+**Veelgestelde vragen**
 
 Komen die vaatjes terug na de behandeling? +
 
@@ -1308,7 +1308,7 @@ Hoe egaal de kleur is over het hele vlak
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over een doffe huid**
+**Veelgestelde vragen**
 
 Waarom ziet mijn huid er 's ochtends doffer uit? +
 
@@ -1370,7 +1370,7 @@ Ga voor een raam staan met het daglicht recht in je gezicht, en kijk dan in je t
 
 Licht van boven maakt van elke holte een donkere plek. Verdwijnt de kring bij licht van voren, dan kijk je naar een schaduw en niet naar een kleur.
 
-**Hetzelfde beeld, drie verschillende oorzaken.**
+**Drie oorzaken**
 
 Voor wie de test wil overslaan of wil nalezen wat eruit kwam. Let op de middelste kolom: die verschilt per type en daarom één behandeling voor alle drie niet bestaat.
 
@@ -1434,7 +1434,7 @@ Hoe diep de overgang naar de wang ligt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over donkere kringen**
+**Veelgestelde vragen**
 
 Komt het echt niet door te weinig slaap? +
 
@@ -1576,7 +1576,7 @@ Hoe snel dat vocht weer verdwijnt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over een droge huid**
+**Veelgestelde vragen**
 
 Wat is nou het verschil tussen droog en uitgedroogd? +
 
@@ -1624,7 +1624,7 @@ Jeuk die je uit je slaap houdt, kloofjes, of plekken die steeds terugkomen op de
 
 Er bestaat behandeling voor, en die begint daar. Hoe langer de cirkel draait, hoe moeilijker hij te doorbreken is.
 
-**Vier schakels, vier manieren om te breken.**
+**De vier schakels**
 
 Elk punt in deze lus houdt de volgende in stand. Tik ze aan en kijk wie hem kan doorbreken. Bij drie van de vier zijn wij dat niet.
 
@@ -1688,7 +1688,7 @@ Het eerste kruisje rechts kost de meeste tijd: wachten met de huisarts omdat je 
 
 - Een cosmetische behandeling boeken op actief eczeem. Daar wordt het erger van en wij doen het dus niet.
 
-**Veelgestelde vragen over eczeem**
+**Veelgestelde vragen**
 
 Kan ik met eczeem bij jullie terecht? +
 
@@ -1732,7 +1732,7 @@ Is het rood, warm en pijnlijk, dan is het een ontsteking en dan hoort het bij de
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Een naald naast je oog. Daar mag je tegenop zien.**
+**Hoe we milia weghalen**
 
 De drempel bij milia is zelden de prijs en bijna altijd dat beeld. Daar omheen praten maakt het niet kleiner, dus staat hier gewoon wat er gebeurt en hoe lang het duurt.
 
@@ -1800,7 +1800,7 @@ Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het he
 
 - Onnodig meerdere afspraken plannen Een gerstekorrel verwijderen is meestal een eenmalige behandeling.
 
-**Veelgestelde vragen over gerstekorrels**
+**Veelgestelde vragen**
 
 Waarom kan ik een milium niet uitdrukken? +
 
@@ -1944,7 +1944,7 @@ Hoe gelijkmatig de bovenlaag ligt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over een gevoelige huid**
+**Veelgestelde vragen**
 
 Is een gevoelige huid iets waarmee je geboren wordt? +
 
@@ -2090,7 +2090,7 @@ Het eerste kruisje rechts maakt het werk van de arts moeilijker: zalf op onbeken
 
 - Krabben, ook al is het moeilijk. Krabben maakt het beeld onduidelijker en de huid kwetsbaarder.
 
-**Veelgestelde vragen over huiduitslag**
+**Veelgestelde vragen**
 
 Werkt de glastest altijd? +
 
@@ -2206,7 +2206,7 @@ Eén ding telt zwaarder dan de kleur
 
 Verandert een plek van vorm, kleur of grootte, jeukt of bloedt hij, of is hij er in korte tijd bij gekomen? Dan doet de kleur er niet toe en hoort hij bij de huisarts. Dat geldt voor bruin, rood, wit en blauw evengoed.
 
-**Veelgestelde vragen over huidverkleuring**
+**Veelgestelde vragen**
 
 Wat als ik meerdere kleuren tegelijk heb? +
 
@@ -2242,7 +2242,7 @@ Twijfel je tussen twee kleuren of spelen er meerdere veranderingen tegelijk, laa
 
 **Google-omschrijving:** Huidveroudering behandelen met peelings, needling en laser. Het meeste komt door zon en niet door leeftijd, en juist dat is aan te pakken.
 
-**HOE JE HUID VEROUDERT MET DE JAREN**
+**HUIDVEROUDERING BEHANDELEN**
 
 Het grootste deel van wat je huid ouder maakt, komt door zonlicht en niet door je leeftijd. Dat deel is goed te behandelen, met peelings, needling en laser.
 
@@ -2326,7 +2326,7 @@ De eerste zonschade wordt zichtbaar terwijl er nog niets vastligt. Een nulmeting
 
 Tel de okeren balkjes. Dat is het deel van wat je ziet dat door zon komt, en daarmee het deel waar vandaag nog iets aan te doen valt. De groene balkjes lopen door wat je ook kiest.
 
-**Vier dingen die mensen veroudering noemen.**
+**Wat mensen veroudering noemen**
 
 Drie ervan behandelen we. Bij de vierde zeggen we nee, en dat staat er met dezelfde nadruk bij. Kies wat het dichtst bij jou komt.
 
@@ -2404,7 +2404,7 @@ Waar ze staan en of ze in rust blijven
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over huidveroudering**
+**Veelgestelde vragen**
 
 Vanaf welke leeftijd is dit zinvol? +
 
@@ -2464,7 +2464,7 @@ Dit is een herkenningshulp en tegelijk de eerlijkste voorspelling die er bestaat
 
 - STAP 3 Vergelijk de twee Het verschil tussen die twee beelden geeft ongeveer aan wat er te winnen valt. Is er nauwelijks verschil, dan levert een behandeling weinig op.
 
-**Bij twee valt er iets te winnen, bij twee ligt het elders.**
+**De vier stadia**
 
 Verslapping, volumeverlies en losgelaten huid worden door elkaar gehaald en vragen om drie verschillende dingen. Alleen het eerste is ons vak.
 
@@ -2550,7 +2550,7 @@ Het oppervlak, want dat verandert vaak eerder dan de vorm
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over huidverslapping**
+**Veelgestelde vragen**
 
 Is dit een alternatief voor een facelift? +
 
@@ -2668,7 +2668,7 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strak scheren,
 
 - Beloven dat elk haartje weggaat. Lichte en grijze haren reageren nauwelijks op licht
 
-**Veelgestelde vragen over ingegroeide haren**
+**Veelgestelde vragen**
 
 Gaan ingegroeide haren weg van laserontharing? +
 
@@ -2714,11 +2714,11 @@ En de meest gemaakte vergissing staat er meteen bij: schuren helpt niet. De prop
 
 Verhoorning en een droge huid lijken op elkaar en vragen een andere behandeling. Dit zijn de drie dingen waaraan de huidtherapeut ze uit elkaar houdt.
 
-- 01 Hoe de bultjes aanvoelen Verhoorning voelt als fijn schuurpapier en zit vast in de porie. Droogte voelt ruw, maar laat zich wegwrijven.
+- Hoe de bultjes aanvoelen Verhoorning voelt als fijn schuurpapier en zit vast in de porie. Droogte voelt ruw, maar laat zich wegwrijven.
 
-- 02 Of het aan beide kanten zit Keratosis pilaris is vrijwel altijd symmetrisch. Zit het aan een kant of op geschoren zones, dan is het iets anders.
+- Of het aan beide kanten zit Keratosis pilaris is vrijwel altijd symmetrisch. Zit het aan een kant of op geschoren zones, dan is het iets anders.
 
-- 03 Hoe het door het jaar loopt In de winter duidelijker en in de zomer rustiger past bij verhoorning. Bij droogte verdwijnt het ’s zomers vrijwel.
+- Hoe het door het jaar loopt In de winter duidelijker en in de zomer rustiger past bij verhoorning. Bij droogte verdwijnt het ’s zomers vrijwel.
 
 **Vier beelden die ruw aanvoelen**
 
@@ -2782,7 +2782,7 @@ Hier hoort onderhoud bij en geen kuur met een eindpunt. Dat is minder aantrekkel
 
 - Het behandelen als acne. Er zit geen ontsteking en geen bacterie in
 
-**Veelgestelde vragen over keratosis pilaris**
+**Veelgestelde vragen**
 
 Gaat kippenvelhuid ooit weg? +
 
@@ -2956,7 +2956,7 @@ Hoe groot het gebied is dat we behandelen
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over littekens**
+**Veelgestelde vragen**
 
 Gaan mijn littekens helemaal weg? +
 
@@ -3000,7 +3000,7 @@ Bij een rood litteken of rode striae is dit het moment waarop het het meeste uit
 
 **Google-omschrijving:** Melasma behandelen met peelings, verzorging en zonbescherming. Hoe diep het pigment zit bepaalt wat mogelijk is, en dat zien we onder UV-scan beginnen.
 
-**MELASMA: VLEKKEN DIE STEEDS TERUGKOMEN**
+**MELASMA BEHANDELEN**
 
 Melasma behandelen we met peelings, gerichte verzorging en zonbescherming. Hoe diep het pigment zit, bepaalt wat er mogelijk is, en dat zie je in gewoon licht niet.
 
@@ -3042,7 +3042,7 @@ Dit is het gunstigste beeld. Verwacht duidelijk lichter worden, en verwacht dat 
 
 Een woodlamp is een lamp met bijna alleen ultraviolet licht. Pigment dat hoog in de huid zit kaatst dat anders terug dan pigment dat dieper ligt, waardoor het contrast toeneemt of juist niet. Het is geen apparaat dat iets behandelt: het laat alleen zien waar je naar kijkt.
 
-**Melasma heeft een kraan. Die staat maar deels bij jou.**
+**Drie dingen die melasma sturen**
 
 Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepalen hoe ver hij open staat. Kijk naar de derde kolom: dat is het deel dat je zelf in de hand hebt.
 
@@ -3106,7 +3106,7 @@ Welke gebieden meedoen en hoe groot ze zijn
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over melasma**
+**Veelgestelde vragen**
 
 Gaat melasma ooit helemaal weg? +
 
@@ -3146,7 +3146,7 @@ We schatten de diepte in en leggen je aanjagers vast. Zit het diep, dan hoor je 
 
 **Google-omschrijving:** Een moedervlek die stoort kan weg. Wat er eerst gebeurt, waar we op letten en waarom een plekje dat verandert eerst langs een arts gaat.
 
-**EEN MOEDERVLEK DIE STOORT KAN WEG**
+**MOEDERVLEKKEN WEGHALEN**
 
 Zit hij in de weg bij het scheren, blijft hij haken achter je kraag of vind je hem gewoon lelijk: dan kijken we ernaar. Onze huidtherapeut beoordeelt het plekje, en na verwijzing van je arts coaguleren we het waar dat kan.
 
@@ -3208,7 +3208,7 @@ Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: iets
 
 - Denken dat het alleen om je gezicht gaat. Plekjes op rug, benen en voetzolen worden het vaakst over het hoofd gezien.
 
-**Wat er eerst gebeurt voordat er iets weggaat**
+**Voordat we iets weghalen**
 
 Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie stappen die aan een behandeling voorafgaan, en de eerste is de enige op deze site die je later niet kunt inhalen.
 
@@ -3216,11 +3216,11 @@ Op de andere pagina's staan hier de dingen die we niet doen. Hier staan de drie 
 
 - Coaguleren gaat na verwijzing van je arts Met een verwijzing in de hand nemen we het plekje weg met warmte, in een korte handeling. Die volgorde staat vast: alleen een arts kan weefsel laten onderzoeken, en dat kan achteraf niet meer.
 
-- Ligt er een moedervlek in het behandelgebied, dan dekken we die af Laseren we vlakbij, dan gaat er een dekje overheen. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.
+- We dekken moedervlekken af Laseren we vlakbij, dan gaat er een dekje overheen. Licht op pigment kan het beeld veranderen, en dan klopt een latere beoordeling niet meer.
 
 DIT STAAT OOK IN ONS VERBOND · LEES DE TIEN WEIGERINGEN
 
-**Veelgestelde vragen over moedervlekken**
+**Veelgestelde vragen**
 
 Waarom staat deze pagina er dan überhaupt? +
 
@@ -3344,7 +3344,7 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reini
 
 - Beloven dat poriën kleiner worden. Ze kunnen leeg zijn en daardoor minder opvallen; hun formaat ligt vast
 
-**Veelgestelde vragen over een onzuivere huid**
+**Veelgestelde vragen**
 
 Waarom komen mee-eters op mijn neus altijd terug? +
 
@@ -3380,7 +3380,7 @@ In het huidconsult kijken we onder vergroting mee. Blijkt het grotendeels normal
 
 **Google-omschrijving:** Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld
 
-**OUDERDOMSVLEKKEN OP JE HANDEN EN GEZICHT**
+**OUDERDOMSVLEKKEN BEHANDELEN**
 
 Ouderdomsvlekken en zonnevlekken zijn onschuldig en goed te behandelen. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is onze eerste vraag niet hoe je ervan afkomt, maar of het is wat je denkt.
 
@@ -3486,7 +3486,7 @@ Hoeveel de huid over de jaren te verwerken kreeg
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over ouderdomsvlekken**
+**Veelgestelde vragen**
 
 Zijn ouderdomsvlekken gevaarlijk? +
 
@@ -3570,7 +3570,7 @@ Vanaf nu wordt het interessant. Meten in september geeft het eerlijkste vertrekp
 
 Dit zijn maandgemiddelden. Op een heldere zomerdag ligt de zonkracht in Nederland flink hoger dan wat je hier ziet, en dat is het moment waarop pigment ontstaat.
 
-**Drie soorten pigment, drie andere uitkomsten.**
+**Drie soorten pigment**
 
 Zonschade en melasma lijken op elkaar, maar vragen een andere behandeling. Welk type je hebt, stellen we vast voordat we beginnen. Kies het patroon dat het dichtst bij jou komt.
 
@@ -3656,7 +3656,7 @@ Of er naast kleur ook oneffenheid meespeelt
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over pigmentvlekken**
+**Veelgestelde vragen**
 
 Gaan mijn pigmentvlekken helemaal weg? +
 
@@ -3806,7 +3806,7 @@ Hoeveel het oppervlak weerkaatst
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over poriën**
+**Veelgestelde vragen**
 
 Kunnen mijn poriën echt niet kleiner? +
 
@@ -3846,7 +3846,7 @@ We kijken onder vast licht waar je naar kijkt, of het poriën zijn of iets ander
 
 **Google-omschrijving:** Psoriasis komt uit je afweersysteem en laat zich in de huid zien. Wat dat betekent voor de behandeling, en wat wij er wel en niet bij doen.
 
-**PSORIASIS: RODE PLEKKEN MET WITTE SCHILFERS**
+**PSORIASIS EN JE HUID**
 
 Psoriasis is een aandoening van je afweersysteem die zich in de huid laat zien. Dat verschil is niet academisch: het verklaart waarom een crème de plek aanpakt en niet de oorzaak.
 
@@ -3912,7 +3912,7 @@ Het tweede vinkje links is de belangrijkste regel op deze pagina, en de enige wa
 
 - Aannemen dat het besmettelijk is of dat het aan hygiëne ligt. Geen van beide klopt.
 
-**Veelgestelde vragen over psoriasis**
+**Veelgestelde vragen**
 
 Is psoriasis besmettelijk? +
 
@@ -4052,7 +4052,7 @@ Wat er onder de oppervlakte al is opgebouwd
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over rimpels**
+**Veelgestelde vragen**
 
 Hoe weet ik of het een rimpel is of een droogtelijntje? +
 
@@ -4230,7 +4230,7 @@ Hoe prikkelbaar je huid op dit moment is
 
 Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.
 
-**Veelgestelde vragen over rosacea**
+**Veelgestelde vragen**
 
 Gaat mijn rosacea weg? +
 
@@ -4352,7 +4352,7 @@ Dit is een van de weinige huidproblemen waarbij het antwoord kort is: als het he
 
 - Beloven dat er nooit meer nieuwe bij komen. De aanleg en de wrijving blijven
 
-**Veelgestelde vragen over steelwratjes**
+**Veelgestelde vragen**
 
 Waarom krijg ik ze in mijn hals en oksels? +
 
@@ -4528,7 +4528,7 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 
 - Beloven dat het weggaat als het van dag tot dag niet verandert
 
-**Veelgestelde vragen over wallen**
+**Veelgestelde vragen**
 
 Wat is het verschil tussen wallen en donkere kringen? +
 
@@ -4776,7 +4776,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - Werkt niet als de producten thuis blijven liggen. Het grootste deel van dit traject gebeurt buiten de kliniek
 
-**Veelgestelde vragen over acnetraject**
+**Veelgestelde vragen**
 
 Hoe lang duurt het traject? +
 
@@ -4888,7 +4888,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - HUIDVEROUDERING
 
-**Veelgestelde vragen over coolift cryo therapy**
+**Veelgestelde vragen**
 
 Hoe lang houdt het aan? +
 
@@ -5114,7 +5114,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - HUIDVEROUDERING
 
-**Veelgestelde vragen over dermapen 4**
+**Veelgestelde vragen**
 
 Wanneer zie ik er iets van? +
 
@@ -5302,7 +5302,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - MOEDERVLEKKEN EN PLEKJES
 
-**Veelgestelde vragen over fibromen verwijderen**
+**Veelgestelde vragen**
 
 Is het pijnlijk? +
 
@@ -5436,7 +5436,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - LITTEKENS EN STRIAE
 
-**Veelgestelde vragen over fotona timewalker**
+**Veelgestelde vragen**
 
 Waarom lopen de prijzen zo uiteen? +
 
@@ -5552,7 +5552,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - HUIDVERKLEURING
 
-**Veelgestelde vragen over happy intim**
+**Veelgestelde vragen**
 
 Is dit gênant? +
 
@@ -5652,7 +5652,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ALLE HUIDPROBLEMEN
 
-**Veelgestelde vragen over consult met eve-m huidanalyse**
+**Veelgestelde vragen**
 
 Moet ik dit doen voordat ik iets anders kan? +
 
@@ -5844,7 +5844,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ACNE
 
-**Veelgestelde vragen over jongeren acne traject**
+**Veelgestelde vragen**
 
 Waarom staat er geen prijs? +
 
@@ -6046,7 +6046,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - LITTEKENS EN STRIAE
 
-**Veelgestelde vragen over littekentherapie**
+**Veelgestelde vragen**
 
 Mijn litteken is tien jaar oud. Heeft het nog zin? +
 
@@ -6160,7 +6160,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ROSACEA
 
-**Veelgestelde vragen over lumi 8 led**
+**Veelgestelde vragen**
 
 Waarom is dit zo goedkoop? +
 
@@ -6254,7 +6254,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - SNURKEN
 
-**Veelgestelde vragen over nightlase**
+**Veelgestelde vragen**
 
 Doet het pijn? +
 
@@ -6458,7 +6458,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - GROVE PORIËN
 
-**Veelgestelde vragen over oxygeneo glow**
+**Veelgestelde vragen**
 
 Hoe lang zie ik er iets van? +
 
@@ -6704,7 +6704,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - DONKERE KRINGEN
 
-**Veelgestelde vragen over skinboosters en mesotherapie**
+**Veelgestelde vragen**
 
 Waarom een kuur van drie? +
 
@@ -6914,7 +6914,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ROSACEA
 
-**Veelgestelde vragen over voedingsintolerantietest**
+**Veelgestelde vragen**
 
 Wordt dit vergoed? +
 
@@ -7034,7 +7034,7 @@ Links waar deze behandeling voor bedoeld is, rechts waar hij niets aan doet.
 
 - ALLE HUIDPROBLEMEN
 
-**Veelgestelde vragen over xl hair**
+**Veelgestelde vragen**
 
 Wanneer zie ik verschil? +
 
@@ -7258,7 +7258,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
-**Veelgestelde vragen over de CooLift Cryo Therapy**
+**Veelgestelde vragen**
 
 Wat gebeurt er met mijn huid? +
 
@@ -7372,7 +7372,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
-**Veelgestelde vragen over de Dermapen 4**
+**Veelgestelde vragen**
 
 Waarom deze pen en niet de SkinPen? +
 
@@ -7484,7 +7484,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidveroudering
 
-**Veelgestelde vragen over de Dermaplane pro**
+**Veelgestelde vragen**
 
 Wordt mijn haar dikker terug? +
 
@@ -7580,7 +7580,7 @@ Links waar dit apparaat voor gemaakt is, rechts waar het niets aan doet.
 
 - Voorspellen wat een behandeling gaat opleveren
 
-**Veelgestelde vragen over de EVE-M**
+**Veelgestelde vragen**
 
 Wat doet dit apparaat met mijn huid? +
 
@@ -7700,7 +7700,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Littekens en striae
 
-**Veelgestelde vragen over de Fotona TimeWalker**
+**Veelgestelde vragen**
 
 Waarom zitten er twee lasers in één apparaat? +
 
@@ -7808,7 +7808,7 @@ Meerdere apparaten hier doen op het oog hetzelfde. Welke je krijgt hangt af van 
 
 - TEGENOVER LUMI 8-LED Bouwt geen warmte op en doet dus niets aan haar. Een andere categorie, geen zwakkere versie. NAAR DE LUMI 8-LED ›
 
-**Veelgestelde vragen over de Gentle Laser Pro-U**
+**Veelgestelde vragen**
 
 Waarom deze laser en niet de Nordlys? +
 
@@ -7922,7 +7922,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Droge huid
 
-**Veelgestelde vragen over de Hydrafacial syndeo**
+**Veelgestelde vragen**
 
 Wat maakt dit anders dan een gewone gezichtsbehandeling? +
 
@@ -8036,7 +8036,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Rosacea
 
-**Veelgestelde vragen over de LUMI 8-LED**
+**Veelgestelde vragen**
 
 Voel ik hier iets van? +
 
@@ -8152,7 +8152,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Pigmentvlekken
 
-**Veelgestelde vragen over de Nordlys**
+**Veelgestelde vragen**
 
 Is IPL hetzelfde als laser? +
 
@@ -8276,7 +8276,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Huidverkleuring
 
-**Veelgestelde vragen over de Peelinglijnen**
+**Veelgestelde vragen**
 
 Waarom staat hier geen apparaat? +
 
@@ -8392,7 +8392,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Poriën
 
-**Veelgestelde vragen over de SkinPen CIT**
+**Veelgestelde vragen**
 
 Wat is het verschil met de Dermapen? +
 
@@ -8510,7 +8510,7 @@ Op elke pagina hieronder staat ook wat er niet lukt bij dit apparaat, en of wij 
 
 - Donkere kringen
 
-**Veelgestelde vragen over de U225 intradermale injector**
+**Veelgestelde vragen**
 
 Wat doet dit apparaat precies? +
 
@@ -8876,7 +8876,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar het bij a.s.r. op vastloopt.**
+**Waar het op vastloopt**
 
 Bij a.s.r. staat de voorwaarde in de polisvoorwaarden en niet in de vergoedingenvinder. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.
 
@@ -8956,7 +8956,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar het bij CZ op vastloopt.**
+**Waar het op vastloopt**
 
 Omdat elke behandeling een eigen pagina en een eigen voorwaarde heeft, kan het antwoord voor acne anders zijn dan voor ontharing. Kijk dus op de pagina van jouw behandeling en niet op de algemene.
 
@@ -9036,7 +9036,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar het bij Menzis op vastloopt.**
+**Waar het op vastloopt**
 
 Bij Menzis draait het om het contract. Ga je naar een huidtherapeut die zij niet erkennen, dan schiet je zelf voor en krijg je hooguit een deel terug. Kijk dus eerst in hun Zorgvinder en pas daarna naar het bedrag.
 
@@ -9116,7 +9116,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar het bij ONVZ op vastloopt.**
+**Waar het op vastloopt**
 
 ONVZ hanteert bij acnebehandeling een leeftijdsgrens, en de basisverzekering vergoedt de huidtherapeut niet. Ben je ouder dan die grens, controleer dan eerst of jouw pakket een uitzondering kent voordat je een traject inplant.
 
@@ -9196,7 +9196,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar het bij VGZ op vastloopt.**
+**Waar het op vastloopt**
 
 Bij VGZ krijg je een budget per kalenderjaar dat je over acne, camouflage en ontharen samen verdeelt. Wat je aan het een besteedt, gaat van het ander af.
 
@@ -9276,7 +9276,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar het bij Zilveren Kruis op vastloopt.**
+**Waar het op vastloopt**
 
 Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus ook even of wij aan die eis voldoen.
 
@@ -9344,7 +9344,7 @@ Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want
 
 **Google-omschrijving:** Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.
 
-**DE AFSPRAKEN DIE VOOR IEDEREEN GELDEN**
+**ALGEMENE VOORWAARDEN**
 
 Je komt hier waarschijnlijk omdat er iets aan de hand is. Je moet afzeggen, je bent te laat, of je hebt een bedrag gezien dat je niet verwachtte. Daarom staan hieronder situaties en geen artikelen.
 
@@ -9460,7 +9460,7 @@ Lukt dat niet, dan is er een vaste route met termijnen en een onafhankelijke uit
 
 - STAP 4 · LEG HET VOOR AAN DE GESCHILLENINSTANTIE BINDENDE UITSPRAAK Onafhankelijk, bindend, en met de mogelijkheid tot een vergoeding. Ben je het niet eens met ons oordeel, dan kun je naar de onafhankelijke geschilleninstantie waar wij bij zijn aangesloten. Die doet een bindende uitspraak en kan een schadevergoeding toekennen tot 25.000 euro. Je hoeft daar geen advocaat voor.
 
-**Een klacht kost je niets en verandert niets aan je behandeling**
+**Wat een klacht je oplevert**
 
 - Je klacht kost je niets. Niet het gesprek, niet de klachtenfunctionaris, en niet de geschilleninstantie.
 
@@ -9568,7 +9568,7 @@ Je hoeft niet uit te zoeken bij welke partij iets staat. Stel de vraag bij ons, 
 
 > knop: DIEN EEN VERZOEK IN
 
-**Wij bouwen geen profielen en verkopen niets**
+**Wat we met je gegevens doen**
 
 Er worden geen advertentieprofielen van je opgebouwd en er wordt niets doorverkocht of geruild. De enige meting op deze site is anonieme statistiek, en die laadt pas nadat je daar akkoord voor geeft; zonder akkoord worden die scripts niet ingeladen.
 
@@ -9988,9 +9988,9 @@ Vier vragen over wat je ziet en voelt. Je krijgt je profielschets terug als spin
 
 Begin hier: vier vragen, ongeveer een minuut. Je krijgt je profielschets terug en twee van de vragen hieronder staan daarna meteen goed.
 
-**Doe de mini-scan als je nog niet weet waar je moet beginnen**
+**Doe de mini-scan**
 
-Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een eerste indruk.
+Weet je nog niet waar te beginnen? Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een eerste indruk.
 
 > knop: START DE MINI-SCAN
 
@@ -10276,7 +10276,7 @@ Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tek
 
 - Word altijd goed en lief geholpen! En krijg het beste advies. Fleur 3 maanden geleden ADVIES & BEHANDELING
 
-**Veelgestelde vragen over intake**
+**Veelgestelde vragen**
 
 Word ik hierna gebeld om alsnog iets af te nemen? +
 
@@ -10316,7 +10316,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **Google-omschrijving:** Alles wat op deze site wordt uitgelegd, geordend op de vraag die je stelt. Met de doorsnedes, testen en vergelijkers die verspreid over de site staan.
 
-**ALLES WAT WE UITLEGGEN, OP ÉÉN PLEK**
+**ALLES WAT WE UITLEGGEN**
 
 Alles wat hier wordt uitgelegd staat verspreid over 28 huidprobleempagina's, 12 apparaatpagina's en 22behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
 
@@ -10864,7 +10864,7 @@ Die staat er in de rechterkolom bij. Dat is meteen de reden dat deze lijst kort 
 
 - Wij tonen geen resultaat dat we niet onder hetzelfde licht hebben gemeten Geen voor-en-na met andere belichting, een andere hoek of andere make-up. Bij poriën, kringen en cellulitis is de lamp anders het hele resultaat. ZIE DE PORIËNPAGINA WAT DIT ONS KOST Onze foto's zijn minder spectaculair dan die van anderen. Dat is precies waarom je ze kunt geloven.
 
-**Veelgestelde vragen over ons verbond**
+**Veelgestelde vragen**
 
 Waarom staat bij elke regel wat het jullie kost? +
 
@@ -10974,19 +10974,19 @@ Textuur zie je alleen doordat er schaduw in zit. Dat is de reden dat licht op de
 
 Dezelfde huid ziet er onder ander licht heel anders uit. Daarom zegt bijna geen enkele voor-en-na-foto op internet iets over de behandeling. Dit zijn de zeven vragen waarmee je dat zelf ziet. Ze werken bij elke kliniek, en straks ook bij ons.
 
-- 01 WEEGT HET ZWAARST Dezelfde lichtrichting Dit is de grootste. Licht dat van opzij scheert legt een schaduw in elke porie, rimpel en oneffenheid. Recht van voren vult diezelfde schaduwen op en dan is de structuur weg. Je ziet textuur alleen doordat er schaduw in zit. Verplaats de lamp en je verplaatst de schaduw, terwijl de huid geen millimeter veranderd is. BIJ ONS Dezelfde lamp op dezelfde plek, bij beide foto's. Geen raamlicht, want dat is nooit twee keer hetzelfde.
+- WEEGT HET ZWAARST Dezelfde lichtrichting Dit is de grootste. Licht dat van opzij scheert legt een schaduw in elke porie, rimpel en oneffenheid. Recht van voren vult diezelfde schaduwen op en dan is de structuur weg. Je ziet textuur alleen doordat er schaduw in zit. Verplaats de lamp en je verplaatst de schaduw, terwijl de huid geen millimeter veranderd is. BIJ ONS Dezelfde lamp op dezelfde plek, bij beide foto's. Geen raamlicht, want dat is nooit twee keer hetzelfde.
 
-- 02 WEEGT HET ZWAARST Dezelfde hoek en afstand Een kin iets omhoog strakt de kaaklijn. Een halve stap dichterbij met een telefoon maakt de neus groter en de wangen smaller. Een korte lens dichtbij vergroot wat het dichtst bij de camera zit. Twee foto's van verschillende afstand zijn twee verschillende gezichten. BIJ ONS Vaste afstand, vaste hoogte, hoofd in dezelfde stand. Bij de huidscan gebeurt dat automatisch.
+- WEEGT HET ZWAARST Dezelfde hoek en afstand Een kin iets omhoog strakt de kaaklijn. Een halve stap dichterbij met een telefoon maakt de neus groter en de wangen smaller. Een korte lens dichtbij vergroot wat het dichtst bij de camera zit. Twee foto's van verschillende afstand zijn twee verschillende gezichten. BIJ ONS Vaste afstand, vaste hoogte, hoofd in dezelfde stand. Bij de huidscan gebeurt dat automatisch.
 
-- 03 WEEGT HET ZWAARST Niet alleen de beste eruit Een perfect protocol zegt nog steeds niets als je drie geslaagde trajecten publiceert en de rest niet. Bij elke behandeling reageert een deel van de mensen beter dan gemiddeld en een deel minder. Wie alleen de bovenkant laat zien, laat de behandeling er beter uitzien dan hij is. BIJ ONS Bij elk beeld komt te staan hoeveel mensen zo'n traject deden en hoe dit geval zich daartoe verhoudt.
+- WEEGT HET ZWAARST Niet alleen de beste eruit Een perfect protocol zegt nog steeds niets als je drie geslaagde trajecten publiceert en de rest niet. Bij elke behandeling reageert een deel van de mensen beter dan gemiddeld en een deel minder. Wie alleen de bovenkant laat zien, laat de behandeling er beter uitzien dan hij is. BIJ ONS Bij elk beeld komt te staan hoeveel mensen zo'n traject deden en hoe dit geval zich daartoe verhoudt.
 
-- 04 Even lang na de behandeling Vlak na een behandeling die de huid prikkelt zit er tijdelijk wat vocht in het weefsel. Dat vult fijne lijntjes op, en het verdwijnt binnen een paar dagen. Wat je dan op de foto ziet is de zwelling en niet het resultaat. Een nafoto die te vroeg genomen is, laat iets zien wat over een week niet meer bestaat. BIJ ONS De nafoto komt pas als de huid rustig is, en er staat bij hoeveel weken na de laatste sessie hij gemaakt is.
+- Even lang na de behandeling Vlak na een behandeling die de huid prikkelt zit er tijdelijk wat vocht in het weefsel. Dat vult fijne lijntjes op, en het verdwijnt binnen een paar dagen. Wat je dan op de foto ziet is de zwelling en niet het resultaat. Een nafoto die te vroeg genomen is, laat iets zien wat over een week niet meer bestaat. BIJ ONS De nafoto komt pas als de huid rustig is, en er staat bij hoeveel weken na de laatste sessie hij gemaakt is.
 
-- 05 Geen make-up, geen filter Foundation is letterlijk een laagje dat structuur verbergt. En veel telefoons verzachten de huid uit zichzelf, zonder dat je daarom gevraagd hebt. Beide effecten lijken op precies wat een huidbehandeling zou moeten doen. Daarom zijn ze op een resultaatfoto niet van elkaar te onderscheiden. BIJ ONS Schone huid op beide foto's, en geen bewerking behalve bijsnijden.
+- Geen make-up, geen filter Foundation is letterlijk een laagje dat structuur verbergt. En veel telefoons verzachten de huid uit zichzelf, zonder dat je daarom gevraagd hebt. Beide effecten lijken op precies wat een huidbehandeling zou moeten doen. Daarom zijn ze op een resultaatfoto niet van elkaar te onderscheiden. BIJ ONS Schone huid op beide foto's, en geen bewerking behalve bijsnijden.
 
-- 06 Dezelfde staat van de huid Een net verzorgde huid weerkaatst het licht gelijkmatiger en oogt daardoor gladder. Een huid die net gereinigd en gehydrateerd is fotografeert beter dan dezelfde huid aan het eind van de dag. Vocht in de bovenste laag verandert hoe het oppervlak licht terugkaatst. Dat is een echt effect, maar het houdt uren aan en geen maanden. BIJ ONS Beide foto's op hetzelfde punt in de routine, en bij voorkeur op hetzelfde tijdstip van de dag.
+- Dezelfde staat van de huid Een net verzorgde huid weerkaatst het licht gelijkmatiger en oogt daardoor gladder. Een huid die net gereinigd en gehydrateerd is fotografeert beter dan dezelfde huid aan het eind van de dag. Vocht in de bovenste laag verandert hoe het oppervlak licht terugkaatst. Dat is een echt effect, maar het houdt uren aan en geen maanden. BIJ ONS Beide foto's op hetzelfde punt in de routine, en bij voorkeur op hetzelfde tijdstip van de dag.
 
-- 07 Vergelijkbaar moment Roodheid na een warme douche of na het sporten, of een huid die meeloopt met de cyclus: dat verschilt van dag tot dag meer dan sommige behandelingen in maanden doen. Als de dagvariatie groter is dan het effect dat je wil laten zien, zegt één foto per moment niets. BIJ ONS Rustig moment, geen sport of hitte vooraf, en de datum staat erbij.
+- Vergelijkbaar moment Roodheid na een warme douche of na het sporten, of een huid die meeloopt met de cyclus: dat verschilt van dag tot dag meer dan sommige behandelingen in maanden doen. Als de dagvariatie groter is dan het effect dat je wil laten zien, zegt één foto per moment niets. BIJ ONS Rustig moment, geen sport of hitte vooraf, en de datum staat erbij.
 
 **Hoe we resultaatfoto's maken**
 
@@ -11298,7 +11298,7 @@ HERKEN JE HIER IETS VAN?
 
 Eén keer ja is genoeg om eerst bij je huisarts te beginnen. Er hoort dan slaaponderzoek bij, en dat regelt een arts en niet wij. Komt daar niets uit, dan kun je altijd nog terugkomen.
 
-**Warmte op het gehemelte, drie keer, met weken ertussen.**
+**Zo werkt NightLase**
 
 Als het geluid uit je zachte gehemelte komt, is dit wat we kunnen doen. Geen snijden, geen naalden, en niets dat je 's nachts in moet doen.
 
@@ -11344,7 +11344,7 @@ Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mense
 
 - Een neusspray of een beugel verkopen naast de behandeling. Dat is niet ons vak
 
-**Veelgestelde vragen over snurken**
+**Veelgestelde vragen**
 
 Waar komt het geluid eigenlijk vandaan? +
 
@@ -11511,4 +11511,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5331 tekstblokken · ongeveer 80.480 woorden._
+_105 pagina's · 5331 tekstblokken · ongeveer 80.194 woorden._

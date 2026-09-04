@@ -74,7 +74,9 @@ const meet = () => {
     const rs = teksten.map(regels);
     if (new Set(rs).size === 1) continue;
 
-    const sleutel = teksten.map((t) => t.textContent.trim().slice(0, 30)).join("|");
+    const sleutel = teksten
+      .map((t) => t.textContent.trim().slice(0, 30))
+      .join("|");
     if (gezien.has(sleutel)) continue;
     gezien.add(sleutel);
 
@@ -86,16 +88,47 @@ const meet = () => {
   return uit;
 };
 
+/**
+ * Koppen die over meer dan twee regels lopen.
+ *
+ * Yasin: "het moet echt perfect overal, max 2 regels die titels". Op de melasmapagina
+ * stapelde een kop zich over vier regels omdat de kolom smal is en de zin lang. Dat is een
+ * maat die je alleen ziet als je hem meet, want in de bron is het een zin van vijf woorden.
+ *
+ * H1 telt mee: ook de paginakop hoort binnen twee regels te passen.
+ */
+const meetKoppen = () => {
+  const uit = [];
+  for (const k of document.querySelectorAll("h1, h2, h3")) {
+    const r = k.getBoundingClientRect();
+    if (r.height < 5) continue;
+    const lh = parseFloat(getComputedStyle(k).lineHeight);
+    if (!lh) continue;
+    const regels = Math.round(r.height / lh);
+    if (regels > 2) {
+      uit.push({
+        regels,
+        tag: k.tagName,
+        tekst: k.textContent.trim().replace(/\s+/g, " "),
+      });
+    }
+  }
+  return uit;
+};
+
 let scheve = 0;
+let lange = 0;
 const perPagina = [];
 
 for (const pad of paden) {
   await page.goto(BASIS + pad, { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(400);
   const rijen = await page.evaluate(meet);
-  if (rijen.length) {
-    perPagina.push({ pad, rijen });
+  const koppen = await page.evaluate(meetKoppen);
+  if (rijen.length || koppen.length) {
+    perPagina.push({ pad, rijen, koppen });
     scheve += rijen.length;
+    lange += koppen.length;
   }
 }
 
@@ -103,24 +136,29 @@ await browser.close();
 
 console.log(`\n${paden.length} pagina's nagemeten op 1280 pixels breed.\n`);
 
-if (!scheve) {
-  console.log("ok — elke kaartrij heeft even lange tekstblokken.\n");
+if (!scheve && !lange) {
+  console.log(
+    "ok — kaartrijen even lang, en geen kop over meer dan twee regels.\n",
+  );
   process.exit(0);
 }
 
 console.log(
-  `${scheve} kaartrijen staan scheef: binnen een rij vullen de tekstblokken` +
-    ` een verschillend aantal regels.\n`,
+  `${scheve} kaartrijen staan scheef en ${lange} koppen lopen over meer dan twee regels.\n`,
 );
 
-for (const { pad, rijen } of perPagina) {
+for (const { pad, rijen, koppen } of perPagina) {
   console.log(pad);
   for (const rij of rijen) {
-    console.log(`  regels ${rij.regels.join(" / ")}`);
-    for (let i = 0; i < rij.teksten.length; i++) {
-      const t = rij.teksten[i];
-      console.log(`    ${String(t.length).padStart(3)} tekens  ${t.slice(0, 74)}`);
+    console.log(`  kaartrij, regels ${rij.regels.join(" / ")}`);
+    for (const t of rij.teksten) {
+      console.log(
+        `    ${String(t.length).padStart(3)} tekens  ${t.slice(0, 72)}`,
+      );
     }
+  }
+  for (const k of koppen) {
+    console.log(`  ${k.tag} over ${k.regels} regels: ${k.tekst.slice(0, 72)}`);
   }
   console.log("");
 }

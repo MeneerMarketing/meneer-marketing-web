@@ -160,11 +160,7 @@ export default async function InsurerPage({ params }: PageProps) {
             <div>
               <Label>Het addertje</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                Waar het bij
-                <br />
-                <span className="diba-accent">
-                  {insurer.name} op vastloopt.
-                </span>
+                Waar het <span className="diba-accent">op vastloopt</span>
               </h2>
             </div>
             <div className="max-w-[58ch]">
