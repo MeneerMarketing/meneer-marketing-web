@@ -88,7 +88,7 @@ export default function HuidprofielKnop() {
                 type="button"
                 onClick={() => setOpen(false)}
                 aria-label="Sluiten"
-                className="-mt-1 -mr-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-[var(--r-pill)] text-[var(--t-muted)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="-mt-1 -mr-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-[var(--r-pill)] text-[var(--t-muted)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
                 <svg
                   viewBox="0 0 20 20"

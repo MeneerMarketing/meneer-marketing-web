@@ -78,7 +78,7 @@ export default function WatBegintWanneer() {
             className={`diba-label min-h-12 rounded-[var(--r-pill)] px-5 transition-colors ${
               i === index
                 ? "diba-pill-active"
-                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
+                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
             } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
           >
             {f.label}

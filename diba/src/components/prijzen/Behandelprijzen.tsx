@@ -91,7 +91,7 @@ function Regel({
         type="button"
         aria-expanded={open}
         onClick={onWissel}
-        className="flex w-full flex-wrap items-baseline justify-between gap-x-6 gap-y-1 rounded-[var(--r-md)] px-5 py-4 text-left transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+        className="group flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-1 rounded-[var(--r-md)] px-5 py-4 text-left transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
       >
         <span className="min-w-0">
           <span className="block text-[17px] leading-7 font-medium text-[var(--t-strong)]">
@@ -126,7 +126,7 @@ function Regel({
             </span>
           ) : null}
         </span>
-        <span className="flex shrink-0 items-baseline gap-3">
+        <span className="flex shrink-0 items-center gap-3">
           {/* Het bedrag blijft staan, ook dicht. Dat is de belofte van deze pagina.
 
               `min-w` en rechts uitgelijnd: daardoor staan alle bedragen op dezelfde x,
@@ -136,100 +136,133 @@ function Regel({
           <span className="min-w-[6.5ch] text-right text-[18px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
             {b.prijs > 0 ? prijsTekst(b.prijs) : "Na de meting"}
           </span>
+          {/* Een echt teken in plaats van een tekstdriehoekje.
+
+              Er stond een glyph op dertien pixels naast een bedrag van achttien, en dan
+              zie je niet dat er iets open kan. Dit is een rond vlak met een rand, zo groot
+              als een aanraakdoel, dat meedraait bij openen. */}
           {heeftDetail ? (
             <span
               aria-hidden="true"
-              className={`text-[13px] leading-7 text-[var(--g-700)] transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-200 ${
+                open
+                  ? "rotate-180 border-[var(--g-700)] bg-[var(--g-700)] text-white"
+                  : "border-[var(--g-200)] text-[var(--g-700)] group-hover:border-[var(--g-700)] group-hover:bg-white"
+              }`}
             >
-              ▾
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
             </span>
           ) : null}
         </span>
       </button>
 
       {open && heeftDetail ? (
-        <div className="px-5 pb-5">
-          <dl className="grid gap-x-8 gap-y-4 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5 sm:grid-cols-3">
-            {b.duurMinuten ? (
-              <div>
-                <dt className="diba-label text-[var(--t-label)]">
-                  Hoe lang je hier bent
-                </dt>
-                <dd className="mt-1 text-[15px] leading-7 text-[var(--t-body)] tabular-nums">
-                  {b.duurMinuten} minuten
-                </dd>
-              </div>
-            ) : null}
-            {b.sessies ? (
-              <div>
-                <dt className="diba-label text-[var(--t-label)]">Hoe vaak</dt>
-                <dd className="mt-1 text-[15px] leading-7 text-[var(--t-body)]">
-                  {publicCopy(b.sessies)}
-                </dd>
-              </div>
-            ) : null}
-            {b.herstel ? (
-              <div>
-                <dt className="diba-label text-[var(--t-label)]">
-                  Hersteltijd
-                </dt>
-                <dd className="mt-1 text-[15px] leading-7 text-[var(--t-body)]">
-                  {publicCopy(b.herstel)}
-                </dd>
-              </div>
-            ) : null}
-          </dl>
+        /* Een blok in plaats van drie losse kaders.
 
-          {b.varianten?.length ? (
-            <div className="mt-3 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5">
-              <p className="diba-label text-[var(--t-label)]">
-                Varianten en tarieven
-              </p>
-              <ul className="mt-3 space-y-1.5">
-                {b.varianten.map((v) => (
-                  <li
-                    key={v.naam}
-                    className="flex flex-wrap items-baseline justify-between gap-x-6 text-[15px] leading-7"
-                  >
-                    <span className="text-[var(--t-body)]">
-                      {v.naam}
-                      {v.bij ? (
-                        <span className="text-[var(--t-muted)]">
-                          {" "}
-                          · {v.bij}
-                        </span>
-                      ) : null}
-                    </span>
-                    <span className="text-[var(--t-strong)] tabular-nums">
-                      {prijsTekst(v.prijs)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
+           Hier stonden drie kaders onder elkaar, elk met een eigen mintvlak, een eigen
+           binnenmarge en een eigen kop, en de kolommen van het bovenste raster liepen niet
+           door in de rest. Drie kaders in een kader.
 
-          {b.niet?.length ? (
-            <div className="mt-3 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5">
+           Nu een vlak met een lijn erboven en drie kolommen die wel doorlopen: de feiten
+           links, de varianten in het midden, de grens rechts. Een prijslijst lees je door
+           de rechterrand af te scannen, en dan moet wat eronder komt diezelfde kolommen
+           aanhouden. */
+        <div className="border-t border-[var(--g-100)] bg-[var(--g-025)] px-5 py-6">
+          <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div>
               <p className="diba-label text-[var(--t-label)]">
-                Wat dit niet doet
+                Goed om te weten
               </p>
-              <ul className="mt-2 space-y-1.5">
-                {b.niet.slice(0, 2).map((n) => (
-                  <li
-                    key={n}
-                    className="text-[15px] leading-7 text-[var(--t-body)]"
-                  >
-                    {publicCopy(n)}
-                  </li>
+              <dl className="mt-3 space-y-2.5">
+                {(
+                  [
+                    b.duurMinuten
+                      ? (["Duur", `${b.duurMinuten} minuten`] as const)
+                      : null,
+                    b.sessies
+                      ? (["Hoe vaak", publicCopy(b.sessies)] as const)
+                      : null,
+                    b.herstel
+                      ? (["Hersteltijd", publicCopy(b.herstel)] as const)
+                      : null,
+                  ].filter(Boolean) as readonly (readonly [string, string])[]
+                ).map(([kop, waarde]) => (
+                  <div key={kop} className="flex gap-3">
+                    <dt className="w-[9.5rem] shrink-0 text-[14px] leading-6 text-[var(--t-muted)]">
+                      {kop}
+                    </dt>
+                    <dd className="text-[15px] leading-6 text-[var(--t-body)]">
+                      {waarde}
+                    </dd>
+                  </div>
                 ))}
-              </ul>
+              </dl>
             </div>
-          ) : null}
+
+            {b.varianten?.length ? (
+              <div>
+                <p className="diba-label text-[var(--t-label)]">
+                  Varianten en tarieven
+                </p>
+                <ul className="mt-3 space-y-2.5">
+                  {b.varianten.map((v) => (
+                    <li
+                      key={v.naam}
+                      className="flex items-baseline justify-between gap-x-4 border-b border-[var(--g-100)] pb-2.5 last:border-b-0 last:pb-0"
+                    >
+                      <span className="text-[15px] leading-6 text-[var(--t-body)]">
+                        {v.naam}
+                        {v.bij ? (
+                          <span className="text-[var(--t-muted)]">
+                            {" "}
+                            · {v.bij}
+                          </span>
+                        ) : null}
+                      </span>
+                      {/* Dezelfde breedte als het bedrag in de rij erboven, zodat de
+                          bedragen onder elkaar uitkomen in plaats van te zwerven. */}
+                      <span className="min-w-[6.5ch] shrink-0 text-right text-[15px] leading-6 font-medium text-[var(--t-strong)] tabular-nums">
+                        {prijsTekst(v.prijs)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
+            {b.niet?.length ? (
+              <div>
+                <p className="diba-label text-[var(--t-label)]">
+                  Hiervoor kies je iets anders
+                </p>
+                <ul className="mt-3 space-y-2.5">
+                  {b.niet.slice(0, 2).map((n) => (
+                    <li
+                      key={n}
+                      className="text-[15px] leading-6 text-[var(--t-body)]"
+                    >
+                      {publicCopy(n)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </div>
 
           <Link
             href={`/behandelingen/${b.slug}`}
-            className="diba-label mt-4 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            className="diba-label mt-6 inline-flex min-h-11 items-center gap-1.5 border-t border-[var(--g-100)] pt-5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
           >
             Alles over {b.naam.toLowerCase()}
             <span aria-hidden="true">›</span>

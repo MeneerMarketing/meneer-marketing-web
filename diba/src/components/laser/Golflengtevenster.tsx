@@ -158,7 +158,7 @@ export default function Golflengtevenster() {
                 className={`min-h-12 min-w-12 rounded-[var(--r-md)] px-4 text-[16px] leading-none transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                   aan
                     ? "bg-[var(--g-700)] text-white"
-                    : "bg-[var(--g-025)] text-[var(--g-900)] hover:bg-[var(--g-050)]"
+                    : "bg-[var(--g-025)] text-[var(--g-900)] hover:bg-[var(--g-100)]"
                 }`}
               >
                 {t.id}

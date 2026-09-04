@@ -18,7 +18,8 @@
     "dev:meten": "next dev --port 3021 --hostname 0.0.0.0",
     "start:meten": "next start --port 3021",
     "beeld": "node scripts/controleer-beeld.mjs",
-    "links": "node scripts/controleer-links.mjs"
+    "links": "node scripts/controleer-links.mjs",
+    "hover": "node scripts/controleer-hover.mjs"
   },
   "dependencies": {
     "next": "16.2.2",

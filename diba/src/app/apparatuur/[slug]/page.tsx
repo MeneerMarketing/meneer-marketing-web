@@ -195,7 +195,7 @@ export default async function ApparaatPage({ params }: PageProps) {
                     <li key={b.slug}>
                       <Link
                         href={`/behandelingen/${b.slug}`}
-                        className="-mx-4 flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] px-4 py-3 transition-colors hover:bg-[var(--g-050)]"
+                        className="-mx-4 flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] px-4 py-3 transition-colors hover:bg-[var(--g-100)]"
                       >
                         <span className="text-[16px] leading-6 font-medium text-[var(--t-strong)]">
                           {b.naam}

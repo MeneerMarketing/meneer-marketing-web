@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 4 september 2026 · 120 pagina's
+Diba Clinics · gegenereerd op 5 september 2026 · 120 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -10810,93 +10810,93 @@ Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de herstel
 
 Eerst kijken, nog niets doen.
 
-- Consult met EVE-M huidanalyse De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. € 50 ▾
+- Consult met EVE-M huidanalyse De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. € 50
 
 Reinigen, hydrateren, oppervlakkig vernieuwen.
 
-- HydraFacial Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. € 170 ▾
+- HydraFacial Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. € 170
 
-- Oxygeneo glow Exfoliëren en zuurstof in de huid brengen, in één behandeling. € 150 ▾
+- Oxygeneo glow Exfoliëren en zuurstof in de huid brengen, in één behandeling. € 150
 
-- Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. € 150 ▾
+- Dermaplaning Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. € 150
 
-- CooLift Cryo Therapy Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. € 75 ▾
+- CooLift Cryo Therapy Koude CO2 onder druk brengt werkzame stoffen in de huid. Je huid voelt er meteen strakker door. € 75
 
 De bovenlaag sneller laten vernieuwen.
 
-- Medische peelings Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. € 140 ▾
+- Medische peelings Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. € 140
 
 Herstel op gang brengen in het bindweefsel.
 
-- SkinPen Microneedling Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. € 180 ▾
+- SkinPen Microneedling Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. € 180
 
-- Dermapen 4 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. € 180 ▾
+- Dermapen 4 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. € 180
 
 Werkzame stoffen op diepte brengen.
 
-- Skinboosters en mesotherapie Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. € 175 ▾
+- Skinboosters en mesotherapie Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. € 175
 
-- RRS Eyes Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. Na de meting ▾
+- RRS Eyes Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. Na de meting
 
 Mikken op kleur, vaten of structuur.
 
-- Fotona TimeWalker Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. € 150 ▾
+- Fotona TimeWalker Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. € 150
 
-- Fotona 4D Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. € 370 ▾
+- Fotona 4D Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. € 370
 
-- Fotona 4D Men Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. Na de meting ▾
+- Fotona 4D Men Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. Na de meting
 
-- SmoothLiftin Collageenstimulatie van binnenuit, door het slijmvlies van je wang. Na de meting ▾
+- SmoothLiftin Collageenstimulatie van binnenuit, door het slijmvlies van je wang. Na de meting
 
-- FRAC3 Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. Na de meting ▾
+- FRAC3 Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. Na de meting
 
-- PIANO skin tightening Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. Na de meting ▾
+- PIANO skin tightening Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. Na de meting
 
-- SupErficial laserpeel Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. Na de meting ▾
+- SupErficial laserpeel Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. Na de meting
 
-- SmoothEye Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. € 150 ▾
+- SmoothEye Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. € 150
 
-- LipLase Vollere en gladdere lippen zonder filler, met laser van binnen en buiten. € 150 ▾
+- LipLase Vollere en gladdere lippen zonder filler, met laser van binnen en buiten. € 150
 
-- VectorLift Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. € 150 ▾
+- VectorLift Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. € 150
 
-- Fotona Acne Control Laser bij actieve acne, gericht op de ontsteking en de talgklier. Na de meting ▾
+- Fotona Acne Control Laser bij actieve acne, gericht op de ontsteking en de talgklier. Na de meting
 
-- Fotona Scar Repair Laser op littekens: acnelittekens, operatielittekens en striae. Na de meting ▾
+- Fotona Scar Repair Laser op littekens: acnelittekens, operatielittekens en striae. Na de meting
 
-- Fotona Resurfacing Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. Na de meting ▾
+- Fotona Resurfacing Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. Na de meting
 
-- HAIRestart Laser op de hoofdhuid bij beginnende haarverdunning. Na de meting ▾
+- HAIRestart Laser op de hoofdhuid bij beginnende haarverdunning. Na de meting
 
-- Nordlys IPL Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. € 75 ▾
+- Nordlys IPL Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd. € 75
 
-- LED-therapie Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. € 30 ▾
+- LED-therapie Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. € 30
 
 Maanden werk aan hardnekkig pigment.
 
-- Cosmelan en dermamelan Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. € 550 ▾
+- Cosmelan en dermamelan Een traject van maanden tegen hyperpigmentatie en melasma, met begeleiding in de kliniek en thuis. € 550
 
-- Happy Intim Peelings die pigment in de intieme zone en oksels lichter en egaler maken. € 175 ▾
+- Happy Intim Peelings die pigment in de intieme zone en oksels lichter en egaler maken. € 175
 
 De haarwortel uitschakelen.
 
-- Laserontharing De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. € 20 ▾
+- Laserontharing De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. € 20
 
 Wat er verder in de kliniek gebeurt.
 
-- NightLase Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Na de meting ▾
+- NightLase Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Na de meting
 
-- XL Hair Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. € 800 ▾
+- XL Hair Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. € 800
 
-- Acnetraject Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. € 570 ▾
+- Acnetraject Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. € 570
 
-- Jongeren acne traject Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. € 450 ▾
+- Jongeren acne traject Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. € 450
 
-- Littekentherapie Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. € 100 ▾
+- Littekentherapie Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. € 100
 
-- Fibromen verwijderen Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. € 30 ▾
+- Fibromen verwijderen Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. € 30
 
-- Voedingsintolerantietest Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. € 300 ▾
+- Voedingsintolerantietest Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. € 300
 
 **Elke zone, met het tarief erbij.**
 
@@ -13909,4 +13909,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_120 pagina's · 6462 tekstblokken · ongeveer 93.841 woorden._
+_120 pagina's · 6462 tekstblokken · ongeveer 93.805 woorden._

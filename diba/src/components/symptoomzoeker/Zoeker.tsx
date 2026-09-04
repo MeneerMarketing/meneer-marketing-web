@@ -70,7 +70,7 @@ export default function Zoeker() {
                   className={`min-h-12 rounded-[var(--r-pill)] px-4 text-[15px] leading-6 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                     aan
                       ? "bg-[var(--g-700)] text-[var(--on-dark)]"
-                      : "bg-white text-[var(--t-body)] hover:bg-[var(--g-050)]"
+                      : "bg-white text-[var(--t-body)] hover:bg-[var(--g-100)]"
                   }`}
                 >
                   {k.tekst}
@@ -119,7 +119,7 @@ export default function Zoeker() {
                 <li key={t.pad}>
                   <Link
                     href={t.pad}
-                    className="flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] bg-white p-5 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                    className="flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] bg-white p-5 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
                     <span>
                       <span className="diba-card-title block">{t.naam}</span>

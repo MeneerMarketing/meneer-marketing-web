@@ -363,7 +363,7 @@ export default async function InsurerPage({ params }: PageProps) {
               <li key={i.slug}>
                 <Link
                   href={`/vergoedingen/${i.slug}`}
-                  className="flex min-h-16 items-center rounded-[var(--r-lg)] bg-white px-6 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="flex min-h-16 items-center rounded-[var(--r-lg)] bg-white px-6 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   {i.name}
                 </Link>

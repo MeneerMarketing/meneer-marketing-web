@@ -448,7 +448,7 @@ function Vraagstap({
               className={`flex min-h-12 items-center gap-3 rounded-[var(--r-sm)] px-4 py-3 text-left text-[15px] leading-snug transition ${
                 actief
                   ? "bg-[var(--g-700)] text-white"
-                  : "bg-[var(--g-025)] text-[var(--t-strong)] hover:bg-[var(--g-050)]"
+                  : "bg-[var(--g-025)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
               } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
             >
               {optie.tint ? (

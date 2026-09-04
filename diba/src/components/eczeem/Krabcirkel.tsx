@@ -101,7 +101,7 @@ export default function Krabcirkel() {
                 className={`absolute flex min-h-12 -translate-x-1/2 -translate-y-1/2 items-center rounded-[var(--r-pill)] px-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                   aan
                     ? "diba-pill-active"
-                    : "bg-white text-[var(--t-label)] shadow-[var(--shadow-float)] hover:bg-[var(--g-050)]"
+                    : "bg-white text-[var(--t-label)] shadow-[var(--shadow-float)] hover:bg-[var(--g-100)]"
                 }`}
               >
                 <span className="diba-label whitespace-nowrap">{s.kort}</span>

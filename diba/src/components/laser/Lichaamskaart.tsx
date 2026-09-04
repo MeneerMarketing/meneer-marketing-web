@@ -214,7 +214,7 @@ export default function Lichaamskaart({
             className={`diba-label inline-flex min-h-11 items-center rounded-[var(--r-pill)] px-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
               a.id === aanzicht
                 ? "diba-pill-active"
-                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
+                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
             }`}
           >
             {a.label}
@@ -341,7 +341,7 @@ export default function Lichaamskaart({
                         ? "bg-[var(--g-100)] text-[var(--t-muted)]"
                         : zweef === id
                           ? "bg-[var(--g-100)]"
-                          : "bg-white hover:bg-[var(--g-050)]"
+                          : "bg-white hover:bg-[var(--g-100)]"
                   }`}
                 >
                   <span

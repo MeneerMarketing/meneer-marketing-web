@@ -112,7 +112,7 @@ export default function Reviewmuur() {
               className={`inline-flex min-h-12 items-center gap-2.5 rounded-[var(--r-pill)] px-5 text-[15px] leading-none transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                 aan
                   ? "bg-[var(--g-700)] text-white"
-                  : "bg-white text-[var(--g-900)] hover:bg-[var(--g-050)]"
+                  : "bg-white text-[var(--g-900)] hover:bg-[var(--g-100)]"
               }`}
             >
               {o.label}

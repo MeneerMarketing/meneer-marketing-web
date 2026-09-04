@@ -131,7 +131,7 @@ export default function WerkenBijPage() {
                       v.pad ??
                       `mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`
                     }
-                    className="-mx-4 flex min-h-14 items-start justify-between gap-4 rounded-[var(--r-md)] px-4 py-4 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                    className="-mx-4 flex min-h-14 items-start justify-between gap-4 rounded-[var(--r-md)] px-4 py-4 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
                     <span>
                       <span className="block text-[16px] leading-6 font-medium text-[var(--t-strong)]">

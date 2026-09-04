@@ -42,7 +42,7 @@ export default function Topbalk() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Waardering ${cijfer} op basis van ${aantal} reviews, bekijk ze op Salonized. Opent in een nieuw tabblad.`}
-        className="-mx-2 flex min-h-9 items-center gap-2 rounded-[var(--r-pill)] px-2 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+        className="-mx-2 flex min-h-9 items-center gap-2 rounded-[var(--r-pill)] px-2 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
       >
         <span aria-hidden="true" className="flex items-center gap-0.5">
           {[0, 1, 2, 3, 4].map((i) => (

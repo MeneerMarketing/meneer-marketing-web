@@ -204,7 +204,7 @@ export default function Huidreis() {
               className={`flex min-h-12 items-center justify-center rounded-[var(--r-pill)] px-3 text-center text-[13px] leading-4 font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                 l.id === laagId
                   ? "bg-[var(--g-700)] text-white"
-                  : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
+                  : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
               }`}
             >
               {l.naam}
@@ -241,7 +241,7 @@ export default function Huidreis() {
               <li key={b.slug}>
                 <Link
                   href={`/behandelingen/${b.slug}`}
-                  className="group flex flex-wrap items-baseline gap-x-5 gap-y-1 rounded-[var(--r-sm)] bg-white px-6 py-5 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="group flex flex-wrap items-baseline gap-x-5 gap-y-1 rounded-[var(--r-sm)] bg-white px-6 py-5 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   <span className="text-[17px] leading-7 font-medium text-[var(--t-strong)]">
                     {b.naam}

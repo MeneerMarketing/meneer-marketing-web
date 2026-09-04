@@ -168,7 +168,7 @@ export default function HuidverkleuringPage() {
                     <li key={r.naam + r.pad}>
                       <Link
                         href={r.pad}
-                        className="block rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                        className="block rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                       >
                         <span className="block text-[15px] leading-6 font-medium text-[var(--t-strong)]">
                           {r.naam}

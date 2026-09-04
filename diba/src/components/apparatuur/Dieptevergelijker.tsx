@@ -139,7 +139,7 @@ export default function Dieptevergelijker() {
                     onMouseLeave={() => setZweeft(null)}
                     onFocus={() => setZweeft(a.slug)}
                     onBlur={() => setZweeft(null)}
-                    className="grid grid-cols-[minmax(190px,1fr)_2.2fr] items-center gap-6 rounded-[var(--r-sm)] px-3 py-3.5 transition-colors duration-200 hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                    className="grid grid-cols-[minmax(190px,1fr)_2.2fr] items-center gap-6 rounded-[var(--r-sm)] px-3 py-3.5 transition-colors duration-200 hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                     style={{
                       opacity: op ? 1 : 0.45,
                       transition: "opacity 200ms ease",
@@ -313,7 +313,7 @@ function Chip({
       className={`diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] px-5 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
         actief
           ? "bg-[var(--g-700)] text-white"
-          : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
+          : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
       }`}
     >
       {label}

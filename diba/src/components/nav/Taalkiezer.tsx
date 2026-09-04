@@ -77,7 +77,7 @@ export default function Taalkiezer() {
 
   return (
     <details className="group relative">
-      <summary className="diba-label flex h-9 cursor-pointer list-none items-center gap-2 rounded-[var(--r-pill)] px-2 text-[var(--t-label)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] [&::-webkit-details-marker]:hidden">
+      <summary className="diba-label flex h-9 cursor-pointer list-none items-center gap-2 rounded-[var(--r-pill)] px-2 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] [&::-webkit-details-marker]:hidden">
         <Vlag code={huidig.code} />
         {huidig.code}
         <svg

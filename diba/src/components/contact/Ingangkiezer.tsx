@@ -139,7 +139,7 @@ export default function Ingangkiezer() {
                 className={`flex min-h-14 w-full items-center justify-between gap-4 rounded-[var(--r-md)] px-6 py-4 text-left transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                   aan
                     ? "bg-[var(--g-700)] text-white"
-                    : "bg-white text-[var(--t-strong)] hover:bg-[var(--g-050)]"
+                    : "bg-white text-[var(--t-strong)] hover:bg-[var(--g-100)]"
                 }`}
               >
                 <span className="text-[16px] leading-6 font-medium">

@@ -311,7 +311,7 @@ export default function VergoedingenPage() {
               <li key={v.slug}>
                 <Link
                   href={`/vergoedingen/${v.slug}`}
-                  className="flex min-h-20 items-center gap-4 rounded-[var(--r-lg)] bg-white px-6 py-4 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="flex min-h-20 items-center gap-4 rounded-[var(--r-lg)] bg-white px-6 py-4 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   {/* Het logo op vaste hoogte in een vak van vaste breedte. De verhoudingen
                       lopen van bijna vierkant tot drie keer zo breed als hoog; zonder dat

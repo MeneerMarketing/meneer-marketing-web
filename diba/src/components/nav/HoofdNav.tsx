@@ -70,11 +70,11 @@ const VORM: Record<"opBeeld" | "opWit", Vormgeving> = {
        hoeft, en dat is precies hoe de Figma-homepage haar banden scheidt. */
     wrapper: "sticky top-0 z-40 bg-white",
     logo: "dark",
-    item: "text-[var(--t-body)] hover:bg-[var(--g-050)] hover:text-[var(--t-strong)] focus-visible:outline-[var(--g-700)]",
+    item: "text-[var(--t-body)] hover:bg-[var(--g-100)] hover:text-[var(--t-strong)] focus-visible:outline-[var(--g-700)]",
     itemOpen: "bg-[var(--g-050)] text-[var(--t-strong)]",
     knop: "bg-[var(--g-700)] text-white hover:bg-[var(--g-800)] focus-visible:outline-[var(--g-700)]",
     hamburger:
-      "border-[var(--g-100)] text-[var(--t-strong)] hover:bg-[var(--g-050)] focus-visible:outline-[var(--g-700)]",
+      "border-[var(--g-100)] text-[var(--t-strong)] hover:bg-[var(--g-100)] focus-visible:outline-[var(--g-700)]",
     /* Begint onder de header en niet bovenaan het scherm: met `fixed inset-0` werd de
        topbalk erboven mee verduisterd terwijl de navigatie zelf wit bleef, en dat leest
        als een fout in plaats van als een verduistering. */
@@ -378,7 +378,7 @@ function Paneel({
                         prefetch={false}
                         href={l.href}
                         onClick={onSluit}
-                        className="group -mx-3 block rounded-[var(--r-sm)] px-3 py-2 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                        className="group -mx-3 block rounded-[var(--r-sm)] px-3 py-2 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                       >
                         {/* `truncate` op allebei de regels: een titel of zin die
                             omvalt naar een tweede regel duwt alles eronder scheef, en

@@ -181,7 +181,7 @@ export default function Configurator() {
                 className={`diba-label inline-flex min-h-12 items-center rounded-[var(--r-pill)] px-6 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                   g.id === geslacht
                     ? "diba-pill-active"
-                    : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
+                    : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
                 }`}
               >
                 {g.label}
@@ -226,7 +226,7 @@ export default function Configurator() {
                               ? "diba-pill-active"
                               : dicht
                                 ? "bg-[var(--g-100)] text-[var(--t-muted)]"
-                                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
+                                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
                           }`}
                         >
                           {z.label}

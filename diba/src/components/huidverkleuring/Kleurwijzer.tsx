@@ -44,7 +44,7 @@ export default function Kleurwijzer() {
             className={`flex min-h-12 items-center gap-3 rounded-[var(--r-pill)] py-2 pr-5 pl-3 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
               i === actief
                 ? "diba-pill-active"
-                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-050)]"
+                : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
             }`}
           >
             <span
@@ -77,7 +77,7 @@ export default function Kleurwijzer() {
               <li key={r.naam}>
                 <Link
                   href={r.pad}
-                  className="block rounded-[var(--r-sm)] bg-white p-5 transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="block rounded-[var(--r-sm)] bg-white p-5 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   <span className="diba-card-title block">{r.naam}</span>
                   <span className="mt-1.5 block text-[15px] leading-7 text-[var(--t-body)]">

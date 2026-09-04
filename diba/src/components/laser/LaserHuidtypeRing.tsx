@@ -40,7 +40,7 @@ export default function LaserHuidtypeRing() {
               className={`absolute grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full text-[11px] font-medium transition sm:h-11 sm:w-11 ${
                 on
                   ? "bg-[var(--g-700)] text-white shadow-[0_8px_24px_rgba(40,105,67,.25)]"
-                  : "bg-white text-[var(--g-700)] hover:bg-[var(--g-050)]"
+                  : "bg-white text-[var(--g-700)] hover:bg-[var(--g-100)]"
               }`}
               style={{ left: `${x}%`, top: `${y}%` }}
             >
