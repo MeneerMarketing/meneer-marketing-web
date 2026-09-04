@@ -4894,7 +4894,7 @@ Een begeleid traject voor acne: behandelingen in de kliniek, producten en contro
 
 **Waar het aankomt**
 
-Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en geen moment. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat je zelf volhoudt.
+Een traject in plaats van losse behandelingen, omdat acne over weken verandert en niet op een moment ontstaat. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat je zelf volhoudt.
 
 - Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. HIER WERKT HET
 
@@ -4946,9 +4946,9 @@ Zit alles in de prijs? +
 
 In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de prijzenpagina.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat acnetraject doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5052,15 +5052,15 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 Hoe lang houdt het aan? +
 
-Een dag tot enkele dagen, en dat verschilt per huid. Wie iets blijvends wil, zit bij dit apparaat verkeerd en dat zeggen we liever nu dan achteraf.
+Een dag tot enkele dagen, en dat verschilt per huid. Voor blijvende opbouw kies je microneedling of laser; CooLift is er voor het moment zelf.
 
-Waarom staat er geen prijs bij? +
+Wanneer plan ik dit het beste? +
 
-Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpagina en niet pas aan de balie.
+Vlak voor een gelegenheid. Het effect is er meteen, er is niets aan je te zien en je kunt direct door met je dag.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat coolift cryo therapy doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5160,9 +5160,9 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - PIGMENTVLEKKEN
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat cosmelan en dermamelan doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5278,15 +5278,15 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 Wanneer zie ik er iets van? +
 
-Niet meteen. Collageenopbouw kost weken, dus wat je na de eerste sessie ziet is herstel en niet resultaat. Daarom meten we vooraf: anders vergelijk je met een herinnering.
+Na een paar weken. Collageenopbouw kost tijd, dus wat je vlak na de eerste sessie ziet is herstel. Daarom leggen we vooraf vast hoe je huid erbij staat.
 
 Wat is het verschil met de SkinPen? +
 
 Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we in de intake.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat dermapen 4 doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5378,9 +5378,9 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - HUIDVEROUDERING
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat dermaplaning doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5472,9 +5472,9 @@ Waarom per kwartier en niet per stuk? +
 
 Omdat het aantal minder uitmaakt dan de tijd. Wie er twintig kleine heeft, betaalt anders het twintigvoudige voor hetzelfde kwartier werk.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat fibromen verwijderen doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5606,9 +5606,9 @@ Hoeveel sessies heb ik nodig? +
 
 Dat hoor je na de meting. Het aantal hangt af van je huid en van het gebied, en dat stelt de behandelaar dan vast.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat fotona timewalker doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5722,9 +5722,9 @@ Hoeveel sessies zijn er nodig? +
 
 Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat happy intim doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5742,7 +5742,7 @@ CONSULT MET EVE-M HUIDANALYSE · EVE-M
 
 *HOE DIEP*
 
-Raakt niets
+Meet, zonder aanraking
 
 *HOE LANG*
 
@@ -5786,7 +5786,7 @@ De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het 
 
 - Opname onder vast licht Zelfde lamp, zelfde afstand, zelfde stand. Dat maakt vergelijken mogelijk.
 
-- Samen kijken Je ziet hetzelfde scherm als wij, ook als het meevalt.
+- Samen kijken Je kijkt mee op hetzelfde scherm en hoort wat de waardes betekenen.
 
 **Wat je ervan merkt in de stoel**
 
@@ -5818,9 +5818,9 @@ Moet ik dit doen voordat ik iets anders kan? +
 
 Ja, elk traject begint hiermee. De meting is het vertrekpunt waar we het resultaat later mee vergelijken, zodat je over drie maanden ziet wat er veranderd is.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat consult met eve-m huidanalyse doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -5866,7 +5866,7 @@ Draait op Hydrafacial syndeo
 
 **Waar het aankomt**
 
-Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van.
+Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het werkt op de bovenste lagen, en juist daarom zie je het resultaat direct en heb je geen hersteltijd.
 
 De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
 
@@ -5922,9 +5922,9 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - DROGE HUID
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat hydrafacial doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6014,9 +6014,9 @@ Moet mijn ouder mee? +
 
 Ja. Onder de achttien is toestemming van een ouder of verzorger nodig, en bij de intake willen we die er ook bij hebben.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat jongeren acne traject doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6056,7 +6056,7 @@ Draait op Gentle Laser Pro-U
 
 **Waar het aankomt**
 
-De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom is laser precies, en daarom moet je weten waar je op mikt. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk.
+De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom werkt de laser gericht, en daarom stelt de behandelaar hem in op jouw huidtype. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk.
 
 De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
 
@@ -6112,9 +6112,9 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - OVER LASERONTHARING
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat laserontharing doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6216,9 +6216,9 @@ Hoeveel sessies? +
 
 Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat littekentherapie doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6258,7 +6258,7 @@ Draait op LUMI 8-LED
 
 **Waar het aankomt**
 
-Een niet-invasief LED-toestel met rood, geel en bijna-infrarood licht, in een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes.
+Rood, geel en bijna-infrarood licht brengen de huid tot rust en ondersteunen het herstel. De pulsen wisselen elkaar af, zodat de huid niet aan het licht went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes.
 
 De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
 
@@ -6324,15 +6324,15 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 Waarom is dit zo goedkoop? +
 
-Omdat het weinig tijd kost en meestal aan iets anders wordt toegevoegd. Een lage prijs betekent hier ook een bescheiden effect, en dat hoort erbij.
+Omdat de behandeling kort is en er geen materiaal bij opgaat. Vaak plannen we hem aansluitend op iets anders, terwijl je toch al ligt.
 
 Kan ik alleen hiervoor komen? +
 
-Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het als toevoeging tot zijn recht komt.
+Ja, dat kan. Bij roodheid of rosacea plannen mensen het ook als losse reeks, omdat het licht dan het werk doet.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat lumi 8 led doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6348,7 +6348,7 @@ Deze pagina vertelt wat lumi 8 led doet. Of het bij jouw huid het juiste is, han
 
 *HOE DIEP*
 
-Raakt niets
+Meet, zonder aanraking
 
 *HOE LANG*
 
@@ -6422,15 +6422,15 @@ Je voelt warmte achter in je mond. Er komt geen verdoving aan te pas en er wordt
 
 Werkt het ook bij slaapapneu? +
 
-Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Wij starten dan niet.
+Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Weet je wat er speelt, dan kijken we wat we kunnen doen.
 
 Hoe lang houdt het aan? +
 
 Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat nightlase doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6478,7 +6478,7 @@ Draait op Nordlys
 
 **Waar het aankomt**
 
-IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms wat je wil.
+IPL werkt met een bereik van golflengtes in plaats van met een enkele, en een filter haalt het grofste eruit. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is precies wat je nodig hebt bij oppervlakkige roodheid of pigment.
 
 De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
 
@@ -6534,9 +6534,9 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - PIGMENTVLEKKEN
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat nordlys ipl doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6574,7 +6574,7 @@ Exfoliëren en zuurstof in de huid brengen, in één behandeling.
 
 **Waar het aankomt**
 
-Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoffen inbrengt, waarbij er in de huid zelf zuurstof vrijkomt. Oppervlakkig werk met direct resultaat.
+Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoffen inbrengt, waarbij er in de huid zelf zuurstof vrijkomt. Het werkt op de bovenste lagen, met resultaat dat je meteen ziet.
 
 - Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. HIER WERKT HET
 
@@ -6626,11 +6626,11 @@ Het effect houdt dagen aan, geen weken. Veel mensen plannen deze behandeling daa
 
 Kan dit bij een gevoelige huid? +
 
-Meestal wel, en dat bepalen we in de intake en niet op deze pagina. Bij actieve rosacea of ontstoken acne kijken we eerst naar de rust in je huid.
+Meestal wel. De behandelaar beoordeelt dat in de intake; bij actieve rosacea of ontstoken acne brengen we eerst je huid tot rust.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat oxygeneo glow doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6746,9 +6746,9 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - PORIËN
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat medische peelings doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6798,7 +6798,7 @@ Draait op U225 intradermale injector
 
 **Waar het aankomt**
 
-Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma.
+Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De behandelaar werkt met de U225, die elke prik op dezelfde diepte zet. Daardoor komt het middel gelijkmatig over het gebied. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma.
 
 De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
 
@@ -6868,15 +6868,15 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 Waarom een kuur van drie? +
 
-Omdat de huid tussen de sessies door het werk doet. Eén sessie is één prikkel en daar bouwt een huid niets van op.
+Omdat de huid tussen de sessies door het werk doet. Er zijn meerdere prikkels nodig voordat er iets wordt opgebouwd.
 
 Is het pijnlijk? +
 
 Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevoeliger dan op de wang.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat skinboosters en mesotherapie doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -6924,7 +6924,7 @@ Draait op SkinPen CIT
 
 **Waar het aankomt**
 
-Met fijne naalden worden heel veel kleine kanaaltjes tot in de bovenste lederhuid gemaakt. Daar zit het bindweefsel, en de huid reageert daarop met herstel en collageenaanmaak. Dat herstel is het doel; de prikjes zelf zijn alleen de aanleiding. Daarom duurt het weken voor je iets ziet en niet dagen.
+Met fijne naalden worden heel veel kleine kanaaltjes tot in de bovenste lederhuid gemaakt. Daar zit het bindweefsel, en de huid reageert daarop met herstel en collageenaanmaak. Dat herstel is het doel; de prikjes zelf zijn de aanleiding. Het resultaat bouwt zich daarom over weken op.
 
 De afbeelding is schematisch. De werkelijke diepte hangt af van de gekozen instelling.
 
@@ -6990,9 +6990,9 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 - PORIËN
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat skinpen microneedling doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -7008,7 +7008,7 @@ Deze pagina vertelt wat skinpen microneedling doet. Of het bij jouw huid het jui
 
 *HOE DIEP*
 
-Raakt niets
+Meet, zonder aanraking
 
 *HOE LANG*
 
@@ -7028,7 +7028,7 @@ Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert.
 
 **Wat het oplevert**
 
-Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen behandeling van de huid zelf, maar soms een verklaring voor wat er op de huid gebeurt.
+Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Het is geen huidbehandeling, maar de uitslag geeft soms een verklaring voor wat er op je huid gebeurt.
 
 - Hoornlaag De buitenste laag dode cellen. Wat hier gebeurt zie je snel en het herstelt snel. BLIJFT ONAANGEROERD
 
@@ -7078,15 +7078,15 @@ Links waar deze behandeling goed werkt, rechts wanneer een andere behandeling me
 
 Wordt dit vergoed? +
 
-Dat verschilt per verzekeraar en per polis. Kijk bij vergoedingen wat er over jouw verzekeraar bekend is, en ga uit van wat je polis zegt en niet van wat wij zeggen.
+Dat verschilt per verzekeraar en per polis. Op de vergoedingenpagina staat wat er per verzekeraar bekend is; je eigen polis is daarbij leidend.
 
 Wat als er niets uitkomt? +
 
 Ook dat is een bruikbare uitkomst: je weet dan dat je verder moet zoeken dan je voeding.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat voedingsintolerantietest doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -7204,9 +7204,9 @@ Waarom is het voor vrouwen duurder? +
 
 Omdat er acht sessies in zitten in plaats van zes. Het verschil zit in het aantal en niet in het tarief.
 
-**Of dit bij jou past bespreken we vooraf**
+**Begin met een huidanalyse**
 
-Deze pagina vertelt wat xl hair doet. Of het bij jouw huid het juiste is, hangt af van wat er bij jou aan de hand is, en dat begint met een meting. Soms komt daar uit dat je hier niets aan hebt.
+De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
 > knop: WAT ER IN EEN HUIDCONSULT GEBEURT
 
@@ -11675,4 +11675,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5405 tekstblokken · ongeveer 80.830 woorden._
+_105 pagina's · 5405 tekstblokken · ongeveer 80.685 woorden._

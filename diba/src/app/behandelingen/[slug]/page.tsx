@@ -169,7 +169,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                 {[
                   [
                     "Hoe diep",
-                    diepsteLaag ? diepsteLaag.naam : "Raakt niets",
+                    diepsteLaag ? diepsteLaag.naam : "Meet, zonder aanraking",
                   ] as const,
                   b.duurMinuten
                     ? (["Hoe lang", `${b.duurMinuten} minuten`] as const)
@@ -555,16 +555,16 @@ export default async function BehandelingPage({ params }: PageProps) {
       <section className="px-5 pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
-            <Label opDonker>Eerst meten</Label>
+            <Label opDonker>De eerste afspraak</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
-              Of dit bij jou past{" "}
-              <span className="diba-accent-on-dark">bespreken we vooraf</span>
+              Begin met een{" "}
+              <span className="diba-accent-on-dark">huidanalyse</span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Deze pagina vertelt wat {b.naam.toLowerCase()} doet. Of het bij
-              jouw huid het juiste is, hangt af van wat er bij jou aan de hand
-              is, en dat begint met een meting. Soms komt daar uit dat je hier
-              niets aan hebt.
+              De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast
+              wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat
+              en wat het kost. Word je in dezelfde afspraak behandeld, dan
+              vervallen de intakekosten.
             </p>
             <Link
               href="/intake"

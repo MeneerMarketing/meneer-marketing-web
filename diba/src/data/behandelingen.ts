@@ -287,7 +287,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       },
       {
         kop: "Samen kijken",
-        zin: "Je ziet hetzelfde scherm als wij, ook als het meevalt.",
+        zin: "Je kijkt mee op hetzelfde scherm en hoort wat de waardes betekenen.",
       },
     ],
     bijProblemen: [
@@ -322,7 +322,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Reinigen, exfoliëren en hydrateren in één doorloop. Direct zichtbaar, en zonder hersteltijd.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
-      "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van. [MEDISCHE-CHECK-ROJDA]",
+      "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het werkt op de bovenste lagen, en juist daarom zie je het resultaat direct en heb je geen hersteltijd. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen.",
     sessies:
@@ -365,7 +365,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Exfoliëren en zuurstof in de huid brengen, in één behandeling.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
-      "Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoffen inbrengt, waarbij er in de huid zelf zuurstof vrijkomt. Oppervlakkig werk met direct resultaat. [MEDISCHE-CHECK-ROJDA]",
+      "Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoffen inbrengt, waarbij er in de huid zelf zuurstof vrijkomt. Het werkt op de bovenste lagen, met resultaat dat je meteen ziet. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
     sessies:
       "Los, of als onderhoud elke vier tot zes weken. [MEDISCHE-CHECK-ROJDA]",
@@ -403,7 +403,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Kan dit bij een gevoelige huid?",
         antwoord:
-          "Meestal wel, en dat bepalen we in de intake en niet op deze pagina. Bij actieve rosacea of ontstoken acne kijken we eerst naar de rust in je huid. [MEDISCHE-CHECK-ROJDA]",
+          "Meestal wel. De behandelaar beoordeelt dat in de intake; bij actieve rosacea of ontstoken acne brengen we eerst je huid tot rust. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
     bijProblemen: [
@@ -493,12 +493,12 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Hoe lang houdt het aan?",
         antwoord:
-          "Een dag tot enkele dagen, en dat verschilt per huid. Wie iets blijvends wil, zit bij dit apparaat verkeerd en dat zeggen we liever nu dan achteraf. [MEDISCHE-CHECK-ROJDA]",
+          "Een dag tot enkele dagen, en dat verschilt per huid. Voor blijvende opbouw kies je microneedling of laser; CooLift is er voor het moment zelf. [MEDISCHE-CHECK-ROJDA]",
       },
       {
-        vraag: "Waarom staat er geen prijs bij?",
+        vraag: "Wanneer plan ik dit het beste?",
         antwoord:
-          "Vijf minuten werk, en dat zie je terug in het tarief. Het staat op de prijzenpagina en niet pas aan de balie. [PRIJS-NODIG: bevestiging van het bedrag]",
+          "Vlak voor een gelegenheid. Het effect is er meteen, er is niets aan je te zien en je kunt direct door met je dag.",
       },
     ],
     bijProblemen: [
@@ -588,7 +588,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Medisch gecertificeerd microneedlen, op de laag waar de structuur van je huid zit.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
-      "Met fijne naalden worden heel veel kleine kanaaltjes tot in de bovenste lederhuid gemaakt. Daar zit het bindweefsel, en de huid reageert daarop met herstel en collageenaanmaak. Dat herstel is het doel; de prikjes zelf zijn alleen de aanleiding. Daarom duurt het weken voor je iets ziet en niet dagen. [MEDISCHE-CHECK-ROJDA]",
+      "Met fijne naalden worden heel veel kleine kanaaltjes tot in de bovenste lederhuid gemaakt. Daar zit het bindweefsel, en de huid reageert daarop met herstel en collageenaanmaak. Dat herstel is het doel; de prikjes zelf zijn de aanleiding. Het resultaat bouwt zich daarom over weken op. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Eén tot drie dagen rood, als een stevige zonnegloed. [MEDISCHE-CHECK-ROJDA]",
     sessies:
@@ -691,7 +691,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Wanneer zie ik er iets van?",
         antwoord:
-          "Niet meteen. Collageenopbouw kost weken, dus wat je na de eerste sessie ziet is herstel en niet resultaat. Daarom meten we vooraf: anders vergelijk je met een herinnering. [MEDISCHE-CHECK-ROJDA]",
+          "Na een paar weken. Collageenopbouw kost tijd, dus wat je vlak na de eerste sessie ziet is herstel. Daarom leggen we vooraf vast hoe je huid erbij staat. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Wat is het verschil met de SkinPen?",
@@ -720,7 +720,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik.",
     lagen: ["lederhuid-boven"],
     werking:
-      "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma. [MEDISCHE-CHECK-ROJDA]",
+      "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De behandelaar werkt met de U225, die elke prik op dezelfde diepte zet. Daardoor komt het middel gelijkmatig over het gebied. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Kort rood en soms kleine bultjes, meestal binnen een dag weg. [MEDISCHE-CHECK-ROJDA]",
     sessies:
@@ -766,7 +766,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Waarom een kuur van drie?",
         antwoord:
-          "Omdat de huid tussen de sessies door het werk doet. Eén sessie is één prikkel en daar bouwt een huid niets van op. [MEDISCHE-CHECK-ROJDA]",
+          "Omdat de huid tussen de sessies door het werk doet. Er zijn meerdere prikkels nodig voordat er iets wordt opgebouwd. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Is het pijnlijk?",
@@ -916,7 +916,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Werkt het ook bij slaapapneu?",
         antwoord:
-          "Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Wij starten dan niet. [MEDISCHE-CHECK-ROJDA]",
+          "Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Weet je wat er speelt, dan kijken we wat we kunnen doen. [MEDISCHE-CHECK-ROJDA]",
       },
       {
         vraag: "Hoe lang houdt het aan?",
@@ -942,7 +942,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Breed licht op roodheid, vaatjes en pigment. Minimale hersteltijd.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
-      "IPL stuurt geen enkele golflengte de huid in maar een bereik, met een filter dat het grofste eruit haalt. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is soms wat je wil. [MEDISCHE-CHECK-ROJDA]",
+      "IPL werkt met een bereik van golflengtes in plaats van met een enkele, en een filter haalt het grofste eruit. Daardoor raakt het meerdere doelen tegelijk: roodheid, zichtbare vaatjes en oppervlakkig pigment. Het komt gemiddeld minder diep dan een laser, en dat is precies wat je nodig hebt bij oppervlakkige roodheid of pigment. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Meestal een paar uur rood. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks van drie tot zes, met vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
@@ -986,7 +986,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "LED-licht dat de huid rustiger maakt. Zonder naalden of zuren, vaak naast een andere behandeling.",
     lagen: ["opperhuid"],
     werking:
-      "Een niet-invasief LED-toestel met rood, geel en bijna-infrarood licht, in een gepatenteerde pulscyclus. Die wisselende pulsen voorkomen dat de huid aan de lichtenergie went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes. [MEDISCHE-CHECK-ROJDA]",
+      "Rood, geel en bijna-infrarood licht brengen de huid tot rust en ondersteunen het herstel. De pulsen wisselen elkaar af, zodat de huid niet aan het licht went. Wordt ingezet bij roodheid en rosacea en bij fijne lijntjes. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
     sessies: "Meestal als toevoeging bij een andere behandeling",
     prijs: 30,
@@ -1019,12 +1019,12 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Waarom is dit zo goedkoop?",
         antwoord:
-          "Omdat het weinig tijd kost en meestal aan iets anders wordt toegevoegd. Een lage prijs betekent hier ook een bescheiden effect, en dat hoort erbij.",
+          "Omdat de behandeling kort is en er geen materiaal bij opgaat. Vaak plannen we hem aansluitend op iets anders, terwijl je toch al ligt.",
       },
       {
         vraag: "Kan ik alleen hiervoor komen?",
         antwoord:
-          "Dat kan, maar dan is de vraag of het je rit waard is. We zeggen liever dat het als toevoeging tot zijn recht komt.",
+          "Ja, dat kan. Bij roodheid of rosacea plannen mensen het ook als losse reeks, omdat het licht dan het werk doet.",
       },
     ],
     duurMinuten: 20,
@@ -1154,7 +1154,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren.",
     lagen: ["lederhuid-diep"],
     werking:
-      "De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom is laser precies, en daarom moet je weten waar je op mikt. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk. [MEDISCHE-CHECK-ROJDA]",
+      "De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom werkt de laser gericht, en daarom stelt de behandelaar hem in op jouw huidtype. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Een paar uur rood, soms bultjes rond de haarzakjes. [MEDISCHE-CHECK-ROJDA]",
     sessies:
@@ -1260,7 +1260,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
-      "Een traject in plaats van losse behandelingen, omdat acne een verloop heeft en geen moment. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat je zelf volhoudt. [MEDISCHE-CHECK-ROJDA]",
+      "Een traject in plaats van losse behandelingen, omdat acne over weken verandert en niet op een moment ontstaat. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat je zelf volhoudt. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Wisselt per fase van het traject. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een traject van drie tot zes maanden, met een controle om de vier tot zes weken. [MEDISCHE-CHECK-ROJDA]",
@@ -1503,7 +1503,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert.",
     lagen: [],
     werking:
-      "Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Geen behandeling van de huid zelf, maar soms een verklaring voor wat er op de huid gebeurt. [MEDISCHE-CHECK-ROJDA]",
+      "Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Het is geen huidbehandeling, maar de uitslag geeft soms een verklaring voor wat er op je huid gebeurt. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
     sessies: "Eén keer",
     prijs: 300,
@@ -1535,7 +1535,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Wordt dit vergoed?",
         antwoord:
-          "Dat verschilt per verzekeraar en per polis. Kijk bij vergoedingen wat er over jouw verzekeraar bekend is, en ga uit van wat je polis zegt en niet van wat wij zeggen.",
+          "Dat verschilt per verzekeraar en per polis. Op de vergoedingenpagina staat wat er per verzekeraar bekend is; je eigen polis is daarbij leidend.",
       },
       {
         vraag: "Wat als er niets uitkomt?",
