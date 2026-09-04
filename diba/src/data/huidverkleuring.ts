@@ -54,7 +54,8 @@ export const KLEUREN: readonly Kleur[] = [
       },
       {
         naam: "Donkere kringen",
-        wanneer: "Alleen onder je ogen, en de rest van je gezicht is egaal.",
+        wanneer:
+          "Alleen onder je ogen, terwijl de rest van je gezicht egaal blijft.",
         pad: "/huidproblemen/donkere-kringen",
       },
     ],
@@ -110,8 +111,7 @@ export const KLEUREN: readonly Kleur[] = [
       },
       {
         naam: "Naar de huisarts",
-        wanneer:
-          "Verspreide witte plekken die groter worden of erbij komen. Dat hoort bij een arts en niet bij ons.",
+        wanneer: "Verspreide witte plekken die groter worden of erbij komen.",
         pad: "/huidproblemen/moedervlekken",
       },
     ],
@@ -167,7 +167,7 @@ export const KLEUR_ZEGT_NIET = [
   },
   {
     kop: "Of het weggaat",
-    zin: "Twee mensen met dezelfde kleur op dezelfde plek kunnen een heel ander verloop hebben. Een uitkomst voorspellen op kleur alleen is gokken, en dat doen we niet.",
+    zin: "Twee mensen met dezelfde kleur op dezelfde plek kunnen een ander verloop hebben. Een uitkomst voorspellen op kleur alleen is gokken, en dat doen we niet.",
   },
   {
     kop: "Hoe lang het er al zit",

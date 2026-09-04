@@ -143,24 +143,26 @@ export default function HuidproblemenPage() {
             {[
               [
                 "Wat is het eigenlijk",
-                "Uitgelegd zoals we het in de behandelkamer zouden zeggen, met de vakterm ernaast en niet ervoor.",
+                "Uitgelegd zoals we het in de behandelkamer zeggen, met de vakterm erbij.",
               ],
               [
                 "Wat werkt en wat niet",
-                "Links wat we doen, rechts wat we afraden, en bij allebei waarom.",
+                "Wat er werkt en wat we afraden, en bij allebei de reden erachter.",
               ],
               [
                 "Wat wij eraan doen",
-                "Welke behandeling erbij past, hoeveel sessies dat vraagt en wat het kost.",
+                "Welke behandeling erbij past, hoeveel afspraken dat vraagt en wat het kost.",
               ],
               [
                 "Hoe we het meten",
-                "Zonder beginpunt is een verschil later iets dat je moet geloven. Daarom leggen we vast waar we starten.",
+                "We leggen vast hoe je huid er bij de start voor staat, zodat verschil later te zien is.",
               ],
             ].map(([kop, tekst]) => (
               <li key={kop} className="rounded-[var(--r-sm)] bg-white p-5">
                 <h3 className="diba-card-title">{kop}</h3>
-                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken, niet
+                    van de lengte. Ruimte reserveren werkt op elke breedte. */}
+                <p className="mt-3 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {tekst}
                 </p>
               </li>

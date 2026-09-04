@@ -32,7 +32,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/rimpels",
   titel: "Rimpels behandelen in Rotterdam",
   omschrijving:
-    "Beweegt de lijn mee of blijft hij staan? Dat verschil bepaalt volledig wat er zin heeft, en je maakt het zelf met een spiegel.",
+    "Rimpels en fijne lijntjes behandelen met microneedling, laser en peelings die de aanmaak van collageen op gang brengen.",
 });
 
 const PAD = "/huidproblemen/rimpels";
@@ -101,16 +101,15 @@ export default function Pagina() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Ontspan je gezicht en kijk in de spiegel. Verdwijnt de lijn, dan
-              zit hij in de spier. Staat hij er nog, dan zit hij in je huid. Dat
-              onderscheid bepaalt volledig wat er zin heeft, en het kost je tien
-              seconden.
+              Rimpels en fijne lijntjes behandelen we met microneedling, laser
+              en peelings. Die brengen de aanmaak van collageen op gang,
+              waardoor de huid steviger wordt en lijnen minder diep.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wij werken op de huid en niet op de spier. Dat betekent dat wij
-              niet voor elke lijn de juiste zijn, en dat zeggen we hieronder
-              ook.
+              Een lijn kan in je huid zitten of in de spier eronder. De
+              behandelaar stelt vast om welke van de twee het gaat, want dat
+              bepaalt wat er werkt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -203,9 +202,9 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier soorten lijn"
-            kop="Niet elke lijn"
-            accent="is een rimpel."
-            intro="Dit is een herkenningshulp en geen diagnose. Maar de beweegtest brengt de meeste mensen bij de juiste kaart, en bij twee daarvan is ons antwoord dat verzorging of iemand anders meer oplevert dan een reeks bij ons."
+            kop="Vier soorten"
+            accent="lijnen"
+            intro="Vier soorten lijnen die er hetzelfde uitzien. Of een lijn in de huid of in de spier zit, bepaalt welke behandeling werkt."
           />
           <SoortKiezer
             opties={SOORTEN}

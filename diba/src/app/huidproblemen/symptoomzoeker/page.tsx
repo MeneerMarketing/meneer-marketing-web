@@ -28,7 +28,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/symptoomzoeker",
   titel: "Weet je niet hoe het heet? Begin hier",
   omschrijving:
-    "Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat. Bedoeld voor wie de naam nog niet weet.",
+    "Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat.",
 });
 
 const PAD = "/huidproblemen/symptoomzoeker";
@@ -72,15 +72,13 @@ export default function SymptoomzoekerPage() {
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            De meeste mensen komen hier binnen met wat ze zien en niet met een
-            naam. Daarom staat er hieronder geen enkele vakterm: je kruist aan
-            wat er speelt en wij zoeken de pagina erbij.
+            Je hoeft de naam van je klacht niet te kennen. Kruis aan wat je ziet
+            en voelt, dan brengen we je naar de pagina die erover gaat.
           </p>
 
           <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Bij twee dingen wijzen we je meteen naar de huisarts, ook als de
-            rest bij ons hoort. Dat is geen voorbehoud maar de volgorde die
-            klopt.
+            Bij twee signalen sturen we je meteen naar de huisarts. Die kijken
+            we als eerste na, zodat je weet waar je aan toe bent.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -109,7 +107,7 @@ export default function SymptoomzoekerPage() {
             label="De zoeker"
             kop="Kruis aan wat"
             accent="er speelt."
-            intro="Je mag er meerdere kiezen. Hoe meer je aankruist, hoe scherper de lijst wordt, en achter elke pagina staat hoeveel van jouw punten hij dekt."
+            intro="Je mag er meerdere kiezen. Hoe meer je aankruist, hoe scherper de lijst wordt die je terugkrijgt."
           />
           <Zoeker />
         </div>

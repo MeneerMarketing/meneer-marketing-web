@@ -52,7 +52,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/huidverkleuring",
   titel: "Huidverkleuring: welke kleur is het?",
   omschrijving:
-    "Bruin, rood of wit: de kleur vertelt in welke laag de verkleuring zit en of er iets aan te doen valt. Zo vind je waar jij mee te maken hebt.",
+    "Bruin, rood of wit: de kleur bepaalt in welke laag de verkleuring zit en welke behandeling erbij hoort.",
 });
 
 const PAD = "/huidproblemen/huidverkleuring";
@@ -93,14 +93,14 @@ export default function HuidverkleuringPage() {
           </h1>
 
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Verkleuring is een verzamelwoord. Bruin is iets anders dan rood, en
-            wit is weer een heel ander verhaal. De kleur vertelt in welke laag
-            het zit, en daarmee of er iets aan te doen valt.
+            Verkleuring is een verzamelwoord. Bruin, rood en wit hebben elk een
+            andere oorzaak, zitten in een andere laag en vragen een andere
+            behandeling.
           </p>
 
           <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Op deze pagina staat geen behandeling en geen prijs. Hij brengt je
-            naar de pagina die er wel over gaat, en soms is dat de huisarts.
+            Hieronder vind je per kleur welke behandeling erbij hoort, met een
+            doorverwijzing naar de pagina die erover gaat.
           </p>
 
           <div className="mt-9">
@@ -118,10 +118,10 @@ export default function HuidverkleuringPage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De kleurwijzer"
-            kop="Vier kleuren,"
-            accent="vier verhalen."
-            intro="Je hoeft geen term te kennen om te kiezen. Kijk bij daglicht, houd je onderarm ernaast als vergelijking, en tik de kleur aan die het dichtst komt."
+            label="Per kleur"
+            kop="Vier"
+            accent="kleuren"
+            intro="Je hoeft de vakterm niet te kennen. Kijk bij daglicht met je onderarm ernaast als vergelijking, en kies de kleur die past."
           />
           <Kleurwijzer />
         </div>
@@ -138,9 +138,9 @@ export default function HuidverkleuringPage() {
         <div className="mx-auto">
           <SectieKop
             label="Alles op een rij"
-            kop="Twaalf routes,"
-            accent="vier kleuren."
-            intro="Hierboven zie je er één kleur van tegelijk. Hier staan ze allemaal, zodat je kunt scannen in plaats van klikken. Herken je je eigen geval in geen enkele regel, dan is dat ook informatie."
+            kop="Alles op"
+            accent="een rij"
+            intro="Hierboven zie je een kleur per keer. Hier staan ze naast elkaar, zodat je kunt scannen in plaats van klikken."
           />
 
           <div className="mt-12 grid gap-4 sm:grid-cols-2 sm:items-start xl:grid-cols-4">
@@ -206,7 +206,7 @@ export default function HuidverkleuringPage() {
                 <p className="diba-card-title text-[var(--t-strong)]">
                   {n.kop}
                 </p>
-                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 min-h-[5lh] text-[16px] leading-7 text-[var(--t-body)]">
                   {n.zin}
                 </p>
               </li>

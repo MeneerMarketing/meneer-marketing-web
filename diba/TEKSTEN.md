@@ -574,13 +574,13 @@ Twee wegwijzers die sorteren op kleur of op wat je voelt, in plaats van op een n
 
 **Dezelfde vier vragen, elke keer.**
 
-- Wat is het eigenlijk Uitgelegd zoals we het in de behandelkamer zouden zeggen, met de vakterm ernaast en niet ervoor.
+- Wat is het eigenlijk Uitgelegd zoals we het in de behandelkamer zeggen, met de vakterm erbij.
 
-- Wat werkt en wat niet Links wat we doen, rechts wat we afraden, en bij allebei waarom.
+- Wat werkt en wat niet Wat er werkt en wat we afraden, en bij allebei de reden erachter.
 
-- Wat wij eraan doen Welke behandeling erbij past, hoeveel sessies dat vraagt en wat het kost.
+- Wat wij eraan doen Welke behandeling erbij past, hoeveel afspraken dat vraagt en wat het kost.
 
-- Hoe we het meten Zonder beginpunt is een verschil later iets dat je moet geloven. Daarom leggen we vast waar we starten.
+- Hoe we het meten We leggen vast hoe je huid er bij de start voor staat, zodat verschil later te zien is.
 
 **Alles begint bij meten.**
 
@@ -2112,19 +2112,19 @@ Er staat op deze pagina geen knop om bij ons een afspraak te maken. Maak een fot
 
 **Tabbladtitel:** Huidverkleuring: welke kleur is het? | Diba Clinics
 
-**Google-omschrijving:** Bruin, rood of wit: de kleur vertelt in welke laag de verkleuring zit en of er iets aan te doen valt. Zo vind je waar jij mee te maken hebt.
+**Google-omschrijving:** Bruin, rood of wit: de kleur bepaalt in welke laag de verkleuring zit en welke behandeling erbij hoort.
 
 **VERKLEURINGEN OP JE HUID**
 
-Verkleuring is een verzamelwoord. Bruin is iets anders dan rood, en wit is weer een heel ander verhaal. De kleur vertelt in welke laag het zit, en daarmee of er iets aan te doen valt.
+Verkleuring is een verzamelwoord. Bruin, rood en wit hebben elk een andere oorzaak, zitten in een andere laag en vragen een andere behandeling.
 
-Op deze pagina staat geen behandeling en geen prijs. Hij brengt je naar de pagina die er wel over gaat, en soms is dat de huisarts.
+Hieronder vind je per kleur welke behandeling erbij hoort, met een doorverwijzing naar de pagina die erover gaat.
 
 > knop: KIES JE KLEUR
 
-**Vier kleuren, vier verhalen.**
+**Vier kleuren**
 
-Je hoeft geen term te kennen om te kiezen. Kijk bij daglicht, houd je onderarm ernaast als vergelijking, en tik de kleur aan die het dichtst komt.
+Je hoeft de vakterm niet te kennen. Kijk bij daglicht met je onderarm ernaast als vergelijking, en kies de kleur die past.
 
 > knop: BRUIN OF BEIGE
 
@@ -2142,13 +2142,13 @@ Kwam het geleidelijk met de jaren, of kwam het in vlakken tegelijk?
 
 - Melasma Grotere vlakken op wangen, bovenlip of voorhoofd, vaak begonnen bij zwangerschap of de pil.
 
-- Donkere kringen Alleen onder je ogen, en de rest van je gezicht is egaal.
+- Donkere kringen Alleen onder je ogen, terwijl de rest van je gezicht egaal blijft.
 
 Waarom de kleur en niet de plaats: de kleur zegt iets over de laag waarin het zit. Pigment ligt anders dan bloedvaten, en dat bepaalt of iets reageert op behandeling. Een behandelaar kijkt daarom als eerste hiernaar, en jij kunt dat ook.
 
-**Twaalf routes, vier kleuren.**
+**Alles op een rij**
 
-Hierboven zie je er één kleur van tegelijk. Hier staan ze allemaal, zodat je kunt scannen in plaats van klikken. Herken je je eigen geval in geen enkele regel, dan is dat ook informatie.
+Hierboven zie je een kleur per keer. Hier staan ze naast elkaar, zodat je kunt scannen in plaats van klikken.
 
 Bruin of beige
 
@@ -2170,7 +2170,7 @@ Zit het op één oude plek, of komen er verspreid nieuwe plekken bij?
 
 - Littekens en striae Eén plek die precies samenvalt met een oud litteken of oude striae.
 
-- Naar de huisarts Verspreide witte plekken die groter worden of erbij komen. Dat hoort bij een arts en niet bij ons.
+- Naar de huisarts Verspreide witte plekken die groter worden of erbij komen.
 
 Blauw of paars
 
@@ -2188,7 +2188,7 @@ De kleur is de eerste vraag en niet de laatste. Hij wijst de richting aan; wat e
 
 - Hoe erg het is Een lichte verkleuring kan hardnekkiger zijn dan een donkere. Wat er te doen valt hangt af van de laag waarin het zit, en dat zie je niet aan de intensiteit.
 
-- Of het weggaat Twee mensen met dezelfde kleur op dezelfde plek kunnen een heel ander verloop hebben. Een uitkomst voorspellen op kleur alleen is gokken, en dat doen we niet.
+- Of het weggaat Twee mensen met dezelfde kleur op dezelfde plek kunnen een ander verloop hebben. Een uitkomst voorspellen op kleur alleen is gokken, en dat doen we niet.
 
 - Hoe lang het er al zit Vers en oud zien er vaak hetzelfde uit, terwijl dat verschil juist bepaalt wat er nog beweegt. Daarom vragen we ernaar en kijken we er niet alleen naar.
 
@@ -3368,13 +3368,13 @@ In het huidconsult kijken we onder vergroting mee. Blijkt het grotendeels normal
 
 **Tabbladtitel:** Ouderdomsvlekken behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld
+**Google-omschrijving:** Ouderdomsvlekken en zonnevlekken weghalen met IPL of laser, meestal in een of twee sessies.
 
 **OUDERDOMSVLEKKEN BEHANDELEN**
 
-Ouderdomsvlekken en zonnevlekken zijn onschuldig en goed te behandelen. Het probleem is dat andere dingen er in het begin op lijken, en die zijn dat niet altijd. Daarom is onze eerste vraag niet hoe je ervan afkomt, maar of het is wat je denkt.
+Ouderdomsvlekken en zonnevlekken zijn onschuldig en goed te behandelen. We halen ze weg met IPL of laser, en meestal zijn er een of twee sessies nodig.
 
-Verandert een plek van vorm of kleur, dan gaat hij eerst naar de huisarts. Ook als het waarschijnlijk niets is.
+De behandelaar beoordeelt eerst elke plek. Verandert er iets aan de vorm of de kleur, dan gaat die eerst langs je huisarts.
 
 > knop: KIJK WAT JIJ HEBT
 
@@ -3398,7 +3398,7 @@ Een rafelige rand, ongelijke kleur, groei of jeuk: bij die dingen ga je naar de 
 
 **Vier soorten bruine vlekken**
 
-Dit is een herkenningshulp en geen diagnose. Zit er iets bij dat verandert, dan is de rest van deze pagina niet aan de orde en ga je eerst naar de huisarts.
+Vier soorten bruine vlekken die op elkaar lijken. Verandert er iets aan een plek, dan gaat die eerst langs je huisarts.
 
 - Platte bruine vlek Een egale bruine plek op je hand, slaap of decolleté
 
@@ -3932,13 +3932,13 @@ Er staat op deze pagina geen knop om bij ons een afspraak te maken. Neem je nage
 
 **Tabbladtitel:** Rimpels behandelen in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Beweegt de lijn mee of blijft hij staan? Dat verschil bepaalt volledig wat er zin heeft, en je maakt het zelf met een spiegel.
+**Google-omschrijving:** Rimpels en fijne lijntjes behandelen met microneedling, laser en peelings die de aanmaak van collageen op gang brengen.
 
 **RIMPELS EN FIJNE LIJNTJES**
 
-Ontspan je gezicht en kijk in de spiegel. Verdwijnt de lijn, dan zit hij in de spier. Staat hij er nog, dan zit hij in je huid. Dat onderscheid bepaalt volledig wat er zin heeft, en het kost je tien seconden.
+Rimpels en fijne lijntjes behandelen we met microneedling, laser en peelings. Die brengen de aanmaak van collageen op gang, waardoor de huid steviger wordt en lijnen minder diep.
 
-Wij werken op de huid en niet op de spier. Dat betekent dat wij niet voor elke lijn de juiste zijn, en dat zeggen we hieronder ook.
+Een lijn kan in je huid zitten of in de spier eronder. De behandelaar stelt vast om welke van de twee het gaat, want dat bepaalt wat er werkt.
 
 > knop: DOE DE BEWEEGTEST
 
@@ -3960,9 +3960,9 @@ Pigment, textuur, elasticiteit en verslapping lopen bij huidveroudering door elk
 
 > knop: NAAR HUIDVEROUDERING
 
-**Niet elke lijn is een rimpel.**
+**Vier soorten lijnen**
 
-Dit is een herkenningshulp en geen diagnose. Maar de beweegtest brengt de meeste mensen bij de juiste kaart, en bij twee daarvan is ons antwoord dat verzorging of iemand anders meer oplevert dan een reeks bij ons.
+Vier soorten lijnen die er hetzelfde uitzien. Of een lijn in de huid of in de spier zit, bepaalt welke behandeling werkt.
 
 - Droogtelijntjes Fijne streepjes die er 's ochtends zijn en later minder
 
@@ -4368,13 +4368,13 @@ Bij goedaardige steelwratjes is het een korte afspraak, per kwartier gerekend. B
 
 **Tabbladtitel:** Weet je niet hoe het heet? Begin hier | Diba Clinics
 
-**Google-omschrijving:** Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat. Bedoeld voor wie de naam nog niet weet.
+**Google-omschrijving:** Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat.
 
 **ZOEK OP WAT JE OP JE HUID ZIET**
 
-De meeste mensen komen hier binnen met wat ze zien en niet met een naam. Daarom staat er hieronder geen enkele vakterm: je kruist aan wat er speelt en wij zoeken de pagina erbij.
+Je hoeft de naam van je klacht niet te kennen. Kruis aan wat je ziet en voelt, dan brengen we je naar de pagina die erover gaat.
 
-Bij twee dingen wijzen we je meteen naar de huisarts, ook als de rest bij ons hoort. Dat is geen voorbehoud maar de volgorde die klopt.
+Bij twee signalen sturen we je meteen naar de huisarts. Die kijken we als eerste na, zodat je weet waar je aan toe bent.
 
 > knop: BEGIN MET AANKRUISEN
 
@@ -4382,7 +4382,7 @@ Bij twee dingen wijzen we je meteen naar de huisarts, ook als de rest bij ons ho
 
 **Kruis aan wat er speelt.**
 
-Je mag er meerdere kiezen. Hoe meer je aankruist, hoe scherper de lijst wordt, en achter elke pagina staat hoeveel van jouw punten hij dekt.
+Je mag er meerdere kiezen. Hoe meer je aankruist, hoe scherper de lijst wordt die je terugkrijgt.
 
 - Rood of rode plekken
 
@@ -11495,4 +11495,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5323 tekstblokken · ongeveer 79.692 woorden._
+_105 pagina's · 5323 tekstblokken · ongeveer 79.566 woorden._

@@ -32,7 +32,7 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/ouderdomsvlekken",
   titel: "Ouderdomsvlekken behandelen in Rotterdam",
   omschrijving:
-    "Is deze plek door de jaren heen ontstaan, of is hij veranderd? Die vraag komt eerst, want Laat bruine vlekken beoordelen voordat ze worden behandeld",
+    "Ouderdomsvlekken en zonnevlekken weghalen met IPL of laser, meestal in een of twee sessies.",
 });
 
 const PAD = "/huidproblemen/ouderdomsvlekken";
@@ -102,14 +102,13 @@ export default function Pagina() {
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
               Ouderdomsvlekken en zonnevlekken zijn onschuldig en goed te
-              behandelen. Het probleem is dat andere dingen er in het begin op
-              lijken, en die zijn dat niet altijd. Daarom is onze eerste vraag
-              niet hoe je ervan afkomt, maar of het is wat je denkt.
+              behandelen. We halen ze weg met IPL of laser, en meestal zijn er
+              een of twee sessies nodig.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Verandert een plek van vorm of kleur, dan gaat hij eerst naar de
-              huisarts. Ook als het waarschijnlijk niets is.
+              De behandelaar beoordeelt eerst elke plek. Verandert er iets aan
+              de vorm of de kleur, dan gaat die eerst langs je huisarts.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -204,7 +203,7 @@ export default function Pagina() {
             label="Vier beelden"
             kop="Vier soorten"
             accent="bruine vlekken"
-            intro="Dit is een herkenningshulp en geen diagnose. Zit er iets bij dat verandert, dan is de rest van deze pagina niet aan de orde en ga je eerst naar de huisarts."
+            intro="Vier soorten bruine vlekken die op elkaar lijken. Verandert er iets aan een plek, dan gaat die eerst langs je huisarts."
           />
           <SoortKiezer
             opties={SOORTEN}
