@@ -1200,21 +1200,21 @@ Het huidconsult legt vast wat er nu zichtbaar is. Daarna weet je hoeveel sessies
 
 **Tabbladtitel:** Doffe huid: waar komt die grauwe tint vandaan | Diba Clinics
 
-**Google-omschrijving:** Dof is licht dat verstrooit in plaats van weerkaatst. Vier oorzaken, en bij twee ervan is de beste behandeling een gewoonte en geen afspraak.
+**Google-omschrijving:** Een doffe huid behandelen met peelings, HydraFacial en microneedling. Waar dofheid vandaan komt en wat eraan te doen is.
 
 **EEN VALE HUID ZONDER GLANS**
 
-Er bestaat geen vakterm voor, en toch zie je het: een huid die het licht niet meer terugkaatst. Dat heeft vier verschillende oorzaken, en die vragen om vier verschillende dingen.
+Een doffe huid kaatst het licht minder terug. Dat komt meestal door een opeenhoping van dode huidcellen of door te weinig vocht. Beide behandelen we, met peelings, HydraFacial of microneedling.
 
-Bij twee ervan kunnen wij iets. Bij de andere twee is de beste behandeling een gewoonte, en dan zeggen we dat.
+In de intake stellen we vast waar het bij jou vandaan komt, en welke behandeling daarbij past.
 
-> knop: DOE DE LICHTTEST
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zo bekijk je je huid bij daglicht**
+**Waar we naar kijken**
 
-Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat maak je met een lamp en een hoek zichtbaar. Niet in de badkamer: licht van boven maakt elke huid vlak en verstopt juist wat je wil zien.
+De huidtherapeut beoordeelt je huid bij daglicht en onder vergroting. Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat zie je alleen onder de juiste hoek.
 
 - STAP 1 Ga bij een raam staan Daglicht van opzij, geen lamp boven je hoofd. Badkamerverlichting valt van boven en maakt elke huid even vlak; dat is precies wat je nu niet wil.
 
@@ -1222,9 +1222,9 @@ Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat maak je met een
 
 - STAP 3 Voel er dan overheen Blijft het mat en voelt het ruw, dan gaat het om opgehoopte cellen. Blijft het mat en voelt het glad, dan gaat het eerder om vocht of om kleur.
 
-**Vier oorzaken van een doffe huid**
+**Vier oorzaken van dofheid**
 
-Dat laatste is geen afschuiven. Een behandeling die tegen je slaap en je gewoontes in moet werken is weggegooid geld, en dat hoor je liever nu dan na drie afspraken.
+Twee van de vier oorzaken behandelen we in de kliniek. Bij de andere twee zit de winst in je verzorging, en dat hoor je van ons.
 
 - Opgehoopte dode cellen Je huid voelt ruw en ziet er grauw uit, ook net na het wassen
 
@@ -1258,7 +1258,7 @@ Een ongelijke tint leest je oog als vermoeid, ook zonder dat er ergens een duide
 
 **Wat helpt en wat we afraden**
 
-Bij dofheid is het effect vaak snel zichtbaar en ook weer tijdelijk. Dat is geen bezwaar zolang je het weet, en een probleem zodra iemand denkt een oorzaak af te kopen.
+Bij dofheid is het effect vaak snel zichtbaar en houdt het een aantal weken aan. Daarom wordt deze behandeling vaak herhaald.
 
 **DIT WERKT**
 
@@ -1334,29 +1334,27 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 
 In het huidconsult zoeken we uit welke van de vier het bij jou is. Blijkt het vooral je nachten te zijn, dan hoor je dat, en dan is er niets te boeken.
 
-> knop: PLAN EEN HUIDCONSULT
-
 ---
 
 ### /huidproblemen/donkere-kringen
 
 **Tabbladtitel:** Donkere kringen: welk type heb jij? | Diba Clinics
 
-**Google-omschrijving:** Donkere kringen hebben drie verschillende oorzaken die er hetzelfde uitzien. Hoe je ze uit elkaar houdt, en bij welke wij je niet verder helpen.
+**Google-omschrijving:** Donkere kringen behandelen: pigment, doorschijnende vaatjes of schaduw. Hoe we vaststellen om welke van de drie het gaat.
 
 **DONKERE KRINGEN ONDER JE OGEN**
 
-Donkere kringen zijn geen aandoening maar een uiterlijk kenmerk met drie verschillende oorzaken. Ze zien er hetzelfde uit en vragen alle drie iets anders, en bij één ervan is de eerlijke uitkomst dat wij je niet verder helpen.
+Donkere kringen hebben drie mogelijke oorzaken: pigment, doorschijnende vaatjes of schaduw door een groef. Pigment behandelen we met peelings en gerichte verzorging.
 
-Je kunt zelf uitzoeken welke het bij jou is. Daar heb je een spiegel voor nodig en twee minuten, en het kost je niets.
+In de intake stellen we vast om welke van de drie het gaat en wat daarbij past.
 
-> knop: DOE DE SPIEGELTEST
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zoek zelf uit welk type je hebt.**
+**Waar we naar kijken**
 
-Twee handelingen voor de spiegel en één vraag over je week. Daarna weet je of je naar kleur kijkt of naar schaduw, en dat bepaalt of behandelen zin heeft.
+De huidtherapeut beoordeelt of je naar kleur kijkt of naar schaduw, en of het pigment is of doorschijnende vaatjes.
 
 Je hebt hier alleen een spiegel of je telefoon voor nodig. De test kost je twee minuten en bepaalt of behandelen in jouw geval zin heeft.
 
@@ -1372,19 +1370,19 @@ Licht van boven maakt van elke holte een donkere plek. Verdwijnt de kring bij li
 
 **Drie oorzaken**
 
-Voor wie de test wil overslaan of wil nalezen wat eruit kwam. Let op de middelste kolom: die verschilt per type en daarom één behandeling voor alle drie niet bestaat.
+De drie oorzaken naast elkaar, met per soort wat eraan te doen is.
 
-- Dit is pigment PERI-ORBITALE HYPERPIGMENTATIE Er zit meer kleur in de huid onder je oog. Dat kan erfelijk zijn, kan volgen op eczeem of wrijven, en komt vaker voor bij een donkere huid. HIER KUNNEN WIJ IETS
+- Dit is pigment PERI-ORBITALE HYPERPIGMENTATIE Er zit meer kleur in de huid onder je oog. Dat kan erfelijk zijn, kan volgen op eczeem of op wrijven, en komt vaker voor bij een donkere huid. DIT BEHANDELEN WIJ
 
-- Dit zijn doorschijnende vaatjes VASCULAIRE KRINGEN De huid onder je oog is de dunste van je lichaam. Bij sommige mensen schemert het bloedvatennetwerk eronder erdoorheen, wat een blauwpaarse tint geeft. HIER KUNNEN WIJ DEELS IETS
+- Dit zijn doorschijnende vaatjes VASCULAIRE KRINGEN De huid onder je oog is de dunste van je lichaam. Bij sommige mensen schemert het bloedvatennetwerk eronder erdoorheen, wat een blauwpaarse tint geeft. DEELS BEHANDELBAAR
 
-- Dit is schaduw, geen kleur TRAANDALGROEVE, STRUCTURELE SCHADUW De overgang tussen je onderooglid en je wang ligt iets dieper, en licht van boven maakt daar een schaduw van. De huid zelf heeft geen afwijkende kleur. HIER KUNNEN WIJ NIETS
+- Dit is schaduw, geen kleur TRAANDALGROEVE, STRUCTURELE SCHADUW De overgang tussen je onderooglid en je wang ligt iets dieper, en licht van boven maakt daar een schaduw van. De huid zelf heeft geen afwijkende kleur. ANDERE DISCIPLINE
 
 Kwam er pigment uit? Dan gelden dezelfde regels als voor pigment elders in je gezicht, inclusief het seizoen waarin je beter niet begint.
 
 **Wat helpt en wat we afraden**
 
-Het eerste kruisje rechts kost de meeste mensen het meeste geld: een behandeling boeken voordat duidelijk is welk type ze hebben.
+Behandelen voordat duidelijk is om welke van de drie het gaat, kost de meeste mensen het meeste geld.
 
 **DIT WERKT**
 
@@ -1463,8 +1461,6 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 **Eerst weten welk type je hebt.**
 
 We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, dan hoor je dat en houdt het op. Blijkt het pigment, dan weet je meteen wat er mogelijk is.
-
-> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -3260,31 +3256,31 @@ Kom je voor iets anders en zit er een moedervlek in het gebied, dan dekken we di
 
 **Tabbladtitel:** Onzuivere huid en mee-eters | Diba Clinics
 
-**Google-omschrijving:** De meeste puntjes op je neus zijn geen mee-eters maar talgfilamenten, en die horen er te zijn. Met zijlicht zie je zelf welke van de twee je hebt.
+**Google-omschrijving:** Mee-eters en verstopte poriën behandelen met HydraFacial en peelings. Het verschil tussen normale porie-inhoud en echte mee-eters.
 
 **MEE-ETERS EN EEN ONZUIVERE HUID**
 
-In vrijwel elke porie zit een grijs stipje, en dat is geen mee-eter maar de gewone inhoud van een werkende porie. Iedereen heeft ze, ze zijn binnen weken terug, en een halve industrie van poriestrips bestaat bij de gratie van die verwarring.
+Mee-eters en verstopte poriën behandelen we met een HydraFacial, peelings en gerichte verzorging. Zo maken we de poriën leeg en houden we ze rustiger.
 
-Echte mee-eters zitten verspreid, zijn donkerder, en zitten er al maanden. Daar valt wel iets aan te doen.
+In de intake kijken we mee onder vergroting en stellen we vast om welk type onzuiverheid het gaat.
 
-> knop: DOE DE KORRELCHECK
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Zo bekijk je je poriën van dichtbij**
+**Waar we naar kijken**
 
-Dit is een herkenningshulp en geen diagnose. Het maakt wel het onderscheid tussen iets dat normaal is en iets dat behandeld kan worden, en dat scheelt mensen jaren vechten tegen hun eigen anatomie.
+De huidtherapeut kijkt onder vergroting naar je poriën en beoordeelt of het om normale porie-inhoud gaat of om echte mee-eters.
 
-- STAP 1 Kijk in zijlicht Ga bij een raam staan en draai je hoofd zo dat het licht schuin op je neus en voorhoofd valt. Recht licht verstopt oneffenheden; zijlicht laat ze zien.
+- STAP 1 Het licht van opzij De huidtherapeut beoordeelt je huid in strijklicht. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.
 
-- STAP 2 Tel de poriën Zit er in vrijwel elke porie een grijs stipje, gelijkmatig verdeeld? Dan zijn het talgfilamenten en is dat normale huid. Zitten ze verspreid en zijn ze duidelijk donkerder, dan zijn het mee-eters.
+- STAP 2 De verdeling over je huid Zit er in vrijwel elke porie een grijs stipje, dan is dat normale porie-inhoud. Zitten ze verspreid en donkerder, dan zijn het mee-eters.
 
-- STAP 3 Voel met vlakke vingers Strijk zacht over je voorhoofd en kaaklijn. Voel je hobbeltjes zonder dat je iets ziet, dan zijn dat gesloten poriën. Niet knijpen: daar begint de ontsteking.
+- STAP 3 Wat je voelt maar niet ziet Hobbeltjes op je voorhoofd en kaaklijn die je wel voelt maar niet ziet, zijn gesloten poriën. Die vragen een andere aanpak.
 
 **Wat er in een porie kan zitten**
 
-Verstopte poriën, mee-eters en onzuiverheden lopen in de volksmond door elkaar. Het verschil bepaalt of er iets te behandelen valt, of dat de beste behandeling is om ermee te stoppen.
+Verstopte poriën, mee-eters en onzuiverheden lopen in de volksmond door elkaar. Het verschil bepaalt welke behandeling werkt.
 
 - Grijze puntjes op je neus Kleine grijze stipjes in bijna elke porie van je neus
 
@@ -3318,7 +3314,7 @@ Regelmatig rode, pijnlijke puistjes die vlekjes achterlaten is acne, en dat vraa
 
 **Wat helpt en wat we afraden**
 
-De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reinigen levert bij een vette huid het omgekeerde op van wat je zoekt.
+De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reinigen levert bij een verstopte porie meestal niets op.
 
 **DIT WERKT**
 
@@ -3369,8 +3365,6 @@ Het begint bij de nulmeting: € 50, en daar zit geen behandeling in. Je gaat na
 **Plan een intake bij Diba Clinics**
 
 In het huidconsult kijken we onder vergroting mee. Blijkt het grotendeels normale porie-inhoud, dan hoor je dat, en dan is er niets te boeken.
-
-> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -4448,31 +4442,31 @@ Niet alles past in een lijst, en sommige dingen spelen tegelijk. Dat is geen pro
 
 **Tabbladtitel:** Wallen onder de ogen: vocht, vet of schaduw | Diba Clinics
 
-**Google-omschrijving:** Wallen hebben drie oorzaken en maar een daarvan is met een huidbehandeling aan te pakken. Met de ochtendtest weet je zelf welke je hebt.
+**Google-omschrijving:** Wallen onder je ogen: waar ze vandaan komen en wat een huidbehandeling kan toevoegen bij vocht of een dunne huid.
 
 **WALLEN ONDER JE OGEN**
 
-Wallen kunnen samenhangen met vocht, een vetkussen of schaduw door een groef. De oorzaak bepaalt of een huidbehandeling iets kan toevoegen.
+Wallen komen door vocht, een vetkussen of schaduw door een groef. Bij vocht en bij een dunne huid rond de ogen kunnen we iets doen, met gerichte verzorging en behandelingen die de huid steviger maken.
 
-Welke je hebt, weet je met twee foto's en een dag geduld.
+In de intake stellen we vast waar het bij jou vandaan komt.
 
-> knop: DOE DE OCHTENDTEST
+> knop: PLAN EEN HUIDCONSULT
 
 > knop: LIEVER EERST EEN VRAAG STELLEN
 
-**Twee foto's, twaalf uur ertussen.**
+**Waar we naar kijken**
 
-Dit is een herkenningshulp en geen diagnose. Maar het is wel de enige test die het onderscheid maakt zonder dat iemand naar je hoeft te kijken, en hij kost je niets dan een dag.
+De huidtherapeut kijkt naar de stand van de huid onder je oog, naar het verloop over de dag en naar de dikte van de huid ter plaatse.
 
-- STAP 1 Kijk bij het opstaan Maak een foto van je gezicht, recht van voren, met het licht van boven. Niet lachen; dat verplaatst alles.
+- STAP 1 Het verloop over de dag Vocht zakt in de loop van de dag weg, een vetkussen en een groef blijven gelijk. Daar begint de beoordeling mee.
 
-- STAP 2 Kijk aan het eind van de dag Zelfde plek, zelfde licht, zelfde gezicht. Het gaat om het verschil en niet om hoe erg het is.
+- STAP 2 De dikte van de huid Onder je oog is de huid het dunst van je lichaam. Hoe dun precies, bepaalt wat een behandeling kan toevoegen.
 
-- STAP 3 Vergelijk de twee Duidelijk minder in de avond? Dan is het vocht. Precies hetzelfde? Dan is het vet of schaduw, en dan ligt het antwoord buiten deze kliniek.
+- STAP 3 De stand van het bot eronder Ligt de oogkas dieper, dan valt er schaduw. Dat ziet eruit als een wal en vraagt iets anders dan vocht.
 
-**En bij twee ervan zijn wij niet de juiste.**
+**Drie oorzaken**
 
-Dat is een ongebruikelijk begin voor een pagina van een kliniek. Het is ook de reden dat je hier geen reeks krijgt aangeboden voor iets dat er niet mee weggaat.
+Wallen komen door vocht, een vetkussen of schaduw door een groef. Welke van de drie het is, bepaalt wat een huidbehandeling kan toevoegen.
 
 - Vocht 's Ochtends dik, in de loop van de dag minder
 
@@ -4504,7 +4498,7 @@ Een wal is volume: er zit iets. Een donkere kring is kleur: pigment of vaatjes d
 
 **Wat helpt en wat we afraden**
 
-De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan als hoe voorzichtig het moet.
+De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan als hoe voorzichtig we werken.
 
 **DIT WERKT**
 
@@ -4545,8 +4539,6 @@ Met je hoofd iets hoger slapen en koelen in de ochtend helpt tegen vocht, tijdel
 **Plan een intake bij Diba Clinics**
 
 In het huidconsult stellen we vast of het vocht, vet of schaduw is. Bij twee van de drie is ons advies om ergens anders te beginnen, en dat hoor je dan meteen.
-
-> knop: PLAN EEN HUIDCONSULT
 
 ---
 
@@ -11511,4 +11503,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_105 pagina's · 5331 tekstblokken · ongeveer 80.194 woorden._
+_105 pagina's · 5327 tekstblokken · ongeveer 80.011 woorden._

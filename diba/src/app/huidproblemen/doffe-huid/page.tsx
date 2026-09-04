@@ -41,13 +41,13 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/doffe-huid",
   titel: "Doffe huid: waar komt die grauwe tint vandaan",
   omschrijving:
-    "Dof is licht dat verstrooit in plaats van weerkaatst. Vier oorzaken, en bij twee ervan is de beste behandeling een gewoonte en geen afspraak.",
+    "Een doffe huid behandelen met peelings, HydraFacial en microneedling. Waar dofheid vandaan komt en wat eraan te doen is.",
 });
 
 const PAD = "/huidproblemen/doffe-huid";
 
 const ANKERS = [
-  { id: "test", label: "De lichttest" },
+  { id: "test", label: "In het consult" },
   { id: "welke", label: "Waar komt het vandaan" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "meten", label: "Hoe we meten" },
@@ -108,18 +108,18 @@ export default function Pagina() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Er bestaat geen vakterm voor, en toch zie je het: een huid die het
-              licht niet meer terugkaatst. Dat heeft vier verschillende
-              oorzaken, en die vragen om vier verschillende dingen.
+              Een doffe huid kaatst het licht minder terug. Dat komt meestal
+              door een opeenhoping van dode huidcellen of door te weinig vocht.
+              Beide behandelen we, met peelings, HydraFacial of microneedling.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Bij twee ervan kunnen wij iets. Bij de andere twee is de beste
-              behandeling een gewoonte, en dan zeggen we dat.
+              In de intake stellen we vast waar het bij jou vandaan komt, en
+              welke behandeling daarbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#test">Doe de lichttest</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -155,11 +155,11 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             icoon={HuidGlans}
-            label="De lichttest"
+            label="In het consult"
             raster="gelijk"
-            kop="Zo bekijk je"
-            accent="je huid bij daglicht"
-            intro="Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat maak je met een lamp en een hoek zichtbaar. Niet in de badkamer: licht van boven maakt elke huid vlak en verstopt juist wat je wil zien."
+            kop="Waar we"
+            accent="naar kijken"
+            intro="De huidtherapeut beoordeelt je huid bij daglicht en onder vergroting. Dofheid is licht dat verstrooit in plaats van weerkaatst, en dat zie je alleen onder de juiste hoek."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -188,9 +188,9 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             label="Vier oorzaken"
-            kop="Vier oorzaken van"
-            accent="een doffe huid"
-            intro="Dat laatste is geen afschuiven. Een behandeling die tegen je slaap en je gewoontes in moet werken is weggegooid geld, en dat hoor je liever nu dan na drie afspraken."
+            kop="Vier oorzaken"
+            accent="van dofheid"
+            intro="Twee van de vier oorzaken behandelen we in de kliniek. Bij de andere twee zit de winst in je verzorging, en dat hoor je van ons."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -228,7 +228,7 @@ export default function Pagina() {
       <WelNiet
         wel={DOF_WEL_NIET.wel}
         niet={DOF_WEL_NIET.niet}
-        intro="Bij dofheid is het effect vaak snel zichtbaar en ook weer tijdelijk. Dat is geen bezwaar zolang je het weet, en een probleem zodra iemand denkt een oorzaak af te kopen."
+        intro="Bij dofheid is het effect vaak snel zichtbaar en houdt het een aantal weken aan. Daarom wordt deze behandeling vaak herhaald."
       />
 
       <NulmetingAssen

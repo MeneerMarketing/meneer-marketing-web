@@ -43,23 +43,26 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/donkere-kringen",
   titel: "Donkere kringen: welk type heb jij?",
   omschrijving:
-    "Donkere kringen hebben drie verschillende oorzaken die er hetzelfde uitzien. Hoe je ze uit elkaar houdt, en bij welke wij je niet verder helpen.",
+    "Donkere kringen behandelen: pigment, doorschijnende vaatjes of schaduw. Hoe we vaststellen om welke van de drie het gaat.",
 });
 
 const PAD = "/huidproblemen/donkere-kringen";
 
 const ANKERS = [
-  { id: "test", label: "Doe de spiegeltest" },
+  { id: "test", label: "In het consult" },
   { id: "types", label: "De drie types" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "meten", label: "Hoe we meten" },
   { id: "vragen", label: "Vragen" },
 ] as const;
 
+/* Stond op "Hier kunnen wij iets / deels iets / niets". Drie labels waarvan er twee met
+   een ontkenning openden, op de plek waar iemand kijkt of hij hier goed zit. Nu zeggen ze
+   wat de route is in plaats van wat wij niet kunnen. */
 const HELPT_LABEL = {
-  ja: "Hier kunnen wij iets",
-  deels: "Hier kunnen wij deels iets",
-  nee: "Hier kunnen wij niets",
+  ja: "Dit behandelen wij",
+  deels: "Deels behandelbaar",
+  nee: "Andere discipline",
 } as const;
 
 export default function DonkereKringenPage() {
@@ -99,19 +102,18 @@ export default function DonkereKringenPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Donkere kringen zijn geen aandoening maar een uiterlijk kenmerk
-              met drie verschillende oorzaken. Ze zien er hetzelfde uit en
-              vragen alle drie iets anders, en bij één ervan is de eerlijke
-              uitkomst dat wij je niet verder helpen.
+              Donkere kringen hebben drie mogelijke oorzaken: pigment,
+              doorschijnende vaatjes of schaduw door een groef. Pigment
+              behandelen we met peelings en gerichte verzorging.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je kunt zelf uitzoeken welke het bij jou is. Daar heb je een
-              spiegel voor nodig en twee minuten, en het kost je niets.
+              In de intake stellen we vast om welke van de drie het gaat en wat
+              daarbij past.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#test">Doe de spiegeltest</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -148,10 +150,10 @@ export default function DonkereKringenPage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De spiegeltest"
-            kop="Zoek zelf uit"
-            accent="welk type je hebt."
-            intro="Twee handelingen voor de spiegel en één vraag over je week. Daarna weet je of je naar kleur kijkt of naar schaduw, en dat bepaalt of behandelen zin heeft."
+            label="In het consult"
+            kop="Waar we"
+            accent="naar kijken"
+            intro="De huidtherapeut beoordeelt of je naar kleur kijkt of naar schaduw, en of het pigment is of doorschijnende vaatjes."
           />
           <Spiegeltest />
         </div>
@@ -167,7 +169,7 @@ export default function DonkereKringenPage() {
             label="De drie types"
             kop="Drie"
             accent="oorzaken"
-            intro="Voor wie de test wil overslaan of wil nalezen wat eruit kwam. Let op de middelste kolom: die verschilt per type en daarom één behandeling voor alle drie niet bestaat."
+            intro="De drie oorzaken naast elkaar, met per soort wat eraan te doen is."
           />
 
           <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
@@ -179,7 +181,11 @@ export default function DonkereKringenPage() {
                   <p className="diba-label mt-2 text-[var(--t-muted)]">
                     {u.vakterm}
                   </p>
-                  <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                  {/* min-h in lh, net als op de littekenpagina: twee blokken van 151 tekens
+                      gaven vijf en vier regels, want het verschil zit op een woordgrens en
+                      niet in de lengte. Vijf regelhoogtes gereserveerd, die meegroeien als
+                      de tekst op een smal scherm meer nodig heeft. */}
+                  <p className="mt-4 min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
                     {u.watHetIs.replace(/\[[^\]]+\]/g, "").trim()}
                   </p>
                   <p
@@ -215,7 +221,7 @@ export default function DonkereKringenPage() {
       <WelNiet
         wel={KRINGEN_WEL_NIET.wel}
         niet={KRINGEN_WEL_NIET.niet}
-        intro="Het eerste kruisje rechts kost de meeste mensen het meeste geld: een behandeling boeken voordat duidelijk is welk type ze hebben."
+        intro="Behandelen voordat duidelijk is om welke van de drie het gaat, kost de meeste mensen het meeste geld."
       />
 
       <NulmetingAssen

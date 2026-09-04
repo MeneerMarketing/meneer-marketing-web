@@ -108,19 +108,19 @@ export const KORRELCHECK_STAPPEN: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Kijk in zijlicht",
+    kop: "Het licht van opzij",
     tekst:
-      "Ga bij een raam staan en draai je hoofd zo dat het licht schuin op je neus en voorhoofd valt. Recht licht verstopt oneffenheden; zijlicht laat ze zien.",
+      "De huidtherapeut beoordeelt je huid in strijklicht. Recht licht verbergt oneffenheden, licht van opzij laat ze juist zien.",
   },
   {
-    kop: "Tel de poriën",
+    kop: "De verdeling over je huid",
     tekst:
-      "Zit er in vrijwel elke porie een grijs stipje, gelijkmatig verdeeld? Dan zijn het talgfilamenten en is dat normale huid. Zitten ze verspreid en zijn ze duidelijk donkerder, dan zijn het mee-eters.",
+      "Zit er in vrijwel elke porie een grijs stipje, dan is dat normale porie-inhoud. Zitten ze verspreid en donkerder, dan zijn het mee-eters.",
   },
   {
-    kop: "Voel met vlakke vingers",
+    kop: "Wat je voelt maar niet ziet",
     tekst:
-      "Strijk zacht over je voorhoofd en kaaklijn. Voel je hobbeltjes zonder dat je iets ziet, dan zijn dat gesloten poriën. Niet knijpen: daar begint de ontsteking.",
+      "Hobbeltjes op je voorhoofd en kaaklijn die je wel voelt maar niet ziet, zijn gesloten poriën. Die vragen een andere aanpak.",
   },
 ];
 

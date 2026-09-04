@@ -47,13 +47,13 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/wallen",
   titel: "Wallen onder de ogen: vocht, vet of schaduw",
   omschrijving:
-    "Wallen hebben drie oorzaken en maar een daarvan is met een huidbehandeling aan te pakken. Met de ochtendtest weet je zelf welke je hebt.",
+    "Wallen onder je ogen: waar ze vandaan komen en wat een huidbehandeling kan toevoegen bij vocht of een dunne huid.",
 });
 
 const PAD = "/huidproblemen/wallen";
 
 const ANKERS = [
-  { id: "test", label: "De ochtendtest" },
+  { id: "test", label: "In het consult" },
   { id: "welke", label: "Vocht, vet of schaduw" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "vragen", label: "Vragen" },
@@ -113,17 +113,18 @@ export default function WallenPage() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wallen kunnen samenhangen met vocht, een vetkussen of schaduw door
-              een groef. De oorzaak bepaalt of een huidbehandeling iets kan
-              toevoegen.
+              Wallen komen door vocht, een vetkussen of schaduw door een groef.
+              Bij vocht en bij een dunne huid rond de ogen kunnen we iets doen,
+              met gerichte verzorging en behandelingen die de huid steviger
+              maken.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Welke je hebt, weet je met twee foto&apos;s en een dag geduld.
+              In de intake stellen we vast waar het bij jou vandaan komt.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#test">Doe de ochtendtest</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -159,11 +160,11 @@ export default function WallenPage() {
       >
         <div className="mx-auto">
           <SectieKop
-            label="De ochtendtest"
+            label="In het consult"
             raster="gelijk"
-            kop="Twee foto's,"
-            accent="twaalf uur ertussen."
-            intro="Dit is een herkenningshulp en geen diagnose. Maar het is wel de enige test die het onderscheid maakt zonder dat iemand naar je hoeft te kijken, en hij kost je niets dan een dag."
+            kop="Waar we"
+            accent="naar kijken"
+            intro="De huidtherapeut kijkt naar de stand van de huid onder je oog, naar het verloop over de dag en naar de dikte van de huid ter plaatse."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -193,9 +194,9 @@ export default function WallenPage() {
         <div className="mx-auto">
           <SectieKop
             label="Drie oorzaken"
-            kop="En bij twee ervan"
-            accent="zijn wij niet de juiste."
-            intro="Dat is een ongebruikelijk begin voor een pagina van een kliniek. Het is ook de reden dat je hier geen reeks krijgt aangeboden voor iets dat er niet mee weggaat."
+            kop="Drie"
+            accent="oorzaken"
+            intro="Wallen komen door vocht, een vetkussen of schaduw door een groef. Welke van de drie het is, bepaalt wat een huidbehandeling kan toevoegen."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -231,7 +232,7 @@ export default function WallenPage() {
       <WelNiet
         wel={WALLEN_WEL_NIET.wel}
         niet={WALLEN_WEL_NIET.niet}
-        intro="De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan als hoe voorzichtig het moet."
+        intro="De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan als hoe voorzichtig we werken."
       />
 
       <PillarFaq items={WALLEN_FAQ} onderwerp="wallen" />

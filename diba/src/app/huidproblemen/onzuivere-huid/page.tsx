@@ -40,13 +40,13 @@ export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/onzuivere-huid",
   titel: "Onzuivere huid en mee-eters",
   omschrijving:
-    "De meeste puntjes op je neus zijn geen mee-eters maar talgfilamenten, en die horen er te zijn. Met zijlicht zie je zelf welke van de twee je hebt.",
+    "Mee-eters en verstopte poriën behandelen met HydraFacial en peelings. Het verschil tussen normale porie-inhoud en echte mee-eters.",
 });
 
 const PAD = "/huidproblemen/onzuivere-huid";
 
 const ANKERS = [
-  { id: "check", label: "De korrelcheck" },
+  { id: "check", label: "In het consult" },
   { id: "welke", label: "Wat heb je" },
   { id: "wel-niet", label: "Wat helpt" },
   { id: "vragen", label: "Vragen" },
@@ -108,19 +108,18 @@ export default function Pagina() {
             </h1>
 
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              In vrijwel elke porie zit een grijs stipje, en dat is geen
-              mee-eter maar de gewone inhoud van een werkende porie. Iedereen
-              heeft ze, ze zijn binnen weken terug, en een halve industrie van
-              poriestrips bestaat bij de gratie van die verwarring.
+              Mee-eters en verstopte poriën behandelen we met een HydraFacial,
+              peelings en gerichte verzorging. Zo maken we de poriën leeg en
+              houden we ze rustiger.
             </p>
 
             <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Echte mee-eters zitten verspreid, zijn donkerder, en zitten er al
-              maanden. Daar valt wel iets aan te doen.
+              In de intake kijken we mee onder vergroting en stellen we vast om
+              welk type onzuiverheid het gaat.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#check">Doe de korrelcheck</Button>
+              <Button href="/intake">Plan een huidconsult</Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
@@ -156,11 +155,11 @@ export default function Pagina() {
         <div className="mx-auto">
           <SectieKop
             icoon={VerstoptePorie}
-            label="De korrelcheck"
+            label="In het consult"
             raster="gelijk"
-            kop="Zo bekijk je"
-            accent="je poriën van dichtbij"
-            intro="Dit is een herkenningshulp en geen diagnose. Het maakt wel het onderscheid tussen iets dat normaal is en iets dat behandeld kan worden, en dat scheelt mensen jaren vechten tegen hun eigen anatomie."
+            kop="Waar we"
+            accent="naar kijken"
+            intro="De huidtherapeut kijkt onder vergroting naar je poriën en beoordeelt of het om normale porie-inhoud gaat of om echte mee-eters."
           />
 
           <ol className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -191,7 +190,7 @@ export default function Pagina() {
             label="Vier beelden"
             kop="Wat er in een porie"
             accent="kan zitten"
-            intro="Verstopte poriën, mee-eters en onzuiverheden lopen in de volksmond door elkaar. Het verschil bepaalt of er iets te behandelen valt, of dat de beste behandeling is om ermee te stoppen."
+            intro="Verstopte poriën, mee-eters en onzuiverheden lopen in de volksmond door elkaar. Het verschil bepaalt welke behandeling werkt."
           />
           <SoortKiezer
             opties={SOORTEN}
@@ -225,7 +224,7 @@ export default function Pagina() {
       <WelNiet
         wel={ONZUIVER_WEL_NIET.wel}
         niet={ONZUIVER_WEL_NIET.niet}
-        intro="De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reinigen levert bij een vette huid het omgekeerde op van wat je zoekt."
+        intro="De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reinigen levert bij een verstopte porie meestal niets op."
       />
 
       <PillarFaq items={ONZUIVER_FAQ} onderwerp="een onzuivere huid" />

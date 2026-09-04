@@ -85,19 +85,19 @@ export const OCHTENDTEST: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Kijk bij het opstaan",
+    kop: "Het verloop over de dag",
     tekst:
-      "Maak een foto van je gezicht, recht van voren, met het licht van boven. Niet lachen; dat verplaatst alles.",
+      "Vocht zakt in de loop van de dag weg, een vetkussen en een groef blijven gelijk. Daar begint de beoordeling mee.",
   },
   {
-    kop: "Kijk aan het eind van de dag",
+    kop: "De dikte van de huid",
     tekst:
-      "Zelfde plek, zelfde licht, zelfde gezicht. Het gaat om het verschil en niet om hoe erg het is.",
+      "Onder je oog is de huid het dunst van je lichaam. Hoe dun precies, bepaalt wat een behandeling kan toevoegen.",
   },
   {
-    kop: "Vergelijk de twee",
+    kop: "De stand van het bot eronder",
     tekst:
-      "Duidelijk minder in de avond? Dan is het vocht. Precies hetzelfde? Dan is het vet of schaduw, en dan ligt het antwoord buiten deze kliniek.",
+      "Ligt de oogkas dieper, dan valt er schaduw. Dat ziet eruit als een wal en vraagt iets anders dan vocht.",
   },
 ];
 

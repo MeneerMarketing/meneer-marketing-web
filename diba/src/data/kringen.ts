@@ -131,7 +131,7 @@ export const UITKOMSTEN: Record<UitkomstId, Uitkomst> = {
     kop: "Dit is pigment",
     vakterm: "peri-orbitale hyperpigmentatie",
     watHetIs:
-      "Er zit meer kleur in de huid onder je oog. Dat kan erfelijk zijn, kan volgen op eczeem of wrijven, en komt vaker voor bij een donkere huid. [MEDISCHE-CHECK-ROJDA]",
+      "Er zit meer kleur in de huid onder je oog. Dat kan erfelijk zijn, kan volgen op eczeem of op wrijven, en komt vaker voor bij een donkere huid. [MEDISCHE-CHECK-ROJDA]",
     kunnenWij:
       "Ja, voorzichtig. Dit is het enige type dat echt op behandeling reageert. De huid daar is dun en gevoelig, dus we gaan hier langzamer te werk dan elders in het gezicht.",
     wijHelpen: "ja",
