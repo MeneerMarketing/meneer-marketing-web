@@ -4,6 +4,7 @@ import type { MetadataRoute } from "next";
 import { INSURERS } from "@/data/insurers";
 import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
+import { TOEPASSINGEN } from "@/data/toepassingen";
 import { DOELGROEPEN } from "@/data/doelgroep";
 import { DIBA_SITE_URL } from "@/lib/site";
 
@@ -106,9 +107,7 @@ function gewicht(route: string): number {
   if (route.startsWith("/vergoedingen")) return 0.6;
   if (route.startsWith("/doelgroep")) return 0.6;
   /* De juridische pagina's horen erin te staan maar hoeven niet vaak nagelopen. */
-  if (
-    /^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten)$/.test(route)
-  )
+  if (/^\/(privacybeleid|cookiebeleid|algemene-voorwaarden)$/.test(route))
     return 0.3;
   return 0.7;
 }
@@ -132,6 +131,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     ...statischeRoutes(),
     ...BEHANDELINGEN.map((b) => `/behandelingen/${b.slug}`),
+    ...TOEPASSINGEN.map((t) => `/behandelingen/${t.behandeling}/${t.slug}`),
     ...APPARATUUR.map((a) => `/apparatuur/${a.slug}`),
     ...INSURERS.map((i) => `/vergoedingen/${i.slug}`),
     ...DOELGROEPEN.map((d) => `/doelgroep/${d.slug}`),

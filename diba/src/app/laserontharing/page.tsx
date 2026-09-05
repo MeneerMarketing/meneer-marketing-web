@@ -129,7 +129,7 @@ export default function LaserontharingPage() {
             <p className="diba-label absolute top-7 left-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
               Rotterdam
             </p>
-            <p className="diba-card-title-lg absolute bottom-7 left-7 max-w-xs text-white drop-shadow-[0_2px_12px_rgba(15,45,28,.35)]">
+            <p className="diba-card-title-lg absolute bottom-7 left-7 max-w-xs text-white drop-shadow-[0_2px_12px_rgba(67,79,58,.35)]">
               Rustig in de stoel.
               <br />
               Scherp in de instelling.

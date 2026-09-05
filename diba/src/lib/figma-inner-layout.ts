@@ -16,4 +16,4 @@ export const figmaCardRadius = "rounded-[2rem]";
 export const figmaCardSoft = "rounded-[1.5rem] bg-[#f2f7ef]";
 
 export const figmaCardWhite =
-  "rounded-[1.5rem] border border-[#dce8d9] bg-white shadow-[0_8px_32px_rgba(15,45,28,.04)]";
+  "rounded-[1.5rem] border border-[#dce8d9] bg-white shadow-[0_8px_32px_rgba(67,79,58,.04)]";

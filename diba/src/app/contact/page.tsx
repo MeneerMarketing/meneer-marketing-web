@@ -69,10 +69,10 @@ import {
  * voedt het schema. Wijzig ze daar en niet hier, anders geven de pagina en Google twee
  * verschillende antwoorden op dezelfde vraag.
  *
- * De tijden zelf zijn een werkbaar voorstel en niet door de kliniek bevestigd. Er staat
- * bewust bij dat de agenda actueler is dan het rijtje, want dat blijft waar ook als de
- * tijden kloppen: binnen openingstijden staat niet elk uur een therapeut vrij.
- * [GEGEVEN-NODIG: bevestiging van de openingstijden, Okan]
+ * De tijden zijn bevestigd door Okan op 5 september 2026, naast het Google-profiel van de
+ * kliniek gelegd. Er staat bewust bij dat de agenda actueler is dan het rijtje, want dat
+ * blijft waar ook nu de tijden kloppen: binnen openingstijden staat niet elk uur een
+ * therapeut vrij.
  *
  * EÃ©n donkergroen vlak: het blok over wat er niet op afstand kan (Â§5).
  */

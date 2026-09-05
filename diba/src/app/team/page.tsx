@@ -203,7 +203,7 @@ export default function TeamPage() {
                   <li
                     key={lid.slug}
                     id={lid.slug}
-                    className="group scroll-mt-[var(--anker-offset)] overflow-hidden rounded-[var(--r-lg)] bg-white transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(23,55,42,.10)]"
+                    className="group scroll-mt-[var(--anker-offset)] overflow-hidden rounded-[var(--r-lg)] bg-white transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(67,79,58,.10)]"
                   >
                     {lid.portret ? (
                       /* 4:5 en object-top: de opnamen zijn 2:3, dus er gaat onderaan iets

@@ -39,7 +39,7 @@ function PreviewLoginFormInner() {
 
   return (
     <main className="figma-home flex min-h-screen items-center justify-center bg-[var(--g-010)] px-5 py-16 text-[var(--t-strong)]">
-      <div className="w-full max-w-md rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 shadow-[0_12px_40px_rgba(15,45,28,.06)] sm:p-10">
+      <div className="w-full max-w-md rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-8 shadow-[0_12px_40px_rgba(67,79,58,.06)] sm:p-10">
         <Label>Preview</Label>
         <h1 className="diba-card-title-lg mt-4">Diba Clinics testomgeving</h1>
         <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">

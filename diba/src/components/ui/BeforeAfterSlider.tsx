@@ -66,7 +66,7 @@ export default function BeforeAfterSlider({
           className="pointer-events-none absolute inset-y-0 w-px bg-white"
           style={{ left: `${pos}%` }}
         >
-          <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-[var(--g-700)] text-white shadow-[0_8px_24px_rgba(15,45,28,.18)] group-has-[input:focus-visible]:outline group-has-[input:focus-visible]:outline-2 group-has-[input:focus-visible]:outline-offset-2 group-has-[input:focus-visible]:outline-[var(--g-700)]">
+          <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white bg-[var(--g-700)] text-white shadow-[0_8px_24px_rgba(67,79,58,.18)] group-has-[input:focus-visible]:outline group-has-[input:focus-visible]:outline-2 group-has-[input:focus-visible]:outline-offset-2 group-has-[input:focus-visible]:outline-[var(--g-700)]">
             <svg
               width="18"
               height="18"

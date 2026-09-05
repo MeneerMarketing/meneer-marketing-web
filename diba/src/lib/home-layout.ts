@@ -25,7 +25,7 @@ export const homeTitleAfterLabel = "mt-[var(--space-3)]";
 
 /** Hero-rechterkolom — grote radius linksonder, licht sage. */
 export const homeHeroMediaShell =
-  "relative w-full max-w-[540px] overflow-hidden rounded-bl-[9rem] bg-[var(--diba-hero-media-bg)] p-5 shadow-[0_20px_50px_rgba(15,45,28,.2)] sm:p-7 lg:max-w-[560px] lg:rounded-bl-[14rem] lg:p-8";
+  "relative w-full max-w-[540px] overflow-hidden rounded-bl-[9rem] bg-[var(--diba-hero-media-bg)] p-5 shadow-[0_20px_50px_rgba(67,79,58,.2)] sm:p-7 lg:max-w-[560px] lg:rounded-bl-[14rem] lg:p-8";
 
 /** Huidscan-visual — strak licht kaartblok op donkere sectie. */
 export const homeHuidscanCardShell =

@@ -65,6 +65,15 @@ const OPPERVLAK = 44;
 const BODEM = 300;
 
 /**
+ * De hoogte van de tekening: twaalf eenheden lucht onder de diepste laag.
+ *
+ * Een behandeling die tot 2 mm komt heeft zijn lijn op BODEM, en dat was ook de onderrand.
+ * De helft van de lijn en de onderste helft van de pil vielen buiten beeld. De goot naast
+ * de tekening gebruikt dezelfde hoogte, anders komen de lijnen naar de legenda scheef uit.
+ */
+const HOOGTE = BODEM + 12;
+
+/**
  * Onderkant van elke laag, afgeleid uit dezelfde verhoudingen als de vergelijkingsas op
  * het overzicht. Afgeleid en niet overgeschreven: twee lijstjes met dezelfde getallen
  * lopen vroeg of laat uit elkaar, en dan klopt de vergelijking tussen apparaten niet meer
@@ -76,7 +85,180 @@ const LAAGGRENZEN = LAAGAANDEEL.reduce<number[]>((rij, deel) => {
   return rij;
 }, []);
 
-/** De diepte uit de data (procenten) omgerekend naar een y in de tekening. */
+/**
+ * Vier duidelijk verschillende tinten, van licht naar donker: dieper is voller. Ze liepen
+ * van 100 via 200 en 300 naar 500, en de eerste drie stappen zijn zo klein dat je een
+ * verloop las in plaats van vier lagen. Hier en niet in de tekening, omdat de lijst op
+ * de telefoon dezelfde tint als stip voor elke laag zet.
+ */
+const TINTEN = ["--g-075", "--g-200", "--g-400", "--g-600"] as const;
+
+/** Of laag i geraakt wordt: de bovenkant van de laag ligt boven de gehaalde diepte. */
+function wordtGeraakt(i: number, bodem: number): boolean {
+  const boven = i === 0 ? OPPERVLAK : LAAGGRENZEN[i - 1];
+  return boven < bodem;
+}
+
+/**
+ * De diepte in millimeters op een y in de tekening, lineair binnen de laag.
+ *
+ * Gebruikt de `tot`-waarden uit HUIDLAGEN (0,02 / 0,1 / 0,5 / 2 mm), dus dit voegt geen
+ * medische bewering toe: het rekent zichtbaar wat er al staat. Daarom een tilde in de
+ * weergave: afgeleid uit een schema, niet gemeten.
+ */
+function diepteInMm(y: number): string {
+  const grenzenMm = HUIDLAGEN.map((l) =>
+    Number(l.tot.replace(" mm", "").replace(",", ".")),
+  );
+  let bovenY = OPPERVLAK;
+  let bovenMm = 0;
+  for (let i = 0; i < LAAGGRENZEN.length; i++) {
+    const onderY = LAAGGRENZEN[i];
+    const onderMm = grenzenMm[i];
+    if (y <= onderY) {
+      const deel = (y - bovenY) / (onderY - bovenY);
+      const mm = bovenMm + deel * (onderMm - bovenMm);
+      const tekst =
+        mm < 0.1 ? mm.toFixed(2) : mm < 1 ? mm.toFixed(1) : mm.toFixed(1);
+      return tekst.replace(".", ",").replace(/,0$/, "");
+    }
+    bovenY = onderY;
+    bovenMm = onderMm;
+  }
+  return String(grenzenMm[grenzenMm.length - 1]).replace(".", ",");
+}
+
+/** Het midden van laag i in de tekening, als y in de viewBox. */
+function laagMidden(i: number): number {
+  const boven = i === 0 ? OPPERVLAK : LAAGGRENZEN[i - 1];
+  return (boven + LAAGGRENZEN[i]) / 2;
+}
+
+/**
+ * De vier lagen naast de tekening, vanaf md.
+ *
+ * Als gewone HTML en niet als SVG-tekst, want SVG-tekst breekt niet af. Goot en kolom
+ * staan allebei absoluut in dit vlak, zodat alleen de tekening ernaast hoogte inbrengt:
+ * 340px, vier rijen van 85, genoeg voor een naam en drie regels inhoud. De goot rekt mee
+ * (preserveAspectRatio none) en trekt per laag een lijn van het laagmidden naar het
+ * rijmidden. De lagen zijn ongelijk hoog en de rijen gelijk, dus die lijnen lopen schuin;
+ * dat is precies waarvoor ze er zijn.
+ */
+function LegendaNaast({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
+  const rijen = HUIDLAGEN.length;
+  return (
+    <div className="relative hidden min-w-0 flex-1 md:block">
+      <svg
+        viewBox={`0 0 28 ${HOOGTE}`}
+        preserveAspectRatio="none"
+        className="absolute inset-y-0 left-0 h-full w-7"
+        aria-hidden="true"
+      >
+        {HUIDLAGEN.map((laag, i) => {
+          const y1 = laagMidden(i);
+          const y2 = ((i + 0.5) / rijen) * HOOGTE;
+          return (
+            <path
+              key={laag.id}
+              d={`M0 ${y1} C 14 ${y1}, 14 ${y2}, 28 ${y2}`}
+              fill="none"
+              stroke={wordtGeraakt(i, bodem) ? "var(--g-400)" : "var(--g-200)"}
+              strokeWidth="1.5"
+              vectorEffect="non-scaling-stroke"
+              style={{
+                transition: beweegt ? "stroke 500ms ease" : undefined,
+              }}
+            />
+          );
+        })}
+      </svg>
+
+      <ol className="absolute inset-0 grid grid-rows-4 pl-10">
+        {HUIDLAGEN.map((laag, i) => {
+          const geraakt = wordtGeraakt(i, bodem);
+          return (
+            <li
+              key={laag.id}
+              className="flex min-w-0 flex-col justify-center"
+              style={{
+                opacity: geraakt ? 1 : 0.45,
+                transition: beweegt ? "opacity 500ms ease" : undefined,
+              }}
+            >
+              <p className="flex flex-wrap items-baseline gap-x-2">
+                <span
+                  className={`text-[15px] leading-5 text-[var(--t-strong)] ${
+                    geraakt ? "font-semibold" : "font-medium"
+                  }`}
+                >
+                  {laag.naam}
+                </span>
+                <span className="text-[12px] leading-5 text-[var(--t-muted)] tabular-nums">
+                  tot {laag.tot}
+                </span>
+              </p>
+              <p className="mt-1 max-w-[40ch] text-[13px] leading-[18px] text-[var(--t-muted)]">
+                {laag.bevat}
+              </p>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+}
+
+/**
+ * Dezelfde vier lagen als lijst onder de tekening, onder md.
+ *
+ * Naast een tekening van honderdvijftig pixels past geen tekst die je kunt lezen; op
+ * 375px overlapten de rijen elkaar. De koppeling met de tekening loopt hier via de
+ * kleurstip, in dezelfde tint als de laag, en via de volgorde: van boven naar beneden,
+ * net als in de huid. Wat buiten bereik ligt vervaagt, net als in de tekening.
+ */
+function LegendaOnder({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
+  return (
+    <ol className="mt-5 divide-y divide-[var(--g-100)] md:hidden">
+      {HUIDLAGEN.map((laag, i) => {
+        const geraakt = wordtGeraakt(i, bodem);
+        return (
+          <li
+            key={laag.id}
+            className="flex gap-3 py-3 first:pt-0 last:pb-0"
+            style={{
+              opacity: geraakt ? 1 : 0.45,
+              transition: beweegt ? "opacity 500ms ease" : undefined,
+            }}
+          >
+            <span
+              aria-hidden="true"
+              className="mt-1 h-3 w-3 shrink-0 rounded-full ring-1 ring-[var(--g-200)] ring-inset"
+              style={{ background: `var(${TINTEN[i]})` }}
+            />
+            <div className="min-w-0 flex-1">
+              <p className="flex items-baseline justify-between gap-3">
+                <span
+                  className={`text-[14px] leading-5 text-[var(--t-strong)] ${
+                    geraakt ? "font-semibold" : "font-medium"
+                  }`}
+                >
+                  {laag.naam}
+                </span>
+                <span className="shrink-0 text-[12px] leading-5 text-[var(--t-muted)] tabular-nums">
+                  tot {laag.tot}
+                </span>
+              </p>
+              <p className="mt-0.5 text-[13px] leading-5 text-[var(--t-muted)]">
+                {laag.bevat}
+              </p>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
 /**
  * Alleen wat het venster tekent.
  *
@@ -89,6 +271,7 @@ export type WerkingsvensterApparaat = Pick<
   "naam" | "fasen" | "diepte" | "doelwit" | "werkwijze"
 >;
 
+/** De diepte uit de data (procenten) omgerekend naar een y in de tekening. */
 function diepteY(procent: number): number {
   return OPPERVLAK + ((BODEM - OPPERVLAK) * procent) / 100;
 }
@@ -150,203 +333,203 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
   return (
     <div
       ref={venster}
-      /* lg:items-center, want de twee kolommen zijn ongelijk van aard: links een
-         doorsnede die zijn hoogte uit de tekening haalt, rechts drie stappen die zo lang
-         zijn als de tekst toevallig uitvalt. Zonder centreren rekt de korte kolom mee tot
-         onderaan en blijft de inhoud bovenin hangen, met een gat van een paar honderd
-         pixels eronder. Naast elkaar gecentreerd horen ze bij elkaar. */
-      className="grid items-center gap-8 rounded-[var(--r-lg)] bg-white p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:p-10"
+      /* items-center, want de twee kolommen zijn ongelijk van aard: links een doorsnede
+         die zijn hoogte uit de tekening haalt, rechts drie stappen die zo lang zijn als
+         de tekst toevallig uitvalt. Zonder centreren rekt de korte kolom mee tot onderaan
+         en blijft de inhoud bovenin hangen, met een gat van een paar honderd pixels
+         eronder. Naast elkaar gecentreerd horen ze bij elkaar.
+
+         Twee kolommen pas vanaf xl en niet vanaf lg. De legenda naast de tekening heeft
+         zo'n 560px nodig (tekening 306, goot 28, tekst van minstens 220); op lg is de
+         linkerkolom 460 tot 500px en dan overlappen de rijen elkaar. Tussen md en xl
+         staan de stappen daarom onder de tekening, in drie kolommen. */
+      className="grid items-center gap-8 rounded-[var(--r-lg)] bg-white p-6 sm:p-8 lg:p-10 xl:grid-cols-[1.25fr_0.75fr] xl:gap-12"
     >
       {/* ── De doorsnede ── */}
       <div>
-        <svg
-          viewBox="0 0 420 300"
-          className="w-full"
-          role="img"
-          aria-label={`Doorsnede van de huid met de werking van ${apparaat.naam}. Stap ${stap + 1} van ${fasen.length}: ${fasen[stap].kop}.`}
-        >
-          <defs>
-            <clipPath id={`huid-${uid}`}>
-              <rect
-                x="0"
-                y={OPPERVLAK}
-                width="270"
-                height={BODEM - OPPERVLAK}
-              />
-            </clipPath>
-            {/* Licht moet als licht lezen en niet als een balk: het dooft naarmate het
+        {/* Vanaf md staat de tekening op een vaste hoogte met de legenda ernaast; de
+            hoogte is dan van de tekst en niet van de breedte, en de rijen passen altijd.
+            De SVG haalt zijn breedte uit zijn verhouding (h-full w-auto). Onder md staat
+            hij op volle breedte, met de lagen als lijst eronder: naast een tekening van
+            honderdvijftig pixels past geen leesbare tekst, en de pil met de diepte was
+            daar zes pixels hoog. */}
+        <div className="md:flex md:items-stretch">
+          <div className="mx-auto w-full max-w-[22rem] md:mx-0 md:h-[340px] md:w-auto md:max-w-none md:shrink-0">
+            <svg
+              viewBox={`0 0 270 ${HOOGTE}`}
+              className="block h-auto w-full md:h-full md:w-auto"
+              role="img"
+              aria-label={`Doorsnede van de huid met de werking van ${apparaat.naam}. Stap ${stap + 1} van ${fasen.length}: ${fasen[stap].kop}.`}
+            >
+              <defs>
+                <clipPath id={`huid-${uid}`}>
+                  <rect
+                    x="0"
+                    y={OPPERVLAK}
+                    width="270"
+                    height={BODEM - OPPERVLAK}
+                  />
+                </clipPath>
+                {/* Licht moet als licht lezen en niet als een balk: het dooft naarmate het
                 dieper komt, want onderweg wordt er energie opgenomen. */}
-            <linearGradient id={`straal-${uid}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="white" stopOpacity="0.9" />
-              <stop offset="60%" stopColor="white" stopOpacity="0.4" />
-              <stop offset="100%" stopColor="white" stopOpacity="0" />
-            </linearGradient>
-            {/* De diepte waar de energie wordt opgenomen. Dat is de hele pointe van
+                <linearGradient
+                  id={`straal-${uid}`}
+                  x1="0"
+                  y1="0"
+                  x2="0"
+                  y2="1"
+                >
+                  <stop offset="0%" stopColor="white" stopOpacity="0.9" />
+                  <stop offset="60%" stopColor="white" stopOpacity="0.4" />
+                  <stop offset="100%" stopColor="white" stopOpacity="0" />
+                </linearGradient>
+                {/* De diepte waar de energie wordt opgenomen. Dat is de hele pointe van
                 laserlicht: één ding neemt het op, de rest niet. */}
-            <linearGradient id={`opneem-${uid}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="white" stopOpacity="0" />
-              <stop offset="50%" stopColor="white" stopOpacity="0.95" />
-              <stop offset="100%" stopColor="white" stopOpacity="0" />
-            </linearGradient>
-          </defs>
+                <linearGradient
+                  id={`opneem-${uid}`}
+                  x1="0"
+                  y1="0"
+                  x2="0"
+                  y2="1"
+                >
+                  <stop offset="0%" stopColor="white" stopOpacity="0" />
+                  <stop offset="50%" stopColor="white" stopOpacity="0.95" />
+                  <stop offset="100%" stopColor="white" stopOpacity="0" />
+                </linearGradient>
+              </defs>
 
-          {/* De vier lagen, van licht naar donker: dieper is voller.
+              {/* De vier lagen, van licht naar donker: dieper is voller.
 
               De huid is met opzet stevig groen en niet bleek. Alles wat een apparaat
               doet is in deze tekening lichtgevend, en licht op een bijna witte huid is
               onzichtbaar. Door de huid donkerder te maken heeft elk mechaniek iets om
               tegen af te steken, en dat scheelt zeven keer een aparte kleurentruc. */}
-          <g>
-            {LAAGGRENZEN.map((onder, i) => {
-              const boven = i === 0 ? OPPERVLAK : LAAGGRENZEN[i - 1];
-              const binnenBereik = boven < bodem;
-              /* Vier duidelijk verschillende tinten. Ze liepen van 100 via 200 en 300
-                 naar 500, en de eerste drie stappen zijn zo klein dat je een verloop las
-                 in plaats van vier lagen. */
-              const tinten = ["--g-075", "--g-200", "--g-400", "--g-600"];
-              return (
-                <g key={HUIDLAGEN[i].id}>
-                  <rect
-                    x="0"
-                    y={boven}
-                    width="270"
-                    height={onder - boven}
-                    fill={`var(${tinten[i]})`}
-                  />
-                  {/* Buiten bereik wordt weggewassen: dit apparaat komt hier niet. */}
-                  <rect
-                    x="0"
-                    y={boven}
-                    width="270"
-                    height={onder - boven}
-                    fill="white"
-                    style={{
-                      opacity: binnenBereik ? 0 : 0.62,
-                      transition: beweegt ? "opacity 500ms ease" : undefined,
-                    }}
-                  />
-                  <path
-                    d={golf(onder)}
-                    fill="none"
-                    stroke="white"
-                    strokeOpacity="0.7"
-                    strokeWidth="1.5"
-                  />
-                </g>
-              );
-            })}
-          </g>
+              <g>
+                {LAAGGRENZEN.map((onder, i) => {
+                  const boven = i === 0 ? OPPERVLAK : LAAGGRENZEN[i - 1];
+                  const binnenBereik = wordtGeraakt(i, bodem);
+                  return (
+                    <g key={HUIDLAGEN[i].id}>
+                      <rect
+                        x="0"
+                        y={boven}
+                        width="270"
+                        height={onder - boven}
+                        fill={`var(${TINTEN[i]})`}
+                      />
+                      {/* Buiten bereik wordt weggewassen: dit apparaat komt hier niet. */}
+                      <rect
+                        x="0"
+                        y={boven}
+                        width="270"
+                        height={onder - boven}
+                        fill="white"
+                        style={{
+                          opacity: binnenBereik ? 0 : 0.62,
+                          transition: beweegt
+                            ? "opacity 500ms ease"
+                            : undefined,
+                        }}
+                      />
+                      <path
+                        d={golf(onder)}
+                        fill="none"
+                        stroke="white"
+                        strokeOpacity="0.7"
+                        strokeWidth="1.5"
+                      />
+                    </g>
+                  );
+                })}
+              </g>
 
-          {/* Het oppervlak zelf, iets nadrukkelijker dan de rest. */}
-          <path
-            d={golf(OPPERVLAK, 4)}
-            fill="none"
-            stroke="var(--g-800)"
-            strokeOpacity="0.5"
-            strokeWidth="2"
-          />
-
-          {/* De diepte die dit apparaat haalt. */}
-          <g
-            style={{
-              transform: `translateY(${stap === 0 ? -14 : 0}px)`,
-              opacity: stap === 0 ? 0 : 1,
-              transition: beweegt
-                ? "transform 700ms ease, opacity 500ms ease"
-                : undefined,
-            }}
-          >
-            {/* De dieptegrens als reeks vulling in plaats van een gestreepte lijn:
-                dezelfde leesbaarheid, en de tekening houdt nul strepen over. */}
-            {Array.from({ length: 21 }, (_, i) => (
-              <rect
-                key={i}
-                x={i * 13}
-                y={bodem - 1.5}
-                width="7"
-                height="3"
-                rx="1.5"
-                fill="var(--g-900)"
+              {/* Het oppervlak zelf, iets nadrukkelijker dan de rest. */}
+              <path
+                d={golf(OPPERVLAK, 4)}
+                fill="none"
+                stroke="var(--g-800)"
+                strokeOpacity="0.5"
+                strokeWidth="2"
               />
-            ))}
-            <circle cx="264" cy={bodem} r="4" fill="var(--g-900)" />
-          </g>
 
-          <Mechaniek
-            apparaat={apparaat}
-            stap={stap}
-            bodem={bodem}
-            beweegt={beweegt}
-            uid={uid}
-          />
+              <Mechaniek
+                apparaat={apparaat}
+                stap={stap}
+                bodem={bodem}
+                beweegt={beweegt}
+                uid={uid}
+              />
 
-          {/* Wat er in de huid gebeurt, met een naam erbij.
+              {/* De diepte die dit apparaat haalt. Na het mechaniek getekend: stralen
+                  en naaldjes liepen over de pil heen en maakten hem bleek. Dit is een
+                  aantekening bij de tekening, en die ligt bovenop. */}
+              <g
+                style={{
+                  transform: `translateY(${stap === 0 ? -14 : 0}px)`,
+                  opacity: stap === 0 ? 0 : 1,
+                  transition: beweegt
+                    ? "transform 700ms ease, opacity 500ms ease"
+                    : undefined,
+                }}
+              >
+                {/* De grens als één stevige lijn met een naam en een maat. Er stond een
+                    gestreepte lijn zonder woord erbij, en dan is het een versiering; met
+                    "Tot hier" en de millimeters erbij is het de zin van de tekening. */}
+                <line
+                  x1="0"
+                  y1={bodem}
+                  x2="270"
+                  y2={bodem}
+                  stroke="var(--g-900)"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                />
+                <g transform={`translate(8 ${bodem})`}>
+                  <rect
+                    x="0"
+                    y="-11"
+                    width="118"
+                    height="22"
+                    rx="11"
+                    fill="var(--g-900)"
+                  />
+                  <text
+                    x="59"
+                    y="4"
+                    textAnchor="middle"
+                    fontSize="10.5"
+                    fontWeight="600"
+                    fill="white"
+                    style={{ letterSpacing: "0.02em" }}
+                  >
+                    {`Tot hier · ~${diepteInMm(bodem)} mm`}
+                  </text>
+                </g>
+              </g>
+
+              {/* Wat er in de huid gebeurt, met een naam erbij.
               De lagen dragen namen en zijn daardoor leesbaar; de bewegende vormen
               droegen er geen. Vier streepjes in een mintvlak zijn geen naaldjes tot er
               "naaldjes" bij staat. Alleen tijdens de stap waarin het werk gebeurt, want
               daarna klopt de naam niet meer. */}
-          <text
-            x="8"
-            y={OPPERVLAK - 8}
-            className="fill-[var(--g-900)] text-[10px] tracking-[.12em] uppercase"
-            style={{
-              opacity: stap === 1 ? 0.75 : 0,
-              transition: beweegt ? "opacity 400ms ease" : undefined,
-            }}
-          >
-            {WERKWIJZE_NAAM[apparaat.werkwijze]}
-          </text>
+              <text
+                x="8"
+                y={OPPERVLAK - 8}
+                className="fill-[var(--g-900)] text-[10px] tracking-[.12em] uppercase"
+                style={{
+                  opacity: stap === 1 ? 0.75 : 0,
+                  transition: beweegt ? "opacity 400ms ease" : undefined,
+                }}
+              >
+                {WERKWIJZE_NAAM[apparaat.werkwijze]}
+              </text>
+            </svg>
+          </div>
 
-          {/* De laagnamen naast de tekening; wat buiten bereik ligt vervaagt. */}
-          <g>
-            {LAAGGRENZEN.map((onder, i) => {
-              const boven = i === 0 ? OPPERVLAK : LAAGGRENZEN[i - 1];
-              const binnenBereik = boven < bodem;
-              return (
-                <g
-                  key={HUIDLAGEN[i].id}
-                  style={{
-                    opacity: binnenBereik ? 1 : 0.4,
-                    transition: beweegt ? "opacity 500ms ease" : undefined,
-                  }}
-                >
-                  <line
-                    x1="270"
-                    y1={(boven + onder) / 2}
-                    x2="286"
-                    y2={(boven + onder) / 2}
-                    stroke="var(--g-300)"
-                    strokeWidth="1.5"
-                  />
-                  {/* Naam, diepte en inhoud. De diepte is wat deze tekening bruikbaar
-                      maakt voor een behandelaar: zij kiest haar instelling op millimeters
-                      en niet op een verhouding. De inhoud zegt waaróm je op die diepte
-                      moet zijn: pigment zit in de opperhuid, collageen eronder. */}
-                  <text
-                    x="292"
-                    y={(boven + onder) / 2 - 4}
-                    fontSize="12.5"
-                    fill={binnenBereik ? "var(--t-strong)" : "var(--t-muted)"}
-                    fontWeight={binnenBereik ? 600 : 400}
-                  >
-                    {HUIDLAGEN[i].naam}
-                    <tspan fill="var(--t-muted)" fontWeight="400" fontSize="11">
-                      {"  tot " + HUIDLAGEN[i].tot}
-                    </tspan>
-                  </text>
-                  <text
-                    x="292"
-                    y={(boven + onder) / 2 + 11}
-                    fontSize="10.5"
-                    fill="var(--t-muted)"
-                  >
-                    {HUIDLAGEN[i].bevat}
-                  </text>
-                </g>
-              );
-            })}
-          </g>
-        </svg>
+          <LegendaNaast bodem={bodem} beweegt={beweegt} />
+        </div>
+
+        <LegendaOnder bodem={bodem} beweegt={beweegt} />
 
         {/* [MEDISCHE-CHECK-ROJDA]: de dieptes en de fasen per apparaat. De vlag hoort in
             dit commentaar en niet in de zin eronder, want die zin lezen bezoekers wel. */}
@@ -361,7 +544,8 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
       <div className="flex flex-col">
         <p className="diba-label text-[var(--t-label)]">Wat er gebeurt</p>
 
-        <ol className="mt-5 space-y-2">
+        {/* Onder de tekening (md tot xl) in drie kolommen, ernaast (vanaf xl) als één rij. */}
+        <ol className="mt-5 grid gap-2 md:grid-cols-3 xl:grid-cols-1">
           {fasen.map((f, i) => {
             const actief = i === stap;
             const gehad = i < stap;

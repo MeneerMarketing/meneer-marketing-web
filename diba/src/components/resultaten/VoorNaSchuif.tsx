@@ -103,7 +103,7 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
             />
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute top-1/2 grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-700)] shadow-[0_4px_18px_rgba(23,55,42,.25)]"
+              className="pointer-events-none absolute top-1/2 grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-700)] shadow-[0_4px_18px_rgba(67,79,58,.25)]"
               style={{ left: `${stand}%` }}
             >
               <svg

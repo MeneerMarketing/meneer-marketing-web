@@ -425,7 +425,7 @@ export default function FigmaHomeApp({
                 className="object-cover object-[center_30%]"
               />
               <div
-                className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(25,82,46,.82))]"
+                className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(67,79,58,.82))]"
                 aria-hidden="true"
               />
               <blockquote className="absolute bottom-7 left-7 right-7 max-w-md text-2xl leading-[1.15] tracking-[-.04em] text-white sm:text-3xl">

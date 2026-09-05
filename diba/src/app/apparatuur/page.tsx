@@ -250,19 +250,19 @@ export default function ApparatuurPage() {
         </div>
       </section>
 
-      {/* ── Verder ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div>
-            <Label>Verder</Label>
+      {/* ── Verder ──
+          Stond als losse tekst op het paginavlak, terwijl elke andere afsluiter op de site
+          in een donkergroen blok met ronde hoeken staat. Nu ook hier. */}
+      <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
+        <div className="mx-auto">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
+            <Label opDonker>Verder</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
               Zoek op wat je
               <br />
-              <span className="diba-accent">wilt bereiken</span>
+              <span className="diba-accent-on-dark">wilt bereiken</span>
             </h2>
-          </div>
-          <div className="max-w-[58ch]">
-            <p className="text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Wie begint bij de techniek komt uit bij waar het meest over
               geschreven is. Dat is zelden hetzelfde als wat bij jouw huid past.
               Begin bij wat je wil veranderen, of laat het eerst meten.
@@ -270,13 +270,13 @@ export default function ApparatuurPage() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="/behandelingen"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Alle behandelingen
               </Link>
               <Link
                 href="/huidprofiel"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Maak je huidprofiel
               </Link>

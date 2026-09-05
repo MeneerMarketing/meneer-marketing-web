@@ -1,24 +1,27 @@
 @import "tailwindcss";
 
 /* ══ DIBA HUISSTIJL — de tokens (DIBA-RULES.md §4) ══
-   Eén groenschaal, verankerd op de Figma-homepage. Elke tekstkleur hieronder is
-   gemeten tegen het vlak waar hij op staat en haalt WCAG 2.2 AA. Hardcode nooit
-   een hex buiten dit blok. */
+   Eén groenschaal, sinds 06-09-2026 verankerd op het brandbook van Diba Clinics: Olive
+   leaf als primair, Dewy forest als middengroen, Sea foam als sectietint, en de
+   alternatieve kleuren uit het brandbook als tussenstappen. Elke tekstkleur hieronder is
+   gemeten tegen het vlak waar hij op staat en haalt WCAG 2.2 AA (het getal in het
+   commentaar is de laagste ratio op de lichte vlakken). Hardcode nooit een hex buiten
+   dit blok. */
 :root {
-  /* ── Merkgroen: de schaal ── */
-  --g-900: #17372a; /* koppen en bodytekst op licht */
-  --g-800: #174e31; /* hover op primair */
-  --g-700: #286943; /* PRIMAIR — knop, link, donkere sectievlakken */
-  --g-600: #3f8850; /* mid accent, meetwaarden */
-  --g-500: #4c9855; /* icoongroen */
-  --g-400: #6eb46e; /* meterlijn, de punt op De Lijn */
-  --g-300: #95c592; /* sterke rand */
-  --g-200: #cbe5bf; /* beeldvlak achter portretten */
-  --g-100: #dce8d9; /* lijn en rand */
-  --g-050: #eef7e9; /* zacht sectievlak */
-  --g-075: #e5f3df; /* mintvlak uit het ontwerp (panelen, uitgelicht blok) */
-  --g-025: #f2f7ef; /* sectietint */
-  --g-010: #fcfdfb; /* paginavlak */
+  /* ── Merkgroen: de schaal (brandbook = exact overgenomen, anders afgeleid) ── */
+  --g-900: #2e3628; /* koppen en bodytekst op licht; diep olijf, afgeleid */
+  --g-800: #363f2f; /* hover op primair; afgeleid */
+  --g-700: #434f3a; /* PRIMAIR — Olive leaf (brandbook). Knop, link, donkere vlakken */
+  --g-600: #555e4c; /* mid accent, meetwaarden (brandbook alternatief) */
+  --g-500: #738369; /* icoongroen — Dewy forest (brandbook) */
+  --g-400: #919e88; /* meterlijn, de punt op De Lijn (brandbook alternatief) */
+  --g-300: #a1af97; /* sterke rand (brandbook alternatief) */
+  --g-200: #cdd8c8; /* beeldvlak achter portretten; afgeleid */
+  --g-100: #dce5d6; /* lijn en rand (brandbook alternatief) */
+  --g-050: #eff3eb; /* zacht sectievlak; afgeleid */
+  --g-075: #e8efe4; /* panelen, uitgelicht blok (brandbook alternatief) */
+  --g-025: #f7faf5; /* sectietint — Sea foam (brandbook) */
+  --g-010: #fbfcfa; /* paginavlak, net onder wit; afgeleid */
 
   /* Leeslaag over fotografie. Bewust NEUTRAAL en niet groen.
 
@@ -28,38 +31,29 @@
      grijsgroen, en het geheel leest als stockbeeld met een filter erover. Bij een
      huidkliniek is de kleur van iemands huid nu juist het onderwerp.
 
-     Deze tint zit vlak naast zwart met een spoor groen erin, zodat een scrim leest als
-     schaduw en niet als kleur. Alleen inzetten waar tekst op het beeld staat. */
-  --foto-scrim: #0d1210;
+     Dit is Almost black uit het brandbook: een scrim leest dan als schaduw en niet als
+     kleur. Alleen inzetten waar tekst op het beeld staat. */
+  --foto-scrim: #0a0a09;
 
-  /* Leeslaag over fotografie. Bewust NEUTRAAL en niet groen.
-     Over de foto's lag overal het merkgroen, via mix-blend-multiply of een groen verloop.
-     Dat maakt van een klinische opname een sfeerbeeld: huidtinten verschuiven, een rode
-     huid na een laser wordt olijf, en het geheel leest als een stockbeeld met een filter.
-     Precies het tegenovergestelde van wat deze foto's moeten uitstralen.
-     Deze tint zit vlak naast zwart met een spoor groen erin, zodat een scrim leest als
-     schaduw en niet als kleur. Alleen gebruiken waar tekst op het beeld staat. */
-  --foto-scrim: #0d1210;
+  /* ── Tekst op lichte vlakken (olijfgrijs, AA-gevalideerd; laagste ratio op --g-200) ── */
+  --t-strong: #2e3628; /*  8.51 — koppen, bodytekst */
+  --t-body: #525e4c; /*  4.65 — lopende tekst; haalt AA op elk licht vlak,
+                        ook op het beeldvlak --g-200 */
+  --t-muted: #4f5c56; /*  4.75 — footerlinks, proof-labels */
+  --t-label: #47613f; /*  4.67 — eyebrow-labels boven koppen */
 
-  /* ── Tekst op lichte vlakken (groengrijs, AA-gevalideerd) ── */
-  --t-strong: #17372a; /* 12.73 — koppen, bodytekst */
-  --t-body: #526759; /*  4.50 — lopende tekst; haalt AA op elk licht vlak,
-                        ook op de mintkaart --g-200 */
-  --t-muted: #566b59; /*  4.50 — footerlinks, proof-labels */
-  --t-label: #46704b; /*  4.54 — eyebrow-labels boven koppen */
+  /* Oker heeft twee waarden nodig. --warn (#ad7e38) is de grafische tint: punten,
+     lijnvullingen, iconen. Die haalt 3:1 op het panelvlak --g-075 en dat is genoeg voor
+     grafiek, maar als tékst niet. Gebruik voor letters altijd --warn-text. */
+  --warn-text: #7f5c2a; /*  5.16 — op het panelvlak --g-075 */
 
-  /* Oker heeft twee waarden nodig. --warn (#b0813c) is de grafische tint: punten,
-     lijnvullingen, iconen. Die haalt 3:1 en dat is genoeg voor grafiek, maar als tékst
-     zakt hij naar 3,47 op wit. Gebruik voor letters altijd --warn-text. */
-  --warn-text: #8b662f; /*  4.51 — laagste, op het mintvlak --g-075 */
-
-  /* ── Tekst op donkergroen (--g-700) ── */
-  --on-dark: #ffffff; /* 6.58 — koppen */
-  --on-dark-body: #d2ead0; /* 5.14 — lopende tekst */
-  --on-dark-label: #bbe0ac; /* 4.50 — eyebrow-labels */
-  --on-dark-accent: #b8e39d; /* 4.55 — het accentwoord ("Wij meten.") */
-  --on-dark-btn: #d8f0c8; /*       — mintknop op donker */
-  --on-dark-btn-text: #245f3b; /* 6.20 — tekst in die mintknop */
+  /* ── Tekst op donkergroen (--g-700, Olive leaf) ── */
+  --on-dark: #ffffff; /* 8.68 — koppen */
+  --on-dark-body: #dce5d6; /* 6.71 — lopende tekst */
+  --on-dark-label: #c3d0ba; /* 5.40 — eyebrow-labels */
+  --on-dark-accent: #c9d8bf; /* 5.81 — het accentwoord ("Wij meten.") */
+  --on-dark-btn: #e8efe4; /*       — lichte knop op donker */
+  --on-dark-btn-text: #434f3a; /* 7.40 — tekst in die knop */
 
   /* ── Vorm ── */
   --r-sm: 16px; /* metrictegels, kleine kaartjes */
@@ -100,7 +94,7 @@
   --ink-300: #b9b9b0;
   --white: #ffffff;
   --success: #4a7c59;
-  --warn: #b0813c;
+  --warn: #ad7e38;
   --error: #9c4038;
   /* Het lichte warme vlak dat bij --warn hoort: de dip in de acnetijdlijn en de
      twijfelkolom bij rosacea. Stond op twee plekken los als hex, en een kleur die twee

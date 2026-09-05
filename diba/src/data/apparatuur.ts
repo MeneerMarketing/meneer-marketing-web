@@ -946,6 +946,12 @@ export const APPARATUUR: readonly Apparaat[] = [
   },
   {
     slug: "dermaplane-pro",
+    /* Er is geen losse apparaatfoto van het mesje; deze uit de shoot toont het in
+       gebruik, en op een apparatuurpagina is dat wat je wilt zien. */
+    foto: {
+      src: "/images/shoot/beh-dermaplaning.jpg",
+      alt: "Dermaplaning: het mesje schraapt onder een vaste hoek over de wang",
+    },
     vragen: [
       {
         vraag: "Wordt mijn haar dikker terug?",

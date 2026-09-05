@@ -27,9 +27,9 @@ export default function FigmaHeading({
   const after = match ? match[3] : "";
 
   return (
-    <Tag className={`text-[#17372a] ${sizeClasses[size]} ${className}`}>
+    <Tag className={`text-[var(--t-strong)] ${sizeClasses[size]} ${className}`}>
       {before}
-      {accent ? <span className="text-[#387849]">{accent}</span> : null}
+      {accent ? <span className="text-[var(--g-700)]">{accent}</span> : null}
       {after}
     </Tag>
   );

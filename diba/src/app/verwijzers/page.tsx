@@ -418,7 +418,7 @@ export default function VerwijzersPage() {
               <li key={k.href}>
                 <Link
                   href={k.href}
-                  className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-7 transition-shadow duration-500 hover:shadow-[0_18px_44px_rgba(23,55,42,.09)]"
+                  className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-7 transition-shadow duration-500 hover:shadow-[0_18px_44px_rgba(67,79,58,.09)]"
                 >
                   <p className="diba-card-title text-[var(--t-strong)]">
                     {k.kop}

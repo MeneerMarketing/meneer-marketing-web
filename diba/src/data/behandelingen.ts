@@ -2717,6 +2717,82 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     duurMinuten: 45,
   },
   {
+    slug: "acnebehandeling",
+    foto: {
+      src: "/images/shoot/beh-acne-verzorging.jpg",
+      alt: "Huidtherapeut brengt een kalmerend product aan na het reinigen bij acne",
+    },
+    inDeStoel: [
+      "De behandelaar bekijkt eerst wat er zit: verstoppingen, ontstekingen of allebei. Dat bepaalt wat er die afspraak gebeurt en wat er juist met rust gelaten wordt.",
+      "Daarna een grondige reiniging, het vakkundig leegmaken van verstopte poriën en een kalmerend masker of een lichte peeling om af te sluiten. Zelf uitdrukken thuis is de manier om er littekens van te maken; hier gebeurt het steriel en met de juiste druk.",
+      "Erna is je huid rustig en een paar uur licht rood. Je gaat met een advies naar huis over wat je de dagen erna wel en niet op je gezicht doet. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    naam: "Acnebehandeling",
+    categorie: "gezicht",
+    huidwens: ["acne"],
+    kort: "Eén afspraak voor een onrustige huid: reinigen, verstoppingen weghalen, kalmeren. Los te boeken.",
+    lagen: ["hoornlaag", "opperhuid"],
+    werking:
+      "Een enkele behandeling voor een huid met puistjes en verstoppingen, zonder dat je aan een traject begint. De verstopte poriën worden vakkundig leeggemaakt, de huid wordt gereinigd en gekalmeerd, en je krijgt advies mee voor de dagen erna. Het haalt weg wat er nu zit; het verandert niet waarom het terugkomt. Daarvoor is het acnetraject, en of dat bij jou zin heeft hoor je tijdens deze afspraak. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Een paar uur licht rood. Waar verstoppingen zijn weggehaald kan de huid een dag gevoelig zijn. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Los te doen. Bij terugkerende acne is een reeks of het traject de betere route. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 0,
+    duurMinuten: 45,
+    wel: [
+      "Haalt verstoppingen en ontstekingen weg zonder dat je zelf gaat drukken",
+      "Is los te boeken, ook als je niet aan een traject wilt beginnen",
+      "Geeft meteen een rustiger huid en een advies voor de dagen erna",
+    ],
+    niet: [
+      "Verandert niet waarom acne terugkomt; dat vraagt om het traject [MEDISCHE-CHECK-ROJDA]",
+      "Bij zware, ontstoken acne met knobbels kijkt eerst een arts mee [MEDISCHE-CHECK-ROJDA]",
+      "Doet niets aan littekens die er al zijn; die komen aan bod als de huid rustig is",
+    ],
+    stappen: [
+      {
+        kop: "Kijken wat er zit",
+        zin: "Verstoppingen, ontstekingen of allebei. Dat bepaalt wat er die afspraak gebeurt.",
+      },
+      {
+        kop: "Reinigen en leegmaken",
+        zin: "Grondig reinigen en de verstopte poriën steriel en met de juiste druk leegmaken.",
+      },
+      {
+        kop: "Kalmeren en advies",
+        zin: "Een masker of lichte peeling als afsluiting, en een advies voor de dagen erna.",
+      },
+    ],
+    faq: [
+      {
+        vraag: "Wat is het verschil met het acnetraject?",
+        antwoord:
+          "Dit is één afspraak die weghaalt wat er nu zit. Het traject duurt maanden, met producten voor thuis en controles, en pakt aan waarom het terugkomt. Wie twijfelt begint hier; tijdens de afspraak hoor je of het traject bij jou zin heeft.",
+      },
+      {
+        vraag: "Wat kost dit?",
+        antwoord:
+          "Dat hoor je tijdens de intake, samen met of een losse behandeling of het traject bij jou past. [PRIJS-NODIG: tarief losse acnebehandeling]",
+      },
+    ],
+    bijProblemen: [
+      { label: "Acne", href: "/huidproblemen/acne" },
+      { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
+    ],
+    verwant: [
+      {
+        slug: "acne-traject",
+        waarom:
+          "Als het terug blijft komen: maanden begeleiding in plaats van één afspraak.",
+      },
+      {
+        slug: "led-therapie",
+        waarom: "De rustige stap erna, op de bacterie en de roodheid.",
+      },
+    ],
+  },
+  {
     slug: "acne-traject",
     fotoInDeStoel: {
       src: "/images/shoot/stoel-acne-traject.jpg",

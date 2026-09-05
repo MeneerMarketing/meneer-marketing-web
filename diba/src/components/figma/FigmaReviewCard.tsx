@@ -138,7 +138,7 @@ export default function FigmaReviewCard({
   if (variant === "featured") {
     return (
       <figure
-        className={`group flex h-full min-w-[min(100%,28rem)] snap-center flex-col rounded-[var(--r-lg)] bg-white p-7 shadow-[0_8px_32px_rgba(15,45,28,.06)] transition-[transform,box-shadow] duration-500 [transition-timing-function:var(--ease-diba)] hover:-translate-y-1 hover:shadow-[0_20px_56px_rgba(40,105,67,.1)] sm:p-8 ${className}`}
+        className={`group flex h-full min-w-[min(100%,28rem)] snap-center flex-col rounded-[var(--r-lg)] bg-white p-7 shadow-[0_8px_32px_rgba(67,79,58,.06)] transition-[transform,box-shadow] duration-500 [transition-timing-function:var(--ease-diba)] hover:-translate-y-1 hover:shadow-[0_20px_56px_rgba(67,79,58,.1)] sm:p-8 ${className}`}
       >
         <div className="flex items-center justify-between gap-3">
           <TopicPill review={review} />
@@ -160,7 +160,7 @@ export default function FigmaReviewCard({
 
   return (
     <figure
-      className={`group flex h-full flex-col rounded-[var(--r-lg)] bg-[var(--g-050)] p-6 transition-[background-color,transform,box-shadow] duration-500 [transition-timing-function:var(--ease-diba)] hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_12px_40px_rgba(40,105,67,.08)] sm:p-7 ${className}`}
+      className={`group flex h-full flex-col rounded-[var(--r-lg)] bg-[var(--g-050)] p-6 transition-[background-color,transform,box-shadow] duration-500 [transition-timing-function:var(--ease-diba)] hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_12px_40px_rgba(67,79,58,.08)] sm:p-7 ${className}`}
     >
       <div className="flex items-center justify-between gap-3">
         <TopicPill review={review} />

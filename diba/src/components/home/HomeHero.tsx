@@ -58,7 +58,7 @@ function getal(item: ProofStripItem) {
 function Cijfers({ compact = false }: { compact?: boolean }) {
   return (
     <dl
-      className={`grid grid-cols-4 rounded-[var(--r-md)] bg-white shadow-[0_6px_24px_-16px_rgba(23,55,42,.45)] ${
+      className={`grid grid-cols-4 rounded-[var(--r-md)] bg-white shadow-[0_6px_24px_-16px_rgba(67,79,58,.45)] ${
         compact ? "relative -mt-7 px-1 py-3" : "px-2 py-6"
       }`}
     >

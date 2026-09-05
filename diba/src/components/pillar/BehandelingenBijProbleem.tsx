@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Label from "@/components/ui/Label";
+import { toepassingenBijProbleem } from "@/data/toepassingen";
 import { apparatenVoorBehandeling } from "@/data/apparatuur";
 import { BEHANDELINGEN, prijsTekst } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
@@ -50,6 +51,10 @@ export default function BehandelingenBijProbleem({
 
   if (behandelingen.length === 0) return null;
 
+  const toepassingen = toepassingenBijProbleem(
+    pad.replace("/huidproblemen/", ""),
+  );
+
   return (
     <section
       id="behandelingen"
@@ -72,6 +77,11 @@ export default function BehandelingenBijProbleem({
                een omkering van bestaande data en geen tweede koppeling die uit de pas
                kan lopen. Een traject of een test draait op niets en krijgt hier niets. */
             const apparaat = apparatenVoorBehandeling(b.slug)[0];
+            /* Bestaat er een pagina voor precies deze behandeling bij deze klacht, dan
+               is dat een preciezer antwoord dan de algemene behandelpagina. */
+            const toepassing = toepassingen.find(
+              (t) => t.behandeling === b.slug,
+            );
             return (
               <li
                 key={b.slug}
@@ -92,10 +102,14 @@ export default function BehandelingenBijProbleem({
 
                 <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-[var(--g-100)] pt-5">
                   <Link
-                    href={`/behandelingen/${b.slug}`}
+                    href={
+                      toepassing
+                        ? `/behandelingen/${toepassing.behandeling}/${toepassing.slug}`
+                        : `/behandelingen/${b.slug}`
+                    }
                     className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
                   >
-                    Wat het inhoudt
+                    {toepassing ? "Bij deze klacht" : "Wat het inhoudt"}
                   </Link>
                   {apparaat ? (
                     <Link

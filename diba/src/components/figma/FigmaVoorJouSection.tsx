@@ -54,7 +54,7 @@ function IntentCard({
       onClick={onSelect}
       className={`group rounded-[var(--r-lg)] p-6 text-left transition sm:p-7 ${
         active
-          ? "bg-[var(--g-700)] text-[var(--on-dark)] shadow-[0_14px_35px_rgba(35,100,62,.18)]"
+          ? "bg-[var(--g-700)] text-[var(--on-dark)] shadow-[0_14px_35px_rgba(67,79,58,.18)]"
           : "bg-[var(--g-025)] hover:-translate-y-1 hover:bg-[var(--g-100)]"
       } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
     >

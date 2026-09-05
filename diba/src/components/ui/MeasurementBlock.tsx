@@ -17,7 +17,7 @@ export default function MeasurementBlock({
   metrics,
 }: MeasurementBlockProps) {
   return (
-    <div className="rounded-[1.5rem] border border-[var(--g-100)] bg-white p-6 shadow-[0_8px_32px_rgba(15,45,28,.04)] sm:p-8">
+    <div className="rounded-[1.5rem] border border-[var(--g-100)] bg-white p-6 shadow-[0_8px_32px_rgba(67,79,58,.04)] sm:p-8">
       <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[var(--t-label)]">
         Wij meten
       </p>

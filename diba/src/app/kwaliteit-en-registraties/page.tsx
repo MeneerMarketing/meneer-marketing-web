@@ -168,14 +168,15 @@ export default function KwaliteitPage() {
             </p>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
               Dat betekent dat je met een klacht niet afhankelijk bent van of
-              wij hem redelijk vinden. Er is een route buiten ons om, en die
-              staat op de klachtenpagina.
+              wij hem redelijk vinden. Er is een route buiten ons om. Begin bij
+              ons, want het meeste is in een gesprek op te lossen; komen we er
+              niet uit, dan hoor je waar je terechtkunt.
             </p>
             <Link
-              href="/klachten"
+              href="/contact"
               className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Zo dien je een klacht in
+              Neem contact op
             </Link>
           </div>
         </div>

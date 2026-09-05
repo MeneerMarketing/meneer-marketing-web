@@ -149,7 +149,7 @@ export default function KennisbankPage() {
           ? "bg-white/10 hover:bg-white/[0.16]"
           : groep.tint === "wit"
             ? "bg-[var(--g-050)] hover:bg-[var(--g-075)]"
-            : "bg-white hover:shadow-[0_18px_44px_rgba(23,55,42,.09)]";
+            : "bg-white hover:shadow-[0_18px_44px_rgba(67,79,58,.09)]";
 
         return (
           <section
@@ -249,7 +249,7 @@ export default function KennisbankPage() {
               <li key={b.pad}>
                 <Link
                   href={b.pad}
-                  className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-6 transition-shadow duration-500 hover:shadow-[0_14px_36px_rgba(23,55,42,.08)]"
+                  className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-6 transition-shadow duration-500 hover:shadow-[0_14px_36px_rgba(67,79,58,.08)]"
                 >
                   <span className="text-[17px] leading-7 font-medium text-[var(--t-strong)]">
                     {b.naam}

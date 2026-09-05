@@ -114,7 +114,6 @@ const JURIDISCH: readonly { readonly label: string; readonly href: string }[] =
     { label: "Privacy", href: "/privacybeleid" },
     { label: "Cookies", href: "/cookiebeleid" },
     { label: "Voorwaarden", href: "/algemene-voorwaarden" },
-    { label: "Klachten", href: "/klachten" },
   ];
 
 export default function SiteFooter({ instagramHref }: SiteFooterProps) {

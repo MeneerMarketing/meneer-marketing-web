@@ -167,7 +167,7 @@ export default function Huidreis() {
           >
             {/* De lijn was half doorzichtig en verdween daarmee in het lichte groen
                 eronder. Vol wit met een schaduw: je moet kunnen zien waar je staat. */}
-            <div className="h-0.5 flex-1 bg-white shadow-[0_1px_3px_rgba(15,45,28,.25)]" />
+            <div className="h-0.5 flex-1 bg-white shadow-[0_1px_3px_rgba(67,79,58,.25)]" />
             <div className="flex h-11 items-center gap-2.5 rounded-[var(--r-pill)] bg-white px-4 shadow-[var(--shadow-float)]">
               <svg
                 viewBox="0 0 16 16"
@@ -184,7 +184,7 @@ export default function Huidreis() {
                 {laag.naam}
               </span>
             </div>
-            <div className="h-0.5 flex-1 bg-white shadow-[0_1px_3px_rgba(15,45,28,.25)]" />
+            <div className="h-0.5 flex-1 bg-white shadow-[0_1px_3px_rgba(67,79,58,.25)]" />
           </div>
         </div>
 

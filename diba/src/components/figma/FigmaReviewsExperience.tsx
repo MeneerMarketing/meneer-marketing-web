@@ -122,7 +122,7 @@ export default function FigmaReviewsExperience({
         >
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-0 bg-[linear-gradient(145deg,rgba(216,239,200,.12),transparent_50%,rgba(15,45,28,.25))]"
+            className="pointer-events-none absolute inset-0 bg-[linear-gradient(145deg,rgba(216,239,200,.12),transparent_50%,rgba(67,79,58,.25))]"
           />
           <FigmaSoftAccent variant="cta" className="opacity-60" />
 

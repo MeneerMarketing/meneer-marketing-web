@@ -83,7 +83,7 @@ export default function WerkwijzeStepsFlow({
                 onClick={() => setActief(i)}
                 className={`flex h-full w-full flex-col rounded-[var(--r-md)] p-6 text-left transition-colors duration-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-400)] sm:p-7 ${
                   aan
-                    ? "cursor-default bg-white shadow-[0_18px_44px_rgba(23,55,42,.09)]"
+                    ? "cursor-default bg-white shadow-[0_18px_44px_rgba(67,79,58,.09)]"
                     : "cursor-pointer bg-[var(--g-025)] hover:bg-[var(--g-100)]"
                 }`}
               >

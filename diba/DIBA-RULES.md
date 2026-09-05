@@ -55,27 +55,36 @@ Sluit elke taak af met één regel per toets: ✓ of ✗ met reden.
 
 ## 4. Design tokens (nooit een hex hardcoden buiten dit blok)
 
-> **Herzien 28-07-2026.** De huisstijl is de Figma-homepage. De schaal hieronder is
-> daaruit gedistilleerd: elke tekstkleur is gemeten tegen het vlak waar hij op staat
-> en haalt WCAG 2.2 AA. De vorige tokens (crème/olijf, Archivo, Fraunces) zijn
-> vervallen en worden uitgefaseerd. Bron: `src/app/globals.css`.
+> **Herzien 06-09-2026.** De kleuren komen uit het brandbook van Diba Clinics
+> (`dibaclinics-brandbook`, p. 8–10): Olive leaf `#434f3a` is primair, Dewy forest
+> `#738369` het middengroen, Sea foam `#f7faf5` de sectietint, Almost black `#0a0a09`
+> de leeslaag over foto's. De alternatieve kleuren uit het brandbook (`#555e4c`,
+> `#919e88`, `#a1af97`, `#e8efe4`, `#dce5d6`) zijn de tussenstappen; wat het brandbook
+> niet geeft (g-900, g-800, g-200, g-050, g-010 en de tekstkleuren) is afgeleid en
+> gemeten. De opmaak (raster, typografie, vormen) blijft die van de Figma-homepage
+> (28-07-2026). Elke tekstkleur is gemeten tegen het vlak waar hij op staat en haalt
+> WCAG 2.2 AA. Bron: `src/app/globals.css`.
+>
+> *Kanttekening bij het brandbook:* p. 8 zet `#1d1d1b` onder Sea foam; p. 9 geeft voor
+> dezelfde kleur RGB 247, 250, 245. Dat laatste is de lichte tint die bedoeld is; het
+> eerste is een drukfout.
 
 ```css
 :root {
-  /* Merkgroen — één schaal */
-  --g-900:#17372a; --g-800:#174e31; --g-700:#286943; /* 700 = PRIMAIR */
-  --g-600:#3f8850; --g-500:#4c9855; --g-400:#6eb46e;
-  --g-300:#95c592; --g-200:#cbe5bf; --g-100:#dce8d9;
-  --g-050:#eef7e9; --g-025:#f2f7ef; --g-010:#fcfdfb;
+  /* Merkgroen — één schaal, brandbook 06-09-2026 */
+  --g-900:#2e3628; --g-800:#363f2f; --g-700:#434f3a; /* 700 = PRIMAIR, Olive leaf */
+  --g-600:#555e4c; --g-500:#738369; --g-400:#919e88; /* 500 = Dewy forest */
+  --g-300:#a1af97; --g-200:#cdd8c8; --g-100:#dce5d6;
+  --g-050:#eff3eb; --g-025:#f7faf5; --g-010:#fbfcfa; /* 025 = Sea foam */
 
-  /* Tekst op licht (groengrijs, AA-gevalideerd) */
-  --t-strong:#17372a;  /* 12.73 */  --t-body:#5d7565;  /* 4.55 */
-  --t-muted:#5e7662;   /*  4.50 */  --t-label:#4c7a52; /* 4.54 */
+  /* Tekst op licht (olijfgrijs, AA-gevalideerd; laagste ratio op --g-200) */
+  --t-strong:#2e3628;  /*  8.51 */  --t-body:#525e4c;  /* 4.65 */
+  --t-muted:#4f5c56;   /*  4.75 */  --t-label:#47613f; /* 4.67 */
 
   /* Tekst op --g-700 */
-  --on-dark:#ffffff;          /* 6.58 */  --on-dark-body:#d2ead0;   /* 5.14 */
-  --on-dark-label:#bbe0ac;    /* 4.50 */  --on-dark-accent:#b8e39d; /* 4.55 */
-  --on-dark-btn:#d8f0c8;                  --on-dark-btn-text:#245f3b; /* 6.20 */
+  --on-dark:#ffffff;          /* 8.68 */  --on-dark-body:#dce5d6;   /* 6.71 */
+  --on-dark-label:#c3d0ba;    /* 5.40 */  --on-dark-accent:#c9d8bf; /* 5.81 */
+  --on-dark-btn:#e8efe4;                  --on-dark-btn-text:#434f3a; /* 7.40 */
 
   /* Type */
   --font-figma-home:'DM Sans',ui-sans-serif,system-ui,sans-serif;

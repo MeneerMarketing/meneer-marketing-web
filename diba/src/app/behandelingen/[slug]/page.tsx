@@ -9,6 +9,7 @@ import Werkingsvenster, {
 } from "@/components/apparatuur/Werkingsvenster";
 import Variantkiezer from "@/components/behandelingen/Variantkiezer";
 import Label from "@/components/ui/Label";
+import { toepassingenBijBehandeling } from "@/data/toepassingen";
 import { videoVoor } from "@/data/videos";
 import { apparatenVoorBehandeling, type Apparaat } from "@/data/apparatuur";
 import { PillarFaq } from "@/components/pillar/PillarSecties";
@@ -103,6 +104,8 @@ export default async function BehandelingPage({ params }: PageProps) {
   const { slug } = await params;
   const b = behandelingVoorSlug(slug);
   if (!b) notFound();
+
+  const toepassingen = toepassingenBijBehandeling(b.slug);
 
   /* De eigen opname bij deze pagina, als het bestand er is. */
   const video = videoVoor(b.slug);
@@ -632,6 +635,42 @@ export default async function BehandelingPage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* ── Waar we dit voor gebruiken ──
+          De toepassingen van deze behandeling: dezelfde techniek, per klacht uitgeschreven.
+          Zonder deze ingang zijn die pagina's alleen via de sitemap te vinden. */}
+      {toepassingen.length > 0 ? (
+        <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+          <div className="mx-auto">
+            <Label>Waar we dit voor gebruiken</Label>
+            <h2 className="diba-display-m mt-4 max-w-[22ch]">
+              Dezelfde techniek,{" "}
+              <span className="diba-accent">per klacht uitgeschreven</span>
+            </h2>
+            <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Wat er anders gaat aan de instelling, wat je kunt verwachten en
+              wanneer je hier beter iets anders voor kiest.
+            </p>
+            <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {toepassingen.map((t) => (
+                <li key={t.slug}>
+                  <Link
+                    href={`/behandelingen/${t.behandeling}/${t.slug}`}
+                    className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  >
+                    <p className="diba-card-title min-h-[2lh] text-[var(--t-strong)]">
+                      {t.naam}
+                    </p>
+                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                      {t.intro.split(". ")[0]}.
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {/* ── Hoort hierbij ──
 

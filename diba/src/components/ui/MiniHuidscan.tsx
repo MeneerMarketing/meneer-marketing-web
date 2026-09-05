@@ -305,7 +305,7 @@ export default function MiniHuidscan() {
         : stap / VRAGEN.length;
 
   return (
-    <div className="relative overflow-hidden rounded-[var(--r-lg)] bg-white p-5 text-[var(--t-strong)] shadow-[0_20px_60px_rgba(15,45,28,.18)] sm:p-7">
+    <div className="relative overflow-hidden rounded-[var(--r-lg)] bg-white p-5 text-[var(--t-strong)] shadow-[0_20px_60px_rgba(67,79,58,.18)] sm:p-7">
       {/* Kop van de kaart */}
       <div className="flex items-center justify-between gap-4">
         <span className="diba-label diba-pill-active rounded-[var(--r-pill)] px-3 py-1.5">

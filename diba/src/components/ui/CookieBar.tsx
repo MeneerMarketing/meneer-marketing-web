@@ -55,7 +55,7 @@ export default function CookieBar() {
     <div
       role="dialog"
       aria-label="Cookievoorkeuren"
-      className="fixed inset-x-0 bottom-0 z-50 bg-[var(--g-010)]/95 px-4 py-3 shadow-[0_-8px_28px_rgba(23,55,42,.10)] backdrop-blur-sm pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:px-9 md:py-4 md:pb-[calc(1rem+env(safe-area-inset-bottom))]"
+      className="fixed inset-x-0 bottom-0 z-50 bg-[var(--g-010)]/95 px-4 py-3 shadow-[0_-8px_28px_rgba(67,79,58,.10)] backdrop-blur-sm pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:px-9 md:py-4 md:pb-[calc(1rem+env(safe-area-inset-bottom))]"
     >
       <div className="mx-auto flex flex-wrap items-center justify-between gap-3 md:gap-4">
         {/*

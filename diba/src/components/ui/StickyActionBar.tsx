@@ -45,7 +45,7 @@ export default function StickyActionBar({
       inert={!visible || undefined}
       className={`fixed inset-x-0 bottom-0 z-40 md:hidden
                   border-t border-[var(--g-100)] bg-[var(--g-010)]/95 backdrop-blur-sm
-                  shadow-[0_-8px_32px_rgba(15,45,28,.08)]
+                  shadow-[0_-8px_32px_rgba(67,79,58,.08)]
                   pb-[env(safe-area-inset-bottom)]
                   transition-transform duration-300 ease-out
                   motion-reduce:transition-none

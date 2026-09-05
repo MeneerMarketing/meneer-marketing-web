@@ -244,7 +244,7 @@ export default function ProfielBouwer() {
   return (
     <div>
       {/* ── Voortgang ── */}
-      <div className="sticky top-[var(--nav-h)] z-20 -mx-5 mb-10 bg-[var(--g-010)]/95 px-5 py-4 shadow-[0_6px_16px_-12px_rgba(15,45,28,.5)] backdrop-blur sm:-mx-9 sm:px-9 lg:-mx-[7.5vw] lg:px-[7.5vw]">
+      <div className="sticky top-[var(--nav-h)] z-20 -mx-5 mb-10 bg-[var(--g-010)]/95 px-5 py-4 shadow-[0_6px_16px_-12px_rgba(67,79,58,.5)] backdrop-blur sm:-mx-9 sm:px-9 lg:-mx-[7.5vw] lg:px-[7.5vw]">
         <div className="mx-auto flex flex-wrap items-center justify-between gap-x-8 gap-y-3">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1" aria-hidden="true">

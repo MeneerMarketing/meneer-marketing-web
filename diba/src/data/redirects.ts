@@ -62,4 +62,7 @@ export const LEGACY_REDIRECTS: readonly {
     source: "/behandelingen/nordlys-ipl",
     destination: "/apparatuur/nordlys-ipl",
   },
+  /* De klachtenpagina is uit de site (Yasin, 5 september 2026). De wettelijke uitleg
+     staat op /kwaliteit-en-registraties; wie de oude URL heeft komt bij contact uit. */
+  { source: "/klachten", destination: "/contact" },
 ] as const;
