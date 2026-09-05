@@ -16,6 +16,7 @@ import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_ACNE } from "@/data/figma-home-images";
 import { PORIEN_FAQ, PORIEN_SOORTEN, PORIEN_WEL_NIET } from "@/data/porien";
+import { zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -180,7 +181,7 @@ export default function PorienPage() {
             intro="Het vierde beeld wordt het vaakst verward met grote poriën, en dat kost mensen sessies aan de verkeerde behandeling."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=porien&beeld={id}"
             ctaLabel="Laat dit beeld bekijken"
             hint="Twijfel je? Dan kijken we er samen naar."

@@ -3,14 +3,18 @@ import Link from "next/link";
 import Prijslijst from "@/components/prijzen/Prijslijst";
 import Behandelprijzen from "@/components/prijzen/Behandelprijzen";
 import PrijzenVoorJou from "@/components/prijzen/PrijzenVoorJou";
+import FaqAccordion, { type FaqItem } from "@/components/ui/FaqAccordion";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
+import { kostenVraag } from "@/data/pillar-kosten";
+import { SITUATIES, VAST } from "@/data/voorwaarden";
+import { breadcrumbSchema, faqSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
- * De prijzenpagina.
+ * De tarievenpagina.
  *
  * Herbouwd, en niet alleen qua vorm. De vorige versie bouwde de laserlijst met een
  * hulpfunctie die elke prijs op nul zette, en toonde bij nul letterlijk "[PRIJS-NODIG]"
@@ -25,19 +29,67 @@ import { zoekmachineVelden } from "@/lib/seo";
  */
 
 export const metadata: Metadata = zoekmachineVelden({
-  pad: "/prijzen",
-  titel: "Prijzen",
+  pad: "/tarieven",
+  titel: "Tarieven",
   omschrijving:
     "Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt.",
 });
 
-export default function PrijzenPage() {
+const intakeBehandeling = behandelingVoorSlug("huidanalyse");
+const intakeBedrag = intakeBehandeling
+  ? prijsTekst(intakeBehandeling.prijs)
+  : "een vast bedrag";
+
+function situatie(id: string): string {
+  return SITUATIES.find((s) => s.id === id)?.gebeurt ?? "";
+}
+
+/**
+ * De vragen die alleen op deze pagina opkomen.
+ *
+ * De kostenvraag komt uit pillar-kosten.ts, dezelfde die op de huidprobleempagina's staat:
+ * een tarief dat je op twee plekken overschrijft, staat binnen een maand twee keer
+ * verschillend. De annulerings- en betaalregels komen om dezelfde reden uit voorwaarden.ts.
+ */
+const PRIJZEN_FAQ: FaqItem[] = [
+  { question: kostenVraag().vraag, answer: kostenVraag().antwoord },
+  {
+    question: "Staat de btw er al bij?",
+    answer:
+      "Ja. De bedragen op deze pagina zijn wat je aan de balie betaalt. Er komt niets bij voor materiaal of voor het aanleggen van een dossier.",
+  },
+  {
+    question: "Krijg ik dit vergoed?",
+    answer:
+      "Dat hangt af van je aanvullende verzekering en of er een medische indicatie is. Diba Clinics is gecontracteerd bij alle zorgverzekeraars; op de vergoedingenpagina staat per verzekeraar wat eronder valt.",
+  },
+  {
+    question: "Zijn er kortingen, pakketten of acties?",
+    answer: VAST[0].zin,
+  },
+  {
+    question: "Wat als ik mijn afspraak afzeg?",
+    answer: `${situatie("afzeggen-op-tijd")} ${situatie("afzeggen-te-laat")}`,
+  },
+  {
+    question: "Wanneer betaal ik?",
+    answer: situatie("betalen"),
+  },
+  {
+    question: "Wat als de behandeling niet door kan gaan?",
+    answer:
+      SITUATIES.find((s) => s.id === "behandeling-kan-niet")?.kost ??
+      "Je betaalt de behandeling dan niet.",
+  },
+];
+
+export default function TarievenPage() {
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: DIBA_SITE_URL },
-          { name: "Prijzen", url: `${DIBA_SITE_URL}/prijzen` },
+          { name: "Tarieven", url: `${DIBA_SITE_URL}/tarieven` },
         ])}
       />
 
@@ -53,11 +105,11 @@ export default function PrijzenPage() {
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Prijzen</span>
+              <span className="text-[var(--t-muted)]">Tarieven</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              Alle prijzen
+              Alle tarieven
               <br />
               <span className="diba-accent">op één plek</span>
             </h1>
@@ -69,29 +121,38 @@ export default function PrijzenPage() {
             </p>
 
             <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Hier staat het gewoon. Per sessie, per zone, inclusief wat een
-              pakket vervangt. Je kunt het vergelijken voordat je een afspraak
-              maakt, en dat is precies de bedoeling.
+              Wat je hier niet vindt is een pakket met een streep door de oude
+              prijs. Er zijn geen kortingen en geen acties, dus er is ook nooit
+              een moment waarop je te vroeg of te laat was.
             </p>
           </div>
 
           {/* Stond op een rand. Vlakken dragen zichzelf; op --g-010 is wit al genoeg
               onderscheid en een lijntje eromheen is precies de stijl die hier niet hoort. */}
+          {/* De belangrijkste prijs op deze pagina stond er niet: die van de intake. Wat
+              een behandeling kost hangt af van welke het wordt, en dat is precies wat je
+              daar hoort. Het bedrag komt uit de behandelingentabel, zodat het niet naast
+              /intake en het huidprofiel uit de pas gaat lopen. */}
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
-            <Label>Wat een prijs niet is</Label>
+            <Label>Waar een prijs begint</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
-              Een voorspelling
+              De intake: {intakeBedrag}
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              De prijs per sessie is vooraf bekend. Hoeveel sessies nodig zijn,
-              kunnen we pas na de intake en tijdens het traject beter
-              inschatten.
+              Welke behandeling bij je huid past, hoor je tijdens de intake. Tot
+              dat gesprek is elk bedrag een gok, en daarom staat het hier als
+              enige niet in een lijst.
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Daarom staan hier sessieprijzen en geen pakketten met een streep
-              door de oude prijs. Wat je in totaal kwijt bent hoor je na de
-              meting.
+              Word je in dezelfde afspraak behandeld, dan gaat dat bedrag er
+              weer af. Je betaalt dan alleen de behandeling.
             </p>
+            <Link
+              href="/intake"
+              className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 self-start rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            >
+              Zo werkt de intake
+            </Link>
           </div>
         </div>
       </section>
@@ -154,29 +215,79 @@ export default function PrijzenPage() {
         </div>
       </section>
 
-      {/* ── Afsluiter ── */}
+      {/* ── Veelgestelde vragen ──
+          Een tarievenpagina roept vragen op die nergens anders thuishoren: gaat er btw
+          overheen, krijg ik het vergoed, wat als ik afzeg. Die antwoorden stonden al in de
+          voorwaarden en op /vergoedingen, alleen niet op de pagina waar de vraag opkomt. */}
+      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <SchemaMarkup data={faqSchema(PRIJZEN_FAQ)} />
+          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <Label>Vragen over prijzen</Label>
+              <h2 className="diba-display-m mt-4 max-w-[16ch]">
+                Wat mensen <span className="diba-accent">hierover vragen.</span>
+              </h2>
+              <p className="mt-6 max-w-[38ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Staat je vraag er niet bij, dan hoor je het antwoord aan de
+                telefoon zonder dat er een afspraak uit hoeft te komen.
+              </p>
+              {/* De antwoorden hierboven zijn kort omdat de volledige versie elders
+                  staat. Deze twee links wijzen daarheen. */}
+              <ul className="diba-label mt-6 space-y-2">
+                <li>
+                  <Link
+                    href="/vergoedingen"
+                    className="text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                  >
+                    Vergoeding per verzekeraar
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/algemene-voorwaarden"
+                    className="text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                  >
+                    Afzeggen, betalen en verzetten
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <FaqAccordion items={PRIJZEN_FAQ} />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Afsluiter ──
+          Hier stond een uitnodiging om de laserconfigurator te openen, met een tekening
+          waarop je zones aanwijst. Die staat tijdelijk uit. De knoppen wezen al ergens
+          anders heen, maar de tekst beloofde nog wat er niet meer is. */}
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
-            <Label opDonker>Zelf uitrekenen</Label>
+            <Label opDonker>Wat het totaal bepaalt</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
-              Voor laser
+              Niet de prijs per sessie,
               <br />
-              <span className="diba-accent-on-dark">
-                stel je het zelf samen.
-              </span>
+              <span className="diba-accent-on-dark">maar het aantal.</span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wijs je zones aan op een tekening en zie meteen wat je opbouw
-              wordt, inclusief wat een pakket vervangt. Je keuze staat daarna in
-              de adresbalk, dus je kunt hem bewaren of doorsturen.
+              De bedragen hierboven liggen vast. Wat je in totaal kwijt bent
+              hangt af van hoe vaak je komt, en dat verschilt per huid. Een
+              aantal noemen voordat we gemeten hebben is een gok met jouw geld,
+              dus dat doen we niet.
+            </p>
+            <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Tijdens de intake hoor je om hoeveel sessies het bij jou gaat en
+              wat dat samen wordt. Dat is het eerste moment waarop iemand daar
+              iets zinnigs over kan zeggen.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                href="/laserontharing"
+                href="/intake"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Alles over laserontharing
+                Plan een intake
               </Link>
               <Link
                 href="/behandelingen"

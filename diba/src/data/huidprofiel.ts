@@ -416,9 +416,12 @@ const DOELMATRIX: Record<string, Partial<Record<DoelId, "vol" | "deels">>> = {
   "dermapen-4": { textuur: "vol", lijntjes: "vol" },
   skinboosters: { lijntjes: "vol", kleur: "deels" },
   fotona: { lijntjes: "vol", textuur: "vol" },
-  "nordlys-ipl": { roodheid: "vol", kleur: "vol" },
+  "nordlys-pigment": { roodheid: "vol", kleur: "vol" },
+  "nordlys-roodheid": { roodheid: "vol", kleur: "vol" },
   "led-therapie": { roodheid: "deels", lijntjes: "deels", acne: "deels" },
-  "cosmelan-dermamelan": { kleur: "vol" },
+  cosmelan: { kleur: "vol" },
+  dermamelan: { kleur: "vol" },
+  "dermamelan-intimate": { kleur: "vol" },
   "happy-intim": { kleur: "vol" },
   laserontharing: { haar: "vol" },
   /* Stond hier niet, en kwam daardoor bij iedereen uit op "past niet". */
@@ -439,7 +442,8 @@ const HERSTELVRAAG: Record<string, HerstelId> = {
   "led-therapie": "geen",
   voedingsintolerantietest: "geen",
   skinboosters: "dag",
-  "nordlys-ipl": "dag",
+  "nordlys-pigment": "dag",
+  "nordlys-roodheid": "dag",
   laserontharing: "dag",
   fotona: "dag",
   "xl-hair": "dag",
@@ -447,7 +451,9 @@ const HERSTELVRAAG: Record<string, HerstelId> = {
   peelings: "dagen",
   skinpen: "dagen",
   "dermapen-4": "dagen",
-  "cosmelan-dermamelan": "dagen",
+  cosmelan: "dagen",
+  dermamelan: "dagen",
+  "dermamelan-intimate": "dagen",
   "happy-intim": "dagen",
   "acne-traject": "dagen",
   /* Stond hier niet en viel dus stilzwijgend terug op "dag", terwijl het
@@ -483,7 +489,7 @@ const BLOKKADES: readonly {
 }[] = [
   {
     wanneer: (p) => p.situatie.includes("gebruind"),
-    slugs: ["laserontharing", "nordlys-ipl", "fotona"],
+    slugs: ["laserontharing", "nordlys-pigment", "nordlys-roodheid", "fotona"],
     reden:
       "Kan niet op een gebruinde huid: het licht wordt dan opgenomen door het pigment in je huid in plaats van door het doel.",
   },
@@ -491,9 +497,12 @@ const BLOKKADES: readonly {
     wanneer: (p) => p.situatie.includes("zon-op-komst"),
     slugs: [
       "peelings",
-      "cosmelan-dermamelan",
+      "cosmelan",
+      "dermamelan",
+      "dermamelan-intimate",
       "laserontharing",
-      "nordlys-ipl",
+      "nordlys-pigment",
+      "nordlys-roodheid",
       "fotona",
       "happy-intim",
     ],
@@ -505,7 +514,9 @@ const BLOKKADES: readonly {
       p.situatie.includes("zwanger") || p.situatie.includes("borstvoeding"),
     slugs: [
       "peelings",
-      "cosmelan-dermamelan",
+      "cosmelan",
+      "dermamelan",
+      "dermamelan-intimate",
       "skinboosters",
       "xl-hair",
       "happy-intim",
@@ -572,13 +583,19 @@ const LET_OP: readonly {
   },
   {
     wanneer: (p) => p.voorgeschiedenis.includes("lichtgevoelige-medicatie"),
-    slugs: ["laserontharing", "nordlys-ipl", "fotona"],
+    slugs: ["laserontharing", "nordlys-pigment", "nordlys-roodheid", "fotona"],
     tekst:
       "Lichtgevoelige medicatie verandert hoe je huid op licht reageert. Neem de naam mee naar de intake.",
   },
   {
     wanneer: (p) => p.gevoeligheid === "hoog",
-    slugs: ["peelings", "happy-intim", "cosmelan-dermamelan"],
+    slugs: [
+      "peelings",
+      "happy-intim",
+      "cosmelan",
+      "dermamelan",
+      "dermamelan-intimate",
+    ],
     tekst:
       "Je gaf aan snel geïrriteerd te zijn. Er wordt dan meestal met een lagere sterkte begonnen.",
   },

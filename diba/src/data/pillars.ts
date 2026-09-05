@@ -119,10 +119,6 @@ export const PILLARS: readonly Huidprobleem[] = [
     titel: "Moedervlekken controleren: eerst begrijpen, dan *behandelen*",
   },
   {
-    slug: "cellulitis",
-    titel: "Cellulitis: eerst begrijpen, dan *behandelen*",
-  },
-  {
     slug: "huidverkleuring",
     titel: "Huidverkleuring: eerst begrijpen, dan *behandelen*",
   },

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Reviewmuur from "@/components/reviews/Reviewmuur";
+import Reviewarchief from "@/components/reviews/Reviewarchief";
+import { REVIEW_TOPICS } from "@/data/reviews";
+import { ARCHIEF_TOTAAL } from "@/data/reviews-archief";
+import type { SalonizedReviewTopic } from "@/data/salonized-reviews";
 import Label from "@/components/ui/Label";
 import {
-  SALONIZED_REVIEWS,
   SALONIZED_REVIEWS_URL,
   SALONIZED_REVIEW_SUMMARY,
 } from "@/data/salonized-reviews";
@@ -17,7 +19,7 @@ import { zoekmachineVelden } from "@/lib/seo";
  *
  * HET PROBLEEM MET EEN PAGINA VOL VIJF STERREN.
  *
- * Alle 56 overgenomen reviews staan op vijf sterren, en het gemiddelde over alle 3.883 is
+ * Alle 122 overgenomen reviews staan op vijf sterren, en het gemiddelde over alle 3.893 is
  * een 5,0. Op elke andere site is dat het verkoopargument. Op deze site kan dat niet: hier
  * staat bij elk cijfer wat het niet zegt, en een muur met alleen maar vijven is precies het
  * soort bewijs dat we op /resultaten afkeuren bij foto's.
@@ -50,7 +52,21 @@ export const metadata: Metadata = zoekmachineVelden({
   omschrijving: `${SALONIZED_REVIEW_SUMMARY.countFormatted} reviews op Salonized, gemiddeld een ${SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}. Wat dat wel zegt en wat niet, met de quotes zelf erbij.`,
 });
 
-export default function ReviewsPage() {
+/** Welke onderwerpen als filter in de URL mogen staan. */
+function leesOnderwerp(waarde: string | undefined) {
+  const geldig = REVIEW_TOPICS.some((t) => t.id === waarde);
+  return geldig ? (waarde as SalonizedReviewTopic | "alle") : "alle";
+}
+
+export default async function ReviewsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ onderwerp?: string; pagina?: string }>;
+}) {
+  const params = await searchParams;
+  const onderwerp = leesOnderwerp(params.onderwerp);
+  const pagina = Number.parseInt(params.pagina ?? "1", 10) || 1;
+
   const gemiddeld = SALONIZED_REVIEW_SUMMARY.rating
     .toFixed(1)
     .replace(".", ",");
@@ -108,8 +124,8 @@ export default function ReviewsPage() {
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
               Wij verzamelen ze niet en we kunnen ze niet selecteren of
-              verwijderen. Hieronder staan er {SALONIZED_REVIEWS.length} van,
-              overgenomen in de volgorde van de bron.
+              verwijderen. Hieronder staan ze allemaal, overgenomen in de
+              volgorde van de bron.
             </p>
             <a
               href={SALONIZED_REVIEWS_URL}
@@ -193,23 +209,28 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section
+        id="alles"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+      >
         <div className="mx-auto">
           <div>
-            <Label>{SALONIZED_REVIEWS.length} overgenomen quotes</Label>
+            <Label>
+              Alle {ARCHIEF_TOTAAL.toLocaleString("nl-NL")} beoordelingen
+            </Label>
             <h2 className="diba-display-m mt-4">
               Zoek op wat <span className="diba-accent">jij zelf hebt.</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Sorteren op score heeft geen zin als alles vijf is, en zelf de
-              beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet.
+              Sorteren op score heeft geen zin als bijna alles vijf is, en zelf
+              de beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet.
               Dus filter je zelf, met het aantal op de knop. Ook als dat aantal
               tegenvalt.
             </p>
           </div>
 
           <div className="mt-10">
-            <Reviewmuur />
+            <Reviewarchief onderwerp={onderwerp} pagina={pagina} />
           </div>
         </div>
       </section>

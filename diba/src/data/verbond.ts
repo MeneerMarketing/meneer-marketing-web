@@ -85,12 +85,8 @@ export const WEIGERINGEN: readonly Weigering[] = [
   {
     regel: "Wij doen niets aan volume en niets aan lichaamsvorm",
     uitleg:
-      "Geen injectables, geen volumeopbouw, en geen behandeling tegen cellulitis. Dat zijn geen huidbehandelingen, en bij cellulitis kan niemand waarmaken wat er beloofd wordt.",
+      "Geen injectables en geen volumeopbouw. Dat zijn geen huidbehandelingen, en wat er over beloofd wordt kan niemand waarmaken.",
     kost: "Twee van de best verkopende categorieën in deze branche staan bij ons niet op de kaart.",
-    zieOok: {
-      tekst: "Zie de cellulitispagina",
-      pad: "/huidproblemen/cellulitis",
-    },
   },
   {
     regel: "Wij verkopen geen pakketten en geen abonnementen",
@@ -109,7 +105,7 @@ export const WEIGERINGEN: readonly Weigering[] = [
     regel:
       "Wij tonen geen resultaat dat we niet onder hetzelfde licht hebben gemeten",
     uitleg:
-      "Geen voor-en-na met andere belichting, een andere hoek of andere make-up. Bij poriën, kringen en cellulitis is de lamp anders het hele resultaat.",
+      "Geen voor-en-na met andere belichting, een andere hoek of andere make-up. Bij poriën en kringen is de lamp anders het hele resultaat.",
     kost: "Onze foto's zijn minder spectaculair dan die van anderen. Dat is precies waarom je ze kunt geloven.",
     zieOok: {
       tekst: "Zie de poriënpagina",

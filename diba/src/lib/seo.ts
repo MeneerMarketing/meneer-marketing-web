@@ -26,7 +26,7 @@ import { DIBA_SITE, DIBA_SITE_URL } from "@/lib/site";
  * In een pagina met een vast metadata-object:
  *
  *   export const metadata: Metadata = zoekmachineVelden({
- *     pad: "/prijzen",
+ *     pad: "/tarieven",
  *     titel: "Alle prijzen",
  *     omschrijving: "...",
  *   });

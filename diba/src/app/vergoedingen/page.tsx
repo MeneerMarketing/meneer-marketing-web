@@ -331,7 +331,7 @@ export default function VergoedingenPage() {
               Start je intake
             </Link>
             <Link
-              href="/prijzen"
+              href="/tarieven"
               className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
             >
               Of bekijk eerst wat het kost

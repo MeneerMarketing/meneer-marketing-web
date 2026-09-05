@@ -97,7 +97,7 @@ function gewicht(route: string): number {
   if (route === "/huidproblemen" || route === "/behandelingen") return 0.85;
   if (route.startsWith("/behandelingen/")) return 0.8;
   if (
-    route === "/prijzen" ||
+    route === "/tarieven" ||
     route === "/contact" ||
     route === "/laserontharing"
   )
@@ -115,7 +115,7 @@ function gewicht(route: string): number {
 
 /** Hoe vaak de inhoud verandert. Een prijslijst vaker dan de algemene voorwaarden. */
 function frequentie(route: string): "weekly" | "monthly" | "yearly" {
-  if (route === "/" || route === "/prijzen" || route === "/reviews")
+  if (route === "/" || route === "/tarieven" || route === "/reviews")
     return "weekly";
   if (
     /^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten|werken-bij)$/.test(

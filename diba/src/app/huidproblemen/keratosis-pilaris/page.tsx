@@ -19,7 +19,7 @@ import {
   KP_WEL_NIET,
   CONSULT_BEOORDELING,
 } from "@/data/keratosis-pilaris";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -188,7 +188,7 @@ export default function Pagina() {
             intro="Verhoorning, droogte en ingegroeide haren voelen onder je hand bijna gelijk. Waar het zit en of het symmetrisch is, maakt het verschil."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=keratosis-pilaris&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."

@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import { DOELWITTEN, type Apparaat } from "@/data/apparatuur";
-import { HUIDLAGEN, LAAGAANDEEL } from "@/data/behandelingen";
+import { HUIDLAGEN, HUIDLAGEN_BRON, LAAGAANDEEL } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 
 /**
@@ -77,6 +77,18 @@ const LAAGGRENZEN = LAAGAANDEEL.reduce<number[]>((rij, deel) => {
 }, []);
 
 /** De diepte uit de data (procenten) omgerekend naar een y in de tekening. */
+/**
+ * Alleen wat het venster tekent.
+ *
+ * Dit was `Apparaat`, het hele record. Dat is een client component, dus dat record ging in
+ * zijn geheel de pagina in: techniekteksten, FAQ en de redactievlaggen die daarin staan.
+ * Zichtbaar in de broncode van zesenzeventig pagina's.
+ */
+export type WerkingsvensterApparaat = Pick<
+  Apparaat,
+  "naam" | "fasen" | "diepte" | "doelwit" | "werkwijze"
+>;
+
 function diepteY(procent: number): number {
   return OPPERVLAK + ((BODEM - OPPERVLAK) * procent) / 100;
 }
@@ -87,7 +99,7 @@ function golf(y: number, amplitude = 3): string {
 }
 
 type Props = {
-  readonly apparaat: Apparaat;
+  readonly apparaat: WerkingsvensterApparaat;
   /**
    * De diepte van dít geval, als die afwijkt van wat het apparaat maximaal haalt.
    *
@@ -188,7 +200,10 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
             {LAAGGRENZEN.map((onder, i) => {
               const boven = i === 0 ? OPPERVLAK : LAAGGRENZEN[i - 1];
               const binnenBereik = boven < bodem;
-              const tinten = ["--g-100", "--g-200", "--g-300", "--g-500"];
+              /* Vier duidelijk verschillende tinten. Ze liepen van 100 via 200 en 300
+                 naar 500, en de eerste drie stappen zijn zo klein dat je een verloop las
+                 in plaats van vier lagen. */
+              const tinten = ["--g-075", "--g-200", "--g-400", "--g-600"];
               return (
                 <g key={HUIDLAGEN[i].id}>
                   <rect
@@ -303,14 +318,29 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                     stroke="var(--g-300)"
                     strokeWidth="1.5"
                   />
+                  {/* Naam, diepte en inhoud. De diepte is wat deze tekening bruikbaar
+                      maakt voor een behandelaar: zij kiest haar instelling op millimeters
+                      en niet op een verhouding. De inhoud zegt waaróm je op die diepte
+                      moet zijn: pigment zit in de opperhuid, collageen eronder. */}
                   <text
                     x="292"
-                    y={(boven + onder) / 2 + 4}
+                    y={(boven + onder) / 2 - 4}
                     fontSize="12.5"
                     fill={binnenBereik ? "var(--t-strong)" : "var(--t-muted)"}
                     fontWeight={binnenBereik ? 600 : 400}
                   >
                     {HUIDLAGEN[i].naam}
+                    <tspan fill="var(--t-muted)" fontWeight="400" fontSize="11">
+                      {"  tot " + HUIDLAGEN[i].tot}
+                    </tspan>
+                  </text>
+                  <text
+                    x="292"
+                    y={(boven + onder) / 2 + 11}
+                    fontSize="10.5"
+                    fill="var(--t-muted)"
+                  >
+                    {HUIDLAGEN[i].bevat}
                   </text>
                 </g>
               );
@@ -321,8 +351,9 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
         {/* [MEDISCHE-CHECK-ROJDA]: de dieptes en de fasen per apparaat. De vlag hoort in
             dit commentaar en niet in de zin eronder, want die zin lezen bezoekers wel. */}
         <p className="mt-4 text-[13px] leading-6 text-[var(--t-muted)]">
-          De afbeelding is schematisch. De werkelijke diepte hangt af van de
-          gekozen instelling.
+          De verhoudingen zijn schematisch; de diepten erbij zijn dat niet.{" "}
+          {HUIDLAGEN_BRON} Hoe diep er bij jou gewerkt wordt hangt af van de
+          instelling die de behandelaar kiest.
         </p>
       </div>
 
@@ -421,7 +452,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
    ──────────────────────────────────────────────────────────────────────────── */
 
 type MechaniekProps = {
-  readonly apparaat: Apparaat;
+  readonly apparaat: WerkingsvensterApparaat;
   readonly stap: number;
   readonly bodem: number;
   readonly beweegt: boolean;

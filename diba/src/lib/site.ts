@@ -59,17 +59,14 @@ export const DIBA_HERO_VIDEO_SRC = "/videos/hero-hydrafacial.mp4";
 /**
  * Openingstijden.
  *
- * VOORLOPIG. Deze tijden zijn een werkbaar voorstel en niet door de kliniek bevestigd.
- * Ze staan hier omdat een kliniek zonder openingstijden geen kliniek is: het is het
- * meest opgezochte gegeven op een contactpagina, het hoort in het bedrijfsschema voor
- * Google, en zonder tijden kon de pagina er ook niet omheen ontworpen worden.
+ * BEVESTIGD door Okan op 5 september 2026, naast het Google-profiel van de kliniek gelegd.
+ * Ze stonden hier als voorstel met een vlag erop en blijken precies te kloppen.
  *
  * Wijzig ze op deze ene plek. Ze voeden de contactpagina, de voettekst en het
  * LocalBusiness-schema tegelijk; wie ze op één van die drie aanpast krijgt drie
  * verschillende antwoorden op dezelfde vraag.
  *
  * `dag` volgt de schema.org-notatie, want daar gaan ze uiteindelijk heen.
- * [GEGEVEN-NODIG: de echte openingstijden, Okan]
  */
 export const DIBA_OPENINGSTIJDEN = [
   { dag: "Monday", label: "Maandag", van: "09:00", tot: "17:30" },
@@ -142,11 +139,11 @@ export const DIBA_SALONIZED_REVIEWS_URL =
  * Werk hem bij zodra je de cijfers hierboven hebt nagekeken, ook als er niets veranderd is.
  * Dat "niets veranderd" is namelijk de uitkomst van de controle en niet het overslaan ervan.
  */
-export const CIJFERS_GECONTROLEERD_OP = "2026-08-01";
+export const CIJFERS_GECONTROLEERD_OP = "2026-09-05";
 
-/** Stand Salonized, zie CIJFERS_GECONTROLEERD_OP: 5,0 · 3.883 reviews. */
+/** Stand Salonized, zie CIJFERS_GECONTROLEERD_OP: 5,0 · 3.893 reviews. */
 export const DIBA_SALONIZED_RATING = 5.0;
-export const DIBA_SALONIZED_REVIEW_COUNT = 3883;
+export const DIBA_SALONIZED_REVIEW_COUNT = 3893;
 
 /**
  * Canonieke proof points, de enige toegestane cijfers (DIBA-RULES.md §11).
@@ -187,23 +184,50 @@ export type ProofStripItem = {
    * verscheen dat als "3883" in plaats van "3.883" — precies wat §11 verbiedt.
    */
   readonly isJaartal?: true;
+  /**
+   * Het label in twee woorden of minder.
+   *
+   * Op de homepage staan deze vier op een telefoon naast elkaar in een strook van
+   * driehonderdvijfendertig pixels. "Uitgevoerde behandelingen" past daar niet, en
+   * afkappen maakt van een bewijs een raadsel.
+   */
+  readonly kort?: string;
 };
 
 export const DIBA_PROOF_STRIP_ITEMS: readonly ProofStripItem[] = [
   { value: DIBA_PROOF.activeSince, label: "Actief sinds", isJaartal: true },
-  { value: AANTAL.geholpenKlanten, suffix: "+", label: "Geholpen klanten" },
+  {
+    value: AANTAL.geholpenKlanten,
+    suffix: "+",
+    label: "Geholpen klanten",
+  },
   { value: AANTAL.behandelingen, suffix: "+", label: "Behandelingen" },
   { value: DIBA_SALONIZED_REVIEW_COUNT, label: "Klantreviews" },
 ] as const;
 
 /** Figma homepage volgorde — stats bar onder hero */
 export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
-  { value: DIBA_SALONIZED_REVIEW_COUNT, label: "Klantreviews" },
+  {
+    value: DIBA_SALONIZED_REVIEW_COUNT,
+    label: "Klantreviews",
+    kort: "Reviews",
+  },
   {
     value: AANTAL.behandelingen,
     suffix: "+",
     label: "Uitgevoerde behandelingen",
+    kort: "Behandelingen",
   },
-  { value: AANTAL.geholpenKlanten, suffix: "+", label: "Geholpen klanten" },
-  { value: DIBA_PROOF.activeSince, label: "Vertrouwd sinds", isJaartal: true },
+  {
+    value: AANTAL.geholpenKlanten,
+    suffix: "+",
+    label: "Geholpen klanten",
+    kort: "Klanten",
+  },
+  {
+    value: DIBA_PROOF.activeSince,
+    label: "Vertrouwd sinds",
+    isJaartal: true,
+    kort: "Open sinds",
+  },
 ] as const;

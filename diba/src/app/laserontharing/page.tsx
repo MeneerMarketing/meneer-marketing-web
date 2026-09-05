@@ -104,7 +104,7 @@ export default function LaserontharingPage() {
 
             <div className="mt-9 flex flex-wrap items-center gap-6">
               <Link
-                href="/prijzen"
+                href="/tarieven"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
                 Bekijk de tarieven per zone

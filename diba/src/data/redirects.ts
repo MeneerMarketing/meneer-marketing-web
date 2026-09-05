@@ -8,7 +8,6 @@ export const LEGACY_REDIRECTS: readonly {
 }[] = [
   { source: "/over", destination: "/over-ons" },
   { source: "/about", destination: "/over-ons" },
-  { source: "/tarieven", destination: "/prijzen" },
   { source: "/prijs", destination: "/prijzen" },
   { source: "/afspraak", destination: "/intake" },
   { source: "/boeken", destination: "/intake" },
@@ -40,4 +39,27 @@ export const LEGACY_REDIRECTS: readonly {
      een kwestie van deze twee regels weghalen. */
   { source: "/resultaten", destination: "/reviews" },
   { source: "/laserontharing/configurator", destination: "/laserontharing" },
+  /* De pagina heet tarieven (Yasin, 5 september 2026). De oude URL stond in de sitemap,
+     dus er kan al naar gelinkt zijn. */
+  { source: "/prijzen", destination: "/tarieven" },
+  /* Cellulitis behandelen we niet; de pagina die uitlegde waarom is weg. Wie er nog op
+     uitkomt hoort waar we wel voor zijn. */
+  { source: "/huidproblemen/cellulitis", destination: "/huidproblemen" },
+  /* Het apparaat heet GentleMax Pro (Yasin, 5 september 2026). De oude naam stond nog in
+     de slug, dus die URL kan gedeeld zijn. */
+  {
+    source: "/apparatuur/gentle-laser-pro-u",
+    destination: "/apparatuur/gentlemax-pro",
+  },
+  /* Gesplitst op 5 september 2026 (Okan): het waren verschillende trajecten met
+     verschillende prijzen achter een kaartje, en een apparaat dat als behandeling in de
+     lijst stond. */
+  {
+    source: "/behandelingen/cosmelan-dermamelan",
+    destination: "/behandelingen/cosmelan",
+  },
+  {
+    source: "/behandelingen/nordlys-ipl",
+    destination: "/apparatuur/nordlys-ipl",
+  },
 ] as const;

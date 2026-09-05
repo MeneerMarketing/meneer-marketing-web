@@ -59,6 +59,12 @@ const meet = () => {
     const uitlijning = getComputedStyle(groep).alignItems;
     if (uitlijning === "start" || uitlijning === "flex-start") continue;
 
+    /* Een band die langsschuift is geen kaartrij. Je scant hem niet op een gelijke
+       onderrand: er staat altijd maar een deel in beeld en hij beweegt. De kaarten erin
+       zijn bovendien wel degelijk even hoog; wat hier geteld werd waren de tekstblokken
+       binnen elke kaart. */
+    if (groep.classList.contains("review-marquee-track")) continue;
+
     /* Alleen echte rijen: zelfde bovenkant, zelfde breedte. */
     const eerste = kaarten[0].getBoundingClientRect();
     const opEenRij = kaarten.every((c) => {

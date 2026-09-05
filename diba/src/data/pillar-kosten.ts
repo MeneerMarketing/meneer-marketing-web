@@ -41,6 +41,6 @@ export function kostenVraag(): { vraag: string; antwoord: string } {
       "Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast. " +
       `De intake kost ${bedrag}; neem je in dezelfde afspraak een behandeling, dan gaat dat bedrag daar weer af. ` +
       "Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt. " +
-      "Alle tarieven per behandeling staan openbaar op de prijzenpagina.",
+      "Alle tarieven per behandeling staan openbaar op de tarievenpagina.",
   };
 }

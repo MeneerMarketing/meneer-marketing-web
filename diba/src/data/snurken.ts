@@ -167,6 +167,6 @@ export const SNURKEN_FAQ = [
   {
     vraag: "Wat kost dit?",
     antwoord:
-      "Het tarief voor NightLase staat op de prijzenpagina zodra het vastligt. [PRIJS-NODIG: tarief NightLase per sessie en als reeks van drie, Okan]",
+      "Het tarief voor NightLase staat op de tarievenpagina zodra het vastligt. [PRIJS-NODIG: tarief NightLase per sessie en als reeks van drie, Okan]",
   },
 ];

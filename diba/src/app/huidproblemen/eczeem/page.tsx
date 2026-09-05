@@ -7,13 +7,18 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
+  PillarCta,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { ECZEEM_FAQ, ECZEEM_WEL_NIET, VERWAR_NIET } from "@/data/eczeem";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
@@ -199,14 +204,24 @@ export default function EczeemPage() {
               Misschien is het een droge huid
             </Link>
             <Link
-              href="/ons-verbond"
+              href="/behandeling-op-advies"
               className="diba-label text-[var(--g-700)] underline underline-offset-4"
             >
-              Lees waar wij nog meer nee op zeggen
+              Of laat eerst je huid beoordelen
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Okan, 5 september 2026: dit behandelen we wel, alleen niet alleen. Dan
+          hoort er ook een manier te staan om dat af te spreken. */}
+      <PillarCta
+        kop="Plan een huidconsult"
+        accent="bij Diba Clinics"
+        tekst="De diagnose en de medicatie lopen via je huisarts. Wat je huid daarnaast nodig heeft, bekijken wij: welke verzorging de barriere herstelt en welke behandeling kan als je huid rustig is. Is dat op dat moment niets, dan zeggen we dat."
+        topic="eczeem"
+        whatsappHref={DIBA_WHATSAPP_URL}
+      />
     </main>
   );
 }

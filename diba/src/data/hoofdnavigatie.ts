@@ -199,7 +199,13 @@ export const HOOFDNAV: readonly NavItem[] = [
       { kop: "Wij behandelen dit", items: uitGroep("behandelen"), breed: true },
       {
         kop: "Samen met je arts",
-        items: [...uitGroep("doorverwijzen"), ...uitGroep("niet")],
+        /* Deze kolom heet "Samen met je arts" en bevatte alleen wat we wegsturen.
+           Nu staat wat we samen met een arts doen er als eerste in. */
+        items: [
+          ...uitGroep("met-arts"),
+          ...uitGroep("doorverwijzen"),
+          ...uitGroep("niet"),
+        ],
       },
       {
         /* Twee pagina's die geen huidprobleem zijn en toch bij Diba terechtkomen.
@@ -236,6 +242,11 @@ export const HOOFDNAV: readonly NavItem[] = [
         kop: "Begin hier",
         items: [
           {
+            label: "Behandeling op advies",
+            href: "/behandeling-op-advies",
+            zin: "Je weet wat je wilt, niet welke behandeling",
+          },
+          {
             label: "Het huidconsult",
             href: "/intake",
             zin: "Meten, uitleg en een plan op maat",
@@ -254,6 +265,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "Onze apparatuur",
             href: "/apparatuur",
             zin: "Welk apparaat waarvoor wordt ingezet",
+          },
+          {
+            label: "Tarieven",
+            href: "/tarieven",
+            zin: "Elk bedrag, per sessie en per zone",
           },
         ],
       },
@@ -286,9 +302,9 @@ export const HOOFDNAV: readonly NavItem[] = [
             zin: kortZin("fotona"),
           },
           {
-            label: "Nordlys IPL",
-            href: "/behandelingen/nordlys-ipl",
-            zin: kortZin("nordlys-ipl"),
+            label: "Nordlys IPL bij pigment",
+            href: "/behandelingen/nordlys-pigment",
+            zin: kortZin("nordlys-pigment"),
           },
           {
             label: "LED-therapie",
@@ -307,7 +323,7 @@ export const HOOFDNAV: readonly NavItem[] = [
             binnenkort: true,
           },
           {
-            label: "Gentle Laser Pro-U",
+            label: "GentleMax Pro",
             href: "/gentlemax-pro",
             zin: "Het apparaat waar we mee werken",
             binnenkort: true,
@@ -317,6 +333,10 @@ export const HOOFDNAV: readonly NavItem[] = [
     ],
     uitgelicht: HUIDPROFIEL_BLOK,
   },
+  /* Tarieven staat hier en niet in de topbalk (Yasin, 5 september 2026). Het is geen
+     praktisch regeltje maar een keuze, en die keuze maak je naast de behandelingen.
+     Zonder kolommen, dus het is een gewone link en geen paneel. */
+  { label: "Tarieven", href: "/tarieven" },
   {
     label: "Over Diba",
     href: "/over-ons",
@@ -363,6 +383,16 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "Wat klanten zeggen",
             href: "/reviews",
             zin: "Alles op Salonized, zonder selectie vooraf",
+          },
+          {
+            label: "Merken en apparatuur",
+            href: "/partners",
+            zin: "Waar we mee werken, en waarvoor",
+          },
+          {
+            label: "Kwaliteit en registraties",
+            href: "/kwaliteit-en-registraties",
+            zin: "Waar we op aangesproken kunnen worden",
           },
           {
             label: "Ons verbond",

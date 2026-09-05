@@ -91,7 +91,11 @@ function Regel({
         type="button"
         aria-expanded={open}
         onClick={onWissel}
-        className="group flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-1 rounded-[var(--r-md)] px-5 py-4 text-left transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+        /* De hover alleen als de rij dicht is. Open is de handeling al gedaan, en dan
+           is dat vlak een vlek boven het witte paneel in plaats van een uitnodiging. */
+        className={`group flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-1 rounded-[var(--r-md)] px-5 py-4 text-left transition-colors duration-200 [transition-timing-function:var(--ease-diba)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+          open ? "" : "hover:bg-[var(--g-075)]"
+        }`}
       >
         <span className="min-w-0">
           <span className="block text-[17px] leading-7 font-medium text-[var(--t-strong)]">
@@ -136,27 +140,26 @@ function Regel({
           <span className="min-w-[6.5ch] text-right text-[18px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
             {b.prijs > 0 ? prijsTekst(b.prijs) : "Na de meting"}
           </span>
-          {/* Een echt teken in plaats van een tekstdriehoekje.
+          {/* Alleen het pijltje, zonder cirkel eromheen.
 
-              Er stond een glyph op dertien pixels naast een bedrag van achttien, en dan
-              zie je niet dat er iets open kan. Dit is een rond vlak met een rand, zo groot
-              als een aanraakdoel, dat meedraait bij openen. */}
+              Er zat een rand plus een vulling plus een draaiing omheen: drie signalen voor
+              één ding, en op hover sprong dat vlak van lichtgroen naar donkergroen naar
+              wit. Wat overblijft is het teken zelf, groot genoeg om te zien dat er iets
+              open kan, dat meedraait bij openen. Het aanraakdoel blijft acht bij acht. */}
           {heeftDetail ? (
             <span
               aria-hidden="true"
-              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-200 ${
-                open
-                  ? "rotate-180 border-[var(--g-700)] bg-[var(--g-700)] text-white"
-                  : "border-[var(--g-200)] text-[var(--g-700)] group-hover:border-[var(--g-700)] group-hover:bg-white"
+              className={`flex h-8 w-8 shrink-0 items-center justify-center text-[var(--g-700)] transition-transform duration-200 [transition-timing-function:var(--ease-diba)] ${
+                open ? "rotate-180" : "group-hover:translate-y-0.5"
               }`}
             >
               <svg
-                width="14"
-                height="14"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2.25"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
@@ -177,8 +180,12 @@ function Regel({
            Nu een vlak met een lijn erboven en drie kolommen die wel doorlopen: de feiten
            links, de varianten in het midden, de grens rechts. Een prijslijst lees je door
            de rechterrand af te scannen, en dan moet wat eronder komt diezelfde kolommen
-           aanhouden. */
-        <div className="border-t border-[var(--g-100)] bg-[var(--g-025)] px-5 py-6">
+           aanhouden.
+
+           WIT EN NIET --g-025. Dat was precies de kleur van de sectie eromheen, en daardoor
+           leek het uitgeklapte deel geen achtergrond te hebben: er wás geen verschil. Nu is
+           het hetzelfde blad als de rij erboven, met een haarlijn als vouw. */
+        <div className="border-t border-[var(--g-100)] bg-white px-5 py-6 sm:px-7">
           <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             <div>
               <p className="diba-label text-[var(--t-label)]">
@@ -249,7 +256,7 @@ function Regel({
                 <ul className="mt-3 space-y-2.5">
                   {b.niet.slice(0, 2).map((n) => (
                     <li
-                      key={n}
+                      key={publicCopy(n)}
                       className="text-[15px] leading-6 text-[var(--t-body)]"
                     >
                       {publicCopy(n)}

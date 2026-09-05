@@ -21,7 +21,7 @@ import {
   DOF_WEL_NIET,
   LICHTTEST_STAPPEN,
 } from "@/data/doffe-huid";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -194,7 +194,7 @@ export default function Pagina() {
             intro="Twee van de vier oorzaken behandelen we in de kliniek. Bij de andere twee zit de winst in je verzorging, en dat hoor je van ons."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=doffe-huid&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."

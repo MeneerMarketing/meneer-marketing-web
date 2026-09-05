@@ -6,6 +6,7 @@ import {
   PillarFaq,
   SectieKop,
   WelNiet,
+  PillarCta,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
@@ -21,7 +22,11 @@ import {
 } from "@/data/huiduitslag";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import {
+  DIBA_PROOF_STRIP_ITEMS,
+  DIBA_SITE_URL,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
@@ -296,6 +301,16 @@ export default function HuiduitslagPage() {
           </div>
         </div>
       </section>
+
+      {/* Okan, 5 september 2026: dit behandelen we wel, alleen niet alleen. Dan
+          hoort er ook een manier te staan om dat af te spreken. */}
+      <PillarCta
+        kop="Plan een huidconsult"
+        accent="als je weet wat het is"
+        tekst="Bij onbegrepen uitslag stelt een arts eerst de diagnose. Daarna kijken wij wat er aan je huidbarriere te doen valt. Weet je het nog niet, bel dan gerust; dan hoor je of het bij ons hoort of niet."
+        topic="huiduitslag"
+        whatsappHref={DIBA_WHATSAPP_URL}
+      />
     </main>
   );
 }

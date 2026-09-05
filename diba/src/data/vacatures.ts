@@ -114,7 +114,7 @@ export const VACATURES: readonly Vacature[] = [
     ],
     watWeBieden: [
       "Een vaste plek in een team van acht, met huidtherapeuten en orthomoleculair huidspecialisten naast elkaar",
-      "Apparatuur die er staat en werkt: Fotona TimeWalker, Nordlys IPL, Gentle Laser Pro-U, SkinPen, Dermapen 4, U225 en de EVE-M",
+      "Apparatuur die er staat en werkt: Fotona TimeWalker, Nordlys IPL, GentleMax Pro, SkinPen, Dermapen 4, U225 en de EVE-M",
       "Tijd voor een intake van een uur, want daar begint elk traject mee",
       "Ruimte voor bij- en nascholing, ook omdat het Kwaliteitsregister die punten vraagt",
       "Een kliniek in Rotterdam-Noord met parkeergelegenheid in de straat",

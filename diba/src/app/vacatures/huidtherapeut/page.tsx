@@ -164,7 +164,7 @@ export default function VacatureHuidtherapeutPage() {
 
             {v.intro.map((alinea) => (
               <p
-                key={alinea.slice(0, 40)}
+                key={publicCopy(alinea).slice(0, 40)}
                 className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]"
               >
                 {publicCopy(alinea)}
@@ -323,7 +323,7 @@ export default function VacatureHuidtherapeutPage() {
               <ul className="mt-5 space-y-3">
                 {v.watWeBieden.map((punt) => (
                   <li
-                    key={punt}
+                    key={publicCopy(punt)}
                     className="rounded-[var(--r-sm)] bg-[var(--g-700)] p-5 text-[16px] leading-7 text-[var(--on-dark-body)]"
                   >
                     {publicCopy(punt)}

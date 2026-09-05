@@ -19,7 +19,6 @@ const PILLAR_REVIEW_TOPICS: Record<string, Exclude<ReviewTopic, "alle">[]> = {
   psoriasis: ["algemeen"],
   keloiden: ["algemeen"],
   "huidkanker-naevi": ["algemeen"],
-  cellulitis: ["algemeen"],
   symptoomzoeker: ["algemeen"],
 };
 

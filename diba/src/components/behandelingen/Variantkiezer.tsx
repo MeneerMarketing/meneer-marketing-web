@@ -66,7 +66,7 @@ export default function Variantkiezer({ varianten, basisprijs }: Props) {
 
       {varianten.length > 1 ? (
         <div
-          className="mt-4 flex flex-wrap gap-2"
+          className="mt-4 grid gap-2 sm:flex sm:flex-wrap"
           role="group"
           aria-label="Kies een variant"
         >
@@ -78,14 +78,17 @@ export default function Variantkiezer({ varianten, basisprijs }: Props) {
                 type="button"
                 onClick={() => setGekozen(i)}
                 aria-pressed={aan}
-                className={`inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] px-4 text-[14px] leading-5 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-btn)] ${
+                /* w-full met justify-between op mobiel: de bedragen komen dan onder
+                   elkaar op dezelfde rand te staan. Vanaf sm weer een pil die zo breed
+                   is als zijn inhoud. */
+                className={`inline-flex min-h-11 w-full items-center justify-between gap-3 rounded-[var(--r-pill)] px-4 text-[14px] leading-5 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-btn)] sm:w-auto sm:justify-start sm:gap-2 ${
                   aan
                     ? "bg-[var(--on-dark-btn)] font-medium text-[var(--on-dark-btn-text)]"
                     : "border border-white/30 text-[var(--on-dark-body)] hover:border-white/60"
                 }`}
               >
-                {publicCopy(v.naam)}
-                <span className="tabular-nums opacity-80">
+                <span className="truncate">{publicCopy(v.naam)}</span>
+                <span className="shrink-0 tabular-nums opacity-80">
                   {prijsTekst(v.prijs)}
                 </span>
               </button>

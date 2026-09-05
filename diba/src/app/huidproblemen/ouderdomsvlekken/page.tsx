@@ -14,7 +14,7 @@ import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import {
   OUDERDOMSVLEKKEN_FAQ,
   OUDERDOMSVLEKKEN_WEL_NIET,
@@ -204,7 +204,7 @@ export default function Pagina() {
             intro="Vier soorten bruine vlekken die op elkaar lijken. Verandert er iets aan een plek, dan gaat die eerst langs je huisarts."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=ouderdomsvlekken&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."

@@ -6,7 +6,12 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import DibaLogo from "@/components/ui/DibaLogo";
 import { HOOFDNAV, type NavItem } from "@/data/hoofdnavigatie";
-import { DIBA_SALONIZED_BOOKING_URL } from "@/lib/site";
+import {
+  DIBA_OPENINGSTIJDEN,
+  DIBA_SALONIZED_BOOKING_URL,
+  DIBA_TELEFOON_HREF,
+  DIBA_WHATSAPP_URL,
+} from "@/lib/site";
 
 /**
  * De hoofdnavigatie van de site. Eén component, twee verschijningsvormen.
@@ -479,23 +484,94 @@ function Paneel({
  * Boven de cookiebalk. Die staat op z-50 en dekte anders precies de afspraakknop onderin
  * dit paneel af; een menu dat over het hele scherm ligt hoort bovenaan.
  */
+/**
+ * Wat er vandaag op de deur staat.
+ *
+ * Alleen in het mobiele paneel, en dat paneel bestaat pas nadat iemand het opent. Er is dus
+ * geen server-weergave die hiermee uit de pas kan lopen.
+ */
+function vandaagOpen() {
+  const namen = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const nu = new Date();
+  const dag = DIBA_OPENINGSTIJDEN.find((d) => d.dag === namen[nu.getDay()]);
+  if (!dag || !dag.van || !dag.tot) return "Vandaag gesloten";
+  const minuten = nu.getHours() * 60 + nu.getMinutes();
+  const [vu, vm] = dag.van.split(":").map(Number);
+  const [tu, tm] = dag.tot.split(":").map(Number);
+  if (minuten < vu * 60 + vm) return `Vandaag open vanaf ${dag.van}`;
+  if (minuten > tu * 60 + tm) return "Vandaag gesloten";
+  return `Nu open tot ${dag.tot}`;
+}
+
+/** De praktische links onderin. Kort houden: dit is geen tweede hoofdmenu. */
+const SNEL = [
+  { label: "Vergoedingen", href: "/vergoedingen" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Contact", href: "/contact" },
+] as const;
+
+function TelefoonIcoon() {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      className="h-4 w-4 shrink-0"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M6.6 3.5 8 6.4 6.5 7.9c.9 1.8 2.3 3.2 4.1 4.1L12.1 10.5l2.9 1.4v2.6c0 .8-.7 1.4-1.5 1.3C7.6 15.3 3.2 10.9 2.7 5A1.4 1.4 0 0 1 4 3.5Z" />
+    </svg>
+  );
+}
+
+function WhatsAppIcoon() {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      className="h-4 w-4 shrink-0"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M3.2 16.8 4.3 13a7 7 0 1 1 2.7 2.7Z" />
+      <path d="M7.4 7.3c.4 1.6 1.7 2.9 3.3 3.3l.8-.9 1.6.8v1.1c0 .4-.4.8-.9.7A6 6 0 0 1 7 7.5c-.1-.5.3-.9.7-.9h1Z" />
+    </svg>
+  );
+}
+
 function MobielPaneel({ onSluit }: { onSluit: () => void }) {
+  const status = vandaagOpen();
+
   return (
     <div className="fixed inset-0 z-[60] flex flex-col bg-white lg:hidden">
-      <div className="flex shrink-0 items-center justify-between border-b border-[var(--g-100)] px-4 py-4">
+      <div className="flex shrink-0 items-center justify-between px-5 pt-5 pb-4">
         <DibaLogo />
         <button
           type="button"
           onClick={onSluit}
           aria-label="Menu sluiten"
-          className="flex h-11 w-11 items-center justify-center rounded-[var(--r-pill)] border border-[var(--g-100)] text-[var(--t-strong)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+          className="-mr-2 flex h-11 w-11 items-center justify-center rounded-[var(--r-pill)] text-[var(--t-strong)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
           <svg
             viewBox="0 0 20 20"
             className="h-5 w-5"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.8"
+            strokeWidth="1.6"
             strokeLinecap="round"
             aria-hidden="true"
           >
@@ -506,21 +582,36 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
 
       <nav
         aria-label="Hoofdnavigatie"
-        className="min-h-0 flex-1 overflow-y-auto px-4 py-2"
+        className="flex min-h-0 flex-1 flex-col overflow-y-auto px-5"
       >
-        <ul className="divide-y divide-[var(--g-100)]">
-          {HOOFDNAV.map((item) =>
-            item.kolommen ? (
+        {/* De drie hoofditems, groot en zonder kader. Eén haarlijn tussen de items en
+            verder niets: de hiërarchie komt van de maat en de ruimte, niet van omlijning.
+            Het cijfer erachter zegt hoeveel er onder zit, zodat je weet dat er iets
+            achter zit voordat je tikt. */}
+        <ul className="divide-y divide-[var(--g-100)] border-b border-[var(--g-100)]">
+          {HOOFDNAV.map((item) => {
+            const aantal = (item.kolommen ?? []).reduce(
+              (n, k) => n + k.items.length,
+              0,
+            );
+            return item.kolommen ? (
               <li key={item.label}>
                 <details className="group">
-                  <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-3 text-[17px] font-medium text-[var(--t-strong)] [&::-webkit-details-marker]:hidden">
-                    {item.label}
+                  <summary className="flex min-h-[68px] cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    <span className="flex items-baseline gap-3">
+                      <span className="text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]">
+                        {item.label}
+                      </span>
+                      <span className="text-[13px] leading-none text-[var(--t-muted)] tabular-nums">
+                        {aantal}
+                      </span>
+                    </span>
                     <svg
                       viewBox="0 0 12 12"
-                      className="h-3 w-3 shrink-0 text-[var(--t-muted)] transition-transform group-open:rotate-180"
+                      className="h-3.5 w-3.5 shrink-0 text-[var(--g-700)] transition-transform duration-300 [transition-timing-function:var(--ease-diba)] group-open:rotate-180"
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2"
+                      strokeWidth="1.8"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       aria-hidden="true"
@@ -528,39 +619,40 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                       <path d="M2.5 4.5 6 8l3.5-3.5" />
                     </svg>
                   </summary>
-                  <ul className="pb-3">
+
+                  <div className="pb-5">
                     {item.kolommen.map((kolom) => (
-                      <li key={kolom.kop} className="mt-2">
-                        <p className="diba-label px-3 py-2 text-[var(--t-muted)]">
+                      <div key={kolom.kop} className="mt-4 first:mt-1">
+                        <p className="diba-label text-[var(--t-muted)]">
                           {kolom.kop}
                         </p>
-                        <ul>
+                        <ul className="mt-1">
                           {kolom.items.map((l) => (
                             <li key={l.href}>
                               <Link
                                 prefetch={false}
                                 href={l.href}
                                 onClick={onSluit}
-                                className="flex min-h-12 items-center rounded-[var(--r-sm)] px-3 text-[15px] text-[var(--t-body)] active:bg-[var(--g-050)]"
+                                className="-mx-2 flex min-h-11 items-center rounded-[var(--r-sm)] px-2 text-[16px] leading-6 text-[var(--t-strong)] active:bg-[var(--g-050)]"
                               >
                                 {l.label}
                               </Link>
                             </li>
                           ))}
                         </ul>
-                      </li>
+                      </div>
                     ))}
-                    <li className="mt-2">
-                      <Link
-                        prefetch={false}
-                        href={item.href}
-                        onClick={onSluit}
-                        className="diba-label flex min-h-12 items-center px-3 text-[var(--g-700)]"
-                      >
-                        Alles onder {item.label.toLowerCase()}
-                      </Link>
-                    </li>
-                  </ul>
+
+                    <Link
+                      prefetch={false}
+                      href={item.href}
+                      onClick={onSluit}
+                      className="-mx-2 mt-4 flex min-h-11 items-center gap-1.5 rounded-[var(--r-sm)] px-2 text-[15px] leading-6 text-[var(--g-700)] underline underline-offset-4 active:bg-[var(--g-050)]"
+                    >
+                      Alles onder {item.label.toLowerCase()}
+                      <span aria-hidden="true">›</span>
+                    </Link>
+                  </div>
                 </details>
               </li>
             ) : (
@@ -569,21 +661,72 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                   prefetch={false}
                   href={item.href}
                   onClick={onSluit}
-                  className="flex min-h-14 items-center text-[17px] font-medium text-[var(--t-strong)]"
+                  className="flex min-h-[68px] items-center text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]"
                 >
                   {item.label}
                 </Link>
               </li>
-            ),
-          )}
+            );
+          })}
         </ul>
+
+        {/* Secundair, dus ook klein. Dit stond in vier omlijnde vakjes en dat gaf het
+            evenveel gewicht als het hoofdmenu erboven. */}
+        <ul className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
+          {SNEL.map((l) => (
+            <li key={l.href}>
+              <Link
+                prefetch={false}
+                href={l.href}
+                onClick={onSluit}
+                className="text-[15px] leading-6 text-[var(--t-body)] underline decoration-[var(--g-200)] underline-offset-4 active:text-[var(--g-700)]"
+              >
+                {l.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Bellen en appen, onderaan het paneel. Op een telefoon is dat de reden dat
+            iemand dit menu opent. */}
+        <div className="mt-auto pt-8 pb-6">
+          <p className="flex items-center gap-2 text-[13px] leading-5 text-[var(--t-muted)]">
+            <span
+              aria-hidden="true"
+              className={`h-1.5 w-1.5 rounded-full ${
+                status.startsWith("Nu open")
+                  ? "bg-[var(--g-700)]"
+                  : "bg-[var(--g-200)]"
+              }`}
+            />
+            {status}
+          </p>
+          <div className="mt-3 grid grid-cols-2 gap-3">
+            <a
+              href={DIBA_TELEFOON_HREF}
+              className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
+            >
+              <TelefoonIcoon />
+              Bellen
+            </a>
+            <a
+              href={DIBA_WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
+            >
+              <WhatsAppIcoon />
+              WhatsApp
+            </a>
+          </div>
+        </div>
       </nav>
 
-      <div className="shrink-0 border-t border-[var(--g-100)] p-4">
+      <div className="shrink-0 px-5 pb-5">
         <Link
           href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
           onClick={onSluit}
-          className="diba-label flex min-h-12 w-full items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] text-white"
+          className="diba-label flex min-h-13 w-full items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] py-4 text-white"
         >
           Afspraak maken
           <Pijl />

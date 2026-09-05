@@ -28,7 +28,7 @@ const euro = new Intl.NumberFormat("nl-NL", {
  * Nul betekent "nog niet bekend" en nooit "gratis".
  *
  * Hier stond letterlijk "[PRIJS-NODIG]", en dat verscheen dus op het scherm van iedereen
- * die de prijzenpagina opende. Vlaggen horen in de broncode, niet in beeld. De code die
+ * die de tarievenpagina opende. Vlaggen horen in de broncode, niet in beeld. De code die
  * daarop controleerde (`p.startsWith("[")`) is meeverdwenen: die kon na die fix niets
  * meer vinden, en dode takken die op een opgelost probleem wachten lezen als een
  * waarschuwing die er niet meer is.

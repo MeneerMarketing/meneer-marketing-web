@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import VideoKolom from "@/components/media/VideoKolom";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
 import HuidproblemenBijApparaat from "@/components/apparatuur/HuidproblemenBijApparaat";
 import { PillarFaq } from "@/components/pillar/PillarSecties";
 import Label from "@/components/ui/Label";
+import { videoVoor } from "@/data/videos";
 import { APPARATUUR, apparaatVoorSlug } from "@/data/apparatuur";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
@@ -80,6 +82,9 @@ export default async function ApparaatPage({ params }: PageProps) {
   const a = apparaatVoorSlug(slug);
   if (!a) notFound();
 
+  /* De eigen opname bij deze pagina, als het bestand er is. */
+  const video = videoVoor(a.slug);
+
   const behandelingen = a.behandelingen
     .map((s) => behandelingVoorSlug(s))
     .filter((b): b is NonNullable<typeof b> => Boolean(b));
@@ -117,6 +122,10 @@ export default async function ApparaatPage({ params }: PageProps) {
           { name: a.naam, url: `${DIBA_SITE_URL}/apparatuur/${a.slug}` },
         ])}
       />
+
+      {/* De eigen opname bij deze pagina, als die er is. Het onderdeel staat er
+          niet zolang het bestand ontbreekt; zie data/videos.ts. */}
+      {video ? <VideoKolom video={video} achtergrond="wit" /> : null}
 
       {/* ── Hero ── */}
       {/* ── De hero ──
@@ -272,7 +281,7 @@ export default async function ApparaatPage({ params }: PageProps) {
               <div className="mt-6 max-w-[68ch] space-y-4">
                 {a.techniek.map((alinea) => (
                   <p
-                    key={alinea.slice(0, 40)}
+                    key={publicCopy(alinea).slice(0, 40)}
                     className="text-[16px] leading-7 text-[var(--t-body)]"
                   >
                     {publicCopy(alinea)}
@@ -302,7 +311,7 @@ export default async function ApparaatPage({ params }: PageProps) {
               <ul className="mt-5 space-y-3">
                 {a.waarvoor.map((w) => (
                   <li
-                    key={w}
+                    key={publicCopy(w)}
                     className="rounded-[var(--r-sm)] bg-white p-5 text-[16px] leading-7 text-[var(--t-body)]"
                   >
                     {publicCopy(w)}
@@ -315,7 +324,7 @@ export default async function ApparaatPage({ params }: PageProps) {
               <ul className="mt-5 space-y-3">
                 {a.nietVoor.map((n) => (
                   <li
-                    key={n}
+                    key={publicCopy(n)}
                     className="rounded-[var(--r-sm)] bg-[var(--g-700)] p-5 text-[16px] leading-7 text-[var(--on-dark-body)]"
                   >
                     {publicCopy(n)}

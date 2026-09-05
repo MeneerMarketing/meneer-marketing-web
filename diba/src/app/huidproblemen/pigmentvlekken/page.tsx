@@ -17,6 +17,7 @@ import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_KENNISBANK_PIGMENT } from "@/data/figma-home-images";
 import { PIGMENT_FAQ, PIGMENT_SOORTEN, PIGMENT_WEL_NIET } from "@/data/pigment";
+import { zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -179,7 +180,7 @@ export default function PigmentPage() {
             intro="Zonschade en melasma lijken op elkaar, maar vragen een andere behandeling. Welk type je hebt, stellen we vast voordat we beginnen. Kies het patroon dat het dichtst bij jou komt."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=pigment&beeld={id}"
             ctaLabel="Laat dit patroon bekijken"
             hint="Weet je het niet zeker? Dan bepalen we het bij de meting."

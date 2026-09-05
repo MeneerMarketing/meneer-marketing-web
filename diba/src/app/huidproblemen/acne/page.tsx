@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import AcneOnderDeHuid from "@/components/acne/AcneOnderDeHuid";
 import PillarNav from "@/components/pillar/PillarNav";
@@ -444,6 +445,14 @@ export default function AcnePage() {
           </div>
         </div>
       </section>
+
+      {/* Wat anderen over acne schreven. Elf reviews in het archief noemen acne,
+          puistjes of onzuiverheden; deze drie zijn daar de recentste van. */}
+      <ReviewsBijOnderwerp
+        onderwerp="acne"
+        intro="Deze komen uit Salonized en zijn niet door ons uitgezocht op inhoud: het zijn de reviews waarin acne, puistjes of onzuiverheden voorkomen. Let op de tijd die erin genoemd wordt, want daar gaat het bij acne om."
+        achtergrond="zacht"
+      />
 
       {/* ── Donkergroen 2 van 2: de volgende stap ─────────────────────── */}
       {/* Welke behandelingen bij acne horen, en op welk apparaat ze draaien. */}

@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import VideoKolom from "@/components/media/VideoKolom";
 import ProfielOordeel from "@/components/huidprofiel/ProfielOordeel";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
-import Werkingsvenster from "@/components/apparatuur/Werkingsvenster";
+import Werkingsvenster, {
+  type WerkingsvensterApparaat,
+} from "@/components/apparatuur/Werkingsvenster";
 import Variantkiezer from "@/components/behandelingen/Variantkiezer";
 import Label from "@/components/ui/Label";
-import { apparatenVoorBehandeling } from "@/data/apparatuur";
+import { videoVoor } from "@/data/videos";
+import { apparatenVoorBehandeling, type Apparaat } from "@/data/apparatuur";
 import { PillarFaq } from "@/components/pillar/PillarSecties";
 import ProofBar from "@/components/ui/ProofBar";
 import {
@@ -79,10 +83,29 @@ const ANKERS = [
   { id: "vragen", label: "Vragen" },
 ];
 
+/**
+ * Alleen de velden die het werkingsvenster tekent.
+ *
+ * Het hele apparaatrecord meegeven aan een client component zet dat record in de
+ * broncode van de pagina, inclusief de redactievlaggen die erin staan.
+ */
+function vensterApparaat(a: Apparaat): WerkingsvensterApparaat {
+  return {
+    naam: a.naam,
+    fasen: a.fasen,
+    diepte: a.diepte,
+    doelwit: a.doelwit,
+    werkwijze: a.werkwijze,
+  };
+}
+
 export default async function BehandelingPage({ params }: PageProps) {
   const { slug } = await params;
   const b = behandelingVoorSlug(slug);
   if (!b) notFound();
+
+  /* De eigen opname bij deze pagina, als het bestand er is. */
+  const video = videoVoor(b.slug);
 
   /* De koppeling loopt twee kanten op: hier het apparaat, en op de apparatuurpagina de
      behandelingen die erop draaien. Beide uit dezelfde tabel. */
@@ -310,7 +333,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           {apparaten.length > 0 && b.lagen.length > 0 ? (
             <div className="mt-10">
               <Werkingsvenster
-                apparaat={apparaten[0]}
+                apparaat={vensterApparaat(apparaten[0])}
                 diepte={diepteVanLagen(b.lagen)}
               />
             </div>
@@ -485,7 +508,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                   <div className="mt-6 max-w-[52ch] space-y-4">
                     {b.inDeStoel.map((alinea) => (
                       <p
-                        key={alinea.slice(0, 40)}
+                        key={publicCopy(alinea).slice(0, 40)}
                         className="text-[16px] leading-7 text-[var(--on-dark-body)]"
                       >
                         {publicCopy(alinea)}
@@ -539,7 +562,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                 <ul className="mt-5 space-y-3">
                   {(b.wel ?? []).map((w) => (
                     <li
-                      key={w}
+                      key={publicCopy(w)}
                       className="rounded-[var(--r-sm)] bg-white p-5 text-[16px] leading-7 text-[var(--t-body)]"
                     >
                       {publicCopy(w)}
@@ -553,7 +576,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                 <ul className="mt-5 space-y-3">
                   {(b.niet ?? []).map((n) => (
                     <li
-                      key={n}
+                      key={publicCopy(n)}
                       className="rounded-[var(--r-sm)] bg-[var(--g-700)] p-5 text-[16px] leading-7 text-[var(--on-dark-body)]"
                     >
                       {publicCopy(n)}
@@ -581,6 +604,34 @@ export default async function BehandelingPage({ params }: PageProps) {
           </div>
         </section>
       ) : null}
+
+      {/* De eigen opname bij deze pagina, als die er is. Het onderdeel staat er
+          niet zolang het bestand ontbreekt; zie data/videos.ts. */}
+      {video ? <VideoKolom video={video} achtergrond="wit" /> : null}
+
+      {/* Voor wie halverwege denkt: is dit het wel? Zonder dit blok is de enige uitweg
+          terug naar het overzicht, waar dezelfde twijfel opnieuw begint. */}
+      <section className="px-5 pb-4 sm:px-9 lg:px-[7.5vw]">
+        <div className="mx-auto">
+          <Link
+            href="/behandeling-op-advies"
+            className="flex flex-col gap-4 rounded-[var(--r-lg)] bg-[var(--g-050)] p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-8"
+          >
+            <span>
+              <span className="diba-card-title block text-[var(--t-strong)]">
+                Weet je niet of deze behandeling bij je past?
+              </span>
+              <span className="mt-2 block max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
+                Boek een behandeling op advies. De behandelaar bekijkt je huid
+                en kiest, en je hoort vooraf wat het wordt en wat het kost.
+              </span>
+            </span>
+            <span className="diba-label inline-flex min-h-12 shrink-0 items-center gap-2 rounded-[var(--r-pill)] bg-white px-6 text-[var(--t-strong)]">
+              Naar advies
+            </span>
+          </Link>
+        </div>
+      </section>
 
       {/* ── Hoort hierbij ──
 

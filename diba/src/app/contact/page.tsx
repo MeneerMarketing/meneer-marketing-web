@@ -88,29 +88,33 @@ const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 )}`;
 
 /**
- * Wat er op afstand niet kan.
+ * Wat een bericht je oplevert.
  *
- * Dit is geen kleine lettertjes maar de kern: een kliniek die per bericht een behandeling
- * toezegt, zegt iets toe wat ze niet heeft gezien. Het staat hier zodat niemand een
- * afspraak maakt op een antwoord dat nooit gegeven had mogen worden.
+ * Hier stond "Vier dingen doen we niet op afstand", met vier keer een nee eronder. Okan,
+ * 5 september 2026: dat werkt tegen ons. Iemand die dit leest staat op het punt te
+ * schrijven en wil weten of dat zin heeft.
+ *
+ * De feiten zijn niet veranderd. We stellen geen diagnose per foto, we beloven geen
+ * resultaat, we leggen geen traject vast zonder meting en we zijn geen spoedpost. Elk punt
+ * zegt nu alleen eerst wat je wél krijgt, en dat is per punt meer dan er stond.
  * [MEDISCHE-CHECK-ROJDA]
  */
-const NIET_OP_AFSTAND = [
+const OP_AFSTAND = [
   {
-    kop: "Een diagnose stellen",
-    zin: "Niet via een foto, niet via een beschrijving. Wat er aan de hand is stellen we vast als we je huid gezien en gemeten hebben.",
+    kop: "Antwoord van iemand die het weet",
+    zin: "Beschrijf je klacht en je hoort welke behandelingen daarbij horen en wat de eerste stap is. Wat er precies aan de hand is stellen we vast als we je huid gezien hebben, want een diagnose per foto is een gok.",
   },
   {
-    kop: "Beloven dat iets werkt",
-    zin: "We kunnen zeggen wat een behandeling doet en tot hoe diep hij komt. Of dat bij jou het gewenste resultaat geeft is een andere vraag.",
+    kop: "Precies wat een behandeling doet",
+    zin: "Tot hoe diep hij komt, hoe lang je erna rood bent, hoe vaak je moet komen. Wat hij bij jouw huid doet hoor je na de meting; dat is de enige manier waarop dat antwoord iets waard is.",
   },
   {
-    kop: "Een traject vastleggen",
-    zin: "Hoeveel sessies je nodig hebt hangt af van de meting. Een aantal noemen voordat we gemeten hebben is een gok met jouw geld.",
+    kop: "De prijs voordat je iets afspreekt",
+    zin: "Elk tarief staat openbaar op de site, per sessie en per zone. Hoeveel sessies het er bij jou worden zeggen we na de meting, zodat je niet betaalt voor een schatting.",
   },
   {
-    kop: "Spoed opvangen",
-    zin: "Gaat er iets mis met je huid en is het dringend, bel dan je huisarts of de huisartsenpost. Wij zijn een kliniek en geen spoedpost.",
+    kop: "Bij spoed meteen de goede kant op",
+    zin: "Gaat er iets mis met je huid en heeft het haast, dan hoor je dat direct: bel je huisarts of de huisartsenpost. Dat is sneller dan wachten op een plek bij ons.",
   },
 ];
 
@@ -261,22 +265,23 @@ export default function ContactPage() {
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
               <div>
-                <Label opDonker>De grens van een bericht</Label>
+                <Label opDonker>Voordat je schrijft</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Vier dingen doen we
-                  <span className="diba-accent-on-dark"> niet op afstand.</span>
+                  Wat een bericht
+                  <span className="diba-accent-on-dark"> je oplevert.</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Niet omdat we lastig doen, maar omdat het antwoord dan niets
-                  waard is. Een kliniek die per bericht een behandeling toezegt,
-                  zegt iets toe wat ze niet heeft gezien.
+                  Je kunt ons alles vragen en je krijgt antwoord van iemand die
+                  in de kliniek staat. Wat we niet doen is gokken: het laatste
+                  stukje van elk antwoord komt als we je huid gezien hebben, en
+                  daardoor is het ook iets waard.
                 </p>
               </div>
 
               {/* Stonden op een haarlijn. Een vlak scheidt net zo goed, en op --g-800
                   haalt --on-dark-body 7,57 tegen 4,08 op doorschijnend wit. */}
               <ul className="space-y-3">
-                {NIET_OP_AFSTAND.map((n) => (
+                {OP_AFSTAND.map((n) => (
                   <li
                     key={n.kop}
                     className="rounded-[var(--r-sm)] bg-[var(--g-800)] p-5"
@@ -300,7 +305,7 @@ export default function ContactPage() {
       <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
-            <Label>Voordat je belt</Label>
+            <Label>Voordat je contact opneemt</Label>
             <h2 className="diba-display-m mt-4">
               Afzeggen, verzetten{" "}
               <span className="diba-accent">of te laat komen.</span>
@@ -455,7 +460,7 @@ export default function ContactPage() {
                 ],
                 [
                   "Parkeren",
-                  "Parkeren In de straten rond de kliniek geldt betaald parkeren. Houd rekening met een paar minuten looptijd.",
+                  "Voor en achter de kliniek is ruim plek. Je hoeft dus niet eerst een rondje te rijden en je staat er vlak voor de deur.",
                 ],
                 [
                   "Met het openbaar vervoer",
@@ -463,7 +468,7 @@ export default function ContactPage() {
                 ],
                 [
                   "Op de fiets",
-                  "Stallen kan voor de deur. Vanuit het centrum ben je er in ongeveer twintig minuten.",
+                  "Vanuit het centrum ben je er in ongeveer twintig minuten. Stallen kan niet pal voor de deur; zet hem in de straat.",
                 ],
               ].map(([kop, zin]) => (
                 <div

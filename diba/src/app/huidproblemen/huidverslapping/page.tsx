@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -22,7 +21,7 @@ import {
   VERSLAPPING_WEL_NIET,
   ZWAARTEKRACHT_STAPPEN,
 } from "@/data/huidverslapping";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -194,7 +193,7 @@ export default function Pagina() {
             intro="Verslapping, volumeverlies en losgelaten huid worden door elkaar gehaald en vragen om drie verschillende dingen. Alleen het eerste is ons vak."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=huidverslapping&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."
@@ -247,14 +246,6 @@ export default function Pagina() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/huidverslapping" />
-
-      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
-          als er te weinig reviews over zijn; zie het component. */}
-      <ReviewsBijOnderwerp
-        onderwerp="huidveroudering"
-        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over behandelingen die op stevigheid werken."
-        achtergrond="zacht"
-      />
 
       <PillarFaq items={VERSLAPPING_FAQ} onderwerp="huidverslapping" />
 

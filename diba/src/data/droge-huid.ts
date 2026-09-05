@@ -183,6 +183,6 @@ export const DROGE_HUID_FAQ = [
   {
     vraag: "Wat kost dit?",
     antwoord:
-      "De meting kost vijftig euro en dat is meteen het hele consult. Wat er daarna volgt hangt af van wat eruit komt en staat per behandeling op de prijzenpagina. Blijkt uit de meting dat je in balans zit, dan is ons advies om niets te doen en houdt het daar op. [PRIJS-NODIG]",
+      "De meting kost vijftig euro en dat is meteen het hele consult. Wat er daarna volgt hangt af van wat eruit komt en staat per behandeling op de tarievenpagina. Blijkt uit de meting dat je in balans zit, dan is ons advies om niets te doen en houdt het daar op. [PRIJS-NODIG]",
   },
 ] as const;

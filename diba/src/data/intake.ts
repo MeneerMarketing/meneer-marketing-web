@@ -163,7 +163,7 @@ export const VOORBEREIDING = {
  *
  * WAAROM HIER EN NIET ALLEEN OP /REVIEWS.
  *
- * Op /reviews staan alle 56 quotes met de waarschuwing dat een 5,0 wantrouwen verdient. Dat
+ * Op /reviews staan alle 122 quotes met de waarschuwing dat een 5,0 wantrouwen verdient. Dat
  * blijft daar staan. Maar op de pagina waar iemand besluit of hij die ene afspraak boekt,
  * helpt iets anders: wat zeiden mensen die precies dít deden.
  *

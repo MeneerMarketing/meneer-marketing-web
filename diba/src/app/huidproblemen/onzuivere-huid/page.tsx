@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -20,7 +21,7 @@ import {
   ONZUIVER_WEL_NIET,
   PORIE_BEELDEN,
 } from "@/data/onzuivere-huid";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -191,7 +192,7 @@ export default function Pagina() {
             intro="Verstopte poriën, mee-eters en onzuiverheden lopen in de volksmond door elkaar. Het verschil bepaalt welke behandeling werkt."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=onzuivere-huid&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."
@@ -228,6 +229,14 @@ export default function Pagina() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/onzuivere-huid" />
+
+      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
+          als er te weinig reviews over zijn; zie het component. */}
+      <ReviewsBijOnderwerp
+        onderwerp="acne"
+        intro="Deze komen uit Salonized en zijn niet door ons uitgezocht op inhoud: het zijn de reviews waarin onzuiverheden, puistjes of acne voorkomen."
+        achtergrond="zacht"
+      />
 
       <PillarFaq items={ONZUIVER_FAQ} onderwerp="een onzuivere huid" />
 

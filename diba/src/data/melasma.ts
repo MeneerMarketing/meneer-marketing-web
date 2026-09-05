@@ -180,6 +180,6 @@ export const MELASMA_FAQ = [
   {
     vraag: "Wat kost dit?",
     antwoord:
-      "De meting kost vijftig euro; de trajecten daarna staan met hun tarief op de prijzenpagina. Blijkt uit de meting dat het pigment diep zit, dan raden we behandelen af en houdt het daar op. [PRIJS-NODIG]",
+      "De meting kost vijftig euro; de trajecten daarna staan met hun tarief op de tarievenpagina. Blijkt uit de meting dat het pigment diep zit, dan raden we behandelen af en houdt het daar op. [PRIJS-NODIG]",
   },
 ] as const;

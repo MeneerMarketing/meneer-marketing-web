@@ -213,7 +213,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
               <ul className="space-y-4">
                 {d.melden.map((m) => (
                   <li
-                    key={m}
+                    key={publicCopy(m)}
                     className="rounded-[var(--r-md)] bg-white/10 p-5 text-[16px] leading-7 text-[var(--on-dark-body)]"
                   >
                     {publicCopy(m)}

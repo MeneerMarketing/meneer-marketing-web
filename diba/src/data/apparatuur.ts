@@ -350,7 +350,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     ],
     verschilMet: [
       {
-        apparaat: "gentle-laser-pro-u",
+        apparaat: "gentlemax-pro",
         verschil:
           "Mikt op melanine en dus op de haarwortel. De Fotona mikt op water en dus op weefsel: een ander doelwit met een ander gevolg.",
       },
@@ -367,7 +367,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     ],
   },
   {
-    slug: "gentle-laser-pro-u",
+    slug: "gentlemax-pro",
     vragen: [
       {
         vraag: "Waarom deze laser en niet de Nordlys?",
@@ -399,7 +399,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       src: "/images/shoot/apparaat-gentle-laser.jpg",
       alt: "Laserontharing met beschermbrillen bij Diba Clinics",
     },
-    naam: "Gentle Laser Pro-U",
+    naam: "GentleMax Pro",
     merk: "Candela",
     categorie: "laser",
     kort: "De laser die we voor ontharing gebruiken. Hij mikt op het pigment in de haarwortel, en de huid eromheen wordt gekoeld.",
@@ -525,7 +525,7 @@ export const APPARATUUR: readonly Apparaat[] = [
           "Eén golflengte per stand, tot diep in de lederhuid. De Nordlys werkt breder en oppervlakkiger, en dat past bij vaatjes en pigment die vlak onder de huid zitten.",
       },
       {
-        apparaat: "gentle-laser-pro-u",
+        apparaat: "gentlemax-pro",
         verschil:
           "Eén golflengte, gericht op de haarwortel. Daar is de Nordlys minder geschikt voor, en op roodheid juist wel.",
       },

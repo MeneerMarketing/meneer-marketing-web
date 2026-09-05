@@ -93,7 +93,7 @@ export default function ContentPageTemplate({
                 className={`flex flex-col gap-4 ${sectie.kop ? "mt-5" : ""}`}
               >
                 {sectie.alineas.map((alinea) => (
-                  <p key={alinea} className={figmaBody}>
+                  <p key={publicCopy(alinea)} className={figmaBody}>
                     {publicCopy(alinea)}
                   </p>
                 ))}

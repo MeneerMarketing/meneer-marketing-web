@@ -28,7 +28,7 @@ export const LASER_LANDING_FAQ = [
     id: "laser-faq-2",
     question: "Is laser veilig voor een donkere huid?",
     answer:
-      "De Gentle Laser Pro-U werkt op Fitzpatrick I tot en met VI. Je huidtype bepaalt niet óf het kan, maar met welke energie en koeling er gewerkt wordt. Dat wordt per type afgestemd.",
+      "De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je huidtype bepaalt niet óf het kan, maar met welke energie en koeling er gewerkt wordt. Dat wordt per type afgestemd.",
   },
   {
     id: "laser-faq-3",
@@ -46,7 +46,7 @@ export const LASER_LANDING_FAQ = [
 
 export const LASER_USP_ROWS = [
   {
-    title: "Gentle Laser Pro-U",
+    title: "GentleMax Pro",
     body: "Een laser die mikt op het pigment in de haarwortel, met koeling zodat de bovenlaag niet meewarmt.",
   },
   {

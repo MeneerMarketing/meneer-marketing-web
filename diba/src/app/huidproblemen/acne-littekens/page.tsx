@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -20,7 +21,7 @@ import {
   NA_ACNE_BEELDEN,
   VOLGORDE,
 } from "@/data/acne-littekens";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -176,7 +177,7 @@ export default function AcneLittekensPage() {
             intro="Deze vier dekken vrijwel alles wat er na acne achterblijft. Welke het bij jou is, stelt de huidtherapeut tijdens de intake vast."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=acne-littekens&beeld={id}"
             ctaLabel="Laat dit beeld bekijken"
             hint="Heb je er meerdere door elkaar? Dat is eerder regel dan uitzondering."
@@ -256,6 +257,14 @@ export default function AcneLittekensPage() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/acne-littekens" />
+
+      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
+          als er te weinig reviews over zijn; zie het component. */}
+      <ReviewsBijOnderwerp
+        onderwerp="littekens"
+        intro="Deze komen uit Salonized en zijn niet door ons uitgezocht op inhoud: het zijn de reviews waarin littekens genoemd worden, meestal na een acnetraject."
+        achtergrond="zacht"
+      />
 
       <PillarFaq items={ACNE_LITTEKENS_FAQ} onderwerp="acnelittekens" />
 

@@ -68,7 +68,7 @@ export const DOELGROEPEN: readonly Doelgroep[] = [
       },
       {
         kop: "Dezelfde prijzen",
-        zin: "Wat een sessie kost staat op de prijzenpagina en verandert niet met je leeftijd.",
+        zin: "Wat een sessie kost staat op de tarievenpagina en verandert niet met je leeftijd.",
       },
     ],
     melden: [
@@ -238,12 +238,6 @@ export const PILLAR_GROUPS: readonly PillarGroup[] = [
   },
   {
     label: "Overig",
-    slugs: [
-      "droge-huid",
-      "psoriasis",
-      "huidkanker-naevi",
-      "cellulitis",
-      "symptoomzoeker",
-    ],
+    slugs: ["droge-huid", "psoriasis", "huidkanker-naevi", "symptoomzoeker"],
   },
 ] as const;

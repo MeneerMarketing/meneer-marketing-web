@@ -53,6 +53,16 @@ const GROEPEN: readonly {
       "Elk met een eigen pagina die begint bij de vraag die bij dat probleem het zwaarst weegt. Eerst meten, dan pas een plan, en soms is het advies om niets te doen.",
   },
   {
+    id: "met-arts",
+    anker: "met-arts",
+    kort: "Samen met een arts",
+    label: "Hier werken wij samen met een arts",
+    kop: "Wat wij samen",
+    accent: "met een arts doen.",
+    intro:
+      "Deze klachten behandelen we wel, alleen niet alleen. De arts doet wat medisch nodig is en wij doen wat de huid daarnaast vraagt. Wie er begint hangt af van wat er speelt.",
+  },
+  {
     id: "doorverwijzen",
     anker: "arts",
     kort: "Bij een arts",

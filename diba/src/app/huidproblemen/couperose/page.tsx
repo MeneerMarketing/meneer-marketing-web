@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -21,7 +20,7 @@ import {
   COUPEROSE_WEL_NIET,
   DRUKPROEF_STAPPEN,
 } from "@/data/couperose";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -240,7 +239,7 @@ export default function CouperosePage() {
             intro="Wat de huidtherapeut ziet bepaalt bij welk beeld je uitkomt. Bij één daarvan begint het bij licht, bij een ander juist niet, en dat verschil is het hele punt van deze pagina."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=couperose&beeld={id}"
             ctaLabel="Laat dit beeld bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."
@@ -324,14 +323,6 @@ export default function CouperosePage() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/couperose" />
-
-      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
-          als er te weinig reviews over zijn; zie het component. */}
-      <ReviewsBijOnderwerp
-        onderwerp="rosacea"
-        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over roodheid en zichtbare vaatjes."
-        achtergrond="zacht"
-      />
 
       <PillarFaq items={COUPEROSE_FAQ} onderwerp="couperose" />
 

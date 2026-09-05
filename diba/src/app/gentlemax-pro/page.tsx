@@ -192,11 +192,29 @@ export default function GentleMaxProPage() {
               ))}
             </ul>
 
-            <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
-              Twijfel je of jouw haar genoeg pigment heeft, dan is dat bij de
-              intake in één blik te zien. Dat kost je een afspraak en geen
-              traject.
-            </p>
+            {/* Okan, 5 september 2026: hier hoort de doorverwijzing naar elektrische
+                epilatie. Dit is precies het moment waarop iemand leest dat de laser bij
+                hem niets doet, en dan is "dan kan het niet" het verkeerde einde van het
+                verhaal: voor grijs en licht haar bestaat er wel een methode. */}
+            <div className="mt-10 max-w-[62ch]">
+              <p className="text-[15px] leading-7 text-[var(--on-dark-body)]">
+                Twijfel je of jouw haar genoeg pigment heeft, dan is dat bij de
+                intake in één blik te zien. Dat kost je een afspraak en geen
+                traject.
+              </p>
+              <p className="mt-4 text-[15px] leading-7 text-[var(--on-dark-body)]">
+                Blijkt het te licht, dan houdt het niet op. Bij elektrische
+                epilatie gaat er een naaldje langs de haar naar de wortel en
+                doet de kleur er niet toe. Dat werkt ook op de losse haren die
+                na een laserkuur blijven staan.
+              </p>
+              <Link
+                href="/behandelingen/elektrische-epilatie"
+                className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Over elektrische epilatie
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -221,7 +239,7 @@ export default function GentleMaxProPage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
-                href="/prijzen"
+                href="/tarieven"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
               >
                 Bekijk de tarieven per zone

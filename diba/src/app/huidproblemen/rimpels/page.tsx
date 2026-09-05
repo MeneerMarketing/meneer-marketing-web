@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -15,7 +14,7 @@ import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import {
   LIJNSOORTEN,
   RIMPELS_FAQ,
@@ -206,7 +205,7 @@ export default function Pagina() {
             intro="Vier soorten lijnen die er hetzelfde uitzien. Of een lijn in de huid of in de spier zit, bepaalt welke behandeling werkt."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=rimpels&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."
@@ -236,14 +235,6 @@ export default function Pagina() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/rimpels" />
-
-      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
-          als er te weinig reviews over zijn; zie het component. */}
-      <ReviewsBijOnderwerp
-        onderwerp="huidveroudering"
-        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Bij lijnen gaat het om maanden, en dat hoor je terug in wat mensen schrijven."
-        achtergrond="zacht"
-      />
 
       <PillarFaq items={RIMPELS_FAQ} onderwerp="rimpels" />
 

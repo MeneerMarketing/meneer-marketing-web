@@ -20,7 +20,7 @@ import {
   STEELWRAT_WEL_NIET,
   UITSTEEKSEL_BEELDEN,
 } from "@/data/steelwratjes";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -192,7 +192,7 @@ export default function Pagina() {
             intro="Ze zitten op dezelfde plekken en voelen bijna hetzelfde. Het verschil bepaalt of het hier in een kwartier klaar is."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=steelwratjes&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."

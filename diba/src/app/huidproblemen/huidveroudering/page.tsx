@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -22,6 +21,7 @@ import {
   VEROUDERING_SOORTEN,
   VEROUDERING_WEL_NIET,
 } from "@/data/veroudering";
+import { zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -221,7 +221,7 @@ export default function HuidverouderingPage() {
             intro="Drie ervan behandelen we. Bij de vierde zeggen we nee, en dat staat er met dezelfde nadruk bij. Kies wat het dichtst bij jou komt."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=huidveroudering&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je? Dan kijken we er samen naar."
@@ -265,14 +265,6 @@ export default function HuidverouderingPage() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/huidveroudering" />
-
-      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
-          als er te weinig reviews over zijn; zie het component. */}
-      <ReviewsBijOnderwerp
-        onderwerp="huidveroudering"
-        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over trajecten die maanden lopen, dus let op wat er over het verloop wordt gezegd."
-        achtergrond="zacht"
-      />
 
       <PillarFaq items={VEROUDERING_FAQ} onderwerp="huidveroudering" />
 

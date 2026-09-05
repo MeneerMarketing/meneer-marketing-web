@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SectieKop } from "@/components/pillar/PillarSecties";
 import ReviewCard from "@/components/ui/ReviewCard";
-import { reviewsForTopic, type ReviewTopic } from "@/data/reviews";
+import { reviewsForTopic, type Review, type ReviewTopic } from "@/data/reviews";
 
 /**
  * Wat anderen over dít onderwerp schreven.
@@ -15,9 +15,10 @@ import { reviewsForTopic, type ReviewTopic } from "@/data/reviews";
  *
  * WAT DE DEKKING BEPERKT.
  *
- * De site heeft 57 reviews in de data, niet de 3.883 die Salonized meldt. Van die 57 gaan er
- * 46 over de kliniek in het algemeen, 16 over huidveroudering, 14 over laser, 4 over
- * roodheid en 2 over acne. Voor pigment staat er niets.
+ * Alle 390 pagina's van het Salonized-archief zijn nagelopen: 2.467 van de 3.893 reviews
+ * hebben tekst. Daarin gaat het bijna altijd over het bezoek en bijna nooit over de klacht.
+ * Geteld op een woord in de review zelf: gezichtsbehandeling 29, laser 18, huidconsult 12,
+ * acne 11, littekens 7, roodheid 1, pigment 0, rimpels 0.
  *
  * Daarom rendert dit onderdeel niets onder een ondergrens. Twee reviews onder een kop
  * "Wat anderen erover zeggen" leest als een kliniek die er maar twee heeft, en dat is
@@ -37,8 +38,9 @@ export default function ReviewsBijOnderwerp({
   minimum?: number;
   achtergrond?: "wit" | "zacht";
 }) {
-  const reviews = reviewsForTopic(onderwerp).slice(0, 3);
-  if (reviews.length < minimum) return null;
+  const overOnderwerp = reviewsForTopic(onderwerp);
+  if (overOnderwerp.length < minimum) return null;
+  const reviews = drieVanGelijkeLengte(overOnderwerp);
 
   return (
     <section
@@ -78,4 +80,29 @@ export default function ReviewsBijOnderwerp({
       </div>
     </section>
   );
+}
+
+/**
+ * Drie reviews die ongeveer even lang zijn.
+ *
+ * De eerste drie uit de lijst pakken gaf een rij van 240, 210 en 90 tekens, en die derde
+ * kaart bungelt dan onder de andere twee. Dit zoekt het drietal met het kleinste verschil
+ * in lengte en zet ze daarna terug in de volgorde van de data.
+ *
+ * Kiezen op lengte is geen kiezen op inhoud: de intro belooft dat we niet de mooiste
+ * eruit halen, en dat blijft zo. Wie langer is dan een ander zegt niets over wat er staat.
+ */
+function drieVanGelijkeLengte(reviews: readonly Review[]): readonly Review[] {
+  if (reviews.length <= 3) return reviews;
+  const opLengte = [...reviews].sort((a, b) => a.quote.length - b.quote.length);
+  let beste = opLengte.slice(0, 3);
+  let kleinste = Infinity;
+  for (let i = 0; i + 3 <= opLengte.length; i++) {
+    const spreiding = opLengte[i + 2].quote.length - opLengte[i].quote.length;
+    if (spreiding < kleinste) {
+      kleinste = spreiding;
+      beste = opLengte.slice(i, i + 3);
+    }
+  }
+  return reviews.filter((r) => beste.includes(r));
 }

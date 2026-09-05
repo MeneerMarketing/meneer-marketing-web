@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -17,6 +16,7 @@ import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
 import { ROSACEA_FAQ, ROSACEA_SOORTEN, ROSACEA_WEL_NIET } from "@/data/rosacea";
+import { zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -208,7 +208,7 @@ export default function RosaceaPage() {
             intro="Rosacea kent stadia die om een andere aanpak vragen. Bij twee ervan is ons antwoord dat je bij de dermatoloog hoort. Dat staat er dan ook, want dat is sneller dan eerst een traject bij ons."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=rosacea&beeld={id}"
             ctaLabel="Laat dit beeld bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."
@@ -276,14 +276,6 @@ export default function RosaceaPage() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/rosacea" />
-
-      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
-          als er te weinig reviews over zijn; zie het component. */}
-      <ReviewsBijOnderwerp
-        onderwerp="rosacea"
-        intro="Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over roodheid, en daar telt vooral wat er na een paar sessies overblijft."
-        achtergrond="zacht"
-      />
 
       <PillarFaq items={ROSACEA_FAQ} onderwerp="rosacea" />
 

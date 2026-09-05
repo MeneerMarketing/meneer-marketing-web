@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import FigmaKennisbankSection from "@/components/figma/FigmaKennisbankSection";
 import HeroVariant from "@/components/hero-variant/HeroVariant";
+import HomeHero from "@/components/home/HomeHero";
+import Reviewslider from "@/components/home/Reviewslider";
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
 import FigmaVoorJouSection from "@/components/figma/FigmaVoorJouSection";
@@ -30,8 +32,6 @@ import { publicCopy } from "@/lib/copy-flags";
 import {
   FIGMA_EERLIJK_PORTRAIT,
   FIGMA_EERLIJK_PORTRAIT_ALT,
-  FIGMA_HERO_PORTRAIT,
-  FIGMA_HERO_PORTRAIT_ALT,
 } from "@/lib/figma-home-layout";
 import { DIBA_HOME_PROOF_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
 
@@ -117,85 +117,12 @@ export default function FigmaHomeApp({
           <Topbalk />
           <HoofdNav />
 
-          <section
-            id="top"
-            className="relative mx-auto px-5 sm:px-9 lg:px-[7.5vw]"
-          >
-            <div className="grid min-h-[730px] lg:grid-cols-[1.18fr_.82fr]">
-              {/* De linkerkolom is de binnenkomer. Eén blok, verticaal gecentreerd tegenover
-                  het beeld — geen `justify-between` meer. Dat duwde de slogan tegen de
-                  bovenrand en de knoppen tegen de onderrand, met gaten ertussen die per
-                  schermhoogte verschilden; daardoor stond die eerste regel los te zweven.
-
-                  Ook nog maar één introregel. Er stonden er twee boven elkaar ("Trust the
-                  green touch." én "Huidzorg die klopt"), die om dezelfde plek vochten. De
-                  groene punt is meeverhuisd naar de overgebleven regel: dat is de Green
-                  Touch als merkteken, niet als losse zin. De slogan zelf staat al in de
-                  topbalk en in de footer. */}
-              <div className="flex flex-col justify-center py-16 lg:py-24">
-                {/* max-w in ch: de kop breekt op de bedoelde plek en raakt de foto nooit. */}
-                <h1 className="diba-display-xl mt-6 max-w-[13ch]">
-                  Huidkliniek
-                  <br />
-                  <span className="diba-accent">in Rotterdam</span>
-                </h1>
-
-                <p className="mt-7 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  Sinds 2017 helpen onze huidtherapeuten en specialisten je met
-                  acne, pigment, littekens en ongewenst haar. Tijdens de intake
-                  hoor je wat er bij jou mogelijk is.
-                </p>
-
-                <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
-                  <Button href="/intake">Afspraak maken</Button>
-                  <Button href="/behandelingen" variant="ghost">
-                    Bekijk de behandelingen
-                  </Button>
-                </div>
-              </div>
-
-              <div className="relative min-h-[440px] overflow-hidden rounded-bl-[9rem] bg-[var(--g-200)] lg:rounded-bl-[14rem]">
-                <Image
-                  src={FIGMA_HERO_PORTRAIT}
-                  alt={FIGMA_HERO_PORTRAIT_ALT}
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover object-center"
-                />
-                {/* Geen groene waas meer over de foto.
-
-                    Hier lag een verloop van mintgroen naar donkergroen over het hele beeld.
-                    Het trok de huid van de behandelaar en van de client naar olijf, en dat
-                    is bij een huidkliniek nogal wat: de kleur van iemands huid is hier het
-                    onderwerp. Beide chips dragen bovendien hun eigen vlak, dus er was ook
-                    niets dat die laag nodig had.
-
-                    Wat er nu staat is een vignet en geen kleur: neutraal donker, alleen
-                    onderin, net genoeg om de ronde hoek diepte te geven. Boven de helft van
-                    het beeld gebeurt er niets. */}
-                <div
-                  className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/30 via-transparent to-transparent"
-                  aria-hidden="true"
-                />
-                {/* Stond op "Huidzorg, zonder hype". Sinds de kop "Geen hypes. Wel
-                    huidzorg." is geworden, stonden dezelfde twee woorden twee keer naast
-                    elkaar in beeld. Dit label zegt nu waar de foto over gaat in plaats van
-                    de kop na te praten. */}
-                <span className="diba-label absolute left-7 top-7 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-                  Rotterdam
-                </span>
-                <span className="diba-label absolute bottom-7 right-7 grid h-24 w-24 place-items-center rounded-[var(--r-pill)] bg-[var(--g-700)] text-center leading-4 text-white">
-                  Eerlijk
-                  <br />
-                  advies
-                </span>
-              </div>
-            </div>
-          </section>
+          <HomeHero />
         </>
       )}
-      <ProofBar items={DIBA_HOME_PROOF_ITEMS} />
+      {/* De cijfers staan nu in HomeHero zelf. Op /home-variant niet, want die
+          route gebruikt een andere hero; daar blijft de losse balk staan. */}
+      {heroVariant ? <ProofBar items={DIBA_HOME_PROOF_ITEMS} /> : null}
 
       <FigmaVoorJouSection />
 
@@ -581,10 +508,10 @@ export default function FigmaHomeApp({
                 en wat het kost. Alle tarieven staan op deze site.
               </p>
               <Link
-                href="/prijzen"
+                href="/tarieven"
                 className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
               >
-                Bekijk prijzen
+                Bekijk tarieven
                 <ArrowUpRight size={13} />
               </Link>
             </div>
@@ -593,6 +520,11 @@ export default function FigmaHomeApp({
       </section>
 
       <FigmaKennisbankSection />
+
+      {/* Het cijfer stond alleen in de topbalk, in zes punts naast de taalkiezer.
+          Hier staat het op formaat, met de reviews die langsschuiven en een ingang
+          naar de volledige lijst. */}
+      <Reviewslider />
 
       <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid gap-10 lg:grid-cols-[.7fr_1.3fr]">

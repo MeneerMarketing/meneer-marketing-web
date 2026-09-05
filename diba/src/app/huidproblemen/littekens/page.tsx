@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import Littekenklok from "@/components/littekens/Littekenklok";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import PillarNav from "@/components/pillar/PillarNav";
@@ -20,6 +21,7 @@ import {
   LITTEKEN_SOORTEN,
   LITTEKEN_WEL_NIET,
 } from "@/data/littekens";
+import { zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -208,7 +210,7 @@ export default function LittekensPage() {
             intro="Kuiltjes reageren het beste. Verheven littekens en keloïd horen bij de arts. En bij striae is de kleur belangrijker dan de plek. Kies wat het dichtst bij jou komt."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=littekens&beeld={id}"
             ctaLabel="Laat dit beeld bekijken"
             hint="Twijfel je? Dan kijken we er samen naar."
@@ -283,6 +285,14 @@ export default function LittekensPage() {
       {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
           draaien. Leeg als er niets gekoppeld is; zie het component. */}
       <BehandelingenBijProbleem pad="/huidproblemen/littekens" />
+
+      {/* Wat anderen over dit onderwerp schreven. Het onderdeel rendert niets
+          als er te weinig reviews over zijn; zie het component. */}
+      <ReviewsBijOnderwerp
+        onderwerp="littekens"
+        intro="Deze komen uit Salonized en zijn niet door ons uitgezocht op inhoud: het zijn de reviews waarin littekens genoemd worden. Ze gaan over trajecten van maanden, en dat hoor je erin terug."
+        achtergrond="zacht"
+      />
 
       <PillarFaq items={LITTEKEN_FAQ} onderwerp="littekens" />
 

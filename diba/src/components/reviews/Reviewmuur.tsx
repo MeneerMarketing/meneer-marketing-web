@@ -5,24 +5,30 @@ import {
   SALONIZED_REVIEWS,
   type SalonizedReviewTopic,
 } from "@/data/salonized-reviews";
+import Sterren from "@/components/ui/Sterren";
+import { REVIEW_TOPICS } from "@/data/reviews";
 
 /**
  * De reviewmuur.
  *
  * WAAROM DIT EEN FILTER HEEFT EN GEEN SORTERING.
  *
- * Alle 56 reviews staan op vijf sterren. Sorteren op score is dus zinloos, en "beste eerst"
- * zou hier betekenen: wij kiezen welke je ziet. Dat is precies wat we op /resultaten
- * afkeuren bij foto's, dus het mag hier ook niet.
+ * Alle 122 reviews staan op vijf sterren. Sorteren op score is dus zinloos, en "beste eerst"
+ * zou hier betekenen: wij kiezen welke je ziet. Dat is precies wat we bij voor-en-na-foto's
+ * afkeuren, dus het mag hier ook niet.
  *
  * De vraag die wél iets oplevert is een andere: heeft iemand met mijn probleem hier iets
  * over geschreven. Daar is het filter voor.
  *
  * HET AANTAL STAAT OP DE PIL, EN DAT IS HET EERLIJKE DEEL.
  *
- * Bij acne staan er twee. Twee. Dat is te weinig om iets uit af te leiden en dat hoor je te
- * zien vóór je klikt, niet erna. Een filter dat zijn lege hoeken verstopt is een filter dat
- * je stuurt.
+ * Bij roodheid staat er één. Eén. Dat is te weinig om iets uit af te leiden en dat hoor je
+ * te zien vóór je klikt, niet erna. Een filter dat zijn lege hoeken verstopt is een filter
+ * dat je stuurt.
+ *
+ * Onderwerpen waar helemaal niets over geschreven is krijgen geen knop. Dat is iets anders
+ * dan een hoek verstoppen: een knop met een nul erop is geen eerlijkheid maar een dood
+ * eind.
  *
  * GEEN OORDEEL VAN ONS BIJ DE QUOTES.
  *
@@ -30,39 +36,13 @@ import {
  * volgorde is die van de bron, en dat is de enige volgorde die we niet zelf hebben bedacht.
  */
 
-const ONDERWERPEN: readonly {
-  id: SalonizedReviewTopic | "alles";
-  label: string;
-}[] = [
-  { id: "alles", label: "Alles" },
-  { id: "laser", label: "Laserontharing" },
-  { id: "huidveroudering", label: "Huidveroudering" },
-  { id: "rosacea", label: "Roodheid" },
-  { id: "acne", label: "Acne" },
-  { id: "pigment", label: "Pigment" },
-  { id: "algemeen", label: "Algemeen" },
-];
-
-/** Vijf sterren, als vlakjes en niet als tekens: sterretjes lezen als versiering. */
-function Sterren({ opDonker = false }: { opDonker?: boolean }) {
-  return (
-    <span
-      className="flex gap-1"
-      role="img"
-      aria-label="Vijf van de vijf sterren"
-    >
-      {Array.from({ length: 5 }, (_, i) => (
-        <span
-          key={i}
-          aria-hidden="true"
-          className={`h-1.5 w-5 rounded-[var(--r-pill)] ${
-            opDonker ? "bg-[var(--on-dark-accent)]" : "bg-[var(--g-700)]"
-          }`}
-        />
-      ))}
-    </span>
-  );
-}
+/* De knoppen komen uit de gedeelde lijst, die alleen onderwerpen bevat waar ook echt
+   reviews over zijn. De muur noemt "alles" waar de rest "alle" zegt; dat scheelt hier
+   een hernoeming door het hele bestand. */
+const ONDERWERPEN = REVIEW_TOPICS.map((t) => ({
+  id: t.id === "alle" ? ("alles" as const) : t.id,
+  label: t.label,
+}));
 
 export default function Reviewmuur() {
   const [gekozen, setGekozen] = useState<SalonizedReviewTopic | "alles">(

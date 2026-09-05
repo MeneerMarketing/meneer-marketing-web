@@ -173,6 +173,6 @@ export const COUPEROSE_FAQ = [
   {
     vraag: "Wat kost een behandeling?",
     antwoord:
-      "Een behandeling van vaatjes met de Nordlys begint bij 75 euro voor een klein gebied. Wat het bij jou wordt, hangt af van hoe groot het gebied is en hoeveel sessies er nodig zijn; dat hoor je na de eerste afspraak. Alle tarieven staan op de prijzenpagina.",
+      "Een behandeling van vaatjes met de Nordlys begint bij 75 euro voor een klein gebied. Wat het bij jou wordt, hangt af van hoe groot het gebied is en hoeveel sessies er nodig zijn; dat hoor je na de eerste afspraak. Alle tarieven staan op de tarievenpagina.",
   },
 ];

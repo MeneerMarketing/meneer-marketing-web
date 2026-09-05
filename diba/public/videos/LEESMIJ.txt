@@ -1,0 +1,11 @@
+Zet hier de mp4-bestanden van de reels.
+
+In gebruik:
+  home-hero.mp4                 de opname in het beeldvlak van de homepage-hero
+
+Nog aan te leveren (zie src/data/videos.ts):
+  rrs-eyes.mp4                  reel DYnF7bGAc91
+  skinpen.mp4                   reel DYP6xCkAwn7
+  liplase.mp4                   reel DUq8hEHjddr
+  eve-m.mp4                     reel DWEA6ysAI0s   (met geluid)
+  jongeren-acne-traject.mp4     reel DVwYaBNgA6w   (met geluid)

@@ -174,7 +174,7 @@ export default function OnsVerhaalPage() {
                     </p>
                   </div>
                   <Link
-                    href="/prijzen"
+                    href="/tarieven"
                     className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white"
                   >
                     Kijk zelf, alles staat er

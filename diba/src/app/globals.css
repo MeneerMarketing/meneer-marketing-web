@@ -1222,3 +1222,36 @@ html.js-reveal [data-reveal].is-visible {
     }
   }
 }
+
+/* De binnenkomst van de homepage-hero. Acht pixels en een fade, meer niet: het merk is
+   rustig en een hero die binnenzwiert spreekt dat tegen.
+
+   De globale regel bij prefers-reduced-motion zet de duur op 0,01ms, en omdat deze
+   keyframe op de zichtbare staat eindigt is het resultaat dan simpelweg de hero zonder
+   beweging. */
+@keyframes diba-hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.diba-hero-in {
+  animation: diba-hero-in 0.5s var(--ease-diba) both;
+}
+
+.diba-hero-in-1 {
+  animation-delay: 0.08s;
+}
+
+.diba-hero-in-2 {
+  animation-delay: 0.16s;
+}
+
+.diba-hero-in-3 {
+  animation-delay: 0.24s;
+}

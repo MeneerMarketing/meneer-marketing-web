@@ -21,7 +21,7 @@ import {
   INGEGROEID_FAQ,
   INGEGROEID_WEL_NIET,
 } from "@/data/ingegroeide-haren";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -194,7 +194,7 @@ export default function Pagina() {
             intro="Nek, bikinilijn, benen en kaaklijn zijn de zones waar deze vier voorkomen. Twee ervan hebben baat bij ontharen en twee niet."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=ingegroeide-haren&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."

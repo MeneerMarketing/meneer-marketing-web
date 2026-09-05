@@ -68,7 +68,7 @@ const INGANGEN: readonly Ingang[] = [
     vraag: "Wat gaat dit mij kosten?",
     kanaal: "whatsapp",
     waarom:
-      "De tarieven staan al op de prijzenpagina, per sessie en per zone. Wat daar niet staat is hoeveel sessies jij nodig hebt, en dat hoor je na de meting.",
+      "De tarieven staan al op de tarievenpagina, per sessie en per zone. Wat daar niet staat is hoeveel sessies jij nodig hebt, en dat hoor je na de meting.",
   },
   {
     id: "klacht",

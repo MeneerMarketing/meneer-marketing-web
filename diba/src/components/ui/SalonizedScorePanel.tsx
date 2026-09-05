@@ -29,7 +29,7 @@ function Stars({ size = 14 }: { size?: number }) {
   );
 }
 
-/** 5,0 · 3.883 reviews — gekoppeld aan Salonized. */
+/** 5,0 · 3.893 reviews — gekoppeld aan Salonized. */
 export default function SalonizedScorePanel({
   className = "",
   variant = "hero",

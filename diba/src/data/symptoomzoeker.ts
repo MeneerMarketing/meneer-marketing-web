@@ -50,7 +50,16 @@ export const KENMERKEN: readonly Kenmerk[] = [
  * Geen enkele andere kliniek zet op zijn overzicht welke onderwerpen ze wegsturen, en
  * precies daarom staat het hier bovenaan in plaats van in de kleine lettertjes.
  */
-export type Groep = "behandelen" | "doorverwijzen" | "niet" | "wegwijzer";
+/**
+ * Wat wij met een klacht doen.
+ *
+ * "met-arts" is er bijgekomen (Okan, 5 september 2026). Keloïden, eczeem, psoriasis en
+ * huiduitslag stonden onder "doorverwijzen", en dat klopte niet: die behandelen we wel,
+ * alleen niet alleen. Het menu noemde die kolom al "Samen met je arts" terwijl de tekst
+ * eronder zei dat we je wegsturen.
+ */
+export type Groep =
+  "behandelen" | "met-arts" | "doorverwijzen" | "niet" | "wegwijzer";
 
 export type Bestemming = {
   readonly naam: string;
@@ -251,9 +260,9 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Keloïden",
     icoon: "huid-bultje",
     pad: "/huidproblemen/keloiden",
-    zin: "Blijft het binnen de wondrand of groeit het eroverheen?",
+    zin: "Groeit het litteken over de wondrand heen? Dan kijken we samen met een arts.",
     eersteVraag: "Over de wondrand heen?",
-    groep: "doorverwijzen",
+    groep: "met-arts",
     kenmerken: ["strepen", "bultjes"],
   },
   {
@@ -305,37 +314,28 @@ export const BESTEMMINGEN: readonly Bestemming[] = [
     naam: "Eczeem",
     icoon: "porie-vocht",
     pad: "/huidproblemen/eczeem",
-    zin: "Een cirkel en geen plek. Hoort bij de huisarts, en die heeft er behandeling voor.",
+    zin: "De ontsteking hoort bij de arts. Wat de huid daarnaast nodig heeft, doen wij.",
     eersteVraag: "Waar breekt de cirkel?",
-    groep: "doorverwijzen",
+    groep: "met-arts",
     kenmerken: ["jeuk", "schilfers", "rood", "droog"],
   },
   {
     naam: "Psoriasis",
     icoon: "porie-vocht",
     pad: "/huidproblemen/psoriasis",
-    zin: "Meer dan huid. Let vooral op je nagels en je gewrichten.",
+    zin: "Meer dan huid, dus met een arts erbij. Let vooral op je nagels en je gewrichten.",
     eersteVraag: "Ook je nagels erbij?",
-    groep: "doorverwijzen",
+    groep: "met-arts",
     kenmerken: ["schilfers", "rood"],
   },
   {
     naam: "Huiduitslag",
     icoon: "cremepotje",
     pad: "/huidproblemen/huiduitslag",
-    zin: "Eerst de vraag of je vandaag belt of morgen.",
+    zin: "Wat we kunnen doen hangt af van welke soort het is. Eerst kijken, dan pas iets.",
     eersteVraag: "Bel je vandaag of morgen?",
-    groep: "doorverwijzen",
+    groep: "met-arts",
     kenmerken: ["rood", "jeuk", "ziek"],
-  },
-  {
-    naam: "Cellulitis",
-    icoon: "huid-bultje",
-    pad: "/huidproblemen/cellulitis",
-    zin: "Geen vet maar bouw. Wij behandelen het niet en leggen uit waarom niemand dat kan.",
-    eersteVraag: "Vet of bouw?",
-    groep: "niet",
-    kenmerken: ["kuiltjes"],
   },
   {
     naam: "Moedervlekken",

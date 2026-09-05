@@ -13,7 +13,7 @@ import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { publicCopy } from "@/lib/copy-flags";
+import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import {
   BOLLETJE_BEELDEN,
   GERSTEKORRELS_FAQ,
@@ -201,7 +201,7 @@ export default function Pagina() {
             intro="Wit en hard aan de ene kant, rood en pijnlijk aan de andere: dat verschil bepaalt of het hier weg kan of naar de huisarts gaat."
           />
           <SoortKiezer
-            opties={SOORTEN}
+            opties={zonderVlaggen(SOORTEN)}
             ctaHrefPatroon="/intake?topic=gerstekorrels&beeld={id}"
             ctaLabel="Laat dit bekijken"
             hint="Twijfel je tussen twee? Dan kijken we samen."

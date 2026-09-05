@@ -16,3 +16,27 @@ export function publicCopy(text: string, terugval = ""): string {
   const schoon = text.replace(VLAGGEN, "").trim();
   return schoon || terugval;
 }
+
+/**
+ * Dezelfde schoonmaak, maar dan door een hele gegevensstructuur heen.
+ *
+ * Nodig omdat `publicCopy` pas werkt op het moment van tonen. Een client component krijgt
+ * zijn gegevens ruw mee, en Next zet die gegevens in de pagina zodat de browser het
+ * component kan overnemen. De vlaggen stonden daardoor in de broncode van zeventig
+ * pagina's: onzichtbaar voor de bezoeker, leesbaar voor wie de bron opent.
+ *
+ * Gebruik dit op alles wat een client component als prop krijgt. Voor tekst die de server
+ * zelf rendert blijft `publicCopy` genoeg.
+ */
+export function zonderVlaggen<T>(waarde: T): T {
+  if (typeof waarde === "string") return publicCopy(waarde) as T;
+  if (Array.isArray(waarde)) return waarde.map(zonderVlaggen) as T;
+  if (waarde && typeof waarde === "object") {
+    const uit: Record<string, unknown> = {};
+    for (const [sleutel, v] of Object.entries(waarde)) {
+      uit[sleutel] = zonderVlaggen(v);
+    }
+    return uit as T;
+  }
+  return waarde;
+}

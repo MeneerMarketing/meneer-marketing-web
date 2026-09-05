@@ -68,14 +68,26 @@ export const HOME_INTENTS: readonly HomeIntent[] = [
     image: FIGMA_INTENT_VEROUDERING.src,
     imageAlt: FIGMA_INTENT_VEROUDERING.alt,
   },
+  /* Deze twee zijn erbij gekomen zodat de homepage dezelfde zeven keuzes aanbiedt als
+     /behandelingen (Okan, 5 september 2026). Er stonden er vijf, en glow en haaruitval
+     ontbraken terwijl daar wel behandelingen voor zijn. */
   {
-    id: "lichaam",
-    icoon: "porie-vocht",
-    title: "Lichaam & huid",
+    id: "glow",
+    icoon: "huid-glans",
+    title: "Glow & onderhoud",
     subtitle:
-      "Huidbehandelingen en ontharing voor rug, benen, oksels en bikinilijn.",
-    href: "/huidproblemen/cellulitis",
+      "Een frisse behandeling zonder hersteltijd, of onderhoud tussendoor.",
+    href: "/huidproblemen/doffe-huid",
     image: FIGMA_INTENT_LICHAAM.src,
     imageAlt: FIGMA_INTENT_LICHAAM.alt,
+  },
+  {
+    id: "haaruitval",
+    icoon: "pincet-haar",
+    title: "Haaruitval",
+    subtitle: "Dunner wordend haar en een terugwijkende haarlijn.",
+    href: "/behandelingen/xl-hair",
+    image: FIGMA_INTENT_LASER.src,
+    imageAlt: FIGMA_INTENT_LASER.alt,
   },
 ] as const;

@@ -8,7 +8,7 @@
  *
  * De vorige versie bouwde de laserlijst met een hulpfunctie die elke prijs op nul zette.
  * De tarieven stonden er toen niet, dus dat viel niet op; sinds ze er wel staan zou de
- * prijzenpagina overal € 0 hebben laten zien terwijl de configurator ernaast de juiste
+ * tarievenpagina overal € 0 hebben laten zien terwijl de configurator ernaast de juiste
  * bedragen toonde.
  *
  * De laserbedragen waren verzonnen en zijn nu overgenomen van de tarievenpagina van de

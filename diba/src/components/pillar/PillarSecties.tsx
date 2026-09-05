@@ -147,7 +147,10 @@ export function WelNiet({
             <h3 className="diba-label text-[var(--g-700)]">Dit werkt</h3>
             <ul className="mt-5 space-y-4">
               {wel.map((r) => (
-                <li key={r} className="flex gap-3 text-[15px] leading-7">
+                <li
+                  key={publicCopy(r)}
+                  className="flex gap-3 text-[15px] leading-7"
+                >
                   <svg
                     viewBox="0 0 20 20"
                     className="mt-1.5 h-4 w-4 shrink-0 text-[var(--g-700)]"
@@ -172,7 +175,10 @@ export function WelNiet({
             </h3>
             <ul className="mt-5 space-y-4">
               {niet.map((r) => (
-                <li key={r} className="flex gap-3 text-[15px] leading-7">
+                <li
+                  key={publicCopy(r)}
+                  className="flex gap-3 text-[15px] leading-7"
+                >
                   <svg
                     viewBox="0 0 20 20"
                     className="mt-1.5 h-4 w-4 shrink-0 text-[var(--warn)]"
@@ -300,7 +306,7 @@ export function HuidanalyseAssen({
           <h2 className="diba-display-m mt-4 max-w-[18ch]">{kop}</h2>
           {alineas.map((a) => (
             <p
-              key={a}
+              key={publicCopy(a)}
               className="mt-5 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]"
             >
               {publicCopy(a)}
@@ -401,7 +407,7 @@ export function PillarFaq({
         <div className="space-y-2">
           {items.map((item) => (
             <details
-              key={item.vraag}
+              key={publicCopy(item.vraag)}
               className="group rounded-[var(--r-md)] bg-white px-6 py-5"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">

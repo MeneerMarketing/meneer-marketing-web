@@ -2,31 +2,41 @@ import type { ReviewCardProps } from "@/components/ui/ReviewCard";
 import {
   SALONIZED_REVIEWS,
   type SalonizedReviewEntry,
+  type SalonizedReviewTopic,
 } from "@/data/salonized-reviews";
 
-export type ReviewTopic =
-  | "alle"
-  | "acne"
-  | "pigment"
-  | "rosacea"
-  | "laser"
-  | "huidveroudering"
-  | "algemeen";
+export type ReviewTopic = "alle" | SalonizedReviewTopic;
 
 export type ReviewTopicMeta = {
   readonly id: ReviewTopic;
   readonly label: string;
 };
 
+const TOPIC_LABELS: Record<SalonizedReviewTopic, string> = {
+  acne: "Acne",
+  littekens: "Littekens",
+  pigment: "Pigment",
+  rosacea: "Roodheid",
+  laser: "Laserontharing",
+  huidveroudering: "Huidveroudering",
+  gezichtsbehandeling: "Gezichtsbehandeling",
+  intake: "Huidconsult",
+  algemeen: "Algemeen",
+};
+
+/**
+ * De filterknoppen op /reviews komen uit de reviews zelf.
+ *
+ * Ze stonden hier als vaste lijst, en toen de tags werden nagelopen bleken twee ervan leeg:
+ * over pigment en over rimpels schrijft niemand. Een knop die naar niets leidt is erger dan
+ * een knop minder, en een vaste lijst gaat dat opnieuw doen zodra de reviews veranderen.
+ */
 export const REVIEW_TOPICS: readonly ReviewTopicMeta[] = [
-  { id: "alle", label: "Alles" },
-  { id: "acne", label: "Acne" },
-  { id: "pigment", label: "Pigment" },
-  { id: "rosacea", label: "Roodheid" },
-  { id: "laser", label: "Laser" },
-  { id: "huidveroudering", label: "Huidveroudering" },
-  { id: "algemeen", label: "Algemeen" },
-] as const;
+  { id: "alle" as const, label: "Alles" },
+  ...(Object.keys(TOPIC_LABELS) as SalonizedReviewTopic[])
+    .filter((id) => SALONIZED_REVIEWS.some((r) => r.topics.includes(id)))
+    .map((id) => ({ id, label: TOPIC_LABELS[id] })),
+];
 
 export type Review = ReviewCardProps & {
   readonly id: string;
@@ -50,15 +60,6 @@ export function reviewsForTopic(topic: ReviewTopic): readonly Review[] {
   if (topic === "alle") return REVIEWS;
   return REVIEWS.filter((r) => r.topics.includes(topic));
 }
-
-const TOPIC_LABELS: Record<Exclude<ReviewTopic, "alle">, string> = {
-  acne: "Acne",
-  pigment: "Pigment",
-  rosacea: "Roodheid",
-  laser: "Laser",
-  huidveroudering: "Huidveroudering",
-  algemeen: "Algemeen",
-};
 
 /** Primair onderwerp voor pill op kaart (voorkeur voor specifiek boven algemeen). */
 export function primaryReviewTopic(

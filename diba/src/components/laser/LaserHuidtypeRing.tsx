@@ -63,7 +63,7 @@ export default function LaserHuidtypeRing() {
         <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
           {/* [MEDISCHE-CHECK-ROJDA]: de uitspraak over Fitzpatrick I tot VI. De vlag
               stond in de zin zelf en dus op het scherm. */}
-          De Gentle Laser Pro-U werkt op Fitzpatrick I tot en met VI. In de
+          De GentleMax Pro werkt op Fitzpatrick I tot en met VI. In de
           configurator kies je je type; de energie en de koeling worden daarop
           afgestemd.
         </p>

@@ -269,7 +269,7 @@ export default function OverOnsPage() {
                 getal: String(BEHANDELINGEN.length),
                 kop: "behandelingen",
                 zin: "Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt.",
-                href: "/prijzen",
+                href: "/tarieven",
                 link: "Naar de prijzen",
               },
               {
