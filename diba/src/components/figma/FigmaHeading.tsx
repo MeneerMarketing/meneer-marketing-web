@@ -29,7 +29,7 @@ export default function FigmaHeading({
   return (
     <Tag className={`text-[var(--t-strong)] ${sizeClasses[size]} ${className}`}>
       {before}
-      {accent ? <span className="text-[var(--g-700)]">{accent}</span> : null}
+      {accent ? <span className="diba-accent">{accent}</span> : null}
       {after}
     </Tag>
   );

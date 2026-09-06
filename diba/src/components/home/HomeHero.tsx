@@ -5,7 +5,11 @@ import {
   FIGMA_HERO_PORTRAIT,
   FIGMA_HERO_PORTRAIT_ALT,
 } from "@/lib/figma-home-layout";
-import { DIBA_HOME_PROOF_ITEMS, type ProofStripItem } from "@/lib/site";
+import {
+  DIBA_HOME_PROOF_ITEMS,
+  DIBA_PROOF,
+  type ProofStripItem,
+} from "@/lib/site";
 
 /**
  * De binnenkomer van de homepage.
@@ -26,13 +30,20 @@ import { DIBA_HOME_PROOF_ITEMS, type ProofStripItem } from "@/lib/site";
  * knop die de volle breedte pakt. Alles samen past binnen de eerste schermhoogte, ook op
  * een toestel van 667 pixels.
  *
- * DESKTOP. Tekst links, staand beeld rechts, en de cijfers als brede rij onder allebei,
- * gescheiden door haarlijnen. Daar is ruimte voor de volledige labels en voor cijfers op
- * formaat, en daar eindigt de fold dus op bewijs in plaats van op een naad.
+ * DESKTOP. Tekst links, staand beeld rechts, en de cijfers als brede witte kaart die over
+ * de onderrand van het vlak hangt. Daar is ruimte voor de volledige labels en voor cijfers
+ * op formaat, en daar eindigt de fold dus op bewijs in plaats van op een naad.
  *
- * WAT BLIJFT. Het ronde beeldvlak, de plaatsnaam en het groene zegel met "eerlijk advies".
- * Dat zegel is het herkenbaarste element van deze pagina; er wordt niets aan veranderd
- * behalve dat het op mobiel iets kleiner staat.
+ * DONKER (Rojda, 6 september 2026). "Ik vind dat onze brandkleuren meteen zichtbaar moeten
+ * zijn op de homepage." De hero staat daarom op Olive leaf (--g-700): het eerste scherm ís
+ * de merkkleur, nog voordat iemand scrolt. Yasin tekende erbij aan dat donkergroen minder
+ * klinisch oogt; dit is de proef. Wat het klinisch houdt: de foto blijft de foto (alleen
+ * een neutrale scrim onderin), de cijferkaart blijft wit, en de kop is wit met één regel
+ * in het lichte accentgroen.
+ *
+ * WAT BLIJFT. Het ronde beeldvlak, de plaatsnaam en het zegel. Dat zegel zei "eerlijk
+ * advies" en zegt nu "sinds 2017" (Rojda): een jaartal is na te kijken, een eigenschap
+ * niet. Daarom staat "sinds 2017" niet meer óók in de zin eronder.
  *
  * DE KOP. "De huidkliniek in Rotterdam" en niet "Huidkliniek in Rotterdam" (Rojda,
  * 5 september 2026). Dat lidwoord is het verschil tussen een omschrijving en een claim, en
@@ -50,7 +61,7 @@ function getal(item: ProofStripItem) {
  * De vier cijfers, in één vorm en twee maten.
  *
  * `compact` is de mobiele versie: korte labels, kleine cijfers, en hij overlapt het beeld
- * erboven. Zonder `compact` is het de brede band onder de hero, met de volledige labels.
+ * erboven. Zonder `compact` is het de brede kaart onder de hero, met de volledige labels.
  *
  * Waarom één component: het waren twee blokken met eigen opmaak, en toen de ene mooier
  * werd gevonden dan de andere bleek dat verschil nergens een reden voor te hebben.
@@ -93,7 +104,7 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
 
 export default function HomeHero() {
   return (
-    <section id="top" className="bg-[var(--g-025)]">
+    <section id="top" className="bg-[var(--g-700)] text-[var(--on-dark)]">
       <div className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-7 pt-5 pb-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-14 lg:pt-8 lg:pb-10">
           {/* ── Beeld ──
@@ -103,13 +114,13 @@ export default function HomeHero() {
 
               Het beeld liep even door tot de schermrand. Dat oogde royaal maar het klopte
               niet: de rechterrand viel dan nergens meer samen met de cijferkaart eronder,
-              en die twee horen op één lijn te staan. Nu evenveel wit links als rechts.
+              en die twee horen op één lijn te staan. Nu evenveel ruimte links als rechts.
 
               Staat in de bron vóór de tekst zodat het op mobiel bovenaan komt, en gaat op
               lg naar de tweede kolom. Op mobiel 4:3 en op desktop hoog: bewegend beeld op
               een telefoon mag het scherm niet opeten, want daaronder staan de cijfers. */}
           <div className="diba-hero-in relative order-1 lg:order-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--r-lg)] rounded-bl-[4.5rem] bg-[var(--g-200)] sm:aspect-[16/9] lg:aspect-auto lg:h-[560px] lg:rounded-bl-[11rem]">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--r-lg)] rounded-bl-[4.5rem] bg-[var(--g-600)] sm:aspect-[16/9] lg:aspect-auto lg:h-[560px] lg:rounded-bl-[11rem]">
               <HeroVideo
                 bestand="/videos/home-hero.mp4"
                 poster={FIGMA_HERO_PORTRAIT}
@@ -125,11 +136,13 @@ export default function HomeHero() {
               <span className="diba-label absolute top-5 left-5 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)] sm:top-7 sm:left-7">
                 Rotterdam
               </span>
-              {/* Op mobiel hoger, want daaronder komt de cijferstrook. */}
-              <span className="diba-label absolute right-5 bottom-14 grid h-[72px] w-[72px] place-items-center rounded-[var(--r-pill)] bg-[var(--g-700)] text-center text-[10px] leading-4 text-white sm:right-7 sm:bottom-7 sm:h-24 sm:w-24 sm:text-[11px]">
-                Eerlijk
+              {/* Op mobiel hoger, want daaronder komt de cijferstrook. Licht op het
+                  donkere vlak, waar hij eerst donker op licht was: hetzelfde zegel, maar
+                  het moet nu tegen olijf afsteken. */}
+              <span className="diba-label absolute right-5 bottom-14 grid h-[72px] w-[72px] place-items-center rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] text-center text-[10px] leading-4 text-[var(--on-dark-btn-text)] sm:right-7 sm:bottom-7 sm:h-24 sm:w-24 sm:text-[11px]">
+                Sinds
                 <br />
-                advies
+                {DIBA_PROOF.activeSince}
               </span>
             </div>
 
@@ -147,23 +160,28 @@ export default function HomeHero() {
             {/* Dé met accent aigu. Het lidwoord met nadruk is de Nederlandse manier om
                 te zeggen dat het niet zomaar een huidkliniek is, en dat is precies wat
                 deze kop bedoelt (Yasin, 5 september 2026). */}
-            <h1 className="diba-hero-in diba-display-xl max-w-[13ch]">
+            <h1 className="diba-hero-in diba-display-xl max-w-[13ch] text-[var(--on-dark)]">
               Dé huidkliniek
               <br />
-              <span className="diba-accent">in Rotterdam</span>
+              <span className="diba-accent-on-dark">in Rotterdam</span>
             </h1>
 
-            <p className="diba-hero-in diba-hero-in-1 mt-4 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)] lg:mt-7">
-              Sinds 2017 helpen onze huidtherapeuten je met acne, pigment,
-              roodheid, littekens, huidveroudering en ongewenst haar. Tijdens de
-              intake hoor je wat er bij jou mogelijk is.
+            <p className="diba-hero-in diba-hero-in-1 mt-4 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)] lg:mt-7">
+              Onze huidtherapeuten helpen je met acne, pigment, roodheid,
+              littekens, huidveroudering en ongewenst haar. Tijdens de intake
+              hoor je wat er bij jou mogelijk is.
             </p>
 
             {/* Op mobiel één knop over de volle breedte: één duidelijke stap. De tweede
                 route staat eronder als link, want twee even zware knoppen onder elkaar
-                maken van een keuze een aarzeling. */}
+                maken van een keuze een aarzeling. Op het donkere vlak de lichte knop en
+                de omlijnde witte: de gewone primaire knop is olijf op olijf. */}
             <div className="diba-hero-in diba-hero-in-2 mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-4 lg:mt-9">
-              <Button href="/intake" className="w-full sm:w-auto">
+              <Button
+                href="/intake"
+                variant="primair-op-donker"
+                className="w-full sm:w-auto"
+              >
                 Afspraak maken
               </Button>
               {/* De span en niet de knop zelf: `hidden` op de Button verliest van de
@@ -171,7 +189,7 @@ export default function HomeHero() {
                   dezelfde groep en dan wint de stylesheetvolgorde. Gemeten op 375 pixels
                   stond hij gewoon in beeld. */}
               <span className="hidden sm:inline-flex">
-                <Button href="/behandelingen" variant="ghost">
+                <Button href="/behandelingen" variant="secundair-op-donker">
                   Bekijk de behandelingen
                 </Button>
               </span>
@@ -180,11 +198,11 @@ export default function HomeHero() {
             {/* Eén zin, op elk formaat. Hier stonden op mobiel twee losse links
                 naast elkaar; twee gelijkwaardige zijpaden onder één hoofdknop maken van
                 een keuze een rijtje. */}
-            <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)] lg:mt-5">
+            <p className="mt-4 text-[14px] leading-6 text-[var(--on-dark-body)] lg:mt-5">
               Weet je nog niet welke behandeling past?{" "}
               <Link
                 href="/behandeling-op-advies"
-                className="text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                className="text-[var(--on-dark)] underline underline-offset-4 transition-colors hover:text-[var(--on-dark-accent)]"
               >
                 Boek een behandeling op advies
               </Link>
@@ -194,10 +212,11 @@ export default function HomeHero() {
         </div>
 
         {/* ── De cijferkaart, desktop ──
-            Dezelfde vorm als op mobiel: wit, ronde hoeken, een zachte schaduw. Hier stond
-            een kale rij met haarlijnen, en die las als een voetnoot bij de pagina in
-            plaats van als het bewijs onder de claim. */}
-        <div className="hidden pb-12 lg:block">
+            Dezelfde vorm als op mobiel: wit, ronde hoeken. Hij hangt met de onderste helft
+            over de rand van het olijfvlak heen (negatieve ondermarge, z-index erboven), dus
+            de overgang naar de lichte sectie eronder is geen naad maar een kaart die op de
+            rand ligt. De sectie eronder heeft genoeg bovenmarge om die helft te dragen. */}
+        <div className="relative z-10 hidden lg:-mb-14 lg:block">
           <Cijfers />
         </div>
       </div>

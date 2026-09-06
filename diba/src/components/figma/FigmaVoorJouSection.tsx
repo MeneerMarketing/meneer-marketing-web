@@ -29,7 +29,7 @@ function IntentIcoon({
       className={`inline-grid h-12 w-12 place-items-center rounded-[var(--r-pill)] transition-colors ${
         active
           ? "bg-[var(--on-dark-accent)] text-[var(--g-700)]"
-          : "bg-white text-[var(--g-700)]"
+          : "bg-[var(--g-050)] text-[var(--g-700)]"
       }`}
       aria-hidden="true"
     >
@@ -55,7 +55,7 @@ function IntentCard({
       className={`group rounded-[var(--r-lg)] p-6 text-left transition sm:p-7 ${
         active
           ? "bg-[var(--g-700)] text-[var(--on-dark)] shadow-[0_14px_35px_rgba(67,79,58,.18)]"
-          : "bg-[var(--g-025)] hover:-translate-y-1 hover:bg-[var(--g-100)]"
+          : "bg-white hover:-translate-y-1 hover:bg-[var(--g-075)]"
       } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
     >
       <IntentIcoon naam={intent.icoon} active={active} />
@@ -77,7 +77,13 @@ export default function FigmaVoorJouSection() {
   const selectedIntent = HOME_INTENTS[activeConcern];
 
   return (
-    <section id="voorjou" className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+    /* Op een licht kleurvlak met witte kaarten (Rojda, 6 september 2026: "meer opgevuld").
+       De hero erboven is olijf en zijn cijferkaart hangt over de rand tot in dit vlak;
+       daarom is dit vlak niet wit, anders lag die kaart op niets. */
+    <section
+      id="voorjou"
+      className="bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+    >
       <div className="mx-auto">
         <div className="grid gap-8 lg:grid-cols-[.7fr_1.3fr]">
           <div>

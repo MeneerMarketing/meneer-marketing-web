@@ -49,9 +49,9 @@ import { DIBA_HOME_PROOF_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
  */
 const EERLIJK_ADVIES_PUNTEN = [
   {
-    titel: "Kwaliteitsregister Paramedici",
+    titel: "NVH en Kwaliteitsregister Paramedici",
     tekst:
-      "Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.",
+      "Onze huidtherapeuten zijn lid van de beroepsvereniging en staan in het register. Veel aanvullende pakketten stellen dat als eis voor vergoeding.",
   },
   {
     /* [BESLUIT-OKAN] Okan: "gecontracteerd bij alle zorgverzekeraars" alleen gebruiken
@@ -64,9 +64,9 @@ const EERLIJK_ADVIES_PUNTEN = [
       "Of jouw behandeling vergoed wordt, hangt af van je klacht en je aanvullende pakket.",
   },
   {
-    titel: "Aangesloten bij ANBOS",
+    titel: "ANBOS en SKIN Register",
     tekst:
-      "De branchevereniging voor schoonheidsverzorging, met eisen aan opleiding, hygiëne en klachtafhandeling.",
+      "De kliniek is aangesloten bij de branchevereniging, met eisen aan opleiding, hygiëne en klachtafhandeling; onze schoonheidsspecialisten staan in het SKIN Register.",
   },
 ] as const;
 
@@ -437,7 +437,7 @@ export default function FigmaHomeApp({
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>

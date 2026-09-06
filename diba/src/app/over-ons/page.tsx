@@ -135,8 +135,9 @@ export default function OverOnsPage() {
               openbaar zijn.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister
-              Paramedici en de kliniek is aangesloten bij ANBOS.
+              Onze huidtherapeuten zijn lid van de NVH en staan ingeschreven in
+              het Kwaliteitsregister Paramedici; onze schoonheidsspecialisten
+              zijn aangesloten bij ANBOS en staan in het SKIN Register.
             </p>
           </div>
 

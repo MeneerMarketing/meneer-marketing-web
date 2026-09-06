@@ -67,11 +67,11 @@ const REGELS = [
     uitgelicht: true,
   },
   {
-    /* [MEDISCHE-CHECK-ROJDA] Rojda noemde "en anbos en skin"; de volledige naam van dat
-       tweede register is nog niet bevestigd. De vlag hoort in dit commentaar en niet in de
-       zin eronder: deze lijst gaat niet langs publicCopy(), dus de bezoeker leest hem mee. */
-    kop: "Huidtherapeuten met een registratie",
-    zin: "Onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici, en de kliniek is aangesloten bij ANBOS. Beide vragen bij- en nascholing.",
+    /* Rojda, 6 september 2026: de huidtherapeuten zijn NVH-lid en staan in het
+       Kwaliteitsregister Paramedici; de schoonheidsspecialisten zijn aangesloten bij ANBOS
+       en staan in het SKIN Register. */
+    kop: "Geregistreerd, in allebei de vakken",
+    zin: "Onze huidtherapeuten zijn lid van de NVH en staan in het Kwaliteitsregister Paramedici. Onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register.",
     betekent:
       "Veel aanvullende pakketten stellen die inschrijving als eis voordat ze een behandeling vergoeden.",
   },

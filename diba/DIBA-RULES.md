@@ -75,7 +75,7 @@ Sluit elke taak af met één regel per toets: ✓ of ✗ met reden.
   --g-900:#2e3628; --g-800:#363f2f; --g-700:#434f3a; /* 700 = PRIMAIR, Olive leaf */
   --g-600:#555e4c; --g-500:#738369; --g-400:#919e88; /* 500 = Dewy forest */
   --g-300:#a1af97; --g-200:#cdd8c8; --g-100:#dce5d6;
-  --g-050:#eff3eb; --g-025:#f7faf5; --g-010:#fbfcfa; /* 025 = Sea foam */
+  --g-050:#eff3eb; --g-025:#f7faf5; --g-010:#ffffff; /* 025 = Sea foam, 010 = wit */
 
   /* Tekst op licht (olijfgrijs, AA-gevalideerd; laagste ratio op --g-200) */
   --t-strong:#2e3628;  /*  8.51 */  --t-body:#525e4c;  /* 4.65 */
@@ -117,6 +117,12 @@ sectieniveau in plaats van als accentje.
   altijd dezelfde twee momenten: **het bewijs** (de meting, het resultaat) en **de
   volgende stap** (de intake). Een derde donker vlak betekent dat je iets tot bewijs
   verklaart wat het niet is.
+  *Uitzondering (Rojda, 06-09-2026): de hero van de homepage is donker, zodat de
+  merkkleur er staat voordat iemand scrolt. Dat is de enige pagina met drie donkere
+  vlakken, en ook daar staan ze nooit direct achter elkaar.*
+- **De homepage is "opgevuld"** (Rojda): secties wisselen af tussen wit en een licht
+  kleurvlak (`--g-050`), kaarten staan wit op dat vlak. Geen twee witte secties achter
+  elkaar zonder dat een kleurvlak ertussen zit.
 - Daartussen ademt de pagina in `--g-010` en `--g-025`; `--g-050` voor een zacht
   tussenvlak. Nooit twee donkere secties direct achter elkaar.
 - Primaire actieknop op licht = `--g-700` met witte tekst. Op donker = `--on-dark-btn`
@@ -136,7 +142,8 @@ uit drie lettertypes maar uit schaal — heel groot naast heel klein, met weinig
 **Het signatuur-patroon (herzien):** het accentwoord staat niet meer in serif-italic maar
 in kleur. Een kop is één zin op twee regels, waarvan de tweede regel groen is:
 "Wij gokken niet. / *Wij meten.*" met de tweede regel in `--on-dark-accent` (op donker)
-of `--g-700` (op licht). Het gekleurde deel is altijd de belofte die Diba waarmaakt,
+of `--g-500` (op licht; Dewy forest, want het olijf van `--g-700` ligt te dicht bij de
+kopkleur om nog als accent te lezen). Het gekleurde deel is altijd de belofte die Diba waarmaakt,
 nooit het commerciële deel.
 
 Schaal (mobiel → desktop). **De regel: hoe groter de tekst, hoe negatiever de tracking.**

@@ -21,7 +21,9 @@
   --g-050: #eff3eb; /* zacht sectievlak; afgeleid */
   --g-075: #e8efe4; /* panelen, uitgelicht blok (brandbook alternatief) */
   --g-025: #f7faf5; /* sectietint — Sea foam (brandbook) */
-  --g-010: #fbfcfa; /* paginavlak, net onder wit; afgeleid */
+  --g-010: #ffffff; /* paginavlak: wit (brandbook hoofdkleur). Stond net onder wit, maar
+                       dan was Sea foam (--g-025) er niet van te onderscheiden en vielen
+                       hovers en kaarten op het paginavlak weg (gemeten: verschil 5) */
 
   /* Leeslaag over fotografie. Bewust NEUTRAAL en niet groen.
 
@@ -823,9 +825,14 @@ body:has(.figma-home) {
   }
 
   /* Het accentdeel van een kop: altijd de belofte die Diba waarmaakt, nooit
-     het commerciële deel. Op licht groen, op donker mintgroen. */
+     het commerciële deel. Op licht Dewy forest (--g-500), op donker het lichte
+     accentgroen. Het olijf van --g-700 stond hier eerst, maar sinds de kopkleur zelf
+     diep olijf is (brandbook) las dat niet meer als accent: "kost" in "Wat een
+     behandeling kost" was nauwelijks van de rest te onderscheiden. --g-500 haalt 4,0:1
+     op wit en 3,4:1 op het panelvlak; dat is genoeg voor koppen vanaf 24px en dus
+     alleen daarvoor bedoeld, nooit voor lopende tekst. */
   .diba-accent {
-    color: var(--g-700);
+    color: var(--g-500);
   }
 
   .diba-accent-on-dark {
