@@ -14,9 +14,9 @@
  * lijst is de bron: het overzicht, de zoeker en dit menu tonen altijd hetzelfde, en een
  * nieuwe pagina verschijnt vanzelf op alle drie.
  *
- * Elke huidprobleemregel draagt zijn eerste vraag als ondertitel. Dat is het
- * onderscheidende van die hele reeks, en het maakt van een menu meteen een wegwijzer:
- * je ziet vóór het klikken waar we bij dat probleem beginnen.
+ * Elke huidprobleemregel draagt een korte omschrijving als ondertitel (`menuZin` in de
+ * bron). Eerder was dat de eerste vraag van de pagina; dat las in een lijst van
+ * drieëntwintig als een verhoor.
  *
  * COPY-STATUS: concept. De zinnen bij de behandelingen zijn bewust kaal gehouden; een
  * behandeling in vier woorden omschrijven is een medische uitspraak en die schrijf ik
@@ -33,13 +33,27 @@ export type NavLink = {
   readonly zin?: string;
   /** De route bestaat, maar de inhoud moet nog. */
   readonly binnenkort?: true;
+  /**
+   * Een tussenkopje boven deze link, binnen dezelfde kolom.
+   *
+   * Voor een groepje dat een eigen naam verdient maar geen eigen kolom: twee links onder
+   * "Ook zonder huidklacht" kostten een hele baan en maakten het paneel breder zonder het
+   * korter te maken.
+   */
+  readonly kopErboven?: string;
 };
 
 export type NavKolom = {
   readonly kop: string;
   readonly items: readonly NavLink[];
-  /** Neemt twee kolommen in beslag; voor lijsten die anders te lang worden. */
-  readonly breed?: true;
+  /**
+   * Neemt twee of drie banen in beslag en zet de lijst in evenzoveel kolommen naast
+   * elkaar. Voor lijsten die anders te lang worden: drieëntwintig huidproblemen in twee
+   * kolommen is twaalf rijen, en dat paste niet meer op een laptopscherm (Rojda,
+   * 7 september 2026: "als je behandelingen tab opent, website scrolt door op achterkant").
+   * In drie kolommen zijn het acht rijen.
+   */
+  readonly breed?: 2 | 3;
 };
 
 /** Het gekleurde vak rechts in een menupaneel. Eén per paneel, nooit twee. */
@@ -98,12 +112,18 @@ function kortZin(slug: string): string | undefined {
   return zin.endsWith(".") ? zin.slice(0, -1) : zin;
 }
 
-/** Haalt een groep uit de bron en zet er de eerste vraag onder. */
+/**
+ * Haalt een groep uit de bron en zet er de korte omschrijving onder.
+ *
+ * Hier stond de eerste vraag van elke pagina ("Waar op je gezicht zit het?"). Als
+ * wegwijzer bedoeld, maar drieëntwintig vragen onder elkaar lezen als een verhoor
+ * (Yasin, 7 september 2026). Nu `menuZin`: wat het is, in een paar woorden.
+ */
 function uitGroep(groep: Groep): readonly NavLink[] {
   return BESTEMMINGEN.filter((b) => b.groep === groep).map((b) => ({
     label: b.naam,
     href: b.pad,
-    zin: b.eersteVraag,
+    zin: b.menuZin,
   }));
 }
 
@@ -180,6 +200,10 @@ export const HOOFDNAV: readonly NavItem[] = [
   {
     label: "Huidproblemen",
     href: "/huidproblemen",
+    /* Vijf banen: één links, drie voor de huidproblemen, één voor de arts. Dat was
+       1 + 2 + 1 + 1 met een aparte kolom "Ook zonder huidklacht"; die twee links staan
+       nu onder een tussenkopje in de eerste kolom, en de baan die dat scheelt gaat naar de
+       huidproblemen. Zelfde breedte per baan, vier rijen minder hoog. */
     kolommen: [
       {
         kop: "Weet je niet hoe het heet",
@@ -194,9 +218,29 @@ export const HOOFDNAV: readonly NavItem[] = [
             href: "/kennisbank",
             zin: "Alle uitleg op een plek",
           },
+          /* Twee pagina's die geen huidprobleem zijn en toch bij Diba terechtkomen.
+
+             Ze stonden allebei nergens in de navigatie. /pcos was daarmee een weespagina:
+             bereikbaar via de URL en verder nergens vandaan gelinkt, wat voor een
+             zoekmachine betekent dat de rest van de site hem niet belangrijk genoeg vindt
+             om naar te wijzen. /snurken zou datzelfde lot krijgen.
+
+             Ze horen niet tussen de huidproblemen, want dat zijn ze niet. Vandaar een
+             eigen kopje dat precies zegt wat ze wel zijn. */
+          {
+            label: "Snurken",
+            href: "/snurken",
+            zin: "Waar het geluid ontstaat",
+            kopErboven: "Ook zonder huidklacht",
+          },
+          {
+            label: "PCOS",
+            href: "/pcos",
+            zin: "Van binnenuit bekeken",
+          },
         ],
       },
-      { kop: "Wij behandelen dit", items: uitGroep("behandelen"), breed: true },
+      { kop: "Wij behandelen dit", items: uitGroep("behandelen"), breed: 3 },
       {
         kop: "Samen met je arts",
         /* Deze kolom heet "Samen met je arts" en bevatte alleen wat we wegsturen.
@@ -205,30 +249,6 @@ export const HOOFDNAV: readonly NavItem[] = [
           ...uitGroep("met-arts"),
           ...uitGroep("doorverwijzen"),
           ...uitGroep("niet"),
-        ],
-      },
-      {
-        /* Twee pagina's die geen huidprobleem zijn en toch bij Diba terechtkomen.
-
-           Ze stonden allebei nergens in de navigatie. /pcos was daarmee een weespagina:
-           bereikbaar via de URL en verder nergens vandaan gelinkt, wat voor een
-           zoekmachine betekent dat de rest van de site hem niet belangrijk genoeg vindt om
-           naar te wijzen. /snurken zou datzelfde lot krijgen.
-
-           Ze horen niet tussen de huidproblemen, want dat zijn ze niet. Vandaar een eigen
-           kop die precies zegt wat ze wel zijn. */
-        kop: "Ook zonder huidklacht",
-        items: [
-          {
-            label: "Snurken",
-            href: "/snurken",
-            zin: "Waar het geluid ontstaat",
-          },
-          {
-            label: "PCOS",
-            href: "/pcos",
-            zin: "Van binnenuit bekeken",
-          },
         ],
       },
     ],
@@ -275,6 +295,9 @@ export const HOOFDNAV: readonly NavItem[] = [
       },
       {
         kop: "Meest gevraagd",
+        /* Zeven in twee kolommen: vier rijen in plaats van zeven. Het paneel is dan zo
+           hoog als de kolom "Begin hier" en niet hoger. */
+        breed: 2,
         items: [
           {
             label: "Consult met EVE-M",
@@ -359,7 +382,7 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Het team",
             href: "/team",
-            zin: "Acht mensen, en wie wat doet",
+            zin: "Negen mensen, en wie wat doet",
             binnenkort: true,
           },
           {
@@ -413,9 +436,10 @@ export const HOOFDNAV: readonly NavItem[] = [
             binnenkort: true,
           },
           {
-            label: "Voor verwijzers",
+            /* Yasin, 8 september 2026: de naam en de onderzin letterlijk zo. */
+            label: "Voor verwijzende zorgverleners",
             href: "/verwijzers",
-            zin: "Waar de grens ligt en hoe je verwijst",
+            zin: "Verwijzen, samenwerken en onze behandelgrenzen",
           },
         ],
       },

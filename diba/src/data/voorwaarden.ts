@@ -93,15 +93,9 @@ export const SITUATIES: readonly Situatie[] = [
     waarom:
       "Dezelfde regel als hierboven, maar dan onze kant op. Een voorwaarde die maar één richting op werkt is geen afspraak.",
   },
-  {
-    id: "behandeling-kan-niet",
-    kop: "De behandeling blijkt niet verantwoord",
-    gebeurt:
-      "Blijkt tijdens de intake of vlak voor de behandeling dat behandelen op dat moment niet verantwoord is, dan gaat het niet door. Denk aan een pas gebruinde huid, medicatie die niet samengaat met licht, zwangerschap of een andere contra-indicatie.",
-    kost: "Je betaalt de behandeling niet. Een intake, huidbeoordeling of meting die wel is uitgevoerd, betaal je volgens het intaketarief.",
-    waarom:
-      "Veiligheid gaat voor de agenda. Dit hoort niet bij de kleine lettertjes, want het overkomt meer mensen dan je zou denken en het is nooit persoonlijk bedoeld.",
-  },
+  /* "De behandeling blijkt niet verantwoord" stond hier als situatie. Rojda,
+     7 september 2026: "dit stukje kan eruit". Wat er gebeurt als behandelen niet
+     verantwoord is, hoort in het gesprek en niet in de voorwaarden. */
   {
     id: "traject",
     kop: "Je koopt een traject vooruit",

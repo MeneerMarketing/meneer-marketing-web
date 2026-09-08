@@ -9,6 +9,7 @@ import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
+  DIBA_INSTAGRAM_URL,
   DIBA_OPENINGSTIJDEN,
   DIBA_SALONIZED_BOOKING_URL,
   DIBA_SITE,
@@ -129,41 +130,42 @@ export default function ContactPage() {
       />
 
       {/* ââ Hero: het adres, en meteen de drie manieren ââ */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Contact</span>
+              <span className="text-[var(--on-dark-body)]">Contact</span>
             </nav>
 
             {/* Het adres stond in de displaymaat en liep over drie regels: de straatnaam
                 past daar niet op een regel. Het adres staat er hieronder toch al, dus de
                 kop mag zeggen waar de pagina over gaat. */}
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              Contact en <span className="diba-accent">route</span>
+              Contact en <span className="diba-accent-on-dark">route</span>
             </h1>
 
-            <address className="mt-7 text-[20px] leading-8 not-italic text-[var(--t-strong)]">
+            <address className="mt-7 text-[20px] leading-8 not-italic text-[var(--on-dark)]">
               {DIBA_ADDRESS.street}
               <br />
               {DIBA_ADDRESS.postalCode} {DIBA_ADDRESS.city}
             </address>
 
-            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Je kunt ons bellen, een WhatsApp-bericht sturen of mailen. Voor
-              het maken van een afspraak is de online agenda meestal het snelst.
+            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Je kunt ons bellen, een WhatsApp-bericht sturen, mailen of een
+              bericht via Instagram sturen. Voor het maken van een afspraak is
+              de online agenda meestal het snelst.
             </p>
           </div>
 
-          {/* De drie directe manieren, zonder dat je hoeft te kiezen. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          {/* De vier directe manieren, zonder dat je hoeft te kiezen. */}
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Direct</Label>
             <ul className="mt-6 space-y-1">
               {[
@@ -184,6 +186,15 @@ export default function ContactPage() {
                   waarde: DIBA_EMAIL,
                   href: `mailto:${DIBA_EMAIL}`,
                   extern: false,
+                },
+                /* Rojda, 7 september 2026: de Instagram koppelen. Hier als vierde
+                   ingang, want een bericht via Instagram is voor een deel van de
+                   klanten de gewone manier om een kliniek iets te vragen. */
+                {
+                  label: "Instagram",
+                  waarde: "@dibaclinics",
+                  href: DIBA_INSTAGRAM_URL,
+                  extern: true,
                 },
               ].map((r) => (
                 <li key={r.label}>

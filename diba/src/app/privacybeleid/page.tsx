@@ -187,38 +187,38 @@ export default function PrivacyPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Privacybeleid</span>
+              <span className="text-[var(--on-dark-body)]">Privacybeleid</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Hoe we omgaan
               <br />
-              <span className="diba-accent">met je gegevens</span>
+              <span className="diba-accent-on-dark">met je gegevens</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Er staat geen enkel formulier op {DIBA_SITE.domain}. Geen
               nieuwsbrief, geen contactformulier, geen veld waar je je mailadres
               achterlaat. Er is dus ook niets dat naar ons toe gestuurd wordt.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Dat betekent niet dat er nergens gegevens van je zijn. Ze staan
               alleen ergens anders, en hieronder staat waar.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Wie dit beleid voert</Label>
             <address className="mt-5 text-[17px] leading-8 not-italic text-[var(--t-strong)]">
               {DIBA_SITE.legalName}

@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
-import { TEAM, VAKGEBIEDEN } from "@/data/team";
+import {
+  TEAM,
+  TEAM_AANTAL,
+  TEAM_SAMENSTELLING,
+  VAKGEBIEDEN,
+} from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_EMAIL, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -80,7 +85,11 @@ const VERWACHTING = {
 };
 
 export default function WerkenBijPage() {
-  const huidtherapeuten = TEAM.filter((t) => t.vak === "huidtherapie").length;
+  /* Uit de samenstelling en niet uit de lijst met kaarten: de vijfde huidtherapeut heeft
+     nog geen kaart, maar werkt er wel. */
+  const huidtherapeuten =
+    TEAM_SAMENSTELLING.find((s) => s.vak === "huidtherapie")?.aantal ??
+    TEAM.filter((t) => t.vak === "huidtherapie").length;
 
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
@@ -92,28 +101,28 @@ export default function WerkenBijPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Werken bij</span>
+              <span className="text-[var(--on-dark-body)]">Werken bij</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Werken bij
               <br />
-              <span className="diba-accent">Diba Clinics</span>
+              <span className="diba-accent-on-dark">Diba Clinics</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              We zijn met {TEAM.length}, waarvan {huidtherapeuten}{" "}
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+              We zijn met {TEAM_AANTAL}, waarvan {huidtherapeuten}{" "}
               huidtherapeuten. Er wordt gewerkt met laser, licht, needling en
               peelings, en elk traject begint met een meting. Dat laatste is
               geen slogan maar de volgorde waarin het hier gaat.
@@ -121,7 +130,7 @@ export default function WerkenBijPage() {
           </div>
 
           {/* De vacatures meteen in beeld: daar kom je voor. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Open vacatures · {VACATURES.length}</Label>
             <ul className="mt-6 space-y-2">
               {VACATURES.map((v) => (
@@ -160,18 +169,16 @@ export default function WerkenBijPage() {
       </section>
 
       {/* ── De signatuur: wat we verwachten en wat niet ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
-              <Label opDonker>Voordat je solliciteert</Label>
+              <Label>Voordat je solliciteert</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
                 Wat we van{" "}
-                <span className="diba-accent-on-dark">
-                  een nieuwe collega vragen
-                </span>
+                <span className="diba-accent">een nieuwe collega vragen</span>
               </h2>
-              <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
+              <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
                 Elke vacature vraagt om een teamplayer met passie voor de huid.
                 Wat een kliniek echt van je verwacht staat er nooit bij, en wat
                 ze níet verwacht al helemaal niet. Op een site waar bij elke
@@ -181,12 +188,12 @@ export default function WerkenBijPage() {
 
             <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-14">
               <div>
-                <Label opDonker>Dit verwachten we wel</Label>
+                <Label>Dit verwachten we wel</Label>
                 <ul className="mt-5 space-y-4">
                   {VERWACHTING.wel.map((w) => (
                     <li
                       key={w}
-                      className="rounded-[var(--r-md)] bg-white/10 p-5 text-[15px] leading-7 text-[var(--on-dark-body)]"
+                      className="rounded-[var(--r-md)] bg-white p-5 text-[15px] leading-7 text-[var(--t-body)]"
                     >
                       {w}
                     </li>
@@ -194,12 +201,12 @@ export default function WerkenBijPage() {
                 </ul>
               </div>
               <div>
-                <Label opDonker>Dit verwachten we niet</Label>
+                <Label>Dit verwachten we niet</Label>
                 <ul className="mt-5 space-y-4">
                   {VERWACHTING.niet.map((n) => (
                     <li
                       key={n}
-                      className="rounded-[var(--r-md)] bg-white/10 p-5 text-[15px] leading-7 text-[var(--on-dark-body)]"
+                      className="rounded-[var(--r-md)] bg-white p-5 text-[15px] leading-7 text-[var(--t-body)]"
                     >
                       {n}
                     </li>

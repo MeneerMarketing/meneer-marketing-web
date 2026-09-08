@@ -50,13 +50,15 @@ export async function generateMetadata({
 }
 
 /** "Huidzorg voor *mannen*" wordt een kop met het accentwoord in groen. */
+/* Staat alleen in de hero, en die is donker (Yasin, 8 september 2026): het accent is de
+   on-dark-variant. */
 function Sterkop({ tekst }: { tekst: string }) {
   const delen = tekst.split("*");
   return (
     <h1 className="diba-display-l mt-6 max-w-[21ch]">
       {delen.map((d, i) =>
         i % 2 === 1 ? (
-          <span key={i} className="diba-accent">
+          <span key={i} className="diba-accent-on-dark">
             {d}
           </span>
         ) : (
@@ -85,32 +87,32 @@ export default async function DoelgroepPage({ params }: PageProps) {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/doelgroep" className="hover:text-[var(--g-700)]">
+              <Link href="/doelgroep" className="hover:text-white">
                 Voor wie
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">{d.meta}</span>
+              <span className="text-[var(--on-dark-body)]">{d.meta}</span>
             </nav>
 
             <Sterkop tekst={d.titel} />
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               {publicCopy(d.korteOmschrijving)}
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Waar het op neerkomt</Label>
             <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
               {publicCopy(d.kernzin)}

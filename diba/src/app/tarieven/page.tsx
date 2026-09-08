@@ -93,34 +93,37 @@ export default function TarievenPage() {
         ])}
       />
 
-      {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+      {/* ── Hero ──
+          Donker, net als de hero van de homepage (Yasin, 7 september 2026: "het ziet er
+          nu te wit uit allemaal"). De intakekaart blijft wit en springt er zo juist uit:
+          dat is de ene prijs die je hier moet zien. */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        <div className="mx-auto grid gap-10 px-5 py-14 sm:px-9 lg:grid-cols-[1.1fr_0.9fr] lg:px-[7.5vw] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Tarieven</span>
+              <span className="text-[var(--on-dark-body)]">Tarieven</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[21ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch] text-[var(--on-dark)]">
               Alle tarieven
               <br />
-              <span className="diba-accent">op één plek</span>
+              <span className="diba-accent-on-dark">op één plek</span>
             </h1>
 
-            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Wat een behandeling kost hoor je liever voordat je een afspraak
               maakt dan erna. Daarom staat het hier: elk tarief, per sessie en
               per zone, zonder dat je ervoor hoeft te bellen.
             </p>
 
-            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Wat je hier niet vindt is een pakket met een streep door de oude
               prijs. Er zijn geen kortingen en geen acties, dus er is ook nooit
               een moment waarop je te vroeg of te laat was.
@@ -133,7 +136,7 @@ export default function TarievenPage() {
               een behandeling kost hangt af van welke het wordt, en dat is precies wat je
               daar hoort. Het bedrag komt uit de behandelingentabel, zodat het niet naast
               /intake en het huidprofiel uit de pas gaat lopen. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
             <Label>Waar een prijs begint</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
               De intake: {intakeBedrag}
@@ -199,8 +202,14 @@ export default function TarievenPage() {
 
       {/* ── De laserzones ──
           Dit blijft een tabel, want dat is het ook: veertig zones tegen twee
-          tarievenlijsten. Rijen en kolommen in de letterlijke zin. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+          tarievenlijsten. Rijen en kolommen in de letterlijke zin.
+
+          Het id is het doel van de verwijzing in de rij Laserontharing hierboven: die rij
+          had vier regels feiten en geen enkel zonetarief, terwijl de tabel hier stond. */}
+      <section
+        id="laserontharing-per-zone"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+      >
         <div className="mx-auto">
           <div>
             <Label>Laserontharing per zone</Label>

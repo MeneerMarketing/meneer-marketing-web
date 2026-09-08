@@ -73,8 +73,12 @@ export const ZONES: readonly Zone[] = [
   },
 ];
 
+/* Rojda, 7 september 2026: er stond dat psoriasis niet bij een huidkliniek hoort. Dat
+   klopt niet helemaal: de diagnose en de medische behandeling horen bij de huisarts of
+   dermatoloog, maar de huid beoordelen en adviseren over ondersteunende verzorging doen
+   wij wel. Die tweedeling staat nu overal op deze pagina. */
 export const SILHOUET_SLOT =
-  "Psoriasis kan op verschillende plekken voorkomen Dat is de reden dat een crème de plek aanpakt en niet de oorzaak, en dat dit bij een dermatoloog hoort en niet bij een huidkliniek.";
+  "Psoriasis kan op verschillende plekken voorkomen. Dat is de reden dat een crème de plek aanpakt en niet de oorzaak: de diagnose en de medische behandeling horen bij de huisarts of dermatoloog. Wij beoordelen de huid en adviseren over ondersteunende verzorging.";
 
 export const PSORIASIS_WEL_NIET = {
   wel: [
@@ -95,14 +99,14 @@ export const PSORIASIS_WEL_NIET = {
 
 export const PSORIASIS_WIJ_DOEN_NIET = [
   {
-    titel: "Wij behandelen geen psoriasis",
+    titel: "Geen medische behandeling van psoriasis",
     tekst:
-      "Dit is een aandoening van het afweersysteem. De behandeling daarvan hoort bij een dermatoloog, en die rol nemen wij niet over.",
+      "Dit is een aandoening van het afweersysteem. De diagnose en de medische behandeling horen bij de huisarts of dermatoloog; waar nodig werken we met hen samen of verwijzen we door. Wat wij wel doen: je huid beoordelen en adviseren over ondersteunende huidverzorging.",
   },
   {
-    titel: "Geen laser of peeling op plekken",
+    titel: "Geen huidbeschadigende behandeling op actieve plekken",
     tekst:
-      "Beschadiging van de huid kan op die plek juist een nieuwe plek uitlokken. Dat is een bekend patroon en het is voor ons een harde grens. [MEDISCHE-CHECK-ROJDA]",
+      "Actieve psoriasisplekken behandelen wij niet met huidbeschadigende of intensief exfoliërende behandelingen. Beschadiging kan op die plek juist een nieuwe plek uitlokken. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     titel: "Geen uitspraken over jouw medicatie",
@@ -118,9 +122,9 @@ export const PSORIASIS_FAQ = [
       "Nee. Het is een aandoening van je eigen afweersysteem en niet overdraagbaar, ook niet bij aanraking.",
   },
   {
-    vraag: "Waarom hoort dit niet bij een huidkliniek?",
+    vraag: "Wat kunnen jullie bij psoriasis wel doen?",
     antwoord:
-      "Omdat de oorzaak niet in de huid zit. Wij kunnen een plek verzachten en niets aan de oorzaak doen, en dan verkoop je sessies aan iets dat blijft terugkomen.",
+      "Bij psoriasis kunnen wij de huid beoordelen en adviseren over ondersteunende huidverzorging. Voor de diagnose en medische behandeling werken we waar nodig samen met of verwijzen we naar de huisarts of dermatoloog. Actieve psoriasisplekken behandelen wij niet met huidbeschadigende of intensief exfoliërende behandelingen.",
   },
   {
     vraag: "Ik heb alleen putjes in mijn nagels. Telt dat?",

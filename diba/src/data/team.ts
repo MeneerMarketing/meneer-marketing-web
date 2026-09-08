@@ -26,11 +26,15 @@
  * het gaat over hen.
  * [COPY-NODIG: akkoord per persoon op zijn of haar eigen tekst]
  *
- * Portretten staan er sinds de eigen shoot: acht staande opnamen, geen stockfoto's. Welk
- * portret bij welke naam hoort is nog een aanname, zie het veld `portret` hieronder.
+ * Portretten staan er sinds de eigen shoot: acht staande opnamen, geen stockfoto's. Rojda
+ * heeft de koppeling op 8 september 2026 nagelopen: de man is Andres, Iris krijgt voorlopig
+ * geen foto, en drie namen zijn vervangen omdat die mensen er niet meer werken (Melanie,
+ * Bahar, Rialda). Portret 4, de vrouw met de tablet, hoort daardoor bij niemand meer en
+ * staat nergens op de site. [GEGEVEN-NODIG: wie is dat, en wie is de vijfde huidtherapeut?]
  */
 
-export type Vakgebied = "huidtherapie" | "orthomoleculair" | "praktijk";
+export type Vakgebied =
+  "huidtherapie" | "orthomoleculair" | "schoonheid" | "praktijk";
 
 export type Teamlid = {
   readonly slug: string;
@@ -42,16 +46,15 @@ export type Teamlid = {
   /**
    * Portret uit de eigen shoot, staand.
    *
-   * [GEGEVEN-NODIG: staat bij elke naam het juiste portret? Okan]
-   *
-   * De koppeling tussen naam en gezicht is hier een aanname en verder niets. De opnamen
-   * dragen alleen een cameranummer, en wie erop staat is uit het bestand niet af te
-   * leiden. Ze staan nu in de volgorde waarin ze zijn aangeleverd naast de namen in de
-   * volgorde waarin die hier stonden; dat kan kloppen en het kan er volledig naast zitten.
+   * De opnamen dragen alleen een cameranummer; wie erop staat is uit het bestand niet af
+   * te leiden. Rojda heeft de reeks op 8 september 2026 nagelopen en de man aangewezen als
+   * Andres. Voor de vrouwen geldt nog steeds: het portret staat bij de naam die op die
+   * plek in de lijst hoort, en of dat gezicht die naam is, moet iemand bevestigen die het
+   * team kent. [GEGEVEN-NODIG: portret per naam bevestigen, Okan]
    *
    * Iemands gezicht bij de verkeerde naam is niet zomaar een schoonheidsfoutje: het is een
    * van de weinige dingen op deze site die een bezoeker die hier komt zelf kan zien
-   * kloppen of niet. Dus dit moet iemand nalopen die het team kent, en niet ik.
+   * kloppen of niet.
    */
   readonly portret?: string;
 };
@@ -82,44 +85,57 @@ export const TEAM: readonly Teamlid[] = [
     bio: "Demi werkt als orthomoleculair huidspecialist en kijkt daarbij naar wat er van binnenuit meespeelt. Bij haar begint een afspraak vaker met vragen dan met een apparaat, en dat is geen omweg: bij een deel van de huidklachten zit de aanjager niet in de huid.",
   },
   {
+    /* Rojda, 8 september 2026: "Andres is die man, die moet links." Het staande portret
+       van de enige man in de reeks is dus van hem, en hij staat als eerste in zijn groep. */
     slug: "andres",
-    portret: "/images/shoot/team-portret-4.jpg",
+    portret: "/images/shoot/team-portret-6.jpg",
     naam: "Andres",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
-    bio: "Andres is huidtherapeut en werkt vooral met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en hij zegt het ook als een behandeling bij jouw huid minder oplevert dan je hoopt.",
+    bio: "Andres is huidtherapeut en werkt met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en zegt het ook als een behandeling bij jouw huid minder oplevert.",
   },
   {
-    slug: "melanie",
+    /* Rojda, 8 september 2026: Melanie werkt er niet meer; op deze plek hoort Anouk. Het
+       portret dat bij deze kaart stond blijft staan, want de shoot is van na Melanies
+       vertrek. [GEGEVEN-NODIG: is dit inderdaad Anouk op de foto? Okan] */
+    slug: "anouk",
     portret: "/images/shoot/team-portret-5.jpg",
-    naam: "Melanie",
+    naam: "Anouk",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
-    bio: "Melanie is huidtherapeut. Zij doet veel van de trajecten die over maanden lopen, en dat betekent dat je haar vaker ziet dan één keer. Bij elke controle wordt er gemeten in plaats van geschat, zodat je zelf kunt zien of het schema klopt.",
+    bio: "Anouk is huidtherapeut. Zij doet veel van de trajecten die over maanden lopen, en dat betekent dat je haar vaker ziet dan één keer. Bij elke controle wordt er gemeten in plaats van geschat, zodat je zelf kunt zien of het schema klopt.",
   },
   {
+    /* Rojda, 8 september 2026: bij Iris voorlopig geen foto. De kaart blijft; het portret
+       dat hier stond was van Andres. */
     slug: "iris",
-    portret: "/images/shoot/team-portret-6.jpg",
     naam: "Iris",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
     bio: "Iris is huidtherapeut en werkt veel met mensen die eerst ergens anders geweest zijn. Zij begint dan bij wat er al geprobeerd is, want dat scheelt maanden opnieuw uitproberen. Ook als dat betekent dat een eerder advies overeind blijft.",
   },
   {
-    slug: "bahar",
+    /* Rojda, 8 september 2026: Bahar werkt er niet meer; hier hoort Cheyenne.
+       [GEGEVEN-NODIG: is dit Cheyenne op de foto? Okan] */
+    slug: "cheyenne",
     portret: "/images/shoot/team-portret-7.jpg",
-    naam: "Bahar",
+    naam: "Cheyenne",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
-    bio: "Bahar is huidtherapeut. Zij neemt de tijd voor de uitleg vooraf, ook als die uitleg langer duurt dan de behandeling zelf. Weet je na afloop niet waarom er iets gedaan is, dan is er iets misgegaan; dat is haar maatstaf.",
+    bio: "Cheyenne is huidtherapeut. Zij neemt de tijd voor de uitleg vooraf, ook als die uitleg langer duurt dan de behandeling zelf. Weet je na afloop niet waarom er iets gedaan is, dan is er iets misgegaan; dat is haar maatstaf.",
   },
   {
-    slug: "rialda",
+    /* Rojda, 8 september 2026: Rialda werkt er niet meer; hier hoort Elaf, "huidspecialist".
+       Dat is bewust niet "huidtherapeut": die titel is beschermd en Rojda gebruikte hem
+       niet. Elaf staat daarom bij het vak schoonheidsspecialist, het enige behandelende
+       vak in de samenstelling dat nog geen kaart had. [GEGEVEN-NODIG: klopt dat, en is dit
+       Elaf op de foto? Okan] */
+    slug: "elaf",
     portret: "/images/shoot/team-portret-8.jpg",
-    naam: "Rialda",
-    functie: "Huidtherapeut",
-    vak: "huidtherapie",
-    bio: "Rialda is huidtherapeut en werkt vaak met huid die snel reageert. Daar is de eerste stap meestal rust en niet een sterkere instelling, en dat is een gesprek dat ze liever vooraf voert dan achteraf.",
+    naam: "Elaf",
+    functie: "Huidspecialist",
+    vak: "schoonheid",
+    bio: "Elaf is huidspecialist en doet de verzorgende behandelingen: de reiniging, HydraFacial, OxyGeneo en de peelings die aan de oppervlakte blijven. Zij is vaak de eerste die je huid onder handen heeft, en als zij iets ziet wat bij een huidtherapeut hoort, hoor je dat voordat ze verdergaat.",
   },
 ];
 
@@ -180,8 +196,21 @@ export const VAKGEBIEDEN: readonly {
     beschermd: false,
     behandelend: true,
     wat: "Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.",
+    /* Rojda, 7 september 2026, letterlijk. */
     opleiding:
-      "Een aanvullende opleiding naast de huidtherapie, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.",
+      "Een aanvullende opleiding naast de huidtherapie of schoonheidsspecialiste, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.",
+  },
+  {
+    /* Rojda, 7 september 2026: het team heeft ook een allround schoonheidsspecialist.
+       Die stond nergens, ook niet als vakgebied. Sinds 8 september staat Elaf hier, met de
+       functie die Rojda noemde: huidspecialist. */
+    id: "schoonheid",
+    label: "Allround schoonheidsspecialist",
+    beschermd: false,
+    behandelend: true,
+    wat: "Doet de verzorgende behandelingen: reinigen, peelings op oppervlakkig niveau, HydraFacial en OxyGeneo, en de verzorging eromheen.",
+    opleiding:
+      "Mbo-opleiding schoonheidsspecialist, allround. Geen beschermde titel; onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register.",
   },
   {
     id: "praktijk",
@@ -245,6 +274,29 @@ export const ERKENNINGEN = [
     zin: "Het kwaliteitsregister voor schoonheidsspecialisten. Onze schoonheidsspecialisten staan er op eigen naam in.",
   },
 ] as const;
+
+/**
+ * Waar het team uit bestaat, in aantallen. Rojda, 7 september 2026:
+ * 5 huidtherapeuten, 2 orthomoleculair huidspecialisten, 1 allround
+ * schoonheidsspecialist, 1 praktijkmanager. Negen mensen.
+ *
+ * Los van TEAM, want daar staan acht namen: vier huidtherapeuten in plaats van vijf.
+ * Rojda gaf op 8 september de namen Anouk, Cheyenne en Elaf door als vervangers, en met
+ * Andres en Iris zijn dat vier huidtherapeuten en één huidspecialist. De vijfde
+ * huidtherapeut heeft nog geen naam. Tot die er is, tellen de cijfers hier wat Rojda
+ * zegt en toont de lijst wie we kennen. [GEGEVEN-NODIG: naam vijfde huidtherapeut]
+ */
+export const TEAM_SAMENSTELLING: readonly {
+  readonly vak: Vakgebied;
+  readonly aantal: number;
+}[] = [
+  { vak: "huidtherapie", aantal: 5 },
+  { vak: "orthomoleculair", aantal: 2 },
+  { vak: "schoonheid", aantal: 1 },
+  { vak: "praktijk", aantal: 1 },
+];
+
+export const TEAM_AANTAL = TEAM_SAMENSTELLING.reduce((n, s) => n + s.aantal, 0);
 
 export const KWALITEITSREGISTER = {
   naam: "Kwaliteitsregister Paramedici",

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FigmaCheckIcon } from "@/components/figma/FigmaTemplateUi";
 import Label from "@/components/ui/Label";
 import { INSURERS } from "@/data/insurers";
 import { MISVERSTANDEN, ONZE_ROL, ROUTE } from "@/data/vergoeding-route";
@@ -45,6 +44,34 @@ import VerzekeraarLogo from "@/components/vergoedingen/VerzekeraarLogo";
  * Eén donkergroen vlak: wat wij wel en niet doen (§5).
  */
 
+/**
+ * Het vinkje bij de registraties: een gevuld olijfrondje met een wit haakje.
+ *
+ * Hier stond het open cirkeltje uit het Figma-sjabloon, en dat las als een leeg
+ * selectievakje (Yasin, 7 september 2026: "die vinkjes pakken me niet"). Gevuld leest
+ * als afgevinkt: dit is geregeld.
+ */
+function Vinkje() {
+  return (
+    <span
+      aria-hidden="true"
+      className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--g-700)] text-white"
+    >
+      <svg
+        viewBox="0 0 16 16"
+        className="h-3.5 w-3.5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M3.5 8.5 6.5 11.5 12.5 4.5" />
+      </svg>
+    </span>
+  );
+}
+
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/vergoedingen",
   titel: "Vergoedingen",
@@ -63,27 +90,27 @@ export default function VergoedingenPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Vergoedingen</span>
+              <span className="text-[var(--on-dark-body)]">Vergoedingen</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Vergoeding door
               <br />
-              <span className="diba-accent">je zorgverzekeraar</span>
+              <span className="diba-accent-on-dark">je zorgverzekeraar</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Is er een medische reden voor je klacht, dan is er een route.
               Huidtherapie zit bij de meeste verzekeraars in het aanvullende
               pakket, en dan gaat het verder over jouw polis: welk pakket je
@@ -91,14 +118,30 @@ export default function VergoedingenPage() {
               moet schrijven.
             </p>
 
-            {/* Rojda: "Ik zie juist al onze sterke punten niet terug." Dit is er een van,
-                en op deze pagina is het geen keurmerkplaatje maar het antwoord op de vraag
-                die iemand hier komt stellen: mag ik hierheen met mijn polis. */}
-            <ul className="mt-8 space-y-3">
+            {/* Stond rechts in een kaart die verder leeg was; de lijst met registraties
+                stond links en maakte die kolom twee keer zo lang (Yasin, 7 september
+                2026). Nu omgekeerd: de korte tekst bij de kop, de lijst in de kaart. */}
+            <p className="mt-6 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+              Voorwaarden en maxima veranderen per jaar en per pakket. Jouw
+              actuele bedrag staat dus in je eigen polis, en daar klopt het ook
+              echt. Wat hier staat is hoe het werkt, en dat blijft van jaar tot
+              jaar hetzelfde.
+            </p>
+          </div>
+
+          {/* Rojda: "Ik zie juist al onze sterke punten niet terug." Dit is er een van,
+              en op deze pagina is het geen keurmerkplaatje maar het antwoord op de vraag
+              die iemand hier komt stellen: mag ik hierheen met mijn polis. */}
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
+            <Label>Waar je op kunt rekenen</Label>
+            <ul className="mt-6 divide-y divide-[var(--g-100)]">
               {ERKENNINGEN.map((e) => (
-                <li key={e.naam} className="flex gap-3">
-                  <FigmaCheckIcon />
-                  <span className="max-w-[48ch]">
+                <li
+                  key={e.naam}
+                  className="flex gap-4 py-4 first:pt-0 last:pb-0"
+                >
+                  <Vinkje />
+                  <span className="min-w-0">
                     <strong className="block text-[16px] font-medium leading-7 text-[var(--t-strong)]">
                       {e.naam}
                     </strong>
@@ -110,25 +153,13 @@ export default function VergoedingenPage() {
               ))}
             </ul>
           </div>
-
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
-            <Label>Waar je het bedrag vindt</Label>
-            <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
-              Voorwaarden en maxima veranderen per jaar en per pakket.
-            </p>
-            <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              Jouw actuele bedrag staat dus in je eigen polis, en daar klopt het
-              ook echt. Wat op deze pagina staat is hoe het werkt, en dat blijft
-              van jaar tot jaar hetzelfde.
-            </p>
-          </div>
         </div>
       </section>
 
       {/* ── De route: drie vragen ── */}
       {/* Een pagina over vergoeding gaat over papier en polissen. Dit is de plek waar het
           gesprek daarover werkelijk plaatsvindt. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/balie-ontvangst.jpg"

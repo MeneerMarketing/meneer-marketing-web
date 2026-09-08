@@ -62,76 +62,94 @@ export default function ApparatuurPage() {
         ])}
       />
 
-      {/* ── Hero ── */}
-      <section className="relative overflow-hidden">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -top-32 -right-28 h-[440px] w-[440px] rounded-full bg-[var(--g-050)]"
-        />
-        <DibaLeafMark
-          aria-hidden="true"
-          className="pointer-events-none absolute top-16 right-24 hidden h-[170px] w-[170px] rotate-12 text-[var(--g-200)] lg:block"
-        />
-        <div className="relative mx-auto px-5 pt-12 pb-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
-          <nav
-            aria-label="Kruimelpad"
-            className="diba-label flex flex-wrap gap-2"
-          >
-            <Link href="/" className="hover:text-[var(--g-700)]">
-              Home
-            </Link>
-            <span aria-hidden="true">/</span>
-            <span className="text-[var(--t-muted)]">Apparatuur</span>
-          </nav>
+      {/* ── Hero ──
+          Donker, net als de hero's van home, /behandelingen en /tarieven (Yasin,
+          7 september 2026). De mintcirkel en het blad rechtsboven zijn weg: die vulden de
+          hoek zonder iets te zeggen, en Yasin vond ze niet mooi. */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        <div className="mx-auto grid gap-10 px-5 pt-12 pb-14 sm:px-9 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:px-[7.5vw] lg:pt-16 lg:pb-16">
+          <div>
+            <nav
+              aria-label="Kruimelpad"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-white">
+                Home
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--on-dark-body)]">Apparatuur</span>
+            </nav>
 
-          <h1 className="diba-display-l mt-8 max-w-[16ch]">
-            De apparatuur
-            <br />
-            <span className="diba-accent">in onze kliniek</span>
-          </h1>
+            <h1 className="diba-display-l mt-8 max-w-[16ch] text-[var(--on-dark)]">
+              De apparatuur
+              <br />
+              <span className="diba-accent-on-dark">in onze kliniek</span>
+            </h1>
 
-          <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Een apparaatnaam zegt minder dan hij lijkt te zeggen. Wat het
-            verschil maakt is wat er vooraf gemeten is en welke instelling
-            daarbij hoort, en niet welk merk er op de kast staat.
-          </p>
-          <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--t-body)]">
-            Het is andersom. Een apparaat is gereedschap. Wat telt is de
-            instelling, de hand die het vasthoudt en of het bij jouw huid past.
-            Daarom staat bij elk apparaat hieronder ook wat het níet kan.
-          </p>
+            <p className="mt-7 max-w-[56ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+              Een apparaatnaam zegt minder dan hij lijkt te zeggen. Wat het
+              verschil maakt is wat er vooraf gemeten is en welke instelling
+              daarbij hoort, en niet welk merk er op de kast staat.
+            </p>
+            <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+              Het is andersom. Een apparaat is gereedschap. Wat telt is de
+              instelling, de hand die het vasthoudt en of het bij jouw huid
+              past. Daarom staat bij elk apparaat hieronder ook wat het níet
+              kan.
+            </p>
+          </div>
+
+          {/* De rechterkolom was leeg (Yasin, 7 september 2026: "zo leeg en niet leuk").
+              Nu een opname van een apparaat in de kliniek, in dezelfde vorm als het beeld
+              in de hero van de homepage: ronde hoeken, de grote hoek linksonder, een
+              plaatsnaam als pil. Op de telefoon staat het beeld onder de tekst. */}
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--r-lg)] rounded-bl-[4.5rem] bg-[var(--g-600)] sm:aspect-[16/10] lg:aspect-auto lg:h-[460px] lg:rounded-bl-[8rem]">
+            <Image
+              src="/images/shoot/kliniek-nordlys-staand.jpg"
+              alt="Behandelaar met de Nordlys in de gang van de kliniek"
+              fill
+              priority
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="object-cover object-[50%_35%]"
+            />
+            <span className="diba-label absolute top-5 left-5 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
+              In de kliniek
+            </span>
+          </div>
         </div>
       </section>
 
-      {/* ── De stelling ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      {/* ── De stelling ──
+          Licht, want de hero erboven is nu donker en twee donkere vlakken achter elkaar
+          mag niet (§5). Het blok blijft een vlak, alleen in de zachte tint. */}
+      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12">
             <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16">
               <div>
-                <Label opDonker>Waarom dit ertoe doet</Label>
+                <Label>Waarom dit ertoe doet</Label>
                 <p className="diba-display-s mt-4 max-w-[22ch]">
                   Twee klinieken met hetzelfde apparaat{" "}
-                  <span className="diba-accent-on-dark">
+                  <span className="diba-accent">
                     {" "}
                     geven niet hetzelfde resultaat.
                   </span>
                 </p>
               </div>
               <div>
-                <p className="text-[16px] leading-7 text-[var(--on-dark-body)]">
+                <p className="text-[16px] leading-7 text-[var(--t-body)]">
                   Het verschil zit in wat er vooraf gemeten is, welke instelling
                   er wordt gekozen en of iemand durft te zeggen dat een
                   behandeling bij jou niet past. Een merknaam zegt daar niets
                   over.
                 </p>
-                <p className="mt-4 text-[16px] leading-7 text-[var(--on-dark-body)]">
+                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
                   Daarom begint elk traject hier met een meting en niet met een
                   apparaat.
                 </p>
                 <Link
                   href="/intake"
-                  className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white"
+                  className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)]"
                 >
                   Wat er in een huidconsult gebeurt
                 </Link>

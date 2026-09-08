@@ -127,8 +127,9 @@ export default function Pagina() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/eerlijk-advies-consult.jpg"
-              alt="Behandelaar en cliënt in gesprek tijdens een consult"
+              /* Yasin, 7 september 2026: de HydraFacial Syndeo uit de shoot. */
+              src="/images/shoot/beh-hydrafacial-syndeo.jpg"
+              alt="HydraFacial Syndeo op het voorhoofd van een cliënt"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

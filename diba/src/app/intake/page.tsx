@@ -95,44 +95,47 @@ export default function IntakePage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Huidconsult</span>
+              <span className="text-[var(--on-dark-body)]">Huidconsult</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Wat er in een
               <br />
-              <span className="diba-accent">intake gebeurt</span>
+              <span className="diba-accent-on-dark">intake gebeurt</span>
             </h1>
 
-            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               De behandelaar bekijkt je huid en meet met de EVE-M onder vaste
               belichting. Je kijkt mee op het scherm en hoort wat er bij jou
               mogelijk is, in welke volgorde en over hoeveel sessies.
             </p>
 
-            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Word je in dezelfde afspraak behandeld, dan vervallen de
               intakekosten. Je beslist in je eigen tijd wat je daarna doet.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href={DIBA_SALONIZED_BOOKING_URL || "/contact"}>
+              <Button
+                variant="primair-op-donker"
+                href={DIBA_SALONIZED_BOOKING_URL || "/contact"}
+              >
                 Plan een huidconsult
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -142,22 +145,22 @@ export default function IntakePage() {
           </div>
 
           {/* De feiten. Vier regels die de twijfel wegnemen voordat de tekst begint. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
-            <Label opDonker>In het kort</Label>
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
+            <Label>In het kort</Label>
             <dl className="mt-6 space-y-4">
               {intakeFeiten().map((f) => (
                 <div
                   key={f.label}
-                  className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-5 py-4"
+                  className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-050)] px-5 py-4"
                 >
-                  <dt className="diba-label diba-label-on-dark">{f.label}</dt>
+                  <dt className="diba-label">{f.label}</dt>
                   <dd className="diba-card-title text-right">
                     {publicCopy(f.waarde, "Nog niet vastgesteld")}
                   </dd>
                 </div>
               ))}
             </dl>
-            <p className="mt-6 text-[15px] leading-7 text-[var(--on-dark-body)]">
+            <p className="mt-6 text-[15px] leading-7 text-[var(--t-body)]">
               Wat kost Behandeling op advies?
             </p>
           </div>

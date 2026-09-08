@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import FigmaHomeApp from "@/components/figma/FigmaHomeApp";
 import { HOME_FAQ_ITEMS } from "@/data/home-faq";
 import { publicCopy } from "@/lib/copy-flags";
+import { homeWensen } from "@/lib/home-wensen";
 import { SchemaMarkup, faqSchema } from "@/lib/schema";
 import { DIBA_SITE } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -25,7 +26,9 @@ export default function HomePage() {
           })),
         )}
       />
-      <FigmaHomeApp />
+      {/* De huidwensen met hun behandelingen worden hier, op de server, samengesteld en
+          als kale props doorgegeven: de behandelingendata blijft uit de browser. */}
+      <FigmaHomeApp wensen={homeWensen()} />
     </>
   );
 }

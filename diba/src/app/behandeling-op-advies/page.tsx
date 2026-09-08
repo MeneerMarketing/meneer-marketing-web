@@ -187,10 +187,13 @@ export default function BehandelingOpAdviesPage() {
             </div>
           </div>
 
+          {/* Yasin, 7 september 2026: een foto van de intakeruimte. Dit is de opname aan
+              tafel, met koffie, waar het gesprek gevoerd wordt; er stond een behandelfoto
+              met een productdoos, en die zei niets over het gesprek. */}
           <BeeldVignet
-            src="/images/shoot/eerlijk-advies-consult.jpg"
-            alt="Behandelaar bespreekt het advies met een client in de behandelkamer"
-            onderschrift="De behandelaar adviseert, jij beslist mee"
+            src="/images/shoot/gesprek-in-de-kamer.jpg"
+            alt="Cliënt en behandelaar aan tafel in de intakeruimte, met een kop koffie"
+            onderschrift="Het gesprek waarmee elke afspraak op advies begint"
             sizes="(min-width: 1024px) 44vw, 92vw"
             brandpunt={45}
             className="aspect-[4/3] lg:aspect-[5/4]"

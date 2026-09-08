@@ -73,13 +73,8 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
         compact ? "relative -mt-7 px-1 py-3" : "px-2 py-6"
       }`}
     >
-      {DIBA_HOME_PROOF_ITEMS.map((item, i) => (
-        <div
-          key={item.label}
-          className={`text-center ${compact ? "px-1" : "px-4"} ${
-            i > 0 ? "border-l border-[var(--g-100)]" : ""
-          }`}
-        >
+      {DIBA_HOME_PROOF_ITEMS.map((item, i) => {
+        const cijfer = (
           <dd
             className={`leading-tight font-medium text-[var(--g-700)] tabular-nums ${
               compact
@@ -89,15 +84,40 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
           >
             {getal(item)}
           </dd>
-          <dt
-            className={`text-[var(--t-muted)] ${
-              compact ? "mt-1 text-[10px] leading-tight" : "diba-label mt-2"
+        );
+        return (
+          <div
+            key={item.label}
+            className={`text-center ${compact ? "px-1" : "px-4"} ${
+              i > 0 ? "border-l border-[var(--g-100)]" : ""
             }`}
           >
-            {compact ? (item.kort ?? item.label) : item.label}
-          </dt>
-        </div>
-      ))}
+            {/* Een cijfer dat ergens anders staat dan bij ons is aanklikbaar, zodat je
+                het kunt nakijken. De Zorgkaart-score is het enige cijfer met een href;
+                de andere drie komen uit ons eigen systeem en hebben geen plek buiten
+                de site waar ze te controleren zijn. */}
+            {item.href ? (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+              >
+                {cijfer}
+              </a>
+            ) : (
+              cijfer
+            )}
+            <dt
+              className={`text-[var(--t-muted)] ${
+                compact ? "mt-1 text-[10px] leading-tight" : "diba-label mt-2"
+              }`}
+            >
+              {compact ? (item.kort ?? item.label) : item.label}
+            </dt>
+          </div>
+        );
+      })}
     </dl>
   );
 }

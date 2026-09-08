@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_SITE_URL } from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_ZORGKAART } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
@@ -78,6 +78,22 @@ const BEVESTIGD = [
       "Het scheelt je het gedoe van voorschieten en declareren op de behandelingen die wél onder je polis vallen.",
     link: { label: "Vergoeding per verzekeraar", href: "/vergoedingen" },
   },
+  {
+    /* Rojda, 8 september 2026: "Zorgkaart Nederland erbij." Het hoort hier omdat het het
+       enige oordeel op deze lijst is dat niet over papieren gaat maar over bezoeken, en
+       omdat wij er niets aan kunnen veranderen. Het cijfer komt uit `site.ts`, zodat het
+       niet naast de hero van de homepage uit de pas loopt. */
+    naam: "ZorgkaartNederland",
+    wie: "De kliniek",
+    wat: "De onafhankelijke waarderingssite van Patiëntenfederatie Nederland. Patiënten beoordelen er zorgaanbieders; wij kunnen die waarderingen niet plaatsen, aanpassen of weghalen.",
+    waarom: `Een oordeel dat niet via ons loopt zegt meer dan een oordeel dat dat wel doet. Wij staan er met een ${DIBA_ZORGKAART.score
+      .toFixed(1)
+      .replace(".", ",")}, en dat cijfer kijk je daar zelf na.`,
+    link: {
+      label: "Bekijk ons op ZorgkaartNederland",
+      href: DIBA_ZORGKAART.url,
+    },
+  },
 ] as const;
 
 /**
@@ -124,35 +140,36 @@ export default function KwaliteitPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <nav
           aria-label="Kruimelpad"
-          className="diba-label flex flex-wrap gap-2"
+          className="diba-label diba-label-on-dark flex flex-wrap gap-2"
         >
-          <Link href="/" className="hover:text-[var(--g-700)]">
+          <Link href="/" className="hover:text-white">
             Home
           </Link>
           <span aria-hidden="true">/</span>
-          <Link href="/over-ons" className="hover:text-[var(--g-700)]">
+          <Link href="/over-ons" className="hover:text-white">
             Over Diba
           </Link>
           <span aria-hidden="true">/</span>
-          <span className="text-[var(--t-muted)]">
+          <span className="text-[var(--on-dark-body)]">
             Kwaliteit en registraties
           </span>
         </nav>
 
         <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-16">
           <h1 className="diba-display-l max-w-[15ch]">
-            Waar je ons <span className="diba-accent">op kunt aanspreken</span>
+            Waar je ons{" "}
+            <span className="diba-accent-on-dark">op kunt aanspreken</span>
           </h1>
           <div>
-            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Iedereen mag in Nederland een huidkliniek beginnen. Wat een
               kliniek onderscheidt is dus niet wat zij zelf zegt, maar bij welke
               regels zij zich heeft laten aansluiten en wie daarop toeziet.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Hieronder staat waar we bij aangesloten zijn, wat dat inhoudt, wat
               je eraan hebt en hoe een klacht loopt.
             </p>
@@ -165,8 +182,7 @@ export default function KwaliteitPage() {
         <div className="mx-auto">
           <Label>Aangesloten bij</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Vijf dingen{" "}
-            <span className="diba-accent">die je kunt nakijken</span>
+            Zes dingen <span className="diba-accent">die je kunt nakijken</span>
           </h2>
 
           <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:items-start">
@@ -185,13 +201,25 @@ export default function KwaliteitPage() {
                 <p className="mt-4 grow text-[15px] leading-7 text-[var(--t-body)]">
                   {r.waarom}
                 </p>
-                <Link
-                  href={r.link.href}
-                  className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
-                >
-                  {r.link.label}
-                  <span aria-hidden="true">›</span>
-                </Link>
+                {r.link.href.startsWith("http") ? (
+                  <a
+                    href={r.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                  >
+                    {r.link.label}
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                ) : (
+                  <Link
+                    href={r.link.href}
+                    className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                  >
+                    {r.link.label}
+                    <span aria-hidden="true">›</span>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

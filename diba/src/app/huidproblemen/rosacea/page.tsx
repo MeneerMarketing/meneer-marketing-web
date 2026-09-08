@@ -14,7 +14,6 @@ import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Triggersorteerder from "@/components/rosacea/Triggersorteerder";
 import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
-import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
 import { ROSACEA_FAQ, ROSACEA_SOORTEN, ROSACEA_WEL_NIET } from "@/data/rosacea";
 import { zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -161,9 +160,11 @@ export default function RosaceaPage() {
           </div>
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+            {/* Rojda, 7 september 2026: "pagina van rosacea deze", de IPL-opname met de
+                Nordlys en de oogbescherming die ook op Instagram staat. */}
             <Image
-              src={FIGMA_INTENT_PIGMENT.src}
-              alt="Behandelaar beoordeelt roodheid in de huid van een cliënt"
+              src="/images/shoot/beh-nordlys-vaatjes.jpg"
+              alt="IPL-behandeling van vaatjes met de Nordlys, met oogbescherming"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

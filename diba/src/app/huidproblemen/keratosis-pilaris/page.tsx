@@ -130,10 +130,15 @@ export default function Pagina() {
             </div>
           </div>
 
+          {/* Een foto van de aandoening zelf, van Wikimedia Commons (Yasin, 7 september
+              2026, op verzoek van Rojda: er is geen eigen opname van keratosis pilaris).
+              CC BY-SA: de naam van de maker en de licentie horen erbij zolang de foto er
+              staat. Ze staan onderaan de pagina en niet als label op de foto (Yasin,
+              8 september 2026). Uitzondering op §2. */}
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-lichaam.jpg"
-              alt="Lichaamsbehandeling in de behandelkamer"
+              src="/images/stock/keratosis-pilaris-bovenarm.jpg"
+              alt="Keratosis pilaris: kleine ruwe bultjes op een bovenarm"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"
@@ -238,6 +243,22 @@ export default function Pagina() {
         topic="keratosis-pilaris"
         whatsappHref={DIBA_WHATSAPP_URL}
       />
+
+      {/* De bronvermelding van de foto bovenaan. CC BY-SA vraagt om de naam van de maker en
+          de licentie; Yasin (8 september 2026) wil die niet als label op de foto. Dus hier,
+          klein en onderaan, zoals een fotocredit in een tijdschrift. */}
+      <p className="px-5 pb-10 text-[12px] leading-5 text-[var(--t-muted)] sm:px-9 lg:px-[7.5vw]">
+        Foto bovenaan:{" "}
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Keratosis_pilaris_arm.jpg"
+          target="_blank"
+          rel="noopener noreferrer license"
+          className="underline decoration-[var(--g-200)] underline-offset-2 transition-colors hover:text-[var(--t-strong)]"
+        >
+          Irja, CC BY-SA 2.0, via Wikimedia Commons
+        </a>
+        .
+      </p>
     </main>
   );
 }

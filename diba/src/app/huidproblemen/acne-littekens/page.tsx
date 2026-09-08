@@ -148,8 +148,11 @@ export default function AcneLittekensPage() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-skinpen.jpg"
-              alt="Microneedlingbehandeling in de behandelkamer"
+              /* Rojda, 7 september 2026: "hier een foto van dermapen". De vorige opname
+                 toonde een enkele naald op een rood plekje, en dat is geen microneedling;
+                 deze toont de pen zelf, in gebruik. */
+              src="/images/shoot/beh-dermapen.jpg"
+              alt="Microneedling met een pen op het voorhoofd van een cliënt"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

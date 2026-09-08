@@ -268,7 +268,7 @@ function LegendaOnder({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
  */
 export type WerkingsvensterApparaat = Pick<
   Apparaat,
-  "naam" | "fasen" | "diepte" | "doelwit" | "werkwijze"
+  "naam" | "fasen" | "diepte" | "doelwit" | "werkwijze" | "werkwijzeNaam"
 >;
 
 /** De diepte uit de data (procenten) omgerekend naar een y in de tekening. */
@@ -521,7 +521,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                   transition: beweegt ? "opacity 400ms ease" : undefined,
                 }}
               >
-                {WERKWIJZE_NAAM[apparaat.werkwijze]}
+                {apparaat.werkwijzeNaam ?? WERKWIJZE_NAAM[apparaat.werkwijze]}
               </text>
             </svg>
           </div>

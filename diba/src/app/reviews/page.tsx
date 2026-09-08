@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reviewarchief from "@/components/reviews/Reviewarchief";
-import { REVIEW_TOPICS } from "@/data/reviews";
+import { isOnderwerp } from "@/data/review-onderwerpen";
 import { ARCHIEF_TOTAAL } from "@/data/reviews-archief";
 import type { SalonizedReviewTopic } from "@/data/salonized-reviews";
 import Label from "@/components/ui/Label";
@@ -53,19 +53,29 @@ export const metadata: Metadata = zoekmachineVelden({
 });
 
 /** Welke onderwerpen als filter in de URL mogen staan. */
-function leesOnderwerp(waarde: string | undefined) {
-  const geldig = REVIEW_TOPICS.some((t) => t.id === waarde);
-  return geldig ? (waarde as SalonizedReviewTopic | "alle") : "alle";
+function leesOnderwerp(
+  waarde: string | undefined,
+): SalonizedReviewTopic | "alle" {
+  return isOnderwerp(waarde) ? waarde : "alle";
+}
+
+function leesPagina(waarde: string | undefined) {
+  return Number.parseInt(waarde ?? "1", 10) || 1;
 }
 
 export default async function ReviewsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ onderwerp?: string; pagina?: string }>;
+  searchParams: Promise<{
+    onderwerp?: string;
+    pagina?: string;
+    sterren?: string;
+  }>;
 }) {
   const params = await searchParams;
   const onderwerp = leesOnderwerp(params.onderwerp);
-  const pagina = Number.parseInt(params.pagina ?? "1", 10) || 1;
+  const pagina = leesPagina(params.pagina);
+  const sterrenPagina = leesPagina(params.sterren);
 
   const gemiddeld = SALONIZED_REVIEW_SUMMARY.rating
     .toFixed(1)
@@ -81,39 +91,39 @@ export default async function ReviewsPage({
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Reviews</span>
+              <span className="text-[var(--on-dark-body)]">Reviews</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Wat klanten
               <br />
-              <span className="diba-accent">over ons schrijven</span>
+              <span className="diba-accent-on-dark">over ons schrijven</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews op Salonized,
               gemiddeld een {gemiddeld}. Op elke andere site is dat het
               verkoopargument. Hier staat er meteen bij waarom zo een cijfer
               minder zegt dan het lijkt.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Lees je daarna alsnog door, dan lees je iets wat je kunt wegen.
               Dat is meer waard dan een muur met vijven.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>De stand bij de bron</Label>
             <p className="mt-5 text-[64px] leading-none font-medium tracking-[-.05em] text-[var(--t-strong)] tabular-nums">
               {gemiddeld}
@@ -141,19 +151,16 @@ export default async function ReviewsPage({
       </section>
 
       {/* ── Wat vijf sterren niet zegt ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
-              <Label opDonker>Lees dit eerst</Label>
+              <Label>Lees dit eerst</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
                 Drie redenen{" "}
-                <span className="diba-accent-on-dark">
-                  {" "}
-                  om een 5,0 te wantrouwen.
-                </span>
+                <span className="diba-accent"> om een 5,0 te wantrouwen.</span>
               </h2>
-              <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
+              <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
                 Ook die van ons. Deze drie gelden voor elk reviewgemiddelde dat
                 je ergens ziet staan.
               </p>
@@ -176,17 +183,17 @@ export default async function ReviewsPage({
               ].map((r) => (
                 <li
                   key={r.kop}
-                  className="rounded-[var(--r-lg)] bg-white/10 p-7 sm:p-8"
+                  className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
                 >
                   <p className="text-[18px] leading-7 font-medium">{r.kop}</p>
-                  <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
+                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                     {r.zin}
                   </p>
                 </li>
               ))}
             </ul>
 
-            <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--on-dark-accent)]">
+            <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
               Een review kan wel een goed beeld geven van de manier waarop
               klanten worden ontvangen, geïnformeerd en behandeld.
             </p>
@@ -224,13 +231,17 @@ export default async function ReviewsPage({
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
               Sorteren op score heeft geen zin als bijna alles vijf is, en zelf
               de beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet.
-              Dus filter je zelf, met het aantal op de knop. Ook als dat aantal
-              tegenvalt.
+              Dus filter je zelf: op de klacht waarvoor iemand kwam, of op hoe
+              het bezoek was. Met het aantal op de knop, ook als dat tegenvalt.
             </p>
           </div>
 
           <div className="mt-10">
-            <Reviewarchief onderwerp={onderwerp} pagina={pagina} />
+            <Reviewarchief
+              onderwerp={onderwerp}
+              pagina={pagina}
+              sterrenPagina={sterrenPagina}
+            />
           </div>
         </div>
       </section>

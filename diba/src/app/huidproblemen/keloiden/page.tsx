@@ -119,8 +119,10 @@ export default function KeloidenPage() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-skinpen.jpg"
-              alt="Beoordeling van een litteken in de behandelkamer"
+              /* Yasin, 7 september 2026: de Fotona, want dat is het apparaat waarmee
+                 keloïden hier behandeld worden. */
+              src="/images/shoot/beh-fotona.jpg"
+              alt="Fotona-laserbehandeling met oogbescherming voor cliënt en behandelaar"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

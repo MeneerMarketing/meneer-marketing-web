@@ -97,6 +97,7 @@ function vensterApparaat(a: Apparaat): WerkingsvensterApparaat {
     diepte: a.diepte,
     doelwit: a.doelwit,
     werkwijze: a.werkwijze,
+    werkwijzeNaam: a.werkwijzeNaam,
   };
 }
 

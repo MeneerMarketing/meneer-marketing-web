@@ -137,8 +137,10 @@ export default function WallenPage() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-led-masker.jpg"
-              alt="Client met LED-masker tijdens een rustige behandeling"
+              /* Rojda, 7 september 2026: "deze voor wallen", de RRS Eyes-opname die ook
+                 op Instagram staat. */
+              src="/images/shoot/beh-rrs-eyes-close.jpg"
+              alt="RRS Eyes: injectie met een fijne naald onder het oog"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

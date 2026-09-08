@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
 import Image from "next/image";
-import { KWALITEITSREGISTER, TEAM, VAKGEBIEDEN } from "@/data/team";
+import {
+  KWALITEITSREGISTER,
+  TEAM,
+  TEAM_AANTAL,
+  TEAM_SAMENSTELLING,
+  VAKGEBIEDEN,
+} from "@/data/team";
 import { reviewsVoorTeamlid } from "@/data/team-reviews";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -37,8 +43,7 @@ import { zoekmachineVelden } from "@/lib/seo";
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/team",
   titel: "Ons team",
-  omschrijving:
-    "De acht mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.",
+  omschrijving: `De ${TEAM_AANTAL} mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.`,
 });
 
 export default function TeamPage() {
@@ -67,58 +72,63 @@ export default function TeamPage() {
       />
 
       {/* ── Hero: de belofte van de apparatuurpagina's, hier ingelost ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Team</span>
+              <span className="text-[var(--on-dark-body)]">Team</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               De mensen die
               <br />
-              <span className="diba-accent">je huid behandelen</span>
+              <span className="diba-accent-on-dark">je huid behandelen</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Bij elk apparaat op deze site staat dezelfde zin: twee klinieken
               met hetzelfde apparaat geven niet hetzelfde resultaat, want wat
               telt is de instelling en de hand die het vasthoudt.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Dat is makkelijk gezegd. Hier staat wiens hand dat is.
             </p>
           </div>
 
           {/* De samenstelling in cijfers, want dat is wat je er als klant aan hebt. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Waar het team uit bestaat</Label>
             {/* Alleen de behandelende vakken. De praktijkmanager stond hier als derde
                 regel tussen, en dat maakt van een organiserende functie een vakgebied. */}
+            {/* De aantallen komen uit TEAM_SAMENSTELLING (Rojda, 7 september 2026) en niet
+                uit de lijst met namen: die telt er acht, omdat de schoonheidsspecialist
+                nog geen kaart heeft. De cijfers kloppen dan alvast. */}
             <dl className="mt-6 space-y-1">
-              {perVak
-                .filter((v) => v.behandelend)
-                .map((v) => (
+              {TEAM_SAMENSTELLING.map((s) => {
+                const vak = VAKGEBIEDEN.find((v) => v.id === s.vak);
+                if (!vak || !vak.behandelend) return null;
+                return (
                   <div
-                    key={v.id}
+                    key={s.vak}
                     className="-mx-4 flex min-h-14 items-center justify-between gap-4 rounded-[var(--r-md)] px-4"
                   >
                     <dt className="text-[16px] leading-6 text-[var(--t-body)]">
-                      {v.label}
-                      {v.leden.length > 1 ? "en" : ""}
+                      {vak.label}
+                      {s.aantal > 1 ? "en" : ""}
                     </dt>
                     <dd className="text-[24px] leading-none font-medium text-[var(--t-strong)] tabular-nums">
-                      {v.leden.length}
+                      {s.aantal}
                     </dd>
                   </div>
-                ))}
+                );
+              })}
             </dl>
             <p className="mt-6 border-t border-[var(--g-050)] pt-5 text-[14px] leading-6 text-[var(--t-muted)]">
               Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag,
@@ -129,17 +139,16 @@ export default function TeamPage() {
       </section>
 
       {/* ── De signatuur: welke titel is beschermd ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
               <div>
-                <Label opDonker>Wat een titel betekent</Label>
+                <Label>Wat een titel betekent</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Het verschil in{" "}
-                  <span className="diba-accent-on-dark">opleiding</span>
+                  Het verschil in <span className="diba-accent">opleiding</span>
                 </h2>
-                <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
                   Wie je huid behandelt en wie meekijkt naar wat er van
                   binnenuit meespeelt, zijn twee verschillende opleidingen. Zo
                   weet je wie er bij welke vraag naast je staat.
@@ -150,7 +159,7 @@ export default function TeamPage() {
                 {VAKGEBIEDEN.filter((v) => v.behandelend).map((v) => (
                   <li
                     key={v.id}
-                    className="border-b border-white/15 pb-5 last:border-b-0 last:pb-0"
+                    className="border-b border-[var(--g-100)] pb-5 last:border-b-0 last:pb-0"
                   >
                     <p className="flex flex-wrap items-center gap-3">
                       <span className="text-[18px] leading-7 font-medium">
@@ -163,15 +172,15 @@ export default function TeamPage() {
                           als een waarschuwing bij je eigen mensen, en het feit staat een
                           regel lager alsnog. */}
                       {v.beschermd ? (
-                        <span className="diba-label rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-3 py-1 text-[var(--on-dark-btn-text)]">
+                        <span className="diba-label rounded-[var(--r-pill)] bg-[var(--g-700)] px-3 py-1 text-[var(--on-dark)]">
                           Beschermde titel
                         </span>
                       ) : null}
                     </p>
-                    <p className="mt-2 max-w-[54ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
+                    <p className="mt-2 max-w-[54ch] text-[15px] leading-7 text-[var(--t-body)]">
                       {publicCopy(v.wat)}
                     </p>
-                    <p className="mt-2 max-w-[54ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
+                    <p className="mt-2 max-w-[54ch] text-[15px] leading-7 text-[var(--t-body)]">
                       {publicCopy(v.opleiding)}
                     </p>
                   </li>
@@ -217,7 +226,23 @@ export default function TeamPage() {
                           className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.035]"
                         />
                       </div>
-                    ) : null}
+                    ) : (
+                      /* Geen portret (Rojda, 8 september 2026: "bij Iris even geen foto").
+                         Toch een vlak van dezelfde maat, anders zakt de kaart uit de rij en
+                         leest het gat als een oordeel. Een monogram in het merkgroen en
+                         "foto volgt": eerlijk over wat er nog niet is. */
+                      <div
+                        aria-hidden="true"
+                        className="flex aspect-[4/5] flex-col items-center justify-center gap-3 bg-[var(--g-050)]"
+                      >
+                        <span className="diba-display-m text-[var(--g-300)]">
+                          {lid.naam.charAt(0)}
+                        </span>
+                        <span className="diba-label text-[var(--t-muted)]">
+                          Foto volgt
+                        </span>
+                      </div>
+                    )}
 
                     <div className="p-6 sm:p-7">
                       <p className="diba-card-title text-[var(--t-strong)] transition-colors duration-500 group-hover:text-[var(--g-700)]">

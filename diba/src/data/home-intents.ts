@@ -1,4 +1,5 @@
 import type { HuidIconNaam } from "@/components/ui/HuidIcon";
+import type { HuidwensId } from "@/data/behandelingen";
 import {
   FIGMA_INTENT_ACNE,
   FIGMA_INTENT_LASER,
@@ -8,86 +9,89 @@ import {
   FIGMA_INTENT_VEROUDERING,
 } from "@/data/figma-home-images";
 
-export type HomeIntent = {
-  readonly id: string;
-  /** Het icoon uit de set. Zie HUIDICONEN in components/ui/HuidIcon. */
-  readonly icoon: HuidIconNaam;
-  readonly title: string;
-  readonly subtitle: string;
-  readonly href: string;
-  readonly image: string;
-  readonly imageAlt: string;
-};
-
-export const HOME_INTENTS: readonly HomeIntent[] = [
+/**
+ * Wat de homepage per huidwens toevoegt aan de data: een icoon en een foto.
+ *
+ * De zeven keuzes zelf staan in HUIDWENSEN (data/behandelingen), dezelfde zeven als op
+ * /behandelingen. Hier stond een eigen lijstje met eigen namen ("Pigment & melasma" waar
+ * de rest van de site "Pigment, roodheid en vaatjes" zegt), en dat liep uit elkaar zodra
+ * iemand één van de twee aanpaste. Nu is dit alleen nog het beeld bij de wens.
+ *
+ * "overig" heeft geen tegel op de homepage: dat zijn NightLase en fibromen, geen
+ * huidwens waarmee iemand binnenkomt.
+ */
+export const HOME_WENS_BEELD: Record<
+  Exclude<HuidwensId, "overig">,
   {
-    id: "acne",
+    readonly icoon: HuidIconNaam;
+    readonly image: string;
+    readonly imageAlt: string;
+  }
+> = {
+  acne: {
     icoon: "verstopte-porie",
-    title: "Acne & onzuiverheden",
-    subtitle: "Behandelingen voor mee-eters, puistjes en een onrustige huid.",
-    href: "/huidproblemen/acne",
     image: FIGMA_INTENT_ACNE.src,
     imageAlt: FIGMA_INTENT_ACNE.alt,
   },
-  {
-    id: "pigment",
+  pigment: {
     icoon: "huid-glans",
-    title: "Pigment & melasma",
-    subtitle:
-      "Behandelingen voor pigmentvlekken en melasma, passend bij je huidtype.",
-    href: "/huidproblemen/pigmentvlekken",
     image: FIGMA_INTENT_PIGMENT.src,
     imageAlt: FIGMA_INTENT_PIGMENT.alt,
   },
-  {
-    id: "laser",
-    icoon: "haarzakje",
-    title: "Laserontharing",
-    subtitle:
-      "Ontharen met laser, per zone of als pakket, voor dames en heren.",
-    href: "/laserontharing",
-    image: FIGMA_INTENT_LASER.src,
-    imageAlt: FIGMA_INTENT_LASER.alt,
-  },
-  {
-    id: "littekens",
+  littekens: {
     icoon: "huid-bultje",
-    title: "Littekens & textuur",
-    subtitle:
-      "Behandelingen die littekens en een ongelijke huidstructuur verzachten.",
-    href: "/huidproblemen/littekens",
     image: FIGMA_INTENT_LITTEKENS.src,
     imageAlt: FIGMA_INTENT_LITTEKENS.alt,
   },
-  {
-    id: "veroudering",
+  verjonging: {
     icoon: "huid-strakker",
-    title: "Huidveroudering",
-    subtitle: "Behandelingen voor fijne lijnen, rimpels en een slappere huid.",
-    href: "/huidproblemen/huidveroudering",
     image: FIGMA_INTENT_VEROUDERING.src,
     imageAlt: FIGMA_INTENT_VEROUDERING.alt,
   },
-  /* Deze twee zijn erbij gekomen zodat de homepage dezelfde zeven keuzes aanbiedt als
-     /behandelingen (Okan, 5 september 2026). Er stonden er vijf, en glow en haaruitval
-     ontbraken terwijl daar wel behandelingen voor zijn. */
-  {
-    id: "glow",
-    icoon: "huid-glans",
-    title: "Glow & onderhoud",
-    subtitle:
-      "Een frisse behandeling zonder hersteltijd, of onderhoud tussendoor.",
-    href: "/huidproblemen/doffe-huid",
+  glow: {
+    icoon: "porie-vocht",
     image: FIGMA_INTENT_LICHAAM.src,
     imageAlt: FIGMA_INTENT_LICHAAM.alt,
   },
-  {
-    id: "haaruitval",
-    icoon: "pincet-haar",
-    title: "Haaruitval",
-    subtitle: "Dunner wordend haar en een terugwijkende haarlijn.",
-    href: "/behandelingen/xl-hair",
+  ontharing: {
+    icoon: "haarzakje",
     image: FIGMA_INTENT_LASER.src,
     imageAlt: FIGMA_INTENT_LASER.alt,
   },
-] as const;
+  /* [BEELD-NODIG: eigen foto voor haaruitval; nu de laserfoto als tijdelijke vulling] */
+  haaruitval: {
+    icoon: "pincet-haar",
+    image: FIGMA_INTENT_LASER.src,
+    imageAlt: FIGMA_INTENT_LASER.alt,
+  },
+};
+
+/** Eén behandeling in het paneel: genoeg om te kiezen, niet meer. */
+export type HomeWensBehandeling = {
+  readonly slug: string;
+  readonly naam: string;
+  readonly apparaat?: string;
+  /** Al opgemaakt op de server ("vanaf € 140" of "Op aanvraag"), zodat de client de
+   *  prijslogica en daarmee de hele behandelingendata niet hoeft mee te laden. */
+  readonly prijsLabel: string;
+};
+
+/**
+ * Wat de kiezer op de homepage per wens nodig heeft. Wordt op de server samengesteld
+ * (lib/home-wensen) en als gewone props aan de client gegeven: geen behandelingendata en
+ * geen redactievlaggen in de browser.
+ */
+export type HomeWens = {
+  readonly id: string;
+  readonly label: string;
+  readonly knop: string;
+  readonly kort: string;
+  readonly pad: string;
+  readonly icoon: HuidIconNaam;
+  readonly image: string;
+  readonly imageAlt: string;
+  /** De eerste paar behandelingen, met prijs eerst. */
+  readonly behandelingen: readonly HomeWensBehandeling[];
+  /** Hoeveel er in totaal onder deze wens vallen. */
+  readonly totaal: number;
+};

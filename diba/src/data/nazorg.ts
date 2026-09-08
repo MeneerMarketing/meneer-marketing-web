@@ -68,7 +68,8 @@ export type BezigheidId = (typeof BEZIGHEDEN)[number]["id"];
  *
  * Nul betekent: meteen weer. Een hoog getal is geen strengheid maar de tijd die de huid
  * nodig heeft; bij zon staat er bewust een lange termijn omdat daar de meeste schade
- * ontstaat en het gevolg (pigment) maanden blijft.
+ * ontstaat en het gevolg (pigment) maanden blijft. Yasin, 8 september 2026: bij peeling,
+ * microneedling en laserontharing is dat vier weken, geen twee.
  */
 export type Wachttijd = {
   readonly uren: number;
@@ -119,10 +120,8 @@ export const NAZORG: readonly NazorgBehandeling[] = [
       },
       zwemmen: { uren: 24, reden: "Chloor droogt uit op een verse huid." },
     },
-    belOns: [
-      "Als de roodheid na een dag niet minder wordt",
-      "Als er bultjes ontstaan die er voor de behandeling niet waren",
-    ],
+    /* Yasin, 8 september 2026: de regel over bultjes eruit. */
+    belOns: ["Als de roodheid na een dag niet minder wordt"],
   },
   {
     slug: "peeling",
@@ -133,7 +132,7 @@ export const NAZORG: readonly NazorgBehandeling[] = [
       "Trek er niets af. Wat loslaat, laat je loslaten. Er aan plukken is de snelste manier om een vlek over te houden.",
     wachten: {
       zon: {
-        uren: dagen(14),
+        uren: dagen(28),
         reden: "Een vervellende huid is onbeschermd; hier ontstaat pigment.",
       },
       sport: {
@@ -161,7 +160,6 @@ export const NAZORG: readonly NazorgBehandeling[] = [
     belOns: [
       "Bij blaren, of bij pijn die erger wordt in plaats van minder",
       "Als er na een week nog steeds niets is losgekomen en de huid strak blijft",
-      "Bij een koortslip die opkomt; daar is iets aan te doen als je er op tijd bij bent",
     ],
   },
   {
@@ -173,7 +171,7 @@ export const NAZORG: readonly NazorgBehandeling[] = [
       "De eerste vierentwintig uur staan de kanaaltjes nog open. Alles wat je er dan op legt gaat dieper dan je wil, dus houd het bij wat je meekrijgt.",
     wachten: {
       zon: {
-        uren: dagen(14),
+        uren: dagen(28),
         reden: "Een huid in herstel pigmenteert sneller.",
       },
       sport: {
@@ -217,7 +215,7 @@ export const NAZORG: readonly NazorgBehandeling[] = [
       "Niet scheren tussendoor is niet nodig: scheren mag en moet zelfs. Wat niet mag is epileren, harsen of pincetten, want dan haal je de wortel weg die de volgende sessie moet raken.",
     wachten: {
       zon: {
-        uren: dagen(14),
+        uren: dagen(28),
         reden: "Verse kleur in de huid maakt de volgende sessie onveilig.",
       },
       sport: {
@@ -276,7 +274,6 @@ export const NAZORG: readonly NazorgBehandeling[] = [
       },
     },
     belOns: [
-      "Als de vlekken donkerder worden in plaats van lichter",
       "Bij nieuwe vlekken op plekken die niet behandeld zijn",
       "Als je onverwacht toch in de volle zon bent geweest",
     ],

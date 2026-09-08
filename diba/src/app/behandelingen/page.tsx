@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Behandelingenoverzicht from "@/components/behandelingen/Behandelingenoverzicht";
 import BehandelingenPerWens, {
@@ -113,56 +114,80 @@ export default function BehandelingenPage() {
           diepte als de manier om te kiezen. Niemand komt binnen met een diepte in gedachten.
           De twee mintvlakken en het blad die hier stonden zijn weg; die maakten de hero een
           half scherm hoger zonder iets te zeggen. */}
-      <section className="mx-auto px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
-        <nav
-          aria-label="Kruimelpad"
-          className="diba-label flex flex-wrap gap-2"
-        >
-          <Link href="/" className="hover:text-[var(--g-700)]">
-            Home
-          </Link>
-          <span aria-hidden="true">/</span>
-          <span className="text-[var(--t-muted)]">Behandelingen</span>
-        </nav>
+      {/* Donker, net als de hero van de homepage (Yasin, 7 september 2026: "het ziet er
+          nu te wit uit allemaal"). De merkkleur staat er zo voordat iemand scrolt, en
+          het lichte vlak met de zeven keuzes eronder krijgt daardoor een rand. */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        <div className="mx-auto px-5 pt-12 pb-14 sm:px-9 lg:px-[7.5vw] lg:pt-16 lg:pb-16">
+          <nav
+            aria-label="Kruimelpad"
+            className="diba-label diba-label-on-dark flex flex-wrap gap-2"
+          >
+            <Link href="/" className="hover:text-white">
+              Home
+            </Link>
+            <span aria-hidden="true">/</span>
+            <span className="text-[var(--on-dark-body)]">Behandelingen</span>
+          </nav>
 
-        <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-16">
-          <h1 className="diba-display-l max-w-[15ch]">
-            Onze
-            <br />
-            <span className="diba-accent">behandelingen</span>
-          </h1>
+          <div className="mt-6 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
+            <div>
+              <h1 className="diba-display-l max-w-[15ch] text-[var(--on-dark)]">
+                Onze
+                <br />
+                <span className="diba-accent-on-dark">behandelingen</span>
+              </h1>
+              {/* Direct onder de kop, zoals op /tarieven. Hij stond in de rechterkolom,
+                  los van de kop (Yasin, 7 september 2026: "waarom heeft de titel geen
+                  subtekstje"). */}
+              <p className="mt-6 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                Je hoeft vooraf niet te weten welke behandeling je nodig hebt.
+                Kies wat je wilt verbeteren. Tijdens het huidconsult beoordeelt
+                de behandelaar welke aanpak bij jouw huid past.
+              </p>
 
-          <div>
-            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Je hoeft vooraf niet te weten welke behandeling je nodig hebt.
-              Kies wat je wilt verbeteren. Tijdens het huidconsult beoordeelt de
-              behandelaar welke aanpak bij jouw huid past.
-            </p>
-
-            {/* Bewijs in één regel in plaats van een cijferbalk. Kleiner, en het
+              {/* Bewijs in één regel in plaats van een cijferbalk. Kleiner, en het
                 onderbreekt de pagina niet halverwege. */}
-            <ul className="mt-7 flex flex-wrap items-center gap-x-8 gap-y-3">
-              {TROTS.map((t) => (
-                <li key={t.bij} className="flex items-baseline gap-2">
-                  <span className="text-[19px] leading-7 font-medium text-[var(--g-700)] tabular-nums">
-                    {t.getal}
-                  </span>
-                  <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-                    {t.bij}
-                  </span>
+              <ul className="mt-7 flex flex-wrap items-center gap-x-8 gap-y-3">
+                {TROTS.map((t) => (
+                  <li key={t.bij} className="flex items-baseline gap-2">
+                    <span className="text-[19px] leading-7 font-medium text-[var(--on-dark-accent)] tabular-nums">
+                      {t.getal}
+                    </span>
+                    <span className="text-[14px] leading-6 text-[var(--on-dark-body)]">
+                      {t.bij}
+                    </span>
+                  </li>
+                ))}
+                <li>
+                  <a
+                    href={DIBA_SALONIZED_REVIEWS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="diba-label diba-label-on-dark underline underline-offset-4 hover:text-white"
+                  >
+                    Lees ze zelf
+                  </a>
                 </li>
-              ))}
-              <li>
-                <a
-                  href={DIBA_SALONIZED_REVIEWS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-                >
-                  Lees ze zelf
-                </a>
-              </li>
-            </ul>
+              </ul>
+            </div>
+
+            {/* De rechterkolom was leeg op drie cijfers na (Yasin, 7 september 2026: "zo
+                leeg en niet leuk"). Nu een opname uit de behandelkamer, in dezelfde vorm
+                als het beeld in de hero van de homepage. Op de telefoon onder de tekst. */}
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--r-lg)] rounded-bl-[4.5rem] bg-[var(--g-600)] sm:aspect-[16/10] lg:aspect-auto lg:h-[460px] lg:rounded-bl-[8rem]">
+              <Image
+                src="/images/shoot/hero-behandeling.jpg"
+                alt="Laserbehandeling in de behandelkamer, met oogbescherming voor behandelaar en cliënt"
+                fill
+                priority
+                sizes="(min-width: 1024px) 44vw, 100vw"
+                className="object-cover object-[50%_40%]"
+              />
+              <span className="diba-label absolute top-5 left-5 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
+                In de kliniek
+              </span>
+            </div>
           </div>
         </div>
       </section>

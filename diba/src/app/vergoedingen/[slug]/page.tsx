@@ -85,50 +85,53 @@ export default async function InsurerPage({ params }: PageProps) {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/vergoedingen" className="hover:text-[var(--g-700)]">
+              <Link href="/vergoedingen" className="hover:text-white">
                 Vergoedingen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">{insurer.name}</span>
+              <span className="text-[var(--on-dark-body)]">{insurer.name}</span>
             </nav>
 
-            <VerzekeraarLogo
-              verzekeraar={insurer}
-              hoogte={44}
-              breedte={120}
-              className="mt-6"
-            />
+            {/* Op het donkere vlak krijgt het logo een wit plaatje: de meeste verzekeraars
+                voeren donkere kleuren en zouden anders in het groen verdwijnen. */}
+            <div className="mt-6 inline-flex rounded-[var(--r-sm)] bg-white px-4 py-3">
+              <VerzekeraarLogo
+                verzekeraar={insurer}
+                hoogte={44}
+                breedte={120}
+              />
+            </div>
 
             <h1 className="diba-display-l mt-5 max-w-[15ch]">
               {insurer.name}:
               <br />
-              <span className="diba-accent">waar je het vindt.</span>
+              <span className="diba-accent-on-dark">waar je het vindt.</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Wij kunnen niet zien wat er in jouw polis staat, en wij kunnen ook
               niets toezeggen namens {insurer.name}. Wat we wel kunnen is je
               precies vertellen waar je het antwoord vindt en welke voorwaarde
               daar het vaakst tussen zit.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Bedragen staan hier niet. Die veranderen per jaar en per pakket,
               en bij geld is onjuist erger dan afwezig.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Bij {insurer.name} zelf</Label>
             <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
               {insurer.waarTeVinden}

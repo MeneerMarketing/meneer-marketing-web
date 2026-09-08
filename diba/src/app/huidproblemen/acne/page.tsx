@@ -12,7 +12,6 @@ import { ArrowUpRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { ACNE_FAQ, ACNE_WEL_NIET, ACNE_WIJ_DOEN_NIET } from "@/data/acne";
-import { FIGMA_KENNISBANK_ACNE } from "@/data/figma-home-images";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import {
@@ -145,9 +144,12 @@ export default function AcnePage() {
           </div>
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+            {/* Rojda, 7 september 2026: de opname van de jonge cliënt met acne op zijn
+                huid en de peelingproducten erbij. Dat is het onderwerp van de pagina,
+                letterlijk in beeld; de vorige foto was een beoordeling van dichtbij. */}
             <Image
-              src={FIGMA_KENNISBANK_ACNE.src}
-              alt={FIGMA_KENNISBANK_ACNE.alt}
+              src="/images/shoot/beh-jongeren-acne.jpg"
+              alt="Jonge cliënt met acne op de behandelbank, met de peelingproducten die bij zijn behandeling horen"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

@@ -73,49 +73,51 @@ export default function MoedervlekkenPage() {
       {/* ── Hero ──
           Geen beeld naast de kop. Op deze pagina zou een sfeerfoto van een behandeling
           precies het verkeerde suggereren, namelijk dat je hiermee bij ons terechtkunt. */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+              <Link href="/huidproblemen" className="hover:text-white">
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Moedervlekken</span>
+              <span className="text-[var(--on-dark-body)]">Moedervlekken</span>
             </nav>
 
             <h1 className="diba-display-l mt-6">
               Moedervlekken
               <br />
-              <span className="diba-accent">weghalen</span>
+              <span className="diba-accent-on-dark">weghalen</span>
             </h1>
 
             {/* Rojda, 3 september 2026: "We beoordelen het, en coaguleren indien
                 mogelijk na verwijzing arts." Preciezer dan wat hier eerst stond, en
                 meteen de kern van de pagina: er is een route, en die loopt via ons. */}
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Zit hij in de weg bij het scheren, blijft hij haken achter je
               kraag of vind je hem gewoon lelijk: dan kijken we ernaar. Onze
               huidtherapeut beoordeelt het plekje, en na verwijzing van je arts
               coaguleren we het waar dat kan.
             </p>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               De verwijzing is geen formaliteit: alleen een arts kan weefsel
               laten onderzoeken, en dat kan achteraf niet meer. Met die
               verwijzing in de hand doen wij de rest.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-3">
-              <Button href="/intake">Plan een huidconsult</Button>
-              <Button href="#check" variant="secundair">
+              <Button variant="primair-op-donker" href="/intake">
+                Plan een huidconsult
+              </Button>
+              <Button href="#check" variant="secundair-op-donker">
                 Eerst de ABCDE-check
               </Button>
             </div>
@@ -123,13 +125,13 @@ export default function MoedervlekkenPage() {
 
           {/* Het enige donkergroene vlak van deze pagina, en het staat er niet om iets te
               verkopen maar om één zin te laten staan. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
-            <Label opDonker>Het korte antwoord</Label>
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
+            <Label>Het korte antwoord</Label>
             <p className="diba-card-title-lg mt-5">
               Wij beoordelen het plekje en coaguleren het na verwijzing van je
               arts.
             </p>
-            <p className="mt-5 text-[16px] leading-7 text-[var(--on-dark-body)]">
+            <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
               Coaguleren is wegnemen met warmte, in een korte handeling per
               plekje. De verwijzing halen kost je een consult bij je huisarts;
               daarna kun je bij ons terecht.

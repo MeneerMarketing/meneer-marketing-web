@@ -103,7 +103,7 @@ const KOLOMMEN: readonly {
         label: "Kwaliteit en registraties",
         href: "/kwaliteit-en-registraties",
       },
-      { label: "Voor verwijzers", href: "/verwijzers" },
+      { label: "Voor verwijzende zorgverleners", href: "/verwijzers" },
     ],
   },
 ];

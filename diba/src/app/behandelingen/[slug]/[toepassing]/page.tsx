@@ -108,16 +108,16 @@ export default async function ToepassingPage({
       <SchemaMarkup data={faqSchema(faq)} />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <nav
           aria-label="Kruimelpad"
-          className="diba-label flex flex-wrap gap-2"
+          className="diba-label diba-label-on-dark flex flex-wrap gap-2"
         >
-          <Link href="/" className="hover:text-[var(--g-700)]">
+          <Link href="/" className="hover:text-white">
             Home
           </Link>
           <span aria-hidden="true">/</span>
-          <Link href="/behandelingen" className="hover:text-[var(--g-700)]">
+          <Link href="/behandelingen" className="hover:text-white">
             Behandelingen
           </Link>
           {b ? (
@@ -125,7 +125,7 @@ export default async function ToepassingPage({
               <span aria-hidden="true">/</span>
               <Link
                 href={`/behandelingen/${b.slug}`}
-                className="hover:text-[var(--g-700)]"
+                className="hover:text-white"
               >
                 {b.naam}
               </Link>
@@ -135,24 +135,24 @@ export default async function ToepassingPage({
 
         <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-16">
           <h1 className="diba-display-l max-w-[15ch]">
-            {t.kop} <span className="diba-accent">{t.accent}</span>
+            {t.kop} <span className="diba-accent-on-dark">{t.accent}</span>
           </h1>
 
           <div>
-            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               {t.intro}
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href="/intake"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Plan een huidconsult
               </Link>
               {b ? (
                 <Link
                   href={`/behandelingen/${b.slug}`}
-                  className="diba-label text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                  className="diba-label diba-label-on-dark text-[var(--on-dark-accent)] underline underline-offset-4 transition-colors hover:text-white"
                 >
                   Alles over {b.naam}
                 </Link>

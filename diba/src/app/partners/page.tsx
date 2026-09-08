@@ -68,35 +68,38 @@ export default function PartnersPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <nav
           aria-label="Kruimelpad"
-          className="diba-label flex flex-wrap gap-2"
+          className="diba-label diba-label-on-dark flex flex-wrap gap-2"
         >
-          <Link href="/" className="hover:text-[var(--g-700)]">
+          <Link href="/" className="hover:text-white">
             Home
           </Link>
           <span aria-hidden="true">/</span>
-          <Link href="/over-ons" className="hover:text-[var(--g-700)]">
+          <Link href="/over-ons" className="hover:text-white">
             Over Diba
           </Link>
           <span aria-hidden="true">/</span>
-          <span className="text-[var(--t-muted)]">Merken en apparatuur</span>
+          <span className="text-[var(--on-dark-body)]">
+            Merken en apparatuur
+          </span>
         </nav>
 
         <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-16">
           <h1 className="diba-display-l max-w-[13ch]">
-            De merken <span className="diba-accent">waarmee we werken</span>
+            De merken{" "}
+            <span className="diba-accent-on-dark">waarmee we werken</span>
           </h1>
 
           <div>
-            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Goede apparatuur is belangrijk, maar bepaalt het resultaat niet in
               zijn eentje. De behandelaar beoordeelt je huid, kiest de
               behandeling en stelt het apparaat daarop af. Dezelfde laser doet
               in twee klinieken niet hetzelfde.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Hieronder staat per merk wat er bij ons staat en waarvoor we het
               gebruiken.
             </p>

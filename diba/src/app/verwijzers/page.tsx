@@ -4,7 +4,12 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { APPARATUUR } from "@/data/apparatuur";
-import { KWALITEITSREGISTER, TEAM, VAKGEBIEDEN } from "@/data/team";
+import {
+  KWALITEITSREGISTER,
+  TEAM,
+  TEAM_AANTAL,
+  VAKGEBIEDEN,
+} from "@/data/team";
 import { WEIGER_SOORTEN } from "@/data/weigeren";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -65,7 +70,7 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/verwijzers",
-  titel: "Voor verwijzers",
+  titel: "Voor verwijzende zorgverleners",
   omschrijving:
     "Voor huisartsen en andere zorgverleners die willen doorverwijzen. Waar de grens ligt, wie de behandeling uitvoert en hoe u verwijst.",
 });
@@ -95,13 +100,15 @@ const WAT_JE_PATIENT_KRIJGT = [
  * De verwijsroute in drie stappen.
  *
  * Geen formulier en geen portaal: die zijn er niet, en doen alsof is erger dan het gewoon
- * zeggen. [GEGEVEN-NODIG: klopt deze route, Okan?]
+ * zeggen. Rojda, 8 september 2026: verwijzen gaat per brief of per e-mail, niet per
+ * telefoon. Hier stond "via de telefoon" als kop en het nummer als eerste knop; dat is
+ * omgedraaid. Bellen blijft voor overleg, niet voor de verwijzing zelf.
  */
 const HOE_VERWIJZEN = [
   {
     stap: "Eerste stap",
-    kop: "Meegeven of mailen",
-    zin: "Uw patiënt kan zelf een afspraak maken, of u stuurt de verwijzing vooruit. Wat erin staat bepaalt u zelf; een korte omschrijving van de klacht en wat u al heeft geprobeerd helpt het meest.",
+    kop: "Per brief of per e-mail",
+    zin: `Geef uw patiënt de verwijsbrief mee, of mail hem naar ${DIBA_EMAIL}. Wat erin staat bepaalt u zelf; een korte omschrijving van de klacht en wat u al heeft geprobeerd helpt het meest.`,
   },
   {
     stap: "Wat er dan gebeurt",
@@ -110,8 +117,8 @@ const HOE_VERWIJZEN = [
   },
   {
     stap: "Bij twijfel",
-    kop: "Overleg vooraf",
-    zin: "Weet u niet zeker of iets hier thuishoort, belt u dan even. Dat kost u vijf minuten en uw patiënt een afspraak die anders op niets uitloopt.",
+    kop: "Vraag het eerst",
+    zin: "Weet u niet zeker of iets hier thuishoort, mail dan uw vraag of bel even. Dat kost u vijf minuten en uw patiënt een afspraak die anders op niets uitloopt.",
   },
 ];
 
@@ -121,72 +128,79 @@ export default function VerwijzersPage() {
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: DIBA_SITE_URL },
-          { name: "Voor verwijzers", url: `${DIBA_SITE_URL}/verwijzers` },
+          {
+            name: "Voor verwijzende zorgverleners",
+            url: `${DIBA_SITE_URL}/verwijzers`,
+          },
         ])}
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch lg:py-20">
           <div className="flex flex-col">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Voor verwijzers</span>
+              <span className="text-[var(--on-dark-body)]">
+                Voor verwijzende zorgverleners
+              </span>
             </nav>
 
             <div className="mt-8">
-              <Label>Voor zorgverleners</Label>
+              <Label opDonker>Voor zorgverleners</Label>
               <h1 className="diba-display-l mt-4">
                 Verwijzen naar Diba.{" "}
-                <span className="diba-accent">Wat u moet weten.</span>
+                <span className="diba-accent-on-dark">Wat u moet weten.</span>
               </h1>
             </div>
 
-            <p className="mt-7 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[62ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Deze pagina is voor huisartsen, praktijkondersteuners,
               dermatologen en andere zorgverleners die overwegen een patiënt
               hierheen te sturen. Hij begint met waar de grens ligt, want dat is
               de vraag die uw verwijzing bruikbaar maakt.
             </p>
 
-            <p className="mt-4 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[62ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               {DIBA_SITE.name} zit in {DIBA_ADDRESS.city}. Er werken{" "}
-              {TEAM.length} mensen, van wie een deel een wettelijk beschermde
+              {TEAM_AANTAL} mensen, van wie een deel een wettelijk beschermde
               titel draagt.
             </p>
 
             <div className="mt-auto flex flex-wrap items-center gap-x-6 gap-y-4 pt-10">
               <a
-                href={DIBA_TELEFOON_HREF}
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                href={`mailto:${DIBA_EMAIL}`}
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Overleg vooraf: {DIBA_TELEFOON}
+                Verwijzing mailen
               </a>
               <Link
                 href="/ons-verbond"
-                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                className="diba-label diba-label-on-dark text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
                 Waar onze grens ligt
               </Link>
             </div>
           </div>
 
-          {/* De drie soorten nee, meteen in beeld. Dat is wat een verwijzer
-              als eerste nodig heeft. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          {/* De soorten nee, meteen in beeld. Dat is wat een verwijzer als eerste nodig
+              heeft. Rojda, 8 september 2026: "Dit doen wij niet" kan hier eruit; voor een
+              verwijzer gaat het om de medische grens en het moment, niet om ons aanbod.
+              Op /ons-verbond staat die derde soort nog wel. */}
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Waar de grens ligt</Label>
             <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-              Er zijn drie redenen waarom iets hier niet gebeurt. Ze staan per
+              Er zijn twee redenen waarom iets hier niet gebeurt. Ze staan per
               klacht uitgewerkt op een eigen pagina.
             </p>
             <ul className="mt-6 space-y-3">
-              {WEIGER_SOORTEN.map((s) => (
+              {WEIGER_SOORTEN.filter((s) => s.id !== "aanbod").map((s) => (
                 <li
                   key={s.id}
                   className="rounded-[var(--r-md)] bg-[var(--g-025)] p-5"
@@ -329,12 +343,12 @@ export default function VerwijzersPage() {
               <Label>Hoe u verwijst</Label>
               <h2 className="diba-display-m mt-4">
                 Verwijzen gaat{" "}
-                <span className="diba-accent">via de telefoon</span>
+                <span className="diba-accent">per brief of e-mail</span>
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Er is geen verwijzersportaal en geen digitaal formulier. Doen
-              alsof die er zijn is erger dan het gewoon zeggen.
+              Een verwijsbrief die u meegeeft of een e-mail is genoeg. Een
+              portaal of formulier is er niet, en dat hoeft ook niet.
             </p>
           </div>
 

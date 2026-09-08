@@ -295,6 +295,20 @@ export type Behandeling = {
   readonly duurMinuten?: number;
   /** De varianten zoals ze op de tarievenlijst staan. */
   readonly varianten?: readonly Variant[];
+  /**
+   * Waar de echte tarieven staan als ze niet in varianten passen.
+   *
+   * Laserontharing heeft veertig zones in twee lijsten (dames en heren), en die staan als
+   * tabel verderop op /tarieven. De uitgeklapte rij toonde daar niets van (Yasin,
+   * 7 september 2026: "weinig info"); nu verwijst hij ernaartoe, met de configurator als
+   * tweede ingang.
+   */
+  readonly prijsElders?: {
+    readonly zin: string;
+    readonly knop: string;
+    readonly href: string;
+    readonly tweede?: { readonly tekst: string; readonly href: string };
+  };
   readonly wel?: readonly string[];
   readonly niet?: readonly string[];
   readonly stappen?: readonly { readonly kop: string; readonly zin: string }[];
@@ -608,13 +622,15 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Een peeling wordt met een wattenstaafje op het voorhoofd aangebracht",
     },
     naam: "Medische peelings",
-    apparaat: "Mesoestetic, Dermaceutic, Image Skincare, Skin Tech Pharma",
+    apparaat: "Mesoestetic, Dermaceutic, Skin Tech Pharma",
     categorie: "peeling",
     huidwens: ["acne", "pigment", "glow"],
     kort: "Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt.",
-    lagen: ["hoornlaag", "opperhuid"],
+    /* Rojda, 7 september 2026: 35% TCA komt tot in de papillaire dermis, de bovenste
+       laag van de lederhuid. Er stond alleen de opperhuid, en de tekening klopte dus niet. */
+    lagen: ["hoornlaag", "opperhuid", "lederhuid-boven"],
     werking:
-      "Een peeling maakt de verbinding tussen de buitenste huidcellen los, zodat die laag sneller wordt vervangen dan hij uit zichzelf zou doen. Hoe ver dat gaat hangt af van het middel en de sterkte: de kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. [MEDISCHE-CHECK-ROJDA]",
+      "Een peeling maakt de verbinding tussen de buitenste huidcellen los, zodat die laag sneller wordt vervangen dan hij uit zichzelf zou doen. Hoe ver dat gaat hangt af van het middel en de sterkte: de kliniek werkt met peelings van Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic, in drie niveaus. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte. [MEDISCHE-CHECK-ROJDA]",
     sessies:
@@ -676,8 +692,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Wat je ziet komt niet die week. Bindweefsel bouwt zich over weken op, dus de vergelijking die telt is die met de meting van vóór de eerste sessie. [MEDISCHE-CHECK-ROJDA]",
     ],
     foto: {
-      src: "/images/shoot/beh-skinpen.jpg",
-      alt: "Microneedling met de SkinPen op het voorhoofd",
+      /* Yasin, 7 september 2026: de foto die beh-skinpen.jpg heet toont een enkele naald
+         op een plekje en geen microneedling; deze toont de SkinPen zelf, in gebruik. */
+      src: "/images/shoot/beh-dermapen.jpg",
+      alt: "Microneedling met de SkinPen bij een cliënt",
     },
     naam: "SkinPen Microneedling",
     apparaat: "SkinPen CIT",
@@ -2255,7 +2273,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     categorie: "laser",
     huidwens: ["acne", "glow"],
     kort: "Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren.",
-    lagen: ["opperhuid"],
+    /* Rojda via Yasin, 7 september 2026: het licht komt tot in de diepe lederhuid; er
+       stond alleen de opperhuid. Blauw blijft boven, rood en infrarood gaan dieper. */
+    lagen: ["opperhuid", "lederhuid-boven", "lederhuid-diep"],
     werking:
       "Bij LED-therapie neemt de huid licht op van een bepaalde golflengte. Dat licht wordt opgenomen door de mitochondriën in je cellen, de onderdelen die energie leveren, waarna er meer energie beschikbaar is voor herstel en aanmaak. Die werking heet fotobiomodulatie. Er wordt niets verwarmd en niets weggehaald, en juist daarom is er geen hersteltijd. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Geen.",
@@ -2624,6 +2644,15 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Altijd een reeks, meestal zes tot tien. Het aantal hangt af van zone en huidtype. [MEDISCHE-CHECK-ROJDA]",
     prijs: 20,
+    prijsElders: {
+      zin: "Laserontharing heeft een eigen tarief per zone, in twee lijsten: dames en heren. Van bovenlip tot volledige benen, los of als pakket.",
+      knop: "Bekijk alle zones en tarieven",
+      href: "/tarieven#laserontharing-per-zone",
+      tweede: {
+        tekst: "Of stel je eigen pakket samen",
+        href: "/laserontharing/configurator",
+      },
+    },
     wel: [
       "Werkt op haargroei op vrijwel elke zone",
       "Is instelbaar op je huidtype",

@@ -127,8 +127,10 @@ export default function Pagina() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/intent-pigment.jpg"
-              alt="Behandelaar beoordeelt pigment op de huid van een cliënt"
+              /* Rojda, 7 september 2026: hier een foto van een peeling, want dat is
+                 wat er bij ouderdomsvlekken meestal gebeurt. */
+              src="/images/shoot/beh-peeling.jpg"
+              alt="Een peeling wordt met een wattenstaafje op het voorhoofd aangebracht"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

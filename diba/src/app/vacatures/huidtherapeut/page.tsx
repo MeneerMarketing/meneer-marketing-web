@@ -139,43 +139,47 @@ export default function VacatureHuidtherapeutPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/werken-bij" className="hover:text-[var(--g-700)]">
+              <Link href="/werken-bij" className="hover:text-white">
                 Werken bij Diba
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Huidtherapeut</span>
+              <span className="text-[var(--on-dark-body)]">Huidtherapeut</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               {v.paginaTitel.kop}{" "}
-              <span className="diba-accent">{v.paginaTitel.accent}</span>
+              <span className="diba-accent-on-dark">
+                {v.paginaTitel.accent}
+              </span>
             </h1>
 
             {v.intro.map((alinea) => (
               <p
                 key={publicCopy(alinea).slice(0, 40)}
-                className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]"
+                className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--on-dark-body)]"
               >
                 {publicCopy(alinea)}
               </p>
             ))}
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href={mailto}>Solliciteer op deze functie</Button>
+              <Button variant="primair-op-donker" href={mailto}>
+                Solliciteer op deze functie
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -183,11 +187,11 @@ export default function VacatureHuidtherapeutPage() {
               </Button>
             </div>
 
-            <p className="mt-6 text-[15px] leading-7 text-[var(--t-muted)]">
+            <p className="mt-6 text-[15px] leading-7 text-[var(--on-dark-body)]">
               Liever bellen? Dat kan op{" "}
               <a
                 href={DIBA_TELEFOON_HREF}
-                className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                className="font-medium text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
                 {DIBA_TELEFOON}
               </a>
@@ -196,22 +200,22 @@ export default function VacatureHuidtherapeutPage() {
           </div>
 
           {/* De feiten waar een sollicitant als eerste naar zoekt. */}
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
-            <Label opDonker>In het kort</Label>
-            <dl className="mt-6 divide-y divide-white/15">
+          <div className="rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
+            <Label>In het kort</Label>
+            <dl className="mt-6 divide-y divide-[var(--g-100)]">
               {FEITEN.map((f) => (
                 <div
                   key={f.label}
                   className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4 first:pt-0 last:pb-0"
                 >
-                  <dt className="diba-label diba-label-on-dark">{f.label}</dt>
-                  <dd className="text-[16px] leading-7 text-[var(--on-dark-accent)]">
+                  <dt className="diba-label">{f.label}</dt>
+                  <dd className="text-[16px] leading-7 text-[var(--t-strong)]">
                     {f.waarde}
                   </dd>
                 </div>
               ))}
             </dl>
-            <p className="mt-6 border-t border-white/15 pt-5 text-[14px] leading-6 text-[var(--on-dark-body)]">
+            <p className="mt-6 border-t border-[var(--g-100)] pt-5 text-[14px] leading-6 text-[var(--t-body)]">
               {DIBA_ADDRESS.line}. Geplaatst op{" "}
               <time dateTime={v.geplaatst}>
                 {new Date(v.geplaatst).toLocaleDateString("nl-NL", {

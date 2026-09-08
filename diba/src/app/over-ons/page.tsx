@@ -4,7 +4,7 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
-import { TEAM } from "@/data/team";
+import { TEAM, TEAM_AANTAL } from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -46,7 +46,7 @@ import {
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/over-ons",
   titel: "Over ons",
-  omschrijving: `Diba Clinics in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Actief sinds ${DIBA_PROOF.activeSince}, ${TEAM.length} mensen, ${APPARATUUR.length} apparaten. En wat die cijfers niet zeggen.`,
+  omschrijving: `Diba Clinics in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Actief sinds ${DIBA_PROOF.activeSince}, ${TEAM_AANTAL} mensen, ${APPARATUUR.length} apparaten. En wat die cijfers niet zeggen.`,
 });
 
 /**
@@ -108,40 +108,40 @@ export default function OverOnsPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Over ons</span>
+              <span className="text-[var(--on-dark-body)]">Over ons</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Een huidkliniek
               <br />
-              <span className="diba-accent">in Rotterdam.</span>
+              <span className="diba-accent-on-dark">in Rotterdam.</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Sinds {DIBA_PROOF.activeSince}, aan de {DIBA_ADDRESS.street}. Met{" "}
-              {TEAM.length} mensen, {APPARATUUR.length} apparaten en{" "}
+              {TEAM_AANTAL} mensen, {APPARATUUR.length} apparaten en{" "}
               {BEHANDELINGEN.length} behandelingen waarvan de prijzen allemaal
               openbaar zijn.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Onze huidtherapeuten zijn lid van de NVH en staan ingeschreven in
               het Kwaliteitsregister Paramedici; onze schoonheidsspecialisten
               zijn aangesloten bij ANBOS en staan in het SKIN Register.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Waar we vandaan komen</Label>
             <address className="mt-5 text-[19px] leading-8 not-italic text-[var(--t-strong)]">
               {DIBA_ADDRESS.street}
@@ -172,16 +172,16 @@ export default function OverOnsPage() {
       </section>
 
       {/* ── De signatuur: wat de cijfers niet zeggen ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
-              <Label opDonker>Vier getallen</Label>
+              <Label>Vier getallen</Label>
               <h2 className="diba-display-m mt-4 max-w-[20ch]">
                 Wat klanten{" "}
-                <span className="diba-accent-on-dark">over ons schrijven</span>
+                <span className="diba-accent">over ons schrijven</span>
               </h2>
-              <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
+              <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
                 Vier getallen die zeggen hoe lang we dit doen en hoe vaak. Bij
                 elk staat wat het voor jouw afspraak betekent.
               </p>
@@ -191,25 +191,23 @@ export default function OverOnsPage() {
               {CIJFERS.map((c) => (
                 <li
                   key={c.label}
-                  className="rounded-[var(--r-lg)] bg-white/10 p-7 sm:p-8"
+                  className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
                 >
                   <p className="text-[36px] leading-none font-medium tracking-[-.05em] tabular-nums">
                     {c.waarde}
                   </p>
-                  <p className="diba-label diba-label-on-dark mt-2">
-                    {c.label}
-                  </p>
-                  <p className="mt-5 text-[15px] leading-7 text-[var(--on-dark-body)]">
+                  <p className="diba-label mt-2">{c.label}</p>
+                  <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)]">
                     {c.zegt}
                   </p>
-                  <p className="mt-4 border-t border-white/15 pt-4 text-[15px] leading-7 text-[var(--on-dark-accent)]">
+                  <p className="mt-4 border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-body)]">
                     {c.watJeEraanHebt}
                   </p>
                 </li>
               ))}
             </ul>
 
-            <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
+            <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
               De reviews worden verzameld door Salonized. Wij kunnen ze niet
               selecteren of verwijderen, dus je leest ze allemaal.
             </p>
@@ -217,7 +215,7 @@ export default function OverOnsPage() {
               href={DIBA_SALONIZED_REVIEWS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white"
+              className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)]"
             >
               Lees ze bij de bron
               <span aria-hidden="true">↗</span>
@@ -274,7 +272,7 @@ export default function OverOnsPage() {
                 link: "Naar de prijzen",
               },
               {
-                getal: String(TEAM.length),
+                getal: String(TEAM_AANTAL),
                 kop: "mensen",
                 zin: "Huidtherapeuten met een hbo-bachelor en inschrijving in het Kwaliteitsregister Paramedici, plus orthomoleculair huidspecialisten.",
                 href: "/team",

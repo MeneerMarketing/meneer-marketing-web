@@ -15,7 +15,6 @@ import {
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
 import ProofBar from "@/components/ui/ProofBar";
-import { FIGMA_INTENT_LITTEKENS } from "@/data/figma-home-images";
 import {
   LITTEKEN_FAQ,
   LITTEKEN_SOORTEN,
@@ -165,9 +164,12 @@ export default function LittekensPage() {
           </div>
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+            {/* Rojda, 7 september 2026: "bij littekens iets van SkinPen of laser". De
+                laser, want de pen staat al op de acnelittekenpagina en twee keer
+                dezelfde foto naast elkaar in het menu zegt niets. */}
             <Image
-              src={FIGMA_INTENT_LITTEKENS.src}
-              alt={FIGMA_INTENT_LITTEKENS.alt}
+              src="/images/shoot/beh-fotona.jpg"
+              alt="Fotona-laserbehandeling met oogbescherming voor cliënt en behandelaar"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

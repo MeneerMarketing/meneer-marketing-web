@@ -70,42 +70,44 @@ export default function HuidverkleuringPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="py-14 lg:py-20">
           <nav
             aria-label="Kruimelpad"
-            className="diba-label flex flex-wrap gap-2"
+            className="diba-label diba-label-on-dark flex flex-wrap gap-2"
           >
-            <Link href="/" className="hover:text-[var(--g-700)]">
+            <Link href="/" className="hover:text-white">
               Home
             </Link>
             <span aria-hidden="true">/</span>
-            <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+            <Link href="/huidproblemen" className="hover:text-white">
               Huidproblemen
             </Link>
             <span aria-hidden="true">/</span>
-            <span className="text-[var(--t-muted)]">Huidverkleuring</span>
+            <span className="text-[var(--on-dark-body)]">Huidverkleuring</span>
           </nav>
 
           <h1 className="diba-display-l mt-6 max-w-[21ch]">
             Verkleuringen
             <br />
-            <span className="diba-accent">op je huid</span>
+            <span className="diba-accent-on-dark">op je huid</span>
           </h1>
 
-          <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
+          <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
             Verkleuring is een verzamelwoord. Bruin, rood en wit hebben elk een
             andere oorzaak, zitten in een andere laag en vragen een andere
             behandeling.
           </p>
 
-          <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
+          <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
             Hieronder vind je per kleur welke behandeling erbij hoort, met een
             doorverwijzing naar de pagina die erover gaat.
           </p>
 
           <div className="mt-9">
-            <Button href="#kleur">Kies je kleur</Button>
+            <Button variant="primair-op-donker" href="#kleur">
+              Kies je kleur
+            </Button>
           </div>
         </div>
       </section>

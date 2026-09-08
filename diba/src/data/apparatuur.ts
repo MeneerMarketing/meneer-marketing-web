@@ -124,6 +124,14 @@ export type Apparaat = {
   readonly behandelingen: readonly string[];
   /* ── Het werkingsvenster ── */
   readonly werkwijze: Werkwijze;
+  /**
+   * Hoe het mechaniek heet in de tekening, als de standaardnaam niet klopt.
+   *
+   * De werkwijze "chemisch" heet in het werkingsvenster "Zuur", en dat is waar voor een
+   * peeling maar niet voor de OxyGeneo: daar reageert een capsule met een gel. Zelfde
+   * tekening (een film die inwerkt), andere naam.
+   */
+  readonly werkwijzeNaam?: string;
   readonly doelwit: Doelwit;
   /** Tot hoe diep het komt, als percentage van de doorsnede. */
   readonly diepte: number;
@@ -705,6 +713,78 @@ export const APPARATUUR: readonly Apparaat[] = [
     ],
   },
   {
+    /* Ontbrak als apparaat terwijl de behandeling "Oxygeneo glow" er wel is (Yasin,
+       7 september 2026: "op de apparatuurpagina missen we die OxyGeneo"). Alle
+       werkingsclaims hieronder zijn van de fabrikant en horen langs Rojda. */
+    slug: "oxygeneo",
+    naam: "OxyGeneo",
+    merk: "Pollogen",
+    categorie: "overig",
+    kort: "Een capsule die op de huid met een gel reageert: exfoliëren, voeden en de huid aanzetten tot meer zuurstofopname, in één behandeling.",
+    wat: "Het handstuk beweegt een capsule met een gel over de huid. Die twee reageren met elkaar en er ontstaan kleine CO2-belletjes op de huid. De huid reageert daarop door meer zuurstofrijk bloed naar de plek te sturen, terwijl de capsule de buitenste laag losmaakt en de stoffen uit de gel inbrengt. Het blijft aan de oppervlakte. [MEDISCHE-CHECK-ROJDA]",
+    waarvoor: [
+      "Een doffe huid die er meteen frisser uit mag zien",
+      "Een droge of vochtarme huid",
+      "Onderhoud zonder hersteltijd",
+    ],
+    nietVoor: [
+      "Littekens of pigment dat dieper zit",
+      "Een huid die op dat moment ontstoken of geïrriteerd is",
+      "Blijvend resultaat; het is onderhoud",
+    ],
+    behandelingen: ["oxygeneo"],
+
+    werkwijze: "chemisch",
+    werkwijzeNaam: "Bruisende gel",
+    doelwit: "hoornlaag",
+    diepte: 16,
+    fasen: [
+      {
+        kop: "Reageren",
+        zin: "De capsule en de gel reageren op de huid; er ontstaan kleine belletjes.",
+      },
+      {
+        kop: "Losmaken en voeden",
+        zin: "De buitenste cellen komen los en de stoffen uit de gel gaan de huid in.",
+      },
+      {
+        kop: "Doorbloeden",
+        zin: "De huid stuurt meer zuurstof naar de plek. Dat zie je als een lichte blos die snel wegtrekt.",
+      },
+    ],
+    verschilMet: [
+      {
+        apparaat: "hydrafacial-syndeo",
+        verschil:
+          "Zuigt weg. De OxyGeneo zuigt niets weg maar laat de huid zelf reageren op de belletjes.",
+      },
+      {
+        apparaat: "peelinglijnen",
+        verschil:
+          "Gaat dieper en vraagt hersteltijd. De OxyGeneo blijft in de hoornlaag.",
+      },
+    ],
+    vragen: [
+      {
+        vraag: "Wat zijn die belletjes?",
+        antwoord:
+          "CO2 dat vrijkomt als de capsule met de gel reageert. Je huid reageert daarop met een betere doorbloeding, en dat is precies de bedoeling. [MEDISCHE-CHECK-ROJDA]",
+      },
+      {
+        vraag: "Voel ik er iets van?",
+        antwoord:
+          "Een licht bruisen en wat warmte. Geen prikken en geen hersteltijd; je kunt er direct mee de deur uit.",
+      },
+    ],
+    techniek: [
+      "De capsule bevat een bicarbonaat en een zuur. Op de huid, met de gel, ontstaat daaruit CO2. Dat verhoogt tijdelijk het CO2-gehalte in de huid, en het lichaam antwoordt daarop met meer zuurstofrijk bloed naar die plek. [MEDISCHE-CHECK-ROJDA]",
+    ],
+    foto: {
+      src: "/images/shoot/apparaat-pollogen.jpg",
+      alt: "Het OxyGeneo-apparaat van Pollogen in de behandelkamer",
+    },
+  },
+  {
     slug: "skinpen-cit",
     vragen: [
       {
@@ -1061,10 +1141,10 @@ export const APPARATUUR: readonly Apparaat[] = [
       alt: "Een flacon Dermaceutic TCA naast een cliënt op de behandelbank",
     },
     naam: "Peelinglijnen",
-    merk: "Skin Tech Pharma, Image Skincare, ADO, Mesoestetic",
+    merk: "Skin Tech Pharma, Dermaceutic, ADO, Mesoestetic",
     categorie: "overig",
     kort: "Geen apparaat maar vier merken peelings, in drie niveaus van sterkte. Welke er past, hangt af van je huid op dat moment.",
-    wat: "De kliniek werkt met peelings van Skin Tech Pharma, Image Skincare, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker. [MEDISCHE-CHECK-ROJDA]",
+    wat: "De kliniek werkt met peelings van Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Oppervlakkige verkleuring lichter maken",
       "Ruwheid en een doffe textuur",
@@ -1079,7 +1159,9 @@ export const APPARATUUR: readonly Apparaat[] = [
 
     werkwijze: "chemisch",
     doelwit: "hoornlaag",
-    diepte: 24,
+    /* Rojda, 7 september 2026: 35% TCA komt tot in de papillaire dermis. Dezelfde diepte
+       als de behandeling Medische peelings (hoornlaag + opperhuid + bovenste lederhuid). */
+    diepte: 59,
     fasen: [
       {
         kop: "Sterkte kiezen",

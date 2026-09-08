@@ -141,8 +141,7 @@ export default function Nazorgrooster() {
           <>
             <p className="diba-label text-[var(--t-label)]">De reden erbij</p>
             <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Klik een vakje aan, dan staat hier waarom die termijn er is. Een
-              regel zonder reden is een verbod, en verboden worden genegeerd.
+              Klik op een vakje. Dan lees je hier hoe lang je wacht, en waarom.
             </p>
           </>
         )}

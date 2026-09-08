@@ -55,9 +55,22 @@ export const APPARATUUR_MERKEN: readonly Merk[] = [
     link: { label: "HydraFacial", href: "/behandelingen/hydrafacial" },
   },
   {
-    naam: "SkinPen Precision",
+    /* Rojda, 8 september 2026: "ik mis OxyGeneo". Het stond er, als zevende, onder de
+       vouw van haar scherm. Nu staat het naast HydraFacial, waar het ook thuishoort: twee
+       apparaten die de huid reinigen en voeden in plaats van beschadigen. */
+    naam: "OxyGeneo",
     relatie: "gebruikt",
-    bijDiba: "SkinPen voor medische microneedling",
+    bijDiba: "Het OxyGeneo-systeem van Pollogen",
+    waarvoor:
+      "Exfoliëren, zuurstof aan de huid aanbieden en werkstoffen inbrengen, in dezelfde behandeling.",
+    link: { label: "Oxygeneo glow", href: "/behandelingen/oxygeneo" },
+  },
+  {
+    /* Heette hier "SkinPen Precision"; in de apparatuurdata en op /apparatuur heet het
+       apparaat SkinPen CIT (Yasin, 8 september 2026). Eén naam voor één apparaat. */
+    naam: "SkinPen CIT",
+    relatie: "gebruikt",
+    bijDiba: "SkinPen CIT voor medische microneedling",
     waarvoor:
       "Microneedling met een vaste diepte per zone, gericht op acnelittekens, grove poriën en de structuur van de huid.",
     link: { label: "SkinPen Microneedling", href: "/behandelingen/skinpen" },
@@ -77,14 +90,6 @@ export const APPARATUUR_MERKEN: readonly Merk[] = [
     waarvoor:
       "LED-lichttherapie op vaste golflengtes, onder andere bij actieve acne en als rustige stap na een intensievere behandeling.",
     link: { label: "LED-therapie", href: "/behandelingen/led-therapie" },
-  },
-  {
-    naam: "OxyGeneo",
-    relatie: "gebruikt",
-    bijDiba: "Het OxyGeneo-systeem",
-    waarvoor:
-      "Exfoliëren, zuurstof aan de huid aanbieden en werkstoffen inbrengen, in dezelfde behandeling.",
-    link: { label: "Oxygeneo glow", href: "/behandelingen/oxygeneo" },
   },
   {
     naam: "U225 van Needle Concept",
@@ -120,6 +125,17 @@ export const PRODUCT_MERKEN: readonly Merk[] = [
     waarvoor:
       "Medische peelings in verschillende sterktes, en de trajecten van maanden tegen hyperpigmentatie en melasma.",
     link: { label: "Cosmelan", href: "/behandelingen/cosmelan" },
+  },
+  {
+    /* Rojda, 8 september 2026: de thuisproducten van Skin Complete horen hier ook, naast
+       het LED-systeem in de behandelkamer. Namen en werking van skincomplete.eu. */
+    naam: "Skin Complete",
+    relatie: "gebruikt",
+    bijDiba:
+      "LED-masker voor thuis, Dermal Microchip System en Microchip Eye Patch",
+    waarvoor:
+      "Thuis verder met wat hier begon: LED-licht, plus een roller en oogpatches met oplosbare microchips die werkstoffen inbrengen.",
+    link: { label: "LED-therapie", href: "/behandelingen/led-therapie" },
   },
   {
     naam: "RRS",

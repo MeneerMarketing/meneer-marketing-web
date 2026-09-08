@@ -83,18 +83,18 @@ export default function SnurkenPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Snurken</span>
+              <span className="text-[var(--on-dark-body)]">Snurken</span>
             </nav>
 
             {/* De kop stelt de vraag die de hele pagina ordent. Niet "wij behandelen
@@ -102,25 +102,27 @@ export default function SnurkenPage() {
             <h1 className="diba-display-l mt-6">
               Snurken dat je
               <br />
-              <span className="diba-accent">nachten verstoort</span>
+              <span className="diba-accent-on-dark">nachten verstoort</span>
             </h1>
 
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Er bestaat een laserbehandeling die het zachte gehemelte aanspant,
               en daar zijn wij goed in. Maar hij werkt alleen als het geluid
               daar ontstaat. Zit het in je neus, je tong of je kaakstand, dan
               levert hij niets op, en dat hoor je liever nu dan na drie sessies.
             </p>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Daarom begint deze pagina bij de bron en niet bij het apparaat.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#bron">Waar komt jouw geluid vandaan?</Button>
+              <Button variant="primair-op-donker" href="#bron">
+                Waar komt jouw geluid vandaan?
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -137,14 +139,14 @@ export default function SnurkenPage() {
 
               De gegevens komen uit de behandelingentabel, dus ze kunnen niet uit de pas
               lopen met /behandelingen/nightlase. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
-            <Label opDonker>In het kort</Label>
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
+            <Label>In het kort</Label>
             <p className="diba-card-title-lg mt-4 max-w-[24ch]">
               Laser op het zachte gehemelte, zonder snijden of beugel.
             </p>
 
             {nightlase ? (
-              <dl className="mt-8 divide-y divide-white/15 border-t border-white/15">
+              <dl className="mt-8 divide-y divide-[var(--g-100)] border-t border-[var(--g-100)]">
                 {(
                   [
                     ["Hoe lang", `${nightlase.duurMinuten} minuten`],
@@ -156,10 +158,8 @@ export default function SnurkenPage() {
                     key={kop}
                     className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4"
                   >
-                    <dt className="diba-label diba-label-on-dark shrink-0">
-                      {kop}
-                    </dt>
-                    <dd className="max-w-[30ch] text-right text-[15px] leading-7 text-[var(--on-dark-accent)]">
+                    <dt className="diba-label shrink-0">{kop}</dt>
+                    <dd className="max-w-[30ch] text-right text-[15px] leading-7 text-[var(--t-strong)]">
                       {publicCopy(waarde)}
                     </dd>
                   </div>
@@ -167,7 +167,7 @@ export default function SnurkenPage() {
               </dl>
             ) : null}
 
-            <p className="mt-6 text-[14px] leading-6 text-[var(--on-dark-body)]">
+            <p className="mt-6 text-[14px] leading-6 text-[var(--t-body)]">
               Of dit bij jou werkt hangt af van waar het geluid ontstaat. Dat
               stellen we tijdens de intake vast.
             </p>

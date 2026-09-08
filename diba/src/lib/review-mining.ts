@@ -1,6 +1,15 @@
 import type { ReviewCardProps } from "@/components/ui/ReviewCard";
 import { REVIEWS, type ReviewTopic } from "@/data/reviews";
 
+/* Voor klachten waar niemand over schrijft: de reviews over het bezoek die het meest
+   zeggen. "Algemeen" was hier de terugvaloptie, maar dat zijn sinds de opdeling alleen
+   nog de "Top!"-reviews, en die zeggen op een klachtpagina niets. */
+const BEZOEK: readonly Exclude<ReviewTopic, "alle">[] = [
+  "uitleg",
+  "aandacht",
+  "vakkundig",
+];
+
 const PILLAR_REVIEW_TOPICS: Record<string, Exclude<ReviewTopic, "alle">[]> = {
   acne: ["acne"],
   pigmentvlekken: ["pigment"],
@@ -9,17 +18,17 @@ const PILLAR_REVIEW_TOPICS: Record<string, Exclude<ReviewTopic, "alle">[]> = {
   "donkere-kringen": ["pigment"],
   rosacea: ["rosacea"],
   huidveroudering: ["huidveroudering"],
-  littekens: ["algemeen"],
-  striae: ["algemeen"],
-  porien: ["acne", "algemeen"],
-  "droge-huid": ["algemeen"],
-  "gevoelige-huid": ["rosacea", "algemeen"],
-  huiduitslag: ["algemeen"],
-  eczeem: ["algemeen"],
-  psoriasis: ["algemeen"],
-  keloiden: ["algemeen"],
-  "huidkanker-naevi": ["algemeen"],
-  symptoomzoeker: ["algemeen"],
+  littekens: [...BEZOEK],
+  striae: [...BEZOEK],
+  porien: ["acne", ...BEZOEK],
+  "droge-huid": [...BEZOEK],
+  "gevoelige-huid": ["rosacea", ...BEZOEK],
+  huiduitslag: [...BEZOEK],
+  eczeem: [...BEZOEK],
+  psoriasis: [...BEZOEK],
+  keloiden: [...BEZOEK],
+  "huidkanker-naevi": [...BEZOEK],
+  symptoomzoeker: [...BEZOEK],
 };
 
 /**
@@ -27,7 +36,7 @@ const PILLAR_REVIEW_TOPICS: Record<string, Exclude<ReviewTopic, "alle">[]> = {
  * Max 3 reviews per pillar, gefilterd op onderwerp.
  */
 export function reviewsForPillar(slug: string, limit = 3): ReviewCardProps[] {
-  const topics = PILLAR_REVIEW_TOPICS[slug] ?? ["algemeen"];
+  const topics = PILLAR_REVIEW_TOPICS[slug] ?? [...BEZOEK];
   const seen = new Set<string>();
   const result: ReviewCardProps[] = [];
 

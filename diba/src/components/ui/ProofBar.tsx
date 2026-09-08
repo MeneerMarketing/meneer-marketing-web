@@ -37,8 +37,10 @@ export default function ProofBar({
   className?: string;
 }) {
   return (
+    /* Een haarlijn onder de strip. De verticale lijnen tussen de cellen hielden anders
+       zomaar op in het wit, alsof de strip niet af was (Yasin, 7 september 2026). */
     <section
-      className={`bg-white px-5 sm:px-9 lg:px-[7.5vw] ${className}`.trim()}
+      className={`border-b border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw] ${className}`.trim()}
       aria-label="Diba Clinics in cijfers"
     >
       <div className="mx-auto grid grid-cols-2 gap-px bg-[var(--g-100)] md:grid-cols-4">

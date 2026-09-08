@@ -47,41 +47,38 @@ export default function LaserConfiguratorPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link
-                href="/laserontharing"
-                className="hover:text-[var(--g-700)]"
-              >
+              <Link href="/laserontharing" className="hover:text-white">
                 Laserontharing
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Samenstellen</span>
+              <span className="text-[var(--on-dark-body)]">Samenstellen</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Stel je eigen
               <br />
-              <span className="diba-accent">behandeling samen</span>
+              <span className="diba-accent-on-dark">behandeling samen</span>
             </h1>
 
-            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               De meeste twijfel over laserontharing gaat niet over of het werkt,
               maar over waar een zone begint en ophoudt en wat je straks aan de
               balie hoort. Daarom wijs je het hier aan in plaats van dat je het
               opzoekt.
             </p>
 
-            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Je zit nergens aan vast. Dit is een berekening en geen boeking.
             </p>
           </div>
@@ -92,7 +89,7 @@ export default function LaserConfiguratorPage() {
               ze verzonnen waren. Ze komen nu van de tarievenlijst van de kliniek, dus is
               het voorbehoud verschoven naar wat er wél nog ontbreekt: het aantal sessies.
               Dat is geen detail maar het grootste deel van wat je uiteindelijk betaalt. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 shadow-[var(--shadow-float)] sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 shadow-[var(--shadow-float)] sm:p-10 text-[var(--t-strong)]">
             <Label>Voordat je begint</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
               Dit is de prijs per sessie, niet van je traject

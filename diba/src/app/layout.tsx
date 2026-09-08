@@ -118,6 +118,9 @@ export default function RootLayout({
           data={medicalClinicSchema({
             nap: DIBA_NAP,
             url: DIBA_SITE_URL,
+            /* Rojda, 7 september 2026: de Instagram koppelen. Voor Google is dit de
+               koppeling: hetzelfde bedrijf op een andere plek. */
+            sameAs: DIBA_INSTAGRAM_URL ? [DIBA_INSTAGRAM_URL] : undefined,
           })}
         />
         <SiteChrome instagramHref={DIBA_INSTAGRAM_URL || undefined}>

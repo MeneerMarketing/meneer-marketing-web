@@ -10,6 +10,7 @@ import Reviewslider from "@/components/home/Reviewslider";
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
 import FigmaVoorJouSection from "@/components/figma/FigmaVoorJouSection";
+import type { HomeWens } from "@/data/home-intents";
 import Button from "@/components/ui/Button";
 import DibaIcon from "@/components/ui/DibaIcon";
 import {
@@ -79,8 +80,11 @@ const EERLIJK_ADVIES_PUNTEN = [
  */
 export default function FigmaHomeApp({
   heroVariant = false,
+  wensen,
 }: {
   heroVariant?: boolean;
+  /** Van de server (lib/home-wensen): de zeven huidwensen met hun behandelingen. */
+  wensen: readonly HomeWens[];
 }) {
   const [scanOpen, setScanOpen] = useState(false);
 
@@ -124,7 +128,7 @@ export default function FigmaHomeApp({
           route gebruikt een andere hero; daar blijft de losse balk staan. */}
       {heroVariant ? <ProofBar items={DIBA_HOME_PROOF_ITEMS} /> : null}
 
-      <FigmaVoorJouSection />
+      <FigmaVoorJouSection wensen={wensen} />
 
       <section
         id="huidscan"
@@ -503,9 +507,13 @@ export default function FigmaHomeApp({
               <h3 className="diba-card-title-lg mt-28">
                 Een resultaat met een verwachting
               </h3>
+              {/* Rojda, 7 september 2026: niet "hoeveel afspraken dat vraagt", want hoeveel
+                  behandelingen er echt nodig zijn weet niemand vooraf. Wat wel vooraf
+                  gezegd kan worden: wat je kunt verwachten en wat het kost. */}
               <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Je hoort vooraf wat er haalbaar is, hoeveel afspraken dat vraagt
-                en wat het kost. Alle tarieven staan op deze site.
+                Je hoort vooraf wat je van de behandeling kunt verwachten en
+                welke kosten daarbij horen. Alle tarieven vind je transparant op
+                deze site.
               </p>
               <Link
                 href="/tarieven"

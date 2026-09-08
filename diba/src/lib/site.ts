@@ -139,7 +139,28 @@ export const DIBA_SALONIZED_REVIEWS_URL =
  * Werk hem bij zodra je de cijfers hierboven hebt nagekeken, ook als er niets veranderd is.
  * Dat "niets veranderd" is namelijk de uitkomst van de controle en niet het overslaan ervan.
  */
-export const CIJFERS_GECONTROLEERD_OP = "2026-09-05";
+export const CIJFERS_GECONTROLEERD_OP = "2026-09-06";
+
+/**
+ * ZorgkaartNederland, de onafhankelijke waarderingssite van de Patiëntenfederatie.
+ *
+ * Yasin, 6 september 2026: in de hero stond "sinds 2017" twee keer, in het zegel en als
+ * vierde cijfer. Het vierde cijfer is nu dit. Het is een ander soort bewijs dan de
+ * Salonized-reviews: die schrijft de klant na de afspraak op ons eigen boekingssysteem,
+ * dit staat op een site die niet van ons is en waar wij niets aan kunnen veranderen.
+ *
+ * Het aantal waarderingen (zes) staat niet in de hero; Yasin, 7 september 2026: alleen
+ * "9,7 op Zorgkaart". Het cijfer linkt naar de Zorgkaart-pagina, waar dat aantal wél
+ * staat, dus wie het wil nakijken kan dat met één klik. Het aantal staat hier in de data
+ * zodat het niet vergeten wordt.
+ * [GEGEVEN-NODIG: iemand kijkt dit per kwartaal na, want het cijfer beweegt zodra er
+ * een waardering bij komt]
+ */
+export const DIBA_ZORGKAART = {
+  score: 9.7,
+  aantal: 6,
+  url: "https://www.zorgkaartnederland.nl/zorginstelling/huidtherapiepraktijk-diba-clinics-rotterdam-10082984",
+} as const;
 
 /** Stand Salonized, zie CIJFERS_GECONTROLEERD_OP: 5,0 · 3.893 reviews. */
 export const DIBA_SALONIZED_RATING = 5.0;
@@ -192,6 +213,12 @@ export type ProofStripItem = {
    * afkappen maakt van een bewijs een raadsel.
    */
   readonly kort?: string;
+  /**
+   * Waar het cijfer na te kijken is. Alleen voor cijfers die ergens anders staan dan bij
+   * ons: de Zorgkaart-score linkt naar Zorgkaart. Een cijfer dat je kunt aanklikken en
+   * controleren is een ander cijfer dan een dat we zelf noemen.
+   */
+  readonly href?: string;
 };
 
 export const DIBA_PROOF_STRIP_ITEMS: readonly ProofStripItem[] = [
@@ -224,10 +251,12 @@ export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
     label: "Geholpen klanten",
     kort: "Klanten",
   },
+  /* Hier stond "Vertrouwd sinds 2017", maar dat jaartal staat al in het zegel op de foto
+     ernaast (Yasin, 6 september 2026). Het vierde cijfer komt nu van buiten. */
   {
-    value: DIBA_PROOF.activeSince,
-    label: "Vertrouwd sinds",
-    isJaartal: true,
-    kort: "Open sinds",
+    value: DIBA_ZORGKAART.score,
+    label: "Op Zorgkaart",
+    kort: "Zorgkaart",
+    href: DIBA_ZORGKAART.url,
   },
 ] as const;

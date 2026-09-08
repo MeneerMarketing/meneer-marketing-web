@@ -116,8 +116,10 @@ export default function StriaePage() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-skinpen.jpg"
-              alt="Microneedlingbehandeling in de behandelkamer"
+              /* Yasin, 7 september 2026: de Fotona-opname van een striaebehandeling uit
+                 de shoot, in plaats van de enkele naald die hier stond. */
+              src="/images/shoot/beh-fotona-striae.jpg"
+              alt="Fotona-laserbehandeling van striae op de huid van het lichaam"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"
@@ -218,7 +220,7 @@ export default function StriaePage() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="De behandelaar beoordeelt in welk stadium je striae zijn en wat een reeks in jouw geval kan opleveren. Je hoort meteen hoeveel afspraken dat vraagt en wat het kost."
+        tekst="De behandelaar beoordeelt in welk stadium je striae zijn en wat een reeks in jouw geval kan opleveren. Je hoort meteen wat je ervan kunt verwachten en wat het kost."
         topic="striae"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

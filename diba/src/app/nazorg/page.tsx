@@ -34,15 +34,17 @@ import {
  * duren een dag of korter, en er springt telkens één rij uit. Bij bijna elke behandeling
  * is dat de zon.
  *
- * WAT ER BOVENAAN STAAT EN NIET ONDERAAN.
+ * DE VOLGORDE.
  *
- * Wanneer je moet bellen. Dat hoort niet in de kleine lettertjes onder een rooster; het
- * is het enige stuk van deze pagina waar haast bij kan zitten.
+ * Eerst het rooster, dan wanneer je moet bellen (Yasin, 8 september 2026). Het belblok
+ * stond eerst bovenaan omdat daar haast bij kan zitten, maar de vraag waarmee bijna
+ * iedereen hier komt is de rooster-vraag. Het belblok blijft wel een eigen blok met een
+ * telefoonnummer, en geen kleine lettertjes.
  *
  * [MEDISCHE-CHECK-ROJDA] elke termijn, elke reden en elke belreden in `nazorg.ts`. Dit
  * zijn instructies waar iemand thuis naar handelt.
  *
- * Eén donkergroen vlak: wanneer je moet bellen (§5).
+ * De hero is donker (geen foto, §5); de blokken eronder zijn licht.
  */
 
 export const metadata: Metadata = zoekmachineVelden({
@@ -63,38 +65,38 @@ export default function NazorgPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Nazorg</span>
+              <span className="text-[var(--on-dark-body)]">Nazorg</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Mag ik morgen
               <br />
-              <span className="diba-accent">weer sporten?</span>
+              <span className="diba-accent-on-dark">weer sporten?</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Dat is de vraag die thuis op de bank gesteld wordt, en niet: hoe
               verloopt mijn eerste week. Dus staat het hier als rooster: per
               behandeling vanaf wanneer alles weer mag, met de reden erbij.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               De meeste beperkingen duren een dag of korter. Op één na, en die
               springt er in elke kolom uit.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Wat voorgaat op deze pagina</Label>
             <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
               Wat je in de kliniek te horen hebt gekregen. Deze termijnen zijn
@@ -108,25 +110,55 @@ export default function NazorgPage() {
         </div>
       </section>
 
-      {/* ── Wanneer bellen: bovenaan, want hier kan haast bij zitten ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      {/* ── Het rooster: de signatuur ── */}
+      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        {/* Nazorg is een pagina vol roosters en termijnen. Dit is het moment waar die roosters
+          over gaan: het meegeven en het uitleggen, aan het eind van de afspraak. */}
+        <div className="mx-auto pb-16 lg:pb-20">
+          <BeeldVignet
+            src="/images/shoot/nazorg-producten.jpg"
+            alt="Behandelaar geeft een verzorgingsproduct mee aan een client"
+            onderschrift="Wat je meekrijgt, en waarom"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
         <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
+          <div>
+            <Label>Zeven bezigheden, vijf behandelingen</Label>
+            <h2 className="diba-display-m mt-4">
+              Wat mag <span className="diba-accent">wanneer weer.</span>
+            </h2>
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Zoek je behandeling in de kolommen en je vraag in de rijen. Klik
+              een vakje aan en je leest eronder waarom die termijn er is.
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <Nazorgrooster />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Wanneer bellen ── */}
+      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+        <div className="mx-auto">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
               <div>
-                <Label opDonker>Bel ons</Label>
+                <Label>Bel ons</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Nazorg hoort{" "}
-                  <span className="diba-accent-on-dark">vooraan te staan</span>
+                  Wanneer je <span className="diba-accent">moet bellen</span>
                 </h2>
-                <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  De meeste nazorgpagina&apos;s zetten dit in de kleine
-                  lettertjes onder aan de bladzijde. Het is het enige deel waar
-                  haast bij kan zitten, dus staat het hier.
+                <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
+                  Meestal is er niets aan de hand. Maar bij deze signalen bel je
+                  ons, ook zonder afspraak: dit horen we liever te vroeg dan te
+                  laat.
                 </p>
                 <a
                   href={DIBA_TELEFOON_HREF}
-                  className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white"
+                  className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)]"
                 >
                   {DIBA_TELEFOON}
                 </a>
@@ -136,7 +168,7 @@ export default function NazorgPage() {
                 {NAZORG.map((n) => (
                   <li
                     key={n.slug}
-                    className="rounded-[var(--r-md)] bg-white/10 p-5"
+                    className="rounded-[var(--r-md)] bg-white p-5"
                   >
                     <p className="text-[16px] leading-6 font-medium">
                       {n.naam}
@@ -145,7 +177,7 @@ export default function NazorgPage() {
                       {n.belOns.map((b) => (
                         <li
                           key={b}
-                          className="text-[15px] leading-7 text-[var(--on-dark-body)]"
+                          className="text-[15px] leading-7 text-[var(--t-body)]"
                         >
                           {publicCopy(b)}
                         </li>
@@ -155,40 +187,6 @@ export default function NazorgPage() {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Het rooster: de signatuur ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        {/* Nazorg is een pagina vol roosters en termijnen. Dit is het moment waar die roosters
-          over gaan: het meegeven en het uitleggen, aan het eind van de afspraak. */}
-        <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
-          <div className="mx-auto">
-            <BeeldVignet
-              src="/images/shoot/nazorg-producten.jpg"
-              alt="Behandelaar geeft een verzorgingsproduct mee aan een client"
-              onderschrift="Wat je meekrijgt, en waarom"
-              sizes="(min-width: 1024px) 86vw, 92vw"
-              className="aspect-[16/9] lg:aspect-[21/9]"
-            />
-          </div>
-        </section>
-        <div className="mx-auto">
-          <div>
-            <Label>Zeven bezigheden, vijf behandelingen</Label>
-            <h2 className="diba-display-m mt-4">
-              Wat mag <span className="diba-accent">wanneer weer.</span>
-            </h2>
-            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Zoek je behandeling in de kolommen en je vraag in de rijen. Klik
-              een vakje aan en de reden staat eronder, want een regel zonder
-              reden is een verbod en verboden worden genegeerd.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <Nazorgrooster />
           </div>
         </div>
       </section>

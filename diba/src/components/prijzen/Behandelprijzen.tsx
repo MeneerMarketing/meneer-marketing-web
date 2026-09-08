@@ -83,7 +83,15 @@ function Regel({
     Boolean(b.sessies) ||
     Boolean(b.duurMinuten) ||
     (b.varianten?.length ?? 0) > 0 ||
-    (b.wel?.length ?? 0) > 0;
+    (b.wel?.length ?? 0) > 0 ||
+    Boolean(b.prijsElders);
+  /* Rojda, 7 september 2026, bij de peelings: "hier vanaf zetten, want daaronder zijn
+     nog hogere tarieven". Het bedrag op de dichte rij is het laagste van de varianten;
+     zonder "vanaf" leest het als dé prijs, en wie openklapt voelt zich dan bedrogen. */
+  const hogerErna =
+    (b.varianten ?? []).some((v) => v.prijs > b.prijs) ||
+    /* Staan de tarieven elders (de zonetabel), dan is het rijbedrag ook het laagste. */
+    Boolean(b.prijsElders);
 
   return (
     <li className="overflow-hidden rounded-[var(--r-md)] bg-white">
@@ -138,7 +146,18 @@ function Regel({
               Dat is het hele punt van een prijslijst: je scant de rechterrand omlaag en
               niet elke regel apart. */}
           <span className="min-w-[6.5ch] text-right text-[18px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
-            {b.prijs > 0 ? prijsTekst(b.prijs) : "Na de meting"}
+            {b.prijs > 0 ? (
+              <>
+                {hogerErna ? (
+                  <span className="mr-1.5 text-[13px] font-normal text-[var(--t-muted)]">
+                    vanaf
+                  </span>
+                ) : null}
+                {prijsTekst(b.prijs)}
+              </>
+            ) : (
+              "Na de meting"
+            )}
           </span>
           {/* Alleen het pijltje, zonder cirkel eromheen.
 
@@ -186,6 +205,33 @@ function Regel({
            leek het uitgeklapte deel geen achtergrond te hebben: er wás geen verschil. Nu is
            het hetzelfde blad als de rij erboven, met een haarlijn als vouw. */
         <div className="border-t border-[var(--g-100)] bg-white px-5 py-6 sm:px-7">
+          {/* Staan de tarieven ergens anders (laserontharing: de zonetabel verderop op
+              deze pagina), dan is dát het nieuws van deze rij en staat het bovenaan, als
+              vlak met een knop. De feiten eronder blijven staan, maar zijn bijzaak. */}
+          {b.prijsElders ? (
+            <div className="mb-6 flex flex-col gap-4 rounded-[var(--r-md)] bg-[var(--g-050)] p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-6">
+              <p className="max-w-[48ch] text-[15px] leading-7 text-[var(--t-body)]">
+                {b.prijsElders.zin}
+              </p>
+              <div className="flex shrink-0 flex-col items-start gap-3 sm:items-end">
+                <a
+                  href={b.prijsElders.href}
+                  className="diba-label inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                >
+                  {b.prijsElders.knop}
+                  <span aria-hidden="true">↓</span>
+                </a>
+                {b.prijsElders.tweede ? (
+                  <a
+                    href={b.prijsElders.tweede.href}
+                    className="diba-label text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                  >
+                    {b.prijsElders.tweede.tekst}
+                  </a>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
           <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             <div>
               <p className="diba-label text-[var(--t-label)]">

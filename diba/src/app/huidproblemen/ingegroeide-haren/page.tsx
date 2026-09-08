@@ -137,8 +137,10 @@ export default function Pagina() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src="/images/shoot/beh-xl-hair.jpg"
-              alt="Laserontharing in de behandelkamer, met beschermbril"
+              /* Yasin, 7 september 2026: de laserontharing bij een man uit de shoot; de
+                 kaaklijn is precies waar ingegroeide haren het vaakst zitten. */
+              src="/images/shoot/beh-laserontharing-man.jpg"
+              alt="Laserontharing van de kaaklijn bij een man, met oogbescherming"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

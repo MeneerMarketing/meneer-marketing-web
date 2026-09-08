@@ -1,5 +1,6 @@
 import archief from "@/data/salonized-archief.json";
 import type { SalonizedReviewTopic } from "@/data/salonized-reviews";
+import { verfijnOnderwerpen } from "@/data/review-onderwerpen";
 
 /**
  * Het volledige Salonized-archief.
@@ -21,7 +22,9 @@ import type { SalonizedReviewTopic } from "@/data/salonized-reviews";
  * daardoor een eigen adres dat Google kan indexeren.
  *
  * De tags hangen aan een woord in de review zelf, net als bij de uitgelichte set in
- * `salonized-reviews.ts`. Zie de toelichting daar voor wat dat wel en niet oplevert.
+ * `salonized-reviews.ts`. Zie de toelichting daar voor wat dat wel en niet oplevert. De
+ * tag "algemeen" uit het bestand wordt bij het inlezen vervangen door de bezoek-onderwerpen
+ * uit `review-onderwerpen.ts`; het bestand zelf blijft zoals het is opgehaald.
  */
 
 type RuweReview = {
@@ -56,7 +59,29 @@ export const ARCHIEF_MET_TEKST: readonly ArchiefReview[] = RUW.filter(
   datum: r.d,
   sterren: r.s,
   tekst: r.t,
-  onderwerpen: r.o as SalonizedReviewTopic[],
+  onderwerpen: verfijnOnderwerpen(r.o as SalonizedReviewTopic[], r.t),
+}));
+
+export type ArchiefSterren = {
+  readonly id: string;
+  readonly naam: string;
+  readonly datum: string;
+  readonly sterren: number;
+};
+
+/**
+ * De beoordelingen die alleen sterren zijn, allemaal, in de volgorde van de bron.
+ *
+ * Rojda, 8 september 2026: die horen onder een eigen kop, en dan niet alleen als aantal.
+ * Meer dan naam, sterren en datum is er niet, dus meer staat er ook niet.
+ */
+export const ARCHIEF_ZONDER_TEKST: readonly ArchiefSterren[] = RUW.filter(
+  (r) => !r.t,
+).map((r, i) => ({
+  id: `s${i}`,
+  naam: r.n,
+  datum: r.d,
+  sterren: r.s,
 }));
 
 /** Hoeveel beoordelingen alleen sterren zijn. */
@@ -83,3 +108,6 @@ export function archiefAantal(
 
 /** Hoeveel reviews er per pagina staan. */
 export const PER_PAGINA = 48;
+
+/** Hoeveel regels zonder tekst er per pagina staan: twee kolommen van veertig. */
+export const PER_PAGINA_ZONDER = 80;

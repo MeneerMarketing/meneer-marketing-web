@@ -27,6 +27,7 @@ const ZOEKER = {
   pad: "/huidproblemen/symptoomzoeker",
   zin: "Kruis aan wat je ziet en voelt, in gewone woorden.",
   eersteVraag: "Wat zie je precies?",
+  menuZin: "Kruis aan wat je ziet",
   groep: "wegwijzer" as Groep,
   /* Het crèmepotje: het enige icoon uit de set dat geen huidbeeld toont maar een handeling.
      Past bij een hulpmiddel en niet bij een aandoening. */

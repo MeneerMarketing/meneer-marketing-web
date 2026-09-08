@@ -13,7 +13,6 @@ import {
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
 import {
   AANJAGERS,
   MELASMA_FAQ,
@@ -130,8 +129,11 @@ export default function MelasmaPage() {
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
             <Image
-              src={FIGMA_INTENT_PIGMENT.src}
-              alt={FIGMA_INTENT_PIGMENT.alt}
+              /* Yasin, 7 september 2026: "peelingrood" uit de shoot. De roodheid na de
+                 peeling is precies het eerlijke beeld bij melasma: er gebeurt iets, en
+                 dat zie je een paar dagen. */
+              src="/images/shoot/beh-peeling-rood.jpg"
+              alt="Na een peeling: de huid is rood en wordt met een ventilator gekoeld"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"

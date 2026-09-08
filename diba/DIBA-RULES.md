@@ -26,6 +26,12 @@ Sluit elke taak af met één regel per toets: ✓ of ✗ met reden.
 - Countdown-timers · "nog 2 plekken!" · elke vorm van nep-urgentie
 - Carrousel-hero's · autoplay-video mét geluid
 - Stockfoto's · AI-gegenereerde mensen
+  *(twee uitzonderingen, 07-09-2026 op verzoek van Rojda: keratosis pilaris en
+  steelwratjes tonen een Wikimedia Commons-foto van de aandoening zelf, omdat er geen
+  eigen opname is. Altijd met maker en licentie op de pagina (onderaan als fotocredit,
+  niet als label op de foto: Yasin, 08-09-2026), altijd in `/images/stock/` en nooit een
+  foto met een herkenbaar gezicht. Komt er een eigen foto, dan gaat de
+  stockfoto eruit.)*
 - Gradients als decoratie · trendkleuren · zwart-met-neongroen
   *(wél toegestaan: een verloop over een foto puur om tekst leesbaar te houden — dat is
   een leeslaag, geen versiering. Vuistregel: haal je de tekst weg en mis je het verloop
@@ -117,9 +123,12 @@ sectieniveau in plaats van als accentje.
   altijd dezelfde twee momenten: **het bewijs** (de meting, het resultaat) en **de
   volgende stap** (de intake). Een derde donker vlak betekent dat je iets tot bewijs
   verklaart wat het niet is.
-  *Uitzondering (Rojda, 06-09-2026): de hero van de homepage is donker, zodat de
-  merkkleur er staat voordat iemand scrolt. Dat is de enige pagina met drie donkere
-  vlakken, en ook daar staan ze nooit direct achter elkaar.*
+  *Uitzondering (Rojda 06-09-2026, Yasin 07-09 en 08-09-2026): de hero telt niet mee en
+  is donker op elke pagina waar geen foto in de hero staat, zodat de merkkleur er staat
+  voordat iemand scrolt. Staat er wél een foto in de hero, dan blijft die licht: de foto
+  draagt daar de kleur. Witte kaarten in een donkere hero blijven wit; een donkere kaart
+  wordt er wit, want donker op donker verdwijnt. Ook met een donkere hero staan donkere
+  vlakken nooit direct achter elkaar.*
 - **De homepage is "opgevuld"** (Rojda): secties wisselen af tussen wit en een licht
   kleurvlak (`--g-050`), kaarten staan wit op dat vlak. Geen twee witte secties achter
   elkaar zonder dat een kleurvlak ertussen zit.

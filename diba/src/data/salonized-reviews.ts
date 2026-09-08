@@ -1,4 +1,11 @@
-/** Onderwerp-tags voor review-mining en filters. */
+/**
+ * Onderwerp-tags voor review-mining en filters.
+ *
+ * De eerste acht gaan over de klacht of de behandeling en staan in de data hieronder. De
+ * rest gaat over het bezoek en wordt uit de tekst afgeleid, zie `review-onderwerpen.ts`;
+ * hier in de data staat voor die reviews nog "algemeen", en dat woord betekent na het
+ * verfijnen: kort en goed, zonder onderwerp.
+ */
 export type SalonizedReviewTopic =
   | "acne"
   | "littekens"
@@ -8,6 +15,15 @@ export type SalonizedReviewTopic =
   | "huidveroudering"
   | "gezichtsbehandeling"
   | "intake"
+  | "uitleg"
+  | "vriendelijk"
+  | "aandacht"
+  | "vakkundig"
+  | "service"
+  | "sfeer"
+  | "resultaat"
+  | "terug"
+  | "aanrader"
   | "algemeen";
 
 /** Publieke Salonized-pagina — bron voor live reviews. */

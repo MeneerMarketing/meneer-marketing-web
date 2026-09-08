@@ -56,31 +56,31 @@ export default function DoelgroepHubPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Voor wie</span>
+              <span className="text-[var(--on-dark-body)]">Voor wie</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[19ch]">
               Huidzorg die rekening houdt met{" "}
-              <span className="diba-accent">jouw situatie</span>
+              <span className="diba-accent-on-dark">jouw situatie</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Dezelfde huidklacht vraagt niet bij iedereen om dezelfde aanpak.
               Je leeftijd, huidtype, medicatie, hormonen en planning hebben
               invloed op wat verstandig en haalbaar is.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Daarom kijken we niet alleen naar wat er aan je huid te zien is,
               maar bespreken we ook wat er bij jou meespeelt. Hieronder staan
               vier situaties met bij elkaar {totaalAnders} punten waar we dan
@@ -88,7 +88,7 @@ export default function DoelgroepHubPage() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Wat er op elke pagina staat</Label>
             <ul className="mt-6 space-y-4">
               {[
@@ -123,7 +123,7 @@ export default function DoelgroepHubPage() {
       {/* Hier stond de EVE-M met "Dezelfde meting, voor iedereen". Okan: dat klinkt alsof
           iedereen standaard door de scanner gaat en de scanner de behandeling bepaalt. Nu
           een behandelaar die de huid bekijkt, met een onderschrift dat zegt wie er kiest. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/eerlijk-advies-consult.jpg"
@@ -206,13 +206,15 @@ export default function DoelgroepHubPage() {
             </p>
           </div>
 
-          {/* items-start: de ene groep heeft langere regels dan de andere, en gelijk
-              trekken levert onderin een halve lege kaart op. */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 sm:items-start xl:grid-cols-4">
+          {/* Dit waren witte kaarten op een witte sectie, dus vier losse lijstjes (Yasin,
+              8 september 2026: "maak er echte blokjes van"). Nu een licht vlak per groep,
+              even hoog, met onderaan de link naar de eigen pagina. Die link maakt de
+              kaart ook nuttig: wie zich herkent, klikt door. */}
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {DOELGROEPEN.map((d) => (
               <div
                 key={d.slug}
-                className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
+                className="flex h-full flex-col rounded-[var(--r-lg)] bg-[var(--g-050)] p-6 sm:p-7"
               >
                 <Label>{d.meta}</Label>
                 <ul className="mt-4 space-y-3">
@@ -225,6 +227,13 @@ export default function DoelgroepHubPage() {
                     </li>
                   ))}
                 </ul>
+                <Link
+                  href={`/doelgroep/${d.slug}`}
+                  className="diba-label mt-auto inline-flex items-center gap-1.5 pt-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                >
+                  Alles voor {d.meta.toLowerCase()}
+                  <span aria-hidden="true">›</span>
+                </Link>
               </div>
             ))}
           </div>

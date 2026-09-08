@@ -119,6 +119,26 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
     return () => document.removeEventListener("keydown", opToets);
   }, []);
 
+  /**
+   * Scrolt de pagina, dan gaat het paneel dicht.
+   *
+   * Rojda, 7 september 2026: "als je behandelingen tab opent, website scrolt door op
+   * achterkant". Het paneel hangt aan de balk en die blijft boven in beeld hangen, dus
+   * scrollen bewoog de pagina erachter terwijl het paneel bleef staan: een menu dat over
+   * een bewegende pagina zweeft. Wie scrolt is klaar met het menu; dan sluit het.
+   *
+   * De pagina op slot zetten (zoals bij het mobiele scherm) zou hier verkeerd zijn: het
+   * paneel opent al op hover, en dan zit een muis die per ongeluk over de balk gaat
+   * ineens vast. Scrollen binnen het paneel zelf raakt dit niet: dat is geen
+   * vensterscroll, en `overscroll-contain` houdt het daar.
+   */
+  useEffect(() => {
+    if (!open) return undefined;
+    const sluit = () => setOpen(null);
+    window.addEventListener("scroll", sluit, { passive: true });
+    return () => window.removeEventListener("scroll", sluit);
+  }, [open]);
+
   /** Achtergrond niet laten meescrollen zolang het mobiele paneel openstaat. */
   useEffect(() => {
     if (!mobielOpen) return undefined;
@@ -339,6 +359,13 @@ function NavKnop({
  * De knop in het uitgelichte vak staat direct onder zijn eigen tekst en niet onderaan de
  * kolom: bij een paneel van zeshonderd pixels hoog valt daar anders een gat waar niets in
  * staat.
+ *
+ * NIET HOGER DAN HET SCHERM (Rojda, 7 september 2026). Het paneel Huidproblemen was
+ * twaalf rijen hoog en viel op een laptop onder de schermrand; de onderste links waren
+ * onbereikbaar, want scrollen bewoog de pagina en niet het paneel. Drie dingen:
+ * de lijsten staan in meer kolommen (zie `breed` in de data), de rijen zijn iets
+ * compacter, en als vangnet krijgt het paneel een maximale hoogte met een eigen
+ * scrollbalk. Op 1280 x 720 past alles zonder die scrollbalk.
  */
 function Paneel({
   item,
@@ -355,35 +382,52 @@ function Paneel({
    * een lijst die juist ruimte kon gebruiken.
    */
   const kolommen = item.kolommen ?? [];
-  const banen = kolommen.reduce((n, k) => n + (k.breed ? 2 : 1), 0);
+  const banen = kolommen.reduce((n, k) => n + (k.breed ?? 1), 0);
 
   return (
     <div
-      className={`hidden overflow-hidden bg-white shadow-[var(--shadow-float)] lg:block ${vorm.paneel}`}
+      data-paneel={item.label}
+      className={`hidden max-h-[calc(100dvh-9.5rem)] overflow-x-hidden overflow-y-auto overscroll-contain bg-white shadow-[var(--shadow-float)] lg:block ${vorm.paneel}`}
       style={{ animation: "diba-paneel-in .28s var(--ease-diba) both" }}
     >
       <div className="grid grid-cols-12">
         <div className="col-span-9 p-6 2xl:p-10">
           <div
-            className="grid gap-x-6 gap-y-10 2xl:gap-x-10"
+            className="grid gap-x-6 gap-y-8 2xl:gap-x-10"
             style={{ gridTemplateColumns: `repeat(${banen}, minmax(0, 1fr))` }}
           >
             {kolommen.map((kolom) => (
               <div
                 key={kolom.kop}
-                style={kolom.breed ? { gridColumn: "span 2" } : undefined}
+                style={
+                  kolom.breed
+                    ? { gridColumn: `span ${kolom.breed}` }
+                    : undefined
+                }
               >
                 <p className="diba-label text-[var(--t-muted)]">{kolom.kop}</p>
                 <ul
-                  className={`mt-4 gap-x-6 ${kolom.breed ? "grid grid-cols-2" : "flex flex-col"}`}
+                  className={`mt-3 gap-x-6 ${kolom.breed ? "grid" : "flex flex-col"}`}
+                  style={
+                    kolom.breed
+                      ? {
+                          gridTemplateColumns: `repeat(${kolom.breed}, minmax(0, 1fr))`,
+                        }
+                      : undefined
+                  }
                 >
                   {kolom.items.map((l) => (
                     <li key={l.href}>
+                      {l.kopErboven ? (
+                        <p className="diba-label mt-5 mb-3 text-[var(--t-muted)]">
+                          {l.kopErboven}
+                        </p>
+                      ) : null}
                       <Link
                         prefetch={false}
                         href={l.href}
                         onClick={onSluit}
-                        className="group -mx-3 block rounded-[var(--r-sm)] px-3 py-2 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                        className="group -mx-3 block rounded-[var(--r-sm)] px-3 py-1 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                       >
                         {/* `truncate` op allebei de regels: een titel of zin die
                             omvalt naar een tweede regel duwt alles eronder scheef, en
@@ -395,7 +439,7 @@ function Paneel({
                           {l.label}
                         </span>
                         {l.zin ? (
-                          <span className="mt-0.5 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
+                          <span className="block truncate text-[13px] leading-5 text-[var(--t-muted)]">
                             {l.zin}
                           </span>
                         ) : null}
@@ -407,7 +451,7 @@ function Paneel({
             ))}
           </div>
 
-          <div className="mt-10 border-t border-[var(--g-100)] pt-5">
+          <div className="mt-5 border-t border-[var(--g-100)] pt-4">
             <Link
               prefetch={false}
               href={item.href}
@@ -425,7 +469,7 @@ function Paneel({
             {/* Het beeld vult de bovenkant tot de randen. De kolom was voor twee derde
                 leeg; nu draagt hij waar je terechtkomt. */}
             {item.uitgelicht.foto ? (
-              <div className="relative aspect-[16/11] w-full overflow-hidden">
+              <div className="relative aspect-[16/10] w-full overflow-hidden">
                 <Image
                   src={item.uitgelicht.foto.src}
                   alt={item.uitgelicht.foto.alt}
@@ -436,21 +480,24 @@ function Paneel({
               </div>
             ) : null}
 
-            <div className="flex flex-1 flex-col justify-center p-8 xl:p-10">
+            {/* Compacter dan het was (p-8, ruime marges): deze kolom was in het paneel
+                Behandelingen het hoogste element en duwde het paneel onder de schermrand,
+                terwijl de lijsten ernaast al pasten. */}
+            <div className="flex flex-1 flex-col justify-center p-7">
               <p className="diba-label text-[var(--t-muted)]">
                 {item.uitgelicht.label}
               </p>
-              <p className="diba-card-title mt-3 text-[var(--t-strong)]">
+              <p className="diba-card-title mt-2 text-[var(--t-strong)]">
                 {item.uitgelicht.kop}
               </p>
-              <p className="mt-3 text-[14px] leading-6 text-[var(--t-body)]">
+              <p className="mt-2 text-[14px] leading-[22px] text-[var(--t-body)]">
                 {item.uitgelicht.zin}
               </p>
               <Link
                 prefetch={false}
                 href={item.uitgelicht.href}
                 onClick={onSluit}
-                className="diba-label mt-7 inline-flex h-11 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="diba-label mt-5 inline-flex h-11 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
                 {item.uitgelicht.knop}
                 <Pijl />
@@ -463,7 +510,7 @@ function Paneel({
                   prefetch={false}
                   href={item.uitgelicht.tweede.href}
                   onClick={onSluit}
-                  className="mt-4 inline-flex w-fit text-[14px] leading-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="mt-3 inline-flex w-fit text-[14px] leading-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   {item.uitgelicht.tweede.tekst}
                 </Link>

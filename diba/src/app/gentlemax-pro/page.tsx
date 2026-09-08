@@ -58,39 +58,39 @@ export default function GentleMaxProPage() {
       />
 
       {/* ── Hero: de vraag ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">GentleMax Pro</span>
+              <span className="text-[var(--on-dark-body)]">GentleMax Pro</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Twee lasers
               <br />
-              <span className="diba-accent">in één apparaat.</span>
+              <span className="diba-accent-on-dark">in één apparaat.</span>
             </h1>
 
-            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Overal lees je dat dit apparaat werkt op huidtype I tot en met VI.
               Wat er zelden bij staat is waaróm: er zitten twee verschillende
               golflengtes in, en jouw huidtype bepaalt welke van de twee je
               krijgt.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Dat is geen detail voor techneuten. Het is het verschil tussen een
               goede behandeling en een brandwond.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>De vraag waar alles op neerkomt</Label>
             <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
               Hoe raak je een haarwortel zonder de huid eromheen te raken?

@@ -19,7 +19,6 @@ import {
   DROGE_HUID_WEL_NIET,
   VERWARRINGEN,
 } from "@/data/droge-huid";
-import { FIGMA_INTENT_VEROUDERING } from "@/data/figma-home-images";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
@@ -120,9 +119,12 @@ export default function DrogeHuidPage() {
           </div>
 
           <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+            {/* Yasin, 7 september 2026: opname 4S3A8055 uit de shoot, het masker dat met
+                het handstuk wordt ingewerkt. Stond hier eerst de OxyGeneo-gel (Rojda's
+                "die met die bubbeltjes"); deze is de keuze van Yasin. */}
             <Image
-              src={FIGMA_INTENT_VEROUDERING.src}
-              alt={FIGMA_INTENT_VEROUDERING.alt}
+              src="/images/shoot/beh-masker-handstuk.jpg"
+              alt="Masker wordt met een handstuk ingewerkt op het gezicht van een cliënt"
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"
