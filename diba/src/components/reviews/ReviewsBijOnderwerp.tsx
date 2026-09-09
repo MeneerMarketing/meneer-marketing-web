@@ -57,9 +57,10 @@ export default function ReviewsBijOnderwerp({
           intro={intro}
           raster="gelijk"
         />
-        <ul className="mt-12 grid gap-4 md:grid-cols-3 md:items-start">
-          {reviews.map((r) => (
-            <li key={r.id}>
+        <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3 md:items-start">
+          {reviews.map((r, i) => (
+            /* Op een telefoon twee reviews; de derde staat vanaf md. */
+            <li key={r.id} className={i >= 2 ? "max-md:hidden" : undefined}>
               <ReviewCard
                 quote={r.quote}
                 name={r.name}

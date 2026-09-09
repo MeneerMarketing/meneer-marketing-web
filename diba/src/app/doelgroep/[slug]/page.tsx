@@ -88,7 +88,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -130,7 +130,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
       </section>
 
       {/* ── De signatuur: anders naast niet anders ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Het verschil</Label>
@@ -146,7 +146,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 lg:grid-cols-2 lg:gap-6">
+          <div className="mt-8 sm:mt-10 grid gap-4 lg:grid-cols-2 lg:gap-6">
             <div>
               <p className="diba-label text-[var(--t-label)]">
                 Dit is echt anders · {d.anders.length}
@@ -193,7 +193,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
       </section>
 
       {/* ── Wat je moet melden ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
@@ -228,7 +228,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
       </section>
 
       {/* ── De andere drie ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Herken je jezelf hier niet in</Label>
@@ -243,7 +243,7 @@ export default async function DoelgroepPage({ params }: PageProps) {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <ul className="mt-8 sm:mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {anderen.map((a) => (
               <li key={a.slug}>
                 <Link

@@ -8,6 +8,7 @@ import {
 } from "@/data/behandelingen";
 import Label from "@/components/ui/Label";
 import { publicCopy } from "@/lib/copy-flags";
+import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
  * De behandelingen, gegroepeerd op waarvoor je komt.
@@ -29,10 +30,13 @@ import { publicCopy } from "@/lib/copy-flags";
 
 function Kaart({ b }: { b: Behandeling }) {
   return (
-    <li>
+    /* min-w-0 op li, kaart en regel: het afgekapte apparaatlabel had anders een minimale
+       breedte van zijn hele tekst, en op een telefoon duwde dat elke kaart 80px buiten het
+       scherm, met de prijs erbij (9 september 2026). */
+    <li className="min-w-0">
       <Link
         href={`/behandelingen/${b.slug}`}
-        className="group flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+        className="group flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
       >
         <p className="diba-card-title text-[var(--t-strong)]">{b.naam}</p>
         <p className="mt-3 min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
@@ -45,8 +49,8 @@ function Kaart({ b }: { b: Behandeling }) {
 
             publicCopy haalt de redactievlaggen eruit; die staan in de data omdat Rojda en
             Okan nog dingen nakijken, en zonder deze functie staan ze in beeld. */}
-        <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
-          <span className="truncate" title={b.apparaat}>
+        <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
+          <span className="min-w-0 truncate" title={b.apparaat}>
             {b.apparaat ?? ""}
           </span>
           <span className="shrink-0 text-[var(--g-700)]">
@@ -109,11 +113,19 @@ export default function BehandelingenPerWens() {
               </div>
             </div>
 
-            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {behandelingen.map((b) => (
-                <Kaart key={b.slug} b={b} />
-              ))}
-            </ul>
+            {/* Op een telefoon zeven groepen met samen veertig kaarten onder elkaar is
+                geen overzicht maar een tunnel. Dicht tot je de groep opent; op desktop
+                staat alles open (Yasin, 9 september 2026). */}
+            <MobielInklap
+              className="mt-8"
+              label={`Toon de ${behandelingen.length} behandelingen`}
+            >
+              <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {behandelingen.map((b) => (
+                  <Kaart key={b.slug} b={b} />
+                ))}
+              </ul>
+            </MobielInklap>
           </section>
         );
       })}

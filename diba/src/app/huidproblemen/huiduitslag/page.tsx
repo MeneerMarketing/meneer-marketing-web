@@ -28,6 +28,7 @@ import {
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Huiduitslag — veertiende eigen pagina, en de vierde zonder afspraakknop.
@@ -77,7 +78,7 @@ export default function HuiduitslagPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="py-14 lg:py-20">
+        <div className="py-10 sm:py-14 lg:py-20">
           <nav
             aria-label="Kruimelpad"
             className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -104,11 +105,12 @@ export default function HuiduitslagPage() {
             uiteen van onschuldig tot spoedeisend, en een diagnose hoort bij je
             huisarts.
           </p>
-
-          <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-            Op deze pagina staan de signalen waarbij je vandaag nog belt, en de
-            veelvoorkomende soorten uitslag met wat eraan te doen is.
-          </p>
+          <LeesVerder opDonker>
+            <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Op deze pagina staan de signalen waarbij je vandaag nog belt, en
+              de veelvoorkomende soorten uitslag met wat eraan te doen is.
+            </p>
+          </LeesVerder>
 
           <div className="mt-9">
             <Button variant="primair-op-donker" href="#alarm">
@@ -125,7 +127,7 @@ export default function HuiduitslagPage() {
       {/* ── Alarmsignalen. Vóór alles, want dit is het enige dat echt haast heeft. ── */}
       <section
         id="alarm"
-        className="mx-5 scroll-mt-[var(--anker-offset)] rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
+        className="mx-5 scroll-mt-[var(--anker-offset)] rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
       >
         <div className="mx-auto">
           <Label opDonker>Wanneer je niet afwacht</Label>
@@ -138,7 +140,7 @@ export default function HuiduitslagPage() {
           {/* De signalen op een eigen vlak in plaats van achter een haarlijntje. Dat is de
               huisregel (vullingen, geen lijnen), en op --g-800 haalt --on-dark-body 7,57
               tegen 4,08 op een doorschijnend wit vlak: dat laatste zakt onder AA. */}
-          <ul className="mt-10 grid gap-3 md:grid-cols-2 md:gap-4">
+          <ul className="mt-8 sm:mt-10 grid gap-3 md:grid-cols-2 md:gap-4">
             {ALARM.map((a) => (
               <li
                 key={a}
@@ -191,7 +193,7 @@ export default function HuiduitslagPage() {
           zonder dat je er iets voor hoeft te doen. */}
       <section
         id="gedrag"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -202,7 +204,7 @@ export default function HuiduitslagPage() {
             intro="Niet wat je ziet maar wat het doet, zegt het meeste. Dit is ook de eerste vraag die je krijgt, bij ons en bij de huisarts."
           />
 
-          <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {UITSLAG_GEDRAG.map((g) => (
               <li
                 key={g.kop}
@@ -222,7 +224,7 @@ export default function HuiduitslagPage() {
       {/* ── Gewone oorzaken ── */}
       <section
         id="oorzaken"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -232,7 +234,7 @@ export default function HuiduitslagPage() {
             intro="Deze vier komen het vaakst voor. Ze helpen je beschrijven wat je ziet, en dat maakt het gesprek met de huisarts korter."
           />
 
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2 lg:grid-cols-4">
             {OORZAKEN.map((o) => (
               <li key={o.naam} className="flex flex-col bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{o.naam}</h3>
@@ -274,7 +276,7 @@ export default function HuiduitslagPage() {
       <PillarFaq items={UITSLAG_FAQ} onderwerp="huiduitslag" />
 
       {/* ── Afsluiting zonder afspraakknop ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">

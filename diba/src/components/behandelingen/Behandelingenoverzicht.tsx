@@ -249,7 +249,7 @@ export default function Behandelingenoverzicht() {
       </p>
 
       {/* ── De kaarten ── */}
-      <ul className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {lijst.map((b) => {
           const match = heeftProfiel ? oordeelVan.get(b.slug) : undefined;
           const diepste =
@@ -260,10 +260,16 @@ export default function Behandelingenoverzicht() {
             <li key={b.slug}>
               <Link
                 href={`/behandelingen/${b.slug}`}
-                className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-7"
+                className="flex h-full flex-col rounded-[var(--r-md)] bg-white p-4 transition-all md:p-6 duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:p-7"
               >
-                <span className="flex flex-wrap items-center gap-2">
-                  <span className="diba-label text-[var(--t-muted)]">
+                {/* Op een telefoon is dit een lijst en geen muur: de diepte en de
+                    omschrijving staan op de pagina zelf. Alleen als het huidprofiel
+                    iets te zeggen heeft, blijft de bovenste regel staan (Yasin, 9
+                    september 2026: mobiel korter en op conversie). */}
+                <span
+                  className={`flex flex-wrap items-center gap-2 ${match ? "" : "max-md:hidden"}`}
+                >
+                  <span className="diba-label text-[var(--t-muted)] max-md:hidden">
                     {diepste}
                   </span>
                   {match ? (
@@ -275,7 +281,7 @@ export default function Behandelingenoverzicht() {
                   ) : null}
                 </span>
 
-                <span className="diba-card-title mt-3 text-[var(--t-strong)]">
+                <span className="diba-card-title mt-3 text-[var(--t-strong)] max-md:mt-0 max-md:text-[18px] max-md:leading-6">
                   {b.naam}
                 </span>
                 {b.apparaat ? (
@@ -284,7 +290,7 @@ export default function Behandelingenoverzicht() {
                   </span>
                 ) : null}
 
-                <span className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                <span className="mt-3 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden">
                   {publicCopy(b.kort)}
                 </span>
 
@@ -316,7 +322,7 @@ export default function Behandelingenoverzicht() {
                   </span>
                 ) : null}
 
-                <span className="mt-auto flex items-baseline justify-between gap-4 pt-4">
+                <span className="mt-auto flex items-baseline justify-between gap-4 pt-4 max-md:pt-2">
                   <span className="text-[13px] leading-5 text-[var(--t-muted)]">
                     {publicCopy(b.herstel)}
                   </span>

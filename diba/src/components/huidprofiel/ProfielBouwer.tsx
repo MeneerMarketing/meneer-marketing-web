@@ -571,7 +571,7 @@ export default function ProfielBouwer() {
           waar staat wat we nog niet weten en niet het blok met de knop erin. */}
       <section
         id="uitkomst"
-        className="scroll-mt-[var(--anker-offset)] pt-12 lg:pt-16"
+        className="scroll-mt-[var(--anker-offset)] pt-8 sm:pt-12 lg:pt-16"
       >
         <p className="diba-label text-[var(--t-label)]">Je uitkomst</p>
         <h2 className="diba-display-m mt-4 max-w-[20ch]">

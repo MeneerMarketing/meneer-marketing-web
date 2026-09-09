@@ -13,6 +13,8 @@ import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
+import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
  * Reviews.
@@ -92,7 +94,7 @@ export default async function ReviewsPage({
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -151,7 +153,7 @@ export default async function ReviewsPage({
       </section>
 
       {/* ── Wat vijf sterren niet zegt ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -166,32 +168,37 @@ export default async function ReviewsPage({
               </p>
             </div>
 
-            <ul className="mt-12 grid gap-4 md:grid-cols-3">
-              {[
-                {
-                  kop: "Wie wegblijft, schrijft niets",
-                  zin: "De uitnodiging komt na een bezoek. Wie ontevreden was komt vaak niet terug, krijgt dus geen tweede uitnodiging, en verdwijnt daarmee uit het gemiddelde. Dat is geen opzet maar het maakt het cijfer wel rooskleuriger dan de werkelijkheid.",
-                },
-                {
-                  kop: "Het gaat over het bezoek",
-                  zin: "Bijna elke review hierboven gaat over hoe iemand behandeld is: er werd tijd genomen, alles werd uitgelegd, iemand was voorzichtig. Dat is echt en het is belangrijk. Het is alleen iets anders dan of jouw huid gaat veranderen.",
-                },
-                {
-                  kop: "Het is geschreven vlak erna",
-                  zin: "Een review komt meestal binnen een week. Bij de meeste behandelingen hier is er dan nog niets te zien, want het resultaat komt weken later. Wat je leest is dus de ervaring en niet de uitkomst.",
-                },
-              ].map((r) => (
-                <li
-                  key={r.kop}
-                  className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
-                >
-                  <p className="text-[18px] leading-7 font-medium">{r.kop}</p>
-                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-                    {r.zin}
-                  </p>
-                </li>
-              ))}
-            </ul>
+            <MobielInklap
+              className="mt-8 sm:mt-12"
+              label="Lees de drie redenen"
+            >
+              <ul className="grid gap-4 md:grid-cols-3">
+                {[
+                  {
+                    kop: "Wie wegblijft, schrijft niets",
+                    zin: "De uitnodiging komt na een bezoek. Wie ontevreden was komt vaak niet terug, krijgt dus geen tweede uitnodiging, en verdwijnt daarmee uit het gemiddelde. Dat is geen opzet maar het maakt het cijfer wel rooskleuriger dan de werkelijkheid.",
+                  },
+                  {
+                    kop: "Het gaat over het bezoek",
+                    zin: "Bijna elke review hierboven gaat over hoe iemand behandeld is: er werd tijd genomen, alles werd uitgelegd, iemand was voorzichtig. Dat is echt en het is belangrijk. Het is alleen iets anders dan of jouw huid gaat veranderen.",
+                  },
+                  {
+                    kop: "Het is geschreven vlak erna",
+                    zin: "Een review komt meestal binnen een week. Bij de meeste behandelingen hier is er dan nog niets te zien, want het resultaat komt weken later. Wat je leest is dus de ervaring en niet de uitkomst.",
+                  },
+                ].map((r) => (
+                  <li
+                    key={r.kop}
+                    className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
+                  >
+                    <p className="text-[18px] leading-7 font-medium">{r.kop}</p>
+                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                      {r.zin}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </MobielInklap>
 
             <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
               Een review kan wel een goed beeld geven van de manier waarop
@@ -204,7 +211,7 @@ export default async function ReviewsPage({
       {/* ── De muur ── */}
       {/* Reviews gaan bijna altijd over een persoon en niet over een apparaat. Dan hoort er
           ook een mens bij te staan. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-tweetal.jpg"
@@ -218,7 +225,7 @@ export default async function ReviewsPage({
 
       <section
         id="alles"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
         <div className="mx-auto">
           <div>
@@ -247,7 +254,7 @@ export default async function ReviewsPage({
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat hier niet staat</Label>
@@ -260,10 +267,12 @@ export default async function ReviewsPage({
               De reviews komen van de openbare Salonized-pagina. Controleer bij
               twijfel altijd de oorspronkelijke bron.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Het is wel een momentopname. Er komen er dagelijks bij, en die
-              staan daar eerder dan hier.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Het is wel een momentopname. Er komen er dagelijks bij, en die
+                staan daar eerder dan hier.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <a
                 href={SALONIZED_REVIEWS_URL}

@@ -20,6 +20,7 @@ import {
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Eczeem — twaalfde eigen pagina, en de tweede zonder afspraakknop.
@@ -66,7 +67,7 @@ export default function EczeemPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -93,12 +94,13 @@ export default function EczeemPage() {
               Eczeem is een kringloop: jeuk geeft krabben, krabben breekt je
               huidbarrière, en een kapotte barrière laat meer prikkels door.
             </p>
-
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wij werken aan die barrière, met behandelingen en verzorging die
-              hem herstellen. De medicatie loopt via je huisarts, en we stemmen
-              onze aanpak daarop af.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                Wij werken aan die barrière, met behandelingen en verzorging die
+                hem herstellen. De medicatie loopt via je huisarts, en we
+                stemmen onze aanpak daarop af.
+              </p>
+            </LeesVerder>
 
             <div className="mt-9">
               <Button variant="primair-op-donker" href="#cirkel">
@@ -128,7 +130,7 @@ export default function EczeemPage() {
       {/* ── De krabcirkel: de uitblinker ── */}
       <section
         id="cirkel"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -144,7 +146,7 @@ export default function EczeemPage() {
       {/* ── Of is het iets anders ── */}
       <section
         id="verwar"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -154,7 +156,7 @@ export default function EczeemPage() {
             intro="Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is. Deze drie lijken erop en vragen iets anders."
           />
 
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
             {VERWAR_NIET.map((v) => (
               <li key={v.naam} className="flex flex-col bg-white p-6 sm:p-8">
                 <h3 className="diba-card-title">{v.naam}</h3>
@@ -186,7 +188,7 @@ export default function EczeemPage() {
       <PillarFaq items={ECZEEM_FAQ} onderwerp="eczeem" />
 
       {/* ── Afsluiting zonder afspraakknop ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">

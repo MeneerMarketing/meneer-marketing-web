@@ -67,7 +67,7 @@ export default function HuidprofielKnop() {
         />
       ) : null}
 
-      <div className="fixed right-4 bottom-4 z-[46] flex flex-col items-end gap-3 sm:right-6 sm:bottom-6">
+      <div className="fixed right-4 bottom-[calc(1rem+var(--actiebalk,0px))] z-[46] flex flex-col items-end gap-3 sm:right-6 sm:bottom-[calc(1.5rem+var(--actiebalk,0px))]">
         {open ? (
           <div
             role="dialog"

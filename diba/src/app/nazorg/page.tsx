@@ -66,7 +66,7 @@ export default function NazorgPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -111,7 +111,7 @@ export default function NazorgPage() {
       </section>
 
       {/* ── Het rooster: de signatuur ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         {/* Nazorg is een pagina vol roosters en termijnen. Dit is het moment waar die roosters
           over gaan: het meegeven en het uitleggen, aan het eind van de afspraak. */}
         <div className="mx-auto pb-16 lg:pb-20">
@@ -142,7 +142,7 @@ export default function NazorgPage() {
       </section>
 
       {/* ── Wanneer bellen ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
@@ -192,7 +192,7 @@ export default function NazorgPage() {
       </section>
 
       {/* ── Wat je meteen na afloop merkt ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Geen verrassingen</Label>
@@ -207,7 +207,7 @@ export default function NazorgPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {NAZORG.map((n) => (
               <li
                 key={n.slug}
@@ -232,7 +232,7 @@ export default function NazorgPage() {
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Bij twijfel</Label>

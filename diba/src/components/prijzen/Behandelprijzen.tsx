@@ -37,6 +37,18 @@ import type { Match, MatchGrond } from "@/data/huidprofiel";
  * Het bedrag staat altijd in beeld, ook dicht. Dat is de hele belofte van deze pagina en
  * die mag niet achter een klik verdwijnen.
  *
+ * OP EEN TELEFOON STAAT DE LIJST OPEN.
+ *
+ * Eén dag stonden de negen categorieën op mobiel dicht, elk achter "Toon de 4 tarieven".
+ * Yasin, 9 september 2026: "ik wil gewoon die behandelingen zien, nu zie je de hele tijd
+ * 'toon de tarieven', dat is niet mooi." Terecht: de tarieven zijn waar deze pagina om
+ * draait, en het ding zelf zet je niet achter een knop. Inklappen is voor bijzaken.
+ *
+ * Wat de lijst op een telefoon toch kort houdt: de rij is daar alleen naam en bedrag (de
+ * regel waar het voor is verhuist naar het uitgeklapte deel), en boven de lijst staan de
+ * categorieën als springlinks, zodat wie een peeling zoekt niet langs negentien
+ * laserbehandelingen hoeft.
+ *
  * HOE LANG HET DUURT.
  *
  * Dat stond hier eerst niet, want het stond nergens in de data. Inmiddels wel: zie
@@ -101,7 +113,7 @@ function Regel({
         onClick={onWissel}
         /* De hover alleen als de rij dicht is. Open is de handeling al gedaan, en dan
            is dat vlak een vlek boven het witte paneel in plaats van een uitnodiging. */
-        className={`group flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-1 rounded-[var(--r-md)] px-5 py-4 text-left transition-colors duration-200 [transition-timing-function:var(--ease-diba)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+        className={`group flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-[var(--r-md)] px-4 py-3 text-left max-sm:flex-nowrap sm:gap-x-6 sm:px-5 sm:py-4 transition-colors duration-200 [transition-timing-function:var(--ease-diba)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
           open ? "" : "hover:bg-[var(--g-075)]"
         }`}
       >
@@ -109,7 +121,13 @@ function Regel({
           <span className="block text-[17px] leading-7 font-medium text-[var(--t-strong)]">
             {b.naam}
           </span>
-          <span className="mt-0.5 block max-w-[54ch] text-[14px] leading-6 text-[var(--t-muted)]">
+          {/* Op een telefoon alleen als de rij niet open kan; anders staat deze regel in
+              het uitgeklapte deel en is de dichte rij naam plus bedrag. */}
+          <span
+            className={`mt-0.5 block max-w-[54ch] text-[14px] leading-6 text-[var(--t-muted)] ${
+              heeftDetail ? "max-sm:hidden" : ""
+            }`}
+          >
             {publicCopy(b.kort)}
           </span>
           {/* Wat het huidprofiel over deze regel te zeggen heeft.
@@ -204,7 +222,11 @@ function Regel({
            WIT EN NIET --g-025. Dat was precies de kleur van de sectie eromheen, en daardoor
            leek het uitgeklapte deel geen achtergrond te hebben: er wás geen verschil. Nu is
            het hetzelfde blad als de rij erboven, met een haarlijn als vouw. */
-        <div className="border-t border-[var(--g-100)] bg-white px-5 py-6 sm:px-7">
+        <div className="border-t border-[var(--g-100)] bg-white px-4 py-5 sm:px-7 sm:py-6">
+          {/* Waar het voor is: op een telefoon staat dat niet in de dichte rij, dus hier. */}
+          <p className="mb-5 text-[15px] leading-7 text-[var(--t-body)] sm:hidden">
+            {publicCopy(b.kort)}
+          </p>
           {/* Staan de tarieven ergens anders (laserontharing: de zonetabel verderop op
               deze pagina), dan is dát het nieuws van deze rij en staat het bovenaan, als
               vlak met een knop. De feiten eronder blijven staan, maar zijn bijzaak. */}
@@ -252,7 +274,7 @@ function Regel({
                   ].filter(Boolean) as readonly (readonly [string, string])[]
                 ).map(([kop, waarde]) => (
                   <div key={kop} className="flex gap-3">
-                    <dt className="w-[9.5rem] shrink-0 text-[14px] leading-6 text-[var(--t-muted)]">
+                    <dt className="w-[7rem] shrink-0 text-[14px] leading-6 text-[var(--t-muted)] sm:w-[9.5rem]">
                       {kop}
                     </dt>
                     <dd className="text-[15px] leading-6 text-[var(--t-body)]">
@@ -348,33 +370,58 @@ export default function Behandelprijzen() {
 
        Het aantal per categorie stond er ook nog bij ("4 behandelingen"). Dat is te tellen
        en het stond in de weg. */
-    <div className="space-y-10">
-      {groepen.map((g) => (
-        <section
-          key={g.id}
-          id={`prijs-${g.id}`}
-          className="scroll-mt-[var(--anker-offset)]"
-        >
-          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1 pb-4">
-            <Label>{g.label}</Label>
-            <p className="text-[15px] leading-7 text-[var(--t-muted)]">
-              {g.zin}
-            </p>
-          </div>
+    <div>
+      {/* Springlinks naar de categorieën, alleen onder lg: op een telefoon is de lijst
+          drie schermen, en wie een peeling zoekt hoeft zo niet langs de lasers. Op
+          desktop staat alles in beeld en is dit dubbelop. Het balkje loopt tot de
+          schermrand door (negatieve marge tegen de sectiemarge), zodat te zien is dat
+          het scrollt. */}
+      <nav
+        aria-label="Categorieën"
+        className="-mx-5 mb-6 overflow-x-auto px-5 [scrollbar-width:none] sm:-mx-9 sm:px-9 lg:hidden [&::-webkit-scrollbar]:hidden"
+      >
+        <ul className="flex w-max gap-2">
+          {groepen.map((g) => (
+            <li key={g.id}>
+              <a
+                href={`#prijs-${g.id}`}
+                className="diba-label inline-flex min-h-10 items-center rounded-[var(--r-pill)] bg-white px-4 whitespace-nowrap text-[var(--t-strong)] transition-colors hover:bg-[var(--g-075)] active:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+              >
+                {g.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-          <ul className="space-y-1.5">
-            {g.items.map((b) => (
-              <Regel
-                key={b.slug}
-                behandeling={b}
-                open={open === b.slug}
-                onWissel={() => setOpen(open === b.slug ? null : b.slug)}
-                oordeel={oordelen?.get(b.slug)}
-              />
-            ))}
-          </ul>
-        </section>
-      ))}
+      <div className="space-y-8 sm:space-y-10">
+        {groepen.map((g) => (
+          <section
+            key={g.id}
+            id={`prijs-${g.id}`}
+            className="scroll-mt-[var(--anker-offset)]"
+          >
+            <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1 pb-4">
+              <Label>{g.label}</Label>
+              <p className="text-[15px] leading-7 text-[var(--t-muted)]">
+                {g.zin}
+              </p>
+            </div>
+
+            <ul className="space-y-1.5">
+              {g.items.map((b) => (
+                <Regel
+                  key={b.slug}
+                  behandeling={b}
+                  open={open === b.slug}
+                  onWissel={() => setOpen(open === b.slug ? null : b.slug)}
+                  oordeel={oordelen?.get(b.slug)}
+                />
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
     </div>
   );
 }

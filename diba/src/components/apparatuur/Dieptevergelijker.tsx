@@ -248,7 +248,7 @@ export default function Dieptevergelijker() {
       </p>
 
       {/* ── Wat de mechanieken zijn ── */}
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {MECHANIEKEN.filter((m) => (tellingen.get(m.id) ?? 0) > 0).map((m) => {
           const doelwitten = [
             ...new Set(

@@ -13,6 +13,7 @@ import {
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Vergoeding per verzekeraar.
@@ -86,7 +87,7 @@ export default async function InsurerPage({ params }: PageProps) {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -158,7 +159,7 @@ export default async function InsurerPage({ params }: PageProps) {
 
       {/* ── Waar het hier op vastloopt ── */}
       {insurer.eigenaardigheid ? (
-        <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <div>
               <Label>Het addertje</Label>
@@ -187,7 +188,7 @@ export default async function InsurerPage({ params }: PageProps) {
           De belangrijkste sectie van deze pagina, en niet alleen omdat hij per verzekeraar
           verschilt. Het is het enige hier waar wij het antwoord op hebben en de bezoeker
           niet: of onze therapeut in het Kwaliteitsregister staat kan hij nergens opzoeken. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>De behandelaar</Label>
@@ -201,17 +202,19 @@ export default async function InsurerPage({ params }: PageProps) {
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               {insurer.eisAanBehandelaar}
             </p>
-            <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-              Dit is het deel dat wij voor je kunnen nakijken. Vraag het even
-              voordat je boekt, dan zeggen we of we aan deze eis voldoen.
-            </p>
+            <LeesVerder>
+              <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
+                Dit is het deel dat wij voor je kunnen nakijken. Vraag het even
+                voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+              </p>
+            </LeesVerder>
             <BelOfApp className="mt-6" />
           </div>
         </div>
       </section>
 
       {/* ── De weg naar je eigen bedrag ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Zelf opzoeken</Label>
@@ -226,7 +229,7 @@ export default async function InsurerPage({ params }: PageProps) {
             </p>
           </div>
 
-          <ol className="mt-10 grid gap-4 md:grid-cols-3">
+          <ol className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-3">
             {insurer.zoVindJeHet.map((stap, i) => (
               <li
                 key={stap}
@@ -245,7 +248,7 @@ export default async function InsurerPage({ params }: PageProps) {
       </section>
 
       {/* ── De vier vragen ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -266,7 +269,7 @@ export default async function InsurerPage({ params }: PageProps) {
             {/* Geen genummerde badge. Deze vier vragen hebben geen volgorde, dus een
                 cijfer erboven suggereert een stappenplan dat er niet is. De vraag zelf
                 is de kop. */}
-            <ul className="mt-12 grid gap-4 md:grid-cols-2">
+            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2">
               {insurer.antwoorden.map((v) => (
                 <li
                   key={v.vraag}
@@ -290,7 +293,7 @@ export default async function InsurerPage({ params }: PageProps) {
           verzekeraar-specifiek — hij geldt voor alle zes — en het hele verhaal staat al op
           /vergoedingen. Zes keer dezelfde tekst onder zes koppen is de doorslagpagina die
           de huisregels verbieden, en de link naar het origineel stond er al onder. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto max-w-[62ch]">
           <Label>Voordat je belt</Label>
           <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
@@ -309,7 +312,7 @@ export default async function InsurerPage({ params }: PageProps) {
       </section>
 
       {/* ── Wat wij wel kunnen ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat wij wel kunnen</Label>
@@ -327,11 +330,13 @@ export default async function InsurerPage({ params }: PageProps) {
               krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je
               een afwijzing achteraf.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets
-              vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij
-              zouden het antwoord moeten raden.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Wat wij niet doen is rechtstreeks declareren of toezeggen dat
+                iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en
+                wij zouden het antwoord moeten raden.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <a
                 href={DIBA_TELEFOON_HREF}
@@ -353,7 +358,7 @@ export default async function InsurerPage({ params }: PageProps) {
       </section>
 
       {/* ── De andere verzekeraars ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Andere verzekeraars</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -361,7 +366,7 @@ export default async function InsurerPage({ params }: PageProps) {
             <br />
             <span className="diba-accent">{insurer.name}?</span>
           </h2>
-          <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {anderen.map((i) => (
               <li key={i.slug}>
                 <Link

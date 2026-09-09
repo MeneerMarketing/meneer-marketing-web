@@ -51,7 +51,7 @@ export default function OnsVerbondPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="py-14 lg:py-20">
+        <div className="py-10 sm:py-14 lg:py-20">
           <nav
             aria-label="Kruimelpad"
             className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -86,7 +86,7 @@ export default function OnsVerbondPage() {
       {/* ── De tien ── */}
       <section
         id="weigeringen"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -147,7 +147,7 @@ export default function OnsVerbondPage() {
       {/* ── Slot ── */}
       {/* Tien weigeringen op een rij kan streng overkomen. Ze komen niet uit een reglement
           maar uit gesprekken zoals deze, waarin twee mensen besluiten wat er niet gebeurt. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-overleg.jpg"
@@ -159,7 +159,7 @@ export default function OnsVerbondPage() {
         </div>
       </section>
 
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Wat je ermee kunt</Label>

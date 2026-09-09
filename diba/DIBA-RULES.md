@@ -188,6 +188,55 @@ de klasse `.diba-label`, kopieer de stijl niet opnieuw.
   `lg:rounded-bl-[14rem]`). Dat is een handtekening, geen decoratie — niet spiegelen,
   niet op andere vlakken herhalen.
 
+### 7a. Mobiel: korter, strakker, op conversie (Yasin, 09-09-2026)
+
+Desktop is af; op een telefoon moet dezelfde pagina korter zijn en sneller bij de knop.
+Dit is wat er onder `lg` anders is, en het raakt de desktop niet:
+
+- **Ritme.** Secties dragen op mobiel `py-10`/`py-12` en pas vanaf `sm` hun oude
+  `py-16`/`py-20`; de sprong van sectiekop naar inhoud is `mt-8` in plaats van `mt-12`.
+  Nieuwe secties volgen dat patroon: klein op mobiel, `sm:` herstelt de desktopmaat.
+- **Hero's.** De foto in een klachthero is op mobiel 220px hoog (300 vanaf `sm`); op een
+  behandelpagina 16:10 in plaats van 4:3, en de kaart "In het kort" is er compacter.
+- **Actiebalk.** Onder `lg` staat onderaan een vaste balk met "Afspraak maken" en
+  "WhatsApp" (`MobieleActiebalk`). Hij verschijnt pas als de eerste primaire knop van de
+  pagina uit beeld is, verdwijnt bij het afsluitende blok, en gaat weg zolang de
+  cookiebalk staat. Zo blijft de regel van één primaire knop per scherm overeind. Hij
+  meldt zijn hoogte in `--actiebalk`; alles wat onderaan zweeft rekent daarmee.
+- **Lijsten boven kaarten.** In het behandelingenoverzicht tonen de kaarten op mobiel
+  alleen naam, apparaat, hersteltijd en prijs; de omschrijving staat op de pagina zelf.
+  Een muur van veertig kaarten met tekst is op een telefoon geen keuze maar scrollen.
+- **Tekst.** Alinea twee en verder van een tekstblok staan op mobiel achter "Lees
+  verder" (`LeesVerder`); op desktop staat alles open. Lijsten die op een telefoon een
+  tunnel worden (behandelingen per huidwens, voetkolommen, meer dan drie punten in
+  wel/niet) beginnen dicht (`MobielInklap`, `VoetKolommen`). Maar nooit het ding zelf:
+  de tarievenlijst stond één dag per categorie achter "Toon de 4 tarieven" en Yasin
+  wilde "gewoon die behandelingen zien". Inklappen is voor bijzaken; wat de pagina
+  belooft staat open, en wordt kort door de rij compact te maken (naam en bedrag) en
+  springlinks naar de categorieën erboven te zetten.
+- **Kort en met een voorwerp.** Een hero-regel noemt waar hij over gaat: behandelingen,
+  nu of later, de intake. "Wat je huid nu aankan" en "welke behandelingen bovenaan komen
+  te staan" zijn beloftes zonder voorwerp; Yasin noemt dat "zweverig". Drie korte regels
+  die elk één concreet ding noemen, en de eerste alinea in twee zinnen.
+- **Menu.** Twee lagen: vier grote items met een zin eronder, dan per item de groepen
+  met per link de regel die ook op desktop onder de link staat. Geen aantallen achter
+  de items (Yasin: "die getallen pakken me niet").
+- **Team en reviews.** Portretten twee naast elkaar, bio vanaf `sm`; op een klachtpagina
+  twee reviews in plaats van drie, op de homepage één reviewband in plaats van twee.
+- **Het ding eerst.** Op een pagina die om één ding draait (de tarieven, de apparaten)
+  staat dat ding op mobiel direct onder de hero; de uitleg volgt erna. Dat gaat met
+  `max-lg:flex max-lg:flex-col` op `main` en `max-lg:-order-2` (hero) en `-order-1`
+  (het ding), zodat de DOM en dus Google dezelfde volgorde houden als op desktop.
+- **Twee knoppen naast elkaar.** Een paar knoppen staat op een telefoon in twee kolommen
+  (`max-sm:grid max-sm:grid-cols-2`), met een kort opschrift via `kort` op `Button`
+  ("Plan consult", "Stel een vraag"). Onder elkaar kostte het een halve knop hoogte extra.
+- **Logo's.** De registers en verenigingen staan met logo in de voettekst (`Logostrook`,
+  grijs in rust) en op de registratiepagina bij de kaarten. Alleen logo's van organisaties
+  waar Diba aantoonbaar bij hoort; elk logo linkt naar het register.
+- **Eén alinea in de hero.** Alinea twee en verder van een hero staat op mobiel achter
+  "Lees verder", behalve een korte uitsmijter onder 120 tekens. De eerste alinea zegt in
+  twee zinnen waar de pagina voor is; de nuance komt erna.
+
 ## 8. Componentenbibliotheek (specs)
 
 **Navigatie mobiel:** minimale topbalk (logo + menu + WhatsApp-icoon). Menu = volledig scherm in linnen met vier hoofdingangen groot: Huidproblemen · Laserontharing · Prijzen · Boek een intake.

@@ -54,7 +54,7 @@ export default function Zoeker() {
   }
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
+    <div className="mt-8 sm:mt-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
       {/* ── Wat je ziet ── */}
       <div className="self-start">
         <Label>Wat zie of voel je</Label>

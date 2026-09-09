@@ -28,6 +28,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/ouderdomsvlekken",
@@ -79,7 +80,7 @@ export default function Pagina() {
 
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -106,26 +107,34 @@ export default function Pagina() {
               behandelen. We halen ze weg met IPL of laser, en meestal zijn er
               een of twee sessies nodig.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                De behandelaar beoordeelt eerst elke plek. Verandert er iets aan
+                de vorm of de kleur, dan gaat die eerst langs je huisarts.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De behandelaar beoordeelt eerst elke plek. Verandert er iets aan
-              de vorm of de kleur, dan gaat die eerst langs je huisarts.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#welke">Kijk wat jij hebt</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="#welke"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+              >
+                Kijk wat jij hebt
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               /* Rojda, 7 september 2026: hier een foto van een peeling, want dat is
                  wat er bij ouderdomsvlekken meestal gebeurt. */
@@ -147,7 +156,7 @@ export default function Pagina() {
       {/* ── De verandercheck ── */}
       <section
         id="check"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -158,7 +167,7 @@ export default function Pagina() {
             intro="De behandelaar beoordeelt vorm, rand en kleur, en legt de plek vast in beeld. Zo is later te zien of er iets is veranderd."
           />
 
-          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+          <ol className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-3">
             {VERANDERCHECK_STAPPEN.map((stap) => (
               <li
                 key={stap.kop}
@@ -196,7 +205,7 @@ export default function Pagina() {
 
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop

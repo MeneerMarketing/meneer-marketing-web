@@ -10,6 +10,7 @@ import { BESTEMMINGEN } from "@/data/symptoomzoeker";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De kennisbank.
@@ -63,7 +64,7 @@ export default function KennisbankPage() {
 
       {/* ── Hero ── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch lg:py-20">
           <div className="flex flex-col">
             <nav
               aria-label="Kruimelpad"
@@ -91,12 +92,14 @@ export default function KennisbankPage() {
               dat bij elkaar, geordend op de vraag die je stelt in plaats van op
               wat wij aanbieden.
             </p>
-
-            <p className="mt-4 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
-              De doorsnedes, testen en vergelijkers staan er los bij. Die zijn
-              het meeste werk en tegelijk het slechtst vindbaar, want ze staan
-              halverwege een pagina waar je niet komt als je er niet naar zoekt.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
+                De doorsnedes, testen en vergelijkers staan er los bij. Die zijn
+                het meeste werk en tegelijk het slechtst vindbaar, want ze staan
+                halverwege een pagina waar je niet komt als je er niet naar
+                zoekt.
+              </p>
+            </LeesVerder>
 
             <div className="mt-auto flex flex-wrap items-center gap-x-6 gap-y-4 pt-10">
               <Link
@@ -227,7 +230,7 @@ export default function KennisbankPage() {
       })}
 
       {/* ── Alle huidproblemen ── */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
             <div className="shrink-0">
@@ -244,7 +247,7 @@ export default function KennisbankPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {BESTEMMINGEN.map((b) => (
               <li key={b.pad}>
                 <Link
@@ -265,7 +268,7 @@ export default function KennisbankPage() {
       </section>
 
       {/* ── Waar dit heen leidt ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
           <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
             <div>

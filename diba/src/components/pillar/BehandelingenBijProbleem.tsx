@@ -58,7 +58,7 @@ export default function BehandelingenBijProbleem({
   return (
     <section
       id="behandelingen"
-      className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       <div className="mx-auto">
         <Label>Bij deze klacht</Label>
@@ -71,7 +71,7 @@ export default function BehandelingenBijProbleem({
           </p>
         ) : null}
 
-        <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {behandelingen.map((b) => {
             /* Dezelfde helper als de behandelpagina gebruikt voor "Draait op", dus
                een omkering van bestaande data en geen tweede koppeling die uit de pas
@@ -85,7 +85,7 @@ export default function BehandelingenBijProbleem({
             return (
               <li
                 key={b.slug}
-                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+                className="flex flex-col rounded-[var(--r-md)] bg-white p-5 sm:p-8"
               >
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                   <h3 className="diba-card-title">{b.naam}</h3>
@@ -96,7 +96,7 @@ export default function BehandelingenBijProbleem({
 
                 {/* Vier regelhoogtes, zodat de kaarten in een rij gelijk blijven ook als
                     de ene omschrijving net omvalt naar een extra regel. */}
-                <p className="mt-3 min-h-[4lh] grow text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)] max-md:hidden md:min-h-[4lh]">
                   {publicCopy(b.kort)}
                 </p>
 

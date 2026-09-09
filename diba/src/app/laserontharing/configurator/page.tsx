@@ -48,7 +48,7 @@ export default function LaserConfiguratorPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -117,7 +117,7 @@ export default function LaserConfiguratorPage() {
       <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       {/* ── De configurator ── */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Suspense
             fallback={
@@ -132,7 +132,7 @@ export default function LaserConfiguratorPage() {
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Daarna</Label>

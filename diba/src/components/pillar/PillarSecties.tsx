@@ -10,6 +10,7 @@ import {
   RASTER_SECTIEKOP,
   RASTER_SECTIEKOP_GELIJK,
 } from "@/lib/raster";
+import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
  * De secties die elke huidprobleempagina deelt.
@@ -129,7 +130,7 @@ export function WelNiet({
   return (
     <section
       id="wel-niet"
-      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       <div className="mx-auto">
         <SectieKop
@@ -142,11 +143,11 @@ export function WelNiet({
           raster="gelijk"
         />
 
-        <div className={`mt-12 ${RASTER_GELIJK}`}>
+        <div className={`mt-8 sm:mt-12 ${RASTER_GELIJK}`}>
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
             <h3 className="diba-label text-[var(--g-700)]">Dit werkt</h3>
             <ul className="mt-5 space-y-4">
-              {wel.map((r) => (
+              {wel.slice(0, 3).map((r) => (
                 <li
                   key={publicCopy(r)}
                   className="flex gap-3 text-[15px] leading-7"
@@ -167,6 +168,37 @@ export function WelNiet({
                 </li>
               ))}
             </ul>
+            {wel.length > 3 ? (
+              <MobielInklap
+                className="mt-4"
+                label={`Nog ${wel.length - 3} punten`}
+              >
+                <ul className="space-y-4">
+                  {wel.slice(3).map((r) => (
+                    <li
+                      key={publicCopy(r)}
+                      className="flex gap-3 text-[15px] leading-7"
+                    >
+                      <svg
+                        viewBox="0 0 20 20"
+                        className="mt-1.5 h-4 w-4 shrink-0 text-[var(--g-700)]"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M4 10.5 8 14.5 16 5.5" />
+                      </svg>
+                      <span className="text-[var(--t-body)]">
+                        {publicCopy(r)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </MobielInklap>
+            ) : null}
           </div>
 
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
@@ -174,7 +206,7 @@ export function WelNiet({
               Dit raden we af
             </h3>
             <ul className="mt-5 space-y-4">
-              {niet.map((r) => (
+              {niet.slice(0, 3).map((r) => (
                 <li
                   key={publicCopy(r)}
                   className="flex gap-3 text-[15px] leading-7"
@@ -194,6 +226,36 @@ export function WelNiet({
                 </li>
               ))}
             </ul>
+            {niet.length > 3 ? (
+              <MobielInklap
+                className="mt-4"
+                label={`Nog ${niet.length - 3} punten`}
+              >
+                <ul className="space-y-4">
+                  {niet.slice(3).map((r) => (
+                    <li
+                      key={publicCopy(r)}
+                      className="flex gap-3 text-[15px] leading-7"
+                    >
+                      <svg
+                        viewBox="0 0 20 20"
+                        className="mt-1.5 h-4 w-4 shrink-0 text-[var(--warn)]"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M5.5 5.5l9 9M14.5 5.5l-9 9" />
+                      </svg>
+                      <span className="text-[var(--t-body)]">
+                        {publicCopy(r)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </MobielInklap>
+            ) : null}
           </div>
         </div>
       </div>
@@ -217,7 +279,7 @@ export function WijZeggenNee({
   return (
     <section
       id="nee"
-      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-12 sm:py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       <div className="mx-auto">
         <SectieKop
@@ -289,7 +351,7 @@ export function HuidanalyseAssen({
   return (
     <section
       id="meten"
-      className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       {/* ── Eén meetpaneel in plaats van drie zwevende kaartjes ──
             De rechterkolom was 145 pixels hoog naast een linkerkolom van 347, en stond
@@ -378,7 +440,7 @@ export function PillarFaq({
   return (
     <section
       id="vragen"
-      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       {items.length > 0 ? (
         <SchemaMarkup
@@ -449,7 +511,7 @@ export function PillarCta({
      erboven: een groen vlak dat direct op een mintvlak begon, met een zichtbare naad
      ertussen. Nu draagt het blok zijn eigen bovenruimte, op elke pagina hetzelfde. */
   return (
-    <section className="mx-5 mb-5 mt-16 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 lg:mt-20 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+    <section className="mx-5 mb-5 mt-16 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 lg:mt-20 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
       <div className="mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
         <div>
           <Label opDonker>Huidconsult</Label>

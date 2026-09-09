@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE, DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Cookiebeleid.
@@ -78,7 +79,7 @@ export default function CookiePage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -116,7 +117,7 @@ export default function CookiePage() {
       </section>
 
       {/* ── De twee soorten ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Wat er precies staat</Label>
@@ -125,7 +126,7 @@ export default function CookiePage() {
             </h2>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-2">
+          <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-2">
             {COOKIES.map((c) => (
               <li
                 key={c.soort}
@@ -153,7 +154,7 @@ export default function CookiePage() {
       </section>
 
       {/* ── Hoe het werkt ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Hoe je keuze bewaard wordt</Label>
@@ -170,22 +171,24 @@ export default function CookiePage() {
               browser, dan wordt de vraag daar opnieuw gesteld, want daar weten
               we het antwoord niet.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Weiger je, dan verdwijnt de balk ook. Een balk die blijft
-              terugkomen tot je ja zegt is geen keuze maar aandrang.
-            </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Trek je je toestemming later in, dan stopt het laden vanaf dat
-              moment. Wat er in de sessies daarvoor gemeten is, blijft bij die
-              diensten staan; wil je dat ook verwijderd hebben, neem dan contact
-              op.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Weiger je, dan verdwijnt de balk ook. Een balk die blijft
+                terugkomen tot je ja zegt is geen keuze maar aandrang.
+              </p>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Trek je je toestemming later in, dan stopt het laden vanaf dat
+                moment. Wat er in de sessies daarvoor gemeten is, blijft bij die
+                diensten staan; wil je dat ook verwijderd hebben, neem dan
+                contact op.
+              </p>
+            </LeesVerder>
           </div>
         </div>
       </section>
 
       {/* ── Vragen ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Vragen hierover</Label>

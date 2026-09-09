@@ -10,6 +10,7 @@ import {
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De merken en systemen waarmee Diba werkt.
@@ -68,7 +69,7 @@ export default function PartnersPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-8 sm:pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <nav
           aria-label="Kruimelpad"
           className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -108,14 +109,14 @@ export default function PartnersPage() {
       </section>
 
       {/* ── Apparatuur ── */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Apparatuur en technologie</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             Wat er in de{" "}
             <span className="diba-accent">behandelkamers staat</span>
           </h2>
-          <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {APPARATUUR_MERKEN.map((m) => (
               <MerkKaart key={m.naam} merk={m} />
             ))}
@@ -124,14 +125,14 @@ export default function PartnersPage() {
       </section>
 
       {/* ── Producten ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Producten en protocollen</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             Wat er op je huid komt{" "}
             <span className="diba-accent">en wat je meekrijgt</span>
           </h2>
-          <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {PRODUCT_MERKEN.map((m) => (
               <MerkKaart key={m.naam} merk={m} />
             ))}
@@ -143,7 +144,7 @@ export default function PartnersPage() {
           Dit blok is de reden dat de pagina "merken en apparatuur" heet en niet "partners".
           Een merk noemen is iets anders dan een samenwerking claimen, en dat verschil hoort
           op de pagina zelf te staan en niet alleen in de broncode. */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
         <div className="mx-auto">
           <div className="grid gap-10 rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:grid-cols-[1fr_1fr] lg:gap-16 lg:p-14">
             <div>
@@ -158,11 +159,13 @@ export default function PartnersPage() {
                 officiële partner van dat merk. Dat is een afspraak op papier,
                 en zolang die er niet ligt schrijven we hem hier ook niet op.
               </p>
-              <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Wat er wel staat is te controleren: welk systeem er in de kamer
-                staat en waarvoor het gebruikt wordt. Voor jou als bezoeker is
-                dat het antwoord op dezelfde vraag.
-              </p>
+              <LeesVerder opDonker>
+                <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                  Wat er wel staat is te controleren: welk systeem er in de
+                  kamer staat en waarvoor het gebruikt wordt. Voor jou als
+                  bezoeker is dat het antwoord op dezelfde vraag.
+                </p>
+              </LeesVerder>
               {NOG_UITZOEKEN.length > 0 ? (
                 <>
                   <p className="diba-label mt-8 text-[var(--on-dark-accent)]">
@@ -186,7 +189,7 @@ export default function PartnersPage() {
       </section>
 
       {/* ── Door ── */}
-      <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
+      <section className="px-5 pb-12 sm:pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
         <div className="mx-auto flex flex-wrap items-center gap-3">
           <Link
             href="/apparatuur"

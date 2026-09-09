@@ -85,7 +85,7 @@ export default function DonkereKringenPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -118,13 +118,21 @@ export default function DonkereKringenPage() {
               wat daarbij past.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake">Plan een huidconsult</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="/intake"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Plan consult"
+              >
+                Plan een huidconsult
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
@@ -132,7 +140,7 @@ export default function DonkereKringenPage() {
           </div>
 
           {/* Leent het pigmentbeeld: dat is het enige type dat wij behandelen. */}
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               src={FIGMA_INTENT_PIGMENT.src}
               alt={FIGMA_INTENT_PIGMENT.alt}
@@ -152,7 +160,7 @@ export default function DonkereKringenPage() {
       {/* ── De spiegeltest: de uitblinker ──────────────────────────────── */}
       <section
         id="test"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -165,7 +173,7 @@ export default function DonkereKringenPage() {
           {/* Hier stond een test met drie vragen die je thuis voor een raam moest doen.
               Okan: dat moeten mensen niet zelf uitzoeken, daarvoor komen ze hier. Wat de
               huidtherapeut beoordeelt staat er nu, en waarom je dat thuis niet ziet. */}
-          <ul className="mt-12 grid gap-4 md:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3">
             {KRINGEN_BEOORDELING.map((stap) => (
               <li
                 key={stap.kop}
@@ -184,7 +192,7 @@ export default function DonkereKringenPage() {
       {/* ── De drie types als naslag ───────────────────────────────────── */}
       <section
         id="types"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -194,7 +202,7 @@ export default function DonkereKringenPage() {
             intro="De drie oorzaken naast elkaar, met per soort wat je ziet, waar het vandaan komt en wat er in de kliniek aan te doen is."
           />
 
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
             {(["pigment", "vaten", "schaduw"] as const).map((id) => {
               const u = UITKOMSTEN[id];
               return (

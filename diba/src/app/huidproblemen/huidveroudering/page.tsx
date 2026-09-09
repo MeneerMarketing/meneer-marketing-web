@@ -29,6 +29,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Huidveroudering — vijfde eigen pagina, met een eigen uitblinker.
@@ -95,7 +96,7 @@ export default function HuidverouderingPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -126,6 +127,13 @@ export default function HuidverouderingPage() {
                 className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
                 SkinPen
+              </Link>{" "}
+              of de{" "}
+              <Link
+                href="/behandelingen/dermapen-4"
+                className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Dermapen 4
               </Link>
               , fractionele laser op de{" "}
               <Link
@@ -136,28 +144,36 @@ export default function HuidverouderingPage() {
               </Link>
               , IPL bij pigment en vaatjes, en mesotherapie.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Wat het bij jou wordt hangt af van je huid en van wat er precies
+                speelt; meestal is het een combinatie over een aantal maanden.
+                Tijdens de intake stelt de huidtherapeut vast wat door de zon
+                komt en wat bij je leeftijd hoort.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Wat het bij jou wordt hangt af van je huid en van wat er precies
-              speelt; meestal is het een combinatie over een aantal maanden.
-              Tijdens de intake stelt de huidtherapeut vast wat door de zon komt
-              en wat bij je leeftijd hoort.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#tijd-of-zon">Doe de onderarmtest</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="#tijd-of-zon"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+              >
+                Doe de onderarmtest
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               src={FIGMA_INTENT_VEROUDERING.src}
               alt={FIGMA_INTENT_VEROUDERING.alt}
@@ -177,7 +193,7 @@ export default function HuidverouderingPage() {
       {/* ── De onderarmtest: de uitblinker ─────────────────────────────── */}
       <section
         id="tijd-of-zon"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -195,7 +211,7 @@ export default function HuidverouderingPage() {
       {/* ── Wat begint wanneer ─────────────────────────────────────────── */}
       <section
         id="wanneer"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -211,7 +227,7 @@ export default function HuidverouderingPage() {
       {/* ── Wat je ziet ────────────────────────────────────────────────── */}
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop

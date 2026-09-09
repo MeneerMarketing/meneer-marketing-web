@@ -21,6 +21,7 @@ import {
 } from "@/lib/site";
 import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Acne — eigen pagina, geen generiek pillar-sjabloon.
@@ -85,7 +86,7 @@ export default function AcnePage() {
           soft" (A2), en het is de zin waar de rest van de pagina op rust. */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -130,20 +131,28 @@ export default function AcnePage() {
               , want dat is vaak helemaal geen litteken.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake?topic=acne">Plan een huidconsult</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="/intake?topic=acne"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Plan consult"
+              >
+                Plan een huidconsult
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             {/* Rojda, 7 september 2026: de opname van de jonge cliënt met acne op zijn
                 huid en de peelingproducten erbij. Dat is het onderwerp van de pagina,
                 letterlijk in beeld; de vorige foto was een beoordeling van dichtbij. */}
@@ -166,7 +175,7 @@ export default function AcnePage() {
       {/* ── De acnekaart: het onderdeel dat deze pagina onderscheidt ────── */}
       <section
         id="waar"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <div className={RASTER_SECTIEKOP}>
@@ -181,9 +190,9 @@ export default function AcnePage() {
             <p className="max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
               De kaaklijn wijst iets anders aan dan de T-zone. Bij wangen kan
               het van buiten komen, van je telefoon of je kussensloop, maar net
-              zo goed hormonaal zijn. En acne op je rug of schouders is een zone
-              op zich, met een eigen oorzaak. Tik aan waar het bij jou zit, dan
-              lezen we mee. Je mag er meerdere kiezen.
+              zo goed hormonaal zijn. En acne op je rug, schouders of borst is
+              een zone op zich, met een eigen oorzaak. Tik aan waar het bij jou
+              zit, dan lezen we mee. Je mag er meerdere kiezen.
             </p>
           </div>
 
@@ -194,7 +203,7 @@ export default function AcnePage() {
       {/* ── Welk type ──────────────────────────────────────────────────── */}
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <div className={RASTER_SECTIEKOP}>
@@ -218,7 +227,7 @@ export default function AcnePage() {
       {/* ── Onder je huid ──────────────────────────────────────────────── */}
       <section
         id="onderhuid"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <div className={RASTER_SECTIEKOP}>
@@ -254,7 +263,7 @@ export default function AcnePage() {
       {/* ── Wat werkt en wat niet ──────────────────────────────────────── */}
       <section
         id="wel-niet"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           {/* Twee gelijke helften eronder, dus deze kop volgt die indeling. */}
@@ -271,7 +280,7 @@ export default function AcnePage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 lg:grid-cols-2 lg:gap-8">
+          <div className="mt-8 sm:mt-12 grid gap-6 lg:grid-cols-2 lg:gap-8">
             <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
               <h3 className="diba-label text-[var(--g-700)]">Dit werkt</h3>
               <ul className="mt-5 space-y-4">
@@ -325,7 +334,7 @@ export default function AcnePage() {
       {/* ── Donkergroen 1 van 2: de volgorde waarin we bij acne werken ─── */}
       <section
         id="nee"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-700)] px-5 py-12 sm:py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <div className={RASTER_SECTIEKOP}>
@@ -345,7 +354,7 @@ export default function AcnePage() {
             </p>
           </div>
 
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-white/15 md:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-white/15 md:grid-cols-3">
             {ACNE_WIJ_DOEN_NIET.map((p) => (
               <li key={p.titel} className="bg-[var(--g-700)] p-6 sm:p-8">
                 <h3 className="diba-card-title">{p.titel}</h3>
@@ -361,7 +370,7 @@ export default function AcnePage() {
       {/* ── De huidanalyse bij acne ─────────────────────────────────────── */}
       <section
         id="meten"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
           <div>
@@ -375,10 +384,12 @@ export default function AcnePage() {
               tellen. Na acht tot twaalf weken meten we opnieuw en leggen we de
               twee naast elkaar.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dat is niet om je te overtuigen. Het is zodat we het kunnen zien
-              als iets niet werkt, en dan iets anders kunnen doen.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Dat is niet om je te overtuigen. Het is zodat we het kunnen zien
+                als iets niet werkt, en dan iets anders kunnen doen.
+              </p>
+            </LeesVerder>
             <Button
               href="/behandelingen/huidanalyse"
               variant="secundair"
@@ -417,7 +428,7 @@ export default function AcnePage() {
       {/* ── FAQ ──────────────────────────────────────────────────────── */}
       <section
         id="vragen"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
           <div>
@@ -460,7 +471,7 @@ export default function AcnePage() {
       {/* Welke behandelingen bij acne horen, en op welk apparaat ze draaien. */}
       <BehandelingenBijProbleem pad="/huidproblemen/acne" />
 
-      <section className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
           <div>
             <Label opDonker>Huidconsult</Label>
@@ -473,8 +484,8 @@ export default function AcnePage() {
           <div className="flex flex-col justify-end">
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
               Tijdens de intake meten we je huid, bespreken we het type en hoor
-              je hoeveel sessies we verwachten. Ook als het antwoord is dat je
-              beter even wacht.
+              je wat we verwachten en hoe we dat tussendoor meten. Ook als het
+              antwoord is dat je beter even wacht.
             </p>
             <Button
               href="/intake?topic=acne"

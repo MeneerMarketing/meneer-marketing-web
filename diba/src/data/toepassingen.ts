@@ -55,7 +55,10 @@ export type Toepassing = {
 };
 
 export const TOEPASSINGEN: readonly Toepassing[] = [
-  /* ── SkinPen ──────────────────────────────────────────────────────────── */
+  /* ── SkinPen ──────────────────────────────────────────────────────────────
+     Yasin, 8 september 2026: de kliniek werkt met twee needling-pennen, de SkinPen CIT en
+     de Dermapen 4. Deze pagina's hangen onder /behandelingen/skinpen, maar elke intro
+     noemt de Dermapen 4 erbij: wie microneedling zoekt hoort beide te zien. */
   {
     slug: "acnelittekens",
     behandeling: "skinpen",
@@ -64,12 +67,12 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
     kop: "Microneedling bij",
     accent: "acnelittekens",
     omschrijving:
-      "Microneedling met de SkinPen bij acnelittekens in Rotterdam. Wat het doet bij putjes, wat het niet doet bij vlekken, en hoeveel sessies het vraagt.",
+      "Microneedling met de SkinPen of de Dermapen 4 bij acnelittekens in Rotterdam. Wat het doet bij putjes, wat het niet doet bij vlekken, en hoeveel sessies het vraagt.",
     intro:
-      "Acnelittekens zijn geen vlekken maar vormen: de huid mist er bindweefsel, en daardoor vangt hij het licht anders. Daar helpt geen crème tegen en geen peeling; die werken op kleur en op de bovenlaag. Microneedling werkt op de vorm.",
+      "Acnelittekens zijn geen vlekken maar vormen: de huid mist er bindweefsel, en daardoor vangt hij het licht anders. Daar helpt geen crème tegen en geen peeling; die werken op kleur en op de bovenlaag. Microneedling werkt op de vorm. Dezelfde behandeling doen we ook met de Dermapen 4; welke pen het wordt, kiest de behandelaar per zone.",
     waarom: [
       "Een acnelitteken ontstaat doordat een ontsteking bindweefsel heeft opgeruimd en er te weinig voor is teruggekomen. Wat overblijft is een putje waarin het licht een schaduw maakt, en juist die schaduw zie je in de spiegel.",
-      "De SkinPen zet honderden kanaaltjes tot in de bovenste lederhuid, precies de laag waar dat bindweefsel zit. Het lichaam herstelt die kanaaltjes met nieuw collageen, en dat vult de bodem van het putje op. Niet ineens: de opbouw loopt over weken tot maanden door, en daarom zie je na de eerste sessie nog niets.",
+      "De pen zet honderden kanaaltjes tot in de bovenste lederhuid, precies de laag waar dat bindweefsel zit. Het lichaam herstelt die kanaaltjes met nieuw collageen, en dat vult de bodem van het putje op. Niet ineens: de opbouw loopt over weken tot maanden door, en daarom zie je na de eerste sessie nog niets.",
       "Bij acnelittekens is dat het hele verhaal. Het gaat niet om de kleur maar om de diepte: hoe minder verschil in hoogte, hoe minder schaduw, hoe minder je het litteken ziet.",
     ],
     instelling: [
@@ -116,7 +119,7 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
     omschrijving:
       "Microneedling bij grove poriën en een ongelijkmatige huidstructuur. Wat er wel verandert, wat niet, en waarom poriën niet kleiner worden.",
     intro:
-      "Een porie kan niet dichtgaan; er moet talg uit. Wat wel kan is dat de rand eromheen steviger wordt, en dat is precies het verschil tussen een porie die opvalt en een porie die je niet ziet.",
+      "Een porie kan niet dichtgaan; er moet talg uit. Wat wel kan is dat de rand eromheen steviger wordt, en dat is precies het verschil tussen een porie die opvalt en een porie die je niet ziet. Dezelfde behandeling doen we ook met de Dermapen 4; welke pen het wordt, kiest de behandelaar per zone.",
     waarom: [
       "Poriën vallen op als de huid eromheen slap is. Het gaatje zelf is bij iedereen ongeveer even groot; wat verschilt is of de rand strak staat of iets is ingezakt. Bij een ingezakte rand valt er schaduw in en dan lijkt de opening groter dan hij is.",
       "Microneedling brengt in de bovenste lederhuid nieuw collageen op gang. Dat is het weefsel dat die rand overeind houdt, en als het aantrekt wordt de opening minder diep en vangt hij minder schaduw.",
@@ -166,7 +169,7 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
     omschrijving:
       "Microneedling bij fijne lijntjes. Waarom het op oppervlakkige lijnen werkt en op een diepe vouw niet, en hoe lang het duurt.",
     intro:
-      "Er zijn twee soorten lijnen en ze vragen om iets anders. Een fijn lijntje staat er ook als je je gezicht ontspant en komt van een huid die dunner en droger is geworden. Een vouw ontstaat doordat een spier de huid samentrekt. Op de eerste soort werkt dit; op de tweede niet.",
+      "Er zijn twee soorten lijnen en ze vragen om iets anders. Een fijn lijntje staat er ook als je je gezicht ontspant en komt van een huid die dunner en droger is geworden. Een vouw ontstaat doordat een spier de huid samentrekt. Op de eerste soort werkt dit; op de tweede niet. Dezelfde behandeling doen we ook met de Dermapen 4; welke pen het wordt, kiest de behandelaar per zone.",
     waarom: [
       "Vanaf een jaar of vijfentwintig maakt de huid ieder jaar iets minder collageen aan. De bovenste lederhuid wordt daardoor dunner en de bovenlaag komt losser te liggen, en dat is wat je als een fijn netwerk van lijntjes ziet.",
       "Needling brengt precies in die laag herstel op gang. Het nieuwe collageen maakt de huid iets dikker en steviger, en een dikkere huid vouwt minder makkelijk in kleine lijntjes.",
@@ -216,7 +219,7 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
     omschrijving:
       "Microneedling bij littekens na een operatie of keizersnede. Wanneer je kunt beginnen, wat er verandert en wanneer een arts eerst meekijkt.",
     intro:
-      "Een litteken van een operatie is ander weefsel dan de huid eromheen: het bindweefsel ligt er in één richting in plaats van kriskras. Daardoor is het strakker, glanzender en vaak wat verheven of juist ingetrokken. Needling herordent dat weefsel.",
+      "Een litteken van een operatie is ander weefsel dan de huid eromheen: het bindweefsel ligt er in één richting in plaats van kriskras. Daardoor is het strakker, glanzender en vaak wat verheven of juist ingetrokken. Needling herordent dat weefsel. Dezelfde behandeling doen we ook met de Dermapen 4; welke pen het wordt, kiest de behandelaar per zone.",
     waarom: [
       "Bij normale huid liggen de collageenvezels door elkaar heen, en dat maakt de huid soepel in elke richting. In een litteken liggen ze evenwijdig, want zo is de wond dichtgetrokken. Dat weefsel is sterk maar stug, en het reflecteert licht anders.",
       "Microneedling maakt in dat stugge weefsel duizenden kleine wondjes die opnieuw genezen. Bij die tweede genezing ligt het nieuwe collageen minder strak in één richting, en wordt het litteken soepeler en minder scherp begrensd.",
@@ -266,7 +269,7 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
     omschrijving:
       "Microneedling bij striae. Waarom rode striae beter reageren dan witte, en wat er wel en niet verandert.",
     intro:
-      "Striae zijn scheuren in de lederhuid die van binnenuit zijn ontstaan doordat de huid sneller werd opgerekt dan hij mee kon groeien. De kleur vertelt hoe oud ze zijn, en die leeftijd bepaalt wat er nog te winnen valt.",
+      "Striae zijn scheuren in de lederhuid die van binnenuit zijn ontstaan doordat de huid sneller werd opgerekt dan hij mee kon groeien. De kleur vertelt hoe oud ze zijn, en die leeftijd bepaalt wat er nog te winnen valt. Dezelfde behandeling doen we ook met de Dermapen 4; welke pen het wordt, kiest de behandelaar per zone.",
     waarom: [
       "Verse striae zijn rood of paars: er lopen nog vaatjes doorheen en het weefsel is nog bezig. In die fase reageert de huid het best op een prikkel, want het herstel is nog aan de gang en je duwt het een kant op.",
       "Witte striae zijn uitgewerkt. Het weefsel is dan dunner en er zit weinig pigment in, en dat komt niet meer terug. Wat wel kan is dat de structuur verbetert: de striae worden minder diep en de rand minder scherp, waardoor ze minder opvallen.",

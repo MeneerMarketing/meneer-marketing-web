@@ -12,6 +12,7 @@ import { SITUATIES, VAST } from "@/data/voorwaarden";
 import { breadcrumbSchema, faqSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De tarievenpagina.
@@ -85,7 +86,7 @@ const PRIJZEN_FAQ: FaqItem[] = [
 
 export default function TarievenPage() {
   return (
-    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)] max-lg:flex max-lg:flex-col">
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: DIBA_SITE_URL },
@@ -97,8 +98,8 @@ export default function TarievenPage() {
           Donker, net als de hero van de homepage (Yasin, 7 september 2026: "het ziet er
           nu te wit uit allemaal"). De intakekaart blijft wit en springt er zo juist uit:
           dat is de ene prijs die je hier moet zien. */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
-        <div className="mx-auto grid gap-10 px-5 py-14 sm:px-9 lg:grid-cols-[1.1fr_0.9fr] lg:px-[7.5vw] lg:py-20">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] max-lg:-order-2">
+        <div className="mx-auto grid gap-10 px-5 py-10 sm:py-14 sm:px-9 lg:grid-cols-[1.1fr_0.9fr] lg:px-[7.5vw] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -118,16 +119,17 @@ export default function TarievenPage() {
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wat een behandeling kost hoor je liever voordat je een afspraak
-              maakt dan erna. Daarom staat het hier: elk tarief, per sessie en
-              per zone, zonder dat je ervoor hoeft te bellen.
+              Elk tarief, per sessie en per zone. Je hoeft er niet voor te
+              bellen.
             </p>
-
-            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wat je hier niet vindt is een pakket met een streep door de oude
-              prijs. Er zijn geen kortingen en geen acties, dus er is ook nooit
-              een moment waarop je te vroeg of te laat was.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                Wat een behandeling kost hoor je liever vooraf dan erna. Wat je
+                hier niet vindt is een pakket met een streep door de oude prijs:
+                er zijn geen kortingen en geen acties, dus er is ook nooit een
+                moment waarop je te vroeg of te laat was.
+              </p>
+            </LeesVerder>
           </div>
 
           {/* Stond op een rand. Vlakken dragen zichzelf; op --g-010 is wit al genoeg
@@ -146,10 +148,12 @@ export default function TarievenPage() {
               dat gesprek is elk bedrag een gok, en daarom staat het hier als
               enige niet in een lijst.
             </p>
-            <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Word je in dezelfde afspraak behandeld, dan gaat dat bedrag er
-              weer af. Je betaalt dan alleen de behandeling.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                Word je in dezelfde afspraak behandeld, dan gaat dat bedrag er
+                weer af. Je betaalt dan alleen de behandeling.
+              </p>
+            </LeesVerder>
             <Link
               href="/intake"
               className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 self-start rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
@@ -160,7 +164,7 @@ export default function TarievenPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} className="max-lg:-order-1" />
 
       {/* ── Wat het bij jou kost ──
           De lijst hieronder is ruim vier schermen lang, en dat blijft zo: alles staat er,
@@ -169,7 +173,7 @@ export default function TarievenPage() {
           huidprofiel; deze pagina deed dat niet, dus las je daar wat bij je past en hier
           weer een alfabetische muur. Dit blok haalt die twee bij elkaar. Er wordt niets
           weggefilterd; het staat erboven en niet ervoor in de plaats. */}
-      <section className="px-5 pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="px-5 pt-10 sm:pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <div className="mx-auto">
           <PrijzenVoorJou />
         </div>
@@ -181,7 +185,9 @@ export default function TarievenPage() {
           past, hoe vaak je moet komen en hoe lang je erna rood bent. Dat stond allemaal
           al in behandelingen.ts en werd hier niet gebruikt. Nu wel, uitklapbaar, met het
           bedrag altijd in beeld. */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      {/* Op een telefoon staat deze lijst direct onder de hero: dat is waar je voor komt.
+          De uitleg erboven komt daar pas na de lijst (Yasin, 9 september 2026). */}
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24 max-lg:-order-1">
         <div className="mx-auto">
           <div>
             <Label>Per behandeling</Label>
@@ -208,7 +214,7 @@ export default function TarievenPage() {
           had vier regels feiten en geen enkel zonetarief, terwijl de tabel hier stond. */}
       <section
         id="laserontharing-per-zone"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
         <div className="mx-auto">
           <div>
@@ -228,7 +234,7 @@ export default function TarievenPage() {
           Een tarievenpagina roept vragen op die nergens anders thuishoren: gaat er btw
           overheen, krijg ik het vergoed, wat als ik afzeg. Die antwoorden stonden al in de
           voorwaarden en op /vergoedingen, alleen niet op de pagina waar de vraag opkomt. */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <SchemaMarkup data={faqSchema(PRIJZEN_FAQ)} />
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
@@ -271,7 +277,7 @@ export default function TarievenPage() {
           Hier stond een uitnodiging om de laserconfigurator te openen, met een tekening
           waarop je zones aanwijst. Die staat tijdelijk uit. De knoppen wezen al ergens
           anders heen, maar de tekst beloofde nog wat er niet meer is. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Wat het totaal bepaalt</Label>
@@ -286,11 +292,13 @@ export default function TarievenPage() {
               aantal noemen voordat we gemeten hebben is een gok met jouw geld,
               dus dat doen we niet.
             </p>
-            <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Tijdens de intake hoor je om hoeveel sessies het bij jou gaat en
-              wat dat samen wordt. Dat is het eerste moment waarop iemand daar
-              iets zinnigs over kan zeggen.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                Tijdens de intake hoor je om hoeveel sessies het bij jou gaat en
+                wat dat samen wordt. Dat is het eerste moment waarop iemand daar
+                iets zinnigs over kan zeggen.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="/intake"

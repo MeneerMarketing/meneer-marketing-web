@@ -410,6 +410,7 @@ const DOELMATRIX: Record<string, Partial<Record<DoelId, "vol" | "deels">>> = {
      verwachting wekken die de behandeling niet waarmaakt. */
   dermaplaning: { textuur: "deels" },
   peelings: { kleur: "vol", acne: "vol", textuur: "deels", lijntjes: "deels" },
+  kruidenpeel: { acne: "vol", textuur: "deels" },
   /* Microneedling mikt op de laag waar structuur zit; acnelittekens vallen daarom onder
      textuur. Actieve, ontstoken acne staat er bewust niet bij. */
   skinpen: { textuur: "vol", lijntjes: "vol" },
@@ -449,6 +450,7 @@ const HERSTELVRAAG: Record<string, HerstelId> = {
   "xl-hair": "dag",
   fibromen: "dag",
   peelings: "dagen",
+  kruidenpeel: "dagen",
   skinpen: "dagen",
   "dermapen-4": "dagen",
   cosmelan: "dagen",

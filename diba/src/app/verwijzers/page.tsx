@@ -137,7 +137,7 @@ export default function VerwijzersPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch lg:py-20">
           <div className="flex flex-col">
             <nav
               aria-label="Kruimelpad"
@@ -229,7 +229,7 @@ export default function VerwijzersPage() {
       {/* ── Wie het uitvoert ── */}
       {/* Een verwijzer stuurt iemand naar een plek die hij zelf nooit heeft gezien. Dit is
           die plek. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/kliniek-behandelkamer.jpg"
@@ -241,7 +241,7 @@ export default function VerwijzersPage() {
         </div>
       </section>
 
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
             <div>
@@ -301,7 +301,7 @@ export default function VerwijzersPage() {
       </section>
 
       {/* ── Wat uw patiënt krijgt ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
             <div className="shrink-0">
@@ -317,7 +317,7 @@ export default function VerwijzersPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 lg:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-4 lg:grid-cols-3">
             {WAT_JE_PATIENT_KRIJGT.map((k) => (
               <li
                 key={k.kop}
@@ -336,7 +336,7 @@ export default function VerwijzersPage() {
       </section>
 
       {/* ── De route ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
             <div className="shrink-0">
@@ -352,7 +352,7 @@ export default function VerwijzersPage() {
             </p>
           </div>
 
-          <ol className="mt-10 grid gap-4 lg:grid-cols-3">
+          <ol className="mt-8 sm:mt-10 grid gap-4 lg:grid-cols-3">
             {HOE_VERWIJZEN.map((h) => (
               <li
                 key={h.kop}
@@ -398,7 +398,7 @@ export default function VerwijzersPage() {
       </section>
 
       {/* ── Verder lezen ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Verder lezen</Label>
           <h2 className="diba-display-m mt-4">

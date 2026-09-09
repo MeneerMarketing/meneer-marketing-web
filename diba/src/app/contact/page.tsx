@@ -18,6 +18,7 @@ import {
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Contact.
@@ -131,7 +132,7 @@ export default function ContactPage() {
 
       {/* ââ Hero: het adres, en meteen de drie manieren ââ */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -234,11 +235,11 @@ export default function ContactPage() {
       </section>
 
       {/* ââ De ingangkiezer: de signatuur van deze pagina ââ */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         {/* Een contactpagina is adres, tijden en kanalen: allemaal tekst. Dit beeld laat zien
           waar die gegevens heen leiden, en dat is precies wat iemand wil weten die nog
           nooit binnen is geweest. */}
-        <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+        <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
           <div className="mx-auto">
             <BeeldVignet
               src="/images/shoot/ontvangst-koffie.jpg"
@@ -271,7 +272,7 @@ export default function ContactPage() {
       </section>
 
       {/* ââ Wat er op afstand niet kan ââ */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
@@ -313,7 +314,7 @@ export default function ContactPage() {
           De twee grootste redenen dat iemand een contactpagina opzoekt: hij moet afzeggen
           of hij staat in de file. Het antwoord stond alleen op de algemene voorwaarden, in
           de u-vorm tussen de juridische tekst. Zelfde bron, hier in gewone taal. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Voordat je contact opneemt</Label>
@@ -328,7 +329,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <ul className="mt-12 grid gap-4 lg:grid-cols-2 lg:items-start">
+          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:items-start">
             {SITUATIES.map((s) => (
               <li
                 key={s.id}
@@ -374,7 +375,7 @@ export default function ContactPage() {
           wat wÃ©l waar is, namelijk dat de agenda toont wanneer er plek is. */}
       <section
         id="agenda"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
@@ -414,10 +415,12 @@ export default function ContactPage() {
               actueler dan dit rijtje: een vrije dag of een volgeboekte middag
               zie je daar meteen en hier niet.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Kom je liever langs zonder afspraak, bel dan eerst. We willen je
-              geen rit voor niets laten maken.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Kom je liever langs zonder afspraak, bel dan eerst. We willen je
+                geen rit voor niets laten maken.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href={DIBA_SALONIZED_BOOKING_URL}
@@ -440,7 +443,7 @@ export default function ContactPage() {
       </section>
 
       {/* ââ Route ââ */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Route</Label>

@@ -140,7 +140,7 @@ export default function VacatureHuidtherapeutPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -173,8 +173,13 @@ export default function VacatureHuidtherapeutPage() {
               </p>
             ))}
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button variant="primair-op-donker" href={mailto}>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                variant="primair-op-donker"
+                href={mailto}
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Solliciteer"
+              >
                 Solliciteer op deze functie
               </Button>
               <Button
@@ -182,6 +187,8 @@ export default function VacatureHuidtherapeutPage() {
                 variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Eerst een vraag stellen
               </Button>
@@ -253,7 +260,7 @@ export default function VacatureHuidtherapeutPage() {
       {/* ── Wat je doet ── */}
       <section
         id="wat-je-doet"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -264,7 +271,7 @@ export default function VacatureHuidtherapeutPage() {
             intro="Je draait een eigen spreekuur: je meet, je stelt het plan op en je voert het zelf uit. Vier onderdelen die elke week terugkomen."
           />
 
-          <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {v.watJeDoet.map((w) => (
               <li
                 key={w.kop}
@@ -282,7 +289,7 @@ export default function VacatureHuidtherapeutPage() {
         </div>
       </section>
 
-      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
+      <section className="px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-koffie-gang.jpg"
@@ -297,7 +304,7 @@ export default function VacatureHuidtherapeutPage() {
       {/* ── Wat we vragen en wat we bieden ── */}
       <section
         id="wat-we-vragen"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -307,7 +314,7 @@ export default function VacatureHuidtherapeutPage() {
             intro="Links de eisen die er echt toe doen, rechts wat daar bij Diba tegenover staat. Beide lijsten zijn even lang, met opzet."
           />
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
+          <div className="mt-8 sm:mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
               <Label>Wat we vragen</Label>
               <ul className="mt-5 space-y-3">
@@ -342,7 +349,7 @@ export default function VacatureHuidtherapeutPage() {
       {/* ── De sollicitatie ── */}
       <section
         id="sollicitatie"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -353,7 +360,7 @@ export default function VacatureHuidtherapeutPage() {
             intro="Drie stappen, en je weet vooraf wat er komt. Er zit geen assessment in en geen ronde met vijf mensen aan tafel."
           />
 
-          <ol className="mt-12 grid gap-4 md:grid-cols-3">
+          <ol className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3">
             {v.sollicitatie.map((stap) => (
               <li
                 key={stap.kop}
@@ -384,7 +391,7 @@ export default function VacatureHuidtherapeutPage() {
       <PillarFaq items={v.faq} onderwerp="deze vacature" />
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
+      <section className="px-5 pt-10 sm:pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Solliciteren</Label>

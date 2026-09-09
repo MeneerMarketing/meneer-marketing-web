@@ -28,6 +28,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/huidproblemen/rimpels",
@@ -77,7 +78,7 @@ export default function Pagina() {
 
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -106,27 +107,35 @@ export default function Pagina() {
               en peelings. Die brengen de aanmaak van collageen op gang,
               waardoor de huid steviger wordt en lijnen minder diep.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Een lijn kan in je huid zitten of in de spier eronder. De
+                behandelaar stelt vast om welke van de twee het gaat, want dat
+                bepaalt wat er werkt.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Een lijn kan in je huid zitten of in de spier eronder. De
-              behandelaar stelt vast om welke van de twee het gaat, want dat
-              bepaalt wat er werkt.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#welke">Doe de beweegtest</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="#welke"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+              >
+                Doe de beweegtest
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               src="/images/shoot/intent-veroudering.jpg"
               alt="Cliënt tijdens een behandeling gericht op huidveroudering"
@@ -146,7 +155,7 @@ export default function Pagina() {
       {/* ── De beweegtest ── */}
       <section
         id="test"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -157,7 +166,7 @@ export default function Pagina() {
             intro="Een lijn in de spier en een lijn in de huid zien er hetzelfde uit en vragen iets anders. De behandelaar kijkt in rust en in beweging."
           />
 
-          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+          <ol className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-3">
             {BEWEEGTEST_STAPPEN.map((stap) => (
               <li
                 key={stap.kop}
@@ -195,7 +204,7 @@ export default function Pagina() {
 
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop

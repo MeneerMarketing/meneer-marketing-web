@@ -28,6 +28,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Melasma — negende eigen pagina.
@@ -82,7 +83,7 @@ export default function MelasmaPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -107,27 +108,36 @@ export default function MelasmaPage() {
               zonbescherming. Hoe diep het pigment zit, bepaalt wat er mogelijk
               is, en dat zie je in gewoon licht niet.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Daarom kijken we eerst onder UV-licht. Zit het pigment diep, dan
+                richten we ons op beheersen: minder opvlammingen en een rustiger
+                beeld.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Daarom kijken we eerst onder UV-licht. Zit het pigment diep, dan
-              richten we ons op beheersen: minder opvlammingen en een rustiger
-              beeld.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake">Plan een huidconsult</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="/intake"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Plan consult"
+              >
+                Plan een huidconsult
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               /* Yasin, 7 september 2026: "peelingrood" uit de shoot. De roodheid na de
                  peeling is precies het eerlijke beeld bij melasma: er gebeurt iets, en
@@ -153,7 +163,7 @@ export default function MelasmaPage() {
           iemand met een vlek in de spiegel echt heeft, in tien seconden te scannen. */}
       <section
         id="herkennen"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -163,7 +173,7 @@ export default function MelasmaPage() {
             intro="Ze lijken op elkaar en vragen een andere aanpak. Het verschil zit in het patroon, de plek en hoe de vlek zich door het jaar heen gedraagt."
           />
 
-          <div className="mt-12 grid gap-4 lg:grid-cols-2">
+          <div className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2">
             {(
               [
                 { titel: "Melasma", veld: "melasma" },
@@ -215,7 +225,7 @@ export default function MelasmaPage() {
       {/* ── De drie kranen ─────────────────────────────────────────────── */}
       <section
         id="kranen"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -225,7 +235,7 @@ export default function MelasmaPage() {
             intro="Een zonvlek zit er en blijft er. Melasma gaat open en dicht, en drie dingen bepalen hoe ver hij open staat. Kijk naar de derde kolom: dat is het deel dat je zelf in de hand hebt."
           />
 
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
             {AANJAGERS.map((a) => (
               <li key={a.id} className="bg-white p-6 sm:p-8">
                 <h3 className="diba-card-title">{a.naam}</h3>

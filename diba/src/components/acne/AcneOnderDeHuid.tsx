@@ -53,7 +53,7 @@ export default function AcneOnderDeHuid() {
   const ontstoken = actief >= 3;
 
   return (
-    <div className="mt-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch lg:gap-12">
+    <div className="mt-8 sm:mt-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch lg:gap-12">
       {/* ── De doorsnede ── */}
       <div className="flex flex-col rounded-[var(--r-md)] bg-white p-5 sm:p-7">
         <svg

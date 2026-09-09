@@ -22,6 +22,7 @@ import {
   DIBA_SALONIZED_REVIEW_COUNT,
   DIBA_SITE_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De behandelingenpagina.
@@ -238,7 +239,7 @@ export default function BehandelingenPage() {
           De huidanalyse stond tussen de behandelingen. Het is er geen: er gebeurt niets aan
           je huid. Okan: maak er het startpunt van, en zeg erbij dat de behandelaar bepaalt
           en niet de scanner. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto grid gap-8 rounded-[var(--r-lg)] bg-white p-8 sm:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-14 lg:p-12">
           <div>
             <Label>Begin hier</Label>
@@ -251,10 +252,13 @@ export default function BehandelingenPage() {
               gebruikt de EVE-M als aanvullende meting. Het apparaat levert de
               cijfers; de keuze blijft bij de mens die tegenover je zit.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Het consult kost {intakeBedrag} en duurt maximaal een uur. Word je
-              in dezelfde afspraak behandeld, dan gaat dat bedrag er weer af.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Het consult kost {intakeBedrag} en duurt maximaal een uur. Word
+                je in dezelfde afspraak behandeld, dan gaat dat bedrag er weer
+                af.
+              </p>
+            </LeesVerder>
           </div>
           <div className="flex flex-wrap items-center gap-3 lg:justify-end">
             <Link
@@ -276,28 +280,31 @@ export default function BehandelingenPage() {
       {/* ══ Meest gevraagd ══
           Zes, en dezelfde zes als in het menu. Niet "de beste", want dat is de vraag die
           verderop op deze pagina geen antwoord krijgt. */}
-      <section className="bg-white px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="bg-white px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <Label>Meest gevraagd</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             Waar mensen het vaakst{" "}
             <span className="diba-accent">voor komen</span>
           </h2>
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {POPULAIR.map((b) => (
-              <li key={b.slug}>
+              /* min-w-0 op kaart en regel: het afgekapte apparaatlabel had anders een
+                 minimale breedte van zijn hele tekst, en op een telefoon duwde dat de
+                 hele kaart 80px buiten het scherm, prijs en al. */
+              <li key={b.slug} className="min-w-0">
                 <Link
                   href={`/behandelingen/${b.slug}`}
-                  className="flex h-full flex-col rounded-[var(--r-lg)] bg-[var(--g-025)] p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  className="flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-[var(--g-025)] p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   <p className="diba-card-title text-[var(--t-strong)]">
                     {b.naam}
                   </p>
-                  <p className="mt-3 min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden md:min-h-[3lh]">
                     {publicCopy(b.kort)}
                   </p>
-                  <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
-                    <span className="truncate" title={b.apparaat}>
+                  <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
+                    <span className="min-w-0 truncate" title={b.apparaat}>
                       {b.apparaat ?? ""}
                     </span>
                     <span className="shrink-0 text-[var(--g-700)]">
@@ -316,7 +323,7 @@ export default function BehandelingenPage() {
       {/* ══ Alles, per huidwens ══ */}
       <section
         id="alles"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <Label>Alles op een rij</Label>
@@ -341,7 +348,7 @@ export default function BehandelingenPage() {
           Deze stonden nergens, terwijl ze wel op de tarievenlijst staan. Als losse kaarten
           zouden ze het overzicht verdubbelen; als blok zijn ze wat ze zijn: twee
           behandelingen in dezelfde afspraak. */}
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end lg:gap-16">
             <div>
@@ -359,7 +366,7 @@ export default function BehandelingenPage() {
             </p>
           </div>
 
-          <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {COMBINATIES.map((c) => {
               const delen = c.delen
                 .map((slug) => behandelingVoorSlug(slug))
@@ -410,7 +417,7 @@ export default function BehandelingenPage() {
       {/* ══ De huidreis ══
           Stond hoog op de pagina als de manier om te kiezen. Okan: de diepte mag blijven
           als educatief onderdeel, maar lager. Dat is waar hij nu staat. */}
-      <section className="bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="bg-white px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
             <div>
@@ -438,7 +445,7 @@ export default function BehandelingenPage() {
       {/* ══ Liever filteren ══
           De oude ingang. Hij filtert op hersteltijd en op je huidprofiel, en dat is iets
           wat de indeling hierboven niet doet. */}
-      <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <Label>Of filter zelf</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -462,7 +469,7 @@ export default function BehandelingenPage() {
           bloedafname en geen huidbehandeling, en de claims eromheen moeten nog nagekeken
           worden voor die groter uitgemeten worden. [MEDISCHE-CHECK-ROJDA] */}
       {onderzoeken.length > 0 ? (
-        <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
           <div className="mx-auto">
             <Label>Onderzoek en gezondheid</Label>
             <h2 className="diba-display-s mt-3 max-w-[24ch]">
@@ -471,10 +478,10 @@ export default function BehandelingenPage() {
             </h2>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {onderzoeken.map((b) => (
-                <li key={b.slug}>
+                <li key={b.slug} className="min-w-0">
                   <Link
                     href={`/behandelingen/${b.slug}`}
-                    className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                    className="flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
                     <p className="diba-card-title text-[var(--t-strong)]">
                       {b.naam}
@@ -491,7 +498,7 @@ export default function BehandelingenPage() {
       ) : null}
 
       {/* ══ De eerlijke tegenhanger ══ */}
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat hier niet staat</Label>
@@ -512,22 +519,24 @@ export default function BehandelingenPage() {
               Een behandeling is passend of niet passend, en dat verschilt per
               persoon en per moment.
             </p>
-            <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-              Ook je huidprofiel hierboven geeft geen advies. Het legt naast
-              elkaar wat jij hebt ingevuld en wat een behandeling doet, en zegt
-              waar dat wringt. Dat is iets anders dan een aanbeveling, en het is
-              bewust iets anders.
-            </p>
-            <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-              Wat bij jou past hoor je na de meting, van een mens. Soms is dat
-              geen van de vijf.
-            </p>
+            <LeesVerder>
+              <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
+                Ook je huidprofiel hierboven geeft geen advies. Het legt naast
+                elkaar wat jij hebt ingevuld en wat een behandeling doet, en
+                zegt waar dat wringt. Dat is iets anders dan een aanbeveling, en
+                het is bewust iets anders.
+              </p>
+              <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
+                Wat bij jou past hoor je na de meting, van een mens. Soms is dat
+                geen van de vijf.
+              </p>
+            </LeesVerder>
           </div>
         </div>
       </section>
 
       {/* ══ Afsluiter ══ */}
-      <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
+      <section className="px-5 pb-12 sm:pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
         <div className="mx-auto">
           <div className="relative overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-14">
             <DibaLeafMark

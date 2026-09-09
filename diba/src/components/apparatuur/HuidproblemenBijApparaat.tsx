@@ -61,7 +61,7 @@ export default function HuidproblemenBijApparaat({
   return (
     <section
       id="waarvoor"
-      className="scroll-mt-[var(--anker-offset)] px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24"
+      className="scroll-mt-[var(--anker-offset)] px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24"
     >
       <div className="mx-auto">
         <Label>Waarvoor we het inzetten</Label>
@@ -74,7 +74,7 @@ export default function HuidproblemenBijApparaat({
           bij jou past, stelt de huidtherapeut tijdens de intake vast.
         </p>
 
-        <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {klachten.map((k) => (
             <li
               key={k.href}

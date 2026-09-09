@@ -25,6 +25,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Pigmentvlekken en melasma — eigen pagina met een eigen uitblinker.
@@ -88,7 +89,7 @@ export default function PigmentPage() {
           pigment is timing belangrijker dan techniek. */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -121,20 +122,27 @@ export default function PigmentPage() {
               stand, dus in het najaar en de winter zit je het beste.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#wanneer">Bekijk het zonjaar</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="#wanneer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+              >
+                Bekijk het zonjaar
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               src={FIGMA_KENNISBANK_PIGMENT.src}
               alt={FIGMA_KENNISBANK_PIGMENT.alt}
@@ -154,7 +162,7 @@ export default function PigmentPage() {
       {/* ── Het zonjaar: de uitblinker ─────────────────────────────────── */}
       <section
         id="wanneer"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -170,7 +178,7 @@ export default function PigmentPage() {
       {/* ── Welk pigment ───────────────────────────────────────────────── */}
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -189,7 +197,7 @@ export default function PigmentPage() {
       </section>
 
       {/* ── Het pigmentgeheugen: waarom bescherming de behandeling is ──── */}
-      <section className="bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
           <div>
             <Label>Waarom het terugkomt</Label>
@@ -201,11 +209,13 @@ export default function PigmentPage() {
               keer sneller op zonlicht. Elke onbeschermde zomer telt daardoor op
               bij de vorige.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting
-              zijn bij pigment minstens zo belangrijk als de behandeling in de
-              kliniek.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Dagelijkse zonbescherming en het beperken van nieuwe
+                zonbelasting zijn bij pigment minstens zo belangrijk als de
+                behandeling in de kliniek.
+              </p>
+            </LeesVerder>
           </div>
 
           <ul className="grid gap-3">

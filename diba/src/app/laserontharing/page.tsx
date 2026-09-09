@@ -15,6 +15,7 @@ import { LASER_LANDING_FAQ, LASER_USP_ROWS } from "@/data/laser-landing";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Laserontharing — de grootste commerciële pagina van de site.
@@ -73,7 +74,7 @@ export default function LaserontharingPage() {
       {/* ── Hero ── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -96,11 +97,13 @@ export default function LaserontharingPage() {
               vooraf weet wat het bij jou wordt. Hier kies je je zones, zie je
               meteen je opbouw, en staat erbij wat een pakket vervangt.
             </p>
-            <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af van
-              je huidtype en de zone, en dat hoor je na de meting in plaats van
-              nu.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
+                Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af
+                van je huidtype en de zone, en dat hoor je na de meting in
+                plaats van nu.
+              </p>
+            </LeesVerder>
 
             <div className="mt-9 flex flex-wrap items-center gap-6">
               <Link
@@ -144,7 +147,7 @@ export default function LaserontharingPage() {
       {/* Een stilleven en geen behandelfoto, met opzet. Veiligheid is bij laser het
           onderwerp waar mensen het minst over horen en het meest over twijfelen; een bril
           op een handdoek zegt dat rustiger dan een zin erover. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw]">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw]">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/laser-met-bril.jpg"
@@ -156,7 +159,7 @@ export default function LaserontharingPage() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-14 sm:px-9 lg:px-[7.5vw]">
+      <section className="bg-white px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw]">
         <ul className="mx-auto grid gap-4 md:grid-cols-3">
           {LASER_USP_ROWS.map(({ title, body }) => (
             <li
@@ -177,7 +180,7 @@ export default function LaserontharingPage() {
       {/* ── Zones ── */}
       <section
         id="zones"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -196,7 +199,7 @@ export default function LaserontharingPage() {
       {/* ── Huidtype ── */}
       <section
         id="huidtype"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -242,7 +245,7 @@ export default function LaserontharingPage() {
       />
 
       {/* ── Afsluiter ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
           <div>
             <Label opDonker>Volgende stap</Label>

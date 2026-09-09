@@ -102,7 +102,7 @@ export default function WerkenBijPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -169,7 +169,7 @@ export default function WerkenBijPage() {
       </section>
 
       {/* ── De signatuur: wat we verwachten en wat niet ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -186,7 +186,7 @@ export default function WerkenBijPage() {
               </p>
             </div>
 
-            <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-14">
+            <div className="mt-8 sm:mt-12 grid gap-8 lg:grid-cols-2 lg:gap-14">
               <div>
                 <Label>Dit verwachten we wel</Label>
                 <ul className="mt-5 space-y-4">
@@ -221,7 +221,7 @@ export default function WerkenBijPage() {
       {/* ── Waar je mee werkt ── */}
       {/* Een vacaturepagina laat zelden zien hoe het er tussendoor aan toegaat, en dat is nu
           juist waar een sollicitant naar raadt. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-koffie-gang.jpg"
@@ -233,7 +233,7 @@ export default function WerkenBijPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Waar je mee werkt</Label>
@@ -249,7 +249,7 @@ export default function WerkenBijPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-3">
             {VAKGEBIEDEN.filter((v) => v.behandelend).map((v) => (
               <li
                 key={v.id}
@@ -283,7 +283,7 @@ export default function WerkenBijPage() {
       </section>
 
       {/* ── Solliciteren ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Solliciteren</Label>

@@ -26,6 +26,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Droge huid — tiende eigen pagina.
@@ -71,7 +72,7 @@ export default function DrogeHuidPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -98,27 +99,36 @@ export default function DrogeHuidPage() {
               te weinig water vast. Dat zijn twee verschillende dingen, en je
               kunt ze allebei tegelijk hebben.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                We behandelen beide met hydraterende behandelingen en een
+                verzorgingsschema. Tijdens de intake stellen we vast welke van
+                de twee bij jou speelt.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              We behandelen beide met hydraterende behandelingen en een
-              verzorgingsschema. Tijdens de intake stellen we vast welke van de
-              twee bij jou speelt.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake">Plan een huidconsult</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="/intake"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Plan consult"
+              >
+                Plan een huidconsult
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             {/* Yasin, 7 september 2026: opname 4S3A8055 uit de shoot, het masker dat met
                 het handstuk wordt ingewerkt. Stond hier eerst de OxyGeneo-gel (Rojda's
                 "die met die bubbeltjes"); deze is de keuze van Yasin. */}
@@ -141,7 +151,7 @@ export default function DrogeHuidPage() {
       {/* ── De huidmatrix: de uitblinker ───────────────────────────────── */}
       <section
         id="matrix"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -160,7 +170,7 @@ export default function DrogeHuidPage() {
       {/* ── Wat mensen verwarren ──────────────────────────────────────── */}
       <section
         id="verwarring"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -170,7 +180,7 @@ export default function DrogeHuidPage() {
             intro="Alle drie komen ze voort uit het idee dat vet en vocht op één schaal liggen. Dat is niet zo."
           />
 
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
             {VERWARRINGEN.map((v) => (
               <li key={v.vraag} className="bg-white p-6 sm:p-8">
                 <h3 className="diba-card-title">{v.vraag}</h3>

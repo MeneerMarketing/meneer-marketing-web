@@ -55,6 +55,12 @@ type CommonProps = {
   className?: string;
   /** Toont de pijl. Standaard aan, behalve op ghost (die heeft al een onderstreping). */
   arrow?: boolean;
+  /**
+   * Kort opschrift voor een telefoon. Twee knoppen naast elkaar op 375px hebben elk
+   * zo'n 150px; "Plan een huidconsult" past daar niet in, "Plan consult" wel. Vanaf sm
+   * staat het volledige opschrift (Yasin, 9 september 2026).
+   */
+  kort?: string;
 };
 
 type ButtonAsButton = CommonProps &
@@ -72,12 +78,19 @@ type ButtonAsLink = CommonProps & {
 export type DibaButtonProps = ButtonAsButton | ButtonAsLink;
 
 export default function Button(props: DibaButtonProps) {
-  const { variant = "primair", children, className = "" } = props;
+  const { variant = "primair", children, className = "", kort } = props;
   const showArrow = props.arrow ?? variant !== "ghost";
   const cls = `${base} ${variants[variant]} ${className}`.trim();
   const inner = (
     <>
-      {children}
+      {kort ? (
+        <>
+          <span className="sm:hidden">{kort}</span>
+          <span className="max-sm:hidden">{children}</span>
+        </>
+      ) : (
+        children
+      )}
       {showArrow ? <ArrowUpRight size={14} /> : null}
     </>
   );
@@ -103,11 +116,13 @@ export default function Button(props: DibaButtonProps) {
     children: _c,
     className: _cn,
     arrow: _a,
+    kort: _k,
     ...rest
   } = props as ButtonAsButton;
   void _v;
   void _c;
   void _cn;
+  void _k;
   void _a;
 
   return (

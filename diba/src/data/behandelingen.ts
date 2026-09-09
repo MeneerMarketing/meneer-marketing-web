@@ -636,12 +636,13 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Meestal een reeks van vier tot zes, met twee tot vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 140,
+    /* De kruidenpeeling stond hier als variant. Griss, 8 september 2026: bij acne is dat
+       een van de belangrijkste behandelingen, dus hij heeft nu een eigen pagina en een
+       eigen regel in de tarieven; zie `kruidenpeel` hieronder. */
     varianten: [
       { naam: "Mesoestetic peeling", prijs: 140 },
-      { naam: "Kruidenpeeling", prijs: 150 },
       { naam: "TCA Dermaceutic 12 tot 20%", prijs: 180 },
       { naam: "Mesoestetic peeling rug", prijs: 160 },
-      { naam: "Kruidenpeeling rug", prijs: 200 },
     ],
     wel: [
       "Maakt oppervlakkige verkleuring lichter",
@@ -677,6 +678,76 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Ouderdomsvlekken", href: "/huidproblemen/ouderdomsvlekken" },
     ],
     duurMinuten: 45,
+  },
+  {
+    /* Griss, 8 september 2026: kruidenpeels zijn bij acne een belangrijke behandeling,
+       met onder andere antibacteriële eigenschappen, en ze stonden nergens genoemd behalve
+       als prijsregel onder de peelings. Nu een eigen behandeling: hij werkt anders (kruiden
+       die de huid prikkelen, geen zuur) en heeft een eigen tarief.
+       [GEGEVEN-NODIG: welk merk kruidenpeel, Rojda] [BEELD-NODIG: eigen opname; nu de
+       peelingfoto] */
+    slug: "kruidenpeel",
+    foto: {
+      src: "/images/shoot/beh-peeling.jpg",
+      alt: "Een peeling wordt aangebracht in de behandelkamer",
+    },
+    naam: "Kruidenpeel",
+    categorie: "peeling",
+    huidwens: ["acne"],
+    kort: "Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel.",
+    lagen: ["hoornlaag", "opperhuid"],
+    werking:
+      "De kruiden worden in de huid gemasseerd. De fijne plantendeeltjes prikkelen de huid, waardoor de bovenlaag in de dagen erna loslaat en zich vernieuwt. De kruiden zelf werken ontstekingsremmend en antibacterieel, en daarom zetten we deze peeling juist in bij ontstoken acne, waar een zuurpeeling soms te veel is. [MEDISCHE-CHECK-ROJDA]",
+    herstel:
+      "Drie tot vijf dagen. Eerst rood en warm, daarna vervelt de huid. Niet aan plukken. [MEDISCHE-CHECK-ROJDA]",
+    sessies:
+      "Een reeks; hoeveel hangt af van hoe je huid reageert. [MEDISCHE-CHECK-ROJDA]",
+    prijs: 150,
+    varianten: [
+      { naam: "Gezicht", prijs: 150 },
+      { naam: "Rug", prijs: 200 },
+    ],
+    wel: [
+      "Remt de ontsteking bij actieve acne en werkt antibacterieel [MEDISCHE-CHECK-ROJDA]",
+      "Vernieuwt de bovenlaag zonder zuur, ook op de rug en de borst",
+      "Past in een acnetraject, naast de verzorging voor thuis",
+    ],
+    niet: [
+      "Voor littekens dieper dan de opperhuid kies je microneedling",
+      "Bij hardnekkig pigment is Cosmelan het zwaardere traject",
+      "Niet op een huid die open is of op dat moment extreem geprikkeld [MEDISCHE-CHECK-ROJDA]",
+    ],
+    stappen: [
+      {
+        kop: "Huid beoordelen",
+        zin: "De hoeveelheid kruiden en de massagetijd worden op je huid van vandaag gekozen.",
+      },
+      {
+        kop: "Inmasseren",
+        zin: "De kruiden worden in de huid gemasseerd. Dat voelt warm en schuurt; dat is de werking.",
+      },
+      {
+        kop: "Vervellen en beschermen",
+        zin: "Drie tot vijf dagen vervelt je huid. Niet plukken, geen zon, dagelijks SPF 50. [MEDISCHE-CHECK-ROJDA]",
+      },
+    ],
+    bijProblemen: [
+      { label: "Acne", href: "/huidproblemen/acne" },
+      { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
+    ],
+    verwant: [
+      {
+        slug: "peelings",
+        waarom:
+          "De chemische variant: zuur in plaats van kruiden, ook voor kleur en textuur.",
+      },
+      {
+        slug: "acne-traject",
+        waarom: "Het traject waar de kruidenpeel vaak onderdeel van is.",
+      },
+    ],
+    duurMinuten: 60,
   },
 
   /* ── Microneedling ─────────────────────────────────────────────────────── */
@@ -787,7 +858,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     bijProblemen: [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
-
+      { label: "Poriën", href: "/huidproblemen/porien" },
       { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
       { label: "Rimpels", href: "/huidproblemen/rimpels" },
       { label: "Striae", href: "/huidproblemen/striae" },

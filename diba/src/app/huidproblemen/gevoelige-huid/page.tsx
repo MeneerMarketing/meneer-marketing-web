@@ -27,6 +27,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Gevoelige huid — elfde eigen pagina.
@@ -76,7 +77,7 @@ export default function GevoeligeHuidPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -103,19 +104,28 @@ export default function GevoeligeHuidPage() {
               huidbarrière. We brengen die tot rust met milde behandelingen en
               een verzorgingsschema dat je huid aankan.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Tijdens de intake lopen we je huidverzorging langs. Vaak zitten
+                er meerdere prikkelende producten in die samen te veel worden.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Tijdens de intake lopen we je huidverzorging langs. Vaak zitten er
-              meerdere prikkelende producten in die samen te veel worden.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake">Plan een huidconsult</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="/intake"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Plan consult"
+              >
+                Plan een huidconsult
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
@@ -123,7 +133,7 @@ export default function GevoeligeHuidPage() {
           </div>
 
           {/* Leent het acnebeeld tot er een eigen shoot is voor dit onderwerp. */}
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               src={FIGMA_INTENT_ACNE.src}
               alt={FIGMA_INTENT_ACNE.alt}
@@ -143,7 +153,7 @@ export default function GevoeligeHuidPage() {
       {/* ── De stapelteller: de uitblinker ─────────────────────────────── */}
       <section
         id="teller"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -159,7 +169,7 @@ export default function GevoeligeHuidPage() {
       {/* ── Als het de routine niet is ─────────────────────────────────── */}
       <section
         id="anders"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -169,7 +179,7 @@ export default function GevoeligeHuidPage() {
             intro="Een gevoelige huid is een klacht en geen diagnose. Deze vier aandoeningen beginnen vaak op dezelfde manier en vragen elk iets anders."
           />
 
-          <ul className="mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-2 lg:grid-cols-4">
             {ANDERE_OORZAKEN.map((o) => (
               <li key={o.id} className="flex flex-col bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{o.naam}</h3>

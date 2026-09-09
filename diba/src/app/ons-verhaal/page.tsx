@@ -102,7 +102,7 @@ export default function OnsVerhaalPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -149,7 +149,7 @@ export default function OnsVerhaalPage() {
 
       {/* ── De duurste regel apart ── */}
       {uitgelicht ? (
-        <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
           <div className="mx-auto">
             <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
               <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-16">
@@ -190,7 +190,7 @@ export default function OnsVerhaalPage() {
       {/* ── De andere vier ── */}
       {/* Vijf punten op een rij blijft een abstract verhaal. Dit is waar het in de praktijk
           gebeurt: twee behandelaars die samen besluiten wat er meegaat. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-producten-overleg.jpg"
@@ -202,7 +202,7 @@ export default function OnsVerhaalPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>De andere vier</Label>
@@ -246,7 +246,7 @@ export default function OnsVerhaalPage() {
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>De eerste afspraak</Label>

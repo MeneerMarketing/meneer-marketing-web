@@ -252,6 +252,63 @@ export const VAKGEBIEDEN: readonly {
  * schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register, het
  * kwaliteitsregister dat individuele schoonheidsspecialisten registreert.
  */
+/**
+ * De logo's voor de voettekst en de registratiepagina. Yasin, 9 september 2026: "zodat
+ * we echt professioneel ogen". Bestanden in /public/images/logos, opgehaald van de sites
+ * van de organisaties zelf; elk logo linkt daar ook naartoe.
+ *
+ * [GEGEVEN-NODIG: is Diba een erkend leerbedrijf (SBB)? Yasin noemde het als iets dat
+ * de site mist; het staat er nu met het SBB-beeldmerk en gaat eruit als het niet klopt.
+ * Het officiële "erkend leerbedrijf"-logo krijgt de kliniek via mijnsbb.nl.]
+ */
+type Logo = {
+  readonly naam: string;
+  readonly logo: string;
+  readonly url: string;
+  /** Een woord naast het beeldmerk, als het logo zelf geen naam draagt. */
+  readonly tekst?: string;
+  /** Staande of vierkante logo's krijgen iets meer hoogte dan brede woordmerken. */
+  readonly hoog?: boolean;
+};
+
+export const LOGOSTROOK: readonly Logo[] = [
+  {
+    naam: "Nederlandse Vereniging van Huidtherapeuten",
+    logo: "/images/logos/nvh-tekst.png",
+    url: "https://www.huidtherapie.nl/",
+    hoog: true,
+  },
+  {
+    naam: "Kwaliteitsregister Paramedici",
+    logo: "/images/logos/kwaliteitsregister-paramedici.svg",
+    url: "https://www.kwaliteitsregisterparamedici.nl/",
+    hoog: true,
+  },
+  {
+    naam: "ANBOS",
+    logo: "/images/logos/anbos.png",
+    url: "https://www.anbos.nl/",
+  },
+  {
+    naam: "SKIN Register",
+    logo: "/images/logos/skin-register.svg",
+    url: "https://www.skinregister.nl/",
+    hoog: true,
+  },
+  {
+    naam: "ZorgkaartNederland",
+    logo: "/images/logos/zorgkaart-nederland.svg",
+    url: "https://www.zorgkaartnederland.nl/zorginstelling/huidtherapiepraktijk-diba-clinics-rotterdam-10082984",
+  },
+  {
+    naam: "SBB, erkend leerbedrijf",
+    logo: "/images/logos/sbb.svg",
+    url: "https://www.s-bb.nl/",
+    tekst: "Erkend leerbedrijf",
+    hoog: true,
+  },
+];
+
 export const ERKENNINGEN = [
   {
     naam: "Gecontracteerd bij alle zorgverzekeraars",

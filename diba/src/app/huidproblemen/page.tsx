@@ -12,6 +12,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Het overzicht van alle huidproblemen.
@@ -48,7 +49,7 @@ export default function HuidproblemenPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -66,16 +67,19 @@ export default function HuidproblemenPage() {
             </h1>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Bij acne telt wáár het zit, want de plek zegt iets over de
-              oorzaak. Bij pigment telt welk seizoen het is. Bij littekens telt
-              hoe oud ze zijn, en bij melasma hoe diep het pigment ligt.
+              Bij elke klacht telt iets anders: waar het zit, welk seizoen het
+              is, hoe oud het is of hoe diep het ligt. Kies je klacht en lees
+              wat er bij jou telt.
             </p>
-
-            <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Dat klinkt als een detail en het bepaalt de uitkomst. Wie met de
-              verkeerde vraag begint, behandelt maanden het verkeerde en denkt
-              daarna dat het niet werkt.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                Bij acne telt wáár het zit, want de plek zegt iets over de
+                oorzaak. Bij pigment telt welk seizoen het is. Bij littekens hoe
+                oud ze zijn, en bij melasma hoe diep het pigment ligt. Dat
+                klinkt als een detail en het bepaalt de uitkomst: wie met de
+                verkeerde vraag begint, behandelt maanden het verkeerde.
+              </p>
+            </LeesVerder>
           </div>
 
           {/* De zoeker als eerste uitweg, voor wie de naam niet kent. */}
@@ -109,7 +113,7 @@ export default function HuidproblemenPage() {
           ondergrond in elkaar over en las het als losse tekst in plaats van als kaarten. */}
       {/* Zestien huidproblemen naast elkaar kan overweldigen. Dit beeld zegt dat er aan het
           eind van elke pagina gewoon een gesprek staat. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/kliniek-kamer-overzicht.jpg"
@@ -121,14 +125,14 @@ export default function HuidproblemenPage() {
         </div>
       </section>
 
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <Raster />
         </div>
       </section>
 
       {/* ── Wat elke pagina gemeen heeft ── */}
-      <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw]">
+      <section className="px-5 pb-12 sm:pb-20 sm:px-9 lg:px-[7.5vw]">
         <div className="mx-auto rounded-[var(--r-md)] bg-[var(--g-050)] p-7 sm:p-10">
           <Label>Wat op elke pagina terugkomt</Label>
           <h2 className="diba-display-s mt-5 max-w-[20ch]">
@@ -136,7 +140,7 @@ export default function HuidproblemenPage() {
             <br />
             <span className="diba-accent">elke keer.</span>
           </h2>
-          <ul className="mt-10 grid gap-x-10 gap-y-6 md:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-8 sm:mt-10 grid gap-x-10 gap-y-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               [
                 "Wat is het eigenlijk",
@@ -169,7 +173,7 @@ export default function HuidproblemenPage() {
       </section>
 
       {/* ── Slot ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Behandeling nul</Label>

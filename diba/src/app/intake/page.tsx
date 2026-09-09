@@ -29,6 +29,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
  * Het huidconsult — de intake.
@@ -96,7 +97,7 @@ export default function IntakePage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -126,10 +127,12 @@ export default function IntakePage() {
               intakekosten. Je beslist in je eigen tijd wat je daarna doet.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
               <Button
                 variant="primair-op-donker"
                 href={DIBA_SALONIZED_BOOKING_URL || "/contact"}
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Plan consult"
               >
                 Plan een huidconsult
               </Button>
@@ -138,6 +141,8 @@ export default function IntakePage() {
                 variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
@@ -181,7 +186,7 @@ export default function IntakePage() {
           kleine lettertjes maar het verschil tussen de twee. */}
       {/* Dit is letterlijk wat het huidconsult is: samen naar dezelfde meting kijken. Het
           beeld staat ook op de homepage, en dat is hier geen herhaling maar bevestiging. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/hero-huidscan.jpg"
@@ -193,7 +198,7 @@ export default function IntakePage() {
         </div>
       </section>
 
-      <section className="px-5 pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="px-5 pt-10 sm:pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <div className="mx-auto">
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
             <Label>Twee manieren om te beginnen</Label>
@@ -203,7 +208,7 @@ export default function IntakePage() {
           </div>
 
           <div className="mt-6 grid gap-4 lg:grid-cols-2 lg:items-stretch">
-            <div className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-9">
+            <div className="flex flex-col rounded-[var(--r-lg)] bg-white p-5 sm:p-9">
               <Label>Alleen meten</Label>
               <p className="diba-card-title-lg mt-4 text-[var(--t-strong)]">
                 Het huidconsult
@@ -227,7 +232,7 @@ export default function IntakePage() {
               </p>
             </div>
 
-            <div className="flex flex-col rounded-[var(--r-lg)] bg-[var(--g-075)] p-7 sm:p-9">
+            <div className="flex flex-col rounded-[var(--r-lg)] bg-[var(--g-075)] p-5 sm:p-9">
               <Label>{COMBINATIE_AFSPRAAK.label}</Label>
               <p className="diba-card-title-lg mt-4 text-[var(--t-strong)]">
                 {COMBINATIE_AFSPRAAK.kop}
@@ -255,7 +260,7 @@ export default function IntakePage() {
           niets van je wist. Deze kaart maakt er één ding van: wat je meeneemt staat er, en
           je kopieert het zelf. Versturen doen wij niet, want het profiel hoort in jouw
           browser te blijven. */}
-      <section className="px-5 pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="px-5 pt-10 sm:pt-14 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <div className="mx-auto">
           <Meeneemkaart />
         </div>
@@ -283,7 +288,7 @@ export default function IntakePage() {
       {/* ── De tijdlijn: de uitblinker ── */}
       <section
         id="uur"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -299,7 +304,7 @@ export default function IntakePage() {
       {/* ── Voorbereiden ── */}
       <section
         id="voorbereiden"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -313,33 +318,37 @@ export default function IntakePage() {
           <div className={`mt-12 ${RASTER_GELIJK}`}>
             <div>
               <Label>Altijd</Label>
-              <ul className="mt-5 space-y-3">
-                {VOORBEREIDING.altijd.map((v) => (
-                  <li
-                    key={v}
-                    className="rounded-[var(--r-sm)] bg-white p-5 text-[16px] leading-7 text-[var(--t-body)]"
-                  >
-                    {v}
-                  </li>
-                ))}
-              </ul>
+              <MobielInklap className="mt-5" label="Toon de lijst">
+                <ul className="space-y-3">
+                  {VOORBEREIDING.altijd.map((v) => (
+                    <li
+                      key={v}
+                      className="rounded-[var(--r-sm)] bg-white p-5 text-[16px] leading-7 text-[var(--t-body)]"
+                    >
+                      {v}
+                    </li>
+                  ))}
+                </ul>
+              </MobielInklap>
             </div>
 
             <div>
               <Label>Afhankelijk van waarvoor je komt</Label>
-              <ul className="mt-5 space-y-3">
-                {VOORBEREIDING.soms.map((v) => (
-                  <li
-                    key={v.wanneer}
-                    className="rounded-[var(--r-sm)] bg-white p-5"
-                  >
-                    <span className="diba-card-title block">{v.wanneer}</span>
-                    <span className="mt-2 block text-[16px] leading-7 text-[var(--t-body)]">
-                      {publicCopy(v.wat)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <MobielInklap className="mt-5" label="Toon de lijst">
+                <ul className="space-y-3">
+                  {VOORBEREIDING.soms.map((v) => (
+                    <li
+                      key={v.wanneer}
+                      className="rounded-[var(--r-sm)] bg-white p-5"
+                    >
+                      <span className="diba-card-title block">{v.wanneer}</span>
+                      <span className="mt-2 block text-[16px] leading-7 text-[var(--t-body)]">
+                        {publicCopy(v.wat)}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </MobielInklap>
 
               {/* De zin hierboven zei "bel of app even" zonder dat je dat kon. Hij staat in
                   data en kan dus geen koppeling dragen; daarom de knoppen hier, waar de
@@ -370,7 +379,7 @@ export default function IntakePage() {
           afspraak oplevert als je daarna nooit meer terugkomt. */}
       <section
         id="ook-als-je-stopt"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -381,21 +390,23 @@ export default function IntakePage() {
             raster="gelijk"
           />
 
-          <ul className={`mt-12 ${RASTER_GELIJK}`}>
-            {OOK_ALS_JE_STOPT.map((k) => (
-              <li
-                key={k.kop}
-                className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9"
-              >
-                <p className="diba-card-title text-[var(--t-strong)]">
-                  {k.kop}
-                </p>
-                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-                  {k.zin}
-                </p>
-              </li>
-            ))}
-          </ul>
+          <MobielInklap className="mt-8 sm:mt-12" label="Lees wat je overhoudt">
+            <ul className={RASTER_GELIJK}>
+              {OOK_ALS_JE_STOPT.map((k) => (
+                <li
+                  key={k.kop}
+                  className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9"
+                >
+                  <p className="diba-card-title text-[var(--t-strong)]">
+                    {k.kop}
+                  </p>
+                  <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                    {k.zin}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </MobielInklap>
 
           <p className="mt-8 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Je beslist in je eigen tijd. Er volgt geen belronde, geen aanbod dat
@@ -409,7 +420,7 @@ export default function IntakePage() {
           Op /reviews staan alle 56 met de waarschuwing dat een 5,0 wantrouwen verdient.
           Hier staan alleen de mensen die voor een consult kwamen, geselecteerd op de
           behandeling die erbij staat en niet op inhoud. */}
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <SectieKop
             label="Van mensen die dit boekten"
@@ -419,13 +430,15 @@ export default function IntakePage() {
           />
 
           <ul className="mt-12 gap-4 sm:columns-2 xl:columns-3 [&>li]:mb-4 [&>li]:break-inside-avoid">
-            {CONSULT_REVIEW_IDS.map((id) => {
+            {CONSULT_REVIEW_IDS.map((id, i) => {
               const r = SALONIZED_REVIEWS.find((x) => x.id === id);
               if (!r) return null;
               return (
                 <li
                   key={r.id}
-                  className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-8"
+                  className={`rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-8${
+                    i >= 2 ? " max-md:hidden" : ""
+                  }`}
                 >
                   <blockquote className="text-[16px] leading-7 text-[var(--t-strong)]">
                     {r.quote}
@@ -460,7 +473,7 @@ export default function IntakePage() {
       <PillarFaq items={INTAKE_FAQ} onderwerp="intake" />
 
       {/* ── Slot ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Behandeling nul</Label>

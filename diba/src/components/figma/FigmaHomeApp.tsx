@@ -35,6 +35,7 @@ import {
   FIGMA_EERLIJK_PORTRAIT_ALT,
 } from "@/lib/figma-home-layout";
 import { DIBA_HOME_PROOF_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
+import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
  * De drie punten onder "Behandeld door huidtherapeuten".
@@ -132,9 +133,9 @@ export default function FigmaHomeApp({
 
       <section
         id="huidscan"
-        className="bg-[var(--g-700)] px-5 py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-700)] px-5 py-12 sm:py-20 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
-        <div className="mx-auto grid gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
+        <div className="mx-auto grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-14">
           <div>
             <Label opDonker>De huidanalyse</Label>
             <h2 className="diba-display-l mt-5">
@@ -251,7 +252,7 @@ export default function FigmaHomeApp({
 
       <section
         id="werkwijze"
-        className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
@@ -272,11 +273,11 @@ export default function FigmaHomeApp({
           merkgroene waas plus vestigingslabel, en rechts een witte kaart met drie rijen
           die de belofte concreet maken. Die rijen zijn het verschil: zonder hen is dit
           een claim, met hen is het na te rekenen. */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
           {/* Het groene vlak eronder en de multiply-modus zijn allebei weg. Samen
               verfden ze de foto egaal groen; wat overbleef was een silhouet, geen opname. */}
-          <div className="relative min-h-[320px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] lg:min-h-[440px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] sm:min-h-[320px] lg:min-h-[440px]">
             <Image
               src={FIGMA_EERLIJK_PORTRAIT}
               alt={FIGMA_EERLIJK_PORTRAIT_ALT}
@@ -295,7 +296,7 @@ export default function FigmaHomeApp({
             </span>
           </div>
 
-          <div className="rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:p-10">
+          <div className="rounded-[var(--r-md)] bg-white p-5 sm:p-9 lg:p-10">
             <Label>De behandelaars</Label>
             <h2 className="diba-card-title-lg mt-4">
               Behandeld door huidtherapeuten
@@ -307,27 +308,29 @@ export default function FigmaHomeApp({
               Kwaliteitsregister Paramedici.
             </p>
 
-            <ul className="mt-6 space-y-2.5">
-              {EERLIJK_ADVIES_PUNTEN.map((punt) => (
-                <li
-                  key={punt.titel}
-                  className="flex gap-3 rounded-[var(--r-sm)] bg-[var(--g-050)] px-4 py-3.5"
-                >
-                  <span
-                    className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-500)]"
-                    aria-hidden="true"
-                  />
-                  <span>
-                    <strong className="block text-[15px] font-medium leading-6 text-[var(--t-strong)]">
-                      {punt.titel}
-                    </strong>
-                    <span className="mt-0.5 block text-sm leading-6 text-[var(--t-body)]">
-                      {punt.tekst}
+            <MobielInklap className="mt-6" label="Lees waarom dat uitmaakt">
+              <ul className="space-y-2.5">
+                {EERLIJK_ADVIES_PUNTEN.map((punt) => (
+                  <li
+                    key={punt.titel}
+                    className="flex gap-3 rounded-[var(--r-sm)] bg-[var(--g-050)] px-4 py-3.5"
+                  >
+                    <span
+                      className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-[var(--r-pill)] bg-[var(--g-500)]"
+                      aria-hidden="true"
+                    />
+                    <span>
+                      <strong className="block text-[15px] font-medium leading-6 text-[var(--t-strong)]">
+                        {punt.titel}
+                      </strong>
+                      <span className="mt-0.5 block text-sm leading-6 text-[var(--t-body)]">
+                        {punt.tekst}
+                      </span>
                     </span>
-                  </span>
-                </li>
-              ))}
-            </ul>
+                  </li>
+                ))}
+              </ul>
+            </MobielInklap>
 
             <Button href="/intake" variant="secundair" className="mt-7">
               Zo werkt een eerste afspraak
@@ -336,7 +339,7 @@ export default function FigmaHomeApp({
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-white px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="relative overflow-hidden bg-white px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         {/* Het blad stond hier rechtsboven en is weg. Deze sectie heeft er geen ruimte
             voor: de kop loopt nu over de volle kolombreedte, en dan wordt een merkteken in
             de hoek geen accent maar een obstakel. */}
@@ -391,34 +394,39 @@ export default function FigmaHomeApp({
                   Wat er nu staat is wel waar: de assen die de scanner leest, en waarom
                   twee metingen naast elkaar iets zeggen. Geen getallen dus, want die zijn
                   van jou en die krijg je in de kliniek. */}
-              <ul className="mt-12 grid gap-3 sm:grid-cols-3">
-                {[
-                  {
-                    label: "Pigment",
-                    zin: "Onder UV-licht wordt pigment zichtbaar dat je zelf niet ziet.",
-                  },
-                  {
-                    label: "Roodheid",
-                    zin: "We leggen vast waar de roodheid zit en hoe fel die nu is.",
-                  },
-                  {
-                    label: "Textuur",
-                    zin: "Hoe glad of oneffen je huid is, en waar dat het meest opvalt.",
-                  },
-                ].map((as) => (
-                  <li
-                    key={as.label}
-                    className="rounded-[var(--r-sm)] bg-white p-4"
-                  >
-                    <span className="diba-label text-[var(--t-muted)]">
-                      {as.label}
-                    </span>
-                    <span className="mt-3 block text-[13px] leading-6 text-[var(--t-body)]">
-                      {as.zin}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <MobielInklap
+                className="mt-8 sm:mt-12"
+                label="Bekijk de drie stappen"
+              >
+                <ul className="grid gap-3 sm:grid-cols-3">
+                  {[
+                    {
+                      label: "Pigment",
+                      zin: "Onder UV-licht wordt pigment zichtbaar dat je zelf niet ziet.",
+                    },
+                    {
+                      label: "Roodheid",
+                      zin: "We leggen vast waar de roodheid zit en hoe fel die nu is.",
+                    },
+                    {
+                      label: "Textuur",
+                      zin: "Hoe glad of oneffen je huid is, en waar dat het meest opvalt.",
+                    },
+                  ].map((as) => (
+                    <li
+                      key={as.label}
+                      className="rounded-[var(--r-sm)] bg-white p-4"
+                    >
+                      <span className="diba-label text-[var(--t-muted)]">
+                        {as.label}
+                      </span>
+                      <span className="mt-3 block text-[13px] leading-6 text-[var(--t-body)]">
+                        {as.zin}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </MobielInklap>
             </div>
             <div className="relative min-h-[410px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-300)]">
               <Image
@@ -441,7 +449,7 @@ export default function FigmaHomeApp({
         </div>
       </section>
 
-      <section className="bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
@@ -455,25 +463,32 @@ export default function FigmaHomeApp({
               afloop meekrijgt.
             </p>
           </div>
-          <div className="mt-12 grid gap-4 md:grid-cols-[.75fr_1.25fr_.75fr]">
-            <div className="min-h-[300px] rounded-[var(--r-lg)] bg-[var(--g-200)] p-7">
-              <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-500)]">
-                <Pulse size={18} />
-              </span>
-              <h3 className="diba-card-title-lg mt-28">Ervaren behandelaars</h3>
-              <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                We werken sinds 2017 en hebben ruim 55.000 behandelingen gedaan.
-                Die ervaring hoor je terug in het advies dat je krijgt.
-              </p>
-              <Link
-                href="#vragen"
-                className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
-              >
-                Veelgestelde vragen
-                <ArrowUpRight size={13} />
-              </Link>
-            </div>
-            {/* Een vlak en geen foto.
+          <MobielInklap
+            className="mt-8 sm:mt-12"
+            label="Bekijk wat je kunt verwachten"
+          >
+            <div className="grid gap-4 md:grid-cols-[.75fr_1.25fr_.75fr]">
+              <div className="rounded-[var(--r-lg)] bg-[var(--g-200)] p-6 md:min-h-[300px] md:p-7">
+                <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-500)]">
+                  <Pulse size={18} />
+                </span>
+                <h3 className="diba-card-title-lg mt-6 md:mt-28">
+                  Ervaren behandelaars
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
+                  We werken sinds 2017 en hebben ruim 55.000 behandelingen
+                  gedaan. Die ervaring hoor je terug in het advies dat je
+                  krijgt.
+                </p>
+                <Link
+                  href="#vragen"
+                  className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
+                >
+                  Veelgestelde vragen
+                  <ArrowUpRight size={13} />
+                </Link>
+              </div>
+              {/* Een vlak en geen foto.
 
                 Hier stond een opname van twee collega's met een leeslaag eroverheen. Die
                 foto had de leeslaag nodig om de twee regels leesbaar te houden, en daarmee
@@ -483,47 +498,48 @@ export default function FigmaHomeApp({
                 Nu een egaal groen vlak met het blad rechtsboven, zoals het eerder was. Het
                 merkteken heeft hier wel ruimte, want er staat niets achter dat eronder
                 lijdt. De foto's staan elders op de pagina, waar ze foto's mogen zijn. */}
-            <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-700)]">
-              <FigmaSoftAccent variant="clinic" className="z-10" />
-              <p className="diba-label absolute left-7 top-7 z-10 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-                Diba Clinics
-              </p>
-              <p className="diba-display-s absolute bottom-8 left-7 z-10 max-w-[12ch] text-[var(--on-dark)]">
-                Je vindt ons in{" "}
-                <span className="diba-accent-on-dark">Rotterdam</span>
-              </p>
-              <Link
-                href="/contact"
-                className="absolute bottom-8 right-8 z-10 grid h-12 w-12 place-items-center rounded-[var(--r-pill)] border border-white/50 text-white transition hover:bg-white/10"
-                aria-label="Contact en route"
-              >
-                <ArrowUpRight size={20} />
-              </Link>
-            </div>
-            <div className="min-h-[300px] rounded-[var(--r-lg)] bg-white p-7">
-              <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-500)]">
-                <Sparkle size={18} />
-              </span>
-              <h3 className="diba-card-title-lg mt-28">
-                Een resultaat met een verwachting
-              </h3>
-              {/* Rojda, 7 september 2026: niet "hoeveel afspraken dat vraagt", want hoeveel
+              <div className="relative min-h-[240px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-700)] md:min-h-[300px]">
+                <FigmaSoftAccent variant="clinic" className="z-10" />
+                <p className="diba-label absolute left-7 top-7 z-10 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
+                  Diba Clinics
+                </p>
+                <p className="diba-display-s absolute bottom-8 left-7 z-10 max-w-[12ch] text-[var(--on-dark)]">
+                  Je vindt ons in{" "}
+                  <span className="diba-accent-on-dark">Rotterdam</span>
+                </p>
+                <Link
+                  href="/contact"
+                  className="absolute bottom-8 right-8 z-10 grid h-12 w-12 place-items-center rounded-[var(--r-pill)] border border-white/50 text-white transition hover:bg-white/10"
+                  aria-label="Contact en route"
+                >
+                  <ArrowUpRight size={20} />
+                </Link>
+              </div>
+              <div className="rounded-[var(--r-lg)] bg-white p-6 md:min-h-[300px] md:p-7">
+                <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-500)]">
+                  <Sparkle size={18} />
+                </span>
+                <h3 className="diba-card-title-lg mt-6 md:mt-28">
+                  Een resultaat met een verwachting
+                </h3>
+                {/* Rojda, 7 september 2026: niet "hoeveel afspraken dat vraagt", want hoeveel
                   behandelingen er echt nodig zijn weet niemand vooraf. Wat wel vooraf
                   gezegd kan worden: wat je kunt verwachten en wat het kost. */}
-              <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                Je hoort vooraf wat je van de behandeling kunt verwachten en
-                welke kosten daarbij horen. Alle tarieven vind je transparant op
-                deze site.
-              </p>
-              <Link
-                href="/tarieven"
-                className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
-              >
-                Bekijk tarieven
-                <ArrowUpRight size={13} />
-              </Link>
+                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
+                  Je hoort vooraf wat je van de behandeling kunt verwachten en
+                  welke kosten daarbij horen. Alle tarieven vind je transparant
+                  op deze site.
+                </p>
+                <Link
+                  href="/tarieven"
+                  className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
+                >
+                  Bekijk tarieven
+                  <ArrowUpRight size={13} />
+                </Link>
+              </div>
             </div>
-          </div>
+          </MobielInklap>
         </div>
       </section>
 
@@ -534,7 +550,7 @@ export default function FigmaHomeApp({
           naar de volledige lijst. */}
       <Reviewslider />
 
-      <section className="px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
           <div>
             <Label>Goed om te weten</Label>
@@ -570,7 +586,7 @@ export default function FigmaHomeApp({
 
       <section
         id="boeken"
-        className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
+        className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
       >
         {/* 1.35 en niet 1.2: bij die verdeling paste "Wij kijken met je mee." net niet
             in de kolom en brak de kop naar drie regels, ondanks de harde afbreking. */}

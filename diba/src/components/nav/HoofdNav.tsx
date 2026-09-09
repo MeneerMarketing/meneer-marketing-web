@@ -600,13 +600,72 @@ function WhatsAppIcoon() {
   );
 }
 
+/**
+ * Wat er onder elk hoofditem zit, in één zin. Hier stond een getal ("Huidproblemen 32"),
+ * en dat zegt een bezoeker niets: tweeëndertig wát? Yasin, 9 september 2026: weg met die
+ * getallen, maak het menu hoogwaardig. Een zin zegt waar je terechtkomt.
+ */
+const ONDERZIN: Record<string, string> = {
+  Huidproblemen: "Herken je klacht en zie wat eraan te doen is",
+  Behandelingen: "Wat we doen, waarmee, en wat het kost",
+  Tarieven: "Elk bedrag, per sessie en per zone",
+  "Over Diba": "Het team, de reviews en de apparatuur",
+};
+
+function ChevronRechts({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 12 12"
+      className={`h-3.5 w-3.5 shrink-0 ${className}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M4.5 2.5 8 6l-3.5 3.5" />
+    </svg>
+  );
+}
+
+/**
+ * Het mobiele menu: twee lagen in plaats van uitklaplijsten.
+ *
+ * De eerste laag is de keuze: vier grote items met een zin eronder. Wie op Huidproblemen
+ * of Behandelingen tikt, schuift door naar een tweede laag met de groepen en per link de
+ * regel die ook op desktop onder de link staat. Terug met één tik. Dat is hoe een telefoon
+ * navigeert, en het houdt de eerste laag rustig: geen lijst van dertig regels die zich
+ * onder een kop uitrolt.
+ *
+ * De knop "Afspraak maken" staat onder beide lagen vast; bellen en appen staan onderaan
+ * de eerste laag, want dat is waar je ze zoekt als je het menu opent.
+ */
 function MobielPaneel({ onSluit }: { onSluit: () => void }) {
   const status = vandaagOpen();
+  const [sub, setSub] = useState<string | null>(null);
+  const actief = sub
+    ? (HOOFDNAV.find((n) => n.label === sub && n.kolommen) ?? null)
+    : null;
+
+  const rij =
+    "flex min-h-14 items-center justify-between gap-4 py-2 text-left active:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
 
   return (
     <div className="fixed inset-0 z-[60] flex flex-col bg-white lg:hidden">
-      <div className="flex shrink-0 items-center justify-between px-5 pt-5 pb-4">
-        <DibaLogo />
+      <div className="flex h-[72px] shrink-0 items-center justify-between px-5">
+        {actief ? (
+          <button
+            type="button"
+            onClick={() => setSub(null)}
+            className="diba-label -ml-2 flex h-11 items-center gap-1.5 rounded-[var(--r-pill)] px-2 text-[var(--t-strong)] active:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+          >
+            <ChevronRechts className="rotate-180" />
+            Terug
+          </button>
+        ) : (
+          <DibaLogo />
+        )}
         <button
           type="button"
           onClick={onSluit}
@@ -627,149 +686,214 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
         </button>
       </div>
 
-      <nav
-        aria-label="Hoofdnavigatie"
-        className="flex min-h-0 flex-1 flex-col overflow-y-auto px-5"
-      >
-        {/* De drie hoofditems, groot en zonder kader. Eén haarlijn tussen de items en
-            verder niets: de hiërarchie komt van de maat en de ruimte, niet van omlijning.
-            Het cijfer erachter zegt hoeveel er onder zit, zodat je weet dat er iets
-            achter zit voordat je tikt. */}
-        <ul className="divide-y divide-[var(--g-100)] border-b border-[var(--g-100)]">
-          {HOOFDNAV.map((item) => {
-            const aantal = (item.kolommen ?? []).reduce(
-              (n, k) => n + k.items.length,
-              0,
-            );
-            return item.kolommen ? (
-              <li key={item.label}>
-                <details className="group">
-                  <summary className="flex min-h-[68px] cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
-                    <span className="flex items-baseline gap-3">
-                      <span className="text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]">
-                        {item.label}
-                      </span>
-                      <span className="text-[13px] leading-none text-[var(--t-muted)] tabular-nums">
-                        {aantal}
-                      </span>
+      <div className="relative min-h-0 flex-1 overflow-hidden">
+        {/* ── Laag 1: de keuze ── */}
+        <nav
+          aria-label="Hoofdnavigatie"
+          aria-hidden={actief ? true : undefined}
+          className={`absolute inset-0 flex flex-col overflow-y-auto px-5 transition-[transform,opacity] duration-300 [transition-timing-function:var(--ease-diba)] ${
+            actief
+              ? "pointer-events-none -translate-x-6 opacity-0"
+              : "translate-x-0 opacity-100"
+          }`}
+        >
+          <ul className="divide-y divide-[var(--g-100)] border-b border-[var(--g-100)]">
+            {HOOFDNAV.map((item) => {
+              const onderzin = ONDERZIN[item.label];
+              const inhoud = (
+                <>
+                  <span className="min-w-0">
+                    <span className="block text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]">
+                      {item.label}
                     </span>
-                    <svg
-                      viewBox="0 0 12 12"
-                      className="h-3.5 w-3.5 shrink-0 text-[var(--g-700)] transition-transform duration-300 [transition-timing-function:var(--ease-diba)] group-open:rotate-180"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
+                    {onderzin ? (
+                      <span className="mt-2 block text-[14px] leading-5 text-[var(--t-muted)]">
+                        {onderzin}
+                      </span>
+                    ) : null}
+                  </span>
+                  <ChevronRechts className="text-[var(--g-500)]" />
+                </>
+              );
+              return (
+                <li key={item.label}>
+                  {item.kolommen ? (
+                    <button
+                      type="button"
+                      onClick={() => setSub(item.label)}
+                      className={`${rij} min-h-[84px] w-full`}
                     >
-                      <path d="M2.5 4.5 6 8l3.5-3.5" />
-                    </svg>
-                  </summary>
-
-                  <div className="pb-5">
-                    {item.kolommen.map((kolom) => (
-                      <div key={kolom.kop} className="mt-4 first:mt-1">
-                        <p className="diba-label text-[var(--t-muted)]">
-                          {kolom.kop}
-                        </p>
-                        <ul className="mt-1">
-                          {kolom.items.map((l) => (
-                            <li key={l.href}>
-                              <Link
-                                prefetch={false}
-                                href={l.href}
-                                onClick={onSluit}
-                                className="-mx-2 flex min-h-11 items-center rounded-[var(--r-sm)] px-2 text-[16px] leading-6 text-[var(--t-strong)] active:bg-[var(--g-050)]"
-                              >
-                                {l.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-
+                      {inhoud}
+                    </button>
+                  ) : (
                     <Link
                       prefetch={false}
                       href={item.href}
                       onClick={onSluit}
-                      className="-mx-2 mt-4 flex min-h-11 items-center gap-1.5 rounded-[var(--r-sm)] px-2 text-[15px] leading-6 text-[var(--g-700)] underline underline-offset-4 active:bg-[var(--g-050)]"
+                      className={`${rij} min-h-[84px]`}
                     >
-                      Alles onder {item.label.toLowerCase()}
-                      <span aria-hidden="true">›</span>
+                      {inhoud}
                     </Link>
-                  </div>
-                </details>
-              </li>
-            ) : (
-              <li key={item.label}>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+
+          {/* Secundair, dus klein. */}
+          <ul className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
+            {SNEL.map((l) => (
+              <li key={l.href}>
                 <Link
                   prefetch={false}
-                  href={item.href}
+                  href={l.href}
                   onClick={onSluit}
-                  className="flex min-h-[68px] items-center text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]"
+                  className="inline-block py-1 text-[15px] leading-6 text-[var(--t-body)] underline decoration-[var(--g-200)] underline-offset-4 active:text-[var(--g-700)]"
                 >
-                  {item.label}
+                  {l.label}
                 </Link>
               </li>
-            );
-          })}
-        </ul>
+            ))}
+          </ul>
 
-        {/* Secundair, dus ook klein. Dit stond in vier omlijnde vakjes en dat gaf het
-            evenveel gewicht als het hoofdmenu erboven. */}
-        <ul className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
-          {SNEL.map((l) => (
-            <li key={l.href}>
-              <Link
-                prefetch={false}
-                href={l.href}
-                onClick={onSluit}
-                className="text-[15px] leading-6 text-[var(--t-body)] underline decoration-[var(--g-200)] underline-offset-4 active:text-[var(--g-700)]"
+          {/* Bellen en appen, onderaan. Op een telefoon is dat de reden dat iemand dit
+              menu opent. */}
+          <div className="mt-auto pt-8 pb-6">
+            <p className="flex items-center gap-2 text-[13px] leading-5 text-[var(--t-muted)]">
+              <span
+                aria-hidden="true"
+                className={`h-1.5 w-1.5 rounded-full ${
+                  status.startsWith("Nu open")
+                    ? "bg-[var(--g-700)]"
+                    : "bg-[var(--g-200)]"
+                }`}
+              />
+              {status}
+            </p>
+            <div className="mt-3 grid grid-cols-2 gap-3">
+              <a
+                href={DIBA_TELEFOON_HREF}
+                className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
               >
-                {l.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        {/* Bellen en appen, onderaan het paneel. Op een telefoon is dat de reden dat
-            iemand dit menu opent. */}
-        <div className="mt-auto pt-8 pb-6">
-          <p className="flex items-center gap-2 text-[13px] leading-5 text-[var(--t-muted)]">
-            <span
-              aria-hidden="true"
-              className={`h-1.5 w-1.5 rounded-full ${
-                status.startsWith("Nu open")
-                  ? "bg-[var(--g-700)]"
-                  : "bg-[var(--g-200)]"
-              }`}
-            />
-            {status}
-          </p>
-          <div className="mt-3 grid grid-cols-2 gap-3">
-            <a
-              href={DIBA_TELEFOON_HREF}
-              className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
-            >
-              <TelefoonIcoon />
-              Bellen
-            </a>
-            <a
-              href={DIBA_WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
-            >
-              <WhatsAppIcoon />
-              WhatsApp
-            </a>
+                <TelefoonIcoon />
+                Bellen
+              </a>
+              <a
+                href={DIBA_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
+              >
+                <WhatsAppIcoon />
+                WhatsApp
+              </a>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      <div className="shrink-0 px-5 pb-5">
+        {/* ── Laag 2: de groepen onder één item ── */}
+        {actief?.kolommen ? (
+          <nav
+            key={actief.label}
+            aria-label={actief.label}
+            className="absolute inset-0 flex flex-col overflow-y-auto px-5 pb-6 [animation:menu-in_.32s_var(--ease-diba)_both]"
+          >
+            <p className="text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]">
+              {actief.label}
+            </p>
+            {ONDERZIN[actief.label] ? (
+              <p className="mt-2 text-[14px] leading-5 text-[var(--t-muted)]">
+                {ONDERZIN[actief.label]}
+              </p>
+            ) : null}
+
+            {actief.kolommen.map((kolom) => (
+              <div key={kolom.kop} className="mt-7">
+                <p className="diba-label text-[var(--t-label)]">{kolom.kop}</p>
+                <ul className="mt-1 divide-y divide-[var(--g-100)]">
+                  {kolom.items.map((l) => (
+                    <li key={l.href}>
+                      {l.kopErboven ? (
+                        <p className="diba-label mt-4 mb-1 text-[var(--t-muted)]">
+                          {l.kopErboven}
+                        </p>
+                      ) : null}
+                      <Link
+                        prefetch={false}
+                        href={l.href}
+                        onClick={onSluit}
+                        className={`${rij} -mx-2 rounded-[var(--r-sm)] px-2`}
+                      >
+                        <span className="min-w-0">
+                          <span className="block text-[17px] leading-6 font-medium text-[var(--t-strong)]">
+                            {l.label}
+                          </span>
+                          {l.zin ? (
+                            <span className="mt-0.5 block text-[13px] leading-5 text-[var(--t-muted)]">
+                              {l.zin}
+                            </span>
+                          ) : null}
+                        </span>
+                        <ChevronRechts className="text-[var(--g-300)]" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+            <Link
+              prefetch={false}
+              href={actief.href}
+              onClick={onSluit}
+              className="diba-label mt-7 inline-flex min-h-12 w-fit items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-5 text-[var(--t-strong)] active:bg-[var(--g-050)]"
+            >
+              Alles onder {actief.label.toLowerCase()}
+              <Pijl />
+            </Link>
+
+            {/* Het uitgelichte vak van desktop, hier als kaart onderaan: een foto en één
+                ingang. Wie zover scrolt, is aan het kijken en krijgt iets om op te tikken. */}
+            {actief.uitgelicht ? (
+              <div className="mt-8 overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-050)]">
+                {actief.uitgelicht.foto ? (
+                  <div className="relative aspect-[16/9]">
+                    <Image
+                      src={actief.uitgelicht.foto.src}
+                      alt={actief.uitgelicht.foto.alt}
+                      fill
+                      sizes="100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ) : null}
+                <div className="p-6">
+                  <p className="diba-label text-[var(--t-label)]">
+                    {actief.uitgelicht.label}
+                  </p>
+                  <p className="diba-card-title mt-2 text-[var(--t-strong)]">
+                    {actief.uitgelicht.kop}
+                  </p>
+                  <p className="mt-2 text-[14px] leading-6 text-[var(--t-body)]">
+                    {actief.uitgelicht.zin}
+                  </p>
+                  <Link
+                    prefetch={false}
+                    href={actief.uitgelicht.href}
+                    onClick={onSluit}
+                    className="diba-label mt-5 inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white active:bg-[var(--g-800)]"
+                  >
+                    {actief.uitgelicht.knop}
+                    <Pijl />
+                  </Link>
+                </div>
+              </div>
+            ) : null}
+          </nav>
+        ) : null}
+      </div>
+
+      <div className="shrink-0 border-t border-[var(--g-100)] px-5 pt-3 pb-[calc(1.25rem+env(safe-area-inset-bottom))]">
         <Link
           href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
           onClick={onSluit}

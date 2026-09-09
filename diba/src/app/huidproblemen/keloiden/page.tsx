@@ -27,6 +27,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Keloiden — sinds vandaag weer een eigen pagina.
@@ -72,7 +73,7 @@ export default function KeloidenPage() {
 
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -97,27 +98,36 @@ export default function KeloidenPage() {
               we met microneedling en laser. Daarmee wordt het vlakker en minder
               rood.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Groeit het over de wondrand heen, dan is het een keloid en loopt
+                de behandeling via je arts. Wij beoordelen mee en stemmen af,
+                want een te stevige prikkel maakt een keloid groter.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Groeit het over de wondrand heen, dan is het een keloid en loopt
-              de behandeling via je arts. Wij beoordelen mee en stemmen af, want
-              een te stevige prikkel maakt een keloid groter.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="/intake">Plan een huidconsult</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="/intake"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Plan consult"
+              >
+                Plan een huidconsult
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               /* Yasin, 7 september 2026: de Fotona, want dat is het apparaat waarmee
                  keloïden hier behandeld worden. */
@@ -138,7 +148,7 @@ export default function KeloidenPage() {
 
       <section
         id="consult"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -150,7 +160,7 @@ export default function KeloidenPage() {
             intro="Het verschil tussen een keloid en een verdikt litteken zie je aan drie dingen. Die bepalen ook wie de behandeling doet."
           />
 
-          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+          <ol className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-3">
             {KELOID_BEOORDELING.map((stap) => (
               <li
                 key={stap.kop}
@@ -170,7 +180,7 @@ export default function KeloidenPage() {
 
       <section
         id="soorten"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -180,7 +190,7 @@ export default function KeloidenPage() {
             intro="Ze lijken op elkaar en vragen een andere route. Het verschil zit in de vraag of het weefsel binnen de oorspronkelijke wond blijft."
           />
 
-          <ul className="mt-12 grid gap-4 lg:grid-cols-2">
+          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2">
             {KELOID_SOORTEN.map((s) => (
               <li
                 key={s.id}

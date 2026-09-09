@@ -9,6 +9,7 @@ import { GRENZEN, KOELING } from "@/data/gentlemax";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * GentleMax Pro.
@@ -59,7 +60,7 @@ export default function GentleMaxProPage() {
 
       {/* ── Hero: de vraag ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -109,7 +110,7 @@ export default function GentleMaxProPage() {
       </section>
 
       {/* ── De signatuur: het golflengtevenster ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>755 of 1064 nanometer</Label>
@@ -129,7 +130,7 @@ export default function GentleMaxProPage() {
       </section>
 
       {/* ── De koeling ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Het derde onderdeel</Label>
@@ -143,9 +144,11 @@ export default function GentleMaxProPage() {
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               {KOELING.zin}
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              {KOELING.detail}
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                {KOELING.detail}
+              </p>
+            </LeesVerder>
             <div className="mt-8 rounded-[var(--r-lg)] bg-white p-7 sm:p-8">
               <p className="diba-label text-[var(--t-label)]">
                 Wat je gaat voelen
@@ -162,7 +165,7 @@ export default function GentleMaxProPage() {
       </section>
 
       {/* ── De grenzen ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -178,7 +181,7 @@ export default function GentleMaxProPage() {
               </p>
             </div>
 
-            <ul className="mt-12 grid gap-4 md:grid-cols-2">
+            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2">
               {GRENZEN.map((g) => (
                 <li
                   key={g.kop}
@@ -220,7 +223,7 @@ export default function GentleMaxProPage() {
       </section>
 
       {/* ── Door naar de behandeling ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>En dan de praktijk</Label>

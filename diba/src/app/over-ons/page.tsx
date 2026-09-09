@@ -15,6 +15,7 @@ import {
   DIBA_SITE,
   DIBA_SITE_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Over ons.
@@ -109,7 +110,7 @@ export default function OverOnsPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -134,11 +135,14 @@ export default function OverOnsPage() {
               {BEHANDELINGEN.length} behandelingen waarvan de prijzen allemaal
               openbaar zijn.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Onze huidtherapeuten zijn lid van de NVH en staan ingeschreven in
-              het Kwaliteitsregister Paramedici; onze schoonheidsspecialisten
-              zijn aangesloten bij ANBOS en staan in het SKIN Register.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                Onze huidtherapeuten zijn lid van de NVH en staan ingeschreven
+                in het Kwaliteitsregister Paramedici; onze
+                schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in
+                het SKIN Register.
+              </p>
+            </LeesVerder>
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
@@ -172,7 +176,7 @@ export default function OverOnsPage() {
       </section>
 
       {/* ── De signatuur: wat de cijfers niet zeggen ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -187,7 +191,7 @@ export default function OverOnsPage() {
               </p>
             </div>
 
-            <ul className="mt-12 grid gap-4 md:grid-cols-2">
+            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2">
               {CIJFERS.map((c) => (
                 <li
                   key={c.label}
@@ -228,7 +232,7 @@ export default function OverOnsPage() {
       {/* Het einde van een afspraak, en daarmee van deze pagina: iemand die met haar
           tas de deur uit loopt. De rest van de site gaat over wat er binnen gebeurt; dit
           is het enige beeld waarop iemand weer weggaat. */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/behandelkamer-overzicht.jpg"
@@ -240,7 +244,7 @@ export default function OverOnsPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Wat er in huis is</Label>
@@ -255,7 +259,7 @@ export default function OverOnsPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-3">
             {[
               {
                 getal: String(APPARATUUR.length),
@@ -304,7 +308,7 @@ export default function OverOnsPage() {
       </section>
 
       {/* ── Doorverwijzing naar het verhaal ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Waarom zo</Label>

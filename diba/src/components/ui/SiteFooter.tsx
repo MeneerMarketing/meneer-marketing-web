@@ -8,6 +8,8 @@ import {
   DIBA_TELEFOON_HREF,
 } from "@/lib/site";
 import { figmaInnerContainer } from "@/lib/figma-inner-layout";
+import VoetKolommen from "@/components/ui/VoetKolommen";
+import Logostrook from "@/components/ui/Logostrook";
 
 export type SiteFooterProps = {
   instagramHref?: string;
@@ -43,7 +45,7 @@ const kolomLabel =
   "text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-label)]";
 
 const kolomLink =
-  "text-[13px] leading-6 text-[var(--t-body)] transition hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
+  "inline-block text-[13px] leading-6 text-[var(--t-body)] transition hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
 
 const balkLink =
   "text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)] transition hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
@@ -139,29 +141,18 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
             </p>
           </div>
 
-          <nav
-            aria-label="Voettekst"
-            className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4"
-          >
-            {KOLOMMEN.map((kolom) => (
-              <div key={kolom.kop}>
-                <h2 className={kolomLabel}>{kolom.kop}</h2>
-                <ul className="mt-5 space-y-2.5">
-                  {kolom.links.map((l) => (
-                    <li key={l.href}>
-                      <Link
-                        prefetch={false}
-                        href={l.href}
-                        className={kolomLink}
-                      >
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </nav>
+          <VoetKolommen
+            kolommen={KOLOMMEN}
+            kopKlasse={kolomLabel}
+            linkKlasse={kolomLink}
+          />
+        </div>
+
+        {/* De registers en verenigingen, met logo. Onder de kolommen en boven het adres:
+            het is geen navigatie, maar wel iets wat je onderaan een zorgsite zoekt. */}
+        <div className="mt-12 border-t border-[var(--g-100)] pt-8">
+          <p className={kolomLabel}>Aangesloten bij en geregistreerd in</p>
+          <Logostrook className="mt-5" />
         </div>
 
         {/* De onderste balk. Adres en telefoon staan hier en niet in een kolom: het zijn

@@ -6,6 +6,7 @@ import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * PCOS en de huid.
@@ -60,7 +61,7 @@ export default function PcosPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -107,7 +108,7 @@ export default function PcosPage() {
       {/* ── De taakverdeling ── */}
       {/* Bij PCOS begint het zelden met een behandeling en bijna altijd met uitzoeken wat er
           van binnenuit meespeelt. Een gesprek dus, en geen apparaat. */}
-      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
+      <section className="px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/gesprek-in-de-kamer.jpg"
@@ -119,7 +120,7 @@ export default function PcosPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Drie kolommen</Label>
@@ -132,7 +133,7 @@ export default function PcosPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-3">
+          <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-3">
             {PCOS_VERDELING.map((k) => (
               <li
                 key={k.wie}
@@ -162,7 +163,7 @@ export default function PcosPage() {
       </section>
 
       {/* ── Per klacht ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Vier huidklachten</Label>
@@ -226,7 +227,7 @@ export default function PcosPage() {
       </section>
 
       {/* ── Eerst naar de arts ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
@@ -268,7 +269,7 @@ export default function PcosPage() {
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Als je toch wil beginnen</Label>
@@ -285,11 +286,13 @@ export default function PcosPage() {
               is later niet te zien of iets werkte of dat het gewoon een rustige
               maand was.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij
-              de intake. Niet omdat wij daar iets mee doen, maar omdat het
-              uitmaakt voor wat wij op welk moment aanraden.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij
+                de intake. Niet omdat wij daar iets mee doen, maar omdat het
+                uitmaakt voor wat wij op welk moment aanraden.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href="/intake"

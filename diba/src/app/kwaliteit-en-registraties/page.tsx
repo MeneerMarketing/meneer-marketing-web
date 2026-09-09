@@ -40,6 +40,7 @@ export const metadata: Metadata = zoekmachineVelden({
 const BEVESTIGD = [
   {
     naam: "Nederlandse Vereniging van Huidtherapeuten",
+    logo: "/images/logos/nvh-tekst.png",
     wie: "Onze huidtherapeuten",
     wat: "De beroepsvereniging van huidtherapeuten. Wie lid is, moet geregistreerd staan in het Kwaliteitsregister Paramedici; het een kan niet zonder het ander.",
     waarom:
@@ -48,6 +49,7 @@ const BEVESTIGD = [
   },
   {
     naam: "Kwaliteitsregister Paramedici",
+    logo: "/images/logos/kwaliteitsregister-paramedici.svg",
     wie: "Onze huidtherapeuten",
     wat: "Het register is vrijwillig en de drempel is echt: opnieuw registreren elke vijf jaar, en daarvoor minstens 1600 werkuren over minimaal 36 maanden aantonen plus 160 punten bijscholing.",
     waarom:
@@ -56,6 +58,7 @@ const BEVESTIGD = [
   },
   {
     naam: "ANBOS",
+    logo: "/images/logos/anbos.png",
     wie: "De kliniek en onze schoonheidsspecialisten",
     wat: "De brancheorganisatie voor schoonheidsspecialisten. Aangesloten salons werken volgens de gedragscode en de hygiënerichtlijnen van de branche, en vallen onder de ANBOS-klachtenregeling.",
     waarom:
@@ -64,6 +67,7 @@ const BEVESTIGD = [
   },
   {
     naam: "SKIN Register",
+    logo: "/images/logos/skin-register.svg",
     wie: "Onze schoonheidsspecialisten",
     wat: "Het kwaliteitsregister voor schoonheidsspecialisten. Het registreert mensen, geen salons: elke schoonheidsspecialist staat er op eigen naam in.",
     waarom:
@@ -72,6 +76,7 @@ const BEVESTIGD = [
   },
   {
     naam: "Gecontracteerd bij alle zorgverzekeraars",
+    logo: null,
     wie: "De kliniek",
     wat: "Er is een contract met alle Nederlandse zorgverzekeraars. Dat betekent niet dat alles vergoed wordt: wat je terugkrijgt hangt af van je aanvullende polis en van de indicatie.",
     waarom:
@@ -84,6 +89,7 @@ const BEVESTIGD = [
        omdat wij er niets aan kunnen veranderen. Het cijfer komt uit `site.ts`, zodat het
        niet naast de hero van de homepage uit de pas loopt. */
     naam: "ZorgkaartNederland",
+    logo: "/images/logos/zorgkaart-nederland.svg",
     wie: "De kliniek",
     wat: "De onafhankelijke waarderingssite van Patiëntenfederatie Nederland. Patiënten beoordelen er zorgaanbieders; wij kunnen die waarderingen niet plaatsen, aanpassen of weghalen.",
     waarom: `Een oordeel dat niet via ons loopt zegt meer dan een oordeel dat dat wel doet. Wij staan er met een ${DIBA_ZORGKAART.score
@@ -140,7 +146,7 @@ export default function KwaliteitPage() {
       />
 
       {/* ── Hero ── */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-8 sm:pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <nav
           aria-label="Kruimelpad"
           className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -178,20 +184,33 @@ export default function KwaliteitPage() {
       </section>
 
       {/* ── De registraties ── */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Aangesloten bij</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
             Zes dingen <span className="diba-accent">die je kunt nakijken</span>
           </h2>
 
-          <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:items-start">
+          <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:items-start">
             {BEVESTIGD.map((r) => (
               <li
                 key={r.naam}
                 className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
               >
                 <Label>{r.wie}</Label>
+                {/* Het logo van het register, als het er een heeft (Yasin, 9 september
+                    2026). Decoratief: de naam staat eronder als tekst. `self-start`, want
+                    in een flex-kolom wordt een img anders over de volle breedte gerekt:
+                    een PNG vervormt dan en een SVG gaat in het midden staan. */}
+                {r.logo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={r.logo}
+                    alt=""
+                    className="mt-4 h-10 w-auto self-start"
+                    loading="lazy"
+                  />
+                ) : null}
                 <p className="diba-card-title mt-3 min-h-[2lh] text-[var(--t-strong)]">
                   {r.naam}
                 </p>
@@ -230,7 +249,7 @@ export default function KwaliteitPage() {
           Rojda's onderscheid, want dat is precies wat mensen door elkaar halen: een
           huidtherapeut en een schoonheidsspecialist zijn twee vakken met elk hun eigen
           vereniging en hun eigen register. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Twee vakken</Label>
@@ -270,7 +289,7 @@ export default function KwaliteitPage() {
       {/* ── Klachten ── */}
       <section
         id="klachten"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
@@ -330,7 +349,7 @@ export default function KwaliteitPage() {
       </section>
 
       {/* ── Geen logo's ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 sm:p-10">
           <Label>Waarom hier geen logo&apos;s staan</Label>
           <p className="diba-card-title mt-3 text-[var(--t-strong)]">

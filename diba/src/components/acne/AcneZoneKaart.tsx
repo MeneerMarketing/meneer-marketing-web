@@ -47,11 +47,14 @@ import { RASTER_SECTIE } from "@/lib/raster";
  * Waar elke zone in het raster staat.
  *
  * Drie kolommen. Voorhoofd en kin lopen over de volle breedte omdat ze dat op een gezicht
- * ook doen; de middelste band heeft er drie naast elkaar. `rug` staat er niet in: die
- * krijgt een eigen plek onder een tussenkopje, want hij ligt buiten het gezicht en dat is
- * precies het onderscheid dat de oude tekening niet kon maken.
+ * ook doen; de middelste band heeft er drie naast elkaar. De zones buiten het gezicht
+ * (rug en schouders, decolleté en borst) staan er niet in: die krijgen een eigen plek
+ * onder een tussenkopje, want dat is precies het onderscheid dat de oude tekening niet
+ * kon maken.
  */
-const RASTER: Record<Exclude<ZoneId, "rug">, string> = {
+type GezichtZone = Exclude<ZoneId, "rug" | "borst">;
+
+const RASTER: Record<GezichtZone, string> = {
   voorhoofd: "col-span-3",
   wangen: "col-span-1",
   neus: "col-span-1",
@@ -60,7 +63,7 @@ const RASTER: Record<Exclude<ZoneId, "rug">, string> = {
 };
 
 /** De volgorde in het raster, van boven naar beneden zoals op een gezicht. */
-const RASTER_VOLGORDE: readonly Exclude<ZoneId, "rug">[] = [
+const RASTER_VOLGORDE: readonly GezichtZone[] = [
   "voorhoofd",
   "wangen",
   "neus",
@@ -124,38 +127,39 @@ export default function AcneZoneKaart() {
             })}
           </div>
 
-          {/* Rug en schouders liggen buiten het gezicht. In de oude tekening pasten ze
-              nergens en stonden ze alleen als losse chip; hier krijgen ze hun eigen plek
-              met de reden erbij. */}
-          {(() => {
-            const rug = ACNE_ZONES.find((z) => z.buitenGezicht);
-            if (!rug) return null;
-            const aan = actief(rug.id);
-            return (
-              <div className="mt-5">
-                <p className="diba-label text-[var(--t-label)]">
-                  Buiten het gezicht
-                </p>
-                <button
-                  type="button"
-                  role="checkbox"
-                  aria-checked={aan}
-                  onClick={() => wissel(rug.id)}
-                  onMouseEnter={() => setZweeft(rug.id)}
-                  onMouseLeave={() => setZweeft(null)}
-                  onFocus={() => setZweeft(rug.id)}
-                  onBlur={() => setZweeft(null)}
-                  className={`mt-3 flex min-h-16 w-full items-center justify-center rounded-[var(--r-md)] px-3 py-4 text-center text-[15px] leading-5 font-medium transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
-                    aan
-                      ? "bg-[var(--g-700)] text-white"
-                      : "bg-[var(--g-050)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
-                  }`}
-                >
-                  {rug.naam}
-                </button>
-              </div>
-            );
-          })()}
+          {/* Rug en schouders, en decolleté en borst liggen buiten het gezicht. In de oude
+              tekening pasten ze nergens; hier krijgen ze hun eigen plek met de reden erbij.
+              Griss, 8 september 2026: de borst erbij, dus twee tegels naast elkaar. */}
+          <div className="mt-5">
+            <p className="diba-label text-[var(--t-label)]">
+              Buiten het gezicht
+            </p>
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              {ACNE_ZONES.filter((z) => z.buitenGezicht).map((zone) => {
+                const aan = actief(zone.id);
+                return (
+                  <button
+                    key={zone.id}
+                    type="button"
+                    role="checkbox"
+                    aria-checked={aan}
+                    onClick={() => wissel(zone.id)}
+                    onMouseEnter={() => setZweeft(zone.id)}
+                    onMouseLeave={() => setZweeft(null)}
+                    onFocus={() => setZweeft(zone.id)}
+                    onBlur={() => setZweeft(null)}
+                    className={`flex min-h-16 items-center justify-center rounded-[var(--r-md)] px-3 py-4 text-center text-[15px] leading-5 font-medium transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+                      aan
+                        ? "bg-[var(--g-700)] text-white"
+                        : "bg-[var(--g-050)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
+                    }`}
+                  >
+                    {zone.naam}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
           {/* Wat de zone waar je op staat op zichzelf betekent. Vaste hoogte, zodat het
               raster niet verspringt zodra je erlangs beweegt. */}
@@ -191,7 +195,7 @@ export default function AcneZoneKaart() {
           <Label>
             {gekozen.length === 0
               ? "Nog niets gekozen"
-              : `${gekozen.length} van 6 zones`}
+              : `${gekozen.length} van ${ACNE_ZONES.length} zones`}
           </Label>
           {gekozen.length > 0 ? (
             <button

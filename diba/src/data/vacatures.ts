@@ -77,7 +77,7 @@ export const VACATURES: readonly Vacature[] = [
     paginaTitel: { kop: "Vacature huidtherapeut", accent: "in Rotterdam" },
     tabTitel: "Vacature huidtherapeut Rotterdam",
     omschrijving:
-      "Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen en peelings, in een team van acht. Parttime of fulltime.",
+      "Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen, Dermapen 4 en peelings, in een team van acht. Parttime of fulltime.",
     intro: [
       "Diba Clinics is een huidkliniek in Rotterdam-Noord. We behandelen acne, pigment, littekens, huidverbetering en ongewenste haargroei, en we werken sinds 2017 met een vast team van acht.",
       "We zoeken een huidtherapeut die zelfstandig een spreekuur draait: meten, een behandelplan opstellen en dat plan zelf uitvoeren op de apparatuur die er staat.",

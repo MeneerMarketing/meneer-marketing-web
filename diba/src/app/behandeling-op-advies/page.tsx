@@ -7,6 +7,7 @@ import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import { breadcrumbSchema, faqSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SALONIZED_BOOKING_URL, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Behandeling op advies.
@@ -136,7 +137,7 @@ export default function BehandelingOpAdviesPage() {
       <SchemaMarkup data={faqSchema(FAQ)} />
 
       {/* ── Hero ── */}
-      <section className="mx-auto px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="mx-auto px-5 pt-8 sm:pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <nav
           aria-label="Kruimelpad"
           className="diba-label flex flex-wrap gap-2"
@@ -164,12 +165,14 @@ export default function BehandelingOpAdviesPage() {
               peeling, een laserbehandeling, microneedling of iets anders bij
               past. Dat hoef je niet zelf uit te zoeken.
             </p>
-            <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Vertel waar je last van hebt. De behandelaar bekijkt je huid,
-              bespreekt wat er mogelijk is en geeft een duidelijk advies. Pas
-              als je weet wélke behandeling wordt voorgesteld, waarom en wat het
-              kost, beslis je of je hem laat uitvoeren.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
+                Vertel waar je last van hebt. De behandelaar bekijkt je huid,
+                bespreekt wat er mogelijk is en geeft een duidelijk advies. Pas
+                als je weet wélke behandeling wordt voorgesteld, waarom en wat
+                het kost, beslis je of je hem laat uitvoeren.
+              </p>
+            </LeesVerder>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
@@ -206,7 +209,7 @@ export default function BehandelingOpAdviesPage() {
           kwijt was voor een intake die hij niet nodig heeft; dat staat hier uit elkaar. */}
       <section
         id="routes"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
         <div className="mx-auto">
           <Label>Kies de afspraak die bij jou past</Label>
@@ -215,7 +218,7 @@ export default function BehandelingOpAdviesPage() {
             <span className="diba-accent">en ze kosten niet hetzelfde</span>
           </h2>
 
-          <div className="mt-12 grid gap-4 lg:grid-cols-2 lg:items-start">
+          <div className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:items-start">
             {/* Nieuw */}
             <div className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-8 sm:p-10">
               <Label>Ik ben nieuw bij Diba</Label>
@@ -317,7 +320,7 @@ export default function BehandelingOpAdviesPage() {
       </section>
 
       {/* ── Waarover ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <div>
             <Label>Waar kun je advies over vragen</Label>
@@ -355,7 +358,7 @@ export default function BehandelingOpAdviesPage() {
       </section>
 
       {/* ── Verloop ── */}
-      <section className="bg-white px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-white px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Zo verloopt je afspraak</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -363,7 +366,7 @@ export default function BehandelingOpAdviesPage() {
             <span className="diba-accent">en jij beslist bij de laatste</span>
           </h2>
 
-          <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {STAPPEN.map((s, i) => (
               <li
                 key={s.kop}
@@ -385,7 +388,7 @@ export default function BehandelingOpAdviesPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
             <Label>Veelgestelde vragen</Label>
@@ -398,7 +401,7 @@ export default function BehandelingOpAdviesPage() {
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Beginnen</Label>

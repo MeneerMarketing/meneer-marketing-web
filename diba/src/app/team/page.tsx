@@ -14,6 +14,7 @@ import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De teampagina.
@@ -73,7 +74,7 @@ export default function TeamPage() {
 
       {/* ── Hero: de belofte van de apparatuurpagina's, hier ingelost ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -139,7 +140,7 @@ export default function TeamPage() {
       </section>
 
       {/* ── De signatuur: welke titel is beschermd ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
@@ -192,14 +193,17 @@ export default function TeamPage() {
       </section>
 
       {/* ── De mensen, per vak ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto space-y-14">
           {perVak.map((v) => (
             <div key={v.id}>
               <Label>
                 {v.label} · {v.leden.length}
               </Label>
-              <ul className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+              {/* Op een telefoon twee portretten naast elkaar en de bio pas vanaf sm: acht
+                  kaarten van een heel scherm onder elkaar was zeven schermen scrollen voor
+                  een lijst met namen (Yasin, 9 september 2026: mobiel korter). */}
+              <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-4">
                 {v.leden.map((lid) => (
                   /* De kaart zelf heeft geen padding meer: het portret vult de bovenkant
                      tot alle drie de randen, en de tekst zit in een eigen blok eronder. Een
@@ -244,7 +248,7 @@ export default function TeamPage() {
                       </div>
                     )}
 
-                    <div className="p-6 sm:p-7">
+                    <div className="p-4 sm:p-7">
                       <p className="diba-card-title text-[var(--t-strong)] transition-colors duration-500 group-hover:text-[var(--g-700)]">
                         {lid.naam}
                       </p>
@@ -255,7 +259,7 @@ export default function TeamPage() {
                         {lid.functie}
                       </p>
                       {lid.bio ? (
-                        <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)]">
+                        <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)] max-sm:hidden">
                           {publicCopy(lid.bio)}
                         </p>
                       ) : null}
@@ -281,12 +285,15 @@ export default function TeamPage() {
                   Huidtherapeuten kunnen zich inschrijven in het{" "}
                   {KWALITEITSREGISTER.naam}. {KWALITEITSREGISTER.eisen}
                 </p>
-                <p className="mt-4 max-w-[58ch] text-[16px] leading-8 text-[var(--t-body)]">
-                  Het register is vrijwillig, dus inschrijving zegt iets en het
-                  ontbreken ervan zegt weinig. Wie van ons erin staat zetten we
-                  erbij zodra we dat per persoon hebben nagelopen; een claim
-                  daarover hoort gecontroleerd te zijn en niet aangenomen.
-                </p>
+                <LeesVerder>
+                  <p className="mt-4 max-w-[58ch] text-[16px] leading-8 text-[var(--t-body)]">
+                    Het register is vrijwillig, dus inschrijving zegt iets en
+                    het ontbreken ervan zegt weinig. Wie van ons erin staat
+                    zetten we erbij zodra we dat per persoon hebben nagelopen;
+                    een claim daarover hoort gecontroleerd te zijn en niet
+                    aangenomen.
+                  </p>
+                </LeesVerder>
                 <a
                   href={KWALITEITSREGISTER.url}
                   target="_blank"
@@ -309,7 +316,7 @@ export default function TeamPage() {
           op het behandelveld ("Behandeling bij Iris") en niet op de tekst van de review,
           want dan belandt een toevallige naamsvermelding bij de verkeerde persoon. */}
       {genoemd.length > 0 ? (
-        <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
             <div>
               <Label>Bij naam genoemd</Label>
@@ -325,7 +332,7 @@ export default function TeamPage() {
               </p>
             </div>
 
-            <ul className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {genoemd.map(({ lid, reviews }) => (
                 <li
                   key={lid.slug}
@@ -367,7 +374,7 @@ export default function TeamPage() {
       ) : null}
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Bij wie kom je terecht</Label>

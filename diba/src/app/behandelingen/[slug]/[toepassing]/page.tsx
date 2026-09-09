@@ -108,7 +108,7 @@ export default async function ToepassingPage({
       <SchemaMarkup data={faqSchema(faq)} />
 
       {/* ── Hero ── */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 pt-8 sm:pt-12 pb-10 sm:px-9 lg:px-[7.5vw] lg:pt-16">
         <nav
           aria-label="Kruimelpad"
           className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -163,7 +163,7 @@ export default async function ToepassingPage({
       </section>
 
       {/* ── Waarom dit werkt ── */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
             <Label>Het mechaniek</Label>
@@ -187,13 +187,13 @@ export default async function ToepassingPage({
       </section>
 
       {/* ── Wat er anders is aan de aanpak ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>De aanpak</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
             Wat hier <span className="diba-accent">anders gaat dan anders</span>
           </h2>
-          <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {t.instelling.map((s) => (
               <li
                 key={publicCopy(s.kop)}
@@ -219,7 +219,7 @@ export default async function ToepassingPage({
           Naast elkaar en even zwaar. Wat je ervan mag verwachten en wanneer het niet de
           juiste keuze is horen in één blik, want los van elkaar leest het eerste als een
           belofte en het tweede als een disclaimer. */}
-      <section className="bg-white px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-white px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
           <div>
             <Label>Wat je kunt verwachten</Label>
@@ -289,7 +289,7 @@ export default async function ToepassingPage({
 
       {/* ── FAQ ── */}
       {faq.length > 0 ? (
-        <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div>
               <Label>Veelgestelde vragen</Label>
@@ -304,7 +304,7 @@ export default async function ToepassingPage({
 
       {/* ── De buren ── */}
       {buren.length > 0 && b ? (
-        <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+        <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
           <div className="mx-auto">
             <Label>Hetzelfde apparaat, andere vraag</Label>
             <h2 className="diba-display-s mt-3 max-w-[24ch]">
@@ -333,7 +333,7 @@ export default async function ToepassingPage({
       ) : null}
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
+      <section className="px-5 pb-12 sm:pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>De eerste stap</Label>

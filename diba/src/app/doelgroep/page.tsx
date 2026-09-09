@@ -7,6 +7,7 @@ import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De hub voor de vier doelgroepen.
@@ -57,7 +58,7 @@ export default function DoelgroepHubPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -80,12 +81,14 @@ export default function DoelgroepHubPage() {
               Je leeftijd, huidtype, medicatie, hormonen en planning hebben
               invloed op wat verstandig en haalbaar is.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Daarom kijken we niet alleen naar wat er aan je huid te zien is,
-              maar bespreken we ook wat er bij jou meespeelt. Hieronder staan
-              vier situaties met bij elkaar {totaalAnders} punten waar we dan
-              extra op letten.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                Daarom kijken we niet alleen naar wat er aan je huid te zien is,
+                maar bespreken we ook wat er bij jou meespeelt. Hieronder staan
+                vier situaties met bij elkaar {totaalAnders} punten waar we dan
+                extra op letten.
+              </p>
+            </LeesVerder>
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
@@ -123,7 +126,7 @@ export default function DoelgroepHubPage() {
       {/* Hier stond de EVE-M met "Dezelfde meting, voor iedereen". Okan: dat klinkt alsof
           iedereen standaard door de scanner gaat en de scanner de behandeling bepaalt. Nu
           een behandelaar die de huid bekijkt, met een onderschrift dat zegt wie er kiest. */}
-      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
+      <section className="px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/eerlijk-advies-consult.jpg"
@@ -140,7 +143,7 @@ export default function DoelgroepHubPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <ul className="grid gap-4 md:grid-cols-2">
             {DOELGROEPEN.map((d) => (
@@ -187,7 +190,7 @@ export default function DoelgroepHubPage() {
           Het beloftekaartje in de hero noemt dit als derde punt van elke pagina, en het is
           het enige op deze hele hub waar iemand iets mee moet. Het stond vier klikken
           verderop. Hier staat het bij elkaar, want zo is het ook korter dan de uitleg. */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Bij het maken van de afspraak</Label>
@@ -210,7 +213,7 @@ export default function DoelgroepHubPage() {
               8 september 2026: "maak er echte blokjes van"). Nu een licht vlak per groep,
               even hoog, met onderaan de link naar de eigen pagina. Die link maakt de
               kaart ook nuttig: wie zich herkent, klikt door. */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {DOELGROEPEN.map((d) => (
               <div
                 key={d.slug}
@@ -229,9 +232,10 @@ export default function DoelgroepHubPage() {
                 </ul>
                 <Link
                   href={`/doelgroep/${d.slug}`}
-                  className="diba-label mt-auto inline-flex items-center gap-1.5 pt-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
+                  className="diba-label mt-auto inline-block pt-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
                 >
-                  Alles voor {d.meta.toLowerCase()}
+                  Voor {d.meta.toLowerCase()}
+                  {"\u00a0"}
                   <span aria-hidden="true">›</span>
                 </Link>
               </div>
@@ -247,7 +251,7 @@ export default function DoelgroepHubPage() {
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>En verder</Label>
@@ -262,11 +266,14 @@ export default function DoelgroepHubPage() {
               waarin we vaak ergens extra rekening mee houden. Uiteindelijk
               wordt iedere huid afzonderlijk beoordeeld.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Tijdens de intake luisteren we naar je hulpvraag, bekijken we je
-              huid en leggen we uit welke behandeling wel of niet passend is. Is
-              behandelen op dat moment niet verstandig, dan zeggen we dat ook.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Tijdens de intake luisteren we naar je hulpvraag, bekijken we je
+                huid en leggen we uit welke behandeling wel of niet passend is.
+                Is behandelen op dat moment niet verstandig, dan zeggen we dat
+                ook.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href="/intake"

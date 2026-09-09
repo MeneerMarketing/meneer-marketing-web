@@ -11,6 +11,7 @@ import {
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Algemene voorwaarden.
@@ -75,7 +76,7 @@ export default function VoorwaardenPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -100,10 +101,12 @@ export default function VoorwaardenPage() {
               niet verwachtte. Daarom staan hieronder situaties en geen
               artikelen.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Bij elke situatie staat wat het kost en waarom de regel er is. Dat
-              laatste is het verschil tussen een voorwaarde en een boete.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                Bij elke situatie staat wat het kost en waarom de regel er is.
+                Dat laatste is het verschil tussen een voorwaarde en een boete.
+              </p>
+            </LeesVerder>
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
@@ -122,7 +125,7 @@ export default function VoorwaardenPage() {
       </section>
 
       {/* ── De situaties ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Acht situaties</Label>
@@ -173,7 +176,7 @@ export default function VoorwaardenPage() {
       </section>
 
       {/* ── Wat altijd geldt ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -188,7 +191,7 @@ export default function VoorwaardenPage() {
               </p>
             </div>
 
-            <ul className="mt-12 grid gap-4 md:grid-cols-3">
+            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3">
               {VAST.map((v) => (
                 <li
                   key={v.kop}
@@ -206,7 +209,7 @@ export default function VoorwaardenPage() {
       </section>
 
       {/* ── Wat hier nog niet staat ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Eerlijk over de gaten</Label>
@@ -224,15 +227,18 @@ export default function VoorwaardenPage() {
               tenminste dat hij ontbreekt in plaats van dat je iets leest waar
               je niets aan heeft.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Ook de termijnen en bedragen op deze pagina zijn in deze versie
-              nog een voorstel. Wat er bij je afspraak is afgesproken en op je
-              bevestiging staat, gaat voor op wat hier staat.
-            </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Heb je een vraag over deze voorwaarden, stel hem dan gewoon.{" "}
-              {DIBA_NAP.name} is bereikbaar op {DIBA_TELEFOON} en via WhatsApp.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Ook de termijnen en bedragen op deze pagina zijn in deze versie
+                nog een voorstel. Wat er bij je afspraak is afgesproken en op je
+                bevestiging staat, gaat voor op wat hier staat.
+              </p>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Heb je een vraag over deze voorwaarden, stel hem dan gewoon.{" "}
+                {DIBA_NAP.name} is bereikbaar op {DIBA_TELEFOON} en via
+                WhatsApp.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <a
                 href={DIBA_TELEFOON_HREF}

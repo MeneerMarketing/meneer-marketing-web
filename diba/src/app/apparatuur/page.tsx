@@ -11,6 +11,7 @@ import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Het apparatuuroverzicht.
@@ -54,7 +55,7 @@ export default function ApparatuurPage() {
   );
 
   return (
-    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)] max-lg:flex max-lg:flex-col">
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: DIBA_SITE_URL },
@@ -66,7 +67,7 @@ export default function ApparatuurPage() {
           Donker, net als de hero's van home, /behandelingen en /tarieven (Yasin,
           7 september 2026). De mintcirkel en het blad rechtsboven zijn weg: die vulden de
           hoek zonder iets te zeggen, en Yasin vond ze niet mooi. */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] max-lg:-order-2">
         <div className="mx-auto grid gap-10 px-5 pt-12 pb-14 sm:px-9 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:px-[7.5vw] lg:pt-16 lg:pb-16">
           <div>
             <nav
@@ -91,12 +92,14 @@ export default function ApparatuurPage() {
               verschil maakt is wat er vooraf gemeten is en welke instelling
               daarbij hoort, en niet welk merk er op de kast staat.
             </p>
-            <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Het is andersom. Een apparaat is gereedschap. Wat telt is de
-              instelling, de hand die het vasthoudt en of het bij jouw huid
-              past. Daarom staat bij elk apparaat hieronder ook wat het níet
-              kan.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[56ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                Het is andersom. Een apparaat is gereedschap. Wat telt is de
+                instelling, de hand die het vasthoudt en of het bij jouw huid
+                past. Daarom staat bij elk apparaat hieronder ook wat het níet
+                kan.
+              </p>
+            </LeesVerder>
           </div>
 
           {/* De rechterkolom was leeg (Yasin, 7 september 2026: "zo leeg en niet leuk").
@@ -122,7 +125,7 @@ export default function ApparatuurPage() {
       {/* ── De stelling ──
           Licht, want de hero erboven is nu donker en twee donkere vlakken achter elkaar
           mag niet (§5). Het blok blijft een vlak, alleen in de zachte tint. */}
-      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-20">
+      <section className="px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12">
             <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16">
@@ -143,10 +146,12 @@ export default function ApparatuurPage() {
                   behandeling bij jou niet past. Een merknaam zegt daar niets
                   over.
                 </p>
-                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-                  Daarom begint elk traject hier met een meting en niet met een
-                  apparaat.
-                </p>
+                <LeesVerder>
+                  <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                    Daarom begint elk traject hier met een meting en niet met
+                    een apparaat.
+                  </p>
+                </LeesVerder>
                 <Link
                   href="/intake"
                   className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)]"
@@ -162,7 +167,7 @@ export default function ApparatuurPage() {
       {/* ── Alles op één schaal ── */}
       {/* Deze pagina beweert dat er twaalf apparaten staan. Een opname van een ervan in de
           kamer maakt dat controleerbaar in plaats van een opsomming. */}
-      <section className="px-5 pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/kliniek-nordlys-behandeling.jpg"
@@ -174,7 +179,7 @@ export default function ApparatuurPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Naast elkaar</Label>
@@ -198,7 +203,7 @@ export default function ApparatuurPage() {
       </section>
 
       {/* ── De apparaten ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24 max-lg:-order-1">
         <div className="mx-auto">
           <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {apparaten.map(({ apparaat: a, categorie }) => (
@@ -217,7 +222,7 @@ export default function ApparatuurPage() {
                       Waar nog geen foto is blijft het vlak mintgroen met het merkteken: geen
                       persfoto van de fabrikant erbij verzinnen. Een foto van een ander
                       exemplaar is erger dan geen foto. */}
-                  <span className="relative block aspect-[16/10] overflow-hidden bg-[var(--g-075)]">
+                  <span className="relative block aspect-[2/1] overflow-hidden bg-[var(--g-075)] md:aspect-[16/10]">
                     {a.foto ? (
                       <Image
                         src={a.foto.src}
@@ -251,7 +256,7 @@ export default function ApparatuurPage() {
                     <span className="diba-card-title mt-2 text-[var(--t-strong)]">
                       {a.naam}
                     </span>
-                    <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
+                    <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden">
                       {publicCopy(a.kort)}
                     </span>
                     <span className="mt-6 border-t border-[var(--g-100)] pt-4 text-[13px] leading-5 text-[var(--t-muted)]">
@@ -271,7 +276,7 @@ export default function ApparatuurPage() {
       {/* ── Verder ──
           Stond als losse tekst op het paginavlak, terwijl elke andere afsluiter op de site
           in een donkergroen blok met ronde hoeken staat. Nu ook hier. */}
-      <section className="px-5 pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
+      <section className="px-5 pb-12 sm:pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Verder</Label>

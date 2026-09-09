@@ -163,7 +163,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           een kolom van nog geen halve pagina en brak daardoor telkens af halverwege een
           zin die als geheel bedoeld is. */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="py-14 lg:py-20">
+        <div className="py-10 sm:py-14 lg:py-20">
           <nav
             aria-label="Kruimelpad"
             className="diba-label flex flex-wrap gap-2"
@@ -179,11 +179,11 @@ export default async function BehandelingPage({ params }: PageProps) {
             <span className="text-[var(--t-muted)]">{b.naam}</span>
           </nav>
 
-          <h1 className="diba-display-l mt-6 max-w-[21ch]">{b.naam}</h1>
+          <h1 className="diba-display-l mt-4 max-w-[21ch] sm:mt-6">{b.naam}</h1>
 
           {/* ── De rij: wat je ziet, naast wat je moet weten ── */}
           <div
-            className={`mt-8 grid gap-6 lg:items-stretch ${
+            className={`mt-6 grid gap-6 sm:mt-8 lg:items-stretch ${
               b.foto ? "lg:grid-cols-[1.08fr_0.92fr]" : ""
             }`}
           >
@@ -198,12 +198,12 @@ export default async function BehandelingPage({ params }: PageProps) {
                 }
                 priority
                 sizes="(min-width: 1024px) 52vw, 92vw"
-                className="aspect-[4/3] lg:aspect-auto lg:min-h-[520px]"
+                className="aspect-[16/10] sm:aspect-[4/3] lg:aspect-auto lg:min-h-[520px]"
               />
             ) : null}
 
             {/* De getallen die het verschil maken, meteen in beeld. */}
-            <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
+            <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-700)] p-6 text-[var(--on-dark)] sm:p-10">
               <Label opDonker>In het kort</Label>
               {/* Vier regels op een eigen vlak in plaats van achter een haarlijn: de
                   huisregel is vullingen, en op --g-800 haalt de tekst 7,57 tegen 4,08 op
@@ -228,12 +228,14 @@ export default async function BehandelingPage({ params }: PageProps) {
                   .map(([kop, waarde]) => (
                     <div
                       key={kop}
-                      className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-5 py-4"
+                      className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-4 py-3 sm:px-5 sm:py-4"
                     >
                       <dt className="diba-label diba-label-on-dark shrink-0">
                         {kop}
                       </dt>
-                      <dd className="diba-card-title text-right">{waarde}</dd>
+                      <dd className="diba-card-title text-right max-sm:text-[17px] max-sm:leading-6">
+                        {waarde}
+                      </dd>
                     </div>
                   ))}
               </dl>
@@ -257,7 +259,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           <ProfielOordeel slug={b.slug} />
 
           {/* ── Onder de rij, over de volle breedte ── */}
-          <p className="mt-8 text-[17px] leading-8 text-[var(--t-body)]">
+          <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)] sm:mt-8">
             {publicCopy(b.kort)}
           </p>
 
@@ -278,18 +280,20 @@ export default async function BehandelingPage({ params }: PageProps) {
             </p>
           ) : null}
 
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
             <Link
               href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
-              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] max-sm:w-full max-sm:justify-center max-sm:px-3"
             >
-              Plan een huidconsult
+              <span className="sm:hidden">Plan consult</span>
+              <span className="max-sm:hidden">Plan een huidconsult</span>
             </Link>
             <Link
               href="/behandelingen"
-              className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)] max-sm:inline-flex max-sm:min-h-12 max-sm:items-center max-sm:justify-center"
             >
-              Vergelijk met de rest
+              <span className="sm:hidden">Vergelijk</span>
+              <span className="max-sm:hidden">Vergelijk met de rest</span>
             </Link>
           </div>
         </div>
@@ -318,7 +322,7 @@ export default async function BehandelingPage({ params }: PageProps) {
       {/* ── Werking ── */}
       <section
         id="werking"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
       >
         <div className="mx-auto">
           <Label>Wat het doet</Label>
@@ -424,7 +428,7 @@ export default async function BehandelingPage({ params }: PageProps) {
       {b.stappen?.length || b.inDeStoel?.length ? (
         <section
           id="afspraak"
-          className="scroll-mt-[var(--anker-offset)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+          className="scroll-mt-[var(--anker-offset)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
         >
           <div className="mx-auto">
             <Label>In de afspraak</Label>
@@ -441,7 +445,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                 genummerde lijst. Drie keer dezelfde mededeling, waarvan er twee alleen
                 als opmaak leesbaar zijn. */}
             {b.stappen?.length ? (
-              <ol className="mt-12 grid gap-4 md:grid-cols-3">
+              <ol className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3">
                 {b.stappen.map((s) => (
                   <li
                     key={s.kop}
@@ -545,7 +549,7 @@ export default async function BehandelingPage({ params }: PageProps) {
       {b.wel?.length || b.niet?.length ? (
         <section
           id="grenzen"
-          className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+          className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
         >
           <div className="mx-auto">
             <Label>Waar het voor is</Label>
@@ -560,7 +564,7 @@ export default async function BehandelingPage({ params }: PageProps) {
               behandeling meer voor je doet.
             </p>
 
-            <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
+            <div className="mt-8 sm:mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
               <div>
                 <Label>Hier werkt het goed bij</Label>
                 <ul className="mt-5 space-y-3">
@@ -641,7 +645,7 @@ export default async function BehandelingPage({ params }: PageProps) {
           De toepassingen van deze behandeling: dezelfde techniek, per klacht uitgeschreven.
           Zonder deze ingang zijn die pagina's alleen via de sitemap te vinden. */}
       {toepassingen.length > 0 ? (
-        <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
             <Label>Waar we dit voor gebruiken</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
@@ -652,7 +656,7 @@ export default async function BehandelingPage({ params }: PageProps) {
               Wat er anders gaat aan de instelling, wat je kunt verwachten en
               wanneer je hier beter iets anders voor kiest.
             </p>
-            <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-8 sm:mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {toepassingen.map((t) => (
                 <li key={t.slug}>
                   <Link
@@ -681,14 +685,14 @@ export default async function BehandelingPage({ params }: PageProps) {
 
           De reden per behandeling is het punt: een rijtje namen zegt niets. */}
       {verwanten.length > 0 ? (
-        <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
             <Label>Hoort hierbij</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
               Wat er <span className="diba-accent">bij aansluit</span>
             </h2>
 
-            <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {verwanten.map(({ behandeling: v, waarom }) => (
                 <li
                   key={v.slug}
@@ -734,7 +738,7 @@ export default async function BehandelingPage({ params }: PageProps) {
       {/* Geen onderruimte hier: de voettekst brengt die mee. Stond dit er wel, dan
           telde het op tot honderdvierenveertig pixels tussen het groene vlak en de eerste
           lijn van de voettekst, en dat is te veel. */}
-      <section className="px-5 pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
+      <section className="px-5 pt-10 sm:pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>De eerste afspraak</Label>

@@ -26,6 +26,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Snurken — een klacht die bij Diba terechtkomt zonder dat het over de huid gaat.
@@ -85,7 +86,7 @@ export default function SnurkenPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -116,8 +117,13 @@ export default function SnurkenPage() {
               Daarom begint deze pagina bij de bron en niet bij het apparaat.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button variant="primair-op-donker" href="#bron">
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                variant="primair-op-donker"
+                href="#bron"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Naar de bron"
+              >
                 Waar komt jouw geluid vandaan?
               </Button>
               <Button
@@ -125,6 +131,8 @@ export default function SnurkenPage() {
                 variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
@@ -182,7 +190,7 @@ export default function SnurkenPage() {
       {/* ── Waar het geluid ontstaat ───────────────────────────────────── */}
       <section
         id="bron"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -193,7 +201,7 @@ export default function SnurkenPage() {
             intro="Dit is een wegwijzer en geen diagnose; het echte antwoord komt uit meekijken achter in je mond. Maar de herkenning hieronder brengt de meeste mensen al bij de juiste deur, en soms is dat niet de onze."
           />
 
-          <ul className="mt-12 grid gap-5 lg:grid-cols-2">
+          <ul className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-2">
             {SNURKBRONNEN.map((bron) => (
               <li
                 key={bron.id}
@@ -261,7 +269,7 @@ export default function SnurkenPage() {
       {/* ── De grens ───────────────────────────────────────────────────── */}
       <section
         id="alarm"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
@@ -276,11 +284,13 @@ export default function SnurkenPage() {
               slaap kortdurend, en dat is een medisch probleem met gevolgen voor
               je hart en je bloeddruk. Ze komen vaak samen voor.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Het geluid zachter maken terwijl er ademstops onder zitten is het
-              alarm uitzetten en het probleem laten staan. Daarom vragen we er
-              altijd naar, en daarom staat dit hier en niet onderaan.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Het geluid zachter maken terwijl er ademstops onder zitten is
+                het alarm uitzetten en het probleem laten staan. Daarom vragen
+                we er altijd naar, en daarom staat dit hier en niet onderaan.
+              </p>
+            </LeesVerder>
           </div>
 
           {/* Geen score en geen uitslag: één keer ja is genoeg om ergens anders te
@@ -311,7 +321,7 @@ export default function SnurkenPage() {
       {/* ── Wat wij doen ───────────────────────────────────────────────── */}
       <section
         id="behandeling"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -323,7 +333,7 @@ export default function SnurkenPage() {
 
           {nightlase ? (
             <>
-              <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+              <ol className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-3">
                 {(nightlase.stappen ?? []).map((stap, i) => (
                   <li
                     key={stap.kop}
@@ -343,7 +353,7 @@ export default function SnurkenPage() {
               {/* Herstel en sessies komen uit de behandelingentabel en niet uit een
                   tweede tekst hier. Twee bronnen voor hetzelfde gegeven lopen binnen een
                   maand uit elkaar. */}
-              <dl className="mt-10 grid gap-5 sm:grid-cols-2">
+              <dl className="mt-8 sm:mt-10 grid gap-5 sm:grid-cols-2">
                 {(
                   [
                     ["Hoe lang je erover doet", nightlase.sessies],
@@ -371,7 +381,7 @@ export default function SnurkenPage() {
                   Twee even hoge kolommen, dezelfde opbouw als op de behandelpagina zelf.
                   De foto is er ook dezelfde: wie beide pagina's ziet, herkent dat het
                   over hetzelfde gaat. */}
-              <div className="mt-12 grid gap-4 lg:grid-cols-2 lg:items-stretch">
+              <div className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:items-stretch">
                 {nightlase.fotoInDeStoel ? (
                   <BeeldVignet
                     src={nightlase.fotoInDeStoel.src}

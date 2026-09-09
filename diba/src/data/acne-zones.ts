@@ -9,10 +9,13 @@
  *
  * Dit is geen diagnose. De lezing hieronder is een patroonduiding en dat staat er ook.
  * Alles wat een medische bewering doet is gemarkeerd voor Rojda.
+ *
+ * Griss, 8 september 2026: het decolleté en de borst ontbraken, terwijl dat bij acne een
+ * veelvoorkomende plek is. Sindsdien twee zones buiten het gezicht in plaats van één.
  */
 
 export type ZoneId =
-  "voorhoofd" | "neus" | "wangen" | "kin" | "kaaklijn" | "rug";
+  "voorhoofd" | "neus" | "wangen" | "kin" | "kaaklijn" | "rug" | "borst";
 
 export type Zone = {
   readonly id: ZoneId;
@@ -60,6 +63,13 @@ export const ACNE_ZONES: readonly Zone[] = [
     buitenGezicht: true,
     opZichzelf:
       "Veel talgklieren, plus zweet en wrijving. Sportbeha, rugzak en een shirt dat niet ademt doen hier meer dan je denkt.",
+  },
+  {
+    id: "borst",
+    naam: "Decolleté en borst",
+    buitenGezicht: true,
+    opZichzelf:
+      "Net zo talgrijk als de rug, en vaak buiten beeld omdat het onder kleding zit. Zweet, kleding die schuurt en haren of producten die over je borst vallen houden het in stand. [MEDISCHE-CHECK-ROJDA]",
   },
 ] as const;
 
@@ -119,8 +129,30 @@ const REGELS: readonly Regel[] = [
     },
   },
   {
-    vereist: ["rug"],
+    vereist: ["rug", "borst"],
     zonder: ["voorhoofd", "neus", "wangen", "kin", "kaaklijn"],
+    lezing: {
+      kop: "Rug, schouders en borst",
+      tekst:
+        "De romp heeft veel talgklieren, en zweet en wrijving van kleding houden het daar in stand. Vaak speelt sport of een warm beroep mee. [MEDISCHE-CHECK-ROJDA]",
+      eersteStap:
+        "We kijken naar sport, kleding en wat er na het zweten met je huid gebeurt, en behandelen rug en borst als één zone. Kruidenpeels en chemische peelings kunnen hier allebei.",
+    },
+  },
+  {
+    vereist: ["borst"],
+    zonder: ["voorhoofd", "neus", "wangen", "kin", "kaaklijn", "rug"],
+    lezing: {
+      kop: "Alleen op je borst of decolleté",
+      tekst:
+        "Een veelvoorkomende plek die vaak buiten beeld blijft, omdat hij onder kleding zit. Veel talgklieren, en zweet en wrijving van kleding houden het in stand. [MEDISCHE-CHECK-ROJDA]",
+      eersteStap:
+        "We kijken naar sport, kleding en haarproducten die langs je nek en borst lopen. Behandelen kan, ook hier met een peeling.",
+    },
+  },
+  {
+    vereist: ["rug"],
+    zonder: ["voorhoofd", "neus", "wangen", "kin", "kaaklijn", "borst"],
     lezing: {
       kop: "Alleen op je rug of schouders",
       tekst:

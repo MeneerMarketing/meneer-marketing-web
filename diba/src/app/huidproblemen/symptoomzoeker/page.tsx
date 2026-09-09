@@ -12,6 +12,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De symptoomzoeker — de wegwijzer over alle huidprobleempagina's heen.
@@ -46,7 +47,7 @@ export default function SymptoomzoekerPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="py-14 lg:py-20">
+        <div className="py-10 sm:py-14 lg:py-20">
           <nav
             aria-label="Kruimelpad"
             className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -75,14 +76,19 @@ export default function SymptoomzoekerPage() {
             Je hoeft de naam van je klacht niet te kennen. Kruis aan wat je ziet
             en voelt, dan brengen we je naar de pagina die erover gaat.
           </p>
+          <LeesVerder opDonker>
+            <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              Bij twee signalen sturen we je meteen naar de huisarts. Die kijken
+              we als eerste na, zodat je weet waar je aan toe bent.
+            </p>
+          </LeesVerder>
 
-          <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-            Bij twee signalen sturen we je meteen naar de huisarts. Die kijken
-            we als eerste na, zodat je weet waar je aan toe bent.
-          </p>
-
-          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-            <Button variant="primair-op-donker" href="#zoeker">
+          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+            <Button
+              variant="primair-op-donker"
+              href="#zoeker"
+              className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+            >
               Begin met aankruisen
             </Button>
             <Button
@@ -90,6 +96,8 @@ export default function SymptoomzoekerPage() {
               variant="secundair-op-donker"
               target="_blank"
               rel="noopener noreferrer"
+              className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+              kort="Stel je vraag"
             >
               Of stel je vraag gewoon
             </Button>
@@ -102,7 +110,7 @@ export default function SymptoomzoekerPage() {
       {/* ── De zoeker ── */}
       <section
         id="zoeker"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -116,7 +124,7 @@ export default function SymptoomzoekerPage() {
       </section>
 
       {/* ── Afsluiting ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Komt er niets uit</Label>

@@ -24,6 +24,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Poriën — zesde eigen pagina, met de kortste en scherpste boodschap van allemaal.
@@ -86,7 +87,7 @@ export default function PorienPage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -113,20 +114,28 @@ export default function PorienPage() {
               opvallend ze zijn hangt af van de huid eromheen. Daar valt veel
               aan te doen.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Met peelings, microneedling en een HydraFacial maken we de
+                poriën leeg en de huid eromheen gladder. Samen zorgt dat ervoor
+                dat ze een stuk minder opvallen.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Met peelings, microneedling en een HydraFacial maken we de poriën
-              leeg en de huid eromheen gladder. Samen zorgt dat ervoor dat ze
-              een stuk minder opvallen.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#knoppen">Zet de drie knoppen aan</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="#knoppen"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+              >
+                Zet de drie knoppen aan
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
@@ -135,7 +144,7 @@ export default function PorienPage() {
 
           {/* Leent het acnebeeld: poriën en comedonen liggen dicht bij elkaar en er is
               nog geen eigen shoot voor dit onderwerp. Vervangen zodra die er is. */}
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               src={FIGMA_INTENT_ACNE.src}
               alt={FIGMA_INTENT_ACNE.alt}
@@ -155,7 +164,7 @@ export default function PorienPage() {
       {/* ── De drie knoppen: de uitblinker ─────────────────────────────── */}
       <section
         id="knoppen"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -171,7 +180,7 @@ export default function PorienPage() {
       {/* ── Wat je ziet ────────────────────────────────────────────────── */}
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop

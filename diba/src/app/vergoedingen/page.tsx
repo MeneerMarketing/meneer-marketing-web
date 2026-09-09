@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
+import LeesVerder from "@/components/ui/LeesVerder";
 import { INSURERS } from "@/data/insurers";
 import { MISVERSTANDEN, ONZE_ROL, ROUTE } from "@/data/vergoeding-route";
 import { ERKENNINGEN } from "@/data/team";
@@ -91,7 +92,7 @@ export default function VergoedingenPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -121,31 +122,35 @@ export default function VergoedingenPage() {
             {/* Stond rechts in een kaart die verder leeg was; de lijst met registraties
                 stond links en maakte die kolom twee keer zo lang (Yasin, 7 september
                 2026). Nu omgekeerd: de korte tekst bij de kop, de lijst in de kaart. */}
-            <p className="mt-6 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Voorwaarden en maxima veranderen per jaar en per pakket. Jouw
-              actuele bedrag staat dus in je eigen polis, en daar klopt het ook
-              echt. Wat hier staat is hoe het werkt, en dat blijft van jaar tot
-              jaar hetzelfde.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-6 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                Voorwaarden en maxima veranderen per jaar en per pakket. Jouw
+                actuele bedrag staat dus in je eigen polis, en daar klopt het
+                ook echt. Wat hier staat is hoe het werkt, en dat blijft van
+                jaar tot jaar hetzelfde.
+              </p>
+            </LeesVerder>
           </div>
 
           {/* Rojda: "Ik zie juist al onze sterke punten niet terug." Dit is er een van,
               en op deze pagina is het geen keurmerkplaatje maar het antwoord op de vraag
-              die iemand hier komt stellen: mag ik hierheen met mijn polis. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
+              die iemand hier komt stellen: mag ik hierheen met mijn polis. Op een
+              telefoon alleen de zes namen: met toelichting was de hero 1700px en stonden
+              de verzekeraars, waar je voor komt, pas op scherm drie. */}
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-6 sm:p-10 text-[var(--t-strong)]">
             <Label>Waar je op kunt rekenen</Label>
             <ul className="mt-6 divide-y divide-[var(--g-100)]">
               {ERKENNINGEN.map((e) => (
                 <li
                   key={e.naam}
-                  className="flex gap-4 py-4 first:pt-0 last:pb-0"
+                  className="flex gap-4 py-3 first:pt-0 last:pb-0 sm:py-4"
                 >
                   <Vinkje />
                   <span className="min-w-0">
                     <strong className="block text-[16px] font-medium leading-7 text-[var(--t-strong)]">
                       {e.naam}
                     </strong>
-                    <span className="mt-0.5 block text-[15px] leading-7 text-[var(--t-body)]">
+                    <span className="mt-0.5 block text-[15px] leading-7 text-[var(--t-body)] max-sm:hidden">
                       {e.zin}
                     </span>
                   </span>
@@ -156,10 +161,63 @@ export default function VergoedingenPage() {
         </div>
       </section>
 
+      {/* ── De verzekeraars, direct onder de hero ──
+          Stonden als laatste, met het argument dat je eerst de drie vragen moest lezen.
+          Yasin, 9 september 2026: de logo's staan verstopt onderaan, zet ze bovenaan. Wie
+          hier komt zoekt zijn verzekeraar; de drie vragen staan er direct onder. */}
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div>
+            <Label>Jouw verzekeraar</Label>
+            <h2 className="diba-display-m mt-4">
+              Kies je verzekeraar,{" "}
+              <span className="diba-accent">zie waar je moet kijken</span>
+            </h2>
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Per verzekeraar staat waar in de polis je moet kijken en welke
+              voorwaarde er het vaakst tussen zit. Wat er precies in jouw pakket
+              zit, zie je alleen daar.
+            </p>
+          </div>
+
+          <ul className="mt-8 sm:mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {INSURERS.map((v) => (
+              <li key={v.slug}>
+                <Link
+                  href={`/vergoedingen/${v.slug}`}
+                  className="flex min-h-20 items-center gap-4 rounded-[var(--r-lg)] bg-white px-6 py-4 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                >
+                  {/* Het logo op vaste hoogte in een vak van vaste breedte. De verhoudingen
+                      lopen van bijna vierkant tot drie keer zo breed als hoog; zonder dat
+                      vak zou elke kaart een andere tekstinspringing krijgen. */}
+                  <VerzekeraarLogo verzekeraar={v} hoogte={30} breedte={80} />
+                  <span>{v.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <Link
+              href="/intake"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
+            >
+              Start je intake
+            </Link>
+            <Link
+              href="/tarieven"
+              className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              Of bekijk eerst wat het kost
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── De route: drie vragen ── */}
       {/* Een pagina over vergoeding gaat over papier en polissen. Dit is de plek waar het
           gesprek daarover werkelijk plaatsvindt. */}
-      <section className="px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
+      <section className="px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/balie-ontvangst.jpg"
@@ -171,7 +229,7 @@ export default function VergoedingenPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Drie vragen, op volgorde</Label>
@@ -226,7 +284,7 @@ export default function VergoedingenPage() {
       </section>
 
       {/* ── Wat wij wel en niet doen ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
@@ -281,7 +339,7 @@ export default function VergoedingenPage() {
       </section>
 
       {/* ── Misverstanden ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Vier misverstanden</Label>
@@ -294,7 +352,7 @@ export default function VergoedingenPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-2">
+          <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-2">
             {MISVERSTANDEN.map((m, i) => (
               <li
                 key={m.kop}
@@ -318,56 +376,6 @@ export default function VergoedingenPage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      {/* ── De verzekeraars, nu op de juiste plek: als laatste ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto">
-          <div>
-            <Label>Pas nu je verzekeraar</Label>
-            <h2 className="diba-display-m mt-4">
-              Kwam je door{" "}
-              <span className="diba-accent">alle drie de vragen?</span>
-            </h2>
-            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Dan is dit het moment om je eigen polis erbij te pakken. Deze
-              pagina&apos;s wijzen je naar de plek waar jouw voorwaarden staan;
-              wat er precies in jouw pakket zit, zie je alleen daar.
-            </p>
-          </div>
-
-          <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {INSURERS.map((v) => (
-              <li key={v.slug}>
-                <Link
-                  href={`/vergoedingen/${v.slug}`}
-                  className="flex min-h-20 items-center gap-4 rounded-[var(--r-lg)] bg-white px-6 py-4 text-[16px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                >
-                  {/* Het logo op vaste hoogte in een vak van vaste breedte. De verhoudingen
-                      lopen van bijna vierkant tot drie keer zo breed als hoog; zonder dat
-                      vak zou elke kaart een andere tekstinspringing krijgen. */}
-                  <VerzekeraarLogo verzekeraar={v} hoogte={30} breedte={80} />
-                  <span>{v.name}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
-            <Link
-              href="/intake"
-              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
-            >
-              Start je intake
-            </Link>
-            <Link
-              href="/tarieven"
-              className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-            >
-              Of bekijk eerst wat het kost
-            </Link>
-          </div>
         </div>
       </section>
     </main>

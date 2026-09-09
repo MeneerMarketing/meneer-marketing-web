@@ -15,6 +15,11 @@
  *
  * COPY-STATUS: concept in de Diba-stem, geen definitieve marketingcopy. Medische
  * beweringen zijn gemarkeerd met [MEDISCHE-CHECK-ROJDA] en moeten langs Rojda.
+ *
+ * GRISS, 8 september 2026, na het doorlopen van de pagina: ontstoken acne behandelen we
+ * wél met peelings (chemisch en kruidenpeels); er is geen structureel overleg met artsen,
+ * dus we adviseren de klant zelf naar de huisarts te gaan als het beeld daarom vraagt; en
+ * we beloven vooraf geen aantal sessies, want dat hangt af van hoe de huid reageert.
  */
 
 import { kostenVraag } from "@/data/pillar-kosten";
@@ -56,9 +61,9 @@ export const ACNE_TYPES: readonly AcneType[] = [
     watJeZiet:
       "Verheven, rode plekjes die gevoelig zijn als je erop drukt. Sommige met een puskopje. Meestal in golven, vaak over wangen en kin.",
     watHetBetekent:
-      "Er is actieve ontsteking. De huid heeft eerst rust nodig. Dit is niet het moment voor peelings of laser, hoe verleidelijk dat ook is. [MEDISCHE-CHECK-ROJDA]",
+      "Er is actieve ontsteking, en daar kunnen we wat mee. We behandelen deze vorm met peelings: chemische peelings en kruidenpeels, die de ontsteking remmen en antibacterieel werken. Laser en needling wachten tot de huid rustiger is. [MEDISCHE-CHECK-ROJDA]",
     watWijEersteDoen:
-      "Ontsteking omlaag. Pas als de huid rustiger is kijken we naar textuur en littekens. Die volgorde is niet onderhandelbaar.",
+      "Ontsteking omlaag, met de peeling die bij jouw huid past. Pas als de huid rustiger is kijken we naar textuur en littekens. Die volgorde is niet onderhandelbaar.",
     verwarMetNiet:
       "Een puskopje is geen teken dat het rijp is om uit te knijpen. Het is een teken dat je afweer al bezig is.",
   },
@@ -70,9 +75,9 @@ export const ACNE_TYPES: readonly AcneType[] = [
     watJeZiet:
       "Zwellingen die je meer voelt dan ziet. Ze komen niet tot een kopje, ze doen zeer, en ze laten vaker een litteken of een donkere vlek achter.",
     watHetBetekent:
-      "Deze vorm kunnen wij behandelen. Bij een deel van de mensen is daarnaast een arts nodig, en dan werken we samen in plaats van los van elkaar. [MEDISCHE-CHECK-ROJDA]",
+      "Deze vorm kunnen wij behandelen. Bij een deel van de mensen is daarnaast medicatie nodig, en die komt van een arts; wij behandelen dan de huid en houden rekening met wat de arts voorschrijft. [MEDISCHE-CHECK-ROJDA]",
     watWijEersteDoen:
-      "Een eerlijk gesprek. We overleggen met je huisarts of dermatoloog vóórdat we iets doen, en soms is ons advies om bij ons nog niet te starten.",
+      "Een eerlijk gesprek. Doen de knobbels pijn, blijven ze weken zitten of laten ze littekens achter, dan raden we je aan eerst naar je huisarts te gaan. Soms is ons advies om bij ons nog niet te starten.",
     verwarMetNiet:
       "Bij deze vorm speelt je afweer diep in de huid. Dat komt niet doordat je iets fout doet en het is geen kwestie van beter reinigen.",
   },
@@ -86,7 +91,7 @@ export const ACNE_TYPES: readonly AcneType[] = [
     watHetBetekent:
       "Het patroon in de tijd wijst op een hormonale factor. Huidbehandeling verbetert het beeld, maar de oorzaak ligt vaak dieper. [MEDISCHE-CHECK-ROJDA]",
     watWijEersteDoen:
-      "We vragen door over je cyclus, de pil en eventuele PCOS. Huidzorg en een medisch traject versterken elkaar hier, en we stemmen graag af met je huisarts.",
+      "We vragen door over je cyclus, de pil en eventuele PCOS. Huidzorg en een medisch traject versterken elkaar hier; ligt de oorzaak bij je hormonen, dan raden we je aan dat met je huisarts te bespreken.",
     verwarMetNiet:
       "Hormonale acne is niet voorbehouden aan tieners. We zien het net zo vaak bij mensen van dertig en veertig.",
   },
@@ -211,7 +216,7 @@ export const ACNE_WEL_NIET = {
   wel: [
     "Een huidanalyse voordat we starten, zodat we later onder vergelijkbare omstandigheden kunnen meten",
     "Poriën reinigen en verhoorning aanpakken, in stappen die je huid aankan",
-    "Ontsteking eerst omlaag, littekens daarna. Nooit tegelijk",
+    "Ontsteking eerst omlaag, met chemische peelings en kruidenpeels die ook antibacterieel werken. Littekens daarna, nooit tegelijk",
     "Zonbescherming, elke dag, ook in de winter. Dit voorkomt de donkere vlekken die na een puistje overblijven",
     "Doorverwijzen naar de arts als het beeld daarom vraagt, ook als je bij ons kwam",
   ],
@@ -234,12 +239,16 @@ export const ACNE_WIJ_DOEN_NIET = [
   {
     titel: "Medicatie loopt via je arts",
     tekst:
-      "Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij stemmen onze behandeling daarop af, en denken mee over wat de arts ziet.",
+      "Antibiotica, de pil en isotretinoïne schrijft je huisarts of dermatoloog voor. Wij stemmen onze behandeling af op wat jij van je arts meekrijgt.",
   },
   {
-    titel: "Een traject met een einddatum",
+    /* Hier stond "Een traject met een einddatum", met de belofte dat je vooraf hoort
+       hoeveel sessies je nodig hebt. Griss, 8 september 2026: dat kunnen we niet vooraf
+       met zekerheid zeggen, en wie het toch hoort raakt teleurgesteld als het anders
+       loopt. Dus de omgekeerde belofte: geen vast aantal, wel meten. */
+    titel: "Geen vast aantal sessies vooraf",
     tekst:
-      "Je hoort vooraf hoeveel sessies we verwachten en wanneer we opnieuw kijken. Werkt het niet, dan stoppen we en zeggen we dat.",
+      "Hoeveel sessies je nodig hebt, hangt af van je huid en hoe die reageert. Vooraf beloven we daarom geen aantal: we meten tussendoor, en stoppen als het niet werkt.",
   },
 ] as const;
 
@@ -250,12 +259,12 @@ export const ACNE_FAQ = [
       "Bij de meeste mensen is acne goed te beheersen. Bij sommigen blijft het terugkomen, bijvoorbeeld door hormonen. We zeggen vooraf wat we in jouw geval realistisch vinden, en we meten of het werkt. Beheersing is soms het eerlijke doel, en dat is geen tweede keus. [MEDISCHE-CHECK-ROJDA]",
   },
   {
-    /* Hier stond een prijsvlag op een antwoord dat al compleet is: het aantal en de prijs
-       volgen ná de meting, en dat ís het antwoord. Wat ontbrak was een eigen kostenvraag,
-       en die staat nu onderaan met het bedrag uit de behandelingentabel. */
+    /* Griss, 8 september 2026: geen vast aantal beloven. Het antwoord noemt wat we wél
+       vooraf kunnen zeggen: een verwachting en de prijs per sessie. De kostenvraag staat
+       onderaan met het bedrag uit de behandelingentabel. */
     vraag: "Hoeveel sessies heb ik nodig?",
     antwoord:
-      "Dat hangt af van het type acne en hoe lang het speelt. Na de huidanalyse krijg je een aantal en een prijs, geen open einde.",
+      "Dat hangt af van het type acne, hoe lang het speelt en hoe je huid op de eerste behandelingen reageert. Na de huidanalyse hoor je wat wij verwachten en wat een sessie kost, maar een vast aantal vooraf kunnen we niet beloven.",
   },
   {
     vraag: "Ik heb al alles geprobeerd. Waarom zou dit werken?",

@@ -13,6 +13,7 @@ import {
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Privacybeleid.
@@ -188,7 +189,7 @@ export default function PrivacyPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -244,7 +245,7 @@ export default function PrivacyPage() {
       </section>
 
       {/* ── Waar het wel terechtkomt ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Vier plekken</Label>
@@ -258,7 +259,7 @@ export default function PrivacyPage() {
             </p>
           </div>
 
-          <ul className="mt-10 grid gap-4 md:grid-cols-2">
+          <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-2">
             {PLEKKEN.map((p) => (
               <li
                 key={p.plek}
@@ -300,7 +301,7 @@ export default function PrivacyPage() {
       </section>
 
       {/* ── Je rechten ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Hoe lang het blijft</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -348,7 +349,7 @@ export default function PrivacyPage() {
         </div>
       </section>
 
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -366,7 +367,7 @@ export default function PrivacyPage() {
               </p>
             </div>
 
-            <ul className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {RECHTEN.map((r) => (
                 <li
                   key={r.kop}
@@ -391,7 +392,7 @@ export default function PrivacyPage() {
       </section>
 
       {/* ── Wat we niet doen ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat er niet gebeurt</Label>
@@ -406,11 +407,13 @@ export default function PrivacyPage() {
               anonieme statistiek, en die laadt pas nadat je daar akkoord voor
               geeft; zonder akkoord worden die scripts niet ingeladen.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Je huidprofiel wordt bewust niet naar ons gestuurd. Dat is de plek
-              waar de verleiding het grootst is om alvast een mailadres te
-              vragen, en daarom gebeurt het niet.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Je huidprofiel wordt bewust niet naar ons gestuurd. Dat is de
+                plek waar de verleiding het grootst is om alvast een mailadres
+                te vragen, en daarom gebeurt het niet.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href="/cookiebeleid"

@@ -17,6 +17,7 @@ import {
   ZONDER_TEKST,
 } from "@/data/reviews-archief";
 import type { SalonizedReviewTopic } from "@/data/salonized-reviews";
+import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
  * Alle reviews, gefilterd en gepagineerd via de URL.
@@ -246,23 +247,51 @@ export default function Reviewarchief({
           van de reviews: mensen beoordelen het bezoek, niet elk onderwerp.
         </p>
       ) : (
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {zichtbaar.map((r) => (
-            <li
-              key={r.id}
-              className="flex flex-col rounded-[var(--r-lg)] bg-white p-6"
+        <>
+          <ul className="mt-8 sm:mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {zichtbaar.slice(0, 24).map((r) => (
+              <li
+                key={r.id}
+                className="flex flex-col rounded-[var(--r-lg)] bg-white p-6"
+              >
+                <Sterren aantal={Math.round(r.sterren)} />
+                <p className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]">
+                  {r.tekst}
+                </p>
+                <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
+                  <span className="truncate">{r.naam}</span>
+                  <span className="shrink-0">{r.datum}</span>
+                </p>
+              </li>
+            ))}
+          </ul>
+          {/* Achtenveertig kaarten is op een telefoon twaalf schermen. De tweede helft
+            staat er wel, maar pas na een tik; op desktop staan ze gewoon allemaal. */}
+          {zichtbaar.length > 24 ? (
+            <MobielInklap
+              className="mt-4"
+              label={`Toon nog ${zichtbaar.length - 24} reviews`}
             >
-              <Sterren aantal={Math.round(r.sterren)} />
-              <p className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]">
-                {r.tekst}
-              </p>
-              <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
-                <span className="truncate">{r.naam}</span>
-                <span className="shrink-0">{r.datum}</span>
-              </p>
-            </li>
-          ))}
-        </ul>
+              <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {zichtbaar.slice(24).map((r) => (
+                  <li
+                    key={r.id}
+                    className="flex flex-col rounded-[var(--r-lg)] bg-white p-6"
+                  >
+                    <Sterren aantal={Math.round(r.sterren)} />
+                    <p className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]">
+                      {r.tekst}
+                    </p>
+                    <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
+                      <span className="truncate">{r.naam}</span>
+                      <span className="shrink-0">{r.datum}</span>
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </MobielInklap>
+          ) : null}
+        </>
       )}
 
       <Bladeren

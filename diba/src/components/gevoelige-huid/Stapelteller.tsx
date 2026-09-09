@@ -158,13 +158,20 @@ export default function Stapelteller() {
           ) : null}
         </div>
 
-        <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+        <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
           {belasting === "rustig" ? (
-            <Button href="#anders" variant="secundair">
+            <Button
+              href="#anders"
+              variant="secundair"
+              className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+            >
               Kijk dan hieronder verder
             </Button>
           ) : (
-            <Button href="/intake?topic=gevoelige-huid">
+            <Button
+              href="/intake?topic=gevoelige-huid"
+              className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+            >
               Laat meekijken naar je routine
             </Button>
           )}

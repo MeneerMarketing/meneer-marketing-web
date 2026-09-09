@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import SiteChrome from "@/components/ui/SiteChrome";
 import RevealObserver from "@/components/ui/RevealObserver";
 import CookieBar from "@/components/ui/CookieBar";
+import MobieleActiebalk from "@/components/ui/MobieleActiebalk";
 import HuidprofielKnop from "@/components/ui/HuidprofielKnop";
 import Analytics from "@/components/ui/Analytics";
 import { medicalClinicSchema, SchemaMarkup } from "@/lib/schema";
@@ -129,6 +130,7 @@ export default function RootLayout({
         </SiteChrome>
         <span className="sr-only">{DIBA_ADDRESS.line}</span>
         <HuidprofielKnop />
+        <MobieleActiebalk />
         <CookieBar />
         <Analytics />
       </body>

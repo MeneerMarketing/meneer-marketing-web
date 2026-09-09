@@ -29,6 +29,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Ingegroeide haren — de kortste weg van een klacht naar laserontharing, met de eerlijkheid erbij dat het niet altijd de juiste weg is.
@@ -87,7 +88,7 @@ export default function Pagina() {
 
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -115,27 +116,35 @@ export default function Pagina() {
               waar geen haar groeit kan ook niets ingroeien. Zit er geen haar
               in, dan verandert ontharen er niets aan.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                Blijft het terugkomen, dan is laserontharing de oplossing die
+                het bij de wortel aanpakt. Soms helpt een andere scheertechniek
+                al, en dat hoor je dan ook van ons.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Blijft het terugkomen, dan is laserontharing de oplossing die het
-              bij de wortel aanpakt. Soms helpt een andere scheertechniek al, en
-              dat hoor je dan ook van ons.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#check">Doe de haarcheck</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="#check"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+              >
+                Doe de haarcheck
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               /* Yasin, 7 september 2026: de laserontharing bij een man uit de shoot; de
                  kaaklijn is precies waar ingegroeide haren het vaakst zitten. */
@@ -156,7 +165,7 @@ export default function Pagina() {
 
       <section
         id="check"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -168,7 +177,7 @@ export default function Pagina() {
             intro="De huidtherapeut kijkt onder vergroting of er een haar in het bultje zit. Dat onderscheid bepaalt of ontharen zin heeft of niet."
           />
 
-          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+          <ol className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-3">
             {HAARCHECK_STAPPEN.map((stap) => (
               <li
                 key={stap.kop}
@@ -186,7 +195,7 @@ export default function Pagina() {
 
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop

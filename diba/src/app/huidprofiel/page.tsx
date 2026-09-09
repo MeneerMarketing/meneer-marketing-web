@@ -6,6 +6,7 @@ import { PROFIEL_ONDERDELEN, telwoord } from "@/data/huidprofiel";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * /huidprofiel — je huid in negen stappen.
@@ -47,7 +48,7 @@ export default function HuidprofielPage() {
           tekst ernaast. Nu staat hij náást de tekst, staand, in het formaat waar een
           rechterkolom om vraagt. */}
       <section className="mx-auto px-5 pt-10 pb-12 sm:px-9 lg:px-[7.5vw] lg:pt-12 lg:pb-16">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+        <div className="grid items-center gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -69,19 +70,26 @@ export default function HuidprofielPage() {
             </h1>
 
             <p className="mt-6 max-w-[50ch] text-[17px] leading-8 text-[var(--t-body)]">
-              {telwoord(PROFIEL_ONDERDELEN)} vragen over wat je huid nu aankan.
-              Retinol, zwangerschap, een gebruinde huid, medicatie: precies de
-              dingen die aan de balie pas boven tafel komen, met een afspraak
-              die dan niet doorgaat.
+              {telwoord(PROFIEL_ONDERDELEN).replace(/^./, (c) =>
+                c.toUpperCase(),
+              )}{" "}
+              vragen, twee minuten. Dit weet je daarna:
             </p>
 
-            {/* Wat je eruit krijgt. Dit stond nergens, en zonder dat is elke vraag er
-                een te veel. */}
-            <ul className="mt-7 space-y-3">
+            {/* Wat je eruit krijgt, in drie regels die elk één ding noemen.
+
+                Er stond "wat je huid nu aankan" en "welke behandelingen bovenaan komen te
+                staan, en bij de rest waarom niet". Yasin, 9 september 2026: "te zweverig
+                en onduidelijk, het moet kort maar krachtig". Een regel die om iets
+                abstracts draait (aankunnen, bovenaan komen) leest als een belofte zonder
+                voorwerp; deze drie noemen het voorwerp: behandelingen, nu of later, de
+                intake. Geen "met tarief", want het profiel toont geen bedragen; die staan
+                op de tarievenpagina, met dit profiel ernaast. */}
+            <ul className="mt-5 space-y-3">
               {[
-                "Wat meteen kan en wat beter een paar weken later valt",
-                "Welke behandelingen bovenaan komen te staan, en bij de rest waarom niet",
-                "Wat je tijdens de intake moet melden, zwart op wit",
+                "Welke behandelingen bij jouw huid passen",
+                "Wat nu kan en wat beter nog even wacht",
+                "Wat je bij de intake moet melden",
               ].map((regel) => (
                 <li key={regel} className="flex gap-3">
                   <svg
@@ -105,24 +113,32 @@ export default function HuidprofielPage() {
               ))}
             </ul>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            {/* Waarom je dit vooraf doet, in één zin met drie voorbeelden. Kort genoeg om
+                ook op een telefoon te blijven staan. */}
+            <p className="mt-6 max-w-[50ch] text-[17px] leading-8 text-[var(--t-body)]">
+              Retinol, zwangerschap, een gebruinde huid: je ziet het hier
+              meteen, niet pas aan de balie.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3 max-sm:grid max-sm:grid-cols-2">
               <Link
                 href="#profiel"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] max-sm:justify-center max-sm:px-3 transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Begin bij de eerste vraag
+                <span className="sm:hidden">Begin</span>
+                <span className="max-sm:hidden">Begin bij de eerste vraag</span>
               </Link>
               <Link
                 href="/intake"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 max-sm:justify-center max-sm:px-3 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Zo werkt het huidconsult
+                <span className="sm:hidden">Hoe het werkt</span>
+                <span className="max-sm:hidden">Zo werkt het huidconsult</span>
               </Link>
             </div>
 
             <p className="diba-label mt-6 text-[var(--t-muted)]">
-              Ongeveer twee minuten &middot; Blijft in je eigen browser &middot;
-              Geen account
+              Blijft in je eigen browser &middot; Geen account
             </p>
           </div>
 
@@ -133,15 +149,15 @@ export default function HuidprofielPage() {
             alt="Behandelaar bekijkt de uitkomst van een huidprofiel op een tablet"
             onderschrift="Wat jij invult, zien wij bij de intake"
             sizes="(min-width: 1024px) 44vw, 92vw"
-            brandpunt={38}
-            className="aspect-[4/5] lg:aspect-[3/4]"
+            brandpunt={22}
+            className="aspect-[16/9] sm:aspect-[4/5] lg:aspect-[3/4]"
           />
         </div>
       </section>
 
       <section
         id="profiel"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-14 sm:px-9 lg:px-[7.5vw] lg:py-16"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-16"
       >
         <div className="mx-auto">
           <ProfielBouwer />

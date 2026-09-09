@@ -32,6 +32,8 @@ export type NavLink = {
   /** Ondertitel onder het label. Bij huidproblemen: de eerste vraag van die pagina. */
   readonly zin?: string;
   /** De route bestaat, maar de inhoud moet nog. */
+  /** Stond op negen links terwijl die pagina's al bestonden; sinds 9 september 2026 nergens
+   *  meer gezet. Het veld blijft voor een echte nieuwe pagina. */
   readonly binnenkort?: true;
   /**
    * Een tussenkopje boven deze link, binnen dezelfde kolom.
@@ -295,8 +297,9 @@ export const HOOFDNAV: readonly NavItem[] = [
       },
       {
         kop: "Meest gevraagd",
-        /* Zeven in twee kolommen: vier rijen in plaats van zeven. Het paneel is dan zo
-           hoog als de kolom "Begin hier" en niet hoger. */
+        /* Acht in twee kolommen: vier rijen. Het paneel is dan zo hoog als de kolom
+           "Begin hier" en niet hoger. Yasin, 8 september 2026: de Dermapen 4 staat er
+           naast de SkinPen; wie microneedling zoekt moet beide pennen zien. */
         breed: 2,
         items: [
           {
@@ -313,6 +316,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "SkinPen Microneedling",
             href: "/behandelingen/skinpen",
             zin: kortZin("skinpen"),
+          },
+          {
+            label: "Dermapen 4",
+            href: "/behandelingen/dermapen-4",
+            zin: kortZin("dermapen-4"),
           },
           {
             label: "Medische peelings",
@@ -343,13 +351,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "Hoe het werkt",
             href: "/laserontharing",
             zin: kortZin("laserontharing"),
-            binnenkort: true,
           },
           {
             label: "GentleMax Pro",
             href: "/gentlemax-pro",
             zin: "Het apparaat waar we mee werken",
-            binnenkort: true,
           },
         ],
       },
@@ -371,31 +377,26 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "Over ons",
             href: "/over-ons",
             zin: "De kliniek in Rotterdam",
-            binnenkort: true,
           },
           {
             label: "Ons verhaal",
             href: "/ons-verhaal",
             zin: "Vijf regels, en wat ze kosten",
-            binnenkort: true,
           },
           {
             label: "Het team",
             href: "/team",
             zin: "Negen mensen, en wie wat doet",
-            binnenkort: true,
           },
           {
             label: "Werken bij Diba",
             href: "/werken-bij",
             zin: "Twee vacatures en een open sollicitatie",
-            binnenkort: true,
           },
           {
             label: "Contact",
             href: "/contact",
             zin: "Adres, tijden en hoe snel we antwoorden",
-            binnenkort: true,
           },
         ],
       },
@@ -427,13 +428,11 @@ export const HOOFDNAV: readonly NavItem[] = [
             label: "Nazorg",
             href: "/nazorg",
             zin: "Per behandeling: wanneer alles weer mag",
-            binnenkort: true,
           },
           {
             label: "Voor wie",
             href: "/doelgroep",
             zin: "Vier groepen, dezelfde behandellijst",
-            binnenkort: true,
           },
           {
             /* Yasin, 8 september 2026: de naam en de onderzin letterlijk zo. */
@@ -451,8 +450,8 @@ export const HOOFDNAV: readonly NavItem[] = [
 /** De praktische links in de topbalk. Kort houden: dit is geen tweede hoofdmenu. */
 export const TOPBALK_LINKS: readonly NavLink[] = [
   { label: "Vergoedingen", href: "/vergoedingen" },
-  { label: "Voor wie", href: "/doelgroep", binnenkort: true },
-  { label: "Contact", href: "/contact", binnenkort: true },
+  { label: "Voor wie", href: "/doelgroep" },
+  { label: "Contact", href: "/contact" },
 ];
 
 /**

@@ -134,7 +134,7 @@ export default function Raster() {
           <section
             key={g.id}
             id={g.anker}
-            className="scroll-mt-[var(--anker-offset)] pt-16 first:pt-12"
+            className="scroll-mt-[var(--anker-offset)] pt-10 sm:pt-16 first:pt-12"
           >
             <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-12">
               <div>
@@ -152,12 +152,12 @@ export default function Raster() {
               </p>
             </div>
 
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-8 grid grid-cols-2 gap-3 lg:grid-cols-3">
               {items.map((b) => (
                 <li key={b.pad}>
                   <Link
                     href={b.pad}
-                    className="group block h-full rounded-[var(--r-lg)] bg-[var(--g-050)] p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-[var(--g-100)] hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:p-7"
+                    className="group block h-full rounded-[var(--r-lg)] bg-[var(--g-050)] p-4 transition-all sm:p-6 duration-300 hover:-translate-y-1 hover:bg-[var(--g-100)] hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:p-7"
                   >
                     {/* Het icoon uit de set, en bij hover de pijl. Zo draagt de plek
                         allebei: rustend zegt hij wat voor soort probleem dit is, en zodra
@@ -184,10 +184,10 @@ export default function Raster() {
                       </svg>
                     </span>
 
-                    <span className="diba-card-title mt-8 block text-[var(--t-strong)]">
+                    <span className="diba-card-title mt-4 block text-[var(--t-strong)] max-sm:text-[17px] max-sm:leading-6 sm:mt-8">
                       {b.naam}
                     </span>
-                    <span className="mt-2 block text-[15px] leading-6 text-[var(--t-body)]">
+                    <span className="mt-2 block text-[15px] leading-6 text-[var(--t-body)] max-sm:hidden">
                       {b.eersteVraag}
                     </span>
                   </Link>

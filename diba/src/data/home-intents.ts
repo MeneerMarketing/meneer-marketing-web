@@ -1,13 +1,5 @@
 import type { HuidIconNaam } from "@/components/ui/HuidIcon";
 import type { HuidwensId } from "@/data/behandelingen";
-import {
-  FIGMA_INTENT_ACNE,
-  FIGMA_INTENT_LASER,
-  FIGMA_INTENT_LICHAAM,
-  FIGMA_INTENT_LITTEKENS,
-  FIGMA_INTENT_PIGMENT,
-  FIGMA_INTENT_VEROUDERING,
-} from "@/data/figma-home-images";
 
 /**
  * Wat de homepage per huidwens toevoegt aan de data: een icoon en een foto.
@@ -20,6 +12,12 @@ import {
  * "overig" heeft geen tegel op de homepage: dat zijn NightLase en fibromen, geen
  * huidwens waarmee iemand binnenkomt.
  */
+/**
+ * De foto per wens. Yasin, 8 september 2026: "doe bijpassende foto's". De zes
+ * intent-beelden waren bijsnijdsels die per wens weinig zeiden (bij huidverjonging een
+ * lachende behandelaar met een pen, bij glow een laser op een been). Nu per wens de
+ * behandeling die er het meest bij hoort, uit dezelfde eigen shoot.
+ */
 export const HOME_WENS_BEELD: Record<
   Exclude<HuidwensId, "overig">,
   {
@@ -30,39 +28,39 @@ export const HOME_WENS_BEELD: Record<
 > = {
   acne: {
     icoon: "verstopte-porie",
-    image: FIGMA_INTENT_ACNE.src,
-    imageAlt: FIGMA_INTENT_ACNE.alt,
+    image: "/images/shoot/beh-jongeren-acne.jpg",
+    imageAlt: "Acnebehandeling bij een jongere in de behandelkamer",
   },
   pigment: {
     icoon: "huid-glans",
-    image: FIGMA_INTENT_PIGMENT.src,
-    imageAlt: FIGMA_INTENT_PIGMENT.alt,
+    image: "/images/shoot/beh-cosmelan-masker.jpg",
+    imageAlt: "Cosmelan-masker wordt aangebracht bij een pigmentbehandeling",
   },
   littekens: {
     icoon: "huid-bultje",
-    image: FIGMA_INTENT_LITTEKENS.src,
-    imageAlt: FIGMA_INTENT_LITTEKENS.alt,
+    image: "/images/shoot/stoel-skinpen.jpg",
+    imageAlt: "Microneedling met de SkinPen in de behandelstoel",
   },
   verjonging: {
     icoon: "huid-strakker",
-    image: FIGMA_INTENT_VEROUDERING.src,
-    imageAlt: FIGMA_INTENT_VEROUDERING.alt,
+    image: "/images/shoot/beh-fotona.jpg",
+    imageAlt:
+      "Fotona-laserbehandeling met oogbescherming voor cliënt en behandelaar",
   },
   glow: {
     icoon: "porie-vocht",
-    image: FIGMA_INTENT_LICHAAM.src,
-    imageAlt: FIGMA_INTENT_LICHAAM.alt,
+    image: "/images/shoot/beh-hydrafacial-syndeo.jpg",
+    imageAlt: "HydraFacial-behandeling met de Syndeo in de behandelkamer",
   },
   ontharing: {
     icoon: "haarzakje",
-    image: FIGMA_INTENT_LASER.src,
-    imageAlt: FIGMA_INTENT_LASER.alt,
+    image: "/images/shoot/laser-met-bril.jpg",
+    imageAlt: "Laserontharing: behandelaar en cliënt dragen een beschermbril",
   },
-  /* [BEELD-NODIG: eigen foto voor haaruitval; nu de laserfoto als tijdelijke vulling] */
   haaruitval: {
     icoon: "pincet-haar",
-    image: FIGMA_INTENT_LASER.src,
-    imageAlt: FIGMA_INTENT_LASER.alt,
+    image: "/images/shoot/beh-xl-hair.jpg",
+    imageAlt: "XL Hair-behandeling voor haar en hoofdhuid",
   },
 };
 

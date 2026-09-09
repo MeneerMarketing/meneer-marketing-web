@@ -1256,3 +1256,21 @@ html.js-reveal [data-reveal].is-visible {
 .diba-hero-in-3 {
   animation-delay: 0.24s;
 }
+
+/* De mobiele actiebalk (MobieleActiebalk.tsx) meldt zijn hoogte hier, zodat de pagina
+   onderaan niet achter de balk verdwijnt. Op desktop is de balk er niet en is dit nul. */
+body {
+  padding-bottom: var(--actiebalk, 0px);
+}
+
+/* De tweede laag van het mobiele menu schuift van rechts in (HoofdNav, MobielPaneel). */
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

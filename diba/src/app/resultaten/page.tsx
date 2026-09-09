@@ -8,6 +8,7 @@ import { FOTOVARIABELEN } from "@/data/fotobewijs";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Resultaten.
@@ -61,7 +62,7 @@ export default function ResultatenPage() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -87,11 +88,13 @@ export default function ResultatenPage() {
               daarvoor toestemming hebben gegeven. Zolang geschikte beelden
               ontbreken, plaatsen we geen voorbeeldfoto&apos;s van anderen.
             </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              In plaats daarvan krijg je iets wat je aan drie foto&apos;s niet
-              hebt: de reden waarom je vrijwel geen enkel voor-en-na-beeld op
-              internet kunt vertrouwen.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                In plaats daarvan krijg je iets wat je aan drie foto&apos;s niet
+                hebt: de reden waarom je vrijwel geen enkel voor-en-na-beeld op
+                internet kunt vertrouwen.
+              </p>
+            </LeesVerder>
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
@@ -110,7 +113,7 @@ export default function ResultatenPage() {
       </section>
 
       {/* ── De Fotocheck: de signatuur ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div>
             <Label>Zeven vragen</Label>
@@ -137,7 +140,7 @@ export default function ResultatenPage() {
       </section>
 
       {/* ── Het protocol ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
             <div className="max-w-[62ch]">
@@ -156,7 +159,7 @@ export default function ResultatenPage() {
             {/* Geen "01, 02, 03" boven deze kaarten. Deze zeven regels hebben geen
                 volgorde, dus zo'n nummer draagt niets: het is opmaak die doet alsof er
                 een stappenplan staat waar een lijst staat. De regel zelf is de kop. */}
-            <ul className="mt-12 grid gap-4 md:grid-cols-2">
+            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2">
               {FOTOVARIABELEN.map((v) => (
                 <li
                   key={v.id}
@@ -181,7 +184,7 @@ export default function ResultatenPage() {
       </section>
 
       {/* ── Wat we nu al wel kunnen laten zien ── */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat wel meetbaar is</Label>
@@ -197,12 +200,14 @@ export default function ResultatenPage() {
               latere meting beter vergelijkbaar dan een losse telefoonfoto onder
               ander licht.
             </p>
-            <p className="mt-4 max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Wat er dan uit komt zijn geen mooie plaatjes maar waardes:
-              pigment, vocht, poriestructuur, tekenen van veroudering. Jouw
-              eigen vertrekpunt, en het enige eerlijke vergelijkingsmateriaal
-              dat er bestaat.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]">
+                Wat er dan uit komt zijn geen mooie plaatjes maar waardes:
+                pigment, vocht, poriestructuur, tekenen van veroudering. Jouw
+                eigen vertrekpunt, en het enige eerlijke vergelijkingsmateriaal
+                dat er bestaat.
+              </p>
+            </LeesVerder>
 
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
@@ -256,7 +261,7 @@ export default function ResultatenPage() {
       </section>
 
       {/* ── Afsluiter ── */}
-      <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Wat hier komt te staan</Label>
@@ -272,11 +277,13 @@ export default function ResultatenPage() {
               toestemming hebben gegeven en waarbij de foto&apos;s onder
               vergelijkbare omstandigheden zijn gemaakt.
             </p>
-            <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              Ben je klant en wil je dat jouw beelden meedoen, dan hoor je van
-              tevoren waar ze te zien zullen zijn en kun je die toestemming op
-              elk moment weer intrekken.
-            </p>
+            <LeesVerder>
+              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
+                Ben je klant en wil je dat jouw beelden meedoen, dan hoor je van
+                tevoren waar ze te zien zullen zijn en kun je die toestemming op
+                elk moment weer intrekken.
+              </p>
+            </LeesVerder>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href="/contact"
@@ -304,7 +311,7 @@ export default function ResultatenPage() {
           Elk vak toont nu "Nog geen beeld". Er staat dus nergens een voorbeeldfoto uit een
           andere shoot: dat zou een resultaat tonen dat niemand behaald heeft, en precies
           daar gaat de uitleg hierboven over. */}
-      <section className="bg-[var(--g-025)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
             <Label>De vergelijkingen</Label>

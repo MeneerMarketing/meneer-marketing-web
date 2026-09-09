@@ -263,7 +263,7 @@ export default async function ApparaatPage({ params }: PageProps) {
           diepte wel het onderscheid met de buurbehandeling is. */}
       <HuidproblemenBijApparaat apparaat={a} />
 
-      <section className="px-5 pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
         <div className="mx-auto">
           {/* De techniek zelf.
 
@@ -294,7 +294,7 @@ export default async function ApparaatPage({ params }: PageProps) {
       </section>
 
       {/* ── Waarvoor en waarvoor niet ── */}
-      <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <Label>Waar het voor is</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
@@ -305,7 +305,7 @@ export default async function ApparaatPage({ params }: PageProps) {
             voor je doet.
           </p>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
+          <div className="mt-8 sm:mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
               <Label>Hier werkt het goed bij</Label>
               <ul className="mt-5 space-y-3">
@@ -341,7 +341,7 @@ export default async function ApparaatPage({ params }: PageProps) {
           Wie hier belandt wil weten waarom hij dit apparaat zou krijgen en niet de buur
           ernaast, en dat is precies wat een merkfolder niet vertelt. */}
       {buren.length ? (
-        <section className="px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
             <div>
               <Label>Waarom {woord}</Label>
@@ -356,7 +356,7 @@ export default async function ApparaatPage({ params }: PageProps) {
               </p>
             </div>
 
-            <ul className="mt-12 grid gap-4 lg:grid-cols-3 lg:items-start">
+            <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-3 lg:items-start">
               {buren.map((v) => (
                 <li
                   key={v.apparaat}
@@ -391,7 +391,7 @@ export default async function ApparaatPage({ params }: PageProps) {
           behandeling en van daar naar een probleem, maar niet in één keer. Afgeleid uit
           de behandelingen, zodat er geen tweede lijst is die kan gaan afwijken. */}
       {problemen.length ? (
-        <section className="bg-[var(--g-050)] px-5 py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto">
             <div>
               <Label>Waar het bij helpt</Label>
@@ -442,7 +442,7 @@ export default async function ApparaatPage({ params }: PageProps) {
           apparaatnaam zoekt, zoekt op het apparaat — terwijl het apparaat het minst
           bepalende deel van de uitkomst is. Dat is het enige wat hier nog gezegd moet
           worden, en het verdient een blok en geen voetnoot. */}
-      <section className="px-5 pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
+      <section className="px-5 pt-10 sm:pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <div className="lg:grid lg:grid-cols-[1.18fr_.82fr] lg:gap-14">

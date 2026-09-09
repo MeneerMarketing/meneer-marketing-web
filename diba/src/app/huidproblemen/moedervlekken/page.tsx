@@ -20,6 +20,7 @@ import {
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Moedervlekken.
@@ -74,7 +75,7 @@ export default function MoedervlekkenPage() {
           Geen beeld naast de kop. Op deze pagina zou een sfeerfoto van een behandeling
           precies het verkeerde suggereren, namelijk dat je hiermee bij ons terechtkunt. */}
       <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -106,12 +107,13 @@ export default function MoedervlekkenPage() {
               huidtherapeut beoordeelt het plekje, en na verwijzing van je arts
               coaguleren we het waar dat kan.
             </p>
-
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              De verwijzing is geen formaliteit: alleen een arts kan weefsel
-              laten onderzoeken, en dat kan achteraf niet meer. Met die
-              verwijzing in de hand doen wij de rest.
-            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                De verwijzing is geen formaliteit: alleen een arts kan weefsel
+                laten onderzoeken, en dat kan achteraf niet meer. Met die
+                verwijzing in de hand doen wij de rest.
+              </p>
+            </LeesVerder>
 
             <div className="mt-9 flex flex-wrap gap-3">
               <Button variant="primair-op-donker" href="/intake">
@@ -147,7 +149,7 @@ export default function MoedervlekkenPage() {
       {/* ── De ABCDE-check: de uitblinker ──────────────────────────────── */}
       <section
         id="check"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -185,7 +187,7 @@ export default function MoedervlekkenPage() {
           de site zonder afspraakknop. Nu staat er wat er gebeurt als je komt, in de
           volgorde waarin het gebeurt. De huisarts is niet weg: hij staat in stap één, waar
           hij thuishoort. */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.1fr_.9fr] lg:gap-16">
           <div>
             <Label opDonker>Hoe het gaat</Label>

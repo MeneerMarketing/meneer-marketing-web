@@ -98,7 +98,7 @@ export default function Reviewslider() {
   });
 
   return (
-    <section className="overflow-hidden bg-[var(--g-050)] py-16 lg:py-24">
+    <section className="overflow-hidden bg-[var(--g-050)] py-10 sm:py-16 lg:py-24">
       <div className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end lg:gap-16">
           <div>
@@ -166,7 +166,11 @@ export default function Reviewslider() {
         }}
       >
         <Band reviews={BAND_EEN} />
-        <Band reviews={BAND_TWEE} terug />
+        {/* Op een telefoon één band: twee banden van driehonderd pixels is een half
+            scherm reviews, en de tweede zegt niets wat de eerste niet zegt. */}
+        <div className="max-md:hidden">
+          <Band reviews={BAND_TWEE} terug />
+        </div>
       </div>
     </section>
   );

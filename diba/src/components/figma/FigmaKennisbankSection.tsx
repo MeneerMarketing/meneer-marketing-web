@@ -33,14 +33,14 @@ export default function FigmaKennisbankSection({
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-8 sm:mt-10 grid gap-5 md:grid-cols-3">
           {HOME_KENNISBANK_ARTICLES.map((article) => (
             <Link
               key={article.id}
               href={article.href}
               className="group flex flex-col overflow-hidden rounded-[var(--r-md)] bg-[var(--g-025)] transition hover:-translate-y-1 hover:shadow-[0_14px_35px_rgba(67,79,58,.1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--g-200)]">
+              <div className="relative aspect-[16/7] overflow-hidden bg-[var(--g-200)] md:aspect-[4/3]">
                 <Image
                   src={article.image.src}
                   alt={article.image.alt}

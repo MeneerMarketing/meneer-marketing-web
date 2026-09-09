@@ -28,6 +28,7 @@ import {
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Couperose — eigen pagina, met de drukproef als uitblinker.
@@ -123,7 +124,7 @@ export default function CouperosePage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-14 lg:py-20">
+          <div className="py-10 sm:py-14 lg:py-20">
             <nav
               aria-label="Kruimelpad"
               className="diba-label flex flex-wrap gap-2"
@@ -152,28 +153,37 @@ export default function CouperosePage() {
               een andere aanpak, al zitten ze vaak samen. De huidtherapeut
               beoordeelt onder vergroting welke van de twee het bij jou is.
             </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+                We behandelen couperose met de Nordlys IPL en met laser. Onze
+                huidtherapeuten werken hier dagelijks mee en stellen het
+                apparaat af op jouw huidtype en op de vaatjes die er zitten.
+                Hoeveel sessies dat vraagt hoor je tijdens de intake.
+              </p>
+            </LeesVerder>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              We behandelen couperose met de Nordlys IPL en met laser. Onze
-              huidtherapeuten werken hier dagelijks mee en stellen het apparaat
-              af op jouw huidtype en op de vaatjes die er zitten. Hoeveel
-              sessies dat vraagt hoor je tijdens de intake.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <Button href="#drukproef">Wat we in het consult bekijken</Button>
+            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+              <Button
+                href="#drukproef"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="In het consult"
+              >
+                Wat we in het consult bekijken
+              </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
                 variant="ghost"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
+                kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
               </Button>
             </div>
           </div>
 
-          <div className="relative min-h-[300px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] lg:min-h-[460px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
             <Image
               src="/images/shoot/beh-nordlys.jpg"
               alt="Behandelaar werkt met de Nordlys aan de huid van een cliënt"
@@ -193,7 +203,7 @@ export default function CouperosePage() {
       {/* ── De drukproef: de uitblinker ────────────────────────────────── */}
       <section
         id="drukproef"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -204,7 +214,7 @@ export default function CouperosePage() {
             intro="Couperose en rosacea lopen met het blote oog door elkaar en vragen een andere aanpak. Zo stelt de huidtherapeut vast waar je mee te maken hebt."
           />
 
-          <ol className="mt-12 grid gap-5 lg:grid-cols-3">
+          <ol className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-3">
             {DRUKPROEF_STAPPEN.map((stap) => (
               <li
                 key={stap.kop}
@@ -229,7 +239,7 @@ export default function CouperosePage() {
       {/* ── Welk beeld ─────────────────────────────────────────────────── */}
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -250,7 +260,7 @@ export default function CouperosePage() {
       {/* ── Couperose of rosacea ───────────────────────────────────────── */}
       <section
         id="rosacea"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -259,7 +269,7 @@ export default function CouperosePage() {
             intro="Ze lopen vaak samen en worden daarom door elkaar gehaald, ook door ons vak. Vier verschillen die je zelf kunt nagaan voordat je iets boekt."
           />
 
-          <dl className="mt-12 grid gap-5 lg:grid-cols-2">
+          <dl className="mt-8 sm:mt-12 grid gap-5 lg:grid-cols-2">
             {COUPEROSE_OF_ROSACEA.map(([kop, tekst]) => (
               <div
                 key={kop}

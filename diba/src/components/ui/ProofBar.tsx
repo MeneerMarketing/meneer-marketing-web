@@ -45,8 +45,8 @@ export default function ProofBar({
     >
       <div className="mx-auto grid grid-cols-2 gap-px bg-[var(--g-100)] md:grid-cols-4">
         {items.map((item) => (
-          <div key={item.label} className="bg-white py-4 text-center md:py-7">
-            <strong className="block text-xl tracking-[-.05em] text-[var(--g-700)] tabular-nums md:text-3xl md:tracking-[-.06em]">
+          <div key={item.label} className="bg-white py-3 text-center md:py-7">
+            <strong className="block text-lg tracking-[-.05em] text-[var(--g-700)] tabular-nums md:text-3xl md:tracking-[-.06em]">
               {formatteer(item)}
             </strong>
             <span className="diba-label mt-1 block text-[var(--t-muted)] md:mt-2">
