@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { MeneerPeek } from "@/components/home/MeneerPeek";
 import { Logo } from "@/components/site/Logo";
 import { PartnerCredentialsStrip } from "@/components/site/PartnerCredentialsStrip";
-import { businessEmailDisplay, businessKvkDisplay, mailtoHref } from "@/lib/contact";
+import { businessEmailDisplay, businessKvkDisplay, businessWhatsAppDisplay, mailtoHref, whatsappHref } from "@/lib/contact";
 import { siteCtaList, siteCtas } from "@/lib/cta";
 import { megaMenuColumns } from "@/lib/navigation";
 import { BRAND_DISPLAY } from "@/lib/seo/e-e-a-t";
@@ -316,6 +316,17 @@ export function SiteFooter() {
             <span className="mx-2 text-slate-600" aria-hidden>
               ·
             </span>
+            <a
+              href={whatsappHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-slate-300 hover:text-sky-300"
+            >
+              WhatsApp {businessWhatsAppDisplay}
+            </a>
+            <span className="mx-2 text-slate-600" aria-hidden>
+              ·
+            </span>
             {businessKvkDisplay}
           </p>
         </div>
@@ -333,6 +344,17 @@ export function SiteFooter() {
           <p>
             <a href={mailtoHref()} className="font-medium text-slate-300 hover:text-sky-300">
               {businessEmailDisplay}
+            </a>
+            <span className="mx-2 text-slate-600" aria-hidden>
+              ·
+            </span>
+            <a
+              href={whatsappHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-slate-300 hover:text-sky-300"
+            >
+              WhatsApp {businessWhatsAppDisplay}
             </a>
             <span className="mx-2 text-slate-600" aria-hidden>
               ·

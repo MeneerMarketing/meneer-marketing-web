@@ -2,6 +2,7 @@ import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/effects/Reveal";
 import { CONTACT_HERO } from "@/data/contact-index";
 import { mailtoHref, businessEmailDisplay } from "@/lib/contact";
+import { WhatsAppContactLink } from "@/components/contact/WhatsAppContactLink";
 
 export function ContactIndexHero() {
   const mailQuick = mailtoHref({
@@ -49,6 +50,7 @@ export function ContactIndexHero() {
                 Mail {businessEmailDisplay}
                 <ArrowUpRight className="size-4" aria-hidden />
               </a>
+              <WhatsAppContactLink variant="hero" />
             </div>
 
             <dl className="mt-8 grid grid-cols-3 gap-2 border-t border-slate-200 pt-6 text-xs tracking-tight sm:gap-4 sm:text-sm">

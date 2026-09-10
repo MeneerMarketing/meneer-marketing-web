@@ -37,6 +37,7 @@ import {
   type ContactQuickReply,
 } from "@/data/contact-index";
 import { siteCtas } from "@/lib/cta";
+import { WhatsAppContactLink } from "@/components/contact/WhatsAppContactLink";
 
 type ChatPhase = "intro" | "topic" | "focus" | "message" | "contact" | "sent";
 
@@ -150,6 +151,8 @@ function ContactChatAside() {
 
   return (
     <aside className="flex flex-col gap-4 lg:sticky lg:top-24">
+      <WhatsAppContactLink variant="card" />
+
       <a
         href={mailQuick}
         className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-[#FF5722]/40 hover:shadow-md"

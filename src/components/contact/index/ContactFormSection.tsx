@@ -12,6 +12,7 @@ import {
 } from "@/lib/contact";
 import { CONTACT_QUOTES } from "@/data/contact-index";
 import { siteCtas } from "@/lib/cta";
+import { WhatsAppContactLink } from "@/components/contact/WhatsAppContactLink";
 
 function ContactAsidePanel() {
   const reduce = useReducedMotion();
@@ -46,6 +47,8 @@ function ContactAsidePanel() {
         </AnimatePresence>
       </div>
 
+      <WhatsAppContactLink variant="card" />
+
       <a
         href={mailQuick}
         className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-[#FF5722]/5 p-5 transition hover:border-[#FF5722]/40 hover:shadow-md"
@@ -67,17 +70,16 @@ function ContactAsidePanel() {
 
       <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
         <p className="text-[10px] font-bold uppercase tracking-wider text-[#FF5722]">
-          Liever meteen bellen?
+          Liever met structuur?
         </p>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
-          Plan een intake. Je vult alvast je onderwerp en prioriteit in. Scheelt
-          een mail heen en weer.
+          De intake duurt twee minuten. Handig als je al weet dat je wilt starten.
         </p>
         <Link
           href={siteCtas.startIntake.href}
           className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-[#FF5722] hover:underline"
         >
-          Plan een gesprek
+          {siteCtas.startIntake.label}
           <ArrowUpRight className="size-4" aria-hidden />
         </Link>
       </div>

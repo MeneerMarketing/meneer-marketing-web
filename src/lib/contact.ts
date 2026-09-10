@@ -47,19 +47,26 @@ export function mailtoHref(params?: {
   return qs ? `mailto:${businessEmail}?${qs}` : `mailto:${businessEmail}`;
 }
 
+/** WhatsApp Business (E.164 zonder +). Env overschrijft default. */
+const DEFAULT_WHATSAPP_E164 = "31612935389";
+const DEFAULT_WHATSAPP_DISPLAY = "06 12935389";
+
 /** Optioneel via env, bijv. NEXT_PUBLIC_BUSINESS_PHONE=06 12 34 56 78 */
 export const businessPhone: string | null =
   process.env.NEXT_PUBLIC_BUSINESS_PHONE?.trim() || null;
 
 export const businessPhoneDisplay: string | null = businessPhone;
 
-/** E.164 zonder +, bijv. NEXT_PUBLIC_BUSINESS_WHATSAPP=31612345678 */
-export const businessWhatsAppNumber: string | null =
-  process.env.NEXT_PUBLIC_BUSINESS_WHATSAPP?.replace(/\D/g, "") || null;
+export const businessWhatsAppNumber: string =
+  process.env.NEXT_PUBLIC_BUSINESS_WHATSAPP?.replace(/\D/g, "") ||
+  DEFAULT_WHATSAPP_E164;
 
-export const businessWhatsAppDisplay: string | null =
+export const businessWhatsAppDisplay: string =
   process.env.NEXT_PUBLIC_BUSINESS_WHATSAPP_DISPLAY?.trim() ||
-  businessPhoneDisplay;
+  DEFAULT_WHATSAPP_DISPLAY;
+
+export const defaultWhatsAppMessage =
+  "Hoi! Ik heb een vraag over mijn marketing." as const;
 
 export function telHref(phone = businessPhone): string | null {
   if (!phone) return null;
@@ -67,10 +74,11 @@ export function telHref(phone = businessPhone): string | null {
   return digits ? `tel:${digits}` : null;
 }
 
-export function whatsappHref(message?: string): string | null {
-  if (!businessWhatsAppNumber) return null;
+export function whatsappHref(
+  message: string = defaultWhatsAppMessage,
+): string {
   const base = `https://wa.me/${businessWhatsAppNumber}`;
-  if (!message?.trim()) return base;
+  if (!message.trim()) return base;
   return `${base}?text=${encodeURIComponent(message.trim())}`;
 }
 
@@ -85,8 +93,7 @@ export interface ContactChannel {
 
 /** Publieke contactkanalen voor werkwijze, contact en over-pagina's. */
 export function getContactChannels(): ContactChannel[] {
-  const whatsappLink =
-    whatsappHref("Hoi! Ik heb een vraag over mijn marketing.") ?? "/contact";
+  const whatsappLink = whatsappHref();
   const phoneLink = telHref() ?? "/contact";
 
   return [
@@ -101,20 +108,18 @@ export function getContactChannels(): ContactChannel[] {
     {
       id: "whatsapp",
       label: "WhatsApp",
-      action: businessWhatsAppDisplay ?? "Stuur een app",
-      hint: businessWhatsAppNumber
-        ? "Kort en informeel. Handig voor een snelle vraag."
-        : "Laat je nummer achter via contact. Dan app ik je terug.",
+      action: businessWhatsAppDisplay,
+      hint: "Kort appje sturen mag. Handig voor een snelle vraag.",
       href: whatsappLink,
-      external: Boolean(businessWhatsAppNumber),
+      external: true,
     },
     {
       id: "phone",
       label: "Telefoon",
-      action: businessPhoneDisplay ?? "Bel of plan een moment",
+      action: businessPhoneDisplay ?? "Plan een moment",
       hint: businessPhone
         ? "Liever even praten? Bel me gerust."
-        : "Vraag een belafspraak aan via contact of mail.",
+        : "Plan een gesprek via intake of stuur een app.",
       href: phoneLink,
       external: Boolean(businessPhone),
     },
