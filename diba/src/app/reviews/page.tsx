@@ -115,13 +115,14 @@ export default async function ReviewsPage({
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews op Salonized,
-              gemiddeld een {gemiddeld}. Op elke andere site is dat het
-              verkoopargument. Hier staat er meteen bij waarom zo een cijfer
-              minder zegt dan het lijkt.
+              gemiddeld een {gemiddeld}. Ze zijn na de afspraak geschreven door
+              mensen die hier zijn geweest, en ze staan er allemaal: met tekst
+              en zonder.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Lees je daarna alsnog door, dan lees je iets wat je kunt wegen.
-              Dat is meer waard dan een muur met vijven.
+              Zoek gerust op de behandeling die jou bezighoudt. Dan lees je wat
+              mensen met jouw vraag erover schreven, en dat zegt meer dan het
+              gemiddelde eronder.
             </p>
           </div>
 
@@ -139,78 +140,13 @@ export default async function ReviewsPage({
               verwijderen. Hieronder staan ze allemaal, overgenomen in de
               volgorde van de bron.
             </p>
-            <a
-              href={SALONIZED_REVIEWS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="diba-label mt-7 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
-            >
-              Controleer ze bij de bron
-              <span aria-hidden="true">↗</span>
-            </a>
+            {/* De knop naar Salonized stond hier als vlak. Okan, 10 september 2026:
+                "korter, niet in blokvorm, en meer onderaan de pagina." Hij staat nu als
+                regel onder de laatste kaarten. */}
           </div>
         </div>
       </section>
 
-      {/* ── Wat vijf sterren niet zegt ── */}
-      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
-        <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
-            <div className="max-w-[62ch]">
-              <Label>Lees dit eerst</Label>
-              <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Drie redenen{" "}
-                <span className="diba-accent"> om een 5,0 te wantrouwen.</span>
-              </h2>
-              <p className="mt-6 text-[16px] leading-7 text-[var(--t-body)]">
-                Ook die van ons. Deze drie gelden voor elk reviewgemiddelde dat
-                je ergens ziet staan.
-              </p>
-            </div>
-
-            <MobielInklap
-              className="mt-8 sm:mt-12"
-              label="Lees de drie redenen"
-            >
-              <ul className="grid gap-4 md:grid-cols-3">
-                {[
-                  {
-                    kop: "Wie wegblijft, schrijft niets",
-                    zin: "De uitnodiging komt na een bezoek. Wie ontevreden was komt vaak niet terug, krijgt dus geen tweede uitnodiging, en verdwijnt daarmee uit het gemiddelde. Dat is geen opzet maar het maakt het cijfer wel rooskleuriger dan de werkelijkheid.",
-                  },
-                  {
-                    kop: "Het gaat over het bezoek",
-                    zin: "Bijna elke review hierboven gaat over hoe iemand behandeld is: er werd tijd genomen, alles werd uitgelegd, iemand was voorzichtig. Dat is echt en het is belangrijk. Het is alleen iets anders dan of jouw huid gaat veranderen.",
-                  },
-                  {
-                    kop: "Het is geschreven vlak erna",
-                    zin: "Een review komt meestal binnen een week. Bij de meeste behandelingen hier is er dan nog niets te zien, want het resultaat komt weken later. Wat je leest is dus de ervaring en niet de uitkomst.",
-                  },
-                ].map((r) => (
-                  <li
-                    key={r.kop}
-                    className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
-                  >
-                    <p className="text-[18px] leading-7 font-medium">{r.kop}</p>
-                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-                      {r.zin}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </MobielInklap>
-
-            <p className="mt-10 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Een review kan wel een goed beeld geven van de manier waarop
-              klanten worden ontvangen, geïnformeerd en behandeld.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── De muur ── */}
-      {/* Reviews gaan bijna altijd over een persoon en niet over een apparaat. Dan hoort er
-          ook een mens bij te staan. */}
       <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <BeeldVignet
@@ -264,26 +200,19 @@ export default async function ReviewsPage({
           </div>
           <div className="max-w-[58ch]">
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              De reviews komen van de openbare Salonized-pagina. Controleer bij
-              twijfel altijd de oorspronkelijke bron.
-            </p>
-            <LeesVerder>
-              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-                Het is wel een momentopname. Er komen er dagelijks bij, en die
-                staan daar eerder dan hier.
-              </p>
-            </LeesVerder>
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+              De reviews komen van de openbare Salonized-pagina, en het is een
+              momentopname: er komen er dagelijks bij, en die staan daar eerder
+              dan hier.{" "}
               <a
                 href={SALONIZED_REVIEWS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
+                className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Lees ze allemaal bij de bron
-                <span aria-hidden="true">↗</span>
+                Controleer ze bij de bron
               </a>
-            </div>
+              .
+            </p>
           </div>
         </div>
       </section>

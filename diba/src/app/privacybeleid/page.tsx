@@ -309,19 +309,52 @@ export default function PrivacyPage() {
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Een dossier van een geneeskundige behandeling moet twintig jaar
-            bewaard blijven. Dat staat in de wet, en het is langer dan de meeste
-            mensen verwachten. Daarom staat er hieronder bij elk gegeven op
-            grond waarvan wij het bewaren.
+            bewaard blijven, gerekend vanaf de laatste keer dat er iets in
+            veranderde. Dat is geen keuze van ons: het staat sinds 1 januari
+            2020 in de wet, in artikel 7:454 van het Burgerlijk Wetboek.
+            Daarvoor was het vijftien jaar. Wat niet bij zo een dossier hoort,
+            bewaren we korter, en hieronder staat per gegeven waarom.
           </p>
 
-          <div className="mt-10 overflow-x-auto">
-            <table className="w-full min-w-[640px] border-collapse text-left">
+          {/* Yasin, 10 september 2026: "die tabel gaat niet lekker op mobiel, je ziet
+              niet dat je naar rechts kunt swipen en er is veel witruimte."
+
+              Klopte, en het is niet met een schaduwrandje op te lossen. Drie kolommen van
+              samen 640 punten passen niet op 375, dus stond er een tabel die halverwege
+              ophield en waarvan de derde kolom, juist de kolom met de reden, onzichtbaar
+              was. Wie niet wist dat hij kon schuiven, las de helft.
+
+              Onder `sm` is het daarom geen tabel meer maar een rijtje blokken: per gegeven
+              de naam, de termijn en de reden onder elkaar. Er valt niets te schuiven en er
+              is niets verborgen. Vanaf `sm` past de tabel wel, en daar is hij het waard:
+              drie kolommen naast elkaar lees je sneller dan vijf blokken. */}
+          <ul className="mt-8 space-y-3 sm:hidden">
+            {TERMIJNEN.map((t) => (
+              <li
+                key={t.wat}
+                className="rounded-[var(--r-md)] bg-[var(--g-025)] p-5"
+              >
+                <p className="text-[16px] leading-7 font-medium text-[var(--t-strong)]">
+                  {t.wat}
+                </p>
+                <p className="diba-label mt-2 text-[var(--g-700)]">
+                  {t.hoelang}
+                </p>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                  {publicCopy(t.grond)}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-10 hidden sm:block">
+            <table className="w-full border-collapse text-left">
               <thead>
                 <tr className="border-b border-[var(--g-100)]">
-                  <th scope="col" className="diba-label pb-3 pr-6">
+                  <th scope="col" className="diba-label pr-6 pb-3">
                     Wat
                   </th>
-                  <th scope="col" className="diba-label pb-3 pr-6">
+                  <th scope="col" className="diba-label pr-6 pb-3">
                     Hoe lang
                   </th>
                   <th scope="col" className="diba-label pb-3">
@@ -335,7 +368,7 @@ export default function PrivacyPage() {
                     <td className="py-4 pr-6 align-top text-[15px] leading-7 font-medium">
                       {t.wat}
                     </td>
-                    <td className="py-4 pr-6 align-top text-[15px] leading-7 whitespace-nowrap text-[var(--t-body)]">
+                    <td className="py-4 pr-6 align-top text-[15px] leading-7 text-[var(--t-body)]">
                       {t.hoelang}
                     </td>
                     <td className="max-w-[52ch] py-4 align-top text-[15px] leading-7 text-[var(--t-body)]">

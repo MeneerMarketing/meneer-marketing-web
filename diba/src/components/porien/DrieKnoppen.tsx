@@ -85,17 +85,24 @@ export default function DrieKnoppen() {
   return (
     <div className={`mt-12 ${RASTER_SECTIE}`}>
       {/* ── De tekening ──
-          Blijft op groot scherm staan terwijl je verderop schakelt, want anders schuift
-          hij uit beeld op het moment dat je een knop omzet.
+          Blijft staan terwijl je verderop schakelt, want anders schuift hij uit beeld op
+          het moment dat je een knop omzet.
 
-          Op mobiel juist niet: daar nam hij plakkend 311px van een scherm van 664px in
-          beslag, en samen met de cookiebalk bleef er nog geen derde over om in te werken.
-          Daar scrol je liever even terug. */}
-      <div className="self-start rounded-[var(--r-md)] bg-white p-5 sm:p-7 lg:sticky lg:top-24">
+          Op een telefoon stond hij eerst bewust niet vast: plakkend nam hij 311 van de
+          664 punten in beslag en bleef er te weinig over om in te werken. Okan, 10
+          september 2026: "zorg dat de tekening altijd in beeld blijft, nu scrol je hem
+          weg omdat je de opties moet lezen." Hij heeft gelijk, want een schakelaar
+          waarvan je het gevolg niet ziet is geen schakelaar.
+
+          De oplossing zit in de maat en niet in de keuze: op een telefoon staat de
+          tekening vast bovenaan én kleiner, hooguit 40% van de schermbreedte hoog. Dat
+          is ongeveer 150 punten in plaats van 311, en dan blijft er onder de menubalk
+          ruim vierhonderd punten over voor de knoppen. */}
+      <div className="sticky top-[calc(var(--nav-h)+0.5rem)] z-10 self-start rounded-[var(--r-md)] bg-white p-3 shadow-[var(--shadow-float)] sm:p-7 lg:top-24 lg:shadow-none">
         <div className="overflow-hidden rounded-[var(--r-sm)]">
           <svg
             viewBox="0 0 520 300"
-            className="block w-full"
+            className="block max-h-[40vw] w-full sm:max-h-none"
             role="img"
             aria-label={`Schematisch stuk huid met poriën. ${uitkomst.kop}.`}
           >

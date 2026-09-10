@@ -100,14 +100,20 @@ export const FIGMA_KENNISBANK_ACNE = {
   alt: "Huid met acne wordt van dichtbij beoordeeld door een behandelaar",
 } as const satisfies Beeld;
 
+/* Yasin, 10 september 2026: "bij pigment zie je een microneedlingfoto." Klopte: kb-pigment
+   toont de Dermapen. Dit is het Cosmelan-masker, en dat is precies waar de kaart over gaat:
+   een pigmenttraject dat over maanden loopt. */
 export const FIGMA_KENNISBANK_PIGMENT = {
-  src: shoot("kb-pigment"),
-  alt: "Behandeling gericht op pigment in een klinische setting",
+  src: shoot("beh-cosmelan-masker"),
+  alt: "Een Cosmelan-masker wordt aangebracht bij een pigmenttraject",
 } as const satisfies Beeld;
 
+/* En kb-laser toonde een laserpuls op de hoofdhuid, wat naast een kaart over
+   laserontharing als haarbehandeling leest. Deze toont het handstuk op een baardlijn, met
+   de oogbescherming die erbij hoort. */
 export const FIGMA_KENNISBANK_LASER = {
-  src: shoot("kb-laser"),
-  alt: "Laserbehandeling met beschermbril bij Diba Clinics",
+  src: shoot("beh-laserontharing-man"),
+  alt: "Laserontharing van de baardlijn, met oogbescherming voor de cliënt",
 } as const satisfies Beeld;
 
 /** Intent-kaarten */

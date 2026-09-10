@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Contactformulier from "@/components/contact/Contactformulier";
 import Ingangkiezer from "@/components/contact/Ingangkiezer";
+import Kaart, { MAPS_URL } from "@/components/contact/Kaart";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
+import Reviewregel from "@/components/reviews/Reviewregel";
 import { SITUATIES } from "@/data/voorwaarden";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -11,14 +14,12 @@ import {
   DIBA_EMAIL,
   DIBA_INSTAGRAM_URL,
   DIBA_OPENINGSTIJDEN,
-  DIBA_SALONIZED_BOOKING_URL,
   DIBA_SITE,
   DIBA_SITE_URL,
   DIBA_TELEFOON,
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
-import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * Contact.
@@ -29,96 +30,96 @@ import LeesVerder from "@/components/ui/LeesVerder";
  * heeft al een vraag en zoekt alleen nog waar hij die kwijt kan. De opbouw volgt dat, en
  * daarom staat het adres bovenaan en niet in een voettekst.
  *
- * WAT ER HIERVOOR STOND EN WAAROM DAT WEG MOEST.
+ * DE HERZIENING VAN 10 SEPTEMBER 2026.
  *
- * Drie dingen, en geen van drieÃ«n een opmaakkwestie:
+ * Yasin: "die hele contactpagina vind ik qua tekst en indeling te zweverig, we hebben veel
+ * witruimte en zweverige aparte teksten." Drie dingen zijn daarop veranderd:
  *
- * 1. Telefoon en e-mail stonden als "[GEGEVEN-NODIG]" en waren daarmee leeg, terwijl ze
- *    allebei gewoon in `site.ts` staan en op dibaclinics.nl. Een contactpagina zonder
- *    telefoonnummer is geen contactpagina.
- * 2. "Tram 4 of 8 richting Kralingse Zoom." Kralingse Zoom ligt aan de andere kant van
- *    de stad; de kliniek staat in Hillegersberg. Dat is verzonnen reisadvies waar iemand
- *    naar handelt, dus het staat er niet meer. [GEGEVEN-NODIG: de route, Okan]
- * 3. "Het huidconsult. Gratis, 4 minuten." Het huidconsult is de meting in de kliniek en
- *    die staat op de prijslijst voor vijftig euro. Gratis en vier minuten is de online
- *    intake, en dat is iets anders. Die twee stonden op drie pagina’s door elkaar.
+ * 1. Een formulier, in de linkerkolom naast de openingstijden. Daar stond een kop met een
+ *    lege kolom eronder. Wie snel iets wil vragen hoeft nu geen kanaal meer te kiezen.
+ * 2. Een kaart, in de linkerkolom bij de route, waar ook al een kop met witruimte stond.
+ * 3. De kop boven de ingangkiezer ging over wat andere contactpagina's fout doen
+ *    ("de meeste contactpagina's zetten drie iconen naast elkaar en laten jou raden").
+ *    Dat is een mening over de branche en geen antwoord op een vraag van een bezoeker.
+ *    Er staat nu wat er te kiezen valt en waarom.
  *
- *    Inmiddels rechtgezet: de knop "Start je intake (4 min)" stond op negen plekken en
- *    linkte overal naar /intake, de pagina die zegt dat het maximaal zestig minuten duurt
- *    en vijftig euro kost. Hij heet nu overal "Plan een huidconsult", zodat de knop en de
- *    bestemming hetzelfde zeggen.
+ * Weggehaald: het donkergroene blok "Wat een bericht je oplevert", vier kaarten met een
+ * belofte per stuk. De kern ervan, dat het laatste stukje van elk antwoord pas komt als we
+ * je huid gezien hebben, staat nu in twee regels boven het formulier. Daar is het een
+ * verwachting bij een handeling in plaats van een sectie op zichzelf.
  *
- *    [BESLUIT-OKAN: hoe die twee heten, want nu heten ze allebei het begin]
+ * WAT ER EERDER AL IS RECHTGEZET.
  *
- * De signatuur van deze pagina is de ingangkiezer: welke vraag hoort bij welk kanaal, en
- * wat er via dat kanaal niet kan. Zie `Ingangkiezer.tsx`.
- *
- * WAT ERBIJ IS GEKOMEN: DE REDEN DAT MENSEN HIER KOMEN.
- *
- * Deze pagina vertelde waar je je vraag kwijt kunt en niet wat er gebeurt als je hem
- * stelt. Terwijl een groot deel van het verkeer op een contactpagina van een kliniek
- * bestaat uit twee mensen: iemand die moet afzeggen en iemand die in de file staat. Die
- * zoeken het telefoonnummer omdat ze iets willen wÃ©ten, en dat antwoord stond alleen op
- * de algemene voorwaarden, in de u-vorm, tussen de juridische tekst.
- *
- * Diezelfde vier situaties staan hier nu wel, uit dezelfde bron. Ze waren al in de
- * jij-vorm geschreven, dus er valt niets te hertalen en niets te laten afwijken.
+ * Telefoon en e-mail stonden als "[GEGEVEN-NODIG]" en waren daarmee leeg, terwijl ze
+ * allebei in `site.ts` staan. En er stond "tram 4 of 8 richting Kralingse Zoom" terwijl de
+ * kliniek in Hillegersberg staat; dat is verzonnen reisadvies waar iemand naar handelt.
+ * [GEGEVEN-NODIG: de route en het parkeren bevestigen, Okan]
  *
  * OPENINGSTIJDEN.
  *
- * Die stonden nergens, ook niet in het bedrijfsschema, en dat laatste kost zichtbaarheid
- * in Google. Ze staan er nu, uit `DIBA_OPENINGSTIJDEN` in site.ts, en diezelfde bron
- * voedt het schema. Wijzig ze daar en niet hier, anders geven de pagina en Google twee
- * verschillende antwoorden op dezelfde vraag.
- *
- * De tijden zijn bevestigd door Okan op 5 september 2026, naast het Google-profiel van de
- * kliniek gelegd. Er staat bewust bij dat de agenda actueler is dan het rijtje, want dat
- * blijft waar ook nu de tijden kloppen: binnen openingstijden staat niet elk uur een
- * therapeut vrij.
- *
- * EÃ©n donkergroen vlak: het blok over wat er niet op afstand kan (Â§5).
+ * Uit `DIBA_OPENINGSTIJDEN` in site.ts, en diezelfde bron voedt het bedrijfsschema voor
+ * Google. Wijzig ze daar en niet hier, anders geven de pagina en Google twee verschillende
+ * antwoorden op dezelfde vraag. Bevestigd door Okan op 5 september 2026, naast het
+ * Google-profiel van de kliniek gelegd. Er staat bewust bij dat de agenda actueler is dan
+ * het rijtje: binnen openingstijden staat niet elk uur een therapeut vrij.
  */
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/contact",
   titel: "Contact en route",
-  omschrijving: `Diba Clinics staat aan de ${DIBA_ADDRESS.street} in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Bellen, appen of mailen: hier staat welke vraag waar thuishoort.`,
+  omschrijving: `Diba Clinics staat aan de ${DIBA_ADDRESS.street} in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Bellen, appen, mailen of je vraag stellen via het formulier.`,
 });
 
-const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  `${DIBA_ADDRESS.street}, ${DIBA_ADDRESS.postalCode} ${DIBA_ADDRESS.city}`,
-)}`;
-
-/**
- * Wat een bericht je oplevert.
- *
- * Hier stond "Vier dingen doen we niet op afstand", met vier keer een nee eronder. Okan,
- * 5 september 2026: dat werkt tegen ons. Iemand die dit leest staat op het punt te
- * schrijven en wil weten of dat zin heeft.
- *
- * De feiten zijn niet veranderd. We stellen geen diagnose per foto, we beloven geen
- * resultaat, we leggen geen traject vast zonder meting en we zijn geen spoedpost. Elk punt
- * zegt nu alleen eerst wat je wél krijgt, en dat is per punt meer dan er stond.
- * [MEDISCHE-CHECK-ROJDA]
- */
-const OP_AFSTAND = [
+/** De vier manieren die geen keuze vragen: ze staan er gewoon. */
+const DIRECT = [
   {
-    kop: "Antwoord van iemand die het weet",
-    zin: "Beschrijf je klacht en je hoort welke behandelingen daarbij horen en wat de eerste stap is. Wat er precies aan de hand is stellen we vast als we je huid gezien hebben, want een diagnose per foto is een gok.",
+    label: "Bellen",
+    waarde: DIBA_TELEFOON,
+    href: DIBA_TELEFOON_HREF,
+    extern: false,
   },
   {
-    kop: "Precies wat een behandeling doet",
-    zin: "Tot hoe diep hij komt, hoe lang je erna rood bent, hoe vaak je moet komen. Wat hij bij jouw huid doet hoor je na de meting; dat is de enige manier waarop dat antwoord iets waard is.",
+    label: "WhatsApp",
+    waarde: "Stuur een bericht",
+    href: DIBA_WHATSAPP_URL,
+    extern: true,
   },
   {
-    kop: "De prijs voordat je iets afspreekt",
-    zin: "Elk tarief staat openbaar op de site, per sessie en per zone. Hoeveel sessies het er bij jou worden zeggen we na de meting, zodat je niet betaalt voor een schatting.",
+    label: "E-mail",
+    waarde: DIBA_EMAIL,
+    href: `mailto:${DIBA_EMAIL}`,
+    extern: false,
   },
+  /* Rojda, 7 september 2026: de Instagram koppelen. Een bericht via Instagram is voor een
+     deel van de klanten de gewone manier om een kliniek iets te vragen. */
   {
-    kop: "Bij spoed meteen de goede kant op",
-    zin: "Gaat er iets mis met je huid en heeft het haast, dan hoor je dat direct: bel je huisarts of de huisartsenpost. Dat is sneller dan wachten op een plek bij ons.",
+    label: "Instagram",
+    waarde: "@dibaclinics",
+    href: DIBA_INSTAGRAM_URL,
+    extern: true,
   },
 ];
+
+/* Voorlopige tekst: de reistijden en de lijnnummers horen door de kliniek bevestigd te
+   worden voordat de site live gaat. [GEGEVEN-NODIG: route en parkeren, Okan] */
+const ROUTE = [
+  [
+    "Met de auto",
+    "Vanaf de A20 afslag Rotterdam-Centrum en dan noordwaarts via de Straatweg. Reken op een kwartier vanaf de ring, buiten de spits.",
+  ],
+  [
+    "Parkeren",
+    "Voor en achter de kliniek is ruim plek. Je hoeft dus niet eerst een rondje te rijden en je staat er vlak voor de deur.",
+  ],
+  [
+    "Met het openbaar vervoer",
+    "Station Rotterdam Noord ligt op ruim een kilometer, en vanaf Rotterdam Centraal rijden er trams en bussen richting Hillegersberg.",
+  ],
+  [
+    "Op de fiets",
+    "Vanuit het centrum ben je er in ongeveer twintig minuten. Stallen kan niet pal voor de deur; zet hem in de straat.",
+  ],
+] as const;
 
 export default function ContactPage() {
   return (
@@ -130,9 +131,9 @@ export default function ContactPage() {
         ])}
       />
 
-      {/* ââ Hero: het adres, en meteen de drie manieren ââ */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+      {/* ── Hero: het adres en de vier manieren ── */}
+      <section className="bg-[var(--g-700)] px-5 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw]">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-20">
           <div>
             <nav
               aria-label="Kruimelpad"
@@ -145,59 +146,26 @@ export default function ContactPage() {
               <span className="text-[var(--on-dark-body)]">Contact</span>
             </nav>
 
-            {/* Het adres stond in de displaymaat en liep over drie regels: de straatnaam
-                past daar niet op een regel. Het adres staat er hieronder toch al, dus de
-                kop mag zeggen waar de pagina over gaat. */}
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
               Contact en <span className="diba-accent-on-dark">route</span>
             </h1>
 
-            <address className="mt-7 text-[20px] leading-8 not-italic text-[var(--on-dark)]">
+            <address className="mt-7 text-[20px] leading-8 text-[var(--on-dark)] not-italic">
               {DIBA_ADDRESS.street}
               <br />
               {DIBA_ADDRESS.postalCode} {DIBA_ADDRESS.city}
             </address>
 
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Je kunt ons bellen, een WhatsApp-bericht sturen, mailen of een
-              bericht via Instagram sturen. Voor het maken van een afspraak is
-              de online agenda meestal het snelst.
+              Bel ons, stuur een bericht of vul het formulier hieronder in. Wil
+              je een afspraak maken, dan gaat de online agenda het snelst.
             </p>
           </div>
 
-          {/* De vier directe manieren, zonder dat je hoeft te kiezen. */}
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-6 text-[var(--t-strong)] sm:p-10">
             <Label>Direct</Label>
-            <ul className="mt-6 space-y-1">
-              {[
-                {
-                  label: "Bellen",
-                  waarde: DIBA_TELEFOON,
-                  href: DIBA_TELEFOON_HREF,
-                  extern: false,
-                },
-                {
-                  label: "WhatsApp",
-                  waarde: "Stuur een bericht",
-                  href: DIBA_WHATSAPP_URL,
-                  extern: true,
-                },
-                {
-                  label: "E-mail",
-                  waarde: DIBA_EMAIL,
-                  href: `mailto:${DIBA_EMAIL}`,
-                  extern: false,
-                },
-                /* Rojda, 7 september 2026: de Instagram koppelen. Hier als vierde
-                   ingang, want een bericht via Instagram is voor een deel van de
-                   klanten de gewone manier om een kliniek iets te vragen. */
-                {
-                  label: "Instagram",
-                  waarde: "@dibaclinics",
-                  href: DIBA_INSTAGRAM_URL,
-                  extern: true,
-                },
-              ].map((r) => (
+            <ul className="mt-5 space-y-1">
+              {DIRECT.map((r) => (
                 <li key={r.label}>
                   <a
                     href={r.href}
@@ -216,120 +184,120 @@ export default function ContactPage() {
                 </li>
               ))}
             </ul>
-
-            {/* Stond op een haarlijn, en zei bovendien dat openingstijden hier niet
-                staan terwijl er verderop een sectie over gaat. Twee antwoorden op Ã©Ã©n
-                vraag op dezelfde pagina; nu verwijst hij ernaar. */}
-            <p className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-[14px] leading-6 text-[var(--t-muted)]">
-              Onze openingstijden en de agenda staan verderop.{" "}
+            <p className="mt-5 text-[14px] leading-6 text-[var(--t-muted)]">
+              Bellen kan tijdens onze{" "}
               <Link
-                href="#agenda"
+                href="#openingstijden"
                 className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Bekijk ze
+                openingstijden
               </Link>
-              , en bellen kan tijdens die tijden altijd.
+              , die staan hieronder.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ââ De ingangkiezer: de signatuur van deze pagina ââ */}
-      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        {/* Een contactpagina is adres, tijden en kanalen: allemaal tekst. Dit beeld laat zien
-          waar die gegevens heen leiden, en dat is precies wat iemand wil weten die nog
-          nooit binnen is geweest. */}
-        <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
-          <div className="mx-auto">
-            <BeeldVignet
-              src="/images/shoot/ontvangst-koffie.jpg"
-              alt="Een client krijgt koffie aangereikt bij binnenkomst in de kliniek"
-              onderschrift="Bij binnenkomst"
-              sizes="(min-width: 1024px) 86vw, 92vw"
-              className="aspect-[16/9] lg:aspect-[21/9]"
-            />
-          </div>
-        </section>
+      {/* ── Het formulier, met de openingstijden ernaast ──
+          Hier stond een kop met een lege linkerkolom en de tijden rechts. Nu draagt die
+          kolom het formulier: op deze pagina is dat de handeling, en de tijden zijn het
+          antwoord op de vraag ernaast (Yasin, 10 september 2026). */}
+      <section
+        id="openingstijden"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-10 sm:px-9 sm:py-16 lg:px-[7.5vw] lg:py-24"
+      >
         <div className="mx-auto">
-          <div>
-            <Label>Welke vraag, welk kanaal</Label>
-            <h2 className="diba-display-m mt-4">
-              Niet elk kanaal{" "}
-              <span className="diba-accent">past bij elke vraag.</span>
-            </h2>
-            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              De meeste contactpagina&apos;s zetten drie iconen naast elkaar en
-              laten jou raden welke het snelst antwoord geeft. Wie het verkeerde
-              kiest wacht twee dagen op iets wat via een bericht in tien minuten
-              klaar was. Kies je vraag, dan staat er waar je moet zijn.
-            </p>
-          </div>
+          <Label>Contact</Label>
+          <h2 className="diba-display-m mt-4">
+            Stel je vraag <span className="diba-accent">of kom langs</span>
+          </h2>
 
-          <div className="mt-10">
-            <Ingangkiezer />
-          </div>
-        </div>
-      </section>
+          <Reviewregel className="mt-6" keuze={3} />
 
-      {/* ââ Wat er op afstand niet kan ââ */}
-      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
-            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-              <div>
-                <Label opDonker>Voordat je schrijft</Label>
-                <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  Wat een bericht
-                  <span className="diba-accent-on-dark"> je oplevert.</span>
-                </h2>
-                <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Je kunt ons alles vragen en je krijgt antwoord van iemand die
-                  in de kliniek staat. Wat we niet doen is gokken: het laatste
-                  stukje van elk antwoord komt als we je huid gezien hebben, en
-                  daardoor is het ook iets waard.
-                </p>
-              </div>
+          <div className="mt-8 grid gap-6 sm:mt-12 lg:grid-cols-2 lg:items-start lg:gap-10">
+            <Contactformulier />
 
-              {/* Stonden op een haarlijn. Een vlak scheidt net zo goed, en op --g-800
-                  haalt --on-dark-body 7,57 tegen 4,08 op doorschijnend wit. */}
-              <ul className="space-y-3">
-                {OP_AFSTAND.map((n) => (
+            <div className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8">
+              <p className="diba-card-title text-[var(--t-strong)]">
+                Openingstijden
+              </p>
+              <ul className="mt-5">
+                {DIBA_OPENINGSTIJDEN.map((d, i) => (
                   <li
-                    key={n.kop}
-                    className="rounded-[var(--r-sm)] bg-[var(--g-800)] p-5"
+                    key={d.dag}
+                    className={`flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] px-3 py-2.5 text-[16px] leading-6 sm:px-4 sm:py-3 ${
+                      i % 2 === 1 ? "bg-[var(--g-025)]" : ""
+                    }`}
                   >
-                    <p className="text-[17px] leading-7 font-medium">{n.kop}</p>
-                    <p className="mt-1.5 max-w-[52ch] text-[15px] leading-7 text-[var(--on-dark-body)]">
-                      {n.zin}
-                    </p>
+                    <span className="text-[var(--t-strong)]">{d.label}</span>
+                    <span
+                      className={
+                        d.van
+                          ? "text-[var(--t-body)] tabular-nums"
+                          : "text-[var(--t-muted)]"
+                      }
+                    >
+                      {d.van ? `${d.van} tot ${d.tot}` : "Gesloten"}
+                    </span>
                   </li>
                 ))}
               </ul>
+
+              <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)]">
+                Binnen die tijden staat niet elk uur een therapeut vrij. Wat je
+                in de agenda kunt aanklikken is wat er echt open is. Kom je
+                liever langs zonder afspraak, bel dan eerst.
+              </p>
+
+              <Link
+                href="/afspraak"
+                className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+              >
+                Bekijk de agenda
+                <span aria-hidden="true">↗</span>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ââ Afzeggen, te laat, niet komen ââ
-          De twee grootste redenen dat iemand een contactpagina opzoekt: hij moet afzeggen
-          of hij staat in de file. Het antwoord stond alleen op de algemene voorwaarden, in
-          de u-vorm tussen de juridische tekst. Zelfde bron, hier in gewone taal. */}
-      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      {/* ── Welke vraag bij welk kanaal ── */}
+      <section className="px-5 py-10 sm:px-9 sm:py-16 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
-          <div>
-            <Label>Voordat je contact opneemt</Label>
-            <h2 className="diba-display-m mt-4">
-              Afzeggen, verzetten{" "}
-              <span className="diba-accent">of te laat komen.</span>
-            </h2>
-            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Bel je hierover, dan hoor je dit. Het staat hier zodat je het ook
-              kunt lezen als je geen zin hebt in bellen, en zodat je vooraf weet
-              wat het kost in plaats van achteraf.
-            </p>
-          </div>
+          <Label>Waar je moet zijn</Label>
+          <h2 className="diba-display-m mt-4">
+            Bellen, appen <span className="diba-accent">of mailen?</span>
+          </h2>
+          <p className="mt-6 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
+            Gaat het over je afspraak, dan is bellen het snelst: er kijkt meteen
+            iemand met je mee in de agenda. Voor een vraag over een behandeling
+            of de kosten is een bericht genoeg. Kies hieronder je vraag, dan zie
+            je waar je die het beste stelt en hoe snel je antwoord hebt.
+          </p>
 
-          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:items-start">
+          <div className="mt-8 sm:mt-10">
+            <Ingangkiezer />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Afzeggen, te laat, niet komen ──
+          De twee grootste redenen dat iemand een contactpagina opzoekt: hij moet afzeggen
+          of hij staat in de file. Het antwoord stond alleen in de algemene voorwaarden, in
+          de u-vorm tussen de juridische tekst. Zelfde bron, hier in gewone taal. */}
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:px-9 sm:py-16 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <Label>Voordat je belt</Label>
+          <h2 className="diba-display-m mt-4">
+            Afzeggen, verzetten{" "}
+            <span className="diba-accent">of te laat komen.</span>
+          </h2>
+          <p className="mt-6 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
+            Bel je hierover, dan hoor je dit. Het staat hier zodat je vooraf
+            weet wat het kost in plaats van achteraf.
+          </p>
+
+          <ul className="mt-8 grid gap-4 sm:mt-12 lg:grid-cols-2 lg:items-start">
             {SITUATIES.map((s) => (
               <li
                 key={s.id}
@@ -369,156 +337,69 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ââ Wanneer we open zijn ââ
-          De openingstijden staan nergens in de data en ook niet in het bedrijfsschema. Ik
-          verzin ze niet: dit is het soort gegeven waar iemand op afreist. Wat hier staat is
-          wat wÃ©l waar is, namelijk dat de agenda toont wanneer er plek is. */}
-      <section
-        id="agenda"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
-      >
-        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div>
-            <Label>Wanneer we er zijn</Label>
-            <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              De agenda is
-              <br />
-              <span className="diba-accent">het antwoord.</span>
-            </h2>
-          </div>
-          <div className="max-w-[58ch]">
-            <ul className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7">
-              {DIBA_OPENINGSTIJDEN.map((d, i) => (
-                <li
-                  key={d.dag}
-                  className={`flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] px-4 py-3 text-[16px] leading-6 ${
-                    i % 2 === 1 ? "bg-[var(--g-025)]" : ""
-                  }`}
-                >
-                  <span className="text-[var(--t-strong)]">{d.label}</span>
-                  <span
-                    className={
-                      d.van
-                        ? "text-[var(--t-body)] tabular-nums"
-                        : "text-[var(--t-muted)]"
-                    }
-                  >
-                    {d.van ? `${d.van} tot ${d.tot}` : "Gesloten"}
-                  </span>
-                </li>
-              ))}
-            </ul>
+      {/* ── Route, met de kaart in de kolom die leeg stond ── */}
+      <section className="px-5 py-10 sm:px-9 sm:py-16 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <Label>Route</Label>
+          <h2 className="diba-display-m mt-4">
+            Aan de <span className="diba-accent">Weissenbruchlaan.</span>
+          </h2>
 
-            <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in
-              de agenda kunt aanklikken is wat er echt open is, en dat is
-              actueler dan dit rijtje: een vrije dag of een volgeboekte middag
-              zie je daar meteen en hier niet.
-            </p>
-            <LeesVerder>
-              <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-                Kom je liever langs zonder afspraak, bel dan eerst. We willen je
-                geen rit voor niets laten maken.
+          {/* Geen `items-start` hier: de kaart hoort de hoogte van de kolom ernaast te
+              volgen, anders staat er een halve kolom wit onder een postzegel. */}
+          <div className="mt-8 grid gap-6 sm:mt-12 lg:grid-cols-2 lg:gap-10">
+            <Kaart />
+
+            <div>
+              <p className="text-[17px] leading-8 text-[var(--t-body)]">
+                De kliniek zit aan de noordkant van {DIBA_ADDRESS.city}, in een
+                woonwijk. Rustig dus, en je parkeert in de straat in plaats van
+                in een garage.
               </p>
-            </LeesVerder>
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-              <Link
-                href={DIBA_SALONIZED_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
-              >
-                Bekijk de agenda
-                <span aria-hidden="true">â</span>
-              </Link>
-              <a
-                href={DIBA_TELEFOON_HREF}
-                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-              >
-                Of bel {DIBA_TELEFOON}
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ââ Route ââ */}
-      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div>
-            <Label>Route</Label>
-            <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Aan de
-              <br />
-              <span className="diba-accent">Weissenbruchlaan.</span>
-            </h2>
-          </div>
-          <div className="max-w-[58ch]">
-            <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              De kliniek zit aan de noordkant van {DIBA_ADDRESS.city}, in een
-              woonwijk. Rustig dus, en je parkeert in de straat in plaats van in
-              een garage.
-            </p>
+              <dl className="mt-6 space-y-3">
+                {ROUTE.map(([kop, zin]) => (
+                  <div
+                    key={kop}
+                    className="rounded-[var(--r-md)] bg-white p-5 sm:p-6"
+                  >
+                    <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
+                    <dd className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
+                      {zin}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
 
-            {/* Concreet, want een routebeschrijving die alleen zegt "goed bereikbaar" is
-                geen routebeschrijving. Voorlopige tekst: de bezorgtijden en de exacte
-                lijnnummers horen door de kliniek bevestigd te worden voordat de site live
-                gaat. Op deze pagina stond eerder tram 4 of 8 richting Kralingse Zoom, en
-                dat ligt aan de andere kant van de stad; dat is precies waarom hier een
-                bevestiging bij hoort. [GEGEVEN-NODIG: route en parkeren, Okan] */}
-            <dl className="mt-8 space-y-3">
-              {[
-                [
-                  "Met de auto",
-                  "Vanaf de A20 afslag Rotterdam-Centrum en dan noordwaarts via de Straatweg. Reken op een kwartier vanaf de ring, buiten de spits.",
-                ],
-                [
-                  "Parkeren",
-                  "Voor en achter de kliniek is ruim plek. Je hoeft dus niet eerst een rondje te rijden en je staat er vlak voor de deur.",
-                ],
-                [
-                  "Met het openbaar vervoer",
-                  "Station Rotterdam Noord ligt op ruim een kilometer, en vanaf Rotterdam Centraal rijden er trams en bussen richting Hillegersberg. Welke lijn het handigst is hangt af van waar je vandaan komt.",
-                ],
-                [
-                  "Op de fiets",
-                  "Vanuit het centrum ben je er in ongeveer twintig minuten. Stallen kan niet pal voor de deur; zet hem in de straat.",
-                ],
-              ].map(([kop, zin]) => (
-                <div
-                  key={kop}
-                  className="rounded-[var(--r-sm)] bg-white p-5 sm:p-6"
+              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+                <a
+                  href={MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
-                  <dd className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
-                    {zin}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-
-            <p className="mt-6 text-[15px] leading-7 text-[var(--t-muted)]">
-              Twijfel je over de route, kijk dan even in Maps: dat weet actueler
-              dan deze pagina waar er gewerkt wordt.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-              <Link
-                href={MAPS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-[var(--g-200)]"
-              >
-                Open in Google Maps
-                <span aria-hidden="true">â</span>
-              </Link>
-              <Link
-                href="/intake"
-                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-              >
-                Plan meteen je meting
-              </Link>
+                  Open in Google Maps
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <Link
+                  href="/intake"
+                  className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                >
+                  Plan meteen je huidconsult
+                </Link>
+              </div>
             </div>
           </div>
+
+          {/* Waar je binnenkomt. Onderaan en niet bovenaan: eerst het adres, de tijden en
+              de route, en dan pas het plaatje bij de plek. */}
+          <BeeldVignet
+            src="/images/shoot/ontvangst-koffie.jpg"
+            alt="Een client krijgt koffie aangereikt bij binnenkomst in de kliniek"
+            onderschrift="Bij binnenkomst"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="mt-10 aspect-[16/9] sm:mt-14 lg:aspect-[21/9]"
+          />
         </div>
       </section>
     </main>

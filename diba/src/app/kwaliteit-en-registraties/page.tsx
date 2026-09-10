@@ -4,6 +4,18 @@ import Label from "@/components/ui/Label";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL, DIBA_ZORGKAART } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
+import { LOGOSTROOK } from "@/data/team";
+
+/**
+ * De hoogte waarop een merk hier staat, uit dezelfde tabel als de voettekst.
+ *
+ * Even hoog is niet even groot: het brede woordmerk van ANBOS stond op veertig punten en
+ * werd daarmee vier keer zo breed als het ronde zegel ernaast. De tabel houdt het bedekte
+ * vlak gelijk; staat een merk daar niet in, dan is dertig punten de terugval.
+ */
+function hoogteVan(logo: string): number {
+  return LOGOSTROOK.find((l) => l.logo === logo)?.hoogte ?? 30;
+}
 
 /**
  * Kwaliteit en registraties.
@@ -67,7 +79,7 @@ const BEVESTIGD = [
   },
   {
     naam: "SKIN Register",
-    logo: "/images/logos/skin-register.svg",
+    logo: "/images/logos/skin-register.png",
     wie: "Onze schoonheidsspecialisten",
     wat: "Het kwaliteitsregister voor schoonheidsspecialisten. Het registreert mensen, geen salons: elke schoonheidsspecialist staat er op eigen naam in.",
     waarom:
@@ -199,17 +211,22 @@ export default function KwaliteitPage() {
               >
                 <Label>{r.wie}</Label>
                 {/* Het logo van het register, als het er een heeft (Yasin, 9 september
-                    2026). Decoratief: de naam staat eronder als tekst. `self-start`, want
-                    in een flex-kolom wordt een img anders over de volle breedte gerekt:
-                    een PNG vervormt dan en een SVG gaat in het midden staan. */}
+                    2026). Decoratief: de naam staat eronder als tekst. Een vak van vaste
+                    hoogte met het logo linksonder, zodat de naam op elke kaart op dezelfde
+                    lijn begint; `self-start` alleen zou de img over de volle kolombreedte
+                    rekken. De hoogte per merk komt uit dezelfde tabel als de voettekst, dus
+                    ANBOS wordt hier ook geen banier naast het ronde zegel van SKIN. */}
                 {r.logo ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={r.logo}
-                    alt=""
-                    className="mt-4 h-10 w-auto self-start"
-                    loading="lazy"
-                  />
+                  <span className="mt-4 flex h-14 items-end">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={r.logo}
+                      alt=""
+                      className="max-w-full object-contain object-left"
+                      style={{ height: hoogteVan(r.logo) }}
+                      loading="lazy"
+                    />
+                  </span>
                 ) : null}
                 <p className="diba-card-title mt-3 min-h-[2lh] text-[var(--t-strong)]">
                   {r.naam}

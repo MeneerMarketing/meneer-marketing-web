@@ -1,6 +1,7 @@
 import type {
   InputHTMLAttributes,
   ReactNode,
+  SelectHTMLAttributes,
   TextareaHTMLAttributes,
 } from "react";
 
@@ -122,6 +123,64 @@ export function TextareaField({
         className={`py-3 ${fieldBase} ${error ? borders.error : borders.normal} ${className}`}
         {...rest}
       />
+    </Wrapper>
+  );
+}
+
+/**
+ * Een keuzelijst in dezelfde jas als de andere velden.
+ *
+ * Het pijltje is er een van ons: `appearance-none` haalt dat van het besturingssysteem
+ * weg, want anders staat er op een Mac een ander teken dan op Windows en op een telefoon
+ * weer een derde. Ruimte rechts, zodat een lange keuze er niet onder loopt.
+ */
+export function SelectField({
+  label,
+  id,
+  error,
+  hint,
+  className = "",
+  children,
+  ...rest
+}: BaseProps & SelectHTMLAttributes<HTMLSelectElement>) {
+  return (
+    <Wrapper
+      label={label}
+      id={id}
+      error={error}
+      hint={hint}
+      required={rest.required}
+    >
+      <div className="relative">
+        <select
+          id={id}
+          aria-invalid={error ? true : undefined}
+          aria-describedby={
+            error ? `${id}-error` : hint ? `${id}-hint` : undefined
+          }
+          className={`h-12 appearance-none pr-11 ${fieldBase} ${error ? borders.error : borders.normal} ${className}`}
+          {...rest}
+        >
+          {children}
+        </select>
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 text-[var(--t-label)]"
+        >
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M2.5 4.5 6 8l3.5-3.5" />
+          </svg>
+        </span>
+      </div>
     </Wrapper>
   );
 }

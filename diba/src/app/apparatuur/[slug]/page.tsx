@@ -202,7 +202,7 @@ export default async function ApparaatPage({ params }: PageProps) {
                 het beeld ernaast. De hele reden dat deze pagina naast de behandelpagina
                 bestaat staat hier, dus hij mag niet wegzakken onder de vouw. */}
             <div className="mt-auto rounded-[var(--r-lg)] bg-white p-7 pt-10 sm:p-9">
-              <Label>Hierop draait</Label>
+              <Label>Wat we ermee doen</Label>
               {behandelingen.length > 0 ? (
                 <ul className="mt-5 space-y-2">
                   {behandelingen.map((b) => (

@@ -155,12 +155,19 @@ export default function SnurkenPage() {
 
             {nightlase ? (
               <dl className="mt-8 divide-y divide-[var(--g-100)] border-t border-[var(--g-100)]">
+                {/* De duur is niet van elke behandeling bekend, dus de regel valt weg
+                    als hij ontbreekt. Zonder dat stond er "undefined minuten". */}
                 {(
                   [
-                    ["Hoe lang", `${nightlase.duurMinuten} minuten`],
-                    ["Hoe vaak", nightlase.sessies],
-                    ["Herstel", nightlase.herstel],
-                  ] as const
+                    nightlase.duurMinuten
+                      ? ([
+                          "Hoe lang",
+                          `${nightlase.duurMinuten} minuten`,
+                        ] as const)
+                      : null,
+                    ["Hoe vaak", nightlase.sessies] as const,
+                    ["Herstel", nightlase.herstel] as const,
+                  ].filter(Boolean) as readonly (readonly [string, string])[]
                 ).map(([kop, waarde]) => (
                   <div
                     key={kop}
@@ -405,9 +412,17 @@ export default function SnurkenPage() {
                   <dl className="mt-8 divide-y divide-white/15 border-t border-white/15">
                     {(
                       [
-                        ["Hoe lang", `${nightlase.duurMinuten} minuten`],
-                        ["Per sessie", prijsTekst(nightlase.prijs)],
-                      ] as const
+                        nightlase.duurMinuten
+                          ? ([
+                              "Hoe lang",
+                              `${nightlase.duurMinuten} minuten`,
+                            ] as const)
+                          : null,
+                        ["Per sessie", prijsTekst(nightlase.prijs)] as const,
+                      ].filter(Boolean) as readonly (readonly [
+                        string,
+                        string,
+                      ])[]
                     ).map(([kop, waarde]) => (
                       <div
                         key={kop}

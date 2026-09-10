@@ -26,7 +26,7 @@ import {
   zonesNaarQuery,
   zonesUitQuery,
 } from "@/lib/laser-pricing";
-import { DIBA_SALONIZED_BOOKING_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { DIBA_WHATSAPP_URL } from "@/lib/site";
 
 /**
  * De laserconfigurator.
@@ -442,7 +442,7 @@ export default function Configurator() {
 
           <div className="mt-7 flex flex-col gap-3">
             <Link
-              href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+              href="/afspraak"
               className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
               Plan een huidconsult

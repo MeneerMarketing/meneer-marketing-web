@@ -75,15 +75,36 @@ export const STAPPEN: readonly Stap[] = [
  *
  * Een getal dat de hele pagina voedt: verandert deze regel, dan loopt de rest mee.
  *
- * Stond op zestig, ging op 3 september 2026 naar dertig op aanwijzing van Yasin, en staat
- * er nu weer op zestig omdat Okan diezelfde avond de twee producten uitschreef: "Alleen
- * intake en behandeladvies: maximaal zestig minuten en € 50." Dat komt overeen met wat
- * er in DIBA-COPY-STYLE-GUIDE.md staat.
+ * BESLIST OP 10 SEPTEMBER 2026, EN NU MET DRIE GETALLEN IN PLAATS VAN EEN.
  *
- * [BESLUIT-OKAN] Yasin en Okan noemden verschillende tijden. Zestig staat er nu; klopt
- * dertig toch, dan verandert alleen deze regel.
+ * Yasin, naast de dienstenlijst in Salonized: de losse intake duurt dertig minuten. Wie
+ * daarna een behandeling op advies boekt, krijgt een afspraak van zestig minuten als
+ * bestaande klant en van honderdtwintig minuten als nieuwe klant.
+ *
+ * Okan, 10 september 2026, over wat er in die twee uur zit: "de intake kan dertig minuten
+ * zijn, ook vijftig of zestig, dat is flexibel, en de rest van de tijd is altijd minimaal
+ * een uur behandeltijd. Het is dus een beetje maatwerk." Daarom staat er geen vast getal
+ * voor het intakedeel maar een ondergrens voor het behandeldeel: dat laatste is wat je als
+ * klant zeker weet.
+ *
+ * Deze drie horen bij elkaar en staan daarom naast elkaar. Wie er een verandert zonder de
+ * andere twee na te lopen, laat de site twee dingen tegelijk beweren.
  */
-export const INTAKE_MINUTEN = 60;
+export const INTAKE_MINUTEN = 30;
+
+/** De afspraak "behandeling op advies", in minuten. */
+export const ADVIES_MINUTEN = {
+  /** Nieuwe klant: intake plus behandelen, met maximaal een uur voor de intake. */
+  nieuw: 120,
+  /** Bestaande klant: geen nieuwe intake, dus korter. */
+  bestaand: 60,
+  /** Wat er in die honderdtwintig minuten naar de intake kan gaan: dertig tot zestig. */
+  intakeVan: 30,
+  intakeTot: 60,
+  /** Wat er daarna altijd overblijft om te behandelen. Dit is de belofte, niet het getal
+   *  hierboven: hoe lang de intake duurt hangt af van wat er te bespreken valt. */
+  minimaalBehandelen: 60,
+} as const;
 
 /**
  * De vier feiten naast de kop.
@@ -231,7 +252,9 @@ export const INTAKE_FAQ = [
  * volgorde intact: eerst meten, dan pas behandelen, en alleen als de meting dat toelaat.
  * Dat laatste is geen slag om de arm maar de kern van wat deze kliniek belooft.
  *
- * [BESLUIT-OKAN] klopt 120 minuten, en klopt het dat dit de meest gekozen afspraak is?
+ * Yasin bevestigde op 10 september 2026 de honderdtwintig minuten, naast de dienstenlijst
+ * in Salonized. Voor een bestaande klant is dezelfde afspraak zestig minuten, want dan is
+ * er geen nieuwe intake nodig; zie ADVIES_MINUTEN hierboven.
  * [PRIJS-NODIG: wat kost de combinatie? De meting is 50 euro; wat de behandeling kost
  * hangt af van welke het wordt, dus of dit een vast bedrag heeft of een optelsom.]
  * [MEDISCHE-CHECK-ROJDA] wanneer kan er in dezelfde afspraak wél behandeld worden en

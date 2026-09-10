@@ -30,7 +30,7 @@ import MobielInklap from "@/components/ui/MobielInklap";
  * onderwerp=acne is een adres dat je kunt delen en dat Google kan indexeren, en dat is
  * precies waar iemand op zoekt die wil weten of hier mensen met acne komen.
  *
- * TWEE RIJEN KNOPPEN. De eerste gaat over de klacht of de behandeling, de tweede over het
+ * EEN RIJ KNOPPEN. Dit waren er twee, gescheiden naar de klacht of de behandeling en het
  * bezoek: de uitleg, de vriendelijkheid, de sfeer, of iemand terugkomt. Die tweede rij
  * verving de knop "Algemeen" met 2.133 reviews erachter (Rojda, 8 september 2026). Hoe de
  * tags aan de tekst hangen staat in `review-onderwerpen.ts`.
@@ -65,7 +65,7 @@ function adres({
 }
 
 const KNOP =
-  "diba-label inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] px-4 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
+  "diba-label inline-flex min-h-11 shrink-0 items-center gap-2 whitespace-nowrap rounded-[var(--r-pill)] px-4 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
 
 function Knop({
   href,
@@ -186,8 +186,15 @@ export default function Reviewarchief({
 
   return (
     <div>
-      <Label>Over de klacht of de behandeling</Label>
-      <ul className="mt-4 flex flex-wrap gap-2">
+      {/* Okan, 10 september 2026: "de filter beter uitlijnen, hij neemt een hele mobiele
+          pagina in beslag, korter maken, en alles bij elkaar in plaats van gescheiden
+          tussen behandeling en bezoek."
+
+          Dus één rij met alle onderwerpen door elkaar. Op een telefoon schuift die rij
+          opzij in plaats van over zes regels om te vouwen: vijftien knoppen die omvouwen
+          waren vier centimeter beeld voordat je de eerste review zag. De rij loopt tot de
+          schermrand door, zodat je ziet dat er meer staat. */}
+      <ul className="-mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0 [&::-webkit-scrollbar]:hidden">
         <Knop
           href={adres({
             onderwerp: "alle",
@@ -199,27 +206,7 @@ export default function Reviewarchief({
           tekst="Alles"
           aantal={ARCHIEF_MET_TEKST.length}
         />
-        {knoppen("klacht").map((o) => (
-          <Knop
-            key={o.id}
-            href={adres({
-              onderwerp: o.id,
-              pagina: 1,
-              sterren: sterrenHuidig,
-              anker: "alles",
-            })}
-            actief={o.id === onderwerp}
-            tekst={o.label}
-            aantal={archiefAantal(o.id)}
-          />
-        ))}
-      </ul>
-
-      <div className="mt-8">
-        <Label>Over het bezoek</Label>
-      </div>
-      <ul className="mt-4 flex flex-wrap gap-2">
-        {knoppen("bezoek").map((o) => (
+        {[...knoppen("klacht"), ...knoppen("bezoek")].map((o) => (
           <Knop
             key={o.id}
             href={adres({

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DIBA_SALONIZED_BOOKING_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { DIBA_WHATSAPP_URL } from "@/lib/site";
 
 /**
  * De actiebalk onderaan het scherm, alleen op een telefoon.
@@ -77,7 +77,8 @@ export default function MobieleActiebalk() {
 
   if (!zichtbaar) return null;
 
-  const boeken = DIBA_SALONIZED_BOOKING_URL || "/intake";
+  /* Sinds 10 september 2026 staat de agenda op onze eigen pagina; zie /afspraak. */
+  const boeken = "/afspraak";
   const extern = boeken.startsWith("http");
 
   return (

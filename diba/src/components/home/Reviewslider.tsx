@@ -123,15 +123,21 @@ export default function Reviewslider() {
           </div>
 
           <div>
+            {/* Yasin, 10 september 2026: "deze tekst anders, niet vanuit wantrouwen
+                benoemen, gewoon positief zijn." Hij stond er: een 5,0 was "een cijfer dat
+                je hoort te wantrouwen". Wat eronder zat blijft staan, want het is het
+                sterkste dat we over die reviews kunnen zeggen: ze komen uit Salonized, wij
+                verzamelen ze niet en we kunnen er niets uit weghalen. Dat is nu de zin. */}
             <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Een 5,0 over {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")}{" "}
-              beoordelingen is een cijfer dat je hoort te wantrouwen, dus staan
-              ze allemaal op de site: met tekst en zonder, en zonder dat wij
-              vooraf iets wegstrepen.
+              {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")} mensen
+              beoordeelden ons na hun afspraak, gemiddeld met een 5,0. Ze komen
+              uit Salonized en staan hier allemaal, met tekst en zonder, in de
+              volgorde van de bron.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
               {ZONDER_TEKST.toLocaleString("nl-NL")} mensen gaven alleen
-              sterren. Hieronder schuiven de reviews langs die wél iets zeggen.
+              sterren. Hieronder schuiven de reviews langs waar iemand er iets
+              bij schreef.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link

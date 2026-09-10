@@ -233,6 +233,28 @@ Dit is wat er onder `lg` anders is, en het raakt de desktop niet:
 - **Logo's.** De registers en verenigingen staan met logo in de voettekst (`Logostrook`,
   grijs in rust) en op de registratiepagina bij de kaarten. Alleen logo's van organisaties
   waar Diba aantoonbaar bij hoort; elk logo linkt naar het register.
+- **Niets van buiten laadt ongevraagd.** Een ingesloten kaart, video of widget is verkeer
+  naar een derde partij en zet cookies. Die laadt dus pas na akkoord in de cookiebalk, of
+  na een tik op een knop die ernaast staat ("Toon de kaart"). Zet de informatie zelf, zoals
+  het adres, er altijd naast, zodat er zonder die tik niets ontbreekt. Zie `contact/Kaart`.
+- **Een formulier belooft niets wat de server niet waarmaakt.** Bij het contactformulier
+  staat wanneer je antwoord hebt en waar je heen moet als het haast heeft. Kan het bericht
+  niet weg, dan zegt het formulier dat en zet het de ingevulde tekst klaar in een mail die
+  de bezoeker zelf verstuurt; "bedankt, we nemen contact op" zonder verzending is een
+  leugen waar iemand op wacht.
+- **Staande foto, liggend kader: zet het brandpunt.** De shoot is staand (2:3) en bijna
+  elk kader op de site is liggend. Het midden van een staande foto is zelden het onderwerp,
+  dus een kader dat op het midden staat toont de muur erboven. Geef zo'n foto een brandpunt
+  (`objectPosition`, of `brandpunt` op `BeeldVignet`) en kies op een telefoon liever 3:2 dan
+  16:9: dat scheelt vijfendertig punten hoogte en laat de helft meer van de foto zien.
+- **Een logostrook is een raster, geen rij.** Even grote vakken (drie naast elkaar tot een
+  tablet, zes daarboven), elk merk in het midden van zijn vak, met onder elk vak dezelfde
+  ruimte voor een woord, ook als dat er niet is. Dan staan de merken met hun hart op één
+  lijn en valt de rij overal op dezelfde plek af. Even hóóg is niet even groot: de hoogte
+  per merk staat in `LOGOSTROOK` (`data/team.ts`) en houdt het bedekte vlak gelijk, zodat
+  een breed woordmerk geen banier wordt naast een rond zegel. Diezelfde hoogtes gebruikt
+  de registratiepagina. Geen doorzichtigheid bovenop het grijs: lichte merken verdwijnen
+  dan. Een logobestand dat een bitmap in een SVG blijkt te zijn, wordt eerst uitgepakt.
 - **Eén alinea in de hero.** Alinea twee en verder van een hero staat op mobiel achter
   "Lees verder", behalve een korte uitsmijter onder 120 tekens. De eerste alinea zegt in
   twee zinnen waar de pagina voor is; de nuance komt erna.

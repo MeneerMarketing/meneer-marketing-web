@@ -164,13 +164,19 @@ function Paneel({
         alleenDesktop ? "max-lg:hidden" : ""
       }`}
     >
-      <div className="relative aspect-[16/9] bg-[var(--g-200)] lg:aspect-[4/3]">
+      {/* 3:2 en niet 16:9 op een telefoon: de shoot is staand, en van een staande foto
+          blijft in een 16:9-kader nog maar ruim een derde over. Dat scheelde de helft van
+          wat er te zien viel, voor vijfendertig punten hoogte. `objectPosition` zet het
+          onderwerp in beeld in plaats van het midden van de foto; zie `brandpunt` in
+          data/home-intents. */}
+      <div className="relative aspect-[3/2] bg-[var(--g-200)] lg:aspect-[4/3]">
         <Image
           key={wens.id}
           src={wens.image}
           alt={wens.imageAlt}
           fill
           className="object-cover"
+          style={{ objectPosition: `50% ${wens.brandpunt}%` }}
           sizes="(min-width: 1024px) 34vw, 100vw"
         />
       </div>

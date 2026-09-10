@@ -373,7 +373,12 @@ export default function FigmaHomeApp({
             </p>
           </div>
           <div className="mt-14 grid gap-4 lg:grid-cols-[1.05fr_.95fr]">
-            <div className="overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-10">
+            {/* Yasin, 10 september 2026: "dat blok mag er op mobiel uit, ik zie geen
+                toegevoegde waarde." Het vertelt welke assen de meting leest, en dat staat
+                op /huidanalyse en in het huidprofiel uitgebreider. Op een breed scherm
+                staat het naast het andere blok en kost het niets; op een telefoon is het
+                een scherm scrollen voor iets wat verderop beter staat. */}
+            <div className="overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 max-lg:hidden sm:p-10">
               <div className="flex items-center justify-between">
                 <span className="diba-label rounded-[var(--r-pill)] bg-white px-4 py-2 text-[var(--g-700)]">
                   Mijn Diba
@@ -601,14 +606,16 @@ export default function FigmaHomeApp({
             </h2>
           </div>
           <div className="relative flex flex-col justify-end">
+            {/* De twee manieren om te beginnen als je nog niet weet wat je nodig hebt,
+                met de tijden zoals ze in de agenda staan (Yasin, 10 september 2026). */}
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Voor een intake met behandeling reserveren we maximaal twee uur.
-              Behandelen we die dag, dan betaal je alleen de behandeling. Wil je
-              alleen advies, dan duurt de afspraak maximaal een uur en kost hij
-              50 euro.
+              Wil je alleen advies, dan duurt de afspraak dertig minuten en kost
+              hij 50 euro. Boek je een behandeling op advies, dan reserveren we
+              twee uur als je nieuw bent en een uur als je al klant bent; het
+              bedrag van de intake vervalt zodra we behandelen.
             </p>
             <Button
-              href="/intake"
+              href="/afspraak"
               variant="primair-op-donker"
               className="mt-8 w-fit"
             >

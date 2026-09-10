@@ -8,6 +8,7 @@ import {
   wachttijdTekst,
   type BezigheidId,
 } from "@/data/nazorg";
+import Schuifhint from "@/components/ui/Schuifhint";
 
 /**
  * Het nazorgrooster: wat mag wanneer weer.
@@ -54,7 +55,8 @@ export default function Nazorgrooster() {
 
   return (
     <div>
-      <div className="overflow-x-auto">
+      <Schuifhint wat="het rooster" />
+      <div className="mt-3 overflow-x-auto">
         <div className="min-w-[820px]">
           {/* Kop: de behandelingen. */}
           <div

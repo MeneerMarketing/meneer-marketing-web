@@ -7,6 +7,7 @@ import BehandelingenPerWens, {
 } from "@/components/behandelingen/BehandelingenPerWens";
 import Huidreis from "@/components/behandelingen/Huidreis";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import Reviewregel from "@/components/reviews/Reviewregel";
 import Label from "@/components/ui/Label";
 import {
   behandelingVoorSlug,
@@ -209,6 +210,13 @@ export default function BehandelingenPage() {
           Okan, 5 september 2026: dit moet een opvallende kaart bovenaan het overzicht zijn.
           De zeven keuzes hierboven werken tot iemand tussen een peeling, een laser en
           microneedling moet kiezen; daar houdt zelf uitzoeken op. */}
+      {/* Eén review tussen de blokken, klein (Yasin, 10 september 2026). */}
+      <section className="px-5 pt-8 sm:px-9 lg:px-[7.5vw]">
+        <div className="mx-auto">
+          <Reviewregel keuze={1} />
+        </div>
+      </section>
+
       <section className="px-5 pt-10 sm:px-9 lg:px-[7.5vw] lg:pt-12">
         <div className="mx-auto">
           <Link
@@ -254,9 +262,9 @@ export default function BehandelingenPage() {
             </p>
             <LeesVerder>
               <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-                Het consult kost {intakeBedrag} en duurt maximaal een uur. Word
-                je in dezelfde afspraak behandeld, dan gaat dat bedrag er weer
-                af.
+                Het consult kost {intakeBedrag} en duurt dertig minuten. Wil je
+                in dezelfde afspraak behandeld worden, boek dan een behandeling
+                op advies; dat bedrag gaat er dan weer af.
               </p>
             </LeesVerder>
           </div>

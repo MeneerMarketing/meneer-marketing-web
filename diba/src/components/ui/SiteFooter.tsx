@@ -150,9 +150,11 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
 
         {/* De registers en verenigingen, met logo. Onder de kolommen en boven het adres:
             het is geen navigatie, maar wel iets wat je onderaan een zorgsite zoekt. */}
-        <div className="mt-12 border-t border-[var(--g-100)] pt-8">
+        {/* De kop staat in het midden sinds de logo's dat doen: een gecentreerde rij
+            onder een linkse regel hangt scheef. */}
+        <div className="mt-12 border-t border-[var(--g-100)] pt-8 text-center">
           <p className={kolomLabel}>Aangesloten bij en geregistreerd in</p>
-          <Logostrook className="mt-5" />
+          <Logostrook className="mt-6" />
         </div>
 
         {/* De onderste balk. Adres en telefoon staan hier en niet in een kolom: het zijn

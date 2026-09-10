@@ -43,7 +43,7 @@ export const APPARATUUR_MERKEN: readonly Merk[] = [
     relatie: "gebruikt",
     bijDiba: "TimeWalker, met Fotona 4D en NightLase",
     waarvoor:
-      "Eén apparaat waarop een reeks behandelingen draait: verstrakking van binnenuit, fractionele huidvernieuwing, laserpeelings en NightLase tegen snurken.",
+      "Eén apparaat voor een reeks behandelingen: verstrakking van binnenuit, fractionele huidvernieuwing, laserpeelings en NightLase tegen snurken.",
     link: { label: "Alles op de Fotona", href: "/apparatuur/fotona" },
   },
   {

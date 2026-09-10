@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Prijslijst from "@/components/prijzen/Prijslijst";
 import Behandelprijzen from "@/components/prijzen/Behandelprijzen";
+import Reviewregel from "@/components/reviews/Reviewregel";
 import PrijzenVoorJou from "@/components/prijzen/PrijzenVoorJou";
 import FaqAccordion, { type FaqItem } from "@/components/ui/FaqAccordion";
 import Label from "@/components/ui/Label";
@@ -200,6 +201,10 @@ export default function TarievenPage() {
               staan, ook dicht.
             </p>
           </div>
+          {/* Yasin, 10 september 2026: reviews vaker laten terugkomen, klein mag. Eén
+              regel onder de kop, geen sectie. */}
+          <Reviewregel className="mt-6" keuze={0} />
+
           <div className="mt-10">
             <Behandelprijzen />
           </div>

@@ -26,7 +26,7 @@ export const HOME_FAQ_ITEMS: readonly HomeFaqItem[] = [
     question: "Wat kost een eerste afspraak?",
 
     answer:
-      "Alleen een intake met behandeladvies kost 50 euro en duurt maximaal een uur. Boek je de afspraak waarin ook behandeld kan worden, dan reserveren we maximaal twee uur en vervalt dat bedrag zodra we behandelen.",
+      "Alleen een intake met behandeladvies kost 50 euro en duurt dertig minuten. Boek je een behandeling op advies, dan reserveren we twee uur als je nieuw bent en een uur als je al klant bent; het bedrag van de intake vervalt zodra we behandelen.",
   },
 
   {
@@ -35,7 +35,7 @@ export const HOME_FAQ_ITEMS: readonly HomeFaqItem[] = [
     question: "Kan ik ook alleen een intake boeken?",
 
     answer:
-      "Ja. Het huidconsult is precies dat: meten, uitleg en een plan dat je mee naar huis krijgt. Je beslist daarna zelf of en wanneer je verdergaat.",
+      "Ja, en dat is een van de twee manieren om te beginnen als je nog niet weet wat je nodig hebt. Het huidconsult duurt dertig minuten: meten, uitleg en een plan dat je mee naar huis krijgt. De andere manier is een behandeling op advies, waarin we in dezelfde afspraak ook behandelen als dat kan. Je beslist zelf welke van de twee.",
   },
 
   {

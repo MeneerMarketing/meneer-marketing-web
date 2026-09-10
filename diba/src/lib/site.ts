@@ -32,15 +32,35 @@ export const DIBA_TELEFOON = "010-2038423";
 export const DIBA_TELEFOON_HREF = "tel:+31102038423";
 export const DIBA_EMAIL = "info@dibaclinics.nl";
 
-/** WhatsApp Business deeplink. */
-export const DIBA_WHATSAPP_URL = "https://wa.me/31639181277";
+/**
+ * WhatsApp Business deeplink.
+ *
+ * Yasin, 10 september 2026: het nummer dat hier stond is dat van Rojda persoonlijk, en
+ * "stel je vraag" hoort naar de kliniek te gaan. Vandaar dit nummer.
+ */
+export const DIBA_WHATSAPP_URL = "https://wa.me/31624315661";
 
 /**
- * Salonized boekings-deeplink — alleen tonen als env gezet is.
- * [GEGEVEN-NODIG: URL van Okan]
+ * De boekingspagina in Salonized.
+ *
+ * Stond leeg, met een terugval naar /intake. Daardoor kwam je op "Afspraak maken" uit bij
+ * een pagina die uitlegt wat een intake is, terwijl je wilde boeken. Yasin, 10 september
+ * 2026: "die eerste grote knop moet meteen doorlinken naar afspraak boeken, niet nog meer
+ * uitleg." Nu wijst hij naar de agenda zelf; per omgeving te overschrijven.
  */
+/**
+ * Het bedrijfsnummer van de boekingswidget van Salonized.
+ *
+ * Overgenomen uit de code die Salonized zelf neerzet op
+ * dibaclinics.salonized.com/widget_bookings/new; het laadscript zoekt een element met dit
+ * nummer op en zet daar de agenda in. Zie `components/afspraak/Boekingswidget`.
+ */
+export const DIBA_SALONIZED_WIDGET_COMPANY =
+  process.env.NEXT_PUBLIC_SALONIZED_WIDGET_COMPANY ?? "399Dy";
+
 export const DIBA_SALONIZED_BOOKING_URL =
-  process.env.NEXT_PUBLIC_SALONIZED_BOOKING_URL ?? "";
+  process.env.NEXT_PUBLIC_SALONIZED_BOOKING_URL ??
+  "https://dibaclinics.salonized.com/";
 
 /**
  * Instagram. Per omgeving te overschrijven; de standaard is de verwachte handle.

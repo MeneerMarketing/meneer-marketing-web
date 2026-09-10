@@ -257,6 +257,23 @@ export type Variant = {
   readonly bij?: string;
 };
 
+/**
+ * DE BEHANDELDUUR KOMT UIT DE AGENDA.
+ *
+ * Yasin, 10 september 2026: "alle tijdsduren die op de site staan kloppen niet; een peeling
+ * staat op 45 minuten maar we doen standaard 60." Klopte, en het gold voor de helft van de
+ * lijst. `duurMinuten` is daarom op 10 september 2026 overgenomen van de dienstenlijst in
+ * Salonized (dibaclinics.salonized.com/services), de agenda waarin ook echt geboekt wordt.
+ * Dat is de enige bron waar het tijdvak van een afspraak vandaan mag komen: staat er hier
+ * iets anders dan in de agenda, dan reserveert de klant een uur en leest hij drie kwartier.
+ *
+ * Zeven behandelingen staan niet los in de agenda, omdat ze onderdeel zijn van een sessie
+ * (FRAC3, PIANO en SmoothLiftin horen bij de Fotona 4D) of alleen op aanvraag gaan. Die
+ * hebben geen `duurMinuten` meer: geen tijd tonen is beter dan een tijd verzinnen.
+ * [GEGEVEN-NODIG: de duur van acnebehandeling, NightLase, Full Face Brushing en Fotona
+ * Acne Control, als die er wel is, Okan]
+ */
+
 export type Behandeling = {
   readonly slug: string;
   readonly naam: string;
@@ -441,7 +458,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Ja, elk traject begint hiermee. De meting is het vertrekpunt waar we het resultaat later mee vergelijken, zodat je over drie maanden ziet wat er veranderd is.",
       },
     ],
-    duurMinuten: 45,
+    duurMinuten: 30,
   },
 
   /* ── Gezichtsbehandelingen ─────────────────────────────────────────────── */
@@ -604,7 +621,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
 
       { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
     ],
-    duurMinuten: 45,
+    duurMinuten: 60,
   },
   {
     slug: "peelings",
@@ -677,7 +694,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
       { label: "Ouderdomsvlekken", href: "/huidproblemen/ouderdomsvlekken" },
     ],
-    duurMinuten: 45,
+    duurMinuten: 60,
   },
   {
     /* Griss, 8 september 2026: kruidenpeels zijn bij acne een belangrijke behandeling,
@@ -825,7 +842,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Striae", href: "/huidproblemen/striae" },
       { label: "Rimpels", href: "/huidproblemen/rimpels" },
     ],
-    duurMinuten: 75,
+    duurMinuten: 60,
   },
   {
     slug: "dermapen-4",
@@ -906,7 +923,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we tijdens de intake.",
       },
     ],
-    duurMinuten: 75,
+    duurMinuten: 60,
   },
 
   /* ── Skinboosters ──────────────────────────────────────────────────────── */
@@ -988,7 +1005,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Het voelt als een reeks korte prikjes en het gaat snel. Rond de ogen is het gevoeliger dan op de wang.",
       },
     ],
-    duurMinuten: 45,
+    duurMinuten: 60,
   },
 
   /* ── Laser en licht ────────────────────────────────────────────────────── */
@@ -1134,7 +1151,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     stappen: [
       {
         kop: "Vaststellen wat je krijgt",
-        zin: "4D, VectorLift, SmoothEye en LipLase draaien op hetzelfde apparaat. Welke bij jou past, kiest de behandelaar.",
+        zin: "4D, VectorLift, SmoothEye en LipLase doen we met hetzelfde apparaat. Welke bij jou past, kiest de behandelaar.",
       },
       {
         kop: "Laag voor laag",
@@ -1157,7 +1174,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hoor je na de meting. Het aantal hangt af van je huid en van het gebied, en dat stelt de behandelaar dan vast. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
-    duurMinuten: 75,
+    duurMinuten: 60,
   },
   /* ── Snurken ───────────────────────────────────────────────────────────
      NightLase draait op dezelfde Fotona als de 4D-behandelingen, maar hoort in geen enkele
@@ -1408,7 +1425,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
       },
     ],
-    duurMinuten: 30,
   },
   {
     slug: "frac3",
@@ -1486,7 +1502,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van de zone en het aantal sessies, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
       },
     ],
-    duurMinuten: 45,
   },
   {
     slug: "piano",
@@ -1563,7 +1578,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van de zone en het aantal sessies, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
       },
     ],
-    duurMinuten: 45,
   },
   {
     slug: "superficial-peel",
@@ -1641,7 +1655,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van de zone en of je het los doet of als onderdeel van 4D. Dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
       },
     ],
-    duurMinuten: 30,
+    duurMinuten: 60,
   },
   {
     slug: "smootheye",
@@ -1717,7 +1731,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Meestal drie tot vier, met enkele weken ertussen. Daarna houd je het bij met een sessie af en toe. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
-    duurMinuten: 30,
+    duurMinuten: 60,
   },
   {
     slug: "liplase",
@@ -1790,7 +1804,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat verschilt per persoon. Het gaat om opgebouwd collageen, en dat neemt na verloop van tijd weer af; de meeste mensen komen periodiek terug. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
-    duurMinuten: 30,
+    duurMinuten: 45,
   },
   {
     slug: "vectorlift",
@@ -1866,7 +1880,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat verschilt per persoon en het is niet blijvend. De meeste mensen komen periodiek terug om het bij te houden. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
-    duurMinuten: 30,
+    duurMinuten: 45,
   },
   {
     slug: "fotona-acne-control",
@@ -1942,7 +1956,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van of je het los doet of binnen een acnetraject, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
       },
     ],
-    duurMinuten: 30,
   },
   {
     slug: "fotona-scar-repair",
@@ -2019,7 +2032,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van de lengte van het litteken en het aantal sessies, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
       },
     ],
-    duurMinuten: 45,
+    duurMinuten: 30,
   },
   {
     slug: "fotona-resurfacing",
@@ -2096,7 +2109,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van de zone en de diepte, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief bevestigen]",
       },
     ],
-    duurMinuten: 45,
+    duurMinuten: 60,
   },
   {
     slug: "hairestart",
@@ -2187,7 +2200,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
-    duurMinuten: 30,
     bijProblemen: [{ label: "Snurken", href: "/snurken" }],
     wel: [
       "Werkt zonder snijden, zonder naalden en zonder iets dat je 's nachts in moet doen",
@@ -2230,6 +2242,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat verschilt per persoon en het is niet blijvend. We spreken vooraf af wanneer we opnieuw kijken. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
+    /* Staat niet in de online agenda: NightLase boek je via de kliniek. Deze dertig
+       minuten stonden er al. [GEGEVEN-NODIG: duur van NightLase bevestigen, Okan] */
+    duurMinuten: 30,
   },
   {
     slug: "nordlys-pigment",
@@ -2412,7 +2427,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Op het Precision Photonic System van Skin Complete. Welke golflengte en welke tijd erbij horen, bepaalt de behandelaar na de huidanalyse.",
       },
     ],
-    duurMinuten: 20,
+    duurMinuten: 15,
   },
 
   /* ── Pigmenttrajecten ──────────────────────────────────────────────────── */
@@ -2467,7 +2482,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dezelfde opzet, andere sterkte en een ander doel. Cosmelan is de lichtere van de twee en wordt vaker gekozen bij zonschade en losse pigmentvlekken; Dermamelan is intensiever en wordt vaker ingezet bij melasma. Welke van de twee bij jou past, stelt de behandelaar tijdens de intake vast. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
-    duurMinuten: 30,
+    duurMinuten: 60,
   },
   {
     slug: "dermamelan",
@@ -2517,7 +2532,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
         waarom: "Hetzelfde principe, voor de intieme zone.",
       },
     ],
-    duurMinuten: 30,
+    duurMinuten: 60,
   },
   {
     slug: "dermamelan-intimate",
@@ -2619,7 +2634,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Dat hangt af van hoe donker het gebied is en waar het door komt. Er staat daarom zowel een losse prijs als een kuurprijs. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
-    duurMinuten: 45,
+    duurMinuten: 30,
   },
 
   /* ── Laserontharing ────────────────────────────────────────────────────── */
@@ -2637,7 +2652,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een reeks, met een paar weken ertussen. Hoeveel hangt af van het aantal haren en van het gebied. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
-    duurMinuten: 15,
+    duurMinuten: 30,
     welNietKop: {
       kop: "Waar elektrische epilatie",
       accent: "voor bedoeld is",
@@ -2821,7 +2836,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       },
     ],
     bijProblemen: [{ label: "Alle huidproblemen", href: "/huidproblemen" }],
-    duurMinuten: 45,
+    duurMinuten: 30,
   },
   {
     slug: "acnebehandeling",
@@ -2846,7 +2861,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Los te doen. Bij terugkerende acne is een reeks of het traject de betere route. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
-    duurMinuten: 45,
     wel: [
       "Haalt verstoppingen en ontstekingen weg zonder dat je zelf gaat drukken",
       "Is los te boeken, ook als je niet aan een traject wilt beginnen",
@@ -3095,7 +3109,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
           "Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting. [GEGEVEN-NODIG: aantal sessies per littekentype]",
       },
     ],
-    duurMinuten: 45,
+    duurMinuten: 30,
   },
   {
     slug: "rrs-hyalift",
@@ -3112,7 +3126,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een reeks van drie tot vier, met twee tot vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
-    duurMinuten: 45,
+    duurMinuten: 60,
     wel: [
       "Brengt vocht en werkzame stoffen in de huid in plaats van erop",
       "Werkt op het hele vlak, dus op de kwaliteit van de huid en niet op een plooi",
@@ -3225,7 +3239,6 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Los te doen, of als onderhoud om de paar maanden. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
-    duurMinuten: 30,
     wel: [
       "Vraagt vrijwel geen hersteltijd, dus het kan op een gewone werkdag",
       "Werkt op de hele huid en niet op een plek",
@@ -3266,7 +3279,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een reeks van drie tot zes, met weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
-    duurMinuten: 30,
+    duurMinuten: 15,
     wel: [
       "Mag op de dunne huid rond het oog, waar gewone peelings te sterk zijn",
       "Werkt op fijne lijntjes en op een bruine, doffe kleur onder de ogen: de pigmentwal",
@@ -3434,7 +3447,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Acne", href: "/huidproblemen/acne" },
       { label: "Rosacea", href: "/huidproblemen/rosacea" },
     ],
-    duurMinuten: 20,
+    duurMinuten: 30,
   },
 ];
 

@@ -10,6 +10,7 @@ import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import {
+  ADVIES_MINUTEN,
   COMBINATIE_AFSPRAAK,
   CONSULT_REVIEW_IDS,
   INTAKE_FAQ,
@@ -25,7 +26,6 @@ import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SALONIZED_BOOKING_URL,
   DIBA_SITE_URL,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
@@ -130,7 +130,7 @@ export default function IntakePage() {
             <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
               <Button
                 variant="primair-op-donker"
-                href={DIBA_SALONIZED_BOOKING_URL || "/contact"}
+                href="/afspraak"
                 className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Plan consult"
               >
@@ -246,8 +246,25 @@ export default function IntakePage() {
               <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                 {publicCopy(COMBINATIE_AFSPRAAK.voorbehoud)}
               </p>
+              {/* Yasin, 10 september 2026: "twee opties voor als je het zelf niet weet,
+                  dat moet overal duidelijk staan; ik zie nu alleen de losse intake
+                  terugkomen." Deze kaart wás die tweede optie, maar noemde zijn eigen naam
+                  niet en linkte nergens heen. Nu allebei, met de twee tijden erbij: als
+                  nieuwe klant twee uur, als bestaande klant een uur. */}
+              <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                Deze afspraak heet{" "}
+                <Link
+                  href="/behandeling-op-advies"
+                  className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                >
+                  behandeling op advies
+                </Link>
+                . Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij{" "}
+                {ADVIES_MINUTEN.bestaand} minuten.
+              </p>
               <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
-                Max. {COMBINATIE_AFSPRAAK.minuten} minuten
+                {COMBINATIE_AFSPRAAK.minuten} minuten, met minstens{" "}
+                {ADVIES_MINUTEN.minimaalBehandelen} minuten behandeltijd
               </p>
             </div>
           </div>
@@ -417,7 +434,7 @@ export default function IntakePage() {
       </section>
 
       {/* ── Wat mensen zeiden die precies dit deden ──
-          Op /reviews staan alle 56 met de waarschuwing dat een 5,0 wantrouwen verdient.
+          Op /reviews staan alle 56, met uitleg over wat zo een cijfer wel en niet zegt.
           Hier staan alleen de mensen die voor een consult kwamen, geselecteerd op de
           behandeling die erbij staat en niet op inhoud. */}
       <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
@@ -426,7 +443,7 @@ export default function IntakePage() {
             label="Van mensen die dit boekten"
             kop="Wat ze zeiden over"
             accent="het consult zelf."
-            intro="Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tekst staat. Alle 56 staan er, met de kanttekening dat een 5,0 wantrouwen verdient."
+            intro="Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tekst staat. Op de reviewpagina staan ze allemaal, met uitleg over hoe je zo een cijfer leest."
           />
 
           <ul className="mt-12 gap-4 sm:columns-2 xl:columns-3 [&>li]:mb-4 [&>li]:break-inside-avoid">
@@ -465,7 +482,7 @@ export default function IntakePage() {
             href="/reviews"
             className="diba-label mt-8 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
           >
-            Alle reviews, en waarom een 5,0 wantrouwen verdient
+            Alle reviews, en hoe je ze het beste leest
           </Link>
         </div>
       </section>
@@ -489,10 +506,7 @@ export default function IntakePage() {
               nee mag zijn. Wat je daarna doet, beslis je thuis.
             </p>
             <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
-              <Button
-                href={DIBA_SALONIZED_BOOKING_URL || "/contact"}
-                variant="primair-op-donker"
-              >
+              <Button href="/afspraak" variant="primair-op-donker">
                 Plan een huidconsult
               </Button>
               <Button href="/ons-verbond" variant="secundair-op-donker">

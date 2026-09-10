@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import ProfielBouwer from "@/components/huidprofiel/ProfielBouwer";
+import Reviewregel from "@/components/reviews/Reviewregel";
 import { PROFIEL_ONDERDELEN, telwoord } from "@/data/huidprofiel";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
@@ -140,6 +141,8 @@ export default function HuidprofielPage() {
             <p className="diba-label mt-6 text-[var(--t-muted)]">
               Blijft in je eigen browser &middot; Geen account
             </p>
+
+            <Reviewregel className="mt-6 max-w-[52ch]" keuze={2} />
           </div>
 
           {/* Staande foto in een staande kolom. Dezelfde behandelaar met dezelfde tablet

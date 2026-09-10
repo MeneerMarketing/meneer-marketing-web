@@ -4,8 +4,9 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
 import FaqAccordion, { type FaqItem } from "@/components/ui/FaqAccordion";
 import Label from "@/components/ui/Label";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
+import { ADVIES_MINUTEN } from "@/data/intake";
 import { breadcrumbSchema, faqSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_SALONIZED_BOOKING_URL, DIBA_SITE_URL } from "@/lib/site";
+import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 import LeesVerder from "@/components/ui/LeesVerder";
 
@@ -176,7 +177,7 @@ export default function BehandelingOpAdviesPage() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+                href="/afspraak"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
                 Boek een behandeling op advies
@@ -225,11 +226,21 @@ export default function BehandelingOpAdviesPage() {
               <p className="diba-display-s mt-3 text-[var(--t-strong)]">
                 Intake plus behandeling op advies
               </p>
+              {/* De tijden zijn op 10 september 2026 door Yasin bevestigd naast de
+                  dienstenlijst in Salonized. Ze staan in ADVIES_MINUTEN, want ze komen op
+                  meer plekken terug dan deze kaart. */}
+              <p className="diba-label mt-3 text-[var(--t-label)]">
+                {ADVIES_MINUTEN.nieuw} minuten gereserveerd
+              </p>
               <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-                We reserveren maximaal twee uur. De afspraak begint met de
-                intake: je hulpvraag, je medische achtergrond, je huidproducten
-                en eerdere behandelingen. Daarna bekijkt de behandelaar je huid.
-                Een huidmeting doen we alleen als die iets toevoegt.
+                We reserveren {ADVIES_MINUTEN.nieuw} minuten, dus twee uur. De
+                intake duurt daarvan {ADVIES_MINUTEN.intakeVan} tot{" "}
+                {ADVIES_MINUTEN.intakeTot} minuten, afhankelijk van wat er te
+                bespreken valt: je hulpvraag, je medische achtergrond, je
+                huidproducten en eerdere behandelingen. Daarna bekijkt de
+                behandelaar je huid. Er blijft altijd minstens een uur over om
+                te behandelen. Een huidmeting doen we alleen als die iets
+                toevoegt.
               </p>
 
               <p className="diba-label mt-7 text-[var(--t-label)]">
@@ -262,14 +273,14 @@ export default function BehandelingOpAdviesPage() {
                 <p className="text-[15px] leading-7 text-[var(--t-body)]">
                   Je betaalt dan alleen de behandeling; de intakekosten
                   vervallen. Gebeurt er geen behandeling, dan kost de intake{" "}
-                  {intakeBedrag}. De afspraak hoeft de twee uur niet vol te
-                  maken.
+                  {intakeBedrag}. De afspraak hoeft de {ADVIES_MINUTEN.nieuw}{" "}
+                  minuten niet vol te maken.
                 </p>
               </div>
 
               <div className="mt-auto pt-8">
                 <Link
-                  href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+                  href="/afspraak"
                   className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   Boek als nieuwe klant
@@ -283,8 +294,12 @@ export default function BehandelingOpAdviesPage() {
               <p className="diba-display-s mt-3 text-[var(--t-strong)]">
                 Behandeling op advies
               </p>
+              <p className="diba-label mt-3 text-[var(--t-label)]">
+                {ADVIES_MINUTEN.bestaand} minuten gereserveerd
+              </p>
               <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-                Je hoeft geen nieuwe intake te boeken. De behandelaar pakt je
+                Je hoeft geen nieuwe intake te boeken, dus deze afspraak duurt{" "}
+                {ADVIES_MINUTEN.bestaand} minuten. De behandelaar pakt je
                 dossier erbij, bespreekt wat er sinds je vorige afspraak is
                 veranderd en beoordeelt je huid zoals die nu is.
               </p>
@@ -308,7 +323,7 @@ export default function BehandelingOpAdviesPage() {
 
               <div className="mt-auto pt-8">
                 <Link
-                  href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+                  href="/afspraak"
                   className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   Boek als bestaande klant
@@ -418,13 +433,13 @@ export default function BehandelingOpAdviesPage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+                href="/afspraak"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Ik ben nieuw bij Diba
               </Link>
               <Link
-                href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+                href="/afspraak"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Ik ben al klant

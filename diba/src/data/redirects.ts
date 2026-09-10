@@ -9,8 +9,10 @@ export const LEGACY_REDIRECTS: readonly {
   { source: "/over", destination: "/over-ons" },
   { source: "/about", destination: "/over-ons" },
   { source: "/prijs", destination: "/prijzen" },
-  { source: "/afspraak", destination: "/intake" },
-  { source: "/boeken", destination: "/intake" },
+  /* /afspraak wees hierheen zolang er geen boekpagina was. Sinds 10 september 2026 is die
+     er wel: de agenda van Salonized staat daar op onze eigen pagina, dus deze omleiding is
+     weg. /boeken blijft wijzen, nu naar diezelfde pagina. */
+  { source: "/boeken", destination: "/afspraak" },
   { source: "/laser", destination: "/laserontharing" },
   { source: "/laserontharing/prijzen", destination: "/laserontharing" },
   /* De Lumi 8 staat niet meer in de kliniek; het LED-werk gebeurt nu op het Precision

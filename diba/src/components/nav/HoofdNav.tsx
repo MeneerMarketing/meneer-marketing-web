@@ -8,7 +8,6 @@ import DibaLogo from "@/components/ui/DibaLogo";
 import { HOOFDNAV, type NavItem } from "@/data/hoofdnavigatie";
 import {
   DIBA_OPENINGSTIJDEN,
-  DIBA_SALONIZED_BOOKING_URL,
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
 } from "@/lib/site";
@@ -205,7 +204,7 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
               op 390px, en elke pagina heeft de afspraakknop verderop nog staan. Twee keer
               dezelfde primaire actie op één scherm is er één te veel. */}
             <Link
-              href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+              href="/afspraak"
               className={`diba-label hidden h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:inline-flex ${v.knop}`}
             >
               Afspraak maken
@@ -895,7 +894,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
 
       <div className="shrink-0 border-t border-[var(--g-100)] px-5 pt-3 pb-[calc(1.25rem+env(safe-area-inset-bottom))]">
         <Link
-          href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+          href="/afspraak"
           onClick={onSluit}
           className="diba-label flex min-h-13 w-full items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] py-4 text-white"
         >

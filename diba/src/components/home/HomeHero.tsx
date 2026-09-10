@@ -197,8 +197,12 @@ export default function HomeHero() {
                 maken van een keuze een aarzeling. Op het donkere vlak de lichte knop en
                 de omlijnde witte: de gewone primaire knop is olijf op olijf. */}
             <div className="diba-hero-in diba-hero-in-2 mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-4 lg:mt-9">
+              {/* Yasin, 10 september 2026: "die eerste grote knop moet meteen doorlinken
+                  naar afspraak boeken, niet nog meer uitleg." Dus rechtstreeks de agenda
+                  in. Wie eerst wil weten wat er gebeurt, vindt dat een regel lager en op
+                  de hele rest van de site. */}
               <Button
-                href="/intake"
+                href="/afspraak"
                 variant="primair-op-donker"
                 className="w-full sm:w-auto"
               >

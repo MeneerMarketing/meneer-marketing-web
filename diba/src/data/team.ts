@@ -34,7 +34,7 @@
  */
 
 export type Vakgebied =
-  "huidtherapie" | "orthomoleculair" | "schoonheid" | "praktijk";
+  "huidtherapie" | "orthomoleculair" | "laser" | "praktijk" | "kantoor";
 
 export type Teamlid = {
   readonly slug: string;
@@ -46,96 +46,104 @@ export type Teamlid = {
   /**
    * Portret uit de eigen shoot, staand.
    *
-   * De opnamen dragen alleen een cameranummer; wie erop staat is uit het bestand niet af
-   * te leiden. Rojda heeft de reeks op 8 september 2026 nagelopen en de man aangewezen als
-   * Andres. Voor de vrouwen geldt nog steeds: het portret staat bij de naam die op die
-   * plek in de lijst hoort, en of dat gezicht die naam is, moet iemand bevestigen die het
-   * team kent. [GEGEVEN-NODIG: portret per naam bevestigen, Okan]
-   *
-   * Iemands gezicht bij de verkeerde naam is niet zomaar een schoonheidsfoutje: het is een
-   * van de weinige dingen op deze site die een bezoeker die hier komt zelf kan zien
-   * kloppen of niet.
+   * Tot 10 september 2026 stonden hier opnamen met alleen een cameranummer, en dus een
+   * gok over wie erop stond. Yasin leverde die dag een map aan waarin de bestanden de
+   * naam van de persoon dragen: die staan er nu, en alleen die. Wie er nog geen
+   * aangeleverde foto heeft, krijgt geen foto; "Foto volgt" is eerlijker dan het gezicht
+   * van een collega bij de verkeerde naam. Dat laatste is een van de weinige dingen op
+   * deze site die een bezoeker die hier komt zelf kan zien kloppen of niet.
    */
   readonly portret?: string;
 };
 
 export const TEAM: readonly Teamlid[] = [
+  /* De volledige bezetting zoals Yasin die op 10 september 2026 doorgaf. De volgorde is
+     die van de kliniek: eerst wie je in de behandelkamer tegenkomt, daarna de mensen
+     eromheen. Zes van de elf hebben een aangeleverd portret; de rest staat er zonder. */
   {
     slug: "rojda-sahin",
-    portret: "/images/shoot/team-portret-1.jpg",
-    naam: "Rojda Sahin",
+    portret: "/images/shoot/team-rojda.jpg",
+    naam: "Rojda",
     functie: "Founder Diba Clinics B.V. en orthomoleculair huidspecialist",
     vak: "orthomoleculair",
     bio: "Als founder bepaalt Rojda wat er in deze kliniek wel en niet gebeurt, en dat tweede is hier het langste lijstje. Zij is degene die de meting uitlegt en die zegt wanneer behandelen geen zin heeft. Kom je met een vraag waar geen behandeling bij hoort, dan hoor je dat van haar.",
   },
   {
-    slug: "okan",
-    portret: "/images/shoot/team-portret-2.jpg",
-    naam: "Okan",
-    functie: "Praktijkmanager",
-    vak: "praktijk",
-    bio: "Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit.",
-  },
-  {
-    slug: "demi",
-    portret: "/images/shoot/team-portret-3.jpg",
-    naam: "Demi",
-    functie: "Orthomoleculair huidspecialist",
-    vak: "orthomoleculair",
-    bio: "Demi werkt als orthomoleculair huidspecialist en kijkt daarbij naar wat er van binnenuit meespeelt. Bij haar begint een afspraak vaker met vragen dan met een apparaat, en dat is geen omweg: bij een deel van de huidklachten zit de aanjager niet in de huid.",
-  },
-  {
-    /* Rojda, 8 september 2026: "Andres is die man, die moet links." Het staande portret
-       van de enige man in de reeks is dus van hem, en hij staat als eerste in zijn groep. */
     slug: "andres",
-    portret: "/images/shoot/team-portret-6.jpg",
+    portret: "/images/shoot/team-andres.jpg",
     naam: "Andres",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
     bio: "Andres is huidtherapeut en werkt met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en zegt het ook als een behandeling bij jouw huid minder oplevert.",
   },
   {
-    /* Rojda, 8 september 2026: Melanie werkt er niet meer; op deze plek hoort Anouk. Het
-       portret dat bij deze kaart stond blijft staan, want de shoot is van na Melanies
-       vertrek. [GEGEVEN-NODIG: is dit inderdaad Anouk op de foto? Okan] */
-    slug: "anouk",
-    portret: "/images/shoot/team-portret-5.jpg",
-    naam: "Anouk",
-    functie: "Huidtherapeut",
-    vak: "huidtherapie",
-    bio: "Anouk is huidtherapeut. Zij doet veel van de trajecten die over maanden lopen, en dat betekent dat je haar vaker ziet dan één keer. Bij elke controle wordt er gemeten in plaats van geschat, zodat je zelf kunt zien of het schema klopt.",
-  },
-  {
-    /* Rojda, 8 september 2026: bij Iris voorlopig geen foto. De kaart blijft; het portret
-       dat hier stond was van Andres. */
     slug: "iris",
+    portret: "/images/shoot/team-iris.jpg",
     naam: "Iris",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
     bio: "Iris is huidtherapeut en werkt veel met mensen die eerst ergens anders geweest zijn. Zij begint dan bij wat er al geprobeerd is, want dat scheelt maanden opnieuw uitproberen. Ook als dat betekent dat een eerder advies overeind blijft.",
   },
   {
-    /* Rojda, 8 september 2026: Bahar werkt er niet meer; hier hoort Cheyenne.
-       [GEGEVEN-NODIG: is dit Cheyenne op de foto? Okan] */
+    slug: "griselle",
+    portret: "/images/shoot/team-griselle.jpg",
+    naam: "Griselle",
+    functie: "Huidtherapeut",
+    vak: "huidtherapie",
+    bio: "Griselle is huidtherapeut en loopt de teksten op deze site na op wat er in de behandelkamer echt gebeurt. Meer dan een van de stukken hier is aangepast omdat zij zei dat het anders ging dan er stond.",
+  },
+  {
     slug: "cheyenne",
-    portret: "/images/shoot/team-portret-7.jpg",
     naam: "Cheyenne",
     functie: "Huidtherapeut",
     vak: "huidtherapie",
     bio: "Cheyenne is huidtherapeut. Zij neemt de tijd voor de uitleg vooraf, ook als die uitleg langer duurt dan de behandeling zelf. Weet je na afloop niet waarom er iets gedaan is, dan is er iets misgegaan; dat is haar maatstaf.",
   },
   {
-    /* Rojda, 8 september 2026: Rialda werkt er niet meer; hier hoort Elaf, "huidspecialist".
-       Dat is bewust niet "huidtherapeut": die titel is beschermd en Rojda gebruikte hem
-       niet. Elaf staat daarom bij het vak schoonheidsspecialist, het enige behandelende
-       vak in de samenstelling dat nog geen kaart had. [GEGEVEN-NODIG: klopt dat, en is dit
-       Elaf op de foto? Okan] */
+    slug: "anouk",
+    naam: "Anouk",
+    functie: "Huidtherapeut",
+    vak: "huidtherapie",
+    bio: "Anouk is huidtherapeut. Zij doet veel van de trajecten die over maanden lopen, en dat betekent dat je haar vaker ziet dan een keer. Bij elke controle wordt er gemeten in plaats van geschat, zodat je zelf kunt zien of het schema klopt.",
+  },
+  {
+    slug: "india",
+    portret: "/images/shoot/team-india.jpg",
+    naam: "India",
+    functie: "Huidtherapeut in opleiding en laserspecialist",
+    /* Twee vakken in een functie. Ze staat onder laser, want dat is wat ze nu zelfstandig
+       doet; de huidtherapie staat erbij als opleiding en niet als titel. */
+    vak: "laser",
+    bio: "India doet de laserbehandelingen en volgt daarnaast de opleiding tot huidtherapeut. Bij laserontharing is zij vaak degene die de zones doorloopt en per keer bijstelt wat er nodig is.",
+  },
+  {
+    slug: "demi",
+    portret: "/images/shoot/team-demi.jpg",
+    naam: "Demi",
+    functie: "Orthomoleculair huidspecialist",
+    vak: "orthomoleculair",
+    bio: "Demi werkt als orthomoleculair huidspecialist en kijkt daarbij naar wat er van binnenuit meespeelt. Bij haar begint een afspraak vaker met vragen dan met een apparaat, en dat is geen omweg: bij een deel van de huidklachten zit de aanjager niet in de huid.",
+  },
+  {
     slug: "elaf",
-    portret: "/images/shoot/team-portret-8.jpg",
     naam: "Elaf",
-    functie: "Huidspecialist",
-    vak: "schoonheid",
-    bio: "Elaf is huidspecialist en doet de verzorgende behandelingen: de reiniging, HydraFacial, OxyGeneo en de peelings die aan de oppervlakte blijven. Zij is vaak de eerste die je huid onder handen heeft, en als zij iets ziet wat bij een huidtherapeut hoort, hoor je dat voordat ze verdergaat.",
+    functie: "Laserspecialist",
+    vak: "laser",
+    bio: "Elaf doet de laserbehandelingen: ontharen, en het licht dat op kleur of vaatjes mikt. Ziet zij tijdens een afspraak iets wat bij een huidtherapeut hoort, dan hoor je dat voordat ze verdergaat.",
+  },
+  {
+    slug: "okan",
+    naam: "Okan",
+    functie: "Praktijkmanager",
+    vak: "praktijk",
+    bio: "Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit.",
+  },
+  {
+    slug: "yasin",
+    naam: "Yasin",
+    functie: "IT en marketing",
+    vak: "kantoor",
+    bio: "Yasin bouwt en onderhoudt deze site en doet de marketing. Klopt er iets niet aan wat je hier leest, dan is dat bij hem het snelst gemeld.",
   },
 ];
 
@@ -201,16 +209,26 @@ export const VAKGEBIEDEN: readonly {
       "Een aanvullende opleiding naast de huidtherapie of schoonheidsspecialiste, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.",
   },
   {
-    /* Rojda, 7 september 2026: het team heeft ook een allround schoonheidsspecialist.
-       Die stond nergens, ook niet als vakgebied. Sinds 8 september staat Elaf hier, met de
-       functie die Rojda noemde: huidspecialist. */
-    id: "schoonheid",
-    label: "Allround schoonheidsspecialist",
+    /* Heette tot 10 september 2026 "allround schoonheidsspecialist", omdat Rojda dat vak
+       noemde en er nog geen laserspecialisten in de lijst stonden. Yasin gaf die dag de
+       functies door zoals ze nu zijn: Elaf en India doen de laserbehandelingen, en dat is
+       iets anders dan de verzorgende behandelingen. */
+    id: "laser",
+    label: "Laserspecialist",
     beschermd: false,
     behandelend: true,
-    wat: "Doet de verzorgende behandelingen: reinigen, peelings op oppervlakkig niveau, HydraFacial en OxyGeneo, en de verzorging eromheen.",
+    wat: "Werkt met de laser- en lichtapparatuur: ontharen, en licht dat op kleur of vaatjes mikt. Kiest per huidtype en per zone de instelling.",
     opleiding:
-      "Mbo-opleiding schoonheidsspecialist, allround. Geen beschermde titel; onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register.",
+      "Een vakopleiding op de apparatuur zelf, met een certificering per apparaat. Geen beschermde titel, dus vraag naar de opleiding erachter; onze laserspecialisten werken onder dezelfde protocollen als de huidtherapeuten. [GEGEVEN-NODIG: welke certificering precies, Okan]",
+  },
+  {
+    id: "kantoor",
+    label: "IT en marketing",
+    beschermd: false,
+    behandelend: false,
+    wat: "Bouwt en onderhoudt deze site en doet de marketing. Komt niet in de behandelkamer.",
+    opleiding:
+      "Geen zorgopleiding, en dat hoort ook zo: hier wordt niets over jouw huid besloten.",
   },
   {
     id: "praktijk",
@@ -265,47 +283,61 @@ type Logo = {
   readonly naam: string;
   readonly logo: string;
   readonly url: string;
-  /** Een woord naast het beeldmerk, als het logo zelf geen naam draagt. */
-  readonly tekst?: string;
-  /** Staande of vierkante logo's krijgen iets meer hoogte dan brede woordmerken. */
-  readonly hoog?: boolean;
+  /**
+   * De hoogte in beeldpunten waarop dit logo naast de andere staat.
+   *
+   * Niet allemaal dezelfde hoogte, want dan bepaalt de vorm hoe groot iets oogt: een breed
+   * woordmerk als ANBOS wordt dan een banier en een rond zegel als het SKIN Register een
+   * knikker. Deze getallen houden het bedekte oppervlak ongeveer gelijk (hoogte omgekeerd
+   * evenredig met de wortel van de breedte-hoogteverhouding), met een ondergrens voor de
+   * merken waar leesbare letters in zitten. Zo lijken ze even zwaar terwijl ze het niet zijn.
+   */
+  readonly hoogte: number;
 };
 
 export const LOGOSTROOK: readonly Logo[] = [
+  /* De volgorde is die van de rijen op een telefoon: drie brede woordmerken boven, drie
+     ronde tekens eronder (Yasin, 10 september 2026). Zo staat er geen postzegel naast een
+     banier en beginnen beide rijen even zwaar. */
   {
     naam: "Nederlandse Vereniging van Huidtherapeuten",
     logo: "/images/logos/nvh-tekst.png",
     url: "https://www.huidtherapie.nl/",
-    hoog: true,
-  },
-  {
-    naam: "Kwaliteitsregister Paramedici",
-    logo: "/images/logos/kwaliteitsregister-paramedici.svg",
-    url: "https://www.kwaliteitsregisterparamedici.nl/",
-    hoog: true,
-  },
-  {
-    naam: "ANBOS",
-    logo: "/images/logos/anbos.png",
-    url: "https://www.anbos.nl/",
-  },
-  {
-    naam: "SKIN Register",
-    logo: "/images/logos/skin-register.svg",
-    url: "https://www.skinregister.nl/",
-    hoog: true,
+    hoogte: 34,
   },
   {
     naam: "ZorgkaartNederland",
     logo: "/images/logos/zorgkaart-nederland.svg",
     url: "https://www.zorgkaartnederland.nl/zorginstelling/huidtherapiepraktijk-diba-clinics-rotterdam-10082984",
+    hoogte: 29,
+  },
+  {
+    naam: "ANBOS",
+    logo: "/images/logos/anbos.png",
+    url: "https://www.anbos.nl/",
+    hoogte: 26,
+  },
+  {
+    naam: "Kwaliteitsregister Paramedici",
+    logo: "/images/logos/kwaliteitsregister-paramedici.svg",
+    url: "https://www.kwaliteitsregisterparamedici.nl/",
+    hoogte: 50,
+  },
+  {
+    naam: "SKIN Register",
+    /* Yasin, 10 september 2026: het zegel van skinregister.nl zelf, in plaats van het
+       woordmerk dat we eerst hadden. Het bestand van de vereniging is een SVG met een
+       bitmap erin van 324 kB; dat staat onder elke pagina, dus de bitmap is eruit gehaald
+       en als PNG van 200 punten opgeslagen. */
+    logo: "/images/logos/skin-register.png",
+    url: "https://www.skinregister.nl/",
+    hoogte: 50,
   },
   {
     naam: "SBB, erkend leerbedrijf",
     logo: "/images/logos/sbb.svg",
     url: "https://www.s-bb.nl/",
-    tekst: "Erkend leerbedrijf",
-    hoog: true,
+    hoogte: 46,
   },
 ];
 
@@ -346,14 +378,13 @@ export const ERKENNINGEN = [
 export const TEAM_SAMENSTELLING: readonly {
   readonly vak: Vakgebied;
   readonly aantal: number;
-}[] = [
-  { vak: "huidtherapie", aantal: 5 },
-  { vak: "orthomoleculair", aantal: 2 },
-  { vak: "schoonheid", aantal: 1 },
-  { vak: "praktijk", aantal: 1 },
-];
+}[] = (
+  ["huidtherapie", "orthomoleculair", "laser", "praktijk", "kantoor"] as const
+)
+  .map((vak) => ({ vak, aantal: TEAM.filter((l) => l.vak === vak).length }))
+  .filter((v) => v.aantal > 0);
 
-export const TEAM_AANTAL = TEAM_SAMENSTELLING.reduce((n, s) => n + s.aantal, 0);
+export const TEAM_AANTAL = TEAM.length;
 
 export const KWALITEITSREGISTER = {
   naam: "Kwaliteitsregister Paramedici",

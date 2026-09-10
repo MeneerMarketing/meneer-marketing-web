@@ -367,7 +367,7 @@ export default function TeamPage() {
               href="/reviews"
               className="diba-label mt-8 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
             >
-              Alle reviews, en waarom een 5,0 wantrouwen verdient
+              Alle reviews, en hoe je ze het beste leest
             </Link>
           </div>
         </section>

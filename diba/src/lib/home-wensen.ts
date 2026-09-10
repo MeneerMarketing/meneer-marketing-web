@@ -43,6 +43,7 @@ export function homeWensen(): readonly HomeWens[] {
       icoon: beeld.icoon,
       image: beeld.image,
       imageAlt: beeld.imageAlt,
+      brandpunt: beeld.brandpunt,
       behandelingen: gesorteerd.slice(0, MAX_IN_PANEEL).map((b) => ({
         slug: b.slug,
         naam: publicCopy(b.naam),

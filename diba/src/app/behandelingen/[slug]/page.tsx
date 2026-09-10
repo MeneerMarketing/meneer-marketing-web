@@ -3,6 +3,7 @@ import Link from "next/link";
 import VideoKolom from "@/components/media/VideoKolom";
 import ProfielOordeel from "@/components/huidprofiel/ProfielOordeel";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import Reviewregel from "@/components/reviews/Reviewregel";
 import { notFound } from "next/navigation";
 import Werkingsvenster, {
   type WerkingsvensterApparaat,
@@ -24,11 +25,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SALONIZED_BOOKING_URL,
-  DIBA_SITE_URL,
-} from "@/lib/site";
+import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
 
 /**
  * De behandelpagina's.
@@ -265,7 +262,7 @@ export default async function BehandelingPage({ params }: PageProps) {
 
           {apparaten.length > 0 ? (
             <p className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-7 text-[var(--t-body)]">
-              <span className="text-[var(--t-muted)]">Draait op</span>
+              <span className="text-[var(--t-muted)]">We doen dit met</span>
               {apparaten.map((a, i) => (
                 <span key={a.slug}>
                   <Link
@@ -282,7 +279,7 @@ export default async function BehandelingPage({ params }: PageProps) {
 
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
             <Link
-              href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+              href="/afspraak"
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] max-sm:w-full max-sm:justify-center max-sm:px-3"
             >
               <span className="sm:hidden">Plan consult</span>
@@ -425,6 +422,13 @@ export default async function BehandelingPage({ params }: PageProps) {
           precies de vijf dunste pagina's van de reeks. Nu draagt hij zichzelf zodra er iets
           in te zetten valt: de stappen als die er zijn, en anders het verloop van de
           afspraak. */}
+      {/* Eén regel van iemand die hier is geweest, tussen twee blokken van onszelf. */}
+      <section className="px-5 pt-8 sm:px-9 lg:px-[7.5vw]">
+        <div className="mx-auto">
+          <Reviewregel keuze={4} />
+        </div>
+      </section>
+
       {b.stappen?.length || b.inDeStoel?.length ? (
         <section
           id="afspraak"
@@ -444,8 +448,20 @@ export default async function BehandelingPage({ params }: PageProps) {
                 "in volgorde", de kaarten staan van links naar rechts, en het is een
                 genummerde lijst. Drie keer dezelfde mededeling, waarvan er twee alleen
                 als opmaak leesbaar zijn. */}
+            {/* Okan, 10 september 2026: "belangrijk detail, elke behandeling wordt vooraf
+                handmatig gereinigd zodat alle talg ook handmatig wordt verwijderd en
+                nagelopen." Dat geldt voor alle behandelingen, dus het staat hier in plaats
+                van in de stappen van elke behandeling apart: dan zou het vijfenveertig keer
+                overgeschreven worden en na de eerste wijziging uit elkaar lopen. */}
+            <p className="mt-6 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
+              Elke behandeling begint met reinigen, en dat gaat met de hand.
+              Make-up en talg gaan eraf en de behandelaar loopt na of alles weg
+              is, want een apparaat of een werkstof die op een laagje werkt komt
+              niet bij je huid.
+            </p>
+
             {b.stappen?.length ? (
-              <ol className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3">
+              <ol className="mt-8 grid gap-4 sm:mt-10 md:grid-cols-3">
                 {b.stappen.map((s) => (
                   <li
                     key={s.kop}
@@ -528,7 +544,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                       gelezen hoe de behandeling voelt, en dat is het moment waarop de
                       vraag "en nu" komt. */}
                   <Link
-                    href={DIBA_SALONIZED_BOOKING_URL || "/intake"}
+                    href="/afspraak"
                     className="diba-label mt-8 inline-flex min-h-12 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     Plan een huidconsult

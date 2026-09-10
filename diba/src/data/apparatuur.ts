@@ -486,7 +486,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     techniek: [
       "De Nordlys van Candela is geen laser maar IPL: intens gepulst licht. Een laser zendt één golflengte uit, IPL een band. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.",
       "Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek. [GEGEVEN-NODIG: welke applicators hier in de kast liggen, Okan]",
-      "Op hetzelfde platform kan ook een Nd:YAG op 1064 nanometer draaien, en fractionele lasers op 1550 en 1940 nanometer. Die komen dieper dan het IPL-licht en doen ander werk.",
+      "Hetzelfde apparaat kan ook werken met een Nd:YAG op 1064 nanometer, en met fractionele lasers op 1550 en 1940 nanometer. Die komen dieper dan het IPL-licht en doen ander werk.",
     ],
     foto: {
       src: "/images/shoot/apparaat-nordlys.jpg",

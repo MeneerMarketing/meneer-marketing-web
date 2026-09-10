@@ -10,6 +10,7 @@ import {
 } from "@/data/apparatuur";
 import { HUIDLAGEN, LAAGAANDEEL } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
+import Schuifhint from "@/components/ui/Schuifhint";
 
 /**
  * De dieptevergelijker: alle apparaten op één schaal.
@@ -117,7 +118,8 @@ export default function Dieptevergelijker() {
       ) : null}
 
       {/* ── De as ── */}
-      <div className="mt-10 overflow-x-auto">
+      <Schuifhint wat="de vergelijking" />
+      <div className="mt-3 overflow-x-auto sm:mt-10">
         <div className="min-w-[640px]">
           <div className="grid grid-cols-[minmax(190px,1fr)_2.2fr] items-end gap-6">
             <p className="diba-label text-[var(--t-label)]">

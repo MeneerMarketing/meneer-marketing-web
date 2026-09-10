@@ -116,7 +116,7 @@ export default function BehandelingenBijProbleem({
                       href={`/apparatuur/${apparaat.slug}`}
                       className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
                     >
-                      Op de {apparaat.naam}
+                      Met de {apparaat.naam}
                     </Link>
                   ) : null}
                 </div>
