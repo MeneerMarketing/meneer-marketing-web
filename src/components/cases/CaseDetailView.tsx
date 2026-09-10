@@ -62,7 +62,7 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-400">
               {story.hook}
             </p>
-            <p className="mt-4 max-w-2xl text-base font-semibold italic text-slate-300">
+            <p className="mt-4 max-w-2xl text-base font-semibold text-slate-300">
               &ldquo;{story.meneerLine}&rdquo;
             </p>
 
@@ -80,8 +80,7 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
               ) : null}
               <Link
                 href={siteCtas.startIntake.href}
-                className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-white shadow-lg"
-                style={{ backgroundColor: palette.accent === "#45382C" ? "#FF5722" : palette.accent }}
+                className="inline-flex items-center gap-2 rounded-full bg-[#FF5722] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5722]/25 transition hover:bg-orange-600"
               >
                 {siteCtas.startIntake.label}
                 <ArrowUpRight className="size-4" aria-hidden />
@@ -154,18 +153,6 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
               </li>
             ))}
           </ul>
-          {caseData.id === "hills-pilates" ? (
-            <p className="mt-8 text-sm leading-relaxed text-slate-600">
-              Bouw je een boutique Pilates studio uit?{" "}
-              <Link
-                href="/pilates-studios"
-                className="font-bold text-slate-900 underline decoration-[#FF5722]/50 underline-offset-2 hover:text-[#FF5722]"
-              >
-                Website, SEO en marketing voor Pilates studio&apos;s
-              </Link>
-              .
-            </p>
-          ) : null}
         </div>
       </section>
 

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Lock } from "lucide-react";
 import { motion } from "framer-motion";
-import { useRef } from "react";
 import { CasePreviewVideo } from "@/components/home/cases/CasePreviewVideo";
 import { CaseSceneIllustration } from "@/components/home/cases/CaseSceneIllustration";
 import type { HomeCase } from "@/data/home-cases";
@@ -14,8 +13,6 @@ interface CaseLivePreviewProps {
 
 /** Live browser-preview met video, foto of fallback. */
 export function CaseLivePreview({ caseItem }: CaseLivePreviewProps) {
-  const ref = useRef<HTMLDivElement>(null);
-
   const {
     palette,
     website,
@@ -30,15 +27,10 @@ export function CaseLivePreview({ caseItem }: CaseLivePreviewProps) {
   const hasVideo = Boolean(previewVideo);
   const hasImage = Boolean(previewImage);
   const hasPoster = Boolean(previewPoster);
+  const liveUrl = website?.url;
 
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-      className="relative w-full min-w-0"
-    >
+  const frame = (
+    <>
       <div
         className="pointer-events-none absolute -inset-8 rounded-[2rem] opacity-40 blur-3xl"
         style={{ backgroundColor: `${palette.accent}55` }}
@@ -128,6 +120,34 @@ export function CaseLivePreview({ caseItem }: CaseLivePreviewProps) {
           </p>
         </div>
       </div>
+    </>
+  );
+
+  if (liveUrl) {
+    return (
+      <motion.a
+        href={liveUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+        className="group relative block w-full min-w-0 rounded-[1.35rem] transition-transform duration-300 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FF5722]"
+        aria-label={`Bekijk live site van ${caseItem.client}`}
+      >
+        {frame}
+      </motion.a>
+    );
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+      className="relative w-full min-w-0"
+    >
+      {frame}
     </motion.div>
   );
 }

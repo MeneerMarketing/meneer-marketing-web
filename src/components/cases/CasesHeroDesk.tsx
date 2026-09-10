@@ -41,7 +41,7 @@ export function CasesHeroDesk() {
         <span className="size-2.5 rounded-full bg-amber-400/90" aria-hidden />
         <span className="size-2.5 rounded-full bg-emerald-400/90" aria-hidden />
         <span className="ml-1 truncate font-mono text-[10px] text-slate-500">
-          {desk.host} · sinds {desk.since}
+          {desk.host} — sinds {desk.since}
         </span>
       </div>
 
@@ -97,7 +97,7 @@ export function CasesHeroDesk() {
           )}
         </div>
 
-        <p className="mt-4 border-t border-white/10 pt-3 text-[10px] font-semibold italic leading-snug text-slate-500">
+        <p className="mt-4 border-t border-white/10 pt-3 text-[10px] font-semibold leading-snug text-slate-500">
           &ldquo;{desk.quip}&rdquo;
         </p>
       </div>
