@@ -272,14 +272,24 @@ export default function PigmentPage() {
         intro="Bij pigment gaat het vaak mis door te vroeg beginnen, niet door te weinig behandelen."
       />
 
+      {/* De diepte erbij. Griss, 9 september 2026: "Dit is een belangrijk onderdeel van
+          de diagnostiek en bepaalt mede welke behandeling passend is: epidermaal, dermaal
+          of gecombineerd, zoals bij melasma. Bij het consult benoem ik dit zelf altijd."
+          De uitleg over de lagen staat in de tweede alinea; de as eronder is de korte
+          versie. [MEDISCHE-CHECK-ROJDA: beoordeling van de diepte onder UV-licht] */}
       <HuidanalyseAssen
         kop="Deze kenmerken volgen we bij pigment"
         alineas={[
           "De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt.",
+          "Net zo belangrijk is hoe diep het zit. Pigment kan in de opperhuid liggen (epidermaal), in de lederhuid (dermaal) of in allebei, zoals vaak bij melasma. Oppervlakkig pigment reageert sneller en op meer behandelingen; dieper pigment vraagt meer tijd en een andere keuze. Onder UV-licht is dat verschil te zien, met het blote oog niet. [MEDISCHE-CHECK-ROJDA]",
           "Dat is ook de eerlijkste manier om te zien of het werkt. Pigment verandert langzaam, en je oog raakt eraan gewend.",
         ]}
         assen={[
           ["Pigment", "Hoe donker en hoe verspreid, objectief in kaart"],
+          [
+            "Diepte",
+            "In de opperhuid, in de lederhuid of in allebei. Dat bepaalt de prognose en de keuze van de behandeling",
+          ],
           [
             "UV-belasting",
             "Wat de zon al heeft aangericht, ook wat je niet ziet",

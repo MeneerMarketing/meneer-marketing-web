@@ -19,6 +19,15 @@
  * komt bij een aanbieder die wél ja zegt, en betaalt voor iets dat niet werkt. Deze pagina
  * geeft het antwoord dat er in het consult ook zou vallen, alleen eerder.
  *
+ * XANTHELASMA.
+ *
+ * Griss, 9 september 2026: "Bij wallen zou ik ook xanthelasma toevoegen. Dit zijn niet per
+ * se wallen, maar mensen vragen ons regelmatig of we dit kunnen behandelen. Het zijn
+ * vet-/lipidenophopingen rondom de ogen, vaak geassocieerd met verhoogd cholesterol." Het
+ * staat als vierde beeld in de kiezer, met de eerlijke toevoeging dat het geen wal is.
+ * [GEGEVEN-NODIG: behandelt Diba xanthelasma zelf, en waarmee? Tot dat bekend is zegt de
+ * kaart "laat het bekijken" en niet "dit halen we weg".]
+ *
  * MEDISCH.
  *
  * Alles wat een bewering doet is gemarkeerd voor Rojda. De ochtendtest hieronder is een
@@ -36,6 +45,8 @@ export type WalOorzaak = {
   readonly watWijDoen: string;
   /** Ligt dit binnen wat een huidkliniek kan. Stuurt de toon van de kaart. */
   readonly binnenBereik: boolean;
+  /** Het uitgelichte vlak op de kaart: wie hier aan zet is, in één zin. */
+  readonly uitgelicht: { readonly label: string; readonly tekst: string };
 };
 
 export const WAL_OORZAKEN: readonly WalOorzaak[] = [
@@ -49,8 +60,13 @@ export const WAL_OORZAKEN: readonly WalOorzaak[] = [
     watHetIs:
       "Vocht dat zich 's nachts ophoopt in het losse weefsel onder je ogen en overdag wegzakt. Dit is de enige van de drie die van dag tot dag verandert. [MEDISCHE-CHECK-ROJDA]",
     watWijDoen:
-      "Hier valt iets te doen. Afvoer stimuleren, de huid steviger maken, en kijken wat er in je routine of je nachten meespeelt.",
+      "Hier valt iets te doen. Afvoer stimuleren, de huid steviger maken, en kijken wat er in je routine of je nachten meespeelt. Zit er ook bruine kleur onder het oog, een pigmentwal, dan hoort de eye peel erbij, vaak samen met RRS Eyes. [MEDISCHE-CHECK-ROJDA]",
     binnenBereik: true,
+    uitgelicht: {
+      label: "Hier zijn wij aan zet",
+      tekst:
+        "Van de drie oorzaken is dit de enige die met een huidbehandeling te beïnvloeden is, en de enige die van dag tot dag verandert.",
+    },
   },
   {
     id: "vet",
@@ -64,6 +80,11 @@ export const WAL_OORZAKEN: readonly WalOorzaak[] = [
     watWijDoen:
       "Hier zeggen we nee. Dit is chirurgie en geen huidbehandeling; een cosmetisch arts of oogarts kan er wél iets aan doen.",
     binnenBereik: false,
+    uitgelicht: {
+      label: "Hier zijn wij het niet",
+      tekst:
+        "Een huidkliniek verandert hier niets aan. Wij zeggen dat liever nu dan na een reeks, ook als je hier kwam om iets te boeken.",
+    },
   },
   {
     id: "schaduw",
@@ -77,6 +98,29 @@ export const WAL_OORZAKEN: readonly WalOorzaak[] = [
     watWijDoen:
       "Wij vullen niet op met fillers. Wel kunnen we de huid eromheen steviger maken, en soms is dat genoeg om de schaduw te verzachten.",
     binnenBereik: false,
+    uitgelicht: {
+      label: "Hier zijn wij het niet",
+      tekst:
+        "Een huidkliniek verandert hier niets aan. Wij zeggen dat liever nu dan na een reeks, ook als je hier kwam om iets te boeken.",
+    },
+  },
+  {
+    id: "xanthelasma",
+    naam: "Gele plekjes op het ooglid",
+    klanttaal: "Zachte, gelige bultjes op of rond je oogleden die niet weggaan",
+    vakterm: "xanthelasma",
+    zelfcheck:
+      "Zijn het gelige, iets verheven plekjes, meestal aan de neuskant van je oogleden, die er 's ochtends en 's avonds hetzelfde bij liggen?",
+    watHetIs:
+      "Geen wal maar een ophoping van vet (lipiden) in de huid van het ooglid. Het hangt vaak samen met een verhoogd cholesterol, en daarom is het ook iets voor je huisarts. [MEDISCHE-CHECK-ROJDA]",
+    watWijDoen:
+      "Mensen vragen er ons geregeld naar. We bekijken het in het consult en zeggen wat er bij Diba kan. Laat daarnaast je cholesterol nakijken, want daar komt het vaak vandaan. [GEGEVEN-NODIG: behandelt Diba xanthelasma, en waarmee? Griss, 9 september 2026]",
+    binnenBereik: true,
+    uitgelicht: {
+      label: "Eerst laten bekijken",
+      tekst:
+        "Geen wal, wel een vraag die we vaak krijgen. In het consult zie je of het xanthelasma is en wat er bij Diba kan; de cholesterolcontrole hoort bij de huisarts.",
+    },
   },
 ];
 
@@ -105,6 +149,7 @@ export const WALLEN_WEL_NIET = {
   wel: [
     "Eerst vaststellen of het vocht, vet of schaduw is, want twee daarvan lossen we hier niet op",
     "Bij vocht: afvoer stimuleren en de huid rond het oog steviger maken, in een reeks",
+    "Bij een pigmentwal, een bruine kleur onder het oog: de eye peel, vaak samen met RRS Eyes [MEDISCHE-CHECK-ROJDA]",
     "Zonbescherming rond de ogen, want een dunnere huid laat alles eronder beter zien [MEDISCHE-CHECK-ROJDA]",
     "Meewegen wat er verder speelt: slaap, zout, alcohol, allergie [MEDISCHE-CHECK-ROJDA]",
     "Doorsturen naar een arts als het antwoord daar ligt, ook als je hier al zat",

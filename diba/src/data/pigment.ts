@@ -13,6 +13,14 @@
  * staat het woord dat de merkregels expliciet voorschrijven: beheersing is realistischer
  * dan verdwijning (§10).
  *
+ * PIH, HERSTELD.
+ *
+ * De kaart over pigment na een ontsteking zei "meestal niets doen en beschermen". Griss,
+ * 9 september 2026: "PIH is juist één van de meest voorkomende indicaties die wij
+ * behandelen, naast acne. We doen hier juist veel microneedlingbehandelingen voor." Dus
+ * nu: microneedling voorop, peelings of een pigmenttraject als het dieper zit, en de
+ * zonbescherming die er altijd al bij hoorde.
+ *
  * COPY-STATUS: concept in de Diba-stem. Medische beweringen gemarkeerd voor Rojda.
  */
 
@@ -228,9 +236,9 @@ export const PIGMENT_SOORTEN: readonly PigmentSoort[] = [
     oorzaak:
       "Je huid heeft pigment gemaakt tijdens het genezen. Dit is geen litteken, ook al voelt het zo. [MEDISCHE-CHECK-ROJDA]",
     realistisch:
-      "Deze trekken vaak van zichzelf weg, in maanden. Zonbescherming versnelt dat meer dan welke behandeling ook.",
+      "Naast acne is dit wat we het vaakst behandelen. Een verse plek trekt deels vanzelf weg; wat na maanden blijft staan, reageert goed op behandeling, en zonbescherming houdt het licht. [MEDISCHE-CHECK-ROJDA]",
     aanpak:
-      "Meestal: niets doen en beschermen. We zeggen liever dat je moet wachten dan dat we je een traject verkopen dat de natuur gratis doet.",
+      "Microneedling, want dat brengt de vernieuwing op gang in de laag waar het pigment zit. Zit het dieper of blijft het hardnekkig, dan komen daar peelings of een pigmenttraject bij. Altijd met zonbescherming, anders komt het terug. [MEDISCHE-CHECK-ROJDA]",
   },
 ] as const;
 
@@ -239,7 +247,7 @@ export const PIGMENT_WEL_NIET = {
     "Elke dag zonbescherming, ook op een grijze dag. Bij pigment is dat het belangrijkste onderdeel",
     "Starten in het najaar, zodat je maanden met lage UV vóór je hebt",
     "Meten per seizoen, want pigment beweegt met het jaar mee",
-    "Onderscheid maken tussen zonschade en melasma vóór de eerste behandeling",
+    "Vóór de eerste behandeling vaststellen welk type het is en hoe diep het zit: in de opperhuid, in de lederhuid of in allebei",
     "Een pet of hoed. Die houdt meer zon tegen dan welke crème ook",
   ],
   niet: [

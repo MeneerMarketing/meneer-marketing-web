@@ -70,12 +70,9 @@ const SOORTEN: readonly SoortOptie[] = WAL_OORZAKEN.map((o) => ({
     ["Wat het is", o.watHetIs],
     ["Wat wij doen", o.watWijDoen],
   ] as const,
-  uitgelicht: {
-    label: o.binnenBereik ? "Hier zijn wij aan zet" : "Hier zijn wij het niet",
-    tekst: o.binnenBereik
-      ? "Van de drie oorzaken is dit de enige die met een huidbehandeling te beïnvloeden is, en de enige die van dag tot dag verandert."
-      : "Een huidkliniek verandert hier niets aan. Wij zeggen dat liever nu dan na een reeks, ook als je hier kwam om iets te boeken.",
-  },
+  /* Per beeld in de data, sinds xanthelasma erbij staat: dat is geen wal en valt buiten
+     "de enige van de drie". */
+  uitgelicht: o.uitgelicht,
 }));
 
 export default function WallenPage() {
@@ -192,17 +189,19 @@ export default function WallenPage() {
         </div>
       </section>
 
-      {/* ── Vocht, vet of schaduw ──────────────────────────────────────── */}
+      {/* ── Vocht, vet of schaduw, en de gele plek die geen wal is ──────────
+          Griss, 9 september 2026: xanthelasma erbij, want mensen vragen er geregeld
+          naar. Het is geen oorzaak van wallen, dus de kop zegt dat ook. */}
       <section
         id="welke"
         className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
-            label="Drie oorzaken"
-            kop="Drie"
-            accent="oorzaken"
-            intro="Wallen komen door vocht, een vetkussen of schaduw door een groef. Welke van de drie het is, bepaalt wat een huidbehandeling kan toevoegen."
+            label="Vocht, vet, schaduw"
+            kop="Drie oorzaken,"
+            accent="en één die erop lijkt"
+            intro="Wallen komen door vocht, een vetkussen of schaduw door een groef. Welke van de drie het is, bepaalt wat een huidbehandeling kan toevoegen. En soms is het geen wal maar een gele plek op het ooglid."
           />
           <SoortKiezer
             opties={zonderVlaggen(SOORTEN)}

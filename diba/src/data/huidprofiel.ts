@@ -413,8 +413,10 @@ const DOELMATRIX: Record<string, Partial<Record<DoelId, "vol" | "deels">>> = {
   kruidenpeel: { acne: "vol", textuur: "deels" },
   /* Microneedling mikt op de laag waar structuur zit; acnelittekens vallen daarom onder
      textuur. Actieve, ontstoken acne staat er bewust niet bij. */
-  skinpen: { textuur: "vol", lijntjes: "vol" },
-  "dermapen-4": { textuur: "vol", lijntjes: "vol" },
+  /* "Deels" bij kleur: de pen is er voor pigment dat na een ontsteking achterbleef (Griss,
+     9 september 2026), niet voor zonschade of melasma. */
+  skinpen: { textuur: "vol", lijntjes: "vol", kleur: "deels" },
+  "dermapen-4": { textuur: "vol", lijntjes: "vol", kleur: "deels" },
   skinboosters: { lijntjes: "vol", kleur: "deels" },
   fotona: { lijntjes: "vol", textuur: "vol" },
   "nordlys-pigment": { roodheid: "vol", kleur: "vol" },
@@ -1093,7 +1095,7 @@ export function nogNietGemeten(p: Huidprofiel): readonly string[] {
 
   if (p.doelen.includes("kleur")) {
     punten.push(
-      "Of je pigment oppervlakkig ligt of dieper in de huid zit. Dat verschil bepaalt of een peeling genoeg is of dat er laser aan te pas moet, en het is met het blote oog niet te zien.",
+      "Of je pigment oppervlakkig ligt of dieper in de huid zit. Dat verschil bepaalt of een peeling of microneedling genoeg is of dat er laser aan te pas moet, en het is met het blote oog niet te zien.",
     );
   }
   if (p.doelen.includes("textuur")) {

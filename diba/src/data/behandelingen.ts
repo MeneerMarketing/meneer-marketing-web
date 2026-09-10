@@ -771,7 +771,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "SkinPen Microneedling",
     apparaat: "SkinPen CIT",
     categorie: "needling",
-    huidwens: ["littekens"],
+    /* Griss, 9 september 2026: pigment na een ontsteking (PIH) is naast acne wat we het
+       vaakst behandelen, met veel microneedling; en bij dofheid door vochttekort zetten we
+       de pen ook geregeld in. Daarom ook onder pigment en glow, en op die twee pagina's. */
+    huidwens: ["littekens", "pigment", "glow"],
     kort: "Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
@@ -790,10 +793,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     wel: [
       "Werkt op littekens die door verlies van structuur zijn ontstaan",
       "Maakt fijne lijntjes en ongelijke textuur minder scherp",
+      "Maakt pigment dat na een puistje of wondje achterbleef (PIH) lichter, en geeft een dof geworden huid zijn glans terug [MEDISCHE-CHECK-ROJDA]",
       "Bereikt de laag waar een peeling niet komt",
     ],
     niet: [
-      "Voor kleur en pigment kies je laser of IPL",
+      "Voor zonschade en losse pigmentvlekken kies je laser of IPL; de pen is er voor pigment dat na een ontsteking achterbleef",
       "Een enkele sessie is te weinig; dit werkt in een reeks",
       "Bij een actieve ontsteking behandelen we die eerst [MEDISCHE-CHECK-ROJDA]",
     ],
@@ -815,7 +819,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Poriën", href: "/huidproblemen/porien" },
-
+      { label: "Pigmentvlekken", href: "/huidproblemen/pigmentvlekken" },
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
       { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
       { label: "Striae", href: "/huidproblemen/striae" },
       { label: "Rimpels", href: "/huidproblemen/rimpels" },
@@ -840,7 +845,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "Dermapen 4",
     apparaat: "Dermapen 4",
     categorie: "needling",
-    huidwens: ["littekens"],
+    huidwens: ["littekens", "pigment", "glow"],
     kort: "Microneedling met trillende naaldjes, die gelijkmatig door de huid komen.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
@@ -859,13 +864,15 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Poriën", href: "/huidproblemen/porien" },
+      { label: "Pigmentvlekken", href: "/huidproblemen/pigmentvlekken" },
+      { label: "Doffe huid", href: "/huidproblemen/doffe-huid" },
       { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
       { label: "Rimpels", href: "/huidproblemen/rimpels" },
       { label: "Striae", href: "/huidproblemen/striae" },
     ],
     wel: [
       "Maakt kanaaltjes in de huid die je eigen herstel op gang brengen [MEDISCHE-CHECK-ROJDA]",
-      "Werkt op fijne lijntjes, acnelittekens, grove poriën en een doffe structuur",
+      "Werkt op fijne lijntjes, acnelittekens, grove poriën, een doffe huid en pigment dat na een ontsteking achterbleef",
       "Komt met trillende naaldjes gelijkmatiger door de huid dan met een rollende beweging",
     ],
     niet: [
@@ -3262,11 +3269,12 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     duurMinuten: 30,
     wel: [
       "Mag op de dunne huid rond het oog, waar gewone peelings te sterk zijn",
-      "Werkt op fijne lijntjes en op een doffe kleur rond de ogen",
+      "Werkt op fijne lijntjes en op een bruine, doffe kleur onder de ogen: de pigmentwal",
+      "Gaat vaak samen met RRS Eyes in één reeks: de peeling op de bovenlaag, RRS Eyes eronder [MEDISCHE-CHECK-ROJDA]",
       "Is goed te combineren met een gezichtsbehandeling in dezelfde afspraak",
     ],
     niet: [
-      "Doet niets aan wallen; die komen van vocht of vet en niet van de bovenlaag",
+      "Haalt een wal door vocht of vet niet weg; die zit onder de huid en niet in de bovenlaag",
       "Haalt donkere kringen door schaduw of doorschijnende vaatjes niet weg [MEDISCHE-CHECK-ROJDA]",
       "Verstevigt geen hangend ooglid",
     ],
@@ -3279,11 +3287,14 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Wat is het verschil met RRS Eyes?",
         antwoord:
-          "Een peeling werkt op de bovenlaag; RRS Eyes brengt werkzame stoffen met een naald ónder de huid. Bij een doffe kleur en fijne lijntjes ligt de peeling voor de hand, bij donkere kringen en een vermoeide oogzone eerder RRS Eyes. [MEDISCHE-CHECK-ROJDA]",
+          "Een peeling werkt op de bovenlaag; RRS Eyes brengt werkzame stoffen met een naald ónder de huid. Bij een doffe kleur en fijne lijntjes ligt de peeling voor de hand, bij donkere kringen en een vermoeide oogzone eerder RRS Eyes. Bij een pigmentwal zetten we ze vaak allebei in, in dezelfde reeks. [MEDISCHE-CHECK-ROJDA]",
       },
     ],
     bijProblemen: [
       { label: "Donkere kringen", href: "/huidproblemen/donkere-kringen" },
+      /* Griss, 9 september 2026: "onmisbaar bij pigmentwallen onder de ogen", graag samen
+         met RRS Eyes. */
+      { label: "Wallen", href: "/huidproblemen/wallen" },
       { label: "Rimpels", href: "/huidproblemen/rimpels" },
     ],
     verwant: [

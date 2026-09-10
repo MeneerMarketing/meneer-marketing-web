@@ -28,6 +28,13 @@ import { kostenVraag } from "@/data/pillar-kosten";
  * kopen is een legitieme keuze. Het wordt pas een probleem als iemand denkt een oorzaak te
  * behandelen terwijl hij een symptoom afkoopt.
  *
+ * MICRONEEDLING.
+ *
+ * Griss, 9 september 2026: "Bij doffe huid mis ik microneedling. Die zetten wij regelmatig
+ * in bij dofheid door een tekort aan hydratatie, vanwege het sterke remodellerende effect
+ * op de dermis en epidermis." Staat nu bij het vochtbeeld en in de wel-lijst; de SkinPen en
+ * de Dermapen noemen deze pagina in bijProblemen, dus ze staan ook in het behandelblok.
+ *
  * MEDISCH.
  *
  * Alles wat een bewering doet is gemarkeerd voor Rojda.
@@ -68,7 +75,7 @@ export const DOF_BEELDEN: readonly DofBeeld[] = [
     watHetIs:
       "Een huid met te weinig water in de bovenste laag ligt niet glad, en een oneffen oppervlak oogt dof. Los van hoeveel talg je maakt. [MEDISCHE-CHECK-ROJDA]",
     watWijDoen:
-      "Eerst de barrière herstellen en pas daarna kijken of er nog iets nodig is. Vaak is er dan niets meer nodig.",
+      "Eerst de barrière herstellen. Blijft de huid dof, dan microneedling: dat zet de vernieuwing van opperhuid en lederhuid in gang, en daar krijgt een uitgedroogde huid zijn glans van terug. [MEDISCHE-CHECK-ROJDA]",
     binnenBereik: true,
   },
   {
@@ -131,7 +138,7 @@ export const LICHTTEST_STAPPEN: readonly {
 export const DOF_WEL_NIET = {
   wel: [
     "Eerst uitzoeken of het om cellen, vocht, kleur of leefstijl gaat, want dat scheelt een traject",
-    "De vernieuwing van de bovenlaag op gang helpen, in een tempo dat je huid aankan",
+    "De vernieuwing op gang helpen met een peeling of microneedling, in een tempo dat je huid aankan",
     "Eerlijk zeggen dat het effect van een gezichtsbehandeling op dofheid vaak tijdelijk is",
     "Zonbescherming, want ongelijke kleur is de traagste van de vier om terug te draaien [MEDISCHE-CHECK-ROJDA]",
     "Benoemen wanneer slaap en water meer opleveren dan wat wij kunnen doen",

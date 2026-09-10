@@ -87,7 +87,7 @@ export const NA_ACNE_BEELDEN: readonly NaAcneBeeld[] = [
     watHetIs:
       "Pigment dat na de ontsteking is achtergebleven. Ook dit is geen litteken: de huid is heel, alleen de kleur klopt niet. Komt vaker en heftiger voor bij een donkerder huidtype. [MEDISCHE-CHECK-ROJDA]",
     watWijDoen:
-      "Zonbescherming is hier geen bijzaak maar de behandeling zelf; zonder dat werkt de rest niet. Daarnaast peelings of een pigmenttraject, afhankelijk van hoe diep het zit.",
+      "Zonbescherming is hier geen bijzaak maar de behandeling zelf; zonder dat werkt de rest niet. Daarnaast microneedling, peelings of een pigmenttraject, afhankelijk van hoe diep het zit.",
     vanzelf:
       "Deels, maar langzaam: maanden tot meer dan een jaar. Zonlicht maakt het elke keer opnieuw donkerder, dus zonder bescherming schiet het niet op. [MEDISCHE-CHECK-ROJDA]",
     echtLitteken: false,
