@@ -80,7 +80,7 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
   "brochure-o-meter-website-teksten":
     "Klinkt jouw site als een folder? Je leert: hoe brochure-taal conversie lekt, met score-test en fixes voor landings, ads en homepages.",
   "chatgpt-atlas-astra-agi-september-2026":
-    "Atlas stopt, Astra roept AGI. Je leert: wat OpenAI in september 2026 echt verandert voor vindbaarheid, content en je marketingplan.",
+    "AGI in gewone taal, GPT-6 Astra uitgelegd, en Astra vs Claude. Je leert: wat het betekent, waarom het hyped is, en wat jij ermee doet.",
 };
 
 export function getKennisbankMetaDescription(

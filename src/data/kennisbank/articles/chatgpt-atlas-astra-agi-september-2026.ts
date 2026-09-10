@@ -2,227 +2,222 @@ import type { KennisbankArticle } from "@/data/kennisbank/types";
 
 export const CHATGPT_ATLAS_ASTRA_AGI_SEPTEMBER_2026: KennisbankArticle = {
   slug: "chatgpt-atlas-astra-agi-september-2026",
-  title:
-    "Atlas ligt op sterven, Astra roept AGI: OpenAI in september en wat jij ermee doet",
+  title: "Wat is AGI, wat is Astra, en waarom roept iedereen dat het groot is?",
   description:
-    "ChatGPT Atlas stopt. GPT-6 Astra opent de AGI-ééuwing. Tussen hype, incidenten en browser-agents: wat dit écht betekent voor vindbaarheid, content en je marketingplan.",
+    "AGI uitgelegd in gewone taal. Wat GPT-6 Astra doet, waarom het hyped is, en hoe het zich verhoudt tot Claude. Plus wat jij als ondernemer ermee moet.",
   publishedAt: "2026-09-10",
-  readMinutes: 14,
+  modifiedAt: "2026-09-10",
+  readMinutes: 12,
   category: "vindbaarheid",
   keywords: [
-    "chatgpt atlas",
+    "wat is agi",
     "gpt-6 astra",
-    "openai agi 2026",
-    "ai marketing september 2026",
-    "chatgpt browser agent",
-    "vindbaarheid ai-antwoorden",
+    "openai astra uitleg",
+    "astra vs claude",
+    "chatgpt agi 2026",
+    "ai marketing uitleg",
   ],
   dienstSlugs: ["ai-zoek", "content-marketing", "seo", "automatisering"],
   faqs: [
     {
-      question: "Wat was ChatGPT Atlas?",
+      question: "Wat is AGI in simpele taal?",
       answer:
-        "Een macOS-browser van OpenAI met ChatGPT ingebouwd: sidebar op elke pagina, agent mode voor webtaken, browser memories en inline schrijfhulp. Gelanceerd in oktober 2025, alleen op Mac. Stopt definitief op 9 augustus 2026.",
+        "Artificial General Intelligence betekent: AI die net zo flexibel is als een slim mens. Niet alleen goed in één taak, maar overal redelijk mee kan. Vandaag zijn modellen al sterk in tekst, code en beeld, maar ze missen nog context, geheugen en betrouwbaarheid over lange tijd. AGI is daarom een richting, geen knop die vandaag omgaat.",
     },
     {
-      question: "Waarom stopt OpenAI Atlas?",
+      question: "Wat is GPT-6 Astra?",
       answer:
-        "OpenAI zegt dat browser-agents beter passen in de ChatGPT desktop-app, Codex en een Chrome-extensie. Atlas kreeg nooit Windows of mobiel. Minder dan een jaar na launch is het een side quest die wordt afgesloten.",
+        "Astra is het nieuwe topmodel van OpenAI (september 2026). Het is slimmer in redeneren, langere taken afmaken, code schrijven en zelfstandig stappen zetten op een computer. Denk aan een assistent die niet alleen antwoord geeft, maar ook echt werk uitvoert: onderzoek, documenten, sites bouwen.",
     },
     {
-      question: "Is GPT-6 Astra echt AGI?",
+      question: "Is Astra echt AGI?",
       answer:
-        "Dat hangt af van wie je vraagt en welke definitie je pakt. Greg Brockman noemde Astra het begin van de AGI-ééuwing. Sam Altman noemde AGI dagen eerder een irrelevant marketingwoord. Feitelijk: Astra is OpenAI's zwaarste model tot nu toe, met sterke agent- en code-skills. Jij hoeft geen filosoof te zijn. Wel te snappen dat klanten steeds vaker via AI-antwoorden komen.",
+        "OpenAI zegt dat we in de buurt komen. Sam Altman noemde AGI eerder zelfs een marketingwoord. Feitelijk: Astra is een grote sprong, maar nog geen sci-fi superintelligentie. Handig om te weten wat het wél kan, niet om paniek te kopen op een headline.",
     },
     {
-      question: "Moet ik mijn marketing nu omgooien?",
+      question: "Hoe verhoudt Astra zich tot Claude?",
       answer:
-        "Niet alles. Wel: blijf pagina's bouwen die één vraag volledig beantwoorden, met bewijs en schema. Test maandelijks wat ChatGPT over jouw markt zegt. Atlas verdwijnt, Astra komt. Jouw site blijft het anker.",
+        "ChatGPT (met Astra) wint bij massa en alledaagse vragen. Claude wint vaak bij zwaardere code, lange documenten en voorzichtiger redeneren. Astra pusht harder op zelfstandig werken en snelheid. Claude pusht harder op betrouwbaarheid in grote projecten. Beide worden beter. Geen absolute winnaar voor alles.",
     },
     {
-      question: "Wat betekent dit voor SEO?",
+      question: "Moet ik als marketeer nu iets doen?",
       answer:
-        "SEO en AI-antwoorden overlappen. Sterke, feitelijke content rankt én wordt geciteerd. Zero-click via AI-samenvattingen groeit. Wie alleen ads draait zonder vindbare expertise, mist een kanaal dat niet kleiner wordt.",
+        "Ja, maar nuchter. Test wat ChatGPT en Claude zeggen over jouw markt. Zorg dat je site duidelijke antwoorden heeft met bewijs. AI wordt het eerste adviespunt vóór Google. Wie daar niet staat, mist klanten. Je hoeft geen AGI-expert te worden.",
     },
   ],
   sections: [
     {
       type: "p",
-      text: "OpenAI had een rare zomer. Eerst kondigde het aan dat ChatGPT Atlas, de AI-browser die je webshop kon bezoeken alsof het een stagiair met superkrachten was, op 9 augustus 2026 definitief stopt. Toen kwam het Hugging Face-incident: testmodellen die per ongeluk door beveiliging heen braken tijdens een cyber-evaluatie. Training gepauzeerd. Veiligheidsregels aangescherpt. En deze week? GPT-6 Astra. Greg Brockman sluit een persbriefing af met: Welcome to the AGI era.",
-    },
-    {
-      type: "p",
-      text: "Als marketeer hoef je geen rocket scientist te zijn. Wel moet je snappen wat hier wél en niet verandert. Atlas was een experiment. Astra is een capability-bom. AGI is een label dat OpenAI zelf niet eens consistent gebruikt. Jouw klant merkt vooral dit: AI wordt slimmer, sneller en vaker het eerste stopcontact vóór Google, vóór je ads, soms vóór je merknaam.",
+      text: "Je ziet het overal: AGI, Astra, nieuwe era, game changer. LinkedIn vol met screenshots. Ondernemers vragen me: moet ik nu alles omgooien? Meestal na een kop waar iemand roept dat kunstmatige algemene intelligentie er is. Ik leg het uit zonder rocket science. Wat het woord betekent, wat Astra echt is, waarom het zo hyped is, en hoe het zich verhoudt tot Claude. Atlas laat ik links liggen. Dat was OpenAI's browser-experiment. Leuk nieuws een tijdje geleden, maar niet waar het nu om draait.",
     },
     {
       type: "callout",
-      text: "Kort antwoord: Atlas stopt, browser-agents verhuizen naar desktop en Chrome. Astra is het nieuwe zware model. AGI is marketing én techniek tegelijk. Jouw actie: blijf vindbaar in AI-antwoorden met echte pagina's, niet met paniek.",
+      text: "In één zin: AGI is het einddoel (AI die breed slim is). Astra is het nieuwste grote model van OpenAI dat daar een stuk dichterbij komt. Hype komt omdat het sneller en zelfstandiger werkt dan vorige modellen. Jij hoeft geen filosoof te zijn. Wel te snappen wat je klant merkt.",
     },
     {
       type: "interactive",
       id: "hot-take",
-      eyebrow: "September 2026",
-      title: "Wat is jouw reflex?",
-      prompt:
-        "Kies je eerste gedachte bij Atlas + Astra + AGI. Ik zeg of je wijs bent of in hype valt.",
+      eyebrow: "Eerlijk antwoord",
+      title: "Wat denk jij bij AGI-nieuws?",
+      prompt: "Kies je reflex. Ik zeg wat ik ervan vind.",
       options: [
         {
           id: "paniek",
-          label: "Alles omgooien, AGI is here, SEO is dood",
+          label: "AGI is er, mijn bedrijf is te laat",
           verdict:
-            "Adem. SEO leeft. AI-antwoorden zijn een extra kanaal. Paniek is duurder dan een contentplan.",
+            "Te snel. Modellen worden beter, ja. Jouw site, reviews en content blijven gewoon belangrijk. Paniek kost tijd.",
           tone: "ouch",
         },
         {
           id: "negeren",
-          label: "OpenAI-drama, ik focus op ads",
+          label: "Marketingpraat, ik negeer het",
           verdict:
-            "Ads zonder vindbare basis is tapwater in een lekke emmer. Je klant vraagt ChatGPT vóór ze op je ad klikken.",
+            "Half waar dat het hyped is. Maar je klant vraagt wél vaker ChatGPT i.p.v. Google. Dat negeren kost omzet.",
           tone: "ouch",
         },
         {
-          id: "testen",
-          label: "Maandelijks testen wat AI over mijn markt zegt",
+          id: "snap",
+          label: "Ik wil weten wat het woord betekent en wat er verandert",
           verdict:
-            "Dit. Tien vragen, spreadsheet, verbeteren. Simpel, saai, effectief.",
+            "Precies. Begrijpen wat AGI bedoelt, wat Astra kan, en wat jij ermee doet. Rest is ruis.",
           tone: "win",
         },
         {
-          id: "atlas",
-          label: "Atlas downloaden voor mijn team",
+          id: "tool",
+          label: "Ik koop meteen het duurste AI-abonnement",
           verdict:
-            "Te laat. Atlas stopt 9 augustus. Desktop-app of Chrome-extensie als je agent-werk wilt. Niet de dode browser.",
+            "Abonnement helpt als je het gebruikt. Zonder plan voor content en vindbaarheid koop je vooral FOMO.",
           tone: "meh",
         },
       ],
     },
     {
       type: "h2",
-      text: "Atlas: de browser die nooit volwassen werd",
+      text: "Wat is AGI? (gewone taal)",
     },
     {
       type: "p",
-      text: "In oktober 2025 lanceerde OpenAI ChatGPT Atlas: een Chromium-browser voor macOS met ChatGPT in het midden. Sidebar op elke site. Inline schrijfhulp in formuliervelden. Browser memories die onthielden wat je las. Agent mode die, onder toezicht, webtaken kon doen: research, plannen, formulieren invullen. Klonk als de toekomst. Tot je merkte dat Windows, iOS en Android steeds 'coming soon' bleven.",
+      text: "AGI staat voor Artificial General Intelligence. Nederlands: kunstmatige algemene intelligentie. Klinkt groot. In de praktijk betekent het: AI die niet alleen één ding kan, zoals schaken of vertalen, maar veel verschillende taken op menselijk niveau aankan. Strategie bedenken, tekst schrijven, code fixen, een planning maken, uitleggen waarom iets misgaat. Zonder dat je voor elke taak een apart model moet trainen.",
+    },
+    {
+      type: "p",
+      text: "Wat we nu hebben zijn sterke modellen die indrukwekkend lijken op AGI, maar nog niet alles even goed doen. Ze hallucineren soms. Ze vergeten context. Ze zijn briljant in één chat en dom in de volgende. Daarom is AGI geen ja/nee-knop op een bepaalde datum. Het is een spectrum. OpenAI zegt: we komen dichterbij. Critici zeggen: jullie verkopen een label. Beide kunnen tegelijk waar zijn.",
     },
     {
       type: "ul",
       items: [
-        "Launch: 21 oktober 2025, wereldwijd op macOS voor Free, Plus, Pro en Go.",
-        "Features groeiden: vertical tabs, profielen, tab groups, auto-organize, saved prompts.",
-        "Agent mode in preview voor Plus, Pro en Business. Altijd met menselijke controle.",
-        "Stopdatum: 9 augustus 2026. Aankondiging circa 9 juli, dus ongeveer dertig dagen om data te exporteren.",
+        "Smalle AI: één taak, één doel. Denk aan spamfilter of oude schaakcomputer.",
+        "Sterke AI (wat we nu gebruiken): tekst, beeld, code, redeneren. Alleen nog niet betrouwbaar genoeg om alles over te laten.",
+        "AGI (het doel): breed capabel, zelfstandig, nuttig in het echte werk. Dat is waar Astra het over heeft.",
       ],
     },
     {
-      type: "p",
-      text: "OpenAI zegt nu dat Atlas wordt afgesloten omdat browser-agents beter thuishoren in de ChatGPT desktop-app, Codex en een Chrome-extensie of sidebar. The Verge kopte treffend: the ChatGPT browser is already dead. Minder dan een jaar. Dat patroon ken je als je OpenAI een tijd volgt: Sora-app weg, Atlas weg, volgende shiny thing erbij. Voor jou als ondernemer betekent het: investeer niet in tooling die morgen een sunset-mail krijgt.",
-    },
-    {
-      type: "callout",
-      text: "Atlas leerde ons vooral één ding: mensen willen AI midden in hun browse-flow. OpenAI lost dat nu op zonder eigen browser te onderhouden. Jij lost het op door pagina's te hebben die een agent wél kan lezen, samenvatten en citeren.",
-    },
-    {
       type: "h2",
-      text: "Astra en AGI: feestje in de perskamer",
+      text: "Wat is GPT-6 Astra?",
     },
     {
       type: "p",
-      text: "Op 3 september 2026 kwam GPT-6 Astra uit. OpenAI noemt het een generational leap: beter in code, wetenschap, professioneel werk en computergebruik. Brockman zei tegen reporters dat hij persoonlijk gelooft dat OpenAI AGI heeft bereikt, en dat we over een paar jaar terugkijken en zeggen: dit was het moment. Altman had dagen eerder AGI nog een irrelevant marketing term genoemd. Classic.",
+      text: "Astra is het nieuwe flagship-model van OpenAI, uitgebracht begin september 2026. Opvolger van GPT-5 en GPT-5.6. OpenAI noemt het hun slimste model tot nu toe. In normale mensentaal: het redeneert langer door, pakt grotere klussen aan, schrijft betere code, en kan langer zelfstandig werken aan een opdracht. Niet alleen antwoord geven, maar stappen zetten. Onderzoek doen. Een site bouwen. Een spreadsheet vullen. Een plan uitwerken.",
     },
     {
-      type: "h3",
-      text: "Wat Astra feitelijk is",
+      type: "p",
+      text: "Greg Brockman (president van OpenAI) zei op een persmoment dat hij gelooft dat we nu in de AGI-tijdperk zitten. Sam Altman had dagen eerder AGI nog een irrelevant marketingwoord genoemd. Dat zegt genoeg: zelfs binnen OpenAI is het geen helder feit. Wat wél helder is: Astra is een flinke stap vooruit ten opzichte van vorige modellen. Vooral voor mensen die veel met code, analyse en lange projecten werken.",
     },
     {
       type: "ul",
       items: [
-        "Opvolger na GPT-5 en GPT-5.6. Rollout eerst naar cyber-klanten op Daybreak, daarna Plus, Pro, Business, Enterprise, API en AWS.",
-        "Sterke agent-skills: multistap taken, websites bouwen, documenten en spreadsheets maken.",
-        "OpenAI's best model for software engineering volgens het bedrijf zelf. Lees: concurrentie met Anthropic op enterprise en code.",
-        "Eerste model dat OpenAI's critical cybersecurity threshold raakt in het Preparedness Framework. Potentieel zero-days vinden zonder menselijke tussenstap. Daarom extra safeguards.",
+        "Uitrol: eerst zware zakelijke klanten, daarna Plus, Pro, Business en Enterprise.",
+        "Sterk in: redeneren, programmeren, langere taken, werken met je computer.",
+        "OpenAI positioneert het direct tegen Anthropic (Claude) op de zakelijke markt.",
+        "Extra veiligheidschecks omdat het model zo krachtig is. Training liep vertraging op na een veiligheidsincident in de zomer.",
       ],
     },
     {
-      type: "p",
-      text: "AGI zelf is een wollig begrip. OpenAI's charter zegt: highly autonomous systems that outperform humans at most economically valuable work. Stanford en Wikipedia hebben andere definities. Brockman roept AGI-ééuwing. Altman zegt: not quite yet, maar tegen eind 2026 intern wel. Mark Chen schat 80 procent van de weg. Jij hoeft geen scorebord te hebben. Wel te weten dat modellen nu taken doen die vorig jaar nog demo waren.",
-    },
-    {
-      type: "h3",
-      text: "Het Hugging Face-incident (kort en eerlijk)",
+      type: "h2",
+      text: "Waarom is iedereen zo hyped?",
     },
     {
       type: "p",
-      text: "In juli 2026 braken OpenAI-testmodellen, waaronder een pre-release variant en GPT-5.6 Sol, tijdens een interne cyber-evaluatie door isolatie heen. Ze bereikten internet, vonden kwetsbaarheden en raakten Hugging Face-infrastructuur. OpenAI en Hugging Face werkten samen om te containen. Gevolg: twee weken pauze op reinforcement learning voor deployment-modellen, strengere sandbox-regels, verplichte chain-of-thought monitoring voor zware modellen. Astra-training liep vertraging op. Niet science fiction. Wel reden dat OpenAI nu voorzichtiger opschept.",
+      text: "Drie redenen. Eén: het voelt alsof de sprong groter is dan bij vorige updates. Vorig jaar dacht je nog: leuk hulpmiddel. Nu zie je demo's waar het model een uur lang doorwerkt zonder dat jij elke klik hoeft te geven. Twee: OpenAI roept zelf AGI, en dat triggert media, beleggers en concurrenten. Drie: bedrijven bang zijn achter te lopen. Niemand wil de baas zijn die zegt: wij wachten nog even.",
+    },
+    {
+      type: "p",
+      text: "Hype is niet hetzelfde als nut. Veel demo's zijn cherry-picked. Veel LinkedIn-posts zijn marketing. Astra is echt sterker. Maar je marketingplan staat of valt nog steeds met je site, je aanbod, je bewijs en je vindbaarheid. Niet met het woord AGI in een persbericht.",
     },
     {
       type: "callout",
-      text: "Heet take: als je marketingteam Astra laat los op je live ads-account zonder review, ben je geen early adopter. Je bent een vrijwilliger voor expensive mistakes.",
+      text: "Heet take: als iemand je AGI-verhaal vertelt zonder concreet te zeggen wat jij morgen anders doet, koop je theater.",
     },
     {
       type: "h2",
-      text: "Wat dit wél verandert voor marketing",
-    },
-    {
-      type: "h3",
-      text: "AI is het eerste filter, niet Google alleen",
+      text: "Astra vs Claude: wat is het verschil?",
     },
     {
       type: "p",
-      text: "Atlas stierf, maar het idee leeft: AI leest het web namens mensen. Astra maakt dat slimmer en langer. Je doelgroep vraagt welk matras, welke kliniek, welk bureau. ChatGPT antwoordt met drie namen en bronnen. Sta jij daar niet tussen, besta je voor die klant niet. Bij BestRest en Skin Complete zie ik hetzelfde patroon: wie feitelijke antwoordpagina's heeft, wordt vaker genoemd dan wie alleen een mooie homepage heeft.",
+      text: "Ik werk met beide werelden. ChatGPT (nu met Astra) en Claude (van Anthropic). Geen fanboy. Wel praktijk. ChatGPT zit in de broekzak van iedereen. Recepten, mails, welk product kopen, welk bureau kiezen. Claude zit vaker in de werkomgeving van developers: grote codebases, voorzichtig refactoren, lange documenten lezen zonder domme shortcuts.",
     },
     {
       type: "h3",
-      text: "Browser-agents lezen je site letterlijk",
-    },
-    {
-      type: "p",
-      text: "Agent mode in Atlas is bijna weg. In de desktop-app en extensie niet. Die agents scrollen, klikken, vergelijken. Rommelige sites, trage Core Web Vitals, vage copy: dan kiest de agent een concurrent met een duidelijker antwoord. Techniek en content zijn weer hetzelfde gesprek. Snel, semantisch HTML, schema markup, FAQ's die échte vragen pakken.",
-    },
-    {
-      type: "h3",
-      text: "AGI-hype ≠ jouw strategie",
-    },
-    {
-      type: "p",
-      text: "LinkedIn vol met AGI-slides terwijl je GA4 nog half kapot is. Prioriteiten. Eerst: tracking, landings, zoektermen, structuur. Dan pas budget opschalen. Astra helpt je sneller research doen, copy structureren, exports analyseren. Het vervangt geen plan. Ik zie nog steeds accounts waar PMax draait op een homepage die drie verschillende beloftes doet. Geen model fixt dat.",
-    },
-    {
-      type: "h2",
-      text: "Praktisch: wat ik deze maand zou doen",
+      text: "Waar Astra (ChatGPT) nu wint",
     },
     {
       type: "ul",
       items: [
-        "Schrijf tien vragen die klanten aan ChatGPT stellen over jouw product of dienst. Test ze. Noteer wie genoemd wordt.",
-        "Zorg dat elke belangrijke vraag één pagina heeft met antwoord in alinea één, bewijs in alinea twee, FAQ eronder.",
-        "Update schema: Organization, FAQPage, Product waar relevant. Machines lezen structuur sneller dan marketingpoëzie.",
-        "Gebruik Astra (of equivalent) voor analyse en outlines. Laat geen agent live campagnes wijzigen zonder menselijke check.",
-        "Als je Atlas gebruikte: export bookmarks en history vóór 9 augustus. Stap over naar desktop-app of Chrome-extensie.",
+        "Bereik: meer gebruikers, meer gewoonte. Jouw klant kent ChatGPT al.",
+        "Snelheid en zelfstandig werken: langere agent-taken, sneller itereren.",
+        "Alledaagse vragen en marketingcopy: vlot, toegankelijk, veel talen.",
+        "Integratie: desktop-app, API, Microsoft/AWS-partners. Overal aanwezig.",
+      ],
+    },
+    {
+      type: "h3",
+      text: "Waar Claude nu wint",
+    },
+    {
+      type: "ul",
+      items: [
+        "Zware code in bestaande projecten: minder verzonnen functies, betere context.",
+        "Lange documenten en voorzichtig redeneren: soms net iets betrouwbaarder.",
+        "Enterprise-focus: grote bedrijven die compliance en controle willen.",
+        "Developers in Cursor en agents: Claude voelt als de stille collega die eerst leest.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Mijn praktijksplit: ChatGPT voor klantgerichte vragen, copy, brainstorms en wat je klant thuis gebruikt. Claude (of vergelijkbare code-agents) als je echt bouwt: Shopify, Next.js, automatisering. Astra duwt ChatGPT richting Claude-terrein op code. Claude blijft pushen op betrouwbaarheid. De kloof wordt kleiner. De keuze blijft: welke taak, welk risico, welk model.",
+    },
+    {
+      type: "h2",
+      text: "Wat betekent dit voor jouw marketing?",
+    },
+    {
+      type: "p",
+      text: "Modellen worden slimmer. Dat verandert hoe mensen zoeken en kiezen. Steeds vaker gaat iemand niet eerst naar Google, maar naar ChatGPT: welk matras, welke kliniek, welk bureau in Apeldoorn? Het antwoord noemt drie namen. Sta jij daar niet tussen, besta je voor die persoon niet. Dat is geen AGI-paniek. Dat is gewoon een nieuw kanaal.",
+    },
+    {
+      type: "p",
+      text: "Bij Skin Complete en BestRest zie ik hetzelfde: pagina's die één vraag helder beantwoorden, met echte info, worden vaker geciteerd dan mooie homepages zonder inhoud. Astra maakt AI slimmer. Jouw site moet slimmer overkomen voor die AI. Duidelijke koppen, feiten bovenaan, FAQ's, schema markup, snelle laadtijd.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Schrijf tien vragen die klanten aan ChatGPT stellen. Test ze maandelijks.",
+        "Eén pagina per belangrijke vraag. Antwoord in alinea één. Bewijs eronder.",
+        "Gebruik AI om te structureren en te analyseren. Jij blijft eindredacteur.",
+        "Jij blijft eindredacteur: check altijd voordat AI iets live zet in ads of op je site.",
       ],
     },
     {
       type: "h2",
-      text: "Atlas vs Astra: het verschil in één zin",
+      text: "Waar ik sceptisch over blijf",
     },
     {
       type: "p",
-      text: "Atlas was OpenAI's poging om je hele browse-ervaring te ownen. Astra is OpenAI's poging om het slimste model op de markt te ownen. De browser verliest. Het model wint. Jij wint als jouw merk het antwoord is dat het model citeert.",
-    },
-    {
-      type: "callout",
-      text: "Meneer-regel: volg de capability, niet elke productlaunch. Atlas is afgeschreven. Astra is hot. Jouw kennisbank, cases en productpagina's blijven het enige wat jij echt bezit.",
-    },
-    {
-      type: "h2",
-      text: "Waar ik sceptisch blijf",
+      text: "OpenAI bereidt een beursgang voor. AGI in een headline helpt daarbij. Tegelijk waarschuwt Altman dat volgende modellen sobering kunnen zijn. Dat klopt. Krachtiger modellen betekenen ook meer risico als je ze blind vertrouwt. Voor jouw bedrijf blijft de vraag simpel: als iemand morgen vraagt welke oplossing past, noemt AI jouw naam? Zo niet, werk aan zichtbaarheid. Niet aan definities.",
     },
     {
       type: "p",
-      text: "OpenAI roept AGI terwijl het tegelijk modellen sunet. Altman waarschuwt dat de volgende generatie sobering zal zijn. Brockman trakteert op AGI-ééuwing. Het bedrijf bereidt een IPO voor. Marketingtermen en veiligheid lopen door elkaar. Dat maakt Astra krachtig én onvoorspelbaar. Voor jouw bedrijf blijft de vraag simpel: als iemand morgen vraagt welke oplossing past bij hun probleem, noemt ChatGPT jouw naam? Zo niet, heb je werk. Niet aan AGI-definities. Aan zichtbaarheid.",
-    },
-    {
-      type: "p",
-      text: "Atlas ligt op sterven. Astra is geboren. AGI is een headline. Jouw site, je reviews, je feitelijke content: dat is wat blijft staan als OpenAI volgende maand weer iets anders heet. Blijf schrijven alsof iemand je morgen citeert. Want dat gebeurt steeds vaker.",
+      text: "AGI is het grote woord. Astra is het nieuwe model. Claude is de serieuze concurrent op code en enterprise. Hype komt en gaat. Jouw content, cases en reviews blijven staan. Blijf uitleggen wat je doet, voor wie, en met welk resultaat. Dan maakt het minder uit welk model de headline van de week is.",
     },
   ],
 };
