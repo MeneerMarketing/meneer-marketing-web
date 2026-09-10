@@ -79,6 +79,8 @@ export const KENNISBANK_SEO_DESCRIPTIONS: Readonly<Record<string, string>> = {
     "AI Max klinkt als cheatcode. Je leert: Final URL Expansion, wanneer je aanzet, en waarom Google je site als menu gebruikt.",
   "brochure-o-meter-website-teksten":
     "Klinkt jouw site als een folder? Je leert: hoe brochure-taal conversie lekt, met score-test en fixes voor landings, ads en homepages.",
+  "chatgpt-atlas-astra-agi-september-2026":
+    "Atlas stopt, Astra roept AGI. Je leert: wat OpenAI in september 2026 echt verandert voor vindbaarheid, content en je marketingplan.",
 };
 
 export function getKennisbankMetaDescription(

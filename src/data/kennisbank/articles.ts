@@ -33,8 +33,10 @@ import { AI_WEBDESIGN_ALLEMAAL_HETZELFDE } from "@/data/kennisbank/articles/ai-w
 import { CHATGPT_HUISKAMER_CLAUDE_CODE_2026 } from "@/data/kennisbank/articles/chatgpt-huiskamer-claude-code-2026";
 import { AI_MAX_GOOGLE_ADS_SEARCH_2026 } from "@/data/kennisbank/articles/ai-max-google-ads-search-2026";
 import { BROCHURE_O_METER_WEBSITE_TEKSTEN } from "@/data/kennisbank/articles/brochure-o-meter-website-teksten";
+import { CHATGPT_ATLAS_ASTRA_AGI_SEPTEMBER_2026 } from "@/data/kennisbank/articles/chatgpt-atlas-astra-agi-september-2026";
 
 export const kennisbankArticles: KennisbankArticle[] = [
+  CHATGPT_ATLAS_ASTRA_AGI_SEPTEMBER_2026,
   BROCHURE_O_METER_WEBSITE_TEKSTEN,
   AI_MAX_GOOGLE_ADS_SEARCH_2026,
   CHATGPT_HUISKAMER_CLAUDE_CODE_2026,
