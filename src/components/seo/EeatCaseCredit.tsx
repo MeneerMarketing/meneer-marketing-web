@@ -9,6 +9,8 @@ interface EeatCaseCreditProps {
   metricHint: string;
   publishedAt: string;
   websiteUrl?: string;
+  /** Verberg metric en live-link als die al in de pagina staan */
+  compact?: boolean;
 }
 
 export function EeatCaseCredit({
@@ -17,9 +19,12 @@ export function EeatCaseCredit({
   metricHint,
   publishedAt,
   websiteUrl,
+  compact = false,
 }: EeatCaseCreditProps) {
   return (
-    <aside className="mt-10 rounded-3xl border border-slate-200 bg-slate-50 p-6 lg:p-8">
+    <aside
+      className={`rounded-3xl border border-slate-200 bg-slate-50 p-6 lg:p-8 ${compact ? "" : "mt-10"}`}
+    >
       <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#FF5722]">
         Case uitgevoerd door {BRAND_DISPLAY}
       </p>
@@ -27,14 +32,16 @@ export function EeatCaseCredit({
         Echte klant ({client}), echte stack, echte cijfers waar ik ze kan delen. Echte beelden,
         geen vage &ldquo;we hielpen een merk groeien&rdquo;-praat.
       </p>
-      <div className="mt-5 flex flex-wrap items-baseline gap-2">
-        <span className="text-3xl font-extrabold tracking-tight text-slate-900">{metric}</span>
-        <span className="text-sm font-medium text-slate-600">{metricHint}</span>
-      </div>
-      <div className="mt-6">
+      {!compact ? (
+        <div className="mt-5 flex flex-wrap items-baseline gap-2">
+          <span className="text-3xl font-extrabold tracking-tight text-slate-900">{metric}</span>
+          <span className="text-sm font-medium text-slate-600">{metricHint}</span>
+        </div>
+      ) : null}
+      <div className={compact ? "mt-5" : "mt-6"}>
         <EeatAuthorByline publishedAt={publishedAt} variant="light" showTrust />
       </div>
-      {websiteUrl ? (
+      {!compact && websiteUrl ? (
         <a
           href={websiteUrl}
           target="_blank"

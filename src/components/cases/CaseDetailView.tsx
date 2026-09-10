@@ -2,10 +2,11 @@ import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
 
 import { Reveal } from "@/components/effects/Reveal";
-import { CaseLivePreview } from "@/components/cases/CaseLivePreview";
+import { CaseDetailMediaColumn } from "@/components/cases/CaseDetailMediaColumn";
 import type { CaseDetail } from "@/data/cases-detail";
 import { getCaseSeo } from "@/lib/seo/case-seo";
 import { EeatCaseCredit } from "@/components/seo/EeatCaseCredit";
+import { InteractiveLogo } from "@/components/site/InteractiveLogo";
 import { siteCtas } from "@/lib/cta";
 
 interface CaseDetailViewProps {
@@ -62,9 +63,6 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-400">
               {story.hook}
             </p>
-            <p className="mt-4 max-w-2xl text-base font-semibold text-slate-300">
-              &ldquo;{story.meneerLine}&rdquo;
-            </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               {caseData.website ? (
@@ -91,48 +89,61 @@ export function CaseDetailView({ caseData }: CaseDetailViewProps) {
       </header>
 
       <section className="border-b border-slate-200 bg-white py-14 lg:py-20">
-        <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-start lg:px-8">
-          <Reveal>
-            <CaseLivePreview caseItem={caseData} />
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:items-stretch lg:gap-10 lg:px-8">
+          <Reveal className="h-full">
+            <CaseDetailMediaColumn caseData={caseData} />
           </Reveal>
-          <div className="space-y-6">
+
+          <div className="flex h-full flex-col gap-5">
             <Reveal>
               <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
                 Wat ik bouwde
               </p>
-              <ul className="mt-4 flex flex-wrap gap-2">
+              <ul className="mt-3 flex flex-wrap gap-2">
                 {caseData.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700"
+                    className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-bold text-slate-700"
                   >
                     {tag}
                   </li>
                 ))}
               </ul>
             </Reveal>
+
+            <Reveal delay={0.05}>
+              <div className="relative rounded-2xl rounded-bl-sm border border-[#FF5722]/20 bg-orange-50/80 px-4 py-4 pl-12">
+                <InteractiveLogo
+                  className="absolute left-3 top-3.5 size-8 shrink-0"
+                  interactive={false}
+                />
+                <p className="text-pretty text-sm font-bold leading-snug text-slate-800">
+                  {story.meneerLine}
+                </p>
+              </div>
+            </Reveal>
+
             {story.beats.map((beat, i) => (
-              <Reveal key={beat.label} delay={0.06 * (i + 1)}>
-                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <Reveal key={beat.label} delay={0.08 * (i + 1)} className="flex-1">
+                <div className="h-full rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
                   <p className="text-[10px] font-bold uppercase tracking-wider text-[#FF5722]">
                     {beat.label}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-700">{beat.text}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-700 sm:text-[15px]">
+                    {beat.text}
+                  </p>
                 </div>
               </Reveal>
             ))}
-            <Reveal delay={0.3}>
-              <p className="rounded-2xl border-2 border-[#FF5722]/30 bg-orange-50 px-5 py-4 text-sm font-bold text-slate-900">
-                {story.punch}
-              </p>
-            </Reveal>
-            <Reveal delay={0.35}>
+
+            <Reveal delay={0.35} className="mt-auto">
               <EeatCaseCredit
                 client={caseData.client}
                 metric={caseData.metric}
                 metricHint={caseData.metricHint}
                 publishedAt={getCaseSeo(caseData.id)?.publishedAt ?? "2025-01-01"}
                 websiteUrl={caseData.website?.url}
+                compact
               />
             </Reveal>
           </div>
