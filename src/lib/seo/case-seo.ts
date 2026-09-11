@@ -30,11 +30,11 @@ export const CASE_SEO: Record<string, CaseSeoEntry> = {
     dateModified: "2026-05-01",
   },
   "diba-clinics": {
-    title: "Case DIBA Clinics | huidkliniek-site from scratch | Meneer Marketing",
+    title: "Case DIBA Clinics | site, SEO, Google Ads & Meta | Meneer Marketing",
     description:
-      "Geen influencer-template voor een echte kliniek. Next.js from scratch, prijzen zichtbaar, SEO per behandeling. Live op dibaclinics.nl.",
+      "Vol marketingtraject voor een huidkliniek: website from scratch, SEO, Google Ads en Meta. Live op dibaclinics.nl in Hillegersberg, Rotterdam.",
     publishedAt: "2026-08-01",
-    dateModified: "2026-09-10",
+    dateModified: "2026-09-11",
   },
 };
 

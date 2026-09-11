@@ -216,24 +216,24 @@ export const HOME_CASES: HomeCase[] = [
   {
     id: "diba-clinics",
     client: "DIBA Clinics",
-    eyebrow: "Next.js · Huidkliniek · SEO",
-    title: "Huidkliniek-site from scratch met prijzen en afspraakflow",
+    eyebrow: "Website · SEO · Google Ads & Meta",
+    title: "Huidkliniek from scratch met SEO, ads en afspraakflow",
     homeHook:
-      "Next.js from scratch voor een echte huidkliniek. Vertrouwen, geen influencer-glitter.",
-    metric: "Live",
-    metricHint: "dibaclinics.nl · Rotterdam",
-    body: "DIBA Clinics vroeg om een site die als kliniek voelt: prijzen zichtbaar, duidelijke route naar afspraak, SEO die past bij behandelingen en lokale vindbaarheid.",
+      "Website from scratch, SEO, Google Ads en Meta. Kliniek-niveau, geen influencer-template.",
+    metric: "Vol stack",
+    metricHint: "Site, SEO, ads · Hillegersberg, Rotterdam",
+    body: "DIBA Clinics vroeg om een volledig marketingtraject: site from scratch, vindbaarheid per behandeling, Google Ads en Meta op landings die converteren. Prijzen zichtbaar, route naar afspraak strak.",
     challenge:
-      "In de esthetische markt ogen veel sites hetzelfde: stock, urgentie-trucs, vage prijzen. DIBA wilde online hetzelfde vertrouwen als in de stoel, zonder template-look.",
+      "In de esthetische markt ogen veel sites hetzelfde: stock, urgentie-trucs, vage prijzen. Losse ads op een zwakke site verbranden budget. DIBA wilde online hetzelfde vertrouwen als in de stoel.",
     move:
-      "Custom Next.js-site gebouwd from scratch met merkgroen, echte behandelfoto's en strakke contentregels. Prijzen en trajecten zichtbaar, afspraakflow en twijfel-route ingebouwd. SEO-structuur per behandeling en intentie.",
+      "Custom website gebouwd from scratch met merkgroen, echte behandelfoto's en strakke contentregels. SEO per behandeling en lokale intentie. Google Ads en Meta Ads op pagina's die matchen met wat mensen zoeken.",
     result:
-      "dibaclinics.nl staat live als vestiging die 24/7 open is. Bezoekers zien wat het kost, weten wat de volgende stap is en vinden de kliniek op de manier waarop mensen echt zoeken.",
+      "dibaclinics.nl draait live aan de Weissenbruchlaan in Hillegersberg, Rotterdam. Site, vindbaarheid en campagnes trekken dezelfde kant op.",
     tags: [
       "Website from scratch",
-      "Next.js",
-      "SEO & lokale vindbaarheid",
-      "Afspraakflow",
+      "SEO",
+      "Google Ads",
+      "Meta Ads",
     ],
     palette: DIBA_PALETTE,
     accent: DIBA_PALETTE.accent,
@@ -241,11 +241,11 @@ export const HOME_CASES: HomeCase[] = [
     href: "/cases/diba-clinics",
     website: { url: "https://dibaclinics.nl", hostname: "dibaclinics.nl" },
     previewImage: "/cases/diba-clinics-hero.jpg",
-    previewObjectPosition: "center center",
+    previewObjectPosition: "35% center",
     services: [
       {
         id: "website",
-        label: "Next.js site",
+        label: "Website",
         blurb: "From scratch, geen page builder",
       },
       {
@@ -254,9 +254,14 @@ export const HOME_CASES: HomeCase[] = [
         blurb: "Behandelingen en lokale intentie",
       },
       {
-        id: "email",
-        label: "Afspraakflow",
-        blurb: "Prijzen zichtbaar, route naar consult",
+        id: "google-ads",
+        label: "Google Ads",
+        blurb: "Landings op zoekintentie",
+      },
+      {
+        id: "meta-ads",
+        label: "Meta Ads",
+        blurb: "Creatives die als kliniek voelen",
       },
     ],
   },

@@ -316,7 +316,7 @@ const CASE_HOOKS: Record<string, string> = {
   skincomplete: "Salons bestellen 24/7 via B2B-portaal. SEO vóór ads.",
   bestrest: "Custom shop in matrassenland. Per lijn eigen marketing.",
   "hills-pilates": "Boekingsapp + site + mail. Alles op één stack.",
-  "diba-clinics": "Huidkliniek-site from scratch. Prijzen zichtbaar, live in Rotterdam.",
+  "diba-clinics": "Site, SEO, Google Ads en Meta. Vol marketingtraject voor huidkliniek.",
 };
 
 const CASE_LABELS: Record<string, string> = {

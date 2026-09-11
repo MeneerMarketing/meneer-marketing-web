@@ -168,8 +168,8 @@ export const DIENSTEN_CASE_PROOF = {
     },
     {
       name: "Huidkliniek",
-      hook: "Kliniek-niveau online. Prijzen zichtbaar, geen template-trucs.",
-      tags: ["Next.js", "SEO per behandeling", "Afspraakflow"],
+      hook: "Site, SEO, Google Ads en Meta in één lijn voor een echte kliniek.",
+      tags: ["Website from scratch", "SEO", "Google Ads & Meta"],
       href: "/cases/diba-clinics",
     },
   ],

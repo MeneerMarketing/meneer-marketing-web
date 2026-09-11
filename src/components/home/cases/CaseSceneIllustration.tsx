@@ -319,7 +319,7 @@ function DibaClinicsScene({
       />
 
       <rect x="204" y="164" width="164" height="76" rx="10" fill="white" stroke={`${accent}55`} />
-      {["Prijzen zichtbaar", "Twijfel-route", "Rotterdam"].map((label, i) => (
+      {["Prijzen zichtbaar", "Google Ads", "Meta Ads"].map((label, i) => (
         <motion.g
           key={label}
           initial={reduce ? false : { opacity: 0, x: 8 }}

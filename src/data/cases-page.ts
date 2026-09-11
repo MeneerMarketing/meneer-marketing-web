@@ -94,22 +94,22 @@ export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
   "diba-clinics": {
     hook: "Veel klinieksites schreeuwen urgentie. DIBA wilde vertrouwen, alsof je al in de stoel zit.",
     meneerLine:
-      "Next.js from scratch. Prijzen zichtbaar, geen pop-ups, SEO per behandeling. Kliniek-niveau online.",
+      "Website from scratch, SEO, Google Ads en Meta in één lijn. Prijzen zichtbaar, geen pop-ups. Kliniek-niveau online.",
     beats: [
       {
         label: "Zo begon het",
-        text: "De markt zit vol templates, stock en vage prijzen. DIBA wilde online hetzelfde gevoel als in Hillegersberg: eerlijk, rustig, professioneel.",
+        text: "De markt zit vol templates, stock en vage prijzen. Losse ads op een zwakke site lekt budget. DIBA wilde online hetzelfde vertrouwen als aan de Weissenbruchlaan in Hillegersberg, Rotterdam.",
       },
       {
         label: "Zo bouwde ik",
-        text: "Custom site in Next.js met merkgroen, echte behandelfoto's en harde contentregels. Elke pagina een volgende stap. Prijzen en trajecten altijd zichtbaar. SEO per behandeling en lokale zoekintentie.",
+        text: "Custom website from scratch met merkgroen, echte behandelfoto's en harde contentregels. SEO per behandeling en lokale zoekintentie. Google Ads en Meta op landings die echt matchen met zoekgedrag.",
       },
       {
         label: "Zo staat het nu",
-        text: "dibaclinics.nl draait live in Rotterdam. Bezoekers zien wat het kost, weten hoe ze boeken en vinden de kliniek op de manier waarop mensen echt zoeken.",
+        text: "dibaclinics.nl draait live in Hillegersberg, Rotterdam. Bezoekers vinden de kliniek via SEO, klikken door op ads en boeken via een site die als kliniek voelt, niet als template.",
       },
     ],
-    punch: "Live op dibaclinics.nl. Kliniek-niveau online, 24/7 open.",
+    punch: "Site, SEO, Google Ads en Meta. Eén marketinglijn voor een echte huidkliniek.",
   },
 };
 
@@ -142,9 +142,9 @@ export const CASES_PAGE_WERKWIJZE = {
     route:
       "BestRest kreeg per matras een andere route. Toppers zijn geen matrassen. Logisch.",
     bouwen:
-      "DIBA kreeg een Next.js site die als kliniek voelt, niet als influencer-template. Hills kreeg site, app en mail in één lijn.",
+      "DIBA kreeg site, SEO, Google Ads en Meta in één lijn. Hills kreeg site, app en mail in dezelfde stack.",
     sturen:
-      "Ads opschalen als het al verkocht. Anders gok je met iemand anders zijn budget.",
+      "DIBA: ads op landings die al converteren. SkinComplete: ads pas als SEO en mail al dragen.",
   },
 } as const;
 
